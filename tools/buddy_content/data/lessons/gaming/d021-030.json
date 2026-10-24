@@ -1,0 +1,835 @@
+{
+ "topic": "gaming",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Party games",
+     "g": "Meet short, chaotic mini-games made to make a room laugh.",
+     "p": [
+      "Party games use simple controls so anyone can join in seconds.",
+      "Rounds are short, and luck often beats skill, which keeps it friendly.",
+      "The real fun is the laughter and the teasing between friends."
+     ],
+     "q": "What is the funniest group game moment you remember?",
+     "c": "Invent a 30-second mini-game using only things in your room and try it."
+    },
+    "de": {
+     "t": "Partyspiele",
+     "g": "Kurze, chaotische Minispiele kennenlernen, die einen Raum zum Lachen bringen.",
+     "p": [
+      "Partyspiele haben einfache Steuerung, sodass jeder in Sekunden mitmachen kann.",
+      "Die Runden sind kurz, und Glück schlägt oft Können, das hält es freundlich.",
+      "Der eigentliche Spaß ist das Lachen und Necken unter Freunden."
+     ],
+     "q": "Welcher lustigste Gruppenspiel-Moment ist dir in Erinnerung?",
+     "c": "Erfinde ein 30-Sekunden-Minispiel nur mit Dingen aus deinem Zimmer und probiere es aus."
+    },
+    "es": {
+     "t": "Juegos de fiesta",
+     "g": "Conocer minijuegos cortos y caóticos hechos para hacer reír a toda la sala.",
+     "p": [
+      "Los juegos de fiesta usan controles simples y cualquiera se une en segundos.",
+      "Las rondas son cortas y la suerte suele superar a la habilidad, lo que mantiene el buen ambiente.",
+      "La verdadera diversión son las risas y las bromas entre amigos."
+     ],
+     "q": "¿Cuál es el momento más gracioso de un juego en grupo que recuerdas?",
+     "c": "Inventa un minijuego de 30 segundos con cosas de tu cuarto y pruébalo."
+    },
+    "fr": {
+     "t": "Jeux de soirée",
+     "g": "Découvrir des mini-jeux courts et chaotiques faits pour faire rire toute la pièce.",
+     "p": [
+      "Les jeux de soirée ont des commandes simples, tout le monde joue en quelques secondes.",
+      "Les manches sont courtes et la chance bat souvent l'habileté, ce qui reste amical.",
+      "Le vrai plaisir, ce sont les rires et les taquineries entre amis."
+     ],
+     "q": "Quel est le moment le plus drôle d'un jeu en groupe dont tu te souviens ?",
+     "c": "Invente un mini-jeu de 30 secondes avec des objets de ta chambre et essaie-le."
+    },
+    "it": {
+     "t": "Giochi da festa",
+     "g": "Conoscere mini-giochi brevi e caotici fatti per far ridere tutta la stanza.",
+     "p": [
+      "I giochi da festa hanno comandi semplici e chiunque si unisce in pochi secondi.",
+      "I round sono brevi e la fortuna spesso batte l'abilità, il che tiene l'atmosfera amichevole.",
+      "Il vero divertimento sono le risate e gli scherzi tra amici."
+     ],
+     "q": "Qual è il momento più divertente di un gioco di gruppo che ricordi?",
+     "c": "Inventa un mini-gioco di 30 secondi con cose della tua stanza e provalo."
+    },
+    "pt": {
+     "t": "Jogos de festa",
+     "g": "Conhecer minijogos curtos e caóticos feitos para fazer rir a sala toda.",
+     "p": [
+      "Os jogos de festa têm controlos simples e qualquer um entra em segundos.",
+      "As rondas são curtas e a sorte muitas vezes vence a habilidade, o que mantém o ambiente amigável.",
+      "A verdadeira diversão são as risadas e as brincadeiras entre amigos."
+     ],
+     "q": "Qual é o momento mais engraçado de um jogo em grupo de que te lembras?",
+     "c": "Inventa um minijogo de 30 segundos com coisas do teu quarto e experimenta."
+    },
+    "pt_BR": {
+     "t": "Jogos de festa",
+     "g": "Conhecer minijogos curtos e caóticos feitos para fazer a sala toda rir.",
+     "p": [
+      "Os jogos de festa têm controles simples e qualquer um entra em segundos.",
+      "As rodadas são curtas e a sorte muitas vezes vence a habilidade, o que mantém o clima amigável.",
+      "A verdadeira diversão são as risadas e as brincadeiras entre amigos."
+     ],
+     "q": "Qual é o momento mais engraçado de um jogo em grupo de que você se lembra?",
+     "c": "Invente um minijogo de 30 segundos com coisas do seu quarto e experimente."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cozy games",
+     "g": "Discover gentle games about gardening, decorating and friendship.",
+     "p": [
+      "Cozy games have low pressure, soft music and no real way to fail.",
+      "You grow plants, decorate a home or make friends with villagers.",
+      "They suit calm evenings and players who want to unwind."
+     ],
+     "q": "What small daily ritual would you enjoy in a cozy game?",
+     "c": "Do one cozy thing today, like watering a plant or tidying a corner, and enjoy it."
+    },
+    "de": {
+     "t": "Cozy Games",
+     "g": "Sanfte Spiele über Gärtnern, Einrichten und Freundschaft entdecken.",
+     "p": [
+      "Cozy Games haben wenig Druck, sanfte Musik und kaum echtes Scheitern.",
+      "Du ziehst Pflanzen, richtest ein Zuhause ein oder freundest dich mit Dorfbewohnern an.",
+      "Sie passen zu ruhigen Abenden und zu Spielern, die abschalten wollen."
+     ],
+     "q": "Welches kleine tägliche Ritual würdest du in einem Cozy Game genießen?",
+     "c": "Tu heute etwas Gemütliches, etwa eine Pflanze gießen oder eine Ecke aufräumen."
+    },
+    "es": {
+     "t": "Juegos acogedores",
+     "g": "Descubrir juegos suaves sobre jardinería, decoración y amistad.",
+     "p": [
+      "Los juegos acogedores tienen poca presión, música suave y casi ninguna forma de fallar.",
+      "Cultivas plantas, decoras un hogar o haces amigos entre los aldeanos.",
+      "Van bien para tardes tranquilas y para quien quiere desconectar."
+     ],
+     "q": "¿Qué pequeño ritual diario disfrutarías en un juego acogedor?",
+     "c": "Haz hoy algo acogedor, como regar una planta u ordenar un rincón, y disfrútalo."
+    },
+    "fr": {
+     "t": "Jeux cosy",
+     "g": "Découvrir des jeux doux autour du jardinage, de la décoration et de l'amitié.",
+     "p": [
+      "Les jeux cosy offrent peu de pression, une musique douce et presque aucun échec.",
+      "Tu fais pousser des plantes, décores une maison ou te lies avec les villageois.",
+      "Ils conviennent aux soirées calmes et à ceux qui veulent décompresser."
+     ],
+     "q": "Quel petit rituel quotidien apprécierais-tu dans un jeu cosy ?",
+     "c": "Fais une chose cosy aujourd'hui, comme arroser une plante ou ranger un coin, et savoure."
+    },
+    "it": {
+     "t": "Giochi cozy",
+     "g": "Scoprire giochi dolci su giardinaggio, arredamento e amicizia.",
+     "p": [
+      "I giochi cozy hanno poca pressione, musica morbida e quasi nessun modo di fallire.",
+      "Coltivi piante, arredi una casa o fai amicizia con gli abitanti.",
+      "Vanno bene per serate tranquille e per chi vuole rilassarsi."
+     ],
+     "q": "Quale piccolo rituale quotidiano apprezzeresti in un gioco cozy?",
+     "c": "Fai oggi una cosa cozy, come annaffiare una pianta o sistemare un angolo, e goditela."
+    },
+    "pt": {
+     "t": "Jogos acolhedores",
+     "g": "Descobrir jogos suaves sobre jardinagem, decoração e amizade.",
+     "p": [
+      "Os jogos acolhedores têm pouca pressão, música suave e quase nenhuma forma de falhar.",
+      "Cultivas plantas, decoras uma casa ou fazes amizade com os aldeões.",
+      "Servem para noites calmas e para quem quer relaxar."
+     ],
+     "q": "Que pequeno ritual diário apreciarias num jogo acolhedor?",
+     "c": "Faz hoje algo acolhedor, como regar uma planta ou arrumar um canto, e aproveita."
+    },
+    "pt_BR": {
+     "t": "Jogos aconchegantes",
+     "g": "Descobrir jogos suaves sobre jardinagem, decoração e amizade.",
+     "p": [
+      "Os jogos aconchegantes têm pouca pressão, música suave e quase nenhuma forma de falhar.",
+      "Você cultiva plantas, decora uma casa ou faz amizade com os moradores.",
+      "Servem para noites calmas e para quem quer relaxar."
+     ],
+     "q": "Que pequeno ritual diário você curtiria num jogo aconchegante?",
+     "c": "Faça hoje algo aconchegante, como regar uma planta ou arrumar um canto, e aproveite."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mixing genres",
+     "g": "See how modern games blend genres into something fresh.",
+     "p": [
+      "A game can mix puzzle, adventure and role-playing in one design.",
+      "Blends often start from a simple question, like what if farming met exploring.",
+      "Hybrid labels such as action-adventure describe these mixes."
+     ],
+     "q": "Which two genres would you love to see combined?",
+     "c": "Combine two genres you like into one imaginary game and give it a title."
+    },
+    "de": {
+     "t": "Genres mischen",
+     "g": "Sehen, wie moderne Spiele Genres zu etwas Frischem verbinden.",
+     "p": [
+      "Ein Spiel kann Rätsel, Abenteuer und Rollenspiel in einem Entwurf mischen.",
+      "Mischungen beginnen oft mit einer einfachen Frage, etwa was passiert, wenn Farmen auf Erkunden trifft.",
+      "Mischbegriffe wie Action-Adventure beschreiben solche Kombinationen."
+     ],
+     "q": "Welche zwei Genres würdest du gern kombiniert sehen?",
+     "c": "Kombiniere zwei Genres, die du magst, zu einem erfundenen Spiel und gib ihm einen Titel."
+    },
+    "es": {
+     "t": "Mezclar géneros",
+     "g": "Ver cómo los juegos modernos mezclan géneros para crear algo nuevo.",
+     "p": [
+      "Un juego puede mezclar puzles, aventura y rol en un solo diseño.",
+      "Las mezclas suelen nacer de una pregunta simple, como qué pasa si la granja se une a la exploración.",
+      "Etiquetas híbridas como acción-aventura describen estas mezclas."
+     ],
+     "q": "¿Qué dos géneros te gustaría ver combinados?",
+     "c": "Combina dos géneros que te gusten en un juego imaginario y ponle título."
+    },
+    "fr": {
+     "t": "Mélanger les genres",
+     "g": "Voir comment les jeux modernes mêlent les genres pour créer du neuf.",
+     "p": [
+      "Un jeu peut mêler réflexion, aventure et jeu de rôle dans un seul concept.",
+      "Les mélanges naissent souvent d'une question simple, comme et si la ferme rencontrait l'exploration.",
+      "Des étiquettes hybrides comme action-aventure décrivent ces mélanges."
+     ],
+     "q": "Quels deux genres aimerais-tu voir combinés ?",
+     "c": "Combine deux genres que tu aimes en un jeu imaginaire et donne-lui un titre."
+    },
+    "it": {
+     "t": "Mescolare i generi",
+     "g": "Vedere come i giochi moderni fondono i generi in qualcosa di nuovo.",
+     "p": [
+      "Un gioco può unire rompicapo, avventura e ruolo in un solo progetto.",
+      "Le miscele nascono spesso da una domanda semplice, come e se la fattoria incontrasse l'esplorazione.",
+      "Etichette ibride come azione-avventura descrivono queste miscele."
+     ],
+     "q": "Quali due generi ti piacerebbe vedere combinati?",
+     "c": "Combina due generi che ami in un gioco immaginario e dagli un titolo."
+    },
+    "pt": {
+     "t": "Misturar géneros",
+     "g": "Ver como os jogos modernos misturam géneros para criar algo novo.",
+     "p": [
+      "Um jogo pode misturar puzzles, aventura e rol num só desenho.",
+      "As misturas nascem muitas vezes de uma pergunta simples, como e se a quinta encontrasse a exploração.",
+      "Etiquetas híbridas como ação-aventura descrevem estas misturas."
+     ],
+     "q": "Que dois géneros gostarias de ver combinados?",
+     "c": "Combina dois géneros de que gostes num jogo imaginário e dá-lhe um título."
+    },
+    "pt_BR": {
+     "t": "Misturar gêneros",
+     "g": "Ver como os jogos modernos misturam gêneros para criar algo novo.",
+     "p": [
+      "Um jogo pode misturar quebra-cabeça, aventura e RPG num só projeto.",
+      "As misturas nascem muitas vezes de uma pergunta simples, como e se a fazenda encontrasse a exploração.",
+      "Rótulos híbridos como ação-aventura descrevem essas misturas."
+     ],
+     "q": "Que dois gêneros você gostaria de ver combinados?",
+     "c": "Combine dois gêneros de que você gosta num jogo imaginário e dê um título."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Consoles, PCs and phones",
+     "g": "Learn the main ways to play and what makes each special.",
+     "p": [
+      "Consoles are simple: plug in, pick a game and play on a TV.",
+      "PCs are flexible, with many upgrades, tools and creative options.",
+      "Phones are always with you and ideal for short sessions."
+     ],
+     "q": "Which device do you play on most, and why?",
+     "c": "List one strength and one limit of the device you use most."
+    },
+    "de": {
+     "t": "Konsolen, PCs und Handys",
+     "g": "Die wichtigsten Spielgeräte kennenlernen und was jedes besonders macht.",
+     "p": [
+      "Konsolen sind einfach: einstecken, Spiel wählen und am Fernseher spielen.",
+      "PCs sind flexibel, mit vielen Erweiterungen, Werkzeugen und kreativen Möglichkeiten.",
+      "Handys hast du immer dabei, ideal für kurze Sitzungen."
+     ],
+     "q": "Auf welchem Gerät spielst du am meisten, und warum?",
+     "c": "Nenne eine Stärke und eine Grenze des Geräts, das du am meisten nutzt."
+    },
+    "es": {
+     "t": "Consolas, PC y móviles",
+     "g": "Conocer las principales formas de jugar y qué hace especial a cada una.",
+     "p": [
+      "Las consolas son sencillas: conectas, eliges un juego y juegas en la tele.",
+      "El PC es flexible, con muchas mejoras, herramientas y opciones creativas.",
+      "El móvil va siempre contigo y es ideal para sesiones cortas."
+     ],
+     "q": "¿En qué dispositivo juegas más y por qué?",
+     "c": "Anota una fortaleza y un límite del dispositivo que más usas."
+    },
+    "fr": {
+     "t": "Consoles, PC et téléphones",
+     "g": "Connaître les principales façons de jouer et ce qui rend chacune spéciale.",
+     "p": [
+      "Les consoles sont simples : on branche, choisit un jeu et joue sur la télé.",
+      "Le PC est flexible, avec beaucoup d'évolutions, d'outils et d'options créatives.",
+      "Le téléphone est toujours avec toi, idéal pour les sessions courtes."
+     ],
+     "q": "Sur quel appareil joues-tu le plus, et pourquoi ?",
+     "c": "Note une force et une limite de l'appareil que tu utilises le plus."
+    },
+    "it": {
+     "t": "Console, PC e telefoni",
+     "g": "Conoscere i modi principali di giocare e cosa rende speciale ciascuno.",
+     "p": [
+      "Le console sono semplici: colleghi, scegli un gioco e giochi in TV.",
+      "Il PC è flessibile, con molti aggiornamenti, strumenti e opzioni creative.",
+      "Il telefono è sempre con te, ideale per sessioni brevi."
+     ],
+     "q": "Su quale dispositivo giochi di più e perché?",
+     "c": "Annota un punto di forza e un limite del dispositivo che usi di più."
+    },
+    "pt": {
+     "t": "Consolas, PC e telemóveis",
+     "g": "Conhecer as principais formas de jogar e o que torna cada uma especial.",
+     "p": [
+      "As consolas são simples: ligas, escolhes um jogo e jogas na televisão.",
+      "O PC é flexível, com muitas melhorias, ferramentas e opções criativas.",
+      "O telemóvel vai sempre contigo e é ideal para sessões curtas."
+     ],
+     "q": "Em que dispositivo jogas mais e porquê?",
+     "c": "Anota uma força e um limite do dispositivo que mais usas."
+    },
+    "pt_BR": {
+     "t": "Consoles, PCs e celulares",
+     "g": "Conhecer as principais formas de jogar e o que torna cada uma especial.",
+     "p": [
+      "Os consoles são simples: você liga, escolhe um jogo e joga na TV.",
+      "O PC é flexível, com muitas melhorias, ferramentas e opções criativas.",
+      "O celular vai sempre com você e é ideal para sessões curtas."
+     ],
+     "q": "Em que dispositivo você mais joga e por quê?",
+     "c": "Anote uma força e um limite do dispositivo que você mais usa."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Controllers and how they evolved",
+     "g": "Trace controllers from joysticks to touch and motion.",
+     "p": [
+      "Early games used joysticks and paddles with a single button.",
+      "The D-pad came with Nintendo, and analog sticks later allowed smooth 3D movement.",
+      "Motion and touch controls opened games to new kinds of players."
+     ],
+     "q": "Which controller felt best in your hands?",
+     "c": "Hold your controller or phone and describe its shape in three words."
+    },
+    "de": {
+     "t": "Controller und ihre Entwicklung",
+     "g": "Controller vom Joystick bis zu Touch und Bewegung nachverfolgen.",
+     "p": [
+      "Frühe Spiele nutzten Joysticks und Paddles mit nur einer Taste.",
+      "Das Steuerkreuz kam mit Nintendo, später ermöglichten Analogsticks sanfte 3D-Bewegung.",
+      "Bewegungs- und Touchsteuerung öffnete Spiele für neue Spielergruppen."
+     ],
+     "q": "Welcher Controller lag dir am besten in der Hand?",
+     "c": "Nimm deinen Controller oder dein Handy und beschreibe die Form in drei Wörtern."
+    },
+    "es": {
+     "t": "Los mandos y su evolución",
+     "g": "Seguir el camino de los mandos desde el joystick hasta el tacto y el movimiento.",
+     "p": [
+      "Los primeros juegos usaban joysticks y paletas con un solo botón.",
+      "La cruceta llegó con Nintendo y los sticks analógicos permitieron un movimiento 3D fluido.",
+      "Los controles de movimiento y táctiles abrieron los juegos a nuevos jugadores."
+     ],
+     "q": "¿Qué mando se sintió mejor en tus manos?",
+     "c": "Sostén tu mando o móvil y describe su forma en tres palabras."
+    },
+    "fr": {
+     "t": "Les manettes et leur évolution",
+     "g": "Suivre l'évolution des manettes, du joystick au tactile et au mouvement.",
+     "p": [
+      "Les premiers jeux utilisaient joysticks et manettes à bouton unique.",
+      "La croix directionnelle est venue avec Nintendo, puis les sticks analogiques ont permis des déplacements 3D fluides.",
+      "Les commandes tactiles et de mouvement ont ouvert les jeux à de nouveaux joueurs."
+     ],
+     "q": "Quelle manette te plaisait le plus en main ?",
+     "c": "Prends ta manette ou ton téléphone et décris sa forme en trois mots."
+    },
+    "it": {
+     "t": "I controller e la loro evoluzione",
+     "g": "Seguire i controller dal joystick al touch e al movimento.",
+     "p": [
+      "I primi giochi usavano joystick e paddle con un solo pulsante.",
+      "La croce direzionale arrivò con Nintendo e gli stick analogici permisero movimenti 3D fluidi.",
+      "I comandi a movimento e touch hanno aperto i giochi a nuovi giocatori."
+     ],
+     "q": "Quale controller ti stava meglio in mano?",
+     "c": "Prendi il tuo controller o telefono e descrivi la sua forma in tre parole."
+    },
+    "pt": {
+     "t": "Os comandos e a sua evolução",
+     "g": "Seguir o caminho dos comandos do joystick ao toque e ao movimento.",
+     "p": [
+      "Os primeiros jogos usavam joysticks e paddles com um só botão.",
+      "A cruzeta chegou com a Nintendo e os sticks analógicos permitiram movimento 3D suave.",
+      "Os controlos por movimento e toque abriram os jogos a novos jogadores."
+     ],
+     "q": "Que comando ficou melhor nas tuas mãos?",
+     "c": "Pega no teu comando ou telemóvel e descreve a forma em três palavras."
+    },
+    "pt_BR": {
+     "t": "Os controles e sua evolução",
+     "g": "Seguir o caminho dos controles do joystick ao toque e ao movimento.",
+     "p": [
+      "Os primeiros jogos usavam joysticks e paddles com um só botão.",
+      "O direcional chegou com a Nintendo e os analógicos permitiram movimento 3D suave.",
+      "Os controles por movimento e toque abriram os jogos a novos jogadores."
+     ],
+     "q": "Que controle ficou melhor nas suas mãos?",
+     "c": "Pegue seu controle ou celular e descreva a forma em três palavras."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keyboard and mouse basics",
+     "g": "Learn why PC players love this setup and which keys games use.",
+     "p": [
+      "The mouse aims and looks around, while the keyboard moves and acts.",
+      "WASD for movement is a common layout in many games.",
+      "Most games let you remap keys, so you can make it your own."
+     ],
+     "q": "Do you prefer a controller or keyboard and mouse?",
+     "c": "Open a game's key settings and change one key to something more comfortable."
+    },
+    "de": {
+     "t": "Tastatur und Maus: Grundlagen",
+     "g": "Lernen, warum PC-Spieler dieses Setup lieben und welche Tasten Spiele nutzen.",
+     "p": [
+      "Die Maus zielt und schaut sich um, die Tastatur bewegt und löst Aktionen aus.",
+      "WASD zur Bewegung ist in vielen Spielen eine gängige Belegung.",
+      "Die meisten Spiele erlauben neue Tastenbelegung, so machst du es zu deinem."
+     ],
+     "q": "Magst du lieber Controller oder Tastatur und Maus?",
+     "c": "Öffne die Tasteneinstellungen eines Spiels und ändere eine Taste auf etwas Bequemeres."
+    },
+    "es": {
+     "t": "Teclado y ratón: lo básico",
+     "g": "Aprender por qué a los jugadores de PC les encanta este equipo y qué teclas usan los juegos.",
+     "p": [
+      "El ratón apunta y mira alrededor, y el teclado mueve y actúa.",
+      "WASD para moverse es una distribución habitual en muchos juegos.",
+      "La mayoría permite reasignar teclas, así que puedes personalizarlo."
+     ],
+     "q": "¿Prefieres mando o teclado y ratón?",
+     "c": "Abre los ajustes de teclas de un juego y cambia una tecla por una más cómoda."
+    },
+    "fr": {
+     "t": "Clavier et souris : les bases",
+     "g": "Comprendre pourquoi les joueurs PC aiment ce duo et quelles touches les jeux utilisent.",
+     "p": [
+      "La souris vise et regarde autour, le clavier déplace et agit.",
+      "ZQSD ou WASD pour se déplacer est une disposition courante dans beaucoup de jeux.",
+      "La plupart des jeux permettent de réassigner les touches, à toi de personnaliser."
+     ],
+     "q": "Préfères-tu la manette ou le clavier et la souris ?",
+     "c": "Ouvre les réglages de touches d'un jeu et change une touche pour plus de confort."
+    },
+    "it": {
+     "t": "Tastiera e mouse: le basi",
+     "g": "Capire perché i giocatori PC amano questa coppia e quali tasti usano i giochi.",
+     "p": [
+      "Il mouse mira e guarda intorno, la tastiera muove e agisce.",
+      "WASD per muoversi è una disposizione comune in molti giochi.",
+      "La maggior parte dei giochi permette di riassegnare i tasti, così lo personalizzi."
+     ],
+     "q": "Preferisci il controller o tastiera e mouse?",
+     "c": "Apri le impostazioni dei tasti di un gioco e cambia un tasto con uno più comodo."
+    },
+    "pt": {
+     "t": "Teclado e rato: o básico",
+     "g": "Perceber porque os jogadores de PC adoram esta dupla e que teclas os jogos usam.",
+     "p": [
+      "O rato aponta e olha à volta, e o teclado move e age.",
+      "WASD para mover é uma disposição comum em muitos jogos.",
+      "A maioria dos jogos deixa reatribuir teclas, por isso podes personalizar."
+     ],
+     "q": "Preferes comando ou teclado e rato?",
+     "c": "Abre as definições de teclas de um jogo e muda uma tecla para outra mais cómoda."
+    },
+    "pt_BR": {
+     "t": "Teclado e mouse: o básico",
+     "g": "Entender por que os jogadores de PC amam essa dupla e que teclas os jogos usam.",
+     "p": [
+      "O mouse mira e olha ao redor, e o teclado move e age.",
+      "WASD para mover é uma disposição comum em muitos jogos.",
+      "A maioria dos jogos deixa remapear teclas, então você pode personalizar."
+     ],
+     "q": "Você prefere controle ou teclado e mouse?",
+     "c": "Abra as configurações de teclas de um jogo e troque uma tecla por outra mais confortável."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Touchscreen gaming",
+     "g": "See how mobile games are built around taps, swipes and short sessions.",
+     "p": [
+      "Designers use simple gestures like tap, swipe and drag.",
+      "Sessions are short so you can play in a queue or on a bus.",
+      "Good mobile games save progress automatically and respect your time."
+     ],
+     "q": "What gesture do you find most fun on a touchscreen?",
+     "c": "Try a game with only one-finger controls and notice how simple it feels."
+    },
+    "de": {
+     "t": "Touchscreen-Spiele",
+     "g": "Sehen, wie mobile Spiele auf Tippen, Wischen und kurze Sitzungen ausgelegt sind.",
+     "p": [
+      "Entwickler nutzen einfache Gesten wie Tippen, Wischen und Ziehen.",
+      "Sitzungen sind kurz, sodass du in der Schlange oder im Bus spielen kannst.",
+      "Gute mobile Spiele speichern automatisch und respektieren deine Zeit."
+     ],
+     "q": "Welche Geste macht dir auf dem Touchscreen am meisten Spaß?",
+     "c": "Probiere ein Spiel mit reiner Ein-Finger-Steuerung und achte darauf, wie einfach es wirkt."
+    },
+    "es": {
+     "t": "Juegos en pantalla táctil",
+     "g": "Ver cómo los juegos móviles se diseñan en torno a toques, deslizamientos y sesiones cortas.",
+     "p": [
+      "Los diseñadores usan gestos simples como tocar, deslizar y arrastrar.",
+      "Las sesiones son cortas para jugar en una cola o en el autobús.",
+      "Los buenos juegos móviles guardan el progreso solos y respetan tu tiempo."
+     ],
+     "q": "¿Qué gesto te parece más divertido en una pantalla táctil?",
+     "c": "Prueba un juego con control de un solo dedo y nota lo simple que resulta."
+    },
+    "fr": {
+     "t": "Jeux sur écran tactile",
+     "g": "Voir comment les jeux mobiles se construisent autour des pressions, glissements et sessions courtes.",
+     "p": [
+      "Les créateurs utilisent des gestes simples : toucher, glisser, faire défiler.",
+      "Les sessions sont courtes pour jouer dans une file d'attente ou le bus.",
+      "Les bons jeux mobiles sauvegardent seuls et respectent ton temps."
+     ],
+     "q": "Quel geste trouves-tu le plus amusant sur un écran tactile ?",
+     "c": "Essaie un jeu à commande d'un seul doigt et note sa simplicité."
+    },
+    "it": {
+     "t": "Giochi su touchscreen",
+     "g": "Vedere come i giochi mobili sono pensati attorno a tocchi, swipe e sessioni brevi.",
+     "p": [
+      "I designer usano gesti semplici come tocco, swipe e trascinamento.",
+      "Le sessioni sono brevi per giocare in coda o sull'autobus.",
+      "I buoni giochi mobili salvano da soli i progressi e rispettano il tuo tempo."
+     ],
+     "q": "Quale gesto trovi più divertente su un touchscreen?",
+     "c": "Prova un gioco con controllo a un solo dito e nota quanto sembra semplice."
+    },
+    "pt": {
+     "t": "Jogos em ecrã tátil",
+     "g": "Ver como os jogos móveis são pensados em torno de toques, deslizes e sessões curtas.",
+     "p": [
+      "Os criadores usam gestos simples como tocar, deslizar e arrastar.",
+      "As sessões são curtas para jogar numa fila ou no autocarro.",
+      "Os bons jogos móveis guardam o progresso sozinhos e respeitam o teu tempo."
+     ],
+     "q": "Que gesto achas mais divertido num ecrã tátil?",
+     "c": "Experimenta um jogo com controlo de um só dedo e repara como parece simples."
+    },
+    "pt_BR": {
+     "t": "Jogos em tela sensível ao toque",
+     "g": "Ver como os jogos móveis são pensados em torno de toques, deslizes e sessões curtas.",
+     "p": [
+      "Os criadores usam gestos simples como tocar, deslizar e arrastar.",
+      "As sessões são curtas para jogar numa fila ou no ônibus.",
+      "Os bons jogos móveis salvam o progresso sozinhos e respeitam seu tempo."
+     ],
+     "q": "Que gesto você acha mais divertido numa tela de toque?",
+     "c": "Experimente um jogo com controle de um só dedo e note como parece simples."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Handheld gaming",
+     "g": "Learn how portable systems shaped play habits.",
+     "p": [
+      "Handhelds let people play on trips, at school breaks and in waiting rooms.",
+      "The Game Boy from Nintendo made portable play popular in 1989.",
+      "Battery life, screen size and comfort are the key design choices."
+     ],
+     "q": "Where would you most like to play on the go?",
+     "c": "Plan a short play session for your next trip or break, and set its end time."
+    },
+    "de": {
+     "t": "Handheld-Spiele",
+     "g": "Lernen, wie tragbare Geräte Spielgewohnheiten geprägt haben.",
+     "p": [
+      "Handhelds lassen Menschen auf Reisen, in Pausen und im Wartezimmer spielen.",
+      "Der Game Boy von Nintendo machte tragbares Spielen 1989 beliebt.",
+      "Akkulaufzeit, Bildschirmgröße und Komfort sind die wichtigsten Entwurfsentscheidungen."
+     ],
+     "q": "Wo würdest du unterwegs am liebsten spielen?",
+     "c": "Plane eine kurze Spielrunde für deine nächste Reise oder Pause und lege das Ende fest."
+    },
+    "es": {
+     "t": "Juegos portátiles",
+     "g": "Aprender cómo los sistemas portátiles moldearon los hábitos de juego.",
+     "p": [
+      "Las portátiles permiten jugar de viaje, en los recreos y en salas de espera.",
+      "La Game Boy de Nintendo hizo popular el juego portátil en 1989.",
+      "La batería, el tamaño de pantalla y la comodidad son las claves del diseño."
+     ],
+     "q": "¿Dónde te gustaría más jugar fuera de casa?",
+     "c": "Planea una sesión corta para tu próximo viaje o descanso y fija la hora de fin."
+    },
+    "fr": {
+     "t": "Jeux portables",
+     "g": "Comprendre comment les consoles portables ont façonné les habitudes de jeu.",
+     "p": [
+      "Les portables permettent de jouer en voyage, en récréation ou en salle d'attente.",
+      "La Game Boy de Nintendo a popularisé le jeu portable en 1989.",
+      "L'autonomie, la taille d'écran et le confort sont les choix de conception clés."
+     ],
+     "q": "Où aimerais-tu le plus jouer en déplacement ?",
+     "c": "Prévois une courte session pour ton prochain voyage ou ta pause et fixe l'heure de fin."
+    },
+    "it": {
+     "t": "Giochi portatili",
+     "g": "Capire come i sistemi portatili hanno plasmato le abitudini di gioco.",
+     "p": [
+      "I portatili permettono di giocare in viaggio, negli intervalli e nelle sale d'attesa.",
+      "Il Game Boy di Nintendo rese popolare il gioco portatile nel 1989.",
+      "Batteria, dimensione dello schermo e comfort sono le scelte di design chiave."
+     ],
+     "q": "Dove ti piacerebbe di più giocare fuori casa?",
+     "c": "Pianifica una breve sessione per il prossimo viaggio o pausa e fissa l'orario di fine."
+    },
+    "pt": {
+     "t": "Jogos portáteis",
+     "g": "Perceber como os sistemas portáteis moldaram os hábitos de jogo.",
+     "p": [
+      "Os portáteis permitem jogar em viagem, nos intervalos e em salas de espera.",
+      "A Game Boy da Nintendo tornou popular o jogo portátil em 1989.",
+      "A bateria, o tamanho do ecrã e o conforto são as escolhas de desenho essenciais."
+     ],
+     "q": "Onde gostarias mais de jogar fora de casa?",
+     "c": "Planeia uma sessão curta para a tua próxima viagem ou pausa e define a hora de fim."
+    },
+    "pt_BR": {
+     "t": "Jogos portáteis",
+     "g": "Entender como os sistemas portáteis moldaram os hábitos de jogo.",
+     "p": [
+      "Os portáteis permitem jogar em viagem, nos intervalos e em salas de espera.",
+      "O Game Boy da Nintendo popularizou o jogo portátil em 1989.",
+      "Bateria, tamanho da tela e conforto são as escolhas de design essenciais."
+     ],
+     "q": "Onde você mais gostaria de jogar fora de casa?",
+     "c": "Planeje uma sessão curta para sua próxima viagem ou pausa e defina a hora de fim."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting up a comfortable play space",
+     "g": "Arrange seating, light and screen distance so playing feels good.",
+     "p": [
+      "Sit with your back supported and feet flat on the floor.",
+      "Place the screen at eye level, an arm's length away or a bit more.",
+      "Soft light in the room reduces glare and tired eyes."
+     ],
+     "q": "What would you change first in your play space?",
+     "c": "Adjust one thing in your play space today, like screen height or lighting."
+    },
+    "de": {
+     "t": "Einen bequemen Spielplatz einrichten",
+     "g": "Sitz, Licht und Bildschirmabstand so einrichten, dass Spielen sich gut anfühlt.",
+     "p": [
+      "Sitze mit gestütztem Rücken und flachen Füßen auf dem Boden.",
+      "Stelle den Bildschirm auf Augenhöhe, eine Armlänge oder etwas mehr entfernt.",
+      "Sanftes Licht im Raum verringert Blendung und müde Augen."
+     ],
+     "q": "Was würdest du an deinem Spielplatz zuerst ändern?",
+     "c": "Ändere heute eine Sache an deinem Spielplatz, etwa Bildschirmhöhe oder Beleuchtung."
+    },
+    "es": {
+     "t": "Preparar un espacio cómodo para jugar",
+     "g": "Organizar asiento, luz y distancia a la pantalla para jugar a gusto.",
+     "p": [
+      "Siéntate con la espalda apoyada y los pies planos en el suelo.",
+      "Coloca la pantalla a la altura de los ojos, a un brazo de distancia o algo más.",
+      "Una luz suave en la habitación reduce los reflejos y el cansancio visual."
+     ],
+     "q": "¿Qué cambiarías primero en tu espacio de juego?",
+     "c": "Ajusta hoy una cosa de tu espacio de juego, como la altura de la pantalla o la luz."
+    },
+    "fr": {
+     "t": "Aménager un coin de jeu confortable",
+     "g": "Organiser siège, lumière et distance d'écran pour jouer confortablement.",
+     "p": [
+      "Assieds-toi le dos soutenu et les pieds à plat sur le sol.",
+      "Place l'écran à hauteur des yeux, à une longueur de bras ou un peu plus.",
+      "Une lumière douce dans la pièce réduit les reflets et la fatigue des yeux."
+     ],
+     "q": "Que changerais-tu en premier dans ton coin de jeu ?",
+     "c": "Ajuste une chose aujourd'hui dans ton coin de jeu, comme la hauteur de l'écran ou la lumière."
+    },
+    "it": {
+     "t": "Preparare uno spazio di gioco comodo",
+     "g": "Sistemare seduta, luce e distanza dallo schermo per giocare bene.",
+     "p": [
+      "Siediti con la schiena sostenuta e i piedi appoggiati a terra.",
+      "Metti lo schermo all'altezza degli occhi, a un braccio di distanza o poco più.",
+      "Una luce morbida nella stanza riduce i riflessi e la stanchezza degli occhi."
+     ],
+     "q": "Cosa cambieresti per primo nel tuo spazio di gioco?",
+     "c": "Regola oggi una cosa del tuo spazio di gioco, come l'altezza dello schermo o la luce."
+    },
+    "pt": {
+     "t": "Preparar um espaço de jogo confortável",
+     "g": "Organizar assento, luz e distância ao ecrã para jogar com conforto.",
+     "p": [
+      "Senta-te com as costas apoiadas e os pés assentes no chão.",
+      "Coloca o ecrã à altura dos olhos, a um braço de distância ou um pouco mais.",
+      "Uma luz suave na sala reduz os reflexos e o cansaço visual."
+     ],
+     "q": "O que mudarias primeiro no teu espaço de jogo?",
+     "c": "Ajusta hoje uma coisa do teu espaço de jogo, como a altura do ecrã ou a luz."
+    },
+    "pt_BR": {
+     "t": "Preparar um espaço de jogo confortável",
+     "g": "Organizar assento, luz e distância da tela para jogar com conforto.",
+     "p": [
+      "Sente com as costas apoiadas e os pés no chão.",
+      "Coloque a tela na altura dos olhos, a um braço de distância ou um pouco mais.",
+      "Uma luz suave na sala reduz os reflexos e o cansaço visual."
+     ],
+     "q": "O que você mudaria primeiro no seu espaço de jogo?",
+     "c": "Ajuste hoje uma coisa do seu espaço de jogo, como a altura da tela ou a luz."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: the basics of play",
+     "g": "Look back at genres, platforms and why we play, with a fun recap.",
+     "p": [
+      "We covered rules, goals, feedback and flow as the core of play.",
+      "We toured genres from platformers and puzzles to cozy and sandbox games.",
+      "We compared consoles, PCs, phones and set up a comfy space."
+     ],
+     "q": "Which topic from this month would you like to revisit?",
+     "c": "Quiz yourself: name five genres and one game for each without looking back."
+    },
+    "de": {
+     "t": "Rückblick: die Grundlagen des Spielens",
+     "g": "Auf Genres, Plattformen und die Gründe zu spielen zurückblicken, mit lustigem Quiz.",
+     "p": [
+      "Wir haben Regeln, Ziele, Rückmeldung und Flow als Kern des Spielens behandelt.",
+      "Wir sind durch Genres gereist, von Jump-and-Runs und Rätseln bis Cozy und Sandbox.",
+      "Wir verglichen Konsolen, PCs, Handys und richteten einen bequemen Platz ein."
+     ],
+     "q": "Welches Thema dieses Monats möchtest du noch einmal ansehen?",
+     "c": "Teste dich: Nenne fünf Genres und je ein Spiel, ohne nachzuschauen."
+    },
+    "es": {
+     "t": "Repaso: lo básico del juego",
+     "g": "Repasar géneros, plataformas y por qué jugamos, con un resumen divertido.",
+     "p": [
+      "Vimos reglas, metas, retroalimentación y flujo como núcleo del juego.",
+      "Recorrimos géneros, de plataformas y puzles a juegos acogedores y sandbox.",
+      "Comparamos consolas, PC y móviles y preparamos un espacio cómodo."
+     ],
+     "q": "¿Qué tema de este mes te gustaría repasar?",
+     "c": "Ponte a prueba: nombra cinco géneros y un juego de cada uno sin mirar atrás."
+    },
+    "fr": {
+     "t": "Révision : les bases du jeu",
+     "g": "Revenir sur les genres, les plateformes et les raisons de jouer, avec un récap ludique.",
+     "p": [
+      "Nous avons vu règles, buts, retour d'information et flow comme cœur du jeu.",
+      "Nous avons parcouru les genres, des plateformes et casse-tête aux jeux cosy et bac à sable.",
+      "Nous avons comparé consoles, PC, téléphones et aménagé un coin confortable."
+     ],
+     "q": "Quel sujet de ce mois voudrais-tu revoir ?",
+     "c": "Teste-toi : cite cinq genres et un jeu pour chacun sans regarder en arrière."
+    },
+    "it": {
+     "t": "Ripasso: le basi del gioco",
+     "g": "Rivedere generi, piattaforme e perché giochiamo, con un riepilogo divertente.",
+     "p": [
+      "Abbiamo visto regole, obiettivi, feedback e flow come cuore del gioco.",
+      "Abbiamo girato tra i generi, da platform e rompicapo a giochi cozy e sandbox.",
+      "Abbiamo confrontato console, PC e telefoni e preparato uno spazio comodo."
+     ],
+     "q": "Quale argomento di questo mese vorresti rivedere?",
+     "c": "Mettiti alla prova: cita cinque generi e un gioco per ciascuno senza guardare indietro."
+    },
+    "pt": {
+     "t": "Revisão: o básico do jogo",
+     "g": "Rever géneros, plataformas e porque jogamos, com um resumo divertido.",
+     "p": [
+      "Vimos regras, objetivos, feedback e fluxo como o núcleo do jogo.",
+      "Passámos por géneros, de plataformas e puzzles a jogos acolhedores e sandbox.",
+      "Comparámos consolas, PC e telemóveis e preparámos um espaço confortável."
+     ],
+     "q": "Que tema deste mês gostarias de rever?",
+     "c": "Põe-te à prova: diz cinco géneros e um jogo de cada, sem olhar para trás."
+    },
+    "pt_BR": {
+     "t": "Revisão: o básico do jogo",
+     "g": "Rever gêneros, plataformas e por que jogamos, com um resumo divertido.",
+     "p": [
+      "Vimos regras, objetivos, feedback e fluxo como o núcleo do jogo.",
+      "Passamos por gêneros, de plataforma e quebra-cabeça a jogos aconchegantes e sandbox.",
+      "Comparamos consoles, PCs e celulares e preparamos um espaço confortável."
+     ],
+     "q": "Que tema deste mês você gostaria de rever?",
+     "c": "Teste-se: diga cinco gêneros e um jogo de cada, sem olhar para trás."
+    }
+   }
+  }
+ ]
+}

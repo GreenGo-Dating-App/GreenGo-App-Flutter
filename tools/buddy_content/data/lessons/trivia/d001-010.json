@@ -1,0 +1,835 @@
+{
+ "topic": "trivia",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to trivia",
+     "g": "Discover why small surprising facts are fun and how we will play together every day.",
+     "p": [
+      "Trivia is a game of curious facts about nature, history, art and everyday life.",
+      "There is no pressure: wrong answers teach us just as much as right ones.",
+      "Each day brings one small topic, one question and one tiny challenge."
+     ],
+     "q": "What topic could you talk about for hours, and what is a fact about it that surprises people?",
+     "c": "Tell one surprising fact you already know to someone close to you today."
+    },
+    "de": {
+     "t": "Willkommen beim Quiz",
+     "g": "Entdecke, warum kleine, überraschende Fakten Spaß machen und wie wir jeden Tag zusammen spielen.",
+     "p": [
+      "Trivia ist ein Spiel mit kuriosen Fakten über Natur, Geschichte, Kunst und Alltag.",
+      "Es gibt keinen Druck: Falsche Antworten lehren uns genauso viel wie richtige.",
+      "Jeder Tag bringt ein kleines Thema, eine Frage und eine winzige Aufgabe."
+     ],
+     "q": "Über welches Thema könntest du stundenlang reden, und welcher Fakt dazu überrascht andere?",
+     "c": "Erzähle heute jemandem in deiner Nähe einen überraschenden Fakt, den du schon kennst."
+    },
+    "es": {
+     "t": "Bienvenido a la trivia",
+     "g": "Descubre por qué los datos curiosos y sorprendentes son divertidos y cómo jugaremos juntos cada día.",
+     "p": [
+      "La trivia es un juego de datos curiosos sobre naturaleza, historia, arte y vida diaria.",
+      "No hay presión: las respuestas erróneas enseñan tanto como las correctas.",
+      "Cada día trae un tema pequeño, una pregunta y un mini reto."
+     ],
+     "q": "¿De qué tema podrías hablar durante horas y qué dato sobre él sorprende a la gente?",
+     "c": "Cuéntale hoy a alguien cercano un dato sorprendente que ya conozcas."
+    },
+    "fr": {
+     "t": "Bienvenue dans le quiz",
+     "g": "Découvre pourquoi les petits faits surprenants sont amusants et comment nous jouerons ensemble chaque jour.",
+     "p": [
+      "Le quiz est un jeu de faits curieux sur la nature, l'histoire, l'art et la vie quotidienne.",
+      "Aucune pression : les mauvaises réponses apprennent autant que les bonnes.",
+      "Chaque jour apporte un petit thème, une question et un mini-défi."
+     ],
+     "q": "De quel sujet pourrais-tu parler pendant des heures, et quel fait à son sujet surprend les gens ?",
+     "c": "Raconte aujourd'hui à un proche un fait surprenant que tu connais déjà."
+    },
+    "it": {
+     "t": "Benvenuto nel quiz",
+     "g": "Scopri perché i piccoli fatti sorprendenti divertono e come giocheremo insieme ogni giorno.",
+     "p": [
+      "Il quiz è un gioco di curiosità su natura, storia, arte e vita quotidiana.",
+      "Nessuna pressione: le risposte sbagliate insegnano quanto quelle giuste.",
+      "Ogni giorno porta un piccolo tema, una domanda e una mini sfida."
+     ],
+     "q": "Di quale argomento potresti parlare per ore e quale curiosità su di esso sorprende la gente?",
+     "c": "Racconta oggi a una persona vicina una curiosità sorprendente che già conosci."
+    },
+    "pt": {
+     "t": "Bem-vindo ao quiz",
+     "g": "Descobre porque é que pequenos factos surpreendentes são divertidos e como vamos jogar juntos todos os dias.",
+     "p": [
+      "O quiz é um jogo de curiosidades sobre natureza, história, arte e vida quotidiana.",
+      "Não há pressão: as respostas erradas ensinam tanto como as certas.",
+      "Cada dia traz um tema pequeno, uma pergunta e um mini desafio."
+     ],
+     "q": "Sobre que assunto poderias falar horas a fio e que curiosidade dele surpreende as pessoas?",
+     "c": "Conta hoje a alguém próximo uma curiosidade surpreendente que já conheças."
+    },
+    "pt_BR": {
+     "t": "Boas-vindas ao quiz",
+     "g": "Descubra por que fatos pequenos e surpreendentes são divertidos e como vamos jogar juntos todo dia.",
+     "p": [
+      "O quiz é um jogo de curiosidades sobre natureza, história, arte e vida cotidiana.",
+      "Sem pressão: as respostas erradas ensinam tanto quanto as certas.",
+      "Cada dia traz um tema pequeno, uma pergunta e um mini desafio."
+     ],
+     "q": "Sobre qual assunto você poderia falar por horas e que curiosidade dele surpreende as pessoas?",
+     "c": "Conte hoje para alguém próximo uma curiosidade surpreendente que você já conhece."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How a trivia question works",
+     "g": "Learn to read a question by finding its clue, its category and the key word.",
+     "p": [
+      "The category tells you where to search your memory: geography, science, art.",
+      "The key word, such as 'largest' or 'first', shows exactly what is asked.",
+      "Read the whole question once more before answering; details hide in the end."
+     ],
+     "q": "Think of a question you once answered well: what clue helped you most?",
+     "c": "Pick any question you meet today and underline its key word in your head."
+    },
+    "de": {
+     "t": "So funktioniert eine Quizfrage",
+     "g": "Lerne, eine Frage zu lesen: Hinweis, Kategorie und Schlüsselwort finden.",
+     "p": [
+      "Die Kategorie zeigt, wo du in deinem Gedächtnis suchen sollst: Geografie, Wissenschaft, Kunst.",
+      "Das Schlüsselwort, etwa 'größte' oder 'erste', verrät, was genau gefragt ist.",
+      "Lies die ganze Frage vor der Antwort noch einmal; Details verstecken sich am Ende."
+     ],
+     "q": "Denk an eine Frage, die du einmal gut beantwortet hast: Welcher Hinweis half am meisten?",
+     "c": "Such dir heute eine beliebige Frage und markiere ihr Schlüsselwort im Kopf."
+    },
+    "es": {
+     "t": "Cómo funciona una pregunta de trivia",
+     "g": "Aprende a leer una pregunta buscando su pista, su categoría y su palabra clave.",
+     "p": [
+      "La categoría indica dónde buscar en tu memoria: geografía, ciencia, arte.",
+      "La palabra clave, como 'mayor' o 'primero', muestra qué se pregunta exactamente.",
+      "Relee la pregunta entera antes de responder; los detalles se esconden al final."
+     ],
+     "q": "Piensa en una pregunta que respondiste bien: ¿qué pista te ayudó más?",
+     "c": "Elige hoy cualquier pregunta que encuentres y subraya mentalmente su palabra clave."
+    },
+    "fr": {
+     "t": "Comment fonctionne une question de quiz",
+     "g": "Apprends à lire une question en repérant l'indice, la catégorie et le mot clé.",
+     "p": [
+      "La catégorie indique où chercher dans ta mémoire : géographie, science, art.",
+      "Le mot clé, comme 'plus grand' ou 'premier', montre ce qui est demandé.",
+      "Relis toute la question avant de répondre ; les détails se cachent à la fin."
+     ],
+     "q": "Pense à une question que tu as bien réussie : quel indice t'a le plus aidé ?",
+     "c": "Choisis aujourd'hui une question quelconque et souligne son mot clé dans ta tête."
+    },
+    "it": {
+     "t": "Come funziona una domanda di quiz",
+     "g": "Impara a leggere una domanda trovando indizio, categoria e parola chiave.",
+     "p": [
+      "La categoria indica dove cercare nella memoria: geografia, scienza, arte.",
+      "La parola chiave, come 'più grande' o 'primo', mostra cosa si chiede davvero.",
+      "Rileggi tutta la domanda prima di rispondere: i dettagli si nascondono alla fine."
+     ],
+     "q": "Pensa a una domanda a cui hai risposto bene: quale indizio ti ha aiutato di più?",
+     "c": "Scegli oggi una domanda qualsiasi e sottolinea mentalmente la sua parola chiave."
+    },
+    "pt": {
+     "t": "Como funciona uma pergunta de quiz",
+     "g": "Aprende a ler uma pergunta encontrando a pista, a categoria e a palavra-chave.",
+     "p": [
+      "A categoria diz onde procurar na memória: geografia, ciência, arte.",
+      "A palavra-chave, como 'maior' ou 'primeiro', mostra o que se pergunta.",
+      "Relê a pergunta toda antes de responder; os detalhes escondem-se no fim."
+     ],
+     "q": "Pensa numa pergunta que respondeste bem: que pista te ajudou mais?",
+     "c": "Escolhe hoje uma pergunta qualquer e sublinha mentalmente a palavra-chave."
+    },
+    "pt_BR": {
+     "t": "Como funciona uma pergunta de quiz",
+     "g": "Aprenda a ler uma pergunta achando a pista, a categoria e a palavra-chave.",
+     "p": [
+      "A categoria diz onde procurar na memória: geografia, ciência, arte.",
+      "A palavra-chave, como 'maior' ou 'primeiro', mostra o que se pergunta.",
+      "Releia a pergunta toda antes de responder; os detalhes se escondem no final."
+     ],
+     "q": "Pense numa pergunta que você respondeu bem: qual pista mais te ajudou?",
+     "c": "Escolha hoje uma pergunta qualquer e sublinhe mentalmente a palavra-chave."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Smart guessing",
+     "g": "Use elimination so that even an unsure answer becomes a good guess.",
+     "p": [
+      "Cross out options that are clearly impossible, then choose among the rest.",
+      "Look for hints inside the question: a word, a number or a place name.",
+      "Trust your first instinct unless you find a real reason to change it."
+     ],
+     "q": "Which was your luckiest guess ever, and what made you pick that answer?",
+     "c": "Quiz yourself: guess the number of legs on a spider, then check it on day 29."
+    },
+    "de": {
+     "t": "Klug raten",
+     "g": "Nutze das Ausschlussverfahren, damit auch eine unsichere Antwort ein guter Tipp wird.",
+     "p": [
+      "Streiche Optionen, die klar unmöglich sind, und wähle dann unter dem Rest.",
+      "Suche Hinweise in der Frage selbst: ein Wort, eine Zahl oder einen Ortsnamen.",
+      "Vertraue deinem ersten Gefühl, außer du findest einen echten Grund zum Wechseln."
+     ],
+     "q": "Was war dein glücklichster Tipp aller Zeiten, und warum hast du ihn gewählt?",
+     "c": "Teste dich: Rate, wie viele Beine eine Spinne hat, und prüfe es an Tag 29."
+    },
+    "es": {
+     "t": "Adivinar con inteligencia",
+     "g": "Usa la eliminación para que incluso una respuesta dudosa sea una buena apuesta.",
+     "p": [
+      "Tacha las opciones claramente imposibles y elige entre las restantes.",
+      "Busca pistas dentro de la pregunta: una palabra, un número o un lugar.",
+      "Confía en tu primer instinto salvo que halles una razón real para cambiar."
+     ],
+     "q": "¿Cuál fue tu acierto más afortunado y qué te hizo elegir esa respuesta?",
+     "c": "Ponte a prueba: adivina cuántas patas tiene una araña y compruébalo en el día 29."
+    },
+    "fr": {
+     "t": "Deviner intelligemment",
+     "g": "Utilise l'élimination pour qu'une réponse incertaine devienne un bon pari.",
+     "p": [
+      "Barre les options manifestement impossibles, puis choisis parmi les autres.",
+      "Cherche des indices dans la question : un mot, un chiffre ou un nom de lieu.",
+      "Fais confiance à ton premier instinct, sauf raison sérieuse de changer."
+     ],
+     "q": "Quelle a été ta devinette la plus chanceuse, et pourquoi as-tu choisi cette réponse ?",
+     "c": "Teste-toi : devine combien de pattes a une araignée, puis vérifie au jour 29."
+    },
+    "it": {
+     "t": "Indovinare con astuzia",
+     "g": "Usa l'eliminazione perché anche una risposta incerta diventi una buona scommessa.",
+     "p": [
+      "Cancella le opzioni chiaramente impossibili e scegli fra le restanti.",
+      "Cerca indizi nella domanda stessa: una parola, un numero o un luogo.",
+      "Fidati del primo istinto, a meno che tu non trovi un vero motivo per cambiare."
+     ],
+     "q": "Qual è stata la tua risposta a caso più fortunata e perché l'hai scelta?",
+     "c": "Mettiti alla prova: indovina quante zampe ha un ragno e verifica al giorno 29."
+    },
+    "pt": {
+     "t": "Adivinhar com inteligência",
+     "g": "Usa a eliminação para que até uma resposta incerta seja uma boa aposta.",
+     "p": [
+      "Risca as opções claramente impossíveis e escolhe entre as restantes.",
+      "Procura pistas dentro da pergunta: uma palavra, um número ou um lugar.",
+      "Confia no primeiro instinto, a não ser que encontres um motivo real para mudar."
+     ],
+     "q": "Qual foi o teu palpite mais sortudo e o que te fez escolher essa resposta?",
+     "c": "Põe-te à prova: adivinha quantas patas tem uma aranha e confirma no dia 29."
+    },
+    "pt_BR": {
+     "t": "Chutar com inteligência",
+     "g": "Use a eliminação para que até uma resposta incerta seja uma boa aposta.",
+     "p": [
+      "Risque as opções claramente impossíveis e escolha entre as restantes.",
+      "Procure pistas dentro da pergunta: uma palavra, um número ou um lugar.",
+      "Confie no primeiro instinto, a menos que ache um motivo real para mudar."
+     ],
+     "q": "Qual foi o seu chute mais sortudo e o que fez você escolher essa resposta?",
+     "c": "Teste-se: chute quantas patas tem uma aranha e confira no dia 29."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Memory tricks for facts",
+     "g": "Make new facts stick by linking them to images, stories or things you know.",
+     "p": [
+      "Picture the fact as a funny image: a cheetah racing a car sticks better than a number.",
+      "Tell the fact as a tiny story with you in it; stories are easy to recall.",
+      "Repeat it tomorrow, then in three days: spaced repetition builds strong memory."
+     ],
+     "q": "Which fact do you remember best from childhood, and why do you think it stayed?",
+     "c": "Choose one fact from this week and invent a silly image to remember it."
+    },
+    "de": {
+     "t": "Gedächtnistricks für Fakten",
+     "g": "Neue Fakten bleiben hängen, wenn du sie mit Bildern, Geschichten oder Bekanntem verknüpfst.",
+     "p": [
+      "Stell dir den Fakt als lustiges Bild vor: Ein Gepard im Rennen mit einem Auto bleibt besser haften.",
+      "Erzähle den Fakt als Mini-Geschichte mit dir selbst darin; Geschichten merkt man sich leicht.",
+      "Wiederhole ihn morgen und in drei Tagen: Verteiltes Wiederholen stärkt das Gedächtnis."
+     ],
+     "q": "Welchen Fakt aus der Kindheit weißt du am besten, und warum ist er geblieben?",
+     "c": "Wähle einen Fakt dieser Woche und erfinde ein albernes Bild, um ihn zu merken."
+    },
+    "es": {
+     "t": "Trucos de memoria para datos",
+     "g": "Haz que los datos nuevos se queden enlazándolos con imágenes, historias o cosas conocidas.",
+     "p": [
+      "Imagina el dato como una imagen graciosa: un guepardo corriendo contra un coche se recuerda mejor.",
+      "Cuenta el dato como un mini cuento donde tú apareces; las historias se recuerdan fácil.",
+      "Repítelo mañana y a los tres días: la repetición espaciada crea memoria sólida."
+     ],
+     "q": "¿Qué dato de la infancia recuerdas mejor y por qué crees que se quedó?",
+     "c": "Elige un dato de esta semana e inventa una imagen absurda para recordarlo."
+    },
+    "fr": {
+     "t": "Astuces de mémoire pour les faits",
+     "g": "Fais rester les nouveaux faits en les reliant à des images, des histoires ou du connu.",
+     "p": [
+      "Imagine le fait en image drôle : un guépard qui court contre une voiture se retient mieux.",
+      "Raconte le fait en mini-histoire où tu apparais ; les histoires se retiennent bien.",
+      "Répète-le demain puis dans trois jours : la répétition espacée renforce la mémoire."
+     ],
+     "q": "Quel fait de ton enfance retiens-tu le mieux, et pourquoi est-il resté ?",
+     "c": "Choisis un fait de la semaine et invente une image rigolote pour le retenir."
+    },
+    "it": {
+     "t": "Trucchi di memoria per i fatti",
+     "g": "Fai restare i fatti nuovi legandoli a immagini, storie o cose che già conosci.",
+     "p": [
+      "Immagina il fatto come un'immagine buffa: un ghepardo che corre contro un'auto si ricorda meglio.",
+      "Racconta il fatto come una mini storia con te dentro: le storie si ricordano facilmente.",
+      "Ripetilo domani e fra tre giorni: la ripetizione dilazionata rafforza la memoria."
+     ],
+     "q": "Quale curiosità dell'infanzia ricordi meglio e perché pensi che sia rimasta?",
+     "c": "Scegli un fatto di questa settimana e inventa un'immagine buffa per ricordarlo."
+    },
+    "pt": {
+     "t": "Truques de memória para factos",
+     "g": "Faz os factos novos ficarem ligando-os a imagens, histórias ou coisas que já conheces.",
+     "p": [
+      "Imagina o facto como uma imagem engraçada: uma chita a correr contra um carro fixa-se melhor.",
+      "Conta o facto como uma mini história onde apareces; as histórias lembram-se bem.",
+      "Repete-o amanhã e daqui a três dias: a repetição espaçada cria memória sólida."
+     ],
+     "q": "Que curiosidade da infância recordas melhor e porque achas que ficou?",
+     "c": "Escolhe um facto desta semana e inventa uma imagem parva para o recordar."
+    },
+    "pt_BR": {
+     "t": "Truques de memória para fatos",
+     "g": "Faça os fatos novos grudarem ligando-os a imagens, histórias ou coisas que você já conhece.",
+     "p": [
+      "Imagine o fato como uma imagem engraçada: um guepardo correndo contra um carro fixa melhor.",
+      "Conte o fato como uma mini história com você dentro; histórias são fáceis de lembrar.",
+      "Repita amanhã e daqui a três dias: a repetição espaçada cria memória forte."
+     ],
+     "q": "Qual curiosidade da infância você lembra melhor e por que acha que ficou?",
+     "c": "Escolha um fato desta semana e invente uma imagem boba para lembrá-lo."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Capitals everyone should know",
+     "g": "Meet famous capitals and simple ways to remember them.",
+     "p": [
+      "France has Paris, Japan has Tokyo, Egypt has Cairo, Italy has Rome and Spain has Madrid.",
+      "Link each capital to a famous sight: Eiffel Tower, Colosseum, pyramids nearby.",
+      "Many capitals sit on rivers or coasts, which is why cities grew there."
+     ],
+     "q": "Which capital would you most like to visit, and what would you do first?",
+     "c": "Name five capitals out loud without looking, then add one new one."
+    },
+    "de": {
+     "t": "Hauptstädte, die jeder kennen sollte",
+     "g": "Lerne berühmte Hauptstädte und einfache Merkhilfen kennen.",
+     "p": [
+      "Frankreich hat Paris, Japan Tokio, Ägypten Kairo, Italien Rom und Spanien Madrid.",
+      "Verknüpfe jede Hauptstadt mit einer Sehenswürdigkeit: Eiffelturm, Kolosseum, Pyramiden in der Nähe.",
+      "Viele Hauptstädte liegen an Flüssen oder Küsten, deshalb sind dort Städte gewachsen."
+     ],
+     "q": "Welche Hauptstadt würdest du am liebsten besuchen, und was würdest du zuerst tun?",
+     "c": "Nenne fünf Hauptstädte laut ohne Spicken und füge dann eine neue hinzu."
+    },
+    "es": {
+     "t": "Capitales que todos deberían conocer",
+     "g": "Conoce capitales famosas y formas sencillas de recordarlas.",
+     "p": [
+      "Francia tiene París, Japón Tokio, Egipto El Cairo, Italia Roma y España Madrid.",
+      "Une cada capital a un lugar famoso: Torre Eiffel, Coliseo, pirámides cercanas.",
+      "Muchas capitales están junto a ríos o costas, por eso allí crecieron ciudades."
+     ],
+     "q": "¿Qué capital te gustaría visitar más y qué harías primero?",
+     "c": "Nombra cinco capitales en voz alta sin mirar y añade una nueva."
+    },
+    "fr": {
+     "t": "Les capitales à connaître",
+     "g": "Découvre des capitales célèbres et des façons simples de les retenir.",
+     "p": [
+      "La France a Paris, le Japon Tokyo, l'Égypte Le Caire, l'Italie Rome et l'Espagne Madrid.",
+      "Associe chaque capitale à un lieu célèbre : tour Eiffel, Colisée, pyramides proches.",
+      "Beaucoup de capitales bordent un fleuve ou la mer, d'où la croissance des villes."
+     ],
+     "q": "Quelle capitale aimerais-tu le plus visiter, et que ferais-tu en premier ?",
+     "c": "Cite cinq capitales à voix haute sans regarder, puis ajoutes-en une nouvelle."
+    },
+    "it": {
+     "t": "Capitali che tutti dovrebbero conoscere",
+     "g": "Conosci capitali famose e modi semplici per ricordarle.",
+     "p": [
+      "La Francia ha Parigi, il Giappone Tokyo, l'Egitto Il Cairo, l'Italia Roma e la Spagna Madrid.",
+      "Collega ogni capitale a un luogo famoso: Torre Eiffel, Colosseo, piramidi vicine.",
+      "Molte capitali sorgono su fiumi o coste, per questo lì le città sono cresciute."
+     ],
+     "q": "Quale capitale ti piacerebbe visitare di più e cosa faresti per prima cosa?",
+     "c": "Nomina cinque capitali ad alta voce senza guardare e aggiungine una nuova."
+    },
+    "pt": {
+     "t": "Capitais que todos devem conhecer",
+     "g": "Conhece capitais famosas e formas simples de as recordar.",
+     "p": [
+      "A França tem Paris, o Japão Tóquio, o Egito o Cairo, a Itália Roma e a Espanha Madrid.",
+      "Liga cada capital a um local famoso: Torre Eiffel, Coliseu, pirâmides perto.",
+      "Muitas capitais ficam junto a rios ou costas, por isso aí cresceram cidades."
+     ],
+     "q": "Que capital gostarias mais de visitar e o que farias primeiro?",
+     "c": "Diz cinco capitais em voz alta sem espreitar e acrescenta uma nova."
+    },
+    "pt_BR": {
+     "t": "Capitais que todos deviam conhecer",
+     "g": "Conheça capitais famosas e jeitos simples de lembrá-las.",
+     "p": [
+      "A França tem Paris, o Japão Tóquio, o Egito o Cairo, a Itália Roma e a Espanha Madri.",
+      "Ligue cada capital a um lugar famoso: Torre Eiffel, Coliseu, pirâmides por perto.",
+      "Muitas capitais ficam em rios ou costas, por isso ali as cidades cresceram."
+     ],
+     "q": "Qual capital você mais gostaria de visitar e o que faria primeiro?",
+     "c": "Diga cinco capitais em voz alta sem olhar e acrescente uma nova."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tricky capitals",
+     "g": "Beat the classic traps: the biggest city is often not the capital.",
+     "p": [
+      "Australia's capital is Canberra, not Sydney, and it was built as a compromise city.",
+      "Canada's capital is Ottawa, not Toronto; Brazil's is Brasília, not Rio de Janeiro.",
+      "Turkey's capital is Ankara, not Istanbul, and Switzerland's is Bern, not Zurich."
+     ],
+     "q": "Which country's capital surprised you the most when you first learned it?",
+     "c": "Ask someone the capital of Australia and see how many say Sydney."
+    },
+    "de": {
+     "t": "Knifflige Hauptstädte",
+     "g": "Umgehe die klassischen Fallen: Die größte Stadt ist oft nicht die Hauptstadt.",
+     "p": [
+      "Hauptstadt Australiens ist Canberra, nicht Sydney; sie wurde als Kompromissstadt gebaut.",
+      "Kanadas Hauptstadt ist Ottawa, nicht Toronto; Brasiliens ist Brasília, nicht Rio de Janeiro.",
+      "Die Türkei hat Ankara, nicht Istanbul, und die Schweiz hat Bern, nicht Zürich."
+     ],
+     "q": "Welche Hauptstadt hat dich beim ersten Kennenlernen am meisten überrascht?",
+     "c": "Frag jemanden nach der Hauptstadt Australiens und zähle, wie viele Sydney sagen."
+    },
+    "es": {
+     "t": "Capitales engañosas",
+     "g": "Evita las trampas clásicas: la ciudad más grande a menudo no es la capital.",
+     "p": [
+      "La capital de Australia es Canberra, no Sídney; se construyó como ciudad de compromiso.",
+      "La de Canadá es Ottawa, no Toronto; la de Brasil es Brasilia, no Río de Janeiro.",
+      "La de Turquía es Ankara, no Estambul, y la de Suiza es Berna, no Zúrich."
+     ],
+     "q": "¿La capital de qué país te sorprendió más cuando la aprendiste?",
+     "c": "Pregunta a alguien la capital de Australia y mira cuántos dicen Sídney."
+    },
+    "fr": {
+     "t": "Capitales pièges",
+     "g": "Évite les pièges classiques : la plus grande ville n'est souvent pas la capitale.",
+     "p": [
+      "La capitale de l'Australie est Canberra, pas Sydney ; elle fut bâtie comme ville de compromis.",
+      "Celle du Canada est Ottawa, pas Toronto ; celle du Brésil est Brasília, pas Rio de Janeiro.",
+      "Celle de la Turquie est Ankara, pas Istanbul, et celle de la Suisse est Berne, pas Zurich."
+     ],
+     "q": "La capitale de quel pays t'a le plus surpris quand tu l'as apprise ?",
+     "c": "Demande à quelqu'un la capitale de l'Australie et vois combien répondent Sydney."
+    },
+    "it": {
+     "t": "Capitali insidiose",
+     "g": "Evita le trappole classiche: la città più grande spesso non è la capitale.",
+     "p": [
+      "La capitale dell'Australia è Canberra, non Sydney; fu costruita come città di compromesso.",
+      "Quella del Canada è Ottawa, non Toronto; quella del Brasile è Brasilia, non Rio de Janeiro.",
+      "Quella della Turchia è Ankara, non Istanbul, e quella della Svizzera è Berna, non Zurigo."
+     ],
+     "q": "La capitale di quale paese ti ha sorpreso di più quando l'hai scoperta?",
+     "c": "Chiedi a qualcuno la capitale dell'Australia e conta quanti dicono Sydney."
+    },
+    "pt": {
+     "t": "Capitais traiçoeiras",
+     "g": "Evita as armadilhas clássicas: a maior cidade muitas vezes não é a capital.",
+     "p": [
+      "A capital da Austrália é Camberra, não Sydney; foi construída como cidade de compromisso.",
+      "A do Canadá é Otava, não Toronto; a do Brasil é Brasília, não o Rio de Janeiro.",
+      "A da Turquia é Ancara, não Istambul, e a da Suíça é Berna, não Zurique."
+     ],
+     "q": "A capital de que país mais te surpreendeu quando a aprendeste?",
+     "c": "Pergunta a alguém a capital da Austrália e vê quantos dizem Sydney."
+    },
+    "pt_BR": {
+     "t": "Capitais traiçoeiras",
+     "g": "Evite as armadilhas clássicas: a maior cidade muitas vezes não é a capital.",
+     "p": [
+      "A capital da Austrália é Camberra, não Sydney; foi construída como cidade de compromisso.",
+      "A do Canadá é Ottawa, não Toronto; a do Brasil é Brasília, não o Rio de Janeiro.",
+      "A da Turquia é Ancara, não Istambul, e a da Suíça é Berna, não Zurique."
+     ],
+     "q": "A capital de qual país mais surpreendeu você quando aprendeu?",
+     "c": "Pergunte a alguém a capital da Austrália e veja quantos dizem Sydney."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The seven continents",
+     "g": "Name the seven continents from largest to smallest.",
+     "p": [
+      "The order by size is Asia, Africa, North America, South America, Antarctica, Europe, Oceania.",
+      "Asia is home to more than half of all people on Earth.",
+      "Antarctica is almost entirely covered in ice and has no permanent cities."
+     ],
+     "q": "Which continents have you visited, and which one do you dream of seeing?",
+     "c": "Recite the seven continents in order, then say one fact about your favourite."
+    },
+    "de": {
+     "t": "Die sieben Kontinente",
+     "g": "Nenne die sieben Kontinente vom größten zum kleinsten.",
+     "p": [
+      "Nach Größe: Asien, Afrika, Nordamerika, Südamerika, Antarktis, Europa, Ozeanien.",
+      "In Asien lebt mehr als die Hälfte aller Menschen der Erde.",
+      "Die Antarktis ist fast ganz von Eis bedeckt und hat keine dauerhaften Städte."
+     ],
+     "q": "Welche Kontinente hast du besucht, und welchen möchtest du unbedingt sehen?",
+     "c": "Sag die sieben Kontinente der Reihe nach auf und nenne einen Fakt zu deinem Liebling."
+    },
+    "es": {
+     "t": "Los siete continentes",
+     "g": "Nombra los siete continentes del más grande al más pequeño.",
+     "p": [
+      "Por tamaño: Asia, África, América del Norte, América del Sur, Antártida, Europa y Oceanía.",
+      "En Asia vive más de la mitad de las personas del planeta.",
+      "La Antártida está casi toda cubierta de hielo y no tiene ciudades permanentes."
+     ],
+     "q": "¿Qué continentes has visitado y cuál sueñas con conocer?",
+     "c": "Recita los siete continentes en orden y di un dato de tu favorito."
+    },
+    "fr": {
+     "t": "Les sept continents",
+     "g": "Nomme les sept continents du plus grand au plus petit.",
+     "p": [
+      "Par taille : Asie, Afrique, Amérique du Nord, Amérique du Sud, Antarctique, Europe, Océanie.",
+      "L'Asie abrite plus de la moitié des habitants de la planète.",
+      "L'Antarctique est presque entièrement couvert de glace et n'a pas de villes permanentes."
+     ],
+     "q": "Quels continents as-tu visités, et lequel rêves-tu de voir ?",
+     "c": "Récite les sept continents dans l'ordre, puis donne un fait sur ton préféré."
+    },
+    "it": {
+     "t": "I sette continenti",
+     "g": "Nomina i sette continenti dal più grande al più piccolo.",
+     "p": [
+      "Per dimensione: Asia, Africa, America del Nord, America del Sud, Antartide, Europa, Oceania.",
+      "In Asia vive più della metà della popolazione mondiale.",
+      "L'Antartide è quasi tutta coperta di ghiaccio e non ha città permanenti."
+     ],
+     "q": "Quali continenti hai visitato e quale sogni di vedere?",
+     "c": "Recita i sette continenti in ordine e dì una curiosità sul tuo preferito."
+    },
+    "pt": {
+     "t": "Os sete continentes",
+     "g": "Diz os sete continentes do maior para o mais pequeno.",
+     "p": [
+      "Por tamanho: Ásia, África, América do Norte, América do Sul, Antártida, Europa e Oceânia.",
+      "Na Ásia vive mais de metade das pessoas do planeta.",
+      "A Antártida está quase toda coberta de gelo e não tem cidades permanentes."
+     ],
+     "q": "Que continentes já visitaste e qual sonhas conhecer?",
+     "c": "Recita os sete continentes por ordem e diz um facto sobre o teu preferido."
+    },
+    "pt_BR": {
+     "t": "Os sete continentes",
+     "g": "Diga os sete continentes do maior para o menor.",
+     "p": [
+      "Por tamanho: Ásia, África, América do Norte, América do Sul, Antártida, Europa e Oceania.",
+      "Na Ásia vive mais da metade das pessoas do planeta.",
+      "A Antártida é quase toda coberta de gelo e não tem cidades permanentes."
+     ],
+     "q": "Quais continentes você já visitou e qual sonha conhecer?",
+     "c": "Recite os sete continentes em ordem e diga um fato sobre o seu favorito."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Oceans of the world",
+     "g": "Learn the five oceans and which one is the biggest.",
+     "p": [
+      "The Pacific is the largest and deepest ocean, bigger than all land combined.",
+      "Next come the Atlantic, Indian, Southern and Arctic oceans.",
+      "About seven tenths of Earth's surface is covered by ocean water."
+     ],
+     "q": "Do you prefer the sea, the mountains or a lake, and what do you do there?",
+     "c": "Find the five oceans on a map or globe and trace them with your finger."
+    },
+    "de": {
+     "t": "Die Ozeane der Welt",
+     "g": "Lerne die fünf Ozeane kennen und welcher der größte ist.",
+     "p": [
+      "Der Pazifik ist der größte und tiefste Ozean, größer als alles Land zusammen.",
+      "Danach folgen Atlantik, Indischer, Südlicher und Arktischer Ozean.",
+      "Etwa sieben Zehntel der Erdoberfläche sind von Meerwasser bedeckt."
+     ],
+     "q": "Magst du Meer, Berge oder See lieber, und was machst du dort?",
+     "c": "Such die fünf Ozeane auf Karte oder Globus und fahre sie mit dem Finger nach."
+    },
+    "es": {
+     "t": "Los océanos del mundo",
+     "g": "Aprende los cinco océanos y cuál es el mayor.",
+     "p": [
+      "El Pacífico es el océano más grande y profundo, mayor que toda la tierra junta.",
+      "Le siguen el Atlántico, el Índico, el Austral y el Ártico.",
+      "Cerca de siete décimas partes de la superficie terrestre son agua oceánica."
+     ],
+     "q": "¿Prefieres el mar, la montaña o un lago y qué haces allí?",
+     "c": "Busca los cinco océanos en un mapa o globo y recórrelos con el dedo."
+    },
+    "fr": {
+     "t": "Les océans du monde",
+     "g": "Apprends les cinq océans et lequel est le plus grand.",
+     "p": [
+      "Le Pacifique est le plus grand et le plus profond, plus vaste que toutes les terres réunies.",
+      "Viennent ensuite l'Atlantique, l'océan Indien, l'océan Austral et l'Arctique.",
+      "Environ sept dixièmes de la surface terrestre sont recouverts d'eau océanique."
+     ],
+     "q": "Préfères-tu la mer, la montagne ou un lac, et que fais-tu là-bas ?",
+     "c": "Trouve les cinq océans sur une carte ou un globe et suis-les du doigt."
+    },
+    "it": {
+     "t": "Gli oceani del mondo",
+     "g": "Impara i cinque oceani e quale è il più grande.",
+     "p": [
+      "Il Pacifico è l'oceano più grande e profondo, più vasto di tutte le terre emerse insieme.",
+      "Seguono Atlantico, Indiano, Antartico e Artico.",
+      "Circa sette decimi della superficie terrestre sono coperti da acqua oceanica."
+     ],
+     "q": "Preferisci il mare, la montagna o un lago e cosa fai lì?",
+     "c": "Trova i cinque oceani su una mappa o un globo e seguili con il dito."
+    },
+    "pt": {
+     "t": "Os oceanos do mundo",
+     "g": "Aprende os cinco oceanos e qual é o maior.",
+     "p": [
+      "O Pacífico é o maior e mais profundo oceano, maior do que toda a terra junta.",
+      "Seguem-se o Atlântico, o Índico, o Antártico e o Ártico.",
+      "Cerca de sete décimos da superfície da Terra são água oceânica."
+     ],
+     "q": "Preferes o mar, a montanha ou um lago e o que fazes lá?",
+     "c": "Procura os cinco oceanos num mapa ou globo e percorre-os com o dedo."
+    },
+    "pt_BR": {
+     "t": "Os oceanos do mundo",
+     "g": "Aprenda os cinco oceanos e qual é o maior.",
+     "p": [
+      "O Pacífico é o maior e mais profundo oceano, maior do que toda a terra junta.",
+      "Em seguida vêm o Atlântico, o Índico, o Antártico e o Ártico.",
+      "Cerca de sete décimos da superfície da Terra são água oceânica."
+     ],
+     "q": "Você prefere o mar, a montanha ou um lago e o que faz lá?",
+     "c": "Procure os cinco oceanos num mapa ou globo e percorra-os com o dedo."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Longest rivers",
+     "g": "Discover the great rivers and the friendly contest between the Nile and the Amazon.",
+     "p": [
+      "The Nile in Africa and the Amazon in South America compete for the title of longest.",
+      "The Amazon carries the most water of any river, far more than any other.",
+      "The Nile flows north through Egypt into the Mediterranean Sea."
+     ],
+     "q": "Is there a river near you, and what do people do along its banks?",
+     "c": "Look up where the Nile and the Amazon begin and end on a map."
+    },
+    "de": {
+     "t": "Die längsten Flüsse",
+     "g": "Entdecke die großen Flüsse und den freundlichen Wettstreit zwischen Nil und Amazonas.",
+     "p": [
+      "Der Nil in Afrika und der Amazonas in Südamerika streiten um den Titel des längsten.",
+      "Der Amazonas führt die größte Wassermenge aller Flüsse, weit mehr als jeder andere.",
+      "Der Nil fließt durch Ägypten nach Norden ins Mittelmeer."
+     ],
+     "q": "Gibt es einen Fluss in deiner Nähe, und was tun Menschen an seinen Ufern?",
+     "c": "Such auf der Karte, wo Nil und Amazonas beginnen und enden."
+    },
+    "es": {
+     "t": "Los ríos más largos",
+     "g": "Descubre los grandes ríos y la amistosa disputa entre el Nilo y el Amazonas.",
+     "p": [
+      "El Nilo en África y el Amazonas en Sudamérica compiten por el título de más largo.",
+      "El Amazonas lleva más agua que ningún otro río, con mucha diferencia.",
+      "El Nilo fluye hacia el norte por Egipto hasta el mar Mediterráneo."
+     ],
+     "q": "¿Hay un río cerca de ti y qué hace la gente en sus orillas?",
+     "c": "Busca en un mapa dónde nacen y desembocan el Nilo y el Amazonas."
+    },
+    "fr": {
+     "t": "Les plus longs fleuves",
+     "g": "Découvre les grands fleuves et la rivalité amicale entre le Nil et l'Amazone.",
+     "p": [
+      "Le Nil en Afrique et l'Amazone en Amérique du Sud se disputent le titre de plus long.",
+      "L'Amazone transporte le plus d'eau de tous les fleuves, bien plus que les autres.",
+      "Le Nil coule vers le nord à travers l'Égypte jusqu'à la Méditerranée."
+     ],
+     "q": "Y a-t-il un fleuve près de chez toi, et que fait-on sur ses rives ?",
+     "c": "Cherche sur une carte où naissent et finissent le Nil et l'Amazone."
+    },
+    "it": {
+     "t": "I fiumi più lunghi",
+     "g": "Scopri i grandi fiumi e la sfida amichevole fra il Nilo e il Rio delle Amazzoni.",
+     "p": [
+      "Il Nilo in Africa e il Rio delle Amazzoni in Sud America si contendono il titolo di più lungo.",
+      "Il Rio delle Amazzoni porta più acqua di ogni altro fiume, molto più degli altri.",
+      "Il Nilo scorre verso nord attraverso l'Egitto fino al Mediterraneo."
+     ],
+     "q": "C'è un fiume vicino a te e cosa fa la gente sulle sue rive?",
+     "c": "Cerca su una mappa dove nascono e sfociano il Nilo e il Rio delle Amazzoni."
+    },
+    "pt": {
+     "t": "Os rios mais longos",
+     "g": "Descobre os grandes rios e a disputa amigável entre o Nilo e o Amazonas.",
+     "p": [
+      "O Nilo em África e o Amazonas na América do Sul disputam o título de mais longo.",
+      "O Amazonas leva mais água do que qualquer outro rio, e com larga vantagem.",
+      "O Nilo corre para norte através do Egito até ao mar Mediterrâneo."
+     ],
+     "q": "Há um rio perto de ti e o que fazem as pessoas nas suas margens?",
+     "c": "Procura num mapa onde nascem e terminam o Nilo e o Amazonas."
+    },
+    "pt_BR": {
+     "t": "Os rios mais longos",
+     "g": "Descubra os grandes rios e a disputa amigável entre o Nilo e o Amazonas.",
+     "p": [
+      "O Nilo na África e o Amazonas na América do Sul disputam o título de mais longo.",
+      "O Amazonas leva mais água do que qualquer outro rio, com larga vantagem.",
+      "O Nilo corre para o norte pelo Egito até o mar Mediterrâneo."
+     ],
+     "q": "Tem algum rio perto de você e o que as pessoas fazem nas margens?",
+     "c": "Procure num mapa onde nascem e terminam o Nilo e o Amazonas."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Highest mountains",
+     "g": "Meet the tallest peaks on Earth and what makes them special.",
+     "p": [
+      "Everest, on the Nepal-Tibet border, is the highest above sea level at about 8,849 metres.",
+      "K2, in the Karakoram range, is the second highest and is famously difficult to climb.",
+      "The Himalayas are still rising a little each year as continental plates push together."
+     ],
+     "q": "Have you ever stood on a mountain top, and what was the view like?",
+     "c": "Say the height of Everest aloud, then tell it to someone as a fun fact."
+    },
+    "de": {
+     "t": "Die höchsten Berge",
+     "g": "Lerne die höchsten Gipfel der Erde kennen und was sie besonders macht.",
+     "p": [
+      "Der Everest an der Grenze Nepal-Tibet ist mit rund 8849 Metern über dem Meer der höchste.",
+      "Der K2 im Karakorum ist der zweithöchste und berühmt schwer zu besteigen.",
+      "Der Himalaya wächst jedes Jahr ein wenig, weil Kontinentalplatten aufeinander drücken."
+     ],
+     "q": "Hast du schon auf einem Berggipfel gestanden, und wie war die Aussicht?",
+     "c": "Sag die Höhe des Everest laut und erzähle sie jemandem als Fun Fact."
+    },
+    "es": {
+     "t": "Las montañas más altas",
+     "g": "Conoce los picos más altos de la Tierra y qué los hace especiales.",
+     "p": [
+      "El Everest, en la frontera Nepal-Tíbet, es el más alto sobre el nivel del mar: unos 8849 metros.",
+      "El K2, en el Karakórum, es el segundo más alto y famoso por su dificultad.",
+      "El Himalaya sigue creciendo un poco cada año porque las placas continentales chocan."
+     ],
+     "q": "¿Has estado alguna vez en la cima de una montaña y cómo era la vista?",
+     "c": "Di en voz alta la altura del Everest y cuéntala a alguien como dato curioso."
+    },
+    "fr": {
+     "t": "Les plus hautes montagnes",
+     "g": "Découvre les plus hauts sommets de la Terre et ce qui les rend spéciaux.",
+     "p": [
+      "L'Everest, à la frontière Népal-Tibet, culmine à environ 8 849 mètres au-dessus de la mer.",
+      "Le K2, dans le Karakoram, est le deuxième plus haut et réputé très difficile à gravir.",
+      "L'Himalaya grandit encore un peu chaque année car les plaques continentales se poussent."
+     ],
+     "q": "As-tu déjà atteint un sommet, et comment était la vue ?",
+     "c": "Dis à voix haute l'altitude de l'Everest, puis raconte-la à quelqu'un comme anecdote."
+    },
+    "it": {
+     "t": "Le montagne più alte",
+     "g": "Conosci le vette più alte della Terra e cosa le rende speciali.",
+     "p": [
+      "L'Everest, al confine Nepal-Tibet, è il più alto sul livello del mare: circa 8849 metri.",
+      "Il K2, nel Karakorum, è il secondo più alto e famoso per la difficoltà di scalata.",
+      "L'Himalaya cresce ancora un poco ogni anno perché le placche continentali si spingono."
+     ],
+     "q": "Sei mai stato sulla cima di una montagna e com'era la vista?",
+     "c": "Dì ad alta voce l'altezza dell'Everest e raccontala a qualcuno come curiosità."
+    },
+    "pt": {
+     "t": "As montanhas mais altas",
+     "g": "Conhece os picos mais altos da Terra e o que os torna especiais.",
+     "p": [
+      "O Evereste, na fronteira Nepal-Tibete, é o mais alto acima do nível do mar: cerca de 8849 metros.",
+      "O K2, no Caracórum, é o segundo mais alto e famoso por ser difícil de escalar.",
+      "Os Himalaias ainda sobem um pouco por ano, porque as placas continentais se empurram."
+     ],
+     "q": "Já estiveste no topo de uma montanha e como era a vista?",
+     "c": "Diz em voz alta a altura do Evereste e conta-a a alguém como curiosidade."
+    },
+    "pt_BR": {
+     "t": "As montanhas mais altas",
+     "g": "Conheça os picos mais altos da Terra e o que os torna especiais.",
+     "p": [
+      "O Everest, na fronteira Nepal-Tibete, é o mais alto acima do nível do mar: cerca de 8849 metros.",
+      "O K2, no Karakoram, é o segundo mais alto e famoso por ser difícil de escalar.",
+      "O Himalaia ainda sobe um pouco por ano, porque as placas continentais se empurram."
+     ],
+     "q": "Você já esteve no topo de uma montanha e como era a vista?",
+     "c": "Diga em voz alta a altura do Everest e conte para alguém como curiosidade."
+    }
+   }
+  }
+ ]
+}

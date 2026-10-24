@@ -1,0 +1,835 @@
+{
+ "topic": "environment",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Saving water at home",
+     "g": "Find quick fixes that cut water use in the kitchen and bathroom.",
+     "p": [
+      "Turning the tap off while brushing teeth or scrubbing hands saves water every day.",
+      "Full loads in the dishwasher and washing machine use water more efficiently.",
+      "Most savings come from habits, not sacrifice: same comfort, less waste."
+     ],
+     "q": "Where in your home do you use the most water?",
+     "c": "Turn the tap off while brushing your teeth and soaping your hands today."
+    },
+    "de": {
+     "t": "Wasser sparen im Haushalt",
+     "g": "Schnelle Wege finden, den Wasserverbrauch in Küche und Bad zu senken.",
+     "p": [
+      "Den Hahn beim Zähneputzen oder Händeeinseifen zuzudrehen spart täglich Wasser.",
+      "Volle Ladungen in Spül- und Waschmaschine nutzen Wasser effizienter.",
+      "Die meisten Einsparungen kommen von Gewohnheiten, nicht von Verzicht: gleicher Komfort, weniger Verschwendung."
+     ],
+     "q": "Wo in deinem Zuhause verbrauchst du am meisten Wasser?",
+     "c": "Dreh heute beim Zähneputzen und Händeeinseifen den Wasserhahn zu."
+    },
+    "es": {
+     "t": "Ahorrar agua en casa",
+     "g": "Encontrar arreglos rápidos que reduzcan el uso de agua en cocina y baño.",
+     "p": [
+      "Cerrar el grifo al cepillarte los dientes o enjabonarte las manos ahorra agua cada día.",
+      "Los lavavajillas y lavadoras llenos usan el agua con más eficiencia.",
+      "La mayoría del ahorro viene de hábitos, no de sacrificio: mismo confort, menos desperdicio."
+     ],
+     "q": "¿En qué parte de tu casa usas más agua?",
+     "c": "Cierra hoy el grifo mientras te cepillas los dientes y te enjabonas las manos."
+    },
+    "fr": {
+     "t": "Économiser l'eau à la maison",
+     "g": "Trouver des solutions rapides pour réduire la consommation d'eau en cuisine et dans la salle de bains.",
+     "p": [
+      "Fermer le robinet pendant le brossage des dents ou le savonnage des mains économise de l'eau chaque jour.",
+      "Lave-vaisselle et lave-linge pleins utilisent l'eau plus efficacement.",
+      "L'essentiel des économies vient des habitudes, pas des sacrifices : même confort, moins de gaspillage."
+     ],
+     "q": "Où chez toi utilises-tu le plus d'eau ?",
+     "c": "Ferme le robinet aujourd'hui pendant que tu te brosses les dents et te savonnes les mains."
+    },
+    "it": {
+     "t": "Risparmiare acqua in casa",
+     "g": "Trovare soluzioni rapide per ridurre l'uso dell'acqua in cucina e in bagno.",
+     "p": [
+      "Chiudere il rubinetto mentre ti lavi i denti o ti insaponi le mani risparmia acqua ogni giorno.",
+      "Lavastoviglie e lavatrice a pieno carico usano l'acqua in modo più efficiente.",
+      "Il risparmio viene soprattutto dalle abitudini, non dai sacrifici: stesso comfort, meno spreco."
+     ],
+     "q": "In quale punto di casa usi più acqua?",
+     "c": "Oggi chiudi il rubinetto mentre ti lavi i denti e ti insaponi le mani."
+    },
+    "pt": {
+     "t": "Poupar água em casa",
+     "g": "Encontrar soluções rápidas para reduzir o uso de água na cozinha e na casa de banho.",
+     "p": [
+      "Fechar a torneira ao lavar os dentes ou ensaboar as mãos poupa água todos os dias.",
+      "Máquinas de lavar loiça e roupa cheias usam a água com mais eficiência.",
+      "A maior parte da poupança vem de hábitos, não de sacrifícios: o mesmo conforto, menos desperdício."
+     ],
+     "q": "Em que parte da tua casa gastas mais água?",
+     "c": "Fecha hoje a torneira enquanto lavas os dentes e ensaboas as mãos."
+    },
+    "pt_BR": {
+     "t": "Economizar água em casa",
+     "g": "Encontrar soluções rápidas para reduzir o uso de água na cozinha e no banheiro.",
+     "p": [
+      "Fechar a torneira ao escovar os dentes ou ensaboar as mãos economiza água todo dia.",
+      "Lava-louças e máquinas de lavar cheias usam a água com mais eficiência.",
+      "A maior parte da economia vem de hábitos, não de sacrifícios: mesmo conforto, menos desperdício."
+     ],
+     "q": "Em que parte da sua casa você gasta mais água?",
+     "c": "Feche hoje a torneira enquanto escova os dentes e ensaboa as mãos."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shorter showers, happy planet",
+     "g": "See how a few minutes less in the shower saves water and energy.",
+     "p": [
+      "Heating water takes energy, so a shorter shower saves both water and power.",
+      "A timer or a favourite song can help you keep to a comfortable length.",
+      "Turning the water off while soaping up is another easy trick."
+     ],
+     "q": "How long is your usual shower, and how do you feel about trimming it?",
+     "c": "Time your shower today and try finishing one minute sooner than usual."
+    },
+    "de": {
+     "t": "Kürzer duschen, glücklicher Planet",
+     "g": "Sehen, wie wenige Minuten weniger Duschen Wasser und Energie sparen.",
+     "p": [
+      "Wasser zu erhitzen braucht Energie, daher spart kürzeres Duschen Wasser und Strom.",
+      "Ein Timer oder dein Lieblingslied helfen, bei einer angenehmen Länge zu bleiben.",
+      "Das Wasser beim Einseifen abzustellen ist ein weiterer einfacher Trick."
+     ],
+     "q": "Wie lang duschst du meist, und wie fändest du es, etwas zu kürzen?",
+     "c": "Miss heute deine Duschzeit und versuche, eine Minute früher fertig zu sein."
+    },
+    "es": {
+     "t": "Duchas más cortas, planeta feliz",
+     "g": "Ver cómo unos minutos menos en la ducha ahorran agua y energía.",
+     "p": [
+      "Calentar agua requiere energía, así que una ducha más corta ahorra agua y electricidad.",
+      "Un temporizador o tu canción favorita te ayudan a mantener una duración cómoda.",
+      "Cerrar el agua mientras te enjabonas es otro truco fácil."
+     ],
+     "q": "¿Cuánto dura tu ducha habitual y qué opinas de acortarla un poco?",
+     "c": "Cronometra hoy tu ducha e intenta terminar un minuto antes de lo habitual."
+    },
+    "fr": {
+     "t": "Douches plus courtes, planète contente",
+     "g": "Voir comment quelques minutes de moins sous la douche économisent eau et énergie.",
+     "p": [
+      "Chauffer l'eau demande de l'énergie : une douche plus courte économise eau et électricité.",
+      "Un minuteur ou ta chanson préférée aident à garder une durée confortable.",
+      "Couper l'eau pendant le savonnage est une autre astuce facile."
+     ],
+     "q": "Combien de temps dure ta douche habituelle et que penses-tu de la raccourcir un peu ?",
+     "c": "Chronomètre ta douche aujourd'hui et essaie de finir une minute plus tôt que d'habitude."
+    },
+    "it": {
+     "t": "Docce più brevi, pianeta felice",
+     "g": "Vedere come pochi minuti in meno sotto la doccia risparmiano acqua ed energia.",
+     "p": [
+      "Scaldare l'acqua richiede energia, quindi una doccia più breve risparmia acqua e corrente.",
+      "Un timer o la tua canzone preferita aiutano a mantenere una durata comoda.",
+      "Chiudere l'acqua mentre ti insaponi è un altro trucco facile."
+     ],
+     "q": "Quanto dura la tua doccia abituale e cosa ne pensi di accorciarla un po'?",
+     "c": "Cronometra oggi la tua doccia e prova a finire un minuto prima del solito."
+    },
+    "pt": {
+     "t": "Duches mais curtos, planeta feliz",
+     "g": "Ver como uns minutos a menos no duche poupam água e energia.",
+     "p": [
+      "Aquecer água gasta energia, por isso um duche mais curto poupa água e eletricidade.",
+      "Um temporizador ou a tua música preferida ajudam a manter uma duração confortável.",
+      "Fechar a água enquanto te ensaboas é outro truque fácil."
+     ],
+     "q": "Quanto dura o teu duche habitual e o que pensas de o encurtar um pouco?",
+     "c": "Cronometra hoje o teu duche e tenta acabar um minuto mais cedo do que o costume."
+    },
+    "pt_BR": {
+     "t": "Banhos mais curtos, planeta feliz",
+     "g": "Ver como alguns minutos a menos no banho economizam água e energia.",
+     "p": [
+      "Aquecer água gasta energia, então um banho mais curto economiza água e eletricidade.",
+      "Um cronômetro ou sua música preferida ajudam a manter uma duração confortável.",
+      "Fechar o chuveiro enquanto se ensaboa é outro truque fácil."
+     ],
+     "q": "Quanto dura o seu banho habitual e o que acha de encurtar um pouco?",
+     "c": "Cronometre hoje o seu banho e tente terminar um minuto mais cedo que o normal."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fixing drips and leaks",
+     "g": "Learn to spot leaky taps and toilets and why fixing them matters.",
+     "p": [
+      "A slowly dripping tap can waste a surprising amount of water over weeks.",
+      "A toilet that keeps running quietly is a common hidden leak.",
+      "Many fixes are simple, like a new washer, and landlords or plumbers can help too."
+     ],
+     "q": "Have you ever noticed a dripping tap or a running toilet at home?",
+     "c": "Listen for drips and check taps and toilets today, then report or fix any you find."
+    },
+    "de": {
+     "t": "Tropfen und Lecks beheben",
+     "g": "Lernen, tropfende Hähne und undichte Toiletten zu erkennen und warum Reparieren zählt.",
+     "p": [
+      "Ein langsam tropfender Hahn kann über Wochen erstaunlich viel Wasser verschwenden.",
+      "Eine Toilette, die leise nachläuft, ist ein häufiges verstecktes Leck.",
+      "Viele Reparaturen sind einfach, etwa eine neue Dichtung, und Vermieter oder Installateure helfen."
+     ],
+     "q": "Ist dir zu Hause schon mal ein tropfender Hahn oder eine laufende Toilette aufgefallen?",
+     "c": "Horche heute auf Tropfen, prüfe Hähne und Toiletten und melde oder behebe, was du findest."
+    },
+    "es": {
+     "t": "Arreglar goteos y fugas",
+     "g": "Aprender a detectar grifos y váteres con fugas y por qué importa arreglarlos.",
+     "p": [
+      "Un grifo que gotea despacio puede desperdiciar una cantidad sorprendente de agua en semanas.",
+      "Una cisterna que sigue corriendo en silencio es una fuga oculta muy común.",
+      "Muchos arreglos son sencillos, como una junta nueva, y también pueden ayudar el casero o un fontanero."
+     ],
+     "q": "¿Has notado alguna vez un grifo goteando o una cisterna corriendo en casa?",
+     "c": "Escucha hoy si hay goteos, revisa grifos y váteres y avisa o arregla lo que encuentres."
+    },
+    "fr": {
+     "t": "Réparer fuites et gouttes",
+     "g": "Apprendre à repérer robinets et toilettes qui fuient et pourquoi les réparer compte.",
+     "p": [
+      "Un robinet qui goutte lentement peut gaspiller une quantité surprenante d'eau en quelques semaines.",
+      "Une chasse d'eau qui coule doucement est une fuite cachée courante.",
+      "Beaucoup de réparations sont simples, comme un joint neuf, et propriétaire ou plombier peuvent aider."
+     ],
+     "q": "As-tu déjà remarqué un robinet qui goutte ou une chasse d'eau qui coule chez toi ?",
+     "c": "Écoute aujourd'hui les gouttes, vérifie robinets et toilettes, puis signale ou répare ce que tu trouves."
+    },
+    "it": {
+     "t": "Riparare gocciolii e perdite",
+     "g": "Imparare a individuare rubinetti e WC che perdono e perché ripararli conta.",
+     "p": [
+      "Un rubinetto che gocciola piano può sprecare una quantità sorprendente di acqua in settimane.",
+      "Uno sciacquone che scorre piano è una perdita nascosta molto comune.",
+      "Molte riparazioni sono semplici, come una guarnizione nuova, e possono aiutare anche padrone di casa o idraulico."
+     ],
+     "q": "Hai mai notato a casa un rubinetto che gocciola o uno sciacquone che scorre?",
+     "c": "Ascolta oggi se ci sono gocciolii, controlla rubinetti e WC e segnala o ripara ciò che trovi."
+    },
+    "pt": {
+     "t": "Reparar pingas e fugas",
+     "g": "Aprender a detetar torneiras e sanitas com fugas e porque reparar importa.",
+     "p": [
+      "Uma torneira a pingar devagar pode desperdiçar uma quantidade surpreendente de água em semanas.",
+      "Um autoclismo que continua a correr baixinho é uma fuga escondida comum.",
+      "Muitas reparações são simples, como uma junta nova, e o senhorio ou um canalizador também ajudam."
+     ],
+     "q": "Já reparaste numa torneira a pingar ou num autoclismo a correr lá em casa?",
+     "c": "Escuta hoje se há pingas, verifica torneiras e sanitas e comunica ou repara o que encontrares."
+    },
+    "pt_BR": {
+     "t": "Consertar pingos e vazamentos",
+     "g": "Aprender a identificar torneiras e vasos que vazam e por que consertar importa.",
+     "p": [
+      "Uma torneira pingando devagar pode desperdiçar uma quantidade surpreendente de água em semanas.",
+      "Uma descarga que continua escorrendo baixinho é um vazamento escondido comum.",
+      "Muitos reparos são simples, como uma vedação nova, e o proprietário ou um encanador também ajudam."
+     ],
+     "q": "Você já reparou numa torneira pingando ou numa descarga escorrendo aí em casa?",
+     "c": "Escute hoje se há pingos, verifique torneiras e vasos e avise ou conserte o que achar."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Water-wise in the kitchen",
+     "g": "Wash dishes, cook and drink with less waste.",
+     "p": [
+      "Washing dishes in a filled basin often uses less water than rinsing under a running tap.",
+      "Cooking veg in a little water, or steaming it, saves water and keeps nutrients.",
+      "Keep a jug of tap water in the fridge instead of running the tap until it is cold."
+     ],
+     "q": "Do you wash dishes by hand or machine, and what could you tweak?",
+     "c": "Collect leftover drinking water or pasta water today and use it to water a plant once cooled."
+    },
+    "de": {
+     "t": "Wassersparen in der Küche",
+     "g": "Mit weniger Verschwendung spülen, kochen und trinken.",
+     "p": [
+      "Spülen in gefülltem Becken braucht oft weniger Wasser als Abspülen unter laufendem Hahn.",
+      "Gemüse in wenig Wasser oder gedämpft zu garen spart Wasser und erhält Nährstoffe.",
+      "Stell einen Krug Leitungswasser in den Kühlschrank, statt den Hahn kalt laufen zu lassen."
+     ],
+     "q": "Spülst du von Hand oder mit Maschine, und was könntest du verbessern?",
+     "c": "Sammle heute übriges Trinkwasser oder abgekühltes Nudelwasser und gieß damit eine Pflanze."
+    },
+    "es": {
+     "t": "Cocina con ahorro de agua",
+     "g": "Lavar, cocinar y beber con menos desperdicio.",
+     "p": [
+      "Fregar con la pila llena suele gastar menos agua que aclarar con el grifo abierto.",
+      "Cocer verduras con poca agua, o al vapor, ahorra agua y conserva nutrientes.",
+      "Ten una jarra de agua del grifo en la nevera en vez de dejar correr el agua hasta que salga fría."
+     ],
+     "q": "¿Friegas a mano o con lavavajillas y qué podrías ajustar?",
+     "c": "Recoge hoy agua sobrante de beber o de cocer pasta, y cuando esté fría riega una planta."
+    },
+    "fr": {
+     "t": "Cuisine économe en eau",
+     "g": "Faire la vaisselle, cuisiner et boire avec moins de gaspillage.",
+     "p": [
+      "Laver la vaisselle dans un bac rempli utilise souvent moins d'eau que de rincer sous le robinet ouvert.",
+      "Cuire les légumes dans peu d'eau ou à la vapeur économise l'eau et préserve les nutriments.",
+      "Garde une carafe d'eau du robinet au frais plutôt que de laisser couler jusqu'à ce qu'elle soit froide."
+     ],
+     "q": "Fais-tu la vaisselle à la main ou en machine, et que pourrais-tu ajuster ?",
+     "c": "Récupère aujourd'hui de l'eau à boire restante ou de l'eau de cuisson refroidie et arrose une plante."
+    },
+    "it": {
+     "t": "Cucina attenta all'acqua",
+     "g": "Lavare piatti, cucinare e bere con meno spreco.",
+     "p": [
+      "Lavare i piatti in una bacinella piena spesso usa meno acqua che sciacquare sotto il rubinetto aperto.",
+      "Cuocere le verdure con poca acqua o al vapore risparmia acqua e mantiene i nutrienti.",
+      "Tieni una caraffa d'acqua del rubinetto in frigo invece di lasciare scorrere finché diventa fredda."
+     ],
+     "q": "Lavi i piatti a mano o in lavastoviglie e cosa potresti migliorare?",
+     "c": "Raccogli oggi l'acqua da bere avanzata o quella della pasta, e quando è fredda innaffia una pianta."
+    },
+    "pt": {
+     "t": "Cozinha poupada em água",
+     "g": "Lavar loiça, cozinhar e beber com menos desperdício.",
+     "p": [
+      "Lavar a loiça numa bacia cheia gasta muitas vezes menos água do que passar por água corrente.",
+      "Cozer legumes em pouca água ou a vapor poupa água e preserva nutrientes.",
+      "Guarda uma jarra de água da torneira no frigorífico em vez de deixar correr até ficar fria."
+     ],
+     "q": "Lavas a loiça à mão ou à máquina e o que poderias ajustar?",
+     "c": "Recolhe hoje água de beber que sobrou ou água de cozer massa e, depois de fria, rega uma planta."
+    },
+    "pt_BR": {
+     "t": "Cozinha econômica em água",
+     "g": "Lavar louça, cozinhar e beber com menos desperdício.",
+     "p": [
+      "Lavar a louça numa bacia cheia costuma gastar menos água do que enxaguar com a torneira aberta.",
+      "Cozinhar legumes em pouca água ou no vapor economiza água e preserva nutrientes.",
+      "Guarde uma jarra de água da torneira na geladeira em vez de deixar correr até gelar."
+     ],
+     "q": "Você lava a louça à mão ou na máquina e o que poderia ajustar?",
+     "c": "Recolha hoje água de beber que sobrou ou água do cozimento e, depois de fria, regue uma planta."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Collecting rainwater",
+     "g": "Discover rain barrels and simple ways to water plants for free.",
+     "p": [
+      "Rain from a roof can be caught in a barrel or bucket and used on plants.",
+      "Rainwater is soft and free, and plants often like it better than tap water.",
+      "Keep the container covered, so insects stay out and leaves do not fall in."
+     ],
+     "q": "Is there a roof, balcony or gutter near you where you could catch rain?",
+     "c": "Put a bucket or basin out on the next rainy day and use what you collect on plants."
+    },
+    "de": {
+     "t": "Regenwasser sammeln",
+     "g": "Regentonnen und einfache Wege entdecken, Pflanzen kostenlos zu gießen.",
+     "p": [
+      "Regen vom Dach lässt sich in Tonne oder Eimer auffangen und für Pflanzen nutzen.",
+      "Regenwasser ist weich und kostenlos, und Pflanzen mögen es oft lieber als Leitungswasser.",
+      "Halte den Behälter abgedeckt, damit keine Insekten und Blätter hineingelangen."
+     ],
+     "q": "Gibt es bei dir ein Dach, einen Balkon oder eine Rinne zum Auffangen von Regen?",
+     "c": "Stell beim nächsten Regen einen Eimer oder eine Schüssel auf und gieß damit deine Pflanzen."
+    },
+    "es": {
+     "t": "Recoger agua de lluvia",
+     "g": "Descubrir los barriles de lluvia y formas sencillas de regar gratis.",
+     "p": [
+      "La lluvia de un tejado se puede recoger en un barril o cubo y usarse en las plantas.",
+      "El agua de lluvia es blanda y gratuita, y a menudo a las plantas les gusta más que la del grifo.",
+      "Mantén el recipiente tapado para que no entren insectos ni hojas."
+     ],
+     "q": "¿Hay cerca de ti un tejado, balcón o canalón donde recoger lluvia?",
+     "c": "Saca un cubo o palangana el próximo día de lluvia y usa lo recogido para tus plantas."
+    },
+    "fr": {
+     "t": "Récupérer l'eau de pluie",
+     "g": "Découvrir les récupérateurs d'eau de pluie et des moyens simples d'arroser gratuitement.",
+     "p": [
+      "L'eau de pluie d'un toit peut être captée dans un fût ou un seau et servir aux plantes.",
+      "L'eau de pluie est douce et gratuite, et les plantes l'aiment souvent mieux que l'eau du robinet.",
+      "Garde le récipient couvert pour éviter insectes et feuilles."
+     ],
+     "q": "Y a-t-il près de toi un toit, un balcon ou une gouttière pour recueillir la pluie ?",
+     "c": "Sors un seau ou une bassine au prochain jour de pluie et arrose tes plantes avec ce que tu récoltes."
+    },
+    "it": {
+     "t": "Raccogliere l'acqua piovana",
+     "g": "Scoprire botti per la pioggia e modi semplici per annaffiare gratis.",
+     "p": [
+      "La pioggia di un tetto si può raccogliere in una botte o un secchio e usare sulle piante.",
+      "L'acqua piovana è dolce e gratuita, e alle piante spesso piace più di quella del rubinetto.",
+      "Tieni il contenitore coperto per non far entrare insetti e foglie."
+     ],
+     "q": "Vicino a te c'è un tetto, un balcone o una grondaia dove raccogliere la pioggia?",
+     "c": "Metti fuori un secchio o una bacinella il prossimo giorno di pioggia e usa ciò che raccogli sulle piante."
+    },
+    "pt": {
+     "t": "Recolher água da chuva",
+     "g": "Descobrir os barris de chuva e formas simples de regar de graça.",
+     "p": [
+      "A chuva de um telhado pode ser recolhida num barril ou balde e usada nas plantas.",
+      "A água da chuva é macia e gratuita, e as plantas muitas vezes preferem-na à da torneira.",
+      "Mantém o recipiente tapado para não entrarem insetos nem folhas."
+     ],
+     "q": "Há perto de ti um telhado, varanda ou caleira onde recolher chuva?",
+     "c": "Põe um balde ou bacia lá fora no próximo dia de chuva e usa o que recolheres nas plantas."
+    },
+    "pt_BR": {
+     "t": "Coletar água da chuva",
+     "g": "Descobrir os barris de chuva e formas simples de regar de graça.",
+     "p": [
+      "A chuva de um telhado pode ser coletada num barril ou balde e usada nas plantas.",
+      "A água da chuva é macia e gratuita, e as plantas muitas vezes preferem a ela à da torneira.",
+      "Mantenha o recipiente tampado para não entrarem insetos nem folhas."
+     ],
+     "q": "Há perto de você um telhado, varanda ou calha onde coletar chuva?",
+     "c": "Coloque um balde ou bacia do lado de fora no próximo dia de chuva e use o que coletar nas plantas."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Water-wise gardening",
+     "g": "Learn how mulch, good timing and tough plants cut watering.",
+     "p": [
+      "Mulch, a layer of bark, straw or leaves, keeps soil moist and cuts weeds.",
+      "Water early morning or evening, so less evaporates in the sun.",
+      "Choosing plants that suit your climate means they need far less extra water."
+     ],
+     "q": "Do you grow anything, and how do you decide when to water it?",
+     "c": "Water a plant at the roots in the cool of morning or evening, not in the midday sun."
+    },
+    "de": {
+     "t": "Wassersparend gärtnern",
+     "g": "Lernen, wie Mulch, gutes Timing und robuste Pflanzen das Gießen verringern.",
+     "p": [
+      "Mulch, eine Schicht aus Rinde, Stroh oder Laub, hält den Boden feucht und bremst Unkraut.",
+      "Gieß früh morgens oder abends, dann verdunstet weniger in der Sonne.",
+      "Pflanzen, die zu deinem Klima passen, brauchen viel weniger zusätzliches Wasser."
+     ],
+     "q": "Ziehst du etwas an, und woran erkennst du, wann gegossen wird?",
+     "c": "Gieß heute eine Pflanze an der Wurzel in der Kühle von Morgen oder Abend, nicht in der Mittagssonne."
+    },
+    "es": {
+     "t": "Jardinería que ahorra agua",
+     "g": "Aprender cómo el acolchado, el buen momento y las plantas resistentes reducen el riego.",
+     "p": [
+      "El acolchado, una capa de corteza, paja u hojas, mantiene la tierra húmeda y frena las malas hierbas.",
+      "Riega a primera hora o al atardecer, así se evapora menos al sol.",
+      "Elegir plantas adecuadas a tu clima hace que necesiten mucha menos agua extra."
+     ],
+     "q": "¿Cultivas algo y cómo decides cuándo regarlo?",
+     "c": "Riega hoy una planta por las raíces en la frescura de la mañana o la tarde, no a mediodía."
+    },
+    "fr": {
+     "t": "Jardiner en économisant l'eau",
+     "g": "Apprendre comment paillage, bon moment et plantes robustes réduisent l'arrosage.",
+     "p": [
+      "Le paillage, une couche d'écorce, de paille ou de feuilles, garde le sol humide et limite les mauvaises herbes.",
+      "Arrose tôt le matin ou le soir, l'évaporation au soleil est alors moindre.",
+      "Choisir des plantes adaptées à ton climat réduit beaucoup le besoin d'eau supplémentaire."
+     ],
+     "q": "Cultives-tu quelque chose, et comment décides-tu quand arroser ?",
+     "c": "Arrose aujourd'hui une plante au pied, dans la fraîcheur du matin ou du soir, pas en plein midi."
+    },
+    "it": {
+     "t": "Giardinaggio che risparmia acqua",
+     "g": "Imparare come pacciamatura, momento giusto e piante resistenti riducono l'annaffiatura.",
+     "p": [
+      "La pacciamatura, uno strato di corteccia, paglia o foglie, mantiene umido il suolo e frena le erbacce.",
+      "Annaffia al mattino presto o alla sera, così evapora meno sotto il sole.",
+      "Scegliere piante adatte al tuo clima significa che servono molta meno acqua in più."
+     ],
+     "q": "Coltivi qualcosa e come decidi quando annaffiare?",
+     "c": "Annaffia oggi una pianta alla radice nel fresco del mattino o della sera, non a mezzogiorno."
+    },
+    "pt": {
+     "t": "Jardinagem que poupa água",
+     "g": "Aprender como a cobertura do solo, o bom momento e as plantas resistentes reduzem a rega.",
+     "p": [
+      "A cobertura do solo, uma camada de casca, palha ou folhas, mantém a terra húmida e trava as ervas daninhas.",
+      "Rega de manhã cedo ou ao fim do dia, para evaporar menos ao sol.",
+      "Escolher plantas adequadas ao teu clima faz com que precisem de muito menos água extra."
+     ],
+     "q": "Cultivas alguma coisa e como decides quando regar?",
+     "c": "Rega hoje uma planta pela raiz na frescura da manhã ou da tarde, não ao meio-dia."
+    },
+    "pt_BR": {
+     "t": "Jardinagem que economiza água",
+     "g": "Aprender como a cobertura do solo, a hora certa e as plantas resistentes reduzem a rega.",
+     "p": [
+      "A cobertura do solo, uma camada de casca, palha ou folhas, mantém a terra úmida e freia o mato.",
+      "Regue de manhã cedo ou no fim do dia, para evaporar menos ao sol.",
+      "Escolher plantas adequadas ao seu clima faz com que precisem de muito menos água extra."
+     ],
+     "q": "Você cultiva alguma coisa e como decide a hora de regar?",
+     "c": "Regue hoje uma planta pela raiz na frescura da manhã ou da tarde, não ao meio-dia."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Saving energy at home",
+     "g": "Find where homes use the most energy and easy places to start.",
+     "p": [
+      "Heating, cooling, hot water and appliances are usually the biggest uses at home.",
+      "Small habits, like switching off unused lights, add up across a year.",
+      "Start with free changes first, then think about bigger upgrades later."
+     ],
+     "q": "Which room at home do you think uses the most energy?",
+     "c": "Walk through your home today and switch off one light or device nobody is using."
+    },
+    "de": {
+     "t": "Energie sparen zu Hause",
+     "g": "Herausfinden, wo Haushalte am meisten Energie nutzen und wo man leicht anfängt.",
+     "p": [
+      "Heizen, Kühlen, Warmwasser und Geräte sind meist die größten Verbraucher im Haushalt.",
+      "Kleine Gewohnheiten, etwa unbenutztes Licht auszuschalten, summieren sich übers Jahr.",
+      "Beginne mit kostenlosen Änderungen, größere Verbesserungen kommen später."
+     ],
+     "q": "Welcher Raum bei dir verbraucht wohl am meisten Energie?",
+     "c": "Geh heute durch dein Zuhause und schalte ein Licht oder Gerät aus, das niemand nutzt."
+    },
+    "es": {
+     "t": "Ahorrar energía en casa",
+     "g": "Descubrir dónde gastan más energía los hogares y por dónde empezar fácilmente.",
+     "p": [
+      "Calefacción, refrigeración, agua caliente y electrodomésticos suelen ser lo que más consume.",
+      "Hábitos pequeños, como apagar luces sin uso, suman mucho a lo largo de un año.",
+      "Empieza por los cambios gratuitos y piensa en mejoras mayores más adelante."
+     ],
+     "q": "¿Qué habitación de tu casa crees que gasta más energía?",
+     "c": "Recorre hoy tu casa y apaga una luz o aparato que nadie esté usando."
+    },
+    "fr": {
+     "t": "Économiser l'énergie à la maison",
+     "g": "Trouver où les logements consomment le plus d'énergie et par où commencer facilement.",
+     "p": [
+      "Chauffage, climatisation, eau chaude et appareils sont généralement les plus gros postes.",
+      "De petites habitudes, comme éteindre les lumières inutiles, s'additionnent sur une année.",
+      "Commence par les changements gratuits, puis pense aux travaux plus importants plus tard."
+     ],
+     "q": "Quelle pièce de chez toi consomme le plus d'énergie, à ton avis ?",
+     "c": "Fais le tour de ton logement aujourd'hui et éteins une lumière ou un appareil que personne n'utilise."
+    },
+    "it": {
+     "t": "Risparmiare energia in casa",
+     "g": "Trovare dove le case consumano più energia e da dove iniziare facilmente.",
+     "p": [
+      "Riscaldamento, raffrescamento, acqua calda ed elettrodomestici sono di solito i maggiori consumi.",
+      "Piccole abitudini, come spegnere le luci inutilizzate, si sommano nell'arco di un anno.",
+      "Parti dai cambiamenti gratuiti, poi pensa ai miglioramenti più grandi."
+     ],
+     "q": "Quale stanza di casa tua pensi consumi più energia?",
+     "c": "Fai oggi un giro per casa e spegni una luce o un apparecchio che nessuno sta usando."
+    },
+    "pt": {
+     "t": "Poupar energia em casa",
+     "g": "Descobrir onde as casas gastam mais energia e por onde começar facilmente.",
+     "p": [
+      "Aquecimento, arrefecimento, água quente e eletrodomésticos costumam ser os maiores consumos.",
+      "Pequenos hábitos, como apagar luzes sem uso, somam muito ao longo de um ano.",
+      "Começa pelas mudanças gratuitas e pensa em melhorias maiores mais tarde."
+     ],
+     "q": "Que divisão da tua casa achas que gasta mais energia?",
+     "c": "Percorre hoje a tua casa e apaga uma luz ou aparelho que ninguém esteja a usar."
+    },
+    "pt_BR": {
+     "t": "Economizar energia em casa",
+     "g": "Descobrir onde as casas gastam mais energia e por onde começar facilmente.",
+     "p": [
+      "Aquecimento, refrigeração, água quente e eletrodomésticos costumam ser os maiores consumos.",
+      "Pequenos hábitos, como apagar luzes sem uso, somam muito ao longo de um ano.",
+      "Comece pelas mudanças gratuitas e pense em melhorias maiores depois."
+     ],
+     "q": "Qual cômodo da sua casa você acha que gasta mais energia?",
+     "c": "Percorra hoje a sua casa e apague uma luz ou aparelho que ninguém esteja usando."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lights and LED bulbs",
+     "g": "Learn why LEDs use much less electricity and last much longer.",
+     "p": [
+      "LED bulbs turn most of their energy into light instead of heat.",
+      "They typically last many times longer than old-style bulbs, so you replace them less.",
+      "Switch to LEDs as old bulbs fail, and use warm or cool tones to suit each room."
+     ],
+     "q": "Do you know what kind of bulbs you have at home?",
+     "c": "Check the bulbs in your most-used room and note which ones are LED."
+    },
+    "de": {
+     "t": "Licht und LED-Lampen",
+     "g": "Lernen, warum LEDs viel weniger Strom brauchen und viel länger halten.",
+     "p": [
+      "LED-Lampen wandeln den größten Teil ihrer Energie in Licht statt in Wärme um.",
+      "Sie halten meist um ein Vielfaches länger als alte Glühbirnen, du tauschst also seltener.",
+      "Wechsle auf LED, wenn alte Lampen ausfallen, und wähle warme oder kühle Töne passend zum Raum."
+     ],
+     "q": "Weißt du, welche Lampen du zu Hause hast?",
+     "c": "Sieh dir die Lampen in deinem meistgenutzten Raum an und notiere, welche LED sind."
+    },
+    "es": {
+     "t": "Luces y bombillas LED",
+     "g": "Aprender por qué las LED gastan mucha menos electricidad y duran mucho más.",
+     "p": [
+      "Las bombillas LED convierten la mayor parte de su energía en luz en lugar de calor.",
+      "Suelen durar muchas veces más que las bombillas antiguas, así que las cambias menos.",
+      "Pásate a LED cuando fallen las viejas, y elige tonos cálidos o fríos según la habitación."
+     ],
+     "q": "¿Sabes qué tipo de bombillas tienes en casa?",
+     "c": "Revisa las bombillas de la habitación que más usas y anota cuáles son LED."
+    },
+    "fr": {
+     "t": "Lumières et ampoules LED",
+     "g": "Apprendre pourquoi les LED consomment bien moins d'électricité et durent bien plus longtemps.",
+     "p": [
+      "Les ampoules LED transforment l'essentiel de leur énergie en lumière plutôt qu'en chaleur.",
+      "Elles durent généralement bien plus longtemps que les anciennes ampoules, tu les remplaces moins.",
+      "Passe aux LED quand les anciennes lâchent, et choisis des tons chauds ou froids selon la pièce."
+     ],
+     "q": "Sais-tu quel type d'ampoules tu as chez toi ?",
+     "c": "Regarde les ampoules de la pièce que tu utilises le plus et note lesquelles sont des LED."
+    },
+    "it": {
+     "t": "Luci e lampadine LED",
+     "g": "Imparare perché i LED consumano molta meno elettricità e durano molto di più.",
+     "p": [
+      "Le lampadine LED trasformano gran parte dell'energia in luce invece che in calore.",
+      "In genere durano molte volte più delle vecchie lampadine, quindi le sostituisci meno.",
+      "Passa ai LED quando le vecchie si bruciano e scegli toni caldi o freddi secondo la stanza."
+     ],
+     "q": "Sai che tipo di lampadine hai in casa?",
+     "c": "Controlla le lampadine della stanza che usi di più e annota quali sono LED."
+    },
+    "pt": {
+     "t": "Luzes e lâmpadas LED",
+     "g": "Aprender por que os LED gastam muito menos eletricidade e duram muito mais.",
+     "p": [
+      "As lâmpadas LED transformam a maior parte da energia em luz em vez de calor.",
+      "Costumam durar muitas vezes mais do que as antigas, por isso trocas menos.",
+      "Passa para LED quando as velhas falharem e escolhe tons quentes ou frios conforme a divisão."
+     ],
+     "q": "Sabes que tipo de lâmpadas tens em casa?",
+     "c": "Verifica as lâmpadas da divisão que mais usas e anota quais são LED."
+    },
+    "pt_BR": {
+     "t": "Luzes e lâmpadas LED",
+     "g": "Aprender por que as LED gastam muito menos eletricidade e duram muito mais.",
+     "p": [
+      "As lâmpadas LED transformam a maior parte da energia em luz em vez de calor.",
+      "Costumam durar muitas vezes mais que as antigas, então você troca menos.",
+      "Passe para LED quando as velhas queimarem e escolha tons quentes ou frios conforme o cômodo."
+     ],
+     "q": "Você sabe que tipo de lâmpadas tem em casa?",
+     "c": "Confira as lâmpadas do cômodo que você mais usa e anote quais são LED."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Standby power",
+     "g": "Spot devices that use energy while off, and switch them fully off.",
+     "p": [
+      "Many gadgets keep sipping power on standby: TVs, chargers, consoles and speakers.",
+      "One power strip with a switch can turn off a whole group at once.",
+      "Unplug chargers when not charging, since some draw a little power even alone."
+     ],
+     "q": "Which devices at home are always on standby without need?",
+     "c": "Turn off one group of devices fully today, using a switch or by unplugging."
+    },
+    "de": {
+     "t": "Standby-Verbrauch",
+     "g": "Geräte erkennen, die im Aus noch Strom ziehen, und sie ganz ausschalten.",
+     "p": [
+      "Viele Geräte nippen im Standby weiter am Strom: Fernseher, Ladegeräte, Konsolen und Lautsprecher.",
+      "Eine schaltbare Steckdosenleiste schaltet eine ganze Gruppe auf einmal ab.",
+      "Zieh Ladegeräte ab, wenn nichts lädt, manche ziehen auch allein etwas Strom."
+     ],
+     "q": "Welche Geräte bei dir sind unnötig dauernd im Standby?",
+     "c": "Schalte heute eine Gerätegruppe ganz aus, per Schalter oder durch Ausstecken."
+    },
+    "es": {
+     "t": "Consumo en espera",
+     "g": "Detectar aparatos que gastan energía apagados y desconectarlos del todo.",
+     "p": [
+      "Muchos aparatos siguen consumiendo en espera: televisores, cargadores, consolas y altavoces.",
+      "Una regleta con interruptor apaga todo un grupo de una vez.",
+      "Desenchufa los cargadores cuando no cargan, porque algunos consumen algo incluso solos."
+     ],
+     "q": "¿Qué aparatos de tu casa están siempre en espera sin necesidad?",
+     "c": "Apaga hoy del todo un grupo de aparatos, con un interruptor o desenchufándolos."
+    },
+    "fr": {
+     "t": "La consommation en veille",
+     "g": "Repérer les appareils qui consomment éteints et les couper complètement.",
+     "p": [
+      "Beaucoup d'appareils grignotent du courant en veille : téléviseurs, chargeurs, consoles, enceintes.",
+      "Une multiprise à interrupteur coupe tout un groupe d'un coup.",
+      "Débranche les chargeurs quand ils ne chargent pas, certains consomment un peu même seuls."
+     ],
+     "q": "Quels appareils chez toi restent toujours en veille sans nécessité ?",
+     "c": "Coupe complètement aujourd'hui un groupe d'appareils, avec un interrupteur ou en les débranchant."
+    },
+    "it": {
+     "t": "Consumo in standby",
+     "g": "Individuare gli apparecchi che consumano da spenti e spegnerli del tutto.",
+     "p": [
+      "Molti apparecchi continuano a consumare in standby: TV, caricabatterie, console e altoparlanti.",
+      "Una ciabatta con interruttore spegne un intero gruppo in un colpo solo.",
+      "Scollega i caricabatterie quando non caricano, alcuni consumano un po' anche da soli."
+     ],
+     "q": "Quali apparecchi di casa restano sempre in standby senza bisogno?",
+     "c": "Spegni oggi del tutto un gruppo di apparecchi, con un interruttore o scollegandoli."
+    },
+    "pt": {
+     "t": "Consumo em espera",
+     "g": "Descobrir aparelhos que gastam energia desligados e desligá-los por completo.",
+     "p": [
+      "Muitos aparelhos continuam a gastar em modo de espera: televisores, carregadores, consolas e colunas.",
+      "Uma extensão com interruptor desliga um grupo inteiro de uma vez.",
+      "Tira os carregadores da tomada quando não carregam, alguns gastam um pouco mesmo sozinhos."
+     ],
+     "q": "Que aparelhos da tua casa estão sempre em espera sem necessidade?",
+     "c": "Desliga hoje por completo um grupo de aparelhos, com um interruptor ou tirando da tomada."
+    },
+    "pt_BR": {
+     "t": "Consumo em espera",
+     "g": "Descobrir aparelhos que gastam energia desligados e desligá-los de vez.",
+     "p": [
+      "Muitos aparelhos continuam gastando em modo de espera: TVs, carregadores, consoles e caixas de som.",
+      "Um filtro de linha com interruptor desliga um grupo inteiro de uma vez.",
+      "Tire os carregadores da tomada quando não carregam, alguns gastam um pouco mesmo sozinhos."
+     ],
+     "q": "Quais aparelhos da sua casa ficam sempre em espera sem necessidade?",
+     "c": "Desligue hoje de vez um grupo de aparelhos, com um interruptor ou tirando da tomada."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Heating and cooling wisely",
+     "g": "Use thermostats, curtains and fans for comfort with less energy.",
+     "p": [
+      "Heating and cooling are often the biggest energy use in a home.",
+      "Lowering heating a little, or raising cooling a little, saves energy and stays comfortable.",
+      "Curtains, blinds and fans help: close them against sun, open them for warmth."
+     ],
+     "q": "How do you keep comfortable at home when it is very hot or cold?",
+     "c": "Adjust your thermostat by one degree today, or use a curtain or fan instead."
+    },
+    "de": {
+     "t": "Klug heizen und kühlen",
+     "g": "Mit Thermostat, Vorhängen und Ventilatoren bequem leben und weniger Energie nutzen.",
+     "p": [
+      "Heizen und Kühlen sind oft der größte Energieposten im Haushalt.",
+      "Etwas weniger heizen oder etwas weniger kühlen spart Energie und bleibt angenehm.",
+      "Vorhänge, Jalousien und Ventilatoren helfen: gegen Sonne schließen, für Wärme öffnen."
+     ],
+     "q": "Wie hältst du es zu Hause bei großer Hitze oder Kälte angenehm?",
+     "c": "Stell heute dein Thermostat um ein Grad um oder nutze stattdessen Vorhang oder Ventilator."
+    },
+    "es": {
+     "t": "Calentar y enfriar con cabeza",
+     "g": "Usar termostatos, cortinas y ventiladores para estar cómodo gastando menos energía.",
+     "p": [
+      "Calefacción y refrigeración suelen ser el mayor gasto de energía de una casa.",
+      "Bajar un poco la calefacción, o subir un poco el aire acondicionado, ahorra y sigue siendo cómodo.",
+      "Cortinas, persianas y ventiladores ayudan: ciérralos contra el sol y ábrelos para el calor."
+     ],
+     "q": "¿Cómo te mantienes cómodo en casa con mucho calor o frío?",
+     "c": "Ajusta hoy tu termostato un grado, o usa una cortina o un ventilador en su lugar."
+    },
+    "fr": {
+     "t": "Chauffer et rafraîchir avec sagesse",
+     "g": "Utiliser thermostat, rideaux et ventilateurs pour le confort avec moins d'énergie.",
+     "p": [
+      "Chauffage et climatisation sont souvent le plus gros poste d'énergie d'un logement.",
+      "Baisser un peu le chauffage, ou relever un peu la clim, économise de l'énergie en restant confortable.",
+      "Rideaux, volets et ventilateurs aident : fermés contre le soleil, ouverts pour la chaleur."
+     ],
+     "q": "Comment gardes-tu un bon confort chez toi quand il fait très chaud ou très froid ?",
+     "c": "Ajuste ton thermostat d'un degré aujourd'hui, ou utilise un rideau ou un ventilateur à la place."
+    },
+    "it": {
+     "t": "Riscaldare e raffrescare con saggezza",
+     "g": "Usare termostato, tende e ventilatori per stare bene con meno energia.",
+     "p": [
+      "Riscaldamento e raffrescamento sono spesso il maggior consumo energetico di una casa.",
+      "Abbassare un po' il riscaldamento, o alzare un po' il condizionatore, risparmia restando comodi.",
+      "Tende, persiane e ventilatori aiutano: chiusi contro il sole, aperti per il calore."
+     ],
+     "q": "Come stai comodo in casa quando fa molto caldo o molto freddo?",
+     "c": "Regola oggi il termostato di un grado, oppure usa una tenda o un ventilatore al suo posto."
+    },
+    "pt": {
+     "t": "Aquecer e arrefecer com sensatez",
+     "g": "Usar termóstatos, cortinas e ventoinhas para conforto com menos energia.",
+     "p": [
+      "Aquecimento e arrefecimento são muitas vezes o maior gasto de energia numa casa.",
+      "Baixar um pouco o aquecimento, ou subir um pouco o ar condicionado, poupa energia e continua confortável.",
+      "Cortinas, estores e ventoinhas ajudam: fechados contra o sol, abertos para o calor."
+     ],
+     "q": "Como manténs o conforto em casa quando faz muito calor ou frio?",
+     "c": "Ajusta hoje o termóstato um grau, ou usa uma cortina ou ventoinha em vez disso."
+    },
+    "pt_BR": {
+     "t": "Aquecer e resfriar com sabedoria",
+     "g": "Usar termostatos, cortinas e ventiladores para conforto com menos energia.",
+     "p": [
+      "Aquecimento e refrigeração costumam ser o maior gasto de energia de uma casa.",
+      "Baixar um pouco o aquecimento, ou subir um pouco o ar-condicionado, economiza e continua confortável.",
+      "Cortinas, persianas e ventiladores ajudam: fechados contra o sol, abertos para o calor."
+     ],
+     "q": "Como você se mantém confortável em casa quando faz muito calor ou frio?",
+     "c": "Ajuste hoje o termostato em um grau, ou use uma cortina ou ventilador no lugar."
+    }
+   }
+  }
+ ]
+}

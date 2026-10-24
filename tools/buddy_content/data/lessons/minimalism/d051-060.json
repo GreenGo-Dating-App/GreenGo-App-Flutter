@@ -1,0 +1,835 @@
+{
+ "topic": "minimalism",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bags, purses and backpacks",
+     "g": "Empty bags regularly and keep only those that suit your daily life.",
+     "p": [
+      "Bags quietly collect receipts, wrappers and old tickets.",
+      "Most people use one or two bags regularly; the rest can rest or go.",
+      "Keep a small pouch with the daily essentials so switching bags is easy."
+     ],
+     "q": "Which bag do you reach for almost every day?",
+     "c": "Empty your everyday bag completely and put back only what you need."
+    },
+    "de": {
+     "t": "Taschen, Geldbeutel und Rucksäcke",
+     "g": "Taschen regelmäßig leeren und nur behalten, was zu deinem Alltag passt.",
+     "p": [
+      "Taschen sammeln leise Kassenbons, Verpackungen und alte Tickets.",
+      "Die meisten nutzen ein oder zwei Taschen regelmäßig; der Rest kann ruhen oder gehen.",
+      "Pack das tägliche Nötige in ein Täschchen, so wechselst du leicht die Tasche."
+     ],
+     "q": "Zu welcher Tasche greifst du fast täglich?",
+     "c": "Leere deine Alltagstasche ganz und pack nur zurück, was du brauchst."
+    },
+    "es": {
+     "t": "Bolsos, carteras y mochilas",
+     "g": "Vaciar los bolsos con regularidad y quedarte con los que encajan en tu día a día.",
+     "p": [
+      "Los bolsos acumulan en silencio tickets, envoltorios y entradas viejas.",
+      "La mayoría usa uno o dos bolsos con regularidad; el resto puede descansar o irse.",
+      "Ten un neceser con lo esencial diario para cambiar de bolso fácilmente."
+     ],
+     "q": "¿Qué bolso usas casi todos los días?",
+     "c": "Vacía por completo tu bolso diario y devuelve solo lo que necesitas."
+    },
+    "fr": {
+     "t": "Sacs, porte-monnaie et sacs à dos",
+     "g": "Vider régulièrement les sacs et ne garder que ceux qui conviennent à ta vie.",
+     "p": [
+      "Les sacs accumulent discrètement tickets, emballages et vieux billets.",
+      "La plupart utilisent un ou deux sacs ; les autres peuvent se reposer ou partir.",
+      "Garde une petite pochette avec l'essentiel pour changer de sac facilement."
+     ],
+     "q": "Quel sac prends-tu presque tous les jours ?",
+     "c": "Vide entièrement ton sac du quotidien et ne remets que ce dont tu as besoin."
+    },
+    "it": {
+     "t": "Borse, portafogli e zaini",
+     "g": "Svuotare le borse regolarmente e tenere solo quelle adatte alla tua vita.",
+     "p": [
+      "Le borse accumulano in silenzio scontrini, involucri e vecchi biglietti.",
+      "La maggior parte usa una o due borse; le altre possono riposare o andare.",
+      "Tieni un astuccio con l'essenziale quotidiano per cambiare borsa facilmente."
+     ],
+     "q": "Quale borsa usi quasi ogni giorno?",
+     "c": "Svuota del tutto la borsa di tutti i giorni e rimetti solo ciò che ti serve."
+    },
+    "pt": {
+     "t": "Malas, carteiras e mochilas",
+     "g": "Esvaziar as malas com regularidade e ficar só com as que servem ao teu dia a dia.",
+     "p": [
+      "As malas acumulam em silêncio talões, embrulhos e bilhetes velhos.",
+      "A maioria usa uma ou duas malas; as outras podem descansar ou sair.",
+      "Tem uma bolsinha com o essencial diário para trocar de mala com facilidade."
+     ],
+     "q": "Que mala usas quase todos os dias?",
+     "c": "Esvazia por completo a tua mala diária e volta a pôr só o que precisas."
+    },
+    "pt_BR": {
+     "t": "Bolsas, carteiras e mochilas",
+     "g": "Esvaziar as bolsas com regularidade e ficar só com as que servem ao seu dia a dia.",
+     "p": [
+      "As bolsas acumulam em silêncio recibos, embalagens e ingressos velhos.",
+      "A maioria usa uma ou duas bolsas; as outras podem descansar ou sair.",
+      "Tenha uma necessaire com o essencial diário para trocar de bolsa com facilidade."
+     ],
+     "q": "Que bolsa você usa quase todos os dias?",
+     "c": "Esvazie por completo a sua bolsa do dia a dia e devolva só o que precisa."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The car",
+     "g": "Keep your car tidy and stocked with only the essentials.",
+     "p": [
+      "Remove loose items, old receipts and things that belong at home.",
+      "Keep the essentials for safety and comfort, as local rules suggest.",
+      "A tidy car is easier to clean and nicer to drive."
+     ],
+     "q": "What is the strangest thing you have found in a car?",
+     "c": "Take everything out of your car that does not belong there and bin the rubbish."
+    },
+    "de": {
+     "t": "Das Auto",
+     "g": "Das Auto aufgeräumt halten und nur das Wesentliche mitführen.",
+     "p": [
+      "Nimm lose Dinge, alte Belege und alles, was ins Haus gehört, heraus.",
+      "Behalte das Nötige für Sicherheit und Komfort, wie es örtliche Regeln empfehlen.",
+      "Ein aufgeräumtes Auto ist leichter zu reinigen und angenehmer zu fahren."
+     ],
+     "q": "Was ist das Seltsamste, das du je in einem Auto gefunden hast?",
+     "c": "Räum alles aus dem Auto, was nicht hineingehört, und wirf den Müll weg."
+    },
+    "es": {
+     "t": "El coche",
+     "g": "Mantener el coche ordenado y con solo lo esencial.",
+     "p": [
+      "Saca objetos sueltos, tickets viejos y cosas que son de casa.",
+      "Conserva lo esencial para la seguridad y la comodidad, según las normas locales.",
+      "Un coche ordenado es más fácil de limpiar y más agradable de conducir."
+     ],
+     "q": "¿Qué es lo más raro que has encontrado en un coche?",
+     "c": "Saca del coche todo lo que no deba estar y tira la basura."
+    },
+    "fr": {
+     "t": "La voiture",
+     "g": "Garder ta voiture rangée avec seulement l'essentiel.",
+     "p": [
+      "Retire les objets en vrac, les vieux tickets et ce qui a sa place à la maison.",
+      "Garde l'essentiel pour la sécurité et le confort, selon les règles locales.",
+      "Une voiture rangée est plus facile à nettoyer et plus agréable à conduire."
+     ],
+     "q": "Quelle est la chose la plus étrange trouvée dans une voiture ?",
+     "c": "Sors de ta voiture tout ce qui n'a rien à y faire et jette les déchets."
+    },
+    "it": {
+     "t": "L'auto",
+     "g": "Tenere l'auto in ordine con solo l'essenziale.",
+     "p": [
+      "Togli oggetti sciolti, vecchi scontrini e cose che appartengono a casa.",
+      "Tieni l'essenziale per sicurezza e comfort, come indicano le norme locali.",
+      "Un'auto in ordine è più facile da pulire e più bella da guidare."
+     ],
+     "q": "Qual è la cosa più strana che hai trovato in un'auto?",
+     "c": "Porta fuori dall'auto tutto ciò che non ci deve stare e butta la spazzatura."
+    },
+    "pt": {
+     "t": "O carro",
+     "g": "Manter o carro arrumado com só o essencial.",
+     "p": [
+      "Tira objetos soltos, talões velhos e coisas que são de casa.",
+      "Guarda o essencial para segurança e conforto, segundo as regras locais.",
+      "Um carro arrumado é mais fácil de limpar e mais agradável de conduzir."
+     ],
+     "q": "Qual é a coisa mais estranha que já encontraste num carro?",
+     "c": "Tira do carro tudo o que não deve lá estar e deita o lixo fora."
+    },
+    "pt_BR": {
+     "t": "O carro",
+     "g": "Manter o carro arrumado com só o essencial.",
+     "p": [
+      "Tire objetos soltos, recibos velhos e coisas que são de casa.",
+      "Guarde o essencial para segurança e conforto, conforme as regras locais.",
+      "Um carro arrumado é mais fácil de limpar e mais agradável de dirigir."
+     ],
+     "q": "Qual é a coisa mais estranha que você já achou num carro?",
+     "c": "Tire do carro tudo o que não deve estar lá e jogue o lixo fora."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gifts you do not like",
+     "g": "Release unwanted presents kindly.",
+     "p": [
+      "A gift has done its job once it was given with love.",
+      "You can appreciate the thought without keeping the object.",
+      "Passing a gift on to someone who will enjoy it is a kind outcome."
+     ],
+     "q": "Is there a gift you keep only out of politeness?",
+     "c": "Choose one unwanted gift, thank the thought and pass the object on."
+    },
+    "de": {
+     "t": "Geschenke, die dir nicht gefallen",
+     "g": "Unerwünschte Geschenke freundlich loslassen.",
+     "p": [
+      "Ein Geschenk hat seine Aufgabe erfüllt, sobald es mit Liebe gegeben wurde.",
+      "Du kannst den Gedanken schätzen, ohne den Gegenstand zu behalten.",
+      "Ein Geschenk an jemanden weiterzugeben, der sich freut, ist ein gutes Ende."
+     ],
+     "q": "Gibt es ein Geschenk, das du nur aus Höflichkeit behältst?",
+     "c": "Wähl ein ungeliebtes Geschenk, danke dem Gedanken und gib den Gegenstand weiter."
+    },
+    "es": {
+     "t": "Regalos que no te gustan",
+     "g": "Soltar con cariño los regalos no deseados.",
+     "p": [
+      "Un regalo ya cumplió su misión cuando se dio con cariño.",
+      "Puedes valorar el gesto sin quedarte con el objeto.",
+      "Pasar un regalo a alguien que lo disfrutará es un buen final."
+     ],
+     "q": "¿Hay un regalo que guardas solo por cortesía?",
+     "c": "Elige un regalo que no quieres, agradece el gesto y pasa el objeto a otra persona."
+    },
+    "fr": {
+     "t": "Les cadeaux que tu n'aimes pas",
+     "g": "Laisser partir avec bienveillance les cadeaux non désirés.",
+     "p": [
+      "Un cadeau a rempli son rôle une fois offert avec amour.",
+      "Tu peux apprécier l'intention sans garder l'objet.",
+      "Passer un cadeau à quelqu'un qui en profitera est une belle issue."
+     ],
+     "q": "As-tu un cadeau que tu gardes seulement par politesse ?",
+     "c": "Choisis un cadeau dont tu ne veux pas, remercie l'intention et transmets l'objet."
+    },
+    "it": {
+     "t": "I regali che non ti piacciono",
+     "g": "Lasciare andare con gentilezza i regali indesiderati.",
+     "p": [
+      "Un regalo ha svolto il suo compito quando è stato dato con affetto.",
+      "Puoi apprezzare il pensiero senza tenere l'oggetto.",
+      "Passare un regalo a chi lo apprezzerà è un bel finale."
+     ],
+     "q": "C'è un regalo che tieni solo per cortesia?",
+     "c": "Scegli un regalo indesiderato, ringrazia il pensiero e passa l'oggetto a qualcun altro."
+    },
+    "pt": {
+     "t": "Presentes de que não gostas",
+     "g": "Largar com gentileza os presentes indesejados.",
+     "p": [
+      "Uma prenda já cumpriu a sua missão quando foi dada com carinho.",
+      "Podes valorizar o gesto sem guardar o objeto.",
+      "Passar uma prenda a alguém que vai gostar é um bom fim."
+     ],
+     "q": "Há uma prenda que guardas só por cortesia?",
+     "c": "Escolhe uma prenda indesejada, agradece o gesto e passa o objeto a outra pessoa."
+    },
+    "pt_BR": {
+     "t": "Presentes de que você não gosta",
+     "g": "Soltar com gentileza os presentes indesejados.",
+     "p": [
+      "Um presente já cumpriu sua missão quando foi dado com carinho.",
+      "Você pode valorizar o gesto sem ficar com o objeto.",
+      "Passar um presente para quem vai gostar é um bom fim."
+     ],
+     "q": "Tem algum presente que você guarda só por educação?",
+     "c": "Escolha um presente indesejado, agradeça o gesto e passe o objeto adiante."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Duplicates around the house",
+     "g": "Spot doubles of scissors, umbrellas, mugs and more and keep the best.",
+     "p": [
+      "Many homes hold several of the same thing in different rooms.",
+      "Keep the best one, or one per room if it truly helps.",
+      "Duplicates are an easy win because the decision costs little."
+     ],
+     "q": "What do you own three or more of?",
+     "c": "Find one item you have several of and keep only the best one or two."
+    },
+    "de": {
+     "t": "Doppeltes im Haus",
+     "g": "Doppeltes bei Scheren, Schirmen, Tassen und mehr erkennen und das Beste behalten.",
+     "p": [
+      "In vielen Haushalten gibt es mehrere gleiche Dinge in verschiedenen Räumen.",
+      "Behalte das beste Stück, oder eines pro Raum, wenn es wirklich hilft.",
+      "Doppeltes ist ein leichter Erfolg, denn die Entscheidung kostet wenig."
+     ],
+     "q": "Wovon besitzt du drei oder mehr?",
+     "c": "Such einen Gegenstand, den du mehrfach hast, und behalte nur das beste Stück oder zwei."
+    },
+    "es": {
+     "t": "Duplicados por la casa",
+     "g": "Detectar dobles de tijeras, paraguas, tazas y más, y quedarte con el mejor.",
+     "p": [
+      "Muchas casas tienen varias de lo mismo en distintas habitaciones.",
+      "Quédate con el mejor, o uno por habitación si de verdad ayuda.",
+      "Los duplicados son una victoria fácil porque decidir cuesta poco."
+     ],
+     "q": "¿De qué tienes tres o más?",
+     "c": "Busca un objeto que tengas varias veces y quédate solo con el mejor o dos."
+    },
+    "fr": {
+     "t": "Les doublons dans la maison",
+     "g": "Repérer les doubles de ciseaux, parapluies, mugs et plus, et garder le meilleur.",
+     "p": [
+      "Beaucoup de maisons ont plusieurs fois la même chose dans diverses pièces.",
+      "Garde le meilleur, ou un par pièce si cela aide vraiment.",
+      "Les doublons sont une victoire facile car la décision coûte peu."
+     ],
+     "q": "De quoi as-tu trois exemplaires ou plus ?",
+     "c": "Trouve un objet que tu as en plusieurs exemplaires et ne garde que le meilleur ou deux."
+    },
+    "it": {
+     "t": "I doppioni in casa",
+     "g": "Individuare doppioni di forbici, ombrelli, tazze e altro e tenere il migliore.",
+     "p": [
+      "In molte case ci sono più copie della stessa cosa in stanze diverse.",
+      "Tieni il migliore, o uno per stanza se aiuta davvero.",
+      "I doppioni sono una vittoria facile perché decidere costa poco."
+     ],
+     "q": "Di cosa hai tre o più esemplari?",
+     "c": "Trova un oggetto che hai in più copie e tieni solo il migliore o due."
+    },
+    "pt": {
+     "t": "Repetidos pela casa",
+     "g": "Detetar repetidos de tesouras, guarda-chuvas, canecas e mais, e guardar o melhor.",
+     "p": [
+      "Muitas casas têm várias da mesma coisa em divisões diferentes.",
+      "Fica com o melhor, ou um por divisão se realmente ajudar.",
+      "Os repetidos são uma vitória fácil porque decidir custa pouco."
+     ],
+     "q": "De que coisa tens três ou mais?",
+     "c": "Encontra um objeto que tenhas várias vezes e guarda só o melhor ou dois."
+    },
+    "pt_BR": {
+     "t": "Repetidos pela casa",
+     "g": "Perceber repetidos de tesouras, guarda-chuvas, canecas e mais, e ficar com o melhor.",
+     "p": [
+      "Muitas casas têm várias da mesma coisa em cômodos diferentes.",
+      "Fique com o melhor, ou um por cômodo se realmente ajudar.",
+      "Repetidos são uma vitória fácil porque decidir custa pouco."
+     ],
+     "q": "De que coisa você tem três ou mais?",
+     "c": "Ache um item que você tem várias vezes e fique só com o melhor ou dois."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Freebies and promotional items",
+     "g": "Say no to free pens, bags and samples that fill drawers.",
+     "p": [
+      "Free does not mean costless; it still takes space and attention.",
+      "A polite no thanks stops the pile before it starts.",
+      "Use up samples soon or pass them on to someone who will."
+     ],
+     "q": "What free items tend to sneak into your home?",
+     "c": "Say no thanks to one free item this week, and gather the ones you already have."
+    },
+    "de": {
+     "t": "Gratisartikel und Werbegeschenke",
+     "g": "Zu Gratis-Kugelschreibern, Taschen und Proben freundlich nein sagen.",
+     "p": [
+      "Gratis heißt nicht kostenlos; es braucht trotzdem Platz und Aufmerksamkeit.",
+      "Ein höfliches Nein, danke stoppt den Haufen, bevor er entsteht.",
+      "Brauch Proben bald auf oder gib sie an jemanden weiter, der sie nutzt."
+     ],
+     "q": "Welche Gratisdinge schleichen sich bei dir gern ein?",
+     "c": "Sag diese Woche zu einem Gratisartikel Nein, danke und sammle die vorhandenen."
+    },
+    "es": {
+     "t": "Obsequios y artículos promocionales",
+     "g": "Decir no a bolígrafos, bolsas y muestras gratis que llenan cajones.",
+     "p": [
+      "Gratis no significa sin coste; sigue ocupando espacio y atención.",
+      "Un no, gracias amable detiene el montón antes de que empiece.",
+      "Gasta pronto las muestras o pásalas a alguien que las use."
+     ],
+     "q": "¿Qué cosas gratis suelen colarse en tu casa?",
+     "c": "Di no, gracias a un artículo gratis esta semana y reúne los que ya tienes."
+    },
+    "fr": {
+     "t": "Cadeaux publicitaires et goodies",
+     "g": "Dire non aux stylos, sacs et échantillons gratuits qui remplissent les tiroirs.",
+     "p": [
+      "Gratuit ne veut pas dire sans coût ; cela prend de la place et de l'attention.",
+      "Un non merci poli arrête la pile avant qu'elle commence.",
+      "Utilise vite les échantillons ou donne-les à quelqu'un qui s'en servira."
+     ],
+     "q": "Quels objets gratuits s'invitent souvent chez toi ?",
+     "c": "Dis non merci à un objet gratuit cette semaine et rassemble ceux que tu as déjà."
+    },
+    "it": {
+     "t": "Omaggi e gadget promozionali",
+     "g": "Dire no a penne, borse e campioni gratuiti che riempiono i cassetti.",
+     "p": [
+      "Gratis non significa senza costo; occupa comunque spazio e attenzione.",
+      "Un no grazie gentile ferma il mucchio prima che inizi.",
+      "Usa presto i campioni o passali a qualcuno che li userà."
+     ],
+     "q": "Quali oggetti gratuiti tendono a entrare in casa tua?",
+     "c": "Di no grazie a un omaggio questa settimana e raccogli quelli che hai già."
+    },
+    "pt": {
+     "t": "Brindes e artigos promocionais",
+     "g": "Dizer não a canetas, sacos e amostras grátis que enchem gavetas.",
+     "p": [
+      "Grátis não é sem custo; ocupa espaço e atenção na mesma.",
+      "Um não, obrigado educado pára a pilha antes de começar.",
+      "Gasta cedo as amostras ou passa-as a quem as use."
+     ],
+     "q": "Que coisas grátis costumam entrar em tua casa?",
+     "c": "Diz não, obrigado a um brinde esta semana e junta os que já tens."
+    },
+    "pt_BR": {
+     "t": "Brindes e itens promocionais",
+     "g": "Dizer não a canetas, sacolas e amostras grátis que enchem gavetas.",
+     "p": [
+      "Grátis não é sem custo; ocupa espaço e atenção do mesmo jeito.",
+      "Um não, obrigado educado impede a pilha antes de começar.",
+      "Use logo as amostras ou passe para quem vá usar."
+     ],
+     "q": "Que coisas grátis costumam entrar na sua casa?",
+     "c": "Diga não, obrigado a um brinde nesta semana e junte os que você já tem."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Seasonal and holiday items",
+     "g": "Keep decorations you love and store them neatly in one labelled place.",
+     "p": [
+      "Keep the decorations that make you smile and let the rest go.",
+      "Use one or two clearly labelled boxes for each season.",
+      "If you did not put something out last time, you may not need it."
+     ],
+     "q": "Which seasonal decoration do you look forward to every year?",
+     "c": "Open one seasonal box, keep what you love and donate the rest."
+    },
+    "de": {
+     "t": "Saisonales und Festtagsdeko",
+     "g": "Geliebte Deko behalten und ordentlich an einem beschrifteten Ort lagern.",
+     "p": [
+      "Behalte die Deko, die dich lächeln lässt, und gib den Rest ab.",
+      "Nutze für jede Jahreszeit ein oder zwei klar beschriftete Kisten.",
+      "Hast du etwas letztes Mal nicht aufgestellt, brauchst du es vielleicht nicht."
+     ],
+     "q": "Auf welche saisonale Deko freust du dich jedes Jahr?",
+     "c": "Öffne eine Saisonkiste, behalte das Geliebte und spende den Rest."
+    },
+    "es": {
+     "t": "Objetos de temporada y fiestas",
+     "g": "Conservar la decoración que amas y guardarla ordenada en un solo sitio etiquetado.",
+     "p": [
+      "Quédate con la decoración que te hace sonreír y suelta el resto.",
+      "Usa una o dos cajas bien etiquetadas para cada temporada.",
+      "Si la última vez no sacaste algo, quizá no lo necesites."
+     ],
+     "q": "¿Qué decoración de temporada esperas con ilusión cada año?",
+     "c": "Abre una caja de temporada, conserva lo que amas y dona el resto."
+    },
+    "fr": {
+     "t": "Objets de saison et de fêtes",
+     "g": "Garder les décorations que tu aimes et les ranger à un endroit étiqueté.",
+     "p": [
+      "Garde les décorations qui te font sourire et laisse partir le reste.",
+      "Utilise une ou deux boîtes bien étiquetées par saison.",
+      "Si tu n'as pas sorti quelque chose la dernière fois, tu n'en as peut-être pas besoin."
+     ],
+     "q": "Quelle décoration de saison attends-tu chaque année avec joie ?",
+     "c": "Ouvre une boîte de saison, garde ce que tu aimes et donne le reste."
+    },
+    "it": {
+     "t": "Oggetti stagionali e delle feste",
+     "g": "Tenere le decorazioni che ami e riporle in un solo posto etichettato.",
+     "p": [
+      "Tieni le decorazioni che ti fanno sorridere e lascia andare il resto.",
+      "Usa una o due scatole ben etichettate per ogni stagione.",
+      "Se l'ultima volta non hai messo fuori qualcosa, forse non ti serve."
+     ],
+     "q": "Quale decorazione stagionale aspetti con gioia ogni anno?",
+     "c": "Apri una scatola stagionale, tieni ciò che ami e dona il resto."
+    },
+    "pt": {
+     "t": "Objetos sazonais e de festas",
+     "g": "Guardar a decoração de que gostas e arrumá-la num só sítio etiquetado.",
+     "p": [
+      "Fica com a decoração que te faz sorrir e larga o resto.",
+      "Usa uma ou duas caixas bem etiquetadas por estação.",
+      "Se da última vez não puseste algo cá fora, talvez não precises."
+     ],
+     "q": "Que decoração sazonal esperas com alegria todos os anos?",
+     "c": "Abre uma caixa sazonal, guarda o que adoras e doa o resto."
+    },
+    "pt_BR": {
+     "t": "Itens sazonais e de festas",
+     "g": "Guardar a decoração que você ama e arrumar num só lugar etiquetado.",
+     "p": [
+      "Fique com a decoração que faz você sorrir e solte o resto.",
+      "Use uma ou duas caixas bem etiquetadas para cada estação.",
+      "Se da última vez você não colocou algo para fora, talvez não precise."
+     ],
+     "q": "Que decoração sazonal você espera com alegria todo ano?",
+     "c": "Abra uma caixa sazonal, fique com o que ama e doe o resto."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tackling a whole room",
+     "g": "Plan a full room declutter in stages, from easy to hard.",
+     "p": [
+      "Start with obvious trash, then easy categories, then harder choices.",
+      "Break the room into small areas and finish one before moving on.",
+      "Set a kind time limit and rest when you reach it."
+     ],
+     "q": "Which room would you like to tackle first, and why?",
+     "c": "Choose a room and write a three-stage plan for it today."
+    },
+    "de": {
+     "t": "Einen ganzen Raum angehen",
+     "g": "Einen ganzen Raum in Etappen entrümpeln, vom Leichten zum Schweren.",
+     "p": [
+      "Starte mit offensichtlichem Müll, dann leichte Kategorien, dann schwerere Entscheidungen.",
+      "Teile den Raum in kleine Bereiche und schließ einen ab, bevor du weitermachst.",
+      "Setz ein freundliches Zeitlimit und ruh dich aus, wenn es erreicht ist."
+     ],
+     "q": "Welchen Raum möchtest du zuerst angehen, und warum?",
+     "c": "Wähl einen Raum und schreib heute einen Dreistufenplan dafür."
+    },
+    "es": {
+     "t": "Abordar una habitación entera",
+     "g": "Planificar el orden de una habitación entera por etapas, de lo fácil a lo difícil.",
+     "p": [
+      "Empieza por la basura evidente, luego categorías fáciles y después decisiones difíciles.",
+      "Divide la habitación en zonas pequeñas y termina una antes de seguir.",
+      "Pon un límite de tiempo amable y descansa al llegar."
+     ],
+     "q": "¿Qué habitación te gustaría abordar primero y por qué?",
+     "c": "Elige una habitación y escribe hoy un plan de tres etapas."
+    },
+    "fr": {
+     "t": "S'attaquer à une pièce entière",
+     "g": "Planifier le désencombrement d'une pièce par étapes, du facile au difficile.",
+     "p": [
+      "Commence par les déchets évidents, puis les catégories faciles, puis les choix difficiles.",
+      "Divise la pièce en petites zones et termine-en une avant de passer à la suivante.",
+      "Fixe une limite de temps bienveillante et repose-toi quand elle est atteinte."
+     ],
+     "q": "Quelle pièce voudrais-tu aborder en premier, et pourquoi ?",
+     "c": "Choisis une pièce et écris aujourd'hui un plan en trois étapes."
+    },
+    "it": {
+     "t": "Affrontare un'intera stanza",
+     "g": "Pianificare il riordino di una stanza a tappe, dal facile al difficile.",
+     "p": [
+      "Parti dalla spazzatura evidente, poi categorie facili, poi scelte più difficili.",
+      "Dividi la stanza in piccole aree e finisci una prima di passare oltre.",
+      "Fissa un limite di tempo gentile e riposati quando lo raggiungi."
+     ],
+     "q": "Quale stanza vorresti affrontare per prima, e perché?",
+     "c": "Scegli una stanza e scrivi oggi un piano in tre tappe."
+    },
+    "pt": {
+     "t": "Enfrentar uma divisão inteira",
+     "g": "Planear a arrumação de uma divisão inteira por fases, do fácil ao difícil.",
+     "p": [
+      "Começa pelo lixo evidente, depois categorias fáceis e depois decisões mais difíceis.",
+      "Divide a divisão em zonas pequenas e acaba uma antes de passar à seguinte.",
+      "Define um limite de tempo gentil e descansa quando o atingires."
+     ],
+     "q": "Que divisão gostarias de enfrentar primeiro, e porquê?",
+     "c": "Escolhe uma divisão e escreve hoje um plano de três fases."
+    },
+    "pt_BR": {
+     "t": "Enfrentando um cômodo inteiro",
+     "g": "Planejar a organização de um cômodo inteiro por etapas, do fácil ao difícil.",
+     "p": [
+      "Comece pelo lixo evidente, depois categorias fáceis e depois escolhas mais difíceis.",
+      "Divida o cômodo em áreas pequenas e termine uma antes de seguir.",
+      "Defina um limite de tempo gentil e descanse quando chegar nele."
+     ],
+     "q": "Que cômodo você gostaria de enfrentar primeiro, e por quê?",
+     "c": "Escolha um cômodo e escreva hoje um plano de três etapas."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Storage that helps, not hides",
+     "g": "Use storage only after decluttering so containers organise, not hide.",
+     "p": [
+      "Buying containers before sorting just hides excess in neat boxes.",
+      "Declutter first, then measure what is left and choose storage to fit.",
+      "Use what you already have, like shoeboxes and jars, before buying."
+     ],
+     "q": "Do you own storage containers that hold things you never use?",
+     "c": "Check one storage box and ask if its contents still earn their place."
+    },
+    "de": {
+     "t": "Aufbewahrung, die hilft, nicht versteckt",
+     "g": "Aufbewahrung erst nach dem Ausmisten nutzen, damit Behälter ordnen statt verstecken.",
+     "p": [
+      "Wer vor dem Sortieren Boxen kauft, versteckt das Zuviel nur ordentlich.",
+      "Miste erst aus, miss dann, was bleibt, und wähl passende Aufbewahrung.",
+      "Nutze zuerst, was du hast, wie Schuhkartons und Gläser, bevor du kaufst."
+     ],
+     "q": "Hast du Behälter, in denen Dinge liegen, die du nie nutzt?",
+     "c": "Sieh eine Aufbewahrungsbox an und frag, ob ihr Inhalt seinen Platz noch verdient."
+    },
+    "es": {
+     "t": "Almacenaje que ayuda, no que esconde",
+     "g": "Usar el almacenaje solo tras ordenar, para que los recipientes organicen y no escondan.",
+     "p": [
+      "Comprar cajas antes de clasificar solo esconde el exceso en cajas bonitas.",
+      "Primero ordena, luego mide lo que queda y elige almacenaje a medida.",
+      "Usa lo que ya tienes, como cajas de zapatos y tarros, antes de comprar."
+     ],
+     "q": "¿Tienes recipientes con cosas que nunca usas?",
+     "c": "Revisa una caja de almacenaje y pregúntate si su contenido aún merece su sitio."
+    },
+    "fr": {
+     "t": "Un rangement qui aide, pas qui cache",
+     "g": "Utiliser le rangement seulement après le tri pour que les boîtes organisent sans cacher.",
+     "p": [
+      "Acheter des boîtes avant de trier ne fait que cacher l'excès proprement.",
+      "Trie d'abord, mesure ce qui reste, puis choisis le rangement adapté.",
+      "Utilise d'abord ce que tu as, comme des boîtes à chaussures et des bocaux."
+     ],
+     "q": "As-tu des boîtes qui contiennent des choses que tu n'utilises jamais ?",
+     "c": "Examine une boîte de rangement et demande-toi si son contenu mérite encore sa place."
+    },
+    "it": {
+     "t": "Contenitori che aiutano, non nascondono",
+     "g": "Usare i contenitori solo dopo il riordino perché organizzino senza nascondere.",
+     "p": [
+      "Comprare scatole prima di selezionare nasconde solo l'eccesso in modo ordinato.",
+      "Prima fai ordine, poi misura ciò che resta e scegli contenitori su misura.",
+      "Usa ciò che hai già, come scatole da scarpe e barattoli, prima di comprare."
+     ],
+     "q": "Hai contenitori che custodiscono cose che non usi mai?",
+     "c": "Controlla una scatola e chiediti se il suo contenuto merita ancora il posto."
+    },
+    "pt": {
+     "t": "Arrumação que ajuda, não esconde",
+     "g": "Usar arrumação só depois de arrumar, para que as caixas organizem e não escondam.",
+     "p": [
+      "Comprar caixas antes de separar só esconde o excesso em caixas bonitas.",
+      "Primeiro arruma, depois mede o que sobra e escolhe caixas à medida.",
+      "Usa o que já tens, como caixas de sapatos e frascos, antes de comprar."
+     ],
+     "q": "Tens caixas com coisas que nunca usas?",
+     "c": "Verifica uma caixa de arrumação e pergunta se o conteúdo ainda merece o lugar."
+    },
+    "pt_BR": {
+     "t": "Organizadores que ajudam, não escondem",
+     "g": "Usar organizadores só depois de organizar, para as caixas organizarem e não esconderem.",
+     "p": [
+      "Comprar caixas antes de separar só esconde o excesso em caixas bonitas.",
+      "Primeiro organize, depois meça o que sobrou e escolha caixas sob medida.",
+      "Use o que já tem, como caixas de sapato e potes, antes de comprar."
+     ],
+     "q": "Você tem caixas com coisas que nunca usa?",
+     "c": "Confira uma caixa organizadora e pergunte se o conteúdo ainda merece o lugar."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Maintaining what you cleared",
+     "g": "Do weekly checks that stop clutter creeping back.",
+     "p": [
+      "Pick one short weekly check of the areas you cleared.",
+      "Return strays to their homes and remove anything that does not belong.",
+      "If an area fills up again, treat it as feedback, not failure."
+     ],
+     "q": "Which cleared area is hardest to keep clear?",
+     "c": "Schedule a ten-minute weekly check in your calendar and do the first one."
+    },
+    "de": {
+     "t": "Das Geschaffte erhalten",
+     "g": "Wöchentliche Checks gegen das Zurückschleichen von Unordnung.",
+     "p": [
+      "Wähl einen kurzen wöchentlichen Rundgang durch die freigeräumten Bereiche.",
+      "Bring Verirrtes zurück an seinen Platz und entferne, was nicht dazugehört.",
+      "Füllt sich ein Bereich wieder, ist das Rückmeldung, kein Versagen."
+     ],
+     "q": "Welcher freigeräumte Bereich bleibt am schwersten leer?",
+     "c": "Trag einen zehnminütigen Wochen-Check in deinen Kalender ein und mach den ersten."
+    },
+    "es": {
+     "t": "Mantener lo que despejaste",
+     "g": "Hacer revisiones semanales para que el desorden no vuelva a colarse.",
+     "p": [
+      "Elige una revisión semanal breve de las zonas que despejaste.",
+      "Devuelve lo perdido a su sitio y retira lo que no pertenece.",
+      "Si una zona se llena otra vez, tómalo como información, no como fracaso."
+     ],
+     "q": "¿Qué zona despejada cuesta más mantener libre?",
+     "c": "Programa en tu calendario una revisión semanal de diez minutos y haz la primera."
+    },
+    "fr": {
+     "t": "Entretenir ce que tu as dégagé",
+     "g": "Faire des vérifications hebdomadaires pour que le désordre ne revienne pas.",
+     "p": [
+      "Choisis un court contrôle hebdomadaire des zones dégagées.",
+      "Remets les égarés à leur place et retire ce qui n'a rien à y faire.",
+      "Si une zone se remplit de nouveau, vois-y un retour d'information, pas un échec."
+     ],
+     "q": "Quelle zone dégagée est la plus difficile à garder libre ?",
+     "c": "Programme dans ton agenda un contrôle hebdomadaire de dix minutes et fais le premier."
+    },
+    "it": {
+     "t": "Mantenere ciò che hai liberato",
+     "g": "Fare controlli settimanali per non far tornare il disordine.",
+     "p": [
+      "Scegli un breve controllo settimanale delle aree liberate.",
+      "Riporta ciò che è fuori posto al suo posto e togli ciò che non appartiene.",
+      "Se un'area si riempie di nuovo, vedilo come un'informazione, non un fallimento."
+     ],
+     "q": "Quale area liberata è più difficile da tenere libera?",
+     "c": "Metti in calendario un controllo settimanale di dieci minuti e fai il primo."
+    },
+    "pt": {
+     "t": "Manter o que libertaste",
+     "g": "Fazer verificações semanais para a desarrumação não voltar.",
+     "p": [
+      "Escolhe uma verificação semanal breve das zonas que libertaste.",
+      "Volta a pôr o que anda perdido no seu lugar e tira o que não pertence.",
+      "Se uma zona voltar a encher, vê isso como informação, não como falhanço."
+     ],
+     "q": "Que zona libertada é mais difícil de manter livre?",
+     "c": "Marca no calendário uma verificação semanal de dez minutos e faz a primeira."
+    },
+    "pt_BR": {
+     "t": "Manter o que você liberou",
+     "g": "Fazer checagens semanais para a bagunça não voltar.",
+     "p": [
+      "Escolha uma checagem semanal curta das áreas que você liberou.",
+      "Devolva o que está perdido ao seu lugar e tire o que não pertence.",
+      "Se uma área encher de novo, veja isso como informação, não como fracasso."
+     ],
+     "q": "Qual área liberada é mais difícil de manter livre?",
+     "c": "Marque no calendário uma checagem semanal de dez minutos e faça a primeira."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: room by room",
+     "g": "Revisit rooms you have decluttered and notice which habits work.",
+     "p": [
+      "Walk through each cleared room and see how it feels now.",
+      "Notice which habits stuck, like the reset, the one-in one-out rule or weekly check.",
+      "Choose one habit to strengthen and one place to improve next."
+     ],
+     "q": "Which room feels best now, and what made the difference?",
+     "c": "Walk through your home and write one thing to keep and one thing to adjust."
+    },
+    "de": {
+     "t": "Rückblick: Raum für Raum",
+     "g": "Bereits entrümpelte Räume erneut ansehen und erkennen, welche Gewohnheiten wirken.",
+     "p": [
+      "Geh durch jeden freigeräumten Raum und spür, wie er sich jetzt anfühlt.",
+      "Sieh, welche Gewohnheiten geblieben sind, etwa Reset, Eins-rein-eins-raus oder Wochen-Check.",
+      "Wähl eine Gewohnheit zum Stärken und einen Ort zum Verbessern."
+     ],
+     "q": "Welcher Raum fühlt sich jetzt am besten an, und was hat den Unterschied gemacht?",
+     "c": "Geh durch dein Zuhause und schreib etwas zum Behalten und etwas zum Anpassen auf."
+    },
+    "es": {
+     "t": "Repaso: habitación por habitación",
+     "g": "Revisitar las habitaciones ordenadas y notar qué hábitos funcionan.",
+     "p": [
+      "Recorre cada habitación despejada y mira cómo se siente ahora.",
+      "Fíjate en qué hábitos se quedaron: reinicio, uno entra uno sale o revisión semanal.",
+      "Elige un hábito que reforzar y un lugar que mejorar después."
+     ],
+     "q": "¿Qué habitación se siente mejor ahora y qué marcó la diferencia?",
+     "c": "Recorre tu casa y anota algo que mantener y algo que ajustar."
+    },
+    "fr": {
+     "t": "Bilan : pièce par pièce",
+     "g": "Revisiter les pièces désencombrées et voir quelles habitudes fonctionnent.",
+     "p": [
+      "Parcours chaque pièce dégagée et vois ce que tu ressens maintenant.",
+      "Repère les habitudes qui ont tenu : remise en ordre, un entre un sort ou contrôle hebdomadaire.",
+      "Choisis une habitude à renforcer et un endroit à améliorer ensuite."
+     ],
+     "q": "Quelle pièce te semble la meilleure maintenant, et qu'est-ce qui a changé ?",
+     "c": "Fais le tour de ta maison et note une chose à garder et une à ajuster."
+    },
+    "it": {
+     "t": "Ripasso: stanza per stanza",
+     "g": "Rivedere le stanze riordinate e notare quali abitudini funzionano.",
+     "p": [
+      "Percorri ogni stanza liberata e senti come ti fa stare ora.",
+      "Nota quali abitudini sono rimaste: reset, uno entra uno esce o controllo settimanale.",
+      "Scegli un'abitudine da rafforzare e un posto da migliorare dopo."
+     ],
+     "q": "Quale stanza ti sembra la migliore ora, e cosa ha fatto la differenza?",
+     "c": "Fai il giro di casa e annota una cosa da mantenere e una da regolare."
+    },
+    "pt": {
+     "t": "Revisão: divisão a divisão",
+     "g": "Rever as divisões arrumadas e reparar em que hábitos funcionam.",
+     "p": [
+      "Percorre cada divisão libertada e vê como te sentes agora.",
+      "Repara nos hábitos que ficaram: reinício, um entra um sai ou verificação semanal.",
+      "Escolhe um hábito a reforçar e um sítio a melhorar a seguir."
+     ],
+     "q": "Que divisão te parece a melhor agora, e o que fez a diferença?",
+     "c": "Percorre a tua casa e anota uma coisa a manter e uma a ajustar."
+    },
+    "pt_BR": {
+     "t": "Revisão: cômodo por cômodo",
+     "g": "Rever os cômodos organizados e notar quais hábitos funcionam.",
+     "p": [
+      "Percorra cada cômodo liberado e veja como se sente agora.",
+      "Veja quais hábitos ficaram: reset, um entra um sai ou checagem semanal.",
+      "Escolha um hábito para reforçar e um lugar para melhorar depois."
+     ],
+     "q": "Que cômodo parece o melhor agora, e o que fez a diferença?",
+     "c": "Percorra sua casa e anote uma coisa para manter e uma para ajustar."
+    }
+   }
+  }
+ ]
+}

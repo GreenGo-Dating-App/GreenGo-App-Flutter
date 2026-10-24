@@ -1,0 +1,835 @@
+{
+ "topic": "gardening",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your basic gardening toolkit",
+     "g": "Gather a trowel, watering can, pruners, gloves and a few simple essentials.",
+     "p": [
+      "A small trowel, a watering can with a narrow spout and a pair of gloves cover most tasks.",
+      "Clean, sharp pruners or scissors make neat cuts that heal fast and keep plants healthy.",
+      "Add a small brush or cloth for dusting leaves and a label pen, and you are well equipped."
+     ],
+     "q": "Which tool would you buy first, and which can you improvise with things at home?",
+     "c": "Today, list the tools you already own and one item you would add to your toolkit."
+    },
+    "de": {
+     "t": "Dein Grundwerkzeug fürs Gärtnern",
+     "g": "Stelle Handschaufel, Gießkanne, Schere, Handschuhe und ein paar Basics zusammen.",
+     "p": [
+      "Eine kleine Handschaufel, eine Gießkanne mit schmaler Tülle und Handschuhe erledigen das Meiste.",
+      "Saubere, scharfe Scheren schneiden glatt, die Wunden heilen schnell und die Pflanze bleibt gesund.",
+      "Dazu ein kleiner Pinsel oder Tuch fürs Abstauben und ein Etikettenstift, schon bist du gut ausgestattet."
+     ],
+     "q": "Welches Werkzeug würdest du zuerst kaufen und welches kannst du mit Hausmitteln ersetzen?",
+     "c": "Liste heute auf, welche Werkzeuge du schon hast und was du noch ergänzen würdest."
+    },
+    "es": {
+     "t": "Tu kit básico de jardinería",
+     "g": "Reúne una paleta, regadera, tijeras de podar, guantes y unos pocos básicos.",
+     "p": [
+      "Una paleta pequeña, una regadera de pico fino y unos guantes cubren la mayoría de las tareas.",
+      "Unas tijeras limpias y afiladas hacen cortes limpios que cicatrizan rápido y mantienen sanas las plantas.",
+      "Añade un pincel o paño para quitar el polvo y un rotulador de etiquetas, y estarás bien equipado."
+     ],
+     "q": "¿Qué herramienta comprarías primero y cuál puedes improvisar con cosas de casa?",
+     "c": "Hoy haz una lista de tus herramientas y de un artículo que añadirías a tu kit."
+    },
+    "fr": {
+     "t": "Ta trousse à outils de base",
+     "g": "Rassemble une truelle, un arrosoir, un sécateur, des gants et quelques essentiels.",
+     "p": [
+      "Une petite truelle, un arrosoir à bec fin et une paire de gants couvrent la plupart des tâches.",
+      "Un sécateur ou des ciseaux propres et affûtés coupent net, cicatrisent vite et gardent les plantes saines.",
+      "Ajoute un petit pinceau ou chiffon pour dépoussiérer et un feutre pour les étiquettes : te voilà équipé."
+     ],
+     "q": "Quel outil achèterais-tu en premier, et lequel peux-tu remplacer par un objet de la maison ?",
+     "c": "Aujourd'hui, liste les outils que tu as déjà et un article que tu ajouterais."
+    },
+    "it": {
+     "t": "Il tuo kit base di giardinaggio",
+     "g": "Procurati paletta, annaffiatoio, forbici da potatura, guanti e pochi altri essenziali.",
+     "p": [
+      "Una piccola paletta, un annaffiatoio con beccuccio stretto e un paio di guanti coprono quasi tutto.",
+      "Forbici pulite e affilate fanno tagli netti che guariscono in fretta e mantengono sane le piante.",
+      "Aggiungi un pennello o panno per spolverare e un pennarello per etichette: sei ben attrezzato."
+     ],
+     "q": "Quale attrezzo compreresti per primo e quale puoi improvvisare con cose di casa?",
+     "c": "Oggi elenca gli attrezzi che hai già e un oggetto che aggiungeresti al kit."
+    },
+    "pt": {
+     "t": "O teu kit básico de jardinagem",
+     "g": "Reúne uma pá pequena, regador, tesoura de poda, luvas e alguns essenciais simples.",
+     "p": [
+      "Uma pá pequena, um regador de bico fino e umas luvas cobrem a maioria das tarefas.",
+      "Uma tesoura limpa e afiada faz cortes limpos que cicatrizam depressa e mantêm as plantas saudáveis.",
+      "Junta um pincel ou pano para limpar o pó e um marcador para etiquetas, e ficas bem equipado."
+     ],
+     "q": "Que ferramenta comprarias primeiro e qual podes improvisar com coisas de casa?",
+     "c": "Hoje lista as ferramentas que já tens e um item que acrescentarias ao kit."
+    },
+    "pt_BR": {
+     "t": "Seu kit básico de jardinagem",
+     "g": "Reúna uma pazinha, regador, tesoura de poda, luvas e alguns itens essenciais simples.",
+     "p": [
+      "Uma pazinha, um regador de bico fino e um par de luvas cobrem a maioria das tarefas.",
+      "Uma tesoura limpa e afiada faz cortes limpos que cicatrizam rápido e mantêm as plantas saudáveis.",
+      "Some um pincel ou pano para tirar o pó e uma caneta para etiquetas, e você fica bem equipado."
+     ],
+     "q": "Qual ferramenta você compraria primeiro e qual dá para improvisar com coisas de casa?",
+     "c": "Hoje liste as ferramentas que já tem e um item que acrescentaria ao kit."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Caring for your tools",
+     "g": "Clean, dry and sharpen tools so they last and keep plants healthy.",
+     "p": [
+      "Wipe soil off tools after use, since dirt and moisture cause rust and spread plant diseases.",
+      "Wipe blades with rubbing alcohol or soapy water when moving between plants, especially sick ones.",
+      "Dry metal tools, add a drop of oil to blades now and then and store them somewhere dry."
+     ],
+     "q": "Do your tools usually end up clean and dry, or forgotten outside?",
+     "c": "Today, clean one tool with a cloth and a little soapy water, dry it well and store it."
+    },
+    "de": {
+     "t": "Werkzeug richtig pflegen",
+     "g": "Reinige, trockne und schärfe Werkzeug, damit es lange hält und Pflanzen gesund bleiben.",
+     "p": [
+      "Wische Erde nach Gebrauch ab, denn Schmutz und Feuchtigkeit verursachen Rost und verbreiten Krankheiten.",
+      "Wische Klingen beim Wechsel zwischen Pflanzen mit Alkohol oder Seifenwasser ab, besonders nach kranken.",
+      "Trockne Metallwerkzeug, öle Klingen ab und zu leicht und lagere alles an einem trockenen Ort."
+     ],
+     "q": "Landet dein Werkzeug meist sauber und trocken im Schrank oder bleibt es draußen liegen?",
+     "c": "Reinige heute ein Werkzeug mit Tuch und Seifenwasser, trockne es gut und lagere es."
+    },
+    "es": {
+     "t": "Cuidar tus herramientas",
+     "g": "Limpia, seca y afila las herramientas para que duren y mantengan sanas las plantas.",
+     "p": [
+      "Quita la tierra de las herramientas tras usarlas: la suciedad y la humedad causan óxido y propagan enfermedades.",
+      "Pasa alcohol o agua con jabón por las hojas al cambiar de planta, sobre todo tras plantas enfermas.",
+      "Seca las herramientas de metal, pon una gota de aceite en las hojas de vez en cuando y guárdalas en seco."
+     ],
+     "q": "¿Tus herramientas suelen acabar limpias y secas o olvidadas fuera?",
+     "c": "Hoy limpia una herramienta con un paño y agua con jabón, sécala bien y guárdala."
+    },
+    "fr": {
+     "t": "Entretenir tes outils",
+     "g": "Nettoie, sèche et affûte tes outils pour qu'ils durent et gardent les plantes saines.",
+     "p": [
+      "Essuie la terre après usage : saleté et humidité causent la rouille et propagent les maladies.",
+      "Essuie les lames à l'alcool ou à l'eau savonneuse en changeant de plante, surtout après une plante malade.",
+      "Sèche les outils en métal, huile légèrement les lames de temps en temps et range-les au sec."
+     ],
+     "q": "Tes outils finissent-ils propres et secs, ou oubliés dehors ?",
+     "c": "Aujourd'hui, nettoie un outil avec un chiffon et de l'eau savonneuse, sèche-le bien et range-le."
+    },
+    "it": {
+     "t": "Prendersi cura degli attrezzi",
+     "g": "Pulisci, asciuga e affila gli attrezzi perché durino e mantengano sane le piante.",
+     "p": [
+      "Togli la terra dagli attrezzi dopo l'uso: sporco e umidità causano ruggine e diffondono malattie.",
+      "Pulisci le lame con alcol o acqua e sapone quando passi da una pianta all'altra, soprattutto dopo piante malate.",
+      "Asciuga gli attrezzi in metallo, metti ogni tanto una goccia d'olio sulle lame e riponili all'asciutto."
+     ],
+     "q": "I tuoi attrezzi finiscono di solito puliti e asciutti o dimenticati fuori?",
+     "c": "Oggi pulisci un attrezzo con panno e acqua saponata, asciugalo bene e riponilo."
+    },
+    "pt": {
+     "t": "Cuidar das tuas ferramentas",
+     "g": "Limpa, seca e afia as ferramentas para durarem e manterem as plantas saudáveis.",
+     "p": [
+      "Tira a terra das ferramentas depois de usar: a sujidade e a humidade causam ferrugem e espalham doenças.",
+      "Limpa as lâminas com álcool ou água com sabão ao mudar de planta, sobretudo depois de plantas doentes.",
+      "Seca as ferramentas de metal, põe uma gota de óleo nas lâminas de vez em quando e guarda-as em local seco."
+     ],
+     "q": "As tuas ferramentas costumam ficar limpas e secas ou esquecidas lá fora?",
+     "c": "Hoje limpa uma ferramenta com um pano e água com sabão, seca-a bem e guarda-a."
+    },
+    "pt_BR": {
+     "t": "Cuidando das suas ferramentas",
+     "g": "Limpe, seque e afie as ferramentas para durarem e manterem as plantas saudáveis.",
+     "p": [
+      "Tire a terra das ferramentas depois de usar: a sujeira e a umidade causam ferrugem e espalham doenças.",
+      "Limpe as lâminas com álcool ou água e sabão ao trocar de planta, principalmente depois de plantas doentes.",
+      "Seque as ferramentas de metal, ponha uma gota de óleo nas lâminas de vez em quando e guarde em lugar seco."
+     ],
+     "q": "Suas ferramentas costumam ficar limpas e secas ou esquecidas lá fora?",
+     "c": "Hoje limpe uma ferramenta com pano e água e sabão, seque bem e guarde."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gardening gloves and safety",
+     "g": "Protect your hands, use tools carefully and know which plants irritate skin.",
+     "p": [
+      "Gloves guard against thorns, splinters, soil germs and sharp tools, so wear them for digging and pruning.",
+      "Some plants irritate skin, such as euphorbia sap, giant hogweed and primula leaves, so wear gloves and long sleeves.",
+      "Cut away from your body, store blades closed and wash your hands well after gardening."
+     ],
+     "q": "Have you ever had a scratch or rash from a plant? What did you learn from it?",
+     "c": "Today, set out a pair of gloves where you will see them and wash your hands after touching soil."
+    },
+    "de": {
+     "t": "Handschuhe und Sicherheit",
+     "g": "Schütze deine Hände, nutze Werkzeug sicher und kenne hautreizende Pflanzen.",
+     "p": [
+      "Handschuhe schützen vor Dornen, Splittern, Erdkeimen und scharfen Werkzeugen, trage sie beim Graben und Schneiden.",
+      "Manche Pflanzen reizen die Haut, etwa Wolfsmilchsaft, Riesenbärenklau und Primelblätter, trage Handschuhe und lange Ärmel.",
+      "Schneide vom Körper weg, bewahre Klingen geschlossen auf und wasche nach dem Gärtnern gründlich die Hände."
+     ],
+     "q": "Hattest du schon einmal einen Kratzer oder Ausschlag von einer Pflanze? Was hast du gelernt?",
+     "c": "Lege heute Handschuhe sichtbar bereit und wasche dir nach dem Anfassen von Erde die Hände."
+    },
+    "es": {
+     "t": "Guantes y seguridad en jardinería",
+     "g": "Protege tus manos, usa las herramientas con cuidado y conoce plantas que irritan la piel.",
+     "p": [
+      "Los guantes protegen de espinas, astillas, gérmenes del suelo y herramientas afiladas: úsalos al cavar y podar.",
+      "Algunas plantas irritan la piel, como la savia de euforbia, el perejil gigante y las hojas de primula: usa guantes y manga larga.",
+      "Corta alejando la hoja del cuerpo, guarda las hojas cerradas y lávate bien las manos tras trabajar."
+     ],
+     "q": "¿Te has arañado o has tenido sarpullido por una planta? ¿Qué aprendiste?",
+     "c": "Hoy deja unos guantes donde los veas y lávate las manos tras tocar tierra."
+    },
+    "fr": {
+     "t": "Gants et sécurité au jardin",
+     "g": "Protège tes mains, utilise tes outils avec soin et connais les plantes irritantes.",
+     "p": [
+      "Les gants protègent des épines, échardes, germes du sol et outils tranchants : porte-les pour bêcher et tailler.",
+      "Certaines plantes irritent la peau, comme la sève d'euphorbe, la berce du Caucase et les feuilles de primevère : gants et manches longues.",
+      "Coupe en t'éloignant du corps, range les lames fermées et lave-toi bien les mains après le jardinage."
+     ],
+     "q": "T'es-tu déjà griffé ou irrité la peau à cause d'une plante ? Qu'en as-tu retenu ?",
+     "c": "Aujourd'hui, place des gants bien en vue et lave-toi les mains après avoir touché la terre."
+    },
+    "it": {
+     "t": "Guanti e sicurezza in giardino",
+     "g": "Proteggi le mani, usa gli attrezzi con cura e conosci le piante che irritano la pelle.",
+     "p": [
+      "I guanti proteggono da spine, schegge, germi del terreno e attrezzi taglienti: usali per zappare e potare.",
+      "Alcune piante irritano la pelle, come il lattice di euforbia, il panace di Mantegazza e le foglie di primula: guanti e maniche lunghe.",
+      "Taglia allontanando la lama dal corpo, tieni le lame chiuse e lavati bene le mani dopo il giardinaggio."
+     ],
+     "q": "Ti sei mai graffiato o hai avuto un'irritazione per una pianta? Cosa hai imparato?",
+     "c": "Oggi lascia un paio di guanti in vista e lavati le mani dopo aver toccato la terra."
+    },
+    "pt": {
+     "t": "Luvas e segurança na jardinagem",
+     "g": "Protege as mãos, usa as ferramentas com cuidado e conhece plantas que irritam a pele.",
+     "p": [
+      "As luvas protegem de espinhos, farpas, germes do solo e ferramentas afiadas: usa-as ao cavar e podar.",
+      "Algumas plantas irritam a pele, como a seiva da eufórbia, a salsa-gigante e as folhas de prímula: usa luvas e mangas compridas.",
+      "Corta afastando a lâmina do corpo, guarda as lâminas fechadas e lava bem as mãos depois da jardinagem."
+     ],
+     "q": "Já te arranhaste ou tiveste erupção por causa de uma planta? O que aprendeste?",
+     "c": "Hoje deixa umas luvas à vista e lava as mãos depois de tocar na terra."
+    },
+    "pt_BR": {
+     "t": "Luvas e segurança na jardinagem",
+     "g": "Proteja as mãos, use as ferramentas com cuidado e conheça plantas que irritam a pele.",
+     "p": [
+      "As luvas protegem de espinhos, farpas, germes do solo e ferramentas afiadas: use-as ao cavar e podar.",
+      "Algumas plantas irritam a pele, como a seiva da eufórbia, a erva-gigante e as folhas de prímula: use luvas e mangas compridas.",
+      "Corte afastando a lâmina do corpo, guarde as lâminas fechadas e lave bem as mãos depois da jardinagem."
+     ],
+     "q": "Você já se arranhou ou teve alergia por causa de uma planta? O que aprendeu?",
+     "c": "Hoje deixe um par de luvas à vista e lave as mãos depois de tocar na terra."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Plants and pets",
+     "g": "Check which common plants are unsafe for cats and dogs before bringing them home.",
+     "p": [
+      "Several popular plants are toxic to pets, including lilies for cats, pothos, philodendron, sago palm and aloe.",
+      "Check a plant on a trusted pet-safety list, for example from a vet or animal welfare charity, before buying it.",
+      "If a pet chews a plant, call your vet or a poison helpline quickly and take the plant name or a photo with you."
+     ],
+     "q": "Do you share your home with a pet that loves to chew on leaves?",
+     "c": "Today, list your plants and check each one against a trusted pet-safety source."
+    },
+    "de": {
+     "t": "Pflanzen und Haustiere",
+     "g": "Prüfe, welche gängigen Pflanzen für Katzen und Hunde ungeeignet sind, bevor du sie mitbringst.",
+     "p": [
+      "Mehrere beliebte Pflanzen sind für Haustiere giftig, darunter Lilien für Katzen, Efeutute, Philodendron, Sagopalme und Aloe.",
+      "Prüfe eine Pflanze vor dem Kauf in einer vertrauenswürdigen Haustierliste, etwa von Tierarzt oder Tierschutz.",
+      "Knabbert ein Tier an einer Pflanze, ruf rasch den Tierarzt oder eine Giftnotrufzentrale an und nenne die Pflanze oder zeig ein Foto."
+     ],
+     "q": "Lebst du mit einem Haustier, das gern an Blättern knabbert?",
+     "c": "Liste heute deine Pflanzen auf und prüfe jede in einer vertrauenswürdigen Haustierquelle."
+    },
+    "es": {
+     "t": "Plantas y mascotas",
+     "g": "Comprueba qué plantas comunes no son seguras para gatos y perros antes de llevarlas a casa.",
+     "p": [
+      "Varias plantas populares son tóxicas para mascotas, como los lirios para gatos, el pothos, el filodendro, la cica y el aloe.",
+      "Consulta una planta en una lista fiable de seguridad para mascotas, por ejemplo de un veterinario, antes de comprarla.",
+      "Si tu mascota mordisquea una planta, llama pronto a tu veterinario o a un centro de toxicología y lleva el nombre o una foto."
+     ],
+     "q": "¿Compartes tu casa con una mascota a la que le encanta mordisquear hojas?",
+     "c": "Hoy haz una lista de tus plantas y comprueba cada una en una fuente fiable sobre mascotas."
+    },
+    "fr": {
+     "t": "Plantes et animaux de compagnie",
+     "g": "Vérifie quelles plantes courantes sont dangereuses pour chats et chiens avant de les adopter.",
+     "p": [
+      "Plusieurs plantes populaires sont toxiques pour les animaux : lys pour les chats, pothos, philodendron, cycas et aloès.",
+      "Vérifie une plante dans une liste fiable de sécurité animale, par exemple d'un vétérinaire, avant de l'acheter.",
+      "Si ton animal grignote une plante, appelle vite ton vétérinaire ou un centre antipoison et note le nom ou une photo."
+     ],
+     "q": "Vis-tu avec un animal qui adore grignoter les feuilles ?",
+     "c": "Aujourd'hui, liste tes plantes et vérifie chacune dans une source fiable pour animaux."
+    },
+    "it": {
+     "t": "Piante e animali domestici",
+     "g": "Controlla quali piante comuni non sono sicure per gatti e cani prima di portarle a casa.",
+     "p": [
+      "Diverse piante popolari sono tossiche per gli animali: gigli per i gatti, pothos, filodendro, cicas e aloe.",
+      "Verifica una pianta in un elenco affidabile sulla sicurezza degli animali, per esempio di un veterinario, prima di comprarla.",
+      "Se il tuo animale mastica una pianta, chiama subito il veterinario o un centro antiveleni e porta il nome o una foto."
+     ],
+     "q": "Vivi con un animale che adora mordicchiare le foglie?",
+     "c": "Oggi elenca le tue piante e controlla ciascuna in una fonte affidabile sugli animali."
+    },
+    "pt": {
+     "t": "Plantas e animais de estimação",
+     "g": "Verifica que plantas comuns não são seguras para gatos e cães antes de as levares para casa.",
+     "p": [
+      "Várias plantas populares são tóxicas para animais, como lírios para gatos, jiboia, filodendro, cica e aloé.",
+      "Consulta uma planta numa lista fiável de segurança animal, por exemplo de um veterinário, antes de a comprares.",
+      "Se o teu animal mordiscar uma planta, liga depressa ao veterinário ou a um centro antivenenos e leva o nome ou uma foto."
+     ],
+     "q": "Partilhas a casa com um animal que adora mordiscar folhas?",
+     "c": "Hoje lista as tuas plantas e verifica cada uma numa fonte fiável sobre animais."
+    },
+    "pt_BR": {
+     "t": "Plantas e animais de estimação",
+     "g": "Verifique quais plantas comuns não são seguras para gatos e cães antes de levá-las para casa.",
+     "p": [
+      "Várias plantas populares são tóxicas para animais, como lírios para gatos, jiboia, filodendro, cica e aloe.",
+      "Consulte uma planta numa lista confiável de segurança animal, por exemplo de um veterinário, antes de comprar.",
+      "Se seu animal mordiscar uma planta, ligue logo para o veterinário ou um centro de intoxicações e leve o nome ou uma foto."
+     ],
+     "q": "Você divide a casa com um animal que adora mordiscar folhas?",
+     "c": "Hoje liste suas plantas e confira cada uma numa fonte confiável sobre animais."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bringing a new plant home",
+     "g": "Inspect for pests, let it settle and avoid repotting straight away.",
+     "p": [
+      "Check leaves, undersides and soil for bugs, webbing or sticky spots before the plant joins others.",
+      "Keep a new plant a few metres away from your others for about two weeks, just in case.",
+      "Skip repotting for a few weeks, since moving and a new pot at once stresses the plant."
+     ],
+     "q": "What is the newest plant you brought home, and where did you place it?",
+     "c": "Today, inspect one plant under its leaves and in the soil with a flashlight."
+    },
+    "de": {
+     "t": "Eine neue Pflanze einziehen lassen",
+     "g": "Prüfe auf Schädlinge, lass sie ankommen und topfe nicht sofort um.",
+     "p": [
+      "Sieh Blätter, Unterseiten und Erde auf Tiere, Gespinste oder klebrige Stellen an, bevor sie zu den anderen kommt.",
+      "Halte eine neue Pflanze etwa zwei Wochen einige Meter von den anderen entfernt, zur Sicherheit.",
+      "Warte mit dem Umtopfen einige Wochen, denn Umzug und neuer Topf zugleich stressen die Pflanze."
+     ],
+     "q": "Was ist deine neueste Pflanze, und wo hast du sie hingestellt?",
+     "c": "Prüfe heute eine Pflanze mit Taschenlampe unter den Blättern und in der Erde."
+    },
+    "es": {
+     "t": "Llevar una planta nueva a casa",
+     "g": "Inspecciona plagas, deja que se asiente y evita trasplantarla enseguida.",
+     "p": [
+      "Revisa hojas, envés y tierra en busca de bichos, telarañas o zonas pegajosas antes de juntarla con las demás.",
+      "Mantén una planta nueva a unos metros de las otras durante unas dos semanas, por si acaso.",
+      "No la trasplantes durante unas semanas, porque la mudanza y una maceta nueva a la vez la estresan."
+     ],
+     "q": "¿Cuál es la planta más reciente que llevaste a casa y dónde la pusiste?",
+     "c": "Hoy inspecciona una planta con una linterna, bajo las hojas y en la tierra."
+    },
+    "fr": {
+     "t": "Accueillir une nouvelle plante",
+     "g": "Inspecte les parasites, laisse-la s'installer et évite de la rempoter tout de suite.",
+     "p": [
+      "Examine feuilles, dessous et terre : insectes, toiles ou zones collantes, avant de la mêler aux autres.",
+      "Garde une nouvelle plante à quelques mètres des autres pendant environ deux semaines, par précaution.",
+      "Évite le rempotage pendant quelques semaines : déménagement et nouveau pot à la fois la stressent."
+     ],
+     "q": "Quelle est la dernière plante que tu as rapportée, et où l'as-tu placée ?",
+     "c": "Aujourd'hui, inspecte une plante avec une lampe de poche sous les feuilles et dans la terre."
+    },
+    "it": {
+     "t": "Portare a casa una pianta nuova",
+     "g": "Controlla i parassiti, lasciala ambientare ed evita di rinvasarla subito.",
+     "p": [
+      "Controlla foglie, pagina inferiore e terriccio per insetti, ragnatele o zone appiccicose prima di unirla alle altre.",
+      "Tieni una pianta nuova a qualche metro dalle altre per circa due settimane, per precauzione.",
+      "Evita il rinvaso per qualche settimana: trasloco e vaso nuovo insieme stressano la pianta."
+     ],
+     "q": "Qual è l'ultima pianta che hai portato a casa e dove l'hai messa?",
+     "c": "Oggi controlla una pianta con una torcia, sotto le foglie e nel terriccio."
+    },
+    "pt": {
+     "t": "Levar uma planta nova para casa",
+     "g": "Inspeciona pragas, deixa-a assentar e evita replantá-la logo.",
+     "p": [
+      "Verifica folhas, parte de baixo e terra à procura de bichos, teias ou zonas pegajosas antes de a juntar às outras.",
+      "Mantém uma planta nova a alguns metros das outras durante cerca de duas semanas, por precaução.",
+      "Não a mudes de vaso durante algumas semanas: mudança e vaso novo ao mesmo tempo causam stress."
+     ],
+     "q": "Qual é a planta mais recente que levaste para casa e onde a puseste?",
+     "c": "Hoje inspeciona uma planta com uma lanterna, por baixo das folhas e na terra."
+    },
+    "pt_BR": {
+     "t": "Trazendo uma planta nova para casa",
+     "g": "Inspecione pragas, deixe-a se acomodar e evite replantá-la logo.",
+     "p": [
+      "Confira folhas, parte de baixo e terra atrás de bichinhos, teias ou pontos grudentos antes de juntá-la às outras.",
+      "Mantenha uma planta nova a alguns metros das outras por cerca de duas semanas, por precaução.",
+      "Não troque de vaso por algumas semanas: mudança e vaso novo ao mesmo tempo estressam a planta."
+     ],
+     "q": "Qual é a planta mais recente que você trouxe para casa e onde a colocou?",
+     "c": "Hoje inspecione uma planta com uma lanterna, embaixo das folhas e na terra."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Naming and tracking plants",
+     "g": "Keep a simple plant journal with names, dates and care notes.",
+     "p": [
+      "Write each plant's common and Latin name, since the Latin name tells you exactly what it is.",
+      "Note the date you bought it, when you watered, fed or repotted it and any changes you see.",
+      "A journal reveals patterns, like a plant that always droops on day eight after watering."
+     ],
+     "q": "Would you rather keep a notebook, a phone note or sticky labels?",
+     "c": "Today, start a plant journal with one line for each plant: name, spot and last watering."
+    },
+    "de": {
+     "t": "Pflanzen benennen und notieren",
+     "g": "Führe ein einfaches Pflanzentagebuch mit Namen, Daten und Pflegenotizen.",
+     "p": [
+      "Schreibe zu jeder Pflanze den üblichen und den lateinischen Namen, der lateinische sagt genau, was sie ist.",
+      "Notiere Kaufdatum, wann du gegossen, gedüngt oder umgetopft hast und welche Veränderungen du siehst.",
+      "Ein Tagebuch zeigt Muster, etwa eine Pflanze, die immer am achten Tag nach dem Gießen schlappt."
+     ],
+     "q": "Führst du lieber ein Notizbuch, eine Handynotiz oder Klebeetiketten?",
+     "c": "Beginne heute ein Pflanzentagebuch mit einer Zeile je Pflanze: Name, Platz und letztes Gießen."
+    },
+    "es": {
+     "t": "Nombrar y registrar plantas",
+     "g": "Lleva un diario sencillo de plantas con nombres, fechas y notas de cuidado.",
+     "p": [
+      "Anota el nombre común y el latino de cada planta: el latino dice exactamente de qué especie se trata.",
+      "Apunta la fecha de compra, cuándo la regaste, abonaste o trasplantaste y los cambios que veas.",
+      "Un diario revela patrones, como una planta que siempre se cae el octavo día tras el riego."
+     ],
+     "q": "¿Prefieres un cuaderno, una nota en el móvil o etiquetas adhesivas?",
+     "c": "Hoy empieza un diario con una línea por planta: nombre, sitio y último riego."
+    },
+    "fr": {
+     "t": "Nommer et suivre ses plantes",
+     "g": "Tiens un journal simple des plantes avec noms, dates et notes d'entretien.",
+     "p": [
+      "Écris le nom courant et le nom latin de chaque plante : le nom latin dit exactement de quelle espèce il s'agit.",
+      "Note la date d'achat, quand tu as arrosé, nourri ou rempoté, et les changements observés.",
+      "Un journal révèle des habitudes, comme une plante qui flétrit toujours le huitième jour après l'arrosage."
+     ],
+     "q": "Préfères-tu un carnet, une note de téléphone ou des étiquettes adhésives ?",
+     "c": "Aujourd'hui, commence un journal avec une ligne par plante : nom, emplacement et dernier arrosage."
+    },
+    "it": {
+     "t": "Dare un nome alle piante e tenerne traccia",
+     "g": "Tieni un semplice diario delle piante con nomi, date e note di cura.",
+     "p": [
+      "Scrivi il nome comune e quello latino di ogni pianta: il nome latino dice esattamente di che specie si tratta.",
+      "Annota la data d'acquisto, quando hai annaffiato, concimato o rinvasato e i cambiamenti che noti.",
+      "Un diario rivela schemi, come una pianta che si affloscia sempre l'ottavo giorno dopo l'annaffiatura."
+     ],
+     "q": "Preferisci un quaderno, una nota sul telefono o etichette adesive?",
+     "c": "Oggi inizia un diario con una riga per pianta: nome, posto e ultima annaffiatura."
+    },
+    "pt": {
+     "t": "Nomear e registar as plantas",
+     "g": "Mantém um diário simples das plantas com nomes, datas e notas de cuidados.",
+     "p": [
+      "Escreve o nome comum e o nome latino de cada planta: o latino diz exatamente de que espécie se trata.",
+      "Anota a data de compra, quando regaste, adubaste ou mudaste de vaso e as alterações que vês.",
+      "Um diário revela padrões, como uma planta que murcha sempre ao oitavo dia depois da rega."
+     ],
+     "q": "Preferes um caderno, uma nota no telemóvel ou etiquetas autocolantes?",
+     "c": "Hoje começa um diário com uma linha por planta: nome, local e última rega."
+    },
+    "pt_BR": {
+     "t": "Nomeando e registrando as plantas",
+     "g": "Mantenha um diário simples das plantas com nomes, datas e notas de cuidados.",
+     "p": [
+      "Escreva o nome popular e o nome latino de cada planta: o latino diz exatamente de que espécie se trata.",
+      "Anote a data da compra, quando regou, adubou ou trocou de vaso e as mudanças que vê.",
+      "Um diário revela padrões, como uma planta que sempre murcha no oitavo dia depois da rega."
+     ],
+     "q": "Você prefere um caderno, uma nota no celular ou etiquetas adesivas?",
+     "c": "Hoje comece um diário com uma linha por planta: nome, lugar e última rega."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your gardening space",
+     "g": "Map your windowsills, balcony or garden to see what you can grow where.",
+     "p": [
+      "Sketch your space and mark each spot with its light, wind and nearest water source.",
+      "South-facing spots in the northern hemisphere (north-facing in the southern) are sunniest and hottest.",
+      "Note limits like weight on a balcony, shelf space or pets, so your plan fits real life."
+     ],
+     "q": "Where would your dream plant corner be, and what would you put there?",
+     "c": "Today, draw a quick map of your space and mark sunny, shady and windy spots."
+    },
+    "de": {
+     "t": "Dein Gartenplatz",
+     "g": "Zeichne Fensterbänke, Balkon oder Garten auf, um zu sehen, was wo wachsen kann.",
+     "p": [
+      "Skizziere deinen Platz und markiere jede Stelle mit Licht, Wind und nächster Wasserquelle.",
+      "Südseiten auf der Nordhalbkugel (Nordseiten auf der Südhalbkugel) sind am sonnigsten und wärmsten.",
+      "Notiere Grenzen wie Gewicht auf dem Balkon, Regalplatz oder Haustiere, damit der Plan zum Alltag passt."
+     ],
+     "q": "Wo wäre deine Traum-Pflanzenecke, und was würdest du dort hinstellen?",
+     "c": "Zeichne heute eine kurze Karte deines Platzes und markiere sonnige, schattige und windige Stellen."
+    },
+    "es": {
+     "t": "Tu espacio de jardinería",
+     "g": "Dibuja tus repisas, balcón o jardín para ver qué puedes cultivar y dónde.",
+     "p": [
+      "Esboza tu espacio y marca cada sitio con su luz, viento y la toma de agua más cercana.",
+      "Los sitios orientados al sur en el hemisferio norte (al norte en el sur) son los más soleados y cálidos.",
+      "Anota límites como el peso en el balcón, el espacio en estantes o las mascotas, para que el plan sea realista."
+     ],
+     "q": "¿Dónde estaría tu rincón de plantas soñado y qué pondrías allí?",
+     "c": "Hoy dibuja un mapa rápido de tu espacio y marca sitios soleados, sombreados y ventosos."
+    },
+    "fr": {
+     "t": "Ton espace de jardinage",
+     "g": "Cartographie tes rebords de fenêtre, ton balcon ou ton jardin pour voir quoi cultiver où.",
+     "p": [
+      "Fais un croquis de ton espace et note pour chaque endroit la lumière, le vent et le point d'eau le plus proche.",
+      "Les endroits orientés sud dans l'hémisphère nord (nord dans l'hémisphère sud) sont les plus ensoleillés et chauds.",
+      "Note les limites : poids sur un balcon, place sur les étagères, animaux, pour un plan réaliste."
+     ],
+     "q": "Où serait ton coin plantes de rêve, et qu'y mettrais-tu ?",
+     "c": "Aujourd'hui, dessine un plan rapide de ton espace et marque les zones ensoleillées, ombragées et ventées."
+    },
+    "it": {
+     "t": "Il tuo spazio per il giardinaggio",
+     "g": "Mappa davanzali, balcone o giardino per vedere cosa puoi coltivare e dove.",
+     "p": [
+      "Disegna il tuo spazio e segna per ogni punto luce, vento e fonte d'acqua più vicina.",
+      "I punti esposti a sud nell'emisfero nord (a nord in quello sud) sono i più soleggiati e caldi.",
+      "Annota i limiti come il peso sul balcone, lo spazio sugli scaffali o gli animali, così il piano è realistico."
+     ],
+     "q": "Dove sarebbe il tuo angolo piante dei sogni e cosa ci metteresti?",
+     "c": "Oggi disegna una mappa veloce del tuo spazio e segna punti soleggiati, ombreggiati e ventosi."
+    },
+    "pt": {
+     "t": "O teu espaço de jardinagem",
+     "g": "Mapeia os teus parapeitos, varanda ou jardim para ver o que podes cultivar onde.",
+     "p": [
+      "Faz um esboço do teu espaço e marca cada local com luz, vento e a fonte de água mais próxima.",
+      "Os locais virados a sul no hemisfério norte (a norte no sul) são os mais soalheiros e quentes.",
+      "Anota limites como o peso na varanda, o espaço nas prateleiras ou animais, para o plano ser realista."
+     ],
+     "q": "Onde ficaria o teu canto de plantas de sonho e o que lá porias?",
+     "c": "Hoje desenha um mapa rápido do teu espaço e marca locais soalheiros, sombreados e ventosos."
+    },
+    "pt_BR": {
+     "t": "Seu espaço de jardinagem",
+     "g": "Mapeie seus peitoris, varanda ou jardim para ver o que cultivar onde.",
+     "p": [
+      "Faça um esboço do seu espaço e marque cada ponto com luz, vento e a fonte de água mais próxima.",
+      "Os pontos voltados ao norte no hemisfério sul (ao sul no hemisfério norte) são os mais ensolarados e quentes.",
+      "Anote limites como o peso na varanda, o espaço nas prateleiras ou animais, para o plano ser realista."
+     ],
+     "q": "Onde ficaria o seu cantinho de plantas dos sonhos e o que você colocaria lá?",
+     "c": "Hoje desenhe um mapa rápido do seu espaço e marque pontos ensolarados, sombreados e ventosos."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Climate and hardiness zones",
+     "g": "See how local temperatures decide which plants survive outdoors in your area.",
+     "p": [
+      "Hardiness zones group regions by their coldest winter temperatures, helping you pick plants that survive.",
+      "A plant rated for your zone or colder should live through winter outdoors in your area.",
+      "Local microclimates, like a sheltered wall or a frost pocket, can be warmer or colder than your zone."
+     ],
+     "q": "Do you know your own climate zone, or the coldest and hottest temperatures where you live?",
+     "c": "Today, find your hardiness zone or lowest typical winter temperature and write it in your journal."
+    },
+    "de": {
+     "t": "Klima und Winterhärtezonen",
+     "g": "Sieh, wie lokale Temperaturen bestimmen, welche Pflanzen draußen bei dir überleben.",
+     "p": [
+      "Winterhärtezonen ordnen Regionen nach den kältesten Wintertemperaturen und helfen bei der Pflanzenwahl.",
+      "Eine Pflanze für deine Zone oder kälter sollte den Winter draußen bei dir überstehen.",
+      "Lokale Kleinklimata wie eine geschützte Mauer oder eine Frosttasche können wärmer oder kälter sein als deine Zone."
+     ],
+     "q": "Kennst du deine Klimazone oder die kältesten und heißesten Temperaturen, die bei dir herrschen?",
+     "c": "Finde heute deine Winterhärtezone oder die typische Wintertiefsttemperatur und schreibe sie ins Tagebuch."
+    },
+    "es": {
+     "t": "Clima y zonas de rusticidad",
+     "g": "Mira cómo las temperaturas locales deciden qué plantas sobreviven al aire libre donde vives.",
+     "p": [
+      "Las zonas de rusticidad agrupan regiones por sus temperaturas mínimas de invierno y ayudan a elegir plantas que resistan.",
+      "Una planta apta para tu zona o una más fría debería sobrevivir al invierno al aire libre en tu zona.",
+      "Los microclimas locales, como un muro protegido o una hondonada con heladas, pueden ser más cálidos o fríos que tu zona."
+     ],
+     "q": "¿Conoces tu zona climática o las temperaturas mínimas y máximas donde vives?",
+     "c": "Hoy averigua tu zona de rusticidad o la temperatura mínima típica de invierno y anótala en tu diario."
+    },
+    "fr": {
+     "t": "Climat et zones de rusticité",
+     "g": "Vois comment les températures locales décident quelles plantes survivent dehors chez toi.",
+     "p": [
+      "Les zones de rusticité regroupent les régions selon leurs températures hivernales minimales et aident à choisir.",
+      "Une plante adaptée à ta zone ou à une plus froide devrait passer l'hiver dehors chez toi.",
+      "Les microclimats locaux, comme un mur abrité ou une cuvette à gel, peuvent être plus chauds ou plus froids que ta zone."
+     ],
+     "q": "Connais-tu ta zone climatique ou les températures minimales et maximales de ta région ?",
+     "c": "Aujourd'hui, trouve ta zone de rusticité ou le minimum hivernal habituel et note-le dans ton journal."
+    },
+    "it": {
+     "t": "Clima e zone di rusticità",
+     "g": "Scopri come le temperature locali decidono quali piante sopravvivono all'aperto da te.",
+     "p": [
+      "Le zone di rusticità raggruppano le regioni in base alle temperature minime invernali e aiutano a scegliere.",
+      "Una pianta adatta alla tua zona o a una più fredda dovrebbe superare l'inverno all'aperto da te.",
+      "I microclimi locali, come un muro riparato o una conca gelida, possono essere più caldi o freddi della tua zona."
+     ],
+     "q": "Conosci la tua zona climatica o le temperature minime e massime del posto in cui vivi?",
+     "c": "Oggi trova la tua zona di rusticità o la minima invernale tipica e scrivila nel diario."
+    },
+    "pt": {
+     "t": "Clima e zonas de resistência",
+     "g": "Vê como as temperaturas locais decidem que plantas sobrevivem no exterior onde vives.",
+     "p": [
+      "As zonas de resistência agrupam regiões pelas temperaturas mínimas de inverno e ajudam a escolher plantas.",
+      "Uma planta indicada para a tua zona ou mais fria deverá sobreviver ao inverno no exterior onde vives.",
+      "Os microclimas locais, como um muro abrigado ou uma baixa com geada, podem ser mais quentes ou frios que a tua zona."
+     ],
+     "q": "Conheces a tua zona climática ou as temperaturas mínimas e máximas onde vives?",
+     "c": "Hoje descobre a tua zona de resistência ou a mínima típica de inverno e anota no diário."
+    },
+    "pt_BR": {
+     "t": "Clima e zonas de rusticidade",
+     "g": "Veja como as temperaturas locais decidem quais plantas sobrevivem ao ar livre onde você mora.",
+     "p": [
+      "As zonas de rusticidade agrupam regiões pelas temperaturas mínimas de inverno e ajudam a escolher plantas.",
+      "Uma planta indicada para a sua zona ou mais fria deve sobreviver ao inverno ao ar livre onde você mora.",
+      "Microclimas locais, como um muro abrigado ou uma baixada com geada, podem ser mais quentes ou frios que a sua zona."
+     ],
+     "q": "Você conhece sua zona climática ou as temperaturas mínimas e máximas de onde mora?",
+     "c": "Hoje descubra sua zona de rusticidade ou a mínima típica de inverno e anote no diário."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting realistic goals",
+     "g": "Start small with a few plants so success builds your confidence.",
+     "p": [
+      "Begin with three to five plants you can check easily, rather than a whole jungle at once.",
+      "Choose one small goal, like keeping a pothos alive for three months or growing basil from seed.",
+      "Every plant that drops a leaf is teaching you something, so treat mistakes as learning, not failure."
+     ],
+     "q": "What is one gardening goal you would love to reach by the end of this year?",
+     "c": "Today, write one small goal and one tiny step you can take this week."
+    },
+    "de": {
+     "t": "Realistische Ziele setzen",
+     "g": "Starte klein mit wenigen Pflanzen, damit Erfolg dein Selbstvertrauen stärkt.",
+     "p": [
+      "Beginne mit drei bis fünf Pflanzen, die du leicht im Blick hast, statt mit einem ganzen Dschungel.",
+      "Wähle ein kleines Ziel, etwa eine Efeutute drei Monate am Leben zu halten oder Basilikum aus Samen zu ziehen.",
+      "Jede Pflanze, die ein Blatt verliert, lehrt dich etwas, nimm Fehler als Lernen, nicht als Scheitern."
+     ],
+     "q": "Welches Gartenziel würdest du gern bis Jahresende erreichen?",
+     "c": "Schreibe heute ein kleines Ziel und einen winzigen Schritt auf, den du diese Woche gehen kannst."
+    },
+    "es": {
+     "t": "Fijar metas realistas",
+     "g": "Empieza con pocas plantas para que el éxito aumente tu confianza.",
+     "p": [
+      "Empieza con tres a cinco plantas que puedas revisar fácilmente, en lugar de toda una selva de golpe.",
+      "Elige una meta pequeña, como mantener vivo un pothos tres meses o cultivar albahaca desde semilla.",
+      "Cada planta que pierde una hoja te enseña algo: trata los errores como aprendizaje, no como fracaso."
+     ],
+     "q": "¿Qué meta de jardinería te encantaría alcanzar antes de que acabe el año?",
+     "c": "Hoy escribe una meta pequeña y un paso diminuto que puedas dar esta semana."
+    },
+    "fr": {
+     "t": "Se fixer des objectifs réalistes",
+     "g": "Commence petit, avec quelques plantes, pour que la réussite nourrisse ta confiance.",
+     "p": [
+      "Commence par trois à cinq plantes faciles à surveiller, plutôt qu'une jungle entière d'un coup.",
+      "Choisis un petit objectif, comme garder un pothos vivant trois mois ou faire pousser du basilic à partir de graines.",
+      "Chaque plante qui perd une feuille t'apprend quelque chose : les erreurs sont des leçons, pas des échecs."
+     ],
+     "q": "Quel objectif de jardinage aimerais-tu atteindre d'ici la fin de l'année ?",
+     "c": "Aujourd'hui, écris un petit objectif et une toute petite étape à faire cette semaine."
+    },
+    "it": {
+     "t": "Darsi obiettivi realistici",
+     "g": "Inizia in piccolo con poche piante, così il successo rafforza la tua fiducia.",
+     "p": [
+      "Parti con tre-cinque piante che puoi controllare facilmente, invece di un'intera giungla in una volta.",
+      "Scegli un piccolo obiettivo, come tenere in vita un pothos per tre mesi o far crescere basilico dai semi.",
+      "Ogni pianta che perde una foglia ti insegna qualcosa: gli errori sono apprendimento, non fallimento."
+     ],
+     "q": "Quale obiettivo di giardinaggio ti piacerebbe raggiungere entro fine anno?",
+     "c": "Oggi scrivi un piccolo obiettivo e un minuscolo passo da fare questa settimana."
+    },
+    "pt": {
+     "t": "Definir metas realistas",
+     "g": "Começa pequeno com poucas plantas, para o sucesso aumentar a tua confiança.",
+     "p": [
+      "Começa com três a cinco plantas que consigas vigiar facilmente, em vez de uma selva inteira de uma vez.",
+      "Escolhe uma meta pequena, como manter uma jiboia viva três meses ou cultivar manjericão de semente.",
+      "Cada planta que perde uma folha ensina-te algo: trata os erros como aprendizagem, não como falhanço."
+     ],
+     "q": "Que meta de jardinagem adorarias alcançar até ao fim do ano?",
+     "c": "Hoje escreve uma meta pequena e um passo minúsculo que possas dar esta semana."
+    },
+    "pt_BR": {
+     "t": "Definindo metas realistas",
+     "g": "Comece pequeno com poucas plantas, para o sucesso aumentar sua confiança.",
+     "p": [
+      "Comece com três a cinco plantas que você consiga vigiar fácil, em vez de uma selva inteira de uma vez.",
+      "Escolha uma meta pequena, como manter uma jiboia viva por três meses ou cultivar manjericão de semente.",
+      "Cada planta que perde uma folha ensina algo: trate os erros como aprendizado, não como fracasso."
+     ],
+     "q": "Que meta de jardinagem você adoraria alcançar até o fim do ano?",
+     "c": "Hoje escreva uma meta pequena e um passo mínimo que possa dar esta semana."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month",
+     "g": "Look back at what you learned about light, water, soil and pots.",
+     "p": [
+      "You now know the five basics, how to read light, and why drainage and potting mix matter.",
+      "You can do the finger test, spot over- and underwatering and water at a good time of day.",
+      "You know to check pets, wear gloves, quarantine new plants and keep a journal."
+     ],
+     "q": "Which lesson from this month changed how you care for plants the most?",
+     "c": "Today, reread your plant journal and pick one habit you will keep every week."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Monat",
+     "g": "Blicke zurück auf Licht, Wasser, Erde und Töpfe, die du gelernt hast.",
+     "p": [
+      "Du kennst jetzt die fünf Grundlagen, das Lesen von Licht und warum Drainage und Blumenerde wichtig sind.",
+      "Du kannst den Fingertest, erkennst zu viel und zu wenig Wasser und gießt zur guten Tageszeit.",
+      "Du denkst an Haustiere, Handschuhe, Quarantäne für Neuzugänge und ein Pflanzentagebuch."
+     ],
+     "q": "Welche Lektion dieses Monats hat deine Pflanzenpflege am meisten verändert?",
+     "c": "Lies heute dein Pflanzentagebuch noch einmal und wähle eine Gewohnheit, die du jede Woche beibehältst."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes",
+     "g": "Repasa lo aprendido sobre luz, agua, tierra y macetas.",
+     "p": [
+      "Ya conoces las cinco bases, cómo leer la luz y por qué importan el drenaje y el sustrato.",
+      "Sabes hacer la prueba del dedo, detectar exceso y falta de riego y regar a buena hora.",
+      "Sabes revisar mascotas, usar guantes, poner en cuarentena plantas nuevas y llevar un diario."
+     ],
+     "q": "¿Qué lección de este mes cambió más tu forma de cuidar las plantas?",
+     "c": "Hoy relee tu diario de plantas y elige un hábito que mantendrás cada semana."
+    },
+    "fr": {
+     "t": "Bilan : ton premier mois",
+     "g": "Reviens sur ce que tu as appris sur la lumière, l'eau, la terre et les pots.",
+     "p": [
+      "Tu connais les cinq bases, la lecture de la lumière, et l'importance du drainage et du terreau.",
+      "Tu sais faire le test du doigt, repérer trop ou trop peu d'eau et arroser au bon moment.",
+      "Tu sais vérifier les animaux, porter des gants, mettre en quarantaine les nouvelles plantes et tenir un journal."
+     ],
+     "q": "Quelle leçon de ce mois a le plus changé ta façon de soigner les plantes ?",
+     "c": "Aujourd'hui, relis ton journal et choisis une habitude à garder chaque semaine."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese",
+     "g": "Ripercorri ciò che hai imparato su luce, acqua, terra e vasi.",
+     "p": [
+      "Ora conosci le cinque basi, come leggere la luce e perché drenaggio e terriccio contano.",
+      "Sai fare il test del dito, riconoscere troppa e poca acqua e annaffiare nel momento giusto.",
+      "Sai controllare gli animali, usare i guanti, tenere in quarantena le piante nuove e fare un diario."
+     ],
+     "q": "Quale lezione di questo mese ha cambiato di più il tuo modo di curare le piante?",
+     "c": "Oggi rileggi il diario delle piante e scegli un'abitudine da mantenere ogni settimana."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês",
+     "g": "Revê o que aprendeste sobre luz, água, terra e vasos.",
+     "p": [
+      "Já conheces as cinco bases, como ler a luz e porque importam a drenagem e o substrato.",
+      "Sabes fazer o teste do dedo, detetar excesso e falta de rega e regar à hora certa.",
+      "Sabes verificar animais, usar luvas, pôr plantas novas em quarentena e manter um diário."
+     ],
+     "q": "Que lição deste mês mais mudou a forma como cuidas das plantas?",
+     "c": "Hoje relê o teu diário de plantas e escolhe um hábito que manterás todas as semanas."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês",
+     "g": "Revise o que aprendeu sobre luz, água, terra e vasos.",
+     "p": [
+      "Agora você conhece as cinco bases, como ler a luz e por que drenagem e substrato importam.",
+      "Você sabe fazer o teste do dedo, detectar excesso e falta de rega e regar na hora certa.",
+      "Você sabe checar animais, usar luvas, pôr plantas novas em quarentena e manter um diário."
+     ],
+     "q": "Que lição deste mês mais mudou sua forma de cuidar das plantas?",
+     "c": "Hoje releia seu diário de plantas e escolha um hábito que manterá toda semana."
+    }
+   }
+  }
+ ]
+}

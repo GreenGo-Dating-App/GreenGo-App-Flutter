@@ -1,0 +1,835 @@
+{
+ "topic": "habits",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Environment shapes behaviour",
+     "g": "See how your spaces make some actions easier than others.",
+     "p": [
+      "Your surroundings quietly nudge what you do next.",
+      "A fruit bowl on the counter invites fruit; a sofa invites sitting.",
+      "Small changes to a room can beat a lot of willpower."
+     ],
+     "q": "Which spot in your home most shapes what you do there?",
+     "c": "Look around one room and name one thing that helps or hinders a habit."
+    },
+    "de": {
+     "t": "Umgebung prägt Verhalten",
+     "g": "Sehen, wie deine Räume manche Handlungen leichter machen als andere.",
+     "p": [
+      "Deine Umgebung lenkt leise, was du als Nächstes tust.",
+      "Eine Obstschale lädt zu Obst ein, ein Sofa zum Sitzen.",
+      "Kleine Änderungen im Raum schlagen oft viel Willenskraft."
+     ],
+     "q": "Welcher Ort in deinem Zuhause prägt am meisten, was du dort tust?",
+     "c": "Sieh dich in einem Raum um und nenne eine Sache, die eine Gewohnheit fördert oder bremst."
+    },
+    "es": {
+     "t": "El entorno moldea la conducta",
+     "g": "Ver cómo tus espacios facilitan unas acciones más que otras.",
+     "p": [
+      "Tu entorno empuja en silencio lo que haces después.",
+      "Un frutero en la encimera invita a la fruta; un sofá, a sentarse.",
+      "Pequeños cambios en una habitación pueden superar mucha fuerza de voluntad."
+     ],
+     "q": "¿Qué rincón de tu casa más influye en lo que haces allí?",
+     "c": "Mira una habitación y nombra algo que ayude o estorbe a un hábito."
+    },
+    "fr": {
+     "t": "L'environnement façonne le comportement",
+     "g": "Voir comment tes espaces facilitent certaines actions plus que d'autres.",
+     "p": [
+      "Ton cadre pousse discrètement ce que tu fais ensuite.",
+      "Une corbeille de fruits invite aux fruits, un canapé invite à s'asseoir.",
+      "De petits changements dans une pièce valent souvent beaucoup de volonté."
+     ],
+     "q": "Quel endroit de ta maison influence le plus ce que tu y fais ?",
+     "c": "Regarde une pièce et nomme une chose qui aide ou freine une habitude."
+    },
+    "it": {
+     "t": "L'ambiente plasma il comportamento",
+     "g": "Vedere come i tuoi spazi rendono alcune azioni più facili di altre.",
+     "p": [
+      "Ciò che ti circonda orienta in silenzio ciò che fai dopo.",
+      "Una fruttiera sul piano invita alla frutta, un divano a sedersi.",
+      "Piccoli cambiamenti in una stanza possono valere più di tanta forza di volontà."
+     ],
+     "q": "Quale angolo di casa influenza di più ciò che fai lì?",
+     "c": "Guarda una stanza e indica una cosa che aiuta o ostacola un'abitudine."
+    },
+    "pt": {
+     "t": "O ambiente molda o comportamento",
+     "g": "Ver como os teus espaços facilitam umas ações mais do que outras.",
+     "p": [
+      "O que te rodeia empurra em silêncio o que fazes a seguir.",
+      "Uma fruteira na bancada convida à fruta; um sofá, a sentar.",
+      "Pequenas mudanças numa divisão podem valer mais do que muita força de vontade."
+     ],
+     "q": "Que canto da tua casa mais influencia o que fazes lá?",
+     "c": "Olha para uma divisão e nomeia algo que ajude ou atrapalhe um hábito."
+    },
+    "pt_BR": {
+     "t": "O ambiente molda o comportamento",
+     "g": "Ver como seus espaços facilitam umas ações mais que outras.",
+     "p": [
+      "O que está ao seu redor empurra em silêncio o que você faz depois.",
+      "Uma fruteira na bancada convida à fruta; um sofá, a sentar.",
+      "Pequenas mudanças num cômodo podem valer mais que muita força de vontade."
+     ],
+     "q": "Que canto da sua casa mais influencia o que você faz lá?",
+     "c": "Olhe um cômodo e aponte algo que ajuda ou atrapalha um hábito."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Make it obvious",
+     "g": "Place visual cues for good habits where you will see them.",
+     "p": [
+      "What you see, you tend to do.",
+      "Put your water bottle on your desk and your book on your pillow.",
+      "Cues work best when they sit right in your path."
+     ],
+     "q": "Where could a visual reminder help your habit most?",
+     "c": "Place one visible cue for your habit where you will notice it today."
+    },
+    "de": {
+     "t": "Mach es sichtbar",
+     "g": "Visuelle Hinweise für gute Gewohnheiten dort platzieren, wo du sie siehst.",
+     "p": [
+      "Was du siehst, tust du eher.",
+      "Stell die Wasserflasche auf den Schreibtisch und das Buch aufs Kissen.",
+      "Hinweise wirken am besten direkt auf deinem Weg."
+     ],
+     "q": "Wo würde dir eine sichtbare Erinnerung am meisten helfen?",
+     "c": "Platziere heute einen sichtbaren Hinweis für deine Gewohnheit, wo du ihn bemerkst."
+    },
+    "es": {
+     "t": "Hazlo evidente",
+     "g": "Colocar señales visuales de buenos hábitos donde las veas.",
+     "p": [
+      "Lo que ves, tiendes a hacerlo.",
+      "Pon la botella de agua en tu escritorio y el libro sobre la almohada.",
+      "Las señales funcionan mejor justo en tu camino."
+     ],
+     "q": "¿Dónde te ayudaría más un recordatorio visual para tu hábito?",
+     "c": "Coloca hoy una señal visible de tu hábito donde la notes."
+    },
+    "fr": {
+     "t": "Rends-le évident",
+     "g": "Placer des repères visuels pour les bonnes habitudes là où tu les verras.",
+     "p": [
+      "Ce que tu vois, tu as tendance à le faire.",
+      "Pose ta gourde sur ton bureau et ton livre sur ton oreiller.",
+      "Les repères marchent mieux sur ton chemin habituel."
+     ],
+     "q": "Où un rappel visuel aiderait-il le plus ton habitude ?",
+     "c": "Place aujourd'hui un repère visible pour ton habitude là où tu le remarqueras."
+    },
+    "it": {
+     "t": "Rendilo evidente",
+     "g": "Mettere segnali visivi per le buone abitudini dove li vedrai.",
+     "p": [
+      "Ciò che vedi, tendi a farlo.",
+      "Metti la borraccia sulla scrivania e il libro sul cuscino.",
+      "I segnali funzionano meglio proprio lungo il tuo percorso."
+     ],
+     "q": "Dove ti aiuterebbe di più un promemoria visivo per la tua abitudine?",
+     "c": "Metti oggi un segnale visibile per la tua abitudine dove lo noterai."
+    },
+    "pt": {
+     "t": "Torna-o evidente",
+     "g": "Pôr sinais visuais dos bons hábitos onde os vejas.",
+     "p": [
+      "O que vês, tendes a fazer.",
+      "Põe a garrafa de água na secretária e o livro na almofada.",
+      "Os sinais funcionam melhor mesmo no teu caminho."
+     ],
+     "q": "Onde te ajudaria mais um lembrete visual para o teu hábito?",
+     "c": "Coloca hoje um sinal visível do teu hábito onde o notes."
+    },
+    "pt_BR": {
+     "t": "Deixe evidente",
+     "g": "Colocar sinais visuais dos bons hábitos onde você veja.",
+     "p": [
+      "O que você vê, você tende a fazer.",
+      "Ponha a garrafa d'água na mesa e o livro no travesseiro.",
+      "Os sinais funcionam melhor bem no seu caminho."
+     ],
+     "q": "Onde um lembrete visual ajudaria mais o seu hábito?",
+     "c": "Coloque hoje um sinal visível do seu hábito onde você note."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Make it easy",
+     "g": "Remove small obstacles so good habits take less effort.",
+     "p": [
+      "Every extra step before a habit makes it less likely.",
+      "Lay out your workout clothes or keep a guitar on a stand.",
+      "Ask: what is the smallest thing slowing me down?"
+     ],
+     "q": "What small obstacle keeps getting between you and your habit?",
+     "c": "Remove one tiny obstacle from your habit today."
+    },
+    "de": {
+     "t": "Mach es leicht",
+     "g": "Kleine Hürden entfernen, damit gute Gewohnheiten weniger Mühe kosten.",
+     "p": [
+      "Jeder Zusatzschritt vor einer Gewohnheit macht sie unwahrscheinlicher.",
+      "Leg die Sportkleidung bereit oder stell die Gitarre auf einen Ständer.",
+      "Frage: Was bremst mich am meisten, wenn auch nur ein bisschen?"
+     ],
+     "q": "Welche kleine Hürde steht immer zwischen dir und deiner Gewohnheit?",
+     "c": "Entferne heute eine winzige Hürde vor deiner Gewohnheit."
+    },
+    "es": {
+     "t": "Hazlo fácil",
+     "g": "Quitar pequeños obstáculos para que los buenos hábitos cuesten menos.",
+     "p": [
+      "Cada paso extra antes de un hábito lo hace menos probable.",
+      "Deja lista la ropa deportiva o ten la guitarra en un soporte.",
+      "Pregúntate: ¿qué es lo más pequeño que me frena?"
+     ],
+     "q": "¿Qué pequeño obstáculo se interpone siempre entre tú y tu hábito?",
+     "c": "Quita hoy un obstáculo diminuto de tu hábito."
+    },
+    "fr": {
+     "t": "Rends-le facile",
+     "g": "Retirer de petits obstacles pour que les bonnes habitudes demandent moins d'effort.",
+     "p": [
+      "Chaque étape en plus avant une habitude la rend moins probable.",
+      "Prépare ta tenue de sport ou garde ta guitare sur un support.",
+      "Demande-toi : quelle petite chose me ralentit ?"
+     ],
+     "q": "Quel petit obstacle se met toujours entre toi et ton habitude ?",
+     "c": "Retire aujourd'hui un minuscule obstacle devant ton habitude."
+    },
+    "it": {
+     "t": "Rendilo facile",
+     "g": "Eliminare piccoli ostacoli perché le buone abitudini costino meno fatica.",
+     "p": [
+      "Ogni passaggio in più prima di un'abitudine la rende meno probabile.",
+      "Prepara i vestiti per l'allenamento o tieni la chitarra su un supporto.",
+      "Chiediti: qual è la cosa più piccola che mi rallenta?"
+     ],
+     "q": "Quale piccolo ostacolo si mette sempre tra te e la tua abitudine?",
+     "c": "Togli oggi un minuscolo ostacolo davanti alla tua abitudine."
+    },
+    "pt": {
+     "t": "Torna-o fácil",
+     "g": "Tirar pequenos obstáculos para os bons hábitos custarem menos.",
+     "p": [
+      "Cada passo extra antes de um hábito torna-o menos provável.",
+      "Deixa a roupa de treino pronta ou a guitarra num suporte.",
+      "Pergunta: qual é a coisa mais pequena que me trava?"
+     ],
+     "q": "Que pequeno obstáculo se mete sempre entre ti e o teu hábito?",
+     "c": "Tira hoje um obstáculo minúsculo do teu hábito."
+    },
+    "pt_BR": {
+     "t": "Deixe fácil",
+     "g": "Tirar pequenos obstáculos para os bons hábitos custarem menos.",
+     "p": [
+      "Cada passo extra antes de um hábito o torna menos provável.",
+      "Deixe a roupa de treino pronta ou o violão num suporte.",
+      "Pergunte: qual é a coisa mais pequena que me trava?"
+     ],
+     "q": "Que pequeno obstáculo sempre se mete entre você e seu hábito?",
+     "c": "Tire hoje um obstáculo minúsculo do seu hábito."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Make it harder",
+     "g": "Add friction to habits you want to do less often.",
+     "p": [
+      "Extra steps give you a moment to choose again.",
+      "Log out of an app, or keep snacks on a high shelf.",
+      "Friction is a kind helper, not a punishment."
+     ],
+     "q": "Which habit would you like to do a little less?",
+     "c": "Add one small step before a habit you want to reduce."
+    },
+    "de": {
+     "t": "Mach es schwerer",
+     "g": "Hürden vor Gewohnheiten einbauen, die du seltener willst.",
+     "p": [
+      "Zusätzliche Schritte geben dir einen Moment, neu zu entscheiden.",
+      "Melde dich aus einer App ab oder stell Snacks ins obere Regal.",
+      "Reibung ist ein freundlicher Helfer, keine Strafe."
+     ],
+     "q": "Welche Gewohnheit würdest du gern etwas verringern?",
+     "c": "Baue heute einen kleinen Schritt vor eine Gewohnheit, die du reduzieren willst."
+    },
+    "es": {
+     "t": "Hazlo más difícil",
+     "g": "Añadir fricción a los hábitos que quieres hacer menos.",
+     "p": [
+      "Los pasos extra te dan un momento para elegir de nuevo.",
+      "Cierra la sesión de una app o guarda los snacks en un estante alto.",
+      "La fricción es una ayuda amable, no un castigo."
+     ],
+     "q": "¿Qué hábito te gustaría hacer un poco menos?",
+     "c": "Añade hoy un pequeño paso antes de un hábito que quieras reducir."
+    },
+    "fr": {
+     "t": "Rends-le plus difficile",
+     "g": "Ajouter de la friction aux habitudes que tu veux faire moins souvent.",
+     "p": [
+      "Des étapes en plus te laissent un instant pour choisir à nouveau.",
+      "Déconnecte-toi d'une appli ou range les gâteaux sur une étagère haute.",
+      "La friction est une aide bienveillante, pas une punition."
+     ],
+     "q": "Quelle habitude aimerais-tu pratiquer un peu moins ?",
+     "c": "Ajoute aujourd'hui une petite étape avant une habitude à réduire."
+    },
+    "it": {
+     "t": "Rendilo più difficile",
+     "g": "Aggiungere attrito alle abitudini che vuoi fare meno spesso.",
+     "p": [
+      "I passaggi extra ti danno un momento per scegliere di nuovo.",
+      "Esci da un'app oppure metti gli snack su un ripiano alto.",
+      "L'attrito è un aiuto gentile, non una punizione."
+     ],
+     "q": "Quale abitudine vorresti fare un po' meno?",
+     "c": "Aggiungi oggi un piccolo passaggio prima di un'abitudine da ridurre."
+    },
+    "pt": {
+     "t": "Torna-o mais difícil",
+     "g": "Pôr fricção nos hábitos que queres fazer menos vezes.",
+     "p": [
+      "Passos extra dão-te um momento para escolher outra vez.",
+      "Sai da sessão numa aplicação ou guarda os snacks numa prateleira alta.",
+      "A fricção é uma ajuda amiga, não um castigo."
+     ],
+     "q": "Que hábito gostarias de fazer um pouco menos?",
+     "c": "Acrescenta hoje um pequeno passo antes de um hábito que queiras reduzir."
+    },
+    "pt_BR": {
+     "t": "Deixe mais difícil",
+     "g": "Pôr atrito nos hábitos que você quer fazer menos vezes.",
+     "p": [
+      "Passos extras dão um momento para escolher de novo.",
+      "Saia da conta de um app ou guarde os petiscos numa prateleira alta.",
+      "O atrito é uma ajuda amiga, não um castigo."
+     ],
+     "q": "Que hábito você gostaria de fazer um pouco menos?",
+     "c": "Acrescente hoje um pequeno passo antes de um hábito que queira reduzir."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "One space, one use",
+     "g": "Link places to specific activities.",
+     "p": [
+      "Using a place for one purpose makes the habit start itself.",
+      "A reading chair, a work desk, a bed only for sleeping.",
+      "If space is tight, use a cushion, a lamp or a tray as a signal."
+     ],
+     "q": "Which activity deserves its own special spot in your home?",
+     "c": "Choose a spot for one habit and use it only for that today."
+    },
+    "de": {
+     "t": "Ein Ort, ein Zweck",
+     "g": "Orte mit bestimmten Tätigkeiten verknüpfen.",
+     "p": [
+      "Wenn ein Ort einem Zweck dient, startet die Gewohnheit von selbst.",
+      "Ein Lesesessel, ein Arbeitstisch, ein Bett nur zum Schlafen.",
+      "Ist wenig Platz, dienen Kissen, Lampe oder Tablett als Signal."
+     ],
+     "q": "Welche Tätigkeit verdient einen eigenen Platz in deinem Zuhause?",
+     "c": "Wähle einen Platz für eine Gewohnheit und nutze ihn heute nur dafür."
+    },
+    "es": {
+     "t": "Un espacio, un uso",
+     "g": "Vincular lugares a actividades concretas.",
+     "p": [
+      "Usar un lugar para un solo fin hace que el hábito arranque solo.",
+      "Un sillón de lectura, un escritorio de trabajo, una cama solo para dormir.",
+      "Si falta espacio, usa un cojín, una lámpara o una bandeja como señal."
+     ],
+     "q": "¿Qué actividad merece un sitio propio en tu casa?",
+     "c": "Elige un sitio para un hábito y úsalo hoy solo para eso."
+    },
+    "fr": {
+     "t": "Un lieu, un usage",
+     "g": "Associer des lieux à des activités précises.",
+     "p": [
+      "Quand un lieu sert à une seule chose, l'habitude démarre toute seule.",
+      "Un fauteuil de lecture, un bureau de travail, un lit seulement pour dormir.",
+      "Si la place manque, un coussin, une lampe ou un plateau servent de signal."
+     ],
+     "q": "Quelle activité mérite sa place à elle chez toi ?",
+     "c": "Choisis un coin pour une habitude et utilise-le seulement pour elle aujourd'hui."
+    },
+    "it": {
+     "t": "Un posto, un uso",
+     "g": "Collegare i luoghi ad attività precise.",
+     "p": [
+      "Usare un luogo per un solo scopo fa partire l'abitudine da sola.",
+      "Una poltrona per leggere, una scrivania per lavorare, un letto solo per dormire.",
+      "Se lo spazio è poco, usa un cuscino, una lampada o un vassoio come segnale."
+     ],
+     "q": "Quale attività merita un posto tutto suo in casa tua?",
+     "c": "Scegli un posto per un'abitudine e usalo oggi solo per quella."
+    },
+    "pt": {
+     "t": "Um espaço, um uso",
+     "g": "Ligar lugares a atividades específicas.",
+     "p": [
+      "Usar um lugar para um só fim faz o hábito arrancar sozinho.",
+      "Uma poltrona de leitura, uma secretária de trabalho, uma cama só para dormir.",
+      "Se houver pouco espaço, usa uma almofada, um candeeiro ou um tabuleiro como sinal."
+     ],
+     "q": "Que atividade merece um lugar só seu na tua casa?",
+     "c": "Escolhe um lugar para um hábito e usa-o hoje só para isso."
+    },
+    "pt_BR": {
+     "t": "Um espaço, um uso",
+     "g": "Ligar lugares a atividades específicas.",
+     "p": [
+      "Usar um lugar para um só fim faz o hábito começar sozinho.",
+      "Uma poltrona de leitura, uma mesa de trabalho, uma cama só para dormir.",
+      "Se o espaço for pouco, use uma almofada, um abajur ou uma bandeja como sinal."
+     ],
+     "q": "Que atividade merece um cantinho só dela na sua casa?",
+     "c": "Escolha um lugar para um hábito e use só para isso hoje."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Preparing the night before",
+     "g": "Set out what you need so tomorrow's good choices are automatic.",
+     "p": [
+      "Tomorrow-you will thank tonight-you for a little preparation.",
+      "Lay out clothes, pack the bag, fill the water bottle.",
+      "Preparation saves morning energy and reduces rushing."
+     ],
+     "q": "What one thing could you prepare tonight to ease tomorrow?",
+     "c": "Tonight, prepare one item for tomorrow's habit before you go to bed."
+    },
+    "de": {
+     "t": "Am Abend vorbereiten",
+     "g": "Bereitlegen, was du brauchst, damit gute Entscheidungen morgen automatisch laufen.",
+     "p": [
+      "Dein morgiges Ich dankt dem heutigen für etwas Vorbereitung.",
+      "Kleidung bereitlegen, Tasche packen, Wasserflasche füllen.",
+      "Vorbereitung spart Morgenenergie und weniger Hektik."
+     ],
+     "q": "Was könntest du heute Abend vorbereiten, um den Morgen zu erleichtern?",
+     "c": "Bereite heute Abend vor dem Schlafen einen Gegenstand für die Gewohnheit von morgen vor."
+    },
+    "es": {
+     "t": "Prepara la noche anterior",
+     "g": "Dejar listo lo que necesitas para que mañana las buenas decisiones sean automáticas.",
+     "p": [
+      "Tu yo de mañana agradecerá un poco de preparación esta noche.",
+      "Deja la ropa lista, prepara la mochila, llena la botella de agua.",
+      "Preparar ahorra energía por la mañana y reduce las prisas."
+     ],
+     "q": "¿Qué podrías preparar esta noche para facilitar mañana?",
+     "c": "Esta noche prepara una cosa para tu hábito de mañana antes de acostarte."
+    },
+    "fr": {
+     "t": "Préparer la veille",
+     "g": "Préparer ce qu'il te faut pour que demain les bons choix soient automatiques.",
+     "p": [
+      "Le toi de demain remerciera celui de ce soir pour un peu de préparation.",
+      "Sors tes vêtements, prépare ton sac, remplis ta gourde.",
+      "Se préparer économise l'énergie du matin et évite la précipitation."
+     ],
+     "q": "Que pourrais-tu préparer ce soir pour faciliter demain ?",
+     "c": "Ce soir, prépare un objet pour l'habitude de demain avant de dormir."
+    },
+    "it": {
+     "t": "Prepararsi la sera prima",
+     "g": "Preparare ciò che serve perché domani le buone scelte siano automatiche.",
+     "p": [
+      "Il te di domani ringrazierà quello di stasera per un po' di preparazione.",
+      "Prepara i vestiti, la borsa, riempi la borraccia.",
+      "Prepararsi risparmia energia al mattino e riduce la fretta."
+     ],
+     "q": "Cosa potresti preparare stasera per facilitare domani?",
+     "c": "Stasera prepara una cosa per l'abitudine di domani prima di dormire."
+    },
+    "pt": {
+     "t": "Preparar na véspera",
+     "g": "Deixar pronto o que precisas para as boas escolhas de amanhã serem automáticas.",
+     "p": [
+      "O teu eu de amanhã vai agradecer um pouco de preparação esta noite.",
+      "Deixa a roupa pronta, faz a mochila, enche a garrafa de água.",
+      "Preparar poupa energia de manhã e reduz a pressa."
+     ],
+     "q": "O que poderias preparar esta noite para facilitar amanhã?",
+     "c": "Esta noite prepara uma coisa para o teu hábito de amanhã antes de dormir."
+    },
+    "pt_BR": {
+     "t": "Preparar na véspera",
+     "g": "Deixar pronto o que você precisa para as boas escolhas de amanhã serem automáticas.",
+     "p": [
+      "O você de amanhã vai agradecer um pouco de preparação esta noite.",
+      "Deixe a roupa separada, arrume a mochila, encha a garrafa d'água.",
+      "Preparar poupa energia de manhã e reduz a correria."
+     ],
+     "q": "O que você poderia preparar esta noite para facilitar amanhã?",
+     "c": "Esta noite prepare uma coisa para o seu hábito de amanhã antes de dormir."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The power of defaults",
+     "g": "Change the default so the good choice comes first.",
+     "p": [
+      "People usually pick whatever is easiest and nearest.",
+      "Keep a water jug on the table and snacks out of sight.",
+      "Defaults work quietly, with no daily effort."
+     ],
+     "q": "What default in your home could you flip to help a habit?",
+     "c": "Change one default today, like moving a healthy item to the front."
+    },
+    "de": {
+     "t": "Die Macht der Voreinstellung",
+     "g": "Die Voreinstellung ändern, damit die gute Wahl zuerst kommt.",
+     "p": [
+      "Menschen wählen meist, was am leichtesten und nächsten ist.",
+      "Stell eine Wasserkaraffe auf den Tisch und Snacks außer Sicht.",
+      "Voreinstellungen wirken leise, ganz ohne tägliche Mühe."
+     ],
+     "q": "Welche Voreinstellung zu Hause könntest du umdrehen, um eine Gewohnheit zu stützen?",
+     "c": "Ändere heute eine Voreinstellung, etwa ein gesundes Produkt nach vorn zu stellen."
+    },
+    "es": {
+     "t": "El poder de lo predeterminado",
+     "g": "Cambiar lo predeterminado para que la buena opción vaya primero.",
+     "p": [
+      "La gente suele elegir lo más fácil y cercano.",
+      "Pon una jarra de agua en la mesa y los snacks fuera de la vista.",
+      "Lo predeterminado funciona en silencio, sin esfuerzo diario."
+     ],
+     "q": "¿Qué opción predeterminada de tu casa podrías cambiar para ayudar a un hábito?",
+     "c": "Cambia hoy una opción predeterminada, como poner algo sano al frente."
+    },
+    "fr": {
+     "t": "Le pouvoir des options par défaut",
+     "g": "Changer le choix par défaut pour que le bon choix passe en premier.",
+     "p": [
+      "On choisit en général ce qui est le plus facile et le plus proche.",
+      "Mets une carafe d'eau sur la table et les gâteaux hors de vue.",
+      "Le choix par défaut agit en silence, sans effort quotidien."
+     ],
+     "q": "Quel réglage par défaut chez toi pourrais-tu inverser pour aider une habitude ?",
+     "c": "Change aujourd'hui un réglage par défaut, par exemple en avançant un aliment sain."
+    },
+    "it": {
+     "t": "Il potere delle impostazioni predefinite",
+     "g": "Cambiare l'impostazione predefinita perché la scelta buona venga prima.",
+     "p": [
+      "Di solito si sceglie ciò che è più facile e vicino.",
+      "Metti una caraffa d'acqua in tavola e gli snack fuori vista.",
+      "Le impostazioni predefinite agiscono in silenzio, senza fatica quotidiana."
+     ],
+     "q": "Quale impostazione predefinita di casa potresti invertire per aiutare un'abitudine?",
+     "c": "Cambia oggi un'impostazione predefinita, come mettere in primo piano un alimento sano."
+    },
+    "pt": {
+     "t": "O poder das predefinições",
+     "g": "Mudar a opção predefinida para a boa escolha vir primeiro.",
+     "p": [
+      "As pessoas costumam escolher o que é mais fácil e mais perto.",
+      "Põe uma jarra de água na mesa e os snacks fora da vista.",
+      "As predefinições atuam em silêncio, sem esforço diário."
+     ],
+     "q": "Que predefinição em casa poderias inverter para ajudar um hábito?",
+     "c": "Muda hoje uma predefinição, como pôr algo saudável à frente."
+    },
+    "pt_BR": {
+     "t": "O poder do padrão",
+     "g": "Mudar a opção padrão para a boa escolha vir primeiro.",
+     "p": [
+      "As pessoas costumam escolher o que é mais fácil e mais perto.",
+      "Ponha uma jarra d'água na mesa e os petiscos fora da vista.",
+      "O padrão age em silêncio, sem esforço diário."
+     ],
+     "q": "Que padrão da sua casa você poderia inverter para ajudar um hábito?",
+     "c": "Mude hoje um padrão, como pôr algo saudável na frente."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Designing your kitchen for habits",
+     "g": "Arrange food, water and tools to support your habits.",
+     "p": [
+      "Put healthy food at eye level and in clear containers.",
+      "Keep a water glass next to the sink and a kettle ready.",
+      "Store tools you use daily within arm's reach."
+     ],
+     "q": "What would make your kitchen friendlier for your habits?",
+     "c": "Move one helpful item to the front of your kitchen today."
+    },
+    "de": {
+     "t": "Deine Küche für Gewohnheiten gestalten",
+     "g": "Essen, Wasser und Geräte so ordnen, dass sie deine Gewohnheiten stützen.",
+     "p": [
+      "Stell Gesundes auf Augenhöhe und in durchsichtige Behälter.",
+      "Halte ein Wasserglas neben dem Spülbecken und den Wasserkocher bereit.",
+      "Lagere täglich genutzte Dinge in Griffweite."
+     ],
+     "q": "Was würde deine Küche für deine Gewohnheiten freundlicher machen?",
+     "c": "Stell heute einen hilfreichen Gegenstand in der Küche nach vorn."
+    },
+    "es": {
+     "t": "Diseña tu cocina para tus hábitos",
+     "g": "Organizar comida, agua y utensilios para apoyar tus hábitos.",
+     "p": [
+      "Pon lo sano a la altura de los ojos y en recipientes transparentes.",
+      "Deja un vaso de agua junto al fregadero y el hervidor listo.",
+      "Guarda al alcance de la mano lo que usas a diario."
+     ],
+     "q": "¿Qué haría tu cocina más amable con tus hábitos?",
+     "c": "Mueve hoy un objeto útil al frente de tu cocina."
+    },
+    "fr": {
+     "t": "Aménager ta cuisine pour tes habitudes",
+     "g": "Ranger aliments, eau et outils pour soutenir tes habitudes.",
+     "p": [
+      "Place les aliments sains à hauteur d'yeux, dans des boîtes transparentes.",
+      "Garde un verre d'eau près de l'évier et la bouilloire prête.",
+      "Range à portée de main ce que tu utilises chaque jour."
+     ],
+     "q": "Qu'est-ce qui rendrait ta cuisine plus favorable à tes habitudes ?",
+     "c": "Avance aujourd'hui un objet utile à l'avant de ta cuisine."
+    },
+    "it": {
+     "t": "Progetta la cucina per le tue abitudini",
+     "g": "Disporre cibo, acqua e utensili per sostenere le tue abitudini.",
+     "p": [
+      "Metti i cibi sani all'altezza degli occhi e in contenitori trasparenti.",
+      "Tieni un bicchiere d'acqua vicino al lavello e il bollitore pronto.",
+      "Tieni a portata di mano ciò che usi ogni giorno."
+     ],
+     "q": "Cosa renderebbe la tua cucina più amica delle tue abitudini?",
+     "c": "Sposta oggi un oggetto utile in primo piano nella tua cucina."
+    },
+    "pt": {
+     "t": "Desenha a tua cozinha para os hábitos",
+     "g": "Organizar comida, água e utensílios para apoiar os teus hábitos.",
+     "p": [
+      "Põe o saudável à altura dos olhos e em recipientes transparentes.",
+      "Deixa um copo de água junto ao lava-loiça e a chaleira pronta.",
+      "Guarda ao alcance da mão o que usas todos os dias."
+     ],
+     "q": "O que tornaria a tua cozinha mais amiga dos teus hábitos?",
+     "c": "Move hoje um objeto útil para a frente da tua cozinha."
+    },
+    "pt_BR": {
+     "t": "Desenhe sua cozinha para os hábitos",
+     "g": "Organizar comida, água e utensílios para apoiar seus hábitos.",
+     "p": [
+      "Ponha o saudável na altura dos olhos e em potes transparentes.",
+      "Deixe um copo d'água perto da pia e a chaleira pronta.",
+      "Guarde ao alcance da mão o que você usa todo dia."
+     ],
+     "q": "O que deixaria sua cozinha mais amiga dos seus hábitos?",
+     "c": "Mova hoje um objeto útil para a frente da sua cozinha."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Designing your phone for habits",
+     "g": "Arrange apps and notifications so your phone supports you.",
+     "p": [
+      "Move distracting apps off your first screen.",
+      "Turn off notifications you do not need, keep the ones you do.",
+      "Put helpful apps, like a notes or a habit app, within easy reach."
+     ],
+     "q": "Which app do you open most without really meaning to?",
+     "c": "Move one distracting app away and one helpful app to your first screen."
+    },
+    "de": {
+     "t": "Dein Handy für Gewohnheiten gestalten",
+     "g": "Apps und Benachrichtigungen so ordnen, dass dein Handy dich unterstützt.",
+     "p": [
+      "Verschiebe ablenkende Apps vom ersten Bildschirm.",
+      "Schalte unnötige Benachrichtigungen aus und behalte die wichtigen.",
+      "Platziere hilfreiche Apps, etwa Notizen oder Gewohnheits-App, griffbereit."
+     ],
+     "q": "Welche App öffnest du am häufigsten, ohne es wirklich zu wollen?",
+     "c": "Verschiebe heute eine ablenkende App weg und eine hilfreiche auf den ersten Bildschirm."
+    },
+    "es": {
+     "t": "Diseña tu móvil para tus hábitos",
+     "g": "Organizar apps y notificaciones para que el móvil te apoye.",
+     "p": [
+      "Saca las apps que distraen de la primera pantalla.",
+      "Desactiva las notificaciones que no necesitas y deja las útiles.",
+      "Pon a mano apps útiles, como notas o una app de hábitos."
+     ],
+     "q": "¿Qué app abres más sin querer realmente?",
+     "c": "Aleja hoy una app que distrae y pon una útil en tu primera pantalla."
+    },
+    "fr": {
+     "t": "Configurer ton téléphone pour tes habitudes",
+     "g": "Organiser applis et notifications pour que ton téléphone te soutienne.",
+     "p": [
+      "Retire les applis distrayantes de ton premier écran.",
+      "Coupe les notifications inutiles et garde celles qui comptent.",
+      "Place sous la main les applis utiles, comme les notes ou le suivi d'habitudes."
+     ],
+     "q": "Quelle appli ouvres-tu le plus sans vraiment le vouloir ?",
+     "c": "Éloigne aujourd'hui une appli distrayante et avance une appli utile sur ton premier écran."
+    },
+    "it": {
+     "t": "Organizza il telefono per le abitudini",
+     "g": "Disporre app e notifiche perché il telefono ti sostenga.",
+     "p": [
+      "Togli le app che distraggono dalla prima schermata.",
+      "Disattiva le notifiche inutili e tieni quelle importanti.",
+      "Metti a portata le app utili, come note o un'app per le abitudini."
+     ],
+     "q": "Quale app apri di più senza volerlo davvero?",
+     "c": "Allontana oggi un'app che distrae e porta un'app utile nella prima schermata."
+    },
+    "pt": {
+     "t": "Organiza o telemóvel para os hábitos",
+     "g": "Organizar aplicações e notificações para o telemóvel te apoiar.",
+     "p": [
+      "Tira as aplicações que distraem do primeiro ecrã.",
+      "Desativa as notificações de que não precisas e mantém as úteis.",
+      "Põe à mão aplicações úteis, como notas ou uma app de hábitos."
+     ],
+     "q": "Que aplicação abres mais sem realmente querer?",
+     "c": "Afasta hoje uma aplicação que distrai e põe uma útil no primeiro ecrã."
+    },
+    "pt_BR": {
+     "t": "Organize o celular para os hábitos",
+     "g": "Organizar apps e notificações para o celular apoiar você.",
+     "p": [
+      "Tire os apps que distraem da primeira tela.",
+      "Desative as notificações de que não precisa e mantenha as úteis.",
+      "Deixe à mão apps úteis, como notas ou um app de hábitos."
+     ],
+     "q": "Que app você abre mais sem realmente querer?",
+     "c": "Afaste hoje um app que distrai e ponha um útil na primeira tela."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Month one review",
+     "g": "Review loops, tiny habits and environment, then choose what to keep.",
+     "p": [
+      "Look back at the habit loop, tiny starts and space design.",
+      "Notice which ideas gave you the most ease.",
+      "Keep what works, drop what does not, and be kind to yourself."
+     ],
+     "q": "What was your biggest win in this first month?",
+     "c": "Write three things to keep and one thing to change for month two."
+    },
+    "de": {
+     "t": "Rückblick auf Monat eins",
+     "g": "Schleifen, kleine Starts und Umgebung prüfen und entscheiden, was bleibt.",
+     "p": [
+      "Schau auf Gewohnheitsschleife, winzige Starts und Raumgestaltung zurück.",
+      "Bemerke, welche Ideen dir am meisten Leichtigkeit gebracht haben.",
+      "Behalte, was funktioniert, lass los, was nicht, und sei freundlich zu dir."
+     ],
+     "q": "Was war dein größter Erfolg in diesem ersten Monat?",
+     "c": "Schreibe drei Dinge zum Behalten und eine Änderung für Monat zwei auf."
+    },
+    "es": {
+     "t": "Repaso del primer mes",
+     "g": "Revisar bucles, hábitos diminutos y entorno, y elegir qué conservar.",
+     "p": [
+      "Mira atrás: el bucle del hábito, los inicios pequeños y el diseño del espacio.",
+      "Fíjate en qué ideas te dieron más facilidad.",
+      "Conserva lo que funciona, suelta lo que no y sé amable contigo."
+     ],
+     "q": "¿Cuál fue tu mayor logro en este primer mes?",
+     "c": "Escribe tres cosas para conservar y una para cambiar en el mes dos."
+    },
+    "fr": {
+     "t": "Bilan du premier mois",
+     "g": "Revoir boucles, petites habitudes et environnement, puis choisir quoi garder.",
+     "p": [
+      "Reviens sur la boucle d'habitude, les petits départs et l'aménagement des lieux.",
+      "Repère les idées qui t'ont apporté le plus de facilité.",
+      "Garde ce qui marche, laisse le reste et sois bienveillant avec toi."
+     ],
+     "q": "Quelle a été ta plus belle réussite ce premier mois ?",
+     "c": "Écris trois choses à garder et une à changer pour le mois deux."
+    },
+    "it": {
+     "t": "Bilancio del primo mese",
+     "g": "Rivedere cicli, abitudini minuscole e ambiente, poi scegliere cosa tenere.",
+     "p": [
+      "Ripensa al ciclo dell'abitudine, agli inizi piccoli e al design degli spazi.",
+      "Nota quali idee ti hanno dato più facilità.",
+      "Tieni ciò che funziona, lascia ciò che no e sii gentile con te stesso."
+     ],
+     "q": "Qual è stato il tuo successo più grande in questo primo mese?",
+     "c": "Scrivi tre cose da tenere e una da cambiare per il secondo mese."
+    },
+    "pt": {
+     "t": "Balanço do primeiro mês",
+     "g": "Rever ciclos, hábitos minúsculos e ambiente, e escolher o que manter.",
+     "p": [
+      "Olha para trás: o ciclo do hábito, os inícios pequenos e o desenho do espaço.",
+      "Repara em que ideias te deram mais facilidade.",
+      "Mantém o que funciona, larga o que não, e sê gentil contigo."
+     ],
+     "q": "Qual foi a tua maior vitória neste primeiro mês?",
+     "c": "Escreve três coisas a manter e uma a mudar no mês dois."
+    },
+    "pt_BR": {
+     "t": "Balanço do primeiro mês",
+     "g": "Rever ciclos, hábitos minúsculos e ambiente, e escolher o que manter.",
+     "p": [
+      "Olhe para trás: o ciclo do hábito, os começos pequenos e o desenho do espaço.",
+      "Perceba quais ideias deram mais facilidade a você.",
+      "Mantenha o que funciona, largue o que não, e seja gentil consigo."
+     ],
+     "q": "Qual foi a sua maior vitória neste primeiro mês?",
+     "c": "Escreva três coisas para manter e uma para mudar no mês dois."
+    }
+   }
+  }
+ ]
+}

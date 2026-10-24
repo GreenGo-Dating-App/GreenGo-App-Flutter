@@ -1,0 +1,835 @@
+{
+ "topic": "philosophy",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What makes a good life?",
+     "g": "Explore eudaimonia: flourishing as a person, not only feeling good.",
+     "p": [
+      "Eudaimonia is Aristotle's word for a life that goes well as a whole.",
+      "It comes from using our abilities well, especially reason, in good company.",
+      "The virtues from earlier days are the building blocks of flourishing."
+     ],
+     "q": "When have you felt you were truly flourishing, not just having fun?",
+     "c": "Write one activity that makes you feel more fully yourself and plan it this week."
+    },
+    "de": {
+     "t": "Was macht ein gutes Leben aus?",
+     "g": "Entdecke Eudaimonia: als Mensch aufblühen, nicht nur sich gut fühlen.",
+     "p": [
+      "Eudaimonia ist Aristoteles' Wort für ein Leben, das als Ganzes gelingt.",
+      "Es entsteht, wenn wir unsere Fähigkeiten gut nutzen, besonders die Vernunft, in guter Gesellschaft.",
+      "Die Tugenden der letzten Tage sind die Bausteine dieses Aufblühens."
+     ],
+     "q": "Wann hattest du das Gefühl, wirklich aufzublühen, nicht nur Spaß zu haben?",
+     "c": "Notiere eine Tätigkeit, bei der du ganz du selbst bist, und plane sie für diese Woche."
+    },
+    "es": {
+     "t": "¿Qué hace buena una vida?",
+     "g": "Explora la eudaimonía: florecer como persona, no solo sentirse bien.",
+     "p": [
+      "Eudaimonía es la palabra de Aristóteles para una vida que va bien en su conjunto.",
+      "Surge de usar bien nuestras capacidades, sobre todo la razón, en buena compañía.",
+      "Las virtudes de días anteriores son los ladrillos de ese florecer."
+     ],
+     "q": "¿Cuándo sentiste que de verdad florecías, no solo que te divertías?",
+     "c": "Escribe una actividad que te haga sentir más tú y planéala esta semana."
+    },
+    "fr": {
+     "t": "Qu'est-ce qu'une bonne vie ?",
+     "g": "Explorer l'eudaimonia : s'épanouir en tant que personne, pas seulement se sentir bien.",
+     "p": [
+      "L'eudaimonia est le mot d'Aristote pour une vie réussie dans son ensemble.",
+      "Elle vient du bon usage de nos capacités, surtout la raison, en bonne compagnie.",
+      "Les vertus vues ces derniers jours sont les briques de cet épanouissement."
+     ],
+     "q": "Quand t'es-tu senti vraiment épanoui, pas seulement amusé ?",
+     "c": "Note une activité qui te rend pleinement toi-même et prévois-la cette semaine."
+    },
+    "it": {
+     "t": "Che cosa rende buona una vita?",
+     "g": "Esplorare l'eudaimonia: fiorire come persona, non solo stare bene.",
+     "p": [
+      "Eudaimonia è la parola di Aristotele per una vita riuscita nel suo insieme.",
+      "Nasce dall'usare bene le nostre capacità, soprattutto la ragione, in buona compagnia.",
+      "Le virtù dei giorni scorsi sono i mattoni di questa fioritura."
+     ],
+     "q": "Quando ti sei sentito davvero fiorire, non solo divertirti?",
+     "c": "Scrivi un'attività che ti fa sentire più te stesso e programmala questa settimana."
+    },
+    "pt": {
+     "t": "O que torna uma vida boa?",
+     "g": "Explorar a eudaimonia: florescer como pessoa, não apenas sentir-se bem.",
+     "p": [
+      "Eudaimonia é a palavra de Aristóteles para uma vida que corre bem no seu todo.",
+      "Nasce de usarmos bem as nossas capacidades, sobretudo a razão, em boa companhia.",
+      "As virtudes dos dias anteriores são os tijolos desse florescer."
+     ],
+     "q": "Quando sentiste que estavas mesmo a florescer, e não só a divertir-te?",
+     "c": "Escreve uma atividade que te faz sentir mais tu e planeia-a para esta semana."
+    },
+    "pt_BR": {
+     "t": "O que faz uma vida boa?",
+     "g": "Explorar a eudaimonia: florescer como pessoa, não só se sentir bem.",
+     "p": [
+      "Eudaimonia é a palavra de Aristóteles para uma vida que vai bem como um todo.",
+      "Ela vem de usar bem nossas capacidades, principalmente a razão, em boa companhia.",
+      "As virtudes dos dias anteriores são os tijolos desse florescer."
+     ],
+     "q": "Quando você sentiu que estava florescendo de verdade, não só se divertindo?",
+     "c": "Escreva uma atividade que faz você se sentir mais você e planeje para esta semana."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Happiness: pleasure or meaning?",
+     "g": "Compare a pleasant moment with a meaningful life and see how they differ.",
+     "p": [
+      "Pleasure is a good feeling now, like a warm drink on a cold day.",
+      "Meaning comes from things that matter to us over time, like learning or caring.",
+      "The best days often hold both, but meaning can include effort and challenge."
+     ],
+     "q": "What gives you meaning even when it is not always pleasant?",
+     "c": "List one pleasure and one meaningful thing from today; notice how each felt."
+    },
+    "de": {
+     "t": "Glück: Vergnügen oder Sinn?",
+     "g": "Vergleiche einen angenehmen Moment mit einem sinnvollen Leben und sieh den Unterschied.",
+     "p": [
+      "Vergnügen ist ein gutes Gefühl im Jetzt, wie ein warmes Getränk an einem kalten Tag.",
+      "Sinn entsteht aus Dingen, die uns über Zeit wichtig sind, wie Lernen oder Fürsorge.",
+      "Die besten Tage haben beides, doch Sinn kann auch Mühe und Herausforderung enthalten."
+     ],
+     "q": "Was gibt dir Sinn, auch wenn es nicht immer angenehm ist?",
+     "c": "Notiere ein Vergnügen und etwas Sinnvolles von heute und wie sich beides anfühlte."
+    },
+    "es": {
+     "t": "Felicidad: ¿placer o sentido?",
+     "g": "Compara un momento agradable con una vida con sentido y observa en qué se diferencian.",
+     "p": [
+      "El placer es una buena sensación ahora, como una bebida caliente en un día frío.",
+      "El sentido viene de lo que nos importa a lo largo del tiempo, como aprender o cuidar.",
+      "Los mejores días tienen ambos, pero el sentido puede incluir esfuerzo y retos."
+     ],
+     "q": "¿Qué te da sentido aunque no siempre sea agradable?",
+     "c": "Anota un placer y algo con sentido de hoy, y cómo se sintió cada uno."
+    },
+    "fr": {
+     "t": "Le bonheur : plaisir ou sens ?",
+     "g": "Comparer un moment agréable et une vie pleine de sens pour voir ce qui les distingue.",
+     "p": [
+      "Le plaisir est une bonne sensation immédiate, comme une boisson chaude par temps froid.",
+      "Le sens vient de ce qui compte pour nous dans la durée, comme apprendre ou prendre soin.",
+      "Les meilleurs jours ont les deux, mais le sens peut inclure effort et défi."
+     ],
+     "q": "Qu'est-ce qui te donne du sens même quand ce n'est pas toujours agréable ?",
+     "c": "Note un plaisir et une chose pleine de sens d'aujourd'hui, et ce que chacun t'a fait."
+    },
+    "it": {
+     "t": "Felicità: piacere o significato?",
+     "g": "Confrontare un momento piacevole con una vita significativa e vedere cosa li distingue.",
+     "p": [
+      "Il piacere è una bella sensazione ora, come una bevanda calda in una giornata fredda.",
+      "Il significato nasce da ciò che conta per noi nel tempo, come imparare o prendersi cura.",
+      "I giorni migliori hanno entrambi, ma il significato può includere fatica e sfide."
+     ],
+     "q": "Cosa ti dà significato anche quando non è sempre piacevole?",
+     "c": "Annota un piacere e una cosa significativa di oggi e come ti sei sentito con ciascuno."
+    },
+    "pt": {
+     "t": "Felicidade: prazer ou sentido?",
+     "g": "Comparar um momento agradável com uma vida com sentido e ver em que diferem.",
+     "p": [
+      "O prazer é uma boa sensação agora, como uma bebida quente num dia frio.",
+      "O sentido vem do que nos importa ao longo do tempo, como aprender ou cuidar.",
+      "Os melhores dias têm os dois, mas o sentido pode incluir esforço e desafio."
+     ],
+     "q": "O que te dá sentido mesmo quando nem sempre é agradável?",
+     "c": "Anota um prazer e uma coisa com sentido de hoje e como te sentiste com cada um."
+    },
+    "pt_BR": {
+     "t": "Felicidade: prazer ou sentido?",
+     "g": "Comparar um momento agradável com uma vida com sentido e ver como diferem.",
+     "p": [
+      "Prazer é uma sensação boa agora, como uma bebida quente num dia frio.",
+      "Sentido vem do que importa para nós ao longo do tempo, como aprender ou cuidar.",
+      "Os melhores dias têm os dois, mas o sentido pode incluir esforço e desafio."
+     ],
+     "q": "O que te dá sentido mesmo quando nem sempre é agradável?",
+     "c": "Anote um prazer e uma coisa com sentido de hoje e como você se sentiu com cada um."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Epicurus and simple pleasures",
+     "g": "Learn how Epicurus saw friendship, calm and simple joys as the path to contentment.",
+     "p": [
+      "Epicurus taught in a garden in Athens with friends, not in a grand school.",
+      "He prized calm of mind, called ataraxia, over wild excitement or luxury.",
+      "Bread, water, good conversation and friends were, for him, riches enough."
+     ],
+     "q": "Which simple pleasure would you never want to give up?",
+     "c": "Enjoy one simple pleasure today slowly, without your phone, and savour it."
+    },
+    "de": {
+     "t": "Epikur und die einfachen Freuden",
+     "g": "Erfahre, warum Epikur Freundschaft, Ruhe und schlichte Freuden für den Weg zur Zufriedenheit hielt.",
+     "p": [
+      "Epikur lehrte mit Freunden in einem Garten in Athen, nicht in einer prunkvollen Schule.",
+      "Er schätzte Seelenruhe, Ataraxie genannt, mehr als wilde Aufregung oder Luxus.",
+      "Brot, Wasser, gute Gespräche und Freunde waren für ihn Reichtum genug."
+     ],
+     "q": "Auf welche einfache Freude würdest du nie verzichten wollen?",
+     "c": "Genieße heute eine einfache Freude langsam und ohne Handy."
+    },
+    "es": {
+     "t": "Epicuro y los placeres sencillos",
+     "g": "Descubre cómo Epicuro veía la amistad, la calma y las alegrías simples como camino al contento.",
+     "p": [
+      "Epicuro enseñaba con amigos en un jardín de Atenas, no en una gran escuela.",
+      "Valoraba la calma mental, llamada ataraxia, por encima de la euforia o el lujo.",
+      "Pan, agua, buena conversación y amigos eran para él riqueza suficiente."
+     ],
+     "q": "¿A qué placer sencillo no querrías renunciar nunca?",
+     "c": "Disfruta hoy de un placer sencillo despacio, sin el móvil, y saboréalo."
+    },
+    "fr": {
+     "t": "Épicure et les plaisirs simples",
+     "g": "Voir comment Épicure faisait de l'amitié, du calme et des joies simples la voie du contentement.",
+     "p": [
+      "Épicure enseignait avec ses amis dans un jardin d'Athènes, pas dans une grande école.",
+      "Il préférait la paix de l'esprit, l'ataraxie, à l'excitation ou au luxe.",
+      "Du pain, de l'eau, une bonne conversation et des amis étaient pour lui une richesse suffisante."
+     ],
+     "q": "À quel plaisir simple ne voudrais-tu jamais renoncer ?",
+     "c": "Savoure aujourd'hui un plaisir simple, lentement et sans téléphone."
+    },
+    "it": {
+     "t": "Epicuro e i piaceri semplici",
+     "g": "Scoprire come Epicuro vedeva amicizia, calma e gioie semplici come via alla serenità.",
+     "p": [
+      "Epicuro insegnava con gli amici in un giardino ad Atene, non in una grande scuola.",
+      "Apprezzava la pace interiore, detta atarassia, più dell'euforia o del lusso.",
+      "Pane, acqua, una buona conversazione e gli amici erano per lui ricchezza sufficiente."
+     ],
+     "q": "A quale piacere semplice non vorresti mai rinunciare?",
+     "c": "Goditi oggi un piacere semplice con calma, senza telefono, e assaporalo."
+    },
+    "pt": {
+     "t": "Epicuro e os prazeres simples",
+     "g": "Ver como Epicuro via a amizade, a calma e as alegrias simples como caminho para o contentamento.",
+     "p": [
+      "Epicuro ensinava com amigos num jardim em Atenas, não numa grande escola.",
+      "Valorizava a calma da mente, chamada ataraxia, acima da euforia ou do luxo.",
+      "Pão, água, boa conversa e amigos eram para ele riqueza suficiente."
+     ],
+     "q": "A que prazer simples nunca quererias renunciar?",
+     "c": "Desfruta hoje de um prazer simples devagar, sem telemóvel, e saboreia-o."
+    },
+    "pt_BR": {
+     "t": "Epicuro e os prazeres simples",
+     "g": "Ver como Epicuro via a amizade, a calma e as alegrias simples como caminho para o contentamento.",
+     "p": [
+      "Epicuro ensinava com amigos num jardim em Atenas, não numa grande escola.",
+      "Ele valorizava a calma da mente, chamada ataraxia, acima da euforia ou do luxo.",
+      "Pão, água, boa conversa e amigos eram para ele riqueza suficiente."
+     ],
+     "q": "De que prazer simples você nunca quereria abrir mão?",
+     "c": "Aproveite hoje um prazer simples bem devagar, sem celular, e saboreie."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Stoics on control",
+     "g": "Learn Epictetus's key idea: focus on what is up to you and let go of the rest.",
+     "p": [
+      "Epictetus was born enslaved and became one of the most loved Stoic teachers.",
+      "Up to us: our judgements, choices and efforts. Not up to us: weather, others, outcomes.",
+      "Peace grows when we put our energy where we actually have influence."
+     ],
+     "q": "What is worrying you that is really outside your control?",
+     "c": "Make two lists for one situation: what is up to me and what is not."
+    },
+    "de": {
+     "t": "Die Stoiker über Kontrolle",
+     "g": "Lerne Epiktets Kernidee: Konzentriere dich auf das, was in deiner Macht steht.",
+     "p": [
+      "Epiktet wurde versklavt geboren und wurde einer der beliebtesten stoischen Lehrer.",
+      "In unserer Macht: Urteile, Entscheidungen, Mühe. Nicht: Wetter, andere, Ergebnisse.",
+      "Ruhe wächst, wenn wir Energie dorthin lenken, wo wir wirklich Einfluss haben."
+     ],
+     "q": "Was beschäftigt dich, das eigentlich außerhalb deiner Kontrolle liegt?",
+     "c": "Mach für eine Situation zwei Listen: was in meiner Macht steht und was nicht."
+    },
+    "es": {
+     "t": "Los estoicos y el control",
+     "g": "Aprende la idea clave de Epicteto: céntrate en lo que depende de ti y suelta lo demás.",
+     "p": [
+      "Epicteto nació esclavo y llegó a ser uno de los maestros estoicos más queridos.",
+      "Depende de nosotros: juicios, decisiones y esfuerzo. No depende: el clima, los demás, los resultados.",
+      "La paz crece cuando ponemos la energía donde de verdad influimos."
+     ],
+     "q": "¿Qué te preocupa que en realidad no depende de ti?",
+     "c": "Haz dos listas para una situación: lo que depende de mí y lo que no."
+    },
+    "fr": {
+     "t": "Les stoïciens et le contrôle",
+     "g": "Retenir l'idée clé d'Épictète : se concentrer sur ce qui dépend de nous et lâcher le reste.",
+     "p": [
+      "Né esclave, Épictète devint l'un des maîtres stoïciens les plus aimés.",
+      "Dépendent de nous : jugements, choix, efforts. Pas de nous : météo, autrui, résultats.",
+      "La paix grandit quand on met son énergie là où l'on a vraiment prise."
+     ],
+     "q": "Qu'est-ce qui t'inquiète alors que cela ne dépend pas de toi ?",
+     "c": "Fais deux listes pour une situation : ce qui dépend de moi et ce qui n'en dépend pas."
+    },
+    "it": {
+     "t": "Gli stoici e il controllo",
+     "g": "Imparare l'idea chiave di Epitteto: concentrati su ciò che dipende da te e lascia il resto.",
+     "p": [
+      "Epitteto nacque schiavo e divenne uno dei maestri stoici più amati.",
+      "Dipende da noi: giudizi, scelte, impegno. Non dipende: meteo, altri, risultati.",
+      "La pace cresce quando mettiamo energia dove abbiamo davvero influenza."
+     ],
+     "q": "Cosa ti preoccupa che in realtà non dipende da te?",
+     "c": "Fai due liste per una situazione: ciò che dipende da me e ciò che non dipende."
+    },
+    "pt": {
+     "t": "Os estoicos e o controlo",
+     "g": "Aprender a ideia central de Epicteto: foca-te no que depende de ti e larga o resto.",
+     "p": [
+      "Epicteto nasceu escravizado e tornou-se um dos mestres estoicos mais queridos.",
+      "Depende de nós: juízos, escolhas e esforço. Não depende: o tempo, os outros, os resultados.",
+      "A paz cresce quando pomos energia onde temos mesmo influência."
+     ],
+     "q": "O que te preocupa que na verdade não depende de ti?",
+     "c": "Faz duas listas para uma situação: o que depende de mim e o que não depende."
+    },
+    "pt_BR": {
+     "t": "Os estoicos e o controle",
+     "g": "Aprender a ideia central de Epicteto: foque no que depende de você e solte o resto.",
+     "p": [
+      "Epicteto nasceu escravizado e se tornou um dos mestres estoicos mais queridos.",
+      "Depende de nós: julgamentos, escolhas e esforço. Não depende: clima, os outros, resultados.",
+      "A paz cresce quando colocamos energia onde realmente temos influência."
+     ],
+     "q": "O que te preocupa que na verdade não depende de você?",
+     "c": "Faça duas listas para uma situação: o que depende de mim e o que não depende."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Marcus Aurelius's notebook",
+     "g": "Discover a Roman emperor's private reflections on calm, duty and kindness.",
+     "p": [
+      "Marcus Aurelius wrote the Meditations as notes to himself, not for publication.",
+      "He reminded himself each morning that he would meet difficult people, and to stay kind.",
+      "He used Stoic ideas, like Epictetus's control, to steady his busy mind."
+     ],
+     "q": "If you kept a notebook of advice to yourself, what would the first line be?",
+     "c": "Write three short lines of advice to yourself tonight, as Marcus Aurelius did."
+    },
+    "de": {
+     "t": "Das Notizbuch von Marc Aurel",
+     "g": "Entdecke die privaten Gedanken eines römischen Kaisers über Ruhe, Pflicht und Güte.",
+     "p": [
+      "Marc Aurel schrieb die Selbstbetrachtungen als Notizen für sich, nicht zur Veröffentlichung.",
+      "Morgens erinnerte er sich, dass er schwierigen Menschen begegnen würde, und blieb freundlich.",
+      "Er nutzte stoische Ideen wie Epiktets Kontrolle, um seinen vollen Kopf zu beruhigen."
+     ],
+     "q": "Wenn du ein Notizbuch mit Rat an dich führtest, wie lautete die erste Zeile?",
+     "c": "Schreib heute Abend drei kurze Ratschläge an dich selbst, wie Marc Aurel."
+    },
+    "es": {
+     "t": "El cuaderno de Marco Aurelio",
+     "g": "Descubre las reflexiones privadas de un emperador romano sobre calma, deber y amabilidad.",
+     "p": [
+      "Marco Aurelio escribió las Meditaciones como notas para sí mismo, no para publicarlas.",
+      "Cada mañana se recordaba que trataría con gente difícil y que debía seguir siendo amable.",
+      "Usaba ideas estoicas, como el control de Epicteto, para serenar su mente ocupada."
+     ],
+     "q": "Si llevaras un cuaderno de consejos para ti, ¿cuál sería la primera línea?",
+     "c": "Escribe esta noche tres consejos breves para ti, como hacía Marco Aurelio."
+    },
+    "fr": {
+     "t": "Le carnet de Marc Aurèle",
+     "g": "Découvrir les réflexions privées d'un empereur romain sur le calme, le devoir et la bonté.",
+     "p": [
+      "Marc Aurèle écrivit les Pensées pour lui-même, sans intention de les publier.",
+      "Chaque matin, il se rappelait qu'il croiserait des gens difficiles et qu'il resterait bienveillant.",
+      "Il utilisait des idées stoïciennes, comme le contrôle selon Épictète, pour apaiser son esprit."
+     ],
+     "q": "Si tu tenais un carnet de conseils à toi-même, quelle serait la première ligne ?",
+     "c": "Écris ce soir trois courts conseils à toi-même, comme Marc Aurèle."
+    },
+    "it": {
+     "t": "Il taccuino di Marco Aurelio",
+     "g": "Scoprire le riflessioni private di un imperatore romano su calma, dovere e gentilezza.",
+     "p": [
+      "Marco Aurelio scrisse i Pensieri come appunti per sé, non per pubblicarli.",
+      "Ogni mattina si ricordava che avrebbe incontrato persone difficili e di restare gentile.",
+      "Usava idee stoiche, come il controllo di Epitteto, per calmare la mente indaffarata."
+     ],
+     "q": "Se tenessi un taccuino di consigli a te stesso, quale sarebbe la prima riga?",
+     "c": "Scrivi stasera tre brevi consigli a te stesso, come faceva Marco Aurelio."
+    },
+    "pt": {
+     "t": "O caderno de Marco Aurélio",
+     "g": "Descobrir as reflexões privadas de um imperador romano sobre calma, dever e bondade.",
+     "p": [
+      "Marco Aurélio escreveu as Meditações como notas para si, não para publicar.",
+      "Todas as manhãs lembrava-se de que ia encontrar pessoas difíceis e de que devia ser gentil.",
+      "Usava ideias estoicas, como o controlo de Epicteto, para acalmar a mente ocupada."
+     ],
+     "q": "Se tivesses um caderno de conselhos para ti, qual seria a primeira linha?",
+     "c": "Escreve esta noite três conselhos curtos para ti, como fazia Marco Aurélio."
+    },
+    "pt_BR": {
+     "t": "O caderno de Marco Aurélio",
+     "g": "Descobrir as reflexões privadas de um imperador romano sobre calma, dever e gentileza.",
+     "p": [
+      "Marco Aurélio escreveu as Meditações como notas para si mesmo, não para publicar.",
+      "Toda manhã ele lembrava que encontraria pessoas difíceis e que devia continuar gentil.",
+      "Usava ideias estoicas, como o controle de Epicteto, para acalmar a mente ocupada."
+     ],
+     "q": "Se você tivesse um caderno de conselhos para si, qual seria a primeira linha?",
+     "c": "Escreva hoje à noite três conselhos curtos para você, como Marco Aurélio fazia."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Seneca on time",
+     "g": "Learn Seneca's idea that life is long enough if we know how to use our time well.",
+     "p": [
+      "In On the Shortness of Life, Seneca says we do not lack time, we waste much of it.",
+      "We guard our money carefully but let others take our hours freely.",
+      "Using time well means spending it on what we value, including rest and friends."
+     ],
+     "q": "Where does your time go that you would like to reclaim?",
+     "c": "Track your next free hour and note how much went to what you truly value."
+    },
+    "de": {
+     "t": "Seneca über die Zeit",
+     "g": "Lerne Senecas Gedanken: Das Leben ist lang genug, wenn wir unsere Zeit gut nutzen.",
+     "p": [
+      "In Von der Kürze des Lebens sagt Seneca: Wir haben nicht zu wenig Zeit, wir vergeuden viel.",
+      "Unser Geld hüten wir sorgfältig, unsere Stunden geben wir anderen bereitwillig.",
+      "Zeit gut nutzen heißt, sie dem zu widmen, was uns wichtig ist, auch Ruhe und Freunden."
+     ],
+     "q": "Wohin geht deine Zeit, die du gern zurückgewinnen würdest?",
+     "c": "Beobachte deine nächste freie Stunde und notiere, wie viel davon dir wirklich wichtig war."
+    },
+    "es": {
+     "t": "Séneca y el tiempo",
+     "g": "Aprende la idea de Séneca: la vida es suficientemente larga si sabemos usar bien el tiempo.",
+     "p": [
+      "En Sobre la brevedad de la vida, Séneca dice que no nos falta tiempo, sino que perdemos mucho.",
+      "Cuidamos el dinero con esmero, pero regalamos nuestras horas sin pensar.",
+      "Usar bien el tiempo es dedicarlo a lo que valoramos, incluidos el descanso y los amigos."
+     ],
+     "q": "¿En qué se te va el tiempo que te gustaría recuperar?",
+     "c": "Observa tu próxima hora libre y anota cuánto fue a lo que de verdad valoras."
+    },
+    "fr": {
+     "t": "Sénèque et le temps",
+     "g": "Découvrir l'idée de Sénèque : la vie est assez longue si l'on sait bien employer son temps.",
+     "p": [
+      "Dans De la brièveté de la vie, Sénèque dit que nous ne manquons pas de temps, nous en gaspillons.",
+      "Nous gardons notre argent avec soin mais laissons volontiers les autres prendre nos heures.",
+      "Bien employer son temps, c'est le consacrer à ce qui compte, repos et amis compris."
+     ],
+     "q": "Où part ton temps que tu aimerais récupérer ?",
+     "c": "Observe ta prochaine heure libre et note la part consacrée à ce qui compte vraiment."
+    },
+    "it": {
+     "t": "Seneca e il tempo",
+     "g": "Imparare l'idea di Seneca: la vita è abbastanza lunga se sappiamo usare bene il tempo.",
+     "p": [
+      "Nel De brevitate vitae Seneca dice che il tempo non ci manca, ne sprechiamo molto.",
+      "Custodiamo con cura il denaro ma lasciamo che altri prendano le nostre ore.",
+      "Usare bene il tempo significa dedicarlo a ciò che conta, riposo e amici compresi."
+     ],
+     "q": "Dove va il tuo tempo che vorresti recuperare?",
+     "c": "Osserva la tua prossima ora libera e annota quanta è andata a ciò che conta davvero."
+    },
+    "pt": {
+     "t": "Séneca e o tempo",
+     "g": "Aprender a ideia de Séneca: a vida é longa o suficiente se soubermos usar bem o tempo.",
+     "p": [
+      "Em Sobre a brevidade da vida, Séneca diz que não nos falta tempo, desperdiçamos muito.",
+      "Guardamos o dinheiro com cuidado, mas deixamos os outros levar as nossas horas.",
+      "Usar bem o tempo é dedicá-lo ao que valorizamos, incluindo o descanso e os amigos."
+     ],
+     "q": "Para onde vai o teu tempo que gostarias de recuperar?",
+     "c": "Observa a tua próxima hora livre e anota quanto foi para o que valorizas mesmo."
+    },
+    "pt_BR": {
+     "t": "Sêneca e o tempo",
+     "g": "Aprender a ideia de Sêneca: a vida é longa o bastante se soubermos usar bem o tempo.",
+     "p": [
+      "Em Sobre a brevidade da vida, Sêneca diz que não nos falta tempo, nós desperdiçamos muito.",
+      "Cuidamos do dinheiro com atenção, mas deixamos os outros levarem nossas horas.",
+      "Usar bem o tempo é dedicá-lo ao que valorizamos, incluindo descanso e amigos."
+     ],
+     "q": "Para onde vai o seu tempo que você gostaria de recuperar?",
+     "c": "Observe sua próxima hora livre e anote quanto foi para o que você valoriza de verdade."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stoic tools for tough days",
+     "g": "Collect simple Stoic tools: reframing, gratitude and looking at the bigger picture.",
+     "p": [
+      "Reframing: it is not events that upset us, said Epictetus, but our judgements about them.",
+      "Gratitude: notice what is going well, even on a hard day.",
+      "The view from above: picture your problem from high up, as one small part of a big world."
+     ],
+     "q": "Which of these three tools feels most useful to you right now?",
+     "c": "Next time something annoys you today, try one reframe and name what still went well."
+    },
+    "de": {
+     "t": "Stoische Werkzeuge für schwere Tage",
+     "g": "Sammle einfache stoische Werkzeuge: Umdeuten, Dankbarkeit und der Blick aufs Ganze.",
+     "p": [
+      "Umdeuten: Nicht die Dinge beunruhigen uns, sagte Epiktet, sondern unsere Urteile über sie.",
+      "Dankbarkeit: Bemerke, was gut läuft, auch an einem schweren Tag.",
+      "Der Blick von oben: Sieh dein Problem von weit oben als kleinen Teil einer großen Welt."
+     ],
+     "q": "Welches der drei Werkzeuge scheint dir gerade am nützlichsten?",
+     "c": "Wenn dich heute etwas ärgert, deute es einmal um und nenne, was trotzdem gut lief."
+    },
+    "es": {
+     "t": "Herramientas estoicas para días difíciles",
+     "g": "Reúne herramientas estoicas sencillas: reencuadrar, agradecer y mirar el panorama general.",
+     "p": [
+      "Reencuadrar: no nos perturban los hechos, dijo Epicteto, sino nuestros juicios sobre ellos.",
+      "Gratitud: fíjate en lo que va bien, incluso en un día difícil.",
+      "La vista desde arriba: imagina tu problema desde lo alto, como una pequeña parte de un gran mundo."
+     ],
+     "q": "¿Cuál de estas tres herramientas te parece más útil ahora?",
+     "c": "La próxima vez que algo te moleste hoy, reencuádralo y di qué salió bien igualmente."
+    },
+    "fr": {
+     "t": "Outils stoïciens pour les jours difficiles",
+     "g": "Réunir des outils stoïciens simples : recadrer, remercier et prendre de la hauteur.",
+     "p": [
+      "Recadrer : ce ne sont pas les choses qui nous troublent, disait Épictète, mais nos jugements.",
+      "Gratitude : remarquer ce qui va bien, même un jour difficile.",
+      "La vue d'en haut : imaginer son problème de très haut, petite partie d'un vaste monde."
+     ],
+     "q": "Lequel de ces trois outils te semble le plus utile en ce moment ?",
+     "c": "La prochaine fois que quelque chose t'agace aujourd'hui, recadre-le et note ce qui a bien marché."
+    },
+    "it": {
+     "t": "Strumenti stoici per le giornate dure",
+     "g": "Raccogliere semplici strumenti stoici: riformulare, essere grati e guardare il quadro generale.",
+     "p": [
+      "Riformulare: non ci turbano i fatti, diceva Epitteto, ma i nostri giudizi su di essi.",
+      "Gratitudine: notare ciò che va bene, anche in una giornata difficile.",
+      "La vista dall'alto: immagina il tuo problema da lontano, piccola parte di un grande mondo."
+     ],
+     "q": "Quale di questi tre strumenti ti sembra più utile adesso?",
+     "c": "La prossima volta che qualcosa ti irrita oggi, riformulalo e nomina cosa è andato bene."
+    },
+    "pt": {
+     "t": "Ferramentas estoicas para dias difíceis",
+     "g": "Reunir ferramentas estoicas simples: reenquadrar, agradecer e olhar para o quadro geral.",
+     "p": [
+      "Reenquadrar: não são os factos que nos perturbam, disse Epicteto, mas os nossos juízos sobre eles.",
+      "Gratidão: repara no que está a correr bem, mesmo num dia difícil.",
+      "A vista de cima: imagina o teu problema lá do alto, como pequena parte de um grande mundo."
+     ],
+     "q": "Qual destas três ferramentas te parece mais útil agora?",
+     "c": "Da próxima vez que algo te irritar hoje, reenquadra-o e diz o que correu bem na mesma."
+    },
+    "pt_BR": {
+     "t": "Ferramentas estoicas para dias difíceis",
+     "g": "Reunir ferramentas estoicas simples: reenquadrar, agradecer e olhar o quadro geral.",
+     "p": [
+      "Reenquadrar: não são os fatos que nos perturbam, disse Epicteto, mas nossos julgamentos sobre eles.",
+      "Gratidão: repare no que está dando certo, mesmo num dia difícil.",
+      "A vista de cima: imagine seu problema lá do alto, como pequena parte de um grande mundo."
+     ],
+     "q": "Qual dessas três ferramentas parece mais útil para você agora?",
+     "c": "Na próxima vez que algo te irritar hoje, reenquadre e diga o que deu certo mesmo assim."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Diogenes the provocateur",
+     "g": "Meet the Cynic who lived very simply to question social customs.",
+     "p": [
+      "Diogenes of Sinope lived in a large clay jar in Athens with almost no possessions.",
+      "Seeing a child drink from cupped hands, he threw away his only cup as unnecessary.",
+      "His odd behaviour was a lesson: many customs and wants are not truly needed."
+     ],
+     "q": "Which everyday habit do you follow only because everyone else does?",
+     "c": "Go one day without one small thing you think you need and see how it goes."
+    },
+    "de": {
+     "t": "Diogenes, der Provokateur",
+     "g": "Lerne den Kyniker kennen, der sehr einfach lebte, um gesellschaftliche Sitten zu hinterfragen.",
+     "p": [
+      "Diogenes von Sinope lebte in Athen in einem großen Tonfass, fast ohne Besitz.",
+      "Als er ein Kind aus den Händen trinken sah, warf er seinen einzigen Becher weg.",
+      "Sein seltsames Verhalten war eine Lehre: Viele Sitten und Wünsche sind unnötig."
+     ],
+     "q": "Welche Alltagsgewohnheit pflegst du nur, weil alle anderen es tun?",
+     "c": "Verzichte einen Tag auf eine kleine Sache, die du für nötig hältst, und schau, wie es geht."
+    },
+    "es": {
+     "t": "Diógenes el provocador",
+     "g": "Conoce al cínico que vivía con gran sencillez para cuestionar las costumbres sociales.",
+     "p": [
+      "Diógenes de Sinope vivía en Atenas en una gran tinaja de barro, casi sin posesiones.",
+      "Al ver a un niño beber con las manos, tiró su único cuenco por innecesario.",
+      "Su conducta extraña era una lección: muchas costumbres y deseos no son necesarios."
+     ],
+     "q": "¿Qué hábito diario sigues solo porque todos lo hacen?",
+     "c": "Pasa un día sin una pequeña cosa que crees necesitar y observa cómo te va."
+    },
+    "fr": {
+     "t": "Diogène le provocateur",
+     "g": "Rencontrer le Cynique qui vivait très simplement pour questionner les usages sociaux.",
+     "p": [
+      "Diogène de Sinope vivait à Athènes dans une grande jarre, presque sans biens.",
+      "Voyant un enfant boire dans ses mains, il jeta son unique écuelle, jugée inutile.",
+      "Son comportement étrange était une leçon : bien des usages et désirs ne sont pas nécessaires."
+     ],
+     "q": "Quelle habitude suis-tu seulement parce que tout le monde le fait ?",
+     "c": "Passe une journée sans une petite chose que tu crois indispensable et vois ce que ça donne."
+    },
+    "it": {
+     "t": "Diogene il provocatore",
+     "g": "Conoscere il cinico che viveva in modo semplicissimo per mettere in dubbio le usanze sociali.",
+     "p": [
+      "Diogene di Sinope viveva ad Atene in una grande giara di terracotta, quasi senza beni.",
+      "Vedendo un bambino bere con le mani, buttò via la sua unica ciotola come inutile.",
+      "Il suo strano comportamento era una lezione: molte usanze e desideri non servono davvero."
+     ],
+     "q": "Quale abitudine segui solo perché la seguono tutti?",
+     "c": "Passa un giorno senza una piccola cosa che credi necessaria e guarda come va."
+    },
+    "pt": {
+     "t": "Diógenes, o provocador",
+     "g": "Conhecer o cínico que vivia de forma muito simples para questionar os costumes sociais.",
+     "p": [
+      "Diógenes de Sinope vivia em Atenas num grande jarro de barro, quase sem posses.",
+      "Ao ver uma criança beber com as mãos, deitou fora a sua única tigela por ser desnecessária.",
+      "O seu comportamento estranho era uma lição: muitos costumes e desejos não são precisos."
+     ],
+     "q": "Que hábito diário segues só porque toda a gente o faz?",
+     "c": "Passa um dia sem uma pequena coisa que achas necessária e vê como corre."
+    },
+    "pt_BR": {
+     "t": "Diógenes, o provocador",
+     "g": "Conhecer o cínico que vivia de forma muito simples para questionar os costumes sociais.",
+     "p": [
+      "Diógenes de Sinope vivia em Atenas num grande jarro de barro, quase sem posses.",
+      "Ao ver uma criança beber com as mãos, jogou fora sua única tigela por ser desnecessária.",
+      "Seu comportamento estranho era uma lição: muitos costumes e desejos não são necessários."
+     ],
+     "q": "Que hábito diário você segue só porque todo mundo segue?",
+     "c": "Passe um dia sem uma pequena coisa que você acha necessária e veja como vai."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Philosophy as a way of life",
+     "g": "See how ancient schools treated philosophy as daily practice, not only theory.",
+     "p": [
+      "Stoics, Epicureans and Cynics all had daily habits, not just books.",
+      "Morning planning, evening review and memorising sayings were common exercises.",
+      "Confucian and Daoist traditions also linked wisdom to how you live each day."
+     ],
+     "q": "Which idea from this month could become a daily habit for you?",
+     "c": "Choose one practice, like an evening review, and do it for the next three nights."
+    },
+    "de": {
+     "t": "Philosophie als Lebensform",
+     "g": "Sieh, wie antike Schulen Philosophie als tägliche Übung verstanden, nicht nur als Theorie.",
+     "p": [
+      "Stoiker, Epikureer und Kyniker hatten tägliche Gewohnheiten, nicht nur Bücher.",
+      "Morgendliche Planung, abendlicher Rückblick und Merksprüche waren übliche Übungen.",
+      "Auch konfuzianische und daoistische Traditionen verbanden Weisheit mit dem Alltag."
+     ],
+     "q": "Welche Idee dieses Monats könnte eine tägliche Gewohnheit für dich werden?",
+     "c": "Wähle eine Übung, etwa einen Abendrückblick, und mach sie die nächsten drei Abende."
+    },
+    "es": {
+     "t": "La filosofía como forma de vida",
+     "g": "Descubre cómo las escuelas antiguas veían la filosofía como práctica diaria, no solo teoría.",
+     "p": [
+      "Estoicos, epicúreos y cínicos tenían hábitos diarios, no solo libros.",
+      "Planear la mañana, repasar la noche y memorizar máximas eran ejercicios comunes.",
+      "Las tradiciones confuciana y taoísta también unían la sabiduría con la vida diaria."
+     ],
+     "q": "¿Qué idea de este mes podría convertirse en un hábito diario para ti?",
+     "c": "Elige una práctica, como repasar el día por la noche, y hazla las próximas tres noches."
+    },
+    "fr": {
+     "t": "La philosophie comme mode de vie",
+     "g": "Voir comment les écoles antiques faisaient de la philosophie une pratique quotidienne.",
+     "p": [
+      "Stoïciens, épicuriens et cyniques avaient des habitudes quotidiennes, pas seulement des livres.",
+      "Préparer sa journée, faire le bilan du soir et retenir des maximes étaient des exercices courants.",
+      "Les traditions confucéenne et taoïste liaient aussi la sagesse à la vie de chaque jour."
+     ],
+     "q": "Quelle idée de ce mois pourrait devenir une habitude quotidienne pour toi ?",
+     "c": "Choisis une pratique, comme le bilan du soir, et fais-la les trois prochains soirs."
+    },
+    "it": {
+     "t": "La filosofia come stile di vita",
+     "g": "Vedere come le scuole antiche vivevano la filosofia come pratica quotidiana, non solo teoria.",
+     "p": [
+      "Stoici, epicurei e cinici avevano abitudini quotidiane, non solo libri.",
+      "Pianificare il mattino, rivedere la sera e memorizzare massime erano esercizi comuni.",
+      "Anche le tradizioni confuciana e taoista legavano la saggezza al modo di vivere."
+     ],
+     "q": "Quale idea di questo mese potrebbe diventare per te un'abitudine quotidiana?",
+     "c": "Scegli una pratica, come il bilancio serale, e falla per le prossime tre sere."
+    },
+    "pt": {
+     "t": "A filosofia como modo de vida",
+     "g": "Ver como as escolas antigas viam a filosofia como prática diária e não só como teoria.",
+     "p": [
+      "Estoicos, epicuristas e cínicos tinham hábitos diários, não apenas livros.",
+      "Planear a manhã, rever a noite e decorar máximas eram exercícios comuns.",
+      "As tradições confuciana e taoista também ligavam a sabedoria à forma de viver."
+     ],
+     "q": "Que ideia deste mês poderia tornar-se um hábito diário para ti?",
+     "c": "Escolhe uma prática, como rever o dia à noite, e fá-la nas próximas três noites."
+    },
+    "pt_BR": {
+     "t": "A filosofia como modo de vida",
+     "g": "Ver como as escolas antigas tratavam a filosofia como prática diária, não só teoria.",
+     "p": [
+      "Estoicos, epicuristas e cínicos tinham hábitos diários, não apenas livros.",
+      "Planejar a manhã, revisar a noite e decorar máximas eram exercícios comuns.",
+      "As tradições confuciana e taoista também ligavam a sabedoria ao jeito de viver."
+     ],
+     "q": "Que ideia deste mês poderia virar um hábito diário para você?",
+     "c": "Escolha uma prática, como revisar o dia à noite, e faça nas próximas três noites."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: first steps",
+     "g": "Look back at Socrates, Confucius, Laozi, argument basics and the good life.",
+     "p": [
+      "Socrates showed how questions test beliefs; Confucius linked learning to good character.",
+      "Laozi taught harmony with the Way; we also learned premises, conclusions and charity.",
+      "Aristotle, Epicurus and the Stoics each offered a path to a good life."
+     ],
+     "q": "Which thinker from this month would you most like to have coffee with, and why?",
+     "c": "Explain one idea from this month to someone in two sentences, in your own words."
+    },
+    "de": {
+     "t": "Rückblick: erste Schritte",
+     "g": "Blick zurück auf Sokrates, Konfuzius, Laozi, Argumente und das gute Leben.",
+     "p": [
+      "Sokrates zeigte, wie Fragen Überzeugungen prüfen; Konfuzius verband Lernen mit Charakter.",
+      "Laozi lehrte Einklang mit dem Weg; dazu lernten wir Prämissen, Schlüsse und Wohlwollen.",
+      "Aristoteles, Epikur und die Stoiker boten je einen Weg zum guten Leben."
+     ],
+     "q": "Mit welchem Denker dieses Monats würdest du gern einen Kaffee trinken, und warum?",
+     "c": "Erkläre jemandem eine Idee dieses Monats in zwei Sätzen mit eigenen Worten."
+    },
+    "es": {
+     "t": "Repaso: primeros pasos",
+     "g": "Repasa a Sócrates, Confucio, Laozi, lo básico de los argumentos y la buena vida.",
+     "p": [
+      "Sócrates mostró cómo las preguntas ponen a prueba creencias; Confucio unió estudio y carácter.",
+      "Laozi enseñó la armonía con el Camino; también vimos premisas, conclusiones y caridad.",
+      "Aristóteles, Epicuro y los estoicos ofrecieron cada uno un camino a la buena vida."
+     ],
+     "q": "¿Con qué pensador de este mes te tomarías un café y por qué?",
+     "c": "Explica a alguien una idea de este mes en dos frases, con tus propias palabras."
+    },
+    "fr": {
+     "t": "Révision : premiers pas",
+     "g": "Revenir sur Socrate, Confucius, Laozi, les bases de l'argumentation et la bonne vie.",
+     "p": [
+      "Socrate a montré comment les questions éprouvent nos croyances ; Confucius a lié étude et caractère.",
+      "Laozi enseignait l'harmonie avec la Voie ; on a vu aussi prémisses, conclusions et charité.",
+      "Aristote, Épicure et les stoïciens ont chacun proposé un chemin vers la bonne vie."
+     ],
+     "q": "Avec quel penseur de ce mois aimerais-tu prendre un café, et pourquoi ?",
+     "c": "Explique à quelqu'un une idée de ce mois en deux phrases, avec tes mots."
+    },
+    "it": {
+     "t": "Ripasso: primi passi",
+     "g": "Ripercorrere Socrate, Confucio, Laozi, le basi dell'argomentazione e la vita buona.",
+     "p": [
+      "Socrate mostrò come le domande mettano alla prova le idee; Confucio legò studio e carattere.",
+      "Laozi insegnò l'armonia con la Via; abbiamo visto anche premesse, conclusioni e carità.",
+      "Aristotele, Epicuro e gli stoici offrirono ciascuno una via verso la vita buona."
+     ],
+     "q": "Con quale pensatore di questo mese prenderesti un caffè, e perché?",
+     "c": "Spiega a qualcuno un'idea di questo mese in due frasi, con parole tue."
+    },
+    "pt": {
+     "t": "Revisão: primeiros passos",
+     "g": "Rever Sócrates, Confúcio, Laozi, as bases da argumentação e a vida boa.",
+     "p": [
+      "Sócrates mostrou como as perguntas testam crenças; Confúcio ligou o estudo ao carácter.",
+      "Laozi ensinou a harmonia com o Caminho; vimos também premissas, conclusões e caridade.",
+      "Aristóteles, Epicuro e os estoicos ofereceram cada um um caminho para a vida boa."
+     ],
+     "q": "Com que pensador deste mês gostarias de tomar um café e porquê?",
+     "c": "Explica a alguém uma ideia deste mês em duas frases, por palavras tuas."
+    },
+    "pt_BR": {
+     "t": "Revisão: primeiros passos",
+     "g": "Revisar Sócrates, Confúcio, Laozi, o básico da argumentação e a vida boa.",
+     "p": [
+      "Sócrates mostrou como perguntas testam crenças; Confúcio ligou o estudo ao caráter.",
+      "Laozi ensinou a harmonia com o Caminho; vimos também premissas, conclusões e caridade.",
+      "Aristóteles, Epicuro e os estoicos ofereceram cada um um caminho para a vida boa."
+     ],
+     "q": "Com qual pensador deste mês você tomaria um café, e por quê?",
+     "c": "Explique para alguém uma ideia deste mês em duas frases, com suas palavras."
+    }
+   }
+  }
+ ]
+}

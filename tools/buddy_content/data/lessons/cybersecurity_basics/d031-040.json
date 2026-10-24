@@ -1,0 +1,835 @@
+{
+ "topic": "cybersecurity_basics",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is phishing?",
+     "g": "Learn how fake messages try to trick people into giving away passwords or money.",
+     "p": [
+      "Phishing means a message pretending to be someone trusted to make you act fast.",
+      "It arrives by email, text, chat or phone, and often looks surprisingly real.",
+      "The goal is to get you to click, log in or pay, so the fix is to slow down."
+     ],
+     "q": "Have you ever spotted a message that tried to pass as your bank or a shop?",
+     "c": "Challenge: next time a message asks you to act, pause for ten seconds before doing anything."
+    },
+    "de": {
+     "t": "Was ist Phishing?",
+     "g": "Lerne, wie gefälschte Nachrichten versuchen, an Passwörter oder Geld zu kommen.",
+     "p": [
+      "Phishing heißt: Eine Nachricht gibt sich als vertraute Person aus, damit du schnell handelst.",
+      "Sie kommt per E-Mail, SMS, Chat oder Anruf und wirkt oft überraschend echt.",
+      "Ziel ist, dass du klickst, dich anmeldest oder zahlst; die Lösung ist, langsamer zu werden."
+     ],
+     "q": "Hast du schon eine Nachricht bemerkt, die sich als deine Bank oder ein Shop ausgab?",
+     "c": "Challenge: Warte bei der nächsten Aufforderung zum Handeln zehn Sekunden, bevor du etwas tust."
+    },
+    "es": {
+     "t": "¿Qué es el phishing?",
+     "g": "Aprende cómo los mensajes falsos intentan engañar para obtener claves o dinero.",
+     "p": [
+      "El phishing es un mensaje que finge ser alguien de confianza para que actúes rápido.",
+      "Llega por correo, SMS, chat o llamada, y a menudo parece sorprendentemente real.",
+      "El objetivo es que pulses, entres o pagues, así que la solución es ir más despacio."
+     ],
+     "q": "¿Has detectado alguna vez un mensaje que se hacía pasar por tu banco o una tienda?",
+     "c": "Reto: la próxima vez que un mensaje te pida actuar, espera diez segundos antes de hacer nada."
+    },
+    "fr": {
+     "t": "Qu'est-ce que l'hameçonnage ?",
+     "g": "Apprends comment de faux messages tentent d'obtenir mots de passe ou argent.",
+     "p": [
+      "L'hameçonnage, c'est un message qui se fait passer pour quelqu'un de confiance pour te faire agir vite.",
+      "Il arrive par e-mail, SMS, messagerie ou appel, et semble souvent étonnamment vrai.",
+      "Le but est que tu cliques, te connectes ou paies : la parade, c'est de ralentir."
+     ],
+     "q": "As-tu déjà repéré un message qui se faisait passer pour ta banque ou une boutique ?",
+     "c": "Défi : la prochaine fois qu'un message te presse d'agir, attends dix secondes avant de faire quoi que ce soit."
+    },
+    "it": {
+     "t": "Cos'è il phishing?",
+     "g": "Scopri come falsi messaggi cercano di ottenere password o denaro.",
+     "p": [
+      "Il phishing è un messaggio che finge di essere qualcuno di fiducia per farti agire in fretta.",
+      "Arriva per email, SMS, chat o telefono e spesso sembra sorprendentemente vero.",
+      "Lo scopo è farti cliccare, accedere o pagare, quindi la difesa è rallentare."
+     ],
+     "q": "Hai mai notato un messaggio che fingeva di essere la tua banca o un negozio?",
+     "c": "Sfida: la prossima volta che un messaggio ti chiede di agire, aspetta dieci secondi prima di fare qualsiasi cosa."
+    },
+    "pt": {
+     "t": "O que é o phishing?",
+     "g": "Aprende como mensagens falsas tentam obter palavras-passe ou dinheiro.",
+     "p": [
+      "Phishing é uma mensagem que finge ser alguém de confiança para te fazer agir depressa.",
+      "Chega por email, SMS, chat ou chamada e muitas vezes parece surpreendentemente real.",
+      "O objetivo é que cliques, entres ou pagues, por isso a solução é abrandar."
+     ],
+     "q": "Já detetaste alguma mensagem que fingia ser o teu banco ou uma loja?",
+     "c": "Desafio: da próxima vez que uma mensagem te peça para agir, espera dez segundos antes de fazeres alguma coisa."
+    },
+    "pt_BR": {
+     "t": "O que é o phishing?",
+     "g": "Aprenda como mensagens falsas tentam obter senhas ou dinheiro.",
+     "p": [
+      "Phishing é uma mensagem que finge ser alguém de confiança para fazer você agir rápido.",
+      "Chega por e-mail, SMS, chat ou ligação e muitas vezes parece surpreendentemente real.",
+      "O objetivo é que você clique, entre ou pague, então a solução é desacelerar."
+     ],
+     "q": "Você já percebeu alguma mensagem que fingia ser seu banco ou uma loja?",
+     "c": "Desafio: da próxima vez que uma mensagem pedir para você agir, espere dez segundos antes de fazer qualquer coisa."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Anatomy of a phishing email",
+     "g": "Learn the parts to inspect: sender, subject, urgency, links and attachments.",
+     "p": [
+      "Look at who sent it, the subject, the greeting and how the message is written.",
+      "Odd spelling, generic greetings like Dear customer, and pressure to hurry are warning signs.",
+      "Check links and attachments last, and only if the message seems genuine."
+     ],
+     "q": "Which part of an email do you usually look at first?",
+     "c": "Challenge: open an old promotional email and name four parts you would inspect."
+    },
+    "de": {
+     "t": "Aufbau einer Phishing-Mail",
+     "g": "Lerne die Teile, die du prüfen solltest: Absender, Betreff, Dringlichkeit, Links und Anhänge.",
+     "p": [
+      "Sieh dir an, wer sie schickt, den Betreff, die Anrede und wie die Nachricht geschrieben ist.",
+      "Seltsame Rechtschreibung, allgemeine Anreden wie Sehr geehrter Kunde und Zeitdruck sind Warnzeichen.",
+      "Prüfe Links und Anhänge zuletzt und nur, wenn die Nachricht echt wirkt."
+     ],
+     "q": "Welchen Teil einer E-Mail schaust du meistens zuerst an?",
+     "c": "Challenge: Öffne eine alte Werbemail und benenne vier Teile, die du prüfen würdest."
+    },
+    "es": {
+     "t": "Anatomía de un correo de phishing",
+     "g": "Aprende las partes que revisar: remitente, asunto, urgencia, enlaces y adjuntos.",
+     "p": [
+      "Mira quién lo envía, el asunto, el saludo y cómo está escrito el mensaje.",
+      "Faltas raras, saludos genéricos como Estimado cliente y presión para darte prisa son señales de alerta.",
+      "Revisa enlaces y adjuntos al final, y solo si el mensaje parece genuino."
+     ],
+     "q": "¿Qué parte de un correo miras normalmente primero?",
+     "c": "Reto: abre un correo promocional antiguo y nombra cuatro partes que revisarías."
+    },
+    "fr": {
+     "t": "Anatomie d'un e-mail d'hameçonnage",
+     "g": "Apprends les éléments à inspecter : expéditeur, objet, urgence, liens et pièces jointes.",
+     "p": [
+      "Regarde qui l'envoie, l'objet, la formule d'appel et la façon dont le message est écrit.",
+      "Fautes bizarres, formules vagues comme Cher client et pression pour se hâter sont des signaux d'alerte.",
+      "Examine liens et pièces jointes en dernier, et seulement si le message semble authentique."
+     ],
+     "q": "Quelle partie d'un e-mail regardes-tu en premier d'habitude ?",
+     "c": "Défi : ouvre un ancien e-mail publicitaire et nomme quatre éléments que tu inspecterais."
+    },
+    "it": {
+     "t": "Anatomia di un'email di phishing",
+     "g": "Impara le parti da controllare: mittente, oggetto, urgenza, link e allegati.",
+     "p": [
+      "Guarda chi la manda, l'oggetto, il saluto e come è scritto il messaggio.",
+      "Errori strani, saluti generici come Gentile cliente e pressione a far presto sono segnali d'allarme.",
+      "Controlla link e allegati per ultimi e solo se il messaggio sembra genuino."
+     ],
+     "q": "Quale parte di un'email guardi di solito per prima?",
+     "c": "Sfida: apri una vecchia email promozionale e nomina quattro parti che controlleresti."
+    },
+    "pt": {
+     "t": "Anatomia de um email de phishing",
+     "g": "Aprende as partes a inspecionar: remetente, assunto, urgência, links e anexos.",
+     "p": [
+      "Vê quem o envia, o assunto, a saudação e como a mensagem está escrita.",
+      "Erros estranhos, saudações genéricas como Caro cliente e pressão para despachar são sinais de alerta.",
+      "Verifica links e anexos no fim, e só se a mensagem parecer genuína."
+     ],
+     "q": "Que parte de um email costumas ver primeiro?",
+     "c": "Desafio: abre um email promocional antigo e nomeia quatro partes que inspecionarias."
+    },
+    "pt_BR": {
+     "t": "Anatomia de um e-mail de phishing",
+     "g": "Aprenda as partes a inspecionar: remetente, assunto, urgência, links e anexos.",
+     "p": [
+      "Veja quem enviou, o assunto, a saudação e como a mensagem está escrita.",
+      "Erros estranhos, saudações genéricas como Prezado cliente e pressão para correr são sinais de alerta.",
+      "Confira links e anexos por último, e só se a mensagem parecer genuína."
+     ],
+     "q": "Que parte de um e-mail você costuma olhar primeiro?",
+     "c": "Desafio: abra um e-mail promocional antigo e nomeie quatro partes que você inspecionaria."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Checking the sender",
+     "g": "See how to look at the real email address behind a display name.",
+     "p": [
+      "The name shown can say anything; the real address is what counts.",
+      "Tap or hover on the sender name to reveal the full address behind it.",
+      "Lookalike addresses swap or add letters, so read the domain after the at sign carefully."
+     ],
+     "q": "Do you usually notice the sender address or just the name shown?",
+     "c": "Challenge: in your inbox, reveal the full sender address of three emails and read each one."
+    },
+    "de": {
+     "t": "Den Absender prüfen",
+     "g": "Sieh, wie du die echte E-Mail-Adresse hinter dem Anzeigenamen erkennst.",
+     "p": [
+      "Der angezeigte Name kann alles behaupten; die echte Adresse zählt.",
+      "Tippe oder fahre auf den Absendernamen, um die vollständige Adresse dahinter zu sehen.",
+      "Ähnliche Adressen tauschen oder ergänzen Buchstaben, lies die Domain nach dem At-Zeichen genau."
+     ],
+     "q": "Achtest du meist auf die Absenderadresse oder nur auf den angezeigten Namen?",
+     "c": "Challenge: Lass dir in deinem Postfach bei drei Mails die volle Absenderadresse anzeigen und lies sie."
+    },
+    "es": {
+     "t": "Comprobar el remitente",
+     "g": "Descubre cómo ver la dirección real de correo detrás del nombre mostrado.",
+     "p": [
+      "El nombre mostrado puede decir cualquier cosa; lo que cuenta es la dirección real.",
+      "Toca o pasa el cursor sobre el nombre para ver la dirección completa.",
+      "Las direcciones parecidas cambian o añaden letras, así que lee bien el dominio tras la arroba."
+     ],
+     "q": "¿Sueles fijarte en la dirección del remitente o solo en el nombre mostrado?",
+     "c": "Reto: en tu bandeja, muestra la dirección completa de tres remitentes y léela con calma."
+    },
+    "fr": {
+     "t": "Vérifier l'expéditeur",
+     "g": "Vois comment lire la vraie adresse e-mail derrière le nom affiché.",
+     "p": [
+      "Le nom affiché peut dire n'importe quoi ; c'est l'adresse réelle qui compte.",
+      "Touche ou survole le nom de l'expéditeur pour afficher l'adresse complète derrière.",
+      "Les adresses imitées changent ou ajoutent des lettres : lis bien le domaine après l'arobase."
+     ],
+     "q": "Regardes-tu d'habitude l'adresse de l'expéditeur ou seulement le nom affiché ?",
+     "c": "Défi : dans ta boîte, affiche l'adresse complète de trois expéditeurs et lis-les attentivement."
+    },
+    "it": {
+     "t": "Controllare il mittente",
+     "g": "Scopri come vedere il vero indirizzo email dietro il nome visualizzato.",
+     "p": [
+      "Il nome mostrato può dire qualsiasi cosa; conta l'indirizzo reale.",
+      "Tocca o passa sul nome del mittente per vedere l'indirizzo completo.",
+      "Gli indirizzi simili scambiano o aggiungono lettere, quindi leggi bene il dominio dopo la chiocciola."
+     ],
+     "q": "Di solito guardi l'indirizzo del mittente o solo il nome mostrato?",
+     "c": "Sfida: nella posta mostra l'indirizzo completo di tre mittenti e leggilo con attenzione."
+    },
+    "pt": {
+     "t": "Verificar o remetente",
+     "g": "Vê como ler o verdadeiro endereço de email por trás do nome mostrado.",
+     "p": [
+      "O nome mostrado pode dizer qualquer coisa; o que conta é o endereço real.",
+      "Toca ou passa o cursor no nome do remetente para ver o endereço completo.",
+      "Endereços parecidos trocam ou juntam letras, por isso lê bem o domínio depois do arroba."
+     ],
+     "q": "Costumas reparar no endereço do remetente ou só no nome mostrado?",
+     "c": "Desafio: na caixa de entrada, mostra o endereço completo de três remetentes e lê-os com atenção."
+    },
+    "pt_BR": {
+     "t": "Verificar o remetente",
+     "g": "Veja como ler o verdadeiro endereço de e-mail por trás do nome exibido.",
+     "p": [
+      "O nome exibido pode dizer qualquer coisa; o que conta é o endereço real.",
+      "Toque ou passe o cursor no nome do remetente para ver o endereço completo.",
+      "Endereços parecidos trocam ou acrescentam letras, então leia bem o domínio depois do arroba."
+     ],
+     "q": "Você costuma reparar no endereço do remetente ou só no nome exibido?",
+     "c": "Desafio: na caixa de entrada, mostre o endereço completo de três remetentes e leia com atenção."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Urgency and fear tactics",
+     "g": "Understand why messages that rush or scare you deserve extra suspicion.",
+     "p": [
+      "Phrases like act now or account closed today are designed to stop you thinking.",
+      "Fear and pressure make people click first and ask questions later.",
+      "Real organisations give you time, so a calm check never causes real harm."
+     ],
+     "q": "Can you remember a time a message made you feel rushed or worried?",
+     "c": "Challenge: when a message says urgent, count to ten and then verify it another way."
+    },
+    "de": {
+     "t": "Dringlichkeit und Angstmache",
+     "g": "Verstehe, warum Nachrichten, die dich hetzen oder erschrecken, besonderes Misstrauen verdienen.",
+     "p": [
+      "Sätze wie Jetzt handeln oder Konto heute gesperrt sollen dich am Nachdenken hindern.",
+      "Angst und Druck lassen Menschen zuerst klicken und später fragen.",
+      "Echte Organisationen geben dir Zeit, ein ruhiger Check schadet also nie."
+     ],
+     "q": "Erinnerst du dich an eine Nachricht, die dich gehetzt oder besorgt gemacht hat?",
+     "c": "Challenge: Zähle bei einer Nachricht mit dringend bis zehn und prüfe sie dann auf anderem Weg."
+    },
+    "es": {
+     "t": "Urgencia y tácticas de miedo",
+     "g": "Entiende por qué los mensajes que te apuran o asustan merecen más sospecha.",
+     "p": [
+      "Frases como actúa ya o cuenta cerrada hoy están hechas para que dejes de pensar.",
+      "El miedo y la presión hacen que la gente pulse primero y pregunte después.",
+      "Las organizaciones reales te dan tiempo, así que una comprobación tranquila nunca hace daño."
+     ],
+     "q": "¿Recuerdas algún mensaje que te hizo sentir apurado o preocupado?",
+     "c": "Reto: cuando un mensaje diga urgente, cuenta hasta diez y verifícalo por otra vía."
+    },
+    "fr": {
+     "t": "Urgence et tactiques de peur",
+     "g": "Comprends pourquoi les messages qui te pressent ou t'effraient méritent plus de méfiance.",
+     "p": [
+      "Des phrases comme agis maintenant ou compte fermé aujourd'hui servent à t'empêcher de réfléchir.",
+      "La peur et la pression font cliquer d'abord et poser des questions ensuite.",
+      "Les vraies organisations te laissent du temps : une vérification calme ne fait jamais de mal."
+     ],
+     "q": "Te souviens-tu d'un message qui t'a fait sentir pressé ou inquiet ?",
+     "c": "Défi : quand un message dit urgent, compte jusqu'à dix puis vérifie par un autre moyen."
+    },
+    "it": {
+     "t": "Urgenza e tattiche di paura",
+     "g": "Capisci perché i messaggi che ti mettono fretta o paura meritano più sospetto.",
+     "p": [
+      "Frasi come agisci ora o account chiuso oggi servono a farti smettere di pensare.",
+      "Paura e pressione fanno cliccare prima e fare domande dopo.",
+      "Le organizzazioni vere ti danno tempo, quindi un controllo calmo non fa mai danni."
+     ],
+     "q": "Ricordi un messaggio che ti ha fatto sentire di fretta o preoccupato?",
+     "c": "Sfida: quando un messaggio dice urgente, conta fino a dieci e poi verificalo in un altro modo."
+    },
+    "pt": {
+     "t": "Urgência e táticas de medo",
+     "g": "Percebe porque mensagens que te apressam ou assustam merecem mais desconfiança.",
+     "p": [
+      "Frases como age já ou conta fechada hoje servem para te impedir de pensar.",
+      "O medo e a pressão fazem as pessoas clicar primeiro e perguntar depois.",
+      "As organizações verdadeiras dão-te tempo, por isso uma verificação calma nunca faz mal."
+     ],
+     "q": "Lembras-te de alguma mensagem que te fez sentir apressado ou preocupado?",
+     "c": "Desafio: quando uma mensagem disser urgente, conta até dez e verifica por outra via."
+    },
+    "pt_BR": {
+     "t": "Urgência e táticas de medo",
+     "g": "Entenda por que mensagens que apressam ou assustam merecem mais desconfiança.",
+     "p": [
+      "Frases como aja já ou conta encerrada hoje servem para impedir você de pensar.",
+      "Medo e pressão fazem as pessoas clicarem primeiro e perguntarem depois.",
+      "Organizações de verdade dão tempo, então uma checagem calma nunca faz mal."
+     ],
+     "q": "Você lembra de alguma mensagem que fez você se sentir apressado ou preocupado?",
+     "c": "Desafio: quando uma mensagem disser urgente, conte até dez e verifique por outra via."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Too good to be true",
+     "g": "See prizes, refunds and surprise money as classic bait in scam messages.",
+     "p": [
+      "Unexpected prizes, refunds or inheritances are bait to get your details or a small fee.",
+      "You cannot win a contest you never entered, however friendly the message sounds.",
+      "If an offer seems too good to be true, it almost always is."
+     ],
+     "q": "What is the most tempting fake offer you have seen, even in a joke?",
+     "c": "Challenge: delete or ignore the next surprise-prize message instead of opening it."
+    },
+    "de": {
+     "t": "Zu schön, um wahr zu sein",
+     "g": "Erkenne Gewinne, Rückerstattungen und Geldsegen als klassischen Köder in Betrugsnachrichten.",
+     "p": [
+      "Unerwartete Preise, Erstattungen oder Erbschaften sollen deine Daten oder eine kleine Gebühr locken.",
+      "Du kannst keinen Wettbewerb gewinnen, bei dem du nie mitgemacht hast, so freundlich die Nachricht klingt.",
+      "Klingt ein Angebot zu gut, um wahr zu sein, ist es das fast immer."
+     ],
+     "q": "Was war das verlockendste falsche Angebot, das du gesehen hast, auch als Scherz?",
+     "c": "Challenge: Lösche oder ignoriere die nächste Gewinn-Nachricht, statt sie zu öffnen."
+    },
+    "es": {
+     "t": "Demasiado bueno para ser verdad",
+     "g": "Reconoce premios, reembolsos y dinero sorpresa como el cebo clásico de los mensajes fraudulentos.",
+     "p": [
+      "Premios, reembolsos o herencias inesperados son cebo para sacar tus datos o una pequeña tarifa.",
+      "No puedes ganar un concurso en el que nunca participaste, por amable que suene el mensaje.",
+      "Si una oferta parece demasiado buena para ser verdad, casi siempre lo es."
+     ],
+     "q": "¿Cuál ha sido la oferta falsa más tentadora que has visto, aunque fuera en broma?",
+     "c": "Reto: borra o ignora el próximo mensaje de premio sorpresa en lugar de abrirlo."
+    },
+    "fr": {
+     "t": "Trop beau pour être vrai",
+     "g": "Reconnais prix, remboursements et argent surprise comme les appâts classiques des messages d'arnaque.",
+     "p": [
+      "Prix, remboursements ou héritages inattendus servent d'appât pour obtenir tes données ou de petits frais.",
+      "Tu ne peux pas gagner un concours auquel tu n'as jamais participé, même si le message est aimable.",
+      "Si une offre paraît trop belle pour être vraie, elle l'est presque toujours."
+     ],
+     "q": "Quelle est la fausse offre la plus tentante que tu aies vue, même pour rire ?",
+     "c": "Défi : supprime ou ignore le prochain message de prix surprise au lieu de l'ouvrir."
+    },
+    "it": {
+     "t": "Troppo bello per essere vero",
+     "g": "Riconosci premi, rimborsi e denaro a sorpresa come l'esca classica dei messaggi truffa.",
+     "p": [
+      "Premi, rimborsi o eredità inattesi sono esche per ottenere i tuoi dati o una piccola commissione.",
+      "Non puoi vincere un concorso a cui non hai mai partecipato, per quanto gentile sembri il messaggio.",
+      "Se un'offerta sembra troppo bella per essere vera, quasi sempre lo è."
+     ],
+     "q": "Qual è la falsa offerta più allettante che hai visto, anche per scherzo?",
+     "c": "Sfida: elimina o ignora il prossimo messaggio di premio a sorpresa invece di aprirlo."
+    },
+    "pt": {
+     "t": "Bom demais para ser verdade",
+     "g": "Reconhece prémios, reembolsos e dinheiro surpresa como isco clássico das mensagens de burla.",
+     "p": [
+      "Prémios, reembolsos ou heranças inesperados são isco para obter os teus dados ou uma pequena taxa.",
+      "Não podes ganhar um concurso em que nunca participaste, por simpática que a mensagem pareça.",
+      "Se uma oferta parece boa demais para ser verdade, quase sempre é."
+     ],
+     "q": "Qual foi a oferta falsa mais tentadora que já viste, mesmo a brincar?",
+     "c": "Desafio: apaga ou ignora a próxima mensagem de prémio surpresa em vez de a abrir."
+    },
+    "pt_BR": {
+     "t": "Bom demais para ser verdade",
+     "g": "Reconheça prêmios, reembolsos e dinheiro surpresa como isca clássica das mensagens de golpe.",
+     "p": [
+      "Prêmios, reembolsos ou heranças inesperados são isca para obter seus dados ou uma pequena taxa.",
+      "Você não pode ganhar um concurso em que nunca participou, por simpática que a mensagem seja.",
+      "Se uma oferta parece boa demais para ser verdade, quase sempre é."
+     ],
+     "q": "Qual foi a oferta falsa mais tentadora que você já viu, mesmo de brincadeira?",
+     "c": "Desafio: apague ou ignore a próxima mensagem de prêmio surpresa em vez de abrir."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hovering over links",
+     "g": "Preview where a link really goes before you click it.",
+     "p": [
+      "On a computer, hover the mouse over a link to see its real destination at the bottom.",
+      "On a phone, press and hold a link to preview the address instead of opening it.",
+      "If the address does not match what the message claims, do not click."
+     ],
+     "q": "Do you usually check where a link goes before you tap it?",
+     "c": "Challenge: preview three links in your messages today without opening any of them."
+    },
+    "de": {
+     "t": "Mit der Maus über Links fahren",
+     "g": "Sieh dir vor dem Klick an, wohin ein Link wirklich führt.",
+     "p": [
+      "Am Computer zeigt der Mauszeiger über einem Link unten das echte Ziel an.",
+      "Am Handy zeigt langes Drücken auf einen Link die Adresse, ohne ihn zu öffnen.",
+      "Passt die Adresse nicht zu dem, was die Nachricht behauptet, klicke nicht."
+     ],
+     "q": "Prüfst du meist, wohin ein Link führt, bevor du ihn antippst?",
+     "c": "Challenge: Sieh dir heute drei Links in deinen Nachrichten in der Vorschau an, ohne einen zu öffnen."
+    },
+    "es": {
+     "t": "Pasar el cursor sobre los enlaces",
+     "g": "Previsualiza adónde lleva realmente un enlace antes de pulsarlo.",
+     "p": [
+      "En un ordenador, pasa el ratón sobre el enlace para ver su destino real abajo.",
+      "En el móvil, mantén pulsado un enlace para ver la dirección sin abrirlo.",
+      "Si la dirección no coincide con lo que dice el mensaje, no pulses."
+     ],
+     "q": "¿Sueles comprobar adónde lleva un enlace antes de tocarlo?",
+     "c": "Reto: previsualiza hoy tres enlaces de tus mensajes sin abrir ninguno."
+    },
+    "fr": {
+     "t": "Survoler les liens",
+     "g": "Prévisualise où mène vraiment un lien avant de cliquer.",
+     "p": [
+      "Sur ordinateur, survole le lien avec la souris pour voir sa vraie destination en bas.",
+      "Sur téléphone, appuie longuement sur un lien pour voir l'adresse sans l'ouvrir.",
+      "Si l'adresse ne correspond pas à ce que dit le message, ne clique pas."
+     ],
+     "q": "Vérifies-tu d'habitude où mène un lien avant de le toucher ?",
+     "c": "Défi : prévisualise aujourd'hui trois liens de tes messages sans en ouvrir aucun."
+    },
+    "it": {
+     "t": "Passare sopra i link",
+     "g": "Controlla dove porta davvero un link prima di cliccarlo.",
+     "p": [
+      "Sul computer, passa il mouse sul link per vedere la destinazione reale in basso.",
+      "Sul telefono, tieni premuto un link per vedere l'indirizzo senza aprirlo.",
+      "Se l'indirizzo non corrisponde a ciò che dice il messaggio, non cliccare."
+     ],
+     "q": "Di solito controlli dove porta un link prima di toccarlo?",
+     "c": "Sfida: oggi controlla in anteprima tre link nei tuoi messaggi senza aprirne nessuno."
+    },
+    "pt": {
+     "t": "Passar o cursor sobre links",
+     "g": "Pré-visualiza para onde um link realmente leva antes de clicares.",
+     "p": [
+      "No computador, passa o rato sobre o link para ver o destino real em baixo.",
+      "No telemóvel, mantém premido um link para ver o endereço sem o abrir.",
+      "Se o endereço não coincidir com o que a mensagem diz, não cliques."
+     ],
+     "q": "Costumas verificar para onde leva um link antes de lhe tocares?",
+     "c": "Desafio: pré-visualiza hoje três links nas tuas mensagens sem abrir nenhum."
+    },
+    "pt_BR": {
+     "t": "Passar o cursor sobre links",
+     "g": "Pré-visualize para onde um link realmente leva antes de clicar.",
+     "p": [
+      "No computador, passe o mouse sobre o link para ver o destino real embaixo.",
+      "No celular, mantenha pressionado um link para ver o endereço sem abrir.",
+      "Se o endereço não bater com o que a mensagem diz, não clique."
+     ],
+     "q": "Você costuma verificar para onde um link leva antes de tocar nele?",
+     "c": "Desafio: pré-visualize hoje três links nas suas mensagens sem abrir nenhum."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Suspicious attachments",
+     "g": "Know why unexpected files, invoices and documents may hide harmful software.",
+     "p": [
+      "An attachment you did not expect can carry harmful software that infects your device.",
+      "Be wary of fake invoices, delivery slips and files that ask you to enable content.",
+      "Confirm with the sender through another channel before opening anything unexpected."
+     ],
+     "q": "Have you ever received an attachment from someone you did not expect to hear from?",
+     "c": "Challenge: before opening any attachment today, ask yourself whether you expected it."
+    },
+    "de": {
+     "t": "Verdächtige Anhänge",
+     "g": "Wisse, warum unerwartete Dateien, Rechnungen und Dokumente Schadsoftware verbergen können.",
+     "p": [
+      "Ein unerwarteter Anhang kann Schadsoftware enthalten, die dein Gerät infiziert.",
+      "Sei vorsichtig bei falschen Rechnungen, Lieferscheinen und Dateien, die Inhalte aktivieren wollen.",
+      "Frag beim Absender über einen anderen Kanal nach, bevor du Unerwartetes öffnest."
+     ],
+     "q": "Hast du schon einen Anhang von jemandem bekommen, von dem du nichts erwartet hast?",
+     "c": "Challenge: Frag dich heute vor jedem Anhang, ob du ihn erwartet hast."
+    },
+    "es": {
+     "t": "Adjuntos sospechosos",
+     "g": "Sabe por qué archivos, facturas y documentos inesperados pueden esconder software dañino.",
+     "p": [
+      "Un adjunto inesperado puede llevar software dañino que infecte tu dispositivo.",
+      "Desconfía de facturas falsas, albaranes y archivos que piden habilitar contenido.",
+      "Confirma con el remitente por otro canal antes de abrir algo inesperado."
+     ],
+     "q": "¿Has recibido alguna vez un adjunto de alguien de quien no esperabas noticias?",
+     "c": "Reto: antes de abrir cualquier adjunto hoy, pregúntate si lo esperabas."
+    },
+    "fr": {
+     "t": "Pièces jointes suspectes",
+     "g": "Sache pourquoi fichiers, factures et documents inattendus peuvent cacher un logiciel malveillant.",
+     "p": [
+      "Une pièce jointe inattendue peut contenir un logiciel malveillant qui infecte ton appareil.",
+      "Méfie-toi des fausses factures, bons de livraison et fichiers demandant d'activer le contenu.",
+      "Confirme avec l'expéditeur par un autre canal avant d'ouvrir quoi que ce soit d'inattendu."
+     ],
+     "q": "As-tu déjà reçu une pièce jointe de quelqu'un dont tu n'attendais pas de nouvelles ?",
+     "c": "Défi : avant d'ouvrir une pièce jointe aujourd'hui, demande-toi si tu l'attendais."
+    },
+    "it": {
+     "t": "Allegati sospetti",
+     "g": "Sappi perché file, fatture e documenti inattesi possono nascondere software dannoso.",
+     "p": [
+      "Un allegato inatteso può contenere software dannoso che infetta il dispositivo.",
+      "Diffida di false fatture, bolle di consegna e file che chiedono di abilitare i contenuti.",
+      "Conferma con il mittente su un altro canale prima di aprire qualcosa di inatteso."
+     ],
+     "q": "Hai mai ricevuto un allegato da qualcuno da cui non ti aspettavi nulla?",
+     "c": "Sfida: prima di aprire un allegato oggi, chiediti se te lo aspettavi."
+    },
+    "pt": {
+     "t": "Anexos suspeitos",
+     "g": "Sabe porque ficheiros, faturas e documentos inesperados podem esconder software malicioso.",
+     "p": [
+      "Um anexo inesperado pode conter software malicioso que infeta o teu dispositivo.",
+      "Desconfia de faturas falsas, guias de entrega e ficheiros que pedem para ativar conteúdo.",
+      "Confirma com o remetente por outro canal antes de abrires algo inesperado."
+     ],
+     "q": "Já recebeste um anexo de alguém de quem não esperavas notícias?",
+     "c": "Desafio: antes de abrires qualquer anexo hoje, pergunta-te se o esperavas."
+    },
+    "pt_BR": {
+     "t": "Anexos suspeitos",
+     "g": "Saiba por que arquivos, faturas e documentos inesperados podem esconder software malicioso.",
+     "p": [
+      "Um anexo inesperado pode conter software malicioso que infecta seu aparelho.",
+      "Desconfie de faturas falsas, comprovantes de entrega e arquivos que pedem para ativar conteúdo.",
+      "Confirme com o remetente por outro canal antes de abrir algo inesperado."
+     ],
+     "q": "Você já recebeu um anexo de alguém de quem não esperava notícias?",
+     "c": "Desafio: antes de abrir qualquer anexo hoje, pergunte-se se você o esperava."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fake login pages",
+     "g": "See how copycat websites imitate real ones to steal passwords.",
+     "p": [
+      "A fake page can copy a real logo and layout almost perfectly.",
+      "The giveaway is often the web address, which differs slightly from the real one.",
+      "Open your bank or email from its app or a saved bookmark instead of from a message link."
+     ],
+     "q": "Do you usually reach your accounts through a message link or by typing the site?",
+     "c": "Challenge: bookmark the login pages of your two most important accounts from their real sites."
+    },
+    "de": {
+     "t": "Gefälschte Login-Seiten",
+     "g": "Sieh, wie nachgebaute Webseiten echte imitieren, um Passwörter zu stehlen.",
+     "p": [
+      "Eine gefälschte Seite kann Logo und Layout einer echten fast perfekt kopieren.",
+      "Verräterisch ist oft die Webadresse, die leicht von der echten abweicht.",
+      "Öffne Bank oder E-Mail über die App oder ein gespeichertes Lesezeichen, nicht über einen Nachrichtenlink."
+     ],
+     "q": "Erreichst du deine Konten meist über einen Nachrichtenlink oder durch Eintippen der Seite?",
+     "c": "Challenge: Speichere die Login-Seiten deiner zwei wichtigsten Konten von den echten Seiten als Lesezeichen."
+    },
+    "es": {
+     "t": "Páginas de acceso falsas",
+     "g": "Descubre cómo los sitios imitadores copian a los reales para robar claves.",
+     "p": [
+      "Una página falsa puede copiar casi a la perfección un logotipo y un diseño reales.",
+      "La pista suele ser la dirección web, que difiere un poco de la real.",
+      "Abre tu banco o correo desde su app o un marcador guardado, no desde el enlace de un mensaje."
+     ],
+     "q": "¿Sueles llegar a tus cuentas por un enlace de mensaje o escribiendo el sitio?",
+     "c": "Reto: guarda como marcadores las páginas de acceso de tus dos cuentas más importantes desde sus sitios reales."
+    },
+    "fr": {
+     "t": "Fausses pages de connexion",
+     "g": "Vois comment des sites copiés imitent les vrais pour voler des mots de passe.",
+     "p": [
+      "Une fausse page peut copier presque parfaitement le logo et la mise en page d'une vraie.",
+      "L'indice est souvent l'adresse web, légèrement différente de la vraie.",
+      "Ouvre ta banque ou ton e-mail via l'appli ou un favori enregistré, pas via un lien reçu."
+     ],
+     "q": "Accèdes-tu d'habitude à tes comptes par un lien de message ou en tapant le site ?",
+     "c": "Défi : enregistre en favori les pages de connexion de tes deux comptes les plus importants depuis leurs vrais sites."
+    },
+    "it": {
+     "t": "Pagine di accesso false",
+     "g": "Scopri come i siti imitatori copiano quelli veri per rubare password.",
+     "p": [
+      "Una pagina falsa può copiare quasi alla perfezione logo e aspetto di una vera.",
+      "Il segnale è spesso l'indirizzo web, leggermente diverso da quello reale.",
+      "Apri banca o email dall'app o da un segnalibro salvato, non dal link di un messaggio."
+     ],
+     "q": "Di solito raggiungi i tuoi account da un link in un messaggio o digitando il sito?",
+     "c": "Sfida: salva come segnalibri le pagine di accesso dei tuoi due account più importanti dai siti reali."
+    },
+    "pt": {
+     "t": "Páginas de início de sessão falsas",
+     "g": "Vê como sites imitadores copiam os verdadeiros para roubar palavras-passe.",
+     "p": [
+      "Uma página falsa pode copiar quase na perfeição o logótipo e o aspeto de uma verdadeira.",
+      "A pista costuma ser o endereço web, que difere ligeiramente do real.",
+      "Abre o banco ou o email pela aplicação ou por um marcador guardado, não pelo link de uma mensagem."
+     ],
+     "q": "Costumas chegar às tuas contas por um link de mensagem ou escrevendo o site?",
+     "c": "Desafio: guarda como marcadores as páginas de acesso das tuas duas contas mais importantes a partir dos sites verdadeiros."
+    },
+    "pt_BR": {
+     "t": "Páginas de login falsas",
+     "g": "Veja como sites imitadores copiam os verdadeiros para roubar senhas.",
+     "p": [
+      "Uma página falsa pode copiar quase perfeitamente o logotipo e o visual de uma verdadeira.",
+      "A pista costuma ser o endereço web, que difere um pouco do real.",
+      "Abra o banco ou o e-mail pelo app ou por um favorito salvo, não pelo link de uma mensagem."
+     ],
+     "q": "Você costuma chegar às suas contas por um link de mensagem ou digitando o site?",
+     "c": "Desafio: salve como favoritos as páginas de login das suas duas contas mais importantes a partir dos sites reais."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What to do with a phishing email",
+     "g": "Learn the calm routine: do not click, report it, delete it and check through the official app.",
+     "p": [
+      "Do not click links, open attachments or reply to a suspicious message.",
+      "Use your email's report phishing button, then delete the message.",
+      "If you worry it might be real, open the official app yourself and check there."
+     ],
+     "q": "What would you do now if a suspicious email arrived in your inbox?",
+     "c": "Challenge: find the report phishing option in your email app so you know where it is."
+    },
+    "de": {
+     "t": "Was tun mit einer Phishing-Mail",
+     "g": "Lerne die ruhige Routine: nicht klicken, melden, löschen und über die offizielle App prüfen.",
+     "p": [
+      "Klicke keine Links, öffne keine Anhänge und antworte nicht auf verdächtige Nachrichten.",
+      "Nutze die Phishing-melden-Funktion deines E-Mail-Programms und lösche die Nachricht.",
+      "Wenn sie echt sein könnte, öffne selbst die offizielle App und prüfe dort."
+     ],
+     "q": "Was würdest du jetzt tun, wenn eine verdächtige Mail in deinem Postfach läge?",
+     "c": "Challenge: Finde in deiner E-Mail-App die Option Phishing melden, damit du weißt, wo sie ist."
+    },
+    "es": {
+     "t": "Qué hacer con un correo de phishing",
+     "g": "Aprende la rutina tranquila: no pulses, denuncia, borra y comprueba por la app oficial.",
+     "p": [
+      "No pulses enlaces, no abras adjuntos ni respondas a un mensaje sospechoso.",
+      "Usa el botón de denunciar phishing de tu correo y borra el mensaje.",
+      "Si temes que sea real, abre tú mismo la app oficial y comprueba allí."
+     ],
+     "q": "¿Qué harías ahora si llegara un correo sospechoso a tu bandeja?",
+     "c": "Reto: encuentra la opción de denunciar phishing en tu app de correo para saber dónde está."
+    },
+    "fr": {
+     "t": "Que faire d'un e-mail d'hameçonnage",
+     "g": "Apprends la routine calme : ne clique pas, signale, supprime et vérifie via l'appli officielle.",
+     "p": [
+      "Ne clique sur aucun lien, n'ouvre aucune pièce jointe et ne réponds pas à un message suspect.",
+      "Utilise le bouton de signalement d'hameçonnage de ta messagerie, puis supprime le message.",
+      "Si tu crains qu'il soit vrai, ouvre toi-même l'appli officielle et vérifie là-bas."
+     ],
+     "q": "Que ferais-tu maintenant si un e-mail suspect arrivait dans ta boîte ?",
+     "c": "Défi : trouve l'option de signalement d'hameçonnage dans ta messagerie pour savoir où elle se trouve."
+    },
+    "it": {
+     "t": "Cosa fare con un'email di phishing",
+     "g": "Impara la routine calma: non cliccare, segnala, elimina e controlla dall'app ufficiale.",
+     "p": [
+      "Non cliccare link, non aprire allegati e non rispondere a un messaggio sospetto.",
+      "Usa il pulsante segnala phishing della tua posta, poi elimina il messaggio.",
+      "Se temi che sia vero, apri tu stesso l'app ufficiale e controlla lì."
+     ],
+     "q": "Cosa faresti ora se arrivasse un'email sospetta nella tua casella?",
+     "c": "Sfida: trova l'opzione segnala phishing nella tua app di posta per sapere dov'è."
+    },
+    "pt": {
+     "t": "O que fazer com um email de phishing",
+     "g": "Aprende a rotina calma: não cliques, denuncia, apaga e confirma pela aplicação oficial.",
+     "p": [
+      "Não cliques em links, não abras anexos nem respondas a uma mensagem suspeita.",
+      "Usa o botão de denunciar phishing do teu email e depois apaga a mensagem.",
+      "Se receares que seja real, abre tu a aplicação oficial e verifica lá."
+     ],
+     "q": "O que farias agora se chegasse à tua caixa um email suspeito?",
+     "c": "Desafio: encontra a opção de denunciar phishing na tua aplicação de email para saberes onde está."
+    },
+    "pt_BR": {
+     "t": "O que fazer com um e-mail de phishing",
+     "g": "Aprenda a rotina calma: não clique, denuncie, apague e confira pelo app oficial.",
+     "p": [
+      "Não clique em links, não abra anexos nem responda a uma mensagem suspeita.",
+      "Use o botão de denunciar phishing do seu e-mail e depois apague a mensagem.",
+      "Se temer que seja real, abra você mesmo o app oficial e confira lá."
+     ],
+     "q": "O que você faria agora se chegasse um e-mail suspeito na sua caixa?",
+     "c": "Desafio: encontre a opção de denunciar phishing no seu app de e-mail para saber onde está."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Phishing spotting practice",
+     "g": "Review sample messages and name the warning signs in each.",
+     "p": [
+      "Practise with imagined examples: urgent tone, odd sender, vague greeting, strange link.",
+      "Each warning sign alone is a hint; several together are a strong signal.",
+      "Trust the pause: spotting one sign is enough reason to verify another way."
+     ],
+     "q": "Describe a made-up phishing message and the signs you would catch in it.",
+     "c": "Challenge: write a fake phishing message in your head and count its warning signs."
+    },
+    "de": {
+     "t": "Phishing erkennen üben",
+     "g": "Sieh dir Beispielnachrichten an und benenne die Warnzeichen in jeder.",
+     "p": [
+      "Übe mit ausgedachten Beispielen: dringlicher Ton, seltsamer Absender, vage Anrede, komischer Link.",
+      "Ein Warnzeichen allein ist ein Hinweis; mehrere zusammen sind ein starkes Signal.",
+      "Vertraue der Pause: Ein erkanntes Zeichen reicht, um auf anderem Weg nachzuprüfen."
+     ],
+     "q": "Beschreibe eine ausgedachte Phishing-Nachricht und die Zeichen, die dir auffallen würden.",
+     "c": "Challenge: Denk dir im Kopf eine falsche Phishing-Nachricht aus und zähle ihre Warnzeichen."
+    },
+    "es": {
+     "t": "Práctica: detectar phishing",
+     "g": "Revisa mensajes de ejemplo y nombra las señales de alerta de cada uno.",
+     "p": [
+      "Practica con ejemplos imaginarios: tono urgente, remitente raro, saludo vago, enlace extraño.",
+      "Cada señal sola es una pista; varias juntas son una señal fuerte.",
+      "Confía en la pausa: detectar una señal basta para verificar por otra vía."
+     ],
+     "q": "Describe un mensaje de phishing inventado y las señales que detectarías.",
+     "c": "Reto: imagina un mensaje de phishing falso y cuenta sus señales de alerta."
+    },
+    "fr": {
+     "t": "S'entraîner à repérer l'hameçonnage",
+     "g": "Passe en revue des exemples de messages et nomme les signaux d'alerte de chacun.",
+     "p": [
+      "Entraîne-toi avec des exemples imaginaires : ton urgent, expéditeur bizarre, formule vague, lien étrange.",
+      "Chaque signal seul est un indice ; plusieurs ensemble forment un signal fort.",
+      "Fais confiance à la pause : un seul signal repéré suffit pour vérifier autrement."
+     ],
+     "q": "Décris un faux message d'hameçonnage inventé et les signaux que tu y repérerais.",
+     "c": "Défi : imagine un faux message d'hameçonnage et compte ses signaux d'alerte."
+    },
+    "it": {
+     "t": "Allenarsi a riconoscere il phishing",
+     "g": "Rivedi messaggi di esempio e nomina i segnali d'allarme di ciascuno.",
+     "p": [
+      "Esercitati con esempi immaginari: tono urgente, mittente strano, saluto vago, link insolito.",
+      "Ogni segnale da solo è un indizio; più segnali insieme sono un forte avviso.",
+      "Fidati della pausa: notare un solo segnale basta per verificare in un altro modo."
+     ],
+     "q": "Descrivi un messaggio di phishing inventato e i segnali che noteresti.",
+     "c": "Sfida: immagina un finto messaggio di phishing e conta i suoi segnali d'allarme."
+    },
+    "pt": {
+     "t": "Treino para detetar phishing",
+     "g": "Revê mensagens de exemplo e nomeia os sinais de alerta de cada uma.",
+     "p": [
+      "Treina com exemplos imaginários: tom urgente, remetente estranho, saudação vaga, link esquisito.",
+      "Cada sinal sozinho é uma pista; vários juntos são um sinal forte.",
+      "Confia na pausa: detetar um só sinal basta para verificar de outra forma."
+     ],
+     "q": "Descreve uma mensagem de phishing inventada e os sinais que detetarias.",
+     "c": "Desafio: imagina uma mensagem de phishing falsa e conta os seus sinais de alerta."
+    },
+    "pt_BR": {
+     "t": "Treino para identificar phishing",
+     "g": "Revise mensagens de exemplo e nomeie os sinais de alerta de cada uma.",
+     "p": [
+      "Treine com exemplos imaginários: tom urgente, remetente estranho, saudação vaga, link esquisito.",
+      "Cada sinal sozinho é uma pista; vários juntos são um sinal forte.",
+      "Confie na pausa: perceber um só sinal basta para verificar de outra forma."
+     ],
+     "q": "Descreva uma mensagem de phishing inventada e os sinais que você perceberia.",
+     "c": "Desafio: imagine uma mensagem de phishing falsa e conte seus sinais de alerta."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "geography",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Longitude",
+     "g": "Learn how longitude tells you how far east or west a place lies from Greenwich.",
+     "p": [
+      "Meridians are lines that run from the North Pole to the South Pole.",
+      "The prime meridian passes through Greenwich, England, and is set at 0 degrees.",
+      "Longitude runs up to 180 degrees east and 180 degrees west."
+     ],
+     "q": "Do you know whether your home is east or west of Greenwich?",
+     "c": "Find a city on the opposite side of the prime meridian from yours."
+    },
+    "de": {
+     "t": "Längengrade",
+     "g": "Lerne, wie der Längengrad zeigt, wie weit ein Ort östlich oder westlich von Greenwich liegt.",
+     "p": [
+      "Meridiane sind Linien, die vom Nordpol zum Südpol verlaufen.",
+      "Der Nullmeridian führt durch Greenwich in England und liegt bei 0 Grad.",
+      "Die Längengrade reichen bis 180 Grad östlicher und 180 Grad westlicher Länge."
+     ],
+     "q": "Weißt du, ob dein Wohnort östlich oder westlich von Greenwich liegt?",
+     "c": "Suche eine Stadt auf der anderen Seite des Nullmeridians als deine."
+    },
+    "es": {
+     "t": "Longitud",
+     "g": "Aprende cómo la longitud indica cuán al este u oeste de Greenwich está un lugar.",
+     "p": [
+      "Los meridianos son líneas que van del polo norte al polo sur.",
+      "El meridiano de origen pasa por Greenwich, en Inglaterra, y vale 0 grados.",
+      "La longitud llega hasta 180 grados este y 180 grados oeste."
+     ],
+     "q": "¿Sabes si tu casa está al este o al oeste de Greenwich?",
+     "c": "Busca una ciudad al otro lado del meridiano de origen respecto a la tuya."
+    },
+    "fr": {
+     "t": "La longitude",
+     "g": "Découvre comment la longitude indique la distance à l'est ou à l'ouest de Greenwich.",
+     "p": [
+      "Les méridiens sont des lignes qui vont du pôle Nord au pôle Sud.",
+      "Le méridien d'origine passe par Greenwich, en Angleterre, et vaut 0 degré.",
+      "La longitude va jusqu'à 180 degrés est et 180 degrés ouest."
+     ],
+     "q": "Sais-tu si ta maison est à l'est ou à l'ouest de Greenwich ?",
+     "c": "Trouve une ville de l'autre côté du méridien d'origine par rapport à la tienne."
+    },
+    "it": {
+     "t": "La longitudine",
+     "g": "Scopri come la longitudine indica quanto un luogo è a est o a ovest di Greenwich.",
+     "p": [
+      "I meridiani sono linee che vanno dal Polo Nord al Polo Sud.",
+      "Il meridiano fondamentale passa per Greenwich, in Inghilterra, e vale 0 gradi.",
+      "La longitudine arriva fino a 180 gradi est e 180 gradi ovest."
+     ],
+     "q": "Sai se casa tua è a est o a ovest di Greenwich?",
+     "c": "Trova una città dall'altra parte del meridiano fondamentale rispetto alla tua."
+    },
+    "pt": {
+     "t": "Longitude",
+     "g": "Aprende como a longitude indica a distância a este ou a oeste de Greenwich.",
+     "p": [
+      "Os meridianos são linhas que vão do Polo Norte ao Polo Sul.",
+      "O meridiano de Greenwich passa em Inglaterra e vale 0 graus.",
+      "A longitude chega aos 180 graus a leste e aos 180 graus a oeste."
+     ],
+     "q": "Sabes se a tua casa fica a este ou a oeste de Greenwich?",
+     "c": "Encontra uma cidade do outro lado do meridiano de Greenwich em relação à tua."
+    },
+    "pt_BR": {
+     "t": "Longitude",
+     "g": "Aprenda como a longitude indica a distância a leste ou a oeste de Greenwich.",
+     "p": [
+      "Os meridianos são linhas que vão do Polo Norte ao Polo Sul.",
+      "O meridiano de Greenwich passa pela Inglaterra e vale 0 grau.",
+      "A longitude chega a 180 graus leste e a 180 graus oeste."
+     ],
+     "q": "Você sabe se sua casa fica a leste ou a oeste de Greenwich?",
+     "c": "Ache uma cidade do outro lado do meridiano de Greenwich em relação à sua."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Coordinates",
+     "g": "Combine latitude and longitude to pinpoint any place on Earth.",
+     "p": [
+      "A coordinate pair gives latitude first, then longitude, like 48.9 N, 2.3 E.",
+      "Each place on Earth has its own pair, a bit like an address for the planet.",
+      "Decimal numbers give fine detail: tiny changes move you only a few meters."
+     ],
+     "q": "Which landmark would you like to look up by coordinates?",
+     "c": "Look up the coordinates of your favorite landmark and note them down."
+    },
+    "de": {
+     "t": "Koordinaten",
+     "g": "Verbinde Breiten- und Längengrad, um jeden Ort der Erde genau zu bestimmen.",
+     "p": [
+      "Ein Koordinatenpaar nennt zuerst die Breite, dann die Länge, etwa 48,9 N, 2,3 O.",
+      "Jeder Ort der Erde hat sein eigenes Paar, wie eine Adresse für den Planeten.",
+      "Dezimalstellen liefern Details: winzige Änderungen verschieben dich nur um Meter."
+     ],
+     "q": "Welche Sehenswürdigkeit würdest du gern per Koordinaten nachschlagen?",
+     "c": "Suche die Koordinaten deines Lieblingsorts heraus und notiere sie."
+    },
+    "es": {
+     "t": "Coordenadas",
+     "g": "Combina latitud y longitud para ubicar con precisión cualquier lugar de la Tierra.",
+     "p": [
+      "Un par de coordenadas da primero la latitud y luego la longitud, como 48,9 N, 2,3 E.",
+      "Cada lugar tiene su propio par, como una dirección para todo el planeta.",
+      "Los decimales dan detalle: cambios mínimos te mueven solo unos metros."
+     ],
+     "q": "¿Qué monumento te gustaría buscar por sus coordenadas?",
+     "c": "Busca las coordenadas de tu lugar favorito y anótalas."
+    },
+    "fr": {
+     "t": "Les coordonnées",
+     "g": "Combine latitude et longitude pour situer précisément n'importe quel lieu sur Terre.",
+     "p": [
+      "Un couple de coordonnées donne d'abord la latitude, puis la longitude, comme 48,9 N, 2,3 E.",
+      "Chaque lieu a son propre couple, un peu comme une adresse pour la planète.",
+      "Les décimales apportent du détail : un petit changement ne déplace que de quelques mètres."
+     ],
+     "q": "Quel monument aimerais-tu chercher grâce à ses coordonnées ?",
+     "c": "Cherche les coordonnées de ton lieu préféré et note-les."
+    },
+    "it": {
+     "t": "Le coordinate",
+     "g": "Combina latitudine e longitudine per individuare con precisione qualsiasi luogo sulla Terra.",
+     "p": [
+      "Una coppia di coordinate indica prima la latitudine, poi la longitudine, come 48,9 N, 2,3 E.",
+      "Ogni luogo ha la sua coppia, un po' come un indirizzo per il pianeta.",
+      "I decimali danno dettaglio: piccole variazioni ti spostano solo di pochi metri."
+     ],
+     "q": "Quale monumento vorresti cercare tramite le sue coordinate?",
+     "c": "Cerca le coordinate del tuo luogo preferito e annotale."
+    },
+    "pt": {
+     "t": "Coordenadas",
+     "g": "Combina latitude e longitude para localizar com precisão qualquer ponto da Terra.",
+     "p": [
+      "Um par de coordenadas dá primeiro a latitude e depois a longitude, como 48,9 N, 2,3 E.",
+      "Cada lugar tem o seu par, como uma morada para o planeta inteiro.",
+      "As casas decimais dão pormenor: pequenas mudanças deslocam-te só alguns metros."
+     ],
+     "q": "Que monumento gostarias de procurar pelas coordenadas?",
+     "c": "Procura as coordenadas do teu lugar favorito e anota-as."
+    },
+    "pt_BR": {
+     "t": "Coordenadas",
+     "g": "Combine latitude e longitude para localizar com precisão qualquer ponto da Terra.",
+     "p": [
+      "Um par de coordenadas dá primeiro a latitude e depois a longitude, como 48,9 N, 2,3 L.",
+      "Cada lugar tem o seu par, como um endereço para o planeta inteiro.",
+      "As casas decimais dão detalhe: pequenas mudanças deslocam você só alguns metros."
+     ],
+     "q": "Que monumento você gostaria de procurar pelas coordenadas?",
+     "c": "Procure as coordenadas do seu lugar favorito e anote."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The equator and the tropics",
+     "g": "Meet the equator and the two tropics and see what they mean for sunlight.",
+     "p": [
+      "The equator is the 0 degree line of latitude, halfway between the poles.",
+      "The Tropics of Cancer and Capricorn lie at about 23.5 degrees north and south.",
+      "Inside the tropics the Sun can shine straight overhead at noon on some days."
+     ],
+     "q": "Do you live inside the tropics, or is the equator far from you?",
+     "c": "Name three countries that the equator crosses."
+    },
+    "de": {
+     "t": "Äquator und Wendekreise",
+     "g": "Lerne Äquator und Wendekreise kennen und was sie für das Sonnenlicht bedeuten.",
+     "p": [
+      "Der Äquator ist der Breitenkreis bei 0 Grad, genau zwischen den Polen.",
+      "Die Wendekreise des Krebses und des Steinbocks liegen bei etwa 23,5 Grad Nord und Süd.",
+      "Zwischen den Wendekreisen steht die Sonne an manchen Tagen mittags senkrecht."
+     ],
+     "q": "Wohnst du zwischen den Wendekreisen oder ist der Äquator weit weg?",
+     "c": "Nenne drei Länder, die der Äquator durchquert."
+    },
+    "es": {
+     "t": "El ecuador y los trópicos",
+     "g": "Conoce el ecuador y los dos trópicos y lo que significan para la luz del Sol.",
+     "p": [
+      "El ecuador es el paralelo de 0 grados, a medio camino entre los polos.",
+      "Los trópicos de Cáncer y Capricornio están a unos 23,5 grados norte y sur.",
+      "Entre los trópicos el Sol puede quedar justo sobre tu cabeza al mediodía."
+     ],
+     "q": "¿Vives dentro de los trópicos o el ecuador te queda lejos?",
+     "c": "Nombra tres países que cruza el ecuador."
+    },
+    "fr": {
+     "t": "L'équateur et les tropiques",
+     "g": "Découvre l'équateur et les deux tropiques et ce qu'ils changent pour la lumière du Soleil.",
+     "p": [
+      "L'équateur est le parallèle de 0 degré, à mi-chemin entre les pôles.",
+      "Les tropiques du Cancer et du Capricorne sont à environ 23,5 degrés nord et sud.",
+      "Entre les tropiques, le Soleil peut être à la verticale à midi certains jours."
+     ],
+     "q": "Vis-tu dans la zone tropicale ou l'équateur est-il loin de toi ?",
+     "c": "Cite trois pays traversés par l'équateur."
+    },
+    "it": {
+     "t": "L'equatore e i tropici",
+     "g": "Conosci l'equatore e i due tropici e cosa significano per la luce del Sole.",
+     "p": [
+      "L'equatore è il parallelo di 0 gradi, a metà strada tra i poli.",
+      "I tropici del Cancro e del Capricorno stanno a circa 23,5 gradi nord e sud.",
+      "Tra i tropici il Sole può trovarsi allo zenit a mezzogiorno in certi giorni."
+     ],
+     "q": "Vivi dentro i tropici o l'equatore è lontano da te?",
+     "c": "Nomina tre paesi attraversati dall'equatore."
+    },
+    "pt": {
+     "t": "O equador e os trópicos",
+     "g": "Conhece o equador e os dois trópicos e o que significam para a luz do Sol.",
+     "p": [
+      "O equador é o paralelo de 0 graus, a meio caminho entre os polos.",
+      "Os trópicos de Câncer e de Capricórnio ficam a cerca de 23,5 graus norte e sul.",
+      "Entre os trópicos o Sol pode ficar mesmo por cima da cabeça ao meio-dia."
+     ],
+     "q": "Vives dentro dos trópicos ou o equador fica longe de ti?",
+     "c": "Diz o nome de três países que o equador atravessa."
+    },
+    "pt_BR": {
+     "t": "O equador e os trópicos",
+     "g": "Conheça o equador e os dois trópicos e o que significam para a luz do Sol.",
+     "p": [
+      "O equador é o paralelo de 0 grau, a meio caminho entre os polos.",
+      "Os trópicos de Câncer e de Capricórnio ficam a cerca de 23,5 graus norte e sul.",
+      "Entre os trópicos o Sol pode ficar bem sobre a cabeça ao meio-dia."
+     ],
+     "q": "Você mora dentro dos trópicos ou o equador fica longe de você?",
+     "c": "Diga o nome de três países que o equador atravessa."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The polar circles",
+     "g": "Explore the Arctic and Antarctic Circles, where the Sun can stay up or down all day.",
+     "p": [
+      "The polar circles lie at about 66.5 degrees north and south.",
+      "Inside them there is at least one day of midnight Sun in summer.",
+      "In winter there is at least one day of polar night with no sunrise."
+     ],
+     "q": "Would you enjoy a night that never gets dark? Why or why not?",
+     "c": "Find a town north of the Arctic Circle and note its summer light."
+    },
+    "de": {
+     "t": "Die Polarkreise",
+     "g": "Entdecke Nord- und Südpolarkreis, wo die Sonne einen Tag lang nicht untergeht oder aufgeht.",
+     "p": [
+      "Die Polarkreise liegen bei etwa 66,5 Grad Nord und Süd.",
+      "Innerhalb gibt es im Sommer mindestens einen Tag mit Mitternachtssonne.",
+      "Im Winter gibt es mindestens einen Tag Polarnacht ohne Sonnenaufgang."
+     ],
+     "q": "Würdest du eine Nacht genießen, die nie dunkel wird? Warum?",
+     "c": "Suche eine Stadt nördlich des Polarkreises und lies nach ihrem Sommerlicht."
+    },
+    "es": {
+     "t": "Los círculos polares",
+     "g": "Explora los círculos polares ártico y antártico, donde el Sol puede no ponerse o no salir en todo un día.",
+     "p": [
+      "Los círculos polares están a unos 66,5 grados norte y sur.",
+      "Dentro de ellos hay al menos un día de Sol de medianoche en verano.",
+      "En invierno hay al menos un día de noche polar sin amanecer."
+     ],
+     "q": "¿Disfrutarías de una noche que nunca oscurece? ¿Por qué?",
+     "c": "Busca un pueblo al norte del círculo polar ártico y mira su luz de verano."
+    },
+    "fr": {
+     "t": "Les cercles polaires",
+     "g": "Explore les cercles polaires arctique et antarctique, où le Soleil peut rester levé ou couché un jour entier.",
+     "p": [
+      "Les cercles polaires sont à environ 66,5 degrés nord et sud.",
+      "À l'intérieur, il y a au moins un jour de Soleil de minuit en été.",
+      "En hiver, il y a au moins un jour de nuit polaire sans lever du Soleil."
+     ],
+     "q": "Aimerais-tu une nuit qui ne devient jamais sombre ? Pourquoi ?",
+     "c": "Trouve une ville au nord du cercle polaire arctique et sa lumière d'été."
+    },
+    "it": {
+     "t": "I circoli polari",
+     "g": "Esplora il circolo polare artico e antartico, dove il Sole può restare su o giù per un giorno intero.",
+     "p": [
+      "I circoli polari stanno a circa 66,5 gradi nord e sud.",
+      "Al loro interno c'è almeno un giorno di Sole di mezzanotte in estate.",
+      "In inverno c'è almeno un giorno di notte polare senza alba."
+     ],
+     "q": "Ti piacerebbe una notte che non si fa mai buia? Perché?",
+     "c": "Trova una città a nord del circolo polare artico e leggi della sua luce estiva."
+    },
+    "pt": {
+     "t": "Os círculos polares",
+     "g": "Explora os círculos polares ártico e antártico, onde o Sol pode não se pôr ou não nascer durante um dia inteiro.",
+     "p": [
+      "Os círculos polares ficam a cerca de 66,5 graus norte e sul.",
+      "Lá dentro há pelo menos um dia de Sol da meia-noite no verão.",
+      "No inverno há pelo menos um dia de noite polar sem nascer do Sol."
+     ],
+     "q": "Gostarias de uma noite que nunca escurece? Porquê?",
+     "c": "Procura uma localidade a norte do círculo polar ártico e vê a sua luz de verão."
+    },
+    "pt_BR": {
+     "t": "Os círculos polares",
+     "g": "Explore os círculos polares ártico e antártico, onde o Sol pode não se pôr ou não nascer por um dia inteiro.",
+     "p": [
+      "Os círculos polares ficam a cerca de 66,5 graus norte e sul.",
+      "Dentro deles há pelo menos um dia de Sol da meia-noite no verão.",
+      "No inverno há pelo menos um dia de noite polar sem nascer do Sol."
+     ],
+     "q": "Você gostaria de uma noite que nunca escurece? Por quê?",
+     "c": "Procure uma cidade ao norte do círculo polar ártico e veja sua luz de verão."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hemispheres",
+     "g": "See how the equator and prime meridian split Earth into four halves.",
+     "p": [
+      "The equator divides the Northern and Southern Hemispheres.",
+      "The prime meridian and its opposite line split the Eastern and Western halves.",
+      "Most land lies in the Northern Hemisphere, and seasons are reversed in the south."
+     ],
+     "q": "Which hemispheres does your country belong to?",
+     "c": "Name one country in each of the four hemispheres."
+    },
+    "de": {
+     "t": "Hemisphären",
+     "g": "Sieh, wie Äquator und Nullmeridian die Erde in vier Hälften teilen.",
+     "p": [
+      "Der Äquator trennt die Nord- von der Südhalbkugel.",
+      "Der Nullmeridian und seine Gegenlinie trennen die Ost- von der Westhalbkugel.",
+      "Das meiste Land liegt im Norden, und die Jahreszeiten sind im Süden umgekehrt."
+     ],
+     "q": "Zu welchen Hemisphären gehört dein Land?",
+     "c": "Nenne je ein Land in jeder der vier Hemisphären."
+    },
+    "es": {
+     "t": "Hemisferios",
+     "g": "Descubre cómo el ecuador y el meridiano de origen dividen la Tierra en cuatro mitades.",
+     "p": [
+      "El ecuador separa el hemisferio norte del hemisferio sur.",
+      "El meridiano de origen y su opuesto separan las mitades este y oeste.",
+      "La mayor parte de la tierra está en el norte y las estaciones se invierten en el sur."
+     ],
+     "q": "¿A qué hemisferios pertenece tu país?",
+     "c": "Nombra un país de cada uno de los cuatro hemisferios."
+    },
+    "fr": {
+     "t": "Les hémisphères",
+     "g": "Vois comment l'équateur et le méridien d'origine coupent la Terre en quatre moitiés.",
+     "p": [
+      "L'équateur sépare l'hémisphère nord de l'hémisphère sud.",
+      "Le méridien d'origine et son opposé séparent les moitiés est et ouest.",
+      "La plupart des terres sont au nord, et les saisons sont inversées au sud."
+     ],
+     "q": "À quels hémisphères appartient ton pays ?",
+     "c": "Cite un pays dans chacun des quatre hémisphères."
+    },
+    "it": {
+     "t": "Gli emisferi",
+     "g": "Scopri come l'equatore e il meridiano fondamentale dividono la Terra in quattro metà.",
+     "p": [
+      "L'equatore separa l'emisfero boreale da quello australe.",
+      "Il meridiano fondamentale e il suo opposto separano le metà est e ovest.",
+      "Gran parte delle terre è a nord, e le stagioni sono invertite a sud."
+     ],
+     "q": "A quali emisferi appartiene il tuo paese?",
+     "c": "Nomina un paese per ciascuno dei quattro emisferi."
+    },
+    "pt": {
+     "t": "Os hemisférios",
+     "g": "Vê como o equador e o meridiano de Greenwich dividem a Terra em quatro metades.",
+     "p": [
+      "O equador separa o hemisfério norte do hemisfério sul.",
+      "O meridiano de Greenwich e o seu oposto separam as metades este e oeste.",
+      "A maior parte da terra fica a norte e as estações do ano são invertidas a sul."
+     ],
+     "q": "A que hemisférios pertence o teu país?",
+     "c": "Diz o nome de um país em cada um dos quatro hemisférios."
+    },
+    "pt_BR": {
+     "t": "Os hemisférios",
+     "g": "Veja como o equador e o meridiano de Greenwich dividem a Terra em quatro metades.",
+     "p": [
+      "O equador separa o hemisfério norte do hemisfério sul.",
+      "O meridiano de Greenwich e o seu oposto separam as metades leste e oeste.",
+      "A maior parte da terra fica no norte e as estações do ano são invertidas no sul."
+     ],
+     "q": "A quais hemisférios o seu país pertence?",
+     "c": "Diga o nome de um país em cada um dos quatro hemisférios."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Map projections",
+     "g": "Learn why flat maps stretch the world and why Greenland looks so huge.",
+     "p": [
+      "A globe is round, so any flat map must stretch or squeeze something.",
+      "The Mercator map keeps shapes and directions but inflates areas near the poles.",
+      "The Robinson projection is a compromise that shows the whole world more evenly."
+     ],
+     "q": "Have you noticed a country that looks surprisingly big on a map?",
+     "c": "Compare Greenland and Africa on a globe, then on a flat map."
+    },
+    "de": {
+     "t": "Kartenprojektionen",
+     "g": "Lerne, warum flache Karten die Welt verzerren und Grönland so riesig wirkt.",
+     "p": [
+      "Ein Globus ist rund, also muss jede flache Karte etwas dehnen oder stauchen.",
+      "Die Mercator-Karte bewahrt Formen und Richtungen, bläht aber Flächen an den Polen auf.",
+      "Die Robinson-Projektion ist ein Kompromiss, der die Welt gleichmäßiger zeigt."
+     ],
+     "q": "Ist dir schon ein Land aufgefallen, das auf der Karte erstaunlich groß wirkt?",
+     "c": "Vergleiche Grönland und Afrika auf dem Globus und auf einer flachen Karte."
+    },
+    "es": {
+     "t": "Proyecciones cartográficas",
+     "g": "Aprende por qué los mapas planos deforman el mundo y Groenlandia parece enorme.",
+     "p": [
+      "Un globo es redondo, así que todo mapa plano estira o aprieta algo.",
+      "El mapa de Mercator conserva formas y direcciones, pero agranda las zonas polares.",
+      "La proyección de Robinson es un compromiso que muestra el mundo de forma más pareja."
+     ],
+     "q": "¿Has notado algún país que parece muy grande en el mapa?",
+     "c": "Compara Groenlandia y África en un globo y luego en un mapa plano."
+    },
+    "fr": {
+     "t": "Les projections cartographiques",
+     "g": "Comprends pourquoi les cartes planes déforment le monde et pourquoi le Groenland paraît immense.",
+     "p": [
+      "Un globe est rond : toute carte plane doit donc étirer ou écraser quelque chose.",
+      "La carte de Mercator garde formes et directions, mais gonfle les surfaces près des pôles.",
+      "La projection de Robinson est un compromis qui montre le monde plus équitablement."
+     ],
+     "q": "As-tu déjà remarqué un pays qui paraît très grand sur une carte ?",
+     "c": "Compare le Groenland et l'Afrique sur un globe, puis sur une carte plane."
+    },
+    "it": {
+     "t": "Le proiezioni cartografiche",
+     "g": "Scopri perché le carte piane deformano il mondo e la Groenlandia sembra enorme.",
+     "p": [
+      "Un globo è rotondo, quindi ogni carta piana deve stirare o comprimere qualcosa.",
+      "La carta di Mercatore mantiene forme e direzioni, ma ingrandisce le aree vicino ai poli.",
+      "La proiezione di Robinson è un compromesso che mostra il mondo in modo più equilibrato."
+     ],
+     "q": "Hai mai notato un paese che sulla carta sembra molto grande?",
+     "c": "Confronta la Groenlandia e l'Africa su un globo e poi su una carta piana."
+    },
+    "pt": {
+     "t": "As projeções cartográficas",
+     "g": "Descobre porque é que os mapas planos deformam o mundo e a Gronelândia parece enorme.",
+     "p": [
+      "Um globo é redondo, por isso todo o mapa plano tem de esticar ou apertar algo.",
+      "O mapa de Mercator mantém formas e direções, mas aumenta as áreas perto dos polos.",
+      "A projeção de Robinson é um compromisso que mostra o mundo de forma mais equilibrada."
+     ],
+     "q": "Já reparaste num país que parece enorme num mapa?",
+     "c": "Compara a Gronelândia e a África num globo e depois num mapa plano."
+    },
+    "pt_BR": {
+     "t": "As projeções cartográficas",
+     "g": "Descubra por que os mapas planos deformam o mundo e a Groenlândia parece enorme.",
+     "p": [
+      "Um globo é redondo, por isso todo mapa plano precisa esticar ou apertar algo.",
+      "O mapa de Mercator mantém formas e direções, mas aumenta as áreas perto dos polos.",
+      "A projeção de Robinson é um meio-termo que mostra o mundo de forma mais equilibrada."
+     ],
+     "q": "Você já reparou em algum país que parece enorme no mapa?",
+     "c": "Compare a Groenlândia e a África em um globo e depois em um mapa plano."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Time zones",
+     "g": "Find out why the world is split into time zones that follow the Sun.",
+     "p": [
+      "Earth turns about 15 degrees every hour, so noon arrives earlier in the east.",
+      "The world is divided into zones, each usually one hour apart from its neighbor.",
+      "Some countries use one zone for everything, while others use several."
+     ],
+     "q": "What time is it now somewhere far from you, and what is it like there?",
+     "c": "Pick a city on another continent and work out its time difference from yours."
+    },
+    "de": {
+     "t": "Zeitzonen",
+     "g": "Finde heraus, warum die Welt in Zeitzonen geteilt ist, die der Sonne folgen.",
+     "p": [
+      "Die Erde dreht sich pro Stunde etwa 15 Grad, daher ist es im Osten früher Mittag.",
+      "Die Welt ist in Zonen geteilt, meist je eine Stunde vom Nachbarn entfernt.",
+      "Manche Länder nutzen eine einzige Zone, andere mehrere."
+     ],
+     "q": "Wie spät ist es gerade weit weg von dir, und wie ist es dort?",
+     "c": "Wähle eine Stadt auf einem anderen Kontinent und berechne den Zeitunterschied."
+    },
+    "es": {
+     "t": "Husos horarios",
+     "g": "Descubre por qué el mundo se divide en husos horarios que siguen al Sol.",
+     "p": [
+      "La Tierra gira unos 15 grados por hora, así que el mediodía llega antes al este.",
+      "El mundo se divide en zonas, normalmente a una hora de distancia entre vecinas.",
+      "Algunos países usan una sola zona y otros varias."
+     ],
+     "q": "¿Qué hora es ahora en un lugar lejano y cómo será allí?",
+     "c": "Elige una ciudad de otro continente y calcula su diferencia horaria con la tuya."
+    },
+    "fr": {
+     "t": "Les fuseaux horaires",
+     "g": "Découvre pourquoi le monde est divisé en fuseaux horaires qui suivent le Soleil.",
+     "p": [
+      "La Terre tourne d'environ 15 degrés par heure, donc midi arrive plus tôt à l'est.",
+      "Le monde est découpé en fuseaux, souvent distants d'une heure de leur voisin.",
+      "Certains pays utilisent un seul fuseau, d'autres plusieurs."
+     ],
+     "q": "Quelle heure est-il en ce moment loin de chez toi, et comment est-ce là-bas ?",
+     "c": "Choisis une ville d'un autre continent et calcule son décalage horaire avec la tienne."
+    },
+    "it": {
+     "t": "I fusi orari",
+     "g": "Scopri perché il mondo è diviso in fusi orari che seguono il Sole.",
+     "p": [
+      "La Terra gira di circa 15 gradi all'ora, quindi a est il mezzogiorno arriva prima.",
+      "Il mondo è diviso in fusi, di solito distanti un'ora l'uno dall'altro.",
+      "Alcuni paesi usano un solo fuso, altri ne usano diversi."
+     ],
+     "q": "Che ora è adesso in un posto lontano da te e com'è lì?",
+     "c": "Scegli una città di un altro continente e calcola la differenza d'ora con la tua."
+    },
+    "pt": {
+     "t": "Os fusos horários",
+     "g": "Descobre porque é que o mundo se divide em fusos horários que seguem o Sol.",
+     "p": [
+      "A Terra roda cerca de 15 graus por hora, por isso o meio-dia chega primeiro a este.",
+      "O mundo divide-se em fusos, em geral a uma hora de distância do vizinho.",
+      "Alguns países usam um só fuso e outros usam vários."
+     ],
+     "q": "Que horas são agora num sítio longe de ti e como será lá?",
+     "c": "Escolhe uma cidade de outro continente e calcula a diferença horária para a tua."
+    },
+    "pt_BR": {
+     "t": "Os fusos horários",
+     "g": "Descubra por que o mundo é dividido em fusos horários que seguem o Sol.",
+     "p": [
+      "A Terra gira cerca de 15 graus por hora, por isso o meio-dia chega primeiro ao leste.",
+      "O mundo é dividido em fusos, em geral a uma hora de distância do vizinho.",
+      "Alguns países usam um só fuso e outros usam vários."
+     ],
+     "q": "Que horas são agora num lugar longe de você e como será lá?",
+     "c": "Escolha uma cidade de outro continente e calcule a diferença de horário para a sua."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The International Date Line",
+     "g": "Learn about the line in the Pacific where the calendar date changes.",
+     "p": [
+      "The date line runs roughly along 180 degrees longitude through the Pacific.",
+      "Cross it heading east and you go back a day, heading west you jump ahead.",
+      "It zigzags around islands so that neighbors share the same date."
+     ],
+     "q": "If you could cross it, would you choose to repeat a day or skip one?",
+     "c": "Imagine a trip across the line and write down the dates before and after."
+    },
+    "de": {
+     "t": "Die Datumsgrenze",
+     "g": "Lerne die Linie im Pazifik kennen, an der sich das Kalenderdatum ändert.",
+     "p": [
+      "Die Datumsgrenze folgt grob dem 180. Längengrad durch den Pazifik.",
+      "Überquerst du sie nach Osten, gewinnst du einen Tag zurück, nach Westen springst du vor.",
+      "Sie macht Zickzack um Inseln, damit Nachbarn dasselbe Datum haben."
+     ],
+     "q": "Würdest du lieber einen Tag wiederholen oder einen überspringen?",
+     "c": "Stell dir eine Reise über die Linie vor und notiere die Daten davor und danach."
+    },
+    "es": {
+     "t": "La línea internacional de cambio de fecha",
+     "g": "Conoce la línea del Pacífico donde cambia la fecha del calendario.",
+     "p": [
+      "La línea sigue aproximadamente los 180 grados de longitud por el Pacífico.",
+      "Si la cruzas hacia el este retrocedes un día, hacia el oeste avanzas uno.",
+      "Hace zigzags alrededor de islas para que vecinas compartan la fecha."
+     ],
+     "q": "Si pudieras cruzarla, ¿repetirías un día o te saltarías uno?",
+     "c": "Imagina un viaje a través de la línea y anota las fechas antes y después."
+    },
+    "fr": {
+     "t": "La ligne de changement de date",
+     "g": "Découvre la ligne du Pacifique où la date du calendrier change.",
+     "p": [
+      "La ligne suit à peu près le 180e méridien à travers le Pacifique.",
+      "En la franchissant vers l'est, tu reviens un jour en arrière, vers l'ouest tu avances d'un jour.",
+      "Elle fait des zigzags autour des îles pour que les voisines aient la même date."
+     ],
+     "q": "Si tu pouvais la franchir, répéterais-tu un jour ou en sauterais-tu un ?",
+     "c": "Imagine un voyage à travers la ligne et note les dates avant et après."
+    },
+    "it": {
+     "t": "La linea del cambio di data",
+     "g": "Scopri la linea del Pacifico dove cambia la data del calendario.",
+     "p": [
+      "La linea segue all'incirca i 180 gradi di longitudine nel Pacifico.",
+      "Se la attraversi verso est torni indietro di un giorno, verso ovest avanzi.",
+      "Fa zigzag attorno alle isole perché le vicine abbiano la stessa data."
+     ],
+     "q": "Se potessi attraversarla, ripeteresti un giorno o ne salteresti uno?",
+     "c": "Immagina un viaggio oltre la linea e scrivi le date prima e dopo."
+    },
+    "pt": {
+     "t": "A linha internacional de data",
+     "g": "Conhece a linha do Pacífico onde muda a data do calendário.",
+     "p": [
+      "A linha segue aproximadamente os 180 graus de longitude pelo Pacífico.",
+      "Se a cruzares para este recuas um dia, para oeste avanças um dia.",
+      "Faz zigue-zagues à volta de ilhas para que vizinhas partilhem a data."
+     ],
+     "q": "Se pudesses cruzá-la, repetias um dia ou saltavas um?",
+     "c": "Imagina uma viagem através da linha e escreve as datas antes e depois."
+    },
+    "pt_BR": {
+     "t": "A linha internacional de data",
+     "g": "Conheça a linha do Pacífico onde muda a data do calendário.",
+     "p": [
+      "A linha segue aproximadamente os 180 graus de longitude pelo Pacífico.",
+      "Se você a cruza rumo ao leste, volta um dia; rumo ao oeste, avança um dia.",
+      "Ela faz zigue-zagues em torno de ilhas para que vizinhas tenham a mesma data."
+     ],
+     "q": "Se pudesse cruzá-la, você repetiria um dia ou pularia um?",
+     "c": "Imagine uma viagem pela linha e anote as datas antes e depois."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Contour lines",
+     "g": "Learn how lines on a map show hills, valleys and steep slopes.",
+     "p": [
+      "A contour line joins points that are at exactly the same height.",
+      "Lines close together mean a steep slope, lines far apart mean gentle ground.",
+      "Circles within circles usually mark a hilltop, with the smallest ring on top."
+     ],
+     "q": "Do you prefer climbing steep hills or walking on gentle slopes?",
+     "c": "Draw a small hill with five contour lines on paper."
+    },
+    "de": {
+     "t": "Höhenlinien",
+     "g": "Lerne, wie Linien auf der Karte Hügel, Täler und steile Hänge zeigen.",
+     "p": [
+      "Eine Höhenlinie verbindet Punkte, die genau gleich hoch liegen.",
+      "Dicht beieinander bedeutet steil, weit auseinander bedeutet sanftes Gelände.",
+      "Ringe in Ringen markieren meist einen Gipfel, der kleinste Ring oben."
+     ],
+     "q": "Steigst du lieber steile Hügel hinauf oder gehst du auf sanften Hängen?",
+     "c": "Zeichne auf Papier einen kleinen Hügel mit fünf Höhenlinien."
+    },
+    "es": {
+     "t": "Curvas de nivel",
+     "g": "Aprende cómo las líneas del mapa muestran colinas, valles y pendientes fuertes.",
+     "p": [
+      "Una curva de nivel une puntos que están exactamente a la misma altura.",
+      "Líneas juntas indican pendiente fuerte, líneas separadas indican terreno suave.",
+      "Círculos dentro de círculos suelen marcar una cima, con el anillo menor arriba."
+     ],
+     "q": "¿Prefieres subir cuestas empinadas o caminar por pendientes suaves?",
+     "c": "Dibuja en papel una colina pequeña con cinco curvas de nivel."
+    },
+    "fr": {
+     "t": "Les courbes de niveau",
+     "g": "Apprends comment les lignes d'une carte montrent collines, vallées et pentes raides.",
+     "p": [
+      "Une courbe de niveau relie des points situés exactement à la même altitude.",
+      "Des lignes serrées indiquent une pente raide, des lignes espacées un terrain doux.",
+      "Des cercles imbriqués marquent souvent un sommet, le plus petit anneau en haut."
+     ],
+     "q": "Préfères-tu grimper des pentes raides ou marcher sur des pentes douces ?",
+     "c": "Dessine sur papier une petite colline avec cinq courbes de niveau."
+    },
+    "it": {
+     "t": "Le curve di livello",
+     "g": "Scopri come le linee sulla mappa mostrano colline, valli e pendii ripidi.",
+     "p": [
+      "Una curva di livello unisce punti che hanno esattamente la stessa quota.",
+      "Linee vicine indicano un pendio ripido, linee distanti un terreno dolce.",
+      "Cerchi dentro cerchi segnano di solito una cima, con l'anello più piccolo in alto."
+     ],
+     "q": "Preferisci salire colline ripide o camminare su pendii dolci?",
+     "c": "Disegna su carta una piccola collina con cinque curve di livello."
+    },
+    "pt": {
+     "t": "As curvas de nível",
+     "g": "Aprende como as linhas do mapa mostram colinas, vales e encostas íngremes.",
+     "p": [
+      "Uma curva de nível une pontos que estão exatamente à mesma altitude.",
+      "Linhas juntas indicam encosta íngreme, linhas afastadas indicam terreno suave.",
+      "Círculos dentro de círculos marcam em regra um cume, com o anel menor no topo."
+     ],
+     "q": "Preferes subir encostas íngremes ou caminhar em declives suaves?",
+     "c": "Desenha numa folha uma pequena colina com cinco curvas de nível."
+    },
+    "pt_BR": {
+     "t": "As curvas de nível",
+     "g": "Aprenda como as linhas do mapa mostram colinas, vales e encostas íngremes.",
+     "p": [
+      "Uma curva de nível une pontos que estão exatamente na mesma altitude.",
+      "Linhas juntas indicam encosta íngreme, linhas afastadas indicam terreno suave.",
+      "Círculos dentro de círculos geralmente marcam um topo, com o anel menor no alto."
+     ],
+     "q": "Você prefere subir ladeiras íngremes ou caminhar em declives suaves?",
+     "c": "Desenhe numa folha uma pequena colina com cinco curvas de nível."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading a topographic map",
+     "g": "Put symbols, contours and scale together to picture the land.",
+     "p": [
+      "Start with the legend to learn what each color and symbol stands for.",
+      "Use the scale bar to turn centimeters on paper into real distance.",
+      "Blue usually means water, green vegetation, brown contour lines."
+     ],
+     "q": "Where would you plan a walk if you studied a topographic map?",
+     "c": "Sketch a mini map of your street with a legend of three symbols."
+    },
+    "de": {
+     "t": "Topografische Karten lesen",
+     "g": "Verbinde Zeichen, Höhenlinien und Maßstab zu einem Bild der Landschaft.",
+     "p": [
+      "Beginne mit der Legende, um zu erfahren, was Farben und Zeichen bedeuten.",
+      "Nutze den Maßstabsbalken, um Zentimeter auf Papier in echte Strecken umzurechnen.",
+      "Blau steht meist für Wasser, Grün für Bewuchs, Braun für Höhenlinien."
+     ],
+     "q": "Wo würdest du anhand einer topografischen Karte eine Wanderung planen?",
+     "c": "Skizziere eine Minikarte deiner Straße mit einer Legende aus drei Zeichen."
+    },
+    "es": {
+     "t": "Leer un mapa topográfico",
+     "g": "Une símbolos, curvas de nivel y escala para imaginar el terreno.",
+     "p": [
+      "Empieza por la leyenda para saber qué significa cada color y símbolo.",
+      "Usa la barra de escala para convertir centímetros del papel en distancia real.",
+      "El azul suele ser agua, el verde vegetación y el marrón las curvas de nivel."
+     ],
+     "q": "¿Dónde planificarías una caminata si estudiaras un mapa topográfico?",
+     "c": "Dibuja un mini mapa de tu calle con una leyenda de tres símbolos."
+    },
+    "fr": {
+     "t": "Lire une carte topographique",
+     "g": "Assemble symboles, courbes de niveau et échelle pour imaginer le terrain.",
+     "p": [
+      "Commence par la légende pour savoir ce que signifie chaque couleur et symbole.",
+      "Utilise l'échelle graphique pour convertir des centimètres en distance réelle.",
+      "Le bleu désigne souvent l'eau, le vert la végétation, le brun les courbes de niveau."
+     ],
+     "q": "Où planifierais-tu une randonnée en étudiant une carte topographique ?",
+     "c": "Dessine une mini-carte de ta rue avec une légende de trois symboles."
+    },
+    "it": {
+     "t": "Leggere una carta topografica",
+     "g": "Unisci simboli, curve di livello e scala per immaginare il territorio.",
+     "p": [
+      "Parti dalla legenda per capire cosa indicano colori e simboli.",
+      "Usa la scala grafica per trasformare i centimetri sulla carta in distanze reali.",
+      "Il blu di solito indica l'acqua, il verde la vegetazione, il marrone le curve di livello."
+     ],
+     "q": "Dove pianificheresti una camminata studiando una carta topografica?",
+     "c": "Disegna una mini mappa della tua via con una legenda di tre simboli."
+    },
+    "pt": {
+     "t": "Ler um mapa topográfico",
+     "g": "Junta símbolos, curvas de nível e escala para imaginar o terreno.",
+     "p": [
+      "Começa pela legenda para saberes o que significa cada cor e símbolo.",
+      "Usa a escala gráfica para converter centímetros no papel em distância real.",
+      "O azul costuma ser água, o verde vegetação e o castanho as curvas de nível."
+     ],
+     "q": "Onde planearias um passeio se estudasses um mapa topográfico?",
+     "c": "Desenha um mini mapa da tua rua com uma legenda de três símbolos."
+    },
+    "pt_BR": {
+     "t": "Lendo um mapa topográfico",
+     "g": "Junte símbolos, curvas de nível e escala para imaginar o terreno.",
+     "p": [
+      "Comece pela legenda para saber o que significa cada cor e símbolo.",
+      "Use a escala gráfica para converter centímetros no papel em distância real.",
+      "O azul costuma ser água, o verde vegetação e o marrom as curvas de nível."
+     ],
+     "q": "Onde você planejaria um passeio estudando um mapa topográfico?",
+     "c": "Desenhe um mini mapa da sua rua com uma legenda de três símbolos."
+    }
+   }
+  }
+ ]
+}

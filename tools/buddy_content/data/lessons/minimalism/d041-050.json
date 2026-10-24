@@ -1,0 +1,835 @@
+{
+ "topic": "minimalism",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Books and magazines",
+     "g": "Keep books you love or will reread and pass the rest on.",
+     "p": [
+      "A book read once and not loved can find a new reader.",
+      "Keep the ones that inspire you, help you or hold real memories.",
+      "Libraries and book swaps make it easy to read without owning."
+     ],
+     "q": "Which book would you happily read again?",
+     "c": "Pick five books you will not reread and set them aside for a new reader."
+    },
+    "de": {
+     "t": "Bücher und Zeitschriften",
+     "g": "Bücher behalten, die du liebst oder wieder liest, und den Rest weitergeben.",
+     "p": [
+      "Ein einmal gelesenes, nicht geliebtes Buch kann neue Leser finden.",
+      "Behalte, was dich inspiriert, dir hilft oder echte Erinnerungen trägt.",
+      "Bibliotheken und Bücherschränke machen Lesen ohne Besitz leicht."
+     ],
+     "q": "Welches Buch würdest du gern noch einmal lesen?",
+     "c": "Such fünf Bücher aus, die du nicht wieder liest, und leg sie für neue Leser beiseite."
+    },
+    "es": {
+     "t": "Libros y revistas",
+     "g": "Conservar los libros que amas o releerás y regalar el resto.",
+     "p": [
+      "Un libro leído una vez y sin cariño puede encontrar a un nuevo lector.",
+      "Quédate con los que te inspiran, te ayudan o guardan recuerdos reales.",
+      "Bibliotecas e intercambios de libros permiten leer sin acumular."
+     ],
+     "q": "¿Qué libro releerías con gusto?",
+     "c": "Elige cinco libros que no releerás y apártalos para un nuevo lector."
+    },
+    "fr": {
+     "t": "Livres et magazines",
+     "g": "Garder les livres que tu aimes ou reliras et transmettre les autres.",
+     "p": [
+      "Un livre lu une fois et pas aimé peut trouver un nouveau lecteur.",
+      "Garde ceux qui t'inspirent, t'aident ou portent de vrais souvenirs.",
+      "Bibliothèques et boîtes à livres permettent de lire sans posséder."
+     ],
+     "q": "Quel livre relirais-tu avec plaisir ?",
+     "c": "Choisis cinq livres que tu ne reliras pas et mets-les de côté pour un nouveau lecteur."
+    },
+    "it": {
+     "t": "Libri e riviste",
+     "g": "Tenere i libri che ami o rileggerai e passare gli altri.",
+     "p": [
+      "Un libro letto una volta e non amato può trovare un nuovo lettore.",
+      "Tieni quelli che ti ispirano, ti aiutano o portano ricordi veri.",
+      "Biblioteche e scambi di libri permettono di leggere senza possedere."
+     ],
+     "q": "Quale libro rileggeresti volentieri?",
+     "c": "Scegli cinque libri che non rileggerai e mettili da parte per un nuovo lettore."
+    },
+    "pt": {
+     "t": "Livros e revistas",
+     "g": "Guardar os livros que adoras ou vais reler e passar os outros.",
+     "p": [
+      "Um livro lido uma vez e sem carinho pode encontrar um novo leitor.",
+      "Fica com os que te inspiram, ajudam ou guardam memórias reais.",
+      "Bibliotecas e trocas de livros permitem ler sem acumular."
+     ],
+     "q": "Que livro relerias com gosto?",
+     "c": "Escolhe cinco livros que não vais reler e põe-nos de lado para um novo leitor."
+    },
+    "pt_BR": {
+     "t": "Livros e revistas",
+     "g": "Guardar os livros que você ama ou vai reler e passar adiante o resto.",
+     "p": [
+      "Um livro lido uma vez e sem carinho pode encontrar um novo leitor.",
+      "Fique com os que inspiram, ajudam ou guardam memórias reais.",
+      "Bibliotecas e trocas de livros permitem ler sem acumular."
+     ],
+     "q": "Que livro você releria com prazer?",
+     "c": "Escolha cinco livros que não vai reler e separe para um novo leitor."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Media collections",
+     "g": "Decide between nostalgia, use and digital alternatives.",
+     "p": [
+      "DVDs, CDs, games and cables take space even when never played.",
+      "Keep what you really watch or listen to, or what means a lot to you.",
+      "Digital copies and streaming can hold the memories without the shelf."
+     ],
+     "q": "Which disc or game do you truly still enjoy?",
+     "c": "Check one shelf of media and set aside what you will not play again."
+    },
+    "de": {
+     "t": "Medienkollektionen",
+     "g": "Zwischen Nostalgie, Nutzen und digitalen Alternativen entscheiden.",
+     "p": [
+      "DVDs, CDs, Spiele und Kabel brauchen Platz, auch wenn sie nie laufen.",
+      "Behalte, was du wirklich ansiehst oder hörst oder was dir viel bedeutet.",
+      "Digitale Kopien und Streaming bewahren Erinnerungen ohne Regal."
+     ],
+     "q": "Welche Scheibe oder welches Spiel magst du wirklich noch?",
+     "c": "Geh ein Medienregal durch und leg beiseite, was du nicht mehr spielst."
+    },
+    "es": {
+     "t": "Colecciones multimedia",
+     "g": "Decidir entre nostalgia, uso y alternativas digitales.",
+     "p": [
+      "DVD, CD, juegos y cables ocupan espacio aunque no se usen.",
+      "Quédate con lo que de verdad ves o escuchas, o lo que significa mucho para ti.",
+      "Las copias digitales y el streaming guardan recuerdos sin estantería."
+     ],
+     "q": "¿Qué disco o juego sigues disfrutando de verdad?",
+     "c": "Revisa una estantería multimedia y aparta lo que no volverás a usar."
+    },
+    "fr": {
+     "t": "Collections multimédias",
+     "g": "Choisir entre nostalgie, usage et alternatives numériques.",
+     "p": [
+      "DVD, CD, jeux et câbles prennent de la place même sans servir.",
+      "Garde ce que tu regardes ou écoutes vraiment, ou ce qui compte beaucoup.",
+      "Les copies numériques et le streaming gardent les souvenirs sans étagère."
+     ],
+     "q": "Quel disque ou jeu apprécies-tu vraiment encore ?",
+     "c": "Passe en revue une étagère multimédia et mets de côté ce que tu ne joueras plus."
+    },
+    "it": {
+     "t": "Collezioni multimediali",
+     "g": "Scegliere tra nostalgia, uso e alternative digitali.",
+     "p": [
+      "DVD, CD, giochi e cavi occupano spazio anche se non si usano.",
+      "Tieni ciò che guardi o ascolti davvero, o che ha grande significato.",
+      "Copie digitali e streaming conservano i ricordi senza scaffale."
+     ],
+     "q": "Quale disco o gioco ti piace davvero ancora?",
+     "c": "Controlla uno scaffale multimediale e metti da parte ciò che non userai più."
+    },
+    "pt": {
+     "t": "Coleções multimédia",
+     "g": "Decidir entre nostalgia, uso e alternativas digitais.",
+     "p": [
+      "DVD, CD, jogos e cabos ocupam espaço mesmo sem uso.",
+      "Fica com o que realmente vês ou ouves, ou com o que significa muito para ti.",
+      "Cópias digitais e streaming guardam memórias sem prateleira."
+     ],
+     "q": "Que disco ou jogo aprecias ainda mesmo?",
+     "c": "Revê uma prateleira multimédia e põe de lado o que não vais voltar a usar."
+    },
+    "pt_BR": {
+     "t": "Coleções de mídia",
+     "g": "Decidir entre nostalgia, uso e alternativas digitais.",
+     "p": [
+      "DVDs, CDs, jogos e cabos ocupam espaço mesmo sem uso.",
+      "Fique com o que você realmente assiste ou ouve, ou o que significa muito.",
+      "Cópias digitais e streaming guardam memórias sem prateleira."
+     ],
+     "q": "Que disco ou jogo você ainda curte de verdade?",
+     "c": "Confira uma prateleira de mídia e separe o que não vai usar de novo."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Toys and children's spaces",
+     "g": "Reduce toys gently, with kids involved.",
+     "p": [
+      "Let children help choose; it teaches them to value what they keep.",
+      "Rotation boxes keep some toys out of sight and make old ones feel new.",
+      "Fewer toys often means deeper play and an easier tidy-up."
+     ],
+     "q": "Which toys do the children play with most?",
+     "c": "Choose one box of toys to rotate out, with the child's help if possible."
+    },
+    "de": {
+     "t": "Spielzeug und Kinderzimmer",
+     "g": "Spielzeug sanft reduzieren und die Kinder einbeziehen.",
+     "p": [
+      "Lass Kinder mitentscheiden; so lernen sie, Behaltenes wertzuschätzen.",
+      "Rotationskisten halten Spielzeug außer Sicht und machen Altes wieder neu.",
+      "Weniger Spielzeug bedeutet oft tieferes Spiel und leichteres Aufräumen."
+     ],
+     "q": "Mit welchem Spielzeug spielen die Kinder am meisten?",
+     "c": "Wähl eine Kiste Spielzeug zum Austauschen aus, möglichst mit Hilfe des Kindes."
+    },
+    "es": {
+     "t": "Juguetes y espacios infantiles",
+     "g": "Reducir los juguetes con suavidad, incluyendo a los niños.",
+     "p": [
+      "Deja que los niños ayuden a elegir; aprenden a valorar lo que conservan.",
+      "Las cajas rotativas esconden algunos juguetes y hacen nuevos los viejos.",
+      "Menos juguetes suele significar juego más profundo y recoger más fácil."
+     ],
+     "q": "¿Con qué juguetes juegan más los niños?",
+     "c": "Elige una caja de juguetes para rotar, con ayuda del niño si es posible."
+    },
+    "fr": {
+     "t": "Jouets et espaces des enfants",
+     "g": "Réduire les jouets en douceur, avec les enfants.",
+     "p": [
+      "Laisse les enfants aider à choisir ; ils apprennent à valoriser ce qu'ils gardent.",
+      "Les caisses de rotation cachent certains jouets et rendent les anciens neufs.",
+      "Moins de jouets donne souvent un jeu plus profond et un rangement plus simple."
+     ],
+     "q": "Avec quels jouets les enfants jouent-ils le plus ?",
+     "c": "Choisis une caisse de jouets à mettre en rotation, avec l'aide de l'enfant si possible."
+    },
+    "it": {
+     "t": "Giochi e spazi dei bambini",
+     "g": "Ridurre i giochi con dolcezza, coinvolgendo i bambini.",
+     "p": [
+      "Lascia che i bambini aiutino a scegliere; imparano a dare valore a ciò che tengono.",
+      "Le scatole a rotazione nascondono alcuni giochi e rendono nuovi quelli vecchi.",
+      "Meno giochi spesso significa gioco più profondo e riordino più facile."
+     ],
+     "q": "Con quali giochi giocano di più i bambini?",
+     "c": "Scegli una scatola di giochi da far ruotare, con l'aiuto del bambino se possibile."
+    },
+    "pt": {
+     "t": "Brinquedos e espaços das crianças",
+     "g": "Reduzir os brinquedos com suavidade, envolvendo as crianças.",
+     "p": [
+      "Deixa as crianças ajudar a escolher; aprendem a valorizar o que guardam.",
+      "Caixas rotativas escondem alguns brinquedos e tornam os antigos novos.",
+      "Menos brinquedos significa muitas vezes brincadeira mais profunda e arrumação mais fácil."
+     ],
+     "q": "Com que brinquedos as crianças brincam mais?",
+     "c": "Escolhe uma caixa de brinquedos para rodar, com a ajuda da criança se possível."
+    },
+    "pt_BR": {
+     "t": "Brinquedos e espaços das crianças",
+     "g": "Reduzir os brinquedos com delicadeza, envolvendo as crianças.",
+     "p": [
+      "Deixe as crianças ajudarem a escolher; elas aprendem a valorizar o que guardam.",
+      "Caixas de rodízio escondem alguns brinquedos e deixam os antigos como novos.",
+      "Menos brinquedos costuma significar brincadeira mais profunda e arrumação mais fácil."
+     ],
+     "q": "Com que brinquedos as crianças mais brincam?",
+     "c": "Escolha uma caixa de brinquedos para o rodízio, com a ajuda da criança se der."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hobby supplies",
+     "g": "Keep materials for hobbies you practise today.",
+     "p": [
+      "Supplies for someday hobbies quietly fill shelves and closets.",
+      "Keep what you used in the last year or two and enjoy.",
+      "Passing on unused materials may help a friend or a school start their own."
+     ],
+     "q": "Which hobby do you enjoy most right now?",
+     "c": "Gather the supplies of one hobby and set aside what you no longer use."
+    },
+    "de": {
+     "t": "Hobby-Material",
+     "g": "Material für Hobbys behalten, die du heute ausübst.",
+     "p": [
+      "Material für Irgendwann-Hobbys füllt leise Regale und Schränke.",
+      "Behalte, was du im letzten Jahr oder zwei genutzt und gern gemacht hast.",
+      "Ungenutztes Material kann Freunden oder einer Schule beim Start helfen."
+     ],
+     "q": "Welches Hobby macht dir gerade am meisten Freude?",
+     "c": "Sammle das Material eines Hobbys und leg beiseite, was du nicht mehr nutzt."
+    },
+    "es": {
+     "t": "Material de aficiones",
+     "g": "Conservar el material de las aficiones que practicas hoy.",
+     "p": [
+      "El material de aficiones para algún día llena estantes y armarios en silencio.",
+      "Quédate con lo que usaste en el último año o dos y disfrutaste.",
+      "Pasar material sin usar puede ayudar a un amigo o una escuela a empezar."
+     ],
+     "q": "¿Qué afición disfrutas más ahora mismo?",
+     "c": "Reúne el material de una afición y aparta lo que ya no usas."
+    },
+    "fr": {
+     "t": "Matériel de loisirs",
+     "g": "Garder le matériel des loisirs que tu pratiques aujourd'hui.",
+     "p": [
+      "Le matériel des loisirs pour un jour remplit discrètement étagères et placards.",
+      "Garde ce que tu as utilisé ces deux dernières années avec plaisir.",
+      "Transmettre le matériel inutilisé peut aider un ami ou une école à démarrer."
+     ],
+     "q": "Quel loisir te plaît le plus en ce moment ?",
+     "c": "Rassemble le matériel d'un loisir et mets de côté ce que tu n'utilises plus."
+    },
+    "it": {
+     "t": "Materiali per gli hobby",
+     "g": "Tenere i materiali degli hobby che pratichi oggi.",
+     "p": [
+      "I materiali per hobby per un giorno riempiono in silenzio scaffali e armadi.",
+      "Tieni ciò che hai usato nell'ultimo anno o due e con piacere.",
+      "Passare i materiali inutilizzati può aiutare un amico o una scuola a iniziare."
+     ],
+     "q": "Quale hobby ti piace di più in questo momento?",
+     "c": "Riunisci i materiali di un hobby e metti da parte ciò che non usi più."
+    },
+    "pt": {
+     "t": "Material de passatempos",
+     "g": "Guardar o material dos passatempos que praticas hoje.",
+     "p": [
+      "Material de passatempos para um dia enche prateleiras e armários em silêncio.",
+      "Fica com o que usaste no último ano ou dois e de que gostaste.",
+      "Passar material por usar pode ajudar um amigo ou uma escola a começar."
+     ],
+     "q": "Que passatempo mais gostas neste momento?",
+     "c": "Junta o material de um passatempo e põe de lado o que já não usas."
+    },
+    "pt_BR": {
+     "t": "Materiais de hobbies",
+     "g": "Guardar os materiais dos hobbies que você pratica hoje.",
+     "p": [
+      "Materiais de hobbies para algum dia enchem prateleiras e armários em silêncio.",
+      "Fique com o que usou no último ano ou dois e curtiu.",
+      "Passar adiante materiais sem uso pode ajudar um amigo ou escola a começar."
+     ],
+     "q": "De que hobby você mais gosta neste momento?",
+     "c": "Junte os materiais de um hobby e separe o que você não usa mais."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cleaning supplies",
+     "g": "Replace a cupboard of specialised bottles with a few multi-purpose ones.",
+     "p": [
+      "A few good products often handle most cleaning jobs.",
+      "Never mix different cleaning products; read the labels.",
+      "Use up what you have before buying anything new."
+     ],
+     "q": "How many cleaning products do you think you really use?",
+     "c": "Group your cleaning products and set aside duplicates to use up first."
+    },
+    "de": {
+     "t": "Putzmittel",
+     "g": "Einen Schrank voller Spezialflaschen durch wenige Allzweckmittel ersetzen.",
+     "p": [
+      "Wenige gute Mittel erledigen meist die meisten Putzaufgaben.",
+      "Mische nie verschiedene Reiniger; lies die Etiketten.",
+      "Brauch zuerst auf, was du hast, bevor du Neues kaufst."
+     ],
+     "q": "Wie viele Putzmittel nutzt du wohl wirklich?",
+     "c": "Gruppiere deine Putzmittel und leg Doppeltes zum Aufbrauchen beiseite."
+    },
+    "es": {
+     "t": "Productos de limpieza",
+     "g": "Sustituir un armario de botes especializados por unos pocos multiusos.",
+     "p": [
+      "Unos pocos buenos productos suelen bastar para casi toda la limpieza.",
+      "Nunca mezcles productos de limpieza distintos; lee las etiquetas.",
+      "Gasta lo que tienes antes de comprar algo nuevo."
+     ],
+     "q": "¿Cuántos productos de limpieza crees que usas de verdad?",
+     "c": "Agrupa tus productos de limpieza y aparta los repetidos para gastarlos primero."
+    },
+    "fr": {
+     "t": "Produits ménagers",
+     "g": "Remplacer un placard de flacons spécialisés par quelques produits multi-usages.",
+     "p": [
+      "Quelques bons produits suffisent souvent pour presque tout nettoyer.",
+      "Ne mélange jamais des produits différents ; lis les étiquettes.",
+      "Termine ce que tu as avant d'acheter du neuf."
+     ],
+     "q": "Combien de produits ménagers utilises-tu vraiment, à ton avis ?",
+     "c": "Regroupe tes produits ménagers et mets de côté les doublons à finir en premier."
+    },
+    "it": {
+     "t": "Prodotti per la pulizia",
+     "g": "Sostituire un armadio di flaconi specializzati con pochi multiuso.",
+     "p": [
+      "Pochi buoni prodotti bastano spesso per quasi tutte le pulizie.",
+      "Non mescolare mai prodotti diversi; leggi le etichette.",
+      "Finisci ciò che hai prima di comprare qualcosa di nuovo."
+     ],
+     "q": "Quanti prodotti per la pulizia pensi di usare davvero?",
+     "c": "Raggruppa i prodotti per la pulizia e metti da parte i doppioni da finire per primi."
+    },
+    "pt": {
+     "t": "Produtos de limpeza",
+     "g": "Substituir um armário de frascos especializados por uns poucos multiusos.",
+     "p": [
+      "Uns poucos bons produtos chegam muitas vezes para quase toda a limpeza.",
+      "Nunca mistures produtos de limpeza diferentes; lê os rótulos.",
+      "Gasta o que tens antes de comprar algo novo."
+     ],
+     "q": "Quantos produtos de limpeza achas que usas mesmo?",
+     "c": "Agrupa os teus produtos de limpeza e põe de lado os repetidos para gastar primeiro."
+    },
+    "pt_BR": {
+     "t": "Produtos de limpeza",
+     "g": "Trocar um armário de frascos especializados por alguns multiuso.",
+     "p": [
+      "Uns poucos bons produtos costumam dar conta de quase toda a limpeza.",
+      "Nunca misture produtos de limpeza diferentes; leia os rótulos.",
+      "Use até o fim o que tem antes de comprar algo novo."
+     ],
+     "q": "Quantos produtos de limpeza você acha que usa de verdade?",
+     "c": "Agrupe seus produtos de limpeza e separe os repetidos para usar primeiro."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Linens and towels",
+     "g": "Work out how many sets you really need.",
+     "p": [
+      "Two or three sets of sheets per bed are often plenty.",
+      "Worn towels and sheets can become cleaning cloths or be recycled.",
+      "Animal shelters often welcome clean old towels; ask first."
+     ],
+     "q": "How many sets of bed linen and towels do you really use?",
+     "c": "Count your towels and sheets and set aside worn ones for cleaning cloths."
+    },
+    "de": {
+     "t": "Bettwäsche und Handtücher",
+     "g": "Herausfinden, wie viele Sets du wirklich brauchst.",
+     "p": [
+      "Zwei oder drei Garnituren pro Bett genügen oft.",
+      "Abgenutzte Handtücher und Laken werden zu Putztüchern oder recycelt.",
+      "Tierheime freuen sich oft über saubere alte Handtücher; frag vorher."
+     ],
+     "q": "Wie viele Garnituren Bettwäsche und Handtücher nutzt du wirklich?",
+     "c": "Zähl Handtücher und Laken und leg abgenutzte als Putztücher beiseite."
+    },
+    "es": {
+     "t": "Ropa de cama y toallas",
+     "g": "Calcular cuántos juegos necesitas de verdad.",
+     "p": [
+      "Dos o tres juegos de sábanas por cama suelen ser suficientes.",
+      "Las toallas y sábanas gastadas pueden ser paños de limpieza o reciclarse.",
+      "Los refugios de animales suelen agradecer toallas viejas limpias; pregunta antes."
+     ],
+     "q": "¿Cuántos juegos de sábanas y toallas usas realmente?",
+     "c": "Cuenta tus toallas y sábanas y aparta las gastadas para paños de limpieza."
+    },
+    "fr": {
+     "t": "Linge de maison et serviettes",
+     "g": "Calculer combien de jeux te sont vraiment utiles.",
+     "p": [
+      "Deux ou trois jeux de draps par lit suffisent souvent.",
+      "Les serviettes et draps usés peuvent devenir des chiffons ou être recyclés.",
+      "Les refuges pour animaux apprécient souvent les vieilles serviettes propres ; demande d'abord."
+     ],
+     "q": "Combien de jeux de draps et de serviettes utilises-tu vraiment ?",
+     "c": "Compte tes serviettes et draps et mets de côté les usés pour en faire des chiffons."
+    },
+    "it": {
+     "t": "Biancheria e asciugamani",
+     "g": "Capire quanti set ti servono davvero.",
+     "p": [
+      "Due o tre set di lenzuola per letto spesso bastano.",
+      "Asciugamani e lenzuola consumati possono diventare stracci o essere riciclati.",
+      "I rifugi per animali spesso gradiscono vecchi asciugamani puliti; chiedi prima."
+     ],
+     "q": "Quanti set di lenzuola e asciugamani usi davvero?",
+     "c": "Conta asciugamani e lenzuola e metti da parte quelli consumati per farne stracci."
+    },
+    "pt": {
+     "t": "Roupa de cama e toalhas",
+     "g": "Perceber de quantos jogos precisas mesmo.",
+     "p": [
+      "Dois ou três jogos de lençóis por cama costumam chegar.",
+      "Toalhas e lençóis gastos podem virar panos de limpeza ou ser reciclados.",
+      "Os abrigos de animais costumam agradecer toalhas velhas limpas; pergunta antes."
+     ],
+     "q": "Quantos jogos de roupa de cama e toalhas usas mesmo?",
+     "c": "Conta as toalhas e lençóis e põe de lado os gastos para panos de limpeza."
+    },
+    "pt_BR": {
+     "t": "Roupa de cama e toalhas",
+     "g": "Descobrir de quantos jogos você realmente precisa.",
+     "p": [
+      "Dois ou três jogos de lençóis por cama costumam bastar.",
+      "Toalhas e lençóis gastos podem virar panos de limpeza ou ser reciclados.",
+      "Abrigos de animais costumam aceitar toalhas velhas limpas; pergunte antes."
+     ],
+     "q": "Quantos jogos de cama e toalhas você realmente usa?",
+     "c": "Conte suas toalhas e lençóis e separe os gastos para virar panos de limpeza."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Garage and storage rooms",
+     "g": "Tackle big storage spaces in zones so the job stays manageable.",
+     "p": [
+      "Divide the space into zones: tools, sports, boxes, seasonal.",
+      "Work on one zone at a time and finish it before the next.",
+      "Take heavy items out only when you can deal with them the same day."
+     ],
+     "q": "What do you think is hiding in your biggest storage space?",
+     "c": "Pick one small zone, like one shelf, and complete it this week."
+    },
+    "de": {
+     "t": "Garage und Abstellräume",
+     "g": "Große Lagerräume zonenweise angehen, damit die Aufgabe machbar bleibt.",
+     "p": [
+      "Teile den Raum in Zonen: Werkzeug, Sport, Kisten, Saisonales.",
+      "Arbeite eine Zone nach der anderen und schließ sie ab.",
+      "Hol Schweres nur raus, wenn du es am selben Tag erledigen kannst."
+     ],
+     "q": "Was vermutest du in deinem größten Lagerraum?",
+     "c": "Wähl eine kleine Zone, etwa ein Regalbrett, und schließ sie diese Woche ab."
+    },
+    "es": {
+     "t": "Garaje y trasteros",
+     "g": "Abordar los grandes almacenes por zonas para que sea manejable.",
+     "p": [
+      "Divide el espacio en zonas: herramientas, deporte, cajas, de temporada.",
+      "Trabaja una zona cada vez y termínala antes de la siguiente.",
+      "Saca lo pesado solo cuando puedas resolverlo el mismo día."
+     ],
+     "q": "¿Qué crees que se esconde en tu mayor espacio de almacenaje?",
+     "c": "Elige una zona pequeña, como una estantería, y termínala esta semana."
+    },
+    "fr": {
+     "t": "Garage et débarras",
+     "g": "Aborder les grands rangements par zones pour que ce soit gérable.",
+     "p": [
+      "Divise l'espace en zones : outils, sport, cartons, saisonnier.",
+      "Travaille une zone à la fois et termine-la avant la suivante.",
+      "Ne sors les objets lourds que si tu peux les gérer le jour même."
+     ],
+     "q": "Que penses-tu trouver dans ton plus grand espace de rangement ?",
+     "c": "Choisis une petite zone, comme une étagère, et termine-la cette semaine."
+    },
+    "it": {
+     "t": "Garage e ripostigli",
+     "g": "Affrontare i grandi spazi a zone perché resti gestibile.",
+     "p": [
+      "Dividi lo spazio in zone: attrezzi, sport, scatoloni, stagionali.",
+      "Lavora una zona alla volta e finiscila prima della successiva.",
+      "Tira fuori le cose pesanti solo se puoi gestirle lo stesso giorno."
+     ],
+     "q": "Cosa pensi si nasconda nel tuo spazio di stoccaggio più grande?",
+     "c": "Scegli una piccola zona, come un ripiano, e finiscila questa settimana."
+    },
+    "pt": {
+     "t": "Garagem e arrecadações",
+     "g": "Enfrentar os grandes espaços por zonas para ser gerível.",
+     "p": [
+      "Divide o espaço em zonas: ferramentas, desporto, caixas, sazonal.",
+      "Trabalha uma zona de cada vez e acaba-a antes da seguinte.",
+      "Tira os objetos pesados só se os conseguires resolver no mesmo dia."
+     ],
+     "q": "O que achas que se esconde no teu maior espaço de arrumação?",
+     "c": "Escolhe uma zona pequena, como uma prateleira, e acaba-a esta semana."
+    },
+    "pt_BR": {
+     "t": "Garagem e despensas de guardados",
+     "g": "Enfrentar os grandes espaços por zonas para ficar administrável.",
+     "p": [
+      "Divida o espaço em zonas: ferramentas, esporte, caixas, sazonais.",
+      "Trabalhe uma zona por vez e termine antes da próxima.",
+      "Tire os itens pesados só se conseguir resolver no mesmo dia."
+     ],
+     "q": "O que você acha que está escondido no seu maior espaço de guardados?",
+     "c": "Escolha uma zona pequena, como uma prateleira, e termine nesta semana."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tools and DIY gear",
+     "g": "Keep a solid basic toolkit and share rarely used equipment.",
+     "p": [
+      "A basic kit covers most home jobs: screwdrivers, hammer, tape measure, pliers.",
+      "Rarely used tools can be borrowed from neighbours or local tool libraries.",
+      "Pass on duplicates and tools you never learned to use."
+     ],
+     "q": "Which tools do you actually reach for most?",
+     "c": "Sort your tools and set aside duplicates or ones you never use."
+    },
+    "de": {
+     "t": "Werkzeug und Heimwerkerbedarf",
+     "g": "Ein solides Grundset behalten und selten Genutztes teilen.",
+     "p": [
+      "Ein Grundset deckt die meisten Arbeiten ab: Schraubendreher, Hammer, Maßband, Zange.",
+      "Selten genutzte Werkzeuge kannst du bei Nachbarn oder Verleihstellen leihen.",
+      "Gib Doppeltes und nie genutztes Werkzeug weiter."
+     ],
+     "q": "Zu welchem Werkzeug greifst du tatsächlich am meisten?",
+     "c": "Sortiere dein Werkzeug und leg Doppeltes oder nie Genutztes beiseite."
+    },
+    "es": {
+     "t": "Herramientas y bricolaje",
+     "g": "Conservar un kit básico sólido y compartir lo que se usa poco.",
+     "p": [
+      "Un kit básico cubre casi todo: destornilladores, martillo, cinta métrica, alicates.",
+      "Las herramientas poco usadas se pueden pedir prestadas a vecinos o bibliotecas de herramientas.",
+      "Pasa las repetidas y las que nunca aprendiste a usar."
+     ],
+     "q": "¿Qué herramientas usas de verdad con más frecuencia?",
+     "c": "Ordena tus herramientas y aparta las repetidas o las que nunca usas."
+    },
+    "fr": {
+     "t": "Outils et bricolage",
+     "g": "Garder une trousse de base solide et partager le matériel rarement utilisé.",
+     "p": [
+      "Un kit de base couvre la plupart des travaux : tournevis, marteau, mètre, pince.",
+      "Les outils peu utilisés peuvent s'emprunter aux voisins ou dans des outilthèques.",
+      "Transmets les doublons et les outils que tu n'as jamais su utiliser."
+     ],
+     "q": "Quels outils utilises-tu vraiment le plus ?",
+     "c": "Trie tes outils et mets de côté les doublons ou ceux que tu n'utilises jamais."
+    },
+    "it": {
+     "t": "Attrezzi e fai da te",
+     "g": "Tenere un kit di base solido e condividere ciò che si usa poco.",
+     "p": [
+      "Un kit base copre quasi tutto: cacciaviti, martello, metro, pinze.",
+      "Gli attrezzi usati di rado si possono prendere in prestito da vicini o biblioteche degli attrezzi.",
+      "Passa i doppioni e gli attrezzi che non hai mai imparato a usare."
+     ],
+     "q": "Quali attrezzi usi davvero di più?",
+     "c": "Ordina i tuoi attrezzi e metti da parte i doppioni o quelli che non usi mai."
+    },
+    "pt": {
+     "t": "Ferramentas e bricolage",
+     "g": "Guardar um kit básico sólido e partilhar o que se usa pouco.",
+     "p": [
+      "Um kit básico cobre quase tudo: chaves de fendas, martelo, fita métrica, alicate.",
+      "Ferramentas pouco usadas podem ser pedidas emprestadas a vizinhos ou a bibliotecas de ferramentas.",
+      "Passa os repetidos e as que nunca aprendeste a usar."
+     ],
+     "q": "Que ferramentas usas mesmo mais vezes?",
+     "c": "Arruma as tuas ferramentas e põe de lado as repetidas ou as que nunca usas."
+    },
+    "pt_BR": {
+     "t": "Ferramentas e bricolagem",
+     "g": "Manter um kit básico sólido e compartilhar o que se usa pouco.",
+     "p": [
+      "Um kit básico cobre quase tudo: chaves de fenda, martelo, trena, alicate.",
+      "Ferramentas pouco usadas podem ser emprestadas por vizinhos ou bibliotecas de ferramentas.",
+      "Passe adiante as repetidas e as que você nunca aprendeu a usar."
+     ],
+     "q": "Que ferramentas você realmente mais usa?",
+     "c": "Organize suas ferramentas e separe as repetidas ou as que você nunca usa."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cables and chargers",
+     "g": "Label, match and recycle the tangled box of mystery cords.",
+     "p": [
+      "Test each cable with a device and keep only those that work.",
+      "Label the ones you keep with tape so you know what they are for.",
+      "Recycle old electronics cables through proper collection points."
+     ],
+     "q": "What is in your box of mystery cords?",
+     "c": "Untangle your cable box, label the useful ones and recycle the rest."
+    },
+    "de": {
+     "t": "Kabel und Ladegeräte",
+     "g": "Die Kiste voller Rätselkabel beschriften, zuordnen und recyceln.",
+     "p": [
+      "Teste jedes Kabel an einem Gerät und behalte nur funktionierende.",
+      "Beschrifte die behaltenen mit Klebeband, damit du ihren Zweck kennst.",
+      "Recycle alte Elektronikkabel über richtige Sammelstellen."
+     ],
+     "q": "Was steckt in deiner Kiste mit Rätselkabeln?",
+     "c": "Entwirr deine Kabelkiste, beschrifte die nützlichen und recycle den Rest."
+    },
+    "es": {
+     "t": "Cables y cargadores",
+     "g": "Etiquetar, emparejar y reciclar la caja de cables misteriosos.",
+     "p": [
+      "Prueba cada cable con un aparato y quédate solo con los que funcionan.",
+      "Etiqueta con cinta los que conserves para saber para qué sirven.",
+      "Recicla los cables viejos en puntos de recogida adecuados."
+     ],
+     "q": "¿Qué hay en tu caja de cables misteriosos?",
+     "c": "Desenreda tu caja de cables, etiqueta los útiles y recicla el resto."
+    },
+    "fr": {
+     "t": "Câbles et chargeurs",
+     "g": "Étiqueter, associer et recycler la boîte de câbles mystérieux.",
+     "p": [
+      "Teste chaque câble sur un appareil et ne garde que ceux qui marchent.",
+      "Étiquette avec du ruban ceux que tu gardes pour savoir à quoi ils servent.",
+      "Recycle les vieux câbles dans des points de collecte adaptés."
+     ],
+     "q": "Que contient ta boîte de câbles mystérieux ?",
+     "c": "Démêle ta boîte de câbles, étiquette les utiles et recycle le reste."
+    },
+    "it": {
+     "t": "Cavi e caricatori",
+     "g": "Etichettare, abbinare e riciclare la scatola di cavi misteriosi.",
+     "p": [
+      "Prova ogni cavo con un dispositivo e tieni solo quelli che funzionano.",
+      "Etichetta con nastro quelli che tieni per sapere a cosa servono.",
+      "Ricicla i vecchi cavi nei punti di raccolta adatti."
+     ],
+     "q": "Cosa c'è nella tua scatola di cavi misteriosi?",
+     "c": "Districa la scatola dei cavi, etichetta quelli utili e ricicla il resto."
+    },
+    "pt": {
+     "t": "Cabos e carregadores",
+     "g": "Etiquetar, combinar e reciclar a caixa de cabos misteriosos.",
+     "p": [
+      "Testa cada cabo com um aparelho e guarda só os que funcionam.",
+      "Etiqueta com fita os que guardas para saberes para que servem.",
+      "Recicla os cabos velhos em pontos de recolha adequados."
+     ],
+     "q": "O que há na tua caixa de cabos misteriosos?",
+     "c": "Desenrola a tua caixa de cabos, etiqueta os úteis e recicla o resto."
+    },
+    "pt_BR": {
+     "t": "Cabos e carregadores",
+     "g": "Etiquetar, combinar e reciclar a caixa de cabos misteriosos.",
+     "p": [
+      "Teste cada cabo com um aparelho e fique só com os que funcionam.",
+      "Etiquete com fita os que ficar para saber para que servem.",
+      "Recicle os cabos velhos em pontos de coleta adequados."
+     ],
+     "q": "O que tem na sua caixa de cabos misteriosos?",
+     "c": "Desembarace sua caixa de cabos, etiquete os úteis e recicle o resto."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The home office",
+     "g": "Create a clear desk and simple filing for better focus.",
+     "p": [
+      "Keep on the desk only what you use every day.",
+      "A few folders or one box is often enough for filing.",
+      "Fewer gadgets and notes in view help attention stay on one task."
+     ],
+     "q": "What helps you focus best at your desk?",
+     "c": "Clear your desk completely, then return only the daily essentials."
+    },
+    "de": {
+     "t": "Das Homeoffice",
+     "g": "Einen freien Schreibtisch und einfache Ablage für besseren Fokus schaffen.",
+     "p": [
+      "Lass auf dem Schreibtisch nur, was du täglich brauchst.",
+      "Ein paar Ordner oder eine Box reichen für die Ablage oft aus.",
+      "Weniger Geräte und Zettel im Blick helfen der Aufmerksamkeit bei einer Aufgabe."
+     ],
+     "q": "Was hilft dir am Schreibtisch am besten beim Fokussieren?",
+     "c": "Räum den Schreibtisch ganz frei und stell nur das tägliche Nötige zurück."
+    },
+    "es": {
+     "t": "La oficina en casa",
+     "g": "Crear un escritorio despejado y un archivo sencillo para concentrarte mejor.",
+     "p": [
+      "Deja en el escritorio solo lo que usas cada día.",
+      "Unas pocas carpetas o una caja suelen bastar para archivar.",
+      "Menos aparatos y notas a la vista ayudan a centrar la atención."
+     ],
+     "q": "¿Qué te ayuda más a concentrarte en tu escritorio?",
+     "c": "Despeja el escritorio por completo y devuelve solo lo esencial diario."
+    },
+    "fr": {
+     "t": "Le bureau à domicile",
+     "g": "Créer un bureau dégagé et un classement simple pour mieux se concentrer.",
+     "p": [
+      "Ne laisse sur le bureau que ce que tu utilises chaque jour.",
+      "Quelques chemises ou une boîte suffisent souvent pour classer.",
+      "Moins d'appareils et de notes en vue aide l'attention à rester sur une tâche."
+     ],
+     "q": "Qu'est-ce qui t'aide le mieux à te concentrer à ton bureau ?",
+     "c": "Dégage ton bureau entièrement, puis remets seulement l'essentiel quotidien."
+    },
+    "it": {
+     "t": "L'ufficio a casa",
+     "g": "Creare una scrivania libera e un archivio semplice per concentrarsi meglio.",
+     "p": [
+      "Tieni sulla scrivania solo ciò che usi ogni giorno.",
+      "Poche cartelle o una scatola bastano spesso per archiviare.",
+      "Meno dispositivi e appunti in vista aiutano l'attenzione a restare su un compito."
+     ],
+     "q": "Cosa ti aiuta di più a concentrarti alla scrivania?",
+     "c": "Libera del tutto la scrivania, poi rimetti solo l'essenziale quotidiano."
+    },
+    "pt": {
+     "t": "O escritório em casa",
+     "g": "Criar uma secretária livre e um arquivo simples para te concentrares melhor.",
+     "p": [
+      "Deixa na secretária só o que usas todos os dias.",
+      "Umas poucas pastas ou uma caixa chegam muitas vezes para arquivar.",
+      "Menos aparelhos e notas à vista ajudam a atenção a ficar numa tarefa."
+     ],
+     "q": "O que mais te ajuda a concentrar na tua secretária?",
+     "c": "Liberta a secretária por completo e volta a pôr só o essencial diário."
+    },
+    "pt_BR": {
+     "t": "O home office",
+     "g": "Criar uma mesa livre e um arquivo simples para se concentrar melhor.",
+     "p": [
+      "Deixe na mesa só o que você usa todos os dias.",
+      "Umas poucas pastas ou uma caixa costumam bastar para arquivar.",
+      "Menos aparelhos e anotações à vista ajudam a atenção a ficar numa tarefa."
+     ],
+     "q": "O que mais ajuda você a se concentrar na sua mesa?",
+     "c": "Libere a mesa por completo e devolva só o essencial do dia a dia."
+    }
+   }
+  }
+ ]
+}

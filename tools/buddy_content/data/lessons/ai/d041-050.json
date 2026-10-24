@@ -1,0 +1,835 @@
+{
+ "topic": "ai",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Autocorrect and predictive text",
+     "g": "See how your keyboard guesses the next word.",
+     "p": [
+      "It learns which words often follow each other in language.",
+      "It also adapts to the words and names you type most.",
+      "It can fix typos, but it can also change what you meant."
+     ],
+     "q": "What is the funniest autocorrect mistake you have seen?",
+     "c": "Read your next message once more before sending to catch changes."
+    },
+    "de": {
+     "t": "Autokorrektur und Texthilfe",
+     "g": "Sieh, wie deine Tastatur das nächste Wort errät.",
+     "p": [
+      "Sie lernt, welche Wörter in der Sprache oft aufeinander folgen.",
+      "Sie passt sich auch an Wörter und Namen an, die du oft tippst.",
+      "Sie behebt Tippfehler, kann aber auch ändern, was du meintest."
+     ],
+     "q": "Was war der lustigste Autokorrektur-Fehler, den du gesehen hast?",
+     "c": "Lies deine nächste Nachricht vor dem Senden noch einmal, um Änderungen zu finden."
+    },
+    "es": {
+     "t": "Autocorrector y texto predictivo",
+     "g": "Mira cómo tu teclado adivina la siguiente palabra.",
+     "p": [
+      "Aprende qué palabras suelen seguirse en el idioma.",
+      "También se adapta a las palabras y nombres que más escribes.",
+      "Corrige erratas, pero también puede cambiar lo que querías decir."
+     ],
+     "q": "¿Cuál fue el error de autocorrección más gracioso que viste?",
+     "c": "Relee tu próximo mensaje antes de enviarlo para pillar cambios."
+    },
+    "fr": {
+     "t": "Correcteur et texte prédictif",
+     "g": "Voir comment ton clavier devine le mot suivant.",
+     "p": [
+      "Il apprend quels mots se suivent souvent dans la langue.",
+      "Il s'adapte aussi aux mots et prénoms que tu tapes le plus.",
+      "Il corrige les fautes, mais peut aussi changer ce que tu voulais dire."
+     ],
+     "q": "Quelle est la faute de correction automatique la plus drôle que tu aies vue ?",
+     "c": "Relis ton prochain message avant l'envoi pour repérer les changements."
+    },
+    "it": {
+     "t": "Correttore e testo predittivo",
+     "g": "Vedi come la tua tastiera indovina la parola successiva.",
+     "p": [
+      "Impara quali parole si seguono spesso nella lingua.",
+      "Si adatta anche alle parole e ai nomi che scrivi di più.",
+      "Corregge i refusi, ma può anche cambiare ciò che volevi dire."
+     ],
+     "q": "Qual è l'errore di correzione automatica più buffo che hai visto?",
+     "c": "Rileggi il prossimo messaggio prima di inviarlo per cogliere i cambi."
+    },
+    "pt": {
+     "t": "Corretor e texto preditivo",
+     "g": "Ver como o teu teclado adivinha a palavra seguinte.",
+     "p": [
+      "Aprende que palavras costumam seguir-se na língua.",
+      "Adapta-se também às palavras e nomes que mais escreves.",
+      "Corrige gralhas, mas também pode mudar o que querias dizer."
+     ],
+     "q": "Qual foi o erro de correção automática mais engraçado que viste?",
+     "c": "Relê a tua próxima mensagem antes de enviar para apanhar alterações."
+    },
+    "pt_BR": {
+     "t": "Corretor e texto preditivo",
+     "g": "Ver como seu teclado adivinha a palavra seguinte.",
+     "p": [
+      "Ele aprende que palavras costumam se seguir na língua.",
+      "Adapta-se também às palavras e nomes que você mais digita.",
+      "Corrige erros de digitação, mas também pode mudar o que você queria dizer."
+     ],
+     "q": "Qual foi o erro de autocorreção mais engraçado que você viu?",
+     "c": "Releia sua próxima mensagem antes de enviar para pegar alterações."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Face unlock and recognition",
+     "g": "Learn how phones match a face to a stored pattern.",
+     "p": [
+      "The phone turns your face into numbers and compares them.",
+      "Lighting, angles and glasses can change the match.",
+      "Faces are sensitive data, so choose carefully where you share them."
+     ],
+     "q": "Do you prefer face unlock or a code, and why?",
+     "c": "Try unlocking in bright and dim light and note any difference."
+    },
+    "de": {
+     "t": "Gesichtsentsperrung und Erkennung",
+     "g": "Lerne, wie Handys ein Gesicht mit einem gespeicherten Muster abgleichen.",
+     "p": [
+      "Das Handy macht dein Gesicht zu Zahlen und vergleicht sie.",
+      "Licht, Winkel und Brillen können den Abgleich verändern.",
+      "Gesichter sind sensible Daten, teile sie also mit Bedacht."
+     ],
+     "q": "Magst du lieber Gesichtsentsperrung oder Code, und warum?",
+     "c": "Entsperre bei hellem und dunklem Licht und notiere Unterschiede."
+    },
+    "es": {
+     "t": "Desbloqueo facial y reconocimiento",
+     "g": "Aprende cómo los móviles comparan una cara con un patrón guardado.",
+     "p": [
+      "El móvil convierte tu cara en números y los compara.",
+      "La luz, los ángulos y las gafas pueden cambiar el resultado.",
+      "Las caras son datos sensibles, así que elige bien dónde compartirlas."
+     ],
+     "q": "¿Prefieres desbloqueo facial o un código, y por qué?",
+     "c": "Prueba a desbloquear con luz fuerte y tenue y anota la diferencia."
+    },
+    "fr": {
+     "t": "Déverrouillage facial et reconnaissance",
+     "g": "Comprendre comment les téléphones comparent un visage à un motif enregistré.",
+     "p": [
+      "Le téléphone transforme ton visage en nombres et les compare.",
+      "Lumière, angles et lunettes peuvent changer la correspondance.",
+      "Les visages sont des données sensibles : choisis bien où les partager."
+     ],
+     "q": "Préfères-tu le déverrouillage facial ou un code, et pourquoi ?",
+     "c": "Essaie de déverrouiller en lumière vive puis faible et note la différence."
+    },
+    "it": {
+     "t": "Sblocco facciale e riconoscimento",
+     "g": "Scopri come i telefoni confrontano un volto con uno schema salvato.",
+     "p": [
+      "Il telefono trasforma il tuo volto in numeri e li confronta.",
+      "Luce, angolazioni e occhiali possono cambiare il confronto.",
+      "I volti sono dati sensibili, quindi scegli con cura dove condividerli."
+     ],
+     "q": "Preferisci lo sblocco facciale o un codice, e perché?",
+     "c": "Prova a sbloccare con luce forte e debole e annota la differenza."
+    },
+    "pt": {
+     "t": "Desbloqueio facial e reconhecimento",
+     "g": "Perceber como os telemóveis comparam um rosto com um padrão guardado.",
+     "p": [
+      "O telemóvel transforma o teu rosto em números e compara-os.",
+      "A luz, os ângulos e os óculos podem alterar a correspondência.",
+      "Os rostos são dados sensíveis, por isso escolhe bem onde os partilhas."
+     ],
+     "q": "Preferes desbloqueio facial ou um código, e porquê?",
+     "c": "Tenta desbloquear com luz forte e fraca e anota a diferença."
+    },
+    "pt_BR": {
+     "t": "Desbloqueio facial e reconhecimento",
+     "g": "Entender como os celulares comparam um rosto com um padrão guardado.",
+     "p": [
+      "O celular transforma seu rosto em números e os compara.",
+      "Luz, ângulos e óculos podem alterar a correspondência.",
+      "Rostos são dados sensíveis, então escolha bem onde compartilhá-los."
+     ],
+     "q": "Você prefere desbloqueio facial ou um código, e por quê?",
+     "c": "Tente desbloquear com luz forte e fraca e anote a diferença."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Image recognition",
+     "g": "See how AI learns to name what is in a photo.",
+     "p": [
+      "A model learns from many labelled photos of cats, bikes and beaches.",
+      "It spots edges, shapes and textures, then combines them.",
+      "It can be fooled by odd angles or unusual settings."
+     ],
+     "q": "What would you want an image recognizer to identify for you?",
+     "c": "Photograph a plant or object and think what clues identify it."
+    },
+    "de": {
+     "t": "Bilderkennung",
+     "g": "Sieh, wie KI lernt, zu benennen, was auf einem Foto ist.",
+     "p": [
+      "Ein Modell lernt aus vielen beschrifteten Fotos von Katzen, Rädern und Stränden.",
+      "Es erkennt Kanten, Formen und Texturen und kombiniert sie.",
+      "Ungewöhnliche Winkel oder Umgebungen können es täuschen."
+     ],
+     "q": "Was soll eine Bilderkennung für dich identifizieren?",
+     "c": "Fotografiere eine Pflanze oder ein Objekt und überlege, welche Hinweise es verraten."
+    },
+    "es": {
+     "t": "Reconocimiento de imágenes",
+     "g": "Mira cómo la IA aprende a nombrar lo que hay en una foto.",
+     "p": [
+      "Un modelo aprende de muchas fotos etiquetadas de gatos, bicis y playas.",
+      "Detecta bordes, formas y texturas y los combina.",
+      "Puede engañarse con ángulos raros o entornos inusuales."
+     ],
+     "q": "¿Qué te gustaría que identificara un reconocedor de imágenes?",
+     "c": "Fotografía una planta u objeto y piensa qué pistas lo identifican."
+    },
+    "fr": {
+     "t": "Reconnaissance d'images",
+     "g": "Voir comment l'IA apprend à nommer ce qu'il y a sur une photo.",
+     "p": [
+      "Un modèle apprend à partir de nombreuses photos étiquetées de chats, vélos et plages.",
+      "Il repère contours, formes et textures, puis les combine.",
+      "Il peut être trompé par des angles bizarres ou des cadres inhabituels."
+     ],
+     "q": "Que voudrais-tu qu'un outil de reconnaissance d'images identifie pour toi ?",
+     "c": "Photographie une plante ou un objet et réfléchis aux indices qui l'identifient."
+    },
+    "it": {
+     "t": "Riconoscimento di immagini",
+     "g": "Vedi come l'IA impara a nominare ciò che c'è in una foto.",
+     "p": [
+      "Un modello impara da molte foto etichettate di gatti, bici e spiagge.",
+      "Individua bordi, forme e texture e li combina.",
+      "Può essere ingannato da angolazioni strane o ambienti insoliti."
+     ],
+     "q": "Cosa vorresti che un riconoscitore di immagini identificasse per te?",
+     "c": "Fotografa una pianta o un oggetto e pensa quali indizi lo identificano."
+    },
+    "pt": {
+     "t": "Reconhecimento de imagens",
+     "g": "Ver como a IA aprende a nomear o que está numa foto.",
+     "p": [
+      "Um modelo aprende com muitas fotos etiquetadas de gatos, bicicletas e praias.",
+      "Deteta contornos, formas e texturas e combina-os.",
+      "Pode ser enganado por ângulos estranhos ou cenários invulgares."
+     ],
+     "q": "O que gostarias que um reconhecedor de imagens identificasse por ti?",
+     "c": "Fotografa uma planta ou objeto e pensa que pistas o identificam."
+    },
+    "pt_BR": {
+     "t": "Reconhecimento de imagens",
+     "g": "Ver como a IA aprende a nomear o que está numa foto.",
+     "p": [
+      "Um modelo aprende com muitas fotos rotuladas de gatos, bicicletas e praias.",
+      "Detecta contornos, formas e texturas e os combina.",
+      "Pode ser enganado por ângulos estranhos ou cenários incomuns."
+     ],
+     "q": "O que você gostaria que um reconhecedor de imagens identificasse?",
+     "c": "Fotografe uma planta ou objeto e pense em que pistas o identificam."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Photo search in your gallery",
+     "g": "Learn how your phone finds sunsets without tags.",
+     "p": [
+      "A model describes each photo with learned labels, like dog or sea.",
+      "You type a word and the phone matches it to those labels.",
+      "Most of this can happen on your device, and settings vary."
+     ],
+     "q": "What photo would you like to find in seconds?",
+     "c": "Search your gallery for a colour, an animal and a place."
+    },
+    "de": {
+     "t": "Fotosuche in deiner Galerie",
+     "g": "Lerne, wie dein Handy Sonnenuntergänge ohne Tags findet.",
+     "p": [
+      "Ein Modell beschreibt jedes Foto mit gelernten Labels, etwa Hund oder Meer.",
+      "Du tippst ein Wort und das Handy gleicht es mit diesen Labels ab.",
+      "Vieles kann auf dem Gerät geschehen, die Einstellungen sind verschieden."
+     ],
+     "q": "Welches Foto möchtest du in Sekunden finden?",
+     "c": "Suche in deiner Galerie nach einer Farbe, einem Tier und einem Ort."
+    },
+    "es": {
+     "t": "Búsqueda de fotos en tu galería",
+     "g": "Aprende cómo tu móvil encuentra atardeceres sin etiquetas.",
+     "p": [
+      "Un modelo describe cada foto con etiquetas aprendidas, como perro o mar.",
+      "Escribes una palabra y el móvil la empareja con esas etiquetas.",
+      "Gran parte puede ocurrir en tu dispositivo, y los ajustes varían."
+     ],
+     "q": "¿Qué foto te gustaría encontrar en segundos?",
+     "c": "Busca en tu galería un color, un animal y un lugar."
+    },
+    "fr": {
+     "t": "Recherche de photos dans ta galerie",
+     "g": "Apprendre comment ton téléphone trouve des couchers de soleil sans tags.",
+     "p": [
+      "Un modèle décrit chaque photo avec des étiquettes apprises, comme chien ou mer.",
+      "Tu tapes un mot et le téléphone le relie à ces étiquettes.",
+      "Beaucoup de cela peut se faire sur l'appareil, selon les réglages."
+     ],
+     "q": "Quelle photo aimerais-tu retrouver en quelques secondes ?",
+     "c": "Cherche dans ta galerie une couleur, un animal et un lieu."
+    },
+    "it": {
+     "t": "Ricerca di foto nella galleria",
+     "g": "Scopri come il telefono trova i tramonti senza tag.",
+     "p": [
+      "Un modello descrive ogni foto con etichette apprese, come cane o mare.",
+      "Scrivi una parola e il telefono la abbina a quelle etichette.",
+      "Molto può avvenire sul dispositivo, e le impostazioni variano."
+     ],
+     "q": "Quale foto vorresti trovare in pochi secondi?",
+     "c": "Cerca nella galleria un colore, un animale e un luogo."
+    },
+    "pt": {
+     "t": "Pesquisa de fotos na galeria",
+     "g": "Perceber como o telemóvel encontra pores do sol sem etiquetas.",
+     "p": [
+      "Um modelo descreve cada foto com etiquetas aprendidas, como cão ou mar.",
+      "Escreves uma palavra e o telemóvel liga-a a essas etiquetas.",
+      "Muito disto pode acontecer no aparelho, e as definições variam."
+     ],
+     "q": "Que foto gostarias de encontrar em segundos?",
+     "c": "Procura na galeria uma cor, um animal e um lugar."
+    },
+    "pt_BR": {
+     "t": "Busca de fotos na galeria",
+     "g": "Entender como o celular encontra pores do sol sem rótulos.",
+     "p": [
+      "Um modelo descreve cada foto com rótulos aprendidos, como cachorro ou mar.",
+      "Você digita uma palavra e o celular a liga a esses rótulos.",
+      "Muito disso pode acontecer no aparelho, e as configurações variam."
+     ],
+     "q": "Que foto você gostaria de achar em segundos?",
+     "c": "Busque na galeria uma cor, um animal e um lugar."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Camera magic: computational photos",
+     "g": "See how AI blends shots to improve photos.",
+     "p": [
+      "The camera takes several frames and merges the best parts.",
+      "AI brightens night scenes and blurs backgrounds.",
+      "Edits can smooth reality, so a photo is not a perfect record."
+     ],
+     "q": "Do you want your photos to look real or enhanced?",
+     "c": "Take the same scene with and without night mode and compare."
+    },
+    "de": {
+     "t": "Kamera-Zauber: berechnete Fotos",
+     "g": "Sieh, wie KI Aufnahmen verrechnet, um Fotos zu verbessern.",
+     "p": [
+      "Die Kamera nimmt mehrere Bilder auf und fügt die besten Teile zusammen.",
+      "KI hellt Nachtszenen auf und verwischt Hintergründe.",
+      "Bearbeitung kann die Wirklichkeit glätten, ein Foto ist kein perfekter Beleg."
+     ],
+     "q": "Sollen deine Fotos echt oder verbessert aussehen?",
+     "c": "Fotografiere dieselbe Szene mit und ohne Nachtmodus und vergleiche."
+    },
+    "es": {
+     "t": "Magia de cámara: fotos computacionales",
+     "g": "Mira cómo la IA combina tomas para mejorar las fotos.",
+     "p": [
+      "La cámara toma varias imágenes y une las mejores partes.",
+      "La IA ilumina escenas nocturnas y desenfoca fondos.",
+      "Las ediciones pueden alisar la realidad, así que una foto no es un registro perfecto."
+     ],
+     "q": "¿Quieres que tus fotos se vean reales o mejoradas?",
+     "c": "Fotografía la misma escena con y sin modo noche y compara."
+    },
+    "fr": {
+     "t": "Magie de l'appareil photo : photos calculées",
+     "g": "Voir comment l'IA fusionne des prises pour améliorer les photos.",
+     "p": [
+      "L'appareil prend plusieurs images et fusionne les meilleures parties.",
+      "L'IA éclaircit les scènes de nuit et floute les arrière-plans.",
+      "Les retouches lissent le réel : une photo n'est pas un témoin parfait."
+     ],
+     "q": "Veux-tu que tes photos paraissent réelles ou améliorées ?",
+     "c": "Prends la même scène avec et sans mode nuit et compare."
+    },
+    "it": {
+     "t": "Magia della fotocamera: foto computazionali",
+     "g": "Vedi come l'IA fonde più scatti per migliorare le foto.",
+     "p": [
+      "La fotocamera scatta più immagini e unisce le parti migliori.",
+      "L'IA illumina le scene notturne e sfoca gli sfondi.",
+      "Le modifiche possono levigare la realtà, quindi una foto non è una prova perfetta."
+     ],
+     "q": "Vuoi che le tue foto sembrino reali o migliorate?",
+     "c": "Scatta la stessa scena con e senza modalità notte e confronta."
+    },
+    "pt": {
+     "t": "Magia da câmara: fotos computacionais",
+     "g": "Ver como a IA junta várias imagens para melhorar as fotos.",
+     "p": [
+      "A câmara tira várias imagens e junta as melhores partes.",
+      "A IA ilumina cenas noturnas e desfoca fundos.",
+      "As edições podem alisar a realidade, por isso uma foto não é um registo perfeito."
+     ],
+     "q": "Queres que as tuas fotos pareçam reais ou melhoradas?",
+     "c": "Fotografa a mesma cena com e sem modo noturno e compara."
+    },
+    "pt_BR": {
+     "t": "Mágica da câmera: fotos computacionais",
+     "g": "Ver como a IA junta várias imagens para melhorar as fotos.",
+     "p": [
+      "A câmera tira várias imagens e junta as melhores partes.",
+      "A IA ilumina cenas noturnas e desfoca fundos.",
+      "As edições podem alisar a realidade, então uma foto não é um registro perfeito."
+     ],
+     "q": "Você quer que suas fotos pareçam reais ou melhoradas?",
+     "c": "Fotografe a mesma cena com e sem modo noturno e compare."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Smart home devices",
+     "g": "Learn how thermostats, lights and speakers learn routines.",
+     "p": [
+      "Sensors and schedules feed a model that predicts your habits.",
+      "Devices can save energy by adjusting when you are away.",
+      "Connected devices collect data, so check privacy settings."
+     ],
+     "q": "Which household task would you most like to automate?",
+     "c": "Write a simple if-this-then-that rule for a light or heater."
+    },
+    "de": {
+     "t": "Smart-Home-Geräte",
+     "g": "Lerne, wie Thermostate, Lichter und Lautsprecher Routinen lernen.",
+     "p": [
+      "Sensoren und Zeitpläne füttern ein Modell, das deine Gewohnheiten vorhersagt.",
+      "Geräte können Energie sparen, indem sie sich anpassen, wenn du weg bist.",
+      "Vernetzte Geräte sammeln Daten, prüfe also die Datenschutzeinstellungen."
+     ],
+     "q": "Welche Haushaltsaufgabe würdest du am liebsten automatisieren?",
+     "c": "Schreibe eine einfache Wenn-dann-Regel für ein Licht oder eine Heizung."
+    },
+    "es": {
+     "t": "Dispositivos del hogar inteligente",
+     "g": "Aprende cómo termostatos, luces y altavoces aprenden rutinas.",
+     "p": [
+      "Sensores y horarios alimentan un modelo que predice tus hábitos.",
+      "Los aparatos pueden ahorrar energía ajustándose cuando no estás.",
+      "Los dispositivos conectados recogen datos, así que revisa la privacidad."
+     ],
+     "q": "¿Qué tarea del hogar te gustaría automatizar más?",
+     "c": "Escribe una regla sencilla del tipo si pasa esto, haz aquello para una luz."
+    },
+    "fr": {
+     "t": "Appareils de maison connectée",
+     "g": "Apprendre comment thermostats, lampes et enceintes apprennent des habitudes.",
+     "p": [
+      "Capteurs et horaires nourrissent un modèle qui prédit tes habitudes.",
+      "Les appareils peuvent économiser l'énergie en s'adaptant quand tu es absent.",
+      "Les appareils connectés collectent des données : vérifie la confidentialité."
+     ],
+     "q": "Quelle tâche ménagère aimerais-tu le plus automatiser ?",
+     "c": "Écris une règle simple du type si ceci alors cela pour une lampe."
+    },
+    "it": {
+     "t": "Dispositivi della casa intelligente",
+     "g": "Scopri come termostati, luci e altoparlanti imparano le abitudini.",
+     "p": [
+      "Sensori e orari alimentano un modello che prevede le tue abitudini.",
+      "I dispositivi possono risparmiare energia adattandosi quando sei fuori.",
+      "I dispositivi connessi raccolgono dati, quindi controlla la privacy."
+     ],
+     "q": "Quale faccenda domestica vorresti automatizzare di più?",
+     "c": "Scrivi una regola semplice del tipo se succede questo, fai quello per una luce."
+    },
+    "pt": {
+     "t": "Dispositivos de casa inteligente",
+     "g": "Perceber como termóstatos, luzes e colunas aprendem rotinas.",
+     "p": [
+      "Sensores e horários alimentam um modelo que prevê os teus hábitos.",
+      "Os aparelhos podem poupar energia ajustando-se quando estás fora.",
+      "Os dispositivos ligados recolhem dados, por isso revê a privacidade."
+     ],
+     "q": "Que tarefa doméstica gostarias mais de automatizar?",
+     "c": "Escreve uma regra simples do tipo se isto, então aquilo para uma luz."
+    },
+    "pt_BR": {
+     "t": "Dispositivos de casa inteligente",
+     "g": "Entender como termostatos, luzes e caixas de som aprendem rotinas.",
+     "p": [
+      "Sensores e horários alimentam um modelo que prevê seus hábitos.",
+      "Os aparelhos podem economizar energia se ajustando quando você sai.",
+      "Dispositivos conectados coletam dados, então revise a privacidade."
+     ],
+     "q": "Que tarefa doméstica você gostaria mais de automatizar?",
+     "c": "Escreva uma regra simples do tipo se isto, então aquilo para uma luz."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "AI in games",
+     "g": "Explore how games use AI for opponents and characters.",
+     "p": [
+      "Game AI controls characters that react to how you play.",
+      "Some use fixed rules, others learn from player behaviour.",
+      "Good game AI is designed to be fun, not unbeatable."
+     ],
+     "q": "What makes a computer opponent feel fair and fun to you?",
+     "c": "Play a game and notice one moment when the AI adapted."
+    },
+    "de": {
+     "t": "KI in Spielen",
+     "g": "Erkunde, wie Spiele KI für Gegner und Figuren nutzen.",
+     "p": [
+      "Spiel-KI steuert Figuren, die darauf reagieren, wie du spielst.",
+      "Manche nutzen feste Regeln, andere lernen aus dem Spielerverhalten.",
+      "Gute Spiel-KI soll Spaß machen, nicht unschlagbar sein."
+     ],
+     "q": "Was macht einen Computergegner für dich fair und unterhaltsam?",
+     "c": "Spiele ein Spiel und achte auf einen Moment, in dem sich die KI anpasste."
+    },
+    "es": {
+     "t": "IA en los videojuegos",
+     "g": "Explora cómo los juegos usan IA para rivales y personajes.",
+     "p": [
+      "La IA de un juego controla personajes que reaccionan a cómo juegas.",
+      "Unas usan reglas fijas y otras aprenden del comportamiento del jugador.",
+      "Una buena IA de juego busca ser divertida, no imbatible."
+     ],
+     "q": "¿Qué hace que un rival de ordenador te parezca justo y divertido?",
+     "c": "Juega una partida y fíjate en un momento en que la IA se adaptó."
+    },
+    "fr": {
+     "t": "L'IA dans les jeux",
+     "g": "Explorer comment les jeux utilisent l'IA pour adversaires et personnages.",
+     "p": [
+      "L'IA de jeu pilote des personnages qui réagissent à ta façon de jouer.",
+      "Certaines suivent des règles fixes, d'autres apprennent du comportement du joueur.",
+      "Une bonne IA de jeu vise le plaisir, pas l'invincibilité."
+     ],
+     "q": "Qu'est-ce qui rend un adversaire ordinateur juste et amusant pour toi ?",
+     "c": "Joue une partie et repère un moment où l'IA s'est adaptée."
+    },
+    "it": {
+     "t": "IA nei giochi",
+     "g": "Esplora come i giochi usano l'IA per avversari e personaggi.",
+     "p": [
+      "L'IA di un gioco controlla personaggi che reagiscono a come giochi.",
+      "Alcune usano regole fisse, altre imparano dal comportamento del giocatore.",
+      "Una buona IA di gioco punta al divertimento, non all'imbattibilità."
+     ],
+     "q": "Cosa rende un avversario del computer giusto e divertente per te?",
+     "c": "Gioca una partita e nota un momento in cui l'IA si è adattata."
+    },
+    "pt": {
+     "t": "IA nos jogos",
+     "g": "Explorar como os jogos usam IA em adversários e personagens.",
+     "p": [
+      "A IA de um jogo controla personagens que reagem à forma como jogas.",
+      "Umas usam regras fixas, outras aprendem com o comportamento do jogador.",
+      "Uma boa IA de jogo procura ser divertida, não imbatível."
+     ],
+     "q": "O que faz um adversário de computador parecer justo e divertido?",
+     "c": "Joga uma partida e repara num momento em que a IA se adaptou."
+    },
+    "pt_BR": {
+     "t": "IA nos jogos",
+     "g": "Explorar como os jogos usam IA em adversários e personagens.",
+     "p": [
+      "A IA de um jogo controla personagens que reagem à forma como você joga.",
+      "Umas usam regras fixas, outras aprendem com o comportamento do jogador.",
+      "Uma boa IA de jogo busca ser divertida, não imbatível."
+     ],
+     "q": "O que faz um adversário do computador parecer justo e divertido?",
+     "c": "Jogue uma partida e repare num momento em que a IA se adaptou."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chess and Deep Blue",
+     "g": "Learn about the 1997 match that shocked the world.",
+     "p": [
+      "In 1997 IBM's Deep Blue beat champion Garry Kasparov in a match.",
+      "It searched huge numbers of moves using fast hardware and rules.",
+      "Winning at chess did not make it generally intelligent."
+     ],
+     "q": "Does beating a champion at chess prove intelligence? Why?",
+     "c": "Play a short chess or draughts game and think ahead three moves."
+    },
+    "de": {
+     "t": "Schach und Deep Blue",
+     "g": "Lerne das Match von 1997 kennen, das die Welt erstaunte.",
+     "p": [
+      "1997 besiegte IBMs Deep Blue den Weltmeister Garry Kasparov in einem Match.",
+      "Es durchsuchte mit schneller Hardware und Regeln riesige Zugmengen.",
+      "Schach zu gewinnen machte es nicht allgemein intelligent."
+     ],
+     "q": "Beweist ein Sieg gegen einen Meister im Schach Intelligenz? Warum?",
+     "c": "Spiele eine kurze Partie Schach oder Dame und denke drei Züge voraus."
+    },
+    "es": {
+     "t": "Ajedrez y Deep Blue",
+     "g": "Conoce la partida de 1997 que sorprendió al mundo.",
+     "p": [
+      "En 1997 Deep Blue de IBM venció al campeón Garry Kaspárov en un match.",
+      "Exploraba enormes cantidades de jugadas con hardware veloz y reglas.",
+      "Ganar al ajedrez no la volvió inteligente en general."
+     ],
+     "q": "¿Ganar a un campeón de ajedrez demuestra inteligencia? ¿Por qué?",
+     "c": "Juega una partida corta de ajedrez o damas y piensa tres jugadas adelante."
+    },
+    "fr": {
+     "t": "Les échecs et Deep Blue",
+     "g": "Découvrir le match de 1997 qui a surpris le monde.",
+     "p": [
+      "En 1997, Deep Blue d'IBM bat le champion Garry Kasparov lors d'un match.",
+      "Il explorait d'énormes quantités de coups avec un matériel rapide et des règles.",
+      "Gagner aux échecs ne l'a pas rendu intelligent en général."
+     ],
+     "q": "Battre un champion d'échecs prouve-t-il l'intelligence ? Pourquoi ?",
+     "c": "Joue une courte partie d'échecs ou de dames et anticipe trois coups."
+    },
+    "it": {
+     "t": "Gli scacchi e Deep Blue",
+     "g": "Scopri la sfida del 1997 che stupì il mondo.",
+     "p": [
+      "Nel 1997 Deep Blue di IBM batté il campione Garry Kasparov in un match.",
+      "Esplorava enormi quantità di mosse con hardware veloce e regole.",
+      "Vincere a scacchi non lo rese intelligente in generale."
+     ],
+     "q": "Battere un campione di scacchi dimostra intelligenza? Perché?",
+     "c": "Gioca una breve partita a scacchi o dama e pensa tre mosse avanti."
+    },
+    "pt": {
+     "t": "O xadrez e o Deep Blue",
+     "g": "Conhecer o encontro de 1997 que surpreendeu o mundo.",
+     "p": [
+      "Em 1997 o Deep Blue da IBM venceu o campeão Garry Kasparov num encontro.",
+      "Explorava enormes quantidades de jogadas com hardware veloz e regras.",
+      "Ganhar ao xadrez não o tornou inteligente em geral."
+     ],
+     "q": "Vencer um campeão de xadrez prova inteligência? Porquê?",
+     "c": "Joga uma partida curta de xadrez ou damas e pensa três jogadas à frente."
+    },
+    "pt_BR": {
+     "t": "O xadrez e o Deep Blue",
+     "g": "Conhecer a partida de 1997 que surpreendeu o mundo.",
+     "p": [
+      "Em 1997 o Deep Blue da IBM venceu o campeão Garry Kasparov numa disputa.",
+      "Explorava enormes quantidades de jogadas com hardware veloz e regras.",
+      "Ganhar no xadrez não o tornou inteligente em geral."
+     ],
+     "q": "Vencer um campeão de xadrez prova inteligência? Por quê?",
+     "c": "Jogue uma partida curta de xadrez ou damas e pense três jogadas à frente."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Go and AlphaGo",
+     "g": "Learn how AI mastered the ancient game of Go.",
+     "p": [
+      "In 2016 DeepMind's AlphaGo beat Lee Sedol, a top Go player.",
+      "Go has more possible positions than atoms in the universe.",
+      "AlphaGo learned from human games and from playing itself."
+     ],
+     "q": "Why is learning from self-play so powerful for games?",
+     "c": "Try a small board game twice and note what you learned between games."
+    },
+    "de": {
+     "t": "Go und AlphaGo",
+     "g": "Lerne, wie KI das uralte Spiel Go meisterte.",
+     "p": [
+      "2016 besiegte DeepMinds AlphaGo Lee Sedol, einen Spitzenspieler im Go.",
+      "Go hat mehr mögliche Stellungen als das Universum Atome.",
+      "AlphaGo lernte aus Partien von Menschen und aus Spielen gegen sich selbst."
+     ],
+     "q": "Warum ist Lernen durch Spiele gegen sich selbst bei Spielen so stark?",
+     "c": "Spiele ein kleines Brettspiel zweimal und notiere, was du dazwischen gelernt hast."
+    },
+    "es": {
+     "t": "Go y AlphaGo",
+     "g": "Aprende cómo la IA dominó el antiguo juego de Go.",
+     "p": [
+      "En 2016 AlphaGo de DeepMind venció a Lee Sedol, un gran jugador de Go.",
+      "El Go tiene más posiciones posibles que átomos en el universo.",
+      "AlphaGo aprendió de partidas humanas y jugando contra sí mismo."
+     ],
+     "q": "¿Por qué aprender jugando contra uno mismo es tan potente en los juegos?",
+     "c": "Juega dos veces un juego de mesa pequeño y anota lo que aprendiste entre partidas."
+    },
+    "fr": {
+     "t": "Le go et AlphaGo",
+     "g": "Apprendre comment l'IA a maîtrisé l'ancien jeu de go.",
+     "p": [
+      "En 2016, AlphaGo de DeepMind bat Lee Sedol, un grand joueur de go.",
+      "Le go a plus de positions possibles que d'atomes dans l'univers.",
+      "AlphaGo a appris de parties humaines et en jouant contre lui-même."
+     ],
+     "q": "Pourquoi apprendre en jouant contre soi-même est-il si puissant ?",
+     "c": "Joue deux fois à un petit jeu de plateau et note ce que tu as appris."
+    },
+    "it": {
+     "t": "Il Go e AlphaGo",
+     "g": "Scopri come l'IA ha padroneggiato l'antico gioco del Go.",
+     "p": [
+      "Nel 2016 AlphaGo di DeepMind batté Lee Sedol, un grande giocatore di Go.",
+      "Il Go ha più posizioni possibili degli atomi nell'universo.",
+      "AlphaGo imparò da partite umane e giocando contro sé stesso."
+     ],
+     "q": "Perché imparare giocando contro sé stessi è così potente nei giochi?",
+     "c": "Gioca due volte a un piccolo gioco da tavolo e annota cosa hai imparato."
+    },
+    "pt": {
+     "t": "O Go e o AlphaGo",
+     "g": "Perceber como a IA dominou o antigo jogo de Go.",
+     "p": [
+      "Em 2016 o AlphaGo da DeepMind venceu Lee Sedol, um grande jogador de Go.",
+      "O Go tem mais posições possíveis do que átomos no universo.",
+      "O AlphaGo aprendeu com partidas humanas e a jogar contra si próprio."
+     ],
+     "q": "Porque é tão poderoso aprender a jogar contra si próprio?",
+     "c": "Joga duas vezes um pequeno jogo de tabuleiro e anota o que aprendeste."
+    },
+    "pt_BR": {
+     "t": "O Go e o AlphaGo",
+     "g": "Entender como a IA dominou o antigo jogo de Go.",
+     "p": [
+      "Em 2016 o AlphaGo da DeepMind venceu Lee Sedol, um grande jogador de Go.",
+      "O Go tem mais posições possíveis do que átomos no universo.",
+      "O AlphaGo aprendeu com partidas humanas e jogando contra si mesmo."
+     ],
+     "q": "Por que é tão poderoso aprender jogando contra si mesmo?",
+     "c": "Jogue duas vezes um pequeno jogo de tabuleiro e anote o que aprendeu."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "AI in sports",
+     "g": "See how teams use data and AI to understand the game.",
+     "p": [
+      "Cameras and sensors track players, the ball and effort.",
+      "Models spot patterns in tactics and training loads.",
+      "Data supports coaches, but talent and teamwork stay human."
+     ],
+     "q": "What would you like to measure about your own sport or exercise?",
+     "c": "Track one simple number for a week, such as steps or minutes."
+    },
+    "de": {
+     "t": "KI im Sport",
+     "g": "Sieh, wie Teams mit Daten und KI das Spiel verstehen.",
+     "p": [
+      "Kameras und Sensoren erfassen Spieler, Ball und Belastung.",
+      "Modelle erkennen Muster in Taktik und Trainingsumfang.",
+      "Daten unterstützen Trainer, aber Talent und Teamgeist bleiben menschlich."
+     ],
+     "q": "Was möchtest du an deinem eigenen Sport oder Training messen?",
+     "c": "Erfasse eine Woche lang eine einfache Zahl, etwa Schritte oder Minuten."
+    },
+    "es": {
+     "t": "IA en el deporte",
+     "g": "Mira cómo los equipos usan datos e IA para entender el juego.",
+     "p": [
+      "Cámaras y sensores siguen a jugadores, balón y esfuerzo.",
+      "Los modelos detectan patrones en tácticas y cargas de entrenamiento.",
+      "Los datos apoyan a los entrenadores, pero el talento y el equipo siguen siendo humanos."
+     ],
+     "q": "¿Qué te gustaría medir de tu propio deporte o ejercicio?",
+     "c": "Registra durante una semana un número simple, como pasos o minutos."
+    },
+    "fr": {
+     "t": "L'IA dans le sport",
+     "g": "Voir comment les équipes utilisent données et IA pour comprendre le jeu.",
+     "p": [
+      "Caméras et capteurs suivent joueurs, ballon et effort.",
+      "Les modèles repèrent des motifs dans la tactique et les charges d'entraînement.",
+      "Les données aident les entraîneurs, mais talent et esprit d'équipe restent humains."
+     ],
+     "q": "Que voudrais-tu mesurer dans ton propre sport ou exercice ?",
+     "c": "Suis un simple chiffre pendant une semaine, comme pas ou minutes."
+    },
+    "it": {
+     "t": "IA nello sport",
+     "g": "Vedi come le squadre usano dati e IA per capire il gioco.",
+     "p": [
+      "Telecamere e sensori seguono giocatori, pallone e sforzo.",
+      "I modelli individuano schemi nella tattica e nei carichi di allenamento.",
+      "I dati aiutano gli allenatori, ma talento e squadra restano umani."
+     ],
+     "q": "Cosa vorresti misurare del tuo sport o esercizio?",
+     "c": "Segna per una settimana un numero semplice, come passi o minuti."
+    },
+    "pt": {
+     "t": "IA no desporto",
+     "g": "Ver como as equipas usam dados e IA para perceber o jogo.",
+     "p": [
+      "Câmaras e sensores acompanham jogadores, bola e esforço.",
+      "Os modelos detetam padrões na tática e nas cargas de treino.",
+      "Os dados apoiam os treinadores, mas o talento e a equipa continuam humanos."
+     ],
+     "q": "O que gostarias de medir no teu desporto ou exercício?",
+     "c": "Regista durante uma semana um número simples, como passos ou minutos."
+    },
+    "pt_BR": {
+     "t": "IA no esporte",
+     "g": "Ver como as equipes usam dados e IA para entender o jogo.",
+     "p": [
+      "Câmeras e sensores acompanham jogadores, bola e esforço.",
+      "Os modelos detectam padrões na tática e nas cargas de treino.",
+      "Os dados apoiam os técnicos, mas o talento e a equipe continuam humanos."
+     ],
+     "q": "O que você gostaria de medir no seu esporte ou exercício?",
+     "c": "Registre durante uma semana um número simples, como passos ou minutos."
+    }
+   }
+  }
+ ]
+}

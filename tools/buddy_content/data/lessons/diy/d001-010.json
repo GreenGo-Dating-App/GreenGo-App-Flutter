@@ -1,0 +1,835 @@
+{
+ "topic": "diy",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why DIY is worth learning",
+     "g": "Discover why fixing and making things yourself is rewarding and builds confidence.",
+     "p": [
+      "Every small fix teaches a skill you keep for life.",
+      "You save money and time on simple jobs around the home.",
+      "The pride of saying 'I made that' is hard to beat."
+     ],
+     "q": "What is one thing at home you would love to fix or build yourself?",
+     "c": "Look around your home and write down three small things you could fix."
+    },
+    "de": {
+     "t": "Warum sich Heimwerken lohnt",
+     "g": "Entdecke, warum Selbermachen Freude bringt und dein Selbstvertrauen stärkt.",
+     "p": [
+      "Jede kleine Reparatur lehrt dich eine Fähigkeit fürs Leben.",
+      "Bei einfachen Arbeiten im Haushalt sparst du Zeit und Geld.",
+      "Der Stolz, sagen zu können: Das habe ich selbst gemacht, ist unbezahlbar."
+     ],
+     "q": "Was würdest du zu Hause gern selbst reparieren oder bauen?",
+     "c": "Schau dich zu Hause um und notiere drei kleine Dinge, die du reparieren könntest."
+    },
+    "es": {
+     "t": "Por qué vale la pena aprender bricolaje",
+     "g": "Descubre por qué arreglar y crear cosas tú mismo es gratificante y da confianza.",
+     "p": [
+      "Cada pequeño arreglo te enseña una habilidad para toda la vida.",
+      "Ahorras tiempo y dinero en trabajos sencillos de casa.",
+      "El orgullo de decir «esto lo hice yo» no tiene comparación."
+     ],
+     "q": "¿Qué cosa de tu casa te gustaría arreglar o construir tú mismo?",
+     "c": "Mira tu casa y anota tres cositas que podrías arreglar tú."
+    },
+    "fr": {
+     "t": "Pourquoi apprendre le bricolage",
+     "g": "Découvre pourquoi réparer et fabriquer soi-même est gratifiant et donne confiance.",
+     "p": [
+      "Chaque petite réparation t'apprend un savoir-faire pour la vie.",
+      "Tu gagnes du temps et de l'argent sur les travaux simples.",
+      "La fierté de dire « c'est moi qui l'ai fait » est difficile à égaler."
+     ],
+     "q": "Qu'aimerais-tu réparer ou construire toi-même chez toi ?",
+     "c": "Fais le tour de ta maison et note trois petites choses à réparer."
+    },
+    "it": {
+     "t": "Perché vale la pena imparare il fai da te",
+     "g": "Scopri perché riparare e creare con le proprie mani dà soddisfazione e sicurezza.",
+     "p": [
+      "Ogni piccola riparazione ti insegna un'abilità che resta per sempre.",
+      "Risparmi tempo e denaro nei lavoretti semplici di casa.",
+      "L'orgoglio di dire «l'ho fatto io» è difficile da battere."
+     ],
+     "q": "Cosa vorresti riparare o costruire da solo in casa tua?",
+     "c": "Guardati intorno in casa e scrivi tre piccole cose che potresti sistemare."
+    },
+    "pt": {
+     "t": "Porque vale a pena aprender bricolage",
+     "g": "Descobre porque arranjar e fazer coisas tu próprio é gratificante e dá confiança.",
+     "p": [
+      "Cada pequeno arranjo ensina-te uma competência para a vida.",
+      "Poupas tempo e dinheiro em trabalhos simples em casa.",
+      "O orgulho de dizer «fui eu que fiz» é difícil de igualar."
+     ],
+     "q": "O que gostarias de arranjar ou construir tu próprio em casa?",
+     "c": "Olha à tua volta em casa e anota três pequenas coisas que podias arranjar."
+    },
+    "pt_BR": {
+     "t": "Por que vale a pena aprender a fazer você mesmo",
+     "g": "Descubra por que consertar e criar coisas com as próprias mãos é gratificante e dá confiança.",
+     "p": [
+      "Cada pequeno conserto ensina uma habilidade para a vida toda.",
+      "Você economiza tempo e dinheiro em serviços simples de casa.",
+      "O orgulho de dizer «fui eu que fiz» é difícil de superar."
+     ],
+     "q": "O que você gostaria de consertar ou construir sozinho em casa?",
+     "c": "Olhe sua casa e anote três coisinhas que você poderia consertar."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Safety first: the DIY mindset",
+     "g": "Learn the habits that keep every project safe: plan, read, slow down, stop.",
+     "p": [
+      "Plan the job and read the instructions before you start.",
+      "Never rush; most accidents happen when we hurry or are tired.",
+      "If something feels unsafe, stop and ask for help."
+     ],
+     "q": "When did rushing last make a job harder or messier for you?",
+     "c": "Before your next task, say the steps out loud and name one risk."
+    },
+    "de": {
+     "t": "Sicherheit zuerst: die richtige Einstellung",
+     "g": "Lerne die Gewohnheiten, die jedes Projekt sicher machen: planen, lesen, langsam sein, stoppen.",
+     "p": [
+      "Plane die Arbeit und lies die Anleitung, bevor du anfängst.",
+      "Keine Eile: Die meisten Unfälle passieren bei Hektik oder Müdigkeit.",
+      "Wenn sich etwas unsicher anfühlt, hör auf und hol dir Hilfe."
+     ],
+     "q": "Wann hat Eile eine Arbeit bei dir zuletzt schwieriger gemacht?",
+     "c": "Nenne vor deiner nächsten Aufgabe die Schritte laut und ein mögliches Risiko."
+    },
+    "es": {
+     "t": "Seguridad primero: la mentalidad del bricolaje",
+     "g": "Aprende los hábitos que hacen seguro cada proyecto: planificar, leer, ir despacio, parar.",
+     "p": [
+      "Planifica el trabajo y lee las instrucciones antes de empezar.",
+      "Nunca tengas prisa: la mayoría de accidentes ocurren con prisas o cansancio.",
+      "Si algo te parece inseguro, para y pide ayuda."
+     ],
+     "q": "¿Cuándo te complicó las cosas la prisa en un trabajo?",
+     "c": "Antes de tu próxima tarea, di los pasos en voz alta y nombra un riesgo."
+    },
+    "fr": {
+     "t": "La sécurité d'abord : l'état d'esprit du bricoleur",
+     "g": "Apprends les réflexes qui rendent chaque projet sûr : planifier, lire, ralentir, s'arrêter.",
+     "p": [
+      "Planifie le travail et lis le mode d'emploi avant de commencer.",
+      "Ne te précipite jamais : la plupart des accidents arrivent par hâte ou fatigue.",
+      "Si quelque chose paraît dangereux, arrête-toi et demande de l'aide."
+     ],
+     "q": "Quand la précipitation t'a-t-elle compliqué un travail ?",
+     "c": "Avant ta prochaine tâche, dis les étapes à voix haute et nomme un risque."
+    },
+    "it": {
+     "t": "Prima la sicurezza: la mentalità giusta",
+     "g": "Impara le abitudini che rendono sicuro ogni lavoro: pianificare, leggere, rallentare, fermarsi.",
+     "p": [
+      "Pianifica il lavoro e leggi le istruzioni prima di iniziare.",
+      "Mai di fretta: la maggior parte degli incidenti avviene per fretta o stanchezza.",
+      "Se qualcosa sembra poco sicuro, fermati e chiedi aiuto."
+     ],
+     "q": "Quando la fretta ti ha complicato un lavoretto?",
+     "c": "Prima del prossimo lavoro, di' ad alta voce i passaggi e indica un rischio."
+    },
+    "pt": {
+     "t": "Segurança primeiro: a mentalidade certa",
+     "g": "Aprende os hábitos que tornam cada projeto seguro: planear, ler, abrandar, parar.",
+     "p": [
+      "Planeia o trabalho e lê as instruções antes de começar.",
+      "Nunca te apresses: a maioria dos acidentes acontece com pressa ou cansaço.",
+      "Se algo parecer inseguro, pára e pede ajuda."
+     ],
+     "q": "Quando é que a pressa te complicou um trabalho?",
+     "c": "Antes da próxima tarefa, diz os passos em voz alta e nomeia um risco."
+    },
+    "pt_BR": {
+     "t": "Segurança em primeiro lugar: a mentalidade certa",
+     "g": "Aprenda os hábitos que deixam cada projeto seguro: planejar, ler, ir devagar, parar.",
+     "p": [
+      "Planeje o trabalho e leia as instruções antes de começar.",
+      "Nunca tenha pressa: a maioria dos acidentes acontece com pressa ou cansaço.",
+      "Se algo parecer inseguro, pare e peça ajuda."
+     ],
+     "q": "Quando a pressa complicou algum serviço para você?",
+     "c": "Antes da próxima tarefa, diga os passos em voz alta e cite um risco."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Personal protective equipment",
+     "g": "Know what safety glasses, gloves, ear protection and dust masks do for you.",
+     "p": [
+      "Safety glasses protect your eyes from chips, dust and splashes.",
+      "Gloves guard hands, but never wear them near spinning tools.",
+      "Ear protection and dust masks matter for loud or dusty work."
+     ],
+     "q": "Which protective item do you own, and which would you add?",
+     "c": "Put your safety glasses on and check they fit snugly and see clearly."
+    },
+    "de": {
+     "t": "Persönliche Schutzausrüstung",
+     "g": "Erfahre, was Schutzbrille, Handschuhe, Gehörschutz und Staubmaske für dich leisten.",
+     "p": [
+      "Die Schutzbrille schützt deine Augen vor Spänen, Staub und Spritzern.",
+      "Handschuhe schützen die Hände, aber nie in der Nähe rotierender Werkzeuge tragen.",
+      "Gehörschutz und Staubmaske sind bei lauten oder staubigen Arbeiten wichtig."
+     ],
+     "q": "Welche Schutzausrüstung besitzt du und welche würdest du ergänzen?",
+     "c": "Setz deine Schutzbrille auf und prüfe, ob sie gut sitzt und klare Sicht bietet."
+    },
+    "es": {
+     "t": "Equipo de protección personal",
+     "g": "Conoce para qué sirven las gafas, los guantes, la protección auditiva y la mascarilla.",
+     "p": [
+      "Las gafas de seguridad protegen tus ojos de virutas, polvo y salpicaduras.",
+      "Los guantes protegen las manos, pero nunca los uses cerca de herramientas giratorias.",
+      "La protección auditiva y la mascarilla importan en trabajos ruidosos o con polvo."
+     ],
+     "q": "¿Qué protección tienes ya y cuál añadirías?",
+     "c": "Ponte las gafas de seguridad y comprueba que ajustan bien y ves con claridad."
+    },
+    "fr": {
+     "t": "Équipement de protection individuelle",
+     "g": "Découvre à quoi servent les lunettes, gants, protections auditives et masques anti-poussière.",
+     "p": [
+      "Les lunettes protègent tes yeux des éclats, de la poussière et des projections.",
+      "Les gants protègent les mains, mais jamais près d'outils qui tournent.",
+      "Protection auditive et masque comptent pour les travaux bruyants ou poussiéreux."
+     ],
+     "q": "Quel équipement de protection as-tu, et lequel ajouterais-tu ?",
+     "c": "Mets tes lunettes de protection et vérifie qu'elles tiennent bien et voient clair."
+    },
+    "it": {
+     "t": "Dispositivi di protezione individuale",
+     "g": "Scopri a cosa servono occhiali, guanti, protezione per le orecchie e mascherina.",
+     "p": [
+      "Gli occhiali proteggono gli occhi da schegge, polvere e schizzi.",
+      "I guanti proteggono le mani, ma mai vicino a utensili rotanti.",
+      "Cuffie e mascherina contano nei lavori rumorosi o polverosi."
+     ],
+     "q": "Quale protezione hai già e quale aggiungeresti?",
+     "c": "Indossa gli occhiali di sicurezza e controlla che calzino bene e si veda chiaro."
+    },
+    "pt": {
+     "t": "Equipamento de proteção individual",
+     "g": "Fica a saber para que servem óculos, luvas, proteção auditiva e máscara.",
+     "p": [
+      "Os óculos protegem os olhos de aparas, pó e salpicos.",
+      "As luvas protegem as mãos, mas nunca perto de ferramentas rotativas.",
+      "Proteção auditiva e máscara contam em trabalhos ruidosos ou com pó."
+     ],
+     "q": "Que proteção já tens e qual acrescentarias?",
+     "c": "Põe os óculos de proteção e confirma que assentam bem e vês com nitidez."
+    },
+    "pt_BR": {
+     "t": "Equipamento de proteção individual",
+     "g": "Saiba para que servem óculos, luvas, protetor auricular e máscara de pó.",
+     "p": [
+      "Os óculos protegem os olhos de farpas, pó e respingos.",
+      "As luvas protegem as mãos, mas nunca perto de ferramentas giratórias.",
+      "Protetor auricular e máscara importam em serviços barulhentos ou com muito pó."
+     ],
+     "q": "Que proteção você já tem e qual acrescentaria?",
+     "c": "Coloque os óculos de proteção e confira se ficam firmes e se enxerga bem."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Know your limits",
+     "g": "Learn which jobs suit DIY and which always need a qualified professional.",
+     "p": [
+      "Painting, shelves and small repairs are great DIY starters.",
+      "Electrical, gas and boiler work always needs a qualified professional.",
+      "Asking an expert is smart, not a failure."
+     ],
+     "q": "Which job at home would you hand to a professional without a second thought?",
+     "c": "List three jobs you can do yourself and three you would leave to experts."
+    },
+    "de": {
+     "t": "Kenne deine Grenzen",
+     "g": "Lerne, welche Arbeiten sich fürs Heimwerken eignen und welche immer Fachleute brauchen.",
+     "p": [
+      "Streichen, Regale und kleine Reparaturen sind ideale Einsteigerprojekte.",
+      "Arbeiten an Strom, Gas und Heizung gehören immer in Fachhände.",
+      "Einen Profi zu fragen ist klug, kein Scheitern."
+     ],
+     "q": "Welche Arbeit im Haus würdest du ohne Zögern einem Profi überlassen?",
+     "c": "Liste drei Arbeiten, die du selbst machst, und drei, die du Profis überlässt."
+    },
+    "es": {
+     "t": "Conoce tus límites",
+     "g": "Aprende qué trabajos son para bricolaje y cuáles requieren siempre a un profesional.",
+     "p": [
+      "Pintar, poner estantes y arreglos pequeños son buenos primeros proyectos.",
+      "Los trabajos eléctricos, de gas y de caldera requieren siempre a un profesional cualificado.",
+      "Pedir ayuda a un experto es inteligente, no un fracaso."
+     ],
+     "q": "¿Qué trabajo de casa dejarías en manos de un profesional sin dudar?",
+     "c": "Anota tres trabajos que puedes hacer tú y tres que dejarías a expertos."
+    },
+    "fr": {
+     "t": "Connaître ses limites",
+     "g": "Apprends quels travaux conviennent au bricolage et lesquels exigent toujours un professionnel.",
+     "p": [
+      "Peindre, poser des étagères et réparer en petit sont de bons débuts.",
+      "Électricité, gaz et chaudière : toujours un professionnel qualifié.",
+      "Demander à un expert est malin, pas un échec."
+     ],
+     "q": "Quel travail confierais-tu sans hésiter à un professionnel ?",
+     "c": "Note trois travaux que tu peux faire et trois que tu laisserais aux experts."
+    },
+    "it": {
+     "t": "Conosci i tuoi limiti",
+     "g": "Scopri quali lavori vanno bene per il fai da te e quali richiedono sempre un professionista.",
+     "p": [
+      "Dipingere, montare mensole e piccole riparazioni sono ottimi inizi.",
+      "Lavori elettrici, a gas e di caldaia richiedono sempre un professionista qualificato.",
+      "Chiedere a un esperto è intelligente, non è un fallimento."
+     ],
+     "q": "Quale lavoro di casa affideresti subito a un professionista?",
+     "c": "Elenca tre lavori che puoi fare tu e tre che lasceresti agli esperti."
+    },
+    "pt": {
+     "t": "Conhece os teus limites",
+     "g": "Aprende que trabalhos servem para bricolage e quais exigem sempre um profissional.",
+     "p": [
+      "Pintar, montar prateleiras e pequenos arranjos são bons começos.",
+      "Trabalhos elétricos, de gás e de caldeira exigem sempre um profissional qualificado.",
+      "Pedir ajuda a um especialista é inteligente, não é falhar."
+     ],
+     "q": "Que trabalho de casa entregarias sem hesitar a um profissional?",
+     "c": "Lista três trabalhos que podes fazer e três que deixarias a especialistas."
+    },
+    "pt_BR": {
+     "t": "Conheça seus limites",
+     "g": "Aprenda quais serviços servem para fazer você mesmo e quais exigem sempre um profissional.",
+     "p": [
+      "Pintar, instalar prateleiras e pequenos consertos são ótimos começos.",
+      "Serviços elétricos, de gás e de aquecedor exigem sempre um profissional qualificado.",
+      "Pedir ajuda a um especialista é inteligente, não é fracasso."
+     ],
+     "q": "Que serviço da casa você entregaria sem pensar a um profissional?",
+     "c": "Liste três serviços que você faz sozinho e três que deixaria para especialistas."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting up a safe workspace",
+     "g": "Prepare light, floor, air and a stable surface before any job.",
+     "p": [
+      "Good light helps you see edges, marks and hazards.",
+      "A clear floor prevents trips; keep cables and offcuts tidy.",
+      "Use a stable bench and open a window when using glue or paint."
+     ],
+     "q": "Where in your home would your ideal work corner be?",
+     "c": "Clear one table or corner and check the light before your next project."
+    },
+    "de": {
+     "t": "Eine sichere Werkstatt einrichten",
+     "g": "Bereite Licht, Boden, Luft und eine stabile Unterlage vor jeder Arbeit vor.",
+     "p": [
+      "Gutes Licht zeigt dir Kanten, Markierungen und Gefahren.",
+      "Ein freier Boden verhindert Stolpern; Kabel und Reste aufräumen.",
+      "Nutze eine stabile Werkbank und lüfte bei Kleber oder Farbe."
+     ],
+     "q": "Wo in deinem Zuhause wäre deine ideale Arbeitsecke?",
+     "c": "Räume einen Tisch oder eine Ecke frei und prüfe das Licht."
+    },
+    "es": {
+     "t": "Montar un espacio de trabajo seguro",
+     "g": "Prepara luz, suelo, aire y una superficie estable antes de cada trabajo.",
+     "p": [
+      "Una buena luz te ayuda a ver bordes, marcas y peligros.",
+      "Un suelo despejado evita tropiezos; ordena cables y recortes.",
+      "Usa una mesa estable y abre una ventana con pegamento o pintura."
+     ],
+     "q": "¿Dónde estaría tu rincón de trabajo ideal en casa?",
+     "c": "Despeja una mesa o un rincón y revisa la luz antes de tu próximo proyecto."
+    },
+    "fr": {
+     "t": "Aménager un espace de travail sûr",
+     "g": "Prépare lumière, sol, air et surface stable avant chaque travail.",
+     "p": [
+      "Une bonne lumière te montre les bords, les repères et les dangers.",
+      "Un sol dégagé évite les chutes ; range câbles et chutes de matériau.",
+      "Utilise un établi stable et ouvre une fenêtre avec colle ou peinture."
+     ],
+     "q": "Où serait ton coin de travail idéal chez toi ?",
+     "c": "Dégage une table ou un coin et vérifie la lumière avant ton prochain projet."
+    },
+    "it": {
+     "t": "Preparare uno spazio di lavoro sicuro",
+     "g": "Prepara luce, pavimento, aria e un piano stabile prima di ogni lavoro.",
+     "p": [
+      "Una buona luce ti fa vedere bordi, segni e pericoli.",
+      "Un pavimento libero evita inciampi; tieni in ordine cavi e ritagli.",
+      "Usa un banco stabile e apri la finestra con colla o vernice."
+     ],
+     "q": "Dove sarebbe il tuo angolo di lavoro ideale in casa?",
+     "c": "Libera un tavolo o un angolo e controlla la luce prima del prossimo lavoro."
+    },
+    "pt": {
+     "t": "Montar um espaço de trabalho seguro",
+     "g": "Prepara luz, chão, ar e uma superfície estável antes de cada trabalho.",
+     "p": [
+      "Boa luz ajuda a ver arestas, marcas e perigos.",
+      "Um chão livre evita tropeções; arruma cabos e sobras.",
+      "Usa uma bancada estável e abre a janela com cola ou tinta."
+     ],
+     "q": "Onde ficaria o teu canto de trabalho ideal em casa?",
+     "c": "Liberta uma mesa ou um canto e verifica a luz antes do próximo projeto."
+    },
+    "pt_BR": {
+     "t": "Montando um espaço de trabalho seguro",
+     "g": "Prepare luz, piso, ar e uma superfície firme antes de cada serviço.",
+     "p": [
+      "Boa luz ajuda a ver bordas, marcações e perigos.",
+      "Piso livre evita tropeços; mantenha fios e sobras organizados.",
+      "Use uma bancada firme e abra a janela ao usar cola ou tinta."
+     ],
+     "q": "Onde ficaria o seu cantinho de trabalho ideal em casa?",
+     "c": "Libere uma mesa ou um canto e confira a luz antes do próximo projeto."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first toolbox",
+     "g": "Build a starter kit that covers most small jobs around the home.",
+     "p": [
+      "Start with tape measure, hammer, screwdrivers, pliers and a level.",
+      "Add a utility knife, a small saw and a cordless drill later.",
+      "Buy quality basics one at a time as projects need them."
+     ],
+     "q": "Which tool do you reach for most, or expect to need first?",
+     "c": "Gather the tools you already own in one box and note what is missing."
+    },
+    "de": {
+     "t": "Dein erster Werkzeugkasten",
+     "g": "Stelle ein Grundset zusammen, das die meisten kleinen Arbeiten abdeckt.",
+     "p": [
+      "Beginne mit Maßband, Hammer, Schraubendrehern, Zange und Wasserwaage.",
+      "Später kommen Cuttermesser, kleine Säge und Akkuschrauber dazu.",
+      "Kaufe gute Basics nach und nach, wenn Projekte sie brauchen."
+     ],
+     "q": "Welches Werkzeug nutzt du am meisten oder brauchst du zuerst?",
+     "c": "Sammle deine vorhandenen Werkzeuge in einer Kiste und notiere, was fehlt."
+    },
+    "es": {
+     "t": "Tu primera caja de herramientas",
+     "g": "Crea un kit básico que cubra la mayoría de los trabajos pequeños de casa.",
+     "p": [
+      "Empieza con metro, martillo, destornilladores, alicates y nivel.",
+      "Más adelante añade cúter, serrucho pequeño y taladro a batería.",
+      "Compra buenas herramientas básicas una a una según tus proyectos."
+     ],
+     "q": "¿Qué herramienta usas más o crees que necesitarás primero?",
+     "c": "Reúne en una caja las herramientas que ya tienes y anota qué falta."
+    },
+    "fr": {
+     "t": "Ta première boîte à outils",
+     "g": "Compose un kit de base pour la plupart des petits travaux de la maison.",
+     "p": [
+      "Commence par mètre, marteau, tournevis, pinces et niveau.",
+      "Ajoute plus tard un cutter, une petite scie et une perceuse sans fil.",
+      "Achète de bons outils de base un par un, selon tes projets."
+     ],
+     "q": "Quel outil utilises-tu le plus, ou penses-tu utiliser en premier ?",
+     "c": "Rassemble tes outils dans une boîte et note ce qui manque."
+    },
+    "it": {
+     "t": "La tua prima cassetta degli attrezzi",
+     "g": "Crea un kit base che copra la maggior parte dei piccoli lavori di casa.",
+     "p": [
+      "Parti da metro, martello, cacciaviti, pinze e livella.",
+      "Più avanti aggiungi taglierino, piccola sega e trapano a batteria.",
+      "Compra attrezzi base di qualità uno alla volta, secondo i progetti."
+     ],
+     "q": "Quale attrezzo usi di più o pensi di usare per primo?",
+     "c": "Raccogli in una scatola gli attrezzi che hai già e annota cosa manca."
+    },
+    "pt": {
+     "t": "A tua primeira caixa de ferramentas",
+     "g": "Monta um kit básico que cubra a maioria dos pequenos trabalhos de casa.",
+     "p": [
+      "Começa com fita métrica, martelo, chaves de fendas, alicates e nível.",
+      "Mais tarde junta x-ato, serra pequena e berbequim sem fios.",
+      "Compra boas ferramentas básicas uma a uma, conforme os projetos."
+     ],
+     "q": "Que ferramenta usas mais ou achas que vais precisar primeiro?",
+     "c": "Reúne numa caixa as ferramentas que já tens e anota o que falta."
+    },
+    "pt_BR": {
+     "t": "Sua primeira caixa de ferramentas",
+     "g": "Monte um kit básico que cubra a maioria dos pequenos serviços de casa.",
+     "p": [
+      "Comece com trena, martelo, chaves de fenda, alicates e nível.",
+      "Depois acrescente estilete, serrote pequeno e furadeira sem fio.",
+      "Compre boas ferramentas básicas uma a uma, conforme os projetos."
+     ],
+     "q": "Que ferramenta você mais usa ou acha que vai precisar primeiro?",
+     "c": "Junte numa caixa as ferramentas que já tem e anote o que falta."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Using a hammer properly",
+     "g": "Drive nails straight with a good grip, stance and controlled swings.",
+     "p": [
+      "Hold the handle near the end and keep your eye on the nail head.",
+      "Start with light taps, then swing from the elbow, not just the wrist.",
+      "Hold small nails with pliers to protect your fingers."
+     ],
+     "q": "Have you ever bent a nail or hit your thumb? What happened?",
+     "c": "Drive three nails into scrap wood and aim for straight ones."
+    },
+    "de": {
+     "t": "Den Hammer richtig benutzen",
+     "g": "Schlage Nägel gerade ein mit gutem Griff, Stand und kontrollierten Schlägen.",
+     "p": [
+      "Fasse den Stiel nahe am Ende und blicke auf den Nagelkopf.",
+      "Beginne mit leichten Schlägen, dann schwinge aus dem Ellbogen, nicht nur dem Handgelenk.",
+      "Halte kleine Nägel mit einer Zange, um die Finger zu schützen."
+     ],
+     "q": "Hast du schon mal einen Nagel verbogen oder dir auf den Daumen gehauen?",
+     "c": "Schlage drei Nägel in Restholz und versuche, sie gerade einzutreiben."
+    },
+    "es": {
+     "t": "Usar bien un martillo",
+     "g": "Clava clavos rectos con buen agarre, postura y golpes controlados.",
+     "p": [
+      "Sujeta el mango cerca del final y mira la cabeza del clavo.",
+      "Empieza con golpecitos y luego balancea desde el codo, no solo la muñeca.",
+      "Sujeta los clavos pequeños con alicates para proteger tus dedos."
+     ],
+     "q": "¿Alguna vez doblaste un clavo o te diste en el dedo? ¿Qué pasó?",
+     "c": "Clava tres clavos en un trozo de madera sobrante e intenta que queden rectos."
+    },
+    "fr": {
+     "t": "Bien utiliser un marteau",
+     "g": "Enfonce des clous droits grâce à une bonne prise, une bonne posture et des coups maîtrisés.",
+     "p": [
+      "Tiens le manche près de l'extrémité et regarde la tête du clou.",
+      "Commence par de petits coups, puis frappe depuis le coude, pas seulement le poignet.",
+      "Tiens les petits clous avec une pince pour protéger tes doigts."
+     ],
+     "q": "As-tu déjà plié un clou ou tapé sur ton pouce ? Raconte.",
+     "c": "Enfonce trois clous dans une chute de bois et vise des clous bien droits."
+    },
+    "it": {
+     "t": "Usare bene il martello",
+     "g": "Pianta chiodi dritti con buona presa, posizione e colpi controllati.",
+     "p": [
+      "Impugna il manico vicino all'estremità e guarda la testa del chiodo.",
+      "Inizia con colpetti leggeri, poi colpisci dal gomito, non solo dal polso.",
+      "Tieni i chiodi piccoli con le pinze per proteggere le dita."
+     ],
+     "q": "Ti è mai capitato di piegare un chiodo o colpirti il pollice?",
+     "c": "Pianta tre chiodi in un pezzo di legno di scarto e cerca di farli dritti."
+    },
+    "pt": {
+     "t": "Usar bem um martelo",
+     "g": "Crava pregos direitos com boa pega, postura e pancadas controladas.",
+     "p": [
+      "Segura o cabo perto da ponta e olha para a cabeça do prego.",
+      "Começa com pancadinhas e depois bate a partir do cotovelo, não só do pulso.",
+      "Segura pregos pequenos com um alicate para proteger os dedos."
+     ],
+     "q": "Já entortaste um prego ou deste uma martelada no dedo?",
+     "c": "Crava três pregos num pedaço de madeira de sobra e tenta que fiquem direitos."
+    },
+    "pt_BR": {
+     "t": "Usando bem o martelo",
+     "g": "Pregue pregos retos com boa pegada, postura e batidas controladas.",
+     "p": [
+      "Segure o cabo perto da ponta e olhe para a cabeça do prego.",
+      "Comece com batidinhas e depois bata a partir do cotovelo, não só do pulso.",
+      "Segure pregos pequenos com um alicate para proteger os dedos."
+     ],
+     "q": "Você já entortou um prego ou deu uma martelada no dedo?",
+     "c": "Pregue três pregos num pedaço de madeira sobrando e tente deixá-los retos."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Screwdrivers and screw heads",
+     "g": "Match the bit to the screw head to avoid stripped screws.",
+     "p": [
+      "Slotted, Phillips, Pozidriv and Torx heads each need their own bit.",
+      "A snug fit and firm downward pressure stop the bit slipping.",
+      "Always turn counterclockwise to loosen, clockwise to tighten."
+     ],
+     "q": "Which screws at home give you trouble, and why?",
+     "c": "Find four different screw heads at home and match each to the right bit."
+    },
+    "de": {
+     "t": "Schraubendreher und Schraubenköpfe",
+     "g": "Wähle den passenden Bit, damit keine Schrauben ausleiern.",
+     "p": [
+      "Schlitz, Kreuzschlitz, Pozidriv und Torx brauchen jeweils ihren eigenen Bit.",
+      "Passform und fester Druck verhindern, dass der Bit abrutscht.",
+      "Zum Lösen immer gegen den Uhrzeigersinn drehen, zum Festziehen im Uhrzeigersinn."
+     ],
+     "q": "Welche Schrauben bei dir machen Ärger, und warum?",
+     "c": "Finde vier verschiedene Schraubenköpfe im Haus und ordne den passenden Bit zu."
+    },
+    "es": {
+     "t": "Destornilladores y cabezas de tornillo",
+     "g": "Elige la punta adecuada para no dañar la cabeza del tornillo.",
+     "p": [
+      "Ranura, Phillips, Pozidriv y Torx necesitan cada una su punta.",
+      "Un buen ajuste y presión firme evitan que la punta resbale.",
+      "Para aflojar gira en sentido antihorario y para apretar, en sentido horario."
+     ],
+     "q": "¿Qué tornillos de casa te dan problemas y por qué?",
+     "c": "Encuentra cuatro cabezas de tornillo distintas en casa y elige la punta correcta."
+    },
+    "fr": {
+     "t": "Tournevis et têtes de vis",
+     "g": "Choisis l'embout adapté à la vis pour éviter de l'abîmer.",
+     "p": [
+      "Fente, Phillips, Pozidriv et Torx demandent chacun leur embout.",
+      "Un bon ajustement et une pression ferme évitent que l'embout glisse.",
+      "Pour desserrer, tourne dans le sens antihoraire ; pour serrer, dans le sens horaire."
+     ],
+     "q": "Quelles vis te posent problème chez toi, et pourquoi ?",
+     "c": "Trouve quatre têtes de vis différentes chez toi et associe le bon embout."
+    },
+    "it": {
+     "t": "Cacciaviti e teste delle viti",
+     "g": "Abbina la punta alla testa della vite per non rovinarla.",
+     "p": [
+      "Taglio, Phillips, Pozidriv e Torx richiedono ognuna la propria punta.",
+      "Un buon incastro e pressione decisa evitano che la punta scivoli.",
+      "Per allentare gira in senso antiorario, per stringere in senso orario."
+     ],
+     "q": "Quali viti di casa ti danno problemi, e perché?",
+     "c": "Trova quattro teste di vite diverse in casa e abbina la punta giusta."
+    },
+    "pt": {
+     "t": "Chaves de fendas e cabeças de parafuso",
+     "g": "Escolhe a ponta certa para não estragar a cabeça do parafuso.",
+     "p": [
+      "Fenda, Phillips, Pozidriv e Torx precisam cada uma da sua ponta.",
+      "Um bom encaixe e pressão firme evitam que a ponta escorregue.",
+      "Para desapertar, roda no sentido anti-horário; para apertar, no horário."
+     ],
+     "q": "Que parafusos em casa te dão problemas, e porquê?",
+     "c": "Encontra quatro cabeças de parafuso diferentes em casa e escolhe a ponta certa."
+    },
+    "pt_BR": {
+     "t": "Chaves de fenda e cabeças de parafuso",
+     "g": "Escolha a ponta certa para não espanar a cabeça do parafuso.",
+     "p": [
+      "Fenda, Phillips, Pozidriv e Torx precisam cada uma de sua ponta.",
+      "Bom encaixe e pressão firme evitam que a ponta escorregue.",
+      "Para soltar, gire no sentido anti-horário; para apertar, no horário."
+     ],
+     "q": "Que parafusos da sua casa dão trabalho, e por quê?",
+     "c": "Ache quatro cabeças de parafuso diferentes em casa e escolha a ponta certa."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pliers and wrenches",
+     "g": "Learn what combination pliers, long-nose pliers and adjustable wrenches are for.",
+     "p": [
+      "Combination pliers grip and cut; long-nose pliers reach tight spots.",
+      "An adjustable wrench must fit snugly on the nut to avoid rounding it.",
+      "Pull the wrench toward you rather than pushing it away."
+     ],
+     "q": "Have you ever struggled with a stubborn nut or bolt?",
+     "c": "Adjust a wrench to fit a nut snugly and turn it a few times."
+    },
+    "de": {
+     "t": "Zangen und Schraubenschlüssel",
+     "g": "Lerne, wofür Kombizange, Spitzzange und Rollgabelschlüssel da sind.",
+     "p": [
+      "Die Kombizange greift und schneidet; die Spitzzange erreicht enge Stellen.",
+      "Der Rollgabelschlüssel muss eng an der Mutter sitzen, sonst rundet er sie ab.",
+      "Ziehe den Schlüssel zu dir, statt ihn wegzudrücken."
+     ],
+     "q": "Hast du schon mal mit einer störrischen Mutter oder Schraube gekämpft?",
+     "c": "Stelle einen Schlüssel eng auf eine Mutter ein und drehe sie ein paarmal."
+    },
+    "es": {
+     "t": "Alicates y llaves",
+     "g": "Aprende para qué sirven los alicates universales, los de punta y la llave ajustable.",
+     "p": [
+      "Los alicates universales sujetan y cortan; los de punta llegan a sitios estrechos.",
+      "La llave ajustable debe ceñirse a la tuerca para no redondearla.",
+      "Tira de la llave hacia ti en lugar de empujarla."
+     ],
+     "q": "¿Alguna vez te peleaste con una tuerca o un perno atascado?",
+     "c": "Ajusta una llave a una tuerca y gírala unas vueltas."
+    },
+    "fr": {
+     "t": "Pinces et clés",
+     "g": "Apprends à quoi servent la pince universelle, la pince à bec fin et la clé à molette.",
+     "p": [
+      "La pince universelle serre et coupe ; le bec fin atteint les endroits étroits.",
+      "La clé à molette doit épouser l'écrou pour ne pas l'arrondir.",
+      "Tire la clé vers toi plutôt que de la pousser."
+     ],
+     "q": "As-tu déjà lutté avec un écrou ou un boulon récalcitrant ?",
+     "c": "Règle une clé à molette sur un écrou et fais-le tourner quelques tours."
+    },
+    "it": {
+     "t": "Pinze e chiavi",
+     "g": "Scopri a cosa servono pinza universale, pinza a becchi lunghi e chiave regolabile.",
+     "p": [
+      "La pinza universale stringe e taglia; quella a becchi lunghi arriva negli spazi stretti.",
+      "La chiave regolabile deve aderire al dado per non arrotondarlo.",
+      "Tira la chiave verso di te invece di spingerla."
+     ],
+     "q": "Ti è mai capitato di lottare con un dado o un bullone ostinato?",
+     "c": "Regola una chiave su un dado e giralo per qualche giro."
+    },
+    "pt": {
+     "t": "Alicates e chaves",
+     "g": "Aprende para que servem o alicate universal, o de bico e a chave ajustável.",
+     "p": [
+      "O alicate universal agarra e corta; o de bico chega a locais apertados.",
+      "A chave ajustável deve ajustar-se bem à porca para não a arredondar.",
+      "Puxa a chave para ti em vez de a empurrar."
+     ],
+     "q": "Já lutaste com uma porca ou parafuso teimoso?",
+     "c": "Ajusta uma chave a uma porca e roda-a algumas voltas."
+    },
+    "pt_BR": {
+     "t": "Alicates e chaves",
+     "g": "Aprenda para que servem o alicate universal, o de bico e a chave ajustável.",
+     "p": [
+      "O alicate universal segura e corta; o de bico alcança lugares apertados.",
+      "A chave ajustável deve se encaixar bem na porca para não arredondá-la.",
+      "Puxe a chave na sua direção em vez de empurrá-la."
+     ],
+     "q": "Você já brigou com uma porca ou parafuso emperrado?",
+     "c": "Ajuste uma chave a uma porca e gire-a algumas voltas."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Utility knives safely",
+     "g": "Cut cleanly and safely with fresh blades and the right surface.",
+     "p": [
+      "Always cut away from your body and keep your other hand clear.",
+      "A fresh sharp blade needs less force and slips less often.",
+      "Use a cutting mat or board and retract the blade when done."
+     ],
+     "q": "What do you usually cut with a knife at home?",
+     "c": "Cut a strip of cardboard on a board with three light passes."
+    },
+    "de": {
+     "t": "Cuttermesser sicher benutzen",
+     "g": "Schneide sauber und sicher mit frischer Klinge und passender Unterlage.",
+     "p": [
+      "Schneide immer vom Körper weg und halte die andere Hand frei.",
+      "Eine frische, scharfe Klinge braucht weniger Kraft und rutscht seltener.",
+      "Nutze eine Schneidunterlage und fahre die Klinge nach Gebrauch ein."
+     ],
+     "q": "Was schneidest du zu Hause meist mit dem Messer?",
+     "c": "Schneide auf einem Brett einen Pappstreifen mit drei leichten Zügen."
+    },
+    "es": {
+     "t": "Cúter y cuchillas con seguridad",
+     "g": "Corta limpio y seguro con cuchillas nuevas y la superficie adecuada.",
+     "p": [
+      "Corta siempre alejándote del cuerpo y mantén libre la otra mano.",
+      "Una cuchilla nueva y afilada necesita menos fuerza y resbala menos.",
+      "Usa una base de corte y retrae la cuchilla al terminar."
+     ],
+     "q": "¿Qué sueles cortar con cúter en casa?",
+     "c": "Corta una tira de cartón sobre una tabla con tres pasadas suaves."
+    },
+    "fr": {
+     "t": "Cutter : l'utiliser en sécurité",
+     "g": "Coupe proprement et sans risque avec une lame neuve et le bon support.",
+     "p": [
+      "Coupe toujours en t'éloignant du corps et garde l'autre main à l'écart.",
+      "Une lame neuve et affûtée demande moins de force et glisse moins.",
+      "Utilise un tapis de coupe et rentre la lame après usage."
+     ],
+     "q": "Que coupes-tu d'habitude au cutter chez toi ?",
+     "c": "Coupe une bande de carton sur une planche en trois passes légères."
+    },
+    "it": {
+     "t": "Il taglierino in sicurezza",
+     "g": "Taglia in modo pulito e sicuro con lame nuove e il piano giusto.",
+     "p": [
+      "Taglia sempre lontano dal corpo e tieni libera l'altra mano.",
+      "Una lama nuova e affilata richiede meno forza e scivola meno.",
+      "Usa un tappetino da taglio e ritrai la lama a fine lavoro."
+     ],
+     "q": "Cosa tagli di solito con il taglierino in casa?",
+     "c": "Taglia una striscia di cartone su una tavola con tre passate leggere."
+    },
+    "pt": {
+     "t": "X-ato em segurança",
+     "g": "Corta com limpeza e segurança com lâminas novas e a superfície certa.",
+     "p": [
+      "Corta sempre a afastar do corpo e mantém a outra mão livre.",
+      "Uma lâmina nova e afiada precisa de menos força e escorrega menos.",
+      "Usa uma base de corte e recolhe a lâmina no fim."
+     ],
+     "q": "O que costumas cortar com o x-ato em casa?",
+     "c": "Corta uma tira de cartão sobre uma tábua com três passagens leves."
+    },
+    "pt_BR": {
+     "t": "Estilete com segurança",
+     "g": "Corte com limpeza e segurança usando lâminas novas e a superfície certa.",
+     "p": [
+      "Corte sempre afastando do corpo e mantenha a outra mão livre.",
+      "Uma lâmina nova e afiada exige menos força e escorrega menos.",
+      "Use uma base de corte e recolha a lâmina ao terminar."
+     ],
+     "q": "O que você costuma cortar com estilete em casa?",
+     "c": "Corte uma tira de papelão sobre uma tábua com três passadas leves."
+    }
+   }
+  }
+ ]
+}

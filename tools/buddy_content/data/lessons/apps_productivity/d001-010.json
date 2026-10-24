@@ -1,0 +1,835 @@
+{
+ "topic": "apps_productivity",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What digital productivity really means",
+     "g": "Understand that apps should serve your life, not run it.",
+     "p": [
+      "Productivity means doing what matters with less stress, not doing more.",
+      "A good tool saves time or worry; a bad one adds noise and pressure.",
+      "Ask often: does this app help me, or do I just feel I should use it?"
+     ],
+     "q": "Which app on your phone really makes your life easier, and why?",
+     "c": "Name one app that helps you and one that mostly distracts you."
+    },
+    "de": {
+     "t": "Was digitale Produktivität wirklich heißt",
+     "g": "Verstehe, dass Apps deinem Leben dienen sollen und nicht umgekehrt.",
+     "p": [
+      "Produktiv sein heißt, Wichtiges mit weniger Stress zu tun, nicht mehr zu schaffen.",
+      "Ein gutes Werkzeug spart Zeit oder Sorgen; ein schlechtes bringt nur Lärm und Druck.",
+      "Frag dich öfter: Hilft mir diese App, oder fühle ich mich nur verpflichtet?"
+     ],
+     "q": "Welche App auf deinem Handy erleichtert dir das Leben wirklich, und warum?",
+     "c": "Nenne eine App, die dir hilft, und eine, die dich meistens ablenkt."
+    },
+    "es": {
+     "t": "Qué es de verdad la productividad digital",
+     "g": "Entiende que las apps deben servir a tu vida, no dirigirla.",
+     "p": [
+      "Ser productivo es hacer lo importante con menos estrés, no hacer más cosas.",
+      "Una buena herramienta ahorra tiempo o preocupaciones; una mala añade ruido y presión.",
+      "Pregúntate a menudo: ¿me ayuda esta app o solo siento que debería usarla?"
+     ],
+     "q": "¿Qué app de tu móvil te facilita de verdad la vida y por qué?",
+     "c": "Nombra una app que te ayude y otra que sobre todo te distraiga."
+    },
+    "fr": {
+     "t": "Ce qu'est vraiment la productivité numérique",
+     "g": "Comprends que les applis doivent servir ta vie, pas la diriger.",
+     "p": [
+      "Être productif, c'est faire l'essentiel avec moins de stress, pas en faire plus.",
+      "Un bon outil fait gagner du temps ou de la sérénité; un mauvais ajoute bruit et pression.",
+      "Demande-toi souvent : cette appli m'aide-t-elle, ou est-ce un réflexe de l'utiliser ?"
+     ],
+     "q": "Quelle appli de ton téléphone te simplifie vraiment la vie, et pourquoi ?",
+     "c": "Cite une appli qui t'aide et une qui te distrait surtout."
+    },
+    "it": {
+     "t": "Cosa significa davvero produttività digitale",
+     "g": "Capisci che le app devono servire la tua vita, non guidarla.",
+     "p": [
+      "Essere produttivi significa fare ciò che conta con meno stress, non fare di più.",
+      "Un buon strumento fa risparmiare tempo o pensieri; uno cattivo aggiunge rumore e pressione.",
+      "Chiediti spesso: questa app mi aiuta, o sento solo di doverla usare?"
+     ],
+     "q": "Quale app del tuo telefono ti semplifica davvero la vita, e perché?",
+     "c": "Nomina un'app che ti aiuta e una che ti distrae soprattutto."
+    },
+    "pt": {
+     "t": "O que é mesmo a produtividade digital",
+     "g": "Percebe que as apps devem servir a tua vida, não comandá-la.",
+     "p": [
+      "Ser produtivo é fazer o que importa com menos stress, não fazer mais coisas.",
+      "Uma boa ferramenta poupa tempo ou preocupações; uma má só traz ruído e pressão.",
+      "Pergunta-te muitas vezes: esta app ajuda-me, ou só sinto que a devia usar?"
+     ],
+     "q": "Que app do teu telemóvel te facilita mesmo a vida, e porquê?",
+     "c": "Diz o nome de uma app que te ajuda e de outra que sobretudo te distrai."
+    },
+    "pt_BR": {
+     "t": "O que é de verdade produtividade digital",
+     "g": "Entenda que os apps devem servir à sua vida, e não comandá-la.",
+     "p": [
+      "Ser produtivo é fazer o que importa com menos estresse, não fazer mais coisas.",
+      "Uma boa ferramenta economiza tempo ou preocupação; uma ruim só traz barulho e pressão.",
+      "Pergunte-se sempre: este app me ajuda, ou só sinto que deveria usá-lo?"
+     ],
+     "q": "Qual app do seu celular facilita mesmo a sua vida, e por quê?",
+     "c": "Diga o nome de um app que ajuda você e de outro que mais distrai."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your current app inventory",
+     "g": "List the apps you use daily, rarely and never.",
+     "p": [
+      "Open your app list and sort each app into daily, sometimes or never.",
+      "Apps you never use take space, may collect data and clutter your mind.",
+      "A clear inventory is the starting point for a lighter digital life."
+     ],
+     "q": "How many apps do you think you really use every day?",
+     "c": "Sort ten apps into daily, rarely and never, then guess the totals first."
+    },
+    "de": {
+     "t": "Deine aktuelle App-Inventur",
+     "g": "Liste die Apps auf, die du täglich, selten und nie nutzt.",
+     "p": [
+      "Öffne deine App-Liste und sortiere jede App in täglich, manchmal oder nie.",
+      "Nie genutzte Apps brauchen Platz, sammeln eventuell Daten und belasten den Kopf.",
+      "Eine klare Bestandsaufnahme ist der Start in ein leichteres digitales Leben."
+     ],
+     "q": "Wie viele Apps nutzt du wohl wirklich jeden Tag?",
+     "c": "Sortiere zehn Apps in täglich, selten und nie; schätze die Summen vorher."
+    },
+    "es": {
+     "t": "Tu inventario actual de apps",
+     "g": "Haz una lista de las apps que usas a diario, rara vez y nunca.",
+     "p": [
+      "Abre tu lista de apps y clasifica cada una: a diario, a veces o nunca.",
+      "Las apps que nunca usas ocupan espacio, pueden recopilar datos y saturan la mente.",
+      "Un inventario claro es el punto de partida de una vida digital más ligera."
+     ],
+     "q": "¿Cuántas apps crees que usas de verdad cada día?",
+     "c": "Clasifica diez apps en a diario, rara vez y nunca; adivina antes los totales."
+    },
+    "fr": {
+     "t": "Ton inventaire d'applis actuel",
+     "g": "Fais la liste des applis utilisées chaque jour, rarement et jamais.",
+     "p": [
+      "Ouvre ta liste d'applis et classe chacune : tous les jours, parfois ou jamais.",
+      "Les applis jamais utilisées prennent de la place, collectent parfois des données et encombrent l'esprit.",
+      "Un inventaire clair est le point de départ d'une vie numérique plus légère."
+     ],
+     "q": "Combien d'applis penses-tu vraiment utiliser chaque jour ?",
+     "c": "Classe dix applis en tous les jours, rarement et jamais; devine d'abord les totaux."
+    },
+    "it": {
+     "t": "Il tuo inventario di app",
+     "g": "Elenca le app che usi ogni giorno, raramente e mai.",
+     "p": [
+      "Apri l'elenco delle app e metti ognuna in ogni giorno, a volte o mai.",
+      "Le app mai usate occupano spazio, possono raccogliere dati e affollano la mente.",
+      "Un inventario chiaro è il punto di partenza per una vita digitale più leggera."
+     ],
+     "q": "Quante app pensi di usare davvero ogni giorno?",
+     "c": "Dividi dieci app in ogni giorno, raramente e mai; prima indovina i totali."
+    },
+    "pt": {
+     "t": "O teu inventário de apps",
+     "g": "Lista as apps que usas todos os dias, raramente e nunca.",
+     "p": [
+      "Abre a lista de apps e põe cada uma em todos os dias, às vezes ou nunca.",
+      "As apps que nunca usas ocupam espaço, podem recolher dados e enchem a cabeça.",
+      "Um inventário claro é o ponto de partida para uma vida digital mais leve."
+     ],
+     "q": "Quantas apps achas que usas mesmo todos os dias?",
+     "c": "Separa dez apps em todos os dias, raramente e nunca; adivinha antes os totais."
+    },
+    "pt_BR": {
+     "t": "Seu inventário atual de apps",
+     "g": "Liste os apps que você usa todo dia, raramente e nunca.",
+     "p": [
+      "Abra a lista de apps e coloque cada um em todo dia, às vezes ou nunca.",
+      "Apps que você nunca usa ocupam espaço, podem coletar dados e poluem a mente.",
+      "Um inventário claro é o ponto de partida para uma vida digital mais leve."
+     ],
+     "q": "Quantos apps você acha que usa de verdade todo dia?",
+     "c": "Separe dez apps em todo dia, raramente e nunca; chute os totais antes."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing tools: the three-question test",
+     "g": "Use three simple questions before adding any new app.",
+     "p": [
+      "Question one: does it solve a real problem I have right now?",
+      "Question two: is it easy enough that I will keep using it?",
+      "Question three: does it work on all the devices I use?"
+     ],
+     "q": "Think of an app you installed and dropped. Which question would have warned you?",
+     "c": "Run the three questions on one app you are curious about before you install it."
+    },
+    "de": {
+     "t": "Werkzeuge wählen: der Drei-Fragen-Test",
+     "g": "Nutze drei einfache Fragen, bevor du eine neue App installierst.",
+     "p": [
+      "Frage eins: Löst sie ein echtes Problem, das ich gerade habe?",
+      "Frage zwei: Ist sie so einfach, dass ich sie wirklich weiter nutze?",
+      "Frage drei: Funktioniert sie auf allen Geräten, die ich benutze?"
+     ],
+     "q": "Denk an eine App, die du installiert und wieder aufgegeben hast. Welche Frage hätte gewarnt?",
+     "c": "Stell die drei Fragen einer App, die dich reizt, bevor du sie installierst."
+    },
+    "es": {
+     "t": "Elegir herramientas: el test de tres preguntas",
+     "g": "Usa tres preguntas sencillas antes de añadir una app nueva.",
+     "p": [
+      "Primera: ¿resuelve un problema real que tengo ahora mismo?",
+      "Segunda: ¿es tan fácil que seguiré usándola?",
+      "Tercera: ¿funciona en todos los dispositivos que uso?"
+     ],
+     "q": "Piensa en una app que instalaste y abandonaste. ¿Qué pregunta te habría avisado?",
+     "c": "Haz las tres preguntas a una app que te interese antes de instalarla."
+    },
+    "fr": {
+     "t": "Choisir ses outils : le test des trois questions",
+     "g": "Pose trois questions simples avant d'ajouter une nouvelle appli.",
+     "p": [
+      "Première question : résout-elle un vrai problème que j'ai maintenant ?",
+      "Deuxième : est-elle assez simple pour que je continue à l'utiliser ?",
+      "Troisième : fonctionne-t-elle sur tous mes appareils ?"
+     ],
+     "q": "Pense à une appli installée puis abandonnée. Quelle question t'aurait prévenu ?",
+     "c": "Pose les trois questions à une appli qui t'intrigue avant de l'installer."
+    },
+    "it": {
+     "t": "Scegliere gli strumenti: il test delle tre domande",
+     "g": "Usa tre domande semplici prima di aggiungere una nuova app.",
+     "p": [
+      "Prima: risolve un problema reale che ho adesso?",
+      "Seconda: è abbastanza facile da continuare a usarla?",
+      "Terza: funziona su tutti i dispositivi che uso?"
+     ],
+     "q": "Pensa a un'app installata e abbandonata. Quale domanda ti avrebbe avvisato?",
+     "c": "Fai le tre domande a un'app che ti incuriosisce prima di installarla."
+    },
+    "pt": {
+     "t": "Escolher ferramentas: o teste das três perguntas",
+     "g": "Usa três perguntas simples antes de juntares uma app nova.",
+     "p": [
+      "Primeira: resolve um problema real que tenho agora?",
+      "Segunda: é fácil o suficiente para eu continuar a usá-la?",
+      "Terceira: funciona em todos os dispositivos que uso?"
+     ],
+     "q": "Pensa numa app que instalaste e abandonaste. Que pergunta te teria avisado?",
+     "c": "Faz as três perguntas a uma app que te interesse antes de a instalares."
+    },
+    "pt_BR": {
+     "t": "Escolhendo ferramentas: o teste das três perguntas",
+     "g": "Use três perguntas simples antes de adicionar um app novo.",
+     "p": [
+      "Primeira: resolve um problema real que tenho agora?",
+      "Segunda: é fácil o bastante para eu continuar usando?",
+      "Terceira: funciona em todos os dispositivos que uso?"
+     ],
+     "q": "Pense em um app que você instalou e abandonou. Qual pergunta teria avisado?",
+     "c": "Faça as três perguntas a um app que desperta sua curiosidade antes de instalar."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Free, freemium and paid apps",
+     "g": "Learn how app pricing models differ and what you trade.",
+     "p": [
+      "Free apps are often paid for with ads or by collecting some of your data.",
+      "Freemium gives basic features free and charges for extras or removing ads.",
+      "Paid apps or subscriptions usually mean fewer ads and clearer support."
+     ],
+     "q": "Do you prefer paying a little for an app or using a free version with limits?",
+     "c": "Pick one app you use and find out which pricing model it follows."
+    },
+    "de": {
+     "t": "Gratis, Freemium und bezahlte Apps",
+     "g": "Lerne, wie Preismodelle bei Apps funktionieren und was du eintauschst.",
+     "p": [
+      "Gratis-Apps finanzieren sich oft über Werbung oder das Sammeln von Daten.",
+      "Freemium bietet Grundfunktionen kostenlos und verlangt Geld für Extras oder werbefrei.",
+      "Bezahlte Apps oder Abos bedeuten meist weniger Werbung und klareren Support."
+     ],
+     "q": "Zahlst du lieber ein wenig für eine App oder nutzt du eine begrenzte Gratisversion?",
+     "c": "Such dir eine App aus und finde heraus, welches Preismodell sie nutzt."
+    },
+    "es": {
+     "t": "Apps gratis, freemium y de pago",
+     "g": "Aprende en qué se diferencian los modelos de precio y qué cedes.",
+     "p": [
+      "Las apps gratis suelen pagarse con anuncios o recopilando algunos de tus datos.",
+      "Freemium ofrece lo básico gratis y cobra por extras o por quitar anuncios.",
+      "Las apps de pago o suscripciones suelen traer menos anuncios y soporte más claro."
+     ],
+     "q": "¿Prefieres pagar poco por una app o usar una versión gratis con límites?",
+     "c": "Elige una app que uses y averigua qué modelo de precio sigue."
+    },
+    "fr": {
+     "t": "Applis gratuites, freemium et payantes",
+     "g": "Découvre comment fonctionnent les modèles de prix et ce que tu y échanges.",
+     "p": [
+      "Les applis gratuites se financent souvent par la pub ou la collecte de données.",
+      "Le freemium offre l'essentiel gratuitement et facture les extras ou l'absence de pub.",
+      "Les applis payantes ou abonnements signifient souvent moins de pub et un support plus clair."
+     ],
+     "q": "Préfères-tu payer un peu pour une appli ou utiliser une version gratuite limitée ?",
+     "c": "Choisis une appli que tu utilises et trouve son modèle de prix."
+    },
+    "it": {
+     "t": "App gratuite, freemium e a pagamento",
+     "g": "Scopri come funzionano i modelli di prezzo e cosa scambi.",
+     "p": [
+      "Le app gratuite si pagano spesso con pubblicità o raccogliendo alcuni tuoi dati.",
+      "Il freemium offre le basi gratis e fa pagare extra o l'assenza di pubblicità.",
+      "Le app a pagamento o in abbonamento hanno di solito meno pubblicità e assistenza più chiara."
+     ],
+     "q": "Preferisci pagare poco per un'app o usare una versione gratuita limitata?",
+     "c": "Scegli un'app che usi e scopri che modello di prezzo segue."
+    },
+    "pt": {
+     "t": "Apps grátis, freemium e pagas",
+     "g": "Descobre como funcionam os modelos de preço e o que trocas.",
+     "p": [
+      "As apps grátis pagam-se muitas vezes com anúncios ou recolhendo alguns dos teus dados.",
+      "O freemium dá o básico grátis e cobra por extras ou por retirar anúncios.",
+      "Apps pagas ou subscrições costumam ter menos anúncios e apoio mais claro."
+     ],
+     "q": "Preferes pagar pouco por uma app ou usar uma versão grátis limitada?",
+     "c": "Escolhe uma app que uses e descobre que modelo de preço segue."
+    },
+    "pt_BR": {
+     "t": "Apps grátis, freemium e pagos",
+     "g": "Aprenda como funcionam os modelos de preço e o que você troca.",
+     "p": [
+      "Apps grátis costumam ser pagos com anúncios ou coletando alguns dos seus dados.",
+      "O freemium dá o básico de graça e cobra por extras ou por tirar anúncios.",
+      "Apps pagos ou assinaturas geralmente têm menos anúncios e suporte mais claro."
+     ],
+     "q": "Você prefere pagar pouco por um app ou usar uma versão grátis limitada?",
+     "c": "Escolha um app que você usa e descubra qual modelo de preço ele segue."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading app permissions",
+     "g": "Check what an app can access before you say yes.",
+     "p": [
+      "Permissions cover things like location, contacts, camera and microphone.",
+      "Ask whether the app truly needs each permission to do its job.",
+      "You can allow only while using, or deny and change your mind later."
+     ],
+     "q": "Has an app ever asked for access that seemed unnecessary to you?",
+     "c": "Open your settings and review the permissions of one app you installed recently."
+    },
+    "de": {
+     "t": "App-Berechtigungen lesen",
+     "g": "Prüfe, worauf eine App zugreifen darf, bevor du zustimmst.",
+     "p": [
+      "Berechtigungen betreffen zum Beispiel Standort, Kontakte, Kamera und Mikrofon.",
+      "Frag dich, ob die App jede Berechtigung wirklich für ihre Aufgabe braucht.",
+      "Du kannst nur während der Nutzung erlauben oder ablehnen und später umentscheiden."
+     ],
+     "q": "Hat dich eine App schon mal um einen scheinbar unnötigen Zugriff gebeten?",
+     "c": "Öffne die Einstellungen und prüfe die Berechtigungen einer kürzlich installierten App."
+    },
+    "es": {
+     "t": "Leer los permisos de las apps",
+     "g": "Comprueba a qué puede acceder una app antes de aceptar.",
+     "p": [
+      "Los permisos incluyen ubicación, contactos, cámara y micrófono.",
+      "Pregúntate si la app necesita de verdad cada permiso para hacer su trabajo.",
+      "Puedes permitir solo mientras la usas, o denegar y cambiar de idea después."
+     ],
+     "q": "¿Alguna app te ha pedido un acceso que te pareció innecesario?",
+     "c": "Abre los ajustes y revisa los permisos de una app instalada hace poco."
+    },
+    "fr": {
+     "t": "Lire les autorisations des applis",
+     "g": "Vérifie ce qu'une appli peut consulter avant d'accepter.",
+     "p": [
+      "Les autorisations couvrent la position, les contacts, l'appareil photo et le micro.",
+      "Demande-toi si l'appli a vraiment besoin de chaque autorisation pour fonctionner.",
+      "Tu peux autoriser seulement pendant l'utilisation, ou refuser et changer d'avis plus tard."
+     ],
+     "q": "Une appli t'a-t-elle déjà demandé un accès qui semblait inutile ?",
+     "c": "Ouvre les réglages et passe en revue les autorisations d'une appli récente."
+    },
+    "it": {
+     "t": "Leggere i permessi delle app",
+     "g": "Controlla a cosa può accedere un'app prima di dire sì.",
+     "p": [
+      "I permessi riguardano posizione, contatti, fotocamera e microfono.",
+      "Chiediti se l'app ha davvero bisogno di ogni permesso per fare il suo lavoro.",
+      "Puoi consentire solo durante l'uso, oppure negare e cambiare idea dopo."
+     ],
+     "q": "Un'app ti ha mai chiesto un accesso che sembrava inutile?",
+     "c": "Apri le impostazioni e controlla i permessi di un'app installata di recente."
+    },
+    "pt": {
+     "t": "Ler as permissões das apps",
+     "g": "Verifica a que uma app pode aceder antes de dizeres sim.",
+     "p": [
+      "As permissões incluem localização, contactos, câmara e microfone.",
+      "Pergunta-te se a app precisa mesmo de cada permissão para fazer o seu trabalho.",
+      "Podes permitir só durante o uso, ou recusar e mudar de ideias mais tarde."
+     ],
+     "q": "Alguma app já te pediu um acesso que parecia desnecessário?",
+     "c": "Abre as definições e revê as permissões de uma app instalada há pouco."
+    },
+    "pt_BR": {
+     "t": "Lendo as permissões dos apps",
+     "g": "Veja a que um app pode acessar antes de dizer sim.",
+     "p": [
+      "As permissões incluem localização, contatos, câmera e microfone.",
+      "Pergunte-se se o app precisa mesmo de cada permissão para fazer seu trabalho.",
+      "Você pode permitir só durante o uso, ou negar e mudar de ideia depois."
+     ],
+     "q": "Algum app já pediu um acesso que parecia desnecessário para você?",
+     "c": "Abra as configurações e revise as permissões de um app instalado há pouco."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Organising your home screen",
+     "g": "Arrange apps by purpose so your first screen stays calm.",
+     "p": [
+      "Keep only daily tools on the first screen and move the rest away.",
+      "Group apps by purpose, such as travel, money, health or fun.",
+      "Put the most-used apps within easy thumb reach at the bottom."
+     ],
+     "q": "What would your perfect first screen contain, and what would be left out?",
+     "c": "Rebuild your first screen with at most eight apps you use every day."
+    },
+    "de": {
+     "t": "Deinen Startbildschirm ordnen",
+     "g": "Ordne Apps nach Zweck, damit dein erster Bildschirm ruhig bleibt.",
+     "p": [
+      "Lass nur tägliche Werkzeuge auf dem ersten Bildschirm und räume den Rest weg.",
+      "Gruppiere Apps nach Zweck, etwa Reisen, Geld, Gesundheit oder Spaß.",
+      "Platziere die meistgenutzten Apps unten, gut mit dem Daumen erreichbar."
+     ],
+     "q": "Was enthielte dein perfekter Startbildschirm, und was bliebe draußen?",
+     "c": "Baue deinen ersten Bildschirm mit höchstens acht täglich genutzten Apps neu auf."
+    },
+    "es": {
+     "t": "Organiza tu pantalla de inicio",
+     "g": "Ordena las apps por función para que tu primera pantalla sea tranquila.",
+     "p": [
+      "Deja solo las herramientas diarias en la primera pantalla y aparta el resto.",
+      "Agrupa las apps por finalidad: viajes, dinero, salud o diversión.",
+      "Coloca las más usadas abajo, al alcance cómodo del pulgar."
+     ],
+     "q": "¿Qué tendría tu primera pantalla ideal y qué quedaría fuera?",
+     "c": "Rehaz tu primera pantalla con un máximo de ocho apps de uso diario."
+    },
+    "fr": {
+     "t": "Organiser ton écran d'accueil",
+     "g": "Range les applis par usage pour garder un premier écran calme.",
+     "p": [
+      "Garde seulement les outils quotidiens sur le premier écran et déplace le reste.",
+      "Regroupe les applis par usage : voyage, argent, santé ou loisirs.",
+      "Place les plus utilisées en bas, à portée du pouce."
+     ],
+     "q": "Que contiendrait ton écran d'accueil idéal, et que laisserais-tu de côté ?",
+     "c": "Refais ton premier écran avec huit applis maximum utilisées chaque jour."
+    },
+    "it": {
+     "t": "Organizzare la schermata Home",
+     "g": "Disponi le app per scopo così la prima schermata resta calma.",
+     "p": [
+      "Tieni solo gli strumenti quotidiani sulla prima schermata e sposta il resto.",
+      "Raggruppa le app per scopo: viaggi, denaro, salute o svago.",
+      "Metti le più usate in basso, facili da raggiungere col pollice."
+     ],
+     "q": "Cosa conterrebbe la tua schermata ideale e cosa lasceresti fuori?",
+     "c": "Ricostruisci la prima schermata con al massimo otto app usate ogni giorno."
+    },
+    "pt": {
+     "t": "Organizar o ecrã inicial",
+     "g": "Arruma as apps por finalidade para o primeiro ecrã ficar calmo.",
+     "p": [
+      "Deixa só as ferramentas diárias no primeiro ecrã e afasta o resto.",
+      "Agrupa as apps por finalidade: viagens, dinheiro, saúde ou diversão.",
+      "Põe as mais usadas em baixo, ao alcance do polegar."
+     ],
+     "q": "O que teria o teu ecrã inicial ideal e o que ficaria de fora?",
+     "c": "Refaz o primeiro ecrã com no máximo oito apps usadas todos os dias."
+    },
+    "pt_BR": {
+     "t": "Organizando a tela inicial",
+     "g": "Arrume os apps por finalidade para a primeira tela ficar calma.",
+     "p": [
+      "Deixe só as ferramentas diárias na primeira tela e afaste o resto.",
+      "Agrupe os apps por finalidade: viagens, dinheiro, saúde ou diversão.",
+      "Coloque os mais usados embaixo, ao alcance do polegar."
+     ],
+     "q": "O que sua tela inicial ideal teria e o que ficaria de fora?",
+     "c": "Refaça a primeira tela com no máximo oito apps usados todo dia."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Folders and app libraries",
+     "g": "Use folders, drawers and search to find apps fast.",
+     "p": [
+      "Folders hold related apps under one clear name, like Travel or Banking.",
+      "App drawers or libraries sort the rest automatically and keep screens clean.",
+      "The search function is often the quickest way to open any app."
+     ],
+     "q": "Do you browse for apps or type their names? Which feels faster?",
+     "c": "Create two folders with clear names and open three apps using search."
+    },
+    "de": {
+     "t": "Ordner und App-Bibliotheken",
+     "g": "Nutze Ordner, App-Listen und Suche, um Apps schnell zu finden.",
+     "p": [
+      "Ordner bündeln verwandte Apps unter einem klaren Namen, etwa Reisen oder Bank.",
+      "App-Listen oder Bibliotheken sortieren den Rest automatisch und halten Bildschirme sauber.",
+      "Die Suche ist oft der schnellste Weg, eine App zu öffnen."
+     ],
+     "q": "Blätterst du nach Apps oder tippst du Namen? Was geht schneller?",
+     "c": "Lege zwei Ordner mit klaren Namen an und öffne drei Apps per Suche."
+    },
+    "es": {
+     "t": "Carpetas y bibliotecas de apps",
+     "g": "Usa carpetas, cajones y búsqueda para encontrar apps rápido.",
+     "p": [
+      "Las carpetas agrupan apps afines con un nombre claro, como Viajes o Banco.",
+      "El cajón o la biblioteca ordena el resto solo y mantiene limpias las pantallas.",
+      "La búsqueda suele ser la forma más rápida de abrir cualquier app."
+     ],
+     "q": "¿Buscas las apps a mano o escribes su nombre? ¿Qué te resulta más rápido?",
+     "c": "Crea dos carpetas con nombres claros y abre tres apps con el buscador."
+    },
+    "fr": {
+     "t": "Dossiers et bibliothèque d'applis",
+     "g": "Utilise dossiers, tiroir d'applis et recherche pour trouver vite.",
+     "p": [
+      "Les dossiers réunissent des applis liées sous un nom clair, comme Voyage ou Banque.",
+      "Le tiroir ou la bibliothèque classe le reste seul et garde les écrans propres.",
+      "La recherche est souvent le moyen le plus rapide d'ouvrir une appli."
+     ],
+     "q": "Fais-tu défiler pour trouver tes applis ou tapes-tu leur nom ? Quoi est plus rapide ?",
+     "c": "Crée deux dossiers aux noms clairs et ouvre trois applis via la recherche."
+    },
+    "it": {
+     "t": "Cartelle e libreria delle app",
+     "g": "Usa cartelle, elenco app e ricerca per trovare le app in fretta.",
+     "p": [
+      "Le cartelle riuniscono app affini sotto un nome chiaro, come Viaggi o Banca.",
+      "L'elenco o la libreria ordina il resto da solo e tiene pulite le schermate.",
+      "La ricerca è spesso il modo più veloce per aprire un'app."
+     ],
+     "q": "Scorri per trovare le app o scrivi il nome? Cosa è più veloce?",
+     "c": "Crea due cartelle con nomi chiari e apri tre app usando la ricerca."
+    },
+    "pt": {
+     "t": "Pastas e biblioteca de apps",
+     "g": "Usa pastas, lista de apps e pesquisa para achar apps depressa.",
+     "p": [
+      "As pastas juntam apps parecidas sob um nome claro, como Viagens ou Banco.",
+      "A lista ou biblioteca ordena o resto sozinha e mantém os ecrãs limpos.",
+      "A pesquisa é muitas vezes o modo mais rápido de abrir uma app."
+     ],
+     "q": "Procuras as apps a deslizar ou escreves o nome? O que é mais rápido?",
+     "c": "Cria duas pastas com nomes claros e abre três apps com a pesquisa."
+    },
+    "pt_BR": {
+     "t": "Pastas e biblioteca de apps",
+     "g": "Use pastas, gaveta e busca para achar apps rapidinho.",
+     "p": [
+      "Pastas reúnem apps parecidos sob um nome claro, como Viagens ou Banco.",
+      "A gaveta ou biblioteca organiza o resto sozinha e mantém as telas limpas.",
+      "A busca costuma ser o jeito mais rápido de abrir um app."
+     ],
+     "q": "Você procura os apps rolando a tela ou digita o nome? O que é mais rápido?",
+     "c": "Crie duas pastas com nomes claros e abra três apps usando a busca."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Taming notifications",
+     "g": "Keep only the alerts that truly matter and win back attention.",
+     "p": [
+      "Most notifications are made to bring you back, not to help you.",
+      "Keep alerts from people and urgent services; silence the rest.",
+      "Review notification settings app by app, choosing banners, sounds or none."
+     ],
+     "q": "Which notification interrupts you most often, and is it worth it?",
+     "c": "Turn off notifications for five apps today and see how the day feels."
+    },
+    "de": {
+     "t": "Benachrichtigungen zähmen",
+     "g": "Behalte nur wichtige Hinweise und gewinne Aufmerksamkeit zurück.",
+     "p": [
+      "Die meisten Mitteilungen sollen dich zurückholen, nicht dir helfen.",
+      "Behalte Hinweise von Menschen und dringenden Diensten; stelle den Rest stumm.",
+      "Geh die Einstellungen App für App durch: Banner, Ton oder gar nichts."
+     ],
+     "q": "Welche Mitteilung unterbricht dich am häufigsten, und lohnt sie sich?",
+     "c": "Schalte heute Mitteilungen für fünf Apps aus und achte darauf, wie der Tag sich anfühlt."
+    },
+    "es": {
+     "t": "Domar las notificaciones",
+     "g": "Conserva solo los avisos que importan y recupera tu atención.",
+     "p": [
+      "La mayoría de las notificaciones buscan que vuelvas, no ayudarte.",
+      "Mantén los avisos de personas y servicios urgentes; silencia el resto.",
+      "Revisa los ajustes app por app y elige banner, sonido o nada."
+     ],
+     "q": "¿Qué notificación te interrumpe más a menudo y merece la pena?",
+     "c": "Desactiva hoy las notificaciones de cinco apps y fíjate en cómo va el día."
+    },
+    "fr": {
+     "t": "Dompter les notifications",
+     "g": "Garde seulement les alertes utiles et reprends ton attention.",
+     "p": [
+      "La plupart des notifications servent à te faire revenir, pas à t'aider.",
+      "Garde les alertes des proches et des services urgents; coupe le reste.",
+      "Passe les réglages en revue appli par appli : bannière, son ou rien."
+     ],
+     "q": "Quelle notification t'interrompt le plus souvent, et en vaut-elle la peine ?",
+     "c": "Désactive aujourd'hui les notifications de cinq applis et observe ta journée."
+    },
+    "it": {
+     "t": "Domare le notifiche",
+     "g": "Tieni solo gli avvisi che contano e riprenditi l'attenzione.",
+     "p": [
+      "La maggior parte delle notifiche serve a farti tornare, non ad aiutarti.",
+      "Tieni gli avvisi di persone e servizi urgenti; silenzia il resto.",
+      "Rivedi le impostazioni app per app: banner, suono o niente."
+     ],
+     "q": "Quale notifica ti interrompe più spesso e ne vale la pena?",
+     "c": "Disattiva oggi le notifiche di cinque app e osserva com'è la giornata."
+    },
+    "pt": {
+     "t": "Domar as notificações",
+     "g": "Fica só com os avisos que importam e recupera a atenção.",
+     "p": [
+      "A maioria das notificações serve para te trazer de volta, não para ajudar.",
+      "Mantém avisos de pessoas e serviços urgentes; silencia o resto.",
+      "Revê as definições app a app: faixa, som ou nada."
+     ],
+     "q": "Que notificação te interrompe mais vezes e vale a pena?",
+     "c": "Desativa hoje as notificações de cinco apps e repara em como corre o dia."
+    },
+    "pt_BR": {
+     "t": "Domando as notificações",
+     "g": "Fique só com os avisos que importam e recupere a atenção.",
+     "p": [
+      "A maioria das notificações serve para trazer você de volta, não para ajudar.",
+      "Mantenha avisos de pessoas e serviços urgentes; silencie o resto.",
+      "Revise as configurações app por app: banner, som ou nada."
+     ],
+     "q": "Qual notificação mais interrompe você e vale a pena?",
+     "c": "Desative hoje as notificações de cinco apps e observe como o dia fica."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Do not disturb and focus modes",
+     "g": "Schedule quiet time for work, meals and sleep.",
+     "p": [
+      "Do not disturb silences calls and alerts while you rest or concentrate.",
+      "Focus modes let chosen people or apps through and hold back the rest.",
+      "Schedules turn the mode on and off by themselves at set hours."
+     ],
+     "q": "When in your day would a quiet mode help you most?",
+     "c": "Set a quiet schedule for tonight and let important contacts come through."
+    },
+    "de": {
+     "t": "Nicht stören und Fokusmodi",
+     "g": "Plane ruhige Zeiten für Arbeit, Essen und Schlaf.",
+     "p": [
+      "Nicht stören schaltet Anrufe und Hinweise aus, während du ruhst oder dich konzentrierst.",
+      "Fokusmodi lassen ausgewählte Personen oder Apps durch und halten den Rest zurück.",
+      "Zeitpläne schalten den Modus zu festen Uhrzeiten selbst ein und aus."
+     ],
+     "q": "Wann würde dir ein Ruhemodus am Tag am meisten helfen?",
+     "c": "Richte für heute Abend einen Ruheplan ein und lass wichtige Kontakte durch."
+    },
+    "es": {
+     "t": "No molestar y modos de concentración",
+     "g": "Programa momentos de calma para trabajar, comer y dormir.",
+     "p": [
+      "No molestar silencia llamadas y avisos mientras descansas o te concentras.",
+      "Los modos de concentración dejan pasar a ciertas personas o apps y frenan el resto.",
+      "Los horarios activan y desactivan el modo solos a las horas fijadas."
+     ],
+     "q": "¿En qué momento del día te ayudaría más un modo silencioso?",
+     "c": "Programa un horario de calma para esta noche y deja pasar a tus contactos importantes."
+    },
+    "fr": {
+     "t": "Ne pas déranger et modes de concentration",
+     "g": "Programme des moments calmes pour travailler, manger et dormir.",
+     "p": [
+      "Ne pas déranger coupe appels et alertes pendant que tu te reposes ou te concentres.",
+      "Les modes de concentration laissent passer certains contacts ou applis et retiennent le reste.",
+      "Les horaires activent et désactivent le mode tout seuls aux heures choisies."
+     ],
+     "q": "À quel moment de ta journée un mode silencieux t'aiderait le plus ?",
+     "c": "Programme un horaire calme pour ce soir en laissant passer tes contacts importants."
+    },
+    "it": {
+     "t": "Non disturbare e modalità di concentrazione",
+     "g": "Pianifica momenti di quiete per lavoro, pasti e sonno.",
+     "p": [
+      "Non disturbare silenzia chiamate e avvisi mentre riposi o ti concentri.",
+      "Le modalità di concentrazione fanno passare persone o app scelte e trattengono il resto.",
+      "Gli orari attivano e disattivano la modalità da soli all'ora impostata."
+     ],
+     "q": "In quale momento della giornata ti aiuterebbe di più una modalità silenziosa?",
+     "c": "Imposta un orario di quiete per stasera e lascia passare i contatti importanti."
+    },
+    "pt": {
+     "t": "Não incomodar e modos de concentração",
+     "g": "Programa momentos de sossego para trabalhar, comer e dormir.",
+     "p": [
+      "Não incomodar silencia chamadas e avisos enquanto descansas ou te concentras.",
+      "Os modos de concentração deixam passar pessoas ou apps escolhidas e seguram o resto.",
+      "Os horários ligam e desligam o modo sozinhos às horas definidas."
+     ],
+     "q": "Em que momento do dia te ajudaria mais um modo silencioso?",
+     "c": "Define um horário de sossego para esta noite e deixa passar os contactos importantes."
+    },
+    "pt_BR": {
+     "t": "Não perturbe e modos de foco",
+     "g": "Programe momentos de sossego para trabalhar, comer e dormir.",
+     "p": [
+      "O Não perturbe silencia chamadas e avisos enquanto você descansa ou se concentra.",
+      "Os modos de foco deixam passar pessoas ou apps escolhidos e seguram o resto.",
+      "Os horários ligam e desligam o modo sozinhos nas horas definidas."
+     ],
+     "q": "Em que momento do dia um modo silencioso ajudaria mais você?",
+     "c": "Defina um horário de sossego para esta noite e deixe passar os contatos importantes."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your phone's built-in tools",
+     "g": "Discover the useful tools already installed on your device.",
+     "p": [
+      "Clock, calculator, notes, reminders and files are free and ready to use.",
+      "Built-in tools are fast, work offline and rarely need extra permissions.",
+      "Try them before you download something new for the same job."
+     ],
+     "q": "Which built-in tool do you use most, and which have you never opened?",
+     "c": "Open three built-in apps you have never used and try one feature in each."
+    },
+    "de": {
+     "t": "Die eingebauten Werkzeuge deines Handys",
+     "g": "Entdecke die nützlichen Werkzeuge, die schon auf deinem Gerät sind.",
+     "p": [
+      "Uhr, Rechner, Notizen, Erinnerungen und Dateien sind gratis und sofort bereit.",
+      "Eingebaute Werkzeuge sind schnell, laufen offline und brauchen selten Extra-Rechte.",
+      "Probiere sie aus, bevor du für dieselbe Aufgabe etwas Neues lädst."
+     ],
+     "q": "Welches eingebaute Werkzeug nutzt du am meisten, und welche hast du nie geöffnet?",
+     "c": "Öffne drei eingebaute Apps, die du nie benutzt hast, und teste in jeder eine Funktion."
+    },
+    "es": {
+     "t": "Las herramientas integradas de tu móvil",
+     "g": "Descubre las herramientas útiles que ya tiene tu dispositivo.",
+     "p": [
+      "Reloj, calculadora, notas, recordatorios y archivos son gratis y están listos.",
+      "Las herramientas integradas son rápidas, funcionan sin conexión y piden pocos permisos.",
+      "Pruébalas antes de descargar algo nuevo para la misma tarea."
+     ],
+     "q": "¿Qué herramienta integrada usas más y cuáles nunca has abierto?",
+     "c": "Abre tres apps integradas que nunca uses y prueba una función en cada una."
+    },
+    "fr": {
+     "t": "Les outils intégrés de ton téléphone",
+     "g": "Découvre les outils utiles déjà installés sur ton appareil.",
+     "p": [
+      "Horloge, calculatrice, notes, rappels et fichiers sont gratuits et prêts à l'emploi.",
+      "Les outils intégrés sont rapides, fonctionnent hors ligne et demandent peu d'autorisations.",
+      "Essaie-les avant de télécharger autre chose pour la même tâche."
+     ],
+     "q": "Quel outil intégré utilises-tu le plus, et lesquels n'as-tu jamais ouverts ?",
+     "c": "Ouvre trois applis intégrées jamais utilisées et teste une fonction dans chacune."
+    },
+    "it": {
+     "t": "Gli strumenti integrati del telefono",
+     "g": "Scopri gli strumenti utili già installati sul tuo dispositivo.",
+     "p": [
+      "Orologio, calcolatrice, note, promemoria e file sono gratuiti e pronti.",
+      "Gli strumenti integrati sono veloci, funzionano offline e chiedono pochi permessi.",
+      "Provali prima di scaricare qualcosa di nuovo per lo stesso compito."
+     ],
+     "q": "Quale strumento integrato usi di più e quali non hai mai aperto?",
+     "c": "Apri tre app integrate mai usate e prova una funzione in ciascuna."
+    },
+    "pt": {
+     "t": "As ferramentas integradas do telemóvel",
+     "g": "Descobre as ferramentas úteis que o teu aparelho já tem.",
+     "p": [
+      "Relógio, calculadora, notas, lembretes e ficheiros são grátis e estão prontos.",
+      "As ferramentas integradas são rápidas, funcionam offline e pedem poucas permissões.",
+      "Experimenta-as antes de descarregares algo novo para a mesma tarefa."
+     ],
+     "q": "Que ferramenta integrada usas mais e quais nunca abriste?",
+     "c": "Abre três apps integradas que nunca usaste e experimenta uma função em cada."
+    },
+    "pt_BR": {
+     "t": "As ferramentas embutidas do celular",
+     "g": "Descubra as ferramentas úteis que seu aparelho já tem.",
+     "p": [
+      "Relógio, calculadora, notas, lembretes e arquivos são grátis e estão prontos.",
+      "As ferramentas embutidas são rápidas, funcionam offline e pedem poucas permissões.",
+      "Teste-as antes de baixar algo novo para a mesma tarefa."
+     ],
+     "q": "Qual ferramenta embutida você mais usa e quais nunca abriu?",
+     "c": "Abra três apps embutidos que você nunca usou e teste um recurso em cada."
+    }
+   }
+  }
+ ]
+}

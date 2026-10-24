@@ -1,0 +1,835 @@
+{
+ "topic": "science_fiction",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Doctor Who and time travel TV",
+     "g": "Meet the British series that began in 1963 and its time-travelling police box.",
+     "p": [
+      "Doctor Who first aired on the BBC in 1963 and has run, with breaks, for decades.",
+      "The Doctor travels in the TARDIS, a ship that looks like a small blue police box but is bigger inside.",
+      "When an actor leaves, the Doctor regenerates, so the hero can keep changing faces."
+     ],
+     "q": "Which place or era would you visit first in a time-travelling box?",
+     "c": "Name your own time machine's disguise and one gadget hidden inside."
+    },
+    "de": {
+     "t": "Doctor Who und Zeitreise-TV",
+     "g": "Die britische Serie kennenlernen, die 1963 begann, und ihre zeitreisende Polizeibox.",
+     "p": [
+      "Doctor Who lief erstmals 1963 bei der BBC und läuft, mit Pausen, seit Jahrzehnten.",
+      "Der Doktor reist in der TARDIS, einem Schiff, das wie eine kleine blaue Polizeibox aussieht, innen aber größer ist.",
+      "Wenn ein Schauspieler geht, regeneriert der Doktor, so kann der Held sein Gesicht immer wieder wechseln."
+     ],
+     "q": "Welchen Ort oder welche Epoche würdest du in einer Zeitreisebox zuerst besuchen?",
+     "c": "Nenne die Tarnung deiner eigenen Zeitmaschine und ein darin verstecktes Gadget."
+    },
+    "es": {
+     "t": "Doctor Who y la televisión de viajes en el tiempo",
+     "g": "Conocer la serie británica que empezó en 1963 y su cabina de policía viajera en el tiempo.",
+     "p": [
+      "Doctor Who se emitió por primera vez en la BBC en 1963 y ha seguido, con pausas, durante décadas.",
+      "El Doctor viaja en la TARDIS, una nave con aspecto de pequeña cabina policial azul pero más grande por dentro.",
+      "Cuando un actor se va, el Doctor se regenera, así el héroe puede cambiar de rostro una y otra vez."
+     ],
+     "q": "¿Qué lugar o época visitarías primero en una cabina que viaja en el tiempo?",
+     "c": "Ponle nombre al disfraz de tu propia máquina del tiempo y a un aparato escondido dentro."
+    },
+    "fr": {
+     "t": "Doctor Who et la télé du voyage temporel",
+     "g": "Découvrir la série britannique née en 1963 et sa cabine de police qui voyage dans le temps.",
+     "p": [
+      "Doctor Who est diffusée pour la première fois sur la BBC en 1963 et dure, avec des pauses, depuis des décennies.",
+      "Le Docteur voyage dans le TARDIS, un vaisseau qui ressemble à une petite cabine de police bleue mais est plus grand à l'intérieur.",
+      "Quand un acteur part, le Docteur se régénère, et le héros peut changer de visage sans cesse."
+     ],
+     "q": "Quel lieu ou quelle époque visiterais-tu en premier dans une cabine à remonter le temps ?",
+     "c": "Donne un nom au déguisement de ta propre machine à voyager dans le temps et un gadget caché dedans."
+    },
+    "it": {
+     "t": "Doctor Who e la TV dei viaggi nel tempo",
+     "g": "Conoscere la serie britannica nata nel 1963 e la sua cabina della polizia che viaggia nel tempo.",
+     "p": [
+      "Doctor Who andò in onda per la prima volta sulla BBC nel 1963 e prosegue, con pause, da decenni.",
+      "Il Dottore viaggia nel TARDIS, una nave che sembra una piccola cabina blu della polizia ma è più grande dentro.",
+      "Quando un attore se ne va, il Dottore si rigenera, così l'eroe può cambiare volto di continuo."
+     ],
+     "q": "Quale luogo o epoca visiteresti per primo in una cabina che viaggia nel tempo?",
+     "c": "Dai un nome al travestimento della tua macchina del tempo e a un gadget nascosto al suo interno."
+    },
+    "pt": {
+     "t": "Doctor Who e a TV das viagens no tempo",
+     "g": "Conhecer a série britânica que começou em 1963 e a sua cabine de polícia viajante no tempo.",
+     "p": [
+      "Doctor Who foi emitida pela primeira vez na BBC em 1963 e continua, com pausas, há décadas.",
+      "O Doutor viaja na TARDIS, uma nave com aspeto de pequena cabine policial azul, mas maior por dentro.",
+      "Quando um ator sai, o Doutor regenera-se, e o herói pode mudar de cara vezes sem conta."
+     ],
+     "q": "Que lugar ou época visitarias primeiro numa cabine que viaja no tempo?",
+     "c": "Dá nome ao disfarce da tua máquina do tempo e a um gadget escondido lá dentro."
+    },
+    "pt_BR": {
+     "t": "Doctor Who e a TV das viagens no tempo",
+     "g": "Conhecer a série britânica que começou em 1963 e sua cabine de polícia viajante no tempo.",
+     "p": [
+      "Doctor Who foi ao ar pela primeira vez na BBC em 1963 e continua, com pausas, há décadas.",
+      "O Doutor viaja na TARDIS, uma nave com aparência de pequena cabine policial azul, mas maior por dentro.",
+      "Quando um ator sai, o Doutor se regenera, e o herói pode mudar de rosto várias vezes."
+     ],
+     "q": "Que lugar ou época você visitaria primeiro numa cabine que viaja no tempo?",
+     "c": "Dê nome ao disfarce da sua máquina do tempo e a um gadget escondido lá dentro."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "E.T. and gentle aliens",
+     "g": "See how Spielberg's 1982 film showed an alien visitor through the eyes of children.",
+     "p": [
+      "E.T. the Extra-Terrestrial, directed by Steven Spielberg, tells of a friendly alien left behind on Earth.",
+      "A boy named Elliott befriends E.T., and the film is told largely from a child's eye level.",
+      "It shows that curiosity, kindness and friendship can bridge huge differences."
+     ],
+     "q": "What would you do first if a gentle visitor from space needed your help?",
+     "c": "Write a short list of three things you would show a visitor from another world."
+    },
+    "de": {
+     "t": "E.T. und sanfte Außerirdische",
+     "g": "Sehen, wie Spielbergs Film von 1982 einen außerirdischen Besucher mit Kinderaugen zeigte.",
+     "p": [
+      "E.T. – Der Außerirdische von Steven Spielberg erzählt von einem freundlichen Wesen, das auf der Erde zurückbleibt.",
+      "Der Junge Elliott freundet sich mit E.T. an, und der Film wird großteils auf Augenhöhe eines Kindes erzählt.",
+      "Er zeigt, dass Neugier, Güte und Freundschaft riesige Unterschiede überbrücken können."
+     ],
+     "q": "Was würdest du zuerst tun, wenn ein sanfter Besucher aus dem All deine Hilfe bräuchte?",
+     "c": "Schreibe eine kurze Liste mit drei Dingen, die du einem Besucher aus einer anderen Welt zeigen würdest."
+    },
+    "es": {
+     "t": "E.T. y los alienígenas amables",
+     "g": "Ver cómo la película de Spielberg de 1982 mostró a un visitante alienígena con ojos de niño.",
+     "p": [
+      "E.T., el extraterrestre, dirigida por Steven Spielberg, cuenta la historia de un alienígena amistoso que se queda en la Tierra.",
+      "Un niño llamado Elliott se hace amigo de E.T., y la película se cuenta en gran parte a la altura de un niño.",
+      "Muestra que la curiosidad, la bondad y la amistad pueden salvar enormes diferencias."
+     ],
+     "q": "¿Qué harías primero si un visitante amable del espacio necesitara tu ayuda?",
+     "c": "Escribe una lista corta de tres cosas que enseñarías a un visitante de otro mundo."
+    },
+    "fr": {
+     "t": "E.T. et les extraterrestres doux",
+     "g": "Voir comment le film de Spielberg de 1982 montrait un visiteur extraterrestre à hauteur d'enfant.",
+     "p": [
+      "E.T. l'extra-terrestre, réalisé par Steven Spielberg, raconte l'histoire d'un extraterrestre amical resté sur Terre.",
+      "Un garçon nommé Elliott se lie d'amitié avec E.T., et le film est raconté en grande partie à hauteur d'enfant.",
+      "Il montre que curiosité, gentillesse et amitié peuvent franchir d'énormes différences."
+     ],
+     "q": "Que ferais-tu en premier si un doux visiteur de l'espace avait besoin de ton aide ?",
+     "c": "Écris une courte liste de trois choses que tu montrerais à un visiteur d'un autre monde."
+    },
+    "it": {
+     "t": "E.T. e gli alieni gentili",
+     "g": "Vedere come il film di Spielberg del 1982 mostrò un visitatore alieno con gli occhi dei bambini.",
+     "p": [
+      "E.T. l'extra-terrestre, diretto da Steven Spielberg, racconta di un alieno amichevole rimasto sulla Terra.",
+      "Un ragazzo di nome Elliott fa amicizia con E.T., e il film è raccontato in gran parte ad altezza di bambino.",
+      "Mostra che curiosità, gentilezza e amicizia possono superare enormi differenze."
+     ],
+     "q": "Cosa faresti per prima cosa se un gentile visitatore dallo spazio avesse bisogno di aiuto?",
+     "c": "Scrivi un breve elenco di tre cose che mostreresti a un visitatore di un altro mondo."
+    },
+    "pt": {
+     "t": "E.T. e os alienígenas gentis",
+     "g": "Ver como o filme de Spielberg de 1982 mostrou um visitante alienígena com olhos de criança.",
+     "p": [
+      "E.T. - O Extraterrestre, realizado por Steven Spielberg, conta a história de um alienígena amigável deixado na Terra.",
+      "Um rapaz chamado Elliott torna-se amigo de E.T., e o filme é contado em boa parte à altura de uma criança.",
+      "Mostra que a curiosidade, a bondade e a amizade podem vencer enormes diferenças."
+     ],
+     "q": "O que farias primeiro se um visitante gentil do espaço precisasse da tua ajuda?",
+     "c": "Escreve uma lista curta de três coisas que mostrarias a um visitante de outro mundo."
+    },
+    "pt_BR": {
+     "t": "E.T. e os alienígenas gentis",
+     "g": "Ver como o filme de Spielberg de 1982 mostrou um visitante alienígena com olhos de criança.",
+     "p": [
+      "E.T. - O Extraterrestre, dirigido por Steven Spielberg, conta a história de um alienígena amigável deixado na Terra.",
+      "Um menino chamado Elliott faz amizade com E.T., e o filme é contado em boa parte na altura de uma criança.",
+      "Mostra que a curiosidade, a bondade e a amizade podem vencer enormes diferenças."
+     ],
+     "q": "O que você faria primeiro se um visitante gentil do espaço precisasse da sua ajuda?",
+     "c": "Escreva uma lista curta de três coisas que você mostraria a um visitante de outro mundo."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Close Encounters and wonder",
+     "g": "Explore communication through music and light in Spielberg's 1977 film.",
+     "p": [
+      "Close Encounters of the Third Kind (1977) is about people drawn to a meeting with visitors.",
+      "Humans and visitors talk through a five-note musical phrase and glowing lights.",
+      "The film treats first contact as a moment of awe, curiosity and shared joy."
+     ],
+     "q": "If you could send a short message in music, what melody would you pick?",
+     "c": "Invent a five-note melody pattern and describe how it would feel, in two sentences."
+    },
+    "de": {
+     "t": "Unheimliche Begegnung und Staunen",
+     "g": "Verständigung durch Musik und Licht in Spielbergs Film von 1977 erkunden.",
+     "p": [
+      "Unheimliche Begegnung der dritten Art (1977) erzählt von Menschen, die zu einem Treffen mit Besuchern gezogen werden.",
+      "Menschen und Besucher verständigen sich mit einer Fünf-Ton-Phrase und leuchtenden Lichtern.",
+      "Der Film behandelt den Erstkontakt als Moment des Staunens, der Neugier und gemeinsamer Freude."
+     ],
+     "q": "Wenn du eine kurze Botschaft in Musik senden könntest, welche Melodie wählst du?",
+     "c": "Erfinde ein Fünf-Ton-Muster und beschreibe in zwei Sätzen, wie es sich anfühlt."
+    },
+    "es": {
+     "t": "Encuentros cercanos y asombro",
+     "g": "Explorar la comunicación mediante música y luz en la película de Spielberg de 1977.",
+     "p": [
+      "Encuentros en la tercera fase (1977) trata de personas atraídas hacia un encuentro con visitantes.",
+      "Humanos y visitantes se comunican con una frase musical de cinco notas y luces brillantes.",
+      "La película trata el primer contacto como un momento de asombro, curiosidad y alegría compartida."
+     ],
+     "q": "Si pudieras enviar un mensaje breve en música, ¿qué melodía elegirías?",
+     "c": "Inventa un patrón melódico de cinco notas y descríbelo en dos frases."
+    },
+    "fr": {
+     "t": "Rencontres du troisième type et émerveillement",
+     "g": "Explorer la communication par la musique et la lumière dans le film de Spielberg de 1977.",
+     "p": [
+      "Rencontres du troisième type (1977) parle de gens attirés vers une rencontre avec des visiteurs.",
+      "Humains et visiteurs dialoguent par une phrase musicale de cinq notes et des lumières brillantes.",
+      "Le film traite le premier contact comme un moment d'émerveillement, de curiosité et de joie partagée."
+     ],
+     "q": "Si tu pouvais envoyer un court message en musique, quelle mélodie choisirais-tu ?",
+     "c": "Invente un motif de cinq notes et décris en deux phrases l'effet qu'il produit."
+    },
+    "it": {
+     "t": "Incontri ravvicinati e meraviglia",
+     "g": "Esplorare la comunicazione attraverso musica e luce nel film di Spielberg del 1977.",
+     "p": [
+      "Incontri ravvicinati del terzo tipo (1977) parla di persone attratte verso un incontro con dei visitatori.",
+      "Umani e visitatori comunicano con una frase musicale di cinque note e luci luminose.",
+      "Il film tratta il primo contatto come un momento di meraviglia, curiosità e gioia condivisa."
+     ],
+     "q": "Se potessi inviare un breve messaggio in musica, quale melodia sceglieresti?",
+     "c": "Inventa uno schema melodico di cinque note e descrivi in due frasi che effetto fa."
+    },
+    "pt": {
+     "t": "Encontros Imediatos e assombro",
+     "g": "Explorar a comunicação através de música e luz no filme de Spielberg de 1977.",
+     "p": [
+      "Encontros Imediatos do Terceiro Grau (1977) fala de pessoas atraídas para um encontro com visitantes.",
+      "Humanos e visitantes comunicam com uma frase musical de cinco notas e luzes brilhantes.",
+      "O filme trata o primeiro contacto como um momento de assombro, curiosidade e alegria partilhada."
+     ],
+     "q": "Se pudesses enviar uma mensagem breve em música, que melodia escolherias?",
+     "c": "Inventa um padrão melódico de cinco notas e descreve em duas frases a sensação que dá."
+    },
+    "pt_BR": {
+     "t": "Contatos Imediatos e assombro",
+     "g": "Explorar a comunicação por música e luz no filme de Spielberg de 1977.",
+     "p": [
+      "Contatos Imediatos do Terceiro Grau (1977) fala de pessoas atraídas para um encontro com visitantes.",
+      "Humanos e visitantes se comunicam com uma frase musical de cinco notas e luzes brilhantes.",
+      "O filme trata o primeiro contato como um momento de assombro, curiosidade e alegria compartilhada."
+     ],
+     "q": "Se pudesse enviar uma mensagem breve em música, que melodia você escolheria?",
+     "c": "Invente um padrão melódico de cinco notas e descreva em duas frases a sensação que ele dá."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Science fiction and music",
+     "g": "Hear how soundtracks and synthesizers make imagined futures feel real.",
+     "p": [
+      "The 1956 film Forbidden Planet used a fully electronic score, a pioneering sound for the screen.",
+      "Synthesizers and the theremin gave many SF films an otherworldly, floating sound.",
+      "Later composers, from John Williams to Vangelis, mixed orchestras and electronics for epic moods."
+     ],
+     "q": "Which film score instantly puts you in another world?",
+     "c": "Describe the sound of an alien city using only three sound words and one instrument."
+    },
+    "de": {
+     "t": "Science-Fiction und Musik",
+     "g": "Hören, wie Soundtracks und Synthesizer erdachte Zukünfte glaubhaft machen.",
+     "p": [
+      "Der Film Alarm im Weltall (1956) nutzte einen rein elektronischen Soundtrack, ein Pionierklang fürs Kino.",
+      "Synthesizer und Theremin gaben vielen SF-Filmen einen überirdischen, schwebenden Klang.",
+      "Spätere Komponisten von John Williams bis Vangelis mischten Orchester und Elektronik für epische Stimmung."
+     ],
+     "q": "Welche Filmmusik versetzt dich sofort in eine andere Welt?",
+     "c": "Beschreibe den Klang einer Alien-Stadt mit nur drei Klangwörtern und einem Instrument."
+    },
+    "es": {
+     "t": "Ciencia ficción y música",
+     "g": "Escuchar cómo las bandas sonoras y los sintetizadores hacen reales los futuros imaginados.",
+     "p": [
+      "La película Planeta prohibido (1956) usó una banda sonora totalmente electrónica, un sonido pionero en el cine.",
+      "Los sintetizadores y el theremín dieron a muchas películas de CF un sonido flotante y de otro mundo.",
+      "Compositores posteriores, de John Williams a Vangelis, mezclaron orquesta y electrónica para crear ambientes épicos."
+     ],
+     "q": "¿Qué banda sonora te lleva al instante a otro mundo?",
+     "c": "Describe el sonido de una ciudad alienígena con solo tres palabras de sonido y un instrumento."
+    },
+    "fr": {
+     "t": "Science-fiction et musique",
+     "g": "Entendre comment bandes originales et synthétiseurs rendent réels les futurs imaginés.",
+     "p": [
+      "Le film Planète interdite (1956) a utilisé une partition entièrement électronique, un son pionnier pour le cinéma.",
+      "Synthétiseurs et thérémine ont donné à beaucoup de films de SF un son flottant et venu d'ailleurs.",
+      "Des compositeurs ultérieurs, de John Williams à Vangelis, ont mêlé orchestre et électronique pour des ambiances épiques."
+     ],
+     "q": "Quelle musique de film te transporte aussitôt dans un autre monde ?",
+     "c": "Décris le son d'une ville extraterrestre avec seulement trois mots de son et un instrument."
+    },
+    "it": {
+     "t": "Fantascienza e musica",
+     "g": "Ascoltare come colonne sonore e sintetizzatori rendono reali i futuri immaginati.",
+     "p": [
+      "Il film Il pianeta proibito (1956) usò una colonna sonora interamente elettronica, un suono pionieristico per lo schermo.",
+      "Sintetizzatori e theremin diedero a molti film di fantascienza un suono fluttuante e ultraterreno.",
+      "Compositori successivi, da John Williams a Vangelis, mescolarono orchestra ed elettronica per atmosfere epiche."
+     ],
+     "q": "Quale colonna sonora ti porta subito in un altro mondo?",
+     "c": "Descrivi il suono di una città aliena con solo tre parole di suono e uno strumento."
+    },
+    "pt": {
+     "t": "Ficção científica e música",
+     "g": "Ouvir como as bandas sonoras e os sintetizadores tornam reais os futuros imaginados.",
+     "p": [
+      "O filme Planeta Proibido (1956) usou uma banda sonora totalmente eletrónica, um som pioneiro no cinema.",
+      "Sintetizadores e o teremim deram a muitos filmes de FC um som flutuante e de outro mundo.",
+      "Compositores posteriores, de John Williams a Vangelis, misturaram orquestra e eletrónica para criar ambientes épicos."
+     ],
+     "q": "Que banda sonora te leva logo para outro mundo?",
+     "c": "Descreve o som de uma cidade alienígena com apenas três palavras de som e um instrumento."
+    },
+    "pt_BR": {
+     "t": "Ficção científica e música",
+     "g": "Ouvir como as trilhas sonoras e os sintetizadores tornam reais os futuros imaginados.",
+     "p": [
+      "O filme Planeta Proibido (1956) usou uma trilha totalmente eletrônica, um som pioneiro no cinema.",
+      "Sintetizadores e o teremim deram a muitos filmes de FC um som flutuante e de outro mundo.",
+      "Compositores posteriores, de John Williams a Vangelis, misturaram orquestra e eletrônica para criar climas épicos."
+     ],
+     "q": "Que trilha sonora leva você na hora para outro mundo?",
+     "c": "Descreva o som de uma cidade alienígena com apenas três palavras de som e um instrumento."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Special effects through time",
+     "g": "Travel from models and matte paintings to digital effects in SF cinema.",
+     "p": [
+      "Early films used miniature models, painted backdrops and clever camera tricks.",
+      "Star Wars (1977) pushed model work with computer-controlled cameras; later films added digital effects.",
+      "The best effects serve the story: a good effect makes you believe in the world."
+     ],
+     "q": "Which effect, old or new, has impressed you most and why?",
+     "c": "Make a tiny spaceship from household items and photograph or describe it against a dark background."
+    },
+    "de": {
+     "t": "Spezialeffekte im Wandel der Zeit",
+     "g": "Von Modellen und Matte Paintings bis zu digitalen Effekten im SF-Kino reisen.",
+     "p": [
+      "Frühe Filme nutzten Miniaturmodelle, gemalte Hintergründe und geschickte Kameratricks.",
+      "Star Wars (1977) trieb den Modellbau mit computergesteuerten Kameras voran; später kamen digitale Effekte dazu.",
+      "Die besten Effekte dienen der Geschichte: Ein guter Effekt lässt dich an die Welt glauben."
+     ],
+     "q": "Welcher Effekt, alt oder neu, hat dich am meisten beeindruckt und warum?",
+     "c": "Baue ein winziges Raumschiff aus Haushaltsdingen und fotografiere oder beschreibe es vor dunklem Hintergrund."
+    },
+    "es": {
+     "t": "Efectos especiales a lo largo del tiempo",
+     "g": "Viajar desde maquetas y fondos pintados hasta los efectos digitales del cine de CF.",
+     "p": [
+      "Las primeras películas usaban maquetas, fondos pintados e ingeniosos trucos de cámara.",
+      "La guerra de las galaxias (1977) impulsó las maquetas con cámaras controladas por ordenador; luego llegó lo digital.",
+      "Los mejores efectos sirven a la historia: un buen efecto te hace creer en el mundo."
+     ],
+     "q": "¿Qué efecto, antiguo o nuevo, te ha impresionado más y por qué?",
+     "c": "Haz una nave diminuta con objetos de casa y fotografíala o descríbela sobre fondo oscuro."
+    },
+    "fr": {
+     "t": "Les effets spéciaux à travers le temps",
+     "g": "Voyager des maquettes et des peintures sur verre aux effets numériques du cinéma de SF.",
+     "p": [
+      "Les premiers films utilisaient des maquettes, des fonds peints et d'astucieux trucages de caméra.",
+      "La Guerre des étoiles (1977) a poussé les maquettes avec des caméras pilotées par ordinateur ; les effets numériques sont venus ensuite.",
+      "Les meilleurs effets servent l'histoire : un bon effet te fait croire au monde."
+     ],
+     "q": "Quel effet, ancien ou récent, t'a le plus impressionné et pourquoi ?",
+     "c": "Fabrique un minuscule vaisseau avec des objets de la maison et photographie-le ou décris-le sur fond sombre."
+    },
+    "it": {
+     "t": "Gli effetti speciali nel tempo",
+     "g": "Viaggiare da modellini e fondali dipinti agli effetti digitali del cinema di fantascienza.",
+     "p": [
+      "I primi film usavano modellini, fondali dipinti e ingegnosi trucchi di ripresa.",
+      "Guerre stellari (1977) spinse il lavoro sui modellini con telecamere controllate da computer; poi arrivarono gli effetti digitali.",
+      "I migliori effetti servono la storia: un buon effetto ti fa credere al mondo."
+     ],
+     "q": "Quale effetto, vecchio o nuovo, ti ha impressionato di più e perché?",
+     "c": "Costruisci una minuscola astronave con oggetti di casa e fotografala o descrivila su sfondo scuro."
+    },
+    "pt": {
+     "t": "Efeitos especiais ao longo do tempo",
+     "g": "Viajar das maquetas e fundos pintados até aos efeitos digitais do cinema de FC.",
+     "p": [
+      "Os primeiros filmes usavam maquetas, cenários pintados e engenhosos truques de câmara.",
+      "Star Wars (1977) impulsionou o trabalho com maquetas usando câmaras controladas por computador; depois vieram os efeitos digitais.",
+      "Os melhores efeitos servem a história: um bom efeito faz-te acreditar no mundo."
+     ],
+     "q": "Que efeito, antigo ou novo, mais te impressionou e porquê?",
+     "c": "Faz uma nave minúscula com objetos de casa e fotografa-a ou descreve-a sobre fundo escuro."
+    },
+    "pt_BR": {
+     "t": "Efeitos especiais ao longo do tempo",
+     "g": "Viajar das maquetes e fundos pintados até os efeitos digitais do cinema de FC.",
+     "p": [
+      "Os primeiros filmes usavam maquetes, cenários pintados e engenhosos truques de câmera.",
+      "Star Wars (1977) impulsionou o trabalho com maquetes usando câmeras controladas por computador; depois vieram os efeitos digitais.",
+      "Os melhores efeitos servem à história: um bom efeito faz você acreditar no mundo."
+     ],
+     "q": "Que efeito, antigo ou novo, mais impressionou você e por quê?",
+     "c": "Faça uma nave minúscula com objetos de casa e fotografe-a ou descreva-a sobre fundo escuro."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Movie spaceship design",
+     "g": "See why some ships look sleek and others lived-in, and how design tells a story.",
+     "p": [
+      "A clean, smooth ship suggests a hopeful, advanced society; a dented one suggests hard-working crews.",
+      "Star Wars popularised the lived-in look, with scuffs, patches and clutter that suggest history.",
+      "Designers think about shape, colour and size so we sense the ship's role at first glance."
+     ],
+     "q": "If you could design a ship, would it be sleek, rugged or something unexpected?",
+     "c": "Sketch a ship in three simple shapes and write one line about who flies it."
+    },
+    "de": {
+     "t": "Raumschiff-Design im Film",
+     "g": "Sehen, warum manche Schiffe glatt und andere benutzt wirken und wie Design eine Geschichte erzählt.",
+     "p": [
+      "Ein glattes, sauberes Schiff deutet auf eine hoffnungsvolle, fortschrittliche Gesellschaft, ein verbeultes auf hart arbeitende Crews.",
+      "Star Wars machte den benutzten Look populär, mit Kratzern, Flicken und Krimskrams, die Geschichte andeuten.",
+      "Designer denken an Form, Farbe und Größe, damit wir die Rolle des Schiffs auf den ersten Blick spüren."
+     ],
+     "q": "Wenn du ein Schiff entwerfen könntest, wäre es glatt, robust oder etwas Unerwartetes?",
+     "c": "Skizziere ein Schiff aus drei einfachen Formen und schreibe eine Zeile dazu, wer es fliegt."
+    },
+    "es": {
+     "t": "Diseño de naves en el cine",
+     "g": "Ver por qué unas naves parecen elegantes y otras muy usadas y cómo el diseño cuenta una historia.",
+     "p": [
+      "Una nave limpia y lisa sugiere una sociedad esperanzada y avanzada; una abollada sugiere tripulaciones trabajadoras.",
+      "La guerra de las galaxias popularizó el aspecto usado, con arañazos, parches y desorden que sugieren historia.",
+      "Los diseñadores piensan en forma, color y tamaño para que intuyamos el papel de la nave a primera vista."
+     ],
+     "q": "Si pudieras diseñar una nave, ¿sería elegante, robusta o algo inesperado?",
+     "c": "Dibuja una nave con tres formas sencillas y escribe una línea sobre quién la pilota."
+    },
+    "fr": {
+     "t": "Le design des vaisseaux au cinéma",
+     "g": "Voir pourquoi certains vaisseaux paraissent élégants et d'autres usés, et comment le design raconte une histoire.",
+     "p": [
+      "Un vaisseau lisse et propre suggère une société avancée et pleine d'espoir ; un vaisseau cabossé suggère des équipages qui travaillent dur.",
+      "La Guerre des étoiles a popularisé l'aspect usé, avec éraflures, rapiéçages et fouillis évoquant l'histoire.",
+      "Les designers pensent forme, couleur et taille pour qu'on sente le rôle du vaisseau au premier regard."
+     ],
+     "q": "Si tu pouvais concevoir un vaisseau, serait-il élégant, robuste ou inattendu ?",
+     "c": "Dessine un vaisseau avec trois formes simples et écris une ligne sur qui le pilote."
+    },
+    "it": {
+     "t": "Il design delle astronavi nei film",
+     "g": "Vedere perché alcune navi sembrano eleganti e altre vissute e come il design racconta una storia.",
+     "p": [
+      "Una nave pulita e liscia suggerisce una società avanzata e speranzosa; una ammaccata suggerisce equipaggi laboriosi.",
+      "Guerre stellari rese popolare l'aspetto vissuto, con graffi, rattoppi e disordine che suggeriscono storia.",
+      "I designer pensano a forma, colore e dimensione perché si intuisca il ruolo della nave a colpo d'occhio."
+     ],
+     "q": "Se potessi progettare una nave, sarebbe elegante, robusta o qualcosa di inaspettato?",
+     "c": "Disegna una nave con tre forme semplici e scrivi una riga su chi la pilota."
+    },
+    "pt": {
+     "t": "O design das naves no cinema",
+     "g": "Ver porque algumas naves parecem elegantes e outras usadas e como o design conta uma história.",
+     "p": [
+      "Uma nave limpa e lisa sugere uma sociedade avançada e esperançosa; uma amolgada sugere tripulações trabalhadoras.",
+      "Star Wars popularizou o aspeto usado, com riscos, remendos e desordem que sugerem história.",
+      "Os designers pensam em forma, cor e tamanho para sentirmos o papel da nave à primeira vista."
+     ],
+     "q": "Se pudesses desenhar uma nave, seria elegante, robusta ou algo inesperado?",
+     "c": "Desenha uma nave com três formas simples e escreve uma linha sobre quem a pilota."
+    },
+    "pt_BR": {
+     "t": "O design das naves no cinema",
+     "g": "Ver por que algumas naves parecem elegantes e outras usadas e como o design conta uma história.",
+     "p": [
+      "Uma nave limpa e lisa sugere uma sociedade avançada e esperançosa; uma amassada sugere tripulações trabalhadoras.",
+      "Star Wars popularizou o visual usado, com riscos, remendos e bagunça que sugerem história.",
+      "Os designers pensam em forma, cor e tamanho para sentirmos o papel da nave à primeira vista."
+     ],
+     "q": "Se você pudesse projetar uma nave, ela seria elegante, robusta ou algo inesperado?",
+     "c": "Desenhe uma nave com três formas simples e escreva uma linha sobre quem a pilota."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Retro-futurism",
+     "g": "Enjoy the charm of yesterday's visions of tomorrow, from chrome rockets to atomic-age homes.",
+     "p": [
+      "Retro-futurism looks at how earlier eras imagined the future, with fins, domes and gleaming chrome.",
+      "Mid-century posters and magazines showed push-button kitchens and rocket trips for everyone.",
+      "It is both nostalgic and playful, a reminder that every era dreams in its own style."
+     ],
+     "q": "Which old vision of the future would you most like to live in for a day?",
+     "c": "Draw or describe a retro-futuristic kitchen or vehicle with at least three details."
+    },
+    "de": {
+     "t": "Retro-Futurismus",
+     "g": "Den Charme von gestern erdachter Zukunft genießen, von Chrom-Raketen bis zu Atomzeit-Häusern.",
+     "p": [
+      "Retro-Futurismus betrachtet, wie frühere Epochen sich die Zukunft vorstellten, mit Flossen, Kuppeln und glänzendem Chrom.",
+      "Plakate und Magazine der Jahrhundertmitte zeigten Küchen auf Knopfdruck und Raketenreisen für alle.",
+      "Er ist nostalgisch und verspielt zugleich, eine Erinnerung daran, dass jede Zeit im eigenen Stil träumt."
+     ],
+     "q": "In welcher alten Zukunftsvision würdest du am liebsten einen Tag leben?",
+     "c": "Zeichne oder beschreibe eine retro-futuristische Küche oder ein Fahrzeug mit mindestens drei Details."
+    },
+    "es": {
+     "t": "Retrofuturismo",
+     "g": "Disfrutar del encanto de las visiones de ayer sobre el mañana, de cohetes cromados a hogares de la era atómica.",
+     "p": [
+      "El retrofuturismo mira cómo imaginaron el futuro épocas anteriores, con aletas, cúpulas y cromo reluciente.",
+      "Los carteles y revistas de mediados de siglo mostraban cocinas de botón y viajes en cohete para todos.",
+      "Es nostálgico y juguetón a la vez, un recordatorio de que cada época sueña a su estilo."
+     ],
+     "q": "¿En qué antigua visión del futuro te gustaría vivir un día?",
+     "c": "Dibuja o describe una cocina o un vehículo retrofuturista con al menos tres detalles."
+    },
+    "fr": {
+     "t": "Le rétrofuturisme",
+     "g": "Savourer le charme des visions d'hier sur demain, des fusées chromées aux maisons de l'ère atomique.",
+     "p": [
+      "Le rétrofuturisme regarde comment des époques passées imaginaient le futur, avec ailerons, dômes et chrome brillant.",
+      "Les affiches et magazines du milieu du siècle montraient des cuisines à bouton et des voyages en fusée pour tous.",
+      "Il est à la fois nostalgique et ludique, rappel que chaque époque rêve à son style."
+     ],
+     "q": "Dans quelle ancienne vision du futur aimerais-tu vivre un jour ?",
+     "c": "Dessine ou décris une cuisine ou un véhicule rétrofuturiste avec au moins trois détails."
+    },
+    "it": {
+     "t": "Retrofuturismo",
+     "g": "Godere del fascino delle visioni di ieri sul domani, dai razzi cromati alle case dell'età atomica.",
+     "p": [
+      "Il retrofuturismo guarda a come le epoche passate immaginavano il futuro, con pinne, cupole e cromature lucenti.",
+      "Manifesti e riviste di metà secolo mostravano cucine a pulsante e viaggi in razzo per tutti.",
+      "È nostalgico e giocoso insieme, un promemoria che ogni epoca sogna a modo suo."
+     ],
+     "q": "In quale antica visione del futuro ti piacerebbe vivere per un giorno?",
+     "c": "Disegna o descrivi una cucina o un veicolo retrofuturista con almeno tre dettagli."
+    },
+    "pt": {
+     "t": "Retrofuturismo",
+     "g": "Apreciar o encanto das visões de ontem sobre o amanhã, de foguetões cromados a casas da era atómica.",
+     "p": [
+      "O retrofuturismo olha para como épocas passadas imaginavam o futuro, com barbatanas, cúpulas e cromado reluzente.",
+      "Cartazes e revistas de meados do século mostravam cozinhas de botão e viagens de foguetão para todos.",
+      "É nostálgico e brincalhão ao mesmo tempo, um lembrete de que cada época sonha ao seu estilo."
+     ],
+     "q": "Em que antiga visão do futuro gostarias de viver um dia?",
+     "c": "Desenha ou descreve uma cozinha ou veículo retrofuturista com pelo menos três detalhes."
+    },
+    "pt_BR": {
+     "t": "Retrofuturismo",
+     "g": "Apreciar o encanto das visões de ontem sobre o amanhã, de foguetes cromados a casas da era atômica.",
+     "p": [
+      "O retrofuturismo olha como épocas passadas imaginavam o futuro, com aletas, cúpulas e cromado reluzente.",
+      "Cartazes e revistas de meados do século mostravam cozinhas de botão e viagens de foguete para todos.",
+      "É nostálgico e brincalhão ao mesmo tempo, um lembrete de que cada época sonha no seu estilo."
+     ],
+     "q": "Em que antiga visão do futuro você gostaria de viver por um dia?",
+     "c": "Desenhe ou descreva uma cozinha ou veículo retrofuturista com pelo menos três detalhes."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Steampunk",
+     "g": "Explore Victorian-era technology, brass gadgets and airships, SF with a historical twist.",
+     "p": [
+      "Steampunk imagines advanced machines powered by steam, gears and clockwork in a Victorian-style world.",
+      "Classic roots include Verne and Wells; The Difference Engine (1990) by William Gibson and Bruce Sterling helped define it.",
+      "Fans love goggles, brass, airships and handmade inventions, often through crafts and costumes."
+     ],
+     "q": "Which steampunk gadget would you invent for everyday life?",
+     "c": "Invent a steam-powered gadget and give it a name and a one-line instruction manual."
+    },
+    "de": {
+     "t": "Steampunk",
+     "g": "Viktorianische Technik, Messinggeräte und Luftschiffe erkunden, SF mit historischem Dreh.",
+     "p": [
+      "Steampunk erdenkt fortgeschrittene Maschinen aus Dampf, Zahnrädern und Uhrwerk in einer viktorianisch anmutenden Welt.",
+      "Zu den klassischen Wurzeln zählen Verne und Wells; Die Differenzmaschine (1990) von William Gibson und Bruce Sterling prägte es mit.",
+      "Fans lieben Schutzbrillen, Messing, Luftschiffe und handgemachte Erfindungen, oft in Bastelei und Kostümen."
+     ],
+     "q": "Welches Steampunk-Gerät würdest du für den Alltag erfinden?",
+     "c": "Erfinde ein dampfbetriebenes Gerät mit Namen und einer Ein-Zeilen-Gebrauchsanweisung."
+    },
+    "es": {
+     "t": "Steampunk",
+     "g": "Explorar la tecnología victoriana, los artilugios de latón y los dirigibles, CF con un giro histórico.",
+     "p": [
+      "El steampunk imagina máquinas avanzadas movidas por vapor, engranajes y mecanismos de relojería en un mundo de estilo victoriano.",
+      "Sus raíces clásicas incluyen a Verne y Wells; La máquina diferencial (1990), de William Gibson y Bruce Sterling, ayudó a definirlo.",
+      "A los aficionados les encantan las gafas, el latón, los dirigibles y los inventos hechos a mano, a menudo en manualidades y disfraces."
+     ],
+     "q": "¿Qué artilugio steampunk inventarías para la vida diaria?",
+     "c": "Inventa un artilugio de vapor y ponle nombre y un manual de instrucciones de una línea."
+    },
+    "fr": {
+     "t": "Le steampunk",
+     "g": "Explorer la technologie victorienne, les gadgets de laiton et les dirigeables, une SF au détour de l'histoire.",
+     "p": [
+      "Le steampunk imagine des machines avancées mues par la vapeur, les engrenages et l'horlogerie dans un monde de style victorien.",
+      "Ses racines classiques incluent Verne et Wells ; La Machine à différences (1990) de William Gibson et Bruce Sterling a aidé à le définir.",
+      "Les fans aiment lunettes, laiton, dirigeables et inventions faites main, souvent en bricolage et costumes."
+     ],
+     "q": "Quel gadget steampunk inventerais-tu pour la vie quotidienne ?",
+     "c": "Invente un gadget à vapeur et donne-lui un nom et un mode d'emploi d'une ligne."
+    },
+    "it": {
+     "t": "Steampunk",
+     "g": "Esplorare la tecnologia vittoriana, i gadget d'ottone e i dirigibili, fantascienza con una svolta storica.",
+     "p": [
+      "Lo steampunk immagina macchine avanzate mosse da vapore, ingranaggi e meccanismi a orologeria in un mondo in stile vittoriano.",
+      "Tra le radici classiche ci sono Verne e Wells; La macchina della realtà (1990) di William Gibson e Bruce Sterling contribuì a definirlo.",
+      "Ai fan piacciono occhialoni, ottone, dirigibili e invenzioni fatte a mano, spesso in lavoretti e costumi."
+     ],
+     "q": "Quale gadget steampunk inventeresti per la vita di tutti i giorni?",
+     "c": "Inventa un gadget a vapore e dagli un nome e un manuale d'istruzioni di una riga."
+    },
+    "pt": {
+     "t": "Steampunk",
+     "g": "Explorar a tecnologia vitoriana, os engenhos de latão e os dirigíveis, FC com um toque histórico.",
+     "p": [
+      "O steampunk imagina máquinas avançadas movidas a vapor, engrenagens e mecanismos de relojoaria num mundo de estilo vitoriano.",
+      "As raízes clássicas incluem Verne e Wells; A Máquina Diferencial (1990), de William Gibson e Bruce Sterling, ajudou a defini-lo.",
+      "Os fãs adoram óculos de proteção, latão, dirigíveis e invenções feitas à mão, muitas vezes em artesanato e fatos."
+     ],
+     "q": "Que engenho steampunk inventarias para o dia a dia?",
+     "c": "Inventa um engenho a vapor e dá-lhe um nome e um manual de instruções de uma linha."
+    },
+    "pt_BR": {
+     "t": "Steampunk",
+     "g": "Explorar a tecnologia vitoriana, os engenhos de latão e os dirigíveis, FC com um toque histórico.",
+     "p": [
+      "O steampunk imagina máquinas avançadas movidas a vapor, engrenagens e mecanismos de relojoaria num mundo de estilo vitoriano.",
+      "As raízes clássicas incluem Verne e Wells; A Máquina Diferencial (1990), de William Gibson e Bruce Sterling, ajudou a defini-lo.",
+      "Os fãs adoram óculos de proteção, latão, dirigíveis e invenções feitas à mão, muitas vezes em artesanato e fantasias."
+     ],
+     "q": "Que engenho steampunk você inventaria para o dia a dia?",
+     "c": "Invente um engenho a vapor e dê a ele um nome e um manual de instruções de uma linha."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The multiverse idea",
+     "g": "Meet parallel worlds and alternate versions of ourselves in stories and in physics.",
+     "p": [
+      "The multiverse idea says there may be many worlds where events turned out differently.",
+      "In physics, the many-worlds interpretation of quantum mechanics, proposed by Hugh Everett in 1957, is one such idea.",
+      "Stories use it for gentle what-ifs about choices, paths and other versions of ourselves."
+     ],
+     "q": "If you could peek at a parallel version of you, what would you ask?",
+     "c": "Imagine one small choice from today and write a two-sentence story about its parallel version."
+    },
+    "de": {
+     "t": "Die Multiversum-Idee",
+     "g": "Parallelwelten und alternative Versionen unserer selbst in Geschichten und in der Physik kennenlernen.",
+     "p": [
+      "Die Multiversum-Idee besagt, dass es viele Welten geben könnte, in denen Ereignisse anders verliefen.",
+      "In der Physik ist die Viele-Welten-Interpretation der Quantenmechanik, 1957 von Hugh Everett vorgeschlagen, eine solche Idee.",
+      "Geschichten nutzen sie für sanfte Was-wäre-wenn-Fragen zu Entscheidungen, Wegen und anderen Versionen von uns."
+     ],
+     "q": "Wenn du einer Parallelversion von dir zuschauen könntest, was würdest du fragen?",
+     "c": "Stell dir eine kleine Entscheidung von heute vor und schreibe in zwei Sätzen eine Geschichte über ihre Parallelversion."
+    },
+    "es": {
+     "t": "La idea del multiverso",
+     "g": "Conocer los mundos paralelos y las versiones alternativas de nosotros en los relatos y en la física.",
+     "p": [
+      "La idea del multiverso dice que podría haber muchos mundos donde los sucesos acabaron de otro modo.",
+      "En física, la interpretación de los muchos mundos de la mecánica cuántica, propuesta por Hugh Everett en 1957, es una de esas ideas.",
+      "Los relatos la usan para suaves preguntas de qué pasaría si sobre decisiones, caminos y otras versiones de nosotros."
+     ],
+     "q": "Si pudieras asomarte a una versión paralela de ti, ¿qué preguntarías?",
+     "c": "Imagina una pequeña decisión de hoy y escribe en dos frases una historia sobre su versión paralela."
+    },
+    "fr": {
+     "t": "L'idée du multivers",
+     "g": "Découvrir les mondes parallèles et les versions alternatives de nous-mêmes dans les récits et en physique.",
+     "p": [
+      "L'idée du multivers dit qu'il pourrait exister de nombreux mondes où les événements ont tourné autrement.",
+      "En physique, l'interprétation des mondes multiples de la mécanique quantique, proposée par Hugh Everett en 1957, en est une.",
+      "Les récits l'emploient pour de doux et si sur les choix, les chemins et d'autres versions de nous."
+     ],
+     "q": "Si tu pouvais observer une version parallèle de toi, que demanderais-tu ?",
+     "c": "Imagine un petit choix d'aujourd'hui et écris en deux phrases une histoire sur sa version parallèle."
+    },
+    "it": {
+     "t": "L'idea del multiverso",
+     "g": "Conoscere i mondi paralleli e le versioni alternative di noi nelle storie e nella fisica.",
+     "p": [
+      "L'idea del multiverso dice che potrebbero esistere molti mondi in cui gli eventi sono andati diversamente.",
+      "In fisica, l'interpretazione a molti mondi della meccanica quantistica, proposta da Hugh Everett nel 1957, è una di queste idee.",
+      "Le storie la usano per dolci e se su scelte, percorsi e altre versioni di noi."
+     ],
+     "q": "Se potessi sbirciare una versione parallela di te, cosa chiederesti?",
+     "c": "Immagina una piccola scelta di oggi e scrivi in due frasi una storia sulla sua versione parallela."
+    },
+    "pt": {
+     "t": "A ideia do multiverso",
+     "g": "Conhecer os mundos paralelos e as versões alternativas de nós em histórias e na física.",
+     "p": [
+      "A ideia do multiverso diz que pode haver muitos mundos onde os acontecimentos correram de outro modo.",
+      "Em física, a interpretação dos muitos mundos da mecânica quântica, proposta por Hugh Everett em 1957, é uma dessas ideias.",
+      "As histórias usam-na para suaves e se sobre escolhas, caminhos e outras versões de nós."
+     ],
+     "q": "Se pudesses espreitar uma versão paralela de ti, o que perguntarias?",
+     "c": "Imagina uma pequena escolha de hoje e escreve em duas frases uma história sobre a sua versão paralela."
+    },
+    "pt_BR": {
+     "t": "A ideia do multiverso",
+     "g": "Conhecer os mundos paralelos e as versões alternativas de nós em histórias e na física.",
+     "p": [
+      "A ideia do multiverso diz que pode haver muitos mundos onde os acontecimentos foram diferentes.",
+      "Em física, a interpretação dos muitos mundos da mecânica quântica, proposta por Hugh Everett em 1957, é uma dessas ideias.",
+      "As histórias a usam para suaves e se sobre escolhas, caminhos e outras versões de nós."
+     ],
+     "q": "Se pudesse espiar uma versão paralela de você, o que perguntaria?",
+     "c": "Imagine uma pequena escolha de hoje e escreva em duas frases uma história sobre a versão paralela dela."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: travel, robots and AI",
+     "g": "Enjoy a friendly recap of spaceflight ideas, early AI and favourite films from the last month.",
+     "p": [
+      "You explored space stations, artificial gravity, faster-than-light tricks and generation ships.",
+      "You met Bradbury, Le Guin, friendly AI characters and gentle aliens on screen.",
+      "You also saw how music, effects and design help make imagined worlds feel real."
+     ],
+     "q": "Which lesson from these last weeks surprised you most?",
+     "c": "Write a three-line recap and name your favourite idea from days 31 to 59."
+    },
+    "de": {
+     "t": "Rückblick: Reisen, Roboter und KI",
+     "g": "Einen freundlichen Rückblick auf Raumfahrtideen, frühe KI und Lieblingsfilme des letzten Monats genießen.",
+     "p": [
+      "Du hast Raumstationen, künstliche Schwerkraft, Überlicht-Tricks und Generationenschiffe erkundet.",
+      "Du hast Bradbury, Le Guin, freundliche KI-Figuren und sanfte Außerirdische auf der Leinwand getroffen.",
+      "Du hast auch gesehen, wie Musik, Effekte und Design erdachte Welten glaubhaft machen."
+     ],
+     "q": "Welche Lektion der letzten Wochen hat dich am meisten überrascht?",
+     "c": "Schreibe eine Drei-Zeilen-Zusammenfassung und nenne deine Lieblingsidee der Tage 31 bis 59."
+    },
+    "es": {
+     "t": "Repaso: viajes, robots e IA",
+     "g": "Disfrutar de un repaso amable de las ideas de vuelo espacial, la IA temprana y las películas favoritas del último mes.",
+     "p": [
+      "Exploraste estaciones espaciales, gravedad artificial, trucos más rápidos que la luz y naves generacionales.",
+      "Conociste a Bradbury, Le Guin, personajes de IA amistosos y alienígenas amables en pantalla.",
+      "También viste cómo música, efectos y diseño hacen reales los mundos imaginados."
+     ],
+     "q": "¿Qué lección de estas últimas semanas te sorprendió más?",
+     "c": "Escribe un resumen de tres líneas y nombra tu idea favorita de los días 31 a 59."
+    },
+    "fr": {
+     "t": "Bilan : voyages, robots et IA",
+     "g": "Savourer un bilan amical des idées de vol spatial, de l'IA des débuts et des films préférés du mois écoulé.",
+     "p": [
+      "Tu as exploré stations spatiales, gravité artificielle, astuces plus rapides que la lumière et vaisseaux-génération.",
+      "Tu as rencontré Bradbury, Le Guin, des personnages d'IA sympathiques et des extraterrestres doux à l'écran.",
+      "Tu as aussi vu comment musique, effets et design rendent réels les mondes imaginés."
+     ],
+     "q": "Quelle leçon de ces dernières semaines t'a le plus surpris ?",
+     "c": "Écris un résumé en trois lignes et nomme ton idée préférée des jours 31 à 59."
+    },
+    "it": {
+     "t": "Ripasso: viaggi, robot e IA",
+     "g": "Godersi un amichevole riepilogo di idee di volo spaziale, prime IA e film preferiti dell'ultimo mese.",
+     "p": [
+      "Hai esplorato stazioni spaziali, gravità artificiale, trucchi più veloci della luce e navi generazionali.",
+      "Hai incontrato Bradbury, Le Guin, personaggi di IA amichevoli e alieni gentili sullo schermo.",
+      "Hai visto anche come musica, effetti e design rendano reali i mondi immaginati."
+     ],
+     "q": "Quale lezione di queste ultime settimane ti ha sorpreso di più?",
+     "c": "Scrivi un riassunto di tre righe e nomina la tua idea preferita dei giorni da 31 a 59."
+    },
+    "pt": {
+     "t": "Revisão: viagens, robôs e IA",
+     "g": "Desfrutar de uma revisão amigável das ideias de voo espacial, da IA inicial e dos filmes favoritos do último mês.",
+     "p": [
+      "Exploraste estações espaciais, gravidade artificial, truques mais rápidos do que a luz e naves geracionais.",
+      "Conheceste Bradbury, Le Guin, personagens de IA simpáticas e alienígenas gentis no ecrã.",
+      "Viste também como música, efeitos e design tornam reais os mundos imaginados."
+     ],
+     "q": "Que lição destas últimas semanas mais te surpreendeu?",
+     "c": "Escreve um resumo de três linhas e nomeia a tua ideia favorita dos dias 31 a 59."
+    },
+    "pt_BR": {
+     "t": "Revisão: viagens, robôs e IA",
+     "g": "Curtir uma revisão amigável das ideias de voo espacial, da IA inicial e dos filmes favoritos do último mês.",
+     "p": [
+      "Você explorou estações espaciais, gravidade artificial, truques mais rápidos que a luz e naves geracionais.",
+      "Você conheceu Bradbury, Le Guin, personagens de IA simpáticos e alienígenas gentis na tela.",
+      "Você também viu como música, efeitos e design tornam reais os mundos imaginados."
+     ],
+     "q": "Que lição dessas últimas semanas mais surpreendeu você?",
+     "c": "Escreva um resumo de três linhas e nomeie sua ideia favorita dos dias 31 a 59."
+    }
+   }
+  }
+ ]
+}

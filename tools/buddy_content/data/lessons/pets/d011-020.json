@@ -1,0 +1,835 @@
+{
+ "topic": "pets",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Microchips and ID tags",
+     "g": "See how microchips and tags help lost pets get home.",
+     "p": [
+      "A microchip is a tiny implant a vet places once, holding a unique number.",
+      "A tag with your phone number lets anyone contact you at once.",
+      "Chips only help if your contact details are kept up to date."
+     ],
+     "q": "Does your pet, or a pet you know, have a chip or tag?",
+     "c": "Check that the contact details on a tag or chip record are current."
+    },
+    "de": {
+     "t": "Mikrochip und Adressmarke",
+     "g": "Erfahre, wie Chip und Marke verlorene Tiere nach Hause bringen.",
+     "p": [
+      "Ein Mikrochip ist ein winziges Implantat mit einer einmaligen Nummer, vom Tierarzt gesetzt.",
+      "Eine Marke mit Telefonnummer lässt dich sofort erreichen.",
+      "Der Chip hilft nur, wenn deine Kontaktdaten aktuell sind."
+     ],
+     "q": "Hat dein Tier oder ein Tier, das du kennst, Chip oder Marke?",
+     "c": "Prüfe, ob die Kontaktdaten auf Marke oder Chipregister aktuell sind."
+    },
+    "es": {
+     "t": "Microchip y chapa de identificación",
+     "g": "Mira cómo el microchip y la chapa ayudan a que las mascotas perdidas vuelvan a casa.",
+     "p": [
+      "El microchip es un diminuto implante con un número único que coloca un veterinario.",
+      "Una chapa con tu teléfono permite que te contacten al instante.",
+      "El chip solo sirve si tus datos de contacto están actualizados."
+     ],
+     "q": "¿Tu mascota, o alguna que conozcas, lleva chip o chapa?",
+     "c": "Comprueba que los datos de la chapa o del registro del chip estén al día."
+    },
+    "fr": {
+     "t": "Puce électronique et médaille",
+     "g": "Vois comment la puce et la médaille aident les animaux perdus à rentrer.",
+     "p": [
+      "La puce est un minuscule implant à numéro unique, posé par un vétérinaire.",
+      "Une médaille avec ton numéro permet de te joindre aussitôt.",
+      "La puce n'aide que si tes coordonnées sont à jour."
+     ],
+     "q": "Ton animal, ou un animal que tu connais, a-t-il une puce ou une médaille ?",
+     "c": "Vérifie que les coordonnées sur la médaille ou le fichier de la puce sont à jour."
+    },
+    "it": {
+     "t": "Microchip e medaglietta",
+     "g": "Scopri come microchip e medaglietta aiutano gli animali smarriti a tornare a casa.",
+     "p": [
+      "Il microchip è un minuscolo impianto con un numero unico, messo dal veterinario.",
+      "Una medaglietta con il tuo telefono permette di contattarti subito.",
+      "Il chip serve solo se i tuoi recapiti sono aggiornati."
+     ],
+     "q": "Il tuo animale, o uno che conosci, ha chip o medaglietta?",
+     "c": "Controlla che i recapiti su medaglietta o registro del chip siano aggiornati."
+    },
+    "pt": {
+     "t": "Microchip e medalha de identificação",
+     "g": "Vê como o microchip e a medalha ajudam animais perdidos a voltar para casa.",
+     "p": [
+      "O microchip é um minúsculo implante com número único, colocado pelo veterinário.",
+      "Uma medalha com o teu telemóvel permite que te contactem logo.",
+      "O chip só ajuda se os teus contactos estiverem atualizados."
+     ],
+     "q": "O teu animal, ou um que conheças, tem chip ou medalha?",
+     "c": "Confirma que os contactos na medalha ou no registo do chip estão atualizados."
+    },
+    "pt_BR": {
+     "t": "Microchip e plaquinha de identificação",
+     "g": "Veja como o microchip e a plaquinha ajudam pets perdidos a voltar para casa.",
+     "p": [
+      "O microchip é um minúsculo implante com número único, colocado pelo veterinário.",
+      "Uma plaquinha com seu telefone permite que entrem em contato na hora.",
+      "O chip só ajuda se seus contatos estiverem atualizados."
+     ],
+     "q": "Seu pet, ou um que você conheça, tem chip ou plaquinha?",
+     "c": "Confira se os contatos na plaquinha ou no cadastro do chip estão atualizados."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading basic body language",
+     "g": "Learn relaxed versus worried postures in dogs and cats.",
+     "p": [
+      "Relaxed pets have soft eyes, loose bodies and gently moving tails.",
+      "Worry shows as flattened ears, tucked tails, stiff bodies or looking away.",
+      "A tail wag alone is not always happy; read the whole body."
+     ],
+     "q": "What body language have you noticed in a pet?",
+     "c": "Watch a pet for five minutes and note two signals you see."
+    },
+    "de": {
+     "t": "Körpersprache lesen lernen",
+     "g": "Lerne entspannte und besorgte Haltungen bei Hunden und Katzen zu unterscheiden.",
+     "p": [
+      "Entspannte Tiere haben weiche Augen, lockeren Körper und ruhig bewegte Schwänze.",
+      "Sorge zeigt sich durch angelegte Ohren, eingeklemmte Rute, steifen Körper oder Wegsehen.",
+      "Wedeln allein heißt nicht immer Freude; achte auf den ganzen Körper."
+     ],
+     "q": "Welche Körpersprache ist dir bei einem Tier schon aufgefallen?",
+     "c": "Beobachte ein Tier fünf Minuten und notiere zwei Signale."
+    },
+    "es": {
+     "t": "Leer el lenguaje corporal básico",
+     "g": "Aprende posturas relajadas y preocupadas en perros y gatos.",
+     "p": [
+      "Un animal relajado tiene ojos suaves, cuerpo suelto y cola con movimiento tranquilo.",
+      "La inquietud se ve en orejas aplastadas, cola entre las patas, cuerpo rígido o mirada desviada.",
+      "Mover la cola no siempre es alegría; lee todo el cuerpo."
+     ],
+     "q": "¿Qué lenguaje corporal has notado en una mascota?",
+     "c": "Observa a un animal cinco minutos y anota dos señales."
+    },
+    "fr": {
+     "t": "Lire le langage corporel de base",
+     "g": "Apprends à distinguer postures détendues et inquiètes chez chiens et chats.",
+     "p": [
+      "Un animal détendu a le regard doux, le corps souple et la queue qui bouge calmement.",
+      "L'inquiétude se voit aux oreilles plaquées, queue rentrée, corps raide ou regard détourné.",
+      "Une queue qui remue n'est pas toujours joyeuse; lis tout le corps."
+     ],
+     "q": "Quel langage corporel as-tu remarqué chez un animal ?",
+     "c": "Observe un animal cinq minutes et note deux signaux."
+    },
+    "it": {
+     "t": "Leggere il linguaggio del corpo",
+     "g": "Impara a distinguere posture rilassate e preoccupate in cani e gatti.",
+     "p": [
+      "Un animale rilassato ha occhi morbidi, corpo sciolto e coda che si muove piano.",
+      "La preoccupazione si vede da orecchie piatte, coda tra le zampe, corpo rigido o sguardo evitato.",
+      "Scodinzolare non è sempre gioia; leggi tutto il corpo."
+     ],
+     "q": "Quale linguaggio del corpo hai notato in un animale?",
+     "c": "Osserva un animale per cinque minuti e annota due segnali."
+    },
+    "pt": {
+     "t": "Ler a linguagem corporal básica",
+     "g": "Aprende posturas relaxadas e preocupadas em cães e gatos.",
+     "p": [
+      "Um animal relaxado tem olhos suaves, corpo solto e cauda com movimento calmo.",
+      "A preocupação vê-se em orelhas coladas, cauda entre as pernas, corpo rígido ou olhar desviado.",
+      "Abanar a cauda nem sempre é alegria; lê o corpo todo."
+     ],
+     "q": "Que linguagem corporal já notaste num animal?",
+     "c": "Observa um animal cinco minutos e anota dois sinais."
+    },
+    "pt_BR": {
+     "t": "Ler a linguagem corporal básica",
+     "g": "Aprenda posturas relaxadas e preocupadas em cães e gatos.",
+     "p": [
+      "Um pet relaxado tem olhos suaves, corpo solto e rabo com movimento calmo.",
+      "A preocupação aparece em orelhas coladas, rabo entre as pernas, corpo rígido ou olhar desviado.",
+      "Abanar o rabo nem sempre é alegria; leia o corpo todo."
+     ],
+     "q": "Que linguagem corporal você já notou em um pet?",
+     "c": "Observe um pet por cinco minutos e anote dois sinais."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Daily routines that pets love",
+     "g": "See why regular times help animals feel safe.",
+     "p": [
+      "Regular meals, walks, play and rest make each day predictable.",
+      "Predictability lowers worry, especially for new or shy pets.",
+      "Routines can flex a little; consistency is the goal, not a stopwatch."
+     ],
+     "q": "What does a good day look like for your pet?",
+     "c": "Write a simple daily schedule with meals, play and rest."
+    },
+    "de": {
+     "t": "Tagesabläufe, die Tiere lieben",
+     "g": "Sieh, warum feste Zeiten Tieren Sicherheit geben.",
+     "p": [
+      "Regelmäßige Mahlzeiten, Spaziergänge, Spiel und Ruhe machen den Tag vorhersehbar.",
+      "Vorhersehbarkeit mindert Sorgen, besonders bei neuen oder scheuen Tieren.",
+      "Routinen dürfen flexibel sein; Beständigkeit zählt, nicht die Stoppuhr."
+     ],
+     "q": "Wie sieht ein guter Tag für dein Tier aus?",
+     "c": "Schreib einen einfachen Tagesplan mit Essen, Spiel und Ruhe."
+    },
+    "es": {
+     "t": "Rutinas diarias que les encantan",
+     "g": "Descubre por qué los horarios regulares les dan seguridad.",
+     "p": [
+      "Comidas, paseos, juego y descanso regulares hacen el día predecible.",
+      "Lo predecible reduce la inquietud, sobre todo en animales nuevos o tímidos.",
+      "Las rutinas pueden flexibilizarse un poco; importa la constancia, no el cronómetro."
+     ],
+     "q": "¿Cómo es un buen día para tu mascota?",
+     "c": "Escribe un horario diario sencillo con comidas, juego y descanso."
+    },
+    "fr": {
+     "t": "Des routines que les animaux adorent",
+     "g": "Découvre pourquoi des horaires réguliers rassurent les animaux.",
+     "p": [
+      "Repas, sorties, jeux et repos réguliers rendent la journée prévisible.",
+      "La prévisibilité réduit l'inquiétude, surtout chez les animaux nouveaux ou timides.",
+      "Les routines peuvent être souples; la constance compte, pas le chronomètre."
+     ],
+     "q": "À quoi ressemble une bonne journée pour ton animal ?",
+     "c": "Écris un emploi du temps simple avec repas, jeux et repos."
+    },
+    "it": {
+     "t": "Routine quotidiane che gli animali amano",
+     "g": "Scopri perché orari regolari fanno sentire al sicuro gli animali.",
+     "p": [
+      "Pasti, passeggiate, gioco e riposo regolari rendono la giornata prevedibile.",
+      "La prevedibilità riduce l'ansia, soprattutto negli animali nuovi o timidi.",
+      "Le routine possono essere flessibili; conta la costanza, non il cronometro."
+     ],
+     "q": "Com'è una bella giornata per il tuo animale?",
+     "c": "Scrivi un programma giornaliero semplice con pasti, gioco e riposo."
+    },
+    "pt": {
+     "t": "Rotinas diárias que eles adoram",
+     "g": "Descobre porque horários regulares dão segurança aos animais.",
+     "p": [
+      "Refeições, passeios, brincadeira e descanso regulares tornam o dia previsível.",
+      "O que é previsível reduz a preocupação, sobretudo em animais novos ou tímidos.",
+      "As rotinas podem ser flexíveis; conta a constância, não o cronómetro."
+     ],
+     "q": "Como é um bom dia para o teu animal?",
+     "c": "Escreve um horário diário simples com refeições, brincadeira e descanso."
+    },
+    "pt_BR": {
+     "t": "Rotinas diárias que eles adoram",
+     "g": "Descubra por que horários regulares dão segurança aos pets.",
+     "p": [
+      "Refeições, passeios, brincadeira e descanso regulares deixam o dia previsível.",
+      "O que é previsível reduz a preocupação, principalmente em pets novos ou tímidos.",
+      "As rotinas podem ser flexíveis; vale a constância, não o cronômetro."
+     ],
+     "q": "Como é um bom dia para o seu pet?",
+     "c": "Escreva um horário diário simples com refeições, brincadeira e descanso."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fresh water every day",
+     "g": "Understand why clean water matters and how to offer it.",
+     "p": [
+      "Clean water should always be available, in a bowl that is washed daily.",
+      "Heavy ceramic or steel bowls are stable and easy to keep clean.",
+      "Some cats enjoy a fountain; refresh water often in hot weather."
+     ],
+     "q": "Where do you keep water bowls at home?",
+     "c": "Wash a water bowl today and refill it with fresh water."
+    },
+    "de": {
+     "t": "Jeden Tag frisches Wasser",
+     "g": "Verstehe, warum sauberes Wasser wichtig ist und wie du es anbietest.",
+     "p": [
+      "Sauberes Wasser sollte immer bereitstehen, im täglich gespülten Napf.",
+      "Schwere Keramik- oder Edelstahlnäpfe stehen stabil und sind leicht sauber zu halten.",
+      "Manche Katzen mögen einen Trinkbrunnen; bei Hitze öfter erneuern."
+     ],
+     "q": "Wo stehen bei dir die Wassernäpfe?",
+     "c": "Spül heute einen Wassernapf und füll ihn mit frischem Wasser."
+    },
+    "es": {
+     "t": "Agua fresca cada día",
+     "g": "Entiende por qué importa el agua limpia y cómo ofrecerla.",
+     "p": [
+      "El agua limpia debe estar siempre disponible, en un cuenco lavado a diario.",
+      "Los cuencos pesados de cerámica o acero son estables y fáciles de limpiar.",
+      "A algunos gatos les gusta una fuente; renueva el agua a menudo con calor."
+     ],
+     "q": "¿Dónde tienes los cuencos de agua en casa?",
+     "c": "Lava hoy un cuenco de agua y rellénalo con agua fresca."
+    },
+    "fr": {
+     "t": "De l'eau fraîche chaque jour",
+     "g": "Comprends pourquoi l'eau propre compte et comment la proposer.",
+     "p": [
+      "L'eau propre doit toujours être disponible, dans une gamelle lavée chaque jour.",
+      "Les gamelles lourdes en céramique ou inox sont stables et faciles à nettoyer.",
+      "Certains chats aiment une fontaine; renouvelle l'eau souvent par temps chaud."
+     ],
+     "q": "Où places-tu les gamelles d'eau chez toi ?",
+     "c": "Lave une gamelle d'eau aujourd'hui et remplis-la d'eau fraîche."
+    },
+    "it": {
+     "t": "Acqua fresca ogni giorno",
+     "g": "Capisci perché l'acqua pulita conta e come offrirla.",
+     "p": [
+      "L'acqua pulita deve essere sempre disponibile, in una ciotola lavata ogni giorno.",
+      "Le ciotole pesanti in ceramica o acciaio sono stabili e facili da pulire.",
+      "Ad alcuni gatti piace una fontanella; cambia l'acqua spesso col caldo."
+     ],
+     "q": "Dove tieni le ciotole dell'acqua in casa?",
+     "c": "Lava oggi una ciotola dell'acqua e riempila di acqua fresca."
+    },
+    "pt": {
+     "t": "Água fresca todos os dias",
+     "g": "Percebe porque a água limpa importa e como a oferecer.",
+     "p": [
+      "A água limpa deve estar sempre disponível, numa taça lavada diariamente.",
+      "Taças pesadas de cerâmica ou aço são estáveis e fáceis de limpar.",
+      "Alguns gatos gostam de fonte; renova a água muitas vezes com calor."
+     ],
+     "q": "Onde tens as taças de água em casa?",
+     "c": "Lava hoje uma taça de água e enche-a com água fresca."
+    },
+    "pt_BR": {
+     "t": "Água fresca todos os dias",
+     "g": "Entenda por que a água limpa importa e como oferecê-la.",
+     "p": [
+      "A água limpa deve estar sempre disponível, em um pote lavado diariamente.",
+      "Potes pesados de cerâmica ou aço são estáveis e fáceis de limpar.",
+      "Alguns gatos gostam de fonte; troque a água com frequência no calor."
+     ],
+     "q": "Onde ficam os potes de água na sua casa?",
+     "c": "Lave hoje um pote de água e encha com água fresca."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Introduction to pet food labels",
+     "g": "Learn what a pet food label can tell you.",
+     "p": [
+      "Complete food covers all nutrients; complementary food does not.",
+      "Ingredients are listed by weight, so the first few make up most of the food.",
+      "Your vet can help you choose a food that suits your pet's age and size."
+     ],
+     "q": "What do you look at first on a food label?",
+     "c": "Read a pet food label and find the words complete or complementary."
+    },
+    "de": {
+     "t": "Einführung in Tierfutter-Etiketten",
+     "g": "Lerne, was ein Futteretikett verrät.",
+     "p": [
+      "Alleinfutter deckt alle Nährstoffe ab, Ergänzungsfutter nicht.",
+      "Zutaten stehen nach Gewicht geordnet, die ersten machen den Großteil aus.",
+      "Dein Tierarzt hilft bei der Wahl eines Futters für Alter und Größe."
+     ],
+     "q": "Worauf schaust du zuerst auf dem Etikett?",
+     "c": "Lies ein Futteretikett und finde die Angabe Alleinfutter oder Ergänzungsfutter."
+    },
+    "es": {
+     "t": "Introducción a las etiquetas del alimento",
+     "g": "Aprende qué te cuenta la etiqueta de un alimento para mascotas.",
+     "p": [
+      "El alimento completo cubre todos los nutrientes; el complementario no.",
+      "Los ingredientes van por peso, así que los primeros forman la mayor parte.",
+      "Tu veterinario te ayuda a elegir según la edad y el tamaño."
+     ],
+     "q": "¿En qué te fijas primero en una etiqueta?",
+     "c": "Lee la etiqueta de un alimento y busca las palabras completo o complementario."
+    },
+    "fr": {
+     "t": "Comprendre les étiquettes d'aliments",
+     "g": "Apprends ce que dit l'étiquette d'un aliment pour animaux.",
+     "p": [
+      "Un aliment complet couvre tous les nutriments; un complémentaire non.",
+      "Les ingrédients sont classés par poids, les premiers forment l'essentiel.",
+      "Ton vétérinaire t'aide à choisir selon l'âge et la taille."
+     ],
+     "q": "Que regardes-tu en premier sur une étiquette ?",
+     "c": "Lis une étiquette d'aliment et trouve les mots complet ou complémentaire."
+    },
+    "it": {
+     "t": "Introduzione alle etichette del cibo",
+     "g": "Impara cosa ti dice l'etichetta di un alimento per animali.",
+     "p": [
+      "L'alimento completo copre tutti i nutrienti; il complementare no.",
+      "Gli ingredienti sono elencati per peso, quindi i primi formano la parte maggiore.",
+      "Il veterinario ti aiuta a scegliere in base a età e taglia."
+     ],
+     "q": "Cosa guardi per prima cosa su un'etichetta?",
+     "c": "Leggi un'etichetta e trova le parole completo o complementare."
+    },
+    "pt": {
+     "t": "Introdução aos rótulos de ração",
+     "g": "Aprende o que o rótulo de um alimento para animais diz.",
+     "p": [
+      "O alimento completo cobre todos os nutrientes; o complementar não.",
+      "Os ingredientes vêm por peso, por isso os primeiros são a maior parte.",
+      "O veterinário ajuda a escolher conforme a idade e o tamanho."
+     ],
+     "q": "O que olhas primeiro num rótulo?",
+     "c": "Lê um rótulo de ração e procura as palavras completo ou complementar."
+    },
+    "pt_BR": {
+     "t": "Introdução aos rótulos de ração",
+     "g": "Aprenda o que o rótulo de um alimento para pets diz.",
+     "p": [
+      "O alimento completo cobre todos os nutrientes; o complementar não.",
+      "Os ingredientes vêm por peso, então os primeiros são a maior parte.",
+      "O veterinário ajuda a escolher conforme a idade e o porte."
+     ],
+     "q": "O que você olha primeiro em um rótulo?",
+     "c": "Leia um rótulo de ração e procure as palavras completo ou complementar."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How much should my pet eat?",
+     "g": "Use feeding guides wisely and watch body shape.",
+     "p": [
+      "Feeding guides on packs are a starting point, not a strict rule.",
+      "Measure portions with a scale or cup instead of guessing.",
+      "Ask your vet how to check body shape and adjust portions safely."
+     ],
+     "q": "How do you usually measure your pet's meals?",
+     "c": "Weigh or measure one meal today and write down the amount."
+    },
+    "de": {
+     "t": "Wie viel soll mein Tier fressen?",
+     "g": "Nutze Fütterungsempfehlungen klug und beobachte die Körperform.",
+     "p": [
+      "Empfehlungen auf der Packung sind ein Startpunkt, keine strenge Regel.",
+      "Miss Portionen mit Waage oder Messbecher, statt zu schätzen.",
+      "Frag deinen Tierarzt, wie du die Körperform prüfst und Portionen sicher anpasst."
+     ],
+     "q": "Wie misst du die Mahlzeiten deines Tieres meist ab?",
+     "c": "Wiege oder miss heute eine Mahlzeit und notiere die Menge."
+    },
+    "es": {
+     "t": "¿Cuánto debe comer mi mascota?",
+     "g": "Usa las guías de alimentación con criterio y observa su figura.",
+     "p": [
+      "Las guías del envase son un punto de partida, no una regla estricta.",
+      "Mide las raciones con báscula o medidor en lugar de calcular a ojo.",
+      "Pregunta a tu veterinario cómo valorar su figura y ajustar raciones con seguridad."
+     ],
+     "q": "¿Cómo mides normalmente las comidas de tu mascota?",
+     "c": "Pesa o mide hoy una comida y anota la cantidad."
+    },
+    "fr": {
+     "t": "Quelle quantité donner à mon animal ?",
+     "g": "Utilise les guides de ration avec discernement et observe sa silhouette.",
+     "p": [
+      "Les tableaux sur le paquet sont un point de départ, pas une règle stricte.",
+      "Mesure les portions avec une balance ou un doseur plutôt qu'à l'œil.",
+      "Demande à ton vétérinaire comment juger la silhouette et ajuster les rations."
+     ],
+     "q": "Comment mesures-tu d'habitude les repas de ton animal ?",
+     "c": "Pèse ou mesure un repas aujourd'hui et note la quantité."
+    },
+    "it": {
+     "t": "Quanto deve mangiare il mio animale?",
+     "g": "Usa le tabelle di razionamento con buon senso e osserva la sua forma.",
+     "p": [
+      "Le tabelle sulla confezione sono un punto di partenza, non una regola rigida.",
+      "Misura le porzioni con bilancia o misurino invece di andare a occhio.",
+      "Chiedi al veterinario come valutare la forma e regolare le porzioni in sicurezza."
+     ],
+     "q": "Come misuri di solito i pasti del tuo animale?",
+     "c": "Pesa o misura oggi un pasto e annota la quantità."
+    },
+    "pt": {
+     "t": "Quanto deve comer o meu animal?",
+     "g": "Usa as tabelas de alimentação com critério e observa a silhueta.",
+     "p": [
+      "As tabelas da embalagem são um ponto de partida, não uma regra rígida.",
+      "Mede as doses com balança ou medidor em vez de estimar a olho.",
+      "Pergunta ao veterinário como avaliar a silhueta e ajustar as doses com segurança."
+     ],
+     "q": "Como medes normalmente as refeições do teu animal?",
+     "c": "Pesa ou mede hoje uma refeição e anota a quantidade."
+    },
+    "pt_BR": {
+     "t": "Quanto o meu pet deve comer?",
+     "g": "Use as tabelas de alimentação com critério e observe o corpo.",
+     "p": [
+      "As tabelas da embalagem são um ponto de partida, não uma regra rígida.",
+      "Meça as porções com balança ou medidor em vez de estimar no olho.",
+      "Pergunte ao veterinário como avaliar o corpo e ajustar as porções com segurança."
+     ],
+     "q": "Como você costuma medir as refeições do seu pet?",
+     "c": "Pese ou meça hoje uma refeição e anote a quantidade."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Treats without overdoing it",
+     "g": "Use small treats wisely.",
+     "p": [
+      "Treats should be a small part of the daily food, often cut tiny.",
+      "Healthy options like small pieces of plain cooked meat or special pet treats work well.",
+      "Use part of the daily meal as treats when training."
+     ],
+     "q": "What treat does your pet love most?",
+     "c": "Cut treats into pea-sized pieces and use them in a short play moment."
+    },
+    "de": {
+     "t": "Leckerli mit Maß",
+     "g": "Setze kleine Leckerli klug ein.",
+     "p": [
+      "Leckerli sollten nur einen kleinen Teil der Tagesration ausmachen, oft winzig geschnitten.",
+      "Gut sind kleine Stückchen ungewürztes gekochtes Fleisch oder spezielle Tierleckerli.",
+      "Beim Training kannst du einen Teil der Tagesmahlzeit als Belohnung nutzen."
+     ],
+     "q": "Welches Leckerli liebt dein Tier am meisten?",
+     "c": "Schneide Leckerli erbsengroß und nutze sie in einem kurzen Spiel."
+    },
+    "es": {
+     "t": "Premios sin pasarse",
+     "g": "Usa los premios pequeños con cabeza.",
+     "p": [
+      "Los premios deben ser una parte pequeña de la comida diaria, a menudo en trocitos.",
+      "Sirven trocitos de carne cocida sin sal ni especias o premios específicos para mascotas.",
+      "En el entrenamiento usa parte de la ración diaria como premio."
+     ],
+     "q": "¿Qué premio le gusta más a tu mascota?",
+     "c": "Corta premios del tamaño de un guisante y úsalos en un juego breve."
+    },
+    "fr": {
+     "t": "Des friandises sans excès",
+     "g": "Utilise les petites friandises avec sagesse.",
+     "p": [
+      "Les friandises doivent rester une petite part de la ration, souvent coupées en minuscules morceaux.",
+      "De petits morceaux de viande cuite nature ou des friandises pour animaux conviennent.",
+      "À l'entraînement, prélève une partie du repas comme récompense."
+     ],
+     "q": "Quelle friandise ton animal préfère-t-il ?",
+     "c": "Coupe des friandises de la taille d'un petit pois et utilise-les dans un court jeu."
+    },
+    "it": {
+     "t": "Premietti senza esagerare",
+     "g": "Usa i premietti con intelligenza.",
+     "p": [
+      "I premietti devono essere una piccola parte del cibo giornaliero, spesso tagliati minuscoli.",
+      "Vanno bene pezzettini di carne cotta senza condimenti o premietti specifici.",
+      "Nell'addestramento usa parte del pasto giornaliero come premio."
+     ],
+     "q": "Qual è il premietto preferito del tuo animale?",
+     "c": "Taglia i premietti della grandezza di un pisello e usali in un breve gioco."
+    },
+    "pt": {
+     "t": "Petiscos sem exagerar",
+     "g": "Usa os petiscos com cabeça.",
+     "p": [
+      "Os petiscos devem ser uma pequena parte da comida diária, muitas vezes em bocadinhos.",
+      "Servem pedaços de carne cozida sem tempero ou petiscos próprios para animais.",
+      "No treino usa parte da refeição diária como prémio."
+     ],
+     "q": "Qual é o petisco preferido do teu animal?",
+     "c": "Corta petiscos do tamanho de uma ervilha e usa-os numa brincadeira breve."
+    },
+    "pt_BR": {
+     "t": "Petiscos sem exagerar",
+     "g": "Use os petiscos com cabeça.",
+     "p": [
+      "Os petiscos devem ser uma pequena parte da comida diária, muitas vezes em pedacinhos.",
+      "Servem pedaços de carne cozida sem tempero ou petiscos próprios para pets.",
+      "No treino, use parte da refeição diária como prêmio."
+     ],
+     "q": "Qual é o petisco preferido do seu pet?",
+     "c": "Corte petiscos do tamanho de uma ervilha e use numa brincadeira curta."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Foods pets should never eat",
+     "g": "Learn which common human foods are unsafe.",
+     "p": [
+      "Chocolate, grapes, raisins, onions, garlic and xylitol are harmful to dogs and cats.",
+      "Xylitol, a sweetener, hides in gum, sweets and some peanut butters.",
+      "If your pet eats something suspicious, call a vet or poison helpline right away."
+     ],
+     "q": "Which foods in your kitchen need to stay out of reach?",
+     "c": "Store one risky food in a closed cupboard and note the vet phone number."
+    },
+    "de": {
+     "t": "Lebensmittel, die Tiere nie fressen dürfen",
+     "g": "Lerne, welche Lebensmittel für Tiere gefährlich sind.",
+     "p": [
+      "Schokolade, Trauben, Rosinen, Zwiebeln, Knoblauch und Xylit schaden Hunden und Katzen.",
+      "Xylit, ein Süßstoff, steckt in Kaugummi, Süßigkeiten und manchen Erdnussbuttern.",
+      "Hat dein Tier etwas Verdächtiges gefressen, ruf sofort Tierarzt oder Giftnotruf an."
+     ],
+     "q": "Welche Lebensmittel in deiner Küche müssen außer Reichweite bleiben?",
+     "c": "Lagere ein riskantes Lebensmittel im Schrank und notiere die Tierarztnummer."
+    },
+    "es": {
+     "t": "Alimentos que nunca deben comer",
+     "g": "Conoce qué alimentos humanos comunes no son seguros.",
+     "p": [
+      "Chocolate, uvas, pasas, cebolla, ajo y xilitol son dañinos para perros y gatos.",
+      "El xilitol, un edulcorante, está en chicles, golosinas y algunas cremas de cacahuete.",
+      "Si tu mascota come algo sospechoso, llama enseguida al veterinario o a toxicología."
+     ],
+     "q": "¿Qué alimentos de tu cocina deben quedar fuera de su alcance?",
+     "c": "Guarda un alimento de riesgo en un armario cerrado y anota el teléfono del veterinario."
+    },
+    "fr": {
+     "t": "Aliments interdits aux animaux",
+     "g": "Découvre quels aliments courants sont dangereux.",
+     "p": [
+      "Chocolat, raisins, raisins secs, oignons, ail et xylitol sont nocifs pour chiens et chats.",
+      "Le xylitol, un édulcorant, se cache dans les chewing-gums, bonbons et certains beurres de cacahuète.",
+      "Si ton animal avale quelque chose de suspect, appelle vite un vétérinaire ou un centre antipoison."
+     ],
+     "q": "Quels aliments de ta cuisine doivent rester hors de portée ?",
+     "c": "Range un aliment à risque dans un placard fermé et note le numéro du vétérinaire."
+    },
+    "it": {
+     "t": "Cibi che gli animali non devono mai mangiare",
+     "g": "Scopri quali cibi comuni non sono sicuri.",
+     "p": [
+      "Cioccolato, uva, uvetta, cipolla, aglio e xilitolo sono dannosi per cani e gatti.",
+      "Lo xilitolo, un dolcificante, si nasconde in gomme, caramelle e alcuni burri di arachidi.",
+      "Se il tuo animale mangia qualcosa di sospetto, chiama subito il veterinario o un centro antiveleni."
+     ],
+     "q": "Quali cibi della tua cucina devono restare fuori portata?",
+     "c": "Riponi un cibo rischioso in un armadio chiuso e annota il numero del veterinario."
+    },
+    "pt": {
+     "t": "Alimentos que nunca devem comer",
+     "g": "Conhece que alimentos humanos comuns não são seguros.",
+     "p": [
+      "Chocolate, uvas, passas, cebola, alho e xilitol são prejudiciais a cães e gatos.",
+      "O xilitol, um adoçante, esconde-se em pastilhas, doces e algumas manteigas de amendoim.",
+      "Se o teu animal comer algo suspeito, liga logo ao veterinário ou ao centro antivenenos."
+     ],
+     "q": "Que alimentos da tua cozinha têm de ficar fora do alcance?",
+     "c": "Guarda um alimento de risco num armário fechado e anota o número do veterinário."
+    },
+    "pt_BR": {
+     "t": "Alimentos que nunca devem comer",
+     "g": "Conheça quais alimentos humanos comuns não são seguros.",
+     "p": [
+      "Chocolate, uvas, passas, cebola, alho e xilitol fazem mal a cães e gatos.",
+      "O xilitol, um adoçante, se esconde em chicletes, doces e algumas pastas de amendoim.",
+      "Se seu pet comer algo suspeito, ligue logo para o veterinário ou centro de intoxicação."
+     ],
+     "q": "Que alimentos da sua cozinha precisam ficar fora do alcance?",
+     "c": "Guarde um alimento de risco em um armário fechado e anote o telefone do veterinário."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Safe chewing and toys",
+     "g": "Choose toys that are right-sized and sturdy.",
+     "p": [
+      "Pick toys sized for your pet so they cannot be swallowed or stuck.",
+      "Check toys often for cracks, loose parts or pieces coming off.",
+      "Rotate a few toys each week to keep them interesting."
+     ],
+     "q": "What toy does your pet play with most?",
+     "c": "Inspect every toy today and set aside any that are damaged."
+    },
+    "de": {
+     "t": "Sicheres Kauen und Spielzeug",
+     "g": "Wähle Spielzeug in passender Größe und stabiler Qualität.",
+     "p": [
+      "Nimm Spielzeug in der richtigen Größe, damit nichts verschluckt wird oder stecken bleibt.",
+      "Prüfe Spielzeug oft auf Risse, lose Teile oder Abgebrochenes.",
+      "Wechsle jede Woche einige Spielsachen aus, damit sie spannend bleiben."
+     ],
+     "q": "Mit welchem Spielzeug spielt dein Tier am meisten?",
+     "c": "Prüfe heute jedes Spielzeug und sortiere beschädigte aus."
+    },
+    "es": {
+     "t": "Masticar y jugar con seguridad",
+     "g": "Elige juguetes del tamaño adecuado y resistentes.",
+     "p": [
+      "Elige juguetes a su medida para que no puedan tragarse ni atascarse.",
+      "Revisa a menudo grietas, piezas sueltas o trozos que se desprenden.",
+      "Rota unos pocos juguetes cada semana para mantener el interés."
+     ],
+     "q": "¿Con qué juguete juega más tu mascota?",
+     "c": "Revisa hoy cada juguete y aparta los que estén dañados."
+    },
+    "fr": {
+     "t": "Mâchouilles et jouets sans danger",
+     "g": "Choisis des jouets de bonne taille et solides.",
+     "p": [
+      "Prends des jouets adaptés à ton animal pour qu'ils ne soient ni avalés ni coincés.",
+      "Vérifie souvent fissures, pièces lâches ou morceaux qui se détachent.",
+      "Fais tourner quelques jouets chaque semaine pour garder l'intérêt."
+     ],
+     "q": "Avec quel jouet ton animal joue-t-il le plus ?",
+     "c": "Inspecte chaque jouet aujourd'hui et mets de côté les abîmés."
+    },
+    "it": {
+     "t": "Masticare e giocare in sicurezza",
+     "g": "Scegli giochi della misura giusta e robusti.",
+     "p": [
+      "Scegli giochi adatti alla taglia, così non possono essere ingoiati né incastrarsi.",
+      "Controlla spesso crepe, parti allentate o pezzi che si staccano.",
+      "Alterna pochi giochi ogni settimana per mantenere l'interesse."
+     ],
+     "q": "Con quale gioco si diverte di più il tuo animale?",
+     "c": "Ispeziona oggi ogni gioco e metti da parte quelli rovinati."
+    },
+    "pt": {
+     "t": "Mastigar e brincar em segurança",
+     "g": "Escolhe brinquedos do tamanho certo e resistentes.",
+     "p": [
+      "Escolhe brinquedos à medida do animal, para não os engolir nem ficarem presos.",
+      "Verifica muitas vezes fissuras, peças soltas ou pedaços a soltar-se.",
+      "Alterna alguns brinquedos todas as semanas para manter o interesse."
+     ],
+     "q": "Com que brinquedo brinca mais o teu animal?",
+     "c": "Inspeciona hoje cada brinquedo e põe de lado os danificados."
+    },
+    "pt_BR": {
+     "t": "Mastigar e brincar com segurança",
+     "g": "Escolha brinquedos do tamanho certo e resistentes.",
+     "p": [
+      "Escolha brinquedos sob medida para o pet, para não serem engolidos nem ficarem presos.",
+      "Verifique sempre rachaduras, peças soltas ou pedaços se soltando.",
+      "Alterne alguns brinquedos toda semana para manter o interesse."
+     ],
+     "q": "Com que brinquedo seu pet mais brinca?",
+     "c": "Inspecione hoje cada brinquedo e separe os danificados."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Play as a daily need",
+     "g": "Discover why play matters for many species.",
+     "p": [
+      "Play builds bonds, burns energy and keeps minds busy.",
+      "Dogs enjoy fetch and tug, cats love chasing wand toys, rabbits like tunnels.",
+      "Short, regular play sessions are better than one long, tiring one."
+     ],
+     "q": "How do you like to play with your pet?",
+     "c": "Have a five-minute play session with a pet you know."
+    },
+    "de": {
+     "t": "Spiel als tägliches Bedürfnis",
+     "g": "Entdecke, warum Spiel für viele Arten wichtig ist.",
+     "p": [
+      "Spiel stärkt die Bindung, baut Energie ab und beschäftigt den Kopf.",
+      "Hunde lieben Apportieren und Zerrspiele, Katzen Federangeln, Kaninchen Tunnel.",
+      "Kurze, regelmäßige Spielrunden sind besser als eine lange, anstrengende."
+     ],
+     "q": "Wie spielst du am liebsten mit deinem Tier?",
+     "c": "Spiel fünf Minuten mit einem Tier, das du kennst."
+    },
+    "es": {
+     "t": "El juego como necesidad diaria",
+     "g": "Descubre por qué el juego importa a muchas especies.",
+     "p": [
+      "El juego crea vínculo, gasta energía y mantiene la mente ocupada.",
+      "Los perros disfrutan del juego de traer y tirar, los gatos de cañas con plumas, los conejos de túneles.",
+      "Sesiones cortas y regulares son mejores que una larga y agotadora."
+     ],
+     "q": "¿Cómo te gusta jugar con tu mascota?",
+     "c": "Juega cinco minutos con un animal que conozcas."
+    },
+    "fr": {
+     "t": "Le jeu, un besoin quotidien",
+     "g": "Découvre pourquoi le jeu compte pour de nombreuses espèces.",
+     "p": [
+      "Le jeu crée du lien, dépense l'énergie et occupe l'esprit.",
+      "Les chiens aiment rapporter et tirer, les chats les cannes à plumes, les lapins les tunnels.",
+      "De courtes séances régulières valent mieux qu'une longue séance fatigante."
+     ],
+     "q": "Comment aimes-tu jouer avec ton animal ?",
+     "c": "Joue cinq minutes avec un animal que tu connais."
+    },
+    "it": {
+     "t": "Il gioco come bisogno quotidiano",
+     "g": "Scopri perché il gioco conta per tante specie.",
+     "p": [
+      "Il gioco crea legame, consuma energia e tiene occupata la mente.",
+      "I cani amano riportare e tirare, i gatti le canne con piume, i conigli i tunnel.",
+      "Sessioni brevi e regolari valgono più di una lunga e faticosa."
+     ],
+     "q": "Come ti piace giocare con il tuo animale?",
+     "c": "Gioca cinque minuti con un animale che conosci."
+    },
+    "pt": {
+     "t": "A brincadeira como necessidade diária",
+     "g": "Descobre porque brincar importa a muitas espécies.",
+     "p": [
+      "Brincar cria laços, gasta energia e mantém a mente ocupada.",
+      "Os cães gostam de ir buscar e puxar, os gatos de varinhas com penas, os coelhos de túneis.",
+      "Sessões curtas e regulares são melhores do que uma longa e cansativa."
+     ],
+     "q": "Como gostas de brincar com o teu animal?",
+     "c": "Brinca cinco minutos com um animal que conheças."
+    },
+    "pt_BR": {
+     "t": "A brincadeira como necessidade diária",
+     "g": "Descubra por que brincar importa para muitas espécies.",
+     "p": [
+      "Brincar cria vínculo, gasta energia e mantém a mente ocupada.",
+      "Cães gostam de buscar e puxar, gatos de varinhas com penas, coelhos de túneis.",
+      "Sessões curtas e regulares são melhores que uma longa e cansativa."
+     ],
+     "q": "Como você gosta de brincar com seu pet?",
+     "c": "Brinque por cinco minutos com um pet que você conheça."
+    }
+   }
+  }
+ ]
+}

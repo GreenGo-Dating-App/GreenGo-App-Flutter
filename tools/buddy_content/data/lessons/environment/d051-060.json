@@ -1,0 +1,835 @@
+{
+ "topic": "environment",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eating seasonally",
+     "g": "Learn why fruits and vegetables in season taste better and travel less.",
+     "p": [
+      "Seasonal produce is picked ripe, so it tends to taste better and cost less.",
+      "It often needs less storage, heating or long transport to reach you.",
+      "Eating with the seasons also brings natural variety through the year."
+     ],
+     "q": "What is your favourite fruit or vegetable of the current season?",
+     "c": "Buy or eat one fruit or vegetable that is in season where you live today."
+    },
+    "de": {
+     "t": "Saisonal essen",
+     "g": "Lernen, warum Obst und Gemüse der Saison besser schmecken und weniger reisen.",
+     "p": [
+      "Saisonware wird reif geerntet, schmeckt oft besser und ist meist günstiger.",
+      "Sie braucht oft weniger Lagerung, Heizung oder lange Transportwege.",
+      "Wer saisonal isst, bekommt zudem natürliche Abwechslung durchs Jahr."
+     ],
+     "q": "Was ist dein liebstes Obst oder Gemüse der aktuellen Jahreszeit?",
+     "c": "Kauf oder iss heute ein Obst oder Gemüse, das bei dir gerade Saison hat."
+    },
+    "es": {
+     "t": "Comer de temporada",
+     "g": "Aprender por qué la fruta y verdura de temporada sabe mejor y viaja menos.",
+     "p": [
+      "Los productos de temporada se recogen maduros, así que suelen saber mejor y costar menos.",
+      "A menudo necesitan menos almacenamiento, calefacción o transporte largo para llegar a ti.",
+      "Comer según las estaciones aporta además variedad natural a lo largo del año."
+     ],
+     "q": "¿Cuál es tu fruta o verdura favorita de la temporada actual?",
+     "c": "Compra o come hoy una fruta o verdura que esté de temporada donde vives."
+    },
+    "fr": {
+     "t": "Manger de saison",
+     "g": "Apprendre pourquoi fruits et légumes de saison ont meilleur goût et voyagent moins.",
+     "p": [
+      "Les produits de saison sont cueillis mûrs : ils ont souvent meilleur goût et coûtent moins cher.",
+      "Ils demandent souvent moins de stockage, de chauffage ou de long transport pour arriver jusqu'à toi.",
+      "Manger au rythme des saisons apporte aussi une variété naturelle tout au long de l'année."
+     ],
+     "q": "Quel est ton fruit ou légume préféré de la saison actuelle ?",
+     "c": "Achète ou mange aujourd'hui un fruit ou légume de saison chez toi."
+    },
+    "it": {
+     "t": "Mangiare di stagione",
+     "g": "Imparare perché frutta e verdura di stagione sono più buone e viaggiano meno.",
+     "p": [
+      "I prodotti di stagione sono raccolti maturi, quindi spesso sono più buoni e costano meno.",
+      "Spesso richiedono meno stoccaggio, riscaldamento o lunghi trasporti per arrivare a te.",
+      "Mangiare seguendo le stagioni porta anche una varietà naturale lungo l'anno."
+     ],
+     "q": "Qual è il tuo frutto o ortaggio preferito della stagione attuale?",
+     "c": "Compra o mangia oggi un frutto o ortaggio di stagione dove vivi."
+    },
+    "pt": {
+     "t": "Comer de época",
+     "g": "Aprender por que a fruta e os legumes da época sabem melhor e viajam menos.",
+     "p": [
+      "Os produtos da época são colhidos maduros, por isso costumam saber melhor e custar menos.",
+      "Muitas vezes precisam de menos armazenamento, aquecimento ou transportes longos para chegar a ti.",
+      "Comer ao ritmo das estações traz ainda variedade natural ao longo do ano."
+     ],
+     "q": "Qual é a tua fruta ou legume preferido da época atual?",
+     "c": "Compra ou come hoje uma fruta ou legume que esteja na época onde vives."
+    },
+    "pt_BR": {
+     "t": "Comer de estação",
+     "g": "Aprender por que frutas e legumes da estação têm mais sabor e viajam menos.",
+     "p": [
+      "Produtos da estação são colhidos maduros, então costumam ter mais sabor e custar menos.",
+      "Muitas vezes precisam de menos armazenamento, aquecimento ou transporte longo para chegar até você.",
+      "Comer ao ritmo das estações traz ainda variedade natural ao longo do ano."
+     ],
+     "q": "Qual é a sua fruta ou legume preferido da estação atual?",
+     "c": "Compre ou coma hoje uma fruta ou legume que esteja na estação onde você mora."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eating locally",
+     "g": "Discover markets, farm shops and local producers in your area.",
+     "p": [
+      "Local food usually travels a shorter way and is often fresher when it arrives.",
+      "Buying from markets and farm shops also supports people in your community.",
+      "You can ask sellers how and where things were grown; most love to chat."
+     ],
+     "q": "Is there a market or local shop near you that you enjoy?",
+     "c": "Visit a market or local shop this week, or find one to try, and pick one local product."
+    },
+    "de": {
+     "t": "Regional essen",
+     "g": "Märkte, Hofläden und lokale Erzeuger in deiner Umgebung entdecken.",
+     "p": [
+      "Regionale Lebensmittel haben meist einen kürzeren Weg und sind oft frischer.",
+      "Kaufen auf Märkten und in Hofläden unterstützt außerdem Menschen in deiner Gemeinschaft.",
+      "Du kannst Verkäufer fragen, wie und wo etwas angebaut wurde; die meisten erzählen gern."
+     ],
+     "q": "Gibt es bei dir einen Markt oder Laden, den du magst?",
+     "c": "Besuche diese Woche einen Markt oder Laden vor Ort, oder such einen, und wähle ein regionales Produkt."
+    },
+    "es": {
+     "t": "Comer local",
+     "g": "Descubrir mercados, tiendas de granja y productores locales de tu zona.",
+     "p": [
+      "La comida local suele hacer un trayecto más corto y a menudo llega más fresca.",
+      "Comprar en mercados y tiendas de granja también apoya a gente de tu comunidad.",
+      "Puedes preguntar a los vendedores cómo y dónde se cultivó cada cosa; casi todos disfrutan charlando."
+     ],
+     "q": "¿Hay cerca de ti un mercado o tienda local que te guste?",
+     "c": "Visita esta semana un mercado o tienda local, o busca uno para probar, y elige un producto local."
+    },
+    "fr": {
+     "t": "Manger local",
+     "g": "Découvrir marchés, fermes et producteurs locaux de ta région.",
+     "p": [
+      "Les aliments locaux voyagent généralement moins loin et arrivent souvent plus frais.",
+      "Acheter sur les marchés et dans les fermes soutient aussi des gens de ta communauté.",
+      "Tu peux demander aux vendeurs comment et où les produits ont poussé ; la plupart adorent en parler."
+     ],
+     "q": "Y a-t-il près de chez toi un marché ou un commerce local que tu aimes ?",
+     "c": "Visite cette semaine un marché ou un commerce local, ou trouves-en un à essayer, et choisis un produit local."
+    },
+    "it": {
+     "t": "Mangiare locale",
+     "g": "Scoprire mercati, aziende agricole e produttori locali della tua zona.",
+     "p": [
+      "Il cibo locale di solito fa meno strada e spesso arriva più fresco.",
+      "Comprare nei mercati e nelle aziende agricole sostiene anche le persone della tua comunità.",
+      "Puoi chiedere ai venditori come e dove è stato coltivato; la maggior parte ama chiacchierare."
+     ],
+     "q": "C'è vicino a te un mercato o un negozio locale che ti piace?",
+     "c": "Visita questa settimana un mercato o negozio locale, o trovane uno da provare, e scegli un prodotto locale."
+    },
+    "pt": {
+     "t": "Comer local",
+     "g": "Descobrir mercados, lojas de quinta e produtores locais da tua zona.",
+     "p": [
+      "A comida local costuma viajar menos e muitas vezes chega mais fresca.",
+      "Comprar em mercados e lojas de produtores apoia também pessoas da tua comunidade.",
+      "Podes perguntar aos vendedores como e onde foi cultivado; a maioria gosta de conversar."
+     ],
+     "q": "Há perto de ti um mercado ou loja local de que gostes?",
+     "c": "Visita esta semana um mercado ou loja local, ou procura um para experimentar, e escolhe um produto local."
+    },
+    "pt_BR": {
+     "t": "Comer local",
+     "g": "Descobrir feiras, lojas de produtor e produtores locais da sua região.",
+     "p": [
+      "A comida local costuma viajar menos e muitas vezes chega mais fresca.",
+      "Comprar em feiras e lojas de produtor apoia também pessoas da sua comunidade.",
+      "Você pode perguntar aos vendedores como e onde foi cultivado; a maioria gosta de conversar."
+     ],
+     "q": "Há perto de você uma feira ou loja local de que você goste?",
+     "c": "Visite esta semana uma feira ou loja local, ou procure uma para experimentar, e escolha um produto local."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "More plants on the plate",
+     "g": "Find simple ways to enjoy more vegetables, beans and grains.",
+     "p": [
+      "Beans, lentils, vegetables and whole grains are filling, tasty and affordable.",
+      "Growing plant foods generally uses less land and water than many animal foods.",
+      "You do not need to give up anything: simply add one or two plant-based meals a week."
+     ],
+     "q": "What is a vegetable-based meal you already love?",
+     "c": "Make one meal today built around vegetables, beans, lentils or grains."
+    },
+    "de": {
+     "t": "Mehr Pflanzliches auf dem Teller",
+     "g": "Einfache Wege finden, mehr Gemüse, Hülsenfrüchte und Getreide zu genießen.",
+     "p": [
+      "Bohnen, Linsen, Gemüse und Vollkorn sind sättigend, lecker und günstig.",
+      "Pflanzliche Lebensmittel brauchen in der Regel weniger Fläche und Wasser als viele tierische.",
+      "Du musst auf nichts verzichten: Füge einfach ein bis zwei pflanzliche Mahlzeiten pro Woche hinzu."
+     ],
+     "q": "Welches Gemüsegericht liebst du schon?",
+     "c": "Koch heute ein Essen rund um Gemüse, Bohnen, Linsen oder Getreide."
+    },
+    "es": {
+     "t": "Más plantas en el plato",
+     "g": "Encontrar formas sencillas de disfrutar más verduras, legumbres y cereales.",
+     "p": [
+      "Las alubias, lentejas, verduras y cereales integrales sacian, son sabrosos y asequibles.",
+      "Cultivar alimentos vegetales suele usar menos tierra y agua que muchos alimentos animales.",
+      "No hace falta renunciar a nada: basta con añadir una o dos comidas vegetales por semana."
+     ],
+     "q": "¿Cuál es un plato de verduras que ya te encanta?",
+     "c": "Prepara hoy una comida basada en verduras, legumbres o cereales."
+    },
+    "fr": {
+     "t": "Plus de végétal dans l'assiette",
+     "g": "Trouver des façons simples d'apprécier davantage légumes, légumineuses et céréales.",
+     "p": [
+      "Haricots, lentilles, légumes et céréales complètes sont rassasiants, savoureux et abordables.",
+      "Produire des aliments végétaux utilise généralement moins de terres et d'eau que de nombreux aliments animaux.",
+      "Pas besoin de renoncer à rien : ajoute simplement un ou deux repas végétaux par semaine."
+     ],
+     "q": "Quel plat à base de légumes aimes-tu déjà ?",
+     "c": "Prépare aujourd'hui un repas centré sur les légumes, les haricots, les lentilles ou les céréales."
+    },
+    "it": {
+     "t": "Più vegetali nel piatto",
+     "g": "Trovare modi semplici per gustare più verdure, legumi e cereali.",
+     "p": [
+      "Fagioli, lenticchie, verdure e cereali integrali saziano, sono gustosi e convenienti.",
+      "Coltivare alimenti vegetali in genere usa meno terra e acqua di molti alimenti animali.",
+      "Non serve rinunciare a nulla: basta aggiungere uno o due pasti vegetali a settimana."
+     ],
+     "q": "Qual è un piatto a base di verdure che ami già?",
+     "c": "Prepara oggi un pasto costruito su verdure, fagioli, lenticchie o cereali."
+    },
+    "pt": {
+     "t": "Mais vegetais no prato",
+     "g": "Encontrar formas simples de gostar de mais legumes, leguminosas e cereais.",
+     "p": [
+      "Feijão, lentilhas, legumes e cereais integrais saciam, são saborosos e acessíveis.",
+      "Cultivar alimentos vegetais costuma usar menos terra e água do que muitos alimentos animais.",
+      "Não precisas de abdicar de nada: basta juntar uma ou duas refeições vegetais por semana."
+     ],
+     "q": "Qual é um prato de legumes que já adoras?",
+     "c": "Faz hoje uma refeição baseada em legumes, feijão, lentilhas ou cereais."
+    },
+    "pt_BR": {
+     "t": "Mais vegetais no prato",
+     "g": "Encontrar formas simples de curtir mais legumes, leguminosas e cereais.",
+     "p": [
+      "Feijão, lentilha, legumes e grãos integrais saciam, são saborosos e acessíveis.",
+      "Cultivar alimentos vegetais costuma usar menos terra e água do que muitos alimentos animais.",
+      "Você não precisa abrir mão de nada: basta incluir uma ou duas refeições vegetais por semana."
+     ],
+     "q": "Qual é um prato de legumes que você já adora?",
+     "c": "Faça hoje uma refeição baseada em legumes, feijão, lentilha ou grãos."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Exploring plant-based recipes",
+     "g": "Try easy, delicious dishes from cuisines around the world.",
+     "p": [
+      "Many cuisines have wonderful plant-based classics: dals, falafel, minestrone, bean stews.",
+      "Spices, herbs and good technique make vegetables exciting rather than plain.",
+      "Cooking a new recipe is a fun way to learn about another culture."
+     ],
+     "q": "Which cuisine would you like to explore for new vegetable dishes?",
+     "c": "Pick one new plant-based recipe from any cuisine and cook it this week."
+    },
+    "de": {
+     "t": "Pflanzliche Rezepte entdecken",
+     "g": "Einfache, leckere Gerichte aus Küchen der ganzen Welt ausprobieren.",
+     "p": [
+      "Viele Küchen haben tolle pflanzliche Klassiker: Dal, Falafel, Minestrone, Bohneneintöpfe.",
+      "Gewürze, Kräuter und gute Technik machen Gemüse spannend statt langweilig.",
+      "Ein neues Rezept zu kochen ist ein schöner Weg, eine andere Kultur kennenzulernen."
+     ],
+     "q": "Welche Küche möchtest du für neue Gemüsegerichte entdecken?",
+     "c": "Such dir ein neues pflanzliches Rezept aus irgendeiner Küche aus und koch es diese Woche."
+    },
+    "es": {
+     "t": "Explorar recetas vegetales",
+     "g": "Probar platos fáciles y deliciosos de cocinas de todo el mundo.",
+     "p": [
+      "Muchas cocinas tienen clásicos vegetales estupendos: dal, falafel, minestrone, guisos de alubias.",
+      "Las especias, las hierbas y una buena técnica hacen las verduras emocionantes en vez de sosas.",
+      "Cocinar una receta nueva es una forma divertida de conocer otra cultura."
+     ],
+     "q": "¿Qué cocina te gustaría explorar para descubrir platos nuevos de verduras?",
+     "c": "Elige una receta vegetal nueva de cualquier cocina y prepárala esta semana."
+    },
+    "fr": {
+     "t": "Explorer les recettes végétales",
+     "g": "Essayer des plats faciles et délicieux des cuisines du monde entier.",
+     "p": [
+      "Beaucoup de cuisines ont de superbes classiques végétaux : dal, falafels, minestrone, ragoûts de haricots.",
+      "Épices, herbes et bonne technique rendent les légumes passionnants plutôt que fades.",
+      "Cuisiner une nouvelle recette est une manière amusante de découvrir une autre culture."
+     ],
+     "q": "Quelle cuisine aimerais-tu explorer pour de nouveaux plats de légumes ?",
+     "c": "Choisis une nouvelle recette végétale de n'importe quelle cuisine et prépare-la cette semaine."
+    },
+    "it": {
+     "t": "Esplorare ricette vegetali",
+     "g": "Provare piatti facili e deliziosi dalle cucine di tutto il mondo.",
+     "p": [
+      "Molte cucine hanno splendidi classici vegetali: dal, falafel, minestrone, stufati di fagioli.",
+      "Spezie, erbe e buona tecnica rendono le verdure entusiasmanti invece che banali.",
+      "Cucinare una ricetta nuova è un modo divertente per conoscere un'altra cultura."
+     ],
+     "q": "Quale cucina vorresti esplorare per scoprire nuovi piatti di verdure?",
+     "c": "Scegli una nuova ricetta vegetale di qualsiasi cucina e preparala questa settimana."
+    },
+    "pt": {
+     "t": "Explorar receitas vegetais",
+     "g": "Experimentar pratos fáceis e deliciosos de cozinhas do mundo inteiro.",
+     "p": [
+      "Muitas cozinhas têm clássicos vegetais maravilhosos: dal, falafel, minestrone, estufados de feijão.",
+      "Especiarias, ervas e boa técnica tornam os legumes emocionantes em vez de sensaboros.",
+      "Cozinhar uma receita nova é uma forma divertida de conhecer outra cultura."
+     ],
+     "q": "Que cozinha gostarias de explorar para descobrir novos pratos de legumes?",
+     "c": "Escolhe uma receita vegetal nova de qualquer cozinha e faz esta semana."
+    },
+    "pt_BR": {
+     "t": "Explorando receitas vegetais",
+     "g": "Experimentar pratos fáceis e deliciosos de cozinhas do mundo todo.",
+     "p": [
+      "Muitas cozinhas têm clássicos vegetais maravilhosos: dal, falafel, minestrone, feijoadas vegetais.",
+      "Temperos, ervas e boa técnica deixam os legumes empolgantes em vez de sem graça.",
+      "Cozinhar uma receita nova é um jeito divertido de conhecer outra cultura."
+     ],
+     "q": "Que cozinha você gostaria de explorar para descobrir novos pratos de legumes?",
+     "c": "Escolha uma receita vegetal nova de qualquer cozinha e prepare nesta semana."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing sustainable seafood",
+     "g": "Understand eco-labels on fish and learn to ask where seafood comes from.",
+     "p": [
+      "Healthy seas need fish to be caught or farmed in ways that let populations recover.",
+      "Eco-labels on packs show fish that meet independent standards for care of the sea.",
+      "Asking where and how your fish was caught is a perfectly normal question."
+     ],
+     "q": "Do you eat fish, and do you know where yours comes from?",
+     "c": "Look for an eco-label or ask where the fish was caught the next time you buy seafood."
+    },
+    "de": {
+     "t": "Nachhaltigen Fisch wählen",
+     "g": "Umweltsiegel auf Fisch verstehen und lernen, nach der Herkunft zu fragen.",
+     "p": [
+      "Gesunde Meere brauchen Fang oder Zucht so, dass sich Bestände erholen können.",
+      "Siegel auf Packungen zeigen Fisch, der unabhängige Standards für Meeresschutz erfüllt.",
+      "Zu fragen, wo und wie dein Fisch gefangen wurde, ist völlig normal."
+     ],
+     "q": "Isst du Fisch, und weißt du, woher deiner kommt?",
+     "c": "Achte beim nächsten Fischkauf auf ein Umweltsiegel oder frag nach dem Fangort."
+    },
+    "es": {
+     "t": "Elegir marisco y pescado sostenible",
+     "g": "Entender las ecoetiquetas del pescado y aprender a preguntar de dónde viene.",
+     "p": [
+      "Unos mares sanos necesitan que el pescado se capture o cultive de forma que las poblaciones se recuperen.",
+      "Las ecoetiquetas muestran pescado que cumple normas independientes de cuidado del mar.",
+      "Preguntar dónde y cómo se pescó tu pescado es una pregunta totalmente normal."
+     ],
+     "q": "¿Comes pescado y sabes de dónde viene el tuyo?",
+     "c": "Busca una ecoetiqueta o pregunta dónde se pescó la próxima vez que compres pescado."
+    },
+    "fr": {
+     "t": "Choisir des produits de la mer durables",
+     "g": "Comprendre les écolabels du poisson et apprendre à demander d'où il vient.",
+     "p": [
+      "Des mers saines demandent une pêche ou un élevage qui laisse les populations se reconstituer.",
+      "Les écolabels montrent des poissons qui respectent des normes indépendantes de protection de la mer.",
+      "Demander où et comment ton poisson a été pêché est une question tout à fait normale."
+     ],
+     "q": "Manges-tu du poisson, et sais-tu d'où vient le tien ?",
+     "c": "Cherche un écolabel ou demande où le poisson a été pêché la prochaine fois que tu en achètes."
+    },
+    "it": {
+     "t": "Scegliere pesce sostenibile",
+     "g": "Capire le ecoetichette sul pesce e imparare a chiedere da dove viene.",
+     "p": [
+      "Mari sani richiedono che il pesce sia pescato o allevato in modi che lascino riprendere le popolazioni.",
+      "Le ecoetichette indicano pesce che rispetta standard indipendenti di cura del mare.",
+      "Chiedere dove e come è stato pescato il tuo pesce è una domanda normalissima."
+     ],
+     "q": "Mangi pesce e sai da dove viene il tuo?",
+     "c": "Cerca un'ecoetichetta o chiedi dove è stato pescato la prossima volta che compri pesce."
+    },
+    "pt": {
+     "t": "Escolher peixe sustentável",
+     "g": "Perceber os rótulos ecológicos do peixe e aprender a perguntar de onde vem.",
+     "p": [
+      "Mares saudáveis precisam de peixe capturado ou cultivado de forma a deixar as populações recuperar.",
+      "Os rótulos ecológicos mostram peixe que cumpre normas independentes de cuidado com o mar.",
+      "Perguntar onde e como o teu peixe foi pescado é uma pergunta perfeitamente normal."
+     ],
+     "q": "Comes peixe e sabes de onde vem o teu?",
+     "c": "Procura um rótulo ecológico ou pergunta onde foi pescado da próxima vez que comprares peixe."
+    },
+    "pt_BR": {
+     "t": "Escolher peixe sustentável",
+     "g": "Entender os selos ecológicos do peixe e aprender a perguntar de onde ele vem.",
+     "p": [
+      "Mares saudáveis precisam de peixe capturado ou cultivado de forma a deixar as populações se recuperarem.",
+      "Os selos ecológicos mostram peixe que cumpre normas independentes de cuidado com o mar.",
+      "Perguntar onde e como o seu peixe foi pescado é uma pergunta perfeitamente normal."
+     ],
+     "q": "Você come peixe e sabe de onde vem o seu?",
+     "c": "Procure um selo ecológico ou pergunte onde foi pescado na próxima vez que comprar peixe."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Growing herbs on a windowsill",
+     "g": "Start a mini kitchen garden with basil, mint and parsley.",
+     "p": [
+      "Herbs are among the easiest plants to grow, even in a small pot on a sunny sill.",
+      "Fresh herbs cut waste, because you pick only what you need for each meal.",
+      "Water gently, give light, and trim often so the plants grow bushy."
+     ],
+     "q": "Which herb do you cook with most, or would love to have fresh?",
+     "c": "Plant or buy one herb in a pot today and place it somewhere bright in your home."
+    },
+    "de": {
+     "t": "Kräuter auf der Fensterbank ziehen",
+     "g": "Mit Basilikum, Minze und Petersilie einen Mini-Küchengarten anlegen.",
+     "p": [
+      "Kräuter gehören zu den leichtesten Pflanzen, selbst in einem kleinen Topf auf sonniger Fensterbank.",
+      "Frische Kräuter verringern Abfall, denn du erntest nur, was du für die Mahlzeit brauchst.",
+      "Gieß sanft, gib Licht und schneide oft, damit die Pflanzen buschig wachsen."
+     ],
+     "q": "Mit welchem Kraut kochst du am meisten, oder hättest du gern frisch?",
+     "c": "Pflanze oder kauf heute ein Kraut im Topf und stell es an einen hellen Platz."
+    },
+    "es": {
+     "t": "Cultivar hierbas en el alféizar",
+     "g": "Empezar un mini huerto de cocina con albahaca, menta y perejil.",
+     "p": [
+      "Las hierbas son de las plantas más fáciles de cultivar, incluso en una maceta pequeña en un alféizar soleado.",
+      "Las hierbas frescas reducen el desperdicio, porque coges solo lo que necesitas en cada comida.",
+      "Riega con suavidad, dales luz y recórtalas a menudo para que crezcan frondosas."
+     ],
+     "q": "¿Qué hierba usas más al cocinar o te encantaría tener fresca?",
+     "c": "Planta o compra hoy una hierba en maceta y ponla en un lugar luminoso de tu casa."
+    },
+    "fr": {
+     "t": "Cultiver des aromates sur le rebord de fenêtre",
+     "g": "Lancer un mini potager de cuisine avec basilic, menthe et persil.",
+     "p": [
+      "Les aromates sont parmi les plantes les plus faciles, même dans un petit pot sur un rebord ensoleillé.",
+      "Les herbes fraîches réduisent le gaspillage, car tu cueilles seulement ce qu'il faut à chaque repas.",
+      "Arrose doucement, donne de la lumière et taille souvent pour que les plantes deviennent touffues."
+     ],
+     "q": "Quelle herbe utilises-tu le plus en cuisine, ou aimerais-tu avoir fraîche ?",
+     "c": "Plante ou achète aujourd'hui une herbe en pot et place-la dans un endroit lumineux de chez toi."
+    },
+    "it": {
+     "t": "Coltivare erbe aromatiche sul davanzale",
+     "g": "Creare un mini orto in cucina con basilico, menta e prezzemolo.",
+     "p": [
+      "Le erbe aromatiche sono tra le piante più facili da coltivare, anche in un vasetto su un davanzale soleggiato.",
+      "Le erbe fresche riducono gli sprechi, perché cogli solo ciò che serve per ogni pasto.",
+      "Annaffia con delicatezza, dai luce e pota spesso perché le piante crescano folte."
+     ],
+     "q": "Quale erba usi di più in cucina o vorresti avere fresca?",
+     "c": "Pianta o compra oggi un'erba in vaso e mettila in un punto luminoso di casa."
+    },
+    "pt": {
+     "t": "Cultivar ervas aromáticas no parapeito",
+     "g": "Começar uma mini horta de cozinha com manjericão, hortelã e salsa.",
+     "p": [
+      "As ervas aromáticas estão entre as plantas mais fáceis, mesmo num vaso pequeno num parapeito ao sol.",
+      "As ervas frescas reduzem o desperdício, porque colhes só o que precisas para cada refeição.",
+      "Rega com suavidade, dá luz e apara com frequência para as plantas ficarem frondosas."
+     ],
+     "q": "Que erva usas mais a cozinhar ou gostavas de ter fresca?",
+     "c": "Planta ou compra hoje uma erva num vaso e coloca-a num sítio luminoso da tua casa."
+    },
+    "pt_BR": {
+     "t": "Cultivar ervas na janela",
+     "g": "Começar uma mini horta de cozinha com manjericão, hortelã e salsinha.",
+     "p": [
+      "As ervas estão entre as plantas mais fáceis, mesmo num vaso pequeno no peitoril ensolarado.",
+      "Ervas frescas reduzem o desperdício, porque você colhe só o que precisa para cada refeição.",
+      "Regue com suavidade, dê luz e apare com frequência para as plantas ficarem frondosas."
+     ],
+     "q": "Qual erva você mais usa para cozinhar ou adoraria ter fresca?",
+     "c": "Plante ou compre hoje uma erva em vaso e coloque num lugar bem iluminado da sua casa."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Growing vegetables in small spaces",
+     "g": "Use pots, balconies and vertical gardens for fresh food.",
+     "p": [
+      "Lettuce, radishes, tomatoes and beans all grow well in containers.",
+      "Walls, railings and hanging planters turn vertical space into growing space.",
+      "Pick easy crops, give them light and water, and enjoy the first harvest."
+     ],
+     "q": "Do you have a balcony, sill or yard where a few pots could fit?",
+     "c": "Choose one easy vegetable and plan where a pot of it could sit in your home."
+    },
+    "de": {
+     "t": "Gemüse auf kleinem Raum anbauen",
+     "g": "Töpfe, Balkone und vertikale Gärten für frisches Essen nutzen.",
+     "p": [
+      "Salat, Radieschen, Tomaten und Bohnen gedeihen auch gut in Gefäßen.",
+      "Wände, Geländer und Hängetöpfe machen aus senkrechtem Raum Anbaufläche.",
+      "Wähle leichte Sorten, gib Licht und Wasser und freu dich auf die erste Ernte."
+     ],
+     "q": "Hast du Balkon, Fensterbank oder Hof, wo ein paar Töpfe Platz hätten?",
+     "c": "Such dir ein einfaches Gemüse aus und überlege, wo ein Topf davon bei dir stehen könnte."
+    },
+    "es": {
+     "t": "Cultivar verduras en espacios pequeños",
+     "g": "Usar macetas, balcones y huertos verticales para tener comida fresca.",
+     "p": [
+      "Lechuga, rábanos, tomates y judías crecen bien en macetas.",
+      "Paredes, barandillas y jardineras colgantes convierten el espacio vertical en espacio de cultivo.",
+      "Elige cultivos fáciles, dales luz y agua y disfruta de la primera cosecha."
+     ],
+     "q": "¿Tienes balcón, alféizar o patio donde quepan unas macetas?",
+     "c": "Elige una verdura fácil y piensa dónde podría ir una maceta en tu casa."
+    },
+    "fr": {
+     "t": "Cultiver des légumes en petit espace",
+     "g": "Utiliser pots, balcons et jardins verticaux pour avoir des légumes frais.",
+     "p": [
+      "Laitue, radis, tomates et haricots poussent bien en bac.",
+      "Murs, rambardes et jardinières suspendues transforment la hauteur en espace de culture.",
+      "Choisis des cultures faciles, donne-leur lumière et eau, et savoure la première récolte."
+     ],
+     "q": "As-tu un balcon, un rebord ou une cour où quelques pots pourraient tenir ?",
+     "c": "Choisis un légume facile et réfléchis à l'endroit où un pot pourrait trouver sa place chez toi."
+    },
+    "it": {
+     "t": "Coltivare ortaggi in piccoli spazi",
+     "g": "Usare vasi, balconi e orti verticali per avere cibo fresco.",
+     "p": [
+      "Lattuga, ravanelli, pomodori e fagiolini crescono bene nei contenitori.",
+      "Pareti, ringhiere e fioriere sospese trasformano lo spazio verticale in spazio di coltivazione.",
+      "Scegli colture facili, dai luce e acqua e goditi il primo raccolto."
+     ],
+     "q": "Hai un balcone, un davanzale o un cortile dove stiano alcuni vasi?",
+     "c": "Scegli un ortaggio facile e pensa dove potrebbe stare un vaso in casa tua."
+    },
+    "pt": {
+     "t": "Cultivar legumes em espaços pequenos",
+     "g": "Usar vasos, varandas e hortas verticais para ter comida fresca.",
+     "p": [
+      "Alface, rabanetes, tomates e feijão-verde crescem bem em vasos.",
+      "Paredes, grades e floreiras suspensas transformam o espaço vertical em espaço de cultivo.",
+      "Escolhe culturas fáceis, dá-lhes luz e água e desfruta da primeira colheita."
+     ],
+     "q": "Tens varanda, parapeito ou pátio onde caibam alguns vasos?",
+     "c": "Escolhe um legume fácil e pensa onde poderia ficar um vaso em tua casa."
+    },
+    "pt_BR": {
+     "t": "Cultivar legumes em espaços pequenos",
+     "g": "Usar vasos, varandas e hortas verticais para ter comida fresca.",
+     "p": [
+      "Alface, rabanete, tomate e vagem crescem bem em vasos.",
+      "Paredes, grades e floreiras suspensas transformam o espaço vertical em espaço de cultivo.",
+      "Escolha culturas fáceis, dê luz e água e curta a primeira colheita."
+     ],
+     "q": "Você tem varanda, janela ou quintal onde caibam alguns vasos?",
+     "c": "Escolha um legume fácil e pense onde um vaso dele poderia ficar na sua casa."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tap water versus bottled water",
+     "g": "See why refilling from the tap is often the simpler choice.",
+     "p": [
+      "In many places tap water is safe, tested and costs a tiny fraction of bottled water.",
+      "Bottles take materials and energy to make and carry, then become waste.",
+      "A filter jug or reusable bottle can improve taste if you prefer."
+     ],
+     "q": "Is your tap water good to drink where you live? How do you know?",
+     "c": "Drink tap water from a reusable bottle or glass today, instead of buying a bottle."
+    },
+    "de": {
+     "t": "Leitungswasser statt Flaschenwasser",
+     "g": "Sehen, warum Nachfüllen aus dem Hahn oft die einfachere Wahl ist.",
+     "p": [
+      "An vielen Orten ist Leitungswasser sicher, kontrolliert und kostet einen Bruchteil von Flaschenwasser.",
+      "Flaschen brauchen Material und Energie für Herstellung und Transport und werden dann Abfall.",
+      "Ein Filterkrug oder eine Mehrwegflasche kann den Geschmack verbessern, wenn du magst."
+     ],
+     "q": "Ist dein Leitungswasser zum Trinken geeignet? Woher weißt du das?",
+     "c": "Trink heute Leitungswasser aus Mehrwegflasche oder Glas, statt eine Flasche zu kaufen."
+    },
+    "es": {
+     "t": "Agua del grifo frente a agua embotellada",
+     "g": "Ver por qué rellenar desde el grifo suele ser la opción más sencilla.",
+     "p": [
+      "En muchos lugares el agua del grifo es segura, controlada y cuesta una fracción de la embotellada.",
+      "Las botellas requieren materiales y energía para fabricarse y transportarse, y luego son residuo.",
+      "Una jarra con filtro o una botella reutilizable puede mejorar el sabor si lo prefieres."
+     ],
+     "q": "¿El agua del grifo donde vives es buena para beber? ¿Cómo lo sabes?",
+     "c": "Bebe hoy agua del grifo en una botella reutilizable o un vaso, en lugar de comprar una botella."
+    },
+    "fr": {
+     "t": "Eau du robinet ou eau en bouteille",
+     "g": "Voir pourquoi se servir au robinet est souvent le choix le plus simple.",
+     "p": [
+      "Dans de nombreux endroits, l'eau du robinet est sûre, contrôlée et coûte une fraction de l'eau en bouteille.",
+      "Les bouteilles demandent matériaux et énergie pour être fabriquées et transportées, puis deviennent des déchets.",
+      "Une carafe filtrante ou une gourde réutilisable peut améliorer le goût si tu préfères."
+     ],
+     "q": "L'eau du robinet est-elle bonne à boire là où tu vis ? Comment le sais-tu ?",
+     "c": "Bois aujourd'hui de l'eau du robinet dans une gourde ou un verre, au lieu d'acheter une bouteille."
+    },
+    "it": {
+     "t": "Acqua del rubinetto o in bottiglia",
+     "g": "Vedere perché riempire dal rubinetto è spesso la scelta più semplice.",
+     "p": [
+      "In molti luoghi l'acqua del rubinetto è sicura, controllata e costa una frazione di quella in bottiglia.",
+      "Le bottiglie richiedono materiali ed energia per essere prodotte e trasportate, poi diventano rifiuto.",
+      "Una caraffa filtrante o una borraccia riutilizzabile può migliorare il sapore se preferisci."
+     ],
+     "q": "L'acqua del rubinetto dove vivi è buona da bere? Come lo sai?",
+     "c": "Bevi oggi acqua del rubinetto da una borraccia o un bicchiere, invece di comprare una bottiglia."
+    },
+    "pt": {
+     "t": "Água da torneira versus engarrafada",
+     "g": "Ver por que encher na torneira é muitas vezes a escolha mais simples.",
+     "p": [
+      "Em muitos sítios a água da torneira é segura, controlada e custa uma fração da engarrafada.",
+      "As garrafas precisam de materiais e energia para fabrico e transporte e depois tornam-se resíduo.",
+      "Uma jarra com filtro ou uma garrafa reutilizável pode melhorar o sabor, se preferires."
+     ],
+     "q": "A água da torneira onde vives é boa para beber? Como sabes?",
+     "c": "Bebe hoje água da torneira numa garrafa reutilizável ou copo, em vez de comprares uma garrafa."
+    },
+    "pt_BR": {
+     "t": "Água da torneira versus engarrafada",
+     "g": "Ver por que encher na torneira é muitas vezes a escolha mais simples.",
+     "p": [
+      "Em muitos lugares a água da torneira é segura, controlada e custa uma fração da engarrafada.",
+      "Garrafas precisam de materiais e energia para fabricar e transportar e depois viram resíduo.",
+      "Uma jarra com filtro ou uma garrafa reutilizável pode melhorar o sabor, se você preferir."
+     ],
+     "q": "A água da torneira onde você mora é boa para beber? Como você sabe?",
+     "c": "Beba hoje água da torneira numa garrafa reutilizável ou copo, em vez de comprar uma garrafa."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Packaging-free shopping",
+     "g": "Discover refill shops, bulk bins and bringing your own containers.",
+     "p": [
+      "Refill shops and bulk bins let you buy just the amount you need, with no extra packaging.",
+      "Bring jars, tubs or cloth bags, and have them weighed first if needed.",
+      "Loose fruit and veg and market stalls are easy ways to skip plastic wrap."
+     ],
+     "q": "Is there a shop near you that sells loose or refillable goods?",
+     "c": "Buy one thing today without packaging, like loose produce, bread or bulk grains."
+    },
+    "de": {
+     "t": "Einkaufen ohne Verpackung",
+     "g": "Nachfüllläden, Spendersysteme und eigene Behälter entdecken.",
+     "p": [
+      "In Nachfüllläden und an Spendern kaufst du genau die Menge, die du brauchst, ohne Zusatzverpackung.",
+      "Bring Gläser, Dosen oder Stoffbeutel mit und lass sie bei Bedarf vorher wiegen.",
+      "Loses Obst und Gemüse sowie Marktstände sind einfache Wege, Plastikfolie zu umgehen."
+     ],
+     "q": "Gibt es bei dir einen Laden mit loser oder nachfüllbarer Ware?",
+     "c": "Kauf heute eine Sache ohne Verpackung, etwa loses Obst, Brot oder Getreide aus dem Spender."
+    },
+    "es": {
+     "t": "Comprar sin envases",
+     "g": "Descubrir las tiendas de recarga, el granel y cómo llevar tus propios recipientes.",
+     "p": [
+      "Las tiendas de recarga y el granel permiten comprar justo lo que necesitas, sin envoltorio extra.",
+      "Lleva frascos, tarros o bolsas de tela, y pésalos antes si hace falta.",
+      "La fruta y verdura suelta y los puestos de mercado son formas fáciles de evitar el film de plástico."
+     ],
+     "q": "¿Hay cerca de ti una tienda que venda a granel o con recarga?",
+     "c": "Compra hoy algo sin envase, como fruta suelta, pan o cereales a granel."
+    },
+    "fr": {
+     "t": "Faire ses courses sans emballage",
+     "g": "Découvrir les magasins de recharge, le vrac et l'apport de ses propres contenants.",
+     "p": [
+      "Les magasins de recharge et le vrac permettent d'acheter juste la quantité voulue, sans emballage en plus.",
+      "Apporte bocaux, boîtes ou sacs en tissu, et fais-les peser d'abord si besoin.",
+      "Fruits et légumes en vrac et étals de marché sont des moyens simples d'éviter le film plastique."
+     ],
+     "q": "Y a-t-il près de chez toi un magasin qui vend en vrac ou avec recharge ?",
+     "c": "Achète aujourd'hui un produit sans emballage, comme des légumes en vrac, du pain ou des céréales en vrac."
+    },
+    "it": {
+     "t": "Fare la spesa senza imballaggi",
+     "g": "Scoprire negozi alla spina, prodotti sfusi e come portare i propri contenitori.",
+     "p": [
+      "I negozi alla spina e lo sfuso permettono di comprare solo la quantità che serve, senza imballaggio extra.",
+      "Porta vasetti, contenitori o borse di stoffa e falli pesare prima, se serve.",
+      "Frutta e verdura sfuse e banchi del mercato sono modi facili per evitare la pellicola di plastica."
+     ],
+     "q": "C'è vicino a te un negozio che vende prodotti sfusi o alla spina?",
+     "c": "Compra oggi una cosa senza imballaggio, come frutta sfusa, pane o cereali sfusi."
+    },
+    "pt": {
+     "t": "Compras sem embalagem",
+     "g": "Descobrir lojas de granel, recarga e levar os teus próprios recipientes.",
+     "p": [
+      "As lojas de recarga e a granel permitem comprar só a quantidade de que precisas, sem embalagem extra.",
+      "Leva frascos, caixas ou sacos de pano, e pesa-os primeiro se for preciso.",
+      "Fruta e legumes soltos e bancas de mercado são formas fáceis de evitar a película de plástico."
+     ],
+     "q": "Há perto de ti uma loja que venda a granel ou com recarga?",
+     "c": "Compra hoje uma coisa sem embalagem, como fruta solta, pão ou cereais a granel."
+    },
+    "pt_BR": {
+     "t": "Compras sem embalagem",
+     "g": "Descobrir lojas de granel, recarga e levar seus próprios recipientes.",
+     "p": [
+      "Lojas de recarga e a granel permitem comprar só a quantidade de que precisa, sem embalagem extra.",
+      "Leve potes, caixas ou sacolas de pano, e pese antes se for preciso.",
+      "Frutas e legumes soltos e bancas de feira são formas fáceis de evitar o filme de plástico."
+     ],
+     "q": "Há perto de você uma loja que venda a granel ou com refil?",
+     "c": "Compre hoje uma coisa sem embalagem, como fruta solta, pão ou grãos a granel."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: greener days at home",
+     "g": "A light recap of water, energy, transport and food habits.",
+     "p": [
+      "At home, small water habits, like fixing drips and shorter showers, add up.",
+      "Efficient lights, no standby and sensible heating and cooling save energy.",
+      "Walking, cycling, sharing rides and eating seasonally are easy, enjoyable swaps."
+     ],
+     "q": "Which habit from these 30 days feels most natural now, and which comes next?",
+     "c": "Pick your favourite habit from the past month and share it with someone today."
+    },
+    "de": {
+     "t": "Rückblick: grünere Tage zu Hause",
+     "g": "Ein lockerer Rückblick auf Wasser-, Energie-, Verkehrs- und Essgewohnheiten.",
+     "p": [
+      "Zu Hause summieren sich kleine Wassergewohnheiten, etwa Tropfen reparieren und kürzer duschen.",
+      "Effizientes Licht, kein Standby und kluges Heizen und Kühlen sparen Energie.",
+      "Zu Fuß gehen, Radfahren, Fahrten teilen und saisonal essen sind einfache, schöne Wechsel."
+     ],
+     "q": "Welche Gewohnheit der letzten 30 Tage fühlt sich jetzt am natürlichsten an, welche kommt als Nächstes?",
+     "c": "Wähle deine Lieblingsgewohnheit des letzten Monats und erzähl heute jemandem davon."
+    },
+    "es": {
+     "t": "Repaso: días más verdes en casa",
+     "g": "Un repaso ligero de hábitos de agua, energía, transporte y comida.",
+     "p": [
+      "En casa, los pequeños hábitos con el agua, como arreglar goteos y duchas más cortas, suman.",
+      "Luces eficientes, nada de consumo en espera y calefacción y refrigeración sensatas ahorran energía.",
+      "Caminar, ir en bici, compartir coche y comer de temporada son cambios fáciles y agradables."
+     ],
+     "q": "¿Qué hábito de estos 30 días te resulta ya más natural y cuál viene después?",
+     "c": "Elige tu hábito favorito del último mes y compártelo hoy con alguien."
+    },
+    "fr": {
+     "t": "Révision : des journées plus vertes à la maison",
+     "g": "Un petit récapitulatif des habitudes d'eau, d'énergie, de transport et d'alimentation.",
+     "p": [
+      "À la maison, les petits gestes sur l'eau, comme réparer les fuites et raccourcir les douches, s'additionnent.",
+      "Éclairage efficace, pas de veille et chauffage et climatisation raisonnables économisent de l'énergie.",
+      "Marcher, pédaler, partager ses trajets et manger de saison sont des changements faciles et agréables."
+     ],
+     "q": "Quelle habitude de ces 30 jours te semble la plus naturelle maintenant, et laquelle sera la suivante ?",
+     "c": "Choisis ton habitude préférée du mois écoulé et partage-la avec quelqu'un aujourd'hui."
+    },
+    "it": {
+     "t": "Ripasso: giornate più verdi in casa",
+     "g": "Un ripasso leggero di abitudini su acqua, energia, trasporti e cibo.",
+     "p": [
+      "In casa le piccole abitudini sull'acqua, come riparare gocciolii e docce più brevi, si sommano.",
+      "Luci efficienti, niente standby e riscaldamento e raffrescamento sensati fanno risparmiare energia.",
+      "Camminare, pedalare, condividere i passaggi e mangiare di stagione sono cambi facili e piacevoli."
+     ],
+     "q": "Quale abitudine di questi 30 giorni ti sembra ora più naturale e quale sarà la prossima?",
+     "c": "Scegli la tua abitudine preferita dell'ultimo mese e condividila oggi con qualcuno."
+    },
+    "pt": {
+     "t": "Revisão: dias mais verdes em casa",
+     "g": "Uma revisão leve de hábitos de água, energia, transporte e alimentação.",
+     "p": [
+      "Em casa, os pequenos hábitos com a água, como reparar pingas e duches mais curtos, somam.",
+      "Luzes eficientes, nada de consumo em espera e aquecimento e arrefecimento sensatos poupam energia.",
+      "Andar a pé, de bicicleta, partilhar boleias e comer de época são trocas fáceis e agradáveis."
+     ],
+     "q": "Que hábito destes 30 dias te parece agora mais natural e qual vem a seguir?",
+     "c": "Escolhe o teu hábito preferido do último mês e partilha-o hoje com alguém."
+    },
+    "pt_BR": {
+     "t": "Revisão: dias mais verdes em casa",
+     "g": "Uma revisão leve de hábitos de água, energia, transporte e alimentação.",
+     "p": [
+      "Em casa, os pequenos hábitos com a água, como consertar pingos e banhos mais curtos, somam.",
+      "Luzes eficientes, nada de consumo em espera e aquecimento e refrigeração sensatos economizam energia.",
+      "Caminhar, pedalar, dividir caronas e comer de estação são trocas fáceis e agradáveis."
+     ],
+     "q": "Qual hábito destes 30 dias parece agora mais natural para você e qual vem a seguir?",
+     "c": "Escolha o seu hábito favorito do último mês e compartilhe hoje com alguém."
+    }
+   }
+  }
+ ]
+}

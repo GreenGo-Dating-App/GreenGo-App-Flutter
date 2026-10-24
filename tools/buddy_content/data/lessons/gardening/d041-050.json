@@ -1,0 +1,835 @@
+{
+ "topic": "gardening",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pothos and philodendron care",
+     "g": "Care for trailing favourites: light, watering and keeping vines full.",
+     "p": [
+      "Both like bright indirect light, though pothos tolerates dimmer rooms and philodendron likes a little more.",
+      "Water when the top few centimetres of soil are dry, and pinch or trim vine tips to make them bushier.",
+      "Both are toxic to pets if chewed, so hang them high or choose another plant if you have a nibbler."
+     ],
+     "q": "Would your vine look best hanging, climbing or trailing across a shelf?",
+     "c": "Today, trim one long vine just above a leaf and place the cutting in water."
+    },
+    "de": {
+     "t": "Efeutute und Philodendron pflegen",
+     "g": "Pflege die hängenden Lieblinge: Licht, Gießen und volle Ranken.",
+     "p": [
+      "Beide mögen helles indirektes Licht, die Efeutute verträgt dunklere Räume, Philodendron mag etwas mehr.",
+      "Gieße, wenn die obersten Zentimeter trocken sind, und kürze oder pinziere Triebspitzen für buschigeren Wuchs.",
+      "Beide sind für Haustiere giftig, wenn sie angeknabbert werden: häng sie hoch oder wähle bei Knabberern etwas anderes."
+     ],
+     "q": "Wo sähe deine Ranke am besten aus: hängend, kletternd oder auf einem Regal?",
+     "c": "Kürze heute eine lange Ranke knapp über einem Blatt und stelle den Steckling ins Wasser."
+    },
+    "es": {
+     "t": "Cuidado de pothos y filodendro",
+     "g": "Cuida a estas favoritas colgantes: luz, riego y cómo mantener llenas las guías.",
+     "p": [
+      "Ambos prefieren luz indirecta brillante, aunque el pothos tolera salas más oscuras y el filodendro quiere algo más.",
+      "Riega cuando los primeros centímetros de tierra estén secos y despunta las guías para que se ramifiquen más.",
+      "Ambos son tóxicos para mascotas si los mordisquean: cuélgalos alto o elige otra planta si tienes un mordedor."
+     ],
+     "q": "¿Cómo lucirían mejor tus guías: colgando, trepando o cayendo por una repisa?",
+     "c": "Hoy corta una guía larga justo sobre una hoja y pon el esqueje en agua."
+    },
+    "fr": {
+     "t": "Soigner pothos et philodendron",
+     "g": "Prends soin de ces favoris retombants : lumière, arrosage et tiges bien fournies.",
+     "p": [
+      "Les deux aiment la lumière vive indirecte, mais le pothos tolère les pièces plus sombres, le philodendron un peu plus de clarté.",
+      "Arrose quand les premiers centimètres de terre sont secs et pince ou taille les bouts des tiges pour étoffer la plante.",
+      "Les deux sont toxiques pour les animaux s'ils les mâchent : suspends-les haut ou choisis autre chose si ton animal grignote."
+     ],
+     "q": "Tes lianes seraient-elles plus belles retombantes, grimpantes ou sur une étagère ?",
+     "c": "Aujourd'hui, coupe une longue tige juste au-dessus d'une feuille et mets la bouture dans l'eau."
+    },
+    "it": {
+     "t": "Cura di pothos e filodendro",
+     "g": "Prenditi cura di questi cadenti preferiti: luce, acqua e tralci folti.",
+     "p": [
+      "Entrambi amano la luce indiretta intensa, ma il pothos tollera stanze più scure e il filodendro vuole un po' più di luce.",
+      "Annaffia quando i primi centimetri di terra sono asciutti e cima i tralci per renderli più folti.",
+      "Entrambi sono tossici per gli animali se masticati: appendili in alto o scegli altro se hai un mordicchiatore."
+     ],
+     "q": "Come starebbero meglio i tuoi tralci: pendenti, rampicanti o lungo uno scaffale?",
+     "c": "Oggi taglia un tralcio lungo appena sopra una foglia e metti la talea in acqua."
+    },
+    "pt": {
+     "t": "Cuidar de jiboia e filodendro",
+     "g": "Cuida destas favoritas pendentes: luz, rega e ramos bem cheios.",
+     "p": [
+      "Ambos gostam de luz indireta forte, embora a jiboia tolere divisões mais escuras e o filodendro queira um pouco mais.",
+      "Rega quando os primeiros centímetros de terra estiverem secos e corta as pontas dos ramos para ficarem mais densos.",
+      "Ambos são tóxicos para animais se mordiscados: pendura-os alto ou escolhe outra planta se tiveres um mordiscador."
+     ],
+     "q": "Como ficariam melhor os teus ramos: pendentes, a trepar ou ao longo de uma prateleira?",
+     "c": "Hoje corta um ramo longo logo acima de uma folha e põe a estaca em água."
+    },
+    "pt_BR": {
+     "t": "Cuidando de jiboia e filodendro",
+     "g": "Cuide dessas favoritas pendentes: luz, rega e ramos bem cheios.",
+     "p": [
+      "Ambos gostam de luz indireta forte, embora a jiboia tolere cômodos mais escuros e o filodendro queira um pouco mais.",
+      "Regue quando os primeiros centímetros de terra estiverem secos e corte as pontas dos ramos para ficarem mais cheios.",
+      "Ambos são tóxicos para animais se mordiscados: pendure alto ou escolha outra planta se tiver um mordedor."
+     ],
+     "q": "Como ficariam melhor seus ramos: pendentes, trepando ou ao longo de uma prateleira?",
+     "c": "Hoje corte um ramo longo logo acima de uma folha e ponha a estaca na água."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Snake plant and ZZ plant care",
+     "g": "Meet very tough plants that prefer drying out and tolerate low light.",
+     "p": [
+      "Both store water, so water only when the soil is fully dry, about every two to four weeks.",
+      "They tolerate low light but grow faster in bright indirect light, and both dislike soggy soil.",
+      "Both are mildly toxic if chewed, so keep them away from curious pets and children."
+     ],
+     "q": "Are you more of a forgetful plant parent who could use a snake plant?",
+     "c": "Today, check how dry one of these plants is and skip watering if the soil is still damp."
+    },
+    "de": {
+     "t": "Bogenhanf und Zamioculcas pflegen",
+     "g": "Lerne sehr robuste Pflanzen kennen, die Trockenheit mögen und wenig Licht vertragen.",
+     "p": [
+      "Beide speichern Wasser, gieße also nur bei ganz trockener Erde, etwa alle zwei bis vier Wochen.",
+      "Sie vertragen wenig Licht, wachsen aber bei hellem indirektem Licht schneller und mögen keine nasse Erde.",
+      "Beide sind bei Verzehr leicht giftig, halte sie von neugierigen Haustieren und Kindern fern."
+     ],
+     "q": "Bist du eher ein vergesslicher Pflanzenfreund, dem ein Bogenhanf gut passen würde?",
+     "c": "Prüfe heute, wie trocken eine dieser Pflanzen ist, und gieße nicht, wenn die Erde noch feucht ist."
+    },
+    "es": {
+     "t": "Cuidado de sansevieria y zamioculca",
+     "g": "Conoce plantas muy resistentes que prefieren secarse y toleran poca luz.",
+     "p": [
+      "Ambas almacenan agua, así que riega solo con la tierra totalmente seca, cada dos a cuatro semanas.",
+      "Toleran poca luz pero crecen más rápido con luz indirecta brillante, y ninguna soporta la tierra encharcada.",
+      "Ambas son algo tóxicas si se mastican, así que mantenlas lejos de mascotas curiosas y niños."
+     ],
+     "q": "¿Eres de los que olvidan regar y te vendría bien una sansevieria?",
+     "c": "Hoy mira lo seca que está una de estas plantas y no riegues si la tierra sigue húmeda."
+    },
+    "fr": {
+     "t": "Soigner sansevieria et zamioculcas",
+     "g": "Découvre des plantes très robustes qui préfèrent sécher et tolèrent la faible lumière.",
+     "p": [
+      "Les deux stockent l'eau : arrose seulement quand la terre est totalement sèche, toutes les deux à quatre semaines.",
+      "Elles tolèrent peu de lumière mais poussent plus vite en lumière vive indirecte, et détestent la terre détrempée.",
+      "Les deux sont légèrement toxiques si on les mâche : garde-les loin des animaux curieux et des enfants."
+     ],
+     "q": "Es-tu du genre à oublier d'arroser, et un sansevieria te conviendrait-il ?",
+     "c": "Aujourd'hui, vérifie la sécheresse d'une de ces plantes et n'arrose pas si la terre est encore humide."
+    },
+    "it": {
+     "t": "Cura di sansevieria e zamioculcas",
+     "g": "Conosci piante molto resistenti che preferiscono asciugarsi e tollerano poca luce.",
+     "p": [
+      "Entrambe immagazzinano acqua: annaffia solo con terriccio completamente asciutto, ogni due-quattro settimane.",
+      "Tollerano poca luce ma crescono più in fretta con luce indiretta intensa, e non amano il terriccio fradicio.",
+      "Entrambe sono leggermente tossiche se masticate: tienile lontane da animali curiosi e bambini."
+     ],
+     "q": "Sei un tipo smemorato con le piante a cui servirebbe una sansevieria?",
+     "c": "Oggi controlla quanto è asciutta una di queste piante e non annaffiare se il terriccio è ancora umido."
+    },
+    "pt": {
+     "t": "Cuidar da espada-de-são-jorge e zamioculca",
+     "g": "Conhece plantas muito resistentes que preferem secar e toleram pouca luz.",
+     "p": [
+      "Ambas guardam água, por isso rega só com a terra totalmente seca, a cada duas a quatro semanas.",
+      "Toleram pouca luz mas crescem mais depressa com luz indireta forte, e não gostam de terra encharcada.",
+      "Ambas são ligeiramente tóxicas se mastigadas: mantém-nas longe de animais curiosos e crianças."
+     ],
+     "q": "És mais esquecido com as plantas e uma espada-de-são-jorge ajudava?",
+     "c": "Hoje vê quão seca está uma destas plantas e não regues se a terra ainda estiver húmida."
+    },
+    "pt_BR": {
+     "t": "Cuidando de espada-de-são-jorge e zamioculca",
+     "g": "Conheça plantas muito resistentes que preferem secar e toleram pouca luz.",
+     "p": [
+      "Ambas guardam água, então regue só com a terra totalmente seca, a cada duas a quatro semanas.",
+      "Toleram pouca luz mas crescem mais rápido com luz indireta forte, e não gostam de terra encharcada.",
+      "Ambas são levemente tóxicas se mastigadas: mantenha longe de animais curiosos e crianças."
+     ],
+     "q": "Você é mais esquecido com as plantas e uma espada-de-são-jorge ajudaria?",
+     "c": "Hoje veja o quanto uma dessas plantas está seca e não regue se a terra ainda estiver úmida."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spider plant and its babies",
+     "g": "Care for spider plants and pot up the little plantlets.",
+     "p": [
+      "Spider plants like bright indirect light and even moisture, and they are safe for cats and dogs.",
+      "Brown tips often come from dry air, tap water minerals or irregular watering, so try filtered water.",
+      "Pot a plantlet in moist mix while still attached, or root it in water, then cut it free."
+     ],
+     "q": "Do you know someone who would love a baby spider plant from you?",
+     "c": "Today, find a plantlet on a spider plant and set it in a small pot of moist mix or a glass of water."
+    },
+    "de": {
+     "t": "Grünlilie und ihre Ableger",
+     "g": "Pflege Grünlilien und topfe die kleinen Kindel ein.",
+     "p": [
+      "Grünlilien mögen helles indirektes Licht und gleichmäßige Feuchte und gelten als ungiftig für Katzen und Hunde.",
+      "Braune Spitzen kommen oft von trockener Luft, Mineralien im Leitungswasser oder unregelmäßigem Gießen, probiere gefiltertes Wasser.",
+      "Setze ein Kindel am Mutterspross in feuchte Erde oder lass es im Wasser wurzeln und schneide es dann ab."
+     ],
+     "q": "Kennst du jemanden, der sich über eine Grünlilien-Kindel von dir freuen würde?",
+     "c": "Suche heute ein Kindel an einer Grünlilie und stelle es in einen kleinen Topf mit feuchter Erde oder ins Wasserglas."
+    },
+    "es": {
+     "t": "La cinta y sus hijuelos",
+     "g": "Cuida la cinta y planta sus pequeños hijuelos.",
+     "p": [
+      "Las cintas prefieren luz indirecta brillante y humedad pareja, y son seguras para gatos y perros.",
+      "Las puntas marrones suelen venir de aire seco, minerales del agua del grifo o riego irregular, prueba agua filtrada.",
+      "Planta un hijuelo en sustrato húmedo sin separarlo, o hazlo enraizar en agua, y luego córtalo."
+     ],
+     "q": "¿Conoces a alguien que querría un hijuelo de cinta de tu parte?",
+     "c": "Hoy busca un hijuelo en una cinta y ponlo en una maceta pequeña con sustrato húmedo o en un vaso con agua."
+    },
+    "fr": {
+     "t": "Le chlorophytum et ses bébés",
+     "g": "Prends soin du chlorophytum et rempote ses petites plantules.",
+     "p": [
+      "Le chlorophytum aime la lumière vive indirecte et une humidité régulière, et il est sans danger pour chats et chiens.",
+      "Les pointes brunes viennent souvent d'air sec, de minéraux de l'eau du robinet ou d'arrosages irréguliers : essaie l'eau filtrée.",
+      "Plante un bébé dans du terreau humide sans le détacher, ou fais-le raciner dans l'eau, puis coupe-le."
+     ],
+     "q": "Connais-tu quelqu'un qui adorerait un bébé chlorophytum de ta part ?",
+     "c": "Aujourd'hui, trouve un bébé sur un chlorophytum et place-le dans un petit pot de terreau humide ou un verre d'eau."
+    },
+    "it": {
+     "t": "Il clorofito e i suoi piccoli",
+     "g": "Prenditi cura del clorofito e metti in vaso le piantine figlie.",
+     "p": [
+      "I clorofiti amano la luce indiretta intensa e l'umidità costante, e sono sicuri per gatti e cani.",
+      "Le punte marroni spesso derivano da aria secca, minerali dell'acqua di rubinetto o annaffiature irregolari: prova acqua filtrata.",
+      "Metti una piantina in terriccio umido ancora attaccata, oppure falla radicare in acqua, poi staccala."
+     ],
+     "q": "Conosci qualcuno che adorerebbe una piantina di clorofito da parte tua?",
+     "c": "Oggi trova una piantina su un clorofito e mettila in un vasetto con terriccio umido o in un bicchiere d'acqua."
+    },
+    "pt": {
+     "t": "A fita e os seus filhotes",
+     "g": "Cuida da fita e planta os pequenos filhotes.",
+     "p": [
+      "As fitas gostam de luz indireta forte e humidade regular, e são seguras para gatos e cães.",
+      "Pontas castanhas vêm muitas vezes de ar seco, minerais da água da torneira ou rega irregular: experimenta água filtrada.",
+      "Planta um filhote em substrato húmido ainda preso à planta, ou faz com que enraíze em água, e depois corta-o."
+     ],
+     "q": "Conheces alguém que adorasse um filhote de fita teu?",
+     "c": "Hoje encontra um filhote numa fita e põe-no num vasinho com substrato húmido ou num copo com água."
+    },
+    "pt_BR": {
+     "t": "O clorofito e seus filhotes",
+     "g": "Cuide do clorofito e plante os pequenos filhotes.",
+     "p": [
+      "Clorofitos gostam de luz indireta forte e umidade regular, e são seguros para gatos e cães.",
+      "Pontas marrons vêm muitas vezes de ar seco, minerais da água da torneira ou rega irregular: tente água filtrada.",
+      "Plante um filhote em substrato úmido ainda preso à planta, ou faça enraizar na água, e depois corte."
+     ],
+     "q": "Você conhece alguém que adoraria um filhote de clorofito seu?",
+     "c": "Hoje encontre um filhote num clorofito e ponha num vasinho com substrato úmido ou num copo com água."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Peace lily care",
+     "g": "Meet a plant that droops when thirsty and recovers quickly after watering.",
+     "p": [
+      "Peace lily likes medium to low indirect light and constantly lightly moist soil, never soggy.",
+      "It droops dramatically when dry and perks up within hours after a good drink, so it tells you what it needs.",
+      "It is toxic to cats and dogs if chewed, so place it out of reach of curious pets."
+     ],
+     "q": "Do you like plants that tell you clearly what they need?",
+     "c": "Today, look at a thirsty-looking plant and test the soil before watering, to avoid guessing."
+    },
+    "de": {
+     "t": "Einblatt pflegen",
+     "g": "Lerne eine Pflanze kennen, die bei Durst hängt und sich nach dem Gießen schnell erholt.",
+     "p": [
+      "Das Einblatt mag mittleres bis wenig indirektes Licht und stets leicht feuchte, aber nie nasse Erde.",
+      "Bei Trockenheit hängt es dramatisch und richtet sich nach einem guten Schluck binnen Stunden wieder auf.",
+      "Es ist für Katzen und Hunde giftig, wenn sie es anknabbern, stelle es außer Reichweite neugieriger Haustiere."
+     ],
+     "q": "Magst du Pflanzen, die klar zeigen, was sie brauchen?",
+     "c": "Sieh dir heute eine durstig wirkende Pflanze an und prüfe die Erde vor dem Gießen, statt zu raten."
+    },
+    "es": {
+     "t": "Cuidado del espatifilo",
+     "g": "Conoce una planta que se cae con sed y se recupera pronto tras el riego.",
+     "p": [
+      "El espatifilo prefiere luz indirecta media a baja y tierra siempre ligeramente húmeda, nunca encharcada.",
+      "Se cae de forma dramática al secarse y se levanta en horas tras un buen riego, así que te dice lo que necesita.",
+      "Es tóxico para gatos y perros si lo mastican, ponlo fuera del alcance de mascotas curiosas."
+     ],
+     "q": "¿Te gustan las plantas que te dicen claro lo que necesitan?",
+     "c": "Hoy mira una planta con aspecto de sed y comprueba la tierra antes de regar, sin adivinar."
+    },
+    "fr": {
+     "t": "Soigner le spathiphyllum",
+     "g": "Découvre une plante qui s'affaisse quand elle a soif et se redresse vite après l'arrosage.",
+     "p": [
+      "Le spathiphyllum aime la lumière indirecte moyenne à faible et une terre toujours légèrement humide, jamais détrempée.",
+      "Il s'affaisse spectaculairement à sec et se redresse en quelques heures après un bon arrosage : il te dit ce qu'il veut.",
+      "Il est toxique pour chats et chiens s'ils le mâchent : place-le hors de portée des animaux curieux."
+     ],
+     "q": "Aimes-tu les plantes qui disent clairement ce dont elles ont besoin ?",
+     "c": "Aujourd'hui, regarde une plante qui semble assoiffée et teste la terre avant d'arroser, sans deviner."
+    },
+    "it": {
+     "t": "Cura dello spatifillo",
+     "g": "Conosci una pianta che si affloscia quando ha sete e si riprende in fretta dopo l'annaffiatura.",
+     "p": [
+      "Lo spatifillo gradisce luce indiretta media o bassa e terriccio sempre leggermente umido, mai fradicio.",
+      "Si affloscia vistosamente quando è secco e si rialza in poche ore dopo una bella bevuta, così ti dice cosa vuole.",
+      "È tossico per gatti e cani se masticato: mettilo fuori dalla portata di animali curiosi."
+     ],
+     "q": "Ti piacciono le piante che dicono chiaramente di cosa hanno bisogno?",
+     "c": "Oggi guarda una pianta che sembra assetata e prova il terriccio prima di annaffiare, senza indovinare."
+    },
+    "pt": {
+     "t": "Cuidar do espatifilo",
+     "g": "Conhece uma planta que cai com sede e recupera depressa depois da rega.",
+     "p": [
+      "O espatifilo gosta de luz indireta média a fraca e terra sempre ligeiramente húmida, nunca encharcada.",
+      "Cai de forma dramática quando seco e levanta-se em poucas horas depois de uma boa rega, por isso diz-te o que precisa.",
+      "É tóxico para gatos e cães se mastigado: põe-no fora do alcance de animais curiosos."
+     ],
+     "q": "Gostas de plantas que dizem claramente o que precisam?",
+     "c": "Hoje olha para uma planta com ar de sede e testa a terra antes de regar, sem adivinhar."
+    },
+    "pt_BR": {
+     "t": "Cuidando do espatifilo",
+     "g": "Conheça uma planta que cai com sede e se recupera rápido depois da rega.",
+     "p": [
+      "O espatifilo gosta de luz indireta média a fraca e terra sempre levemente úmida, nunca encharcada.",
+      "Cai de forma dramática quando seco e levanta em poucas horas depois de uma boa rega, então diz o que precisa.",
+      "É tóxico para gatos e cães se mastigado: ponha fora do alcance de animais curiosos."
+     ],
+     "q": "Você gosta de plantas que dizem claramente o que precisam?",
+     "c": "Hoje olhe uma planta com cara de sede e teste a terra antes de regar, sem adivinhar."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Monstera care",
+     "g": "Give the popular split-leaf plant the light, support and space it loves.",
+     "p": [
+      "Monstera likes bright indirect light, and new leaves develop their splits as the plant matures.",
+      "Give it a moss pole or stake to climb, since support helps it grow bigger, healthier leaves.",
+      "It is toxic to pets if chewed, and its sap can irritate skin, so wear gloves when pruning."
+     ],
+     "q": "Do you have a spot with enough room for a plant with big leaves?",
+     "c": "Today, measure the free space around your best bright spot and imagine a monstera there."
+    },
+    "de": {
+     "t": "Monstera pflegen",
+     "g": "Gib dem beliebten Fensterblatt Licht, Halt und Platz, die es liebt.",
+     "p": [
+      "Monstera mag helles indirektes Licht, und neue Blätter bekommen ihre Schlitze, wenn die Pflanze reift.",
+      "Biete eine Moosstange oder einen Stab zum Klettern, denn Halt fördert größere, gesündere Blätter.",
+      "Sie ist für Haustiere giftig, wenn sie angeknabbert wird, der Saft kann die Haut reizen, trage beim Schneiden Handschuhe."
+     ],
+     "q": "Hast du einen Platz mit genug Raum für eine Pflanze mit großen Blättern?",
+     "c": "Miss heute den freien Platz um deinen hellsten Platz und stelle dir dort eine Monstera vor."
+    },
+    "es": {
+     "t": "Cuidado de la monstera",
+     "g": "Dale a la popular planta de hojas partidas la luz, apoyo y espacio que ama.",
+     "p": [
+      "La monstera prefiere luz indirecta brillante, y las hojas nuevas desarrollan sus cortes al madurar la planta.",
+      "Dale un tutor de musgo o una estaca para trepar, porque el apoyo ayuda a lograr hojas mayores y más sanas.",
+      "Es tóxica para mascotas si la mordisquean y su savia puede irritar la piel, usa guantes al podar."
+     ],
+     "q": "¿Tienes un sitio con espacio suficiente para una planta de hojas grandes?",
+     "c": "Hoy mide el espacio libre junto a tu mejor sitio luminoso e imagina una monstera allí."
+    },
+    "fr": {
+     "t": "Soigner le monstera",
+     "g": "Offre à la célèbre plante aux feuilles trouées la lumière, le support et l'espace qu'elle aime.",
+     "p": [
+      "Le monstera aime la lumière vive indirecte, et ses nouvelles feuilles se fendent à mesure qu'il mûrit.",
+      "Donne-lui un tuteur de mousse ou un bâton pour grimper : le support favorise de plus grandes feuilles saines.",
+      "Il est toxique pour les animaux s'ils le mâchent, et sa sève peut irriter la peau : porte des gants pour tailler."
+     ],
+     "q": "As-tu un endroit avec assez de place pour une plante aux grandes feuilles ?",
+     "c": "Aujourd'hui, mesure l'espace libre autour de ton meilleur coin lumineux et imagine-y un monstera."
+    },
+    "it": {
+     "t": "Cura della monstera",
+     "g": "Dai alla popolare pianta dalle foglie bucate luce, sostegno e spazio che ama.",
+     "p": [
+      "La monstera ama la luce indiretta intensa e le foglie nuove sviluppano le fessure quando la pianta matura.",
+      "Offri un tutore di muschio o un bastone su cui arrampicarsi: il sostegno favorisce foglie più grandi e sane.",
+      "È tossica per gli animali se masticata e la linfa può irritare la pelle: usa i guanti quando poti."
+     ],
+     "q": "Hai un posto con abbastanza spazio per una pianta dalle foglie grandi?",
+     "c": "Oggi misura lo spazio libero attorno al tuo miglior punto luminoso e immagina lì una monstera."
+    },
+    "pt": {
+     "t": "Cuidar da monstera",
+     "g": "Dá à popular planta de folhas recortadas a luz, apoio e espaço de que gosta.",
+     "p": [
+      "A monstera gosta de luz indireta forte, e as folhas novas desenvolvem os recortes à medida que a planta amadurece.",
+      "Dá-lhe um tutor de musgo ou uma estaca para trepar, porque o apoio ajuda a ter folhas maiores e mais saudáveis.",
+      "É tóxica para animais se mordiscada e a seiva pode irritar a pele: usa luvas ao podar."
+     ],
+     "q": "Tens um local com espaço suficiente para uma planta de folhas grandes?",
+     "c": "Hoje mede o espaço livre junto ao teu melhor local luminoso e imagina lá uma monstera."
+    },
+    "pt_BR": {
+     "t": "Cuidando da monstera",
+     "g": "Dê à popular planta de folhas recortadas a luz, apoio e espaço de que ela gosta.",
+     "p": [
+      "A monstera gosta de luz indireta forte, e as folhas novas desenvolvem os recortes conforme a planta amadurece.",
+      "Dê a ela um tutor de musgo ou uma estaca para trepar, porque o apoio ajuda a ter folhas maiores e mais saudáveis.",
+      "É tóxica para animais se mordiscada e a seiva pode irritar a pele: use luvas ao podar."
+     ],
+     "q": "Você tem um lugar com espaço suficiente para uma planta de folhas grandes?",
+     "c": "Hoje meça o espaço livre perto do seu melhor lugar iluminado e imagine uma monstera lá."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ferns indoors",
+     "g": "Keep ferns happy with steady moisture and good humidity.",
+     "p": [
+      "Most ferns like bright indirect or medium light, never harsh direct sun that scorches fronds.",
+      "Keep the soil evenly moist but not soggy, and let it never dry out completely.",
+      "They love humidity, so a bathroom, a pebble tray or a group of plants helps a lot."
+     ],
+     "q": "Do you have a humid spot, like a bathroom, that a fern could enjoy?",
+     "c": "Today, check the humidity in your brightest humid spot and think about where a fern would fit."
+    },
+    "de": {
+     "t": "Farne im Zimmer",
+     "g": "Halte Farne mit gleichmäßiger Feuchte und guter Luftfeuchtigkeit glücklich.",
+     "p": [
+      "Die meisten Farne mögen helles indirektes oder mittleres Licht, nie pralle Sonne, die Wedel verbrennt.",
+      "Halte die Erde gleichmäßig feucht, aber nicht nass, und lass sie nie ganz austrocknen.",
+      "Sie lieben Luftfeuchte, ein Bad, eine Kiesschale oder eine Pflanzengruppe helfen sehr."
+     ],
+     "q": "Hast du einen feuchten Platz, etwa im Bad, an dem ein Farn sich wohlfühlen könnte?",
+     "c": "Prüfe heute die Feuchte an deinem hellsten feuchten Platz und überlege, wo ein Farn passen würde."
+    },
+    "es": {
+     "t": "Helechos de interior",
+     "g": "Mantén felices a los helechos con humedad constante y buena humedad ambiental.",
+     "p": [
+      "La mayoría de los helechos prefieren luz indirecta brillante o media, nunca sol fuerte que queme las frondas.",
+      "Mantén la tierra uniformemente húmeda pero no encharcada, y que nunca se seque del todo.",
+      "Aman la humedad ambiental: un baño, una bandeja con piedras o un grupo de plantas ayudan mucho."
+     ],
+     "q": "¿Tienes un sitio húmedo, como un baño, donde un helecho sería feliz?",
+     "c": "Hoy comprueba la humedad de tu sitio luminoso y húmedo y piensa dónde cabría un helecho."
+    },
+    "fr": {
+     "t": "Les fougères d'intérieur",
+     "g": "Garde tes fougères heureuses avec une humidité constante et un air humide.",
+     "p": [
+      "La plupart des fougères aiment la lumière vive indirecte ou moyenne, jamais le plein soleil qui brûle les frondes.",
+      "Garde la terre régulièrement humide mais pas détrempée, et ne la laisse jamais sécher complètement.",
+      "Elles adorent l'humidité : salle de bains, plateau de galets ou groupe de plantes aident beaucoup."
+     ],
+     "q": "As-tu un endroit humide, comme une salle de bains, où une fougère serait bien ?",
+     "c": "Aujourd'hui, vérifie l'humidité de ton coin lumineux et humide et pense à où placer une fougère."
+    },
+    "it": {
+     "t": "Felci in casa",
+     "g": "Mantieni felici le felci con umidità costante e buona umidità dell'aria.",
+     "p": [
+      "La maggior parte delle felci gradisce luce indiretta intensa o media, mai sole forte che brucia le fronde.",
+      "Tieni il terriccio uniformemente umido ma non fradicio, e non lasciarlo mai asciugare del tutto.",
+      "Amano l'umidità dell'aria: un bagno, un vassoio di ciottoli o un gruppo di piante aiutano molto."
+     ],
+     "q": "Hai un punto umido, come un bagno, dove una felce starebbe bene?",
+     "c": "Oggi controlla l'umidità nel tuo punto luminoso e umido e pensa dove starebbe una felce."
+    },
+    "pt": {
+     "t": "Fetos de interior",
+     "g": "Mantém os fetos felizes com humidade constante e bom ar húmido.",
+     "p": [
+      "A maioria dos fetos gosta de luz indireta forte ou média, nunca sol forte que queime as frondes.",
+      "Mantém a terra uniformemente húmida mas não encharcada, e nunca a deixes secar totalmente.",
+      "Adoram humidade no ar: uma casa de banho, um tabuleiro com pedras ou um grupo de plantas ajudam muito."
+     ],
+     "q": "Tens um local húmido, como uma casa de banho, onde um feto ficasse bem?",
+     "c": "Hoje verifica a humidade do teu local luminoso e húmido e pensa onde caberia um feto."
+    },
+    "pt_BR": {
+     "t": "Samambaias em casa",
+     "g": "Mantenha as samambaias felizes com umidade constante e bom ar úmido.",
+     "p": [
+      "A maioria das samambaias gosta de luz indireta forte ou média, nunca sol forte que queime as frondes.",
+      "Mantenha a terra uniformemente úmida mas não encharcada, e nunca deixe secar totalmente.",
+      "Elas adoram umidade no ar: um banheiro, uma bandeja com pedras ou um grupo de plantas ajudam muito."
+     ],
+     "q": "Você tem um lugar úmido, como um banheiro, onde uma samambaia ficaria bem?",
+     "c": "Hoje confira a umidade do seu lugar iluminado e úmido e pense onde caberia uma samambaia."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Succulents indoors",
+     "g": "Give fleshy plants bright light, gritty soil and very careful watering.",
+     "p": [
+      "Succulents need as much bright light as you can give, ideally a sunny window with several hours of sun.",
+      "Use a gritty cactus or succulent mix and a pot with drainage, and let the soil dry fully between waterings.",
+      "Soft, see-through or yellow leaves usually mean too much water, while wrinkled leaves mean thirst."
+     ],
+     "q": "Which sunny window could host your first succulent?",
+     "c": "Today, find your sunniest window and check how many hours of direct sun it gets."
+    },
+    "de": {
+     "t": "Sukkulenten im Zimmer",
+     "g": "Gib dickblättrigen Pflanzen helles Licht, durchlässige Erde und sehr vorsichtiges Gießen.",
+     "p": [
+      "Sukkulenten brauchen so viel helles Licht wie möglich, am besten ein sonniges Fenster mit mehreren Sonnenstunden.",
+      "Nimm durchlässige Kakteenerde und einen Topf mit Abzug und lass die Erde zwischen dem Gießen ganz trocknen.",
+      "Weiche, glasige oder gelbe Blätter bedeuten meist zu viel Wasser, schrumpelige Blätter zeigen Durst an."
+     ],
+     "q": "Welches sonnige Fenster könnte deine erste Sukkulente beherbergen?",
+     "c": "Finde heute dein sonnigstes Fenster und prüfe, wie viele Stunden direkte Sonne es bekommt."
+    },
+    "es": {
+     "t": "Suculentas de interior",
+     "g": "Da a las plantas carnosas luz brillante, sustrato arenoso y riego muy cuidadoso.",
+     "p": [
+      "Las suculentas necesitan toda la luz brillante posible, idealmente una ventana soleada con varias horas de sol.",
+      "Usa sustrato arenoso para cactus y suculentas y una maceta con drenaje, y deja secar bien la tierra entre riegos.",
+      "Hojas blandas, translúcidas o amarillas suelen indicar exceso de agua, y las arrugadas indican sed."
+     ],
+     "q": "¿Qué ventana soleada podría acoger tu primera suculenta?",
+     "c": "Hoy busca tu ventana más soleada y comprueba cuántas horas de sol directo recibe."
+    },
+    "fr": {
+     "t": "Les succulentes d'intérieur",
+     "g": "Offre aux plantes grasses une lumière vive, un substrat drainant et un arrosage très prudent.",
+     "p": [
+      "Les succulentes veulent un maximum de lumière vive, idéalement une fenêtre ensoleillée avec plusieurs heures de soleil.",
+      "Utilise un terreau drainant pour cactus et succulentes, un pot percé, et laisse bien sécher entre deux arrosages.",
+      "Des feuilles molles, translucides ou jaunes signalent trop d'eau, des feuilles ridées signalent la soif."
+     ],
+     "q": "Quelle fenêtre ensoleillée pourrait accueillir ta première succulente ?",
+     "c": "Aujourd'hui, trouve ta fenêtre la plus ensoleillée et vérifie combien d'heures de soleil direct elle reçoit."
+    },
+    "it": {
+     "t": "Succulente in casa",
+     "g": "Dai alle piante grasse luce intensa, terriccio sabbioso e annaffiature molto caute.",
+     "p": [
+      "Le succulente vogliono tutta la luce intensa possibile, idealmente una finestra soleggiata con diverse ore di sole.",
+      "Usa terriccio sabbioso per cactus e succulente e un vaso con drenaggio, e lascia asciugare bene tra le annaffiature.",
+      "Foglie molli, traslucide o gialle indicano di solito troppa acqua, quelle raggrinzite indicano sete."
+     ],
+     "q": "Quale finestra soleggiata potrebbe ospitare la tua prima succulenta?",
+     "c": "Oggi trova la tua finestra più soleggiata e controlla quante ore di sole diretto riceve."
+    },
+    "pt": {
+     "t": "Suculentas de interior",
+     "g": "Dá às plantas carnudas luz forte, substrato arenoso e rega muito cuidadosa.",
+     "p": [
+      "As suculentas precisam de toda a luz forte possível, idealmente uma janela soalheira com várias horas de sol.",
+      "Usa substrato arenoso para catos e suculentas e um vaso com drenagem, e deixa a terra secar bem entre regas.",
+      "Folhas moles, translúcidas ou amarelas costumam indicar água a mais, e as enrugadas indicam sede."
+     ],
+     "q": "Que janela soalheira poderia acolher a tua primeira suculenta?",
+     "c": "Hoje encontra a tua janela mais soalheira e verifica quantas horas de sol direto recebe."
+    },
+    "pt_BR": {
+     "t": "Suculentas em casa",
+     "g": "Dê às plantas carnudas luz forte, substrato arenoso e rega muito cuidadosa.",
+     "p": [
+      "As suculentas precisam de toda a luz forte possível, idealmente uma janela ensolarada com várias horas de sol.",
+      "Use substrato arenoso para cactos e suculentas e um vaso com drenagem, e deixe a terra secar bem entre regas.",
+      "Folhas moles, translúcidas ou amarelas costumam indicar água demais, e as enrugadas indicam sede."
+     ],
+     "q": "Qual janela ensolarada poderia receber sua primeira suculenta?",
+     "c": "Hoje encontre sua janela mais ensolarada e confira quantas horas de sol direto ela recebe."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cacti care basics",
+     "g": "Give cacti sun, dry periods and a well-draining mix.",
+     "p": [
+      "Cacti want lots of bright light and a very gritty, fast-draining mix in a pot with holes.",
+      "Water thoroughly but rarely, letting the soil dry out fully, and water much less in winter.",
+      "Handle spiny cacti with thick gloves or folded paper strips, and keep them away from small children and pets."
+     ],
+     "q": "Do you prefer a tall columnar cactus or a small round one?",
+     "c": "Today, check where your sunniest spot is and imagine a cactus there, with a safe, out-of-reach position."
+    },
+    "de": {
+     "t": "Kakteen pflegen: die Basics",
+     "g": "Gib Kakteen Sonne, Trockenphasen und eine durchlässige Erde.",
+     "p": [
+      "Kakteen wollen viel helles Licht und eine sehr mineralische, schnell abziehende Erde in einem Topf mit Löchern.",
+      "Gieße gründlich, aber selten, lass die Erde ganz trocknen und gieße im Winter deutlich weniger.",
+      "Fasse stachelige Kakteen mit dicken Handschuhen oder gefalteten Papierstreifen an und halte sie von kleinen Kindern und Haustieren fern."
+     ],
+     "q": "Magst du lieber einen hohen Säulenkaktus oder einen kleinen runden?",
+     "c": "Finde heute deinen sonnigsten Platz und stelle dir dort einen Kaktus vor, sicher und außer Reichweite."
+    },
+    "es": {
+     "t": "Cuidados básicos de los cactus",
+     "g": "Da a los cactus sol, períodos secos y un sustrato de buen drenaje.",
+     "p": [
+      "Los cactus quieren mucha luz brillante y un sustrato muy arenoso y de drenaje rápido en una maceta con agujeros.",
+      "Riega a fondo pero poco, deja secar la tierra del todo y riega mucho menos en invierno.",
+      "Maneja cactus con espinas con guantes gruesos o tiras de papel dobladas y mantenlos lejos de niños pequeños y mascotas."
+     ],
+     "q": "¿Prefieres un cactus alto y columnar o uno pequeño y redondo?",
+     "c": "Hoy busca tu sitio más soleado e imagina un cactus allí, en una posición segura y fuera de alcance."
+    },
+    "fr": {
+     "t": "Les bases des cactus",
+     "g": "Offre aux cactus du soleil, des périodes sèches et un substrat bien drainant.",
+     "p": [
+      "Les cactus veulent beaucoup de lumière vive et un substrat très drainant et minéral, dans un pot percé.",
+      "Arrose à fond mais rarement, laisse sécher complètement la terre et arrose beaucoup moins l'hiver.",
+      "Manipule les cactus épineux avec des gants épais ou des bandes de papier pliées, loin des jeunes enfants et des animaux."
+     ],
+     "q": "Préfères-tu un grand cactus colonnaire ou un petit rond ?",
+     "c": "Aujourd'hui, repère ton coin le plus ensoleillé et imagine-y un cactus, en position sûre et hors de portée."
+    },
+    "it": {
+     "t": "Le basi della cura dei cactus",
+     "g": "Dai ai cactus sole, periodi asciutti e un terriccio ben drenante.",
+     "p": [
+      "I cactus vogliono molta luce intensa e un terriccio molto sabbioso e a rapido drenaggio in un vaso con fori.",
+      "Annaffia a fondo ma raramente, lascia asciugare del tutto il terriccio e annaffia molto meno in inverno.",
+      "Maneggia i cactus spinosi con guanti spessi o strisce di carta piegate e tienili lontani da bambini piccoli e animali."
+     ],
+     "q": "Preferisci un cactus alto e colonnare o uno piccolo e tondo?",
+     "c": "Oggi trova il tuo punto più soleggiato e immagina lì un cactus, in posizione sicura e fuori portata."
+    },
+    "pt": {
+     "t": "Cuidados básicos com catos",
+     "g": "Dá aos catos sol, períodos secos e um substrato de boa drenagem.",
+     "p": [
+      "Os catos querem muita luz forte e um substrato muito arenoso e de drenagem rápida num vaso com furos.",
+      "Rega bem mas raramente, deixa a terra secar totalmente e rega muito menos no inverno.",
+      "Manuseia catos com espinhos com luvas grossas ou tiras de papel dobradas e mantém-nos longe de crianças pequenas e animais."
+     ],
+     "q": "Preferes um cato alto e colunar ou um pequeno e redondo?",
+     "c": "Hoje encontra o teu local mais soalheiro e imagina lá um cato, numa posição segura e fora de alcance."
+    },
+    "pt_BR": {
+     "t": "Cuidados básicos com cactos",
+     "g": "Dê aos cactos sol, períodos secos e um substrato de boa drenagem.",
+     "p": [
+      "Cactos querem muita luz forte e um substrato muito arenoso e de drenagem rápida num vaso com furos.",
+      "Regue bem mas raramente, deixe a terra secar totalmente e regue bem menos no inverno.",
+      "Manuseie cactos com espinhos com luvas grossas ou tiras de papel dobradas e mantenha longe de crianças pequenas e animais."
+     ],
+     "q": "Você prefere um cacto alto e colunar ou um pequeno e redondo?",
+     "c": "Hoje encontre seu lugar mais ensolarado e imagine um cacto lá, numa posição segura e fora de alcance."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Orchids for beginners",
+     "g": "Learn how the common moth orchid grows and how to water and rebloom it.",
+     "p": [
+      "Moth orchids (Phalaenopsis) like bright indirect light and grow in bark mix, not regular soil.",
+      "Water about once a week by soaking the roots for a few minutes, then drain fully, as roots hate sitting wet.",
+      "After blooms fade, cut the spike above a node or let it rest, and a new flush often comes."
+     ],
+     "q": "Have you ever received an orchid as a gift, and how did it go?",
+     "c": "Today, look at an orchid's roots: silvery means dry and thirsty, green means freshly watered."
+    },
+    "de": {
+     "t": "Orchideen für Anfänger",
+     "g": "Lerne, wie die gängige Schmetterlingsorchidee wächst, gegossen wird und neu blüht.",
+     "p": [
+      "Schmetterlingsorchideen (Phalaenopsis) mögen helles indirektes Licht und wachsen in Rindensubstrat, nicht in normaler Erde.",
+      "Tauche die Wurzeln etwa einmal pro Woche einige Minuten ein und lass alles gut abtropfen, nasse Füße mögen sie nicht.",
+      "Nach der Blüte schneide den Trieb über einem Auge ab oder lass ihn ruhen, oft kommt eine neue Blüte."
+     ],
+     "q": "Hast du schon einmal eine Orchidee geschenkt bekommen, und wie lief es?",
+     "c": "Sieh dir heute die Wurzeln einer Orchidee an: silbrig heißt trocken und durstig, grün heißt frisch gegossen."
+    },
+    "es": {
+     "t": "Orquídeas para principiantes",
+     "g": "Aprende cómo crece la orquídea mariposa común y cómo regarla y hacerla florecer otra vez.",
+     "p": [
+      "Las orquídeas mariposa (Phalaenopsis) prefieren luz indirecta brillante y crecen en sustrato de corteza, no en tierra normal.",
+      "Riega una vez por semana sumergiendo las raíces unos minutos y escurre del todo, porque odian estar mojadas.",
+      "Cuando caen las flores, corta la vara sobre un nudo o déjala descansar, y a menudo llega una nueva floración."
+     ],
+     "q": "¿Te han regalado alguna vez una orquídea y cómo te fue?",
+     "c": "Hoy mira las raíces de una orquídea: plateadas es seca y con sed, verdes es recién regada."
+    },
+    "fr": {
+     "t": "Les orchidées pour débuter",
+     "g": "Apprends comment pousse l'orchidée papillon courante, comment l'arroser et la refaire fleurir.",
+     "p": [
+      "Les orchidées papillon (Phalaenopsis) aiment la lumière vive indirecte et poussent dans un substrat d'écorce, pas dans une terre ordinaire.",
+      "Arrose environ une fois par semaine en trempant les racines quelques minutes, puis égoutte à fond : elles détestent rester mouillées.",
+      "Quand les fleurs fanent, coupe la hampe au-dessus d'un nœud ou laisse-la reposer : une nouvelle floraison suit souvent."
+     ],
+     "q": "T'a-t-on déjà offert une orchidée, et comment cela s'est-il passé ?",
+     "c": "Aujourd'hui, regarde les racines d'une orchidée : argentées = sèches et assoiffées, vertes = fraîchement arrosées."
+    },
+    "it": {
+     "t": "Orchidee per principianti",
+     "g": "Scopri come cresce la comune orchidea falena e come annaffiarla e farla rifiorire.",
+     "p": [
+      "Le orchidee falena (Phalaenopsis) amano la luce indiretta intensa e crescono in substrato di corteccia, non in terra normale.",
+      "Annaffia circa una volta a settimana immergendo le radici per qualche minuto, poi scola del tutto: odiano restare bagnate.",
+      "Quando i fiori sfioriscono, taglia lo stelo sopra un nodo o lascialo riposare e spesso arriva una nuova fioritura."
+     ],
+     "q": "Hai mai ricevuto un'orchidea in regalo e com'è andata?",
+     "c": "Oggi guarda le radici di un'orchidea: argentate vuol dire secche e assetate, verdi appena annaffiate."
+    },
+    "pt": {
+     "t": "Orquídeas para principiantes",
+     "g": "Aprende como cresce a orquídea-borboleta comum e como regá-la e fazê-la florir outra vez.",
+     "p": [
+      "As orquídeas-borboleta (Phalaenopsis) gostam de luz indireta forte e crescem em substrato de casca, não em terra normal.",
+      "Rega cerca de uma vez por semana mergulhando as raízes uns minutos e escorre bem, pois odeiam ficar molhadas.",
+      "Quando as flores caem, corta a haste acima de um nó ou deixa-a descansar, e muitas vezes surge nova floração."
+     ],
+     "q": "Já te ofereceram uma orquídea e como correu?",
+     "c": "Hoje olha para as raízes de uma orquídea: prateadas é seca e com sede, verdes é acabada de regar."
+    },
+    "pt_BR": {
+     "t": "Orquídeas para iniciantes",
+     "g": "Aprenda como cresce a orquídea-borboleta comum e como regá-la e fazê-la florir de novo.",
+     "p": [
+      "As orquídeas-borboleta (Phalaenopsis) gostam de luz indireta forte e crescem em substrato de casca, não em terra comum.",
+      "Regue cerca de uma vez por semana mergulhando as raízes uns minutos e escorra bem, pois odeiam ficar molhadas.",
+      "Quando as flores caem, corte a haste acima de um nó ou deixe descansar, e muitas vezes surge nova floração."
+     ],
+     "q": "Você já ganhou uma orquídea de presente e como foi?",
+     "c": "Hoje olhe as raízes de uma orquídea: prateadas é seca e com sede, verdes é recém-regada."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Herbs on the windowsill",
+     "g": "Grow basil, parsley and mint indoors for fresh flavour.",
+     "p": [
+      "Herbs need the sunniest window you have, ideally four to six hours of sun, or a grow light.",
+      "Basil likes warmth and regular water, parsley likes cooler spots, and mint spreads, so give it its own pot.",
+      "Pick often from the top, just above a pair of leaves, to keep herbs bushy instead of leggy."
+     ],
+     "q": "Which herb would you use most in your cooking?",
+     "c": "Today, buy or sow one herb and put it in your sunniest window with a drainage tray."
+    },
+    "de": {
+     "t": "Kräuter auf der Fensterbank",
+     "g": "Ziehe Basilikum, Petersilie und Minze drinnen für frischen Geschmack.",
+     "p": [
+      "Kräuter brauchen dein sonnigstes Fenster, ideal vier bis sechs Stunden Sonne, oder eine Pflanzenlampe.",
+      "Basilikum mag Wärme und regelmäßiges Gießen, Petersilie kühlere Plätze, und Minze wuchert, gib ihr einen eigenen Topf.",
+      "Ernte oft oben, knapp über einem Blattpaar, damit Kräuter buschig statt lang und dünn wachsen."
+     ],
+     "q": "Welches Kraut würdest du beim Kochen am meisten verwenden?",
+     "c": "Kaufe oder säe heute ein Kraut und stelle es mit Untersetzer in dein sonnigstes Fenster."
+    },
+    "es": {
+     "t": "Hierbas en el alféizar",
+     "g": "Cultiva albahaca, perejil y menta en casa para tener sabor fresco.",
+     "p": [
+      "Las hierbas necesitan tu ventana más soleada, idealmente cuatro a seis horas de sol, o una luz de cultivo.",
+      "La albahaca quiere calor y riego regular, el perejil sitios más frescos, y la menta se extiende, dale su propia maceta.",
+      "Corta a menudo desde arriba, justo sobre un par de hojas, para que las hierbas queden tupidas y no estiradas."
+     ],
+     "q": "¿Qué hierba usarías más al cocinar?",
+     "c": "Hoy compra o siembra una hierba y ponla en tu ventana más soleada con un plato de drenaje."
+    },
+    "fr": {
+     "t": "Les aromatiques sur le rebord de fenêtre",
+     "g": "Fais pousser basilic, persil et menthe chez toi pour un goût frais.",
+     "p": [
+      "Les aromatiques veulent ta fenêtre la plus ensoleillée, idéalement quatre à six heures de soleil, ou une lampe de culture.",
+      "Le basilic aime la chaleur et l'arrosage régulier, le persil les endroits plus frais, et la menthe envahit : donne-lui son propre pot.",
+      "Cueille souvent par le haut, juste au-dessus d'une paire de feuilles, pour des plantes touffues plutôt que filiformes."
+     ],
+     "q": "Quelle herbe utiliserais-tu le plus en cuisine ?",
+     "c": "Aujourd'hui, achète ou sème une aromatique et place-la à ta fenêtre la plus ensoleillée avec une soucoupe."
+    },
+    "it": {
+     "t": "Erbe aromatiche sul davanzale",
+     "g": "Coltiva basilico, prezzemolo e menta in casa per un sapore fresco.",
+     "p": [
+      "Le erbe aromatiche vogliono la tua finestra più soleggiata, idealmente quattro-sei ore di sole, o una lampada da coltivazione.",
+      "Il basilico ama il caldo e annaffiature regolari, il prezzemolo posti più freschi, e la menta si espande: dalle un vaso tutto suo.",
+      "Raccogli spesso dall'alto, appena sopra una coppia di foglie, per erbe folte invece che spoglie e lunghe."
+     ],
+     "q": "Quale erba useresti di più in cucina?",
+     "c": "Oggi compra o semina un'erba aromatica e mettila alla finestra più soleggiata con un sottovaso."
+    },
+    "pt": {
+     "t": "Ervas aromáticas no parapeito",
+     "g": "Cultiva manjericão, salsa e hortelã em casa para sabor fresco.",
+     "p": [
+      "As ervas aromáticas precisam da tua janela mais soalheira, idealmente quatro a seis horas de sol, ou de uma luz de cultivo.",
+      "O manjericão gosta de calor e rega regular, a salsa de locais mais frescos, e a hortelã espalha-se: dá-lhe um vaso só dela.",
+      "Colhe com frequência por cima, logo acima de um par de folhas, para as ervas ficarem densas e não esticadas."
+     ],
+     "q": "Que erva usarias mais na cozinha?",
+     "c": "Hoje compra ou semeia uma erva e põe-na na janela mais soalheira com um prato de drenagem."
+    },
+    "pt_BR": {
+     "t": "Ervas aromáticas no peitoril",
+     "g": "Cultive manjericão, salsa e hortelã em casa para ter sabor fresco.",
+     "p": [
+      "As ervas aromáticas precisam da sua janela mais ensolarada, idealmente quatro a seis horas de sol, ou de uma luz de cultivo.",
+      "O manjericão gosta de calor e rega regular, a salsa de locais mais frescos, e a hortelã se espalha: dê a ela um vaso só dela.",
+      "Colha com frequência por cima, logo acima de um par de folhas, para as ervas ficarem cheias e não esticadas."
+     ],
+     "q": "Que erva você usaria mais na cozinha?",
+     "c": "Hoje compre ou semeie uma erva e ponha na janela mais ensolarada com um pratinho de drenagem."
+    }
+   }
+  }
+ ]
+}

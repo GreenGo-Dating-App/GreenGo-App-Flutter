@@ -1,0 +1,835 @@
+{
+ "topic": "public_speaking",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why public speaking matters",
+     "g": "See how speaking skills help at work, in your studies and in daily life.",
+     "p": [
+      "Clear speaking helps you share ideas in meetings, classes and with friends.",
+      "People often remember how you spoke more than the exact words you said.",
+      "Speaking is a skill, so it grows with small, regular practice."
+     ],
+     "q": "Where in your life would better speaking help you most?",
+     "c": "Say out loud, in one sentence, why you want to speak better."
+    },
+    "de": {
+     "t": "Warum Reden wichtig ist",
+     "g": "Entdecke, wie Sprechfähigkeit im Job, im Studium und im Alltag hilft.",
+     "p": [
+      "Klares Sprechen hilft dir, Ideen in Meetings, Kursen und unter Freunden zu teilen.",
+      "Menschen erinnern sich oft eher an deine Art zu sprechen als an einzelne Worte.",
+      "Sprechen ist eine Fertigkeit und wächst mit kleinen, regelmäßigen Übungen."
+     ],
+     "q": "Wo in deinem Leben würde dir besseres Sprechen am meisten helfen?",
+     "c": "Sag laut in einem Satz, warum du besser sprechen möchtest."
+    },
+    "es": {
+     "t": "Por qué importa hablar en público",
+     "g": "Descubre cómo hablar bien ayuda en el trabajo, los estudios y la vida diaria.",
+     "p": [
+      "Hablar con claridad te ayuda a compartir ideas en reuniones, clases y con amigos.",
+      "La gente suele recordar cómo hablaste más que las palabras exactas.",
+      "Hablar es una habilidad: crece con práctica pequeña y constante."
+     ],
+     "q": "¿En qué parte de tu vida te ayudaría más hablar mejor?",
+     "c": "Di en voz alta, en una frase, por qué quieres hablar mejor."
+    },
+    "fr": {
+     "t": "Pourquoi la prise de parole compte",
+     "g": "Vois comment bien parler aide au travail, dans les études et au quotidien.",
+     "p": [
+      "Parler clairement t'aide à partager tes idées en réunion, en cours et entre amis.",
+      "On retient souvent la façon dont tu parles plus que les mots exacts.",
+      "Parler est une compétence : elle progresse avec une pratique régulière."
+     ],
+     "q": "Dans quel domaine de ta vie parler mieux t'aiderait le plus ?",
+     "c": "Dis à voix haute, en une phrase, pourquoi tu veux mieux parler."
+    },
+    "it": {
+     "t": "Perché parlare in pubblico conta",
+     "g": "Scopri come parlare bene aiuta nel lavoro, nello studio e nella vita di ogni giorno.",
+     "p": [
+      "Parlare con chiarezza ti aiuta a condividere idee in riunioni, lezioni e tra amici.",
+      "Spesso le persone ricordano come hai parlato più delle parole esatte.",
+      "Parlare è una abilità: cresce con una pratica piccola e costante."
+     ],
+     "q": "In quale parte della tua vita parlare meglio ti aiuterebbe di più?",
+     "c": "Dì a voce alta, in una frase, perché vuoi parlare meglio."
+    },
+    "pt": {
+     "t": "Porque falar em público importa",
+     "g": "Vê como falar bem ajuda no trabalho, nos estudos e no dia a dia.",
+     "p": [
+      "Falar com clareza ajuda-te a partilhar ideias em reuniões, aulas e com amigos.",
+      "As pessoas lembram-se muitas vezes de como falaste, mais do que das palavras.",
+      "Falar é uma competência: cresce com prática pequena e regular."
+     ],
+     "q": "Em que parte da tua vida falar melhor te ajudaria mais?",
+     "c": "Diz em voz alta, numa frase, porque queres falar melhor."
+    },
+    "pt_BR": {
+     "t": "Por que falar em público importa",
+     "g": "Veja como falar bem ajuda no trabalho, nos estudos e no dia a dia.",
+     "p": [
+      "Falar com clareza ajuda você a compartilhar ideias em reuniões, aulas e com amigos.",
+      "As pessoas costumam lembrar mais de como você falou do que das palavras.",
+      "Falar é uma habilidade: cresce com prática pequena e constante."
+     ],
+     "q": "Em que parte da sua vida falar melhor ajudaria mais?",
+     "c": "Diga em voz alta, em uma frase, por que você quer falar melhor."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyone gets nervous",
+     "g": "Learn why stage nerves are normal and can even help in small doses.",
+     "p": [
+      "Almost every speaker feels nerves, including experienced ones.",
+      "A little adrenaline gives you energy and focus for the talk.",
+      "Name the feeling kindly: 'I am excited and my body is getting ready.'"
+     ],
+     "q": "How do your nerves usually show up before you speak?",
+     "c": "Before a call or chat today, say 'My body is getting ready' once."
+    },
+    "de": {
+     "t": "Jeder ist mal nervös",
+     "g": "Lerne, warum Lampenfieber normal ist und in kleinen Dosen sogar hilft.",
+     "p": [
+      "Fast jeder Redner spürt Nervosität, auch erfahrene.",
+      "Etwas Adrenalin gibt dir Energie und Konzentration für den Vortrag.",
+      "Benenne das Gefühl freundlich: 'Ich bin aufgeregt, mein Körper macht sich bereit.'"
+     ],
+     "q": "Wie zeigt sich deine Nervosität meistens vor dem Sprechen?",
+     "c": "Sag heute vor einem Gespräch einmal: 'Mein Körper macht sich bereit.'"
+    },
+    "es": {
+     "t": "Todos nos ponemos nerviosos",
+     "g": "Aprende por qué los nervios son normales y hasta ayudan en pequeñas dosis.",
+     "p": [
+      "Casi todos los oradores sienten nervios, también los con experiencia.",
+      "Un poco de adrenalina te da energía y concentración para hablar.",
+      "Nombra la sensación con cariño: 'Estoy emocionado y mi cuerpo se prepara.'"
+     ],
+     "q": "¿Cómo se notan tus nervios normalmente antes de hablar?",
+     "c": "Antes de una llamada hoy, di una vez: 'Mi cuerpo se está preparando.'"
+    },
+    "fr": {
+     "t": "Tout le monde a le trac",
+     "g": "Comprends pourquoi le trac est normal et peut même aider à petite dose.",
+     "p": [
+      "Presque tous les orateurs ont le trac, même les expérimentés.",
+      "Un peu d'adrénaline te donne de l'énergie et de la concentration.",
+      "Nomme l'émotion avec bienveillance : « Je suis excité, mon corps se prépare. »"
+     ],
+     "q": "Comment ton trac se manifeste-t-il d'habitude avant de parler ?",
+     "c": "Avant un appel aujourd'hui, dis une fois : « Mon corps se prépare. »"
+    },
+    "it": {
+     "t": "Tutti si agitano",
+     "g": "Scopri perché l'ansia da palcoscenico è normale e in piccole dosi aiuta.",
+     "p": [
+      "Quasi tutti gli oratori provano agitazione, anche i più esperti.",
+      "Un po' di adrenalina ti dà energia e concentrazione per parlare.",
+      "Dai un nome gentile alla sensazione: 'Sono carico e il mio corpo si prepara.'"
+     ],
+     "q": "Come si manifesta di solito la tua agitazione prima di parlare?",
+     "c": "Prima di una chiamata oggi, dì una volta: 'Il mio corpo si sta preparando.'"
+    },
+    "pt": {
+     "t": "Toda a gente fica nervosa",
+     "g": "Percebe porque o nervosismo é normal e até ajuda em pequenas doses.",
+     "p": [
+      "Quase todos os oradores sentem nervosismo, mesmo os experientes.",
+      "Um pouco de adrenalina dá-te energia e concentração para falar.",
+      "Dá um nome gentil à sensação: 'Estou entusiasmado e o corpo prepara-se.'"
+     ],
+     "q": "Como costuma notar-se o teu nervosismo antes de falares?",
+     "c": "Antes de uma chamada hoje, diz uma vez: 'O meu corpo está a preparar-se.'"
+    },
+    "pt_BR": {
+     "t": "Todo mundo fica nervoso",
+     "g": "Entenda por que o nervosismo é normal e até ajuda em pequenas doses.",
+     "p": [
+      "Quase todo orador sente nervosismo, até os mais experientes.",
+      "Um pouco de adrenalina dá energia e foco para você falar.",
+      "Dê um nome gentil à sensação: 'Estou animado e meu corpo está se preparando.'"
+     ],
+     "q": "Como o seu nervosismo costuma aparecer antes de falar?",
+     "c": "Antes de uma ligação hoje, diga uma vez: 'Meu corpo está se preparando.'"
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your speaking starting point",
+     "g": "Reflect on your current comfort level and set a personal speaking goal.",
+     "p": [
+      "Rate your comfort from 1 to 10 in a few situations: meeting, class, party.",
+      "Notice what already works well; every speaker starts with strengths.",
+      "Pick one small goal for the next month, such as speaking up once a week."
+     ],
+     "q": "What is one speaking moment you handled well in the past?",
+     "c": "Write your comfort score and one goal on a note and keep it handy."
+    },
+    "de": {
+     "t": "Dein Ausgangspunkt beim Sprechen",
+     "g": "Überlege, wie wohl du dich fühlst, und setze dir ein persönliches Sprechziel.",
+     "p": [
+      "Bewerte dein Wohlgefühl von 1 bis 10: Meeting, Kurs, Feier.",
+      "Sieh, was schon gut klappt; jeder Redner startet mit Stärken.",
+      "Wähle ein kleines Ziel für den nächsten Monat, etwa einmal pro Woche das Wort ergreifen."
+     ],
+     "q": "Welchen Redemoment hast du früher gut gemeistert?",
+     "c": "Schreib dein Wohlfühl-Rating und ein Ziel auf einen Zettel und bewahre ihn auf."
+    },
+    "es": {
+     "t": "Tu punto de partida al hablar",
+     "g": "Reflexiona sobre tu comodidad actual y fija una meta personal para hablar.",
+     "p": [
+      "Puntúa tu comodidad de 1 a 10 en reunión, clase y fiesta.",
+      "Fíjate en lo que ya haces bien; todo orador parte de sus fortalezas.",
+      "Elige una meta pequeña para el mes, como hablar una vez por semana."
+     ],
+     "q": "¿Qué momento de hablar en público manejaste bien en el pasado?",
+     "c": "Anota tu puntuación y una meta en una nota y ténla a mano."
+    },
+    "fr": {
+     "t": "Ton point de départ à l'oral",
+     "g": "Réfléchis à ton aisance actuelle et fixe-toi un objectif personnel.",
+     "p": [
+      "Note ton aisance de 1 à 10 en réunion, en cours et en soirée.",
+      "Repère ce qui marche déjà ; chacun part avec des forces.",
+      "Choisis un petit objectif pour le mois, comme prendre la parole une fois par semaine."
+     ],
+     "q": "Quel moment de parole as-tu bien géré par le passé ?",
+     "c": "Écris ta note et un objectif sur un papier et garde-le sous la main."
+    },
+    "it": {
+     "t": "Il tuo punto di partenza",
+     "g": "Rifletti sul tuo livello di agio e fissa un obiettivo personale per parlare.",
+     "p": [
+      "Dai un voto da 1 a 10 al tuo agio in riunione, a lezione e a una festa.",
+      "Nota ciò che già funziona; ogni oratore parte dai suoi punti di forza.",
+      "Scegli un piccolo obiettivo per il mese, come intervenire una volta a settimana."
+     ],
+     "q": "Quale momento in cui hai parlato bene ricordi?",
+     "c": "Scrivi il tuo voto e un obiettivo su un foglietto e tienilo a portata di mano."
+    },
+    "pt": {
+     "t": "O teu ponto de partida a falar",
+     "g": "Reflete sobre o teu à-vontade atual e define uma meta pessoal para falar.",
+     "p": [
+      "Dá uma nota de 1 a 10 ao teu à-vontade em reunião, aula e festa.",
+      "Repara no que já corre bem; todos começam com pontos fortes.",
+      "Escolhe uma meta pequena para o mês, como intervir uma vez por semana."
+     ],
+     "q": "Que momento a falar correu bem no passado?",
+     "c": "Escreve a tua nota e uma meta num papel e deixa-o à mão."
+    },
+    "pt_BR": {
+     "t": "Seu ponto de partida ao falar",
+     "g": "Reflita sobre o seu conforto atual e defina uma meta pessoal para falar.",
+     "p": [
+      "Dê uma nota de 1 a 10 ao seu conforto em reunião, aula e festa.",
+      "Perceba o que já funciona bem; todo orador começa com pontos fortes.",
+      "Escolha uma meta pequena para o mês, como falar uma vez por semana."
+     ],
+     "q": "Que momento de fala você já conduziu bem no passado?",
+     "c": "Anote sua nota e uma meta num papel e deixe à mão."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The three parts of a talk",
+     "g": "Understand that every talk has a beginning, a middle and an end.",
+     "p": [
+      "The opening grabs attention and tells people why to listen.",
+      "The middle delivers your main ideas in a clear order.",
+      "The ending sums up and leaves one clear thing to remember."
+     ],
+     "q": "Think of a talk you enjoyed: how did it open and close?",
+     "c": "Describe your day aloud in three parts: start, middle, end."
+    },
+    "de": {
+     "t": "Die drei Teile eines Vortrags",
+     "g": "Verstehe, dass jeder Vortrag Anfang, Mitte und Schluss hat.",
+     "p": [
+      "Der Anfang weckt Aufmerksamkeit und zeigt, warum man zuhören sollte.",
+      "Die Mitte bringt deine Hauptideen in klarer Reihenfolge.",
+      "Der Schluss fasst zusammen und lässt eine klare Botschaft zurück."
+     ],
+     "q": "Denk an einen Vortrag, der dir gefiel: Wie begann und endete er?",
+     "c": "Erzähle deinen Tag laut in drei Teilen: Anfang, Mitte, Schluss."
+    },
+    "es": {
+     "t": "Las tres partes de una charla",
+     "g": "Entiende que toda charla tiene inicio, desarrollo y cierre.",
+     "p": [
+      "La apertura capta la atención y explica por qué escuchar.",
+      "El desarrollo presenta tus ideas principales en orden claro.",
+      "El cierre resume y deja una cosa clara para recordar."
+     ],
+     "q": "Piensa en una charla que te gustó: ¿cómo empezó y cómo terminó?",
+     "c": "Cuenta tu día en voz alta en tres partes: inicio, desarrollo, cierre."
+    },
+    "fr": {
+     "t": "Les trois parties d'un exposé",
+     "g": "Comprends que tout exposé a un début, un milieu et une fin.",
+     "p": [
+      "L'ouverture attire l'attention et dit pourquoi écouter.",
+      "Le milieu présente tes idées principales dans un ordre clair.",
+      "La fin résume et laisse une idée claire à retenir."
+     ],
+     "q": "Pense à un exposé que tu as aimé : comment commençait-il et finissait-il ?",
+     "c": "Raconte ta journée à voix haute en trois parties : début, milieu, fin."
+    },
+    "it": {
+     "t": "Le tre parti di un discorso",
+     "g": "Capisci che ogni discorso ha un inizio, uno sviluppo e una fine.",
+     "p": [
+      "L'apertura cattura l'attenzione e spiega perché ascoltare.",
+      "Lo sviluppo presenta le tue idee principali in un ordine chiaro.",
+      "La conclusione riassume e lascia una cosa chiara da ricordare."
+     ],
+     "q": "Pensa a un discorso che ti è piaciuto: come iniziava e finiva?",
+     "c": "Racconta la tua giornata a voce alta in tre parti: inizio, sviluppo, fine."
+    },
+    "pt": {
+     "t": "As três partes de uma apresentação",
+     "g": "Percebe que toda a apresentação tem início, meio e fim.",
+     "p": [
+      "A abertura capta a atenção e diz porque vale a pena ouvir.",
+      "O meio apresenta as tuas ideias principais numa ordem clara.",
+      "O fim resume e deixa uma ideia clara para recordar."
+     ],
+     "q": "Pensa numa apresentação de que gostaste: como começou e terminou?",
+     "c": "Conta o teu dia em voz alta em três partes: início, meio, fim."
+    },
+    "pt_BR": {
+     "t": "As três partes de uma apresentação",
+     "g": "Entenda que toda apresentação tem começo, meio e fim.",
+     "p": [
+      "A abertura capta a atenção e diz por que vale a pena ouvir.",
+      "O meio apresenta suas ideias principais em uma ordem clara.",
+      "O fim resume e deixa uma ideia clara para lembrar."
+     ],
+     "q": "Pense numa apresentação de que você gostou: como ela começou e terminou?",
+     "c": "Conte seu dia em voz alta em três partes: começo, meio, fim."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Knowing your audience",
+     "g": "Learn who will listen, what they already know and what they need from you.",
+     "p": [
+      "Ask: who are they, what do they know, and what do they care about?",
+      "Match your words and examples to the people in the room.",
+      "A talk for experts and one for beginners should sound very different."
+     ],
+     "q": "Think of a talk you might give soon: who exactly will listen?",
+     "c": "Write three facts about your next audience before you plan anything."
+    },
+    "de": {
+     "t": "Dein Publikum kennen",
+     "g": "Finde heraus, wer zuhört, was die Leute wissen und was sie von dir brauchen.",
+     "p": [
+      "Frage dich: Wer sind sie, was wissen sie, was ist ihnen wichtig?",
+      "Passe Worte und Beispiele an die Menschen im Raum an.",
+      "Ein Vortrag für Experten klingt ganz anders als einer für Einsteiger."
+     ],
+     "q": "Denk an einen Vortrag, den du bald halten könntest: Wer hört genau zu?",
+     "c": "Notiere drei Fakten über dein nächstes Publikum, bevor du planst."
+    },
+    "es": {
+     "t": "Conocer a tu público",
+     "g": "Aprende quién escuchará, qué sabe ya y qué necesita de ti.",
+     "p": [
+      "Pregunta: ¿quiénes son, qué saben y qué les importa?",
+      "Adapta tus palabras y ejemplos a las personas de la sala.",
+      "Una charla para expertos y otra para principiantes suenan muy distinto."
+     ],
+     "q": "Piensa en una charla próxima: ¿quién exactamente te escuchará?",
+     "c": "Escribe tres datos de tu próximo público antes de planear nada."
+    },
+    "fr": {
+     "t": "Connaître ton public",
+     "g": "Découvre qui t'écoute, ce qu'il sait déjà et ce dont il a besoin.",
+     "p": [
+      "Demande-toi : qui sont-ils, que savent-ils, qu'est-ce qui leur importe ?",
+      "Adapte tes mots et tes exemples aux personnes présentes.",
+      "Un exposé pour experts et un pour débutants sonnent très différemment."
+     ],
+     "q": "Pense à une prise de parole proche : qui t'écoutera exactement ?",
+     "c": "Note trois faits sur ton prochain public avant de préparer quoi que ce soit."
+    },
+    "it": {
+     "t": "Conoscere il tuo pubblico",
+     "g": "Scopri chi ascolterà, cosa sa già e di cosa ha bisogno da te.",
+     "p": [
+      "Chiediti: chi sono, cosa sanno e cosa a loro importa?",
+      "Adatta parole ed esempi alle persone presenti nella sala.",
+      "Un discorso per esperti e uno per principianti suonano molto diversi."
+     ],
+     "q": "Pensa a un intervento prossimo: chi ti ascolterà esattamente?",
+     "c": "Scrivi tre fatti sul tuo prossimo pubblico prima di pianificare."
+    },
+    "pt": {
+     "t": "Conhecer o teu público",
+     "g": "Descobre quem vai ouvir, o que já sabe e o que precisa de ti.",
+     "p": [
+      "Pergunta: quem são, o que sabem e o que lhes interessa?",
+      "Adapta palavras e exemplos às pessoas que estão na sala.",
+      "Uma apresentação para especialistas e outra para iniciantes soam muito diferentes."
+     ],
+     "q": "Pensa numa apresentação próxima: quem vai ouvir exatamente?",
+     "c": "Escreve três factos sobre o teu próximo público antes de planear."
+    },
+    "pt_BR": {
+     "t": "Conhecer o seu público",
+     "g": "Descubra quem vai ouvir, o que já sabe e o que precisa de você.",
+     "p": [
+      "Pergunte: quem são, o que sabem e o que importa para eles?",
+      "Adapte palavras e exemplos às pessoas que estão na sala.",
+      "Uma apresentação para especialistas e outra para iniciantes soam bem diferentes."
+     ],
+     "q": "Pense numa apresentação próxima: quem vai ouvir exatamente?",
+     "c": "Escreva três fatos sobre o seu próximo público antes de planejar."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finding your purpose",
+     "g": "Decide what your talk should do: inform, persuade, inspire or entertain.",
+     "p": [
+      "Inform: help people understand. Persuade: help them decide or act.",
+      "Inspire: lift their energy. Entertain: give them a good moment.",
+      "One clear purpose makes every other choice easier."
+     ],
+     "q": "Which purpose fits the talk you imagine giving next?",
+     "c": "Finish this sentence aloud: 'After my talk, I want people to...'"
+    },
+    "de": {
+     "t": "Dein Ziel finden",
+     "g": "Entscheide, was dein Vortrag bewirken soll: informieren, überzeugen, inspirieren oder unterhalten.",
+     "p": [
+      "Informieren: Verständnis schaffen. Überzeugen: zu Entscheidung oder Handlung bewegen.",
+      "Inspirieren: Energie geben. Unterhalten: einen schönen Moment schenken.",
+      "Ein klares Ziel macht jede weitere Entscheidung leichter."
+     ],
+     "q": "Welches Ziel passt zu deinem nächsten Vortrag?",
+     "c": "Vollende laut: 'Nach meinem Vortrag sollen die Leute...'"
+    },
+    "es": {
+     "t": "Encontrar tu propósito",
+     "g": "Decide qué debe lograr tu charla: informar, persuadir, inspirar o entretener.",
+     "p": [
+      "Informar: ayudar a entender. Persuadir: ayudar a decidir o actuar.",
+      "Inspirar: dar energía. Entretener: regalar un buen momento.",
+      "Un propósito claro facilita todas las demás decisiones."
+     ],
+     "q": "¿Qué propósito encaja con la charla que imaginas dar?",
+     "c": "Completa en voz alta: 'Después de mi charla, quiero que la gente...'"
+    },
+    "fr": {
+     "t": "Trouver ton objectif",
+     "g": "Décide ce que ton exposé doit faire : informer, convaincre, inspirer ou divertir.",
+     "p": [
+      "Informer : aider à comprendre. Convaincre : aider à décider ou agir.",
+      "Inspirer : donner de l'élan. Divertir : offrir un bon moment.",
+      "Un objectif clair simplifie tous les autres choix."
+     ],
+     "q": "Quel objectif correspond à l'exposé que tu imagines donner ?",
+     "c": "Complète à voix haute : « Après mon exposé, je veux que les gens... »"
+    },
+    "it": {
+     "t": "Trovare il tuo scopo",
+     "g": "Decidi cosa deve fare il tuo discorso: informare, persuadere, ispirare o intrattenere.",
+     "p": [
+      "Informare: aiutare a capire. Persuadere: aiutare a decidere o agire.",
+      "Ispirare: dare energia. Intrattenere: regalare un bel momento.",
+      "Uno scopo chiaro rende più facili tutte le altre scelte."
+     ],
+     "q": "Quale scopo si adatta al discorso che immagini di tenere?",
+     "c": "Completa a voce alta: 'Dopo il mio discorso, voglio che le persone...'"
+    },
+    "pt": {
+     "t": "Encontrar o teu objetivo",
+     "g": "Decide o que a tua apresentação deve fazer: informar, persuadir, inspirar ou divertir.",
+     "p": [
+      "Informar: ajudar a perceber. Persuadir: ajudar a decidir ou agir.",
+      "Inspirar: dar energia. Divertir: oferecer um bom momento.",
+      "Um objetivo claro facilita todas as outras escolhas."
+     ],
+     "q": "Que objetivo combina com a apresentação que imaginas fazer?",
+     "c": "Completa em voz alta: 'Depois da minha apresentação, quero que as pessoas...'"
+    },
+    "pt_BR": {
+     "t": "Encontrar o seu objetivo",
+     "g": "Decida o que a sua apresentação deve fazer: informar, persuadir, inspirar ou divertir.",
+     "p": [
+      "Informar: ajudar a entender. Persuadir: ajudar a decidir ou agir.",
+      "Inspirar: dar energia. Divertir: oferecer um bom momento.",
+      "Um objetivo claro facilita todas as outras escolhas."
+     ],
+     "q": "Que objetivo combina com a apresentação que você imagina fazer?",
+     "c": "Complete em voz alta: 'Depois da minha apresentação, quero que as pessoas...'"
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "One core message",
+     "g": "Sum up your whole talk in a single clear sentence.",
+     "p": [
+      "Your core message is the one idea you want people to take home.",
+      "Keep it short, simple and in everyday words.",
+      "Test it: could a listener repeat it a day later?"
+     ],
+     "q": "What is the one sentence you would want your listeners to remember?",
+     "c": "Write your core message in under 12 words and say it aloud twice."
+    },
+    "de": {
+     "t": "Eine Kernbotschaft",
+     "g": "Fasse deinen ganzen Vortrag in einem klaren Satz zusammen.",
+     "p": [
+      "Die Kernbotschaft ist die eine Idee, die Zuhörer mitnehmen sollen.",
+      "Halte sie kurz, einfach und in Alltagssprache.",
+      "Prüfe sie: Könnte ein Zuhörer sie am nächsten Tag wiederholen?"
+     ],
+     "q": "Welchen einen Satz sollen deine Zuhörer behalten?",
+     "c": "Schreib deine Kernbotschaft in unter 12 Wörtern und sag sie zweimal laut."
+    },
+    "es": {
+     "t": "Un mensaje central",
+     "g": "Resume toda tu charla en una sola frase clara.",
+     "p": [
+      "Tu mensaje central es la idea que quieres que se lleven a casa.",
+      "Hazlo corto, simple y con palabras de todos los días.",
+      "Pruébalo: ¿podría alguien repetirlo al día siguiente?"
+     ],
+     "q": "¿Cuál es la frase que querrías que tu público recordara?",
+     "c": "Escribe tu mensaje central en menos de 12 palabras y dilo dos veces."
+    },
+    "fr": {
+     "t": "Un message central",
+     "g": "Résume tout ton exposé en une seule phrase claire.",
+     "p": [
+      "Ton message central est l'idée que le public doit emporter.",
+      "Garde-le court, simple et en mots de tous les jours.",
+      "Teste-le : un auditeur pourrait-il le répéter le lendemain ?"
+     ],
+     "q": "Quelle phrase voudrais-tu que ton public retienne ?",
+     "c": "Écris ton message central en moins de 12 mots et dis-le deux fois."
+    },
+    "it": {
+     "t": "Un messaggio centrale",
+     "g": "Riassumi tutto il tuo discorso in una sola frase chiara.",
+     "p": [
+      "Il messaggio centrale è l'idea che vuoi far portare a casa.",
+      "Tienilo breve, semplice e con parole di tutti i giorni.",
+      "Mettilo alla prova: un ascoltatore potrebbe ripeterlo il giorno dopo?"
+     ],
+     "q": "Qual è la frase che vorresti che il pubblico ricordasse?",
+     "c": "Scrivi il tuo messaggio centrale in meno di 12 parole e dillo due volte."
+    },
+    "pt": {
+     "t": "Uma mensagem central",
+     "g": "Resume toda a tua apresentação numa única frase clara.",
+     "p": [
+      "A mensagem central é a ideia que queres que levem para casa.",
+      "Mantém-na curta, simples e com palavras do dia a dia.",
+      "Testa: um ouvinte conseguiria repeti-la no dia seguinte?"
+     ],
+     "q": "Qual é a frase que gostarias que o público recordasse?",
+     "c": "Escreve a tua mensagem central em menos de 12 palavras e diz duas vezes."
+    },
+    "pt_BR": {
+     "t": "Uma mensagem central",
+     "g": "Resuma toda a sua apresentação em uma única frase clara.",
+     "p": [
+      "A mensagem central é a ideia que você quer que levem para casa.",
+      "Mantenha curta, simples e com palavras do dia a dia.",
+      "Teste: um ouvinte conseguiria repeti-la no dia seguinte?"
+     ],
+     "q": "Qual é a frase que você gostaria que o público lembrasse?",
+     "c": "Escreva sua mensagem central em menos de 12 palavras e diga duas vezes."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Speaking for one minute",
+     "g": "Give a first tiny talk about something you know really well.",
+     "p": [
+      "Pick a topic you love, like a hobby, a dish or a place.",
+      "Use three beats: one opener, one or two details, one closer.",
+      "One minute is about 130 words, so keep it light and simple."
+     ],
+     "q": "What topic could you talk about for a full minute without notes?",
+     "c": "Time yourself: talk for one minute about a hobby and see how it feels."
+    },
+    "de": {
+     "t": "Eine Minute sprechen",
+     "g": "Halte deinen ersten Mini-Vortrag über etwas, das du richtig gut kennst.",
+     "p": [
+      "Wähle ein Lieblingsthema: Hobby, Gericht oder Ort.",
+      "Nutze drei Schritte: ein Einstieg, ein bis zwei Details, ein Schluss.",
+      "Eine Minute sind etwa 130 Wörter, bleib also leicht und einfach."
+     ],
+     "q": "Über welches Thema könntest du eine Minute ohne Notizen reden?",
+     "c": "Stoppe dich: Sprich eine Minute über ein Hobby und spür, wie es sich anfühlt."
+    },
+    "es": {
+     "t": "Hablar durante un minuto",
+     "g": "Da tu primera mini charla sobre algo que conoces muy bien.",
+     "p": [
+      "Elige un tema que te guste: una afición, un plato o un lugar.",
+      "Usa tres pasos: una apertura, uno o dos detalles, un cierre.",
+      "Un minuto son unas 130 palabras, así que sé simple y ligero."
+     ],
+     "q": "¿De qué tema podrías hablar un minuto entero sin notas?",
+     "c": "Cronométrate: habla un minuto sobre una afición y observa cómo te sientes."
+    },
+    "fr": {
+     "t": "Parler pendant une minute",
+     "g": "Fais ton premier mini exposé sur un sujet que tu connais très bien.",
+     "p": [
+      "Choisis un sujet aimé : un loisir, un plat ou un lieu.",
+      "Utilise trois temps : une ouverture, un ou deux détails, une conclusion.",
+      "Une minute, c'est environ 130 mots : reste simple et léger."
+     ],
+     "q": "Sur quel sujet pourrais-tu parler une minute sans notes ?",
+     "c": "Chronomètre-toi : parle une minute d'un loisir et observe ton ressenti."
+    },
+    "it": {
+     "t": "Parlare per un minuto",
+     "g": "Fai il tuo primo mini discorso su qualcosa che conosci molto bene.",
+     "p": [
+      "Scegli un tema che ami: un hobby, un piatto o un luogo.",
+      "Usa tre momenti: un'apertura, uno o due dettagli, una chiusura.",
+      "Un minuto sono circa 130 parole, quindi resta semplice e leggero."
+     ],
+     "q": "Su quale tema potresti parlare un minuto intero senza appunti?",
+     "c": "Cronometrati: parla un minuto di un hobby e senti come ti trovi."
+    },
+    "pt": {
+     "t": "Falar durante um minuto",
+     "g": "Faz a tua primeira mini apresentação sobre algo que conheces muito bem.",
+     "p": [
+      "Escolhe um tema de que gostes: um passatempo, um prato ou um lugar.",
+      "Usa três momentos: uma abertura, um ou dois detalhes, um fecho.",
+      "Um minuto são cerca de 130 palavras, por isso sê simples e leve."
+     ],
+     "q": "Sobre que tema poderias falar um minuto sem notas?",
+     "c": "Cronometra-te: fala um minuto sobre um passatempo e vê como te sentes."
+    },
+    "pt_BR": {
+     "t": "Falar por um minuto",
+     "g": "Faça a sua primeira mini apresentação sobre algo que você conhece muito bem.",
+     "p": [
+      "Escolha um tema de que goste: um hobby, um prato ou um lugar.",
+      "Use três momentos: uma abertura, um ou dois detalhes, um fechamento.",
+      "Um minuto são cerca de 130 palavras, então seja simples e leve."
+     ],
+     "q": "Sobre que tema você poderia falar um minuto sem anotações?",
+     "c": "Cronometre-se: fale um minuto sobre um hobby e veja como se sente."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breathing basics",
+     "g": "Use slow belly breathing to calm your body and support your voice.",
+     "p": [
+      "Breathe in through the nose for about four counts, letting your belly expand.",
+      "Breathe out slowly through the mouth for about six counts.",
+      "Your voice needs steady air, so a calm breath gives a steadier voice."
+     ],
+     "q": "When do you notice your breathing get fast or shallow?",
+     "c": "Do five slow belly breaths now, then read one sentence aloud on the out-breath."
+    },
+    "de": {
+     "t": "Atem-Grundlagen",
+     "g": "Nutze langsame Bauchatmung, um den Körper zu beruhigen und die Stimme zu tragen.",
+     "p": [
+      "Atme etwa vier Zähler durch die Nase ein und lass den Bauch weit werden.",
+      "Atme etwa sechs Zähler langsam durch den Mund aus.",
+      "Deine Stimme braucht gleichmäßige Luft, ein ruhiger Atem macht sie stabiler."
+     ],
+     "q": "Wann merkst du, dass dein Atem schnell oder flach wird?",
+     "c": "Mach jetzt fünf langsame Bauchatemzüge und lies beim Ausatmen einen Satz laut."
+    },
+    "es": {
+     "t": "Bases de la respiración",
+     "g": "Usa la respiración abdominal lenta para calmar el cuerpo y apoyar la voz.",
+     "p": [
+      "Inhala por la nariz unos cuatro tiempos y deja que el abdomen se expanda.",
+      "Exhala despacio por la boca unos seis tiempos.",
+      "Tu voz necesita aire constante: una respiración calmada la estabiliza."
+     ],
+     "q": "¿Cuándo notas que tu respiración se vuelve rápida o superficial?",
+     "c": "Haz cinco respiraciones abdominales lentas y lee una frase al exhalar."
+    },
+    "fr": {
+     "t": "Bases de la respiration",
+     "g": "Utilise la respiration ventrale lente pour calmer le corps et soutenir la voix.",
+     "p": [
+      "Inspire par le nez environ quatre temps en laissant le ventre se gonfler.",
+      "Expire lentement par la bouche environ six temps.",
+      "Ta voix a besoin d'un souffle régulier : une respiration calme la stabilise."
+     ],
+     "q": "Quand remarques-tu que ta respiration devient rapide ou courte ?",
+     "c": "Fais cinq respirations ventrales lentes puis lis une phrase à voix haute en expirant."
+    },
+    "it": {
+     "t": "Le basi del respiro",
+     "g": "Usa il respiro addominale lento per calmare il corpo e sostenere la voce.",
+     "p": [
+      "Inspira dal naso per circa quattro tempi, lasciando espandere la pancia.",
+      "Espira lentamente dalla bocca per circa sei tempi.",
+      "La voce ha bisogno di aria costante: un respiro calmo la rende più stabile."
+     ],
+     "q": "Quando noti che il tuo respiro diventa veloce o corto?",
+     "c": "Fai cinque respiri addominali lenti, poi leggi una frase a voce alta espirando."
+    },
+    "pt": {
+     "t": "Noções básicas de respiração",
+     "g": "Usa a respiração abdominal lenta para acalmar o corpo e apoiar a voz.",
+     "p": [
+      "Inspira pelo nariz durante cerca de quatro tempos, deixando a barriga expandir.",
+      "Expira devagar pela boca durante cerca de seis tempos.",
+      "A voz precisa de ar constante: uma respiração calma estabiliza-a."
+     ],
+     "q": "Quando notas que a respiração fica rápida ou curta?",
+     "c": "Faz cinco respirações abdominais lentas e lê uma frase ao expirar."
+    },
+    "pt_BR": {
+     "t": "Noções básicas de respiração",
+     "g": "Use a respiração abdominal lenta para acalmar o corpo e apoiar a voz.",
+     "p": [
+      "Inspire pelo nariz por cerca de quatro tempos, deixando a barriga expandir.",
+      "Expire devagar pela boca por cerca de seis tempos.",
+      "A voz precisa de ar constante: uma respiração calma a estabiliza."
+     ],
+     "q": "Quando você percebe que a respiração fica rápida ou curta?",
+     "c": "Faça cinco respirações abdominais lentas e leia uma frase ao expirar."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grounding your body",
+     "g": "Stand steady with both feet planted to feel and look confident.",
+     "p": [
+      "Place your feet about hip-width apart with weight evenly spread.",
+      "Soften your knees slightly instead of locking them.",
+      "Feel the floor under you; a steady base calms the whole body."
+     ],
+     "q": "How do you usually stand when you speak: still, swaying or shifting?",
+     "c": "Stand grounded for one minute and say your name and one fact about you."
+    },
+    "de": {
+     "t": "Den Körper erden",
+     "g": "Steh fest auf beiden Füßen, um dich sicher zu fühlen und so zu wirken.",
+     "p": [
+      "Stell die Füße etwa hüftbreit auf und verteile das Gewicht gleichmäßig.",
+      "Beuge die Knie leicht, statt sie durchzudrücken.",
+      "Spür den Boden unter dir; ein fester Stand beruhigt den ganzen Körper."
+     ],
+     "q": "Wie stehst du meist beim Sprechen: ruhig, wiegend oder wechselnd?",
+     "c": "Steh eine Minute geerdet und sag deinen Namen und einen Fakt über dich."
+    },
+    "es": {
+     "t": "Afianzar el cuerpo",
+     "g": "Párate firme con ambos pies para sentirte y parecer seguro.",
+     "p": [
+      "Separa los pies al ancho de las caderas con el peso repartido.",
+      "Flexiona un poco las rodillas en lugar de bloquearlas.",
+      "Siente el suelo bajo ti; una base firme calma todo el cuerpo."
+     ],
+     "q": "¿Cómo te paras normalmente al hablar: quieto, balanceándote o cambiando?",
+     "c": "Párate firme un minuto y di tu nombre y un dato sobre ti."
+    },
+    "fr": {
+     "t": "Ancrer ton corps",
+     "g": "Tiens-toi stable sur les deux pieds pour te sentir et paraître confiant.",
+     "p": [
+      "Place les pieds à largeur de hanches, poids bien réparti.",
+      "Assouplis légèrement les genoux au lieu de les verrouiller.",
+      "Sens le sol sous toi : une base stable apaise tout le corps."
+     ],
+     "q": "Comment te tiens-tu d'habitude en parlant : immobile, balancé ou changeant ?",
+     "c": "Tiens-toi ancré une minute et dis ton prénom et un fait sur toi."
+    },
+    "it": {
+     "t": "Radicare il corpo",
+     "g": "Stai saldo su entrambi i piedi per sentirti e sembrare sicuro.",
+     "p": [
+      "Metti i piedi all'altezza delle anche con il peso ben distribuito.",
+      "Ammorbidisci leggermente le ginocchia invece di bloccarle.",
+      "Senti il pavimento sotto di te: una base salda calma tutto il corpo."
+     ],
+     "q": "Come stai di solito mentre parli: fermo, ondeggiante o in continuo cambio?",
+     "c": "Stai ben radicato per un minuto e di' il tuo nome e un fatto su di te."
+    },
+    "pt": {
+     "t": "Firmar o corpo",
+     "g": "Fica firme sobre os dois pés para te sentires e pareceres confiante.",
+     "p": [
+      "Coloca os pés à largura das ancas com o peso bem distribuído.",
+      "Flete ligeiramente os joelhos em vez de os bloquear.",
+      "Sente o chão sob ti; uma base firme acalma o corpo todo."
+     ],
+     "q": "Como costumas ficar ao falar: quieto, a balançar ou a mudar de pé?",
+     "c": "Fica firme um minuto e diz o teu nome e um facto sobre ti."
+    },
+    "pt_BR": {
+     "t": "Firmar o corpo",
+     "g": "Fique firme sobre os dois pés para se sentir e parecer confiante.",
+     "p": [
+      "Coloque os pés na largura dos quadris com o peso bem distribuído.",
+      "Flexione levemente os joelhos em vez de travá-los.",
+      "Sinta o chão sob você; uma base firme acalma o corpo todo."
+     ],
+     "q": "Como você costuma ficar ao falar: parado, balançando ou trocando de pé?",
+     "c": "Fique firme por um minuto e diga seu nome e um fato sobre você."
+    }
+   }
+  }
+ ]
+}

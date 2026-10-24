@@ -1,0 +1,835 @@
+{
+ "topic": "fashion_basics",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The classic T-shirt",
+     "g": "Discover necklines, fabrics and fits that make a simple T-shirt look great.",
+     "p": [
+      "Crew, V and scoop necklines frame the face in different ways.",
+      "Mid-weight cotton holds its shape better than very thin fabric.",
+      "A good fit skims the body: not tight, not shapeless, to your taste."
+     ],
+     "q": "What is your perfect T-shirt like, and why do you love it?",
+     "c": "Style a plain T-shirt in a new way today, such as tucked, knotted or layered."
+    },
+    "de": {
+     "t": "Das klassische T-Shirt",
+     "g": "Ausschnitte, Stoffe und Schnitte entdecken, die ein schlichtes T-Shirt gut aussehen lassen.",
+     "p": [
+      "Rund-, V- und tiefe Ausschnitte rahmen das Gesicht unterschiedlich.",
+      "Mittelschwere Baumwolle behält die Form besser als sehr dünner Stoff.",
+      "Gute Passform umspielt den Körper: nicht eng, nicht formlos, ganz nach Geschmack."
+     ],
+     "q": "Wie sieht dein perfektes T-Shirt aus, und warum liebst du es?",
+     "c": "Style heute ein schlichtes T-Shirt neu, etwa eingesteckt, geknotet oder als Schicht."
+    },
+    "es": {
+     "t": "La camiseta clásica",
+     "g": "Descubrir escotes, tejidos y cortes que hacen lucir una camiseta sencilla.",
+     "p": [
+      "Los escotes redondo, en V y amplio enmarcan el rostro de maneras distintas.",
+      "El algodón de peso medio mantiene mejor la forma que un tejido muy fino.",
+      "Un buen ajuste roza el cuerpo: ni apretado ni informe, a tu gusto."
+     ],
+     "q": "¿Cómo es tu camiseta perfecta y por qué la quieres?",
+     "c": "Combina hoy una camiseta lisa de otra forma: metida, anudada o en capas."
+    },
+    "fr": {
+     "t": "Le T-shirt classique",
+     "g": "Découvrir encolures, matières et coupes qui subliment un simple T-shirt.",
+     "p": [
+      "Les encolures ronde, en V et dégagée encadrent le visage différemment.",
+      "Le coton de poids moyen garde mieux sa forme qu'un tissu très fin.",
+      "Une bonne coupe effleure le corps: ni moulante ni informe, selon tes goûts."
+     ],
+     "q": "Comment est ton T-shirt idéal, et pourquoi l'aimes-tu ?",
+     "c": "Stylise aujourd'hui un T-shirt uni autrement : rentré, noué ou en superposition."
+    },
+    "it": {
+     "t": "La maglietta classica",
+     "g": "Scoprire scollature, tessuti e vestibilità che valorizzano una semplice maglietta.",
+     "p": [
+      "Le scollature rotonda, a V e ampia incorniciano il viso in modi diversi.",
+      "Il cotone di medio peso mantiene meglio la forma di un tessuto sottilissimo.",
+      "Una buona vestibilità sfiora il corpo: né stretta né informe, a tuo gusto."
+     ],
+     "q": "Com'è la tua maglietta perfetta e perché la ami?",
+     "c": "Oggi abbina in modo nuovo una maglietta semplice: nei pantaloni, annodata o a strati."
+    },
+    "pt": {
+     "t": "A T-shirt clássica",
+     "g": "Descobrir decotes, tecidos e cortes que valorizam uma T-shirt simples.",
+     "p": [
+      "Os decotes redondo, em V e largo enquadram o rosto de formas diferentes.",
+      "O algodão de peso médio mantém melhor a forma do que um tecido muito fino.",
+      "Um bom corte roça o corpo: nem justo nem informe, ao teu gosto."
+     ],
+     "q": "Como é a tua T-shirt perfeita e porque a adoras?",
+     "c": "Combina hoje uma T-shirt lisa de forma nova: por dentro, com nó ou em camadas."
+    },
+    "pt_BR": {
+     "t": "A camiseta clássica",
+     "g": "Descobrir decotes, tecidos e modelagens que valorizam uma camiseta simples.",
+     "p": [
+      "Os decotes redondo, em V e largo emolduram o rosto de formas diferentes.",
+      "O algodão de peso médio mantém melhor a forma do que um tecido muito fino.",
+      "Um bom caimento roça o corpo: nem justo nem sem forma, ao seu gosto."
+     ],
+     "q": "Como é a sua camiseta perfeita e por que você a adora?",
+     "c": "Combine hoje uma camiseta lisa de um jeito novo: por dentro, com nó ou em camadas."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shirts and blouses",
+     "g": "Learn about collars, cuffs and fabrics, and wearing shirts tucked, untucked or half-tucked.",
+     "p": [
+      "Collars and cuffs set how formal a shirt feels.",
+      "Cotton, linen and silky fabrics each give a different mood.",
+      "Tucked looks neat, untucked looks relaxed, half-tucked looks easy."
+     ],
+     "q": "How do you like to wear your shirts: tucked, untucked or open?",
+     "c": "Wear a shirt today in a way you have never tried, such as half-tucked or open."
+    },
+    "de": {
+     "t": "Hemden und Blusen",
+     "g": "Kragen, Manschetten und Stoffe kennenlernen und Hemden eingesteckt, offen oder halb eingesteckt tragen.",
+     "p": [
+      "Kragen und Manschetten bestimmen, wie förmlich ein Hemd wirkt.",
+      "Baumwolle, Leinen und seidige Stoffe geben jeweils eine andere Stimmung.",
+      "Eingesteckt wirkt gepflegt, offen lässig, halb eingesteckt locker."
+     ],
+     "q": "Wie trägst du Hemden am liebsten: eingesteckt, darüber oder offen?",
+     "c": "Trage heute ein Hemd auf eine neue Art, etwa halb eingesteckt oder offen."
+    },
+    "es": {
+     "t": "Camisas y blusas",
+     "g": "Conocer cuellos, puños y tejidos, y llevar camisas metidas, por fuera o a medias.",
+     "p": [
+      "Cuellos y puños marcan lo formal que se siente una camisa.",
+      "Algodón, lino y tejidos sedosos dan cada uno un ambiente distinto.",
+      "Metida se ve cuidada, por fuera relajada y a medias, desenfadada."
+     ],
+     "q": "¿Cómo te gusta llevar las camisas: metidas, por fuera o abiertas?",
+     "c": "Lleva hoy una camisa de una forma nueva, como a medio meter o abierta."
+    },
+    "fr": {
+     "t": "Chemises et blouses",
+     "g": "Découvrir cols, poignets et matières, et porter la chemise rentrée, sortie ou à moitié rentrée.",
+     "p": [
+      "Le col et les poignets déterminent le côté habillé d'une chemise.",
+      "Coton, lin et tissus soyeux donnent chacun une ambiance différente.",
+      "Rentrée, elle paraît soignée; sortie, décontractée; à moitié rentrée, facile."
+     ],
+     "q": "Comment aimes-tu porter tes chemises : rentrées, sorties ou ouvertes ?",
+     "c": "Porte aujourd'hui une chemise d'une façon nouvelle, à moitié rentrée ou ouverte."
+    },
+    "it": {
+     "t": "Camicie e bluse",
+     "g": "Conoscere colletti, polsini e tessuti e indossare le camicie dentro, fuori o a metà.",
+     "p": [
+      "Colletto e polsini stabiliscono quanto una camicia sembra formale.",
+      "Cotone, lino e tessuti setosi danno ognuno un'atmosfera diversa.",
+      "Dentro appare curata, fuori rilassata, a metà disinvolta."
+     ],
+     "q": "Come ti piace portare le camicie: dentro, fuori o aperte?",
+     "c": "Indossa oggi una camicia in un modo nuovo, come mezza dentro o aperta."
+    },
+    "pt": {
+     "t": "Camisas e blusas",
+     "g": "Conhecer golas, punhos e tecidos e usar camisas por dentro, por fora ou a meio.",
+     "p": [
+      "A gola e os punhos definem o quanto uma camisa parece formal.",
+      "Algodão, linho e tecidos sedosos dão cada um um ambiente diferente.",
+      "Por dentro parece cuidada, por fora descontraída, a meio, descomplicada."
+     ],
+     "q": "Como gostas de usar as camisas: por dentro, por fora ou abertas?",
+     "c": "Usa hoje uma camisa de uma forma nova, como meio por dentro ou aberta."
+    },
+    "pt_BR": {
+     "t": "Camisas e blusas",
+     "g": "Conhecer golas, punhos e tecidos e usar camisas por dentro, por fora ou meio por dentro.",
+     "p": [
+      "A gola e os punhos definem o quanto uma camisa parece formal.",
+      "Algodão, linho e tecidos acetinados dão cada um um clima diferente.",
+      "Por dentro parece caprichada, por fora descontraída, meio por dentro, leve."
+     ],
+     "q": "Como você gosta de usar camisas: por dentro, por fora ou abertas?",
+     "c": "Use hoje uma camisa de um jeito novo, como meio por dentro ou aberta."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Knitwear essentials",
+     "g": "Meet crew necks, V-necks, cardigans and turtlenecks and when each works best.",
+     "p": [
+      "Crew necks are simple and go with nearly everything.",
+      "V-necks and cardigans work well for layering over shirts or tops.",
+      "Turtlenecks give warmth and a clean line around the neck."
+     ],
+     "q": "Which knitwear piece do you reach for when it turns cold?",
+     "c": "Layer a knit over a shirt or T-shirt today and notice the difference."
+    },
+    "de": {
+     "t": "Strick-Basics",
+     "g": "Rundhals, V-Ausschnitt, Cardigan und Rollkragen kennenlernen und wann sie am besten passen.",
+     "p": [
+      "Rundhalspullover sind schlicht und passen zu fast allem.",
+      "V-Ausschnitt und Cardigan eignen sich gut zum Schichten über Hemd oder Top.",
+      "Rollkragen wärmt und gibt eine klare Linie um den Hals."
+     ],
+     "q": "Zu welchem Strickteil greifst du, wenn es kalt wird?",
+     "c": "Trage heute ein Strickteil über Hemd oder T-Shirt und spüre den Unterschied."
+    },
+    "es": {
+     "t": "Lo esencial en punto",
+     "g": "Conocer jerséis de cuello redondo, de pico, cárdigans y cuello alto y cuándo van mejor.",
+     "p": [
+      "El cuello redondo es sencillo y combina con casi todo.",
+      "El pico y el cárdigan van bien en capas sobre camisas o camisetas.",
+      "El cuello alto abriga y deja una línea limpia alrededor del cuello."
+     ],
+     "q": "¿Qué prenda de punto eliges cuando hace frío?",
+     "c": "Pon hoy una prenda de punto sobre una camisa o camiseta y nota la diferencia."
+    },
+    "fr": {
+     "t": "Les essentiels en maille",
+     "g": "Découvrir pulls ras du cou, col V, cardigans et cols roulés, et quand chacun convient.",
+     "p": [
+      "Le col rond est simple et va avec presque tout.",
+      "Le col V et le cardigan se superposent bien sur chemises et hauts.",
+      "Le col roulé donne de la chaleur et une ligne nette autour du cou."
+     ],
+     "q": "Quelle pièce en maille choisis-tu quand il fait froid ?",
+     "c": "Superpose aujourd'hui une maille sur une chemise ou un T-shirt et vois la différence."
+    },
+    "it": {
+     "t": "I capi in maglia essenziali",
+     "g": "Conoscere girocollo, scollo a V, cardigan e dolcevita e quando funzionano meglio.",
+     "p": [
+      "Il girocollo è semplice e va con quasi tutto.",
+      "Scollo a V e cardigan vanno bene da sovrapporre a camicie o top.",
+      "Il dolcevita dà calore e una linea pulita intorno al collo."
+     ],
+     "q": "Quale capo in maglia scegli quando fa freddo?",
+     "c": "Oggi sovrapponi una maglia a una camicia o maglietta e nota la differenza."
+    },
+    "pt": {
+     "t": "Os essenciais em malha",
+     "g": "Conhecer camisolas de gola redonda, em V, casacos de malha e gola alta e quando resultam melhor.",
+     "p": [
+      "A gola redonda é simples e combina com quase tudo.",
+      "A gola em V e o casaco de malha ficam bem em camadas sobre camisas ou tops.",
+      "A gola alta aquece e dá uma linha limpa à volta do pescoço."
+     ],
+     "q": "Que peça de malha escolhes quando está frio?",
+     "c": "Põe hoje uma peça de malha sobre uma camisa ou T-shirt e nota a diferença."
+    },
+    "pt_BR": {
+     "t": "Os essenciais em malha",
+     "g": "Conhecer suéteres de gola redonda, em V, cardigãs e gola alta e quando funcionam melhor.",
+     "p": [
+      "A gola redonda é simples e combina com quase tudo.",
+      "A gola em V e o cardigã ficam bem em camadas sobre camisas ou blusas.",
+      "A gola alta aquece e dá uma linha limpa em volta do pescoço."
+     ],
+     "q": "Que peça de malha você escolhe quando esfria?",
+     "c": "Coloque hoje uma peça de malha sobre uma camisa ou camiseta e note a diferença."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Trousers of many shapes",
+     "g": "Explore straight, wide, tapered and cropped trousers and what each adds.",
+     "p": [
+      "Straight legs are balanced and easy to pair with many tops.",
+      "Wide legs feel airy and flowing; tapered legs narrow towards the ankle.",
+      "Cropped lengths show the ankle and suit shoes you want to show off."
+     ],
+     "q": "Which trouser shape feels most comfortable and like you?",
+     "c": "Try a trouser shape you rarely wear, even just on a fitting-room mirror."
+    },
+    "de": {
+     "t": "Hosen in vielen Formen",
+     "g": "Gerade, weite, schmal zulaufende und verkürzte Hosen erkunden und was jede bringt.",
+     "p": [
+      "Gerade Beine wirken ausgewogen und passen zu vielen Oberteilen.",
+      "Weite Beine wirken luftig und fließend; schmale laufen zum Knöchel zu.",
+      "Verkürzte Längen zeigen den Knöchel und passen zu Schuhen, die du zeigen willst."
+     ],
+     "q": "Welche Hosenform fühlt sich am bequemsten und nach dir an?",
+     "c": "Probiere eine Hosenform, die du selten trägst, notfalls nur vorm Spiegel."
+    },
+    "es": {
+     "t": "Pantalones de muchas formas",
+     "g": "Explorar pantalones rectos, anchos, pitillo y cortos y qué aporta cada uno.",
+     "p": [
+      "Los rectos son equilibrados y combinan con muchas prendas de arriba.",
+      "Los anchos son ligeros y fluidos; los ajustados se estrechan hacia el tobillo.",
+      "Los cortos dejan ver el tobillo y lucen con zapatos que quieres mostrar."
+     ],
+     "q": "¿Qué forma de pantalón te resulta más cómoda y más tuya?",
+     "c": "Prueba una forma de pantalón que uses poco, aunque sea solo frente al espejo."
+    },
+    "fr": {
+     "t": "Des pantalons de toutes formes",
+     "g": "Explorer pantalons droits, larges, fuselés et courts et ce que chacun apporte.",
+     "p": [
+      "La coupe droite est équilibrée et se marie avec beaucoup de hauts.",
+      "Le large est aérien et fluide; le fuselé se resserre vers la cheville.",
+      "Le court dévoile la cheville et met en valeur de jolies chaussures."
+     ],
+     "q": "Quelle forme de pantalon te semble la plus confortable et la plus à toi ?",
+     "c": "Essaie une forme de pantalon que tu portes peu, même juste devant le miroir."
+    },
+    "it": {
+     "t": "Pantaloni di molte forme",
+     "g": "Esplorare pantaloni dritti, ampi, a sigaretta e corti e cosa porta ognuno.",
+     "p": [
+      "I dritti sono equilibrati e si abbinano a molti top.",
+      "Gli ampi sono leggeri e fluidi; quelli a sigaretta si stringono verso la caviglia.",
+      "I corti mostrano la caviglia e valorizzano le scarpe che vuoi far vedere."
+     ],
+     "q": "Quale forma di pantalone ti sembra più comoda e più tua?",
+     "c": "Prova una forma di pantalone che metti poco, anche solo davanti allo specchio."
+    },
+    "pt": {
+     "t": "Calças de muitas formas",
+     "g": "Explorar calças retas, largas, afuniladas e curtas e o que cada uma traz.",
+     "p": [
+      "As retas são equilibradas e combinam com muitas peças de cima.",
+      "As largas são arejadas e fluidas; as afuniladas estreitam para o tornozelo.",
+      "As curtas mostram o tornozelo e valorizam sapatos que queres exibir."
+     ],
+     "q": "Que forma de calças te parece mais confortável e mais tua?",
+     "c": "Experimenta uma forma de calças que uses pouco, nem que seja só ao espelho."
+    },
+    "pt_BR": {
+     "t": "Calças de muitos formatos",
+     "g": "Explorar calças retas, largas, afuniladas e curtas e o que cada uma traz.",
+     "p": [
+      "As retas são equilibradas e combinam com muitas peças de cima.",
+      "As largas são arejadas e fluidas; as afuniladas estreitam até o tornozelo.",
+      "As curtas mostram o tornozelo e valorizam sapatos que você quer exibir."
+     ],
+     "q": "Qual formato de calça parece mais confortável e mais seu?",
+     "c": "Experimente um formato de calça que você usa pouco, nem que seja só no espelho."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Jeans that work for you",
+     "g": "Find jeans by rise, cut and stretch that are comfortable for your body.",
+     "p": [
+      "Rise, cut and stretch matter more than the size on the label.",
+      "Some stretch helps comfort; fully rigid denim feels sturdier.",
+      "Try several cuts: straight, wide, slim and relaxed all fit differently."
+     ],
+     "q": "What do you want from your jeans most: comfort, shape or durability?",
+     "c": "Try on a cut of jeans you have not worn before and judge only the comfort."
+    },
+    "de": {
+     "t": "Jeans, die für dich passen",
+     "g": "Jeans nach Leibhöhe, Schnitt und Stretch finden, die sich an deinem Körper gut anfühlen.",
+     "p": [
+      "Leibhöhe, Schnitt und Stretch zählen mehr als die Größe auf dem Etikett.",
+      "Etwas Stretch erhöht den Komfort; ganz steifer Denim fühlt sich robuster an.",
+      "Probiere mehrere Schnitte: gerade, weit, schmal und locker sitzen unterschiedlich."
+     ],
+     "q": "Was willst du von deiner Jeans am meisten: Komfort, Form oder Haltbarkeit?",
+     "c": "Probiere einen Jeansschnitt an, den du noch nie getragen hast, und urteile nur nach Komfort."
+    },
+    "es": {
+     "t": "Vaqueros que funcionan para ti",
+     "g": "Encontrar vaqueros por tiro, corte y elasticidad que resulten cómodos para tu cuerpo.",
+     "p": [
+      "El tiro, el corte y la elasticidad importan más que la talla de la etiqueta.",
+      "Algo de elasticidad da comodidad; el denim rígido se siente más robusto.",
+      "Prueba varios cortes: recto, ancho, ajustado y holgado quedan distinto."
+     ],
+     "q": "¿Qué quieres más de tus vaqueros: comodidad, forma o durabilidad?",
+     "c": "Pruébate un corte de vaqueros que no hayas llevado y juzga solo la comodidad."
+    },
+    "fr": {
+     "t": "Des jeans qui te vont",
+     "g": "Trouver des jeans selon la taille, la coupe et l'élasticité qui conviennent à ton corps.",
+     "p": [
+      "La hauteur de taille, la coupe et l'élasticité comptent plus que la taille de l'étiquette.",
+      "Un peu d'élasticité aide au confort; le denim rigide paraît plus solide.",
+      "Essaie plusieurs coupes: droit, large, slim et ample tombent différemment."
+     ],
+     "q": "Que veux-tu surtout d'un jean : confort, forme ou durabilité ?",
+     "c": "Essaie une coupe de jean que tu n'as jamais portée et juge seulement le confort."
+    },
+    "it": {
+     "t": "Jeans che funzionano per te",
+     "g": "Trovare jeans per vita, taglio ed elasticità che siano comodi per il tuo corpo.",
+     "p": [
+      "Altezza vita, taglio ed elasticità contano più della taglia in etichetta.",
+      "Un po' di elasticità aiuta il comfort; il denim rigido sembra più robusto.",
+      "Prova più tagli: dritto, ampio, slim e morbido calzano in modo diverso."
+     ],
+     "q": "Cosa vuoi di più dai tuoi jeans: comfort, forma o durata?",
+     "c": "Prova un taglio di jeans che non hai mai indossato e giudica solo il comfort."
+    },
+    "pt": {
+     "t": "Jeans que funcionam para ti",
+     "g": "Encontrar jeans por altura da cintura, corte e elasticidade que sejam confortáveis para o teu corpo.",
+     "p": [
+      "A altura da cintura, o corte e a elasticidade importam mais que o tamanho da etiqueta.",
+      "Alguma elasticidade ajuda ao conforto; o ganga rígido parece mais robusto.",
+      "Experimenta vários cortes: reto, largo, justo e folgado servem de forma diferente."
+     ],
+     "q": "O que queres mais das tuas jeans: conforto, forma ou durabilidade?",
+     "c": "Experimenta um corte de jeans que nunca usaste e avalia só o conforto."
+    },
+    "pt_BR": {
+     "t": "Jeans que funcionam para você",
+     "g": "Encontrar jeans por cintura, modelagem e elasticidade que sejam confortáveis para o seu corpo.",
+     "p": [
+      "A altura da cintura, a modelagem e a elasticidade importam mais que o tamanho da etiqueta.",
+      "Alguma elasticidade ajuda no conforto; o jeans rígido parece mais robusto.",
+      "Experimente várias modelagens: reta, larga, justa e folgada vestem de forma diferente."
+     ],
+     "q": "O que você mais quer do seu jeans: conforto, forma ou durabilidade?",
+     "c": "Experimente uma modelagem de jeans que nunca usou e avalie só o conforto."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Skirts explained",
+     "g": "Meet A-line, pencil, pleated and wrap skirts and how to style each one.",
+     "p": [
+      "A-line skirts flare gently and move easily.",
+      "Pencil skirts are slim, while pleated skirts add movement.",
+      "Wrap skirts adjust at the waist for a personal fit."
+     ],
+     "q": "Do you like wearing skirts? Which shape feels most like you?",
+     "c": "Style a skirt with a shirt or knit you already own, and walk around in it."
+    },
+    "de": {
+     "t": "Röcke erklärt",
+     "g": "A-Linie, Bleistift-, Falten- und Wickelrock kennenlernen und wie man jeden stylt.",
+     "p": [
+      "A-Linien-Röcke schwingen leicht aus und bewegen sich frei.",
+      "Bleistiftröcke sind schmal, Faltenröcke bringen Bewegung.",
+      "Wickelröcke lassen sich in der Taille anpassen für einen eigenen Sitz."
+     ],
+     "q": "Trägst du gern Röcke? Welche Form fühlt sich am meisten nach dir an?",
+     "c": "Kombiniere einen Rock mit einem Hemd oder Strickteil, das du hast, und geh darin umher."
+    },
+    "es": {
+     "t": "Faldas explicadas",
+     "g": "Conocer faldas evasé, de tubo, plisadas y cruzadas y cómo combinar cada una.",
+     "p": [
+      "Las evasé se ensanchan suavemente y se mueven con facilidad.",
+      "Las de tubo son ajustadas y las plisadas aportan movimiento.",
+      "Las cruzadas se ajustan en la cintura para un ajuste personal."
+     ],
+     "q": "¿Te gusta llevar falda? ¿Qué forma sientes más tuya?",
+     "c": "Combina una falda con una camisa o jersey que ya tengas y camina con ella."
+    },
+    "fr": {
+     "t": "Les jupes expliquées",
+     "g": "Découvrir jupes trapèze, crayon, plissées et portefeuille, et comment styliser chacune.",
+     "p": [
+      "La jupe trapèze s'évase doucement et bouge facilement.",
+      "La jupe crayon est ajustée, la plissée apporte du mouvement.",
+      "La jupe portefeuille s'ajuste à la taille pour une coupe personnelle."
+     ],
+     "q": "Aimes-tu porter des jupes ? Quelle forme te ressemble le plus ?",
+     "c": "Associe une jupe à une chemise ou un pull que tu as déjà, et marche avec."
+    },
+    "it": {
+     "t": "Le gonne spiegate",
+     "g": "Conoscere gonne a ruota, a tubino, plissettate e a portafoglio e come abbinare ciascuna.",
+     "p": [
+      "Le gonne a trapezio si allargano dolcemente e si muovono con facilità.",
+      "Quelle a tubino sono aderenti, quelle plissettate danno movimento.",
+      "Quelle a portafoglio si regolano in vita per una vestibilità personale."
+     ],
+     "q": "Ti piace indossare le gonne? Quale forma senti più tua?",
+     "c": "Abbina una gonna a una camicia o maglia che hai già e cammina con essa."
+    },
+    "pt": {
+     "t": "As saias explicadas",
+     "g": "Conhecer saias em A, lápis, plissadas e envolventes e como combinar cada uma.",
+     "p": [
+      "As saias em A alargam suavemente e movem-se com facilidade.",
+      "As de lápis são justas e as plissadas dão movimento.",
+      "As envolventes ajustam-se na cintura para um corte pessoal."
+     ],
+     "q": "Gostas de usar saias? Que forma sentes mais tua?",
+     "c": "Combina uma saia com uma camisa ou camisola que já tenhas e anda com ela."
+    },
+    "pt_BR": {
+     "t": "As saias explicadas",
+     "g": "Conhecer saias evasê, lápis, plissadas e envelope e como combinar cada uma.",
+     "p": [
+      "As evasê alargam suavemente e se movem com facilidade.",
+      "As lápis são justas e as plissadas dão movimento.",
+      "As envelope se ajustam na cintura para um caimento pessoal."
+     ],
+     "q": "Você gosta de usar saia? Qual formato sente mais seu?",
+     "c": "Combine uma saia com uma camisa ou suéter que você já tem e ande com ela."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dresses for every day",
+     "g": "See easy everyday dresses and how layers and shoes change their look.",
+     "p": [
+      "A simple dress is a complete outfit in one piece.",
+      "A jacket or cardigan changes it for cooler days or smarter settings.",
+      "Sneakers make it casual; boots or flats shift the mood."
+     ],
+     "q": "Which dress feels easiest for you to wear on an ordinary day?",
+     "c": "Wear a dress, or imagine one, and plan three ways to change it with layers and shoes."
+    },
+    "de": {
+     "t": "Kleider für jeden Tag",
+     "g": "Einfache Alltagskleider kennenlernen und wie Schichten und Schuhe ihren Look verändern.",
+     "p": [
+      "Ein schlichtes Kleid ist ein komplettes Outfit in einem Teil.",
+      "Jacke oder Cardigan verändern es für kühlere Tage oder förmlichere Anlässe.",
+      "Sneaker machen es lässig; Stiefel oder Ballerinas verändern die Stimmung."
+     ],
+     "q": "Welches Kleid trägst du an einem normalen Tag am leichtesten?",
+     "c": "Trage ein Kleid, oder stell dir eins vor, und plane drei Wege, es mit Schichten und Schuhen zu verändern."
+    },
+    "es": {
+     "t": "Vestidos para cada día",
+     "g": "Ver vestidos sencillos de diario y cómo las capas y los zapatos cambian su aspecto.",
+     "p": [
+      "Un vestido sencillo es un conjunto completo en una pieza.",
+      "Una chaqueta o un cárdigan lo adapta a días frescos o ambientes más arreglados.",
+      "Con zapatillas es casual; con botas o bailarinas cambia el ambiente."
+     ],
+     "q": "¿Qué vestido te resulta más fácil de llevar un día normal?",
+     "c": "Lleva un vestido, o imagina uno, y planea tres formas de cambiarlo con capas y zapatos."
+    },
+    "fr": {
+     "t": "Des robes pour tous les jours",
+     "g": "Voir des robes simples du quotidien et comment couches et chaussures changent leur allure.",
+     "p": [
+      "Une robe simple est une tenue complète en une seule pièce.",
+      "Une veste ou un cardigan l'adapte aux jours frais ou aux occasions plus habillées.",
+      "Avec des baskets, elle devient décontractée; bottes ou ballerines changent l'ambiance."
+     ],
+     "q": "Quelle robe te semble la plus facile à porter un jour ordinaire ?",
+     "c": "Porte une robe, ou imagine-en une, et prévois trois façons de la changer avec couches et chaussures."
+    },
+    "it": {
+     "t": "Abiti per ogni giorno",
+     "g": "Vedere abiti semplici di tutti i giorni e come strati e scarpe ne cambiano l'aspetto.",
+     "p": [
+      "Un abito semplice è un outfit completo in un solo pezzo.",
+      "Una giacca o un cardigan lo adatta ai giorni freschi o a occasioni più curate.",
+      "Con le sneaker è casual; stivali o ballerine cambiano l'atmosfera."
+     ],
+     "q": "Quale abito ti sembra più facile da indossare in un giorno normale?",
+     "c": "Indossa un abito, o immaginane uno, e pensa tre modi per cambiarlo con strati e scarpe."
+    },
+    "pt": {
+     "t": "Vestidos para todos os dias",
+     "g": "Ver vestidos simples do dia a dia e como camadas e sapatos mudam o seu aspeto.",
+     "p": [
+      "Um vestido simples é um conjunto completo numa só peça.",
+      "Um casaco ou casaco de malha adapta-o a dias frescos ou ocasiões mais cuidadas.",
+      "Com ténis fica casual; botas ou sabrinas mudam o ambiente."
+     ],
+     "q": "Que vestido te parece mais fácil de usar num dia normal?",
+     "c": "Usa um vestido, ou imagina um, e planeia três formas de o mudar com camadas e sapatos."
+    },
+    "pt_BR": {
+     "t": "Vestidos para todo dia",
+     "g": "Ver vestidos simples do dia a dia e como camadas e sapatos mudam seu visual.",
+     "p": [
+      "Um vestido simples é um look completo numa só peça.",
+      "Uma jaqueta ou cardigã adapta o vestido a dias frescos ou ocasiões mais arrumadas.",
+      "Com tênis fica casual; botas ou sapatilhas mudam o clima."
+     ],
+     "q": "Qual vestido parece mais fácil de usar num dia comum?",
+     "c": "Use um vestido, ou imagine um, e planeje três jeitos de mudá-lo com camadas e sapatos."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Jumpsuits and one-piece outfits",
+     "g": "See how one-piece outfits give an effortless, complete look.",
+     "p": [
+      "A jumpsuit is top and trousers in one piece: one decision, one outfit.",
+      "Fabric matters: soft fabrics drape, structured ones look sharper.",
+      "Check comfort when sitting and bending, as the length must suit your body."
+     ],
+     "q": "Would a one-piece outfit make your mornings easier? Why or why not?",
+     "c": "Imagine or try a one-piece outfit and note two ways you would accessorise it."
+    },
+    "de": {
+     "t": "Overalls und Einteiler",
+     "g": "Sehen, wie Einteiler einen mühelosen, kompletten Look schaffen.",
+     "p": [
+      "Ein Jumpsuit ist Oberteil und Hose in einem: eine Entscheidung, ein Outfit.",
+      "Der Stoff zählt: Weiche Stoffe fallen locker, strukturierte wirken schärfer.",
+      "Prüfe Komfort beim Sitzen und Bücken, denn die Länge muss zu deinem Körper passen."
+     ],
+     "q": "Würde dir ein Einteiler die Morgen erleichtern? Warum oder warum nicht?",
+     "c": "Stell dir einen Einteiler vor oder probiere einen an und überlege zwei Accessoires dazu."
+    },
+    "es": {
+     "t": "Monos y piezas únicas",
+     "g": "Ver cómo las prendas de una pieza dan un look completo y sin esfuerzo.",
+     "p": [
+      "Un mono es parte de arriba y pantalón en una pieza: una decisión, un conjunto.",
+      "El tejido importa: los suaves caen fluidos, los estructurados se ven más definidos.",
+      "Comprueba la comodidad al sentarte y agacharte, pues el largo debe ir con tu cuerpo."
+     ],
+     "q": "¿Te facilitaría las mañanas un conjunto de una pieza? ¿Por qué?",
+     "c": "Imagina o prueba un conjunto de una pieza y anota dos complementos para llevarlo."
+    },
+    "fr": {
+     "t": "Combinaisons et tenues une pièce",
+     "g": "Voir comment les tenues une pièce offrent un look complet sans effort.",
+     "p": [
+      "Une combinaison réunit haut et pantalon: une décision, une tenue.",
+      "La matière compte: les tissus souples tombent bien, les structurés paraissent plus nets.",
+      "Vérifie le confort assis et penché, car la longueur doit convenir à ton corps."
+     ],
+     "q": "Une tenue une pièce faciliterait-elle tes matins ? Pourquoi ?",
+     "c": "Imagine ou essaie une tenue une pièce et note deux accessoires pour la compléter."
+    },
+    "it": {
+     "t": "Tute e capi interi",
+     "g": "Vedere come i capi interi offrono un look completo e senza sforzo.",
+     "p": [
+      "Una tuta unisce top e pantaloni in un pezzo: una scelta, un outfit.",
+      "Il tessuto conta: quelli morbidi cadono fluidi, quelli strutturati sembrano più netti.",
+      "Controlla il comfort da seduto e piegato, perché la lunghezza deve adattarsi al tuo corpo."
+     ],
+     "q": "Un capo intero ti semplificherebbe le mattine? Perché?",
+     "c": "Immagina o prova un capo intero e annota due accessori con cui lo completeresti."
+    },
+    "pt": {
+     "t": "Fatos-macaco e peças únicas",
+     "g": "Ver como as peças únicas dão um visual completo e sem esforço.",
+     "p": [
+      "Um fato-macaco junta parte de cima e calças numa peça: uma decisão, um conjunto.",
+      "O tecido conta: os suaves caem fluidos, os estruturados parecem mais definidos.",
+      "Verifica o conforto sentado e a baixar-te, pois o comprimento tem de servir ao teu corpo."
+     ],
+     "q": "Um conjunto de uma só peça facilitaria as tuas manhãs? Porquê?",
+     "c": "Imagina ou experimenta uma peça única e anota dois acessórios para a completar."
+    },
+    "pt_BR": {
+     "t": "Macacões e peças únicas",
+     "g": "Ver como as peças únicas dão um visual completo e sem esforço.",
+     "p": [
+      "Um macacão junta parte de cima e calça numa peça: uma decisão, um look.",
+      "O tecido conta: os macios caem fluidos, os estruturados parecem mais definidos.",
+      "Verifique o conforto sentado e agachado, pois o comprimento precisa servir ao seu corpo."
+     ],
+     "q": "Uma peça única facilitaria suas manhãs? Por quê?",
+     "c": "Imagine ou experimente uma peça única e anote dois acessórios para completá-la."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shorts with style",
+     "g": "Learn lengths and fabrics of shorts and how to wear them smartly in warm weather.",
+     "p": [
+      "Lengths vary from short to knee length; choose what feels comfortable.",
+      "Cotton, linen and denim shorts suit different moods.",
+      "Tailored shorts with a shirt look smart; sporty ones feel relaxed."
+     ],
+     "q": "What length of shorts makes you feel most at ease?",
+     "c": "Try shorts with a shirt or neat top instead of a T-shirt and see the difference."
+    },
+    "de": {
+     "t": "Shorts mit Stil",
+     "g": "Längen und Stoffe von Shorts kennenlernen und sie bei Wärme gepflegt tragen.",
+     "p": [
+      "Die Längen reichen von kurz bis knielang; wähle, was sich bequem anfühlt.",
+      "Shorts aus Baumwolle, Leinen und Denim passen zu verschiedenen Stimmungen.",
+      "Geschnittene Shorts mit Hemd wirken gepflegt; sportliche wirken locker."
+     ],
+     "q": "Bei welcher Shortslänge fühlst du dich am wohlsten?",
+     "c": "Kombiniere Shorts mit Hemd oder gepflegtem Top statt T-Shirt und sieh den Unterschied."
+    },
+    "es": {
+     "t": "Pantalones cortos con estilo",
+     "g": "Aprender largos y tejidos de los cortos y cómo llevarlos con gusto cuando hace calor.",
+     "p": [
+      "Los largos van de cortos a hasta la rodilla; elige lo que te resulte cómodo.",
+      "Los cortos de algodón, lino y denim encajan con ambientes distintos.",
+      "Los de corte sastre con camisa se ven arreglados; los deportivos, relajados."
+     ],
+     "q": "¿Con qué largo de pantalón corto te sientes más a gusto?",
+     "c": "Prueba un short con camisa o top cuidado en vez de camiseta y mira la diferencia."
+    },
+    "fr": {
+     "t": "Des shorts avec style",
+     "g": "Apprendre les longueurs et matières des shorts et comment les porter avec goût quand il fait chaud.",
+     "p": [
+      "Les longueurs vont du très court au genou; choisis ce qui est confortable.",
+      "Les shorts en coton, lin ou denim conviennent à des ambiances différentes.",
+      "Un short taillé avec une chemise paraît soigné; un short sportif, décontracté."
+     ],
+     "q": "Avec quelle longueur de short te sens-tu le plus à l'aise ?",
+     "c": "Essaie un short avec une chemise ou un haut soigné plutôt qu'un T-shirt."
+    },
+    "it": {
+     "t": "Pantaloncini con stile",
+     "g": "Imparare lunghezze e tessuti dei pantaloncini e come portarli con gusto quando fa caldo.",
+     "p": [
+      "Le lunghezze vanno dal corto al ginocchio; scegli ciò che è comodo.",
+      "Pantaloncini di cotone, lino e denim si adattano a atmosfere diverse.",
+      "Quelli sartoriali con camicia sembrano curati; quelli sportivi, rilassati."
+     ],
+     "q": "Con quale lunghezza di pantaloncini ti senti più a tuo agio?",
+     "c": "Prova dei pantaloncini con una camicia o un top curato invece della maglietta."
+    },
+    "pt": {
+     "t": "Calções com estilo",
+     "g": "Aprender comprimentos e tecidos dos calções e como usá-los com gosto no calor.",
+     "p": [
+      "Os comprimentos vão de curtos a pelo joelho; escolhe o que for confortável.",
+      "Calções de algodão, linho e ganga adequam-se a ambientes diferentes.",
+      "Os de corte alfaiate com camisa ficam cuidados; os desportivos, descontraídos."
+     ],
+     "q": "Com que comprimento de calções te sentes mais à vontade?",
+     "c": "Experimenta calções com camisa ou top cuidado em vez de T-shirt e vê a diferença."
+    },
+    "pt_BR": {
+     "t": "Shorts com estilo",
+     "g": "Aprender comprimentos e tecidos dos shorts e como usá-los com gosto no calor.",
+     "p": [
+      "Os comprimentos vão de curtos a até o joelho; escolha o que for confortável.",
+      "Shorts de algodão, linho e jeans combinam com climas diferentes.",
+      "Os de alfaiataria com camisa ficam arrumados; os esportivos, descontraídos."
+     ],
+     "q": "Com que comprimento de short você se sente mais à vontade?",
+     "c": "Experimente um short com camisa ou blusa arrumada em vez de camiseta e veja a diferença."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Suits and tailoring basics",
+     "g": "See jackets and matching trousers or skirts, and how tailoring shapes a look.",
+     "p": [
+      "A suit is a jacket with matching trousers or skirt, in the same fabric.",
+      "Tailoring gives structure through shoulders, seams and lining.",
+      "Suits suit everyone when they fit well; you can also wear the pieces separately."
+     ],
+     "q": "Would you enjoy wearing a suit, or its pieces separately? How?",
+     "c": "Try pairing a suit jacket or trousers with casual pieces and see the contrast."
+    },
+    "de": {
+     "t": "Anzüge und Schneiderei-Basics",
+     "g": "Jacketts mit passender Hose oder Rock kennenlernen und wie Schneiderkunst einen Look formt.",
+     "p": [
+      "Ein Anzug ist ein Jackett mit passender Hose oder Rock aus demselben Stoff.",
+      "Schneiderei gibt Struktur durch Schultern, Nähte und Futter.",
+      "Anzüge stehen allen, wenn sie passen; die Teile lassen sich auch einzeln tragen."
+     ],
+     "q": "Würdest du gern einen Anzug oder seine Teile einzeln tragen? Wie?",
+     "c": "Kombiniere ein Jackett oder eine Anzughose mit Freizeitteilen und sieh den Kontrast."
+    },
+    "es": {
+     "t": "Trajes y nociones de sastrería",
+     "g": "Ver chaquetas con pantalón o falda a juego y cómo la sastrería da forma a un look.",
+     "p": [
+      "Un traje es una chaqueta con pantalón o falda a juego, del mismo tejido.",
+      "La sastrería da estructura con hombros, costuras y forro.",
+      "Los trajes sientan bien a todos si quedan bien; también puedes llevar las piezas por separado."
+     ],
+     "q": "¿Te gustaría llevar un traje o sus piezas por separado? ¿Cómo?",
+     "c": "Combina una chaqueta o pantalón de traje con prendas informales y mira el contraste."
+    },
+    "fr": {
+     "t": "Costumes et bases de la coupe",
+     "g": "Voir vestes avec pantalon ou jupe assortis et comment la coupe sur mesure façonne une allure.",
+     "p": [
+      "Un costume est une veste avec pantalon ou jupe assortis, dans le même tissu.",
+      "La coupe tailleur donne de la structure par les épaules, les coutures et la doublure.",
+      "Un costume va à tout le monde s'il est bien ajusté; on peut aussi porter les pièces séparément."
+     ],
+     "q": "Aimerais-tu porter un costume ou ses pièces séparées ? Comment ?",
+     "c": "Associe une veste ou un pantalon de costume à des pièces décontractées et vois le contraste."
+    },
+    "it": {
+     "t": "Abiti e basi di sartoria",
+     "g": "Vedere giacche con pantaloni o gonna coordinati e come la sartoria modella un look.",
+     "p": [
+      "Un completo è una giacca con pantaloni o gonna coordinati, nello stesso tessuto.",
+      "La sartoria dà struttura con spalle, cuciture e fodera.",
+      "I completi stanno bene a tutti se calzano bene; i pezzi si possono anche usare separati."
+     ],
+     "q": "Ti piacerebbe indossare un completo o i suoi pezzi separati? Come?",
+     "c": "Abbina una giacca o dei pantaloni da completo a capi casual e osserva il contrasto."
+    },
+    "pt": {
+     "t": "Fatos e noções de alfaiataria",
+     "g": "Ver casacos com calças ou saia a condizer e como a alfaiataria dá forma a um visual.",
+     "p": [
+      "Um fato é um casaco com calças ou saia a condizer, do mesmo tecido.",
+      "A alfaiataria dá estrutura com ombros, costuras e forro.",
+      "Os fatos ficam bem a todos se servirem bem; podes também usar as peças em separado."
+     ],
+     "q": "Gostarias de usar um fato ou as suas peças em separado? Como?",
+     "c": "Combina um casaco ou calças de fato com peças casuais e vê o contraste."
+    },
+    "pt_BR": {
+     "t": "Ternos e noções de alfaiataria",
+     "g": "Ver paletós com calça ou saia combinando e como a alfaiataria dá forma a um look.",
+     "p": [
+      "Um terno é um paletó com calça ou saia combinando, do mesmo tecido.",
+      "A alfaiataria dá estrutura com ombros, costuras e forro.",
+      "Ternos ficam bem em todos se vestirem bem; também dá para usar as peças separadas."
+     ],
+     "q": "Você gostaria de usar um terno ou suas peças separadas? Como?",
+     "c": "Combine um paletó ou calça de terno com peças casuais e veja o contraste."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "remote_work",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing is the remote superpower",
+     "g": "See why clear writing replaces hallway conversations in distributed teams.",
+     "p": [
+      "In a remote team, most knowledge lives in writing, not in the hallway.",
+      "Good writing saves meetings and lets people work in different time zones.",
+      "Clear writing is a skill you can practise a little every day."
+     ],
+     "q": "Where could a clearer written note have saved you a call recently?",
+     "c": "Write one message today as if the reader had no background at all."
+    },
+    "de": {
+     "t": "Schreiben ist die Superkraft im Remote-Team",
+     "g": "Erkenne, warum klares Schreiben in verteilten Teams die Flurgespräche ersetzt.",
+     "p": [
+      "In einem Remote-Team steckt das meiste Wissen in Texten, nicht im Flur.",
+      "Gutes Schreiben spart Meetings und ermöglicht Arbeit über Zeitzonen hinweg.",
+      "Klares Schreiben lässt sich jeden Tag ein wenig üben."
+     ],
+     "q": "Wo hätte dir zuletzt eine klarere Notiz einen Anruf erspart?",
+     "c": "Schreib heute eine Nachricht so, als hätte der Leser keinerlei Vorwissen."
+    },
+    "es": {
+     "t": "Escribir es el superpoder remoto",
+     "g": "Descubre por qué escribir con claridad sustituye las charlas de pasillo en equipos distribuidos.",
+     "p": [
+      "En un equipo remoto, casi todo el conocimiento vive por escrito, no en el pasillo.",
+      "Escribir bien ahorra reuniones y permite trabajar en distintos husos horarios.",
+      "Escribir con claridad es una habilidad que se practica un poco cada día."
+     ],
+     "q": "¿Dónde te habría ahorrado una llamada una nota más clara hace poco?",
+     "c": "Escribe hoy un mensaje como si quien lo lea no supiera nada del tema."
+    },
+    "fr": {
+     "t": "L'écriture, superpouvoir du travail à distance",
+     "g": "Vois pourquoi écrire clairement remplace les discussions de couloir dans les équipes réparties.",
+     "p": [
+      "Dans une équipe à distance, la plupart du savoir vit par écrit, pas dans le couloir.",
+      "Bien écrire évite des réunions et permet de travailler sur plusieurs fuseaux horaires.",
+      "Écrire clairement s'exerce un peu chaque jour."
+     ],
+     "q": "Où une note plus claire t'aurait-elle évité un appel récemment ?",
+     "c": "Écris aujourd'hui un message comme si le lecteur ne connaissait rien du contexte."
+    },
+    "it": {
+     "t": "Scrivere è il superpotere del lavoro da remoto",
+     "g": "Scopri perché scrivere con chiarezza sostituisce le chiacchiere in corridoio nei team distribuiti.",
+     "p": [
+      "In un team da remoto gran parte della conoscenza vive nella scrittura, non nel corridoio.",
+      "Scrivere bene evita riunioni e permette di lavorare su fusi orari diversi.",
+      "Scrivere con chiarezza è una competenza che si allena un po' ogni giorno."
+     ],
+     "q": "Dove una nota più chiara ti avrebbe evitato una chiamata di recente?",
+     "c": "Scrivi oggi un messaggio come se chi legge non sapesse nulla del contesto."
+    },
+    "pt": {
+     "t": "Escrever é o superpoder do trabalho remoto",
+     "g": "Percebe porque escrever com clareza substitui as conversas de corredor em equipas distribuídas.",
+     "p": [
+      "Numa equipa remota, quase todo o conhecimento vive por escrito, não no corredor.",
+      "Escrever bem poupa reuniões e permite trabalhar em fusos horários diferentes.",
+      "Escrever com clareza é uma competência que se pratica um pouco todos os dias."
+     ],
+     "q": "Onde é que uma nota mais clara te teria poupado uma chamada recentemente?",
+     "c": "Escreve hoje uma mensagem como se quem lê não soubesse nada do assunto."
+    },
+    "pt_BR": {
+     "t": "Escrever é o superpoder do trabalho remoto",
+     "g": "Entenda por que escrever com clareza substitui as conversas de corredor em times distribuídos.",
+     "p": [
+      "Num time remoto, quase todo o conhecimento vive por escrito, não no corredor.",
+      "Escrever bem poupa reuniões e permite trabalhar em fusos horários diferentes.",
+      "Escrever com clareza é uma habilidade que se pratica um pouco todo dia."
+     ],
+     "q": "Onde uma nota mais clara teria poupado uma ligação para você recentemente?",
+     "c": "Escreva hoje uma mensagem como se quem lê não soubesse nada do assunto."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing clear and short messages",
+     "g": "Put the key point first and cut unnecessary words.",
+     "p": [
+      "Start with the main point or request, then add details.",
+      "Cut filler words and long openings; one idea per sentence.",
+      "Read your message once before sending, and trim what is not needed."
+     ],
+     "q": "Which of your messages tend to be longer than they need to be?",
+     "c": "Take a long message you wrote and cut it by a third."
+    },
+    "de": {
+     "t": "Klare und kurze Nachrichten schreiben",
+     "g": "Stelle den Kernpunkt voran und streiche unnötige Wörter.",
+     "p": [
+      "Beginne mit dem Hauptpunkt oder der Bitte, dann folgen Details.",
+      "Streiche Füllwörter und lange Einleitungen; eine Idee pro Satz.",
+      "Lies deine Nachricht vor dem Senden einmal durch und kürze Überflüssiges."
+     ],
+     "q": "Welche deiner Nachrichten sind oft länger als nötig?",
+     "c": "Nimm eine lange Nachricht von dir und kürze sie um ein Drittel."
+    },
+    "es": {
+     "t": "Escribir mensajes claros y breves",
+     "g": "Pon lo esencial primero y quita las palabras que sobran.",
+     "p": [
+      "Empieza con el punto principal o la petición y luego añade detalles.",
+      "Quita muletillas y introducciones largas; una idea por frase.",
+      "Lee tu mensaje una vez antes de enviarlo y recorta lo que no haga falta."
+     ],
+     "q": "¿Cuáles de tus mensajes suelen ser más largos de lo necesario?",
+     "c": "Toma un mensaje largo que hayas escrito y recórtalo un tercio."
+    },
+    "fr": {
+     "t": "Écrire des messages clairs et courts",
+     "g": "Mets l'essentiel en premier et supprime les mots inutiles.",
+     "p": [
+      "Commence par le point principal ou la demande, puis ajoute les détails.",
+      "Supprime les mots de remplissage et les longues introductions ; une idée par phrase.",
+      "Relis ton message une fois avant l'envoi et retire le superflu."
+     ],
+     "q": "Lesquels de tes messages sont souvent plus longs que nécessaire ?",
+     "c": "Prends un long message que tu as écrit et raccourcis-le d'un tiers."
+    },
+    "it": {
+     "t": "Scrivere messaggi chiari e brevi",
+     "g": "Metti per primo il punto chiave e taglia le parole inutili.",
+     "p": [
+      "Inizia con il punto principale o la richiesta, poi aggiungi i dettagli.",
+      "Taglia riempitivi e lunghe introduzioni; un'idea per frase.",
+      "Rileggi il messaggio una volta prima di inviarlo e taglia il superfluo."
+     ],
+     "q": "Quali dei tuoi messaggi sono spesso più lunghi del necessario?",
+     "c": "Prendi un messaggio lungo che hai scritto e accorcialo di un terzo."
+    },
+    "pt": {
+     "t": "Escrever mensagens claras e curtas",
+     "g": "Põe o ponto principal primeiro e corta as palavras desnecessárias.",
+     "p": [
+      "Começa pelo ponto principal ou pedido e só depois acrescenta detalhes.",
+      "Corta palavras de enchimento e introduções longas; uma ideia por frase.",
+      "Lê a mensagem uma vez antes de enviar e tira o que não for preciso."
+     ],
+     "q": "Quais das tuas mensagens costumam ser mais longas do que o necessário?",
+     "c": "Pega numa mensagem longa que escreveste e encurta-a em um terço."
+    },
+    "pt_BR": {
+     "t": "Escrevendo mensagens claras e curtas",
+     "g": "Coloque o ponto principal primeiro e corte as palavras desnecessárias.",
+     "p": [
+      "Comece pelo ponto principal ou pedido e só depois acrescente detalhes.",
+      "Corte palavras de enchimento e introduções longas; uma ideia por frase.",
+      "Leia a mensagem uma vez antes de enviar e tire o que não for preciso."
+     ],
+     "q": "Quais das suas mensagens costumam ser mais longas do que o necessário?",
+     "c": "Pegue uma mensagem longa que você escreveu e encurte em um terço."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tone in text messages",
+     "g": "See how text can sound colder than intended and how to add warmth.",
+     "p": [
+      "Without voice and face, a short message can sound abrupt.",
+      "A greeting, a thank-you or a soft opener changes the feel completely.",
+      "When unsure how a message will land, read it aloud once."
+     ],
+     "q": "Has a message ever been read in a different tone than you meant?",
+     "c": "Add one warm touch to each message you send today."
+    },
+    "de": {
+     "t": "Ton in Textnachrichten",
+     "g": "Erkenne, wie Text kälter klingen kann als gemeint, und wie du Wärme ergänzt.",
+     "p": [
+      "Ohne Stimme und Gesicht kann eine kurze Nachricht schroff wirken.",
+      "Ein Gruß, ein Dank oder ein weicher Einstieg verändert den Eindruck völlig.",
+      "Bist du unsicher, wie eine Nachricht ankommt, lies sie einmal laut."
+     ],
+     "q": "Wurde eine Nachricht von dir schon mal in anderem Ton gelesen als gemeint?",
+     "c": "Füge heute jeder Nachricht eine warme Note hinzu."
+    },
+    "es": {
+     "t": "El tono en los mensajes de texto",
+     "g": "Descubre cómo el texto puede sonar más frío de lo que quieres y cómo darle calidez.",
+     "p": [
+      "Sin voz ni cara, un mensaje corto puede sonar brusco.",
+      "Un saludo, un gracias o una apertura suave cambian por completo la sensación.",
+      "Si dudas de cómo sonará un mensaje, léelo en voz alta una vez."
+     ],
+     "q": "¿Alguna vez han leído un mensaje tuyo con un tono distinto al que querías?",
+     "c": "Añade hoy un toque cálido a cada mensaje que envíes."
+    },
+    "fr": {
+     "t": "Le ton dans les messages écrits",
+     "g": "Vois comment un texte peut sembler plus froid que voulu et comment ajouter de la chaleur.",
+     "p": [
+      "Sans voix ni visage, un message court peut paraître sec.",
+      "Un bonjour, un merci ou une ouverture douce change complètement l'impression.",
+      "Si tu doutes de l'effet d'un message, lis-le une fois à voix haute."
+     ],
+     "q": "Un de tes messages a-t-il déjà été lu sur un autre ton que prévu ?",
+     "c": "Ajoute aujourd'hui une touche chaleureuse à chaque message que tu envoies."
+    },
+    "it": {
+     "t": "Il tono nei messaggi scritti",
+     "g": "Scopri come il testo può suonare più freddo del voluto e come aggiungere calore.",
+     "p": [
+      "Senza voce e viso, un messaggio breve può sembrare brusco.",
+      "Un saluto, un grazie o un'apertura morbida cambiano del tutto la sensazione.",
+      "Se non sei sicuro di come arriverà un messaggio, leggilo una volta a voce alta."
+     ],
+     "q": "Un tuo messaggio è mai stato letto con un tono diverso da quello che volevi?",
+     "c": "Aggiungi oggi un tocco caldo a ogni messaggio che invii."
+    },
+    "pt": {
+     "t": "O tom nas mensagens escritas",
+     "g": "Percebe como o texto pode soar mais frio do que pretendes e como juntar calor.",
+     "p": [
+      "Sem voz nem rosto, uma mensagem curta pode soar brusca.",
+      "Uma saudação, um obrigado ou uma abertura suave mudam completamente a sensação.",
+      "Se tiveres dúvidas sobre como uma mensagem vai ser recebida, lê-a uma vez em voz alta."
+     ],
+     "q": "Alguma mensagem tua já foi lida com um tom diferente do que querias?",
+     "c": "Acrescenta hoje um toque caloroso a cada mensagem que enviares."
+    },
+    "pt_BR": {
+     "t": "O tom nas mensagens escritas",
+     "g": "Perceba como o texto pode soar mais frio do que você pretende e como acrescentar calor.",
+     "p": [
+      "Sem voz nem rosto, uma mensagem curta pode soar brusca.",
+      "Uma saudação, um obrigado ou uma abertura suave mudam totalmente a sensação.",
+      "Se tiver dúvida de como uma mensagem vai ser recebida, leia em voz alta uma vez."
+     ],
+     "q": "Alguma mensagem sua já foi lida num tom diferente do que você queria?",
+     "c": "Acrescente hoje um toque caloroso a cada mensagem que você enviar."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Emojis and reactions at work",
+     "g": "Use emojis and reactions to acknowledge messages and add friendliness.",
+     "p": [
+      "A thumbs-up or check mark can confirm a message without extra noise.",
+      "An emoji can soften a request or celebrate a win.",
+      "Match your team's style and use them sparingly in formal messages."
+     ],
+     "q": "How does your team use emojis, if at all?",
+     "c": "Acknowledge three messages today with a reaction instead of a reply."
+    },
+    "de": {
+     "t": "Emojis und Reaktionen bei der Arbeit",
+     "g": "Nutze Emojis und Reaktionen, um Nachrichten zu bestätigen und Freundlichkeit zu zeigen.",
+     "p": [
+      "Ein Daumen oder Haken bestätigt eine Nachricht ohne zusätzlichen Lärm.",
+      "Ein Emoji kann eine Bitte mildern oder einen Erfolg feiern.",
+      "Passe dich dem Stil deines Teams an und setze sie in formellen Nachrichten sparsam ein."
+     ],
+     "q": "Wie nutzt dein Team Emojis, falls überhaupt?",
+     "c": "Bestätige heute drei Nachrichten mit einer Reaktion statt mit einer Antwort."
+    },
+    "es": {
+     "t": "Emojis y reacciones en el trabajo",
+     "g": "Usa emojis y reacciones para acusar recibo y mostrar cercanía.",
+     "p": [
+      "Un pulgar arriba o un check confirma un mensaje sin ruido extra.",
+      "Un emoji puede suavizar una petición o celebrar un logro.",
+      "Adáptate al estilo de tu equipo y úsalos con moderación en mensajes formales."
+     ],
+     "q": "¿Cómo usa tu equipo los emojis, si es que los usa?",
+     "c": "Hoy confirma tres mensajes con una reacción en lugar de una respuesta."
+    },
+    "fr": {
+     "t": "Emojis et réactions au travail",
+     "g": "Utilise emojis et réactions pour accuser réception et montrer de la convivialité.",
+     "p": [
+      "Un pouce levé ou une coche confirme un message sans bruit supplémentaire.",
+      "Un emoji peut adoucir une demande ou fêter une réussite.",
+      "Adapte-toi au style de ton équipe et reste sobre dans les messages formels."
+     ],
+     "q": "Comment ton équipe utilise-t-elle les emojis, si elle les utilise ?",
+     "c": "Accuse aujourd'hui réception de trois messages avec une réaction plutôt qu'une réponse."
+    },
+    "it": {
+     "t": "Emoji e reazioni al lavoro",
+     "g": "Usa emoji e reazioni per confermare i messaggi e mostrarti cordiale.",
+     "p": [
+      "Un pollice in su o una spunta confermano un messaggio senza rumore in più.",
+      "Un'emoji può ammorbidire una richiesta o festeggiare un successo.",
+      "Adeguati allo stile del tuo team e usale con moderazione nei messaggi formali."
+     ],
+     "q": "Come usa le emoji il tuo team, se le usa?",
+     "c": "Conferma oggi tre messaggi con una reazione invece di una risposta."
+    },
+    "pt": {
+     "t": "Emojis e reações no trabalho",
+     "g": "Usa emojis e reações para confirmar mensagens e mostrar simpatia.",
+     "p": [
+      "Um polegar para cima ou um visto confirma uma mensagem sem ruído extra.",
+      "Um emoji pode suavizar um pedido ou celebrar uma conquista.",
+      "Adapta-te ao estilo da tua equipa e usa-os com moderação em mensagens formais."
+     ],
+     "q": "Como é que a tua equipa usa emojis, se os usa?",
+     "c": "Hoje confirma três mensagens com uma reação em vez de uma resposta."
+    },
+    "pt_BR": {
+     "t": "Emojis e reações no trabalho",
+     "g": "Use emojis e reações para confirmar mensagens e mostrar simpatia.",
+     "p": [
+      "Um joinha ou um check confirma uma mensagem sem barulho extra.",
+      "Um emoji pode suavizar um pedido ou comemorar uma conquista.",
+      "Adapte-se ao estilo do seu time e use com moderação em mensagens formais."
+     ],
+     "q": "Como o seu time usa emojis, se é que usa?",
+     "c": "Hoje confirme três mensagens com uma reação em vez de uma resposta."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Giving context in every message",
+     "g": "Include background, links and deadlines so readers need no follow-up.",
+     "p": [
+      "State what this is about, why it matters and what you need.",
+      "Add links or attachments instead of describing where to find things.",
+      "Name a deadline, or say there is none, so nobody has to guess."
+     ],
+     "q": "What question do you most often have to ask after reading a message?",
+     "c": "Rewrite one message with background, link and deadline included."
+    },
+    "de": {
+     "t": "Kontext in jeder Nachricht liefern",
+     "g": "Gib Hintergrund, Links und Fristen an, damit niemand nachfragen muss.",
+     "p": [
+      "Sag, worum es geht, warum es wichtig ist und was du brauchst.",
+      "Füge Links oder Anhänge bei, statt zu beschreiben, wo etwas zu finden ist.",
+      "Nenne eine Frist oder sag, dass es keine gibt, damit niemand raten muss."
+     ],
+     "q": "Welche Frage musst du nach dem Lesen einer Nachricht am häufigsten stellen?",
+     "c": "Schreib eine Nachricht mit Hintergrund, Link und Frist neu."
+    },
+    "es": {
+     "t": "Dar contexto en cada mensaje",
+     "g": "Incluye antecedentes, enlaces y plazos para que nadie tenga que preguntar de nuevo.",
+     "p": [
+      "Di de qué trata, por qué importa y qué necesitas.",
+      "Añade enlaces o adjuntos en lugar de describir dónde encontrar las cosas.",
+      "Indica una fecha límite, o di que no la hay, para que nadie adivine."
+     ],
+     "q": "¿Qué pregunta tienes que hacer más a menudo tras leer un mensaje?",
+     "c": "Reescribe un mensaje incluyendo antecedentes, enlace y plazo."
+    },
+    "fr": {
+     "t": "Donner du contexte dans chaque message",
+     "g": "Ajoute contexte, liens et échéances pour que personne n'ait à reposer de questions.",
+     "p": [
+      "Dis de quoi il s'agit, pourquoi c'est important et ce dont tu as besoin.",
+      "Ajoute des liens ou pièces jointes plutôt que de décrire où trouver les choses.",
+      "Indique une échéance, ou dis qu'il n'y en a pas, pour éviter les devinettes."
+     ],
+     "q": "Quelle question dois-tu poser le plus souvent après avoir lu un message ?",
+     "c": "Réécris un message en y incluant contexte, lien et échéance."
+    },
+    "it": {
+     "t": "Dare contesto in ogni messaggio",
+     "g": "Includi sfondo, link e scadenze così nessuno deve chiedere ancora.",
+     "p": [
+      "Di' di che cosa si tratta, perché è importante e di che cosa hai bisogno.",
+      "Aggiungi link o allegati invece di descrivere dove trovare le cose.",
+      "Indica una scadenza, o di' che non c'è, così nessuno deve indovinare."
+     ],
+     "q": "Quale domanda devi fare più spesso dopo aver letto un messaggio?",
+     "c": "Riscrivi un messaggio includendo contesto, link e scadenza."
+    },
+    "pt": {
+     "t": "Dar contexto em cada mensagem",
+     "g": "Inclui contexto, links e prazos para que ninguém precise de perguntar de novo.",
+     "p": [
+      "Diz do que se trata, porque é importante e o que precisas.",
+      "Junta links ou anexos em vez de descreveres onde encontrar as coisas.",
+      "Indica um prazo, ou diz que não há, para ninguém ter de adivinhar."
+     ],
+     "q": "Que pergunta tens de fazer mais vezes depois de leres uma mensagem?",
+     "c": "Reescreve uma mensagem incluindo contexto, link e prazo."
+    },
+    "pt_BR": {
+     "t": "Dando contexto em cada mensagem",
+     "g": "Inclua contexto, links e prazos para que ninguém precise perguntar de novo.",
+     "p": [
+      "Diga do que se trata, por que é importante e o que você precisa.",
+      "Coloque links ou anexos em vez de descrever onde achar as coisas.",
+      "Informe um prazo, ou diga que não há, para ninguém ter que adivinhar."
+     ],
+     "q": "Que pergunta você precisa fazer com mais frequência depois de ler uma mensagem?",
+     "c": "Reescreva uma mensagem incluindo contexto, link e prazo."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking good questions in writing",
+     "g": "Frame questions with what you tried and what you need.",
+     "p": [
+      "Say what you are trying to do and what you have already tried.",
+      "Ask a specific question and name the kind of answer you need.",
+      "A good question is easy to answer in one reply."
+     ],
+     "q": "What was the last question you asked that got a fast, useful answer?",
+     "c": "Write one question using this pattern: goal, what I tried, what I need."
+    },
+    "de": {
+     "t": "Gute Fragen schriftlich stellen",
+     "g": "Formuliere Fragen mit dem, was du versucht hast und was du brauchst.",
+     "p": [
+      "Sag, was du erreichen willst und was du schon versucht hast.",
+      "Stelle eine konkrete Frage und nenne die Art von Antwort, die du brauchst.",
+      "Eine gute Frage lässt sich in einer Antwort beantworten."
+     ],
+     "q": "Welche Frage von dir hat zuletzt eine schnelle, nützliche Antwort bekommen?",
+     "c": "Schreib eine Frage nach dem Muster: Ziel, was ich versucht habe, was ich brauche."
+    },
+    "es": {
+     "t": "Hacer buenas preguntas por escrito",
+     "g": "Plantea preguntas con lo que intentaste y lo que necesitas.",
+     "p": [
+      "Cuenta qué intentas hacer y qué has probado ya.",
+      "Haz una pregunta concreta y di qué tipo de respuesta necesitas.",
+      "Una buena pregunta se responde fácilmente en un solo mensaje."
+     ],
+     "q": "¿Cuál fue la última pregunta tuya que recibió una respuesta rápida y útil?",
+     "c": "Escribe una pregunta con este patrón: objetivo, lo que probé, lo que necesito."
+    },
+    "fr": {
+     "t": "Bien poser ses questions par écrit",
+     "g": "Formule tes questions avec ce que tu as essayé et ce dont tu as besoin.",
+     "p": [
+      "Dis ce que tu essaies de faire et ce que tu as déjà tenté.",
+      "Pose une question précise et précise le type de réponse attendu.",
+      "Une bonne question se résout facilement en une seule réponse."
+     ],
+     "q": "Quelle est ta dernière question qui a reçu une réponse rapide et utile ?",
+     "c": "Écris une question selon ce schéma : objectif, ce que j'ai essayé, ce dont j'ai besoin."
+    },
+    "it": {
+     "t": "Fare buone domande per iscritto",
+     "g": "Formula le domande con ciò che hai provato e ciò di cui hai bisogno.",
+     "p": [
+      "Di' che cosa stai cercando di fare e che cosa hai già provato.",
+      "Fai una domanda specifica e indica il tipo di risposta che ti serve.",
+      "Una buona domanda si risolve facilmente in una sola risposta."
+     ],
+     "q": "Qual è stata la tua ultima domanda che ha ricevuto una risposta rapida e utile?",
+     "c": "Scrivi una domanda con questo schema: obiettivo, cosa ho provato, cosa mi serve."
+    },
+    "pt": {
+     "t": "Fazer boas perguntas por escrito",
+     "g": "Formula perguntas com o que tentaste e o que precisas.",
+     "p": [
+      "Diz o que estás a tentar fazer e o que já experimentaste.",
+      "Faz uma pergunta concreta e indica o tipo de resposta de que precisas.",
+      "Uma boa pergunta responde-se facilmente numa só resposta."
+     ],
+     "q": "Qual foi a tua última pergunta que teve uma resposta rápida e útil?",
+     "c": "Escreve uma pergunta com este padrão: objetivo, o que tentei, o que preciso."
+    },
+    "pt_BR": {
+     "t": "Fazendo boas perguntas por escrito",
+     "g": "Formule perguntas com o que você tentou e o que precisa.",
+     "p": [
+      "Diga o que você está tentando fazer e o que já experimentou.",
+      "Faça uma pergunta concreta e indique o tipo de resposta de que precisa.",
+      "Uma boa pergunta se responde facilmente numa só resposta."
+     ],
+     "q": "Qual foi a sua última pergunta que teve uma resposta rápida e útil?",
+     "c": "Escreva uma pergunta com este padrão: objetivo, o que tentei, o que preciso."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing a daily status update",
+     "g": "Use a simple format to share progress, next steps and blockers.",
+     "p": [
+      "Three lines are enough: done, next and anything blocking me.",
+      "Posting at the same time each day builds a reliable rhythm.",
+      "Updates let teammates help early and show your steady progress."
+     ],
+     "q": "What would you include in a daily update about your own work?",
+     "c": "Write today's update in three short lines and share it."
+    },
+    "de": {
+     "t": "Ein tägliches Status-Update schreiben",
+     "g": "Nutze ein einfaches Format für Fortschritt, nächste Schritte und Blocker.",
+     "p": [
+      "Drei Zeilen genügen: erledigt, als Nächstes und was mich bremst.",
+      "Zur gleichen Zeit zu posten schafft einen verlässlichen Rhythmus.",
+      "Updates lassen Kollegen früh helfen und zeigen deinen stetigen Fortschritt."
+     ],
+     "q": "Was würdest du in ein tägliches Update über deine Arbeit schreiben?",
+     "c": "Schreib das heutige Update in drei kurzen Zeilen und teile es."
+    },
+    "es": {
+     "t": "Escribir una actualización diaria de estado",
+     "g": "Usa un formato sencillo para compartir avances, próximos pasos y bloqueos.",
+     "p": [
+      "Bastan tres líneas: hecho, siguiente y lo que me bloquea.",
+      "Publicar a la misma hora cada día crea un ritmo fiable.",
+      "Las actualizaciones permiten que otros ayuden pronto y muestran tu avance constante."
+     ],
+     "q": "¿Qué incluirías en una actualización diaria sobre tu trabajo?",
+     "c": "Escribe la actualización de hoy en tres líneas cortas y compártela."
+    },
+    "fr": {
+     "t": "Rédiger un point de situation quotidien",
+     "g": "Utilise un format simple pour partager avancées, prochaines étapes et blocages.",
+     "p": [
+      "Trois lignes suffisent : fait, prochain pas et ce qui me bloque.",
+      "Publier à la même heure chaque jour crée un rythme fiable.",
+      "Ces points permettent à l'équipe d'aider tôt et montrent ta progression régulière."
+     ],
+     "q": "Que mettrais-tu dans un point quotidien sur ton travail ?",
+     "c": "Écris le point d'aujourd'hui en trois courtes lignes et partage-le."
+    },
+    "it": {
+     "t": "Scrivere un aggiornamento giornaliero",
+     "g": "Usa un formato semplice per condividere progressi, prossimi passi e blocchi.",
+     "p": [
+      "Bastano tre righe: fatto, prossimo e cosa mi blocca.",
+      "Pubblicare alla stessa ora ogni giorno crea un ritmo affidabile.",
+      "Gli aggiornamenti permettono ai colleghi di aiutare presto e mostrano i tuoi progressi costanti."
+     ],
+     "q": "Che cosa includeresti in un aggiornamento giornaliero sul tuo lavoro?",
+     "c": "Scrivi l'aggiornamento di oggi in tre righe brevi e condividilo."
+    },
+    "pt": {
+     "t": "Escrever uma atualização diária de estado",
+     "g": "Usa um formato simples para partilhar progresso, próximos passos e bloqueios.",
+     "p": [
+      "Bastam três linhas: feito, a seguir e o que me bloqueia.",
+      "Publicar à mesma hora todos os dias cria um ritmo fiável.",
+      "As atualizações permitem que os colegas ajudem cedo e mostram o teu progresso constante."
+     ],
+     "q": "O que incluirias numa atualização diária sobre o teu trabalho?",
+     "c": "Escreve a atualização de hoje em três linhas curtas e partilha-a."
+    },
+    "pt_BR": {
+     "t": "Escrevendo uma atualização diária de status",
+     "g": "Use um formato simples para compartilhar progresso, próximos passos e bloqueios.",
+     "p": [
+      "Três linhas bastam: feito, próximo e o que me bloqueia.",
+      "Publicar no mesmo horário todo dia cria um ritmo confiável.",
+      "As atualizações permitem que os colegas ajudem cedo e mostram seu progresso constante."
+     ],
+     "q": "O que você incluiria numa atualização diária sobre o seu trabalho?",
+     "c": "Escreva a atualização de hoje em três linhas curtas e compartilhe."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Saying no and setting limits in writing",
+     "g": "Politely decline or renegotiate requests in messages.",
+     "p": [
+      "A kind no is better than a yes you cannot keep.",
+      "Thank them, say what you cannot do, and offer an alternative or later date.",
+      "Mention your current priorities so the reason is clear, not personal."
+     ],
+     "q": "Which kind of request do you find hardest to turn down?",
+     "c": "Draft a polite no or not-yet message for a request you can not take on."
+    },
+    "de": {
+     "t": "Nein sagen und Grenzen schriftlich setzen",
+     "g": "Lehne Anfragen höflich ab oder verhandle sie in Nachrichten neu.",
+     "p": [
+      "Ein freundliches Nein ist besser als ein Ja, das du nicht halten kannst.",
+      "Bedanke dich, sag, was nicht geht, und biete eine Alternative oder einen späteren Termin an.",
+      "Nenne deine aktuellen Prioritäten, damit der Grund klar und nicht persönlich ist."
+     ],
+     "q": "Welche Art Anfrage fällt dir am schwersten abzulehnen?",
+     "c": "Entwirf ein höfliches Nein oder Noch-nicht für eine Anfrage, die du nicht übernehmen kannst."
+    },
+    "es": {
+     "t": "Decir que no y poner límites por escrito",
+     "g": "Rechaza con educación o renegocia peticiones en mensajes.",
+     "p": [
+      "Un no amable es mejor que un sí que no puedes cumplir.",
+      "Da las gracias, di lo que no puedes hacer y ofrece una alternativa o una fecha posterior.",
+      "Menciona tus prioridades actuales para que el motivo sea claro y no personal."
+     ],
+     "q": "¿Qué tipo de petición te cuesta más rechazar?",
+     "c": "Redacta un no amable o un todavía no para una petición que no puedes asumir."
+    },
+    "fr": {
+     "t": "Dire non et poser des limites par écrit",
+     "g": "Refuse poliment ou renégocie des demandes dans tes messages.",
+     "p": [
+      "Un non aimable vaut mieux qu'un oui que tu ne pourras pas tenir.",
+      "Remercie, dis ce que tu ne peux pas faire et propose une alternative ou une date ultérieure.",
+      "Mentionne tes priorités actuelles pour que la raison soit claire, pas personnelle."
+     ],
+     "q": "Quel type de demande as-tu le plus de mal à refuser ?",
+     "c": "Rédige un non poli ou un pas-tout-de-suite pour une demande que tu ne peux pas prendre."
+    },
+    "it": {
+     "t": "Dire no e fissare limiti per iscritto",
+     "g": "Rifiuta con garbo o rinegozia le richieste nei messaggi.",
+     "p": [
+      "Un no gentile è meglio di un sì che non puoi mantenere.",
+      "Ringrazia, di' cosa non puoi fare e offri un'alternativa o una data successiva.",
+      "Cita le tue priorità attuali così il motivo è chiaro e non personale."
+     ],
+     "q": "Quale tipo di richiesta ti è più difficile rifiutare?",
+     "c": "Scrivi un no gentile o un non ancora per una richiesta che non puoi accettare."
+    },
+    "pt": {
+     "t": "Dizer não e pôr limites por escrito",
+     "g": "Recusa com educação ou renegoceia pedidos em mensagens.",
+     "p": [
+      "Um não simpático é melhor do que um sim que não podes cumprir.",
+      "Agradece, diz o que não podes fazer e oferece uma alternativa ou uma data posterior.",
+      "Menciona as tuas prioridades atuais para o motivo ser claro e não pessoal."
+     ],
+     "q": "Que tipo de pedido mais te custa recusar?",
+     "c": "Redige um não simpático ou um ainda não para um pedido que não podes assumir."
+    },
+    "pt_BR": {
+     "t": "Dizendo não e pondo limites por escrito",
+     "g": "Recuse com educação ou renegocie pedidos em mensagens.",
+     "p": [
+      "Um não gentil é melhor que um sim que você não pode cumprir.",
+      "Agradeça, diga o que não pode fazer e ofereça uma alternativa ou uma data posterior.",
+      "Mencione suas prioridades atuais para o motivo ser claro e não pessoal."
+     ],
+     "q": "Que tipo de pedido é mais difícil de recusar para você?",
+     "c": "Redija um não gentil ou um ainda não para um pedido que você não pode assumir."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Response times and expectations",
+     "g": "Agree how quickly people should reply on email, chat and urgent channels.",
+     "p": [
+      "Not every message needs an instant answer; agree on realistic windows.",
+      "Chat may be hours, email a day, and an urgent channel minutes.",
+      "Share your own pattern so people do not worry when you are quiet."
+     ],
+     "q": "How quickly do you feel pressure to reply, and is it realistic?",
+     "c": "Tell your team your usual reply times for chat and email."
+    },
+    "de": {
+     "t": "Antwortzeiten und Erwartungen",
+     "g": "Vereinbart, wie schnell auf E-Mail, Chat und Dringendes geantwortet wird.",
+     "p": [
+      "Nicht jede Nachricht braucht eine sofortige Antwort; vereinbart realistische Zeitfenster.",
+      "Chat darf Stunden dauern, E-Mail einen Tag, ein Dringend-Kanal nur Minuten.",
+      "Teile dein eigenes Muster, damit sich niemand sorgt, wenn du still bist."
+     ],
+     "q": "Wie schnell fühlst du dich zum Antworten gedrängt, und ist das realistisch?",
+     "c": "Sag deinem Team, wann du üblicherweise auf Chat und E-Mail antwortest."
+    },
+    "es": {
+     "t": "Tiempos de respuesta y expectativas",
+     "g": "Acordad con qué rapidez se responde por correo, chat y canales urgentes.",
+     "p": [
+      "No todo mensaje necesita respuesta inmediata; acordad plazos realistas.",
+      "El chat puede ser cuestión de horas, el correo de un día y un canal urgente de minutos.",
+      "Comparte tu propio patrón para que nadie se preocupe cuando estés callado."
+     ],
+     "q": "¿Con qué rapidez sientes presión por responder y es realista?",
+     "c": "Cuéntale a tu equipo tus tiempos habituales de respuesta en chat y correo."
+    },
+    "fr": {
+     "t": "Délais de réponse et attentes",
+     "g": "Convenez de la rapidité de réponse attendue par e-mail, chat et canal urgent.",
+     "p": [
+      "Tous les messages n'exigent pas une réponse immédiate ; fixez des délais réalistes.",
+      "Le chat peut prendre des heures, l'e-mail une journée, un canal urgent quelques minutes.",
+      "Partage ton propre rythme pour que personne ne s'inquiète quand tu es silencieux."
+     ],
+     "q": "À quelle vitesse te sens-tu poussé à répondre, et est-ce réaliste ?",
+     "c": "Dis à ton équipe tes délais habituels de réponse par chat et par e-mail."
+    },
+    "it": {
+     "t": "Tempi di risposta e aspettative",
+     "g": "Concordate con quale rapidità rispondere a email, chat e canali urgenti.",
+     "p": [
+      "Non ogni messaggio richiede risposta immediata; concordate finestre realistiche.",
+      "La chat può richiedere ore, l'email un giorno, un canale urgente minuti.",
+      "Condividi il tuo ritmo così nessuno si preoccupa quando taci."
+     ],
+     "q": "Con che rapidità senti la pressione di rispondere, ed è realistico?",
+     "c": "Dì al tuo team i tuoi tempi abituali di risposta su chat ed email."
+    },
+    "pt": {
+     "t": "Tempos de resposta e expectativas",
+     "g": "Combinem a rapidez de resposta por email, chat e canais urgentes.",
+     "p": [
+      "Nem toda a mensagem exige resposta imediata; combinem prazos realistas.",
+      "O chat pode demorar horas, o email um dia e um canal urgente minutos.",
+      "Partilha o teu padrão para ninguém se preocupar quando estás calado."
+     ],
+     "q": "Com que rapidez sentes pressão para responder e isso é realista?",
+     "c": "Diz à tua equipa os teus tempos habituais de resposta em chat e email."
+    },
+    "pt_BR": {
+     "t": "Tempos de resposta e expectativas",
+     "g": "Combinem a rapidez de resposta por e-mail, chat e canais urgentes.",
+     "p": [
+      "Nem toda mensagem exige resposta imediata; combinem prazos realistas.",
+      "O chat pode demorar horas, o e-mail um dia e um canal urgente minutos.",
+      "Compartilhe seu padrão para ninguém se preocupar quando você está quieto."
+     ],
+     "q": "Com que rapidez você sente pressão para responder e isso é realista?",
+     "c": "Diga ao seu time seus tempos habituais de resposta em chat e e-mail."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: tools and communication",
+     "g": "Revisit tools, calls and writing skills from recent weeks.",
+     "p": [
+      "Look back at tools, calls and messages and what felt easier.",
+      "Celebrate one habit that already improved how you work with others.",
+      "Pick one communication skill to practise for the next month."
+     ],
+     "q": "Which skill from these weeks has helped you most so far?",
+     "c": "Write your chosen skill and one place you will use it this week."
+    },
+    "de": {
+     "t": "Rückblick: Tools und Kommunikation",
+     "g": "Blicke auf Tools, Anrufe und Schreibfähigkeiten der letzten Wochen zurück.",
+     "p": [
+      "Schau auf Tools, Anrufe und Nachrichten und darauf, was leichter wurde.",
+      "Feiere eine Gewohnheit, die deine Zusammenarbeit schon verbessert hat.",
+      "Wähle eine Kommunikationsfähigkeit, die du im nächsten Monat übst."
+     ],
+     "q": "Welche Fähigkeit aus diesen Wochen hat dir bisher am meisten geholfen?",
+     "c": "Schreib deine gewählte Fähigkeit auf und einen Ort, an dem du sie diese Woche nutzt."
+    },
+    "es": {
+     "t": "Repaso: herramientas y comunicación",
+     "g": "Repasa herramientas, llamadas y escritura de las últimas semanas.",
+     "p": [
+      "Mira atrás a herramientas, llamadas y mensajes y a lo que te resultó más fácil.",
+      "Celebra un hábito que ya mejoró cómo trabajas con otros.",
+      "Elige una habilidad de comunicación para practicar el próximo mes."
+     ],
+     "q": "¿Qué habilidad de estas semanas te ha ayudado más hasta ahora?",
+     "c": "Escribe la habilidad elegida y un lugar donde la usarás esta semana."
+    },
+    "fr": {
+     "t": "Bilan : outils et communication",
+     "g": "Reviens sur outils, appels et écriture des dernières semaines.",
+     "p": [
+      "Regarde en arrière outils, appels et messages et ce qui est devenu plus facile.",
+      "Célèbre une habitude qui a déjà amélioré ta façon de travailler avec les autres.",
+      "Choisis une compétence de communication à travailler le mois prochain."
+     ],
+     "q": "Quelle compétence de ces semaines t'a le plus aidé jusqu'ici ?",
+     "c": "Écris la compétence choisie et un endroit où tu l'utiliseras cette semaine."
+    },
+    "it": {
+     "t": "Ripasso: strumenti e comunicazione",
+     "g": "Rivedi strumenti, chiamate e scrittura delle ultime settimane.",
+     "p": [
+      "Guarda indietro a strumenti, chiamate e messaggi e a ciò che è diventato più facile.",
+      "Festeggia un'abitudine che ha già migliorato come lavori con gli altri.",
+      "Scegli una competenza di comunicazione da allenare il mese prossimo."
+     ],
+     "q": "Quale competenza di queste settimane ti ha aiutato di più finora?",
+     "c": "Scrivi la competenza scelta e un luogo in cui la userai questa settimana."
+    },
+    "pt": {
+     "t": "Revisão: ferramentas e comunicação",
+     "g": "Revê ferramentas, chamadas e escrita das últimas semanas.",
+     "p": [
+      "Olha para trás para ferramentas, chamadas e mensagens e para o que ficou mais fácil.",
+      "Celebra um hábito que já melhorou a forma como trabalhas com os outros.",
+      "Escolhe uma competência de comunicação para praticar no próximo mês."
+     ],
+     "q": "Que competência destas semanas te ajudou mais até agora?",
+     "c": "Escreve a competência escolhida e um sítio onde a vais usar esta semana."
+    },
+    "pt_BR": {
+     "t": "Revisão: ferramentas e comunicação",
+     "g": "Revise ferramentas, chamadas e escrita das últimas semanas.",
+     "p": [
+      "Olhe para trás para ferramentas, chamadas e mensagens e para o que ficou mais fácil.",
+      "Comemore um hábito que já melhorou como você trabalha com os outros.",
+      "Escolha uma habilidade de comunicação para praticar no próximo mês."
+     ],
+     "q": "Qual habilidade dessas semanas ajudou você mais até agora?",
+     "c": "Escreva a habilidade escolhida e um lugar onde você vai usá-la esta semana."
+    }
+   }
+  }
+ ]
+}

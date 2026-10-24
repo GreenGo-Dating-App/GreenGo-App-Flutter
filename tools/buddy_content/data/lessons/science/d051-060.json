@@ -1,0 +1,835 @@
+{
+ "topic": "science",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is light",
+     "g": "Meet light as energy that travels incredibly fast and lets us see.",
+     "p": [
+      "Light is a form of energy that travels as waves and needs no air to move.",
+      "It moves at about 300,000 kilometers per second, the fastest speed known.",
+      "We see things because light from a source, like the Sun, bounces off them into our eyes."
+     ],
+     "q": "What would your day be like if light only worked half the time?",
+     "c": "In a dark room, switch on a lamp and notice how objects appear all at once."
+    },
+    "de": {
+     "t": "Was ist Licht",
+     "g": "Lerne Licht als Energie kennen, die unglaublich schnell reist und uns sehen lässt.",
+     "p": [
+      "Licht ist eine Energieform, die als Welle reist und keine Luft zum Reisen braucht.",
+      "Es bewegt sich mit rund 300 000 Kilometern pro Sekunde, der höchsten bekannten Geschwindigkeit.",
+      "Wir sehen Dinge, weil Licht einer Quelle wie der Sonne von ihnen in unsere Augen zurückgeworfen wird."
+     ],
+     "q": "Wie wäre dein Tag, wenn Licht nur die Hälfte der Zeit funktionierte?",
+     "c": "Schalte in einem dunklen Raum eine Lampe an und beobachte, wie alle Dinge auf einmal erscheinen."
+    },
+    "es": {
+     "t": "Qué es la luz",
+     "g": "Conocer la luz como energía que viaja increíblemente rápido y nos permite ver.",
+     "p": [
+      "La luz es una forma de energía que viaja como onda y no necesita aire para moverse.",
+      "Se mueve a unos 300 000 kilómetros por segundo, la mayor velocidad conocida.",
+      "Vemos las cosas porque la luz de una fuente, como el Sol, rebota en ellas y llega a nuestros ojos."
+     ],
+     "q": "¿Cómo sería tu día si la luz solo funcionara la mitad del tiempo?",
+     "c": "En una habitación oscura, enciende una lámpara y observa cómo todo aparece a la vez."
+    },
+    "fr": {
+     "t": "Qu'est-ce que la lumière",
+     "g": "Découvrir la lumière comme une énergie qui voyage incroyablement vite et nous permet de voir.",
+     "p": [
+      "La lumière est une forme d'énergie qui voyage en ondes et n'a pas besoin d'air pour avancer.",
+      "Elle va à environ 300 000 kilomètres par seconde, la vitesse maximale connue.",
+      "Nous voyons les objets parce que la lumière d'une source, comme le Soleil, rebondit dessus vers nos yeux."
+     ],
+     "q": "Comment serait ta journée si la lumière ne marchait que la moitié du temps ?",
+     "c": "Dans une pièce sombre, allume une lampe et observe comment tout apparaît d'un coup."
+    },
+    "it": {
+     "t": "Che cos'è la luce",
+     "g": "Conoscere la luce come energia che viaggia velocissima e ci fa vedere.",
+     "p": [
+      "La luce è una forma di energia che viaggia come onda e non ha bisogno di aria per muoversi.",
+      "Si muove a circa 300.000 chilometri al secondo, la velocità massima conosciuta.",
+      "Vediamo le cose perché la luce di una sorgente, come il Sole, rimbalza su di esse fino ai nostri occhi."
+     ],
+     "q": "Come sarebbe la tua giornata se la luce funzionasse solo metà del tempo?",
+     "c": "In una stanza buia accendi una lampada e osserva come tutto appare in un attimo."
+    },
+    "pt": {
+     "t": "O que é a luz",
+     "g": "Conhecer a luz como energia que viaja incrivelmente depressa e nos deixa ver.",
+     "p": [
+      "A luz é uma forma de energia que viaja como onda e não precisa de ar para se mover.",
+      "Move-se a cerca de 300 000 quilómetros por segundo, a velocidade máxima conhecida.",
+      "Vemos as coisas porque a luz de uma fonte, como o Sol, ressalta nelas e chega aos nossos olhos."
+     ],
+     "q": "Como seria o teu dia se a luz só funcionasse metade do tempo?",
+     "c": "Numa divisão escura, acende um candeeiro e observa como tudo aparece de uma vez."
+    },
+    "pt_BR": {
+     "t": "O que é a luz",
+     "g": "Conhecer a luz como energia que viaja incrivelmente rápido e nos deixa ver.",
+     "p": [
+      "A luz é uma forma de energia que viaja como onda e não precisa de ar para se mover.",
+      "Move-se a cerca de 300 000 quilômetros por segundo, a velocidade máxima conhecida.",
+      "Vemos as coisas porque a luz de uma fonte, como o Sol, ricocheteia nelas e chega aos nossos olhos."
+     ],
+     "q": "Como seria o seu dia se a luz só funcionasse metade do tempo?",
+     "c": "Num cômodo escuro, acenda uma lâmpada e observe como tudo aparece de uma vez."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reflection and mirrors",
+     "g": "See how light bounces off surfaces and why mirrors seem to flip left and right.",
+     "p": [
+      "Light reflects off surfaces, and with a smooth mirror it bounces at the same angle it arrived.",
+      "Rough surfaces scatter light in many directions, so you see no clear image in them.",
+      "A mirror really flips front to back, and our minds read that as left and right."
+     ],
+     "q": "Why can you see your face in a calm pond but not in a rough path?",
+     "c": "Hold a page of writing up to a mirror and try reading it, then explain what changed."
+    },
+    "de": {
+     "t": "Spiegelung und Spiegel",
+     "g": "Sieh, wie Licht von Flächen zurückprallt und warum Spiegel links und rechts zu vertauschen scheinen.",
+     "p": [
+      "Licht wird an Flächen zurückgeworfen, und an einem glatten Spiegel prallt es im selben Winkel ab, in dem es ankam.",
+      "Raue Flächen streuen das Licht in viele Richtungen, deshalb zeigen sie kein klares Bild.",
+      "Ein Spiegel vertauscht eigentlich vorn und hinten, und unser Kopf liest das als links und rechts."
+     ],
+     "q": "Warum siehst du dein Gesicht in einem ruhigen Teich, aber nicht auf einem rauen Weg?",
+     "c": "Halte eine beschriebene Seite an einen Spiegel, versuche sie zu lesen und erkläre, was sich geändert hat."
+    },
+    "es": {
+     "t": "Reflexión y espejos",
+     "g": "Ver cómo la luz rebota en las superficies y por qué los espejos parecen invertir izquierda y derecha.",
+     "p": [
+      "La luz se refleja en las superficies, y en un espejo liso rebota con el mismo ángulo con que llegó.",
+      "Las superficies rugosas dispersan la luz en muchas direcciones y no dan una imagen nítida.",
+      "Un espejo invierte en realidad delante y detrás, y nuestra mente lo lee como izquierda y derecha."
+     ],
+     "q": "¿Por qué ves tu cara en un estanque en calma pero no en un camino áspero?",
+     "c": "Pon una página escrita frente a un espejo, intenta leerla y explica qué cambió."
+    },
+    "fr": {
+     "t": "Réflexion et miroirs",
+     "g": "Voir comment la lumière rebondit sur les surfaces et pourquoi les miroirs semblent inverser gauche et droite.",
+     "p": [
+      "La lumière se réfléchit sur les surfaces et, sur un miroir lisse, elle repart sous le même angle qu'elle est arrivée.",
+      "Les surfaces rugueuses diffusent la lumière dans toutes les directions et ne donnent pas d'image nette.",
+      "Un miroir inverse en réalité l'avant et l'arrière, et notre esprit le lit comme gauche et droite."
+     ],
+     "q": "Pourquoi vois-tu ton visage dans un étang calme mais pas sur un chemin rugueux ?",
+     "c": "Place une page écrite devant un miroir, essaie de la lire et explique ce qui a changé."
+    },
+    "it": {
+     "t": "Riflessione e specchi",
+     "g": "Vedere come la luce rimbalza sulle superfici e perché gli specchi sembrano invertire destra e sinistra.",
+     "p": [
+      "La luce si riflette sulle superfici e su uno specchio liscio rimbalza con lo stesso angolo con cui è arrivata.",
+      "Le superfici ruvide diffondono la luce in molte direzioni e non danno un'immagine nitida.",
+      "Uno specchio inverte davvero davanti e dietro, e la nostra mente lo legge come destra e sinistra."
+     ],
+     "q": "Perché vedi il tuo viso in uno stagno calmo ma non su un sentiero ruvido?",
+     "c": "Metti una pagina scritta davanti a uno specchio, prova a leggerla e spiega cosa è cambiato."
+    },
+    "pt": {
+     "t": "Reflexão e espelhos",
+     "g": "Ver como a luz ressalta nas superfícies e porque os espelhos parecem inverter esquerda e direita.",
+     "p": [
+      "A luz reflete-se nas superfícies e, num espelho liso, ressalta com o mesmo ângulo com que chegou.",
+      "As superfícies ásperas dispersam a luz em muitas direções e não dão uma imagem nítida.",
+      "Um espelho inverte na verdade a frente e as costas, e a nossa mente lê isso como esquerda e direita."
+     ],
+     "q": "Porque vês o teu rosto num lago calmo mas não num caminho áspero?",
+     "c": "Põe uma página escrita diante de um espelho, tenta lê-la e explica o que mudou."
+    },
+    "pt_BR": {
+     "t": "Reflexão e espelhos",
+     "g": "Ver como a luz ricocheteia nas superfícies e por que os espelhos parecem inverter esquerda e direita.",
+     "p": [
+      "A luz se reflete nas superfícies e, num espelho liso, ricocheteia com o mesmo ângulo com que chegou.",
+      "As superfícies ásperas espalham a luz em muitas direções e não dão uma imagem nítida.",
+      "Um espelho inverte na verdade a frente e o fundo, e a nossa mente lê isso como esquerda e direita."
+     ],
+     "q": "Por que você vê o seu rosto num lago calmo mas não num caminho áspero?",
+     "c": "Ponha uma página escrita diante de um espelho, tente lê-la e explique o que mudou."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Refraction",
+     "g": "Learn why a straw looks bent in water and how lenses focus light.",
+     "p": [
+      "Light bends when it passes from one material into another, such as air into water.",
+      "This bending is called refraction, and it makes a straw look broken at the water line.",
+      "A lens bends light on purpose to focus it, as in glasses, cameras and magnifiers."
+     ],
+     "q": "Where else have you seen things look wobbly or shifted through water or glass?",
+     "c": "Place a pencil in a glass of water, look from the side, and describe what you see."
+    },
+    "de": {
+     "t": "Brechung",
+     "g": "Lerne, warum ein Strohhalm im Wasser geknickt aussieht und wie Linsen Licht bündeln.",
+     "p": [
+      "Licht knickt ab, wenn es von einem Stoff in einen anderen übergeht, etwa von Luft in Wasser.",
+      "Dieses Abknicken heißt Brechung, und sie lässt einen Strohhalm an der Wasserlinie gebrochen aussehen.",
+      "Eine Linse lenkt Licht gezielt ab, um es zu bündeln, wie in Brillen, Kameras und Lupen."
+     ],
+     "q": "Wo hast du Dinge durch Wasser oder Glas schon verschoben oder wackelig gesehen?",
+     "c": "Stell einen Bleistift in ein Glas Wasser, schau von der Seite und beschreibe, was du siehst."
+    },
+    "es": {
+     "t": "Refracción",
+     "g": "Aprender por qué una pajita parece torcida en el agua y cómo las lentes enfocan la luz.",
+     "p": [
+      "La luz se desvía al pasar de un material a otro, por ejemplo del aire al agua.",
+      "Esa desviación se llama refracción y hace que una pajita parezca rota en la línea del agua.",
+      "Una lente desvía la luz a propósito para enfocarla, como en gafas, cámaras y lupas."
+     ],
+     "q": "¿Dónde más has visto cosas torcidas o desplazadas a través del agua o el vidrio?",
+     "c": "Pon un lápiz en un vaso de agua, mira de lado y describe lo que ves."
+    },
+    "fr": {
+     "t": "La réfraction",
+     "g": "Comprendre pourquoi une paille semble cassée dans l'eau et comment les lentilles concentrent la lumière.",
+     "p": [
+      "La lumière dévie quand elle passe d'un milieu à un autre, par exemple de l'air à l'eau.",
+      "Cette déviation s'appelle la réfraction et fait paraître la paille brisée à la surface de l'eau.",
+      "Une lentille dévie la lumière exprès pour la concentrer, comme dans les lunettes, appareils photo et loupes."
+     ],
+     "q": "Où as-tu déjà vu des objets déformés ou décalés à travers l'eau ou le verre ?",
+     "c": "Mets un crayon dans un verre d'eau, regarde de côté et décris ce que tu vois."
+    },
+    "it": {
+     "t": "La rifrazione",
+     "g": "Capire perché una cannuccia sembra spezzata nell'acqua e come le lenti mettono a fuoco la luce.",
+     "p": [
+      "La luce devia quando passa da un materiale a un altro, per esempio dall'aria all'acqua.",
+      "Questa deviazione si chiama rifrazione e fa sembrare la cannuccia spezzata alla linea dell'acqua.",
+      "Una lente devia la luce apposta per metterla a fuoco, come in occhiali, fotocamere e lenti d'ingrandimento."
+     ],
+     "q": "Dove hai visto altre volte cose spostate o deformate attraverso acqua o vetro?",
+     "c": "Metti una matita in un bicchiere d'acqua, guarda di lato e descrivi cosa vedi."
+    },
+    "pt": {
+     "t": "A refração",
+     "g": "Perceber porque uma palhinha parece torta na água e como as lentes focam a luz.",
+     "p": [
+      "A luz desvia-se ao passar de um material para outro, por exemplo do ar para a água.",
+      "Esse desvio chama-se refração e faz a palhinha parecer partida na linha da água.",
+      "Uma lente desvia a luz de propósito para a focar, como em óculos, câmaras e lupas."
+     ],
+     "q": "Onde mais já viste coisas tortas ou deslocadas através da água ou do vidro?",
+     "c": "Põe um lápis num copo de água, olha de lado e descreve o que vês."
+    },
+    "pt_BR": {
+     "t": "A refração",
+     "g": "Entender por que um canudo parece torto na água e como as lentes focam a luz.",
+     "p": [
+      "A luz se desvia ao passar de um material para outro, por exemplo do ar para a água.",
+      "Esse desvio se chama refração e faz o canudo parecer quebrado na linha da água.",
+      "Uma lente desvia a luz de propósito para focá-la, como em óculos, câmeras e lupas."
+     ],
+     "q": "Onde mais você já viu coisas tortas ou deslocadas através da água ou do vidro?",
+     "c": "Ponha um lápis num copo de água, olhe de lado e descreva o que você vê."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Colors and the rainbow",
+     "g": "Find out how white light is a mix of colors that prisms and raindrops split apart.",
+     "p": [
+      "White light is a blend of all colors, from red through orange, yellow, green and blue to violet.",
+      "Each color bends by a slightly different amount, so a prism or raindrop spreads them out.",
+      "A rainbow appears when sunlight passes through raindrops while the Sun is behind you."
+     ],
+     "q": "When did you last see a rainbow, and where was the Sun?",
+     "c": "Hold a CD or a clear glass in sunlight and look for small rainbows on the wall. Never look straight at the Sun."
+    },
+    "de": {
+     "t": "Farben und Regenbogen",
+     "g": "Finde heraus, wie weißes Licht ein Farbgemisch ist, das Prismen und Regentropfen auffächern.",
+     "p": [
+      "Weißes Licht ist eine Mischung aller Farben, von Rot über Orange, Gelb, Grün und Blau bis Violett.",
+      "Jede Farbe wird etwas anders gebrochen, deshalb fächert ein Prisma oder Tropfen sie auf.",
+      "Ein Regenbogen entsteht, wenn Sonnenlicht durch Regentropfen fällt und die Sonne hinter dir steht."
+     ],
+     "q": "Wann hast du zuletzt einen Regenbogen gesehen, und wo stand die Sonne?",
+     "c": "Halte eine CD oder ein klares Glas ins Sonnenlicht und such kleine Regenbogen an der Wand. Schau nie direkt in die Sonne."
+    },
+    "es": {
+     "t": "Colores y arcoíris",
+     "g": "Descubrir cómo la luz blanca es una mezcla de colores que prismas y gotas de lluvia separan.",
+     "p": [
+      "La luz blanca es una mezcla de todos los colores, del rojo al violeta pasando por naranja, amarillo, verde y azul.",
+      "Cada color se desvía algo distinto, así que un prisma o una gota los abre en abanico.",
+      "Un arcoíris aparece cuando la luz del sol atraviesa gotas de lluvia y el Sol queda a tu espalda."
+     ],
+     "q": "¿Cuándo viste un arcoíris por última vez y dónde estaba el Sol?",
+     "c": "Pon un CD o un vaso transparente al sol y busca pequeños arcoíris en la pared. Nunca mires directo al Sol."
+    },
+    "fr": {
+     "t": "Couleurs et arc-en-ciel",
+     "g": "Découvrir comment la lumière blanche, mélange de couleurs, est séparée par les prismes et les gouttes de pluie.",
+     "p": [
+      "La lumière blanche mélange toutes les couleurs, du rouge au violet en passant par l'orange, le jaune, le vert et le bleu.",
+      "Chaque couleur dévie un peu différemment, si bien qu'un prisme ou une goutte les étale.",
+      "Un arc-en-ciel apparaît quand le soleil traverse des gouttes de pluie et que tu as le Soleil dans le dos."
+     ],
+     "q": "Quand as-tu vu un arc-en-ciel pour la dernière fois, et où était le Soleil ?",
+     "c": "Tiens un CD ou un verre transparent au soleil et cherche de petits arcs-en-ciel au mur. Ne regarde jamais le Soleil en face."
+    },
+    "it": {
+     "t": "Colori e arcobaleno",
+     "g": "Scoprire come la luce bianca sia un miscuglio di colori che prismi e gocce di pioggia separano.",
+     "p": [
+      "La luce bianca è un miscuglio di tutti i colori, dal rosso al violetto passando per arancione, giallo, verde e blu.",
+      "Ogni colore devia in modo un po' diverso, così un prisma o una goccia li apre a ventaglio.",
+      "Un arcobaleno compare quando la luce del sole attraversa gocce di pioggia e il Sole è alle tue spalle."
+     ],
+     "q": "Quando hai visto un arcobaleno l'ultima volta, e dov'era il Sole?",
+     "c": "Tieni un CD o un bicchiere trasparente al sole e cerca piccoli arcobaleni sul muro. Non guardare mai il Sole diretto."
+    },
+    "pt": {
+     "t": "Cores e arco-íris",
+     "g": "Descobrir como a luz branca é uma mistura de cores que prismas e gotas de chuva separam.",
+     "p": [
+      "A luz branca é uma mistura de todas as cores, do vermelho ao violeta, passando por laranja, amarelo, verde e azul.",
+      "Cada cor desvia-se de forma um pouco diferente, por isso um prisma ou uma gota abre-as em leque.",
+      "Um arco-íris aparece quando a luz do sol atravessa gotas de chuva e o Sol fica nas tuas costas."
+     ],
+     "q": "Quando viste um arco-íris pela última vez, e onde estava o Sol?",
+     "c": "Põe um CD ou um copo transparente ao sol e procura pequenos arco-íris na parede. Nunca olhes direto para o Sol."
+    },
+    "pt_BR": {
+     "t": "Cores e arco-íris",
+     "g": "Descobrir como a luz branca é uma mistura de cores que prismas e gotas de chuva separam.",
+     "p": [
+      "A luz branca é uma mistura de todas as cores, do vermelho ao violeta, passando por laranja, amarelo, verde e azul.",
+      "Cada cor se desvia de forma um pouco diferente, por isso um prisma ou uma gota abre as cores em leque.",
+      "Um arco-íris aparece quando a luz do sol atravessa gotas de chuva e o Sol fica às suas costas."
+     ],
+     "q": "Quando você viu um arco-íris pela última vez, e onde estava o Sol?",
+     "c": "Ponha um CD ou um copo transparente ao sol e procure pequenos arco-íris na parede. Nunca olhe direto para o Sol."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How we see color",
+     "g": "Understand that objects absorb some colors and reflect others into our eyes.",
+     "p": [
+      "A red apple absorbs most colors and reflects red light, which reaches your eyes.",
+      "A white surface reflects nearly all colors, and a black one absorbs nearly all of them.",
+      "Dark clothes warm up faster in sunshine because they absorb more light energy."
+     ],
+     "q": "Why do colors look different under a warm lamp than in daylight?",
+     "c": "Look at a colorful object in daylight and under a lamp, and note how its color seems to shift."
+    },
+    "de": {
+     "t": "Wie wir Farben sehen",
+     "g": "Verstehe, dass Gegenstände manche Farben schlucken und andere in unsere Augen werfen.",
+     "p": [
+      "Ein roter Apfel schluckt die meisten Farben und wirft rotes Licht zurück, das deine Augen erreicht.",
+      "Eine weiße Fläche wirft fast alle Farben zurück, eine schwarze schluckt fast alle.",
+      "Dunkle Kleidung wird in der Sonne schneller warm, weil sie mehr Lichtenergie aufnimmt."
+     ],
+     "q": "Warum sehen Farben unter einer warmen Lampe anders aus als bei Tageslicht?",
+     "c": "Sieh dir einen bunten Gegenstand bei Tageslicht und unter einer Lampe an und notiere, wie sich die Farbe verschiebt."
+    },
+    "es": {
+     "t": "Cómo vemos el color",
+     "g": "Entender que los objetos absorben algunos colores y reflejan otros hacia nuestros ojos.",
+     "p": [
+      "Una manzana roja absorbe casi todos los colores y refleja luz roja, que llega a tus ojos.",
+      "Una superficie blanca refleja casi todos los colores y una negra absorbe casi todos.",
+      "La ropa oscura se calienta más rápido al sol porque absorbe más energía de la luz."
+     ],
+     "q": "¿Por qué los colores se ven distintos bajo una lámpara cálida que a la luz del día?",
+     "c": "Mira un objeto colorido a la luz del día y bajo una lámpara y anota cómo parece cambiar su color."
+    },
+    "fr": {
+     "t": "Comment nous voyons les couleurs",
+     "g": "Comprendre que les objets absorbent certaines couleurs et en réfléchissent d'autres vers nos yeux.",
+     "p": [
+      "Une pomme rouge absorbe presque toutes les couleurs et renvoie la lumière rouge jusqu'à tes yeux.",
+      "Une surface blanche réfléchit presque toutes les couleurs, une noire les absorbe presque toutes.",
+      "Les vêtements sombres chauffent plus vite au soleil, car ils absorbent plus d'énergie lumineuse."
+     ],
+     "q": "Pourquoi les couleurs paraissent-elles différentes sous une lampe chaude et à la lumière du jour ?",
+     "c": "Regarde un objet coloré à la lumière du jour puis sous une lampe et note comment sa couleur semble changer."
+    },
+    "it": {
+     "t": "Come vediamo i colori",
+     "g": "Capire che gli oggetti assorbono alcuni colori e ne riflettono altri verso i nostri occhi.",
+     "p": [
+      "Una mela rossa assorbe quasi tutti i colori e riflette luce rossa, che arriva ai tuoi occhi.",
+      "Una superficie bianca riflette quasi tutti i colori, una nera li assorbe quasi tutti.",
+      "I vestiti scuri si scaldano più in fretta al sole perché assorbono più energia luminosa."
+     ],
+     "q": "Perché i colori sembrano diversi sotto una lampada calda e alla luce del giorno?",
+     "c": "Guarda un oggetto colorato alla luce del giorno e sotto una lampada e nota come il colore sembra cambiare."
+    },
+    "pt": {
+     "t": "Como vemos a cor",
+     "g": "Perceber que os objetos absorvem algumas cores e refletem outras para os nossos olhos.",
+     "p": [
+      "Uma maçã vermelha absorve quase todas as cores e reflete luz vermelha, que chega aos teus olhos.",
+      "Uma superfície branca reflete quase todas as cores e uma preta absorve quase todas.",
+      "A roupa escura aquece mais depressa ao sol porque absorve mais energia da luz."
+     ],
+     "q": "Porque parecem as cores diferentes sob um candeeiro quente e à luz do dia?",
+     "c": "Olha para um objeto colorido à luz do dia e sob um candeeiro e anota como a cor parece mudar."
+    },
+    "pt_BR": {
+     "t": "Como vemos a cor",
+     "g": "Entender que os objetos absorvem algumas cores e refletem outras para os nossos olhos.",
+     "p": [
+      "Uma maçã vermelha absorve quase todas as cores e reflete luz vermelha, que chega aos seus olhos.",
+      "Uma superfície branca reflete quase todas as cores e uma preta absorve quase todas.",
+      "A roupa escura esquenta mais rápido ao sol porque absorve mais energia da luz."
+     ],
+     "q": "Por que as cores parecem diferentes sob uma lâmpada quente e à luz do dia?",
+     "c": "Olhe para um objeto colorido à luz do dia e sob uma lâmpada e anote como a cor parece mudar."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shadows",
+     "g": "See that shadows form when an object blocks light and change with the Sun.",
+     "p": [
+      "A shadow is the dark area behind an object that blocks light, because light travels in straight lines.",
+      "Shadows are long when the Sun is low and short when it is high overhead.",
+      "Closer to the light source, a shadow grows bigger and its edges look sharper."
+     ],
+     "q": "At what time of day is your shadow longest?",
+     "c": "Stand outside on a sunny day, mark your shadow with chalk and check again an hour later."
+    },
+    "de": {
+     "t": "Schatten",
+     "g": "Sieh, dass Schatten entstehen, wenn ein Gegenstand Licht blockiert, und sich mit der Sonne ändern.",
+     "p": [
+      "Ein Schatten ist der dunkle Bereich hinter einem Gegenstand, der Licht blockiert, denn Licht reist geradlinig.",
+      "Schatten sind lang, wenn die Sonne tief steht, und kurz, wenn sie hoch am Himmel steht.",
+      "Näher an der Lichtquelle wird ein Schatten größer, seine Ränder wirken schärfer."
+     ],
+     "q": "Zu welcher Tageszeit ist dein Schatten am längsten?",
+     "c": "Stell dich an einem sonnigen Tag nach draußen, markiere deinen Schatten mit Kreide und prüfe nach einer Stunde noch einmal."
+    },
+    "es": {
+     "t": "Sombras",
+     "g": "Ver que las sombras se forman cuando un objeto bloquea la luz y cambian con el Sol.",
+     "p": [
+      "Una sombra es la zona oscura tras un objeto que bloquea la luz, porque la luz viaja en línea recta.",
+      "Las sombras son largas cuando el Sol está bajo y cortas cuando está alto.",
+      "Si te acercas a la fuente de luz, la sombra crece y los bordes se ven más nítidos."
+     ],
+     "q": "¿A qué hora del día es más larga tu sombra?",
+     "c": "Sal un día soleado, marca tu sombra con tiza y vuelve a comprobarla una hora después."
+    },
+    "fr": {
+     "t": "Les ombres",
+     "g": "Voir que les ombres se forment quand un objet arrête la lumière et changent avec le Soleil.",
+     "p": [
+      "Une ombre est la zone sombre derrière un objet qui bloque la lumière, car la lumière voyage en ligne droite.",
+      "Les ombres sont longues quand le Soleil est bas et courtes quand il est haut dans le ciel.",
+      "Près de la source de lumière, l'ombre grandit et ses bords paraissent plus nets."
+     ],
+     "q": "À quel moment de la journée ton ombre est-elle la plus longue ?",
+     "c": "Place-toi dehors par temps ensoleillé, marque ton ombre à la craie et revérifie une heure plus tard."
+    },
+    "it": {
+     "t": "Le ombre",
+     "g": "Vedere che le ombre si formano quando un oggetto blocca la luce e cambiano con il Sole.",
+     "p": [
+      "Un'ombra è la zona scura dietro un oggetto che blocca la luce, perché la luce viaggia in linea retta.",
+      "Le ombre sono lunghe quando il Sole è basso e corte quando è alto nel cielo.",
+      "Vicino alla sorgente di luce l'ombra cresce e i suoi bordi sembrano più netti."
+     ],
+     "q": "A che ora del giorno la tua ombra è più lunga?",
+     "c": "Esci in una giornata di sole, segna la tua ombra con il gesso e controlla di nuovo dopo un'ora."
+    },
+    "pt": {
+     "t": "As sombras",
+     "g": "Ver que as sombras se formam quando um objeto bloqueia a luz e mudam com o Sol.",
+     "p": [
+      "Uma sombra é a zona escura atrás de um objeto que bloqueia a luz, porque a luz viaja em linha reta.",
+      "As sombras são longas quando o Sol está baixo e curtas quando está alto no céu.",
+      "Perto da fonte de luz a sombra cresce e os seus contornos parecem mais nítidos."
+     ],
+     "q": "A que hora do dia é a tua sombra mais comprida?",
+     "c": "Sai num dia de sol, marca a tua sombra com giz e volta a verificar uma hora depois."
+    },
+    "pt_BR": {
+     "t": "As sombras",
+     "g": "Ver que as sombras se formam quando um objeto bloqueia a luz e mudam com o Sol.",
+     "p": [
+      "Uma sombra é a zona escura atrás de um objeto que bloqueia a luz, porque a luz viaja em linha reta.",
+      "As sombras são longas quando o Sol está baixo e curtas quando está alto no céu.",
+      "Perto da fonte de luz a sombra cresce e os contornos parecem mais nítidos."
+     ],
+     "q": "A que horas do dia a sua sombra é mais comprida?",
+     "c": "Saia num dia de sol, marque sua sombra com giz e confira de novo uma hora depois."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Static electricity",
+     "g": "Discover how rubbing certain materials moves electrons and makes things cling.",
+     "p": [
+      "Everything is made of atoms, and rubbing can move tiny electrons from one material to another.",
+      "One object ends up with extra electrons and the other with too few, so they attract.",
+      "A balloon rubbed on hair can stick to a wall, and sparks on a sweater are a small version."
+     ],
+     "q": "Have you ever felt a tiny zap from a doorknob or a sweater? What was happening?",
+     "c": "Rub a balloon on your hair and hold it near small bits of paper to see them jump."
+    },
+    "de": {
+     "t": "Statische Elektrizität",
+     "g": "Entdecke, wie Reiben bestimmter Materialien Elektronen verschiebt und Dinge haften lässt.",
+     "p": [
+      "Alles besteht aus Atomen, und beim Reiben können winzige Elektronen von einem Stoff zum anderen wandern.",
+      "Ein Gegenstand hat dann zu viele Elektronen und der andere zu wenige, deshalb ziehen sie sich an.",
+      "Ein an den Haaren geriebener Ballon kann an der Wand haften, Funken am Pullover sind eine kleine Ausgabe."
+     ],
+     "q": "Hast du schon einmal einen kleinen Schlag von einer Türklinke oder einem Pullover gespürt? Was geschah da?",
+     "c": "Reibe einen Ballon an den Haaren und halte ihn nahe an Papierschnipsel, damit sie springen."
+    },
+    "es": {
+     "t": "Electricidad estática",
+     "g": "Descubrir cómo frotar ciertos materiales mueve electrones y hace que las cosas se peguen.",
+     "p": [
+      "Todo está hecho de átomos y al frotar pueden pasar diminutos electrones de un material a otro.",
+      "Un objeto queda con electrones de más y el otro con electrones de menos, así que se atraen.",
+      "Un globo frotado en el pelo puede pegarse a la pared, y las chispas de un jersey son una versión pequeña."
+     ],
+     "q": "¿Has sentido alguna vez una pequeña descarga de un pomo o un jersey? ¿Qué pasaba?",
+     "c": "Frota un globo en tu pelo y acércalo a trocitos de papel para verlos saltar."
+    },
+    "fr": {
+     "t": "L'électricité statique",
+     "g": "Découvrir comment le frottement de certains matériaux déplace des électrons et fait coller les objets.",
+     "p": [
+      "Tout est fait d'atomes, et en frottant, de minuscules électrons peuvent passer d'un matériau à l'autre.",
+      "Un objet a alors trop d'électrons et l'autre pas assez, si bien qu'ils s'attirent.",
+      "Un ballon frotté sur les cheveux peut coller au mur, et les étincelles d'un pull en sont une version miniature."
+     ],
+     "q": "As-tu déjà senti une petite décharge sur une poignée de porte ou un pull ? Que se passait-il ?",
+     "c": "Frotte un ballon sur tes cheveux et approche-le de petits bouts de papier pour les voir sauter."
+    },
+    "it": {
+     "t": "L'elettricità statica",
+     "g": "Scoprire come strofinare certi materiali sposta elettroni e fa attaccare le cose.",
+     "p": [
+      "Tutto è fatto di atomi e strofinando minuscoli elettroni possono passare da un materiale all'altro.",
+      "Un oggetto resta con elettroni in più e l'altro con elettroni in meno, così si attraggono.",
+      "Un palloncino strofinato sui capelli può attaccarsi al muro, e le scintille di un maglione ne sono una versione piccola."
+     ],
+     "q": "Hai mai sentito una piccola scossa da una maniglia o da un maglione? Cosa succedeva?",
+     "c": "Strofina un palloncino sui capelli e avvicinalo a pezzetti di carta per vederli saltare."
+    },
+    "pt": {
+     "t": "Eletricidade estática",
+     "g": "Descobrir como esfregar certos materiais move eletrões e faz as coisas colarem-se.",
+     "p": [
+      "Tudo é feito de átomos e ao esfregar podem passar minúsculos eletrões de um material para outro.",
+      "Um objeto fica com eletrões a mais e o outro com eletrões a menos, por isso atraem-se.",
+      "Um balão esfregado no cabelo pode colar-se à parede, e as faíscas de uma camisola são uma versão pequena."
+     ],
+     "q": "Já sentiste um pequeno choque de uma maçaneta ou de uma camisola? O que se passava?",
+     "c": "Esfrega um balão no cabelo e aproxima-o de bocadinhos de papel para os veres saltar."
+    },
+    "pt_BR": {
+     "t": "Eletricidade estática",
+     "g": "Descobrir como esfregar certos materiais move elétrons e faz as coisas grudarem.",
+     "p": [
+      "Tudo é feito de átomos e ao esfregar podem passar minúsculos elétrons de um material para outro.",
+      "Um objeto fica com elétrons a mais e o outro com elétrons a menos, por isso se atraem.",
+      "Um balão esfregado no cabelo pode grudar na parede, e as faíscas de um suéter são uma versão pequena."
+     ],
+     "q": "Você já sentiu um pequeno choque numa maçaneta ou num suéter? O que acontecia?",
+     "c": "Esfregue um balão no cabelo e aproxime de pedacinhos de papel para vê-los pular."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Electric circuits",
+     "g": "See how a battery, wires and a bulb form a loop that lets current flow.",
+     "p": [
+      "An electric current is a flow of electrons around a complete loop called a circuit.",
+      "A battery pushes the electrons, wires carry them and a bulb glows as they pass through.",
+      "If the loop is broken, as by a switch, the current stops and the bulb goes dark."
+     ],
+     "q": "Which everyday gadget has a switch that opens or closes a circuit?",
+     "c": "Draw a circuit on paper with a battery, a bulb and a switch, and trace the loop with a finger."
+    },
+    "de": {
+     "t": "Stromkreise",
+     "g": "Sieh, wie Batterie, Kabel und Lampe eine Schleife bilden, in der Strom fließt.",
+     "p": [
+      "Ein elektrischer Strom ist ein Fluss von Elektronen in einer geschlossenen Schleife, dem Stromkreis.",
+      "Eine Batterie schiebt die Elektronen an, Drähte tragen sie, und eine Lampe leuchtet, wenn sie hindurchfließen.",
+      "Wird die Schleife unterbrochen, etwa durch einen Schalter, stoppt der Strom und die Lampe erlischt."
+     ],
+     "q": "Welches Alltagsgerät hat einen Schalter, der einen Stromkreis öffnet oder schließt?",
+     "c": "Zeichne einen Stromkreis mit Batterie, Lampe und Schalter aufs Papier und fahre die Schleife mit dem Finger nach."
+    },
+    "es": {
+     "t": "Circuitos eléctricos",
+     "g": "Ver cómo una pila, cables y una bombilla forman un bucle por el que fluye la corriente.",
+     "p": [
+      "Una corriente eléctrica es un flujo de electrones por un bucle cerrado llamado circuito.",
+      "Una pila empuja los electrones, los cables los llevan y la bombilla brilla cuando pasan.",
+      "Si se rompe el bucle, por ejemplo con un interruptor, la corriente se detiene y la bombilla se apaga."
+     ],
+     "q": "¿Qué aparato cotidiano tiene un interruptor que abre o cierra un circuito?",
+     "c": "Dibuja en papel un circuito con pila, bombilla e interruptor y recorre el bucle con el dedo."
+    },
+    "fr": {
+     "t": "Les circuits électriques",
+     "g": "Voir comment une pile, des fils et une ampoule forment une boucle où circule le courant.",
+     "p": [
+      "Un courant électrique est un flux d'électrons dans une boucle fermée appelée circuit.",
+      "Une pile pousse les électrons, les fils les transportent et l'ampoule brille à leur passage.",
+      "Si la boucle est coupée, par un interrupteur par exemple, le courant s'arrête et l'ampoule s'éteint."
+     ],
+     "q": "Quel appareil du quotidien a un interrupteur qui ouvre ou ferme un circuit ?",
+     "c": "Dessine sur papier un circuit avec pile, ampoule et interrupteur et suis la boucle du doigt."
+    },
+    "it": {
+     "t": "I circuiti elettrici",
+     "g": "Vedere come una pila, dei fili e una lampadina formano un anello in cui scorre la corrente.",
+     "p": [
+      "Una corrente elettrica è un flusso di elettroni in un anello chiuso chiamato circuito.",
+      "Una pila spinge gli elettroni, i fili li portano e la lampadina si accende al loro passaggio.",
+      "Se l'anello si interrompe, per esempio con un interruttore, la corrente si ferma e la lampadina si spegne."
+     ],
+     "q": "Quale apparecchio di uso quotidiano ha un interruttore che apre o chiude un circuito?",
+     "c": "Disegna su carta un circuito con pila, lampadina e interruttore e segui l'anello con il dito."
+    },
+    "pt": {
+     "t": "Os circuitos elétricos",
+     "g": "Ver como uma pilha, fios e uma lâmpada formam um anel por onde passa a corrente.",
+     "p": [
+      "Uma corrente elétrica é um fluxo de eletrões num anel fechado chamado circuito.",
+      "Uma pilha empurra os eletrões, os fios levam-nos e a lâmpada brilha quando passam.",
+      "Se o anel se interrompe, por exemplo com um interruptor, a corrente para e a lâmpada apaga-se."
+     ],
+     "q": "Que aparelho do dia a dia tem um interruptor que abre ou fecha um circuito?",
+     "c": "Desenha num papel um circuito com pilha, lâmpada e interruptor e segue o anel com o dedo."
+    },
+    "pt_BR": {
+     "t": "Os circuitos elétricos",
+     "g": "Ver como uma pilha, fios e uma lâmpada formam um anel por onde passa a corrente.",
+     "p": [
+      "Uma corrente elétrica é um fluxo de elétrons num anel fechado chamado circuito.",
+      "Uma pilha empurra os elétrons, os fios os levam e a lâmpada brilha quando eles passam.",
+      "Se o anel se interrompe, por exemplo com um interruptor, a corrente para e a lâmpada apaga."
+     ],
+     "q": "Que aparelho do dia a dia tem um interruptor que abre ou fecha um circuito?",
+     "c": "Desenhe num papel um circuito com pilha, lâmpada e interruptor e siga o anel com o dedo."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: energy, forces, light and sound",
+     "g": "Recap energy, forces, sound and light with everyday puzzles.",
+     "p": [
+      "Energy changes form but is never lost, and forces are pushes and pulls that change motion.",
+      "Sound is a vibration needing a material to travel through, while light is a wave that needs none.",
+      "Friction, gravity and air resistance quietly shape every move you make."
+     ],
+     "q": "Which topic from the past month would you most like to explore deeper?",
+     "c": "Pick one object and explain it using energy, a force, light or sound, in one minute."
+    },
+    "de": {
+     "t": "Wiederholung: Energie, Kräfte, Licht und Schall",
+     "g": "Wiederhole Energie, Kräfte, Schall und Licht mit Alltagsrätseln.",
+     "p": [
+      "Energie ändert ihre Form, geht aber nie verloren, und Kräfte sind Stöße und Züge, die Bewegung ändern.",
+      "Schall ist eine Schwingung, die einen Stoff zum Reisen braucht, Licht ist eine Welle, die keinen braucht.",
+      "Reibung, Schwerkraft und Luftwiderstand prägen leise jede deiner Bewegungen."
+     ],
+     "q": "Welches Thema des letzten Monats würdest du gern vertiefen?",
+     "c": "Such dir einen Gegenstand aus und erkläre ihn in einer Minute mit Energie, Kraft, Licht oder Schall."
+    },
+    "es": {
+     "t": "Repaso: energía, fuerzas, luz y sonido",
+     "g": "Repasar energía, fuerzas, sonido y luz con acertijos cotidianos.",
+     "p": [
+      "La energía cambia de forma pero nunca se pierde, y las fuerzas son empujones y tirones que cambian el movimiento.",
+      "El sonido es una vibración que necesita un material para viajar, y la luz es una onda que no lo necesita.",
+      "La fricción, la gravedad y la resistencia del aire dan forma sin ruido a cada uno de tus movimientos."
+     ],
+     "q": "¿Qué tema del último mes te gustaría explorar más a fondo?",
+     "c": "Elige un objeto y explícalo en un minuto con energía, una fuerza, luz o sonido."
+    },
+    "fr": {
+     "t": "Révision : énergie, forces, lumière et son",
+     "g": "Revoir l'énergie, les forces, le son et la lumière avec des énigmes du quotidien.",
+     "p": [
+      "L'énergie change de forme mais ne se perd jamais, et les forces sont des poussées et tractions qui changent le mouvement.",
+      "Le son est une vibration qui a besoin d'un milieu pour voyager, la lumière une onde qui n'en a pas besoin.",
+      "Le frottement, la gravité et la résistance de l'air influencent discrètement chacun de tes gestes."
+     ],
+     "q": "Quel sujet du dernier mois aimerais-tu explorer plus en profondeur ?",
+     "c": "Choisis un objet et explique-le en une minute avec l'énergie, une force, la lumière ou le son."
+    },
+    "it": {
+     "t": "Ripasso: energia, forze, luce e suono",
+     "g": "Ripassare energia, forze, suono e luce con indovinelli quotidiani.",
+     "p": [
+      "L'energia cambia forma ma non si perde mai, e le forze sono spinte e trazioni che cambiano il movimento.",
+      "Il suono è una vibrazione che ha bisogno di un materiale per viaggiare, la luce è un'onda che non ne ha bisogno.",
+      "Attrito, gravità e resistenza dell'aria influenzano in silenzio ogni tuo movimento."
+     ],
+     "q": "Quale argomento dell'ultimo mese ti piacerebbe approfondire?",
+     "c": "Scegli un oggetto e spiegalo in un minuto usando energia, una forza, luce o suono."
+    },
+    "pt": {
+     "t": "Revisão: energia, forças, luz e som",
+     "g": "Rever energia, forças, som e luz com enigmas do dia a dia.",
+     "p": [
+      "A energia muda de forma mas nunca se perde, e as forças são empurrões e puxões que mudam o movimento.",
+      "O som é uma vibração que precisa de um material para viajar, e a luz é uma onda que não precisa.",
+      "O atrito, a gravidade e a resistência do ar moldam em silêncio cada movimento teu."
+     ],
+     "q": "Que tema do último mês gostarias de explorar mais a fundo?",
+     "c": "Escolhe um objeto e explica-o em um minuto com energia, uma força, luz ou som."
+    },
+    "pt_BR": {
+     "t": "Revisão: energia, forças, luz e som",
+     "g": "Rever energia, forças, som e luz com enigmas do dia a dia.",
+     "p": [
+      "A energia muda de forma mas nunca se perde, e as forças são empurrões e puxões que mudam o movimento.",
+      "O som é uma vibração que precisa de um material para viajar, e a luz é uma onda que não precisa.",
+      "O atrito, a gravidade e a resistência do ar moldam em silêncio cada movimento seu."
+     ],
+     "q": "Que tema do último mês você gostaria de explorar mais a fundo?",
+     "c": "Escolha um objeto e explique-o em um minuto com energia, uma força, luz ou som."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Conductors of electricity",
+     "g": "Learn why metals carry current easily while rubber and plastic keep us safe.",
+     "p": [
+      "Conductors, like copper and other metals, let electrons flow easily through them.",
+      "Insulators, like rubber, plastic and dry wood, block the flow of current.",
+      "Wires are copper inside for conducting and plastic outside for safety."
+     ],
+     "q": "Why do electricians wear gloves and use tools with plastic handles?",
+     "c": "With a flashlight battery and bulb, test a coin, a paper clip and a rubber band. Only use batteries, never wall sockets."
+    },
+    "de": {
+     "t": "Leiter für Strom",
+     "g": "Lerne, warum Metalle Strom leicht leiten, während Gummi und Plastik uns schützen.",
+     "p": [
+      "Leiter wie Kupfer und andere Metalle lassen Elektronen leicht hindurchfließen.",
+      "Isolatoren wie Gummi, Plastik und trockenes Holz blockieren den Stromfluss.",
+      "Kabel sind innen aus Kupfer zum Leiten und außen aus Plastik für die Sicherheit."
+     ],
+     "q": "Warum tragen Elektriker Handschuhe und nutzen Werkzeug mit Kunststoffgriffen?",
+     "c": "Teste mit Taschenlampenbatterie und Lämpchen eine Münze, eine Büroklammer und ein Gummiband. Nur Batterien, nie Steckdosen."
+    },
+    "es": {
+     "t": "Conductores de electricidad",
+     "g": "Aprender por qué los metales conducen la corriente con facilidad y el caucho y el plástico nos protegen.",
+     "p": [
+      "Los conductores, como el cobre y otros metales, dejan que los electrones fluyan fácilmente.",
+      "Los aislantes, como el caucho, el plástico y la madera seca, bloquean el paso de la corriente.",
+      "Los cables son de cobre por dentro para conducir y de plástico por fuera por seguridad."
+     ],
+     "q": "¿Por qué los electricistas llevan guantes y usan herramientas con mangos de plástico?",
+     "c": "Con una pila de linterna y una bombilla, prueba una moneda, un clip y una goma elástica. Solo pilas, nunca enchufes."
+    },
+    "fr": {
+     "t": "Les conducteurs d'électricité",
+     "g": "Comprendre pourquoi les métaux conduisent facilement le courant alors que le caoutchouc et le plastique nous protègent.",
+     "p": [
+      "Les conducteurs, comme le cuivre et d'autres métaux, laissent les électrons circuler facilement.",
+      "Les isolants, comme le caoutchouc, le plastique et le bois sec, bloquent le passage du courant.",
+      "Les fils sont en cuivre à l'intérieur pour conduire et en plastique à l'extérieur pour la sécurité."
+     ],
+     "q": "Pourquoi les électriciens portent-ils des gants et des outils à manches en plastique ?",
+     "c": "Avec une pile de lampe de poche et une ampoule, teste une pièce, un trombone et un élastique. Piles seulement, jamais de prises."
+    },
+    "it": {
+     "t": "I conduttori di elettricità",
+     "g": "Capire perché i metalli conducono facilmente la corrente mentre gomma e plastica ci proteggono.",
+     "p": [
+      "I conduttori, come il rame e altri metalli, lasciano scorrere facilmente gli elettroni.",
+      "Gli isolanti, come gomma, plastica e legno secco, bloccano il passaggio della corrente.",
+      "I cavi sono di rame dentro per condurre e di plastica fuori per la sicurezza."
+     ],
+     "q": "Perché gli elettricisti indossano guanti e usano attrezzi con manici di plastica?",
+     "c": "Con una pila da torcia e una lampadina prova una moneta, una graffetta e un elastico. Solo pile, mai prese di corrente."
+    },
+    "pt": {
+     "t": "Os condutores de eletricidade",
+     "g": "Perceber porque os metais conduzem facilmente a corrente enquanto a borracha e o plástico nos protegem.",
+     "p": [
+      "Os condutores, como o cobre e outros metais, deixam os eletrões fluir facilmente.",
+      "Os isoladores, como a borracha, o plástico e a madeira seca, bloqueiam a passagem da corrente.",
+      "Os cabos têm cobre por dentro para conduzir e plástico por fora por segurança."
+     ],
+     "q": "Porque usam os eletricistas luvas e ferramentas com cabos de plástico?",
+     "c": "Com uma pilha de lanterna e uma lâmpada, testa uma moeda, um clipe e um elástico. Só pilhas, nunca tomadas."
+    },
+    "pt_BR": {
+     "t": "Os condutores de eletricidade",
+     "g": "Entender por que os metais conduzem facilmente a corrente enquanto a borracha e o plástico nos protegem.",
+     "p": [
+      "Os condutores, como o cobre e outros metais, deixam os elétrons fluir facilmente.",
+      "Os isolantes, como a borracha, o plástico e a madeira seca, bloqueiam a passagem da corrente.",
+      "Os cabos têm cobre por dentro para conduzir e plástico por fora por segurança."
+     ],
+     "q": "Por que os eletricistas usam luvas e ferramentas com cabos de plástico?",
+     "c": "Com uma pilha de lanterna e uma lâmpada, teste uma moeda, um clipe e um elástico. Só pilhas, nunca tomadas."
+    }
+   }
+  }
+ ]
+}

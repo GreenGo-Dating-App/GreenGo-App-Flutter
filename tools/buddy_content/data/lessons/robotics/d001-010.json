@@ -1,0 +1,835 @@
+{
+ "topic": "robotics",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What makes a machine a robot",
+     "g": "Learn the three things that turn a machine into a robot.",
+     "p": [
+      "A robot senses its surroundings with parts like switches, light sensors or cameras.",
+      "It decides what to do using a small computer program.",
+      "It acts on the world, usually with motors, lights or sound."
+     ],
+     "q": "Which robot, real or from a film, is your favourite, and what does it sense?",
+     "c": "Look around and name one machine at home that senses, decides and acts."
+    },
+    "de": {
+     "t": "Was eine Maschine zum Roboter macht",
+     "g": "Lerne die drei Dinge kennen, die aus einer Maschine einen Roboter machen.",
+     "p": [
+      "Ein Roboter nimmt seine Umgebung mit Teilen wie Schaltern, Lichtsensoren oder Kameras wahr.",
+      "Er entscheidet mithilfe eines kleinen Computerprogramms, was zu tun ist.",
+      "Er wirkt auf die Welt ein, meist mit Motoren, Lichtern oder Tönen."
+     ],
+     "q": "Welcher Roboter, echt oder aus einem Film, gefällt dir am besten und was nimmt er wahr?",
+     "c": "Nenne eine Maschine bei dir zu Hause, die wahrnimmt, entscheidet und handelt."
+    },
+    "es": {
+     "t": "Qué convierte a una máquina en robot",
+     "g": "Descubre las tres cosas que convierten una máquina en un robot.",
+     "p": [
+      "Un robot percibe su entorno con piezas como interruptores, sensores de luz o cámaras.",
+      "Decide qué hacer gracias a un pequeño programa de ordenador.",
+      "Actúa sobre el mundo, normalmente con motores, luces o sonidos."
+     ],
+     "q": "¿Cuál es tu robot favorito, real o de película, y qué percibe?",
+     "c": "Mira a tu alrededor y nombra una máquina de casa que perciba, decida y actúe."
+    },
+    "fr": {
+     "t": "Ce qui fait d'une machine un robot",
+     "g": "Découvre les trois éléments qui transforment une machine en robot.",
+     "p": [
+      "Un robot perçoit son environnement avec des composants comme des interrupteurs, capteurs de lumière ou caméras.",
+      "Il décide quoi faire grâce à un petit programme informatique.",
+      "Il agit sur le monde, souvent avec des moteurs, des lumières ou des sons."
+     ],
+     "q": "Quel est ton robot préféré, réel ou de film, et que perçoit-il ?",
+     "c": "Regarde autour de toi et cite une machine chez toi qui perçoit, décide et agit."
+    },
+    "it": {
+     "t": "Cosa rende una macchina un robot",
+     "g": "Scopri le tre cose che trasformano una macchina in un robot.",
+     "p": [
+      "Un robot percepisce l'ambiente con componenti come interruttori, sensori di luce o telecamere.",
+      "Decide cosa fare grazie a un piccolo programma per computer.",
+      "Agisce sul mondo, di solito con motori, luci o suoni."
+     ],
+     "q": "Qual è il tuo robot preferito, reale o da film, e cosa percepisce?",
+     "c": "Guardati intorno e indica una macchina in casa che percepisce, decide e agisce."
+    },
+    "pt": {
+     "t": "O que torna uma máquina num robô",
+     "g": "Descobre as três coisas que transformam uma máquina num robô.",
+     "p": [
+      "Um robô percebe o ambiente com peças como interruptores, sensores de luz ou câmaras.",
+      "Decide o que fazer através de um pequeno programa de computador.",
+      "Atua sobre o mundo, normalmente com motores, luzes ou sons."
+     ],
+     "q": "Qual é o teu robô preferido, real ou de filme, e o que é que ele percebe?",
+     "c": "Olha à tua volta e indica uma máquina em casa que perceba, decida e atue."
+    },
+    "pt_BR": {
+     "t": "O que faz de uma máquina um robô",
+     "g": "Descubra as três coisas que transformam uma máquina em um robô.",
+     "p": [
+      "Um robô percebe o ambiente com peças como interruptores, sensores de luz ou câmeras.",
+      "Ele decide o que fazer por meio de um pequeno programa de computador.",
+      "Ele atua no mundo, geralmente com motores, luzes ou sons."
+     ],
+     "q": "Qual é o seu robô favorito, real ou de filme, e o que ele percebe?",
+     "c": "Olhe ao redor e cite uma máquina da sua casa que percebe, decide e age."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Where the word robot came from",
+     "g": "Find out how a 1920 play gave the world the word robot.",
+     "p": [
+      "Czech writer Karel Čapek used the word in his 1920 play R.U.R.",
+      "It comes from the Czech word robota, meaning forced labour or hard work.",
+      "Čapek credited his brother Josef with inventing the word."
+     ],
+     "q": "Why do you think a word from a play became so popular?",
+     "c": "Say the word robot aloud and tell one friend where it comes from."
+    },
+    "de": {
+     "t": "Woher das Wort Roboter kommt",
+     "g": "Erfahre, wie ein Theaterstück von 1920 der Welt das Wort Roboter schenkte.",
+     "p": [
+      "Der tschechische Autor Karel Čapek verwendete das Wort in seinem Stück R.U.R. von 1920.",
+      "Es stammt vom tschechischen Wort robota, das Zwangsarbeit oder harte Arbeit bedeutet.",
+      "Čapek schrieb die Wortschöpfung seinem Bruder Josef zu."
+     ],
+     "q": "Warum wurde wohl ein Wort aus einem Theaterstück so beliebt?",
+     "c": "Erzähle einer Person, woher das Wort Roboter kommt."
+    },
+    "es": {
+     "t": "De dónde viene la palabra robot",
+     "g": "Descubre cómo una obra de 1920 dio al mundo la palabra robot.",
+     "p": [
+      "El escritor checo Karel Čapek usó la palabra en su obra R.U.R. de 1920.",
+      "Viene del checo robota, que significa trabajo forzado o trabajo duro.",
+      "Čapek atribuyó la invención de la palabra a su hermano Josef."
+     ],
+     "q": "¿Por qué crees que una palabra de una obra de teatro se hizo tan popular?",
+     "c": "Cuéntale a alguien de dónde viene la palabra robot."
+    },
+    "fr": {
+     "t": "D'où vient le mot robot",
+     "g": "Découvre comment une pièce de 1920 a donné au monde le mot robot.",
+     "p": [
+      "L'écrivain tchèque Karel Čapek a employé ce mot dans sa pièce R.U.R. en 1920.",
+      "Il vient du tchèque robota, qui signifie travail forcé ou labeur.",
+      "Čapek attribuait l'invention du mot à son frère Josef."
+     ],
+     "q": "Pourquoi un mot issu d'une pièce de théâtre est-il devenu si populaire, selon toi ?",
+     "c": "Raconte à quelqu'un d'où vient le mot robot."
+    },
+    "it": {
+     "t": "Da dove viene la parola robot",
+     "g": "Scopri come un'opera teatrale del 1920 ha dato al mondo la parola robot.",
+     "p": [
+      "Lo scrittore ceco Karel Čapek usò la parola nel suo dramma R.U.R. del 1920.",
+      "Deriva dal ceco robota, che significa lavoro forzato o fatica.",
+      "Čapek attribuì l'invenzione del termine al fratello Josef."
+     ],
+     "q": "Perché secondo te una parola di una commedia è diventata così popolare?",
+     "c": "Racconta a qualcuno da dove viene la parola robot."
+    },
+    "pt": {
+     "t": "De onde veio a palavra robô",
+     "g": "Descobre como uma peça de 1920 deu ao mundo a palavra robô.",
+     "p": [
+      "O escritor checo Karel Čapek usou a palavra na sua peça R.U.R. de 1920.",
+      "Vem do checo robota, que significa trabalho forçado ou trabalho duro.",
+      "Čapek atribuiu a invenção da palavra ao irmão, Josef."
+     ],
+     "q": "Porque achas que uma palavra de uma peça de teatro se tornou tão popular?",
+     "c": "Conta a alguém de onde vem a palavra robô."
+    },
+    "pt_BR": {
+     "t": "De onde veio a palavra robô",
+     "g": "Descubra como uma peça de 1920 deu ao mundo a palavra robô.",
+     "p": [
+      "O escritor tcheco Karel Čapek usou a palavra na peça R.U.R. de 1920.",
+      "Ela vem do tcheco robota, que significa trabalho forçado ou trabalho duro.",
+      "Čapek atribuiu a invenção da palavra ao irmão, Josef."
+     ],
+     "q": "Por que você acha que uma palavra de uma peça de teatro ficou tão popular?",
+     "c": "Conte a alguém de onde vem a palavra robô."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Robots you meet every day",
+     "g": "Spot the robots hiding in ordinary life and what they share.",
+     "p": [
+      "Robot vacuums sense walls, decide a path and drive wheels to clean.",
+      "Automatic doors sense a person and act by opening a motor-driven door.",
+      "Factory arms and warehouse carts repeat tasks with speed and precision."
+     ],
+     "q": "Which everyday robot or automatic machine do you meet most often?",
+     "c": "Over the next day, spot three automatic machines and note what each senses."
+    },
+    "de": {
+     "t": "Roboter im Alltag",
+     "g": "Entdecke die Roboter im normalen Leben und was sie gemeinsam haben.",
+     "p": [
+      "Saugroboter erkennen Wände, wählen einen Weg und fahren mit Rädern zum Putzen.",
+      "Automatiktüren erkennen eine Person und öffnen sich mit einem Motor.",
+      "Fabrikarme und Lagerwagen wiederholen Aufgaben schnell und präzise."
+     ],
+     "q": "Welchem Alltagsroboter oder automatischen Gerät begegnest du am häufigsten?",
+     "c": "Finde heute drei automatische Geräte und notiere, was sie wahrnehmen."
+    },
+    "es": {
+     "t": "Robots que ves cada día",
+     "g": "Descubre los robots escondidos en la vida diaria y lo que tienen en común.",
+     "p": [
+      "Los robots aspiradora detectan paredes, eligen un camino y mueven ruedas para limpiar.",
+      "Las puertas automáticas detectan a una persona y se abren con un motor.",
+      "Los brazos de fábrica y los carros de almacén repiten tareas con rapidez y precisión."
+     ],
+     "q": "¿Con qué robot o máquina automática te cruzas más a menudo?",
+     "c": "Durante el día, localiza tres máquinas automáticas y anota qué detecta cada una."
+    },
+    "fr": {
+     "t": "Les robots du quotidien",
+     "g": "Repère les robots cachés dans la vie courante et ce qu'ils ont en commun.",
+     "p": [
+      "Les robots aspirateurs détectent les murs, choisissent un chemin et roulent pour nettoyer.",
+      "Les portes automatiques détectent une personne et s'ouvrent grâce à un moteur.",
+      "Les bras d'usine et les chariots d'entrepôt répètent des tâches vite et avec précision."
+     ],
+     "q": "Quel robot ou machine automatique croises-tu le plus souvent ?",
+     "c": "Aujourd'hui, repère trois machines automatiques et note ce que chacune détecte."
+    },
+    "it": {
+     "t": "I robot di tutti i giorni",
+     "g": "Scopri i robot nascosti nella vita quotidiana e cosa hanno in comune.",
+     "p": [
+      "I robot aspirapolvere rilevano i muri, scelgono un percorso e muovono le ruote per pulire.",
+      "Le porte automatiche rilevano una persona e si aprono con un motore.",
+      "I bracci di fabbrica e i carrelli da magazzino ripetono compiti con velocità e precisione."
+     ],
+     "q": "Quale robot o macchina automatica incontri più spesso?",
+     "c": "Oggi individua tre macchine automatiche e annota cosa rileva ciascuna."
+    },
+    "pt": {
+     "t": "Robôs do dia a dia",
+     "g": "Descobre os robôs escondidos na vida quotidiana e o que partilham.",
+     "p": [
+      "Os robôs aspiradores detetam paredes, escolhem um caminho e movem rodas para limpar.",
+      "As portas automáticas detetam uma pessoa e abrem com um motor.",
+      "Os braços de fábrica e os carrinhos de armazém repetem tarefas com rapidez e precisão."
+     ],
+     "q": "Que robô ou máquina automática encontras com mais frequência?",
+     "c": "Hoje, encontra três máquinas automáticas e anota o que cada uma deteta."
+    },
+    "pt_BR": {
+     "t": "Robôs do dia a dia",
+     "g": "Descubra os robôs escondidos na vida cotidiana e o que eles têm em comum.",
+     "p": [
+      "Os robôs aspiradores detectam paredes, escolhem um caminho e giram rodas para limpar.",
+      "As portas automáticas detectam uma pessoa e se abrem com um motor.",
+      "Os braços de fábrica e os carrinhos de armazém repetem tarefas com rapidez e precisão."
+     ],
+     "q": "Qual robô ou máquina automática você encontra com mais frequência?",
+     "c": "Hoje, encontre três máquinas automáticas e anote o que cada uma detecta."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sense, think, act",
+     "g": "Understand the loop that every robot repeats again and again.",
+     "p": [
+      "Sense: sensors measure things like light, distance or touch.",
+      "Think: a controller turns those readings into a decision.",
+      "Act: motors, lights or speakers carry out the decision, then the loop restarts."
+     ],
+     "q": "Think of a simple robot: what would it sense, think and act on?",
+     "c": "Write sense, think, act for a toaster or a lamp that turns on in the dark."
+    },
+    "de": {
+     "t": "Wahrnehmen, denken, handeln",
+     "g": "Verstehe die Schleife, die jeder Roboter immer wieder durchläuft.",
+     "p": [
+      "Wahrnehmen: Sensoren messen zum Beispiel Licht, Abstand oder Berührung.",
+      "Denken: Eine Steuerung macht aus den Messwerten eine Entscheidung.",
+      "Handeln: Motoren, Lichter oder Lautsprecher setzen sie um, dann beginnt alles von vorn."
+     ],
+     "q": "Denk an einen einfachen Roboter: Was würde er wahrnehmen, denken und tun?",
+     "c": "Schreibe Wahrnehmen, Denken, Handeln für eine Lampe, die im Dunkeln angeht."
+    },
+    "es": {
+     "t": "Percibir, pensar, actuar",
+     "g": "Entiende el ciclo que todo robot repite una y otra vez.",
+     "p": [
+      "Percibir: los sensores miden cosas como luz, distancia o contacto.",
+      "Pensar: un controlador convierte esas lecturas en una decisión.",
+      "Actuar: motores, luces o altavoces ejecutan la decisión y el ciclo vuelve a empezar."
+     ],
+     "q": "Piensa en un robot sencillo: ¿qué percibiría, pensaría y haría?",
+     "c": "Escribe percibir, pensar y actuar para una lámpara que se enciende en la oscuridad."
+    },
+    "fr": {
+     "t": "Percevoir, réfléchir, agir",
+     "g": "Comprends la boucle que tout robot répète sans cesse.",
+     "p": [
+      "Percevoir : les capteurs mesurent la lumière, la distance ou le contact.",
+      "Réfléchir : un contrôleur transforme ces mesures en décision.",
+      "Agir : moteurs, lumières ou haut-parleurs l'exécutent, puis la boucle recommence."
+     ],
+     "q": "Imagine un robot simple : que percevrait-il, que déciderait-il, que ferait-il ?",
+     "c": "Écris percevoir, réfléchir, agir pour une lampe qui s'allume dans le noir."
+    },
+    "it": {
+     "t": "Percepire, pensare, agire",
+     "g": "Capisci il ciclo che ogni robot ripete continuamente.",
+     "p": [
+      "Percepire: i sensori misurano luce, distanza o contatto.",
+      "Pensare: un controllore trasforma le letture in una decisione.",
+      "Agire: motori, luci o altoparlanti la eseguono, poi il ciclo ricomincia."
+     ],
+     "q": "Pensa a un robot semplice: cosa percepirebbe, penserebbe e farebbe?",
+     "c": "Scrivi percepire, pensare, agire per una lampada che si accende al buio."
+    },
+    "pt": {
+     "t": "Sentir, pensar, agir",
+     "g": "Compreende o ciclo que todos os robôs repetem sem parar.",
+     "p": [
+      "Sentir: os sensores medem coisas como luz, distância ou toque.",
+      "Pensar: um controlador transforma essas leituras numa decisão.",
+      "Agir: motores, luzes ou altifalantes executam-na e o ciclo recomeça."
+     ],
+     "q": "Pensa num robô simples: o que sentiria, pensaria e faria?",
+     "c": "Escreve sentir, pensar, agir para um candeeiro que acende no escuro."
+    },
+    "pt_BR": {
+     "t": "Sentir, pensar, agir",
+     "g": "Entenda o ciclo que todo robô repete sem parar.",
+     "p": [
+      "Sentir: os sensores medem coisas como luz, distância ou toque.",
+      "Pensar: um controlador transforma essas leituras em uma decisão.",
+      "Agir: motores, luzes ou alto-falantes executam a decisão e o ciclo recomeça."
+     ],
+     "q": "Pense em um robô simples: o que ele sentiria, pensaria e faria?",
+     "c": "Escreva sentir, pensar, agir para um abajur que acende no escuro."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A short history of robots",
+     "g": "Take a quick tour of how robots grew from ideas to machines.",
+     "p": [
+      "Ancient inventors built clever self-moving figures long before electronics.",
+      "In the late 1940s Grey Walter built small wheeled robots called tortoises.",
+      "In 1961 the Unimate arm began working on a factory line, and rovers later explored other worlds."
+     ],
+     "q": "Which moment in robot history surprises you most?",
+     "c": "Pick one milestone from today and explain it in two sentences."
+    },
+    "de": {
+     "t": "Eine kurze Geschichte der Roboter",
+     "g": "Mache eine Schnellreise durch die Entwicklung der Roboter.",
+     "p": [
+      "Antike Erfinder bauten schon lange vor der Elektronik raffinierte selbstbewegte Figuren.",
+      "Ende der 1940er baute Grey Walter kleine Roboter auf Rädern, die Schildkröten.",
+      "1961 begann der Unimate-Arm an einer Fabrikbank zu arbeiten, später erkundeten Rover andere Welten."
+     ],
+     "q": "Welcher Moment der Robotergeschichte überrascht dich am meisten?",
+     "c": "Wähle einen Meilenstein von heute und erkläre ihn in zwei Sätzen."
+    },
+    "es": {
+     "t": "Una breve historia de los robots",
+     "g": "Haz un recorrido rápido por cómo los robots pasaron de ideas a máquinas.",
+     "p": [
+      "Los inventores antiguos construyeron figuras ingeniosas que se movían solas mucho antes de la electrónica.",
+      "A finales de los años 1940 Grey Walter construyó pequeños robots con ruedas, las tortugas.",
+      "En 1961 el brazo Unimate empezó a trabajar en una fábrica y más tarde los rovers exploraron otros mundos."
+     ],
+     "q": "¿Qué momento de la historia de los robots te sorprende más?",
+     "c": "Elige un hito de hoy y explícalo en dos frases."
+    },
+    "fr": {
+     "t": "Une brève histoire des robots",
+     "g": "Fais un tour rapide de l'évolution des robots, des idées aux machines.",
+     "p": [
+      "Des inventeurs de l'Antiquité créaient des figures ingénieuses qui bougeaient seules bien avant l'électronique.",
+      "À la fin des années 1940, Grey Walter construisit de petits robots à roues, les tortues.",
+      "En 1961, le bras Unimate commença à travailler en usine, puis des rovers explorèrent d'autres mondes."
+     ],
+     "q": "Quel moment de l'histoire des robots te surprend le plus ?",
+     "c": "Choisis un jalon du jour et explique-le en deux phrases."
+    },
+    "it": {
+     "t": "Breve storia dei robot",
+     "g": "Fai un giro veloce di come i robot sono passati da idee a macchine.",
+     "p": [
+      "Gli inventori antichi costruirono ingegnose figure semoventi molto prima dell'elettronica.",
+      "Alla fine degli anni Quaranta Grey Walter costruì piccoli robot su ruote, le tartarughe.",
+      "Nel 1961 il braccio Unimate iniziò a lavorare in fabbrica e poi i rover esplorarono altri mondi."
+     ],
+     "q": "Quale momento della storia dei robot ti sorprende di più?",
+     "c": "Scegli una tappa di oggi e spiegala in due frasi."
+    },
+    "pt": {
+     "t": "Uma breve história dos robôs",
+     "g": "Faz uma visita rápida a como os robôs passaram de ideias a máquinas.",
+     "p": [
+      "Inventores antigos construíram figuras engenhosas que se moviam sozinhas muito antes da eletrónica.",
+      "No final dos anos 1940, Grey Walter construiu pequenos robôs com rodas, as tartarugas.",
+      "Em 1961 o braço Unimate começou a trabalhar numa fábrica e mais tarde rovers exploraram outros mundos."
+     ],
+     "q": "Que momento da história dos robôs mais te surpreende?",
+     "c": "Escolhe um marco de hoje e explica-o em duas frases."
+    },
+    "pt_BR": {
+     "t": "Uma breve história dos robôs",
+     "g": "Faça um passeio rápido por como os robôs passaram de ideias a máquinas.",
+     "p": [
+      "Inventores antigos construíram figuras engenhosas que se moviam sozinhas muito antes da eletrônica.",
+      "No fim dos anos 1940, Grey Walter construiu pequenos robôs com rodas, as tartarugas.",
+      "Em 1961 o braço Unimate começou a trabalhar em uma fábrica e depois rovers exploraram outros mundos."
+     ],
+     "q": "Qual momento da história dos robôs mais surpreende você?",
+     "c": "Escolha um marco de hoje e explique em duas frases."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting up a hobby workbench",
+     "g": "Create a tidy, safe spot where building robots is a pleasure.",
+     "p": [
+      "Choose a stable table with bright light and a mat to protect the surface.",
+      "Keep small parts in boxes or trays so nothing rolls away or gets lost.",
+      "Give every tool a home and store tools and batteries out of children's and pets' reach."
+     ],
+     "q": "What corner of your home could become your workbench?",
+     "c": "Clear a small space and sort three kinds of parts into separate containers."
+    },
+    "de": {
+     "t": "Eine Hobby-Werkbank einrichten",
+     "g": "Schaffe einen ordentlichen, sicheren Platz, an dem das Roboterbauen Freude macht.",
+     "p": [
+      "Wähle einen stabilen Tisch mit hellem Licht und eine Unterlage zum Schutz der Fläche.",
+      "Bewahre Kleinteile in Boxen oder Schalen auf, damit nichts wegrollt oder verloren geht.",
+      "Jedes Werkzeug bekommt einen festen Platz; Werkzeug und Akkus bleiben außer Reichweite von Kindern und Tieren."
+     ],
+     "q": "Welche Ecke deiner Wohnung könnte deine Werkbank werden?",
+     "c": "Räume eine kleine Fläche frei und sortiere drei Teilearten in getrennte Behälter."
+    },
+    "es": {
+     "t": "Montar un banco de trabajo de aficionado",
+     "g": "Crea un rincón ordenado y seguro donde construir robots sea un placer.",
+     "p": [
+      "Elige una mesa estable con buena luz y una alfombrilla que proteja la superficie.",
+      "Guarda las piezas pequeñas en cajas o bandejas para que nada ruede ni se pierda.",
+      "Cada herramienta tiene su sitio; guarda herramientas y pilas lejos de niños y mascotas."
+     ],
+     "q": "¿Qué rincón de tu casa podría ser tu banco de trabajo?",
+     "c": "Despeja un espacio pequeño y separa tres tipos de piezas en recipientes distintos."
+    },
+    "fr": {
+     "t": "Installer un établi de loisir",
+     "g": "Crée un coin rangé et sûr où construire des robots est un plaisir.",
+     "p": [
+      "Choisis une table stable, bien éclairée, avec un tapis pour protéger la surface.",
+      "Range les petites pièces dans des boîtes ou plateaux pour que rien ne roule ni ne se perde.",
+      "Chaque outil a sa place ; garde outils et piles hors de portée des enfants et des animaux."
+     ],
+     "q": "Quel coin de ta maison pourrait devenir ton établi ?",
+     "c": "Dégage un petit espace et trie trois sortes de pièces dans des récipients séparés."
+    },
+    "it": {
+     "t": "Allestire un banco da lavoro hobby",
+     "g": "Crea un angolo ordinato e sicuro dove costruire robot sia un piacere.",
+     "p": [
+      "Scegli un tavolo stabile con luce intensa e un tappetino per proteggere il piano.",
+      "Tieni i pezzi piccoli in scatole o vassoi perché nulla rotoli via o si perda.",
+      "Ogni attrezzo ha il suo posto; tieni attrezzi e batterie lontano da bambini e animali."
+     ],
+     "q": "Quale angolo di casa tua potrebbe diventare il tuo banco da lavoro?",
+     "c": "Libera un piccolo spazio e separa tre tipi di pezzi in contenitori diversi."
+    },
+    "pt": {
+     "t": "Montar uma bancada de hobby",
+     "g": "Cria um canto arrumado e seguro onde construir robôs seja um prazer.",
+     "p": [
+      "Escolhe uma mesa estável com boa luz e um tapete para proteger a superfície.",
+      "Guarda as peças pequenas em caixas ou tabuleiros para que nada role ou se perca.",
+      "Cada ferramenta tem o seu lugar; guarda ferramentas e pilhas longe de crianças e animais."
+     ],
+     "q": "Que canto da tua casa podia ser a tua bancada?",
+     "c": "Liberta um espaço pequeno e separa três tipos de peças em recipientes diferentes."
+    },
+    "pt_BR": {
+     "t": "Montando uma bancada de hobby",
+     "g": "Crie um cantinho organizado e seguro onde construir robôs seja um prazer.",
+     "p": [
+      "Escolha uma mesa firme com boa luz e um tapete para proteger a superfície.",
+      "Guarde as peças pequenas em caixas ou bandejas para nada rolar nem se perder.",
+      "Cada ferramenta tem seu lugar; guarde ferramentas e pilhas longe de crianças e animais."
+     ],
+     "q": "Que cantinho da sua casa poderia virar sua bancada?",
+     "c": "Libere um espaço pequeno e separe três tipos de peças em recipientes diferentes."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Workshop safety first",
+     "g": "Learn the simple habits that keep every project safe and fun.",
+     "p": [
+      "Wear safety glasses when cutting wires, drilling or soldering.",
+      "Unplug or disconnect the battery before changing a circuit.",
+      "Work with good ventilation, keep drinks away and only use low-voltage power at first."
+     ],
+     "q": "Which safety habit do you already follow, and which will you add?",
+     "c": "Put your safety glasses where you can grab them, and tell Buddy your rule."
+    },
+    "de": {
+     "t": "Sicherheit in der Werkstatt zuerst",
+     "g": "Lerne einfache Gewohnheiten, die jedes Projekt sicher und schön halten.",
+     "p": [
+      "Trage beim Schneiden von Drähten, Bohren oder Löten eine Schutzbrille.",
+      "Ziehe den Stecker oder trenne den Akku, bevor du eine Schaltung änderst.",
+      "Sorge für gute Lüftung, halte Getränke fern und nutze zunächst nur Niederspannung."
+     ],
+     "q": "Welche Sicherheitsgewohnheit hast du schon und welche kommt dazu?",
+     "c": "Lege die Schutzbrille griffbereit hin und nenne Buddy deine Regel."
+    },
+    "es": {
+     "t": "La seguridad en el taller, primero",
+     "g": "Aprende hábitos sencillos que mantienen cada proyecto seguro y divertido.",
+     "p": [
+      "Usa gafas de seguridad al cortar cables, taladrar o soldar.",
+      "Desenchufa o desconecta la batería antes de cambiar un circuito.",
+      "Trabaja con buena ventilación, aleja las bebidas y usa solo baja tensión al principio."
+     ],
+     "q": "¿Qué hábito de seguridad ya tienes y cuál vas a añadir?",
+     "c": "Deja las gafas de seguridad a mano y cuéntale a Buddy tu regla."
+    },
+    "fr": {
+     "t": "La sécurité à l'atelier d'abord",
+     "g": "Apprends des habitudes simples pour que chaque projet reste sûr et agréable.",
+     "p": [
+      "Porte des lunettes de protection pour couper des fils, percer ou souder.",
+      "Débranche ou déconnecte la batterie avant de modifier un circuit.",
+      "Travaille dans un lieu aéré, éloigne les boissons et n'utilise d'abord que de la basse tension."
+     ],
+     "q": "Quelle habitude de sécurité as-tu déjà et laquelle vas-tu ajouter ?",
+     "c": "Place tes lunettes à portée de main et dis ta règle à Buddy."
+    },
+    "it": {
+     "t": "La sicurezza in officina prima di tutto",
+     "g": "Impara abitudini semplici che rendono ogni progetto sicuro e divertente.",
+     "p": [
+      "Indossa occhiali protettivi quando tagli fili, foriti o saldi.",
+      "Scollega la spina o la batteria prima di modificare un circuito.",
+      "Lavora in un luogo ventilato, tieni lontane le bevande e usa solo bassa tensione all'inizio."
+     ],
+     "q": "Quale abitudine di sicurezza hai già e quale aggiungerai?",
+     "c": "Metti gli occhiali a portata di mano e dì a Buddy la tua regola."
+    },
+    "pt": {
+     "t": "A segurança na oficina em primeiro lugar",
+     "g": "Aprende hábitos simples que mantêm cada projeto seguro e divertido.",
+     "p": [
+      "Usa óculos de proteção ao cortar fios, furar ou soldar.",
+      "Desliga da tomada ou desliga a bateria antes de alterar um circuito.",
+      "Trabalha com boa ventilação, afasta as bebidas e usa só baixa tensão no início."
+     ],
+     "q": "Que hábito de segurança já tens e qual vais acrescentar?",
+     "c": "Deixa os óculos de proteção à mão e diz a regra ao Buddy."
+    },
+    "pt_BR": {
+     "t": "Segurança na oficina em primeiro lugar",
+     "g": "Aprenda hábitos simples que mantêm cada projeto seguro e divertido.",
+     "p": [
+      "Use óculos de proteção ao cortar fios, furar ou soldar.",
+      "Tire da tomada ou desconecte a bateria antes de mudar um circuito.",
+      "Trabalhe com boa ventilação, afaste as bebidas e use só baixa tensão no começo."
+     ],
+     "q": "Que hábito de segurança você já tem e qual vai acrescentar?",
+     "c": "Deixe os óculos de proteção à mão e conte sua regra ao Buddy."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Voltage explained simply",
+     "g": "Picture voltage as the push that moves charge through a circuit.",
+     "p": [
+      "Voltage is the electrical push between two points, measured in volts.",
+      "Think of water pressure: more pressure pushes more water through a pipe.",
+      "A AA cell gives about 1.5 volts, while a USB port gives 5 volts."
+     ],
+     "q": "How would you explain voltage to a friend using your own picture?",
+     "c": "Find a battery at home and read its voltage printed on the label."
+    },
+    "de": {
+     "t": "Spannung einfach erklärt",
+     "g": "Stell dir Spannung als den Antrieb vor, der Ladung durch eine Schaltung schiebt.",
+     "p": [
+      "Spannung ist der elektrische Antrieb zwischen zwei Punkten, gemessen in Volt.",
+      "Denk an Wasserdruck: Mehr Druck schiebt mehr Wasser durch ein Rohr.",
+      "Eine AA-Zelle liefert etwa 1,5 Volt, ein USB-Anschluss 5 Volt."
+     ],
+     "q": "Wie würdest du einer Freundin Spannung mit deinem eigenen Bild erklären?",
+     "c": "Such eine Batterie und lies die Spannung auf dem Etikett ab."
+    },
+    "es": {
+     "t": "El voltaje explicado fácil",
+     "g": "Imagina el voltaje como el empuje que mueve la carga por un circuito.",
+     "p": [
+      "El voltaje es el empuje eléctrico entre dos puntos y se mide en voltios.",
+      "Piensa en la presión del agua: más presión empuja más agua por una tubería.",
+      "Una pila AA da unos 1,5 voltios y un puerto USB da 5 voltios."
+     ],
+     "q": "¿Cómo le explicarías el voltaje a un amigo con tu propia imagen?",
+     "c": "Busca una pila en casa y lee el voltaje impreso en la etiqueta."
+    },
+    "fr": {
+     "t": "La tension expliquée simplement",
+     "g": "Imagine la tension comme la poussée qui fait circuler les charges dans un circuit.",
+     "p": [
+      "La tension est la poussée électrique entre deux points, mesurée en volts.",
+      "Pense à la pression de l'eau : plus de pression pousse plus d'eau dans un tuyau.",
+      "Une pile AA donne environ 1,5 volt, un port USB 5 volts."
+     ],
+     "q": "Comment expliquerais-tu la tension à un ami avec ta propre image ?",
+     "c": "Trouve une pile chez toi et lis la tension écrite sur l'étiquette."
+    },
+    "it": {
+     "t": "La tensione spiegata semplice",
+     "g": "Immagina la tensione come la spinta che muove la carica in un circuito.",
+     "p": [
+      "La tensione è la spinta elettrica tra due punti, misurata in volt.",
+      "Pensa alla pressione dell'acqua: più pressione spinge più acqua in un tubo.",
+      "Una pila AA dà circa 1,5 volt, una porta USB dà 5 volt."
+     ],
+     "q": "Come spiegheresti la tensione a un amico con una tua immagine?",
+     "c": "Trova una pila in casa e leggi la tensione scritta sull'etichetta."
+    },
+    "pt": {
+     "t": "A tensão explicada de forma simples",
+     "g": "Imagina a tensão como o impulso que move a carga num circuito.",
+     "p": [
+      "A tensão é o impulso elétrico entre dois pontos, medida em volts.",
+      "Pensa na pressão da água: mais pressão empurra mais água por um tubo.",
+      "Uma pilha AA dá cerca de 1,5 volts e uma porta USB dá 5 volts."
+     ],
+     "q": "Como explicarias a tensão a um amigo com a tua própria imagem?",
+     "c": "Encontra uma pilha em casa e lê a tensão impressa no rótulo."
+    },
+    "pt_BR": {
+     "t": "Tensão explicada de forma simples",
+     "g": "Imagine a tensão como o impulso que move a carga em um circuito.",
+     "p": [
+      "A tensão é o impulso elétrico entre dois pontos, medida em volts.",
+      "Pense na pressão da água: mais pressão empurra mais água por um cano.",
+      "Uma pilha AA dá cerca de 1,5 volts e uma porta USB dá 5 volts."
+     ],
+     "q": "Como você explicaria a tensão a um amigo com sua própria imagem?",
+     "c": "Ache uma pilha em casa e leia a tensão impressa no rótulo."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Current: the flow of charge",
+     "g": "Understand current as the amount of charge flowing each second.",
+     "p": [
+      "Current is measured in amperes, often shortened to amps.",
+      "In the water picture, current is how much water flows past a point.",
+      "Small robot parts use milliamps, while motors can need much more."
+     ],
+     "q": "Which part of a robot do you think uses the most current?",
+     "c": "Look at a phone charger label and find its output current in amps."
+    },
+    "de": {
+     "t": "Strom: der Fluss der Ladung",
+     "g": "Verstehe Strom als die Ladungsmenge, die jede Sekunde fließt.",
+     "p": [
+      "Stromstärke wird in Ampere gemessen, ihr Kurzzeichen ist A.",
+      "Im Wasserbild ist der Strom die Wassermenge, die an einer Stelle vorbeifließt.",
+      "Kleine Roboterteile brauchen Milliampere, Motoren oft deutlich mehr."
+     ],
+     "q": "Welches Teil eines Roboters verbraucht deiner Meinung nach am meisten Strom?",
+     "c": "Schau auf ein Handy-Ladegerät und finde den Ausgangsstrom in Ampere."
+    },
+    "es": {
+     "t": "Corriente: el flujo de carga",
+     "g": "Entiende la corriente como la cantidad de carga que fluye cada segundo.",
+     "p": [
+      "La corriente se mide en amperios, a menudo abreviado como A.",
+      "En la imagen del agua, la corriente es cuánta agua pasa por un punto.",
+      "Las piezas pequeñas usan miliamperios; los motores pueden necesitar mucho más."
+     ],
+     "q": "¿Qué parte de un robot crees que consume más corriente?",
+     "c": "Mira la etiqueta de un cargador de móvil y encuentra su corriente de salida en amperios."
+    },
+    "fr": {
+     "t": "Le courant : le flux de charge",
+     "g": "Comprends le courant comme la quantité de charge qui circule chaque seconde.",
+     "p": [
+      "Le courant se mesure en ampères, souvent abrégés en A.",
+      "Dans l'image de l'eau, le courant est la quantité d'eau qui passe en un point.",
+      "Les petites pièces utilisent des milliampères ; les moteurs peuvent en demander bien plus."
+     ],
+     "q": "Quelle partie d'un robot consomme le plus de courant, à ton avis ?",
+     "c": "Regarde l'étiquette d'un chargeur de téléphone et trouve son courant de sortie en ampères."
+    },
+    "it": {
+     "t": "Corrente: il flusso di carica",
+     "g": "Capisci la corrente come la quantità di carica che scorre ogni secondo.",
+     "p": [
+      "La corrente si misura in ampere, spesso abbreviati con A.",
+      "Nell'immagine dell'acqua, la corrente è quanta acqua passa in un punto.",
+      "I piccoli componenti usano milliampere; i motori possono richiederne molti di più."
+     ],
+     "q": "Quale parte di un robot pensi consumi più corrente?",
+     "c": "Guarda l'etichetta di un caricatore del telefono e trova la corrente in uscita in ampere."
+    },
+    "pt": {
+     "t": "Corrente: o fluxo de carga",
+     "g": "Compreende a corrente como a quantidade de carga que flui a cada segundo.",
+     "p": [
+      "A corrente mede-se em amperes, muitas vezes abreviados como A.",
+      "Na imagem da água, a corrente é a quantidade de água que passa num ponto.",
+      "As peças pequenas usam miliamperes; os motores podem precisar de muito mais."
+     ],
+     "q": "Que parte de um robô achas que consome mais corrente?",
+     "c": "Vê a etiqueta de um carregador de telemóvel e encontra a corrente de saída em amperes."
+    },
+    "pt_BR": {
+     "t": "Corrente: o fluxo de carga",
+     "g": "Entenda a corrente como a quantidade de carga que flui a cada segundo.",
+     "p": [
+      "A corrente é medida em ampères, muitas vezes abreviados como A.",
+      "Na imagem da água, a corrente é quanta água passa por um ponto.",
+      "Peças pequenas usam miliampères; motores podem precisar de muito mais."
+     ],
+     "q": "Que parte de um robô você acha que consome mais corrente?",
+     "c": "Olhe o rótulo de um carregador de celular e ache a corrente de saída em ampères."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Resistance and resistors",
+     "g": "Learn how resistors limit current and why robots need them.",
+     "p": [
+      "Resistance opposes current flow and is measured in ohms.",
+      "A resistor is a small part that adds a known resistance to a circuit.",
+      "Coloured bands on its body tell you its value, which we decode soon."
+     ],
+     "q": "Where in a robot would you want to limit current?",
+     "c": "Find a resistor in a spare kit or old board and look at its bands."
+    },
+    "de": {
+     "t": "Widerstand und Widerstände",
+     "g": "Lerne, wie Widerstände den Strom begrenzen und warum Roboter sie brauchen.",
+     "p": [
+      "Widerstand bremst den Stromfluss und wird in Ohm gemessen.",
+      "Ein Widerstand ist ein kleines Bauteil mit einem bekannten Widerstandswert.",
+      "Farbige Ringe auf dem Körper verraten den Wert, den wir bald entschlüsseln."
+     ],
+     "q": "Wo würdest du in einem Roboter den Strom begrenzen wollen?",
+     "c": "Suche einen Widerstand in einem Bausatz oder einer alten Platine und sieh dir die Ringe an."
+    },
+    "es": {
+     "t": "Resistencia y resistencias",
+     "g": "Aprende cómo las resistencias limitan la corriente y por qué las necesitan los robots.",
+     "p": [
+      "La resistencia se opone al paso de la corriente y se mide en ohmios.",
+      "Una resistencia es una pieza pequeña que añade un valor conocido al circuito.",
+      "Las bandas de colores indican su valor, que pronto aprenderemos a leer."
+     ],
+     "q": "¿Dónde querrías limitar la corriente en un robot?",
+     "c": "Busca una resistencia en un kit o placa vieja y mira sus bandas."
+    },
+    "fr": {
+     "t": "Résistance et résistances",
+     "g": "Apprends comment les résistances limitent le courant et pourquoi les robots en ont besoin.",
+     "p": [
+      "La résistance s'oppose au passage du courant et se mesure en ohms.",
+      "Une résistance est un petit composant qui ajoute une valeur connue au circuit.",
+      "Des bandes de couleur indiquent sa valeur, que nous apprendrons bientôt à lire."
+     ],
+     "q": "Où voudrais-tu limiter le courant dans un robot ?",
+     "c": "Trouve une résistance dans un kit ou une vieille carte et regarde ses bandes."
+    },
+    "it": {
+     "t": "Resistenza e resistori",
+     "g": "Scopri come i resistori limitano la corrente e perché i robot ne hanno bisogno.",
+     "p": [
+      "La resistenza si oppone al passaggio della corrente e si misura in ohm.",
+      "Un resistore è un piccolo componente che aggiunge al circuito una resistenza nota.",
+      "Le fasce colorate indicano il suo valore, che presto impareremo a leggere."
+     ],
+     "q": "Dove vorresti limitare la corrente in un robot?",
+     "c": "Trova un resistore in un kit o in una vecchia scheda e guarda le sue fasce."
+    },
+    "pt": {
+     "t": "Resistência e resistências",
+     "g": "Aprende como as resistências limitam a corrente e porque os robôs precisam delas.",
+     "p": [
+      "A resistência opõe-se à passagem da corrente e mede-se em ohms.",
+      "Uma resistência é uma peça pequena que acrescenta ao circuito um valor conhecido.",
+      "As riscas de cor indicam o valor, que em breve vamos aprender a ler."
+     ],
+     "q": "Onde gostarias de limitar a corrente num robô?",
+     "c": "Encontra uma resistência num kit ou placa velha e olha para as riscas."
+    },
+    "pt_BR": {
+     "t": "Resistência e resistores",
+     "g": "Aprenda como os resistores limitam a corrente e por que os robôs precisam deles.",
+     "p": [
+      "A resistência se opõe à passagem da corrente e é medida em ohms.",
+      "Um resistor é uma peça pequena que adiciona ao circuito um valor conhecido.",
+      "As faixas coloridas indicam o valor, que logo aprenderemos a ler."
+     ],
+     "q": "Onde você gostaria de limitar a corrente em um robô?",
+     "c": "Ache um resistor em um kit ou placa velha e olhe as faixas."
+    }
+   }
+  }
+ ]
+}

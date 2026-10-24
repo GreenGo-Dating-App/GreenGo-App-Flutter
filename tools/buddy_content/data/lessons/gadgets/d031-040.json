@@ -1,0 +1,835 @@
+{
+ "topic": "gadgets",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Charging the right way",
+     "g": "Cables, chargers and habits that keep charging safe and efficient.",
+     "p": [
+      "Use a good-quality charger and cable made for your device; poor ones can overheat.",
+      "Charge on a hard, open surface, never under a pillow or blanket where heat gets trapped.",
+      "Unplug and stop using any cable or charger that is frayed, bent, hot or smells odd."
+     ],
+     "q": "Where do you usually charge your phone, and is it a safe spot?",
+     "c": "Check your charging cable for cracks or bends and retire it if damaged."
+    },
+    "de": {
+     "t": "Richtig laden",
+     "g": "Kabel, Ladegeräte und Gewohnheiten für sicheres, effizientes Laden.",
+     "p": [
+      "Nutze ein hochwertiges Ladegerät und Kabel, das zu deinem Gerät passt; schlechte können überhitzen.",
+      "Lade auf einer harten, freien Fläche, nie unter Kissen oder Decke, wo sich Wärme staut.",
+      "Zieh defekte, geknickte, heiße oder seltsam riechende Kabel und Ladegeräte ab und nutze sie nicht mehr."
+     ],
+     "q": "Wo lädst du dein Handy meist, und ist das ein sicherer Platz?",
+     "c": "Prüfe dein Ladekabel auf Risse oder Knicke und sortiere es bei Schäden aus."
+    },
+    "es": {
+     "t": "Cargar de la forma correcta",
+     "g": "Cables, cargadores y hábitos para cargar con seguridad y eficiencia.",
+     "p": [
+      "Usa un cargador y un cable de buena calidad hechos para tu aparato; los malos pueden sobrecalentarse.",
+      "Carga sobre una superficie dura y despejada, nunca bajo la almohada o la manta, donde se acumula calor.",
+      "Desenchufa y deja de usar cualquier cable o cargador pelado, doblado, caliente o con olor raro."
+     ],
+     "q": "¿Dónde sueles cargar el móvil y es un sitio seguro?",
+     "c": "Revisa si tu cable de carga tiene grietas o dobleces y retíralo si está dañado."
+    },
+    "fr": {
+     "t": "Charger comme il faut",
+     "g": "Câbles, chargeurs et habitudes pour une charge sûre et efficace.",
+     "p": [
+      "Utilise un chargeur et un câble de bonne qualité conçus pour ton appareil ; les mauvais peuvent surchauffer.",
+      "Charge sur une surface dure et dégagée, jamais sous l'oreiller ou la couette, où la chaleur s'accumule.",
+      "Débranche et n'utilise plus un câble ou chargeur effiloché, plié, chaud ou à l'odeur étrange."
+     ],
+     "q": "Où charges-tu d'habitude ton téléphone, et est-ce un endroit sûr ?",
+     "c": "Vérifie que ton câble n'a ni fissure ni pliure et écarte-le s'il est abîmé."
+    },
+    "it": {
+     "t": "Ricaricare nel modo giusto",
+     "g": "Cavi, caricabatterie e abitudini per ricaricare in modo sicuro ed efficiente.",
+     "p": [
+      "Usa un caricabatterie e un cavo di buona qualità fatti per il tuo dispositivo; quelli scadenti possono surriscaldarsi.",
+      "Ricarica su una superficie dura e libera, mai sotto il cuscino o la coperta, dove il calore resta intrappolato.",
+      "Scollega e non usare più cavi o caricabatterie sfilacciati, piegati, caldi o con odore strano."
+     ],
+     "q": "Dove di solito ricarichi il telefono e il posto è sicuro?",
+     "c": "Controlla che il cavo non abbia crepe o pieghe e sostituiscilo se è danneggiato."
+    },
+    "pt": {
+     "t": "Carregar da maneira certa",
+     "g": "Cabos, carregadores e hábitos para carregar com segurança e eficiência.",
+     "p": [
+      "Usa um carregador e um cabo de boa qualidade feitos para o teu aparelho; os maus podem sobreaquecer.",
+      "Carrega numa superfície dura e livre, nunca debaixo da almofada ou do cobertor, onde o calor se acumula.",
+      "Desliga e deixa de usar cabos ou carregadores descascados, dobrados, quentes ou com cheiro estranho."
+     ],
+     "q": "Onde costumas carregar o telemóvel e é um sítio seguro?",
+     "c": "Verifica se o cabo tem fendas ou dobras e retira-o se estiver danificado."
+    },
+    "pt_BR": {
+     "t": "Carregar do jeito certo",
+     "g": "Cabos, carregadores e hábitos para carregar com segurança e eficiência.",
+     "p": [
+      "Use um carregador e um cabo de boa qualidade feitos para o seu aparelho; os ruins podem superaquecer.",
+      "Carregue numa superfície dura e livre, nunca embaixo do travesseiro ou do cobertor, onde o calor se acumula.",
+      "Desligue e pare de usar cabos ou carregadores descascados, dobrados, quentes ou com cheiro estranho."
+     ],
+     "q": "Onde você costuma carregar o celular e é um lugar seguro?",
+     "c": "Verifique se o cabo tem rachaduras ou dobras e descarte-o se estiver danificado."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Battery care habits",
+     "g": "Avoid extreme heat, keep software updated and use battery saving features.",
+     "p": [
+      "Heat is the battery's enemy: never leave devices in a hot car or in direct sun.",
+      "Keeping charge roughly between 20 and 80 percent is gentle, though occasional full charges are fine.",
+      "Updates often improve power use, and built-in battery health features help the cell last."
+     ],
+     "q": "Where does your phone get hottest, and can you avoid that?",
+     "c": "Check today that your phone is not charging in a warm, covered or sunny spot."
+    },
+    "de": {
+     "t": "Gewohnheiten für die Akkupflege",
+     "g": "Extreme Hitze meiden, Software aktuell halten und Energiesparfunktionen nutzen.",
+     "p": [
+      "Hitze ist der Feind des Akkus: lass Geräte nie im heißen Auto oder in der prallen Sonne.",
+      "Ein Ladestand grob zwischen 20 und 80 Prozent ist schonend, gelegentlich voll laden ist okay.",
+      "Updates verbessern oft den Verbrauch, und eingebaute Akkufunktionen verlängern die Lebensdauer."
+     ],
+     "q": "Wo wird dein Handy am heißesten, und lässt sich das vermeiden?",
+     "c": "Prüfe heute, dass dein Handy nicht an einem warmen, bedeckten oder sonnigen Ort lädt."
+    },
+    "es": {
+     "t": "Hábitos de cuidado de la batería",
+     "g": "Evita el calor extremo, actualiza el software y usa las funciones de ahorro.",
+     "p": [
+      "El calor es el enemigo de la batería: nunca dejes aparatos en un coche caliente o al sol directo.",
+      "Mantener la carga entre un 20 y un 80 por ciento es suave, aunque alguna carga completa no pasa nada.",
+      "Las actualizaciones suelen mejorar el consumo y las funciones de salud de la batería ayudan a alargarla."
+     ],
+     "q": "¿Dónde se calienta más tu móvil y puedes evitarlo?",
+     "c": "Comprueba hoy que tu móvil no se carga en un sitio caliente, tapado o al sol."
+    },
+    "fr": {
+     "t": "Habitudes de soin de la batterie",
+     "g": "Évite la chaleur extrême, garde le système à jour et utilise les modes d'économie.",
+     "p": [
+      "La chaleur est l'ennemie de la batterie : ne laisse jamais un appareil dans une voiture chaude ou au soleil.",
+      "Garder la charge entre 20 et 80 pour cent est doux, même si une charge complète de temps en temps va bien.",
+      "Les mises à jour améliorent souvent la consommation, et les fonctions de santé de la batterie aident à la préserver."
+     ],
+     "q": "Où ton téléphone chauffe-t-il le plus, et peux-tu l'éviter ?",
+     "c": "Vérifie aujourd'hui que ton téléphone ne charge pas dans un endroit chaud, couvert ou au soleil."
+    },
+    "it": {
+     "t": "Abitudini per la cura della batteria",
+     "g": "Evita il caldo estremo, tieni il software aggiornato e usa il risparmio energetico.",
+     "p": [
+      "Il caldo è il nemico della batteria: mai lasciare dispositivi in un'auto calda o sotto il sole.",
+      "Tenere la carica tra circa 20 e 80 per cento è delicato, ma ogni tanto una carica completa va bene.",
+      "Gli aggiornamenti spesso migliorano i consumi e le funzioni di salute della batteria aiutano a farla durare."
+     ],
+     "q": "Dove si scalda di più il tuo telefono e puoi evitarlo?",
+     "c": "Controlla oggi che il telefono non si ricarichi in un posto caldo, coperto o al sole."
+    },
+    "pt": {
+     "t": "Hábitos de cuidado da bateria",
+     "g": "Evita calor extremo, mantém o software atualizado e usa as funções de poupança.",
+     "p": [
+      "O calor é inimigo da bateria: nunca deixes aparelhos num carro quente ou ao sol direto.",
+      "Manter a carga entre 20 e 80 por cento é suave, mas uma carga completa de vez em quando não faz mal.",
+      "As atualizações costumam melhorar o consumo e as funções de saúde da bateria ajudam a durar mais."
+     ],
+     "q": "Onde aquece mais o teu telemóvel e podes evitar isso?",
+     "c": "Verifica hoje que o telemóvel não carrega num sítio quente, tapado ou ao sol."
+    },
+    "pt_BR": {
+     "t": "Hábitos de cuidado da bateria",
+     "g": "Evite calor extremo, mantenha o software atualizado e use os recursos de economia.",
+     "p": [
+      "O calor é inimigo da bateria: nunca deixe aparelhos num carro quente ou no sol direto.",
+      "Manter a carga entre 20 e 80 por cento é suave, mas uma carga completa de vez em quando não faz mal.",
+      "As atualizações costumam melhorar o consumo e os recursos de saúde da bateria ajudam a durar mais."
+     ],
+     "q": "Onde seu celular mais esquenta e dá para evitar isso?",
+     "c": "Verifique hoje que o celular não carrega num lugar quente, coberto ou no sol."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Battery saving tricks",
+     "g": "Dark mode, lower brightness and limiting background apps stretch your day.",
+     "p": [
+      "Lower brightness and a short screen timeout cut the biggest power drain.",
+      "Dark mode saves energy on OLED screens, where black pixels are simply switched off.",
+      "Limit background refresh and location for apps that do not need them."
+     ],
+     "q": "Which trick would help your battery the most today?",
+     "c": "Pick two saving tricks, try them today and compare the battery at bedtime."
+    },
+    "de": {
+     "t": "Akku-Spartricks",
+     "g": "Dunkelmodus, weniger Helligkeit und begrenzte Hintergrund-Apps verlängern deinen Tag.",
+     "p": [
+      "Weniger Helligkeit und kurze Bildschirmzeit sparen den größten Stromverbrauch.",
+      "Der Dunkelmodus spart bei OLED-Bildschirmen Energie, da schwarze Pixel einfach ausbleiben.",
+      "Begrenze Hintergrundaktualisierung und Standort bei Apps, die sie nicht brauchen."
+     ],
+     "q": "Welcher Trick würde deinem Akku heute am meisten helfen?",
+     "c": "Wähle zwei Spartricks, probiere sie heute und vergleiche den Akkustand am Abend."
+    },
+    "es": {
+     "t": "Trucos para ahorrar batería",
+     "g": "Modo oscuro, menos brillo y limitar apps en segundo plano alargan tu día.",
+     "p": [
+      "Menos brillo y un tiempo de pantalla corto recortan el mayor gasto de energía.",
+      "El modo oscuro ahorra energía en pantallas OLED, donde los píxeles negros simplemente se apagan.",
+      "Limita la actualización en segundo plano y la ubicación en apps que no los necesiten."
+     ],
+     "q": "¿Qué truco ayudaría más a tu batería hoy?",
+     "c": "Elige dos trucos, pruébalos hoy y compara la batería al acostarte."
+    },
+    "fr": {
+     "t": "Astuces pour économiser la batterie",
+     "g": "Mode sombre, luminosité réduite et applis limitées en arrière-plan prolongent ta journée.",
+     "p": [
+      "Une luminosité plus basse et une courte mise en veille réduisent la plus grosse consommation.",
+      "Le mode sombre économise l'énergie sur les écrans OLED, où les pixels noirs sont simplement éteints.",
+      "Limite l'actualisation en arrière-plan et la localisation pour les applis qui n'en ont pas besoin."
+     ],
+     "q": "Quelle astuce aiderait le plus ta batterie aujourd'hui ?",
+     "c": "Choisis deux astuces, essaie-les aujourd'hui et compare la batterie au coucher."
+    },
+    "it": {
+     "t": "Trucchi per risparmiare batteria",
+     "g": "Modalità scura, meno luminosità e app in background limitate allungano la giornata.",
+     "p": [
+      "Meno luminosità e uno spegnimento schermo rapido tagliano il consumo maggiore.",
+      "La modalità scura risparmia energia sugli schermi OLED, dove i pixel neri restano semplicemente spenti.",
+      "Limita l'aggiornamento in background e la posizione per le app che non ne hanno bisogno."
+     ],
+     "q": "Quale trucco aiuterebbe di più la tua batteria oggi?",
+     "c": "Scegli due trucchi, provali oggi e confronta la batteria prima di dormire."
+    },
+    "pt": {
+     "t": "Truques para poupar bateria",
+     "g": "Modo escuro, menos brilho e apps limitadas em segundo plano alongam o teu dia.",
+     "p": [
+      "Menos brilho e um tempo de ecrã curto cortam o maior consumo de energia.",
+      "O modo escuro poupa energia em ecrãs OLED, onde os píxeis pretos ficam simplesmente apagados.",
+      "Limita a atualização em segundo plano e a localização nas apps que não precisem."
+     ],
+     "q": "Que truque ajudaria mais a tua bateria hoje?",
+     "c": "Escolhe dois truques, testa-os hoje e compara a bateria à hora de deitar."
+    },
+    "pt_BR": {
+     "t": "Truques para economizar bateria",
+     "g": "Modo escuro, menos brilho e apps limitados em segundo plano esticam o seu dia.",
+     "p": [
+      "Menos brilho e um tempo de tela curto cortam o maior consumo de energia.",
+      "O modo escuro economiza energia em telas OLED, onde os pixels pretos ficam simplesmente apagados.",
+      "Limite a atualização em segundo plano e a localização nos apps que não precisam."
+     ],
+     "q": "Qual truque ajudaria mais a sua bateria hoje?",
+     "c": "Escolha dois truques, teste hoje e compare a bateria na hora de dormir."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cases and screen protectors",
+     "g": "How protection works, from slim covers to rugged cases and tempered glass.",
+     "p": [
+      "A case absorbs shocks with soft corners and raised edges that keep the screen off the ground.",
+      "Tempered glass protectors take scratches and cracks so your real screen does not.",
+      "Choose protection that fits your life: slim for style, rugged for building sites and hikes."
+     ],
+     "q": "Have you ever cracked a screen, and could protection have helped?",
+     "c": "Check your case and protector for wear and clean under the case once."
+    },
+    "de": {
+     "t": "Hüllen und Displayschutz",
+     "g": "Wie Schutz funktioniert, von dünnen Hüllen bis zu robusten Cases und Panzerglas.",
+     "p": [
+      "Eine Hülle fängt Stöße mit weichen Ecken und erhöhten Rändern auf, die den Bildschirm vom Boden fernhalten.",
+      "Panzerglas nimmt Kratzer und Risse auf, damit dein echtes Display heil bleibt.",
+      "Wähle Schutz, der zu deinem Leben passt: dünn für Stil, robust für Baustelle und Wanderung."
+     ],
+     "q": "Hast du je ein Display zerbrochen, und hätte Schutz geholfen?",
+     "c": "Prüfe Hülle und Schutzglas auf Abnutzung und reinige einmal unter der Hülle."
+    },
+    "es": {
+     "t": "Fundas y protectores de pantalla",
+     "g": "Cómo funciona la protección, de fundas finas a fundas rudas y cristal templado.",
+     "p": [
+      "Una funda absorbe golpes con esquinas blandas y bordes elevados que alejan la pantalla del suelo.",
+      "El cristal templado recibe los arañazos y grietas para que no los reciba tu pantalla.",
+      "Elige la protección según tu vida: fina para el estilo, reforzada para obras y excursiones."
+     ],
+     "q": "¿Alguna vez rompiste una pantalla y habría ayudado una protección?",
+     "c": "Revisa el desgaste de tu funda y protector y limpia una vez bajo la funda."
+    },
+    "fr": {
+     "t": "Coques et protections d'écran",
+     "g": "Comment fonctionne la protection, des coques fines aux coques renforcées et au verre trempé.",
+     "p": [
+      "Une coque absorbe les chocs grâce à ses coins souples et ses bords relevés qui éloignent l'écran du sol.",
+      "Le verre trempé encaisse rayures et fissures à la place de ton vrai écran.",
+      "Choisis la protection selon ta vie : fine pour le style, renforcée pour chantiers et randonnées."
+     ],
+     "q": "As-tu déjà fissuré un écran, et une protection aurait-elle aidé ?",
+     "c": "Vérifie l'usure de ta coque et de ta protection et nettoie une fois sous la coque."
+    },
+    "it": {
+     "t": "Custodie e pellicole protettive",
+     "g": "Come funziona la protezione, dalle cover sottili alle custodie rinforzate e al vetro temperato.",
+     "p": [
+      "Una custodia assorbe gli urti con angoli morbidi e bordi rialzati che tengono lo schermo lontano dal suolo.",
+      "Il vetro temperato prende graffi e crepe al posto del tuo schermo vero.",
+      "Scegli la protezione adatta alla tua vita: sottile per lo stile, rinforzata per cantieri ed escursioni."
+     ],
+     "q": "Hai mai rotto uno schermo, e una protezione avrebbe aiutato?",
+     "c": "Controlla l'usura di custodia e pellicola e pulisci una volta sotto la custodia."
+    },
+    "pt": {
+     "t": "Capas e protetores de ecrã",
+     "g": "Como funciona a proteção, de capas finas a capas reforçadas e vidro temperado.",
+     "p": [
+      "Uma capa absorve choques com cantos macios e bordas elevadas que afastam o ecrã do chão.",
+      "O vidro temperado apanha riscos e fendas para que o teu ecrã real não as apanhe.",
+      "Escolhe a proteção conforme a tua vida: fina para o estilo, reforçada para obras e caminhadas."
+     ],
+     "q": "Já partiste um ecrã e uma proteção teria ajudado?",
+     "c": "Verifica o desgaste da capa e do protetor e limpa uma vez por baixo da capa."
+    },
+    "pt_BR": {
+     "t": "Capas e películas de proteção",
+     "g": "Como funciona a proteção, de capas finas a capas reforçadas e vidro temperado.",
+     "p": [
+      "Uma capa absorve choques com cantos macios e bordas elevadas que afastam a tela do chão.",
+      "O vidro temperado leva os riscos e rachaduras para que a sua tela de verdade não leve.",
+      "Escolha a proteção conforme a sua vida: fina para o estilo, reforçada para obras e trilhas."
+     ],
+     "q": "Você já quebrou uma tela e uma proteção teria ajudado?",
+     "c": "Verifique o desgaste da capa e da película e limpe uma vez por baixo da capa."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keeping gadgets clean",
+     "g": "Safe ways to clean screens, ports and keyboards without damaging them.",
+     "p": [
+      "Switch the device off and unplug it before cleaning anything.",
+      "Wipe screens with a soft, slightly damp microfibre cloth; never spray liquid directly on the device.",
+      "Clear ports gently with a wooden or plastic pick, never metal, and never blow in with your mouth."
+     ],
+     "q": "How clean is your phone screen right now, honestly?",
+     "c": "Clean your screen and case with a soft cloth and notice the difference."
+    },
+    "de": {
+     "t": "Gadgets sauber halten",
+     "g": "Sichere Wege, Bildschirme, Anschlüsse und Tastaturen ohne Schäden zu reinigen.",
+     "p": [
+      "Schalte das Gerät aus und zieh den Stecker, bevor du irgendetwas reinigst.",
+      "Wische Bildschirme mit weichem, leicht feuchtem Mikrofasertuch; sprühe nie Flüssigkeit direkt aufs Gerät.",
+      "Befreie Anschlüsse vorsichtig mit Holz- oder Kunststoffstift, nie mit Metall, und puste nie mit dem Mund hinein."
+     ],
+     "q": "Wie sauber ist dein Handydisplay gerade, ehrlich?",
+     "c": "Reinige Display und Hülle mit weichem Tuch und achte auf den Unterschied."
+    },
+    "es": {
+     "t": "Mantener limpios los gadgets",
+     "g": "Formas seguras de limpiar pantallas, puertos y teclados sin dañarlos.",
+     "p": [
+      "Apaga el aparato y desenchúfalo antes de limpiar cualquier cosa.",
+      "Limpia las pantallas con un paño de microfibra suave y apenas húmedo; nunca rocíes líquido directo.",
+      "Limpia los puertos con cuidado con un palillo de madera o plástico, nunca metal, y no soples con la boca."
+     ],
+     "q": "¿Qué tan limpia está ahora tu pantalla, sinceramente?",
+     "c": "Limpia pantalla y funda con un paño suave y fíjate en la diferencia."
+    },
+    "fr": {
+     "t": "Garder ses gadgets propres",
+     "g": "Façons sûres de nettoyer écrans, ports et claviers sans les abîmer.",
+     "p": [
+      "Éteins l'appareil et débranche-le avant de nettoyer quoi que ce soit.",
+      "Essuie les écrans avec un chiffon microfibre doux et à peine humide ; ne vaporise jamais de liquide directement.",
+      "Dégage les ports doucement avec un cure-dent en bois ou plastique, jamais en métal, sans souffler avec la bouche."
+     ],
+     "q": "Honnêtement, ton écran est-il propre en ce moment ?",
+     "c": "Nettoie écran et coque avec un chiffon doux et note la différence."
+    },
+    "it": {
+     "t": "Tenere puliti i gadget",
+     "g": "Modi sicuri per pulire schermi, porte e tastiere senza danneggiarli.",
+     "p": [
+      "Spegni il dispositivo e scollegalo prima di pulire qualsiasi cosa.",
+      "Pulisci gli schermi con un panno in microfibra morbido e appena umido; non spruzzare mai liquido direttamente.",
+      "Libera le porte con delicatezza con uno stuzzicadenti di legno o plastica, mai metallo, e non soffiare con la bocca."
+     ],
+     "q": "Onestamente, com'è pulito il tuo schermo adesso?",
+     "c": "Pulisci schermo e custodia con un panno morbido e nota la differenza."
+    },
+    "pt": {
+     "t": "Manter os gadgets limpos",
+     "g": "Formas seguras de limpar ecrãs, portas e teclados sem os danificar.",
+     "p": [
+      "Desliga o aparelho e tira-o da corrente antes de limpar o que quer que seja.",
+      "Limpa os ecrãs com um pano de microfibra macio e pouco húmido; nunca pulverizes líquido diretamente.",
+      "Limpa as portas com cuidado com um palito de madeira ou plástico, nunca metal, e não sopres com a boca."
+     ],
+     "q": "Honestamente, quão limpo está o teu ecrã agora?",
+     "c": "Limpa o ecrã e a capa com um pano macio e repara na diferença."
+    },
+    "pt_BR": {
+     "t": "Manter os gadgets limpos",
+     "g": "Jeitos seguros de limpar telas, portas e teclados sem danificá-los.",
+     "p": [
+      "Desligue o aparelho e tire da tomada antes de limpar qualquer coisa.",
+      "Limpe as telas com um pano de microfibra macio e pouco úmido; nunca borrife líquido direto.",
+      "Limpe as portas com cuidado com um palito de madeira ou plástico, nunca metal, e não sopre com a boca."
+     ],
+     "q": "Honestamente, quão limpa está a sua tela agora?",
+     "c": "Limpe a tela e a capa com um pano macio e note a diferença."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Water and dust resistance",
+     "g": "What IP ratings mean and why water resistance is not waterproof.",
+     "p": [
+      "An IP rating has two digits: the first is dust protection, the second is water protection.",
+      "Resistance is tested in controlled conditions; seals wear down with age, drops and heat.",
+      "Resistant does not mean waterproof: soap, salt water and hot showers can still do damage."
+     ],
+     "q": "Does your phone have an IP rating, and do you know what it covers?",
+     "c": "Look up the IP rating of your phone, if it has one, and read its meaning."
+    },
+    "de": {
+     "t": "Wasser- und Staubschutz",
+     "g": "Was IP-Schutzarten bedeuten und warum wasserfest nicht wasserdicht ist.",
+     "p": [
+      "Eine IP-Schutzart hat zwei Ziffern: die erste für Staub, die zweite für Wasser.",
+      "Der Schutz wird unter Laborbedingungen geprüft; Dichtungen verschleißen mit Alter, Stürzen und Hitze.",
+      "Geschützt heißt nicht wasserdicht: Seife, Salzwasser und heiße Duschen können schaden."
+     ],
+     "q": "Hat dein Handy eine IP-Schutzart, und weißt du, was sie abdeckt?",
+     "c": "Such die IP-Schutzart deines Handys, falls vorhanden, und lies ihre Bedeutung."
+    },
+    "es": {
+     "t": "Resistencia al agua y al polvo",
+     "g": "Qué significan las clasificaciones IP y por qué resistente no es sumergible.",
+     "p": [
+      "Una clasificación IP tiene dos cifras: la primera es protección contra polvo, la segunda contra agua.",
+      "La resistencia se prueba en condiciones controladas; los sellos se gastan con la edad, golpes y calor.",
+      "Resistente no es a prueba de todo: jabón, agua salada y duchas calientes pueden dañar."
+     ],
+     "q": "¿Tu móvil tiene clasificación IP y sabes qué cubre?",
+     "c": "Busca la clasificación IP de tu móvil, si la tiene, y lee qué significa."
+    },
+    "fr": {
+     "t": "Résistance à l'eau et à la poussière",
+     "g": "Ce que signifient les indices IP et pourquoi résistant n'est pas étanche à tout.",
+     "p": [
+      "Un indice IP a deux chiffres : le premier pour la poussière, le second pour l'eau.",
+      "La résistance est testée en conditions contrôlées ; les joints s'usent avec l'âge, les chutes et la chaleur.",
+      "Résistant ne veut pas dire étanche à tout : savon, eau salée et douches chaudes peuvent abîmer."
+     ],
+     "q": "Ton téléphone a-t-il un indice IP, et sais-tu ce qu'il couvre ?",
+     "c": "Cherche l'indice IP de ton téléphone, s'il en a un, et lis sa signification."
+    },
+    "it": {
+     "t": "Resistenza ad acqua e polvere",
+     "g": "Cosa significano i gradi IP e perché resistente non vuol dire impermeabile.",
+     "p": [
+      "Un grado IP ha due cifre: la prima per la polvere, la seconda per l'acqua.",
+      "La resistenza è testata in condizioni controllate; le guarnizioni si consumano con età, cadute e calore.",
+      "Resistente non significa impermeabile a tutto: sapone, acqua salata e docce calde possono danneggiare."
+     ],
+     "q": "Il tuo telefono ha un grado IP e sai cosa copre?",
+     "c": "Cerca il grado IP del tuo telefono, se c'è, e leggi cosa significa."
+    },
+    "pt": {
+     "t": "Resistência à água e ao pó",
+     "g": "O que significam as classificações IP e porque resistente não é à prova de tudo.",
+     "p": [
+      "Uma classificação IP tem dois dígitos: o primeiro é proteção contra pó, o segundo contra água.",
+      "A resistência é testada em condições controladas; as vedações gastam-se com idade, quedas e calor.",
+      "Resistente não é à prova de tudo: sabão, água salgada e duches quentes podem danificar."
+     ],
+     "q": "O teu telemóvel tem classificação IP e sabes o que cobre?",
+     "c": "Procura a classificação IP do teu telemóvel, se tiver, e lê o que significa."
+    },
+    "pt_BR": {
+     "t": "Resistência à água e à poeira",
+     "g": "O que significam as classificações IP e por que resistente não é à prova de tudo.",
+     "p": [
+      "Uma classificação IP tem dois dígitos: o primeiro é proteção contra pó, o segundo contra água.",
+      "A resistência é testada em condições controladas; as vedações se desgastam com idade, quedas e calor.",
+      "Resistente não é à prova de tudo: sabão, água salgada e banhos quentes podem danificar."
+     ],
+     "q": "O seu celular tem classificação IP e você sabe o que ela cobre?",
+     "c": "Procure a classificação IP do seu celular, se tiver, e leia o que significa."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dropped phone first aid",
+     "g": "Simple steps after a drop or splash, and when to ask a technician.",
+     "p": [
+      "After a splash, switch the phone off, unplug it and dry the outside with a cloth.",
+      "Do not heat it, shake it or charge it while wet; let it air-dry for a day in a dry place.",
+      "If the screen is cracked, glass can cut; use tape or ask a technician about repair."
+     ],
+     "q": "Has a phone of yours survived a drop or splash, and what saved it?",
+     "c": "Write a three-step first-aid plan for a wet phone and keep it where you can find it."
+    },
+    "de": {
+     "t": "Erste Hilfe nach Sturz oder Nässe",
+     "g": "Einfache Schritte nach Sturz oder Spritzwasser und wann ein Techniker helfen sollte.",
+     "p": [
+      "Nach Nässe das Handy ausschalten, vom Strom trennen und außen mit einem Tuch trocknen.",
+      "Nicht erhitzen, schütteln oder nass laden; lass es einen Tag an einem trockenen Ort an der Luft trocknen.",
+      "Bei gesprungenem Display kann Glas schneiden; klebe es ab oder frag einen Techniker."
+     ],
+     "q": "Hat ein Handy von dir einen Sturz oder Spritzer überlebt, und was hat geholfen?",
+     "c": "Schreibe einen Drei-Schritte-Plan für ein nasses Handy und bewahre ihn griffbereit auf."
+    },
+    "es": {
+     "t": "Primeros auxilios del móvil caído",
+     "g": "Pasos sencillos tras una caída o salpicadura y cuándo acudir a un técnico.",
+     "p": [
+      "Tras una salpicadura, apaga el móvil, desenchúfalo y seca el exterior con un paño.",
+      "No lo calientes, sacudas ni cargues mojado; déjalo secar al aire un día en un lugar seco.",
+      "Si la pantalla está rota, el cristal puede cortar; usa cinta o consulta a un técnico."
+     ],
+     "q": "¿Algún móvil tuyo sobrevivió a una caída o salpicadura y qué lo salvó?",
+     "c": "Escribe un plan de tres pasos para un móvil mojado y guárdalo donde lo encuentres."
+    },
+    "fr": {
+     "t": "Premiers secours après une chute",
+     "g": "Gestes simples après une chute ou une éclaboussure, et quand voir un technicien.",
+     "p": [
+      "Après une éclaboussure, éteins le téléphone, débranche-le et sèche l'extérieur avec un chiffon.",
+      "Ne le chauffe pas, ne le secoue pas et ne le charge pas mouillé ; laisse-le sécher à l'air un jour.",
+      "Si l'écran est fissuré, le verre peut couper ; pose du ruban adhésif ou demande à un technicien."
+     ],
+     "q": "Un de tes téléphones a-t-il survécu à une chute ou une éclaboussure, et qu'est-ce qui l'a sauvé ?",
+     "c": "Écris un plan en trois étapes pour un téléphone mouillé et garde-le à portée."
+    },
+    "it": {
+     "t": "Primo soccorso per il telefono caduto",
+     "g": "Passi semplici dopo una caduta o uno spruzzo e quando rivolgersi a un tecnico.",
+     "p": [
+      "Dopo uno spruzzo, spegni il telefono, scollegalo e asciuga l'esterno con un panno.",
+      "Non scaldarlo, non scuoterlo e non caricarlo bagnato; lascialo asciugare all'aria per un giorno.",
+      "Se lo schermo è rotto, il vetro può tagliare; usa del nastro o chiedi a un tecnico."
+     ],
+     "q": "Un tuo telefono è sopravvissuto a una caduta o a uno spruzzo, e cosa l'ha salvato?",
+     "c": "Scrivi un piano in tre passi per un telefono bagnato e tienilo a portata di mano."
+    },
+    "pt": {
+     "t": "Primeiros socorros ao telemóvel caído",
+     "g": "Passos simples após uma queda ou salpico e quando recorrer a um técnico.",
+     "p": [
+      "Depois de um salpico, desliga o telemóvel, tira-o da corrente e seca o exterior com um pano.",
+      "Não o aqueças, abanes nem carregues molhado; deixa secar ao ar um dia num sítio seco.",
+      "Se o ecrã estiver partido, o vidro pode cortar; usa fita ou consulta um técnico."
+     ],
+     "q": "Algum telemóvel teu sobreviveu a uma queda ou salpico e o que o salvou?",
+     "c": "Escreve um plano de três passos para um telemóvel molhado e guarda-o à mão."
+    },
+    "pt_BR": {
+     "t": "Primeiros socorros ao celular caído",
+     "g": "Passos simples após uma queda ou respingo e quando procurar um técnico.",
+     "p": [
+      "Depois de um respingo, desligue o celular, tire da tomada e seque o exterior com um pano.",
+      "Não aqueça, balance nem carregue molhado; deixe secar ao ar um dia num lugar seco.",
+      "Se a tela estiver quebrada, o vidro pode cortar; use fita ou consulte um técnico."
+     ],
+     "q": "Algum celular seu sobreviveu a uma queda ou respingo e o que o salvou?",
+     "c": "Escreva um plano de três passos para um celular molhado e deixe à mão."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Taking great phone photos",
+     "g": "Light, composition and steady hands matter more than the camera itself.",
+     "p": [
+      "Good light is the secret: soft daylight beats harsh noon sun and dim rooms.",
+      "Compose with a grid: place the subject off-centre and keep horizons level.",
+      "Wipe the lens and hold steady with both hands, elbows tucked in."
+     ],
+     "q": "What is the best photo you have ever taken with a phone?",
+     "c": "Wipe your lens and take three photos of one object, each from a different angle."
+    },
+    "de": {
+     "t": "Tolle Handyfotos machen",
+     "g": "Licht, Bildaufbau und ruhige Hände zählen mehr als die Kamera selbst.",
+     "p": [
+      "Gutes Licht ist das Geheimnis: weiches Tageslicht schlägt grelle Mittagssonne und dunkle Räume.",
+      "Komponiere mit dem Raster: Motiv außermittig, Horizont gerade.",
+      "Wisch die Linse sauber und halte mit beiden Händen ruhig, Ellbogen angelegt."
+     ],
+     "q": "Was ist das beste Foto, das du je mit dem Handy gemacht hast?",
+     "c": "Wisch die Linse sauber und fotografiere ein Objekt dreimal aus verschiedenen Winkeln."
+    },
+    "es": {
+     "t": "Hacer buenas fotos con el móvil",
+     "g": "La luz, la composición y el pulso importan más que la cámara.",
+     "p": [
+      "La buena luz es el secreto: la luz suave del día supera al sol duro del mediodía y a las salas oscuras.",
+      "Compón con la cuadrícula: motivo descentrado y horizonte recto.",
+      "Limpia la lente y sujeta firme con ambas manos y los codos pegados."
+     ],
+     "q": "¿Cuál es la mejor foto que has hecho con el móvil?",
+     "c": "Limpia la lente y haz tres fotos de un objeto desde ángulos distintos."
+    },
+    "fr": {
+     "t": "Réussir ses photos au téléphone",
+     "g": "La lumière, la composition et des mains stables comptent plus que l'appareil.",
+     "p": [
+      "La bonne lumière est le secret : la lumière douce du jour bat le soleil dur de midi et les pièces sombres.",
+      "Compose avec la grille : sujet décentré et horizon droit.",
+      "Essuie l'objectif et tiens fermement à deux mains, coudes serrés."
+     ],
+     "q": "Quelle est la plus belle photo que tu aies prise avec un téléphone ?",
+     "c": "Essuie l'objectif et prends trois photos d'un objet sous trois angles."
+    },
+    "it": {
+     "t": "Scattare belle foto con il telefono",
+     "g": "Luce, composizione e mani ferme contano più della fotocamera stessa.",
+     "p": [
+      "La buona luce è il segreto: la luce morbida del giorno batte il sole duro di mezzogiorno e le stanze buie.",
+      "Componi con la griglia: soggetto decentrato e orizzonte dritto.",
+      "Pulisci l'obiettivo e tieni fermo con due mani, gomiti vicini al corpo."
+     ],
+     "q": "Qual è la foto più bella che hai scattato con il telefono?",
+     "c": "Pulisci l'obiettivo e scatta tre foto di un oggetto da angolazioni diverse."
+    },
+    "pt": {
+     "t": "Tirar boas fotos com o telemóvel",
+     "g": "Luz, composição e mãos firmes contam mais do que a câmara.",
+     "p": [
+      "A boa luz é o segredo: a luz suave do dia vence o sol duro do meio-dia e as salas escuras.",
+      "Compõe com a grelha: motivo descentrado e horizonte direito.",
+      "Limpa a lente e segura firme com as duas mãos, cotovelos junto ao corpo."
+     ],
+     "q": "Qual é a melhor foto que já tiraste com o telemóvel?",
+     "c": "Limpa a lente e tira três fotos de um objeto de ângulos diferentes."
+    },
+    "pt_BR": {
+     "t": "Tirar boas fotos com o celular",
+     "g": "Luz, composição e mãos firmes contam mais do que a câmera.",
+     "p": [
+      "A boa luz é o segredo: a luz suave do dia vence o sol duro do meio-dia e os ambientes escuros.",
+      "Componha com a grade: assunto descentrado e horizonte reto.",
+      "Limpe a lente e segure firme com as duas mãos, cotovelos junto ao corpo."
+     ],
+     "q": "Qual é a melhor foto que você já tirou com o celular?",
+     "c": "Limpe a lente e tire três fotos de um objeto de ângulos diferentes."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Portrait and night modes",
+     "g": "How phone cameras blur backgrounds and brighten dark scenes.",
+     "p": [
+      "Portrait mode uses depth information to keep you sharp and soften the background.",
+      "Night mode takes several quick shots and merges them into one brighter, cleaner image.",
+      "Hold still during night mode; movement during the exposure blurs the result."
+     ],
+     "q": "Where would portrait or night mode make your photos better?",
+     "c": "Try portrait mode on a friend or a pet and compare it to a normal shot."
+    },
+    "de": {
+     "t": "Porträt- und Nachtmodus",
+     "g": "Wie Handykameras Hintergründe verwischen und dunkle Szenen aufhellen.",
+     "p": [
+      "Der Porträtmodus nutzt Tiefeninformationen, um dich scharf zu halten und den Hintergrund weich zu zeichnen.",
+      "Der Nachtmodus macht mehrere schnelle Aufnahmen und verrechnet sie zu einem helleren, saubereren Bild.",
+      "Halte im Nachtmodus still; Bewegung während der Belichtung verwischt das Ergebnis."
+     ],
+     "q": "Wo würden Porträt- oder Nachtmodus deine Fotos verbessern?",
+     "c": "Probiere den Porträtmodus bei Freund oder Haustier und vergleiche mit einem normalen Foto."
+    },
+    "es": {
+     "t": "Modos retrato y nocturno",
+     "g": "Cómo las cámaras del móvil desenfocan fondos y aclaran escenas oscuras.",
+     "p": [
+      "El modo retrato usa información de profundidad para dejarte nítido y suavizar el fondo.",
+      "El modo noche hace varias fotos rápidas y las une en una imagen más clara y limpia.",
+      "Quédate quieto en modo noche; el movimiento durante la exposición emborrona el resultado."
+     ],
+     "q": "¿Dónde mejorarían tus fotos el modo retrato o el nocturno?",
+     "c": "Prueba el modo retrato con un amigo o mascota y compáralo con una foto normal."
+    },
+    "fr": {
+     "t": "Modes portrait et nuit",
+     "g": "Comment les caméras de téléphone floutent l'arrière-plan et éclaircissent les scènes sombres.",
+     "p": [
+      "Le mode portrait utilise la profondeur pour garder le sujet net et adoucir l'arrière-plan.",
+      "Le mode nuit prend plusieurs clichés rapides et les fusionne en une image plus claire et nette.",
+      "Reste immobile en mode nuit ; le mouvement pendant l'exposition rend le résultat flou."
+     ],
+     "q": "Où le mode portrait ou nuit améliorerait-il tes photos ?",
+     "c": "Essaie le mode portrait sur un ami ou un animal et compare avec une photo normale."
+    },
+    "it": {
+     "t": "Modalità ritratto e notte",
+     "g": "Come le fotocamere dei telefoni sfocano gli sfondi e schiariscono le scene scure.",
+     "p": [
+      "La modalità ritratto usa informazioni di profondità per tenerti nitido e ammorbidire lo sfondo.",
+      "La modalità notte scatta più foto rapide e le fonde in un'immagine più chiara e pulita.",
+      "Resta fermo in modalità notte; il movimento durante l'esposizione sfoca il risultato."
+     ],
+     "q": "Dove la modalità ritratto o notte migliorerebbe le tue foto?",
+     "c": "Prova il ritratto su un amico o un animale e confrontalo con uno scatto normale."
+    },
+    "pt": {
+     "t": "Modos retrato e noturno",
+     "g": "Como as câmaras do telemóvel desfocam fundos e clareiam cenas escuras.",
+     "p": [
+      "O modo retrato usa informação de profundidade para te manter nítido e suavizar o fundo.",
+      "O modo noturno tira várias fotos rápidas e junta-as numa imagem mais clara e limpa.",
+      "Fica quieto no modo noturno; o movimento durante a exposição desfoca o resultado."
+     ],
+     "q": "Onde o modo retrato ou noturno melhoraria as tuas fotos?",
+     "c": "Experimenta o modo retrato num amigo ou animal e compara com uma foto normal."
+    },
+    "pt_BR": {
+     "t": "Modos retrato e noturno",
+     "g": "Como as câmeras do celular desfocam fundos e clareiam cenas escuras.",
+     "p": [
+      "O modo retrato usa informação de profundidade para deixar você nítido e suavizar o fundo.",
+      "O modo noturno tira várias fotos rápidas e as junta numa imagem mais clara e limpa.",
+      "Fique parado no modo noturno; o movimento durante a exposição desfoca o resultado."
+     ],
+     "q": "Onde o modo retrato ou noturno melhoraria as suas fotos?",
+     "c": "Experimente o modo retrato num amigo ou bichinho e compare com uma foto normal."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Phone video basics",
+     "g": "Holding steady, framing well and using the right resolution for the moment.",
+     "p": [
+      "Hold the phone sideways for videos that fit TVs and computers, upright for stories.",
+      "Move slowly and smoothly; walk with bent knees and let your arms act as shock absorbers.",
+      "Higher resolution looks better but fills storage fast; pick what the moment needs."
+     ],
+     "q": "What moment would you most like to film well this month?",
+     "c": "Film a ten-second clip of a simple scene, moving slowly, and watch it back."
+    },
+    "de": {
+     "t": "Handyvideo-Grundlagen",
+     "g": "Ruhig halten, gut einrahmen und die passende Auflösung für den Moment wählen.",
+     "p": [
+      "Halte das Handy quer für Videos, die auf Fernseher und Computer passen, hochkant für Stories.",
+      "Bewege dich langsam und gleichmäßig; geh mit gebeugten Knien, die Arme dämpfen.",
+      "Höhere Auflösung sieht besser aus, füllt aber schnell den Speicher; wähle nach Bedarf."
+     ],
+     "q": "Welchen Moment möchtest du diesen Monat am liebsten gut filmen?",
+     "c": "Filme einen Zehn-Sekunden-Clip einer einfachen Szene, langsam bewegt, und sieh ihn dir an."
+    },
+    "es": {
+     "t": "Lo básico del vídeo en el móvil",
+     "g": "Sujetar firme, encuadrar bien y usar la resolución adecuada a cada momento.",
+     "p": [
+      "Sujeta el móvil en horizontal para vídeos que caben en tele y ordenador, en vertical para historias.",
+      "Muévete despacio y con suavidad; camina con las rodillas flexionadas y deja que los brazos amortigüen.",
+      "Más resolución se ve mejor pero llena rápido el almacenamiento; elige según el momento."
+     ],
+     "q": "¿Qué momento te gustaría filmar bien este mes?",
+     "c": "Graba un clip de diez segundos de una escena sencilla, moviéndote despacio, y míralo."
+    },
+    "fr": {
+     "t": "Les bases de la vidéo au téléphone",
+     "g": "Tenir bien, cadrer juste et choisir la bonne résolution pour chaque moment.",
+     "p": [
+      "Tiens le téléphone à l'horizontale pour des vidéos adaptées aux télés et ordinateurs, à la verticale pour les stories.",
+      "Bouge lentement et en douceur ; marche genoux fléchis et laisse tes bras amortir.",
+      "Une résolution plus haute rend mieux mais remplit vite le stockage ; choisis selon le moment."
+     ],
+     "q": "Quel moment aimerais-tu bien filmer ce mois-ci ?",
+     "c": "Filme dix secondes d'une scène simple en bougeant lentement et regarde le résultat."
+    },
+    "it": {
+     "t": "Le basi del video con il telefono",
+     "g": "Tenere fermo, inquadrare bene e usare la risoluzione giusta per il momento.",
+     "p": [
+      "Tieni il telefono in orizzontale per video adatti a TV e computer, in verticale per le storie.",
+      "Muoviti lentamente e con dolcezza; cammina con le ginocchia piegate e lascia ammortizzare le braccia.",
+      "Più risoluzione rende meglio ma riempie presto la memoria; scegli in base al momento."
+     ],
+     "q": "Quale momento ti piacerebbe filmare bene questo mese?",
+     "c": "Gira una clip di dieci secondi di una scena semplice, muovendoti piano, e riguardala."
+    },
+    "pt": {
+     "t": "O básico do vídeo no telemóvel",
+     "g": "Segurar firme, enquadrar bem e usar a resolução certa para cada momento.",
+     "p": [
+      "Segura o telemóvel na horizontal para vídeos que cabem na TV e no computador, na vertical para stories.",
+      "Move-te devagar e com suavidade; caminha com os joelhos fletidos e deixa os braços amortecer.",
+      "Mais resolução fica melhor mas enche depressa o armazenamento; escolhe conforme o momento."
+     ],
+     "q": "Que momento gostarias de filmar bem este mês?",
+     "c": "Grava um clipe de dez segundos de uma cena simples, movendo-te devagar, e vê-o."
+    },
+    "pt_BR": {
+     "t": "O básico do vídeo no celular",
+     "g": "Segurar firme, enquadrar bem e usar a resolução certa para cada momento.",
+     "p": [
+      "Segure o celular na horizontal para vídeos que cabem na TV e no computador, na vertical para stories.",
+      "Mova-se devagar e com suavidade; ande com os joelhos flexionados e deixe os braços amortecerem.",
+      "Mais resolução fica melhor mas enche rápido o armazenamento; escolha conforme o momento."
+     ],
+     "q": "Que momento você gostaria de filmar bem este mês?",
+     "c": "Grave um clipe de dez segundos de uma cena simples, se movendo devagar, e assista."
+    }
+   }
+  }
+ ]
+}

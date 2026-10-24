@@ -1,0 +1,835 @@
+{
+ "topic": "history",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Roman law",
+     "g": "Explore ideas from Roman law that still shape legal systems today.",
+     "p": [
+      "The Twelve Tables, from about 450 BCE, put Rome's laws in writing and displayed them for all citizens to see.",
+      "Roman lawyers developed ideas such as contracts, property rights and the principle that a claim must be proved.",
+      "In the 500s CE, Emperor Justinian had Roman law gathered into a great collection that later influenced many countries."
+     ],
+     "q": "Why is it helpful for rules to be written down where everyone can read them?",
+     "c": "Notice one written rule around you today, like a sign or a ticket, and think about why it exists."
+    },
+    "de": {
+     "t": "Das römische Recht",
+     "g": "Entdecke Ideen des römischen Rechts, die heutige Rechtssysteme noch prägen.",
+     "p": [
+      "Die Zwölftafelgesetze von etwa 450 v. Chr. hielten Roms Gesetze schriftlich fest und machten sie für alle Bürger sichtbar.",
+      "Römische Juristen entwickelten Ideen wie Verträge, Eigentumsrechte und den Grundsatz, dass eine Behauptung bewiesen werden muss.",
+      "Im 6. Jahrhundert n. Chr. ließ Kaiser Justinian das römische Recht sammeln, was später viele Länder beeinflusste."
+     ],
+     "q": "Warum ist es hilfreich, wenn Regeln aufgeschrieben sind und jeder sie lesen kann?",
+     "c": "Achte heute auf eine geschriebene Regel um dich herum, etwa ein Schild, und überlege, warum es sie gibt."
+    },
+    "es": {
+     "t": "El derecho romano",
+     "g": "Explora ideas del derecho romano que aún moldean los sistemas legales de hoy.",
+     "p": [
+      "Las Doce Tablas, de hacia el 450 a. C., pusieron por escrito las leyes de Roma y las expusieron a la vista de todos.",
+      "Los juristas romanos desarrollaron ideas como los contratos, la propiedad y el principio de que lo que se alega debe probarse.",
+      "En el siglo VI d. C., el emperador Justiniano reunió el derecho romano en una gran colección que influyó en muchos países."
+     ],
+     "q": "¿Por qué es útil que las normas estén escritas donde todos puedan leerlas?",
+     "c": "Fíjate hoy en una norma escrita a tu alrededor, como un cartel, y piensa para qué existe."
+    },
+    "fr": {
+     "t": "Le droit romain",
+     "g": "Explore des idées du droit romain qui façonnent encore les systèmes juridiques actuels.",
+     "p": [
+      "La loi des Douze Tables, vers 450 av. J.-C., a mis par écrit les lois de Rome et les a exposées à la vue de tous.",
+      "Les juristes romains ont développé des idées comme le contrat, la propriété et le principe qu'une accusation doit être prouvée.",
+      "Au VIe siècle, l'empereur Justinien a fait rassembler le droit romain en un grand recueil qui a influencé de nombreux pays."
+     ],
+     "q": "Pourquoi est-il utile que les règles soient écrites là où chacun peut les lire ?",
+     "c": "Repère aujourd'hui une règle écrite autour de toi, comme un panneau, et demande-toi pourquoi elle existe."
+    },
+    "it": {
+     "t": "Il diritto romano",
+     "g": "Esplora idee del diritto romano che ancora oggi plasmano i sistemi giuridici.",
+     "p": [
+      "Le Dodici Tavole, del 450 a.C. circa, misero per iscritto le leggi di Roma e le esposero alla vista di tutti.",
+      "I giuristi romani svilupparono idee come i contratti, la proprietà e il principio che ciò che si sostiene va provato.",
+      "Nel VI secolo d.C. l'imperatore Giustiniano fece raccogliere il diritto romano in una grande opera che influenzò molti paesi."
+     ],
+     "q": "Perché è utile che le regole siano scritte dove tutti possono leggerle?",
+     "c": "Osserva oggi una regola scritta intorno a te, come un cartello, e pensa a perché esiste."
+    },
+    "pt": {
+     "t": "O direito romano",
+     "g": "Explora ideias do direito romano que ainda hoje moldam os sistemas legais.",
+     "p": [
+      "As Doze Tábuas, de cerca de 450 a.C., puseram por escrito as leis de Roma e expuseram-nas à vista de todos.",
+      "Os juristas romanos desenvolveram ideias como os contratos, a propriedade e o princípio de que o que se alega deve ser provado.",
+      "No século VI d.C., o imperador Justiniano mandou reunir o direito romano numa grande coletânea que influenciou muitos países."
+     ],
+     "q": "Porque é útil que as regras estejam escritas onde todos as possam ler?",
+     "c": "Repara hoje numa regra escrita à tua volta, como um aviso, e pensa porque existe."
+    },
+    "pt_BR": {
+     "t": "O direito romano",
+     "g": "Explore ideias do direito romano que ainda hoje moldam os sistemas legais.",
+     "p": [
+      "As Doze Tábuas, de cerca de 450 a.C., colocaram por escrito as leis de Roma e as expuseram à vista de todos.",
+      "Os juristas romanos desenvolveram ideias como contratos, propriedade e o princípio de que o que se alega deve ser provado.",
+      "No século VI d.C., o imperador Justiniano mandou reunir o direito romano em uma grande coletânea que influenciou muitos países."
+     ],
+     "q": "Por que é útil que as regras estejam escritas onde todos possam lê-las?",
+     "c": "Repare hoje em uma regra escrita ao seu redor, como uma placa, e pense por que ela existe."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Maya",
+     "g": "Visit the Maya, with their cities, calendars, astronomy and a full writing system.",
+     "p": [
+      "The Maya built stone cities such as Tikal and Palenque in Mesoamerica, with temples, plazas and ball courts.",
+      "They tracked the Sun, Moon and Venus closely and kept several interlocking calendars.",
+      "They wrote with hundreds of glyphs, used a number system with zero, and grew maize, beans and cacao."
+     ],
+     "q": "Which would you find more exciting: reading Maya glyphs or watching the stars like a Maya astronomer?",
+     "c": "Look up how the Maya wrote a number using dots and bars, then write today's date that way."
+    },
+    "de": {
+     "t": "Die Maya",
+     "g": "Besuche die Maya mit ihren Städten, Kalendern, ihrer Astronomie und einer vollständigen Schrift.",
+     "p": [
+      "Die Maya bauten in Mesoamerika Steinstädte wie Tikal und Palenque mit Tempeln, Plätzen und Ballspielplätzen.",
+      "Sie beobachteten Sonne, Mond und Venus genau und führten mehrere ineinandergreifende Kalender.",
+      "Sie schrieben mit Hunderten von Glyphen, nutzten ein Zahlensystem mit Null und bauten Mais, Bohnen und Kakao an."
+     ],
+     "q": "Was fändest du spannender: Maya-Glyphen lesen oder wie ein Maya-Astronom die Sterne beobachten?",
+     "c": "Schau nach, wie die Maya Zahlen mit Punkten und Strichen schrieben, und schreibe das heutige Datum so."
+    },
+    "es": {
+     "t": "Los mayas",
+     "g": "Visita a los mayas, con sus ciudades, calendarios, astronomía y un sistema completo de escritura.",
+     "p": [
+      "Los mayas construyeron en Mesoamérica ciudades de piedra como Tikal y Palenque, con templos, plazas y juegos de pelota.",
+      "Seguían de cerca el Sol, la Luna y Venus y llevaban varios calendarios entrelazados.",
+      "Escribían con cientos de glifos, usaban un sistema numérico con cero y cultivaban maíz, frijoles y cacao."
+     ],
+     "q": "¿Qué te parecería más emocionante: leer glifos mayas o mirar las estrellas como un astrónomo maya?",
+     "c": "Busca cómo escribían los mayas un número con puntos y barras y escribe la fecha de hoy así."
+    },
+    "fr": {
+     "t": "Les Mayas",
+     "g": "Rends visite aux Mayas, avec leurs cités, calendriers, leur astronomie et un système d'écriture complet.",
+     "p": [
+      "Les Mayas ont bâti en Mésoamérique des cités de pierre comme Tikal et Palenque, avec temples, places et terrains de jeu de balle.",
+      "Ils suivaient de près le Soleil, la Lune et Vénus et tenaient plusieurs calendriers imbriqués.",
+      "Ils écrivaient avec des centaines de glyphes, utilisaient un système de nombres avec zéro et cultivaient maïs, haricots et cacao."
+     ],
+     "q": "Qu'est-ce qui te semble le plus passionnant : lire des glyphes mayas ou observer les étoiles comme un astronome maya ?",
+     "c": "Cherche comment les Mayas écrivaient un nombre avec des points et des barres et écris la date du jour ainsi."
+    },
+    "it": {
+     "t": "I Maya",
+     "g": "Visita i Maya, con le loro città, i calendari, l'astronomia e un sistema di scrittura completo.",
+     "p": [
+      "I Maya costruirono in Mesoamerica città di pietra come Tikal e Palenque, con templi, piazze e campi per il gioco della palla.",
+      "Seguivano con attenzione Sole, Luna e Venere e tenevano più calendari intrecciati.",
+      "Scrivevano con centinaia di glifi, usavano un sistema numerico con lo zero e coltivavano mais, fagioli e cacao."
+     ],
+     "q": "Cosa ti sembra più emozionante: leggere i glifi maya o osservare le stelle come un astronomo maya?",
+     "c": "Cerca come i Maya scrivevano un numero con punti e barre e scrivi la data di oggi così."
+    },
+    "pt": {
+     "t": "Os maias",
+     "g": "Visita os maias, com as suas cidades, calendários, astronomia e um sistema de escrita completo.",
+     "p": [
+      "Os maias construíram na Mesoamérica cidades de pedra como Tikal e Palenque, com templos, praças e campos de jogo da bola.",
+      "Acompanhavam de perto o Sol, a Lua e Vénus e mantinham vários calendários entrelaçados.",
+      "Escreviam com centenas de glifos, usavam um sistema numérico com zero e cultivavam milho, feijão e cacau."
+     ],
+     "q": "O que achas mais emocionante: ler glifos maias ou observar as estrelas como um astrónomo maia?",
+     "c": "Procura como os maias escreviam um número com pontos e barras e escreve a data de hoje assim."
+    },
+    "pt_BR": {
+     "t": "Os maias",
+     "g": "Visite os maias, com suas cidades, calendários, astronomia e um sistema de escrita completo.",
+     "p": [
+      "Os maias construíram na Mesoamérica cidades de pedra como Tikal e Palenque, com templos, praças e campos de jogo de bola.",
+      "Eles acompanhavam de perto o Sol, a Lua e Vênus e mantinham vários calendários entrelaçados.",
+      "Escreviam com centenas de glifos, usavam um sistema numérico com zero e cultivavam milho, feijão e cacau."
+     ],
+     "q": "O que você acha mais emocionante: ler glifos maias ou observar as estrelas como um astrônomo maia?",
+     "c": "Procure como os maias escreviam um número com pontos e barras e escreva a data de hoje assim."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Olmecs",
+     "g": "Meet an early Mesoamerican culture famous for its colossal stone heads.",
+     "p": [
+      "The Olmecs lived on the Gulf coast of Mexico from about 1200 to 400 BCE, among the first big cultures there.",
+      "They carved colossal heads from basalt, some about three metres tall, and moved the stone from far away.",
+      "They played a ball game with rubber, and later peoples in the region borrowed many of their ideas."
+     ],
+     "q": "Why do you think people carved such huge heads instead of small statues?",
+     "c": "Draw a quick sketch of an Olmec colossal head and add one detail you notice, like the helmet."
+    },
+    "de": {
+     "t": "Die Olmeken",
+     "g": "Lerne eine frühe mesoamerikanische Kultur kennen, berühmt für ihre kolossalen Steinköpfe.",
+     "p": [
+      "Die Olmeken lebten etwa von 1200 bis 400 v. Chr. an der mexikanischen Golfküste und gehörten zu den ersten großen Kulturen dort.",
+      "Sie meißelten Kolossalköpfe aus Basalt, einige etwa drei Meter hoch, und holten den Stein von weit her.",
+      "Sie spielten ein Ballspiel mit Kautschuk, und spätere Völker der Region übernahmen viele ihrer Ideen."
+     ],
+     "q": "Warum, glaubst du, schuf man so riesige Köpfe statt kleiner Statuen?",
+     "c": "Zeichne schnell einen olmekischen Kolossalkopf und füge ein Detail hinzu, das dir auffällt, etwa den Helm."
+    },
+    "es": {
+     "t": "Los olmecas",
+     "g": "Conoce una de las primeras culturas de Mesoamérica, famosa por sus cabezas colosales de piedra.",
+     "p": [
+      "Los olmecas vivieron en la costa del Golfo de México entre el 1200 y el 400 a. C., una de las primeras grandes culturas de allí.",
+      "Tallaron cabezas colosales en basalto, algunas de unos tres metros, y trajeron la piedra desde lejos.",
+      "Practicaban un juego de pelota con caucho, y pueblos posteriores de la región tomaron muchas de sus ideas."
+     ],
+     "q": "¿Por qué crees que tallaban cabezas tan enormes en lugar de estatuas pequeñas?",
+     "c": "Haz un boceto rápido de una cabeza colosal olmeca y añade un detalle que notes, como el casco."
+    },
+    "fr": {
+     "t": "Les Olmèques",
+     "g": "Rencontre une culture mésoaméricaine ancienne célèbre pour ses têtes colossales en pierre.",
+     "p": [
+      "Les Olmèques vivaient sur la côte du golfe du Mexique de 1200 à 400 av. J.-C. environ, parmi les premières grandes cultures de la région.",
+      "Ils ont sculpté des têtes colossales en basalte, certaines hautes de trois mètres, avec une pierre venue de loin.",
+      "Ils jouaient à un jeu de balle en caoutchouc, et les peuples suivants de la région ont repris beaucoup de leurs idées."
+     ],
+     "q": "Pourquoi sculpter des têtes aussi énormes plutôt que de petites statues, à ton avis ?",
+     "c": "Dessine vite une tête colossale olmèque et ajoute un détail que tu remarques, comme le casque."
+    },
+    "it": {
+     "t": "Gli Olmechi",
+     "g": "Incontra una delle prime culture mesoamericane, famosa per le sue teste colossali di pietra.",
+     "p": [
+      "Gli Olmechi vissero sulla costa del Golfo del Messico dal 1200 al 400 a.C. circa, tra le prime grandi culture della zona.",
+      "Scolpirono teste colossali nel basalto, alcune alte circa tre metri, portando la pietra da lontano.",
+      "Praticavano un gioco della palla con la gomma, e i popoli successivi della regione ripresero molte loro idee."
+     ],
+     "q": "Perché secondo te scolpivano teste così enormi invece di piccole statue?",
+     "c": "Fai uno schizzo veloce di una testa colossale olmeca e aggiungi un dettaglio che noti, come l'elmo."
+    },
+    "pt": {
+     "t": "Os olmecas",
+     "g": "Conhece uma das primeiras culturas da Mesoamérica, famosa pelas suas cabeças colossais de pedra.",
+     "p": [
+      "Os olmecas viveram na costa do Golfo do México entre 1200 e 400 a.C., uma das primeiras grandes culturas da zona.",
+      "Esculpiram cabeças colossais em basalto, algumas com cerca de três metros, e trouxeram a pedra de longe.",
+      "Jogavam um jogo da bola com borracha, e povos posteriores da região adotaram muitas das suas ideias."
+     ],
+     "q": "Porque achas que esculpiam cabeças tão enormes em vez de estátuas pequenas?",
+     "c": "Faz um esboço rápido de uma cabeça colossal olmeca e acrescenta um detalhe que notes, como o capacete."
+    },
+    "pt_BR": {
+     "t": "Os olmecas",
+     "g": "Conheça uma das primeiras culturas da Mesoamérica, famosa por suas cabeças colossais de pedra.",
+     "p": [
+      "Os olmecas viveram na costa do Golfo do México entre 1200 e 400 a.C., uma das primeiras grandes culturas da região.",
+      "Esculpiram cabeças colossais em basalto, algumas com cerca de três metros, e trouxeram a pedra de longe.",
+      "Jogavam um jogo de bola com borracha, e povos posteriores da região adotaram muitas das suas ideias."
+     ],
+     "q": "Por que você acha que esculpiam cabeças tão enormes em vez de estátuas pequenas?",
+     "c": "Faça um esboço rápido de uma cabeça colossal olmeca e acrescente um detalhe que notar, como o capacete."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "India's Mauryan Empire",
+     "g": "Discover Emperor Ashoka and ideas spread through messages carved in stone.",
+     "p": [
+      "The Mauryan Empire arose around 321 BCE under Chandragupta and became one of the largest states in early India.",
+      "Emperor Ashoka had edicts carved on rocks and pillars, in local languages, urging kindness and fair treatment.",
+      "He also had wells dug and trees planted along roads, and his Lion Capital is the emblem of India today."
+     ],
+     "q": "If you could carve one short message for the future, what would it say?",
+     "c": "Write a one-sentence message of kindness, as if it were carved on a stone pillar."
+    },
+    "de": {
+     "t": "Indiens Maurya-Reich",
+     "g": "Entdecke Kaiser Ashoka und Ideen, die durch in Stein gemeißelte Botschaften verbreitet wurden.",
+     "p": [
+      "Das Maurya-Reich entstand um 321 v. Chr. unter Chandragupta und wurde einer der größten Staaten des frühen Indiens.",
+      "Kaiser Ashoka ließ Edikte auf Felsen und Säulen in den Landessprachen einmeißeln, die zu Güte und Fairness aufriefen.",
+      "Er ließ auch Brunnen graben und Bäume an Straßen pflanzen, und sein Löwenkapitell ist heute Indiens Wappenzeichen."
+     ],
+     "q": "Wenn du eine kurze Botschaft für die Zukunft meißeln könntest, was würde sie sagen?",
+     "c": "Schreibe einen Satz mit einer freundlichen Botschaft, als wäre er in eine Steinsäule gemeißelt."
+    },
+    "es": {
+     "t": "El Imperio maurya de la India",
+     "g": "Descubre al emperador Ashoka y las ideas difundidas con mensajes grabados en piedra.",
+     "p": [
+      "El Imperio maurya surgió hacia el 321 a. C. con Chandragupta y fue uno de los mayores estados de la India antigua.",
+      "El emperador Ashoka mandó grabar edictos en rocas y pilares, en lenguas locales, que invitaban a la bondad y al trato justo.",
+      "También mandó cavar pozos y plantar árboles junto a los caminos, y su capitel de leones es hoy el emblema de la India."
+     ],
+     "q": "Si pudieras grabar un mensaje breve para el futuro, ¿qué diría?",
+     "c": "Escribe un mensaje de bondad de una frase, como si estuviera grabado en un pilar de piedra."
+    },
+    "fr": {
+     "t": "L'Empire maurya en Inde",
+     "g": "Découvre l'empereur Ashoka et des idées diffusées par des messages gravés dans la pierre.",
+     "p": [
+      "L'Empire maurya naît vers 321 av. J.-C. sous Chandragupta et devient l'un des plus grands États de l'Inde ancienne.",
+      "L'empereur Ashoka fit graver des édits sur des rochers et des piliers, en langues locales, prônant la bonté et l'équité.",
+      "Il fit aussi creuser des puits et planter des arbres le long des routes, et son chapiteau aux lions est l'emblème de l'Inde."
+     ],
+     "q": "Si tu pouvais graver un court message pour l'avenir, que dirait-il ?",
+     "c": "Écris un message de gentillesse en une phrase, comme s'il était gravé sur un pilier de pierre."
+    },
+    "it": {
+     "t": "L'Impero Maurya in India",
+     "g": "Scopri l'imperatore Ashoka e le idee diffuse con messaggi incisi nella pietra.",
+     "p": [
+      "L'Impero Maurya nacque intorno al 321 a.C. con Chandragupta e divenne uno dei più grandi stati dell'India antica.",
+      "L'imperatore Ashoka fece incidere editti su rocce e pilastri, nelle lingue locali, che invitavano alla gentilezza e all'equità.",
+      "Fece anche scavare pozzi e piantare alberi lungo le strade, e il suo capitello dei leoni è oggi l'emblema dell'India."
+     ],
+     "q": "Se potessi incidere un breve messaggio per il futuro, cosa direbbe?",
+     "c": "Scrivi un messaggio di gentilezza di una frase, come se fosse inciso su un pilastro di pietra."
+    },
+    "pt": {
+     "t": "O Império Máuria da Índia",
+     "g": "Descobre o imperador Ashoka e as ideias difundidas por mensagens gravadas na pedra.",
+     "p": [
+      "O Império Máuria surgiu por volta de 321 a.C. com Chandragupta e foi um dos maiores estados da Índia antiga.",
+      "O imperador Ashoka mandou gravar éditos em rochas e pilares, em línguas locais, que apelavam à bondade e ao tratamento justo.",
+      "Mandou também abrir poços e plantar árvores ao longo das estradas, e o seu capitel de leões é hoje o emblema da Índia."
+     ],
+     "q": "Se pudesses gravar uma mensagem breve para o futuro, o que diria?",
+     "c": "Escreve uma mensagem de bondade numa frase, como se estivesse gravada num pilar de pedra."
+    },
+    "pt_BR": {
+     "t": "O Império Máuria da Índia",
+     "g": "Descubra o imperador Ashoka e as ideias difundidas por mensagens gravadas na pedra.",
+     "p": [
+      "O Império Máuria surgiu por volta de 321 a.C. com Chandragupta e foi um dos maiores estados da Índia antiga.",
+      "O imperador Ashoka mandou gravar éditos em rochas e pilares, em línguas locais, pedindo bondade e tratamento justo.",
+      "Ele também mandou abrir poços e plantar árvores ao longo das estradas, e seu capitel de leões é hoje o emblema da Índia."
+     ],
+     "q": "Se você pudesse gravar uma mensagem curta para o futuro, o que ela diria?",
+     "c": "Escreva uma mensagem de bondade em uma frase, como se estivesse gravada em um pilar de pedra."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Indian mathematics",
+     "g": "Learn how India gave the world place-value digits and zero as a true number.",
+     "p": [
+      "Indian mathematicians developed the decimal place-value system, where a digit's position gives its value.",
+      "Zero began as a placeholder, and Brahmagupta, around 628 CE, wrote clear rules for using zero in calculations.",
+      "Scholars in the Arab world passed these digits on, and Fibonacci's 1202 book helped introduce them to Europe."
+     ],
+     "q": "Try writing 205 and 25 and explain what the zero does. Why is it so useful?",
+     "c": "Write the number 3,048 and say what each digit is worth by its position."
+    },
+    "de": {
+     "t": "Indische Mathematik",
+     "g": "Erfahre, wie Indien der Welt Stellenwertziffern und die Null als echte Zahl schenkte.",
+     "p": [
+      "Indische Mathematiker entwickelten das dezimale Stellenwertsystem, in dem die Position einer Ziffer ihren Wert bestimmt.",
+      "Die Null begann als Platzhalter, und Brahmagupta schrieb um 628 n. Chr. klare Regeln für das Rechnen mit Null auf.",
+      "Gelehrte der arabischen Welt gaben diese Ziffern weiter, und Fibonaccis Buch von 1202 half, sie in Europa einzuführen."
+     ],
+     "q": "Schreibe 205 und 25 und erkläre, was die Null bewirkt. Warum ist sie so nützlich?",
+     "c": "Schreibe die Zahl 3.048 und sage, wie viel jede Ziffer durch ihre Position wert ist."
+    },
+    "es": {
+     "t": "Matemáticas de la India",
+     "g": "Descubre cómo la India dio al mundo los dígitos posicionales y el cero como número de verdad.",
+     "p": [
+      "Los matemáticos indios desarrollaron el sistema decimal posicional, donde la posición de una cifra determina su valor.",
+      "El cero empezó como marcador de posición, y Brahmagupta, hacia el 628 d. C., escribió reglas claras para usarlo en los cálculos.",
+      "Sabios del mundo árabe transmitieron estas cifras, y el libro de Fibonacci de 1202 ayudó a introducirlas en Europa."
+     ],
+     "q": "Escribe 205 y 25 y explica qué hace el cero. ¿Por qué es tan útil?",
+     "c": "Escribe el número 3048 y di cuánto vale cada cifra según su posición."
+    },
+    "fr": {
+     "t": "Les mathématiques indiennes",
+     "g": "Découvre comment l'Inde a offert au monde les chiffres de position et le zéro comme vrai nombre.",
+     "p": [
+      "Les mathématiciens indiens ont mis au point le système décimal de position, où la place d'un chiffre donne sa valeur.",
+      "Le zéro fut d'abord un simple marqueur de place, puis Brahmagupta, vers 628, a écrit des règles claires pour calculer avec lui.",
+      "Des savants du monde arabe ont transmis ces chiffres, et le livre de Fibonacci de 1202 les a aidés à gagner l'Europe."
+     ],
+     "q": "Écris 205 et 25 et explique ce que fait le zéro. Pourquoi est-il si utile ?",
+     "c": "Écris le nombre 3 048 et dis ce que vaut chaque chiffre selon sa position."
+    },
+    "it": {
+     "t": "La matematica indiana",
+     "g": "Scopri come l'India diede al mondo le cifre posizionali e lo zero come vero numero.",
+     "p": [
+      "I matematici indiani svilupparono il sistema decimale posizionale, in cui la posizione di una cifra ne determina il valore.",
+      "Lo zero nacque come segnaposto, e Brahmagupta, intorno al 628 d.C., scrisse regole chiare per usarlo nei calcoli.",
+      "Studiosi del mondo arabo trasmisero queste cifre, e il libro di Fibonacci del 1202 aiutò a introdurle in Europa."
+     ],
+     "q": "Scrivi 205 e 25 e spiega cosa fa lo zero. Perché è così utile?",
+     "c": "Scrivi il numero 3.048 e di' quanto vale ogni cifra in base alla sua posizione."
+    },
+    "pt": {
+     "t": "A matemática indiana",
+     "g": "Descobre como a Índia deu ao mundo os algarismos posicionais e o zero como número verdadeiro.",
+     "p": [
+      "Os matemáticos indianos desenvolveram o sistema decimal posicional, em que a posição de um algarismo determina o seu valor.",
+      "O zero começou como marcador de posição, e Brahmagupta, por volta de 628 d.C., escreveu regras claras para o usar em cálculos.",
+      "Sábios do mundo árabe transmitiram estes algarismos, e o livro de Fibonacci de 1202 ajudou a introduzi-los na Europa."
+     ],
+     "q": "Escreve 205 e 25 e explica o que faz o zero. Porque é tão útil?",
+     "c": "Escreve o número 3048 e diz quanto vale cada algarismo pela sua posição."
+    },
+    "pt_BR": {
+     "t": "A matemática indiana",
+     "g": "Descubra como a Índia deu ao mundo os algarismos posicionais e o zero como número de verdade.",
+     "p": [
+      "Os matemáticos indianos desenvolveram o sistema decimal posicional, em que a posição de um algarismo determina seu valor.",
+      "O zero começou como marcador de posição, e Brahmagupta, por volta de 628 d.C., escreveu regras claras para usá-lo em cálculos.",
+      "Sábios do mundo árabe transmitiram esses algarismos, e o livro de Fibonacci de 1202 ajudou a introduzi-los na Europa."
+     ],
+     "q": "Escreva 205 e 25 e explique o que o zero faz. Por que ele é tão útil?",
+     "c": "Escreva o número 3048 e diga quanto vale cada algarismo pela sua posição."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kush and Aksum",
+     "g": "Meet two ancient African kingdoms with pyramids, coins and busy trade.",
+     "p": [
+      "Kush, in Nubia on the Nile, built more pyramids than Egypt, and its later capital Meroe is full of them.",
+      "Kushite kings once ruled Egypt too, and Kush traded gold, ivory and iron far beyond its borders.",
+      "Aksum, in today's Ethiopia and Eritrea, minted its own coins, wrote in Ge'ez and raised tall carved stone stelae."
+     ],
+     "q": "Which sounds more interesting to visit: the pyramids of Meroe or the stelae of Aksum?",
+     "c": "Find Nubia and Aksum on a map, and trace a trade route between them and the Red Sea."
+    },
+    "de": {
+     "t": "Kusch und Aksum",
+     "g": "Lerne zwei antike afrikanische Königreiche mit Pyramiden, Münzen und regem Handel kennen.",
+     "p": [
+      "Kusch in Nubien am Nil baute mehr Pyramiden als Ägypten, und seine spätere Hauptstadt Meroe ist voll davon.",
+      "Kuschitische Könige herrschten einst auch über Ägypten, und Kusch handelte mit Gold, Elfenbein und Eisen weit über die Grenzen.",
+      "Aksum im heutigen Äthiopien und Eritrea prägte eigene Münzen, schrieb in Ge'ez und errichtete hohe Stelen aus Stein."
+     ],
+     "q": "Was klingt interessanter: die Pyramiden von Meroe oder die Stelen von Aksum?",
+     "c": "Suche Nubien und Aksum auf einer Karte und zeichne eine Handelsroute zum Roten Meer nach."
+    },
+    "es": {
+     "t": "Kush y Aksum",
+     "g": "Conoce dos antiguos reinos africanos con pirámides, monedas y un comercio activo.",
+     "p": [
+      "Kush, en Nubia junto al Nilo, construyó más pirámides que Egipto, y su capital posterior, Meroe, está llena de ellas.",
+      "Los reyes de Kush llegaron a gobernar también Egipto, y Kush comerciaba oro, marfil y hierro mucho más allá de sus fronteras.",
+      "Aksum, en la actual Etiopía y Eritrea, acuñó sus propias monedas, escribía en ge'ez y levantó altas estelas de piedra."
+     ],
+     "q": "¿Qué te parece más interesante de visitar: las pirámides de Meroe o las estelas de Aksum?",
+     "c": "Localiza Nubia y Aksum en un mapa y traza una ruta comercial hacia el mar Rojo."
+    },
+    "fr": {
+     "t": "Koush et Aksoum",
+     "g": "Rencontre deux anciens royaumes africains aux pyramides, aux pièces et au commerce animé.",
+     "p": [
+      "Koush, en Nubie sur le Nil, a bâti plus de pyramides que l'Égypte, et sa capitale tardive, Méroé, en est remplie.",
+      "Les rois de Koush ont même régné sur l'Égypte, et Koush commerçait l'or, l'ivoire et le fer bien au-delà de ses frontières.",
+      "Aksoum, dans l'actuelle Éthiopie et l'Érythrée, frappait ses propres pièces, écrivait en guèze et dressait de hautes stèles."
+     ],
+     "q": "Que serait le plus intéressant à visiter : les pyramides de Méroé ou les stèles d'Aksoum ?",
+     "c": "Repère la Nubie et Aksoum sur une carte et trace une route commerciale vers la mer Rouge."
+    },
+    "it": {
+     "t": "Kush e Aksum",
+     "g": "Incontra due antichi regni africani con piramidi, monete e commerci vivaci.",
+     "p": [
+      "Kush, in Nubia lungo il Nilo, costruì più piramidi dell'Egitto, e la sua capitale più tarda, Meroe, ne è piena.",
+      "I re di Kush governarono per un periodo anche l'Egitto, e Kush commerciava oro, avorio e ferro ben oltre i suoi confini.",
+      "Aksum, nell'odierna Etiopia ed Eritrea, coniava monete proprie, scriveva in ge'ez e innalzava alte stele di pietra."
+     ],
+     "q": "Cosa ti sembra più interessante da visitare: le piramidi di Meroe o le stele di Aksum?",
+     "c": "Trova la Nubia e Aksum su una mappa e traccia una rotta commerciale verso il Mar Rosso."
+    },
+    "pt": {
+     "t": "Kush e Axum",
+     "g": "Conhece dois antigos reinos africanos com pirâmides, moedas e comércio ativo.",
+     "p": [
+      "Kush, na Núbia junto ao Nilo, construiu mais pirâmides do que o Egito, e a sua capital posterior, Meroé, está cheia delas.",
+      "Os reis de Kush chegaram a governar também o Egito, e Kush comerciava ouro, marfim e ferro muito além das suas fronteiras.",
+      "Axum, na atual Etiópia e Eritreia, cunhou moedas próprias, escrevia em ge'ez e erguia altas estelas de pedra."
+     ],
+     "q": "O que seria mais interessante visitar: as pirâmides de Meroé ou as estelas de Axum?",
+     "c": "Localiza a Núbia e Axum num mapa e traça uma rota comercial até ao mar Vermelho."
+    },
+    "pt_BR": {
+     "t": "Kush e Axum",
+     "g": "Conheça dois antigos reinos africanos com pirâmides, moedas e comércio ativo.",
+     "p": [
+      "Kush, na Núbia junto ao Nilo, construiu mais pirâmides do que o Egito, e sua capital posterior, Meroé, está cheia delas.",
+      "Os reis de Kush chegaram a governar também o Egito, e Kush comerciava ouro, marfim e ferro muito além de suas fronteiras.",
+      "Axum, na atual Etiópia e Eritreia, cunhou moedas próprias, escrevia em ge'ez e erguia altas estelas de pedra."
+     ],
+     "q": "O que seria mais interessante visitar: as pirâmides de Meroé ou as estelas de Axum?",
+     "c": "Localize a Núbia e Axum em um mapa e trace uma rota comercial até o mar Vermelho."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Polynesian navigators",
+     "g": "Meet sailors who crossed the Pacific reading stars, waves and birds.",
+     "p": [
+      "Polynesian voyagers settled islands across the Pacific, from Hawaii to Easter Island and New Zealand.",
+      "They sailed in double-hulled canoes and navigated without instruments, using stars, ocean swells, clouds and seabirds.",
+      "In 1976 the canoe Hokule'a sailed from Hawaii to Tahiti using traditional methods, showing it was possible."
+     ],
+     "q": "Which clue would you rather learn to read at sea: stars, waves or birds?",
+     "c": "Tonight, find the brightest star you can see and note where it rises or sets."
+    },
+    "de": {
+     "t": "Polynesische Seefahrer",
+     "g": "Lerne Seeleute kennen, die den Pazifik überquerten und Sterne, Wellen und Vögel zu lesen verstanden.",
+     "p": [
+      "Polynesische Seefahrer besiedelten Inseln im ganzen Pazifik, von Hawaii über die Osterinsel bis Neuseeland.",
+      "Sie segelten in Doppelrumpfkanus und navigierten ohne Instrumente anhand von Sternen, Dünung, Wolken und Seevögeln.",
+      "1976 segelte das Kanu Hokule'a mit traditionellen Methoden von Hawaii nach Tahiti und zeigte, dass es möglich war."
+     ],
+     "q": "Welches Zeichen würdest du auf See am liebsten lesen lernen: Sterne, Wellen oder Vögel?",
+     "c": "Suche heute Abend den hellsten Stern, den du siehst, und notiere, wo er auf- oder untergeht."
+    },
+    "es": {
+     "t": "Los navegantes polinesios",
+     "g": "Conoce a los marinos que cruzaron el Pacífico leyendo estrellas, olas y aves.",
+     "p": [
+      "Los navegantes polinesios poblaron islas por todo el Pacífico, desde Hawái hasta la isla de Pascua y Nueva Zelanda.",
+      "Navegaban en canoas de doble casco y se orientaban sin instrumentos, con estrellas, oleaje, nubes y aves marinas.",
+      "En 1976 la canoa Hokule'a viajó de Hawái a Tahití con métodos tradicionales y demostró que era posible."
+     ],
+     "q": "¿Qué señal te gustaría aprender a leer en el mar: estrellas, olas o aves?",
+     "c": "Esta noche busca la estrella más brillante que veas y anota por dónde sale o se pone."
+    },
+    "fr": {
+     "t": "Les navigateurs polynésiens",
+     "g": "Rencontre des marins qui ont traversé le Pacifique en lisant les étoiles, les vagues et les oiseaux.",
+     "p": [
+      "Les navigateurs polynésiens ont peuplé des îles dans tout le Pacifique, d'Hawaï à l'île de Pâques et à la Nouvelle-Zélande.",
+      "Ils naviguaient en pirogues à double coque, sans instruments, grâce aux étoiles, à la houle, aux nuages et aux oiseaux de mer.",
+      "En 1976, la pirogue Hokule'a a relié Hawaï à Tahiti avec des méthodes traditionnelles, prouvant que c'était possible."
+     ],
+     "q": "Quel indice aimerais-tu apprendre à lire en mer : les étoiles, les vagues ou les oiseaux ?",
+     "c": "Ce soir, repère l'étoile la plus brillante que tu vois et note où elle se lève ou se couche."
+    },
+    "it": {
+     "t": "I navigatori polinesiani",
+     "g": "Incontra marinai che attraversarono il Pacifico leggendo stelle, onde e uccelli.",
+     "p": [
+      "I navigatori polinesiani popolarono isole in tutto il Pacifico, dalle Hawaii all'Isola di Pasqua e alla Nuova Zelanda.",
+      "Navigavano su canoe a doppio scafo e senza strumenti, usando stelle, onde lunghe, nuvole e uccelli marini.",
+      "Nel 1976 la canoa Hokule'a andò dalle Hawaii a Tahiti con metodi tradizionali, dimostrando che era possibile."
+     ],
+     "q": "Quale indizio vorresti imparare a leggere in mare: stelle, onde o uccelli?",
+     "c": "Stasera cerca la stella più luminosa che vedi e annota dove sorge o tramonta."
+    },
+    "pt": {
+     "t": "Os navegadores polinésios",
+     "g": "Conhece marinheiros que atravessaram o Pacífico lendo estrelas, ondas e aves.",
+     "p": [
+      "Os navegadores polinésios povoaram ilhas por todo o Pacífico, do Havai à Ilha de Páscoa e à Nova Zelândia.",
+      "Navegavam em canoas de casco duplo e sem instrumentos, usando estrelas, ondulação, nuvens e aves marinhas.",
+      "Em 1976 a canoa Hokule'a viajou do Havai ao Taiti com métodos tradicionais, mostrando que era possível."
+     ],
+     "q": "Que pista gostarias de aprender a ler no mar: estrelas, ondas ou aves?",
+     "c": "Esta noite, procura a estrela mais brilhante que vires e anota onde nasce ou se põe."
+    },
+    "pt_BR": {
+     "t": "Os navegadores polinésios",
+     "g": "Conheça marinheiros que atravessaram o Pacífico lendo estrelas, ondas e aves.",
+     "p": [
+      "Os navegadores polinésios povoaram ilhas por todo o Pacífico, do Havaí à Ilha de Páscoa e à Nova Zelândia.",
+      "Navegavam em canoas de casco duplo e sem instrumentos, usando estrelas, ondulação, nuvens e aves marinhas.",
+      "Em 1976 a canoa Hokule'a foi do Havaí ao Taiti com métodos tradicionais, mostrando que era possível."
+     ],
+     "q": "Que pista você gostaria de aprender a ler no mar: estrelas, ondas ou aves?",
+     "c": "Hoje à noite, procure a estrela mais brilhante que enxergar e anote onde ela nasce ou se põe."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ancient Japan",
+     "g": "Explore early Japanese culture, from pottery to rice farming and the Yamato period.",
+     "p": [
+      "The Jomon people made some of the world's oldest pottery, decorated with rope patterns, and lived by hunting and gathering.",
+      "Around 300 BCE the Yayoi period brought rice farming and metalworking, which changed village life.",
+      "In the Yamato period, large keyhole-shaped burial mounds called kofun were built, and a central state took shape."
+     ],
+     "q": "Would you rather make a Jomon pot or plant a rice field? Why?",
+     "c": "Press a piece of string into clay or dough and see what rope-style pattern it leaves."
+    },
+    "de": {
+     "t": "Das antike Japan",
+     "g": "Entdecke die frühe japanische Kultur, von Töpferei über Reisanbau bis zur Yamato-Zeit.",
+     "p": [
+      "Die Jomon-Menschen fertigten eine der ältesten Keramiken der Welt mit Schnurmustern und lebten vom Jagen und Sammeln.",
+      "Um 300 v. Chr. brachte die Yayoi-Zeit Reisanbau und Metallverarbeitung, was das Dorfleben veränderte.",
+      "In der Yamato-Zeit entstanden große schlüssellochförmige Grabhügel namens Kofun, und ein zentraler Staat bildete sich."
+     ],
+     "q": "Würdest du lieber einen Jomon-Topf formen oder ein Reisfeld bepflanzen? Warum?",
+     "c": "Drücke eine Schnur in Ton oder Teig und sieh, welches Schnurmuster sie hinterlässt."
+    },
+    "es": {
+     "t": "El Japón antiguo",
+     "g": "Explora la cultura japonesa temprana, desde la cerámica hasta el cultivo del arroz y el periodo Yamato.",
+     "p": [
+      "El pueblo jomon hizo una de las cerámicas más antiguas del mundo, decorada con cuerdas, y vivía de la caza y la recolección.",
+      "Hacia el 300 a. C. el periodo yayoi trajo el cultivo del arroz y la metalurgia, que cambiaron la vida de las aldeas.",
+      "En el periodo Yamato se levantaron grandes túmulos con forma de cerradura llamados kofun, y se formó un estado central."
+     ],
+     "q": "¿Preferirías hacer una vasija jomon o plantar un arrozal? ¿Por qué?",
+     "c": "Presiona una cuerda sobre arcilla o masa y mira qué dibujo de cuerda deja."
+    },
+    "fr": {
+     "t": "Le Japon ancien",
+     "g": "Explore la culture japonaise ancienne, de la poterie à la riziculture et à l'époque Yamato.",
+     "p": [
+      "Le peuple Jomon fabriquait l'une des plus anciennes poteries du monde, décorée à la corde, et vivait de chasse et de cueillette.",
+      "Vers 300 av. J.-C., l'époque Yayoi apporte la riziculture et la métallurgie, qui transforment la vie des villages.",
+      "À l'époque Yamato, on bâtit de grands tumulus en forme de trou de serrure, les kofun, et un État central se forme."
+     ],
+     "q": "Préférerais-tu fabriquer un pot Jomon ou planter une rizière ? Pourquoi ?",
+     "c": "Presse une ficelle dans de l'argile ou de la pâte et regarde le motif de corde qu'elle laisse."
+    },
+    "it": {
+     "t": "Il Giappone antico",
+     "g": "Esplora la cultura giapponese antica, dalla ceramica alla coltivazione del riso e al periodo Yamato.",
+     "p": [
+      "Il popolo Jomon produsse una delle ceramiche più antiche del mondo, decorata a corda, e viveva di caccia e raccolta.",
+      "Intorno al 300 a.C. il periodo Yayoi portò la coltivazione del riso e la metallurgia, che cambiarono la vita dei villaggi.",
+      "Nel periodo Yamato furono costruiti grandi tumuli a forma di serratura, i kofun, e prese forma uno stato centrale."
+     ],
+     "q": "Preferiresti fare un vaso Jomon o piantare una risaia? Perché?",
+     "c": "Premi uno spago su argilla o impasto e guarda che motivo a corda lascia."
+    },
+    "pt": {
+     "t": "O Japão antigo",
+     "g": "Explora a cultura japonesa antiga, da cerâmica ao cultivo do arroz e ao período Yamato.",
+     "p": [
+      "O povo Jomon fez uma das cerâmicas mais antigas do mundo, decorada com cordas, e vivia da caça e da recoleção.",
+      "Por volta de 300 a.C. o período Yayoi trouxe o cultivo do arroz e a metalurgia, que mudaram a vida das aldeias.",
+      "No período Yamato ergueram-se grandes túmulos em forma de fechadura, os kofun, e formou-se um estado central."
+     ],
+     "q": "Preferias fazer um vaso Jomon ou plantar um arrozal? Porquê?",
+     "c": "Pressiona um cordel em barro ou massa e vê que padrão de corda deixa."
+    },
+    "pt_BR": {
+     "t": "O Japão antigo",
+     "g": "Explore a cultura japonesa antiga, da cerâmica ao cultivo do arroz e ao período Yamato.",
+     "p": [
+      "O povo Jomon fez uma das cerâmicas mais antigas do mundo, decorada com cordas, e vivia da caça e da coleta.",
+      "Por volta de 300 a.C. o período Yayoi trouxe o cultivo do arroz e a metalurgia, que mudaram a vida das aldeias.",
+      "No período Yamato foram erguidos grandes túmulos em forma de fechadura, os kofun, e formou-se um estado central."
+     ],
+     "q": "Você preferiria fazer um vaso Jomon ou plantar um arrozal? Por quê?",
+     "c": "Pressione um barbante em argila ou massa e veja que padrão de corda ele deixa."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ancient calendars",
+     "g": "See how Egyptians, Maya and others tracked time by watching the sky.",
+     "p": [
+      "Egyptians used a 365-day calendar of twelve 30-day months plus five extra days, linked to the yearly Nile flood.",
+      "The Maya combined a 260-day count with a 365-day year, and these cycles lined up only every 52 years.",
+      "Rome's Julian calendar, from 45 BCE, added a leap day every four years, a rule still used in a refined form."
+     ],
+     "q": "Which is easier to follow: a calendar based on the Moon or one based on the Sun?",
+     "c": "Spot the Moon tonight and write down its shape, then check it again in one week."
+    },
+    "de": {
+     "t": "Antike Kalender",
+     "g": "Sieh, wie Ägypter, Maya und andere die Zeit durch den Blick zum Himmel maßen.",
+     "p": [
+      "Die Ägypter nutzten einen 365-Tage-Kalender mit zwölf Monaten zu 30 Tagen plus fünf Zusatztagen, verbunden mit der jährlichen Nilflut.",
+      "Die Maya verbanden eine 260-Tage-Zählung mit einem 365-Tage-Jahr, und diese Zyklen trafen nur alle 52 Jahre zusammen.",
+      "Roms julianischer Kalender von 45 v. Chr. fügte alle vier Jahre einen Schalttag hinzu, eine Regel, die verfeinert noch gilt."
+     ],
+     "q": "Was ist leichter zu verfolgen: ein Kalender nach dem Mond oder einer nach der Sonne?",
+     "c": "Beobachte heute Abend den Mond, notiere seine Form und prüfe sie in einer Woche noch einmal."
+    },
+    "es": {
+     "t": "Calendarios antiguos",
+     "g": "Mira cómo egipcios, mayas y otros pueblos medían el tiempo observando el cielo.",
+     "p": [
+      "Los egipcios usaban un calendario de 365 días, con doce meses de 30 días más cinco días extra, ligado a la crecida anual del Nilo.",
+      "Los mayas combinaban una cuenta de 260 días con un año de 365, y esos ciclos solo coincidían cada 52 años.",
+      "El calendario juliano de Roma, del 45 a. C., añadió un día bisiesto cada cuatro años, regla que aún se usa refinada."
+     ],
+     "q": "¿Qué es más fácil de seguir: un calendario basado en la Luna o uno basado en el Sol?",
+     "c": "Mira la Luna esta noche, anota su forma y vuelve a mirarla dentro de una semana."
+    },
+    "fr": {
+     "t": "Les calendriers anciens",
+     "g": "Vois comment Égyptiens, Mayas et d'autres mesuraient le temps en observant le ciel.",
+     "p": [
+      "Les Égyptiens utilisaient un calendrier de 365 jours, douze mois de 30 jours plus cinq jours en plus, lié à la crue annuelle du Nil.",
+      "Les Mayas combinaient un compte de 260 jours et une année de 365, et ces cycles ne coïncidaient que tous les 52 ans.",
+      "Le calendrier julien de Rome, de 45 av. J.-C., ajouta un jour bissextile tous les quatre ans, règle encore utilisée, affinée."
+     ],
+     "q": "Qu'est-ce qui est plus facile à suivre : un calendrier lunaire ou un calendrier solaire ?",
+     "c": "Observe la Lune ce soir, note sa forme et regarde-la de nouveau dans une semaine."
+    },
+    "it": {
+     "t": "I calendari antichi",
+     "g": "Scopri come Egizi, Maya e altri misuravano il tempo osservando il cielo.",
+     "p": [
+      "Gli Egizi usavano un calendario di 365 giorni, con dodici mesi di 30 giorni più cinque giorni extra, legato alla piena annuale del Nilo.",
+      "I Maya combinavano un conteggio di 260 giorni con un anno di 365, e questi cicli coincidevano solo ogni 52 anni.",
+      "Il calendario giuliano di Roma, del 45 a.C., aggiunse un giorno bisestile ogni quattro anni, regola ancora in uso, affinata."
+     ],
+     "q": "Cosa è più facile da seguire: un calendario basato sulla Luna o uno basato sul Sole?",
+     "c": "Osserva la Luna stasera, annota la sua forma e riguardala fra una settimana."
+    },
+    "pt": {
+     "t": "Calendários antigos",
+     "g": "Vê como egípcios, maias e outros mediam o tempo observando o céu.",
+     "p": [
+      "Os egípcios usavam um calendário de 365 dias, com doze meses de 30 dias mais cinco dias extra, ligado à cheia anual do Nilo.",
+      "Os maias combinavam uma contagem de 260 dias com um ano de 365, e esses ciclos só coincidiam a cada 52 anos.",
+      "O calendário juliano de Roma, de 45 a.C., acrescentou um dia bissexto a cada quatro anos, regra ainda usada, aperfeiçoada."
+     ],
+     "q": "O que é mais fácil de acompanhar: um calendário baseado na Lua ou um baseado no Sol?",
+     "c": "Observa a Lua esta noite, anota a sua forma e volta a vê-la daqui a uma semana."
+    },
+    "pt_BR": {
+     "t": "Calendários antigos",
+     "g": "Veja como egípcios, maias e outros mediam o tempo observando o céu.",
+     "p": [
+      "Os egípcios usavam um calendário de 365 dias, com doze meses de 30 dias mais cinco dias extras, ligado à cheia anual do Nilo.",
+      "Os maias combinavam uma contagem de 260 dias com um ano de 365, e esses ciclos só coincidiam a cada 52 anos.",
+      "O calendário juliano de Roma, de 45 a.C., acrescentou um dia bissexto a cada quatro anos, regra ainda usada, aperfeiçoada."
+     ],
+     "q": "O que é mais fácil de acompanhar: um calendário baseado na Lua ou um baseado no Sol?",
+     "c": "Observe a Lua hoje à noite, anote o formato dela e volte a olhar daqui a uma semana."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: the ancient world",
+     "g": "Recap days 31-59 and compare two ancient civilisations side by side.",
+     "p": [
+      "Greece gave us theatre, early science and the Olympics, while Rome gave us roads, aqueducts, law and Latin.",
+      "The Maya, India, Kush, Aksum, Polynesia and Japan show that big ideas, from zero to ocean navigation, appeared worldwide.",
+      "A good comparison asks the same questions of each culture: how did they build, record time, trade and travel?"
+     ],
+     "q": "Which two civilisations from this stretch would you compare, and what would you ask first?",
+     "c": "Pick two civilisations and write one thing they share and one thing that is different."
+    },
+    "de": {
+     "t": "Rückblick: die antike Welt",
+     "g": "Wiederhole Tag 31-59 und vergleiche zwei antike Kulturen nebeneinander.",
+     "p": [
+      "Griechenland schenkte uns Theater, frühe Wissenschaft und die Olympischen Spiele, Rom Straßen, Aquädukte, Recht und Latein.",
+      "Maya, Indien, Kusch, Aksum, Polynesien und Japan zeigen, dass große Ideen von der Null bis zur Seefahrt überall entstanden.",
+      "Ein guter Vergleich stellt jeder Kultur dieselben Fragen: Wie bauten, zählten Zeit, handelten und reisten sie?"
+     ],
+     "q": "Welche zwei Kulturen dieser Etappe würdest du vergleichen, und was würdest du zuerst fragen?",
+     "c": "Wähle zwei Kulturen und schreibe eine Gemeinsamkeit und einen Unterschied auf."
+    },
+    "es": {
+     "t": "Repaso: el mundo antiguo",
+     "g": "Repasa los días 31-59 y compara dos civilizaciones antiguas lado a lado.",
+     "p": [
+      "Grecia nos dio el teatro, la ciencia temprana y los Juegos Olímpicos; Roma, calzadas, acueductos, derecho y latín.",
+      "Mayas, India, Kush, Aksum, Polinesia y Japón muestran que grandes ideas, del cero a la navegación oceánica, surgieron en todo el mundo.",
+      "Una buena comparación hace las mismas preguntas a cada cultura: ¿cómo construían, medían el tiempo, comerciaban y viajaban?"
+     ],
+     "q": "¿Qué dos civilizaciones de este tramo compararías y qué preguntarías primero?",
+     "c": "Elige dos civilizaciones y escribe algo que comparten y algo que las diferencia."
+    },
+    "fr": {
+     "t": "Révision : le monde antique",
+     "g": "Récapitule les jours 31-59 et compare deux civilisations anciennes côte à côte.",
+     "p": [
+      "La Grèce nous a donné le théâtre, la science naissante et les Jeux olympiques ; Rome, routes, aqueducs, droit et latin.",
+      "Mayas, Inde, Koush, Aksoum, Polynésie et Japon montrent que de grandes idées, du zéro à la navigation, sont nées partout.",
+      "Une bonne comparaison pose les mêmes questions à chaque culture : construction, mesure du temps, commerce, voyages."
+     ],
+     "q": "Quelles deux civilisations de cette étape comparerais-tu, et que demanderais-tu d'abord ?",
+     "c": "Choisis deux civilisations et écris un point commun et une différence."
+    },
+    "it": {
+     "t": "Ripasso: il mondo antico",
+     "g": "Ripassa i giorni 31-59 e confronta due civiltà antiche fianco a fianco.",
+     "p": [
+      "La Grecia ci diede teatro, scienza nascente e Giochi Olimpici; Roma strade, acquedotti, diritto e latino.",
+      "Maya, India, Kush, Aksum, Polinesia e Giappone mostrano che grandi idee, dallo zero alla navigazione, nacquero ovunque.",
+      "Un buon confronto pone a ogni cultura le stesse domande: come costruivano, misuravano il tempo, commerciavano e viaggiavano?"
+     ],
+     "q": "Quali due civiltà di questo tratto confronteresti e cosa chiederesti per prima cosa?",
+     "c": "Scegli due civiltà e scrivi una cosa che hanno in comune e una diversa."
+    },
+    "pt": {
+     "t": "Revisão: o mundo antigo",
+     "g": "Revê os dias 31-59 e compara duas civilizações antigas lado a lado.",
+     "p": [
+      "A Grécia deu-nos teatro, ciência inicial e os Jogos Olímpicos; Roma, estradas, aquedutos, direito e latim.",
+      "Maias, Índia, Kush, Axum, Polinésia e Japão mostram que grandes ideias, do zero à navegação, surgiram por todo o mundo.",
+      "Uma boa comparação faz as mesmas perguntas a cada cultura: como construíam, mediam o tempo, comerciavam e viajavam?"
+     ],
+     "q": "Que duas civilizações deste percurso compararias e o que perguntarias primeiro?",
+     "c": "Escolhe duas civilizações e escreve uma coisa que partilham e uma diferente."
+    },
+    "pt_BR": {
+     "t": "Revisão: o mundo antigo",
+     "g": "Revise os dias 31-59 e compare duas civilizações antigas lado a lado.",
+     "p": [
+      "A Grécia nos deu teatro, ciência inicial e os Jogos Olímpicos; Roma, estradas, aquedutos, direito e latim.",
+      "Maias, Índia, Kush, Axum, Polinésia e Japão mostram que grandes ideias, do zero à navegação, surgiram no mundo todo.",
+      "Uma boa comparação faz as mesmas perguntas a cada cultura: como construíam, mediam o tempo, comerciavam e viajavam?"
+     ],
+     "q": "Quais duas civilizações deste trecho você compararia e o que perguntaria primeiro?",
+     "c": "Escolha duas civilizações e escreva uma coisa que elas têm em comum e uma diferente."
+    }
+   }
+  }
+ ]
+}

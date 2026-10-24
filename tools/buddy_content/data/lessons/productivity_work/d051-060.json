@@ -1,0 +1,835 @@
+{
+ "topic": "productivity_work",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Estimating how long tasks take",
+     "g": "Improve your time estimates by tracking what really happens.",
+     "p": [
+      "Guess the time before you start, then note the real time.",
+      "Compare the two for a week and look for a pattern.",
+      "Many people learn they need about one and a half times their guess."
+     ],
+     "q": "How accurate are your usual time guesses, in your experience?",
+     "c": "Estimate and time three tasks today and compare the numbers."
+    },
+    "de": {
+     "t": "Aufgabendauer schätzen",
+     "g": "Deine Zeitschätzungen verbessern, indem du erfasst, was wirklich passiert.",
+     "p": [
+      "Schätze die Zeit vor dem Start und notiere danach die echte Zeit.",
+      "Vergleiche beides eine Woche lang und such ein Muster.",
+      "Viele merken, dass sie etwa das Eineinhalbfache ihrer Schätzung brauchen."
+     ],
+     "q": "Wie treffsicher sind deine üblichen Zeitschätzungen, nach deiner Erfahrung?",
+     "c": "Schätze und stoppe heute drei Aufgaben und vergleiche die Zahlen."
+    },
+    "es": {
+     "t": "Estimar cuánto dura una tarea",
+     "g": "Mejorar tus estimaciones midiendo lo que ocurre de verdad.",
+     "p": [
+      "Calcula el tiempo antes de empezar y anota después el real.",
+      "Compara ambos durante una semana y busca un patrón.",
+      "Mucha gente descubre que necesita una vez y media lo que calculó."
+     ],
+     "q": "¿Qué tan acertadas son tus estimaciones habituales, según tu experiencia?",
+     "c": "Estima y cronometra hoy tres tareas y compara los números."
+    },
+    "fr": {
+     "t": "Estimer la durée des tâches",
+     "g": "Améliorer vos estimations en notant ce qui se passe vraiment.",
+     "p": [
+      "Devinez le temps avant de commencer, puis notez le temps réel.",
+      "Comparez les deux pendant une semaine et cherchez un schéma.",
+      "Beaucoup découvrent qu'il leur faut environ une fois et demie leur estimation."
+     ],
+     "q": "Vos estimations habituelles sont-elles justes, selon votre expérience ?",
+     "c": "Estimez et chronométrez trois tâches aujourd'hui, puis comparez."
+    },
+    "it": {
+     "t": "Stimare quanto durano i compiti",
+     "g": "Migliorare le stime registrando cosa succede davvero.",
+     "p": [
+      "Indovina il tempo prima di iniziare, poi annota quello reale.",
+      "Confronta i due per una settimana e cerca uno schema.",
+      "Molti scoprono di aver bisogno di circa una volta e mezza la stima."
+     ],
+     "q": "Quanto sono precise le tue stime abituali, secondo la tua esperienza?",
+     "c": "Stima e cronometra oggi tre compiti e confronta i numeri."
+    },
+    "pt": {
+     "t": "Estimar quanto demoram as tarefas",
+     "g": "Melhorar as estimativas registando o que realmente acontece.",
+     "p": [
+      "Adivinha o tempo antes de começar e anota depois o tempo real.",
+      "Compara os dois durante uma semana e procura um padrão.",
+      "Muita gente descobre que precisa de uma vez e meia o que estimou."
+     ],
+     "q": "Quão certas são as tuas estimativas habituais, pela tua experiência?",
+     "c": "Estima e cronometra hoje três tarefas e compara os números."
+    },
+    "pt_BR": {
+     "t": "Estimar quanto as tarefas levam",
+     "g": "Melhorar suas estimativas registrando o que realmente acontece.",
+     "p": [
+      "Chute o tempo antes de começar e anote depois o tempo real.",
+      "Compare os dois por uma semana e procure um padrão.",
+      "Muita gente descobre que precisa de uma vez e meia o que estimou."
+     ],
+     "q": "Quão certas são suas estimativas habituais, pela sua experiência?",
+     "c": "Estime e cronometre hoje três tarefas e compare os números."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The planning fallacy",
+     "g": "Why we underestimate time and how to plan more realistically.",
+     "p": [
+      "We tend to imagine the best case and forget the hiccups.",
+      "Look at how long similar tasks really took last time.",
+      "Add a margin, and be kind to yourself when plans slip."
+     ],
+     "q": "What task always takes longer than you expect?",
+     "c": "Add 30 percent to one estimate today and see how it goes."
+    },
+    "de": {
+     "t": "Der Planungsfehlschluss",
+     "g": "Warum wir Zeit unterschätzen und wie du realistischer planst.",
+     "p": [
+      "Wir malen uns den Idealfall aus und vergessen die Hindernisse.",
+      "Sieh nach, wie lange ähnliche Aufgaben beim letzten Mal wirklich dauerten.",
+      "Plane Puffer ein und sei nachsichtig, wenn Pläne rutschen."
+     ],
+     "q": "Welche Aufgabe dauert immer länger, als du denkst?",
+     "c": "Schlag heute auf eine Schätzung 30 Prozent auf und sieh, wie es läuft."
+    },
+    "es": {
+     "t": "La falacia de la planificación",
+     "g": "Por qué subestimamos el tiempo y cómo planificar con más realismo.",
+     "p": [
+      "Tendemos a imaginar el mejor caso y a olvidar los contratiempos.",
+      "Mira cuánto tardaron de verdad tareas parecidas la última vez.",
+      "Añade margen y sé amable contigo cuando los planes se retrasen."
+     ],
+     "q": "¿Qué tarea siempre lleva más de lo que esperas?",
+     "c": "Suma hoy un 30 por ciento a una estimación y mira cómo va."
+    },
+    "fr": {
+     "t": "Le biais de planification",
+     "g": "Pourquoi nous sous-estimons le temps et comment planifier plus réalistement.",
+     "p": [
+      "On imagine le meilleur scénario et on oublie les imprévus.",
+      "Regardez combien de temps des tâches semblables ont vraiment pris.",
+      "Ajoutez une marge et soyez indulgent quand les plans glissent."
+     ],
+     "q": "Quelle tâche prend toujours plus de temps que prévu ?",
+     "c": "Ajoutez 30 pour cent à une estimation aujourd'hui et voyez ce qui se passe."
+    },
+    "it": {
+     "t": "L'errore di pianificazione",
+     "g": "Perché sottostimiamo il tempo e come pianificare in modo più realistico.",
+     "p": [
+      "Tendiamo a immaginare il caso migliore e a dimenticare gli imprevisti.",
+      "Guarda quanto sono durati davvero compiti simili l'ultima volta.",
+      "Aggiungi un margine e sii gentile con te quando i piani slittano."
+     ],
+     "q": "Quale compito richiede sempre più tempo del previsto?",
+     "c": "Aggiungi oggi il 30 per cento a una stima e vedi come va."
+    },
+    "pt": {
+     "t": "A falácia do planeamento",
+     "g": "Porque subestimamos o tempo e como planear de forma mais realista.",
+     "p": [
+      "Tendemos a imaginar o melhor cenário e a esquecer os contratempos.",
+      "Vê quanto demoraram de facto tarefas semelhantes da última vez.",
+      "Acrescenta margem e sê gentil contigo quando os planos escorregam."
+     ],
+     "q": "Que tarefa demora sempre mais do que esperas?",
+     "c": "Acrescenta hoje 30 por cento a uma estimativa e vê como corre."
+    },
+    "pt_BR": {
+     "t": "A falácia do planejamento",
+     "g": "Por que subestimamos o tempo e como planejar de forma mais realista.",
+     "p": [
+      "Tendemos a imaginar o melhor cenário e esquecer os contratempos.",
+      "Veja quanto tarefas parecidas realmente levaram da última vez.",
+      "Acrescente folga e seja gentil consigo quando os planos escorregarem."
+     ],
+     "q": "Que tarefa sempre leva mais tempo do que você espera?",
+     "c": "Acrescente hoje 30 por cento a uma estimativa e veja como corre."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Parkinson's law",
+     "g": "Work expands to fill the time available, so set tighter limits.",
+     "p": [
+      "A task given a whole afternoon tends to take a whole afternoon.",
+      "Set a shorter, reasonable limit and notice how focus sharpens.",
+      "Keep limits kind: rushing sloppy work helps nobody."
+     ],
+     "q": "Which task have you stretched longer than it needed?",
+     "c": "Give one task a shorter time limit today and see what happens."
+    },
+    "de": {
+     "t": "Das Parkinsonsche Gesetz",
+     "g": "Arbeit dehnt sich auf die verfügbare Zeit aus, also setze engere Grenzen.",
+     "p": [
+      "Eine Aufgabe mit einem ganzen Nachmittag braucht oft einen ganzen Nachmittag.",
+      "Setze ein kürzeres, vernünftiges Limit und spür, wie der Fokus schärfer wird.",
+      "Bleib freundlich: Hastige, schlampige Arbeit hilft niemandem."
+     ],
+     "q": "Welche Aufgabe hast du länger gedehnt, als nötig war?",
+     "c": "Gib heute einer Aufgabe ein kürzeres Zeitlimit und sieh, was passiert."
+    },
+    "es": {
+     "t": "La ley de Parkinson",
+     "g": "El trabajo se expande para llenar el tiempo disponible, así que pon límites más ajustados.",
+     "p": [
+      "Una tarea con toda la tarde tiende a ocupar toda la tarde.",
+      "Pon un límite más corto y razonable y nota cómo se afina el foco.",
+      "Que el límite sea amable: la prisa y el descuido no ayudan a nadie."
+     ],
+     "q": "¿Qué tarea has estirado más de lo necesario?",
+     "c": "Dale hoy a una tarea un límite de tiempo más corto y observa."
+    },
+    "fr": {
+     "t": "La loi de Parkinson",
+     "g": "Le travail s'étend pour remplir le temps disponible : fixez des limites plus serrées.",
+     "p": [
+      "Une tâche qui a tout l'après-midi tend à prendre tout l'après-midi.",
+      "Fixez une limite plus courte et raisonnable et voyez la concentration s'affûter.",
+      "Restez bienveillant : bâcler dans la hâte n'aide personne."
+     ],
+     "q": "Quelle tâche avez-vous étirée plus longtemps que nécessaire ?",
+     "c": "Donnez aujourd'hui à une tâche une limite de temps plus courte."
+    },
+    "it": {
+     "t": "La legge di Parkinson",
+     "g": "Il lavoro si dilata fino a riempire il tempo disponibile, quindi imposta limiti più stretti.",
+     "p": [
+      "Un compito con tutto il pomeriggio tende a occupare tutto il pomeriggio.",
+      "Imposta un limite più breve e ragionevole e nota come si affina la concentrazione.",
+      "Limiti gentili: lavorare di fretta e male non aiuta nessuno."
+     ],
+     "q": "Quale compito hai allungato più del necessario?",
+     "c": "Dai oggi a un compito un limite di tempo più breve e osserva."
+    },
+    "pt": {
+     "t": "A lei de Parkinson",
+     "g": "O trabalho expande-se para preencher o tempo disponível, por isso define limites mais curtos.",
+     "p": [
+      "Uma tarefa com a tarde toda tende a ocupar a tarde toda.",
+      "Define um limite mais curto e razoável e repara como o foco se aguça.",
+      "Mantém os limites gentis: trabalho apressado e mal feito não ajuda ninguém."
+     ],
+     "q": "Que tarefa alongaste mais do que o necessário?",
+     "c": "Dá hoje a uma tarefa um limite de tempo mais curto e observa."
+    },
+    "pt_BR": {
+     "t": "A lei de Parkinson",
+     "g": "O trabalho se expande para preencher o tempo disponível, então defina limites mais curtos.",
+     "p": [
+      "Uma tarefa com a tarde toda tende a ocupar a tarde toda.",
+      "Defina um limite mais curto e razoável e perceba o foco se afiar.",
+      "Mantenha limites gentis: trabalho apressado e malfeito não ajuda ninguém."
+     ],
+     "q": "Que tarefa você alongou mais do que o necessário?",
+     "c": "Dê hoje a uma tarefa um limite de tempo mais curto e observe."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Deadlines that help",
+     "g": "Use personal deadlines to create healthy momentum.",
+     "p": [
+      "A date turns a wish into a plan.",
+      "Set your own earlier deadline ahead of the real one.",
+      "Split long projects into mini deadlines along the way."
+     ],
+     "q": "Which of your tasks has no date, and might need one?",
+     "c": "Give a due date to three open tasks on your list."
+    },
+    "de": {
+     "t": "Fristen, die helfen",
+     "g": "Eigene Fristen nutzen, um gesunden Schwung zu erzeugen.",
+     "p": [
+      "Ein Datum macht aus einem Wunsch einen Plan.",
+      "Setze dir vor der echten Frist eine frühere eigene.",
+      "Teile lange Projekte in Mini-Fristen auf."
+     ],
+     "q": "Welche deiner Aufgaben hat kein Datum und könnte eins brauchen?",
+     "c": "Gib drei offenen Aufgaben auf deiner Liste ein Fälligkeitsdatum."
+    },
+    "es": {
+     "t": "Plazos que ayudan",
+     "g": "Usar plazos personales para crear un impulso sano.",
+     "p": [
+      "Una fecha convierte un deseo en un plan.",
+      "Pon tu propio plazo antes del plazo real.",
+      "Divide los proyectos largos en mini plazos por el camino."
+     ],
+     "q": "¿Qué tarea tuya no tiene fecha y quizá la necesite?",
+     "c": "Pon fecha límite a tres tareas abiertas de tu lista."
+    },
+    "fr": {
+     "t": "Des échéances utiles",
+     "g": "Utiliser des échéances personnelles pour créer un élan sain.",
+     "p": [
+      "Une date transforme un souhait en plan.",
+      "Fixez votre propre échéance avant la vraie.",
+      "Découpez les longs projets en mini-échéances."
+     ],
+     "q": "Quelle tâche n'a pas de date et en aurait besoin ?",
+     "c": "Donnez une date d'échéance à trois tâches ouvertes de votre liste."
+    },
+    "it": {
+     "t": "Scadenze che aiutano",
+     "g": "Usare scadenze personali per creare uno slancio sano.",
+     "p": [
+      "Una data trasforma un desiderio in un piano.",
+      "Fissa una tua scadenza prima di quella reale.",
+      "Dividi i progetti lunghi in mini scadenze lungo il percorso."
+     ],
+     "q": "Quale tuo compito non ha una data e forse ne avrebbe bisogno?",
+     "c": "Dai una scadenza a tre compiti aperti della tua lista."
+    },
+    "pt": {
+     "t": "Prazos que ajudam",
+     "g": "Usar prazos pessoais para criar um impulso saudável.",
+     "p": [
+      "Uma data transforma um desejo num plano.",
+      "Define o teu próprio prazo antes do prazo real.",
+      "Divide projetos longos em mini prazos pelo caminho."
+     ],
+     "q": "Que tarefa tua não tem data e talvez precise de uma?",
+     "c": "Dá uma data-limite a três tarefas em aberto da tua lista."
+    },
+    "pt_BR": {
+     "t": "Prazos que ajudam",
+     "g": "Usar prazos pessoais para criar um impulso saudável.",
+     "p": [
+      "Uma data transforma um desejo em um plano.",
+      "Defina seu próprio prazo antes do prazo real.",
+      "Divida projetos longos em mini prazos pelo caminho."
+     ],
+     "q": "Que tarefa sua não tem data e talvez precise de uma?",
+     "c": "Dê uma data-limite a três tarefas em aberto da sua lista."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Weekly planning",
+     "g": "Set aside time each week to plan priorities and appointments.",
+     "p": [
+      "Take 20 to 30 minutes at a fixed time, such as Friday afternoon or Sunday.",
+      "Look back at last week, then ahead at the coming one.",
+      "Check the calendar, pick priorities and leave room for the unexpected."
+     ],
+     "q": "When would a weekly planning moment fit your life best?",
+     "c": "Do a 20-minute plan for next week and book it in your calendar."
+    },
+    "de": {
+     "t": "Wochenplanung",
+     "g": "Jede Woche Zeit für Prioritäten und Termine einplanen.",
+     "p": [
+      "Nimm dir 20 bis 30 Minuten zu fester Zeit, etwa Freitagnachmittag oder Sonntag.",
+      "Blick auf die vergangene Woche zurück, dann auf die kommende.",
+      "Prüfe den Kalender, wähle Prioritäten und lass Raum fürs Unerwartete."
+     ],
+     "q": "Wann würde ein wöchentlicher Planungsmoment am besten in dein Leben passen?",
+     "c": "Plane 20 Minuten für nächste Woche und trag den Termin in deinen Kalender ein."
+    },
+    "es": {
+     "t": "Planificación semanal",
+     "g": "Reservar tiempo cada semana para planear prioridades y citas.",
+     "p": [
+      "Dedica 20 a 30 minutos en un momento fijo, como el viernes por la tarde o el domingo.",
+      "Mira la semana pasada y luego la que viene.",
+      "Revisa el calendario, elige prioridades y deja espacio para imprevistos."
+     ],
+     "q": "¿Cuándo encajaría mejor en tu vida un momento de planificación semanal?",
+     "c": "Haz un plan de 20 minutos para la próxima semana y resérvalo en tu calendario."
+    },
+    "fr": {
+     "t": "Planification hebdomadaire",
+     "g": "Réserver chaque semaine du temps pour planifier priorités et rendez-vous.",
+     "p": [
+      "Prenez 20 à 30 minutes à heure fixe, comme le vendredi après-midi ou le dimanche.",
+      "Regardez la semaine passée, puis celle à venir.",
+      "Vérifiez l'agenda, choisissez des priorités et laissez de la place à l'imprévu."
+     ],
+     "q": "Quel moment de planification hebdomadaire conviendrait le mieux à votre vie ?",
+     "c": "Faites un plan de 20 minutes pour la semaine prochaine et réservez-le."
+    },
+    "it": {
+     "t": "Pianificazione settimanale",
+     "g": "Dedicare ogni settimana del tempo a priorità e appuntamenti.",
+     "p": [
+      "Prenditi 20-30 minuti a orario fisso, come venerdì pomeriggio o domenica.",
+      "Guarda la settimana passata, poi quella in arrivo.",
+      "Controlla il calendario, scegli le priorità e lascia spazio all'imprevisto."
+     ],
+     "q": "Quando starebbe meglio nella tua vita un momento di pianificazione settimanale?",
+     "c": "Fai un piano di 20 minuti per la prossima settimana e segnalo in calendario."
+    },
+    "pt": {
+     "t": "Planeamento semanal",
+     "g": "Reservar tempo todas as semanas para planear prioridades e marcações.",
+     "p": [
+      "Dedica 20 a 30 minutos a uma hora fixa, como sexta à tarde ou domingo.",
+      "Olha para a semana passada e depois para a que vem.",
+      "Vê o calendário, escolhe prioridades e deixa espaço para imprevistos."
+     ],
+     "q": "Quando é que um momento de planeamento semanal encaixaria melhor na tua vida?",
+     "c": "Faz um plano de 20 minutos para a próxima semana e marca-o no calendário."
+    },
+    "pt_BR": {
+     "t": "Planejamento semanal",
+     "g": "Reservar tempo toda semana para planejar prioridades e compromissos.",
+     "p": [
+      "Dedique 20 a 30 minutos em um horário fixo, como sexta à tarde ou domingo.",
+      "Olhe a semana passada e depois a que vem.",
+      "Veja o calendário, escolha prioridades e deixe espaço para imprevistos."
+     ],
+     "q": "Quando um momento de planejamento semanal caberia melhor na sua vida?",
+     "c": "Faça um plano de 20 minutos para a próxima semana e marque no calendário."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing weekly goals",
+     "g": "Pick a few meaningful outcomes for the week ahead.",
+     "p": [
+      "Choose two or three outcomes, not a long wish list.",
+      "Phrase each as a result, such as Draft finished, not Work on draft.",
+      "Link each goal to something you truly care about."
+     ],
+     "q": "What would make this week feel like a success to you?",
+     "c": "Write three weekly goals as results and place them where you will see them."
+    },
+    "de": {
+     "t": "Wochenziele wählen",
+     "g": "Ein paar bedeutsame Ergebnisse für die kommende Woche auswählen.",
+     "p": [
+      "Wähle zwei oder drei Ergebnisse, keine lange Wunschliste.",
+      "Formuliere jedes als Ergebnis, etwa Entwurf fertig, nicht am Entwurf arbeiten.",
+      "Verbinde jedes Ziel mit etwas, das dir wirklich wichtig ist."
+     ],
+     "q": "Was würde diese Woche für dich zu einem Erfolg machen?",
+     "c": "Schreib drei Wochenziele als Ergebnisse auf und häng sie sichtbar auf."
+    },
+    "es": {
+     "t": "Elegir metas semanales",
+     "g": "Escoger unos pocos resultados con sentido para la semana que viene.",
+     "p": [
+      "Elige dos o tres resultados, no una larga lista de deseos.",
+      "Formula cada uno como resultado: Borrador terminado, no Trabajar en el borrador.",
+      "Vincula cada meta con algo que de verdad te importe."
+     ],
+     "q": "¿Qué haría que esta semana te pareciera un éxito?",
+     "c": "Escribe tres metas semanales como resultados y ponlas a la vista."
+    },
+    "fr": {
+     "t": "Choisir des objectifs hebdomadaires",
+     "g": "Choisir quelques résultats significatifs pour la semaine à venir.",
+     "p": [
+      "Choisissez deux ou trois résultats, pas une longue liste de souhaits.",
+      "Formulez chacun en résultat : Brouillon terminé, pas Travailler sur le brouillon.",
+      "Reliez chaque objectif à quelque chose qui vous tient à cœur."
+     ],
+     "q": "Qu'est-ce qui ferait de cette semaine une réussite pour vous ?",
+     "c": "Écrivez trois objectifs hebdomadaires en résultats et placez-les sous vos yeux."
+    },
+    "it": {
+     "t": "Scegliere obiettivi settimanali",
+     "g": "Scegliere pochi risultati significativi per la settimana che viene.",
+     "p": [
+      "Scegli due o tre risultati, non una lunga lista di desideri.",
+      "Formula ognuno come risultato: Bozza finita, non Lavorare sulla bozza.",
+      "Collega ogni obiettivo a qualcosa che ti sta davvero a cuore."
+     ],
+     "q": "Cosa renderebbe questa settimana un successo per te?",
+     "c": "Scrivi tre obiettivi settimanali come risultati e mettili in vista."
+    },
+    "pt": {
+     "t": "Escolher metas semanais",
+     "g": "Escolher poucos resultados com sentido para a semana que vem.",
+     "p": [
+      "Escolhe dois ou três resultados, não uma longa lista de desejos.",
+      "Formula cada um como resultado: Rascunho concluído, não Trabalhar no rascunho.",
+      "Liga cada meta a algo que realmente te importe."
+     ],
+     "q": "O que faria desta semana um sucesso para ti?",
+     "c": "Escreve três metas semanais como resultados e põe-nas à vista."
+    },
+    "pt_BR": {
+     "t": "Escolher metas semanais",
+     "g": "Escolher poucos resultados significativos para a semana que vem.",
+     "p": [
+      "Escolha dois ou três resultados, não uma longa lista de desejos.",
+      "Formule cada um como resultado: Rascunho concluído, não Trabalhar no rascunho.",
+      "Ligue cada meta a algo que realmente importa para você."
+     ],
+     "q": "O que faria desta semana um sucesso para você?",
+     "c": "Escreva três metas semanais como resultados e deixe-as à vista."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Theme days",
+     "g": "Dedicate days to certain types of work, like meetings or creative tasks.",
+     "p": [
+      "Give each day a flavour: for example calls on Tuesday, writing on Thursday.",
+      "Fewer switches between kinds of work means smoother focus.",
+      "Stay flexible; themes are guides, not strict rules."
+     ],
+     "q": "Which kinds of work could you group onto the same day?",
+     "c": "Sketch a theme for each weekday and try it for one week."
+    },
+    "de": {
+     "t": "Thementage",
+     "g": "Tage bestimmten Arbeitsarten widmen, etwa Meetings oder kreativen Aufgaben.",
+     "p": [
+      "Gib jedem Tag eine Note: etwa Telefonate am Dienstag, Schreiben am Donnerstag.",
+      "Weniger Wechsel zwischen Arbeitsarten bedeutet ruhigeren Fokus.",
+      "Bleib flexibel; Themen sind Leitplanken, keine strengen Regeln."
+     ],
+     "q": "Welche Arten von Arbeit könntest du auf denselben Tag legen?",
+     "c": "Skizziere ein Thema für jeden Wochentag und probiere es eine Woche lang."
+    },
+    "es": {
+     "t": "Días temáticos",
+     "g": "Dedicar días a ciertos tipos de trabajo, como reuniones o tareas creativas.",
+     "p": [
+      "Dale a cada día un tema: por ejemplo, llamadas el martes y escritura el jueves.",
+      "Menos cambios entre tipos de trabajo significa un foco más fluido.",
+      "Sé flexible; los temas son guías, no reglas estrictas."
+     ],
+     "q": "¿Qué tipos de trabajo podrías agrupar en el mismo día?",
+     "c": "Esboza un tema para cada día laborable y pruébalo una semana."
+    },
+    "fr": {
+     "t": "Les jours thématiques",
+     "g": "Consacrer des jours à certains types de travail, comme les réunions ou la création.",
+     "p": [
+      "Donnez à chaque jour une couleur : appels le mardi, écriture le jeudi.",
+      "Moins de changements entre types de travail, c'est une concentration plus fluide.",
+      "Restez souple ; les thèmes sont des repères, pas des règles strictes."
+     ],
+     "q": "Quels types de travail pourriez-vous regrouper sur le même jour ?",
+     "c": "Esquissez un thème par jour ouvré et essayez-le pendant une semaine."
+    },
+    "it": {
+     "t": "Giornate a tema",
+     "g": "Dedicare giorni a certi tipi di lavoro, come riunioni o compiti creativi.",
+     "p": [
+      "Dai a ogni giorno un tema: per esempio telefonate il martedì, scrittura il giovedì.",
+      "Meno passaggi tra tipi di lavoro significa concentrazione più fluida.",
+      "Resta flessibile; i temi sono guide, non regole rigide."
+     ],
+     "q": "Quali tipi di lavoro potresti raggruppare nello stesso giorno?",
+     "c": "Abbozza un tema per ogni giorno feriale e provalo per una settimana."
+    },
+    "pt": {
+     "t": "Dias temáticos",
+     "g": "Dedicar dias a certos tipos de trabalho, como reuniões ou tarefas criativas.",
+     "p": [
+      "Dá a cada dia um tema: por exemplo chamadas à terça, escrita à quinta.",
+      "Menos mudanças entre tipos de trabalho significa foco mais fluido.",
+      "Sê flexível; os temas são guias, não regras rígidas."
+     ],
+     "q": "Que tipos de trabalho poderias agrupar no mesmo dia?",
+     "c": "Esboça um tema para cada dia útil e experimenta durante uma semana."
+    },
+    "pt_BR": {
+     "t": "Dias temáticos",
+     "g": "Dedicar dias a certos tipos de trabalho, como reuniões ou tarefas criativas.",
+     "p": [
+      "Dê a cada dia um tema: por exemplo ligações na terça, escrita na quinta.",
+      "Menos trocas entre tipos de trabalho significam foco mais fluido.",
+      "Seja flexível; os temas são guias, não regras rígidas."
+     ],
+     "q": "Que tipos de trabalho você poderia agrupar no mesmo dia?",
+     "c": "Esboce um tema para cada dia útil e experimente por uma semana."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Batching similar tasks",
+     "g": "Group calls, errands or admin to work more efficiently.",
+     "p": [
+      "Doing similar tasks together saves setup time each round.",
+      "Batch things like phone calls, invoices, replies or errands.",
+      "Put batches in your calendar so they actually happen."
+     ],
+     "q": "Which small tasks could you handle together in one go?",
+     "c": "Pick one type of small task and do all of them in a single batch today."
+    },
+    "de": {
+     "t": "Ähnliche Aufgaben bündeln",
+     "g": "Anrufe, Erledigungen oder Verwaltung gruppieren, um effizienter zu arbeiten.",
+     "p": [
+      "Ähnliche Aufgaben zusammen sparen jedes Mal Vorbereitungszeit.",
+      "Bündle zum Beispiel Telefonate, Rechnungen, Antworten oder Besorgungen.",
+      "Trag Bündel in den Kalender ein, damit sie wirklich stattfinden."
+     ],
+     "q": "Welche kleinen Aufgaben könntest du in einem Rutsch erledigen?",
+     "c": "Wähle heute eine Art kleiner Aufgaben und erledige alle in einem Block."
+    },
+    "es": {
+     "t": "Agrupar tareas similares",
+     "g": "Agrupar llamadas, recados o papeleo para trabajar con más eficacia.",
+     "p": [
+      "Hacer tareas parecidas juntas ahorra tiempo de preparación cada vez.",
+      "Agrupa cosas como llamadas, facturas, respuestas o recados.",
+      "Pon los lotes en el calendario para que ocurran de verdad."
+     ],
+     "q": "¿Qué tareas pequeñas podrías resolver juntas de una vez?",
+     "c": "Elige hoy un tipo de tarea pequeña y haz todas en un solo bloque."
+    },
+    "fr": {
+     "t": "Regrouper les tâches similaires",
+     "g": "Regrouper appels, courses ou administratif pour travailler plus efficacement.",
+     "p": [
+      "Faire des tâches semblables ensemble évite de se remettre en route à chaque fois.",
+      "Regroupez par exemple appels, factures, réponses ou courses.",
+      "Mettez les lots dans l'agenda pour qu'ils aient vraiment lieu."
+     ],
+     "q": "Quelles petites tâches pourriez-vous traiter d'un seul coup ?",
+     "c": "Choisissez aujourd'hui un type de petite tâche et faites-les toutes en un bloc."
+    },
+    "it": {
+     "t": "Raggruppare compiti simili",
+     "g": "Raggruppare telefonate, commissioni o burocrazia per lavorare meglio.",
+     "p": [
+      "Fare compiti simili insieme fa risparmiare tempo di preparazione ogni volta.",
+      "Raggruppa cose come telefonate, fatture, risposte o commissioni.",
+      "Metti i blocchi in calendario perché avvengano davvero."
+     ],
+     "q": "Quali piccoli compiti potresti sbrigare insieme in un colpo solo?",
+     "c": "Scegli oggi un tipo di piccolo compito e fallo tutto in un unico blocco."
+    },
+    "pt": {
+     "t": "Agrupar tarefas semelhantes",
+     "g": "Agrupar chamadas, recados ou burocracia para trabalhar com mais eficiência.",
+     "p": [
+      "Fazer tarefas parecidas juntas poupa tempo de preparação de cada vez.",
+      "Agrupa coisas como chamadas, faturas, respostas ou recados.",
+      "Põe os lotes no calendário para que aconteçam mesmo."
+     ],
+     "q": "Que tarefas pequenas poderias resolver juntas de uma vez?",
+     "c": "Escolhe hoje um tipo de tarefa pequena e faz todas num único bloco."
+    },
+    "pt_BR": {
+     "t": "Agrupar tarefas semelhantes",
+     "g": "Agrupar ligações, recados ou burocracia para trabalhar com mais eficiência.",
+     "p": [
+      "Fazer tarefas parecidas juntas poupa tempo de preparação a cada vez.",
+      "Agrupe coisas como ligações, faturas, respostas ou recados.",
+      "Coloque os lotes no calendário para que aconteçam de verdade."
+     ],
+     "q": "Que tarefas pequenas você poderia resolver juntas de uma vez?",
+     "c": "Escolha hoje um tipo de tarefa pequena e faça todas em um único bloco."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Saying no politely",
+     "g": "Protect your priorities by declining requests kindly.",
+     "p": [
+      "Every yes to something is a no to something else.",
+      "Try: Thanks for thinking of me, I cannot take this on right now.",
+      "You can offer a later date or a smaller alternative instead."
+     ],
+     "q": "What request do you find hardest to turn down?",
+     "c": "Write one polite no you could use, and say it when the chance comes."
+    },
+    "de": {
+     "t": "Höflich Nein sagen",
+     "g": "Deine Prioritäten schützen, indem du Anfragen freundlich ablehnst.",
+     "p": [
+      "Jedes Ja zu etwas ist ein Nein zu etwas anderem.",
+      "Probiere: Danke, dass du an mich denkst, ich kann das gerade nicht übernehmen.",
+      "Du kannst stattdessen einen späteren Termin oder eine kleinere Alternative anbieten."
+     ],
+     "q": "Welche Bitte fällt dir am schwersten abzulehnen?",
+     "c": "Formuliere ein höfliches Nein, das du nutzen kannst, und sag es bei Gelegenheit."
+    },
+    "es": {
+     "t": "Decir no con educación",
+     "g": "Proteger tus prioridades rechazando peticiones con amabilidad.",
+     "p": [
+      "Cada sí a algo es un no a otra cosa.",
+      "Prueba: Gracias por pensar en mí, ahora mismo no puedo asumirlo.",
+      "Puedes ofrecer una fecha posterior o una alternativa más pequeña."
+     ],
+     "q": "¿Qué petición te cuesta más rechazar?",
+     "c": "Escribe un no educado que puedas usar y dilo cuando surja la ocasión."
+    },
+    "fr": {
+     "t": "Dire non poliment",
+     "g": "Protéger vos priorités en déclinant les demandes avec bienveillance.",
+     "p": [
+      "Chaque oui à une chose est un non à une autre.",
+      "Essayez : Merci d'avoir pensé à moi, je ne peux pas m'en charger maintenant.",
+      "Vous pouvez proposer une date ultérieure ou une alternative plus petite."
+     ],
+     "q": "Quelle demande avez-vous le plus de mal à refuser ?",
+     "c": "Écrivez un non poli à utiliser et dites-le quand l'occasion se présente."
+    },
+    "it": {
+     "t": "Dire no con garbo",
+     "g": "Proteggere le tue priorità rifiutando le richieste con gentilezza.",
+     "p": [
+      "Ogni sì a qualcosa è un no a qualcos'altro.",
+      "Prova: Grazie per aver pensato a me, ora non posso occuparmene.",
+      "Puoi offrire una data successiva o un'alternativa più piccola."
+     ],
+     "q": "Quale richiesta ti costa di più rifiutare?",
+     "c": "Scrivi un no gentile da usare e dillo quando capita l'occasione."
+    },
+    "pt": {
+     "t": "Dizer não com educação",
+     "g": "Proteger as tuas prioridades recusando pedidos com gentileza.",
+     "p": [
+      "Cada sim a uma coisa é um não a outra.",
+      "Experimenta: Obrigado por pensares em mim, agora não consigo assumir isto.",
+      "Podes oferecer uma data posterior ou uma alternativa mais pequena."
+     ],
+     "q": "Que pedido te custa mais recusar?",
+     "c": "Escreve um não educado que possas usar e di-lo quando surgir a ocasião."
+    },
+    "pt_BR": {
+     "t": "Dizer não com educação",
+     "g": "Proteger suas prioridades recusando pedidos com gentileza.",
+     "p": [
+      "Cada sim a uma coisa é um não a outra.",
+      "Experimente: Obrigado por lembrar de mim, agora não consigo assumir isso.",
+      "Você pode oferecer uma data posterior ou uma alternativa menor."
+     ],
+     "q": "Que pedido é mais difícil para você recusar?",
+     "c": "Escreva um não educado que você possa usar e diga quando surgir a ocasião."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: tools and planning",
+     "g": "A light recap of workspace, email, calendar and weekly planning.",
+     "p": [
+      "A tidy space, clear files and calmer email protect your focus.",
+      "Your calendar, time blocks and buffers turn plans into reality.",
+      "A weekly review and a polite no keep your priorities safe."
+     ],
+     "q": "Which tool or habit from these weeks helped you most?",
+     "c": "Pick your top two habits and write them on a card by your desk."
+    },
+    "de": {
+     "t": "Rückblick: Werkzeuge und Planung",
+     "g": "Ein leichter Rückblick auf Arbeitsplatz, E-Mail, Kalender und Wochenplanung.",
+     "p": [
+      "Ein aufgeräumter Platz, klare Dateien und ruhigere E-Mails schützen deinen Fokus.",
+      "Kalender, Zeitblöcke und Puffer machen aus Plänen Wirklichkeit.",
+      "Wochenrückblick und ein höfliches Nein schützen deine Prioritäten."
+     ],
+     "q": "Welches Werkzeug oder welche Gewohnheit dieser Wochen hat dir am meisten geholfen?",
+     "c": "Wähle deine zwei besten Gewohnheiten und schreib sie auf eine Karte am Schreibtisch."
+    },
+    "es": {
+     "t": "Repaso: herramientas y planificación",
+     "g": "Un repaso ligero de espacio de trabajo, correo, calendario y planificación semanal.",
+     "p": [
+      "Un espacio ordenado, archivos claros y un correo más tranquilo protegen tu foco.",
+      "Tu calendario, bloques de tiempo y márgenes convierten planes en realidad.",
+      "Una revisión semanal y un no educado protegen tus prioridades."
+     ],
+     "q": "¿Qué herramienta o hábito de estas semanas te ayudó más?",
+     "c": "Elige tus dos mejores hábitos y escríbelos en una tarjeta junto a tu mesa."
+    },
+    "fr": {
+     "t": "Bilan : outils et planification",
+     "g": "Un bilan léger de l'espace de travail, des e-mails, de l'agenda et de la planification.",
+     "p": [
+      "Un espace rangé, des fichiers clairs et un e-mail plus calme protègent votre concentration.",
+      "Agenda, blocs de temps et marges transforment les plans en réalité.",
+      "Une revue hebdomadaire et un non poli protègent vos priorités."
+     ],
+     "q": "Quel outil ou quelle habitude de ces semaines vous a le plus aidé ?",
+     "c": "Choisissez vos deux meilleures habitudes et notez-les sur une carte près du bureau."
+    },
+    "it": {
+     "t": "Ripasso: strumenti e pianificazione",
+     "g": "Un ripasso leggero di spazio di lavoro, email, calendario e pianificazione settimanale.",
+     "p": [
+      "Uno spazio in ordine, file chiari e email più calma proteggono la concentrazione.",
+      "Calendario, blocchi di tempo e margini trasformano i piani in realtà.",
+      "Una revisione settimanale e un no gentile proteggono le tue priorità."
+     ],
+     "q": "Quale strumento o abitudine di queste settimane ti ha aiutato di più?",
+     "c": "Scegli le tue due abitudini migliori e scrivile su un cartoncino accanto alla scrivania."
+    },
+    "pt": {
+     "t": "Revisão: ferramentas e planeamento",
+     "g": "Uma revisão leve de espaço de trabalho, email, calendário e planeamento semanal.",
+     "p": [
+      "Um espaço arrumado, ficheiros claros e email mais calmo protegem o teu foco.",
+      "O calendário, os blocos de tempo e as margens transformam planos em realidade.",
+      "Uma revisão semanal e um não educado protegem as tuas prioridades."
+     ],
+     "q": "Que ferramenta ou hábito destas semanas te ajudou mais?",
+     "c": "Escolhe os teus dois melhores hábitos e escreve-os num cartão junto à secretária."
+    },
+    "pt_BR": {
+     "t": "Revisão: ferramentas e planejamento",
+     "g": "Uma revisão leve de espaço de trabalho, e-mail, calendário e planejamento semanal.",
+     "p": [
+      "Um espaço arrumado, arquivos claros e e-mail mais calmo protegem seu foco.",
+      "Calendário, blocos de tempo e folgas transformam planos em realidade.",
+      "Uma revisão semanal e um não educado protegem suas prioridades."
+     ],
+     "q": "Que ferramenta ou hábito dessas semanas mais te ajudou?",
+     "c": "Escolha seus dois melhores hábitos e escreva-os num cartão ao lado da mesa."
+    }
+   }
+  }
+ ]
+}

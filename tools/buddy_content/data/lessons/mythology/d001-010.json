@@ -1,0 +1,835 @@
+{
+ "topic": "mythology",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is a myth?",
+     "g": "Learn how myths, legends, folktales and fables differ, and why every culture on Earth tells them.",
+     "p": [
+      "A myth is a sacred or foundational story about gods, origins and the shape of the world.",
+      "Legends tell of heroes and places that may be partly historical; folktales and fables are for fun and lessons.",
+      "Every people has its myths: they are a shared treasure that tells us how others see the world."
+     ],
+     "q": "Which myth or legend did you first hear as a child, and who told it to you?",
+     "c": "Think of one story you know and decide: is it a myth, a legend, a folktale or a fable?"
+    },
+    "de": {
+     "t": "Was ist ein Mythos?",
+     "g": "Lerne, wie sich Mythen, Sagen, Märchen und Fabeln unterscheiden und warum jede Kultur sie erzählt.",
+     "p": [
+      "Ein Mythos ist eine grundlegende Erzählung über Götter, Ursprünge und die Gestalt der Welt.",
+      "Sagen handeln von Helden und Orten mit wahrem Kern; Märchen und Fabeln unterhalten und lehren.",
+      "Jedes Volk hat seine Mythen: ein gemeinsamer Schatz, der zeigt, wie andere die Welt sehen."
+     ],
+     "q": "Welchen Mythos oder welche Sage hast du als Kind zuerst gehört, und wer hat sie dir erzählt?",
+     "c": "Denk an eine Geschichte, die du kennst: Ist sie Mythos, Sage, Märchen oder Fabel?"
+    },
+    "es": {
+     "t": "¿Qué es un mito?",
+     "g": "Aprende en qué se diferencian mitos, leyendas, cuentos populares y fábulas, y por qué todas las culturas los cuentan.",
+     "p": [
+      "Un mito es un relato fundacional sobre dioses, orígenes y la forma del mundo.",
+      "Las leyendas hablan de héroes y lugares con algo de historia; cuentos y fábulas entretienen y enseñan.",
+      "Todos los pueblos tienen mitos: son un tesoro compartido que muestra cómo otros ven el mundo."
+     ],
+     "q": "¿Qué mito o leyenda escuchaste primero de niño y quién te lo contó?",
+     "c": "Piensa en una historia que conozcas y decide: ¿es mito, leyenda, cuento popular o fábula?"
+    },
+    "fr": {
+     "t": "Qu'est-ce qu'un mythe ?",
+     "g": "Découvre ce qui distingue mythes, légendes, contes et fables, et pourquoi toutes les cultures en racontent.",
+     "p": [
+      "Un mythe est un récit fondateur sur les dieux, les origines et la forme du monde.",
+      "Les légendes parlent de héros et de lieux parfois historiques ; contes et fables divertissent et instruisent.",
+      "Chaque peuple a ses mythes : un trésor commun qui montre comment les autres voient le monde."
+     ],
+     "q": "Quel mythe ou quelle légende as-tu entendu en premier enfant, et qui te l'a raconté ?",
+     "c": "Pense à une histoire que tu connais et décide : mythe, légende, conte ou fable ?"
+    },
+    "it": {
+     "t": "Che cos'è un mito?",
+     "g": "Scopri cosa distingue miti, leggende, fiabe e favole, e perché ogni cultura li racconta.",
+     "p": [
+      "Un mito è un racconto fondativo su dèi, origini e forma del mondo.",
+      "Le leggende parlano di eroi e luoghi con un fondo storico; fiabe e favole divertono e insegnano.",
+      "Ogni popolo ha i suoi miti: un tesoro comune che mostra come gli altri vedono il mondo."
+     ],
+     "q": "Qual è il primo mito o la prima leggenda che hai sentito da bambino, e chi te l'ha raccontata?",
+     "c": "Pensa a una storia che conosci e decidi: è un mito, una leggenda, una fiaba o una favola?"
+    },
+    "pt": {
+     "t": "O que é um mito?",
+     "g": "Aprende a distinguir mitos, lendas, contos populares e fábulas, e porque todas as culturas os contam.",
+     "p": [
+      "Um mito é uma narrativa fundadora sobre deuses, origens e a forma do mundo.",
+      "As lendas falam de heróis e lugares com fundo histórico; contos e fábulas divertem e ensinam.",
+      "Todos os povos têm mitos: um tesouro comum que mostra como os outros veem o mundo."
+     ],
+     "q": "Qual foi o primeiro mito ou lenda que ouviste em criança, e quem to contou?",
+     "c": "Pensa numa história que conheças e decide: é mito, lenda, conto popular ou fábula?"
+    },
+    "pt_BR": {
+     "t": "O que é um mito?",
+     "g": "Aprenda a diferenciar mitos, lendas, contos populares e fábulas, e por que todas as culturas os contam.",
+     "p": [
+      "Um mito é uma narrativa fundadora sobre deuses, origens e a forma do mundo.",
+      "Lendas falam de heróis e lugares com fundo histórico; contos e fábulas divertem e ensinam.",
+      "Todo povo tem seus mitos: um tesouro comum que mostra como os outros enxergam o mundo."
+     ],
+     "q": "Qual foi o primeiro mito ou lenda que você ouviu na infância, e quem contou para você?",
+     "c": "Pense numa história que você conhece e decida: é mito, lenda, conto popular ou fábula?"
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why people told myths",
+     "g": "See how myths explained nature, taught values and gave people a shared identity around the fire.",
+     "p": [
+      "Before science, myths explained thunder, seasons, stars and the first sunrise.",
+      "Stories carried values: courage, hospitality, honesty and respect for nature.",
+      "Told aloud by the fire, myths bound families and communities together across generations."
+     ],
+     "q": "Which natural event, like a storm or a rainbow, would you love to hear a myth about?",
+     "c": "Invent a one-line myth explaining why the moon changes shape, then share it with me."
+    },
+    "de": {
+     "t": "Warum Menschen Mythen erzählten",
+     "g": "Sieh, wie Mythen die Natur erklärten, Werte lehrten und am Feuer Gemeinschaft stifteten.",
+     "p": [
+      "Vor der Wissenschaft erklärten Mythen Donner, Jahreszeiten, Sterne und den ersten Sonnenaufgang.",
+      "Geschichten trugen Werte weiter: Mut, Gastfreundschaft, Ehrlichkeit und Achtung vor der Natur.",
+      "Am Feuer erzählt, verbanden Mythen Familien und Gemeinschaften über Generationen."
+     ],
+     "q": "Über welches Naturereignis, etwa Gewitter oder Regenbogen, würdest du gern einen Mythos hören?",
+     "c": "Erfinde einen Mythos in einem Satz, warum der Mond seine Form ändert, und erzähl ihn mir."
+    },
+    "es": {
+     "t": "Por qué se contaban mitos",
+     "g": "Descubre cómo los mitos explicaban la naturaleza, enseñaban valores y unían a la gente junto al fuego.",
+     "p": [
+      "Antes de la ciencia, los mitos explicaban el trueno, las estaciones, las estrellas y el primer amanecer.",
+      "Las historias transmitían valores: valentía, hospitalidad, honestidad y respeto por la naturaleza.",
+      "Contados junto al fuego, los mitos unían a familias y comunidades durante generaciones."
+     ],
+     "q": "¿Sobre qué fenómeno natural, como una tormenta o un arcoíris, te gustaría oír un mito?",
+     "c": "Inventa un mito de una frase que explique por qué la luna cambia de forma y compártelo conmigo."
+    },
+    "fr": {
+     "t": "Pourquoi on racontait des mythes",
+     "g": "Vois comment les mythes expliquaient la nature, transmettaient des valeurs et unissaient autour du feu.",
+     "p": [
+      "Avant la science, les mythes expliquaient le tonnerre, les saisons, les étoiles et le premier lever du soleil.",
+      "Les récits transmettaient des valeurs : courage, hospitalité, honnêteté et respect de la nature.",
+      "Racontés au coin du feu, les mythes liaient familles et communautés de génération en génération."
+     ],
+     "q": "Sur quel phénomène naturel, un orage ou un arc-en-ciel, aimerais-tu entendre un mythe ?",
+     "c": "Invente un mythe d'une phrase expliquant pourquoi la lune change de forme, puis partage-le."
+    },
+    "it": {
+     "t": "Perché si raccontavano miti",
+     "g": "Scopri come i miti spiegavano la natura, insegnavano valori e univano le persone attorno al fuoco.",
+     "p": [
+      "Prima della scienza, i miti spiegavano tuoni, stagioni, stelle e la prima alba.",
+      "Le storie trasmettevano valori: coraggio, ospitalità, onestà e rispetto per la natura.",
+      "Raccontati accanto al fuoco, i miti univano famiglie e comunità per generazioni."
+     ],
+     "q": "Su quale fenomeno naturale, come un temporale o un arcobaleno, vorresti sentire un mito?",
+     "c": "Inventa un mito di una frase che spieghi perché la luna cambia forma e raccontamelo."
+    },
+    "pt": {
+     "t": "Porque se contavam mitos",
+     "g": "Vê como os mitos explicavam a natureza, ensinavam valores e uniam as pessoas à volta da fogueira.",
+     "p": [
+      "Antes da ciência, os mitos explicavam o trovão, as estações, as estrelas e o primeiro nascer do sol.",
+      "As histórias transmitiam valores: coragem, hospitalidade, honestidade e respeito pela natureza.",
+      "Contados à lareira, os mitos uniam famílias e comunidades ao longo de gerações."
+     ],
+     "q": "Sobre que fenómeno natural, como uma tempestade ou um arco-íris, gostavas de ouvir um mito?",
+     "c": "Inventa um mito de uma frase que explique porque a lua muda de forma e partilha-o comigo."
+    },
+    "pt_BR": {
+     "t": "Por que se contavam mitos",
+     "g": "Veja como os mitos explicavam a natureza, ensinavam valores e uniam as pessoas em volta da fogueira.",
+     "p": [
+      "Antes da ciência, os mitos explicavam o trovão, as estações, as estrelas e o primeiro nascer do sol.",
+      "As histórias passavam valores adiante: coragem, hospitalidade, honestidade e respeito pela natureza.",
+      "Contados ao redor do fogo, os mitos uniam famílias e comunidades por gerações."
+     ],
+     "q": "Sobre qual fenômeno natural, como uma tempestade ou um arco-íris, você gostaria de ouvir um mito?",
+     "c": "Invente um mito de uma frase explicando por que a lua muda de forma e compartilhe comigo."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gods, heroes and tricksters",
+     "g": "Meet the three character types you will find again and again in myths from every corner of the world.",
+     "p": [
+      "Gods shape the world and keep order, from the sky and sea to the hearth.",
+      "Heroes are humans, or half-divine, who face great trials and grow through them.",
+      "Tricksters like Loki, Anansi or Coyote break the rules, cause chaos and often teach by accident."
+     ],
+     "q": "Which do you like most in a story: the wise god, the brave hero or the cheeky trickster?",
+     "c": "Name one character from any story or film who acts like a trickster, and tell me why."
+    },
+    "de": {
+     "t": "Götter, Helden und Trickster",
+     "g": "Lerne die drei Figurentypen kennen, die dir in Mythen aus aller Welt immer wieder begegnen.",
+     "p": [
+      "Götter formen die Welt und hüten die Ordnung, vom Himmel und Meer bis zum Herdfeuer.",
+      "Helden sind Menschen oder Halbgötter, die große Prüfungen bestehen und daran wachsen.",
+      "Trickster wie Loki, Anansi oder Kojote brechen Regeln, stiften Chaos und lehren oft ganz nebenbei."
+     ],
+     "q": "Was magst du in Geschichten am liebsten: den weisen Gott, den mutigen Helden oder den frechen Trickster?",
+     "c": "Nenne eine Figur aus einem Buch oder Film, die sich wie ein Trickster verhält, und sag mir, warum."
+    },
+    "es": {
+     "t": "Dioses, héroes y pícaros",
+     "g": "Conoce los tres tipos de personaje que encontrarás una y otra vez en los mitos de todo el mundo.",
+     "p": [
+      "Los dioses dan forma al mundo y mantienen el orden, del cielo y el mar al hogar.",
+      "Los héroes son humanos, o semidioses, que superan grandes pruebas y crecen con ellas.",
+      "Pícaros como Loki, Anansi o Coyote rompen reglas, causan caos y a menudo enseñan sin querer."
+     ],
+     "q": "¿Qué prefieres en una historia: el dios sabio, el héroe valiente o el pícaro descarado?",
+     "c": "Nombra un personaje de un libro o película que actúe como un pícaro y dime por qué."
+    },
+    "fr": {
+     "t": "Dieux, héros et filous",
+     "g": "Rencontre les trois types de personnages que tu croiseras sans cesse dans les mythes du monde entier.",
+     "p": [
+      "Les dieux façonnent le monde et maintiennent l'ordre, du ciel et de la mer jusqu'au foyer.",
+      "Les héros sont des humains, ou des demi-dieux, qui affrontent de grandes épreuves et en grandissent.",
+      "Les filous comme Loki, Anansi ou Coyote brisent les règles, sèment le désordre et instruisent souvent malgré eux."
+     ],
+     "q": "Que préfères-tu dans une histoire : le dieu sage, le héros courageux ou le filou espiègle ?",
+     "c": "Cite un personnage de livre ou de film qui agit comme un filou, et explique-moi pourquoi."
+    },
+    "it": {
+     "t": "Dèi, eroi e imbroglioni",
+     "g": "Incontra i tre tipi di personaggio che ritroverai continuamente nei miti di tutto il mondo.",
+     "p": [
+      "Gli dèi danno forma al mondo e custodiscono l'ordine, dal cielo e dal mare fino al focolare.",
+      "Gli eroi sono umani, o semidei, che affrontano grandi prove e ne escono cresciuti.",
+      "Imbroglioni come Loki, Anansi o Coyote infrangono le regole, creano scompiglio e spesso insegnano per caso."
+     ],
+     "q": "Cosa ti piace di più in una storia: il dio saggio, l'eroe coraggioso o l'imbroglione sfacciato?",
+     "c": "Nomina un personaggio di un libro o di un film che si comporta da imbroglione e dimmi perché."
+    },
+    "pt": {
+     "t": "Deuses, heróis e trapaceiros",
+     "g": "Conhece os três tipos de personagem que vais encontrar vezes sem conta nos mitos de todo o mundo.",
+     "p": [
+      "Os deuses moldam o mundo e mantêm a ordem, do céu e do mar até à lareira.",
+      "Os heróis são humanos, ou semideuses, que enfrentam grandes provas e crescem com elas.",
+      "Trapaceiros como Loki, Anansi ou Coiote quebram regras, causam caos e muitas vezes ensinam sem querer."
+     ],
+     "q": "De que gostas mais numa história: do deus sábio, do herói corajoso ou do trapaceiro atrevido?",
+     "c": "Indica uma personagem de um livro ou filme que aja como um trapaceiro e diz-me porquê."
+    },
+    "pt_BR": {
+     "t": "Deuses, heróis e trapaceiros",
+     "g": "Conheça os três tipos de personagem que você vai encontrar sem parar nos mitos do mundo todo.",
+     "p": [
+      "Os deuses moldam o mundo e mantêm a ordem, do céu e do mar até o lar.",
+      "Os heróis são humanos, ou semideuses, que enfrentam grandes provas e crescem com elas.",
+      "Trapaceiros como Loki, Anansi ou Coiote quebram regras, causam caos e muitas vezes ensinam sem querer."
+     ],
+     "q": "Do que você mais gosta numa história: do deus sábio, do herói corajoso ou do trapaceiro atrevido?",
+     "c": "Cite um personagem de livro ou filme que age como trapaceiro e me diga por quê."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet the Greek Olympians",
+     "g": "Get to know Zeus, Hera and the family of twelve gods who, in Greek myth, lived on Mount Olympus.",
+     "p": [
+      "Mount Olympus is a real mountain in Greece, imagined as the cloud-topped home of the gods.",
+      "The twelve include Zeus, Hera, Poseidon, Demeter, Athena, Apollo, Artemis, Ares, Aphrodite, Hephaestus, Hermes and Hestia or Dionysus.",
+      "Like a big family, they argued, helped heroes and each looked after a part of life."
+     ],
+     "q": "If you could have dinner with one Olympian, who would you pick and what would you ask?",
+     "c": "Choose three Olympians and describe each one in just three words."
+    },
+    "de": {
+     "t": "Die griechischen Olympier",
+     "g": "Lerne Zeus, Hera und die Familie der zwölf Götter kennen, die im Mythos auf dem Olymp lebten.",
+     "p": [
+      "Der Olymp ist ein echter Berg in Griechenland, gedacht als wolkenumhüllte Heimat der Götter.",
+      "Zu den Zwölf zählen Zeus, Hera, Poseidon, Demeter, Athene, Apollon, Artemis, Ares, Aphrodite, Hephaistos, Hermes und Hestia oder Dionysos.",
+      "Wie eine große Familie stritten sie, halfen Helden und kümmerten sich je um einen Lebensbereich."
+     ],
+     "q": "Mit welchem Olympier würdest du gern zu Abend essen, und was würdest du fragen?",
+     "c": "Wähle drei Olympier und beschreibe jeden mit nur drei Wörtern."
+    },
+    "es": {
+     "t": "Los dioses del Olimpo",
+     "g": "Conoce a Zeus, Hera y la familia de doce dioses que, según el mito griego, vivía en el monte Olimpo.",
+     "p": [
+      "El Olimpo es una montaña real de Grecia, imaginada como el hogar de los dioses entre las nubes.",
+      "Los doce suelen ser Zeus, Hera, Poseidón, Deméter, Atenea, Apolo, Artemisa, Ares, Afrodita, Hefesto, Hermes y Hestia o Dioniso.",
+      "Como una gran familia, discutían, ayudaban a los héroes y cuidaban cada uno de un aspecto de la vida."
+     ],
+     "q": "Si pudieras cenar con un dios del Olimpo, ¿a quién elegirías y qué le preguntarías?",
+     "c": "Elige tres dioses olímpicos y describe a cada uno con solo tres palabras."
+    },
+    "fr": {
+     "t": "Les dieux de l'Olympe",
+     "g": "Fais connaissance avec Zeus, Héra et la famille des douze dieux qui, selon le mythe, vivaient sur l'Olympe.",
+     "p": [
+      "L'Olympe est une vraie montagne de Grèce, imaginée comme la demeure des dieux au-dessus des nuages.",
+      "Les douze sont souvent Zeus, Héra, Poséidon, Déméter, Athéna, Apollon, Artémis, Arès, Aphrodite, Héphaïstos, Hermès et Hestia ou Dionysos.",
+      "Comme une grande famille, ils se disputaient, aidaient les héros et veillaient chacun sur un domaine."
+     ],
+     "q": "Si tu pouvais dîner avec un dieu de l'Olympe, lequel choisirais-tu et que lui demanderais-tu ?",
+     "c": "Choisis trois Olympiens et décris chacun en trois mots seulement."
+    },
+    "it": {
+     "t": "Gli dèi dell'Olimpo",
+     "g": "Conosci Zeus, Era e la famiglia dei dodici dèi che, nel mito greco, abitava sul monte Olimpo.",
+     "p": [
+      "L'Olimpo è un vero monte della Grecia, immaginato come la dimora degli dèi tra le nuvole.",
+      "I dodici di solito sono Zeus, Era, Poseidone, Demetra, Atena, Apollo, Artemide, Ares, Afrodite, Efesto, Ermes ed Estia o Dioniso.",
+      "Come una grande famiglia litigavano, aiutavano gli eroi e ognuno vegliava su un aspetto della vita."
+     ],
+     "q": "Se potessi cenare con un dio dell'Olimpo, chi sceglieresti e cosa gli chiederesti?",
+     "c": "Scegli tre dèi olimpici e descrivi ciascuno con sole tre parole."
+    },
+    "pt": {
+     "t": "Os deuses do Olimpo",
+     "g": "Conhece Zeus, Hera e a família dos doze deuses que, no mito grego, vivia no monte Olimpo.",
+     "p": [
+      "O Olimpo é uma montanha real da Grécia, imaginada como a casa dos deuses acima das nuvens.",
+      "Os doze costumam ser Zeus, Hera, Poseidon, Deméter, Atena, Apolo, Ártemis, Ares, Afrodite, Hefesto, Hermes e Héstia ou Dioniso.",
+      "Como uma grande família, discutiam, ajudavam heróis e cada um cuidava de uma parte da vida."
+     ],
+     "q": "Se pudesses jantar com um deus do Olimpo, quem escolhias e o que lhe perguntavas?",
+     "c": "Escolhe três deuses olímpicos e descreve cada um em apenas três palavras."
+    },
+    "pt_BR": {
+     "t": "Os deuses do Olimpo",
+     "g": "Conheça Zeus, Hera e a família dos doze deuses que, no mito grego, vivia no monte Olimpo.",
+     "p": [
+      "O Olimpo é uma montanha real da Grécia, imaginada como a casa dos deuses acima das nuvens.",
+      "Os doze costumam ser Zeus, Hera, Poseidon, Deméter, Atena, Apolo, Ártemis, Ares, Afrodite, Hefesto, Hermes e Héstia ou Dioniso.",
+      "Como uma grande família, eles discutiam, ajudavam heróis e cada um cuidava de uma parte da vida."
+     ],
+     "q": "Se você pudesse jantar com um deus do Olimpo, quem escolheria e o que perguntaria?",
+     "c": "Escolha três deuses olímpicos e descreva cada um com apenas três palavras."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Zeus and the sky",
+     "g": "Discover the king of the Greek gods, his thunderbolt and his role as the keeper of order.",
+     "p": [
+      "Zeus ruled the sky and weather; his thunderbolt was a gift from the one-eyed Cyclopes.",
+      "He protected guests and travellers, so hospitality was a sacred duty in ancient Greece.",
+      "His symbols are the eagle, the oak tree and the thunderbolt, seen on coins and statues."
+     ],
+     "q": "Why do you think so many cultures imagined their chief god living in the sky?",
+     "c": "Next time you hear thunder or see clouds, invent a short line Zeus might be saying."
+    },
+    "de": {
+     "t": "Zeus und der Himmel",
+     "g": "Entdecke den König der griechischen Götter, seinen Blitz und seine Rolle als Hüter der Ordnung.",
+     "p": [
+      "Zeus herrschte über Himmel und Wetter; seinen Blitz schmiedeten ihm die einäugigen Kyklopen.",
+      "Er schützte Gäste und Reisende, darum war Gastfreundschaft im alten Griechenland heilig.",
+      "Seine Zeichen sind Adler, Eiche und Blitz, zu sehen auf Münzen und Statuen."
+     ],
+     "q": "Warum stellten sich wohl so viele Kulturen ihren obersten Gott im Himmel vor?",
+     "c": "Wenn du das nächste Mal Wolken siehst, erfinde einen kurzen Satz, den Zeus sagen könnte."
+    },
+    "es": {
+     "t": "Zeus y el cielo",
+     "g": "Descubre al rey de los dioses griegos, su rayo y su papel como guardián del orden.",
+     "p": [
+      "Zeus gobernaba el cielo y el clima; su rayo fue un regalo de los cíclopes de un solo ojo.",
+      "Protegía a huéspedes y viajeros, por eso la hospitalidad era un deber sagrado en la antigua Grecia.",
+      "Sus símbolos son el águila, el roble y el rayo, presentes en monedas y estatuas."
+     ],
+     "q": "¿Por qué crees que tantas culturas imaginaron a su dios principal viviendo en el cielo?",
+     "c": "La próxima vez que veas nubes, inventa una frase corta que Zeus podría estar diciendo."
+    },
+    "fr": {
+     "t": "Zeus et le ciel",
+     "g": "Découvre le roi des dieux grecs, sa foudre et son rôle de gardien de l'ordre.",
+     "p": [
+      "Zeus régnait sur le ciel et le temps ; sa foudre lui fut offerte par les Cyclopes à l'œil unique.",
+      "Il protégeait hôtes et voyageurs : l'hospitalité était un devoir sacré en Grèce antique.",
+      "Ses symboles sont l'aigle, le chêne et la foudre, visibles sur pièces et statues."
+     ],
+     "q": "Pourquoi tant de cultures ont-elles imaginé leur dieu principal dans le ciel, selon toi ?",
+     "c": "La prochaine fois que tu vois des nuages, invente une courte phrase que Zeus pourrait dire."
+    },
+    "it": {
+     "t": "Zeus e il cielo",
+     "g": "Scopri il re degli dèi greci, il suo fulmine e il suo ruolo di custode dell'ordine.",
+     "p": [
+      "Zeus governava il cielo e il tempo; il fulmine glielo forgiarono i Ciclopi dall'occhio unico.",
+      "Proteggeva ospiti e viandanti: per questo l'ospitalità era un dovere sacro nell'antica Grecia.",
+      "I suoi simboli sono l'aquila, la quercia e il fulmine, presenti su monete e statue."
+     ],
+     "q": "Perché secondo te tante culture immaginavano il loro dio principale nel cielo?",
+     "c": "La prossima volta che vedi le nuvole, inventa una breve frase che Zeus potrebbe dire."
+    },
+    "pt": {
+     "t": "Zeus e o céu",
+     "g": "Descobre o rei dos deuses gregos, o seu raio e o seu papel de guardião da ordem.",
+     "p": [
+      "Zeus reinava sobre o céu e o tempo; o raio foi-lhe oferecido pelos ciclopes de um só olho.",
+      "Protegia hóspedes e viajantes, por isso a hospitalidade era um dever sagrado na Grécia antiga.",
+      "Os seus símbolos são a águia, o carvalho e o raio, presentes em moedas e estátuas."
+     ],
+     "q": "Porque achas que tantas culturas imaginaram o seu deus principal a viver no céu?",
+     "c": "Da próxima vez que vires nuvens, inventa uma frase curta que Zeus poderia estar a dizer."
+    },
+    "pt_BR": {
+     "t": "Zeus e o céu",
+     "g": "Descubra o rei dos deuses gregos, seu raio e seu papel de guardião da ordem.",
+     "p": [
+      "Zeus reinava sobre o céu e o clima; o raio foi um presente dos ciclopes de um olho só.",
+      "Ele protegia hóspedes e viajantes, por isso a hospitalidade era um dever sagrado na Grécia antiga.",
+      "Seus símbolos são a águia, o carvalho e o raio, presentes em moedas e estátuas."
+     ],
+     "q": "Por que você acha que tantas culturas imaginaram seu deus principal morando no céu?",
+     "c": "Na próxima vez que vir nuvens, invente uma frase curta que Zeus poderia estar dizendo."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Athena, goddess of wisdom",
+     "g": "Meet Athena, born from Zeus's head, patron of Athens, crafts and clever strategy.",
+     "p": [
+      "The myth says Athena sprang fully grown, in armour, from her father's head.",
+      "She guided weavers, potters and builders, and favoured clever plans over brute force.",
+      "Her owl became a symbol of wisdom that still appears on books, logos and coins."
+     ],
+     "q": "When you have a tricky problem, are you more of a careful planner or a quick improviser?",
+     "c": "Spot an owl image this week, on a book, a logo or a mug, and remember Athena."
+    },
+    "de": {
+     "t": "Athene, Göttin der Weisheit",
+     "g": "Lerne Athene kennen: aus dem Kopf des Zeus geboren, Schutzgöttin Athens, des Handwerks und kluger Strategie.",
+     "p": [
+      "Der Mythos erzählt, Athene sei erwachsen und in Rüstung aus dem Kopf ihres Vaters gesprungen.",
+      "Sie leitete Weberinnen, Töpfer und Baumeister und zog kluge Pläne roher Kraft vor.",
+      "Ihre Eule wurde zum Sinnbild der Weisheit und ziert bis heute Bücher, Logos und Münzen."
+     ],
+     "q": "Bist du bei kniffligen Problemen eher sorgfältige Planerin oder spontaner Improvisierer?",
+     "c": "Entdecke diese Woche ein Eulenbild, auf einem Buch, Logo oder Becher, und denk an Athene."
+    },
+    "es": {
+     "t": "Atenea, diosa de la sabiduría",
+     "g": "Conoce a Atenea, nacida de la cabeza de Zeus, protectora de Atenas, de los oficios y de la estrategia.",
+     "p": [
+      "El mito cuenta que Atenea salió ya adulta y con armadura de la cabeza de su padre.",
+      "Guiaba a tejedoras, alfareros y constructores, y prefería los planes astutos a la fuerza bruta.",
+      "Su lechuza se volvió símbolo de sabiduría y aún aparece en libros, logotipos y monedas."
+     ],
+     "q": "Ante un problema difícil, ¿eres más de planear con calma o de improvisar rápido?",
+     "c": "Busca esta semana una imagen de lechuza, en un libro, un logo o una taza, y recuerda a Atenea."
+    },
+    "fr": {
+     "t": "Athéna, déesse de la sagesse",
+     "g": "Rencontre Athéna, née de la tête de Zeus, protectrice d'Athènes, des artisans et de la stratégie.",
+     "p": [
+      "Le mythe raconte qu'Athéna jaillit adulte et en armure de la tête de son père.",
+      "Elle guidait tisserands, potiers et bâtisseurs, et préférait les plans habiles à la force brute.",
+      "Sa chouette est devenue un symbole de sagesse, encore présent sur livres, logos et pièces."
+     ],
+     "q": "Face à un problème difficile, es-tu plutôt du genre à planifier ou à improviser ?",
+     "c": "Repère cette semaine une chouette, sur un livre, un logo ou une tasse, et pense à Athéna."
+    },
+    "it": {
+     "t": "Atena, dea della saggezza",
+     "g": "Conosci Atena, nata dalla testa di Zeus, protettrice di Atene, delle arti e della strategia.",
+     "p": [
+      "Il mito narra che Atena balzò fuori adulta e armata dalla testa del padre.",
+      "Guidava tessitrici, vasai e costruttori, e preferiva i piani astuti alla forza bruta.",
+      "La sua civetta è diventata simbolo di saggezza e compare ancora su libri, loghi e monete."
+     ],
+     "q": "Davanti a un problema difficile, sei più tipo da piano accurato o da improvvisazione?",
+     "c": "Questa settimana cerca l'immagine di una civetta, su un libro, un logo o una tazza, e pensa ad Atena."
+    },
+    "pt": {
+     "t": "Atena, deusa da sabedoria",
+     "g": "Conhece Atena, nascida da cabeça de Zeus, protetora de Atenas, dos ofícios e da estratégia.",
+     "p": [
+      "O mito conta que Atena saltou adulta e de armadura da cabeça do pai.",
+      "Guiava tecelãs, oleiros e construtores, e preferia planos astutos à força bruta.",
+      "A sua coruja tornou-se símbolo da sabedoria e ainda aparece em livros, logótipos e moedas."
+     ],
+     "q": "Perante um problema difícil, és mais de planear com calma ou de improvisar depressa?",
+     "c": "Procura esta semana uma coruja, num livro, logótipo ou caneca, e lembra-te de Atena."
+    },
+    "pt_BR": {
+     "t": "Atena, deusa da sabedoria",
+     "g": "Conheça Atena, nascida da cabeça de Zeus, protetora de Atenas, dos ofícios e da estratégia.",
+     "p": [
+      "O mito conta que Atena saiu adulta e de armadura da cabeça do pai.",
+      "Ela guiava tecelãs, ceramistas e construtores, e preferia planos espertos à força bruta.",
+      "Sua coruja virou símbolo da sabedoria e ainda aparece em livros, logotipos e moedas."
+     ],
+     "q": "Diante de um problema difícil, você é mais de planejar com calma ou de improvisar rápido?",
+     "c": "Procure nesta semana uma coruja, num livro, logo ou caneca, e lembre-se de Atena."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Apollo and Artemis",
+     "g": "Meet the twin gods of music, light, archery and wild nature, born on the island of Delos.",
+     "p": [
+      "Apollo played the lyre and was linked to music, poetry, light and healing.",
+      "Artemis roamed forests with her bow, protecting wild animals and young people.",
+      "The twins are often tied to the sun and the moon, a beautiful pair of opposites."
+     ],
+     "q": "Do you feel closer to Apollo's music and light or to Artemis's forests and quiet nights?",
+     "c": "Tonight, look at the moon and think of one thing in nature you would like to protect."
+    },
+    "de": {
+     "t": "Apollon und Artemis",
+     "g": "Lerne die göttlichen Zwillinge kennen: Musik, Licht, Bogenschießen und wilde Natur, geboren auf Delos.",
+     "p": [
+      "Apollon spielte die Leier und stand für Musik, Dichtung, Licht und Heilung.",
+      "Artemis streifte mit ihrem Bogen durch Wälder und beschützte Wildtiere und junge Menschen.",
+      "Die Zwillinge werden oft mit Sonne und Mond verbunden, ein schönes Paar von Gegensätzen."
+     ],
+     "q": "Fühlst du dich Apollons Musik und Licht näher oder Artemis' Wäldern und stillen Nächten?",
+     "c": "Schau heute Abend zum Mond und überlege, was in der Natur du gern beschützen würdest."
+    },
+    "es": {
+     "t": "Apolo y Artemisa",
+     "g": "Conoce a los dioses gemelos de la música, la luz, el arco y la naturaleza salvaje, nacidos en Delos.",
+     "p": [
+      "Apolo tocaba la lira y estaba unido a la música, la poesía, la luz y la curación.",
+      "Artemisa recorría los bosques con su arco, protegiendo a los animales salvajes y a los jóvenes.",
+      "Los gemelos se asocian a menudo con el sol y la luna, una bella pareja de opuestos."
+     ],
+     "q": "¿Te sientes más cerca de la música y la luz de Apolo o de los bosques y noches de Artemisa?",
+     "c": "Esta noche mira la luna y piensa en algo de la naturaleza que te gustaría proteger."
+    },
+    "fr": {
+     "t": "Apollon et Artémis",
+     "g": "Rencontre les jumeaux divins de la musique, de la lumière, de l'arc et de la nature sauvage, nés à Délos.",
+     "p": [
+      "Apollon jouait de la lyre et veillait sur la musique, la poésie, la lumière et la guérison.",
+      "Artémis parcourait les forêts avec son arc, protégeant les animaux sauvages et les jeunes.",
+      "Les jumeaux sont souvent liés au soleil et à la lune, un beau couple de contraires."
+     ],
+     "q": "Te sens-tu plus proche de la musique d'Apollon ou des forêts et nuits calmes d'Artémis ?",
+     "c": "Ce soir, regarde la lune et pense à une chose de la nature que tu aimerais protéger."
+    },
+    "it": {
+     "t": "Apollo e Artemide",
+     "g": "Conosci i gemelli divini della musica, della luce, dell'arco e della natura selvaggia, nati a Delo.",
+     "p": [
+      "Apollo suonava la lira ed era legato a musica, poesia, luce e guarigione.",
+      "Artemide percorreva i boschi con l'arco, proteggendo gli animali selvatici e i giovani.",
+      "I gemelli sono spesso associati al sole e alla luna, una bella coppia di opposti."
+     ],
+     "q": "Ti senti più vicino alla musica e alla luce di Apollo o ai boschi e alle notti di Artemide?",
+     "c": "Stasera guarda la luna e pensa a qualcosa della natura che vorresti proteggere."
+    },
+    "pt": {
+     "t": "Apolo e Ártemis",
+     "g": "Conhece os deuses gémeos da música, da luz, do arco e da natureza selvagem, nascidos em Delos.",
+     "p": [
+      "Apolo tocava lira e estava ligado à música, à poesia, à luz e à cura.",
+      "Ártemis percorria as florestas com o seu arco, protegendo os animais selvagens e os jovens.",
+      "Os gémeos associam-se muitas vezes ao sol e à lua, um belo par de opostos."
+     ],
+     "q": "Sentes-te mais perto da música e da luz de Apolo ou das florestas e noites de Ártemis?",
+     "c": "Esta noite olha para a lua e pensa numa coisa da natureza que gostarias de proteger."
+    },
+    "pt_BR": {
+     "t": "Apolo e Ártemis",
+     "g": "Conheça os deuses gêmeos da música, da luz, do arco e da natureza selvagem, nascidos em Delos.",
+     "p": [
+      "Apolo tocava lira e estava ligado à música, à poesia, à luz e à cura.",
+      "Ártemis percorria as florestas com seu arco, protegendo os animais selvagens e os jovens.",
+      "Os gêmeos costumam ser associados ao sol e à lua, um belo par de opostos."
+     ],
+     "q": "Você se sente mais perto da música e da luz de Apolo ou das florestas e noites de Ártemis?",
+     "c": "Hoje à noite, olhe para a lua e pense em algo da natureza que você gostaria de proteger."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hermes the messenger",
+     "g": "Meet Hermes, the quick-witted god with winged sandals who carried messages and guided travellers.",
+     "p": [
+      "On his very first day, baby Hermes invented the lyre from a tortoise shell and played a prank on Apollo.",
+      "He was the messenger of the gods and the friend of travellers, traders and storytellers.",
+      "His winged sandals and staff still appear as symbols of speed, post and communication."
+     ],
+     "q": "What is the cleverest message or surprise you have ever sent to someone?",
+     "c": "Write a three-sentence message as if you were Hermes delivering news from Olympus."
+    },
+    "de": {
+     "t": "Hermes, der Götterbote",
+     "g": "Lerne Hermes kennen, den flinken Gott mit Flügelschuhen, der Botschaften trug und Reisende leitete.",
+     "p": [
+      "Schon an seinem ersten Tag baute Baby Hermes aus einem Schildkrötenpanzer eine Leier und foppte Apollon.",
+      "Er war Bote der Götter und Freund der Reisenden, Händler und Geschichtenerzähler.",
+      "Flügelschuhe und Heroldsstab stehen bis heute für Tempo, Post und Kommunikation."
+     ],
+     "q": "Was ist die cleverste Nachricht oder Überraschung, die du je jemandem geschickt hast?",
+     "c": "Schreib eine Botschaft in drei Sätzen, als wärst du Hermes mit Neuigkeiten vom Olymp."
+    },
+    "es": {
+     "t": "Hermes, el mensajero",
+     "g": "Conoce a Hermes, el ingenioso dios de las sandalias aladas que llevaba mensajes y guiaba a los viajeros.",
+     "p": [
+      "En su primer día, el pequeño Hermes inventó la lira con un caparazón de tortuga y le gastó una broma a Apolo.",
+      "Era el mensajero de los dioses y amigo de viajeros, comerciantes y narradores.",
+      "Sus sandalias aladas y su bastón siguen siendo símbolos de rapidez, correo y comunicación."
+     ],
+     "q": "¿Cuál es el mensaje o la sorpresa más ingeniosa que has enviado a alguien?",
+     "c": "Escribe un mensaje de tres frases como si fueras Hermes trayendo noticias del Olimpo."
+    },
+    "fr": {
+     "t": "Hermès le messager",
+     "g": "Rencontre Hermès, le dieu malin aux sandales ailées qui portait les messages et guidait les voyageurs.",
+     "p": [
+      "Dès son premier jour, le petit Hermès inventa la lyre avec une carapace de tortue et joua un tour à Apollon.",
+      "Il était le messager des dieux et l'ami des voyageurs, des marchands et des conteurs.",
+      "Ses sandales ailées et son bâton symbolisent encore la vitesse, la poste et la communication."
+     ],
+     "q": "Quel est le message ou la surprise la plus astucieuse que tu aies envoyée à quelqu'un ?",
+     "c": "Écris un message de trois phrases comme si tu étais Hermès apportant des nouvelles de l'Olympe."
+    },
+    "it": {
+     "t": "Ermes il messaggero",
+     "g": "Conosci Ermes, il dio arguto dai sandali alati che portava messaggi e guidava i viaggiatori.",
+     "p": [
+      "Nel suo primo giorno, il piccolo Ermes inventò la lira con un guscio di tartaruga e fece uno scherzo ad Apollo.",
+      "Era il messaggero degli dèi e l'amico di viaggiatori, mercanti e narratori.",
+      "I suoi sandali alati e il bastone sono ancora simboli di velocità, posta e comunicazione."
+     ],
+     "q": "Qual è il messaggio o la sorpresa più ingegnosa che tu abbia mai mandato a qualcuno?",
+     "c": "Scrivi un messaggio di tre frasi come se fossi Ermes con notizie dall'Olimpo."
+    },
+    "pt": {
+     "t": "Hermes, o mensageiro",
+     "g": "Conhece Hermes, o deus engenhoso das sandálias aladas que levava mensagens e guiava os viajantes.",
+     "p": [
+      "No primeiro dia de vida, o pequeno Hermes inventou a lira com uma carapaça de tartaruga e pregou uma partida a Apolo.",
+      "Era o mensageiro dos deuses e amigo de viajantes, comerciantes e contadores de histórias.",
+      "As sandálias aladas e o bastão continuam a ser símbolos de rapidez, correio e comunicação."
+     ],
+     "q": "Qual foi a mensagem ou surpresa mais engenhosa que já enviaste a alguém?",
+     "c": "Escreve uma mensagem de três frases como se fosses Hermes a trazer notícias do Olimpo."
+    },
+    "pt_BR": {
+     "t": "Hermes, o mensageiro",
+     "g": "Conheça Hermes, o deus esperto das sandálias aladas que levava mensagens e guiava os viajantes.",
+     "p": [
+      "No primeiro dia de vida, o bebê Hermes inventou a lira com um casco de tartaruga e pregou uma peça em Apolo.",
+      "Ele era o mensageiro dos deuses e amigo de viajantes, comerciantes e contadores de histórias.",
+      "As sandálias aladas e o bastão ainda são símbolos de rapidez, correio e comunicação."
+     ],
+     "q": "Qual foi a mensagem ou surpresa mais criativa que você já mandou para alguém?",
+     "c": "Escreva uma mensagem de três frases como se você fosse Hermes trazendo notícias do Olimpo."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Poseidon and the seas",
+     "g": "Meet the god of oceans and horses and hear about his famous contest with Athena for Athens.",
+     "p": [
+      "Poseidon ruled the seas with his trident and could stir waves or calm them.",
+      "He was also the lord of horses, which the Greeks pictured racing like ocean waves.",
+      "For Athens, he offered a salty spring and Athena an olive tree; the city chose the olive."
+     ],
+     "q": "Which gift would you have chosen for your city: water from the sea or the olive tree, and why?",
+     "c": "Imagine a gift you would give your own town as a god, and describe it in one sentence."
+    },
+    "de": {
+     "t": "Poseidon und die Meere",
+     "g": "Lerne den Gott der Meere und Pferde kennen und seinen berühmten Wettstreit mit Athene um Athen.",
+     "p": [
+      "Poseidon herrschte mit seinem Dreizack über die Meere und konnte Wellen wecken oder glätten.",
+      "Er war auch Herr der Pferde, die sich die Griechen wie galoppierende Wellen vorstellten.",
+      "Für Athen schuf er eine Salzquelle, Athene einen Ölbaum; die Stadt wählte den Ölbaum."
+     ],
+     "q": "Welches Geschenk hättest du für deine Stadt gewählt, die Salzquelle oder den Ölbaum, und warum?",
+     "c": "Stell dir vor, du schenkst als Gottheit deiner Stadt etwas. Beschreib es in einem Satz."
+    },
+    "es": {
+     "t": "Poseidón y los mares",
+     "g": "Conoce al dios de los océanos y los caballos y su famosa competición con Atenea por Atenas.",
+     "p": [
+      "Poseidón gobernaba los mares con su tridente y podía levantar olas o calmarlas.",
+      "También era señor de los caballos, que los griegos imaginaban corriendo como olas.",
+      "Para Atenas, él ofreció una fuente salada y Atenea un olivo; la ciudad eligió el olivo."
+     ],
+     "q": "¿Qué regalo habrías elegido para tu ciudad, la fuente salada o el olivo, y por qué?",
+     "c": "Imagina un regalo que darías a tu ciudad si fueras un dios y descríbelo en una frase."
+    },
+    "fr": {
+     "t": "Poséidon et les mers",
+     "g": "Rencontre le dieu des océans et des chevaux et son célèbre concours avec Athéna pour Athènes.",
+     "p": [
+      "Poséidon régnait sur les mers avec son trident et pouvait soulever les vagues ou les apaiser.",
+      "Il était aussi le maître des chevaux, que les Grecs imaginaient galopant comme des vagues.",
+      "Pour Athènes, il offrit une source salée et Athéna un olivier ; la ville choisit l'olivier."
+     ],
+     "q": "Quel cadeau aurais-tu choisi pour ta ville, la source salée ou l'olivier, et pourquoi ?",
+     "c": "Imagine le cadeau que tu ferais à ta ville si tu étais un dieu, et décris-le en une phrase."
+    },
+    "it": {
+     "t": "Poseidone e i mari",
+     "g": "Conosci il dio degli oceani e dei cavalli e la sua famosa gara con Atena per Atene.",
+     "p": [
+      "Poseidone governava i mari con il tridente e poteva sollevare le onde o calmarle.",
+      "Era anche signore dei cavalli, che i Greci immaginavano correre come onde.",
+      "Per Atene lui offrì una sorgente salata e Atena un ulivo; la città scelse l'ulivo."
+     ],
+     "q": "Quale dono avresti scelto per la tua città, la sorgente salata o l'ulivo, e perché?",
+     "c": "Immagina un dono che faresti alla tua città se fossi un dio e descrivilo in una frase."
+    },
+    "pt": {
+     "t": "Poseidon e os mares",
+     "g": "Conhece o deus dos oceanos e dos cavalos e a sua famosa disputa com Atena por Atenas.",
+     "p": [
+      "Poseidon reinava sobre os mares com o tridente e podia agitar ou acalmar as ondas.",
+      "Era também senhor dos cavalos, que os gregos imaginavam a galopar como ondas.",
+      "Para Atenas, ofereceu uma fonte salgada e Atena uma oliveira; a cidade escolheu a oliveira."
+     ],
+     "q": "Que presente terias escolhido para a tua cidade, a fonte salgada ou a oliveira, e porquê?",
+     "c": "Imagina um presente que darias à tua cidade se fosses um deus e descreve-o numa frase."
+    },
+    "pt_BR": {
+     "t": "Poseidon e os mares",
+     "g": "Conheça o deus dos oceanos e dos cavalos e sua famosa disputa com Atena por Atenas.",
+     "p": [
+      "Poseidon reinava sobre os mares com o tridente e podia agitar ou acalmar as ondas.",
+      "Ele também era senhor dos cavalos, que os gregos imaginavam galopando como ondas.",
+      "Para Atenas, ele ofereceu uma fonte salgada e Atena uma oliveira; a cidade escolheu a oliveira."
+     ],
+     "q": "Que presente você teria escolhido para sua cidade, a fonte salgada ou a oliveira, e por quê?",
+     "c": "Imagine um presente que você daria à sua cidade se fosse um deus e descreva em uma frase."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Demeter and the seasons",
+     "g": "See how the Greeks explained winter and spring through a mother missing her daughter Persephone.",
+     "p": [
+      "Demeter was the goddess of grain and harvest, who made the fields grow green.",
+      "When her daughter Persephone went to live part of the year in a faraway realm, Demeter grew sad and the land rested.",
+      "When Persephone returned each spring, Demeter rejoiced and flowers bloomed again."
+     ],
+     "q": "Which season do you love most, and what story would you tell to explain it?",
+     "c": "Find one sign of the current season outside today and describe it like a storyteller."
+    },
+    "de": {
+     "t": "Demeter und die Jahreszeiten",
+     "g": "Sieh, wie die Griechen Winter und Frühling durch eine Mutter erklärten, die ihre Tochter Persephone vermisst.",
+     "p": [
+      "Demeter war die Göttin des Getreides und der Ernte, die die Felder ergrünen ließ.",
+      "Als Persephone einen Teil des Jahres in einem fernen Reich lebte, trauerte Demeter und das Land ruhte.",
+      "Kehrte Persephone im Frühling zurück, freute sich Demeter und die Blumen blühten wieder."
+     ],
+     "q": "Welche Jahreszeit liebst du am meisten, und welche Geschichte würdest du dazu erzählen?",
+     "c": "Finde heute draußen ein Zeichen der Jahreszeit und beschreibe es wie ein Geschichtenerzähler."
+    },
+    "es": {
+     "t": "Deméter y las estaciones",
+     "g": "Descubre cómo los griegos explicaban el invierno y la primavera con una madre que echa de menos a su hija Perséfone.",
+     "p": [
+      "Deméter era la diosa del grano y la cosecha, que hacía reverdecer los campos.",
+      "Cuando Perséfone se fue a vivir parte del año a un reino lejano, Deméter se entristeció y la tierra descansó.",
+      "Cuando Perséfone volvía cada primavera, Deméter se alegraba y las flores brotaban de nuevo."
+     ],
+     "q": "¿Qué estación te gusta más y qué historia contarías para explicarla?",
+     "c": "Busca hoy fuera una señal de la estación actual y descríbela como un narrador."
+    },
+    "fr": {
+     "t": "Déméter et les saisons",
+     "g": "Vois comment les Grecs expliquaient l'hiver et le printemps par une mère à qui sa fille Perséphone manque.",
+     "p": [
+      "Déméter était la déesse du blé et des moissons, qui faisait verdir les champs.",
+      "Quand Perséphone partit vivre une partie de l'année dans un royaume lointain, Déméter s'attrista et la terre se reposa.",
+      "Quand Perséphone revenait au printemps, Déméter se réjouissait et les fleurs refleurissaient."
+     ],
+     "q": "Quelle saison préfères-tu, et quelle histoire raconterais-tu pour l'expliquer ?",
+     "c": "Trouve dehors aujourd'hui un signe de la saison et décris-le comme un conteur."
+    },
+    "it": {
+     "t": "Demetra e le stagioni",
+     "g": "Scopri come i Greci spiegavano inverno e primavera con una madre a cui manca la figlia Persefone.",
+     "p": [
+      "Demetra era la dea del grano e del raccolto, che faceva rinverdire i campi.",
+      "Quando Persefone andò a vivere parte dell'anno in un regno lontano, Demetra si rattristò e la terra riposò.",
+      "Quando Persefone tornava in primavera, Demetra gioiva e i fiori sbocciavano di nuovo."
+     ],
+     "q": "Qual è la stagione che ami di più e quale storia racconteresti per spiegarla?",
+     "c": "Oggi trova all'aperto un segno della stagione e descrivilo come un cantastorie."
+    },
+    "pt": {
+     "t": "Deméter e as estações",
+     "g": "Vê como os gregos explicavam o inverno e a primavera com uma mãe que sente a falta da filha Perséfone.",
+     "p": [
+      "Deméter era a deusa dos cereais e das colheitas, que fazia os campos reverdecer.",
+      "Quando Perséfone foi viver parte do ano num reino distante, Deméter entristeceu e a terra descansou.",
+      "Quando Perséfone regressava na primavera, Deméter alegrava-se e as flores voltavam a desabrochar."
+     ],
+     "q": "Qual é a estação de que mais gostas, e que história contarias para a explicar?",
+     "c": "Encontra hoje lá fora um sinal da estação e descreve-o como um contador de histórias."
+    },
+    "pt_BR": {
+     "t": "Deméter e as estações",
+     "g": "Veja como os gregos explicavam o inverno e a primavera com uma mãe que sente falta da filha Perséfone.",
+     "p": [
+      "Deméter era a deusa dos grãos e da colheita, que fazia os campos ficarem verdes.",
+      "Quando Perséfone foi morar parte do ano num reino distante, Deméter ficou triste e a terra descansou.",
+      "Quando Perséfone voltava na primavera, Deméter se alegrava e as flores desabrochavam de novo."
+     ],
+     "q": "Qual é a sua estação favorita, e que história você contaria para explicá-la?",
+     "c": "Encontre hoje lá fora um sinal da estação e descreva-o como um contador de histórias."
+    }
+   }
+  }
+ ]
+}

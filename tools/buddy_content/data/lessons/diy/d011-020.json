@@ -1,0 +1,835 @@
+{
+ "topic": "diy",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The tape measure decoded",
+     "g": "Read markings, hook the end and measure inside and outside spaces with confidence.",
+     "p": [
+      "Learn the big numbers, the small ticks and the half and quarter marks.",
+      "The metal hook slides slightly to account for its own thickness.",
+      "For inside measurements, add the case length printed on the tape body."
+     ],
+     "q": "What was the last thing you measured at home, and how did it go?",
+     "c": "Measure a door, a table and a window and write the sizes down."
+    },
+    "de": {
+     "t": "Das Maßband entschlüsselt",
+     "g": "Lies Markierungen, hake das Ende ein und miss innen und außen sicher.",
+     "p": [
+      "Lerne die großen Zahlen, die kleinen Striche und die Halbierungsmarken.",
+      "Der Metallhaken verschiebt sich leicht und gleicht so seine eigene Dicke aus.",
+      "Bei Innenmaßen addierst du die auf dem Gehäuse aufgedruckte Länge."
+     ],
+     "q": "Was hast du zuletzt zu Hause gemessen, und wie lief es?",
+     "c": "Miss eine Tür, einen Tisch und ein Fenster und schreibe die Maße auf."
+    },
+    "es": {
+     "t": "El metro, descifrado",
+     "g": "Lee las marcas, engancha el extremo y mide interiores y exteriores con seguridad.",
+     "p": [
+      "Aprende los números grandes, las rayitas pequeñas y las marcas de mitad y cuarto.",
+      "El gancho metálico se desliza un poco para compensar su propio grosor.",
+      "En medidas interiores, suma la longitud de la carcasa impresa en el metro."
+     ],
+     "q": "¿Qué fue lo último que mediste en casa y cómo te fue?",
+     "c": "Mide una puerta, una mesa y una ventana y anota las medidas."
+    },
+    "fr": {
+     "t": "Le mètre ruban décodé",
+     "g": "Lis les graduations, accroche l'extrémité et mesure l'intérieur et l'extérieur en confiance.",
+     "p": [
+      "Repère les grands chiffres, les petits traits et les repères de demi et de quart.",
+      "Le crochet métallique coulisse un peu pour compenser sa propre épaisseur.",
+      "Pour une mesure intérieure, ajoute la longueur du boîtier indiquée dessus."
+     ],
+     "q": "Qu'as-tu mesuré en dernier chez toi, et comment ça s'est passé ?",
+     "c": "Mesure une porte, une table et une fenêtre et note les dimensions."
+    },
+    "it": {
+     "t": "Il metro a nastro decifrato",
+     "g": "Leggi le tacche, aggancia l'estremità e misura interni ed esterni con sicurezza.",
+     "p": [
+      "Impara i numeri grandi, le tacche piccole e quelle di metà e quarto.",
+      "Il gancio metallico scorre un poco per compensare il proprio spessore.",
+      "Per le misure interne, aggiungi la lunghezza della custodia stampata sul metro."
+     ],
+     "q": "Cosa hai misurato per ultimo in casa e com'è andata?",
+     "c": "Misura una porta, un tavolo e una finestra e annota le misure."
+    },
+    "pt": {
+     "t": "A fita métrica decifrada",
+     "g": "Lê as marcas, prende a ponta e mede interiores e exteriores com confiança.",
+     "p": [
+      "Aprende os números grandes, os traços pequenos e as marcas de metade e quarto.",
+      "O gancho metálico desliza um pouco para compensar a sua espessura.",
+      "Em medidas interiores, soma o comprimento da caixa impresso na fita."
+     ],
+     "q": "O que mediste por último em casa e como correu?",
+     "c": "Mede uma porta, uma mesa e uma janela e anota as medidas."
+    },
+    "pt_BR": {
+     "t": "A trena decifrada",
+     "g": "Leia as marcações, encaixe a ponta e meça espaços internos e externos com confiança.",
+     "p": [
+      "Aprenda os números grandes, os tracinhos e as marcas de metade e quarto.",
+      "O gancho de metal desliza um pouco para compensar a própria espessura.",
+      "Em medidas internas, some o comprimento da caixa impresso na trena."
+     ],
+     "q": "O que você mediu por último em casa e como foi?",
+     "c": "Meça uma porta, uma mesa e uma janela e anote as medidas."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Measure twice, cut once",
+     "g": "See why careful measuring and marking saves materials and frustration.",
+     "p": [
+      "Write each measurement down instead of trusting your memory.",
+      "Mark with a sharp pencil and a clear cross, then cut on the waste side.",
+      "Use the same tape for every measurement of one project."
+     ],
+     "q": "Have you ever cut something too short? What did you learn?",
+     "c": "Measure a piece of scrap twice, mark it, and check both numbers match."
+    },
+    "de": {
+     "t": "Zweimal messen, einmal schneiden",
+     "g": "Sieh, warum sorgfältiges Messen und Anzeichnen Material und Nerven spart.",
+     "p": [
+      "Schreibe jedes Maß auf, statt dich auf dein Gedächtnis zu verlassen.",
+      "Zeichne mit spitzem Bleistift ein klares Kreuz an und säge auf der Abfallseite.",
+      "Nimm für ein ganzes Projekt immer dasselbe Maßband."
+     ],
+     "q": "Hast du schon mal etwas zu kurz geschnitten? Was hast du gelernt?",
+     "c": "Miss ein Reststück zweimal, zeichne es an und prüfe, ob beide Maße stimmen."
+    },
+    "es": {
+     "t": "Mide dos veces, corta una",
+     "g": "Descubre por qué medir y marcar con cuidado ahorra material y disgustos.",
+     "p": [
+      "Anota cada medida en vez de fiarte de tu memoria.",
+      "Marca con lápiz afilado y una cruz clara, y corta por el lado del desecho.",
+      "Usa el mismo metro para todas las medidas de un proyecto."
+     ],
+     "q": "¿Alguna vez cortaste algo demasiado corto? ¿Qué aprendiste?",
+     "c": "Mide dos veces un trozo sobrante, márcalo y comprueba que coinciden."
+    },
+    "fr": {
+     "t": "Mesurer deux fois, couper une fois",
+     "g": "Vois pourquoi mesurer et tracer avec soin évite gaspillage et frustration.",
+     "p": [
+      "Note chaque mesure au lieu de te fier à ta mémoire.",
+      "Trace avec un crayon bien taillé et une croix nette, puis coupe côté chute.",
+      "Utilise le même mètre pour toutes les mesures d'un projet."
+     ],
+     "q": "As-tu déjà coupé quelque chose trop court ? Qu'en as-tu appris ?",
+     "c": "Mesure deux fois une chute, trace-la et vérifie que les deux valeurs concordent."
+    },
+    "it": {
+     "t": "Misura due volte, taglia una",
+     "g": "Scopri perché misurare e segnare con cura fa risparmiare materiale e fatica.",
+     "p": [
+      "Scrivi ogni misura invece di fidarti della memoria.",
+      "Segna con matita appuntita e una croce chiara, poi taglia dal lato dello scarto.",
+      "Usa lo stesso metro per tutte le misure di un progetto."
+     ],
+     "q": "Ti è mai capitato di tagliare qualcosa troppo corto? Cosa hai imparato?",
+     "c": "Misura due volte un pezzo di scarto, segnalo e controlla che le misure coincidano."
+    },
+    "pt": {
+     "t": "Mede duas vezes, corta uma",
+     "g": "Vê porque medir e marcar com cuidado poupa material e frustração.",
+     "p": [
+      "Anota cada medida em vez de confiar na memória.",
+      "Marca com lápis afiado e uma cruz clara e corta pelo lado da sobra.",
+      "Usa a mesma fita para todas as medidas de um projeto."
+     ],
+     "q": "Já cortaste algo demasiado curto? O que aprendeste?",
+     "c": "Mede duas vezes uma sobra, marca-a e confirma que as medidas coincidem."
+    },
+    "pt_BR": {
+     "t": "Meça duas vezes, corte uma",
+     "g": "Veja por que medir e marcar com cuidado poupa material e dor de cabeça.",
+     "p": [
+      "Anote cada medida em vez de confiar na memória.",
+      "Marque com lápis apontado e uma cruz clara e corte pelo lado da sobra.",
+      "Use a mesma trena em todas as medidas de um projeto."
+     ],
+     "q": "Você já cortou algo curto demais? O que aprendeu?",
+     "c": "Meça duas vezes uma sobra, marque e confira se as medidas batem."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Using a spirit level",
+     "g": "Check level and plumb so shelves and frames sit straight.",
+     "p": [
+      "Level means flat across; plumb means straight up and down.",
+      "Centre the bubble between the two lines to confirm a true reading.",
+      "Check a level by flipping it end to end on a surface."
+     ],
+     "q": "What in your home looks slightly crooked to you?",
+     "c": "Test a shelf or windowsill with a level and note where the bubble sits."
+    },
+    "de": {
+     "t": "Die Wasserwaage benutzen",
+     "g": "Prüfe waagerecht und senkrecht, damit Regale und Rahmen gerade hängen.",
+     "p": [
+      "Waagerecht heißt eben; senkrecht heißt genau lotrecht.",
+      "Die Luftblase zwischen den beiden Strichen zeigt eine exakte Lage an.",
+      "Prüfe die Wasserwaage, indem du sie auf einer Fläche umdrehst."
+     ],
+     "q": "Was in deinem Zuhause wirkt auf dich leicht schief?",
+     "c": "Teste ein Regal oder eine Fensterbank mit der Wasserwaage und notiere die Blase."
+    },
+    "es": {
+     "t": "Usar un nivel de burbuja",
+     "g": "Comprueba nivel y plomada para que estantes y marcos queden rectos.",
+     "p": [
+      "Nivelado es plano en horizontal; a plomo es recto en vertical.",
+      "Centra la burbuja entre las dos líneas para una lectura correcta.",
+      "Comprueba tu nivel girándolo de extremo a extremo sobre una superficie."
+     ],
+     "q": "¿Qué cosa de tu casa te parece algo torcida?",
+     "c": "Prueba un estante o una repisa con el nivel y fíjate dónde queda la burbuja."
+    },
+    "fr": {
+     "t": "Utiliser un niveau à bulle",
+     "g": "Vérifie l'horizontale et la verticale pour des étagères et cadres bien droits.",
+     "p": [
+      "Le niveau, c'est l'horizontale ; l'aplomb, c'est la verticale.",
+      "Centre la bulle entre les deux repères pour une lecture juste.",
+      "Vérifie ton niveau en le retournant bout à bout sur une surface."
+     ],
+     "q": "Qu'est-ce qui te semble un peu de travers chez toi ?",
+     "c": "Teste une étagère ou un rebord de fenêtre au niveau et note où se place la bulle."
+    },
+    "it": {
+     "t": "Usare la livella",
+     "g": "Controlla orizzontale e verticale per mensole e cornici ben dritte.",
+     "p": [
+      "Livello significa piano in orizzontale; piombo significa dritto in verticale.",
+      "Centra la bolla tra le due linee per una lettura corretta.",
+      "Controlla la livella girandola da un capo all'altro su una superficie."
+     ],
+     "q": "Cosa ti sembra un po' storto in casa tua?",
+     "c": "Prova una mensola o un davanzale con la livella e nota dove sta la bolla."
+    },
+    "pt": {
+     "t": "Usar um nível de bolha",
+     "g": "Verifica a horizontal e a vertical para prateleiras e molduras direitas.",
+     "p": [
+      "Nível é plano na horizontal; prumo é reto na vertical.",
+      "Centra a bolha entre as duas linhas para uma leitura certa.",
+      "Testa o nível virando-o de ponta a ponta numa superfície."
+     ],
+     "q": "O que em tua casa te parece um pouco torto?",
+     "c": "Testa uma prateleira ou um peitoril com o nível e vê onde fica a bolha."
+    },
+    "pt_BR": {
+     "t": "Usando o nível de bolha",
+     "g": "Confira nível e prumo para prateleiras e quadros ficarem retos.",
+     "p": [
+      "Nível é plano na horizontal; prumo é reto na vertical.",
+      "Centralize a bolha entre as duas linhas para uma leitura correta.",
+      "Teste o nível virando-o de ponta a ponta numa superfície."
+     ],
+     "q": "O que na sua casa parece um pouco torto para você?",
+     "c": "Teste uma prateleira ou um parapeito com o nível e veja onde fica a bolha."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Introduction to cordless drills",
+     "g": "Get to know the parts of a drill, its battery and clutch before you use it.",
+     "p": [
+      "The chuck holds the bit; tighten it by hand or key until firm.",
+      "The clutch ring sets how much force drives a screw before it slips.",
+      "Charge batteries as directed and never leave a drill live while changing bits."
+     ],
+     "q": "Have you used a drill before, or would this be your first time?",
+     "c": "Identify the chuck, trigger, clutch ring and direction switch on a drill."
+    },
+    "de": {
+     "t": "Einführung in den Akkuschrauber",
+     "g": "Lerne Bauteile, Akku und Drehmomentkupplung kennen, bevor du loslegst.",
+     "p": [
+      "Das Bohrfutter hält den Bit; ziehe es von Hand oder mit Schlüssel fest an.",
+      "Der Kupplungsring bestimmt, wie viel Kraft eine Schraube bekommt, bevor es rutscht.",
+      "Lade Akkus nach Anleitung und wechsle Bits nie bei eingeschaltetem Gerät."
+     ],
+     "q": "Hast du schon mit einer Bohrmaschine gearbeitet, oder wäre es das erste Mal?",
+     "c": "Finde an einem Akkuschrauber Futter, Schalter, Kupplungsring und Drehrichtungsumschalter."
+    },
+    "es": {
+     "t": "Introducción al taladro a batería",
+     "g": "Conoce las partes del taladro, la batería y el embrague antes de usarlo.",
+     "p": [
+      "El portabrocas sujeta la broca; apriétalo a mano o con llave hasta que quede firme.",
+      "El anillo de embrague fija cuánta fuerza recibe un tornillo antes de patinar.",
+      "Carga las baterías según las instrucciones y no cambies brocas con el taladro conectado."
+     ],
+     "q": "¿Has usado un taladro antes o sería tu primera vez?",
+     "c": "Identifica en un taladro el portabrocas, el gatillo, el embrague y el selector de giro."
+    },
+    "fr": {
+     "t": "Découvrir la perceuse sans fil",
+     "g": "Apprends les parties de la perceuse, sa batterie et son embrayage avant de l'utiliser.",
+     "p": [
+      "Le mandrin tient l'embout ; serre-le à la main ou à la clé jusqu'à ce qu'il soit ferme.",
+      "La bague d'embrayage règle la force appliquée à la vis avant de patiner.",
+      "Charge les batteries selon la notice et ne change jamais d'embout machine active."
+     ],
+     "q": "As-tu déjà utilisé une perceuse, ou serait-ce une première ?",
+     "c": "Repère sur une perceuse le mandrin, la gâchette, la bague d'embrayage et l'inverseur."
+    },
+    "it": {
+     "t": "Introduzione al trapano a batteria",
+     "g": "Conosci le parti del trapano, la batteria e la frizione prima di usarlo.",
+     "p": [
+      "Il mandrino tiene la punta; stringilo a mano o con chiave finché è saldo.",
+      "L'anello della frizione regola la forza sulla vite prima che slitti.",
+      "Carica le batterie come indicato e non cambiare punta con il trapano attivo."
+     ],
+     "q": "Hai già usato un trapano o sarebbe la prima volta?",
+     "c": "Individua su un trapano mandrino, grilletto, anello frizione e inversione di marcia."
+    },
+    "pt": {
+     "t": "Introdução ao berbequim sem fios",
+     "g": "Conhece as partes do berbequim, a bateria e a embraiagem antes de o usar.",
+     "p": [
+      "A bucha segura a broca; aperta-a à mão ou com chave até ficar firme.",
+      "O anel de embraiagem define a força aplicada ao parafuso antes de deslizar.",
+      "Carrega as baterias conforme as instruções e não mudes de broca com a máquina ligada."
+     ],
+     "q": "Já usaste um berbequim ou seria a tua primeira vez?",
+     "c": "Identifica num berbequim a bucha, o gatilho, o anel de embraiagem e o inversor."
+    },
+    "pt_BR": {
+     "t": "Introdução à furadeira sem fio",
+     "g": "Conheça as partes da furadeira, a bateria e a embreagem antes de usar.",
+     "p": [
+      "O mandril segura a broca; aperte-o à mão ou com chave até firmar.",
+      "O anel de embreagem define a força no parafuso antes de ele deslizar.",
+      "Carregue as baterias conforme o manual e não troque a broca com a máquina ligada."
+     ],
+     "q": "Você já usou uma furadeira ou seria a primeira vez?",
+     "c": "Identifique numa furadeira o mandril, o gatilho, o anel de embreagem e o inversor."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing drill bits",
+     "g": "Tell wood, masonry and metal bits apart and pick the right one.",
+     "p": [
+      "Wood bits often have a sharp centre point; masonry bits have a flat carbide tip.",
+      "Metal bits are usually shiny or dark and have a gentle angled tip.",
+      "The wrong bit burns, wanders or fails, so match bit to material."
+     ],
+     "q": "Which materials at home might you need to drill into?",
+     "c": "Sort any bits you have into wood, masonry and metal piles."
+    },
+    "de": {
+     "t": "Bohrer auswählen",
+     "g": "Unterscheide Holz-, Stein- und Metallbohrer und wähle den richtigen.",
+     "p": [
+      "Holzbohrer haben oft eine scharfe Zentrierspitze; Steinbohrer eine flache Hartmetallspitze.",
+      "Metallbohrer sind meist glänzend oder dunkel mit sanft geneigter Spitze.",
+      "Der falsche Bohrer verbrennt, wandert oder versagt, also passe ihn dem Material an."
+     ],
+     "q": "In welche Materialien zu Hause müsstest du vielleicht bohren?",
+     "c": "Sortiere vorhandene Bohrer in Holz-, Stein- und Metallstapel."
+    },
+    "es": {
+     "t": "Elegir brocas",
+     "g": "Distingue las brocas para madera, pared y metal y elige la correcta.",
+     "p": [
+      "Las de madera suelen tener punta central afilada; las de pared, punta plana de widia.",
+      "Las de metal suelen ser brillantes u oscuras y de punta suavemente inclinada.",
+      "Una broca equivocada se quema, se desvía o falla: adáptala al material."
+     ],
+     "q": "¿En qué materiales de casa podrías necesitar taladrar?",
+     "c": "Clasifica las brocas que tengas en montones de madera, pared y metal."
+    },
+    "fr": {
+     "t": "Choisir ses forets",
+     "g": "Distingue les forets à bois, à béton et à métal et choisis le bon.",
+     "p": [
+      "Les forets à bois ont souvent une pointe de centrage ; ceux à béton, une plaquette carbure plate.",
+      "Les forets à métal sont brillants ou sombres, à pointe légèrement inclinée.",
+      "Un mauvais foret chauffe, dévie ou casse : adapte-le au matériau."
+     ],
+     "q": "Dans quels matériaux chez toi pourrais-tu devoir percer ?",
+     "c": "Trie tes forets en trois tas : bois, béton et métal."
+    },
+    "it": {
+     "t": "Scegliere le punte",
+     "g": "Distingui le punte per legno, muro e metallo e scegli quella giusta.",
+     "p": [
+      "Quelle per legno hanno spesso una punta centrale; quelle per muro una punta piatta in widia.",
+      "Quelle per metallo sono lucide o scure con punta dolcemente inclinata.",
+      "La punta sbagliata brucia, devia o si rovina: abbinala al materiale."
+     ],
+     "q": "In quali materiali di casa potresti dover forare?",
+     "c": "Dividi le punte che hai in tre mucchi: legno, muro e metallo."
+    },
+    "pt": {
+     "t": "Escolher brocas",
+     "g": "Distingue brocas para madeira, alvenaria e metal e escolhe a certa.",
+     "p": [
+      "As de madeira têm muitas vezes ponta central afiada; as de alvenaria, ponta plana de vídia.",
+      "As de metal costumam ser brilhantes ou escuras, com ponta ligeiramente inclinada.",
+      "A broca errada queima, desvia ou parte: ajusta-a ao material."
+     ],
+     "q": "Em que materiais de casa podes ter de furar?",
+     "c": "Separa as brocas que tens em montes de madeira, alvenaria e metal."
+    },
+    "pt_BR": {
+     "t": "Escolhendo brocas",
+     "g": "Diferencie brocas para madeira, alvenaria e metal e escolha a certa.",
+     "p": [
+      "As de madeira costumam ter ponta central afiada; as de alvenaria, ponta chata de videa.",
+      "As de metal costumam ser brilhantes ou escuras, com ponta levemente inclinada.",
+      "A broca errada queima, desvia ou quebra: combine-a com o material."
+     ],
+     "q": "Em que materiais da sua casa você pode precisar furar?",
+     "c": "Separe as brocas que tem em montes de madeira, alvenaria e metal."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drilling your first hole",
+     "g": "Drill a clean, straight hole with a mark, pilot hole and steady pressure.",
+     "p": [
+      "Mark the spot, then dimple it lightly so the bit will not wander.",
+      "Start slowly, keep the drill straight and let the bit do the work.",
+      "Clamp the piece down and wear safety glasses."
+     ],
+     "q": "How do you feel about using a drill: excited, nervous or both?",
+     "c": "Drill one hole in scrap wood, keeping the drill level and steady."
+    },
+    "de": {
+     "t": "Dein erstes Bohrloch",
+     "g": "Bohre ein sauberes, gerades Loch mit Anriss, Vorbohrung und gleichmäßigem Druck.",
+     "p": [
+      "Markiere die Stelle und körne sie leicht an, damit der Bohrer nicht wandert.",
+      "Starte langsam, halte die Maschine gerade und lass den Bohrer arbeiten.",
+      "Spanne das Werkstück fest und trage eine Schutzbrille."
+     ],
+     "q": "Wie fühlst du dich beim Bohren: aufgeregt, nervös oder beides?",
+     "c": "Bohre ein Loch in Restholz und halte die Maschine gerade und ruhig."
+    },
+    "es": {
+     "t": "Tu primer agujero",
+     "g": "Haz un agujero limpio y recto con marca, guía y presión constante.",
+     "p": [
+      "Marca el punto y hazle una pequeña hendidura para que la broca no se desvíe.",
+      "Empieza despacio, mantén el taladro recto y deja que la broca trabaje.",
+      "Sujeta la pieza con una mordaza y usa gafas de seguridad."
+     ],
+     "q": "¿Cómo te sientes con el taladro: emocionado, nervioso o ambas cosas?",
+     "c": "Haz un agujero en un trozo de madera sobrante con el taladro recto y firme."
+    },
+    "fr": {
+     "t": "Percer ton premier trou",
+     "g": "Perce un trou net et droit avec un repère, un avant-trou et une pression régulière.",
+     "p": [
+      "Marque le point puis amorce-le légèrement pour que le foret ne dévie pas.",
+      "Démarre lentement, garde la perceuse droite et laisse le foret travailler.",
+      "Serre la pièce dans un étau ou un serre-joint et porte des lunettes."
+     ],
+     "q": "Que ressens-tu face à la perceuse : enthousiasme, appréhension, ou les deux ?",
+     "c": "Perce un trou dans une chute de bois en gardant la perceuse droite et stable."
+    },
+    "it": {
+     "t": "Il tuo primo foro",
+     "g": "Fai un foro pulito e dritto con segno, preforo e pressione costante.",
+     "p": [
+      "Segna il punto e fai una piccola incisione perché la punta non scivoli.",
+      "Parti piano, tieni il trapano dritto e lascia lavorare la punta.",
+      "Blocca il pezzo con un morsetto e indossa gli occhiali di sicurezza."
+     ],
+     "q": "Come ti senti davanti al trapano: entusiasta, teso o entrambe le cose?",
+     "c": "Fai un foro in un pezzo di legno di scarto tenendo il trapano dritto e fermo."
+    },
+    "pt": {
+     "t": "O teu primeiro furo",
+     "g": "Faz um furo limpo e direito com marca, pré-furo e pressão constante.",
+     "p": [
+      "Marca o ponto e faz uma pequena covinha para a broca não desviar.",
+      "Começa devagar, mantém o berbequim reto e deixa a broca trabalhar.",
+      "Prende a peça com um grampo e usa óculos de proteção."
+     ],
+     "q": "Como te sentes com o berbequim: entusiasmado, nervoso ou ambos?",
+     "c": "Faz um furo num pedaço de madeira de sobra, com o berbequim reto e firme."
+    },
+    "pt_BR": {
+     "t": "Seu primeiro furo",
+     "g": "Faça um furo limpo e reto com marcação, pré-furo e pressão constante.",
+     "p": [
+      "Marque o ponto e faça uma pequena covinha para a broca não desviar.",
+      "Comece devagar, mantenha a furadeira reta e deixe a broca trabalhar.",
+      "Prenda a peça com um grampo e use óculos de proteção."
+     ],
+     "q": "Como você se sente com a furadeira: animado, nervoso ou os dois?",
+     "c": "Faça um furo num pedaço de madeira sobrando, com a furadeira reta e firme."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ladder safety basics",
+     "g": "Choose the right ladder and use it with the angle rule and three points of contact.",
+     "p": [
+      "Pick a ladder tall enough that you never stand on its top rungs.",
+      "Set it at a safe angle, about one out for every four up, on firm level ground.",
+      "Keep three points of contact and never overreach sideways."
+     ],
+     "q": "What jobs at home need you to work up high?",
+     "c": "Inspect a ladder: check feet, rungs and locks, and set it at the angle rule."
+    },
+    "de": {
+     "t": "Leitersicherheit: die Grundlagen",
+     "g": "Wähle die passende Leiter und nutze Anstellwinkel und drei Haltepunkte.",
+     "p": [
+      "Wähle eine Leiter, die hoch genug ist, damit du nie auf den obersten Sprossen stehst.",
+      "Stelle sie im sicheren Winkel auf, etwa eins nach außen auf vier nach oben, auf festem ebenem Grund.",
+      "Halte immer drei Kontaktpunkte und greife nie seitlich zu weit."
+     ],
+     "q": "Welche Arbeiten im Haus erfordern, dass du hoch arbeitest?",
+     "c": "Prüfe eine Leiter auf Füße, Sprossen und Sperren und stelle sie im richtigen Winkel auf."
+    },
+    "es": {
+     "t": "Seguridad básica con escaleras",
+     "g": "Elige la escalera adecuada y úsala con la regla del ángulo y tres puntos de apoyo.",
+     "p": [
+      "Elige una escalera lo bastante alta para no pisar nunca los últimos peldaños.",
+      "Colócala con un ángulo seguro, uno hacia fuera por cada cuatro de altura, en suelo firme y plano.",
+      "Mantén tres puntos de apoyo y nunca te estires hacia los lados."
+     ],
+     "q": "¿Qué trabajos de casa te obligan a trabajar en altura?",
+     "c": "Revisa una escalera: patas, peldaños y bloqueos, y colócala con la regla del ángulo."
+    },
+    "fr": {
+     "t": "Sécurité de base à l'échelle",
+     "g": "Choisis la bonne échelle et utilise la règle de l'angle et trois points d'appui.",
+     "p": [
+      "Prends une échelle assez haute pour ne jamais monter sur les derniers barreaux.",
+      "Place-la avec un angle sûr, un en retrait pour quatre de hauteur, sur sol ferme et plat.",
+      "Garde trois points d'appui et ne te penche jamais trop sur le côté."
+     ],
+     "q": "Quels travaux chez toi demandent de travailler en hauteur ?",
+     "c": "Inspecte une échelle : pieds, barreaux et verrous, et installe-la avec la règle de l'angle."
+    },
+    "it": {
+     "t": "Sicurezza di base sulle scale",
+     "g": "Scegli la scala giusta e usa la regola dell'angolo e tre punti di appoggio.",
+     "p": [
+      "Scegli una scala abbastanza alta da non salire mai sugli ultimi pioli.",
+      "Posizionala con angolo sicuro, uno fuori ogni quattro in altezza, su suolo solido e piano.",
+      "Mantieni tre punti di contatto e non sporgerti mai di lato."
+     ],
+     "q": "Quali lavori di casa ti richiedono di lavorare in alto?",
+     "c": "Ispeziona una scala: piedini, pioli e bloccaggi, e posizionala con la regola dell'angolo."
+    },
+    "pt": {
+     "t": "Segurança básica com escadas",
+     "g": "Escolhe a escada certa e usa a regra do ângulo e três pontos de apoio.",
+     "p": [
+      "Escolhe uma escada alta o suficiente para nunca pisares os degraus de cima.",
+      "Coloca-a num ângulo seguro, um para fora por cada quatro de altura, em chão firme e plano.",
+      "Mantém três pontos de apoio e nunca te estiques para o lado."
+     ],
+     "q": "Que trabalhos em casa te obrigam a trabalhar em altura?",
+     "c": "Inspeciona uma escada: pés, degraus e travas, e coloca-a com a regra do ângulo."
+    },
+    "pt_BR": {
+     "t": "Segurança básica com escadas",
+     "g": "Escolha a escada certa e use a regra do ângulo e três pontos de apoio.",
+     "p": [
+      "Escolha uma escada alta o bastante para nunca pisar nos degraus de cima.",
+      "Posicione-a num ângulo seguro, um para fora a cada quatro de altura, em piso firme e plano.",
+      "Mantenha três pontos de apoio e nunca se estique para o lado."
+     ],
+     "q": "Que serviços da sua casa exigem trabalhar em altura?",
+     "c": "Inspecione uma escada: pés, degraus e travas, e posicione-a pela regra do ângulo."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading product instructions",
+     "g": "See why manuals and labels matter, from glues to flat-pack furniture.",
+     "p": [
+      "Labels tell you drying times, safe use and what surfaces suit the product.",
+      "Manuals show the order of steps and the parts you should have.",
+      "Check warnings first: ventilation, gloves and storage notes."
+     ],
+     "q": "Do you read instructions first, or jump straight in?",
+     "c": "Read the label of one product at home and note its three key warnings."
+    },
+    "de": {
+     "t": "Produktanleitungen lesen",
+     "g": "Verstehe, warum Anleitungen und Etiketten wichtig sind, von Klebern bis Möbelbausätzen.",
+     "p": [
+      "Etiketten nennen Trockenzeiten, sichere Anwendung und geeignete Untergründe.",
+      "Anleitungen zeigen die Reihenfolge der Schritte und die mitgelieferten Teile.",
+      "Lies zuerst die Warnhinweise: Lüftung, Handschuhe, Lagerung."
+     ],
+     "q": "Liest du Anleitungen zuerst oder legst du direkt los?",
+     "c": "Lies das Etikett eines Produkts bei dir und notiere die drei wichtigsten Warnungen."
+    },
+    "es": {
+     "t": "Leer las instrucciones del producto",
+     "g": "Descubre por qué importan los manuales y etiquetas, de pegamentos a muebles por montar.",
+     "p": [
+      "Las etiquetas indican tiempos de secado, uso seguro y superficies adecuadas.",
+      "Los manuales muestran el orden de los pasos y las piezas que deberías tener.",
+      "Mira primero las advertencias: ventilación, guantes y almacenamiento."
+     ],
+     "q": "¿Lees primero las instrucciones o te lanzas directamente?",
+     "c": "Lee la etiqueta de un producto de casa y anota sus tres advertencias clave."
+    },
+    "fr": {
+     "t": "Lire les notices des produits",
+     "g": "Vois pourquoi notices et étiquettes comptent, des colles aux meubles en kit.",
+     "p": [
+      "Les étiquettes donnent temps de séchage, usage sûr et surfaces compatibles.",
+      "Les notices montrent l'ordre des étapes et les pièces à avoir.",
+      "Lis d'abord les avertissements : aération, gants, stockage."
+     ],
+     "q": "Lis-tu la notice d'abord, ou te lances-tu directement ?",
+     "c": "Lis l'étiquette d'un produit chez toi et note ses trois avertissements clés."
+    },
+    "it": {
+     "t": "Leggere le istruzioni dei prodotti",
+     "g": "Scopri perché manuali ed etichette contano, dalle colle ai mobili da montare.",
+     "p": [
+      "Le etichette indicano tempi di asciugatura, uso sicuro e superfici adatte.",
+      "I manuali mostrano l'ordine dei passaggi e i pezzi che dovresti avere.",
+      "Leggi prima le avvertenze: ventilazione, guanti e conservazione."
+     ],
+     "q": "Leggi prima le istruzioni o parti subito?",
+     "c": "Leggi l'etichetta di un prodotto in casa e annota le tre avvertenze principali."
+    },
+    "pt": {
+     "t": "Ler as instruções dos produtos",
+     "g": "Percebe porque manuais e rótulos contam, de colas a móveis por montar.",
+     "p": [
+      "Os rótulos indicam tempos de secagem, uso seguro e superfícies adequadas.",
+      "Os manuais mostram a ordem dos passos e as peças que deves ter.",
+      "Lê primeiro os avisos: ventilação, luvas e armazenamento."
+     ],
+     "q": "Lês primeiro as instruções ou começas logo?",
+     "c": "Lê o rótulo de um produto em casa e anota os três avisos principais."
+    },
+    "pt_BR": {
+     "t": "Lendo as instruções dos produtos",
+     "g": "Entenda por que manuais e rótulos importam, de colas a móveis para montar.",
+     "p": [
+      "Os rótulos indicam tempo de secagem, uso seguro e superfícies adequadas.",
+      "Os manuais mostram a ordem dos passos e as peças que você deve ter.",
+      "Leia primeiro os avisos: ventilação, luvas e armazenamento."
+     ],
+     "q": "Você lê as instruções primeiro ou vai direto ao serviço?",
+     "c": "Leia o rótulo de um produto em casa e anote os três avisos principais."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Storing tools well",
+     "g": "Keep tools dry, sharp and easy to find with simple storage.",
+     "p": [
+      "Pegboards and hooks show every tool at a glance.",
+      "Toolboxes and cases protect tools and make them portable.",
+      "Keep metal tools dry and wipe them down to prevent rust."
+     ],
+     "q": "How do you store your tools now, and does it work?",
+     "c": "Put every tool back in a set place and label the spots."
+    },
+    "de": {
+     "t": "Werkzeug gut aufbewahren",
+     "g": "Halte Werkzeug trocken, scharf und griffbereit mit einfacher Ordnung.",
+     "p": [
+      "Lochwände und Haken zeigen jedes Werkzeug auf einen Blick.",
+      "Werkzeugkoffer schützen Werkzeug und machen es transportabel.",
+      "Halte Metallwerkzeug trocken und wische es ab, um Rost zu vermeiden."
+     ],
+     "q": "Wie bewahrst du Werkzeug jetzt auf, und funktioniert das?",
+     "c": "Räume jedes Werkzeug an einen festen Platz und beschrifte die Plätze."
+    },
+    "es": {
+     "t": "Guardar bien las herramientas",
+     "g": "Mantén las herramientas secas, afiladas y a mano con un almacenaje sencillo.",
+     "p": [
+      "Los paneles perforados y los ganchos muestran cada herramienta de un vistazo.",
+      "Las cajas y maletines protegen las herramientas y permiten transportarlas.",
+      "Mantén secas las herramientas de metal y límpialas para evitar el óxido."
+     ],
+     "q": "¿Cómo guardas ahora tus herramientas y te funciona?",
+     "c": "Devuelve cada herramienta a un sitio fijo y etiqueta los huecos."
+    },
+    "fr": {
+     "t": "Bien ranger ses outils",
+     "g": "Garde tes outils secs, affûtés et faciles à trouver avec un rangement simple.",
+     "p": [
+      "Les panneaux perforés et crochets montrent chaque outil d'un coup d'œil.",
+      "Boîtes et mallettes protègent les outils et les rendent transportables.",
+      "Garde les outils en métal au sec et essuie-les pour éviter la rouille."
+     ],
+     "q": "Comment ranges-tu tes outils aujourd'hui, et est-ce pratique ?",
+     "c": "Remets chaque outil à une place fixe et étiquette les emplacements."
+    },
+    "it": {
+     "t": "Conservare bene gli attrezzi",
+     "g": "Tieni gli attrezzi asciutti, affilati e a portata di mano con un riordino semplice.",
+     "p": [
+      "Pannelli forati e ganci mostrano ogni attrezzo a colpo d'occhio.",
+      "Cassette e valigette proteggono gli attrezzi e li rendono trasportabili.",
+      "Tieni asciutti gli attrezzi in metallo e puliscili per evitare la ruggine."
+     ],
+     "q": "Come conservi gli attrezzi ora e funziona?",
+     "c": "Rimetti ogni attrezzo in un posto fisso ed etichetta gli spazi."
+    },
+    "pt": {
+     "t": "Guardar bem as ferramentas",
+     "g": "Mantém as ferramentas secas, afiadas e à mão com uma arrumação simples.",
+     "p": [
+      "Painéis perfurados e ganchos mostram cada ferramenta num relance.",
+      "Caixas e malas protegem as ferramentas e permitem transportá-las.",
+      "Mantém as ferramentas de metal secas e limpa-as para evitar ferrugem."
+     ],
+     "q": "Como guardas agora as tuas ferramentas e funciona?",
+     "c": "Põe cada ferramenta num sítio fixo e etiqueta os lugares."
+    },
+    "pt_BR": {
+     "t": "Guardando bem as ferramentas",
+     "g": "Mantenha as ferramentas secas, afiadas e à mão com uma organização simples.",
+     "p": [
+      "Painéis perfurados e ganchos mostram cada ferramenta num relance.",
+      "Caixas e maletas protegem as ferramentas e permitem transportá-las.",
+      "Mantenha as ferramentas de metal secas e limpe-as para evitar ferrugem."
+     ],
+     "q": "Como você guarda suas ferramentas hoje e funciona?",
+     "c": "Coloque cada ferramenta num lugar fixo e etiquete os espaços."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cleaning up after a job",
+     "g": "Finish well with dust control, sorted waste and tools put away safely.",
+     "p": [
+      "Sweep or vacuum dust before it spreads through the home.",
+      "Sort waste: reuse offcuts, recycle what you can, bag the rest.",
+      "Wipe tools, retract blades and store chemicals closed and out of reach."
+     ],
+     "q": "What is your cleanup routine after a project?",
+     "c": "Do a ten-minute cleanup of your work area and put every tool away."
+    },
+    "de": {
+     "t": "Aufräumen nach der Arbeit",
+     "g": "Schließe gut ab: Staub binden, Abfall sortieren, Werkzeug sicher verstauen.",
+     "p": [
+      "Fege oder sauge Staub, bevor er sich im Haus verteilt.",
+      "Sortiere Abfall: Reste weiterverwenden, Recyclingfähiges trennen, den Rest entsorgen.",
+      "Wische Werkzeug ab, fahre Klingen ein und lagere Chemikalien verschlossen und unerreichbar."
+     ],
+     "q": "Wie sieht deine Aufräumroutine nach einem Projekt aus?",
+     "c": "Räume deinen Arbeitsbereich zehn Minuten lang auf und verstaue jedes Werkzeug."
+    },
+    "es": {
+     "t": "Limpiar después del trabajo",
+     "g": "Termina bien: controla el polvo, separa residuos y guarda las herramientas con seguridad.",
+     "p": [
+      "Barre o aspira el polvo antes de que se extienda por la casa.",
+      "Separa residuos: reutiliza recortes, recicla lo posible y embolsa el resto.",
+      "Limpia las herramientas, retrae cuchillas y guarda productos cerrados y fuera del alcance."
+     ],
+     "q": "¿Cuál es tu rutina de limpieza tras un proyecto?",
+     "c": "Haz diez minutos de limpieza de tu zona de trabajo y guarda cada herramienta."
+    },
+    "fr": {
+     "t": "Nettoyer après le travail",
+     "g": "Termine bien : maîtrise la poussière, trie les déchets et range les outils en sécurité.",
+     "p": [
+      "Balaie ou aspire la poussière avant qu'elle ne se répande.",
+      "Trie les déchets : réutilise les chutes, recycle ce qui peut l'être, jette le reste.",
+      "Essuie les outils, rentre les lames et range les produits fermés hors de portée."
+     ],
+     "q": "Quelle est ta routine de rangement après un projet ?",
+     "c": "Fais dix minutes de rangement de ton espace de travail et range chaque outil."
+    },
+    "it": {
+     "t": "Pulire dopo il lavoro",
+     "g": "Concludi bene: controlla la polvere, separa i rifiuti e riponi gli attrezzi in sicurezza.",
+     "p": [
+      "Spazza o aspira la polvere prima che si diffonda per casa.",
+      "Separa i rifiuti: riusa i ritagli, ricicla il possibile, getta il resto.",
+      "Pulisci gli attrezzi, ritrai le lame e conserva i prodotti chiusi e fuori portata."
+     ],
+     "q": "Qual è la tua routine di pulizia dopo un lavoro?",
+     "c": "Fai dieci minuti di pulizia della zona di lavoro e riponi ogni attrezzo."
+    },
+    "pt": {
+     "t": "Limpar depois do trabalho",
+     "g": "Termina bem: controla o pó, separa resíduos e guarda as ferramentas em segurança.",
+     "p": [
+      "Varre ou aspira o pó antes que se espalhe pela casa.",
+      "Separa resíduos: reutiliza sobras, recicla o que puderes e deita fora o resto.",
+      "Limpa as ferramentas, recolhe lâminas e guarda produtos fechados e fora de alcance."
+     ],
+     "q": "Qual é a tua rotina de limpeza depois de um projeto?",
+     "c": "Faz dez minutos de limpeza da tua zona de trabalho e arruma cada ferramenta."
+    },
+    "pt_BR": {
+     "t": "Limpando depois do serviço",
+     "g": "Termine bem: controle o pó, separe os resíduos e guarde as ferramentas com segurança.",
+     "p": [
+      "Varra ou aspire o pó antes que se espalhe pela casa.",
+      "Separe os resíduos: reaproveite sobras, recicle o que puder e descarte o resto.",
+      "Limpe as ferramentas, recolha as lâminas e guarde produtos fechados e fora do alcance."
+     ],
+     "q": "Qual é a sua rotina de limpeza depois de um projeto?",
+     "c": "Faça dez minutos de limpeza da área de trabalho e guarde cada ferramenta."
+    }
+   }
+  }
+ ]
+}

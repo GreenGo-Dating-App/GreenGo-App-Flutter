@@ -1,0 +1,835 @@
+{
+ "topic": "geography",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Plains and valleys",
+     "g": "Compare flat plains with valleys carved by rivers and glaciers.",
+     "p": [
+      "Plains are broad, flat or gently rolling lands, often with rich soil for farming.",
+      "River valleys are shaped like a V, while glaciers carve wide U-shaped valleys.",
+      "Many of the world's great cities and farms sit on plains and in valleys."
+     ],
+     "q": "Is the land around your home flat, hilly or full of valleys?",
+     "c": "Spot one plain and one valley near you on a map or from a window."
+    },
+    "de": {
+     "t": "Ebenen und Täler",
+     "g": "Vergleiche flache Ebenen mit Tälern, die Flüsse und Gletscher geformt haben.",
+     "p": [
+      "Ebenen sind weite, flache oder sanft gewellte Länder, oft mit fruchtbarem Boden.",
+      "Flusstäler sind V-förmig, Gletscher schaffen breite U-förmige Täler.",
+      "Viele große Städte und Felder der Welt liegen in Ebenen und Tälern."
+     ],
+     "q": "Ist das Land um dein Zuhause flach, hügelig oder voller Täler?",
+     "c": "Finde in deiner Nähe eine Ebene und ein Tal auf der Karte oder vom Fenster aus."
+    },
+    "es": {
+     "t": "Llanuras y valles",
+     "g": "Compara las llanuras planas con los valles tallados por ríos y glaciares.",
+     "p": [
+      "Las llanuras son tierras amplias, planas u onduladas, a menudo con suelo fértil.",
+      "Los valles fluviales tienen forma de V y los glaciares tallan valles anchos en U.",
+      "Muchas grandes ciudades y campos del mundo están en llanuras y valles."
+     ],
+     "q": "¿La tierra alrededor de tu casa es plana, con colinas o con valles?",
+     "c": "Localiza una llanura y un valle cerca de ti en un mapa o desde la ventana."
+    },
+    "fr": {
+     "t": "Plaines et vallées",
+     "g": "Compare les plaines plates et les vallées creusées par les rivières et les glaciers.",
+     "p": [
+      "Les plaines sont de vastes terres plates ou peu ondulées, souvent aux sols fertiles.",
+      "Les vallées fluviales ont une forme en V, les glaciers creusent de larges vallées en U.",
+      "Beaucoup de grandes villes et de champs du monde sont dans des plaines et des vallées."
+     ],
+     "q": "Le terrain autour de chez toi est-il plat, vallonné ou plein de vallées ?",
+     "c": "Repère une plaine et une vallée près de toi sur une carte ou par la fenêtre."
+    },
+    "it": {
+     "t": "Pianure e valli",
+     "g": "Confronta le pianure piatte con le valli scavate da fiumi e ghiacciai.",
+     "p": [
+      "Le pianure sono terre ampie, piatte o appena ondulate, spesso con suolo fertile.",
+      "Le valli fluviali hanno forma a V, i ghiacciai scavano ampie valli a U.",
+      "Molte grandi città e campi del mondo sorgono in pianure e valli."
+     ],
+     "q": "Il terreno intorno a casa tua è piatto, collinare o pieno di valli?",
+     "c": "Individua una pianura e una valle vicino a te su una mappa o dalla finestra."
+    },
+    "pt": {
+     "t": "Planícies e vales",
+     "g": "Compara as planícies planas com os vales esculpidos por rios e glaciares.",
+     "p": [
+      "As planícies são terras amplas, planas ou onduladas, muitas vezes de solo fértil.",
+      "Os vales fluviais têm forma de V e os glaciares esculpem vales largos em U.",
+      "Muitas grandes cidades e campos do mundo ficam em planícies e vales."
+     ],
+     "q": "O terreno à volta da tua casa é plano, com colinas ou cheio de vales?",
+     "c": "Localiza uma planície e um vale perto de ti num mapa ou da janela."
+    },
+    "pt_BR": {
+     "t": "Planícies e vales",
+     "g": "Compare as planícies planas com os vales esculpidos por rios e geleiras.",
+     "p": [
+      "As planícies são terras amplas, planas ou onduladas, muitas vezes de solo fértil.",
+      "Os vales fluviais têm forma de V e as geleiras esculpem vales largos em U.",
+      "Muitas grandes cidades e plantações do mundo ficam em planícies e vales."
+     ],
+     "q": "O terreno em volta da sua casa é plano, com colinas ou cheio de vales?",
+     "c": "Localize uma planície e um vale perto de você num mapa ou da janela."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: maps and the big picture",
+     "g": "A light recap of map skills, continents and oceans with a fun quiz.",
+     "p": [
+      "Latitude and longitude together make coordinates that name any place.",
+      "Maps use scale, legend and contour lines to show the real world.",
+      "Seven continents and five oceans are the big pieces of the planet's puzzle."
+     ],
+     "q": "Which topic from the last weeks did you enjoy most so far?",
+     "c": "Quiz yourself: name the oceans, the continents and one coordinate pair."
+    },
+    "de": {
+     "t": "Rückblick: Karten und das große Ganze",
+     "g": "Ein lockerer Rückblick auf Kartenwissen, Kontinente und Ozeane mit einem Quiz.",
+     "p": [
+      "Breiten- und Längengrad ergeben zusammen Koordinaten, die jeden Ort benennen.",
+      "Karten nutzen Maßstab, Legende und Höhenlinien, um die Wirklichkeit zu zeigen.",
+      "Sieben Kontinente und fünf Ozeane sind die großen Teile im Puzzle des Planeten."
+     ],
+     "q": "Welches Thema der letzten Wochen hat dir bisher am meisten Spaß gemacht?",
+     "c": "Teste dich: Nenne Ozeane, Kontinente und ein Koordinatenpaar."
+    },
+    "es": {
+     "t": "Repaso: mapas y visión general",
+     "g": "Un repaso ligero de mapas, continentes y océanos con un divertido cuestionario.",
+     "p": [
+      "Latitud y longitud juntas forman coordenadas que nombran cualquier lugar.",
+      "Los mapas usan escala, leyenda y curvas de nivel para mostrar el mundo real.",
+      "Siete continentes y cinco océanos son las grandes piezas del puzle del planeta."
+     ],
+     "q": "¿Qué tema de las últimas semanas te ha gustado más hasta ahora?",
+     "c": "Ponte a prueba: nombra los océanos, los continentes y un par de coordenadas."
+    },
+    "fr": {
+     "t": "Révision : cartes et vue d'ensemble",
+     "g": "Un rappel léger des cartes, continents et océans avec un quiz amusant.",
+     "p": [
+      "Latitude et longitude forment ensemble des coordonnées qui nomment n'importe quel lieu.",
+      "Les cartes utilisent échelle, légende et courbes de niveau pour montrer le réel.",
+      "Sept continents et cinq océans sont les grandes pièces du puzzle de la planète."
+     ],
+     "q": "Quel sujet des dernières semaines t'a le plus plu jusqu'ici ?",
+     "c": "Teste-toi : cite les océans, les continents et un couple de coordonnées."
+    },
+    "it": {
+     "t": "Ripasso: mappe e visione d'insieme",
+     "g": "Un ripasso leggero di mappe, continenti e oceani con un quiz divertente.",
+     "p": [
+      "Latitudine e longitudine insieme formano coordinate che nominano ogni luogo.",
+      "Le mappe usano scala, legenda e curve di livello per mostrare il mondo reale.",
+      "Sette continenti e cinque oceani sono i grandi pezzi del puzzle del pianeta."
+     ],
+     "q": "Quale argomento delle ultime settimane ti è piaciuto di più finora?",
+     "c": "Mettiti alla prova: nomina oceani, continenti e una coppia di coordinate."
+    },
+    "pt": {
+     "t": "Revisão: mapas e visão geral",
+     "g": "Uma revisão leve de mapas, continentes e oceanos com um quiz divertido.",
+     "p": [
+      "Latitude e longitude juntas formam coordenadas que nomeiam qualquer lugar.",
+      "Os mapas usam escala, legenda e curvas de nível para mostrar o mundo real.",
+      "Sete continentes e cinco oceanos são as grandes peças do puzzle do planeta."
+     ],
+     "q": "Que tema das últimas semanas mais gostaste até agora?",
+     "c": "Testa-te: diz os oceanos, os continentes e um par de coordenadas."
+    },
+    "pt_BR": {
+     "t": "Revisão: mapas e visão geral",
+     "g": "Uma revisão leve de mapas, continentes e oceanos com um quiz divertido.",
+     "p": [
+      "Latitude e longitude juntas formam coordenadas que nomeiam qualquer lugar.",
+      "Os mapas usam escala, legenda e curvas de nível para mostrar o mundo real.",
+      "Sete continentes e cinco oceanos são as grandes peças do quebra-cabeça do planeta."
+     ],
+     "q": "Qual tema das últimas semanas você mais curtiu até agora?",
+     "c": "Teste-se: diga os oceanos, os continentes e um par de coordenadas."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rivers from source to mouth",
+     "g": "Follow a river from its start in the hills to the sea.",
+     "p": [
+      "A river starts at a source, such as a spring, a melting glacier or a lake.",
+      "Tributaries are smaller streams that join and make the river bigger.",
+      "At the mouth the river meets the sea, often forming a delta or an estuary."
+     ],
+     "q": "What is the nearest river to you, and have you ever followed it?",
+     "c": "Trace a river on a map from its source to its mouth."
+    },
+    "de": {
+     "t": "Flüsse von der Quelle zur Mündung",
+     "g": "Folge einem Fluss von seinem Ursprung in den Bergen bis zum Meer.",
+     "p": [
+      "Ein Fluss beginnt an seinem Ursprung, etwa einer Quelle, einem Gletscher oder einem See.",
+      "Nebenflüsse sind kleinere Bäche, die sich anschließen und den Fluss größer machen.",
+      "An der Mündung trifft der Fluss aufs Meer und bildet oft ein Delta oder einen Trichter."
+     ],
+     "q": "Welcher Fluss ist dir am nächsten, und bist du ihm schon einmal gefolgt?",
+     "c": "Verfolge einen Fluss auf der Karte von der Quelle bis zur Mündung."
+    },
+    "es": {
+     "t": "Ríos de la fuente a la desembocadura",
+     "g": "Sigue un río desde su origen en las colinas hasta el mar.",
+     "p": [
+      "Un río nace en una fuente, como un manantial, un glaciar que se derrite o un lago.",
+      "Los afluentes son arroyos menores que se unen y engrosan el río.",
+      "En la desembocadura el río llega al mar, a menudo formando un delta o estuario."
+     ],
+     "q": "¿Cuál es el río más cercano a ti y lo has seguido alguna vez?",
+     "c": "Traza un río en un mapa desde su nacimiento hasta su desembocadura."
+    },
+    "fr": {
+     "t": "Les rivières de la source à l'embouchure",
+     "g": "Suis un cours d'eau depuis sa naissance dans les collines jusqu'à la mer.",
+     "p": [
+      "Un fleuve naît à une source : une résurgence, un glacier qui fond ou un lac.",
+      "Les affluents sont de petits cours d'eau qui le rejoignent et le font grossir.",
+      "À l'embouchure, le fleuve rencontre la mer, formant souvent un delta ou un estuaire."
+     ],
+     "q": "Quel est le cours d'eau le plus proche de chez toi, l'as-tu déjà suivi ?",
+     "c": "Trace un fleuve sur une carte, de sa source à son embouchure."
+    },
+    "it": {
+     "t": "I fiumi dalla sorgente alla foce",
+     "g": "Segui un fiume dalla sua nascita sulle colline fino al mare.",
+     "p": [
+      "Un fiume nasce da una sorgente: una polla, un ghiacciaio che si scioglie o un lago.",
+      "Gli affluenti sono corsi d'acqua minori che si uniscono e ingrossano il fiume.",
+      "Alla foce il fiume incontra il mare, formando spesso un delta o un estuario."
+     ],
+     "q": "Qual è il fiume più vicino a te e l'hai mai seguito?",
+     "c": "Traccia un fiume su una mappa dalla sorgente alla foce."
+    },
+    "pt": {
+     "t": "Rios da nascente à foz",
+     "g": "Segue um rio desde a nascente nas colinas até ao mar.",
+     "p": [
+      "Um rio nasce numa nascente, como uma fonte, um glaciar que derrete ou um lago.",
+      "Os afluentes são ribeiros menores que se juntam e engrossam o rio.",
+      "Na foz o rio encontra o mar, formando muitas vezes um delta ou estuário."
+     ],
+     "q": "Qual é o rio mais próximo de ti e já o seguiste?",
+     "c": "Traça um rio num mapa desde a nascente até à foz."
+    },
+    "pt_BR": {
+     "t": "Rios da nascente à foz",
+     "g": "Siga um rio desde a nascente nas colinas até o mar.",
+     "p": [
+      "Um rio nasce numa nascente, como uma fonte, uma geleira que derrete ou um lago.",
+      "Os afluentes são riachos menores que se juntam e engrossam o rio.",
+      "Na foz o rio encontra o mar, formando muitas vezes um delta ou estuário."
+     ],
+     "q": "Qual é o rio mais perto de você e você já o seguiu?",
+     "c": "Trace um rio num mapa da nascente até a foz."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lakes",
+     "g": "Explore freshwater and saltwater lakes and how glaciers, volcanoes and faults create them.",
+     "p": [
+      "A lake is a large body of water surrounded by land, with no direct link to the open sea.",
+      "Glaciers, volcanic craters and cracks in Earth's crust can all create lake basins.",
+      "Most lakes are fresh, but a few, like the Dead Sea, are saltier than the ocean."
+     ],
+     "q": "Have you ever swum, sailed or walked beside a lake?",
+     "c": "Find the Great Lakes of North America and Lake Baikal on a map."
+    },
+    "de": {
+     "t": "Seen",
+     "g": "Entdecke Süß- und Salzwasserseen und wie Gletscher, Vulkane und Brüche sie schaffen.",
+     "p": [
+      "Ein See ist ein großes Gewässer, von Land umgeben und ohne direkte Verbindung zum Meer.",
+      "Gletscher, Vulkankrater und Risse in der Erdkruste können Seebecken schaffen.",
+      "Die meisten Seen sind süß, einige wie das Tote Meer sind salziger als der Ozean."
+     ],
+     "q": "Bist du schon an einem See geschwommen, gesegelt oder gewandert?",
+     "c": "Finde die Großen Seen Nordamerikas und den Baikalsee auf einer Karte."
+    },
+    "es": {
+     "t": "Lagos",
+     "g": "Explora lagos de agua dulce y salada y cómo los crean glaciares, volcanes y fallas.",
+     "p": [
+      "Un lago es una gran masa de agua rodeada de tierra, sin conexión directa con el mar.",
+      "Glaciares, cráteres volcánicos y grietas de la corteza pueden crear cuencas de lagos.",
+      "La mayoría de los lagos son de agua dulce, pero el mar Muerto es más salado que el océano."
+     ],
+     "q": "¿Has nadado, navegado o paseado alguna vez junto a un lago?",
+     "c": "Encuentra los Grandes Lagos de América del Norte y el lago Baikal en un mapa."
+    },
+    "fr": {
+     "t": "Les lacs",
+     "g": "Explore les lacs d'eau douce et salée et comment glaciers, volcans et failles les créent.",
+     "p": [
+      "Un lac est une grande étendue d'eau entourée de terres, sans lien direct avec la mer.",
+      "Glaciers, cratères volcaniques et fissures de la croûte peuvent créer des bassins lacustres.",
+      "La plupart des lacs sont d'eau douce, mais la mer Morte est plus salée que l'océan."
+     ],
+     "q": "As-tu déjà nagé, navigué ou marché au bord d'un lac ?",
+     "c": "Trouve les Grands Lacs d'Amérique du Nord et le lac Baïkal sur une carte."
+    },
+    "it": {
+     "t": "I laghi",
+     "g": "Esplora laghi d'acqua dolce e salata e come ghiacciai, vulcani e faglie li creano.",
+     "p": [
+      "Un lago è una grande massa d'acqua circondata da terra, senza collegamento diretto col mare.",
+      "Ghiacciai, crateri vulcanici e fratture della crosta possono creare bacini lacustri.",
+      "La maggior parte dei laghi è d'acqua dolce, ma il Mar Morto è più salato dell'oceano."
+     ],
+     "q": "Hai mai nuotato, navigato o passeggiato accanto a un lago?",
+     "c": "Trova i Grandi Laghi del Nord America e il lago Bajkal su una mappa."
+    },
+    "pt": {
+     "t": "Os lagos",
+     "g": "Explora lagos de água doce e salgada e como glaciares, vulcões e falhas os criam.",
+     "p": [
+      "Um lago é uma grande massa de água rodeada de terra, sem ligação direta ao mar.",
+      "Glaciares, crateras vulcânicas e fendas da crosta podem criar bacias de lagos.",
+      "A maioria dos lagos é de água doce, mas o mar Morto é mais salgado do que o oceano."
+     ],
+     "q": "Já nadaste, navegaste ou passeaste junto a um lago?",
+     "c": "Encontra os Grandes Lagos da América do Norte e o lago Baikal num mapa."
+    },
+    "pt_BR": {
+     "t": "Os lagos",
+     "g": "Explore lagos de água doce e salgada e como geleiras, vulcões e falhas os criam.",
+     "p": [
+      "Um lago é uma grande massa de água cercada de terra, sem ligação direta com o mar.",
+      "Geleiras, crateras vulcânicas e fendas da crosta podem criar bacias de lagos.",
+      "A maioria dos lagos é de água doce, mas o mar Morto é mais salgado que o oceano."
+     ],
+     "q": "Você já nadou, navegou ou passeou ao lado de um lago?",
+     "c": "Ache os Grandes Lagos da América do Norte e o lago Baikal num mapa."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Waterfalls",
+     "g": "Learn how waterfalls form and meet some of the most spectacular ones.",
+     "p": [
+      "A waterfall forms where a river drops over a ledge of hard rock.",
+      "Softer rock below wears away faster, so the ledge slowly retreats upstream.",
+      "Famous falls include Iguazu, Victoria and Niagara, each with its own character."
+     ],
+     "q": "Which waterfall would you most like to see in person?",
+     "c": "Find Iguazu, Victoria Falls and Niagara on a map and note their continents."
+    },
+    "de": {
+     "t": "Wasserfälle",
+     "g": "Lerne, wie Wasserfälle entstehen, und entdecke einige der spektakulärsten.",
+     "p": [
+      "Ein Wasserfall entsteht, wo ein Fluss über eine Kante aus hartem Gestein stürzt.",
+      "Weicheres Gestein darunter erodiert schneller, die Kante wandert langsam flussaufwärts.",
+      "Berühmte Fälle sind Iguazú, Victoria und Niagara, jeder mit eigenem Charakter."
+     ],
+     "q": "Welchen Wasserfall würdest du am liebsten persönlich sehen?",
+     "c": "Finde Iguazú, Victoriafälle und Niagara auf der Karte und notiere ihre Kontinente."
+    },
+    "es": {
+     "t": "Cascadas",
+     "g": "Aprende cómo se forman las cascadas y conoce algunas de las más espectaculares.",
+     "p": [
+      "Una cascada se forma donde un río cae sobre un escalón de roca dura.",
+      "La roca blanda de debajo se desgasta más rápido y el escalón retrocede río arriba.",
+      "Famosas son Iguazú, Victoria y Niágara, cada una con su carácter."
+     ],
+     "q": "¿Qué cascada te gustaría ver en persona?",
+     "c": "Encuentra Iguazú, las cataratas Victoria y el Niágara en un mapa y anota sus continentes."
+    },
+    "fr": {
+     "t": "Les chutes d'eau",
+     "g": "Apprends comment se forment les chutes d'eau et découvre les plus spectaculaires.",
+     "p": [
+      "Une chute se forme là où un fleuve tombe d'un ressaut de roche dure.",
+      "La roche tendre en dessous s'use plus vite, et le ressaut recule peu à peu vers l'amont.",
+      "Parmi les célèbres : Iguazú, Victoria et Niagara, chacune avec son caractère."
+     ],
+     "q": "Quelle chute d'eau aimerais-tu le plus voir en vrai ?",
+     "c": "Trouve Iguazú, les chutes Victoria et Niagara sur une carte et note leurs continents."
+    },
+    "it": {
+     "t": "Le cascate",
+     "g": "Scopri come si formano le cascate e conosci alcune delle più spettacolari.",
+     "p": [
+      "Una cascata si forma dove un fiume cade da un gradino di roccia dura.",
+      "La roccia più tenera sotto si consuma più in fretta e il gradino arretra verso monte.",
+      "Tra le più famose: Iguazú, Vittoria e Niagara, ciascuna con il suo carattere."
+     ],
+     "q": "Quale cascata ti piacerebbe vedere di persona?",
+     "c": "Trova Iguazú, le cascate Vittoria e il Niagara su una mappa e annota i continenti."
+    },
+    "pt": {
+     "t": "As cascatas",
+     "g": "Aprende como se formam as cascatas e conhece algumas das mais espetaculares.",
+     "p": [
+      "Uma cascata forma-se onde um rio cai de um degrau de rocha dura.",
+      "A rocha mais mole por baixo desgasta-se mais depressa e o degrau recua rio acima.",
+      "Famosas são Iguaçu, Vitória e Niágara, cada uma com o seu carácter."
+     ],
+     "q": "Que cascata gostarias mais de ver em pessoa?",
+     "c": "Encontra Iguaçu, as cataratas Vitória e Niágara num mapa e anota os continentes."
+    },
+    "pt_BR": {
+     "t": "As cachoeiras",
+     "g": "Aprenda como se formam as cachoeiras e conheça algumas das mais espetaculares.",
+     "p": [
+      "Uma cachoeira se forma onde um rio cai de um degrau de rocha dura.",
+      "A rocha mais mole embaixo se desgasta mais rápido e o degrau recua rio acima.",
+      "Famosas são Iguaçu, Vitória e Niágara, cada uma com seu caráter."
+     ],
+     "q": "Qual cachoeira você mais gostaria de ver pessoalmente?",
+     "c": "Ache Iguaçu, as cataratas Vitória e Niágara num mapa e anote os continentes."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Deserts",
+     "g": "Learn about hot and cold deserts and what makes a place a desert.",
+     "p": [
+      "A desert is a place that gets very little rain, usually under 250 millimeters a year.",
+      "The Sahara is a famous hot desert, while Antarctica is the largest cold desert.",
+      "Many deserts are rocky or gravelly, and only some are covered with sand dunes."
+     ],
+     "q": "Would you enjoy a trip across a desert? Which one?",
+     "c": "Find the Sahara, the Gobi and the Atacama on a map."
+    },
+    "de": {
+     "t": "Wüsten",
+     "g": "Lerne heiße und kalte Wüsten kennen und was einen Ort zur Wüste macht.",
+     "p": [
+      "Eine Wüste bekommt sehr wenig Regen, meist unter 250 Millimeter im Jahr.",
+      "Die Sahara ist eine berühmte Hitzewüste, die Antarktis die größte Kältewüste.",
+      "Viele Wüsten sind felsig oder steinig, nur manche haben Sanddünen."
+     ],
+     "q": "Würdest du gern eine Wüste durchqueren? Welche?",
+     "c": "Finde Sahara, Gobi und Atacama auf einer Karte."
+    },
+    "es": {
+     "t": "Desiertos",
+     "g": "Conoce los desiertos cálidos y fríos y qué hace desierto a un lugar.",
+     "p": [
+      "Un desierto recibe muy poca lluvia, normalmente menos de 250 milímetros al año.",
+      "El Sahara es un famoso desierto cálido y la Antártida el mayor desierto frío.",
+      "Muchos desiertos son rocosos o de grava y solo algunos tienen dunas de arena."
+     ],
+     "q": "¿Te gustaría cruzar un desierto? ¿Cuál?",
+     "c": "Encuentra el Sahara, el Gobi y el Atacama en un mapa."
+    },
+    "fr": {
+     "t": "Les déserts",
+     "g": "Découvre les déserts chauds et froids et ce qui fait d'un lieu un désert.",
+     "p": [
+      "Un désert reçoit très peu de pluie, en général moins de 250 millimètres par an.",
+      "Le Sahara est un célèbre désert chaud, l'Antarctique le plus grand désert froid.",
+      "Beaucoup de déserts sont rocheux ou caillouteux, seuls certains ont des dunes de sable."
+     ],
+     "q": "Aimerais-tu traverser un désert ? Lequel ?",
+     "c": "Trouve le Sahara, le Gobi et l'Atacama sur une carte."
+    },
+    "it": {
+     "t": "I deserti",
+     "g": "Scopri i deserti caldi e freddi e cosa rende un luogo un deserto.",
+     "p": [
+      "Un deserto riceve pochissima pioggia, di solito meno di 250 millimetri l'anno.",
+      "Il Sahara è un famoso deserto caldo, l'Antartide il più grande deserto freddo.",
+      "Molti deserti sono rocciosi o ghiaiosi, solo alcuni hanno dune di sabbia."
+     ],
+     "q": "Ti piacerebbe attraversare un deserto? Quale?",
+     "c": "Trova il Sahara, il Gobi e l'Atacama su una mappa."
+    },
+    "pt": {
+     "t": "Os desertos",
+     "g": "Conhece os desertos quentes e frios e o que faz de um lugar um deserto.",
+     "p": [
+      "Um deserto recebe muito pouca chuva, normalmente menos de 250 milímetros por ano.",
+      "O Sara é um famoso deserto quente e a Antártida é o maior deserto frio.",
+      "Muitos desertos são rochosos ou pedregosos, e só alguns têm dunas de areia."
+     ],
+     "q": "Gostarias de atravessar um deserto? Qual?",
+     "c": "Encontra o Sara, o Gobi e o Atacama num mapa."
+    },
+    "pt_BR": {
+     "t": "Os desertos",
+     "g": "Conheça os desertos quentes e frios e o que faz de um lugar um deserto.",
+     "p": [
+      "Um deserto recebe muito pouca chuva, normalmente menos de 250 milímetros por ano.",
+      "O Saara é um famoso deserto quente e a Antártida é o maior deserto frio.",
+      "Muitos desertos são rochosos ou pedregosos, e só alguns têm dunas de areia."
+     ],
+     "q": "Você gostaria de atravessar um deserto? Qual?",
+     "c": "Ache o Saara, o Gobi e o Atacama num mapa."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Islands and archipelagos",
+     "g": "Meet volcanic, coral and continental islands and groups of islands.",
+     "p": [
+      "An island is land surrounded by water, and a group of islands is an archipelago.",
+      "Volcanic islands rise from the seabed, like Hawaii, and coral islands grow from reefs.",
+      "Continental islands, like Great Britain, were once connected to a mainland."
+     ],
+     "q": "Would you rather live on a small island or a big one?",
+     "c": "Find Hawaii, Japan and the Maldives on a map and note how each island type formed."
+    },
+    "de": {
+     "t": "Inseln und Archipele",
+     "g": "Lerne vulkanische, Korallen- und Kontinentalinseln und Inselgruppen kennen.",
+     "p": [
+      "Eine Insel ist von Wasser umgebenes Land, eine Inselgruppe heißt Archipel.",
+      "Vulkaninseln wachsen vom Meeresboden, wie Hawaii, Koralleninseln aus Riffen.",
+      "Kontinentalinseln wie Großbritannien hingen früher mit dem Festland zusammen."
+     ],
+     "q": "Würdest du lieber auf einer kleinen oder einer großen Insel leben?",
+     "c": "Finde Hawaii, Japan und die Malediven auf der Karte und notiere ihre Entstehung."
+    },
+    "es": {
+     "t": "Islas y archipiélagos",
+     "g": "Conoce islas volcánicas, de coral y continentales y grupos de islas.",
+     "p": [
+      "Una isla es tierra rodeada de agua y un grupo de islas es un archipiélago.",
+      "Las islas volcánicas surgen del fondo marino, como Hawái, y las de coral crecen de arrecifes.",
+      "Las islas continentales, como Gran Bretaña, estuvieron unidas a tierra firme."
+     ],
+     "q": "¿Preferirías vivir en una isla pequeña o en una grande?",
+     "c": "Encuentra Hawái, Japón y las Maldivas en un mapa y anota cómo se formó cada tipo."
+    },
+    "fr": {
+     "t": "Îles et archipels",
+     "g": "Découvre les îles volcaniques, coralliennes et continentales et les groupes d'îles.",
+     "p": [
+      "Une île est une terre entourée d'eau, et un groupe d'îles est un archipel.",
+      "Les îles volcaniques surgissent du fond marin, comme Hawaï, les coralliennes naissent de récifs.",
+      "Les îles continentales, comme la Grande-Bretagne, étaient autrefois reliées au continent."
+     ],
+     "q": "Préférerais-tu vivre sur une petite île ou sur une grande ?",
+     "c": "Trouve Hawaï, le Japon et les Maldives sur une carte et note leur mode de formation."
+    },
+    "it": {
+     "t": "Isole e arcipelaghi",
+     "g": "Conosci isole vulcaniche, coralline e continentali e gruppi di isole.",
+     "p": [
+      "Un'isola è terra circondata d'acqua, e un gruppo di isole è un arcipelago.",
+      "Le isole vulcaniche sorgono dal fondale, come le Hawaii, e le coralline crescono dalle barriere.",
+      "Le isole continentali, come la Gran Bretagna, erano un tempo unite alla terraferma."
+     ],
+     "q": "Preferiresti vivere su un'isola piccola o grande?",
+     "c": "Trova Hawaii, Giappone e Maldive su una mappa e annota come si è formato ogni tipo."
+    },
+    "pt": {
+     "t": "Ilhas e arquipélagos",
+     "g": "Conhece ilhas vulcânicas, de coral e continentais e grupos de ilhas.",
+     "p": [
+      "Uma ilha é terra rodeada de água e um grupo de ilhas é um arquipélago.",
+      "As ilhas vulcânicas surgem do fundo do mar, como o Havai, e as de coral crescem de recifes.",
+      "As ilhas continentais, como a Grã-Bretanha, já estiveram ligadas ao continente."
+     ],
+     "q": "Preferias viver numa ilha pequena ou numa grande?",
+     "c": "Encontra o Havai, o Japão e as Maldivas num mapa e anota como se formou cada tipo."
+    },
+    "pt_BR": {
+     "t": "Ilhas e arquipélagos",
+     "g": "Conheça ilhas vulcânicas, de coral e continentais e grupos de ilhas.",
+     "p": [
+      "Uma ilha é terra cercada de água e um grupo de ilhas é um arquipélago.",
+      "As ilhas vulcânicas surgem do fundo do mar, como o Havaí, e as de coral crescem de recifes.",
+      "As ilhas continentais, como a Grã-Bretanha, já estiveram ligadas ao continente."
+     ],
+     "q": "Você preferiria viver numa ilha pequena ou numa grande?",
+     "c": "Ache o Havaí, o Japão e as Maldivas num mapa e anote como cada tipo se formou."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Peninsulas and isthmuses",
+     "g": "Spot land almost surrounded by water and the narrow bridges of land between seas.",
+     "p": [
+      "A peninsula is land surrounded by water on three sides, like Italy or Iberia.",
+      "An isthmus is a narrow strip of land linking two larger areas of land.",
+      "The Isthmus of Panama joins North and South America between two oceans."
+     ],
+     "q": "Is there a peninsula you would love to explore?",
+     "c": "Find Italy, the Arabian Peninsula and the Isthmus of Panama on a map."
+    },
+    "de": {
+     "t": "Halbinseln und Landengen",
+     "g": "Erkenne fast vom Wasser umschlossenes Land und schmale Landbrücken zwischen Meeren.",
+     "p": [
+      "Eine Halbinsel ist auf drei Seiten von Wasser umgeben, wie Italien oder Iberien.",
+      "Eine Landenge ist ein schmaler Landstreifen, der zwei größere Länder verbindet.",
+      "Die Landenge von Panama verbindet Nord- und Südamerika zwischen zwei Ozeanen."
+     ],
+     "q": "Gibt es eine Halbinsel, die du gern erkunden würdest?",
+     "c": "Finde Italien, die Arabische Halbinsel und die Landenge von Panama auf der Karte."
+    },
+    "es": {
+     "t": "Penínsulas e istmos",
+     "g": "Reconoce tierra casi rodeada de agua y los estrechos puentes de tierra entre mares.",
+     "p": [
+      "Una península es tierra rodeada de agua por tres lados, como Italia o Iberia.",
+      "Un istmo es una franja estrecha de tierra que une dos zonas de tierra mayores.",
+      "El istmo de Panamá une América del Norte y del Sur entre dos océanos."
+     ],
+     "q": "¿Hay alguna península que te encantaría explorar?",
+     "c": "Encuentra Italia, la península arábiga y el istmo de Panamá en un mapa."
+    },
+    "fr": {
+     "t": "Péninsules et isthmes",
+     "g": "Repère les terres presque entourées d'eau et les étroits ponts de terre entre les mers.",
+     "p": [
+      "Une péninsule est une terre entourée d'eau sur trois côtés, comme l'Italie ou l'Ibérie.",
+      "Un isthme est une étroite bande de terre reliant deux terres plus grandes.",
+      "L'isthme de Panama relie l'Amérique du Nord et du Sud entre deux océans."
+     ],
+     "q": "Y a-t-il une péninsule que tu aimerais explorer ?",
+     "c": "Trouve l'Italie, la péninsule arabique et l'isthme de Panama sur une carte."
+    },
+    "it": {
+     "t": "Penisole e istmi",
+     "g": "Individua terre quasi circondate dall'acqua e i sottili ponti di terra tra i mari.",
+     "p": [
+      "Una penisola è terra circondata dall'acqua su tre lati, come l'Italia o l'Iberia.",
+      "Un istmo è una stretta striscia di terra che collega due terre più grandi.",
+      "L'istmo di Panama unisce Nord e Sud America tra due oceani."
+     ],
+     "q": "C'è una penisola che ti piacerebbe esplorare?",
+     "c": "Trova l'Italia, la penisola arabica e l'istmo di Panama su una mappa."
+    },
+    "pt": {
+     "t": "Penínsulas e istmos",
+     "g": "Reconhece terra quase rodeada de água e as estreitas pontes de terra entre mares.",
+     "p": [
+      "Uma península é terra rodeada de água por três lados, como a Itália ou a Ibéria.",
+      "Um istmo é uma faixa estreita de terra que liga duas áreas de terra maiores.",
+      "O istmo do Panamá une a América do Norte e a do Sul entre dois oceanos."
+     ],
+     "q": "Há alguma península que gostarias de explorar?",
+     "c": "Encontra a Itália, a península Arábica e o istmo do Panamá num mapa."
+    },
+    "pt_BR": {
+     "t": "Penínsulas e istmos",
+     "g": "Reconheça terra quase cercada de água e as estreitas pontes de terra entre mares.",
+     "p": [
+      "Uma península é terra cercada de água por três lados, como a Itália ou a Ibéria.",
+      "Um istmo é uma faixa estreita de terra que liga duas áreas de terra maiores.",
+      "O istmo do Panamá une a América do Norte e a do Sul entre dois oceanos."
+     ],
+     "q": "Há alguma península que você adoraria explorar?",
+     "c": "Ache a Itália, a península Arábica e o istmo do Panamá num mapa."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Coastlines",
+     "g": "Explore cliffs, beaches, fjords and estuaries along the edges of the land.",
+     "p": [
+      "Waves and tides shape coasts, wearing down cliffs and building beaches.",
+      "Fjords are deep inlets carved by glaciers, found in Norway, Chile and New Zealand.",
+      "Estuaries are wide river mouths where fresh and salt water mix."
+     ],
+     "q": "Do you prefer sandy beaches or rocky cliffs by the sea?",
+     "c": "Find a fjord on a map and spot how steep and narrow it is."
+    },
+    "de": {
+     "t": "Küsten",
+     "g": "Entdecke Klippen, Strände, Fjorde und Mündungstrichter an den Rändern des Landes.",
+     "p": [
+      "Wellen und Gezeiten formen Küsten, tragen Klippen ab und bauen Strände auf.",
+      "Fjorde sind tiefe, von Gletschern geformte Buchten, etwa in Norwegen, Chile, Neuseeland.",
+      "Trichtermündungen sind breite Flussmündungen, in denen sich Süß- und Salzwasser mischen."
+     ],
+     "q": "Magst du lieber Sandstrände oder felsige Klippen am Meer?",
+     "c": "Finde einen Fjord auf der Karte und achte darauf, wie steil und schmal er ist."
+    },
+    "es": {
+     "t": "Costas",
+     "g": "Explora acantilados, playas, fiordos y estuarios en los bordes de la tierra.",
+     "p": [
+      "Las olas y las mareas moldean las costas, desgastan acantilados y forman playas.",
+      "Los fiordos son entrantes profundas excavadas por glaciares, en Noruega, Chile y Nueva Zelanda.",
+      "Los estuarios son anchas desembocaduras donde se mezclan agua dulce y salada."
+     ],
+     "q": "¿Prefieres playas de arena o acantilados rocosos junto al mar?",
+     "c": "Encuentra un fiordo en un mapa y observa lo empinado y estrecho que es."
+    },
+    "fr": {
+     "t": "Les côtes",
+     "g": "Explore falaises, plages, fjords et estuaires sur les bords des terres.",
+     "p": [
+      "Vagues et marées façonnent les côtes, usent les falaises et bâtissent des plages.",
+      "Les fjords sont de profondes entailles creusées par les glaciers, en Norvège, au Chili, en Nouvelle-Zélande.",
+      "Les estuaires sont de larges embouchures où se mêlent eau douce et eau salée."
+     ],
+     "q": "Préfères-tu les plages de sable ou les falaises rocheuses au bord de la mer ?",
+     "c": "Trouve un fjord sur une carte et observe combien il est raide et étroit."
+    },
+    "it": {
+     "t": "Le coste",
+     "g": "Esplora scogliere, spiagge, fiordi ed estuari ai margini delle terre.",
+     "p": [
+      "Onde e maree modellano le coste, consumano scogliere e costruiscono spiagge.",
+      "I fiordi sono profonde insenature scavate dai ghiacciai, in Norvegia, Cile e Nuova Zelanda.",
+      "Gli estuari sono ampie foci dove si mescolano acqua dolce e salata."
+     ],
+     "q": "Preferisci spiagge sabbiose o scogliere rocciose in riva al mare?",
+     "c": "Trova un fiordo su una mappa e osserva quanto è ripido e stretto."
+    },
+    "pt": {
+     "t": "As costas",
+     "g": "Explora falésias, praias, fiordes e estuários nas margens da terra.",
+     "p": [
+      "As ondas e as marés moldam as costas, desgastam falésias e constroem praias.",
+      "Os fiordes são reentrâncias profundas escavadas por glaciares, na Noruega, no Chile e na Nova Zelândia.",
+      "Os estuários são largas fozes onde se misturam água doce e salgada."
+     ],
+     "q": "Preferes praias de areia ou falésias rochosas junto ao mar?",
+     "c": "Encontra um fiorde num mapa e repara como é íngreme e estreito."
+    },
+    "pt_BR": {
+     "t": "As costas",
+     "g": "Explore falésias, praias, fiordes e estuários nas bordas da terra.",
+     "p": [
+      "As ondas e as marés moldam as costas, desgastam falésias e constroem praias.",
+      "Os fiordes são reentrâncias profundas escavadas por geleiras, na Noruega, no Chile e na Nova Zelândia.",
+      "Os estuários são largas fozes onde se misturam água doce e salgada."
+     ],
+     "q": "Você prefere praias de areia ou falésias rochosas à beira-mar?",
+     "c": "Ache um fiorde num mapa e veja como ele é íngreme e estreito."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Glaciers and ice sheets",
+     "g": "Meet rivers of ice in the mountains and the huge ice sheets of Greenland and Antarctica.",
+     "p": [
+      "A glacier is a mass of ice that very slowly flows downhill under its own weight.",
+      "Ice sheets are vast domes of ice that cover most of Greenland and Antarctica.",
+      "Together, glaciers and ice sheets hold most of the planet's fresh water."
+     ],
+     "q": "Have you ever seen a glacier or snow that stays all year?",
+     "c": "Find a glacier in the Alps and the ice sheet of Greenland on a map."
+    },
+    "de": {
+     "t": "Gletscher und Eisschilde",
+     "g": "Lerne Eisströme im Gebirge und die riesigen Eisschilde Grönlands und der Antarktis kennen.",
+     "p": [
+      "Ein Gletscher ist eine Eismasse, die unter ihrem Gewicht sehr langsam bergab fließt.",
+      "Eisschilde sind riesige Eiskuppeln, die große Teile Grönlands und der Antarktis bedecken.",
+      "Gletscher und Eisschilde speichern zusammen den Großteil des Süßwassers der Erde."
+     ],
+     "q": "Hast du schon einmal einen Gletscher oder ganzjährigen Schnee gesehen?",
+     "c": "Finde einen Gletscher in den Alpen und den Eisschild Grönlands auf der Karte."
+    },
+    "es": {
+     "t": "Glaciares y casquetes de hielo",
+     "g": "Conoce los ríos de hielo de las montañas y los enormes casquetes de Groenlandia y la Antártida.",
+     "p": [
+      "Un glaciar es una masa de hielo que fluye muy lentamente cuesta abajo por su peso.",
+      "Los casquetes son enormes cúpulas de hielo que cubren gran parte de Groenlandia y la Antártida.",
+      "Glaciares y casquetes guardan juntos la mayor parte del agua dulce del planeta."
+     ],
+     "q": "¿Has visto alguna vez un glaciar o nieve que dura todo el año?",
+     "c": "Encuentra un glaciar de los Alpes y el casquete de Groenlandia en un mapa."
+    },
+    "fr": {
+     "t": "Glaciers et calottes glaciaires",
+     "g": "Découvre les fleuves de glace des montagnes et les immenses calottes du Groenland et de l'Antarctique.",
+     "p": [
+      "Un glacier est une masse de glace qui coule très lentement vers l'aval sous son poids.",
+      "Les calottes sont de vastes dômes de glace qui couvrent une grande part du Groenland et de l'Antarctique.",
+      "Glaciers et calottes contiennent ensemble l'essentiel de l'eau douce de la planète."
+     ],
+     "q": "As-tu déjà vu un glacier ou de la neige qui dure toute l'année ?",
+     "c": "Trouve un glacier des Alpes et la calotte du Groenland sur une carte."
+    },
+    "it": {
+     "t": "Ghiacciai e calotte glaciali",
+     "g": "Conosci i fiumi di ghiaccio delle montagne e le enormi calotte di Groenlandia e Antartide.",
+     "p": [
+      "Un ghiacciaio è una massa di ghiaccio che scorre lentissima a valle per il suo peso.",
+      "Le calotte sono vaste cupole di ghiaccio che coprono gran parte di Groenlandia e Antartide.",
+      "Insieme ghiacciai e calotte custodiscono la maggior parte dell'acqua dolce del pianeta."
+     ],
+     "q": "Hai mai visto un ghiacciaio o neve che dura tutto l'anno?",
+     "c": "Trova un ghiacciaio delle Alpi e la calotta della Groenlandia su una mappa."
+    },
+    "pt": {
+     "t": "Glaciares e mantos de gelo",
+     "g": "Conhece os rios de gelo das montanhas e os enormes mantos da Gronelândia e da Antártida.",
+     "p": [
+      "Um glaciar é uma massa de gelo que flui muito lentamente encosta abaixo pelo seu peso.",
+      "Os mantos de gelo são vastas cúpulas que cobrem grande parte da Gronelândia e da Antártida.",
+      "Glaciares e mantos guardam juntos a maior parte da água doce do planeta."
+     ],
+     "q": "Já viste um glaciar ou neve que dura o ano todo?",
+     "c": "Encontra um glaciar dos Alpes e o manto de gelo da Gronelândia num mapa."
+    },
+    "pt_BR": {
+     "t": "Geleiras e mantos de gelo",
+     "g": "Conheça os rios de gelo das montanhas e os enormes mantos da Groenlândia e da Antártida.",
+     "p": [
+      "Uma geleira é uma massa de gelo que flui muito lentamente encosta abaixo pelo seu peso.",
+      "Os mantos de gelo são vastas cúpulas que cobrem grande parte da Groenlândia e da Antártida.",
+      "Geleiras e mantos guardam juntos a maior parte da água doce do planeta."
+     ],
+     "q": "Você já viu uma geleira ou neve que dura o ano todo?",
+     "c": "Ache uma geleira dos Alpes e o manto de gelo da Groenlândia num mapa."
+    }
+   }
+  }
+ ]
+}

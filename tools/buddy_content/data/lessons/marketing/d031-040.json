@@ -1,0 +1,835 @@
+{
+ "topic": "marketing",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is a brand?",
+     "g": "Understand brand as the promise, personality and feeling people associate with you.",
+     "p": [
+      "A brand is not just a logo; it is what people expect and feel when they think of you.",
+      "It is built by everything you do, say and deliver, again and again.",
+      "A strong brand makes choosing easier because people know what they will get."
+     ],
+     "q": "What three words come to mind for a brand you trust?",
+     "c": "Write what a brand you love promises, in one sentence, without naming its products."
+    },
+    "de": {
+     "t": "Was ist eine Marke?",
+     "g": "Marke als Versprechen, Persönlichkeit und Gefühl verstehen, das Menschen mit dir verbinden.",
+     "p": [
+      "Eine Marke ist nicht nur ein Logo, sondern was Menschen erwarten und fühlen, wenn sie an dich denken.",
+      "Sie entsteht durch alles, was du tust, sagst und lieferst, immer wieder.",
+      "Eine starke Marke erleichtert die Wahl, weil man weiß, was man bekommt."
+     ],
+     "q": "Welche drei Worte fallen dir zu einer Marke ein, der du vertraust?",
+     "c": "Schreibe in einem Satz, was eine Marke, die du liebst, verspricht, ohne ihre Produkte zu nennen."
+    },
+    "es": {
+     "t": "¿Qué es una marca?",
+     "g": "Entender la marca como la promesa, personalidad y sensación que la gente asocia contigo.",
+     "p": [
+      "Una marca no es solo un logotipo: es lo que la gente espera y siente al pensar en ti.",
+      "Se construye con todo lo que haces, dices y entregas, una y otra vez.",
+      "Una marca fuerte facilita elegir porque la gente sabe lo que recibirá."
+     ],
+     "q": "¿Qué tres palabras te vienen a la mente de una marca en la que confías?",
+     "c": "Escribe en una frase qué promete una marca que te gusta, sin nombrar sus productos."
+    },
+    "fr": {
+     "t": "Qu'est-ce qu'une marque ?",
+     "g": "Comprendre la marque comme la promesse, la personnalité et le ressenti associés à toi.",
+     "p": [
+      "Une marque n'est pas qu'un logo : c'est ce que les gens attendent et ressentent en pensant à toi.",
+      "Elle se construit par tout ce que tu fais, dis et livres, encore et encore.",
+      "Une marque forte facilite le choix, car on sait ce qu'on va recevoir."
+     ],
+     "q": "Quels trois mots te viennent pour une marque en laquelle tu as confiance ?",
+     "c": "Écris en une phrase ce que promet une marque que tu aimes, sans citer ses produits."
+    },
+    "it": {
+     "t": "Che cos'è un marchio?",
+     "g": "Capire il marchio come la promessa, la personalità e la sensazione che le persone associano a te.",
+     "p": [
+      "Un marchio non è solo un logo: è ciò che la gente si aspetta e sente pensando a te.",
+      "Si costruisce con tutto ciò che fai, dici e consegni, ancora e ancora.",
+      "Un marchio forte facilita la scelta perché si sa cosa si riceverà."
+     ],
+     "q": "Quali tre parole ti vengono in mente per un marchio di cui ti fidi?",
+     "c": "Scrivi in una frase cosa promette un marchio che ami, senza nominare i prodotti."
+    },
+    "pt": {
+     "t": "O que é uma marca?",
+     "g": "Perceber a marca como a promessa, personalidade e sensação que as pessoas associam a ti.",
+     "p": [
+      "Uma marca não é só um logótipo: é o que as pessoas esperam e sentem ao pensar em ti.",
+      "Constrói-se com tudo o que fazes, dizes e entregas, vezes sem conta.",
+      "Uma marca forte facilita a escolha porque se sabe o que se vai receber."
+     ],
+     "q": "Que três palavras te ocorrem de uma marca em que confias?",
+     "c": "Escreve numa frase o que promete uma marca de que gostas, sem nomear os produtos."
+    },
+    "pt_BR": {
+     "t": "O que é uma marca?",
+     "g": "Entender a marca como a promessa, personalidade e sensação que as pessoas associam a você.",
+     "p": [
+      "Uma marca não é só um logo: é o que as pessoas esperam e sentem ao pensar em você.",
+      "Ela é construída com tudo o que você faz, diz e entrega, vez após vez.",
+      "Uma marca forte facilita a escolha porque se sabe o que vai receber."
+     ],
+     "q": "Que três palavras vêm à sua mente sobre uma marca em que você confia?",
+     "c": "Escreva em uma frase o que promete uma marca de que você gosta, sem citar os produtos."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brand identity basics",
+     "g": "See name, logo, colours, fonts and voice working together.",
+     "p": [
+      "Identity is the visible and audible side of a brand: how it looks and sounds.",
+      "Name, logo, colours, fonts and voice should feel like one family.",
+      "Identity expresses the brand; it cannot replace the substance behind it."
+     ],
+     "q": "Which brand looks instantly like itself even without its name?",
+     "c": "List the five identity pieces of a brand you know and rate how well they match."
+    },
+    "de": {
+     "t": "Grundlagen der Markenidentität",
+     "g": "Name, Logo, Farben, Schrift und Stimme im Zusammenspiel sehen.",
+     "p": [
+      "Identität ist die sicht- und hörbare Seite einer Marke: wie sie aussieht und klingt.",
+      "Name, Logo, Farben, Schrift und Stimme sollten wie eine Familie wirken.",
+      "Identität drückt die Marke aus; sie ersetzt nie die Substanz dahinter."
+     ],
+     "q": "Welche Marke erkennst du sofort, auch ohne ihren Namen?",
+     "c": "Liste die fünf Identitätsbausteine einer Marke auf und bewerte, wie gut sie zusammenpassen."
+    },
+    "es": {
+     "t": "Fundamentos de la identidad de marca",
+     "g": "Ver cómo nombre, logotipo, colores, tipografía y voz trabajan juntos.",
+     "p": [
+      "La identidad es el lado visible y audible de una marca: cómo se ve y suena.",
+      "Nombre, logotipo, colores, tipografía y voz deben parecer una misma familia.",
+      "La identidad expresa la marca; no puede sustituir la sustancia que hay detrás."
+     ],
+     "q": "¿Qué marca reconoces al instante incluso sin su nombre?",
+     "c": "Lista las cinco piezas de identidad de una marca y valora cuánto encajan entre sí."
+    },
+    "fr": {
+     "t": "Les bases de l'identité de marque",
+     "g": "Voir nom, logo, couleurs, polices et voix travailler ensemble.",
+     "p": [
+      "L'identité est le côté visible et audible d'une marque : son allure et sa sonorité.",
+      "Nom, logo, couleurs, polices et voix doivent former une même famille.",
+      "L'identité exprime la marque ; elle ne remplace pas le fond."
+     ],
+     "q": "Quelle marque reconnais-tu aussitôt même sans son nom ?",
+     "c": "Liste les cinq éléments d'identité d'une marque et juge leur cohérence."
+    },
+    "it": {
+     "t": "Le basi dell'identità di marca",
+     "g": "Vedere nome, logo, colori, caratteri e voce lavorare insieme.",
+     "p": [
+      "L'identità è il lato visibile e udibile di un marchio: come appare e suona.",
+      "Nome, logo, colori, caratteri e voce devono sembrare una famiglia.",
+      "L'identità esprime il marchio; non può sostituire la sostanza che c'è dietro."
+     ],
+     "q": "Quale marchio riconosci subito anche senza il suo nome?",
+     "c": "Elenca i cinque elementi d'identità di un marchio e valuta quanto si accordano."
+    },
+    "pt": {
+     "t": "Fundamentos da identidade de marca",
+     "g": "Ver nome, logótipo, cores, tipos de letra e voz a trabalhar em conjunto.",
+     "p": [
+      "A identidade é o lado visível e audível de uma marca: como parece e soa.",
+      "Nome, logótipo, cores, letra e voz devem parecer da mesma família.",
+      "A identidade exprime a marca; não substitui a substância que está por trás."
+     ],
+     "q": "Que marca reconheces logo mesmo sem o nome?",
+     "c": "Lista as cinco peças de identidade de uma marca e avalia o quanto combinam."
+    },
+    "pt_BR": {
+     "t": "Fundamentos da identidade de marca",
+     "g": "Ver nome, logo, cores, fontes e voz trabalhando juntos.",
+     "p": [
+      "A identidade é o lado visível e audível de uma marca: como ela parece e soa.",
+      "Nome, logo, cores, fontes e voz devem parecer da mesma família.",
+      "A identidade expressa a marca; não substitui a substância que existe por trás."
+     ],
+     "q": "Que marca você reconhece na hora mesmo sem o nome?",
+     "c": "Liste as cinco peças de identidade de uma marca e avalie o quanto combinam."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The power of a name",
+     "g": "See what makes brand names memorable and easy to share.",
+     "p": [
+      "Good names are short, easy to say, easy to spell and pleasant to hear.",
+      "They can describe, suggest a feeling, or be invented words that you give meaning.",
+      "Check that your name works in your languages and is free to use."
+     ],
+     "q": "Which brand name do you find clever, and why does it work?",
+     "c": "Brainstorm ten names for an imaginary product and keep the two you can say easily."
+    },
+    "de": {
+     "t": "Die Kraft eines Namens",
+     "g": "Sehen, was Markennamen einprägsam und leicht weiterzusagen macht.",
+     "p": [
+      "Gute Namen sind kurz, leicht auszusprechen, leicht zu schreiben und angenehm zu hören.",
+      "Sie können beschreiben, ein Gefühl wecken oder erfundene Wörter sein, denen du Sinn gibst.",
+      "Prüfe, ob der Name in deinen Sprachen funktioniert und frei nutzbar ist."
+     ],
+     "q": "Welchen Markennamen findest du clever und warum funktioniert er?",
+     "c": "Sammle zehn Namen für ein erfundenes Produkt und behalte die zwei, die leicht klingen."
+    },
+    "es": {
+     "t": "El poder de un nombre",
+     "g": "Ver qué hace que los nombres de marca sean memorables y fáciles de compartir.",
+     "p": [
+      "Los buenos nombres son cortos, fáciles de decir, de escribir y agradables de oír.",
+      "Pueden describir, sugerir una emoción o ser palabras inventadas a las que das sentido.",
+      "Comprueba que el nombre funciona en tus idiomas y que está libre para usarse."
+     ],
+     "q": "¿Qué nombre de marca te parece ingenioso y por qué funciona?",
+     "c": "Haz una lluvia de diez nombres para un producto imaginario y quédate con los dos más fáciles."
+    },
+    "fr": {
+     "t": "Le pouvoir d'un nom",
+     "g": "Voir ce qui rend un nom de marque mémorable et facile à partager.",
+     "p": [
+      "Les bons noms sont courts, faciles à dire, à écrire et agréables à entendre.",
+      "Ils peuvent décrire, suggérer une émotion ou être des mots inventés auxquels tu donnes du sens.",
+      "Vérifie que le nom fonctionne dans tes langues et qu'il est libre d'usage."
+     ],
+     "q": "Quel nom de marque trouves-tu malin, et pourquoi marche-t-il ?",
+     "c": "Trouve dix noms pour un produit imaginaire et garde les deux faciles à dire."
+    },
+    "it": {
+     "t": "Il potere di un nome",
+     "g": "Vedere cosa rende un nome di marca memorabile e facile da condividere.",
+     "p": [
+      "I buoni nomi sono brevi, facili da dire, da scrivere e piacevoli da sentire.",
+      "Possono descrivere, suggerire un'emozione o essere parole inventate a cui dai significato.",
+      "Controlla che il nome funzioni nelle tue lingue e sia libero da usare."
+     ],
+     "q": "Quale nome di marca trovi geniale e perché funziona?",
+     "c": "Fai un elenco di dieci nomi per un prodotto immaginario e tieni i due più facili da dire."
+    },
+    "pt": {
+     "t": "O poder de um nome",
+     "g": "Ver o que torna os nomes de marca memoráveis e fáceis de partilhar.",
+     "p": [
+      "Bons nomes são curtos, fáceis de dizer, de escrever e agradáveis de ouvir.",
+      "Podem descrever, sugerir uma emoção ou ser palavras inventadas a que dás sentido.",
+      "Confirma que o nome funciona nas tuas línguas e está livre para usar."
+     ],
+     "q": "Que nome de marca achas engenhoso e porque funciona?",
+     "c": "Faz uma lista de dez nomes para um produto imaginário e fica com os dois mais fáceis de dizer."
+    },
+    "pt_BR": {
+     "t": "O poder de um nome",
+     "g": "Ver o que torna os nomes de marca memoráveis e fáceis de compartilhar.",
+     "p": [
+      "Bons nomes são curtos, fáceis de dizer, de escrever e agradáveis de ouvir.",
+      "Podem descrever, sugerir uma emoção ou ser palavras inventadas às quais você dá sentido.",
+      "Confirme que o nome funciona nos seus idiomas e está livre para uso."
+     ],
+     "q": "Que nome de marca você acha esperto e por que ele funciona?",
+     "c": "Faça uma lista de dez nomes para um produto imaginário e fique com os dois mais fáceis de dizer."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Logos and symbols",
+     "g": "See how simple shapes become instantly recognisable.",
+     "p": [
+      "The best logos are simple, distinctive and still clear when they are tiny.",
+      "A symbol can carry meaning, but its meaning grows through repeated use.",
+      "Test your logo in one colour, small size and on different backgrounds."
+     ],
+     "q": "Which logo can you draw from memory, and what makes it easy?",
+     "c": "Sketch your own logo idea in three simple shapes and check it at stamp size."
+    },
+    "de": {
+     "t": "Logos und Symbole",
+     "g": "Sehen, wie einfache Formen sofort wiedererkennbar werden.",
+     "p": [
+      "Die besten Logos sind einfach, eigenständig und auch winzig noch klar.",
+      "Ein Symbol kann Bedeutung tragen, die aber durch wiederholte Nutzung wächst.",
+      "Teste dein Logo einfarbig, klein und auf verschiedenen Hintergründen."
+     ],
+     "q": "Welches Logo kannst du aus dem Gedächtnis zeichnen und was macht es leicht?",
+     "c": "Skizziere deine Logoidee aus drei einfachen Formen und prüfe sie in Briefmarkengröße."
+    },
+    "es": {
+     "t": "Logotipos y símbolos",
+     "g": "Ver cómo formas simples se vuelven reconocibles al instante.",
+     "p": [
+      "Los mejores logotipos son simples, distintivos y claros incluso en tamaño minúsculo.",
+      "Un símbolo puede tener significado, pero este crece con el uso repetido.",
+      "Prueba tu logotipo a un color, en tamaño pequeño y sobre distintos fondos."
+     ],
+     "q": "¿Qué logotipo sabrías dibujar de memoria y qué lo hace fácil?",
+     "c": "Esboza tu idea de logotipo con tres formas simples y compruébala en tamaño sello."
+    },
+    "fr": {
+     "t": "Logos et symboles",
+     "g": "Voir comment de simples formes deviennent instantanément reconnaissables.",
+     "p": [
+      "Les meilleurs logos sont simples, distinctifs et restent lisibles en tout petit.",
+      "Un symbole peut porter un sens, mais ce sens grandit avec la répétition.",
+      "Teste ton logo en une couleur, en petit et sur différents fonds."
+     ],
+     "q": "Quel logo saurais-tu dessiner de mémoire, et qu'est-ce qui le rend facile ?",
+     "c": "Esquisse ton idée de logo en trois formes simples et vérifie-la à taille de timbre."
+    },
+    "it": {
+     "t": "Loghi e simboli",
+     "g": "Vedere come forme semplici diventano riconoscibili all'istante.",
+     "p": [
+      "I migliori loghi sono semplici, distintivi e chiari anche in piccolissimo.",
+      "Un simbolo può avere un significato, ma questo cresce con l'uso ripetuto.",
+      "Prova il tuo logo a un colore, in piccolo e su sfondi diversi."
+     ],
+     "q": "Quale logo sapresti disegnare a memoria e cosa lo rende facile?",
+     "c": "Abbozza la tua idea di logo con tre forme semplici e verificala a misura di francobollo."
+    },
+    "pt": {
+     "t": "Logótipos e símbolos",
+     "g": "Ver como formas simples se tornam reconhecíveis de imediato.",
+     "p": [
+      "Os melhores logótipos são simples, distintivos e claros mesmo muito pequenos.",
+      "Um símbolo pode ter significado, mas este cresce com o uso repetido.",
+      "Testa o teu logótipo a uma cor, em tamanho pequeno e em fundos diferentes."
+     ],
+     "q": "Que logótipo sabes desenhar de memória e o que o torna fácil?",
+     "c": "Esboça a tua ideia de logótipo com três formas simples e verifica-a em tamanho de selo."
+    },
+    "pt_BR": {
+     "t": "Logos e símbolos",
+     "g": "Ver como formas simples se tornam reconhecíveis na hora.",
+     "p": [
+      "Os melhores logos são simples, distintivos e claros mesmo bem pequenos.",
+      "Um símbolo pode ter significado, mas ele cresce com o uso repetido.",
+      "Teste seu logo em uma cor, em tamanho pequeno e em fundos diferentes."
+     ],
+     "q": "Que logo você sabe desenhar de memória e o que o torna fácil?",
+     "c": "Esboce sua ideia de logo com três formas simples e confira em tamanho de selo."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Colour in branding",
+     "g": "See how colours carry associations and why consistency matters.",
+     "p": [
+      "Colours trigger feelings, but their meaning depends on culture and context.",
+      "Pick a main colour, one or two supporting ones and a neutral.",
+      "Using the same colours everywhere makes a brand recognisable at a glance."
+     ],
+     "q": "Which colour do you most link with a brand, and what does it make you feel?",
+     "c": "Choose a palette of three colours for a brand idea and write what each should feel like."
+    },
+    "de": {
+     "t": "Farbe im Branding",
+     "g": "Sehen, wie Farben Assoziationen tragen und warum Konsistenz zählt.",
+     "p": [
+      "Farben lösen Gefühle aus, doch ihre Bedeutung hängt von Kultur und Kontext ab.",
+      "Wähle eine Hauptfarbe, ein bis zwei Begleitfarben und einen Neutralton.",
+      "Überall gleiche Farben machen eine Marke auf einen Blick erkennbar."
+     ],
+     "q": "Welche Farbe verbindest du am stärksten mit einer Marke und was löst sie in dir aus?",
+     "c": "Wähle eine Palette aus drei Farben für eine Markenidee und schreibe, wie sich jede anfühlen soll."
+    },
+    "es": {
+     "t": "El color en la marca",
+     "g": "Ver cómo los colores llevan asociaciones y por qué importa la coherencia.",
+     "p": [
+      "Los colores despiertan emociones, pero su significado depende de la cultura y el contexto.",
+      "Elige un color principal, uno o dos de apoyo y un neutro.",
+      "Usar los mismos colores en todas partes hace reconocible una marca de un vistazo."
+     ],
+     "q": "¿Qué color asocias más a una marca y qué te hace sentir?",
+     "c": "Elige una paleta de tres colores para una marca y escribe qué debe transmitir cada uno."
+    },
+    "fr": {
+     "t": "La couleur dans l'image de marque",
+     "g": "Voir comment les couleurs portent des associations et pourquoi la constance compte.",
+     "p": [
+      "Les couleurs éveillent des émotions, mais leur sens dépend de la culture et du contexte.",
+      "Choisis une couleur principale, une ou deux d'appui et un neutre.",
+      "Les mêmes couleurs partout rendent une marque reconnaissable d'un coup d'œil."
+     ],
+     "q": "Quelle couleur associes-tu le plus à une marque, et que te fait-elle ressentir ?",
+     "c": "Choisis une palette de trois couleurs pour une marque et écris ce que chacune doit évoquer."
+    },
+    "it": {
+     "t": "Il colore nel branding",
+     "g": "Vedere come i colori portano associazioni e perché la coerenza conta.",
+     "p": [
+      "I colori evocano emozioni, ma il loro significato dipende da cultura e contesto.",
+      "Scegli un colore principale, uno o due di supporto e un neutro.",
+      "Usare gli stessi colori ovunque rende un marchio riconoscibile a colpo d'occhio."
+     ],
+     "q": "Quale colore associ di più a un marchio e cosa ti fa sentire?",
+     "c": "Scegli una palette di tre colori per un marchio e scrivi cosa deve evocare ciascuno."
+    },
+    "pt": {
+     "t": "A cor na marca",
+     "g": "Ver como as cores trazem associações e porque a consistência importa.",
+     "p": [
+      "As cores despertam emoções, mas o seu significado depende da cultura e do contexto.",
+      "Escolhe uma cor principal, uma ou duas de apoio e uma neutra.",
+      "Usar as mesmas cores em todo o lado torna a marca reconhecível num relance."
+     ],
+     "q": "Que cor associas mais a uma marca e o que te faz sentir?",
+     "c": "Escolhe uma paleta de três cores para uma marca e escreve o que cada uma deve transmitir."
+    },
+    "pt_BR": {
+     "t": "A cor na marca",
+     "g": "Ver como as cores trazem associações e por que a consistência importa.",
+     "p": [
+      "As cores despertam emoções, mas o significado delas depende da cultura e do contexto.",
+      "Escolha uma cor principal, uma ou duas de apoio e uma neutra.",
+      "Usar as mesmas cores em todo lugar torna a marca reconhecível num relance."
+     ],
+     "q": "Que cor você mais associa a uma marca e o que ela faz você sentir?",
+     "c": "Escolha uma paleta de três cores para uma marca e escreva o que cada uma deve transmitir."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Typography and brand feel",
+     "g": "See how fonts make a brand look playful, serious or elegant.",
+     "p": [
+      "Round, friendly letters feel casual; thin, tall ones feel refined; heavy ones feel strong.",
+      "Readability comes first: if people struggle to read it, the font has failed.",
+      "Use one or two fonts consistently rather than many that compete."
+     ],
+     "q": "Which font style would you pick for a calm, trustworthy brand?",
+     "c": "Write one brand name in three different font styles and note how each feels."
+    },
+    "de": {
+     "t": "Typografie und Markengefühl",
+     "g": "Sehen, wie Schriften eine Marke verspielt, seriös oder elegant wirken lassen.",
+     "p": [
+      "Runde, freundliche Buchstaben wirken locker, schmale hohe edel, schwere stark.",
+      "Lesbarkeit zuerst: Wenn Menschen sich beim Lesen quälen, hat die Schrift versagt.",
+      "Nutze ein oder zwei Schriften konsequent statt vieler, die konkurrieren."
+     ],
+     "q": "Welchen Schriftstil würdest du für eine ruhige, vertrauenswürdige Marke wählen?",
+     "c": "Schreibe einen Markennamen in drei Schriftstilen und notiere, wie jeder wirkt."
+    },
+    "es": {
+     "t": "Tipografía y sensación de marca",
+     "g": "Ver cómo las fuentes hacen que una marca parezca divertida, seria o elegante.",
+     "p": [
+      "Las letras redondas y amables parecen informales; las finas y altas, refinadas; las gruesas, fuertes.",
+      "Lo primero es la legibilidad: si cuesta leerla, la fuente ha fallado.",
+      "Usa una o dos fuentes de forma coherente en lugar de muchas que compitan."
+     ],
+     "q": "¿Qué estilo de letra elegirías para una marca tranquila y de confianza?",
+     "c": "Escribe un nombre de marca en tres estilos de letra y anota cómo se siente cada uno."
+    },
+    "fr": {
+     "t": "Typographie et ressenti de marque",
+     "g": "Voir comment les polices rendent une marque ludique, sérieuse ou élégante.",
+     "p": [
+      "Des lettres rondes et amicales font décontracté ; fines et hautes, raffiné ; épaisses, solide.",
+      "La lisibilité d'abord : si on peine à lire, la police a échoué.",
+      "Utilise une ou deux polices avec constance plutôt que beaucoup qui se concurrencent."
+     ],
+     "q": "Quel style de police choisirais-tu pour une marque calme et fiable ?",
+     "c": "Écris un nom de marque dans trois styles de police et note l'effet de chacun."
+    },
+    "it": {
+     "t": "Tipografia e sensazione di marca",
+     "g": "Vedere come i caratteri rendono un marchio giocoso, serio o elegante.",
+     "p": [
+      "Lettere tonde e amichevoli sembrano informali; sottili e alte, raffinate; pesanti, forti.",
+      "Prima di tutto la leggibilità: se si fatica a leggere, il carattere ha fallito.",
+      "Usa uno o due caratteri con coerenza invece di molti che competono."
+     ],
+     "q": "Quale stile di carattere sceglieresti per un marchio calmo e affidabile?",
+     "c": "Scrivi il nome di un marchio in tre stili di carattere e annota come appare ciascuno."
+    },
+    "pt": {
+     "t": "Tipografia e sensação de marca",
+     "g": "Ver como as letras tornam uma marca divertida, séria ou elegante.",
+     "p": [
+      "Letras redondas e amigáveis parecem informais; finas e altas, refinadas; pesadas, fortes.",
+      "A legibilidade vem primeiro: se custa a ler, a letra falhou.",
+      "Usa uma ou duas letras de forma consistente em vez de muitas que competem."
+     ],
+     "q": "Que estilo de letra escolherias para uma marca calma e de confiança?",
+     "c": "Escreve o nome de uma marca em três estilos de letra e anota como cada um soa."
+    },
+    "pt_BR": {
+     "t": "Tipografia e sensação de marca",
+     "g": "Ver como as fontes tornam uma marca divertida, séria ou elegante.",
+     "p": [
+      "Letras redondas e amigáveis parecem informais; finas e altas, refinadas; pesadas, fortes.",
+      "A legibilidade vem primeiro: se custa a ler, a fonte falhou.",
+      "Use uma ou duas fontes de forma consistente em vez de muitas que competem."
+     ],
+     "q": "Que estilo de fonte você escolheria para uma marca calma e confiável?",
+     "c": "Escreva o nome de uma marca em três estilos de fonte e anote como cada um soa."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brand voice and tone",
+     "g": "Choose how your brand sounds and keep it consistent.",
+     "p": [
+      "Voice is your brand's steady personality in words; tone adjusts to the moment.",
+      "You may joke in a welcome message, but be calm and clear when fixing a problem.",
+      "Write down three voice words and a few do and do not examples."
+     ],
+     "q": "How would you describe the voice of a brand you enjoy hearing from?",
+     "c": "Rewrite one plain sentence in two different voices, such as warm and playful."
+    },
+    "de": {
+     "t": "Markenstimme und Tonalität",
+     "g": "Wählen, wie deine Marke klingt, und konsequent bleiben.",
+     "p": [
+      "Die Stimme ist die beständige Persönlichkeit deiner Marke in Worten; der Ton passt sich dem Moment an.",
+      "In einer Willkommensnachricht darfst du scherzen, bei einem Problem bleibst du ruhig und klar.",
+      "Schreibe drei Stimmwörter und ein paar Beispiele für Ja und Nein auf."
+     ],
+     "q": "Wie würdest du die Stimme einer Marke beschreiben, von der du gern hörst?",
+     "c": "Schreibe einen schlichten Satz in zwei Stimmen um, etwa herzlich und verspielt."
+    },
+    "es": {
+     "t": "Voz y tono de marca",
+     "g": "Elegir cómo suena tu marca y mantenerlo con coherencia.",
+     "p": [
+      "La voz es la personalidad constante de tu marca en palabras; el tono se adapta al momento.",
+      "Puedes bromear en un mensaje de bienvenida, pero mantén calma y claridad al resolver un problema.",
+      "Anota tres palabras de voz y algunos ejemplos de qué sí y qué no."
+     ],
+     "q": "¿Cómo describirías la voz de una marca de la que te gusta recibir mensajes?",
+     "c": "Reescribe una frase sencilla con dos voces distintas, como cálida y juguetona."
+    },
+    "fr": {
+     "t": "Voix et ton de marque",
+     "g": "Choisir comment ta marque s'exprime et rester constant.",
+     "p": [
+      "La voix est la personnalité stable de ta marque en mots ; le ton s'adapte au moment.",
+      "Tu peux plaisanter dans un message d'accueil, mais rester calme et clair face à un souci.",
+      "Note trois mots de voix et quelques exemples de ce qui se fait ou non."
+     ],
+     "q": "Comment décrirais-tu la voix d'une marque dont tu aimes les messages ?",
+     "c": "Réécris une phrase simple avec deux voix différentes, par exemple chaleureuse et enjouée."
+    },
+    "it": {
+     "t": "Voce e tono del marchio",
+     "g": "Scegliere come suona il tuo marchio e restare coerente.",
+     "p": [
+      "La voce è la personalità costante del marchio nelle parole; il tono si adatta al momento.",
+      "Puoi scherzare in un messaggio di benvenuto, ma restare calmo e chiaro davanti a un problema.",
+      "Annota tre parole di voce e qualche esempio di cosa sì e cosa no."
+     ],
+     "q": "Come descriveresti la voce di un marchio di cui ti piace ricevere messaggi?",
+     "c": "Riscrivi una frase semplice con due voci diverse, ad esempio calda e giocosa."
+    },
+    "pt": {
+     "t": "Voz e tom da marca",
+     "g": "Escolher como a tua marca soa e manter a coerência.",
+     "p": [
+      "A voz é a personalidade constante da marca em palavras; o tom ajusta-se ao momento.",
+      "Podes brincar numa mensagem de boas-vindas, mas manter calma e clareza ao resolver um problema.",
+      "Anota três palavras de voz e alguns exemplos do que sim e do que não."
+     ],
+     "q": "Como descreverias a voz de uma marca de que gostas de receber mensagens?",
+     "c": "Reescreve uma frase simples com duas vozes diferentes, como calorosa e divertida."
+    },
+    "pt_BR": {
+     "t": "Voz e tom da marca",
+     "g": "Escolher como sua marca soa e manter a coerência.",
+     "p": [
+      "A voz é a personalidade constante da marca em palavras; o tom se ajusta ao momento.",
+      "Você pode brincar numa mensagem de boas-vindas, mas manter calma e clareza ao resolver um problema.",
+      "Anote três palavras de voz e alguns exemplos do que pode e do que não pode."
+     ],
+     "q": "Como você descreveria a voz de uma marca de que gosta de receber mensagens?",
+     "c": "Reescreva uma frase simples com duas vozes diferentes, como calorosa e divertida."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brand personality",
+     "g": "Describe a brand as if it were a person.",
+     "p": [
+      "Ask: if this brand walked into a room, how would it dress, speak and behave?",
+      "Personality traits like curious, calm, bold or caring guide every choice.",
+      "A personality works when it is real and shows in actions, not just words."
+     ],
+     "q": "If your favourite brand were a person, who would they be?",
+     "c": "Describe a brand as a person in four lines: age feel, style, habits, favourite phrase."
+    },
+    "de": {
+     "t": "Markenpersönlichkeit",
+     "g": "Eine Marke beschreiben, als wäre sie ein Mensch.",
+     "p": [
+      "Frage dich: Wie würde diese Marke gekleidet, sprechend und handelnd einen Raum betreten?",
+      "Eigenschaften wie neugierig, ruhig, mutig oder fürsorglich lenken jede Entscheidung.",
+      "Eine Persönlichkeit wirkt, wenn sie echt ist und sich in Taten zeigt, nicht nur in Worten."
+     ],
+     "q": "Wenn deine Lieblingsmarke ein Mensch wäre, wer wäre sie?",
+     "c": "Beschreibe eine Marke als Person in vier Zeilen: Altersgefühl, Stil, Gewohnheiten, Lieblingssatz."
+    },
+    "es": {
+     "t": "Personalidad de marca",
+     "g": "Describir una marca como si fuera una persona.",
+     "p": [
+      "Pregunta: si esta marca entrara en una sala, ¿cómo vestiría, hablaría y se comportaría?",
+      "Rasgos como curiosa, serena, atrevida o cuidadora guían cada decisión.",
+      "Una personalidad funciona si es real y se ve en los hechos, no solo en palabras."
+     ],
+     "q": "Si tu marca favorita fuera una persona, ¿quién sería?",
+     "c": "Describe una marca como persona en cuatro líneas: edad, estilo, hábitos, frase favorita."
+    },
+    "fr": {
+     "t": "La personnalité de marque",
+     "g": "Décrire une marque comme si c'était une personne.",
+     "p": [
+      "Demande-toi : si cette marque entrait dans une pièce, comment s'habillerait-elle, parlerait-elle, se comporterait-elle ?",
+      "Des traits comme curieuse, calme, audacieuse ou attentionnée guident chaque choix.",
+      "Une personnalité fonctionne si elle est réelle et se voit dans les actes, pas seulement les mots."
+     ],
+     "q": "Si ta marque préférée était une personne, qui serait-elle ?",
+     "c": "Décris une marque comme une personne en quatre lignes : âge, style, habitudes, phrase fétiche."
+    },
+    "it": {
+     "t": "La personalità del marchio",
+     "g": "Descrivere un marchio come se fosse una persona.",
+     "p": [
+      "Chiediti: se questo marchio entrasse in una stanza, come si vestirebbe, parlerebbe e si comporterebbe?",
+      "Tratti come curioso, calmo, audace o premuroso guidano ogni scelta.",
+      "Una personalità funziona se è reale e si vede nei fatti, non solo nelle parole."
+     ],
+     "q": "Se il tuo marchio preferito fosse una persona, chi sarebbe?",
+     "c": "Descrivi un marchio come persona in quattro righe: età, stile, abitudini, frase preferita."
+    },
+    "pt": {
+     "t": "A personalidade da marca",
+     "g": "Descrever uma marca como se fosse uma pessoa.",
+     "p": [
+      "Pergunta: se esta marca entrasse numa sala, como se vestiria, falaria e comportaria?",
+      "Traços como curiosa, calma, ousada ou atenciosa orientam cada escolha.",
+      "Uma personalidade funciona se for real e se notar nos atos, não só nas palavras."
+     ],
+     "q": "Se a tua marca favorita fosse uma pessoa, quem seria?",
+     "c": "Descreve uma marca como pessoa em quatro linhas: idade, estilo, hábitos, frase favorita."
+    },
+    "pt_BR": {
+     "t": "A personalidade da marca",
+     "g": "Descrever uma marca como se fosse uma pessoa.",
+     "p": [
+      "Pergunte: se essa marca entrasse numa sala, como se vestiria, falaria e se comportaria?",
+      "Traços como curiosa, calma, ousada ou atenciosa orientam cada escolha.",
+      "Uma personalidade funciona se for real e aparecer nas ações, não só nas palavras."
+     ],
+     "q": "Se a sua marca favorita fosse uma pessoa, quem seria?",
+     "c": "Descreva uma marca como pessoa em quatro linhas: idade, estilo, hábitos, frase favorita."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brand values",
+     "g": "The beliefs a brand stands for and shows in action.",
+     "p": [
+      "Values are the few beliefs you will keep even when it costs you something.",
+      "Choose three to five and turn each into a concrete behaviour.",
+      "Values only count when customers can see them in what you actually do."
+     ],
+     "q": "Which value would you most want a brand you buy from to have?",
+     "c": "Write three values for a brand idea and one action that proves each."
+    },
+    "de": {
+     "t": "Markenwerte",
+     "g": "Die Überzeugungen, für die eine Marke steht und die sie im Handeln zeigt.",
+     "p": [
+      "Werte sind die wenigen Überzeugungen, an denen du festhältst, auch wenn es etwas kostet.",
+      "Wähle drei bis fünf und mache jede zu einem konkreten Verhalten.",
+      "Werte zählen nur, wenn Kunden sie in deinem tatsächlichen Tun sehen."
+     ],
+     "q": "Welchen Wert wünschst du dir am meisten bei einer Marke, bei der du kaufst?",
+     "c": "Schreibe drei Werte für eine Markenidee und je eine Handlung, die sie belegt."
+    },
+    "es": {
+     "t": "Valores de marca",
+     "g": "Las creencias que una marca defiende y demuestra con hechos.",
+     "p": [
+      "Los valores son las pocas creencias que mantendrás aunque te cuesten algo.",
+      "Elige de tres a cinco y convierte cada una en un comportamiento concreto.",
+      "Los valores solo cuentan si los clientes los ven en lo que haces de verdad."
+     ],
+     "q": "¿Qué valor te gustaría más que tuviera una marca a la que compras?",
+     "c": "Escribe tres valores para una marca y una acción que pruebe cada uno."
+    },
+    "fr": {
+     "t": "Les valeurs de marque",
+     "g": "Les convictions qu'une marque défend et montre par ses actes.",
+     "p": [
+      "Les valeurs sont les quelques convictions que tu gardes même quand cela te coûte.",
+      "Choisis-en trois à cinq et transforme chacune en comportement concret.",
+      "Les valeurs ne comptent que si les clients les voient dans ce que tu fais vraiment."
+     ],
+     "q": "Quelle valeur aimerais-tu le plus trouver chez une marque à qui tu achètes ?",
+     "c": "Écris trois valeurs pour une marque et une action qui prouve chacune."
+    },
+    "it": {
+     "t": "I valori del marchio",
+     "g": "Le convinzioni che un marchio sostiene e mostra nei fatti.",
+     "p": [
+      "I valori sono le poche convinzioni che mantieni anche quando ti costano qualcosa.",
+      "Sceglierne da tre a cinque e trasformare ciascuna in un comportamento concreto.",
+      "I valori contano solo se i clienti li vedono in ciò che fai davvero."
+     ],
+     "q": "Quale valore vorresti di più in un marchio da cui compri?",
+     "c": "Scrivi tre valori per un marchio e un'azione che dimostri ciascuno."
+    },
+    "pt": {
+     "t": "Os valores da marca",
+     "g": "As crenças que uma marca defende e mostra nos atos.",
+     "p": [
+      "Os valores são as poucas crenças que manténs mesmo quando te custam algo.",
+      "Escolhe de três a cinco e transforma cada uma num comportamento concreto.",
+      "Os valores só contam se os clientes os virem no que realmente fazes."
+     ],
+     "q": "Que valor gostarias mais que uma marca onde compras tivesse?",
+     "c": "Escreve três valores para uma marca e uma ação que prove cada um."
+    },
+    "pt_BR": {
+     "t": "Os valores da marca",
+     "g": "As crenças que uma marca defende e mostra nas ações.",
+     "p": [
+      "Valores são as poucas crenças que você mantém mesmo quando custam algo.",
+      "Escolha de três a cinco e transforme cada uma em um comportamento concreto.",
+      "Os valores só contam se os clientes os virem no que você realmente faz."
+     ],
+     "q": "Que valor você mais gostaria que uma marca onde compra tivesse?",
+     "c": "Escreva três valores para uma marca e uma ação que comprove cada um."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brand story",
+     "g": "Tell where you come from and why you exist.",
+     "p": [
+      "A story has a beginning, a challenge and a reason that matters to the customer.",
+      "People remember stories far better than lists of facts.",
+      "Keep it true and simple, and let the customer be the hero, not the brand."
+     ],
+     "q": "What is a brand story that you remember or retold to someone?",
+     "c": "Write your brand story in five sentences: origin, problem, solution, change, invitation."
+    },
+    "de": {
+     "t": "Markengeschichte",
+     "g": "Erzählen, woher du kommst und warum es dich gibt.",
+     "p": [
+      "Eine Geschichte hat einen Anfang, eine Herausforderung und einen Grund, der dem Kunden wichtig ist.",
+      "Geschichten merken sich Menschen viel besser als Faktenlisten.",
+      "Halte sie wahr und einfach und lass den Kunden den Helden sein, nicht die Marke."
+     ],
+     "q": "Welche Markengeschichte hast du dir gemerkt oder weitererzählt?",
+     "c": "Schreibe deine Markengeschichte in fünf Sätzen: Ursprung, Problem, Lösung, Wandel, Einladung."
+    },
+    "es": {
+     "t": "Historia de marca",
+     "g": "Contar de dónde vienes y por qué existes.",
+     "p": [
+      "Una historia tiene un inicio, un reto y una razón que importa al cliente.",
+      "La gente recuerda las historias mucho mejor que las listas de datos.",
+      "Mantenla verdadera y simple, y deja que el cliente sea el héroe, no la marca."
+     ],
+     "q": "¿Qué historia de una marca recuerdas o has contado a alguien?",
+     "c": "Escribe tu historia de marca en cinco frases: origen, problema, solución, cambio, invitación."
+    },
+    "fr": {
+     "t": "L'histoire de marque",
+     "g": "Raconter d'où tu viens et pourquoi tu existes.",
+     "p": [
+      "Une histoire a un début, un défi et une raison qui compte pour le client.",
+      "On retient bien mieux les histoires que les listes de faits.",
+      "Reste vrai et simple, et laisse le client être le héros, pas la marque."
+     ],
+     "q": "Quelle histoire de marque retiens-tu ou as-tu racontée à quelqu'un ?",
+     "c": "Écris ton histoire de marque en cinq phrases : origine, problème, solution, changement, invitation."
+    },
+    "it": {
+     "t": "La storia del marchio",
+     "g": "Raccontare da dove vieni e perché esisti.",
+     "p": [
+      "Una storia ha un inizio, una sfida e una ragione che conta per il cliente.",
+      "Le persone ricordano le storie molto meglio degli elenchi di fatti.",
+      "Mantienila vera e semplice e lascia che l'eroe sia il cliente, non il marchio."
+     ],
+     "q": "Quale storia di un marchio ricordi o hai raccontato a qualcuno?",
+     "c": "Scrivi la storia del tuo marchio in cinque frasi: origine, problema, soluzione, cambiamento, invito."
+    },
+    "pt": {
+     "t": "A história da marca",
+     "g": "Contar de onde vens e porque existes.",
+     "p": [
+      "Uma história tem um início, um desafio e uma razão que importa ao cliente.",
+      "As pessoas lembram-se muito melhor de histórias do que de listas de factos.",
+      "Mantém-na verdadeira e simples e deixa o cliente ser o herói, não a marca."
+     ],
+     "q": "Que história de uma marca recordas ou já contaste a alguém?",
+     "c": "Escreve a história da tua marca em cinco frases: origem, problema, solução, mudança, convite."
+    },
+    "pt_BR": {
+     "t": "A história da marca",
+     "g": "Contar de onde você vem e por que existe.",
+     "p": [
+      "Uma história tem um início, um desafio e uma razão que importa ao cliente.",
+      "As pessoas lembram muito melhor de histórias do que de listas de fatos.",
+      "Mantenha-a verdadeira e simples e deixe o cliente ser o herói, não a marca."
+     ],
+     "q": "Que história de uma marca você lembra ou já contou a alguém?",
+     "c": "Escreva a história da sua marca em cinco frases: origem, problema, solução, mudança, convite."
+    }
+   }
+  }
+ ]
+}

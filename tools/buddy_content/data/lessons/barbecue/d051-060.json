@@ -1,0 +1,835 @@
+{
+ "topic": "barbecue",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chimichurri from Argentina",
+     "g": "Make chimichurri, the fresh parsley and garlic sauce served with grilled beef in Argentina.",
+     "p": [
+      "Classic chimichurri mixes finely chopped parsley, garlic and oregano with oil, red wine vinegar, salt and chilli flakes.",
+      "It is served with asado, Argentina's social barbecue, where meats cook slowly over wood embers on a parrilla.",
+      "Its bright acidity cuts through rich grilled meat, and it is just as good on vegetables, bread or halloumi."
+     ],
+     "q": "Have you ever tasted chimichurri, and what would you put it on?",
+     "c": "Make a small bowl of chimichurri and let it rest 20 minutes so the flavours mingle before serving."
+    },
+    "de": {
+     "t": "Chimichurri aus Argentinien",
+     "g": "Mach Chimichurri, die frische Petersilien-Knoblauch-Sauce, die in Argentinien zu gegrilltem Rind gehört.",
+     "p": [
+      "Klassisches Chimichurri mischt fein gehackte Petersilie, Knoblauch und Oregano mit Öl, Rotweinessig, Salz und Chiliflocken.",
+      "Es gehört zum Asado, Argentiniens geselligem Grillfest, bei dem Fleisch langsam über Holzglut auf der Parrilla gart.",
+      "Seine frische Säure gleicht reichhaltiges Grillfleisch aus und passt genauso zu Gemüse, Brot oder Halloumi."
+     ],
+     "q": "Hast du schon einmal Chimichurri probiert, und wozu würdest du es essen?",
+     "c": "Mach eine kleine Schüssel Chimichurri und lass sie 20 Minuten ziehen, damit sich die Aromen verbinden."
+    },
+    "es": {
+     "t": "El chimichurri argentino",
+     "g": "Prepara chimichurri, la salsa fresca de perejil y ajo que acompaña la carne asada en Argentina.",
+     "p": [
+      "El chimichurri clásico mezcla perejil, ajo y orégano bien picados con aceite, vinagre de vino tinto, sal y ají molido.",
+      "Acompaña el asado, la reunión parrillera argentina, donde la carne se hace despacio sobre brasas de leña en la parrilla.",
+      "Su acidez fresca equilibra la carne jugosa, y también va genial con verduras, pan o halloumi."
+     ],
+     "q": "¿Has probado el chimichurri? ¿Con qué lo comerías?",
+     "c": "Prepara un bol pequeño de chimichurri y déjalo reposar 20 minutos para que se mezclen los sabores antes de servir."
+    },
+    "fr": {
+     "t": "Le chimichurri argentin",
+     "g": "Prépare le chimichurri, la sauce fraîche au persil et à l'ail servie avec le bœuf grillé en Argentine.",
+     "p": [
+      "Le chimichurri classique mélange persil, ail et origan hachés finement avec huile, vinaigre de vin rouge, sel et piment.",
+      "Il accompagne l'asado, le barbecue convivial argentin où la viande cuit lentement sur des braises de bois, sur la parrilla.",
+      "Son acidité vive équilibre les viandes riches, et il est tout aussi bon sur des légumes, du pain ou du halloumi."
+     ],
+     "q": "As-tu déjà goûté le chimichurri, et avec quoi le mangerais-tu ?",
+     "c": "Prépare un petit bol de chimichurri et laisse-le reposer 20 minutes pour que les saveurs se mêlent avant de servir."
+    },
+    "it": {
+     "t": "Il chimichurri argentino",
+     "g": "Prepara il chimichurri, la salsa fresca di prezzemolo e aglio servita con la carne alla griglia in Argentina.",
+     "p": [
+      "Il chimichurri classico unisce prezzemolo, aglio e origano tritati fini con olio, aceto di vino rosso, sale e peperoncino.",
+      "Accompagna l'asado, la grigliata conviviale argentina, dove la carne cuoce piano sulle braci di legna della parrilla.",
+      "La sua acidità fresca bilancia la carne ricca, ed è ottimo anche su verdure, pane o halloumi."
+     ],
+     "q": "Hai mai assaggiato il chimichurri? Su cosa lo metteresti?",
+     "c": "Prepara una ciotolina di chimichurri e lasciala riposare 20 minuti perché i sapori si amalgamino prima di servire."
+    },
+    "pt": {
+     "t": "O chimichurri argentino",
+     "g": "Faz chimichurri, o molho fresco de salsa e alho servido com carne grelhada na Argentina.",
+     "p": [
+      "O chimichurri clássico junta salsa, alho e orégãos bem picados com azeite, vinagre de vinho tinto, sal e malagueta.",
+      "Acompanha o asado, o churrasco convivial argentino, em que a carne coze devagar sobre brasas de lenha na parrilla.",
+      "A sua acidez fresca equilibra a carne gorda e fica igualmente bem em legumes, pão ou halloumi."
+     ],
+     "q": "Já provaste chimichurri? Com que o comerias?",
+     "c": "Faz uma taça pequena de chimichurri e deixa-a repousar 20 minutos para os sabores se misturarem antes de servir."
+    },
+    "pt_BR": {
+     "t": "Chimichurri da Argentina",
+     "g": "Faça chimichurri, o molho fresco de salsinha e alho servido com carne grelhada na Argentina.",
+     "p": [
+      "O chimichurri clássico mistura salsinha, alho e orégano bem picados com azeite, vinagre de vinho tinto, sal e pimenta calabresa.",
+      "Ele acompanha o asado, o churrasco argentino de reunir a turma, com a carne assando devagar sobre brasas de lenha.",
+      "Sua acidez fresca equilibra a carne gordinha e fica ótimo também em legumes, pão ou queijo coalho."
+     ],
+     "q": "Você já provou chimichurri? Com o que comeria?",
+     "c": "Faça uma tigelinha de chimichurri e deixe descansar 20 minutos para os sabores se misturarem antes de servir."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Salsas and fresh toppings",
+     "g": "Brighten grilled food with fresh salsas like pico de gallo and mango salsa.",
+     "p": [
+      "Pico de gallo is chopped tomato, onion, coriander, chilli, lime juice and salt: fresh, crunchy and simple.",
+      "Mango salsa swaps tomato for ripe mango, adding sweetness that pairs well with fish, chicken and pork.",
+      "Cool, acidic toppings balance smoky, charred flavours; grilling the tomatoes or pineapple first adds a smoky twist."
+     ],
+     "q": "Which fresh topping would you add to a grilled dish you already love?",
+     "c": "Make a small pico de gallo or mango salsa and serve it with grilled food or simply with tortilla chips."
+    },
+    "de": {
+     "t": "Salsas und frische Toppings",
+     "g": "Peppe Grillgerichte mit frischen Salsas wie Pico de Gallo und Mangosalsa auf.",
+     "p": [
+      "Pico de Gallo ist gewürfelte Tomate, Zwiebel, Koriander, Chili, Limettensaft und Salz: frisch, knackig und einfach.",
+      "Bei Mangosalsa ersetzt reife Mango die Tomate und bringt Süße, die gut zu Fisch, Hähnchen und Schwein passt.",
+      "Kühle, säuerliche Toppings gleichen rauchige Röstaromen aus; vorher gegrillte Tomaten oder Ananas bringen Rauchnote."
+     ],
+     "q": "Welches frische Topping würdest du zu einem Grillgericht geben, das du schon liebst?",
+     "c": "Mach ein kleines Pico de Gallo oder eine Mangosalsa und serviere sie zu Gegrilltem oder einfach zu Tortilla-Chips."
+    },
+    "es": {
+     "t": "Salsas y acompañamientos frescos",
+     "g": "Alegra la comida a la parrilla con salsas frescas como el pico de gallo y la salsa de mango.",
+     "p": [
+      "El pico de gallo es tomate, cebolla, cilantro y chile picados con zumo de lima y sal: fresco, crujiente y sencillo.",
+      "La salsa de mango cambia el tomate por mango maduro y aporta un dulzor que va de maravilla con pescado, pollo y cerdo.",
+      "Los toques frescos y ácidos equilibran los sabores ahumados; asar antes los tomates o la piña da un giro ahumado."
+     ],
+     "q": "¿Qué acompañamiento fresco añadirías a un plato a la parrilla que ya te encanta?",
+     "c": "Prepara un poco de pico de gallo o salsa de mango y sírvelo con algo a la parrilla o simplemente con totopos."
+    },
+    "fr": {
+     "t": "Salsas et garnitures fraîches",
+     "g": "Égaye tes grillades avec des salsas fraîches comme le pico de gallo et la salsa à la mangue.",
+     "p": [
+      "Le pico de gallo, c'est tomate, oignon, coriandre et piment hachés avec jus de citron vert et sel : frais, croquant, simple.",
+      "La salsa à la mangue remplace la tomate par de la mangue mûre, une douceur parfaite avec poisson, poulet et porc.",
+      "Les garnitures fraîches et acidulées équilibrent le fumé ; griller d'abord tomates ou ananas ajoute une note fumée."
+     ],
+     "q": "Quelle garniture fraîche ajouterais-tu à une grillade que tu aimes déjà ?",
+     "c": "Prépare un petit pico de gallo ou une salsa à la mangue et sers-les avec une grillade ou des chips de tortilla."
+    },
+    "it": {
+     "t": "Salse fresche e guarnizioni",
+     "g": "Ravviva i cibi alla griglia con salse fresche come il pico de gallo e la salsa al mango.",
+     "p": [
+      "Il pico de gallo è pomodoro, cipolla, coriandolo e peperoncino tritati con succo di lime e sale: fresco, croccante e semplice.",
+      "La salsa al mango sostituisce il pomodoro con mango maturo e dà una dolcezza perfetta con pesce, pollo e maiale.",
+      "Le guarnizioni fresche e acidule bilanciano i sapori affumicati; grigliare prima pomodori o ananas aggiunge un tocco di fumo."
+     ],
+     "q": "Quale guarnizione fresca aggiungeresti a un piatto alla griglia che già ami?",
+     "c": "Prepara un po' di pico de gallo o salsa al mango e servila con qualcosa alla griglia o con chips di tortilla."
+    },
+    "pt": {
+     "t": "Salsas e acompanhamentos frescos",
+     "g": "Dá vida aos grelhados com salsas frescas como o pico de gallo e a salsa de manga.",
+     "p": [
+      "O pico de gallo é tomate, cebola, coentros e malagueta picados com sumo de lima e sal: fresco, estaladiço e simples.",
+      "A salsa de manga troca o tomate por manga madura e traz uma doçura que combina com peixe, frango e porco.",
+      "Acompanhamentos frescos e ácidos equilibram o fumado; grelhar antes o tomate ou o ananás dá um toque fumado."
+     ],
+     "q": "Que acompanhamento fresco juntarias a um grelhado de que já gostas muito?",
+     "c": "Faz um pouco de pico de gallo ou salsa de manga e serve com um grelhado ou simplesmente com tortilhas."
+    },
+    "pt_BR": {
+     "t": "Salsas e coberturas frescas",
+     "g": "Deixe o churrasco mais vivo com salsas frescas como pico de gallo e salsa de manga.",
+     "p": [
+      "O pico de gallo é tomate, cebola, coentro e pimenta picados com suco de limão e sal: fresco, crocante e simples.",
+      "A salsa de manga troca o tomate por manga madura e traz um doce que combina com peixe, frango e porco.",
+      "Coberturas frescas e ácidas equilibram o defumado; grelhar antes o tomate ou o abacaxi dá um toque defumado."
+     ],
+     "q": "Que cobertura fresca você colocaria num prato de churrasco que já adora?",
+     "c": "Faça um pouco de pico de gallo ou salsa de manga e sirva com algo grelhado ou simplesmente com nachos."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grilled halloumi and firm cheeses",
+     "g": "Grill cheeses that hold their shape, like halloumi, and stop them sticking.",
+     "p": [
+      "Halloumi from Cyprus, paneer from South Asia and Brazilian queijo coalho have a high melting point, so they soften but keep their shape.",
+      "Slice them about 1 cm thick, pat dry, brush lightly with oil and grill on a very clean, well-oiled, hot grate.",
+      "Leave them alone until golden marks form, about 2 minutes per side, then flip once with a thin spatula."
+     ],
+     "q": "Have you ever grilled cheese directly on the grate, and how did it go?",
+     "c": "Grill a few slices of halloumi, paneer or queijo coalho and serve them with a squeeze of lemon or a drizzle of honey."
+    },
+    "de": {
+     "t": "Gegrillter Halloumi und feste Käse",
+     "g": "Grill Käse, der seine Form behält, wie Halloumi, und verhindere, dass er klebt.",
+     "p": [
+      "Halloumi aus Zypern, Paneer aus Südasien und brasilianischer Queijo Coalho schmelzen erst spät: Sie werden weich, aber bleiben in Form.",
+      "Schneide ihn etwa 1 cm dick, tupf ihn trocken, bestreiche ihn leicht mit Öl und grill auf sehr sauberem, geöltem, heißem Rost.",
+      "Lass ihn in Ruhe, bis goldene Streifen entstehen, etwa 2 Minuten pro Seite, und wende ihn einmal mit einem dünnen Wender."
+     ],
+     "q": "Hast du schon einmal Käse direkt auf dem Rost gegrillt, und wie lief es?",
+     "c": "Grill ein paar Scheiben Halloumi, Paneer oder Queijo Coalho und serviere sie mit Zitrone oder einem Hauch Honig."
+    },
+    "es": {
+     "t": "Halloumi y quesos firmes a la parrilla",
+     "g": "Asa quesos que mantienen su forma, como el halloumi, y evita que se peguen.",
+     "p": [
+      "El halloumi de Chipre, el paneer del sur de Asia y el queijo coalho brasileño tardan en fundirse: se ablandan sin perder la forma.",
+      "Córtalos de 1 cm de grosor, sécalos, úntalos con poco aceite y ásalos en una rejilla muy limpia, aceitada y caliente.",
+      "No los toques hasta que se formen marcas doradas, unos 2 minutos por lado, y dales la vuelta una vez con una espátula fina."
+     ],
+     "q": "¿Has asado queso directamente en la rejilla alguna vez? ¿Qué tal salió?",
+     "c": "Asa unas lonchas de halloumi, paneer o queijo coalho y sírvelas con un chorrito de limón o un hilo de miel."
+    },
+    "fr": {
+     "t": "Halloumi et fromages fermes grillés",
+     "g": "Grille des fromages qui gardent leur forme, comme l'halloumi, sans qu'ils collent.",
+     "p": [
+      "L'halloumi de Chypre, le paneer d'Asie du Sud et le queijo coalho brésilien fondent tard : ils ramollissent sans s'effondrer.",
+      "Coupe-les en tranches d'environ 1 cm, sèche-les, huile-les légèrement et grille-les sur une grille très propre, huilée et chaude.",
+      "N'y touche pas jusqu'à ce que des marques dorées apparaissent, environ 2 minutes par face, puis retourne une fois à la spatule fine."
+     ],
+     "q": "As-tu déjà grillé du fromage directement sur la grille, et comment ça s'est passé ?",
+     "c": "Grille quelques tranches d'halloumi, de paneer ou de queijo coalho et sers-les avec un filet de citron ou de miel."
+    },
+    "it": {
+     "t": "Halloumi e formaggi compatti alla griglia",
+     "g": "Griglia formaggi che mantengono la forma, come l'halloumi, ed evita che si attacchino.",
+     "p": [
+      "L'halloumi di Cipro, il paneer dell'Asia meridionale e il queijo coalho brasiliano fondono tardi: si ammorbidiscono ma restano interi.",
+      "Tagliali spessi circa 1 cm, asciugali, ungili appena d'olio e grigliali su una griglia pulitissima, oliata e calda.",
+      "Non toccarli finché non compaiono rigature dorate, circa 2 minuti per lato, poi girali una volta con una spatola sottile."
+     ],
+     "q": "Hai mai grigliato il formaggio direttamente sulla griglia? Com'è andata?",
+     "c": "Griglia qualche fetta di halloumi, paneer o queijo coalho e servila con una spruzzata di limone o un filo di miele."
+    },
+    "pt": {
+     "t": "Halloumi e queijos firmes grelhados",
+     "g": "Grelha queijos que mantêm a forma, como o halloumi, e evita que peguem.",
+     "p": [
+      "O halloumi de Chipre, o paneer do Sul da Ásia e o queijo coalho brasileiro demoram a derreter: amolecem mas não se desfazem.",
+      "Corta-os com cerca de 1 cm, seca-os, pincela com pouco azeite e grelha numa grelha muito limpa, untada e quente.",
+      "Não lhes mexas até se formarem marcas douradas, cerca de 2 minutos de cada lado, e vira uma vez com uma espátula fina."
+     ],
+     "q": "Já grelhaste queijo diretamente na grelha? Como correu?",
+     "c": "Grelha umas fatias de halloumi, paneer ou queijo coalho e serve com um pouco de limão ou um fio de mel."
+    },
+    "pt_BR": {
+     "t": "Halloumi e queijos firmes na grelha",
+     "g": "Grelhe queijos que mantêm a forma, como halloumi e queijo coalho, sem deixar grudar.",
+     "p": [
+      "O queijo coalho, o halloumi do Chipre e o paneer do sul da Ásia demoram a derreter: amolecem, mas não desmancham.",
+      "Corte com cerca de 1 cm, seque, pincele com pouco óleo e grelhe numa grelha bem limpa, untada e quente.",
+      "Não mexa até formar marcas douradas, uns 2 minutos de cada lado, e vire uma vez com uma espátula fina."
+     ],
+     "q": "Você já grelhou queijo direto na grelha? Como foi?",
+     "c": "Grelhe algumas fatias de queijo coalho, halloumi ou paneer e sirva com um pouco de limão ou um fio de mel."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grilled tofu and plant proteins",
+     "g": "Prepare and grill tofu, tempeh and plant-based sausages with great flavour and texture.",
+     "p": [
+      "Use firm or extra-firm tofu and press out water for 20 to 30 minutes so it grills firmer and absorbs marinade better.",
+      "Marinate tofu or tempeh in a soy, garlic and ginger mix, then grill over medium heat on a well-oiled grate.",
+      "Plant-based sausages and burgers are often lean, so oil the grate well, use medium heat and follow the pack guidance."
+     ],
+     "q": "Have you tried tofu or other plant proteins on the grill, and what did you think?",
+     "c": "Press and marinate a block of firm tofu, then grill it in thick slices or cubes on skewers."
+    },
+    "de": {
+     "t": "Gegrillter Tofu und pflanzliche Proteine",
+     "g": "Bereite Tofu, Tempeh und pflanzliche Würstchen mit tollem Geschmack und Biss auf dem Grill zu.",
+     "p": [
+      "Nimm festen Tofu und press 20 bis 30 Minuten Wasser heraus, dann wird er beim Grillen fester und nimmt Marinade besser auf.",
+      "Mariniere Tofu oder Tempeh in Soja, Knoblauch und Ingwer und grill sie bei mittlerer Hitze auf gut geöltem Rost.",
+      "Pflanzliche Würstchen und Burger sind oft mager: Rost gut ölen, mittlere Hitze und die Packungsangaben beachten."
+     ],
+     "q": "Hast du schon Tofu oder andere pflanzliche Proteine gegrillt, und wie fandest du es?",
+     "c": "Press und mariniere einen Block festen Tofu und grill ihn in dicken Scheiben oder als Würfel am Spieß."
+    },
+    "es": {
+     "t": "Tofu y proteínas vegetales a la parrilla",
+     "g": "Prepara y asa tofu, tempeh y salchichas vegetales con mucho sabor y buena textura.",
+     "p": [
+      "Usa tofu firme o extrafirme y prénsalo de 20 a 30 minutos para quitarle agua; así queda más firme y absorbe mejor el adobo.",
+      "Marina el tofu o el tempeh con soja, ajo y jengibre y ásalos a fuego medio sobre una rejilla bien aceitada.",
+      "Las salchichas y hamburguesas vegetales suelen ser magras: aceita bien la rejilla, usa fuego medio y sigue el envase."
+     ],
+     "q": "¿Has probado tofu u otras proteínas vegetales a la parrilla? ¿Qué te parecieron?",
+     "c": "Prensa y marina un bloque de tofu firme, y ásalo en lonchas gruesas o en dados ensartados en brochetas."
+    },
+    "fr": {
+     "t": "Tofu grillé et protéines végétales",
+     "g": "Prépare et grille tofu, tempeh et saucisses végétales avec beaucoup de goût et une bonne texture.",
+     "p": [
+      "Prends du tofu ferme et presse-le 20 à 30 minutes pour retirer l'eau : il grillera plus ferme et absorbera mieux la marinade.",
+      "Fais mariner tofu ou tempeh avec soja, ail et gingembre, puis grille à feu moyen sur une grille bien huilée.",
+      "Les saucisses et burgers végétaux sont souvent maigres : huile bien la grille, feu moyen, et suis l'emballage."
+     ],
+     "q": "As-tu déjà grillé du tofu ou d'autres protéines végétales, et qu'en as-tu pensé ?",
+     "c": "Presse et fais mariner un bloc de tofu ferme, puis grille-le en tranches épaisses ou en cubes sur des brochettes."
+    },
+    "it": {
+     "t": "Tofu e proteine vegetali alla griglia",
+     "g": "Prepara e griglia tofu, tempeh e salsicce vegetali con tanto sapore e una buona consistenza.",
+     "p": [
+      "Usa tofu compatto e pressalo 20-30 minuti per togliere l'acqua: sulla griglia resta più sodo e assorbe meglio la marinata.",
+      "Marina tofu o tempeh con soia, aglio e zenzero, poi grigliali a fuoco medio su una griglia ben oliata.",
+      "Salsicce e burger vegetali sono spesso magri: olia bene la griglia, usa fuoco medio e segui le indicazioni della confezione."
+     ],
+     "q": "Hai mai provato tofu o altre proteine vegetali alla griglia? Cosa ne pensi?",
+     "c": "Pressa e marina un panetto di tofu compatto, poi griglialo a fette spesse o a cubetti sugli spiedini."
+    },
+    "pt": {
+     "t": "Tofu e proteínas vegetais grelhados",
+     "g": "Prepara e grelha tofu, tempeh e salsichas vegetais com muito sabor e boa textura.",
+     "p": [
+      "Usa tofu firme e prensa-o 20 a 30 minutos para tirar a água: fica mais firme na grelha e absorve melhor a marinada.",
+      "Marina o tofu ou o tempeh com soja, alho e gengibre e grelha em calor médio numa grelha bem untada.",
+      "Salsichas e hambúrgueres vegetais são muitas vezes magros: unta bem a grelha, usa calor médio e segue a embalagem."
+     ],
+     "q": "Já experimentaste tofu ou outras proteínas vegetais na grelha? O que achaste?",
+     "c": "Prensa e marina um bloco de tofu firme e grelha-o em fatias grossas ou em cubos em espetadas."
+    },
+    "pt_BR": {
+     "t": "Tofu e proteínas vegetais na grelha",
+     "g": "Prepare e grelhe tofu, tempeh e linguiças vegetais com muito sabor e boa textura.",
+     "p": [
+      "Use tofu firme e prense por 20 a 30 minutos para tirar a água: ele fica mais firme na grelha e absorve melhor a marinada.",
+      "Marine o tofu ou o tempeh com shoyu, alho e gengibre e grelhe em fogo médio numa grelha bem untada.",
+      "Linguiças e hambúrgueres vegetais costumam ser magros: unte bem a grelha, use fogo médio e siga a embalagem."
+     ],
+     "q": "Você já provou tofu ou outras proteínas vegetais na grelha? O que achou?",
+     "c": "Prense e marine um bloco de tofu firme e grelhe em fatias grossas ou em cubos no espetinho."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Portobello mushroom burgers",
+     "g": "Grill a meaty vegetarian burger using big portobello mushrooms with a good char.",
+     "p": [
+      "Wipe the caps clean, remove the stems and, if you like, scrape out the dark gills for a neater look.",
+      "Marinate 15 to 30 minutes in olive oil, balsamic vinegar, garlic and herbs; mushrooms soak up flavour fast.",
+      "Grill gill side up first, then flip until tender and juicy, about 4 to 5 minutes per side; add cheese at the end if you like."
+     ],
+     "q": "What toppings would make your perfect mushroom burger?",
+     "c": "Grill marinated portobellos as burgers, or plan a full vegetarian burger menu with toppings and sides."
+    },
+    "de": {
+     "t": "Portobello-Burger",
+     "g": "Grill einen herzhaften vegetarischen Burger aus großen Portobello-Pilzen mit schönen Röstaromen.",
+     "p": [
+      "Wisch die Hüte sauber, entferne die Stiele und kratz nach Wunsch die dunklen Lamellen heraus.",
+      "15 bis 30 Minuten in Olivenöl, Balsamico, Knoblauch und Kräutern marinieren; Pilze nehmen Aroma schnell auf.",
+      "Erst mit den Lamellen nach oben grillen, dann wenden, bis sie zart und saftig sind, je Seite 4 bis 5 Minuten; Käse zum Schluss."
+     ],
+     "q": "Welcher Belag würde deinen perfekten Pilzburger ausmachen?",
+     "c": "Grill marinierte Portobellos als Burger oder plane ein ganzes vegetarisches Burger-Menü mit Belag und Beilagen."
+    },
+    "es": {
+     "t": "Hamburguesas de champiñón portobello",
+     "g": "Asa una hamburguesa vegetariana contundente con grandes champiñones portobello bien marcados.",
+     "p": [
+      "Limpia los sombreros con un paño, quita los tallos y, si quieres, raspa las láminas oscuras para un acabado más limpio.",
+      "Marínalos de 15 a 30 minutos en aceite de oliva, vinagre balsámico, ajo y hierbas; absorben el sabor muy rápido.",
+      "Ásalos primero con las láminas hacia arriba y luego dales la vuelta, unos 4 a 5 minutos por lado; añade queso al final si quieres."
+     ],
+     "q": "¿Qué ingredientes tendría tu hamburguesa de champiñón perfecta?",
+     "c": "Asa portobellos marinados como hamburguesas, o planea un menú vegetariano completo con ingredientes y guarniciones."
+    },
+    "fr": {
+     "t": "Burgers de champignons portobello",
+     "g": "Grille un burger végétarien généreux avec de gros champignons portobello bien marqués.",
+     "p": [
+      "Essuie les chapeaux, retire les pieds et, si tu veux, gratte les lamelles sombres pour un rendu plus net.",
+      "Fais mariner 15 à 30 minutes dans huile d'olive, vinaigre balsamique, ail et herbes ; les champignons absorbent vite.",
+      "Grille d'abord lamelles vers le haut, puis retourne, environ 4 à 5 minutes par face ; ajoute du fromage à la fin si tu veux."
+     ],
+     "q": "Quelles garnitures feraient ton burger aux champignons idéal ?",
+     "c": "Grille des portobellos marinés en burgers, ou imagine un menu burger végétarien complet avec garnitures et accompagnements."
+    },
+    "it": {
+     "t": "Burger di funghi portobello",
+     "g": "Griglia un burger vegetariano sostanzioso con grandi funghi portobello ben abbrustoliti.",
+     "p": [
+      "Pulisci le cappelle con un panno, togli i gambi e, se vuoi, raschia le lamelle scure per un aspetto più pulito.",
+      "Marinali 15-30 minuti in olio d'oliva, aceto balsamico, aglio ed erbe; i funghi assorbono il sapore in fretta.",
+      "Grigliali prima con le lamelle in su, poi girali, circa 4-5 minuti per lato; aggiungi formaggio alla fine se ti va."
+     ],
+     "q": "Quali condimenti renderebbero perfetto il tuo burger di funghi?",
+     "c": "Griglia portobello marinati come burger, oppure pianifica un menù vegetariano completo con condimenti e contorni."
+    },
+    "pt": {
+     "t": "Hambúrgueres de cogumelo portobello",
+     "g": "Grelha um hambúrguer vegetariano consistente com cogumelos portobello grandes e bem tostados.",
+     "p": [
+      "Limpa os chapéus com um pano, tira os pés e, se quiseres, raspa as lâminas escuras para um aspeto mais limpo.",
+      "Marina 15 a 30 minutos em azeite, vinagre balsâmico, alho e ervas; os cogumelos absorvem o sabor depressa.",
+      "Grelha primeiro com as lâminas para cima e depois vira, cerca de 4 a 5 minutos de cada lado; junta queijo no fim, se quiseres."
+     ],
+     "q": "Que coberturas fariam o teu hambúrguer de cogumelo perfeito?",
+     "c": "Grelha portobellos marinados como hambúrgueres, ou planeia um menu vegetariano completo com coberturas e acompanhamentos."
+    },
+    "pt_BR": {
+     "t": "Hambúrguer de cogumelo portobello",
+     "g": "Grelhe um hambúrguer vegetariano caprichado com cogumelos portobello grandes e bem tostados.",
+     "p": [
+      "Limpe os chapéus com um pano, tire os talos e, se quiser, raspe as lâminas escuras para um visual mais limpo.",
+      "Marine de 15 a 30 minutos em azeite, vinagre balsâmico, alho e ervas; os cogumelos absorvem sabor rapidinho.",
+      "Grelhe primeiro com as lâminas para cima e depois vire, uns 4 a 5 minutos de cada lado; coloque queijo no final, se quiser."
+     ],
+     "q": "Que recheios fariam o seu hambúrguer de cogumelo perfeito?",
+     "c": "Grelhe portobellos marinados como hambúrguer, ou planeje um cardápio vegetariano completo com recheios e acompanhamentos."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grilled flatbreads",
+     "g": "Cook simple dough directly on the grate for quick, smoky flatbreads.",
+     "p": [
+      "A basic dough of flour, water, yeast, salt and a little oil, or even ready-made pizza dough, works perfectly.",
+      "Roll it thin, brush lightly with oil and lay it on a hot, clean grate; bubbles appear within a minute or two.",
+      "Flip when the bottom has golden marks, cook the other side briefly, then brush with garlic oil or herb butter."
+     ],
+     "q": "Which flatbread tradition do you love: naan, pita, piadina or something else?",
+     "c": "Grill a simple flatbread and top it with herb butter or olive oil, or plan the toppings you would use."
+    },
+    "de": {
+     "t": "Gegrillte Fladenbrote",
+     "g": "Back einfachen Teig direkt auf dem Rost für schnelle, rauchige Fladenbrote.",
+     "p": [
+      "Ein einfacher Teig aus Mehl, Wasser, Hefe, Salz und etwas Öl, oder sogar fertiger Pizzateig, funktioniert perfekt.",
+      "Roll ihn dünn aus, bestreiche ihn leicht mit Öl und leg ihn auf den heißen, sauberen Rost; nach ein, zwei Minuten bilden sich Blasen.",
+      "Wenden, wenn die Unterseite goldene Streifen hat, die andere Seite kurz backen und mit Knoblauchöl oder Kräuterbutter bestreichen."
+     ],
+     "q": "Welche Fladenbrot-Tradition liebst du: Naan, Pita, Piadina oder etwas anderes?",
+     "c": "Grill ein einfaches Fladenbrot mit Kräuterbutter oder Olivenöl oder plane den Belag, den du nehmen würdest."
+    },
+    "es": {
+     "t": "Panes planos a la parrilla",
+     "g": "Cocina masa sencilla directamente en la rejilla para conseguir panes planos rápidos y ahumados.",
+     "p": [
+      "Una masa básica de harina, agua, levadura, sal y un poco de aceite, o incluso masa de pizza ya hecha, funciona perfecta.",
+      "Estírala fina, úntala con poco aceite y ponla sobre la rejilla caliente y limpia; en uno o dos minutos salen burbujas.",
+      "Dale la vuelta cuando la base tenga marcas doradas, cocina un poco el otro lado y píntala con aceite de ajo o mantequilla de hierbas."
+     ],
+     "q": "¿Qué tradición de pan plano te encanta: naan, pita, piadina u otra?",
+     "c": "Asa un pan plano sencillo y cúbrelo con mantequilla de hierbas o aceite de oliva, o planea los ingredientes que usarías."
+    },
+    "fr": {
+     "t": "Pains plats grillés",
+     "g": "Cuis une pâte simple directement sur la grille pour des pains plats rapides et fumés.",
+     "p": [
+      "Une pâte de base avec farine, eau, levure, sel et un peu d'huile, ou même une pâte à pizza toute prête, convient parfaitement.",
+      "Étale-la finement, huile-la légèrement et pose-la sur une grille chaude et propre ; des bulles apparaissent en une ou deux minutes.",
+      "Retourne quand le dessous est marqué et doré, cuis brièvement l'autre face, puis badigeonne d'huile à l'ail ou de beurre aux herbes."
+     ],
+     "q": "Quelle tradition de pain plat adores-tu : naan, pita, piadina ou autre chose ?",
+     "c": "Grille un pain plat simple et garnis-le de beurre aux herbes ou d'huile d'olive, ou prévois ta garniture idéale."
+    },
+    "it": {
+     "t": "Pane piatto alla griglia",
+     "g": "Cuoci un impasto semplice direttamente sulla griglia per pani piatti veloci e affumicati.",
+     "p": [
+      "Un impasto base di farina, acqua, lievito, sale e un filo d'olio, o anche pasta per pizza già pronta, va benissimo.",
+      "Stendilo sottile, ungilo appena d'olio e mettilo sulla griglia calda e pulita; in uno o due minuti compaiono le bolle.",
+      "Giralo quando sotto ha rigature dorate, cuoci brevemente l'altro lato e spennellalo con olio all'aglio o burro alle erbe."
+     ],
+     "q": "Quale tradizione di pane piatto ami: naan, pita, piadina o altro?",
+     "c": "Griglia un pane piatto semplice e condiscilo con burro alle erbe o olio d'oliva, oppure pensa ai condimenti che useresti."
+    },
+    "pt": {
+     "t": "Pães achatados grelhados",
+     "g": "Coze massa simples diretamente na grelha para pães achatados rápidos e com sabor a fumo.",
+     "p": [
+      "Uma massa básica de farinha, água, fermento, sal e um pouco de azeite, ou até massa de pizza pronta, resulta na perfeição.",
+      "Estende-a fina, pincela com pouco azeite e põe-na na grelha quente e limpa; em um ou dois minutos surgem bolhas.",
+      "Vira quando a base tiver marcas douradas, coze um pouco o outro lado e pincela com azeite de alho ou manteiga de ervas."
+     ],
+     "q": "Que tradição de pão achatado adoras: naan, pita, piadina ou outra?",
+     "c": "Grelha um pão achatado simples e cobre-o com manteiga de ervas ou azeite, ou planeia as coberturas que usarias."
+    },
+    "pt_BR": {
+     "t": "Pão sírio e pães finos na grelha",
+     "g": "Asse massa simples direto na grelha para pães finos rápidos e defumados.",
+     "p": [
+      "Uma massa básica de farinha, água, fermento, sal e um pouco de azeite, ou até massa de pizza pronta, funciona perfeitamente.",
+      "Abra bem fina, pincele com pouco azeite e coloque na grelha quente e limpa; em um ou dois minutos surgem bolhas.",
+      "Vire quando embaixo tiver marcas douradas, asse rapidinho o outro lado e pincele com azeite de alho ou manteiga de ervas."
+     ],
+     "q": "Qual tradição de pão fino você adora: naan, pão sírio, piadina ou outra?",
+     "c": "Grelhe um pão fino simples e cubra com manteiga de ervas ou azeite, ou planeje as coberturas que usaria."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grilled bread and bruschetta",
+     "g": "Toast bread over the coals and top it Italian style with tomato, garlic and olive oil.",
+     "p": [
+      "Use thick slices of rustic bread and grill them over medium heat for 1 to 2 minutes per side until crisp and marked.",
+      "Rub the hot toast with a cut garlic clove, which melts into the surface, then drizzle with good olive oil.",
+      "Top with chopped ripe tomatoes, basil and salt for classic bruschetta, or try grilled peppers or mushrooms."
+     ],
+     "q": "What would you put on your own bruschetta?",
+     "c": "Grill a few slices of bread and make classic tomato bruschetta, or invent your own topping."
+    },
+    "de": {
+     "t": "Gegrilltes Brot und Bruschetta",
+     "g": "Röste Brot über der Glut und belege es auf italienische Art mit Tomate, Knoblauch und Olivenöl.",
+     "p": [
+      "Nimm dicke Scheiben Landbrot und grill sie bei mittlerer Hitze 1 bis 2 Minuten pro Seite, bis sie knusprig und gestreift sind.",
+      "Reib das heiße Brot mit einer halbierten Knoblauchzehe ein, die sich in die Oberfläche schmilzt, und träufle gutes Olivenöl darüber.",
+      "Mit gehackten reifen Tomaten, Basilikum und Salz belegen, oder gegrillte Paprika oder Pilze probieren."
+     ],
+     "q": "Was würdest du auf deine eigene Bruschetta legen?",
+     "c": "Grill ein paar Scheiben Brot und mach klassische Tomaten-Bruschetta oder erfinde deinen eigenen Belag."
+    },
+    "es": {
+     "t": "Pan a la parrilla y bruschetta",
+     "g": "Tuesta pan sobre las brasas y cúbrelo al estilo italiano con tomate, ajo y aceite de oliva.",
+     "p": [
+      "Usa rebanadas gruesas de pan rústico y ásalas a fuego medio de 1 a 2 minutos por lado hasta que estén crujientes y marcadas.",
+      "Frota el pan caliente con un diente de ajo cortado, que se funde en la superficie, y riégalo con buen aceite de oliva.",
+      "Cúbrelo con tomate maduro picado, albahaca y sal para la bruschetta clásica, o prueba con pimientos o champiñones asados."
+     ],
+     "q": "¿Qué le pondrías a tu propia bruschetta?",
+     "c": "Asa unas rebanadas de pan y prepara la bruschetta clásica de tomate, o inventa tu propio acompañamiento."
+    },
+    "fr": {
+     "t": "Pain grillé et bruschetta",
+     "g": "Grille du pain sur les braises et garnis-le à l'italienne de tomate, d'ail et d'huile d'olive.",
+     "p": [
+      "Prends de grosses tranches de pain de campagne et grille-les à feu moyen 1 à 2 minutes par face, croustillantes et marquées.",
+      "Frotte le pain chaud avec une gousse d'ail coupée, qui fond dans la surface, puis arrose d'une bonne huile d'olive.",
+      "Garnis de tomates mûres hachées, basilic et sel pour la bruschetta classique, ou essaie poivrons ou champignons grillés."
+     ],
+     "q": "Que mettrais-tu sur ta propre bruschetta ?",
+     "c": "Grille quelques tranches de pain et prépare une bruschetta classique à la tomate, ou invente ta propre garniture."
+    },
+    "it": {
+     "t": "Pane alla griglia e bruschetta",
+     "g": "Abbrustolisci il pane sulle braci e condiscilo all'italiana con pomodoro, aglio e olio d'oliva.",
+     "p": [
+      "Usa fette spesse di pane casereccio e grigliale a fuoco medio 1-2 minuti per lato, finché sono croccanti e rigate.",
+      "Strofina il pane caldo con uno spicchio d'aglio tagliato, che si scioglie sulla superficie, poi condisci con buon olio d'oliva.",
+      "Completa con pomodori maturi a pezzetti, basilico e sale per la bruschetta classica, o prova peperoni o funghi grigliati."
+     ],
+     "q": "Cosa metteresti sulla tua bruschetta?",
+     "c": "Griglia qualche fetta di pane e prepara la classica bruschetta al pomodoro, oppure inventa il tuo condimento."
+    },
+    "pt": {
+     "t": "Pão grelhado e bruschetta",
+     "g": "Tosta pão sobre as brasas e cobre-o à italiana com tomate, alho e azeite.",
+     "p": [
+      "Usa fatias grossas de pão rústico e grelha-as em calor médio 1 a 2 minutos de cada lado, até ficarem estaladiças e marcadas.",
+      "Esfrega o pão quente com um dente de alho cortado, que derrete na superfície, e rega com um bom azeite.",
+      "Cobre com tomate maduro picado, manjericão e sal para a bruschetta clássica, ou experimenta pimentos ou cogumelos grelhados."
+     ],
+     "q": "O que porias na tua própria bruschetta?",
+     "c": "Grelha umas fatias de pão e faz a bruschetta clássica de tomate, ou inventa a tua própria cobertura."
+    },
+    "pt_BR": {
+     "t": "Pão na grelha e bruschetta",
+     "g": "Toste pão nas brasas e cubra no estilo italiano com tomate, alho e azeite.",
+     "p": [
+      "Use fatias grossas de pão italiano e grelhe em fogo médio por 1 a 2 minutos de cada lado, até ficarem crocantes e marcadas.",
+      "Esfregue o pão quente com um dente de alho cortado, que derrete na superfície, e regue com um bom azeite.",
+      "Cubra com tomate maduro picado, manjericão e sal para a bruschetta clássica, ou experimente pimentão ou cogumelos grelhados."
+     ],
+     "q": "O que você colocaria na sua própria bruschetta?",
+     "c": "Grelhe algumas fatias de pão e faça a bruschetta clássica de tomate, ou invente sua própria cobertura."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Foil packet cooking",
+     "g": "Steam vegetables, potatoes or fish in foil parcels on the grill for easy, tidy meals.",
+     "p": [
+      "Place sliced food on a sheet of heavy-duty foil with oil or butter, herbs, salt and a splash of lemon or stock.",
+      "Fold the edges tightly to seal the packet so steam stays inside, leaving a little space above the food.",
+      "Grill over medium heat for about 15 to 25 minutes, then open carefully away from your face, as the steam is very hot."
+     ],
+     "q": "What would you put in your ideal foil packet?",
+     "c": "Make a foil packet with sliced potatoes, onions and herbs, or with fish, lemon and vegetables, and grill it."
+    },
+    "de": {
+     "t": "Garen im Alupäckchen",
+     "g": "Gare Gemüse, Kartoffeln oder Fisch in Alupäckchen auf dem Grill, für einfache, saubere Mahlzeiten.",
+     "p": [
+      "Leg geschnittenes Grillgut mit Öl oder Butter, Kräutern, Salz und einem Spritzer Zitrone oder Brühe auf starke Alufolie.",
+      "Falte die Ränder fest zu, damit der Dampf drinbleibt, und lass etwas Platz über dem Grillgut.",
+      "Bei mittlerer Hitze etwa 15 bis 25 Minuten grillen und vom Gesicht weg vorsichtig öffnen, denn der Dampf ist sehr heiß."
+     ],
+     "q": "Was würdest du in dein ideales Alupäckchen packen?",
+     "c": "Mach ein Päckchen mit Kartoffelscheiben, Zwiebeln und Kräutern oder mit Fisch, Zitrone und Gemüse und grill es."
+    },
+    "es": {
+     "t": "Cocinar en papillote de aluminio",
+     "g": "Cocina al vapor verduras, patatas o pescado en paquetes de aluminio en la parrilla para comidas fáciles y limpias.",
+     "p": [
+      "Pon la comida en rodajas sobre papel de aluminio grueso con aceite o mantequilla, hierbas, sal y un chorrito de limón o caldo.",
+      "Dobla bien los bordes para sellar el paquete y que el vapor quede dentro, dejando algo de espacio sobre la comida.",
+      "Ásalo a fuego medio de 15 a 25 minutos y ábrelo con cuidado lejos de la cara, porque el vapor quema mucho."
+     ],
+     "q": "¿Qué pondrías en tu paquete de aluminio ideal?",
+     "c": "Prepara un paquete con patatas en rodajas, cebolla y hierbas, o con pescado, limón y verduras, y ásalo."
+    },
+    "fr": {
+     "t": "La cuisson en papillote",
+     "g": "Cuis à la vapeur légumes, pommes de terre ou poisson en papillotes sur le grill pour des repas faciles et propres.",
+     "p": [
+      "Dispose les aliments tranchés sur un papier alu épais avec huile ou beurre, herbes, sel et un trait de citron ou de bouillon.",
+      "Replie bien les bords pour fermer la papillote et garder la vapeur, en laissant un peu d'espace au-dessus.",
+      "Grille à feu moyen environ 15 à 25 minutes, puis ouvre avec précaution loin du visage, car la vapeur est brûlante."
+     ],
+     "q": "Que mettrais-tu dans ta papillote idéale ?",
+     "c": "Prépare une papillote avec pommes de terre, oignons et herbes, ou avec poisson, citron et légumes, et grille-la."
+    },
+    "it": {
+     "t": "Cottura al cartoccio",
+     "g": "Cuoci al vapore verdure, patate o pesce in cartocci di alluminio sulla griglia per pasti facili e puliti.",
+     "p": [
+      "Metti il cibo a fette su un foglio di alluminio resistente con olio o burro, erbe, sale e un goccio di limone o brodo.",
+      "Ripiega bene i bordi per sigillare il cartoccio e tenere dentro il vapore, lasciando un po' di spazio sopra il cibo.",
+      "Griglia a fuoco medio per circa 15-25 minuti, poi apri con cautela lontano dal viso, perché il vapore scotta."
+     ],
+     "q": "Cosa metteresti nel tuo cartoccio ideale?",
+     "c": "Prepara un cartoccio con patate a fette, cipolle ed erbe, oppure con pesce, limone e verdure, e griglialo."
+    },
+    "pt": {
+     "t": "Cozinhar em papelote de alumínio",
+     "g": "Coze a vapor legumes, batatas ou peixe em papelotes de alumínio na grelha para refeições fáceis e limpas.",
+     "p": [
+      "Põe a comida às fatias numa folha de alumínio grossa com azeite ou manteiga, ervas, sal e um pouco de limão ou caldo.",
+      "Dobra bem as pontas para fechar o papelote e manter o vapor dentro, deixando algum espaço por cima da comida.",
+      "Grelha em calor médio cerca de 15 a 25 minutos e abre com cuidado longe da cara, porque o vapor queima muito."
+     ],
+     "q": "O que porias no teu papelote ideal?",
+     "c": "Faz um papelote com batatas às rodelas, cebola e ervas, ou com peixe, limão e legumes, e grelha-o."
+    },
+    "pt_BR": {
+     "t": "Preparo no papel-alumínio",
+     "g": "Cozinhe no vapor legumes, batatas ou peixe em trouxinhas de alumínio na grelha para refeições fáceis e limpas.",
+     "p": [
+      "Coloque a comida fatiada numa folha de alumínio grossa com azeite ou manteiga, ervas, sal e um pouco de limão ou caldo.",
+      "Dobre bem as bordas para fechar a trouxinha e manter o vapor dentro, deixando um espaço acima da comida.",
+      "Grelhe em fogo médio por uns 15 a 25 minutos e abra com cuidado, longe do rosto, porque o vapor queima muito."
+     ],
+     "q": "O que você colocaria na sua trouxinha ideal?",
+     "c": "Faça uma trouxinha com batatas fatiadas, cebola e ervas, ou com peixe, limão e legumes, e leve à grelha."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grilled potatoes and sweet potatoes",
+     "g": "Grill potatoes and sweet potatoes with crispy outsides and soft, fluffy centres.",
+     "p": [
+      "Parboil potato slices or wedges in salted water until just tender, so they finish cooking quickly on the grill.",
+      "Drain and let them steam dry, then toss in oil, salt and spices like paprika or rosemary.",
+      "Grill over medium heat, turning once, until golden and crisp; sweet potatoes brown faster, so keep an eye on them."
+     ],
+     "q": "Do you prefer regular potatoes or sweet potatoes on the grill?",
+     "c": "Parboil and grill a batch of potato or sweet potato wedges, and season them with your own rub from day 40."
+    },
+    "de": {
+     "t": "Gegrillte Kartoffeln und Süßkartoffeln",
+     "g": "Grill Kartoffeln und Süßkartoffeln außen knusprig und innen weich und locker.",
+     "p": [
+      "Koch Kartoffelscheiben oder Spalten in Salzwasser vor, bis sie gerade weich sind, damit sie auf dem Grill schnell fertig werden.",
+      "Abgießen, ausdampfen lassen und mit Öl, Salz und Gewürzen wie Paprika oder Rosmarin mischen.",
+      "Bei mittlerer Hitze grillen und einmal wenden, bis sie goldbraun und knusprig sind; Süßkartoffeln bräunen schneller."
+     ],
+     "q": "Magst du auf dem Grill lieber normale Kartoffeln oder Süßkartoffeln?",
+     "c": "Koch und grill eine Portion Kartoffel- oder Süßkartoffelspalten und würz sie mit deinem Rub vom Tag 40."
+    },
+    "es": {
+     "t": "Patatas y boniatos a la parrilla",
+     "g": "Asa patatas y boniatos con el exterior crujiente y el interior suave y esponjoso.",
+     "p": [
+      "Hierve rodajas o gajos de patata en agua con sal hasta que estén apenas tiernos, para que se terminen rápido en la parrilla.",
+      "Escúrrelos y deja que suelten el vapor, luego mézclalos con aceite, sal y especias como pimentón o romero.",
+      "Ásalos a fuego medio girándolos una vez hasta que estén dorados y crujientes; el boniato se dora antes, vigílalo."
+     ],
+     "q": "¿Prefieres patatas normales o boniatos a la parrilla?",
+     "c": "Hierve y asa unos gajos de patata o boniato, y sazónalos con tu propio rub del día 40."
+    },
+    "fr": {
+     "t": "Pommes de terre et patates douces grillées",
+     "g": "Grille pommes de terre et patates douces croustillantes dehors et fondantes dedans.",
+     "p": [
+      "Précuis les rondelles ou quartiers dans de l'eau salée jusqu'à ce qu'ils soient juste tendres, pour finir vite sur le grill.",
+      "Égoutte-les et laisse-les sécher à la vapeur, puis enrobe-les d'huile, de sel et d'épices comme paprika ou romarin.",
+      "Grille à feu moyen en retournant une fois, jusqu'à ce qu'ils soient dorés ; la patate douce colore plus vite, surveille-la."
+     ],
+     "q": "Préfères-tu les pommes de terre ou les patates douces au barbecue ?",
+     "c": "Précuis et grille des quartiers de pomme de terre ou de patate douce, et assaisonne-les avec ton rub du jour 40."
+    },
+    "it": {
+     "t": "Patate e patate dolci alla griglia",
+     "g": "Griglia patate e patate dolci croccanti fuori e morbide e soffici dentro.",
+     "p": [
+      "Sbollenta fette o spicchi di patata in acqua salata finché sono appena teneri, così finiscono in fretta sulla griglia.",
+      "Scolali e lasciali asciugare al vapore, poi condiscili con olio, sale e spezie come paprika o rosmarino.",
+      "Griglia a fuoco medio girando una volta finché sono dorati e croccanti; le patate dolci scuriscono prima, tienile d'occhio."
+     ],
+     "q": "Preferisci le patate normali o le patate dolci alla griglia?",
+     "c": "Sbollenta e griglia una porzione di spicchi di patata o patata dolce e condiscili con il tuo rub del giorno 40."
+    },
+    "pt": {
+     "t": "Batatas e batatas-doces grelhadas",
+     "g": "Grelha batatas e batatas-doces estaladiças por fora e macias e fofas por dentro.",
+     "p": [
+      "Coze rodelas ou gomos de batata em água com sal até ficarem quase tenros, para acabarem depressa na grelha.",
+      "Escorre e deixa-os secar ao vapor, depois envolve-os em azeite, sal e especiarias como colorau ou alecrim.",
+      "Grelha em calor médio, virando uma vez, até estarem dourados e estaladiços; a batata-doce aloura mais depressa."
+     ],
+     "q": "Preferes batata normal ou batata-doce na grelha?",
+     "c": "Coze e grelha uma dose de gomos de batata ou batata-doce e tempera-os com o teu rub do dia 40."
+    },
+    "pt_BR": {
+     "t": "Batata e batata-doce na grelha",
+     "g": "Grelhe batatas e batatas-doces crocantes por fora e macias e fofinhas por dentro.",
+     "p": [
+      "Pré-cozinhe rodelas ou gomos de batata em água com sal até ficarem quase macios, para terminarem rápido na grelha.",
+      "Escorra e deixe secar no vapor, depois envolva em azeite, sal e especiarias como páprica ou alecrim.",
+      "Grelhe em fogo médio, virando uma vez, até dourar e ficar crocante; a batata-doce doura mais rápido, fique de olho."
+     ],
+     "q": "Você prefere batata comum ou batata-doce na grelha?",
+     "c": "Pré-cozinhe e grelhe uma porção de gomos de batata ou batata-doce e tempere com o seu rub do dia 40."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review day: steaks, rubs and sauces",
+     "g": "Look back at a month of cuts, doneness, rubs, marinades, sauces and vegetarian grilling.",
+     "p": [
+      "You can choose steak cuts, cook them to the right doneness with a thermometer, rest them and slice against the grain.",
+      "You know how rubs, marinades and brines work, and when to add sweet sauces so they glaze instead of burn.",
+      "You have explored chimichurri, salsas, herb butters, halloumi, tofu, portobellos, flatbreads and foil packets."
+     ],
+     "q": "Which recipe from this month would you cook again for friends?",
+     "c": "Plan a small grill menu with one main, one sauce and one vegetable side from this month, then cook it or share it."
+    },
+    "de": {
+     "t": "Wiederholung: Steaks, Rubs und Saucen",
+     "g": "Blick auf einen Monat mit Zuschnitten, Garpunkten, Rubs, Marinaden, Saucen und vegetarischem Grillen zurück.",
+     "p": [
+      "Du wählst Steak-Zuschnitte, garst sie mit Thermometer auf den richtigen Punkt, lässt sie ruhen und schneidest gegen die Faser.",
+      "Du weißt, wie Rubs, Marinaden und Laken wirken und wann süße Saucen dazukommen, damit sie glasieren statt verbrennen.",
+      "Du hast Chimichurri, Salsas, Kräuterbutter, Halloumi, Tofu, Portobellos, Fladenbrot und Alupäckchen entdeckt."
+     ],
+     "q": "Welches Rezept aus diesem Monat würdest du für Freunde noch einmal zubereiten?",
+     "c": "Plane ein kleines Grillmenü mit Hauptgericht, Sauce und Gemüsebeilage aus diesem Monat und koch es oder teil es mit mir."
+    },
+    "es": {
+     "t": "Repaso: filetes, rubs y salsas",
+     "g": "Repasa un mes de cortes, puntos de cocción, rubs, adobos, salsas y parrilla vegetariana.",
+     "p": [
+      "Sabes elegir cortes, cocinarlos al punto justo con termómetro, dejarlos reposar y cortarlos en contra de la fibra.",
+      "Sabes cómo funcionan rubs, adobos y salmueras, y cuándo añadir salsas dulces para que glaseen sin quemarse.",
+      "Has explorado el chimichurri, las salsas frescas, la mantequilla de hierbas, el halloumi, el tofu, los portobellos y más."
+     ],
+     "q": "¿Qué receta de este mes volverías a cocinar para tus amigos?",
+     "c": "Planea un pequeño menú a la parrilla con un principal, una salsa y una guarnición de verduras de este mes, y cocínalo o compártelo."
+    },
+    "fr": {
+     "t": "Révision : steaks, rubs et sauces",
+     "g": "Repense à un mois de pièces, cuissons, rubs, marinades, sauces et grillades végétariennes.",
+     "p": [
+      "Tu sais choisir une pièce, la cuire au bon point avec un thermomètre, la laisser reposer et la trancher contre les fibres.",
+      "Tu sais comment agissent rubs, marinades et saumures, et quand ajouter une sauce sucrée pour qu'elle laque sans brûler.",
+      "Tu as découvert chimichurri, salsas, beurres aux herbes, halloumi, tofu, portobellos, pains plats et papillotes."
+     ],
+     "q": "Quelle recette de ce mois referais-tu pour des amis ?",
+     "c": "Imagine un petit menu grill avec un plat, une sauce et un accompagnement de légumes de ce mois, puis cuisine-le ou partage-le."
+    },
+    "it": {
+     "t": "Ripasso: bistecche, rub e salse",
+     "g": "Ripensa a un mese di tagli, cotture, rub, marinate, salse e grigliate vegetariane.",
+     "p": [
+      "Sai scegliere i tagli, cuocerli al punto giusto col termometro, farli riposare e tagliarli contro fibra.",
+      "Sai come funzionano rub, marinate e salamoie, e quando aggiungere le salse dolci perché glassino senza bruciare.",
+      "Hai scoperto chimichurri, salse fresche, burri alle erbe, halloumi, tofu, portobello, pani piatti e cartocci."
+     ],
+     "q": "Quale ricetta di questo mese rifaresti per gli amici?",
+     "c": "Pianifica un piccolo menù alla griglia con un piatto, una salsa e un contorno di verdure di questo mese, poi cucinalo o raccontamelo."
+    },
+    "pt": {
+     "t": "Revisão: bifes, rubs e molhos",
+     "g": "Revê um mês de cortes, pontos, rubs, marinadas, molhos e grelhados vegetarianos.",
+     "p": [
+      "Sabes escolher cortes, cozinhá-los no ponto certo com termómetro, deixá-los repousar e cortá-los contra a fibra.",
+      "Sabes como funcionam rubs, marinadas e salmouras, e quando juntar molhos doces para caramelizarem sem queimar.",
+      "Exploraste chimichurri, salsas, manteigas de ervas, halloumi, tofu, portobellos, pães achatados e papelotes."
+     ],
+     "q": "Que receita deste mês voltarias a fazer para os amigos?",
+     "c": "Planeia um pequeno menu de grelha com um prato, um molho e um acompanhamento de legumes deste mês, e cozinha-o ou partilha-o."
+    },
+    "pt_BR": {
+     "t": "Revisão: carnes, rubs e molhos",
+     "g": "Relembre um mês de cortes, pontos, rubs, marinadas, molhos e churrasco vegetariano.",
+     "p": [
+      "Você sabe escolher cortes, preparar no ponto certo com termômetro, deixar descansar e fatiar contra a fibra.",
+      "Você sabe como funcionam rubs, marinadas e salmouras, e quando passar molhos doces para caramelizarem sem queimar.",
+      "Você explorou chimichurri, salsas, manteiga de ervas, queijo coalho, tofu, portobellos, pães finos e trouxinhas."
+     ],
+     "q": "Qual receita deste mês você faria de novo para os amigos?",
+     "c": "Planeje um pequeno cardápio de churrasco com um prato, um molho e um acompanhamento de legumes deste mês, e prepare ou compartilhe."
+    }
+   }
+  }
+ ]
+}

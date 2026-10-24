@@ -1,0 +1,835 @@
+{
+ "topic": "leadership",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What leadership really is",
+     "g": "See leadership as influence and service, not a job title.",
+     "p": [
+      "Leadership means helping others move toward a shared goal.",
+      "A title gives authority, but trust gives influence.",
+      "Anyone can practise leading, in any role or place."
+     ],
+     "q": "Who has led you well, even without a title?",
+     "c": "Today, notice one moment where you influenced others positively."
+    },
+    "de": {
+     "t": "Was Führung wirklich ist",
+     "g": "Führung als Einfluss und Dienst verstehen, nicht als Titel.",
+     "p": [
+      "Führen heißt, andere auf ein gemeinsames Ziel hin zu begleiten.",
+      "Ein Titel gibt Autorität, doch Vertrauen gibt Einfluss.",
+      "Jeder kann Führung üben, in jeder Rolle und an jedem Ort."
+     ],
+     "q": "Wer hat dich gut geführt, auch ohne offiziellen Titel?",
+     "c": "Achte heute auf einen Moment, in dem du andere positiv beeinflusst hast."
+    },
+    "es": {
+     "t": "Qué es realmente el liderazgo",
+     "g": "Entender el liderazgo como influencia y servicio, no como cargo.",
+     "p": [
+      "Liderar es ayudar a otros a avanzar hacia una meta común.",
+      "El cargo da autoridad, pero la confianza da influencia.",
+      "Cualquiera puede practicar el liderazgo, en cualquier rol o lugar."
+     ],
+     "q": "¿Quién te ha liderado bien, incluso sin tener un cargo?",
+     "c": "Hoy fíjate en un momento en que influiste positivamente en otros."
+    },
+    "fr": {
+     "t": "Ce qu'est vraiment le leadership",
+     "g": "Voir le leadership comme influence et service, pas comme un titre.",
+     "p": [
+      "Diriger, c'est aider les autres à avancer vers un but commun.",
+      "Un titre donne de l'autorité, la confiance donne de l'influence.",
+      "Chacun peut pratiquer le leadership, dans n'importe quel rôle."
+     ],
+     "q": "Qui t'a bien guidé, même sans avoir de titre officiel ?",
+     "c": "Aujourd'hui, repère un moment où tu as eu une influence positive."
+    },
+    "it": {
+     "t": "Cos'è davvero la leadership",
+     "g": "Vedere la leadership come influenza e servizio, non come titolo.",
+     "p": [
+      "Guidare significa aiutare gli altri a muoversi verso un obiettivo comune.",
+      "Un titolo dà autorità, ma è la fiducia a dare influenza.",
+      "Chiunque può esercitare la leadership, in qualsiasi ruolo o luogo."
+     ],
+     "q": "Chi ti ha guidato bene, anche senza avere un titolo?",
+     "c": "Oggi nota un momento in cui hai influenzato gli altri in modo positivo."
+    },
+    "pt": {
+     "t": "O que é realmente a liderança",
+     "g": "Perceber a liderança como influência e serviço, não como cargo.",
+     "p": [
+      "Liderar é ajudar os outros a avançar para um objetivo comum.",
+      "O cargo dá autoridade, mas é a confiança que dá influência.",
+      "Qualquer pessoa pode praticar liderança, em qualquer papel ou lugar."
+     ],
+     "q": "Quem te liderou bem, mesmo sem ter um cargo?",
+     "c": "Hoje repara num momento em que influenciaste os outros de forma positiva."
+    },
+    "pt_BR": {
+     "t": "O que é de verdade a liderança",
+     "g": "Enxergar a liderança como influência e serviço, não como cargo.",
+     "p": [
+      "Liderar é ajudar os outros a avançar rumo a um objetivo comum.",
+      "O cargo dá autoridade, mas é a confiança que dá influência.",
+      "Qualquer pessoa pode praticar liderança, em qualquer papel ou lugar."
+     ],
+     "q": "Quem já liderou você bem, mesmo sem ter um cargo?",
+     "c": "Hoje, perceba um momento em que você influenciou alguém positivamente."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Leaders and managers",
+     "g": "Understand how leading people differs from managing tasks.",
+     "p": [
+      "Managers organise tasks, time and resources to get work done.",
+      "Leaders inspire people, set direction and help them grow.",
+      "Good teams need both, and you can practise each one."
+     ],
+     "q": "Which do you do more naturally, leading or managing?",
+     "c": "List one task you manage and one person you could lead better."
+    },
+    "de": {
+     "t": "Führungskraft und Manager",
+     "g": "Verstehen, wie Menschen führen sich vom Aufgabenmanagement unterscheidet.",
+     "p": [
+      "Manager organisieren Aufgaben, Zeit und Ressourcen für gute Ergebnisse.",
+      "Führende inspirieren Menschen, geben Richtung und fördern Wachstum.",
+      "Gute Teams brauchen beides, und beides lässt sich üben."
+     ],
+     "q": "Was liegt dir mehr, Menschen führen oder Aufgaben managen?",
+     "c": "Nenne eine Aufgabe, die du managst, und eine Person, die du besser führen könntest."
+    },
+    "es": {
+     "t": "Líderes y gestores",
+     "g": "Entender en qué se distingue liderar personas de gestionar tareas.",
+     "p": [
+      "Los gestores organizan tareas, tiempo y recursos para sacar el trabajo.",
+      "Los líderes inspiran, marcan rumbo y ayudan a las personas a crecer.",
+      "Los buenos equipos necesitan ambas cosas, y se pueden practicar."
+     ],
+     "q": "¿Qué te sale más natural, liderar o gestionar?",
+     "c": "Anota una tarea que gestionas y una persona a la que podrías liderar mejor."
+    },
+    "fr": {
+     "t": "Leaders et managers",
+     "g": "Comprendre la différence entre guider des personnes et gérer des tâches.",
+     "p": [
+      "Le manager organise les tâches, le temps et les ressources.",
+      "Le leader inspire, donne une direction et aide chacun à grandir.",
+      "Les bonnes équipes ont besoin des deux, et tout cela s'apprend."
+     ],
+     "q": "Qu'est-ce qui te vient le plus naturellement, guider ou gérer ?",
+     "c": "Note une tâche que tu gères et une personne que tu pourrais mieux guider."
+    },
+    "it": {
+     "t": "Leader e manager",
+     "g": "Capire come guidare le persone differisca dal gestire i compiti.",
+     "p": [
+      "Il manager organizza compiti, tempo e risorse per portare a termine il lavoro.",
+      "Il leader ispira, indica la direzione e aiuta le persone a crescere.",
+      "I buoni team hanno bisogno di entrambi, e si possono allenare."
+     ],
+     "q": "Cosa ti viene più naturale, guidare o gestire?",
+     "c": "Scrivi un compito che gestisci e una persona che potresti guidare meglio."
+    },
+    "pt": {
+     "t": "Líderes e gestores",
+     "g": "Perceber como liderar pessoas difere de gerir tarefas.",
+     "p": [
+      "Os gestores organizam tarefas, tempo e recursos para o trabalho avançar.",
+      "Os líderes inspiram, dão direção e ajudam as pessoas a crescer.",
+      "As boas equipas precisam de ambos, e ambos se podem treinar."
+     ],
+     "q": "O que te sai mais naturalmente, liderar ou gerir?",
+     "c": "Anota uma tarefa que giras e uma pessoa que poderias liderar melhor."
+    },
+    "pt_BR": {
+     "t": "Líderes e gestores",
+     "g": "Entender como liderar pessoas difere de gerenciar tarefas.",
+     "p": [
+      "Gestores organizam tarefas, tempo e recursos para o trabalho andar.",
+      "Líderes inspiram, dão direção e ajudam as pessoas a crescer.",
+      "Bons times precisam dos dois, e os dois podem ser treinados."
+     ],
+     "q": "O que sai mais natural para você, liderar ou gerenciar?",
+     "c": "Anote uma tarefa que você gerencia e uma pessoa que poderia liderar melhor."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Leaders you admire",
+     "g": "Learn from real leaders you have met and what made them worth following.",
+     "p": [
+      "Think of someone you know personally who led well.",
+      "Name their qualities, such as listening, fairness or calm.",
+      "Pick one quality you could borrow and practise this week."
+     ],
+     "q": "Who is a leader you admire, and what do they do differently?",
+     "c": "Write down three qualities of that leader and choose one to copy."
+    },
+    "de": {
+     "t": "Vorbilder in der Führung",
+     "g": "Von echten Führungspersonen lernen, die du kennst, und warum man ihnen folgt.",
+     "p": [
+      "Denke an jemanden aus deinem Umfeld, der gut geführt hat.",
+      "Benenne seine Stärken, etwa Zuhören, Fairness oder Ruhe.",
+      "Wähle eine Eigenschaft, die du diese Woche üben möchtest."
+     ],
+     "q": "Welche Führungsperson bewunderst du, und was macht sie anders?",
+     "c": "Schreibe drei Eigenschaften dieser Person auf und wähle eine zum Nachahmen."
+    },
+    "es": {
+     "t": "Líderes que admiras",
+     "g": "Aprender de líderes reales que conoces y de por qué vale la pena seguirlos.",
+     "p": [
+      "Piensa en alguien de tu entorno que lideró bien.",
+      "Nombra sus cualidades, como escuchar, ser justo o mantener la calma.",
+      "Elige una cualidad que puedas practicar esta semana."
+     ],
+     "q": "¿A qué líder admiras y qué hace de forma diferente?",
+     "c": "Escribe tres cualidades de esa persona y elige una para imitar."
+    },
+    "fr": {
+     "t": "Les leaders que tu admires",
+     "g": "Apprendre de leaders réels que tu connais et de ce qui les rend inspirants.",
+     "p": [
+      "Pense à quelqu'un de ton entourage qui a bien guidé les autres.",
+      "Nomme ses qualités : écoute, équité, calme, par exemple.",
+      "Choisis une qualité à pratiquer cette semaine."
+     ],
+     "q": "Quel leader admires-tu, et que fait-il de différent ?",
+     "c": "Écris trois qualités de cette personne et choisis-en une à imiter."
+    },
+    "it": {
+     "t": "I leader che ammiri",
+     "g": "Imparare da leader reali che conosci e da ciò che li rende degni di essere seguiti.",
+     "p": [
+      "Pensa a qualcuno che conosci di persona e che ha guidato bene.",
+      "Dai un nome alle sue qualità: ascolto, equità o calma.",
+      "Scegli una qualità da mettere in pratica questa settimana."
+     ],
+     "q": "Quale leader ammiri e cosa fa di diverso?",
+     "c": "Scrivi tre qualità di quella persona e scegline una da imitare."
+    },
+    "pt": {
+     "t": "Líderes que admiras",
+     "g": "Aprender com líderes reais que conheces e com o que os torna dignos de seguir.",
+     "p": [
+      "Pensa em alguém que conheces e que liderou bem.",
+      "Nomeia as suas qualidades, como ouvir, ser justo ou manter a calma.",
+      "Escolhe uma qualidade para praticar esta semana."
+     ],
+     "q": "Que líder admiras e o que faz de diferente?",
+     "c": "Escreve três qualidades dessa pessoa e escolhe uma para imitar."
+    },
+    "pt_BR": {
+     "t": "Líderes que você admira",
+     "g": "Aprender com líderes reais que você conhece e com o que os torna dignos de seguir.",
+     "p": [
+      "Pense em alguém que você conhece e que liderou bem.",
+      "Dê nome às qualidades dela, como ouvir, ser justa ou manter a calma.",
+      "Escolha uma qualidade para praticar nesta semana."
+     ],
+     "q": "Que líder você admira e o que ele faz de diferente?",
+     "c": "Escreva três qualidades dessa pessoa e escolha uma para imitar."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Common leadership styles",
+     "g": "Get to know five common styles and when each one fits.",
+     "p": [
+      "Directive leaders give clear instructions and close guidance.",
+      "Coaching and supportive leaders ask questions and build confidence.",
+      "Democratic leaders involve the team, and delegating leaders give freedom."
+     ],
+     "q": "Which style do you use most, and which feels unfamiliar?",
+     "c": "Pick one style you rarely use and try it in one small situation."
+    },
+    "de": {
+     "t": "Häufige Führungsstile",
+     "g": "Fünf gängige Stile kennenlernen und wissen, wann sie passen.",
+     "p": [
+      "Direktive Führung gibt klare Anweisungen und enge Begleitung.",
+      "Coachende und unterstützende Führung fragt und stärkt das Selbstvertrauen.",
+      "Demokratische Führung bindet das Team ein, delegierende gibt Freiraum."
+     ],
+     "q": "Welchen Stil nutzt du am meisten, welcher ist dir fremd?",
+     "c": "Wähle einen selten genutzten Stil und probiere ihn in einer kleinen Situation aus."
+    },
+    "es": {
+     "t": "Estilos de liderazgo comunes",
+     "g": "Conocer cinco estilos habituales y cuándo encaja cada uno.",
+     "p": [
+      "El estilo directivo da instrucciones claras y guía de cerca.",
+      "El estilo coach y el de apoyo preguntan y refuerzan la confianza.",
+      "El democrático implica al equipo y el delegador da libertad."
+     ],
+     "q": "¿Qué estilo usas más y cuál te resulta desconocido?",
+     "c": "Elige un estilo que uses poco y pruébalo en una situación pequeña."
+    },
+    "fr": {
+     "t": "Styles de leadership courants",
+     "g": "Découvrir cinq styles courants et savoir quand chacun convient.",
+     "p": [
+      "Le style directif donne des consignes claires et un cadrage serré.",
+      "Les styles coach et soutien posent des questions et donnent confiance.",
+      "Le style démocratique implique l'équipe, le délégatif laisse de la liberté."
+     ],
+     "q": "Quel style utilises-tu le plus, et lequel te semble inhabituel ?",
+     "c": "Choisis un style rarement utilisé et essaie-le dans une petite situation."
+    },
+    "it": {
+     "t": "Stili di leadership comuni",
+     "g": "Conoscere cinque stili diffusi e quando ciascuno è adatto.",
+     "p": [
+      "Lo stile direttivo dà istruzioni chiare e una guida da vicino.",
+      "Lo stile coach e quello di supporto fanno domande e danno fiducia.",
+      "Quello democratico coinvolge il team, quello delegante lascia libertà."
+     ],
+     "q": "Quale stile usi di più e quale ti è meno familiare?",
+     "c": "Scegli uno stile che usi poco e provalo in una piccola situazione."
+    },
+    "pt": {
+     "t": "Estilos de liderança comuns",
+     "g": "Conhecer cinco estilos habituais e quando cada um se adequa.",
+     "p": [
+      "O estilo diretivo dá instruções claras e acompanha de perto.",
+      "O estilo coach e o de apoio fazem perguntas e reforçam a confiança.",
+      "O democrático envolve a equipa e o delegador dá liberdade."
+     ],
+     "q": "Que estilo usas mais e qual te parece menos familiar?",
+     "c": "Escolhe um estilo que uses pouco e experimenta-o numa situação pequena."
+    },
+    "pt_BR": {
+     "t": "Estilos de liderança comuns",
+     "g": "Conhecer cinco estilos comuns e quando cada um se encaixa.",
+     "p": [
+      "O estilo diretivo dá instruções claras e acompanha de perto.",
+      "O estilo coach e o de apoio fazem perguntas e reforçam a confiança.",
+      "O democrático envolve o time e o delegador dá liberdade."
+     ],
+     "q": "Que estilo você usa mais e qual parece menos familiar?",
+     "c": "Escolha um estilo que você usa pouco e teste numa situação pequena."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Situational leadership",
+     "g": "Adapt your style to a person's skill and confidence for each task.",
+     "p": [
+      "The same person may be a beginner at one task and expert at another.",
+      "Low skill needs clear direction; growing skill needs coaching and support.",
+      "High skill and confidence call for trust and delegation."
+     ],
+     "q": "Where would a teammate want more guidance, or more freedom?",
+     "c": "Choose one person and one task, then match your style to their level."
+    },
+    "de": {
+     "t": "Situative Führung",
+     "g": "Deinen Stil an Können und Selbstvertrauen der Person bei jeder Aufgabe anpassen.",
+     "p": [
+      "Dieselbe Person kann bei einer Aufgabe Anfänger sein, bei einer anderen Profi.",
+      "Wenig Erfahrung braucht klare Anleitung, wachsende Erfahrung Coaching.",
+      "Hohes Können und Selbstvertrauen verlangen Vertrauen und Delegation."
+     ],
+     "q": "Wo wünscht sich jemand im Team mehr Anleitung oder mehr Freiraum?",
+     "c": "Wähle eine Person und eine Aufgabe und passe deinen Stil ihrem Stand an."
+    },
+    "es": {
+     "t": "Liderazgo situacional",
+     "g": "Adaptar tu estilo a la habilidad y confianza de cada persona en cada tarea.",
+     "p": [
+      "La misma persona puede ser novata en una tarea y experta en otra.",
+      "Poca experiencia pide dirección clara; la creciente, coaching y apoyo.",
+      "Mucha habilidad y confianza piden confianza y delegación."
+     ],
+     "q": "¿Dónde querría alguien de tu equipo más guía o más libertad?",
+     "c": "Elige a una persona y una tarea, y ajusta tu estilo a su nivel."
+    },
+    "fr": {
+     "t": "Leadership situationnel",
+     "g": "Adapter ton style au niveau de compétence et de confiance de chacun.",
+     "p": [
+      "Une même personne peut être novice sur une tâche et experte sur une autre.",
+      "Peu d'expérience demande des directives claires, puis du coaching.",
+      "Une grande compétence et confiance appellent confiance et délégation."
+     ],
+     "q": "Où un coéquipier voudrait-il plus de cadre ou plus de liberté ?",
+     "c": "Choisis une personne et une tâche, puis ajuste ton style à son niveau."
+    },
+    "it": {
+     "t": "Leadership situazionale",
+     "g": "Adattare il tuo stile all'abilità e alla sicurezza della persona per ogni compito.",
+     "p": [
+      "La stessa persona può essere principiante in un compito ed esperta in un altro.",
+      "Poca esperienza richiede indicazioni chiare; crescente, coaching e sostegno.",
+      "Alta abilità e sicurezza richiedono fiducia e delega."
+     ],
+     "q": "Dove un collega vorrebbe più guida, o più libertà?",
+     "c": "Scegli una persona e un compito e adatta il tuo stile al suo livello."
+    },
+    "pt": {
+     "t": "Liderança situacional",
+     "g": "Adaptar o teu estilo à competência e confiança da pessoa em cada tarefa.",
+     "p": [
+      "A mesma pessoa pode ser principiante numa tarefa e especialista noutra.",
+      "Pouca experiência pede direção clara; a crescente, coaching e apoio.",
+      "Muita competência e confiança pedem confiança e delegação."
+     ],
+     "q": "Onde é que um colega gostaria de mais orientação ou mais liberdade?",
+     "c": "Escolhe uma pessoa e uma tarefa e ajusta o teu estilo ao nível dela."
+    },
+    "pt_BR": {
+     "t": "Liderança situacional",
+     "g": "Adaptar seu estilo à competência e à confiança da pessoa em cada tarefa.",
+     "p": [
+      "A mesma pessoa pode ser iniciante numa tarefa e especialista em outra.",
+      "Pouca experiência pede direção clara; a crescente, coaching e apoio.",
+      "Muita competência e confiança pedem confiança e delegação."
+     ],
+     "q": "Onde um colega gostaria de mais orientação ou mais liberdade?",
+     "c": "Escolha uma pessoa e uma tarefa e ajuste seu estilo ao nível dela."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Leadership myths",
+     "g": "Bust common myths that stop people from seeing themselves as leaders.",
+     "p": [
+      "Myth: leaders are born. In truth, leadership skills can be learned.",
+      "Myth: leaders know everything. Good leaders ask and admit gaps.",
+      "Myth: leaders must be loud. Quiet leaders can be just as strong."
+     ],
+     "q": "Which myth have you believed about yourself?",
+     "c": "Write one myth you believed and replace it with a truer sentence."
+    },
+    "de": {
+     "t": "Mythen über Führung",
+     "g": "Verbreitete Mythen entlarven, die vom Selbstbild als Führungskraft abhalten.",
+     "p": [
+      "Mythos: Führungskräfte sind geboren. Tatsächlich lässt sich Führen lernen.",
+      "Mythos: Führende wissen alles. Gute fragen nach und geben Lücken zu.",
+      "Mythos: Führende müssen laut sein. Leise Führung kann ebenso stark sein."
+     ],
+     "q": "Welchen Mythos hast du über dich selbst geglaubt?",
+     "c": "Schreibe einen Mythos auf und ersetze ihn durch einen wahreren Satz."
+    },
+    "es": {
+     "t": "Mitos del liderazgo",
+     "g": "Desmontar mitos que impiden verte como líder.",
+     "p": [
+      "Mito: los líderes nacen. En realidad, el liderazgo se aprende.",
+      "Mito: los líderes lo saben todo. Los buenos preguntan y admiten lagunas.",
+      "Mito: los líderes deben ser ruidosos. Los líderes tranquilos pueden ser igual de fuertes."
+     ],
+     "q": "¿Qué mito te has creído sobre ti mismo?",
+     "c": "Escribe un mito que creías y sustitúyelo por una frase más cierta."
+    },
+    "fr": {
+     "t": "Mythes du leadership",
+     "g": "Démonter les mythes qui empêchent de se voir comme leader.",
+     "p": [
+      "Mythe : on naît leader. En réalité, le leadership s'apprend.",
+      "Mythe : le leader sait tout. Les bons leaders demandent et avouent leurs lacunes.",
+      "Mythe : il faut être bruyant. Les leaders discrets peuvent être tout aussi forts."
+     ],
+     "q": "Quel mythe as-tu cru à ton sujet ?",
+     "c": "Écris un mythe que tu croyais et remplace-le par une phrase plus juste."
+    },
+    "it": {
+     "t": "Miti sulla leadership",
+     "g": "Sfatare i miti che impediscono di vedersi come leader.",
+     "p": [
+      "Mito: leader si nasce. In realtà la leadership si impara.",
+      "Mito: il leader sa tutto. I buoni leader chiedono e ammettono le lacune.",
+      "Mito: il leader deve essere rumoroso. Anche i leader tranquilli sono forti."
+     ],
+     "q": "Quale mito hai creduto su di te?",
+     "c": "Scrivi un mito in cui credevi e sostituiscilo con una frase più vera."
+    },
+    "pt": {
+     "t": "Mitos da liderança",
+     "g": "Desfazer mitos que impedem de te veres como líder.",
+     "p": [
+      "Mito: os líderes nascem assim. Na verdade, a liderança aprende-se.",
+      "Mito: os líderes sabem tudo. Os bons perguntam e admitem lacunas.",
+      "Mito: os líderes têm de ser barulhentos. Os discretos podem ser igualmente fortes."
+     ],
+     "q": "Que mito acreditaste sobre ti próprio?",
+     "c": "Escreve um mito em que acreditavas e troca-o por uma frase mais verdadeira."
+    },
+    "pt_BR": {
+     "t": "Mitos da liderança",
+     "g": "Desfazer mitos que impedem você de se ver como líder.",
+     "p": [
+      "Mito: líderes nascem prontos. Na verdade, liderança se aprende.",
+      "Mito: líderes sabem tudo. Os bons perguntam e admitem lacunas.",
+      "Mito: líderes precisam ser barulhentos. Os discretos podem ser igualmente fortes."
+     ],
+     "q": "Em que mito você acreditou sobre si mesmo?",
+     "c": "Escreva um mito em que você acreditava e troque por uma frase mais verdadeira."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Leading without a title",
+     "g": "Find everyday ways to lead in projects, friendships, clubs and family.",
+     "p": [
+      "Lead by example: show the effort, kindness and focus you hope to see.",
+      "Offer to organise, welcome newcomers or help a stuck friend.",
+      "Influence grows from small, reliable actions, not from permission."
+     ],
+     "q": "Where in your life do you already lead, without a title?",
+     "c": "Take one small initiative today, like starting a plan or helping someone."
+    },
+    "de": {
+     "t": "Führen ohne Titel",
+     "g": "Alltägliche Wege finden, in Projekten, Freundschaften, Vereinen und Familie zu führen.",
+     "p": [
+      "Führe durch Vorbild: Zeige den Einsatz und die Freundlichkeit, die du dir wünschst.",
+      "Biete an zu organisieren, Neue willkommen zu heißen oder einem Freund zu helfen.",
+      "Einfluss wächst aus kleinen, verlässlichen Taten, nicht aus Erlaubnis."
+     ],
+     "q": "Wo in deinem Leben führst du schon, ohne Titel?",
+     "c": "Ergreife heute eine kleine Initiative, etwa einen Plan starten oder jemandem helfen."
+    },
+    "es": {
+     "t": "Liderar sin cargo",
+     "g": "Descubrir formas cotidianas de liderar en proyectos, amistades, clubes y familia.",
+     "p": [
+      "Lidera con el ejemplo: muestra el esfuerzo y la amabilidad que esperas.",
+      "Ofrécete a organizar, a acoger a los nuevos o a ayudar a un amigo atascado.",
+      "La influencia crece con acciones pequeñas y fiables, no con permisos."
+     ],
+     "q": "¿En qué parte de tu vida ya lideras sin tener un cargo?",
+     "c": "Toma hoy una pequeña iniciativa, como proponer un plan o ayudar a alguien."
+    },
+    "fr": {
+     "t": "Guider sans titre",
+     "g": "Trouver des façons quotidiennes de guider en projet, entre amis, au club, en famille.",
+     "p": [
+      "Montre l'exemple : l'effort et la gentillesse que tu espères voir.",
+      "Propose d'organiser, d'accueillir les nouveaux ou d'aider un ami bloqué.",
+      "L'influence naît de petits gestes fiables, pas d'une autorisation."
+     ],
+     "q": "Où guides-tu déjà dans ta vie, sans avoir de titre ?",
+     "c": "Prends aujourd'hui une petite initiative : lancer un plan ou aider quelqu'un."
+    },
+    "it": {
+     "t": "Guidare senza un titolo",
+     "g": "Trovare modi quotidiani di guidare in progetti, amicizie, club e famiglia.",
+     "p": [
+      "Guida con l'esempio: mostra l'impegno e la gentilezza che speri di vedere.",
+      "Offriti di organizzare, accogliere i nuovi o aiutare un amico in difficoltà.",
+      "L'influenza nasce da piccole azioni affidabili, non da un permesso."
+     ],
+     "q": "In quale parte della tua vita guidi già, senza un titolo?",
+     "c": "Prendi oggi una piccola iniziativa: proporre un piano o aiutare qualcuno."
+    },
+    "pt": {
+     "t": "Liderar sem cargo",
+     "g": "Descobrir formas do dia a dia de liderar em projetos, amizades, clubes e família.",
+     "p": [
+      "Lidera pelo exemplo: mostra o esforço e a simpatia que esperas ver.",
+      "Oferece-te para organizar, receber os novos ou ajudar um amigo preso.",
+      "A influência cresce com ações pequenas e fiáveis, não com licenças."
+     ],
+     "q": "Em que parte da tua vida já lideras, sem teres um cargo?",
+     "c": "Toma hoje uma pequena iniciativa, como propor um plano ou ajudar alguém."
+    },
+    "pt_BR": {
+     "t": "Liderar sem cargo",
+     "g": "Descobrir formas do dia a dia de liderar em projetos, amizades, clubes e família.",
+     "p": [
+      "Lidere pelo exemplo: mostre o esforço e a gentileza que espera ver.",
+      "Ofereça-se para organizar, receber os novatos ou ajudar um amigo travado.",
+      "A influência cresce com ações pequenas e confiáveis, não com permissão."
+     ],
+     "q": "Em que parte da sua vida você já lidera, sem ter um cargo?",
+     "c": "Tome hoje uma pequena iniciativa, como propor um plano ou ajudar alguém."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The responsibilities of a team leader",
+     "g": "Know the core duties of leading a team, beyond just giving orders.",
+     "p": [
+      "Direction: make the goal and priorities clear to everyone.",
+      "Support and development: remove obstacles and help people grow.",
+      "Decisions and results: decide in time and share responsibility for outcomes."
+     ],
+     "q": "Which duty feels easiest for you, and which hardest?",
+     "c": "Rate yourself 1 to 5 on each duty and pick one to improve."
+    },
+    "de": {
+     "t": "Die Aufgaben einer Teamleitung",
+     "g": "Die Kernaufgaben des Führens kennen, jenseits von Anweisungen geben.",
+     "p": [
+      "Richtung: Ziel und Prioritäten für alle klar machen.",
+      "Unterstützung und Entwicklung: Hindernisse räumen und Wachstum fördern.",
+      "Entscheidungen und Ergebnisse: rechtzeitig entscheiden und Verantwortung teilen."
+     ],
+     "q": "Welche Aufgabe fällt dir leicht, welche schwer?",
+     "c": "Bewerte dich bei jeder Aufgabe von 1 bis 5 und wähle eine zum Verbessern."
+    },
+    "es": {
+     "t": "Las responsabilidades de un líder de equipo",
+     "g": "Conocer las tareas esenciales de liderar un equipo, más allá de dar órdenes.",
+     "p": [
+      "Dirección: aclarar la meta y las prioridades para todos.",
+      "Apoyo y desarrollo: quitar obstáculos y ayudar a crecer.",
+      "Decisiones y resultados: decidir a tiempo y asumir los resultados."
+     ],
+     "q": "¿Qué responsabilidad te resulta más fácil y cuál más difícil?",
+     "c": "Puntúate de 1 a 5 en cada una y elige una para mejorar."
+    },
+    "fr": {
+     "t": "Les responsabilités d'un chef d'équipe",
+     "g": "Connaître les missions clés pour guider une équipe, au-delà des ordres.",
+     "p": [
+      "Direction : rendre l'objectif et les priorités clairs pour tous.",
+      "Soutien et développement : lever les obstacles et faire grandir.",
+      "Décisions et résultats : décider à temps et assumer les résultats."
+     ],
+     "q": "Quelle mission te semble la plus facile, et la plus difficile ?",
+     "c": "Note-toi de 1 à 5 sur chacune et choisis-en une à améliorer."
+    },
+    "it": {
+     "t": "Le responsabilità di un team leader",
+     "g": "Conoscere i compiti chiave del guidare un team, oltre a dare ordini.",
+     "p": [
+      "Direzione: rendere chiari a tutti obiettivo e priorità.",
+      "Supporto e sviluppo: rimuovere ostacoli e aiutare a crescere.",
+      "Decisioni e risultati: decidere in tempo e condividere la responsabilità."
+     ],
+     "q": "Quale compito ti viene più facile e quale più difficile?",
+     "c": "Datti un voto da 1 a 5 per ciascuno e scegline uno da migliorare."
+    },
+    "pt": {
+     "t": "As responsabilidades de um líder de equipa",
+     "g": "Conhecer as tarefas essenciais de liderar uma equipa, além de dar ordens.",
+     "p": [
+      "Direção: tornar claros para todos o objetivo e as prioridades.",
+      "Apoio e desenvolvimento: remover obstáculos e ajudar a crescer.",
+      "Decisões e resultados: decidir a tempo e partilhar a responsabilidade."
+     ],
+     "q": "Que responsabilidade te parece mais fácil e qual mais difícil?",
+     "c": "Dá a ti próprio uma nota de 1 a 5 em cada uma e escolhe uma a melhorar."
+    },
+    "pt_BR": {
+     "t": "As responsabilidades de um líder de equipe",
+     "g": "Conhecer as tarefas essenciais de liderar uma equipe, além de dar ordens.",
+     "p": [
+      "Direção: deixar claros para todos o objetivo e as prioridades.",
+      "Apoio e desenvolvimento: remover obstáculos e ajudar a crescer.",
+      "Decisões e resultados: decidir a tempo e dividir a responsabilidade."
+     ],
+     "q": "Que responsabilidade parece mais fácil para você e qual mais difícil?",
+     "c": "Dê a si mesmo uma nota de 1 a 5 em cada uma e escolha uma para melhorar."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Leadership vocabulary",
+     "g": "Learn key terms in simple words so team talk feels natural.",
+     "p": [
+      "Feedback is information that helps someone improve or continue.",
+      "Delegation means handing a task over; accountability means owning the result.",
+      "A one-on-one is a regular private chat; alignment means everyone shares the goal."
+     ],
+     "q": "Which of these words do you already use in daily life?",
+     "c": "Explain one term to a friend in your own simple words."
+    },
+    "de": {
+     "t": "Führungsvokabular",
+     "g": "Wichtige Begriffe in einfachen Worten lernen, damit Teamgespräche leichter fallen.",
+     "p": [
+      "Feedback ist eine Information, die hilft, besser zu werden oder weiterzumachen.",
+      "Delegation heißt Aufgaben abgeben; Verantwortlichkeit heißt, das Ergebnis zu tragen.",
+      "Ein Einzelgespräch ist ein regelmäßiger privater Austausch; Ausrichtung heißt gemeinsames Ziel."
+     ],
+     "q": "Welche dieser Begriffe nutzt du schon im Alltag?",
+     "c": "Erkläre einem Freund einen Begriff in deinen eigenen einfachen Worten."
+    },
+    "es": {
+     "t": "Vocabulario de liderazgo",
+     "g": "Aprender términos clave con palabras sencillas para hablar con naturalidad de equipos.",
+     "p": [
+      "La retroalimentación es información que ayuda a mejorar o a seguir igual.",
+      "Delegar es entregar una tarea; responsabilidad es hacerse cargo del resultado.",
+      "Una reunión uno a uno es una charla privada periódica; alineación es compartir la meta."
+     ],
+     "q": "¿Cuáles de estas palabras ya usas en tu día a día?",
+     "c": "Explícale un término a un amigo con tus propias palabras sencillas."
+    },
+    "fr": {
+     "t": "Vocabulaire du leadership",
+     "g": "Apprendre les termes clés en mots simples pour parler d'équipe sans gêne.",
+     "p": [
+      "Le feedback est une information qui aide à progresser ou à continuer.",
+      "Déléguer, c'est confier une tâche ; la responsabilité, c'est assumer le résultat.",
+      "Un en tête-à-tête est un échange privé régulier ; l'alignement, un but partagé."
+     ],
+     "q": "Lesquels de ces mots utilises-tu déjà au quotidien ?",
+     "c": "Explique un terme à un ami avec tes propres mots simples."
+    },
+    "it": {
+     "t": "Il vocabolario della leadership",
+     "g": "Imparare i termini chiave con parole semplici per parlare di team con naturalezza.",
+     "p": [
+      "Il feedback è un'informazione che aiuta a migliorare o a continuare.",
+      "Delegare è affidare un compito; responsabilità è farsi carico del risultato.",
+      "Un one-to-one è un colloquio privato regolare; allineamento è condividere l'obiettivo."
+     ],
+     "q": "Quali di queste parole usi già nella vita di tutti i giorni?",
+     "c": "Spiega un termine a un amico con parole tue, semplici."
+    },
+    "pt": {
+     "t": "Vocabulário de liderança",
+     "g": "Aprender termos-chave em palavras simples para falar de equipas com naturalidade.",
+     "p": [
+      "Feedback é informação que ajuda a melhorar ou a continuar.",
+      "Delegar é entregar uma tarefa; responsabilização é assumir o resultado.",
+      "Uma reunião individual é uma conversa privada regular; alinhamento é partilhar o objetivo."
+     ],
+     "q": "Quais destas palavras já usas no dia a dia?",
+     "c": "Explica um termo a um amigo com as tuas palavras simples."
+    },
+    "pt_BR": {
+     "t": "Vocabulário de liderança",
+     "g": "Aprender termos-chave em palavras simples para falar de times com naturalidade.",
+     "p": [
+      "Feedback é informação que ajuda a melhorar ou a continuar.",
+      "Delegar é entregar uma tarefa; responsabilização é assumir o resultado.",
+      "Um one a one é uma conversa privada regular; alinhamento é compartilhar o objetivo."
+     ],
+     "q": "Quais dessas palavras você já usa no dia a dia?",
+     "c": "Explique um termo a um amigo com suas próprias palavras simples."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your leadership starting point",
+     "g": "Take a friendly snapshot of your experience, strengths and goals.",
+     "p": [
+      "List moments when you guided, helped or organised others.",
+      "Name two strengths and one skill you want to grow.",
+      "Set one small goal for the next months on this path."
+     ],
+     "q": "What leadership experience, big or small, are you proud of?",
+     "c": "Write a three-line note: my experience, my strength, my goal."
+    },
+    "de": {
+     "t": "Dein Ausgangspunkt als Führungskraft",
+     "g": "Eine freundliche Bestandsaufnahme von Erfahrung, Stärken und Zielen machen.",
+     "p": [
+      "Liste Momente auf, in denen du andere geleitet, unterstützt oder organisiert hast.",
+      "Nenne zwei Stärken und eine Fähigkeit, die du ausbauen willst.",
+      "Setze dir ein kleines Ziel für die kommenden Monate auf diesem Weg."
+     ],
+     "q": "Auf welche Führungserfahrung, groß oder klein, bist du stolz?",
+     "c": "Schreibe drei Zeilen: meine Erfahrung, meine Stärke, mein Ziel."
+    },
+    "es": {
+     "t": "Tu punto de partida como líder",
+     "g": "Hacer una foto amable de tu experiencia, tus fortalezas y tus metas.",
+     "p": [
+      "Haz una lista de momentos en que guiaste, ayudaste u organizaste a otros.",
+      "Nombra dos fortalezas y una habilidad que quieras desarrollar.",
+      "Fija una meta pequeña para los próximos meses en este camino."
+     ],
+     "q": "¿De qué experiencia de liderazgo, grande o pequeña, te sientes orgulloso?",
+     "c": "Escribe una nota de tres líneas: mi experiencia, mi fortaleza, mi meta."
+    },
+    "fr": {
+     "t": "Ton point de départ de leader",
+     "g": "Faire un point bienveillant sur ton expérience, tes forces et tes objectifs.",
+     "p": [
+      "Liste les moments où tu as guidé, aidé ou organisé d'autres personnes.",
+      "Nomme deux forces et une compétence que tu veux développer.",
+      "Fixe un petit objectif pour les prochains mois sur ce parcours."
+     ],
+     "q": "De quelle expérience de leadership, grande ou petite, es-tu fier ?",
+     "c": "Écris trois lignes : mon expérience, ma force, mon objectif."
+    },
+    "it": {
+     "t": "Il tuo punto di partenza da leader",
+     "g": "Fare un bilancio gentile di esperienza, punti di forza e obiettivi.",
+     "p": [
+      "Elenca i momenti in cui hai guidato, aiutato o organizzato altre persone.",
+      "Nomina due punti di forza e una competenza che vuoi far crescere.",
+      "Fissa un piccolo obiettivo per i prossimi mesi in questo percorso."
+     ],
+     "q": "Di quale esperienza di leadership, grande o piccola, vai fiero?",
+     "c": "Scrivi tre righe: la mia esperienza, la mia forza, il mio obiettivo."
+    },
+    "pt": {
+     "t": "O teu ponto de partida como líder",
+     "g": "Fazer um retrato simpático da tua experiência, forças e objetivos.",
+     "p": [
+      "Lista momentos em que guiaste, ajudaste ou organizaste outros.",
+      "Nomeia duas forças e uma competência que queres desenvolver.",
+      "Define um objetivo pequeno para os próximos meses neste percurso."
+     ],
+     "q": "De que experiência de liderança, grande ou pequena, te orgulhas?",
+     "c": "Escreve três linhas: a minha experiência, a minha força, o meu objetivo."
+    },
+    "pt_BR": {
+     "t": "Seu ponto de partida como líder",
+     "g": "Fazer um retrato amigável da sua experiência, forças e objetivos.",
+     "p": [
+      "Liste momentos em que você guiou, ajudou ou organizou outras pessoas.",
+      "Nomeie duas forças e uma habilidade que você quer desenvolver.",
+      "Defina um objetivo pequeno para os próximos meses nesta jornada."
+     ],
+     "q": "De que experiência de liderança, grande ou pequena, você se orgulha?",
+     "c": "Escreva três linhas: minha experiência, minha força, meu objetivo."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "job_interviews",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why are you leaving?",
+     "g": "Explain a job change positively, without criticising past employers.",
+     "p": [
+      "Focus on what you are moving toward, such as growth or new challenges.",
+      "Keep the tone neutral and respectful about your former workplace.",
+      "Be brief and honest, then steer back to why this role excites you."
+     ],
+     "q": "What are you hoping to find in your next role that you want more of?",
+     "c": "Write a two-sentence reason for leaving that is positive and truthful."
+    },
+    "de": {
+     "t": "Warum verlässt du deine Stelle?",
+     "g": "Einen Jobwechsel positiv erklären, ohne frühere Arbeitgeber schlechtzumachen.",
+     "p": [
+      "Konzentriere dich darauf, wohin du willst, etwa Wachstum oder neue Aufgaben.",
+      "Bleib neutral und respektvoll gegenüber dem bisherigen Arbeitsplatz.",
+      "Antworte kurz und ehrlich und lenke zurück auf das, was dich an dieser Stelle reizt."
+     ],
+     "q": "Was wünschst du dir von deiner nächsten Stelle, das du mehr haben möchtest?",
+     "c": "Schreibe einen Wechselgrund in zwei Sätzen, positiv und wahrheitsgemäß."
+    },
+    "es": {
+     "t": "¿Por qué te vas?",
+     "g": "Explicar un cambio de trabajo de forma positiva, sin criticar a empleadores anteriores.",
+     "p": [
+      "Céntrate en hacia dónde vas, como crecimiento o nuevos retos.",
+      "Mantén un tono neutral y respetuoso sobre tu antiguo lugar de trabajo.",
+      "Sé breve y sincero, y vuelve a lo que te ilusiona de este puesto."
+     ],
+     "q": "¿Qué esperas encontrar en tu próximo puesto que quieres tener más?",
+     "c": "Escribe en dos frases un motivo de cambio positivo y veraz."
+    },
+    "fr": {
+     "t": "Pourquoi quittez-vous votre poste ?",
+     "g": "Expliquer un changement d'emploi positivement, sans critiquer les anciens employeurs.",
+     "p": [
+      "Concentrez-vous sur ce vers quoi vous allez, comme l'évolution ou de nouveaux défis.",
+      "Gardez un ton neutre et respectueux envers votre ancien lieu de travail.",
+      "Soyez bref et honnête, puis revenez à ce qui vous attire dans ce poste."
+     ],
+     "q": "Que cherchez-vous dans votre prochain poste que vous voulez davantage ?",
+     "c": "Écrivez en deux phrases une raison de départ positive et sincère."
+    },
+    "it": {
+     "t": "Perché te ne vai?",
+     "g": "Spiegare un cambio di lavoro in modo positivo, senza criticare i datori di lavoro passati.",
+     "p": [
+      "Concentrati su ciò verso cui vai, come crescita o nuove sfide.",
+      "Mantieni un tono neutro e rispettoso verso il tuo vecchio posto di lavoro.",
+      "Sii breve e onesto, poi torna a ciò che ti entusiasma di questo ruolo."
+     ],
+     "q": "Cosa speri di trovare nel tuo prossimo ruolo che vuoi di più?",
+     "c": "Scrivi in due frasi un motivo di cambiamento positivo e sincero."
+    },
+    "pt": {
+     "t": "Porque estás a sair?",
+     "g": "Explicar uma mudança de emprego de forma positiva, sem criticar empregadores anteriores.",
+     "p": [
+      "Foca-te no que procuras, como crescimento ou novos desafios.",
+      "Mantém um tom neutro e respeitoso sobre o teu antigo local de trabalho.",
+      "Sê breve e honesto e volta ao que te entusiasma nesta função."
+     ],
+     "q": "O que esperas encontrar na próxima função e queres ter mais?",
+     "c": "Escreve em duas frases um motivo de mudança positivo e verdadeiro."
+    },
+    "pt_BR": {
+     "t": "Por que você está saindo?",
+     "g": "Explicar uma mudança de emprego de forma positiva, sem criticar empregadores anteriores.",
+     "p": [
+      "Foque no que você busca, como crescimento ou novos desafios.",
+      "Mantenha um tom neutro e respeitoso sobre o antigo local de trabalho.",
+      "Seja breve e honesto e volte ao que empolga você nesta vaga."
+     ],
+     "q": "O que você espera encontrar na próxima vaga e quer ter mais?",
+     "c": "Escreva em duas frases um motivo de mudança positivo e verdadeiro."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stories beat claims",
+     "g": "See why a short real example convinces more than saying I am a team player.",
+     "p": [
+      "Claims are easy to make, so listeners trust stories more.",
+      "A story shows how you think, act and treat people.",
+      "Specific details such as who, what and when make it believable."
+     ],
+     "q": "Can you remember a moment that shows you at your best at work?",
+     "c": "Turn one claim about yourself into a three-sentence real story."
+    },
+    "de": {
+     "t": "Geschichten schlagen Behauptungen",
+     "g": "Verstehen, warum ein kurzes echtes Beispiel mehr überzeugt als der Satz, ich sei teamfähig.",
+     "p": [
+      "Behauptungen sind leicht gemacht, deshalb vertrauen Zuhörende Geschichten mehr.",
+      "Eine Geschichte zeigt, wie du denkst, handelst und mit Menschen umgehst.",
+      "Konkrete Details wie wer, was und wann machen sie glaubwürdig."
+     ],
+     "q": "Fällt dir ein Moment ein, in dem du bei der Arbeit am besten warst?",
+     "c": "Mache aus einer Behauptung über dich eine echte Geschichte in drei Sätzen."
+    },
+    "es": {
+     "t": "Las historias valen más que las afirmaciones",
+     "g": "Ver por qué un ejemplo real y breve convence más que decir soy buen compañero.",
+     "p": [
+      "Afirmar es fácil, por eso quien escucha confía más en las historias.",
+      "Una historia muestra cómo piensas, actúas y tratas a la gente.",
+      "Los detalles concretos, como quién, qué y cuándo, la hacen creíble."
+     ],
+     "q": "¿Recuerdas un momento que te muestre en tu mejor versión en el trabajo?",
+     "c": "Convierte una afirmación sobre ti en una historia real de tres frases."
+    },
+    "fr": {
+     "t": "Les histoires valent mieux que les affirmations",
+     "g": "Comprendre pourquoi un court exemple réel convainc plus que dire je suis un bon coéquipier.",
+     "p": [
+      "Affirmer est facile, c'est pourquoi on fait davantage confiance aux histoires.",
+      "Une histoire montre comment vous pensez, agissez et traitez les gens.",
+      "Des détails précis, comme qui, quoi et quand, la rendent crédible."
+     ],
+     "q": "Vous souvenez-vous d'un moment où vous étiez au meilleur de vous au travail ?",
+     "c": "Transformez une affirmation sur vous en une histoire vraie de trois phrases."
+    },
+    "it": {
+     "t": "Le storie battono le affermazioni",
+     "g": "Capire perché un breve esempio reale convince più del dire sono un giocatore di squadra.",
+     "p": [
+      "Affermare è facile, perciò chi ascolta si fida di più delle storie.",
+      "Una storia mostra come pensi, agisci e tratti le persone.",
+      "Dettagli concreti come chi, cosa e quando la rendono credibile."
+     ],
+     "q": "Ricordi un momento che ti mostra al meglio sul lavoro?",
+     "c": "Trasforma un'affermazione su di te in una storia vera di tre frasi."
+    },
+    "pt": {
+     "t": "As histórias valem mais do que as afirmações",
+     "g": "Perceber porque um exemplo real e breve convence mais do que dizer sou bom em equipa.",
+     "p": [
+      "Afirmar é fácil, por isso quem ouve confia mais nas histórias.",
+      "Uma história mostra como pensas, agis e tratas as pessoas.",
+      "Pormenores concretos, como quem, o quê e quando, tornam-na credível."
+     ],
+     "q": "Lembras-te de um momento que te mostre no teu melhor no trabalho?",
+     "c": "Transforma uma afirmação sobre ti numa história real de três frases."
+    },
+    "pt_BR": {
+     "t": "Histórias valem mais que afirmações",
+     "g": "Entender por que um exemplo real e curto convence mais do que dizer sou bom em equipe.",
+     "p": [
+      "Afirmar é fácil, por isso quem ouve confia mais em histórias.",
+      "Uma história mostra como você pensa, age e trata as pessoas.",
+      "Detalhes concretos, como quem, o quê e quando, deixam tudo mais crível."
+     ],
+     "q": "Você lembra de um momento que mostra você no seu melhor no trabalho?",
+     "c": "Transforme uma afirmação sobre você em uma história real de três frases."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The STAR method",
+     "g": "Learn Situation, Task, Action, Result as a simple structure for stories.",
+     "p": [
+      "Situation and Task set the scene: where, when and what needed doing.",
+      "Action is what you did, step by step, and Result is what changed.",
+      "STAR keeps answers clear, focused and easy to follow."
+     ],
+     "q": "Can you think of a small project that went well and tell it in four steps?",
+     "c": "Write one experience as four short lines: S, T, A, R."
+    },
+    "de": {
+     "t": "Die STAR-Methode",
+     "g": "Situation, Aufgabe, Handlung, Ergebnis als einfache Struktur für Geschichten lernen.",
+     "p": [
+      "Situation und Aufgabe setzen die Szene: wo, wann und was zu tun war.",
+      "Handlung ist, was du Schritt für Schritt getan hast, Ergebnis, was sich verändert hat.",
+      "STAR macht Antworten klar, fokussiert und leicht nachvollziehbar."
+     ],
+     "q": "Fällt dir ein kleines gelungenes Projekt ein, das du in vier Schritten erzählen kannst?",
+     "c": "Schreibe ein Erlebnis in vier kurzen Zeilen auf: S, A, H, E."
+    },
+    "es": {
+     "t": "El método STAR",
+     "g": "Aprender Situación, Tarea, Acción y Resultado como estructura sencilla para tus historias.",
+     "p": [
+      "Situación y Tarea ponen el escenario: dónde, cuándo y qué había que hacer.",
+      "La Acción es lo que hiciste paso a paso, y el Resultado, lo que cambió.",
+      "STAR hace las respuestas claras, centradas y fáciles de seguir."
+     ],
+     "q": "¿Se te ocurre un proyecto pequeño que salió bien y puedes contarlo en cuatro pasos?",
+     "c": "Escribe una experiencia en cuatro líneas cortas: S, T, A, R."
+    },
+    "fr": {
+     "t": "La méthode STAR",
+     "g": "Apprendre Situation, Tâche, Action, Résultat comme structure simple pour vos histoires.",
+     "p": [
+      "Situation et Tâche plantent le décor : où, quand et ce qu'il fallait faire.",
+      "L'Action, c'est ce que vous avez fait pas à pas, le Résultat, ce qui a changé.",
+      "STAR rend les réponses claires, ciblées et faciles à suivre."
+     ],
+     "q": "Pensez-vous à un petit projet réussi que vous pouvez raconter en quatre étapes ?",
+     "c": "Écrivez une expérience en quatre courtes lignes : S, T, A, R."
+    },
+    "it": {
+     "t": "Il metodo STAR",
+     "g": "Imparare Situazione, Compito, Azione e Risultato come struttura semplice per le storie.",
+     "p": [
+      "Situazione e Compito preparano la scena: dove, quando e cosa andava fatto.",
+      "L'Azione è ciò che hai fatto passo dopo passo, il Risultato ciò che è cambiato.",
+      "STAR rende le risposte chiare, centrate e facili da seguire."
+     ],
+     "q": "Ti viene in mente un piccolo progetto andato bene da raccontare in quattro passi?",
+     "c": "Scrivi un'esperienza in quattro righe brevi: S, C, A, R."
+    },
+    "pt": {
+     "t": "O método STAR",
+     "g": "Aprender Situação, Tarefa, Ação e Resultado como estrutura simples para as tuas histórias.",
+     "p": [
+      "Situação e Tarefa montam o cenário: onde, quando e o que havia a fazer.",
+      "A Ação é o que fizeste passo a passo, e o Resultado, o que mudou.",
+      "O STAR torna as respostas claras, focadas e fáceis de seguir."
+     ],
+     "q": "Lembras-te de um projeto pequeno que correu bem e que possas contar em quatro passos?",
+     "c": "Escreve uma experiência em quatro linhas curtas: S, T, A, R."
+    },
+    "pt_BR": {
+     "t": "O método STAR",
+     "g": "Aprender Situação, Tarefa, Ação e Resultado como estrutura simples para suas histórias.",
+     "p": [
+      "Situação e Tarefa montam o cenário: onde, quando e o que precisava ser feito.",
+      "A Ação é o que você fez passo a passo, e o Resultado, o que mudou.",
+      "O STAR deixa as respostas claras, focadas e fáceis de acompanhar."
+     ],
+     "q": "Você lembra de um projeto pequeno que deu certo e pode contar em quatro passos?",
+     "c": "Escreva uma experiência em quatro linhas curtas: S, T, A, R."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "STAR: setting the scene",
+     "g": "Describe the situation and task briefly so the listener follows easily.",
+     "p": [
+      "Give just enough context: where you were, who was involved, what was at stake.",
+      "State your specific task or responsibility in one clear sentence.",
+      "Skip long backstory, because the action is the star of the story."
+     ],
+     "q": "How would you set the scene of a work memory in only two sentences?",
+     "c": "Write the Situation and Task of one story in under 40 words."
+    },
+    "de": {
+     "t": "STAR: Die Szene setzen",
+     "g": "Situation und Aufgabe kurz beschreiben, damit die Zuhörenden leicht folgen.",
+     "p": [
+      "Gib gerade so viel Kontext: wo du warst, wer beteiligt war, was auf dem Spiel stand.",
+      "Nenne deine konkrete Aufgabe oder Verantwortung in einem klaren Satz.",
+      "Verzichte auf lange Vorgeschichten, denn die Handlung ist der Star."
+     ],
+     "q": "Wie würdest du eine Arbeitserinnerung in nur zwei Sätzen einleiten?",
+     "c": "Schreibe Situation und Aufgabe einer Geschichte in unter 40 Wörtern."
+    },
+    "es": {
+     "t": "STAR: preparar el escenario",
+     "g": "Describir la situación y la tarea con brevedad para que se te siga con facilidad.",
+     "p": [
+      "Da solo el contexto necesario: dónde estabas, quién participaba, qué estaba en juego.",
+      "Expresa tu tarea o responsabilidad concreta en una frase clara.",
+      "Evita largos antecedentes, porque la acción es la protagonista."
+     ],
+     "q": "¿Cómo plantearías un recuerdo laboral en solo dos frases?",
+     "c": "Escribe la Situación y la Tarea de una historia en menos de 40 palabras."
+    },
+    "fr": {
+     "t": "STAR : planter le décor",
+     "g": "Décrire brièvement la situation et la tâche pour que l'auditeur suive sans effort.",
+     "p": [
+      "Donnez juste assez de contexte : où vous étiez, qui était impliqué, ce qui était en jeu.",
+      "Énoncez votre tâche ou responsabilité précise en une phrase claire.",
+      "Évitez les longs préambules, car l'action est la vedette de l'histoire."
+     ],
+     "q": "Comment planteriez-vous un souvenir professionnel en seulement deux phrases ?",
+     "c": "Écrivez la Situation et la Tâche d'une histoire en moins de 40 mots."
+    },
+    "it": {
+     "t": "STAR: preparare la scena",
+     "g": "Descrivere brevemente situazione e compito perché chi ascolta segua senza fatica.",
+     "p": [
+      "Dai solo il contesto necessario: dove eri, chi c'era, cosa era in gioco.",
+      "Esprimi il tuo compito o la tua responsabilità in una frase chiara.",
+      "Evita lunghe premesse, perché l'azione è la protagonista."
+     ],
+     "q": "Come presenteresti un ricordo di lavoro in sole due frasi?",
+     "c": "Scrivi Situazione e Compito di una storia in meno di 40 parole."
+    },
+    "pt": {
+     "t": "STAR: montar o cenário",
+     "g": "Descrever a situação e a tarefa com brevidade para que te sigam com facilidade.",
+     "p": [
+      "Dá só o contexto necessário: onde estavas, quem participava, o que estava em jogo.",
+      "Diz a tua tarefa ou responsabilidade concreta numa frase clara.",
+      "Evita antecedentes longos, porque a ação é a protagonista."
+     ],
+     "q": "Como apresentarias uma memória de trabalho em apenas duas frases?",
+     "c": "Escreve a Situação e a Tarefa de uma história em menos de 40 palavras."
+    },
+    "pt_BR": {
+     "t": "STAR: montando o cenário",
+     "g": "Descrever a situação e a tarefa com brevidade para o ouvinte acompanhar sem esforço.",
+     "p": [
+      "Dê só o contexto necessário: onde você estava, quem participava, o que estava em jogo.",
+      "Diga sua tarefa ou responsabilidade concreta em uma frase clara.",
+      "Evite longos antecedentes, porque a ação é a protagonista."
+     ],
+     "q": "Como você apresentaria uma lembrança de trabalho em apenas duas frases?",
+     "c": "Escreva a Situação e a Tarefa de uma história em menos de 40 palavras."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "STAR: focus on your actions",
+     "g": "Use I to show what you personally did, not just what the team did.",
+     "p": [
+      "Teams achieve things, but interviewers hire individuals, so name your part.",
+      "Walk through two or three clear steps you took, in order.",
+      "You can still credit others while showing your own contribution."
+     ],
+     "q": "What is one thing you did in a team project that you are proud of?",
+     "c": "Rewrite a we story so that your own actions appear as I statements."
+    },
+    "de": {
+     "t": "STAR: Dein Handeln im Fokus",
+     "g": "Mit ich zeigen, was du persönlich getan hast, nicht nur das Team.",
+     "p": [
+      "Teams erreichen viel, aber eingestellt werden Einzelne, also benenne deinen Anteil.",
+      "Gehe zwei, drei klare Schritte durch, die du in Reihenfolge getan hast.",
+      "Du kannst andere würdigen und trotzdem deinen eigenen Beitrag zeigen."
+     ],
+     "q": "Worauf bist du bei einem Teamprojekt persönlich stolz?",
+     "c": "Schreibe eine Wir-Geschichte so um, dass dein Handeln in Ich-Sätzen auftaucht."
+    },
+    "es": {
+     "t": "STAR: céntrate en tus acciones",
+     "g": "Usar yo para mostrar lo que hiciste personalmente, no solo lo que hizo el equipo.",
+     "p": [
+      "Los equipos logran cosas, pero se contrata a personas, así que nombra tu parte.",
+      "Recorre dos o tres pasos claros que diste, en orden.",
+      "Puedes reconocer a otros y aun así mostrar tu propia aportación."
+     ],
+     "q": "¿Qué hiciste tú en un proyecto en equipo que te enorgullezca?",
+     "c": "Reescribe una historia en nosotros para que tus acciones salgan en primera persona."
+    },
+    "fr": {
+     "t": "STAR : vos actions au cœur du récit",
+     "g": "Utiliser je pour montrer ce que vous avez personnellement fait, pas seulement l'équipe.",
+     "p": [
+      "Les équipes réussissent, mais on embauche des personnes : nommez votre part.",
+      "Déroulez deux ou trois étapes claires que vous avez menées, dans l'ordre.",
+      "Vous pouvez saluer les autres tout en montrant votre propre contribution."
+     ],
+     "q": "Qu'avez-vous fait dans un projet d'équipe dont vous êtes fier ?",
+     "c": "Réécrivez une histoire en nous pour que vos actions apparaissent à la première personne."
+    },
+    "it": {
+     "t": "STAR: concentrati sulle tue azioni",
+     "g": "Usare io per mostrare cosa hai fatto personalmente, non solo cosa ha fatto il team.",
+     "p": [
+      "I team ottengono risultati, ma si assumono le persone: nomina la tua parte.",
+      "Racconta due o tre passi chiari che hai compiuto, in ordine.",
+      "Puoi riconoscere il merito altrui e mostrare comunque il tuo contributo."
+     ],
+     "q": "Cosa hai fatto tu in un progetto di squadra di cui vai fiero?",
+     "c": "Riscrivi una storia al noi in modo che le tue azioni compaiano in prima persona."
+    },
+    "pt": {
+     "t": "STAR: foco nas tuas ações",
+     "g": "Usar eu para mostrar o que fizeste pessoalmente, e não só o que a equipa fez.",
+     "p": [
+      "As equipas conseguem coisas, mas contratam-se pessoas, por isso diz qual foi a tua parte.",
+      "Percorre dois ou três passos claros que deste, por ordem.",
+      "Podes reconhecer os outros e mesmo assim mostrar o teu contributo."
+     ],
+     "q": "O que fizeste tu num projeto de equipa de que te orgulhas?",
+     "c": "Reescreve uma história em nós para que as tuas ações surjam na primeira pessoa."
+    },
+    "pt_BR": {
+     "t": "STAR: foco nas suas ações",
+     "g": "Usar eu para mostrar o que você fez pessoalmente, e não só o que a equipe fez.",
+     "p": [
+      "Equipes conquistam coisas, mas contratam-se pessoas, então diga qual foi a sua parte.",
+      "Percorra dois ou três passos claros que você deu, em ordem.",
+      "Você pode reconhecer os outros e ainda mostrar sua própria contribuição."
+     ],
+     "q": "O que você fez em um projeto em equipe que te orgulha?",
+     "c": "Reescreva uma história em nós para que suas ações apareçam na primeira pessoa."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "STAR: results that matter",
+     "g": "End with a clear outcome, numbers if possible, and what you learned.",
+     "p": [
+      "Say what changed because of your actions, such as time saved or happier customers.",
+      "Add a number or a concrete detail when you honestly can.",
+      "Close with one lesson learned, which shows growth and reflection."
+     ],
+     "q": "What result from your past work would you be happy to talk about?",
+     "c": "Add a result and a lesson learned to one of your drafted stories."
+    },
+    "de": {
+     "t": "STAR: Ergebnisse, die zählen",
+     "g": "Mit einem klaren Ergebnis schließen, möglichst mit Zahlen, und dem, was du gelernt hast.",
+     "p": [
+      "Sage, was sich durch dein Handeln verändert hat, etwa gesparte Zeit oder zufriedenere Kundschaft.",
+      "Füge eine Zahl oder ein konkretes Detail hinzu, wenn du es ehrlich kannst.",
+      "Beende mit einer Erkenntnis, das zeigt Entwicklung und Reflexion."
+     ],
+     "q": "Über welches Ergebnis aus deiner Arbeit sprichst du gern?",
+     "c": "Ergänze eine deiner Geschichten um ein Ergebnis und eine Erkenntnis."
+    },
+    "es": {
+     "t": "STAR: resultados que importan",
+     "g": "Terminar con un resultado claro, con cifras si es posible, y lo que aprendiste.",
+     "p": [
+      "Di qué cambió gracias a tus acciones, como tiempo ahorrado o clientes más contentos.",
+      "Añade una cifra o un detalle concreto cuando puedas hacerlo con honestidad.",
+      "Cierra con una lección aprendida, que muestra crecimiento y reflexión."
+     ],
+     "q": "¿De qué resultado de tu trabajo te gustaría hablar con gusto?",
+     "c": "Añade un resultado y una lección aprendida a una de tus historias."
+    },
+    "fr": {
+     "t": "STAR : des résultats qui comptent",
+     "g": "Terminer par un résultat clair, chiffré si possible, et ce que vous avez appris.",
+     "p": [
+      "Dites ce qui a changé grâce à vos actions, comme du temps gagné ou des clients plus satisfaits.",
+      "Ajoutez un chiffre ou un détail concret quand vous le pouvez honnêtement.",
+      "Concluez par une leçon apprise, qui montre évolution et recul."
+     ],
+     "q": "De quel résultat de votre travail aimeriez-vous parler ?",
+     "c": "Ajoutez un résultat et une leçon apprise à l'une de vos histoires."
+    },
+    "it": {
+     "t": "STAR: risultati che contano",
+     "g": "Chiudere con un risultato chiaro, con numeri se possibile, e ciò che hai imparato.",
+     "p": [
+      "Di' cosa è cambiato grazie alle tue azioni, come tempo risparmiato o clienti più contenti.",
+      "Aggiungi un numero o un dettaglio concreto quando puoi farlo onestamente.",
+      "Concludi con una lezione imparata, che mostra crescita e riflessione."
+     ],
+     "q": "Di quale risultato del tuo lavoro parleresti volentieri?",
+     "c": "Aggiungi un risultato e una lezione imparata a una delle tue storie."
+    },
+    "pt": {
+     "t": "STAR: resultados que contam",
+     "g": "Terminar com um resultado claro, com números se possível, e o que aprendeste.",
+     "p": [
+      "Diz o que mudou graças às tuas ações, como tempo poupado ou clientes mais satisfeitos.",
+      "Junta um número ou um pormenor concreto quando o puderes fazer com honestidade.",
+      "Fecha com uma lição aprendida, que mostra evolução e reflexão."
+     ],
+     "q": "De que resultado do teu trabalho gostarias de falar?",
+     "c": "Junta um resultado e uma lição aprendida a uma das tuas histórias."
+    },
+    "pt_BR": {
+     "t": "STAR: resultados que importam",
+     "g": "Terminar com um resultado claro, com números se possível, e o que você aprendeu.",
+     "p": [
+      "Diga o que mudou graças às suas ações, como tempo economizado ou clientes mais felizes.",
+      "Acrescente um número ou um detalhe concreto quando puder fazer isso com honestidade.",
+      "Feche com uma lição aprendida, que mostra evolução e reflexão."
+     ],
+     "q": "De que resultado do seu trabalho você gostaria de falar?",
+     "c": "Acrescente um resultado e uma lição aprendida a uma das suas histórias."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Building a story bank",
+     "g": "Collect 8 to 10 flexible stories that answer many different questions.",
+     "p": [
+      "Cover themes like teamwork, challenge, mistake, leadership, deadline and change.",
+      "One good story can often answer several different questions.",
+      "Give each story a short title so you can recall it quickly."
+     ],
+     "q": "Which stories from your life would you put in your bank first?",
+     "c": "Write short titles for five stories and note the theme of each."
+    },
+    "de": {
+     "t": "Eine Geschichtensammlung aufbauen",
+     "g": "Acht bis zehn flexible Geschichten sammeln, die viele Fragen beantworten.",
+     "p": [
+      "Decke Themen ab wie Teamarbeit, Herausforderung, Fehler, Führung, Frist und Wandel.",
+      "Eine gute Geschichte kann oft mehrere verschiedene Fragen beantworten.",
+      "Gib jeder Geschichte einen kurzen Titel, damit du sie schnell abrufst."
+     ],
+     "q": "Welche Geschichten aus deinem Leben kämen zuerst in deine Sammlung?",
+     "c": "Schreibe kurze Titel für fünf Geschichten und notiere jeweils das Thema."
+    },
+    "es": {
+     "t": "Crear un banco de historias",
+     "g": "Reunir de 8 a 10 historias flexibles que respondan a muchas preguntas distintas.",
+     "p": [
+      "Cubre temas como equipo, reto, error, liderazgo, plazo y cambio.",
+      "Una buena historia puede responder a varias preguntas diferentes.",
+      "Ponle un título corto a cada historia para recordarla rápido."
+     ],
+     "q": "¿Qué historias de tu vida pondrías primero en tu banco?",
+     "c": "Escribe títulos cortos para cinco historias y anota el tema de cada una."
+    },
+    "fr": {
+     "t": "Constituer sa banque d'histoires",
+     "g": "Rassembler 8 à 10 histoires souples qui répondent à de nombreuses questions.",
+     "p": [
+      "Couvrez des thèmes comme équipe, défi, erreur, leadership, délai et changement.",
+      "Une bonne histoire peut souvent répondre à plusieurs questions différentes.",
+      "Donnez à chaque histoire un titre court pour la retrouver vite."
+     ],
+     "q": "Quelles histoires de votre vie mettriez-vous en premier dans votre banque ?",
+     "c": "Écrivez des titres courts pour cinq histoires et notez le thème de chacune."
+    },
+    "it": {
+     "t": "Costruire una banca di storie",
+     "g": "Raccogliere da 8 a 10 storie flessibili che rispondano a molte domande diverse.",
+     "p": [
+      "Copri temi come squadra, sfida, errore, leadership, scadenza e cambiamento.",
+      "Una buona storia può spesso rispondere a più domande diverse.",
+      "Dai a ogni storia un titolo breve per ricordarla in fretta."
+     ],
+     "q": "Quali storie della tua vita metteresti per prime nella tua banca?",
+     "c": "Scrivi titoli brevi per cinque storie e annota il tema di ciascuna."
+    },
+    "pt": {
+     "t": "Criar um banco de histórias",
+     "g": "Reunir de 8 a 10 histórias flexíveis que respondam a muitas perguntas diferentes.",
+     "p": [
+      "Cobre temas como equipa, desafio, erro, liderança, prazo e mudança.",
+      "Uma boa história pode muitas vezes responder a várias perguntas diferentes.",
+      "Dá a cada história um título curto para a recordares depressa."
+     ],
+     "q": "Que histórias da tua vida porias primeiro no teu banco?",
+     "c": "Escreve títulos curtos para cinco histórias e anota o tema de cada uma."
+    },
+    "pt_BR": {
+     "t": "Montando um banco de histórias",
+     "g": "Reunir de 8 a 10 histórias flexíveis que respondam a muitas perguntas diferentes.",
+     "p": [
+      "Cubra temas como equipe, desafio, erro, liderança, prazo e mudança.",
+      "Uma boa história muitas vezes responde a várias perguntas diferentes.",
+      "Dê a cada história um título curto para lembrar rápido."
+     ],
+     "q": "Que histórias da sua vida você colocaria primeiro no seu banco?",
+     "c": "Escreva títulos curtos para cinco histórias e anote o tema de cada uma."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Practising out loud",
+     "g": "Practise answers aloud, because speaking differs from thinking silently.",
+     "p": [
+      "Saying words aloud reveals clumsy phrases you cannot spot in your head.",
+      "Practise with a mirror, a friend or even a pet as your audience.",
+      "Aim for natural speech, not a memorised script."
+     ],
+     "q": "Do you prefer to practise alone or with someone, and why?",
+     "c": "Answer one common question aloud three times and notice what improves."
+    },
+    "de": {
+     "t": "Laut üben",
+     "g": "Antworten laut üben, denn Sprechen ist etwas anderes als stilles Denken.",
+     "p": [
+      "Beim lauten Sprechen merkst du holprige Formulierungen, die im Kopf unsichtbar bleiben.",
+      "Übe vor dem Spiegel, mit einer Freundin oder sogar vor dem Haustier.",
+      "Ziel ist natürliche Sprache, kein auswendig gelernter Text."
+     ],
+     "q": "Übst du lieber allein oder mit jemandem, und warum?",
+     "c": "Beantworte eine häufige Frage dreimal laut und achte darauf, was besser wird."
+    },
+    "es": {
+     "t": "Practicar en voz alta",
+     "g": "Practicar las respuestas hablando, porque hablar no es lo mismo que pensar en silencio.",
+     "p": [
+      "Decir las palabras en voz alta revela frases torpes que no notas mentalmente.",
+      "Practica ante el espejo, con un amigo o incluso con una mascota de público.",
+      "Busca un habla natural, no un guion memorizado."
+     ],
+     "q": "¿Prefieres practicar solo o con alguien? ¿Por qué?",
+     "c": "Responde una pregunta frecuente en voz alta tres veces y observa qué mejora."
+    },
+    "fr": {
+     "t": "S'entraîner à voix haute",
+     "g": "S'exercer à répondre à voix haute, car parler diffère de penser en silence.",
+     "p": [
+      "Dire les mots à voix haute révèle des tournures maladroites invisibles dans la tête.",
+      "Entraînez-vous devant un miroir, avec un ami ou même votre animal comme public.",
+      "Visez un discours naturel, pas un texte appris par cœur."
+     ],
+     "q": "Préférez-vous vous entraîner seul ou avec quelqu'un, et pourquoi ?",
+     "c": "Répondez trois fois à voix haute à une question courante et notez ce qui s'améliore."
+    },
+    "it": {
+     "t": "Esercitarsi ad alta voce",
+     "g": "Esercitare le risposte parlando, perché parlare è diverso dal pensare in silenzio.",
+     "p": [
+      "Dire le parole ad alta voce rivela frasi goffe che nella testa non noti.",
+      "Esercitati davanti allo specchio, con un amico o con un animale come pubblico.",
+      "Punta a un parlato naturale, non a un copione memorizzato."
+     ],
+     "q": "Preferisci esercitarti da solo o con qualcuno, e perché?",
+     "c": "Rispondi tre volte ad alta voce a una domanda comune e nota cosa migliora."
+    },
+    "pt": {
+     "t": "Praticar em voz alta",
+     "g": "Praticar as respostas a falar, porque falar não é o mesmo que pensar em silêncio.",
+     "p": [
+      "Dizer as palavras em voz alta revela frases desajeitadas que não notas na cabeça.",
+      "Pratica ao espelho, com um amigo ou até com um animal de estimação como público.",
+      "Procura uma fala natural, não um guião decorado."
+     ],
+     "q": "Preferes praticar sozinho ou com alguém? Porquê?",
+     "c": "Responde a uma pergunta frequente em voz alta três vezes e repara no que melhora."
+    },
+    "pt_BR": {
+     "t": "Praticando em voz alta",
+     "g": "Praticar as respostas falando, porque falar não é o mesmo que pensar em silêncio.",
+     "p": [
+      "Dizer as palavras em voz alta revela frases desajeitadas que você não nota na cabeça.",
+      "Pratique diante do espelho, com um amigo ou até com um bichinho de plateia.",
+      "Busque uma fala natural, não um texto decorado."
+     ],
+     "q": "Você prefere praticar sozinho ou com alguém? Por quê?",
+     "c": "Responda a uma pergunta comum em voz alta três vezes e perceba o que melhora."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Recording yourself",
+     "g": "Use your phone to spot filler words, speed and body language.",
+     "p": [
+      "Record a short answer on video or audio and watch or listen back.",
+      "Notice pace, pauses, filler words, posture and facial expression.",
+      "Pick one thing to improve and record again to compare."
+     ],
+     "q": "What do you expect to notice when you watch yourself answer?",
+     "c": "Record a one-minute answer, note one strength and one tweak."
+    },
+    "de": {
+     "t": "Dich selbst aufnehmen",
+     "g": "Mit dem Handy Füllwörter, Tempo und Körpersprache erkennen.",
+     "p": [
+      "Nimm eine kurze Antwort als Video oder Audio auf und sieh oder höre sie dir an.",
+      "Achte auf Tempo, Pausen, Füllwörter, Haltung und Mimik.",
+      "Wähle eine Sache zum Verbessern und nimm neu auf, um zu vergleichen."
+     ],
+     "q": "Was erwartest du, wenn du dich selbst antworten siehst?",
+     "c": "Nimm eine Antwort von einer Minute auf und notiere eine Stärke und eine Anpassung."
+    },
+    "es": {
+     "t": "Grabarte a ti mismo",
+     "g": "Usar el móvil para detectar muletillas, ritmo y lenguaje corporal.",
+     "p": [
+      "Graba una respuesta corta en vídeo o audio y míratela o escúchala.",
+      "Fíjate en el ritmo, las pausas, las muletillas, la postura y el gesto.",
+      "Elige algo que mejorar y graba de nuevo para comparar."
+     ],
+     "q": "¿Qué esperas notar al verte responder?",
+     "c": "Graba una respuesta de un minuto y anota una fortaleza y un ajuste."
+    },
+    "fr": {
+     "t": "Vous filmer ou vous enregistrer",
+     "g": "Utiliser votre téléphone pour repérer tics de langage, débit et langage corporel.",
+     "p": [
+      "Enregistrez une courte réponse en vidéo ou en audio, puis regardez-la ou écoutez-la.",
+      "Observez le rythme, les pauses, les tics de langage, la posture et les expressions.",
+      "Choisissez un point à améliorer et réenregistrez pour comparer."
+     ],
+     "q": "Qu'espérez-vous remarquer en vous regardant répondre ?",
+     "c": "Enregistrez une réponse d'une minute et notez un point fort et un ajustement."
+    },
+    "it": {
+     "t": "Registrarsi",
+     "g": "Usare il telefono per notare intercalari, ritmo e linguaggio del corpo.",
+     "p": [
+      "Registra una risposta breve in video o audio e riguardala o riascoltala.",
+      "Nota ritmo, pause, intercalari, postura ed espressione del viso.",
+      "Scegli una cosa da migliorare e registra di nuovo per confrontare."
+     ],
+     "q": "Cosa ti aspetti di notare guardandoti mentre rispondi?",
+     "c": "Registra una risposta di un minuto e annota un punto di forza e un aggiustamento."
+    },
+    "pt": {
+     "t": "Gravares-te",
+     "g": "Usar o telemóvel para detetar vícios de linguagem, ritmo e linguagem corporal.",
+     "p": [
+      "Grava uma resposta curta em vídeo ou áudio e vê-a ou ouve-a depois.",
+      "Repara no ritmo, nas pausas, nos vícios de linguagem, na postura e na expressão.",
+      "Escolhe uma coisa a melhorar e grava de novo para comparar."
+     ],
+     "q": "O que esperas notar ao ver-te a responder?",
+     "c": "Grava uma resposta de um minuto e anota um ponto forte e um ajuste."
+    },
+    "pt_BR": {
+     "t": "Gravando a si mesmo",
+     "g": "Usar o celular para perceber vícios de linguagem, ritmo e linguagem corporal.",
+     "p": [
+      "Grave uma resposta curta em vídeo ou áudio e assista ou ouça depois.",
+      "Observe o ritmo, as pausas, os vícios de linguagem, a postura e a expressão.",
+      "Escolha uma coisa para melhorar e grave de novo para comparar."
+     ],
+     "q": "O que você espera notar ao se ver respondendo?",
+     "c": "Grave uma resposta de um minuto e anote um ponto forte e um ajuste."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month",
+     "g": "A light recap of research, key questions and STAR, with a short practice.",
+     "p": [
+      "Research: job ad, company, culture, industry and the people you meet.",
+      "Key answers: pitch, about yourself, strengths, growth and why this job.",
+      "Stories: use STAR and your story bank, practised aloud."
+     ],
+     "q": "Which part of your first month of preparation felt best, and which needs more?",
+     "c": "Pick one story and tell it with STAR in under two minutes, aloud."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Monat",
+     "g": "Ein lockerer Rückblick auf Recherche, Kernfragen und STAR, mit kurzer Übung.",
+     "p": [
+      "Recherche: Anzeige, Unternehmen, Kultur, Branche und die Menschen, die du triffst.",
+      "Kernantworten: Pitch, über dich, Stärken, Entwicklung und warum dieser Job.",
+      "Geschichten: nutze STAR und deine Sammlung, laut geübt."
+     ],
+     "q": "Welcher Teil deines ersten Vorbereitungsmonats lief am besten, welcher braucht mehr?",
+     "c": "Wähle eine Geschichte und erzähle sie mit STAR in unter zwei Minuten laut."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes",
+     "g": "Un repaso ligero de investigación, preguntas clave y STAR, con una práctica corta.",
+     "p": [
+      "Investigación: oferta, empresa, cultura, sector y las personas que conocerás.",
+      "Respuestas clave: pitch, hablar de ti, fortalezas, crecimiento y por qué este trabajo.",
+      "Historias: usa STAR y tu banco de historias, practicadas en voz alta."
+     ],
+     "q": "¿Qué parte de tu primer mes de preparación fue mejor y cuál necesita más?",
+     "c": "Elige una historia y cuéntala con STAR en menos de dos minutos, en voz alta."
+    },
+    "fr": {
+     "t": "Bilan : votre premier mois",
+     "g": "Un récapitulatif léger de la recherche, des questions clés et de STAR, avec un court exercice.",
+     "p": [
+      "Recherche : annonce, entreprise, culture, secteur et personnes rencontrées.",
+      "Réponses clés : pitch, parlez-moi de vous, atouts, évolution et pourquoi ce poste.",
+      "Histoires : utilisez STAR et votre banque d'histoires, travaillées à voix haute."
+     ],
+     "q": "Quelle partie de votre premier mois de préparation s'est le mieux passée, laquelle demande plus ?",
+     "c": "Choisissez une histoire et racontez-la avec STAR en moins de deux minutes, à voix haute."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese",
+     "g": "Un ripasso leggero di ricerca, domande chiave e STAR, con una breve pratica.",
+     "p": [
+      "Ricerca: annuncio, azienda, cultura, settore e le persone che incontrerai.",
+      "Risposte chiave: pitch, parlami di te, punti di forza, crescita e perché questo lavoro.",
+      "Storie: usa STAR e la tua banca di storie, esercitate ad alta voce."
+     ],
+     "q": "Quale parte del tuo primo mese di preparazione è andata meglio e quale richiede di più?",
+     "c": "Scegli una storia e raccontala con STAR in meno di due minuti, ad alta voce."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês",
+     "g": "Uma revisão leve de pesquisa, perguntas-chave e STAR, com uma prática curta.",
+     "p": [
+      "Pesquisa: anúncio, empresa, cultura, setor e as pessoas que vais encontrar.",
+      "Respostas-chave: pitch, fala-me de ti, pontos fortes, crescimento e porque este emprego.",
+      "Histórias: usa o STAR e o teu banco de histórias, treinadas em voz alta."
+     ],
+     "q": "Que parte do teu primeiro mês de preparação correu melhor e qual precisa de mais?",
+     "c": "Escolhe uma história e conta-a com o STAR em menos de dois minutos, em voz alta."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês",
+     "g": "Uma revisão leve de pesquisa, perguntas-chave e STAR, com uma prática curta.",
+     "p": [
+      "Pesquisa: vaga, empresa, cultura, setor e as pessoas que você vai encontrar.",
+      "Respostas-chave: pitch, fale sobre você, pontos fortes, crescimento e por que esta vaga.",
+      "Histórias: use o STAR e seu banco de histórias, treinadas em voz alta."
+     ],
+     "q": "Que parte do seu primeiro mês de preparação foi melhor e qual precisa de mais?",
+     "c": "Escolha uma história e conte com o STAR em menos de dois minutos, em voz alta."
+    }
+   }
+  }
+ ]
+}

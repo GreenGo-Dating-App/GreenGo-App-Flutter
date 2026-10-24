@@ -1,0 +1,835 @@
+{
+ "topic": "geography",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to geography",
+     "g": "Discover what geography studies and how it connects places, people and nature.",
+     "p": [
+      "Geography studies places, the people who live there and the links between them.",
+      "It works at every size, from your own street to a whole continent or the entire planet.",
+      "Geographers ask three simple questions: where is it, why is it there and how does it connect?"
+     ],
+     "q": "What place in the world have you always wanted to understand better?",
+     "c": "Look out of a window and name three things you see that a geographer would find interesting."
+    },
+    "de": {
+     "t": "Willkommen in der Geografie",
+     "g": "Entdecke, was die Geografie erforscht und wie sie Orte, Menschen und Natur verbindet.",
+     "p": [
+      "Geografie untersucht Orte, die Menschen dort und die Verbindungen zwischen ihnen.",
+      "Sie funktioniert in jedem Maßstab, von deiner Straße bis zu einem Kontinent oder dem ganzen Planeten.",
+      "Geografen stellen drei einfache Fragen: Wo ist es, warum ist es dort und womit hängt es zusammen?"
+     ],
+     "q": "Welchen Ort der Welt wolltest du schon immer besser verstehen?",
+     "c": "Schau aus dem Fenster und nenne drei Dinge, die eine Geografin spannend fände."
+    },
+    "es": {
+     "t": "Bienvenido a la geografía",
+     "g": "Descubre qué estudia la geografía y cómo conecta lugares, personas y naturaleza.",
+     "p": [
+      "La geografía estudia los lugares, la gente que vive en ellos y los vínculos entre ambos.",
+      "Funciona a cualquier escala, desde tu propia calle hasta un continente o el planeta entero.",
+      "Los geógrafos se hacen tres preguntas: dónde está, por qué está ahí y con qué se conecta."
+     ],
+     "q": "¿Qué lugar del mundo siempre has querido entender mejor?",
+     "c": "Mira por la ventana y nombra tres cosas que a un geógrafo le parecerían interesantes."
+    },
+    "fr": {
+     "t": "Bienvenue en géographie",
+     "g": "Découvrir ce qu'étudie la géographie et comment elle relie les lieux, les gens et la nature.",
+     "p": [
+      "La géographie étudie les lieux, les gens qui y vivent et les liens entre eux.",
+      "Elle marche à toutes les échelles, de ta rue jusqu'à un continent ou la planète entière.",
+      "Les géographes posent trois questions : où est-ce, pourquoi est-ce là et à quoi est-ce relié ?"
+     ],
+     "q": "Quel endroit du monde as-tu toujours voulu mieux comprendre ?",
+     "c": "Regarde par la fenêtre et cite trois choses qu'un géographe trouverait intéressantes."
+    },
+    "it": {
+     "t": "Benvenuto nella geografia",
+     "g": "Scopri che cosa studia la geografia e come collega luoghi, persone e natura.",
+     "p": [
+      "La geografia studia i luoghi, le persone che ci vivono e i legami tra loro.",
+      "Funziona a ogni scala, dalla tua via fino a un continente o all'intero pianeta.",
+      "I geografi si fanno tre domande: dove si trova, perché è lì e a che cosa è collegato?"
+     ],
+     "q": "Quale luogo del mondo hai sempre voluto capire meglio?",
+     "c": "Guarda fuori dalla finestra e nomina tre cose che un geografo troverebbe interessanti."
+    },
+    "pt": {
+     "t": "Bem-vindo à geografia",
+     "g": "Descobre o que a geografia estuda e como liga lugares, pessoas e natureza.",
+     "p": [
+      "A geografia estuda os lugares, as pessoas que lá vivem e as ligações entre eles.",
+      "Funciona a qualquer escala, desde a tua rua até um continente ou o planeta inteiro.",
+      "Os geógrafos fazem três perguntas: onde fica, porque está ali e a que está ligado?"
+     ],
+     "q": "Que lugar do mundo sempre quiseste compreender melhor?",
+     "c": "Olha pela janela e indica três coisas que um geógrafo acharia interessantes."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo à geografia",
+     "g": "Descubra o que a geografia estuda e como ela conecta lugares, pessoas e natureza.",
+     "p": [
+      "A geografia estuda os lugares, as pessoas que vivem neles e as conexões entre eles.",
+      "Ela funciona em qualquer escala, da sua rua até um continente ou o planeta inteiro.",
+      "Geógrafos fazem três perguntas: onde fica, por que está ali e com o que se conecta?"
+     ],
+     "q": "Que lugar do mundo você sempre quis entender melhor?",
+     "c": "Olhe pela janela e cite três coisas que um geógrafo acharia interessantes."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Physical and human geography",
+     "g": "Learn the two big branches of geography and how they work together.",
+     "p": [
+      "Physical geography studies nature: landforms, rivers, climate, soils, plants and animals.",
+      "Human geography studies people: cities, farms, languages, trade, travel and culture.",
+      "The best answers mix both, like how a river valley shapes where a town grows."
+     ],
+     "q": "Are you more curious about landscapes or about how people live?",
+     "c": "Pick your town and list one physical feature and one human feature that make it special."
+    },
+    "de": {
+     "t": "Physische und Humangeografie",
+     "g": "Lerne die zwei großen Zweige der Geografie kennen und wie sie zusammenspielen.",
+     "p": [
+      "Die physische Geografie erforscht die Natur: Landformen, Flüsse, Klima, Böden, Pflanzen und Tiere.",
+      "Die Humangeografie erforscht Menschen: Städte, Landwirtschaft, Sprachen, Handel und Kultur.",
+      "Die besten Antworten verbinden beides, etwa wie ein Flusstal bestimmt, wo eine Stadt wächst."
+     ],
+     "q": "Interessieren dich eher Landschaften oder die Art, wie Menschen leben?",
+     "c": "Nimm deinen Ort und nenne ein natürliches und ein menschliches Merkmal, das ihn besonders macht."
+    },
+    "es": {
+     "t": "Geografía física y humana",
+     "g": "Conoce las dos grandes ramas de la geografía y cómo trabajan juntas.",
+     "p": [
+      "La geografía física estudia la naturaleza: relieve, ríos, clima, suelos, plantas y animales.",
+      "La geografía humana estudia a las personas: ciudades, campos, lenguas, comercio y cultura.",
+      "Las mejores respuestas mezclan ambas, como un valle fluvial que decide dónde crece un pueblo."
+     ],
+     "q": "¿Te dan más curiosidad los paisajes o la forma en que vive la gente?",
+     "c": "Piensa en tu ciudad y anota un rasgo físico y uno humano que la hagan especial."
+    },
+    "fr": {
+     "t": "Géographie physique et humaine",
+     "g": "Connaître les deux grandes branches de la géographie et leur lien.",
+     "p": [
+      "La géographie physique étudie la nature : reliefs, rivières, climat, sols, plantes et animaux.",
+      "La géographie humaine étudie les gens : villes, campagnes, langues, échanges et cultures.",
+      "Les meilleures réponses mêlent les deux, comme une vallée qui décide où grandit une ville."
+     ],
+     "q": "Es-tu plus curieux des paysages ou de la façon dont vivent les gens ?",
+     "c": "Pense à ta ville et note un trait physique et un trait humain qui la rendent unique."
+    },
+    "it": {
+     "t": "Geografia fisica e umana",
+     "g": "Conosci i due grandi rami della geografia e come lavorano insieme.",
+     "p": [
+      "La geografia fisica studia la natura: rilievi, fiumi, clima, suoli, piante e animali.",
+      "La geografia umana studia le persone: città, campagne, lingue, commerci e culture.",
+      "Le risposte migliori uniscono le due, come una valle fluviale che decide dove cresce un paese."
+     ],
+     "q": "Ti incuriosiscono di più i paesaggi o il modo in cui vive la gente?",
+     "c": "Pensa alla tua città e scrivi un tratto fisico e uno umano che la rendono speciale."
+    },
+    "pt": {
+     "t": "Geografia física e humana",
+     "g": "Conhece os dois grandes ramos da geografia e a forma como se completam.",
+     "p": [
+      "A geografia física estuda a natureza: relevo, rios, clima, solos, plantas e animais.",
+      "A geografia humana estuda as pessoas: cidades, campos, línguas, comércio e cultura.",
+      "As melhores respostas juntam as duas, como um vale que decide onde cresce uma vila."
+     ],
+     "q": "Tens mais curiosidade pelas paisagens ou pela forma como as pessoas vivem?",
+     "c": "Pensa na tua terra e anota um traço físico e um traço humano que a tornam especial."
+    },
+    "pt_BR": {
+     "t": "Geografia física e humana",
+     "g": "Conheça os dois grandes ramos da geografia e como eles se completam.",
+     "p": [
+      "A geografia física estuda a natureza: relevo, rios, clima, solos, plantas e animais.",
+      "A geografia humana estuda as pessoas: cidades, campo, línguas, comércio e cultura.",
+      "As melhores respostas juntam as duas, como um vale de rio que define onde uma cidade cresce."
+     ],
+     "q": "Você tem mais curiosidade pelas paisagens ou pelo jeito como as pessoas vivem?",
+     "c": "Pense na sua cidade e anote um traço físico e um traço humano que a deixam especial."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your place in the world",
+     "g": "Locate yourself step by step, from your street up to the whole planet.",
+     "p": [
+      "Your address is a set of nested places: street, city, region, country, continent and planet.",
+      "Each level is bigger and holds many places of the level below it.",
+      "Thinking in levels helps you explain where you live to anyone in the world."
+     ],
+     "q": "How would you describe where you live to someone on another continent?",
+     "c": "Write your full cosmic address, from your street all the way to planet Earth."
+    },
+    "de": {
+     "t": "Dein Platz in der Welt",
+     "g": "Bestimme deinen Ort Schritt für Schritt, von der Straße bis zum ganzen Planeten.",
+     "p": [
+      "Deine Adresse ist eine Kette von Orten: Straße, Stadt, Region, Land, Kontinent und Planet.",
+      "Jede Ebene ist größer und enthält viele Orte der Ebene darunter.",
+      "Wer in Ebenen denkt, kann jedem auf der Welt erklären, wo er wohnt."
+     ],
+     "q": "Wie würdest du jemandem auf einem anderen Kontinent beschreiben, wo du lebst?",
+     "c": "Schreib deine kosmische Adresse auf, von deiner Straße bis zum Planeten Erde."
+    },
+    "es": {
+     "t": "Tu lugar en el mundo",
+     "g": "Ubícate paso a paso, desde tu calle hasta el planeta entero.",
+     "p": [
+      "Tu dirección es una serie de lugares encajados: calle, ciudad, región, país, continente y planeta.",
+      "Cada nivel es más grande y contiene muchos lugares del nivel inferior.",
+      "Pensar por niveles te ayuda a explicar dónde vives a cualquier persona del mundo."
+     ],
+     "q": "¿Cómo describirías dónde vives a alguien de otro continente?",
+     "c": "Escribe tu dirección cósmica completa, desde tu calle hasta el planeta Tierra."
+    },
+    "fr": {
+     "t": "Ta place dans le monde",
+     "g": "Te situer étape par étape, de ta rue jusqu'à la planète entière.",
+     "p": [
+      "Ton adresse est une suite de lieux emboîtés : rue, ville, région, pays, continent et planète.",
+      "Chaque niveau est plus grand et contient de nombreux lieux du niveau inférieur.",
+      "Penser par niveaux t'aide à expliquer où tu vis à n'importe qui sur Terre."
+     ],
+     "q": "Comment décrirais-tu l'endroit où tu vis à quelqu'un d'un autre continent ?",
+     "c": "Écris ton adresse cosmique complète, de ta rue jusqu'à la planète Terre."
+    },
+    "it": {
+     "t": "Il tuo posto nel mondo",
+     "g": "Collocati passo dopo passo, dalla tua via fino al pianeta intero.",
+     "p": [
+      "Il tuo indirizzo è una serie di luoghi uno dentro l'altro: via, città, regione, paese, continente e pianeta.",
+      "Ogni livello è più grande e contiene molti luoghi del livello inferiore.",
+      "Ragionare per livelli ti aiuta a spiegare dove vivi a chiunque nel mondo."
+     ],
+     "q": "Come descriveresti dove vivi a qualcuno di un altro continente?",
+     "c": "Scrivi il tuo indirizzo cosmico completo, dalla tua via fino al pianeta Terra."
+    },
+    "pt": {
+     "t": "O teu lugar no mundo",
+     "g": "Localiza-te passo a passo, desde a tua rua até ao planeta inteiro.",
+     "p": [
+      "A tua morada é uma série de lugares encaixados: rua, cidade, região, país, continente e planeta.",
+      "Cada nível é maior e contém muitos lugares do nível de baixo.",
+      "Pensar por níveis ajuda-te a explicar onde vives a qualquer pessoa do mundo."
+     ],
+     "q": "Como descreverias onde vives a alguém de outro continente?",
+     "c": "Escreve a tua morada cósmica completa, da tua rua até ao planeta Terra."
+    },
+    "pt_BR": {
+     "t": "Seu lugar no mundo",
+     "g": "Localize-se passo a passo, da sua rua até o planeta inteiro.",
+     "p": [
+      "Seu endereço é uma série de lugares encaixados: rua, cidade, estado, país, continente e planeta.",
+      "Cada nível é maior e contém vários lugares do nível de baixo.",
+      "Pensar em níveis ajuda você a explicar onde mora para qualquer pessoa do mundo."
+     ],
+     "q": "Como você descreveria onde mora para alguém de outro continente?",
+     "c": "Escreva seu endereço cósmico completo, da sua rua até o planeta Terra."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The shape of our Earth",
+     "g": "Understand why Earth is round but not a perfect ball.",
+     "p": [
+      "Earth is a sphere that is slightly flattened at the poles and bulges at the equator.",
+      "It is a little wider around the equator than from pole to pole, by about 43 kilometers.",
+      "The bulge comes from Earth's spin, which pushes the middle outward a tiny bit."
+     ],
+     "q": "What clues do you think ancient people used to guess that Earth is round?",
+     "c": "Spin a ball of soft dough on a table and watch how its middle spreads a little."
+    },
+    "de": {
+     "t": "Die Form unserer Erde",
+     "g": "Verstehe, warum die Erde rund ist, aber keine perfekte Kugel.",
+     "p": [
+      "Die Erde ist eine Kugel, die an den Polen leicht abgeflacht und am Äquator ausgebeult ist.",
+      "Am Äquator ist sie etwas breiter als von Pol zu Pol, um rund 43 Kilometer.",
+      "Die Ausbuchtung entsteht durch die Drehung der Erde, die die Mitte ein wenig nach außen drückt."
+     ],
+     "q": "Welche Hinweise nutzten wohl Menschen im Altertum, um zu erkennen, dass die Erde rund ist?",
+     "c": "Lass eine weiche Teigkugel auf dem Tisch kreiseln und sieh, wie sich ihre Mitte etwas weitet."
+    },
+    "es": {
+     "t": "La forma de la Tierra",
+     "g": "Entiende por qué la Tierra es redonda pero no una bola perfecta.",
+     "p": [
+      "La Tierra es una esfera algo achatada en los polos y abultada en el ecuador.",
+      "Es un poco más ancha en el ecuador que de polo a polo, unos 43 kilómetros.",
+      "El abultamiento viene del giro de la Tierra, que empuja su centro un poquito hacia fuera."
+     ],
+     "q": "¿Qué pistas crees que usaron los antiguos para adivinar que la Tierra es redonda?",
+     "c": "Haz girar una bola de masa blanda sobre la mesa y mira cómo se ensancha un poco por el centro."
+    },
+    "fr": {
+     "t": "La forme de notre Terre",
+     "g": "Comprendre pourquoi la Terre est ronde sans être une boule parfaite.",
+     "p": [
+      "La Terre est une sphère un peu aplatie aux pôles et renflée à l'équateur.",
+      "Elle est un peu plus large à l'équateur que d'un pôle à l'autre, d'environ 43 kilomètres.",
+      "Ce renflement vient de la rotation de la Terre, qui pousse un peu son milieu vers l'extérieur."
+     ],
+     "q": "Selon toi, quels indices les Anciens ont-ils utilisés pour deviner que la Terre est ronde ?",
+     "c": "Fais tourner une boule de pâte molle sur la table et regarde son milieu s'élargir un peu."
+    },
+    "it": {
+     "t": "La forma della Terra",
+     "g": "Capisci perché la Terra è rotonda ma non una sfera perfetta.",
+     "p": [
+      "La Terra è una sfera leggermente schiacciata ai poli e rigonfia all'equatore.",
+      "È un po' più larga all'equatore che da polo a polo, di circa 43 chilometri.",
+      "Il rigonfiamento nasce dalla rotazione terrestre, che spinge un po' in fuori la parte centrale."
+     ],
+     "q": "Secondo te, quali indizi usavano gli antichi per capire che la Terra è rotonda?",
+     "c": "Fai girare una pallina di pasta morbida sul tavolo e guarda come si allarga un po' al centro."
+    },
+    "pt": {
+     "t": "A forma da nossa Terra",
+     "g": "Percebe porque é que a Terra é redonda, mas não uma bola perfeita.",
+     "p": [
+      "A Terra é uma esfera ligeiramente achatada nos polos e mais larga no equador.",
+      "É um pouco mais larga no equador do que de polo a polo, cerca de 43 quilómetros.",
+      "Esse alargamento vem da rotação da Terra, que empurra um pouco o meio para fora."
+     ],
+     "q": "Que pistas achas que os povos antigos usaram para perceber que a Terra é redonda?",
+     "c": "Faz girar uma bola de massa mole na mesa e repara como o meio alarga um pouco."
+    },
+    "pt_BR": {
+     "t": "O formato da nossa Terra",
+     "g": "Entenda por que a Terra é redonda, mas não uma bola perfeita.",
+     "p": [
+      "A Terra é uma esfera um pouco achatada nos polos e mais larga no equador.",
+      "Ela é um pouco mais larga no equador do que de polo a polo, cerca de 43 quilômetros.",
+      "Esse alargamento vem da rotação da Terra, que empurra um pouco o meio para fora."
+     ],
+     "q": "Que pistas você acha que os povos antigos usaram para perceber que a Terra é redonda?",
+     "c": "Gire uma bola de massinha mole na mesa e veja como o meio se alarga um pouco."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Globes and maps",
+     "g": "Compare globes and flat maps and see why every map distorts something.",
+     "p": [
+      "A globe keeps true shapes, sizes and distances because it is round like Earth.",
+      "Globes are bulky and show little detail, so we fold the world into flat maps.",
+      "Flattening a curved surface always stretches shapes, areas, distances or directions."
+     ],
+     "q": "Do you prefer spinning a globe or exploring a map on a screen?",
+     "c": "Peel a mandarin in one piece and try to lay the peel flat: notice where it tears."
+    },
+    "de": {
+     "t": "Globen und Karten",
+     "g": "Vergleiche Globus und Landkarte und erkenne, warum jede Karte etwas verzerrt.",
+     "p": [
+      "Ein Globus zeigt Formen, Größen und Entfernungen richtig, weil er rund ist wie die Erde.",
+      "Globen sind sperrig und zeigen wenig Details, darum bringen wir die Welt auf flache Karten.",
+      "Eine gewölbte Fläche flach zu machen, verzerrt immer Formen, Flächen, Entfernungen oder Richtungen."
+     ],
+     "q": "Drehst du lieber einen Globus oder erkundest du eine Karte auf dem Bildschirm?",
+     "c": "Schäle eine Mandarine in einem Stück und leg die Schale flach: Achte darauf, wo sie reißt."
+    },
+    "es": {
+     "t": "Globos y mapas",
+     "g": "Compara el globo terráqueo con los mapas planos y descubre por qué todo mapa deforma algo.",
+     "p": [
+      "El globo conserva formas, tamaños y distancias reales porque es redondo como la Tierra.",
+      "Es voluminoso y muestra pocos detalles, así que pasamos el mundo a mapas planos.",
+      "Aplanar una superficie curva siempre estira formas, áreas, distancias o direcciones."
+     ],
+     "q": "¿Prefieres girar un globo terráqueo o explorar un mapa en una pantalla?",
+     "c": "Pela una mandarina de una pieza e intenta extender la cáscara plana: fíjate dónde se rompe."
+    },
+    "fr": {
+     "t": "Globes et cartes",
+     "g": "Comparer globe et carte plane et voir pourquoi toute carte déforme quelque chose.",
+     "p": [
+      "Un globe garde les vraies formes, tailles et distances car il est rond comme la Terre.",
+      "Il est encombrant et peu détaillé, alors on aplatit le monde sur des cartes.",
+      "Aplatir une surface courbe étire toujours les formes, les surfaces, les distances ou les directions."
+     ],
+     "q": "Préfères-tu faire tourner un globe ou explorer une carte sur un écran ?",
+     "c": "Épluche une clémentine d'un seul morceau et essaie d'aplatir la peau : regarde où elle se déchire."
+    },
+    "it": {
+     "t": "Mappamondi e carte",
+     "g": "Confronta mappamondo e carta piana e scopri perché ogni carta deforma qualcosa.",
+     "p": [
+      "Il mappamondo rispetta forme, dimensioni e distanze perché è rotondo come la Terra.",
+      "È ingombrante e poco dettagliato, quindi trasferiamo il mondo su carte piane.",
+      "Appiattire una superficie curva deforma sempre forme, aree, distanze o direzioni."
+     ],
+     "q": "Preferisci far girare un mappamondo o esplorare una mappa sullo schermo?",
+     "c": "Sbuccia un mandarino in un solo pezzo e prova a stendere la buccia: guarda dove si strappa."
+    },
+    "pt": {
+     "t": "Globos e mapas",
+     "g": "Compara o globo com os mapas planos e vê porque é que todos os mapas deformam algo.",
+     "p": [
+      "O globo mantém as formas, tamanhos e distâncias reais porque é redondo como a Terra.",
+      "É volumoso e mostra poucos pormenores, por isso passamos o mundo para mapas planos.",
+      "Planificar uma superfície curva estica sempre formas, áreas, distâncias ou direções."
+     ],
+     "q": "Preferes rodar um globo ou explorar um mapa no ecrã?",
+     "c": "Descasca uma tangerina numa só peça e tenta pôr a casca plana: repara onde se rasga."
+    },
+    "pt_BR": {
+     "t": "Globos e mapas",
+     "g": "Compare o globo com os mapas planos e veja por que todo mapa distorce alguma coisa.",
+     "p": [
+      "O globo mantém formas, tamanhos e distâncias reais porque é redondo como a Terra.",
+      "Ele é volumoso e mostra poucos detalhes, então passamos o mundo para mapas planos.",
+      "Achatar uma superfície curva sempre estica formas, áreas, distâncias ou direções."
+     ],
+     "q": "Você prefere girar um globo ou explorar um mapa na tela?",
+     "c": "Descasque uma mexerica numa peça só e tente deixar a casca plana: veja onde ela rasga."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The compass rose",
+     "g": "Read the four main directions and the in-between ones on any map.",
+     "p": [
+      "The four cardinal directions are north, south, east and west.",
+      "Between them sit northeast, southeast, southwest and northwest, the intercardinal directions.",
+      "Most maps put north at the top, but always check the compass rose to be sure."
+     ],
+     "q": "In which direction does the window of your room face?",
+     "c": "Find where the Sun rises from your home tonight or tomorrow: that side is roughly east."
+    },
+    "de": {
+     "t": "Die Windrose",
+     "g": "Lies die vier Haupthimmelsrichtungen und die Zwischenrichtungen auf jeder Karte.",
+     "p": [
+      "Die vier Haupthimmelsrichtungen sind Norden, Süden, Osten und Westen.",
+      "Dazwischen liegen Nordost, Südost, Südwest und Nordwest, die Nebenhimmelsrichtungen.",
+      "Die meisten Karten haben Norden oben, doch ein Blick auf die Windrose gibt Sicherheit."
+     ],
+     "q": "In welche Himmelsrichtung zeigt das Fenster deines Zimmers?",
+     "c": "Achte darauf, wo bei dir die Sonne aufgeht: Diese Seite ist ungefähr Osten."
+    },
+    "es": {
+     "t": "La rosa de los vientos",
+     "g": "Lee las cuatro direcciones principales y las intermedias en cualquier mapa.",
+     "p": [
+      "Los cuatro puntos cardinales son norte, sur, este y oeste.",
+      "Entre ellos están noreste, sureste, suroeste y noroeste, los puntos intermedios.",
+      "Casi todos los mapas ponen el norte arriba, pero conviene mirar siempre la rosa de los vientos."
+     ],
+     "q": "¿Hacia qué dirección da la ventana de tu habitación?",
+     "c": "Fíjate por dónde sale el Sol desde tu casa: ese lado es más o menos el este."
+    },
+    "fr": {
+     "t": "La rose des vents",
+     "g": "Lire les quatre directions principales et les directions intermédiaires sur une carte.",
+     "p": [
+      "Les quatre points cardinaux sont le nord, le sud, l'est et l'ouest.",
+      "Entre eux se trouvent le nord-est, le sud-est, le sud-ouest et le nord-ouest.",
+      "La plupart des cartes placent le nord en haut, mais vérifie toujours la rose des vents."
+     ],
+     "q": "Vers quelle direction donne la fenêtre de ta chambre ?",
+     "c": "Repère où le Soleil se lève depuis chez toi : ce côté-là, c'est à peu près l'est."
+    },
+    "it": {
+     "t": "La rosa dei venti",
+     "g": "Leggi le quattro direzioni principali e quelle intermedie su ogni carta.",
+     "p": [
+      "I quattro punti cardinali sono nord, sud, est e ovest.",
+      "Tra loro ci sono nord-est, sud-est, sud-ovest e nord-ovest, le direzioni intermedie.",
+      "Quasi tutte le carte mettono il nord in alto, ma controlla sempre la rosa dei venti."
+     ],
+     "q": "Verso quale direzione guarda la finestra della tua stanza?",
+     "c": "Osserva da dove sorge il Sole da casa tua: quel lato è più o meno l'est."
+    },
+    "pt": {
+     "t": "A rosa dos ventos",
+     "g": "Lê as quatro direções principais e as intermédias em qualquer mapa.",
+     "p": [
+      "Os quatro pontos cardeais são norte, sul, este e oeste.",
+      "Entre eles ficam nordeste, sudeste, sudoeste e noroeste, os pontos colaterais.",
+      "A maioria dos mapas põe o norte em cima, mas confirma sempre na rosa dos ventos."
+     ],
+     "q": "Para que direção está virada a janela do teu quarto?",
+     "c": "Repara de que lado nasce o Sol a partir de tua casa: esse lado é mais ou menos o este."
+    },
+    "pt_BR": {
+     "t": "A rosa dos ventos",
+     "g": "Leia as quatro direções principais e as intermediárias em qualquer mapa.",
+     "p": [
+      "Os quatro pontos cardeais são norte, sul, leste e oeste.",
+      "Entre eles ficam nordeste, sudeste, sudoeste e noroeste, os pontos colaterais.",
+      "A maioria dos mapas coloca o norte em cima, mas sempre confira a rosa dos ventos."
+     ],
+     "q": "Para que direção a janela do seu quarto está virada?",
+     "c": "Repare de que lado o Sol nasce na sua casa: esse lado é mais ou menos o leste."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Map symbols and legends",
+     "g": "Use a map legend to decode symbols, lines and colors.",
+     "p": [
+      "A legend, or key, is the small box that explains what each symbol on a map means.",
+      "Lines can show roads, rivers or borders, and colors often show water, forests or height.",
+      "Symbols vary between maps, so reading the legend first saves a lot of confusion."
+     ],
+     "q": "Which map symbol do you find easiest to recognize anywhere in the world?",
+     "c": "Draw a tiny map of your room with three symbols of your own and a legend explaining them."
+    },
+    "de": {
+     "t": "Kartensymbole und Legenden",
+     "g": "Nutze die Legende, um Symbole, Linien und Farben zu entschlüsseln.",
+     "p": [
+      "Die Legende ist das kleine Feld, das erklärt, was jedes Symbol auf der Karte bedeutet.",
+      "Linien zeigen Straßen, Flüsse oder Grenzen, Farben oft Wasser, Wald oder Höhe.",
+      "Symbole unterscheiden sich von Karte zu Karte, deshalb lohnt sich zuerst der Blick in die Legende."
+     ],
+     "q": "Welches Kartensymbol erkennst du überall auf der Welt am leichtesten?",
+     "c": "Zeichne eine Mini-Karte deines Zimmers mit drei eigenen Symbolen und einer Legende."
+    },
+    "es": {
+     "t": "Símbolos y leyendas",
+     "g": "Usa la leyenda de un mapa para descifrar símbolos, líneas y colores.",
+     "p": [
+      "La leyenda es el pequeño recuadro que explica qué significa cada símbolo del mapa.",
+      "Las líneas pueden ser carreteras, ríos o límites, y los colores suelen indicar agua, bosque o altura.",
+      "Los símbolos cambian de un mapa a otro, así que leer la leyenda primero evita líos."
+     ],
+     "q": "¿Qué símbolo de mapa te resulta más fácil de reconocer en cualquier parte?",
+     "c": "Dibuja un minimapa de tu cuarto con tres símbolos inventados y una leyenda que los explique."
+    },
+    "fr": {
+     "t": "Symboles et légendes",
+     "g": "Utiliser la légende pour décoder symboles, lignes et couleurs.",
+     "p": [
+      "La légende est le petit encadré qui explique ce que veut dire chaque symbole de la carte.",
+      "Les lignes montrent routes, rivières ou limites, les couleurs souvent l'eau, la forêt ou l'altitude.",
+      "Les symboles changent d'une carte à l'autre : lire la légende d'abord évite bien des erreurs."
+     ],
+     "q": "Quel symbole de carte reconnais-tu le plus facilement partout dans le monde ?",
+     "c": "Dessine une mini-carte de ta chambre avec trois symboles inventés et leur légende."
+    },
+    "it": {
+     "t": "Simboli e legende",
+     "g": "Usa la legenda per decifrare simboli, linee e colori.",
+     "p": [
+      "La legenda è il riquadro che spiega che cosa significa ogni simbolo sulla carta.",
+      "Le linee indicano strade, fiumi o confini, i colori spesso acqua, boschi o altitudine.",
+      "I simboli cambiano da carta a carta, quindi leggere prima la legenda evita confusione."
+     ],
+     "q": "Quale simbolo delle mappe riconosci più facilmente ovunque nel mondo?",
+     "c": "Disegna una mini mappa della tua stanza con tre simboli inventati e una legenda."
+    },
+    "pt": {
+     "t": "Símbolos e legendas",
+     "g": "Usa a legenda de um mapa para decifrar símbolos, linhas e cores.",
+     "p": [
+      "A legenda é o pequeno quadro que explica o que significa cada símbolo do mapa.",
+      "As linhas mostram estradas, rios ou limites, e as cores costumam indicar água, floresta ou altitude.",
+      "Os símbolos mudam de mapa para mapa, por isso ler primeiro a legenda evita confusões."
+     ],
+     "q": "Que símbolo de mapa reconheces mais facilmente em qualquer parte do mundo?",
+     "c": "Desenha um minimapa do teu quarto com três símbolos inventados e uma legenda."
+    },
+    "pt_BR": {
+     "t": "Símbolos e legendas",
+     "g": "Use a legenda de um mapa para decifrar símbolos, linhas e cores.",
+     "p": [
+      "A legenda é o quadrinho que explica o que cada símbolo do mapa significa.",
+      "As linhas mostram estradas, rios ou divisas, e as cores costumam indicar água, mata ou altitude.",
+      "Os símbolos mudam de um mapa para outro, então ler a legenda primeiro evita confusão."
+     ],
+     "q": "Qual símbolo de mapa você reconhece mais fácil em qualquer lugar do mundo?",
+     "c": "Desenhe um minimapa do seu quarto com três símbolos inventados e uma legenda."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Map scale",
+     "g": "Use a map scale to turn distances on paper into real distances.",
+     "p": [
+      "Scale tells you how much the real world was shrunk to fit on the map.",
+      "A scale of 1:100,000 means 1 centimeter on the map equals 1 kilometer on the ground.",
+      "Large-scale maps show a small area in detail; small-scale maps show a big area simply."
+     ],
+     "q": "Would you rather use a detailed street map or a map of a whole country?",
+     "c": "On any map with a scale bar, measure the distance between two towns you know."
+    },
+    "de": {
+     "t": "Der Maßstab",
+     "g": "Nutze den Maßstab, um Strecken auf der Karte in echte Entfernungen umzurechnen.",
+     "p": [
+      "Der Maßstab zeigt, wie stark die Wirklichkeit verkleinert wurde, damit sie auf die Karte passt.",
+      "Bei 1:100.000 entspricht 1 Zentimeter auf der Karte 1 Kilometer in der Natur.",
+      "Große Maßstäbe zeigen kleine Gebiete genau, kleine Maßstäbe große Gebiete vereinfacht."
+     ],
+     "q": "Nutzt du lieber einen genauen Stadtplan oder eine Karte eines ganzen Landes?",
+     "c": "Miss auf einer Karte mit Maßstabsleiste die Entfernung zwischen zwei Orten, die du kennst."
+    },
+    "es": {
+     "t": "La escala del mapa",
+     "g": "Usa la escala para convertir distancias en el papel en distancias reales.",
+     "p": [
+      "La escala indica cuánto se ha reducido el mundo real para caber en el mapa.",
+      "Una escala 1:100.000 significa que 1 centímetro en el mapa son 1 kilómetro en el terreno.",
+      "Los mapas de gran escala muestran poca zona con detalle y los de pequeña escala, mucha zona simplificada."
+     ],
+     "q": "¿Prefieres un plano detallado de calles o un mapa de todo un país?",
+     "c": "En un mapa con barra de escala, mide la distancia entre dos pueblos que conozcas."
+    },
+    "fr": {
+     "t": "L'échelle d'une carte",
+     "g": "Utiliser l'échelle pour passer des distances sur papier aux distances réelles.",
+     "p": [
+      "L'échelle indique de combien le monde réel a été réduit pour tenir sur la carte.",
+      "À 1/100 000, 1 centimètre sur la carte vaut 1 kilomètre sur le terrain.",
+      "Une grande échelle montre une petite zone en détail, une petite échelle une vaste zone simplifiée."
+     ],
+     "q": "Préfères-tu un plan de rues détaillé ou une carte d'un pays entier ?",
+     "c": "Sur une carte avec barre d'échelle, mesure la distance entre deux villes que tu connais."
+    },
+    "it": {
+     "t": "La scala della carta",
+     "g": "Usa la scala per trasformare le distanze sulla carta in distanze reali.",
+     "p": [
+      "La scala indica quanto il mondo reale è stato rimpicciolito per entrare nella carta.",
+      "Una scala 1:100.000 significa che 1 centimetro sulla carta vale 1 chilometro sul terreno.",
+      "Le carte a grande scala mostrano poca area in dettaglio, quelle a piccola scala molta area semplificata."
+     ],
+     "q": "Preferisci una pianta dettagliata della città o una carta di un intero paese?",
+     "c": "Su una carta con la barra della scala, misura la distanza tra due paesi che conosci."
+    },
+    "pt": {
+     "t": "A escala do mapa",
+     "g": "Usa a escala para transformar distâncias no papel em distâncias reais.",
+     "p": [
+      "A escala indica quanto o mundo real foi reduzido para caber no mapa.",
+      "Uma escala de 1:100 000 quer dizer que 1 centímetro no mapa vale 1 quilómetro no terreno.",
+      "Mapas de grande escala mostram pouca área com pormenor; os de pequena escala mostram muita área simplificada."
+     ],
+     "q": "Preferes uma planta detalhada de ruas ou um mapa de um país inteiro?",
+     "c": "Num mapa com barra de escala, mede a distância entre duas localidades que conheças."
+    },
+    "pt_BR": {
+     "t": "A escala do mapa",
+     "g": "Use a escala para transformar distâncias no papel em distâncias reais.",
+     "p": [
+      "A escala mostra quanto o mundo real foi reduzido para caber no mapa.",
+      "Uma escala de 1:100.000 significa que 1 centímetro no mapa vale 1 quilômetro no terreno.",
+      "Mapas de grande escala mostram pouca área com detalhe; os de pequena escala, muita área simplificada."
+     ],
+     "q": "Você prefere um mapa detalhado de ruas ou um mapa de um país inteiro?",
+     "c": "Num mapa com barra de escala, meça a distância entre duas cidades que você conhece."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grid references",
+     "g": "Find any square on a map using letters and numbers.",
+     "p": [
+      "Many city and road maps are divided into a grid of squares.",
+      "Letters usually run along one edge and numbers along the other, so each square gets a code like C4.",
+      "The index of a street map lists each street with its square, so you can find it fast."
+     ],
+     "q": "Have you ever played a game like battleships that uses the same grid idea?",
+     "c": "Draw a 5 by 5 grid over a map of your area and give the square of your home a code."
+    },
+    "de": {
+     "t": "Planquadrate",
+     "g": "Finde jedes Feld einer Karte mit Buchstaben und Zahlen.",
+     "p": [
+      "Viele Stadt- und Straßenkarten sind in ein Gitter aus Quadraten eingeteilt.",
+      "Buchstaben laufen meist an einer Kante, Zahlen an der anderen, so hat jedes Feld einen Code wie C4.",
+      "Das Straßenverzeichnis nennt zu jeder Straße das Planquadrat, damit du sie schnell findest."
+     ],
+     "q": "Hast du schon einmal Schiffe versenken gespielt, das dieselbe Gitteridee nutzt?",
+     "c": "Zeichne ein 5x5-Gitter über eine Karte deiner Gegend und gib dem Feld deines Zuhauses einen Code."
+    },
+    "es": {
+     "t": "Coordenadas de cuadrícula",
+     "g": "Encuentra cualquier casilla de un mapa con letras y números.",
+     "p": [
+      "Muchos planos de ciudades y mapas de carreteras están divididos en una cuadrícula.",
+      "Las letras suelen ir por un borde y los números por otro, así cada casilla tiene un código como C4.",
+      "El índice del callejero da la casilla de cada calle para que la encuentres enseguida."
+     ],
+     "q": "¿Has jugado alguna vez a hundir la flota, que usa la misma idea de cuadrícula?",
+     "c": "Dibuja una cuadrícula de 5 por 5 sobre un mapa de tu zona y da un código a la casilla de tu casa."
+    },
+    "fr": {
+     "t": "Le carroyage",
+     "g": "Trouver n'importe quelle case d'une carte avec des lettres et des chiffres.",
+     "p": [
+      "Beaucoup de plans de ville et de cartes routières sont découpés en un quadrillage.",
+      "Les lettres suivent un bord et les chiffres un autre, chaque case a donc un code comme C4.",
+      "L'index d'un plan donne la case de chaque rue pour la trouver en un clin d'œil."
+     ],
+     "q": "As-tu déjà joué à la bataille navale, qui utilise la même idée de quadrillage ?",
+     "c": "Trace un quadrillage de 5 sur 5 sur une carte de ton quartier et donne un code à la case de chez toi."
+    },
+    "it": {
+     "t": "Le coordinate a griglia",
+     "g": "Trova qualsiasi riquadro di una carta con lettere e numeri.",
+     "p": [
+      "Molte piante di città e carte stradali sono divise in una griglia di quadrati.",
+      "Le lettere corrono su un lato e i numeri sull'altro, così ogni riquadro ha un codice come C4.",
+      "L'indice dello stradario indica il riquadro di ogni via, così la trovi subito."
+     ],
+     "q": "Hai mai giocato a battaglia navale, che usa la stessa idea della griglia?",
+     "c": "Disegna una griglia 5 per 5 su una mappa della tua zona e dai un codice al riquadro di casa tua."
+    },
+    "pt": {
+     "t": "Quadrículas do mapa",
+     "g": "Encontra qualquer quadrado de um mapa com letras e números.",
+     "p": [
+      "Muitas plantas de cidades e mapas de estradas estão divididos numa quadrícula.",
+      "As letras vão ao longo de um lado e os números do outro, por isso cada quadrado tem um código como C4.",
+      "O índice de uma planta indica o quadrado de cada rua para a encontrares depressa."
+     ],
+     "q": "Já jogaste à batalha naval, que usa a mesma ideia de quadrícula?",
+     "c": "Desenha uma quadrícula de 5 por 5 sobre um mapa da tua zona e dá um código ao quadrado da tua casa."
+    },
+    "pt_BR": {
+     "t": "Quadrículas do mapa",
+     "g": "Encontre qualquer quadrado de um mapa usando letras e números.",
+     "p": [
+      "Muitos mapas de cidades e de estradas são divididos em uma grade de quadrados.",
+      "As letras ficam numa borda e os números na outra, então cada quadrado ganha um código como C4.",
+      "O índice de um guia de ruas mostra o quadrado de cada rua para você achá-la rápido."
+     ],
+     "q": "Você já jogou batalha naval, que usa a mesma ideia de grade?",
+     "c": "Desenhe uma grade de 5 por 5 sobre um mapa do seu bairro e dê um código ao quadrado da sua casa."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Latitude",
+     "g": "Learn how latitude measures how far north or south a place is.",
+     "p": [
+      "Lines of latitude, or parallels, run around Earth parallel to the equator.",
+      "The equator is 0 degrees, and the North and South Poles are 90 degrees north and south.",
+      "Each degree of latitude covers roughly 111 kilometers on the ground."
+     ],
+     "q": "Do you know if you live closer to the equator or to one of the poles?",
+     "c": "Look up the latitude of your city and find another city far away at almost the same latitude."
+    },
+    "de": {
+     "t": "Der Breitengrad",
+     "g": "Lerne, wie die Breite angibt, wie weit nördlich oder südlich ein Ort liegt.",
+     "p": [
+      "Breitenkreise, auch Parallelen genannt, verlaufen parallel zum Äquator rund um die Erde.",
+      "Der Äquator liegt bei 0 Grad, Nord- und Südpol bei 90 Grad Nord und Süd.",
+      "Ein Breitengrad entspricht auf der Erde etwa 111 Kilometern."
+     ],
+     "q": "Weißt du, ob du näher am Äquator oder an einem der Pole wohnst?",
+     "c": "Suche die Breite deiner Stadt und finde eine ferne Stadt auf fast derselben Breite."
+    },
+    "es": {
+     "t": "La latitud",
+     "g": "Aprende cómo la latitud mide lo al norte o al sur que está un lugar.",
+     "p": [
+      "Los paralelos son líneas que rodean la Tierra paralelas al ecuador.",
+      "El ecuador está a 0 grados, y los polos Norte y Sur a 90 grados norte y sur.",
+      "Cada grado de latitud equivale a unos 111 kilómetros sobre el terreno."
+     ],
+     "q": "¿Sabes si vives más cerca del ecuador o de uno de los polos?",
+     "c": "Busca la latitud de tu ciudad y encuentra otra ciudad lejana casi a la misma latitud."
+    },
+    "fr": {
+     "t": "La latitude",
+     "g": "Apprendre comment la latitude mesure à quel point un lieu est au nord ou au sud.",
+     "p": [
+      "Les parallèles sont des lignes qui font le tour de la Terre, parallèles à l'équateur.",
+      "L'équateur est à 0 degré, les pôles Nord et Sud à 90 degrés nord et sud.",
+      "Un degré de latitude correspond à environ 111 kilomètres sur le terrain."
+     ],
+     "q": "Sais-tu si tu vis plus près de l'équateur ou de l'un des pôles ?",
+     "c": "Cherche la latitude de ta ville et trouve une ville lointaine presque à la même latitude."
+    },
+    "it": {
+     "t": "La latitudine",
+     "g": "Scopri come la latitudine misura quanto un luogo è a nord o a sud.",
+     "p": [
+      "I paralleli sono linee che girano intorno alla Terra parallele all'equatore.",
+      "L'equatore è a 0 gradi, i poli Nord e Sud a 90 gradi nord e sud.",
+      "Ogni grado di latitudine corrisponde a circa 111 chilometri sul terreno."
+     ],
+     "q": "Sai se vivi più vicino all'equatore o a uno dei poli?",
+     "c": "Cerca la latitudine della tua città e trova una città lontana quasi alla stessa latitudine."
+    },
+    "pt": {
+     "t": "A latitude",
+     "g": "Aprende como a latitude mede quão a norte ou a sul fica um lugar.",
+     "p": [
+      "Os paralelos são linhas que dão a volta à Terra, paralelas ao equador.",
+      "O equador está a 0 graus, e os polos Norte e Sul a 90 graus norte e sul.",
+      "Cada grau de latitude corresponde a cerca de 111 quilómetros no terreno."
+     ],
+     "q": "Sabes se vives mais perto do equador ou de um dos polos?",
+     "c": "Procura a latitude da tua cidade e encontra uma cidade distante quase à mesma latitude."
+    },
+    "pt_BR": {
+     "t": "A latitude",
+     "g": "Aprenda como a latitude mede o quanto um lugar fica ao norte ou ao sul.",
+     "p": [
+      "Os paralelos são linhas que dão a volta na Terra, paralelas ao equador.",
+      "O equador fica a 0 grau, e os polos Norte e Sul a 90 graus norte e sul.",
+      "Cada grau de latitude equivale a cerca de 111 quilômetros no terreno."
+     ],
+     "q": "Você sabe se mora mais perto do equador ou de um dos polos?",
+     "c": "Procure a latitude da sua cidade e ache uma cidade distante quase na mesma latitude."
+    }
+   }
+  }
+ ]
+}

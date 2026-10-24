@@ -1,0 +1,835 @@
+{
+ "topic": "ai",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "AI in music",
+     "g": "Discover how AI shapes playlists, recognition and creation.",
+     "p": [
+      "Apps recognise a song from a few seconds of sound.",
+      "Playlists learn your taste, and tools help musicians mix and compose.",
+      "Music made with AI still depends on human taste and choices."
+     ],
+     "q": "Would you enjoy a song made with AI help? Why or why not?",
+     "c": "Hum or play a tune, then try a song-recognition tool on it."
+    },
+    "de": {
+     "t": "KI in der Musik",
+     "g": "Entdecke, wie KI Playlists, Erkennung und Komposition prägt.",
+     "p": [
+      "Apps erkennen ein Lied an wenigen Sekunden Klang.",
+      "Playlists lernen deinen Geschmack, Werkzeuge helfen beim Mischen und Komponieren.",
+      "Musik mit KI hängt weiter von menschlichem Geschmack und Entscheidungen ab."
+     ],
+     "q": "Würdest du ein Lied mit KI-Hilfe mögen? Warum oder warum nicht?",
+     "c": "Summe oder spiele eine Melodie und probiere eine Songerkennung damit aus."
+    },
+    "es": {
+     "t": "IA en la música",
+     "g": "Descubre cómo la IA da forma a listas, reconocimiento y creación.",
+     "p": [
+      "Las apps reconocen una canción con unos segundos de sonido.",
+      "Las listas aprenden tu gusto y hay herramientas para mezclar y componer.",
+      "La música hecha con IA sigue dependiendo del gusto y las decisiones humanas."
+     ],
+     "q": "¿Disfrutarías una canción hecha con ayuda de IA? ¿Por qué sí o no?",
+     "c": "Tararea o toca una melodía y prueba con ella una herramienta de reconocimiento."
+    },
+    "fr": {
+     "t": "L'IA dans la musique",
+     "g": "Découvrir comment l'IA façonne playlists, reconnaissance et création.",
+     "p": [
+      "Des applis reconnaissent un morceau à partir de quelques secondes de son.",
+      "Les playlists apprennent tes goûts, et des outils aident à mixer et composer.",
+      "La musique faite avec l'IA dépend toujours du goût et des choix humains."
+     ],
+     "q": "Apprécierais-tu un morceau fait avec l'aide de l'IA ? Pourquoi ?",
+     "c": "Fredonne ou joue un air et essaie un outil de reconnaissance de musique."
+    },
+    "it": {
+     "t": "IA nella musica",
+     "g": "Scopri come l'IA plasma playlist, riconoscimento e creazione.",
+     "p": [
+      "Le app riconoscono un brano da pochi secondi di suono.",
+      "Le playlist imparano i tuoi gusti e gli strumenti aiutano a mixare e comporre.",
+      "La musica fatta con l'IA dipende ancora da gusto e scelte umane."
+     ],
+     "q": "Ti piacerebbe un brano fatto con l'aiuto dell'IA? Perché sì o no?",
+     "c": "Canticchia o suona un motivo e prova uno strumento di riconoscimento."
+    },
+    "pt": {
+     "t": "IA na música",
+     "g": "Descobrir como a IA molda playlists, reconhecimento e criação.",
+     "p": [
+      "As apps reconhecem uma canção com poucos segundos de som.",
+      "As playlists aprendem o teu gosto e há ferramentas para misturar e compor.",
+      "A música feita com IA continua a depender do gosto e das escolhas humanas."
+     ],
+     "q": "Gostarias de uma canção feita com ajuda de IA? Porquê ou porque não?",
+     "c": "Trauteia ou toca uma melodia e experimenta uma ferramenta de reconhecimento."
+    },
+    "pt_BR": {
+     "t": "IA na música",
+     "g": "Descobrir como a IA molda playlists, reconhecimento e criação.",
+     "p": [
+      "Os apps reconhecem uma canção com poucos segundos de som.",
+      "As playlists aprendem seu gosto e há ferramentas para mixar e compor.",
+      "A música feita com IA continua dependendo do gosto e das escolhas humanas."
+     ],
+     "q": "Você gostaria de uma canção feita com ajuda de IA? Por quê?",
+     "c": "Cantarole ou toque uma melodia e experimente uma ferramenta de reconhecimento."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "AI in art and design",
+     "g": "See how artists use AI as a creative tool.",
+     "p": [
+      "Artists use AI for ideas, drafts and new visual styles.",
+      "The human still chooses, edits and gives meaning to the work.",
+      "Credit and fairness matter: respect artists and their work."
+     ],
+     "q": "Do you see AI as a paintbrush, a partner or something else?",
+     "c": "Sketch an idea by hand, then describe how AI could extend it."
+    },
+    "de": {
+     "t": "KI in Kunst und Design",
+     "g": "Sieh, wie Künstler KI als kreatives Werkzeug nutzen.",
+     "p": [
+      "Künstler nutzen KI für Ideen, Entwürfe und neue visuelle Stile.",
+      "Der Mensch wählt, bearbeitet und gibt dem Werk Bedeutung.",
+      "Anerkennung und Fairness zählen: Respektiere Künstler und ihre Werke."
+     ],
+     "q": "Siehst du KI als Pinsel, Partner oder etwas anderes?",
+     "c": "Skizziere eine Idee von Hand und beschreibe, wie KI sie erweitern könnte."
+    },
+    "es": {
+     "t": "IA en el arte y el diseño",
+     "g": "Mira cómo los artistas usan la IA como herramienta creativa.",
+     "p": [
+      "Los artistas usan IA para ideas, borradores y nuevos estilos visuales.",
+      "La persona sigue eligiendo, editando y dando sentido a la obra.",
+      "El crédito y la justicia importan: respeta a los artistas y su obra."
+     ],
+     "q": "¿Ves la IA como un pincel, un socio u otra cosa?",
+     "c": "Boceta una idea a mano y describe cómo podría ampliarla la IA."
+    },
+    "fr": {
+     "t": "L'IA dans l'art et le design",
+     "g": "Voir comment les artistes utilisent l'IA comme outil créatif.",
+     "p": [
+      "Les artistes l'utilisent pour des idées, brouillons et nouveaux styles visuels.",
+      "L'humain choisit, retouche et donne du sens à l'oeuvre.",
+      "Reconnaissance et équité comptent : respecte les artistes et leur travail."
+     ],
+     "q": "Vois-tu l'IA comme un pinceau, un partenaire ou autre chose ?",
+     "c": "Esquisse une idée à la main et décris comment l'IA pourrait l'enrichir."
+    },
+    "it": {
+     "t": "IA nell'arte e nel design",
+     "g": "Vedi come gli artisti usano l'IA come strumento creativo.",
+     "p": [
+      "Gli artisti la usano per idee, bozze e nuovi stili visivi.",
+      "La persona sceglie, modifica e dà significato all'opera.",
+      "Credito ed equità contano: rispetta gli artisti e il loro lavoro."
+     ],
+     "q": "Vedi l'IA come un pennello, un partner o altro?",
+     "c": "Abbozza un'idea a mano e descrivi come l'IA potrebbe ampliarla."
+    },
+    "pt": {
+     "t": "IA na arte e no design",
+     "g": "Ver como os artistas usam a IA como ferramenta criativa.",
+     "p": [
+      "Os artistas usam IA para ideias, rascunhos e novos estilos visuais.",
+      "A pessoa continua a escolher, editar e dar sentido à obra.",
+      "O crédito e a justiça contam: respeita os artistas e o seu trabalho."
+     ],
+     "q": "Vês a IA como um pincel, um parceiro ou outra coisa?",
+     "c": "Esboça uma ideia à mão e descreve como a IA a poderia ampliar."
+    },
+    "pt_BR": {
+     "t": "IA na arte e no design",
+     "g": "Ver como os artistas usam a IA como ferramenta criativa.",
+     "p": [
+      "Os artistas usam IA para ideias, rascunhos e novos estilos visuais.",
+      "A pessoa continua escolhendo, editando e dando sentido à obra.",
+      "O crédito e a justiça contam: respeite os artistas e o trabalho deles."
+     ],
+     "q": "Você vê a IA como um pincel, um parceiro ou outra coisa?",
+     "c": "Esboce uma ideia à mão e descreva como a IA poderia ampliá-la."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "AI in shopping",
+     "g": "Learn how online stores use AI to help you find things.",
+     "p": [
+      "Stores suggest products based on what similar shoppers liked.",
+      "Virtual try-ons and smart search help you picture choices.",
+      "Suggestions aim to sell, so compare before you buy."
+     ],
+     "q": "How do you decide whether a suggested product is worth it?",
+     "c": "Before buying something, compare three options and note why."
+    },
+    "de": {
+     "t": "KI beim Einkaufen",
+     "g": "Lerne, wie Online-Shops KI nutzen, um dir beim Finden zu helfen.",
+     "p": [
+      "Shops schlagen Produkte vor, die ähnlichen Käufern gefielen.",
+      "Virtuelles Anprobieren und smarte Suche helfen, Auswahl vorzustellen.",
+      "Vorschläge wollen verkaufen, vergleiche also vor dem Kauf."
+     ],
+     "q": "Wie entscheidest du, ob sich ein vorgeschlagenes Produkt lohnt?",
+     "c": "Vergleiche vor einem Kauf drei Optionen und notiere deine Gründe."
+    },
+    "es": {
+     "t": "IA en las compras",
+     "g": "Aprende cómo las tiendas en línea usan IA para ayudarte a encontrar cosas.",
+     "p": [
+      "Las tiendas sugieren productos según lo que gustó a compradores parecidos.",
+      "Las pruebas virtuales y la búsqueda inteligente ayudan a imaginar opciones.",
+      "Las sugerencias buscan vender, así que compara antes de comprar."
+     ],
+     "q": "¿Cómo decides si un producto sugerido merece la pena?",
+     "c": "Antes de comprar algo, compara tres opciones y anota por qué."
+    },
+    "fr": {
+     "t": "L'IA dans les achats",
+     "g": "Apprendre comment les boutiques en ligne utilisent l'IA pour t'aider.",
+     "p": [
+      "Les boutiques suggèrent des produits aimés par des acheteurs similaires.",
+      "Essayages virtuels et recherche intelligente aident à se projeter.",
+      "Les suggestions visent à vendre : compare avant d'acheter."
+     ],
+     "q": "Comment décides-tu si un produit suggéré vaut le coup ?",
+     "c": "Avant un achat, compare trois options et note pourquoi."
+    },
+    "it": {
+     "t": "IA negli acquisti",
+     "g": "Scopri come i negozi online usano l'IA per aiutarti a trovare cose.",
+     "p": [
+      "I negozi suggeriscono prodotti in base a ciò che è piaciuto ad acquirenti simili.",
+      "Prove virtuali e ricerca intelligente aiutano a immaginare le scelte.",
+      "I suggerimenti mirano a vendere, quindi confronta prima di comprare."
+     ],
+     "q": "Come decidi se un prodotto suggerito vale la pena?",
+     "c": "Prima di comprare qualcosa, confronta tre opzioni e annota perché."
+    },
+    "pt": {
+     "t": "IA nas compras",
+     "g": "Aprender como as lojas online usam IA para te ajudar a encontrar coisas.",
+     "p": [
+      "As lojas sugerem produtos com base no que agradou a compradores parecidos.",
+      "As provas virtuais e a pesquisa inteligente ajudam a imaginar escolhas.",
+      "As sugestões visam vender, por isso compara antes de comprar."
+     ],
+     "q": "Como decides se um produto sugerido vale a pena?",
+     "c": "Antes de comprares algo, compara três opções e anota porquê."
+    },
+    "pt_BR": {
+     "t": "IA nas compras",
+     "g": "Aprender como as lojas on-line usam IA para ajudar você a encontrar coisas.",
+     "p": [
+      "As lojas sugerem produtos com base no que agradou a compradores parecidos.",
+      "As provas virtuais e a busca inteligente ajudam a imaginar escolhas.",
+      "As sugestões visam vender, então compare antes de comprar."
+     ],
+     "q": "Como você decide se um produto sugerido vale a pena?",
+     "c": "Antes de comprar algo, compare três opções e anote por quê."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "AI in banking basics",
+     "g": "See how banks use AI for safety and service.",
+     "p": [
+      "Models spot unusual card activity that may be fraud.",
+      "Chatbots answer simple customer questions.",
+      "This is general information, not financial advice; check with your bank."
+     ],
+     "q": "Why is it useful that a bank notices unusual spending quickly?",
+     "c": "Review your last few card or bank notifications and settings."
+    },
+    "de": {
+     "t": "KI im Bankwesen: Grundlagen",
+     "g": "Sieh, wie Banken KI für Sicherheit und Service nutzen.",
+     "p": [
+      "Modelle erkennen ungewöhnliche Kartenaktivität, die Betrug sein kann.",
+      "Chatbots beantworten einfache Kundenfragen.",
+      "Das ist allgemeine Information, keine Finanzberatung; frag bei deiner Bank nach."
+     ],
+     "q": "Warum ist es nützlich, dass eine Bank ungewöhnliche Ausgaben schnell bemerkt?",
+     "c": "Sieh dir deine letzten Karten- oder Bankmitteilungen und Einstellungen an."
+    },
+    "es": {
+     "t": "IA en la banca: lo básico",
+     "g": "Mira cómo los bancos usan IA para seguridad y servicio.",
+     "p": [
+      "Los modelos detectan actividad inusual de tarjeta que podría ser fraude.",
+      "Los chatbots responden preguntas sencillas de clientes.",
+      "Es información general, no asesoría financiera; consulta con tu banco."
+     ],
+     "q": "¿Por qué es útil que un banco note rápido un gasto inusual?",
+     "c": "Revisa tus últimos avisos y ajustes de tarjeta o banco."
+    },
+    "fr": {
+     "t": "L'IA dans la banque : bases",
+     "g": "Voir comment les banques utilisent l'IA pour la sécurité et le service.",
+     "p": [
+      "Des modèles repèrent une activité de carte inhabituelle, peut-être une fraude.",
+      "Des chatbots répondent aux questions simples des clients.",
+      "Information générale, pas un conseil financier ; vois avec ta banque."
+     ],
+     "q": "Pourquoi est-il utile qu'une banque repère vite une dépense inhabituelle ?",
+     "c": "Passe en revue tes dernières alertes et réglages de carte ou de banque."
+    },
+    "it": {
+     "t": "IA in banca: le basi",
+     "g": "Vedi come le banche usano l'IA per sicurezza e servizio.",
+     "p": [
+      "I modelli individuano attività insolite sulla carta che possono essere frodi.",
+      "I chatbot rispondono a semplici domande dei clienti.",
+      "Informazione generale, non consulenza finanziaria; chiedi alla tua banca."
+     ],
+     "q": "Perché è utile che una banca noti subito una spesa insolita?",
+     "c": "Controlla le ultime notifiche e impostazioni della carta o della banca."
+    },
+    "pt": {
+     "t": "IA na banca: o essencial",
+     "g": "Ver como os bancos usam IA para segurança e serviço.",
+     "p": [
+      "Os modelos detetam atividade invulgar no cartão que pode ser fraude.",
+      "Os chatbots respondem a perguntas simples de clientes.",
+      "Informação geral, não aconselhamento financeiro; confirma com o teu banco."
+     ],
+     "q": "Porque é útil um banco notar depressa uma despesa invulgar?",
+     "c": "Revê os teus últimos avisos e definições do cartão ou do banco."
+    },
+    "pt_BR": {
+     "t": "IA no banco: o básico",
+     "g": "Ver como os bancos usam IA para segurança e atendimento.",
+     "p": [
+      "Os modelos detectam atividade incomum no cartão que pode ser fraude.",
+      "Os chatbots respondem a perguntas simples de clientes.",
+      "Informação geral, não consultoria financeira; confirme com seu banco."
+     ],
+     "q": "Por que é útil um banco notar rápido um gasto incomum?",
+     "c": "Revise seus últimos avisos e configurações do cartão ou do banco."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "AI in farming",
+     "g": "Learn how drones and sensors help farmers.",
+     "p": [
+      "Sensors measure soil moisture and drones photograph fields.",
+      "AI spots dry patches or pests early so farmers can act.",
+      "Farming knowledge and local experience remain essential."
+     ],
+     "q": "How could technology help a small garden like yours or a friend's?",
+     "c": "Water a plant with a simple rule: check the soil, then decide."
+    },
+    "de": {
+     "t": "KI in der Landwirtschaft",
+     "g": "Lerne, wie Drohnen und Sensoren Landwirten helfen.",
+     "p": [
+      "Sensoren messen die Bodenfeuchte, Drohnen fotografieren Felder.",
+      "KI erkennt trockene Stellen oder Schädlinge früh, damit Bauern handeln können.",
+      "Wissen über Landbau und Erfahrung vor Ort bleiben unverzichtbar."
+     ],
+     "q": "Wie könnte Technik einem kleinen Garten helfen, deinem oder dem eines Freundes?",
+     "c": "Gieße eine Pflanze mit einfacher Regel: Boden prüfen, dann entscheiden."
+    },
+    "es": {
+     "t": "IA en la agricultura",
+     "g": "Aprende cómo drones y sensores ayudan a los agricultores.",
+     "p": [
+      "Los sensores miden la humedad del suelo y los drones fotografían campos.",
+      "La IA detecta zonas secas o plagas a tiempo para que actúen.",
+      "El conocimiento agrícola y la experiencia local siguen siendo esenciales."
+     ],
+     "q": "¿Cómo podría ayudar la tecnología a un huerto pequeño como el tuyo?",
+     "c": "Riega una planta con una regla simple: mira el suelo y decide."
+    },
+    "fr": {
+     "t": "L'IA dans l'agriculture",
+     "g": "Apprendre comment drones et capteurs aident les agriculteurs.",
+     "p": [
+      "Des capteurs mesurent l'humidité du sol et des drones photographient les champs.",
+      "L'IA repère tôt zones sèches ou parasites pour que l'on agisse.",
+      "Le savoir agricole et l'expérience locale restent essentiels."
+     ],
+     "q": "Comment la technologie pourrait-elle aider un petit jardin comme le tien ?",
+     "c": "Arrose une plante avec une règle simple : vérifie la terre, puis décide."
+    },
+    "it": {
+     "t": "IA nell'agricoltura",
+     "g": "Scopri come droni e sensori aiutano gli agricoltori.",
+     "p": [
+      "I sensori misurano l'umidità del suolo e i droni fotografano i campi.",
+      "L'IA individua presto zone secche o parassiti così si può intervenire.",
+      "La conoscenza agricola e l'esperienza locale restano essenziali."
+     ],
+     "q": "Come potrebbe la tecnologia aiutare un piccolo orto come il tuo?",
+     "c": "Annaffia una pianta con una regola semplice: controlla il terreno, poi decidi."
+    },
+    "pt": {
+     "t": "IA na agricultura",
+     "g": "Perceber como drones e sensores ajudam os agricultores.",
+     "p": [
+      "Os sensores medem a humidade do solo e os drones fotografam campos.",
+      "A IA deteta cedo zonas secas ou pragas para se poder agir.",
+      "O saber agrícola e a experiência local continuam essenciais."
+     ],
+     "q": "Como poderia a tecnologia ajudar uma pequena horta como a tua?",
+     "c": "Rega uma planta com uma regra simples: vê o solo e depois decide."
+    },
+    "pt_BR": {
+     "t": "IA na agricultura",
+     "g": "Entender como drones e sensores ajudam os agricultores.",
+     "p": [
+      "Os sensores medem a umidade do solo e os drones fotografam lavouras.",
+      "A IA detecta cedo áreas secas ou pragas para que se possa agir.",
+      "O saber agrícola e a experiência local continuam essenciais."
+     ],
+     "q": "Como a tecnologia poderia ajudar uma pequena horta como a sua?",
+     "c": "Regue uma planta com uma regra simples: veja o solo e depois decida."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "AI and the weather",
+     "g": "See how AI helps forecasters find patterns in huge data.",
+     "p": [
+      "Forecasts use satellites, stations and physics-based models.",
+      "AI helps find patterns in the huge amount of weather data.",
+      "Forecasts are probabilities: 30 percent rain is not a promise."
+     ],
+     "q": "How do you decide whether to carry an umbrella?",
+     "c": "Note the forecast, then the real weather, for three days in a row."
+    },
+    "de": {
+     "t": "KI und das Wetter",
+     "g": "Sieh, wie KI Meteorologen hilft, Muster in riesigen Daten zu finden.",
+     "p": [
+      "Vorhersagen nutzen Satelliten, Stationen und physikalische Modelle.",
+      "KI hilft, Muster in der riesigen Menge an Wetterdaten zu finden.",
+      "Vorhersagen sind Wahrscheinlichkeiten: 30 Prozent Regen ist kein Versprechen."
+     ],
+     "q": "Wie entscheidest du, ob du einen Regenschirm mitnimmst?",
+     "c": "Notiere drei Tage lang Vorhersage und tatsächliches Wetter."
+    },
+    "es": {
+     "t": "IA y el tiempo",
+     "g": "Mira cómo la IA ayuda a los meteorólogos a hallar patrones en datos enormes.",
+     "p": [
+      "Los pronósticos usan satélites, estaciones y modelos físicos.",
+      "La IA ayuda a encontrar patrones en la enorme cantidad de datos del tiempo.",
+      "Los pronósticos son probabilidades: 30 por ciento de lluvia no es una promesa."
+     ],
+     "q": "¿Cómo decides si llevar paraguas?",
+     "c": "Anota el pronóstico y el tiempo real durante tres días seguidos."
+    },
+    "fr": {
+     "t": "L'IA et la météo",
+     "g": "Voir comment l'IA aide les prévisionnistes à trouver des motifs dans d'énormes données.",
+     "p": [
+      "Les prévisions utilisent satellites, stations et modèles physiques.",
+      "L'IA aide à repérer des motifs dans l'énorme masse de données météo.",
+      "Les prévisions sont des probabilités : 30 pour cent de pluie n'est pas une promesse."
+     ],
+     "q": "Comment décides-tu de prendre un parapluie ?",
+     "c": "Note la prévision puis la météo réelle pendant trois jours."
+    },
+    "it": {
+     "t": "IA e meteo",
+     "g": "Vedi come l'IA aiuta i meteorologi a trovare schemi in dati enormi.",
+     "p": [
+      "Le previsioni usano satelliti, stazioni e modelli fisici.",
+      "L'IA aiuta a trovare schemi nell'enorme quantità di dati meteo.",
+      "Le previsioni sono probabilità: 30 per cento di pioggia non è una promessa."
+     ],
+     "q": "Come decidi se portare l'ombrello?",
+     "c": "Annota previsione e meteo reale per tre giorni di fila."
+    },
+    "pt": {
+     "t": "IA e o tempo",
+     "g": "Ver como a IA ajuda os meteorologistas a achar padrões em dados enormes.",
+     "p": [
+      "As previsões usam satélites, estações e modelos físicos.",
+      "A IA ajuda a achar padrões na enorme quantidade de dados meteorológicos.",
+      "As previsões são probabilidades: 30 por cento de chuva não é uma promessa."
+     ],
+     "q": "Como decides se levas guarda-chuva?",
+     "c": "Anota a previsão e o tempo real durante três dias seguidos."
+    },
+    "pt_BR": {
+     "t": "IA e o tempo",
+     "g": "Ver como a IA ajuda os meteorologistas a achar padrões em dados enormes.",
+     "p": [
+      "As previsões usam satélites, estações e modelos físicos.",
+      "A IA ajuda a achar padrões na enorme quantidade de dados meteorológicos.",
+      "As previsões são probabilidades: 30 por cento de chuva não é uma promessa."
+     ],
+     "q": "Como você decide se leva guarda-chuva?",
+     "c": "Anote a previsão e o tempo real durante três dias seguidos."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "AI in transport",
+     "g": "Explore AI behind traffic lights, rides and deliveries.",
+     "p": [
+      "Adaptive traffic lights change timing based on traffic flow.",
+      "Ride and delivery apps match drivers and riders by predicting demand.",
+      "Better flow can save time and fuel for everyone."
+     ],
+     "q": "Which part of your daily travel could be smarter?",
+     "c": "Observe one traffic light or bus stop and guess how it could adapt."
+    },
+    "de": {
+     "t": "KI im Verkehr",
+     "g": "Erkunde KI hinter Ampeln, Fahrten und Lieferungen.",
+     "p": [
+      "Adaptive Ampeln ändern ihre Schaltzeiten je nach Verkehrsfluss.",
+      "Fahr- und Lieferdienste ordnen Fahrer und Fahrgäste durch Bedarfsprognosen zu.",
+      "Besserer Verkehrsfluss kann allen Zeit und Kraftstoff sparen."
+     ],
+     "q": "Welcher Teil deiner täglichen Wege könnte schlauer sein?",
+     "c": "Beobachte eine Ampel oder Haltestelle und überlege, wie sie sich anpassen könnte."
+    },
+    "es": {
+     "t": "IA en el transporte",
+     "g": "Explora la IA tras semáforos, viajes y entregas.",
+     "p": [
+      "Los semáforos adaptativos cambian sus tiempos según el flujo de tráfico.",
+      "Las apps de viajes y reparto emparejan conductores y usuarios prediciendo la demanda.",
+      "Un mejor flujo puede ahorrar tiempo y combustible a todos."
+     ],
+     "q": "¿Qué parte de tus desplazamientos diarios podría ser más inteligente?",
+     "c": "Observa un semáforo o parada y piensa cómo podría adaptarse."
+    },
+    "fr": {
+     "t": "L'IA dans les transports",
+     "g": "Explorer l'IA derrière feux, trajets et livraisons.",
+     "p": [
+      "Les feux adaptatifs changent leurs durées selon le flux de circulation.",
+      "Les applis de trajet et de livraison associent conducteurs et clients en prédisant la demande.",
+      "Une meilleure fluidité peut faire gagner temps et carburant à tous."
+     ],
+     "q": "Quelle partie de tes trajets quotidiens pourrait être plus intelligente ?",
+     "c": "Observe un feu ou un arrêt de bus et imagine comment il pourrait s'adapter."
+    },
+    "it": {
+     "t": "IA nei trasporti",
+     "g": "Esplora l'IA dietro semafori, corse e consegne.",
+     "p": [
+      "I semafori adattivi cambiano i tempi in base al flusso del traffico.",
+      "Le app di corse e consegne abbinano autisti e clienti prevedendo la domanda.",
+      "Un flusso migliore può far risparmiare tempo e carburante a tutti."
+     ],
+     "q": "Quale parte dei tuoi spostamenti quotidiani potrebbe essere più intelligente?",
+     "c": "Osserva un semaforo o una fermata e immagina come potrebbe adattarsi."
+    },
+    "pt": {
+     "t": "IA nos transportes",
+     "g": "Explorar a IA por trás de semáforos, viagens e entregas.",
+     "p": [
+      "Os semáforos adaptativos mudam os tempos conforme o fluxo de trânsito.",
+      "As apps de viagens e entregas emparelham condutores e clientes prevendo a procura.",
+      "Melhor fluxo pode poupar tempo e combustível a todos."
+     ],
+     "q": "Que parte das tuas deslocações diárias poderia ser mais inteligente?",
+     "c": "Observa um semáforo ou paragem e pensa em como se poderia adaptar."
+    },
+    "pt_BR": {
+     "t": "IA no transporte",
+     "g": "Explorar a IA por trás de semáforos, corridas e entregas.",
+     "p": [
+      "Os semáforos adaptativos mudam os tempos conforme o fluxo de trânsito.",
+      "Os apps de corrida e entrega combinam motoristas e clientes prevendo a demanda.",
+      "Melhor fluxo pode poupar tempo e combustível de todos."
+     ],
+     "q": "Que parte dos seus deslocamentos diários poderia ser mais inteligente?",
+     "c": "Observe um semáforo ou ponto de ônibus e pense em como ele poderia se adaptar."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Self-driving cars explained",
+     "g": "Understand how cars sense the road and why full autonomy is hard.",
+     "p": [
+      "Cameras, radar and other sensors feed AI that reads the road.",
+      "Rare situations, like odd weather or unusual signs, are difficult.",
+      "Driver-assistance helps, but people stay responsible where required."
+     ],
+     "q": "What would make you feel safe in a car that drives itself?",
+     "c": "List five unusual things a car might meet on a road."
+    },
+    "de": {
+     "t": "Selbstfahrende Autos erklärt",
+     "g": "Verstehe, wie Autos die Straße erfassen und warum volle Autonomie schwer ist.",
+     "p": [
+      "Kameras, Radar und andere Sensoren speisen eine KI, die die Straße liest.",
+      "Seltene Situationen wie ungewöhnliches Wetter oder Schilder sind schwierig.",
+      "Fahrassistenz hilft, aber Menschen bleiben verantwortlich, wo es vorgeschrieben ist."
+     ],
+     "q": "Was würde dir in einem selbstfahrenden Auto Sicherheit geben?",
+     "c": "Liste fünf ungewöhnliche Dinge auf, denen ein Auto begegnen könnte."
+    },
+    "es": {
+     "t": "Coches autónomos explicados",
+     "g": "Entiende cómo los coches perciben la vía y por qué la autonomía total es difícil.",
+     "p": [
+      "Cámaras, radar y otros sensores alimentan una IA que lee la carretera.",
+      "Las situaciones raras, como clima extraño o señales inusuales, son difíciles.",
+      "La asistencia ayuda, pero las personas siguen siendo responsables donde se exige."
+     ],
+     "q": "¿Qué te haría sentir seguro en un coche que se conduce solo?",
+     "c": "Anota cinco cosas inusuales que un coche podría encontrar en la vía."
+    },
+    "fr": {
+     "t": "Voitures autonomes expliquées",
+     "g": "Comprendre comment les voitures perçoivent la route et pourquoi l'autonomie totale est difficile.",
+     "p": [
+      "Caméras, radar et autres capteurs nourrissent une IA qui lit la route.",
+      "Les situations rares, comme météo étrange ou panneaux inhabituels, sont difficiles.",
+      "L'aide à la conduite aide, mais les humains restent responsables là où c'est exigé."
+     ],
+     "q": "Qu'est-ce qui te rassurerait dans une voiture qui se conduit seule ?",
+     "c": "Liste cinq choses inhabituelles qu'une voiture pourrait croiser sur la route."
+    },
+    "it": {
+     "t": "Auto a guida autonoma spiegate",
+     "g": "Capisci come le auto percepiscono la strada e perché l'autonomia totale è difficile.",
+     "p": [
+      "Telecamere, radar e altri sensori alimentano un'IA che legge la strada.",
+      "Le situazioni rare, come meteo strano o cartelli insoliti, sono difficili.",
+      "L'assistenza aiuta, ma le persone restano responsabili dove richiesto."
+     ],
+     "q": "Cosa ti farebbe sentire sicuro in un'auto che guida da sola?",
+     "c": "Elenca cinque cose insolite che un'auto potrebbe incontrare sulla strada."
+    },
+    "pt": {
+     "t": "Carros autónomos explicados",
+     "g": "Perceber como os carros sentem a estrada e porque a autonomia total é difícil.",
+     "p": [
+      "Câmaras, radar e outros sensores alimentam uma IA que lê a estrada.",
+      "Situações raras, como tempo estranho ou sinais invulgares, são difíceis.",
+      "A assistência ajuda, mas as pessoas continuam responsáveis onde é exigido."
+     ],
+     "q": "O que te faria sentir seguro num carro que conduz sozinho?",
+     "c": "Lista cinco coisas invulgares que um carro poderia encontrar na estrada."
+    },
+    "pt_BR": {
+     "t": "Carros autônomos explicados",
+     "g": "Entender como os carros percebem a via e por que a autonomia total é difícil.",
+     "p": [
+      "Câmeras, radar e outros sensores alimentam uma IA que lê a estrada.",
+      "Situações raras, como clima estranho ou placas incomuns, são difíceis.",
+      "A assistência ajuda, mas as pessoas continuam responsáveis onde é exigido."
+     ],
+     "q": "O que faria você se sentir seguro num carro que dirige sozinho?",
+     "c": "Liste cinco coisas incomuns que um carro poderia encontrar na estrada."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "AI in healthcare, generally",
+     "g": "See in general terms how AI supports health professionals.",
+     "p": [
+      "AI can help read scans and organise records for doctors.",
+      "It supports professionals; it does not replace their judgement.",
+      "This is general information only, not medical advice or diagnosis."
+     ],
+     "q": "Why should a person always make the final health decision?",
+     "c": "Write two questions to ask a professional before relying on any health tool."
+    },
+    "de": {
+     "t": "KI im Gesundheitswesen, allgemein",
+     "g": "Sieh allgemein, wie KI Fachleute im Gesundheitswesen unterstützt.",
+     "p": [
+      "KI kann helfen, Bilder zu lesen und Akten für Ärzte zu ordnen.",
+      "Sie unterstützt Fachleute, ersetzt aber nicht ihr Urteil.",
+      "Das ist nur allgemeine Information, keine medizinische Beratung oder Diagnose."
+     ],
+     "q": "Warum sollte immer ein Mensch die endgültige Gesundheitsentscheidung treffen?",
+     "c": "Schreibe zwei Fragen auf, die du Fachleuten stellst, bevor du einem Gesundheitstool vertraust."
+    },
+    "es": {
+     "t": "IA en la salud, en general",
+     "g": "Mira en términos generales cómo la IA apoya a los profesionales de la salud.",
+     "p": [
+      "La IA puede ayudar a leer imágenes y organizar historiales para los médicos.",
+      "Apoya a los profesionales; no sustituye su criterio.",
+      "Es solo información general, no consejo médico ni diagnóstico."
+     ],
+     "q": "¿Por qué debe ser siempre una persona quien tome la decisión final de salud?",
+     "c": "Escribe dos preguntas para un profesional antes de fiarte de una herramienta de salud."
+    },
+    "fr": {
+     "t": "L'IA dans la santé, en général",
+     "g": "Voir en termes généraux comment l'IA soutient les professionnels de santé.",
+     "p": [
+      "L'IA peut aider à lire des examens et organiser des dossiers pour les médecins.",
+      "Elle soutient les professionnels ; elle ne remplace pas leur jugement.",
+      "Information générale seulement, ni conseil médical ni diagnostic."
+     ],
+     "q": "Pourquoi une personne doit-elle toujours prendre la décision de santé finale ?",
+     "c": "Écris deux questions à poser à un professionnel avant de te fier à un outil de santé."
+    },
+    "it": {
+     "t": "IA nella sanità, in generale",
+     "g": "Vedi in termini generali come l'IA supporta i professionisti sanitari.",
+     "p": [
+      "L'IA può aiutare a leggere esami e organizzare cartelle per i medici.",
+      "Supporta i professionisti; non sostituisce il loro giudizio.",
+      "Solo informazione generale, non consulenza medica né diagnosi."
+     ],
+     "q": "Perché dovrebbe essere sempre una persona a decidere in ultima istanza sulla salute?",
+     "c": "Scrivi due domande da fare a un professionista prima di fidarti di uno strumento sanitario."
+    },
+    "pt": {
+     "t": "IA na saúde, em geral",
+     "g": "Ver em termos gerais como a IA apoia os profissionais de saúde.",
+     "p": [
+      "A IA pode ajudar a ler exames e organizar processos para os médicos.",
+      "Apoia os profissionais; não substitui o seu julgamento.",
+      "Apenas informação geral, não é aconselhamento médico nem diagnóstico."
+     ],
+     "q": "Porque deve ser sempre uma pessoa a tomar a decisão final de saúde?",
+     "c": "Escreve duas perguntas a fazer a um profissional antes de confiares numa ferramenta de saúde."
+    },
+    "pt_BR": {
+     "t": "IA na saúde, em geral",
+     "g": "Ver em termos gerais como a IA apoia os profissionais de saúde.",
+     "p": [
+      "A IA pode ajudar a ler exames e organizar prontuários para os médicos.",
+      "Apoia os profissionais; não substitui o julgamento deles.",
+      "Apenas informação geral, não é aconselhamento médico nem diagnóstico."
+     ],
+     "q": "Por que deve ser sempre uma pessoa a tomar a decisão final de saúde?",
+     "c": "Escreva duas perguntas a fazer a um profissional antes de confiar numa ferramenta de saúde."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: AI around us",
+     "g": "Recap everyday AI in feeds, assistants, cameras, games and services.",
+     "p": [
+      "Feeds, search, maps and filters rank and predict using patterns.",
+      "Voice, camera and translation tools turn sound and pictures into data.",
+      "In every field, people decide, check and stay responsible."
+     ],
+     "q": "Which everyday AI would you miss most if it vanished?",
+     "c": "Pick one AI feature you use and write how you will check its output."
+    },
+    "de": {
+     "t": "Rückblick: KI um uns herum",
+     "g": "Wiederhole Alltags-KI in Feeds, Assistenten, Kameras, Spielen und Diensten.",
+     "p": [
+      "Feeds, Suche, Karten und Filter sortieren und sagen mit Mustern voraus.",
+      "Sprach-, Kamera- und Übersetzungstools machen Klang und Bilder zu Daten.",
+      "In jedem Bereich entscheiden und prüfen Menschen und bleiben verantwortlich."
+     ],
+     "q": "Welche Alltags-KI würdest du am meisten vermissen, wenn sie verschwände?",
+     "c": "Wähle eine KI-Funktion, die du nutzt, und schreibe, wie du ihr Ergebnis prüfst."
+    },
+    "es": {
+     "t": "Repaso: la IA a nuestro alrededor",
+     "g": "Repasa la IA cotidiana en feeds, asistentes, cámaras, juegos y servicios.",
+     "p": [
+      "Feeds, búsqueda, mapas y filtros ordenan y predicen con patrones.",
+      "Las herramientas de voz, cámara y traducción convierten sonido e imágenes en datos.",
+      "En cada ámbito, las personas deciden, comprueban y siguen siendo responsables."
+     ],
+     "q": "¿Qué IA cotidiana echarías más de menos si desapareciera?",
+     "c": "Elige una función de IA que uses y escribe cómo vas a comprobar su resultado."
+    },
+    "fr": {
+     "t": "Révision : l'IA autour de nous",
+     "g": "Récapituler l'IA du quotidien : fils, assistants, appareils photo, jeux, services.",
+     "p": [
+      "Fils, recherche, cartes et filtres classent et prédisent avec des motifs.",
+      "Les outils de voix, de photo et de traduction transforment sons et images en données.",
+      "Dans chaque domaine, les humains décident, vérifient et restent responsables."
+     ],
+     "q": "Quelle IA du quotidien te manquerait le plus si elle disparaissait ?",
+     "c": "Choisis une fonction d'IA que tu utilises et écris comment tu vérifieras son résultat."
+    },
+    "it": {
+     "t": "Ripasso: l'IA intorno a noi",
+     "g": "Ripassa l'IA quotidiana in feed, assistenti, fotocamere, giochi e servizi.",
+     "p": [
+      "Feed, ricerca, mappe e filtri ordinano e prevedono con gli schemi.",
+      "Strumenti di voce, fotocamera e traduzione trasformano suoni e immagini in dati.",
+      "In ogni campo le persone decidono, controllano e restano responsabili."
+     ],
+     "q": "Quale IA quotidiana ti mancherebbe di più se sparisse?",
+     "c": "Scegli una funzione di IA che usi e scrivi come ne controllerai il risultato."
+    },
+    "pt": {
+     "t": "Revisão: a IA à nossa volta",
+     "g": "Recordar a IA do dia a dia em feeds, assistentes, câmaras, jogos e serviços.",
+     "p": [
+      "Feeds, pesquisa, mapas e filtros ordenam e preveem com padrões.",
+      "Ferramentas de voz, câmara e tradução transformam sons e imagens em dados.",
+      "Em cada área, as pessoas decidem, verificam e continuam responsáveis."
+     ],
+     "q": "Que IA do dia a dia mais te faria falta se desaparecesse?",
+     "c": "Escolhe uma função de IA que uses e escreve como vais verificar o resultado."
+    },
+    "pt_BR": {
+     "t": "Revisão: a IA ao nosso redor",
+     "g": "Relembrar a IA do dia a dia em feeds, assistentes, câmeras, jogos e serviços.",
+     "p": [
+      "Feeds, busca, mapas e filtros ordenam e preveem com padrões.",
+      "Ferramentas de voz, câmera e tradução transformam sons e imagens em dados.",
+      "Em cada área, as pessoas decidem, verificam e continuam responsáveis."
+     ],
+     "q": "Que IA do dia a dia mais faria falta a você se sumisse?",
+     "c": "Escolha uma função de IA que você usa e escreva como vai conferir o resultado."
+    }
+   }
+  }
+ ]
+}

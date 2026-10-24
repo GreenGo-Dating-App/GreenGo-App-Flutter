@@ -1,0 +1,835 @@
+{
+ "topic": "trivia",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your amazing senses",
+     "g": "Go beyond the classic five senses and notice how many your body has.",
+     "p": [
+      "Sight, hearing, smell, taste and touch are the five classic senses.",
+      "Balance, from the inner ear, tells you how you are moving and which way is up.",
+      "Proprioception is your sense of where your limbs are, even with your eyes closed."
+     ],
+     "q": "Which sense would you miss most, and what small pleasure depends on it?",
+     "c": "Close your eyes and touch your nose with a fingertip: that is proprioception at work."
+    },
+    "de": {
+     "t": "Deine erstaunlichen Sinne",
+     "g": "Gehe über die klassischen fünf Sinne hinaus und entdecke, wie viele dein Körper hat.",
+     "p": [
+      "Sehen, Hören, Riechen, Schmecken und Tasten sind die fünf klassischen Sinne.",
+      "Der Gleichgewichtssinn im Innenohr sagt dir, wie du dich bewegst und wo oben ist.",
+      "Propriozeption ist der Sinn für die Lage deiner Glieder, auch mit geschlossenen Augen."
+     ],
+     "q": "Welchen Sinn würdest du am meisten vermissen, und welche kleine Freude hängt daran?",
+     "c": "Schließe die Augen und berühre mit der Fingerspitze deine Nase: Propriozeption bei der Arbeit."
+    },
+    "es": {
+     "t": "Tus asombrosos sentidos",
+     "g": "Ve más allá de los cinco sentidos clásicos y descubre cuántos tiene tu cuerpo.",
+     "p": [
+      "Vista, oído, olfato, gusto y tacto son los cinco sentidos clásicos.",
+      "El equilibrio, del oído interno, te dice cómo te mueves y dónde está arriba.",
+      "La propiocepción es el sentido de dónde están tus miembros, incluso con los ojos cerrados."
+     ],
+     "q": "¿Qué sentido echarías más de menos y qué pequeño placer depende de él?",
+     "c": "Cierra los ojos y toca tu nariz con la yema del dedo: es la propiocepción en acción."
+    },
+    "fr": {
+     "t": "Tes sens étonnants",
+     "g": "Va au-delà des cinq sens classiques et découvre combien ton corps en a.",
+     "p": [
+      "La vue, l'ouïe, l'odorat, le goût et le toucher sont les cinq sens classiques.",
+      "L'équilibre, venu de l'oreille interne, te dit comment tu bouges et où est le haut.",
+      "La proprioception est le sens de la position de tes membres, même les yeux fermés."
+     ],
+     "q": "Quel sens te manquerait le plus, et quel petit plaisir en dépend ?",
+     "c": "Ferme les yeux et touche ton nez du bout du doigt : c'est la proprioception à l'œuvre."
+    },
+    "it": {
+     "t": "I tuoi sensi sorprendenti",
+     "g": "Vai oltre i cinque sensi classici e scopri quanti ne ha il tuo corpo.",
+     "p": [
+      "Vista, udito, olfatto, gusto e tatto sono i cinque sensi classici.",
+      "L'equilibrio, dall'orecchio interno, ti dice come ti muovi e dov'è l'alto.",
+      "La propriocezione è il senso della posizione degli arti, anche a occhi chiusi."
+     ],
+     "q": "Quale senso ti mancherebbe di più e quale piccolo piacere ne dipende?",
+     "c": "Chiudi gli occhi e tocca il naso con la punta del dito: è la propriocezione al lavoro."
+    },
+    "pt": {
+     "t": "Os teus sentidos espantosos",
+     "g": "Vai além dos cinco sentidos clássicos e descobre quantos o teu corpo tem.",
+     "p": [
+      "Visão, audição, olfato, paladar e tato são os cinco sentidos clássicos.",
+      "O equilíbrio, vindo do ouvido interno, diz-te como te moves e onde fica o cima.",
+      "A propriocepção é o sentido da posição dos membros, mesmo de olhos fechados."
+     ],
+     "q": "Que sentido mais sentirias falta e que pequeno prazer depende dele?",
+     "c": "Fecha os olhos e toca no nariz com a ponta do dedo: é a propriocepção em ação."
+    },
+    "pt_BR": {
+     "t": "Seus sentidos espantosos",
+     "g": "Vá além dos cinco sentidos clássicos e descubra quantos o seu corpo tem.",
+     "p": [
+      "Visão, audição, olfato, paladar e tato são os cinco sentidos clássicos.",
+      "O equilíbrio, vindo do ouvido interno, diz como você se move e onde fica o alto.",
+      "A propriocepção é o sentido da posição dos membros, mesmo de olhos fechados."
+     ],
+     "q": "Qual sentido você mais sentiria falta e que pequeno prazer depende dele?",
+     "c": "Feche os olhos e toque o nariz com a ponta do dedo: é a propriocepção em ação."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food origins",
+     "g": "Trace everyday foods back to where they first came from.",
+     "p": [
+      "Tomatoes, potatoes, maize and chocolate all came from the Americas.",
+      "Before the 1500s, Italy had no tomato sauce and Ireland had no potatoes.",
+      "Foods travel with people, which is why recipes around the world keep mixing."
+     ],
+     "q": "Which dish from your family would be impossible without an ingredient from far away?",
+     "c": "Check the ingredients of tonight's meal and guess which one travelled furthest."
+    },
+    "de": {
+     "t": "Herkunft der Lebensmittel",
+     "g": "Verfolge Alltagsessen zurück zu ihrem Ursprungsort.",
+     "p": [
+      "Tomaten, Kartoffeln, Mais und Schokolade stammen alle aus Amerika.",
+      "Vor dem 16. Jahrhundert gab es in Italien keine Tomatensoße und in Irland keine Kartoffeln.",
+      "Essen reist mit den Menschen, deshalb vermischen sich Rezepte auf der ganzen Welt."
+     ],
+     "q": "Welches Gericht deiner Familie wäre ohne eine Zutat aus der Ferne unmöglich?",
+     "c": "Prüfe die Zutaten des heutigen Essens und rate, welche am weitesten gereist ist."
+    },
+    "es": {
+     "t": "Orígenes de los alimentos",
+     "g": "Rastrea alimentos cotidianos hasta su lugar de origen.",
+     "p": [
+      "Tomates, patatas, maíz y chocolate vienen todos de América.",
+      "Antes del siglo XVI, Italia no tenía salsa de tomate ni Irlanda patatas.",
+      "Los alimentos viajan con las personas, por eso las recetas del mundo se mezclan."
+     ],
+     "q": "¿Qué plato de tu familia sería imposible sin un ingrediente de lejos?",
+     "c": "Mira los ingredientes de la comida de hoy y adivina cuál viajó más lejos."
+    },
+    "fr": {
+     "t": "Origines des aliments",
+     "g": "Remonte à l'origine des aliments du quotidien.",
+     "p": [
+      "Tomates, pommes de terre, maïs et chocolat viennent tous des Amériques.",
+      "Avant le XVIe siècle, l'Italie n'avait pas de sauce tomate ni l'Irlande de pommes de terre.",
+      "Les aliments voyagent avec les gens, d'où le métissage des recettes dans le monde."
+     ],
+     "q": "Quel plat de ta famille serait impossible sans un ingrédient venu de loin ?",
+     "c": "Regarde les ingrédients du repas de ce soir et devine lequel a voyagé le plus loin."
+    },
+    "it": {
+     "t": "Origini del cibo",
+     "g": "Risali all'origine dei cibi di ogni giorno.",
+     "p": [
+      "Pomodori, patate, mais e cioccolato vengono tutti dalle Americhe.",
+      "Prima del Cinquecento, l'Italia non aveva salsa di pomodoro né l'Irlanda patate.",
+      "Il cibo viaggia con le persone, per questo le ricette del mondo si mescolano."
+     ],
+     "q": "Quale piatto della tua famiglia sarebbe impossibile senza un ingrediente da lontano?",
+     "c": "Guarda gli ingredienti del pasto di stasera e indovina quale ha viaggiato più lontano."
+    },
+    "pt": {
+     "t": "Origens dos alimentos",
+     "g": "Rastreia os alimentos do dia a dia até ao seu local de origem.",
+     "p": [
+      "Tomates, batatas, milho e chocolate vêm todos das Américas.",
+      "Antes do século XVI, a Itália não tinha molho de tomate nem a Irlanda batatas.",
+      "Os alimentos viajam com as pessoas, por isso as receitas do mundo se misturam."
+     ],
+     "q": "Que prato da tua família seria impossível sem um ingrediente vindo de longe?",
+     "c": "Vê os ingredientes da refeição de hoje e adivinha qual viajou mais longe."
+    },
+    "pt_BR": {
+     "t": "Origens dos alimentos",
+     "g": "Rastreie os alimentos do dia a dia até o lugar de origem.",
+     "p": [
+      "Tomates, batatas, milho e chocolate vêm todos das Américas.",
+      "Antes do século XVI, a Itália não tinha molho de tomate nem a Irlanda batatas.",
+      "Os alimentos viajam com as pessoas, por isso as receitas do mundo se misturam."
+     ],
+     "q": "Que prato da sua família seria impossível sem um ingrediente vindo de longe?",
+     "c": "Veja os ingredientes da refeição de hoje e adivinhe qual viajou mais longe."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fruit or vegetable?",
+     "g": "Learn how botanists and cooks use these words differently.",
+     "p": [
+      "Botanically a fruit holds seeds, so tomatoes, cucumbers and avocados are fruits.",
+      "Bananas are technically berries, while strawberries are not.",
+      "In the kitchen we sort by taste: sweet things are fruit, savoury ones vegetables."
+     ],
+     "q": "Which food do you think is most often put in the wrong group?",
+     "c": "Surprise someone by asking if a tomato is a fruit or a vegetable."
+    },
+    "de": {
+     "t": "Obst oder Gemüse?",
+     "g": "Erfahre, wie Botaniker und Köche diese Wörter unterschiedlich nutzen.",
+     "p": [
+      "Botanisch enthält eine Frucht Samen, also sind Tomaten, Gurken und Avocados Früchte.",
+      "Bananen sind botanisch Beeren, Erdbeeren dagegen nicht.",
+      "In der Küche sortieren wir nach Geschmack: Süßes ist Obst, Herzhaftes Gemüse."
+     ],
+     "q": "Welches Lebensmittel landet deiner Meinung nach am häufigsten in der falschen Gruppe?",
+     "c": "Überrasche jemanden mit der Frage, ob eine Tomate Obst oder Gemüse ist."
+    },
+    "es": {
+     "t": "¿Fruta o verdura?",
+     "g": "Aprende cómo botánicos y cocineros usan estas palabras de forma distinta.",
+     "p": [
+      "Botánicamente un fruto contiene semillas, así que tomates, pepinos y aguacates son frutas.",
+      "Los plátanos son técnicamente bayas, mientras que las fresas no lo son.",
+      "En la cocina clasificamos por sabor: lo dulce es fruta y lo salado, verdura."
+     ],
+     "q": "¿Qué alimento crees que se pone más a menudo en el grupo equivocado?",
+     "c": "Sorprende a alguien preguntándole si el tomate es fruta o verdura."
+    },
+    "fr": {
+     "t": "Fruit ou légume ?",
+     "g": "Découvre comment botanistes et cuisiniers emploient ces mots différemment.",
+     "p": [
+      "En botanique, un fruit contient des graines : tomates, concombres et avocats sont des fruits.",
+      "Les bananes sont techniquement des baies, alors que les fraises n'en sont pas.",
+      "En cuisine, on trie au goût : le sucré est fruit, le salé est légume."
+     ],
+     "q": "Quel aliment est selon toi le plus souvent rangé dans le mauvais groupe ?",
+     "c": "Surprends quelqu'un en demandant si la tomate est un fruit ou un légume."
+    },
+    "it": {
+     "t": "Frutta o verdura?",
+     "g": "Scopri come botanici e cuochi usano queste parole in modo diverso.",
+     "p": [
+      "Botanicamente un frutto contiene semi, quindi pomodori, cetrioli e avocado sono frutti.",
+      "Le banane sono tecnicamente bacche, mentre le fragole no.",
+      "In cucina si classifica per gusto: il dolce è frutta, il salato è verdura."
+     ],
+     "q": "Quale alimento pensi sia più spesso messo nel gruppo sbagliato?",
+     "c": "Sorprendi qualcuno chiedendo se il pomodoro è frutta o verdura."
+    },
+    "pt": {
+     "t": "Fruta ou legume?",
+     "g": "Aprende como botânicos e cozinheiros usam estas palavras de forma diferente.",
+     "p": [
+      "Botanicamente um fruto contém sementes, por isso tomates, pepinos e abacates são frutos.",
+      "As bananas são tecnicamente bagas, enquanto os morangos não são.",
+      "Na cozinha classificamos pelo sabor: o doce é fruta e o salgado é legume."
+     ],
+     "q": "Que alimento achas que é posto mais vezes no grupo errado?",
+     "c": "Surpreende alguém perguntando se o tomate é fruta ou legume."
+    },
+    "pt_BR": {
+     "t": "Fruta ou legume?",
+     "g": "Aprenda como botânicos e cozinheiros usam essas palavras de forma diferente.",
+     "p": [
+      "Botanicamente um fruto contém sementes, por isso tomates, pepinos e abacates são frutos.",
+      "As bananas são tecnicamente bagas, enquanto os morangos não são.",
+      "Na cozinha classificamos pelo sabor: o doce é fruta e o salgado é legume."
+     ],
+     "q": "Qual alimento você acha que é posto mais vezes no grupo errado?",
+     "c": "Surpreenda alguém perguntando se o tomate é fruta ou legume."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "National dishes",
+     "g": "Match famous dishes with the countries they come from.",
+     "p": [
+      "Paella comes from Spain, pho from Vietnam and feijoada from Brazil.",
+      "Sushi is linked to Japan, pizza to Italy and tacos to Mexico.",
+      "Dishes often grew from local ingredients and local history."
+     ],
+     "q": "Which national dish would you most like to taste, and which would you cook?",
+     "c": "Match three dishes to their countries aloud, then add one from your own country."
+    },
+    "de": {
+     "t": "Nationalgerichte",
+     "g": "Ordne berühmte Gerichte den Ländern zu, aus denen sie stammen.",
+     "p": [
+      "Paella kommt aus Spanien, Pho aus Vietnam und Feijoada aus Brasilien.",
+      "Sushi wird mit Japan verbunden, Pizza mit Italien und Tacos mit Mexiko.",
+      "Gerichte wuchsen oft aus lokalen Zutaten und lokaler Geschichte."
+     ],
+     "q": "Welches Nationalgericht möchtest du am liebsten probieren, und welches würdest du kochen?",
+     "c": "Ordne drei Gerichte laut ihren Ländern zu und füge eines aus deinem Land hinzu."
+    },
+    "es": {
+     "t": "Platos nacionales",
+     "g": "Une platos famosos con los países de los que proceden.",
+     "p": [
+      "La paella viene de España, el pho de Vietnam y la feijoada de Brasil.",
+      "El sushi se asocia con Japón, la pizza con Italia y los tacos con México.",
+      "Los platos suelen nacer de ingredientes locales y de la historia local."
+     ],
+     "q": "¿Qué plato nacional te gustaría probar más y cuál cocinarías?",
+     "c": "Une tres platos con sus países en voz alta y añade uno de tu propio país."
+    },
+    "fr": {
+     "t": "Plats nationaux",
+     "g": "Associe des plats célèbres aux pays dont ils viennent.",
+     "p": [
+      "La paella vient d'Espagne, le pho du Vietnam et la feijoada du Brésil.",
+      "Le sushi est lié au Japon, la pizza à l'Italie et les tacos au Mexique.",
+      "Les plats naissent souvent d'ingrédients locaux et de l'histoire locale."
+     ],
+     "q": "Quel plat national aimerais-tu goûter le plus, et lequel cuisinerais-tu ?",
+     "c": "Associe trois plats à leurs pays à voix haute, puis ajoutes-en un de ton pays."
+    },
+    "it": {
+     "t": "Piatti nazionali",
+     "g": "Abbina piatti famosi ai paesi da cui provengono.",
+     "p": [
+      "La paella viene dalla Spagna, il pho dal Vietnam e la feijoada dal Brasile.",
+      "Il sushi è legato al Giappone, la pizza all'Italia e i tacos al Messico.",
+      "I piatti nascono spesso da ingredienti locali e dalla storia locale."
+     ],
+     "q": "Quale piatto nazionale ti piacerebbe assaggiare di più e quale cucineresti?",
+     "c": "Abbina tre piatti ai loro paesi ad alta voce e aggiungine uno del tuo paese."
+    },
+    "pt": {
+     "t": "Pratos nacionais",
+     "g": "Associa pratos famosos aos países de onde vêm.",
+     "p": [
+      "A paelha vem de Espanha, o pho do Vietname e a feijoada do Brasil.",
+      "O sushi liga-se ao Japão, a pizza à Itália e os tacos ao México.",
+      "Os pratos nascem muitas vezes de ingredientes locais e da história local."
+     ],
+     "q": "Que prato nacional gostarias mais de provar e qual cozinharias?",
+     "c": "Associa três pratos aos seus países em voz alta e acrescenta um do teu país."
+    },
+    "pt_BR": {
+     "t": "Pratos nacionais",
+     "g": "Associe pratos famosos aos países de onde vêm.",
+     "p": [
+      "A paella vem da Espanha, o pho do Vietnã e a feijoada do Brasil.",
+      "O sushi se liga ao Japão, a pizza à Itália e os tacos ao México.",
+      "Os pratos nascem muitas vezes de ingredientes locais e da história local."
+     ],
+     "q": "Qual prato nacional você mais gostaria de provar e qual cozinharia?",
+     "c": "Associe três pratos aos seus países em voz alta e acrescente um do seu país."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Famous inventions",
+     "g": "Meet three inventions that shaped daily life and the people linked to them.",
+     "p": [
+      "Johannes Gutenberg brought the printing press with movable type to Europe in the 1400s.",
+      "Thomas Edison made the light bulb practical, building on the work of many others.",
+      "Alexander Graham Bell is credited with the first practical telephone in 1876."
+     ],
+     "q": "Which invention could you least live without, and why?",
+     "c": "Choose one invention in your room and guess who might have first made it."
+    },
+    "de": {
+     "t": "Berühmte Erfindungen",
+     "g": "Lerne drei Erfindungen kennen, die den Alltag prägten, und ihre Erfinder.",
+     "p": [
+      "Johannes Gutenberg brachte im 15. Jahrhundert den Buchdruck mit beweglichen Lettern nach Europa.",
+      "Thomas Edison machte die Glühbirne alltagstauglich und baute auf vielen Vorarbeiten auf.",
+      "Alexander Graham Bell gilt als Erfinder des ersten praktischen Telefons 1876."
+     ],
+     "q": "Auf welche Erfindung könntest du am wenigsten verzichten, und warum?",
+     "c": "Wähle eine Erfindung in deinem Zimmer und rate, wer sie zuerst gebaut haben könnte."
+    },
+    "es": {
+     "t": "Inventos famosos",
+     "g": "Conoce tres inventos que marcaron la vida diaria y a sus creadores.",
+     "p": [
+      "Johannes Gutenberg llevó a Europa la imprenta de tipos móviles en el siglo XV.",
+      "Thomas Edison hizo práctica la bombilla, apoyándose en el trabajo de muchos otros.",
+      "A Alexander Graham Bell se le atribuye el primer teléfono práctico en 1876."
+     ],
+     "q": "¿Qué invento sería el que menos podrías perder y por qué?",
+     "c": "Elige un invento de tu cuarto y adivina quién pudo hacerlo primero."
+    },
+    "fr": {
+     "t": "Inventions célèbres",
+     "g": "Découvre trois inventions qui ont façonné le quotidien et leurs inventeurs.",
+     "p": [
+      "Johannes Gutenberg a apporté en Europe l'imprimerie à caractères mobiles au XVe siècle.",
+      "Thomas Edison a rendu l'ampoule pratique, en s'appuyant sur le travail de beaucoup d'autres.",
+      "On attribue à Alexander Graham Bell le premier téléphone pratique en 1876."
+     ],
+     "q": "De quelle invention pourrais-tu le moins te passer, et pourquoi ?",
+     "c": "Choisis une invention dans ta chambre et devine qui a pu la fabriquer en premier."
+    },
+    "it": {
+     "t": "Invenzioni famose",
+     "g": "Conosci tre invenzioni che hanno cambiato la vita quotidiana e chi le ha create.",
+     "p": [
+      "Johannes Gutenberg portò in Europa la stampa a caratteri mobili nel Quattrocento.",
+      "Thomas Edison rese pratica la lampadina, basandosi sul lavoro di molti altri.",
+      "Ad Alexander Graham Bell si attribuisce il primo telefono pratico nel 1876."
+     ],
+     "q": "A quale invenzione rinunceresti con più difficoltà e perché?",
+     "c": "Scegli un'invenzione nella tua stanza e indovina chi può averla realizzata per primo."
+    },
+    "pt": {
+     "t": "Invenções famosas",
+     "g": "Conhece três invenções que marcaram o dia a dia e as pessoas ligadas a elas.",
+     "p": [
+      "Johannes Gutenberg levou para a Europa a imprensa de tipos móveis no século XV.",
+      "Thomas Edison tornou prática a lâmpada, apoiando-se no trabalho de muitos outros.",
+      "A Alexander Graham Bell atribui-se o primeiro telefone prático em 1876."
+     ],
+     "q": "De que invenção terias mais dificuldade em abdicar e porquê?",
+     "c": "Escolhe uma invenção no teu quarto e adivinha quem a terá feito primeiro."
+    },
+    "pt_BR": {
+     "t": "Invenções famosas",
+     "g": "Conheça três invenções que marcaram o dia a dia e as pessoas ligadas a elas.",
+     "p": [
+      "Johannes Gutenberg levou para a Europa a prensa de tipos móveis no século XV.",
+      "Thomas Edison tornou prática a lâmpada, apoiando-se no trabalho de muitos outros.",
+      "A Alexander Graham Bell atribui-se o primeiro telefone prático em 1876."
+     ],
+     "q": "De qual invenção você teria mais dificuldade em abrir mão e por quê?",
+     "c": "Escolha uma invenção no seu quarto e adivinhe quem pode tê-la feito primeiro."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday objects with history",
+     "g": "Find out who gave us small objects we use without thinking.",
+     "p": [
+      "The zip fastener was developed in the early 1900s and became common on clothes in the 1930s.",
+      "The paper clip's looping shape was refined in the 1800s and has barely changed.",
+      "The sticky note was born from a glue that was too weak, and a clever use for it."
+     ],
+     "q": "Which small everyday object do you think deserves a thank-you to its inventor?",
+     "c": "Look at a pencil or paper clip today and think how simple and clever its design is."
+    },
+    "de": {
+     "t": "Alltagsgegenstände mit Geschichte",
+     "g": "Erfahre, wem wir kleine Dinge verdanken, die wir ohne Nachdenken benutzen.",
+     "p": [
+      "Der Reißverschluss wurde im frühen 20. Jahrhundert entwickelt und wurde in den 1930ern an Kleidung üblich.",
+      "Die schlaufenförmige Büroklammer wurde im 19. Jahrhundert verfeinert und blieb fast unverändert.",
+      "Der Haftnotizzettel entstand aus einem zu schwachen Kleber und einer klugen Idee dafür."
+     ],
+     "q": "Welchem kleinen Alltagsgegenstand würdest du einen Dank an den Erfinder widmen?",
+     "c": "Betrachte heute einen Bleistift oder eine Büroklammer und staune über das clevere Design."
+    },
+    "es": {
+     "t": "Objetos cotidianos con historia",
+     "g": "Descubre a quién debemos objetos pequeños que usamos sin pensar.",
+     "p": [
+      "La cremallera se desarrolló a principios del siglo XX y se hizo común en la ropa en los años treinta.",
+      "La forma de bucles del clip se perfeccionó en el siglo XIX y casi no ha cambiado.",
+      "La nota adhesiva nació de un pegamento demasiado débil y de un uso ingenioso."
+     ],
+     "q": "¿Qué objeto cotidiano pequeño merece un gracias a su inventor?",
+     "c": "Mira hoy un lápiz o un clip y piensa en lo simple e ingenioso de su diseño."
+    },
+    "fr": {
+     "t": "Objets du quotidien et leur histoire",
+     "g": "Découvre à qui nous devons de petits objets utilisés sans y penser.",
+     "p": [
+      "La fermeture éclair a été mise au point au début du XXe siècle et s'est répandue sur les vêtements dans les années 1930.",
+      "La forme en boucles du trombone a été affinée au XIXe siècle et a à peine changé.",
+      "Le papier adhésif repositionnable est né d'une colle trop faible et d'une idée astucieuse."
+     ],
+     "q": "Quel petit objet du quotidien mérite un merci à son inventeur ?",
+     "c": "Regarde aujourd'hui un crayon ou un trombone et admire la simplicité de son design."
+    },
+    "it": {
+     "t": "Oggetti quotidiani con storia",
+     "g": "Scopri a chi dobbiamo piccoli oggetti che usiamo senza pensarci.",
+     "p": [
+      "La cerniera lampo fu sviluppata nel primo Novecento e divenne comune sui vestiti negli anni Trenta.",
+      "La forma a anelli della graffetta fu perfezionata nell'Ottocento e quasi non è cambiata.",
+      "Il foglietto adesivo nacque da una colla troppo debole e da un uso ingegnoso."
+     ],
+     "q": "Quale piccolo oggetto quotidiano merita un grazie al suo inventore?",
+     "c": "Guarda oggi una matita o una graffetta e pensa a quanto è semplice e geniale."
+    },
+    "pt": {
+     "t": "Objetos do dia a dia com história",
+     "g": "Descobre a quem devemos pequenos objetos que usamos sem pensar.",
+     "p": [
+      "O fecho de correr foi desenvolvido no início do século XX e generalizou-se na roupa nos anos 30.",
+      "A forma em laços do clipe foi aperfeiçoada no século XIX e quase não mudou.",
+      "O papel autocolante nasceu de uma cola demasiado fraca e de um uso engenhoso."
+     ],
+     "q": "Que pequeno objeto do dia a dia merece um obrigado ao seu inventor?",
+     "c": "Olha hoje para um lápis ou um clipe e pensa como o desenho é simples e engenhoso."
+    },
+    "pt_BR": {
+     "t": "Objetos do dia a dia com história",
+     "g": "Descubra a quem devemos pequenos objetos que usamos sem pensar.",
+     "p": [
+      "O zíper foi desenvolvido no início do século XX e se popularizou nas roupas nos anos 1930.",
+      "A forma em laços do clipe foi aperfeiçoada no século XIX e quase não mudou.",
+      "O post-it nasceu de uma cola fraca demais e de um uso engenhoso."
+     ],
+     "q": "Qual pequeno objeto do dia a dia merece um obrigado ao seu inventor?",
+     "c": "Olhe hoje para um lápis ou um clipe e pense em como o desenho é simples e engenhoso."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Words with odd origins",
+     "g": "Learn how everyday words travelled across languages.",
+     "p": [
+      "'Robot' comes from the Czech word robota, meaning work, and was popularised by a 1920 play.",
+      "'Shampoo' comes from a Hindi word for massage, and 'pyjamas' also comes from South Asia.",
+      "'Ketchup' probably comes from a word in a Chinese dialect for a fish sauce."
+     ],
+     "q": "What is the funniest or most interesting word origin you know?",
+     "c": "Look up where one of your favourite words comes from and share it today."
+    },
+    "de": {
+     "t": "Wörter mit kuriosem Ursprung",
+     "g": "Erfahre, wie Alltagswörter durch Sprachen gewandert sind.",
+     "p": [
+      "'Roboter' stammt vom tschechischen robota für Arbeit und wurde durch ein Theaterstück von 1920 bekannt.",
+      "'Shampoo' kommt von einem Hindi-Wort für Massage, und 'Pyjama' stammt ebenfalls aus Südasien.",
+      "'Ketchup' kommt wohl von einem Wort aus einem chinesischen Dialekt für eine Fischsoße."
+     ],
+     "q": "Welchen lustigsten oder interessantesten Wortursprung kennst du?",
+     "c": "Such heute die Herkunft eines Lieblingsworts und teile sie mit jemandem."
+    },
+    "es": {
+     "t": "Palabras con orígenes curiosos",
+     "g": "Aprende cómo palabras cotidianas viajaron entre idiomas.",
+     "p": [
+      "'Robot' viene de la palabra checa robota, trabajo, y se popularizó con una obra de 1920.",
+      "'Champú' viene de una palabra hindi para masaje, y 'pijama' también viene del sur de Asia.",
+      "'Kétchup' probablemente viene de una palabra de un dialecto chino para una salsa de pescado."
+     ],
+     "q": "¿Cuál es el origen de una palabra más gracioso o interesante que conoces?",
+     "c": "Averigua el origen de una de tus palabras favoritas y compártelo hoy."
+    },
+    "fr": {
+     "t": "Mots aux origines étonnantes",
+     "g": "Apprends comment des mots courants ont voyagé d'une langue à l'autre.",
+     "p": [
+      "'Robot' vient du mot tchèque robota, travail, et fut popularisé par une pièce de 1920.",
+      "'Shampooing' vient d'un mot hindi pour massage, et 'pyjama' vient aussi d'Asie du Sud.",
+      "'Ketchup' vient probablement d'un mot d'un dialecte chinois désignant une sauce de poisson."
+     ],
+     "q": "Quelle est l'origine de mot la plus drôle ou intéressante que tu connaisses ?",
+     "c": "Cherche l'origine d'un de tes mots préférés et partage-la aujourd'hui."
+    },
+    "it": {
+     "t": "Parole dalle origini curiose",
+     "g": "Scopri come parole di uso comune hanno viaggiato tra le lingue.",
+     "p": [
+      "'Robot' viene dal ceco robota, lavoro, e si diffuse grazie a un'opera teatrale del 1920.",
+      "'Shampoo' viene da una parola hindi per massaggio, e anche 'pigiama' viene dall'Asia meridionale.",
+      "'Ketchup' viene probabilmente da una parola di un dialetto cinese per una salsa di pesce."
+     ],
+     "q": "Qual è l'origine di una parola più buffa o interessante che conosci?",
+     "c": "Cerca l'origine di una delle tue parole preferite e condividila oggi."
+    },
+    "pt": {
+     "t": "Palavras com origens curiosas",
+     "g": "Aprende como palavras comuns viajaram entre línguas.",
+     "p": [
+      "'Robô' vem da palavra checa robota, trabalho, e popularizou-se com uma peça de 1920.",
+      "'Champô' vem de uma palavra hindi para massagem, e 'pijama' também vem do sul da Ásia.",
+      "'Ketchup' vem provavelmente de uma palavra de um dialeto chinês para um molho de peixe."
+     ],
+     "q": "Qual é a origem de palavra mais engraçada ou interessante que conheces?",
+     "c": "Descobre a origem de uma das tuas palavras preferidas e partilha-a hoje."
+    },
+    "pt_BR": {
+     "t": "Palavras com origens curiosas",
+     "g": "Aprenda como palavras comuns viajaram entre línguas.",
+     "p": [
+      "'Robô' vem da palavra tcheca robota, trabalho, e se popularizou com uma peça de 1920.",
+      "'Xampu' vem de uma palavra hindi para massagem, e 'pijama' também vem do sul da Ásia.",
+      "'Ketchup' vem provavelmente de uma palavra de um dialeto chinês para um molho de peixe."
+     ],
+     "q": "Qual a origem de palavra mais engraçada ou interessante que você conhece?",
+     "c": "Descubra a origem de uma das suas palavras favoritas e compartilhe hoje."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Colours in trivia",
+     "g": "Learn some colourful facts about rainbows and colour names.",
+     "p": [
+      "A rainbow is traditionally said to have seven colours: red, orange, yellow, green, blue, indigo, violet.",
+      "The colour orange was named after the fruit, not the other way round, in English.",
+      "Mixing the three primary pigments of paint can make many other colours."
+     ],
+     "q": "What is your favourite colour, and what does it make you think of?",
+     "c": "Look for all the rainbow colours around you today and count how many you find."
+    },
+    "de": {
+     "t": "Farben im Quiz",
+     "g": "Lerne bunte Fakten über Regenbögen und Farbnamen.",
+     "p": [
+      "Ein Regenbogen hat traditionell sieben Farben: Rot, Orange, Gelb, Grün, Blau, Indigo, Violett.",
+      "Im Englischen wurde die Farbe Orange nach der Frucht benannt, nicht umgekehrt.",
+      "Aus den drei Grundpigmenten der Malfarben lassen sich viele andere Farben mischen."
+     ],
+     "q": "Was ist deine Lieblingsfarbe, und woran erinnert sie dich?",
+     "c": "Suche heute alle Regenbogenfarben in deiner Umgebung und zähle, wie viele du findest."
+    },
+    "es": {
+     "t": "Colores en la trivia",
+     "g": "Aprende datos coloridos sobre arcoíris y nombres de colores.",
+     "p": [
+      "Tradicionalmente se dice que el arcoíris tiene siete colores: rojo, naranja, amarillo, verde, azul, añil, violeta.",
+      "En inglés, el color orange recibió su nombre de la fruta, y no al revés.",
+      "Mezclando los tres pigmentos primarios de la pintura se obtienen muchos otros colores."
+     ],
+     "q": "¿Cuál es tu color favorito y qué te recuerda?",
+     "c": "Busca hoy todos los colores del arcoíris a tu alrededor y cuenta cuántos encuentras."
+    },
+    "fr": {
+     "t": "Les couleurs en quiz",
+     "g": "Apprends des faits colorés sur l'arc-en-ciel et les noms de couleurs.",
+     "p": [
+      "On dit traditionnellement que l'arc-en-ciel a sept couleurs : rouge, orange, jaune, vert, bleu, indigo, violet.",
+      "En anglais, la couleur orange a pris le nom du fruit, et non l'inverse.",
+      "En mélangeant les trois pigments primaires de la peinture, on obtient beaucoup d'autres couleurs."
+     ],
+     "q": "Quelle est ta couleur préférée, et à quoi te fait-elle penser ?",
+     "c": "Cherche aujourd'hui toutes les couleurs de l'arc-en-ciel autour de toi et compte-les."
+    },
+    "it": {
+     "t": "I colori nel quiz",
+     "g": "Impara fatti colorati sull'arcobaleno e sui nomi dei colori.",
+     "p": [
+      "Tradizionalmente si dice che l'arcobaleno abbia sette colori: rosso, arancione, giallo, verde, blu, indaco, viola.",
+      "In inglese il colore orange prese il nome dal frutto, e non il contrario.",
+      "Mescolando i tre pigmenti primari della pittura si ottengono molti altri colori."
+     ],
+     "q": "Qual è il tuo colore preferito e a cosa ti fa pensare?",
+     "c": "Cerca oggi tutti i colori dell'arcobaleno intorno a te e conta quanti ne trovi."
+    },
+    "pt": {
+     "t": "As cores no quiz",
+     "g": "Aprende factos coloridos sobre arco-íris e nomes de cores.",
+     "p": [
+      "Diz-se tradicionalmente que o arco-íris tem sete cores: vermelho, laranja, amarelo, verde, azul, anil, violeta.",
+      "Em inglês, a cor orange recebeu o nome da fruta, e não o contrário.",
+      "Misturando os três pigmentos primários da tinta obtêm-se muitas outras cores."
+     ],
+     "q": "Qual é a tua cor preferida e o que te lembra?",
+     "c": "Procura hoje todas as cores do arco-íris à tua volta e conta quantas encontras."
+    },
+    "pt_BR": {
+     "t": "As cores no quiz",
+     "g": "Aprenda fatos coloridos sobre arco-íris e nomes de cores.",
+     "p": [
+      "Diz-se tradicionalmente que o arco-íris tem sete cores: vermelho, laranja, amarelo, verde, azul, anil, violeta.",
+      "Em inglês, a cor orange recebeu o nome da fruta, e não o contrário.",
+      "Misturando os três pigmentos primários da tinta obtêm-se muitas outras cores."
+     ],
+     "q": "Qual é a sua cor preferida e o que ela lembra a você?",
+     "c": "Procure hoje todas as cores do arco-íris ao seu redor e conte quantas encontra."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Numbers in nature",
+     "g": "Count legs, arms and petals to discover nature's favourite numbers.",
+     "p": [
+      "Spiders have eight legs, while insects have six.",
+      "Most starfish have five arms, though a few kinds have many more.",
+      "Many flowers have petals in numbers like 3, 5, 8 and 13, patterns linked to the Fibonacci sequence."
+     ],
+     "q": "Which number do you find most interesting, and where do you spot it?",
+     "c": "Look at a flower or a leaf today and count its petals or veins."
+    },
+    "de": {
+     "t": "Zahlen in der Natur",
+     "g": "Zähle Beine, Arme und Blütenblätter und entdecke die Lieblingszahlen der Natur.",
+     "p": [
+      "Spinnen haben acht Beine, Insekten dagegen sechs.",
+      "Die meisten Seesterne haben fünf Arme, einige Arten aber deutlich mehr.",
+      "Viele Blumen haben 3, 5, 8 oder 13 Blütenblätter, Muster, die mit der Fibonacci-Folge zusammenhängen."
+     ],
+     "q": "Welche Zahl findest du am interessantesten, und wo begegnet sie dir?",
+     "c": "Betrachte heute eine Blume oder ein Blatt und zähle Blütenblätter oder Adern."
+    },
+    "es": {
+     "t": "Números en la naturaleza",
+     "g": "Cuenta patas, brazos y pétalos y descubre los números favoritos de la naturaleza.",
+     "p": [
+      "Las arañas tienen ocho patas, mientras que los insectos tienen seis.",
+      "La mayoría de estrellas de mar tienen cinco brazos, aunque algunas especies tienen muchos más.",
+      "Muchas flores tienen 3, 5, 8 o 13 pétalos, patrones ligados a la sucesión de Fibonacci."
+     ],
+     "q": "¿Qué número te parece más interesante y dónde lo ves?",
+     "c": "Mira hoy una flor o una hoja y cuenta sus pétalos o nervios."
+    },
+    "fr": {
+     "t": "Les nombres dans la nature",
+     "g": "Compte pattes, bras et pétales pour découvrir les nombres favoris de la nature.",
+     "p": [
+      "Les araignées ont huit pattes, tandis que les insectes en ont six.",
+      "La plupart des étoiles de mer ont cinq bras, mais quelques espèces en ont beaucoup plus.",
+      "Beaucoup de fleurs ont 3, 5, 8 ou 13 pétales, des motifs liés à la suite de Fibonacci."
+     ],
+     "q": "Quel nombre trouves-tu le plus intéressant, et où le repères-tu ?",
+     "c": "Regarde aujourd'hui une fleur ou une feuille et compte ses pétales ou ses nervures."
+    },
+    "it": {
+     "t": "Numeri in natura",
+     "g": "Conta zampe, braccia e petali e scopri i numeri preferiti dalla natura.",
+     "p": [
+      "I ragni hanno otto zampe, mentre gli insetti ne hanno sei.",
+      "La maggior parte delle stelle marine ha cinque braccia, ma alcune specie ne hanno molte di più.",
+      "Molti fiori hanno 3, 5, 8 o 13 petali, schemi legati alla successione di Fibonacci."
+     ],
+     "q": "Quale numero trovi più interessante e dove lo noti?",
+     "c": "Guarda oggi un fiore o una foglia e conta i petali o le nervature."
+    },
+    "pt": {
+     "t": "Números na natureza",
+     "g": "Conta patas, braços e pétalas e descobre os números favoritos da natureza.",
+     "p": [
+      "As aranhas têm oito patas, enquanto os insetos têm seis.",
+      "A maioria das estrelas-do-mar tem cinco braços, embora algumas espécies tenham muitos mais.",
+      "Muitas flores têm 3, 5, 8 ou 13 pétalas, padrões ligados à sequência de Fibonacci."
+     ],
+     "q": "Que número achas mais interessante e onde o encontras?",
+     "c": "Olha hoje para uma flor ou uma folha e conta as pétalas ou nervuras."
+    },
+    "pt_BR": {
+     "t": "Números na natureza",
+     "g": "Conte patas, braços e pétalas e descubra os números favoritos da natureza.",
+     "p": [
+      "As aranhas têm oito patas, enquanto os insetos têm seis.",
+      "A maioria das estrelas-do-mar tem cinco braços, embora algumas espécies tenham muitos mais.",
+      "Muitas flores têm 3, 5, 8 ou 13 pétalas, padrões ligados à sequência de Fibonacci."
+     ],
+     "q": "Qual número você acha mais interessante e onde o encontra?",
+     "c": "Olhe hoje para uma flor ou uma folha e conte as pétalas ou nervuras."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: first month quiz",
+     "g": "Test your memory with a light mixed quiz of the first 29 days.",
+     "p": [
+      "Quick one: which is the capital of Australia, and which ocean is the largest?",
+      "Quick two: how many bones does an adult have, and how many hearts does an octopus have?",
+      "Quick three: how many planets orbit the Sun, and how many legs does a spider have?"
+     ],
+     "q": "Which question was easiest for you, and which fact would you like to revisit?",
+     "c": "Write down three facts you remember from this month and tell them to someone."
+    },
+    "de": {
+     "t": "Wiederholung: Quiz des ersten Monats",
+     "g": "Teste dein Gedächtnis mit einem lockeren Mixquiz der ersten 29 Tage.",
+     "p": [
+      "Schnell eins: Was ist die Hauptstadt Australiens, und welcher Ozean ist der größte?",
+      "Schnell zwei: Wie viele Knochen hat ein Erwachsener, und wie viele Herzen hat ein Krake?",
+      "Schnell drei: Wie viele Planeten umkreisen die Sonne, und wie viele Beine hat eine Spinne?"
+     ],
+     "q": "Welche Frage war am leichtesten, und welchen Fakt möchtest du wiederholen?",
+     "c": "Schreibe drei Fakten auf, die du dir aus diesem Monat merkst, und erzähle sie jemandem."
+    },
+    "es": {
+     "t": "Repaso: quiz del primer mes",
+     "g": "Pon a prueba tu memoria con un quiz mixto ligero de los primeros 29 días.",
+     "p": [
+      "Rápida uno: ¿cuál es la capital de Australia y cuál es el océano más grande?",
+      "Rápida dos: ¿cuántos huesos tiene un adulto y cuántos corazones tiene un pulpo?",
+      "Rápida tres: ¿cuántos planetas orbitan el Sol y cuántas patas tiene una araña?"
+     ],
+     "q": "¿Qué pregunta te resultó más fácil y qué dato te gustaría repasar?",
+     "c": "Anota tres datos que recuerdes de este mes y cuéntaselos a alguien."
+    },
+    "fr": {
+     "t": "Révision : quiz du premier mois",
+     "g": "Teste ta mémoire avec un quiz mixte léger sur les 29 premiers jours.",
+     "p": [
+      "Express n°1 : quelle est la capitale de l'Australie, et quel est le plus grand océan ?",
+      "Express n°2 : combien d'os a un adulte, et combien de cœurs a une pieuvre ?",
+      "Express n°3 : combien de planètes tournent autour du Soleil, et combien de pattes a une araignée ?"
+     ],
+     "q": "Quelle question t'a paru la plus facile, et quel fait aimerais-tu revoir ?",
+     "c": "Note trois faits dont tu te souviens de ce mois et raconte-les à quelqu'un."
+    },
+    "it": {
+     "t": "Ripasso: quiz del primo mese",
+     "g": "Metti alla prova la memoria con un quiz misto leggero dei primi 29 giorni.",
+     "p": [
+      "Veloce uno: qual è la capitale dell'Australia e qual è l'oceano più grande?",
+      "Veloce due: quante ossa ha un adulto e quanti cuori ha un polpo?",
+      "Veloce tre: quanti pianeti orbitano intorno al Sole e quante zampe ha un ragno?"
+     ],
+     "q": "Quale domanda ti è sembrata più facile e quale fatto vorresti ripassare?",
+     "c": "Scrivi tre fatti che ricordi di questo mese e raccontali a qualcuno."
+    },
+    "pt": {
+     "t": "Revisão: quiz do primeiro mês",
+     "g": "Põe a memória à prova com um quiz misto leve dos primeiros 29 dias.",
+     "p": [
+      "Rápida um: qual é a capital da Austrália e qual é o maior oceano?",
+      "Rápida dois: quantos ossos tem um adulto e quantos corações tem um polvo?",
+      "Rápida três: quantos planetas orbitam o Sol e quantas patas tem uma aranha?"
+     ],
+     "q": "Que pergunta foi mais fácil e que facto gostarias de rever?",
+     "c": "Escreve três factos de que te lembras deste mês e conta-os a alguém."
+    },
+    "pt_BR": {
+     "t": "Revisão: quiz do primeiro mês",
+     "g": "Teste a memória com um quiz misto leve dos primeiros 29 dias.",
+     "p": [
+      "Rápida um: qual é a capital da Austrália e qual é o maior oceano?",
+      "Rápida dois: quantos ossos tem um adulto e quantos corações tem um polvo?",
+      "Rápida três: quantos planetas orbitam o Sol e quantas patas tem uma aranha?"
+     ],
+     "q": "Qual pergunta foi mais fácil e que fato você gostaria de rever?",
+     "c": "Escreva três fatos de que você lembra deste mês e conte-os para alguém."
+    }
+   }
+  }
+ ]
+}

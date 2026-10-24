@@ -1,0 +1,835 @@
+{
+ "topic": "science",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Elements in daily life",
+     "g": "Discover that elements are pure substances made of just one kind of atom.",
+     "p": [
+      "Oxygen in the air, carbon in pencil lead, iron in nails and gold in rings are all elements.",
+      "There are about 118 known elements, and they fill the periodic table.",
+      "Every element has a short symbol, like O for oxygen, Fe for iron and Au for gold."
+     ],
+     "q": "Which element do you think you touch or breathe most often every day?",
+     "c": "Find three objects at home and guess which element each one is mostly made of."
+    },
+    "de": {
+     "t": "Elemente im Alltag",
+     "g": "Entdecke, dass Elemente reine Stoffe aus nur einer Atomsorte sind.",
+     "p": [
+      "Sauerstoff in der Luft, Kohlenstoff in der Bleistiftmine, Eisen in Nägeln und Gold in Ringen sind Elemente.",
+      "Es sind rund 118 Elemente bekannt, und sie füllen das Periodensystem.",
+      "Jedes Element hat ein kurzes Symbol, etwa O für Sauerstoff, Fe für Eisen und Au für Gold."
+     ],
+     "q": "Welches Element berührst oder atmest du wohl jeden Tag am häufigsten?",
+     "c": "Such drei Gegenstände zu Hause und rate, aus welchem Element jeder hauptsächlich besteht."
+    },
+    "es": {
+     "t": "Elementos en la vida diaria",
+     "g": "Descubrir que los elementos son sustancias puras formadas por un solo tipo de átomo.",
+     "p": [
+      "El oxígeno del aire, el carbono de la mina del lápiz, el hierro de los clavos y el oro de los anillos son elementos.",
+      "Se conocen unos 118 elementos, y todos ocupan la tabla periódica.",
+      "Cada elemento tiene un símbolo corto: O para el oxígeno, Fe para el hierro y Au para el oro."
+     ],
+     "q": "¿Qué elemento crees que tocas o respiras con más frecuencia cada día?",
+     "c": "Busca tres objetos en casa e imagina de qué elemento están hechos sobre todo."
+    },
+    "fr": {
+     "t": "Les éléments au quotidien",
+     "g": "Découvrir que les éléments sont des substances pures faites d'un seul type d'atome.",
+     "p": [
+      "L'oxygène de l'air, le carbone de la mine du crayon, le fer des clous et l'or des bagues sont des éléments.",
+      "On connaît environ 118 éléments, qui remplissent le tableau périodique.",
+      "Chaque élément a un symbole court : O pour l'oxygène, Fe pour le fer, Au pour l'or."
+     ],
+     "q": "À ton avis, quel élément touches-tu ou respires-tu le plus souvent chaque jour ?",
+     "c": "Trouve trois objets chez toi et devine de quel élément chacun est surtout fait."
+    },
+    "it": {
+     "t": "Gli elementi nella vita quotidiana",
+     "g": "Scoprire che gli elementi sono sostanze pure fatte di un solo tipo di atomo.",
+     "p": [
+      "L'ossigeno dell'aria, il carbonio della mina della matita, il ferro dei chiodi e l'oro degli anelli sono elementi.",
+      "Si conoscono circa 118 elementi, e riempiono la tavola periodica.",
+      "Ogni elemento ha un simbolo breve: O per l'ossigeno, Fe per il ferro, Au per l'oro."
+     ],
+     "q": "Quale elemento pensi di toccare o respirare più spesso ogni giorno?",
+     "c": "Trova tre oggetti in casa e indovina di quale elemento sono fatti soprattutto."
+    },
+    "pt": {
+     "t": "Os elementos no dia a dia",
+     "g": "Descobrir que os elementos são substâncias puras feitas de um só tipo de átomo.",
+     "p": [
+      "O oxigénio do ar, o carbono da mina do lápis, o ferro dos pregos e o ouro dos anéis são elementos.",
+      "Conhecem-se cerca de 118 elementos, que preenchem a tabela periódica.",
+      "Cada elemento tem um símbolo curto: O para o oxigénio, Fe para o ferro e Au para o ouro."
+     ],
+     "q": "Que elemento achas que tocas ou respiras com mais frequência todos os dias?",
+     "c": "Procura três objetos em casa e adivinha de que elemento são feitos sobretudo."
+    },
+    "pt_BR": {
+     "t": "Os elementos no dia a dia",
+     "g": "Descobrir que os elementos são substâncias puras feitas de um só tipo de átomo.",
+     "p": [
+      "O oxigênio do ar, o carbono do grafite do lápis, o ferro dos pregos e o ouro dos anéis são elementos.",
+      "Conhecem-se cerca de 118 elementos, que preenchem a tabela periódica.",
+      "Cada elemento tem um símbolo curto: O para oxigênio, Fe para ferro e Au para ouro."
+     ],
+     "q": "Que elemento você acha que toca ou respira com mais frequência todo dia?",
+     "c": "Procure três objetos em casa e adivinhe de que elemento são feitos principalmente."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Molecules and compounds",
+     "g": "Learn how atoms join together to form molecules and compounds.",
+     "p": [
+      "Atoms bond to make molecules: two hydrogen atoms plus one oxygen atom make one water molecule.",
+      "A compound is made of different elements joined together, like water or table salt.",
+      "A compound has properties very different from the elements it is made of."
+     ],
+     "q": "Can you think of a substance you use daily that is a compound?",
+     "c": "Look at a bottle of water and picture the billions of tiny H2O molecules inside it."
+    },
+    "de": {
+     "t": "Moleküle und Verbindungen",
+     "g": "Lerne, wie sich Atome zu Molekülen und Verbindungen zusammenschließen.",
+     "p": [
+      "Atome verbinden sich zu Molekülen: Zwei Wasserstoffatome und ein Sauerstoffatom ergeben ein Wassermolekül.",
+      "Eine Verbindung besteht aus verschiedenen Elementen, die verbunden sind, etwa Wasser oder Kochsalz.",
+      "Eine Verbindung hat ganz andere Eigenschaften als die Elemente, aus denen sie besteht."
+     ],
+     "q": "Fällt dir ein Stoff ein, den du täglich benutzt und der eine Verbindung ist?",
+     "c": "Sieh dir eine Wasserflasche an und stell dir die Milliarden winziger H2O-Moleküle darin vor."
+    },
+    "es": {
+     "t": "Moléculas y compuestos",
+     "g": "Aprender cómo se unen los átomos para formar moléculas y compuestos.",
+     "p": [
+      "Los átomos se enlazan en moléculas: dos de hidrógeno y uno de oxígeno forman una molécula de agua.",
+      "Un compuesto reúne elementos distintos unidos entre sí, como el agua o la sal de mesa.",
+      "Un compuesto tiene propiedades muy distintas de las de los elementos que lo forman."
+     ],
+     "q": "¿Se te ocurre alguna sustancia que uses a diario y que sea un compuesto?",
+     "c": "Mira una botella de agua e imagina los miles de millones de moléculas de H2O que contiene."
+    },
+    "fr": {
+     "t": "Molécules et composés",
+     "g": "Comprendre comment les atomes s'assemblent en molécules et en composés.",
+     "p": [
+      "Les atomes se lient en molécules : deux atomes d'hydrogène et un d'oxygène forment une molécule d'eau.",
+      "Un composé réunit des éléments différents, comme l'eau ou le sel de cuisine.",
+      "Un composé a des propriétés très différentes de celles des éléments qui le composent."
+     ],
+     "q": "Vois-tu une substance que tu utilises chaque jour et qui est un composé ?",
+     "c": "Regarde une bouteille d'eau et imagine les milliards de minuscules molécules de H2O dedans."
+    },
+    "it": {
+     "t": "Molecole e composti",
+     "g": "Capire come gli atomi si uniscono in molecole e composti.",
+     "p": [
+      "Gli atomi si legano in molecole: due atomi di idrogeno e uno di ossigeno formano una molecola d'acqua.",
+      "Un composto unisce elementi diversi, come l'acqua o il sale da cucina.",
+      "Un composto ha proprietà molto diverse da quelle degli elementi che lo formano."
+     ],
+     "q": "Ti viene in mente una sostanza che usi ogni giorno ed è un composto?",
+     "c": "Guarda una bottiglia d'acqua e immagina i miliardi di minuscole molecole di H2O al suo interno."
+    },
+    "pt": {
+     "t": "Moléculas e compostos",
+     "g": "Aprender como os átomos se unem para formar moléculas e compostos.",
+     "p": [
+      "Os átomos ligam-se em moléculas: dois de hidrogénio e um de oxigénio formam uma molécula de água.",
+      "Um composto junta elementos diferentes, como a água ou o sal de cozinha.",
+      "Um composto tem propriedades muito diferentes das dos elementos que o formam."
+     ],
+     "q": "Lembras-te de uma substância que uses todos os dias e que seja um composto?",
+     "c": "Olha para uma garrafa de água e imagina os milhares de milhões de moléculas de H2O lá dentro."
+    },
+    "pt_BR": {
+     "t": "Moléculas e compostos",
+     "g": "Aprender como os átomos se unem para formar moléculas e compostos.",
+     "p": [
+      "Os átomos se ligam em moléculas: dois de hidrogênio e um de oxigênio formam uma molécula de água.",
+      "Um composto junta elementos diferentes, como a água ou o sal de cozinha.",
+      "Um composto tem propriedades muito diferentes das dos elementos que o formam."
+     ],
+     "q": "Você lembra de uma substância que usa todo dia e que seja um composto?",
+     "c": "Olhe para uma garrafa de água e imagine os bilhões de moléculas de H2O dentro dela."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Physical and chemical changes",
+     "g": "Tell apart changes that only alter shape from changes that create new substances.",
+     "p": [
+      "Tearing paper or melting ice is a physical change: the substance stays the same.",
+      "Burning wood or baking a cake is a chemical change: new substances are formed.",
+      "Physical changes can often be reversed, while chemical changes usually cannot."
+     ],
+     "q": "Is cooking an egg a physical or a chemical change? Why?",
+     "c": "Sort five things you did today into physical changes and chemical changes."
+    },
+    "de": {
+     "t": "Physikalische und chemische Veränderungen",
+     "g": "Unterscheide Veränderungen der Form von Veränderungen, die neue Stoffe erzeugen.",
+     "p": [
+      "Papier zu zerreißen oder Eis zu schmelzen ist eine physikalische Veränderung: Der Stoff bleibt gleich.",
+      "Holz zu verbrennen oder einen Kuchen zu backen ist eine chemische Veränderung: Es entstehen neue Stoffe.",
+      "Physikalische Veränderungen lassen sich oft umkehren, chemische meist nicht."
+     ],
+     "q": "Ist das Kochen eines Eis eine physikalische oder eine chemische Veränderung? Warum?",
+     "c": "Sortiere fünf Dinge, die du heute getan hast, in physikalische und chemische Veränderungen."
+    },
+    "es": {
+     "t": "Cambios físicos y químicos",
+     "g": "Distinguir los cambios que solo alteran la forma de los que crean sustancias nuevas.",
+     "p": [
+      "Romper papel o derretir hielo es un cambio físico: la sustancia sigue siendo la misma.",
+      "Quemar madera o hornear un pastel es un cambio químico: se forman sustancias nuevas.",
+      "Los cambios físicos suelen poder revertirse, mientras que los químicos normalmente no."
+     ],
+     "q": "¿Cocer un huevo es un cambio físico o químico? ¿Por qué?",
+     "c": "Clasifica cinco cosas que hiciste hoy en cambios físicos y cambios químicos."
+    },
+    "fr": {
+     "t": "Changements physiques et chimiques",
+     "g": "Distinguer les changements de forme de ceux qui créent de nouvelles substances.",
+     "p": [
+      "Déchirer du papier ou faire fondre de la glace est un changement physique : la substance reste la même.",
+      "Brûler du bois ou cuire un gâteau est un changement chimique : de nouvelles substances apparaissent.",
+      "Un changement physique est souvent réversible, un changement chimique rarement."
+     ],
+     "q": "Cuire un œuf est-il un changement physique ou chimique ? Pourquoi ?",
+     "c": "Classe cinq choses faites aujourd'hui en changements physiques et chimiques."
+    },
+    "it": {
+     "t": "Cambiamenti fisici e chimici",
+     "g": "Distinguere i cambiamenti di forma da quelli che creano nuove sostanze.",
+     "p": [
+      "Strappare la carta o sciogliere il ghiaccio è un cambiamento fisico: la sostanza resta la stessa.",
+      "Bruciare la legna o cuocere una torta è un cambiamento chimico: si formano nuove sostanze.",
+      "I cambiamenti fisici spesso si possono invertire, quelli chimici di solito no."
+     ],
+     "q": "Cuocere un uovo è un cambiamento fisico o chimico? Perché?",
+     "c": "Dividi cinque cose che hai fatto oggi in cambiamenti fisici e chimici."
+    },
+    "pt": {
+     "t": "Mudanças físicas e químicas",
+     "g": "Distinguir as mudanças que só alteram a forma das que criam substâncias novas.",
+     "p": [
+      "Rasgar papel ou derreter gelo é uma mudança física: a substância continua a mesma.",
+      "Queimar madeira ou cozer um bolo é uma mudança química: formam-se substâncias novas.",
+      "As mudanças físicas muitas vezes revertem-se, as químicas normalmente não."
+     ],
+     "q": "Cozer um ovo é uma mudança física ou química? Porquê?",
+     "c": "Separa cinco coisas que fizeste hoje em mudanças físicas e mudanças químicas."
+    },
+    "pt_BR": {
+     "t": "Mudanças físicas e químicas",
+     "g": "Distinguir as mudanças que só alteram a forma das que criam substâncias novas.",
+     "p": [
+      "Rasgar papel ou derreter gelo é uma mudança física: a substância continua a mesma.",
+      "Queimar madeira ou assar um bolo é uma mudança química: formam-se substâncias novas.",
+      "As mudanças físicas muitas vezes podem ser revertidas, as químicas normalmente não."
+     ],
+     "q": "Cozinhar um ovo é uma mudança física ou química? Por quê?",
+     "c": "Separe cinco coisas que você fez hoje em mudanças físicas e mudanças químicas."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Signs of a chemical reaction",
+     "g": "Learn the clues that tell you new substances are forming.",
+     "p": [
+      "Bubbles of gas, a color change, heat or light can signal a chemical reaction.",
+      "A new solid appearing in a liquid, or a new smell, is another clue.",
+      "No single sign is proof, because boiling water bubbles without making anything new."
+     ],
+     "q": "Have you ever seen a color change in food, like a cut apple turning brown?",
+     "c": "Cut an apple, leave one slice out, and note after an hour what changed and what stayed the same."
+    },
+    "de": {
+     "t": "Anzeichen einer chemischen Reaktion",
+     "g": "Lerne die Hinweise kennen, die zeigen, dass neue Stoffe entstehen.",
+     "p": [
+      "Gasblasen, ein Farbwechsel, Wärme oder Licht können auf eine chemische Reaktion hindeuten.",
+      "Ein neuer Feststoff in einer Flüssigkeit oder ein neuer Geruch ist ein weiterer Hinweis.",
+      "Kein einzelnes Zeichen beweist es, denn kochendes Wasser sprudelt, ohne dass etwas Neues entsteht."
+     ],
+     "q": "Hast du schon einmal einen Farbwechsel bei Essen gesehen, etwa einen braunen Apfel?",
+     "c": "Schneide einen Apfel, lass eine Scheibe liegen und notiere nach einer Stunde, was sich verändert hat."
+    },
+    "es": {
+     "t": "Señales de una reacción química",
+     "g": "Aprender las pistas que indican que se forman sustancias nuevas.",
+     "p": [
+      "Burbujas de gas, un cambio de color, calor o luz pueden indicar una reacción química.",
+      "Que aparezca un sólido nuevo en un líquido, o un olor nuevo, es otra pista.",
+      "Ninguna señal es una prueba por sí sola: el agua hirviendo burbujea sin crear nada nuevo."
+     ],
+     "q": "¿Has visto alguna vez un cambio de color en un alimento, como una manzana cortada que se oscurece?",
+     "c": "Corta una manzana, deja una rodaja fuera y anota tras una hora qué cambió y qué no."
+    },
+    "fr": {
+     "t": "Signes d'une réaction chimique",
+     "g": "Apprendre les indices montrant que de nouvelles substances se forment.",
+     "p": [
+      "Des bulles de gaz, un changement de couleur, de la chaleur ou de la lumière peuvent signaler une réaction.",
+      "Un nouveau solide dans un liquide, ou une nouvelle odeur, est un autre indice.",
+      "Aucun signe ne prouve tout seul : l'eau qui bout fait des bulles sans rien créer de nouveau."
+     ],
+     "q": "As-tu déjà vu un aliment changer de couleur, comme une pomme coupée qui brunit ?",
+     "c": "Coupe une pomme, laisse une tranche dehors et note après une heure ce qui a changé."
+    },
+    "it": {
+     "t": "Segni di una reazione chimica",
+     "g": "Imparare gli indizi che mostrano la formazione di nuove sostanze.",
+     "p": [
+      "Bolle di gas, un cambio di colore, calore o luce possono indicare una reazione chimica.",
+      "Un nuovo solido in un liquido, o un odore nuovo, è un altro indizio.",
+      "Nessun segno da solo è una prova: l'acqua che bolle fa bolle senza creare nulla di nuovo."
+     ],
+     "q": "Hai mai visto un cibo cambiare colore, come una mela tagliata che diventa marrone?",
+     "c": "Taglia una mela, lascia fuori una fetta e dopo un'ora annota cosa è cambiato."
+    },
+    "pt": {
+     "t": "Sinais de uma reação química",
+     "g": "Aprender as pistas que mostram que se formam substâncias novas.",
+     "p": [
+      "Bolhas de gás, uma mudança de cor, calor ou luz podem indicar uma reação química.",
+      "Um sólido novo num líquido, ou um cheiro novo, é outra pista.",
+      "Nenhum sinal chega por si só: a água a ferver faz bolhas sem criar nada de novo."
+     ],
+     "q": "Já viste um alimento mudar de cor, como uma maçã cortada que escurece?",
+     "c": "Corta uma maçã, deixa uma fatia de fora e anota passada uma hora o que mudou."
+    },
+    "pt_BR": {
+     "t": "Sinais de uma reação química",
+     "g": "Aprender as pistas que mostram que se formam substâncias novas.",
+     "p": [
+      "Bolhas de gás, mudança de cor, calor ou luz podem indicar uma reação química.",
+      "Um sólido novo num líquido, ou um cheiro novo, é outra pista.",
+      "Nenhum sinal basta sozinho: a água fervendo faz bolhas sem criar nada de novo."
+     ],
+     "q": "Você já viu um alimento mudar de cor, como uma maçã cortada que escurece?",
+     "c": "Corte uma maçã, deixe uma fatia de fora e anote depois de uma hora o que mudou."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kitchen chemistry",
+     "g": "See how everyday cooking is chemistry happening on your stove and counter.",
+     "p": [
+      "Baking soda and vinegar fizz because they react and release carbon dioxide gas.",
+      "Bread rises because yeast makes gas bubbles that get trapped in the dough.",
+      "Browning toast or onions creates new tasty substances through heat."
+     ],
+     "q": "Which kitchen change do you find most magical, and why?",
+     "c": "Mix a spoon of baking soda with a little vinegar in a bowl and watch the fizz."
+    },
+    "de": {
+     "t": "Küchenchemie",
+     "g": "Erlebe, wie Kochen alltägliche Chemie auf Herd und Arbeitsplatte ist.",
+     "p": [
+      "Natron und Essig sprudeln, weil sie reagieren und Kohlendioxid freisetzen.",
+      "Brot geht auf, weil Hefe Gasblasen bildet, die im Teig eingeschlossen bleiben.",
+      "Wenn Toast oder Zwiebeln braun werden, entstehen durch Hitze neue, leckere Stoffe."
+     ],
+     "q": "Welche Veränderung in der Küche findest du am magischsten, und warum?",
+     "c": "Gib einen Löffel Natron mit etwas Essig in eine Schüssel und sieh dem Sprudeln zu."
+    },
+    "es": {
+     "t": "Química de cocina",
+     "g": "Ver cómo cocinar es química cotidiana en tu fogón y tu encimera.",
+     "p": [
+      "El bicarbonato y el vinagre burbujean porque reaccionan y liberan dióxido de carbono.",
+      "El pan sube porque la levadura produce burbujas de gas que quedan atrapadas en la masa.",
+      "Dorar el pan o la cebolla crea sustancias nuevas y sabrosas con el calor."
+     ],
+     "q": "¿Qué cambio de la cocina te parece más mágico y por qué?",
+     "c": "Mezcla una cucharada de bicarbonato con un poco de vinagre en un bol y mira la espuma."
+    },
+    "fr": {
+     "t": "La chimie de la cuisine",
+     "g": "Voir comment la cuisine est de la chimie de tous les jours.",
+     "p": [
+      "Le bicarbonate et le vinaigre pétillent parce qu'ils réagissent et libèrent du dioxyde de carbone.",
+      "Le pain lève parce que la levure produit des bulles de gaz piégées dans la pâte.",
+      "Dorer du pain ou des oignons crée sous l'effet de la chaleur de nouvelles substances savoureuses."
+     ],
+     "q": "Quel changement de la cuisine te paraît le plus magique, et pourquoi ?",
+     "c": "Mélange une cuillère de bicarbonate et un peu de vinaigre dans un bol et regarde mousser."
+    },
+    "it": {
+     "t": "La chimica in cucina",
+     "g": "Vedere come cucinare sia chimica quotidiana su fornello e piano di lavoro.",
+     "p": [
+      "Bicarbonato e aceto frizzano perché reagiscono e liberano anidride carbonica.",
+      "Il pane lievita perché il lievito produce bolle di gas intrappolate nell'impasto.",
+      "Dorare il pane o le cipolle crea con il calore nuove sostanze saporite."
+     ],
+     "q": "Quale cambiamento in cucina ti sembra più magico, e perché?",
+     "c": "Mescola un cucchiaio di bicarbonato con un po' di aceto in una ciotola e guarda la schiuma."
+    },
+    "pt": {
+     "t": "Química na cozinha",
+     "g": "Ver como cozinhar é química do dia a dia no fogão e na bancada.",
+     "p": [
+      "O bicarbonato e o vinagre fazem espuma porque reagem e libertam dióxido de carbono.",
+      "O pão cresce porque o fermento produz bolhas de gás que ficam presas na massa.",
+      "Dourar o pão ou a cebola cria, com o calor, substâncias novas e saborosas."
+     ],
+     "q": "Que mudança na cozinha te parece mais mágica, e porquê?",
+     "c": "Mistura uma colher de bicarbonato com um pouco de vinagre numa taça e vê a espuma."
+    },
+    "pt_BR": {
+     "t": "Química na cozinha",
+     "g": "Ver como cozinhar é química do dia a dia no fogão e na bancada.",
+     "p": [
+      "O bicarbonato e o vinagre fazem espuma porque reagem e liberam dióxido de carbono.",
+      "O pão cresce porque o fermento produz bolhas de gás que ficam presas na massa.",
+      "Dourar o pão ou a cebola cria, com o calor, substâncias novas e saborosas."
+     ],
+     "q": "Que mudança na cozinha parece mais mágica para você, e por quê?",
+     "c": "Misture uma colher de bicarbonato com um pouco de vinagre numa tigela e veja a espuma."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rust and tarnish",
+     "g": "Understand how metals slowly react with their surroundings and how we protect them.",
+     "p": [
+      "Iron rusts when it reacts with oxygen and water, forming a flaky reddish-brown coating.",
+      "Silver and copper also change slowly, turning dull or greenish: this is tarnish.",
+      "Paint, oil and zinc coatings keep air and water away from the metal."
+     ],
+     "q": "Where have you seen rust, and what was the object doing there?",
+     "c": "Walk around and find one metal object that is rusting and one that is protected."
+    },
+    "de": {
+     "t": "Rost und Anlaufen",
+     "g": "Verstehe, wie Metalle langsam mit ihrer Umgebung reagieren und wie wir sie schützen.",
+     "p": [
+      "Eisen rostet, wenn es mit Sauerstoff und Wasser reagiert und eine rotbraune, bröselige Schicht bildet.",
+      "Auch Silber und Kupfer verändern sich langsam, werden matt oder grünlich: Das nennt man Anlaufen.",
+      "Farbe, Öl und Zinkschichten halten Luft und Wasser vom Metall fern."
+     ],
+     "q": "Wo hast du schon Rost gesehen, und was machte der Gegenstand dort?",
+     "c": "Geh herum und finde einen rostenden und einen geschützten Metallgegenstand."
+    },
+    "es": {
+     "t": "Óxido y deslustre",
+     "g": "Entender cómo los metales reaccionan despacio con su entorno y cómo los protegemos.",
+     "p": [
+      "El hierro se oxida al reaccionar con oxígeno y agua, y forma una capa escamosa de color pardo rojizo.",
+      "La plata y el cobre también cambian despacio, se opacan o se ponen verdosos: es el deslustre.",
+      "La pintura, el aceite y las capas de zinc mantienen alejados el aire y el agua."
+     ],
+     "q": "¿Dónde has visto óxido y qué hacía allí ese objeto?",
+     "c": "Da una vuelta y encuentra un objeto metálico oxidado y otro protegido."
+    },
+    "fr": {
+     "t": "Rouille et ternissement",
+     "g": "Comprendre comment les métaux réagissent lentement avec leur environnement et comment les protéger.",
+     "p": [
+      "Le fer rouille en réagissant avec l'oxygène et l'eau, ce qui forme une couche rouge-brun qui s'effrite.",
+      "L'argent et le cuivre changent aussi lentement, ternissent ou verdissent.",
+      "La peinture, l'huile et le zinc tiennent l'air et l'eau à distance du métal."
+     ],
+     "q": "Où as-tu déjà vu de la rouille, et que faisait l'objet à cet endroit ?",
+     "c": "Fais un tour et trouve un objet métallique qui rouille et un autre protégé."
+    },
+    "it": {
+     "t": "Ruggine e opacizzazione",
+     "g": "Capire come i metalli reagiscono lentamente all'ambiente e come proteggerli.",
+     "p": [
+      "Il ferro arrugginisce reagendo con ossigeno e acqua e forma una crosta rosso-bruna e sfaldabile.",
+      "Anche argento e rame cambiano lentamente, diventano opachi o verdastri.",
+      "Vernice, olio e rivestimenti di zinco tengono lontani aria e acqua dal metallo."
+     ],
+     "q": "Dove hai visto della ruggine, e cosa faceva lì quell'oggetto?",
+     "c": "Fai un giro e trova un oggetto di metallo che arrugginisce e uno protetto."
+    },
+    "pt": {
+     "t": "Ferrugem e escurecimento",
+     "g": "Perceber como os metais reagem devagar ao ambiente e como os protegemos.",
+     "p": [
+      "O ferro enferruja ao reagir com oxigénio e água, formando uma camada acastanhada que se desfaz.",
+      "A prata e o cobre também mudam devagar, ficam baços ou esverdeados.",
+      "A tinta, o óleo e o zinco mantêm o ar e a água longe do metal."
+     ],
+     "q": "Onde já viste ferrugem, e o que fazia lá o objeto?",
+     "c": "Dá uma volta e encontra um objeto de metal enferrujado e outro protegido."
+    },
+    "pt_BR": {
+     "t": "Ferrugem e escurecimento",
+     "g": "Entender como os metais reagem devagar ao ambiente e como os protegemos.",
+     "p": [
+      "O ferro enferruja ao reagir com oxigênio e água, formando uma camada marrom-avermelhada que se solta.",
+      "A prata e o cobre também mudam devagar, ficam foscos ou esverdeados.",
+      "Tinta, óleo e zinco mantêm o ar e a água longe do metal."
+     ],
+     "q": "Onde você já viu ferrugem, e o que o objeto fazia lá?",
+     "c": "Dê uma volta e encontre um objeto de metal enferrujado e outro protegido."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Acids and bases at home",
+     "g": "Meet acids and bases and see how a simple indicator can tell them apart.",
+     "p": [
+      "Lemon juice and vinegar are acids and taste sour, while soap and baking soda are bases.",
+      "The pH scale runs from 0 to 14: below 7 is acidic, 7 is neutral, above 7 is basic.",
+      "Red cabbage juice turns pinkish with acids and bluish-green with bases."
+     ],
+     "q": "Which food in your kitchen do you think is the most acidic?",
+     "c": "Soak chopped red cabbage in warm water, then add a drop of lemon juice to a little of the purple liquid."
+    },
+    "de": {
+     "t": "Säuren und Basen zu Hause",
+     "g": "Lerne Säuren und Basen kennen und wie ein Indikator sie unterscheidet.",
+     "p": [
+      "Zitronensaft und Essig sind Säuren und schmecken sauer, Seife und Natron sind Basen.",
+      "Die pH-Skala reicht von 0 bis 14: Unter 7 ist sauer, 7 ist neutral, über 7 ist basisch.",
+      "Rotkohlsaft wird mit Säuren rötlich und mit Basen blaugrün."
+     ],
+     "q": "Welches Lebensmittel in deiner Küche ist wohl am sauersten?",
+     "c": "Weiche gehackten Rotkohl in warmem Wasser ein und gib einen Tropfen Zitronensaft zu etwas lila Flüssigkeit."
+    },
+    "es": {
+     "t": "Ácidos y bases en casa",
+     "g": "Conocer los ácidos y las bases y ver cómo un indicador sencillo los distingue.",
+     "p": [
+      "El zumo de limón y el vinagre son ácidos y saben agrios; el jabón y el bicarbonato son bases.",
+      "La escala de pH va de 0 a 14: menos de 7 es ácido, 7 neutro y más de 7 básico.",
+      "El jugo de col lombarda se vuelve rosado con ácidos y verde azulado con bases."
+     ],
+     "q": "¿Qué alimento de tu cocina crees que es el más ácido?",
+     "c": "Remoja col lombarda picada en agua tibia y añade una gota de limón a un poco del líquido morado."
+    },
+    "fr": {
+     "t": "Acides et bases à la maison",
+     "g": "Découvrir les acides et les bases et voir comment un indicateur simple les distingue.",
+     "p": [
+      "Le jus de citron et le vinaigre sont des acides au goût aigre, le savon et le bicarbonate des bases.",
+      "L'échelle du pH va de 0 à 14 : moins de 7 acide, 7 neutre, plus de 7 basique.",
+      "Le jus de chou rouge devient rosé avec les acides et bleu-vert avec les bases."
+     ],
+     "q": "Quel aliment de ta cuisine est le plus acide, à ton avis ?",
+     "c": "Fais tremper du chou rouge haché dans l'eau tiède, puis ajoute une goutte de citron à un peu du liquide violet."
+    },
+    "it": {
+     "t": "Acidi e basi in casa",
+     "g": "Conoscere acidi e basi e vedere come un semplice indicatore li distingue.",
+     "p": [
+      "Il succo di limone e l'aceto sono acidi dal sapore aspro, il sapone e il bicarbonato sono basi.",
+      "La scala del pH va da 0 a 14: sotto 7 è acido, 7 è neutro, sopra 7 è basico.",
+      "Il succo di cavolo rosso diventa rosato con gli acidi e verde-azzurro con le basi."
+     ],
+     "q": "Quale alimento della tua cucina pensi sia il più acido?",
+     "c": "Metti a bagno cavolo rosso tritato in acqua tiepida e aggiungi una goccia di limone a un po' di liquido viola."
+    },
+    "pt": {
+     "t": "Ácidos e bases em casa",
+     "g": "Conhecer os ácidos e as bases e ver como um indicador simples os distingue.",
+     "p": [
+      "O sumo de limão e o vinagre são ácidos e sabem a azedo; o sabão e o bicarbonato são bases.",
+      "A escala de pH vai de 0 a 14: abaixo de 7 é ácido, 7 é neutro, acima de 7 é básico.",
+      "O sumo de couve roxa fica rosado com ácidos e azul-esverdeado com bases."
+     ],
+     "q": "Que alimento da tua cozinha achas que é o mais ácido?",
+     "c": "Deixa couve roxa picada de molho em água morna e junta uma gota de limão a um pouco do líquido roxo."
+    },
+    "pt_BR": {
+     "t": "Ácidos e bases em casa",
+     "g": "Conhecer os ácidos e as bases e ver como um indicador simples os distingue.",
+     "p": [
+      "O suco de limão e o vinagre são ácidos e têm gosto azedo; o sabão e o bicarbonato são bases.",
+      "A escala de pH vai de 0 a 14: abaixo de 7 é ácido, 7 é neutro, acima de 7 é básico.",
+      "O suco de repolho roxo fica rosado com ácidos e azul-esverdeado com bases."
+     ],
+     "q": "Qual alimento da sua cozinha você acha que é o mais ácido?",
+     "c": "Deixe repolho roxo picado de molho em água morna e pingue uma gota de limão em um pouco do líquido roxo."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fire and combustion",
+     "g": "Learn why fire needs three ingredients and how that helps keep people safe.",
+     "p": [
+      "Fire needs fuel, oxygen and heat: this is called the fire triangle.",
+      "Take away any one side, and the fire goes out, which is how firefighters work.",
+      "Burning is a chemical reaction that gives off heat, light and new gases."
+     ],
+     "q": "Why do you think a lid on a pan can stop a flame?",
+     "c": "Look around a room, never lighting anything, and spot the fuels and the safety tools like detectors."
+    },
+    "de": {
+     "t": "Feuer und Verbrennung",
+     "g": "Lerne, warum Feuer drei Zutaten braucht und wie das beim Schutz hilft.",
+     "p": [
+      "Feuer braucht Brennstoff, Sauerstoff und Wärme: Das nennt man das Feuerdreieck.",
+      "Nimmt man eine Seite weg, geht das Feuer aus, und genau so arbeitet die Feuerwehr.",
+      "Verbrennen ist eine chemische Reaktion, die Wärme, Licht und neue Gase freisetzt."
+     ],
+     "q": "Warum kann ein Deckel auf dem Topf eine Flamme ersticken, was meinst du?",
+     "c": "Sieh dich in einem Raum um, ohne etwas anzuzünden, und finde Brennstoffe und Schutzgeräte wie Rauchmelder."
+    },
+    "es": {
+     "t": "Fuego y combustión",
+     "g": "Aprender por qué el fuego necesita tres ingredientes y cómo eso ayuda a estar seguros.",
+     "p": [
+      "El fuego necesita combustible, oxígeno y calor: es el triángulo del fuego.",
+      "Si quitas cualquiera de los lados, el fuego se apaga, y así trabajan los bomberos.",
+      "Quemar es una reacción química que desprende calor, luz y gases nuevos."
+     ],
+     "q": "¿Por qué crees que una tapa sobre una sartén puede apagar una llama?",
+     "c": "Mira una habitación, sin encender nada, y localiza combustibles y elementos de seguridad como detectores."
+    },
+    "fr": {
+     "t": "Le feu et la combustion",
+     "g": "Comprendre pourquoi le feu a besoin de trois ingrédients et en quoi cela protège.",
+     "p": [
+      "Le feu a besoin d'un combustible, d'oxygène et de chaleur : c'est le triangle du feu.",
+      "Si l'on retire un seul côté, le feu s'éteint, et c'est ainsi que travaillent les pompiers.",
+      "Brûler est une réaction chimique qui libère de la chaleur, de la lumière et de nouveaux gaz."
+     ],
+     "q": "Pourquoi un couvercle sur une casserole peut-il étouffer une flamme, à ton avis ?",
+     "c": "Regarde une pièce, sans rien allumer, et repère combustibles et protections comme les détecteurs."
+    },
+    "it": {
+     "t": "Fuoco e combustione",
+     "g": "Capire perché il fuoco ha bisogno di tre ingredienti e come questo aiuta la sicurezza.",
+     "p": [
+      "Il fuoco ha bisogno di combustibile, ossigeno e calore: è il triangolo del fuoco.",
+      "Se togli un lato qualsiasi il fuoco si spegne, ed è così che lavorano i vigili del fuoco.",
+      "Bruciare è una reazione chimica che libera calore, luce e nuovi gas."
+     ],
+     "q": "Perché secondo te un coperchio su una pentola può spegnere una fiamma?",
+     "c": "Guarda una stanza, senza accendere nulla, e individua combustibili e strumenti di sicurezza come i rilevatori."
+    },
+    "pt": {
+     "t": "Fogo e combustão",
+     "g": "Perceber porque o fogo precisa de três ingredientes e como isso ajuda na segurança.",
+     "p": [
+      "O fogo precisa de combustível, oxigénio e calor: é o triângulo do fogo.",
+      "Se tirares qualquer um dos lados, o fogo apaga-se, e é assim que os bombeiros trabalham.",
+      "Arder é uma reação química que liberta calor, luz e gases novos."
+     ],
+     "q": "Porque achas que uma tampa numa panela pode apagar uma chama?",
+     "c": "Observa uma divisão, sem acender nada, e localiza combustíveis e meios de segurança como detetores."
+    },
+    "pt_BR": {
+     "t": "Fogo e combustão",
+     "g": "Entender por que o fogo precisa de três ingredientes e como isso ajuda na segurança.",
+     "p": [
+      "O fogo precisa de combustível, oxigênio e calor: é o triângulo do fogo.",
+      "Se você tirar qualquer um dos lados, o fogo se apaga, e é assim que os bombeiros trabalham.",
+      "Queimar é uma reação química que libera calor, luz e gases novos."
+     ],
+     "q": "Por que você acha que uma tampa numa panela pode apagar uma chama?",
+     "c": "Observe um cômodo, sem acender nada, e localize combustíveis e itens de segurança como detectores."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Water, the amazing molecule",
+     "g": "Find out why water behaves in surprising ways that make life possible.",
+     "p": [
+      "Water expands when it freezes, so ice floats and lakes freeze from the top down.",
+      "Water dissolves more substances than almost any other liquid, so it carries nutrients.",
+      "Water holds heat well, which keeps oceans and our bodies at steady temperatures."
+     ],
+     "q": "Why do you think it matters that ice floats instead of sinking?",
+     "c": "Drop an ice cube in a glass of water and watch how much of it sits above the surface."
+    },
+    "de": {
+     "t": "Wasser, das erstaunliche Molekül",
+     "g": "Finde heraus, warum Wasser sich überraschend verhält und Leben möglich macht.",
+     "p": [
+      "Wasser dehnt sich beim Gefrieren aus, deshalb schwimmt Eis und Seen frieren von oben zu.",
+      "Wasser löst mehr Stoffe als fast jede andere Flüssigkeit und transportiert so Nährstoffe.",
+      "Wasser speichert Wärme gut, das hält Meere und unseren Körper auf gleichmäßiger Temperatur."
+     ],
+     "q": "Warum ist es wohl wichtig, dass Eis schwimmt und nicht untergeht?",
+     "c": "Wirf einen Eiswürfel in ein Glas Wasser und sieh, wie viel davon über der Oberfläche liegt."
+    },
+    "es": {
+     "t": "El agua, una molécula asombrosa",
+     "g": "Descubrir por qué el agua se comporta de forma sorprendente y hace posible la vida.",
+     "p": [
+      "El agua se expande al congelarse, por eso el hielo flota y los lagos se congelan de arriba abajo.",
+      "El agua disuelve más sustancias que casi cualquier otro líquido y así transporta nutrientes.",
+      "El agua retiene bien el calor, y eso mantiene estables los océanos y nuestro cuerpo."
+     ],
+     "q": "¿Por qué crees que es importante que el hielo flote en vez de hundirse?",
+     "c": "Echa un cubito de hielo en un vaso de agua y mira cuánto queda por encima de la superficie."
+    },
+    "fr": {
+     "t": "L'eau, une molécule étonnante",
+     "g": "Découvrir pourquoi l'eau se comporte de façon surprenante et rend la vie possible.",
+     "p": [
+      "L'eau se dilate en gelant : la glace flotte et les lacs gèlent de haut en bas.",
+      "L'eau dissout plus de substances que presque tout autre liquide et transporte ainsi des nutriments.",
+      "L'eau garde bien la chaleur, ce qui stabilise la température des océans et de notre corps."
+     ],
+     "q": "Pourquoi est-il important que la glace flotte au lieu de couler, à ton avis ?",
+     "c": "Mets un glaçon dans un verre d'eau et regarde quelle part dépasse de la surface."
+    },
+    "it": {
+     "t": "L'acqua, una molecola sorprendente",
+     "g": "Scoprire perché l'acqua si comporta in modo sorprendente e rende possibile la vita.",
+     "p": [
+      "L'acqua si espande quando gela, per questo il ghiaccio galleggia e i laghi gelano dall'alto verso il basso.",
+      "L'acqua scioglie più sostanze di quasi ogni altro liquido e così trasporta nutrienti.",
+      "L'acqua trattiene bene il calore, e questo mantiene stabili gli oceani e il nostro corpo."
+     ],
+     "q": "Perché pensi sia importante che il ghiaccio galleggi invece di affondare?",
+     "c": "Metti un cubetto di ghiaccio in un bicchiere d'acqua e guarda quanta parte sporge dalla superficie."
+    },
+    "pt": {
+     "t": "A água, uma molécula espantosa",
+     "g": "Descobrir porque a água se comporta de forma surpreendente e torna a vida possível.",
+     "p": [
+      "A água expande-se ao congelar, por isso o gelo flutua e os lagos congelam de cima para baixo.",
+      "A água dissolve mais substâncias do que quase qualquer outro líquido e assim transporta nutrientes.",
+      "A água guarda bem o calor, o que mantém estáveis os oceanos e o nosso corpo."
+     ],
+     "q": "Porque achas que é importante o gelo flutuar em vez de afundar?",
+     "c": "Põe um cubo de gelo num copo de água e vê quanto fica acima da superfície."
+    },
+    "pt_BR": {
+     "t": "A água, uma molécula incrível",
+     "g": "Descobrir por que a água se comporta de forma surpreendente e torna a vida possível.",
+     "p": [
+      "A água se expande ao congelar, por isso o gelo flutua e os lagos congelam de cima para baixo.",
+      "A água dissolve mais substâncias do que quase qualquer outro líquido e assim transporta nutrientes.",
+      "A água guarda bem o calor, o que mantém estáveis os oceanos e o nosso corpo."
+     ],
+     "q": "Por que você acha que é importante o gelo flutuar em vez de afundar?",
+     "c": "Coloque um cubo de gelo num copo de água e veja quanto fica acima da superfície."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: matter and the method",
+     "g": "Recap the scientific method, states of matter and atoms in a friendly quiz.",
+     "p": [
+      "The method: observe, ask, hypothesize, test fairly, conclude and share what you learned.",
+      "Matter comes as solid, liquid or gas, and every kind is built of atoms and molecules.",
+      "Physical changes keep the substance, while chemical changes make new ones."
+     ],
+     "q": "Which of the last 29 days surprised you most, and why?",
+     "c": "Explain to someone at home one thing you learned this month, using an example."
+    },
+    "de": {
+     "t": "Wiederholung: Materie und Methode",
+     "g": "Wiederhole Forschungsmethode, Aggregatzustände und Atome in einem lockeren Quiz.",
+     "p": [
+      "Die Methode: beobachten, fragen, vermuten, fair testen, schlussfolgern und das Gelernte teilen.",
+      "Materie gibt es fest, flüssig oder gasförmig, und jede Art besteht aus Atomen und Molekülen.",
+      "Bei physikalischen Veränderungen bleibt der Stoff, bei chemischen entstehen neue."
+     ],
+     "q": "Welcher der letzten 29 Tage hat dich am meisten überrascht, und warum?",
+     "c": "Erkläre jemandem zu Hause mit einem Beispiel, was du diesen Monat gelernt hast."
+    },
+    "es": {
+     "t": "Repaso: la materia y el método",
+     "g": "Repasar el método científico, los estados de la materia y los átomos con un quiz amistoso.",
+     "p": [
+      "El método: observar, preguntar, plantear una hipótesis, probar con justicia, concluir y compartir.",
+      "La materia es sólida, líquida o gaseosa, y toda ella está hecha de átomos y moléculas.",
+      "Los cambios físicos conservan la sustancia, los químicos crean sustancias nuevas."
+     ],
+     "q": "¿Cuál de los últimos 29 días te sorprendió más y por qué?",
+     "c": "Explica a alguien en casa algo que aprendiste este mes, con un ejemplo."
+    },
+    "fr": {
+     "t": "Révision : la matière et la méthode",
+     "g": "Revoir la méthode scientifique, les états de la matière et les atomes dans un quiz amical.",
+     "p": [
+      "La méthode : observer, questionner, formuler une hypothèse, tester équitablement, conclure et partager.",
+      "La matière est solide, liquide ou gazeuse, et toute est faite d'atomes et de molécules.",
+      "Les changements physiques gardent la substance, les chimiques en créent de nouvelles."
+     ],
+     "q": "Lequel de ces 29 derniers jours t'a le plus surpris, et pourquoi ?",
+     "c": "Explique à quelqu'un chez toi, avec un exemple, ce que tu as appris ce mois-ci."
+    },
+    "it": {
+     "t": "Ripasso: la materia e il metodo",
+     "g": "Ripassare il metodo scientifico, gli stati della materia e gli atomi in un quiz amichevole.",
+     "p": [
+      "Il metodo: osservare, chiedere, ipotizzare, provare in modo equo, concludere e condividere.",
+      "La materia è solida, liquida o gassosa, ed è tutta fatta di atomi e molecole.",
+      "I cambiamenti fisici mantengono la sostanza, quelli chimici ne creano di nuove."
+     ],
+     "q": "Quale degli ultimi 29 giorni ti ha sorpreso di più, e perché?",
+     "c": "Spiega a qualcuno in casa, con un esempio, una cosa imparata questo mese."
+    },
+    "pt": {
+     "t": "Revisão: a matéria e o método",
+     "g": "Rever o método científico, os estados da matéria e os átomos num quiz amigável.",
+     "p": [
+      "O método: observar, perguntar, formular uma hipótese, testar com justiça, concluir e partilhar.",
+      "A matéria é sólida, líquida ou gasosa, e toda ela é feita de átomos e moléculas.",
+      "As mudanças físicas mantêm a substância, as químicas criam substâncias novas."
+     ],
+     "q": "Qual dos últimos 29 dias te surpreendeu mais, e porquê?",
+     "c": "Explica a alguém em casa, com um exemplo, algo que aprendeste este mês."
+    },
+    "pt_BR": {
+     "t": "Revisão: a matéria e o método",
+     "g": "Rever o método científico, os estados da matéria e os átomos num quiz amigável.",
+     "p": [
+      "O método: observar, perguntar, formular uma hipótese, testar de forma justa, concluir e compartilhar.",
+      "A matéria é sólida, líquida ou gasosa, e toda ela é feita de átomos e moléculas.",
+      "As mudanças físicas mantêm a substância, as químicas criam substâncias novas."
+     ],
+     "q": "Qual dos últimos 29 dias mais surpreendeu você, e por quê?",
+     "c": "Explique a alguém em casa, com um exemplo, algo que você aprendeu este mês."
+    }
+   }
+  }
+ ]
+}

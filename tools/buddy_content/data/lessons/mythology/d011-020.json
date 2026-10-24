@@ -1,0 +1,835 @@
+{
+ "topic": "mythology",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Prometheus brings fire",
+     "g": "Meet the Titan who gave fire to humans and became a symbol of progress.",
+     "p": [
+      "Prometheus was a clever Titan who cared about the first humans and wanted to help them.",
+      "He hid a glowing ember in a fennel stalk and carried the gift of fire down from the gods.",
+      "With fire, people could cook, keep warm and make tools, so he stands for human progress."
+     ],
+     "q": "If you could bring one invention to the world, what would it be?",
+     "c": "Tell a friend how daily life would change without fire, in three sentences."
+    },
+    "de": {
+     "t": "Prometheus bringt das Feuer",
+     "g": "Lerne den Titanen kennen, der den Menschen das Feuer schenkte und zum Symbol des Fortschritts wurde.",
+     "p": [
+      "Prometheus war ein kluger Titan, der sich um die ersten Menschen sorgte und ihnen helfen wollte.",
+      "Er versteckte eine glühende Kohle in einem Fenchelstängel und brachte das Feuer von den Göttern herab.",
+      "Mit Feuer konnten Menschen kochen, sich wärmen und Werkzeuge bauen, darum steht er für Fortschritt."
+     ],
+     "q": "Welche eine Erfindung würdest du der Welt schenken, wenn du könntest?",
+     "c": "Erzähl einem Freund in drei Sätzen, wie der Alltag ohne Feuer aussähe."
+    },
+    "es": {
+     "t": "Prometeo trae el fuego",
+     "g": "Conoce al titán que regaló el fuego a los humanos y se volvió símbolo del progreso.",
+     "p": [
+      "Prometeo era un titán ingenioso que quería ayudar a los primeros seres humanos.",
+      "Escondió una brasa en una caña de hinojo y bajó el fuego de los dioses a la Tierra.",
+      "Con el fuego se podía cocinar, calentarse y hacer herramientas: por eso simboliza el progreso."
+     ],
+     "q": "Si pudieras regalar un invento al mundo, ¿cuál sería?",
+     "c": "Cuéntale a alguien en tres frases cómo cambiaría la vida diaria sin fuego."
+    },
+    "fr": {
+     "t": "Prométhée apporte le feu",
+     "g": "Rencontre le Titan qui offrit le feu aux humains et devint un symbole de progrès.",
+     "p": [
+      "Prométhée était un Titan rusé qui voulait aider les tout premiers humains.",
+      "Il cacha une braise dans une tige de fenouil et rapporta le feu des dieux sur la Terre.",
+      "Grâce au feu, on pouvait cuire, se chauffer et forger des outils : il incarne le progrès."
+     ],
+     "q": "Si tu pouvais offrir une invention au monde, laquelle choisirais-tu ?",
+     "c": "Explique à un ami en trois phrases comment la vie changerait sans feu."
+    },
+    "it": {
+     "t": "Prometeo porta il fuoco",
+     "g": "Conosci il Titano che donò il fuoco agli uomini e divenne simbolo del progresso.",
+     "p": [
+      "Prometeo era un Titano astuto che voleva aiutare i primi esseri umani.",
+      "Nascose una brace in una canna di finocchio e portò il fuoco dagli dèi alla Terra.",
+      "Con il fuoco si poteva cucinare, scaldarsi e fare attrezzi: per questo rappresenta il progresso."
+     ],
+     "q": "Se potessi regalare un'invenzione al mondo, quale sarebbe?",
+     "c": "Racconta a un amico in tre frasi come cambierebbe la vita senza il fuoco."
+    },
+    "pt": {
+     "t": "Prometeu traz o fogo",
+     "g": "Conhece o Titã que deu o fogo aos humanos e se tornou símbolo do progresso.",
+     "p": [
+      "Prometeu era um Titã engenhoso que queria ajudar os primeiros seres humanos.",
+      "Escondeu uma brasa num caule de funcho e trouxe o fogo dos deuses para a Terra.",
+      "Com o fogo podia cozinhar-se, aquecer-se e fazer ferramentas: por isso simboliza o progresso."
+     ],
+     "q": "Se pudesses oferecer uma invenção ao mundo, qual seria?",
+     "c": "Conta a um amigo, em três frases, como seria a vida sem fogo."
+    },
+    "pt_BR": {
+     "t": "Prometeu traz o fogo",
+     "g": "Conheça o Titã que deu o fogo aos humanos e virou símbolo do progresso.",
+     "p": [
+      "Prometeu era um Titã esperto que queria ajudar os primeiros seres humanos.",
+      "Ele escondeu uma brasa num talo de funcho e trouxe o fogo dos deuses para a Terra.",
+      "Com o fogo dava para cozinhar, se aquecer e fazer ferramentas: por isso ele simboliza o progresso."
+     ],
+     "q": "Se você pudesse dar uma invenção ao mundo, qual seria?",
+     "c": "Conte a um amigo, em três frases, como seria a vida sem fogo."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pandora's jar",
+     "g": "Explore curiosity, troubles let loose and the hope that stayed behind.",
+     "p": [
+      "In the Greek tale, Pandora was given a sealed jar, often pictured as a box, and told not to open it.",
+      "Curiosity won: she lifted the lid and many troubles flew out into the world.",
+      "Only hope stayed inside the rim, a reminder that people can keep going when times are hard."
+     ],
+     "q": "Do you think curiosity is more a gift or a risk? Why?",
+     "c": "Retell Pandora's story in exactly four sentences, ending on hope."
+    },
+    "de": {
+     "t": "Pandoras Gefäß",
+     "g": "Entdecke Neugier, entflogene Sorgen und die Hoffnung, die zurückblieb.",
+     "p": [
+      "In der griechischen Sage bekam Pandora ein verschlossenes Gefäß, oft als Büchse dargestellt, und durfte es nicht öffnen.",
+      "Die Neugier siegte: Sie hob den Deckel, und viele Sorgen flogen in die Welt hinaus.",
+      "Nur die Hoffnung blieb am Rand zurück, eine Erinnerung daran, dass man auch in schweren Zeiten weitermachen kann."
+     ],
+     "q": "Ist Neugier für dich eher ein Geschenk oder ein Risiko? Warum?",
+     "c": "Erzähle Pandoras Geschichte in genau vier Sätzen und ende mit der Hoffnung."
+    },
+    "es": {
+     "t": "La jarra de Pandora",
+     "g": "Explora la curiosidad, los males liberados y la esperanza que se quedó dentro.",
+     "p": [
+      "En el mito griego, Pandora recibió una jarra cerrada, a menudo dibujada como caja, y no debía abrirla.",
+      "Ganó la curiosidad: levantó la tapa y muchos males salieron volando por el mundo.",
+      "Solo la esperanza quedó dentro, un recordatorio de que se puede seguir adelante en los momentos difíciles."
+     ],
+     "q": "¿Crees que la curiosidad es más un regalo o un riesgo? ¿Por qué?",
+     "c": "Cuenta la historia de Pandora en cuatro frases exactas, terminando con la esperanza."
+    },
+    "fr": {
+     "t": "La jarre de Pandore",
+     "g": "Explore la curiosité, les maux libérés et l'espoir resté au fond.",
+     "p": [
+      "Dans le mythe grec, Pandore reçoit une jarre fermée, souvent dessinée comme une boîte, qu'elle ne doit pas ouvrir.",
+      "La curiosité l'emporte : elle soulève le couvercle et mille soucis s'envolent dans le monde.",
+      "Seul l'espoir reste au bord, rappel que l'on peut tenir bon dans les moments difficiles."
+     ],
+     "q": "Selon toi, la curiosité est-elle plutôt un cadeau ou un risque ? Pourquoi ?",
+     "c": "Raconte l'histoire de Pandore en quatre phrases exactement, en finissant sur l'espoir."
+    },
+    "it": {
+     "t": "Il vaso di Pandora",
+     "g": "Esplora la curiosità, i mali liberati e la speranza rimasta dentro.",
+     "p": [
+      "Nel mito greco Pandora riceve un vaso chiuso, spesso disegnato come scatola, e non deve aprirlo.",
+      "Vince la curiosità: solleva il coperchio e molti guai volano via nel mondo.",
+      "Solo la speranza resta sul bordo, a ricordare che si può andare avanti anche nei momenti difficili."
+     ],
+     "q": "Per te la curiosità è più un dono o un rischio? Perché?",
+     "c": "Racconta la storia di Pandora in esattamente quattro frasi, finendo con la speranza."
+    },
+    "pt": {
+     "t": "A jarra de Pandora",
+     "g": "Explora a curiosidade, os males libertados e a esperança que ficou lá dentro.",
+     "p": [
+      "No mito grego, Pandora recebeu uma jarra fechada, muitas vezes desenhada como caixa, que não devia abrir.",
+      "A curiosidade venceu: levantou a tampa e muitos males voaram pelo mundo.",
+      "Só a esperança ficou à beira da jarra, lembrando que se pode continuar mesmo em tempos difíceis."
+     ],
+     "q": "Achas que a curiosidade é mais uma dádiva ou um risco? Porquê?",
+     "c": "Conta a história de Pandora em exatamente quatro frases, a acabar na esperança."
+    },
+    "pt_BR": {
+     "t": "A jarra de Pandora",
+     "g": "Explore a curiosidade, os males soltos e a esperança que ficou lá dentro.",
+     "p": [
+      "No mito grego, Pandora recebeu uma jarra fechada, muitas vezes desenhada como caixa, que não devia abrir.",
+      "A curiosidade venceu: ela levantou a tampa e muitos males saíram voando pelo mundo.",
+      "Só a esperança ficou na beirada da jarra, lembrando que dá para seguir em frente em tempos difíceis."
+     ],
+     "q": "Você acha que a curiosidade é mais um presente ou um risco? Por quê?",
+     "c": "Conte a história de Pandora em exatamente quatro frases, terminando na esperança."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Heracles and his labours",
+     "g": "Meet the strongest Greek hero and his twelve famous tasks, from the lion to the golden apples.",
+     "p": [
+      "Heracles, son of Zeus, was famed for his strength and was given twelve labours to complete.",
+      "His tasks included the Nemean lion, the many-headed Hydra and fetching the golden apples.",
+      "He succeeded by using brains as well as muscle, so he became the model of perseverance."
+     ],
+     "q": "Which of the twelve labours would you find hardest, and why?",
+     "c": "Invent a thirteenth labour for Heracles and describe it in two sentences."
+    },
+    "de": {
+     "t": "Herakles und seine Arbeiten",
+     "g": "Lerne den stärksten griechischen Helden und seine zwölf berühmten Aufgaben kennen, vom Löwen bis zu den goldenen Äpfeln.",
+     "p": [
+      "Herakles, Sohn des Zeus, war für seine Kraft berühmt und bekam zwölf Aufgaben gestellt.",
+      "Dazu gehörten der Nemeische Löwe, die vielköpfige Hydra und das Holen der goldenen Äpfel.",
+      "Er siegte mit Köpfchen und nicht nur mit Muskeln, darum gilt er als Vorbild der Ausdauer."
+     ],
+     "q": "Welche der zwölf Aufgaben wäre für dich die schwerste, und warum?",
+     "c": "Erfinde eine dreizehnte Aufgabe für Herakles und beschreibe sie in zwei Sätzen."
+    },
+    "es": {
+     "t": "Heracles y sus trabajos",
+     "g": "Conoce al héroe griego más fuerte y sus doce famosas tareas, del león a las manzanas de oro.",
+     "p": [
+      "Heracles, hijo de Zeus, era famoso por su fuerza y recibió doce trabajos que cumplir.",
+      "Entre ellos estaban el león de Nemea, la Hidra de muchas cabezas y las manzanas de oro.",
+      "Triunfó usando la cabeza además de los músculos, y por eso es modelo de perseverancia."
+     ],
+     "q": "¿Cuál de los doce trabajos te parecería más difícil y por qué?",
+     "c": "Inventa un decimotercer trabajo para Heracles y descríbelo en dos frases."
+    },
+    "fr": {
+     "t": "Héraclès et ses travaux",
+     "g": "Rencontre le plus fort des héros grecs et ses douze célèbres épreuves, du lion aux pommes d'or.",
+     "p": [
+      "Héraclès, fils de Zeus, était célèbre pour sa force et reçut douze travaux à accomplir.",
+      "Parmi eux : le lion de Némée, l'Hydre aux nombreuses têtes et les pommes d'or.",
+      "Il réussit avec son intelligence autant qu'avec ses muscles : c'est un modèle de persévérance."
+     ],
+     "q": "Lequel des douze travaux te semblerait le plus difficile, et pourquoi ?",
+     "c": "Invente un treizième travail pour Héraclès et décris-le en deux phrases."
+    },
+    "it": {
+     "t": "Eracle e le sue fatiche",
+     "g": "Conosci il più forte degli eroi greci e le sue dodici celebri imprese, dal leone alle mele d'oro.",
+     "p": [
+      "Eracle, figlio di Zeus, era famoso per la sua forza e ricevette dodici fatiche da compiere.",
+      "Tra queste il leone di Nemea, l'Idra dalle molte teste e le mele d'oro.",
+      "Ci riuscì con l'ingegno oltre che con i muscoli, perciò è un modello di perseveranza."
+     ],
+     "q": "Quale delle dodici fatiche ti sembrerebbe la più difficile, e perché?",
+     "c": "Inventa una tredicesima fatica per Eracle e descrivila in due frasi."
+    },
+    "pt": {
+     "t": "Héracles e os seus trabalhos",
+     "g": "Conhece o herói grego mais forte e as suas doze famosas tarefas, do leão às maçãs de ouro.",
+     "p": [
+      "Héracles, filho de Zeus, era famoso pela força e recebeu doze trabalhos para cumprir.",
+      "Entre eles estavam o leão de Nemeia, a Hidra de muitas cabeças e as maçãs de ouro.",
+      "Venceu com inteligência e não só com músculos, por isso é modelo de perseverança."
+     ],
+     "q": "Qual dos doze trabalhos te pareceria mais difícil e porquê?",
+     "c": "Inventa um décimo terceiro trabalho para Héracles e descreve-o em duas frases."
+    },
+    "pt_BR": {
+     "t": "Héracles e seus trabalhos",
+     "g": "Conheça o herói grego mais forte e suas doze famosas tarefas, do leão às maçãs de ouro.",
+     "p": [
+      "Héracles, filho de Zeus, era famoso pela força e recebeu doze trabalhos para cumprir.",
+      "Entre eles estavam o leão de Nemeia, a Hidra de muitas cabeças e as maçãs de ouro.",
+      "Ele venceu com inteligência e não só com músculos, por isso é modelo de perseverança."
+     ],
+     "q": "Qual dos doze trabalhos você acharia mais difícil e por quê?",
+     "c": "Invente um décimo terceiro trabalho para Héracles e descreva em duas frases."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Theseus and the labyrinth",
+     "g": "Follow Ariadne's thread through the maze of Crete and learn about finding your way out.",
+     "p": [
+      "Theseus, a young prince of Athens, travelled to Crete to face the Minotaur in a giant maze.",
+      "Princess Ariadne gave him a ball of thread so he could mark his path inside the labyrinth.",
+      "Following the thread back, he found the exit, a tale about clever planning and help from friends."
+     ],
+     "q": "Have you ever been lost? What helped you find your way?",
+     "c": "Draw a tiny maze today and trace your own thread of the way out."
+    },
+    "de": {
+     "t": "Theseus und das Labyrinth",
+     "g": "Folge Ariadnes Faden durch das Labyrinth von Kreta und lerne, wie man den Ausgang findet.",
+     "p": [
+      "Theseus, ein junger Prinz aus Athen, reiste nach Kreta, um sich dem Minotaurus in einem riesigen Labyrinth zu stellen.",
+      "Prinzessin Ariadne gab ihm ein Garnknäuel, damit er seinen Weg im Labyrinth markieren konnte.",
+      "Am Faden zurück fand er den Ausgang, eine Geschichte über kluge Planung und Hilfe von Freunden."
+     ],
+     "q": "Hast du dich schon einmal verlaufen? Was half dir, den Weg zu finden?",
+     "c": "Zeichne heute ein kleines Labyrinth und folge deinem eigenen Faden zum Ausgang."
+    },
+    "es": {
+     "t": "Teseo y el laberinto",
+     "g": "Sigue el hilo de Ariadna por el laberinto de Creta y aprende a encontrar la salida.",
+     "p": [
+      "Teseo, joven príncipe de Atenas, viajó a Creta para enfrentarse al Minotauro en un enorme laberinto.",
+      "La princesa Ariadna le dio un ovillo de hilo para marcar su camino dentro del laberinto.",
+      "Siguiendo el hilo de vuelta, encontró la salida: un relato sobre planificar con astucia y ayuda de amigos."
+     ],
+     "q": "¿Alguna vez te has perdido? ¿Qué te ayudó a encontrar el camino?",
+     "c": "Dibuja hoy un laberinto pequeño y traza tu propio hilo hasta la salida."
+    },
+    "fr": {
+     "t": "Thésée et le labyrinthe",
+     "g": "Suis le fil d'Ariane dans le labyrinthe de Crète et apprends à trouver la sortie.",
+     "p": [
+      "Thésée, jeune prince d'Athènes, se rend en Crète pour affronter le Minotaure dans un immense labyrinthe.",
+      "La princesse Ariane lui donne une pelote de fil pour marquer son chemin à l'intérieur.",
+      "En suivant le fil au retour, il trouve la sortie : un récit sur la ruse bien préparée et l'aide des amis."
+     ],
+     "q": "T'es-tu déjà perdu ? Qu'est-ce qui t'a aidé à retrouver ton chemin ?",
+     "c": "Dessine aujourd'hui un petit labyrinthe et trace ton propre fil jusqu'à la sortie."
+    },
+    "it": {
+     "t": "Teseo e il labirinto",
+     "g": "Segui il filo di Arianna nel labirinto di Creta e impara a trovare l'uscita.",
+     "p": [
+      "Teseo, giovane principe di Atene, andò a Creta per affrontare il Minotauro in un enorme labirinto.",
+      "La principessa Arianna gli diede un gomitolo di filo per segnare il suo percorso nel labirinto.",
+      "Seguendo il filo a ritroso trovò l'uscita: una storia su piani intelligenti e sull'aiuto degli amici."
+     ],
+     "q": "Ti sei mai perso? Cosa ti ha aiutato a ritrovare la strada?",
+     "c": "Disegna oggi un piccolo labirinto e traccia il tuo filo verso l'uscita."
+    },
+    "pt": {
+     "t": "Teseu e o labirinto",
+     "g": "Segue o fio de Ariadne pelo labirinto de Creta e aprende a encontrar a saída.",
+     "p": [
+      "Teseu, jovem príncipe de Atenas, foi a Creta enfrentar o Minotauro num enorme labirinto.",
+      "A princesa Ariadne deu-lhe um novelo de fio para marcar o caminho dentro do labirinto.",
+      "Seguindo o fio de volta, achou a saída: uma história sobre planear com astúcia e ajuda de amigos."
+     ],
+     "q": "Já te perdeste alguma vez? O que te ajudou a encontrar o caminho?",
+     "c": "Desenha hoje um pequeno labirinto e traça o teu fio até à saída."
+    },
+    "pt_BR": {
+     "t": "Teseu e o labirinto",
+     "g": "Siga o fio de Ariadne pelo labirinto de Creta e aprenda a encontrar a saída.",
+     "p": [
+      "Teseu, jovem príncipe de Atenas, foi a Creta enfrentar o Minotauro num enorme labirinto.",
+      "A princesa Ariadne deu a ele um novelo de linha para marcar o caminho dentro do labirinto.",
+      "Seguindo a linha de volta, ele achou a saída: uma história sobre planejar com astúcia e contar com amigos."
+     ],
+     "q": "Você já se perdeu alguma vez? O que ajudou a achar o caminho?",
+     "c": "Desenhe hoje um pequeno labirinto e trace seu próprio fio até a saída."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Daedalus and Icarus",
+     "g": "Hear about wings of wax and feathers and the lesson of flying too close to the sun.",
+     "p": [
+      "Daedalus was a brilliant inventor who built wings from feathers and wax for himself and his son Icarus.",
+      "He warned Icarus to fly a middle path, not too high near the sun and not too low near the sea.",
+      "Excited by the sky, Icarus flew too high, and the story reminds us to listen to good advice."
+     ],
+     "q": "What is something you were excited about that needed a little patience?",
+     "c": "Describe in two sentences the best invention you could build from simple materials."
+    },
+    "de": {
+     "t": "Dädalus und Ikarus",
+     "g": "Höre von Flügeln aus Wachs und Federn und von der Lehre vom Flug zu nah an der Sonne.",
+     "p": [
+      "Dädalus war ein genialer Erfinder und baute für sich und seinen Sohn Ikarus Flügel aus Federn und Wachs.",
+      "Er riet Ikarus, den mittleren Weg zu fliegen, nicht zu hoch zur Sonne und nicht zu tief zum Meer.",
+      "Vom Himmel begeistert flog Ikarus zu hoch; die Sage mahnt uns, guten Rat zu beherzigen."
+     ],
+     "q": "Worauf warst du schon einmal begeistert und brauchtest doch etwas Geduld?",
+     "c": "Beschreibe in zwei Sätzen die beste Erfindung, die du aus einfachen Materialien bauen könntest."
+    },
+    "es": {
+     "t": "Dédalo e Ícaro",
+     "g": "Escucha la historia de las alas de cera y plumas y la lección de volar demasiado cerca del sol.",
+     "p": [
+      "Dédalo era un inventor genial que construyó alas de plumas y cera para él y su hijo Ícaro.",
+      "Advirtió a Ícaro que volara por el camino medio: ni muy alto cerca del sol ni muy bajo cerca del mar.",
+      "Emocionado por el cielo, Ícaro voló demasiado alto: el mito nos recuerda escuchar buenos consejos."
+     ],
+     "q": "¿Qué cosa te ilusionó mucho pero necesitaba un poco de paciencia?",
+     "c": "Describe en dos frases el mejor invento que podrías construir con materiales sencillos."
+    },
+    "fr": {
+     "t": "Dédale et Icare",
+     "g": "Découvre les ailes de cire et de plumes et la leçon du vol trop près du soleil.",
+     "p": [
+      "Dédale, inventeur génial, fabriqua des ailes de plumes et de cire pour lui et son fils Icare.",
+      "Il conseilla à Icare de voler à mi-hauteur : ni trop haut près du soleil, ni trop bas près de la mer.",
+      "Grisé par le ciel, Icare monta trop haut : le mythe nous invite à écouter les bons conseils."
+     ],
+     "q": "Qu'est-ce qui t'a enthousiasmé un jour mais demandait un peu de patience ?",
+     "c": "Décris en deux phrases la meilleure invention que tu pourrais construire avec des matériaux simples."
+    },
+    "it": {
+     "t": "Dedalo e Icaro",
+     "g": "Scopri le ali di cera e piume e la lezione del volo troppo vicino al sole.",
+     "p": [
+      "Dedalo era un inventore geniale e costruì ali di piume e cera per sé e per il figlio Icaro.",
+      "Avvertì Icaro di volare a metà altezza: non troppo in alto verso il sole né troppo in basso verso il mare.",
+      "Entusiasta del cielo, Icaro salì troppo: il mito ci ricorda di ascoltare i buoni consigli."
+     ],
+     "q": "Di cosa eri entusiasta ma serviva un po' di pazienza?",
+     "c": "Descrivi in due frasi la migliore invenzione che costruiresti con materiali semplici."
+    },
+    "pt": {
+     "t": "Dédalo e Ícaro",
+     "g": "Descobre as asas de cera e penas e a lição de voar demasiado perto do sol.",
+     "p": [
+      "Dédalo era um inventor genial que construiu asas de penas e cera para si e para o filho Ícaro.",
+      "Avisou Ícaro de que voasse a meia altura: nem muito alto junto ao sol nem muito baixo junto ao mar.",
+      "Entusiasmado com o céu, Ícaro subiu demais: o mito lembra-nos de ouvir bons conselhos."
+     ],
+     "q": "O que te entusiasmou muito mas pedia um pouco de paciência?",
+     "c": "Descreve em duas frases a melhor invenção que farias com materiais simples."
+    },
+    "pt_BR": {
+     "t": "Dédalo e Ícaro",
+     "g": "Descubra as asas de cera e penas e a lição de voar perto demais do sol.",
+     "p": [
+      "Dédalo era um inventor genial que construiu asas de penas e cera para si e para o filho Ícaro.",
+      "Ele avisou Ícaro para voar a meia altura: nem muito alto perto do sol nem muito baixo perto do mar.",
+      "Empolgado com o céu, Ícaro subiu demais: o mito lembra a gente de ouvir bons conselhos."
+     ],
+     "q": "O que te empolgou muito mas pedia um pouco de paciência?",
+     "c": "Descreva em duas frases a melhor invenção que você faria com materiais simples."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Perseus and Andromeda",
+     "g": "Follow a hero with winged sandals and a mirror shield who rescues a princess from a sea monster.",
+     "p": [
+      "Perseus, a young hero, received winged sandals, a shiny shield and a bag from helpful gods and nymphs.",
+      "Using the shield as a mirror, he avoided Medusa's gaze and safely carried home her famous head.",
+      "On the way, he rescued Princess Andromeda from a sea monster, and the two sailed home together."
+     ],
+     "q": "Which gift would you choose for a quest: sandals, shield or bag?",
+     "c": "Retell the story as a short bedtime tale for a child in three sentences."
+    },
+    "de": {
+     "t": "Perseus und Andromeda",
+     "g": "Folge einem Helden mit Flügelsandalen und Spiegelschild, der eine Prinzessin vor einem Meeresungeheuer rettet.",
+     "p": [
+      "Der junge Held Perseus erhielt von hilfsbereiten Göttern und Nymphen Flügelsandalen, einen blanken Schild und eine Tasche.",
+      "Mit dem Schild als Spiegel mied er Medusas Blick und brachte sicher ihr berühmtes Haupt heim.",
+      "Unterwegs rettete er Prinzessin Andromeda vor einem Meeresungeheuer, und beide fuhren gemeinsam heim."
+     ],
+     "q": "Welches Geschenk würdest du für eine Reise wählen: Sandalen, Schild oder Tasche?",
+     "c": "Erzähle die Geschichte in drei Sätzen als kurzes Gutenachtmärchen für ein Kind."
+    },
+    "es": {
+     "t": "Perseo y Andrómeda",
+     "g": "Sigue a un héroe con sandalias aladas y escudo-espejo que salva a una princesa de un monstruo marino.",
+     "p": [
+      "El joven héroe Perseo recibió de dioses y ninfas unas sandalias aladas, un escudo pulido y una bolsa.",
+      "Usó el escudo como espejo para evitar la mirada de Medusa y llevó a casa su famosa cabeza.",
+      "De camino salvó a la princesa Andrómeda de un monstruo marino y regresaron juntos a casa."
+     ],
+     "q": "¿Qué regalo elegirías para una aventura: sandalias, escudo o bolsa?",
+     "c": "Cuenta la historia en tres frases como un cuento corto para dormir a un niño."
+    },
+    "fr": {
+     "t": "Persée et Andromède",
+     "g": "Suis un héros aux sandales ailées et au bouclier-miroir qui sauve une princesse d'un monstre marin.",
+     "p": [
+      "Le jeune Persée reçut de dieux et de nymphes des sandales ailées, un bouclier poli et une besace.",
+      "Avec le bouclier comme miroir, il évita le regard de Méduse et rapporta sa célèbre tête.",
+      "En chemin, il sauva la princesse Andromède d'un monstre marin et ils rentrèrent ensemble."
+     ],
+     "q": "Quel cadeau choisirais-tu pour une quête : sandales, bouclier ou besace ?",
+     "c": "Raconte l'histoire en trois phrases comme un petit conte du soir pour un enfant."
+    },
+    "it": {
+     "t": "Perseo e Andromeda",
+     "g": "Segui un eroe con sandali alati e scudo-specchio che salva una principessa da un mostro marino.",
+     "p": [
+      "Il giovane Perseo ricevette da dèi e ninfe sandali alati, uno scudo lucido e una sacca.",
+      "Usò lo scudo come specchio per evitare lo sguardo di Medusa e portò a casa la sua famosa testa.",
+      "Lungo la strada salvò la principessa Andromeda da un mostro marino e tornarono insieme."
+     ],
+     "q": "Quale dono sceglieresti per un'impresa: sandali, scudo o sacca?",
+     "c": "Racconta la storia in tre frasi come una breve favola della buonanotte."
+    },
+    "pt": {
+     "t": "Perseu e Andrómeda",
+     "g": "Segue um herói de sandálias aladas e escudo-espelho que salva uma princesa de um monstro marinho.",
+     "p": [
+      "O jovem Perseu recebeu de deuses e ninfas sandálias aladas, um escudo polido e uma bolsa.",
+      "Usou o escudo como espelho para evitar o olhar de Medusa e levou para casa a sua famosa cabeça.",
+      "No caminho salvou a princesa Andrómeda de um monstro marinho e voltaram juntos para casa."
+     ],
+     "q": "Que presente escolherias para uma missão: sandálias, escudo ou bolsa?",
+     "c": "Conta a história em três frases como um pequeno conto de embalar."
+    },
+    "pt_BR": {
+     "t": "Perseu e Andrômeda",
+     "g": "Acompanhe um herói de sandálias aladas e escudo-espelho que salva uma princesa de um monstro marinho.",
+     "p": [
+      "O jovem Perseu recebeu de deuses e ninfas sandálias aladas, um escudo polido e uma bolsa.",
+      "Ele usou o escudo como espelho para evitar o olhar de Medusa e levou para casa a famosa cabeça.",
+      "No caminho, salvou a princesa Andrômeda de um monstro marinho e eles voltaram juntos."
+     ],
+     "q": "Que presente você escolheria para uma missão: sandálias, escudo ou bolsa?",
+     "c": "Conte a história em três frases como um conto curto para dormir."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Jason and the Argonauts",
+     "g": "Join a ship full of heroes sailing to the edge of the world for the Golden Fleece.",
+     "p": [
+      "Jason gathered a crew of heroes and built the ship Argo to fetch a magical golden ram's fleece.",
+      "The Argonauts met talking birds, clashing rocks and tricky kings on their long voyage.",
+      "Teamwork was the real treasure: each hero brought a different talent, from music to sharp eyes."
+     ],
+     "q": "If you built a crew for a big adventure, which three friends would you pick?",
+     "c": "List the three talents your own crew would need and name your ship."
+    },
+    "de": {
+     "t": "Jason und die Argonauten",
+     "g": "Steig auf ein Schiff voller Helden, das zum Rand der Welt nach dem Goldenen Vlies segelt.",
+     "p": [
+      "Jason sammelte eine Mannschaft von Helden und baute das Schiff Argo, um das goldene Widderfell zu holen.",
+      "Die Argonauten trafen auf sprechende Vögel, zusammenschlagende Felsen und listige Könige.",
+      "Teamarbeit war der wahre Schatz: Jeder Held brachte ein anderes Talent mit, von Musik bis Adleraugen."
+     ],
+     "q": "Wenn du eine Mannschaft für ein großes Abenteuer bildest, welche drei Freunde wählst du?",
+     "c": "Nenne die drei Talente, die deine Crew bräuchte, und gib deinem Schiff einen Namen."
+    },
+    "es": {
+     "t": "Jasón y los argonautas",
+     "g": "Sube a un barco lleno de héroes rumbo al fin del mundo en busca del Vellocino de Oro.",
+     "p": [
+      "Jasón reunió una tripulación de héroes y construyó la nave Argo para traer el vellocino de un carnero mágico.",
+      "Los argonautas se toparon con aves parlantes, rocas que chocaban y reyes astutos en su largo viaje.",
+      "El verdadero tesoro fue el trabajo en equipo: cada héroe aportó un talento, de la música a la vista aguda."
+     ],
+     "q": "Si formaras una tripulación para una gran aventura, ¿qué tres amigos elegirías?",
+     "c": "Anota los tres talentos que necesitaría tu tripulación y ponle nombre a tu barco."
+    },
+    "fr": {
+     "t": "Jason et les Argonautes",
+     "g": "Embarque avec des héros vers le bout du monde à la recherche de la Toison d'or.",
+     "p": [
+      "Jason réunit un équipage de héros et construisit le navire Argo pour rapporter la toison d'un bélier magique.",
+      "Les Argonautes croisèrent des oiseaux parlants, des rochers qui s'entrechoquent et des rois rusés.",
+      "Le vrai trésor fut le travail d'équipe : chaque héros avait un talent, de la musique aux yeux perçants."
+     ],
+     "q": "Si tu formais un équipage pour une grande aventure, quels trois amis choisirais-tu ?",
+     "c": "Note les trois talents dont ton équipage aurait besoin et baptise ton navire."
+    },
+    "it": {
+     "t": "Giasone e gli Argonauti",
+     "g": "Sali su una nave piena di eroi diretta ai confini del mondo per il Vello d'oro.",
+     "p": [
+      "Giasone radunò un equipaggio di eroi e costruì la nave Argo per prendere il vello di un ariete magico.",
+      "Gli Argonauti incontrarono uccelli parlanti, rocce che si scontravano e re astuti nel lungo viaggio.",
+      "Il vero tesoro fu il lavoro di squadra: ogni eroe portava un talento, dalla musica alla vista acuta."
+     ],
+     "q": "Se formassi un equipaggio per una grande avventura, quali tre amici sceglieresti?",
+     "c": "Scrivi i tre talenti che servirebbero al tuo equipaggio e dai un nome alla nave."
+    },
+    "pt": {
+     "t": "Jasão e os Argonautas",
+     "g": "Embarca num navio cheio de heróis rumo ao fim do mundo, atrás do Velo de Ouro.",
+     "p": [
+      "Jasão reuniu uma tripulação de heróis e construiu a nau Argo para buscar o velo de um carneiro mágico.",
+      "Os argonautas encontraram aves falantes, rochas que se chocavam e reis matreiros na longa viagem.",
+      "O verdadeiro tesouro foi o trabalho de equipa: cada herói trouxe um talento, da música à vista aguçada."
+     ],
+     "q": "Se formasses uma tripulação para uma grande aventura, que três amigos escolherias?",
+     "c": "Escreve os três talentos que a tua tripulação precisaria e dá nome ao teu barco."
+    },
+    "pt_BR": {
+     "t": "Jasão e os Argonautas",
+     "g": "Embarque num navio cheio de heróis rumo ao fim do mundo atrás do Velocino de Ouro.",
+     "p": [
+      "Jasão reuniu uma tripulação de heróis e construiu a nau Argo para buscar o velocino de um carneiro mágico.",
+      "Os argonautas encontraram aves falantes, rochas que se chocavam e reis espertos na longa viagem.",
+      "O verdadeiro tesouro foi o trabalho em equipe: cada herói trouxe um talento, da música à visão aguçada."
+     ],
+     "q": "Se você montasse uma tripulação para uma grande aventura, quais três amigos escolheria?",
+     "c": "Escreva os três talentos que sua tripulação precisaria e dê nome ao seu barco."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Odysseus, the clever traveller",
+     "g": "Meet a hero who wins the long voyage home from Troy with wit rather than strength.",
+     "p": [
+      "Odysseus, king of Ithaca, spent ten years sailing home after the Trojan War, facing many surprises.",
+      "He was famous for cleverness: the wooden horse that ended the war was his idea.",
+      "The Odyssey, an ancient Greek poem attributed to Homer, tells his journey and still inspires writers today."
+     ],
+     "q": "When did a clever idea help you more than strength or speed?",
+     "c": "Come up with a clever solution to a small everyday problem and tell it like a hero."
+    },
+    "de": {
+     "t": "Odysseus, der kluge Reisende",
+     "g": "Lerne einen Helden kennen, der die lange Heimreise von Troja mit Witz statt Kraft meistert.",
+     "p": [
+      "Odysseus, König von Ithaka, brauchte nach dem Trojanischen Krieg zehn Jahre für die Heimfahrt voller Überraschungen.",
+      "Er war für seine Klugheit berühmt: Das hölzerne Pferd, das den Krieg beendete, war seine Idee.",
+      "Die Odyssee, ein altgriechisches Epos, das Homer zugeschrieben wird, erzählt seine Reise und inspiriert bis heute."
+     ],
+     "q": "Wann half dir eine kluge Idee mehr als Kraft oder Tempo?",
+     "c": "Finde eine clevere Lösung für ein kleines Alltagsproblem und erzähle sie wie ein Held."
+    },
+    "es": {
+     "t": "Odiseo, el viajero astuto",
+     "g": "Conoce a un héroe que vence en el largo regreso de Troya con ingenio y no con fuerza.",
+     "p": [
+      "Odiseo, rey de Ítaca, tardó diez años en volver a casa tras la guerra de Troya, entre muchas sorpresas.",
+      "Era famoso por su astucia: el caballo de madera que acabó la guerra fue idea suya.",
+      "La Odisea, poema griego antiguo atribuido a Homero, cuenta su viaje y aún inspira a escritores."
+     ],
+     "q": "¿Cuándo te ayudó más una idea ingeniosa que la fuerza o la rapidez?",
+     "c": "Piensa una solución ingeniosa a un pequeño problema cotidiano y cuéntala como un héroe."
+    },
+    "fr": {
+     "t": "Ulysse, le voyageur rusé",
+     "g": "Rencontre un héros qui réussit le long retour de Troie par la ruse plutôt que par la force.",
+     "p": [
+      "Ulysse, roi d'Ithaque, mit dix ans à rentrer chez lui après la guerre de Troie, au fil des surprises.",
+      "Il était célèbre pour son ingéniosité : le cheval de bois qui mit fin à la guerre était son idée.",
+      "L'Odyssée, poème grec antique attribué à Homère, raconte son voyage et inspire encore les auteurs."
+     ],
+     "q": "Quand une idée astucieuse t'a-t-elle plus aidé que la force ou la vitesse ?",
+     "c": "Trouve une solution astucieuse à un petit souci du quotidien et raconte-la en héros."
+    },
+    "it": {
+     "t": "Ulisse, il viaggiatore astuto",
+     "g": "Conosci un eroe che vince il lungo ritorno da Troia con l'ingegno più che con la forza.",
+     "p": [
+      "Ulisse, re di Itaca, impiegò dieci anni a tornare a casa dopo la guerra di Troia, tra mille sorprese.",
+      "Era famoso per la sua astuzia: il cavallo di legno che chiuse la guerra fu una sua idea.",
+      "L'Odissea, poema greco antico attribuito a Omero, racconta il suo viaggio e ispira ancora gli scrittori."
+     ],
+     "q": "Quando un'idea astuta ti ha aiutato più della forza o della velocità?",
+     "c": "Trova una soluzione astuta a un piccolo problema quotidiano e raccontala da eroe."
+    },
+    "pt": {
+     "t": "Ulisses, o viajante astuto",
+     "g": "Conhece um herói que vence a longa viagem de regresso de Troia com engenho e não com força.",
+     "p": [
+      "Ulisses, rei de Ítaca, levou dez anos a voltar a casa depois da guerra de Troia, entre muitas surpresas.",
+      "Era famoso pela astúcia: o cavalo de madeira que acabou a guerra foi ideia sua.",
+      "A Odisseia, poema grego antigo atribuído a Homero, conta a sua viagem e ainda inspira escritores."
+     ],
+     "q": "Quando é que uma ideia astuta te ajudou mais do que a força ou a rapidez?",
+     "c": "Encontra uma solução astuta para um pequeno problema do dia a dia e conta-a como um herói."
+    },
+    "pt_BR": {
+     "t": "Ulisses, o viajante astuto",
+     "g": "Conheça um herói que vence a longa volta de Troia com engenho e não com força.",
+     "p": [
+      "Ulisses, rei de Ítaca, levou dez anos para voltar para casa depois da guerra de Troia, entre muitas surpresas.",
+      "Ele era famoso pela astúcia: o cavalo de madeira que acabou a guerra foi ideia dele.",
+      "A Odisseia, poema grego antigo atribuído a Homero, conta a viagem dele e ainda inspira escritores."
+     ],
+     "q": "Quando uma ideia esperta te ajudou mais do que força ou rapidez?",
+     "c": "Pense numa solução esperta para um probleminha do dia a dia e conte como um herói."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Odysseus and the Cyclops",
+     "g": "Learn how a clever fake name, Nobody, helped Odysseus escape a one-eyed giant.",
+     "p": [
+      "Odysseus and his crew were trapped in a cave by Polyphemus, a giant shepherd with one eye.",
+      "Odysseus told the giant his name was Nobody, so when the giant called for help, no one came.",
+      "The crew slipped out hidden under the sheep, proving that a calm plan beats panic."
+     ],
+     "q": "If you had to escape with only your wits, what would your plan be?",
+     "c": "Retell the Nobody trick to someone and see if they laugh at the wordplay."
+    },
+    "de": {
+     "t": "Odysseus und der Zyklop",
+     "g": "Erfahre, wie ein kluger falscher Name, Niemand, Odysseus vor einem einäugigen Riesen rettete.",
+     "p": [
+      "Odysseus und seine Gefährten saßen in der Höhle des Polyphem, eines einäugigen Riesen und Schäfers, fest.",
+      "Odysseus nannte sich Niemand; als der Riese um Hilfe rief, kam deshalb niemand.",
+      "Die Gefährten entkamen unter Schafen versteckt: Ein ruhiger Plan schlägt Panik."
+     ],
+     "q": "Wie würdest du fliehen, wenn du nur deinen Verstand hättest?",
+     "c": "Erzähle jemandem den Niemand-Trick und schau, ob er über das Wortspiel lacht."
+    },
+    "es": {
+     "t": "Odiseo y el cíclope",
+     "g": "Descubre cómo un nombre falso e ingenioso, Nadie, salvó a Odiseo de un gigante de un solo ojo.",
+     "p": [
+      "Odiseo y sus compañeros quedaron atrapados en la cueva de Polifemo, un gigante pastor con un solo ojo.",
+      "Odiseo dijo llamarse Nadie, y cuando el gigante pidió ayuda, nadie acudió.",
+      "Los compañeros salieron escondidos bajo las ovejas: un plan sereno vence al pánico."
+     ],
+     "q": "Si tuvieras que escapar solo con tu ingenio, ¿cuál sería tu plan?",
+     "c": "Cuenta el truco de Nadie a alguien y mira si se ríe con el juego de palabras."
+    },
+    "fr": {
+     "t": "Ulysse et le Cyclope",
+     "g": "Découvre comment un faux nom malin, Personne, sauva Ulysse d'un géant borgne.",
+     "p": [
+      "Ulysse et ses compagnons furent enfermés dans la grotte de Polyphème, géant berger n'ayant qu'un œil.",
+      "Ulysse dit s'appeler Personne : quand le géant appela à l'aide, personne ne vint.",
+      "Les compagnons sortirent cachés sous les moutons : un plan calme vaut mieux que la panique."
+     ],
+     "q": "Si tu devais t'évader avec ta seule ruse, quel serait ton plan ?",
+     "c": "Raconte la ruse de Personne à quelqu'un et vois s'il rit du jeu de mots."
+    },
+    "it": {
+     "t": "Ulisse e il Ciclope",
+     "g": "Scopri come un falso nome astuto, Nessuno, salvò Ulisse da un gigante con un occhio solo.",
+     "p": [
+      "Ulisse e i compagni restarono intrappolati nella grotta di Polifemo, gigante pastore con un occhio solo.",
+      "Ulisse disse di chiamarsi Nessuno: quando il gigante chiese aiuto, nessuno venne.",
+      "I compagni uscirono nascosti sotto le pecore: un piano calmo batte il panico."
+     ],
+     "q": "Se dovessi fuggire solo con l'astuzia, quale sarebbe il tuo piano?",
+     "c": "Racconta il trucco di Nessuno a qualcuno e guarda se ride per il gioco di parole."
+    },
+    "pt": {
+     "t": "Ulisses e o Ciclope",
+     "g": "Descobre como um nome falso e esperto, Ninguém, salvou Ulisses de um gigante de um só olho.",
+     "p": [
+      "Ulisses e os companheiros ficaram presos na gruta de Polifemo, um gigante pastor com um só olho.",
+      "Ulisses disse chamar-se Ninguém; quando o gigante pediu ajuda, ninguém veio.",
+      "Os companheiros saíram escondidos debaixo das ovelhas: um plano calmo vence o pânico."
+     ],
+     "q": "Se tivesses de escapar só com a esperteza, qual seria o teu plano?",
+     "c": "Conta o truque do Ninguém a alguém e vê se se ri do jogo de palavras."
+    },
+    "pt_BR": {
+     "t": "Ulisses e o Ciclope",
+     "g": "Descubra como um nome falso e esperto, Ninguém, salvou Ulisses de um gigante de um olho só.",
+     "p": [
+      "Ulisses e os companheiros ficaram presos na caverna de Polifemo, um gigante pastor de um olho só.",
+      "Ulisses disse que se chamava Ninguém; quando o gigante pediu socorro, ninguém apareceu.",
+      "Os companheiros saíram escondidos embaixo das ovelhas: um plano calmo vence o pânico."
+     ],
+     "q": "Se você tivesse que escapar só com a esperteza, qual seria seu plano?",
+     "c": "Conte o truque do Ninguém a alguém e veja se ri do jogo de palavras."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Circe, the Sirens and Penelope",
+     "g": "Enjoy more Odyssey adventures and the faithful weaver who waited at home.",
+     "p": [
+      "Circe was an enchantress who turned visitors into animals, but Odysseus won her respect and she helped him.",
+      "To pass the Sirens, whose song lured sailors, he had the crew plug their ears and tied himself to the mast.",
+      "At home, Penelope kept her wits too, weaving a cloth by day and secretly unpicking it by night to buy time."
+     ],
+     "q": "Which of the three, Circe, the Sirens or Penelope, intrigues you most?",
+     "c": "Hum or name a song so beautiful you could not stop listening to it."
+    },
+    "de": {
+     "t": "Kirke, die Sirenen und Penelope",
+     "g": "Erlebe weitere Abenteuer der Odyssee und die treue Weberin, die zu Hause wartete.",
+     "p": [
+      "Kirke war eine Zauberin, die Besucher in Tiere verwandelte; Odysseus gewann ihren Respekt, und sie half ihm.",
+      "Um an den Sirenen vorbeizukommen, deren Gesang Seeleute lockte, verstopfte er den Gefährten die Ohren und ließ sich am Mast festbinden.",
+      "Zu Hause war auch Penelope klug: Tagsüber webte sie ein Tuch, nachts trennte sie es heimlich auf, um Zeit zu gewinnen."
+     ],
+     "q": "Wer von den dreien, Kirke, die Sirenen oder Penelope, fasziniert dich am meisten?",
+     "c": "Summe oder nenne ein Lied, das so schön ist, dass du nicht aufhören kannst zuzuhören."
+    },
+    "es": {
+     "t": "Circe, las sirenas y Penélope",
+     "g": "Disfruta de más aventuras de la Odisea y de la fiel tejedora que esperaba en casa.",
+     "p": [
+      "Circe era una hechicera que convertía a los visitantes en animales, pero Odiseo ganó su respeto y ella lo ayudó.",
+      "Para pasar junto a las sirenas, cuyo canto atraía a los marineros, tapó los oídos de la tripulación y se ató al mástil.",
+      "En casa, Penélope también usó el ingenio: tejía una tela de día y la deshacía en secreto de noche para ganar tiempo."
+     ],
+     "q": "¿Cuál de las tres, Circe, las sirenas o Penélope, te intriga más?",
+     "c": "Tararea o nombra una canción tan bonita que no podrías dejar de escucharla."
+    },
+    "fr": {
+     "t": "Circé, les Sirènes et Pénélope",
+     "g": "Savoure d'autres aventures de l'Odyssée et la fidèle tisseuse qui attendait à la maison.",
+     "p": [
+      "Circé, une enchanteresse, changeait ses visiteurs en animaux, mais Ulysse gagna son respect et elle l'aida.",
+      "Pour passer devant les Sirènes, dont le chant attirait les marins, il boucha les oreilles de l'équipage et se fit attacher au mât.",
+      "À la maison, Pénélope fit aussi preuve de ruse : elle tissait le jour et défaisait son ouvrage la nuit pour gagner du temps."
+     ],
+     "q": "Laquelle des trois, Circé, les Sirènes ou Pénélope, t'intrigue le plus ?",
+     "c": "Fredonne ou cite une chanson si belle que tu ne peux pas cesser de l'écouter."
+    },
+    "it": {
+     "t": "Circe, le Sirene e Penelope",
+     "g": "Goditi altre avventure dell'Odissea e la fedele tessitrice che aspettava a casa.",
+     "p": [
+      "Circe era un'incantatrice che trasformava i visitatori in animali, ma Ulisse conquistò il suo rispetto e lei lo aiutò.",
+      "Per passare accanto alle Sirene, il cui canto attirava i marinai, tappò le orecchie all'equipaggio e si fece legare all'albero.",
+      "A casa anche Penelope usò l'ingegno: tesseva una tela di giorno e la disfaceva di notte per guadagnare tempo."
+     ],
+     "q": "Quale delle tre, Circe, le Sirene o Penelope, ti incuriosisce di più?",
+     "c": "Canticchia o nomina una canzone così bella da non smettere di ascoltarla."
+    },
+    "pt": {
+     "t": "Circe, as Sereias e Penélope",
+     "g": "Desfruta de mais aventuras da Odisseia e da fiel tecedeira que esperava em casa.",
+     "p": [
+      "Circe era uma feiticeira que transformava visitantes em animais, mas Ulisses ganhou o seu respeito e ela ajudou-o.",
+      "Para passar pelas Sereias, cujo canto atraía marinheiros, tapou os ouvidos à tripulação e mandou-se atar ao mastro.",
+      "Em casa, Penélope também usou o engenho: tecia um pano de dia e desfazia-o em segredo à noite para ganhar tempo."
+     ],
+     "q": "Qual das três, Circe, as Sereias ou Penélope, te intriga mais?",
+     "c": "Trauteia ou diz o nome de uma canção tão bela que não consegues parar de ouvir."
+    },
+    "pt_BR": {
+     "t": "Circe, as Sereias e Penélope",
+     "g": "Curta mais aventuras da Odisseia e a fiel tecelã que esperava em casa.",
+     "p": [
+      "Circe era uma feiticeira que transformava visitantes em animais, mas Ulisses ganhou o respeito dela e ela o ajudou.",
+      "Para passar pelas Sereias, cujo canto atraía marinheiros, ele tapou os ouvidos da tripulação e se amarrou ao mastro.",
+      "Em casa, Penélope também usou o engenho: tecia um pano de dia e desfazia em segredo à noite para ganhar tempo."
+     ],
+     "q": "Qual das três, Circe, as Sereias ou Penélope, te intriga mais?",
+     "c": "Cantarole ou diga o nome de uma música tão bonita que você não para de ouvir."
+    }
+   }
+  }
+ ]
+}

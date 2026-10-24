@@ -1,0 +1,835 @@
+{
+ "topic": "environment",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Draught-proofing your home",
+     "g": "Seal gaps around doors and windows to keep warmth inside.",
+     "p": [
+      "Small gaps around doors, windows and letterboxes let heat escape and cold air in.",
+      "Foam strips, brush seals and draught excluders are cheap and quick to fit.",
+      "A home without draughts feels cosier and needs less heating or cooling."
+     ],
+     "q": "Can you feel any draughts at home, and where do they come from?",
+     "c": "Hold a hand near door and window edges today and note where you feel moving air."
+    },
+    "de": {
+     "t": "Zugluft abdichten",
+     "g": "Spalten an Türen und Fenstern abdichten, damit die Wärme drinnen bleibt.",
+     "p": [
+      "Kleine Spalten an Türen, Fenstern und Briefschlitzen lassen Wärme entweichen und Kälte herein.",
+      "Schaumstoffstreifen, Bürstendichtungen und Zugluftstopper sind günstig und schnell angebracht.",
+      "Ein Zuhause ohne Zugluft fühlt sich gemütlicher an und braucht weniger Heizung oder Kühlung."
+     ],
+     "q": "Spürst du bei dir Zugluft, und woher kommt sie?",
+     "c": "Halte heute die Hand an Tür- und Fensterränder und merke dir, wo du Luftzug spürst."
+    },
+    "es": {
+     "t": "Sellar las corrientes de aire",
+     "g": "Sellar huecos en puertas y ventanas para que el calor se quede dentro.",
+     "p": [
+      "Pequeños huecos en puertas, ventanas y buzones dejan escapar el calor y entrar el frío.",
+      "Las tiras de espuma, los burletes de cepillo y los rodapiés de puerta son baratos y rápidos de poner.",
+      "Una casa sin corrientes se siente más acogedora y necesita menos calefacción o refrigeración."
+     ],
+     "q": "¿Notas corrientes de aire en casa y de dónde vienen?",
+     "c": "Pasa hoy la mano junto a los bordes de puertas y ventanas y anota dónde notas aire."
+    },
+    "fr": {
+     "t": "Calfeutrer son logement",
+     "g": "Boucher les interstices des portes et fenêtres pour garder la chaleur à l'intérieur.",
+     "p": [
+      "De petits interstices aux portes, fenêtres et boîtes aux lettres laissent fuir la chaleur et entrer le froid.",
+      "Bandes de mousse, joints brosses et boudins de porte sont bon marché et rapides à poser.",
+      "Un logement sans courants d'air est plus douillet et demande moins de chauffage ou de climatisation."
+     ],
+     "q": "Sens-tu des courants d'air chez toi, et d'où viennent-ils ?",
+     "c": "Passe aujourd'hui la main près des bords de portes et fenêtres et note où tu sens de l'air."
+    },
+    "it": {
+     "t": "Eliminare gli spifferi in casa",
+     "g": "Sigillare le fessure di porte e finestre per tenere il calore dentro.",
+     "p": [
+      "Piccole fessure intorno a porte, finestre e buche delle lettere fanno uscire il calore ed entrare il freddo.",
+      "Strisce di gommapiuma, guarnizioni a spazzola e paraspifferi costano poco e si montano in fretta.",
+      "Una casa senza spifferi è più accogliente e richiede meno riscaldamento o raffrescamento."
+     ],
+     "q": "Senti spifferi in casa e da dove arrivano?",
+     "c": "Passa oggi la mano vicino ai bordi di porte e finestre e annota dove senti aria."
+    },
+    "pt": {
+     "t": "Vedar as correntes de ar",
+     "g": "Vedar frinchas em portas e janelas para manter o calor dentro de casa.",
+     "p": [
+      "Pequenas frinchas em portas, janelas e caixas de correio deixam sair o calor e entrar o frio.",
+      "Tiras de espuma, vedantes de escova e rolos de porta são baratos e rápidos de colocar.",
+      "Uma casa sem correntes de ar é mais aconchegante e precisa de menos aquecimento ou arrefecimento."
+     ],
+     "q": "Sentes correntes de ar em casa e de onde vêm?",
+     "c": "Passa hoje a mão junto às margens de portas e janelas e anota onde sentes ar."
+    },
+    "pt_BR": {
+     "t": "Vedar as frestas de casa",
+     "g": "Vedar frestas em portas e janelas para manter o calor dentro de casa.",
+     "p": [
+      "Pequenas frestas em portas, janelas e caixas de correio deixam sair o calor e entrar o frio.",
+      "Tiras de espuma, vedantes de escova e rolos de porta são baratos e rápidos de colocar.",
+      "Uma casa sem correntes de ar é mais aconchegante e precisa de menos aquecimento ou refrigeração."
+     ],
+     "q": "Você sente correntes de ar em casa e de onde elas vêm?",
+     "c": "Passe hoje a mão junto às bordas de portas e janelas e anote onde sente ar."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Washing clothes efficiently",
+     "g": "Learn cooler washes, full loads and drying on a line.",
+     "p": [
+      "Most of a wash cycle's energy goes into heating water, so cooler washes save a lot.",
+      "Full loads use water and power better than several half loads.",
+      "Line drying is free, gentle on clothes and smells wonderfully fresh."
+     ],
+     "q": "What temperature do you usually wash at, and could it be lower?",
+     "c": "Wash a full load at a lower temperature today, and air-dry clothes if you can."
+    },
+    "de": {
+     "t": "Wäsche effizient waschen",
+     "g": "Kühlere Wäsche, volle Ladungen und Trocknen an der Leine kennenlernen.",
+     "p": [
+      "Der meiste Strom beim Waschen geht ins Erhitzen des Wassers, kühlere Programme sparen viel.",
+      "Volle Ladungen nutzen Wasser und Strom besser als mehrere halbe.",
+      "Leinentrocknen ist kostenlos, schont Kleidung und duftet herrlich frisch."
+     ],
+     "q": "Bei welcher Temperatur wäschst du meist, und ginge es auch kühler?",
+     "c": "Wasch heute eine volle Ladung bei niedrigerer Temperatur und lass Kleidung an der Luft trocknen."
+    },
+    "es": {
+     "t": "Lavar la ropa con eficiencia",
+     "g": "Aprender lavados más fríos, cargas completas y secado al aire.",
+     "p": [
+      "La mayor parte de la energía de un lavado va a calentar el agua, así que lavar más frío ahorra mucho.",
+      "Las cargas completas aprovechan mejor el agua y la electricidad que varias cargas a medias.",
+      "Secar en el tendedero es gratis, cuida la ropa y huele a fresco."
+     ],
+     "q": "¿A qué temperatura sueles lavar y podría ser más baja?",
+     "c": "Lava hoy una carga completa a menor temperatura y seca la ropa al aire si puedes."
+    },
+    "fr": {
+     "t": "Laver son linge efficacement",
+     "g": "Apprendre les lavages à froid, les pleines charges et le séchage sur un fil.",
+     "p": [
+      "L'essentiel de l'énergie d'un lavage sert à chauffer l'eau : laver plus frais économise beaucoup.",
+      "Les pleines charges utilisent mieux l'eau et l'électricité que plusieurs demi-charges.",
+      "Le séchage sur fil est gratuit, doux pour le linge et sent délicieusement bon."
+     ],
+     "q": "À quelle température laves-tu d'habitude, et pourrais-tu baisser ?",
+     "c": "Lave aujourd'hui une pleine charge à plus basse température et fais sécher à l'air si possible."
+    },
+    "it": {
+     "t": "Lavare i panni in modo efficiente",
+     "g": "Imparare lavaggi più freddi, carichi pieni e asciugatura sullo stendino.",
+     "p": [
+      "Gran parte dell'energia di un lavaggio serve a scaldare l'acqua, quindi lavare più freddo fa risparmiare molto.",
+      "I carichi pieni usano meglio acqua ed elettricità di più mezzi carichi.",
+      "Asciugare all'aria è gratis, delicato sui capi e profuma di fresco."
+     ],
+     "q": "A che temperatura lavi di solito e potresti abbassarla?",
+     "c": "Oggi fai un carico pieno a temperatura più bassa e asciuga i panni all'aria se puoi."
+    },
+    "pt": {
+     "t": "Lavar a roupa de forma eficiente",
+     "g": "Aprender lavagens mais frias, cargas cheias e secagem ao ar.",
+     "p": [
+      "A maior parte da energia de uma lavagem vai para aquecer a água, por isso lavar a frio poupa muito.",
+      "Cargas cheias aproveitam melhor a água e a eletricidade do que várias a meio.",
+      "Secar no estendal é grátis, preserva a roupa e cheira a fresco."
+     ],
+     "q": "A que temperatura costumas lavar e podia ser mais baixa?",
+     "c": "Lava hoje uma carga cheia a temperatura mais baixa e seca a roupa ao ar se puderes."
+    },
+    "pt_BR": {
+     "t": "Lavar roupa com eficiência",
+     "g": "Aprender lavagens mais frias, cargas cheias e secagem ao ar.",
+     "p": [
+      "A maior parte da energia de uma lavagem vai para aquecer a água, então lavar a frio economiza muito.",
+      "Cargas cheias aproveitam melhor a água e a eletricidade do que várias pela metade.",
+      "Secar no varal é de graça, preserva a roupa e deixa um cheiro fresco."
+     ],
+     "q": "Em que temperatura você costuma lavar e poderia ser mais baixa?",
+     "c": "Lave hoje uma carga cheia em temperatura mais baixa e seque a roupa ao ar se puder."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Smart use of the fridge and oven",
+     "g": "Small kitchen habits that save electricity every day.",
+     "p": [
+      "Fridges work best when not overpacked and when the door is opened briefly.",
+      "Let hot food cool a little before putting it in the fridge, and keep door seals clean.",
+      "Ovens waste heat when preheated early; use lids, small appliances or batch cook."
+     ],
+     "q": "What kitchen appliance do you use most each day?",
+     "c": "Plan today's oven use so you cook two things at once, or switch it off a little early."
+    },
+    "de": {
+     "t": "Kühlschrank und Backofen klug nutzen",
+     "g": "Kleine Küchengewohnheiten, die täglich Strom sparen.",
+     "p": [
+      "Kühlschränke arbeiten am besten, wenn sie nicht überfüllt sind und die Tür nur kurz offen ist.",
+      "Lass heißes Essen etwas abkühlen, bevor es in den Kühlschrank kommt, und halte Türdichtungen sauber.",
+      "Backöfen verschwenden Wärme, wenn sie zu früh vorheizen; nutze Deckel, Kleingeräte oder koche vor."
+     ],
+     "q": "Welches Küchengerät nutzt du jeden Tag am meisten?",
+     "c": "Plane heute den Backofen so, dass du zwei Dinge zugleich garst, oder schalte ihn etwas früher aus."
+    },
+    "es": {
+     "t": "Uso inteligente de la nevera y el horno",
+     "g": "Pequeños hábitos de cocina que ahorran electricidad cada día.",
+     "p": [
+      "Las neveras funcionan mejor sin sobrecargar y con la puerta abierta poco tiempo.",
+      "Deja enfriar un poco la comida caliente antes de meterla y mantén limpias las juntas de la puerta.",
+      "Los hornos pierden calor si se precalientan demasiado pronto; usa tapas, aparatos pequeños o cocina por tandas."
+     ],
+     "q": "¿Qué electrodoméstico de cocina usas más cada día?",
+     "c": "Planifica hoy el horno para cocinar dos cosas a la vez, o apágalo un poco antes."
+    },
+    "fr": {
+     "t": "Bien utiliser frigo et four",
+     "g": "De petites habitudes de cuisine qui économisent l'électricité chaque jour.",
+     "p": [
+      "Un frigo fonctionne mieux quand il n'est pas trop plein et que la porte reste peu ouverte.",
+      "Laisse tiédir un peu les plats chauds avant de les mettre au frais et garde les joints propres.",
+      "Un four gaspille de la chaleur s'il est préchauffé trop tôt ; utilise couvercles, petits appareils ou cuisine en lots."
+     ],
+     "q": "Quel appareil de cuisine utilises-tu le plus chaque jour ?",
+     "c": "Organise aujourd'hui ton four pour cuire deux choses à la fois, ou éteins-le un peu plus tôt."
+    },
+    "it": {
+     "t": "Usare con intelligenza frigo e forno",
+     "g": "Piccole abitudini in cucina che fanno risparmiare elettricità ogni giorno.",
+     "p": [
+      "I frigoriferi funzionano meglio se non sono troppo pieni e la porta resta aperta poco.",
+      "Lascia intiepidire il cibo caldo prima di metterlo in frigo e tieni pulite le guarnizioni.",
+      "I forni sprecano calore se preriscaldati troppo presto; usa coperchi, piccoli apparecchi o cucina in lotti."
+     ],
+     "q": "Quale elettrodomestico da cucina usi di più ogni giorno?",
+     "c": "Pianifica oggi il forno per cuocere due cose insieme, oppure spegnilo un po' prima."
+    },
+    "pt": {
+     "t": "Usar bem o frigorífico e o forno",
+     "g": "Pequenos hábitos de cozinha que poupam eletricidade todos os dias.",
+     "p": [
+      "Os frigoríficos funcionam melhor sem excesso de carga e com a porta aberta pouco tempo.",
+      "Deixa arrefecer um pouco a comida quente antes de a guardar e mantém as borrachas limpas.",
+      "Os fornos desperdiçam calor se forem pré-aquecidos cedo demais; usa tampas, aparelhos pequenos ou cozinha em lotes."
+     ],
+     "q": "Que eletrodoméstico de cozinha usas mais todos os dias?",
+     "c": "Planeia hoje o forno para cozinhar duas coisas ao mesmo tempo, ou desliga-o um pouco mais cedo."
+    },
+    "pt_BR": {
+     "t": "Usar bem a geladeira e o forno",
+     "g": "Pequenos hábitos de cozinha que economizam eletricidade todos os dias.",
+     "p": [
+      "Geladeiras funcionam melhor sem excesso de carga e com a porta aberta pouco tempo.",
+      "Deixe esfriar um pouco a comida quente antes de guardar e mantenha as borrachas limpas.",
+      "Fornos desperdiçam calor se forem pré-aquecidos cedo demais; use tampas, aparelhos pequenos ou cozinhe em lotes."
+     ],
+     "q": "Qual eletrodoméstico de cozinha você mais usa por dia?",
+     "c": "Planeje hoje o forno para cozinhar duas coisas ao mesmo tempo, ou desligue um pouco antes."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading energy labels",
+     "g": "Learn how efficiency ratings help you choose appliances.",
+     "p": [
+      "Energy labels rate how much power an appliance uses for the job it does.",
+      "A more efficient model often costs a bit more but saves money over its life.",
+      "Compare labels of similar sizes, and choose the size that truly fits your needs."
+     ],
+     "q": "Do you check labels when buying appliances, or go by price?",
+     "c": "Look at the energy label on one appliance at home or in a shop and note its rating."
+    },
+    "de": {
+     "t": "Energielabel lesen",
+     "g": "Lernen, wie Effizienzklassen bei der Wahl von Geräten helfen.",
+     "p": [
+      "Energielabel bewerten, wie viel Strom ein Gerät für seine Aufgabe braucht.",
+      "Ein effizienteres Modell kostet oft etwas mehr, spart aber über die Lebensdauer Geld.",
+      "Vergleiche Labels bei ähnlicher Größe und wähle die Größe, die wirklich zu dir passt."
+     ],
+     "q": "Schaust du beim Gerätekauf aufs Label oder nach dem Preis?",
+     "c": "Sieh dir heute das Energielabel eines Geräts zu Hause oder im Laden an und notiere die Klasse."
+    },
+    "es": {
+     "t": "Leer las etiquetas energéticas",
+     "g": "Aprender cómo las clases de eficiencia ayudan a elegir electrodomésticos.",
+     "p": [
+      "Las etiquetas energéticas puntúan cuánta energía gasta un aparato para su trabajo.",
+      "Un modelo más eficiente suele costar algo más, pero ahorra dinero durante su vida útil.",
+      "Compara etiquetas de tamaños parecidos y elige el tamaño que de verdad necesitas."
+     ],
+     "q": "¿Miras las etiquetas al comprar electrodomésticos o te guías por el precio?",
+     "c": "Mira hoy la etiqueta energética de un aparato en casa o en una tienda y anota su clase."
+    },
+    "fr": {
+     "t": "Lire les étiquettes énergie",
+     "g": "Apprendre comment les classes d'efficacité aident à choisir ses appareils.",
+     "p": [
+      "Les étiquettes énergie notent la consommation d'un appareil pour le service rendu.",
+      "Un modèle plus efficace coûte souvent un peu plus mais fait économiser sur sa durée de vie.",
+      "Compare des étiquettes de tailles similaires et choisis la taille qui te convient vraiment."
+     ],
+     "q": "Regardes-tu les étiquettes en achetant un appareil, ou suis-tu le prix ?",
+     "c": "Regarde aujourd'hui l'étiquette énergie d'un appareil chez toi ou en magasin et note sa classe."
+    },
+    "it": {
+     "t": "Leggere le etichette energetiche",
+     "g": "Imparare come le classi di efficienza aiutano a scegliere gli elettrodomestici.",
+     "p": [
+      "Le etichette energetiche valutano quanta energia usa un apparecchio per il lavoro che fa.",
+      "Un modello più efficiente costa spesso un po' di più ma fa risparmiare nel corso della vita.",
+      "Confronta etichette di dimensioni simili e scegli la misura che ti serve davvero."
+     ],
+     "q": "Quando compri un elettrodomestico guardi le etichette o vai a prezzo?",
+     "c": "Guarda oggi l'etichetta energetica di un apparecchio a casa o in negozio e annota la classe."
+    },
+    "pt": {
+     "t": "Ler as etiquetas energéticas",
+     "g": "Aprender como as classes de eficiência ajudam a escolher eletrodomésticos.",
+     "p": [
+      "As etiquetas energéticas avaliam quanta energia um aparelho gasta para o trabalho que faz.",
+      "Um modelo mais eficiente custa muitas vezes um pouco mais, mas poupa dinheiro ao longo da vida.",
+      "Compara etiquetas de tamanhos parecidos e escolhe o tamanho de que realmente precisas."
+     ],
+     "q": "Vês as etiquetas ao comprar eletrodomésticos ou guias-te pelo preço?",
+     "c": "Vê hoje a etiqueta energética de um aparelho em casa ou numa loja e anota a classe."
+    },
+    "pt_BR": {
+     "t": "Lendo as etiquetas de eficiência",
+     "g": "Aprender como as classes de eficiência ajudam a escolher eletrodomésticos.",
+     "p": [
+      "As etiquetas de eficiência avaliam quanta energia um aparelho gasta para o trabalho que faz.",
+      "Um modelo mais eficiente costuma custar um pouco mais, mas economiza dinheiro ao longo da vida.",
+      "Compare etiquetas de tamanhos parecidos e escolha o tamanho de que realmente precisa."
+     ],
+     "q": "Você olha as etiquetas ao comprar eletrodomésticos ou se guia pelo preço?",
+     "c": "Veja hoje a etiqueta de eficiência de um aparelho em casa ou numa loja e anote a classe."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Unplugging for an evening",
+     "g": "Try a low-energy evening with candles, games and conversation.",
+     "p": [
+      "A screen-free, low-light evening saves a little power and often feels restful.",
+      "Board games, cooking together, music or a walk make easy offline fun.",
+      "Use candles carefully, in stable holders, never left unattended."
+     ],
+     "q": "What would your ideal unplugged evening look like?",
+     "c": "Plan an evening with fewer screens and lights, and enjoy something simple instead."
+    },
+    "de": {
+     "t": "Einen Abend abschalten",
+     "g": "Einen energiearmen Abend mit Kerzen, Spielen und Gesprächen ausprobieren.",
+     "p": [
+      "Ein bildschirmfreier Abend bei wenig Licht spart etwas Strom und fühlt sich oft erholsam an.",
+      "Brettspiele, gemeinsames Kochen, Musik oder ein Spaziergang machen leicht Spaß ohne Strom.",
+      "Nutze Kerzen vorsichtig, in standfesten Haltern und nie unbeaufsichtigt."
+     ],
+     "q": "Wie sähe dein idealer Abend ohne Strom aus?",
+     "c": "Plane einen Abend mit weniger Bildschirmen und Licht und genieße stattdessen etwas Einfaches."
+    },
+    "es": {
+     "t": "Desconectar una tarde-noche",
+     "g": "Probar una velada de bajo consumo con velas, juegos y conversación.",
+     "p": [
+      "Una noche sin pantallas y con poca luz ahorra algo de electricidad y suele ser relajante.",
+      "Juegos de mesa, cocinar juntos, música o un paseo dan diversión fácil sin conexión.",
+      "Usa las velas con cuidado, en soportes estables y nunca sin vigilar."
+     ],
+     "q": "¿Cómo sería tu velada desconectada ideal?",
+     "c": "Planea una velada con menos pantallas y luces y disfruta de algo sencillo."
+    },
+    "fr": {
+     "t": "Se déconnecter le temps d'une soirée",
+     "g": "Essayer une soirée sobre en énergie avec bougies, jeux et conversation.",
+     "p": [
+      "Une soirée sans écran et en lumière douce économise un peu d'électricité et repose souvent.",
+      "Jeux de société, cuisine à plusieurs, musique ou promenade offrent un plaisir simple sans prise.",
+      "Utilise les bougies avec prudence, sur des supports stables, jamais sans surveillance."
+     ],
+     "q": "À quoi ressemblerait ta soirée déconnectée idéale ?",
+     "c": "Prévois une soirée avec moins d'écrans et de lumières et profite de quelque chose de simple."
+    },
+    "it": {
+     "t": "Staccare la spina per una sera",
+     "g": "Provare una serata a basso consumo con candele, giochi e conversazione.",
+     "p": [
+      "Una serata senza schermi e con poca luce risparmia un po' di corrente e spesso è rilassante.",
+      "Giochi da tavolo, cucinare insieme, musica o una passeggiata sono divertimento facile senza presa.",
+      "Usa le candele con attenzione, su supporti stabili e mai senza sorveglianza."
+     ],
+     "q": "Come sarebbe la tua serata ideale senza corrente?",
+     "c": "Pianifica una serata con meno schermi e luci e goditi qualcosa di semplice."
+    },
+    "pt": {
+     "t": "Desligar da ficha por uma noite",
+     "g": "Experimentar uma noite de baixo consumo com velas, jogos e conversa.",
+     "p": [
+      "Uma noite sem ecrãs e com pouca luz poupa alguma eletricidade e costuma ser relaxante.",
+      "Jogos de tabuleiro, cozinhar juntos, música ou um passeio dão diversão fácil sem tomada.",
+      "Usa as velas com cuidado, em suportes estáveis e nunca sem vigilância."
+     ],
+     "q": "Como seria a tua noite desligada ideal?",
+     "c": "Planeia uma noite com menos ecrãs e luzes e desfruta de algo simples."
+    },
+    "pt_BR": {
+     "t": "Desligar da tomada por uma noite",
+     "g": "Experimentar uma noite de baixo consumo com velas, jogos e conversa.",
+     "p": [
+      "Uma noite sem telas e com pouca luz economiza alguma eletricidade e costuma ser relaxante.",
+      "Jogos de tabuleiro, cozinhar juntos, música ou uma caminhada dão diversão fácil sem tomada.",
+      "Use as velas com cuidado, em suportes estáveis e nunca sem vigilância."
+     ],
+     "q": "Como seria a sua noite desligada ideal?",
+     "c": "Planeje uma noite com menos telas e luzes e aproveite algo simples."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Walking more",
+     "g": "Take short trips on foot, good for health, wallet and air.",
+     "p": [
+      "Walking makes no pollution, costs nothing and fits into many short daily trips.",
+      "Short car trips are often the least efficient, so they are a great place to walk.",
+      "Walking also lets you notice your neighbourhood, meet people and clear your head."
+     ],
+     "q": "What short trip could you walk instead of drive or ride?",
+     "c": "Replace one short trip with a walk today, or add a ten-minute stroll."
+    },
+    "de": {
+     "t": "Mehr zu Fuß gehen",
+     "g": "Kurze Wege zu Fuß zurücklegen, gut für Gesundheit, Geldbeutel und Luft.",
+     "p": [
+      "Gehen verursacht keine Abgase, kostet nichts und passt in viele kurze Alltagswege.",
+      "Kurze Autofahrten sind oft am ineffizientesten, ideal zum Zufußgehen.",
+      "Gehen lässt dich außerdem dein Viertel wahrnehmen, Menschen treffen und den Kopf frei bekommen."
+     ],
+     "q": "Welchen kurzen Weg könntest du zu Fuß statt mit Auto oder Bus gehen?",
+     "c": "Ersetze heute einen kurzen Weg durch einen Fußweg oder mach einen Zehn-Minuten-Spaziergang."
+    },
+    "es": {
+     "t": "Caminar más",
+     "g": "Hacer trayectos cortos a pie, bueno para la salud, el bolsillo y el aire.",
+     "p": [
+      "Caminar no contamina, no cuesta nada y encaja en muchos trayectos cortos del día.",
+      "Los trayectos cortos en coche suelen ser los menos eficientes, así que son ideales para ir a pie.",
+      "Caminar también te deja fijarte en tu barrio, encontrarte con gente y despejar la mente."
+     ],
+     "q": "¿Qué trayecto corto podrías hacer a pie en vez de en coche o transporte?",
+     "c": "Sustituye hoy un trayecto corto por un paseo, o añade un paseo de diez minutos."
+    },
+    "fr": {
+     "t": "Marcher davantage",
+     "g": "Faire de courts trajets à pied, bons pour la santé, le budget et l'air.",
+     "p": [
+      "Marcher ne pollue pas, ne coûte rien et s'intègre à beaucoup de petits trajets.",
+      "Les courts trajets en voiture sont souvent les moins efficaces : parfaits pour marcher.",
+      "Marcher permet aussi de remarquer son quartier, de croiser du monde et de se vider la tête."
+     ],
+     "q": "Quel court trajet pourrais-tu faire à pied plutôt qu'en voiture ou en transport ?",
+     "c": "Remplace aujourd'hui un court trajet par une marche, ou ajoute une promenade de dix minutes."
+    },
+    "it": {
+     "t": "Camminare di più",
+     "g": "Fare brevi tragitti a piedi, buoni per salute, tasca e aria.",
+     "p": [
+      "Camminare non inquina, non costa nulla e si adatta a molti piccoli spostamenti.",
+      "I brevi tragitti in auto sono spesso i meno efficienti, quindi sono perfetti da fare a piedi.",
+      "Camminare ti fa anche notare il quartiere, incontrare persone e schiarire le idee."
+     ],
+     "q": "Quale breve tragitto potresti fare a piedi invece che in auto o con i mezzi?",
+     "c": "Sostituisci oggi un breve tragitto con una camminata, oppure aggiungi una passeggiata di dieci minuti."
+    },
+    "pt": {
+     "t": "Andar mais a pé",
+     "g": "Fazer percursos curtos a pé, bom para a saúde, a carteira e o ar.",
+     "p": [
+      "Andar a pé não polui, não custa nada e encaixa em muitos percursos curtos do dia.",
+      "Os percursos curtos de carro são muitas vezes os menos eficientes, ótimos para ir a pé.",
+      "Andar a pé também te faz reparar no bairro, encontrar pessoas e arejar a cabeça."
+     ],
+     "q": "Que percurso curto podias fazer a pé em vez de ir de carro ou transporte?",
+     "c": "Substitui hoje um percurso curto por uma caminhada, ou acrescenta um passeio de dez minutos."
+    },
+    "pt_BR": {
+     "t": "Caminhar mais",
+     "g": "Fazer trajetos curtos a pé, bom para a saúde, o bolso e o ar.",
+     "p": [
+      "Caminhar não polui, não custa nada e cabe em muitos trajetos curtos do dia.",
+      "Trajetos curtos de carro costumam ser os menos eficientes, ótimos para ir a pé.",
+      "Caminhar também faz você notar o bairro, encontrar pessoas e espairecer."
+     ],
+     "q": "Que trajeto curto você poderia fazer a pé em vez de ir de carro ou transporte?",
+     "c": "Troque hoje um trajeto curto por uma caminhada, ou adicione um passeio de dez minutos."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cycling for everyday trips",
+     "g": "Get started with cycling to school, work or the shops.",
+     "p": [
+      "A bike is quiet, clean and often as fast as a car in busy town centres.",
+      "Start with short, quiet routes, and build up as you feel more confident.",
+      "A helmet, lights and a good lock make everyday cycling safer and easier."
+     ],
+     "q": "Have you cycled before, and what would help you start or restart?",
+     "c": "Plan a short, quiet bike route to somewhere you go often, and try it when ready."
+    },
+    "de": {
+     "t": "Radfahren im Alltag",
+     "g": "Mit dem Rad zu Schule, Arbeit oder Einkauf starten.",
+     "p": [
+      "Ein Fahrrad ist leise, sauber und im dichten Stadtverkehr oft so schnell wie ein Auto.",
+      "Starte mit kurzen, ruhigen Strecken und steigere dich mit wachsender Sicherheit.",
+      "Helm, Licht und ein gutes Schloss machen Alltagsradeln sicherer und leichter."
+     ],
+     "q": "Bist du schon mal Rad gefahren, und was würde dir beim Starten oder Neustarten helfen?",
+     "c": "Plane eine kurze, ruhige Radstrecke zu einem häufigen Ziel und probiere sie, wenn du bereit bist."
+    },
+    "es": {
+     "t": "Ir en bici a diario",
+     "g": "Empezar a ir en bici al colegio, al trabajo o a las tiendas.",
+     "p": [
+      "La bici es silenciosa, limpia y en el centro de la ciudad suele ser tan rápida como un coche.",
+      "Empieza con rutas cortas y tranquilas y avanza según ganes confianza.",
+      "Casco, luces y un buen candado hacen más segura y fácil la bici de cada día."
+     ],
+     "q": "¿Has ido en bici antes y qué te ayudaría a empezar o volver a empezar?",
+     "c": "Planea una ruta corta y tranquila en bici a un sitio al que vayas a menudo y pruébala cuando estés listo."
+    },
+    "fr": {
+     "t": "Le vélo au quotidien",
+     "g": "Se lancer à vélo vers l'école, le travail ou les commerces.",
+     "p": [
+      "Le vélo est silencieux, propre et souvent aussi rapide que la voiture dans un centre-ville chargé.",
+      "Commence par des itinéraires courts et calmes, puis progresse avec la confiance.",
+      "Casque, éclairage et bon antivol rendent le vélo quotidien plus sûr et plus facile."
+     ],
+     "q": "As-tu déjà pédalé, et qu'est-ce qui t'aiderait à te lancer ou à reprendre ?",
+     "c": "Prépare un court itinéraire calme à vélo vers un endroit que tu fréquentes et essaie-le quand tu seras prêt."
+    },
+    "it": {
+     "t": "In bici per i tragitti di ogni giorno",
+     "g": "Iniziare ad andare in bici a scuola, al lavoro o a fare la spesa.",
+     "p": [
+      "La bici è silenziosa, pulita e nei centri affollati spesso veloce quanto l'auto.",
+      "Parti con percorsi brevi e tranquilli e cresci man mano che prendi fiducia.",
+      "Casco, luci e un buon lucchetto rendono la bici quotidiana più sicura e facile."
+     ],
+     "q": "Sei già andato in bici e cosa ti aiuterebbe a iniziare o ricominciare?",
+     "c": "Pianifica un breve percorso tranquillo in bici verso un posto che frequenti e provalo quando sei pronto."
+    },
+    "pt": {
+     "t": "Andar de bicicleta no dia a dia",
+     "g": "Começar a ir de bicicleta para a escola, o trabalho ou as compras.",
+     "p": [
+      "A bicicleta é silenciosa, limpa e nos centros movimentados muitas vezes tão rápida como o carro.",
+      "Começa com percursos curtos e tranquilos e vai subindo à medida que ganhas confiança.",
+      "Capacete, luzes e um bom cadeado tornam a bicicleta diária mais segura e fácil."
+     ],
+     "q": "Já andaste de bicicleta e o que te ajudaria a começar ou recomeçar?",
+     "c": "Planeia um percurso curto e tranquilo de bicicleta até um sítio que frequentes e experimenta quando estiveres pronto."
+    },
+    "pt_BR": {
+     "t": "Pedalar no dia a dia",
+     "g": "Começar a ir de bicicleta para a escola, o trabalho ou as compras.",
+     "p": [
+      "A bicicleta é silenciosa, limpa e em centros movimentados muitas vezes tão rápida quanto o carro.",
+      "Comece com trajetos curtos e tranquilos e vá subindo conforme ganha confiança.",
+      "Capacete, luzes e um bom cadeado tornam a bicicleta diária mais segura e fácil."
+     ],
+     "q": "Você já andou de bicicleta e o que ajudaria a começar ou recomeçar?",
+     "c": "Planeje um trajeto curto e tranquilo de bicicleta até um lugar que você frequenta e teste quando estiver pronto."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Using public transport",
+     "g": "Enjoy buses, trams and trains as relaxing, low-impact ways to travel.",
+     "p": [
+      "One full bus or train carries many people at once, using road and fuel well.",
+      "You can read, listen to music or rest instead of watching traffic.",
+      "Apps and maps make planning routes and timetables simple."
+     ],
+     "q": "What public transport is available near you, and have you tried it lately?",
+     "c": "Look up one route you normally drive and see how it would work by public transport."
+    },
+    "de": {
+     "t": "Öffentliche Verkehrsmittel nutzen",
+     "g": "Busse, Bahnen und Züge als entspannte, umweltschonende Reisewege genießen.",
+     "p": [
+      "Ein voller Bus oder Zug befördert viele Menschen zugleich und nutzt Straße und Treibstoff gut.",
+      "Du kannst lesen, Musik hören oder dich ausruhen, statt auf den Verkehr zu achten.",
+      "Apps und Karten machen Routen und Fahrpläne einfach."
+     ],
+     "q": "Welche öffentlichen Verkehrsmittel gibt es bei dir, und hast du sie zuletzt genutzt?",
+     "c": "Such dir eine Strecke, die du sonst fährst, und prüfe, wie sie mit Bus oder Bahn funktionieren würde."
+    },
+    "es": {
+     "t": "Usar el transporte público",
+     "g": "Disfrutar de autobuses, tranvías y trenes como formas relajadas y de bajo impacto de viajar.",
+     "p": [
+      "Un autobús o tren lleno lleva a mucha gente a la vez y aprovecha bien la carretera y el combustible.",
+      "Puedes leer, escuchar música o descansar en vez de vigilar el tráfico.",
+      "Las apps y los mapas hacen sencillo planificar rutas y horarios."
+     ],
+     "q": "¿Qué transporte público hay cerca de ti y lo has probado últimamente?",
+     "c": "Busca hoy una ruta que sueles hacer en coche y mira cómo sería en transporte público."
+    },
+    "fr": {
+     "t": "Prendre les transports en commun",
+     "g": "Profiter des bus, tramways et trains comme moyens de voyager détendus et peu impactants.",
+     "p": [
+      "Un bus ou un train plein transporte beaucoup de monde à la fois et utilise bien route et carburant.",
+      "Tu peux lire, écouter de la musique ou te reposer au lieu de surveiller la circulation.",
+      "Applications et cartes facilitent la préparation des trajets et des horaires."
+     ],
+     "q": "Quels transports en commun existent près de chez toi, et les as-tu essayés récemment ?",
+     "c": "Cherche aujourd'hui un trajet que tu fais en voiture et regarde comment ce serait en transport en commun."
+    },
+    "it": {
+     "t": "Usare i mezzi pubblici",
+     "g": "Godersi autobus, tram e treni come modi rilassanti e a basso impatto di viaggiare.",
+     "p": [
+      "Un autobus o un treno pieno porta molte persone insieme e sfrutta bene strada e carburante.",
+      "Puoi leggere, ascoltare musica o riposare invece di guardare il traffico.",
+      "App e mappe rendono semplice pianificare percorsi e orari."
+     ],
+     "q": "Quali mezzi pubblici ci sono vicino a te e li hai provati di recente?",
+     "c": "Cerca oggi un percorso che fai di solito in auto e guarda come sarebbe con i mezzi pubblici."
+    },
+    "pt": {
+     "t": "Usar os transportes públicos",
+     "g": "Desfrutar de autocarros, elétricos e comboios como formas relaxadas e de baixo impacto de viajar.",
+     "p": [
+      "Um autocarro ou comboio cheio leva muita gente de uma vez e aproveita bem a estrada e o combustível.",
+      "Podes ler, ouvir música ou descansar em vez de vigiar o trânsito.",
+      "Aplicações e mapas tornam simples planear percursos e horários."
+     ],
+     "q": "Que transportes públicos há perto de ti e já os experimentaste ultimamente?",
+     "c": "Procura hoje um percurso que fazes de carro e vê como seria de transporte público."
+    },
+    "pt_BR": {
+     "t": "Usar o transporte público",
+     "g": "Aproveitar ônibus, bondes e trens como formas relaxadas e de baixo impacto de viajar.",
+     "p": [
+      "Um ônibus ou trem cheio leva muita gente de uma vez e aproveita bem a via e o combustível.",
+      "Você pode ler, ouvir música ou descansar em vez de ficar de olho no trânsito.",
+      "Aplicativos e mapas deixam simples planejar rotas e horários."
+     ],
+     "q": "Que transporte público existe perto de você e você já experimentou ultimamente?",
+     "c": "Procure hoje uma rota que você faz de carro e veja como seria de transporte público."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sharing rides",
+     "g": "Use car sharing and carpooling to make each journey count.",
+     "p": [
+      "A car with four people uses road space and fuel far better than four cars.",
+      "Carpooling to work, school or events can also split costs and make trips sociable.",
+      "Car clubs let you borrow a car only when you need one, instead of owning one."
+     ],
+     "q": "Do you know anyone who travels the same route as you regularly?",
+     "c": "Ask a friend, neighbour or colleague today about sharing a regular trip."
+    },
+    "de": {
+     "t": "Fahrten teilen",
+     "g": "Mit Fahrgemeinschaften und Carsharing jede Fahrt sinnvoll nutzen.",
+     "p": [
+      "Ein Auto mit vier Personen nutzt Straße und Treibstoff weit besser als vier Autos.",
+      "Fahrgemeinschaften zur Arbeit, Schule oder zu Veranstaltungen teilen Kosten und machen Fahrten gesellig.",
+      "Carsharing erlaubt, ein Auto nur bei Bedarf zu leihen, statt eines zu besitzen."
+     ],
+     "q": "Kennst du jemanden, der regelmäßig dieselbe Strecke fährt wie du?",
+     "c": "Frag heute Freund, Nachbarin oder Kollegen, ob ihr eine regelmäßige Fahrt teilen wollt."
+    },
+    "es": {
+     "t": "Compartir coche",
+     "g": "Usar el coche compartido para que cada viaje cuente.",
+     "p": [
+      "Un coche con cuatro personas aprovecha mucho mejor la carretera y el combustible que cuatro coches.",
+      "Compartir coche al trabajo, al colegio o a eventos reparte costes y hace los viajes más sociables.",
+      "Los clubes de coches permiten usar un coche solo cuando lo necesitas, sin tener uno propio."
+     ],
+     "q": "¿Conoces a alguien que haga habitualmente tu mismo trayecto?",
+     "c": "Pregunta hoy a un amigo, vecino o compañero si queréis compartir un viaje habitual."
+    },
+    "fr": {
+     "t": "Partager ses trajets",
+     "g": "Utiliser l'autopartage et le covoiturage pour que chaque trajet compte.",
+     "p": [
+      "Une voiture avec quatre personnes utilise bien mieux route et carburant que quatre voitures.",
+      "Le covoiturage vers le travail, l'école ou des événements partage les frais et rend les trajets conviviaux.",
+      "L'autopartage permet d'emprunter une voiture seulement quand on en a besoin, sans en posséder une."
+     ],
+     "q": "Connais-tu quelqu'un qui fait régulièrement le même trajet que toi ?",
+     "c": "Demande aujourd'hui à un ami, voisin ou collègue s'il veut partager un trajet régulier."
+    },
+    "it": {
+     "t": "Condividere i passaggi",
+     "g": "Usare car sharing e carpooling per far contare ogni viaggio.",
+     "p": [
+      "Un'auto con quattro persone sfrutta strada e carburante molto meglio di quattro auto.",
+      "Il carpooling verso lavoro, scuola o eventi divide i costi e rende i viaggi più socievoli.",
+      "Il car sharing permette di usare un'auto solo quando serve, invece di possederne una."
+     ],
+     "q": "Conosci qualcuno che fa regolarmente il tuo stesso tragitto?",
+     "c": "Chiedi oggi a un amico, vicino o collega se volete condividere un tragitto regolare."
+    },
+    "pt": {
+     "t": "Partilhar boleias",
+     "g": "Usar o carsharing e a boleia partilhada para que cada viagem conte.",
+     "p": [
+      "Um carro com quatro pessoas aproveita muito melhor a estrada e o combustível do que quatro carros.",
+      "Partilhar boleia para o trabalho, a escola ou eventos reparte custos e torna as viagens mais sociáveis.",
+      "Os clubes de carros permitem usar um carro só quando é preciso, em vez de ter um."
+     ],
+     "q": "Conheces alguém que faça regularmente o teu mesmo percurso?",
+     "c": "Pergunta hoje a um amigo, vizinho ou colega se querem partilhar uma viagem regular."
+    },
+    "pt_BR": {
+     "t": "Compartilhar caronas",
+     "g": "Usar o carro compartilhado e a carona para que cada viagem conte.",
+     "p": [
+      "Um carro com quatro pessoas aproveita muito melhor a via e o combustível do que quatro carros.",
+      "Dividir carona para o trabalho, a escola ou eventos reparte custos e deixa as viagens mais sociáveis.",
+      "Serviços de carro compartilhado permitem usar um carro só quando precisa, em vez de ter um."
+     ],
+     "q": "Você conhece alguém que faça regularmente o mesmo trajeto que você?",
+     "c": "Pergunte hoje a um amigo, vizinho ou colega se querem dividir uma viagem regular."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Driving more efficiently",
+     "g": "Smooth driving, correct tyre pressure and lighter loads.",
+     "p": [
+      "Gentle acceleration and braking use less fuel than sudden speeding up and slowing down.",
+      "Correct tyre pressure reduces drag and also makes driving safer.",
+      "Remove heavy items you do not need, and keep roof racks off when not in use."
+     ],
+     "q": "If you drive, which of these habits are you already doing?",
+     "c": "Check your tyre pressure this week, and try driving smoothly on your next trip."
+    },
+    "de": {
+     "t": "Effizienter fahren",
+     "g": "Gleichmäßig fahren, richtigen Reifendruck halten und Ballast reduzieren.",
+     "p": [
+      "Sanftes Beschleunigen und Bremsen verbraucht weniger Treibstoff als abruptes Fahren.",
+      "Der richtige Reifendruck verringert den Widerstand und macht das Fahren auch sicherer.",
+      "Nimm schwere Dinge heraus, die du nicht brauchst, und lass den Dachträger ab, wenn er ungenutzt ist."
+     ],
+     "q": "Wenn du fährst, welche dieser Gewohnheiten hast du schon?",
+     "c": "Prüfe diese Woche deinen Reifendruck und fahr auf der nächsten Fahrt gleichmäßig."
+    },
+    "es": {
+     "t": "Conducir con más eficiencia",
+     "g": "Conducción suave, presión correcta de neumáticos y menos carga.",
+     "p": [
+      "Acelerar y frenar con suavidad gasta menos combustible que los arranques y frenazos bruscos.",
+      "La presión correcta de los neumáticos reduce la resistencia y hace la conducción más segura.",
+      "Saca los objetos pesados que no necesitas y quita la baca cuando no se use."
+     ],
+     "q": "Si conduces, ¿cuáles de estos hábitos ya tienes?",
+     "c": "Revisa esta semana la presión de tus neumáticos y prueba a conducir con suavidad en tu próximo viaje."
+    },
+    "fr": {
+     "t": "Conduire plus efficacement",
+     "g": "Conduite souple, bonne pression des pneus et charge allégée.",
+     "p": [
+      "Accélérer et freiner en douceur consomme moins que les à-coups.",
+      "Une bonne pression des pneus réduit la résistance et rend la conduite plus sûre.",
+      "Retire les objets lourds inutiles et enlève la galerie de toit quand tu ne t'en sers pas."
+     ],
+     "q": "Si tu conduis, lesquelles de ces habitudes as-tu déjà ?",
+     "c": "Vérifie la pression de tes pneus cette semaine et essaie de conduire en souplesse lors de ton prochain trajet."
+    },
+    "it": {
+     "t": "Guidare in modo più efficiente",
+     "g": "Guida fluida, giusta pressione degli pneumatici e meno carico.",
+     "p": [
+      "Accelerare e frenare dolcemente consuma meno carburante di partenze e frenate brusche.",
+      "La giusta pressione degli pneumatici riduce la resistenza e rende la guida più sicura.",
+      "Togli gli oggetti pesanti che non servono e rimuovi il portapacchi quando non lo usi."
+     ],
+     "q": "Se guidi, quali di queste abitudini hai già?",
+     "c": "Controlla questa settimana la pressione delle gomme e prova a guidare dolcemente al prossimo viaggio."
+    },
+    "pt": {
+     "t": "Conduzir de forma mais eficiente",
+     "g": "Condução suave, pressão correta dos pneus e menos carga.",
+     "p": [
+      "Acelerar e travar com suavidade gasta menos combustível do que arranques e travagens bruscas.",
+      "A pressão correta dos pneus reduz a resistência e torna a condução mais segura.",
+      "Tira os objetos pesados de que não precisas e retira a barra de tejadilho quando não a usas."
+     ],
+     "q": "Se conduzes, quais destes hábitos já tens?",
+     "c": "Verifica esta semana a pressão dos pneus e experimenta conduzir com suavidade na próxima viagem."
+    },
+    "pt_BR": {
+     "t": "Dirigir com mais eficiência",
+     "g": "Direção suave, pressão correta dos pneus e menos carga.",
+     "p": [
+      "Acelerar e frear com suavidade gasta menos combustível do que arrancadas e freadas bruscas.",
+      "A pressão correta dos pneus reduz a resistência e torna a direção mais segura.",
+      "Tire os objetos pesados de que não precisa e retire o bagageiro de teto quando não usar."
+     ],
+     "q": "Se você dirige, quais destes hábitos já tem?",
+     "c": "Confira esta semana a pressão dos pneus e tente dirigir com suavidade na próxima viagem."
+    }
+   }
+  }
+ ]
+}

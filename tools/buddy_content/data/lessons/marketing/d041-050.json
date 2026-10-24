@@ -1,0 +1,835 @@
+{
+ "topic": "marketing",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brand consistency",
+     "g": "Why repeating the same look and voice builds recognition.",
+     "p": [
+      "Recognition grows through repetition: the same colours, words and promise again and again.",
+      "Inconsistency makes people unsure who you are and whether to trust you.",
+      "Consistency is not boring; you can vary the content and keep the character."
+     ],
+     "q": "Which brand feels the same everywhere you meet it?",
+     "c": "Check three touchpoints of one brand and note what stays the same in all of them."
+    },
+    "de": {
+     "t": "Markenkonsistenz",
+     "g": "Warum gleiches Aussehen und gleiche Stimme Wiedererkennung schaffen.",
+     "p": [
+      "Wiedererkennung wächst durch Wiederholung: gleiche Farben, Worte und Versprechen immer wieder.",
+      "Inkonsistenz verunsichert, wer du bist und ob man dir vertrauen kann.",
+      "Konsistenz ist nicht langweilig; der Inhalt darf variieren, der Charakter bleibt."
+     ],
+     "q": "Welche Marke wirkt überall, wo du ihr begegnest, gleich?",
+     "c": "Prüfe drei Touchpoints einer Marke und notiere, was überall gleich bleibt."
+    },
+    "es": {
+     "t": "Coherencia de marca",
+     "g": "Por qué repetir el mismo aspecto y voz crea reconocimiento.",
+     "p": [
+      "El reconocimiento crece con la repetición: mismos colores, palabras y promesa una y otra vez.",
+      "La incoherencia hace dudar de quién eres y de si fiarse.",
+      "La coherencia no es aburrida: puedes variar el contenido y mantener el carácter."
+     ],
+     "q": "¿Qué marca se siente igual en todos los sitios donde la encuentras?",
+     "c": "Revisa tres puntos de contacto de una marca y anota qué se mantiene igual en todos."
+    },
+    "fr": {
+     "t": "La cohérence de marque",
+     "g": "Pourquoi répéter le même style et la même voix crée de la reconnaissance.",
+     "p": [
+      "La reconnaissance grandit par la répétition : mêmes couleurs, mots et promesse encore et encore.",
+      "L'incohérence fait douter de qui tu es et de la confiance à accorder.",
+      "La cohérence n'est pas ennuyeuse : le contenu varie, le caractère reste."
+     ],
+     "q": "Quelle marque te paraît identique partout où tu la croises ?",
+     "c": "Examine trois points de contact d'une marque et note ce qui reste identique."
+    },
+    "it": {
+     "t": "La coerenza del marchio",
+     "g": "Perché ripetere lo stesso aspetto e la stessa voce crea riconoscibilità.",
+     "p": [
+      "La riconoscibilità cresce con la ripetizione: stessi colori, parole e promessa ancora e ancora.",
+      "L'incoerenza fa dubitare di chi sei e se fidarsi.",
+      "La coerenza non è noiosa: il contenuto può variare, il carattere resta."
+     ],
+     "q": "Quale marchio ti sembra uguale ovunque lo incontri?",
+     "c": "Controlla tre punti di contatto di un marchio e annota cosa resta uguale in tutti."
+    },
+    "pt": {
+     "t": "A consistência da marca",
+     "g": "Porque repetir o mesmo aspeto e voz cria reconhecimento.",
+     "p": [
+      "O reconhecimento cresce com a repetição: mesmas cores, palavras e promessa vezes sem conta.",
+      "A inconsistência faz duvidar de quem és e se se pode confiar.",
+      "A consistência não é aborrecida: o conteúdo varia, o carácter mantém-se."
+     ],
+     "q": "Que marca parece igual em todo o lado onde a encontras?",
+     "c": "Verifica três pontos de contacto de uma marca e anota o que se mantém igual em todos."
+    },
+    "pt_BR": {
+     "t": "A consistência da marca",
+     "g": "Por que repetir o mesmo visual e voz cria reconhecimento.",
+     "p": [
+      "O reconhecimento cresce com a repetição: mesmas cores, palavras e promessa vez após vez.",
+      "A inconsistência faz duvidar de quem você é e se pode confiar.",
+      "A consistência não é chata: o conteúdo varia, o caráter permanece."
+     ],
+     "q": "Que marca parece a mesma em todo lugar onde você a encontra?",
+     "c": "Confira três pontos de contato de uma marca e anote o que fica igual em todos."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brand guidelines",
+     "g": "A simple guide that keeps everyone using the brand the same way.",
+     "p": [
+      "A guide lists logo use, colours, fonts, voice and a few examples.",
+      "It saves time, because nobody has to guess what is on brand.",
+      "Keep it short, visual and easy to find so people really use it."
+     ],
+     "q": "If you wrote a one-page guide, what is the first rule you would put in?",
+     "c": "Draft a one-page guide with logo rule, colours, font, voice and one do and don't."
+    },
+    "de": {
+     "t": "Markenrichtlinien",
+     "g": "Ein einfacher Leitfaden, damit alle die Marke gleich verwenden.",
+     "p": [
+      "Ein Leitfaden listet Logo-Nutzung, Farben, Schriften, Stimme und ein paar Beispiele.",
+      "Er spart Zeit, weil niemand raten muss, was zur Marke passt.",
+      "Halte ihn kurz, visuell und leicht auffindbar, damit er wirklich genutzt wird."
+     ],
+     "q": "Wenn du einen Ein-Seiten-Leitfaden schriebst, welche Regel stünde zuerst darin?",
+     "c": "Entwirf einen Ein-Seiten-Leitfaden mit Logo-Regel, Farben, Schrift, Stimme und je einem Do und Don't."
+    },
+    "es": {
+     "t": "Guía de marca",
+     "g": "Una guía sencilla para que todos usen la marca de la misma manera.",
+     "p": [
+      "Una guía recoge uso del logotipo, colores, fuentes, voz y algunos ejemplos.",
+      "Ahorra tiempo, porque nadie tiene que adivinar qué es de la marca.",
+      "Hazla corta, visual y fácil de encontrar para que se use de verdad."
+     ],
+     "q": "Si escribieras una guía de una página, ¿cuál sería la primera regla?",
+     "c": "Redacta una guía de una página con regla del logotipo, colores, fuente, voz y un sí y un no."
+    },
+    "fr": {
+     "t": "La charte de marque",
+     "g": "Un guide simple pour que chacun utilise la marque de la même façon.",
+     "p": [
+      "Un guide liste l'usage du logo, les couleurs, polices, la voix et quelques exemples.",
+      "Il fait gagner du temps : personne n'a à deviner ce qui est conforme.",
+      "Garde-le court, visuel et facile à trouver pour qu'on l'utilise vraiment."
+     ],
+     "q": "Si tu écrivais un guide d'une page, quelle serait la première règle ?",
+     "c": "Rédige un guide d'une page : règle du logo, couleurs, police, voix, un à faire et un à éviter."
+    },
+    "it": {
+     "t": "Le linee guida del marchio",
+     "g": "Una guida semplice perché tutti usino il marchio nello stesso modo.",
+     "p": [
+      "Una guida elenca uso del logo, colori, caratteri, voce e qualche esempio.",
+      "Fa risparmiare tempo, perché nessuno deve indovinare cosa è in linea.",
+      "Tienila breve, visiva e facile da trovare così viene usata davvero."
+     ],
+     "q": "Se scrivessi una guida di una pagina, quale sarebbe la prima regola?",
+     "c": "Scrivi una guida di una pagina con regola del logo, colori, carattere, voce e un sì e un no."
+    },
+    "pt": {
+     "t": "As diretrizes da marca",
+     "g": "Um guia simples para que todos usem a marca da mesma forma.",
+     "p": [
+      "Um guia lista o uso do logótipo, cores, letras, voz e alguns exemplos.",
+      "Poupa tempo, porque ninguém tem de adivinhar o que está de acordo com a marca.",
+      "Mantém-no curto, visual e fácil de encontrar para ser mesmo usado."
+     ],
+     "q": "Se escrevesses um guia de uma página, qual seria a primeira regra?",
+     "c": "Redige um guia de uma página com regra do logótipo, cores, letra, voz e um sim e um não."
+    },
+    "pt_BR": {
+     "t": "As diretrizes da marca",
+     "g": "Um guia simples para que todos usem a marca do mesmo jeito.",
+     "p": [
+      "Um guia lista o uso do logo, cores, fontes, voz e alguns exemplos.",
+      "Economiza tempo, porque ninguém precisa adivinhar o que está de acordo com a marca.",
+      "Mantenha-o curto, visual e fácil de encontrar para ser usado de verdade."
+     ],
+     "q": "Se você escrevesse um guia de uma página, qual seria a primeira regra?",
+     "c": "Redija um guia de uma página com regra do logo, cores, fonte, voz e um pode e um não pode."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rebranding",
+     "g": "Why and how brands refresh their image over time.",
+     "p": [
+      "Brands refresh when the audience, the offer or the world around them has changed.",
+      "A good refresh keeps what people love and removes what feels outdated.",
+      "Change slowly and explain why, so loyal customers feel brought along."
+     ],
+     "q": "Have you seen a brand change its look, and did you like it?",
+     "c": "Pick a brand you know and list what you would keep and what you would refresh."
+    },
+    "de": {
+     "t": "Rebranding",
+     "g": "Warum und wie Marken ihr Bild im Lauf der Zeit erneuern.",
+     "p": [
+      "Marken erneuern sich, wenn sich Zielgruppe, Angebot oder Umfeld verändert haben.",
+      "Eine gute Auffrischung bewahrt, was Menschen lieben, und entfernt Veraltetes.",
+      "Ändere behutsam und erkläre warum, damit treue Kunden sich mitgenommen fühlen."
+     ],
+     "q": "Hast du erlebt, dass eine Marke ihr Aussehen änderte, und gefiel es dir?",
+     "c": "Wähle eine bekannte Marke und liste auf, was du behalten und was du erneuern würdest."
+    },
+    "es": {
+     "t": "Rebranding",
+     "g": "Por qué y cómo las marcas renuevan su imagen con el tiempo.",
+     "p": [
+      "Las marcas se renuevan cuando cambian el público, la oferta o el mundo que las rodea.",
+      "Una buena renovación conserva lo que la gente quiere y quita lo anticuado.",
+      "Cambia despacio y explica por qué, para que los clientes fieles se sientan incluidos."
+     ],
+     "q": "¿Has visto a una marca cambiar de imagen y te gustó?",
+     "c": "Elige una marca que conozcas y anota qué conservarías y qué renovarías."
+    },
+    "fr": {
+     "t": "Le rebranding",
+     "g": "Pourquoi et comment les marques rafraîchissent leur image avec le temps.",
+     "p": [
+      "Les marques se renouvellent quand le public, l'offre ou le monde autour ont changé.",
+      "Un bon rafraîchissement garde ce que les gens aiment et retire ce qui paraît daté.",
+      "Change progressivement et explique pourquoi, pour que les clients fidèles suivent."
+     ],
+     "q": "As-tu vu une marque changer d'image, et cela t'a-t-il plu ?",
+     "c": "Choisis une marque connue et liste ce que tu garderais et ce que tu rafraîchirais."
+    },
+    "it": {
+     "t": "Il rebranding",
+     "g": "Perché e come i marchi rinnovano la loro immagine nel tempo.",
+     "p": [
+      "I marchi si rinnovano quando cambiano pubblico, offerta o il mondo intorno.",
+      "Un buon rinnovamento mantiene ciò che la gente ama e toglie ciò che sa di vecchio.",
+      "Cambia con gradualità e spiega perché, così i clienti fedeli si sentono coinvolti."
+     ],
+     "q": "Hai visto un marchio cambiare immagine e ti è piaciuto?",
+     "c": "Scegli un marchio che conosci ed elenca cosa terresti e cosa rinnoveresti."
+    },
+    "pt": {
+     "t": "O rebranding",
+     "g": "Porque e como as marcas renovam a sua imagem ao longo do tempo.",
+     "p": [
+      "As marcas renovam-se quando mudam o público, a oferta ou o mundo à volta.",
+      "Uma boa renovação mantém o que as pessoas amam e retira o que parece antiquado.",
+      "Muda devagar e explica porquê, para que os clientes fiéis se sintam incluídos."
+     ],
+     "q": "Já viste uma marca mudar de imagem e gostaste?",
+     "c": "Escolhe uma marca que conheças e lista o que manterias e o que renovarias."
+    },
+    "pt_BR": {
+     "t": "O rebranding",
+     "g": "Por que e como as marcas renovam sua imagem ao longo do tempo.",
+     "p": [
+      "As marcas se renovam quando mudam o público, a oferta ou o mundo ao redor.",
+      "Uma boa renovação mantém o que as pessoas amam e tira o que parece ultrapassado.",
+      "Mude devagar e explique por quê, para que os clientes fiéis se sintam incluídos."
+     ],
+     "q": "Você já viu uma marca mudar de visual e gostou?",
+     "c": "Escolha uma marca que conhece e liste o que manteria e o que renovaria."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Iconic brands and their stories",
+     "g": "Learn from brands that became part of everyday language.",
+     "p": [
+      "Some brand names became the word people use for the whole product category.",
+      "Their stories often share a clear promise, steady quality and decades of consistency.",
+      "They earned a place in daily life by being useful, not just loud."
+     ],
+     "q": "Which brand is so familiar that you use its name for the whole category?",
+     "c": "Choose an iconic brand and note three habits behind its lasting success."
+    },
+    "de": {
+     "t": "Ikonische Marken und ihre Geschichten",
+     "g": "Von Marken lernen, die Teil der Alltagssprache wurden.",
+     "p": [
+      "Manche Markennamen wurden zum Wort für die ganze Produktkategorie.",
+      "Ihre Geschichten zeigen oft ein klares Versprechen, stete Qualität und jahrzehntelange Konsistenz.",
+      "Sie verdienten sich ihren Platz im Alltag durch Nutzen, nicht nur durch Lautstärke."
+     ],
+     "q": "Welche Marke ist so vertraut, dass du ihren Namen für die ganze Kategorie nutzt?",
+     "c": "Wähle eine ikonische Marke und notiere drei Gewohnheiten hinter ihrem dauerhaften Erfolg."
+    },
+    "es": {
+     "t": "Marcas icónicas y sus historias",
+     "g": "Aprender de marcas que se volvieron parte del lenguaje cotidiano.",
+     "p": [
+      "Algunos nombres de marca se convirtieron en la palabra para toda la categoría.",
+      "Sus historias suelen compartir una promesa clara, calidad constante y décadas de coherencia.",
+      "Se ganaron un lugar en el día a día por ser útiles, no solo por hacer ruido."
+     ],
+     "q": "¿Qué marca es tan familiar que usas su nombre para toda la categoría?",
+     "c": "Elige una marca icónica y anota tres hábitos detrás de su éxito duradero."
+    },
+    "fr": {
+     "t": "Marques iconiques et leurs histoires",
+     "g": "Apprendre de marques entrées dans le langage courant.",
+     "p": [
+      "Certains noms de marque sont devenus le mot pour toute la catégorie de produits.",
+      "Leurs histoires partagent souvent une promesse claire, une qualité constante et des décennies de cohérence.",
+      "Elles ont gagné leur place au quotidien par leur utilité, pas par leur bruit."
+     ],
+     "q": "Quelle marque est si familière que tu utilises son nom pour toute la catégorie ?",
+     "c": "Choisis une marque iconique et note trois habitudes derrière son succès durable."
+    },
+    "it": {
+     "t": "Marchi iconici e le loro storie",
+     "g": "Imparare da marchi diventati parte del linguaggio quotidiano.",
+     "p": [
+      "Alcuni nomi di marca sono diventati la parola per l'intera categoria di prodotto.",
+      "Le loro storie spesso condividono una promessa chiara, qualità costante e decenni di coerenza.",
+      "Si sono guadagnati un posto nella vita quotidiana essendo utili, non solo rumorosi."
+     ],
+     "q": "Quale marchio è così familiare che usi il suo nome per l'intera categoria?",
+     "c": "Scegli un marchio iconico e annota tre abitudini dietro il suo successo duraturo."
+    },
+    "pt": {
+     "t": "Marcas icónicas e as suas histórias",
+     "g": "Aprender com marcas que entraram na linguagem do dia a dia.",
+     "p": [
+      "Alguns nomes de marca tornaram-se a palavra para toda a categoria de produto.",
+      "As suas histórias partilham muitas vezes uma promessa clara, qualidade constante e décadas de consistência.",
+      "Ganharam um lugar no quotidiano por serem úteis, não só barulhentas."
+     ],
+     "q": "Que marca é tão familiar que usas o seu nome para toda a categoria?",
+     "c": "Escolhe uma marca icónica e anota três hábitos por trás do seu sucesso duradouro."
+    },
+    "pt_BR": {
+     "t": "Marcas icônicas e suas histórias",
+     "g": "Aprender com marcas que entraram na linguagem do dia a dia.",
+     "p": [
+      "Alguns nomes de marca viraram a palavra para toda a categoria de produto.",
+      "As histórias delas costumam compartilhar uma promessa clara, qualidade constante e décadas de consistência.",
+      "Elas conquistaram um lugar no cotidiano sendo úteis, não só barulhentas."
+     ],
+     "q": "Que marca é tão familiar que você usa o nome dela para toda a categoria?",
+     "c": "Escolha uma marca icônica e anote três hábitos por trás do seu sucesso duradouro."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Local brands with big hearts",
+     "g": "How small brands win loyalty through authenticity.",
+     "p": [
+      "Small brands can win with personal care, local knowledge and real faces.",
+      "Being genuine beats being polished: people love the person behind the product.",
+      "Community ties, such as sponsoring a school team or supporting neighbours, build loyalty."
+     ],
+     "q": "Which local business do you love, and what makes it special?",
+     "c": "Visit or recall a local shop and list three things it does that big brands cannot."
+    },
+    "de": {
+     "t": "Lokale Marken mit großem Herz",
+     "g": "Wie kleine Marken durch Echtheit Treue gewinnen.",
+     "p": [
+      "Kleine Marken punkten mit persönlicher Fürsorge, lokalem Wissen und echten Gesichtern.",
+      "Echt schlägt glatt: Menschen lieben die Person hinter dem Produkt.",
+      "Verbindung zur Gemeinschaft, etwa ein Schulteam zu unterstützen, schafft Treue."
+     ],
+     "q": "Welches lokale Geschäft liebst du und was macht es besonders?",
+     "c": "Besuche oder erinnere einen lokalen Laden und nenne drei Dinge, die große Marken nicht können."
+    },
+    "es": {
+     "t": "Marcas locales con gran corazón",
+     "g": "Cómo las marcas pequeñas ganan lealtad con autenticidad.",
+     "p": [
+      "Las marcas pequeñas ganan con cuidado personal, conocimiento local y caras reales.",
+      "Ser genuino vence a ser pulido: la gente ama a la persona detrás del producto.",
+      "Los lazos con la comunidad, como patrocinar un equipo escolar, generan lealtad."
+     ],
+     "q": "¿Qué negocio local te encanta y qué lo hace especial?",
+     "c": "Visita o recuerda una tienda local y anota tres cosas que hace y las grandes marcas no."
+    },
+    "fr": {
+     "t": "Marques locales au grand cœur",
+     "g": "Comment les petites marques gagnent la fidélité par l'authenticité.",
+     "p": [
+      "Les petites marques gagnent par l'attention personnelle, la connaissance locale et de vrais visages.",
+      "Être authentique vaut mieux qu'être lisse : on aime la personne derrière le produit.",
+      "Les liens avec la communauté, comme soutenir une équipe scolaire, créent la fidélité."
+     ],
+     "q": "Quel commerce local aimes-tu, et qu'est-ce qui le rend spécial ?",
+     "c": "Visite ou rappelle-toi une boutique locale et note trois choses que les grandes marques ne font pas."
+    },
+    "it": {
+     "t": "Marchi locali dal grande cuore",
+     "g": "Come i piccoli marchi conquistano fedeltà con l'autenticità.",
+     "p": [
+      "I piccoli marchi vincono con cura personale, conoscenza locale e volti veri.",
+      "Essere autentici batte essere impeccabili: si ama la persona dietro il prodotto.",
+      "I legami con la comunità, come sostenere una squadra scolastica, creano fedeltà."
+     ],
+     "q": "Quale attività locale ami e cosa la rende speciale?",
+     "c": "Visita o ricorda un negozio locale e annota tre cose che i grandi marchi non fanno."
+    },
+    "pt": {
+     "t": "Marcas locais com grande coração",
+     "g": "Como as marcas pequenas ganham fidelidade com autenticidade.",
+     "p": [
+      "As marcas pequenas ganham com cuidado pessoal, conhecimento local e caras reais.",
+      "Ser genuíno vence ser polido: as pessoas amam quem está por trás do produto.",
+      "Laços com a comunidade, como apoiar uma equipa escolar, criam fidelidade."
+     ],
+     "q": "Que negócio local adoras e o que o torna especial?",
+     "c": "Visita ou recorda uma loja local e anota três coisas que ela faz e as grandes marcas não."
+    },
+    "pt_BR": {
+     "t": "Marcas locais de grande coração",
+     "g": "Como as marcas pequenas ganham fidelidade com autenticidade.",
+     "p": [
+      "As marcas pequenas ganham com cuidado pessoal, conhecimento local e rostos reais.",
+      "Ser genuíno vence ser polido: as pessoas amam quem está por trás do produto.",
+      "Laços com a comunidade, como apoiar um time da escola, criam fidelidade."
+     ],
+     "q": "Que negócio local você adora e o que o torna especial?",
+     "c": "Visite ou lembre de uma loja local e anote três coisas que ela faz e as grandes marcas não."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brands across languages",
+     "g": "Names and slogans that travel well, and some that need adapting.",
+     "p": [
+      "A name can sound lovely in one language and awkward or odd in another.",
+      "Slogans built on wordplay rarely survive literal translation.",
+      "Adapt the meaning and feeling, and ask native speakers before you launch."
+     ],
+     "q": "Have you noticed a brand name or slogan that sounds funny in your language?",
+     "c": "Say one brand name aloud as a speaker of another language might, and note what changes."
+    },
+    "de": {
+     "t": "Marken über Sprachgrenzen",
+     "g": "Namen und Slogans, die gut reisen, und manche, die Anpassung brauchen.",
+     "p": [
+      "Ein Name kann in einer Sprache schön klingen und in einer anderen seltsam.",
+      "Slogans mit Wortspiel überleben wörtliche Übersetzung selten.",
+      "Passe Sinn und Gefühl an und frage Muttersprachler, bevor du startest."
+     ],
+     "q": "Ist dir ein Markenname oder Slogan aufgefallen, der in deiner Sprache komisch klingt?",
+     "c": "Sprich einen Markennamen so aus, wie es Sprecher einer anderen Sprache täten, und notiere Änderungen."
+    },
+    "es": {
+     "t": "Marcas entre idiomas",
+     "g": "Nombres y eslóganes que viajan bien y otros que necesitan adaptarse.",
+     "p": [
+      "Un nombre puede sonar precioso en un idioma y raro o incómodo en otro.",
+      "Los eslóganes basados en juegos de palabras rara vez sobreviven a la traducción literal.",
+      "Adapta el sentido y la emoción y pregunta a hablantes nativos antes de lanzar."
+     ],
+     "q": "¿Has notado un nombre o eslogan que suene gracioso en tu idioma?",
+     "c": "Di en voz alta un nombre de marca como lo haría un hablante de otro idioma y anota qué cambia."
+    },
+    "fr": {
+     "t": "Les marques et les langues",
+     "g": "Noms et slogans qui voyagent bien, et certains à adapter.",
+     "p": [
+      "Un nom peut sonner joliment dans une langue et bizarrement dans une autre.",
+      "Les slogans à jeux de mots survivent rarement à la traduction littérale.",
+      "Adapte le sens et l'émotion, et demande à des locuteurs natifs avant de te lancer."
+     ],
+     "q": "As-tu remarqué un nom de marque ou un slogan qui sonne drôle dans ta langue ?",
+     "c": "Prononce un nom de marque comme un locuteur d'une autre langue et note ce qui change."
+    },
+    "it": {
+     "t": "I marchi tra le lingue",
+     "g": "Nomi e slogan che viaggiano bene e altri che vanno adattati.",
+     "p": [
+      "Un nome può suonare bene in una lingua e strano o goffo in un'altra.",
+      "Gli slogan basati sui giochi di parole raramente sopravvivono alla traduzione letterale.",
+      "Adatta il senso e l'emozione e chiedi a madrelingua prima di lanciare."
+     ],
+     "q": "Hai notato un nome o uno slogan che suona buffo nella tua lingua?",
+     "c": "Pronuncia un nome di marchio come farebbe chi parla un'altra lingua e annota cosa cambia."
+    },
+    "pt": {
+     "t": "As marcas entre línguas",
+     "g": "Nomes e slogans que viajam bem e outros que precisam de adaptação.",
+     "p": [
+      "Um nome pode soar lindo numa língua e estranho ou desajeitado noutra.",
+      "Os slogans baseados em jogos de palavras raramente sobrevivem à tradução literal.",
+      "Adapta o sentido e a emoção e pergunta a falantes nativos antes de lançar."
+     ],
+     "q": "Já reparaste num nome ou slogan que soa engraçado na tua língua?",
+     "c": "Diz em voz alta o nome de uma marca como o diria um falante de outra língua e anota o que muda."
+    },
+    "pt_BR": {
+     "t": "As marcas entre idiomas",
+     "g": "Nomes e slogans que viajam bem e outros que precisam de adaptação.",
+     "p": [
+      "Um nome pode soar lindo em um idioma e estranho ou desajeitado em outro.",
+      "Slogans baseados em jogos de palavras raramente sobrevivem à tradução literal.",
+      "Adapte o sentido e a emoção e pergunte a falantes nativos antes de lançar."
+     ],
+     "q": "Você já reparou em um nome ou slogan que soa engraçado no seu idioma?",
+     "c": "Diga em voz alta o nome de uma marca como falaria alguém de outro idioma e anote o que muda."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Slogans and taglines",
+     "g": "Short phrases that capture what a brand is about.",
+     "p": [
+      "A tagline is a few words that sum up your promise or spirit.",
+      "Great ones are short, rhythmic, true and easy to say aloud.",
+      "Test it on a friend: if they can repeat it tomorrow, it works."
+     ],
+     "q": "Which slogan have you never forgotten, and why does it stick?",
+     "c": "Write five tagline ideas for a brand and pick the one a friend can repeat."
+    },
+    "de": {
+     "t": "Slogans und Taglines",
+     "g": "Kurze Sätze, die einfangen, worum es bei einer Marke geht.",
+     "p": [
+      "Eine Tagline sind wenige Worte, die dein Versprechen oder deinen Geist zusammenfassen.",
+      "Gute sind kurz, rhythmisch, wahr und leicht auszusprechen.",
+      "Teste sie bei einer Freundin: Kann sie sie morgen wiederholen, funktioniert sie."
+     ],
+     "q": "Welchen Slogan hast du nie vergessen und warum bleibt er hängen?",
+     "c": "Schreibe fünf Tagline-Ideen für eine Marke und wähle die, die eine Freundin wiederholen kann."
+    },
+    "es": {
+     "t": "Eslóganes y lemas",
+     "g": "Frases cortas que capturan de qué va una marca.",
+     "p": [
+      "Un lema son pocas palabras que resumen tu promesa o espíritu.",
+      "Los buenos son cortos, con ritmo, verdaderos y fáciles de decir en voz alta.",
+      "Pruébalo con un amigo: si puede repetirlo mañana, funciona."
+     ],
+     "q": "¿Qué eslogan no has olvidado nunca y por qué se queda?",
+     "c": "Escribe cinco ideas de lema para una marca y elige la que un amigo pueda repetir."
+    },
+    "fr": {
+     "t": "Slogans et signatures",
+     "g": "Des phrases courtes qui résument l'esprit d'une marque.",
+     "p": [
+      "Une signature, ce sont quelques mots qui résument ta promesse ou ton esprit.",
+      "Les meilleures sont courtes, rythmées, vraies et faciles à dire à voix haute.",
+      "Teste-la sur un ami : s'il peut la répéter demain, elle fonctionne."
+     ],
+     "q": "Quel slogan n'as-tu jamais oublié, et pourquoi reste-t-il ?",
+     "c": "Écris cinq idées de signature pour une marque et garde celle qu'un ami peut répéter."
+    },
+    "it": {
+     "t": "Slogan e tagline",
+     "g": "Frasi brevi che catturano l'essenza di un marchio.",
+     "p": [
+      "Una tagline sono poche parole che riassumono la tua promessa o il tuo spirito.",
+      "Le migliori sono brevi, ritmiche, vere e facili da dire ad alta voce.",
+      "Provala con un amico: se domani sa ripeterla, funziona."
+     ],
+     "q": "Quale slogan non hai mai dimenticato e perché resta in mente?",
+     "c": "Scrivi cinque idee di tagline per un marchio e scegli quella che un amico sa ripetere."
+    },
+    "pt": {
+     "t": "Slogans e lemas",
+     "g": "Frases curtas que captam a essência de uma marca.",
+     "p": [
+      "Um lema são poucas palavras que resumem a tua promessa ou espírito.",
+      "Os melhores são curtos, rítmicos, verdadeiros e fáceis de dizer em voz alta.",
+      "Testa com um amigo: se amanhã o souber repetir, funciona."
+     ],
+     "q": "Que slogan nunca esqueceste e porque se fixa?",
+     "c": "Escreve cinco ideias de lema para uma marca e escolhe a que um amigo consiga repetir."
+    },
+    "pt_BR": {
+     "t": "Slogans e lemas",
+     "g": "Frases curtas que captam a essência de uma marca.",
+     "p": [
+      "Um lema são poucas palavras que resumem sua promessa ou espírito.",
+      "Os melhores são curtos, rítmicos, verdadeiros e fáceis de dizer em voz alta.",
+      "Teste com um amigo: se amanhã ele souber repetir, funciona."
+     ],
+     "q": "Que slogan você nunca esqueceu e por que ele gruda?",
+     "c": "Escreva cinco ideias de lema para uma marca e escolha a que um amigo consiga repetir."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Packaging as marketing",
+     "g": "How packaging attracts attention and tells a story on the shelf.",
+     "p": [
+      "Packaging is the first thing a customer touches and often the main ad on a shelf.",
+      "It protects the product, shows what it is and expresses the brand feeling.",
+      "Clear information and less waste show respect for people and the planet."
+     ],
+     "q": "What package have you kept or admired because it was well designed?",
+     "c": "Study one package and list what it says through colour, shape, words and material."
+    },
+    "de": {
+     "t": "Verpackung als Marketing",
+     "g": "Wie Verpackung Aufmerksamkeit erzeugt und im Regal eine Geschichte erzählt.",
+     "p": [
+      "Verpackung ist das Erste, was ein Kunde anfasst, und oft die wichtigste Werbung im Regal.",
+      "Sie schützt das Produkt, zeigt, was es ist, und drückt das Markengefühl aus.",
+      "Klare Infos und weniger Abfall zeigen Respekt vor Menschen und Planet."
+     ],
+     "q": "Welche Verpackung hast du behalten oder bewundert, weil sie gut gestaltet war?",
+     "c": "Untersuche eine Verpackung und liste, was sie durch Farbe, Form, Worte und Material sagt."
+    },
+    "es": {
+     "t": "El envase como marketing",
+     "g": "Cómo el envase atrae la atención y cuenta una historia en el estante.",
+     "p": [
+      "El envase es lo primero que toca el cliente y a menudo el principal anuncio en el estante.",
+      "Protege el producto, muestra qué es y expresa la sensación de marca.",
+      "Información clara y menos residuos muestran respeto por las personas y el planeta."
+     ],
+     "q": "¿Qué envase has guardado o admirado por estar bien diseñado?",
+     "c": "Estudia un envase y anota qué dice con color, forma, palabras y material."
+    },
+    "fr": {
+     "t": "L'emballage comme marketing",
+     "g": "Comment l'emballage attire l'attention et raconte une histoire en rayon.",
+     "p": [
+      "L'emballage est la première chose que le client touche et souvent la principale pub en rayon.",
+      "Il protège le produit, montre ce qu'il est et exprime l'esprit de la marque.",
+      "Une information claire et moins de déchets montrent du respect pour les gens et la planète."
+     ],
+     "q": "Quel emballage as-tu gardé ou admiré parce qu'il était bien conçu ?",
+     "c": "Étudie un emballage et note ce qu'il dit par la couleur, la forme, les mots et la matière."
+    },
+    "it": {
+     "t": "La confezione come marketing",
+     "g": "Come la confezione attira l'attenzione e racconta una storia sullo scaffale.",
+     "p": [
+      "La confezione è la prima cosa che il cliente tocca e spesso la principale pubblicità sullo scaffale.",
+      "Protegge il prodotto, mostra cos'è ed esprime la sensazione del marchio.",
+      "Informazioni chiare e meno sprechi mostrano rispetto per le persone e il pianeta."
+     ],
+     "q": "Quale confezione hai tenuto o ammirato perché ben progettata?",
+     "c": "Studia una confezione e annota cosa dice con colore, forma, parole e materiale."
+    },
+    "pt": {
+     "t": "A embalagem como marketing",
+     "g": "Como a embalagem atrai atenção e conta uma história na prateleira.",
+     "p": [
+      "A embalagem é a primeira coisa que o cliente toca e muitas vezes o principal anúncio na prateleira.",
+      "Protege o produto, mostra o que é e exprime a sensação da marca.",
+      "Informação clara e menos desperdício mostram respeito pelas pessoas e pelo planeta."
+     ],
+     "q": "Que embalagem guardaste ou admiraste por ser bem desenhada?",
+     "c": "Estuda uma embalagem e lista o que diz através de cor, forma, palavras e material."
+    },
+    "pt_BR": {
+     "t": "A embalagem como marketing",
+     "g": "Como a embalagem atrai atenção e conta uma história na prateleira.",
+     "p": [
+      "A embalagem é a primeira coisa que o cliente toca e muitas vezes o principal anúncio na prateleira.",
+      "Ela protege o produto, mostra o que é e expressa a sensação da marca.",
+      "Informação clara e menos desperdício mostram respeito pelas pessoas e pelo planeta."
+     ],
+     "q": "Que embalagem você guardou ou admirou por ser bem desenhada?",
+     "c": "Estude uma embalagem e liste o que ela diz por meio de cor, forma, palavras e material."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brand experience",
+     "g": "How shops, websites and service create feelings about a brand.",
+     "p": [
+      "Brand experience is the sum of how it feels to deal with you at every step.",
+      "A friendly greeting, easy checkout or fast answer can matter more than an ad.",
+      "Small kind details are remembered, and people love to tell about them."
+     ],
+     "q": "What was the last great experience you had with a shop or service?",
+     "c": "Walk through one brand's experience as a customer and mark one moment to improve."
+    },
+    "de": {
+     "t": "Markenerlebnis",
+     "g": "Wie Geschäfte, Websites und Service Gefühle zu einer Marke erzeugen.",
+     "p": [
+      "Markenerlebnis ist die Summe dessen, wie es sich anfühlt, mit dir zu tun zu haben.",
+      "Ein freundlicher Gruß, einfacher Checkout oder schnelle Antwort kann mehr zählen als Werbung.",
+      "Kleine freundliche Details bleiben im Gedächtnis, und man erzählt gern davon."
+     ],
+     "q": "Was war dein letztes großartiges Erlebnis mit einem Laden oder Service?",
+     "c": "Geh das Erlebnis einer Marke als Kunde durch und markiere einen Moment zum Verbessern."
+    },
+    "es": {
+     "t": "Experiencia de marca",
+     "g": "Cómo tiendas, webs y servicio crean sensaciones sobre una marca.",
+     "p": [
+      "La experiencia de marca es la suma de cómo se siente tratar contigo en cada paso.",
+      "Un saludo amable, un pago fácil o una respuesta rápida pueden valer más que un anuncio.",
+      "Los pequeños detalles amables se recuerdan y a la gente le encanta contarlos."
+     ],
+     "q": "¿Cuál fue tu última gran experiencia con una tienda o servicio?",
+     "c": "Recorre la experiencia de una marca como cliente y marca un momento por mejorar."
+    },
+    "fr": {
+     "t": "L'expérience de marque",
+     "g": "Comment boutiques, sites et service créent des sentiments envers une marque.",
+     "p": [
+      "L'expérience de marque est la somme de ce qu'on ressent en traitant avec toi à chaque étape.",
+      "Un accueil aimable, un paiement simple ou une réponse rapide valent parfois plus qu'une pub.",
+      "Les petits détails gentils se retiennent, et on aime les raconter."
+     ],
+     "q": "Quelle a été ta dernière belle expérience avec un magasin ou un service ?",
+     "c": "Parcours l'expérience d'une marque en client et repère un moment à améliorer."
+    },
+    "it": {
+     "t": "L'esperienza di marca",
+     "g": "Come negozi, siti e servizio creano sensazioni su un marchio.",
+     "p": [
+      "L'esperienza di marca è la somma di come ci si sente a trattare con te in ogni fase.",
+      "Un saluto cordiale, un pagamento semplice o una risposta rapida possono valere più di una pubblicità.",
+      "I piccoli dettagli gentili si ricordano e piace raccontarli."
+     ],
+     "q": "Qual è stata la tua ultima grande esperienza con un negozio o servizio?",
+     "c": "Ripercorri l'esperienza di un marchio come cliente e segna un momento da migliorare."
+    },
+    "pt": {
+     "t": "A experiência de marca",
+     "g": "Como lojas, sites e serviço criam sentimentos sobre uma marca.",
+     "p": [
+      "A experiência de marca é a soma de como é lidar contigo em cada passo.",
+      "Uma saudação simpática, um pagamento fácil ou uma resposta rápida valem por vezes mais do que um anúncio.",
+      "Os pequenos detalhes simpáticos recordam-se e as pessoas gostam de os contar."
+     ],
+     "q": "Qual foi a tua última grande experiência com uma loja ou serviço?",
+     "c": "Percorre a experiência de uma marca como cliente e marca um momento a melhorar."
+    },
+    "pt_BR": {
+     "t": "A experiência de marca",
+     "g": "Como lojas, sites e atendimento criam sentimentos sobre uma marca.",
+     "p": [
+      "A experiência de marca é a soma de como é lidar com você em cada etapa.",
+      "Uma saudação simpática, um pagamento fácil ou uma resposta rápida às vezes valem mais que um anúncio.",
+      "Pequenos detalhes simpáticos são lembrados e as pessoas adoram contá-los."
+     ],
+     "q": "Qual foi sua última ótima experiência com uma loja ou serviço?",
+     "c": "Percorra a experiência de uma marca como cliente e marque um momento a melhorar."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Employer brand",
+     "g": "How a company's reputation attracts people who want to work there.",
+     "p": [
+      "An employer brand is how a workplace is seen by current and future employees.",
+      "It grows from how people are treated, trained, heard and respected.",
+      "Honest descriptions of the work attract people who will truly fit and stay."
+     ],
+     "q": "What would make you proud to say you work for a company?",
+     "c": "List three things a workplace could do so employees speak well of it."
+    },
+    "de": {
+     "t": "Arbeitgebermarke",
+     "g": "Wie der Ruf eines Unternehmens Menschen anzieht, die dort arbeiten wollen.",
+     "p": [
+      "Eine Arbeitgebermarke ist, wie ein Arbeitsplatz von heutigen und künftigen Mitarbeitenden gesehen wird.",
+      "Sie wächst daraus, wie Menschen behandelt, geschult, gehört und respektiert werden.",
+      "Ehrliche Beschreibungen der Arbeit ziehen Menschen an, die wirklich passen und bleiben."
+     ],
+     "q": "Was würde dich stolz machen, zu sagen, dass du für ein Unternehmen arbeitest?",
+     "c": "Liste drei Dinge, die ein Arbeitsplatz tun könnte, damit Mitarbeitende gut über ihn sprechen."
+    },
+    "es": {
+     "t": "Marca empleadora",
+     "g": "Cómo la reputación de una empresa atrae a quienes quieren trabajar en ella.",
+     "p": [
+      "Una marca empleadora es cómo ven un lugar de trabajo sus empleados actuales y futuros.",
+      "Surge de cómo se trata, forma, escucha y respeta a las personas.",
+      "Las descripciones honestas del trabajo atraen a quienes encajarán y se quedarán."
+     ],
+     "q": "¿Qué te haría sentir orgullo de decir que trabajas en una empresa?",
+     "c": "Anota tres cosas que un lugar de trabajo podría hacer para que sus empleados hablen bien de él."
+    },
+    "fr": {
+     "t": "La marque employeur",
+     "g": "Comment la réputation d'une entreprise attire ceux qui veulent y travailler.",
+     "p": [
+      "La marque employeur, c'est comment un lieu de travail est vu par ses salariés actuels et futurs.",
+      "Elle naît de la façon dont on traite, forme, écoute et respecte les gens.",
+      "Des descriptions honnêtes du travail attirent ceux qui conviendront et resteront."
+     ],
+     "q": "Qu'est-ce qui te rendrait fier de dire que tu travailles pour une entreprise ?",
+     "c": "Liste trois choses qu'un lieu de travail pourrait faire pour que ses salariés en disent du bien."
+    },
+    "it": {
+     "t": "Il brand employer",
+     "g": "Come la reputazione di un'azienda attrae chi vuole lavorarci.",
+     "p": [
+      "Il brand employer è come un luogo di lavoro è visto da dipendenti attuali e futuri.",
+      "Nasce da come le persone sono trattate, formate, ascoltate e rispettate.",
+      "Descrizioni oneste del lavoro attraggono chi si troverà bene e resterà."
+     ],
+     "q": "Cosa ti renderebbe orgoglioso di dire che lavori per un'azienda?",
+     "c": "Elenca tre cose che un luogo di lavoro potrebbe fare perché i dipendenti ne parlino bene."
+    },
+    "pt": {
+     "t": "A marca empregadora",
+     "g": "Como a reputação de uma empresa atrai quem quer lá trabalhar.",
+     "p": [
+      "A marca empregadora é como um local de trabalho é visto por colaboradores atuais e futuros.",
+      "Nasce da forma como as pessoas são tratadas, formadas, ouvidas e respeitadas.",
+      "Descrições honestas do trabalho atraem quem se vai adaptar e ficar."
+     ],
+     "q": "O que te daria orgulho em dizer que trabalhas numa empresa?",
+     "c": "Lista três coisas que um local de trabalho poderia fazer para os colaboradores falarem bem dele."
+    },
+    "pt_BR": {
+     "t": "A marca empregadora",
+     "g": "Como a reputação de uma empresa atrai quem quer trabalhar nela.",
+     "p": [
+      "A marca empregadora é como um local de trabalho é visto por colaboradores atuais e futuros.",
+      "Ela nasce do jeito como as pessoas são tratadas, treinadas, ouvidas e respeitadas.",
+      "Descrições honestas do trabalho atraem quem vai se encaixar e ficar."
+     ],
+     "q": "O que deixaria você orgulhoso de dizer que trabalha em uma empresa?",
+     "c": "Liste três coisas que um local de trabalho poderia fazer para os colaboradores falarem bem dele."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "robotics",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ohm's law in everyday words",
+     "g": "Meet the one formula you will use again and again in robotics.",
+     "p": [
+      "Voltage equals current times resistance, written V = I × R.",
+      "With the same voltage, more resistance means less current.",
+      "Rearranged, current is voltage divided by resistance, so 5 volts across 1000 ohms gives 5 milliamps."
+     ],
+     "q": "Can you describe Ohm's law with your own water-pipe picture?",
+     "c": "Work out the current for 9 volts across a 900 ohm resistor."
+    },
+    "de": {
+     "t": "Das Ohmsche Gesetz in Alltagsworten",
+     "g": "Lerne die eine Formel kennen, die du in der Robotik immer wieder brauchst.",
+     "p": [
+      "Spannung ist Strom mal Widerstand, geschrieben U = I × R.",
+      "Bei gleicher Spannung bedeutet mehr Widerstand weniger Strom.",
+      "Umgestellt ist Strom gleich Spannung durch Widerstand: 5 Volt an 1000 Ohm ergeben 5 Milliampere."
+     ],
+     "q": "Kannst du das Ohmsche Gesetz mit deinem eigenen Wasserrohr-Bild beschreiben?",
+     "c": "Berechne den Strom für 9 Volt an einem 900-Ohm-Widerstand."
+    },
+    "es": {
+     "t": "La ley de Ohm con palabras cotidianas",
+     "g": "Conoce la fórmula que usarás una y otra vez en robótica.",
+     "p": [
+      "El voltaje es igual a la corriente por la resistencia: V = I × R.",
+      "Con el mismo voltaje, más resistencia significa menos corriente.",
+      "Despejando, la corriente es voltaje entre resistencia: 5 voltios sobre 1000 ohmios dan 5 miliamperios."
+     ],
+     "q": "¿Puedes describir la ley de Ohm con tu propia imagen de la tubería?",
+     "c": "Calcula la corriente de 9 voltios sobre una resistencia de 900 ohmios."
+    },
+    "fr": {
+     "t": "La loi d'Ohm en mots simples",
+     "g": "Découvre la formule que tu utiliseras sans cesse en robotique.",
+     "p": [
+      "La tension est égale au courant multiplié par la résistance : U = R × I.",
+      "À tension égale, plus de résistance donne moins de courant.",
+      "Le courant vaut la tension divisée par la résistance : 5 volts sur 1000 ohms donnent 5 milliampères."
+     ],
+     "q": "Peux-tu décrire la loi d'Ohm avec ta propre image du tuyau d'eau ?",
+     "c": "Calcule le courant pour 9 volts aux bornes d'une résistance de 900 ohms."
+    },
+    "it": {
+     "t": "La legge di Ohm in parole semplici",
+     "g": "Conosci la formula che userai sempre in robotica.",
+     "p": [
+      "La tensione è uguale alla corrente per la resistenza: V = I × R.",
+      "Con la stessa tensione, più resistenza significa meno corrente.",
+      "La corrente è tensione divisa resistenza: 5 volt su 1000 ohm danno 5 milliampere."
+     ],
+     "q": "Sai descrivere la legge di Ohm con la tua immagine del tubo d'acqua?",
+     "c": "Calcola la corrente di 9 volt su un resistore da 900 ohm."
+    },
+    "pt": {
+     "t": "A lei de Ohm em palavras simples",
+     "g": "Conhece a fórmula que vais usar vezes sem conta em robótica.",
+     "p": [
+      "A tensão é igual à corrente vezes a resistência: V = I × R.",
+      "Com a mesma tensão, mais resistência significa menos corrente.",
+      "A corrente é a tensão a dividir pela resistência: 5 volts sobre 1000 ohms dão 5 miliamperes."
+     ],
+     "q": "Consegues descrever a lei de Ohm com a tua própria imagem do cano de água?",
+     "c": "Calcula a corrente de 9 volts sobre uma resistência de 900 ohms."
+    },
+    "pt_BR": {
+     "t": "A lei de Ohm em palavras simples",
+     "g": "Conheça a fórmula que você vai usar sempre em robótica.",
+     "p": [
+      "A tensão é igual à corrente vezes a resistência: V = I × R.",
+      "Com a mesma tensão, mais resistência significa menos corrente.",
+      "A corrente é a tensão dividida pela resistência: 5 volts sobre 1000 ohms dão 5 miliampères."
+     ],
+     "q": "Você consegue descrever a lei de Ohm com sua própria imagem do cano de água?",
+     "c": "Calcule a corrente de 9 volts sobre um resistor de 900 ohms."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading resistor colour codes",
+     "g": "Decode the coloured bands on a resistor into ohms.",
+     "p": [
+      "Each colour is a digit: black 0, brown 1, red 2, orange 3, yellow 4, green 5, blue 6, violet 7, grey 8, white 9.",
+      "The first two bands are digits, the third is how many zeros to add.",
+      "Brown, black, red means 1, 0 and two zeros: 1000 ohms. A gold or silver band is tolerance."
+     ],
+     "q": "Which colours do you find easiest to remember, and why?",
+     "c": "Decode three resistors from a kit or an online picture."
+    },
+    "de": {
+     "t": "Widerstands-Farbcodes lesen",
+     "g": "Entschlüssele die farbigen Ringe eines Widerstands in Ohm.",
+     "p": [
+      "Jede Farbe steht für eine Ziffer: Schwarz 0, Braun 1, Rot 2, Orange 3, Gelb 4, Grün 5, Blau 6, Violett 7, Grau 8, Weiß 9.",
+      "Die ersten beiden Ringe sind Ziffern, der dritte gibt die Zahl der Nullen an.",
+      "Braun, Schwarz, Rot heißt 1, 0 und zwei Nullen: 1000 Ohm. Ein Gold- oder Silberring ist die Toleranz."
+     ],
+     "q": "Welche Farben merkst du dir am leichtesten und warum?",
+     "c": "Entschlüssele drei Widerstände aus einem Bausatz oder von einem Bild."
+    },
+    "es": {
+     "t": "Leer el código de colores de resistencias",
+     "g": "Descifra las bandas de colores de una resistencia en ohmios.",
+     "p": [
+      "Cada color es un dígito: negro 0, marrón 1, rojo 2, naranja 3, amarillo 4, verde 5, azul 6, violeta 7, gris 8, blanco 9.",
+      "Las dos primeras bandas son dígitos y la tercera indica cuántos ceros añadir.",
+      "Marrón, negro, rojo es 1, 0 y dos ceros: 1000 ohmios. Una banda dorada o plateada es la tolerancia."
+     ],
+     "q": "¿Qué colores te resultan más fáciles de recordar y por qué?",
+     "c": "Descifra tres resistencias de un kit o de una imagen en línea."
+    },
+    "fr": {
+     "t": "Lire le code couleur des résistances",
+     "g": "Décode les bandes de couleur d'une résistance en ohms.",
+     "p": [
+      "Chaque couleur est un chiffre : noir 0, marron 1, rouge 2, orange 3, jaune 4, vert 5, bleu 6, violet 7, gris 8, blanc 9.",
+      "Les deux premières bandes sont des chiffres, la troisième indique le nombre de zéros.",
+      "Marron, noir, rouge donne 1, 0 et deux zéros : 1000 ohms. Une bande or ou argent indique la tolérance."
+     ],
+     "q": "Quelles couleurs retiens-tu le plus facilement, et pourquoi ?",
+     "c": "Décode trois résistances d'un kit ou d'une image en ligne."
+    },
+    "it": {
+     "t": "Leggere il codice colori dei resistori",
+     "g": "Decifra le fasce colorate di un resistore in ohm.",
+     "p": [
+      "Ogni colore è una cifra: nero 0, marrone 1, rosso 2, arancione 3, giallo 4, verde 5, blu 6, viola 7, grigio 8, bianco 9.",
+      "Le prime due fasce sono cifre, la terza indica quanti zeri aggiungere.",
+      "Marrone, nero, rosso significa 1, 0 e due zeri: 1000 ohm. Una fascia oro o argento indica la tolleranza."
+     ],
+     "q": "Quali colori ricordi più facilmente e perché?",
+     "c": "Decifra tre resistori di un kit o di un'immagine online."
+    },
+    "pt": {
+     "t": "Ler o código de cores das resistências",
+     "g": "Descodifica as riscas de cor de uma resistência em ohms.",
+     "p": [
+      "Cada cor é um dígito: preto 0, castanho 1, vermelho 2, laranja 3, amarelo 4, verde 5, azul 6, violeta 7, cinzento 8, branco 9.",
+      "As duas primeiras riscas são dígitos e a terceira indica quantos zeros juntar.",
+      "Castanho, preto, vermelho é 1, 0 e dois zeros: 1000 ohms. Uma risca dourada ou prateada é a tolerância."
+     ],
+     "q": "Que cores te é mais fácil memorizar e porquê?",
+     "c": "Descodifica três resistências de um kit ou de uma imagem online."
+    },
+    "pt_BR": {
+     "t": "Lendo o código de cores dos resistores",
+     "g": "Decifre as faixas coloridas de um resistor em ohms.",
+     "p": [
+      "Cada cor é um dígito: preto 0, marrom 1, vermelho 2, laranja 3, amarelo 4, verde 5, azul 6, violeta 7, cinza 8, branco 9.",
+      "As duas primeiras faixas são dígitos e a terceira indica quantos zeros somar.",
+      "Marrom, preto, vermelho é 1, 0 e dois zeros: 1000 ohms. Uma faixa dourada ou prateada é a tolerância."
+     ],
+     "q": "Quais cores são mais fáceis de lembrar para você e por quê?",
+     "c": "Decifre três resistores de um kit ou de uma imagem online."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet the breadboard",
+     "g": "Discover how to build circuits quickly without any soldering.",
+     "p": [
+      "A breadboard has rows of holes connected under the surface.",
+      "The five holes in each short row are joined, and the long side rails carry power.",
+      "Push parts in gently, and change the circuit by simply pulling them out."
+     ],
+     "q": "What would you like to build first on a breadboard?",
+     "c": "Draw a breadboard and mark which holes are joined together."
+    },
+    "de": {
+     "t": "Das Steckbrett kennenlernen",
+     "g": "Entdecke, wie du Schaltungen schnell ohne Löten aufbaust.",
+     "p": [
+      "Ein Steckbrett hat Lochreihen, die unter der Oberfläche verbunden sind.",
+      "Die fünf Löcher einer kurzen Reihe sind verbunden, die langen Außenschienen führen die Versorgung.",
+      "Stecke Teile sanft ein und ändere die Schaltung, indem du sie herausziehst."
+     ],
+     "q": "Was möchtest du als Erstes auf einem Steckbrett bauen?",
+     "c": "Zeichne ein Steckbrett und markiere, welche Löcher verbunden sind."
+    },
+    "es": {
+     "t": "Conoce la placa de pruebas",
+     "g": "Descubre cómo montar circuitos rápido y sin soldar.",
+     "p": [
+      "Una placa de pruebas tiene filas de agujeros conectados por debajo.",
+      "Los cinco agujeros de cada fila corta están unidos y los raíles largos llevan la alimentación.",
+      "Inserta las piezas con suavidad y cambia el circuito simplemente sacándolas."
+     ],
+     "q": "¿Qué te gustaría montar primero en una placa de pruebas?",
+     "c": "Dibuja una placa de pruebas y marca qué agujeros están unidos."
+    },
+    "fr": {
+     "t": "Découvrir la platine d'essai",
+     "g": "Découvre comment monter des circuits vite et sans soudure.",
+     "p": [
+      "Une platine d'essai a des rangées de trous reliés sous la surface.",
+      "Les cinq trous de chaque courte rangée sont reliés et les longs rails portent l'alimentation.",
+      "Enfonce les pièces doucement et modifie le circuit en les retirant simplement."
+     ],
+     "q": "Que voudrais-tu monter en premier sur une platine d'essai ?",
+     "c": "Dessine une platine d'essai et marque quels trous sont reliés."
+    },
+    "it": {
+     "t": "Conosci la breadboard",
+     "g": "Scopri come montare circuiti in fretta e senza saldare.",
+     "p": [
+      "Una breadboard ha file di fori collegati sotto la superficie.",
+      "I cinque fori di ogni fila corta sono uniti e le lunghe guide laterali portano l'alimentazione.",
+      "Inserisci i componenti con delicatezza e cambia il circuito semplicemente estraendoli."
+     ],
+     "q": "Cosa ti piacerebbe costruire per primo su una breadboard?",
+     "c": "Disegna una breadboard e segna quali fori sono collegati."
+    },
+    "pt": {
+     "t": "Conhecer a placa de ensaio",
+     "g": "Descobre como montar circuitos depressa e sem soldar.",
+     "p": [
+      "Uma placa de ensaio tem filas de furos ligados por baixo da superfície.",
+      "Os cinco furos de cada fila curta estão unidos e as calhas longas levam a alimentação.",
+      "Encaixa as peças com suavidade e muda o circuito simplesmente retirando-as."
+     ],
+     "q": "O que gostarias de montar primeiro numa placa de ensaio?",
+     "c": "Desenha uma placa de ensaio e marca quais os furos que estão ligados."
+    },
+    "pt_BR": {
+     "t": "Conhecendo a protoboard",
+     "g": "Descubra como montar circuitos rápido e sem soldar.",
+     "p": [
+      "Uma protoboard tem fileiras de furos ligados por baixo da superfície.",
+      "Os cinco furos de cada fileira curta são ligados e as trilhas longas levam a alimentação.",
+      "Encaixe as peças com delicadeza e mude o circuito simplesmente retirando-as."
+     ],
+     "q": "O que você gostaria de montar primeiro numa protoboard?",
+     "c": "Desenhe uma protoboard e marque quais furos estão ligados."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first LED circuit",
+     "g": "Build the simplest useful circuit: battery, resistor and LED.",
+     "p": [
+      "An LED only lets current pass one way, so the longer leg goes toward the positive side.",
+      "The resistor limits current; without it the LED can burn out.",
+      "Using Ohm's law, a 3 V supply, a 2 V LED and 220 ohms gives about 5 milliamps."
+     ],
+     "q": "What colour LED will you light up first?",
+     "c": "Light an LED with a resistor and a small battery, checking the polarity."
+    },
+    "de": {
+     "t": "Deine erste LED-Schaltung",
+     "g": "Baue die einfachste nützliche Schaltung: Batterie, Widerstand und LED.",
+     "p": [
+      "Eine LED lässt Strom nur in eine Richtung durch, das längere Bein zeigt zum Pluspol.",
+      "Der Widerstand begrenzt den Strom; ohne ihn kann die LED durchbrennen.",
+      "Nach Ohm: 3 V Versorgung, 2 V LED und 220 Ohm ergeben etwa 5 Milliampere."
+     ],
+     "q": "Welche LED-Farbe bringst du zuerst zum Leuchten?",
+     "c": "Bringe eine LED mit Widerstand und kleiner Batterie zum Leuchten und achte auf die Polung."
+    },
+    "es": {
+     "t": "Tu primer circuito con LED",
+     "g": "Monta el circuito útil más simple: pila, resistencia y LED.",
+     "p": [
+      "Un LED solo deja pasar corriente en un sentido, y la pata larga va hacia el positivo.",
+      "La resistencia limita la corriente; sin ella el LED puede quemarse.",
+      "Con la ley de Ohm, 3 V de fuente, un LED de 2 V y 220 ohmios dan unos 5 miliamperios."
+     ],
+     "q": "¿Qué color de LED encenderás primero?",
+     "c": "Enciende un LED con una resistencia y una pila pequeña, comprobando la polaridad."
+    },
+    "fr": {
+     "t": "Ton premier circuit avec une LED",
+     "g": "Monte le circuit utile le plus simple : pile, résistance et LED.",
+     "p": [
+      "Une LED ne laisse passer le courant que dans un sens, la patte longue va vers le plus.",
+      "La résistance limite le courant ; sans elle la LED peut griller.",
+      "Avec la loi d'Ohm, 3 V d'alimentation, une LED de 2 V et 220 ohms donnent environ 5 milliampères."
+     ],
+     "q": "Quelle couleur de LED allumeras-tu en premier ?",
+     "c": "Allume une LED avec une résistance et une petite pile en vérifiant la polarité."
+    },
+    "it": {
+     "t": "Il tuo primo circuito con LED",
+     "g": "Costruisci il circuito utile più semplice: batteria, resistore e LED.",
+     "p": [
+      "Un LED lascia passare la corrente in un solo verso, la zampa lunga va verso il positivo.",
+      "Il resistore limita la corrente; senza di esso il LED può bruciarsi.",
+      "Con la legge di Ohm, 3 V di alimentazione, un LED da 2 V e 220 ohm danno circa 5 milliampere."
+     ],
+     "q": "Di che colore sarà il primo LED che accenderai?",
+     "c": "Accendi un LED con un resistore e una piccola batteria, controllando la polarità."
+    },
+    "pt": {
+     "t": "O teu primeiro circuito com LED",
+     "g": "Monta o circuito útil mais simples: pilha, resistência e LED.",
+     "p": [
+      "Um LED só deixa passar corrente num sentido, e a perna maior vai para o positivo.",
+      "A resistência limita a corrente; sem ela o LED pode queimar.",
+      "Com a lei de Ohm, 3 V de fonte, um LED de 2 V e 220 ohms dão cerca de 5 miliamperes."
+     ],
+     "q": "Que cor de LED vais acender primeiro?",
+     "c": "Acende um LED com uma resistência e uma pilha pequena, verificando a polaridade."
+    },
+    "pt_BR": {
+     "t": "Seu primeiro circuito com LED",
+     "g": "Monte o circuito útil mais simples: pilha, resistor e LED.",
+     "p": [
+      "Um LED só deixa a corrente passar em um sentido, e a perna maior vai para o positivo.",
+      "O resistor limita a corrente; sem ele o LED pode queimar.",
+      "Pela lei de Ohm, 3 V de fonte, um LED de 2 V e 220 ohms dão cerca de 5 miliampères."
+     ],
+     "q": "Que cor de LED você vai acender primeiro?",
+     "c": "Acenda um LED com um resistor e uma pilha pequena, conferindo a polaridade."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Series and parallel circuits",
+     "g": "Learn two ways to connect parts and how each behaves.",
+     "p": [
+      "In series, parts sit on one path and share the same current.",
+      "In parallel, each part has its own path and receives the same voltage.",
+      "Series resistances add up; parallel paths together let more current flow."
+     ],
+     "q": "Which would you choose for two LEDs on a battery, and why?",
+     "c": "Draw two LEDs in series and in parallel, then say which is easier to wire."
+    },
+    "de": {
+     "t": "Reihen- und Parallelschaltung",
+     "g": "Lerne zwei Arten, Teile zu verbinden, und wie sie sich verhalten.",
+     "p": [
+      "In Reihe liegen Teile auf einem Weg und haben denselben Strom.",
+      "Parallel hat jedes Teil seinen eigenen Weg und bekommt dieselbe Spannung.",
+      "In Reihe addieren sich Widerstände; parallele Wege lassen zusammen mehr Strom fließen."
+     ],
+     "q": "Was würdest du für zwei LEDs an einer Batterie wählen und warum?",
+     "c": "Zeichne zwei LEDs in Reihe und parallel und sag, was einfacher zu verdrahten ist."
+    },
+    "es": {
+     "t": "Circuitos en serie y en paralelo",
+     "g": "Aprende dos formas de conectar piezas y cómo se comporta cada una.",
+     "p": [
+      "En serie las piezas van por un solo camino y comparten la misma corriente.",
+      "En paralelo cada pieza tiene su camino y recibe el mismo voltaje.",
+      "En serie las resistencias se suman; los caminos en paralelo dejan pasar más corriente."
+     ],
+     "q": "¿Cuál elegirías para dos LED con una pila y por qué?",
+     "c": "Dibuja dos LED en serie y en paralelo y di cuál es más fácil de cablear."
+    },
+    "fr": {
+     "t": "Circuits en série et en parallèle",
+     "g": "Apprends deux façons de relier des composants et leur comportement.",
+     "p": [
+      "En série, les composants sont sur un seul chemin et partagent le même courant.",
+      "En parallèle, chacun a son chemin et reçoit la même tension.",
+      "En série les résistances s'additionnent ; les chemins en parallèle laissent passer plus de courant."
+     ],
+     "q": "Lequel choisirais-tu pour deux LED sur une pile, et pourquoi ?",
+     "c": "Dessine deux LED en série et en parallèle et dis laquelle est la plus simple à câbler."
+    },
+    "it": {
+     "t": "Circuiti in serie e in parallelo",
+     "g": "Impara due modi di collegare i componenti e come si comportano.",
+     "p": [
+      "In serie i componenti sono su un solo percorso e condividono la stessa corrente.",
+      "In parallelo ognuno ha il proprio percorso e riceve la stessa tensione.",
+      "In serie le resistenze si sommano; i percorsi in parallelo lasciano passare più corrente."
+     ],
+     "q": "Quale sceglieresti per due LED con una batteria e perché?",
+     "c": "Disegna due LED in serie e in parallelo e dì quale è più facile da cablare."
+    },
+    "pt": {
+     "t": "Circuitos em série e em paralelo",
+     "g": "Aprende duas formas de ligar peças e como cada uma se comporta.",
+     "p": [
+      "Em série as peças ficam num só caminho e partilham a mesma corrente.",
+      "Em paralelo cada peça tem o seu caminho e recebe a mesma tensão.",
+      "Em série as resistências somam-se; os caminhos em paralelo deixam passar mais corrente."
+     ],
+     "q": "Qual escolherias para dois LEDs numa pilha e porquê?",
+     "c": "Desenha dois LEDs em série e em paralelo e diz qual é mais fácil de ligar."
+    },
+    "pt_BR": {
+     "t": "Circuitos em série e em paralelo",
+     "g": "Aprenda duas formas de ligar peças e como cada uma se comporta.",
+     "p": [
+      "Em série as peças ficam em um só caminho e dividem a mesma corrente.",
+      "Em paralelo cada peça tem seu caminho e recebe a mesma tensão.",
+      "Em série as resistências se somam; os caminhos em paralelo deixam passar mais corrente."
+     ],
+     "q": "Qual você escolheria para dois LEDs em uma pilha e por quê?",
+     "c": "Desenhe dois LEDs em série e em paralelo e diga qual é mais fácil de ligar."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Batteries and power sources",
+     "g": "Match the right power source to the size of your robot.",
+     "p": [
+      "AA cells give 1.5 volts each and are easy to find and swap.",
+      "Rechargeable packs hold more power for bigger robots and need their own correct charger.",
+      "USB power gives a steady 5 volts, handy for small boards at your desk."
+     ],
+     "q": "What power source suits the first robot you imagine?",
+     "c": "Check a battery holder and work out the total voltage of four AA cells in series."
+    },
+    "de": {
+     "t": "Batterien und Stromquellen",
+     "g": "Wähle die passende Stromquelle für die Größe deines Roboters.",
+     "p": [
+      "AA-Zellen liefern je 1,5 Volt und sind leicht zu bekommen und zu tauschen.",
+      "Wiederaufladbare Akkupacks speichern mehr für größere Roboter und brauchen ihr eigenes passendes Ladegerät.",
+      "USB liefert stabile 5 Volt, praktisch für kleine Boards am Schreibtisch."
+     ],
+     "q": "Welche Stromquelle passt zu dem ersten Roboter, den du dir vorstellst?",
+     "c": "Sieh dir einen Batteriehalter an und berechne die Gesamtspannung von vier AA-Zellen in Reihe."
+    },
+    "es": {
+     "t": "Pilas y fuentes de alimentación",
+     "g": "Elige la fuente de energía adecuada para el tamaño de tu robot.",
+     "p": [
+      "Las pilas AA dan 1,5 voltios cada una y son fáciles de encontrar y cambiar.",
+      "Los packs recargables guardan más energía para robots grandes y necesitan su propio cargador adecuado.",
+      "La alimentación USB da 5 voltios estables, útil para placas pequeñas en tu escritorio."
+     ],
+     "q": "¿Qué fuente de energía encaja con el primer robot que imaginas?",
+     "c": "Mira un portapilas y calcula el voltaje total de cuatro pilas AA en serie."
+    },
+    "fr": {
+     "t": "Piles et sources d'alimentation",
+     "g": "Choisis la bonne source d'énergie selon la taille de ton robot.",
+     "p": [
+      "Les piles AA donnent 1,5 volt chacune et sont faciles à trouver et à changer.",
+      "Les packs rechargeables stockent plus pour les gros robots et exigent leur propre chargeur adapté.",
+      "L'alimentation USB fournit 5 volts stables, pratique pour les petites cartes sur ton bureau."
+     ],
+     "q": "Quelle source d'énergie convient au premier robot que tu imagines ?",
+     "c": "Regarde un support de piles et calcule la tension totale de quatre piles AA en série."
+    },
+    "it": {
+     "t": "Batterie e fonti di alimentazione",
+     "g": "Scegli la fonte di energia giusta per le dimensioni del tuo robot.",
+     "p": [
+      "Le pile AA danno 1,5 volt ciascuna e sono facili da trovare e sostituire.",
+      "I pacchi ricaricabili immagazzinano più energia per robot grandi e richiedono il loro caricatore adatto.",
+      "L'alimentazione USB dà 5 volt stabili, comoda per piccole schede sulla scrivania."
+     ],
+     "q": "Quale fonte di energia si adatta al primo robot che immagini?",
+     "c": "Guarda un portapile e calcola la tensione totale di quattro pile AA in serie."
+    },
+    "pt": {
+     "t": "Pilhas e fontes de alimentação",
+     "g": "Escolhe a fonte de energia certa para o tamanho do teu robô.",
+     "p": [
+      "As pilhas AA dão 1,5 volts cada e são fáceis de encontrar e trocar.",
+      "Os packs recarregáveis guardam mais energia para robôs grandes e precisam do seu carregador adequado.",
+      "A alimentação USB dá 5 volts estáveis, útil para placas pequenas na secretária."
+     ],
+     "q": "Que fonte de energia serve para o primeiro robô que imaginas?",
+     "c": "Vê um porta-pilhas e calcula a tensão total de quatro pilhas AA em série."
+    },
+    "pt_BR": {
+     "t": "Pilhas e fontes de alimentação",
+     "g": "Escolha a fonte de energia certa para o tamanho do seu robô.",
+     "p": [
+      "As pilhas AA dão 1,5 volt cada e são fáceis de achar e trocar.",
+      "Os packs recarregáveis guardam mais energia para robôs grandes e exigem o próprio carregador adequado.",
+      "A alimentação USB dá 5 volts estáveis, útil para placas pequenas na sua mesa."
+     ],
+     "q": "Que fonte de energia serve para o primeiro robô que você imagina?",
+     "c": "Veja um porta-pilhas e calcule a tensão total de quatro pilhas AA em série."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Using a multimeter",
+     "g": "Learn the four checks that solve most circuit puzzles.",
+     "p": [
+      "Set the dial first: voltage, resistance, continuity or current.",
+      "Measure voltage across a part with the meter in parallel, and resistance only with power off.",
+      "Continuity beeps when two points are joined, perfect for finding broken wires."
+     ],
+     "q": "Which check would you use if an LED refuses to light?",
+     "c": "Measure a battery voltage and a resistor value, then compare with the label."
+    },
+    "de": {
+     "t": "Ein Multimeter benutzen",
+     "g": "Lerne die vier Messungen kennen, die die meisten Schaltungsrätsel lösen.",
+     "p": [
+      "Stelle zuerst den Drehschalter ein: Spannung, Widerstand, Durchgang oder Strom.",
+      "Spannung misst du parallel zum Teil, Widerstand nur bei ausgeschaltetem Strom.",
+      "Der Durchgangsprüfer piept, wenn zwei Punkte verbunden sind, ideal für gebrochene Kabel."
+     ],
+     "q": "Welche Messung würdest du nutzen, wenn eine LED nicht leuchtet?",
+     "c": "Miss eine Batteriespannung und einen Widerstandswert und vergleiche mit dem Aufdruck."
+    },
+    "es": {
+     "t": "Usar un multímetro",
+     "g": "Aprende las cuatro comprobaciones que resuelven la mayoría de los enigmas de circuitos.",
+     "p": [
+      "Primero elige la posición del dial: voltaje, resistencia, continuidad o corriente.",
+      "Mide el voltaje en paralelo con la pieza y la resistencia solo con la alimentación apagada.",
+      "La continuidad pita cuando dos puntos están unidos, perfecta para hallar cables rotos."
+     ],
+     "q": "¿Qué comprobación usarías si un LED no se enciende?",
+     "c": "Mide el voltaje de una pila y el valor de una resistencia y compáralos con la etiqueta."
+    },
+    "fr": {
+     "t": "Utiliser un multimètre",
+     "g": "Apprends les quatre mesures qui résolvent la plupart des énigmes de circuits.",
+     "p": [
+      "Règle d'abord le sélecteur : tension, résistance, continuité ou courant.",
+      "Mesure la tension en parallèle sur la pièce, et la résistance uniquement hors tension.",
+      "La continuité sonne quand deux points sont reliés, idéale pour trouver un fil cassé."
+     ],
+     "q": "Quelle mesure utiliserais-tu si une LED refuse de s'allumer ?",
+     "c": "Mesure la tension d'une pile et la valeur d'une résistance, puis compare avec l'étiquette."
+    },
+    "it": {
+     "t": "Usare un multimetro",
+     "g": "Impara i quattro controlli che risolvono la maggior parte degli enigmi dei circuiti.",
+     "p": [
+      "Imposta prima la manopola: tensione, resistenza, continuità o corrente.",
+      "Misura la tensione in parallelo al componente e la resistenza solo a circuito spento.",
+      "La continuità suona quando due punti sono collegati, perfetta per trovare fili rotti."
+     ],
+     "q": "Quale controllo useresti se un LED non si accende?",
+     "c": "Misura la tensione di una pila e il valore di un resistore, poi confronta con l'etichetta."
+    },
+    "pt": {
+     "t": "Usar um multímetro",
+     "g": "Aprende as quatro verificações que resolvem a maioria dos enigmas de circuitos.",
+     "p": [
+      "Primeiro escolhe a posição do seletor: tensão, resistência, continuidade ou corrente.",
+      "Mede a tensão em paralelo com a peça e a resistência só com a alimentação desligada.",
+      "A continuidade apita quando dois pontos estão ligados, ótima para achar fios partidos."
+     ],
+     "q": "Que verificação usarias se um LED não acendesse?",
+     "c": "Mede a tensão de uma pilha e o valor de uma resistência e compara com o rótulo."
+    },
+    "pt_BR": {
+     "t": "Usando um multímetro",
+     "g": "Aprenda as quatro verificações que resolvem a maioria dos enigmas de circuitos.",
+     "p": [
+      "Primeiro escolha a posição do seletor: tensão, resistência, continuidade ou corrente.",
+      "Meça a tensão em paralelo com a peça e a resistência só com a alimentação desligada.",
+      "A continuidade apita quando dois pontos estão ligados, ótima para achar fios rompidos."
+     ],
+     "q": "Que verificação você usaria se um LED não acendesse?",
+     "c": "Meça a tensão de uma pilha e o valor de um resistor e compare com o rótulo."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Switches and buttons",
+     "g": "Use the simplest inputs that open or close a circuit.",
+     "p": [
+      "A switch opens or closes the path, so current flows or stops.",
+      "Toggle and slide switches stay put, while push buttons only act while pressed.",
+      "Contacts are labelled normally open or normally closed, depending on rest state."
+     ],
+     "q": "Where would a robot use a button or switch, for example a bumper?",
+     "c": "Wire a push button in series with an LED and resistor on a breadboard."
+    },
+    "de": {
+     "t": "Schalter und Taster",
+     "g": "Nutze die einfachsten Eingaben, die eine Schaltung öffnen oder schließen.",
+     "p": [
+      "Ein Schalter öffnet oder schließt den Weg, sodass Strom fließt oder stoppt.",
+      "Kipp- und Schiebeschalter bleiben stehen, Taster wirken nur, solange man drückt.",
+      "Kontakte heißen Schließer oder Öffner, je nach Ruhezustand."
+     ],
+     "q": "Wo würde ein Roboter einen Taster oder Schalter nutzen, zum Beispiel als Stoßfänger?",
+     "c": "Schalte einen Taster in Reihe mit LED und Widerstand auf dem Steckbrett."
+    },
+    "es": {
+     "t": "Interruptores y pulsadores",
+     "g": "Usa las entradas más simples, que abren o cierran un circuito.",
+     "p": [
+      "Un interruptor abre o cierra el camino, así la corriente fluye o se detiene.",
+      "Los interruptores de palanca y deslizantes se quedan fijos; los pulsadores solo actúan mientras se pulsan.",
+      "Los contactos son normalmente abiertos o cerrados, según su estado en reposo."
+     ],
+     "q": "¿Dónde usaría un robot un pulsador o interruptor, por ejemplo como parachoques?",
+     "c": "Conecta un pulsador en serie con un LED y una resistencia en la placa."
+    },
+    "fr": {
+     "t": "Interrupteurs et boutons",
+     "g": "Utilise les entrées les plus simples, qui ouvrent ou ferment un circuit.",
+     "p": [
+      "Un interrupteur ouvre ou ferme le chemin, le courant passe ou s'arrête.",
+      "Les interrupteurs à bascule et coulissants restent en place ; les boutons n'agissent que pressés.",
+      "Les contacts sont normalement ouverts ou fermés selon leur état au repos."
+     ],
+     "q": "Où un robot utiliserait-il un bouton ou un interrupteur, par exemple comme pare-chocs ?",
+     "c": "Câble un bouton en série avec une LED et une résistance sur la platine."
+    },
+    "it": {
+     "t": "Interruttori e pulsanti",
+     "g": "Usa gli ingressi più semplici, che aprono o chiudono un circuito.",
+     "p": [
+      "Un interruttore apre o chiude il percorso, così la corrente scorre o si ferma.",
+      "Gli interruttori a levetta e a scorrimento restano fermi; i pulsanti agiscono solo mentre li premi.",
+      "I contatti sono normalmente aperti o chiusi, secondo lo stato a riposo."
+     ],
+     "q": "Dove userebbe un robot un pulsante o interruttore, per esempio come paraurti?",
+     "c": "Collega un pulsante in serie con un LED e un resistore sulla breadboard."
+    },
+    "pt": {
+     "t": "Interruptores e botões",
+     "g": "Usa as entradas mais simples, que abrem ou fecham um circuito.",
+     "p": [
+      "Um interruptor abre ou fecha o caminho, e a corrente passa ou pára.",
+      "Os interruptores de alavanca e deslizantes ficam fixos; os botões só atuam enquanto premidos.",
+      "Os contactos são normalmente abertos ou fechados, conforme o estado em repouso."
+     ],
+     "q": "Onde usaria um robô um botão ou interruptor, por exemplo como para-choques?",
+     "c": "Liga um botão em série com um LED e uma resistência na placa de ensaio."
+    },
+    "pt_BR": {
+     "t": "Interruptores e botões",
+     "g": "Use as entradas mais simples, que abrem ou fecham um circuito.",
+     "p": [
+      "Um interruptor abre ou fecha o caminho, e a corrente passa ou para.",
+      "Os interruptores de alavanca e deslizantes ficam fixos; os botões só atuam enquanto pressionados.",
+      "Os contatos são normalmente abertos ou fechados, conforme o estado em repouso."
+     ],
+     "q": "Onde um robô usaria um botão ou interruptor, por exemplo como para-choque?",
+     "c": "Ligue um botão em série com um LED e um resistor na protoboard."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Capacitors: tiny energy buckets",
+     "g": "See how capacitors store and release charge in a flash.",
+     "p": [
+      "A capacitor stores a little charge and gives it back quickly.",
+      "Placed near a chip or motor, it smooths bumps in the power supply.",
+      "Large electrolytic types have polarity, so the marked stripe goes to ground."
+     ],
+     "q": "Where in a robot might a quick burst of stored energy help?",
+     "c": "Find a capacitor on an old board and read its value and voltage rating."
+    },
+    "de": {
+     "t": "Kondensatoren: kleine Energieeimer",
+     "g": "Sieh, wie Kondensatoren Ladung blitzschnell speichern und abgeben.",
+     "p": [
+      "Ein Kondensator speichert wenig Ladung und gibt sie schnell wieder ab.",
+      "Nahe an Chip oder Motor glättet er Schwankungen der Stromversorgung.",
+      "Große Elkos haben eine Polung: Der markierte Streifen gehört an Masse."
+     ],
+     "q": "Wo könnte ein schneller Schub gespeicherter Energie in einem Roboter helfen?",
+     "c": "Finde einen Kondensator auf einer alten Platine und lies Wert und Spannungsangabe ab."
+    },
+    "es": {
+     "t": "Condensadores: pequeños cubos de energía",
+     "g": "Mira cómo los condensadores guardan y liberan carga en un instante.",
+     "p": [
+      "Un condensador guarda poca carga y la devuelve rápido.",
+      "Colocado cerca de un chip o motor, suaviza los altibajos de la alimentación.",
+      "Los electrolíticos grandes tienen polaridad: la franja marcada va a masa."
+     ],
+     "q": "¿Dónde podría ayudar en un robot una ráfaga rápida de energía almacenada?",
+     "c": "Encuentra un condensador en una placa vieja y lee su valor y su tensión máxima."
+    },
+    "fr": {
+     "t": "Condensateurs : petits seaux d'énergie",
+     "g": "Vois comment les condensateurs stockent et libèrent la charge en un éclair.",
+     "p": [
+      "Un condensateur stocke un peu de charge et la rend vite.",
+      "Placé près d'une puce ou d'un moteur, il lisse les variations de l'alimentation.",
+      "Les gros condensateurs électrolytiques ont une polarité : la bande marquée va à la masse."
+     ],
+     "q": "Où une petite réserve d'énergie rapide aiderait-elle dans un robot ?",
+     "c": "Trouve un condensateur sur une vieille carte et lis sa valeur et sa tension nominale."
+    },
+    "it": {
+     "t": "Condensatori: piccoli secchi di energia",
+     "g": "Vedi come i condensatori immagazzinano e rilasciano carica in un lampo.",
+     "p": [
+      "Un condensatore immagazzina poca carica e la restituisce in fretta.",
+      "Vicino a un chip o a un motore, attenua le variazioni dell'alimentazione.",
+      "Gli elettrolitici grandi hanno polarità: la striscia marcata va a massa."
+     ],
+     "q": "Dove potrebbe aiutare in un robot una rapida scarica di energia accumulata?",
+     "c": "Trova un condensatore su una vecchia scheda e leggi valore e tensione nominale."
+    },
+    "pt": {
+     "t": "Condensadores: pequenos baldes de energia",
+     "g": "Vê como os condensadores guardam e libertam carga num instante.",
+     "p": [
+      "Um condensador guarda pouca carga e devolve-a depressa.",
+      "Colocado perto de um chip ou motor, suaviza as oscilações da alimentação.",
+      "Os eletrolíticos grandes têm polaridade: a faixa marcada vai à massa."
+     ],
+     "q": "Onde poderia ajudar num robô uma rajada rápida de energia guardada?",
+     "c": "Encontra um condensador numa placa velha e lê o valor e a tensão nominal."
+    },
+    "pt_BR": {
+     "t": "Capacitores: pequenos baldes de energia",
+     "g": "Veja como os capacitores guardam e liberam carga num instante.",
+     "p": [
+      "Um capacitor guarda pouca carga e a devolve rápido.",
+      "Colocado perto de um chip ou motor, suaviza as oscilações da alimentação.",
+      "Os eletrolíticos grandes têm polaridade: a faixa marcada vai ao terra."
+     ],
+     "q": "Onde poderia ajudar num robô uma rajada rápida de energia guardada?",
+     "c": "Ache um capacitor numa placa velha e leia o valor e a tensão nominal."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Diodes: one-way streets",
+     "g": "Meet the part that lets current travel in only one direction.",
+     "p": [
+      "A diode passes current from anode to cathode, and blocks the reverse.",
+      "The stripe on its body marks the cathode end.",
+      "Placed in series with a battery, it protects circuits from reversed connections."
+     ],
+     "q": "Where could a one-way valve for electricity protect your robot?",
+     "c": "Check a diode's stripe and draw its symbol, an arrow against a bar."
+    },
+    "de": {
+     "t": "Dioden: Einbahnstraßen",
+     "g": "Lerne das Bauteil kennen, das Strom nur in eine Richtung durchlässt.",
+     "p": [
+      "Eine Diode lässt Strom von der Anode zur Kathode durch und sperrt die Gegenrichtung.",
+      "Der Streifen auf dem Gehäuse markiert das Kathodenende.",
+      "In Reihe mit einer Batterie schützt sie Schaltungen vor vertauschtem Anschluss."
+     ],
+     "q": "Wo könnte ein Einwegventil für Strom deinen Roboter schützen?",
+     "c": "Prüfe den Streifen einer Diode und zeichne ihr Symbol, einen Pfeil vor einem Strich."
+    },
+    "es": {
+     "t": "Diodos: calles de sentido único",
+     "g": "Conoce la pieza que deja pasar la corriente en una sola dirección.",
+     "p": [
+      "Un diodo deja pasar corriente del ánodo al cátodo y bloquea el sentido contrario.",
+      "La franja del cuerpo marca el extremo del cátodo.",
+      "En serie con una pila, protege los circuitos de conexiones invertidas."
+     ],
+     "q": "¿Dónde podría proteger a tu robot una válvula de un solo sentido para la electricidad?",
+     "c": "Mira la franja de un diodo y dibuja su símbolo, una flecha contra una barra."
+    },
+    "fr": {
+     "t": "Diodes : rues à sens unique",
+     "g": "Découvre le composant qui laisse passer le courant dans un seul sens.",
+     "p": [
+      "Une diode laisse passer le courant de l'anode vers la cathode et bloque le sens inverse.",
+      "La bande sur le boîtier marque le côté cathode.",
+      "En série avec une pile, elle protège les circuits d'un branchement inversé."
+     ],
+     "q": "Où une soupape à sens unique pour l'électricité protégerait-elle ton robot ?",
+     "c": "Repère la bande d'une diode et dessine son symbole, une flèche contre une barre."
+    },
+    "it": {
+     "t": "Diodi: strade a senso unico",
+     "g": "Conosci il componente che lascia passare la corrente in una sola direzione.",
+     "p": [
+      "Un diodo fa passare corrente dall'anodo al catodo e blocca il verso opposto.",
+      "La striscia sul corpo indica il lato del catodo.",
+      "In serie a una batteria, protegge i circuiti da collegamenti invertiti."
+     ],
+     "q": "Dove potrebbe proteggere il tuo robot una valvola a senso unico per l'elettricità?",
+     "c": "Controlla la striscia di un diodo e disegna il suo simbolo, una freccia contro una barra."
+    },
+    "pt": {
+     "t": "Díodos: ruas de sentido único",
+     "g": "Conhece a peça que deixa passar a corrente numa só direção.",
+     "p": [
+      "Um díodo deixa passar corrente do ânodo para o cátodo e bloqueia o sentido contrário.",
+      "A risca no corpo marca o lado do cátodo.",
+      "Em série com uma pilha, protege os circuitos de ligações invertidas."
+     ],
+     "q": "Onde poderia proteger o teu robô uma válvula de sentido único para a eletricidade?",
+     "c": "Vê a risca de um díodo e desenha o seu símbolo, uma seta contra uma barra."
+    },
+    "pt_BR": {
+     "t": "Diodos: ruas de mão única",
+     "g": "Conheça a peça que deixa a corrente passar em uma só direção.",
+     "p": [
+      "Um diodo deixa passar corrente do ânodo para o cátodo e bloqueia o sentido contrário.",
+      "A faixa no corpo marca o lado do cátodo.",
+      "Em série com uma pilha, protege os circuitos de ligações invertidas."
+     ],
+     "q": "Onde uma válvula de mão única para a eletricidade protegeria seu robô?",
+     "c": "Olhe a faixa de um diodo e desenhe o símbolo dele, uma seta contra uma barra."
+    }
+   }
+  }
+ ]
+}

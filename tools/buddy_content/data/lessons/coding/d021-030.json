@@ -1,0 +1,835 @@
+{
+ "topic": "coding",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Logical operators",
+     "g": "Combine conditions with and, or and not.",
+     "p": [
+      "and is True only when both conditions are True.",
+      "or is True when at least one condition is True.",
+      "not flips the result: not True is False."
+     ],
+     "q": "When do you need two conditions at once, like a ticket for age and student status?",
+     "c": "Ask for an age and print 'Teen' if it is 13 or more and less than 20."
+    },
+    "de": {
+     "t": "Logische Operatoren",
+     "g": "Verknüpfe Bedingungen mit and, or und not.",
+     "p": [
+      "and ist nur True, wenn beide Bedingungen True sind.",
+      "or ist True, wenn mindestens eine Bedingung True ist.",
+      "not dreht das Ergebnis um: not True ist False."
+     ],
+     "q": "Wann brauchst du zwei Bedingungen zugleich, etwa Alter und Studentenstatus?",
+     "c": "Frage nach dem Alter und gib 'Teen' aus, wenn es mindestens 13 und unter 20 ist."
+    },
+    "es": {
+     "t": "Operadores lógicos",
+     "g": "Combina condiciones con and, or y not.",
+     "p": [
+      "and es True solo cuando ambas condiciones son True.",
+      "or es True cuando al menos una condición es True.",
+      "not invierte el resultado: not True es False."
+     ],
+     "q": "¿Cuándo necesitas dos condiciones a la vez, como edad y ser estudiante?",
+     "c": "Pide una edad e imprime 'Teen' si es 13 o más y menos de 20."
+    },
+    "fr": {
+     "t": "Les opérateurs logiques",
+     "g": "Combine des conditions avec and, or et not.",
+     "p": [
+      "and n'est True que si les deux conditions sont True.",
+      "or est True si au moins une condition est True.",
+      "not inverse le résultat : not True vaut False."
+     ],
+     "q": "Quand as-tu besoin de deux conditions à la fois, comme l'âge et le statut d'étudiant ?",
+     "c": "Demande un âge et affiche 'Teen' s'il est de 13 ou plus et inférieur à 20."
+    },
+    "it": {
+     "t": "Operatori logici",
+     "g": "Combina condizioni con and, or e not.",
+     "p": [
+      "and è True solo quando entrambe le condizioni sono True.",
+      "or è True quando almeno una condizione è True.",
+      "not inverte il risultato: not True è False."
+     ],
+     "q": "Quando servono due condizioni insieme, come età e stato di studente?",
+     "c": "Chiedi un'età e stampa 'Teen' se è 13 o più e minore di 20."
+    },
+    "pt": {
+     "t": "Operadores lógicos",
+     "g": "Combina condições com and, or e not.",
+     "p": [
+      "and só é True quando ambas as condições são True.",
+      "or é True quando pelo menos uma condição é True.",
+      "not inverte o resultado: not True é False."
+     ],
+     "q": "Quando precisas de duas condições ao mesmo tempo, como idade e ser estudante?",
+     "c": "Pede uma idade e imprime 'Teen' se for 13 ou mais e menos de 20."
+    },
+    "pt_BR": {
+     "t": "Operadores lógicos",
+     "g": "Combine condições com and, or e not.",
+     "p": [
+      "and só é True quando as duas condições são True.",
+      "or é True quando pelo menos uma condição é True.",
+      "not inverte o resultado: not True é False."
+     ],
+     "q": "Quando você precisa de duas condições ao mesmo tempo, como idade e ser estudante?",
+     "c": "Peça uma idade e imprima 'Teen' se for 13 ou mais e menor que 20."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Indentation matters",
+     "g": "Use spaces to show which lines belong together.",
+     "p": [
+      "Python uses indentation, usually 4 spaces, to group lines into a block.",
+      "All lines of a block must have the same indentation.",
+      "Wrong spacing causes an IndentationError, a very common beginner message."
+     ],
+     "q": "Do you like neat, tidy things? Then Python will feel natural!",
+     "c": "Write an if with two indented print lines, then break the spacing on purpose and read the error."
+    },
+    "de": {
+     "t": "Einrückung zählt",
+     "g": "Zeige mit Leerzeichen, welche Zeilen zusammengehören.",
+     "p": [
+      "Python gruppiert Zeilen durch Einrückung, meist 4 Leerzeichen, zu einem Block.",
+      "Alle Zeilen eines Blocks brauchen dieselbe Einrückung.",
+      "Falsche Abstände ergeben einen IndentationError, eine typische Anfängermeldung."
+     ],
+     "q": "Magst du Ordnung? Dann passt Python gut zu dir!",
+     "c": "Schreibe ein if mit zwei eingerückten print-Zeilen, störe die Abstände absichtlich und lies den Fehler."
+    },
+    "es": {
+     "t": "La sangría importa",
+     "g": "Usa espacios para mostrar qué líneas van juntas.",
+     "p": [
+      "Python usa la sangría, normalmente 4 espacios, para agrupar líneas en un bloque.",
+      "Todas las líneas de un bloque deben tener la misma sangría.",
+      "Un espaciado incorrecto da un IndentationError, muy común al empezar."
+     ],
+     "q": "¿Te gusta el orden? ¡Entonces Python te resultará natural!",
+     "c": "Escribe un if con dos líneas print con sangría, rompe el espaciado a propósito y lee el error."
+    },
+    "fr": {
+     "t": "L'indentation compte",
+     "g": "Utilise les espaces pour montrer quelles lignes vont ensemble.",
+     "p": [
+      "Python groupe les lignes en bloc par l'indentation, en général 4 espaces.",
+      "Toutes les lignes d'un bloc ont la même indentation.",
+      "Un mauvais espacement donne une IndentationError, message très courant au début."
+     ],
+     "q": "Tu aimes l'ordre ? Alors Python te sera naturel !",
+     "c": "Écris un if avec deux print indentés, casse l'espacement exprès et lis l'erreur."
+    },
+    "it": {
+     "t": "L'indentazione conta",
+     "g": "Usa gli spazi per mostrare quali righe stanno insieme.",
+     "p": [
+      "Python raggruppa le righe in un blocco con l'indentazione, di solito 4 spazi.",
+      "Tutte le righe di un blocco hanno la stessa indentazione.",
+      "Spaziatura sbagliata dà un IndentationError, messaggio comune all'inizio."
+     ],
+     "q": "Ti piace l'ordine? Allora Python ti verrà naturale!",
+     "c": "Scrivi un if con due print indentati, rompi la spaziatura apposta e leggi l'errore."
+    },
+    "pt": {
+     "t": "A indentação importa",
+     "g": "Usa espaços para mostrar que linhas ficam juntas.",
+     "p": [
+      "O Python agrupa linhas num bloco pela indentação, normalmente 4 espaços.",
+      "Todas as linhas de um bloco têm a mesma indentação.",
+      "Espaçamento errado dá um IndentationError, muito comum no início."
+     ],
+     "q": "Gostas de arrumação? Então o Python vai ser natural para ti!",
+     "c": "Escreve um if com dois print indentados, estraga o espaçamento de propósito e lê o erro."
+    },
+    "pt_BR": {
+     "t": "A indentação importa",
+     "g": "Use espaços para mostrar quais linhas ficam juntas.",
+     "p": [
+      "O Python agrupa linhas em um bloco pela indentação, normalmente 4 espaços.",
+      "Todas as linhas de um bloco têm a mesma indentação.",
+      "Espaçamento errado dá um IndentationError, muito comum no início."
+     ],
+     "q": "Você gosta de organização? Então o Python vai ser natural para você!",
+     "c": "Escreva um if com dois print indentados, bagunce o espaçamento de propósito e leia o erro."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mini project: age checker",
+     "g": "Combine input, conversion and if into a tiny useful program.",
+     "p": [
+      "Plan: ask the age, convert it with int, then choose a message.",
+      "Use if, elif and else to cover young, adult and senior cases.",
+      "Run it with several ages to test every branch."
+     ],
+     "q": "What other quick checker would be useful to you, like a ticket price?",
+     "c": "Build the age checker with three messages and test it with ages 5, 30 and 70."
+    },
+    "de": {
+     "t": "Mini-Projekt: Altersprüfer",
+     "g": "Verbinde Eingabe, Umwandlung und if zu einem kleinen nützlichen Programm.",
+     "p": [
+      "Plan: Alter erfragen, mit int umwandeln, dann eine Meldung wählen.",
+      "Nutze if, elif und else für jung, erwachsen und Senior.",
+      "Starte es mit mehreren Altern, um jeden Zweig zu testen."
+     ],
+     "q": "Welcher andere Schnell-Prüfer wäre für dich nützlich, etwa ein Ticketpreis?",
+     "c": "Baue den Altersprüfer mit drei Meldungen und teste ihn mit 5, 30 und 70 Jahren."
+    },
+    "es": {
+     "t": "Miniproyecto: comprobador de edad",
+     "g": "Combina input, conversión e if en un programa pequeño y útil.",
+     "p": [
+      "Plan: pide la edad, conviértela con int y elige un mensaje.",
+      "Usa if, elif y else para cubrir joven, adulto y mayor.",
+      "Ejecútalo con varias edades para probar cada rama."
+     ],
+     "q": "¿Qué otro comprobador rápido te sería útil, como un precio de entrada?",
+     "c": "Crea el comprobador con tres mensajes y pruébalo con 5, 30 y 70 años."
+    },
+    "fr": {
+     "t": "Mini-projet : vérificateur d'âge",
+     "g": "Combine saisie, conversion et if dans un petit programme utile.",
+     "p": [
+      "Plan : demander l'âge, le convertir avec int, puis choisir un message.",
+      "Utilise if, elif et else pour jeune, adulte et senior.",
+      "Lance-le avec plusieurs âges pour tester chaque branche."
+     ],
+     "q": "Quel autre petit vérificateur te serait utile, comme un tarif d'entrée ?",
+     "c": "Crée le vérificateur avec trois messages et teste-le avec 5, 30 et 70 ans."
+    },
+    "it": {
+     "t": "Mini progetto: controllo dell'età",
+     "g": "Combina input, conversione e if in un piccolo programma utile.",
+     "p": [
+      "Piano: chiedi l'età, convertila con int, poi scegli un messaggio.",
+      "Usa if, elif e else per giovane, adulto e anziano.",
+      "Eseguilo con varie età per provare ogni ramo."
+     ],
+     "q": "Quale altro controllo rapido ti sarebbe utile, come il prezzo di un biglietto?",
+     "c": "Crea il controllo con tre messaggi e provalo con 5, 30 e 70 anni."
+    },
+    "pt": {
+     "t": "Mini projeto: verificador de idade",
+     "g": "Junta input, conversão e if num programa pequeno e útil.",
+     "p": [
+      "Plano: pede a idade, converte com int e escolhe uma mensagem.",
+      "Usa if, elif e else para jovem, adulto e sénior.",
+      "Executa com várias idades para testar cada ramo."
+     ],
+     "q": "Que outro verificador rápido te seria útil, como um preço de bilhete?",
+     "c": "Cria o verificador com três mensagens e testa com 5, 30 e 70 anos."
+    },
+    "pt_BR": {
+     "t": "Mini projeto: verificador de idade",
+     "g": "Junte input, conversão e if em um programa pequeno e útil.",
+     "p": [
+      "Plano: peça a idade, converta com int e escolha uma mensagem.",
+      "Use if, elif e else para jovem, adulto e idoso.",
+      "Execute com várias idades para testar cada ramo."
+     ],
+     "q": "Que outro verificador rápido seria útil para você, como o preço de um ingresso?",
+     "c": "Crie o verificador com três mensagens e teste com 5, 30 e 70 anos."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading error messages",
+     "g": "Treat errors as clues, not failures.",
+     "p": [
+      "Read the last line first: it names the error type and the reason.",
+      "The line number above it shows where Python got stuck.",
+      "Every programmer sees errors daily; fixing them is the job."
+     ],
+     "q": "How do you usually react when something breaks: calm or stressed?",
+     "c": "Run print(5 / 0) on purpose, read the message and say what each part tells you."
+    },
+    "de": {
+     "t": "Fehlermeldungen lesen",
+     "g": "Sieh Fehler als Hinweise, nicht als Scheitern.",
+     "p": [
+      "Lies zuerst die letzte Zeile: Sie nennt Fehlertyp und Grund.",
+      "Die Zeilennummer darüber zeigt, wo Python hängen blieb.",
+      "Jeder Programmierer sieht täglich Fehler; sie zu beheben ist der Job."
+     ],
+     "q": "Wie reagierst du, wenn etwas kaputtgeht: ruhig oder gestresst?",
+     "c": "Führe absichtlich print(5 / 0) aus, lies die Meldung und erkläre, was jeder Teil sagt."
+    },
+    "es": {
+     "t": "Leer mensajes de error",
+     "g": "Trata los errores como pistas, no como fracasos.",
+     "p": [
+      "Lee primero la última línea: dice el tipo de error y el motivo.",
+      "El número de línea de arriba indica dónde se atascó Python.",
+      "Todo programador ve errores a diario; arreglarlos es el trabajo."
+     ],
+     "q": "¿Cómo reaccionas cuando algo falla: con calma o con estrés?",
+     "c": "Ejecuta print(5 / 0) a propósito, lee el mensaje y explica qué te dice cada parte."
+    },
+    "fr": {
+     "t": "Lire les messages d'erreur",
+     "g": "Vois les erreurs comme des indices, pas comme des échecs.",
+     "p": [
+      "Lis d'abord la dernière ligne : elle donne le type d'erreur et la raison.",
+      "Le numéro de ligne au-dessus montre où Python a bloqué.",
+      "Chaque développeur voit des erreurs tous les jours ; les corriger fait partie du métier."
+     ],
+     "q": "Comment réagis-tu quand quelque chose casse : calme ou stressé ?",
+     "c": "Lance print(5 / 0) exprès, lis le message et explique ce que dit chaque partie."
+    },
+    "it": {
+     "t": "Leggere i messaggi di errore",
+     "g": "Considera gli errori indizi, non fallimenti.",
+     "p": [
+      "Leggi prima l'ultima riga: indica il tipo di errore e il motivo.",
+      "Il numero di riga sopra mostra dove Python si è bloccato.",
+      "Ogni programmatore vede errori ogni giorno; correggerli è il lavoro."
+     ],
+     "q": "Come reagisci quando qualcosa si rompe: con calma o con stress?",
+     "c": "Esegui print(5 / 0) apposta, leggi il messaggio e spiega cosa dice ogni parte."
+    },
+    "pt": {
+     "t": "Ler mensagens de erro",
+     "g": "Trata os erros como pistas, não como falhas.",
+     "p": [
+      "Lê primeiro a última linha: diz o tipo de erro e o motivo.",
+      "O número da linha acima mostra onde o Python encravou.",
+      "Todo programador vê erros diariamente; corrigi-los é o trabalho."
+     ],
+     "q": "Como reages quando algo falha: com calma ou com stress?",
+     "c": "Executa print(5 / 0) de propósito, lê a mensagem e explica o que diz cada parte."
+    },
+    "pt_BR": {
+     "t": "Lendo mensagens de erro",
+     "g": "Trate os erros como pistas, não como fracassos.",
+     "p": [
+      "Leia primeiro a última linha: ela diz o tipo de erro e o motivo.",
+      "O número da linha acima mostra onde o Python travou.",
+      "Todo programador vê erros todo dia; corrigi-los é o trabalho."
+     ],
+     "q": "Como você reage quando algo quebra: com calma ou estresse?",
+     "c": "Execute print(5 / 0) de propósito, leia a mensagem e explique o que cada parte diz."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Syntax errors",
+     "g": "Spot the most common beginner slip-ups.",
+     "p": [
+      "A SyntaxError means Python could not understand how the line is written.",
+      "Typical causes: a missing colon, bracket or closing quote.",
+      "The error often points just after the real mistake, so look at the line above too."
+     ],
+     "q": "Which small detail do you most often forget when typing?",
+     "c": "Fix this broken line: print('Hello  then run it. Find what was missing."
+    },
+    "de": {
+     "t": "Syntaxfehler",
+     "g": "Erkenne die häufigsten Anfängerpatzer.",
+     "p": [
+      "Ein SyntaxError heißt: Python versteht nicht, wie die Zeile geschrieben ist.",
+      "Typische Ursachen: fehlender Doppelpunkt, fehlende Klammer oder fehlendes Anführungszeichen.",
+      "Der Fehler zeigt oft knapp hinter die echte Stelle, schau auch die Zeile darüber an."
+     ],
+     "q": "Welches kleine Detail vergisst du beim Tippen am häufigsten?",
+     "c": "Repariere diese kaputte Zeile: print('Hello  und führe sie aus. Finde, was fehlte."
+    },
+    "es": {
+     "t": "Errores de sintaxis",
+     "g": "Detecta los despistes más comunes al empezar.",
+     "p": [
+      "Un SyntaxError significa que Python no entendió cómo está escrita la línea.",
+      "Causas típicas: falta de dos puntos, un paréntesis o unas comillas de cierre.",
+      "El error suele señalar justo después del fallo real, mira también la línea anterior."
+     ],
+     "q": "¿Qué pequeño detalle olvidas más al escribir?",
+     "c": "Arregla esta línea rota: print('Hello  y ejecútala. Descubre qué faltaba."
+    },
+    "fr": {
+     "t": "Les erreurs de syntaxe",
+     "g": "Repère les petites erreurs de débutant les plus courantes.",
+     "p": [
+      "Une SyntaxError signifie que Python n'a pas compris l'écriture de la ligne.",
+      "Causes typiques : deux-points, parenthèse ou guillemet fermant oubliés.",
+      "L'erreur pointe souvent juste après la vraie faute, regarde aussi la ligne au-dessus."
+     ],
+     "q": "Quel petit détail oublies-tu le plus souvent en tapant ?",
+     "c": "Répare cette ligne cassée : print('Hello  puis lance-la. Trouve ce qui manquait."
+    },
+    "it": {
+     "t": "Errori di sintassi",
+     "g": "Riconosci le sviste più comuni dei principianti.",
+     "p": [
+      "Un SyntaxError significa che Python non ha capito come è scritta la riga.",
+      "Cause tipiche: due punti, parentesi o apice di chiusura mancanti.",
+      "L'errore spesso indica subito dopo il vero sbaglio, guarda anche la riga sopra."
+     ],
+     "q": "Quale piccolo dettaglio dimentichi più spesso mentre scrivi?",
+     "c": "Correggi questa riga rotta: print('Hello  poi eseguila. Scopri cosa mancava."
+    },
+    "pt": {
+     "t": "Erros de sintaxe",
+     "g": "Descobre os deslizes mais comuns de quem começa.",
+     "p": [
+      "Um SyntaxError significa que o Python não percebeu como a linha está escrita.",
+      "Causas típicas: faltam dois pontos, um parêntese ou aspas de fecho.",
+      "O erro costuma apontar logo a seguir ao engano real, vê também a linha de cima."
+     ],
+     "q": "Que pequeno detalhe esqueces mais vezes ao escrever?",
+     "c": "Corrige esta linha partida: print('Hello  e executa. Descobre o que faltava."
+    },
+    "pt_BR": {
+     "t": "Erros de sintaxe",
+     "g": "Descubra os deslizes mais comuns de quem está começando.",
+     "p": [
+      "Um SyntaxError significa que o Python não entendeu como a linha foi escrita.",
+      "Causas típicas: falta de dois-pontos, de um parêntese ou de aspas de fechamento.",
+      "O erro costuma apontar logo depois do engano real, olhe também a linha de cima."
+     ],
+     "q": "Que pequeno detalhe você mais esquece ao digitar?",
+     "c": "Corrija esta linha quebrada: print('Hello  e execute. Descubra o que faltava."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Thinking like a programmer",
+     "g": "Break a big problem into small steps first.",
+     "p": [
+      "Programmers split big tasks into small, clear steps.",
+      "Ask yourself: what goes in, what must happen, what comes out?",
+      "Solve a tiny version first, then grow it."
+     ],
+     "q": "What daily routine could you split into steps, like making breakfast?",
+     "c": "Pick one routine and write 5 numbered steps with inputs and outputs for each."
+    },
+    "de": {
+     "t": "Denken wie ein Programmierer",
+     "g": "Zerlege ein großes Problem zuerst in kleine Schritte.",
+     "p": [
+      "Programmierer teilen große Aufgaben in kleine, klare Schritte.",
+      "Frage dich: Was kommt rein, was muss passieren, was kommt heraus?",
+      "Löse zuerst eine winzige Version, dann baue sie aus."
+     ],
+     "q": "Welche Alltagsroutine könntest du in Schritte teilen, etwa Frühstück machen?",
+     "c": "Wähle eine Routine und schreibe 5 nummerierte Schritte mit Ein- und Ausgaben."
+    },
+    "es": {
+     "t": "Pensar como programador",
+     "g": "Divide primero un problema grande en pasos pequeños.",
+     "p": [
+      "Los programadores dividen las tareas grandes en pasos pequeños y claros.",
+      "Pregúntate: ¿qué entra, qué debe pasar y qué sale?",
+      "Resuelve primero una versión diminuta y luego hazla crecer."
+     ],
+     "q": "¿Qué rutina diaria podrías dividir en pasos, como preparar el desayuno?",
+     "c": "Elige una rutina y escribe 5 pasos numerados con entradas y salidas."
+    },
+    "fr": {
+     "t": "Penser comme un programmeur",
+     "g": "Découpe d'abord un gros problème en petites étapes.",
+     "p": [
+      "Les programmeurs découpent les grandes tâches en petites étapes claires.",
+      "Demande-toi : qu'est-ce qui entre, que doit-il se passer, qu'est-ce qui sort ?",
+      "Résous d'abord une version minuscule, puis agrandis-la."
+     ],
+     "q": "Quelle routine quotidienne pourrais-tu découper en étapes, comme préparer le petit-déjeuner ?",
+     "c": "Choisis une routine et écris 5 étapes numérotées avec entrées et sorties."
+    },
+    "it": {
+     "t": "Pensare da programmatore",
+     "g": "Spezza prima un grande problema in piccoli passi.",
+     "p": [
+      "I programmatori dividono i compiti grandi in passi piccoli e chiari.",
+      "Chiediti: cosa entra, cosa deve succedere, cosa esce?",
+      "Risolvi prima una versione minuscola, poi falla crescere."
+     ],
+     "q": "Quale routine quotidiana potresti dividere in passi, come preparare la colazione?",
+     "c": "Scegli una routine e scrivi 5 passi numerati con ingressi e uscite."
+    },
+    "pt": {
+     "t": "Pensar como programador",
+     "g": "Divide primeiro um problema grande em passos pequenos.",
+     "p": [
+      "Os programadores dividem tarefas grandes em passos pequenos e claros.",
+      "Pergunta-te: o que entra, o que tem de acontecer, o que sai?",
+      "Resolve primeiro uma versão minúscula e depois faz-a crescer."
+     ],
+     "q": "Que rotina diária podias dividir em passos, como preparar o pequeno-almoço?",
+     "c": "Escolhe uma rotina e escreve 5 passos numerados com entradas e saídas."
+    },
+    "pt_BR": {
+     "t": "Pensando como programador",
+     "g": "Divida primeiro um problema grande em passos pequenos.",
+     "p": [
+      "Programadores dividem tarefas grandes em passos pequenos e claros.",
+      "Pergunte-se: o que entra, o que precisa acontecer, o que sai?",
+      "Resolva primeiro uma versão minúscula e depois faça-a crescer."
+     ],
+     "q": "Que rotina diária você poderia dividir em passos, como preparar o café da manhã?",
+     "c": "Escolha uma rotina e escreva 5 passos numerados com entradas e saídas."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pseudocode",
+     "g": "Plan in plain words, then translate to code.",
+     "p": [
+      "Pseudocode is your plan written in everyday language, no strict rules.",
+      "Example: ask age; if 18 or more, say welcome; else say sorry.",
+      "Each plain line can later become one line of Python."
+     ],
+     "q": "Do you like to plan first or jump straight in and try?",
+     "c": "Write pseudocode for a program that asks for a number and says if it is even or odd."
+    },
+    "de": {
+     "t": "Pseudocode",
+     "g": "Plane in einfachen Worten und übersetze dann in Code.",
+     "p": [
+      "Pseudocode ist dein Plan in Alltagssprache, ohne strenge Regeln.",
+      "Beispiel: Alter fragen; ab 18 willkommen sagen; sonst Entschuldigung sagen.",
+      "Jede einfache Zeile kann später eine Zeile Python werden."
+     ],
+     "q": "Planst du gern zuerst oder probierst du direkt los?",
+     "c": "Schreibe Pseudocode für ein Programm, das eine Zahl erfragt und sagt, ob sie gerade oder ungerade ist."
+    },
+    "es": {
+     "t": "Pseudocódigo",
+     "g": "Planifica con palabras sencillas y luego pásalo a código.",
+     "p": [
+      "El pseudocódigo es tu plan en lenguaje cotidiano, sin reglas estrictas.",
+      "Ejemplo: pedir edad; si es 18 o más, dar la bienvenida; si no, disculparse.",
+      "Cada línea sencilla puede convertirse después en una línea de Python."
+     ],
+     "q": "¿Te gusta planificar primero o lanzarte a probar?",
+     "c": "Escribe el pseudocódigo de un programa que pide un número y dice si es par o impar."
+    },
+    "fr": {
+     "t": "Le pseudo-code",
+     "g": "Planifie en mots simples, puis traduis en code.",
+     "p": [
+      "Le pseudo-code est ton plan en langage courant, sans règles strictes.",
+      "Exemple : demander l'âge ; si 18 ou plus, souhaiter la bienvenue ; sinon, s'excuser.",
+      "Chaque ligne simple peut devenir plus tard une ligne de Python."
+     ],
+     "q": "Aimes-tu planifier d'abord ou te lancer directement ?",
+     "c": "Écris le pseudo-code d'un programme qui demande un nombre et dit s'il est pair ou impair."
+    },
+    "it": {
+     "t": "Lo pseudocodice",
+     "g": "Pianifica con parole semplici, poi traduci in codice.",
+     "p": [
+      "Lo pseudocodice è il tuo piano in linguaggio quotidiano, senza regole rigide.",
+      "Esempio: chiedi età; se 18 o più, dai il benvenuto; altrimenti scusati.",
+      "Ogni riga semplice può diventare poi una riga di Python."
+     ],
+     "q": "Ti piace pianificare prima o buttarti subito a provare?",
+     "c": "Scrivi lo pseudocodice di un programma che chiede un numero e dice se è pari o dispari."
+    },
+    "pt": {
+     "t": "Pseudocódigo",
+     "g": "Planeia com palavras simples e depois traduz para código.",
+     "p": [
+      "O pseudocódigo é o teu plano em linguagem do dia a dia, sem regras rígidas.",
+      "Exemplo: pedir idade; se for 18 ou mais, dar as boas-vindas; senão, pedir desculpa.",
+      "Cada linha simples pode depois virar uma linha de Python."
+     ],
+     "q": "Gostas de planear primeiro ou de experimentar logo?",
+     "c": "Escreve o pseudocódigo de um programa que pede um número e diz se é par ou ímpar."
+    },
+    "pt_BR": {
+     "t": "Pseudocódigo",
+     "g": "Planeje com palavras simples e depois traduza para código.",
+     "p": [
+      "Pseudocódigo é seu plano em linguagem do dia a dia, sem regras rígidas.",
+      "Exemplo: pedir idade; se for 18 ou mais, dar boas-vindas; senão, pedir desculpas.",
+      "Cada linha simples pode depois virar uma linha de Python."
+     ],
+     "q": "Você gosta de planejar primeiro ou de sair testando?",
+     "c": "Escreva o pseudocódigo de um programa que pede um número e diz se é par ou ímpar."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Flowcharts",
+     "g": "Draw steps and decisions as boxes and arrows.",
+     "p": [
+      "Rectangles show actions; diamonds show yes-or-no decisions.",
+      "Arrows show the order, and each diamond has a yes path and a no path.",
+      "A drawing often reveals a missing case before you write code."
+     ],
+     "q": "Do you think better with pictures or with words?",
+     "c": "Draw a flowchart on paper for the even-or-odd program, with one diamond."
+    },
+    "de": {
+     "t": "Flussdiagramme",
+     "g": "Zeichne Schritte und Entscheidungen als Kästchen und Pfeile.",
+     "p": [
+      "Rechtecke zeigen Aktionen; Rauten zeigen Ja-Nein-Entscheidungen.",
+      "Pfeile zeigen die Reihenfolge, jede Raute hat einen Ja- und einen Nein-Weg.",
+      "Eine Zeichnung zeigt oft einen fehlenden Fall, bevor du Code schreibst."
+     ],
+     "q": "Denkst du besser in Bildern oder in Worten?",
+     "c": "Zeichne auf Papier ein Flussdiagramm für das Gerade-oder-ungerade-Programm mit einer Raute."
+    },
+    "es": {
+     "t": "Diagramas de flujo",
+     "g": "Dibuja pasos y decisiones como cajas y flechas.",
+     "p": [
+      "Los rectángulos muestran acciones; los rombos, decisiones de sí o no.",
+      "Las flechas marcan el orden y cada rombo tiene un camino de sí y otro de no.",
+      "Un dibujo suele revelar un caso olvidado antes de escribir código."
+     ],
+     "q": "¿Piensas mejor con imágenes o con palabras?",
+     "c": "Dibuja en papel el diagrama del programa par o impar, con un rombo."
+    },
+    "fr": {
+     "t": "Les organigrammes",
+     "g": "Dessine étapes et décisions en boîtes et flèches.",
+     "p": [
+      "Les rectangles montrent des actions ; les losanges des décisions oui ou non.",
+      "Les flèches donnent l'ordre, chaque losange a un chemin oui et un chemin non.",
+      "Un dessin révèle souvent un cas oublié avant même d'écrire le code."
+     ],
+     "q": "Penses-tu mieux avec des images ou avec des mots ?",
+     "c": "Dessine sur papier l'organigramme du programme pair ou impair, avec un losange."
+    },
+    "it": {
+     "t": "I diagrammi di flusso",
+     "g": "Disegna passi e decisioni come scatole e frecce.",
+     "p": [
+      "I rettangoli mostrano azioni; i rombi decisioni da sì o no.",
+      "Le frecce mostrano l'ordine e ogni rombo ha una via sì e una via no.",
+      "Un disegno spesso svela un caso dimenticato prima di scrivere codice."
+     ],
+     "q": "Pensi meglio con le immagini o con le parole?",
+     "c": "Disegna su carta il diagramma del programma pari o dispari, con un rombo."
+    },
+    "pt": {
+     "t": "Fluxogramas",
+     "g": "Desenha passos e decisões como caixas e setas.",
+     "p": [
+      "Os retângulos mostram ações; os losangos, decisões de sim ou não.",
+      "As setas mostram a ordem e cada losango tem um caminho sim e um não.",
+      "Um desenho revela muitas vezes um caso esquecido antes de escreveres código."
+     ],
+     "q": "Pensas melhor com imagens ou com palavras?",
+     "c": "Desenha em papel o fluxograma do programa par ou ímpar, com um losango."
+    },
+    "pt_BR": {
+     "t": "Fluxogramas",
+     "g": "Desenhe passos e decisões como caixas e setas.",
+     "p": [
+      "Retângulos mostram ações; losangos mostram decisões de sim ou não.",
+      "Setas mostram a ordem e cada losango tem um caminho sim e um não.",
+      "Um desenho muitas vezes revela um caso esquecido antes de você escrever código."
+     ],
+     "q": "Você pensa melhor com imagens ou com palavras?",
+     "c": "Desenhe no papel o fluxograma do programa par ou ímpar, com um losango."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mini project: simple calculator",
+     "g": "Ask for two numbers and an operation, then print the result.",
+     "p": [
+      "Plan: read two numbers, read the symbol, then pick the right maths.",
+      "Use input, float and if with elif for plus, minus, times and divide.",
+      "Test with a divide-by-zero case and decide how to handle it."
+     ],
+     "q": "What would you add to a calculator to make it more useful to you?",
+     "c": "Build the calculator for + - * / and add an else that prints Unknown operation."
+    },
+    "de": {
+     "t": "Mini-Projekt: einfacher Taschenrechner",
+     "g": "Frage zwei Zahlen und eine Rechenart ab und gib das Ergebnis aus.",
+     "p": [
+      "Plan: zwei Zahlen lesen, das Symbol lesen, dann die passende Rechnung wählen.",
+      "Nutze input, float und if mit elif für plus, minus, mal und geteilt.",
+      "Teste einen Fall mit Division durch null und entscheide, wie du ihn behandelst."
+     ],
+     "q": "Was würdest du einem Taschenrechner hinzufügen, damit er dir mehr nützt?",
+     "c": "Baue den Rechner für + - * / und füge ein else hinzu, das Unknown operation ausgibt."
+    },
+    "es": {
+     "t": "Miniproyecto: calculadora simple",
+     "g": "Pide dos números y una operación e imprime el resultado.",
+     "p": [
+      "Plan: lee dos números, lee el símbolo y elige la operación correcta.",
+      "Usa input, float e if con elif para sumar, restar, multiplicar y dividir.",
+      "Prueba el caso de dividir entre cero y decide cómo manejarlo."
+     ],
+     "q": "¿Qué añadirías a una calculadora para que te fuera más útil?",
+     "c": "Crea la calculadora para + - * / y añade un else que imprima Unknown operation."
+    },
+    "fr": {
+     "t": "Mini-projet : calculatrice simple",
+     "g": "Demande deux nombres et une opération, puis affiche le résultat.",
+     "p": [
+      "Plan : lire deux nombres, lire le symbole, puis choisir le bon calcul.",
+      "Utilise input, float et if avec elif pour plus, moins, fois et divisé.",
+      "Teste le cas de la division par zéro et décide comment le gérer."
+     ],
+     "q": "Que ajouterais-tu à une calculatrice pour qu'elle te soit plus utile ?",
+     "c": "Crée la calculatrice pour + - * / et ajoute un else qui affiche Unknown operation."
+    },
+    "it": {
+     "t": "Mini progetto: calcolatrice semplice",
+     "g": "Chiedi due numeri e un'operazione, poi stampa il risultato.",
+     "p": [
+      "Piano: leggi due numeri, leggi il simbolo, poi scegli il calcolo giusto.",
+      "Usa input, float e if con elif per più, meno, per e diviso.",
+      "Prova il caso della divisione per zero e decidi come gestirlo."
+     ],
+     "q": "Cosa aggiungeresti a una calcolatrice per renderla più utile per te?",
+     "c": "Crea la calcolatrice per + - * / e aggiungi un else che stampa Unknown operation."
+    },
+    "pt": {
+     "t": "Mini projeto: calculadora simples",
+     "g": "Pede dois números e uma operação e imprime o resultado.",
+     "p": [
+      "Plano: lê dois números, lê o símbolo e escolhe o cálculo certo.",
+      "Usa input, float e if com elif para somar, subtrair, multiplicar e dividir.",
+      "Testa o caso de dividir por zero e decide como tratá-lo."
+     ],
+     "q": "O que acrescentarias a uma calculadora para ser mais útil para ti?",
+     "c": "Cria a calculadora para + - * / e junta um else que imprime Unknown operation."
+    },
+    "pt_BR": {
+     "t": "Mini projeto: calculadora simples",
+     "g": "Peça dois números e uma operação e imprima o resultado.",
+     "p": [
+      "Plano: leia dois números, leia o símbolo e escolha o cálculo certo.",
+      "Use input, float e if com elif para somar, subtrair, multiplicar e dividir.",
+      "Teste o caso de dividir por zero e decida como tratá-lo."
+     ],
+     "q": "O que você acrescentaria a uma calculadora para ser mais útil para você?",
+     "c": "Crie a calculadora para + - * / e adicione um else que imprime Unknown operation."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month",
+     "g": "Recap variables, types, conditions and errors with a mini quiz.",
+     "p": [
+      "Variables store values; types include int, float, str and bool.",
+      "if, elif and else choose paths; and, or, not combine conditions.",
+      "Errors are clues: read the last line, then the line number."
+     ],
+     "q": "Which topic from this month felt easiest, and which one is still tricky?",
+     "c": "Quiz: what does 7 % 3 print, and what does int('4') + 1 print? Run to check."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Monat",
+     "g": "Wiederhole Variablen, Typen, Bedingungen und Fehler mit einem Mini-Quiz.",
+     "p": [
+      "Variablen speichern Werte; Typen sind unter anderem int, float, str und bool.",
+      "if, elif und else wählen Wege; and, or, not verknüpfen Bedingungen.",
+      "Fehler sind Hinweise: erst die letzte Zeile lesen, dann die Zeilennummer."
+     ],
+     "q": "Welches Thema war diesen Monat am leichtesten, welches ist noch knifflig?",
+     "c": "Quiz: Was gibt 7 % 3 aus und was int('4') + 1? Führe es zur Kontrolle aus."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes",
+     "g": "Repasa variables, tipos, condiciones y errores con un miniquiz.",
+     "p": [
+      "Las variables guardan valores; los tipos incluyen int, float, str y bool.",
+      "if, elif y else eligen caminos; and, or y not combinan condiciones.",
+      "Los errores son pistas: lee la última línea y luego el número de línea."
+     ],
+     "q": "¿Qué tema de este mes te resultó más fácil y cuál sigue siendo difícil?",
+     "c": "Quiz: ¿qué imprime 7 % 3 y qué imprime int('4') + 1? Ejecútalo para comprobar."
+    },
+    "fr": {
+     "t": "Révision : ton premier mois",
+     "g": "Révise variables, types, conditions et erreurs avec un mini quiz.",
+     "p": [
+      "Les variables stockent des valeurs ; les types incluent int, float, str et bool.",
+      "if, elif et else choisissent des chemins ; and, or, not combinent des conditions.",
+      "Les erreurs sont des indices : lis la dernière ligne, puis le numéro de ligne."
+     ],
+     "q": "Quel sujet de ce mois t'a paru le plus facile, et lequel reste délicat ?",
+     "c": "Quiz : que donne 7 % 3, et que donne int('4') + 1 ? Lance pour vérifier."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese",
+     "g": "Ripassa variabili, tipi, condizioni ed errori con un mini quiz.",
+     "p": [
+      "Le variabili salvano valori; i tipi includono int, float, str e bool.",
+      "if, elif ed else scelgono percorsi; and, or, not combinano condizioni.",
+      "Gli errori sono indizi: leggi l'ultima riga, poi il numero di riga."
+     ],
+     "q": "Quale argomento di questo mese ti è sembrato più facile e quale è ancora difficile?",
+     "c": "Quiz: cosa stampa 7 % 3 e cosa stampa int('4') + 1? Eseguilo per verificare."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês",
+     "g": "Revê variáveis, tipos, condições e erros com um mini quiz.",
+     "p": [
+      "As variáveis guardam valores; os tipos incluem int, float, str e bool.",
+      "if, elif e else escolhem caminhos; and, or, not combinam condições.",
+      "Os erros são pistas: lê a última linha e depois o número da linha."
+     ],
+     "q": "Que tema deste mês achaste mais fácil e qual ainda é difícil?",
+     "c": "Quiz: o que imprime 7 % 3 e o que imprime int('4') + 1? Executa para confirmar."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês",
+     "g": "Revise variáveis, tipos, condições e erros com um mini quiz.",
+     "p": [
+      "Variáveis guardam valores; os tipos incluem int, float, str e bool.",
+      "if, elif e else escolhem caminhos; and, or, not combinam condições.",
+      "Erros são pistas: leia a última linha e depois o número da linha."
+     ],
+     "q": "Que tema deste mês foi mais fácil para você e qual ainda é difícil?",
+     "c": "Quiz: o que imprime 7 % 3 e o que imprime int('4') + 1? Execute para conferir."
+    }
+   }
+  }
+ ]
+}

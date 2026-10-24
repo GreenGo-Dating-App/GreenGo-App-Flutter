@@ -1,0 +1,835 @@
+{
+ "topic": "moving_abroad",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Timing your move",
+     "g": "Choose a good moment for work, school terms and seasons.",
+     "p": [
+      "Think about school years, job start dates, lease ends and the season you arrive.",
+      "Arriving in mild weather and with some daylight makes the first weeks gentler.",
+      "Leave flexibility, because paperwork and travel can take longer than planned."
+     ],
+     "q": "When would be your ideal month to arrive, and why?",
+     "c": "Mark two or three possible move months on a calendar and note pros for each."
+    },
+    "de": {
+     "t": "Den richtigen Zeitpunkt wählen",
+     "g": "Wähle einen guten Moment mit Blick auf Arbeit, Schuljahr und Jahreszeit.",
+     "p": [
+      "Denk an Schuljahre, Jobstarts, Mietende und die Jahreszeit deiner Ankunft.",
+      "Eine Ankunft bei mildem Wetter und mit etwas Tageslicht macht die ersten Wochen sanfter.",
+      "Plane Spielraum ein, denn Papierkram und Reisen dauern oft länger als gedacht."
+     ],
+     "q": "Welcher wäre dein idealer Ankunftsmonat, und warum?",
+     "c": "Markiere zwei oder drei mögliche Umzugsmonate im Kalender und notiere Vorteile."
+    },
+    "es": {
+     "t": "Elegir el momento de mudarte",
+     "g": "Elige un buen momento según el trabajo, el curso escolar y las estaciones.",
+     "p": [
+      "Piensa en cursos escolares, fechas de inicio laboral, fin de alquiler y la estación de llegada.",
+      "Llegar con buen tiempo y algo de luz hace más suaves las primeras semanas.",
+      "Deja margen, porque los trámites y los viajes pueden tardar más de lo previsto."
+     ],
+     "q": "¿Cuál sería tu mes ideal para llegar, y por qué?",
+     "c": "Marca en el calendario dos o tres meses posibles y anota ventajas de cada uno."
+    },
+    "fr": {
+     "t": "Choisir le bon moment",
+     "g": "Choisis un bon moment en fonction du travail, de l'année scolaire et des saisons.",
+     "p": [
+      "Pense aux années scolaires, aux dates de début de poste, à la fin du bail et à la saison d'arrivée.",
+      "Arriver par temps doux et avec un peu de lumière rend les premières semaines plus douces.",
+      "Garde de la souplesse, car les démarches et les voyages prennent souvent plus de temps que prévu."
+     ],
+     "q": "Quel serait ton mois idéal pour arriver, et pourquoi ?",
+     "c": "Marque deux ou trois mois possibles sur un calendrier et note les avantages de chacun."
+    },
+    "it": {
+     "t": "Scegliere il momento giusto",
+     "g": "Scegli un buon momento in base a lavoro, anno scolastico e stagioni.",
+     "p": [
+      "Pensa agli anni scolastici, alle date di inizio lavoro, alla fine dell'affitto e alla stagione di arrivo.",
+      "Arrivare con clima mite e un po' di luce rende più dolci le prime settimane.",
+      "Lascia flessibilità, perché pratiche e viaggi possono richiedere più tempo del previsto."
+     ],
+     "q": "Quale sarebbe il tuo mese ideale per arrivare, e perché?",
+     "c": "Segna sul calendario due o tre mesi possibili e annota i vantaggi di ciascuno."
+    },
+    "pt": {
+     "t": "Escolher o momento certo",
+     "g": "Escolhe um bom momento tendo em conta trabalho, ano letivo e estações.",
+     "p": [
+      "Pensa nos anos letivos, nas datas de início de emprego, no fim do arrendamento e na estação da chegada.",
+      "Chegar com tempo ameno e alguma luz torna as primeiras semanas mais suaves.",
+      "Deixa margem, porque a burocracia e as viagens podem demorar mais do que o previsto."
+     ],
+     "q": "Qual seria o teu mês ideal para chegar, e porquê?",
+     "c": "Marca no calendário dois ou três meses possíveis e anota vantagens de cada um."
+    },
+    "pt_BR": {
+     "t": "Escolhendo o momento certo",
+     "g": "Escolha um bom momento levando em conta trabalho, ano letivo e estações.",
+     "p": [
+      "Pense nos anos letivos, nas datas de início de emprego, no fim do aluguel e na estação da chegada.",
+      "Chegar com tempo ameno e alguma luz deixa as primeiras semanas mais suaves.",
+      "Deixe margem, porque a burocracia e as viagens podem demorar mais que o previsto."
+     ],
+     "q": "Qual seria seu mês ideal para chegar, e por quê?",
+     "c": "Marque no calendário dois ou três meses possíveis e anote vantagens de cada um."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A move timeline",
+     "g": "Build a simple timeline from decision to arrival.",
+     "p": [
+      "Work backwards from your arrival date and place big tasks on a monthly line.",
+      "Include research, paperwork, savings, packing, goodbyes and the first week.",
+      "Add buffers. A calm timeline beats a perfect one."
+     ],
+     "q": "Which step in your timeline feels most uncertain right now?",
+     "c": "Draw a six-step timeline from today to arrival day."
+    },
+    "de": {
+     "t": "Ein Umzugszeitplan",
+     "g": "Erstelle einen einfachen Zeitplan von der Entscheidung bis zur Ankunft.",
+     "p": [
+      "Plane rückwärts vom Ankunftsdatum und verteile die großen Aufgaben auf eine Monatslinie.",
+      "Nimm Recherche, Papierkram, Ersparnisse, Packen, Abschiede und die erste Woche auf.",
+      "Plane Puffer ein. Ein ruhiger Zeitplan schlägt einen perfekten."
+     ],
+     "q": "Welcher Schritt in deinem Zeitplan fühlt sich gerade am unsichersten an?",
+     "c": "Zeichne einen Zeitplan mit sechs Schritten von heute bis zum Ankunftstag."
+    },
+    "es": {
+     "t": "Un calendario de mudanza",
+     "g": "Construye un calendario sencillo desde la decisión hasta la llegada.",
+     "p": [
+      "Trabaja hacia atrás desde la fecha de llegada y reparte las tareas grandes por meses.",
+      "Incluye investigación, trámites, ahorros, equipaje, despedidas y la primera semana.",
+      "Añade márgenes. Un calendario tranquilo vale más que uno perfecto."
+     ],
+     "q": "¿Qué paso de tu calendario te parece más incierto ahora mismo?",
+     "c": "Dibuja un calendario de seis pasos desde hoy hasta el día de llegada."
+    },
+    "fr": {
+     "t": "Un calendrier de déménagement",
+     "g": "Construis un calendrier simple, de la décision à l'arrivée.",
+     "p": [
+      "Pars de la date d'arrivée et répartis les grandes tâches mois par mois.",
+      "Inclus recherches, démarches, économies, bagages, adieux et la première semaine.",
+      "Ajoute des marges. Un calendrier serein vaut mieux qu'un calendrier parfait."
+     ],
+     "q": "Quelle étape de ton calendrier te semble la plus incertaine en ce moment ?",
+     "c": "Dessine un calendrier en six étapes, d'aujourd'hui au jour d'arrivée."
+    },
+    "it": {
+     "t": "Una tabella di marcia",
+     "g": "Costruisci una tabella di marcia semplice, dalla decisione all'arrivo.",
+     "p": [
+      "Parti a ritroso dalla data di arrivo e distribuisci i grandi compiti mese per mese.",
+      "Includi ricerche, pratiche, risparmi, bagagli, saluti e la prima settimana.",
+      "Aggiungi margini. Una tabella serena batte una perfetta."
+     ],
+     "q": "Quale passo della tua tabella ti sembra più incerto adesso?",
+     "c": "Disegna una tabella di sei passi da oggi al giorno dell'arrivo."
+    },
+    "pt": {
+     "t": "Um calendário da mudança",
+     "g": "Constrói um calendário simples, da decisão à chegada.",
+     "p": [
+      "Trabalha a partir da data de chegada e distribui as tarefas grandes mês a mês.",
+      "Inclui pesquisa, burocracia, poupanças, bagagem, despedidas e a primeira semana.",
+      "Acrescenta folgas. Um calendário tranquilo vale mais do que um perfeito."
+     ],
+     "q": "Que passo do teu calendário te parece mais incerto agora?",
+     "c": "Desenha um calendário de seis passos desde hoje até ao dia da chegada."
+    },
+    "pt_BR": {
+     "t": "Um cronograma da mudança",
+     "g": "Monte um cronograma simples, da decisão à chegada.",
+     "p": [
+      "Trabalhe de trás para a frente a partir da data de chegada e distribua as tarefas grandes mês a mês.",
+      "Inclua pesquisa, burocracia, economias, bagagem, despedidas e a primeira semana.",
+      "Acrescente folgas. Um cronograma tranquilo vale mais que um perfeito."
+     ],
+     "q": "Que passo do seu cronograma parece mais incerto agora?",
+     "c": "Desenhe um cronograma de seis passos de hoje até o dia da chegada."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your moving budget",
+     "g": "Estimate costs for travel, shipping, setup and a safety cushion.",
+     "p": [
+      "List one-time costs: travel, shipping, deposits, furniture and documents.",
+      "Add monthly costs for the first months, before income may start.",
+      "Round up. Unexpected costs are normal, so build in a margin."
+     ],
+     "q": "Which cost in your moving budget do you know least about?",
+     "c": "Write a draft budget with three categories and rough amounts."
+    },
+    "de": {
+     "t": "Dein Umzugsbudget",
+     "g": "Schätze Kosten für Reise, Transport, Einrichtung und ein Sicherheitspolster.",
+     "p": [
+      "Liste einmalige Kosten auf: Reise, Transport, Kautionen, Möbel und Dokumente.",
+      "Rechne monatliche Kosten für die ersten Monate dazu, bevor Einkommen starten kann.",
+      "Rechne großzügig. Unerwartete Kosten sind normal, plane also einen Puffer ein."
+     ],
+     "q": "Bei welchem Posten deines Budgets weißt du am wenigsten?",
+     "c": "Schreib ein Rohbudget mit drei Kategorien und groben Beträgen."
+    },
+    "es": {
+     "t": "Tu presupuesto de mudanza",
+     "g": "Calcula los costes de viaje, envío, instalación y un colchón de seguridad.",
+     "p": [
+      "Enumera los gastos únicos: viaje, envío, fianzas, muebles y documentos.",
+      "Suma los gastos mensuales de los primeros meses, antes de que empiecen los ingresos.",
+      "Redondea hacia arriba. Los imprevistos son normales, así que deja margen."
+     ],
+     "q": "¿Qué gasto de tu presupuesto conoces menos?",
+     "c": "Escribe un borrador de presupuesto con tres categorías e importes aproximados."
+    },
+    "fr": {
+     "t": "Ton budget de déménagement",
+     "g": "Estime les coûts du voyage, de l'envoi, de l'installation et d'un coussin de sécurité.",
+     "p": [
+      "Liste les frais uniques : voyage, envoi, dépôts de garantie, meubles et documents.",
+      "Ajoute les frais mensuels des premiers mois, avant que les revenus ne démarrent.",
+      "Arrondis vers le haut. Les imprévus sont normaux, garde donc une marge."
+     ],
+     "q": "Quel poste de ton budget connais-tu le moins ?",
+     "c": "Écris un budget provisoire avec trois catégories et des montants approximatifs."
+    },
+    "it": {
+     "t": "Il tuo budget per il trasloco",
+     "g": "Stima i costi di viaggio, spedizione, sistemazione e un cuscinetto di sicurezza.",
+     "p": [
+      "Elenca i costi una tantum: viaggio, spedizione, depositi, mobili e documenti.",
+      "Aggiungi i costi mensili dei primi mesi, prima che il reddito possa partire.",
+      "Arrotonda per eccesso. Gli imprevisti sono normali, quindi lascia un margine."
+     ],
+     "q": "Quale voce del tuo budget conosci meno?",
+     "c": "Scrivi una bozza di budget con tre categorie e importi indicativi."
+    },
+    "pt": {
+     "t": "O teu orçamento da mudança",
+     "g": "Estima os custos de viagem, envio, instalação e uma almofada de segurança.",
+     "p": [
+      "Lista as despesas únicas: viagem, envio, cauções, mobília e documentos.",
+      "Soma as despesas mensais dos primeiros meses, antes de o rendimento começar.",
+      "Arredonda para cima. Os imprevistos são normais, por isso deixa margem."
+     ],
+     "q": "Que despesa do teu orçamento conheces menos?",
+     "c": "Escreve um rascunho de orçamento com três categorias e valores aproximados."
+    },
+    "pt_BR": {
+     "t": "Seu orçamento da mudança",
+     "g": "Estime os custos de viagem, envio, instalação e uma reserva de segurança.",
+     "p": [
+      "Liste os gastos únicos: viagem, envio, caução, móveis e documentos.",
+      "Some os gastos mensais dos primeiros meses, antes de a renda começar.",
+      "Arredonde para cima. Imprevistos são normais, então deixe margem."
+     ],
+     "q": "Que gasto do seu orçamento você conhece menos?",
+     "c": "Escreva um rascunho de orçamento com três categorias e valores aproximados."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Savings before you go",
+     "g": "Why a financial cushion makes the first months calmer.",
+     "p": [
+      "A cushion lets you handle delays, deposits and surprises without panic.",
+      "Many people aim for several months of living costs, but your needs are personal.",
+      "Small automatic monthly savings add up faster than you expect."
+     ],
+     "q": "How do you usually save, and what could you improve?",
+     "c": "Set a small monthly saving goal and pick the day you will start."
+    },
+    "de": {
+     "t": "Rücklagen vor der Abreise",
+     "g": "Warum ein finanzielles Polster die ersten Monate ruhiger macht.",
+     "p": [
+      "Ein Polster hilft dir bei Verzögerungen, Kautionen und Überraschungen ohne Panik.",
+      "Viele peilen mehrere Monate Lebenshaltungskosten an, aber dein Bedarf ist persönlich.",
+      "Kleine automatische Sparbeträge summieren sich schneller, als du denkst."
+     ],
+     "q": "Wie sparst du normalerweise, und was könntest du verbessern?",
+     "c": "Setz ein kleines monatliches Sparziel und wähle den Starttag."
+    },
+    "es": {
+     "t": "Ahorrar antes de irte",
+     "g": "Por qué un colchón económico hace más tranquilos los primeros meses.",
+     "p": [
+      "Un colchón te permite afrontar retrasos, fianzas y sorpresas sin agobios.",
+      "Mucha gente busca cubrir varios meses de gastos, pero tus necesidades son personales.",
+      "Pequeños ahorros mensuales automáticos suman más rápido de lo que crees."
+     ],
+     "q": "¿Cómo sueles ahorrar y qué podrías mejorar?",
+     "c": "Fija una pequeña meta de ahorro mensual y elige el día de empezar."
+    },
+    "fr": {
+     "t": "Épargner avant de partir",
+     "g": "Pourquoi un coussin financier rend les premiers mois plus sereins.",
+     "p": [
+      "Un coussin permet de gérer retards, dépôts de garantie et surprises sans panique.",
+      "Beaucoup visent plusieurs mois de dépenses, mais tes besoins sont personnels.",
+      "De petites économies mensuelles automatiques s'additionnent plus vite qu'on ne croit."
+     ],
+     "q": "Comment épargnes-tu d'habitude, et que pourrais-tu améliorer ?",
+     "c": "Fixe un petit objectif d'épargne mensuel et choisis le jour de départ."
+    },
+    "it": {
+     "t": "Risparmiare prima di partire",
+     "g": "Perché un cuscinetto finanziario rende più sereni i primi mesi.",
+     "p": [
+      "Un cuscinetto ti permette di gestire ritardi, depositi e sorprese senza panico.",
+      "Molti puntano a coprire diversi mesi di spese, ma le tue esigenze sono personali.",
+      "Piccoli risparmi mensili automatici crescono più in fretta di quanto pensi."
+     ],
+     "q": "Come risparmi di solito, e cosa potresti migliorare?",
+     "c": "Fissa un piccolo obiettivo di risparmio mensile e scegli il giorno di inizio."
+    },
+    "pt": {
+     "t": "Poupar antes de partires",
+     "g": "Porque é que uma almofada financeira torna os primeiros meses mais calmos.",
+     "p": [
+      "Uma almofada ajuda a lidar com atrasos, cauções e surpresas sem pânico.",
+      "Muita gente procura cobrir vários meses de despesas, mas as tuas necessidades são pessoais.",
+      "Pequenas poupanças mensais automáticas somam mais depressa do que pensas."
+     ],
+     "q": "Como costumas poupar e o que poderias melhorar?",
+     "c": "Define uma pequena meta de poupança mensal e escolhe o dia de começar."
+    },
+    "pt_BR": {
+     "t": "Guardar dinheiro antes de ir",
+     "g": "Por que uma reserva financeira deixa os primeiros meses mais tranquilos.",
+     "p": [
+      "Uma reserva ajuda a lidar com atrasos, cauções e surpresas sem pânico.",
+      "Muita gente busca cobrir vários meses de gastos, mas suas necessidades são pessoais.",
+      "Pequenas economias mensais automáticas somam mais rápido do que você imagina."
+     ],
+     "q": "Como você costuma guardar dinheiro e o que poderia melhorar?",
+     "c": "Defina uma pequena meta de economia mensal e escolha o dia de começar."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your moving folder",
+     "g": "Keep notes, documents and checklists in one organised place.",
+     "p": [
+      "Create one physical folder and one digital folder with the same structure.",
+      "Sort by topics: identity, housing, money, health, work or study, and contacts.",
+      "Update it weekly. A tidy folder saves hours of stress later."
+     ],
+     "q": "How do you usually keep track of important papers?",
+     "c": "Create your moving folder today and add at least three labelled sections."
+    },
+    "de": {
+     "t": "Dein Umzugsordner",
+     "g": "Halte Notizen, Dokumente und Checklisten an einem geordneten Ort zusammen.",
+     "p": [
+      "Leg einen Papierordner und einen digitalen Ordner mit gleicher Struktur an.",
+      "Sortiere nach Themen: Identität, Wohnen, Geld, Gesundheit, Arbeit oder Studium und Kontakte.",
+      "Aktualisiere ihn wöchentlich. Ein aufgeräumter Ordner erspart später viel Stress."
+     ],
+     "q": "Wie behältst du wichtige Unterlagen normalerweise im Blick?",
+     "c": "Leg heute deinen Umzugsordner an und füge mindestens drei beschriftete Bereiche hinzu."
+    },
+    "es": {
+     "t": "Tu carpeta de mudanza",
+     "g": "Guarda notas, documentos y listas en un único lugar ordenado.",
+     "p": [
+      "Crea una carpeta física y otra digital con la misma estructura.",
+      "Ordena por temas: identidad, vivienda, dinero, salud, trabajo o estudios y contactos.",
+      "Actualízala cada semana. Una carpeta ordenada te ahorra horas de estrés después."
+     ],
+     "q": "¿Cómo sueles controlar tus papeles importantes?",
+     "c": "Crea hoy tu carpeta de mudanza y añade al menos tres secciones con nombre."
+    },
+    "fr": {
+     "t": "Ton dossier de déménagement",
+     "g": "Garde notes, documents et listes dans un seul endroit bien organisé.",
+     "p": [
+      "Crée un classeur papier et un dossier numérique avec la même structure.",
+      "Trie par thèmes : identité, logement, argent, santé, travail ou études et contacts.",
+      "Mets-le à jour chaque semaine. Un dossier bien rangé évite beaucoup de stress plus tard."
+     ],
+     "q": "Comment suis-tu d'habitude tes papiers importants ?",
+     "c": "Crée ton dossier de déménagement aujourd'hui avec au moins trois rubriques nommées."
+    },
+    "it": {
+     "t": "La tua cartella del trasloco",
+     "g": "Tieni appunti, documenti e liste in un unico posto ordinato.",
+     "p": [
+      "Crea una cartella fisica e una digitale con la stessa struttura.",
+      "Ordina per temi: identità, casa, denaro, salute, lavoro o studio e contatti.",
+      "Aggiornala ogni settimana. Una cartella in ordine ti risparmia ore di stress dopo."
+     ],
+     "q": "Come tieni di solito traccia dei documenti importanti?",
+     "c": "Crea oggi la tua cartella del trasloco e aggiungi almeno tre sezioni etichettate."
+    },
+    "pt": {
+     "t": "A tua pasta da mudança",
+     "g": "Mantém notas, documentos e listas num único lugar organizado.",
+     "p": [
+      "Cria uma pasta de papel e uma pasta digital com a mesma estrutura.",
+      "Organiza por temas: identidade, habitação, dinheiro, saúde, trabalho ou estudo e contactos.",
+      "Atualiza-a semanalmente. Uma pasta arrumada poupa horas de stress mais tarde."
+     ],
+     "q": "Como costumas controlar os papéis importantes?",
+     "c": "Cria hoje a tua pasta da mudança e acrescenta pelo menos três secções com nome."
+    },
+    "pt_BR": {
+     "t": "Sua pasta da mudança",
+     "g": "Mantenha anotações, documentos e listas num único lugar organizado.",
+     "p": [
+      "Crie uma pasta de papel e uma pasta digital com a mesma estrutura.",
+      "Organize por temas: identidade, moradia, dinheiro, saúde, trabalho ou estudo e contatos.",
+      "Atualize toda semana. Uma pasta arrumada poupa horas de estresse depois."
+     ],
+     "q": "Como você costuma controlar seus papéis importantes?",
+     "c": "Crie hoje sua pasta da mudança e acrescente pelo menos três seções com nome."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keeping documents safe",
+     "g": "Use copies, digital backups and safe storage for important papers.",
+     "p": [
+      "Keep copies of key documents separate from the originals, in different places.",
+      "Store encrypted digital scans and share access with one trusted person.",
+      "Carry originals in hand luggage and never post them in unsure ways."
+     ],
+     "q": "Where do you keep your important papers right now?",
+     "c": "Scan one important document today and store it securely with a backup."
+    },
+    "de": {
+     "t": "Dokumente sicher aufbewahren",
+     "g": "Nutze Kopien, digitale Sicherungen und sichere Aufbewahrung für wichtige Unterlagen.",
+     "p": [
+      "Bewahre Kopien wichtiger Dokumente getrennt von den Originalen an anderen Orten auf.",
+      "Speichere verschlüsselte Scans und gib einer vertrauten Person Zugriff.",
+      "Trag Originale im Handgepäck und verschick sie nie auf unsichere Weise."
+     ],
+     "q": "Wo bewahrst du deine wichtigen Unterlagen im Moment auf?",
+     "c": "Scanne heute ein wichtiges Dokument und speichere es sicher mit einer Sicherung."
+    },
+    "es": {
+     "t": "Guardar bien los documentos",
+     "g": "Usa copias, copias digitales y un almacenamiento seguro para tus papeles importantes.",
+     "p": [
+      "Guarda copias de los documentos clave separadas de los originales, en lugares distintos.",
+      "Almacena escaneos cifrados y da acceso a una persona de confianza.",
+      "Lleva los originales en el equipaje de mano y no los envíes nunca de forma insegura."
+     ],
+     "q": "¿Dónde guardas ahora tus papeles importantes?",
+     "c": "Escanea hoy un documento importante y guárdalo de forma segura con copia de respaldo."
+    },
+    "fr": {
+     "t": "Garder ses documents en sécurité",
+     "g": "Utilise copies, sauvegardes numériques et rangement sûr pour tes papiers importants.",
+     "p": [
+      "Garde des copies des documents clés séparées des originaux, à des endroits différents.",
+      "Stocke des scans chiffrés et donne l'accès à une personne de confiance.",
+      "Garde les originaux en bagage à main et ne les envoie jamais de façon incertaine."
+     ],
+     "q": "Où ranges-tu tes papiers importants en ce moment ?",
+     "c": "Scanne aujourd'hui un document important et range-le en sécurité avec une sauvegarde."
+    },
+    "it": {
+     "t": "Custodire bene i documenti",
+     "g": "Usa copie, backup digitali e archiviazione sicura per le carte importanti.",
+     "p": [
+      "Tieni copie dei documenti chiave separate dagli originali, in luoghi diversi.",
+      "Conserva scansioni cifrate e dai accesso a una persona di fiducia.",
+      "Porta gli originali nel bagaglio a mano e non spedirli mai in modo incerto."
+     ],
+     "q": "Dove tieni adesso i tuoi documenti importanti?",
+     "c": "Scansiona oggi un documento importante e salvalo in sicurezza con un backup."
+    },
+    "pt": {
+     "t": "Guardar bem os documentos",
+     "g": "Usa cópias, cópias digitais e armazenamento seguro para os teus papéis importantes.",
+     "p": [
+      "Guarda cópias dos documentos-chave separadas dos originais, em locais diferentes.",
+      "Guarda digitalizações cifradas e dá acesso a uma pessoa de confiança.",
+      "Leva os originais na bagagem de mão e nunca os envies por vias pouco seguras."
+     ],
+     "q": "Onde guardas neste momento os teus papéis importantes?",
+     "c": "Digitaliza hoje um documento importante e guarda-o em segurança com uma cópia."
+    },
+    "pt_BR": {
+     "t": "Guardando bem os documentos",
+     "g": "Use cópias, cópias digitais e armazenamento seguro para seus papéis importantes.",
+     "p": [
+      "Guarde cópias dos documentos-chave separadas dos originais, em locais diferentes.",
+      "Armazene digitalizações criptografadas e dê acesso a uma pessoa de confiança.",
+      "Leve os originais na bagagem de mão e nunca os envie por vias pouco seguras."
+     ],
+     "q": "Onde você guarda agora seus papéis importantes?",
+     "c": "Digitalize hoje um documento importante e guarde com segurança, com um backup."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Checking requirements officially",
+     "g": "Use official sources and qualified advisers for visa and legal questions.",
+     "p": [
+      "Visa, residence and work rules are set by governments and can change without notice.",
+      "This is general information only. Use official websites, and a licensed adviser if needed.",
+      "Beware of anyone who promises guaranteed results or asks for unusual payments."
+     ],
+     "q": "Which official requirement are you most unsure about?",
+     "c": "Write three questions for the official source and note where you will ask."
+    },
+    "de": {
+     "t": "Anforderungen offiziell prüfen",
+     "g": "Nutze offizielle Quellen und qualifizierte Beratung bei Visa- und Rechtsfragen.",
+     "p": [
+      "Visa-, Aufenthalts- und Arbeitsregeln legen Regierungen fest, und sie können sich ohne Vorwarnung ändern.",
+      "Das sind nur allgemeine Informationen. Nutze offizielle Seiten und bei Bedarf zugelassene Beratung.",
+      "Sei vorsichtig bei allen, die garantierte Ergebnisse versprechen oder ungewöhnliche Zahlungen verlangen."
+     ],
+     "q": "Bei welcher offiziellen Anforderung bist du dir am unsichersten?",
+     "c": "Schreib drei Fragen für die offizielle Stelle auf und notiere, wo du sie stellst."
+    },
+    "es": {
+     "t": "Comprobar los requisitos por vía oficial",
+     "g": "Usa fuentes oficiales y asesores cualificados para dudas de visado y legales.",
+     "p": [
+      "Las normas de visado, residencia y trabajo las fijan los gobiernos y pueden cambiar sin aviso.",
+      "Esto es solo información general. Usa webs oficiales y, si hace falta, un asesor autorizado.",
+      "Desconfía de quien prometa resultados garantizados o pida pagos inusuales."
+     ],
+     "q": "¿Qué requisito oficial te genera más dudas?",
+     "c": "Escribe tres preguntas para la fuente oficial y anota dónde las harás."
+    },
+    "fr": {
+     "t": "Vérifier les exigences officiellement",
+     "g": "Utilise des sources officielles et des conseillers qualifiés pour les questions de visa et de droit.",
+     "p": [
+      "Les règles de visa, de séjour et de travail sont fixées par les gouvernements et peuvent changer sans préavis.",
+      "Ce sont des informations générales. Utilise les sites officiels et, si besoin, un conseiller agréé.",
+      "Méfie-toi de ceux qui promettent des résultats garantis ou demandent des paiements inhabituels."
+     ],
+     "q": "Quelle exigence officielle te laisse le plus de doutes ?",
+     "c": "Écris trois questions pour la source officielle et note où tu les poseras."
+    },
+    "it": {
+     "t": "Verificare i requisiti per via ufficiale",
+     "g": "Usa fonti ufficiali e consulenti qualificati per questioni di visto e legali.",
+     "p": [
+      "Le regole su visto, residenza e lavoro le stabiliscono i governi e possono cambiare senza preavviso.",
+      "Sono informazioni generali. Usa siti ufficiali e, se serve, un consulente abilitato.",
+      "Diffida di chi promette risultati garantiti o chiede pagamenti insoliti."
+     ],
+     "q": "Quale requisito ufficiale ti lascia più dubbi?",
+     "c": "Scrivi tre domande per la fonte ufficiale e annota dove le farai."
+    },
+    "pt": {
+     "t": "Verificar os requisitos por via oficial",
+     "g": "Usa fontes oficiais e profissionais qualificados para questões de visto e jurídicas.",
+     "p": [
+      "As regras de visto, residência e trabalho são definidas pelos governos e podem mudar sem aviso.",
+      "Isto é apenas informação geral. Usa sites oficiais e, se preciso, um consultor habilitado.",
+      "Desconfia de quem prometa resultados garantidos ou peça pagamentos invulgares."
+     ],
+     "q": "Que requisito oficial te deixa mais dúvidas?",
+     "c": "Escreve três perguntas para a fonte oficial e anota onde as vais fazer."
+    },
+    "pt_BR": {
+     "t": "Verificando os requisitos por via oficial",
+     "g": "Use fontes oficiais e profissionais qualificados para questões de visto e jurídicas.",
+     "p": [
+      "As regras de visto, residência e trabalho são definidas pelos governos e podem mudar sem aviso.",
+      "Isto é só informação geral. Use sites oficiais e, se preciso, um consultor habilitado.",
+      "Desconfie de quem prometa resultados garantidos ou peça pagamentos incomuns."
+     ],
+     "q": "Que requisito oficial deixa você com mais dúvidas?",
+     "c": "Escreva três perguntas para a fonte oficial e anote onde vai fazê-las."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Staying motivated while planning",
+     "g": "Keep excitement alive through a long planning period.",
+     "p": [
+      "Long plans have slow weeks. Celebrate small steps, not only the departure.",
+      "Keep a small image, song or recipe from your destination that lifts your mood.",
+      "Share progress with a friend who cheers for you and keeps you accountable."
+     ],
+     "q": "What helps you stay excited when plans feel slow?",
+     "c": "Choose one small reward for finishing your next planning task."
+    },
+    "de": {
+     "t": "Motiviert bleiben beim Planen",
+     "g": "Halte die Vorfreude über eine lange Planungszeit lebendig.",
+     "p": [
+      "Lange Pläne haben zähe Wochen. Feiere kleine Schritte, nicht nur die Abreise.",
+      "Behalte ein Bild, Lied oder Rezept aus deinem Zielland, das deine Laune hebt.",
+      "Teile Fortschritte mit einem Freund, der mitfiebert und dich bei der Stange hält."
+     ],
+     "q": "Was hilft dir, begeistert zu bleiben, wenn die Planung zäh wirkt?",
+     "c": "Wähle eine kleine Belohnung für deine nächste erledigte Planungsaufgabe."
+    },
+    "es": {
+     "t": "Mantener la motivación mientras planificas",
+     "g": "Mantén viva la ilusión durante un largo periodo de planificación.",
+     "p": [
+      "Los planes largos tienen semanas lentas. Celebra los pasos pequeños, no solo la partida.",
+      "Ten a mano una imagen, canción o receta de tu destino que te suba el ánimo.",
+      "Comparte tus avances con un amigo que te anime y te ayude a ser constante."
+     ],
+     "q": "¿Qué te ayuda a seguir ilusionado cuando los planes avanzan despacio?",
+     "c": "Elige una pequeña recompensa por terminar tu próxima tarea de planificación."
+    },
+    "fr": {
+     "t": "Rester motivé pendant la préparation",
+     "g": "Garde l'enthousiasme vivant pendant une longue période de préparation.",
+     "p": [
+      "Les longs projets ont des semaines lentes. Fête les petits pas, pas seulement le départ.",
+      "Garde une image, une chanson ou une recette de ta destination qui te remonte le moral.",
+      "Partage tes progrès avec un ami qui t'encourage et te motive à tenir."
+     ],
+     "q": "Qu'est-ce qui t'aide à rester enthousiaste quand les préparatifs traînent ?",
+     "c": "Choisis une petite récompense pour ta prochaine tâche de préparation terminée."
+    },
+    "it": {
+     "t": "Restare motivati durante la pianificazione",
+     "g": "Mantieni vivo l'entusiasmo durante un lungo periodo di preparazione.",
+     "p": [
+      "I piani lunghi hanno settimane lente. Festeggia i piccoli passi, non solo la partenza.",
+      "Tieni un'immagine, una canzone o una ricetta della destinazione che ti risollevi l'umore.",
+      "Condividi i progressi con un amico che fa il tifo per te e ti sprona."
+     ],
+     "q": "Cosa ti aiuta a restare entusiasta quando i piani sembrano lenti?",
+     "c": "Scegli un piccolo premio per il prossimo compito di pianificazione completato."
+    },
+    "pt": {
+     "t": "Manter a motivação enquanto planeias",
+     "g": "Mantém viva a animação durante um longo período de planeamento.",
+     "p": [
+      "Planos longos têm semanas lentas. Celebra os pequenos passos, e não só a partida.",
+      "Guarda uma imagem, música ou receita do teu destino que te anime.",
+      "Partilha os progressos com um amigo que te apoie e te ajude a manter o ritmo."
+     ],
+     "q": "O que te ajuda a manter o entusiasmo quando os planos andam devagar?",
+     "c": "Escolhe uma pequena recompensa por concluíres a tua próxima tarefa de planeamento."
+    },
+    "pt_BR": {
+     "t": "Mantendo a motivação enquanto planeja",
+     "g": "Mantenha viva a empolgação durante um longo período de planejamento.",
+     "p": [
+      "Planos longos têm semanas lentas. Comemore os pequenos passos, e não só a partida.",
+      "Guarde uma imagem, música ou receita do seu destino que levante seu astral.",
+      "Compartilhe o progresso com um amigo que torça por você e ajude a manter o ritmo."
+     ],
+     "q": "O que ajuda você a manter o entusiasmo quando os planos andam devagar?",
+     "c": "Escolha uma pequena recompensa por concluir sua próxima tarefa de planejamento."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your mini-plan for next month",
+     "g": "Pick three small steps to move your plans forward.",
+     "p": [
+      "Choose three concrete actions you can finish within four weeks.",
+      "Make each step small and clear, like booking a call or reading a guide.",
+      "Put dates on them. Plans with dates are more likely to happen."
+     ],
+     "q": "Which three steps will you take next month?",
+     "c": "Write your three steps with a date next to each and place the list where you see it."
+    },
+    "de": {
+     "t": "Dein Mini-Plan für nächsten Monat",
+     "g": "Wähle drei kleine Schritte, die deine Pläne voranbringen.",
+     "p": [
+      "Such dir drei konkrete Aufgaben aus, die du innerhalb von vier Wochen schaffst.",
+      "Mach jeden Schritt klein und klar, etwa einen Anruf vereinbaren oder einen Ratgeber lesen.",
+      "Setz Daten dazu. Pläne mit Datum werden eher umgesetzt."
+     ],
+     "q": "Welche drei Schritte gehst du nächsten Monat?",
+     "c": "Schreib deine drei Schritte mit Datum auf und häng die Liste dorthin, wo du sie siehst."
+    },
+    "es": {
+     "t": "Tu miniplan para el próximo mes",
+     "g": "Elige tres pasos pequeños para avanzar en tus planes.",
+     "p": [
+      "Escoge tres acciones concretas que puedas terminar en cuatro semanas.",
+      "Haz cada paso pequeño y claro, como pedir una cita o leer una guía.",
+      "Ponles fecha. Los planes con fecha tienen más probabilidades de cumplirse."
+     ],
+     "q": "¿Qué tres pasos darás el próximo mes?",
+     "c": "Escribe tus tres pasos con fecha y coloca la lista donde la veas."
+    },
+    "fr": {
+     "t": "Ton mini-plan du mois prochain",
+     "g": "Choisis trois petites étapes pour faire avancer tes projets.",
+     "p": [
+      "Retiens trois actions concrètes que tu peux terminer en quatre semaines.",
+      "Rends chaque étape petite et claire, comme prendre rendez-vous ou lire un guide.",
+      "Mets des dates. Les projets datés ont plus de chances d'aboutir."
+     ],
+     "q": "Quelles trois étapes franchiras-tu le mois prochain ?",
+     "c": "Écris tes trois étapes avec une date et place la liste là où tu la vois."
+    },
+    "it": {
+     "t": "Il tuo mini-piano per il prossimo mese",
+     "g": "Scegli tre piccoli passi per far avanzare i tuoi piani.",
+     "p": [
+      "Scegli tre azioni concrete che puoi completare in quattro settimane.",
+      "Rendi ogni passo piccolo e chiaro, come prenotare una chiamata o leggere una guida.",
+      "Metti delle date. I piani con una data hanno più probabilità di realizzarsi."
+     ],
+     "q": "Quali tre passi farai il prossimo mese?",
+     "c": "Scrivi i tuoi tre passi con una data e metti la lista dove la vedi."
+    },
+    "pt": {
+     "t": "O teu miniplano para o próximo mês",
+     "g": "Escolhe três pequenos passos para avançar nos teus planos.",
+     "p": [
+      "Escolhe três ações concretas que consigas concluir em quatro semanas.",
+      "Faz cada passo pequeno e claro, como marcar uma chamada ou ler um guia.",
+      "Põe datas. Os planos com data têm mais hipóteses de acontecer."
+     ],
+     "q": "Que três passos vais dar no próximo mês?",
+     "c": "Escreve os teus três passos com data e coloca a lista onde a vejas."
+    },
+    "pt_BR": {
+     "t": "Seu miniplano para o próximo mês",
+     "g": "Escolha três pequenos passos para avançar nos seus planos.",
+     "p": [
+      "Escolha três ações concretas que consiga concluir em quatro semanas.",
+      "Faça cada passo pequeno e claro, como marcar uma conversa ou ler um guia.",
+      "Coloque datas. Planos com data têm mais chance de acontecer."
+     ],
+     "q": "Que três passos você vai dar no próximo mês?",
+     "c": "Escreva seus três passos com data e coloque a lista onde você a veja."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: dreaming and deciding",
+     "g": "A light review of reasons, research and first planning steps.",
+     "p": [
+      "Look back at your reasons, your shortlist and the official sources you saved.",
+      "Notice what changed in your thinking over this first month.",
+      "Celebrate: you moved from a dream to a real plan, and that is big."
+     ],
+     "q": "Which step this month are you proudest of?",
+     "c": "Reread your reasons from day 2 and add one line about how you feel today."
+    },
+    "de": {
+     "t": "Rückblick: Träumen und Entscheiden",
+     "g": "Ein leichter Rückblick auf Gründe, Recherche und erste Planungsschritte.",
+     "p": [
+      "Schau auf deine Gründe, deine Auswahl und die gespeicherten offiziellen Quellen zurück.",
+      "Beobachte, was sich in diesem ersten Monat in deinem Denken verändert hat.",
+      "Feiere: Du bist vom Traum zu einem echten Plan gekommen, und das ist viel."
+     ],
+     "q": "Auf welchen Schritt dieses Monats bist du am stolzesten?",
+     "c": "Lies deine Gründe von Tag 2 noch einmal und schreib eine Zeile dazu, wie du dich heute fühlst."
+    },
+    "es": {
+     "t": "Repaso: soñar y decidir",
+     "g": "Un repaso suave de motivos, investigación y primeros pasos de planificación.",
+     "p": [
+      "Mira atrás: tus motivos, tu lista corta y las fuentes oficiales que guardaste.",
+      "Observa qué ha cambiado en tu forma de pensar durante este primer mes.",
+      "Celébralo: pasaste de un sueño a un plan real, y eso es mucho."
+     ],
+     "q": "¿De qué paso de este mes te sientes más orgulloso?",
+     "c": "Relee tus motivos del día 2 y añade una línea sobre cómo te sientes hoy."
+    },
+    "fr": {
+     "t": "Révision : rêver et décider",
+     "g": "Une révision en douceur des raisons, des recherches et des premières étapes.",
+     "p": [
+      "Regarde en arrière : tes raisons, ta liste et les sources officielles enregistrées.",
+      "Observe ce qui a changé dans ta réflexion pendant ce premier mois.",
+      "Félicite-toi : tu es passé d'un rêve à un vrai projet, et ce n'est pas rien."
+     ],
+     "q": "De quelle étape de ce mois es-tu le plus fier ?",
+     "c": "Relis tes raisons du jour 2 et ajoute une ligne sur ce que tu ressens aujourd'hui."
+    },
+    "it": {
+     "t": "Ripasso: sognare e decidere",
+     "g": "Un ripasso leggero di motivi, ricerche e primi passi di pianificazione.",
+     "p": [
+      "Guarda indietro: i tuoi motivi, la tua lista e le fonti ufficiali salvate.",
+      "Nota cosa è cambiato nel tuo modo di pensare in questo primo mese.",
+      "Festeggia: sei passato da un sogno a un piano concreto, ed è tanto."
+     ],
+     "q": "Di quale passo di questo mese sei più orgoglioso?",
+     "c": "Rileggi i tuoi motivi del giorno 2 e aggiungi una riga su come ti senti oggi."
+    },
+    "pt": {
+     "t": "Revisão: sonhar e decidir",
+     "g": "Uma revisão leve de razões, pesquisa e primeiros passos de planeamento.",
+     "p": [
+      "Olha para trás: as tuas razões, a tua lista curta e as fontes oficiais que guardaste.",
+      "Repara no que mudou no teu pensamento durante este primeiro mês.",
+      "Celebra: passaste de um sonho a um plano real, e isso é muito."
+     ],
+     "q": "De que passo deste mês tens mais orgulho?",
+     "c": "Relê as tuas razões do dia 2 e acrescenta uma linha sobre como te sentes hoje."
+    },
+    "pt_BR": {
+     "t": "Revisão: sonhar e decidir",
+     "g": "Uma revisão leve de motivos, pesquisa e primeiros passos de planejamento.",
+     "p": [
+      "Olhe para trás: seus motivos, sua lista curta e as fontes oficiais que salvou.",
+      "Repare no que mudou no seu pensamento durante este primeiro mês.",
+      "Comemore: você passou de um sonho a um plano real, e isso é muito."
+     ],
+     "q": "De que passo deste mês você mais se orgulha?",
+     "c": "Releia seus motivos do dia 2 e acrescente uma linha sobre como se sente hoje."
+    }
+   }
+  }
+ ]
+}

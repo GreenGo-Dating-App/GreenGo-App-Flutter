@@ -1,0 +1,835 @@
+{
+ "topic": "web_design",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "HTML tags and elements",
+     "g": "Understand how tags wrap content to give it meaning.",
+     "p": [
+      "Most elements have an opening tag and a closing tag with a slash.",
+      "Elements can sit inside each other, like boxes inside boxes.",
+      "Close tags in the reverse order you opened them to keep code tidy."
+     ],
+     "q": "Which tag have you met so far that you remember best?",
+     "c": "Write a paragraph with p tags and a nested strong tag for one word."
+    },
+    "de": {
+     "t": "HTML-Tags und Elemente",
+     "g": "Verstehe, wie Tags Inhalte umschließen und ihnen Bedeutung geben.",
+     "p": [
+      "Die meisten Elemente haben ein öffnendes und ein schließendes Tag mit Schrägstrich.",
+      "Elemente können ineinander stehen, wie Kisten in Kisten.",
+      "Schließe Tags in umgekehrter Reihenfolge zum Öffnen, das hält den Code ordentlich."
+     ],
+     "q": "Welches Tag hast du bisher am besten im Kopf?",
+     "c": "Schreibe einen Absatz mit p-Tags und einem verschachtelten strong-Tag für ein Wort."
+    },
+    "es": {
+     "t": "Etiquetas y elementos HTML",
+     "g": "Entiende cómo las etiquetas envuelven el contenido y le dan sentido.",
+     "p": [
+      "La mayoría de elementos tienen etiqueta de apertura y de cierre con barra.",
+      "Los elementos pueden anidarse, como cajas dentro de cajas.",
+      "Cierra las etiquetas en orden inverso al de apertura para mantener el código limpio."
+     ],
+     "q": "¿Qué etiqueta recuerdas mejor de las que has conocido?",
+     "c": "Escribe un párrafo con etiquetas p y una etiqueta strong anidada en una palabra."
+    },
+    "fr": {
+     "t": "Balises et éléments HTML",
+     "g": "Comprends comment les balises entourent le contenu pour lui donner du sens.",
+     "p": [
+      "La plupart des éléments ont une balise ouvrante et une fermante avec une barre oblique.",
+      "Les éléments peuvent s'imbriquer, comme des boîtes dans des boîtes.",
+      "Ferme les balises dans l'ordre inverse de leur ouverture pour un code propre."
+     ],
+     "q": "Quelle balise retiens-tu le mieux parmi celles vues jusqu'ici ?",
+     "c": "Écris un paragraphe avec des balises p et une balise strong imbriquée sur un mot."
+    },
+    "it": {
+     "t": "Tag ed elementi HTML",
+     "g": "Capisci come i tag avvolgono il contenuto dandogli significato.",
+     "p": [
+      "La maggior parte degli elementi ha un tag di apertura e uno di chiusura con barra.",
+      "Gli elementi possono annidarsi, come scatole dentro scatole.",
+      "Chiudi i tag in ordine inverso rispetto all'apertura per un codice ordinato."
+     ],
+     "q": "Quale tag ricordi meglio tra quelli incontrati finora?",
+     "c": "Scrivi un paragrafo con tag p e un tag strong annidato su una parola."
+    },
+    "pt": {
+     "t": "Etiquetas e elementos HTML",
+     "g": "Percebe como as etiquetas envolvem o conteúdo e lhe dão sentido.",
+     "p": [
+      "A maioria dos elementos tem etiqueta de abertura e de fecho com barra.",
+      "Os elementos podem ficar uns dentro dos outros, como caixas dentro de caixas.",
+      "Fecha as etiquetas pela ordem inversa da abertura para manter o código limpo."
+     ],
+     "q": "Que etiqueta recordas melhor das que já conheceste?",
+     "c": "Escreve um parágrafo com etiquetas p e uma etiqueta strong aninhada numa palavra."
+    },
+    "pt_BR": {
+     "t": "Tags e elementos HTML",
+     "g": "Entenda como as tags envolvem o conteúdo e dão sentido a ele.",
+     "p": [
+      "A maioria dos elementos tem tag de abertura e de fechamento com barra.",
+      "Os elementos podem ficar uns dentro dos outros, como caixas dentro de caixas.",
+      "Feche as tags na ordem inversa da abertura para manter o código limpo."
+     ],
+     "q": "Qual tag você lembra melhor das que já conheceu?",
+     "c": "Escreva um parágrafo com tags p e uma tag strong aninhada em uma palavra."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Headings and paragraphs",
+     "g": "Build a clear outline with headings and readable paragraphs.",
+     "p": [
+      "Use one h1 for the page topic, then h2 and h3 for sections beneath it.",
+      "Pick headings for meaning, not for size; CSS handles the look.",
+      "Short paragraphs of two to four sentences are easy to scan."
+     ],
+     "q": "What would the h1 and two h2 headings of your own page be?",
+     "c": "Write a page outline with one h1, two h2 headings and a paragraph under each."
+    },
+    "de": {
+     "t": "Überschriften und Absätze",
+     "g": "Baue mit Überschriften und gut lesbaren Absätzen eine klare Gliederung.",
+     "p": [
+      "Nutze ein h1 für das Seitenthema, darunter h2 und h3 für Abschnitte.",
+      "Wähle Überschriften nach Bedeutung, nicht nach Größe; das Aussehen macht CSS.",
+      "Kurze Absätze mit zwei bis vier Sätzen lassen sich leicht überfliegen."
+     ],
+     "q": "Wie lauten h1 und zwei h2-Überschriften deiner eigenen Seite?",
+     "c": "Schreibe eine Gliederung mit einem h1, zwei h2 und je einem Absatz darunter."
+    },
+    "es": {
+     "t": "Títulos y párrafos",
+     "g": "Construye un esquema claro con títulos y párrafos legibles.",
+     "p": [
+      "Usa un h1 para el tema de la página y h2 y h3 para las secciones.",
+      "Elige títulos por su significado, no por su tamaño; el aspecto lo da el CSS.",
+      "Párrafos cortos de dos a cuatro frases se leen de un vistazo."
+     ],
+     "q": "¿Cuáles serían el h1 y dos h2 de tu propia página?",
+     "c": "Escribe un esquema con un h1, dos h2 y un párrafo bajo cada uno."
+    },
+    "fr": {
+     "t": "Titres et paragraphes",
+     "g": "Construis un plan clair avec des titres et des paragraphes lisibles.",
+     "p": [
+      "Utilise un h1 pour le sujet de la page, puis h2 et h3 pour les sections.",
+      "Choisis les titres selon le sens, pas la taille ; le CSS gère l'apparence.",
+      "Des paragraphes courts de deux à quatre phrases se parcourent facilement."
+     ],
+     "q": "Quels seraient le h1 et deux h2 de ta propre page ?",
+     "c": "Écris un plan avec un h1, deux h2 et un paragraphe sous chacun."
+    },
+    "it": {
+     "t": "Titoli e paragrafi",
+     "g": "Costruisci uno schema chiaro con titoli e paragrafi leggibili.",
+     "p": [
+      "Usa un h1 per l'argomento della pagina, poi h2 e h3 per le sezioni.",
+      "Scegli i titoli per significato, non per dimensione; l'aspetto lo dà il CSS.",
+      "Paragrafi brevi di due o quattro frasi si scorrono facilmente."
+     ],
+     "q": "Quali sarebbero l'h1 e due h2 della tua pagina?",
+     "c": "Scrivi uno schema con un h1, due h2 e un paragrafo sotto ciascuno."
+    },
+    "pt": {
+     "t": "Títulos e parágrafos",
+     "g": "Constrói um esquema claro com títulos e parágrafos legíveis.",
+     "p": [
+      "Usa um h1 para o tema da página e h2 e h3 para as secções.",
+      "Escolhe títulos pelo significado, não pelo tamanho; o aspeto fica com o CSS.",
+      "Parágrafos curtos de duas a quatro frases leem-se num instante."
+     ],
+     "q": "Quais seriam o h1 e dois h2 da tua própria página?",
+     "c": "Escreve um esquema com um h1, dois h2 e um parágrafo debaixo de cada."
+    },
+    "pt_BR": {
+     "t": "Títulos e parágrafos",
+     "g": "Monte um esquema claro com títulos e parágrafos legíveis.",
+     "p": [
+      "Use um h1 para o tema da página e h2 e h3 para as seções.",
+      "Escolha títulos pelo significado, não pelo tamanho; o visual fica com o CSS.",
+      "Parágrafos curtos de duas a quatro frases são fáceis de escanear."
+     ],
+     "q": "Quais seriam o h1 e dois h2 da sua própria página?",
+     "c": "Escreva um esquema com um h1, dois h2 e um parágrafo embaixo de cada."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Links connect the web",
+     "g": "Create links that are clear, correct and useful.",
+     "p": [
+      "The a element with an href attribute makes a clickable link.",
+      "Link text should describe the destination, not just say click here.",
+      "Relative hrefs link your own pages; full addresses link other sites."
+     ],
+     "q": "What two pages of your site would you like to link first?",
+     "c": "Make two pages that link to each other with descriptive link text."
+    },
+    "de": {
+     "t": "Links verbinden das Web",
+     "g": "Erstelle Links, die klar, korrekt und nützlich sind.",
+     "p": [
+      "Das a-Element mit href-Attribut macht einen klickbaren Link.",
+      "Der Linktext soll das Ziel beschreiben, nicht nur hier klicken sagen.",
+      "Relative hrefs verlinken eigene Seiten, vollständige Adressen andere Websites."
+     ],
+     "q": "Welche zwei Seiten deiner Website möchtest du zuerst verlinken?",
+     "c": "Erstelle zwei Seiten, die sich mit aussagekräftigem Linktext gegenseitig verlinken."
+    },
+    "es": {
+     "t": "Los enlaces conectan la web",
+     "g": "Crea enlaces claros, correctos y útiles.",
+     "p": [
+      "El elemento a con el atributo href crea un enlace en el que se puede hacer clic.",
+      "El texto del enlace debe describir el destino, no solo decir haz clic aquí.",
+      "Los href relativos enlazan tus páginas; las direcciones completas, otros sitios."
+     ],
+     "q": "¿Qué dos páginas de tu sitio te gustaría enlazar primero?",
+     "c": "Crea dos páginas que se enlacen entre sí con textos de enlace descriptivos."
+    },
+    "fr": {
+     "t": "Les liens relient le web",
+     "g": "Crée des liens clairs, corrects et utiles.",
+     "p": [
+      "L'élément a avec l'attribut href crée un lien cliquable.",
+      "Le texte du lien doit décrire la destination, pas seulement dire cliquez ici.",
+      "Les href relatifs relient tes pages ; les adresses complètes mènent à d'autres sites."
+     ],
+     "q": "Quelles deux pages de ton site voudrais-tu relier en premier ?",
+     "c": "Crée deux pages qui se renvoient l'une à l'autre avec des textes de lien descriptifs."
+    },
+    "it": {
+     "t": "I link collegano il web",
+     "g": "Crea link chiari, corretti e utili.",
+     "p": [
+      "L'elemento a con l'attributo href crea un link su cui cliccare.",
+      "Il testo del link deve descrivere la destinazione, non solo dire clicca qui.",
+      "Gli href relativi collegano le tue pagine; gli indirizzi completi altri siti."
+     ],
+     "q": "Quali due pagine del tuo sito vorresti collegare per prime?",
+     "c": "Crea due pagine che si collegano a vicenda con testi di link descrittivi."
+    },
+    "pt": {
+     "t": "As ligações unem a web",
+     "g": "Cria ligações claras, corretas e úteis.",
+     "p": [
+      "O elemento a com o atributo href cria uma ligação clicável.",
+      "O texto da ligação deve descrever o destino, não apenas dizer clica aqui.",
+      "Os href relativos ligam as tuas páginas; os endereços completos, outros sites."
+     ],
+     "q": "Que duas páginas do teu site gostarias de ligar primeiro?",
+     "c": "Cria duas páginas que se ligam entre si com textos de ligação descritivos."
+    },
+    "pt_BR": {
+     "t": "Links conectam a web",
+     "g": "Crie links claros, corretos e úteis.",
+     "p": [
+      "O elemento a com o atributo href cria um link clicável.",
+      "O texto do link deve descrever o destino, não só dizer clique aqui.",
+      "Os href relativos ligam suas páginas; os endereços completos levam a outros sites."
+     ],
+     "q": "Quais duas páginas do seu site você gostaria de ligar primeiro?",
+     "c": "Crie duas páginas que se ligam entre si com textos de link descritivos."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Adding images",
+     "g": "Show pictures with img and describe them with alt text.",
+     "p": [
+      "The img element needs a src for the file and an alt for the description.",
+      "Alt text helps screen reader users and appears if the image fails to load.",
+      "Choose modern formats like JPEG, PNG, WebP or SVG for the right job."
+     ],
+     "q": "Which image would best introduce you or your project?",
+     "c": "Add an image to your page with a meaningful alt sentence."
+    },
+    "de": {
+     "t": "Bilder einfügen",
+     "g": "Zeige Bilder mit img und beschreibe sie mit Alt-Text.",
+     "p": [
+      "Das img-Element braucht src für die Datei und alt für die Beschreibung.",
+      "Alt-Text hilft Screenreader-Nutzern und erscheint, wenn das Bild nicht lädt.",
+      "Wähle moderne Formate wie JPEG, PNG, WebP oder SVG passend zum Zweck."
+     ],
+     "q": "Welches Bild würde dich oder dein Projekt am besten vorstellen?",
+     "c": "Füge deiner Seite ein Bild mit einem sinnvollen Alt-Satz hinzu."
+    },
+    "es": {
+     "t": "Añadir imágenes",
+     "g": "Muestra imágenes con img y descríbelas con texto alternativo.",
+     "p": [
+      "El elemento img necesita src para el archivo y alt para la descripción.",
+      "El texto alt ayuda a quien usa lector de pantalla y aparece si la imagen falla.",
+      "Elige formatos modernos como JPEG, PNG, WebP o SVG según el uso."
+     ],
+     "q": "¿Qué imagen te presentaría mejor a ti o a tu proyecto?",
+     "c": "Añade una imagen a tu página con una frase alt con sentido."
+    },
+    "fr": {
+     "t": "Ajouter des images",
+     "g": "Affiche des images avec img et décris-les avec un texte alternatif.",
+     "p": [
+      "L'élément img a besoin de src pour le fichier et de alt pour la description.",
+      "Le texte alt aide les lecteurs d'écran et s'affiche si l'image ne charge pas.",
+      "Choisis des formats modernes comme JPEG, PNG, WebP ou SVG selon l'usage."
+     ],
+     "q": "Quelle image te présenterait le mieux, toi ou ton projet ?",
+     "c": "Ajoute une image à ta page avec une phrase alt qui a du sens."
+    },
+    "it": {
+     "t": "Aggiungere immagini",
+     "g": "Mostra immagini con img e descrivile con il testo alternativo.",
+     "p": [
+      "L'elemento img richiede src per il file e alt per la descrizione.",
+      "Il testo alt aiuta chi usa uno screen reader e appare se l'immagine non carica.",
+      "Scegli formati moderni come JPEG, PNG, WebP o SVG secondo l'uso."
+     ],
+     "q": "Quale immagine presenterebbe meglio te o il tuo progetto?",
+     "c": "Aggiungi un'immagine alla pagina con una frase alt significativa."
+    },
+    "pt": {
+     "t": "Adicionar imagens",
+     "g": "Mostra imagens com img e descreve-as com texto alternativo.",
+     "p": [
+      "O elemento img precisa de src para o ficheiro e de alt para a descrição.",
+      "O texto alt ajuda quem usa leitor de ecrã e surge se a imagem não carregar.",
+      "Escolhe formatos modernos como JPEG, PNG, WebP ou SVG conforme o uso."
+     ],
+     "q": "Que imagem te apresentaria melhor a ti ou ao teu projeto?",
+     "c": "Adiciona uma imagem à tua página com uma frase alt que faça sentido."
+    },
+    "pt_BR": {
+     "t": "Adicionando imagens",
+     "g": "Mostre imagens com img e descreva-as com texto alternativo.",
+     "p": [
+      "O elemento img precisa de src para o arquivo e de alt para a descrição.",
+      "O texto alt ajuda quem usa leitor de tela e aparece se a imagem não carregar.",
+      "Escolha formatos modernos como JPEG, PNG, WebP ou SVG conforme o uso."
+     ],
+     "q": "Qual imagem apresentaria melhor você ou seu projeto?",
+     "c": "Adicione uma imagem à página com uma frase alt que faça sentido."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lists for structure",
+     "g": "Group related items with ordered and unordered lists.",
+     "p": [
+      "Use ul for bullets, ol for numbered steps, and li for each item.",
+      "Menus are often just lists of links, which keeps them tidy.",
+      "Lists can nest inside each other for sub-items."
+     ],
+     "q": "What list would be useful on your page: steps, features or links?",
+     "c": "Create a numbered list of three steps for something you know well."
+    },
+    "de": {
+     "t": "Listen zur Strukturierung",
+     "g": "Gruppiere zusammengehörige Punkte mit geordneten und ungeordneten Listen.",
+     "p": [
+      "Nutze ul für Aufzählungen, ol für nummerierte Schritte und li für jeden Eintrag.",
+      "Menüs sind oft nur Listen aus Links, das hält sie übersichtlich.",
+      "Listen können ineinander verschachtelt werden, für Unterpunkte."
+     ],
+     "q": "Welche Liste wäre auf deiner Seite nützlich: Schritte, Merkmale oder Links?",
+     "c": "Erstelle eine nummerierte Liste mit drei Schritten zu etwas, das du gut kannst."
+    },
+    "es": {
+     "t": "Listas para estructurar",
+     "g": "Agrupa elementos relacionados con listas ordenadas y no ordenadas.",
+     "p": [
+      "Usa ul para viñetas, ol para pasos numerados y li para cada elemento.",
+      "Los menús suelen ser simples listas de enlaces, lo que los mantiene ordenados.",
+      "Las listas pueden anidarse para crear subelementos."
+     ],
+     "q": "¿Qué lista sería útil en tu página: pasos, características o enlaces?",
+     "c": "Crea una lista numerada de tres pasos sobre algo que domines."
+    },
+    "fr": {
+     "t": "Les listes pour structurer",
+     "g": "Regroupe des éléments liés avec des listes ordonnées et non ordonnées.",
+     "p": [
+      "Utilise ul pour les puces, ol pour les étapes numérotées et li pour chaque élément.",
+      "Les menus sont souvent de simples listes de liens, ce qui les garde ordonnés.",
+      "Les listes peuvent s'imbriquer pour créer des sous-éléments."
+     ],
+     "q": "Quelle liste serait utile sur ta page : étapes, atouts ou liens ?",
+     "c": "Crée une liste numérotée de trois étapes sur un sujet que tu maîtrises."
+    },
+    "it": {
+     "t": "Liste per strutturare",
+     "g": "Raggruppa elementi correlati con liste ordinate e non ordinate.",
+     "p": [
+      "Usa ul per gli elenchi puntati, ol per i passi numerati e li per ogni voce.",
+      "I menu sono spesso semplici liste di link, il che li mantiene ordinati.",
+      "Le liste possono annidarsi per creare sottovoci."
+     ],
+     "q": "Quale lista sarebbe utile nella tua pagina: passi, caratteristiche o link?",
+     "c": "Crea una lista numerata di tre passi su qualcosa che conosci bene."
+    },
+    "pt": {
+     "t": "Listas para estruturar",
+     "g": "Agrupa itens relacionados com listas ordenadas e não ordenadas.",
+     "p": [
+      "Usa ul para marcadores, ol para passos numerados e li para cada item.",
+      "Os menus costumam ser simples listas de ligações, o que os mantém organizados.",
+      "As listas podem aninhar-se para criar subitens."
+     ],
+     "q": "Que lista seria útil na tua página: passos, características ou ligações?",
+     "c": "Cria uma lista numerada de três passos sobre algo que dominas."
+    },
+    "pt_BR": {
+     "t": "Listas para estruturar",
+     "g": "Agrupe itens relacionados com listas ordenadas e não ordenadas.",
+     "p": [
+      "Use ul para marcadores, ol para passos numerados e li para cada item.",
+      "Menus costumam ser simples listas de links, o que os mantém organizados.",
+      "As listas podem se aninhar para criar subitens."
+     ],
+     "q": "Que lista seria útil na sua página: passos, recursos ou links?",
+     "c": "Crie uma lista numerada de três passos sobre algo que você domina."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Semantic HTML",
+     "g": "Use elements that tell browsers what each part of a page means.",
+     "p": [
+      "Header, nav, main, article, section and footer describe page regions.",
+      "Semantic markup helps screen readers, search engines and future you.",
+      "Use div only when no meaningful element fits."
+     ],
+     "q": "Which regions would your page have: header, nav, main or footer?",
+     "c": "Rebuild a page outline using header, nav, main and footer."
+    },
+    "de": {
+     "t": "Semantisches HTML",
+     "g": "Nutze Elemente, die dem Browser sagen, was jeder Teil der Seite bedeutet.",
+     "p": [
+      "Header, nav, main, article, section und footer beschreiben Seitenbereiche.",
+      "Semantisches Markup hilft Screenreadern, Suchmaschinen und deinem zukünftigen Ich.",
+      "Nutze div nur, wenn kein passendes Element mit Bedeutung existiert."
+     ],
+     "q": "Welche Bereiche hätte deine Seite: header, nav, main oder footer?",
+     "c": "Baue eine Seitengliederung mit header, nav, main und footer nach."
+    },
+    "es": {
+     "t": "HTML semántico",
+     "g": "Usa elementos que dicen al navegador qué significa cada parte de la página.",
+     "p": [
+      "Header, nav, main, article, section y footer describen las zonas de la página.",
+      "El marcado semántico ayuda a lectores de pantalla, buscadores y a tu yo del futuro.",
+      "Usa div solo cuando ningún elemento con significado encaje."
+     ],
+     "q": "¿Qué zonas tendría tu página: header, nav, main o footer?",
+     "c": "Reconstruye un esquema de página con header, nav, main y footer."
+    },
+    "fr": {
+     "t": "HTML sémantique",
+     "g": "Utilise des éléments qui disent au navigateur ce que signifie chaque partie de la page.",
+     "p": [
+      "Header, nav, main, article, section et footer décrivent les zones de la page.",
+      "Un balisage sémantique aide les lecteurs d'écran, les moteurs de recherche et toi demain.",
+      "N'utilise div que si aucun élément porteur de sens ne convient."
+     ],
+     "q": "Quelles zones aurait ta page : header, nav, main ou footer ?",
+     "c": "Reconstruis un plan de page avec header, nav, main et footer."
+    },
+    "it": {
+     "t": "HTML semantico",
+     "g": "Usa elementi che dicono al browser cosa significa ogni parte della pagina.",
+     "p": [
+      "Header, nav, main, article, section e footer descrivono le aree della pagina.",
+      "Il markup semantico aiuta screen reader, motori di ricerca e te stesso in futuro.",
+      "Usa div solo quando nessun elemento significativo è adatto."
+     ],
+     "q": "Quali aree avrebbe la tua pagina: header, nav, main o footer?",
+     "c": "Ricostruisci uno schema di pagina con header, nav, main e footer."
+    },
+    "pt": {
+     "t": "HTML semântico",
+     "g": "Usa elementos que dizem ao navegador o que significa cada parte da página.",
+     "p": [
+      "Header, nav, main, article, section e footer descrevem as zonas da página.",
+      "O código semântico ajuda leitores de ecrã, motores de busca e o teu eu futuro.",
+      "Usa div só quando nenhum elemento com significado servir."
+     ],
+     "q": "Que zonas teria a tua página: header, nav, main ou footer?",
+     "c": "Reconstrói um esquema de página com header, nav, main e footer."
+    },
+    "pt_BR": {
+     "t": "HTML semântico",
+     "g": "Use elementos que dizem ao navegador o que cada parte da página significa.",
+     "p": [
+      "Header, nav, main, article, section e footer descrevem as áreas da página.",
+      "O código semântico ajuda leitores de tela, buscadores e o você do futuro.",
+      "Use div só quando nenhum elemento com significado servir."
+     ],
+     "q": "Que áreas sua página teria: header, nav, main ou footer?",
+     "c": "Reconstrua um esquema de página com header, nav, main e footer."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Attributes in HTML",
+     "g": "Add extra information to elements with attributes.",
+     "p": [
+      "Attributes sit inside the opening tag as name and value pairs.",
+      "Common ones are href, src, alt, class, id and lang.",
+      "Always put attribute values in quotes to avoid surprises."
+     ],
+     "q": "Which attribute have you used most so far?",
+     "c": "Add a lang attribute to html and a class attribute to one paragraph."
+    },
+    "de": {
+     "t": "Attribute in HTML",
+     "g": "Füge Elementen mit Attributen zusätzliche Informationen hinzu.",
+     "p": [
+      "Attribute stehen im öffnenden Tag als Name-Wert-Paare.",
+      "Häufig sind href, src, alt, class, id und lang.",
+      "Setze Attributwerte immer in Anführungszeichen, das vermeidet Überraschungen."
+     ],
+     "q": "Welches Attribut hast du bisher am häufigsten genutzt?",
+     "c": "Füge dem html-Element ein lang-Attribut und einem Absatz ein class-Attribut hinzu."
+    },
+    "es": {
+     "t": "Atributos en HTML",
+     "g": "Añade información extra a los elementos con atributos.",
+     "p": [
+      "Los atributos van en la etiqueta de apertura como pares nombre y valor.",
+      "Los más comunes son href, src, alt, class, id y lang.",
+      "Pon siempre los valores entre comillas para evitar sorpresas."
+     ],
+     "q": "¿Qué atributo has usado más hasta ahora?",
+     "c": "Añade un atributo lang a html y un atributo class a un párrafo."
+    },
+    "fr": {
+     "t": "Les attributs HTML",
+     "g": "Ajoute des informations aux éléments grâce aux attributs.",
+     "p": [
+      "Les attributs se placent dans la balise ouvrante, en paires nom et valeur.",
+      "Les plus courants sont href, src, alt, class, id et lang.",
+      "Mets toujours les valeurs entre guillemets pour éviter les surprises."
+     ],
+     "q": "Quel attribut as-tu le plus utilisé jusqu'ici ?",
+     "c": "Ajoute un attribut lang à html et un attribut class à un paragraphe."
+    },
+    "it": {
+     "t": "Gli attributi in HTML",
+     "g": "Aggiungi informazioni extra agli elementi con gli attributi.",
+     "p": [
+      "Gli attributi stanno nel tag di apertura come coppie nome e valore.",
+      "I più comuni sono href, src, alt, class, id e lang.",
+      "Metti sempre i valori tra virgolette per evitare sorprese."
+     ],
+     "q": "Quale attributo hai usato di più finora?",
+     "c": "Aggiungi un attributo lang a html e un attributo class a un paragrafo."
+    },
+    "pt": {
+     "t": "Atributos em HTML",
+     "g": "Acrescenta informação extra aos elementos com atributos.",
+     "p": [
+      "Os atributos ficam na etiqueta de abertura como pares nome e valor.",
+      "Os mais comuns são href, src, alt, class, id e lang.",
+      "Coloca sempre os valores entre aspas para evitar surpresas."
+     ],
+     "q": "Que atributo usaste mais até agora?",
+     "c": "Acrescenta um atributo lang ao html e um atributo class a um parágrafo."
+    },
+    "pt_BR": {
+     "t": "Atributos em HTML",
+     "g": "Adicione informações extras aos elementos com atributos.",
+     "p": [
+      "Os atributos ficam na tag de abertura como pares nome e valor.",
+      "Os mais comuns são href, src, alt, class, id e lang.",
+      "Coloque sempre os valores entre aspas para evitar surpresas."
+     ],
+     "q": "Qual atributo você mais usou até agora?",
+     "c": "Adicione um atributo lang ao html e um atributo class a um parágrafo."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tables for data",
+     "g": "Show rows and columns of data with proper table markup.",
+     "p": [
+      "Use table, tr for rows, th for headers and td for cells.",
+      "A caption names the table, and th helps screen readers read it.",
+      "Tables are for data, never for laying out a whole page."
+     ],
+     "q": "What small set of data would suit a table, like a weekly schedule?",
+     "c": "Build a table with three columns and three rows of your own data."
+    },
+    "de": {
+     "t": "Tabellen für Daten",
+     "g": "Zeige Zeilen und Spalten von Daten mit korrektem Tabellen-Markup.",
+     "p": [
+      "Nutze table, tr für Zeilen, th für Kopfzellen und td für Zellen.",
+      "Eine caption benennt die Tabelle, th hilft Screenreadern beim Vorlesen.",
+      "Tabellen sind für Daten, nie für das Layout einer ganzen Seite."
+     ],
+     "q": "Welche kleine Datenmenge passt in eine Tabelle, etwa ein Wochenplan?",
+     "c": "Baue eine Tabelle mit drei Spalten und drei Zeilen eigener Daten."
+    },
+    "es": {
+     "t": "Tablas para datos",
+     "g": "Muestra filas y columnas de datos con un marcado de tabla correcto.",
+     "p": [
+      "Usa table, tr para filas, th para encabezados y td para celdas.",
+      "Un caption nombra la tabla y th ayuda a los lectores de pantalla.",
+      "Las tablas son para datos, nunca para maquetar una página entera."
+     ],
+     "q": "¿Qué pequeño conjunto de datos iría bien en una tabla, como un horario semanal?",
+     "c": "Crea una tabla de tres columnas y tres filas con tus propios datos."
+    },
+    "fr": {
+     "t": "Les tableaux de données",
+     "g": "Affiche lignes et colonnes de données avec un balisage de tableau correct.",
+     "p": [
+      "Utilise table, tr pour les lignes, th pour les en-têtes et td pour les cellules.",
+      "Un caption nomme le tableau et th aide les lecteurs d'écran.",
+      "Les tableaux servent aux données, jamais à la mise en page d'une page entière."
+     ],
+     "q": "Quel petit jeu de données irait dans un tableau, comme un planning hebdomadaire ?",
+     "c": "Crée un tableau de trois colonnes et trois lignes avec tes propres données."
+    },
+    "it": {
+     "t": "Tabelle per i dati",
+     "g": "Mostra righe e colonne di dati con il markup corretto per le tabelle.",
+     "p": [
+      "Usa table, tr per le righe, th per le intestazioni e td per le celle.",
+      "Un caption dà il nome alla tabella e th aiuta gli screen reader.",
+      "Le tabelle servono ai dati, mai al layout di un'intera pagina."
+     ],
+     "q": "Quale piccolo insieme di dati starebbe in una tabella, come un orario settimanale?",
+     "c": "Crea una tabella di tre colonne e tre righe con i tuoi dati."
+    },
+    "pt": {
+     "t": "Tabelas para dados",
+     "g": "Mostra linhas e colunas de dados com marcação de tabela correta.",
+     "p": [
+      "Usa table, tr para linhas, th para cabeçalhos e td para células.",
+      "Um caption dá nome à tabela e o th ajuda os leitores de ecrã.",
+      "As tabelas servem para dados, nunca para a disposição de uma página inteira."
+     ],
+     "q": "Que pequeno conjunto de dados serviria numa tabela, como um horário semanal?",
+     "c": "Cria uma tabela com três colunas e três linhas de dados teus."
+    },
+    "pt_BR": {
+     "t": "Tabelas para dados",
+     "g": "Mostre linhas e colunas de dados com marcação de tabela correta.",
+     "p": [
+      "Use table, tr para linhas, th para cabeçalhos e td para células.",
+      "Um caption dá nome à tabela e o th ajuda os leitores de tela.",
+      "Tabelas servem para dados, nunca para o layout de uma página inteira."
+     ],
+     "q": "Que pequeno conjunto de dados serviria numa tabela, como uma agenda semanal?",
+     "c": "Crie uma tabela com três colunas e três linhas de dados seus."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Comments and clean markup",
+     "g": "Keep your code tidy so it stays easy to read and change.",
+     "p": [
+      "Indent nested elements by two spaces so structure is visible at a glance.",
+      "HTML comments sit between the symbols for comment start and end.",
+      "Use comments to label sections, not to repeat what the code says."
+     ],
+     "q": "What makes code easy to read for you when you look at it?",
+     "c": "Indent your page properly and add one comment above each main section."
+    },
+    "de": {
+     "t": "Kommentare und sauberer Code",
+     "g": "Halte deinen Code ordentlich, damit er lesbar und änderbar bleibt.",
+     "p": [
+      "Rücke verschachtelte Elemente um zwei Leerzeichen ein, so ist die Struktur sofort sichtbar.",
+      "HTML-Kommentare stehen zwischen den Zeichen für Kommentarbeginn und -ende.",
+      "Nutze Kommentare, um Bereiche zu beschriften, nicht um den Code zu wiederholen."
+     ],
+     "q": "Was macht Code für dich leicht lesbar, wenn du ihn ansiehst?",
+     "c": "Rücke deine Seite sauber ein und setze über jeden Hauptbereich einen Kommentar."
+    },
+    "es": {
+     "t": "Comentarios y código limpio",
+     "g": "Mantén el código ordenado para que sea fácil de leer y cambiar.",
+     "p": [
+      "Sangra los elementos anidados dos espacios para ver la estructura de un vistazo.",
+      "Los comentarios HTML van entre los símbolos de inicio y fin de comentario.",
+      "Usa comentarios para rotular secciones, no para repetir lo que dice el código."
+     ],
+     "q": "¿Qué hace que un código te resulte fácil de leer?",
+     "c": "Sangra bien tu página y añade un comentario sobre cada sección principal."
+    },
+    "fr": {
+     "t": "Commentaires et code propre",
+     "g": "Garde ton code ordonné pour qu'il reste facile à lire et à modifier.",
+     "p": [
+      "Indente les éléments imbriqués de deux espaces pour voir la structure d'un coup d'œil.",
+      "Les commentaires HTML se placent entre les symboles de début et de fin de commentaire.",
+      "Utilise les commentaires pour étiqueter les sections, pas pour répéter le code."
+     ],
+     "q": "Qu'est-ce qui rend un code facile à lire pour toi ?",
+     "c": "Indente bien ta page et ajoute un commentaire au-dessus de chaque section principale."
+    },
+    "it": {
+     "t": "Commenti e codice pulito",
+     "g": "Tieni il codice ordinato perché resti facile da leggere e modificare.",
+     "p": [
+      "Indenta gli elementi annidati di due spazi per vedere la struttura a colpo d'occhio.",
+      "I commenti HTML stanno tra i simboli di inizio e fine commento.",
+      "Usa i commenti per etichettare le sezioni, non per ripetere il codice."
+     ],
+     "q": "Cosa rende il codice facile da leggere per te?",
+     "c": "Indenta bene la pagina e aggiungi un commento sopra ogni sezione principale."
+    },
+    "pt": {
+     "t": "Comentários e código limpo",
+     "g": "Mantém o código arrumado para continuar fácil de ler e alterar.",
+     "p": [
+      "Indenta os elementos aninhados com dois espaços para ver a estrutura de relance.",
+      "Os comentários HTML ficam entre os símbolos de início e fim de comentário.",
+      "Usa comentários para rotular secções, não para repetir o que o código diz."
+     ],
+     "q": "O que torna o código fácil de ler para ti?",
+     "c": "Indenta bem a tua página e acrescenta um comentário por cima de cada secção principal."
+    },
+    "pt_BR": {
+     "t": "Comentários e código limpo",
+     "g": "Mantenha o código organizado para continuar fácil de ler e alterar.",
+     "p": [
+      "Indente os elementos aninhados com dois espaços para ver a estrutura de relance.",
+      "Os comentários HTML ficam entre os símbolos de início e fim de comentário.",
+      "Use comentários para rotular seções, não para repetir o que o código diz."
+     ],
+     "q": "O que deixa um código fácil de ler para você?",
+     "c": "Indente bem sua página e adicione um comentário acima de cada seção principal."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Validating your HTML",
+     "g": "Catch missing tags and small mistakes with a validator.",
+     "p": [
+      "The free W3C validator checks your markup against the HTML standard.",
+      "Browsers forgive many errors, but forgiving is not the same as correct.",
+      "Fix the first error first; one mistake often causes several messages."
+     ],
+     "q": "What mistake do you think you make most often when typing code?",
+     "c": "Run your page through a validator and fix at least one message."
+    },
+    "de": {
+     "t": "HTML validieren",
+     "g": "Finde fehlende Tags und kleine Fehler mit einem Validator.",
+     "p": [
+      "Der kostenlose W3C-Validator prüft dein Markup gegen den HTML-Standard.",
+      "Browser verzeihen viele Fehler, aber verzeihen heißt nicht korrekt.",
+      "Behebe zuerst den ersten Fehler; ein Fehler löst oft mehrere Meldungen aus."
+     ],
+     "q": "Welchen Fehler machst du beim Tippen von Code vermutlich am häufigsten?",
+     "c": "Lass deine Seite durch einen Validator laufen und behebe mindestens eine Meldung."
+    },
+    "es": {
+     "t": "Validar tu HTML",
+     "g": "Detecta etiquetas que faltan y pequeños errores con un validador.",
+     "p": [
+      "El validador gratuito del W3C comprueba tu código contra el estándar HTML.",
+      "Los navegadores perdonan muchos errores, pero perdonar no es lo mismo que ser correcto.",
+      "Corrige primero el primer error; un fallo suele provocar varios avisos."
+     ],
+     "q": "¿Qué error crees que cometes más al escribir código?",
+     "c": "Pasa tu página por un validador y corrige al menos un aviso."
+    },
+    "fr": {
+     "t": "Valider ton HTML",
+     "g": "Repère les balises manquantes et les petites erreurs avec un validateur.",
+     "p": [
+      "Le validateur gratuit du W3C vérifie ton code par rapport au standard HTML.",
+      "Les navigateurs pardonnent beaucoup d'erreurs, mais pardonner n'est pas être correct.",
+      "Corrige d'abord la première erreur ; une faute provoque souvent plusieurs messages."
+     ],
+     "q": "Quelle erreur penses-tu faire le plus souvent en tapant du code ?",
+     "c": "Passe ta page dans un validateur et corrige au moins un message."
+    },
+    "it": {
+     "t": "Validare il tuo HTML",
+     "g": "Individua tag mancanti e piccoli errori con un validatore.",
+     "p": [
+      "Il validatore gratuito del W3C controlla il tuo codice rispetto allo standard HTML.",
+      "I browser perdonano molti errori, ma perdonare non significa essere corretto.",
+      "Correggi prima il primo errore; un errore spesso causa più messaggi."
+     ],
+     "q": "Quale errore pensi di fare più spesso scrivendo codice?",
+     "c": "Passa la tua pagina in un validatore e correggi almeno un messaggio."
+    },
+    "pt": {
+     "t": "Validar o teu HTML",
+     "g": "Apanha etiquetas em falta e pequenos erros com um validador.",
+     "p": [
+      "O validador gratuito do W3C verifica o teu código face ao padrão HTML.",
+      "Os navegadores perdoam muitos erros, mas perdoar não é o mesmo que estar correto.",
+      "Corrige primeiro o primeiro erro; um engano muitas vezes causa várias mensagens."
+     ],
+     "q": "Que erro achas que cometes mais ao escrever código?",
+     "c": "Passa a tua página por um validador e corrige pelo menos uma mensagem."
+    },
+    "pt_BR": {
+     "t": "Validando seu HTML",
+     "g": "Pegue tags faltando e pequenos erros com um validador.",
+     "p": [
+      "O validador gratuito do W3C confere seu código com o padrão HTML.",
+      "Navegadores perdoam muitos erros, mas perdoar não é o mesmo que estar correto.",
+      "Corrija primeiro o primeiro erro; um engano muitas vezes causa várias mensagens."
+     ],
+     "q": "Que erro você acha que mais comete ao digitar código?",
+     "c": "Passe sua página por um validador e corrija pelo menos uma mensagem."
+    }
+   }
+  }
+ ]
+}

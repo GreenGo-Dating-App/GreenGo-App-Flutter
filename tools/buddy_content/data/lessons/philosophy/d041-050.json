@@ -1,0 +1,835 @@
+{
+ "topic": "philosophy",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ibn Rushd and reason",
+     "g": "Meet Ibn Rushd, the Andalusian thinker who championed Aristotle and careful reasoning.",
+     "p": [
+      "Ibn Rushd, known in Latin as Averroes, lived in Cordoba in the 12th century and was also a judge and physician.",
+      "He wrote detailed commentaries explaining Aristotle, which later scholars across Europe studied closely.",
+      "He believed that careful reasoning is a worthy path to understanding the world, open to everyone able to learn."
+     ],
+     "q": "What is a belief of yours that you have checked carefully with reasons?",
+     "c": "Pick one everyday claim and ask: what evidence and reasoning support it?"
+    },
+    "de": {
+     "t": "Ibn Ruschd und die Vernunft",
+     "g": "Lerne Ibn Ruschd kennen, den andalusischen Denker, der Aristoteles und sorgfältiges Denken verteidigte.",
+     "p": [
+      "Ibn Ruschd, lateinisch Averroes, lebte im 12. Jahrhundert in Córdoba und war auch Richter und Arzt.",
+      "Er schrieb ausführliche Kommentare zu Aristoteles, die später Gelehrte in ganz Europa eifrig studierten.",
+      "Er hielt sorgfältiges Denken für einen würdigen Weg, die Welt zu verstehen, offen für alle Lernfähigen."
+     ],
+     "q": "Welche deiner Überzeugungen hast du mit guten Gründen sorgfältig geprüft?",
+     "c": "Wähle eine Alltagsbehauptung und frag: Welche Belege und Gedanken stützen sie?"
+    },
+    "es": {
+     "t": "Averroes y la razón",
+     "g": "Conoce a Averroes, el pensador andalusí que defendió a Aristóteles y el razonamiento cuidadoso.",
+     "p": [
+      "Ibn Rushd, llamado Averroes en latín, vivió en Córdoba en el siglo XII y fue también juez y médico.",
+      "Escribió comentarios detallados sobre Aristóteles que estudiaron después sabios de toda Europa.",
+      "Creía que razonar con cuidado es un camino digno para entender el mundo, abierto a quien pueda aprender."
+     ],
+     "q": "¿Qué creencia tuya has revisado con cuidado y con razones?",
+     "c": "Elige una afirmación cotidiana y pregunta: ¿qué pruebas y razones la apoyan?"
+    },
+    "fr": {
+     "t": "Averroès et la raison",
+     "g": "Découvre Averroès, le penseur andalou qui défendit Aristote et le raisonnement rigoureux.",
+     "p": [
+      "Ibn Rochd, dit Averroès en latin, vécut à Cordoue au XIIe siècle et fut aussi juge et médecin.",
+      "Il rédigea de longs commentaires d'Aristote, étudiés ensuite par des savants dans toute l'Europe.",
+      "Il jugeait le raisonnement rigoureux digne de comprendre le monde, ouvert à qui sait apprendre."
+     ],
+     "q": "Quelle conviction as-tu examinée avec soin, raisons à l'appui ?",
+     "c": "Choisis une affirmation courante et demande : quelles preuves et quels arguments la soutiennent ?"
+    },
+    "it": {
+     "t": "Averroè e la ragione",
+     "g": "Conosci Averroè, il pensatore andaluso che difese Aristotele e il ragionamento attento.",
+     "p": [
+      "Ibn Rushd, detto Averroè in latino, visse a Cordova nel XII secolo ed era anche giudice e medico.",
+      "Scrisse commenti dettagliati ad Aristotele, poi studiati con cura da dotti di tutta Europa.",
+      "Credeva che ragionare con attenzione fosse una via degna per capire il mondo, aperta a chi sa imparare."
+     ],
+     "q": "Quale tua convinzione hai verificato con cura, con delle ragioni?",
+     "c": "Scegli un'affermazione quotidiana e chiedi: quali prove e ragioni la sostengono?"
+    },
+    "pt": {
+     "t": "Averróis e a razão",
+     "g": "Conhece Averróis, o pensador andaluz que defendeu Aristóteles e o raciocínio cuidadoso.",
+     "p": [
+      "Ibn Rushd, Averróis em latim, viveu em Córdova no século XII e foi também juiz e médico.",
+      "Escreveu comentários detalhados sobre Aristóteles, estudados depois por sábios de toda a Europa.",
+      "Acreditava que raciocinar com cuidado é um caminho digno para compreender o mundo, aberto a quem aprende."
+     ],
+     "q": "Que crença tua já verificaste com cuidado e com razões?",
+     "c": "Escolhe uma afirmação do dia a dia e pergunta: que provas e razões a apoiam?"
+    },
+    "pt_BR": {
+     "t": "Averróis e a razão",
+     "g": "Conheça Averróis, o pensador andaluz que defendeu Aristóteles e o raciocínio cuidadoso.",
+     "p": [
+      "Ibn Rushd, Averróis em latim, viveu em Córdoba no século XII e foi também juiz e médico.",
+      "Ele escreveu comentários detalhados sobre Aristóteles, estudados depois por sábios de toda a Europa.",
+      "Acreditava que raciocinar com cuidado é um caminho digno para entender o mundo, aberto a quem aprende."
+     ],
+     "q": "Que crença sua você já verificou com cuidado e com razões?",
+     "c": "Escolha uma afirmação do dia a dia e pergunte: que provas e razões a apoiam?"
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ibn Sina's floating man",
+     "g": "Try Ibn Sina's thought experiment about being aware of yourself without any senses.",
+     "p": [
+      "Ibn Sina, called Avicenna in Europe, lived around 1000 CE in Persia and wrote on medicine and philosophy.",
+      "Imagine a person created floating in calm air, unable to see, hear or touch anything, even their own body.",
+      "He argued that this person would still know that they exist, so self-awareness seems basic."
+     ],
+     "q": "Right now, what are you aware of inside yourself besides what your senses tell you?",
+     "c": "Close your eyes for one minute and notice your own awareness of thinking."
+    },
+    "de": {
+     "t": "Ibn Sinas fliegender Mensch",
+     "g": "Probiere Ibn Sinas Gedankenexperiment über Selbstbewusstsein ganz ohne Sinne aus.",
+     "p": [
+      "Ibn Sina, in Europa Avicenna genannt, lebte um 1000 n. Chr. in Persien und schrieb über Medizin und Philosophie.",
+      "Stell dir einen Menschen vor, der schwebend in ruhiger Luft erschaffen wird und nichts sieht, hört oder fühlt, nicht einmal den Körper.",
+      "Er meinte, dieser Mensch wüsste trotzdem, dass er existiert; Selbstbewusstsein scheint also grundlegend."
+     ],
+     "q": "Wessen bist du dir gerade in dir bewusst, außer dem, was deine Sinne melden?",
+     "c": "Schließ eine Minute die Augen und achte auf dein eigenes Bewusstsein beim Denken."
+    },
+    "es": {
+     "t": "El hombre flotante de Avicena",
+     "g": "Prueba el experimento mental de Avicena sobre ser consciente de uno mismo sin ningún sentido.",
+     "p": [
+      "Ibn Sina, llamado Avicena en Europa, vivió hacia el año 1000 en Persia y escribió sobre medicina y filosofía.",
+      "Imagina a una persona creada flotando en aire suave, sin ver, oír ni tocar nada, ni siquiera su cuerpo.",
+      "Argumentó que aun así sabría que existe, así que la conciencia de uno mismo parece básica."
+     ],
+     "q": "Ahora mismo, ¿de qué eres consciente dentro de ti además de lo que dicen tus sentidos?",
+     "c": "Cierra los ojos un minuto y observa tu propia conciencia de estar pensando."
+    },
+    "fr": {
+     "t": "L'homme volant d'Avicenne",
+     "g": "Essaie l'expérience de pensée d'Avicenne sur la conscience de soi sans aucun sens.",
+     "p": [
+      "Ibn Sina, dit Avicenne en Europe, vécut vers l'an 1000 en Perse et écrivit sur la médecine et la philosophie.",
+      "Imagine une personne créée en suspension dans un air calme, sans rien voir, entendre ni toucher, même son corps.",
+      "Il pensait qu'elle saurait pourtant qu'elle existe : la conscience de soi semble donc fondamentale."
+     ],
+     "q": "En ce moment, de quoi es-tu conscient en toi, au-delà de ce que disent tes sens ?",
+     "c": "Ferme les yeux une minute et observe ta propre conscience de penser."
+    },
+    "it": {
+     "t": "L'uomo sospeso di Avicenna",
+     "g": "Prova l'esperimento mentale di Avicenna sulla consapevolezza di sé senza alcun senso.",
+     "p": [
+      "Ibn Sina, detto Avicenna in Europa, visse intorno al 1000 in Persia e scrisse di medicina e filosofia.",
+      "Immagina una persona creata sospesa in aria calma, senza vedere, sentire o toccare nulla, nemmeno il proprio corpo.",
+      "Sosteneva che saprebbe comunque di esistere, quindi la consapevolezza di sé sembra fondamentale."
+     ],
+     "q": "In questo momento, di cosa sei consapevole dentro di te oltre a ciò che dicono i sensi?",
+     "c": "Chiudi gli occhi per un minuto e osserva la tua consapevolezza di pensare."
+    },
+    "pt": {
+     "t": "O homem flutuante de Avicena",
+     "g": "Experimenta a experiência mental de Avicena sobre ter consciência de si sem nenhum sentido.",
+     "p": [
+      "Ibn Sina, Avicena na Europa, viveu por volta do ano 1000 na Pérsia e escreveu sobre medicina e filosofia.",
+      "Imagina uma pessoa criada a flutuar em ar calmo, sem ver, ouvir ou tocar nada, nem o próprio corpo.",
+      "Defendeu que ainda assim saberia que existe; a consciência de si parece, pois, básica."
+     ],
+     "q": "Neste momento, de que tens consciência dentro de ti além do que os sentidos dizem?",
+     "c": "Fecha os olhos um minuto e repara na tua própria consciência de pensar."
+    },
+    "pt_BR": {
+     "t": "O homem flutuante de Avicena",
+     "g": "Experimente o experimento mental de Avicena sobre ter consciência de si sem nenhum sentido.",
+     "p": [
+      "Ibn Sina, Avicena na Europa, viveu por volta do ano 1000 na Pérsia e escreveu sobre medicina e filosofia.",
+      "Imagine uma pessoa criada flutuando em ar calmo, sem ver, ouvir ou tocar nada, nem o próprio corpo.",
+      "Ele defendeu que mesmo assim ela saberia que existe; a consciência de si parece básica."
+     ],
+     "q": "Neste momento, do que você tem consciência dentro de si além do que os sentidos dizem?",
+     "c": "Feche os olhos por um minuto e perceba sua própria consciência de pensar."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Al-Farabi, the second teacher",
+     "g": "Meet Al-Farabi, who linked Greek logic with learning in Arabic and earned the title second teacher.",
+     "p": [
+      "Al-Farabi lived in the 10th century in Baghdad and wrote about logic, music and how communities can flourish.",
+      "He was called the second teacher because he explained Aristotle, the first teacher, so clearly.",
+      "He saw logic as a tool for all sciences and said that people reach happiness by learning together."
+     ],
+     "q": "Who is a teacher that explained something difficult so clearly that it finally made sense?",
+     "c": "Explain something you know well to a friend in three simple steps."
+    },
+    "de": {
+     "t": "Al-Farabi, der zweite Lehrer",
+     "g": "Lerne Al-Farabi kennen, der griechische Logik mit der Gelehrsamkeit auf Arabisch verband.",
+     "p": [
+      "Al-Farabi lebte im 10. Jahrhundert in Bagdad und schrieb über Logik, Musik und das Gedeihen von Gemeinschaften.",
+      "Er hieß der zweite Lehrer, weil er Aristoteles, den ersten Lehrer, so klar erklärte.",
+      "Er sah Logik als Werkzeug aller Wissenschaften und meinte, Menschen finden Glück beim gemeinsamen Lernen."
+     ],
+     "q": "Wer hat dir etwas Schwieriges so klar erklärt, dass es endlich Sinn ergab?",
+     "c": "Erkläre einer Freundin etwas, das du gut kennst, in drei einfachen Schritten."
+    },
+    "es": {
+     "t": "Al-Farabi, el segundo maestro",
+     "g": "Conoce a Al-Farabi, que unió la lógica griega con el saber en árabe y fue llamado segundo maestro.",
+     "p": [
+      "Al-Farabi vivió en el siglo X en Bagdad y escribió sobre lógica, música y cómo pueden prosperar las comunidades.",
+      "Lo llamaron el segundo maestro porque explicó con gran claridad a Aristóteles, el primero.",
+      "Veía la lógica como herramienta de todas las ciencias y decía que se alcanza la felicidad aprendiendo juntos."
+     ],
+     "q": "¿Qué maestro te explicó algo difícil con tanta claridad que por fin lo entendiste?",
+     "c": "Explica a un amigo algo que domines en tres pasos sencillos."
+    },
+    "fr": {
+     "t": "Al-Fârâbî, le second maître",
+     "g": "Découvre Al-Fârâbî, qui relia la logique grecque au savoir en arabe et reçut le titre de second maître.",
+     "p": [
+      "Al-Fârâbî vécut au Xe siècle à Bagdad et écrivit sur la logique, la musique et l'épanouissement des communautés.",
+      "On l'appelait le second maître car il expliquait si clairement Aristote, le premier maître.",
+      "Il voyait la logique comme un outil pour toutes les sciences et le bonheur dans l'apprentissage partagé."
+     ],
+     "q": "Quel enseignant t'a expliqué une chose difficile si clairement que tout s'est éclairé ?",
+     "c": "Explique à un ami quelque chose que tu maîtrises en trois étapes simples."
+    },
+    "it": {
+     "t": "Al-Farabi, il secondo maestro",
+     "g": "Conosci Al-Farabi, che unì la logica greca al sapere in arabo e fu detto secondo maestro.",
+     "p": [
+      "Al-Farabi visse nel X secolo a Baghdad e scrisse di logica, musica e di come le comunità possano prosperare.",
+      "Lo chiamavano secondo maestro perché spiegava con grande chiarezza Aristotele, il primo maestro.",
+      "Vedeva la logica come strumento di tutte le scienze e diceva che si trova la felicità imparando insieme."
+     ],
+     "q": "Quale insegnante ti ha spiegato una cosa difficile così bene da fartela capire finalmente?",
+     "c": "Spiega a un amico qualcosa che conosci bene in tre semplici passi."
+    },
+    "pt": {
+     "t": "Al-Farabi, o segundo mestre",
+     "g": "Conhece Al-Farabi, que uniu a lógica grega ao saber em árabe e foi chamado segundo mestre.",
+     "p": [
+      "Al-Farabi viveu no século X em Bagdá e escreveu sobre lógica, música e como as comunidades podem prosperar.",
+      "Chamavam-lhe o segundo mestre porque explicava com muita clareza Aristóteles, o primeiro mestre.",
+      "Via a lógica como ferramenta de todas as ciências e dizia que se alcança a felicidade aprendendo juntos."
+     ],
+     "q": "Que professor te explicou algo difícil com tanta clareza que finalmente percebeste?",
+     "c": "Explica a um amigo algo que conheces bem em três passos simples."
+    },
+    "pt_BR": {
+     "t": "Al-Farabi, o segundo mestre",
+     "g": "Conheça Al-Farabi, que uniu a lógica grega ao saber em árabe e foi chamado de segundo mestre.",
+     "p": [
+      "Al-Farabi viveu no século X em Bagdá e escreveu sobre lógica, música e como as comunidades podem prosperar.",
+      "Chamavam-no de segundo mestre porque explicava com muita clareza Aristóteles, o primeiro mestre.",
+      "Ele via a lógica como ferramenta de todas as ciências e dizia que se alcança a felicidade aprendendo juntos."
+     ],
+     "q": "Que professor explicou algo difícil a você com tanta clareza que finalmente entendeu?",
+     "c": "Explique a um amigo algo que você conhece bem em três passos simples."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Thought experiments",
+     "g": "Learn how imagined scenarios help philosophers test ideas.",
+     "p": [
+      "A thought experiment is a made-up situation that we explore in our minds instead of in a lab.",
+      "Ibn Sina's floating man and Zhuangzi's butterfly are both examples you have already met.",
+      "You change one detail at a time and ask: does my answer change, and why?"
+     ],
+     "q": "What imaginary situation would you like to use to test one of your own beliefs?",
+     "c": "Invent a short what-if scenario and change one detail to see if your answer shifts."
+    },
+    "de": {
+     "t": "Gedankenexperimente",
+     "g": "Erfahre, wie ausgedachte Szenarien Philosophen helfen, Ideen zu prüfen.",
+     "p": [
+      "Ein Gedankenexperiment ist eine erfundene Situation, die wir im Kopf statt im Labor erkunden.",
+      "Ibn Sinas fliegender Mensch und Zhuangzis Schmetterling sind Beispiele, die du schon kennst.",
+      "Du änderst ein Detail nach dem anderen und fragst: Ändert sich meine Antwort, und warum?"
+     ],
+     "q": "Mit welcher ausgedachten Situation würdest du gern eine eigene Überzeugung testen?",
+     "c": "Erfinde ein kurzes Was-wäre-wenn und ändere ein Detail, um zu sehen, ob sich deine Antwort ändert."
+    },
+    "es": {
+     "t": "Experimentos mentales",
+     "g": "Aprende cómo los escenarios imaginados ayudan a los filósofos a poner a prueba las ideas.",
+     "p": [
+      "Un experimento mental es una situación inventada que exploramos en la mente en vez de en un laboratorio.",
+      "El hombre flotante de Avicena y la mariposa de Zhuangzi son ejemplos que ya conoces.",
+      "Cambias un detalle cada vez y preguntas: ¿cambia mi respuesta y por qué?"
+     ],
+     "q": "¿Qué situación imaginaria te gustaría usar para probar una de tus creencias?",
+     "c": "Inventa un breve escenario hipotético y cambia un detalle para ver si tu respuesta varía."
+    },
+    "fr": {
+     "t": "Les expériences de pensée",
+     "g": "Apprends comment des scénarios imaginés aident les philosophes à éprouver des idées.",
+     "p": [
+      "Une expérience de pensée est une situation inventée que l'on explore dans sa tête plutôt qu'en laboratoire.",
+      "L'homme volant d'Avicenne et le papillon de Zhuangzi en sont des exemples que tu connais déjà.",
+      "On change un détail à la fois et l'on demande : ma réponse change-t-elle, et pourquoi ?"
+     ],
+     "q": "Quelle situation imaginaire voudrais-tu utiliser pour tester l'une de tes convictions ?",
+     "c": "Invente un petit scénario et change un détail pour voir si ta réponse bouge."
+    },
+    "it": {
+     "t": "Esperimenti mentali",
+     "g": "Impara come gli scenari immaginati aiutano i filosofi a mettere alla prova le idee.",
+     "p": [
+      "Un esperimento mentale è una situazione inventata che esploriamo con la mente invece che in laboratorio.",
+      "L'uomo sospeso di Avicenna e la farfalla di Zhuangzi sono esempi che hai già incontrato.",
+      "Cambi un dettaglio alla volta e chiedi: la mia risposta cambia, e perché?"
+     ],
+     "q": "Quale situazione immaginaria useresti per mettere alla prova una tua convinzione?",
+     "c": "Inventa un breve scenario ipotetico e cambia un dettaglio per vedere se la risposta cambia."
+    },
+    "pt": {
+     "t": "Experiências mentais",
+     "g": "Aprende como cenários imaginados ajudam os filósofos a testar ideias.",
+     "p": [
+      "Uma experiência mental é uma situação inventada que exploramos na cabeça em vez de num laboratório.",
+      "O homem flutuante de Avicena e a borboleta de Zhuangzi são exemplos que já conheces.",
+      "Mudas um detalhe de cada vez e perguntas: a minha resposta muda e porquê?"
+     ],
+     "q": "Que situação imaginária gostarias de usar para testar uma das tuas crenças?",
+     "c": "Inventa um cenário curto e muda um detalhe para ver se a tua resposta se altera."
+    },
+    "pt_BR": {
+     "t": "Experimentos mentais",
+     "g": "Aprenda como cenários imaginados ajudam os filósofos a testar ideias.",
+     "p": [
+      "Um experimento mental é uma situação inventada que exploramos na cabeça em vez de num laboratório.",
+      "O homem flutuante de Avicena e a borboleta de Zhuangzi são exemplos que você já conheceu.",
+      "Você muda um detalhe de cada vez e pergunta: minha resposta muda e por quê?"
+     ],
+     "q": "Que situação imaginária você gostaria de usar para testar uma das suas crenças?",
+     "c": "Invente um cenário curto e mude um detalhe para ver se a sua resposta se altera."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The ship of Theseus",
+     "g": "Ponder the puzzle: if every plank of a ship is replaced, is it still the same ship?",
+     "p": [
+      "The tale comes from ancient Greece: the hero Theseus's ship was kept in harbor and repaired plank by plank.",
+      "After a long time every part was new, so people asked whether it was still the same ship.",
+      "Add a twist: if someone built a ship from the old planks, which one is the original?"
+     ],
+     "q": "Do you think a thing stays the same because of its parts, its shape or its history?",
+     "c": "Think of an object you have repaired or upgraded and decide: is it still the same one?"
+    },
+    "de": {
+     "t": "Das Schiff des Theseus",
+     "g": "Grüble über das Rätsel: Ist ein Schiff, dessen Planken alle ersetzt wurden, noch dasselbe?",
+     "p": [
+      "Die Geschichte stammt aus dem alten Griechenland: Das Schiff des Helden Theseus wurde im Hafen Brett für Brett repariert.",
+      "Nach langer Zeit war jedes Teil neu, und man fragte, ob es noch dasselbe Schiff sei.",
+      "Dreh den Spieß um: Baut jemand aus den alten Planken ein Schiff, welches ist das Original?"
+     ],
+     "q": "Bleibt ein Ding für dich dasselbe wegen seiner Teile, seiner Form oder seiner Geschichte?",
+     "c": "Denk an einen Gegenstand, den du repariert hast, und entscheide: Ist es noch derselbe?"
+    },
+    "es": {
+     "t": "El barco de Teseo",
+     "g": "Reflexiona sobre el acertijo: si se cambian todas las tablas de un barco, ¿sigue siendo el mismo?",
+     "p": [
+      "El relato viene de la Grecia antigua: el barco del héroe Teseo se conservó en el puerto y se reparó tabla a tabla.",
+      "Con el tiempo todas las piezas eran nuevas, y la gente se preguntó si seguía siendo el mismo barco.",
+      "Añade un giro: si alguien construye un barco con las tablas viejas, ¿cuál es el original?"
+     ],
+     "q": "¿Crees que una cosa sigue igual por sus partes, su forma o su historia?",
+     "c": "Piensa en un objeto que hayas reparado o mejorado y decide: ¿sigue siendo el mismo?"
+    },
+    "fr": {
+     "t": "Le bateau de Thésée",
+     "g": "Réfléchis à l'énigme : si chaque planche d'un bateau est remplacée, est-ce encore le même bateau ?",
+     "p": [
+      "Le récit vient de la Grèce antique : le navire du héros Thésée, gardé au port, était réparé planche après planche.",
+      "Avec le temps, toutes les pièces étaient neuves, et l'on se demanda si c'était toujours le même navire.",
+      "Ajoute un rebondissement : si l'on bâtit un bateau avec les vieilles planches, lequel est l'original ?"
+     ],
+     "q": "Une chose reste-t-elle la même par ses parties, sa forme ou son histoire ?",
+     "c": "Pense à un objet que tu as réparé ou amélioré : est-ce toujours le même ?"
+    },
+    "it": {
+     "t": "La nave di Teseo",
+     "g": "Rifletti sull'enigma: se ogni asse di una nave viene sostituita, è ancora la stessa nave?",
+     "p": [
+      "Il racconto viene dall'antica Grecia: la nave dell'eroe Teseo fu conservata in porto e riparata asse dopo asse.",
+      "Col tempo ogni parte era nuova, e ci si chiese se fosse ancora la stessa nave.",
+      "Aggiungi una svolta: se qualcuno costruisce una nave con le vecchie assi, quale è l'originale?"
+     ],
+     "q": "Secondo te una cosa resta la stessa per le sue parti, la sua forma o la sua storia?",
+     "c": "Pensa a un oggetto riparato o migliorato e decidi: è ancora lo stesso?"
+    },
+    "pt": {
+     "t": "O barco de Teseu",
+     "g": "Reflete sobre o enigma: se todas as tábuas de um barco forem trocadas, ainda é o mesmo barco?",
+     "p": [
+      "A história vem da Grécia antiga: o barco do herói Teseu foi mantido no porto e reparado tábua a tábua.",
+      "Com o tempo todas as peças eram novas, e perguntou-se se continuava a ser o mesmo barco.",
+      "Acrescenta uma reviravolta: se alguém construir um barco com as tábuas velhas, qual é o original?"
+     ],
+     "q": "Achas que uma coisa se mantém igual pelas partes, pela forma ou pela história?",
+     "c": "Pensa num objeto que reparaste ou melhoraste e decide: ainda é o mesmo?"
+    },
+    "pt_BR": {
+     "t": "O barco de Teseu",
+     "g": "Reflita sobre o enigma: se todas as tábuas de um barco forem trocadas, ainda é o mesmo barco?",
+     "p": [
+      "A história vem da Grécia antiga: o barco do herói Teseu foi mantido no porto e reparado tábua por tábua.",
+      "Com o tempo todas as peças eram novas, e perguntaram se continuava sendo o mesmo barco.",
+      "Acrescente uma reviravolta: se alguém construir um barco com as tábuas velhas, qual é o original?"
+     ],
+     "q": "Você acha que uma coisa continua igual pelas partes, pela forma ou pela história?",
+     "c": "Pense num objeto que você consertou ou melhorou e decida: ainda é o mesmo?"
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Personal identity",
+     "g": "Ask what makes you the same person over the years, even as you change.",
+     "p": [
+      "Your body renews its cells and your tastes, skills and opinions shift, yet you call yourself the same person.",
+      "Philosophers offer candidates for what stays: the body, the memories, the character, or the life story.",
+      "None is perfect, and asking carefully teaches us to see ourselves with curiosity and kindness."
+     ],
+     "q": "What part of you has stayed the same since childhood, and what has changed most?",
+     "c": "Write down one thing that has stayed with you for years and one that has changed."
+    },
+    "de": {
+     "t": "Persönliche Identität",
+     "g": "Frage dich, was dich über die Jahre zur selben Person macht, obwohl du dich veränderst.",
+     "p": [
+      "Dein Körper erneuert Zellen, Geschmack, Fähigkeiten und Ansichten wandeln sich, und doch nennst du dich dieselbe Person.",
+      "Philosophen nennen Kandidaten für das Bleibende: den Körper, die Erinnerungen, den Charakter oder die Lebensgeschichte.",
+      "Keiner ist perfekt, und genaues Fragen lehrt uns, uns mit Neugier und Freundlichkeit zu sehen."
+     ],
+     "q": "Was an dir ist seit der Kindheit gleich geblieben, und was hat sich am meisten verändert?",
+     "c": "Schreib eine Sache auf, die dir seit Jahren bleibt, und eine, die sich verändert hat."
+    },
+    "es": {
+     "t": "Identidad personal",
+     "g": "Pregúntate qué te hace la misma persona a lo largo de los años, aunque cambies.",
+     "p": [
+      "Tu cuerpo renueva sus células y tus gustos, habilidades y opiniones cambian, y aun así te llamas la misma persona.",
+      "Los filósofos proponen candidatos para lo que permanece: el cuerpo, los recuerdos, el carácter o la historia de vida.",
+      "Ninguno es perfecto, y preguntar con cuidado nos enseña a mirarnos con curiosidad y amabilidad."
+     ],
+     "q": "¿Qué parte de ti sigue igual desde la infancia y qué ha cambiado más?",
+     "c": "Anota algo que te acompaña desde hace años y algo que ha cambiado."
+    },
+    "fr": {
+     "t": "L'identité personnelle",
+     "g": "Demande-toi ce qui fait de toi la même personne au fil des années, malgré les changements.",
+     "p": [
+      "Ton corps renouvelle ses cellules, tes goûts, talents et opinions évoluent, et tu te dis pourtant la même personne.",
+      "Les philosophes proposent des candidats pour ce qui demeure : le corps, les souvenirs, le caractère ou le récit de vie.",
+      "Aucun n'est parfait, et bien questionner nous apprend à nous regarder avec curiosité et bienveillance."
+     ],
+     "q": "Qu'est-ce qui est resté pareil en toi depuis l'enfance, et qu'est-ce qui a le plus changé ?",
+     "c": "Note une chose qui t'accompagne depuis des années et une qui a changé."
+    },
+    "it": {
+     "t": "Identità personale",
+     "g": "Chiediti cosa ti rende la stessa persona negli anni, anche se cambi.",
+     "p": [
+      "Il tuo corpo rinnova le cellule e gusti, abilità e opinioni cambiano, eppure ti chiami sempre la stessa persona.",
+      "I filosofi propongono dei candidati per ciò che resta: il corpo, i ricordi, il carattere o la storia di vita.",
+      "Nessuno è perfetto, e chiedere con cura ci insegna a guardarci con curiosità e gentilezza."
+     ],
+     "q": "Quale parte di te è rimasta uguale dall'infanzia e quale è cambiata di più?",
+     "c": "Scrivi una cosa che ti accompagna da anni e una che è cambiata."
+    },
+    "pt": {
+     "t": "Identidade pessoal",
+     "g": "Pergunta-te o que faz de ti a mesma pessoa ao longo dos anos, mesmo mudando.",
+     "p": [
+      "O teu corpo renova as células e os gostos, capacidades e opiniões mudam, e mesmo assim chamas-te a mesma pessoa.",
+      "Os filósofos propõem candidatos para o que permanece: o corpo, as memórias, o carácter ou a história de vida.",
+      "Nenhum é perfeito, e perguntar com cuidado ensina-nos a ver-nos com curiosidade e gentileza."
+     ],
+     "q": "Que parte de ti se manteve igual desde a infância e o que mudou mais?",
+     "c": "Escreve uma coisa que te acompanha há anos e uma que mudou."
+    },
+    "pt_BR": {
+     "t": "Identidade pessoal",
+     "g": "Pergunte-se o que faz de você a mesma pessoa ao longo dos anos, mesmo mudando.",
+     "p": [
+      "Seu corpo renova as células e seus gostos, habilidades e opiniões mudam, e mesmo assim você se chama a mesma pessoa.",
+      "Os filósofos propõem candidatos para o que permanece: o corpo, as memórias, o caráter ou a história de vida.",
+      "Nenhum é perfeito, e perguntar com cuidado nos ensina a nos ver com curiosidade e gentileza."
+     ],
+     "q": "Que parte de você continua igual desde a infância e o que mudou mais?",
+     "c": "Escreva uma coisa que acompanha você há anos e uma que mudou."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Memory and the self",
+     "g": "Learn how John Locke linked personal identity to memory and consciousness.",
+     "p": [
+      "John Locke was an English philosopher of the 17th century who wrote about what makes a person.",
+      "He said you are the same person as long as your consciousness can reach back through your memories.",
+      "Critics noted that we forget a lot, so memory alone may be too thin a link for the whole self."
+     ],
+     "q": "Which memory feels most central to who you are, and why does it matter so much?",
+     "c": "Look at an old photo or note and ask what it tells you about the person you were."
+    },
+    "de": {
+     "t": "Gedächtnis und Selbst",
+     "g": "Erfahre, wie John Locke persönliche Identität mit Erinnerung und Bewusstsein verband.",
+     "p": [
+      "John Locke war ein englischer Philosoph des 17. Jahrhunderts und schrieb darüber, was eine Person ausmacht.",
+      "Er sagte, du bist dieselbe Person, solange dein Bewusstsein sich durch Erinnerungen zurückerstrecken kann.",
+      "Kritiker bemerkten, dass wir vieles vergessen; Erinnerung allein ist vielleicht ein zu dünnes Band für das ganze Selbst."
+     ],
+     "q": "Welche Erinnerung ist für dich am zentralsten für das, wer du bist, und warum?",
+     "c": "Sieh dir ein altes Foto oder eine Notiz an und frag, was sie über die frühere Person verrät."
+    },
+    "es": {
+     "t": "Memoria y yo",
+     "g": "Descubre cómo John Locke vinculó la identidad personal con la memoria y la conciencia.",
+     "p": [
+      "John Locke fue un filósofo inglés del siglo XVII que escribió sobre lo que hace a una persona.",
+      "Dijo que eres la misma persona mientras tu conciencia pueda alcanzar el pasado mediante los recuerdos.",
+      "Los críticos notaron que olvidamos mucho, así que la memoria sola quizá sea un lazo demasiado fino."
+     ],
+     "q": "¿Qué recuerdo te parece más central en quien eres y por qué importa tanto?",
+     "c": "Mira una foto o nota antigua y pregúntate qué dice de la persona que fuiste."
+    },
+    "fr": {
+     "t": "Mémoire et soi",
+     "g": "Découvre comment John Locke a lié l'identité personnelle à la mémoire et à la conscience.",
+     "p": [
+      "John Locke, philosophe anglais du XVIIe siècle, a écrit sur ce qui fait une personne.",
+      "Il disait que tu restes la même personne tant que ta conscience peut remonter par tes souvenirs.",
+      "Ses critiques notaient qu'on oublie beaucoup : la mémoire seule est peut-être un lien trop mince."
+     ],
+     "q": "Quel souvenir te semble le plus central dans ce que tu es, et pourquoi ?",
+     "c": "Regarde une vieille photo ou note et demande-toi ce qu'elle dit de la personne que tu étais."
+    },
+    "it": {
+     "t": "Memoria e identità",
+     "g": "Scopri come John Locke legò l'identità personale alla memoria e alla coscienza.",
+     "p": [
+      "John Locke fu un filosofo inglese del Seicento che scrisse su ciò che rende una persona tale.",
+      "Diceva che sei la stessa persona finché la tua coscienza può risalire indietro attraverso i ricordi.",
+      "I critici notarono che dimentichiamo molto, quindi la sola memoria è forse un legame troppo sottile."
+     ],
+     "q": "Quale ricordo ti sembra più centrale in ciò che sei, e perché conta tanto?",
+     "c": "Guarda una vecchia foto o nota e chiediti cosa dice della persona che eri."
+    },
+    "pt": {
+     "t": "Memória e o eu",
+     "g": "Descobre como John Locke ligou a identidade pessoal à memória e à consciência.",
+     "p": [
+      "John Locke foi um filósofo inglês do século XVII que escreveu sobre o que faz uma pessoa.",
+      "Dizia que és a mesma pessoa enquanto a tua consciência puder recuar através das memórias.",
+      "Os críticos notaram que esquecemos muito, por isso a memória sozinha talvez seja um laço demasiado fino."
+     ],
+     "q": "Que memória te parece mais central em quem és e porque importa tanto?",
+     "c": "Olha para uma foto ou nota antiga e pergunta o que diz da pessoa que foste."
+    },
+    "pt_BR": {
+     "t": "Memória e o eu",
+     "g": "Descubra como John Locke ligou a identidade pessoal à memória e à consciência.",
+     "p": [
+      "John Locke foi um filósofo inglês do século XVII que escreveu sobre o que faz uma pessoa.",
+      "Ele dizia que você é a mesma pessoa enquanto sua consciência puder voltar atrás por meio das memórias.",
+      "Os críticos notaram que esquecemos muito, então a memória sozinha talvez seja um laço fino demais."
+     ],
+     "q": "Que memória parece mais central em quem você é e por que importa tanto?",
+     "c": "Olhe uma foto ou anotação antiga e pergunte o que ela diz sobre a pessoa que você foi."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Who am I, really?",
+     "g": "Explore the roles, habits, memories and values that make up a self.",
+     "p": [
+      "You are a friend, a learner, a family member, maybe a worker: roles shape how you act.",
+      "Habits, memories and values add depth: they show what you care about when nobody is watching.",
+      "Philosophers still debate what the self is, but knowing your values can guide your choices."
+     ],
+     "q": "If you had to describe yourself without job or family titles, what would you say?",
+     "c": "Write three values that describe you and one action today that matches them."
+    },
+    "de": {
+     "t": "Wer bin ich eigentlich?",
+     "g": "Erkunde die Rollen, Gewohnheiten, Erinnerungen und Werte, aus denen ein Selbst besteht.",
+     "p": [
+      "Du bist Freund, Lernender, Familienmitglied, vielleicht Arbeitender: Rollen prägen dein Handeln.",
+      "Gewohnheiten, Erinnerungen und Werte geben Tiefe: Sie zeigen, was dir wichtig ist, wenn niemand zusieht.",
+      "Philosophen streiten noch über das Selbst, doch deine Werte zu kennen kann deine Entscheidungen leiten."
+     ],
+     "q": "Wie würdest du dich ohne Beruf und Familienrollen beschreiben?",
+     "c": "Schreib drei Werte auf, die dich beschreiben, und eine Handlung heute, die dazu passt."
+    },
+    "es": {
+     "t": "¿Quién soy, de verdad?",
+     "g": "Explora los roles, hábitos, recuerdos y valores que forman un yo.",
+     "p": [
+      "Eres amigo, aprendiz, miembro de una familia, quizá trabajador: los roles moldean cómo actúas.",
+      "Los hábitos, recuerdos y valores dan profundidad: muestran qué te importa cuando nadie mira.",
+      "Los filósofos aún debaten qué es el yo, pero conocer tus valores puede guiar tus decisiones."
+     ],
+     "q": "Si tuvieras que describirte sin títulos de trabajo ni de familia, ¿qué dirías?",
+     "c": "Escribe tres valores que te describan y una acción de hoy que encaje con ellos."
+    },
+    "fr": {
+     "t": "Qui suis-je, vraiment ?",
+     "g": "Explore les rôles, habitudes, souvenirs et valeurs qui composent un soi.",
+     "p": [
+      "Tu es ami, apprenant, membre d'une famille, peut-être travailleur : les rôles façonnent tes actes.",
+      "Habitudes, souvenirs et valeurs ajoutent de la profondeur : ils montrent ce qui compte quand personne ne regarde.",
+      "Les philosophes débattent encore du soi, mais connaître tes valeurs peut guider tes choix."
+     ],
+     "q": "Si tu devais te décrire sans titre professionnel ni familial, que dirais-tu ?",
+     "c": "Écris trois valeurs qui te décrivent et un geste aujourd'hui qui leur correspond."
+    },
+    "it": {
+     "t": "Chi sono, davvero?",
+     "g": "Esplora i ruoli, le abitudini, i ricordi e i valori che formano un sé.",
+     "p": [
+      "Sei amico, studente, familiare, forse lavoratore: i ruoli plasmano come agisci.",
+      "Abitudini, ricordi e valori danno profondità: mostrano cosa ti sta a cuore quando nessuno guarda.",
+      "I filosofi ancora discutono cosa sia il sé, ma conoscere i tuoi valori può guidare le scelte."
+     ],
+     "q": "Se dovessi descriverti senza titoli di lavoro o di famiglia, cosa diresti?",
+     "c": "Scrivi tre valori che ti descrivono e un'azione di oggi coerente con essi."
+    },
+    "pt": {
+     "t": "Quem sou eu, afinal?",
+     "g": "Explora os papéis, hábitos, memórias e valores que formam um eu.",
+     "p": [
+      "És amigo, aprendiz, membro de uma família, talvez trabalhador: os papéis moldam o teu modo de agir.",
+      "Hábitos, memórias e valores dão profundidade: mostram o que te importa quando ninguém vê.",
+      "Os filósofos ainda debatem o que é o eu, mas conhecer os teus valores pode guiar as tuas escolhas."
+     ],
+     "q": "Se tivesses de te descrever sem títulos de trabalho ou de família, o que dirias?",
+     "c": "Escreve três valores que te descrevem e uma ação de hoje que combine com eles."
+    },
+    "pt_BR": {
+     "t": "Quem sou eu, afinal?",
+     "g": "Explore os papéis, hábitos, memórias e valores que formam um eu.",
+     "p": [
+      "Você é amigo, aprendiz, membro de uma família, talvez trabalhador: os papéis moldam seu jeito de agir.",
+      "Hábitos, memórias e valores dão profundidade: mostram o que importa para você quando ninguém vê.",
+      "Os filósofos ainda debatem o que é o eu, mas conhecer seus valores pode guiar suas escolhas."
+     ],
+     "q": "Se você tivesse de se descrever sem títulos de trabalho ou de família, o que diria?",
+     "c": "Escreva três valores que descrevem você e uma ação de hoje que combine com eles."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mind and body",
+     "g": "Wonder whether thoughts are something physical, or something more.",
+     "p": [
+      "Your thoughts seem very different from a stone or a tree, yet they go along with a living brain.",
+      "Dualists say mind and body are two kinds of thing; physicalists say mind is what a brain does.",
+      "Nobody has settled it, and both sides take real experience and science seriously."
+     ],
+     "q": "When you feel a mood change, do you think of it as bodily, mental, or both?",
+     "c": "Notice how a good night's rest or a walk changes your thinking, and note what you learn."
+    },
+    "de": {
+     "t": "Geist und Körper",
+     "g": "Frage dich, ob Gedanken etwas Körperliches sind oder mehr.",
+     "p": [
+      "Deine Gedanken wirken ganz anders als ein Stein oder Baum, und doch gehen sie mit einem lebenden Gehirn einher.",
+      "Dualisten sagen, Geist und Körper seien zwei Arten von Dingen; Physikalisten sagen, Geist sei, was ein Gehirn tut.",
+      "Niemand hat es entschieden, und beide Seiten nehmen Erfahrung und Wissenschaft ernst."
+     ],
+     "q": "Wenn sich deine Stimmung ändert, hältst du das für körperlich, geistig oder beides?",
+     "c": "Achte darauf, wie eine gute Nachtruhe oder ein Spaziergang dein Denken verändert."
+    },
+    "es": {
+     "t": "Mente y cuerpo",
+     "g": "Pregúntate si los pensamientos son algo físico o algo más.",
+     "p": [
+      "Tus pensamientos parecen muy distintos de una piedra o un árbol, pero acompañan a un cerebro vivo.",
+      "Los dualistas dicen que mente y cuerpo son dos tipos de cosa; los fisicalistas, que la mente es lo que hace un cerebro.",
+      "Nadie lo ha resuelto, y ambos bandos toman en serio la experiencia y la ciencia."
+     ],
+     "q": "Cuando cambia tu ánimo, ¿lo ves como algo corporal, mental o ambos?",
+     "c": "Fíjate en cómo un buen descanso o un paseo cambian tu forma de pensar."
+    },
+    "fr": {
+     "t": "Esprit et corps",
+     "g": "Demande-toi si les pensées sont quelque chose de physique ou davantage.",
+     "p": [
+      "Tes pensées semblent très différentes d'une pierre ou d'un arbre, mais elles accompagnent un cerveau vivant.",
+      "Les dualistes disent que esprit et corps sont deux sortes de choses ; les physicalistes, que l'esprit est ce que fait un cerveau.",
+      "Personne n'a tranché, et chaque camp prend au sérieux l'expérience et la science."
+     ],
+     "q": "Quand ton humeur change, la vois-tu comme corporelle, mentale ou les deux ?",
+     "c": "Remarque comment une bonne nuit ou une promenade change ta façon de penser."
+    },
+    "it": {
+     "t": "Mente e corpo",
+     "g": "Chiediti se i pensieri sono qualcosa di fisico o qualcosa di più.",
+     "p": [
+      "I tuoi pensieri sembrano molto diversi da un sasso o da un albero, ma accompagnano un cervello vivo.",
+      "I dualisti dicono che mente e corpo sono due tipi di cosa; i fisicalisti, che la mente è ciò che fa un cervello.",
+      "Nessuno ha deciso, ed entrambe le parti prendono sul serio esperienza e scienza."
+     ],
+     "q": "Quando il tuo umore cambia, lo vedi come corporeo, mentale o entrambi?",
+     "c": "Nota come una buona notte di riposo o una passeggiata cambia il tuo modo di pensare."
+    },
+    "pt": {
+     "t": "Mente e corpo",
+     "g": "Pergunta-te se os pensamentos são algo físico ou algo mais.",
+     "p": [
+      "Os teus pensamentos parecem muito diferentes de uma pedra ou de uma árvore, mas acompanham um cérebro vivo.",
+      "Os dualistas dizem que mente e corpo são dois tipos de coisa; os fisicalistas, que a mente é o que o cérebro faz.",
+      "Ninguém resolveu a questão, e ambos os lados levam a sério a experiência e a ciência."
+     ],
+     "q": "Quando o teu humor muda, vês isso como corporal, mental ou ambos?",
+     "c": "Repara como uma boa noite de descanso ou um passeio muda o teu modo de pensar."
+    },
+    "pt_BR": {
+     "t": "Mente e corpo",
+     "g": "Pergunte-se se os pensamentos são algo físico ou algo mais.",
+     "p": [
+      "Seus pensamentos parecem muito diferentes de uma pedra ou de uma árvore, mas acompanham um cérebro vivo.",
+      "Os dualistas dizem que mente e corpo são dois tipos de coisa; os fisicalistas, que a mente é o que o cérebro faz.",
+      "Ninguém resolveu a questão, e os dois lados levam a sério a experiência e a ciência."
+     ],
+     "q": "Quando seu humor muda, você vê isso como corporal, mental ou ambos?",
+     "c": "Perceba como uma boa noite de descanso ou uma caminhada muda seu jeito de pensar."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "I think, therefore I am",
+     "g": "Follow Descartes as he doubted everything until he reached one certain truth.",
+     "p": [
+      "René Descartes was a French thinker of the 17th century who wanted knowledge that could not be shaken.",
+      "He tried doubting everything he could, but noticed that the doubter must exist in order to doubt.",
+      "So he wrote: I think, therefore I am, a firm starting point from which to rebuild knowledge."
+     ],
+     "q": "What is one thing you feel completely sure of, and what makes you so sure?",
+     "c": "Pick a belief, doubt it for a minute, and see which part still stands firm."
+    },
+    "de": {
+     "t": "Ich denke, also bin ich",
+     "g": "Folge Descartes, der alles anzweifelte, bis er eine gewisse Wahrheit fand.",
+     "p": [
+      "René Descartes war ein französischer Denker des 17. Jahrhunderts, der Wissen suchte, das nicht zu erschüttern ist.",
+      "Er zweifelte an allem Möglichen, bemerkte aber, dass der Zweifelnde existieren muss, um zu zweifeln.",
+      "So schrieb er: Ich denke, also bin ich, ein fester Ausgangspunkt, um Wissen neu aufzubauen."
+     ],
+     "q": "Wessen bist du dir ganz sicher, und was macht dich so sicher?",
+     "c": "Wähle eine Überzeugung, zweifle eine Minute an ihr und sieh, welcher Teil standhält."
+    },
+    "es": {
+     "t": "Pienso, luego existo",
+     "g": "Sigue a Descartes mientras duda de todo hasta llegar a una verdad cierta.",
+     "p": [
+      "René Descartes fue un pensador francés del siglo XVII que buscaba un conocimiento imposible de sacudir.",
+      "Intentó dudar de todo lo posible, pero notó que quien duda debe existir para poder dudar.",
+      "Así escribió: pienso, luego existo, un punto de partida firme para reconstruir el conocimiento."
+     ],
+     "q": "¿De qué cosa estás completamente seguro y qué te hace estarlo?",
+     "c": "Elige una creencia, dúdala un minuto y observa qué parte sigue firme."
+    },
+    "fr": {
+     "t": "Je pense, donc je suis",
+     "g": "Suis Descartes qui douta de tout jusqu'à atteindre une vérité certaine.",
+     "p": [
+      "René Descartes, penseur français du XVIIe siècle, cherchait un savoir impossible à ébranler.",
+      "Il tenta de douter de tout, mais remarqua que celui qui doute doit exister pour pouvoir douter.",
+      "Il écrivit donc : je pense, donc je suis, un point de départ solide pour rebâtir le savoir."
+     ],
+     "q": "De quoi es-tu absolument certain, et qu'est-ce qui t'en rend si sûr ?",
+     "c": "Choisis une conviction, doute-en une minute et vois quelle partie tient bon."
+    },
+    "it": {
+     "t": "Penso, dunque sono",
+     "g": "Segui Descartes mentre dubita di tutto fino a raggiungere una verità certa.",
+     "p": [
+      "René Descartes fu un pensatore francese del Seicento che cercava una conoscenza incrollabile.",
+      "Provò a dubitare di tutto, ma notò che chi dubita deve esistere per poter dubitare.",
+      "Scrisse così: penso, dunque sono, un punto di partenza saldo per ricostruire la conoscenza."
+     ],
+     "q": "Di cosa sei assolutamente sicuro, e cosa ti rende così sicuro?",
+     "c": "Scegli una convinzione, dubitane per un minuto e vedi quale parte regge."
+    },
+    "pt": {
+     "t": "Penso, logo existo",
+     "g": "Acompanha Descartes enquanto duvida de tudo até chegar a uma verdade certa.",
+     "p": [
+      "René Descartes foi um pensador francês do século XVII que procurava um conhecimento inabalável.",
+      "Tentou duvidar de tudo, mas reparou que quem duvida tem de existir para poder duvidar.",
+      "Escreveu então: penso, logo existo, um ponto de partida firme para reconstruir o conhecimento."
+     ],
+     "q": "De que coisa estás totalmente seguro e o que te dá tanta certeza?",
+     "c": "Escolhe uma crença, duvida dela um minuto e vê que parte se mantém firme."
+    },
+    "pt_BR": {
+     "t": "Penso, logo existo",
+     "g": "Acompanhe Descartes enquanto ele duvida de tudo até chegar a uma verdade certa.",
+     "p": [
+      "René Descartes foi um pensador francês do século XVII que buscava um conhecimento inabalável.",
+      "Ele tentou duvidar de tudo, mas percebeu que quem duvida precisa existir para poder duvidar.",
+      "Então escreveu: penso, logo existo, um ponto de partida firme para reconstruir o conhecimento."
+     ],
+     "q": "De que coisa você está totalmente seguro e o que dá tanta certeza?",
+     "c": "Escolha uma crença, duvide dela por um minuto e veja que parte continua firme."
+    }
+   }
+  }
+ ]
+}

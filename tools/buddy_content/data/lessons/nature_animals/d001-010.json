@@ -1,0 +1,835 @@
+{
+ "topic": "nature_animals",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What counts as nature?",
+     "g": "See nature as both living things and the non-living parts they depend on.",
+     "p": [
+      "Nature includes living things like plants, fungi and animals, plus soil, water, air and rocks.",
+      "Living and non-living parts are linked: a tree needs soil, rain and sunlight to grow.",
+      "Even a crack in a pavement can hold moss, ants and seeds, so nature is everywhere."
+     ],
+     "q": "When you think of nature, what place comes to mind first for you?",
+     "c": "Look out of a window and list three living and three non-living things you can see."
+    },
+    "de": {
+     "t": "Was zählt alles zur Natur?",
+     "g": "Natur als Lebewesen und als die unbelebten Dinge verstehen, von denen sie abhängen.",
+     "p": [
+      "Zur Natur gehören Pflanzen, Pilze und Tiere, aber auch Boden, Wasser, Luft und Gestein.",
+      "Belebtes und Unbelebtes hängen zusammen: Ein Baum braucht Erde, Regen und Sonnenlicht.",
+      "Selbst eine Ritze im Gehweg kann Moos, Ameisen und Samen beherbergen. Natur ist überall."
+     ],
+     "q": "Welcher Ort fällt dir als Erstes ein, wenn du an Natur denkst?",
+     "c": "Schau aus dem Fenster und notiere drei lebende und drei unbelebte Dinge, die du siehst."
+    },
+    "es": {
+     "t": "¿Qué es la naturaleza?",
+     "g": "Ver la naturaleza como seres vivos y también las partes no vivas de las que dependen.",
+     "p": [
+      "La naturaleza incluye plantas, hongos y animales, y también suelo, agua, aire y rocas.",
+      "Lo vivo y lo no vivo están unidos: un árbol necesita tierra, lluvia y luz del sol.",
+      "Hasta una grieta en la acera puede tener musgo, hormigas y semillas: la naturaleza está en todas partes."
+     ],
+     "q": "Cuando piensas en la naturaleza, ¿qué lugar te viene primero a la mente?",
+     "c": "Mira por una ventana y anota tres cosas vivas y tres no vivas que veas."
+    },
+    "fr": {
+     "t": "Qu'est-ce que la nature ?",
+     "g": "Voir la nature comme les êtres vivants et les éléments non vivants dont ils dépendent.",
+     "p": [
+      "La nature, ce sont les plantes, les champignons et les animaux, mais aussi le sol, l'eau, l'air et les roches.",
+      "Le vivant et le non-vivant sont liés : un arbre a besoin de terre, de pluie et de soleil.",
+      "Même une fissure dans un trottoir peut abriter mousse, fourmis et graines : la nature est partout."
+     ],
+     "q": "Quand tu penses à la nature, quel lieu te vient en premier à l'esprit ?",
+     "c": "Regarde par une fenêtre et note trois choses vivantes et trois non vivantes."
+    },
+    "it": {
+     "t": "Che cos'è la natura?",
+     "g": "Vedere la natura come esseri viventi e come le parti non viventi da cui dipendono.",
+     "p": [
+      "La natura comprende piante, funghi e animali, ma anche suolo, acqua, aria e rocce.",
+      "Vivente e non vivente sono collegati: un albero ha bisogno di terra, pioggia e luce solare.",
+      "Anche una crepa nel marciapiede può ospitare muschio, formiche e semi: la natura è ovunque."
+     ],
+     "q": "Quando pensi alla natura, qual è il primo luogo che ti viene in mente?",
+     "c": "Guarda fuori da una finestra e annota tre cose viventi e tre non viventi."
+    },
+    "pt": {
+     "t": "O que conta como natureza?",
+     "g": "Ver a natureza como seres vivos e também as partes não vivas de que dependem.",
+     "p": [
+      "A natureza inclui plantas, fungos e animais, mas também solo, água, ar e rochas.",
+      "O vivo e o não vivo estão ligados: uma árvore precisa de terra, chuva e luz do sol.",
+      "Até uma fenda no passeio pode ter musgo, formigas e sementes: a natureza está em todo o lado."
+     ],
+     "q": "Quando pensas em natureza, que lugar te vem primeiro à cabeça?",
+     "c": "Olha por uma janela e aponta três coisas vivas e três não vivas que consegues ver."
+    },
+    "pt_BR": {
+     "t": "O que conta como natureza?",
+     "g": "Enxergar a natureza como seres vivos e também as partes não vivas das quais eles dependem.",
+     "p": [
+      "A natureza inclui plantas, fungos e animais, e também solo, água, ar e rochas.",
+      "O vivo e o não vivo estão ligados: uma árvore precisa de terra, chuva e luz do sol.",
+      "Até uma rachadura na calçada pode ter musgo, formigas e sementes: a natureza está em toda parte."
+     ],
+     "q": "Quando você pensa em natureza, qual lugar vem primeiro à sua cabeça?",
+     "c": "Olhe por uma janela e anote três coisas vivas e três não vivas que você vê."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The seven signs of life",
+     "g": "Learn the seven features scientists use to tell if something is alive.",
+     "p": [
+      "Living things move, breathe (respire), sense, grow, reproduce, excrete waste and feed.",
+      "A plant moves too: leaves turn slowly towards the light, and roots grow towards water.",
+      "A flame grows and moves but cannot sense or reproduce on its own, so it is not alive."
+     ],
+     "q": "Which of the seven signs do you find most surprising in plants?",
+     "c": "Watch a houseplant or tree for a minute and find at least two signs of life in it."
+    },
+    "de": {
+     "t": "Die sieben Kennzeichen des Lebens",
+     "g": "Die sieben Merkmale kennenlernen, an denen Forschende Lebendiges erkennen.",
+     "p": [
+      "Lebewesen bewegen sich, atmen, nehmen Reize wahr, wachsen, vermehren sich, scheiden aus und ernähren sich.",
+      "Auch Pflanzen bewegen sich: Blätter drehen sich langsam zum Licht, Wurzeln wachsen zum Wasser.",
+      "Eine Flamme wächst und bewegt sich, kann aber weder wahrnehmen noch sich vermehren. Sie lebt nicht."
+     ],
+     "q": "Welches der sieben Kennzeichen überrascht dich bei Pflanzen am meisten?",
+     "c": "Beobachte eine Zimmerpflanze oder einen Baum eine Minute lang und finde zwei Lebenszeichen."
+    },
+    "es": {
+     "t": "Las siete señales de la vida",
+     "g": "Conocer los siete rasgos que usan los científicos para saber si algo está vivo.",
+     "p": [
+      "Los seres vivos se mueven, respiran, perciben, crecen, se reproducen, excretan y se alimentan.",
+      "Las plantas también se mueven: sus hojas giran despacio hacia la luz y sus raíces buscan el agua.",
+      "Una llama crece y se mueve, pero no percibe ni se reproduce por sí sola, así que no está viva."
+     ],
+     "q": "¿Cuál de las siete señales te sorprende más en las plantas?",
+     "c": "Observa una planta o un árbol durante un minuto y encuentra al menos dos señales de vida."
+    },
+    "fr": {
+     "t": "Les sept signes de la vie",
+     "g": "Découvrir les sept critères qu'utilisent les scientifiques pour savoir si une chose est vivante.",
+     "p": [
+      "Les êtres vivants bougent, respirent, perçoivent, grandissent, se reproduisent, excrètent et se nourrissent.",
+      "Les plantes bougent aussi : les feuilles se tournent lentement vers la lumière, les racines vers l'eau.",
+      "Une flamme grandit et bouge, mais ne perçoit rien et ne se reproduit pas seule : elle n'est pas vivante."
+     ],
+     "q": "Lequel des sept signes te surprend le plus chez les plantes ?",
+     "c": "Observe une plante ou un arbre pendant une minute et trouve au moins deux signes de vie."
+    },
+    "it": {
+     "t": "I sette segni della vita",
+     "g": "Conoscere le sette caratteristiche che gli scienziati usano per capire se qualcosa è vivo.",
+     "p": [
+      "Gli esseri viventi si muovono, respirano, percepiscono, crescono, si riproducono, espellono scarti e si nutrono.",
+      "Anche le piante si muovono: le foglie si girano piano verso la luce e le radici crescono verso l'acqua.",
+      "Una fiamma cresce e si muove, ma non percepisce né si riproduce da sola: quindi non è viva."
+     ],
+     "q": "Quale dei sette segni ti sorprende di più nelle piante?",
+     "c": "Osserva una pianta o un albero per un minuto e trova almeno due segni di vita."
+    },
+    "pt": {
+     "t": "Os sete sinais de vida",
+     "g": "Conhecer as sete características que os cientistas usam para saber se algo está vivo.",
+     "p": [
+      "Os seres vivos movem-se, respiram, sentem, crescem, reproduzem-se, excretam e alimentam-se.",
+      "As plantas também se movem: as folhas viram-se devagar para a luz e as raízes crescem para a água.",
+      "Uma chama cresce e mexe-se, mas não sente nem se reproduz sozinha, por isso não está viva."
+     ],
+     "q": "Qual dos sete sinais te surpreende mais nas plantas?",
+     "c": "Observa uma planta ou árvore durante um minuto e encontra pelo menos dois sinais de vida."
+    },
+    "pt_BR": {
+     "t": "Os sete sinais da vida",
+     "g": "Conhecer as sete características que os cientistas usam para saber se algo está vivo.",
+     "p": [
+      "Os seres vivos se movem, respiram, sentem, crescem, se reproduzem, excretam e se alimentam.",
+      "As plantas também se movem: as folhas giram devagar em direção à luz e as raízes crescem rumo à água.",
+      "Uma chama cresce e se mexe, mas não sente nem se reproduz sozinha, então não está viva."
+     ],
+     "q": "Qual dos sete sinais mais te surpreende nas plantas?",
+     "c": "Observe uma planta ou árvore por um minuto e encontre pelo menos dois sinais de vida."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sorting life into kingdoms",
+     "g": "Understand how biologists sort living things into big groups by shared features.",
+     "p": [
+      "Animals eat food and usually move; plants make their own food from sunlight.",
+      "Fungi, like mushrooms, absorb food from their surroundings and are a kingdom of their own.",
+      "Microbes such as bacteria are tiny single cells, yet they are the most numerous living things."
+     ],
+     "q": "If you could add one living thing to each kingdom right now, what would you pick?",
+     "c": "Find one example from each group near you: an animal, a plant and a fungus or mould."
+    },
+    "de": {
+     "t": "Das Leben in Reiche ordnen",
+     "g": "Verstehen, wie Biologen Lebewesen nach gemeinsamen Merkmalen in große Gruppen einteilen.",
+     "p": [
+      "Tiere nehmen Nahrung auf und bewegen sich meist; Pflanzen stellen ihre Nahrung aus Sonnenlicht her.",
+      "Pilze nehmen Nährstoffe aus ihrer Umgebung auf und bilden ein eigenes Reich.",
+      "Mikroben wie Bakterien sind winzige Einzeller und doch die zahlreichsten Lebewesen überhaupt."
+     ],
+     "q": "Welches Lebewesen würdest du jetzt spontan jedem Reich zuordnen?",
+     "c": "Finde in deiner Nähe je ein Beispiel: ein Tier, eine Pflanze und einen Pilz oder Schimmel."
+    },
+    "es": {
+     "t": "Ordenar la vida en reinos",
+     "g": "Entender cómo los biólogos agrupan a los seres vivos según rasgos compartidos.",
+     "p": [
+      "Los animales comen alimento y suelen moverse; las plantas fabrican su comida con la luz del sol.",
+      "Los hongos, como las setas, absorben su alimento del entorno y forman un reino propio.",
+      "Los microbios, como las bacterias, son células diminutas, pero son los seres vivos más numerosos."
+     ],
+     "q": "Si pudieras añadir ahora un ser vivo a cada reino, ¿cuál elegirías?",
+     "c": "Busca cerca de ti un ejemplo de cada grupo: un animal, una planta y un hongo o moho."
+    },
+    "fr": {
+     "t": "Classer le vivant en règnes",
+     "g": "Comprendre comment les biologistes rangent les êtres vivants selon leurs points communs.",
+     "p": [
+      "Les animaux mangent et bougent souvent ; les plantes fabriquent leur nourriture grâce au soleil.",
+      "Les champignons absorbent leur nourriture dans leur milieu et forment un règne à part.",
+      "Les microbes comme les bactéries sont de minuscules cellules, mais ce sont les vivants les plus nombreux."
+     ],
+     "q": "Si tu devais ajouter un être vivant à chaque règne, lequel choisirais-tu ?",
+     "c": "Trouve près de toi un exemple de chaque groupe : un animal, une plante et un champignon ou une moisissure."
+    },
+    "it": {
+     "t": "Ordinare la vita in regni",
+     "g": "Capire come i biologi raggruppano gli esseri viventi in base a caratteristiche comuni.",
+     "p": [
+      "Gli animali mangiano e di solito si muovono; le piante producono il cibo con la luce del sole.",
+      "I funghi assorbono nutrimento dall'ambiente e formano un regno tutto loro.",
+      "I microbi come i batteri sono minuscole cellule, eppure sono gli esseri viventi più numerosi."
+     ],
+     "q": "Se dovessi aggiungere un essere vivente a ogni regno, quale sceglieresti?",
+     "c": "Trova vicino a te un esempio per gruppo: un animale, una pianta e un fungo o una muffa."
+    },
+    "pt": {
+     "t": "Organizar a vida em reinos",
+     "g": "Perceber como os biólogos agrupam os seres vivos por características partilhadas.",
+     "p": [
+      "Os animais comem e costumam mover-se; as plantas fabricam o seu alimento com a luz do sol.",
+      "Os fungos, como os cogumelos, absorvem alimento do ambiente e formam um reino próprio.",
+      "Os micróbios, como as bactérias, são células minúsculas, mas são os seres vivos mais numerosos."
+     ],
+     "q": "Se pudesses juntar agora um ser vivo a cada reino, qual escolherias?",
+     "c": "Encontra perto de ti um exemplo de cada grupo: um animal, uma planta e um fungo ou bolor."
+    },
+    "pt_BR": {
+     "t": "Organizando a vida em reinos",
+     "g": "Entender como os biólogos agrupam os seres vivos por características em comum.",
+     "p": [
+      "Os animais comem e geralmente se movem; as plantas fabricam o próprio alimento com a luz do sol.",
+      "Os fungos, como os cogumelos, absorvem alimento do ambiente e formam um reino próprio.",
+      "Os micróbios, como as bactérias, são células minúsculas, mas são os seres vivos mais numerosos."
+     ],
+     "q": "Se você pudesse adicionar agora um ser vivo a cada reino, qual escolheria?",
+     "c": "Encontre perto de você um exemplo de cada grupo: um animal, uma planta e um fungo ou mofo."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Vertebrates and invertebrates",
+     "g": "Discover the big split between animals with a backbone and those without one.",
+     "p": [
+      "Vertebrates have a backbone: mammals, birds, reptiles, amphibians and fish.",
+      "Invertebrates have no backbone, and they make up about 97 percent of all animal species.",
+      "Insects, spiders, snails, worms and jellyfish are all invertebrates, often with clever body plans."
+     ],
+     "q": "Do you feel more curious about animals with a backbone or without one? Why?",
+     "c": "Spot one vertebrate and one invertebrate today, even if it is a pigeon and an ant."
+    },
+    "de": {
+     "t": "Wirbeltiere und Wirbellose",
+     "g": "Die große Trennung zwischen Tieren mit und ohne Wirbelsäule entdecken.",
+     "p": [
+      "Wirbeltiere haben eine Wirbelsäule: Säugetiere, Vögel, Reptilien, Amphibien und Fische.",
+      "Wirbellose haben keine Wirbelsäule und machen etwa 97 Prozent aller Tierarten aus.",
+      "Insekten, Spinnen, Schnecken, Würmer und Quallen sind Wirbellose, oft mit raffiniertem Körperbau."
+     ],
+     "q": "Machen dich Tiere mit oder ohne Wirbelsäule neugieriger? Warum?",
+     "c": "Entdecke heute ein Wirbeltier und ein wirbelloses Tier, und sei es eine Taube und eine Ameise."
+    },
+    "es": {
+     "t": "Vertebrados e invertebrados",
+     "g": "Descubrir la gran división entre animales con columna vertebral y sin ella.",
+     "p": [
+      "Los vertebrados tienen columna: mamíferos, aves, reptiles, anfibios y peces.",
+      "Los invertebrados no tienen columna y son cerca del 97 por ciento de todas las especies animales.",
+      "Insectos, arañas, caracoles, gusanos y medusas son invertebrados, a menudo con cuerpos ingeniosos."
+     ],
+     "q": "¿Te dan más curiosidad los animales con columna o sin ella? ¿Por qué?",
+     "c": "Encuentra hoy un vertebrado y un invertebrado, aunque sean una paloma y una hormiga."
+    },
+    "fr": {
+     "t": "Vertébrés et invertébrés",
+     "g": "Découvrir la grande séparation entre les animaux avec ou sans colonne vertébrale.",
+     "p": [
+      "Les vertébrés ont une colonne vertébrale : mammifères, oiseaux, reptiles, amphibiens et poissons.",
+      "Les invertébrés n'en ont pas et représentent environ 97 % des espèces animales.",
+      "Insectes, araignées, escargots, vers et méduses sont des invertébrés aux corps souvent ingénieux."
+     ],
+     "q": "Les animaux avec ou sans colonne vertébrale, lesquels t'intriguent le plus ? Pourquoi ?",
+     "c": "Repère aujourd'hui un vertébré et un invertébré, même un pigeon et une fourmi."
+    },
+    "it": {
+     "t": "Vertebrati e invertebrati",
+     "g": "Scoprire la grande divisione tra animali con la colonna vertebrale e senza.",
+     "p": [
+      "I vertebrati hanno la colonna: mammiferi, uccelli, rettili, anfibi e pesci.",
+      "Gli invertebrati non ce l'hanno e sono circa il 97 per cento di tutte le specie animali.",
+      "Insetti, ragni, lumache, vermi e meduse sono invertebrati, spesso con corpi ingegnosi."
+     ],
+     "q": "Ti incuriosiscono di più gli animali con la colonna o senza? Perché?",
+     "c": "Trova oggi un vertebrato e un invertebrato, anche solo un piccione e una formica."
+    },
+    "pt": {
+     "t": "Vertebrados e invertebrados",
+     "g": "Descobrir a grande divisão entre animais com coluna vertebral e sem ela.",
+     "p": [
+      "Os vertebrados têm coluna: mamíferos, aves, répteis, anfíbios e peixes.",
+      "Os invertebrados não têm coluna e são cerca de 97 por cento de todas as espécies animais.",
+      "Insetos, aranhas, caracóis, minhocas e alforrecas são invertebrados, muitas vezes com corpos engenhosos."
+     ],
+     "q": "Ficas mais curioso com animais com coluna ou sem ela? Porquê?",
+     "c": "Repara hoje num vertebrado e num invertebrado, mesmo que sejam um pombo e uma formiga."
+    },
+    "pt_BR": {
+     "t": "Vertebrados e invertebrados",
+     "g": "Descobrir a grande divisão entre animais com coluna vertebral e sem ela.",
+     "p": [
+      "Os vertebrados têm coluna: mamíferos, aves, répteis, anfíbios e peixes.",
+      "Os invertebrados não têm coluna e são cerca de 97 por cento de todas as espécies animais.",
+      "Insetos, aranhas, caracóis, minhocas e águas-vivas são invertebrados, muitas vezes com corpos engenhosos."
+     ],
+     "q": "Você tem mais curiosidade por animais com coluna ou sem? Por quê?",
+     "c": "Repare hoje em um vertebrado e um invertebrado, mesmo que sejam um pombo e uma formiga."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet the mammals",
+     "g": "Learn what all mammals share, from tiny shrews to giant blue whales.",
+     "p": [
+      "Mammals have hair or fur at some stage of life and feed their young with milk.",
+      "They are warm-blooded, keeping a steady body heat in cold and hot weather.",
+      "The blue whale is the largest animal ever known, and it is a mammal just like a mouse."
+     ],
+     "q": "Which mammal do you find most amazing, and what makes it special to you?",
+     "c": "Find a mammal today, a cat, dog, squirrel or yourself, and notice its fur or hair."
+    },
+    "de": {
+     "t": "Die Säugetiere kennenlernen",
+     "g": "Erfahren, was alle Säugetiere gemeinsam haben, von der Spitzmaus bis zum Blauwal.",
+     "p": [
+      "Säugetiere haben in irgendeiner Lebensphase Haare oder Fell und säugen ihre Jungen mit Milch.",
+      "Sie sind gleichwarm und halten ihre Körpertemperatur bei Kälte und Hitze konstant.",
+      "Der Blauwal ist das größte bekannte Tier aller Zeiten und ein Säugetier wie eine Maus."
+     ],
+     "q": "Welches Säugetier findest du am erstaunlichsten, und warum?",
+     "c": "Finde heute ein Säugetier, Katze, Hund, Eichhörnchen oder dich selbst, und achte auf Fell oder Haare."
+    },
+    "es": {
+     "t": "Conoce a los mamíferos",
+     "g": "Aprender qué comparten todos los mamíferos, de la musaraña a la ballena azul.",
+     "p": [
+      "Los mamíferos tienen pelo en alguna etapa de su vida y alimentan a sus crías con leche.",
+      "Son de sangre caliente: mantienen su temperatura estable con frío o con calor.",
+      "La ballena azul es el animal más grande conocido, y es tan mamífero como un ratón."
+     ],
+     "q": "¿Qué mamífero te parece más asombroso y por qué?",
+     "c": "Encuentra hoy un mamífero, un gato, un perro, una ardilla o tú mismo, y fíjate en su pelo."
+    },
+    "fr": {
+     "t": "À la rencontre des mammifères",
+     "g": "Apprendre ce que partagent tous les mammifères, de la musaraigne à la baleine bleue.",
+     "p": [
+      "Les mammifères ont des poils à un moment de leur vie et nourrissent leurs petits avec du lait.",
+      "Ils sont à sang chaud et gardent une température stable par temps froid ou chaud.",
+      "La baleine bleue est le plus grand animal connu, et c'est un mammifère comme la souris."
+     ],
+     "q": "Quel mammifère te fascine le plus, et pourquoi ?",
+     "c": "Trouve aujourd'hui un mammifère, chat, chien, écureuil ou toi-même, et observe ses poils."
+    },
+    "it": {
+     "t": "Conosciamo i mammiferi",
+     "g": "Scoprire cosa hanno in comune tutti i mammiferi, dal toporagno alla balenottera azzurra.",
+     "p": [
+      "I mammiferi hanno peli in qualche fase della vita e nutrono i piccoli con il latte.",
+      "Sono a sangue caldo e mantengono stabile la temperatura sia al freddo che al caldo.",
+      "La balenottera azzurra è l'animale più grande mai conosciuto, ed è un mammifero come il topo."
+     ],
+     "q": "Quale mammifero trovi più straordinario, e perché?",
+     "c": "Trova oggi un mammifero, gatto, cane, scoiattolo o te stesso, e osserva il suo pelo."
+    },
+    "pt": {
+     "t": "Conhecer os mamíferos",
+     "g": "Aprender o que todos os mamíferos partilham, do musaranho à baleia-azul.",
+     "p": [
+      "Os mamíferos têm pelo nalguma fase da vida e alimentam as crias com leite.",
+      "São de sangue quente e mantêm a temperatura do corpo estável, com frio ou calor.",
+      "A baleia-azul é o maior animal alguma vez conhecido, e é um mamífero tal como um rato."
+     ],
+     "q": "Que mamífero achas mais espantoso, e porquê?",
+     "c": "Encontra hoje um mamífero, um gato, um cão, um esquilo ou tu próprio, e repara no pelo."
+    },
+    "pt_BR": {
+     "t": "Conheça os mamíferos",
+     "g": "Aprender o que todos os mamíferos têm em comum, do musaranho à baleia-azul.",
+     "p": [
+      "Os mamíferos têm pelos em alguma fase da vida e alimentam os filhotes com leite.",
+      "São de sangue quente e mantêm a temperatura do corpo estável, no frio ou no calor.",
+      "A baleia-azul é o maior animal já conhecido, e é um mamífero assim como um rato."
+     ],
+     "q": "Qual mamífero você acha mais incrível, e por quê?",
+     "c": "Encontre hoje um mamífero, um gato, um cachorro, um esquilo ou você mesmo, e repare nos pelos."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet the birds",
+     "g": "Discover the features that make a bird a bird, from feathers to eggs.",
+     "p": [
+      "Only birds have feathers, which keep them warm, help them fly and show off bright colours.",
+      "Birds have beaks instead of teeth, and many have light, hollow bones that help with flight.",
+      "Every bird lays eggs, from the tiny hummingbird egg to the huge ostrich egg."
+     ],
+     "q": "Is there a bird you love to watch or listen to? What do you like about it?",
+     "c": "Watch one bird for two minutes and note its beak shape and how it moves."
+    },
+    "de": {
+     "t": "Die Vögel kennenlernen",
+     "g": "Die Merkmale entdecken, die einen Vogel ausmachen, von Federn bis zu Eiern.",
+     "p": [
+      "Nur Vögel haben Federn: Sie wärmen, ermöglichen das Fliegen und zeigen leuchtende Farben.",
+      "Vögel haben Schnäbel statt Zähne, und viele haben leichte, hohle Knochen, die beim Fliegen helfen.",
+      "Jeder Vogel legt Eier, vom winzigen Kolibri-Ei bis zum riesigen Straußenei."
+     ],
+     "q": "Gibt es einen Vogel, den du gern beobachtest oder hörst? Was gefällt dir an ihm?",
+     "c": "Beobachte einen Vogel zwei Minuten lang und achte auf seine Schnabelform und Bewegung."
+    },
+    "es": {
+     "t": "Conoce a las aves",
+     "g": "Descubrir los rasgos que hacen que un ave sea un ave, de las plumas a los huevos.",
+     "p": [
+      "Solo las aves tienen plumas, que dan calor, ayudan a volar y lucen colores vivos.",
+      "Las aves tienen pico en lugar de dientes, y muchas tienen huesos ligeros y huecos para volar.",
+      "Todas las aves ponen huevos, desde el diminuto del colibrí hasta el enorme del avestruz."
+     ],
+     "q": "¿Hay algún ave que te guste mirar o escuchar? ¿Qué te gusta de ella?",
+     "c": "Observa un ave durante dos minutos y fíjate en la forma de su pico y en cómo se mueve."
+    },
+    "fr": {
+     "t": "À la rencontre des oiseaux",
+     "g": "Découvrir ce qui fait qu'un oiseau est un oiseau, des plumes jusqu'aux œufs.",
+     "p": [
+      "Seuls les oiseaux ont des plumes, qui tiennent chaud, aident à voler et affichent de belles couleurs.",
+      "Les oiseaux ont un bec au lieu de dents, et beaucoup ont des os légers et creux utiles au vol.",
+      "Tous les oiseaux pondent des œufs, du minuscule œuf de colibri à l'énorme œuf d'autruche."
+     ],
+     "q": "Y a-t-il un oiseau que tu aimes regarder ou écouter ? Qu'aimes-tu chez lui ?",
+     "c": "Observe un oiseau pendant deux minutes et note la forme de son bec et sa façon de bouger."
+    },
+    "it": {
+     "t": "Conosciamo gli uccelli",
+     "g": "Scoprire cosa rende un uccello un uccello, dalle piume alle uova.",
+     "p": [
+      "Solo gli uccelli hanno le piume, che scaldano, aiutano a volare e sfoggiano colori vivaci.",
+      "Gli uccelli hanno il becco al posto dei denti, e molti hanno ossa leggere e cave che aiutano il volo.",
+      "Tutti gli uccelli depongono uova, dal minuscolo uovo del colibrì a quello enorme dello struzzo."
+     ],
+     "q": "C'è un uccello che ami guardare o ascoltare? Che cosa ti piace di lui?",
+     "c": "Osserva un uccello per due minuti e nota la forma del becco e come si muove."
+    },
+    "pt": {
+     "t": "Conhecer as aves",
+     "g": "Descobrir o que faz de uma ave uma ave, das penas aos ovos.",
+     "p": [
+      "Só as aves têm penas, que aquecem, ajudam a voar e exibem cores vivas.",
+      "As aves têm bico em vez de dentes, e muitas têm ossos leves e ocos que ajudam a voar.",
+      "Todas as aves põem ovos, do minúsculo ovo do beija-flor ao enorme ovo da avestruz."
+     ],
+     "q": "Há alguma ave que gostes de ver ou ouvir? O que te agrada nela?",
+     "c": "Observa uma ave durante dois minutos e repara na forma do bico e no modo como se mexe."
+    },
+    "pt_BR": {
+     "t": "Conheça as aves",
+     "g": "Descobrir o que faz uma ave ser uma ave, das penas aos ovos.",
+     "p": [
+      "Só as aves têm penas, que aquecem, ajudam a voar e exibem cores vivas.",
+      "As aves têm bico em vez de dentes, e muitas têm ossos leves e ocos que ajudam no voo.",
+      "Todas as aves botam ovos, do minúsculo ovo do beija-flor ao enorme ovo do avestruz."
+     ],
+     "q": "Tem alguma ave que você gosta de ver ou ouvir? O que você curte nela?",
+     "c": "Observe uma ave por dois minutos e repare no formato do bico e em como ela se move."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet the reptiles",
+     "g": "Get to know lizards, snakes, turtles and crocodiles and what they share.",
+     "p": [
+      "Reptiles have dry, scaly skin that keeps water in, so they can live in dry places.",
+      "Most lay eggs with tough shells on land, so their young do not need ponds to hatch.",
+      "They warm up by basking in the sun and cool down in shade, a smart way to save energy."
+     ],
+     "q": "Have you ever seen a lizard or turtle in the wild? What was it doing?",
+     "c": "Look for a sunny wall or rock today and think about which reptile would love to bask there."
+    },
+    "de": {
+     "t": "Die Reptilien kennenlernen",
+     "g": "Eidechsen, Schlangen, Schildkröten und Krokodile und ihre Gemeinsamkeiten kennenlernen.",
+     "p": [
+      "Reptilien haben trockene, schuppige Haut, die Wasser speichert, deshalb leben sie auch an trockenen Orten.",
+      "Die meisten legen Eier mit fester Schale an Land, ihre Jungen brauchen also keinen Teich.",
+      "Sie wärmen sich in der Sonne und kühlen im Schatten ab, eine clevere Art, Energie zu sparen."
+     ],
+     "q": "Hast du schon einmal eine Eidechse oder Schildkröte in freier Natur gesehen? Was tat sie?",
+     "c": "Such dir heute eine sonnige Mauer und überlege, welches Reptil sich dort gern sonnen würde."
+    },
+    "es": {
+     "t": "Conoce a los reptiles",
+     "g": "Conocer a lagartos, serpientes, tortugas y cocodrilos y lo que tienen en común.",
+     "p": [
+      "Los reptiles tienen piel seca y con escamas que retiene el agua, por eso viven en lugares secos.",
+      "La mayoría pone huevos de cáscara dura en tierra, así que sus crías no necesitan charcas.",
+      "Se calientan tomando el sol y se refrescan a la sombra, una forma lista de ahorrar energía."
+     ],
+     "q": "¿Has visto alguna vez un lagarto o una tortuga en libertad? ¿Qué hacía?",
+     "c": "Busca hoy un muro o una roca al sol y piensa qué reptil disfrutaría calentándose allí."
+    },
+    "fr": {
+     "t": "À la rencontre des reptiles",
+     "g": "Découvrir lézards, serpents, tortues et crocodiles et ce qu'ils ont en commun.",
+     "p": [
+      "Les reptiles ont une peau sèche et écailleuse qui garde l'eau : ils vivent même dans des lieux arides.",
+      "La plupart pondent sur la terre ferme des œufs à coquille solide : pas besoin de mare pour éclore.",
+      "Ils se réchauffent au soleil et se rafraîchissent à l'ombre, une façon maligne d'économiser l'énergie."
+     ],
+     "q": "As-tu déjà vu un lézard ou une tortue dans la nature ? Que faisait-il ?",
+     "c": "Cherche aujourd'hui un mur ou un rocher ensoleillé et imagine quel reptile aimerait s'y chauffer."
+    },
+    "it": {
+     "t": "Conosciamo i rettili",
+     "g": "Conoscere lucertole, serpenti, tartarughe e coccodrilli e cosa hanno in comune.",
+     "p": [
+      "I rettili hanno pelle secca e squamosa che trattiene l'acqua, così vivono anche in luoghi aridi.",
+      "Quasi tutti depongono uova dal guscio robusto sulla terraferma: ai piccoli non serve uno stagno.",
+      "Si scaldano al sole e si rinfrescano all'ombra, un modo furbo per risparmiare energia."
+     ],
+     "q": "Hai mai visto una lucertola o una tartaruga in natura? Che cosa faceva?",
+     "c": "Cerca oggi un muretto o una roccia al sole e immagina quale rettile ci starebbe volentieri."
+    },
+    "pt": {
+     "t": "Conhecer os répteis",
+     "g": "Conhecer lagartos, serpentes, tartarugas e crocodilos e o que têm em comum.",
+     "p": [
+      "Os répteis têm pele seca e escamosa que guarda a água, por isso vivem até em sítios secos.",
+      "A maioria põe ovos de casca dura em terra, por isso as crias não precisam de charcos.",
+      "Aquecem-se ao sol e arrefecem à sombra, uma forma esperta de poupar energia."
+     ],
+     "q": "Já viste um lagarto ou uma tartaruga em liberdade? O que estava a fazer?",
+     "c": "Procura hoje um muro ou uma pedra ao sol e imagina que réptil gostaria de se aquecer ali."
+    },
+    "pt_BR": {
+     "t": "Conheça os répteis",
+     "g": "Conhecer lagartos, cobras, tartarugas e crocodilos e o que eles têm em comum.",
+     "p": [
+      "Os répteis têm pele seca e escamosa que retém a água, por isso vivem até em lugares secos.",
+      "A maioria bota ovos de casca dura em terra firme, então os filhotes não precisam de lagoas.",
+      "Eles se aquecem ao sol e se refrescam na sombra, um jeito esperto de economizar energia."
+     ],
+     "q": "Você já viu um lagarto ou uma tartaruga na natureza? O que ele estava fazendo?",
+     "c": "Procure hoje um muro ou pedra ao sol e imagine qual réptil adoraria se aquecer ali."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet the amphibians",
+     "g": "Discover frogs, toads, newts and salamanders and their double life.",
+     "p": [
+      "Most amphibians start life in water as larvae with gills, then move onto land as adults.",
+      "Their thin, moist skin lets them take in water and even some oxygen through it.",
+      "Because their skin is so sensitive, healthy frog populations often signal clean water."
+     ],
+     "q": "Have you ever heard frogs singing at night? Where were you?",
+     "c": "Next time you pass a pond or ditch, listen quietly for frog calls for one minute."
+    },
+    "de": {
+     "t": "Die Amphibien kennenlernen",
+     "g": "Frösche, Kröten, Molche und Salamander und ihr Doppelleben entdecken.",
+     "p": [
+      "Die meisten Amphibien beginnen ihr Leben als Larven mit Kiemen im Wasser und gehen später an Land.",
+      "Ihre dünne, feuchte Haut nimmt Wasser und sogar etwas Sauerstoff auf.",
+      "Weil ihre Haut so empfindlich ist, zeigen gesunde Froschbestände oft sauberes Wasser an."
+     ],
+     "q": "Hast du schon einmal Frösche nachts singen hören? Wo warst du da?",
+     "c": "Wenn du an einem Teich oder Graben vorbeikommst, lausche eine Minute still nach Froschrufen."
+    },
+    "es": {
+     "t": "Conoce a los anfibios",
+     "g": "Descubrir ranas, sapos, tritones y salamandras y su doble vida.",
+     "p": [
+      "La mayoría empieza en el agua como larvas con branquias y de adultos pasa a tierra firme.",
+      "Su piel fina y húmeda les permite absorber agua e incluso algo de oxígeno.",
+      "Como su piel es tan sensible, las ranas sanas suelen indicar agua limpia."
+     ],
+     "q": "¿Has oído alguna vez a las ranas cantar de noche? ¿Dónde estabas?",
+     "c": "La próxima vez que pases por una charca, escucha en silencio un minuto por si croan ranas."
+    },
+    "fr": {
+     "t": "À la rencontre des amphibiens",
+     "g": "Découvrir grenouilles, crapauds, tritons et salamandres et leur double vie.",
+     "p": [
+      "La plupart naissent dans l'eau sous forme de larves à branchies, puis vivent sur terre adultes.",
+      "Leur peau fine et humide absorbe l'eau et même un peu d'oxygène.",
+      "Comme leur peau est très sensible, des grenouilles en bonne santé signalent souvent une eau propre."
+     ],
+     "q": "As-tu déjà entendu des grenouilles chanter la nuit ? Où étais-tu ?",
+     "c": "La prochaine fois que tu passes près d'une mare, écoute une minute en silence les chants de grenouilles."
+    },
+    "it": {
+     "t": "Conosciamo gli anfibi",
+     "g": "Scoprire rane, rospi, tritoni e salamandre e la loro doppia vita.",
+     "p": [
+      "Quasi tutti nascono in acqua come larve con branchie e da adulti passano sulla terraferma.",
+      "La loro pelle sottile e umida assorbe acqua e perfino un po' di ossigeno.",
+      "Poiché la pelle è così sensibile, rane in salute spesso indicano acqua pulita."
+     ],
+     "q": "Hai mai sentito le rane cantare di notte? Dove ti trovavi?",
+     "c": "La prossima volta che passi vicino a uno stagno, ascolta in silenzio per un minuto il canto delle rane."
+    },
+    "pt": {
+     "t": "Conhecer os anfíbios",
+     "g": "Descobrir rãs, sapos, tritões e salamandras e a sua vida dupla.",
+     "p": [
+      "A maioria começa a vida na água como larva com guelras e, em adulta, passa para terra.",
+      "A pele fina e húmida deixa-os absorver água e até algum oxigénio.",
+      "Como a pele é muito sensível, rãs saudáveis costumam indicar água limpa."
+     ],
+     "q": "Já ouviste rãs a cantar à noite? Onde estavas?",
+     "c": "Da próxima vez que passares por um charco, escuta em silêncio durante um minuto o coaxar das rãs."
+    },
+    "pt_BR": {
+     "t": "Conheça os anfíbios",
+     "g": "Descobrir rãs, sapos, tritões e salamandras e sua vida dupla.",
+     "p": [
+      "A maioria começa a vida na água como larva com brânquias e, adulta, passa para a terra.",
+      "A pele fina e úmida permite absorver água e até um pouco de oxigênio.",
+      "Como a pele é muito sensível, sapos e rãs saudáveis costumam indicar água limpa."
+     ],
+     "q": "Você já ouviu sapos cantando à noite? Onde você estava?",
+     "c": "Da próxima vez que passar por uma lagoa, escute em silêncio por um minuto o coaxar dos sapos."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet the fish",
+     "g": "Explore fish, the largest and most varied group of vertebrates.",
+     "p": [
+      "Fish breathe with gills that take oxygen from water, and steer with fins.",
+      "There are more than 30,000 known fish species, more than all other vertebrates combined.",
+      "Some fish glow in the deep sea, some climb waterfalls and some can live out of water for hours."
+     ],
+     "q": "If you could swim alongside any fish for a day, which would you choose?",
+     "c": "Next time you see water, a pond, river or aquarium, watch how a fish uses its fins."
+    },
+    "de": {
+     "t": "Die Fische kennenlernen",
+     "g": "Fische erkunden, die größte und vielfältigste Gruppe der Wirbeltiere.",
+     "p": [
+      "Fische atmen mit Kiemen, die Sauerstoff aus dem Wasser holen, und steuern mit Flossen.",
+      "Es gibt über 30.000 bekannte Fischarten, mehr als alle anderen Wirbeltiere zusammen.",
+      "Manche leuchten in der Tiefsee, manche klettern Wasserfälle hinauf, manche überleben Stunden an Land."
+     ],
+     "q": "Mit welchem Fisch würdest du gern einen Tag lang schwimmen?",
+     "c": "Wenn du das nächste Mal Wasser siehst, Teich, Fluss oder Aquarium, achte darauf, wie ein Fisch seine Flossen nutzt."
+    },
+    "es": {
+     "t": "Conoce a los peces",
+     "g": "Explorar los peces, el grupo de vertebrados más grande y variado.",
+     "p": [
+      "Los peces respiran con branquias que toman oxígeno del agua y se orientan con sus aletas.",
+      "Hay más de 30.000 especies de peces conocidas, más que todos los demás vertebrados juntos.",
+      "Algunos brillan en el mar profundo, otros trepan cascadas y otros aguantan horas fuera del agua."
+     ],
+     "q": "Si pudieras nadar un día junto a cualquier pez, ¿cuál elegirías?",
+     "c": "La próxima vez que veas un estanque, un río o un acuario, observa cómo usa un pez sus aletas."
+    },
+    "fr": {
+     "t": "À la rencontre des poissons",
+     "g": "Explorer les poissons, le groupe de vertébrés le plus grand et le plus varié.",
+     "p": [
+      "Les poissons respirent avec des branchies qui prennent l'oxygène de l'eau, et se dirigent avec leurs nageoires.",
+      "On connaît plus de 30 000 espèces de poissons, plus que tous les autres vertébrés réunis.",
+      "Certains brillent dans les abysses, d'autres remontent des cascades, d'autres survivent des heures hors de l'eau."
+     ],
+     "q": "Si tu pouvais nager une journée avec un poisson, lequel choisirais-tu ?",
+     "c": "La prochaine fois que tu vois un étang, une rivière ou un aquarium, observe comment un poisson utilise ses nageoires."
+    },
+    "it": {
+     "t": "Conosciamo i pesci",
+     "g": "Esplorare i pesci, il gruppo di vertebrati più grande e vario.",
+     "p": [
+      "I pesci respirano con branchie che prendono ossigeno dall'acqua e si orientano con le pinne.",
+      "Esistono oltre 30.000 specie di pesci conosciute, più di tutti gli altri vertebrati messi insieme.",
+      "Alcuni brillano negli abissi, altri risalgono cascate, altri resistono ore fuori dall'acqua."
+     ],
+     "q": "Se potessi nuotare un giorno accanto a un pesce, quale sceglieresti?",
+     "c": "La prossima volta che vedi uno stagno, un fiume o un acquario, osserva come un pesce usa le pinne."
+    },
+    "pt": {
+     "t": "Conhecer os peixes",
+     "g": "Explorar os peixes, o grupo de vertebrados maior e mais variado.",
+     "p": [
+      "Os peixes respiram por guelras que retiram oxigénio da água e orientam-se com as barbatanas.",
+      "Há mais de 30 000 espécies de peixes conhecidas, mais do que todos os outros vertebrados juntos.",
+      "Alguns brilham no mar profundo, outros sobem cascatas e outros aguentam horas fora de água."
+     ],
+     "q": "Se pudesses nadar um dia ao lado de qualquer peixe, qual escolherias?",
+     "c": "Da próxima vez que vires um lago, rio ou aquário, observa como um peixe usa as barbatanas."
+    },
+    "pt_BR": {
+     "t": "Conheça os peixes",
+     "g": "Explorar os peixes, o grupo de vertebrados maior e mais variado.",
+     "p": [
+      "Os peixes respiram por brânquias que tiram oxigênio da água e se orientam com as nadadeiras.",
+      "Existem mais de 30 mil espécies de peixes conhecidas, mais do que todos os outros vertebrados juntos.",
+      "Alguns brilham no fundo do mar, outros sobem cachoeiras e outros aguentam horas fora da água."
+     ],
+     "q": "Se você pudesse nadar um dia ao lado de qualquer peixe, qual escolheria?",
+     "c": "Da próxima vez que vir um lago, rio ou aquário, observe como um peixe usa as nadadeiras."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet the insects",
+     "g": "Learn the body plan of insects, the most numerous animals on Earth.",
+     "p": [
+      "Every adult insect has six legs and three body parts: head, thorax and abdomen.",
+      "Most insects have antennae for smelling and touching, and many have one or two pairs of wings.",
+      "Scientists have named about a million insect species, and many more are still undiscovered."
+     ],
+     "q": "Which insect do you like most, and which one makes you a little nervous?",
+     "c": "Find one insect today and count its legs and body parts without touching it."
+    },
+    "de": {
+     "t": "Die Insekten kennenlernen",
+     "g": "Den Bauplan der Insekten kennenlernen, der zahlreichsten Tiere der Erde.",
+     "p": [
+      "Jedes erwachsene Insekt hat sechs Beine und drei Körperteile: Kopf, Brust und Hinterleib.",
+      "Die meisten haben Fühler zum Riechen und Tasten, viele auch ein oder zwei Flügelpaare.",
+      "Forschende haben rund eine Million Insektenarten benannt, viele weitere sind noch unentdeckt."
+     ],
+     "q": "Welches Insekt magst du am liebsten, und welches macht dich etwas nervös?",
+     "c": "Finde heute ein Insekt und zähle seine Beine und Körperteile, ohne es zu berühren."
+    },
+    "es": {
+     "t": "Conoce a los insectos",
+     "g": "Aprender cómo es el cuerpo de los insectos, los animales más numerosos de la Tierra.",
+     "p": [
+      "Todo insecto adulto tiene seis patas y tres partes: cabeza, tórax y abdomen.",
+      "La mayoría tiene antenas para oler y tocar, y muchos tienen uno o dos pares de alas.",
+      "Los científicos han nombrado cerca de un millón de especies, y quedan muchas por descubrir."
+     ],
+     "q": "¿Qué insecto te gusta más y cuál te pone un poco nervioso?",
+     "c": "Encuentra hoy un insecto y cuenta sus patas y partes del cuerpo sin tocarlo."
+    },
+    "fr": {
+     "t": "À la rencontre des insectes",
+     "g": "Découvrir le plan du corps des insectes, les animaux les plus nombreux sur Terre.",
+     "p": [
+      "Tout insecte adulte a six pattes et trois parties : tête, thorax et abdomen.",
+      "La plupart ont des antennes pour sentir et toucher, et beaucoup ont une ou deux paires d'ailes.",
+      "Les scientifiques ont nommé environ un million d'espèces d'insectes, et bien d'autres restent à découvrir."
+     ],
+     "q": "Quel insecte préfères-tu, et lequel te rend un peu nerveux ?",
+     "c": "Trouve un insecte aujourd'hui et compte ses pattes et les parties de son corps sans le toucher."
+    },
+    "it": {
+     "t": "Conosciamo gli insetti",
+     "g": "Conoscere il corpo degli insetti, gli animali più numerosi della Terra.",
+     "p": [
+      "Ogni insetto adulto ha sei zampe e tre parti del corpo: capo, torace e addome.",
+      "Quasi tutti hanno antenne per annusare e toccare, e molti hanno una o due paia di ali.",
+      "Gli scienziati hanno descritto circa un milione di specie di insetti, e molte altre restano da scoprire."
+     ],
+     "q": "Quale insetto ti piace di più, e quale ti mette un po' in agitazione?",
+     "c": "Trova oggi un insetto e conta zampe e parti del corpo senza toccarlo."
+    },
+    "pt": {
+     "t": "Conhecer os insetos",
+     "g": "Conhecer o corpo dos insetos, os animais mais numerosos da Terra.",
+     "p": [
+      "Todo o inseto adulto tem seis patas e três partes do corpo: cabeça, tórax e abdómen.",
+      "A maioria tem antenas para cheirar e tocar, e muitos têm um ou dois pares de asas.",
+      "Os cientistas já deram nome a cerca de um milhão de espécies, e muitas mais estão por descobrir."
+     ],
+     "q": "Qual é o inseto de que mais gostas, e qual te deixa um pouco nervoso?",
+     "c": "Encontra hoje um inseto e conta as patas e as partes do corpo sem lhe tocar."
+    },
+    "pt_BR": {
+     "t": "Conheça os insetos",
+     "g": "Conhecer o corpo dos insetos, os animais mais numerosos da Terra.",
+     "p": [
+      "Todo inseto adulto tem seis patas e três partes do corpo: cabeça, tórax e abdômen.",
+      "A maioria tem antenas para cheirar e tocar, e muitos têm um ou dois pares de asas.",
+      "Os cientistas já nomearam cerca de um milhão de espécies, e muitas outras ainda não foram descobertas."
+     ],
+     "q": "Qual inseto você mais gosta, e qual te deixa um pouco nervoso?",
+     "c": "Encontre hoje um inseto e conte as patas e as partes do corpo sem tocar nele."
+    }
+   }
+  }
+ ]
+}

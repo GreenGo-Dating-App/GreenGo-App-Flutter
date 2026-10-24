@@ -1,0 +1,835 @@
+{
+ "topic": "movies",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to the world of movies",
+     "g": "Get to know the path ahead and start watching films more actively.",
+     "p": [
+      "We will go from first frames to world cinema, one small lesson a day.",
+      "You will learn how shots, sound and editing tell stories.",
+      "No expert knowledge needed, only curiosity and a screen."
+     ],
+     "q": "What film did you enjoy most recently, and why?",
+     "c": "Tonight, notice one thing in a film you usually overlook."
+    },
+    "de": {
+     "t": "Willkommen in der Welt des Films",
+     "g": "Lerne den Weg kennen und schau Filme ab heute aufmerksamer.",
+     "p": [
+      "Wir gehen von den ersten Bildern bis zum Weltkino, jeden Tag eine kleine Lektion.",
+      "Du lernst, wie Einstellungen, Ton und Schnitt Geschichten erzählen.",
+      "Du brauchst kein Vorwissen, nur Neugier und einen Bildschirm."
+     ],
+     "q": "Welchen Film hast du zuletzt gern gesehen, und warum?",
+     "c": "Achte heute Abend auf etwas, das du sonst übersiehst."
+    },
+    "es": {
+     "t": "Bienvenido al mundo del cine",
+     "g": "Conoce el camino que viene y empieza a ver películas con más atención.",
+     "p": [
+      "Iremos de los primeros fotogramas al cine del mundo, con una lección corta al día.",
+      "Aprenderás cómo los planos, el sonido y el montaje cuentan historias.",
+      "No hace falta ser experto: basta con curiosidad y una pantalla."
+     ],
+     "q": "¿Qué película disfrutaste más últimamente y por qué?",
+     "c": "Esta noche fíjate en algo que sueles pasar por alto."
+    },
+    "fr": {
+     "t": "Bienvenue dans le monde du cinéma",
+     "g": "Découvre le parcours et commence à regarder les films plus activement.",
+     "p": [
+      "Nous irons des premières images au cinéma du monde, une petite leçon par jour.",
+      "Tu verras comment plans, son et montage racontent des histoires.",
+      "Aucun savoir préalable, juste de la curiosité et un écran."
+     ],
+     "q": "Quel film as-tu le plus apprécié récemment, et pourquoi ?",
+     "c": "Ce soir, repère un détail que tu ne remarques jamais."
+    },
+    "it": {
+     "t": "Benvenuto nel mondo del cinema",
+     "g": "Scopri il percorso e inizia a guardare i film con più attenzione.",
+     "p": [
+      "Andremo dai primi fotogrammi al cinema del mondo, con una piccola lezione al giorno.",
+      "Imparerai come inquadrature, suono e montaggio raccontano storie.",
+      "Non serve essere esperti: bastano curiosità e uno schermo."
+     ],
+     "q": "Quale film ti è piaciuto di più di recente, e perché?",
+     "c": "Stasera nota un dettaglio che di solito ti sfugge."
+    },
+    "pt": {
+     "t": "Bem-vindo ao mundo do cinema",
+     "g": "Conhece o percurso e começa a ver filmes com mais atenção.",
+     "p": [
+      "Vamos dos primeiros fotogramas ao cinema mundial, com uma pequena lição por dia.",
+      "Vais aprender como planos, som e montagem contam histórias.",
+      "Não é preciso ser perito, basta curiosidade e um ecrã."
+     ],
+     "q": "Que filme apreciaste mais recentemente, e porquê?",
+     "c": "Esta noite repara num detalhe que costumas ignorar."
+    },
+    "pt_BR": {
+     "t": "Boas-vindas ao mundo do cinema",
+     "g": "Conheça o caminho e comece a assistir a filmes com mais atenção.",
+     "p": [
+      "Vamos dos primeiros fotogramas ao cinema mundial, com uma lição curta por dia.",
+      "Você vai aprender como planos, som e montagem contam histórias.",
+      "Não precisa ser especialista, só curiosidade e uma tela."
+     ],
+     "q": "Qual filme você mais curtiu recentemente, e por quê?",
+     "c": "Hoje à noite, repare num detalhe que você costuma ignorar."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What makes a movie a movie",
+     "g": "See how images, story, sound and editing combine into one experience.",
+     "p": [
+      "A film is a sequence of still images shown fast enough to look like motion.",
+      "Story gives the images a reason; sound adds emotion and space.",
+      "Editing chooses what we see, when, and for how long."
+     ],
+     "q": "Which part moves you most: the images, the story or the sound?",
+     "c": "Watch two minutes of a film with the sound off, then on."
+    },
+    "de": {
+     "t": "Was einen Film ausmacht",
+     "g": "Sieh, wie Bild, Geschichte, Ton und Schnitt zu einem Erlebnis werden.",
+     "p": [
+      "Ein Film ist eine Folge von Standbildern, die so schnell laufen, dass Bewegung entsteht.",
+      "Die Geschichte gibt den Bildern Sinn; der Ton bringt Gefühl und Raum.",
+      "Der Schnitt bestimmt, was wir wann und wie lange sehen."
+     ],
+     "q": "Was berührt dich am meisten: Bilder, Handlung oder Ton?",
+     "c": "Sieh zwei Minuten eines Films erst ohne Ton, dann mit Ton."
+    },
+    "es": {
+     "t": "Qué hace que una película sea cine",
+     "g": "Descubre cómo imagen, historia, sonido y montaje forman una sola experiencia.",
+     "p": [
+      "Una película es una serie de imágenes fijas tan rápidas que parecen moverse.",
+      "La historia da sentido a las imágenes; el sonido aporta emoción y espacio.",
+      "El montaje elige qué vemos, cuándo y durante cuánto tiempo."
+     ],
+     "q": "¿Qué te conmueve más: la imagen, la historia o el sonido?",
+     "c": "Mira dos minutos de una película sin sonido y luego con sonido."
+    },
+    "fr": {
+     "t": "Ce qui fait un film",
+     "g": "Vois comment image, histoire, son et montage forment une seule expérience.",
+     "p": [
+      "Un film est une suite d'images fixes assez rapides pour donner l'illusion du mouvement.",
+      "L'histoire donne du sens aux images ; le son apporte émotion et espace.",
+      "Le montage choisit ce qu'on voit, quand et combien de temps."
+     ],
+     "q": "Qu'est-ce qui te touche le plus : l'image, l'histoire ou le son ?",
+     "c": "Regarde deux minutes d'un film sans le son, puis avec."
+    },
+    "it": {
+     "t": "Che cosa rende un film un film",
+     "g": "Scopri come immagini, storia, suono e montaggio formano un'unica esperienza.",
+     "p": [
+      "Un film è una serie di immagini fisse così veloci da sembrare movimento.",
+      "La storia dà senso alle immagini; il suono aggiunge emozione e spazio.",
+      "Il montaggio sceglie cosa vediamo, quando e per quanto tempo."
+     ],
+     "q": "Cosa ti emoziona di più: le immagini, la storia o il suono?",
+     "c": "Guarda due minuti di un film senza audio, poi con l'audio."
+    },
+    "pt": {
+     "t": "O que faz um filme ser um filme",
+     "g": "Vê como imagem, história, som e montagem criam uma só experiência.",
+     "p": [
+      "Um filme é uma sequência de imagens fixas tão rápidas que parecem movimento.",
+      "A história dá sentido às imagens; o som traz emoção e espaço.",
+      "A montagem escolhe o que vemos, quando e por quanto tempo."
+     ],
+     "q": "O que te toca mais: a imagem, a história ou o som?",
+     "c": "Vê dois minutos de um filme sem som e depois com som."
+    },
+    "pt_BR": {
+     "t": "O que faz um filme ser um filme",
+     "g": "Veja como imagem, história, som e montagem criam uma única experiência.",
+     "p": [
+      "Um filme é uma sequência de imagens paradas tão rápidas que parecem movimento.",
+      "A história dá sentido às imagens; o som traz emoção e espaço.",
+      "A montagem escolhe o que vemos, quando e por quanto tempo."
+     ],
+     "q": "O que mais te emociona: a imagem, a história ou o som?",
+     "c": "Assista a dois minutos de um filme sem som e depois com som."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Watching films actively",
+     "g": "Learn simple habits that help you notice more in every film.",
+     "p": [
+      "Ask four questions: who, where, how does it feel, and why.",
+      "Notice one choice per scene: a colour, a sound, a cut.",
+      "Pausing to think does not ruin a film; it deepens it."
+     ],
+     "q": "What detail from a favourite film did you notice only on a second viewing?",
+     "c": "Pick one scene tonight and ask yourself why it feels the way it does."
+    },
+    "de": {
+     "t": "Filme aktiv sehen",
+     "g": "Lerne einfache Gewohnheiten, mit denen du in jedem Film mehr bemerkst.",
+     "p": [
+      "Stell vier Fragen: wer, wo, wie fühlt es sich an und warum.",
+      "Achte pro Szene auf eine Entscheidung: Farbe, Geräusch oder Schnitt.",
+      "Kurz innezuhalten stört den Film nicht, es vertieft ihn."
+     ],
+     "q": "Welches Detail ist dir bei einem Lieblingsfilm erst beim zweiten Sehen aufgefallen?",
+     "c": "Such dir heute eine Szene aus und frag dich, warum sie so wirkt."
+    },
+    "es": {
+     "t": "Ver cine de forma activa",
+     "g": "Aprende hábitos sencillos para notar más en cada película.",
+     "p": [
+      "Hazte cuatro preguntas: quién, dónde, cómo se siente y por qué.",
+      "Fíjate en una decisión por escena: un color, un sonido, un corte.",
+      "Hacer una pausa para pensar no arruina la película, la enriquece."
+     ],
+     "q": "¿Qué detalle de una película favorita notaste solo al verla otra vez?",
+     "c": "Elige una escena esta noche y pregúntate por qué se siente así."
+    },
+    "fr": {
+     "t": "Regarder les films activement",
+     "g": "Adopte des habitudes simples pour remarquer plus de choses dans chaque film.",
+     "p": [
+      "Pose quatre questions : qui, où, quel ressenti et pourquoi.",
+      "Repère un choix par scène : une couleur, un son, une coupe.",
+      "Faire une pause pour réfléchir ne gâche pas un film, cela l'enrichit."
+     ],
+     "q": "Quel détail d'un film préféré n'as-tu remarqué qu'au second visionnage ?",
+     "c": "Choisis une scène ce soir et demande-toi pourquoi elle produit cet effet."
+    },
+    "it": {
+     "t": "Guardare i film in modo attivo",
+     "g": "Impara abitudini semplici per notare di più in ogni film.",
+     "p": [
+      "Poniti quattro domande: chi, dove, che sensazione dà e perché.",
+      "Nota una scelta per scena: un colore, un suono, uno stacco.",
+      "Fermarsi a pensare non rovina un film, lo rende più profondo."
+     ],
+     "q": "Quale dettaglio di un film che ami hai notato solo alla seconda visione?",
+     "c": "Scegli una scena stasera e chiediti perché ti fa quell'effetto."
+    },
+    "pt": {
+     "t": "Ver filmes de forma ativa",
+     "g": "Aprende hábitos simples para reparares em mais coisas em cada filme.",
+     "p": [
+      "Faz quatro perguntas: quem, onde, que sensação dá e porquê.",
+      "Repara numa escolha por cena: uma cor, um som, um corte.",
+      "Parar para pensar não estraga o filme, torna-o mais rico."
+     ],
+     "q": "Que detalhe de um filme preferido só notaste ao revê-lo?",
+     "c": "Escolhe uma cena esta noite e pergunta-te porque te faz sentir assim."
+    },
+    "pt_BR": {
+     "t": "Assistindo a filmes de forma ativa",
+     "g": "Aprenda hábitos simples para perceber mais coisas em cada filme.",
+     "p": [
+      "Faça quatro perguntas: quem, onde, que sensação dá e por quê.",
+      "Perceba uma escolha por cena: uma cor, um som, um corte.",
+      "Pausar para pensar não estraga o filme, deixa ele mais rico."
+     ],
+     "q": "Que detalhe de um filme favorito você só notou ao rever?",
+     "c": "Escolha uma cena hoje à noite e pergunte por que ela passa essa sensação."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your personal movie profile",
+     "g": "Discover what the films you love have in common.",
+     "p": [
+      "List three films you adore, whatever their age or country.",
+      "Look for patterns: mood, themes, humour, pace, characters.",
+      "Your taste is a compass that will guide your watchlist."
+     ],
+     "q": "Which three films would you pick, and what links them?",
+     "c": "Write one sentence that describes your movie taste."
+    },
+    "de": {
+     "t": "Dein persönliches Filmprofil",
+     "g": "Finde heraus, was deine Lieblingsfilme gemeinsam haben.",
+     "p": [
+      "Nenne drei Filme, die du liebst, egal wie alt oder woher.",
+      "Suche Muster: Stimmung, Themen, Humor, Tempo, Figuren.",
+      "Dein Geschmack ist ein Kompass für deine Filmliste."
+     ],
+     "q": "Welche drei Filme würdest du wählen, und was verbindet sie?",
+     "c": "Schreib einen Satz, der deinen Filmgeschmack beschreibt."
+    },
+    "es": {
+     "t": "Tu perfil cinéfilo personal",
+     "g": "Descubre qué tienen en común las películas que amas.",
+     "p": [
+      "Anota tres películas que adores, sin importar época o país.",
+      "Busca patrones: ambiente, temas, humor, ritmo, personajes.",
+      "Tu gusto es una brújula para tu lista de pendientes."
+     ],
+     "q": "¿Qué tres películas elegirías y qué las une?",
+     "c": "Escribe una frase que describa tu gusto cinematográfico."
+    },
+    "fr": {
+     "t": "Ton profil de cinéphile",
+     "g": "Découvre ce que tes films préférés ont en commun.",
+     "p": [
+      "Note trois films que tu adores, quels que soient leur âge ou leur pays.",
+      "Cherche des points communs : ambiance, thèmes, humour, rythme, personnages.",
+      "Ton goût est une boussole pour ta liste de films à voir."
+     ],
+     "q": "Quels trois films choisirais-tu, et qu'est-ce qui les relie ?",
+     "c": "Écris une phrase qui décrit ton goût en matière de cinéma."
+    },
+    "it": {
+     "t": "Il tuo profilo da cinefilo",
+     "g": "Scopri cosa hanno in comune i film che ami.",
+     "p": [
+      "Elenca tre film che adori, di qualsiasi epoca o paese.",
+      "Cerca schemi ricorrenti: atmosfera, temi, umorismo, ritmo, personaggi.",
+      "Il tuo gusto è una bussola per la tua lista di film da vedere."
+     ],
+     "q": "Quali tre film sceglieresti e cosa li unisce?",
+     "c": "Scrivi una frase che descriva il tuo gusto cinematografico."
+    },
+    "pt": {
+     "t": "O teu perfil de cinéfilo",
+     "g": "Descobre o que têm em comum os filmes de que gostas.",
+     "p": [
+      "Anota três filmes que adoras, de qualquer época ou país.",
+      "Procura padrões: ambiente, temas, humor, ritmo, personagens.",
+      "O teu gosto é uma bússola para a tua lista de filmes por ver."
+     ],
+     "q": "Que três filmes escolherias e o que os une?",
+     "c": "Escreve uma frase que descreva o teu gosto cinematográfico."
+    },
+    "pt_BR": {
+     "t": "Seu perfil de cinéfilo",
+     "g": "Descubra o que os filmes que você ama têm em comum.",
+     "p": [
+      "Anote três filmes que você adora, de qualquer época ou país.",
+      "Procure padrões: clima, temas, humor, ritmo, personagens.",
+      "Seu gosto é uma bússola para sua lista de filmes para ver."
+     ],
+     "q": "Quais três filmes você escolheria e o que liga eles?",
+     "c": "Escreva uma frase que descreva o seu gosto de cinema."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A first map of film genres",
+     "g": "Learn what defines a genre and how to explore several.",
+     "p": [
+      "Genres are families of films sharing familiar story patterns and moods.",
+      "Comedy, drama, adventure, animation and sci-fi each promise something different.",
+      "Many films mix genres, and the best ones play with expectations."
+     ],
+     "q": "Which genre do you watch most, and which do you avoid?",
+     "c": "Choose a genre you rarely watch and note one film to try."
+    },
+    "de": {
+     "t": "Eine erste Karte der Filmgenres",
+     "g": "Lerne, was ein Genre ausmacht und wie du mehrere entdeckst.",
+     "p": [
+      "Genres sind Filmfamilien mit vertrauten Erzählmustern und Stimmungen.",
+      "Komödie, Drama, Abenteuer, Animation und Science-Fiction versprechen jeweils anderes.",
+      "Viele Filme mischen Genres, die besten spielen mit Erwartungen."
+     ],
+     "q": "Welches Genre siehst du am meisten, welches meidest du?",
+     "c": "Wähl ein Genre, das du selten siehst, und notier einen Film zum Ausprobieren."
+    },
+    "es": {
+     "t": "Un primer mapa de los géneros",
+     "g": "Aprende qué define un género y cómo explorar varios.",
+     "p": [
+      "Los géneros son familias de películas con patrones narrativos y tonos conocidos.",
+      "Comedia, drama, aventuras, animación y ciencia ficción prometen cosas distintas.",
+      "Muchas películas mezclan géneros y las mejores juegan con las expectativas."
+     ],
+     "q": "¿Qué género ves más y cuál evitas?",
+     "c": "Elige un género que veas poco y anota una película para probar."
+    },
+    "fr": {
+     "t": "Une première carte des genres",
+     "g": "Apprends ce qui définit un genre et comment en explorer plusieurs.",
+     "p": [
+      "Les genres sont des familles de films aux schémas narratifs et ambiances familiers.",
+      "Comédie, drame, aventure, animation et science-fiction promettent chacun autre chose.",
+      "Beaucoup de films mêlent les genres, et les meilleurs jouent avec nos attentes."
+     ],
+     "q": "Quel genre regardes-tu le plus, et lequel évites-tu ?",
+     "c": "Choisis un genre que tu regardes peu et note un film à essayer."
+    },
+    "it": {
+     "t": "Una prima mappa dei generi",
+     "g": "Scopri cosa definisce un genere e come esplorarne di diversi.",
+     "p": [
+      "I generi sono famiglie di film con schemi narrativi e toni familiari.",
+      "Commedia, dramma, avventura, animazione e fantascienza promettono cose diverse.",
+      "Molti film mescolano i generi e i migliori giocano con le aspettative."
+     ],
+     "q": "Quale genere guardi di più e quale eviti?",
+     "c": "Scegli un genere che guardi di rado e annota un film da provare."
+    },
+    "pt": {
+     "t": "Um primeiro mapa dos géneros",
+     "g": "Aprende o que define um género e como explorar vários.",
+     "p": [
+      "Os géneros são famílias de filmes com padrões narrativos e tons familiares.",
+      "Comédia, drama, aventura, animação e ficção científica prometem coisas diferentes.",
+      "Muitos filmes misturam géneros e os melhores brincam com as expectativas."
+     ],
+     "q": "Que género vês mais e qual evitas?",
+     "c": "Escolhe um género que vês pouco e anota um filme para experimentar."
+    },
+    "pt_BR": {
+     "t": "Um primeiro mapa dos gêneros",
+     "g": "Aprenda o que define um gênero e como explorar vários.",
+     "p": [
+      "Os gêneros são famílias de filmes com padrões de história e clima familiares.",
+      "Comédia, drama, aventura, animação e ficção científica prometem coisas diferentes.",
+      "Muitos filmes misturam gêneros e os melhores brincam com as expectativas."
+     ],
+     "q": "Que gênero você mais assiste e qual você evita?",
+     "c": "Escolha um gênero que você assiste pouco e anote um filme para testar."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The shot: cinema's basic unit",
+     "g": "Understand what a shot is and how films are built from many.",
+     "p": [
+      "A shot is one continuous piece of footage between two cuts.",
+      "Most films contain hundreds or thousands of shots.",
+      "Each shot is chosen to show something specific."
+     ],
+     "q": "Can you remember a shot from any film that stayed in your mind?",
+     "c": "Count the shots in one minute of a film; most people lose count."
+    },
+    "de": {
+     "t": "Die Einstellung: Baustein des Kinos",
+     "g": "Verstehe, was eine Einstellung ist und wie Filme aus vielen bestehen.",
+     "p": [
+      "Eine Einstellung ist ein ununterbrochenes Stück Film zwischen zwei Schnitten.",
+      "Die meisten Filme enthalten Hunderte oder Tausende Einstellungen.",
+      "Jede Einstellung zeigt bewusst etwas Bestimmtes."
+     ],
+     "q": "Erinnerst du dich an eine Einstellung, die dir im Kopf geblieben ist?",
+     "c": "Zähl die Einstellungen in einer Filmminute; die meisten verzählen sich."
+    },
+    "es": {
+     "t": "El plano: la unidad básica del cine",
+     "g": "Entiende qué es un plano y cómo se construyen las películas con muchos.",
+     "p": [
+      "Un plano es un fragmento continuo de imagen entre dos cortes.",
+      "La mayoría de las películas tiene cientos o miles de planos.",
+      "Cada plano se elige para mostrar algo concreto."
+     ],
+     "q": "¿Recuerdas algún plano que se te quedó grabado?",
+     "c": "Cuenta los planos de un minuto de película; casi todos pierden la cuenta."
+    },
+    "fr": {
+     "t": "Le plan : l'unité de base du cinéma",
+     "g": "Comprends ce qu'est un plan et comment un film en assemble beaucoup.",
+     "p": [
+      "Un plan est un morceau d'image continu entre deux coupes.",
+      "La plupart des films comptent des centaines, voire des milliers de plans.",
+      "Chaque plan est choisi pour montrer quelque chose de précis."
+     ],
+     "q": "Te souviens-tu d'un plan resté gravé dans ta mémoire ?",
+     "c": "Compte les plans dans une minute de film ; la plupart perdent le fil."
+    },
+    "it": {
+     "t": "L'inquadratura: l'unità base del cinema",
+     "g": "Capisci cos'è un'inquadratura e come i film ne uniscono molte.",
+     "p": [
+      "Un'inquadratura è un tratto continuo di ripresa tra due stacchi.",
+      "La maggior parte dei film contiene centinaia o migliaia di inquadrature.",
+      "Ogni inquadratura è scelta per mostrare qualcosa di preciso."
+     ],
+     "q": "Ricordi un'inquadratura che ti è rimasta impressa?",
+     "c": "Conta le inquadrature in un minuto di film; quasi tutti perdono il conto."
+    },
+    "pt": {
+     "t": "O plano: a unidade base do cinema",
+     "g": "Percebe o que é um plano e como os filmes são feitos de muitos.",
+     "p": [
+      "Um plano é um trecho contínuo de imagem entre dois cortes.",
+      "A maioria dos filmes tem centenas ou milhares de planos.",
+      "Cada plano é escolhido para mostrar algo concreto."
+     ],
+     "q": "Lembras-te de um plano que te ficou na memória?",
+     "c": "Conta os planos de um minuto de filme; quase toda a gente perde a conta."
+    },
+    "pt_BR": {
+     "t": "O plano: a unidade básica do cinema",
+     "g": "Entenda o que é um plano e como os filmes são feitos de muitos.",
+     "p": [
+      "Um plano é um trecho contínuo de imagem entre dois cortes.",
+      "A maioria dos filmes tem centenas ou milhares de planos.",
+      "Cada plano é escolhido para mostrar algo específico."
+     ],
+     "q": "Você lembra de um plano que ficou na sua memória?",
+     "c": "Conte os planos de um minuto de filme; quase todo mundo perde a conta."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wide, medium and close-up shots",
+     "g": "See how shot size changes what we notice and feel.",
+     "p": [
+      "A wide shot shows place and scale; a medium shot shows body and action.",
+      "A close-up brings us into a face or an object, creating intimacy.",
+      "Filmmakers often move from wide to close to guide our attention."
+     ],
+     "q": "Which shot size do you think best shows emotion?",
+     "c": "Spot one wide shot and one close-up in tonight's film."
+    },
+    "de": {
+     "t": "Totale, Halbtotale und Nahaufnahme",
+     "g": "Sieh, wie die Einstellungsgröße verändert, was wir bemerken und fühlen.",
+     "p": [
+      "Die Totale zeigt Ort und Größe; die Halbnahe zeigt Körper und Handlung.",
+      "Die Nahaufnahme holt uns ans Gesicht oder an ein Objekt und schafft Nähe.",
+      "Oft geht es von weit zu nah, um unseren Blick zu lenken."
+     ],
+     "q": "Welche Einstellungsgröße zeigt Gefühle deiner Meinung nach am besten?",
+     "c": "Finde heute Abend eine Totale und eine Nahaufnahme."
+    },
+    "es": {
+     "t": "Plano general, medio y primer plano",
+     "g": "Mira cómo el tamaño del plano cambia lo que notamos y sentimos.",
+     "p": [
+      "El plano general muestra lugar y escala; el medio, cuerpo y acción.",
+      "El primer plano nos acerca a un rostro u objeto y crea intimidad.",
+      "Se suele pasar de lo amplio a lo cercano para guiar la atención."
+     ],
+     "q": "¿Qué tamaño de plano crees que muestra mejor la emoción?",
+     "c": "Localiza un plano general y un primer plano en la película de esta noche."
+    },
+    "fr": {
+     "t": "Plans larges, moyens et gros plans",
+     "g": "Vois comment la taille du plan change ce qu'on remarque et ressent.",
+     "p": [
+      "Le plan large montre le lieu et l'échelle ; le plan moyen, le corps et l'action.",
+      "Le gros plan nous rapproche d'un visage ou d'un objet et crée de l'intimité.",
+      "On passe souvent du large au serré pour guider notre regard."
+     ],
+     "q": "Quelle taille de plan montre le mieux l'émotion, selon toi ?",
+     "c": "Repère un plan large et un gros plan dans le film de ce soir."
+    },
+    "it": {
+     "t": "Campo lungo, medio e primo piano",
+     "g": "Scopri come la dimensione dell'inquadratura cambia ciò che notiamo e proviamo.",
+     "p": [
+      "Il campo lungo mostra luogo e scala; il piano medio, corpo e azione.",
+      "Il primo piano ci avvicina a un volto o a un oggetto e crea intimità.",
+      "Spesso si passa dal largo allo stretto per guidare l'attenzione."
+     ],
+     "q": "Quale dimensione di inquadratura mostra meglio l'emozione, secondo te?",
+     "c": "Individua un campo lungo e un primo piano nel film di stasera."
+    },
+    "pt": {
+     "t": "Plano geral, médio e grande plano",
+     "g": "Vê como o tamanho do plano muda o que notamos e sentimos.",
+     "p": [
+      "O plano geral mostra lugar e escala; o médio, corpo e ação.",
+      "O grande plano aproxima-nos de um rosto ou objeto e cria intimidade.",
+      "Passa-se muitas vezes do aberto ao fechado para guiar o olhar."
+     ],
+     "q": "Que tamanho de plano mostra melhor a emoção, na tua opinião?",
+     "c": "Encontra um plano geral e um grande plano no filme desta noite."
+    },
+    "pt_BR": {
+     "t": "Plano geral, médio e close-up",
+     "g": "Veja como o tamanho do plano muda o que percebemos e sentimos.",
+     "p": [
+      "O plano geral mostra lugar e escala; o médio, corpo e ação.",
+      "O close-up leva a gente a um rosto ou objeto e cria intimidade.",
+      "Costuma-se ir do aberto ao fechado para guiar o olhar."
+     ],
+     "q": "Que tamanho de plano mostra melhor a emoção, na sua opinião?",
+     "c": "Ache um plano geral e um close-up no filme de hoje à noite."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Camera angles and their meaning",
+     "g": "Learn how high, low and eye-level angles shape impressions.",
+     "p": [
+      "Eye-level feels neutral, like standing beside the character.",
+      "A low angle looks up, often making someone seem strong or grand.",
+      "A high angle looks down, often making someone seem small or vulnerable."
+     ],
+     "q": "Can you think of a character filmed from a surprising angle?",
+     "c": "Find one low-angle and one high-angle shot and say what each suggests."
+    },
+    "de": {
+     "t": "Kamerawinkel und ihre Wirkung",
+     "g": "Lerne, wie Frosch-, Vogel- und Augenhöhe Eindrücke formen.",
+     "p": [
+      "Augenhöhe wirkt neutral, als stünde man neben der Figur.",
+      "Die Froschperspektive blickt hinauf und lässt jemanden stark oder groß wirken.",
+      "Die Vogelperspektive blickt hinab und lässt jemanden klein oder verletzlich wirken."
+     ],
+     "q": "Fällt dir eine Figur ein, die aus einem überraschenden Winkel gefilmt wurde?",
+     "c": "Finde eine Frosch- und eine Vogelperspektive und deute beide."
+    },
+    "es": {
+     "t": "Ángulos de cámara y su significado",
+     "g": "Aprende cómo los ángulos alto, bajo y a la altura de los ojos crean impresiones.",
+     "p": [
+      "A la altura de los ojos resulta neutro, como estar junto al personaje.",
+      "El contrapicado mira hacia arriba y suele dar fuerza o grandeza.",
+      "El picado mira hacia abajo y suele hacer sentir pequeño o vulnerable."
+     ],
+     "q": "¿Recuerdas un personaje filmado desde un ángulo sorprendente?",
+     "c": "Encuentra un contrapicado y un picado y explica qué sugiere cada uno."
+    },
+    "fr": {
+     "t": "Angles de caméra et leur sens",
+     "g": "Apprends comment plongée, contre-plongée et hauteur d'yeux créent des impressions.",
+     "p": [
+      "À hauteur d'yeux, l'effet est neutre, comme à côté du personnage.",
+      "La contre-plongée regarde vers le haut et donne souvent force ou grandeur.",
+      "La plongée regarde vers le bas et rend souvent petit ou vulnérable."
+     ],
+     "q": "Un personnage filmé sous un angle surprenant te revient-il en mémoire ?",
+     "c": "Trouve une contre-plongée et une plongée et dis ce que chacune suggère."
+    },
+    "it": {
+     "t": "Angolazioni e significati",
+     "g": "Impara come angolazioni alta, bassa e ad altezza d'occhio creano impressioni.",
+     "p": [
+      "All'altezza d'occhio l'effetto è neutro, come stare accanto al personaggio.",
+      "La ripresa dal basso guarda in su e spesso dà forza o grandezza.",
+      "La ripresa dall'alto guarda in giù e spesso rende piccoli o vulnerabili."
+     ],
+     "q": "Ti viene in mente un personaggio ripreso con un'angolazione sorprendente?",
+     "c": "Trova una ripresa dal basso e una dall'alto e spiega cosa suggeriscono."
+    },
+    "pt": {
+     "t": "Ângulos de câmara e o seu significado",
+     "g": "Aprende como os ângulos alto, baixo e ao nível dos olhos criam impressões.",
+     "p": [
+      "Ao nível dos olhos é neutro, como estar ao lado da personagem.",
+      "O contrapicado olha para cima e costuma dar força ou grandeza.",
+      "O picado olha para baixo e costuma tornar alguém pequeno ou vulnerável."
+     ],
+     "q": "Lembras-te de uma personagem filmada de um ângulo surpreendente?",
+     "c": "Encontra um contrapicado e um picado e explica o que sugerem."
+    },
+    "pt_BR": {
+     "t": "Ângulos de câmera e seu significado",
+     "g": "Aprenda como os ângulos alto, baixo e na altura dos olhos criam impressões.",
+     "p": [
+      "Na altura dos olhos é neutro, como ficar ao lado do personagem.",
+      "O contra-plongée olha para cima e costuma dar força ou grandeza.",
+      "O plongée olha para baixo e costuma deixar alguém pequeno ou vulnerável."
+     ],
+     "q": "Você lembra de um personagem filmado de um ângulo surpreendente?",
+     "c": "Ache um contra-plongée e um plongée e diga o que cada um sugere."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Camera movement basics",
+     "g": "Recognise pans, tilts, tracking shots and zooms.",
+     "p": [
+      "A pan turns the camera sideways; a tilt turns it up or down.",
+      "A tracking shot moves the whole camera through space, following action.",
+      "A zoom changes the lens without moving; a dolly moves closer physically."
+     ],
+     "q": "Which camera movement would you use to reveal a surprise?",
+     "c": "Spot one moving shot tonight and name its type."
+    },
+    "de": {
+     "t": "Grundlagen der Kamerabewegung",
+     "g": "Erkenne Schwenk, Neigung, Kamerafahrt und Zoom.",
+     "p": [
+      "Beim Schwenk dreht sich die Kamera seitlich, bei der Neigung nach oben oder unten.",
+      "Eine Kamerafahrt bewegt die ganze Kamera durch den Raum und folgt dem Geschehen.",
+      "Der Zoom verändert das Objektiv, die Fahrt bringt die Kamera real näher."
+     ],
+     "q": "Welche Kamerabewegung würdest du für eine Überraschung nutzen?",
+     "c": "Finde heute Abend eine bewegte Einstellung und benenne ihre Art."
+    },
+    "es": {
+     "t": "Fundamentos del movimiento de cámara",
+     "g": "Reconoce panorámicas, inclinaciones, travellings y zooms.",
+     "p": [
+      "En la panorámica la cámara gira hacia los lados; en la inclinación, arriba o abajo.",
+      "El travelling desplaza toda la cámara por el espacio siguiendo la acción.",
+      "El zoom cambia el objetivo sin moverse; el travelling acerca físicamente."
+     ],
+     "q": "¿Qué movimiento usarías para revelar una sorpresa?",
+     "c": "Localiza un plano en movimiento esta noche y nombra su tipo."
+    },
+    "fr": {
+     "t": "Bases du mouvement de caméra",
+     "g": "Reconnais panoramiques, tilts, travellings et zooms.",
+     "p": [
+      "Dans un panoramique, la caméra pivote sur le côté ; dans un tilt, vers le haut ou le bas.",
+      "Le travelling déplace toute la caméra dans l'espace en suivant l'action.",
+      "Le zoom change l'objectif sans bouger ; le travelling rapproche vraiment."
+     ],
+     "q": "Quel mouvement utiliserais-tu pour révéler une surprise ?",
+     "c": "Repère un plan en mouvement ce soir et nomme son type."
+    },
+    "it": {
+     "t": "Movimenti di macchina di base",
+     "g": "Riconosci panoramiche, inclinazioni, carrellate e zoom.",
+     "p": [
+      "Nella panoramica la camera ruota di lato; nell'inclinazione, in alto o in basso.",
+      "La carrellata sposta tutta la camera nello spazio seguendo l'azione.",
+      "Lo zoom cambia l'obiettivo senza muoversi; il carrello avvicina fisicamente."
+     ],
+     "q": "Quale movimento useresti per svelare una sorpresa?",
+     "c": "Individua stasera un'inquadratura in movimento e dai un nome al tipo."
+    },
+    "pt": {
+     "t": "Noções de movimento de câmara",
+     "g": "Reconhece panorâmicas, inclinações, travellings e zooms.",
+     "p": [
+      "Na panorâmica a câmara roda para o lado; na inclinação, para cima ou para baixo.",
+      "O travelling move a câmara toda pelo espaço, a seguir a ação.",
+      "O zoom muda a objetiva sem mexer; o travelling aproxima fisicamente."
+     ],
+     "q": "Que movimento usarias para revelar uma surpresa?",
+     "c": "Encontra esta noite um plano em movimento e diz de que tipo é."
+    },
+    "pt_BR": {
+     "t": "Noções de movimento de câmera",
+     "g": "Reconheça panorâmicas, inclinações, travellings e zooms.",
+     "p": [
+      "Na panorâmica a câmera gira para o lado; na inclinação, para cima ou para baixo.",
+      "O travelling move a câmera inteira pelo espaço, seguindo a ação.",
+      "O zoom muda a lente sem se mover; o travelling aproxima de verdade."
+     ],
+     "q": "Que movimento você usaria para revelar uma surpresa?",
+     "c": "Encontre hoje um plano em movimento e diga de que tipo é."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The frame and composition",
+     "g": "See how filmmakers arrange people and objects in the frame.",
+     "p": [
+      "The frame is the rectangle of the image; everything in it is chosen.",
+      "Placing a subject off-centre can feel natural, open or tense.",
+      "Lines, doorways and depth guide the eye to what matters."
+     ],
+     "q": "When you take a photo, how do you decide where to put things?",
+     "c": "Pause any film and describe how the frame is balanced."
+    },
+    "de": {
+     "t": "Bildausschnitt und Komposition",
+     "g": "Sieh, wie Filmemacher Menschen und Dinge im Bild anordnen.",
+     "p": [
+      "Der Bildausschnitt ist das Rechteck des Bildes; alles darin ist gewählt.",
+      "Ein Motiv außerhalb der Mitte kann natürlich, offen oder angespannt wirken.",
+      "Linien, Türen und Tiefe lenken den Blick auf das Wichtige."
+     ],
+     "q": "Wie entscheidest du beim Fotografieren, wohin du etwas setzt?",
+     "c": "Halte einen Film an und beschreibe, wie das Bild ausbalanciert ist."
+    },
+    "es": {
+     "t": "El encuadre y la composición",
+     "g": "Mira cómo los cineastas colocan personas y objetos dentro del cuadro.",
+     "p": [
+      "El encuadre es el rectángulo de la imagen; todo lo que hay en él se elige.",
+      "Un sujeto descentrado puede sentirse natural, abierto o tenso.",
+      "Las líneas, las puertas y la profundidad guían la mirada a lo importante."
+     ],
+     "q": "Cuando haces una foto, ¿cómo decides dónde colocar las cosas?",
+     "c": "Pausa cualquier película y describe cómo está equilibrado el encuadre."
+    },
+    "fr": {
+     "t": "Le cadre et la composition",
+     "g": "Vois comment les cinéastes disposent personnes et objets dans le cadre.",
+     "p": [
+      "Le cadre est le rectangle de l'image ; tout ce qu'il contient est choisi.",
+      "Un sujet décentré peut paraître naturel, ouvert ou tendu.",
+      "Lignes, portes et profondeur guident l'œil vers l'essentiel."
+     ],
+     "q": "Quand tu prends une photo, comment décides-tu où placer les choses ?",
+     "c": "Mets un film en pause et décris l'équilibre du cadre."
+    },
+    "it": {
+     "t": "L'inquadratura e la composizione",
+     "g": "Scopri come i registi dispongono persone e oggetti nel quadro.",
+     "p": [
+      "Il quadro è il rettangolo dell'immagine; tutto ciò che contiene è scelto.",
+      "Un soggetto decentrato può sembrare naturale, aperto o teso.",
+      "Linee, porte e profondità guidano l'occhio su ciò che conta."
+     ],
+     "q": "Quando fai una foto, come decidi dove mettere le cose?",
+     "c": "Metti in pausa un film e descrivi come è bilanciato il quadro."
+    },
+    "pt": {
+     "t": "O enquadramento e a composição",
+     "g": "Vê como os cineastas dispõem pessoas e objetos no quadro.",
+     "p": [
+      "O enquadramento é o retângulo da imagem; tudo o que lá está foi escolhido.",
+      "Um sujeito fora do centro pode parecer natural, aberto ou tenso.",
+      "Linhas, portas e profundidade guiam o olhar para o essencial."
+     ],
+     "q": "Quando tiras uma fotografia, como decides onde pôr as coisas?",
+     "c": "Pausa um filme qualquer e descreve como o quadro está equilibrado."
+    },
+    "pt_BR": {
+     "t": "O enquadramento e a composição",
+     "g": "Veja como os cineastas dispõem pessoas e objetos no quadro.",
+     "p": [
+      "O enquadramento é o retângulo da imagem; tudo que está nele foi escolhido.",
+      "Um sujeito fora do centro pode parecer natural, aberto ou tenso.",
+      "Linhas, portas e profundidade guiam o olhar para o essencial."
+     ],
+     "q": "Quando você tira uma foto, como decide onde colocar as coisas?",
+     "c": "Pause qualquer filme e descreva como o quadro está equilibrado."
+    }
+   }
+  }
+ ]
+}

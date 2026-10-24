@@ -1,0 +1,835 @@
+{
+ "topic": "cybersecurity_basics",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is two-factor authentication?",
+     "g": "Add a second step so a password alone is not enough to log in.",
+     "p": [
+      "Two-factor means proving who you are twice: something you know plus something you have.",
+      "Even if a thief learns your password, they still lack your second step.",
+      "It takes a few extra seconds at login and blocks a huge share of account break-ins."
+     ],
+     "q": "Have you already used a second step, like a code or fingerprint, for any account?",
+     "c": "Challenge: list which of your important accounts offer two-step login."
+    },
+    "de": {
+     "t": "Was ist Zwei-Faktor-Authentifizierung?",
+     "g": "Füge einen zweiten Schritt hinzu, damit ein Passwort allein zum Anmelden nicht reicht.",
+     "p": [
+      "Zwei Faktoren heißt: Du beweist zweimal, wer du bist, mit Wissen und mit Besitz.",
+      "Selbst wenn jemand dein Passwort kennt, fehlt ihm dein zweiter Schritt.",
+      "Es kostet beim Login wenige Sekunden und verhindert sehr viele Kontoübernahmen."
+     ],
+     "q": "Hast du bei einem Konto schon einen zweiten Schritt genutzt, etwa Code oder Fingerabdruck?",
+     "c": "Challenge: Liste auf, welche deiner wichtigen Konten eine Zwei-Schritt-Anmeldung anbieten."
+    },
+    "es": {
+     "t": "¿Qué es la verificación en dos pasos?",
+     "g": "Añade un segundo paso para que una clave sola no baste para entrar.",
+     "p": [
+      "Dos factores significa demostrar quién eres dos veces: algo que sabes y algo que tienes.",
+      "Aunque alguien conozca tu clave, le faltará tu segundo paso.",
+      "Cuesta unos segundos al entrar y evita una gran parte de los accesos indebidos."
+     ],
+     "q": "¿Has usado ya un segundo paso, como un código o la huella, en alguna cuenta?",
+     "c": "Reto: anota cuáles de tus cuentas importantes ofrecen acceso en dos pasos."
+    },
+    "fr": {
+     "t": "Qu'est-ce que la double authentification ?",
+     "g": "Ajoute une deuxième étape pour qu'un mot de passe seul ne suffise pas à se connecter.",
+     "p": [
+      "Deux facteurs, c'est prouver deux fois qui tu es : ce que tu sais et ce que tu possèdes.",
+      "Même si quelqu'un connaît ton mot de passe, il lui manque ta deuxième étape.",
+      "Quelques secondes de plus à la connexion pour bloquer une grande part des piratages de compte."
+     ],
+     "q": "As-tu déjà utilisé une deuxième étape, comme un code ou une empreinte, pour un compte ?",
+     "c": "Défi : liste lesquels de tes comptes importants proposent la double authentification."
+    },
+    "it": {
+     "t": "Cos'è l'autenticazione a due fattori?",
+     "g": "Aggiungi un secondo passaggio perché la sola password non basti per accedere.",
+     "p": [
+      "Due fattori significa dimostrare chi sei due volte: qualcosa che sai e qualcosa che hai.",
+      "Anche se qualcuno scopre la password, gli manca il tuo secondo passaggio.",
+      "Servono pochi secondi in più all'accesso e blocca una gran parte delle intrusioni negli account."
+     ],
+     "q": "Hai già usato un secondo passaggio, come un codice o l'impronta, per qualche account?",
+     "c": "Sfida: elenca quali dei tuoi account importanti offrono l'accesso in due passaggi."
+    },
+    "pt": {
+     "t": "O que é a autenticação de dois fatores?",
+     "g": "Junta um segundo passo para que a palavra-passe sozinha não chegue para entrar.",
+     "p": [
+      "Dois fatores é provar quem és duas vezes: algo que sabes e algo que tens.",
+      "Mesmo que alguém descubra a tua palavra-passe, falta-lhe o teu segundo passo.",
+      "Demora uns segundos a mais no início de sessão e evita grande parte das invasões de contas."
+     ],
+     "q": "Já usaste um segundo passo, como um código ou a impressão digital, em alguma conta?",
+     "c": "Desafio: lista quais das tuas contas importantes oferecem início de sessão em dois passos."
+    },
+    "pt_BR": {
+     "t": "O que é a autenticação de dois fatores?",
+     "g": "Adicione uma segunda etapa para que a senha sozinha não baste para entrar.",
+     "p": [
+      "Dois fatores é provar quem você é duas vezes: algo que você sabe e algo que você tem.",
+      "Mesmo que alguém descubra sua senha, falta a ele a sua segunda etapa.",
+      "Leva alguns segundos a mais no login e evita grande parte das invasões de contas."
+     ],
+     "q": "Você já usou uma segunda etapa, como um código ou a digital, em alguma conta?",
+     "c": "Desafio: liste quais das suas contas importantes oferecem login em duas etapas."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Text message codes",
+     "g": "Learn how SMS codes work and why they beat having no second factor at all.",
+     "p": [
+      "A code is texted to your phone and you type it in after your password.",
+      "SMS codes are much better than nothing, though app-based codes are stronger.",
+      "Never share the code with anyone; it is meant for you alone."
+     ],
+     "q": "Do any of your accounts already send you a text code when you log in?",
+     "c": "Challenge: check that your phone number on one important account is correct and current."
+    },
+    "de": {
+     "t": "SMS-Codes",
+     "g": "Lerne, wie SMS-Codes funktionieren und warum sie besser sind als gar kein zweiter Faktor.",
+     "p": [
+      "Ein Code kommt per SMS aufs Handy, und du gibst ihn nach dem Passwort ein.",
+      "SMS-Codes sind viel besser als nichts, App-Codes sind jedoch stärker.",
+      "Gib den Code nie weiter; er ist nur für dich bestimmt."
+     ],
+     "q": "Schicken dir schon Konten beim Anmelden einen SMS-Code?",
+     "c": "Challenge: Prüfe, ob deine Telefonnummer bei einem wichtigen Konto korrekt und aktuell ist."
+    },
+    "es": {
+     "t": "Códigos por SMS",
+     "g": "Aprende cómo funcionan los códigos SMS y por qué valen más que no tener segundo factor.",
+     "p": [
+      "Te llega un código por mensaje al móvil y lo escribes tras la clave.",
+      "Los códigos SMS son mucho mejores que nada, aunque los de una app son más fuertes.",
+      "Nunca compartas el código con nadie; es solo para ti."
+     ],
+     "q": "¿Alguna de tus cuentas ya te envía un código por SMS al entrar?",
+     "c": "Reto: comprueba que tu número de teléfono en una cuenta importante sea correcto y actual."
+    },
+    "fr": {
+     "t": "Codes par SMS",
+     "g": "Apprends comment fonctionnent les codes SMS et pourquoi ils valent mieux que rien.",
+     "p": [
+      "Un code arrive par SMS sur ton téléphone et tu le saisis après ton mot de passe.",
+      "Les codes SMS valent bien mieux que rien, même si ceux d'une appli sont plus solides.",
+      "Ne partage jamais le code avec personne : il n'est que pour toi."
+     ],
+     "q": "Certains de tes comptes t'envoient-ils déjà un code par SMS à la connexion ?",
+     "c": "Défi : vérifie que ton numéro sur un compte important est correct et à jour."
+    },
+    "it": {
+     "t": "Codici via SMS",
+     "g": "Scopri come funzionano i codici SMS e perché valgono più di nessun secondo fattore.",
+     "p": [
+      "Un codice arriva via SMS sul telefono e lo digiti dopo la password.",
+      "I codici SMS sono molto meglio di niente, anche se quelli da app sono più forti.",
+      "Non condividere mai il codice con nessuno: è solo per te."
+     ],
+     "q": "Qualche tuo account ti manda già un codice via SMS quando accedi?",
+     "c": "Sfida: controlla che il tuo numero su un account importante sia corretto e aggiornato."
+    },
+    "pt": {
+     "t": "Códigos por SMS",
+     "g": "Aprende como funcionam os códigos SMS e porque valem mais do que nenhum segundo fator.",
+     "p": [
+      "Chega um código por mensagem ao telemóvel e escreves-o depois da palavra-passe.",
+      "Os códigos SMS são muito melhores do que nada, embora os de uma aplicação sejam mais fortes.",
+      "Nunca partilhes o código com ninguém; é só para ti."
+     ],
+     "q": "Alguma das tuas contas já te envia um código por SMS ao entrares?",
+     "c": "Desafio: confirma que o teu número de telefone numa conta importante está correto e atual."
+    },
+    "pt_BR": {
+     "t": "Códigos por SMS",
+     "g": "Aprenda como funcionam os códigos SMS e por que valem mais que nenhum segundo fator.",
+     "p": [
+      "Chega um código por mensagem ao celular e você o digita depois da senha.",
+      "Códigos SMS são muito melhores que nada, embora os de um app sejam mais fortes.",
+      "Nunca compartilhe o código com ninguém; ele é só para você."
+     ],
+     "q": "Alguma das suas contas já envia um código por SMS quando você entra?",
+     "c": "Desafio: confirme que o seu número de telefone numa conta importante está correto e atual."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Authenticator apps",
+     "g": "Meet apps that generate time-based codes on your phone for safer logins.",
+     "p": [
+      "An authenticator app shows a six-digit code that changes every 30 seconds or so.",
+      "It works offline and does not depend on text messages reaching your phone.",
+      "Many accounts let you scan a setup code once, then the app does the rest."
+     ],
+     "q": "Would you rather use a text code or an app code, and why?",
+     "c": "Challenge: read how your phone's app store describes a well-known authenticator app."
+    },
+    "de": {
+     "t": "Authenticator-Apps",
+     "g": "Lerne Apps kennen, die zeitbasierte Codes auf dem Handy für sicherere Logins erzeugen.",
+     "p": [
+      "Eine Authenticator-App zeigt einen sechsstelligen Code, der sich etwa alle 30 Sekunden ändert.",
+      "Sie funktioniert offline und hängt nicht davon ab, dass SMS ankommen.",
+      "Bei vielen Konten scannst du einmal einen Einrichtungscode, dann macht die App den Rest."
+     ],
+     "q": "Würdest du lieber einen SMS-Code oder einen App-Code nutzen, und warum?",
+     "c": "Challenge: Lies im App-Store deines Handys die Beschreibung einer bekannten Authenticator-App."
+    },
+    "es": {
+     "t": "Apps de autenticación",
+     "g": "Conoce apps que generan códigos temporales en tu móvil para accesos más seguros.",
+     "p": [
+      "Una app de autenticación muestra un código de seis dígitos que cambia cada unos 30 segundos.",
+      "Funciona sin conexión y no depende de que lleguen mensajes de texto al móvil.",
+      "Muchas cuentas dejan escanear un código de configuración una vez; la app hace el resto."
+     ],
+     "q": "¿Preferirías un código por SMS o de una app, y por qué?",
+     "c": "Reto: lee cómo describe la tienda de apps de tu móvil una app de autenticación conocida."
+    },
+    "fr": {
+     "t": "Applis d'authentification",
+     "g": "Découvre les applis qui génèrent des codes temporaires sur ton téléphone pour des connexions plus sûres.",
+     "p": [
+      "Une appli d'authentification affiche un code à six chiffres qui change toutes les 30 secondes environ.",
+      "Elle marche hors ligne et ne dépend pas de l'arrivée d'un SMS sur ton téléphone.",
+      "Beaucoup de comptes proposent de scanner un code de configuration une fois, l'appli fait le reste."
+     ],
+     "q": "Préférerais-tu un code par SMS ou par appli, et pourquoi ?",
+     "c": "Défi : lis comment la boutique d'applis de ton téléphone décrit une appli d'authentification connue."
+    },
+    "it": {
+     "t": "App di autenticazione",
+     "g": "Conosci le app che generano codici a tempo sul telefono per accessi più sicuri.",
+     "p": [
+      "Un'app di autenticazione mostra un codice di sei cifre che cambia ogni 30 secondi circa.",
+      "Funziona offline e non dipende dall'arrivo di SMS sul telefono.",
+      "Molti account permettono di scansionare un codice di configurazione una volta, poi fa tutto l'app."
+     ],
+     "q": "Preferiresti un codice via SMS o da app, e perché?",
+     "c": "Sfida: leggi come lo store del tuo telefono descrive una nota app di autenticazione."
+    },
+    "pt": {
+     "t": "Aplicações de autenticação",
+     "g": "Conhece aplicações que geram códigos temporários no telemóvel para inícios de sessão mais seguros.",
+     "p": [
+      "Uma aplicação de autenticação mostra um código de seis dígitos que muda a cada 30 segundos.",
+      "Funciona sem ligação e não depende de os SMS chegarem ao telemóvel.",
+      "Muitas contas deixam-te ler um código de configuração uma vez e a aplicação faz o resto."
+     ],
+     "q": "Preferias um código por SMS ou de uma aplicação, e porquê?",
+     "c": "Desafio: lê como a loja de aplicações do teu telemóvel descreve uma aplicação de autenticação conhecida."
+    },
+    "pt_BR": {
+     "t": "Apps de autenticação",
+     "g": "Conheça apps que geram códigos temporários no celular para logins mais seguros.",
+     "p": [
+      "Um app de autenticação mostra um código de seis dígitos que muda a cada 30 segundos.",
+      "Funciona offline e não depende de mensagens de texto chegando ao celular.",
+      "Muitas contas deixam você escanear um código de configuração uma vez e o app faz o resto."
+     ],
+     "q": "Você preferiria um código por SMS ou de um app, e por quê?",
+     "c": "Desafio: leia como a loja de apps do seu celular descreve um app de autenticação conhecido."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Security keys",
+     "g": "Learn about small physical devices that confirm logins and resist fake websites.",
+     "p": [
+      "A security key is a small USB or tap-to-phone device you touch to approve a login.",
+      "It only works with the real website, which makes copycat login pages useless.",
+      "Keep a spare key somewhere safe in case you lose the first one."
+     ],
+     "q": "Do you think you would remember to carry a small key, or would you prefer an app?",
+     "c": "Challenge: check if your main email supports security keys, without buying anything yet."
+    },
+    "de": {
+     "t": "Sicherheitsschlüssel",
+     "g": "Lerne kleine physische Geräte kennen, die Logins bestätigen und gefälschte Webseiten abwehren.",
+     "p": [
+      "Ein Sicherheitsschlüssel ist ein kleines USB- oder Tipp-Gerät, das du zur Bestätigung berührst.",
+      "Er funktioniert nur mit der echten Webseite, wodurch nachgebaute Login-Seiten nutzlos werden.",
+      "Bewahre einen Ersatzschlüssel sicher auf, falls du den ersten verlierst."
+     ],
+     "q": "Würdest du daran denken, einen kleinen Schlüssel mitzunehmen, oder lieber eine App nutzen?",
+     "c": "Challenge: Prüfe, ob deine Haupt-E-Mail Sicherheitsschlüssel unterstützt, ohne schon etwas zu kaufen."
+    },
+    "es": {
+     "t": "Llaves de seguridad",
+     "g": "Conoce pequeños dispositivos físicos que confirman accesos y resisten sitios falsos.",
+     "p": [
+      "Una llave de seguridad es un pequeño dispositivo USB o de contacto que tocas para aprobar el acceso.",
+      "Solo funciona con el sitio real, lo que inutiliza las páginas de acceso falsas.",
+      "Guarda una llave de repuesto en un lugar seguro por si pierdes la primera."
+     ],
+     "q": "¿Crees que te acordarías de llevar una llave pequeña o prefieres una app?",
+     "c": "Reto: comprueba si tu correo principal admite llaves de seguridad, sin comprar nada aún."
+    },
+    "fr": {
+     "t": "Clés de sécurité",
+     "g": "Découvre de petits appareils physiques qui confirment les connexions et résistent aux faux sites.",
+     "p": [
+      "Une clé de sécurité est un petit appareil USB ou sans contact que tu touches pour valider la connexion.",
+      "Elle ne marche qu'avec le vrai site, ce qui rend les fausses pages de connexion inutiles.",
+      "Garde une clé de secours en lieu sûr au cas où tu perdrais la première."
+     ],
+     "q": "Penserais-tu à emporter une petite clé, ou préférerais-tu une appli ?",
+     "c": "Défi : vérifie si ton e-mail principal accepte les clés de sécurité, sans rien acheter pour l'instant."
+    },
+    "it": {
+     "t": "Chiavi di sicurezza",
+     "g": "Scopri piccoli dispositivi fisici che confermano gli accessi e resistono ai siti falsi.",
+     "p": [
+      "Una chiave di sicurezza è un piccolo dispositivo USB o a contatto che tocchi per approvare l'accesso.",
+      "Funziona solo con il sito vero, rendendo inutili le pagine di accesso contraffatte.",
+      "Tieni una chiave di scorta in un posto sicuro nel caso perdessi la prima."
+     ],
+     "q": "Pensi che ti ricorderesti di portare una piccola chiave o preferiresti un'app?",
+     "c": "Sfida: controlla se la tua email principale supporta le chiavi di sicurezza, senza comprare ancora nulla."
+    },
+    "pt": {
+     "t": "Chaves de segurança",
+     "g": "Conhece pequenos dispositivos físicos que confirmam inícios de sessão e resistem a sites falsos.",
+     "p": [
+      "Uma chave de segurança é um pequeno dispositivo USB ou de toque que tocas para aprovar o acesso.",
+      "Só funciona com o site verdadeiro, o que torna inúteis as páginas de acesso falsas.",
+      "Guarda uma chave de reserva num local seguro, caso percas a primeira."
+     ],
+     "q": "Achas que te lembrarias de levar uma chave pequena ou preferias uma aplicação?",
+     "c": "Desafio: verifica se o teu email principal suporta chaves de segurança, sem comprar nada ainda."
+    },
+    "pt_BR": {
+     "t": "Chaves de segurança",
+     "g": "Conheça pequenos dispositivos físicos que confirmam logins e resistem a sites falsos.",
+     "p": [
+      "Uma chave de segurança é um pequeno dispositivo USB ou de toque que você encosta para aprovar o login.",
+      "Ela só funciona com o site verdadeiro, o que deixa inúteis as páginas de login falsas.",
+      "Guarde uma chave reserva em local seguro, caso perca a primeira."
+     ],
+     "q": "Você acha que lembraria de levar uma chave pequena ou preferiria um app?",
+     "c": "Desafio: veja se seu e-mail principal aceita chaves de segurança, sem comprar nada ainda."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Passkeys explained",
+     "g": "Discover a newer login method that uses your device and fingerprint or face.",
+     "p": [
+      "A passkey replaces the password with a secret stored on your device.",
+      "You approve with your fingerprint, face or screen lock, and nothing can be guessed.",
+      "Passkeys only work on the real site, which helps against phishing."
+     ],
+     "q": "Have you ever been offered a passkey when logging in? Did you try it?",
+     "c": "Challenge: look for a passkey option in one account you use and read what it says."
+    },
+    "de": {
+     "t": "Passkeys erklärt",
+     "g": "Entdecke eine neuere Anmeldemethode mit deinem Gerät und Fingerabdruck oder Gesicht.",
+     "p": [
+      "Ein Passkey ersetzt das Passwort durch ein Geheimnis, das auf deinem Gerät liegt.",
+      "Du bestätigst mit Fingerabdruck, Gesicht oder Bildschirmsperre, und nichts lässt sich erraten.",
+      "Passkeys funktionieren nur auf der echten Seite, was gegen Phishing hilft."
+     ],
+     "q": "Wurde dir beim Anmelden schon ein Passkey angeboten? Hast du ihn ausprobiert?",
+     "c": "Challenge: Suche bei einem deiner Konten nach einer Passkey-Option und lies, was dort steht."
+    },
+    "es": {
+     "t": "Las passkeys, explicadas",
+     "g": "Descubre un método de acceso más nuevo que usa tu dispositivo y tu huella o rostro.",
+     "p": [
+      "Una passkey sustituye la contraseña por un secreto guardado en tu dispositivo.",
+      "Apruebas con huella, rostro o bloqueo de pantalla, y no hay nada que adivinar.",
+      "Las passkeys solo funcionan en el sitio real, lo que ayuda contra el phishing."
+     ],
+     "q": "¿Te han ofrecido alguna vez una passkey al entrar? ¿La probaste?",
+     "c": "Reto: busca la opción de passkey en una cuenta que uses y lee lo que dice."
+    },
+    "fr": {
+     "t": "Les passkeys, expliquées",
+     "g": "Découvre une méthode de connexion plus récente basée sur ton appareil et ton empreinte ou ton visage.",
+     "p": [
+      "Une passkey remplace le mot de passe par un secret stocké sur ton appareil.",
+      "Tu valides avec empreinte, visage ou code d'écran, et rien ne peut être deviné.",
+      "Les passkeys ne marchent que sur le vrai site, ce qui aide contre l'hameçonnage."
+     ],
+     "q": "T'a-t-on déjà proposé une passkey à la connexion ? L'as-tu essayée ?",
+     "c": "Défi : cherche l'option passkey sur un de tes comptes et lis ce qu'elle indique."
+    },
+    "it": {
+     "t": "Le passkey spiegate",
+     "g": "Scopri un metodo di accesso più recente che usa il dispositivo e impronta o volto.",
+     "p": [
+      "Una passkey sostituisce la password con un segreto salvato sul tuo dispositivo.",
+      "Approvi con impronta, volto o blocco schermo e non c'è nulla da indovinare.",
+      "Le passkey funzionano solo sul sito vero, il che aiuta contro il phishing."
+     ],
+     "q": "Ti è mai stata proposta una passkey all'accesso? L'hai provata?",
+     "c": "Sfida: cerca l'opzione passkey in un account che usi e leggi cosa dice."
+    },
+    "pt": {
+     "t": "As passkeys explicadas",
+     "g": "Descobre um método de acesso mais recente que usa o teu dispositivo e a impressão digital ou o rosto.",
+     "p": [
+      "Uma passkey substitui a palavra-passe por um segredo guardado no teu dispositivo.",
+      "Aprovas com impressão digital, rosto ou bloqueio de ecrã e não há nada para adivinhar.",
+      "As passkeys só funcionam no site verdadeiro, o que ajuda contra o phishing."
+     ],
+     "q": "Já te ofereceram uma passkey ao entrares? Experimentaste?",
+     "c": "Desafio: procura a opção de passkey numa conta que uses e lê o que diz."
+    },
+    "pt_BR": {
+     "t": "Passkeys explicadas",
+     "g": "Descubra um método de login mais novo que usa seu aparelho e a digital ou o rosto.",
+     "p": [
+      "Uma passkey substitui a senha por um segredo guardado no seu aparelho.",
+      "Você aprova com digital, rosto ou bloqueio de tela, e não há nada para adivinhar.",
+      "Passkeys só funcionam no site verdadeiro, o que ajuda contra phishing."
+     ],
+     "q": "Já ofereceram uma passkey quando você entrou? Você testou?",
+     "c": "Desafio: procure a opção de passkey em uma conta que você usa e leia o que diz."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Backup codes",
+     "g": "Save recovery codes safely so you are never locked out of your account.",
+     "p": [
+      "Backup codes are one-time codes you get when you turn on two-step login.",
+      "They let you in if you lose your phone, so they matter as much as the password.",
+      "Store them offline or in your manager, never in a plain note anyone could open."
+     ],
+     "q": "Where would be a safe place at home to keep something like recovery codes?",
+     "c": "Challenge: check whether one account lets you view or create backup codes, and store them safely."
+    },
+    "de": {
+     "t": "Backup-Codes",
+     "g": "Speichere Wiederherstellungscodes sicher, damit du nie aus deinem Konto ausgesperrt bist.",
+     "p": [
+      "Backup-Codes sind Einmalcodes, die du beim Einschalten der Zwei-Schritt-Anmeldung erhältst.",
+      "Sie lassen dich ein, wenn du dein Handy verlierst, sind also so wichtig wie das Passwort.",
+      "Bewahre sie offline oder im Manager auf, nie in einer offenen Notiz."
+     ],
+     "q": "Wo wäre bei dir zu Hause ein sicherer Platz für so etwas wie Wiederherstellungscodes?",
+     "c": "Challenge: Prüfe, ob ein Konto Backup-Codes anbietet, und bewahre sie sicher auf."
+    },
+    "es": {
+     "t": "Códigos de respaldo",
+     "g": "Guarda los códigos de recuperación de forma segura para no quedarte nunca fuera de tu cuenta.",
+     "p": [
+      "Los códigos de respaldo son códigos de un solo uso que recibes al activar el acceso en dos pasos.",
+      "Te dejan entrar si pierdes el móvil, así que importan tanto como la clave.",
+      "Guárdalos sin conexión o en tu gestor, nunca en una nota abierta que cualquiera vea."
+     ],
+     "q": "¿Cuál sería un lugar seguro en casa para guardar algo como códigos de recuperación?",
+     "c": "Reto: mira si una cuenta permite ver o crear códigos de respaldo y guárdalos con seguridad."
+    },
+    "fr": {
+     "t": "Codes de secours",
+     "g": "Conserve tes codes de récupération en lieu sûr pour ne jamais être bloqué hors de ton compte.",
+     "p": [
+      "Les codes de secours sont des codes à usage unique reçus à l'activation de la double authentification.",
+      "Ils te laissent entrer si tu perds ton téléphone : ils comptent autant que le mot de passe.",
+      "Garde-les hors ligne ou dans ton gestionnaire, jamais dans une note ouverte à tous."
+     ],
+     "q": "Quel serait chez toi un endroit sûr pour garder des codes de récupération ?",
+     "c": "Défi : regarde si un compte permet d'afficher ou créer des codes de secours et range-les en sécurité."
+    },
+    "it": {
+     "t": "Codici di backup",
+     "g": "Salva i codici di recupero in modo sicuro per non restare mai fuori dal tuo account.",
+     "p": [
+      "I codici di backup sono codici monouso che ricevi quando attivi l'accesso in due passaggi.",
+      "Ti fanno entrare se perdi il telefono, quindi contano quanto la password.",
+      "Conservali offline o nel gestore, mai in una nota aperta a chiunque."
+     ],
+     "q": "Quale sarebbe un posto sicuro in casa per conservare qualcosa come i codici di recupero?",
+     "c": "Sfida: verifica se un account permette di vedere o creare codici di backup e conservali al sicuro."
+    },
+    "pt": {
+     "t": "Códigos de segurança de reserva",
+     "g": "Guarda os códigos de recuperação em segurança para nunca ficares fora da tua conta.",
+     "p": [
+      "Os códigos de reserva são códigos de uso único que recebes ao ativar o início de sessão em dois passos.",
+      "Deixam-te entrar se perderes o telemóvel, por isso importam tanto como a palavra-passe.",
+      "Guarda-os offline ou no gestor, nunca numa nota aberta que qualquer um veja."
+     ],
+     "q": "Qual seria um local seguro em casa para guardar algo como códigos de recuperação?",
+     "c": "Desafio: vê se uma conta permite ver ou criar códigos de reserva e guarda-os em segurança."
+    },
+    "pt_BR": {
+     "t": "Códigos de backup",
+     "g": "Guarde os códigos de recuperação com segurança para nunca ficar de fora da sua conta.",
+     "p": [
+      "Códigos de backup são códigos de uso único que você recebe ao ativar o login em duas etapas.",
+      "Eles deixam você entrar se perder o celular, então importam tanto quanto a senha.",
+      "Guarde-os offline ou no gerenciador, nunca em uma nota aberta que qualquer um veja."
+     ],
+     "q": "Qual seria um lugar seguro em casa para guardar algo como códigos de recuperação?",
+     "c": "Desafio: veja se uma conta permite ver ou criar códigos de backup e guarde-os com segurança."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Turning on two-factor step by step",
+     "g": "Find the setting in common accounts and enable it with confidence.",
+     "p": [
+      "Look in Settings under Security, Login or Account, for two-step verification.",
+      "Choose an authenticator app if offered, or a text code if that is the only option.",
+      "Save the backup codes right away, then test by logging in once more."
+     ],
+     "q": "Which account will you protect first with a second step?",
+     "c": "Challenge: turn on two-step login for one account today and save its backup codes."
+    },
+    "de": {
+     "t": "Zwei-Faktor Schritt für Schritt aktivieren",
+     "g": "Finde die Einstellung bei gängigen Konten und aktiviere sie mit Zuversicht.",
+     "p": [
+      "Suche in den Einstellungen unter Sicherheit, Anmeldung oder Konto nach der Zwei-Schritt-Bestätigung.",
+      "Wähle eine Authenticator-App, wenn möglich, oder einen SMS-Code, falls es nur das gibt.",
+      "Speichere sofort die Backup-Codes und teste die Anmeldung einmal erneut."
+     ],
+     "q": "Welches Konto schützt du als Erstes mit einem zweiten Schritt?",
+     "c": "Challenge: Aktiviere heute bei einem Konto die Zwei-Schritt-Anmeldung und speichere die Backup-Codes."
+    },
+    "es": {
+     "t": "Activar la verificación en dos pasos",
+     "g": "Encuentra el ajuste en cuentas comunes y actívalo con confianza.",
+     "p": [
+      "Busca en Ajustes, en Seguridad, Acceso o Cuenta, la verificación en dos pasos.",
+      "Elige una app de autenticación si la ofrecen, o un código por SMS si es la única opción.",
+      "Guarda enseguida los códigos de respaldo y prueba entrando una vez más."
+     ],
+     "q": "¿Qué cuenta protegerás primero con un segundo paso?",
+     "c": "Reto: activa hoy el acceso en dos pasos en una cuenta y guarda sus códigos de respaldo."
+    },
+    "fr": {
+     "t": "Activer la double authentification pas à pas",
+     "g": "Trouve le réglage dans les comptes courants et active-le en confiance.",
+     "p": [
+      "Cherche dans Paramètres, sous Sécurité, Connexion ou Compte, la validation en deux étapes.",
+      "Choisis une appli d'authentification si elle est proposée, sinon un code SMS.",
+      "Enregistre aussitôt les codes de secours, puis teste en te reconnectant une fois."
+     ],
+     "q": "Quel compte protégeras-tu en premier avec une deuxième étape ?",
+     "c": "Défi : active aujourd'hui la double authentification sur un compte et range ses codes de secours."
+    },
+    "it": {
+     "t": "Attivare l'accesso in due passaggi",
+     "g": "Trova l'impostazione negli account comuni e attivala con sicurezza.",
+     "p": [
+      "Cerca nelle Impostazioni, sotto Sicurezza, Accesso o Account, la verifica in due passaggi.",
+      "Scegli un'app di autenticazione se disponibile, o un codice SMS se è l'unica opzione.",
+      "Salva subito i codici di backup, poi prova accedendo ancora una volta."
+     ],
+     "q": "Quale account proteggerai per primo con un secondo passaggio?",
+     "c": "Sfida: attiva oggi l'accesso in due passaggi su un account e salva i suoi codici di backup."
+    },
+    "pt": {
+     "t": "Ativar o início de sessão em dois passos",
+     "g": "Encontra a definição nas contas comuns e ativa-a com confiança.",
+     "p": [
+      "Procura em Definições, em Segurança, Início de sessão ou Conta, a verificação em dois passos.",
+      "Escolhe uma aplicação de autenticação se houver, ou um código por SMS se for a única opção.",
+      "Guarda logo os códigos de reserva e testa entrando mais uma vez."
+     ],
+     "q": "Que conta vais proteger primeiro com um segundo passo?",
+     "c": "Desafio: ativa hoje o início de sessão em dois passos numa conta e guarda os códigos de reserva."
+    },
+    "pt_BR": {
+     "t": "Ativar o login em duas etapas",
+     "g": "Encontre a configuração em contas comuns e ative com confiança.",
+     "p": [
+      "Procure em Configurações, em Segurança, Login ou Conta, a verificação em duas etapas.",
+      "Escolha um app de autenticação se houver, ou um código por SMS se for a única opção.",
+      "Guarde logo os códigos de backup e teste entrando mais uma vez."
+     ],
+     "q": "Qual conta você vai proteger primeiro com uma segunda etapa?",
+     "c": "Desafio: ative hoje o login em duas etapas em uma conta e guarde os códigos de backup."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Never share your codes",
+     "g": "Remember that no real company will ask you to read out a login code.",
+     "p": [
+      "A login code is for you alone; anyone asking for it is trying to get into your account.",
+      "Scammers may pose as your bank or a delivery firm and say they need it urgently.",
+      "If someone asks, hang up or stop replying, then contact the company through its official app."
+     ],
+     "q": "Has anyone ever asked you for a code? How did you react?",
+     "c": "Challenge: tell one family member or friend that real companies never ask for login codes."
+    },
+    "de": {
+     "t": "Codes niemals weitergeben",
+     "g": "Merke dir: Keine echte Firma bittet dich, einen Login-Code vorzulesen.",
+     "p": [
+      "Ein Login-Code ist nur für dich; wer ihn verlangt, will in dein Konto.",
+      "Betrüger geben sich als Bank oder Paketdienst aus und behaupten, sie bräuchten ihn dringend.",
+      "Wenn jemand fragt, leg auf oder antworte nicht mehr und melde dich über die offizielle App."
+     ],
+     "q": "Hat dich schon einmal jemand nach einem Code gefragt? Wie hast du reagiert?",
+     "c": "Challenge: Sag einer Person aus Familie oder Freundeskreis, dass echte Firmen nie nach Login-Codes fragen."
+    },
+    "es": {
+     "t": "Nunca compartas tus códigos",
+     "g": "Recuerda que ninguna empresa real te pedirá que leas un código de acceso.",
+     "p": [
+      "Un código de acceso es solo para ti; quien lo pide intenta entrar en tu cuenta.",
+      "Los estafadores pueden hacerse pasar por tu banco o un servicio de paquetería y decir que lo necesitan ya.",
+      "Si alguien lo pide, cuelga o deja de responder y contacta con la empresa por su app oficial."
+     ],
+     "q": "¿Alguien te ha pedido alguna vez un código? ¿Cómo reaccionaste?",
+     "c": "Reto: dile a un familiar o amigo que las empresas reales nunca piden códigos de acceso."
+    },
+    "fr": {
+     "t": "Ne partage jamais tes codes",
+     "g": "Souviens-toi qu'aucune vraie entreprise ne te demandera de lire un code de connexion.",
+     "p": [
+      "Un code de connexion n'est que pour toi : qui le demande veut entrer dans ton compte.",
+      "Des escrocs se font passer pour ta banque ou un livreur et disent en avoir besoin d'urgence.",
+      "Si on te le demande, raccroche ou cesse de répondre, puis contacte l'entreprise via son appli officielle."
+     ],
+     "q": "Quelqu'un t'a-t-il déjà demandé un code ? Comment as-tu réagi ?",
+     "c": "Défi : dis à un proche ou un ami que les vraies entreprises ne demandent jamais de codes de connexion."
+    },
+    "it": {
+     "t": "Non condividere mai i tuoi codici",
+     "g": "Ricorda che nessuna azienda vera ti chiederà di leggere un codice di accesso.",
+     "p": [
+      "Un codice di accesso è solo per te: chi lo chiede cerca di entrare nel tuo account.",
+      "I truffatori possono fingersi la tua banca o un corriere e dire che serve subito.",
+      "Se qualcuno lo chiede, riattacca o smetti di rispondere e contatta l'azienda tramite l'app ufficiale."
+     ],
+     "q": "Qualcuno ti ha mai chiesto un codice? Come hai reagito?",
+     "c": "Sfida: di' a un familiare o amico che le aziende vere non chiedono mai codici di accesso."
+    },
+    "pt": {
+     "t": "Nunca partilhes os teus códigos",
+     "g": "Lembra-te de que nenhuma empresa verdadeira te pede para ler um código de acesso.",
+     "p": [
+      "Um código de acesso é só para ti; quem o pede quer entrar na tua conta.",
+      "Os burlões podem fingir ser o teu banco ou uma transportadora e dizer que precisam dele já.",
+      "Se alguém pedir, desliga ou deixa de responder e contacta a empresa pela aplicação oficial."
+     ],
+     "q": "Alguém já te pediu um código? Como reagiste?",
+     "c": "Desafio: diz a um familiar ou amigo que as empresas verdadeiras nunca pedem códigos de acesso."
+    },
+    "pt_BR": {
+     "t": "Nunca compartilhe seus códigos",
+     "g": "Lembre que nenhuma empresa de verdade pede para você ler um código de login.",
+     "p": [
+      "Um código de login é só para você; quem o pede quer entrar na sua conta.",
+      "Golpistas podem se passar pelo seu banco ou por uma transportadora e dizer que precisam dele já.",
+      "Se alguém pedir, desligue ou pare de responder e fale com a empresa pelo app oficial."
+     ],
+     "q": "Alguém já pediu um código a você? Como você reagiu?",
+     "c": "Desafio: diga a um familiar ou amigo que empresas de verdade nunca pedem códigos de login."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Two-factor on your main email",
+     "g": "Protect your most important account with a second step today.",
+     "p": [
+      "Your main email can reset many other accounts, so it deserves the strongest protection.",
+      "Turn on two-step login there first, ideally with an authenticator app.",
+      "Check that your recovery phone number and recovery email are up to date."
+     ],
+     "q": "What is the biggest thing that would stop you from doing this today?",
+     "c": "Challenge: enable two-step login on your main email and save its backup codes."
+    },
+    "de": {
+     "t": "Zwei-Faktor für deine Haupt-E-Mail",
+     "g": "Schütze dein wichtigstes Konto heute mit einem zweiten Schritt.",
+     "p": [
+      "Deine Haupt-E-Mail kann viele andere Konten zurücksetzen und verdient den besten Schutz.",
+      "Schalte dort zuerst die Zwei-Schritt-Anmeldung ein, am besten mit einer Authenticator-App.",
+      "Prüfe, ob Wiederherstellungs-Nummer und -E-Mail aktuell sind."
+     ],
+     "q": "Was würde dich am ehesten davon abhalten, das heute zu tun?",
+     "c": "Challenge: Aktiviere die Zwei-Schritt-Anmeldung für deine Haupt-E-Mail und speichere die Backup-Codes."
+    },
+    "es": {
+     "t": "Dos pasos en tu correo principal",
+     "g": "Protege hoy tu cuenta más importante con un segundo paso.",
+     "p": [
+      "Tu correo principal puede restablecer muchas otras cuentas, así que merece la mejor protección.",
+      "Activa ahí primero el acceso en dos pasos, idealmente con una app de autenticación.",
+      "Comprueba que tu teléfono y correo de recuperación estén al día."
+     ],
+     "q": "¿Qué sería lo que más te frenaría para hacerlo hoy?",
+     "c": "Reto: activa el acceso en dos pasos en tu correo principal y guarda sus códigos de respaldo."
+    },
+    "fr": {
+     "t": "Double authentification sur ton e-mail principal",
+     "g": "Protège aujourd'hui ton compte le plus important avec une deuxième étape.",
+     "p": [
+      "Ton e-mail principal peut réinitialiser beaucoup d'autres comptes : il mérite la meilleure protection.",
+      "Active-y d'abord la double authentification, idéalement avec une appli d'authentification.",
+      "Vérifie que ton numéro et ton e-mail de récupération sont à jour."
+     ],
+     "q": "Qu'est-ce qui t'empêcherait le plus de le faire aujourd'hui ?",
+     "c": "Défi : active la double authentification sur ton e-mail principal et range ses codes de secours."
+    },
+    "it": {
+     "t": "Due passaggi sulla tua email principale",
+     "g": "Proteggi oggi il tuo account più importante con un secondo passaggio.",
+     "p": [
+      "La tua email principale può reimpostare molti altri account, quindi merita la protezione migliore.",
+      "Attiva lì per prima la verifica in due passaggi, meglio con un'app di autenticazione.",
+      "Controlla che telefono ed email di recupero siano aggiornati."
+     ],
+     "q": "Cosa ti frenerebbe di più dal farlo oggi?",
+     "c": "Sfida: attiva l'accesso in due passaggi sulla tua email principale e salva i codici di backup."
+    },
+    "pt": {
+     "t": "Dois passos no teu email principal",
+     "g": "Protege hoje a tua conta mais importante com um segundo passo.",
+     "p": [
+      "O teu email principal pode repor muitas outras contas, por isso merece a melhor proteção.",
+      "Ativa aí primeiro o início de sessão em dois passos, de preferência com uma aplicação de autenticação.",
+      "Verifica se o telefone e o email de recuperação estão atualizados."
+     ],
+     "q": "O que mais te travaria para o fazeres hoje?",
+     "c": "Desafio: ativa o início de sessão em dois passos no email principal e guarda os códigos de reserva."
+    },
+    "pt_BR": {
+     "t": "Dois passos no seu e-mail principal",
+     "g": "Proteja hoje a sua conta mais importante com uma segunda etapa.",
+     "p": [
+      "Seu e-mail principal pode redefinir muitas outras contas, então merece a melhor proteção.",
+      "Ative lá primeiro o login em duas etapas, de preferência com um app de autenticação.",
+      "Confira se o telefone e o e-mail de recuperação estão atualizados."
+     ],
+     "q": "O que mais seguraria você para fazer isso hoje?",
+     "c": "Desafio: ative o login em duas etapas no seu e-mail principal e guarde os códigos de backup."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: passwords and logins",
+     "g": "Recap passwords, managers and two-factor with a quick friendly quiz.",
+     "p": [
+      "Quick recap: long, unique passwords; a manager to remember them; two steps to log in.",
+      "Quiz yourself: why is reuse risky, and what should you never share? Codes.",
+      "You have built real habits in 30 days, so celebrate the progress you have made."
+     ],
+     "q": "Which of the past lessons felt the most useful for you so far?",
+     "c": "Challenge: explain one thing you learned this month to someone else in your own words."
+    },
+    "de": {
+     "t": "Wiederholung: Passwörter und Logins",
+     "g": "Wiederhole Passwörter, Manager und Zwei-Faktor mit einem kurzen, freundlichen Quiz.",
+     "p": [
+      "Kurz zusammengefasst: lange, einzigartige Passwörter; ein Manager zum Merken; zwei Schritte beim Login.",
+      "Frag dich selbst: Warum ist Wiederverwendung riskant, und was gibst du nie weiter? Codes.",
+      "Du hast in 30 Tagen echte Gewohnheiten aufgebaut, feiere diesen Fortschritt."
+     ],
+     "q": "Welche der bisherigen Lektionen war für dich bisher am nützlichsten?",
+     "c": "Challenge: Erkläre jemandem mit eigenen Worten eine Sache, die du diesen Monat gelernt hast."
+    },
+    "es": {
+     "t": "Repaso: contraseñas y accesos",
+     "g": "Repasa claves, gestores y verificación en dos pasos con un quiz breve y amable.",
+     "p": [
+      "Resumen: claves largas y únicas; un gestor que las recuerde; dos pasos para entrar.",
+      "Pregúntate: ¿por qué es arriesgado repetir una clave y qué no compartes nunca? Los códigos.",
+      "Has creado hábitos reales en 30 días, así que celebra lo que has avanzado."
+     ],
+     "q": "¿Cuál de las lecciones anteriores te ha parecido más útil hasta ahora?",
+     "c": "Reto: explica a otra persona, con tus palabras, algo que hayas aprendido este mes."
+    },
+    "fr": {
+     "t": "Révision : mots de passe et connexions",
+     "g": "Révise mots de passe, gestionnaires et double authentification avec un petit quiz sympa.",
+     "p": [
+      "En bref : mots de passe longs et uniques ; un gestionnaire pour les retenir ; deux étapes pour se connecter.",
+      "Interroge-toi : pourquoi la réutilisation est-elle risquée, et que ne partage-t-on jamais ? Les codes.",
+      "Tu as construit de vrais réflexes en 30 jours : célèbre tes progrès."
+     ],
+     "q": "Laquelle des leçons passées t'a paru la plus utile jusqu'ici ?",
+     "c": "Défi : explique à quelqu'un, avec tes mots, une chose apprise ce mois-ci."
+    },
+    "it": {
+     "t": "Ripasso: password e accessi",
+     "g": "Ripassa password, gestori e verifica in due passaggi con un breve quiz amichevole.",
+     "p": [
+      "In breve: password lunghe e uniche; un gestore per ricordarle; due passaggi per accedere.",
+      "Chiediti: perché il riuso è rischioso e cosa non si condivide mai? I codici.",
+      "In 30 giorni hai costruito abitudini concrete, quindi festeggia i tuoi progressi."
+     ],
+     "q": "Quale delle lezioni passate ti è sembrata più utile finora?",
+     "c": "Sfida: spiega a qualcuno, con parole tue, una cosa imparata questo mese."
+    },
+    "pt": {
+     "t": "Revisão: palavras-passe e inícios de sessão",
+     "g": "Revê palavras-passe, gestores e dois passos com um quiz curto e simpático.",
+     "p": [
+      "Em resumo: palavras-passe longas e únicas; um gestor para as lembrar; dois passos para entrar.",
+      "Pergunta-te: porque é arriscado repetir e o que nunca se partilha? Os códigos.",
+      "Criaste hábitos reais em 30 dias, por isso celebra o progresso."
+     ],
+     "q": "Qual das lições anteriores te pareceu mais útil até agora?",
+     "c": "Desafio: explica a alguém, por palavras tuas, uma coisa que aprendeste este mês."
+    },
+    "pt_BR": {
+     "t": "Revisão: senhas e logins",
+     "g": "Revise senhas, gerenciadores e duas etapas com um quiz curto e amigável.",
+     "p": [
+      "Resumindo: senhas longas e únicas; um gerenciador para lembrá-las; duas etapas para entrar.",
+      "Pergunte-se: por que repetir é arriscado e o que nunca se compartilha? Os códigos.",
+      "Você criou hábitos reais em 30 dias, então comemore o progresso."
+     ],
+     "q": "Qual das lições anteriores pareceu mais útil para você até agora?",
+     "c": "Desafio: explique a alguém, com suas palavras, uma coisa que aprendeu neste mês."
+    }
+   }
+  }
+ ]
+}

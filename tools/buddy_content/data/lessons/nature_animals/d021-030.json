@@ -1,0 +1,835 @@
+{
+ "topic": "nature_animals",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How plants make food",
+     "g": "Understand photosynthesis in plain words: light, water and air become sugar.",
+     "p": [
+      "Leaves catch sunlight and use it to turn water and carbon dioxide into sugar.",
+      "The process releases oxygen, the gas that most animals need to breathe.",
+      "Green chlorophyll in the leaves absorbs the light, which is why most leaves look green."
+     ],
+     "q": "If you were a plant for a day, where would you want to stand to get the most light?",
+     "c": "Compare a plant in a bright spot with one in shade and note which looks fuller."
+    },
+    "de": {
+     "t": "Wie Pflanzen Nahrung herstellen",
+     "g": "Fotosynthese einfach verstehen: Licht, Wasser und Luft werden zu Zucker.",
+     "p": [
+      "Blätter fangen Sonnenlicht ein und machen daraus Zucker aus Wasser und Kohlendioxid.",
+      "Dabei entsteht Sauerstoff, das Gas, das die meisten Tiere zum Atmen brauchen.",
+      "Das grüne Chlorophyll in den Blättern nimmt das Licht auf, darum sind Blätter meist grün."
+     ],
+     "q": "Wo würdest du als Pflanze am liebsten stehen, um möglichst viel Licht zu bekommen?",
+     "c": "Vergleiche eine Pflanze im Hellen mit einer im Schatten und notiere, welche kräftiger wirkt."
+    },
+    "es": {
+     "t": "Cómo fabrican alimento las plantas",
+     "g": "Entender la fotosíntesis con palabras sencillas: luz, agua y aire se vuelven azúcar.",
+     "p": [
+      "Las hojas atrapan la luz del sol y la usan para convertir agua y dióxido de carbono en azúcar.",
+      "El proceso libera oxígeno, el gas que la mayoría de los animales necesita para respirar.",
+      "La clorofila verde de las hojas absorbe la luz, por eso la mayoría de las hojas son verdes."
+     ],
+     "q": "Si fueras planta por un día, ¿dónde te pondrías para recibir más luz?",
+     "c": "Compara una planta en un lugar luminoso con otra a la sombra y anota cuál se ve más frondosa."
+    },
+    "fr": {
+     "t": "Comment les plantes fabriquent leur nourriture",
+     "g": "Comprendre la photosynthèse simplement : lumière, eau et air deviennent du sucre.",
+     "p": [
+      "Les feuilles captent la lumière du soleil pour transformer l'eau et le dioxyde de carbone en sucre.",
+      "Le processus libère de l'oxygène, le gaz dont la plupart des animaux ont besoin pour respirer.",
+      "La chlorophylle verte des feuilles absorbe la lumière, d'où leur couleur verte."
+     ],
+     "q": "Si tu étais une plante, où te placerais-tu pour avoir le plus de lumière ?",
+     "c": "Compare une plante au soleil et une plante à l'ombre et note laquelle paraît la plus fournie."
+    },
+    "it": {
+     "t": "Come le piante producono cibo",
+     "g": "Capire la fotosintesi in parole semplici: luce, acqua e aria diventano zucchero.",
+     "p": [
+      "Le foglie catturano la luce solare e la usano per trasformare acqua e anidride carbonica in zucchero.",
+      "Il processo libera ossigeno, il gas di cui la maggior parte degli animali ha bisogno per respirare.",
+      "La clorofilla verde delle foglie assorbe la luce, per questo la maggior parte delle foglie è verde."
+     ],
+     "q": "Se fossi una pianta per un giorno, dove ti metteresti per ricevere più luce?",
+     "c": "Confronta una pianta in un punto luminoso con una all'ombra e annota quale sembra più rigogliosa."
+    },
+    "pt": {
+     "t": "Como as plantas fazem alimento",
+     "g": "Perceber a fotossíntese em palavras simples: luz, água e ar tornam-se açúcar.",
+     "p": [
+      "As folhas captam a luz do sol e usam-na para transformar água e dióxido de carbono em açúcar.",
+      "O processo liberta oxigénio, o gás de que a maioria dos animais precisa para respirar.",
+      "A clorofila verde das folhas absorve a luz, por isso a maioria das folhas é verde."
+     ],
+     "q": "Se fosses uma planta por um dia, onde te porias para receber mais luz?",
+     "c": "Compara uma planta num sítio luminoso com outra à sombra e anota qual parece mais viçosa."
+    },
+    "pt_BR": {
+     "t": "Como as plantas fazem alimento",
+     "g": "Entender a fotossíntese em palavras simples: luz, água e ar viram açúcar.",
+     "p": [
+      "As folhas captam a luz do sol e a usam para transformar água e dióxido de carbono em açúcar.",
+      "O processo libera oxigênio, o gás de que a maioria dos animais precisa para respirar.",
+      "A clorofila verde das folhas absorve a luz, por isso a maioria das folhas é verde."
+     ],
+     "q": "Se você fosse uma planta por um dia, onde ficaria para receber mais luz?",
+     "c": "Compare uma planta num lugar claro com outra na sombra e anote qual parece mais viçosa."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Roots, stems and leaves",
+     "g": "Learn the three main plant parts and the job each one does.",
+     "p": [
+      "Roots anchor the plant and soak up water and minerals from the soil.",
+      "Stems hold the plant up and carry water and sugar between roots and leaves.",
+      "Leaves are the food factories, and tiny pores on them let air in and out."
+     ],
+     "q": "Which part of a plant do you eat most often: root, stem or leaf?",
+     "c": "Gently inspect a small weed or herb and point out its roots, stem and leaves."
+    },
+    "de": {
+     "t": "Wurzeln, Stängel und Blätter",
+     "g": "Die drei Hauptteile der Pflanze kennenlernen und ihre Aufgaben.",
+     "p": [
+      "Wurzeln verankern die Pflanze und saugen Wasser und Mineralstoffe aus dem Boden.",
+      "Stängel halten die Pflanze aufrecht und transportieren Wasser und Zucker zwischen Wurzeln und Blättern.",
+      "Blätter sind die Nahrungsfabriken, und winzige Poren lassen Luft hinein und hinaus."
+     ],
+     "q": "Welchen Pflanzenteil isst du am häufigsten: Wurzel, Stängel oder Blatt?",
+     "c": "Untersuche vorsichtig ein kleines Kraut und zeige Wurzeln, Stängel und Blätter."
+    },
+    "es": {
+     "t": "Raíces, tallos y hojas",
+     "g": "Conocer las tres partes principales de una planta y la función de cada una.",
+     "p": [
+      "Las raíces sujetan la planta y absorben agua y minerales del suelo.",
+      "Los tallos sostienen la planta y llevan agua y azúcar entre raíces y hojas.",
+      "Las hojas son las fábricas de alimento, y diminutos poros dejan entrar y salir el aire."
+     ],
+     "q": "¿Qué parte de una planta comes con más frecuencia: raíz, tallo u hoja?",
+     "c": "Examina con cuidado una hierbita y señala sus raíces, su tallo y sus hojas."
+    },
+    "fr": {
+     "t": "Racines, tiges et feuilles",
+     "g": "Découvrir les trois parties principales d'une plante et le rôle de chacune.",
+     "p": [
+      "Les racines ancrent la plante et puisent l'eau et les minéraux du sol.",
+      "Les tiges soutiennent la plante et transportent eau et sucre entre racines et feuilles.",
+      "Les feuilles sont les usines à nourriture, et de minuscules pores laissent entrer et sortir l'air."
+     ],
+     "q": "Quelle partie de plante manges-tu le plus souvent : racine, tige ou feuille ?",
+     "c": "Examine doucement une petite herbe et montre ses racines, sa tige et ses feuilles."
+    },
+    "it": {
+     "t": "Radici, fusto e foglie",
+     "g": "Conoscere le tre parti principali di una pianta e il compito di ciascuna.",
+     "p": [
+      "Le radici ancorano la pianta e assorbono acqua e minerali dal suolo.",
+      "Il fusto sostiene la pianta e trasporta acqua e zuccheri tra radici e foglie.",
+      "Le foglie sono le fabbriche del cibo, e minuscoli pori fanno entrare e uscire l'aria."
+     ],
+     "q": "Quale parte di una pianta mangi più spesso: radice, fusto o foglia?",
+     "c": "Osserva con delicatezza una piccola erbetta e indica radici, fusto e foglie."
+    },
+    "pt": {
+     "t": "Raízes, caules e folhas",
+     "g": "Conhecer as três partes principais de uma planta e a função de cada uma.",
+     "p": [
+      "As raízes fixam a planta e absorvem água e minerais do solo.",
+      "Os caules sustentam a planta e levam água e açúcar entre raízes e folhas.",
+      "As folhas são as fábricas de alimento, e minúsculos poros deixam entrar e sair o ar."
+     ],
+     "q": "Que parte de uma planta comes com mais frequência: raiz, caule ou folha?",
+     "c": "Examina com cuidado uma pequena erva e aponta as raízes, o caule e as folhas."
+    },
+    "pt_BR": {
+     "t": "Raízes, caules e folhas",
+     "g": "Conhecer as três partes principais de uma planta e a função de cada uma.",
+     "p": [
+      "As raízes fixam a planta e absorvem água e minerais do solo.",
+      "Os caules sustentam a planta e levam água e açúcar entre raízes e folhas.",
+      "As folhas são as fábricas de alimento, e minúsculos poros deixam entrar e sair o ar."
+     ],
+     "q": "Qual parte de uma planta você come com mais frequência: raiz, caule ou folha?",
+     "c": "Examine com cuidado uma ervinha e aponte as raízes, o caule e as folhas."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why flowers exist",
+     "g": "See how petals, nectar and pollen help plants make seeds.",
+     "p": [
+      "Flowers are the plant's way of making seeds, and seeds grow into new plants.",
+      "Bright petals, sweet nectar and scent invite insects and other visitors.",
+      "Pollen carried from flower to flower lets the plant form fertile seeds."
+     ],
+     "q": "What is the most beautiful or best-smelling flower you can remember?",
+     "c": "Look closely at one flower and find its petals, the pollen-bearing parts and the centre."
+    },
+    "de": {
+     "t": "Wozu es Blüten gibt",
+     "g": "Sehen, wie Blütenblätter, Nektar und Pollen Pflanzen bei der Samenbildung helfen.",
+     "p": [
+      "Blüten sind das Mittel der Pflanze, Samen zu bilden, aus denen neue Pflanzen wachsen.",
+      "Bunte Blütenblätter, süßer Nektar und Duft laden Insekten und andere Besucher ein.",
+      "Pollen, der von Blüte zu Blüte getragen wird, lässt fruchtbare Samen entstehen."
+     ],
+     "q": "Welche ist die schönste oder am besten duftende Blume, an die du dich erinnerst?",
+     "c": "Betrachte eine Blüte genau und finde Blütenblätter, Pollenträger und die Mitte."
+    },
+    "es": {
+     "t": "Por qué existen las flores",
+     "g": "Ver cómo pétalos, néctar y polen ayudan a las plantas a hacer semillas.",
+     "p": [
+      "Las flores son la manera que tiene la planta de hacer semillas, que se vuelven nuevas plantas.",
+      "Pétalos vistosos, néctar dulce y perfume invitan a insectos y otros visitantes.",
+      "El polen llevado de flor en flor permite formar semillas fértiles."
+     ],
+     "q": "¿Cuál es la flor más bonita o que mejor huele que recuerdas?",
+     "c": "Mira de cerca una flor y busca sus pétalos, las partes con polen y el centro."
+    },
+    "fr": {
+     "t": "Pourquoi les fleurs existent",
+     "g": "Voir comment pétales, nectar et pollen aident les plantes à faire des graines.",
+     "p": [
+      "Les fleurs sont le moyen qu'a la plante de faire des graines, qui deviendront de nouvelles plantes.",
+      "Pétales vifs, nectar sucré et parfum invitent insectes et autres visiteurs.",
+      "Le pollen transporté de fleur en fleur permet de former des graines fertiles."
+     ],
+     "q": "Quelle est la plus belle fleur, ou celle qui sent le meilleur, dont tu te souviens ?",
+     "c": "Observe une fleur de près et trouve ses pétales, les parties à pollen et le centre."
+    },
+    "it": {
+     "t": "Perché esistono i fiori",
+     "g": "Vedere come petali, nettare e polline aiutano le piante a fare i semi.",
+     "p": [
+      "I fiori sono il modo in cui la pianta fa i semi, che diventano nuove piante.",
+      "Petali vivaci, nettare dolce e profumo invitano insetti e altri visitatori.",
+      "Il polline portato da fiore a fiore permette di formare semi fertili."
+     ],
+     "q": "Qual è il fiore più bello o più profumato che ricordi?",
+     "c": "Osserva da vicino un fiore e trova i petali, le parti con il polline e il centro."
+    },
+    "pt": {
+     "t": "Porque existem as flores",
+     "g": "Ver como pétalas, néctar e pólen ajudam as plantas a fazer sementes.",
+     "p": [
+      "As flores são a forma de a planta fazer sementes, que se tornam novas plantas.",
+      "Pétalas vistosas, néctar doce e perfume convidam insetos e outros visitantes.",
+      "O pólen levado de flor em flor permite formar sementes férteis."
+     ],
+     "q": "Qual é a flor mais bonita ou mais cheirosa de que te lembras?",
+     "c": "Olha de perto para uma flor e encontra as pétalas, as partes com pólen e o centro."
+    },
+    "pt_BR": {
+     "t": "Por que existem as flores",
+     "g": "Ver como pétalas, néctar e pólen ajudam as plantas a fazer sementes.",
+     "p": [
+      "As flores são o jeito de a planta fazer sementes, que viram novas plantas.",
+      "Pétalas vistosas, néctar doce e perfume convidam insetos e outros visitantes.",
+      "O pólen levado de flor em flor permite formar sementes férteis."
+     ],
+     "q": "Qual é a flor mais bonita ou mais cheirosa de que você se lembra?",
+     "c": "Olhe de perto uma flor e ache as pétalas, as partes com pólen e o centro."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pollinators at work",
+     "g": "Meet the bees, butterflies, bats and birds that move pollen between flowers.",
+     "p": [
+      "Bees collect pollen and nectar, and fuzzy hairs on their bodies carry pollen along.",
+      "Butterflies, moths, hoverflies, bats and hummingbirds also pollinate many plants.",
+      "A large share of the food crops we eat depends on animal pollination."
+     ],
+     "q": "Which of your favourite foods do you think needs pollinators?",
+     "c": "Sit near flowers for five minutes and count the different visitors, without touching them."
+    },
+    "de": {
+     "t": "Bestäuber bei der Arbeit",
+     "g": "Bienen, Schmetterlinge, Fledermäuse und Vögel kennenlernen, die Pollen zwischen Blüten tragen.",
+     "p": [
+      "Bienen sammeln Pollen und Nektar, und flauschige Haare an ihrem Körper tragen Pollen weiter.",
+      "Auch Schmetterlinge, Nachtfalter, Schwebfliegen, Fledermäuse und Kolibris bestäuben viele Pflanzen.",
+      "Ein großer Teil unserer Nahrungspflanzen hängt von der Bestäubung durch Tiere ab."
+     ],
+     "q": "Welches deiner Lieblingsessen braucht wohl Bestäuber?",
+     "c": "Setz dich fünf Minuten zu Blumen und zähle die verschiedenen Besucher, ohne sie zu berühren."
+    },
+    "es": {
+     "t": "Polinizadores en acción",
+     "g": "Conocer a las abejas, mariposas, murciélagos y aves que llevan polen entre flores.",
+     "p": [
+      "Las abejas recogen polen y néctar, y los pelillos de su cuerpo transportan polen.",
+      "Mariposas, polillas, sírfidos, murciélagos y colibríes también polinizan muchas plantas.",
+      "Gran parte de los cultivos que comemos depende de la polinización por animales."
+     ],
+     "q": "¿Cuál de tus comidas favoritas crees que necesita polinizadores?",
+     "c": "Siéntate cerca de flores cinco minutos y cuenta los distintos visitantes, sin tocarlos."
+    },
+    "fr": {
+     "t": "Les pollinisateurs au travail",
+     "g": "Rencontrer abeilles, papillons, chauves-souris et oiseaux qui transportent le pollen.",
+     "p": [
+      "Les abeilles récoltent pollen et nectar, et les poils de leur corps transportent le pollen.",
+      "Papillons, phalènes, syrphes, chauves-souris et colibris pollinisent aussi de nombreuses plantes.",
+      "Une grande part des cultures dont nous nous nourrissons dépend de la pollinisation par les animaux."
+     ],
+     "q": "Lequel de tes plats préférés a selon toi besoin des pollinisateurs ?",
+     "c": "Assieds-toi cinq minutes près de fleurs et compte les différents visiteurs, sans les toucher."
+    },
+    "it": {
+     "t": "Gli impollinatori al lavoro",
+     "g": "Conoscere api, farfalle, pipistrelli e uccelli che trasportano il polline tra i fiori.",
+     "p": [
+      "Le api raccolgono polline e nettare, e i peli del loro corpo trasportano il polline.",
+      "Farfalle, falene, sirfidi, pipistrelli e colibrì impollinano anche molte piante.",
+      "Gran parte delle colture che mangiamo dipende dall'impollinazione degli animali."
+     ],
+     "q": "Quale dei tuoi cibi preferiti pensi abbia bisogno degli impollinatori?",
+     "c": "Siediti vicino ai fiori per cinque minuti e conta i diversi visitatori, senza toccarli."
+    },
+    "pt": {
+     "t": "Polinizadores em ação",
+     "g": "Conhecer as abelhas, borboletas, morcegos e aves que levam pólen entre flores.",
+     "p": [
+      "As abelhas recolhem pólen e néctar, e os pelinhos do seu corpo transportam pólen.",
+      "Borboletas, traças, sirfídeos, morcegos e colibris também polinizam muitas plantas.",
+      "Grande parte das culturas que comemos depende da polinização por animais."
+     ],
+     "q": "Qual das tuas comidas preferidas achas que precisa de polinizadores?",
+     "c": "Senta-te perto de flores cinco minutos e conta os diferentes visitantes, sem lhes tocar."
+    },
+    "pt_BR": {
+     "t": "Polinizadores em ação",
+     "g": "Conhecer as abelhas, borboletas, morcegos e aves que levam pólen entre flores.",
+     "p": [
+      "As abelhas coletam pólen e néctar, e os pelinhos do corpo delas carregam pólen.",
+      "Borboletas, mariposas, sirfídeos, morcegos e beija-flores também polinizam muitas plantas.",
+      "Grande parte das lavouras que comemos depende da polinização por animais."
+     ],
+     "q": "Qual das suas comidas favoritas você acha que precisa de polinizadores?",
+     "c": "Sente perto de flores por cinco minutos e conte os diferentes visitantes, sem tocá-los."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How seeds travel",
+     "g": "Discover the clever ways plants send seeds far from their parents.",
+     "p": [
+      "Maple and dandelion seeds have wings or fluff that carry them on the wind.",
+      "Burrs hook onto fur and clothes, and berries are carried inside birds and mammals.",
+      "Coconuts float on the sea and can sprout on a beach far from home."
+     ],
+     "q": "If you were a seed, which way of travelling would you pick?",
+     "c": "Walk outside and find three seeds or fruits, then guess how each one travels."
+    },
+    "de": {
+     "t": "Wie Samen reisen",
+     "g": "Entdecken, wie Pflanzen ihre Samen weit weg von der Mutterpflanze schicken.",
+     "p": [
+      "Ahorn- und Löwenzahnsamen haben Flügel oder Flaum und fliegen mit dem Wind.",
+      "Kletten haken sich in Fell und Kleidung, Beeren werden in Vögeln und Säugetieren transportiert.",
+      "Kokosnüsse schwimmen auf dem Meer und keimen an einem fernen Strand."
+     ],
+     "q": "Welche Reiseart würdest du als Samen wählen?",
+     "c": "Geh nach draußen, finde drei Samen oder Früchte und rate, wie jeder reist."
+    },
+    "es": {
+     "t": "Cómo viajan las semillas",
+     "g": "Descubrir cómo las plantas envían sus semillas lejos de la planta madre.",
+     "p": [
+      "Las semillas del arce y del diente de león tienen alas o plumón y viajan con el viento.",
+      "Los abrojos se enganchan al pelaje y la ropa, y las bayas viajan dentro de aves y mamíferos.",
+      "Los cocos flotan en el mar y pueden brotar en una playa lejana."
+     ],
+     "q": "Si fueras una semilla, ¿qué forma de viajar elegirías?",
+     "c": "Sal a la calle, busca tres semillas o frutos y adivina cómo viaja cada uno."
+    },
+    "fr": {
+     "t": "Le voyage des graines",
+     "g": "Découvrir comment les plantes envoient leurs graines loin de la plante mère.",
+     "p": [
+      "Les graines d'érable et de pissenlit ont des ailes ou un duvet qui les emportent avec le vent.",
+      "Les bardanes s'accrochent aux poils et aux vêtements, et les baies voyagent dans les oiseaux et mammifères.",
+      "Les noix de coco flottent sur la mer et peuvent germer sur une plage lointaine."
+     ],
+     "q": "Si tu étais une graine, quel moyen de voyager choisirais-tu ?",
+     "c": "Sors, trouve trois graines ou fruits et devine comment chacun voyage."
+    },
+    "it": {
+     "t": "Come viaggiano i semi",
+     "g": "Scoprire come le piante mandano i semi lontano dalla pianta madre.",
+     "p": [
+      "I semi di acero e di tarassaco hanno ali o piumino e viaggiano con il vento.",
+      "Le lappole si agganciano a pelo e vestiti, e le bacche viaggiano dentro uccelli e mammiferi.",
+      "Le noci di cocco galleggiano sul mare e possono germogliare su una spiaggia lontana."
+     ],
+     "q": "Se fossi un seme, quale modo di viaggiare sceglieresti?",
+     "c": "Esci, trova tre semi o frutti e indovina come viaggia ciascuno."
+    },
+    "pt": {
+     "t": "Como viajam as sementes",
+     "g": "Descobrir como as plantas enviam as sementes para longe da planta-mãe.",
+     "p": [
+      "As sementes do ácer e do dente-de-leão têm asas ou penugem e viajam com o vento.",
+      "Os carrapichos prendem-se ao pelo e à roupa, e as bagas viajam dentro de aves e mamíferos.",
+      "Os cocos flutuam no mar e podem germinar numa praia distante."
+     ],
+     "q": "Se fosses uma semente, que forma de viajar escolhias?",
+     "c": "Vai lá fora, encontra três sementes ou frutos e adivinha como viaja cada um."
+    },
+    "pt_BR": {
+     "t": "Como viajam as sementes",
+     "g": "Descobrir como as plantas mandam as sementes para longe da planta-mãe.",
+     "p": [
+      "As sementes do bordo e do dente-de-leão têm asas ou penugem e viajam com o vento.",
+      "Os carrapichos grudam no pelo e na roupa, e as frutinhas viajam dentro de aves e mamíferos.",
+      "Os cocos flutuam no mar e podem brotar numa praia distante."
+     ],
+     "q": "Se você fosse uma semente, que jeito de viajar escolheria?",
+     "c": "Saia, encontre três sementes ou frutos e adivinhe como cada um viaja."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Trees, the giants of the land",
+     "g": "Learn how trees grow tall and why they can live for centuries.",
+     "p": [
+      "Trees grow wider each year by adding a new ring of wood under the bark.",
+      "Counting rings in a cut trunk shows its age, and wide rings mean good growing years.",
+      "Some trees live for thousands of years, because they can keep repairing and renewing themselves."
+     ],
+     "q": "Do you have a favourite tree from childhood or from your neighbourhood?",
+     "c": "Find a tree, measure its trunk by hugging it or using steps, and note its leaf shape."
+    },
+    "de": {
+     "t": "Bäume, die Riesen des Landes",
+     "g": "Lernen, wie Bäume hoch wachsen und warum sie Jahrhunderte leben können.",
+     "p": [
+      "Bäume werden jedes Jahr dicker, indem sie unter der Rinde einen neuen Holzring bilden.",
+      "Die Ringe eines Stammquerschnitts zeigen das Alter, und breite Ringe bedeuten gute Wachstumsjahre.",
+      "Manche Bäume werden Tausende Jahre alt, weil sie sich ständig reparieren und erneuern können."
+     ],
+     "q": "Hast du einen Lieblingsbaum aus der Kindheit oder aus deiner Nachbarschaft?",
+     "c": "Such einen Baum, miss seinen Stamm mit Armen oder Schritten und notiere die Blattform."
+    },
+    "es": {
+     "t": "Los árboles, gigantes de la tierra",
+     "g": "Aprender cómo crecen los árboles y por qué pueden vivir siglos.",
+     "p": [
+      "Los árboles engordan cada año añadiendo un nuevo anillo de madera bajo la corteza.",
+      "Contar los anillos de un tronco cortado muestra su edad, y los anillos anchos indican buenos años.",
+      "Algunos árboles viven miles de años porque pueden repararse y renovarse continuamente."
+     ],
+     "q": "¿Tienes un árbol favorito de tu infancia o de tu barrio?",
+     "c": "Busca un árbol, mide su tronco abrazándolo o con pasos y anota la forma de sus hojas."
+    },
+    "fr": {
+     "t": "Les arbres, géants de la terre",
+     "g": "Apprendre comment les arbres grandissent et pourquoi ils vivent des siècles.",
+     "p": [
+      "Les arbres grossissent chaque année en ajoutant un nouvel anneau de bois sous l'écorce.",
+      "Compter les anneaux d'un tronc coupé donne son âge, et de larges anneaux signalent de bonnes années.",
+      "Certains arbres vivent des milliers d'années car ils savent se réparer et se renouveler."
+     ],
+     "q": "As-tu un arbre préféré de ton enfance ou de ton quartier ?",
+     "c": "Trouve un arbre, mesure son tronc en l'entourant de tes bras ou en pas, et note la forme des feuilles."
+    },
+    "it": {
+     "t": "Gli alberi, giganti della terra",
+     "g": "Imparare come crescono gli alberi e perché possono vivere secoli.",
+     "p": [
+      "Gli alberi si ingrossano ogni anno aggiungendo un nuovo anello di legno sotto la corteccia.",
+      "Contare gli anelli di un tronco tagliato rivela l'età, e anelli larghi indicano anni favorevoli.",
+      "Alcuni alberi vivono migliaia di anni perché sanno ripararsi e rinnovarsi di continuo."
+     ],
+     "q": "Hai un albero preferito dell'infanzia o del tuo quartiere?",
+     "c": "Trova un albero, misura il tronco abbracciandolo o a passi e annota la forma delle foglie."
+    },
+    "pt": {
+     "t": "As árvores, gigantes da terra",
+     "g": "Aprender como crescem as árvores e porque podem viver séculos.",
+     "p": [
+      "As árvores engrossam todos os anos juntando um novo anel de madeira sob a casca.",
+      "Contar os anéis de um tronco cortado mostra a idade, e anéis largos indicam bons anos.",
+      "Algumas árvores vivem milhares de anos porque se podem reparar e renovar continuamente."
+     ],
+     "q": "Tens uma árvore preferida da infância ou do teu bairro?",
+     "c": "Procura uma árvore, mede o tronco abraçando-o ou aos passos e anota a forma das folhas."
+    },
+    "pt_BR": {
+     "t": "As árvores, gigantes da terra",
+     "g": "Aprender como crescem as árvores e por que podem viver séculos.",
+     "p": [
+      "As árvores engrossam todo ano juntando um novo anel de madeira sob a casca.",
+      "Contar os anéis de um tronco cortado mostra a idade, e anéis largos indicam bons anos.",
+      "Algumas árvores vivem milhares de anos porque podem se reparar e se renovar o tempo todo."
+     ],
+     "q": "Você tem uma árvore favorita da infância ou do bairro?",
+     "c": "Procure uma árvore, meça o tronco abraçando-o ou em passos e anote o formato das folhas."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mushrooms and the fungus world",
+     "g": "Learn that fungi are their own kingdom and mostly live hidden underground.",
+     "p": [
+      "Fungi are neither plants nor animals: they cannot make food from light, but absorb it.",
+      "The mushroom is just the fruiting body, while the main body is a web of threads in the soil.",
+      "Many fungi link with tree roots and swap minerals for sugar, helping forests thrive."
+     ],
+     "q": "Have you ever spotted mushrooms growing somewhere unexpected?",
+     "c": "Look for mushrooms on grass or wood, photograph them and leave them unpicked and untasted."
+    },
+    "de": {
+     "t": "Pilze und die Welt der Pilze",
+     "g": "Lernen, dass Pilze ein eigenes Reich sind und meist verborgen unter der Erde leben.",
+     "p": [
+      "Pilze sind weder Pflanzen noch Tiere: Sie machen keine Nahrung aus Licht, sondern nehmen sie auf.",
+      "Der Hut ist nur der Fruchtkörper, der eigentliche Pilz ist ein Fadengeflecht im Boden.",
+      "Viele Pilze verbinden sich mit Baumwurzeln und tauschen Mineralien gegen Zucker."
+     ],
+     "q": "Hast du schon einmal Pilze an einer unerwarteten Stelle entdeckt?",
+     "c": "Suche Pilze auf Gras oder Holz, fotografiere sie und lass sie ungepflückt und unprobiert."
+    },
+    "es": {
+     "t": "Las setas y el mundo de los hongos",
+     "g": "Aprender que los hongos son un reino propio y viven sobre todo bajo tierra.",
+     "p": [
+      "Los hongos no son plantas ni animales: no fabrican alimento con luz, sino que lo absorben.",
+      "La seta es solo el cuerpo fructífero; el cuerpo principal es una red de hilos en el suelo.",
+      "Muchos hongos se unen a raíces de árboles e intercambian minerales por azúcar."
+     ],
+     "q": "¿Has visto alguna vez setas en un lugar inesperado?",
+     "c": "Busca setas en el césped o la madera, fotografíalas y déjalas sin recoger ni probar."
+    },
+    "fr": {
+     "t": "Champignons et monde fongique",
+     "g": "Apprendre que les champignons forment un règne à part et vivent surtout sous terre.",
+     "p": [
+      "Les champignons ne sont ni des plantes ni des animaux : ils absorbent leur nourriture sans la fabriquer.",
+      "Le chapeau n'est que le fruit ; le vrai corps est un réseau de filaments dans le sol.",
+      "Beaucoup s'associent aux racines des arbres et échangent minéraux contre sucre."
+     ],
+     "q": "As-tu déjà repéré des champignons à un endroit inattendu ?",
+     "c": "Cherche des champignons sur l'herbe ou le bois, photographie-les sans les cueillir ni les goûter."
+    },
+    "it": {
+     "t": "Funghi e il mondo fungino",
+     "g": "Imparare che i funghi sono un regno a sé e vivono soprattutto sottoterra.",
+     "p": [
+      "I funghi non sono né piante né animali: non fanno cibo con la luce, lo assorbono.",
+      "Il cappello è solo il corpo fruttifero; il corpo principale è una rete di fili nel suolo.",
+      "Molti funghi si legano alle radici degli alberi e scambiano minerali con zuccheri."
+     ],
+     "q": "Hai mai trovato funghi in un posto inaspettato?",
+     "c": "Cerca funghi su erba o legno, fotografali e lasciali senza raccoglierli né assaggiarli."
+    },
+    "pt": {
+     "t": "Cogumelos e o mundo dos fungos",
+     "g": "Aprender que os fungos são um reino próprio e vivem sobretudo debaixo da terra.",
+     "p": [
+      "Os fungos não são plantas nem animais: não fazem alimento com luz, absorvem-no.",
+      "O cogumelo é só o corpo de frutificação; o corpo principal é uma rede de fios no solo.",
+      "Muitos fungos ligam-se às raízes das árvores e trocam minerais por açúcar."
+     ],
+     "q": "Já viste cogumelos num sítio inesperado?",
+     "c": "Procura cogumelos na relva ou na madeira, fotografa-os e deixa-os sem colher nem provar."
+    },
+    "pt_BR": {
+     "t": "Cogumelos e o mundo dos fungos",
+     "g": "Aprender que os fungos são um reino próprio e vivem sobretudo debaixo da terra.",
+     "p": [
+      "Os fungos não são plantas nem animais: não fazem alimento com luz, eles o absorvem.",
+      "O cogumelo é só o corpo de frutificação; o corpo principal é uma rede de fios no solo.",
+      "Muitos fungos se ligam às raízes das árvores e trocam minerais por açúcar."
+     ],
+     "q": "Você já viu cogumelos num lugar inesperado?",
+     "c": "Procure cogumelos na grama ou na madeira, fotografe-os e deixe sem colher nem provar."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mosses, ferns and simple plants",
+     "g": "Meet plants with no flowers or seeds that spread by spores.",
+     "p": [
+      "Mosses are tiny, soft plants with no true roots, and they soak up water through their leaves.",
+      "Ferns unroll young fronds called fiddleheads and make spores on the underside of leaves.",
+      "Both groups love damp, shady places and are older in Earth's history than flowering plants."
+     ],
+     "q": "Where is the dampest, greenest corner you know of?",
+     "c": "Find moss on a wall or tree, touch it gently and see how it holds water."
+    },
+    "de": {
+     "t": "Moose, Farne und einfache Pflanzen",
+     "g": "Pflanzen ohne Blüten und Samen kennenlernen, die sich über Sporen verbreiten.",
+     "p": [
+      "Moose sind winzige, weiche Pflanzen ohne echte Wurzeln und nehmen Wasser über die Blättchen auf.",
+      "Farne entrollen junge Wedel und bilden Sporen auf der Blattunterseite.",
+      "Beide Gruppen lieben feuchte, schattige Orte und sind erdgeschichtlich älter als Blütenpflanzen."
+     ],
+     "q": "Wo ist die feuchteste, grünste Ecke, die du kennst?",
+     "c": "Finde Moos an einer Mauer oder einem Baum, berühre es sanft und sieh, wie es Wasser hält."
+    },
+    "es": {
+     "t": "Musgos, helechos y plantas sencillas",
+     "g": "Conocer plantas sin flores ni semillas que se reproducen por esporas.",
+     "p": [
+      "Los musgos son plantas pequeñas y blandas sin raíces verdaderas que absorben agua por las hojitas.",
+      "Los helechos despliegan frondas jóvenes enrolladas y producen esporas en el envés.",
+      "Ambos grupos aman los sitios húmedos y sombríos y son más antiguos que las plantas con flores."
+     ],
+     "q": "¿Cuál es el rincón más húmedo y verde que conoces?",
+     "c": "Busca musgo en un muro o un árbol, tócalo con suavidad y mira cómo retiene el agua."
+    },
+    "fr": {
+     "t": "Mousses, fougères et plantes simples",
+     "g": "Découvrir des plantes sans fleurs ni graines, qui se répandent par spores.",
+     "p": [
+      "Les mousses sont de petites plantes douces sans vraies racines, qui absorbent l'eau par leurs feuilles.",
+      "Les fougères déroulent de jeunes crosses et fabriquent des spores sous leurs feuilles.",
+      "Les deux groupes aiment les lieux humides et ombragés et sont plus anciens que les plantes à fleurs."
+     ],
+     "q": "Quel est le coin le plus humide et le plus vert que tu connaisses ?",
+     "c": "Trouve de la mousse sur un mur ou un arbre, touche-la doucement et vois comment elle retient l'eau."
+    },
+    "it": {
+     "t": "Muschi, felci e piante semplici",
+     "g": "Conoscere piante senza fiori né semi che si diffondono con le spore.",
+     "p": [
+      "I muschi sono piccole piante morbide senza vere radici che assorbono acqua dalle foglioline.",
+      "Le felci srotolano giovani fronde arrotolate e producono spore sotto le foglie.",
+      "Entrambi i gruppi amano luoghi umidi e ombrosi e sono più antichi delle piante da fiore."
+     ],
+     "q": "Qual è l'angolo più umido e verde che conosci?",
+     "c": "Trova del muschio su un muro o un albero, toccalo piano e osserva come trattiene l'acqua."
+    },
+    "pt": {
+     "t": "Musgos, fetos e plantas simples",
+     "g": "Conhecer plantas sem flores nem sementes que se espalham por esporos.",
+     "p": [
+      "Os musgos são plantas pequenas e macias sem raízes verdadeiras que absorvem água pelas folhinhas.",
+      "Os fetos desenrolam frondes jovens e produzem esporos na parte de baixo das folhas.",
+      "Ambos os grupos adoram sítios húmidos e sombrios e são mais antigos que as plantas com flor."
+     ],
+     "q": "Qual é o canto mais húmido e verde que conheces?",
+     "c": "Procura musgo num muro ou árvore, toca-lhe com suavidade e vê como retém a água."
+    },
+    "pt_BR": {
+     "t": "Musgos, samambaias e plantas simples",
+     "g": "Conhecer plantas sem flores nem sementes que se espalham por esporos.",
+     "p": [
+      "Os musgos são plantas pequenas e macias sem raízes verdadeiras que absorvem água pelas folhinhas.",
+      "As samambaias desenrolam frondes jovens e produzem esporos na parte de baixo das folhas.",
+      "Os dois grupos adoram lugares úmidos e sombreados e são mais antigos que as plantas com flor."
+     ],
+     "q": "Qual é o canto mais úmido e verde que você conhece?",
+     "c": "Procure musgo num muro ou árvore, toque com suavidade e veja como ele retém água."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lichens, a living partnership",
+     "g": "Discover lichens, where a fungus and an alga or bacterium live as one.",
+     "p": [
+      "A lichen is a team: the fungus gives shelter and the alga or bacterium makes food from light.",
+      "Lichens grow on rocks, bark, walls and roofs, in crusty, leafy or branching shapes.",
+      "They grow very slowly, and some are sensitive to air quality, so they help us read the air."
+     ],
+     "q": "Have you noticed the colourful patches on old walls or tree bark?",
+     "c": "Find three lichens of different colours or shapes on a wall, rock or tree and sketch them."
+    },
+    "de": {
+     "t": "Flechten, eine lebende Partnerschaft",
+     "g": "Flechten entdecken, in denen ein Pilz und eine Alge oder Bakterie als Einheit leben.",
+     "p": [
+      "Eine Flechte ist ein Team: Der Pilz bietet Schutz, Alge oder Bakterie macht Nahrung aus Licht.",
+      "Flechten wachsen auf Steinen, Rinde, Mauern und Dächern als Krusten, Blättchen oder Sträuchlein.",
+      "Sie wachsen sehr langsam, und manche reagieren auf die Luftqualität und helfen sie zu beurteilen."
+     ],
+     "q": "Hast du die bunten Flecken an alten Mauern oder Baumrinde bemerkt?",
+     "c": "Finde drei Flechten in verschiedenen Farben oder Formen an Mauer, Stein oder Baum und skizziere sie."
+    },
+    "es": {
+     "t": "Líquenes, una asociación viva",
+     "g": "Descubrir los líquenes, donde un hongo y un alga o bacteria viven como uno solo.",
+     "p": [
+      "Un liquen es un equipo: el hongo da refugio y el alga o bacteria fabrica alimento con luz.",
+      "Los líquenes crecen en rocas, cortezas, muros y tejados, en forma de costra, hoja o ramita.",
+      "Crecen muy despacio y algunos son sensibles a la calidad del aire, así que ayudan a leerla."
+     ],
+     "q": "¿Te has fijado en las manchas de colores de los muros viejos o la corteza?",
+     "c": "Encuentra tres líquenes de distinto color o forma en un muro, roca o árbol y dibújalos."
+    },
+    "fr": {
+     "t": "Les lichens, une association vivante",
+     "g": "Découvrir les lichens, où un champignon et une algue ou bactérie vivent ensemble.",
+     "p": [
+      "Un lichen est une équipe : le champignon offre l'abri, l'algue ou la bactérie fabrique la nourriture.",
+      "Les lichens poussent sur roches, écorces, murs et toits, en croûtes, en feuilles ou en petits buissons.",
+      "Ils poussent très lentement, et certains sont sensibles à la qualité de l'air, ce qui aide à la lire."
+     ],
+     "q": "As-tu remarqué les taches colorées sur les vieux murs ou les écorces ?",
+     "c": "Trouve trois lichens de couleurs ou de formes différentes sur un mur, une roche ou un arbre et dessine-les."
+    },
+    "it": {
+     "t": "I licheni, una partnership viva",
+     "g": "Scoprire i licheni, dove un fungo e un'alga o un batterio vivono come uno solo.",
+     "p": [
+      "Un lichene è una squadra: il fungo dà riparo, l'alga o il batterio fa cibo dalla luce.",
+      "I licheni crescono su rocce, cortecce, muri e tetti, in forma di crosta, foglia o ramo.",
+      "Crescono molto lentamente e alcuni sono sensibili alla qualità dell'aria, aiutando a leggerla."
+     ],
+     "q": "Hai notato le chiazze colorate sui vecchi muri o sulle cortecce?",
+     "c": "Trova tre licheni di colori o forme diversi su muro, roccia o albero e disegnali."
+    },
+    "pt": {
+     "t": "Os líquenes, uma parceria viva",
+     "g": "Descobrir os líquenes, onde um fungo e uma alga ou bactéria vivem como um só.",
+     "p": [
+      "Um líquen é uma equipa: o fungo dá abrigo e a alga ou bactéria faz alimento com luz.",
+      "Os líquenes crescem em rochas, cascas, muros e telhados, em forma de crosta, folha ou raminho.",
+      "Crescem muito devagar e alguns são sensíveis à qualidade do ar, ajudando a avaliá-la."
+     ],
+     "q": "Reparaste nas manchas coloridas dos muros velhos ou das cascas das árvores?",
+     "c": "Encontra três líquenes de cores ou formas diferentes num muro, rocha ou árvore e desenha-os."
+    },
+    "pt_BR": {
+     "t": "Os líquens, uma parceria viva",
+     "g": "Descobrir os líquens, em que um fungo e uma alga ou bactéria vivem como um só.",
+     "p": [
+      "Um líquen é uma equipe: o fungo dá abrigo e a alga ou bactéria faz alimento com luz.",
+      "Os líquens crescem em rochas, cascas, muros e telhados, em forma de crosta, folha ou raminho.",
+      "Crescem bem devagar e alguns são sensíveis à qualidade do ar, ajudando a avaliá-la."
+     ],
+     "q": "Você reparou nas manchas coloridas dos muros velhos ou das cascas de árvore?",
+     "c": "Encontre três líquens de cores ou formas diferentes num muro, rocha ou árvore e desenhe-os."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: the building blocks of life",
+     "g": "Recap the animal groups, plants, fungi and food chains from the first month.",
+     "p": [
+      "Animals split into vertebrates and invertebrates, and each group has its own traits.",
+      "Plants make food from light, fungi absorb it and decomposers recycle old material.",
+      "Habitats and food chains link every living thing, from the soil up to the treetops."
+     ],
+     "q": "Which topic from this first month surprised you most so far?",
+     "c": "Pick one living thing outside and describe its group, habitat and what it eats."
+    },
+    "de": {
+     "t": "Rückblick: die Bausteine des Lebens",
+     "g": "Tiergruppen, Pflanzen, Pilze und Nahrungsketten des ersten Monats wiederholen.",
+     "p": [
+      "Tiere teilen sich in Wirbeltiere und Wirbellose, jede Gruppe hat eigene Merkmale.",
+      "Pflanzen machen Nahrung aus Licht, Pilze nehmen sie auf, Zersetzer verwerten altes Material.",
+      "Lebensräume und Nahrungsketten verbinden alles Lebendige, vom Boden bis zu den Baumkronen."
+     ],
+     "q": "Welches Thema aus diesem ersten Monat hat dich bisher am meisten überrascht?",
+     "c": "Wähle ein Lebewesen draußen und beschreibe seine Gruppe, seinen Lebensraum und seine Nahrung."
+    },
+    "es": {
+     "t": "Repaso: los ladrillos de la vida",
+     "g": "Repasar los grupos de animales, plantas, hongos y cadenas alimentarias del primer mes.",
+     "p": [
+      "Los animales se dividen en vertebrados e invertebrados, y cada grupo tiene sus rasgos.",
+      "Las plantas fabrican alimento con luz, los hongos lo absorben y los descomponedores reciclan lo viejo.",
+      "Hábitats y cadenas alimentarias unen a todos los seres vivos, del suelo a las copas."
+     ],
+     "q": "¿Qué tema de este primer mes te ha sorprendido más hasta ahora?",
+     "c": "Elige un ser vivo al aire libre y describe su grupo, su hábitat y qué come."
+    },
+    "fr": {
+     "t": "Révision : les briques du vivant",
+     "g": "Réviser groupes animaux, plantes, champignons et chaînes alimentaires du premier mois.",
+     "p": [
+      "Les animaux se divisent en vertébrés et invertébrés, chaque groupe ayant ses traits.",
+      "Les plantes fabriquent leur nourriture avec la lumière, les champignons l'absorbent, les décomposeurs recyclent.",
+      "Habitats et chaînes alimentaires relient tous les êtres vivants, du sol aux cimes."
+     ],
+     "q": "Quel sujet de ce premier mois t'a le plus surpris jusqu'ici ?",
+     "c": "Choisis un être vivant dehors et décris son groupe, son habitat et ce qu'il mange."
+    },
+    "it": {
+     "t": "Ripasso: i mattoni della vita",
+     "g": "Ripassare gruppi animali, piante, funghi e catene alimentari del primo mese.",
+     "p": [
+      "Gli animali si dividono in vertebrati e invertebrati, e ogni gruppo ha le sue caratteristiche.",
+      "Le piante fanno cibo dalla luce, i funghi lo assorbono e i decompositori riciclano il vecchio.",
+      "Habitat e catene alimentari collegano ogni essere vivente, dal suolo alle chiome."
+     ],
+     "q": "Quale argomento di questo primo mese ti ha sorpreso di più finora?",
+     "c": "Scegli un essere vivente all'aperto e descrivi il suo gruppo, il suo habitat e cosa mangia."
+    },
+    "pt": {
+     "t": "Revisão: os blocos da vida",
+     "g": "Rever os grupos de animais, plantas, fungos e cadeias alimentares do primeiro mês.",
+     "p": [
+      "Os animais dividem-se em vertebrados e invertebrados, e cada grupo tem as suas características.",
+      "As plantas fazem alimento com luz, os fungos absorvem-no e os decompositores reciclam o velho.",
+      "Habitats e cadeias alimentares ligam todos os seres vivos, do solo às copas."
+     ],
+     "q": "Que tema deste primeiro mês te surpreendeu mais até agora?",
+     "c": "Escolhe um ser vivo ao ar livre e descreve o seu grupo, habitat e o que come."
+    },
+    "pt_BR": {
+     "t": "Revisão: os blocos da vida",
+     "g": "Rever os grupos de animais, plantas, fungos e cadeias alimentares do primeiro mês.",
+     "p": [
+      "Os animais se dividem em vertebrados e invertebrados, e cada grupo tem suas características.",
+      "As plantas fazem alimento com luz, os fungos o absorvem e os decompositores reciclam o velho.",
+      "Habitats e cadeias alimentares ligam todos os seres vivos, do solo às copas."
+     ],
+     "q": "Qual tema deste primeiro mês mais surpreendeu você até agora?",
+     "c": "Escolha um ser vivo ao ar livre e descreva seu grupo, habitat e o que ele come."
+    }
+   }
+  }
+ ]
+}

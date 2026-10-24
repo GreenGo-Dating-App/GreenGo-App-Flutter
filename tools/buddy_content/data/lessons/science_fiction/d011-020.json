@@ -1,0 +1,835 @@
+{
+ "topic": "science_fiction",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Isaac Asimov's robots",
+     "g": "Learn the Three Laws of Robotics and why Asimov preferred helpful robots.",
+     "p": [
+      "Asimov's robots follow three laws: do no harm to humans, obey orders, protect themselves.",
+      "His stories, collected in I, Robot (1950), explore puzzles that arise from these simple rules.",
+      "He wanted robots to be useful tools and friends, not monsters."
+     ],
+     "q": "Which of the Three Laws do you think would be hardest to program?",
+     "c": "Invent a small everyday situation where two of the laws could seem to clash."
+    },
+    "de": {
+     "t": "Isaac Asimovs Roboter",
+     "g": "Die Drei Robotergesetze kennenlernen und warum Asimov hilfreiche Roboter bevorzugte.",
+     "p": [
+      "Asimovs Roboter folgen drei Gesetzen: Menschen nicht schaden, gehorchen, sich selbst schützen.",
+      "Seine Geschichten, gesammelt in Ich, der Robot (1950), erkunden Rätsel, die aus diesen einfachen Regeln entstehen.",
+      "Er wollte Roboter als nützliche Werkzeuge und Freunde, nicht als Monster."
+     ],
+     "q": "Welches der drei Gesetze wäre deiner Meinung nach am schwersten zu programmieren?",
+     "c": "Erfinde eine kleine Alltagssituation, in der zwei der Gesetze zu kollidieren scheinen."
+    },
+    "es": {
+     "t": "Los robots de Isaac Asimov",
+     "g": "Conocer las Tres Leyes de la Robótica y por qué Asimov prefería robots útiles.",
+     "p": [
+      "Los robots de Asimov siguen tres leyes: no dañar a los humanos, obedecer y protegerse a sí mismos.",
+      "Sus relatos, reunidos en Yo, robot (1950), exploran enigmas que surgen de esas reglas sencillas.",
+      "Quería robots como herramientas útiles y amigos, no como monstruos."
+     ],
+     "q": "¿Cuál de las Tres Leyes crees que sería más difícil de programar?",
+     "c": "Inventa una pequeña situación cotidiana en la que dos leyes parezcan chocar."
+    },
+    "fr": {
+     "t": "Les robots d'Isaac Asimov",
+     "g": "Découvrir les Trois Lois de la robotique et pourquoi Asimov préférait des robots serviables.",
+     "p": [
+      "Les robots d'Asimov suivent trois lois : ne pas nuire aux humains, obéir, se protéger.",
+      "Ses nouvelles, réunies dans Les Robots (1950), explorent les casse-têtes nés de ces règles simples.",
+      "Il voulait des robots utiles et amicaux, pas des monstres."
+     ],
+     "q": "Laquelle des Trois Lois serait la plus difficile à programmer, selon toi ?",
+     "c": "Invente une petite situation quotidienne où deux lois semblent entrer en conflit."
+    },
+    "it": {
+     "t": "I robot di Isaac Asimov",
+     "g": "Conoscere le Tre Leggi della robotica e perché Asimov preferiva robot utili.",
+     "p": [
+      "I robot di Asimov seguono tre leggi: non nuocere agli umani, obbedire, proteggere se stessi.",
+      "I suoi racconti, raccolti in Io, robot (1950), esplorano enigmi nati da queste regole semplici.",
+      "Voleva robot come strumenti utili e amici, non come mostri."
+     ],
+     "q": "Quale delle Tre Leggi pensi sarebbe la più difficile da programmare?",
+     "c": "Inventa una piccola situazione quotidiana in cui due leggi sembrano scontrarsi."
+    },
+    "pt": {
+     "t": "Os robôs de Isaac Asimov",
+     "g": "Conhecer as Três Leis da Robótica e porque Asimov preferia robôs úteis.",
+     "p": [
+      "Os robôs de Asimov seguem três leis: não fazer mal aos humanos, obedecer e proteger-se.",
+      "As suas histórias, reunidas em Eu, Robô (1950), exploram enigmas que nascem dessas regras simples.",
+      "Queria robôs como ferramentas úteis e amigos, não como monstros."
+     ],
+     "q": "Qual das Três Leis achas que seria a mais difícil de programar?",
+     "c": "Inventa uma pequena situação do dia a dia em que duas leis pareçam chocar."
+    },
+    "pt_BR": {
+     "t": "Os robôs de Isaac Asimov",
+     "g": "Conhecer as Três Leis da Robótica e por que Asimov preferia robôs úteis.",
+     "p": [
+      "Os robôs de Asimov seguem três leis: não fazer mal aos humanos, obedecer e se proteger.",
+      "Seus contos, reunidos em Eu, Robô (1950), exploram enigmas que nascem dessas regras simples.",
+      "Ele queria robôs como ferramentas úteis e amigos, não como monstros."
+     ],
+     "q": "Qual das Três Leis você acha que seria a mais difícil de programar?",
+     "c": "Invente uma pequena situação do dia a dia em que duas leis pareçam se chocar."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Arthur C. Clarke's vision",
+     "g": "See how Clarke blended real science with a sense of awe.",
+     "p": [
+      "Clarke, a British writer and engineer, wrote about space with calm, clear wonder.",
+      "In 1945 he described communication satellites in geostationary orbit, years before any existed.",
+      "His story The Fountains of Paradise popularised the idea of a space elevator."
+     ],
+     "q": "Which real piece of science fills you with the most awe?",
+     "c": "Look up at the sky today and write one sentence about it in Clarke's calm style."
+    },
+    "de": {
+     "t": "Arthur C. Clarkes Vision",
+     "g": "Sehen, wie Clarke echte Wissenschaft mit einem Gefühl des Staunens verband.",
+     "p": [
+      "Clarke, ein britischer Autor und Ingenieur, schrieb ruhig und klar staunend über den Weltraum.",
+      "1945 beschrieb er Kommunikationssatelliten in geostationärer Umlaufbahn, lange bevor es welche gab.",
+      "Sein Roman Fahrstuhl zu den Sternen machte die Idee eines Weltraumaufzugs bekannt."
+     ],
+     "q": "Welches Stück echter Wissenschaft erfüllt dich am meisten mit Ehrfurcht?",
+     "c": "Schau heute in den Himmel und schreibe einen Satz darüber in Clarkes ruhigem Stil."
+    },
+    "es": {
+     "t": "La visión de Arthur C. Clarke",
+     "g": "Ver cómo Clarke mezclaba ciencia real con una sensación de asombro.",
+     "p": [
+      "Clarke, escritor e ingeniero británico, escribía sobre el espacio con calma y asombro claro.",
+      "En 1945 describió satélites de comunicaciones en órbita geoestacionaria, mucho antes de que existieran.",
+      "Su novela Las fuentes del paraíso popularizó la idea del ascensor espacial."
+     ],
+     "q": "¿Qué dato científico real te llena de más asombro?",
+     "c": "Mira hoy al cielo y escribe una frase sobre él con el estilo sereno de Clarke."
+    },
+    "fr": {
+     "t": "La vision d'Arthur C. Clarke",
+     "g": "Voir comment Clarke alliait science réelle et sentiment d'émerveillement.",
+     "p": [
+      "Clarke, écrivain et ingénieur britannique, parlait de l'espace avec un calme émerveillé.",
+      "En 1945 il décrit des satellites de communication en orbite géostationnaire, bien avant qu'il en existe.",
+      "Son roman Les Fontaines du paradis a popularisé l'idée de l'ascenseur spatial."
+     ],
+     "q": "Quel fait scientifique réel t'émerveille le plus ?",
+     "c": "Regarde le ciel aujourd'hui et écris une phrase dessus dans le style serein de Clarke."
+    },
+    "it": {
+     "t": "La visione di Arthur C. Clarke",
+     "g": "Vedere come Clarke univa scienza reale e senso di meraviglia.",
+     "p": [
+      "Clarke, scrittore e ingegnere britannico, scriveva dello spazio con calma e limpido stupore.",
+      "Nel 1945 descrisse satelliti per comunicazioni in orbita geostazionaria, molto prima che esistessero.",
+      "Il suo romanzo Le fontane del paradiso rese popolare l'idea dell'ascensore spaziale."
+     ],
+     "q": "Quale fatto scientifico reale ti riempie di più di meraviglia?",
+     "c": "Guarda il cielo oggi e scrivi una frase su di esso nello stile sereno di Clarke."
+    },
+    "pt": {
+     "t": "A visão de Arthur C. Clarke",
+     "g": "Ver como Clarke juntava ciência real e sensação de assombro.",
+     "p": [
+      "Clarke, escritor e engenheiro britânico, escrevia sobre o espaço com calma e assombro claro.",
+      "Em 1945 descreveu satélites de comunicações em órbita geoestacionária, muito antes de existirem.",
+      "O seu romance As Fontes do Paraíso popularizou a ideia do elevador espacial."
+     ],
+     "q": "Que facto científico real te enche de mais assombro?",
+     "c": "Olha hoje para o céu e escreve uma frase sobre ele ao estilo sereno de Clarke."
+    },
+    "pt_BR": {
+     "t": "A visão de Arthur C. Clarke",
+     "g": "Ver como Clarke juntava ciência real e sensação de assombro.",
+     "p": [
+      "Clarke, escritor e engenheiro britânico, escrevia sobre o espaço com calma e assombro claro.",
+      "Em 1945 ele descreveu satélites de comunicações em órbita geoestacionária, muito antes de existirem.",
+      "Seu romance As Fontes do Paraíso popularizou a ideia do elevador espacial."
+     ],
+     "q": "Qual fato científico real enche você de mais assombro?",
+     "c": "Olhe hoje para o céu e escreva uma frase sobre ele no estilo sereno de Clarke."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Clarke's three laws",
+     "g": "Understand Clarke's famous laws, including the one about technology and magic.",
+     "p": [
+      "Clarke's third law says any sufficiently advanced technology is indistinguishable from magic.",
+      "His first law says elderly experts who call something impossible are very likely wrong.",
+      "His second law invites us to probe the limits of the possible by daring to go beyond them."
+     ],
+     "q": "Can you think of a technology your grandparents would have called magic?",
+     "c": "Explain a common gadget, like a phone, to an imaginary person from 1800 in two sentences."
+    },
+    "de": {
+     "t": "Clarkes drei Gesetze",
+     "g": "Clarkes berühmte Gesetze verstehen, auch das über Technik und Magie.",
+     "p": [
+      "Clarkes drittes Gesetz: Jede hinreichend fortgeschrittene Technik ist von Magie nicht zu unterscheiden.",
+      "Sein erstes Gesetz: Wenn ein älterer Experte etwas für unmöglich erklärt, irrt er sehr wahrscheinlich.",
+      "Sein zweites Gesetz lädt ein, Grenzen des Möglichen auszuloten, indem man wagt, darüber hinauszugehen."
+     ],
+     "q": "Fällt dir eine Technik ein, die deine Großeltern Magie genannt hätten?",
+     "c": "Erkläre ein alltägliches Gerät, etwa ein Handy, einer erfundenen Person von 1800 in zwei Sätzen."
+    },
+    "es": {
+     "t": "Las tres leyes de Clarke",
+     "g": "Entender las famosas leyes de Clarke, incluida la de la tecnología y la magia.",
+     "p": [
+      "La tercera ley de Clarke dice que toda tecnología lo bastante avanzada es indistinguible de la magia.",
+      "Su primera ley dice que si un experto veterano declara algo imposible, probablemente se equivoca.",
+      "Su segunda ley invita a explorar los límites de lo posible atreviéndose a ir más allá."
+     ],
+     "q": "¿Se te ocurre una tecnología que tus abuelos habrían llamado magia?",
+     "c": "Explica un aparato común, como un móvil, a una persona imaginaria de 1800 en dos frases."
+    },
+    "fr": {
+     "t": "Les trois lois de Clarke",
+     "g": "Comprendre les célèbres lois de Clarke, dont celle sur la technologie et la magie.",
+     "p": [
+      "La troisième loi de Clarke dit que toute technologie assez avancée est indiscernable de la magie.",
+      "Sa première loi dit qu'un expert âgé qui juge une chose impossible a très probablement tort.",
+      "Sa deuxième loi invite à sonder les limites du possible en osant aller au-delà."
+     ],
+     "q": "Vois-tu une technologie que tes grands-parents auraient appelée magie ?",
+     "c": "Explique un appareil courant, comme un téléphone, à une personne imaginaire de 1800 en deux phrases."
+    },
+    "it": {
+     "t": "Le tre leggi di Clarke",
+     "g": "Capire le famose leggi di Clarke, compresa quella su tecnologia e magia.",
+     "p": [
+      "La terza legge di Clarke dice che ogni tecnologia sufficientemente avanzata è indistinguibile dalla magia.",
+      "La prima dice che se un esperto anziano dichiara impossibile qualcosa, molto probabilmente sbaglia.",
+      "La seconda invita a sondare i limiti del possibile osando andare oltre."
+     ],
+     "q": "Ti viene in mente una tecnologia che i tuoi nonni avrebbero chiamato magia?",
+     "c": "Spiega un apparecchio comune, come un telefono, a una persona immaginaria del 1800 in due frasi."
+    },
+    "pt": {
+     "t": "As três leis de Clarke",
+     "g": "Perceber as famosas leis de Clarke, incluindo a da tecnologia e da magia.",
+     "p": [
+      "A terceira lei de Clarke diz que qualquer tecnologia suficientemente avançada é indistinguível da magia.",
+      "A primeira diz que, se um perito idoso declara algo impossível, muito provavelmente engana-se.",
+      "A segunda convida a sondar os limites do possível ousando ir além deles."
+     ],
+     "q": "Lembras-te de uma tecnologia que os teus avós teriam chamado magia?",
+     "c": "Explica um aparelho comum, como um telemóvel, a uma pessoa imaginária de 1800 em duas frases."
+    },
+    "pt_BR": {
+     "t": "As três leis de Clarke",
+     "g": "Entender as famosas leis de Clarke, incluindo a da tecnologia e da magia.",
+     "p": [
+      "A terceira lei de Clarke diz que qualquer tecnologia suficientemente avançada é indistinguível da magia.",
+      "A primeira diz que, se um perito idoso declara algo impossível, muito provavelmente ele erra.",
+      "A segunda convida a sondar os limites do possível ousando ir além deles."
+     ],
+     "q": "Você se lembra de uma tecnologia que seus avós teriam chamado de magia?",
+     "c": "Explique um aparelho comum, como um celular, a uma pessoa imaginária de 1800 em duas frases."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Robert Heinlein's future history",
+     "g": "See how Heinlein linked many stories into one imagined timeline.",
+     "p": [
+      "Robert Heinlein, an American author, sketched a Future History chart starting in the 1940s.",
+      "Many of his stories fit on one timeline, from first rockets to settled planets.",
+      "Linked stories make a world feel big, like a history book from tomorrow."
+     ],
+     "q": "If you built a timeline of the future, which event would come first?",
+     "c": "Draw a short timeline with three future milestones and one-line labels."
+    },
+    "de": {
+     "t": "Robert Heinleins Zukunftsgeschichte",
+     "g": "Sehen, wie Heinlein viele Geschichten zu einer erdachten Zeitleiste verband.",
+     "p": [
+      "Der Amerikaner Robert Heinlein entwarf in den 1940ern eine Tafel seiner Future History.",
+      "Viele seiner Geschichten passen auf eine Zeitleiste, von den ersten Raketen bis zu besiedelten Planeten.",
+      "Verknüpfte Geschichten lassen eine Welt groß wirken, wie ein Geschichtsbuch von morgen."
+     ],
+     "q": "Wenn du eine Zeitleiste der Zukunft baust, welches Ereignis käme zuerst?",
+     "c": "Zeichne eine kurze Zeitleiste mit drei Zukunftsetappen und je einer kurzen Beschriftung."
+    },
+    "es": {
+     "t": "La historia del futuro de Heinlein",
+     "g": "Ver cómo Heinlein unió muchos relatos en una sola cronología imaginada.",
+     "p": [
+      "El estadounidense Robert Heinlein esbozó en los años cuarenta un cuadro de su Historia del Futuro.",
+      "Muchos de sus relatos encajan en una cronología, desde los primeros cohetes hasta planetas habitados.",
+      "Los relatos enlazados hacen que un mundo parezca grande, como un libro de historia de mañana."
+     ],
+     "q": "Si hicieras una cronología del futuro, ¿qué suceso iría primero?",
+     "c": "Dibuja una cronología corta con tres hitos futuros y una etiqueta breve para cada uno."
+    },
+    "fr": {
+     "t": "L'histoire du futur de Heinlein",
+     "g": "Voir comment Heinlein a relié de nombreux récits en une seule chronologie imaginaire.",
+     "p": [
+      "L'Américain Robert Heinlein esquisse dans les années 1940 un tableau de son Histoire du futur.",
+      "Beaucoup de ses récits tiennent sur une chronologie, des premières fusées aux planètes habitées.",
+      "Des récits reliés donnent de l'ampleur à un monde, comme un livre d'histoire de demain."
+     ],
+     "q": "Si tu bâtissais une chronologie du futur, quel événement viendrait en premier ?",
+     "c": "Dessine une courte chronologie avec trois jalons futurs et une étiquette brève chacun."
+    },
+    "it": {
+     "t": "La storia del futuro di Heinlein",
+     "g": "Vedere come Heinlein collegò molti racconti in un'unica cronologia immaginata.",
+     "p": [
+      "L'americano Robert Heinlein abbozzò negli anni Quaranta una tavola della sua Storia del futuro.",
+      "Molti suoi racconti stanno su una linea del tempo, dai primi razzi ai pianeti abitati.",
+      "I racconti collegati fanno sembrare un mondo vasto, come un libro di storia di domani."
+     ],
+     "q": "Se costruissi una linea del tempo del futuro, quale evento verrebbe per primo?",
+     "c": "Disegna una breve linea del tempo con tre tappe future e un'etichetta breve ciascuna."
+    },
+    "pt": {
+     "t": "A história do futuro de Heinlein",
+     "g": "Ver como Heinlein ligou muitos contos numa só cronologia imaginada.",
+     "p": [
+      "O americano Robert Heinlein esboçou nos anos 1940 um quadro da sua História do Futuro.",
+      "Muitos dos seus contos cabem numa cronologia, dos primeiros foguetões a planetas habitados.",
+      "Contos ligados fazem um mundo parecer enorme, como um livro de história de amanhã."
+     ],
+     "q": "Se fizesses uma cronologia do futuro, que acontecimento viria primeiro?",
+     "c": "Desenha uma cronologia curta com três marcos futuros e uma etiqueta breve para cada."
+    },
+    "pt_BR": {
+     "t": "A história do futuro de Heinlein",
+     "g": "Ver como Heinlein ligou muitos contos numa só cronologia imaginada.",
+     "p": [
+      "O americano Robert Heinlein esboçou nos anos 1940 um quadro da sua História do Futuro.",
+      "Muitos de seus contos cabem numa cronologia, dos primeiros foguetes a planetas habitados.",
+      "Contos ligados fazem um mundo parecer enorme, como um livro de história de amanhã."
+     ],
+     "q": "Se você fizesse uma cronologia do futuro, qual acontecimento viria primeiro?",
+     "c": "Desenhe uma cronologia curta com três marcos futuros e uma etiqueta breve para cada."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rockets and space travel basics",
+     "g": "Learn how SF imagined spaceflight before it happened and what it got right.",
+     "p": [
+      "Verne sent his travellers to the Moon in a cannon shell; real rockets work by pushing gas backwards.",
+      "Writers like Clarke and Heinlein described orbits, countdowns and stages before the space age.",
+      "Many ideas, such as launching from near the equator, matched what engineers later did."
+     ],
+     "q": "What part of a rocket launch would you most like to see in person?",
+     "c": "Describe a launch day in three short sentences: sights, sounds and feelings."
+    },
+    "de": {
+     "t": "Raketen und Raumfahrt-Grundlagen",
+     "g": "Lernen, wie SF Raumfahrt vor ihrer Verwirklichung ausmalte und was sie richtig erfasste.",
+     "p": [
+      "Verne schickte Reisende in einer Kanonenkugel zum Mond; echte Raketen stoßen Gas nach hinten aus.",
+      "Autoren wie Clarke und Heinlein beschrieben Umlaufbahnen, Countdowns und Raketenstufen vor dem Raumfahrtzeitalter.",
+      "Viele Ideen, etwa Starts nahe dem Äquator, deckten sich mit dem, was Ingenieure später taten."
+     ],
+     "q": "Welchen Teil eines Raketenstarts würdest du am liebsten live erleben?",
+     "c": "Beschreibe einen Starttag in drei kurzen Sätzen: Anblick, Geräusche, Gefühle."
+    },
+    "es": {
+     "t": "Cohetes y viaje espacial: lo básico",
+     "g": "Aprender cómo la CF imaginó el vuelo espacial antes de que existiera y qué acertó.",
+     "p": [
+      "Verne envió viajeros a la Luna en un proyectil de cañón; los cohetes reales empujan gas hacia atrás.",
+      "Autores como Clarke y Heinlein describieron órbitas, cuentas atrás y etapas antes de la era espacial.",
+      "Muchas ideas, como lanzar cerca del ecuador, coincidieron con lo que luego hicieron los ingenieros."
+     ],
+     "q": "¿Qué parte del lanzamiento de un cohete te gustaría ver en persona?",
+     "c": "Describe un día de lanzamiento en tres frases cortas: vistas, sonidos y emociones."
+    },
+    "fr": {
+     "t": "Fusées et voyage spatial : les bases",
+     "g": "Apprendre comment la SF imaginait le vol spatial avant qu'il existe et ce qu'elle a deviné.",
+     "p": [
+      "Verne envoie ses voyageurs sur la Lune dans un obus ; les vraies fusées expulsent du gaz vers l'arrière.",
+      "Des auteurs comme Clarke et Heinlein décrivent orbites, comptes à rebours et étages avant l'ère spatiale.",
+      "Beaucoup d'idées, comme lancer près de l'équateur, ont rejoint ce que les ingénieurs ont fait ensuite."
+     ],
+     "q": "Quelle partie d'un lancement de fusée aimerais-tu voir en vrai ?",
+     "c": "Décris un jour de lancement en trois phrases courtes : images, sons et sensations."
+    },
+    "it": {
+     "t": "Razzi e viaggi spaziali: le basi",
+     "g": "Imparare come la fantascienza immaginò il volo spaziale prima che esistesse e cosa intuì.",
+     "p": [
+      "Verne mandò i viaggiatori sulla Luna in un proiettile di cannone; i veri razzi spingono gas all'indietro.",
+      "Autori come Clarke e Heinlein descrissero orbite, conti alla rovescia e stadi prima dell'era spaziale.",
+      "Molte idee, come lanciare vicino all'equatore, coincisero con ciò che gli ingegneri fecero poi."
+     ],
+     "q": "Quale parte del lancio di un razzo vorresti vedere di persona?",
+     "c": "Descrivi un giorno di lancio in tre frasi brevi: immagini, suoni e sensazioni."
+    },
+    "pt": {
+     "t": "Foguetões e viagens espaciais: o essencial",
+     "g": "Aprender como a FC imaginou o voo espacial antes de existir e o que acertou.",
+     "p": [
+      "Verne enviou viajantes à Lua num projétil de canhão; os foguetões reais empurram gás para trás.",
+      "Autores como Clarke e Heinlein descreveram órbitas, contagens decrescentes e fases antes da era espacial.",
+      "Muitas ideias, como lançar perto do equador, coincidiram com o que os engenheiros fizeram depois."
+     ],
+     "q": "Que parte do lançamento de um foguetão gostarias de ver ao vivo?",
+     "c": "Descreve um dia de lançamento em três frases curtas: vistas, sons e sentimentos."
+    },
+    "pt_BR": {
+     "t": "Foguetes e viagem espacial: o básico",
+     "g": "Aprender como a FC imaginou o voo espacial antes de existir e o que acertou.",
+     "p": [
+      "Verne enviou viajantes à Lua num projétil de canhão; os foguetes reais empurram gás para trás.",
+      "Autores como Clarke e Heinlein descreveram órbitas, contagens regressivas e estágios antes da era espacial.",
+      "Muitas ideias, como lançar perto do equador, coincidiram com o que os engenheiros fizeram depois."
+     ],
+     "q": "Que parte do lançamento de um foguete você gostaria de ver ao vivo?",
+     "c": "Descreva um dia de lançamento em três frases curtas: vistas, sons e sensações."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Robots, androids and cyborgs",
+     "g": "Tell the three apart, with famous examples from books and films.",
+     "p": [
+      "A robot is a machine built to do tasks; R2-D2 is a classic example.",
+      "An android is a robot made to look human, like Data in Star Trek.",
+      "A cyborg is a living being with machine parts, an idea explored in many stories."
+     ],
+     "q": "Which of the three would you most like to meet, and why?",
+     "c": "Design a friendly robot helper for your home and name its one special skill."
+    },
+    "de": {
+     "t": "Roboter, Androiden und Cyborgs",
+     "g": "Die drei auseinanderhalten, mit berühmten Beispielen aus Büchern und Filmen.",
+     "p": [
+      "Ein Roboter ist eine Maschine für Aufgaben; R2-D2 ist ein klassisches Beispiel.",
+      "Ein Android ist ein menschenähnlicher Roboter, wie Data aus Star Trek.",
+      "Ein Cyborg ist ein Lebewesen mit Maschinenteilen, eine Idee, die viele Geschichten erkunden."
+     ],
+     "q": "Wen von den dreien würdest du am liebsten treffen, und warum?",
+     "c": "Entwirf einen freundlichen Roboterhelfer für dein Zuhause und nenne seine eine Spezialfähigkeit."
+    },
+    "es": {
+     "t": "Robots, androides y cíborgs",
+     "g": "Distinguir los tres con ejemplos famosos de libros y películas.",
+     "p": [
+      "Un robot es una máquina hecha para tareas; R2-D2 es un ejemplo clásico.",
+      "Un androide es un robot hecho para parecer humano, como Data en Star Trek.",
+      "Un cíborg es un ser vivo con partes mecánicas, una idea explorada en muchas historias."
+     ],
+     "q": "¿A cuál de los tres te gustaría conocer más y por qué?",
+     "c": "Diseña un robot ayudante amable para tu casa y ponle una habilidad especial."
+    },
+    "fr": {
+     "t": "Robots, androïdes et cyborgs",
+     "g": "Distinguer les trois grâce à des exemples célèbres de livres et de films.",
+     "p": [
+      "Un robot est une machine conçue pour des tâches ; R2-D2 en est un exemple classique.",
+      "Un androïde est un robot fait pour ressembler à un humain, comme Data dans Star Trek.",
+      "Un cyborg est un être vivant doté de pièces mécaniques, idée explorée dans bien des récits."
+     ],
+     "q": "Lequel des trois aimerais-tu le plus rencontrer, et pourquoi ?",
+     "c": "Conçois un robot assistant sympathique pour ta maison et donne-lui un talent spécial."
+    },
+    "it": {
+     "t": "Robot, androidi e cyborg",
+     "g": "Distinguere i tre con esempi famosi da libri e film.",
+     "p": [
+      "Un robot è una macchina costruita per compiti; R2-D2 è un esempio classico.",
+      "Un androide è un robot fatto per sembrare umano, come Data in Star Trek.",
+      "Un cyborg è un essere vivente con parti meccaniche, idea esplorata in molte storie."
+     ],
+     "q": "Quale dei tre vorresti incontrare di più e perché?",
+     "c": "Progetta un robot aiutante amichevole per la tua casa e dagli un'abilità speciale."
+    },
+    "pt": {
+     "t": "Robôs, andróides e ciborgues",
+     "g": "Distinguir os três com exemplos famosos de livros e filmes.",
+     "p": [
+      "Um robô é uma máquina feita para tarefas; o R2-D2 é um exemplo clássico.",
+      "Um andróide é um robô feito para parecer humano, como o Data em Star Trek.",
+      "Um ciborgue é um ser vivo com partes mecânicas, ideia explorada em muitas histórias."
+     ],
+     "q": "Qual dos três gostarias mais de conhecer e porquê?",
+     "c": "Desenha um robô ajudante simpático para a tua casa e dá-lhe uma habilidade especial."
+    },
+    "pt_BR": {
+     "t": "Robôs, androides e ciborgues",
+     "g": "Distinguir os três com exemplos famosos de livros e filmes.",
+     "p": [
+      "Um robô é uma máquina feita para tarefas; o R2-D2 é um exemplo clássico.",
+      "Um androide é um robô feito para parecer humano, como o Data em Star Trek.",
+      "Um ciborgue é um ser vivo com partes mecânicas, ideia explorada em muitas histórias."
+     ],
+     "q": "Qual dos três você mais gostaria de conhecer e por quê?",
+     "c": "Projete um robô ajudante simpático para sua casa e dê a ele uma habilidade especial."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Time travel 101",
+     "g": "Learn the main rules stories use for travelling in time.",
+     "p": [
+      "Closed loops say the past cannot change: whatever a traveller does was always part of history.",
+      "Branching timelines say a change creates a new path, leaving the old one intact.",
+      "Some stories mix them or simply skip the rules to focus on adventure and feelings."
+     ],
+     "q": "If you could visit one period, would you only watch or also take part?",
+     "c": "Pick a time-travel rule and write a two-sentence story that follows it."
+    },
+    "de": {
+     "t": "Zeitreisen für Einsteiger",
+     "g": "Die wichtigsten Regeln kennenlernen, nach denen Geschichten durch die Zeit reisen.",
+     "p": [
+      "Geschlossene Schleifen: Die Vergangenheit lässt sich nicht ändern, jede Tat war immer schon Teil der Geschichte.",
+      "Verzweigte Zeitlinien: Eine Änderung erzeugt einen neuen Pfad, der alte bleibt bestehen.",
+      "Manche Geschichten mischen beides oder lassen Regeln weg, um Abenteuer und Gefühle zu zeigen."
+     ],
+     "q": "Würdest du in einer besuchten Epoche nur zusehen oder auch mitmachen?",
+     "c": "Wähle eine Zeitreise-Regel und schreibe eine Zwei-Satz-Geschichte, die ihr folgt."
+    },
+    "es": {
+     "t": "Viajes en el tiempo 101",
+     "g": "Aprender las reglas principales que usan las historias para viajar en el tiempo.",
+     "p": [
+      "Los bucles cerrados dicen que el pasado no cambia: lo que haga el viajero siempre fue parte de la historia.",
+      "Las líneas ramificadas dicen que un cambio crea un camino nuevo y deja intacto el viejo.",
+      "Algunas historias las mezclan o se saltan las reglas para centrarse en aventura y emociones."
+     ],
+     "q": "Si pudieras visitar una época, ¿solo mirarías o también participarías?",
+     "c": "Elige una regla de viaje en el tiempo y escribe una historia de dos frases que la siga."
+    },
+    "fr": {
+     "t": "Voyage dans le temps 101",
+     "g": "Apprendre les règles principales qu'utilisent les récits pour voyager dans le temps.",
+     "p": [
+      "Les boucles fermées disent que le passé ne change pas : ce que fait le voyageur a toujours fait partie de l'histoire.",
+      "Les lignes ramifiées disent qu'un changement crée un nouveau chemin et laisse l'ancien intact.",
+      "Certains récits les mélangent ou ignorent les règles pour privilégier aventure et émotions."
+     ],
+     "q": "Si tu pouvais visiter une époque, ferais-tu qu'observer ou participerais-tu aussi ?",
+     "c": "Choisis une règle de voyage temporel et écris une histoire en deux phrases qui la respecte."
+    },
+    "it": {
+     "t": "Viaggi nel tempo 101",
+     "g": "Imparare le regole principali che le storie usano per viaggiare nel tempo.",
+     "p": [
+      "I cicli chiusi dicono che il passato non cambia: ciò che fa il viaggiatore è sempre stato parte della storia.",
+      "Le linee ramificate dicono che un cambiamento crea un nuovo percorso e lascia intatto il vecchio.",
+      "Alcune storie le mescolano o saltano le regole per puntare su avventura ed emozioni."
+     ],
+     "q": "Se potessi visitare un'epoca, guarderesti soltanto o parteciperesti anche?",
+     "c": "Scegli una regola di viaggio nel tempo e scrivi una storia di due frasi che la rispetti."
+    },
+    "pt": {
+     "t": "Viagens no tempo 101",
+     "g": "Aprender as regras principais que as histórias usam para viajar no tempo.",
+     "p": [
+      "Os ciclos fechados dizem que o passado não muda: o que o viajante faz sempre fez parte da história.",
+      "As linhas ramificadas dizem que uma mudança cria um novo caminho e deixa o antigo intacto.",
+      "Algumas histórias misturam-nas ou ignoram as regras para se centrarem em aventura e emoções."
+     ],
+     "q": "Se pudesses visitar uma época, só observarias ou também participarias?",
+     "c": "Escolhe uma regra de viagem no tempo e escreve uma história de duas frases que a siga."
+    },
+    "pt_BR": {
+     "t": "Viagem no tempo 101",
+     "g": "Aprender as regras principais que as histórias usam para viajar no tempo.",
+     "p": [
+      "Os ciclos fechados dizem que o passado não muda: o que o viajante faz sempre fez parte da história.",
+      "As linhas ramificadas dizem que uma mudança cria um novo caminho e deixa o antigo intacto.",
+      "Algumas histórias as misturam ou ignoram as regras para focar em aventura e emoções."
+     ],
+     "q": "Se pudesse visitar uma época, você só observaria ou também participaria?",
+     "c": "Escolha uma regra de viagem no tempo e escreva uma história de duas frases que a siga."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "First contact stories",
+     "g": "Explore how SF imagines meeting other intelligent life.",
+     "p": [
+      "Some stories show friendly visitors; others show puzzling signals from far away.",
+      "Carl Sagan's novel Contact (1985) imagines scientists decoding a message from space.",
+      "Many first-contact tales are really about learning to communicate and understand."
+     ],
+     "q": "How would you try to say hello to someone with no shared language?",
+     "c": "Invent a simple greeting made only of shapes, sounds or numbers."
+    },
+    "de": {
+     "t": "Erstkontakt-Geschichten",
+     "g": "Erkunden, wie SF die Begegnung mit anderem intelligentem Leben ausmalt.",
+     "p": [
+      "Manche Geschichten zeigen freundliche Besucher, andere rätselhafte Signale aus weiter Ferne.",
+      "Carl Sagans Roman Contact (1985) lässt Forschende eine Botschaft aus dem All entschlüsseln.",
+      "Viele Erstkontakt-Geschichten handeln eigentlich davon, Verständigung und Verstehen zu lernen."
+     ],
+     "q": "Wie würdest du jemandem ohne gemeinsame Sprache Hallo sagen?",
+     "c": "Erfinde einen einfachen Gruß nur aus Formen, Klängen oder Zahlen."
+    },
+    "es": {
+     "t": "Historias de primer contacto",
+     "g": "Explorar cómo imagina la CF el encuentro con otra vida inteligente.",
+     "p": [
+      "Algunas historias muestran visitantes amistosos; otras, señales misteriosas desde lejos.",
+      "La novela Contacto (1985) de Carl Sagan imagina a científicos descifrando un mensaje del espacio.",
+      "Muchos relatos de primer contacto tratan en realidad de aprender a comunicarse y entender."
+     ],
+     "q": "¿Cómo intentarías saludar a alguien sin ninguna lengua en común?",
+     "c": "Inventa un saludo sencillo hecho solo de formas, sonidos o números."
+    },
+    "fr": {
+     "t": "Récits de premier contact",
+     "g": "Explorer comment la SF imagine la rencontre avec une autre vie intelligente.",
+     "p": [
+      "Certains récits montrent des visiteurs amicaux, d'autres des signaux intrigants venus de loin.",
+      "Le roman Contact (1985) de Carl Sagan imagine des scientifiques décodant un message de l'espace.",
+      "Beaucoup de récits de premier contact parlent en fait d'apprendre à communiquer et à comprendre."
+     ],
+     "q": "Comment essaierais-tu de dire bonjour à quelqu'un sans langue commune ?",
+     "c": "Invente un salut simple fait seulement de formes, de sons ou de nombres."
+    },
+    "it": {
+     "t": "Storie di primo contatto",
+     "g": "Esplorare come la fantascienza immagina l'incontro con altra vita intelligente.",
+     "p": [
+      "Alcune storie mostrano visitatori amichevoli, altre segnali enigmatici da lontano.",
+      "Il romanzo Contact (1985) di Carl Sagan immagina scienziati che decifrano un messaggio dallo spazio.",
+      "Molti racconti di primo contatto parlano in realtà di imparare a comunicare e capire."
+     ],
+     "q": "Come proveresti a dire ciao a qualcuno senza una lingua in comune?",
+     "c": "Inventa un saluto semplice fatto solo di forme, suoni o numeri."
+    },
+    "pt": {
+     "t": "Histórias de primeiro contacto",
+     "g": "Explorar como a FC imagina o encontro com outra vida inteligente.",
+     "p": [
+      "Algumas histórias mostram visitantes amigáveis; outras, sinais misteriosos vindos de longe.",
+      "O romance Contacto (1985), de Carl Sagan, imagina cientistas a decifrar uma mensagem do espaço.",
+      "Muitas histórias de primeiro contacto tratam, na verdade, de aprender a comunicar e a compreender."
+     ],
+     "q": "Como tentarias dizer olá a alguém sem nenhuma língua em comum?",
+     "c": "Inventa um cumprimento simples feito só de formas, sons ou números."
+    },
+    "pt_BR": {
+     "t": "Histórias de primeiro contato",
+     "g": "Explorar como a FC imagina o encontro com outra vida inteligente.",
+     "p": [
+      "Algumas histórias mostram visitantes amigáveis; outras, sinais misteriosos vindos de longe.",
+      "O romance Contato (1985), de Carl Sagan, imagina cientistas decifrando uma mensagem do espaço.",
+      "Muitas histórias de primeiro contato tratam, na verdade, de aprender a se comunicar e entender."
+     ],
+     "q": "Como você tentaria dizer olá a alguém sem nenhuma língua em comum?",
+     "c": "Invente um cumprimento simples feito só de formas, sons ou números."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cities of the future",
+     "g": "See how SF pictures tomorrow's urban life.",
+     "p": [
+      "Flying cars, green towers and floating cities fill many imagined skylines.",
+      "Some stories picture clean, quiet cities with gardens on every roof.",
+      "Imagining future cities helps us ask what we want from the places we live in."
+     ],
+     "q": "What one feature would your dream city of the future definitely have?",
+     "c": "Sketch or describe a tiny district of a future city, with at least three details."
+    },
+    "de": {
+     "t": "Städte der Zukunft",
+     "g": "Sehen, wie SF sich das Stadtleben von morgen vorstellt.",
+     "p": [
+      "Fliegende Autos, grüne Türme und schwebende Städte füllen viele erdachte Skylines.",
+      "Manche Geschichten zeigen saubere, ruhige Städte mit Gärten auf jedem Dach.",
+      "Zukunftsstädte auszumalen hilft uns zu fragen, was wir von unseren Wohnorten wollen."
+     ],
+     "q": "Welches eine Merkmal hätte deine Traumstadt der Zukunft ganz sicher?",
+     "c": "Skizziere oder beschreibe ein kleines Viertel einer Zukunftsstadt mit mindestens drei Details."
+    },
+    "es": {
+     "t": "Ciudades del futuro",
+     "g": "Ver cómo imagina la CF la vida urbana del mañana.",
+     "p": [
+      "Coches voladores, torres verdes y ciudades flotantes llenan muchos horizontes imaginados.",
+      "Algunas historias muestran ciudades limpias y tranquilas con jardines en cada azotea.",
+      "Imaginar ciudades futuras nos ayuda a preguntarnos qué queremos de los lugares donde vivimos."
+     ],
+     "q": "¿Qué rasgo tendría seguro tu ciudad soñada del futuro?",
+     "c": "Dibuja o describe un pequeño barrio de una ciudad futura, con al menos tres detalles."
+    },
+    "fr": {
+     "t": "Les villes du futur",
+     "g": "Voir comment la SF imagine la vie urbaine de demain.",
+     "p": [
+      "Voitures volantes, tours vertes et villes flottantes peuplent bien des horizons imaginaires.",
+      "Certains récits montrent des villes propres et calmes, avec des jardins sur chaque toit.",
+      "Imaginer les villes futures aide à se demander ce que l'on attend des lieux où l'on vit."
+     ],
+     "q": "Quelle caractéristique ta ville idéale du futur aurait-elle à coup sûr ?",
+     "c": "Dessine ou décris un petit quartier d'une ville future, avec au moins trois détails."
+    },
+    "it": {
+     "t": "Le città del futuro",
+     "g": "Vedere come la fantascienza immagina la vita urbana di domani.",
+     "p": [
+      "Auto volanti, torri verdi e città galleggianti riempiono molti orizzonti immaginati.",
+      "Alcune storie mostrano città pulite e tranquille con giardini su ogni tetto.",
+      "Immaginare città future ci aiuta a chiederci cosa vogliamo dai luoghi in cui viviamo."
+     ],
+     "q": "Quale caratteristica avrebbe sicuramente la tua città ideale del futuro?",
+     "c": "Disegna o descrivi un piccolo quartiere di una città futura, con almeno tre dettagli."
+    },
+    "pt": {
+     "t": "As cidades do futuro",
+     "g": "Ver como a FC imagina a vida urbana de amanhã.",
+     "p": [
+      "Carros voadores, torres verdes e cidades flutuantes enchem muitos horizontes imaginados.",
+      "Algumas histórias mostram cidades limpas e calmas, com jardins em cada telhado.",
+      "Imaginar cidades futuras ajuda-nos a perguntar o que queremos dos lugares onde vivemos."
+     ],
+     "q": "Que característica teria de certeza a tua cidade de sonho do futuro?",
+     "c": "Desenha ou descreve um pequeno bairro de uma cidade futura, com pelo menos três detalhes."
+    },
+    "pt_BR": {
+     "t": "As cidades do futuro",
+     "g": "Ver como a FC imagina a vida urbana de amanhã.",
+     "p": [
+      "Carros voadores, torres verdes e cidades flutuantes enchem muitos horizontes imaginados.",
+      "Algumas histórias mostram cidades limpas e calmas, com jardins em cada telhado.",
+      "Imaginar cidades futuras ajuda a perguntar o que queremos dos lugares onde vivemos."
+     ],
+     "q": "Que característica sua cidade dos sonhos do futuro teria com certeza?",
+     "c": "Desenhe ou descreva um pequeno bairro de uma cidade futura, com pelo menos três detalhes."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Utopias and dystopias",
+     "g": "Understand stories of ideal and flawed societies and why both are useful.",
+     "p": [
+      "A utopia imagines a better society; the word comes from Thomas More's 1516 book Utopia.",
+      "A dystopia imagines a society gone wrong, as a warning to think carefully.",
+      "Both let us test ideas about fairness and freedom on paper before real life."
+     ],
+     "q": "What would make a society truly good for the people living in it?",
+     "c": "Write three rules for your own small imaginary utopian town."
+    },
+    "de": {
+     "t": "Utopien und Dystopien",
+     "g": "Geschichten von idealen und fehlerhaften Gesellschaften verstehen und warum beide nützen.",
+     "p": [
+      "Eine Utopie entwirft eine bessere Gesellschaft; das Wort stammt aus Thomas Mores Buch Utopia von 1516.",
+      "Eine Dystopie zeigt eine fehlgeleitete Gesellschaft als Mahnung zum sorgfältigen Nachdenken.",
+      "Beide erlauben, Ideen über Fairness und Freiheit auf dem Papier zu erproben."
+     ],
+     "q": "Was würde eine Gesellschaft für die dort Lebenden wirklich gut machen?",
+     "c": "Schreibe drei Regeln für deine eigene kleine erfundene Utopie-Stadt."
+    },
+    "es": {
+     "t": "Utopías y distopías",
+     "g": "Entender las historias de sociedades ideales y defectuosas y por qué ambas son útiles.",
+     "p": [
+      "Una utopía imagina una sociedad mejor; la palabra viene del libro Utopía de Tomás Moro, de 1516.",
+      "Una distopía imagina una sociedad torcida, como advertencia para pensar con cuidado.",
+      "Ambas permiten probar en papel ideas sobre justicia y libertad antes de la vida real."
+     ],
+     "q": "¿Qué haría que una sociedad fuera de verdad buena para quienes viven en ella?",
+     "c": "Escribe tres normas para tu propia pequeña ciudad utópica imaginaria."
+    },
+    "fr": {
+     "t": "Utopies et dystopies",
+     "g": "Comprendre les récits de sociétés idéales et défaillantes et leur utilité.",
+     "p": [
+      "Une utopie imagine une société meilleure ; le mot vient du livre Utopia de Thomas More, en 1516.",
+      "Une dystopie imagine une société qui a mal tourné, comme avertissement pour réfléchir avec soin.",
+      "Les deux permettent d'éprouver sur le papier des idées d'équité et de liberté avant la vraie vie."
+     ],
+     "q": "Qu'est-ce qui rendrait une société vraiment bonne pour ceux qui y vivent ?",
+     "c": "Écris trois règles pour ta propre petite ville utopique imaginaire."
+    },
+    "it": {
+     "t": "Utopie e distopie",
+     "g": "Capire le storie di società ideali e difettose e perché entrambe sono utili.",
+     "p": [
+      "Un'utopia immagina una società migliore; la parola viene dal libro Utopia di Tommaso Moro, del 1516.",
+      "Una distopia immagina una società andata male, come avvertimento a pensare con attenzione.",
+      "Entrambe permettono di provare sulla carta idee su giustizia e libertà prima della vita vera."
+     ],
+     "q": "Cosa renderebbe una società davvero buona per chi ci vive?",
+     "c": "Scrivi tre regole per la tua piccola città utopica immaginaria."
+    },
+    "pt": {
+     "t": "Utopias e distopias",
+     "g": "Perceber as histórias de sociedades ideais e falhadas e porque ambas são úteis.",
+     "p": [
+      "Uma utopia imagina uma sociedade melhor; a palavra vem do livro Utopia de Thomas More, de 1516.",
+      "Uma distopia imagina uma sociedade que correu mal, como aviso para pensarmos com cuidado.",
+      "Ambas permitem testar no papel ideias sobre justiça e liberdade antes da vida real."
+     ],
+     "q": "O que tornaria uma sociedade verdadeiramente boa para quem nela vive?",
+     "c": "Escreve três regras para a tua pequena cidade utópica imaginária."
+    },
+    "pt_BR": {
+     "t": "Utopias e distopias",
+     "g": "Entender as histórias de sociedades ideais e falhas e por que ambas são úteis.",
+     "p": [
+      "Uma utopia imagina uma sociedade melhor; a palavra vem do livro Utopia de Thomas More, de 1516.",
+      "Uma distopia imagina uma sociedade que deu errado, como aviso para pensarmos com cuidado.",
+      "Ambas permitem testar no papel ideias sobre justiça e liberdade antes da vida real."
+     ],
+     "q": "O que tornaria uma sociedade realmente boa para quem vive nela?",
+     "c": "Escreva três regras para a sua pequena cidade utópica imaginária."
+    }
+   }
+  }
+ ]
+}

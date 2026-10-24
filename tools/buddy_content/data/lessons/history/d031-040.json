@@ -1,0 +1,835 @@
+{
+ "topic": "history",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ancient China's beginnings",
+     "g": "Meet the Shang dynasty and the oracle bones that hold the earliest Chinese writing.",
+     "p": [
+      "The Shang dynasty ruled along the Yellow River from about 1600 to 1046 BCE.",
+      "Scribes carved questions on ox bones and turtle shells, about harvests, weather and journeys.",
+      "These oracle bones, over 3,000 years old, show an early form of the script still used in China today."
+     ],
+     "q": "What questions about the future do you think people asked most often 3,000 years ago?",
+     "c": "Look up the Chinese character for sun or tree and compare it with its old oracle-bone form."
+    },
+    "de": {
+     "t": "Die Anfänge des alten China",
+     "g": "Lerne die Shang-Dynastie und die Orakelknochen mit der ältesten chinesischen Schrift kennen.",
+     "p": [
+      "Die Shang-Dynastie herrschte etwa von 1600 bis 1046 v. Chr. am Gelben Fluss.",
+      "Schreiber ritzten Fragen in Rinderknochen und Schildkrötenpanzer, zu Ernte, Wetter und Reisen.",
+      "Diese über 3.000 Jahre alten Orakelknochen zeigen eine frühe Form der Schrift, die China heute noch nutzt."
+     ],
+     "q": "Welche Fragen zur Zukunft stellten Menschen vor 3.000 Jahren wohl am häufigsten?",
+     "c": "Such das chinesische Zeichen für Sonne oder Baum und vergleiche es mit seiner alten Orakelknochen-Form."
+    },
+    "es": {
+     "t": "Los inicios de la antigua China",
+     "g": "Conoce la dinastía Shang y los huesos oraculares que guardan la escritura china más antigua.",
+     "p": [
+      "La dinastía Shang gobernó junto al río Amarillo aproximadamente entre 1600 y 1046 a. C.",
+      "Los escribas grababan preguntas en huesos de buey y caparazones de tortuga sobre cosechas, clima y viajes.",
+      "Estos huesos oraculares, de más de 3.000 años, muestran una forma temprana de la escritura china actual."
+     ],
+     "q": "¿Qué preguntas sobre el futuro crees que la gente hacía más a menudo hace 3.000 años?",
+     "c": "Busca el carácter chino de sol o árbol y compáralo con su antigua forma en los huesos oraculares."
+    },
+    "fr": {
+     "t": "Les débuts de la Chine ancienne",
+     "g": "Découvrir la dynastie Shang et les os oraculaires porteurs de la plus ancienne écriture chinoise.",
+     "p": [
+      "La dynastie Shang a régné le long du fleuve Jaune d'environ 1600 à 1046 av. J.-C.",
+      "Des scribes gravaient des questions sur des os de bœuf et des carapaces de tortue : récoltes, météo, voyages.",
+      "Ces os oraculaires de plus de 3 000 ans montrent une forme ancienne de l'écriture encore utilisée en Chine."
+     ],
+     "q": "Selon toi, quelles questions sur l'avenir posait-on le plus souvent il y a 3 000 ans ?",
+     "c": "Cherche le caractère chinois pour soleil ou arbre et compare-le à sa forme ancienne sur les os oraculaires."
+    },
+    "it": {
+     "t": "Gli inizi della Cina antica",
+     "g": "Conosci la dinastia Shang e le ossa oracolari che custodiscono la più antica scrittura cinese.",
+     "p": [
+      "La dinastia Shang regnò lungo il Fiume Giallo all'incirca dal 1600 al 1046 a.C.",
+      "Gli scribi incidevano domande su ossa di bue e gusci di tartaruga, su raccolti, tempo e viaggi.",
+      "Queste ossa oracolari, di oltre 3.000 anni, mostrano una forma antica della scrittura usata ancora oggi in Cina."
+     ],
+     "q": "Quali domande sul futuro pensi che le persone facessero più spesso 3.000 anni fa?",
+     "c": "Cerca il carattere cinese per sole o albero e confrontalo con la sua antica forma sulle ossa oracolari."
+    },
+    "pt": {
+     "t": "Os inícios da China antiga",
+     "g": "Conhecer a dinastia Shang e os ossos oraculares que guardam a escrita chinesa mais antiga.",
+     "p": [
+      "A dinastia Shang governou junto ao rio Amarelo aproximadamente entre 1600 e 1046 a.C.",
+      "Os escribas gravavam perguntas em ossos de boi e carapaças de tartaruga sobre colheitas, tempo e viagens.",
+      "Estes ossos oraculares, com mais de 3000 anos, mostram uma forma antiga da escrita ainda usada na China."
+     ],
+     "q": "Que perguntas sobre o futuro achas que as pessoas faziam mais há 3000 anos?",
+     "c": "Procura o caráter chinês para sol ou árvore e compara-o com a sua forma antiga nos ossos oraculares."
+    },
+    "pt_BR": {
+     "t": "Os primórdios da China antiga",
+     "g": "Conhecer a dinastia Shang e os ossos oraculares que guardam a escrita chinesa mais antiga.",
+     "p": [
+      "A dinastia Shang governou às margens do rio Amarelo aproximadamente entre 1600 e 1046 a.C.",
+      "Os escribas gravavam perguntas em ossos de boi e cascos de tartaruga sobre colheitas, clima e viagens.",
+      "Esses ossos oraculares, com mais de 3 mil anos, mostram uma forma antiga da escrita ainda usada na China."
+     ],
+     "q": "Que perguntas sobre o futuro você acha que as pessoas mais faziam há 3 mil anos?",
+     "c": "Procure o caractere chinês para sol ou árvore e compare com sua forma antiga nos ossos oraculares."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Silk Road begins",
+     "g": "Discover the trade routes that linked China with Central Asia, Persia and the Mediterranean.",
+     "p": [
+      "In the 2nd century BCE, the Han envoy Zhang Qian travelled west and opened contacts with Central Asia.",
+      "Silk, paper and tea went west, while horses, glass, grapes and new ideas came east.",
+      "It was never one road but a web of routes; the name Silk Road was coined only in the 19th century."
+     ],
+     "q": "Which product from far away would you have most wanted to buy at a Silk Road market?",
+     "c": "Check the labels of three things you own and see how many countries they came from."
+    },
+    "de": {
+     "t": "Die Seidenstraße entsteht",
+     "g": "Entdecke die Handelswege, die China mit Zentralasien, Persien und dem Mittelmeer verbanden.",
+     "p": [
+      "Im 2. Jahrhundert v. Chr. reiste der Han-Gesandte Zhang Qian nach Westen und knüpfte Kontakte nach Zentralasien.",
+      "Seide, Papier und Tee gingen nach Westen, Pferde, Glas, Trauben und neue Ideen kamen nach Osten.",
+      "Es war nie eine einzige Straße, sondern ein Netz von Wegen; der Name Seidenstraße entstand erst im 19. Jahrhundert."
+     ],
+     "q": "Welche Ware aus der Ferne hättest du auf einem Markt der Seidenstraße am liebsten gekauft?",
+     "c": "Prüfe die Etiketten von drei Dingen, die du besitzt, und zähle, aus wie vielen Ländern sie stammen."
+    },
+    "es": {
+     "t": "Nace la Ruta de la Seda",
+     "g": "Descubre las rutas comerciales que unían China con Asia central, Persia y el Mediterráneo.",
+     "p": [
+      "En el siglo II a. C., el enviado Han Zhang Qian viajó al oeste y abrió contactos con Asia central.",
+      "La seda, el papel y el té viajaban al oeste; caballos, vidrio, uvas e ideas nuevas llegaban al este.",
+      "Nunca fue un solo camino sino una red de rutas; el nombre Ruta de la Seda se inventó en el siglo XIX."
+     ],
+     "q": "¿Qué producto lejano te habría gustado más comprar en un mercado de la Ruta de la Seda?",
+     "c": "Mira las etiquetas de tres cosas tuyas y cuenta de cuántos países distintos vienen."
+    },
+    "fr": {
+     "t": "Les débuts de la route de la soie",
+     "g": "Découvrir les routes commerciales reliant la Chine à l'Asie centrale, à la Perse et à la Méditerranée.",
+     "p": [
+      "Au IIe siècle av. J.-C., l'envoyé Han Zhang Qian partit vers l'ouest et noua des contacts avec l'Asie centrale.",
+      "Soie, papier et thé partaient vers l'ouest ; chevaux, verre, raisin et idées nouvelles arrivaient à l'est.",
+      "Ce n'était pas une route unique mais un réseau ; le nom route de la soie date seulement du XIXe siècle."
+     ],
+     "q": "Quel produit lointain aurais-tu le plus aimé acheter sur un marché de la route de la soie ?",
+     "c": "Regarde les étiquettes de trois objets que tu possèdes et compte de combien de pays ils viennent."
+    },
+    "it": {
+     "t": "Nasce la Via della Seta",
+     "g": "Scopri le rotte commerciali che collegavano la Cina con l'Asia centrale, la Persia e il Mediterraneo.",
+     "p": [
+      "Nel II secolo a.C. l'inviato Han Zhang Qian viaggiò verso ovest e aprì contatti con l'Asia centrale.",
+      "Seta, carta e tè andavano a ovest, mentre cavalli, vetro, uva e idee nuove arrivavano a est.",
+      "Non fu mai una sola strada ma una rete di percorsi; il nome Via della Seta nacque solo nel XIX secolo."
+     ],
+     "q": "Quale prodotto lontano avresti voluto comprare di più in un mercato della Via della Seta?",
+     "c": "Controlla le etichette di tre oggetti che possiedi e conta da quanti paesi diversi provengono."
+    },
+    "pt": {
+     "t": "Nasce a Rota da Seda",
+     "g": "Descobrir as rotas comerciais que ligavam a China à Ásia Central, à Pérsia e ao Mediterrâneo.",
+     "p": [
+      "No século II a.C., o enviado Han Zhang Qian viajou para ocidente e abriu contactos com a Ásia Central.",
+      "A seda, o papel e o chá iam para ocidente; cavalos, vidro, uvas e ideias novas chegavam a oriente.",
+      "Nunca foi uma só estrada, mas uma rede de rotas; o nome Rota da Seda só surgiu no século XIX."
+     ],
+     "q": "Que produto distante gostarias mais de ter comprado num mercado da Rota da Seda?",
+     "c": "Vê as etiquetas de três coisas tuas e conta de quantos países diferentes vêm."
+    },
+    "pt_BR": {
+     "t": "Nasce a Rota da Seda",
+     "g": "Descobrir as rotas comerciais que ligavam a China à Ásia Central, à Pérsia e ao Mediterrâneo.",
+     "p": [
+      "No século II a.C., o enviado Han Zhang Qian viajou para o oeste e abriu contatos com a Ásia Central.",
+      "Seda, papel e chá iam para o oeste; cavalos, vidro, uvas e ideias novas chegavam ao leste.",
+      "Nunca foi uma só estrada, mas uma rede de rotas; o nome Rota da Seda só surgiu no século XIX."
+     ],
+     "q": "Qual produto distante você mais gostaria de ter comprado num mercado da Rota da Seda?",
+     "c": "Veja as etiquetas de três coisas suas e conte de quantos países diferentes elas vêm."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Confucius",
+     "g": "Get to know the teacher whose ideas on respect, learning and family shaped East Asia.",
+     "p": [
+      "Confucius lived about 551 to 479 BCE in China and worked as a teacher and adviser.",
+      "He taught that good rulers lead by example and that respect, kindness and duty hold families together.",
+      "His students collected his sayings in the Analects, a book read and discussed for over 2,000 years."
+     ],
+     "q": "Who has been the most important teacher in your life, and what did they teach you?",
+     "c": "Write down one saying about learning that you live by, in a single short sentence."
+    },
+    "de": {
+     "t": "Konfuzius",
+     "g": "Lerne den Lehrer kennen, dessen Ideen zu Respekt, Bildung und Familie Ostasien prägten.",
+     "p": [
+      "Konfuzius lebte etwa von 551 bis 479 v. Chr. in China und arbeitete als Lehrer und Berater.",
+      "Er lehrte, dass gute Herrscher Vorbild sind und dass Respekt, Güte und Pflicht Familien zusammenhalten.",
+      "Seine Schüler sammelten seine Sprüche in den Gesprächen, einem Buch, das seit über 2.000 Jahren gelesen wird."
+     ],
+     "q": "Wer war der wichtigste Lehrer in deinem Leben, und was hat er oder sie dir beigebracht?",
+     "c": "Schreib einen Spruch über das Lernen auf, nach dem du lebst, in einem kurzen Satz."
+    },
+    "es": {
+     "t": "Confucio",
+     "g": "Conoce al maestro cuyas ideas sobre el respeto, el estudio y la familia marcaron Asia oriental.",
+     "p": [
+      "Confucio vivió aproximadamente entre 551 y 479 a. C. en China y trabajó como maestro y consejero.",
+      "Enseñaba que los buenos gobernantes dan ejemplo y que el respeto, la bondad y el deber unen a las familias.",
+      "Sus alumnos reunieron sus dichos en las Analectas, un libro leído y comentado durante más de 2.000 años."
+     ],
+     "q": "¿Quién ha sido el maestro más importante de tu vida y qué te enseñó?",
+     "c": "Escribe una frase sobre el aprendizaje que guíe tu vida, en una sola oración corta."
+    },
+    "fr": {
+     "t": "Confucius",
+     "g": "Découvrir le maître dont les idées sur le respect, l'étude et la famille ont marqué l'Asie de l'Est.",
+     "p": [
+      "Confucius a vécu environ de 551 à 479 av. J.-C. en Chine, comme enseignant et conseiller.",
+      "Il enseignait que les bons dirigeants montrent l'exemple et que respect, bonté et devoir unissent les familles.",
+      "Ses élèves ont réuni ses paroles dans les Entretiens, un livre lu et discuté depuis plus de 2 000 ans."
+     ],
+     "q": "Qui a été le professeur le plus important de ta vie, et que t'a-t-il appris ?",
+     "c": "Écris une maxime sur l'apprentissage qui te guide, en une seule phrase courte."
+    },
+    "it": {
+     "t": "Confucio",
+     "g": "Conosci il maestro le cui idee su rispetto, studio e famiglia hanno plasmato l'Asia orientale.",
+     "p": [
+      "Confucio visse all'incirca dal 551 al 479 a.C. in Cina e lavorò come maestro e consigliere.",
+      "Insegnava che i buoni governanti danno l'esempio e che rispetto, gentilezza e dovere tengono unite le famiglie.",
+      "I suoi allievi raccolsero i suoi detti nei Dialoghi, un libro letto e discusso da oltre 2.000 anni."
+     ],
+     "q": "Chi è stato l'insegnante più importante della tua vita, e che cosa ti ha insegnato?",
+     "c": "Scrivi un detto sull'imparare che segui nella vita, in una sola frase breve."
+    },
+    "pt": {
+     "t": "Confúcio",
+     "g": "Conhecer o mestre cujas ideias sobre respeito, estudo e família marcaram a Ásia Oriental.",
+     "p": [
+      "Confúcio viveu aproximadamente entre 551 e 479 a.C. na China e trabalhou como professor e conselheiro.",
+      "Ensinava que os bons governantes dão o exemplo e que o respeito, a bondade e o dever unem as famílias.",
+      "Os seus alunos reuniram as suas máximas nos Analectos, um livro lido e discutido há mais de 2000 anos."
+     ],
+     "q": "Quem foi o professor mais importante da tua vida, e o que te ensinou?",
+     "c": "Escreve uma máxima sobre aprender que te guia, numa única frase curta."
+    },
+    "pt_BR": {
+     "t": "Confúcio",
+     "g": "Conhecer o mestre cujas ideias sobre respeito, estudo e família marcaram a Ásia Oriental.",
+     "p": [
+      "Confúcio viveu aproximadamente entre 551 e 479 a.C. na China e trabalhou como professor e conselheiro.",
+      "Ele ensinava que bons governantes dão o exemplo e que respeito, bondade e dever unem as famílias.",
+      "Seus alunos reuniram suas frases nos Analectos, um livro lido e discutido há mais de 2 mil anos."
+     ],
+     "q": "Quem foi o professor mais importante da sua vida, e o que ele ensinou a você?",
+     "c": "Escreva uma frase sobre aprender que guia sua vida, numa única oração curta."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Great Wall",
+     "g": "Learn how the Great Wall was built and rebuilt over centuries, and what it was really for.",
+     "p": [
+      "It is not one wall but many, built by different dynasties from around the 7th century BCE onwards.",
+      "Most of the brick and stone wall visitors see today was built during the Ming dynasty, 1368 to 1644.",
+      "It worked as a border line with watchtowers and signal fires; and no, it is not visible to the naked eye from space."
+     ],
+     "q": "If you could walk one section of the Great Wall, would you choose a restored part or a wild, crumbling one?",
+     "c": "Look up how long all sections of the Great Wall add up to and compare it with the distance across your country."
+    },
+    "de": {
+     "t": "Die Große Mauer",
+     "g": "Erfahre, wie die Große Mauer über Jahrhunderte gebaut wurde und wozu sie wirklich diente.",
+     "p": [
+      "Sie ist nicht eine Mauer, sondern viele, gebaut von verschiedenen Dynastien ab etwa dem 7. Jahrhundert v. Chr.",
+      "Der Großteil der heute besuchten Mauer aus Ziegeln und Stein stammt aus der Ming-Zeit, 1368 bis 1644.",
+      "Sie war Grenzlinie mit Wachtürmen und Signalfeuern; und nein, mit bloßem Auge sieht man sie nicht aus dem All."
+     ],
+     "q": "Würdest du lieber einen restaurierten oder einen wilden, bröckelnden Abschnitt der Mauer erwandern?",
+     "c": "Finde heraus, wie lang alle Abschnitte zusammen sind, und vergleiche das mit der Breite deines Landes."
+    },
+    "es": {
+     "t": "La Gran Muralla",
+     "g": "Aprende cómo se construyó y reconstruyó la Gran Muralla durante siglos y para qué servía de verdad.",
+     "p": [
+      "No es una muralla sino muchas, levantadas por distintas dinastías desde aproximadamente el siglo VII a. C.",
+      "Casi toda la muralla de ladrillo y piedra que se visita hoy es de la dinastía Ming, de 1368 a 1644.",
+      "Funcionaba como frontera con torres y señales de fuego; y no, no se ve a simple vista desde el espacio."
+     ],
+     "q": "Si pudieras recorrer un tramo de la Gran Muralla, ¿elegirías uno restaurado o uno salvaje y en ruinas?",
+     "c": "Busca cuánto miden todos los tramos juntos y compáralo con la distancia que cruza tu país."
+    },
+    "fr": {
+     "t": "La Grande Muraille",
+     "g": "Apprendre comment la Grande Muraille a été bâtie et rebâtie au fil des siècles, et à quoi elle servait.",
+     "p": [
+      "Ce n'est pas un mur mais plusieurs, construits par diverses dynasties à partir du VIIe siècle av. J.-C. environ.",
+      "L'essentiel du mur de brique et de pierre visité aujourd'hui date des Ming, de 1368 à 1644.",
+      "C'était une frontière avec tours de guet et feux de signal ; et non, on ne la voit pas à l'œil nu depuis l'espace."
+     ],
+     "q": "Si tu pouvais parcourir un tronçon de la Muraille, choisirais-tu une partie restaurée ou sauvage et en ruine ?",
+     "c": "Cherche la longueur totale de tous les tronçons et compare-la à la largeur de ton pays."
+    },
+    "it": {
+     "t": "La Grande Muraglia",
+     "g": "Scopri come la Grande Muraglia fu costruita e ricostruita nei secoli, e a che cosa serviva davvero.",
+     "p": [
+      "Non è un solo muro ma tanti, costruiti da varie dinastie a partire all'incirca dal VII secolo a.C.",
+      "Gran parte del muro in mattoni e pietra visitato oggi risale alla dinastia Ming, dal 1368 al 1644.",
+      "Era una linea di confine con torri di guardia e fuochi di segnalazione; e no, a occhio nudo non si vede dallo spazio."
+     ],
+     "q": "Se potessi percorrere un tratto della Muraglia, sceglieresti una parte restaurata o una selvaggia e in rovina?",
+     "c": "Cerca quanto misurano tutti i tratti insieme e confrontalo con la larghezza del tuo paese."
+    },
+    "pt": {
+     "t": "A Grande Muralha",
+     "g": "Aprender como a Grande Muralha foi construída e reconstruída ao longo de séculos, e para que servia.",
+     "p": [
+      "Não é uma muralha, mas muitas, erguidas por várias dinastias a partir do século VII a.C., aproximadamente.",
+      "Quase toda a muralha de tijolo e pedra que se visita hoje é da dinastia Ming, de 1368 a 1644.",
+      "Funcionava como fronteira com torres de vigia e sinais de fogo; e não, não se vê a olho nu do espaço."
+     ],
+     "q": "Se pudesses percorrer um troço da Grande Muralha, escolherias um restaurado ou um selvagem e em ruínas?",
+     "c": "Procura o comprimento total de todos os troços e compara-o com a largura do teu país."
+    },
+    "pt_BR": {
+     "t": "A Grande Muralha",
+     "g": "Aprender como a Grande Muralha foi construída e reconstruída ao longo de séculos, e para que servia.",
+     "p": [
+      "Não é uma muralha, mas várias, erguidas por diferentes dinastias a partir do século VII a.C., aproximadamente.",
+      "Quase toda a muralha de tijolo e pedra visitada hoje é da dinastia Ming, de 1368 a 1644.",
+      "Funcionava como fronteira com torres de vigia e sinais de fogo; e não, ela não é visível a olho nu do espaço."
+     ],
+     "q": "Se você pudesse percorrer um trecho da Grande Muralha, escolheria um restaurado ou um selvagem e em ruínas?",
+     "c": "Procure o comprimento total de todos os trechos e compare com a largura do seu país."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Paper and printing in China",
+     "g": "Discover how China invented paper and then printing, changing how knowledge spread.",
+     "p": [
+      "Paper was made in China by the 2nd century; the court official Cai Lun improved it around 105 CE.",
+      "Woodblock printing followed: the oldest dated printed book that survives was made in 868.",
+      "Around 1040, Bi Sheng invented movable type from baked clay, centuries before it appeared in Europe."
+     ],
+     "q": "How would your life change if books and paper suddenly disappeared?",
+     "c": "Carve or cut a simple stamp from a potato or eraser and print your initial three times."
+    },
+    "de": {
+     "t": "Papier und Buchdruck in China",
+     "g": "Entdecke, wie China Papier und dann den Druck erfand und so die Verbreitung von Wissen veränderte.",
+     "p": [
+      "Papier gab es in China spätestens im 2. Jahrhundert; der Hofbeamte Cai Lun verbesserte es um 105 n. Chr.",
+      "Es folgte der Holzschnittdruck: Das älteste erhaltene datierte gedruckte Buch stammt aus dem Jahr 868.",
+      "Um 1040 erfand Bi Sheng bewegliche Lettern aus gebranntem Ton, Jahrhunderte vor Europa."
+     ],
+     "q": "Wie würde sich dein Leben ändern, wenn Bücher und Papier plötzlich verschwänden?",
+     "c": "Schnitz einen einfachen Stempel aus einer Kartoffel oder einem Radiergummi und druck dreimal deine Initiale."
+    },
+    "es": {
+     "t": "El papel y la imprenta en China",
+     "g": "Descubre cómo China inventó el papel y luego la impresión, cambiando la difusión del saber.",
+     "p": [
+      "En China ya se hacía papel en el siglo II; el funcionario Cai Lun lo mejoró hacia el año 105.",
+      "Después llegó la xilografía: el libro impreso fechado más antiguo que se conserva es del año 868.",
+      "Hacia 1040, Bi Sheng inventó los tipos móviles de arcilla cocida, siglos antes que en Europa."
+     ],
+     "q": "¿Cómo cambiaría tu vida si los libros y el papel desaparecieran de repente?",
+     "c": "Talla un sello sencillo en una patata o una goma de borrar y estampa tu inicial tres veces."
+    },
+    "fr": {
+     "t": "Papier et imprimerie en Chine",
+     "g": "Découvrir comment la Chine a inventé le papier puis l'impression, changeant la diffusion du savoir.",
+     "p": [
+      "Le papier existait en Chine dès le IIe siècle ; le fonctionnaire Cai Lun l'a amélioré vers 105.",
+      "Puis vint la xylographie : le plus ancien livre imprimé daté qui nous soit parvenu date de 868.",
+      "Vers 1040, Bi Sheng a inventé les caractères mobiles en argile cuite, des siècles avant l'Europe."
+     ],
+     "q": "Comment ta vie changerait-elle si les livres et le papier disparaissaient soudain ?",
+     "c": "Taille un tampon simple dans une pomme de terre ou une gomme et imprime trois fois ton initiale."
+    },
+    "it": {
+     "t": "Carta e stampa in Cina",
+     "g": "Scopri come la Cina inventò la carta e poi la stampa, cambiando la diffusione del sapere.",
+     "p": [
+      "In Cina la carta esisteva già nel II secolo; il funzionario Cai Lun la migliorò intorno al 105 d.C.",
+      "Poi arrivò la xilografia: il più antico libro stampato datato giunto fino a noi risale all'868.",
+      "Intorno al 1040 Bi Sheng inventò i caratteri mobili in argilla cotta, secoli prima che in Europa."
+     ],
+     "q": "Come cambierebbe la tua vita se libri e carta sparissero all'improvviso?",
+     "c": "Intaglia un timbro semplice in una patata o in una gomma e stampa tre volte la tua iniziale."
+    },
+    "pt": {
+     "t": "O papel e a impressão na China",
+     "g": "Descobrir como a China inventou o papel e depois a impressão, mudando a difusão do saber.",
+     "p": [
+      "Na China já se fazia papel no século II; o funcionário Cai Lun aperfeiçoou-o por volta do ano 105.",
+      "Seguiu-se a xilogravura: o livro impresso datado mais antigo que se conserva é do ano 868.",
+      "Por volta de 1040, Bi Sheng inventou os caracteres móveis de barro cozido, séculos antes da Europa."
+     ],
+     "q": "Como mudaria a tua vida se os livros e o papel desaparecessem de repente?",
+     "c": "Esculpe um carimbo simples numa batata ou numa borracha e imprime a tua inicial três vezes."
+    },
+    "pt_BR": {
+     "t": "O papel e a impressão na China",
+     "g": "Descobrir como a China inventou o papel e depois a impressão, mudando a difusão do conhecimento.",
+     "p": [
+      "Na China já se fazia papel no século II; o funcionário Cai Lun o aperfeiçoou por volta do ano 105.",
+      "Depois veio a xilogravura: o livro impresso datado mais antigo que sobreviveu é do ano 868.",
+      "Por volta de 1040, Bi Sheng inventou os tipos móveis de argila cozida, séculos antes da Europa."
+     ],
+     "q": "Como sua vida mudaria se livros e papel desaparecessem de repente?",
+     "c": "Esculpa um carimbo simples numa batata ou borracha e carimbe sua inicial três vezes."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Phoenicians",
+     "g": "Meet the sea traders whose simple alphabet led to the Greek and Latin letters.",
+     "p": [
+      "The Phoenicians lived in port cities like Tyre, Sidon and Byblos, on the coast of today's Lebanon.",
+      "They sailed the whole Mediterranean, trading cedar wood, glass and a famous purple dye made from sea snails.",
+      "Their alphabet of 22 letters for consonants was easy to learn; the Greeks adapted it and added vowels."
+     ],
+     "q": "Why do you think a short alphabet was so useful for traders?",
+     "c": "Write the word alphabet and find out which two Greek letters its name comes from."
+    },
+    "de": {
+     "t": "Die Phönizier",
+     "g": "Lerne die Seehändler kennen, deren einfaches Alphabet zu den griechischen und lateinischen Buchstaben führte.",
+     "p": [
+      "Die Phönizier lebten in Hafenstädten wie Tyros, Sidon und Byblos an der Küste des heutigen Libanon.",
+      "Sie befuhren das ganze Mittelmeer und handelten mit Zedernholz, Glas und einem berühmten Purpur aus Meeresschnecken.",
+      "Ihr Alphabet mit 22 Zeichen für Konsonanten war leicht zu lernen; die Griechen übernahmen es und fügten Vokale hinzu."
+     ],
+     "q": "Warum war ein kurzes Alphabet für Händler wohl so nützlich?",
+     "c": "Schreib das Wort Alphabet und finde heraus, von welchen zwei griechischen Buchstaben es stammt."
+    },
+    "es": {
+     "t": "Los fenicios",
+     "g": "Conoce a los comerciantes del mar cuyo sencillo alfabeto dio origen a las letras griegas y latinas.",
+     "p": [
+      "Los fenicios vivían en ciudades portuarias como Tiro, Sidón y Biblos, en la costa del actual Líbano.",
+      "Navegaban por todo el Mediterráneo comerciando con madera de cedro, vidrio y un famoso tinte púrpura de caracoles marinos.",
+      "Su alfabeto de 22 letras para consonantes era fácil de aprender; los griegos lo adaptaron y añadieron vocales."
+     ],
+     "q": "¿Por qué crees que un alfabeto corto era tan útil para los comerciantes?",
+     "c": "Escribe la palabra alfabeto y averigua de qué dos letras griegas viene su nombre."
+    },
+    "fr": {
+     "t": "Les Phéniciens",
+     "g": "Découvrir les marchands de la mer dont l'alphabet simple a donné les lettres grecques et latines.",
+     "p": [
+      "Les Phéniciens vivaient dans des ports comme Tyr, Sidon et Byblos, sur la côte de l'actuel Liban.",
+      "Ils sillonnaient toute la Méditerranée, vendant bois de cèdre, verre et une célèbre pourpre tirée de coquillages.",
+      "Leur alphabet de 22 lettres pour les consonnes était facile à apprendre ; les Grecs l'ont adapté en ajoutant des voyelles."
+     ],
+     "q": "Pourquoi, selon toi, un alphabet court était-il si utile aux marchands ?",
+     "c": "Écris le mot alphabet et cherche de quelles deux lettres grecques vient son nom."
+    },
+    "it": {
+     "t": "I Fenici",
+     "g": "Conosci i mercanti del mare il cui semplice alfabeto diede origine alle lettere greche e latine.",
+     "p": [
+      "I Fenici vivevano in città portuali come Tiro, Sidone e Biblo, sulla costa dell'attuale Libano.",
+      "Navigavano in tutto il Mediterraneo commerciando legno di cedro, vetro e una celebre porpora ricavata dai molluschi.",
+      "Il loro alfabeto di 22 lettere per le consonanti era facile da imparare; i Greci lo adattarono aggiungendo le vocali."
+     ],
+     "q": "Perché secondo te un alfabeto breve era così utile per i mercanti?",
+     "c": "Scrivi la parola alfabeto e scopri da quali due lettere greche deriva il suo nome."
+    },
+    "pt": {
+     "t": "Os Fenícios",
+     "g": "Conhecer os comerciantes do mar cujo alfabeto simples deu origem às letras gregas e latinas.",
+     "p": [
+      "Os Fenícios viviam em cidades portuárias como Tiro, Sídon e Biblos, na costa do atual Líbano.",
+      "Navegavam por todo o Mediterrâneo a vender madeira de cedro, vidro e uma famosa tinta púrpura feita de búzios.",
+      "O seu alfabeto de 22 letras para consoantes era fácil de aprender; os Gregos adaptaram-no e juntaram vogais."
+     ],
+     "q": "Porque achas que um alfabeto curto era tão útil para os comerciantes?",
+     "c": "Escreve a palavra alfabeto e descobre de que duas letras gregas vem o seu nome."
+    },
+    "pt_BR": {
+     "t": "Os fenícios",
+     "g": "Conhecer os comerciantes do mar cujo alfabeto simples deu origem às letras gregas e latinas.",
+     "p": [
+      "Os fenícios viviam em cidades portuárias como Tiro, Sídon e Biblos, no litoral do atual Líbano.",
+      "Navegavam por todo o Mediterrâneo vendendo madeira de cedro, vidro e uma famosa tinta púrpura feita de caramujos.",
+      "Seu alfabeto de 22 letras para consoantes era fácil de aprender; os gregos o adaptaram e acrescentaram vogais."
+     ],
+     "q": "Por que você acha que um alfabeto curto era tão útil para os comerciantes?",
+     "c": "Escreva a palavra alfabeto e descubra de quais duas letras gregas vem o nome dela."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ancient Greece",
+     "g": "Explore the world of the Greek city-states and life around the Mediterranean.",
+     "p": [
+      "Ancient Greece was not one country but hundreds of independent city-states, each called a polis.",
+      "Athens was famous for art, trade and learning; Sparta for its strict training and discipline.",
+      "Greeks shared a language, festivals and stories, and founded colonies from Spain to the Black Sea."
+     ],
+     "q": "Would you rather have grown up in lively Athens or disciplined Sparta, and why?",
+     "c": "Find three cities outside Greece that began as Greek colonies, such as Marseille or Naples."
+    },
+    "de": {
+     "t": "Das antike Griechenland",
+     "g": "Erkunde die Welt der griechischen Stadtstaaten und das Leben rund ums Mittelmeer.",
+     "p": [
+      "Das antike Griechenland war kein Land, sondern Hunderte unabhängige Stadtstaaten, jeder eine Polis.",
+      "Athen war berühmt für Kunst, Handel und Wissen, Sparta für strenge Ausbildung und Disziplin.",
+      "Die Griechen teilten Sprache, Feste und Geschichten und gründeten Kolonien von Spanien bis zum Schwarzen Meer."
+     ],
+     "q": "Wärst du lieber im lebhaften Athen oder im disziplinierten Sparta aufgewachsen, und warum?",
+     "c": "Finde drei Städte außerhalb Griechenlands, die als griechische Kolonien begannen, etwa Marseille oder Neapel."
+    },
+    "es": {
+     "t": "La antigua Grecia",
+     "g": "Explora el mundo de las ciudades-estado griegas y la vida alrededor del Mediterráneo.",
+     "p": [
+      "La antigua Grecia no era un país sino cientos de ciudades-estado independientes, cada una llamada polis.",
+      "Atenas era famosa por el arte, el comercio y el saber; Esparta, por su entrenamiento estricto y su disciplina.",
+      "Los griegos compartían lengua, fiestas e historias, y fundaron colonias desde España hasta el mar Negro."
+     ],
+     "q": "¿Habrías preferido crecer en la animada Atenas o en la disciplinada Esparta, y por qué?",
+     "c": "Busca tres ciudades fuera de Grecia que nacieron como colonias griegas, como Marsella o Nápoles."
+    },
+    "fr": {
+     "t": "La Grèce antique",
+     "g": "Explorer le monde des cités grecques et la vie autour de la Méditerranée.",
+     "p": [
+      "La Grèce antique n'était pas un pays mais des centaines de cités indépendantes, chacune appelée polis.",
+      "Athènes était célèbre pour l'art, le commerce et le savoir ; Sparte pour son entraînement strict et sa discipline.",
+      "Les Grecs partageaient langue, fêtes et récits, et fondèrent des colonies de l'Espagne à la mer Noire."
+     ],
+     "q": "Aurais-tu préféré grandir dans l'animée Athènes ou dans la disciplinée Sparte, et pourquoi ?",
+     "c": "Trouve trois villes hors de Grèce nées comme colonies grecques, comme Marseille ou Naples."
+    },
+    "it": {
+     "t": "L'antica Grecia",
+     "g": "Esplora il mondo delle città-stato greche e la vita intorno al Mediterraneo.",
+     "p": [
+      "L'antica Grecia non era un paese ma centinaia di città-stato indipendenti, ognuna chiamata polis.",
+      "Atene era famosa per arte, commercio e sapere; Sparta per l'addestramento severo e la disciplina.",
+      "I Greci condividevano lingua, feste e racconti, e fondarono colonie dalla Spagna al Mar Nero."
+     ],
+     "q": "Avresti preferito crescere nella vivace Atene o nella disciplinata Sparta, e perché?",
+     "c": "Trova tre città fuori dalla Grecia nate come colonie greche, come Marsiglia o Napoli."
+    },
+    "pt": {
+     "t": "A Grécia antiga",
+     "g": "Explorar o mundo das cidades-estado gregas e a vida à volta do Mediterrâneo.",
+     "p": [
+      "A Grécia antiga não era um país, mas centenas de cidades-estado independentes, cada uma chamada pólis.",
+      "Atenas era famosa pela arte, pelo comércio e pelo saber; Esparta, pelo treino rigoroso e pela disciplina.",
+      "Os Gregos partilhavam língua, festas e histórias, e fundaram colónias desde Espanha até ao mar Negro."
+     ],
+     "q": "Terias preferido crescer na animada Atenas ou na disciplinada Esparta, e porquê?",
+     "c": "Encontra três cidades fora da Grécia que nasceram como colónias gregas, como Marselha ou Nápoles."
+    },
+    "pt_BR": {
+     "t": "A Grécia antiga",
+     "g": "Explorar o mundo das cidades-Estado gregas e a vida em volta do Mediterrâneo.",
+     "p": [
+      "A Grécia antiga não era um país, mas centenas de cidades-Estado independentes, cada uma chamada pólis.",
+      "Atenas era famosa pela arte, pelo comércio e pelo saber; Esparta, pelo treinamento rígido e pela disciplina.",
+      "Os gregos compartilhavam língua, festas e histórias, e fundaram colônias da Espanha até o mar Negro."
+     ],
+     "q": "Você preferiria ter crescido na animada Atenas ou na disciplinada Esparta, e por quê?",
+     "c": "Encontre três cidades fora da Grécia que nasceram como colônias gregas, como Marselha ou Nápoles."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Athenian democracy",
+     "g": "See how citizens of Athens voted in the assembly, and who was included or left out.",
+     "p": [
+      "From about 508 BCE, male citizens of Athens met in the assembly to debate and vote on laws directly.",
+      "Many officials were chosen by lot, so ordinary citizens took turns running the city.",
+      "Women, enslaved people and foreign residents could not vote, so only a minority took part."
+     ],
+     "q": "What do you think is the fairest way to make decisions in a group of friends?",
+     "c": "Next time your group must choose something, try a quick show-of-hands vote, Athenian style."
+    },
+    "de": {
+     "t": "Die athenische Demokratie",
+     "g": "Sieh, wie die Bürger Athens in der Volksversammlung abstimmten und wer dazugehörte und wer nicht.",
+     "p": [
+      "Ab etwa 508 v. Chr. trafen sich männliche Bürger Athens in der Volksversammlung und stimmten direkt über Gesetze ab.",
+      "Viele Ämter wurden per Los vergeben, so übernahmen gewöhnliche Bürger abwechselnd Verantwortung.",
+      "Frauen, Versklavte und zugezogene Fremde durften nicht wählen, daher nahm nur eine Minderheit teil."
+     ],
+     "q": "Was ist deiner Meinung nach die fairste Art, in einer Freundesgruppe Entscheidungen zu treffen?",
+     "c": "Wenn deine Gruppe das nächste Mal etwas wählen muss, probiere eine Abstimmung per Handzeichen wie in Athen."
+    },
+    "es": {
+     "t": "La democracia ateniense",
+     "g": "Descubre cómo votaban los ciudadanos de Atenas en la asamblea y quién quedaba dentro o fuera.",
+     "p": [
+      "Desde el 508 a. C. aproximadamente, los ciudadanos varones de Atenas debatían y votaban las leyes en la asamblea.",
+      "Muchos cargos se elegían por sorteo, así que ciudadanos corrientes se turnaban para gobernar la ciudad.",
+      "Las mujeres, los esclavos y los extranjeros residentes no votaban, así que participaba solo una minoría."
+     ],
+     "q": "¿Cuál crees que es la forma más justa de tomar decisiones en un grupo de amigos?",
+     "c": "La próxima vez que tu grupo tenga que elegir algo, haced una votación a mano alzada, al estilo ateniense."
+    },
+    "fr": {
+     "t": "La démocratie athénienne",
+     "g": "Voir comment les citoyens d'Athènes votaient à l'assemblée, et qui en faisait partie ou non.",
+     "p": [
+      "Dès 508 av. J.-C. environ, les citoyens mâles d'Athènes débattaient et votaient directement les lois à l'assemblée.",
+      "Beaucoup de magistrats étaient tirés au sort : de simples citoyens dirigeaient la cité à tour de rôle.",
+      "Les femmes, les esclaves et les étrangers résidents ne votaient pas : seule une minorité participait."
+     ],
+     "q": "Selon toi, quelle est la façon la plus juste de prendre une décision entre amis ?",
+     "c": "La prochaine fois que ton groupe doit choisir, essayez un vote à main levée, à l'athénienne."
+    },
+    "it": {
+     "t": "La democrazia ateniese",
+     "g": "Scopri come votavano i cittadini di Atene in assemblea, e chi ne era incluso o escluso.",
+     "p": [
+      "Dal 508 a.C. circa, i cittadini maschi di Atene discutevano e votavano direttamente le leggi in assemblea.",
+      "Molte cariche erano assegnate per sorteggio, così cittadini comuni governavano la città a turno.",
+      "Donne, schiavi e stranieri residenti non votavano, quindi partecipava solo una minoranza."
+     ],
+     "q": "Secondo te qual è il modo più giusto di prendere decisioni in un gruppo di amici?",
+     "c": "La prossima volta che il tuo gruppo deve scegliere qualcosa, provate un voto per alzata di mano, come ad Atene."
+    },
+    "pt": {
+     "t": "A democracia ateniense",
+     "g": "Ver como os cidadãos de Atenas votavam na assembleia, e quem ficava dentro ou fora.",
+     "p": [
+      "A partir de cerca de 508 a.C., os cidadãos homens de Atenas debatiam e votavam as leis diretamente na assembleia.",
+      "Muitos cargos eram atribuídos por sorteio, por isso cidadãos comuns governavam a cidade à vez.",
+      "Mulheres, escravos e estrangeiros residentes não votavam, por isso só uma minoria participava."
+     ],
+     "q": "Qual achas que é a forma mais justa de tomar decisões num grupo de amigos?",
+     "c": "Da próxima vez que o teu grupo tiver de escolher algo, experimentem votar de braço no ar, à ateniense."
+    },
+    "pt_BR": {
+     "t": "A democracia ateniense",
+     "g": "Ver como os cidadãos de Atenas votavam na assembleia, e quem ficava dentro ou fora.",
+     "p": [
+      "A partir de cerca de 508 a.C., os cidadãos homens de Atenas debatiam e votavam as leis diretamente na assembleia.",
+      "Muitos cargos eram definidos por sorteio, então cidadãos comuns se revezavam no governo da cidade.",
+      "Mulheres, escravizados e estrangeiros residentes não votavam, então só uma minoria participava."
+     ],
+     "q": "Qual você acha que é a forma mais justa de tomar decisões num grupo de amigos?",
+     "c": "Da próxima vez que seu grupo precisar escolher algo, tentem uma votação de mão levantada, ao estilo ateniense."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Greek philosophers",
+     "g": "Meet Socrates, Plato and Aristotle and the big questions they asked about life.",
+     "p": [
+      "Socrates taught by asking questions in the streets of Athens, pushing people to examine their ideas.",
+      "His student Plato founded the Academy and wrote dialogues about justice, beauty and knowledge.",
+      "Aristotle, Plato's student, studied almost everything, from animals and plants to logic and ethics."
+     ],
+     "q": "Which big question about life would you love to discuss with a Greek philosopher?",
+     "c": "Pick an everyday belief you hold and ask yourself why three times in a row, Socrates style."
+    },
+    "de": {
+     "t": "Griechische Philosophen",
+     "g": "Lerne Sokrates, Platon und Aristoteles kennen und die großen Lebensfragen, die sie stellten.",
+     "p": [
+      "Sokrates lehrte, indem er auf den Straßen Athens Fragen stellte und Menschen zum Nachdenken brachte.",
+      "Sein Schüler Platon gründete die Akademie und schrieb Dialoge über Gerechtigkeit, Schönheit und Wissen.",
+      "Aristoteles, Platons Schüler, erforschte fast alles, von Tieren und Pflanzen bis zu Logik und Ethik."
+     ],
+     "q": "Über welche große Lebensfrage würdest du gern mit einem griechischen Philosophen sprechen?",
+     "c": "Nimm eine Alltagsüberzeugung und frag dich dreimal hintereinander warum, wie Sokrates."
+    },
+    "es": {
+     "t": "Los filósofos griegos",
+     "g": "Conoce a Sócrates, Platón y Aristóteles y las grandes preguntas que se hicieron sobre la vida.",
+     "p": [
+      "Sócrates enseñaba haciendo preguntas por las calles de Atenas, animando a la gente a revisar sus ideas.",
+      "Su alumno Platón fundó la Academia y escribió diálogos sobre la justicia, la belleza y el conocimiento.",
+      "Aristóteles, alumno de Platón, lo estudió casi todo, desde animales y plantas hasta la lógica y la ética."
+     ],
+     "q": "¿Qué gran pregunta sobre la vida te encantaría debatir con un filósofo griego?",
+     "c": "Elige una creencia cotidiana tuya y pregúntate por qué tres veces seguidas, al estilo de Sócrates."
+    },
+    "fr": {
+     "t": "Les philosophes grecs",
+     "g": "Rencontrer Socrate, Platon et Aristote et les grandes questions qu'ils se posaient sur la vie.",
+     "p": [
+      "Socrate enseignait en posant des questions dans les rues d'Athènes, poussant chacun à examiner ses idées.",
+      "Son élève Platon fonda l'Académie et écrivit des dialogues sur la justice, la beauté et la connaissance.",
+      "Aristote, élève de Platon, étudia presque tout, des animaux et des plantes à la logique et à l'éthique."
+     ],
+     "q": "Quelle grande question sur la vie aimerais-tu discuter avec un philosophe grec ?",
+     "c": "Choisis une idée que tu tiens pour vraie et demande-toi pourquoi trois fois de suite, à la manière de Socrate."
+    },
+    "it": {
+     "t": "I filosofi greci",
+     "g": "Conosci Socrate, Platone e Aristotele e le grandi domande che si posero sulla vita.",
+     "p": [
+      "Socrate insegnava facendo domande per le strade di Atene, spingendo le persone a esaminare le proprie idee.",
+      "Il suo allievo Platone fondò l'Accademia e scrisse dialoghi su giustizia, bellezza e conoscenza.",
+      "Aristotele, allievo di Platone, studiò quasi tutto, da animali e piante fino a logica ed etica."
+     ],
+     "q": "Di quale grande domanda sulla vita ti piacerebbe discutere con un filosofo greco?",
+     "c": "Scegli una tua convinzione quotidiana e chiediti perché tre volte di seguito, come Socrate."
+    },
+    "pt": {
+     "t": "Os filósofos gregos",
+     "g": "Conhecer Sócrates, Platão e Aristóteles e as grandes perguntas que fizeram sobre a vida.",
+     "p": [
+      "Sócrates ensinava fazendo perguntas nas ruas de Atenas, levando as pessoas a examinar as suas ideias.",
+      "O seu aluno Platão fundou a Academia e escreveu diálogos sobre a justiça, a beleza e o conhecimento.",
+      "Aristóteles, aluno de Platão, estudou quase tudo, de animais e plantas até à lógica e à ética."
+     ],
+     "q": "Que grande pergunta sobre a vida adorarias discutir com um filósofo grego?",
+     "c": "Escolhe uma crença do dia a dia e pergunta-te porquê três vezes seguidas, ao estilo de Sócrates."
+    },
+    "pt_BR": {
+     "t": "Os filósofos gregos",
+     "g": "Conhecer Sócrates, Platão e Aristóteles e as grandes perguntas que eles fizeram sobre a vida.",
+     "p": [
+      "Sócrates ensinava fazendo perguntas nas ruas de Atenas, levando as pessoas a examinar suas ideias.",
+      "Seu aluno Platão fundou a Academia e escreveu diálogos sobre justiça, beleza e conhecimento.",
+      "Aristóteles, aluno de Platão, estudou quase tudo, de animais e plantas até lógica e ética."
+     ],
+     "q": "Qual grande pergunta sobre a vida você adoraria discutir com um filósofo grego?",
+     "c": "Escolha uma crença do seu dia a dia e pergunte a si mesmo por quê três vezes seguidas, ao estilo de Sócrates."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Olympic Games",
+     "g": "Discover the ancient games at Olympia and how they were revived in modern times.",
+     "p": [
+      "The ancient Games at Olympia are traditionally dated to 776 BCE and were held every four years.",
+      "The first event was a sprint of about 190 metres; later came wrestling, chariot racing and the pentathlon.",
+      "Pierre de Coubertin revived the Games, and the first modern Olympics took place in Athens in 1896."
+     ],
+     "q": "If you could compete in one Olympic sport, which would you choose?",
+     "c": "Find out which Olympic sports today also existed in the ancient Games."
+    },
+    "de": {
+     "t": "Die Olympischen Spiele",
+     "g": "Entdecke die antiken Spiele von Olympia und wie sie in der Neuzeit wiederbelebt wurden.",
+     "p": [
+      "Die antiken Spiele in Olympia werden traditionell auf 776 v. Chr. datiert und fanden alle vier Jahre statt.",
+      "Der erste Wettkampf war ein Sprint über rund 190 Meter; später kamen Ringen, Wagenrennen und Fünfkampf dazu.",
+      "Pierre de Coubertin belebte die Spiele neu, die ersten modernen Olympischen Spiele fanden 1896 in Athen statt."
+     ],
+     "q": "Wenn du in einer olympischen Sportart antreten könntest, welche wäre es?",
+     "c": "Finde heraus, welche heutigen olympischen Sportarten es schon bei den antiken Spielen gab."
+    },
+    "es": {
+     "t": "Los Juegos Olímpicos",
+     "g": "Descubre los antiguos juegos de Olimpia y cómo se recuperaron en la época moderna.",
+     "p": [
+      "Los antiguos Juegos de Olimpia se fechan tradicionalmente en el 776 a. C. y se celebraban cada cuatro años.",
+      "La primera prueba era una carrera de unos 190 metros; luego llegaron la lucha, las carreras de carros y el pentatlón.",
+      "Pierre de Coubertin recuperó los Juegos, y los primeros Juegos modernos se celebraron en Atenas en 1896."
+     ],
+     "q": "Si pudieras competir en un deporte olímpico, ¿cuál elegirías?",
+     "c": "Averigua qué deportes olímpicos actuales ya existían en los Juegos antiguos."
+    },
+    "fr": {
+     "t": "Les Jeux olympiques",
+     "g": "Découvrir les jeux antiques d'Olympie et leur renaissance à l'époque moderne.",
+     "p": [
+      "Les Jeux antiques d'Olympie sont traditionnellement datés de 776 av. J.-C. et avaient lieu tous les quatre ans.",
+      "La première épreuve était une course d'environ 190 mètres ; vinrent ensuite lutte, courses de chars et pentathlon.",
+      "Pierre de Coubertin a relancé les Jeux, et les premiers Jeux modernes ont eu lieu à Athènes en 1896."
+     ],
+     "q": "Si tu pouvais concourir dans un sport olympique, lequel choisirais-tu ?",
+     "c": "Cherche quels sports olympiques actuels existaient déjà aux Jeux antiques."
+    },
+    "it": {
+     "t": "I Giochi Olimpici",
+     "g": "Scopri gli antichi giochi di Olimpia e come furono ripresi in epoca moderna.",
+     "p": [
+      "Gli antichi Giochi di Olimpia sono tradizionalmente datati al 776 a.C. e si tenevano ogni quattro anni.",
+      "La prima gara era una corsa di circa 190 metri; poi arrivarono lotta, corse dei carri e pentathlon.",
+      "Pierre de Coubertin fece rinascere i Giochi, e le prime Olimpiadi moderne si tennero ad Atene nel 1896."
+     ],
+     "q": "Se potessi gareggiare in uno sport olimpico, quale sceglieresti?",
+     "c": "Scopri quali sport olimpici di oggi esistevano già nei Giochi antichi."
+    },
+    "pt": {
+     "t": "Os Jogos Olímpicos",
+     "g": "Descobrir os antigos jogos de Olímpia e como foram recuperados na época moderna.",
+     "p": [
+      "Os antigos Jogos de Olímpia são tradicionalmente datados de 776 a.C. e realizavam-se de quatro em quatro anos.",
+      "A primeira prova era uma corrida de cerca de 190 metros; depois vieram a luta, as corridas de carros e o pentatlo.",
+      "Pierre de Coubertin recuperou os Jogos, e os primeiros Jogos modernos realizaram-se em Atenas em 1896."
+     ],
+     "q": "Se pudesses competir numa modalidade olímpica, qual escolherias?",
+     "c": "Descobre que modalidades olímpicas de hoje já existiam nos Jogos antigos."
+    },
+    "pt_BR": {
+     "t": "Os Jogos Olímpicos",
+     "g": "Descobrir os antigos jogos de Olímpia e como eles foram retomados na era moderna.",
+     "p": [
+      "Os antigos Jogos de Olímpia são tradicionalmente datados de 776 a.C. e aconteciam a cada quatro anos.",
+      "A primeira prova era uma corrida de cerca de 190 metros; depois vieram a luta, as corridas de bigas e o pentatlo.",
+      "Pierre de Coubertin retomou os Jogos, e as primeiras Olimpíadas modernas aconteceram em Atenas em 1896."
+     ],
+     "q": "Se você pudesse competir em um esporte olímpico, qual escolheria?",
+     "c": "Descubra quais esportes olímpicos de hoje já existiam nos Jogos antigos."
+    }
+   }
+  }
+ ]
+}

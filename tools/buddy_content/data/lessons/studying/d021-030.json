@@ -1,0 +1,835 @@
+{
+ "topic": "studying",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Where does your time go",
+     "g": "Do a simple time audit to find hidden hours and time leaks in a normal week.",
+     "p": [
+      "Log what you do in blocks of an hour for three typical days, honestly and without guilt.",
+      "Look for leaks: endless scrolling, slow starts, long chats or unplanned naps.",
+      "Hidden hours are often small, but together they add up to real study time."
+     ],
+     "q": "Which part of your day do you suspect loses the most time?",
+     "c": "Track every hour of today in a notebook and circle one possible time leak."
+    },
+    "de": {
+     "t": "Wohin geht deine Zeit",
+     "g": "Mach ein einfaches Zeit-Audit, um versteckte Stunden und Zeitlecks einer normalen Woche zu finden.",
+     "p": [
+      "Notiere an drei typischen Tagen in Stundenblöcken, was du tust, ehrlich und ohne Schuldgefühl.",
+      "Suche Lecks: endloses Scrollen, langsame Starts, lange Chats oder ungeplante Nickerchen.",
+      "Versteckte Stunden sind oft klein, ergeben zusammen aber echte Lernzeit."
+     ],
+     "q": "Bei welchem Teil deines Tages vermutest du den größten Zeitverlust?",
+     "c": "Halte heute jede Stunde in einem Heft fest und kreise ein mögliches Zeitleck ein."
+    },
+    "es": {
+     "t": "¿A dónde se va tu tiempo?",
+     "g": "Haz una auditoría de tiempo sencilla para hallar horas ocultas y fugas en una semana normal.",
+     "p": [
+      "Anota qué haces en bloques de una hora durante tres días típicos, con honestidad y sin culpa.",
+      "Busca fugas: scroll infinito, arranques lentos, charlas largas o siestas imprevistas.",
+      "Las horas ocultas suelen ser pequeñas, pero juntas suman tiempo real de estudio."
+     ],
+     "q": "¿Qué parte de tu día sospechas que pierde más tiempo?",
+     "c": "Anota cada hora de hoy en un cuaderno y rodea una posible fuga de tiempo."
+    },
+    "fr": {
+     "t": "Où passe ton temps ?",
+     "g": "Fais un audit du temps simple pour trouver les heures cachées et les fuites d'une semaine normale.",
+     "p": [
+      "Note ce que tu fais par blocs d'une heure sur trois jours types, honnêtement et sans culpabilité.",
+      "Cherche les fuites : défilement sans fin, démarrages lents, longs bavardages ou siestes imprévues.",
+      "Les heures cachées sont souvent petites, mais ensemble elles font un vrai temps d'étude."
+     ],
+     "q": "Quelle partie de ta journée te semble perdre le plus de temps ?",
+     "c": "Note chaque heure d'aujourd'hui dans un carnet et entoure une fuite de temps possible."
+    },
+    "it": {
+     "t": "Dove va il tuo tempo",
+     "g": "Fai un semplice audit del tempo per trovare ore nascoste e perdite in una settimana normale.",
+     "p": [
+      "Annota cosa fai a blocchi di un'ora per tre giorni tipici, con onestà e senza sensi di colpa.",
+      "Cerca le perdite: scorrimento infinito, partenze lente, lunghe chiacchiere o pisolini imprevisti.",
+      "Le ore nascoste sono spesso piccole, ma insieme diventano vero tempo di studio."
+     ],
+     "q": "Quale parte della tua giornata sospetti perda più tempo?",
+     "c": "Annota ogni ora di oggi su un quaderno e cerchia una possibile perdita di tempo."
+    },
+    "pt": {
+     "t": "Para onde vai o teu tempo",
+     "g": "Faz uma auditoria simples ao tempo para encontrar horas escondidas e fugas numa semana normal.",
+     "p": [
+      "Regista o que fazes em blocos de uma hora durante três dias típicos, com honestidade e sem culpa.",
+      "Procura fugas: scroll sem fim, arranques lentos, conversas longas ou sestas imprevistas.",
+      "As horas escondidas costumam ser pequenas, mas juntas dão tempo de estudo a sério."
+     ],
+     "q": "Que parte do teu dia suspeitas que perde mais tempo?",
+     "c": "Regista cada hora de hoje num caderno e assinala uma possível fuga de tempo."
+    },
+    "pt_BR": {
+     "t": "Para onde vai o seu tempo",
+     "g": "Faça uma auditoria simples do tempo para achar horas escondidas e vazamentos numa semana normal.",
+     "p": [
+      "Registre o que você faz em blocos de uma hora por três dias típicos, com honestidade e sem culpa.",
+      "Procure vazamentos: rolagem sem fim, partidas lentas, conversas longas ou sonecas imprevistas.",
+      "Horas escondidas costumam ser pequenas, mas juntas viram tempo real de estudo."
+     ],
+     "q": "Que parte do seu dia você suspeita que perde mais tempo?",
+     "c": "Registre cada hora de hoje em um caderno e circule um possível vazamento de tempo."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Weekly study planning",
+     "g": "Build a realistic weekly plan around classes, work, rest and personal life.",
+     "p": [
+      "Start by placing fixed things first: classes, work, meals, sleep and family time.",
+      "Then slot study sessions into the remaining gaps, short and often.",
+      "Plan time off too: a plan with no rest breaks down by Wednesday."
+     ],
+     "q": "What are the fixed commitments in your week that you must plan around?",
+     "c": "Draw a simple week grid and place three study sessions and one real rest block."
+    },
+    "de": {
+     "t": "Wochenplanung zum Lernen",
+     "g": "Baue einen realistischen Wochenplan rund um Unterricht, Arbeit, Erholung und Privatleben.",
+     "p": [
+      "Setze zuerst das Feste ein: Unterricht, Arbeit, Essen, Schlaf und Familienzeit.",
+      "Verteile dann kurze, häufige Lerneinheiten auf die verbleibenden Lücken.",
+      "Plane auch freie Zeit: Ein Plan ohne Erholung bricht spätestens am Mittwoch zusammen."
+     ],
+     "q": "Welche festen Termine in deiner Woche musst du einplanen?",
+     "c": "Zeichne ein einfaches Wochenraster mit drei Lerneinheiten und einem echten Ruheblock."
+    },
+    "es": {
+     "t": "Planificar la semana de estudio",
+     "g": "Construye un plan semanal realista en torno a clases, trabajo, descanso y vida personal.",
+     "p": [
+      "Coloca primero lo fijo: clases, trabajo, comidas, sueño y tiempo con la familia.",
+      "Luego reparte sesiones de estudio en los huecos, cortas y frecuentes.",
+      "Planifica también el descanso: un plan sin pausas se rompe el miércoles."
+     ],
+     "q": "¿Qué compromisos fijos de tu semana debes tener en cuenta?",
+     "c": "Dibuja una cuadrícula semanal con tres sesiones de estudio y un bloque de descanso real."
+    },
+    "fr": {
+     "t": "Planifier sa semaine d'étude",
+     "g": "Construis un plan hebdomadaire réaliste autour des cours, du travail, du repos et de la vie perso.",
+     "p": [
+      "Place d'abord le fixe : cours, travail, repas, sommeil et temps en famille.",
+      "Glisse ensuite des séances d'étude dans les créneaux libres, courtes et fréquentes.",
+      "Prévois aussi du repos : un plan sans pause s'effondre dès mercredi."
+     ],
+     "q": "Quels engagements fixes de ta semaine dois-tu prendre en compte ?",
+     "c": "Dessine une grille de semaine avec trois séances d'étude et un vrai bloc de repos."
+    },
+    "it": {
+     "t": "Pianificare la settimana di studio",
+     "g": "Costruisci un piano settimanale realistico attorno a lezioni, lavoro, riposo e vita privata.",
+     "p": [
+      "Metti prima ciò che è fisso: lezioni, lavoro, pasti, sonno e tempo in famiglia.",
+      "Poi inserisci sessioni di studio negli spazi liberi, brevi e frequenti.",
+      "Pianifica anche il riposo: un piano senza pause crolla entro mercoledì."
+     ],
+     "q": "Quali impegni fissi della tua settimana devi considerare?",
+     "c": "Disegna una griglia settimanale con tre sessioni di studio e un vero blocco di riposo."
+    },
+    "pt": {
+     "t": "Planear a semana de estudo",
+     "g": "Constrói um plano semanal realista em torno de aulas, trabalho, descanso e vida pessoal.",
+     "p": [
+      "Coloca primeiro o que é fixo: aulas, trabalho, refeições, sono e tempo em família.",
+      "Depois distribui sessões de estudo pelos espaços livres, curtas e frequentes.",
+      "Planeia também descanso: um plano sem pausas desmorona-se à quarta-feira."
+     ],
+     "q": "Que compromissos fixos da tua semana tens de contar?",
+     "c": "Desenha uma grelha semanal com três sessões de estudo e um bloco de descanso a sério."
+    },
+    "pt_BR": {
+     "t": "Planejar a semana de estudo",
+     "g": "Monte um plano semanal realista em torno de aulas, trabalho, descanso e vida pessoal.",
+     "p": [
+      "Coloque primeiro o que é fixo: aulas, trabalho, refeições, sono e tempo em família.",
+      "Depois distribua sessões de estudo nos espaços livres, curtas e frequentes.",
+      "Planeje também descanso: um plano sem pausas desmorona na quarta-feira."
+     ],
+     "q": "Quais compromissos fixos da sua semana você precisa considerar?",
+     "c": "Desenhe uma grade semanal com três sessões de estudo e um bloco de descanso de verdade."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Daily to-do lists that work",
+     "g": "Write short task lists with verbs and sizes instead of long lists of vague topics.",
+     "p": [
+      "Write 'Solve 5 maths problems' instead of just 'maths'.",
+      "Keep the list to three to five tasks, with the most important one first.",
+      "Add a rough time to each task so you can see if the day is realistic."
+     ],
+     "q": "How do you usually keep track of what to study each day?",
+     "c": "Tonight, write tomorrow's list with three tasks, each starting with a verb."
+    },
+    "de": {
+     "t": "Tageslisten, die funktionieren",
+     "g": "Schreibe kurze Aufgabenlisten mit Verben und Größen statt langer Listen vager Themen.",
+     "p": [
+      "Schreib 'Fünf Matheaufgaben lösen' statt nur 'Mathe'.",
+      "Halte die Liste bei drei bis fünf Aufgaben, die wichtigste zuerst.",
+      "Gib jeder Aufgabe eine grobe Zeit, um zu sehen, ob der Tag realistisch ist."
+     ],
+     "q": "Wie behältst du normalerweise im Blick, was du täglich lernen willst?",
+     "c": "Schreib heute Abend die Liste für morgen mit drei Aufgaben, jede mit einem Verb am Anfang."
+    },
+    "es": {
+     "t": "Listas diarias que funcionan",
+     "g": "Escribe listas cortas con verbos y tamaños en vez de largas listas de temas vagos.",
+     "p": [
+      "Escribe 'Resolver 5 problemas de mates' en lugar de solo 'mates'.",
+      "Limita la lista a tres a cinco tareas, con la más importante primero.",
+      "Añade un tiempo aproximado a cada tarea para ver si el día es realista."
+     ],
+     "q": "¿Cómo sueles llevar el control de qué estudiar cada día?",
+     "c": "Esta noche escribe la lista de mañana con tres tareas, cada una empezando con un verbo."
+    },
+    "fr": {
+     "t": "Des listes quotidiennes efficaces",
+     "g": "Écris de courtes listes avec des verbes et des tailles plutôt que de longues listes de thèmes vagues.",
+     "p": [
+      "Écris 'Résoudre 5 problèmes de maths' plutôt que seulement 'maths'.",
+      "Limite la liste à trois à cinq tâches, la plus importante en premier.",
+      "Ajoute une durée approximative à chaque tâche pour voir si la journée est réaliste."
+     ],
+     "q": "Comment suis-tu d'habitude ce que tu dois étudier chaque jour ?",
+     "c": "Ce soir, écris la liste de demain avec trois tâches, chacune commençant par un verbe."
+    },
+    "it": {
+     "t": "Liste giornaliere che funzionano",
+     "g": "Scrivi liste brevi con verbi e dimensioni invece di lunghi elenchi di temi vaghi.",
+     "p": [
+      "Scrivi 'Risolvere 5 problemi di matematica' invece di solo 'matematica'.",
+      "Tieni la lista a tre-cinque compiti, con il più importante per primo.",
+      "Aggiungi un tempo approssimativo a ogni compito per vedere se la giornata è realistica."
+     ],
+     "q": "Come tieni di solito traccia di cosa studiare ogni giorno?",
+     "c": "Stasera scrivi la lista di domani con tre compiti, ognuno che inizia con un verbo."
+    },
+    "pt": {
+     "t": "Listas diárias que funcionam",
+     "g": "Escreve listas curtas com verbos e tamanhos em vez de longas listas de temas vagos.",
+     "p": [
+      "Escreve 'Resolver 5 problemas de matemática' em vez de apenas 'matemática'.",
+      "Limita a lista a três a cinco tarefas, com a mais importante primeiro.",
+      "Junta um tempo aproximado a cada tarefa para veres se o dia é realista."
+     ],
+     "q": "Como costumas controlar o que estudar em cada dia?",
+     "c": "Esta noite, escreve a lista de amanhã com três tarefas, cada uma a começar por um verbo."
+    },
+    "pt_BR": {
+     "t": "Listas diárias que funcionam",
+     "g": "Escreva listas curtas com verbos e tamanhos em vez de longas listas de temas vagos.",
+     "p": [
+      "Escreva 'Resolver 5 problemas de matemática' em vez de apenas 'matemática'.",
+      "Limite a lista a três a cinco tarefas, com a mais importante primeiro.",
+      "Junte um tempo aproximado a cada tarefa para ver se o dia é realista."
+     ],
+     "q": "Como você costuma controlar o que estudar a cada dia?",
+     "c": "Hoje à noite, escreva a lista de amanhã com três tarefas, cada uma começando com um verbo."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breaking big tasks down",
+     "g": "Split a large project or exam into small steps you can start today.",
+     "p": [
+      "A huge task feels scary, but a small first step feels doable.",
+      "Work backwards from the deadline and list every step in order.",
+      "Make each step small enough to finish in one session of under an hour."
+     ],
+     "q": "What big task are you putting off because it feels too large?",
+     "c": "Take one big task and write its first five tiny steps with dates."
+    },
+    "de": {
+     "t": "Große Aufgaben zerlegen",
+     "g": "Teile ein großes Projekt oder eine Prüfung in kleine Schritte, die du heute beginnen kannst.",
+     "p": [
+      "Eine riesige Aufgabe schreckt ab, ein kleiner erster Schritt wirkt machbar.",
+      "Arbeite vom Termin rückwärts und liste jeden Schritt der Reihe nach auf.",
+      "Mach jeden Schritt so klein, dass er in unter einer Stunde fertig wird."
+     ],
+     "q": "Welche große Aufgabe schiebst du auf, weil sie zu groß wirkt?",
+     "c": "Nimm eine große Aufgabe und schreib die ersten fünf winzigen Schritte mit Terminen auf."
+    },
+    "es": {
+     "t": "Dividir las tareas grandes",
+     "g": "Divide un proyecto grande o un examen en pasos pequeños que puedas empezar hoy.",
+     "p": [
+      "Una tarea enorme asusta, pero un primer paso pequeño parece posible.",
+      "Trabaja hacia atrás desde la fecha límite y lista cada paso en orden.",
+      "Haz cada paso lo bastante pequeño para terminarlo en una sesión de menos de una hora."
+     ],
+     "q": "¿Qué tarea grande estás aplazando porque te parece demasiado enorme?",
+     "c": "Toma una tarea grande y escribe sus cinco primeros pasos diminutos con fechas."
+    },
+    "fr": {
+     "t": "Découper les grosses tâches",
+     "g": "Découpe un gros projet ou un examen en petites étapes que tu peux commencer aujourd'hui.",
+     "p": [
+      "Une énorme tâche fait peur, mais une petite première étape semble faisable.",
+      "Pars de l'échéance à rebours et liste chaque étape dans l'ordre.",
+      "Rends chaque étape assez petite pour la finir en une séance de moins d'une heure."
+     ],
+     "q": "Quelle grosse tâche repousses-tu parce qu'elle semble trop grande ?",
+     "c": "Prends une grosse tâche et écris ses cinq premières minuscules étapes avec des dates."
+    },
+    "it": {
+     "t": "Spezzare i grandi compiti",
+     "g": "Dividi un grande progetto o un esame in piccoli passi che puoi iniziare oggi.",
+     "p": [
+      "Un compito enorme spaventa, ma un piccolo primo passo sembra fattibile.",
+      "Parti dalla scadenza a ritroso ed elenca ogni passo in ordine.",
+      "Rendi ogni passo abbastanza piccolo da finirlo in una sessione di meno di un'ora."
+     ],
+     "q": "Quale grande compito stai rimandando perché sembra troppo grosso?",
+     "c": "Prendi un grande compito e scrivi i suoi primi cinque piccoli passi con le date."
+    },
+    "pt": {
+     "t": "Dividir as tarefas grandes",
+     "g": "Divide um projeto grande ou um exame em passos pequenos que podes começar hoje.",
+     "p": [
+      "Uma tarefa enorme assusta, mas um pequeno primeiro passo parece possível.",
+      "Trabalha de trás para a frente a partir do prazo e lista cada passo por ordem.",
+      "Faz cada passo suficientemente pequeno para o acabares numa sessão de menos de uma hora."
+     ],
+     "q": "Que tarefa grande estás a adiar porque parece demasiado enorme?",
+     "c": "Pega numa tarefa grande e escreve os seus cinco primeiros passos pequenos com datas."
+    },
+    "pt_BR": {
+     "t": "Dividir as tarefas grandes",
+     "g": "Divida um projeto grande ou uma prova em passos pequenos que você pode começar hoje.",
+     "p": [
+      "Uma tarefa enorme assusta, mas um pequeno primeiro passo parece possível.",
+      "Trabalhe de trás para a frente a partir do prazo e liste cada passo em ordem.",
+      "Faça cada passo pequeno o bastante para terminar em uma sessão de menos de uma hora."
+     ],
+     "q": "Que tarefa grande você está adiando porque parece enorme demais?",
+     "c": "Pegue uma tarefa grande e escreva seus cinco primeiros passos pequenos com datas."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Estimating study time",
+     "g": "Learn to guess how long tasks take and correct your estimates over time.",
+     "p": [
+      "Most people underestimate how long tasks take, a habit called the planning fallacy.",
+      "Time your tasks for a week and compare real time with your guess.",
+      "Add a margin of about a third to your next estimates, then adjust again."
+     ],
+     "q": "How long do you think a typical chapter of reading takes you?",
+     "c": "Guess the time for three tasks, time them, and note the difference."
+    },
+    "de": {
+     "t": "Lernzeit einschätzen",
+     "g": "Lerne zu schätzen, wie lange Aufgaben dauern, und korrigiere deine Schätzungen mit der Zeit.",
+     "p": [
+      "Die meisten unterschätzen den Zeitbedarf, ein Muster namens Planungsfehlschluss.",
+      "Miss eine Woche lang die Zeit deiner Aufgaben und vergleiche sie mit deiner Schätzung.",
+      "Plane bei den nächsten Schätzungen etwa ein Drittel Puffer ein und justiere erneut."
+     ],
+     "q": "Wie lange, glaubst du, brauchst du für ein typisches Kapitel Lesestoff?",
+     "c": "Schätze die Zeit für drei Aufgaben, miss sie und notiere den Unterschied."
+    },
+    "es": {
+     "t": "Estimar el tiempo de estudio",
+     "g": "Aprende a calcular cuánto tardan las tareas y corrige tus estimaciones con el tiempo.",
+     "p": [
+      "La mayoría subestima lo que tardan las tareas, un hábito llamado falacia de la planificación.",
+      "Cronometra tus tareas durante una semana y compara el tiempo real con tu cálculo.",
+      "Añade un margen de un tercio a tus próximas estimaciones y vuelve a ajustar."
+     ],
+     "q": "¿Cuánto crees que te lleva leer un capítulo típico?",
+     "c": "Estima el tiempo de tres tareas, cronométralas y anota la diferencia."
+    },
+    "fr": {
+     "t": "Estimer le temps d'étude",
+     "g": "Apprends à deviner la durée des tâches et à corriger tes estimations au fil du temps.",
+     "p": [
+      "La plupart des gens sous-estiment la durée des tâches, un biais appelé erreur de planification.",
+      "Chronomètre tes tâches une semaine et compare le temps réel à ta prévision.",
+      "Ajoute une marge d'environ un tiers à tes prochaines estimations, puis ajuste encore."
+     ],
+     "q": "Combien de temps te faut-il pour lire un chapitre typique, à ton avis ?",
+     "c": "Estime la durée de trois tâches, chronomètre-les et note l'écart."
+    },
+    "it": {
+     "t": "Stimare il tempo di studio",
+     "g": "Impara a indovinare quanto durano i compiti e a correggere le stime nel tempo.",
+     "p": [
+      "Quasi tutti sottovalutano la durata dei compiti, un'abitudine detta fallacia della pianificazione.",
+      "Cronometra i compiti per una settimana e confronta il tempo reale con la tua stima.",
+      "Aggiungi un margine di circa un terzo alle prossime stime e poi aggiusta ancora."
+     ],
+     "q": "Quanto pensi che ti serva per un capitolo tipico di lettura?",
+     "c": "Stima il tempo di tre compiti, cronometrali e annota la differenza."
+    },
+    "pt": {
+     "t": "Estimar o tempo de estudo",
+     "g": "Aprende a calcular quanto demoram as tarefas e corrige as estimativas com o tempo.",
+     "p": [
+      "A maioria subestima o tempo das tarefas, um hábito chamado falácia do planeamento.",
+      "Cronometra as tarefas durante uma semana e compara o tempo real com o teu palpite.",
+      "Junta uma margem de cerca de um terço às próximas estimativas e volta a ajustar."
+     ],
+     "q": "Quanto tempo achas que demoras a ler um capítulo típico?",
+     "c": "Estima o tempo de três tarefas, cronometra-as e anota a diferença."
+    },
+    "pt_BR": {
+     "t": "Estimar o tempo de estudo",
+     "g": "Aprenda a calcular quanto as tarefas demoram e corrija as estimativas com o tempo.",
+     "p": [
+      "A maioria subestima o tempo das tarefas, um hábito chamado falácia do planejamento.",
+      "Cronometre as tarefas por uma semana e compare o tempo real com o seu palpite.",
+      "Some uma margem de cerca de um terço às próximas estimativas e ajuste de novo."
+     ],
+     "q": "Quanto tempo você acha que leva para ler um capítulo típico?",
+     "c": "Estime o tempo de três tarefas, cronometre e anote a diferença."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Prioritising with urgency and importance",
+     "g": "Sort tasks into urgent, important, both or neither to decide what comes first.",
+     "p": [
+      "Urgent tasks shout loudly, but important tasks are the ones that move your goals.",
+      "Draw four boxes: urgent and important, important only, urgent only, neither.",
+      "Protect time for the important-but-not-urgent box, before it becomes an emergency."
+     ],
+     "q": "Which task on your list is important but not yet urgent?",
+     "c": "Sort your current tasks into the four boxes and start with one from the right box."
+    },
+    "de": {
+     "t": "Prioritäten: dringend und wichtig",
+     "g": "Sortiere Aufgaben in dringend, wichtig, beides oder keins, um die Reihenfolge zu bestimmen.",
+     "p": [
+      "Dringendes schreit laut, doch Wichtiges bringt deine Ziele voran.",
+      "Zeichne vier Felder: dringend und wichtig, nur wichtig, nur dringend, weder noch.",
+      "Schütze Zeit für das Feld wichtig, aber nicht dringend, bevor es zum Notfall wird."
+     ],
+     "q": "Welche Aufgabe auf deiner Liste ist wichtig, aber noch nicht dringend?",
+     "c": "Sortiere deine Aufgaben in die vier Felder und beginne mit einer aus dem richtigen Feld."
+    },
+    "es": {
+     "t": "Priorizar: urgente e importante",
+     "g": "Clasifica tareas en urgentes, importantes, ambas o ninguna para decidir qué va primero.",
+     "p": [
+      "Lo urgente grita fuerte, pero lo importante es lo que hace avanzar tus metas.",
+      "Dibuja cuatro cuadros: urgente e importante, solo importante, solo urgente, ninguno.",
+      "Protege tiempo para lo importante no urgente, antes de que se vuelva una emergencia."
+     ],
+     "q": "¿Qué tarea de tu lista es importante pero aún no urgente?",
+     "c": "Clasifica tus tareas en los cuatro cuadros y empieza por una del cuadro correcto."
+    },
+    "fr": {
+     "t": "Prioriser : urgent et important",
+     "g": "Classe les tâches en urgentes, importantes, les deux ou aucune pour décider de l'ordre.",
+     "p": [
+      "L'urgent crie fort, mais l'important est ce qui fait avancer tes objectifs.",
+      "Dessine quatre cases : urgent et important, important seul, urgent seul, ni l'un ni l'autre.",
+      "Protège du temps pour l'important non urgent, avant qu'il devienne une urgence."
+     ],
+     "q": "Quelle tâche de ta liste est importante mais pas encore urgente ?",
+     "c": "Classe tes tâches dans les quatre cases et commence par une de la bonne case."
+    },
+    "it": {
+     "t": "Priorità: urgente e importante",
+     "g": "Ordina i compiti in urgenti, importanti, entrambi o nessuno per decidere cosa viene prima.",
+     "p": [
+      "L'urgente urla forte, ma l'importante è ciò che fa avanzare i tuoi obiettivi.",
+      "Disegna quattro riquadri: urgente e importante, solo importante, solo urgente, nessuno.",
+      "Proteggi il tempo per l'importante non urgente, prima che diventi un'emergenza."
+     ],
+     "q": "Quale compito della tua lista è importante ma non ancora urgente?",
+     "c": "Ordina i tuoi compiti nei quattro riquadri e inizia da uno del riquadro giusto."
+    },
+    "pt": {
+     "t": "Prioridades: urgente e importante",
+     "g": "Organiza tarefas em urgentes, importantes, ambas ou nenhuma para decidir o que vem primeiro.",
+     "p": [
+      "O urgente grita alto, mas o importante é o que faz avançar os teus objetivos.",
+      "Desenha quatro caixas: urgente e importante, só importante, só urgente, nenhuma.",
+      "Protege tempo para o importante não urgente, antes de se tornar uma emergência."
+     ],
+     "q": "Que tarefa da tua lista é importante mas ainda não urgente?",
+     "c": "Organiza as tuas tarefas nas quatro caixas e começa por uma da caixa certa."
+    },
+    "pt_BR": {
+     "t": "Prioridades: urgente e importante",
+     "g": "Organize tarefas em urgentes, importantes, ambas ou nenhuma para decidir o que vem primeiro.",
+     "p": [
+      "O urgente grita alto, mas o importante é o que faz suas metas avançarem.",
+      "Desenhe quatro caixas: urgente e importante, só importante, só urgente, nenhuma.",
+      "Proteja tempo para o importante não urgente, antes que vire emergência."
+     ],
+     "q": "Qual tarefa da sua lista é importante, mas ainda não urgente?",
+     "c": "Organize suas tarefas nas quatro caixas e comece por uma da caixa certa."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Time blocking",
+     "g": "Give each study task a fixed slot in your calendar so it actually happens.",
+     "p": [
+      "A task with a time and place is far more likely to get done than one on a list.",
+      "Block time for study the way you would for a class or an appointment.",
+      "Name each block with its task so you do not decide again when it starts."
+     ],
+     "q": "Which three blocks could you reserve in your calendar this week?",
+     "c": "Put three named study blocks in your calendar for the coming days."
+    },
+    "de": {
+     "t": "Zeitblöcke planen",
+     "g": "Gib jeder Lernaufgabe einen festen Platz im Kalender, damit sie wirklich stattfindet.",
+     "p": [
+      "Eine Aufgabe mit Zeit und Ort wird viel wahrscheinlicher erledigt als eine auf der Liste.",
+      "Blockiere Lernzeit so, wie du es für Unterricht oder Termine tust.",
+      "Benenne jeden Block mit seiner Aufgabe, damit du beim Start nicht neu entscheidest."
+     ],
+     "q": "Welche drei Blöcke könntest du diese Woche in deinem Kalender reservieren?",
+     "c": "Trage drei benannte Lernblöcke für die kommenden Tage in deinen Kalender ein."
+    },
+    "es": {
+     "t": "Bloques de tiempo",
+     "g": "Dale a cada tarea de estudio un hueco fijo en tu calendario para que ocurra de verdad.",
+     "p": [
+      "Una tarea con hora y lugar se cumple mucho más que una en una lista.",
+      "Reserva tiempo de estudio como harías con una clase o una cita.",
+      "Pon a cada bloque el nombre de su tarea para no decidir de nuevo al empezar."
+     ],
+     "q": "¿Qué tres bloques podrías reservar en tu calendario esta semana?",
+     "c": "Pon tres bloques de estudio con nombre en tu calendario para los próximos días."
+    },
+    "fr": {
+     "t": "Le blocage de temps",
+     "g": "Donne à chaque tâche d'étude un créneau fixe dans ton agenda pour qu'elle ait vraiment lieu.",
+     "p": [
+      "Une tâche avec une heure et un lieu a bien plus de chances d'être faite qu'une tâche sur une liste.",
+      "Bloque du temps d'étude comme pour un cours ou un rendez-vous.",
+      "Nomme chaque bloc avec sa tâche pour ne pas avoir à redécider au démarrage."
+     ],
+     "q": "Quels trois blocs pourrais-tu réserver dans ton agenda cette semaine ?",
+     "c": "Place trois blocs d'étude nommés dans ton agenda pour les jours à venir."
+    },
+    "it": {
+     "t": "Blocchi di tempo",
+     "g": "Dai a ogni compito di studio uno slot fisso in calendario perché avvenga davvero.",
+     "p": [
+      "Un compito con ora e luogo ha molte più probabilità di essere fatto di uno su una lista.",
+      "Blocca il tempo di studio come faresti per una lezione o un appuntamento.",
+      "Dai a ogni blocco il nome del suo compito per non decidere di nuovo all'inizio."
+     ],
+     "q": "Quali tre blocchi potresti riservare in calendario questa settimana?",
+     "c": "Inserisci tre blocchi di studio con nome nel calendario per i prossimi giorni."
+    },
+    "pt": {
+     "t": "Blocos de tempo",
+     "g": "Dá a cada tarefa de estudo um lugar fixo no calendário para que aconteça mesmo.",
+     "p": [
+      "Uma tarefa com hora e local tem muito mais hipóteses de ser feita do que uma numa lista.",
+      "Reserva tempo de estudo como farias para uma aula ou uma consulta.",
+      "Dá a cada bloco o nome da sua tarefa para não decidires de novo no início."
+     ],
+     "q": "Que três blocos podias reservar no calendário esta semana?",
+     "c": "Põe três blocos de estudo com nome no calendário para os próximos dias."
+    },
+    "pt_BR": {
+     "t": "Blocos de tempo",
+     "g": "Dê a cada tarefa de estudo um horário fixo no calendário para que aconteça de verdade.",
+     "p": [
+      "Uma tarefa com hora e local tem muito mais chance de ser feita que uma numa lista.",
+      "Reserve tempo de estudo como faria para uma aula ou um compromisso.",
+      "Dê a cada bloco o nome da sua tarefa para não decidir de novo no início."
+     ],
+     "q": "Que três blocos você poderia reservar no calendário esta semana?",
+     "c": "Coloque três blocos de estudo com nome no calendário para os próximos dias."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Pomodoro technique",
+     "g": "Study in focused 25-minute rounds with short breaks and adjust the rhythm to you.",
+     "p": [
+      "Work for 25 minutes on one task, then rest for 5, and repeat.",
+      "After four rounds, take a longer break of about 15 to 30 minutes.",
+      "If 25 minutes is too long or too short, try 15 or 40 and see what fits."
+     ],
+     "q": "How long can you usually focus before your mind starts to drift?",
+     "c": "Do two Pomodoro rounds today and spend each break away from your screen."
+    },
+    "de": {
+     "t": "Die Pomodoro-Technik",
+     "g": "Lerne in konzentrierten 25-Minuten-Runden mit kurzen Pausen und passe den Rhythmus an dich an.",
+     "p": [
+      "Arbeite 25 Minuten an einer Aufgabe, ruh dich 5 Minuten aus und wiederhole.",
+      "Nach vier Runden gönn dir eine längere Pause von etwa 15 bis 30 Minuten.",
+      "Ist dir 25 Minuten zu lang oder zu kurz, probiere 15 oder 40 und schau, was passt."
+     ],
+     "q": "Wie lange kannst du dich meist konzentrieren, bevor die Gedanken abdriften?",
+     "c": "Mach heute zwei Pomodoro-Runden und verbringe die Pausen fern vom Bildschirm."
+    },
+    "es": {
+     "t": "La técnica Pomodoro",
+     "g": "Estudia en rondas de 25 minutos concentrados con descansos cortos y adapta el ritmo a ti.",
+     "p": [
+      "Trabaja 25 minutos en una tarea, descansa 5 y repite.",
+      "Tras cuatro rondas, haz un descanso más largo de unos 15 a 30 minutos.",
+      "Si 25 minutos es mucho o poco, prueba 15 o 40 y mira qué te encaja."
+     ],
+     "q": "¿Cuánto sueles poder concentrarte antes de que tu mente divague?",
+     "c": "Haz hoy dos rondas Pomodoro y pasa cada descanso lejos de la pantalla."
+    },
+    "fr": {
+     "t": "La technique Pomodoro",
+     "g": "Étudie par tranches de 25 minutes concentrées avec de courtes pauses et adapte le rythme à toi.",
+     "p": [
+      "Travaille 25 minutes sur une tâche, repose-toi 5 minutes, puis recommence.",
+      "Après quatre tours, fais une pause plus longue d'environ 15 à 30 minutes.",
+      "Si 25 minutes est trop long ou trop court, essaie 15 ou 40 et vois ce qui te convient."
+     ],
+     "q": "Combien de temps peux-tu te concentrer avant que ton esprit s'égare ?",
+     "c": "Fais deux tours Pomodoro aujourd'hui et passe chaque pause loin de l'écran."
+    },
+    "it": {
+     "t": "La tecnica del Pomodoro",
+     "g": "Studia in turni concentrati di 25 minuti con brevi pause e adatta il ritmo a te.",
+     "p": [
+      "Lavora 25 minuti su un compito, riposa 5 e ripeti.",
+      "Dopo quattro turni fai una pausa più lunga di circa 15-30 minuti.",
+      "Se 25 minuti sono troppi o pochi, prova 15 o 40 e vedi cosa ti si addice."
+     ],
+     "q": "Per quanto riesci di solito a concentrarti prima che la mente divaghi?",
+     "c": "Oggi fai due turni Pomodoro e passa ogni pausa lontano dallo schermo."
+    },
+    "pt": {
+     "t": "A técnica Pomodoro",
+     "g": "Estuda em rondas concentradas de 25 minutos com pausas curtas e adapta o ritmo a ti.",
+     "p": [
+      "Trabalha 25 minutos numa tarefa, descansa 5 e repete.",
+      "Depois de quatro rondas, faz uma pausa mais longa de cerca de 15 a 30 minutos.",
+      "Se 25 minutos forem demais ou de menos, tenta 15 ou 40 e vê o que te serve."
+     ],
+     "q": "Quanto tempo costumas conseguir concentrar-te antes de a mente divagar?",
+     "c": "Hoje, faz duas rondas Pomodoro e passa cada pausa longe do ecrã."
+    },
+    "pt_BR": {
+     "t": "A técnica Pomodoro",
+     "g": "Estude em rodadas concentradas de 25 minutos com pausas curtas e adapte o ritmo a você.",
+     "p": [
+      "Trabalhe 25 minutos em uma tarefa, descanse 5 e repita.",
+      "Depois de quatro rodadas, faça uma pausa mais longa de cerca de 15 a 30 minutos.",
+      "Se 25 minutos for demais ou pouco, teste 15 ou 40 e veja o que serve."
+     ],
+     "q": "Por quanto tempo você costuma conseguir se concentrar antes de a mente divagar?",
+     "c": "Hoje, faça duas rodadas Pomodoro e passe cada pausa longe da tela."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Buffer time and flexibility",
+     "g": "Leave room in your plan for surprises so one bad day does not ruin the week.",
+     "p": [
+      "Plans without gaps break the moment anything unexpected happens.",
+      "Keep one or two empty blocks each week as catch-up and rest time.",
+      "If you miss a session, just resume at the next one, with no guilt and no doubling."
+     ],
+     "q": "What usually derails your plans, and how could a buffer help?",
+     "c": "Add one empty buffer block to your week and name it Catch-up or Rest."
+    },
+    "de": {
+     "t": "Pufferzeit und Flexibilität",
+     "g": "Lass Platz im Plan für Überraschungen, damit ein schlechter Tag nicht die Woche ruiniert.",
+     "p": [
+      "Pläne ohne Lücken brechen, sobald etwas Unerwartetes passiert.",
+      "Halte jede Woche ein bis zwei leere Blöcke als Aufhol- und Erholungszeit frei.",
+      "Verpasst du eine Einheit, mach einfach bei der nächsten weiter, ohne Schuld und ohne Verdoppeln."
+     ],
+     "q": "Was bringt deine Pläne meist durcheinander, und wie könnte ein Puffer helfen?",
+     "c": "Füge deiner Woche einen leeren Pufferblock hinzu und nenne ihn Aufholen oder Ruhe."
+    },
+    "es": {
+     "t": "Tiempo de margen y flexibilidad",
+     "g": "Deja espacio en tu plan para imprevistos y que un mal día no arruine la semana.",
+     "p": [
+      "Los planes sin huecos se rompen en cuanto pasa algo inesperado.",
+      "Mantén uno o dos bloques vacíos por semana para ponerte al día y descansar.",
+      "Si te saltas una sesión, retoma en la siguiente, sin culpa y sin duplicar."
+     ],
+     "q": "¿Qué suele desbaratar tus planes y cómo podría ayudar un margen?",
+     "c": "Añade a tu semana un bloque vacío de margen y llámalo Ponerse al día o Descanso."
+    },
+    "fr": {
+     "t": "Temps tampon et flexibilité",
+     "g": "Laisse de la place dans ton plan pour les imprévus afin qu'une mauvaise journée ne ruine pas la semaine.",
+     "p": [
+      "Les plans sans marge cèdent dès qu'un imprévu survient.",
+      "Garde un ou deux blocs vides par semaine pour rattraper et te reposer.",
+      "Si tu rates une séance, reprends à la suivante, sans culpabilité et sans doubler."
+     ],
+     "q": "Qu'est-ce qui dérange d'habitude tes plans, et comment une marge pourrait-elle aider ?",
+     "c": "Ajoute un bloc tampon vide à ta semaine et appelle-le Rattrapage ou Repos."
+    },
+    "it": {
+     "t": "Tempo cuscinetto e flessibilità",
+     "g": "Lascia spazio nel piano per gli imprevisti così una brutta giornata non rovina la settimana.",
+     "p": [
+      "I piani senza margini si rompono appena succede qualcosa di inatteso.",
+      "Tieni uno o due blocchi vuoti a settimana per recuperare e riposare.",
+      "Se salti una sessione, riprendi alla prossima, senza sensi di colpa e senza raddoppiare."
+     ],
+     "q": "Cosa manda di solito all'aria i tuoi piani e come potrebbe aiutare un margine?",
+     "c": "Aggiungi alla settimana un blocco cuscinetto vuoto e chiamalo Recupero o Riposo."
+    },
+    "pt": {
+     "t": "Tempo de margem e flexibilidade",
+     "g": "Deixa espaço no plano para imprevistos, para que um dia mau não estrague a semana.",
+     "p": [
+      "Planos sem folgas quebram assim que acontece algo inesperado.",
+      "Mantém um ou dois blocos vazios por semana para pôr a matéria em dia e descansar.",
+      "Se falhares uma sessão, retoma na seguinte, sem culpa e sem duplicar."
+     ],
+     "q": "O que costuma deitar abaixo os teus planos e como poderia ajudar uma margem?",
+     "c": "Junta à tua semana um bloco vazio de margem e chama-lhe Pôr em dia ou Descanso."
+    },
+    "pt_BR": {
+     "t": "Tempo de margem e flexibilidade",
+     "g": "Deixe espaço no plano para imprevistos, para que um dia ruim não estrague a semana.",
+     "p": [
+      "Planos sem folgas quebram assim que algo inesperado acontece.",
+      "Mantenha um ou dois blocos vazios por semana para pôr em dia e descansar.",
+      "Se perder uma sessão, retome na seguinte, sem culpa e sem dobrar."
+     ],
+     "q": "O que costuma derrubar seus planos e como uma margem poderia ajudar?",
+     "c": "Adicione à semana um bloco vazio de margem e chame de Pôr em dia ou Descanso."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Month one review",
+     "g": "Review goals, memory basics and planning tools, and choose what to keep using.",
+     "p": [
+      "Look back over the month: which techniques did you actually use more than once?",
+      "Keep the two or three tools that gave you the best results for the effort.",
+      "Celebrate: thirty days of showing up for your learning is a real achievement."
+     ],
+     "q": "What is the one habit from this month you are proudest of?",
+     "c": "Write a short list: three tools to keep, one to drop, one to try next month."
+    },
+    "de": {
+     "t": "Rückblick auf Monat eins",
+     "g": "Prüfe Ziele, Gedächtnis-Grundlagen und Planungswerkzeuge und wähle, was du behältst.",
+     "p": [
+      "Blick auf den Monat: Welche Techniken hast du wirklich mehr als einmal genutzt?",
+      "Behalte die zwei oder drei Werkzeuge mit dem besten Ergebnis für den Aufwand.",
+      "Feiere: Dreißig Tage Einsatz für dein Lernen sind ein echter Erfolg."
+     ],
+     "q": "Auf welche Gewohnheit dieses Monats bist du am stolzesten?",
+     "c": "Schreib eine kurze Liste: drei Werkzeuge behalten, eins streichen, eins nächsten Monat testen."
+    },
+    "es": {
+     "t": "Repaso del primer mes",
+     "g": "Revisa metas, memoria básica y herramientas de planificación y elige qué seguir usando.",
+     "p": [
+      "Mira el mes: ¿qué técnicas usaste de verdad más de una vez?",
+      "Quédate con las dos o tres herramientas que más rindieron por el esfuerzo.",
+      "Celebra: treinta días dedicados a tu aprendizaje son un logro real."
+     ],
+     "q": "¿De qué hábito de este mes estás más orgulloso?",
+     "c": "Escribe una lista breve: tres herramientas que mantener, una que dejar, una por probar el mes próximo."
+    },
+    "fr": {
+     "t": "Bilan du premier mois",
+     "g": "Passe en revue objectifs, bases de la mémoire et outils de planification, et choisis quoi garder.",
+     "p": [
+      "Regarde le mois écoulé : quelles techniques as-tu vraiment utilisées plus d'une fois ?",
+      "Garde les deux ou trois outils qui ont le mieux payé pour l'effort fourni.",
+      "Fête ça : trente jours à t'investir dans ton apprentissage, c'est une vraie réussite."
+     ],
+     "q": "De quelle habitude de ce mois es-tu le plus fier ?",
+     "c": "Écris une courte liste : trois outils à garder, un à abandonner, un à tester le mois prochain."
+    },
+    "it": {
+     "t": "Bilancio del primo mese",
+     "g": "Rivedi obiettivi, basi della memoria e strumenti di pianificazione e scegli cosa continuare a usare.",
+     "p": [
+      "Guarda il mese: quali tecniche hai usato davvero più di una volta?",
+      "Tieni i due o tre strumenti che hanno reso di più per lo sforzo.",
+      "Festeggia: trenta giorni dedicati al tuo apprendimento sono un vero traguardo."
+     ],
+     "q": "Di quale abitudine di questo mese sei più orgoglioso?",
+     "c": "Scrivi una lista breve: tre strumenti da tenere, uno da lasciare, uno da provare il mese prossimo."
+    },
+    "pt": {
+     "t": "Balanço do primeiro mês",
+     "g": "Revê objetivos, básicos da memória e ferramentas de planeamento e escolhe o que manter.",
+     "p": [
+      "Olha para o mês: que técnicas usaste mesmo mais do que uma vez?",
+      "Fica com as duas ou três ferramentas que mais renderam pelo esforço.",
+      "Celebra: trinta dias a dedicares-te à tua aprendizagem são uma conquista real."
+     ],
+     "q": "De que hábito deste mês estás mais orgulhoso?",
+     "c": "Escreve uma lista curta: três ferramentas a manter, uma a largar, uma a experimentar no próximo mês."
+    },
+    "pt_BR": {
+     "t": "Balanço do primeiro mês",
+     "g": "Revise metas, básicos da memória e ferramentas de planejamento e escolha o que continuar usando.",
+     "p": [
+      "Olhe o mês: que técnicas você realmente usou mais de uma vez?",
+      "Fique com as duas ou três ferramentas que mais renderam pelo esforço.",
+      "Comemore: trinta dias dedicados ao seu aprendizado são uma conquista real."
+     ],
+     "q": "De que hábito deste mês você mais se orgulha?",
+     "c": "Escreva uma lista curta: três ferramentas para manter, uma para largar, uma para testar no próximo mês."
+    }
+   }
+  }
+ ]
+}

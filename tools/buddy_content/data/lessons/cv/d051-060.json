@@ -1,0 +1,835 @@
+{
+ "topic": "cv",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Volunteering as experience",
+     "g": "Treat volunteer work as genuine experience with skills and results.",
+     "p": [
+      "Volunteering shows commitment, teamwork and real skills.",
+      "Give it the same structure as a paid job: role, organisation, dates, bullets.",
+      "Highlight outcomes such as people helped or events organised."
+     ],
+     "q": "What volunteer or community activity are you proud of?",
+     "c": "Write a volunteering entry with a role title and two results."
+    },
+    "de": {
+     "t": "Ehrenamt als Erfahrung",
+     "g": "Behandle ehrenamtliche Arbeit als echte Erfahrung mit Fähigkeiten und Ergebnissen.",
+     "p": [
+      "Ehrenamt zeigt Einsatz, Teamgeist und echte Fähigkeiten.",
+      "Gib ihm denselben Aufbau wie einem bezahlten Job: Rolle, Organisation, Zeitraum, Punkte.",
+      "Betone Ergebnisse wie unterstützte Menschen oder organisierte Veranstaltungen."
+     ],
+     "q": "Auf welche ehrenamtliche oder gemeinnützige Tätigkeit bist du stolz?",
+     "c": "Schreibe einen Ehrenamts-Eintrag mit Rollentitel und zwei Ergebnissen."
+    },
+    "es": {
+     "t": "El voluntariado como experiencia",
+     "g": "Trata el voluntariado como experiencia real con habilidades y resultados.",
+     "p": [
+      "El voluntariado muestra compromiso, trabajo en equipo y habilidades reales.",
+      "Dale la misma estructura que un empleo: rol, organización, fechas, viñetas.",
+      "Destaca resultados como personas ayudadas o eventos organizados."
+     ],
+     "q": "¿De qué actividad voluntaria o comunitaria te sientes orgulloso?",
+     "c": "Escribe una entrada de voluntariado con título de rol y dos resultados."
+    },
+    "fr": {
+     "t": "Le bénévolat comme expérience",
+     "g": "Traite le bénévolat comme une vraie expérience avec compétences et résultats.",
+     "p": [
+      "Le bénévolat montre engagement, esprit d'équipe et vraies compétences.",
+      "Donne-lui la même structure qu'un emploi : rôle, organisation, dates, puces.",
+      "Mets en avant les résultats : personnes aidées, événements organisés."
+     ],
+     "q": "De quelle activité bénévole ou associative es-tu fier ?",
+     "c": "Écris une entrée de bénévolat avec un intitulé de rôle et deux résultats."
+    },
+    "it": {
+     "t": "Il volontariato come esperienza",
+     "g": "Tratta il volontariato come esperienza vera, con competenze e risultati.",
+     "p": [
+      "Il volontariato mostra impegno, lavoro di squadra e competenze reali.",
+      "Dagli la stessa struttura di un lavoro: ruolo, organizzazione, date, punti.",
+      "Evidenzia risultati come persone aiutate o eventi organizzati."
+     ],
+     "q": "Di quale attività di volontariato o di comunità vai fiero?",
+     "c": "Scrivi una voce di volontariato con titolo del ruolo e due risultati."
+    },
+    "pt": {
+     "t": "O voluntariado como experiência",
+     "g": "Trata o voluntariado como experiência real com competências e resultados.",
+     "p": [
+      "O voluntariado mostra empenho, trabalho de equipa e competências reais.",
+      "Dá-lhe a mesma estrutura de um emprego: função, organização, datas, tópicos.",
+      "Destaca resultados como pessoas ajudadas ou eventos organizados."
+     ],
+     "q": "De que atividade de voluntariado ou comunitária te orgulhas?",
+     "c": "Escreve uma entrada de voluntariado com título da função e dois resultados."
+    },
+    "pt_BR": {
+     "t": "O voluntariado como experiência",
+     "g": "Trate o voluntariado como experiência real com habilidades e resultados.",
+     "p": [
+      "O voluntariado mostra comprometimento, trabalho em equipe e habilidades reais.",
+      "Dê a mesma estrutura de um emprego: função, organização, datas, tópicos.",
+      "Destaque resultados como pessoas ajudadas ou eventos organizados."
+     ],
+     "q": "De que atividade voluntária ou comunitária você se orgulha?",
+     "c": "Escreva uma entrada de voluntariado com título da função e dois resultados."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Student projects as evidence",
+     "g": "Use group projects and assignments to show practical abilities.",
+     "p": [
+      "A project proves you can apply knowledge, not just study it.",
+      "Name the project, your role, the tools used and the outcome.",
+      "Group work also shows teamwork, deadlines and communication."
+     ],
+     "q": "Which course project taught you the most?",
+     "c": "Add a Projects section with one student project in three lines."
+    },
+    "de": {
+     "t": "Studienprojekte als Beleg",
+     "g": "Nutze Gruppenprojekte und Arbeiten, um praktische Fähigkeiten zu zeigen.",
+     "p": [
+      "Ein Projekt beweist, dass du Wissen anwenden kannst, nicht nur lernen.",
+      "Nenne Projekt, deine Rolle, genutzte Werkzeuge und das Ergebnis.",
+      "Gruppenarbeit zeigt auch Teamarbeit, Fristen und Kommunikation."
+     ],
+     "q": "Welches Kursprojekt hat dir am meisten beigebracht?",
+     "c": "Ergänze einen Projekte-Abschnitt mit einem Studienprojekt in drei Zeilen."
+    },
+    "es": {
+     "t": "Proyectos de estudio como prueba",
+     "g": "Usa trabajos en grupo y proyectos para mostrar habilidades prácticas.",
+     "p": [
+      "Un proyecto prueba que sabes aplicar lo aprendido, no solo estudiarlo.",
+      "Nombra el proyecto, tu rol, las herramientas y el resultado.",
+      "El trabajo en grupo muestra también equipo, plazos y comunicación."
+     ],
+     "q": "¿Qué proyecto de un curso te enseñó más?",
+     "c": "Añade una sección de Proyectos con un proyecto académico en tres líneas."
+    },
+    "fr": {
+     "t": "Les projets d'études comme preuves",
+     "g": "Utilise travaux de groupe et projets pour montrer des compétences concrètes.",
+     "p": [
+      "Un projet prouve que tu sais appliquer tes connaissances, pas seulement les étudier.",
+      "Nomme le projet, ton rôle, les outils utilisés et le résultat.",
+      "Le travail en groupe montre aussi équipe, délais et communication."
+     ],
+     "q": "Quel projet de cours t'a le plus appris ?",
+     "c": "Ajoute une rubrique Projets avec un projet d'études en trois lignes."
+    },
+    "it": {
+     "t": "Progetti di studio come prova",
+     "g": "Usa lavori di gruppo e progetti per mostrare abilità pratiche.",
+     "p": [
+      "Un progetto prova che sai applicare ciò che studi, non solo studiarlo.",
+      "Indica il progetto, il tuo ruolo, gli strumenti usati e l'esito.",
+      "Il lavoro di gruppo mostra anche squadra, scadenze e comunicazione."
+     ],
+     "q": "Quale progetto di un corso ti ha insegnato di più?",
+     "c": "Aggiungi una sezione Progetti con un progetto di studio in tre righe."
+    },
+    "pt": {
+     "t": "Projetos escolares como prova",
+     "g": "Usa trabalhos de grupo e projetos para mostrar capacidades práticas.",
+     "p": [
+      "Um projeto prova que sabes aplicar o que aprendeste, não só estudar.",
+      "Nomeia o projeto, a tua função, as ferramentas usadas e o resultado.",
+      "O trabalho de grupo mostra também equipa, prazos e comunicação."
+     ],
+     "q": "Que projeto de um curso mais te ensinou?",
+     "c": "Acrescenta uma secção de Projetos com um projeto escolar em três linhas."
+    },
+    "pt_BR": {
+     "t": "Projetos acadêmicos como prova",
+     "g": "Use trabalhos em grupo e projetos para mostrar habilidades práticas.",
+     "p": [
+      "Um projeto prova que você sabe aplicar o que aprendeu, não só estudar.",
+      "Nomeie o projeto, sua função, as ferramentas usadas e o resultado.",
+      "O trabalho em grupo mostra também equipe, prazos e comunicação."
+     ],
+     "q": "Que projeto de um curso mais te ensinou?",
+     "c": "Acrescente uma seção de Projetos com um projeto acadêmico em três linhas."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Customer-facing roles",
+     "g": "Highlight service, problem-solving and communication from front-line jobs.",
+     "p": [
+      "Front-line jobs build skills every employer values.",
+      "Show volumes: customers per day, calls handled, queries solved.",
+      "Add proof of quality, like praise, repeat customers or low complaints."
+     ],
+     "q": "What was the trickiest customer situation you handled well?",
+     "c": "Write two bullets with volume and a service outcome."
+    },
+    "de": {
+     "t": "Jobs mit Kundenkontakt",
+     "g": "Betone Service, Problemlösung und Kommunikation aus Jobs an vorderster Front.",
+     "p": [
+      "Jobs mit Kundenkontakt bauen Fähigkeiten auf, die jeder Arbeitgeber schätzt.",
+      "Zeige Mengen: Kunden pro Tag, bearbeitete Anrufe, gelöste Anfragen.",
+      "Belege Qualität, etwa durch Lob, Stammkunden oder wenige Beschwerden."
+     ],
+     "q": "Welche heikelste Kundensituation hast du gut gemeistert?",
+     "c": "Schreibe zwei Punkte mit Menge und Serviceergebnis."
+    },
+    "es": {
+     "t": "Puestos de atención al cliente",
+     "g": "Destaca servicio, resolución de problemas y comunicación de empleos de cara al público.",
+     "p": [
+      "Los empleos de cara al público desarrollan habilidades que todo empleador valora.",
+      "Muestra volúmenes: clientes al día, llamadas atendidas, consultas resueltas.",
+      "Añade pruebas de calidad: elogios, clientes que repiten, pocas quejas."
+     ],
+     "q": "¿Cuál fue la situación con un cliente más difícil que resolviste bien?",
+     "c": "Escribe dos viñetas con volumen y un resultado de servicio."
+    },
+    "fr": {
+     "t": "Les postes en contact avec la clientèle",
+     "g": "Mets en avant service, résolution de problèmes et communication des emplois de première ligne.",
+     "p": [
+      "Les emplois de première ligne développent des compétences que tout employeur apprécie.",
+      "Montre les volumes : clients par jour, appels traités, demandes résolues.",
+      "Ajoute des preuves de qualité : compliments, clients fidèles, peu de plaintes."
+     ],
+     "q": "Quelle situation client délicate as-tu bien gérée ?",
+     "c": "Écris deux puces avec un volume et un résultat de service."
+    },
+    "it": {
+     "t": "Ruoli a contatto con i clienti",
+     "g": "Metti in risalto servizio, risoluzione di problemi e comunicazione dei lavori in prima linea.",
+     "p": [
+      "I lavori in prima linea sviluppano competenze che ogni datore di lavoro apprezza.",
+      "Mostra i volumi: clienti al giorno, chiamate gestite, richieste risolte.",
+      "Aggiungi prove di qualità: complimenti, clienti abituali, pochi reclami."
+     ],
+     "q": "Qual è stata la situazione con un cliente più delicata che hai gestito bene?",
+     "c": "Scrivi due punti con volume e un risultato di servizio."
+    },
+    "pt": {
+     "t": "Funções de atendimento ao cliente",
+     "g": "Destaca serviço, resolução de problemas e comunicação de empregos de linha da frente.",
+     "p": [
+      "Os empregos de linha da frente criam competências que todo o empregador valoriza.",
+      "Mostra volumes: clientes por dia, chamadas atendidas, pedidos resolvidos.",
+      "Acrescenta provas de qualidade: elogios, clientes habituais, poucas queixas."
+     ],
+     "q": "Qual foi a situação mais difícil com um cliente que resolveste bem?",
+     "c": "Escreve dois tópicos com volume e um resultado de serviço."
+    },
+    "pt_BR": {
+     "t": "Funções de atendimento ao cliente",
+     "g": "Destaque atendimento, resolução de problemas e comunicação de empregos da linha de frente.",
+     "p": [
+      "Empregos da linha de frente criam habilidades que todo empregador valoriza.",
+      "Mostre volumes: clientes por dia, ligações atendidas, pedidos resolvidos.",
+      "Acrescente provas de qualidade: elogios, clientes recorrentes, poucas reclamações."
+     ],
+     "q": "Qual foi a situação mais difícil com um cliente que você resolveu bem?",
+     "c": "Escreva dois tópicos com volume e um resultado de atendimento."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hospitality and retail wins",
+     "g": "Turn busy restaurant or shop work into transferable achievements.",
+     "p": [
+      "Busy service work shows speed, calm under pressure and teamwork.",
+      "Mention sales, stock accuracy, covers served or targets met.",
+      "Note training of new staff, upselling and handling rushes."
+     ],
+     "q": "What was your busiest shift, and how did you handle it?",
+     "c": "Write three bullets with a number each from a service job."
+    },
+    "de": {
+     "t": "Erfolge in Gastro und Handel",
+     "g": "Mache aus stressiger Arbeit im Restaurant oder Laden übertragbare Erfolge.",
+     "p": [
+      "Hektische Servicearbeit zeigt Tempo, Ruhe unter Druck und Teamgeist.",
+      "Nenne Umsätze, Bestandsgenauigkeit, bediente Gäste oder erreichte Ziele.",
+      "Erwähne Einarbeitung neuer Kollegen, Zusatzverkäufe und Stoßzeiten."
+     ],
+     "q": "Was war deine hektischste Schicht, und wie hast du sie gemeistert?",
+     "c": "Schreibe drei Punkte mit je einer Zahl aus einem Servicejob."
+    },
+    "es": {
+     "t": "Logros en hostelería y comercio",
+     "g": "Convierte el trabajo intenso en restaurantes o tiendas en logros transferibles.",
+     "p": [
+      "El trabajo de servicio intenso muestra rapidez, calma bajo presión y equipo.",
+      "Menciona ventas, exactitud de inventario, comensales atendidos u objetivos cumplidos.",
+      "Anota la formación de nuevos compañeros, ventas adicionales y horas punta."
+     ],
+     "q": "¿Cuál fue tu turno más movido y cómo lo manejaste?",
+     "c": "Escribe tres viñetas con una cifra cada una de un empleo de servicio."
+    },
+    "fr": {
+     "t": "Réussites en restauration et commerce",
+     "g": "Transforme un travail intense en restaurant ou magasin en réussites transférables.",
+     "p": [
+      "Le service très sollicité montre rapidité, calme sous pression et esprit d'équipe.",
+      "Mentionne ventes, exactitude des stocks, couverts servis ou objectifs atteints.",
+      "Note la formation des nouveaux, les ventes additionnelles et les coups de feu."
+     ],
+     "q": "Quel a été ton service le plus chargé, et comment l'as-tu géré ?",
+     "c": "Écris trois puces avec un chiffre chacune issues d'un emploi de service."
+    },
+    "it": {
+     "t": "Successi in ristorazione e commercio",
+     "g": "Trasforma il lavoro intenso in ristorante o negozio in risultati trasferibili.",
+     "p": [
+      "Il servizio intenso mostra rapidità, calma sotto pressione e lavoro di squadra.",
+      "Cita vendite, precisione dell'inventario, coperti serviti o obiettivi raggiunti.",
+      "Annota formazione dei nuovi colleghi, vendite aggiuntive e gestione dei picchi."
+     ],
+     "q": "Qual è stato il tuo turno più intenso e come l'hai gestito?",
+     "c": "Scrivi tre punti con un numero ciascuno da un lavoro di servizio."
+    },
+    "pt": {
+     "t": "Conquistas na restauração e comércio",
+     "g": "Transforma o trabalho intenso em restaurantes ou lojas em conquistas transferíveis.",
+     "p": [
+      "O serviço intenso mostra rapidez, calma sob pressão e trabalho de equipa.",
+      "Menciona vendas, precisão do stock, refeições servidas ou metas cumpridas.",
+      "Regista a formação de novos colegas, vendas adicionais e horas de ponta."
+     ],
+     "q": "Qual foi o teu turno mais agitado e como o geriste?",
+     "c": "Escreve três tópicos com um número cada, de um emprego de serviço."
+    },
+    "pt_BR": {
+     "t": "Conquistas em hotelaria e varejo",
+     "g": "Transforme o trabalho intenso em restaurantes ou lojas em conquistas transferíveis.",
+     "p": [
+      "O atendimento intenso mostra rapidez, calma sob pressão e trabalho em equipe.",
+      "Mencione vendas, precisão de estoque, refeições servidas ou metas batidas.",
+      "Registre treinamento de novos colegas, vendas adicionais e horários de pico."
+     ],
+     "q": "Qual foi o seu turno mais agitado e como você o administrou?",
+     "c": "Escreva três tópicos com um número cada, de um emprego de atendimento."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Office and admin roles",
+     "g": "Show organisation, accuracy and the systems you kept running smoothly.",
+     "p": [
+      "Admin work keeps organisations running; show that clearly.",
+      "Name the systems, tools and processes you managed.",
+      "Show accuracy and reliability: deadlines met, errors reduced, records kept."
+     ],
+     "q": "Which process at work would fall apart without you?",
+     "c": "Write two admin bullets with a tool name and a result."
+    },
+    "de": {
+     "t": "Büro- und Verwaltungsjobs",
+     "g": "Zeige Organisation, Genauigkeit und die Systeme, die du reibungslos hieltest.",
+     "p": [
+      "Verwaltungsarbeit hält Organisationen am Laufen; zeige das klar.",
+      "Nenne Systeme, Werkzeuge und Abläufe, die du betreutest.",
+      "Zeige Genauigkeit und Verlässlichkeit: Fristen gehalten, Fehler gesenkt, Akten geführt."
+     ],
+     "q": "Welcher Ablauf bei der Arbeit bräche ohne dich zusammen?",
+     "c": "Schreibe zwei Verwaltungspunkte mit Werkzeugnamen und Ergebnis."
+    },
+    "es": {
+     "t": "Puestos de oficina y administración",
+     "g": "Muestra organización, precisión y los sistemas que mantuviste funcionando.",
+     "p": [
+      "La administración mantiene en marcha a las organizaciones; muéstralo con claridad.",
+      "Nombra los sistemas, herramientas y procesos que gestionaste.",
+      "Muestra precisión y fiabilidad: plazos cumplidos, errores reducidos, registros al día."
+     ],
+     "q": "¿Qué proceso del trabajo se vendría abajo sin ti?",
+     "c": "Escribe dos viñetas administrativas con una herramienta y un resultado."
+    },
+    "fr": {
+     "t": "Postes de bureau et d'administration",
+     "g": "Montre organisation, précision et les systèmes que tu as fait tourner sans accroc.",
+     "p": [
+      "L'administratif fait tourner les organisations ; montre-le clairement.",
+      "Nomme les systèmes, outils et processus que tu gérais.",
+      "Montre précision et fiabilité : délais tenus, erreurs réduites, dossiers à jour."
+     ],
+     "q": "Quel processus au travail s'effondrerait sans toi ?",
+     "c": "Écris deux puces administratives avec un outil et un résultat."
+    },
+    "it": {
+     "t": "Ruoli d'ufficio e amministrativi",
+     "g": "Mostra organizzazione, precisione e i sistemi che hai mantenuto in funzione.",
+     "p": [
+      "L'amministrazione fa andare avanti le organizzazioni: mostralo chiaramente.",
+      "Nomina i sistemi, gli strumenti e i processi che gestivi.",
+      "Mostra precisione e affidabilità: scadenze rispettate, errori ridotti, archivi tenuti."
+     ],
+     "q": "Quale processo al lavoro crollerebbe senza di te?",
+     "c": "Scrivi due punti amministrativi con uno strumento e un risultato."
+    },
+    "pt": {
+     "t": "Funções de escritório e administrativas",
+     "g": "Mostra organização, rigor e os sistemas que mantiveste a funcionar bem.",
+     "p": [
+      "A administração mantém as organizações em marcha; mostra isso com clareza.",
+      "Nomeia os sistemas, ferramentas e processos que geriste.",
+      "Mostra rigor e fiabilidade: prazos cumpridos, erros reduzidos, registos em dia."
+     ],
+     "q": "Que processo no trabalho ruiria sem ti?",
+     "c": "Escreve dois tópicos administrativos com uma ferramenta e um resultado."
+    },
+    "pt_BR": {
+     "t": "Funções de escritório e administrativas",
+     "g": "Mostre organização, precisão e os sistemas que você manteve funcionando bem.",
+     "p": [
+      "A administração mantém as organizações em movimento; mostre isso com clareza.",
+      "Nomeie os sistemas, ferramentas e processos que você geriu.",
+      "Mostre precisão e confiabilidade: prazos cumpridos, erros reduzidos, registros em dia."
+     ],
+     "q": "Que processo no trabalho desmoronaria sem você?",
+     "c": "Escreva dois tópicos administrativos com uma ferramenta e um resultado."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Technical and trade roles",
+     "g": "Present tools, safety, certifications and quality in hands-on jobs.",
+     "p": [
+      "Name the equipment, materials and techniques you work with.",
+      "List licences and certificates by name, without any ID numbers.",
+      "Show safety record, quality checks and jobs finished on time."
+     ],
+     "q": "What are you most skilled at doing with your hands or tools?",
+     "c": "Add a short Certifications line with names and years only."
+    },
+    "de": {
+     "t": "Technische und handwerkliche Berufe",
+     "g": "Stelle Werkzeuge, Sicherheit, Zertifikate und Qualität in praktischen Jobs dar.",
+     "p": [
+      "Nenne Geräte, Materialien und Techniken, mit denen du arbeitest.",
+      "Führe Lizenzen und Zertifikate mit Namen auf, ohne Ausweisnummern.",
+      "Zeige Sicherheitsbilanz, Qualitätskontrollen und pünktlich fertige Aufträge."
+     ],
+     "q": "Worin bist du mit Händen oder Werkzeug am geschicktesten?",
+     "c": "Ergänze eine kurze Zertifikatszeile nur mit Namen und Jahren."
+    },
+    "es": {
+     "t": "Puestos técnicos y de oficios",
+     "g": "Presenta herramientas, seguridad, certificaciones y calidad en empleos prácticos.",
+     "p": [
+      "Nombra los equipos, materiales y técnicas con los que trabajas.",
+      "Lista licencias y certificados por su nombre, sin números de documento.",
+      "Muestra historial de seguridad, controles de calidad y trabajos entregados a tiempo."
+     ],
+     "q": "¿En qué eres más hábil con las manos o las herramientas?",
+     "c": "Añade una línea breve de Certificaciones solo con nombres y años."
+    },
+    "fr": {
+     "t": "Métiers techniques et manuels",
+     "g": "Présente outils, sécurité, certifications et qualité dans les métiers pratiques.",
+     "p": [
+      "Nomme les équipements, matériaux et techniques que tu utilises.",
+      "Liste permis et certificats par leur nom, sans numéros d'identification.",
+      "Montre ton bilan sécurité, tes contrôles qualité et tes chantiers livrés à temps."
+     ],
+     "q": "Dans quoi es-tu le plus habile de tes mains ou avec tes outils ?",
+     "c": "Ajoute une courte ligne Certifications avec seulement noms et années."
+    },
+    "it": {
+     "t": "Ruoli tecnici e artigianali",
+     "g": "Presenta strumenti, sicurezza, certificazioni e qualità nei lavori pratici.",
+     "p": [
+      "Nomina le attrezzature, i materiali e le tecniche con cui lavori.",
+      "Elenca licenze e certificati per nome, senza numeri di documento.",
+      "Mostra sicurezza, controlli di qualità e lavori finiti in tempo."
+     ],
+     "q": "In cosa sei più abile con le mani o con gli attrezzi?",
+     "c": "Aggiungi una breve riga Certificazioni con solo nomi e anni."
+    },
+    "pt": {
+     "t": "Funções técnicas e de ofício",
+     "g": "Apresenta ferramentas, segurança, certificações e qualidade em empregos práticos.",
+     "p": [
+      "Nomeia os equipamentos, materiais e técnicas com que trabalhas.",
+      "Lista licenças e certificados pelo nome, sem números de documentos.",
+      "Mostra o historial de segurança, controlos de qualidade e trabalhos entregues a tempo."
+     ],
+     "q": "No que és mais hábil com as mãos ou ferramentas?",
+     "c": "Acrescenta uma linha curta de Certificações só com nomes e anos."
+    },
+    "pt_BR": {
+     "t": "Funções técnicas e de ofício",
+     "g": "Apresente ferramentas, segurança, certificações e qualidade em empregos práticos.",
+     "p": [
+      "Nomeie os equipamentos, materiais e técnicas com que você trabalha.",
+      "Liste licenças e certificados pelo nome, sem números de documentos.",
+      "Mostre histórico de segurança, controles de qualidade e obras entregues no prazo."
+     ],
+     "q": "No que você é mais habilidoso com as mãos ou ferramentas?",
+     "c": "Acrescente uma linha curta de Certificações só com nomes e anos."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Care and education roles",
+     "g": "Show patience, responsibility and the people you helped to grow.",
+     "p": [
+      "Care and teaching jobs build trust, patience and clear communication.",
+      "Mention group sizes, ages or needs, without any private details.",
+      "Show growth you supported: progress, confidence, new skills."
+     ],
+     "q": "Who did you help learn or grow, and how did you see it?",
+     "c": "Write two bullets showing the progress of people you supported."
+    },
+    "de": {
+     "t": "Pflege- und Bildungsberufe",
+     "g": "Zeige Geduld, Verantwortung und die Menschen, die du wachsen ließest.",
+     "p": [
+      "Pflege- und Lehrberufe bauen Vertrauen, Geduld und klare Kommunikation auf.",
+      "Nenne Gruppengrößen, Altersstufen oder Bedürfnisse, ohne private Details.",
+      "Zeige Entwicklung, die du gefördert hast: Fortschritt, Selbstvertrauen, neue Fähigkeiten."
+     ],
+     "q": "Wem hast du beim Lernen oder Wachsen geholfen, und woran sahst du es?",
+     "c": "Schreibe zwei Punkte, die den Fortschritt unterstützter Menschen zeigen."
+    },
+    "es": {
+     "t": "Puestos de cuidado y educación",
+     "g": "Muestra paciencia, responsabilidad y a las personas a quienes ayudaste a crecer.",
+     "p": [
+      "Los empleos de cuidado y enseñanza crean confianza, paciencia y comunicación clara.",
+      "Menciona tamaños de grupo, edades o necesidades, sin datos privados.",
+      "Muestra el crecimiento que apoyaste: progreso, confianza, nuevas habilidades."
+     ],
+     "q": "¿A quién ayudaste a aprender o crecer y cómo lo notaste?",
+     "c": "Escribe dos viñetas que muestren el progreso de personas a las que apoyaste."
+    },
+    "fr": {
+     "t": "Métiers du soin et de l'éducation",
+     "g": "Montre patience, responsabilité et les personnes que tu as aidées à grandir.",
+     "p": [
+      "Les métiers du soin et de l'enseignement bâtissent confiance, patience et communication claire.",
+      "Mentionne tailles de groupe, âges ou besoins, sans détails privés.",
+      "Montre la progression que tu as soutenue : avancées, confiance, nouvelles compétences."
+     ],
+     "q": "Qui as-tu aidé à apprendre ou grandir, et comment l'as-tu constaté ?",
+     "c": "Écris deux puces montrant les progrès des personnes que tu as accompagnées."
+    },
+    "it": {
+     "t": "Ruoli di cura e istruzione",
+     "g": "Mostra pazienza, responsabilità e le persone che hai aiutato a crescere.",
+     "p": [
+      "I lavori di cura e insegnamento costruiscono fiducia, pazienza e comunicazione chiara.",
+      "Indica dimensioni dei gruppi, età o bisogni, senza dettagli privati.",
+      "Mostra la crescita che hai sostenuto: progressi, fiducia, nuove competenze."
+     ],
+     "q": "Chi hai aiutato a imparare o crescere e come l'hai visto?",
+     "c": "Scrivi due punti che mostrino i progressi delle persone che hai seguito."
+    },
+    "pt": {
+     "t": "Funções de cuidado e educação",
+     "g": "Mostra paciência, responsabilidade e as pessoas que ajudaste a crescer.",
+     "p": [
+      "Os empregos de cuidado e ensino criam confiança, paciência e comunicação clara.",
+      "Menciona tamanhos de grupo, idades ou necessidades, sem dados privados.",
+      "Mostra o crescimento que apoiaste: progresso, confiança, novas competências."
+     ],
+     "q": "Quem ajudaste a aprender ou crescer e como o notaste?",
+     "c": "Escreve dois tópicos que mostrem o progresso das pessoas que apoiaste."
+    },
+    "pt_BR": {
+     "t": "Funções de cuidado e educação",
+     "g": "Mostre paciência, responsabilidade e as pessoas que você ajudou a crescer.",
+     "p": [
+      "Empregos de cuidado e ensino criam confiança, paciência e comunicação clara.",
+      "Mencione tamanhos de grupo, idades ou necessidades, sem dados privados.",
+      "Mostre o crescimento que você apoiou: progresso, confiança, novas habilidades."
+     ],
+     "q": "Quem você ajudou a aprender ou crescer e como percebeu?",
+     "c": "Escreva dois tópicos que mostrem o progresso das pessoas que você apoiou."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rewriting a weak bullet",
+     "g": "Practise before-and-after edits that turn a dull duty into a clear result.",
+     "p": [
+      "Spot weak signs: vague verbs, no result, no number, no context.",
+      "Rewrite with a strong verb, what you did and the outcome.",
+      "Compare the old and new line; the new one should answer so what."
+     ],
+     "q": "Which of your bullets would you like to make stronger first?",
+     "c": "Rewrite three weak bullets using verb, action and result."
+    },
+    "de": {
+     "t": "Einen schwachen Punkt umschreiben",
+     "g": "Übe Vorher-Nachher-Korrekturen, die eine lahme Aufgabe in ein klares Ergebnis verwandeln.",
+     "p": [
+      "Erkenne Schwächen: vage Verben, kein Ergebnis, keine Zahl, kein Kontext.",
+      "Schreibe mit starkem Verb, deiner Handlung und dem Ergebnis neu.",
+      "Vergleiche alt und neu; die neue Zeile soll die Frage Und was bringt das beantworten."
+     ],
+     "q": "Welchen deiner Punkte möchtest du zuerst stärken?",
+     "c": "Formuliere drei schwache Punkte mit Verb, Handlung und Ergebnis um."
+    },
+    "es": {
+     "t": "Reescribir una viñeta débil",
+     "g": "Practica ediciones de antes y después que conviertan una tarea gris en un resultado claro.",
+     "p": [
+      "Detecta señales débiles: verbos vagos, sin resultado, sin cifra, sin contexto.",
+      "Reescribe con un verbo fuerte, lo que hiciste y el resultado.",
+      "Compara la línea vieja y la nueva; la nueva debe responder y qué."
+     ],
+     "q": "¿Cuál de tus viñetas te gustaría reforzar primero?",
+     "c": "Reescribe tres viñetas débiles con verbo, acción y resultado."
+    },
+    "fr": {
+     "t": "Réécrire une puce faible",
+     "g": "Entraîne-toi à des retouches avant-après qui transforment une tâche terne en résultat clair.",
+     "p": [
+      "Repère les signes faibles : verbes vagues, aucun résultat, aucun chiffre, aucun contexte.",
+      "Réécris avec un verbe fort, ce que tu as fait et le résultat.",
+      "Compare l'ancienne et la nouvelle ligne ; la nouvelle doit répondre à et alors."
+     ],
+     "q": "Laquelle de tes puces voudrais-tu renforcer en premier ?",
+     "c": "Réécris trois puces faibles avec verbe, action et résultat."
+    },
+    "it": {
+     "t": "Riscrivere un punto debole",
+     "g": "Esercitati con modifiche prima e dopo che trasformano un compito spento in un risultato chiaro.",
+     "p": [
+      "Riconosci i segnali deboli: verbi vaghi, nessun risultato, nessun numero, nessun contesto.",
+      "Riscrivi con un verbo forte, ciò che hai fatto e l'esito.",
+      "Confronta la riga vecchia e la nuova; la nuova deve rispondere a e quindi."
+     ],
+     "q": "Quale dei tuoi punti vorresti rafforzare per primo?",
+     "c": "Riscrivi tre punti deboli con verbo, azione e risultato."
+    },
+    "pt": {
+     "t": "Reescrever um tópico fraco",
+     "g": "Pratica edições de antes e depois que transformam uma tarefa baça num resultado claro.",
+     "p": [
+      "Deteta sinais fracos: verbos vagos, sem resultado, sem número, sem contexto.",
+      "Reescreve com um verbo forte, o que fizeste e o resultado.",
+      "Compara a linha antiga e a nova; a nova deve responder e então."
+     ],
+     "q": "Qual dos teus tópicos gostavas de reforçar primeiro?",
+     "c": "Reescreve três tópicos fracos com verbo, ação e resultado."
+    },
+    "pt_BR": {
+     "t": "Reescrever um tópico fraco",
+     "g": "Pratique edições de antes e depois que transformam uma tarefa sem graça em um resultado claro.",
+     "p": [
+      "Detecte sinais fracos: verbos vagos, sem resultado, sem número, sem contexto.",
+      "Reescreva com um verbo forte, o que você fez e o resultado.",
+      "Compare a linha antiga e a nova; a nova deve responder e daí."
+     ],
+     "q": "Qual dos seus tópicos você gostaria de reforçar primeiro?",
+     "c": "Reescreva três tópicos fracos com verbo, ação e resultado."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mini draft: one full role",
+     "g": "Write a complete job entry with polished, quantified bullet points.",
+     "p": [
+      "Combine a clear header with three to five strong bullets.",
+      "Lead with your best achievement and include at least one number.",
+      "Check verbs, tense, dates and length before you call it done."
+     ],
+     "q": "Which role will you polish into your model entry?",
+     "c": "Write one full role entry and read it aloud once."
+    },
+    "de": {
+     "t": "Mini-Entwurf: eine komplette Stelle",
+     "g": "Schreibe einen vollständigen Eintrag mit geschliffenen, bezifferten Punkten.",
+     "p": [
+      "Verbinde eine klare Kopfzeile mit drei bis fünf starken Punkten.",
+      "Beginne mit deinem besten Erfolg und nenne mindestens eine Zahl.",
+      "Prüfe Verben, Zeitform, Daten und Länge, bevor du fertig sagst."
+     ],
+     "q": "Welche Stelle schleifst du zu deinem Musterbeispiel?",
+     "c": "Schreibe einen vollständigen Stelleneintrag und lies ihn einmal laut."
+    },
+    "es": {
+     "t": "Mini borrador: un puesto completo",
+     "g": "Escribe una entrada completa con viñetas pulidas y cuantificadas.",
+     "p": [
+      "Combina una cabecera clara con tres a cinco viñetas fuertes.",
+      "Empieza con tu mejor logro e incluye al menos una cifra.",
+      "Revisa verbos, tiempo, fechas y extensión antes de darlo por terminado."
+     ],
+     "q": "¿Qué puesto vas a pulir como entrada modelo?",
+     "c": "Escribe una entrada completa y léela en voz alta una vez."
+    },
+    "fr": {
+     "t": "Mini brouillon : un poste complet",
+     "g": "Rédige une entrée complète avec des puces soignées et chiffrées.",
+     "p": [
+      "Associe un en-tête clair à trois à cinq puces solides.",
+      "Commence par ta meilleure réalisation et inclus au moins un chiffre.",
+      "Vérifie verbes, temps, dates et longueur avant de dire que c'est fini."
+     ],
+     "q": "Quel poste vas-tu peaufiner comme modèle ?",
+     "c": "Rédige une entrée de poste complète et lis-la une fois à voix haute."
+    },
+    "it": {
+     "t": "Mini bozza: un ruolo completo",
+     "g": "Scrivi una voce completa con punti rifiniti e quantificati.",
+     "p": [
+      "Combina un'intestazione chiara con da tre a cinque punti forti.",
+      "Parti dal tuo risultato migliore e includi almeno un numero.",
+      "Controlla verbi, tempi, date e lunghezza prima di dirla finita."
+     ],
+     "q": "Quale ruolo rifinirai come voce modello?",
+     "c": "Scrivi una voce completa di un ruolo e leggila una volta ad alta voce."
+    },
+    "pt": {
+     "t": "Mini rascunho: uma função completa",
+     "g": "Escreve uma entrada completa com tópicos polidos e quantificados.",
+     "p": [
+      "Combina um cabeçalho claro com três a cinco tópicos fortes.",
+      "Começa pela tua melhor conquista e inclui pelo menos um número.",
+      "Verifica verbos, tempo, datas e tamanho antes de dares por concluído."
+     ],
+     "q": "Que função vais polir como entrada modelo?",
+     "c": "Escreve uma entrada completa de uma função e lê-a uma vez em voz alta."
+    },
+    "pt_BR": {
+     "t": "Mini rascunho: uma função completa",
+     "g": "Escreva uma entrada completa com tópicos polidos e quantificados.",
+     "p": [
+      "Combine um cabeçalho claro com três a cinco tópicos fortes.",
+      "Comece pela sua melhor conquista e inclua pelo menos um número.",
+      "Confira verbos, tempo, datas e tamanho antes de dar por concluído."
+     ],
+     "q": "Que função você vai polir como entrada modelo?",
+     "c": "Escreva uma entrada completa de uma função e leia uma vez em voz alta."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: experience section",
+     "g": "Revisit verbs, numbers and achievement bullets from the last month.",
+     "p": [
+      "Check every role: strong verb, clear result, a number where possible.",
+      "Look for consistency in dates, tense and bullet length.",
+      "Keep the strongest roles prominent and trim the weakest ones."
+     ],
+     "q": "What is the biggest improvement you made to your experience section?",
+     "c": "Do one full pass over your experience section and fix three things."
+    },
+    "de": {
+     "t": "Rückblick: Berufserfahrung",
+     "g": "Sieh Verben, Zahlen und Erfolgspunkte des letzten Monats noch einmal durch.",
+     "p": [
+      "Prüfe jede Stelle: starkes Verb, klares Ergebnis, wo möglich eine Zahl.",
+      "Achte auf Einheitlichkeit bei Daten, Zeitform und Punktlänge.",
+      "Lasse die stärksten Stellen hervortreten und kürze die schwächsten."
+     ],
+     "q": "Was ist deine größte Verbesserung im Erfahrungsabschnitt?",
+     "c": "Gehe deinen Erfahrungsabschnitt einmal ganz durch und behebe drei Dinge."
+    },
+    "es": {
+     "t": "Repaso: sección de experiencia",
+     "g": "Repasa verbos, cifras y viñetas de logros del último mes.",
+     "p": [
+      "Revisa cada puesto: verbo fuerte, resultado claro y una cifra si es posible.",
+      "Busca coherencia en fechas, tiempos verbales y longitud de viñetas.",
+      "Destaca los puestos más fuertes y recorta los más débiles."
+     ],
+     "q": "¿Cuál es la mayor mejora que hiciste en tu sección de experiencia?",
+     "c": "Haz una pasada completa por tu experiencia y corrige tres cosas."
+    },
+    "fr": {
+     "t": "Révision : rubrique expérience",
+     "g": "Revois verbes, chiffres et puces de réalisations du dernier mois.",
+     "p": [
+      "Vérifie chaque poste : verbe fort, résultat clair, chiffre si possible.",
+      "Cherche la cohérence des dates, des temps et de la longueur des puces.",
+      "Mets en avant les postes les plus solides et raccourcis les plus faibles."
+     ],
+     "q": "Quelle est la plus grande amélioration que tu as apportée à ta rubrique expérience ?",
+     "c": "Fais une relecture complète de ton expérience et corrige trois points."
+    },
+    "it": {
+     "t": "Ripasso: sezione esperienza",
+     "g": "Rivedi verbi, numeri e punti di risultato dell'ultimo mese.",
+     "p": [
+      "Controlla ogni ruolo: verbo forte, risultato chiaro, un numero se possibile.",
+      "Cerca coerenza in date, tempi verbali e lunghezza dei punti.",
+      "Metti in evidenza i ruoli più forti e accorcia i più deboli."
+     ],
+     "q": "Qual è il miglioramento più grande che hai fatto alla sezione esperienza?",
+     "c": "Fai un passaggio completo sull'esperienza e correggi tre cose."
+    },
+    "pt": {
+     "t": "Revisão: secção de experiência",
+     "g": "Revê verbos, números e tópicos de conquistas do último mês.",
+     "p": [
+      "Verifica cada função: verbo forte, resultado claro, um número se possível.",
+      "Procura coerência em datas, tempos verbais e tamanho dos tópicos.",
+      "Dá destaque às funções mais fortes e encurta as mais fracas."
+     ],
+     "q": "Qual foi a maior melhoria que fizeste na secção de experiência?",
+     "c": "Faz uma passagem completa pela experiência e corrige três coisas."
+    },
+    "pt_BR": {
+     "t": "Revisão: seção de experiência",
+     "g": "Reveja verbos, números e tópicos de conquistas do último mês.",
+     "p": [
+      "Confira cada função: verbo forte, resultado claro, um número se possível.",
+      "Procure coerência em datas, tempos verbais e tamanho dos tópicos.",
+      "Dê destaque às funções mais fortes e encurte as mais fracas."
+     ],
+     "q": "Qual foi a maior melhoria que você fez na seção de experiência?",
+     "c": "Faça uma passada completa pela experiência e corrija três coisas."
+    }
+   }
+  }
+ ]
+}

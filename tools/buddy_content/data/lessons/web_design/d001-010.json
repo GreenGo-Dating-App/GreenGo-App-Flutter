@@ -1,0 +1,835 @@
+{
+ "topic": "web_design",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to web design",
+     "g": "Meet web design: shaping how a website looks, feels and works.",
+     "p": [
+      "Web design combines looks, structure and ease of use in one craft.",
+      "A good site helps visitors find what they need quickly and happily.",
+      "You can start with free tools and just a browser."
+     ],
+     "q": "What kind of website would you love to build one day?",
+     "c": "Name one website you enjoy using and note why it feels good."
+    },
+    "de": {
+     "t": "Willkommen im Webdesign",
+     "g": "Lerne Webdesign kennen: Wie eine Website aussieht, wirkt und funktioniert.",
+     "p": [
+      "Webdesign verbindet Optik, Struktur und Bedienkomfort zu einem Handwerk.",
+      "Eine gute Seite hilft Besuchern, schnell und gern zu finden, was sie suchen.",
+      "Für den Start reichen kostenlose Werkzeuge und ein Browser."
+     ],
+     "q": "Welche Art von Website würdest du gern einmal bauen?",
+     "c": "Nenne eine Website, die du gern nutzt, und überlege, warum sie sich gut anfühlt."
+    },
+    "es": {
+     "t": "Bienvenida al diseño web",
+     "g": "Descubre el diseño web: cómo se ve, se siente y funciona un sitio.",
+     "p": [
+      "El diseño web une aspecto, estructura y facilidad de uso en un solo oficio.",
+      "Un buen sitio ayuda a encontrar lo que se busca de forma rápida y agradable.",
+      "Puedes empezar con herramientas gratuitas y solo un navegador."
+     ],
+     "q": "¿Qué tipo de sitio web te gustaría crear algún día?",
+     "c": "Elige un sitio que te guste usar y anota por qué se siente bien."
+    },
+    "fr": {
+     "t": "Bienvenue dans le web design",
+     "g": "Découvre le web design : l'allure, le ressenti et le fonctionnement d'un site.",
+     "p": [
+      "Le web design réunit apparence, structure et facilité d'usage dans un même métier.",
+      "Un bon site aide les visiteurs à trouver vite ce qu'ils cherchent, avec plaisir.",
+      "Tu peux commencer avec des outils gratuits et un simple navigateur."
+     ],
+     "q": "Quel type de site web aimerais-tu créer un jour ?",
+     "c": "Choisis un site que tu aimes utiliser et note pourquoi il est agréable."
+    },
+    "it": {
+     "t": "Benvenuto nel web design",
+     "g": "Scopri il web design: come un sito appare, si percepisce e funziona.",
+     "p": [
+      "Il web design unisce aspetto, struttura e facilità d'uso in un unico mestiere.",
+      "Un buon sito aiuta i visitatori a trovare in fretta e con piacere ciò che cercano.",
+      "Puoi iniziare con strumenti gratuiti e un semplice browser."
+     ],
+     "q": "Che tipo di sito web ti piacerebbe costruire un giorno?",
+     "c": "Scegli un sito che ti piace usare e annota perché ti trasmette una bella sensazione."
+    },
+    "pt": {
+     "t": "Bem-vindo ao web design",
+     "g": "Descobre o web design: o aspeto, a sensação e o funcionamento de um site.",
+     "p": [
+      "O web design junta aspeto, estrutura e facilidade de uso num só ofício.",
+      "Um bom site ajuda os visitantes a encontrar depressa e com gosto o que procuram.",
+      "Podes começar com ferramentas gratuitas e apenas um navegador."
+     ],
+     "q": "Que tipo de site gostavas de criar um dia?",
+     "c": "Escolhe um site que gostes de usar e anota porque é que é agradável."
+    },
+    "pt_BR": {
+     "t": "Boas-vindas ao web design",
+     "g": "Conheça o web design: o visual, a sensação e o funcionamento de um site.",
+     "p": [
+      "O web design une aparência, estrutura e facilidade de uso em um só ofício.",
+      "Um bom site ajuda os visitantes a achar rápido e com prazer o que procuram.",
+      "Você pode começar com ferramentas gratuitas e só um navegador."
+     ],
+     "q": "Que tipo de site você gostaria de criar um dia?",
+     "c": "Escolha um site que você gosta de usar e anote por que ele é agradável."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How the web works",
+     "g": "See how browsers and servers swap files to show you a page.",
+     "p": [
+      "Your browser sends a request to a server for a page.",
+      "The server replies with HTML, CSS, images and scripts.",
+      "The browser assembles those files into the page you see."
+     ],
+     "q": "Can you describe in your own words what happens when you open a site?",
+     "c": "Open any page, then reload it and watch how quickly it comes back."
+    },
+    "de": {
+     "t": "So funktioniert das Web",
+     "g": "Verstehe, wie Browser und Server Dateien austauschen, um eine Seite zu zeigen.",
+     "p": [
+      "Dein Browser schickt eine Anfrage für eine Seite an einen Server.",
+      "Der Server antwortet mit HTML, CSS, Bildern und Skripten.",
+      "Der Browser setzt diese Dateien zu der Seite zusammen, die du siehst."
+     ],
+     "q": "Kannst du mit eigenen Worten erklären, was beim Öffnen einer Seite passiert?",
+     "c": "Öffne eine beliebige Seite, lade sie neu und beobachte, wie schnell sie zurückkommt."
+    },
+    "es": {
+     "t": "Cómo funciona la web",
+     "g": "Mira cómo navegadores y servidores intercambian archivos para mostrarte una página.",
+     "p": [
+      "Tu navegador pide una página a un servidor.",
+      "El servidor responde con HTML, CSS, imágenes y scripts.",
+      "El navegador junta esos archivos en la página que ves."
+     ],
+     "q": "¿Puedes explicar con tus palabras qué ocurre al abrir un sitio?",
+     "c": "Abre cualquier página, recárgala y fíjate en lo rápido que vuelve."
+    },
+    "fr": {
+     "t": "Comment fonctionne le web",
+     "g": "Vois comment navigateurs et serveurs s'échangent des fichiers pour afficher une page.",
+     "p": [
+      "Ton navigateur demande une page à un serveur.",
+      "Le serveur répond avec du HTML, du CSS, des images et des scripts.",
+      "Le navigateur assemble ces fichiers en la page que tu vois."
+     ],
+     "q": "Peux-tu expliquer avec tes mots ce qui se passe quand tu ouvres un site ?",
+     "c": "Ouvre une page, recharge-la et observe à quelle vitesse elle revient."
+    },
+    "it": {
+     "t": "Come funziona il web",
+     "g": "Scopri come browser e server si scambiano file per mostrarti una pagina.",
+     "p": [
+      "Il tuo browser chiede una pagina a un server.",
+      "Il server risponde con HTML, CSS, immagini e script.",
+      "Il browser assembla questi file nella pagina che vedi."
+     ],
+     "q": "Sai spiegare con parole tue cosa succede quando apri un sito?",
+     "c": "Apri una pagina qualsiasi, ricaricala e osserva quanto in fretta ritorna."
+    },
+    "pt": {
+     "t": "Como funciona a web",
+     "g": "Vê como navegadores e servidores trocam ficheiros para te mostrar uma página.",
+     "p": [
+      "O teu navegador pede uma página a um servidor.",
+      "O servidor responde com HTML, CSS, imagens e scripts.",
+      "O navegador junta esses ficheiros na página que vês."
+     ],
+     "q": "Consegues explicar por palavras tuas o que acontece ao abrir um site?",
+     "c": "Abre uma página qualquer, recarrega-a e repara na rapidez com que volta."
+    },
+    "pt_BR": {
+     "t": "Como a web funciona",
+     "g": "Veja como navegadores e servidores trocam arquivos para mostrar uma página.",
+     "p": [
+      "Seu navegador pede uma página a um servidor.",
+      "O servidor responde com HTML, CSS, imagens e scripts.",
+      "O navegador junta esses arquivos na página que você vê."
+     ],
+     "q": "Você consegue explicar com suas palavras o que acontece ao abrir um site?",
+     "c": "Abra uma página qualquer, recarregue e perceba a rapidez com que ela volta."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Websites, web apps and pages",
+     "g": "Tell a page, a site and a web app apart.",
+     "p": [
+      "A page is one document with its own address.",
+      "A website is a set of linked pages, like a small library.",
+      "A web app lets people do tasks, such as editing photos or booking."
+     ],
+     "q": "Which web app do you use most, and what task does it help with?",
+     "c": "List three pages of a site you know and how they link together."
+    },
+    "de": {
+     "t": "Websites, Web-Apps und Seiten",
+     "g": "Unterscheide Seite, Website und Web-App voneinander.",
+     "p": [
+      "Eine Seite ist ein Dokument mit eigener Adresse.",
+      "Eine Website ist eine Sammlung verlinkter Seiten, wie eine kleine Bibliothek.",
+      "Eine Web-App erlaubt Aufgaben, etwa Fotos bearbeiten oder etwas buchen."
+     ],
+     "q": "Welche Web-App nutzt du am meisten und wobei hilft sie dir?",
+     "c": "Liste drei Seiten einer bekannten Website auf und wie sie verlinkt sind."
+    },
+    "es": {
+     "t": "Sitios, apps web y páginas",
+     "g": "Distingue entre una página, un sitio y una app web.",
+     "p": [
+      "Una página es un documento con su propia dirección.",
+      "Un sitio web es un conjunto de páginas enlazadas, como una pequeña biblioteca.",
+      "Una app web permite hacer tareas, como editar fotos o reservar."
+     ],
+     "q": "¿Qué app web usas más y con qué tarea te ayuda?",
+     "c": "Anota tres páginas de un sitio que conozcas y cómo se enlazan."
+    },
+    "fr": {
+     "t": "Sites, applis web et pages",
+     "g": "Distingue une page, un site et une appli web.",
+     "p": [
+      "Une page est un document avec sa propre adresse.",
+      "Un site web est un ensemble de pages reliées, comme une petite bibliothèque.",
+      "Une appli web permet d'accomplir des tâches, comme retoucher des photos ou réserver."
+     ],
+     "q": "Quelle appli web utilises-tu le plus, et pour quelle tâche ?",
+     "c": "Note trois pages d'un site que tu connais et comment elles sont reliées."
+    },
+    "it": {
+     "t": "Siti, app web e pagine",
+     "g": "Distingui una pagina, un sito e un'app web.",
+     "p": [
+      "Una pagina è un documento con un proprio indirizzo.",
+      "Un sito web è un insieme di pagine collegate, come una piccola biblioteca.",
+      "Un'app web permette di svolgere compiti, come ritoccare foto o prenotare."
+     ],
+     "q": "Quale app web usi di più e con quale compito ti aiuta?",
+     "c": "Elenca tre pagine di un sito che conosci e come sono collegate."
+    },
+    "pt": {
+     "t": "Sites, apps web e páginas",
+     "g": "Distingue uma página, um site e uma app web.",
+     "p": [
+      "Uma página é um documento com o seu próprio endereço.",
+      "Um site é um conjunto de páginas ligadas, como uma pequena biblioteca.",
+      "Uma app web permite fazer tarefas, como editar fotos ou reservar."
+     ],
+     "q": "Que app web usas mais e com que tarefa te ajuda?",
+     "c": "Anota três páginas de um site que conheças e como se ligam."
+    },
+    "pt_BR": {
+     "t": "Sites, apps web e páginas",
+     "g": "Diferencie uma página, um site e um app web.",
+     "p": [
+      "Uma página é um documento com endereço próprio.",
+      "Um site é um conjunto de páginas ligadas, como uma pequena biblioteca.",
+      "Um app web permite fazer tarefas, como editar fotos ou reservar."
+     ],
+     "q": "Qual app web você mais usa e com qual tarefa ele ajuda?",
+     "c": "Anote três páginas de um site que você conhece e como elas se ligam."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The roles in a web team",
+     "g": "Learn who does what in a team that builds websites.",
+     "p": [
+      "Designers plan the look, layout and flow of a site.",
+      "Developers turn designs into working code, and writers shape the words.",
+      "Testers and researchers check that real people can use it easily."
+     ],
+     "q": "Which role sounds most like you: designer, developer, writer or tester?",
+     "c": "Pick a site you like and guess which roles helped build it."
+    },
+    "de": {
+     "t": "Die Rollen im Webteam",
+     "g": "Lerne, wer in einem Webteam welche Aufgabe übernimmt.",
+     "p": [
+      "Designer planen Aussehen, Layout und Ablauf einer Seite.",
+      "Entwickler machen aus Entwürfen funktionierenden Code, Texter formen die Worte.",
+      "Tester und Forscher prüfen, ob echte Menschen die Seite leicht nutzen können."
+     ],
+     "q": "Welche Rolle passt am ehesten zu dir: Design, Entwicklung, Text oder Test?",
+     "c": "Wähle eine Seite, die dir gefällt, und rate, welche Rollen sie gebaut haben."
+    },
+    "es": {
+     "t": "Los roles en un equipo web",
+     "g": "Aprende quién hace qué en un equipo que crea sitios web.",
+     "p": [
+      "Diseñadores planifican el aspecto, la estructura y el recorrido del sitio.",
+      "Desarrolladores convierten diseños en código y redactores dan forma a las palabras.",
+      "Testers e investigadores comprueban que la gente real lo use con facilidad."
+     ],
+     "q": "¿Qué rol se parece más a ti: diseño, desarrollo, redacción o pruebas?",
+     "c": "Elige un sitio que te guste y adivina qué roles ayudaron a crearlo."
+    },
+    "fr": {
+     "t": "Les rôles d'une équipe web",
+     "g": "Découvre qui fait quoi dans une équipe qui crée des sites.",
+     "p": [
+      "Les designers conçoivent l'allure, la mise en page et le parcours du site.",
+      "Les développeurs transforment les maquettes en code, les rédacteurs soignent les mots.",
+      "Testeurs et chercheurs vérifient que de vraies personnes l'utilisent aisément."
+     ],
+     "q": "Quel rôle te ressemble le plus : design, développement, rédaction ou test ?",
+     "c": "Choisis un site que tu aimes et devine quels rôles l'ont construit."
+    },
+    "it": {
+     "t": "I ruoli in un team web",
+     "g": "Scopri chi fa cosa in un team che crea siti web.",
+     "p": [
+      "I designer progettano aspetto, layout e percorso del sito.",
+      "Gli sviluppatori trasformano i progetti in codice, i redattori curano le parole.",
+      "Tester e ricercatori verificano che persone reali lo usino con facilità."
+     ],
+     "q": "Quale ruolo ti somiglia di più: design, sviluppo, scrittura o test?",
+     "c": "Scegli un sito che ti piace e indovina quali ruoli lo hanno costruito."
+    },
+    "pt": {
+     "t": "Os papéis numa equipa web",
+     "g": "Aprende quem faz o quê numa equipa que cria sites.",
+     "p": [
+      "Designers planeiam o aspeto, a disposição e o percurso do site.",
+      "Programadores transformam desenhos em código e redatores dão forma às palavras.",
+      "Testadores e investigadores verificam se pessoas reais o usam com facilidade."
+     ],
+     "q": "Que papel se parece mais contigo: design, programação, escrita ou testes?",
+     "c": "Escolhe um site de que gostes e adivinha que papéis ajudaram a criá-lo."
+    },
+    "pt_BR": {
+     "t": "Os papéis em uma equipe web",
+     "g": "Aprenda quem faz o quê em uma equipe que cria sites.",
+     "p": [
+      "Designers planejam o visual, o layout e o fluxo do site.",
+      "Desenvolvedores transformam designs em código e redatores dão forma às palavras.",
+      "Testadores e pesquisadores verificam se pessoas reais usam com facilidade."
+     ],
+     "q": "Qual papel mais combina com você: design, desenvolvimento, redação ou testes?",
+     "c": "Escolha um site de que você gosta e adivinhe quais papéis ajudaram a criá-lo."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "HTML, CSS and JavaScript",
+     "g": "Meet the three languages behind every web page.",
+     "p": [
+      "HTML gives structure: headings, paragraphs, links and images.",
+      "CSS styles that structure with colour, fonts, spacing and layout.",
+      "JavaScript adds behaviour, like menus that open or forms that check input."
+     ],
+     "q": "Think of a house: which language is the walls, the paint and the lights?",
+     "c": "Visit a page and name one thing HTML, CSS and JavaScript each probably do."
+    },
+    "de": {
+     "t": "HTML, CSS und JavaScript",
+     "g": "Lerne die drei Sprachen hinter jeder Webseite kennen.",
+     "p": [
+      "HTML liefert die Struktur: Überschriften, Absätze, Links und Bilder.",
+      "CSS gestaltet diese Struktur mit Farben, Schriften, Abständen und Layout.",
+      "JavaScript bringt Verhalten, etwa Menüs, die sich öffnen, oder Formulare, die prüfen."
+     ],
+     "q": "Stell dir ein Haus vor: Welche Sprache sind Wände, Farbe und Licht?",
+     "c": "Besuche eine Seite und nenne je eine Aufgabe von HTML, CSS und JavaScript."
+    },
+    "es": {
+     "t": "HTML, CSS y JavaScript",
+     "g": "Conoce los tres lenguajes detrás de cada página web.",
+     "p": [
+      "HTML da la estructura: títulos, párrafos, enlaces e imágenes.",
+      "CSS da estilo a esa estructura con color, fuentes, espacios y diseño.",
+      "JavaScript añade comportamiento, como menús que se abren o formularios que validan."
+     ],
+     "q": "Piensa en una casa: ¿qué lenguaje son las paredes, la pintura y la luz?",
+     "c": "Visita una página y nombra algo que hacen probablemente HTML, CSS y JavaScript."
+    },
+    "fr": {
+     "t": "HTML, CSS et JavaScript",
+     "g": "Découvre les trois langages derrière chaque page web.",
+     "p": [
+      "Le HTML donne la structure : titres, paragraphes, liens et images.",
+      "Le CSS habille cette structure avec couleurs, polices, espaces et mise en page.",
+      "Le JavaScript ajoute du comportement, comme des menus qui s'ouvrent ou des formulaires qui vérifient."
+     ],
+     "q": "Imagine une maison : quel langage fait les murs, la peinture et la lumière ?",
+     "c": "Visite une page et cite une chose que font sans doute le HTML, le CSS et le JavaScript."
+    },
+    "it": {
+     "t": "HTML, CSS e JavaScript",
+     "g": "Conosci i tre linguaggi dietro ogni pagina web.",
+     "p": [
+      "L'HTML dà la struttura: titoli, paragrafi, link e immagini.",
+      "Il CSS dà stile alla struttura con colori, font, spazi e layout.",
+      "Il JavaScript aggiunge comportamento, come menu che si aprono o moduli che controllano."
+     ],
+     "q": "Pensa a una casa: quale linguaggio sono i muri, la vernice e la luce?",
+     "c": "Visita una pagina e indica una cosa che probabilmente fanno HTML, CSS e JavaScript."
+    },
+    "pt": {
+     "t": "HTML, CSS e JavaScript",
+     "g": "Conhece as três linguagens por trás de cada página web.",
+     "p": [
+      "O HTML dá a estrutura: títulos, parágrafos, ligações e imagens.",
+      "O CSS dá estilo a essa estrutura com cor, fontes, espaços e disposição.",
+      "O JavaScript acrescenta comportamento, como menus que abrem ou formulários que validam."
+     ],
+     "q": "Pensa numa casa: que linguagem são as paredes, a tinta e a luz?",
+     "c": "Visita uma página e indica algo que o HTML, o CSS e o JavaScript provavelmente fazem."
+    },
+    "pt_BR": {
+     "t": "HTML, CSS e JavaScript",
+     "g": "Conheça as três linguagens por trás de cada página web.",
+     "p": [
+      "O HTML dá a estrutura: títulos, parágrafos, links e imagens.",
+      "O CSS dá estilo a essa estrutura com cor, fontes, espaços e layout.",
+      "O JavaScript acrescenta comportamento, como menus que abrem ou formulários que validam."
+     ],
+     "q": "Pense numa casa: que linguagem são as paredes, a tinta e a luz?",
+     "c": "Visite uma página e indique algo que HTML, CSS e JavaScript provavelmente fazem."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your browser as a tool",
+     "g": "Use your browser like a designer, not just a reader.",
+     "p": [
+      "Zoom with Ctrl and plus or minus to see how a page copes with size changes.",
+      "Tabs let you compare designs side by side.",
+      "View source and developer tools are built into every major browser."
+     ],
+     "q": "Which browser do you use, and have you explored its menus?",
+     "c": "Zoom a favourite site to 200 percent and note what still works well."
+    },
+    "de": {
+     "t": "Dein Browser als Werkzeug",
+     "g": "Nutze deinen Browser wie ein Designer, nicht nur als Leser.",
+     "p": [
+      "Mit Strg und Plus oder Minus zoomst du und siehst, wie die Seite mit Größen umgeht.",
+      "Mit Tabs vergleichst du Designs nebeneinander.",
+      "Quelltext und Entwicklerwerkzeuge sind in jedem großen Browser eingebaut."
+     ],
+     "q": "Welchen Browser nutzt du und hast du seine Menüs schon erkundet?",
+     "c": "Zoome eine Lieblingsseite auf 200 Prozent und notiere, was noch gut funktioniert."
+    },
+    "es": {
+     "t": "Tu navegador como herramienta",
+     "g": "Usa el navegador como una diseñadora, no solo como lectora.",
+     "p": [
+      "Con Ctrl y más o menos haces zoom y ves cómo responde la página al tamaño.",
+      "Las pestañas permiten comparar diseños lado a lado.",
+      "Ver código fuente y herramientas de desarrollo vienen en todo navegador importante."
+     ],
+     "q": "¿Qué navegador usas y has explorado sus menús?",
+     "c": "Haz zoom al 200 por ciento en un sitio favorito y anota qué sigue funcionando bien."
+    },
+    "fr": {
+     "t": "Ton navigateur comme outil",
+     "g": "Utilise ton navigateur en designer, pas seulement en lecteur.",
+     "p": [
+      "Zoomer avec Ctrl et plus ou moins montre comment la page gère les tailles.",
+      "Les onglets permettent de comparer des designs côte à côte.",
+      "Le code source et les outils de développement sont intégrés aux grands navigateurs."
+     ],
+     "q": "Quel navigateur utilises-tu, et as-tu exploré ses menus ?",
+     "c": "Zoome un site préféré à 200 pour cent et note ce qui fonctionne encore bien."
+    },
+    "it": {
+     "t": "Il browser come strumento",
+     "g": "Usa il browser da designer, non solo da lettore.",
+     "p": [
+      "Con Ctrl e più o meno fai zoom e vedi come la pagina gestisce le dimensioni.",
+      "Le schede permettono di confrontare i design affiancati.",
+      "Codice sorgente e strumenti di sviluppo sono integrati nei principali browser."
+     ],
+     "q": "Quale browser usi e hai già esplorato i suoi menu?",
+     "c": "Ingrandisci un sito preferito al 200 per cento e annota cosa funziona ancora bene."
+    },
+    "pt": {
+     "t": "O navegador como ferramenta",
+     "g": "Usa o navegador como um designer, não só como leitor.",
+     "p": [
+      "Com Ctrl e mais ou menos fazes zoom e vês como a página lida com tamanhos.",
+      "Os separadores permitem comparar designs lado a lado.",
+      "O código-fonte e as ferramentas de programador vêm em todos os grandes navegadores."
+     ],
+     "q": "Que navegador usas e já exploraste os seus menus?",
+     "c": "Faz zoom a 200 por cento num site favorito e anota o que ainda funciona bem."
+    },
+    "pt_BR": {
+     "t": "Seu navegador como ferramenta",
+     "g": "Use o navegador como designer, não só como leitor.",
+     "p": [
+      "Com Ctrl e mais ou menos você dá zoom e vê como a página lida com tamanhos.",
+      "As abas permitem comparar designs lado a lado.",
+      "O código-fonte e as ferramentas de desenvolvedor vêm em todo navegador importante."
+     ],
+     "q": "Qual navegador você usa e já explorou os menus dele?",
+     "c": "Dê zoom de 200 por cento em um site favorito e anote o que ainda funciona bem."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Opening developer tools",
+     "g": "Inspect any page to see the HTML and CSS behind it.",
+     "p": [
+      "Press F12 or right-click an element and choose Inspect.",
+      "The Elements panel shows HTML; the Styles panel shows its CSS.",
+      "You can edit values live; nothing is saved, so it is safe to explore."
+     ],
+     "q": "What did you find when you inspected a heading on a page?",
+     "c": "Inspect a button, change its colour in Styles, then reload to reset."
+    },
+    "de": {
+     "t": "Entwicklerwerkzeuge öffnen",
+     "g": "Untersuche jede Seite und sieh das HTML und CSS dahinter.",
+     "p": [
+      "Drücke F12 oder klicke rechts auf ein Element und wähle Untersuchen.",
+      "Das Elements-Panel zeigt HTML, das Styles-Panel das zugehörige CSS.",
+      "Werte lassen sich live ändern; nichts wird gespeichert, also ist Ausprobieren sicher."
+     ],
+     "q": "Was hast du entdeckt, als du eine Überschrift untersucht hast?",
+     "c": "Untersuche einen Button, ändere seine Farbe in Styles und lade neu zum Zurücksetzen."
+    },
+    "es": {
+     "t": "Abrir las herramientas de desarrollo",
+     "g": "Inspecciona cualquier página para ver el HTML y el CSS que hay detrás.",
+     "p": [
+      "Pulsa F12 o haz clic derecho en un elemento y elige Inspeccionar.",
+      "El panel Elements muestra el HTML y el panel Styles su CSS.",
+      "Puedes editar valores en vivo; no se guarda nada, así que explorar es seguro."
+     ],
+     "q": "¿Qué descubriste al inspeccionar un título de una página?",
+     "c": "Inspecciona un botón, cambia su color en Styles y recarga para restaurar."
+    },
+    "fr": {
+     "t": "Ouvrir les outils de développement",
+     "g": "Inspecte n'importe quelle page pour voir le HTML et le CSS derrière.",
+     "p": [
+      "Appuie sur F12 ou fais un clic droit sur un élément et choisis Inspecter.",
+      "Le panneau Elements montre le HTML, le panneau Styles son CSS.",
+      "Tu peux modifier des valeurs en direct ; rien n'est enregistré, explorer est sans risque."
+     ],
+     "q": "Qu'as-tu découvert en inspectant un titre sur une page ?",
+     "c": "Inspecte un bouton, change sa couleur dans Styles puis recharge pour réinitialiser."
+    },
+    "it": {
+     "t": "Aprire gli strumenti di sviluppo",
+     "g": "Ispeziona qualsiasi pagina per vedere l'HTML e il CSS che ci sono dietro.",
+     "p": [
+      "Premi F12 o fai clic destro su un elemento e scegli Ispeziona.",
+      "Il pannello Elements mostra l'HTML, il pannello Styles il suo CSS.",
+      "Puoi modificare i valori dal vivo; nulla viene salvato, quindi esplorare è sicuro."
+     ],
+     "q": "Cosa hai scoperto ispezionando un titolo su una pagina?",
+     "c": "Ispeziona un pulsante, cambia il suo colore in Styles e ricarica per ripristinare."
+    },
+    "pt": {
+     "t": "Abrir as ferramentas de programador",
+     "g": "Inspeciona qualquer página para ver o HTML e o CSS por trás dela.",
+     "p": [
+      "Prime F12 ou clica com o botão direito num elemento e escolhe Inspecionar.",
+      "O painel Elements mostra o HTML e o painel Styles o respetivo CSS.",
+      "Podes editar valores em direto; nada fica guardado, por isso explorar é seguro."
+     ],
+     "q": "O que descobriste ao inspecionar um título numa página?",
+     "c": "Inspeciona um botão, muda a cor em Styles e recarrega para repor."
+    },
+    "pt_BR": {
+     "t": "Abrindo as ferramentas de desenvolvedor",
+     "g": "Inspecione qualquer página para ver o HTML e o CSS por trás dela.",
+     "p": [
+      "Aperte F12 ou clique com o botão direito num elemento e escolha Inspecionar.",
+      "O painel Elements mostra o HTML e o painel Styles mostra o CSS dele.",
+      "Você pode editar valores ao vivo; nada é salvo, então explorar é seguro."
+     ],
+     "q": "O que você descobriu ao inspecionar um título numa página?",
+     "c": "Inspecione um botão, mude a cor em Styles e recarregue para restaurar."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A code editor setup",
+     "g": "Set up a friendly editor so writing code feels pleasant.",
+     "p": [
+      "A code editor colours your code so mistakes and structure stand out.",
+      "Free editors like Visual Studio Code are popular with beginners.",
+      "A live preview extension refreshes your page each time you save."
+     ],
+     "q": "Which editor will you try, or are you using one already?",
+     "c": "Install an editor, create a file called test.html and save it."
+    },
+    "de": {
+     "t": "Einrichtung eines Code-Editors",
+     "g": "Richte einen freundlichen Editor ein, damit Programmieren Freude macht.",
+     "p": [
+      "Ein Code-Editor färbt Code ein, sodass Fehler und Struktur auffallen.",
+      "Kostenlose Editoren wie Visual Studio Code sind bei Einsteigern beliebt.",
+      "Eine Live-Vorschau lädt deine Seite bei jedem Speichern neu."
+     ],
+     "q": "Welchen Editor probierst du aus, oder nutzt du schon einen?",
+     "c": "Installiere einen Editor, lege eine Datei test.html an und speichere sie."
+    },
+    "es": {
+     "t": "Configurar un editor de código",
+     "g": "Prepara un editor amable para que escribir código sea agradable.",
+     "p": [
+      "Un editor colorea el código para que errores y estructura destaquen.",
+      "Editores gratuitos como Visual Studio Code gustan mucho a quienes empiezan.",
+      "Una vista previa en vivo recarga tu página cada vez que guardas."
+     ],
+     "q": "¿Qué editor vas a probar, o ya usas uno?",
+     "c": "Instala un editor, crea un archivo llamado test.html y guárdalo."
+    },
+    "fr": {
+     "t": "Installer un éditeur de code",
+     "g": "Mets en place un éditeur agréable pour que coder soit un plaisir.",
+     "p": [
+      "Un éditeur colore ton code pour faire ressortir erreurs et structure.",
+      "Des éditeurs gratuits comme Visual Studio Code plaisent aux débutants.",
+      "Un aperçu en direct recharge ta page à chaque enregistrement."
+     ],
+     "q": "Quel éditeur vas-tu essayer, ou en utilises-tu déjà un ?",
+     "c": "Installe un éditeur, crée un fichier test.html et enregistre-le."
+    },
+    "it": {
+     "t": "Configurare un editor di codice",
+     "g": "Prepara un editor piacevole perché scrivere codice sia un piacere.",
+     "p": [
+      "Un editor colora il codice così errori e struttura risaltano.",
+      "Editor gratuiti come Visual Studio Code piacciono ai principianti.",
+      "Un'anteprima dal vivo ricarica la pagina a ogni salvataggio."
+     ],
+     "q": "Quale editor proverai, o ne usi già uno?",
+     "c": "Installa un editor, crea un file chiamato test.html e salvalo."
+    },
+    "pt": {
+     "t": "Configurar um editor de código",
+     "g": "Prepara um editor amigável para que escrever código seja agradável.",
+     "p": [
+      "Um editor colore o código para que erros e estrutura se destaquem.",
+      "Editores gratuitos como o Visual Studio Code agradam a quem começa.",
+      "Uma pré-visualização em direto recarrega a página sempre que guardas."
+     ],
+     "q": "Que editor vais experimentar, ou já usas algum?",
+     "c": "Instala um editor, cria um ficheiro chamado test.html e guarda-o."
+    },
+    "pt_BR": {
+     "t": "Configurando um editor de código",
+     "g": "Prepare um editor amigável para que escrever código seja agradável.",
+     "p": [
+      "Um editor colore o código para que erros e estrutura se destaquem.",
+      "Editores gratuitos como o Visual Studio Code agradam a quem está começando.",
+      "Uma pré-visualização ao vivo recarrega a página sempre que você salva."
+     ],
+     "q": "Qual editor você vai experimentar, ou já usa algum?",
+     "c": "Instale um editor, crie um arquivo chamado test.html e salve."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Files, folders and paths",
+     "g": "Organise project files and link them with correct paths.",
+     "p": [
+      "Keep one folder per website, with subfolders like images and css.",
+      "A relative path such as images/cat.jpg points from the current file.",
+      "Use lowercase names without spaces, like about-us.html, to avoid trouble."
+     ],
+     "q": "How would you organise the folders for a small portfolio site?",
+     "c": "Create a folder with index.html and an images folder inside it."
+    },
+    "de": {
+     "t": "Dateien, Ordner und Pfade",
+     "g": "Ordne Projektdateien und verknüpfe sie mit korrekten Pfaden.",
+     "p": [
+      "Lege pro Website einen Ordner an, mit Unterordnern wie images und css.",
+      "Ein relativer Pfad wie images/cat.jpg zeigt von der aktuellen Datei aus.",
+      "Nutze Kleinbuchstaben ohne Leerzeichen, etwa about-us.html, das vermeidet Ärger."
+     ],
+     "q": "Wie würdest du die Ordner für eine kleine Portfolio-Seite ordnen?",
+     "c": "Lege einen Ordner mit index.html und einem Unterordner images an."
+    },
+    "es": {
+     "t": "Archivos, carpetas y rutas",
+     "g": "Organiza los archivos del proyecto y enlázalos con rutas correctas.",
+     "p": [
+      "Mantén una carpeta por sitio, con subcarpetas como images y css.",
+      "Una ruta relativa como images/cat.jpg parte del archivo actual.",
+      "Usa minúsculas sin espacios, como about-us.html, para evitar problemas."
+     ],
+     "q": "¿Cómo organizarías las carpetas de un pequeño sitio de portafolio?",
+     "c": "Crea una carpeta con index.html y una carpeta images dentro."
+    },
+    "fr": {
+     "t": "Fichiers, dossiers et chemins",
+     "g": "Organise les fichiers du projet et relie-les avec des chemins corrects.",
+     "p": [
+      "Garde un dossier par site, avec des sous-dossiers comme images et css.",
+      "Un chemin relatif comme images/cat.jpg part du fichier actuel.",
+      "Utilise des minuscules sans espaces, comme about-us.html, pour éviter les soucis."
+     ],
+     "q": "Comment organiserais-tu les dossiers d'un petit site portfolio ?",
+     "c": "Crée un dossier avec index.html et un dossier images à l'intérieur."
+    },
+    "it": {
+     "t": "File, cartelle e percorsi",
+     "g": "Organizza i file del progetto e collegali con percorsi corretti.",
+     "p": [
+      "Tieni una cartella per sito, con sottocartelle come images e css.",
+      "Un percorso relativo come images/cat.jpg parte dal file corrente.",
+      "Usa minuscole senza spazi, come about-us.html, per evitare problemi."
+     ],
+     "q": "Come organizzeresti le cartelle di un piccolo sito portfolio?",
+     "c": "Crea una cartella con index.html e una cartella images al suo interno."
+    },
+    "pt": {
+     "t": "Ficheiros, pastas e caminhos",
+     "g": "Organiza os ficheiros do projeto e liga-os com caminhos corretos.",
+     "p": [
+      "Mantém uma pasta por site, com subpastas como images e css.",
+      "Um caminho relativo como images/cat.jpg parte do ficheiro atual.",
+      "Usa minúsculas sem espaços, como about-us.html, para evitar problemas."
+     ],
+     "q": "Como organizarias as pastas de um pequeno site de portefólio?",
+     "c": "Cria uma pasta com index.html e uma pasta images lá dentro."
+    },
+    "pt_BR": {
+     "t": "Arquivos, pastas e caminhos",
+     "g": "Organize os arquivos do projeto e ligue-os com caminhos corretos.",
+     "p": [
+      "Mantenha uma pasta por site, com subpastas como images e css.",
+      "Um caminho relativo como images/cat.jpg parte do arquivo atual.",
+      "Use minúsculas sem espaços, como about-us.html, para evitar problemas."
+     ],
+     "q": "Como você organizaria as pastas de um pequeno site de portfólio?",
+     "c": "Crie uma pasta com index.html e uma pasta images dentro dela."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first HTML page",
+     "g": "Write a minimal page and open it in your browser.",
+     "p": [
+      "Start with the doctype line, then html, head and body elements.",
+      "Put the page title inside title in the head; it shows on the tab.",
+      "Visible content goes in body, such as a heading and a sentence."
+     ],
+     "q": "What would you like your very first page to say?",
+     "c": "Write a page with a title and a heading, save it and open it."
+    },
+    "de": {
+     "t": "Deine erste HTML-Seite",
+     "g": "Schreibe eine minimale Seite und öffne sie im Browser.",
+     "p": [
+      "Beginne mit der Doctype-Zeile, dann html, head und body.",
+      "Den Seitentitel setzt du in title im head; er erscheint im Tab.",
+      "Sichtbarer Inhalt kommt in den body, etwa eine Überschrift und ein Satz."
+     ],
+     "q": "Was soll deine allererste Seite sagen?",
+     "c": "Schreibe eine Seite mit Titel und Überschrift, speichere und öffne sie."
+    },
+    "es": {
+     "t": "Tu primera página HTML",
+     "g": "Escribe una página mínima y ábrela en el navegador.",
+     "p": [
+      "Empieza con la línea doctype y luego html, head y body.",
+      "El título va dentro de title en el head; se ve en la pestaña.",
+      "El contenido visible va en el body, como un título y una frase."
+     ],
+     "q": "¿Qué te gustaría que dijera tu primerísima página?",
+     "c": "Escribe una página con título y encabezado, guárdala y ábrela."
+    },
+    "fr": {
+     "t": "Ta première page HTML",
+     "g": "Écris une page minimale et ouvre-la dans ton navigateur.",
+     "p": [
+      "Commence par la ligne doctype, puis les éléments html, head et body.",
+      "Mets le titre dans title, dans le head ; il s'affiche sur l'onglet.",
+      "Le contenu visible va dans le body, comme un titre et une phrase."
+     ],
+     "q": "Que voudrais-tu que dise ta toute première page ?",
+     "c": "Écris une page avec un titre et un en-tête, enregistre-la et ouvre-la."
+    },
+    "it": {
+     "t": "La tua prima pagina HTML",
+     "g": "Scrivi una pagina minima e aprila nel browser.",
+     "p": [
+      "Inizia con la riga doctype, poi gli elementi html, head e body.",
+      "Il titolo va in title dentro head; compare nella scheda.",
+      "Il contenuto visibile va in body, come un titolo e una frase."
+     ],
+     "q": "Cosa vorresti che dicesse la tua primissima pagina?",
+     "c": "Scrivi una pagina con titolo e intestazione, salvala e aprila."
+    },
+    "pt": {
+     "t": "A tua primeira página HTML",
+     "g": "Escreve uma página mínima e abre-a no navegador.",
+     "p": [
+      "Começa com a linha doctype e depois html, head e body.",
+      "O título da página vai em title dentro do head; aparece no separador.",
+      "O conteúdo visível vai no body, como um título e uma frase."
+     ],
+     "q": "O que gostarias que a tua primeiríssima página dissesse?",
+     "c": "Escreve uma página com título e cabeçalho, guarda-a e abre-a."
+    },
+    "pt_BR": {
+     "t": "Sua primeira página HTML",
+     "g": "Escreva uma página mínima e abra no navegador.",
+     "p": [
+      "Comece com a linha doctype e depois html, head e body.",
+      "O título da página vai em title dentro do head; aparece na aba.",
+      "O conteúdo visível vai no body, como um título e uma frase."
+     ],
+     "q": "O que você gostaria que sua primeiríssima página dissesse?",
+     "c": "Escreva uma página com título e cabeçalho, salve e abra."
+    }
+   }
+  }
+ ]
+}

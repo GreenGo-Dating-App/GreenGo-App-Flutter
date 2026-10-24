@@ -1,14 +1,19 @@
 {
  "running": [
-  "lessons:barbecue:1-60",
-  "lessons:street_food:1-60",
-  "lessons:history:1-60",
-  "lessons:astronomy:1-60",
-  "lessons:philosophy:1-60",
-  "lessons:science:1-60",
-  "lessons:geography:1-60",
-  "lessons:mythology:1-60",
-  "lessons:economics_basics:1-60",
-  "lessons:nature_animals:1-60"
+  "lessons:gardening:1-60",
+  "lessons:pets:1-60",
+  "lessons:diy:1-60",
+  "lessons:home_organisation:1-60",
+  "lessons:fashion_basics:1-60",
+  "lessons:budgeting_basics:1-60",
+  "lessons:moving_abroad:1-60",
+  "lessons:parenting_tips:1-60",
+  "lessons:movies:1-60",
+  "lessons:books:1-60",
+  "lessons:anime:1-60",
+  "lessons:series:1-60",
+  "lessons:board_games:1-60",
+  "lessons:music_genres:1-60",
+  "lessons:podcasts:1-60"
  ]
 }

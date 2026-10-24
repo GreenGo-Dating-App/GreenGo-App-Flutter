@@ -1,0 +1,835 @@
+{
+ "topic": "pets",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why people love living with pets",
+     "g": "Discover what pets bring to daily life and what caring for one really means.",
+     "p": [
+      "Pets bring companionship, routine and plenty of everyday joy.",
+      "Caring means daily food, water, play, rest and attention.",
+      "Every animal has its own needs, so learning them is part of the fun."
+     ],
+     "q": "What pet do you share your life with, or would you love to?",
+     "c": "Today, notice one small moment of joy an animal brings you."
+    },
+    "de": {
+     "t": "Warum Menschen mit Tieren leben",
+     "g": "Entdecke, was Haustiere in den Alltag bringen und was Tierhaltung wirklich bedeutet.",
+     "p": [
+      "Haustiere schenken Gesellschaft, Struktur und viel Alltagsfreude.",
+      "Fürsorge heißt täglich Futter, Wasser, Spiel, Ruhe und Zuwendung.",
+      "Jedes Tier hat eigene Bedürfnisse, sie kennenzulernen macht Freude."
+     ],
+     "q": "Mit welchem Tier lebst du, oder mit welchem würdest du gern leben?",
+     "c": "Achte heute auf einen kleinen Freudenmoment mit einem Tier."
+    },
+    "es": {
+     "t": "Por qué nos encanta vivir con mascotas",
+     "g": "Descubre lo que aportan las mascotas y lo que implica realmente cuidar de una.",
+     "p": [
+      "Las mascotas dan compañía, rutina y mucha alegría diaria.",
+      "Cuidar significa comida, agua, juego, descanso y atención cada día.",
+      "Cada animal tiene sus propias necesidades, y conocerlas es parte de la gracia."
+     ],
+     "q": "¿Con qué mascota vives o te gustaría vivir?",
+     "c": "Hoy fíjate en un pequeño momento de alegría que te dé un animal."
+    },
+    "fr": {
+     "t": "Pourquoi on aime vivre avec des animaux",
+     "g": "Découvre ce qu'un animal apporte au quotidien et ce que signifie vraiment s'en occuper.",
+     "p": [
+      "Un animal apporte compagnie, routine et beaucoup de joie.",
+      "S'en occuper, c'est repas, eau, jeu, repos et attention chaque jour.",
+      "Chaque animal a ses besoins, et les découvrir fait partie du plaisir."
+     ],
+     "q": "Avec quel animal vis-tu, ou aimerais-tu vivre ?",
+     "c": "Aujourd'hui, repère un petit moment de joie offert par un animal."
+    },
+    "it": {
+     "t": "Perché amiamo vivere con gli animali",
+     "g": "Scopri cosa portano gli animali nella vita quotidiana e cosa significa prendersene cura.",
+     "p": [
+      "Gli animali portano compagnia, routine e tanta gioia quotidiana.",
+      "Prendersene cura vuol dire cibo, acqua, gioco, riposo e attenzioni ogni giorno.",
+      "Ogni animale ha esigenze proprie, e scoprirle è parte del divertimento."
+     ],
+     "q": "Con quale animale vivi, o vorresti vivere?",
+     "c": "Oggi nota un piccolo momento di gioia che ti regala un animale."
+    },
+    "pt": {
+     "t": "Porque adoramos viver com animais",
+     "g": "Descobre o que os animais trazem ao dia a dia e o que significa realmente cuidar de um.",
+     "p": [
+      "Os animais trazem companhia, rotina e muita alegria diária.",
+      "Cuidar é dar comida, água, brincadeira, descanso e atenção todos os dias.",
+      "Cada animal tem as suas necessidades, e conhecê-las faz parte da graça."
+     ],
+     "q": "Com que animal vives, ou gostarias de viver?",
+     "c": "Hoje repara num pequeno momento de alegria que um animal te dá."
+    },
+    "pt_BR": {
+     "t": "Por que amamos viver com pets",
+     "g": "Descubra o que os pets trazem ao dia a dia e o que significa de fato cuidar de um.",
+     "p": [
+      "Os pets trazem companhia, rotina e muita alegria diária.",
+      "Cuidar é dar comida, água, brincadeira, descanso e atenção todo dia.",
+      "Cada animal tem suas próprias necessidades, e conhecê-las faz parte da graça."
+     ],
+     "q": "Com qual pet você vive, ou gostaria de viver?",
+     "c": "Hoje repare em um pequeno momento de alegria que um pet te dá."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Matching a pet to your lifestyle",
+     "g": "Learn the honest questions to ask before choosing any animal.",
+     "p": [
+      "Think about your free time, space, budget and energy level.",
+      "Some pets need hours of attention daily, others need calm routine.",
+      "A good match makes life happier for both you and the animal."
+     ],
+     "q": "What does a typical day look like for you?",
+     "c": "Write down how many hours a day you could give a pet."
+    },
+    "de": {
+     "t": "Das passende Tier für deinen Alltag",
+     "g": "Lerne die ehrlichen Fragen kennen, die du vor der Tierwahl stellen solltest.",
+     "p": [
+      "Denk an Freizeit, Platz, Budget und deine Energie.",
+      "Manche Tiere brauchen täglich Stunden, andere eine ruhige Routine.",
+      "Eine gute Passung macht Mensch und Tier glücklicher."
+     ],
+     "q": "Wie sieht dein typischer Tag aus?",
+     "c": "Schreib auf, wie viele Stunden am Tag du einem Tier widmen könntest."
+    },
+    "es": {
+     "t": "Elegir la mascota que encaja contigo",
+     "g": "Aprende las preguntas sinceras que conviene hacerse antes de elegir un animal.",
+     "p": [
+      "Piensa en tu tiempo libre, espacio, presupuesto y energía.",
+      "Algunas mascotas piden horas de atención, otras una rutina tranquila.",
+      "Una buena elección hace más feliz a la persona y al animal."
+     ],
+     "q": "¿Cómo es un día normal para ti?",
+     "c": "Anota cuántas horas al día podrías dedicar a una mascota."
+    },
+    "fr": {
+     "t": "Choisir l'animal qui te correspond",
+     "g": "Apprends les questions honnêtes à se poser avant de choisir un animal.",
+     "p": [
+      "Pense à ton temps libre, ton espace, ton budget et ton énergie.",
+      "Certains animaux demandent des heures d'attention, d'autres une routine calme.",
+      "Un bon choix rend l'humain et l'animal plus heureux."
+     ],
+     "q": "À quoi ressemble une journée type pour toi ?",
+     "c": "Note combien d'heures par jour tu pourrais consacrer à un animal."
+    },
+    "it": {
+     "t": "Scegliere l'animale adatto al tuo stile di vita",
+     "g": "Impara le domande sincere da farti prima di scegliere un animale.",
+     "p": [
+      "Pensa al tempo libero, allo spazio, al budget e alla tua energia.",
+      "Alcuni animali chiedono ore di attenzioni, altri una routine tranquilla.",
+      "Una buona scelta rende più felici sia te sia l'animale."
+     ],
+     "q": "Com'è una tua giornata tipo?",
+     "c": "Scrivi quante ore al giorno potresti dedicare a un animale."
+    },
+    "pt": {
+     "t": "Escolher o animal certo para ti",
+     "g": "Aprende as perguntas honestas a fazer antes de escolher um animal.",
+     "p": [
+      "Pensa no tempo livre, espaço, orçamento e energia.",
+      "Alguns animais pedem horas de atenção, outros uma rotina calma.",
+      "Uma boa escolha deixa pessoa e animal mais felizes."
+     ],
+     "q": "Como é um dia normal para ti?",
+     "c": "Anota quantas horas por dia poderias dedicar a um animal."
+    },
+    "pt_BR": {
+     "t": "Escolher o pet certo para você",
+     "g": "Aprenda as perguntas honestas a fazer antes de escolher um animal.",
+     "p": [
+      "Pense no tempo livre, espaço, orçamento e energia.",
+      "Alguns pets pedem horas de atenção, outros uma rotina tranquila.",
+      "Uma boa escolha deixa pessoa e pet mais felizes."
+     ],
+     "q": "Como é um dia normal para você?",
+     "c": "Anote quantas horas por dia você poderia dedicar a um pet."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dogs, cats or something smaller?",
+     "g": "Get a friendly overview of common pets and their very different daily needs.",
+     "p": [
+      "Dogs need walks, training and company; cats value play and independence.",
+      "Small pets like rabbits, hamsters or birds have special housing and diet needs.",
+      "Research each species before deciding, ideally with a vet or shelter."
+     ],
+     "q": "Which kind of animal fits your life best, and why?",
+     "c": "Pick two animals and list one daily need of each."
+    },
+    "de": {
+     "t": "Hund, Katze oder etwas Kleineres?",
+     "g": "Verschaffe dir einen freundlichen Überblick über häufige Haustiere und ihre Bedürfnisse.",
+     "p": [
+      "Hunde brauchen Spaziergänge, Training und Nähe; Katzen mögen Spiel und Eigenständigkeit.",
+      "Kleintiere wie Kaninchen, Hamster oder Vögel brauchen besondere Haltung und Futter.",
+      "Informiere dich über jede Art, am besten mit Tierarzt oder Tierheim."
+     ],
+     "q": "Welche Tierart passt am besten zu dir und warum?",
+     "c": "Wähle zwei Tiere und notiere je ein tägliches Bedürfnis."
+    },
+    "es": {
+     "t": "¿Perro, gato o algo más pequeño?",
+     "g": "Conoce un resumen amable de las mascotas comunes y sus necesidades tan distintas.",
+     "p": [
+      "Los perros necesitan paseos, entrenamiento y compañía; los gatos, juego e independencia.",
+      "Conejos, hámsters o aves tienen alojamiento y dieta especiales.",
+      "Infórmate sobre cada especie antes de decidir, mejor con un veterinario o un refugio."
+     ],
+     "q": "¿Qué tipo de animal encaja mejor con tu vida y por qué?",
+     "c": "Elige dos animales y anota una necesidad diaria de cada uno."
+    },
+    "fr": {
+     "t": "Chien, chat ou plus petit ?",
+     "g": "Découvre un aperçu des animaux courants et de leurs besoins très différents.",
+     "p": [
+      "Les chiens ont besoin de balades, d'éducation et de présence; les chats, de jeu et d'autonomie.",
+      "Lapins, hamsters ou oiseaux ont un logement et une alimentation spécifiques.",
+      "Renseigne-toi sur chaque espèce avant de décider, idéalement avec un vétérinaire ou un refuge."
+     ],
+     "q": "Quel type d'animal convient le mieux à ta vie, et pourquoi ?",
+     "c": "Choisis deux animaux et note un besoin quotidien de chacun."
+    },
+    "it": {
+     "t": "Cane, gatto o qualcosa di più piccolo?",
+     "g": "Scopri una panoramica amichevole degli animali comuni e delle loro esigenze diverse.",
+     "p": [
+      "I cani vogliono passeggiate, addestramento e compagnia; i gatti gioco e indipendenza.",
+      "Conigli, criceti o uccelli hanno esigenze particolari di alloggio e dieta.",
+      "Informati su ogni specie prima di decidere, meglio con un veterinario o un rifugio."
+     ],
+     "q": "Quale tipo di animale si adatta meglio alla tua vita, e perché?",
+     "c": "Scegli due animali e annota un bisogno quotidiano di ciascuno."
+    },
+    "pt": {
+     "t": "Cão, gato ou algo mais pequeno?",
+     "g": "Conhece uma visão amigável dos animais comuns e das suas necessidades tão diferentes.",
+     "p": [
+      "Os cães precisam de passeios, treino e companhia; os gatos, de brincadeira e independência.",
+      "Coelhos, hamsters ou aves têm alojamento e alimentação especiais.",
+      "Informa-te sobre cada espécie antes de decidir, de preferência com um veterinário ou abrigo."
+     ],
+     "q": "Que tipo de animal combina melhor com a tua vida e porquê?",
+     "c": "Escolhe dois animais e anota uma necessidade diária de cada um."
+    },
+    "pt_BR": {
+     "t": "Cachorro, gato ou algo menor?",
+     "g": "Conheça uma visão amigável dos pets comuns e das suas necessidades tão diferentes.",
+     "p": [
+      "Cães precisam de passeios, treino e companhia; gatos, de brincadeira e independência.",
+      "Coelhos, hamsters ou aves têm moradia e alimentação especiais.",
+      "Pesquise cada espécie antes de decidir, de preferência com um veterinário ou abrigo."
+     ],
+     "q": "Que tipo de animal combina mais com a sua vida e por quê?",
+     "c": "Escolha dois animais e anote uma necessidade diária de cada um."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Adopting from a shelter or rescue",
+     "g": "See how adoption works and why so many wonderful adult animals wait for homes.",
+     "p": [
+      "Shelters ask about your home and routine to find the right match.",
+      "Adult animals often have known personalities and are already settled.",
+      "Adoption gives an animal a second chance and often includes a first health check."
+     ],
+     "q": "Would you consider adopting? What would you look for?",
+     "c": "Look up a local shelter and read about two animals waiting."
+    },
+    "de": {
+     "t": "Adoption aus Tierheim oder Auffangstation",
+     "g": "Erfahre, wie Adoption abläuft und warum so viele tolle erwachsene Tiere ein Zuhause suchen.",
+     "p": [
+      "Tierheime fragen nach Zuhause und Alltag, um die passende Wahl zu finden.",
+      "Erwachsene Tiere haben oft einen bekannten Charakter und sind schon eingewöhnt.",
+      "Eine Adoption gibt einem Tier eine zweite Chance, oft mit erstem Gesundheitscheck."
+     ],
+     "q": "Würdest du ein Tier adoptieren? Worauf würdest du achten?",
+     "c": "Such ein Tierheim in deiner Nähe und lies über zwei wartende Tiere."
+    },
+    "es": {
+     "t": "Adoptar en un refugio o protectora",
+     "g": "Mira cómo funciona la adopción y por qué tantos adultos maravillosos esperan un hogar.",
+     "p": [
+      "Los refugios preguntan por tu casa y rutina para encontrar la pareja ideal.",
+      "Los adultos suelen tener un carácter conocido y ya están asentados.",
+      "Adoptar da una segunda oportunidad y a menudo incluye una primera revisión veterinaria."
+     ],
+     "q": "¿Te plantearías adoptar? ¿Qué buscarías?",
+     "c": "Busca un refugio local y lee sobre dos animales que esperan."
+    },
+    "fr": {
+     "t": "Adopter dans un refuge",
+     "g": "Vois comment fonctionne l'adoption et pourquoi tant d'adultes merveilleux attendent un foyer.",
+     "p": [
+      "Les refuges s'informent sur ton foyer et ton rythme pour trouver le bon duo.",
+      "Les adultes ont souvent un caractère connu et sont déjà posés.",
+      "L'adoption offre une seconde chance et inclut souvent un premier bilan de santé."
+     ],
+     "q": "Envisagerais-tu d'adopter ? Que chercherais-tu ?",
+     "c": "Cherche un refuge près de chez toi et lis la fiche de deux animaux."
+    },
+    "it": {
+     "t": "Adottare da un rifugio",
+     "g": "Scopri come funziona l'adozione e perché tanti adulti meravigliosi aspettano una casa.",
+     "p": [
+      "I rifugi chiedono di casa e routine per trovare l'abbinamento giusto.",
+      "Gli adulti hanno spesso un carattere noto e sono già tranquilli.",
+      "Adottare dà una seconda possibilità e spesso include un primo controllo di salute."
+     ],
+     "q": "Penseresti di adottare? Cosa cercheresti?",
+     "c": "Cerca un rifugio vicino a te e leggi di due animali in attesa."
+    },
+    "pt": {
+     "t": "Adotar num abrigo",
+     "g": "Vê como funciona a adoção e porque tantos adultos maravilhosos esperam um lar.",
+     "p": [
+      "Os abrigos perguntam pela tua casa e rotina para encontrar a combinação certa.",
+      "Os adultos costumam ter personalidade conhecida e já estão assentes.",
+      "Adotar dá uma segunda oportunidade e muitas vezes inclui um primeiro exame de saúde."
+     ],
+     "q": "Pensarias em adotar? O que procurarias?",
+     "c": "Procura um abrigo perto de ti e lê sobre dois animais à espera."
+    },
+    "pt_BR": {
+     "t": "Adotar em um abrigo",
+     "g": "Veja como funciona a adoção e por que tantos adultos maravilhosos esperam um lar.",
+     "p": [
+      "Os abrigos perguntam sobre sua casa e rotina para achar a combinação certa.",
+      "Adultos costumam ter personalidade conhecida e já estão tranquilos.",
+      "Adotar dá uma segunda chance e muitas vezes inclui uma primeira avaliação de saúde."
+     ],
+     "q": "Você pensaria em adotar? O que procuraria?",
+     "c": "Procure um abrigo perto de você e leia sobre dois animais esperando."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finding a responsible breeder",
+     "g": "Learn the signs of a caring breeder if you choose to buy a pet.",
+     "p": [
+      "A good breeder shows health records and lets you meet the parents.",
+      "They ask you many questions and welcome yours in return.",
+      "Be wary of anyone who rushes you or hides where animals live."
+     ],
+     "q": "What questions would you ask a breeder?",
+     "c": "Write three questions you would ask before choosing a breeder."
+    },
+    "de": {
+     "t": "Einen verantwortungsvollen Züchter finden",
+     "g": "Lerne die Zeichen eines fürsorglichen Züchters kennen, falls du ein Tier kaufst.",
+     "p": [
+      "Gute Züchter zeigen Gesundheitsnachweise und lassen dich die Eltern treffen.",
+      "Sie stellen dir viele Fragen und freuen sich über deine.",
+      "Sei vorsichtig bei Druck oder wenn die Tierhaltung versteckt wird."
+     ],
+     "q": "Welche Fragen würdest du einem Züchter stellen?",
+     "c": "Schreib drei Fragen auf, die du vor der Wahl eines Züchters stellen würdest."
+    },
+    "es": {
+     "t": "Encontrar un criador responsable",
+     "g": "Aprende las señales de un criador cuidadoso si decides comprar una mascota.",
+     "p": [
+      "Un buen criador enseña los registros de salud y te deja conocer a los padres.",
+      "Te hace muchas preguntas y acoge las tuyas.",
+      "Desconfía de quien te apura o esconde dónde viven los animales."
+     ],
+     "q": "¿Qué preguntas le harías a un criador?",
+     "c": "Escribe tres preguntas que harías antes de elegir un criador."
+    },
+    "fr": {
+     "t": "Trouver un éleveur responsable",
+     "g": "Apprends les signes d'un éleveur attentionné si tu choisis d'acheter un animal.",
+     "p": [
+      "Un bon éleveur montre les carnets de santé et te laisse rencontrer les parents.",
+      "Il te pose beaucoup de questions et accueille les tiennes.",
+      "Méfie-toi de qui te presse ou cache où vivent les animaux."
+     ],
+     "q": "Quelles questions poserais-tu à un éleveur ?",
+     "c": "Écris trois questions à poser avant de choisir un éleveur."
+    },
+    "it": {
+     "t": "Trovare un allevatore responsabile",
+     "g": "Impara i segni di un allevatore attento se scegli di acquistare un animale.",
+     "p": [
+      "Un buon allevatore mostra i documenti sanitari e ti fa conoscere i genitori.",
+      "Ti fa molte domande e accoglie le tue.",
+      "Diffida di chi ha fretta o nasconde dove vivono gli animali."
+     ],
+     "q": "Quali domande faresti a un allevatore?",
+     "c": "Scrivi tre domande da fare prima di scegliere un allevatore."
+    },
+    "pt": {
+     "t": "Encontrar um criador responsável",
+     "g": "Aprende os sinais de um criador cuidadoso se optares por comprar um animal.",
+     "p": [
+      "Um bom criador mostra os registos de saúde e deixa-te conhecer os pais.",
+      "Faz-te muitas perguntas e recebe bem as tuas.",
+      "Desconfia de quem te apressa ou esconde onde vivem os animais."
+     ],
+     "q": "Que perguntas farias a um criador?",
+     "c": "Escreve três perguntas a fazer antes de escolher um criador."
+    },
+    "pt_BR": {
+     "t": "Encontrar um criador responsável",
+     "g": "Aprenda os sinais de um criador cuidadoso se você optar por comprar um animal.",
+     "p": [
+      "Um bom criador mostra os registros de saúde e deixa você conhecer os pais.",
+      "Ele faz muitas perguntas e recebe bem as suas.",
+      "Desconfie de quem apressa você ou esconde onde os animais vivem."
+     ],
+     "q": "Que perguntas você faria a um criador?",
+     "c": "Escreva três perguntas para fazer antes de escolher um criador."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pet-proofing your home",
+     "g": "Make each room safe before a new pet arrives.",
+     "p": [
+      "Tidy cables, small objects and anything chewable out of reach.",
+      "Some common houseplants are harmful, so check each one for pet safety.",
+      "Secure windows, balconies and bins, and keep medicines in closed cupboards."
+     ],
+     "q": "Which room in your home would need the most pet-proofing?",
+     "c": "Walk through one room at pet height and fix one hazard."
+    },
+    "de": {
+     "t": "Dein Zuhause tiersicher machen",
+     "g": "Mach jeden Raum sicher, bevor ein neues Tier einzieht.",
+     "p": [
+      "Räum Kabel, Kleinteile und Anknabberbares außer Reichweite.",
+      "Manche Zimmerpflanzen sind schädlich, prüfe jede auf Tiersicherheit.",
+      "Sichere Fenster, Balkone und Mülleimer, Medikamente gehören in geschlossene Schränke."
+     ],
+     "q": "Welcher Raum bräuchte bei dir die meiste Absicherung?",
+     "c": "Geh einen Raum in Tierhöhe ab und beseitige eine Gefahr."
+    },
+    "es": {
+     "t": "Preparar tu casa para una mascota",
+     "g": "Haz cada habitación segura antes de que llegue una mascota.",
+     "p": [
+      "Guarda cables, objetos pequeños y todo lo masticable fuera de alcance.",
+      "Algunas plantas comunes son dañinas, comprueba cada una.",
+      "Asegura ventanas, balcones y cubos, y guarda medicinas en armarios cerrados."
+     ],
+     "q": "¿Qué habitación de tu casa necesitaría más protección?",
+     "c": "Recorre una habitación a la altura de la mascota y arregla un peligro."
+    },
+    "fr": {
+     "t": "Sécuriser ta maison pour un animal",
+     "g": "Rends chaque pièce sûre avant l'arrivée d'un animal.",
+     "p": [
+      "Range câbles, petits objets et tout ce qui se mâchouille hors de portée.",
+      "Certaines plantes d'intérieur sont nocives, vérifie chacune.",
+      "Sécurise fenêtres, balcons et poubelles, et garde les médicaments dans des placards fermés."
+     ],
+     "q": "Quelle pièce de ta maison demanderait le plus de sécurisation ?",
+     "c": "Parcours une pièce à hauteur d'animal et corrige un danger."
+    },
+    "it": {
+     "t": "Rendere la casa sicura per un animale",
+     "g": "Rendi ogni stanza sicura prima dell'arrivo di un nuovo animale.",
+     "p": [
+      "Metti fuori portata cavi, oggetti piccoli e tutto ciò che si può rosicchiare.",
+      "Alcune piante da appartamento sono dannose, controlla ciascuna.",
+      "Metti in sicurezza finestre, balconi e pattumiere, e tieni i medicinali in armadi chiusi."
+     ],
+     "q": "Quale stanza di casa tua avrebbe più bisogno di messa in sicurezza?",
+     "c": "Percorri una stanza all'altezza dell'animale e risolvi un pericolo."
+    },
+    "pt": {
+     "t": "Tornar a casa segura para um animal",
+     "g": "Torna cada divisão segura antes de chegar um novo animal.",
+     "p": [
+      "Guarda cabos, objetos pequenos e tudo o que se rói fora do alcance.",
+      "Algumas plantas de interior são nocivas, verifica cada uma.",
+      "Protege janelas, varandas e caixotes, e guarda medicamentos em armários fechados."
+     ],
+     "q": "Que divisão da tua casa precisaria de mais proteção?",
+     "c": "Percorre uma divisão à altura do animal e resolve um perigo."
+    },
+    "pt_BR": {
+     "t": "Deixar a casa segura para um pet",
+     "g": "Deixe cada cômodo seguro antes de um novo pet chegar.",
+     "p": [
+      "Guarde cabos, objetos pequenos e tudo que dá para roer fora do alcance.",
+      "Algumas plantas de casa são nocivas, confira cada uma.",
+      "Proteja janelas, sacadas e lixeiras, e guarde remédios em armários fechados."
+     ],
+     "q": "Qual cômodo da sua casa precisaria de mais proteção?",
+     "c": "Percorra um cômodo na altura do pet e resolva um perigo."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The first-day shopping list",
+     "g": "Gather the essentials you need for day one.",
+     "p": [
+      "Basics include a bed, bowls, suitable food, a carrier and an ID tag.",
+      "Add a few safe toys and a brush suited to the coat.",
+      "Start simple; you can add extras once you know your pet's tastes."
+     ],
+     "q": "What would be the first thing on your list?",
+     "c": "Write a day-one shopping list for the pet you imagine."
+    },
+    "de": {
+     "t": "Die Einkaufsliste für Tag eins",
+     "g": "Stell die wichtigsten Dinge für den ersten Tag zusammen.",
+     "p": [
+      "Grundausstattung: Bett, Näpfe, passendes Futter, Transportbox und Adressmarke.",
+      "Dazu ein paar sichere Spielzeuge und eine Bürste fürs Fell.",
+      "Fang einfach an, Extras kommen, wenn du den Geschmack kennst."
+     ],
+     "q": "Was stünde zuerst auf deiner Liste?",
+     "c": "Schreib eine Einkaufsliste für Tag eins für dein Wunschtier."
+    },
+    "es": {
+     "t": "La lista de compras del primer día",
+     "g": "Reúne lo esencial para el primer día.",
+     "p": [
+      "Lo básico: cama, cuencos, comida adecuada, transportín y chapa de identificación.",
+      "Añade unos juguetes seguros y un cepillo para su pelo.",
+      "Empieza simple; podrás añadir extras cuando conozcas sus gustos."
+     ],
+     "q": "¿Qué sería lo primero en tu lista?",
+     "c": "Escribe una lista de compras del primer día para la mascota que imaginas."
+    },
+    "fr": {
+     "t": "La liste de courses du premier jour",
+     "g": "Rassemble l'essentiel pour le premier jour.",
+     "p": [
+      "L'essentiel : panier, gamelles, nourriture adaptée, caisse de transport et médaille.",
+      "Ajoute quelques jouets sûrs et une brosse adaptée au poil.",
+      "Commence simplement; les extras viendront quand tu connaîtras ses goûts."
+     ],
+     "q": "Quel serait le premier article de ta liste ?",
+     "c": "Écris une liste du premier jour pour l'animal que tu imagines."
+    },
+    "it": {
+     "t": "La lista della spesa del primo giorno",
+     "g": "Raccogli l'essenziale per il primo giorno.",
+     "p": [
+      "Le basi: cuccia, ciotole, cibo adatto, trasportino e medaglietta.",
+      "Aggiungi qualche gioco sicuro e una spazzola adatta al pelo.",
+      "Parti semplice; gli extra arriveranno quando conoscerai i suoi gusti."
+     ],
+     "q": "Cosa metteresti per primo nella lista?",
+     "c": "Scrivi una lista del primo giorno per l'animale che immagini."
+    },
+    "pt": {
+     "t": "A lista de compras do primeiro dia",
+     "g": "Reúne o essencial para o primeiro dia.",
+     "p": [
+      "O básico: cama, taças, comida adequada, caixa de transporte e medalha.",
+      "Acrescenta alguns brinquedos seguros e uma escova para o pelo.",
+      "Começa simples; os extras vêm quando conheceres os gostos dele."
+     ],
+     "q": "Qual seria o primeiro item da tua lista?",
+     "c": "Escreve uma lista do primeiro dia para o animal que imaginas."
+    },
+    "pt_BR": {
+     "t": "A lista de compras do primeiro dia",
+     "g": "Reúna o essencial para o primeiro dia.",
+     "p": [
+      "O básico: caminha, potes, comida adequada, caixa de transporte e plaquinha.",
+      "Acrescente alguns brinquedos seguros e uma escova para o pelo.",
+      "Comece simples; os extras vêm quando você conhecer os gostos dele."
+     ],
+     "q": "Qual seria o primeiro item da sua lista?",
+     "c": "Escreva uma lista do primeiro dia para o pet que você imagina."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bringing your new pet home",
+     "g": "Plan a calm arrival that helps your pet feel safe.",
+     "p": [
+      "Start with one quiet room so the new surroundings are not overwhelming.",
+      "Let your pet explore at its own pace without forcing contact.",
+      "Keep the first hours calm, with few visitors and soft voices."
+     ],
+     "q": "How would you make the first hour peaceful?",
+     "c": "Set up a quiet corner with a bed and water, ready for arrival."
+    },
+    "de": {
+     "t": "Dein neues Tier kommt nach Hause",
+     "g": "Plane eine ruhige Ankunft, bei der sich dein Tier sicher fühlt.",
+     "p": [
+      "Beginne mit einem ruhigen Raum, damit die Umgebung nicht überfordert.",
+      "Lass dein Tier in eigenem Tempo erkunden, ohne Kontakt zu erzwingen.",
+      "Halte die ersten Stunden ruhig, mit wenig Besuch und leisen Stimmen."
+     ],
+     "q": "Wie würdest du die erste Stunde friedlich gestalten?",
+     "c": "Richte eine ruhige Ecke mit Bett und Wasser für die Ankunft ein."
+    },
+    "es": {
+     "t": "Llevar a casa a tu nueva mascota",
+     "g": "Planea una llegada tranquila que le haga sentir seguro.",
+     "p": [
+      "Empieza con una habitación tranquila para no abrumarle con el entorno nuevo.",
+      "Déjale explorar a su ritmo sin forzar el contacto.",
+      "Mantén las primeras horas calmadas, con pocas visitas y voces suaves."
+     ],
+     "q": "¿Cómo harías que la primera hora fuera tranquila?",
+     "c": "Prepara un rincón tranquilo con cama y agua para la llegada."
+    },
+    "fr": {
+     "t": "Ramener ton nouvel animal à la maison",
+     "g": "Prévois une arrivée calme pour qu'il se sente en sécurité.",
+     "p": [
+      "Commence par une pièce calme pour ne pas l'accabler de nouveautés.",
+      "Laisse-le explorer à son rythme sans forcer le contact.",
+      "Garde les premières heures calmes, avec peu de visites et des voix douces."
+     ],
+     "q": "Comment rendrais-tu la première heure paisible ?",
+     "c": "Installe un coin calme avec panier et eau pour son arrivée."
+    },
+    "it": {
+     "t": "Portare a casa il tuo nuovo animale",
+     "g": "Pianifica un arrivo tranquillo che lo faccia sentire al sicuro.",
+     "p": [
+      "Parti da una stanza tranquilla per non sommergerlo di novità.",
+      "Lascialo esplorare coi suoi tempi, senza forzare il contatto.",
+      "Mantieni calme le prime ore, con poche visite e voci dolci."
+     ],
+     "q": "Come renderesti serena la prima ora?",
+     "c": "Prepara un angolo tranquillo con cuccia e acqua per l'arrivo."
+    },
+    "pt": {
+     "t": "Levar o teu novo animal para casa",
+     "g": "Planeia uma chegada calma que o faça sentir-se seguro.",
+     "p": [
+      "Começa com uma divisão sossegada para não o sobrecarregar com novidades.",
+      "Deixa-o explorar ao seu ritmo, sem forçar o contacto.",
+      "Mantém as primeiras horas calmas, com poucas visitas e vozes suaves."
+     ],
+     "q": "Como tornarias a primeira hora tranquila?",
+     "c": "Prepara um canto sossegado com cama e água para a chegada."
+    },
+    "pt_BR": {
+     "t": "Levar seu novo pet para casa",
+     "g": "Planeje uma chegada calma que o faça se sentir seguro.",
+     "p": [
+      "Comece com um cômodo sossegado para não sobrecarregá-lo de novidades.",
+      "Deixe-o explorar no ritmo dele, sem forçar o contato.",
+      "Mantenha as primeiras horas calmas, com poucas visitas e vozes suaves."
+     ],
+     "q": "Como você deixaria a primeira hora tranquila?",
+     "c": "Prepare um cantinho sossegado com caminha e água para a chegada."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The first week together",
+     "g": "Settle in with simple routines and a lot of patience.",
+     "p": [
+      "Keep meals, walks and rest at similar times each day.",
+      "Expect some shyness or mistakes; they are normal while adjusting.",
+      "Patience matters more than perfection, and small steps add up."
+     ],
+     "q": "What routine would you like to start with your pet?",
+     "c": "Pick set times for meals and rest, and write them on a note."
+    },
+    "de": {
+     "t": "Die erste gemeinsame Woche",
+     "g": "Findet mit einfachen Routinen und viel Geduld zusammen.",
+     "p": [
+      "Halte Mahlzeiten, Gassi und Ruhe täglich zu ähnlichen Zeiten ein.",
+      "Etwas Scheu oder Missgeschicke sind beim Eingewöhnen normal.",
+      "Geduld zählt mehr als Perfektion, kleine Schritte summieren sich."
+     ],
+     "q": "Welche Routine möchtest du mit deinem Tier beginnen?",
+     "c": "Wähle feste Zeiten für Essen und Ruhe und notiere sie."
+    },
+    "es": {
+     "t": "La primera semana juntos",
+     "g": "Asentaos con rutinas sencillas y mucha paciencia.",
+     "p": [
+      "Mantén comidas, paseos y descanso a horas parecidas cada día.",
+      "Es normal cierta timidez o despistes mientras se adapta.",
+      "La paciencia importa más que la perfección y los pasos pequeños suman."
+     ],
+     "q": "¿Qué rutina te gustaría empezar con tu mascota?",
+     "c": "Elige horas fijas para comer y descansar y anótalas."
+    },
+    "fr": {
+     "t": "La première semaine ensemble",
+     "g": "Installez-vous avec des routines simples et beaucoup de patience.",
+     "p": [
+      "Garde repas, sorties et repos à des heures similaires chaque jour.",
+      "Un peu de timidité ou de maladresses sont normales pendant l'adaptation.",
+      "La patience compte plus que la perfection, et les petits pas s'additionnent."
+     ],
+     "q": "Quelle routine aimerais-tu instaurer avec ton animal ?",
+     "c": "Choisis des horaires fixes pour repas et repos et note-les."
+    },
+    "it": {
+     "t": "La prima settimana insieme",
+     "g": "Ambientatevi con routine semplici e tanta pazienza.",
+     "p": [
+      "Mantieni pasti, passeggiate e riposo a orari simili ogni giorno.",
+      "Un po' di timidezza o qualche errore sono normali durante l'adattamento.",
+      "La pazienza conta più della perfezione, e i piccoli passi si sommano."
+     ],
+     "q": "Quale routine vorresti iniziare col tuo animale?",
+     "c": "Scegli orari fissi per pasti e riposo e appuntali."
+    },
+    "pt": {
+     "t": "A primeira semana juntos",
+     "g": "Habituem-se com rotinas simples e muita paciência.",
+     "p": [
+      "Mantém refeições, passeios e descanso a horas semelhantes todos os dias.",
+      "Alguma timidez ou deslizes são normais durante a adaptação.",
+      "A paciência vale mais do que a perfeição e os passos pequenos somam."
+     ],
+     "q": "Que rotina gostarias de começar com o teu animal?",
+     "c": "Escolhe horas fixas para comer e descansar e anota-as."
+    },
+    "pt_BR": {
+     "t": "A primeira semana juntos",
+     "g": "Se acostumem com rotinas simples e muita paciência.",
+     "p": [
+      "Mantenha refeições, passeios e descanso em horários parecidos todo dia.",
+      "Um pouco de timidez ou escorregões são normais durante a adaptação.",
+      "Paciência vale mais que perfeição, e pequenos passos somam."
+     ],
+     "q": "Que rotina você gostaria de começar com seu pet?",
+     "c": "Escolha horários fixos para comer e descansar e anote."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing your first vet",
+     "g": "Find a veterinary practice you trust.",
+     "p": [
+      "Look for a clean, friendly practice with clear communication and convenient hours.",
+      "Ask about emergency cover and how they handle after-hours care.",
+      "A first check-up is a great start and builds your pet's trust in the clinic."
+     ],
+     "q": "What matters most to you in a vet?",
+     "c": "Find two nearby vets and note their hours and emergency info."
+    },
+    "de": {
+     "t": "Deine erste Tierarztpraxis wählen",
+     "g": "Finde eine Praxis, der du vertraust.",
+     "p": [
+      "Achte auf eine saubere, freundliche Praxis mit klarer Kommunikation und passenden Zeiten.",
+      "Frag nach Notdienst und Betreuung außerhalb der Sprechzeiten.",
+      "Ein erster Check ist ein guter Start und schafft Vertrauen beim Tier."
+     ],
+     "q": "Was ist dir bei einem Tierarzt am wichtigsten?",
+     "c": "Finde zwei Praxen in der Nähe und notiere Zeiten und Notfallinfos."
+    },
+    "es": {
+     "t": "Elegir tu primer veterinario",
+     "g": "Encuentra una clínica veterinaria de confianza.",
+     "p": [
+      "Busca una clínica limpia y amable, con buena comunicación y horarios cómodos.",
+      "Pregunta por urgencias y cómo atienden fuera de horario.",
+      "Una primera revisión es un buen comienzo y genera confianza en el animal."
+     ],
+     "q": "¿Qué es lo más importante para ti en un veterinario?",
+     "c": "Encuentra dos veterinarios cercanos y anota horarios y datos de urgencias."
+    },
+    "fr": {
+     "t": "Choisir ton premier vétérinaire",
+     "g": "Trouve un cabinet vétérinaire de confiance.",
+     "p": [
+      "Cherche un cabinet propre et accueillant, à la communication claire et aux horaires pratiques.",
+      "Renseigne-toi sur les urgences et la prise en charge hors horaires.",
+      "Un premier bilan est un bon départ et crée la confiance de l'animal."
+     ],
+     "q": "Qu'est-ce qui compte le plus pour toi chez un vétérinaire ?",
+     "c": "Trouve deux vétérinaires proches et note horaires et infos d'urgence."
+    },
+    "it": {
+     "t": "Scegliere il tuo primo veterinario",
+     "g": "Trova uno studio veterinario di cui fidarti.",
+     "p": [
+      "Cerca uno studio pulito e accogliente, con comunicazione chiara e orari comodi.",
+      "Chiedi delle urgenze e di come gestiscono le ore fuori orario.",
+      "Una prima visita è un ottimo inizio e crea fiducia nell'animale."
+     ],
+     "q": "Cosa conta di più per te in un veterinario?",
+     "c": "Trova due veterinari vicini e annota orari e info per le urgenze."
+    },
+    "pt": {
+     "t": "Escolher o teu primeiro veterinário",
+     "g": "Encontra uma clínica veterinária de confiança.",
+     "p": [
+      "Procura uma clínica limpa e simpática, com boa comunicação e horários práticos.",
+      "Pergunta pelas urgências e como tratam casos fora de horas.",
+      "Uma primeira consulta é um bom começo e cria confiança no animal."
+     ],
+     "q": "O que é mais importante para ti num veterinário?",
+     "c": "Encontra dois veterinários próximos e anota horários e dados de urgência."
+    },
+    "pt_BR": {
+     "t": "Escolher seu primeiro veterinário",
+     "g": "Encontre uma clínica veterinária de confiança.",
+     "p": [
+      "Procure uma clínica limpa e simpática, com boa comunicação e horários práticos.",
+      "Pergunte sobre emergências e como atendem fora do horário.",
+      "Uma primeira consulta é um bom começo e cria confiança no pet."
+     ],
+     "q": "O que é mais importante para você em um veterinário?",
+     "c": "Encontre dois veterinários próximos e anote horários e dados de emergência."
+    }
+   }
+  }
+ ]
+}

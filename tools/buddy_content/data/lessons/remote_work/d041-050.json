@@ -1,0 +1,835 @@
+{
+ "topic": "remote_work",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Camera setup for video calls",
+     "g": "Position your camera at eye level with a clean, friendly background.",
+     "p": [
+      "Place the camera at eye level; stack books under a laptop if needed.",
+      "Face a light source so your face is lit, not shadowed.",
+      "Choose a tidy, simple background without private items in view."
+     ],
+     "q": "How do you look on camera right now: lit, centred, at eye level?",
+     "c": "Take a test shot of yourself and improve one thing: height, light or background."
+    },
+    "de": {
+     "t": "Kamera-Setup für Videoanrufe",
+     "g": "Stelle die Kamera auf Augenhöhe auf, mit einem aufgeräumten, freundlichen Hintergrund.",
+     "p": [
+      "Platziere die Kamera auf Augenhöhe; nutze notfalls Bücher unter dem Laptop.",
+      "Sitze zu einer Lichtquelle hin, damit dein Gesicht hell statt im Schatten ist.",
+      "Wähle einen schlichten, ordentlichen Hintergrund ohne Privates im Bild."
+     ],
+     "q": "Wie wirkst du gerade auf der Kamera: beleuchtet, mittig, auf Augenhöhe?",
+     "c": "Mach ein Testbild von dir und verbessere eines: Höhe, Licht oder Hintergrund."
+    },
+    "es": {
+     "t": "Preparar la cámara para videollamadas",
+     "g": "Coloca la cámara a la altura de los ojos con un fondo limpio y agradable.",
+     "p": [
+      "Pon la cámara a la altura de los ojos; usa libros bajo el portátil si hace falta.",
+      "Mira hacia una fuente de luz para que tu cara esté iluminada, no en sombra.",
+      "Elige un fondo sencillo y ordenado, sin objetos privados a la vista."
+     ],
+     "q": "¿Cómo te ves ahora en cámara: iluminado, centrado, a la altura de los ojos?",
+     "c": "Haz una foto de prueba y mejora una cosa: altura, luz o fondo."
+    },
+    "fr": {
+     "t": "Régler ta caméra pour les visios",
+     "g": "Place ta caméra à hauteur des yeux avec un arrière-plan net et agréable.",
+     "p": [
+      "Mets la caméra à hauteur des yeux ; glisse des livres sous le portable si besoin.",
+      "Fais face à une source de lumière pour que ton visage soit éclairé, pas dans l'ombre.",
+      "Choisis un fond simple et rangé, sans objets privés visibles."
+     ],
+     "q": "Comment apparais-tu à la caméra : éclairé, centré, à hauteur des yeux ?",
+     "c": "Fais une image test de toi et améliore un point : hauteur, lumière ou fond."
+    },
+    "it": {
+     "t": "Configurare la camera per le videochiamate",
+     "g": "Posiziona la camera all'altezza degli occhi con uno sfondo pulito e piacevole.",
+     "p": [
+      "Metti la camera all'altezza degli occhi; usa dei libri sotto il portatile se serve.",
+      "Rivolgiti a una fonte di luce così il viso è illuminato, non in ombra.",
+      "Scegli uno sfondo semplice e ordinato, senza oggetti privati in vista."
+     ],
+     "q": "Come appari ora in camera: illuminato, centrato, all'altezza degli occhi?",
+     "c": "Fai una prova di inquadratura e migliora una cosa: altezza, luce o sfondo."
+    },
+    "pt": {
+     "t": "Preparar a câmara para videochamadas",
+     "g": "Coloca a câmara à altura dos olhos com um fundo limpo e agradável.",
+     "p": [
+      "Põe a câmara à altura dos olhos; usa livros debaixo do portátil se for preciso.",
+      "Fica virado para uma fonte de luz para o rosto ficar iluminado e não na sombra.",
+      "Escolhe um fundo simples e arrumado, sem objetos privados à vista."
+     ],
+     "q": "Como apareces agora na câmara: iluminado, ao centro, à altura dos olhos?",
+     "c": "Faz uma imagem de teste e melhora uma coisa: altura, luz ou fundo."
+    },
+    "pt_BR": {
+     "t": "Preparando a câmera para videochamadas",
+     "g": "Posicione a câmera na altura dos olhos com um fundo limpo e agradável.",
+     "p": [
+      "Coloque a câmera na altura dos olhos; use livros sob o notebook se precisar.",
+      "Fique de frente para uma fonte de luz para o rosto ficar iluminado e não na sombra.",
+      "Escolha um fundo simples e arrumado, sem objetos pessoais à vista."
+     ],
+     "q": "Como você aparece agora na câmera: iluminado, centralizado, na altura dos olhos?",
+     "c": "Faça uma imagem de teste e melhore uma coisa: altura, luz ou fundo."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sounding clear on calls",
+     "g": "Use microphones, headsets and simple tricks for clear audio.",
+     "p": [
+      "Good audio matters more than good video; people forgive a dark picture, not a muffled voice.",
+      "A headset or close microphone cuts echo and room noise.",
+      "Speak a little slower and pause between thoughts."
+     ],
+     "q": "Do people ever ask you to repeat yourself on calls?",
+     "c": "Record a short voice clip and listen for echo, noise and clarity."
+    },
+    "de": {
+     "t": "Klar klingen in Anrufen",
+     "g": "Nutze Mikrofone, Headsets und einfache Tricks für klaren Ton.",
+     "p": [
+      "Guter Ton ist wichtiger als gutes Bild; ein dunkles Bild verzeiht man, eine dumpfe Stimme nicht.",
+      "Ein Headset oder nahes Mikrofon reduziert Echo und Raumgeräusche.",
+      "Sprich etwas langsamer und mach Pausen zwischen Gedanken."
+     ],
+     "q": "Wirst du bei Anrufen manchmal gebeten, dich zu wiederholen?",
+     "c": "Nimm einen kurzen Sprachclip auf und achte auf Echo, Rauschen und Klarheit."
+    },
+    "es": {
+     "t": "Sonar claro en las llamadas",
+     "g": "Usa micrófonos, auriculares y trucos sencillos para un audio claro.",
+     "p": [
+      "El buen audio importa más que el buen vídeo; se perdona una imagen oscura, no una voz apagada.",
+      "Unos auriculares con micrófono o un micrófono cercano reducen eco y ruido.",
+      "Habla un poco más despacio y haz pausas entre ideas."
+     ],
+     "q": "¿Te piden a veces que repitas lo que dices en las llamadas?",
+     "c": "Graba un clip de voz corto y escucha si hay eco, ruido y claridad."
+    },
+    "fr": {
+     "t": "Être clair pendant les appels",
+     "g": "Utilise micros, casques et astuces simples pour un son net.",
+     "p": [
+      "Un bon son compte plus qu'une bonne image ; on pardonne une image sombre, pas une voix étouffée.",
+      "Un casque ou un micro proche réduit l'écho et le bruit de la pièce.",
+      "Parle un peu plus lentement et fais des pauses entre les idées."
+     ],
+     "q": "Te demande-t-on parfois de te répéter pendant les appels ?",
+     "c": "Enregistre un court clip de ta voix et écoute l'écho, le bruit et la clarté."
+    },
+    "it": {
+     "t": "Suonare chiari nelle chiamate",
+     "g": "Usa microfoni, cuffie e semplici trucchi per un audio chiaro.",
+     "p": [
+      "Un buon audio conta più di un buon video; si perdona un'immagine scura, non una voce ovattata.",
+      "Cuffie con microfono o un microfono vicino riducono eco e rumore.",
+      "Parla un po' più lentamente e fai pause tra un pensiero e l'altro."
+     ],
+     "q": "Ti chiedono mai di ripetere durante le chiamate?",
+     "c": "Registra una breve clip vocale e ascolta eco, rumore e chiarezza."
+    },
+    "pt": {
+     "t": "Soar claro nas chamadas",
+     "g": "Usa microfones, auscultadores e truques simples para um áudio claro.",
+     "p": [
+      "O bom áudio importa mais do que o bom vídeo; perdoa-se uma imagem escura, não uma voz abafada.",
+      "Auscultadores com microfone ou um microfone próximo reduzem eco e ruído.",
+      "Fala um pouco mais devagar e faz pausas entre ideias."
+     ],
+     "q": "Pedem-te por vezes para repetires o que dizes nas chamadas?",
+     "c": "Grava um pequeno clipe de voz e ouve se há eco, ruído e clareza."
+    },
+    "pt_BR": {
+     "t": "Soando claro nas chamadas",
+     "g": "Use microfones, fones e truques simples para um áudio claro.",
+     "p": [
+      "O bom áudio importa mais que o bom vídeo; perdoa-se uma imagem escura, não uma voz abafada.",
+      "Fones com microfone ou um microfone próximo reduzem eco e ruído.",
+      "Fale um pouco mais devagar e faça pausas entre as ideias."
+     ],
+     "q": "Pedem para você repetir o que disse nas chamadas de vez em quando?",
+     "c": "Grave um clipe de voz curto e ouça se há eco, ruído e clareza."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Video call etiquette",
+     "g": "Learn the courtesies that keep calls pleasant for everyone.",
+     "p": [
+      "Mute when you are not speaking and unmute with a quick hello.",
+      "Use the raise-hand feature or chat so people do not talk over each other.",
+      "Start and end on time; a short thanks leaves a good impression."
+     ],
+     "q": "Which call habit from others do you appreciate most?",
+     "c": "Join your next call with your microphone muted and a ready greeting."
+    },
+    "de": {
+     "t": "Etikette bei Videoanrufen",
+     "g": "Lerne die Umgangsformen, die Anrufe für alle angenehm machen.",
+     "p": [
+      "Schalte dich stumm, wenn du nicht sprichst, und mit einem kurzen Hallo wieder an.",
+      "Nutze Handzeichen oder Chat, damit niemand durcheinanderredet.",
+      "Fange pünktlich an und ende pünktlich; ein kurzes Danke hinterlässt Eindruck."
+     ],
+     "q": "Welche Anrufgewohnheit anderer schätzt du am meisten?",
+     "c": "Tritt deinem nächsten Anruf stummgeschaltet und mit einem Gruß bereit bei."
+    },
+    "es": {
+     "t": "Etiqueta en videollamadas",
+     "g": "Aprende las cortesías que hacen agradables las llamadas para todos.",
+     "p": [
+      "Silencia el micro si no hablas y actívalo con un saludo rápido.",
+      "Usa levantar la mano o el chat para que nadie se pise al hablar.",
+      "Empieza y termina a tiempo; un breve gracias deja buena impresión."
+     ],
+     "q": "¿Qué hábito de otros en las llamadas valoras más?",
+     "c": "Entra a tu próxima llamada con el micro silenciado y un saludo preparado."
+    },
+    "fr": {
+     "t": "Savoir-vivre en visio",
+     "g": "Apprends les politesses qui rendent les appels agréables pour tous.",
+     "p": [
+      "Coupe ton micro quand tu ne parles pas et réactive-le avec un petit bonjour.",
+      "Utilise la main levée ou le chat pour que personne ne se coupe la parole.",
+      "Commence et finis à l'heure ; un court merci laisse une bonne impression."
+     ],
+     "q": "Quelle habitude des autres en appel apprécies-tu le plus ?",
+     "c": "Rejoins ton prochain appel micro coupé et avec un salut prêt."
+    },
+    "it": {
+     "t": "Galateo nelle videochiamate",
+     "g": "Impara le cortesie che rendono le chiamate piacevoli per tutti.",
+     "p": [
+      "Silenzia il microfono quando non parli e riattivalo con un breve saluto.",
+      "Usa la mano alzata o la chat così nessuno si parla sopra.",
+      "Inizia e finisci in orario; un breve grazie lascia una buona impressione."
+     ],
+     "q": "Quale abitudine degli altri nelle chiamate apprezzi di più?",
+     "c": "Entra nella prossima chiamata con il microfono silenziato e un saluto pronto."
+    },
+    "pt": {
+     "t": "Etiqueta em videochamadas",
+     "g": "Aprende as cortesias que tornam as chamadas agradáveis para todos.",
+     "p": [
+      "Silencia o microfone quando não falas e ativa-o com um olá rápido.",
+      "Usa a mão levantada ou o chat para ninguém falar por cima dos outros.",
+      "Começa e acaba a horas; um breve obrigado deixa boa impressão."
+     ],
+     "q": "Que hábito dos outros nas chamadas mais apreciais?",
+     "c": "Entra na tua próxima chamada com o microfone silenciado e uma saudação preparada."
+    },
+    "pt_BR": {
+     "t": "Etiqueta em videochamadas",
+     "g": "Aprenda as cortesias que tornam as chamadas agradáveis para todos.",
+     "p": [
+      "Silencie o microfone quando não estiver falando e ative com um oi rápido.",
+      "Use a mão levantada ou o chat para ninguém falar por cima dos outros.",
+      "Comece e termine no horário; um breve obrigado deixa boa impressão."
+     ],
+     "q": "Que hábito dos outros nas chamadas você mais aprecia?",
+     "c": "Entre na sua próxima chamada com o microfone silenciado e uma saudação pronta."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Being present on camera",
+     "g": "Use eye contact, nodding and body language to show you are engaged.",
+     "p": [
+      "Look at the camera lens when speaking to simulate eye contact.",
+      "Small nods and smiles tell the speaker you are listening.",
+      "Keep your posture open and avoid looking at other screens or your phone."
+     ],
+     "q": "How can you tell when someone on a call is truly listening?",
+     "c": "Practise looking at the lens while saying one full sentence today."
+    },
+    "de": {
+     "t": "Präsent auf der Kamera sein",
+     "g": "Zeige mit Blickkontakt, Nicken und Körpersprache, dass du bei der Sache bist.",
+     "p": [
+      "Schau beim Sprechen in die Kameralinse, um Blickkontakt zu simulieren.",
+      "Kleines Nicken und Lächeln zeigt dem Sprechenden, dass du zuhörst.",
+      "Halte eine offene Haltung und meide andere Bildschirme oder dein Handy."
+     ],
+     "q": "Woran erkennst du, dass jemand im Anruf wirklich zuhört?",
+     "c": "Übe heute, beim Sprechen eines ganzen Satzes in die Linse zu schauen."
+    },
+    "es": {
+     "t": "Estar presente ante la cámara",
+     "g": "Usa el contacto visual, los gestos y el lenguaje corporal para mostrar interés.",
+     "p": [
+      "Mira al objetivo de la cámara al hablar para simular contacto visual.",
+      "Pequeños asentimientos y sonrisas le dicen a quien habla que escuchas.",
+      "Mantén una postura abierta y evita mirar otras pantallas o el móvil."
+     ],
+     "q": "¿Cómo notas que alguien en una llamada escucha de verdad?",
+     "c": "Practica hoy mirar al objetivo mientras dices una frase completa."
+    },
+    "fr": {
+     "t": "Être présent à la caméra",
+     "g": "Utilise regard, hochements et langage corporel pour montrer ton engagement.",
+     "p": [
+      "Regarde l'objectif quand tu parles pour simuler le contact visuel.",
+      "De petits hochements et sourires montrent à la personne que tu écoutes.",
+      "Garde une posture ouverte et évite de regarder d'autres écrans ou ton téléphone."
+     ],
+     "q": "Comment reconnais-tu qu'une personne en appel écoute vraiment ?",
+     "c": "Entraîne-toi aujourd'hui à regarder l'objectif en disant une phrase entière."
+    },
+    "it": {
+     "t": "Essere presenti in camera",
+     "g": "Usa sguardo, cenni e linguaggio del corpo per mostrare attenzione.",
+     "p": [
+      "Guarda l'obiettivo quando parli per simulare il contatto visivo.",
+      "Piccoli cenni e sorrisi dicono a chi parla che stai ascoltando.",
+      "Mantieni una postura aperta ed evita di guardare altri schermi o il telefono."
+     ],
+     "q": "Come capisci che qualcuno in chiamata ascolta davvero?",
+     "c": "Allenati oggi a guardare l'obiettivo mentre dici una frase intera."
+    },
+    "pt": {
+     "t": "Estar presente em frente à câmara",
+     "g": "Usa o contacto visual, acenos e linguagem corporal para mostrar interesse.",
+     "p": [
+      "Olha para a lente da câmara ao falar para simular contacto visual.",
+      "Pequenos acenos e sorrisos dizem a quem fala que estás a ouvir.",
+      "Mantém uma postura aberta e evita olhar para outros ecrãs ou para o telemóvel."
+     ],
+     "q": "Como notas que alguém numa chamada está mesmo a ouvir?",
+     "c": "Pratica hoje olhar para a lente enquanto dizes uma frase completa."
+    },
+    "pt_BR": {
+     "t": "Estando presente diante da câmera",
+     "g": "Use contato visual, acenos e linguagem corporal para mostrar interesse.",
+     "p": [
+      "Olhe para a lente da câmera ao falar para simular contato visual.",
+      "Pequenos acenos e sorrisos dizem a quem fala que você está ouvindo.",
+      "Mantenha uma postura aberta e evite olhar para outras telas ou para o celular."
+     ],
+     "q": "Como você percebe que alguém numa chamada está mesmo ouvindo?",
+     "c": "Pratique hoje olhar para a lente enquanto diz uma frase completa."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Joining calls on time and prepared",
+     "g": "Test your setup, read the agenda and have notes ready before a call.",
+     "p": [
+      "Join two minutes early to test sound, camera and link.",
+      "Read the agenda and decide what you want from the meeting.",
+      "Keep a note with your points so you do not lose them mid-call."
+     ],
+     "q": "What helps you feel ready before an important call?",
+     "c": "Before your next call, write your two main points and test your audio."
+    },
+    "de": {
+     "t": "Pünktlich und vorbereitet in Anrufe kommen",
+     "g": "Teste deine Technik, lies die Agenda und halte Notizen vor dem Anruf bereit.",
+     "p": [
+      "Tritt zwei Minuten früher bei, um Ton, Kamera und Link zu testen.",
+      "Lies die Agenda und überlege, was du aus dem Meeting mitnehmen willst.",
+      "Halte eine Notiz mit deinen Punkten bereit, damit sie im Gespräch nicht verloren gehen."
+     ],
+     "q": "Was hilft dir, dich vor einem wichtigen Anruf bereit zu fühlen?",
+     "c": "Schreib vor dem nächsten Anruf zwei Hauptpunkte auf und teste deinen Ton."
+    },
+    "es": {
+     "t": "Entrar a tiempo y preparado a las llamadas",
+     "g": "Prueba tu equipo, lee la agenda y ten notas listas antes de una llamada.",
+     "p": [
+      "Entra dos minutos antes para probar sonido, cámara y enlace.",
+      "Lee la agenda y decide qué quieres sacar de la reunión.",
+      "Ten una nota con tus puntos para no perderlos en plena llamada."
+     ],
+     "q": "¿Qué te ayuda a sentirte listo antes de una llamada importante?",
+     "c": "Antes de tu próxima llamada, escribe dos puntos clave y prueba tu audio."
+    },
+    "fr": {
+     "t": "Rejoindre les appels à l'heure et préparé",
+     "g": "Teste ton installation, lis l'ordre du jour et prépare tes notes avant l'appel.",
+     "p": [
+      "Connecte-toi deux minutes avant pour tester son, caméra et lien.",
+      "Lis l'ordre du jour et décide ce que tu veux retirer de la réunion.",
+      "Garde une note avec tes points pour ne pas les perdre en pleine conversation."
+     ],
+     "q": "Qu'est-ce qui t'aide à te sentir prêt avant un appel important ?",
+     "c": "Avant ton prochain appel, écris tes deux points clés et teste ton audio."
+    },
+    "it": {
+     "t": "Entrare in chiamata in orario e preparato",
+     "g": "Prova la tua dotazione, leggi l'agenda e tieni pronti gli appunti prima di una chiamata.",
+     "p": [
+      "Entra due minuti prima per provare audio, camera e link.",
+      "Leggi l'agenda e decidi cosa vuoi ottenere dalla riunione.",
+      "Tieni una nota con i tuoi punti per non perderli durante la chiamata."
+     ],
+     "q": "Che cosa ti aiuta a sentirti pronto prima di una chiamata importante?",
+     "c": "Prima della prossima chiamata scrivi due punti principali e prova l'audio."
+    },
+    "pt": {
+     "t": "Entrar a horas e preparado nas chamadas",
+     "g": "Testa o teu equipamento, lê a agenda e tem notas prontas antes da chamada.",
+     "p": [
+      "Entra dois minutos antes para testar som, câmara e link.",
+      "Lê a agenda e decide o que queres tirar da reunião.",
+      "Tem uma nota com os teus pontos para não os perderes a meio da chamada."
+     ],
+     "q": "O que te ajuda a sentires-te pronto antes de uma chamada importante?",
+     "c": "Antes da próxima chamada, escreve dois pontos principais e testa o áudio."
+    },
+    "pt_BR": {
+     "t": "Entrando nas chamadas no horário e preparado",
+     "g": "Teste seu equipamento, leia a pauta e deixe notas prontas antes da chamada.",
+     "p": [
+      "Entre dois minutos antes para testar som, câmera e link.",
+      "Leia a pauta e decida o que você quer tirar da reunião.",
+      "Tenha uma nota com seus pontos para não perdê-los no meio da chamada."
+     ],
+     "q": "O que ajuda você a se sentir pronto antes de uma chamada importante?",
+     "c": "Antes da próxima chamada, escreva dois pontos principais e teste o áudio."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Speaking up in online meetings",
+     "g": "Use simple phrases and techniques to contribute when everyone is talking.",
+     "p": [
+      "Open with a short cue like: May I add something here?",
+      "Use chat to hold a thought, then raise it at a natural pause.",
+      "Keep comments brief: one point, one example, then stop."
+     ],
+     "q": "What makes it hard for you to speak up in group calls?",
+     "c": "Make one short contribution in your next meeting, even a simple question."
+    },
+    "de": {
+     "t": "In Online-Meetings das Wort ergreifen",
+     "g": "Nutze einfache Sätze und Techniken, um beizutragen, wenn alle reden.",
+     "p": [
+      "Beginne mit einem kurzen Einstieg wie: Darf ich hier etwas ergänzen?",
+      "Halte einen Gedanken im Chat fest und bring ihn bei einer natürlichen Pause ein.",
+      "Fasse dich kurz: ein Punkt, ein Beispiel, dann Schluss."
+     ],
+     "q": "Was macht es dir schwer, in Gruppenanrufen etwas zu sagen?",
+     "c": "Bring im nächsten Meeting einen kurzen Beitrag, auch eine einfache Frage."
+    },
+    "es": {
+     "t": "Hablar en reuniones online",
+     "g": "Usa frases y técnicas sencillas para participar cuando todos hablan.",
+     "p": [
+      "Empieza con una señal breve como: ¿Puedo añadir algo?",
+      "Usa el chat para guardar una idea y plantéala en una pausa natural.",
+      "Sé breve: un punto, un ejemplo y listo."
+     ],
+     "q": "¿Qué te dificulta intervenir en llamadas de grupo?",
+     "c": "Haz una breve intervención en tu próxima reunión, aunque sea una pregunta sencilla."
+    },
+    "fr": {
+     "t": "Prendre la parole en réunion en ligne",
+     "g": "Utilise des phrases et techniques simples pour contribuer quand tout le monde parle.",
+     "p": [
+      "Ouvre avec une courte formule comme : Puis-je ajouter quelque chose ?",
+      "Garde une idée dans le chat, puis exprime-la à une pause naturelle.",
+      "Sois bref : un point, un exemple, puis stop."
+     ],
+     "q": "Qu'est-ce qui te rend difficile de t'exprimer dans les appels de groupe ?",
+     "c": "Fais une courte intervention à ta prochaine réunion, même une simple question."
+    },
+    "it": {
+     "t": "Intervenire nelle riunioni online",
+     "g": "Usa frasi e tecniche semplici per contribuire quando parlano tutti.",
+     "p": [
+      "Inizia con una breve formula come: Posso aggiungere una cosa?",
+      "Usa la chat per tenere un pensiero e proponilo in una pausa naturale.",
+      "Sii breve: un punto, un esempio e basta."
+     ],
+     "q": "Che cosa ti rende difficile intervenire nelle chiamate di gruppo?",
+     "c": "Fai un breve intervento nella prossima riunione, anche una semplice domanda."
+    },
+    "pt": {
+     "t": "Falar em reuniões online",
+     "g": "Usa frases e técnicas simples para participares quando todos falam.",
+     "p": [
+      "Começa com uma frase curta como: Posso acrescentar algo?",
+      "Usa o chat para guardar uma ideia e apresenta-a numa pausa natural.",
+      "Sê breve: um ponto, um exemplo e pronto."
+     ],
+     "q": "O que te dificulta intervir em chamadas de grupo?",
+     "c": "Faz uma breve intervenção na próxima reunião, mesmo que seja uma pergunta simples."
+    },
+    "pt_BR": {
+     "t": "Falando em reuniões online",
+     "g": "Use frases e técnicas simples para participar quando todos falam.",
+     "p": [
+      "Comece com uma frase curta como: Posso acrescentar algo?",
+      "Use o chat para guardar uma ideia e apresente numa pausa natural.",
+      "Seja breve: um ponto, um exemplo e pronto."
+     ],
+     "q": "O que dificulta para você falar em chamadas de grupo?",
+     "c": "Faça uma breve intervenção na próxima reunião, mesmo que seja uma pergunta simples."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Screen sharing like a pro",
+     "g": "Prepare windows, close private tabs and guide people through what they see.",
+     "p": [
+      "Before sharing, close private tabs and silence notifications.",
+      "Share a single window when possible instead of the whole screen.",
+      "Narrate what you click so viewers can follow along."
+     ],
+     "q": "What has gone wrong, or could go wrong, when sharing your screen?",
+     "c": "Practise sharing one window with a friend and narrate three clicks."
+    },
+    "de": {
+     "t": "Bildschirmfreigabe wie ein Profi",
+     "g": "Bereite Fenster vor, schließe private Tabs und führe andere durch das Gezeigte.",
+     "p": [
+      "Schließe vor dem Teilen private Tabs und stelle Benachrichtigungen aus.",
+      "Teile nach Möglichkeit ein einzelnes Fenster statt des ganzen Bildschirms.",
+      "Erzähle, was du anklickst, damit andere folgen können."
+     ],
+     "q": "Was ist beim Bildschirmteilen schon schiefgegangen oder könnte schiefgehen?",
+     "c": "Übe mit einer Freundin, ein Fenster zu teilen und drei Klicks zu kommentieren."
+    },
+    "es": {
+     "t": "Compartir pantalla como un profesional",
+     "g": "Prepara ventanas, cierra pestañas privadas y guía a los demás por lo que ven.",
+     "p": [
+      "Antes de compartir, cierra pestañas privadas y silencia notificaciones.",
+      "Comparte una sola ventana cuando puedas, en vez de toda la pantalla.",
+      "Cuenta lo que pulsas para que los demás puedan seguirte."
+     ],
+     "q": "¿Qué ha salido mal, o podría salir mal, al compartir pantalla?",
+     "c": "Practica compartir una ventana con un amigo y narra tres clics."
+    },
+    "fr": {
+     "t": "Partager son écran comme un pro",
+     "g": "Prépare tes fenêtres, ferme les onglets privés et guide les autres dans ce qu'ils voient.",
+     "p": [
+      "Avant de partager, ferme les onglets privés et coupe les notifications.",
+      "Partage une seule fenêtre plutôt que tout l'écran quand c'est possible.",
+      "Commente ce que tu cliques pour que l'on puisse suivre."
+     ],
+     "q": "Qu'est-ce qui a mal tourné, ou pourrait mal tourner, en partageant ton écran ?",
+     "c": "Entraîne-toi avec un ami à partager une fenêtre et à commenter trois clics."
+    },
+    "it": {
+     "t": "Condividere lo schermo da professionista",
+     "g": "Prepara le finestre, chiudi le schede private e guida gli altri in ciò che vedono.",
+     "p": [
+      "Prima di condividere, chiudi le schede private e silenzia le notifiche.",
+      "Condividi una sola finestra quando puoi, invece di tutto lo schermo.",
+      "Racconta ciò che clicchi così gli altri possono seguirti."
+     ],
+     "q": "Che cosa è andato storto, o potrebbe andare storto, condividendo lo schermo?",
+     "c": "Prova a condividere una finestra con un amico e commenta tre clic."
+    },
+    "pt": {
+     "t": "Partilhar o ecrã como um profissional",
+     "g": "Prepara janelas, fecha separadores privados e guia os outros pelo que veem.",
+     "p": [
+      "Antes de partilhar, fecha separadores privados e silencia notificações.",
+      "Partilha uma só janela quando possível, em vez de todo o ecrã.",
+      "Narra o que clicas para os outros conseguirem acompanhar."
+     ],
+     "q": "O que correu mal, ou podia correr mal, ao partilhares o ecrã?",
+     "c": "Pratica partilhar uma janela com um amigo e narra três cliques."
+    },
+    "pt_BR": {
+     "t": "Compartilhando a tela como um profissional",
+     "g": "Prepare janelas, feche abas privadas e guie os outros pelo que veem.",
+     "p": [
+      "Antes de compartilhar, feche abas privadas e silencie notificações.",
+      "Compartilhe uma só janela quando puder, em vez da tela toda.",
+      "Narre o que você clica para os outros conseguirem acompanhar."
+     ],
+     "q": "O que deu errado, ou poderia dar errado, ao compartilhar a tela?",
+     "c": "Pratique compartilhar uma janela com um amigo e narre três cliques."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Video fatigue and how to avoid it",
+     "g": "Understand why long video days drain energy and how to ease it.",
+     "p": [
+      "Constant eye contact on screen and seeing yourself are tiring.",
+      "Short calls, camera-off moments and walking calls reduce the load.",
+      "Leave gaps between meetings so your mind can reset."
+     ],
+     "q": "When during your day do you feel most screen-tired?",
+     "c": "Make one call today camera-off or as a walk, and note your energy afterwards."
+    },
+    "de": {
+     "t": "Video-Müdigkeit und wie du sie vermeidest",
+     "g": "Verstehe, warum lange Videotage Energie kosten und wie du gegensteuerst.",
+     "p": [
+      "Ständiger Blickkontakt am Bildschirm und das eigene Bild sind anstrengend.",
+      "Kurze Anrufe, Kamera-aus-Momente und Spaziergang-Anrufe entlasten.",
+      "Lass Lücken zwischen Meetings, damit dein Kopf zurücksetzen kann."
+     ],
+     "q": "Wann am Tag bist du am meisten bildschirmmüde?",
+     "c": "Führe heute einen Anruf ohne Kamera oder beim Gehen und achte danach auf deine Energie."
+    },
+    "es": {
+     "t": "La fatiga por videollamadas y cómo evitarla",
+     "g": "Entiende por qué los días largos de vídeo cansan y cómo aliviarlo.",
+     "p": [
+      "El contacto visual constante en pantalla y verte a ti mismo agotan.",
+      "Llamadas cortas, momentos sin cámara y llamadas paseando reducen la carga.",
+      "Deja huecos entre reuniones para que tu mente se reinicie."
+     ],
+     "q": "¿En qué momento del día sientes más cansancio de pantalla?",
+     "c": "Haz hoy una llamada sin cámara o paseando y anota tu energía después."
+    },
+    "fr": {
+     "t": "La fatigue de la visio et comment l'éviter",
+     "g": "Comprends pourquoi les longues journées en visio épuisent et comment alléger.",
+     "p": [
+      "Le contact visuel constant à l'écran et se voir soi-même fatiguent.",
+      "Appels courts, moments caméra coupée et appels en marchant allègent la charge.",
+      "Laisse des pauses entre les réunions pour que l'esprit se réinitialise."
+     ],
+     "q": "À quel moment de ta journée ressens-tu le plus la fatigue d'écran ?",
+     "c": "Fais un appel aujourd'hui caméra coupée ou en marchant et note ton énergie ensuite."
+    },
+    "it": {
+     "t": "La stanchezza da videochiamate e come evitarla",
+     "g": "Capisci perché le lunghe giornate in video stancano e come alleggerire.",
+     "p": [
+      "Il contatto visivo costante sullo schermo e vedere se stessi affaticano.",
+      "Chiamate brevi, momenti a camera spenta e chiamate camminando riducono il carico.",
+      "Lascia pause tra le riunioni perché la mente si resetti."
+     ],
+     "q": "In quale momento della giornata senti più stanchezza da schermo?",
+     "c": "Fai oggi una chiamata a camera spenta o camminando e nota l'energia dopo."
+    },
+    "pt": {
+     "t": "A fadiga das videochamadas e como a evitar",
+     "g": "Percebe porque os dias longos de vídeo cansam e como aliviar.",
+     "p": [
+      "O contacto visual constante no ecrã e ver-te a ti próprio cansam.",
+      "Chamadas curtas, momentos sem câmara e chamadas a caminhar reduzem a carga.",
+      "Deixa intervalos entre reuniões para a mente reiniciar."
+     ],
+     "q": "Em que altura do dia sentes mais cansaço de ecrã?",
+     "c": "Faz hoje uma chamada sem câmara ou a caminhar e repara na energia depois."
+    },
+    "pt_BR": {
+     "t": "A fadiga das videochamadas e como evitá-la",
+     "g": "Entenda por que os dias longos de vídeo cansam e como aliviar.",
+     "p": [
+      "O contato visual constante na tela e ver a si mesmo cansam.",
+      "Chamadas curtas, momentos sem câmera e chamadas caminhando reduzem a carga.",
+      "Deixe intervalos entre reuniões para a mente reiniciar."
+     ],
+     "q": "Em que momento do dia você sente mais cansaço de tela?",
+     "c": "Faça hoje uma chamada sem câmera ou caminhando e repare na energia depois."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Virtual backgrounds and blur",
+     "g": "Know when to use blur or virtual backgrounds and keep them professional.",
+     "p": [
+      "Blur hides a messy room without distracting viewers.",
+      "Simple, calm backgrounds look better than busy or moving ones.",
+      "A real tidy corner is often the most natural choice."
+     ],
+     "q": "What would you like people to see behind you on a call?",
+     "c": "Try blur, a plain background and your real space; pick the one that feels best."
+    },
+    "de": {
+     "t": "Virtuelle Hintergründe und Unschärfe",
+     "g": "Wisse, wann Unschärfe oder virtuelle Hintergründe passen, und bleib professionell.",
+     "p": [
+      "Unschärfe verbirgt ein unordentliches Zimmer, ohne abzulenken.",
+      "Schlichte, ruhige Hintergründe wirken besser als unruhige oder bewegte.",
+      "Eine echte aufgeräumte Ecke ist oft die natürlichste Wahl."
+     ],
+     "q": "Was sollen andere bei einem Anruf hinter dir sehen?",
+     "c": "Probiere Unschärfe, einen schlichten Hintergrund und deinen echten Raum; wähle, was sich am besten anfühlt."
+    },
+    "es": {
+     "t": "Fondos virtuales y desenfoque",
+     "g": "Sabe cuándo usar desenfoque o fondos virtuales y mantenlos profesionales.",
+     "p": [
+      "El desenfoque oculta una habitación desordenada sin distraer.",
+      "Los fondos sencillos y tranquilos quedan mejor que los recargados o en movimiento.",
+      "Un rincón real y ordenado suele ser la opción más natural."
+     ],
+     "q": "¿Qué te gustaría que vieran detrás de ti en una llamada?",
+     "c": "Prueba el desenfoque, un fondo liso y tu espacio real; elige el que mejor te sienta."
+    },
+    "fr": {
+     "t": "Arrière-plans virtuels et flou",
+     "g": "Sache quand utiliser le flou ou un arrière-plan virtuel et reste professionnel.",
+     "p": [
+      "Le flou cache une pièce en désordre sans distraire.",
+      "Les fonds simples et calmes rendent mieux que les fonds chargés ou animés.",
+      "Un coin réel et rangé est souvent le choix le plus naturel."
+     ],
+     "q": "Que voudrais-tu que l'on voie derrière toi pendant un appel ?",
+     "c": "Essaie le flou, un fond uni et ton vrai espace ; choisis celui qui te convient le mieux."
+    },
+    "it": {
+     "t": "Sfondi virtuali e sfocatura",
+     "g": "Sappi quando usare sfocatura o sfondi virtuali e mantienili professionali.",
+     "p": [
+      "La sfocatura nasconde una stanza disordinata senza distrarre.",
+      "Sfondi semplici e calmi rendono meglio di quelli carichi o in movimento.",
+      "Un angolo vero e ordinato è spesso la scelta più naturale."
+     ],
+     "q": "Che cosa vorresti che gli altri vedessero dietro di te in chiamata?",
+     "c": "Prova sfocatura, sfondo semplice e il tuo spazio reale; scegli quello che ti sta meglio."
+    },
+    "pt": {
+     "t": "Fundos virtuais e desfoque",
+     "g": "Sabe quando usar desfoque ou fundos virtuais e mantém-nos profissionais.",
+     "p": [
+      "O desfoque esconde um quarto desarrumado sem distrair.",
+      "Fundos simples e calmos ficam melhor do que fundos carregados ou em movimento.",
+      "Um canto real e arrumado é muitas vezes a escolha mais natural."
+     ],
+     "q": "O que gostavas que vissem atrás de ti numa chamada?",
+     "c": "Experimenta desfoque, um fundo liso e o teu espaço real; escolhe o que te fica melhor."
+    },
+    "pt_BR": {
+     "t": "Fundos virtuais e desfoque",
+     "g": "Saiba quando usar desfoque ou fundos virtuais e mantenha-os profissionais.",
+     "p": [
+      "O desfoque esconde um quarto bagunçado sem distrair.",
+      "Fundos simples e calmos ficam melhores que fundos carregados ou em movimento.",
+      "Um canto real e arrumado costuma ser a escolha mais natural."
+     ],
+     "q": "O que você gostaria que vissem atrás de você numa chamada?",
+     "c": "Experimente desfoque, um fundo liso e o seu espaço real; escolha o que fica melhor."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Handling tech problems gracefully",
+     "g": "Handle frozen screens, lost audio and dropped calls with calm.",
+     "p": [
+      "Stay calm and say what is happening: My audio dropped, one moment.",
+      "Know your quick fixes: rejoin, switch to chat, use phone audio.",
+      "Have a backup channel agreed with your team before problems happen."
+     ],
+     "q": "How do you usually react when technology fails you?",
+     "c": "Write a short checklist of three quick fixes and keep it near your desk."
+    },
+    "de": {
+     "t": "Technikprobleme gelassen meistern",
+     "g": "Gehe mit eingefrorenem Bild, Tonausfall und abgebrochenen Anrufen ruhig um.",
+     "p": [
+      "Bleib ruhig und sag, was los ist: Mein Ton ist weg, einen Moment.",
+      "Kenne deine schnellen Lösungen: neu beitreten, in den Chat wechseln, Telefonton nutzen.",
+      "Vereinbare vorab mit dem Team einen Ersatzkanal."
+     ],
+     "q": "Wie reagierst du meist, wenn die Technik versagt?",
+     "c": "Schreib eine kurze Checkliste mit drei schnellen Lösungen und leg sie an deinen Platz."
+    },
+    "es": {
+     "t": "Gestionar los problemas técnicos con calma",
+     "g": "Afronta pantallas congeladas, audio perdido y llamadas caídas con serenidad.",
+     "p": [
+      "Mantén la calma y di lo que pasa: Se me ha cortado el audio, un momento.",
+      "Conoce tus arreglos rápidos: volver a entrar, pasar al chat, usar audio del teléfono.",
+      "Acuerda con tu equipo un canal de respaldo antes de que haya problemas."
+     ],
+     "q": "¿Cómo sueles reaccionar cuando la tecnología te falla?",
+     "c": "Escribe una lista corta de tres arreglos rápidos y ponla junto a tu escritorio."
+    },
+    "fr": {
+     "t": "Gérer les problèmes techniques avec calme",
+     "g": "Affronte écrans figés, son perdu et appels coupés avec sérénité.",
+     "p": [
+      "Reste calme et dis ce qui se passe : Mon son a coupé, un instant.",
+      "Connais tes solutions rapides : se reconnecter, passer au chat, utiliser le son du téléphone.",
+      "Convenez d'un canal de secours avec ton équipe avant que les problèmes arrivent."
+     ],
+     "q": "Comment réagis-tu d'habitude quand la technologie te lâche ?",
+     "c": "Écris une courte liste de trois solutions rapides et garde-la près de ton bureau."
+    },
+    "it": {
+     "t": "Gestire i problemi tecnici con calma",
+     "g": "Affronta schermi bloccati, audio perso e chiamate cadute con serenità.",
+     "p": [
+      "Resta calmo e di' cosa succede: Mi è caduto l'audio, un attimo.",
+      "Conosci le soluzioni rapide: rientrare, passare alla chat, usare l'audio del telefono.",
+      "Concorda con il team un canale di riserva prima che sorgano problemi."
+     ],
+     "q": "Come reagisci di solito quando la tecnologia ti tradisce?",
+     "c": "Scrivi una breve lista di tre soluzioni rapide e tienila vicino alla scrivania."
+    },
+    "pt": {
+     "t": "Lidar com problemas técnicos com calma",
+     "g": "Enfrenta ecrãs congelados, áudio perdido e chamadas caídas com serenidade.",
+     "p": [
+      "Mantém a calma e diz o que se passa: Perdi o áudio, um momento.",
+      "Conhece as soluções rápidas: voltar a entrar, passar ao chat, usar o áudio do telemóvel.",
+      "Combina com a equipa um canal de reserva antes de haver problemas."
+     ],
+     "q": "Como costumas reagir quando a tecnologia te falha?",
+     "c": "Escreve uma lista curta de três soluções rápidas e deixa-a junto à secretária."
+    },
+    "pt_BR": {
+     "t": "Lidando com problemas técnicos com calma",
+     "g": "Enfrente telas congeladas, áudio perdido e chamadas caídas com serenidade.",
+     "p": [
+      "Mantenha a calma e diga o que acontece: Meu áudio caiu, um momento.",
+      "Conheça as soluções rápidas: entrar de novo, passar para o chat, usar o áudio do celular.",
+      "Combine com o time um canal reserva antes de surgirem problemas."
+     ],
+     "q": "Como você costuma reagir quando a tecnologia falha?",
+     "c": "Escreva uma lista curta de três soluções rápidas e deixe perto da mesa."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "habits",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why tracking helps",
+     "g": "See how recording a habit makes progress visible.",
+     "p": [
+      "What gets noticed gets repeated, and a record makes it visible.",
+      "Seeing a row of checkmarks feels rewarding in itself.",
+      "A tracker keeps you honest without needing to be strict."
+     ],
+     "q": "Have you ever tracked anything, like steps or books read?",
+     "c": "Mark today's habit somewhere you can see it, even with a simple tick."
+    },
+    "de": {
+     "t": "Warum Tracking hilft",
+     "g": "Sehen, wie das Festhalten einer Gewohnheit Fortschritt sichtbar macht.",
+     "p": [
+      "Was bemerkt wird, wird wiederholt, und eine Aufzeichnung macht es sichtbar.",
+      "Eine Reihe von Häkchen fühlt sich schon an sich belohnend an.",
+      "Ein Tracker hält dich ehrlich, ohne streng sein zu müssen."
+     ],
+     "q": "Hast du schon einmal etwas festgehalten, etwa Schritte oder gelesene Bücher?",
+     "c": "Markiere heute deine Gewohnheit dort, wo du sie siehst, schon ein Häkchen reicht."
+    },
+    "es": {
+     "t": "Por qué ayuda registrar",
+     "g": "Ver cómo anotar un hábito hace visible el progreso.",
+     "p": [
+      "Lo que se nota se repite, y un registro lo hace visible.",
+      "Ver una fila de marcas ya resulta gratificante.",
+      "Un registro te mantiene honesto sin tener que ser estricto."
+     ],
+     "q": "¿Has registrado alguna vez algo, como pasos o libros leídos?",
+     "c": "Marca hoy tu hábito donde puedas verlo, aunque sea con una simple marca."
+    },
+    "fr": {
+     "t": "Pourquoi suivre ses habitudes aide",
+     "g": "Voir comment noter une habitude rend les progrès visibles.",
+     "p": [
+      "Ce qu'on remarque se répète, et une trace le rend visible.",
+      "Voir une rangée de coches fait déjà plaisir.",
+      "Un suivi te garde honnête sans être strict."
+     ],
+     "q": "As-tu déjà suivi quelque chose, comme tes pas ou tes lectures ?",
+     "c": "Marque ton habitude d'aujourd'hui là où tu la vois, même d'une simple coche."
+    },
+    "it": {
+     "t": "Perché tracciare aiuta",
+     "g": "Vedere come annotare un'abitudine rende visibili i progressi.",
+     "p": [
+      "Ciò che si nota si ripete, e un registro lo rende visibile.",
+      "Vedere una fila di spunte è già gratificante.",
+      "Un tracker ti tiene onesto senza dover essere severo."
+     ],
+     "q": "Hai mai tracciato qualcosa, come i passi o i libri letti?",
+     "c": "Segna oggi la tua abitudine dove puoi vederla, anche con una semplice spunta."
+    },
+    "pt": {
+     "t": "Porque registar ajuda",
+     "g": "Ver como anotar um hábito torna o progresso visível.",
+     "p": [
+      "O que se nota repete-se, e um registo torna-o visível.",
+      "Ver uma fila de marcas já é gratificante.",
+      "Um registo mantém-te honesto sem teres de ser rígido."
+     ],
+     "q": "Já registaste alguma coisa, como passos ou livros lidos?",
+     "c": "Marca hoje o teu hábito onde o possas ver, mesmo com um simples visto."
+    },
+    "pt_BR": {
+     "t": "Por que registrar ajuda",
+     "g": "Ver como anotar um hábito deixa o progresso visível.",
+     "p": [
+      "O que se percebe se repete, e um registro deixa visível.",
+      "Ver uma fila de marcas já é gratificante.",
+      "Um registro mantém você honesto sem precisar ser rígido."
+     ],
+     "q": "Você já registrou algo, como passos ou livros lidos?",
+     "c": "Marque hoje seu hábito onde possa ver, mesmo com um simples visto."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Simple habit trackers",
+     "g": "Pick the tracker you will really use.",
+     "p": [
+      "Paper calendars, checklists and apps all work.",
+      "The best tracker is the one that takes ten seconds.",
+      "Put it where you will see it, like the fridge or your phone."
+     ],
+     "q": "Do you prefer pen and paper or an app?",
+     "c": "Set up one simple tracker today and tick off your first box."
+    },
+    "de": {
+     "t": "Einfache Gewohnheits-Tracker",
+     "g": "Den Tracker wählen, den du wirklich nutzt.",
+     "p": [
+      "Papierkalender, Listen und Apps funktionieren alle.",
+      "Der beste Tracker braucht nur zehn Sekunden.",
+      "Platziere ihn dort, wo du ihn siehst, etwa am Kühlschrank oder im Handy."
+     ],
+     "q": "Magst du lieber Stift und Papier oder eine App?",
+     "c": "Richte heute einen einfachen Tracker ein und hake dein erstes Kästchen ab."
+    },
+    "es": {
+     "t": "Registros de hábitos sencillos",
+     "g": "Elegir el registro que de verdad vas a usar.",
+     "p": [
+      "Calendarios de papel, listas y apps sirven todos.",
+      "El mejor registro es el que lleva diez segundos.",
+      "Ponlo donde lo veas, como la nevera o el móvil."
+     ],
+     "q": "¿Prefieres lápiz y papel o una app?",
+     "c": "Prepara hoy un registro sencillo y marca tu primera casilla."
+    },
+    "fr": {
+     "t": "Des suivis d'habitudes simples",
+     "g": "Choisir le suivi que tu utiliseras vraiment.",
+     "p": [
+      "Calendriers papier, listes et applis fonctionnent tous.",
+      "Le meilleur suivi est celui qui prend dix secondes.",
+      "Place-le là où tu le vois, comme le frigo ou ton téléphone."
+     ],
+     "q": "Préfères-tu papier-crayon ou une appli ?",
+     "c": "Mets en place un suivi simple aujourd'hui et coche ta première case."
+    },
+    "it": {
+     "t": "Tracker di abitudini semplici",
+     "g": "Scegliere il tracker che userai davvero.",
+     "p": [
+      "Calendari di carta, liste e app funzionano tutti.",
+      "Il tracker migliore è quello che richiede dieci secondi.",
+      "Mettilo dove lo vedi, come il frigo o il telefono."
+     ],
+     "q": "Preferisci carta e penna o un'app?",
+     "c": "Prepara oggi un tracker semplice e spunta la tua prima casella."
+    },
+    "pt": {
+     "t": "Registos de hábitos simples",
+     "g": "Escolher o registo que vais mesmo usar.",
+     "p": [
+      "Calendários de papel, listas e aplicações funcionam todos.",
+      "O melhor registo é o que leva dez segundos.",
+      "Põe-no onde o vejas, como o frigorífico ou o telemóvel."
+     ],
+     "q": "Preferes papel e caneta ou uma aplicação?",
+     "c": "Prepara hoje um registo simples e marca a tua primeira casinha."
+    },
+    "pt_BR": {
+     "t": "Registros de hábitos simples",
+     "g": "Escolher o registro que você vai mesmo usar.",
+     "p": [
+      "Calendários de papel, listas e apps funcionam todos.",
+      "O melhor registro é o que leva dez segundos.",
+      "Deixe onde você veja, como a geladeira ou o celular."
+     ],
+     "q": "Você prefere papel e caneta ou um app?",
+     "c": "Monte hoje um registro simples e marque sua primeira casinha."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tracking with a habit journal",
+     "g": "Write one line a day to notice patterns and feelings.",
+     "p": [
+      "A single sentence is enough: what I did and how it felt.",
+      "Over weeks, patterns appear you would never notice otherwise.",
+      "Keep it light, and never judge what you write."
+     ],
+     "q": "How did your habit feel today, in just a few words?",
+     "c": "Write one line in a notebook or notes app about today's habit."
+    },
+    "de": {
+     "t": "Tracking mit einem Gewohnheitstagebuch",
+     "g": "Eine Zeile am Tag schreiben, um Muster und Gefühle zu bemerken.",
+     "p": [
+      "Ein einziger Satz genügt: was ich tat und wie es sich anfühlte.",
+      "Über Wochen zeigen sich Muster, die du sonst nie bemerken würdest.",
+      "Halte es leicht und bewerte nie, was du schreibst."
+     ],
+     "q": "Wie hat sich deine Gewohnheit heute angefühlt, in wenigen Worten?",
+     "c": "Schreibe eine Zeile in Heft oder Notiz-App über die heutige Gewohnheit."
+    },
+    "es": {
+     "t": "Registro con diario de hábitos",
+     "g": "Escribir una línea al día para notar patrones y sensaciones.",
+     "p": [
+      "Una sola frase basta: lo que hice y cómo me sentí.",
+      "Con las semanas aparecen patrones que de otro modo no verías.",
+      "Mantenlo ligero y nunca juzgues lo que escribes."
+     ],
+     "q": "¿Cómo se sintió hoy tu hábito, en pocas palabras?",
+     "c": "Escribe una línea en una libreta o app de notas sobre el hábito de hoy."
+    },
+    "fr": {
+     "t": "Suivre avec un journal d'habitudes",
+     "g": "Écrire une ligne par jour pour remarquer tendances et ressentis.",
+     "p": [
+      "Une seule phrase suffit : ce que j'ai fait et comment je l'ai vécu.",
+      "Au fil des semaines, des schémas apparaissent que tu ne verrais pas autrement.",
+      "Reste léger et ne juge jamais ce que tu écris."
+     ],
+     "q": "Comment ton habitude s'est-elle passée aujourd'hui, en quelques mots ?",
+     "c": "Écris une ligne dans un carnet ou une appli de notes sur l'habitude du jour."
+    },
+    "it": {
+     "t": "Tracciare con un diario delle abitudini",
+     "g": "Scrivere una riga al giorno per notare schemi e sensazioni.",
+     "p": [
+      "Basta una frase: cosa ho fatto e come mi sono sentito.",
+      "Nelle settimane emergono schemi che altrimenti non vedresti.",
+      "Mantieni leggerezza e non giudicare mai ciò che scrivi."
+     ],
+     "q": "Com'è andata oggi la tua abitudine, in poche parole?",
+     "c": "Scrivi una riga su quaderno o app di note sull'abitudine di oggi."
+    },
+    "pt": {
+     "t": "Registar com um diário de hábitos",
+     "g": "Escrever uma linha por dia para notar padrões e sensações.",
+     "p": [
+      "Uma só frase basta: o que fiz e como me senti.",
+      "Ao fim de semanas surgem padrões que de outro modo não verias.",
+      "Mantém leve e nunca julgues o que escreves."
+     ],
+     "q": "Como sentiste o teu hábito hoje, em poucas palavras?",
+     "c": "Escreve uma linha num caderno ou app de notas sobre o hábito de hoje."
+    },
+    "pt_BR": {
+     "t": "Registrar com um diário de hábitos",
+     "g": "Escrever uma linha por dia para notar padrões e sensações.",
+     "p": [
+      "Uma só frase basta: o que fiz e como me senti.",
+      "Com as semanas surgem padrões que de outro modo você não veria.",
+      "Mantenha leve e nunca julgue o que escreve."
+     ],
+     "q": "Como foi seu hábito hoje, em poucas palavras?",
+     "c": "Escreva uma linha num caderno ou app de notas sobre o hábito de hoje."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Don't break the chain",
+     "g": "Use a visual streak to stay motivated day after day.",
+     "p": [
+      "A growing chain of marks becomes something you want to protect.",
+      "The streak is a tool, not a test of your worth.",
+      "If the chain breaks, simply start a new one."
+     ],
+     "q": "Does a streak motivate you or add pressure?",
+     "c": "Add today's link to your chain and look at how far it has come."
+    },
+    "de": {
+     "t": "Unterbrich die Kette nicht",
+     "g": "Eine sichtbare Serie nutzen, um Tag für Tag motiviert zu bleiben.",
+     "p": [
+      "Eine wachsende Kette von Markierungen wird zu etwas, das du schützen willst.",
+      "Die Serie ist ein Werkzeug, kein Test deines Wertes.",
+      "Reißt die Kette, beginne einfach eine neue."
+     ],
+     "q": "Motiviert dich eine Serie oder macht sie Druck?",
+     "c": "Füge heute dein Kettenglied hinzu und sieh, wie weit sie gekommen ist."
+    },
+    "es": {
+     "t": "No rompas la cadena",
+     "g": "Usar una racha visual para mantener la motivación día tras día.",
+     "p": [
+      "Una cadena de marcas que crece se vuelve algo que quieres proteger.",
+      "La racha es una herramienta, no una prueba de tu valor.",
+      "Si la cadena se rompe, simplemente empieza otra."
+     ],
+     "q": "¿Una racha te motiva o te presiona?",
+     "c": "Añade hoy tu eslabón a la cadena y mira lo lejos que ha llegado."
+    },
+    "fr": {
+     "t": "Ne brise pas la chaîne",
+     "g": "Utiliser une série visuelle pour rester motivé jour après jour.",
+     "p": [
+      "Une chaîne de marques qui s'allonge devient quelque chose que tu veux protéger.",
+      "La série est un outil, pas un test de ta valeur.",
+      "Si la chaîne se brise, recommence-en une nouvelle."
+     ],
+     "q": "Une série te motive-t-elle ou te met-elle la pression ?",
+     "c": "Ajoute aujourd'hui ton maillon à la chaîne et vois le chemin parcouru."
+    },
+    "it": {
+     "t": "Non spezzare la catena",
+     "g": "Usare una serie visiva per restare motivato giorno dopo giorno.",
+     "p": [
+      "Una catena di segni che cresce diventa qualcosa che vuoi proteggere.",
+      "La serie è uno strumento, non un test del tuo valore.",
+      "Se la catena si spezza, ne inizi semplicemente un'altra."
+     ],
+     "q": "Una serie ti motiva o ti mette pressione?",
+     "c": "Aggiungi oggi il tuo anello alla catena e guarda quanta strada ha fatto."
+    },
+    "pt": {
+     "t": "Não quebres a corrente",
+     "g": "Usar uma sequência visual para manter a motivação dia após dia.",
+     "p": [
+      "Uma corrente de marcas a crescer torna-se algo que queres proteger.",
+      "A sequência é uma ferramenta, não um teste ao teu valor.",
+      "Se a corrente quebrar, começa simplesmente outra."
+     ],
+     "q": "Uma sequência motiva-te ou faz pressão?",
+     "c": "Junta hoje o teu elo à corrente e vê até onde já chegou."
+    },
+    "pt_BR": {
+     "t": "Não quebre a corrente",
+     "g": "Usar uma sequência visual para manter a motivação dia após dia.",
+     "p": [
+      "Uma corrente de marcas crescendo vira algo que você quer proteger.",
+      "A sequência é uma ferramenta, não um teste do seu valor.",
+      "Se a corrente quebrar, comece outra, simples assim."
+     ],
+     "q": "Uma sequência motiva você ou pressiona?",
+     "c": "Adicione hoje seu elo à corrente e veja até onde ela chegou."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Never miss twice",
+     "g": "Missing one day is normal; returning the next day is what counts.",
+     "p": [
+      "One missed day barely matters, a second in a row starts a new pattern.",
+      "Plan a tiny comeback version for tough days.",
+      "Be kind to yourself and just return."
+     ],
+     "q": "What helps you get back on track after a break?",
+     "c": "Decide now what your tiny comeback action will be if you miss a day."
+    },
+    "de": {
+     "t": "Nie zweimal auslassen",
+     "g": "Ein verpasster Tag ist normal, entscheidend ist die Rückkehr am nächsten Tag.",
+     "p": [
+      "Ein verpasster Tag zählt kaum, der zweite in Folge beginnt ein neues Muster.",
+      "Plane eine winzige Rückkehr-Version für harte Tage.",
+      "Sei freundlich zu dir und kehre einfach zurück."
+     ],
+     "q": "Was hilft dir, nach einer Pause wieder in Schwung zu kommen?",
+     "c": "Lege jetzt fest, was deine winzige Rückkehr-Handlung ist, falls du einen Tag verpasst."
+    },
+    "es": {
+     "t": "Nunca falles dos veces",
+     "g": "Fallar un día es normal; volver al siguiente es lo que cuenta.",
+     "p": [
+      "Un día perdido apenas importa, un segundo seguido empieza otro patrón.",
+      "Planea una versión mínima de regreso para los días duros.",
+      "Sé amable contigo y simplemente vuelve."
+     ],
+     "q": "¿Qué te ayuda a retomar el ritmo tras una pausa?",
+     "c": "Decide ahora cuál será tu acción mínima de regreso si fallas un día."
+    },
+    "fr": {
+     "t": "Ne jamais rater deux fois",
+     "g": "Rater un jour est normal ; revenir le lendemain est ce qui compte.",
+     "p": [
+      "Un jour manqué compte à peine, un deuxième de suite crée un nouveau schéma.",
+      "Prévois une mini version de retour pour les jours difficiles.",
+      "Sois bienveillant avec toi et reviens simplement."
+     ],
+     "q": "Qu'est-ce qui t'aide à reprendre le fil après une pause ?",
+     "c": "Décide dès maintenant ton action de retour minuscule si tu manques un jour."
+    },
+    "it": {
+     "t": "Mai due volte di fila",
+     "g": "Saltare un giorno è normale; tornare il giorno dopo è ciò che conta.",
+     "p": [
+      "Un giorno saltato conta poco, il secondo di fila avvia un nuovo schema.",
+      "Pianifica una versione minima di ripartenza per i giorni duri.",
+      "Sii gentile con te stesso e ricomincia."
+     ],
+     "q": "Cosa ti aiuta a ripartire dopo una pausa?",
+     "c": "Decidi ora quale sarà la tua azione minima di ripartenza se salti un giorno."
+    },
+    "pt": {
+     "t": "Nunca falhar duas vezes",
+     "g": "Falhar um dia é normal; voltar no dia seguinte é o que conta.",
+     "p": [
+      "Um dia falhado quase não pesa, o segundo seguido cria outro padrão.",
+      "Planeia uma versão mínima de regresso para os dias difíceis.",
+      "Sê gentil contigo e volta simplesmente."
+     ],
+     "q": "O que te ajuda a retomar o ritmo depois de uma pausa?",
+     "c": "Decide já qual será a tua ação mínima de regresso se falhares um dia."
+    },
+    "pt_BR": {
+     "t": "Nunca falhar duas vezes",
+     "g": "Falhar um dia é normal; voltar no dia seguinte é o que conta.",
+     "p": [
+      "Um dia perdido quase não pesa, o segundo seguido cria outro padrão.",
+      "Planeje uma versão mínima de volta para os dias difíceis.",
+      "Seja gentil consigo e simplesmente volte."
+     ],
+     "q": "O que ajuda você a retomar o ritmo depois de uma pausa?",
+     "c": "Decida já qual será sua ação mínima de volta se falhar um dia."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Measuring the right thing",
+     "g": "Track actions you control, not outcomes you cannot.",
+     "p": [
+      "You control the walk, not exactly what the scale or clock shows.",
+      "Track effort and showing up: minutes practised, pages read.",
+      "Outcomes follow actions, but at their own speed."
+     ],
+     "q": "What action could you track instead of a result?",
+     "c": "Pick one action you control and track it today instead of an outcome."
+    },
+    "de": {
+     "t": "Das Richtige messen",
+     "g": "Handlungen verfolgen, die du steuerst, nicht Ergebnisse, die du nicht kontrollierst.",
+     "p": [
+      "Du steuerst den Spaziergang, nicht genau, was Waage oder Uhr anzeigen.",
+      "Verfolge Einsatz und Dranbleiben: geübte Minuten, gelesene Seiten.",
+      "Ergebnisse folgen den Handlungen, aber in ihrem eigenen Tempo."
+     ],
+     "q": "Welche Handlung könntest du statt eines Ergebnisses festhalten?",
+     "c": "Wähle heute eine Handlung, die du steuerst, und verfolge sie statt eines Ergebnisses."
+    },
+    "es": {
+     "t": "Medir lo que importa",
+     "g": "Registrar acciones que controlas, no resultados que no controlas.",
+     "p": [
+      "Controlas el paseo, no exactamente lo que marque la báscula o el reloj.",
+      "Registra esfuerzo y constancia: minutos practicados, páginas leídas.",
+      "Los resultados siguen a las acciones, pero a su propio ritmo."
+     ],
+     "q": "¿Qué acción podrías registrar en lugar de un resultado?",
+     "c": "Elige hoy una acción que controlas y regístrala en vez de un resultado."
+    },
+    "fr": {
+     "t": "Mesurer ce qui compte",
+     "g": "Suivre les actions que tu maîtrises, pas les résultats qui t'échappent.",
+     "p": [
+      "Tu maîtrises la marche, pas exactement ce qu'affichent la balance ou le chrono.",
+      "Suis l'effort et la régularité : minutes pratiquées, pages lues.",
+      "Les résultats suivent les actions, mais à leur rythme."
+     ],
+     "q": "Quelle action pourrais-tu suivre plutôt qu'un résultat ?",
+     "c": "Choisis aujourd'hui une action que tu maîtrises et suis-la plutôt qu'un résultat."
+    },
+    "it": {
+     "t": "Misurare ciò che conta",
+     "g": "Tracciare le azioni che controlli, non i risultati che non controlli.",
+     "p": [
+      "Controlli la camminata, non esattamente ciò che segna la bilancia o il cronometro.",
+      "Traccia impegno e costanza: minuti esercitati, pagine lette.",
+      "I risultati seguono le azioni, ma coi propri tempi."
+     ],
+     "q": "Quale azione potresti tracciare al posto di un risultato?",
+     "c": "Scegli oggi un'azione che controlli e tracciala invece di un risultato."
+    },
+    "pt": {
+     "t": "Medir o que conta",
+     "g": "Registar ações que controlas, não resultados que não controlas.",
+     "p": [
+      "Controlas a caminhada, não exatamente o que marca a balança ou o relógio.",
+      "Regista esforço e constância: minutos praticados, páginas lidas.",
+      "Os resultados seguem as ações, mas ao seu ritmo."
+     ],
+     "q": "Que ação poderias registar em vez de um resultado?",
+     "c": "Escolhe hoje uma ação que controlas e regista-a em vez de um resultado."
+    },
+    "pt_BR": {
+     "t": "Medir o que importa",
+     "g": "Registrar ações que você controla, não resultados que não controla.",
+     "p": [
+      "Você controla a caminhada, não exatamente o que a balança ou o relógio marca.",
+      "Registre esforço e constância: minutos praticados, páginas lidas.",
+      "Os resultados seguem as ações, mas no ritmo deles."
+     ],
+     "q": "Que ação você poderia registrar em vez de um resultado?",
+     "c": "Escolha hoje uma ação que você controla e registre no lugar de um resultado."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Weekly habit reviews",
+     "g": "Do a five-minute weekly check of what worked and what slipped.",
+     "p": [
+      "Pick a fixed time each week, like Sunday evening.",
+      "Ask three questions: what worked, what slipped, what to tweak.",
+      "Reviews turn days into learning."
+     ],
+     "q": "When in the week would a short review fit best?",
+     "c": "Schedule a five-minute weekly review in your calendar and do the first one."
+    },
+    "de": {
+     "t": "Wöchentlicher Gewohnheits-Check",
+     "g": "Einen Fünf-Minuten-Wochenrückblick machen: Was lief, was rutschte?",
+     "p": [
+      "Wähle jede Woche eine feste Zeit, etwa Sonntagabend.",
+      "Stelle drei Fragen: Was lief, was rutschte, was anpassen?",
+      "Rückblicke machen aus Tagen Lernen."
+     ],
+     "q": "Wann in der Woche würde ein kurzer Rückblick am besten passen?",
+     "c": "Trag einen Fünf-Minuten-Wochenrückblick in den Kalender ein und mach den ersten."
+    },
+    "es": {
+     "t": "Revisión semanal de hábitos",
+     "g": "Hacer un repaso semanal de cinco minutos de lo que funcionó y lo que falló.",
+     "p": [
+      "Elige una hora fija cada semana, como el domingo por la tarde.",
+      "Hazte tres preguntas: qué funcionó, qué falló, qué ajustar.",
+      "Las revisiones convierten los días en aprendizaje."
+     ],
+     "q": "¿En qué momento de la semana encajaría mejor una revisión corta?",
+     "c": "Agenda una revisión semanal de cinco minutos y haz la primera."
+    },
+    "fr": {
+     "t": "Bilan hebdomadaire des habitudes",
+     "g": "Faire un point de cinq minutes par semaine sur ce qui a marché ou glissé.",
+     "p": [
+      "Choisis un moment fixe chaque semaine, comme le dimanche soir.",
+      "Pose trois questions : ce qui a marché, ce qui a glissé, quoi ajuster.",
+      "Les bilans transforment les jours en apprentissage."
+     ],
+     "q": "À quel moment de la semaine un court bilan s'intégrerait-il le mieux ?",
+     "c": "Planifie un bilan hebdo de cinq minutes dans ton agenda et fais le premier."
+    },
+    "it": {
+     "t": "Revisione settimanale delle abitudini",
+     "g": "Fare un controllo settimanale di cinque minuti su cosa ha funzionato e cosa no.",
+     "p": [
+      "Scegli un momento fisso ogni settimana, come la domenica sera.",
+      "Fatti tre domande: cosa ha funzionato, cosa è scivolato, cosa ritoccare.",
+      "Le revisioni trasformano i giorni in apprendimento."
+     ],
+     "q": "In quale momento della settimana starebbe meglio una breve revisione?",
+     "c": "Metti in agenda una revisione settimanale di cinque minuti e fai la prima."
+    },
+    "pt": {
+     "t": "Revisão semanal dos hábitos",
+     "g": "Fazer uma revisão semanal de cinco minutos ao que funcionou e ao que falhou.",
+     "p": [
+      "Escolhe uma hora fixa em cada semana, como domingo ao fim da tarde.",
+      "Faz três perguntas: o que funcionou, o que falhou, o que ajustar.",
+      "As revisões transformam dias em aprendizagem."
+     ],
+     "q": "Em que altura da semana encaixaria melhor uma revisão curta?",
+     "c": "Marca na agenda uma revisão semanal de cinco minutos e faz a primeira."
+    },
+    "pt_BR": {
+     "t": "Revisão semanal dos hábitos",
+     "g": "Fazer uma revisão semanal de cinco minutos do que funcionou e do que falhou.",
+     "p": [
+      "Escolha um horário fixo na semana, como domingo à noite.",
+      "Faça três perguntas: o que funcionou, o que falhou, o que ajustar.",
+      "Revisões transformam dias em aprendizado."
+     ],
+     "q": "Em que momento da semana uma revisão curta se encaixaria melhor?",
+     "c": "Marque na agenda uma revisão semanal de cinco minutos e faça a primeira."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Habit scorecards",
+     "g": "Rate your routines as helpful, neutral or unhelpful.",
+     "p": [
+      "Write down your day's routines in order, from waking up on.",
+      "Mark each with plus for helpful, minus for unhelpful, equals for neutral.",
+      "The goal is awareness, not guilt."
+     ],
+     "q": "Which routine of your day gets a happy plus from you?",
+     "c": "Write today's routines and mark each plus, minus or equals."
+    },
+    "de": {
+     "t": "Gewohnheits-Bewertungsbogen",
+     "g": "Deine Routinen als hilfreich, neutral oder nicht hilfreich bewerten.",
+     "p": [
+      "Schreibe die Routinen deines Tages der Reihe nach auf, vom Aufwachen an.",
+      "Markiere jede mit Plus für hilfreich, Minus für nicht hilfreich, Gleich für neutral.",
+      "Ziel ist Bewusstsein, nicht Schuldgefühl."
+     ],
+     "q": "Welche Routine deines Tages bekommt von dir ein fröhliches Plus?",
+     "c": "Schreibe die heutigen Routinen auf und markiere jede mit Plus, Minus oder Gleich."
+    },
+    "es": {
+     "t": "Tarjeta de puntuación de hábitos",
+     "g": "Valorar tus rutinas como útiles, neutras o poco útiles.",
+     "p": [
+      "Anota las rutinas de tu día en orden, desde que despiertas.",
+      "Marca cada una con más si ayuda, menos si no ayuda, igual si es neutra.",
+      "El objetivo es la conciencia, no la culpa."
+     ],
+     "q": "¿Qué rutina de tu día recibe de ti un feliz más?",
+     "c": "Escribe las rutinas de hoy y marca cada una con más, menos o igual."
+    },
+    "fr": {
+     "t": "Fiches d'évaluation des habitudes",
+     "g": "Évaluer tes routines comme utiles, neutres ou peu utiles.",
+     "p": [
+      "Note les routines de ta journée dans l'ordre, dès le réveil.",
+      "Marque chacune d'un plus si utile, d'un moins si peu utile, d'un égal si neutre.",
+      "Le but est la prise de conscience, pas la culpabilité."
+     ],
+     "q": "Quelle routine de ta journée mérite un joyeux plus ?",
+     "c": "Écris les routines d'aujourd'hui et marque chacune plus, moins ou égal."
+    },
+    "it": {
+     "t": "Scheda di valutazione delle abitudini",
+     "g": "Valutare le tue routine come utili, neutre o poco utili.",
+     "p": [
+      "Scrivi in ordine le routine della tua giornata, dal risveglio.",
+      "Segna ognuna con più se utile, meno se poco utile, uguale se neutra.",
+      "Lo scopo è la consapevolezza, non il senso di colpa."
+     ],
+     "q": "Quale routine della tua giornata merita un bel più?",
+     "c": "Scrivi le routine di oggi e segna ognuna con più, meno o uguale."
+    },
+    "pt": {
+     "t": "Folha de avaliação dos hábitos",
+     "g": "Avaliar as tuas rotinas como úteis, neutras ou pouco úteis.",
+     "p": [
+      "Anota as rotinas do teu dia por ordem, desde que acordas.",
+      "Marca cada uma com mais se ajuda, menos se não ajuda, igual se for neutra.",
+      "O objetivo é a consciência, não a culpa."
+     ],
+     "q": "Que rotina do teu dia merece um alegre mais?",
+     "c": "Escreve as rotinas de hoje e marca cada uma com mais, menos ou igual."
+    },
+    "pt_BR": {
+     "t": "Folha de avaliação dos hábitos",
+     "g": "Avaliar suas rotinas como úteis, neutras ou pouco úteis.",
+     "p": [
+      "Anote as rotinas do seu dia em ordem, desde que acorda.",
+      "Marque cada uma com mais se ajuda, menos se não ajuda, igual se for neutra.",
+      "O objetivo é a consciência, não a culpa."
+     ],
+     "q": "Que rotina do seu dia merece um alegre mais?",
+     "c": "Escreva as rotinas de hoje e marque cada uma com mais, menos ou igual."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tracking without obsession",
+     "g": "Keep tracking light and stop when it feels stressful.",
+     "p": [
+      "Tracking is a helper, never a boss.",
+      "If checking becomes anxious, take a break or simplify.",
+      "You can pause tracking once the habit feels natural."
+     ],
+     "q": "How do you know when a tool stops helping you?",
+     "c": "Choose one thing to stop tracking or simplify, and notice how it feels."
+    },
+    "de": {
+     "t": "Tracking ohne Besessenheit",
+     "g": "Tracking leicht halten und aufhören, wenn es stresst.",
+     "p": [
+      "Tracking ist ein Helfer, nie ein Chef.",
+      "Wird das Kontrollieren ängstlich, mach Pause oder vereinfache.",
+      "Du kannst pausieren, sobald sich die Gewohnheit natürlich anfühlt."
+     ],
+     "q": "Woran merkst du, dass ein Hilfsmittel nicht mehr hilft?",
+     "c": "Wähle etwas, das du nicht mehr verfolgst oder vereinfachst, und spüre, wie es sich anfühlt."
+    },
+    "es": {
+     "t": "Registrar sin obsesionarse",
+     "g": "Mantener el registro ligero y parar cuando estrese.",
+     "p": [
+      "Registrar es un ayudante, nunca un jefe.",
+      "Si revisar te genera ansiedad, haz una pausa o simplifica.",
+      "Puedes dejar de registrar cuando el hábito te resulte natural."
+     ],
+     "q": "¿Cómo sabes cuándo una herramienta deja de ayudarte?",
+     "c": "Elige algo que dejarás de registrar o simplificarás, y nota cómo se siente."
+    },
+    "fr": {
+     "t": "Suivre sans obsession",
+     "g": "Garder un suivi léger et s'arrêter quand il stresse.",
+     "p": [
+      "Le suivi est un assistant, jamais un patron.",
+      "Si vérifier devient anxieux, fais une pause ou simplifie.",
+      "Tu peux arrêter le suivi quand l'habitude paraît naturelle."
+     ],
+     "q": "Comment sais-tu qu'un outil ne t'aide plus ?",
+     "c": "Choisis une chose à ne plus suivre ou à simplifier et observe ce que tu ressens."
+    },
+    "it": {
+     "t": "Tracciare senza ossessione",
+     "g": "Tenere il tracciamento leggero e fermarsi quando stressa.",
+     "p": [
+      "Tracciare è un aiutante, mai un capo.",
+      "Se controllare diventa ansioso, fai una pausa o semplifica.",
+      "Puoi smettere di tracciare quando l'abitudine ti sembra naturale."
+     ],
+     "q": "Come capisci quando uno strumento non ti aiuta più?",
+     "c": "Scegli una cosa da non tracciare più o da semplificare e osserva come ti senti."
+    },
+    "pt": {
+     "t": "Registar sem obsessão",
+     "g": "Manter o registo leve e parar quando causar stress.",
+     "p": [
+      "Registar é um ajudante, nunca um chefe.",
+      "Se verificar causar ansiedade, faz uma pausa ou simplifica.",
+      "Podes parar de registar quando o hábito já for natural."
+     ],
+     "q": "Como sabes quando uma ferramenta deixa de te ajudar?",
+     "c": "Escolhe algo que deixas de registar ou simplificas e repara como te sentes."
+    },
+    "pt_BR": {
+     "t": "Registrar sem obsessão",
+     "g": "Manter o registro leve e parar quando causar estresse.",
+     "p": [
+      "Registrar é um ajudante, nunca um chefe.",
+      "Se conferir causar ansiedade, faça uma pausa ou simplifique.",
+      "Você pode parar de registrar quando o hábito já for natural."
+     ],
+     "q": "Como você sabe quando uma ferramenta deixa de ajudar?",
+     "c": "Escolha algo para deixar de registrar ou simplificar e note como se sente."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rewarding consistency",
+     "g": "Choose healthy small rewards for streaks and milestones.",
+     "p": [
+      "Reward milestones, like seven days, with something you enjoy.",
+      "Pick rewards that match your goals, like a new book or a walk.",
+      "Keep rewards small, so the habit stays the main prize."
+     ],
+     "q": "What would be a fun reward for one week of your habit?",
+     "c": "Choose a reward for your next milestone and write it next to your tracker."
+    },
+    "de": {
+     "t": "Beständigkeit belohnen",
+     "g": "Gesunde kleine Belohnungen für Serien und Meilensteine wählen.",
+     "p": [
+      "Belohne Meilensteine, etwa sieben Tage, mit etwas, das du magst.",
+      "Wähle Belohnungen passend zu deinen Zielen, etwa ein neues Buch oder einen Spaziergang.",
+      "Halte Belohnungen klein, damit die Gewohnheit der Hauptpreis bleibt."
+     ],
+     "q": "Was wäre eine schöne Belohnung für eine Woche deiner Gewohnheit?",
+     "c": "Wähle eine Belohnung für deinen nächsten Meilenstein und schreibe sie neben deinen Tracker."
+    },
+    "es": {
+     "t": "Premia la constancia",
+     "g": "Elegir pequeñas recompensas sanas para rachas e hitos.",
+     "p": [
+      "Premia los hitos, como siete días, con algo que disfrutes.",
+      "Elige premios acordes a tus metas, como un libro nuevo o un paseo.",
+      "Mantén los premios pequeños para que el hábito siga siendo el premio principal."
+     ],
+     "q": "¿Qué sería un premio divertido por una semana de tu hábito?",
+     "c": "Elige un premio para tu próximo hito y anótalo junto a tu registro."
+    },
+    "fr": {
+     "t": "Récompenser la régularité",
+     "g": "Choisir de petites récompenses saines pour les séries et les étapes.",
+     "p": [
+      "Récompense les étapes, comme sept jours, par quelque chose que tu aimes.",
+      "Choisis des récompenses cohérentes avec tes objectifs, comme un livre ou une balade.",
+      "Garde-les petites pour que l'habitude reste la vraie récompense."
+     ],
+     "q": "Quelle serait une belle récompense pour une semaine de ton habitude ?",
+     "c": "Choisis une récompense pour ta prochaine étape et note-la près de ton suivi."
+    },
+    "it": {
+     "t": "Premiare la costanza",
+     "g": "Scegliere piccole ricompense sane per serie e traguardi.",
+     "p": [
+      "Premia i traguardi, come sette giorni, con qualcosa che ti piace.",
+      "Scegli premi in linea con i tuoi obiettivi, come un libro nuovo o una passeggiata.",
+      "Tieni i premi piccoli, così l'abitudine resta il premio principale."
+     ],
+     "q": "Quale sarebbe un bel premio per una settimana della tua abitudine?",
+     "c": "Scegli un premio per il prossimo traguardo e scrivilo accanto al tracker."
+    },
+    "pt": {
+     "t": "Premiar a constância",
+     "g": "Escolher pequenas recompensas saudáveis para sequências e marcos.",
+     "p": [
+      "Premeia os marcos, como sete dias, com algo de que gostes.",
+      "Escolhe prémios alinhados com as tuas metas, como um livro novo ou um passeio.",
+      "Mantém os prémios pequenos para o hábito continuar a ser o prémio principal."
+     ],
+     "q": "Que seria um prémio divertido por uma semana do teu hábito?",
+     "c": "Escolhe um prémio para o próximo marco e escreve-o junto ao teu registo."
+    },
+    "pt_BR": {
+     "t": "Premiar a constância",
+     "g": "Escolher pequenas recompensas saudáveis para sequências e marcos.",
+     "p": [
+      "Premie os marcos, como sete dias, com algo de que você goste.",
+      "Escolha prêmios alinhados às suas metas, como um livro novo ou um passeio.",
+      "Mantenha os prêmios pequenos para o hábito continuar sendo o prêmio principal."
+     ],
+     "q": "Qual seria um prêmio divertido por uma semana do seu hábito?",
+     "c": "Escolha um prêmio para o próximo marco e escreva junto ao seu registro."
+    }
+   }
+  }
+ ]
+}

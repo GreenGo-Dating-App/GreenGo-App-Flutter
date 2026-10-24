@@ -1,0 +1,835 @@
+{
+ "topic": "studying",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to smarter studying",
+     "g": "Learn why how you study matters as much as how long you study.",
+     "p": [
+      "Many techniques that feel easy, like rereading, give weak results compared with active ones.",
+      "Over 365 days we add one small, proven habit at a time, so nothing feels overwhelming.",
+      "Rest, sleep and breaks are part of studying, not a waste of it."
+     ],
+     "q": "What is one subject you would love to study more easily?",
+     "c": "Today, write down one study habit you already have that works for you."
+    },
+    "de": {
+     "t": "Willkommen beim klügeren Lernen",
+     "g": "Du erfährst, warum die Art des Lernens genauso zählt wie die Dauer.",
+     "p": [
+      "Viele Methoden, die sich leicht anfühlen, etwa Wiederlesen, wirken schwächer als aktive Methoden.",
+      "In 365 Tagen kommt jeden Tag eine kleine, bewährte Gewohnheit dazu, ganz ohne Überforderung.",
+      "Pausen, Schlaf und Erholung gehören zum Lernen dazu und sind keine Zeitverschwendung."
+     ],
+     "q": "Welches Fach würdest du gern leichter lernen?",
+     "c": "Schreib heute eine Lerngewohnheit auf, die bei dir schon gut funktioniert."
+    },
+    "es": {
+     "t": "Bienvenido a estudiar mejor",
+     "g": "Descubre por qué cómo estudias importa tanto como cuánto estudias.",
+     "p": [
+      "Muchas técnicas que parecen fáciles, como releer, rinden menos que las técnicas activas.",
+      "En 365 días sumamos un hábito pequeño y probado cada día, sin agobios.",
+      "El descanso, el sueño y las pausas forman parte del estudio, no son tiempo perdido."
+     ],
+     "q": "¿Qué materia te gustaría estudiar con más facilidad?",
+     "c": "Hoy anota un hábito de estudio que ya tienes y que te funciona."
+    },
+    "fr": {
+     "t": "Bienvenue dans l'étude intelligente",
+     "g": "Découvre pourquoi la façon d'étudier compte autant que la durée.",
+     "p": [
+      "Beaucoup de méthodes qui semblent faciles, comme relire, donnent moins que les méthodes actives.",
+      "En 365 jours, on ajoute chaque jour une petite habitude éprouvée, sans se sentir submergé.",
+      "Le repos, le sommeil et les pauses font partie de l'étude et ne sont pas du temps perdu."
+     ],
+     "q": "Quelle matière aimerais-tu étudier plus facilement ?",
+     "c": "Aujourd'hui, note une habitude d'étude que tu as déjà et qui marche pour toi."
+    },
+    "it": {
+     "t": "Benvenuto nello studio intelligente",
+     "g": "Scopri perché come studi conta quanto quanto studi.",
+     "p": [
+      "Molte tecniche che sembrano facili, come rileggere, rendono meno di quelle attive.",
+      "In 365 giorni aggiungiamo ogni giorno una piccola abitudine collaudata, senza stress.",
+      "Riposo, sonno e pause fanno parte dello studio e non sono tempo sprecato."
+     ],
+     "q": "Quale materia vorresti studiare con più facilità?",
+     "c": "Oggi scrivi un'abitudine di studio che hai già e che funziona per te."
+    },
+    "pt": {
+     "t": "Bem-vindo ao estudo inteligente",
+     "g": "Descobre porque é que o modo como estudas conta tanto como o tempo que estudas.",
+     "p": [
+      "Muitas técnicas que parecem fáceis, como reler, rendem menos do que as técnicas ativas.",
+      "Ao longo de 365 dias juntamos um hábito pequeno e comprovado por dia, sem sobrecarga.",
+      "Descanso, sono e pausas fazem parte do estudo e não são tempo perdido."
+     ],
+     "q": "Que disciplina gostarias de estudar com mais facilidade?",
+     "c": "Hoje, escreve um hábito de estudo que já tens e que resulta contigo."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo ao estudo inteligente",
+     "g": "Descubra por que o jeito de estudar importa tanto quanto o tempo estudado.",
+     "p": [
+      "Muitas técnicas que parecem fáceis, como reler, rendem menos que as técnicas ativas.",
+      "Em 365 dias, somamos um hábito pequeno e comprovado por dia, sem sobrecarga.",
+      "Descanso, sono e pausas fazem parte do estudo e não são tempo perdido."
+     ],
+     "q": "Que matéria você gostaria de estudar com mais facilidade?",
+     "c": "Hoje, anote um hábito de estudo que você já tem e que funciona para você."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your learner profile",
+     "g": "Map your subjects, goals, strengths and struggles so we know where to start.",
+     "p": [
+      "List the subjects you study now and mark each one as easy, medium or hard for you.",
+      "Name two strengths, such as being curious or good at planning, that you can build on.",
+      "Pick one struggle to fix first, like procrastination or poor focus, and keep it small."
+     ],
+     "q": "Which subject feels hardest right now, and why do you think so?",
+     "c": "Make a three-line profile: your subjects, one strength, one struggle."
+    },
+    "de": {
+     "t": "Dein Lernprofil",
+     "g": "Erfasse Fächer, Ziele, Stärken und Schwierigkeiten, damit wir wissen, wo wir anfangen.",
+     "p": [
+      "Liste deine aktuellen Fächer auf und markiere sie als leicht, mittel oder schwer für dich.",
+      "Nenne zwei Stärken, etwa Neugier oder gute Planung, auf denen du aufbauen kannst.",
+      "Wähle zuerst eine Schwierigkeit, etwa Aufschieben oder Konzentration, und halte sie klein."
+     ],
+     "q": "Welches Fach fällt dir gerade am schwersten, und warum?",
+     "c": "Schreib ein Profil in drei Zeilen: Fächer, eine Stärke, eine Schwierigkeit."
+    },
+    "es": {
+     "t": "Tu perfil de estudiante",
+     "g": "Mapea tus materias, metas, fortalezas y dificultades para saber por dónde empezar.",
+     "p": [
+      "Haz una lista de tus materias y marca cada una como fácil, media o difícil para ti.",
+      "Nombra dos fortalezas, como la curiosidad o planificar bien, sobre las que construir.",
+      "Elige una dificultad para atacar primero, como procrastinar o concentrarte, y hazla pequeña."
+     ],
+     "q": "¿Qué materia te resulta más difícil ahora y por qué crees que es así?",
+     "c": "Escribe un perfil de tres líneas: tus materias, una fortaleza y una dificultad."
+    },
+    "fr": {
+     "t": "Ton profil d'apprenant",
+     "g": "Dresse la carte de tes matières, objectifs, forces et difficultés pour savoir où commencer.",
+     "p": [
+      "Liste tes matières actuelles et note chacune comme facile, moyenne ou difficile pour toi.",
+      "Cite deux forces, comme la curiosité ou le sens de l'organisation, sur lesquelles t'appuyer.",
+      "Choisis d'abord une difficulté, comme la procrastination ou la concentration, et garde-la petite."
+     ],
+     "q": "Quelle matière te paraît la plus difficile en ce moment, et pourquoi ?",
+     "c": "Rédige un profil en trois lignes : tes matières, une force, une difficulté."
+    },
+    "it": {
+     "t": "Il tuo profilo di studente",
+     "g": "Mappa materie, obiettivi, punti di forza e difficoltà per capire da dove partire.",
+     "p": [
+      "Elenca le materie che studi ora e segna ciascuna come facile, media o difficile per te.",
+      "Indica due punti di forza, come la curiosità o l'organizzazione, su cui costruire.",
+      "Scegli una difficoltà da affrontare per prima, come procrastinare o concentrarti, e tienila piccola."
+     ],
+     "q": "Quale materia ti sembra la più difficile adesso e perché?",
+     "c": "Scrivi un profilo in tre righe: le tue materie, un punto di forza, una difficoltà."
+    },
+    "pt": {
+     "t": "O teu perfil de estudante",
+     "g": "Mapeia disciplinas, objetivos, pontos fortes e dificuldades para saberes por onde começar.",
+     "p": [
+      "Faz uma lista das disciplinas atuais e marca cada uma como fácil, média ou difícil para ti.",
+      "Indica dois pontos fortes, como a curiosidade ou o planeamento, em que podes apostar.",
+      "Escolhe uma dificuldade para resolver primeiro, como adiar tarefas ou falta de foco, e mantém-na pequena."
+     ],
+     "q": "Que disciplina te parece mais difícil neste momento e porquê?",
+     "c": "Escreve um perfil de três linhas: disciplinas, um ponto forte, uma dificuldade."
+    },
+    "pt_BR": {
+     "t": "Seu perfil de estudante",
+     "g": "Mapeie matérias, metas, pontos fortes e dificuldades para saber por onde começar.",
+     "p": [
+      "Liste as matérias que você estuda e marque cada uma como fácil, média ou difícil para você.",
+      "Cite dois pontos fortes, como curiosidade ou organização, para construir em cima deles.",
+      "Escolha uma dificuldade para resolver primeiro, como procrastinar ou perder o foco, e mantenha-a pequena."
+     ],
+     "q": "Qual matéria parece mais difícil agora e por que você acha isso?",
+     "c": "Escreva um perfil de três linhas: suas matérias, um ponto forte, uma dificuldade."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting a clear study goal",
+     "g": "Turn a vague wish like 'do better' into a specific goal with a deadline.",
+     "p": [
+      "A good goal says what, how much and by when, for example: finish chapter 3 notes by Friday.",
+      "Goals about actions you control work better than goals about results you cannot control.",
+      "Write the goal where you can see it and check it once a week."
+     ],
+     "q": "What is one study goal you could reach in the next two weeks?",
+     "c": "Rewrite 'do better in maths' as a goal with a number and a date."
+    },
+    "de": {
+     "t": "Ein klares Lernziel setzen",
+     "g": "Mach aus einem vagen Wunsch wie 'besser werden' ein konkretes Ziel mit Termin.",
+     "p": [
+      "Ein gutes Ziel sagt, was, wie viel und bis wann, zum Beispiel: Notizen zu Kapitel 3 bis Freitag.",
+      "Ziele über Handlungen, die du steuerst, wirken besser als Ziele über Ergebnisse, die du nicht steuerst.",
+      "Schreib das Ziel dorthin, wo du es siehst, und prüf es einmal pro Woche."
+     ],
+     "q": "Welches Lernziel könntest du in den nächsten zwei Wochen erreichen?",
+     "c": "Formuliere 'besser in Mathe werden' als Ziel mit Zahl und Datum um."
+    },
+    "es": {
+     "t": "Fijar una meta de estudio clara",
+     "g": "Convierte un deseo vago como 'mejorar' en una meta concreta con fecha límite.",
+     "p": [
+      "Una buena meta dice qué, cuánto y para cuándo, por ejemplo: apuntes del capítulo 3 el viernes.",
+      "Las metas sobre acciones que controlas funcionan mejor que las de resultados que no controlas.",
+      "Escribe la meta donde puedas verla y revísala una vez por semana."
+     ],
+     "q": "¿Qué meta de estudio podrías lograr en las próximas dos semanas?",
+     "c": "Reescribe 'mejorar en mates' como una meta con un número y una fecha."
+    },
+    "fr": {
+     "t": "Fixer un objectif d'étude clair",
+     "g": "Transforme un vœu vague comme 'mieux réussir' en objectif précis avec une échéance.",
+     "p": [
+      "Un bon objectif dit quoi, combien et pour quand, par exemple : notes du chapitre 3 pour vendredi.",
+      "Les objectifs portant sur des actions que tu contrôles marchent mieux que ceux sur des résultats incertains.",
+      "Écris l'objectif là où tu le vois et vérifie-le une fois par semaine."
+     ],
+     "q": "Quel objectif d'étude pourrais-tu atteindre dans les deux prochaines semaines ?",
+     "c": "Reformule 'progresser en maths' en objectif avec un chiffre et une date."
+    },
+    "it": {
+     "t": "Fissare un obiettivo di studio chiaro",
+     "g": "Trasforma un desiderio vago come 'andare meglio' in un obiettivo preciso con scadenza.",
+     "p": [
+      "Un buon obiettivo dice cosa, quanto e entro quando, per esempio: appunti del capitolo 3 entro venerdì.",
+      "Gli obiettivi sulle azioni che controlli funzionano meglio di quelli sui risultati che non controlli.",
+      "Scrivi l'obiettivo dove lo vedi e controllalo una volta a settimana."
+     ],
+     "q": "Quale obiettivo di studio potresti raggiungere nelle prossime due settimane?",
+     "c": "Riscrivi 'andare meglio in matematica' come obiettivo con un numero e una data."
+    },
+    "pt": {
+     "t": "Definir um objetivo de estudo claro",
+     "g": "Transforma um desejo vago como 'melhorar' num objetivo concreto com prazo.",
+     "p": [
+      "Um bom objetivo diz o quê, quanto e até quando, por exemplo: apontamentos do capítulo 3 até sexta.",
+      "Objetivos sobre ações que controlas funcionam melhor do que sobre resultados que não controlas.",
+      "Escreve o objetivo num sítio visível e revê-o uma vez por semana."
+     ],
+     "q": "Que objetivo de estudo poderias alcançar nas próximas duas semanas?",
+     "c": "Reescreve 'melhorar a matemática' como objetivo com um número e uma data."
+    },
+    "pt_BR": {
+     "t": "Definir uma meta de estudo clara",
+     "g": "Transforme um desejo vago como 'melhorar' em uma meta concreta com prazo.",
+     "p": [
+      "Uma boa meta diz o quê, quanto e até quando, por exemplo: anotações do capítulo 3 até sexta.",
+      "Metas sobre ações que você controla funcionam melhor que as sobre resultados que você não controla.",
+      "Escreva a meta onde você possa vê-la e revise uma vez por semana."
+     ],
+     "q": "Que meta de estudo você poderia alcançar nas próximas duas semanas?",
+     "c": "Reescreva 'melhorar em matemática' como uma meta com número e data."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The growth mindset",
+     "g": "See how believing skills can grow changes the way you handle mistakes.",
+     "p": [
+      "Brains change with practice, so 'I can't do this' becomes 'I can't do this yet'.",
+      "Mistakes are information: they show exactly what to practise next.",
+      "Praise your effort and your strategies, not only your results."
+     ],
+     "q": "Tell me about something you were bad at once and later got better at.",
+     "c": "Replace one 'I can't' about studying today with 'I can't yet'."
+    },
+    "de": {
+     "t": "Die Wachstumsmentalität",
+     "g": "Du siehst, wie der Glaube an wachsende Fähigkeiten deinen Umgang mit Fehlern verändert.",
+     "p": [
+      "Das Gehirn verändert sich durch Übung, aus 'Ich kann das nicht' wird 'Ich kann das noch nicht'.",
+      "Fehler sind Information: Sie zeigen genau, was du als Nächstes üben solltest.",
+      "Lobe deinen Einsatz und deine Strategien, nicht nur die Ergebnisse."
+     ],
+     "q": "Erzähl von etwas, das du früher schlecht konntest und später gelernt hast.",
+     "c": "Ersetze heute ein 'Ich kann nicht' beim Lernen durch 'Ich kann noch nicht'."
+    },
+    "es": {
+     "t": "La mentalidad de crecimiento",
+     "g": "Verás cómo creer que las habilidades crecen cambia tu forma de tratar los errores.",
+     "p": [
+      "El cerebro cambia con la práctica: 'no puedo' pasa a ser 'todavía no puedo'.",
+      "Los errores son información: te muestran justo qué practicar después.",
+      "Valora tu esfuerzo y tus estrategias, no solo los resultados."
+     ],
+     "q": "Cuéntame algo que se te daba mal y luego mejoraste.",
+     "c": "Cambia hoy un 'no puedo' sobre el estudio por un 'todavía no puedo'."
+    },
+    "fr": {
+     "t": "L'état d'esprit de croissance",
+     "g": "Vois comment croire que les compétences progressent change ta façon de gérer les erreurs.",
+     "p": [
+      "Le cerveau évolue avec la pratique : 'je n'y arrive pas' devient 'je n'y arrive pas encore'.",
+      "Les erreurs sont des informations : elles montrent précisément quoi travailler ensuite.",
+      "Félicite ton effort et tes stratégies, pas seulement tes résultats."
+     ],
+     "q": "Raconte-moi une chose que tu faisais mal et que tu as fini par maîtriser.",
+     "c": "Remplace aujourd'hui un 'je n'y arrive pas' par 'je n'y arrive pas encore'."
+    },
+    "it": {
+     "t": "La mentalità di crescita",
+     "g": "Scopri come credere che le abilità crescano cambia il modo di trattare gli errori.",
+     "p": [
+      "Il cervello cambia con la pratica: 'non ci riesco' diventa 'non ci riesco ancora'.",
+      "Gli errori sono informazioni: mostrano esattamente cosa esercitare dopo.",
+      "Elogia l'impegno e le strategie, non solo i risultati."
+     ],
+     "q": "Raccontami qualcosa in cui eri scarso e che poi hai imparato.",
+     "c": "Oggi sostituisci un 'non ce la faccio' sullo studio con 'non ancora'."
+    },
+    "pt": {
+     "t": "A mentalidade de crescimento",
+     "g": "Vê como acreditar que as capacidades crescem muda a forma de lidar com os erros.",
+     "p": [
+      "O cérebro muda com a prática: 'não consigo' passa a 'ainda não consigo'.",
+      "Os erros são informação: mostram exatamente o que praticar a seguir.",
+      "Valoriza o teu esforço e as tuas estratégias, não só os resultados."
+     ],
+     "q": "Conta-me algo em que eras mau e que depois melhoraste.",
+     "c": "Hoje, troca um 'não consigo' sobre o estudo por 'ainda não consigo'."
+    },
+    "pt_BR": {
+     "t": "A mentalidade de crescimento",
+     "g": "Veja como acreditar que as habilidades crescem muda seu jeito de lidar com erros.",
+     "p": [
+      "O cérebro muda com a prática: 'não consigo' vira 'ainda não consigo'.",
+      "Erros são informação: mostram exatamente o que praticar em seguida.",
+      "Valorize seu esforço e suas estratégias, não só os resultados."
+     ],
+     "q": "Conte algo em que você era ruim e depois melhorou.",
+     "c": "Hoje, troque um 'não consigo' sobre estudo por 'ainda não consigo'."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Myths about learning styles",
+     "g": "Learn why 'I am a visual learner' is a myth and mixing methods works better.",
+     "p": [
+      "Studies have not found that teaching to a preferred style improves learning.",
+      "What matters is matching the method to the content: maps need pictures, sounds need listening.",
+      "Using words, pictures, speaking and practice together helps everyone."
+     ],
+     "q": "Which way of studying do you prefer, and have you tried others lately?",
+     "c": "Study one topic today in two ways, like reading plus drawing a quick sketch."
+    },
+    "de": {
+     "t": "Mythen über Lerntypen",
+     "g": "Du erfährst, warum 'Ich bin ein visueller Typ' ein Mythos ist und Mischen besser wirkt.",
+     "p": [
+      "Studien haben nicht gezeigt, dass Lernen nach dem bevorzugten Stil bessere Ergebnisse bringt.",
+      "Entscheidend ist, die Methode zum Inhalt zu wählen: Karten brauchen Bilder, Klänge brauchen Hören.",
+      "Wörter, Bilder, Sprechen und Üben zusammen helfen jedem."
+     ],
+     "q": "Wie lernst du am liebsten, und hast du zuletzt andere Wege probiert?",
+     "c": "Lerne heute ein Thema auf zwei Arten, etwa Lesen plus eine schnelle Skizze."
+    },
+    "es": {
+     "t": "Mitos sobre los estilos de aprendizaje",
+     "g": "Descubre por qué 'soy visual' es un mito y por qué mezclar métodos funciona mejor.",
+     "p": [
+      "Los estudios no han encontrado que enseñar según el estilo preferido mejore el aprendizaje.",
+      "Lo importante es adaptar el método al contenido: los mapas piden imágenes, los sonidos piden escuchar.",
+      "Combinar palabras, imágenes, hablar y practicar ayuda a todo el mundo."
+     ],
+     "q": "¿Cómo prefieres estudiar y has probado otras formas últimamente?",
+     "c": "Estudia hoy un tema de dos maneras, como leer y dibujar un esquema rápido."
+    },
+    "fr": {
+     "t": "Les mythes des styles d'apprentissage",
+     "g": "Comprends pourquoi 'je suis visuel' est un mythe et pourquoi mélanger les méthodes marche mieux.",
+     "p": [
+      "Les études n'ont pas montré qu'enseigner selon le style préféré améliore l'apprentissage.",
+      "L'essentiel est d'adapter la méthode au contenu : les cartes demandent des images, les sons de l'écoute.",
+      "Associer mots, images, expression orale et pratique aide tout le monde."
+     ],
+     "q": "Comment préfères-tu étudier, et as-tu essayé d'autres façons récemment ?",
+     "c": "Étudie aujourd'hui un sujet de deux façons, comme lire puis dessiner un croquis rapide."
+    },
+    "it": {
+     "t": "I miti sugli stili di apprendimento",
+     "g": "Scopri perché 'sono visivo' è un mito e perché mescolare i metodi funziona meglio.",
+     "p": [
+      "Gli studi non hanno trovato che insegnare secondo lo stile preferito migliori l'apprendimento.",
+      "Conta adattare il metodo al contenuto: le mappe vogliono immagini, i suoni vogliono ascolto.",
+      "Usare insieme parole, immagini, parlato e pratica aiuta tutti."
+     ],
+     "q": "Come preferisci studiare e hai provato altri modi di recente?",
+     "c": "Oggi studia un argomento in due modi, come leggere e fare uno schizzo veloce."
+    },
+    "pt": {
+     "t": "Mitos sobre estilos de aprendizagem",
+     "g": "Descobre porque 'sou visual' é um mito e porque misturar métodos resulta melhor.",
+     "p": [
+      "Os estudos não mostraram que ensinar segundo o estilo preferido melhore a aprendizagem.",
+      "O que conta é adaptar o método ao conteúdo: mapas pedem imagens, sons pedem audição.",
+      "Usar palavras, imagens, fala e prática em conjunto ajuda toda a gente."
+     ],
+     "q": "Como preferes estudar e já experimentaste outras formas ultimamente?",
+     "c": "Hoje, estuda um tema de duas maneiras, como ler e fazer um esboço rápido."
+    },
+    "pt_BR": {
+     "t": "Mitos sobre estilos de aprendizagem",
+     "g": "Descubra por que 'sou visual' é um mito e por que misturar métodos funciona melhor.",
+     "p": [
+      "Estudos não mostraram que ensinar pelo estilo preferido melhore a aprendizagem.",
+      "O que importa é adaptar o método ao conteúdo: mapas pedem imagens, sons pedem audição.",
+      "Usar palavras, imagens, fala e prática juntas ajuda todo mundo."
+     ],
+     "q": "Como você prefere estudar e já tentou outros jeitos recentemente?",
+     "c": "Hoje, estude um tema de duas maneiras, como ler e fazer um esboço rápido."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your study baseline week",
+     "g": "Track when, where and how long you really study for seven days, without judging.",
+     "p": [
+      "Write down each session: start time, place, length and what you worked on.",
+      "Add a quick 1-to-5 score for how focused you felt after each session.",
+      "This is just data, so no guilt: you cannot improve what you have not seen."
+     ],
+     "q": "What do you expect your baseline week will show about your habits?",
+     "c": "Start your log today with a note or a small table, and fill it in after studying."
+    },
+    "de": {
+     "t": "Deine Lern-Basiswoche",
+     "g": "Halte sieben Tage lang fest, wann, wo und wie lange du wirklich lernst, ohne Urteil.",
+     "p": [
+      "Notiere jede Einheit: Startzeit, Ort, Dauer und woran du gearbeitet hast.",
+      "Gib danach eine schnelle Note von 1 bis 5 dafür, wie konzentriert du warst.",
+      "Das sind nur Daten, ohne Schuldgefühle: Was du nicht siehst, kannst du nicht verbessern."
+     ],
+     "q": "Was erwartest du, dass deine Basiswoche über deine Gewohnheiten zeigt?",
+     "c": "Starte heute dein Protokoll mit einer Notiz oder Tabelle und fülle es nach dem Lernen aus."
+    },
+    "es": {
+     "t": "Tu semana de referencia",
+     "g": "Registra cuándo, dónde y cuánto estudias de verdad durante siete días, sin juzgarte.",
+     "p": [
+      "Anota cada sesión: hora de inicio, lugar, duración y en qué trabajaste.",
+      "Añade una nota rápida de 1 a 5 sobre lo concentrado que estuviste.",
+      "Son solo datos, sin culpa: no puedes mejorar lo que no has visto."
+     ],
+     "q": "¿Qué crees que mostrará tu semana de referencia sobre tus hábitos?",
+     "c": "Empieza hoy tu registro en una nota o tabla pequeña y rellénalo al terminar de estudiar."
+    },
+    "fr": {
+     "t": "Ta semaine de référence",
+     "g": "Note quand, où et combien de temps tu étudies vraiment pendant sept jours, sans te juger.",
+     "p": [
+      "Écris chaque séance : heure de début, lieu, durée et ce que tu as travaillé.",
+      "Ajoute une note de 1 à 5 sur ta concentration après chaque séance.",
+      "Ce ne sont que des données, sans culpabilité : on n'améliore pas ce qu'on n'a pas vu."
+     ],
+     "q": "Que penses-tu que ta semaine de référence montrera sur tes habitudes ?",
+     "c": "Commence ton journal aujourd'hui dans une note ou un petit tableau, rempli après chaque étude."
+    },
+    "it": {
+     "t": "La tua settimana di riferimento",
+     "g": "Registra quando, dove e quanto studi davvero per sette giorni, senza giudicarti.",
+     "p": [
+      "Annota ogni sessione: ora di inizio, luogo, durata e su cosa hai lavorato.",
+      "Aggiungi un voto rapido da 1 a 5 su quanto eri concentrato.",
+      "Sono solo dati, senza sensi di colpa: non puoi migliorare ciò che non hai visto."
+     ],
+     "q": "Cosa pensi che la tua settimana di riferimento mostrerà sulle tue abitudini?",
+     "c": "Inizia oggi il tuo registro in una nota o tabella e compilalo dopo aver studiato."
+    },
+    "pt": {
+     "t": "A tua semana de referência",
+     "g": "Regista quando, onde e quanto tempo estudas mesmo durante sete dias, sem te julgares.",
+     "p": [
+      "Anota cada sessão: hora de início, local, duração e no que trabalhaste.",
+      "Junta uma nota rápida de 1 a 5 sobre o quanto estiveste concentrado.",
+      "São apenas dados, sem culpa: não podes melhorar o que não vês."
+     ],
+     "q": "O que achas que a tua semana de referência vai mostrar sobre os teus hábitos?",
+     "c": "Começa hoje o teu registo numa nota ou tabela e preenche-o depois de estudar."
+    },
+    "pt_BR": {
+     "t": "Sua semana de referência",
+     "g": "Registre quando, onde e quanto tempo você realmente estuda por sete dias, sem se julgar.",
+     "p": [
+      "Anote cada sessão: horário de início, local, duração e no que trabalhou.",
+      "Adicione uma nota rápida de 1 a 5 sobre o quanto você estava concentrado.",
+      "São só dados, sem culpa: você não melhora o que não enxerga."
+     ],
+     "q": "O que você acha que sua semana de referência vai mostrar sobre seus hábitos?",
+     "c": "Comece hoje seu registro em uma nota ou tabela e preencha depois de estudar."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Small wins first",
+     "g": "Start with tiny daily sessions so the habit sticks before you make it longer.",
+     "p": [
+      "Ten focused minutes every day beat one long session you keep postponing.",
+      "Tie the session to something you already do, like right after breakfast.",
+      "Mark each finished day on a calendar: a visible streak is motivating."
+     ],
+     "q": "When in your day could a ten-minute study session fit most easily?",
+     "c": "Do a ten-minute session today and tick it off on your calendar."
+    },
+    "de": {
+     "t": "Erst die kleinen Erfolge",
+     "g": "Beginne mit winzigen täglichen Einheiten, damit die Gewohnheit hält, bevor du verlängerst.",
+     "p": [
+      "Zehn konzentrierte Minuten täglich schlagen eine lange Einheit, die du ständig verschiebst.",
+      "Koppel die Einheit an etwas, das du ohnehin tust, etwa direkt nach dem Frühstück.",
+      "Hake jeden erledigten Tag im Kalender ab: eine sichtbare Serie motiviert."
+     ],
+     "q": "Wann am Tag würde eine zehnminütige Lerneinheit am leichtesten passen?",
+     "c": "Mach heute zehn Minuten und hake sie im Kalender ab."
+    },
+    "es": {
+     "t": "Primero, pequeñas victorias",
+     "g": "Empieza con sesiones diarias minúsculas para que el hábito se asiente antes de alargarlo.",
+     "p": [
+      "Diez minutos concentrados cada día superan una sesión larga que siempre aplazas.",
+      "Une la sesión a algo que ya haces, como justo después del desayuno.",
+      "Marca cada día cumplido en un calendario: una racha visible motiva."
+     ],
+     "q": "¿En qué momento del día encajaría mejor una sesión de diez minutos?",
+     "c": "Haz hoy una sesión de diez minutos y táchala en tu calendario."
+    },
+    "fr": {
+     "t": "D'abord les petites victoires",
+     "g": "Commence par de toutes petites séances quotidiennes pour ancrer l'habitude avant de l'allonger.",
+     "p": [
+      "Dix minutes concentrées chaque jour valent mieux qu'une longue séance toujours repoussée.",
+      "Relie la séance à un geste déjà installé, comme juste après le petit-déjeuner.",
+      "Coche chaque jour réussi sur un calendrier : une série visible motive."
+     ],
+     "q": "À quel moment de ta journée une séance de dix minutes s'intégrerait-elle le mieux ?",
+     "c": "Fais une séance de dix minutes aujourd'hui et coche-la sur ton calendrier."
+    },
+    "it": {
+     "t": "Prima le piccole vittorie",
+     "g": "Inizia con sessioni quotidiane minuscole perché l'abitudine si radichi prima di allungarla.",
+     "p": [
+      "Dieci minuti concentrati ogni giorno battono una sessione lunga che rimandi sempre.",
+      "Collega la sessione a qualcosa che già fai, come subito dopo colazione.",
+      "Segna ogni giorno fatto su un calendario: una serie visibile motiva."
+     ],
+     "q": "In quale momento della giornata starebbe meglio una sessione di dieci minuti?",
+     "c": "Oggi fai una sessione di dieci minuti e spuntala sul calendario."
+    },
+    "pt": {
+     "t": "Primeiro, pequenas vitórias",
+     "g": "Começa com sessões diárias minúsculas para o hábito fixar antes de o alongares.",
+     "p": [
+      "Dez minutos concentrados por dia valem mais do que uma sessão longa sempre adiada.",
+      "Liga a sessão a algo que já fazes, como logo a seguir ao pequeno-almoço.",
+      "Marca cada dia cumprido num calendário: uma sequência visível motiva."
+     ],
+     "q": "Em que altura do dia caberia melhor uma sessão de dez minutos?",
+     "c": "Hoje, faz uma sessão de dez minutos e risca-a no calendário."
+    },
+    "pt_BR": {
+     "t": "Primeiro, pequenas vitórias",
+     "g": "Comece com sessões diárias bem curtas para o hábito fixar antes de aumentá-las.",
+     "p": [
+      "Dez minutos concentrados por dia valem mais que uma sessão longa sempre adiada.",
+      "Ligue a sessão a algo que você já faz, como logo depois do café da manhã.",
+      "Marque cada dia cumprido em um calendário: uma sequência visível motiva."
+     ],
+     "q": "Em que momento do dia uma sessão de dez minutos caberia melhor?",
+     "c": "Hoje, faça uma sessão de dez minutos e marque no calendário."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The study starter ritual",
+     "g": "Build a short routine of water, desk and one clear task that signals learning time.",
+     "p": [
+      "A tiny ritual, like pouring water and clearing your desk, cues your brain to switch on.",
+      "Decide your first task before you sit down, so you never waste time choosing.",
+      "Keep the ritual under two minutes and repeat it every single time."
+     ],
+     "q": "What small things do you already do before you start studying?",
+     "c": "Create a three-step starter ritual and use it at your next session."
+    },
+    "de": {
+     "t": "Das Lernstart-Ritual",
+     "g": "Baue eine kurze Routine aus Wasser, Schreibtisch und einer klaren Aufgabe, die Lernzeit signalisiert.",
+     "p": [
+      "Ein kleines Ritual, etwa Wasser holen und den Tisch aufräumen, schaltet dein Gehirn auf Lernen.",
+      "Lege die erste Aufgabe fest, bevor du dich setzt, damit du keine Zeit mit Auswählen verlierst.",
+      "Halte das Ritual unter zwei Minuten und wiederhole es jedes Mal."
+     ],
+     "q": "Was tust du schon jetzt, bevor du mit dem Lernen beginnst?",
+     "c": "Entwirf ein Startritual in drei Schritten und nutze es bei der nächsten Einheit."
+    },
+    "es": {
+     "t": "El ritual de arranque",
+     "g": "Crea una rutina breve de agua, escritorio y una tarea clara que anuncie la hora de estudiar.",
+     "p": [
+      "Un ritual pequeño, como servirte agua y despejar la mesa, avisa a tu cerebro de que toca estudiar.",
+      "Decide la primera tarea antes de sentarte, así no pierdes tiempo eligiendo.",
+      "Mantén el ritual en menos de dos minutos y repítelo siempre igual."
+     ],
+     "q": "¿Qué pequeñas cosas haces ya antes de ponerte a estudiar?",
+     "c": "Crea un ritual de tres pasos y úsalo en tu próxima sesión."
+    },
+    "fr": {
+     "t": "Le rituel de démarrage",
+     "g": "Crée une courte routine avec de l'eau, un bureau dégagé et une tâche claire qui annonce le temps d'étude.",
+     "p": [
+      "Un petit rituel, comme se servir un verre d'eau et dégager le bureau, prévient ton cerveau.",
+      "Décide ta première tâche avant de t'asseoir pour ne pas perdre de temps à choisir.",
+      "Garde le rituel sous deux minutes et répète-le à chaque fois."
+     ],
+     "q": "Quelles petites choses fais-tu déjà avant de te mettre à étudier ?",
+     "c": "Crée un rituel en trois étapes et utilise-le à ta prochaine séance."
+    },
+    "it": {
+     "t": "Il rituale di avvio",
+     "g": "Costruisci una breve routine di acqua, scrivania e un compito chiaro che segnali l'ora di studiare.",
+     "p": [
+      "Un piccolo rituale, come versarti un bicchiere d'acqua e sgombrare la scrivania, avvisa il cervello.",
+      "Decidi il primo compito prima di sederti, così non perdi tempo a scegliere.",
+      "Tieni il rituale sotto i due minuti e ripetilo ogni volta."
+     ],
+     "q": "Quali piccole cose fai già prima di metterti a studiare?",
+     "c": "Crea un rituale in tre passi e usalo alla prossima sessione."
+    },
+    "pt": {
+     "t": "O ritual de arranque",
+     "g": "Cria uma rotina curta de água, secretária e uma tarefa clara que sinalize a hora de estudar.",
+     "p": [
+      "Um pequeno ritual, como servir água e arrumar a secretária, avisa o teu cérebro de que é hora de estudar.",
+      "Decide a primeira tarefa antes de te sentares, para não perderes tempo a escolher.",
+      "Mantém o ritual abaixo de dois minutos e repete-o sempre."
+     ],
+     "q": "Que pequenas coisas já fazes antes de começares a estudar?",
+     "c": "Cria um ritual de três passos e usa-o na tua próxima sessão."
+    },
+    "pt_BR": {
+     "t": "O ritual de partida",
+     "g": "Crie uma rotina curta de água, mesa e uma tarefa clara que sinalize a hora de estudar.",
+     "p": [
+      "Um pequeno ritual, como pegar água e arrumar a mesa, avisa seu cérebro de que é hora de estudar.",
+      "Decida a primeira tarefa antes de sentar, para não perder tempo escolhendo.",
+      "Mantenha o ritual abaixo de dois minutos e repita sempre."
+     ],
+     "q": "Que pequenas coisas você já faz antes de começar a estudar?",
+     "c": "Crie um ritual de três passos e use na sua próxima sessão."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking good questions",
+     "g": "See how curious questions make material stick and write three before you read.",
+     "p": [
+      "Questions switch your brain from passive reading to actively searching for answers.",
+      "Turn headings into questions: 'Why does this happen?' or 'How does this work?'",
+      "After reading, check which questions you can answer and which remain open."
+     ],
+     "q": "What is one thing you are genuinely curious about in your current subject?",
+     "c": "Before your next reading, write three questions and answer them afterwards."
+    },
+    "de": {
+     "t": "Gute Fragen stellen",
+     "g": "Du siehst, wie neugierige Fragen den Stoff haften lassen, und schreibst vor dem Lesen drei auf.",
+     "p": [
+      "Fragen schalten dein Gehirn vom passiven Lesen auf aktives Suchen nach Antworten.",
+      "Verwandle Überschriften in Fragen: 'Warum passiert das?' oder 'Wie funktioniert das?'",
+      "Prüfe nach dem Lesen, welche Fragen du beantworten kannst und welche offen bleiben."
+     ],
+     "q": "Was interessiert dich in deinem aktuellen Fach wirklich?",
+     "c": "Schreib vor dem nächsten Lesen drei Fragen auf und beantworte sie danach."
+    },
+    "es": {
+     "t": "Hacer buenas preguntas",
+     "g": "Verás cómo las preguntas curiosas fijan el contenido; escribe tres antes de leer.",
+     "p": [
+      "Las preguntas pasan tu cerebro de leer pasivamente a buscar respuestas activamente.",
+      "Convierte los títulos en preguntas: '¿Por qué ocurre esto?' o '¿Cómo funciona?'",
+      "Tras leer, comprueba qué preguntas sabes responder y cuáles siguen abiertas."
+     ],
+     "q": "¿Qué te da verdadera curiosidad de tu materia actual?",
+     "c": "Antes de tu próxima lectura, escribe tres preguntas y respóndelas después."
+    },
+    "fr": {
+     "t": "Poser de bonnes questions",
+     "g": "Vois comment les questions curieuses fixent la matière et écris-en trois avant de lire.",
+     "p": [
+      "Les questions font passer ton cerveau de la lecture passive à la recherche active de réponses.",
+      "Transforme les titres en questions : 'Pourquoi cela arrive-t-il ?' ou 'Comment ça marche ?'",
+      "Après la lecture, vérifie à quelles questions tu sais répondre et lesquelles restent ouvertes."
+     ],
+     "q": "Qu'est-ce qui te rend vraiment curieux dans ta matière actuelle ?",
+     "c": "Avant ta prochaine lecture, écris trois questions et réponds-y ensuite."
+    },
+    "it": {
+     "t": "Fare buone domande",
+     "g": "Scopri come le domande curiose fissano la materia e scrivine tre prima di leggere.",
+     "p": [
+      "Le domande fanno passare il cervello dalla lettura passiva alla ricerca attiva di risposte.",
+      "Trasforma i titoli in domande: 'Perché succede?' oppure 'Come funziona?'",
+      "Dopo la lettura controlla a quali domande sai rispondere e quali restano aperte."
+     ],
+     "q": "Cosa ti incuriosisce davvero nella tua materia attuale?",
+     "c": "Prima della prossima lettura scrivi tre domande e rispondi dopo."
+    },
+    "pt": {
+     "t": "Fazer boas perguntas",
+     "g": "Vê como as perguntas curiosas fixam a matéria e escreve três antes de leres.",
+     "p": [
+      "As perguntas fazem o cérebro passar da leitura passiva para a procura ativa de respostas.",
+      "Transforma os títulos em perguntas: 'Porque acontece isto?' ou 'Como funciona?'",
+      "Depois de leres, vê a quais sabes responder e quais ficam em aberto."
+     ],
+     "q": "O que te desperta verdadeira curiosidade na tua disciplina atual?",
+     "c": "Antes da próxima leitura, escreve três perguntas e responde-lhes depois."
+    },
+    "pt_BR": {
+     "t": "Fazendo boas perguntas",
+     "g": "Veja como perguntas curiosas fixam o conteúdo e escreva três antes de ler.",
+     "p": [
+      "Perguntas levam o cérebro da leitura passiva para a busca ativa por respostas.",
+      "Transforme títulos em perguntas: 'Por que isso acontece?' ou 'Como isso funciona?'",
+      "Depois de ler, veja quais perguntas você sabe responder e quais ficaram abertas."
+     ],
+     "q": "O que desperta sua curiosidade de verdade na matéria atual?",
+     "c": "Antes da próxima leitura, escreva três perguntas e responda depois."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Week one reflection",
+     "g": "Look back at your first days: what felt easy, what felt hard and one thing to adjust.",
+     "p": [
+      "Reviewing your own progress is itself a learning habit that builds awareness.",
+      "Notice the wins first, even small ones, before listing what to fix.",
+      "Choose just one adjustment for next week so change stays realistic."
+     ],
+     "q": "What was the best moment of your first study week?",
+     "c": "Write three lines: one win, one difficulty, one small change for next week."
+    },
+    "de": {
+     "t": "Rückblick auf Woche eins",
+     "g": "Blick auf die ersten Tage zurück: was leicht war, was schwer und was du anpasst.",
+     "p": [
+      "Den eigenen Fortschritt zu prüfen ist selbst eine Lerngewohnheit, die Bewusstsein schafft.",
+      "Sieh zuerst die Erfolge, auch kleine, bevor du aufzählst, was zu verbessern ist.",
+      "Wähle nur eine Anpassung für nächste Woche, damit die Veränderung realistisch bleibt."
+     ],
+     "q": "Was war der schönste Moment deiner ersten Lernwoche?",
+     "c": "Schreib drei Zeilen: ein Erfolg, eine Schwierigkeit, eine kleine Änderung."
+    },
+    "es": {
+     "t": "Reflexión de la primera semana",
+     "g": "Mira atrás: qué fue fácil, qué fue difícil y qué ajustar.",
+     "p": [
+      "Revisar tu propio progreso es en sí un hábito de aprendizaje que crea conciencia.",
+      "Fíjate primero en los logros, aunque sean pequeños, antes de listar qué mejorar.",
+      "Elige un solo ajuste para la próxima semana para que el cambio sea realista."
+     ],
+     "q": "¿Cuál fue el mejor momento de tu primera semana de estudio?",
+     "c": "Escribe tres líneas: un logro, una dificultad, un pequeño cambio."
+    },
+    "fr": {
+     "t": "Bilan de la première semaine",
+     "g": "Regarde en arrière : ce qui a été facile, difficile et une chose à ajuster.",
+     "p": [
+      "Passer en revue ses progrès est déjà une habitude d'apprentissage qui développe la conscience de soi.",
+      "Note d'abord les réussites, même petites, avant de lister ce qu'il faut corriger.",
+      "Choisis un seul ajustement pour la semaine prochaine afin que le changement reste réaliste."
+     ],
+     "q": "Quel a été le meilleur moment de ta première semaine d'étude ?",
+     "c": "Écris trois lignes : une réussite, une difficulté, un petit changement."
+    },
+    "it": {
+     "t": "Riflessione sulla prima settimana",
+     "g": "Guarda indietro: cosa è stato facile, cosa difficile e una cosa da modificare.",
+     "p": [
+      "Rivedere i propri progressi è già un'abitudine di apprendimento che crea consapevolezza.",
+      "Nota prima le vittorie, anche piccole, prima di elencare cosa migliorare.",
+      "Scegli un solo aggiustamento per la prossima settimana così il cambiamento resta realistico."
+     ],
+     "q": "Qual è stato il momento migliore della tua prima settimana di studio?",
+     "c": "Scrivi tre righe: una vittoria, una difficoltà, un piccolo cambiamento."
+    },
+    "pt": {
+     "t": "Reflexão sobre a primeira semana",
+     "g": "Olha para trás: o que foi fácil, o que foi difícil e uma coisa a ajustar.",
+     "p": [
+      "Rever o teu progresso é já um hábito de aprendizagem que cria consciência.",
+      "Repara primeiro nas conquistas, mesmo pequenas, antes de listares o que melhorar.",
+      "Escolhe apenas um ajuste para a próxima semana, para a mudança ser realista."
+     ],
+     "q": "Qual foi o melhor momento da tua primeira semana de estudo?",
+     "c": "Escreve três linhas: uma conquista, uma dificuldade, uma pequena mudança."
+    },
+    "pt_BR": {
+     "t": "Reflexão sobre a primeira semana",
+     "g": "Olhe para trás: o que foi fácil, o que foi difícil e uma coisa a ajustar.",
+     "p": [
+      "Rever seu próprio progresso já é um hábito de aprendizagem que cria consciência.",
+      "Perceba primeiro as conquistas, mesmo pequenas, antes de listar o que melhorar.",
+      "Escolha só um ajuste para a próxima semana, para a mudança ser realista."
+     ],
+     "q": "Qual foi o melhor momento da sua primeira semana de estudo?",
+     "c": "Escreva três linhas: uma conquista, uma dificuldade, uma pequena mudança."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "street_food",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Falafel",
+     "g": "Meet the crispy herb-filled balls loved across the Middle East.",
+     "p": [
+      "Falafel are made from ground soaked chickpeas, fava beans, or both, mixed with herbs and spices.",
+      "In Egypt they are often made with fava beans and called ta'meya, green inside from fresh herbs.",
+      "They are tucked into pita with salad, pickles and tahini sauce, a great choice for vegetarians."
+     ],
+     "q": "Have you tried falafel? If not, what do you imagine it tastes like?",
+     "c": "Make a falafel-style pita today with chickpeas or any patty, salad and a spoon of tahini or yogurt."
+    },
+    "de": {
+     "t": "Falafel",
+     "g": "Die knusprigen Kräuterbällchen kennenlernen, die im ganzen Nahen Osten beliebt sind.",
+     "p": [
+      "Falafel bestehen aus eingeweichten, gemahlenen Kichererbsen, Ackerbohnen oder beidem, mit Kräutern und Gewürzen.",
+      "In Ägypten macht man sie oft aus Ackerbohnen und nennt sie Ta'meya, innen grün von frischen Kräutern.",
+      "Man steckt sie mit Salat, Eingelegtem und Tahinisoße ins Pitabrot, ideal für Vegetarier."
+     ],
+     "q": "Hast du schon Falafel probiert? Wenn nicht, wie stellst du dir den Geschmack vor?",
+     "c": "Mach heute ein Pita im Falafel-Stil mit Kichererbsen oder einem Bratling, Salat und Tahini oder Joghurt."
+    },
+    "es": {
+     "t": "Falafel",
+     "g": "Conocer las crujientes bolitas de hierbas queridas en todo Oriente Medio.",
+     "p": [
+      "El falafel se hace con garbanzos remojados y molidos, habas o ambos, mezclados con hierbas y especias.",
+      "En Egipto suele hacerse con habas y se llama ta'meya, verde por dentro gracias a las hierbas frescas.",
+      "Se mete en pan de pita con ensalada, encurtidos y salsa de tahini, ideal para vegetarianos."
+     ],
+     "q": "¿Has probado el falafel? Si no, ¿cómo imaginas su sabor?",
+     "c": "Prepara hoy una pita estilo falafel con garbanzos o cualquier hamburguesa vegetal, ensalada y tahini o yogur."
+    },
+    "fr": {
+     "t": "Les falafels",
+     "g": "Découvrir les boulettes croustillantes aux herbes aimées dans tout le Moyen-Orient.",
+     "p": [
+      "Les falafels sont faits de pois chiches trempés et mixés, de fèves ou des deux, avec herbes et épices.",
+      "En Égypte, on les fait souvent avec des fèves et on les appelle ta'meya, verts à l'intérieur grâce aux herbes.",
+      "On les glisse dans une pita avec crudités, pickles et sauce tahini, parfait pour les végétariens."
+     ],
+     "q": "As-tu déjà goûté des falafels ? Sinon, quel goût imagines-tu ?",
+     "c": "Prépare aujourd'hui une pita façon falafel avec des pois chiches ou une galette, crudités et tahini ou yaourt."
+    },
+    "it": {
+     "t": "Falafel",
+     "g": "Conoscere le polpette croccanti alle erbe amate in tutto il Medio Oriente.",
+     "p": [
+      "I falafel si fanno con ceci ammollati e tritati, fave o entrambi, con erbe e spezie.",
+      "In Egitto si preparano spesso con le fave e si chiamano ta'meya, verdi dentro grazie alle erbe fresche.",
+      "Si mettono nella pita con insalata, sottaceti e salsa tahina, ottimi per i vegetariani."
+     ],
+     "q": "Hai mai provato i falafel? Se no, che sapore immagini?",
+     "c": "Prepara oggi una pita in stile falafel con ceci o un burger vegetale, insalata e tahina o yogurt."
+    },
+    "pt": {
+     "t": "Falafel",
+     "g": "Conhecer as bolinhas estaladiças de ervas adoradas em todo o Médio Oriente.",
+     "p": [
+      "O falafel faz-se com grão demolhado e moído, favas ou ambos, misturados com ervas e especiarias.",
+      "No Egito costuma fazer-se com favas e chama-se ta'meya, verde por dentro graças às ervas frescas.",
+      "Mete-se num pão pita com salada, pickles e molho de tahini, ótimo para vegetarianos."
+     ],
+     "q": "Já provaste falafel? Se não, que sabor imaginas?",
+     "c": "Faz hoje um pita estilo falafel com grão ou um hambúrguer vegetal, salada e tahini ou iogurte."
+    },
+    "pt_BR": {
+     "t": "Falafel",
+     "g": "Conhecer os bolinhos crocantes de ervas amados em todo o Oriente Médio.",
+     "p": [
+      "O falafel é feito de grão-de-bico demolhado e moído, fava ou os dois, misturados com ervas e especiarias.",
+      "No Egito costuma ser feito com fava e se chama ta'meya, verde por dentro por causa das ervas frescas.",
+      "Vai dentro do pão sírio com salada, picles e molho de tahine, ótimo para vegetarianos."
+     ],
+     "q": "Você já provou falafel? Se não, que sabor imagina?",
+     "c": "Monte hoje um pão sírio estilo falafel com grão-de-bico ou um hambúrguer vegetal, salada e tahine ou iogurte."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shawarma",
+     "g": "Discover the spit-roasted wrap that is a classic of the Levant.",
+     "p": [
+      "Marinated chicken, lamb or beef is stacked on a vertical spit and roasted slowly as it turns.",
+      "Thin slices are shaved off and rolled in flatbread with pickles, tomatoes and sometimes fries.",
+      "Chicken shawarma often comes with toum, a fluffy garlic sauce, while meat pairs well with tahini."
+     ],
+     "q": "Do you prefer garlic sauce, tahini or something spicy on your wrap?",
+     "c": "Make a quick garlicky yogurt sauce today and try it with grilled chicken or vegetables in a wrap."
+    },
+    "de": {
+     "t": "Schawarma",
+     "g": "Den Wrap vom Drehspieß entdecken, ein Klassiker der Levante.",
+     "p": [
+      "Mariniertes Huhn, Lamm oder Rind wird auf einen senkrechten Spieß geschichtet und drehend langsam gebraten.",
+      "Dünne Scheiben werden abgeschnitten und mit Eingelegtem, Tomaten und manchmal Pommes in Fladenbrot gerollt.",
+      "Hähnchen-Schawarma gibt es oft mit Toum, einer luftigen Knoblauchsoße, Fleisch passt gut zu Tahini."
+     ],
+     "q": "Magst du auf deinem Wrap lieber Knoblauchsoße, Tahini oder etwas Scharfes?",
+     "c": "Rühr heute eine schnelle Knoblauch-Joghurt-Soße an und probier sie mit Huhn oder Gemüse im Wrap."
+    },
+    "es": {
+     "t": "Shawarma",
+     "g": "Descubrir el wrap asado en espetón, un clásico del Levante.",
+     "p": [
+      "Pollo, cordero o ternera adobados se apilan en un asador vertical y se asan despacio mientras giran.",
+      "Se cortan láminas finas que se enrollan en pan plano con encurtidos, tomate y a veces patatas fritas.",
+      "El shawarma de pollo suele llevar toum, una salsa de ajo esponjosa; la carne combina bien con tahini."
+     ],
+     "q": "¿Prefieres salsa de ajo, tahini o algo picante en tu wrap?",
+     "c": "Prepara hoy una salsa rápida de yogur y ajo y pruébala con pollo o verduras a la plancha en un wrap."
+    },
+    "fr": {
+     "t": "Le shawarma",
+     "g": "Découvrir le wrap rôti à la broche, grand classique du Levant.",
+     "p": [
+      "Poulet, agneau ou bœuf marinés sont empilés sur une broche verticale et rôtis lentement en tournant.",
+      "On en tranche de fines lamelles roulées dans un pain plat avec pickles, tomates et parfois des frites.",
+      "Le shawarma au poulet s'accompagne souvent de toum, une sauce à l'ail mousseuse ; la viande aime le tahini."
+     ],
+     "q": "Préfères-tu une sauce à l'ail, du tahini ou quelque chose de piquant dans ton wrap ?",
+     "c": "Prépare aujourd'hui une sauce yaourt-ail express et goûte-la avec du poulet ou des légumes grillés en wrap."
+    },
+    "it": {
+     "t": "Shawarma",
+     "g": "Scoprire la piadina allo spiedo, grande classico del Levante.",
+     "p": [
+      "Pollo, agnello o manzo marinati si impilano su uno spiedo verticale e arrostiscono lentamente girando.",
+      "Si tagliano fettine sottili arrotolate nel pane piatto con sottaceti, pomodori e a volte patatine.",
+      "Lo shawarma di pollo arriva spesso con il toum, una spumosa salsa all'aglio; la carne sta bene con la tahina."
+     ],
+     "q": "Preferisci salsa all'aglio, tahina o qualcosa di piccante nella tua piadina?",
+     "c": "Prepara oggi una veloce salsa yogurt e aglio e provala con pollo o verdure grigliate in una piadina."
+    },
+    "pt": {
+     "t": "Shawarma",
+     "g": "Descobrir o wrap assado no espeto, um clássico do Levante.",
+     "p": [
+      "Frango, borrego ou vaca marinados empilham-se num espeto vertical e assam lentamente a girar.",
+      "Cortam-se fatias finas enroladas em pão achatado com pickles, tomate e às vezes batatas fritas.",
+      "O shawarma de frango vem muitas vezes com toum, um molho de alho fofo; a carne combina com tahini."
+     ],
+     "q": "Preferes molho de alho, tahini ou algo picante no teu wrap?",
+     "c": "Faz hoje um molho rápido de iogurte e alho e prova-o com frango ou legumes grelhados num wrap."
+    },
+    "pt_BR": {
+     "t": "Shawarma",
+     "g": "Descobrir o wrap assado no espeto, um clássico do Levante.",
+     "p": [
+      "Frango, cordeiro ou carne bovina marinados são empilhados num espeto vertical e assam devagar girando.",
+      "Fatias finas são cortadas e enroladas no pão sírio com picles, tomate e às vezes batata frita.",
+      "O shawarma de frango costuma vir com toum, um molho de alho aerado; a carne combina com tahine."
+     ],
+     "q": "Você prefere molho de alho, tahine ou algo picante no seu wrap?",
+     "c": "Faça hoje um molho rápido de iogurte e alho e prove com frango ou legumes grelhados num wrap."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ful medames",
+     "g": "Meet Egypt's hearty breakfast of slow-cooked fava beans.",
+     "p": [
+      "Ful medames is fava beans cooked slowly for hours until soft and creamy.",
+      "They are mashed lightly and dressed with olive oil, lemon juice, cumin, garlic and salt.",
+      "Eaten with warm flatbread, chopped tomato and onion, it is a filling start to the day."
+     ],
+     "q": "What is a typical breakfast where you live?",
+     "c": "Warm some beans today, mash them with oil, lemon and a pinch of cumin, and scoop them up with bread."
+    },
+    "de": {
+     "t": "Ful Medames",
+     "g": "Ägyptens herzhaftes Frühstück aus langsam gegarten Ackerbohnen kennenlernen.",
+     "p": [
+      "Ful Medames sind Ackerbohnen, die stundenlang sanft gegart werden, bis sie weich und cremig sind.",
+      "Sie werden leicht zerdrückt und mit Olivenöl, Zitronensaft, Kreuzkümmel, Knoblauch und Salz angemacht.",
+      "Mit warmem Fladenbrot, Tomate und Zwiebel ist es ein sättigender Start in den Tag."
+     ],
+     "q": "Wie sieht ein typisches Frühstück dort aus, wo du lebst?",
+     "c": "Wärme heute Bohnen auf, zerdrück sie mit Öl, Zitrone und etwas Kreuzkümmel und iss sie mit Brot."
+    },
+    "es": {
+     "t": "Ful medames",
+     "g": "Conocer el contundente desayuno egipcio de habas cocidas a fuego lento.",
+     "p": [
+      "El ful medames son habas cocidas durante horas hasta quedar tiernas y cremosas.",
+      "Se aplastan un poco y se aliñan con aceite de oliva, limón, comino, ajo y sal.",
+      "Con pan plano caliente, tomate y cebolla picados, es un comienzo del día que llena."
+     ],
+     "q": "¿Cómo es un desayuno típico donde vives?",
+     "c": "Calienta hoy unas alubias o habas, aplástalas con aceite, limón y una pizca de comino, y cómelas con pan."
+    },
+    "fr": {
+     "t": "Le ful medames",
+     "g": "Découvrir le copieux petit-déjeuner égyptien de fèves mijotées.",
+     "p": [
+      "Le ful medames, ce sont des fèves cuites lentement pendant des heures jusqu'à devenir fondantes.",
+      "On les écrase un peu et on les assaisonne d'huile d'olive, citron, cumin, ail et sel.",
+      "Avec du pain plat chaud, des tomates et de l'oignon, c'est un début de journée rassasiant."
+     ],
+     "q": "À quoi ressemble un petit-déjeuner typique là où tu vis ?",
+     "c": "Réchauffe des haricots ou des fèves aujourd'hui, écrase-les avec huile, citron et cumin, et mange-les avec du pain."
+    },
+    "it": {
+     "t": "Ful medames",
+     "g": "Conoscere la sostanziosa colazione egiziana di fave cotte lentamente.",
+     "p": [
+      "Il ful medames è fatto di fave cotte per ore fino a diventare morbide e cremose.",
+      "Si schiacciano un po' e si condiscono con olio d'oliva, limone, cumino, aglio e sale.",
+      "Con pane piatto caldo, pomodoro e cipolla tritati, è un inizio di giornata che sazia."
+     ],
+     "q": "Com'è una colazione tipica dove vivi?",
+     "c": "Scalda oggi dei fagioli o delle fave, schiacciali con olio, limone e un pizzico di cumino e mangiali col pane."
+    },
+    "pt": {
+     "t": "Ful medames",
+     "g": "Conhecer o reconfortante pequeno-almoço egípcio de favas cozinhadas lentamente.",
+     "p": [
+      "O ful medames são favas cozinhadas durante horas até ficarem macias e cremosas.",
+      "Esmagam-se um pouco e temperam-se com azeite, limão, cominhos, alho e sal.",
+      "Com pão achatado quente, tomate e cebola picados, é um início de dia que sacia."
+     ],
+     "q": "Como é um pequeno-almoço típico onde vives?",
+     "c": "Aquece hoje feijão ou favas, esmaga-os com azeite, limão e uma pitada de cominhos e come-os com pão."
+    },
+    "pt_BR": {
+     "t": "Ful medames",
+     "g": "Conhecer o café da manhã egípcio reforçado de favas cozidas lentamente.",
+     "p": [
+      "O ful medames são favas cozidas por horas até ficarem macias e cremosas.",
+      "Elas são amassadas de leve e temperadas com azeite, limão, cominho, alho e sal.",
+      "Com pão sírio quente, tomate e cebola picados, é um começo de dia que sustenta."
+     ],
+     "q": "Como é um café da manhã típico onde você mora?",
+     "c": "Aqueça hoje feijão ou fava, amasse com azeite, limão e uma pitada de cominho e coma com pão."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Koshari",
+     "g": "Discover Egypt's comforting mix of grains, pulses and pasta.",
+     "p": [
+      "Koshari layers rice, brown lentils, small pasta and chickpeas in one generous bowl.",
+      "It is topped with a tangy tomato sauce, a splash of garlic vinegar and plenty of crispy fried onions.",
+      "Many shops serve only koshari, and it is naturally vegetarian, filling and full of flavour."
+     ],
+     "q": "What is your favourite comfort food when you are hungry?",
+     "c": "Mix leftover rice, pasta or lentils today with tomato sauce and crispy onions for your own koshari bowl."
+    },
+    "de": {
+     "t": "Koshari",
+     "g": "Ägyptens wohltuende Mischung aus Getreide, Hülsenfrüchten und Nudeln entdecken.",
+     "p": [
+      "Koshari schichtet Reis, braune Linsen, kleine Nudeln und Kichererbsen in einer großzügigen Schüssel.",
+      "Darauf kommen eine säuerliche Tomatensoße, etwas Knoblauchessig und viele knusprige Röstzwiebeln.",
+      "Viele Lokale servieren nur Koshari, und es ist von Natur aus vegetarisch, sättigend und aromatisch."
+     ],
+     "q": "Was ist dein liebstes Wohlfühlessen, wenn du hungrig bist?",
+     "c": "Misch heute Reste von Reis, Nudeln oder Linsen mit Tomatensoße und Röstzwiebeln zu deiner Koshari-Schüssel."
+    },
+    "es": {
+     "t": "Koshari",
+     "g": "Descubrir la reconfortante mezcla egipcia de cereales, legumbres y pasta.",
+     "p": [
+      "El koshari reúne arroz, lentejas pardas, pasta pequeña y garbanzos en un cuenco generoso.",
+      "Se cubre con salsa de tomate ácida, un chorrito de vinagre con ajo y mucha cebolla frita crujiente.",
+      "Muchos locales solo sirven koshari, y es vegetariano, saciante y lleno de sabor."
+     ],
+     "q": "¿Cuál es tu comida reconfortante favorita cuando tienes hambre?",
+     "c": "Mezcla hoy restos de arroz, pasta o lentejas con salsa de tomate y cebolla crujiente para tu propio koshari."
+    },
+    "fr": {
+     "t": "Le koshari",
+     "g": "Découvrir le réconfortant mélange égyptien de céréales, légumineuses et pâtes.",
+     "p": [
+      "Le koshari réunit riz, lentilles brunes, petites pâtes et pois chiches dans un bol généreux.",
+      "On le nappe de sauce tomate acidulée, d'un trait de vinaigre à l'ail et de beaucoup d'oignons frits croustillants.",
+      "Beaucoup de boutiques ne servent que du koshari, naturellement végétarien, nourrissant et savoureux."
+     ],
+     "q": "Quel est ton plat réconfort préféré quand tu as faim ?",
+     "c": "Mélange aujourd'hui des restes de riz, pâtes ou lentilles avec sauce tomate et oignons croustillants pour ton koshari."
+    },
+    "it": {
+     "t": "Koshari",
+     "g": "Scoprire il confortante mix egiziano di cereali, legumi e pasta.",
+     "p": [
+      "Il koshari unisce riso, lenticchie marroni, pasta corta e ceci in una ciotola abbondante.",
+      "Si completa con salsa di pomodoro aspra, un goccio di aceto all'aglio e tanta cipolla fritta croccante.",
+      "Molti locali servono solo koshari, naturalmente vegetariano, saziante e saporito."
+     ],
+     "q": "Qual è il tuo piatto consolatorio preferito quando hai fame?",
+     "c": "Mescola oggi avanzi di riso, pasta o lenticchie con salsa di pomodoro e cipolla croccante per il tuo koshari."
+    },
+    "pt": {
+     "t": "Koshari",
+     "g": "Descobrir a reconfortante mistura egípcia de cereais, leguminosas e massa.",
+     "p": [
+      "O koshari junta arroz, lentilhas castanhas, massa pequena e grão numa taça generosa.",
+      "Leva por cima molho de tomate ácido, um pouco de vinagre com alho e muita cebola frita estaladiça.",
+      "Muitas casas só servem koshari, que é vegetariano, saciante e cheio de sabor."
+     ],
+     "q": "Qual é a tua comida de conforto preferida quando tens fome?",
+     "c": "Mistura hoje restos de arroz, massa ou lentilhas com molho de tomate e cebola estaladiça para o teu koshari."
+    },
+    "pt_BR": {
+     "t": "Koshari",
+     "g": "Descobrir a reconfortante mistura egípcia de grãos, leguminosas e macarrão.",
+     "p": [
+      "O koshari junta arroz, lentilha, macarrão miúdo e grão-de-bico numa tigela generosa.",
+      "Vai por cima um molho de tomate azedinho, um pouco de vinagre com alho e muita cebola frita crocante.",
+      "Muitas casas só servem koshari, que é vegetariano, sustenta e é cheio de sabor."
+     ],
+     "q": "Qual é a sua comida afetiva favorita quando bate a fome?",
+     "c": "Misture hoje sobras de arroz, macarrão ou lentilha com molho de tomate e cebola crocante para seu koshari."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Msemen and Moroccan snacks",
+     "g": "Explore the flaky breads and treats of Moroccan street stalls.",
+     "p": [
+      "Msemen is a square flatbread folded with oil or butter in layers, then cooked on a griddle.",
+      "It is often enjoyed with honey or with a savoury filling of onion, herbs and spices.",
+      "Stalls also sell harira soup, grilled brochettes and sweets like chebakia with sesame and honey."
+     ],
+     "q": "Would you choose your flatbread sweet with honey or savoury with spices?",
+     "c": "Brush a tortilla or flatbread with butter, fold it into a square and warm it in a pan with a drizzle of honey."
+    },
+    "de": {
+     "t": "Msemen und marokkanische Snacks",
+     "g": "Die blättrigen Brote und Leckereien marokkanischer Straßenstände erkunden.",
+     "p": [
+      "Msemen ist ein quadratisches Fladenbrot, in Schichten mit Öl oder Butter gefaltet und auf der Platte gebacken.",
+      "Man isst es oft mit Honig oder mit einer würzigen Füllung aus Zwiebel, Kräutern und Gewürzen.",
+      "Stände verkaufen auch Harira-Suppe, gegrillte Spieße und Süßes wie Chebakia mit Sesam und Honig."
+     ],
+     "q": "Würdest du dein Fladenbrot süß mit Honig oder würzig wählen?",
+     "c": "Bestreiche eine Tortilla mit Butter, falte sie zum Quadrat und wärme sie in der Pfanne mit etwas Honig."
+    },
+    "es": {
+     "t": "El msemen y otros bocados marroquíes",
+     "g": "Explorar los panes hojaldrados y dulces de los puestos marroquíes.",
+     "p": [
+      "El msemen es un pan plano cuadrado, doblado en capas con aceite o mantequilla y hecho en plancha.",
+      "Se suele comer con miel o con un relleno salado de cebolla, hierbas y especias.",
+      "Los puestos venden también sopa harira, brochetas a la parrilla y dulces como la chebakia con sésamo y miel."
+     ],
+     "q": "¿Elegirías tu pan plano dulce con miel o salado con especias?",
+     "c": "Unta una tortilla con mantequilla, dóblala en cuadrado y caliéntala en la sartén con un hilo de miel."
+    },
+    "fr": {
+     "t": "Le msemen et les snacks marocains",
+     "g": "Explorer les pains feuilletés et douceurs des stands marocains.",
+     "p": [
+      "Le msemen est une crêpe feuilletée carrée, pliée en couches avec huile ou beurre, cuite sur une plaque.",
+      "On le déguste souvent avec du miel ou avec une farce salée d'oignon, herbes et épices.",
+      "Les stands vendent aussi la soupe harira, des brochettes grillées et des douceurs comme la chebakia au sésame et miel."
+     ],
+     "q": "Choisirais-tu ton pain plat sucré au miel ou salé aux épices ?",
+     "c": "Badigeonne une tortilla de beurre, plie-la en carré et réchauffe-la à la poêle avec un filet de miel."
+    },
+    "it": {
+     "t": "Msemen e snack marocchini",
+     "g": "Esplorare i pani sfogliati e le dolcezze delle bancarelle marocchine.",
+     "p": [
+      "Il msemen è un pane piatto quadrato, piegato a strati con olio o burro e cotto su una piastra.",
+      "Si gusta spesso con miele o con un ripieno salato di cipolla, erbe e spezie.",
+      "Le bancarelle vendono anche zuppa harira, spiedini grigliati e dolci come la chebakia con sesamo e miele."
+     ],
+     "q": "Sceglieresti il tuo pane piatto dolce con miele o salato con spezie?",
+     "c": "Spennella una piadina con burro, piegala a quadrato e scaldala in padella con un filo di miele."
+    },
+    "pt": {
+     "t": "Msemen e petiscos marroquinos",
+     "g": "Explorar os pães folhados e doces das bancas marroquinas.",
+     "p": [
+      "O msemen é um pão achatado quadrado, dobrado em camadas com óleo ou manteiga e cozido numa chapa.",
+      "Come-se muitas vezes com mel ou com um recheio salgado de cebola, ervas e especiarias.",
+      "As bancas vendem também sopa harira, espetadas grelhadas e doces como a chebakia com sésamo e mel."
+     ],
+     "q": "Escolhias o teu pão achatado doce com mel ou salgado com especiarias?",
+     "c": "Pincela uma tortilha com manteiga, dobra-a em quadrado e aquece-a na frigideira com um fio de mel."
+    },
+    "pt_BR": {
+     "t": "Msemen e petiscos marroquinos",
+     "g": "Explorar os pães folhados e doces das barracas marroquinas.",
+     "p": [
+      "O msemen é um pão achatado quadrado, dobrado em camadas com óleo ou manteiga e feito na chapa.",
+      "Costuma ser comido com mel ou com recheio salgado de cebola, ervas e especiarias.",
+      "As barracas também vendem sopa harira, espetinhos grelhados e doces como a chebakia com gergelim e mel."
+     ],
+     "q": "Você escolheria seu pão achatado doce com mel ou salgado com especiarias?",
+     "c": "Pincele uma tortilha com manteiga, dobre em quadrado e aqueça na frigideira com um fio de mel."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Jemaa el-Fnaa",
+     "g": "Visit, in your mind, the famous evening food square of Marrakesh.",
+     "p": [
+      "Jemaa el-Fnaa is the main square of Marrakesh's old city, busy from morning to late night.",
+      "Every evening, rows of food stalls appear, with smoke rising from grills and long shared benches.",
+      "UNESCO recognises the square's living culture of storytellers, musicians and traders."
+     ],
+     "q": "Which famous market or square in the world would you love to visit?",
+     "c": "Set up a mini food square at home tonight: two or three small dishes on the table to share and taste."
+    },
+    "de": {
+     "t": "Jemaa el-Fnaa",
+     "g": "In Gedanken den berühmten abendlichen Essensplatz von Marrakesch besuchen.",
+     "p": [
+      "Jemaa el-Fnaa ist der Hauptplatz der Altstadt von Marrakesch, belebt vom Morgen bis spät in die Nacht.",
+      "Jeden Abend entstehen Reihen von Essständen mit rauchenden Grills und langen gemeinsamen Bänken.",
+      "Die UNESCO würdigt die lebendige Kultur des Platzes mit Erzählern, Musikern und Händlern."
+     ],
+     "q": "Welchen berühmten Markt oder Platz der Welt würdest du gern besuchen?",
+     "c": "Richte heute Abend einen Mini-Essensplatz ein: zwei oder drei kleine Gerichte zum Teilen und Probieren."
+    },
+    "es": {
+     "t": "Jemaa el-Fnaa",
+     "g": "Visitar con la imaginación la famosa plaza de comida nocturna de Marrakech.",
+     "p": [
+      "Jemaa el-Fnaa es la plaza principal de la medina de Marrakech, animada desde la mañana hasta la noche.",
+      "Cada tarde aparecen filas de puestos de comida, con humo de las parrillas y largos bancos compartidos.",
+      "La UNESCO reconoce la cultura viva de la plaza, con cuentacuentos, músicos y comerciantes."
+     ],
+     "q": "¿Qué mercado o plaza famosa del mundo te encantaría visitar?",
+     "c": "Monta esta noche una mini plaza de comida en casa: dos o tres platitos en la mesa para compartir."
+    },
+    "fr": {
+     "t": "Jemaa el-Fna",
+     "g": "Visiter en pensée la célèbre place gourmande du soir à Marrakech.",
+     "p": [
+      "Jemaa el-Fna est la grande place de la médina de Marrakech, animée du matin jusqu'à tard le soir.",
+      "Chaque soir, des rangées de stands apparaissent, avec la fumée des grills et de longs bancs partagés.",
+      "L'UNESCO reconnaît la culture vivante de la place, avec ses conteurs, musiciens et marchands."
+     ],
+     "q": "Quel marché ou quelle place célèbre aimerais-tu visiter ?",
+     "c": "Installe ce soir une mini place gourmande chez toi : deux ou trois petits plats à partager et goûter."
+    },
+    "it": {
+     "t": "Jemaa el-Fnaa",
+     "g": "Visitare con la fantasia la famosa piazza serale del cibo di Marrakech.",
+     "p": [
+      "Jemaa el-Fnaa è la piazza principale della medina di Marrakech, animata dal mattino a tarda notte.",
+      "Ogni sera spuntano file di bancarelle, con il fumo delle griglie e lunghe panche condivise.",
+      "L'UNESCO riconosce la cultura viva della piazza, con cantastorie, musicisti e mercanti."
+     ],
+     "q": "Quale mercato o piazza famosa del mondo ti piacerebbe visitare?",
+     "c": "Stasera allestisci a casa una mini piazza del cibo: due o tre piattini in tavola da condividere."
+    },
+    "pt": {
+     "t": "Jemaa el-Fnaa",
+     "g": "Visitar em pensamento a famosa praça de comida noturna de Marraquexe.",
+     "p": [
+      "Jemaa el-Fnaa é a praça principal da medina de Marraquexe, animada desde manhã até tarde da noite.",
+      "Todas as noites surgem filas de bancas, com fumo das grelhas e longos bancos partilhados.",
+      "A UNESCO reconhece a cultura viva da praça, com contadores de histórias, músicos e comerciantes."
+     ],
+     "q": "Que mercado ou praça famosa do mundo gostavas de visitar?",
+     "c": "Monta hoje à noite uma mini praça de comida em casa: dois ou três pratinhos na mesa para partilhar."
+    },
+    "pt_BR": {
+     "t": "Jemaa el-Fnaa",
+     "g": "Visitar em pensamento a famosa praça de comida noturna de Marrakech.",
+     "p": [
+      "Jemaa el-Fnaa é a praça principal da cidade antiga de Marrakech, agitada da manhã até tarde da noite.",
+      "Toda noite surgem fileiras de barracas, com fumaça das grelhas e longos bancos compartilhados.",
+      "A UNESCO reconhece a cultura viva da praça, com contadores de histórias, músicos e comerciantes."
+     ],
+     "q": "Que mercado ou praça famosa do mundo você adoraria visitar?",
+     "c": "Monte hoje à noite uma mini praça de comida em casa: dois ou três pratinhos na mesa para dividir."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pizza by the slice",
+     "g": "Compare two famous ways to grab pizza on the go.",
+     "p": [
+      "In Rome, pizza al taglio is baked in large rectangular trays and cut to the size you want.",
+      "It is sold by weight, with toppings from simple tomato and oil to potatoes, greens or cheese.",
+      "In New York, a big thin slice is folded in half lengthwise so it is easy to eat while walking."
+     ],
+     "q": "Would you rather choose a rectangle by weight or a big foldable slice?",
+     "c": "Make a mini tray pizza today on any bread base, cut it into squares and try the New York fold."
+    },
+    "de": {
+     "t": "Pizza am Stück",
+     "g": "Zwei berühmte Arten vergleichen, Pizza unterwegs zu essen.",
+     "p": [
+      "In Rom wird Pizza al taglio in großen rechteckigen Blechen gebacken und in der gewünschten Größe geschnitten.",
+      "Sie wird nach Gewicht verkauft, belegt von schlichter Tomate mit Öl bis zu Kartoffeln, Gemüse oder Käse.",
+      "In New York faltet man ein großes dünnes Stück der Länge nach, so isst es sich gut im Gehen."
+     ],
+     "q": "Wählst du lieber ein Rechteck nach Gewicht oder ein großes faltbares Stück?",
+     "c": "Mach heute eine Mini-Blechpizza auf einem Brotboden, schneide sie in Quadrate und probier die New Yorker Faltung."
+    },
+    "es": {
+     "t": "Pizza en porciones",
+     "g": "Comparar dos maneras famosas de comer pizza sobre la marcha.",
+     "p": [
+      "En Roma, la pizza al taglio se hornea en grandes bandejas rectangulares y se corta del tamaño que quieras.",
+      "Se vende al peso, con coberturas que van del tomate con aceite a patata, verduras o queso.",
+      "En Nueva York, la gran porción fina se dobla a lo largo para comerla fácilmente caminando."
+     ],
+     "q": "¿Prefieres un rectángulo al peso o una gran porción para doblar?",
+     "c": "Haz hoy una mini pizza de bandeja sobre cualquier base de pan, córtala en cuadrados y prueba el pliegue neoyorquino."
+    },
+    "fr": {
+     "t": "La pizza à la part",
+     "g": "Comparer deux façons célèbres de manger une pizza sur le pouce.",
+     "p": [
+      "À Rome, la pizza al taglio cuit dans de grands plateaux rectangulaires et se coupe à la taille voulue.",
+      "Elle se vend au poids, garnie de simple tomate et huile, de pommes de terre, de légumes ou de fromage.",
+      "À New York, on plie la grande part fine dans la longueur pour la manger facilement en marchant."
+     ],
+     "q": "Préfères-tu un rectangle au poids ou une grande part à plier ?",
+     "c": "Fais aujourd'hui une mini pizza sur une base de pain, coupe-la en carrés et essaie le pliage new-yorkais."
+    },
+    "it": {
+     "t": "Pizza al taglio e al trancio",
+     "g": "Confrontare due modi famosi di mangiare pizza al volo.",
+     "p": [
+      "A Roma la pizza al taglio si cuoce in grandi teglie rettangolari e si taglia della misura che vuoi.",
+      "Si vende a peso, con condimenti dal semplice pomodoro e olio a patate, verdure o formaggio.",
+      "A New York la grande fetta sottile si piega a metà nel senso della lunghezza per mangiarla camminando."
+     ],
+     "q": "Preferisci un rettangolo a peso o una grande fetta da piegare?",
+     "c": "Prepara oggi una mini pizza in teglia su una base di pane, tagliala a quadrotti e prova la piega newyorkese."
+    },
+    "pt": {
+     "t": "Pizza à fatia",
+     "g": "Comparar duas formas famosas de comer pizza em movimento.",
+     "p": [
+      "Em Roma, a pizza al taglio coze em grandes tabuleiros retangulares e corta-se do tamanho que quiseres.",
+      "Vende-se ao peso, com coberturas que vão do simples tomate e azeite a batata, verduras ou queijo.",
+      "Em Nova Iorque, a grande fatia fina dobra-se ao comprido para se comer facilmente a andar."
+     ],
+     "q": "Preferes um retângulo ao peso ou uma grande fatia para dobrar?",
+     "c": "Faz hoje uma mini pizza de tabuleiro numa base de pão, corta-a em quadrados e experimenta a dobra nova-iorquina."
+    },
+    "pt_BR": {
+     "t": "Pizza em pedaço",
+     "g": "Comparar duas formas famosas de comer pizza andando.",
+     "p": [
+      "Em Roma, a pizza al taglio é assada em grandes assadeiras retangulares e cortada do tamanho que você quiser.",
+      "É vendida por peso, com coberturas que vão do simples tomate com azeite a batata, verduras ou queijo.",
+      "Em Nova York, a fatia grande e fina é dobrada ao meio no comprido para comer andando."
+     ],
+     "q": "Você prefere um retângulo por peso ou uma fatia grande para dobrar?",
+     "c": "Faça hoje uma mini pizza de assadeira sobre uma base de pão, corte em quadrados e teste a dobra nova-iorquina."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Arancini",
+     "g": "Meet Sicily's golden fried rice balls.",
+     "p": [
+      "Arancini are balls or cones of rice, often scented with saffron, coated in breadcrumbs and fried.",
+      "The classic filling is ragù with peas, while another favourite holds ham and melting cheese.",
+      "In Palermo many call it arancina, in Catania arancino, a friendly debate among Sicilians."
+     ],
+     "q": "What filling would you put inside your own arancino?",
+     "c": "Shape a small ball of leftover rice around a cube of cheese today, roll it in breadcrumbs and pan-fry or bake it."
+    },
+    "de": {
+     "t": "Arancini",
+     "g": "Siziliens goldene frittierte Reisbällchen kennenlernen.",
+     "p": [
+      "Arancini sind Kugeln oder Kegel aus Reis, oft mit Safran, in Paniermehl gewälzt und frittiert.",
+      "Klassisch ist eine Füllung aus Ragù mit Erbsen, beliebt ist auch Schinken mit schmelzendem Käse.",
+      "In Palermo sagen viele Arancina, in Catania Arancino, eine freundliche Debatte unter Sizilianern."
+     ],
+     "q": "Welche Füllung würdest du in dein eigenes Arancino geben?",
+     "c": "Forme heute eine kleine Kugel aus Reisresten um einen Käsewürfel, wälze sie in Paniermehl und brate oder back sie."
+    },
+    "es": {
+     "t": "Arancini",
+     "g": "Conocer las doradas bolas de arroz fritas de Sicilia.",
+     "p": [
+      "Los arancini son bolas o conos de arroz, a menudo con azafrán, rebozados en pan rallado y fritos.",
+      "El relleno clásico es ragú con guisantes, y otro favorito lleva jamón y queso fundido.",
+      "En Palermo muchos dicen arancina y en Catania arancino, un debate amistoso entre sicilianos."
+     ],
+     "q": "¿Qué relleno pondrías en tu propio arancino?",
+     "c": "Forma hoy una bolita de arroz sobrante alrededor de un dado de queso, pásala por pan rallado y fríela u hornéala."
+    },
+    "fr": {
+     "t": "Les arancini",
+     "g": "Découvrir les boulettes de riz dorées et frites de Sicile.",
+     "p": [
+      "Les arancini sont des boules ou cônes de riz, souvent au safran, panés puis frits.",
+      "La farce classique est un ragù aux petits pois, une autre favorite associe jambon et fromage fondant.",
+      "À Palerme on dit souvent arancina, à Catane arancino, un débat amical entre Siciliens."
+     ],
+     "q": "Quelle farce mettrais-tu dans ton propre arancino ?",
+     "c": "Façonne aujourd'hui une petite boule de riz restant autour d'un cube de fromage, panne-la et fais-la dorer ou cuire au four."
+    },
+    "it": {
+     "t": "Arancini",
+     "g": "Conoscere le dorate palle di riso fritte della Sicilia.",
+     "p": [
+      "Gli arancini sono palle o coni di riso, spesso allo zafferano, impanati e fritti.",
+      "Il ripieno classico è ragù con piselli, un altro preferito è prosciutto e formaggio filante.",
+      "A Palermo molti dicono arancina, a Catania arancino: un dibattito affettuoso tra siciliani."
+     ],
+     "q": "Quale ripieno metteresti nel tuo arancino?",
+     "c": "Forma oggi una pallina di riso avanzato attorno a un cubetto di formaggio, impanala e friggila o cuocila in forno."
+    },
+    "pt": {
+     "t": "Arancini",
+     "g": "Conhecer as douradas bolas de arroz fritas da Sicília.",
+     "p": [
+      "Os arancini são bolas ou cones de arroz, muitas vezes com açafrão, panados e fritos.",
+      "O recheio clássico é ragù com ervilhas, e outro favorito leva fiambre e queijo derretido.",
+      "Em Palermo muitos dizem arancina, em Catânia arancino, um debate amigável entre sicilianos."
+     ],
+     "q": "Que recheio porias no teu próprio arancino?",
+     "c": "Molda hoje uma bolinha de arroz que sobrou à volta de um cubo de queijo, passa-a por pão ralado e frita ou leva ao forno."
+    },
+    "pt_BR": {
+     "t": "Arancini",
+     "g": "Conhecer os bolinhos de arroz fritos e dourados da Sicília.",
+     "p": [
+      "Os arancini são bolas ou cones de arroz, muitas vezes com açafrão, empanados e fritos.",
+      "O recheio clássico é ragù com ervilha, e outro favorito leva presunto e queijo derretido.",
+      "Em Palermo muitos dizem arancina, em Catânia arancino, um debate amigável entre sicilianos."
+     ],
+     "q": "Que recheio você colocaria no seu próprio arancino?",
+     "c": "Modele hoje uma bolinha de arroz que sobrou em volta de um cubo de queijo, empane e frite ou asse."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pizza fritta and Naples snacks",
+     "g": "Taste the fried side of Naples' street food.",
+     "p": [
+      "Pizza fritta is a pizza dough folded around fillings like ricotta and tomato, then fried until puffy.",
+      "It became popular in Naples as a filling, affordable snack, especially in the years after the war.",
+      "The cuoppo is a paper cone of fried treats: little dough balls, croquettes, vegetables or seafood."
+     ],
+     "q": "Which fried snack would you put in your own cuoppo?",
+     "c": "Roll a paper cone today and fill it with a mix of small snacks to share, Naples style."
+    },
+    "de": {
+     "t": "Pizza fritta und Snacks aus Neapel",
+     "g": "Die frittierte Seite des neapolitanischen Streetfoods kosten.",
+     "p": [
+      "Pizza fritta ist Pizzateig, um Füllungen wie Ricotta und Tomate gefaltet und frittiert, bis er aufgeht.",
+      "Sie wurde in Neapel als sättigender, günstiger Snack beliebt, besonders in den Jahren nach dem Krieg.",
+      "Der Cuoppo ist eine Papiertüte voller Frittiertem: Teigbällchen, Kroketten, Gemüse oder Meeresfrüchte."
+     ],
+     "q": "Welchen frittierten Snack würdest du in deinen eigenen Cuoppo packen?",
+     "c": "Roll heute eine Papiertüte und fülle sie mit kleinen Snacks zum Teilen, wie in Neapel."
+    },
+    "es": {
+     "t": "Pizza fritta y bocados de Nápoles",
+     "g": "Probar el lado frito de la comida callejera de Nápoles.",
+     "p": [
+      "La pizza fritta es masa de pizza doblada sobre rellenos como ricota y tomate y frita hasta inflarse.",
+      "Se hizo popular en Nápoles como bocado sustancioso y asequible, sobre todo en la posguerra.",
+      "El cuoppo es un cono de papel con fritos: bolitas de masa, croquetas, verduras o marisco."
+     ],
+     "q": "¿Qué frito pondrías en tu propio cuoppo?",
+     "c": "Enrolla hoy un cono de papel y llénalo con una mezcla de bocaditos para compartir, al estilo napolitano."
+    },
+    "fr": {
+     "t": "Pizza fritta et snacks de Naples",
+     "g": "Goûter le côté frit de la cuisine de rue napolitaine.",
+     "p": [
+      "La pizza fritta est une pâte à pizza pliée sur une farce comme ricotta et tomate, puis frite jusqu'à gonfler.",
+      "Elle est devenue populaire à Naples comme en-cas nourrissant et abordable, surtout après la guerre.",
+      "Le cuoppo est un cornet de papier rempli de fritures : boulettes de pâte, croquettes, légumes ou fruits de mer."
+     ],
+     "q": "Quelle friture mettrais-tu dans ton propre cuoppo ?",
+     "c": "Roule aujourd'hui un cornet de papier et remplis-le de petits en-cas à partager, à la napolitaine."
+    },
+    "it": {
+     "t": "Pizza fritta e sfizi napoletani",
+     "g": "Assaggiare il lato fritto del cibo di strada di Napoli.",
+     "p": [
+      "La pizza fritta è impasto di pizza ripiegato su ripieni come ricotta e pomodoro e fritto finché si gonfia.",
+      "Divenne popolare a Napoli come spuntino sostanzioso e accessibile, soprattutto nel dopoguerra.",
+      "Il cuoppo è un cono di carta pieno di fritti: zeppoline, crocchè, verdure o frutti di mare."
+     ],
+     "q": "Quale frittura metteresti nel tuo cuoppo?",
+     "c": "Arrotola oggi un cono di carta e riempilo con un mix di stuzzichini da condividere, alla napoletana."
+    },
+    "pt": {
+     "t": "Pizza fritta e petiscos de Nápoles",
+     "g": "Provar o lado frito da comida de rua de Nápoles.",
+     "p": [
+      "A pizza fritta é massa de pizza dobrada sobre recheios como ricota e tomate e frita até inchar.",
+      "Tornou-se popular em Nápoles como petisco que sacia e acessível, sobretudo no pós-guerra.",
+      "O cuoppo é um cone de papel com fritos: bolinhas de massa, croquetes, legumes ou marisco."
+     ],
+     "q": "Que frito porias no teu próprio cuoppo?",
+     "c": "Enrola hoje um cone de papel e enche-o com uma mistura de petiscos para partilhar, à moda de Nápoles."
+    },
+    "pt_BR": {
+     "t": "Pizza fritta e petiscos de Nápoles",
+     "g": "Provar o lado frito da comida de rua de Nápoles.",
+     "p": [
+      "A pizza fritta é massa de pizza dobrada sobre recheios como ricota e tomate e frita até estufar.",
+      "Ficou popular em Nápoles como petisco que sustenta e acessível, sobretudo no pós-guerra.",
+      "O cuoppo é um cone de papel com frituras: bolinhas de massa, croquetes, legumes ou frutos do mar."
+     ],
+     "q": "Que fritura você colocaria no seu próprio cuoppo?",
+     "c": "Enrole hoje um cone de papel e encha com uma mistura de petiscos para dividir, no estilo de Nápoles."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Crêpes in France",
+     "g": "Discover the sweet and savoury pancakes from Brittany.",
+     "p": [
+      "Crêpes come from Brittany in western France and are cooked on a hot round griddle.",
+      "Sweet crêpes use wheat flour, with fillings like sugar and lemon, jam or chocolate spread.",
+      "Savoury galettes use buckwheat flour; the classic complète has ham, cheese and an egg."
+     ],
+     "q": "Would you pick a sweet crêpe or a savoury galette?",
+     "c": "Make a thin pancake today and fill half with something sweet and half with something savoury."
+    },
+    "de": {
+     "t": "Crêpes in Frankreich",
+     "g": "Die süßen und herzhaften Pfannkuchen aus der Bretagne entdecken.",
+     "p": [
+      "Crêpes stammen aus der Bretagne im Westen Frankreichs und werden auf einer heißen runden Platte gebacken.",
+      "Süße Crêpes sind aus Weizenmehl, mit Zucker und Zitrone, Marmelade oder Schokocreme.",
+      "Herzhafte Galettes sind aus Buchweizenmehl; die klassische Complète hat Schinken, Käse und Ei."
+     ],
+     "q": "Würdest du eine süße Crêpe oder eine herzhafte Galette wählen?",
+     "c": "Back heute einen dünnen Pfannkuchen und belege eine Hälfte süß, die andere herzhaft."
+    },
+    "es": {
+     "t": "Crepes en Francia",
+     "g": "Descubrir las tortitas dulces y saladas de Bretaña.",
+     "p": [
+      "Las crepes vienen de Bretaña, en el oeste de Francia, y se hacen en una plancha redonda muy caliente.",
+      "Las dulces llevan harina de trigo, con azúcar y limón, mermelada o crema de chocolate.",
+      "Las galettes saladas son de trigo sarraceno; la clásica complète lleva jamón, queso y huevo."
+     ],
+     "q": "¿Elegirías una crepe dulce o una galette salada?",
+     "c": "Haz hoy una tortita fina y rellena una mitad con algo dulce y la otra con algo salado."
+    },
+    "fr": {
+     "t": "Les crêpes en France",
+     "g": "Découvrir les crêpes sucrées et salées venues de Bretagne.",
+     "p": [
+      "Les crêpes viennent de Bretagne, dans l'ouest de la France, et cuisent sur une bilig, une plaque ronde brûlante.",
+      "Les crêpes sucrées sont au froment, garnies de sucre et citron, confiture ou pâte à tartiner.",
+      "Les galettes salées sont au sarrasin ; la complète classique a jambon, fromage et œuf."
+     ],
+     "q": "Choisirais-tu une crêpe sucrée ou une galette salée ?",
+     "c": "Fais aujourd'hui une crêpe fine et garnis une moitié de sucré, l'autre de salé."
+    },
+    "it": {
+     "t": "Crêpes in Francia",
+     "g": "Scoprire le crespelle dolci e salate della Bretagna.",
+     "p": [
+      "Le crêpes vengono dalla Bretagna, nella Francia occidentale, e si cuociono su una piastra rotonda rovente.",
+      "Quelle dolci sono di farina di frumento, con zucchero e limone, marmellata o crema al cioccolato.",
+      "Le galettes salate sono di grano saraceno; la classica complète ha prosciutto, formaggio e uovo."
+     ],
+     "q": "Sceglieresti una crêpe dolce o una galette salata?",
+     "c": "Prepara oggi una crespella sottile e farcisci metà con qualcosa di dolce e metà con qualcosa di salato."
+    },
+    "pt": {
+     "t": "Crepes em França",
+     "g": "Descobrir os crepes doces e salgados da Bretanha.",
+     "p": [
+      "Os crepes vêm da Bretanha, no oeste de França, e fazem-se numa chapa redonda bem quente.",
+      "Os doces levam farinha de trigo, com açúcar e limão, compota ou creme de chocolate.",
+      "As galettes salgadas são de trigo-sarraceno; a clássica complète tem fiambre, queijo e ovo."
+     ],
+     "q": "Escolhias um crepe doce ou uma galette salgada?",
+     "c": "Faz hoje um crepe fino e recheia metade com algo doce e metade com algo salgado."
+    },
+    "pt_BR": {
+     "t": "Crepes na França",
+     "g": "Descobrir os crepes doces e salgados da Bretanha.",
+     "p": [
+      "Os crepes vêm da Bretanha, no oeste da França, e são feitos numa chapa redonda bem quente.",
+      "Os doces levam farinha de trigo, com açúcar e limão, geleia ou creme de chocolate.",
+      "As galettes salgadas são de trigo-sarraceno; a clássica complète tem presunto, queijo e ovo."
+     ],
+     "q": "Você escolheria um crepe doce ou uma galette salgada?",
+     "c": "Faça hoje um crepe fino e recheie metade com algo doce e metade com algo salgado."
+    }
+   }
+  }
+ ]
+}

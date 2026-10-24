@@ -1,0 +1,835 @@
+{
+ "topic": "gardening",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why gardening is good for you",
+     "g": "Discover how caring for plants brings calm, fresh food, beauty and a link with nature.",
+     "p": [
+      "Tending plants slows you down and gives your mind a gentle break from screens and stress.",
+      "Even a small pot of herbs can give you fresh flavour and a real sense of achievement.",
+      "You do not need a garden: a windowsill, a balcony or a single pot is a perfectly good start."
+     ],
+     "q": "What made you curious about plants: calm, food, flowers or something else?",
+     "c": "Today, find one spot at home where a plant could live and look at it for a minute."
+    },
+    "de": {
+     "t": "Warum Gärtnern guttut",
+     "g": "Entdecke, wie Pflanzenpflege Ruhe, frisches Essen, Schönheit und Naturnähe schenkt.",
+     "p": [
+      "Pflanzen zu pflegen entschleunigt und gibt dem Kopf eine sanfte Pause von Bildschirmen und Stress.",
+      "Schon ein kleiner Kräutertopf bringt frischen Geschmack und ein echtes Erfolgserlebnis.",
+      "Du brauchst keinen Garten: Fensterbank, Balkon oder ein einziger Topf sind ein guter Anfang."
+     ],
+     "q": "Was hat dein Interesse an Pflanzen geweckt: Ruhe, Essen, Blumen oder etwas anderes?",
+     "c": "Such heute einen Platz zu Hause, an dem eine Pflanze leben könnte, und sieh ihn eine Minute an."
+    },
+    "es": {
+     "t": "Por qué la jardinería te hace bien",
+     "g": "Descubre cómo cuidar plantas aporta calma, comida fresca, belleza y contacto con la naturaleza.",
+     "p": [
+      "Cuidar plantas te hace ir más despacio y da a tu mente un descanso de pantallas y estrés.",
+      "Incluso una maceta pequeña de hierbas da sabor fresco y una sensación real de logro.",
+      "No necesitas un jardín: una repisa, un balcón o una sola maceta es un buen comienzo."
+     ],
+     "q": "¿Qué te despertó la curiosidad por las plantas: la calma, la comida, las flores u otra cosa?",
+     "c": "Hoy busca un rincón de tu casa donde podría vivir una planta y obsérvalo un minuto."
+    },
+    "fr": {
+     "t": "Pourquoi jardiner fait du bien",
+     "g": "Découvre comment prendre soin des plantes apporte calme, aliments frais, beauté et lien avec la nature.",
+     "p": [
+      "S'occuper de plantes ralentit le rythme et offre à l'esprit une pause douce loin des écrans et du stress.",
+      "Même un petit pot d'herbes aromatiques donne du goût frais et une vraie fierté.",
+      "Pas besoin de jardin : un rebord de fenêtre, un balcon ou un seul pot suffit pour bien commencer."
+     ],
+     "q": "Qu'est-ce qui t'a donné envie de t'intéresser aux plantes : le calme, la cuisine, les fleurs ?",
+     "c": "Aujourd'hui, repère un endroit chez toi où une plante pourrait vivre et regarde-le une minute."
+    },
+    "it": {
+     "t": "Perché il giardinaggio fa bene",
+     "g": "Scopri come prenderti cura delle piante porta calma, cibo fresco, bellezza e contatto con la natura.",
+     "p": [
+      "Curare le piante rallenta il ritmo e regala alla mente una pausa gentile da schermi e stress.",
+      "Anche un piccolo vaso di erbe aromatiche dà sapore fresco e una vera soddisfazione.",
+      "Non serve un giardino: un davanzale, un balcone o un solo vaso sono un ottimo inizio."
+     ],
+     "q": "Cosa ti ha incuriosito delle piante: la calma, il cibo, i fiori o altro?",
+     "c": "Oggi trova in casa un angolo dove potrebbe vivere una pianta e osservalo per un minuto."
+    },
+    "pt": {
+     "t": "Porque é que a jardinagem faz bem",
+     "g": "Descobre como cuidar de plantas traz calma, comida fresca, beleza e ligação à natureza.",
+     "p": [
+      "Cuidar de plantas abranda o ritmo e dá à mente uma pausa suave dos ecrãs e do stress.",
+      "Até um pequeno vaso de ervas aromáticas dá sabor fresco e uma verdadeira sensação de conquista.",
+      "Não precisas de um jardim: um parapeito, uma varanda ou um só vaso é um ótimo começo."
+     ],
+     "q": "O que despertou a tua curiosidade pelas plantas: a calma, a comida, as flores ou outra coisa?",
+     "c": "Hoje procura um canto em casa onde uma planta possa viver e observa-o durante um minuto."
+    },
+    "pt_BR": {
+     "t": "Por que a jardinagem faz bem",
+     "g": "Descubra como cuidar de plantas traz calma, comida fresca, beleza e conexão com a natureza.",
+     "p": [
+      "Cuidar de plantas desacelera o ritmo e dá à mente uma pausa suave das telas e do estresse.",
+      "Até um pequeno vaso de ervas dá sabor fresco e uma sensação real de conquista.",
+      "Você não precisa de um jardim: um peitoril, uma varanda ou um único vaso já é um ótimo começo."
+     ],
+     "q": "O que despertou sua curiosidade por plantas: a calma, a comida, as flores ou outra coisa?",
+     "c": "Hoje procure um canto da sua casa onde uma planta poderia viver e observe-o por um minuto."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What every plant needs",
+     "g": "Learn the five basics every plant depends on to stay healthy.",
+     "p": [
+      "Plants need light, water, air, nutrients and a suitable temperature, and each one matters.",
+      "Too much or too little of any one basic causes most problems, so balance beats extremes.",
+      "Different plants want different amounts, so always check what your plant prefers."
+     ],
+     "q": "Which of the five basics do you think is hardest to get right at your home?",
+     "c": "Today, name the five basics out loud and note which one your home gives plants best."
+    },
+    "de": {
+     "t": "Was jede Pflanze braucht",
+     "g": "Lerne die fünf Grundlagen kennen, von denen jede Pflanze abhängt.",
+     "p": [
+      "Pflanzen brauchen Licht, Wasser, Luft, Nährstoffe und eine passende Temperatur, jedes zählt.",
+      "Zu viel oder zu wenig von einem Faktor verursacht die meisten Probleme: Balance schlägt Extreme.",
+      "Verschiedene Pflanzen wollen verschieden viel, also prüfe immer, was deine Pflanze mag."
+     ],
+     "q": "Welche der fünf Grundlagen ist bei dir zu Hause wohl am schwersten richtig hinzubekommen?",
+     "c": "Nenne heute die fünf Grundlagen laut und notiere, welche dein Zuhause am besten liefert."
+    },
+    "es": {
+     "t": "Lo que toda planta necesita",
+     "g": "Aprende las cinco bases de las que depende toda planta sana.",
+     "p": [
+      "Las plantas necesitan luz, agua, aire, nutrientes y una temperatura adecuada, y cada una cuenta.",
+      "Demasiado o muy poco de una sola base causa la mayoría de los problemas: el equilibrio gana.",
+      "Cada planta quiere cantidades distintas, así que revisa siempre lo que prefiere la tuya."
+     ],
+     "q": "¿Cuál de las cinco bases crees que es más difícil acertar en tu casa?",
+     "c": "Hoy nombra en voz alta las cinco bases y anota cuál ofrece mejor tu casa."
+    },
+    "fr": {
+     "t": "Ce dont toute plante a besoin",
+     "g": "Apprends les cinq bases dont dépend toute plante en bonne santé.",
+     "p": [
+      "Les plantes ont besoin de lumière, d'eau, d'air, de nutriments et d'une température adaptée, chacun compte.",
+      "Trop ou trop peu d'un seul élément cause la plupart des soucis : l'équilibre vaut mieux que l'excès.",
+      "Chaque plante a ses préférences, alors vérifie toujours ce qu'aime la tienne."
+     ],
+     "q": "Parmi ces cinq bases, laquelle te semble la plus difficile à réussir chez toi ?",
+     "c": "Aujourd'hui, cite les cinq bases à voix haute et note celle que ton logement offre le mieux."
+    },
+    "it": {
+     "t": "Di cosa ha bisogno ogni pianta",
+     "g": "Impara le cinque basi da cui dipende ogni pianta sana.",
+     "p": [
+      "Le piante hanno bisogno di luce, acqua, aria, nutrienti e temperatura adatta, e ognuno conta.",
+      "Troppo o troppo poco di un solo fattore causa la maggior parte dei problemi: meglio l'equilibrio.",
+      "Piante diverse vogliono quantità diverse, quindi controlla sempre cosa preferisce la tua."
+     ],
+     "q": "Quale delle cinque basi pensi sia più difficile da gestire in casa tua?",
+     "c": "Oggi nomina ad alta voce le cinque basi e annota quale la tua casa offre meglio."
+    },
+    "pt": {
+     "t": "O que toda a planta precisa",
+     "g": "Aprende as cinco bases de que depende qualquer planta saudável.",
+     "p": [
+      "As plantas precisam de luz, água, ar, nutrientes e temperatura adequada, e cada uma conta.",
+      "Demais ou de menos de uma só base causa a maioria dos problemas: o equilíbrio vence os extremos.",
+      "Cada planta quer quantidades diferentes, por isso confirma sempre o que a tua prefere."
+     ],
+     "q": "Qual das cinco bases achas mais difícil acertar na tua casa?",
+     "c": "Hoje diz em voz alta as cinco bases e anota qual a tua casa oferece melhor."
+    },
+    "pt_BR": {
+     "t": "O que toda planta precisa",
+     "g": "Aprenda as cinco bases das quais toda planta saudável depende.",
+     "p": [
+      "As plantas precisam de luz, água, ar, nutrientes e temperatura adequada, e cada uma importa.",
+      "Demais ou de menos de uma única base causa a maioria dos problemas: equilíbrio vence extremos.",
+      "Cada planta quer quantidades diferentes, então confira sempre o que a sua prefere."
+     ],
+     "q": "Qual das cinco bases você acha mais difícil acertar na sua casa?",
+     "c": "Hoje diga em voz alta as cinco bases e anote qual a sua casa oferece melhor."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How plants grow",
+     "g": "Understand roots, stems, leaves and flowers and what each does.",
+     "p": [
+      "Roots anchor the plant and drink water and nutrients from the soil.",
+      "Stems carry water upward and hold leaves toward the light, while leaves make food.",
+      "Flowers make seeds or fruit, so a plant that blooms is usually a healthy, settled one."
+     ],
+     "q": "Which part of a plant do you find most interesting to watch as it grows?",
+     "c": "Today, look closely at one plant and point out its roots, stem, leaves and any buds."
+    },
+    "de": {
+     "t": "Wie Pflanzen wachsen",
+     "g": "Verstehe Wurzeln, Stängel, Blätter und Blüten und ihre Aufgaben.",
+     "p": [
+      "Wurzeln verankern die Pflanze und nehmen Wasser und Nährstoffe aus der Erde auf.",
+      "Stängel leiten Wasser nach oben und halten die Blätter ins Licht, die Blätter bilden Nahrung.",
+      "Blüten bilden Samen oder Früchte, eine blühende Pflanze ist meist gesund und eingewachsen."
+     ],
+     "q": "Welchen Teil einer Pflanze beobachtest du beim Wachsen am liebsten?",
+     "c": "Sieh dir heute eine Pflanze genau an und zeige Wurzeln, Stängel, Blätter und Knospen."
+    },
+    "es": {
+     "t": "Cómo crecen las plantas",
+     "g": "Entiende las raíces, tallos, hojas y flores y lo que hace cada una.",
+     "p": [
+      "Las raíces sujetan la planta y absorben agua y nutrientes del suelo.",
+      "Los tallos llevan el agua hacia arriba y sostienen las hojas hacia la luz, y las hojas fabrican alimento.",
+      "Las flores producen semillas o frutos, así que una planta que florece suele estar sana y asentada."
+     ],
+     "q": "¿Qué parte de una planta te parece más interesante de ver crecer?",
+     "c": "Hoy observa de cerca una planta y señala sus raíces, tallo, hojas y posibles yemas."
+    },
+    "fr": {
+     "t": "Comment poussent les plantes",
+     "g": "Comprends les racines, tiges, feuilles et fleurs et leur rôle.",
+     "p": [
+      "Les racines ancrent la plante et puisent l'eau et les nutriments du sol.",
+      "Les tiges montent l'eau et tendent les feuilles vers la lumière, tandis que les feuilles fabriquent la nourriture.",
+      "Les fleurs produisent graines ou fruits : une plante qui fleurit est souvent en bonne santé."
+     ],
+     "q": "Quelle partie d'une plante aimes-tu le plus observer pendant sa croissance ?",
+     "c": "Aujourd'hui, observe une plante de près et repère ses racines, sa tige, ses feuilles et ses bourgeons."
+    },
+    "it": {
+     "t": "Come crescono le piante",
+     "g": "Capisci radici, fusti, foglie e fiori e a cosa serve ciascuno.",
+     "p": [
+      "Le radici ancorano la pianta e assorbono acqua e nutrienti dal terreno.",
+      "I fusti portano l'acqua verso l'alto e tengono le foglie verso la luce, mentre le foglie producono cibo.",
+      "I fiori producono semi o frutti, quindi una pianta che fiorisce di solito è sana e ben ambientata."
+     ],
+     "q": "Quale parte di una pianta ti piace osservare di più mentre cresce?",
+     "c": "Oggi osserva da vicino una pianta e indica radici, fusto, foglie ed eventuali gemme."
+    },
+    "pt": {
+     "t": "Como crescem as plantas",
+     "g": "Compreende raízes, caules, folhas e flores e a função de cada uma.",
+     "p": [
+      "As raízes fixam a planta e absorvem água e nutrientes do solo.",
+      "Os caules levam a água para cima e erguem as folhas para a luz, e as folhas produzem alimento.",
+      "As flores produzem sementes ou frutos, por isso uma planta que floresce costuma estar saudável."
+     ],
+     "q": "Que parte de uma planta mais gostas de ver crescer?",
+     "c": "Hoje observa de perto uma planta e aponta as raízes, o caule, as folhas e os botões."
+    },
+    "pt_BR": {
+     "t": "Como as plantas crescem",
+     "g": "Entenda raízes, caules, folhas e flores e a função de cada uma.",
+     "p": [
+      "As raízes fixam a planta e absorvem água e nutrientes do solo.",
+      "Os caules levam a água para cima e erguem as folhas para a luz, e as folhas produzem alimento.",
+      "As flores produzem sementes ou frutos, então uma planta que floresce costuma estar saudável."
+     ],
+     "q": "Que parte de uma planta você mais gosta de ver crescer?",
+     "c": "Hoje observe de perto uma planta e aponte as raízes, o caule, as folhas e os botões."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Photosynthesis made simple",
+     "g": "See how leaves turn light, water and air into energy for growth.",
+     "p": [
+      "Leaves capture sunlight and combine it with water and carbon dioxide to make sugar.",
+      "The plant releases oxygen as a by-product, which is why plants freshen the air outdoors.",
+      "Less light means less sugar, so weak, stretched growth often signals a plant needs more light."
+     ],
+     "q": "Have you ever noticed a plant leaning toward a window? What did you think it was doing?",
+     "c": "Today, check which way your plants lean and note which side the light comes from."
+    },
+    "de": {
+     "t": "Fotosynthese einfach erklärt",
+     "g": "Sieh, wie Blätter aus Licht, Wasser und Luft Wachstumsenergie machen.",
+     "p": [
+      "Blätter fangen Sonnenlicht ein und bilden daraus mit Wasser und Kohlendioxid Zucker.",
+      "Dabei entsteht Sauerstoff als Nebenprodukt, darum sorgen Pflanzen draußen für frische Luft.",
+      "Weniger Licht heißt weniger Zucker, schwaches, gestrecktes Wachstum zeigt oft Lichtmangel an."
+     ],
+     "q": "Hast du schon mal gesehen, dass sich eine Pflanze zum Fenster neigt? Was dachtest du?",
+     "c": "Prüfe heute, wohin sich deine Pflanzen neigen, und notiere, von welcher Seite das Licht kommt."
+    },
+    "es": {
+     "t": "La fotosíntesis, fácil",
+     "g": "Mira cómo las hojas convierten luz, agua y aire en energía para crecer.",
+     "p": [
+      "Las hojas captan la luz del sol y la combinan con agua y dióxido de carbono para hacer azúcar.",
+      "La planta libera oxígeno como subproducto, por eso las plantas refrescan el aire al aire libre.",
+      "Menos luz significa menos azúcar: un crecimiento débil y estirado suele indicar falta de luz."
+     ],
+     "q": "¿Has notado alguna vez una planta inclinada hacia la ventana? ¿Qué pensaste que hacía?",
+     "c": "Hoy mira hacia dónde se inclinan tus plantas y anota de qué lado viene la luz."
+    },
+    "fr": {
+     "t": "La photosynthèse en simple",
+     "g": "Vois comment les feuilles transforment lumière, eau et air en énergie de croissance.",
+     "p": [
+      "Les feuilles captent la lumière et la combinent à l'eau et au dioxyde de carbone pour fabriquer du sucre.",
+      "La plante rejette de l'oxygène au passage, c'est pourquoi les plantes assainissent l'air dehors.",
+      "Moins de lumière donne moins de sucre : une croissance faible et étirée signale souvent un manque de lumière."
+     ],
+     "q": "As-tu déjà vu une plante pencher vers la fenêtre ? Que pensais-tu qu'elle faisait ?",
+     "c": "Aujourd'hui, regarde où penchent tes plantes et note de quel côté vient la lumière."
+    },
+    "it": {
+     "t": "La fotosintesi spiegata semplice",
+     "g": "Scopri come le foglie trasformano luce, acqua e aria in energia per crescere.",
+     "p": [
+      "Le foglie catturano la luce del sole e la uniscono ad acqua e anidride carbonica per fare zucchero.",
+      "La pianta rilascia ossigeno come sottoprodotto, per questo all'aperto le piante rinfrescano l'aria.",
+      "Meno luce significa meno zucchero: una crescita debole e allungata spesso indica poca luce."
+     ],
+     "q": "Hai mai notato una pianta inclinata verso la finestra? Cosa pensavi stesse facendo?",
+     "c": "Oggi guarda da che parte si piegano le tue piante e annota da quale lato arriva la luce."
+    },
+    "pt": {
+     "t": "A fotossíntese explicada",
+     "g": "Vê como as folhas transformam luz, água e ar em energia para crescer.",
+     "p": [
+      "As folhas captam a luz do sol e combinam-na com água e dióxido de carbono para fazer açúcar.",
+      "A planta liberta oxigénio como subproduto, por isso as plantas refrescam o ar ao ar livre.",
+      "Menos luz significa menos açúcar: crescimento fraco e esticado costuma indicar falta de luz."
+     ],
+     "q": "Já reparaste numa planta inclinada para a janela? O que pensaste que ela estava a fazer?",
+     "c": "Hoje vê para onde se inclinam as tuas plantas e anota de que lado vem a luz."
+    },
+    "pt_BR": {
+     "t": "Fotossíntese sem complicação",
+     "g": "Veja como as folhas transformam luz, água e ar em energia para crescer.",
+     "p": [
+      "As folhas captam a luz do sol e a combinam com água e gás carbônico para fazer açúcar.",
+      "A planta libera oxigênio como subproduto, por isso as plantas refrescam o ar ao ar livre.",
+      "Menos luz significa menos açúcar: crescimento fraco e esticado costuma indicar falta de luz."
+     ],
+     "q": "Você já reparou numa planta inclinada para a janela? O que achou que ela estava fazendo?",
+     "c": "Hoje veja para onde suas plantas se inclinam e anote de que lado vem a luz."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading your light",
+     "g": "Find out how much sun your windows, balcony or garden really get.",
+     "p": [
+      "Light changes through the day and the year, so one glance at noon can mislead you.",
+      "Windows facing the equator get the most sun: south in the northern hemisphere, north in the southern.",
+      "Check a spot at morning, noon and afternoon, since trees, walls and curtains change it."
+     ],
+     "q": "Which window or spot at home feels brightest to you, and when?",
+     "c": "Today, check one spot three times (morning, noon, afternoon) and jot down what you see."
+    },
+    "de": {
+     "t": "Dein Licht lesen",
+     "g": "Finde heraus, wie viel Sonne deine Fenster, dein Balkon oder Garten wirklich bekommen.",
+     "p": [
+      "Licht ändert sich im Tagesverlauf und im Jahr, ein Blick mittags kann täuschen.",
+      "Fenster zum Äquator hin bekommen am meisten Sonne: Süden auf der Nordhalbkugel, Norden auf der Südhalbkugel.",
+      "Prüfe einen Platz morgens, mittags und nachmittags, denn Bäume, Mauern und Vorhänge verändern ihn."
+     ],
+     "q": "Welches Fenster oder welcher Platz zu Hause wirkt auf dich am hellsten, und wann?",
+     "c": "Prüfe heute einen Platz dreimal (morgens, mittags, nachmittags) und notiere, was du siehst."
+    },
+    "es": {
+     "t": "Leer tu luz",
+     "g": "Averigua cuánto sol reciben de verdad tus ventanas, balcón o jardín.",
+     "p": [
+      "La luz cambia durante el día y el año, así que mirar solo al mediodía puede engañarte.",
+      "Las ventanas orientadas al ecuador reciben más sol: sur en el hemisferio norte, norte en el sur.",
+      "Revisa un sitio por la mañana, al mediodía y por la tarde: árboles, muros y cortinas lo cambian."
+     ],
+     "q": "¿Qué ventana o rincón de tu casa te parece el más luminoso y cuándo?",
+     "c": "Hoy revisa un sitio tres veces (mañana, mediodía, tarde) y anota lo que ves."
+    },
+    "fr": {
+     "t": "Lire ta lumière",
+     "g": "Découvre combien de soleil reçoivent vraiment tes fenêtres, ton balcon ou ton jardin.",
+     "p": [
+      "La lumière change au fil du jour et des saisons : un coup d'œil à midi peut tromper.",
+      "Les fenêtres tournées vers l'équateur reçoivent le plus de soleil : sud dans l'hémisphère nord, nord dans l'hémisphère sud.",
+      "Observe un endroit le matin, à midi et l'après-midi : arbres, murs et rideaux le modifient."
+     ],
+     "q": "Quelle fenêtre ou quel coin de ta maison te semble le plus lumineux, et à quel moment ?",
+     "c": "Aujourd'hui, observe un endroit trois fois (matin, midi, après-midi) et note ce que tu vois."
+    },
+    "it": {
+     "t": "Leggere la tua luce",
+     "g": "Scopri quanto sole ricevono davvero finestre, balcone o giardino.",
+     "p": [
+      "La luce cambia durante il giorno e l'anno, quindi uno sguardo a mezzogiorno può ingannare.",
+      "Le finestre rivolte verso l'equatore ricevono più sole: sud nell'emisfero nord, nord in quello sud.",
+      "Controlla un punto al mattino, a mezzogiorno e al pomeriggio: alberi, muri e tende lo cambiano."
+     ],
+     "q": "Quale finestra o angolo di casa ti sembra il più luminoso, e quando?",
+     "c": "Oggi controlla un punto tre volte (mattina, mezzogiorno, pomeriggio) e annota cosa vedi."
+    },
+    "pt": {
+     "t": "Ler a tua luz",
+     "g": "Descobre quanto sol recebem realmente as tuas janelas, varanda ou jardim.",
+     "p": [
+      "A luz muda ao longo do dia e do ano, por isso um olhar ao meio-dia pode enganar.",
+      "As janelas voltadas para o equador recebem mais sol: sul no hemisfério norte, norte no hemisfério sul.",
+      "Verifica um local de manhã, ao meio-dia e à tarde: árvores, muros e cortinas alteram-no."
+     ],
+     "q": "Que janela ou canto da tua casa te parece o mais luminoso, e quando?",
+     "c": "Hoje verifica um local três vezes (manhã, meio-dia, tarde) e anota o que vês."
+    },
+    "pt_BR": {
+     "t": "Lendo a sua luz",
+     "g": "Descubra quanto sol suas janelas, varanda ou jardim realmente recebem.",
+     "p": [
+      "A luz muda ao longo do dia e do ano, então olhar só ao meio-dia pode enganar.",
+      "Janelas voltadas para o equador recebem mais sol: sul no hemisfério norte, norte no hemisfério sul.",
+      "Confira um local de manhã, ao meio-dia e à tarde: árvores, muros e cortinas mudam isso."
+     ],
+     "q": "Qual janela ou canto da sua casa parece o mais iluminado, e quando?",
+     "c": "Hoje confira um local três vezes (manhã, meio-dia, tarde) e anote o que vê."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Direct, bright and low light",
+     "g": "Decode full sun, bright indirect light and shade on plant labels.",
+     "p": [
+      "Full sun means about six or more hours of direct sun on the plant each day.",
+      "Bright indirect light is a bright room where the sun does not hit the leaves directly.",
+      "Low light still means some daylight: a spot where you can read comfortably without a lamp."
+     ],
+     "q": "Which light level does your favourite spot at home match?",
+     "c": "Today, hold your hand over a plant spot and look at the shadow: sharp means strong light, faint means low."
+    },
+    "de": {
+     "t": "Direkt, hell und schwach",
+     "g": "Verstehe auf Etiketten volle Sonne, helles indirektes Licht und Schatten.",
+     "p": [
+      "Volle Sonne bedeutet etwa sechs oder mehr Stunden direkte Sonne pro Tag.",
+      "Helles indirektes Licht ist ein heller Raum, in dem die Sonne die Blätter nicht direkt trifft.",
+      "Schwaches Licht heißt trotzdem Tageslicht: ein Platz, an dem du ohne Lampe gut lesen kannst."
+     ],
+     "q": "Welcher Lichtstufe entspricht dein Lieblingsplatz zu Hause?",
+     "c": "Halte heute deine Hand über einen Pflanzenplatz: scharfer Schatten heißt starkes, schwacher heißt wenig Licht."
+    },
+    "es": {
+     "t": "Luz directa, brillante y baja",
+     "g": "Descifra sol pleno, luz indirecta brillante y sombra en las etiquetas.",
+     "p": [
+      "Sol pleno significa unas seis o más horas de sol directo al día sobre la planta.",
+      "Luz indirecta brillante es una habitación clara donde el sol no da directamente en las hojas.",
+      "Luz baja sigue siendo luz de día: un sitio donde puedes leer cómodamente sin lámpara."
+     ],
+     "q": "¿Con qué nivel de luz coincide tu rincón favorito de casa?",
+     "c": "Hoy pon la mano sobre el sitio de una planta y mira la sombra: nítida es luz fuerte, tenue es luz baja."
+    },
+    "fr": {
+     "t": "Lumière directe, vive ou faible",
+     "g": "Décode plein soleil, lumière vive indirecte et ombre sur les étiquettes.",
+     "p": [
+      "Plein soleil signifie environ six heures ou plus de soleil direct par jour sur la plante.",
+      "La lumière vive indirecte est une pièce claire où le soleil ne touche pas directement les feuilles.",
+      "Une faible lumière reste de la lumière du jour : un endroit où l'on lit confortablement sans lampe."
+     ],
+     "q": "À quel niveau de lumière correspond ton coin préféré chez toi ?",
+     "c": "Aujourd'hui, place ta main au-dessus d'une plante : ombre nette = lumière forte, ombre floue = lumière faible."
+    },
+    "it": {
+     "t": "Luce diretta, intensa e bassa",
+     "g": "Decifra sole pieno, luce indiretta intensa e ombra sulle etichette.",
+     "p": [
+      "Sole pieno significa circa sei o più ore di sole diretto al giorno sulla pianta.",
+      "Luce indiretta intensa è una stanza luminosa dove il sole non colpisce direttamente le foglie.",
+      "Luce bassa è comunque luce del giorno: un punto dove si legge bene senza lampada."
+     ],
+     "q": "A quale livello di luce corrisponde il tuo angolo preferito di casa?",
+     "c": "Oggi tieni la mano sopra il posto di una pianta: ombra netta è luce forte, sfumata è luce bassa."
+    },
+    "pt": {
+     "t": "Luz direta, forte e fraca",
+     "g": "Decifra sol pleno, luz indireta forte e sombra nas etiquetas.",
+     "p": [
+      "Sol pleno significa cerca de seis ou mais horas de sol direto por dia sobre a planta.",
+      "Luz indireta forte é uma divisão clara onde o sol não bate diretamente nas folhas.",
+      "Luz fraca continua a ser luz do dia: um local onde consegues ler bem sem candeeiro."
+     ],
+     "q": "A que nível de luz corresponde o teu canto preferido em casa?",
+     "c": "Hoje põe a mão sobre o lugar de uma planta e vê a sombra: nítida é luz forte, ténue é luz fraca."
+    },
+    "pt_BR": {
+     "t": "Luz direta, forte e fraca",
+     "g": "Decifre sol pleno, luz indireta forte e sombra nas etiquetas.",
+     "p": [
+      "Sol pleno significa cerca de seis ou mais horas de sol direto por dia sobre a planta.",
+      "Luz indireta forte é um cômodo claro onde o sol não bate direto nas folhas.",
+      "Luz fraca ainda é luz do dia: um lugar onde você lê bem sem abajur."
+     ],
+     "q": "A que nível de luz corresponde o seu cantinho preferido em casa?",
+     "c": "Hoje ponha a mão sobre o lugar de uma planta e veja a sombra: nítida é luz forte, suave é luz fraca."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing your first plants",
+     "g": "Start with forgiving plants that suit your light, space and lifestyle.",
+     "p": [
+      "Match the plant to your light first, since light is the hardest thing to change.",
+      "Be honest about your habits: busy and forgetful people do well with plants that like to dry out.",
+      "Start with two or three plants, so you can learn each one properly and enjoy early success."
+     ],
+     "q": "Are you more of a forgetful waterer or an over-carer who checks daily?",
+     "c": "Today, write down your light level and one habit, then list two plants that might suit you."
+    },
+    "de": {
+     "t": "Deine ersten Pflanzen wählen",
+     "g": "Starte mit verzeihenden Pflanzen, die zu Licht, Platz und Alltag passen.",
+     "p": [
+      "Wähle die Pflanze zuerst nach deinem Licht, denn Licht lässt sich am schwersten ändern.",
+      "Sei ehrlich zu dir: Wer viel zu tun hat oder vergisst, fährt gut mit Pflanzen, die Trockenheit mögen.",
+      "Beginne mit zwei oder drei Pflanzen, so lernst du jede richtig kennen und hast schnell Erfolg."
+     ],
+     "q": "Bist du eher ein vergesslicher Gießer oder ein Überfürsorglicher, der täglich nachschaut?",
+     "c": "Schreibe heute dein Lichtniveau und eine Gewohnheit auf und nenne zwei Pflanzen, die passen könnten."
+    },
+    "es": {
+     "t": "Elegir tus primeras plantas",
+     "g": "Empieza con plantas indulgentes que encajen con tu luz, espacio y estilo de vida.",
+     "p": [
+      "Elige primero según tu luz, porque la luz es lo más difícil de cambiar.",
+      "Sé sincero con tus hábitos: quien anda ocupado u olvida regar lo hace bien con plantas que toleran la sequedad.",
+      "Empieza con dos o tres plantas para aprender bien cada una y disfrutar de un éxito temprano."
+     ],
+     "q": "¿Eres más de olvidar el riego o de cuidar en exceso y mirar a diario?",
+     "c": "Hoy anota tu nivel de luz y un hábito, y apunta dos plantas que podrían irte bien."
+    },
+    "fr": {
+     "t": "Choisir tes premières plantes",
+     "g": "Commence par des plantes tolérantes qui conviennent à ta lumière, ton espace et ton rythme.",
+     "p": [
+      "Choisis d'abord selon ta lumière, car c'est ce qu'il y a de plus difficile à changer.",
+      "Sois honnête sur tes habitudes : si tu oublies souvent, prends des plantes qui aiment sécher entre deux arrosages.",
+      "Commence avec deux ou trois plantes pour bien apprendre à les connaître et réussir vite."
+     ],
+     "q": "Es-tu plutôt du genre à oublier d'arroser ou à surveiller et trop chouchouter chaque jour ?",
+     "c": "Aujourd'hui, note ta lumière et une habitude, puis liste deux plantes qui pourraient te convenir."
+    },
+    "it": {
+     "t": "Scegliere le prime piante",
+     "g": "Inizia con piante tolleranti che si adattino a luce, spazio e stile di vita.",
+     "p": [
+      "Scegli prima in base alla luce, perché la luce è la cosa più difficile da cambiare.",
+      "Sii sincero sulle tue abitudini: chi è impegnato o smemorato va bene con piante che amano asciugarsi.",
+      "Inizia con due o tre piante, così impari bene ciascuna e ottieni presto buoni risultati."
+     ],
+     "q": "Sei più un innaffiatore smemorato o uno iperattento che controlla ogni giorno?",
+     "c": "Oggi annota il tuo livello di luce e un'abitudine, poi elenca due piante che potrebbero andare bene."
+    },
+    "pt": {
+     "t": "Escolher as tuas primeiras plantas",
+     "g": "Começa com plantas tolerantes que combinem com a tua luz, espaço e estilo de vida.",
+     "p": [
+      "Escolhe primeiro pela luz, porque a luz é o que é mais difícil de mudar.",
+      "Sê honesto sobre os teus hábitos: quem anda ocupado ou se esquece dá-se bem com plantas que gostam de secar.",
+      "Começa com duas ou três plantas, para aprenderes bem cada uma e teres sucesso cedo."
+     ],
+     "q": "És mais esquecido a regar ou excessivamente cuidadoso, a verificar todos os dias?",
+     "c": "Hoje anota o teu nível de luz e um hábito, e lista duas plantas que possam servir-te."
+    },
+    "pt_BR": {
+     "t": "Escolhendo suas primeiras plantas",
+     "g": "Comece com plantas tolerantes que combinem com sua luz, espaço e estilo de vida.",
+     "p": [
+      "Escolha primeiro pela luz, porque a luz é o que há de mais difícil de mudar.",
+      "Seja sincero com seus hábitos: quem é ocupado ou esquecido se dá bem com plantas que gostam de secar.",
+      "Comece com duas ou três plantas, para aprender bem cada uma e ter sucesso cedo."
+     ],
+     "q": "Você é mais esquecido na hora de regar ou cuidadoso demais, conferindo todo dia?",
+     "c": "Hoje anote seu nível de luz e um hábito, e liste duas plantas que podem servir para você."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Easy houseplants for beginners",
+     "g": "Meet pothos, snake plant, ZZ plant and spider plant, tough and forgiving.",
+     "p": [
+      "Pothos grows in many light levels and tells you when it is thirsty by drooping a little.",
+      "Snake plant and ZZ plant store water in leaves or roots, so they survive a missed watering.",
+      "Spider plant is quick and cheerful, and it makes little baby plants you can share."
+     ],
+     "q": "Which of these four plants appeals to you most, and why?",
+     "c": "Today, pick one of the four and look up its light need, then check if a spot at home matches."
+    },
+    "de": {
+     "t": "Pflegeleichte Zimmerpflanzen für Anfänger",
+     "g": "Lerne Efeutute, Bogenhanf, Zamioculcas und Grünlilie kennen: robust und verzeihend.",
+     "p": [
+      "Die Efeutute wächst bei vielen Lichtverhältnissen und zeigt Durst durch leicht hängende Blätter.",
+      "Bogenhanf und Zamioculcas speichern Wasser in Blättern oder Wurzeln und überstehen vergessenes Gießen.",
+      "Die Grünlilie wächst schnell und fröhlich und bildet Ableger, die du verschenken kannst."
+     ],
+     "q": "Welche dieser vier Pflanzen gefällt dir am meisten, und warum?",
+     "c": "Wähle heute eine der vier, such ihren Lichtbedarf heraus und prüfe, ob ein Platz zu Hause passt."
+    },
+    "es": {
+     "t": "Plantas de interior fáciles",
+     "g": "Conoce el pothos, la sansevieria, la zamioculca y la cinta, resistentes e indulgentes.",
+     "p": [
+      "El pothos crece con muchos niveles de luz y avisa de su sed con las hojas algo caídas.",
+      "La sansevieria y la zamioculca guardan agua en hojas o raíces y sobreviven a un riego olvidado.",
+      "La cinta crece rápido y alegre, y da hijuelos que puedes regalar."
+     ],
+     "q": "¿Cuál de estas cuatro plantas te atrae más y por qué?",
+     "c": "Hoy elige una de las cuatro, busca qué luz necesita y comprueba si algún sitio de tu casa le sirve."
+    },
+    "fr": {
+     "t": "Plantes d'intérieur faciles",
+     "g": "Fais connaissance avec le pothos, le sansevieria, le zamioculcas et le chlorophytum, robustes et tolérants.",
+     "p": [
+      "Le pothos pousse sous diverses lumières et signale sa soif par des feuilles légèrement tombantes.",
+      "Le sansevieria et le zamioculcas stockent l'eau dans feuilles ou racines et survivent à un oubli d'arrosage.",
+      "Le chlorophytum est vif et joyeux, et il fait des petits que tu peux offrir."
+     ],
+     "q": "Laquelle de ces quatre plantes te plaît le plus, et pourquoi ?",
+     "c": "Aujourd'hui, choisis-en une, cherche sa lumière idéale et vérifie si un coin chez toi convient."
+    },
+    "it": {
+     "t": "Piante d'appartamento facili",
+     "g": "Conosci pothos, sansevieria, zamioculcas e clorofito, resistenti e tolleranti.",
+     "p": [
+      "Il pothos cresce con molti livelli di luce e segnala la sete con foglie leggermente abbassate.",
+      "Sansevieria e zamioculcas immagazzinano acqua in foglie o radici e sopravvivono a un'annaffiatura saltata.",
+      "Il clorofito è veloce e allegro e fa piantine figlie che puoi regalare."
+     ],
+     "q": "Quale di queste quattro piante ti attira di più e perché?",
+     "c": "Oggi scegline una, cerca la luce che richiede e controlla se un punto di casa va bene."
+    },
+    "pt": {
+     "t": "Plantas de interior fáceis",
+     "g": "Conhece a jiboia, a espada-de-são-jorge, a zamioculca e a fita, robustas e tolerantes.",
+     "p": [
+      "A jiboia cresce com vários níveis de luz e avisa da sede com as folhas um pouco caídas.",
+      "A espada-de-são-jorge e a zamioculca guardam água nas folhas ou raízes e aguentam uma rega esquecida.",
+      "A fita é rápida e alegre e dá filhotes que podes oferecer."
+     ],
+     "q": "Qual destas quatro plantas te atrai mais, e porquê?",
+     "c": "Hoje escolhe uma das quatro, procura a luz de que precisa e vê se algum local da casa serve."
+    },
+    "pt_BR": {
+     "t": "Plantas de interior fáceis",
+     "g": "Conheça a jiboia, a espada-de-são-jorge, a zamioculca e o clorofito, resistentes e tolerantes.",
+     "p": [
+      "A jiboia cresce em vários níveis de luz e avisa da sede com as folhas um pouco caídas.",
+      "A espada-de-são-jorge e a zamioculca guardam água nas folhas ou raízes e aguentam uma rega esquecida.",
+      "O clorofito é rápido e alegre e dá filhotes que você pode presentear."
+     ],
+     "q": "Qual destas quatro plantas atrai mais você, e por quê?",
+     "c": "Hoje escolha uma das quatro, procure a luz de que precisa e veja se algum lugar da casa serve."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Easy outdoor plants for beginners",
+     "g": "Try marigolds, nasturtiums, lavender and herbs that grow with little fuss.",
+     "p": [
+      "Marigolds and nasturtiums grow fast from seed and bring colour and helpful insects.",
+      "Lavender loves sun and poor, well-drained soil, so go easy on water and feeding.",
+      "Herbs like chives, thyme and mint are tough, but plant mint in its own pot because it spreads."
+     ],
+     "q": "Do you have an outdoor space where sun-loving plants could live?",
+     "c": "Today, note how many hours of sun one outdoor spot gets and which of these plants would fit."
+    },
+    "de": {
+     "t": "Pflegeleichte Gartenpflanzen für Anfänger",
+     "g": "Probiere Studentenblume, Kapuzinerkresse, Lavendel und Kräuter, die wenig Aufwand machen.",
+     "p": [
+      "Studentenblume und Kapuzinerkresse wachsen schnell aus Samen und bringen Farbe und nützliche Insekten.",
+      "Lavendel liebt Sonne und magere, durchlässige Erde, gieße und dünge also sparsam.",
+      "Kräuter wie Schnittlauch, Thymian und Minze sind robust, doch Minze gehört in einen eigenen Topf, weil sie wuchert."
+     ],
+     "q": "Hast du einen Platz im Freien, an dem sonnenliebende Pflanzen leben könnten?",
+     "c": "Notiere heute, wie viele Sonnenstunden ein Platz draußen bekommt und welche Pflanze passen würde."
+    },
+    "es": {
+     "t": "Plantas de exterior fáciles",
+     "g": "Prueba caléndulas, capuchinas, lavanda y hierbas que crecen sin mucho esfuerzo.",
+     "p": [
+      "Las caléndulas y capuchinas crecen rápido desde semilla y traen color e insectos útiles.",
+      "La lavanda ama el sol y el suelo pobre y bien drenado, así que riega y abona poco.",
+      "Hierbas como cebollino, tomillo y menta son resistentes, pero planta la menta en su propia maceta porque se extiende."
+     ],
+     "q": "¿Tienes un espacio exterior donde puedan vivir plantas amantes del sol?",
+     "c": "Hoy anota cuántas horas de sol recibe un sitio exterior y cuál de estas plantas encajaría."
+    },
+    "fr": {
+     "t": "Plantes d'extérieur faciles",
+     "g": "Essaie les soucis, capucines, lavande et aromatiques qui poussent sans trop d'efforts.",
+     "p": [
+      "Soucis et capucines poussent vite à partir de graines et apportent couleur et insectes utiles.",
+      "La lavande adore le soleil et un sol pauvre et drainant : arrose et fertilise très peu.",
+      "Ciboulette, thym et menthe sont robustes, mais plante la menthe dans son propre pot car elle envahit."
+     ],
+     "q": "As-tu un espace extérieur où des plantes aimant le soleil pourraient vivre ?",
+     "c": "Aujourd'hui, note combien d'heures de soleil reçoit un endroit dehors et quelle plante conviendrait."
+    },
+    "it": {
+     "t": "Piante da esterno facili",
+     "g": "Prova calendule, nasturzi, lavanda ed erbe aromatiche che crescono senza troppe cure.",
+     "p": [
+      "Calendule e nasturzi crescono in fretta da seme e portano colore e insetti utili.",
+      "La lavanda ama il sole e il terreno povero e ben drenato, quindi poca acqua e poco concime.",
+      "Erbe come erba cipollina, timo e menta sono robuste, ma pianta la menta in un vaso a parte perché si espande."
+     ],
+     "q": "Hai uno spazio all'aperto dove potrebbero vivere piante amanti del sole?",
+     "c": "Oggi annota quante ore di sole riceve un punto esterno e quale di queste piante andrebbe bene."
+    },
+    "pt": {
+     "t": "Plantas de exterior fáceis",
+     "g": "Experimenta cravos-de-defunto, chagas, lavanda e ervas que crescem sem grande esforço.",
+     "p": [
+      "Os cravos-de-defunto e as chagas crescem depressa de semente e trazem cor e insetos úteis.",
+      "A lavanda adora sol e solo pobre e bem drenado, por isso rega e aduba pouco.",
+      "Ervas como cebolinho, tomilho e hortelã são resistentes, mas planta a hortelã num vaso próprio porque se espalha."
+     ],
+     "q": "Tens um espaço exterior onde possam viver plantas que gostam de sol?",
+     "c": "Hoje anota quantas horas de sol recebe um local exterior e qual destas plantas serviria."
+    },
+    "pt_BR": {
+     "t": "Plantas de exterior fáceis",
+     "g": "Experimente cravos-de-defunto, capuchinhas, lavanda e ervas que crescem sem muito esforço.",
+     "p": [
+      "Cravos-de-defunto e capuchinhas crescem rápido de semente e trazem cor e insetos úteis.",
+      "A lavanda adora sol e solo pobre e bem drenado, então regue e adube pouco.",
+      "Ervas como cebolinha, tomilho e hortelã são resistentes, mas plante a hortelã em vaso próprio porque ela se espalha."
+     ],
+     "q": "Você tem um espaço externo onde plantas que gostam de sol poderiam viver?",
+     "c": "Hoje anote quantas horas de sol um local externo recebe e qual destas plantas serviria."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Understanding plant labels",
+     "g": "Read the tag for light, watering, height, spread and hardiness.",
+     "p": [
+      "The tag lists the light level, watering needs and the size the plant will reach when grown.",
+      "Spread tells you how much room to leave, so you do not crowd plants that will get big.",
+      "Hardiness shows the lowest temperature a plant survives outdoors, which matters before planting out."
+     ],
+     "q": "Do you keep plant tags, or do they usually end up in the bin?",
+     "c": "Today, keep or photograph the tags of your plants and note one surprising fact from each."
+    },
+    "de": {
+     "t": "Pflanzenetiketten verstehen",
+     "g": "Lies auf dem Schild Licht, Wasser, Höhe, Breite und Winterhärte ab.",
+     "p": [
+      "Das Schild nennt Lichtbedarf, Wasserbedarf und die Größe, die die Pflanze ausgewachsen erreicht.",
+      "Die Breite zeigt, wie viel Platz du lassen musst, damit große Pflanzen nicht eingeengt werden.",
+      "Die Winterhärte nennt die tiefste Temperatur, die eine Pflanze draußen übersteht, wichtig vor dem Auspflanzen."
+     ],
+     "q": "Behältst du Pflanzenschilder oder landen sie meistens im Müll?",
+     "c": "Behalte oder fotografiere heute die Schilder deiner Pflanzen und notiere je einen überraschenden Fakt."
+    },
+    "es": {
+     "t": "Entender las etiquetas de plantas",
+     "g": "Lee la etiqueta: luz, riego, altura, anchura y resistencia al frío.",
+     "p": [
+      "La etiqueta indica la luz, el riego y el tamaño que alcanzará la planta adulta.",
+      "La anchura te dice cuánto espacio dejar para no amontonar plantas que se harán grandes.",
+      "La resistencia al frío muestra la temperatura mínima que soporta al aire libre, clave antes de plantar fuera."
+     ],
+     "q": "¿Guardas las etiquetas de tus plantas o suelen acabar en la basura?",
+     "c": "Hoy guarda o fotografía las etiquetas de tus plantas y anota un dato sorprendente de cada una."
+    },
+    "fr": {
+     "t": "Comprendre les étiquettes de plantes",
+     "g": "Lis l'étiquette : lumière, arrosage, hauteur, largeur et rusticité.",
+     "p": [
+      "L'étiquette indique la lumière, les besoins en eau et la taille de la plante adulte.",
+      "La largeur dit quelle place laisser pour ne pas entasser des plantes qui deviendront grandes.",
+      "La rusticité donne la température minimale supportée dehors, utile avant de planter en extérieur."
+     ],
+     "q": "Gardes-tu les étiquettes de tes plantes ou finissent-elles à la poubelle ?",
+     "c": "Aujourd'hui, garde ou photographie les étiquettes de tes plantes et note un fait surprenant pour chacune."
+    },
+    "it": {
+     "t": "Capire le etichette delle piante",
+     "g": "Leggi il cartellino: luce, annaffiature, altezza, larghezza e rusticità.",
+     "p": [
+      "Il cartellino indica la luce, il fabbisogno d'acqua e la dimensione che la pianta adulta raggiungerà.",
+      "La larghezza dice quanto spazio lasciare, per non affollare piante che diventeranno grandi.",
+      "La rusticità indica la temperatura minima sopportata all'aperto, importante prima di piantare fuori."
+     ],
+     "q": "Conservi i cartellini delle piante o finiscono di solito nella spazzatura?",
+     "c": "Oggi conserva o fotografa i cartellini delle tue piante e annota un fatto sorprendente per ciascuna."
+    },
+    "pt": {
+     "t": "Compreender as etiquetas das plantas",
+     "g": "Lê a etiqueta: luz, rega, altura, largura e resistência ao frio.",
+     "p": [
+      "A etiqueta indica a luz, a rega e o tamanho que a planta adulta alcançará.",
+      "A largura diz quanto espaço deixar, para não apertar plantas que vão ficar grandes.",
+      "A resistência ao frio mostra a temperatura mínima que suportam no exterior, importante antes de plantar fora."
+     ],
+     "q": "Guardas as etiquetas das tuas plantas ou costumam acabar no lixo?",
+     "c": "Hoje guarda ou fotografa as etiquetas das tuas plantas e anota um facto surpreendente de cada uma."
+    },
+    "pt_BR": {
+     "t": "Entendendo as etiquetas das plantas",
+     "g": "Leia a etiqueta: luz, rega, altura, largura e resistência ao frio.",
+     "p": [
+      "A etiqueta indica a luz, a rega e o tamanho que a planta adulta alcançará.",
+      "A largura diz quanto espaço deixar, para não apertar plantas que vão ficar grandes.",
+      "A resistência ao frio mostra a temperatura mínima que suportam ao ar livre, importante antes de plantar fora."
+     ],
+     "q": "Você guarda as etiquetas das suas plantas ou elas costumam ir para o lixo?",
+     "c": "Hoje guarde ou fotografe as etiquetas das suas plantas e anote um fato surpreendente de cada uma."
+    }
+   }
+  }
+ ]
+}

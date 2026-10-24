@@ -1,0 +1,835 @@
+{
+ "topic": "apps_productivity",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Organising notes with folders and tags",
+     "g": "Use folders for structure and tags to link one note to many topics.",
+     "p": [
+      "Folders work like drawers: one note lives in exactly one place.",
+      "Tags are labels, so one note can belong to cooking, travel and ideas at once.",
+      "Keep names few and consistent, or you will end up with a mess again."
+     ],
+     "q": "Which three folders or tags would cover most of your notes?",
+     "c": "Create three folders or tags and file five existing notes into them."
+    },
+    "de": {
+     "t": "Notizen mit Ordnern und Tags ordnen",
+     "g": "Nutze Ordner für Struktur und Tags, um eine Notiz mehreren Themen zuzuordnen.",
+     "p": [
+      "Ordner sind wie Schubladen: eine Notiz liegt an genau einem Ort.",
+      "Tags sind Etiketten, eine Notiz kann so zu Kochen, Reisen und Ideen gleichzeitig gehören.",
+      "Halte Namen wenige und einheitlich, sonst entsteht wieder Chaos."
+     ],
+     "q": "Welche drei Ordner oder Tags würden die meisten deiner Notizen abdecken?",
+     "c": "Lege drei Ordner oder Tags an und sortiere fünf vorhandene Notizen ein."
+    },
+    "es": {
+     "t": "Organizar notas con carpetas y etiquetas",
+     "g": "Usa carpetas para la estructura y etiquetas para unir una nota a varios temas.",
+     "p": [
+      "Las carpetas son como cajones: una nota vive en un solo sitio.",
+      "Las etiquetas son rótulos: una nota puede ser de cocina, viajes e ideas a la vez.",
+      "Usa pocos nombres y coherentes, o volverás al desorden."
+     ],
+     "q": "¿Qué tres carpetas o etiquetas cubrirían la mayoría de tus notas?",
+     "c": "Crea tres carpetas o etiquetas y clasifica cinco notas existentes."
+    },
+    "fr": {
+     "t": "Organiser ses notes avec dossiers et étiquettes",
+     "g": "Utilise les dossiers pour la structure et les étiquettes pour relier une note à plusieurs sujets.",
+     "p": [
+      "Les dossiers sont comme des tiroirs : une note vit à un seul endroit.",
+      "Les étiquettes sont des repères : une note peut relever de cuisine, voyage et idées à la fois.",
+      "Garde peu de noms et reste cohérent, sinon le désordre reviendra."
+     ],
+     "q": "Quels trois dossiers ou étiquettes couvriraient la plupart de tes notes ?",
+     "c": "Crée trois dossiers ou étiquettes et classes-y cinq notes existantes."
+    },
+    "it": {
+     "t": "Organizzare le note con cartelle e tag",
+     "g": "Usa le cartelle per la struttura e i tag per legare una nota a più temi.",
+     "p": [
+      "Le cartelle sono come cassetti: una nota sta in un solo posto.",
+      "I tag sono etichette: una nota può essere di cucina, viaggi e idee insieme.",
+      "Usa pochi nomi e coerenti, o tornerà il disordine."
+     ],
+     "q": "Quali tre cartelle o tag coprirebbero la maggior parte delle tue note?",
+     "c": "Crea tre cartelle o tag e archivia cinque note esistenti."
+    },
+    "pt": {
+     "t": "Organizar notas com pastas e etiquetas",
+     "g": "Usa pastas para a estrutura e etiquetas para ligar uma nota a vários temas.",
+     "p": [
+      "As pastas são como gavetas: uma nota vive num só lugar.",
+      "As etiquetas são rótulos: uma nota pode ser de cozinha, viagens e ideias ao mesmo tempo.",
+      "Usa poucos nomes e coerentes, ou voltarás à confusão."
+     ],
+     "q": "Que três pastas ou etiquetas cobririam a maioria das tuas notas?",
+     "c": "Cria três pastas ou etiquetas e arruma cinco notas existentes."
+    },
+    "pt_BR": {
+     "t": "Organizando notas com pastas e etiquetas",
+     "g": "Use pastas para a estrutura e etiquetas para ligar uma nota a vários temas.",
+     "p": [
+      "Pastas são como gavetas: uma nota mora em um só lugar.",
+      "Etiquetas são rótulos: uma nota pode ser de culinária, viagens e ideias ao mesmo tempo.",
+      "Use poucos nomes e coerentes, ou a bagunça volta."
+     ],
+     "q": "Quais três pastas ou etiquetas cobririam a maioria das suas notas?",
+     "c": "Crie três pastas ou etiquetas e arrume cinco notas existentes."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Checklists for routines",
+     "g": "Reuse checklists for packing, cleaning or mornings.",
+     "p": [
+      "A checklist replaces memory for steps you repeat often.",
+      "Save a template, then copy it each time and tick items off.",
+      "Update the list whenever you forget something so it improves over time."
+     ],
+     "q": "Which routine would feel easier with a checklist, like packing for a trip?",
+     "c": "Make a packing checklist with ten items and save it as a template."
+    },
+    "de": {
+     "t": "Checklisten für Routinen",
+     "g": "Nutze Checklisten für Packen, Putzen oder Morgenroutinen wieder.",
+     "p": [
+      "Eine Checkliste ersetzt das Gedächtnis bei Schritten, die du oft wiederholst.",
+      "Speichere eine Vorlage, kopiere sie jedes Mal und hake Punkte ab.",
+      "Ergänze die Liste, wenn du etwas vergessen hast, so wird sie mit der Zeit besser."
+     ],
+     "q": "Welche Routine wäre mit einer Checkliste leichter, etwa Kofferpacken?",
+     "c": "Erstelle eine Packliste mit zehn Punkten und speichere sie als Vorlage."
+    },
+    "es": {
+     "t": "Listas de comprobación para rutinas",
+     "g": "Reutiliza listas para hacer la maleta, limpiar o organizar las mañanas.",
+     "p": [
+      "Una lista de comprobación sustituye a la memoria en pasos que repites a menudo.",
+      "Guarda una plantilla, cópiala cada vez y ve marcando elementos.",
+      "Actualiza la lista cuando olvides algo y irá mejorando con el tiempo."
+     ],
+     "q": "¿Qué rutina sería más fácil con una lista, como preparar un viaje?",
+     "c": "Crea una lista de equipaje con diez elementos y guárdala como plantilla."
+    },
+    "fr": {
+     "t": "Listes de contrôle pour routines",
+     "g": "Réutilise des listes pour les valises, le ménage ou les matins.",
+     "p": [
+      "Une liste de contrôle remplace la mémoire pour des étapes souvent répétées.",
+      "Enregistre un modèle, copie-le à chaque fois et coche les éléments.",
+      "Mets la liste à jour quand tu oublies quelque chose, elle s'améliorera."
+     ],
+     "q": "Quelle routine serait plus facile avec une liste, comme préparer un voyage ?",
+     "c": "Crée une liste de valise de dix éléments et enregistre-la comme modèle."
+    },
+    "it": {
+     "t": "Liste di controllo per le routine",
+     "g": "Riusa liste per fare la valigia, pulire o organizzare le mattine.",
+     "p": [
+      "Una lista di controllo sostituisce la memoria nei passi che ripeti spesso.",
+      "Salva un modello, copialo ogni volta e spunta le voci.",
+      "Aggiorna la lista quando dimentichi qualcosa e migliorerà nel tempo."
+     ],
+     "q": "Quale routine sarebbe più facile con una lista, come preparare un viaggio?",
+     "c": "Crea una lista bagaglio con dieci voci e salvala come modello."
+    },
+    "pt": {
+     "t": "Listas de verificação para rotinas",
+     "g": "Reutiliza listas para fazer a mala, limpar ou organizar as manhãs.",
+     "p": [
+      "Uma lista de verificação substitui a memória em passos que repetes muitas vezes.",
+      "Guarda um modelo, copia-o de cada vez e vai assinalando os itens.",
+      "Atualiza a lista quando te esqueceres de algo e ela melhora com o tempo."
+     ],
+     "q": "Que rotina seria mais fácil com uma lista, como preparar uma viagem?",
+     "c": "Cria uma lista de bagagem com dez itens e guarda-a como modelo."
+    },
+    "pt_BR": {
+     "t": "Listas de verificação para rotinas",
+     "g": "Reutilize listas para fazer a mala, limpar ou organizar as manhãs.",
+     "p": [
+      "Uma lista de verificação substitui a memória em passos que você repete muito.",
+      "Salve um modelo, copie-o a cada vez e vá marcando os itens.",
+      "Atualize a lista quando esquecer algo e ela melhora com o tempo."
+     ],
+     "q": "Qual rotina ficaria mais fácil com uma lista, como arrumar uma viagem?",
+     "c": "Crie uma lista de bagagem com dez itens e salve como modelo."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Voice notes and dictation",
+     "g": "Speak ideas into your phone to capture thoughts fast.",
+     "p": [
+      "Voice notes record your own voice; dictation turns speech into text.",
+      "They help when your hands are busy, like walking or cooking.",
+      "Speak clearly, add punctuation words, and check the text afterwards."
+     ],
+     "q": "When do ideas usually come to you, and could you speak them instead?",
+     "c": "Dictate a short note about your plans for tomorrow and read it back."
+    },
+    "de": {
+     "t": "Sprachnotizen und Diktat",
+     "g": "Sprich Ideen ins Handy, um Gedanken schnell festzuhalten.",
+     "p": [
+      "Sprachnotizen nehmen deine Stimme auf; Diktat wandelt Sprache in Text um.",
+      "Sie helfen, wenn die Hände beschäftigt sind, etwa beim Gehen oder Kochen.",
+      "Sprich deutlich, nenne Satzzeichen und prüfe den Text danach."
+     ],
+     "q": "Wann kommen dir meist Ideen, und könntest du sie stattdessen sprechen?",
+     "c": "Diktiere eine kurze Notiz zu deinen Plänen für morgen und lies sie nach."
+    },
+    "es": {
+     "t": "Notas de voz y dictado",
+     "g": "Dicta ideas a tu móvil para capturar pensamientos rápido.",
+     "p": [
+      "Las notas de voz graban tu voz; el dictado convierte el habla en texto.",
+      "Ayudan cuando tienes las manos ocupadas, al caminar o cocinar.",
+      "Habla claro, di los signos de puntuación y revisa el texto después."
+     ],
+     "q": "¿Cuándo te suelen llegar las ideas y podrías decirlas en voz alta?",
+     "c": "Dicta una nota corta sobre tus planes de mañana y reléela."
+    },
+    "fr": {
+     "t": "Notes vocales et dictée",
+     "g": "Dis tes idées à ton téléphone pour capter tes pensées vite.",
+     "p": [
+      "Les notes vocales enregistrent ta voix; la dictée transforme la parole en texte.",
+      "Elles aident quand tes mains sont occupées, en marchant ou en cuisinant.",
+      "Parle clairement, dis la ponctuation et relis le texte ensuite."
+     ],
+     "q": "Quand te viennent tes idées, et pourrais-tu les dicter ?",
+     "c": "Dicte une courte note sur tes projets de demain et relis-la."
+    },
+    "it": {
+     "t": "Note vocali e dettatura",
+     "g": "Parla al telefono per catturare in fretta i pensieri.",
+     "p": [
+      "Le note vocali registrano la tua voce; la dettatura trasforma il parlato in testo.",
+      "Aiutano quando hai le mani occupate, camminando o cucinando.",
+      "Parla chiaro, pronuncia la punteggiatura e rileggi il testo dopo."
+     ],
+     "q": "Quando ti vengono le idee e potresti dirle a voce?",
+     "c": "Detta una breve nota sui tuoi piani di domani e rileggila."
+    },
+    "pt": {
+     "t": "Notas de voz e ditado",
+     "g": "Fala ao telemóvel para guardares ideias depressa.",
+     "p": [
+      "As notas de voz gravam a tua voz; o ditado transforma a fala em texto.",
+      "Ajudam quando tens as mãos ocupadas, a caminhar ou a cozinhar.",
+      "Fala claramente, diz a pontuação e revê o texto depois."
+     ],
+     "q": "Quando te surgem as ideias e podias dizê-las em voz alta?",
+     "c": "Dita uma nota curta sobre os teus planos de amanhã e relê-a."
+    },
+    "pt_BR": {
+     "t": "Notas de voz e ditado",
+     "g": "Fale com o celular para guardar ideias rapidamente.",
+     "p": [
+      "Notas de voz gravam sua voz; o ditado transforma a fala em texto.",
+      "Ajudam quando suas mãos estão ocupadas, caminhando ou cozinhando.",
+      "Fale com clareza, diga a pontuação e revise o texto depois."
+     ],
+     "q": "Quando as ideias costumam surgir e você poderia falá-las em voz alta?",
+     "c": "Dite uma nota curta sobre seus planos de amanhã e releia."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your daily toolkit",
+     "g": "Recap home screen, notifications, calendar, tasks and notes.",
+     "p": [
+      "Home screen: only daily apps in view, the rest in folders or search.",
+      "Notifications and quiet modes: only what matters gets through.",
+      "Calendar for time, to-do list for actions, notes for information."
+     ],
+     "q": "Which of these habits has helped you most so far?",
+     "c": "Check each area once and fix the one that is messiest today."
+    },
+    "de": {
+     "t": "Rückblick: dein täglicher Werkzeugkasten",
+     "g": "Wiederhole Startbildschirm, Mitteilungen, Kalender, Aufgaben und Notizen.",
+     "p": [
+      "Startbildschirm: nur Tages-Apps sichtbar, der Rest in Ordnern oder Suche.",
+      "Mitteilungen und Ruhemodi: nur Wichtiges kommt durch.",
+      "Kalender für Zeit, To-do-Liste für Aktionen, Notizen für Informationen."
+     ],
+     "q": "Welche dieser Gewohnheiten hat dir bisher am meisten geholfen?",
+     "c": "Prüfe jeden Bereich einmal und bring den chaotischsten heute in Ordnung."
+    },
+    "es": {
+     "t": "Repaso: tu kit diario de herramientas",
+     "g": "Repasa pantalla de inicio, notificaciones, calendario, tareas y notas.",
+     "p": [
+      "Pantalla de inicio: solo las apps diarias a la vista, el resto en carpetas o búsqueda.",
+      "Notificaciones y modos silenciosos: solo pasa lo importante.",
+      "Calendario para el tiempo, lista de tareas para acciones, notas para información."
+     ],
+     "q": "¿Cuál de estos hábitos te ha ayudado más hasta ahora?",
+     "c": "Revisa cada área una vez y arregla hoy la que esté más desordenada."
+    },
+    "fr": {
+     "t": "Révision : ta boîte à outils quotidienne",
+     "g": "Récapitule écran d'accueil, notifications, calendrier, tâches et notes.",
+     "p": [
+      "Écran d'accueil : seulement les applis du jour, le reste en dossiers ou recherche.",
+      "Notifications et modes calmes : seul l'essentiel passe.",
+      "Calendrier pour le temps, liste de tâches pour les actions, notes pour l'information."
+     ],
+     "q": "Laquelle de ces habitudes t'a le plus aidé jusqu'ici ?",
+     "c": "Vérifie chaque domaine une fois et répare aujourd'hui le plus désordonné."
+    },
+    "it": {
+     "t": "Ripasso: il tuo kit quotidiano",
+     "g": "Ripassa schermata Home, notifiche, calendario, compiti e note.",
+     "p": [
+      "Home: solo le app quotidiane in vista, il resto in cartelle o ricerca.",
+      "Notifiche e modalità silenziose: passa solo ciò che conta.",
+      "Calendario per il tempo, lista di compiti per le azioni, note per le informazioni."
+     ],
+     "q": "Quale di queste abitudini ti ha aiutato di più finora?",
+     "c": "Controlla ogni area una volta e sistema oggi la più disordinata."
+    },
+    "pt": {
+     "t": "Revisão: o teu kit diário",
+     "g": "Revê ecrã inicial, notificações, calendário, tarefas e notas.",
+     "p": [
+      "Ecrã inicial: só as apps diárias à vista, o resto em pastas ou pesquisa.",
+      "Notificações e modos silenciosos: só passa o que importa.",
+      "Calendário para o tempo, lista de tarefas para ações, notas para informação."
+     ],
+     "q": "Qual destes hábitos mais te ajudou até agora?",
+     "c": "Verifica cada área uma vez e arruma hoje a mais desarrumada."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu kit diário",
+     "g": "Revise tela inicial, notificações, calendário, tarefas e notas.",
+     "p": [
+      "Tela inicial: só os apps diários à vista, o resto em pastas ou busca.",
+      "Notificações e modos silenciosos: só passa o que importa.",
+      "Calendário para o tempo, lista de tarefas para ações, notas para informação."
+     ],
+     "q": "Qual destes hábitos mais ajudou você até agora?",
+     "c": "Verifique cada área uma vez e arrume hoje a mais bagunçada."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Pomodoro technique",
+     "g": "Work for 25 minutes, rest for 5 with a simple timer method.",
+     "p": [
+      "Francesco Cirillo created it in the late 1980s, inspired by a tomato-shaped kitchen timer.",
+      "Work 25 minutes on one task, then rest 5; after four rounds take a longer break.",
+      "Short sprints make starting easier and give your attention regular rests."
+     ],
+     "q": "Would short timed sprints suit the way you work or study?",
+     "c": "Do one 25-minute focus round on a single task, then rest for five minutes."
+    },
+    "de": {
+     "t": "Die Pomodoro-Technik",
+     "g": "Arbeite 25 Minuten und ruhe 5 Minuten mit einer einfachen Timer-Methode.",
+     "p": [
+      "Francesco Cirillo entwickelte sie Ende der 1980er, inspiriert von einem tomatenförmigen Küchentimer.",
+      "25 Minuten an einer Aufgabe arbeiten, 5 pausieren; nach vier Runden länger rasten.",
+      "Kurze Sprints erleichtern den Start und geben deiner Aufmerksamkeit regelmäßige Pausen."
+     ],
+     "q": "Würden kurze Zeit-Sprints zu deiner Art zu arbeiten oder zu lernen passen?",
+     "c": "Mach eine 25-Minuten-Runde an einer einzigen Aufgabe und ruhe dann fünf Minuten."
+    },
+    "es": {
+     "t": "La técnica Pomodoro",
+     "g": "Trabaja 25 minutos y descansa 5 con un método sencillo de temporizador.",
+     "p": [
+      "Francesco Cirillo la creó a finales de los años 80, inspirado por un temporizador de cocina con forma de tomate.",
+      "Trabaja 25 minutos en una tarea y descansa 5; tras cuatro rondas, una pausa larga.",
+      "Los sprints cortos facilitan empezar y dan descansos regulares a tu atención."
+     ],
+     "q": "¿Te irían bien los sprints cortos con temporizador para trabajar o estudiar?",
+     "c": "Haz una ronda de 25 minutos con una sola tarea y descansa cinco minutos."
+    },
+    "fr": {
+     "t": "La technique Pomodoro",
+     "g": "Travaille 25 minutes, repose-toi 5, avec une méthode simple de minuteur.",
+     "p": [
+      "Francesco Cirillo l'a créée à la fin des années 1980, inspiré par un minuteur de cuisine en forme de tomate.",
+      "Travaille 25 minutes sur une tâche, pause de 5; après quatre tours, une longue pause.",
+      "Les courts sprints facilitent le démarrage et offrent des pauses régulières à l'attention."
+     ],
+     "q": "Des sprints courts chronométrés conviendraient-ils à ta façon de travailler ou d'étudier ?",
+     "c": "Fais un tour de 25 minutes sur une seule tâche, puis repose-toi cinq minutes."
+    },
+    "it": {
+     "t": "La tecnica del Pomodoro",
+     "g": "Lavora 25 minuti e riposa 5 con un semplice metodo a timer.",
+     "p": [
+      "Francesco Cirillo la ideò alla fine degli anni Ottanta, ispirato da un timer da cucina a forma di pomodoro.",
+      "Lavora 25 minuti su un compito, poi 5 di pausa; dopo quattro giri una pausa lunga.",
+      "Brevi sprint facilitano l'inizio e danno riposi regolari all'attenzione."
+     ],
+     "q": "Brevi sprint a tempo si adatterebbero al tuo modo di lavorare o studiare?",
+     "c": "Fai un giro di 25 minuti su un solo compito, poi riposa cinque minuti."
+    },
+    "pt": {
+     "t": "A técnica Pomodoro",
+     "g": "Trabalha 25 minutos e descansa 5 com um método simples de temporizador.",
+     "p": [
+      "Francesco Cirillo criou-a no final dos anos 1980, inspirado por um temporizador de cozinha em forma de tomate.",
+      "Trabalha 25 minutos numa tarefa e descansa 5; após quatro rondas, uma pausa longa.",
+      "Sprints curtos facilitam o início e dão descansos regulares à atenção."
+     ],
+     "q": "Sprints curtos cronometrados ajustar-se-iam ao teu modo de trabalhar ou estudar?",
+     "c": "Faz uma ronda de 25 minutos numa só tarefa e depois descansa cinco minutos."
+    },
+    "pt_BR": {
+     "t": "A técnica Pomodoro",
+     "g": "Trabalhe 25 minutos e descanse 5 com um método simples de timer.",
+     "p": [
+      "Francesco Cirillo criou a técnica no fim dos anos 1980, inspirado por um timer de cozinha em forma de tomate.",
+      "Trabalhe 25 minutos numa tarefa e descanse 5; após quatro rodadas, uma pausa longa.",
+      "Sprints curtos facilitam o começo e dão descansos regulares à atenção."
+     ],
+     "q": "Sprints curtos cronometrados combinariam com seu jeito de trabalhar ou estudar?",
+     "c": "Faça uma rodada de 25 minutos numa só tarefa e depois descanse cinco minutos."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Focus timer apps",
+     "g": "Try timer apps that track focus sessions and breaks.",
+     "p": [
+      "Focus timers count sessions and show how much time you really concentrated.",
+      "Some add gentle rewards, like a plant that grows while you stay on task.",
+      "Pick one with few features; the timer matters more than the extras."
+     ],
+     "q": "Do rewards and stats motivate you, or do you prefer a plain timer?",
+     "c": "Use a focus timer for two sessions today and note the total time."
+    },
+    "de": {
+     "t": "Fokus-Timer-Apps",
+     "g": "Probiere Timer-Apps, die Fokussitzungen und Pausen erfassen.",
+     "p": [
+      "Fokus-Timer zählen Sitzungen und zeigen, wie lange du wirklich konzentriert warst.",
+      "Manche bieten sanfte Belohnungen, etwa eine Pflanze, die beim Dranbleiben wächst.",
+      "Wähle eine mit wenigen Funktionen; der Timer zählt mehr als das Drumherum."
+     ],
+     "q": "Motivieren dich Belohnungen und Statistiken, oder magst du lieber einen schlichten Timer?",
+     "c": "Nutze heute für zwei Sitzungen einen Fokus-Timer und notiere die Gesamtzeit."
+    },
+    "es": {
+     "t": "Apps de temporizador de concentración",
+     "g": "Prueba apps de temporizador que registran sesiones de foco y descansos.",
+     "p": [
+      "Los temporizadores de foco cuentan sesiones y muestran cuánto te concentraste de verdad.",
+      "Algunos añaden recompensas suaves, como una planta que crece mientras sigues con la tarea.",
+      "Elige una con pocas funciones; el temporizador importa más que los extras."
+     ],
+     "q": "¿Te motivan las recompensas y estadísticas o prefieres un temporizador simple?",
+     "c": "Usa un temporizador de foco en dos sesiones hoy y anota el tiempo total."
+    },
+    "fr": {
+     "t": "Applis de minuteur de concentration",
+     "g": "Essaie des applis de minuteur qui suivent séances de concentration et pauses.",
+     "p": [
+      "Les minuteurs de concentration comptent les séances et montrent le temps vraiment concentré.",
+      "Certains ajoutent de douces récompenses, comme une plante qui pousse tant que tu restes sur la tâche.",
+      "Choisis-en un avec peu de fonctions; le minuteur compte plus que les extras."
+     ],
+     "q": "Les récompenses et statistiques te motivent-elles, ou préfères-tu un minuteur simple ?",
+     "c": "Utilise un minuteur de concentration pour deux séances aujourd'hui et note le total."
+    },
+    "it": {
+     "t": "App timer per la concentrazione",
+     "g": "Prova app timer che tengono traccia di sessioni di focus e pause.",
+     "p": [
+      "I timer di focus contano le sessioni e mostrano quanto ti sei davvero concentrato.",
+      "Alcuni aggiungono premi gentili, come una pianta che cresce mentre resti sul compito.",
+      "Scegline uno con poche funzioni; il timer conta più degli extra."
+     ],
+     "q": "Premi e statistiche ti motivano, o preferisci un timer semplice?",
+     "c": "Usa un timer di focus per due sessioni oggi e annota il tempo totale."
+    },
+    "pt": {
+     "t": "Apps de temporizador de concentração",
+     "g": "Experimenta apps de temporizador que registam sessões de foco e pausas.",
+     "p": [
+      "Os temporizadores de foco contam sessões e mostram quanto tempo te concentraste mesmo.",
+      "Alguns juntam recompensas suaves, como uma planta que cresce enquanto manténs a tarefa.",
+      "Escolhe uma com poucas funções; o temporizador importa mais do que os extras."
+     ],
+     "q": "Recompensas e estatísticas motivam-te, ou preferes um temporizador simples?",
+     "c": "Usa um temporizador de foco em duas sessões hoje e anota o tempo total."
+    },
+    "pt_BR": {
+     "t": "Apps de timer de concentração",
+     "g": "Experimente apps de timer que registram sessões de foco e pausas.",
+     "p": [
+      "Timers de foco contam sessões e mostram quanto tempo você se concentrou de verdade.",
+      "Alguns somam recompensas suaves, como uma planta que cresce enquanto você segue na tarefa.",
+      "Escolha um com poucos recursos; o timer importa mais do que os extras."
+     ],
+     "q": "Recompensas e estatísticas motivam você, ou prefere um timer simples?",
+     "c": "Use um timer de foco em duas sessões hoje e anote o tempo total."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Blocking distracting apps",
+     "g": "Set boundaries with blockers when willpower alone is not enough.",
+     "p": [
+      "Blockers pause chosen apps and websites during set hours.",
+      "Decide your blocklist when calm, not in the middle of a distraction.",
+      "Allow a short break window so the rule feels fair, not punishing."
+     ],
+     "q": "Which app or site pulls you away from tasks the most?",
+     "c": "Block one distracting app or site for one hour during your next task."
+    },
+    "de": {
+     "t": "Ablenkende Apps sperren",
+     "g": "Setze Grenzen mit Blockern, wenn Willenskraft allein nicht reicht.",
+     "p": [
+      "Blocker pausieren ausgewählte Apps und Webseiten zu festen Zeiten.",
+      "Lege deine Sperrliste in Ruhe fest, nicht mitten in der Ablenkung.",
+      "Erlaube ein kurzes Pausenfenster, damit die Regel fair wirkt und nicht strafend."
+     ],
+     "q": "Welche App oder Seite lenkt dich am meisten von Aufgaben ab?",
+     "c": "Sperre bei deiner nächsten Aufgabe eine ablenkende App oder Seite für eine Stunde."
+    },
+    "es": {
+     "t": "Bloquear apps que distraen",
+     "g": "Pon límites con bloqueadores cuando la fuerza de voluntad no basta.",
+     "p": [
+      "Los bloqueadores pausan apps y webs elegidas durante horas fijas.",
+      "Decide tu lista de bloqueo con calma, no en plena distracción.",
+      "Permite una breve ventana de descanso para que la regla sea justa, no un castigo."
+     ],
+     "q": "¿Qué app o web te aparta más de tus tareas?",
+     "c": "Bloquea una app o web que distraiga durante una hora en tu próxima tarea."
+    },
+    "fr": {
+     "t": "Bloquer les applis qui distraient",
+     "g": "Pose des limites avec des bloqueurs quand la volonté seule ne suffit pas.",
+     "p": [
+      "Les bloqueurs mettent en pause des applis et sites choisis à des heures fixes.",
+      "Décide ta liste de blocage au calme, pas en pleine distraction.",
+      "Prévois une courte fenêtre de pause pour que la règle soit juste, pas punitive."
+     ],
+     "q": "Quelle appli ou quel site t'éloigne le plus de tes tâches ?",
+     "c": "Bloque une appli ou un site distrayant pendant une heure lors de ta prochaine tâche."
+    },
+    "it": {
+     "t": "Bloccare le app che distraggono",
+     "g": "Poni limiti con i blocchi quando la forza di volontà non basta.",
+     "p": [
+      "I blocchi mettono in pausa app e siti scelti a orari fissi.",
+      "Decidi l'elenco da bloccare con calma, non nel pieno della distrazione.",
+      "Concedi una breve finestra di pausa così la regola è giusta, non punitiva."
+     ],
+     "q": "Quale app o sito ti distoglie di più dai compiti?",
+     "c": "Blocca un'app o un sito che distrae per un'ora durante il prossimo compito."
+    },
+    "pt": {
+     "t": "Bloquear apps que distraem",
+     "g": "Põe limites com bloqueadores quando a força de vontade não basta.",
+     "p": [
+      "Os bloqueadores pausam apps e sites escolhidos em horas fixas.",
+      "Decide a lista de bloqueio com calma, não no meio da distração.",
+      "Permite uma curta janela de pausa para a regra ser justa, não um castigo."
+     ],
+     "q": "Que app ou site mais te afasta das tarefas?",
+     "c": "Bloqueia uma app ou site que distrai durante uma hora na próxima tarefa."
+    },
+    "pt_BR": {
+     "t": "Bloqueando apps que distraem",
+     "g": "Coloque limites com bloqueadores quando a força de vontade não basta.",
+     "p": [
+      "Bloqueadores pausam apps e sites escolhidos em horários fixos.",
+      "Decida a lista de bloqueio com calma, não no meio da distração.",
+      "Permita uma curta janela de pausa para a regra ser justa, e não um castigo."
+     ],
+     "q": "Qual app ou site mais afasta você das tarefas?",
+     "c": "Bloqueie um app ou site que distrai por uma hora na próxima tarefa."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Screen time reports",
+     "g": "Use built-in usage reports to see where your hours go.",
+     "p": [
+      "Screen time reports show daily totals, pickups and top apps.",
+      "Look without judgement; the goal is awareness, not guilt.",
+      "Compare weekdays and weekends to spot patterns."
+     ],
+     "q": "Does your screen time total surprise you, or is it what you expected?",
+     "c": "Check your report and write down your top three apps by time."
+    },
+    "de": {
+     "t": "Bildschirmzeit-Berichte",
+     "g": "Nutze eingebaute Nutzungsberichte, um zu sehen, wohin deine Stunden gehen.",
+     "p": [
+      "Bildschirmzeit-Berichte zeigen Tagessummen, Entsperrungen und die häufigsten Apps.",
+      "Schau ohne Urteil hin; es geht um Bewusstsein, nicht um Schuld.",
+      "Vergleiche Werktage und Wochenenden, um Muster zu erkennen."
+     ],
+     "q": "Überrascht dich deine Bildschirmzeit, oder entspricht sie deiner Erwartung?",
+     "c": "Prüfe deinen Bericht und notiere deine drei Apps mit der meisten Zeit."
+    },
+    "es": {
+     "t": "Informes de tiempo de pantalla",
+     "g": "Usa los informes integrados para ver adónde van tus horas.",
+     "p": [
+      "Los informes muestran totales diarios, desbloqueos y apps más usadas.",
+      "Míralos sin juzgar; el objetivo es ser consciente, no sentir culpa.",
+      "Compara días laborables y fines de semana para ver patrones."
+     ],
+     "q": "¿Te sorprende tu tiempo de pantalla o es lo que esperabas?",
+     "c": "Consulta tu informe y apunta tus tres apps con más tiempo."
+    },
+    "fr": {
+     "t": "Rapports de temps d'écran",
+     "g": "Utilise les rapports intégrés pour voir où passent tes heures.",
+     "p": [
+      "Les rapports montrent les totaux quotidiens, les déverrouillages et les applis les plus utilisées.",
+      "Regarde sans jugement; le but est la conscience, pas la culpabilité.",
+      "Compare semaine et week-end pour repérer des schémas."
+     ],
+     "q": "Ton temps d'écran te surprend-il, ou est-ce ce que tu attendais ?",
+     "c": "Consulte ton rapport et note tes trois applis les plus utilisées."
+    },
+    "it": {
+     "t": "Rapporti sul tempo di utilizzo",
+     "g": "Usa i rapporti integrati per vedere dove vanno le tue ore.",
+     "p": [
+      "I rapporti mostrano totali giornalieri, sblocchi e app più usate.",
+      "Guarda senza giudicare; l'obiettivo è la consapevolezza, non il senso di colpa.",
+      "Confronta giorni feriali e weekend per scoprire schemi."
+     ],
+     "q": "Il tuo tempo di utilizzo ti sorprende o è come pensavi?",
+     "c": "Controlla il rapporto e annota le tue tre app più usate."
+    },
+    "pt": {
+     "t": "Relatórios de tempo de ecrã",
+     "g": "Usa os relatórios integrados para ver para onde vão as tuas horas.",
+     "p": [
+      "Os relatórios mostram totais diários, desbloqueios e apps mais usadas.",
+      "Olha sem julgar; o objetivo é consciência, não culpa.",
+      "Compara dias úteis e fins de semana para ver padrões."
+     ],
+     "q": "O teu tempo de ecrã surpreende-te ou é o que esperavas?",
+     "c": "Consulta o relatório e anota as tuas três apps com mais tempo."
+    },
+    "pt_BR": {
+     "t": "Relatórios de tempo de tela",
+     "g": "Use os relatórios embutidos para ver para onde vão suas horas.",
+     "p": [
+      "Os relatórios mostram totais diários, desbloqueios e apps mais usados.",
+      "Olhe sem julgar; o objetivo é consciência, não culpa.",
+      "Compare dias úteis e fins de semana para ver padrões."
+     ],
+     "q": "Seu tempo de tela surpreende você ou é o que esperava?",
+     "c": "Consulte o relatório e anote seus três apps com mais tempo."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting app limits",
+     "g": "Add daily time limits to nudge yourself away from endless scrolling.",
+     "p": [
+      "A limit shows a reminder when you reach the time you chose.",
+      "Start generous, then lower it slowly so it feels doable.",
+      "Pair the limit with a replacement, like a walk, a book or a call."
+     ],
+     "q": "What would you rather do with the time you spend scrolling?",
+     "c": "Set a daily limit on one app and choose what you will do instead."
+    },
+    "de": {
+     "t": "App-Limits setzen",
+     "g": "Setze tägliche Zeitlimits, die dich vom endlosen Scrollen wegführen.",
+     "p": [
+      "Ein Limit meldet sich, wenn du die gewählte Zeit erreicht hast.",
+      "Starte großzügig und senke es langsam, damit es machbar bleibt.",
+      "Verbinde das Limit mit einem Ersatz, etwa Spaziergang, Buch oder Anruf."
+     ],
+     "q": "Was würdest du lieber mit der Zeit tun, die du mit Scrollen verbringst?",
+     "c": "Setze für eine App ein Tageslimit und wähle, was du stattdessen tust."
+    },
+    "es": {
+     "t": "Fijar límites de apps",
+     "g": "Pon límites diarios para alejarte del scroll infinito.",
+     "p": [
+      "Un límite muestra un aviso cuando llegas al tiempo elegido.",
+      "Empieza con margen y bájalo poco a poco para que sea realista.",
+      "Acompaña el límite con un sustituto: un paseo, un libro o una llamada."
+     ],
+     "q": "¿Qué preferirías hacer con el tiempo que pasas haciendo scroll?",
+     "c": "Fija un límite diario a una app y elige qué harás en su lugar."
+    },
+    "fr": {
+     "t": "Fixer des limites d'applis",
+     "g": "Ajoute des limites quotidiennes pour t'éloigner du défilement sans fin.",
+     "p": [
+      "Une limite affiche un rappel quand tu atteins le temps choisi.",
+      "Commence large puis baisse doucement pour que ce soit faisable.",
+      "Associe la limite à une alternative : promenade, livre ou appel."
+     ],
+     "q": "Que préférerais-tu faire du temps passé à faire défiler ?",
+     "c": "Fixe une limite quotidienne sur une appli et choisis ce que tu feras à la place."
+    },
+    "it": {
+     "t": "Impostare limiti alle app",
+     "g": "Aggiungi limiti giornalieri per allontanarti dallo scorrimento infinito.",
+     "p": [
+      "Un limite mostra un avviso quando raggiungi il tempo scelto.",
+      "Parti largo e abbassalo piano così resta fattibile.",
+      "Abbina il limite a un'alternativa: passeggiata, libro o telefonata."
+     ],
+     "q": "Cosa preferiresti fare con il tempo che passi a scorrere?",
+     "c": "Imposta un limite giornaliero a un'app e scegli cosa farai al suo posto."
+    },
+    "pt": {
+     "t": "Definir limites de apps",
+     "g": "Define limites diários para te afastares do scroll sem fim.",
+     "p": [
+      "Um limite mostra um aviso quando chegas ao tempo escolhido.",
+      "Começa generoso e baixa devagar para ser realista.",
+      "Junta ao limite uma alternativa: um passeio, um livro ou uma chamada."
+     ],
+     "q": "O que preferias fazer com o tempo que gastas a fazer scroll?",
+     "c": "Define um limite diário para uma app e escolhe o que farás em vez disso."
+    },
+    "pt_BR": {
+     "t": "Definindo limites de apps",
+     "g": "Defina limites diários para se afastar da rolagem sem fim.",
+     "p": [
+      "Um limite mostra um aviso quando você chega ao tempo escolhido.",
+      "Comece generoso e diminua devagar para ser realista.",
+      "Una ao limite uma alternativa: um passeio, um livro ou uma ligação."
+     ],
+     "q": "O que você preferiria fazer com o tempo que gasta rolando a tela?",
+     "c": "Defina um limite diário para um app e escolha o que fará no lugar."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grayscale and calmer screens",
+     "g": "Mute colours and badges so your phone is less tempting.",
+     "p": [
+      "Grayscale removes bright colours that are designed to catch your eye.",
+      "A plain wallpaper and fewer red badges make the screen quieter.",
+      "You can switch it on only in the evening as a wind-down signal."
+     ],
+     "q": "Does a calmer screen sound appealing, or would you miss the colour?",
+     "c": "Try grayscale or remove badges on three apps for one whole day."
+    },
+    "de": {
+     "t": "Graustufen und ruhigere Bildschirme",
+     "g": "Dämpfe Farben und Badges, damit dein Handy weniger lockt.",
+     "p": [
+      "Graustufen entfernen grelle Farben, die deinen Blick fangen sollen.",
+      "Ein schlichtes Hintergrundbild und weniger rote Badges beruhigen den Bildschirm.",
+      "Du kannst es nur abends als Signal zum Runterfahren einschalten."
+     ],
+     "q": "Klingt ein ruhigerer Bildschirm gut, oder würdest du die Farbe vermissen?",
+     "c": "Probiere einen Tag lang Graustufen oder entferne Badges bei drei Apps."
+    },
+    "es": {
+     "t": "Escala de grises y pantallas más calmadas",
+     "g": "Atenúa colores e insignias para que el móvil tiente menos.",
+     "p": [
+      "La escala de grises quita los colores llamativos hechos para captar tu mirada.",
+      "Un fondo sencillo y menos globos rojos hacen la pantalla más tranquila.",
+      "Puedes activarla solo por la noche como señal para desconectar."
+     ],
+     "q": "¿Te atrae una pantalla más calmada o echarías de menos el color?",
+     "c": "Prueba la escala de grises o quita insignias en tres apps durante un día entero."
+    },
+    "fr": {
+     "t": "Niveaux de gris et écrans plus calmes",
+     "g": "Atténue couleurs et pastilles pour que ton téléphone tente moins.",
+     "p": [
+      "Les niveaux de gris retirent les couleurs vives conçues pour attirer l'œil.",
+      "Un fond sobre et moins de pastilles rouges apaisent l'écran.",
+      "Tu peux l'activer seulement le soir comme signal de détente."
+     ],
+     "q": "Un écran plus calme te séduit-il, ou la couleur te manquerait-elle ?",
+     "c": "Essaie les niveaux de gris ou retire les pastilles de trois applis pendant une journée."
+    },
+    "it": {
+     "t": "Scala di grigi e schermi più calmi",
+     "g": "Attenua colori e badge così il telefono tenta meno.",
+     "p": [
+      "La scala di grigi toglie i colori accesi pensati per catturare lo sguardo.",
+      "Uno sfondo semplice e meno badge rossi rendono lo schermo più quieto.",
+      "Puoi attivarla solo la sera come segnale di relax."
+     ],
+     "q": "Uno schermo più calmo ti attrae o ti mancherebbe il colore?",
+     "c": "Prova la scala di grigi o togli i badge a tre app per un giorno intero."
+    },
+    "pt": {
+     "t": "Escala de cinzentos e ecrãs mais calmos",
+     "g": "Atenua cores e emblemas para o telemóvel tentar menos.",
+     "p": [
+      "A escala de cinzentos tira as cores vivas feitas para captar o olhar.",
+      "Um fundo simples e menos emblemas vermelhos acalmam o ecrã.",
+      "Podes ativá-la só à noite como sinal para desacelerar."
+     ],
+     "q": "Um ecrã mais calmo agrada-te ou terias saudades da cor?",
+     "c": "Experimenta a escala de cinzentos ou tira emblemas a três apps durante um dia."
+    },
+    "pt_BR": {
+     "t": "Escala de cinza e telas mais calmas",
+     "g": "Suavize cores e selos para o celular tentar menos.",
+     "p": [
+      "A escala de cinza tira as cores vivas feitas para chamar o olhar.",
+      "Um papel de parede simples e menos selos vermelhos acalmam a tela.",
+      "Você pode ativá-la só à noite como sinal para desacelerar."
+     ],
+     "q": "Uma tela mais calma atrai você ou sentiria falta da cor?",
+     "c": "Experimente a escala de cinza ou tire selos de três apps por um dia inteiro."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "cv",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What a CV is for",
+     "g": "Understand that a CV is a short tool that earns you an interview.",
+     "p": [
+      "A CV is a marketing document, not your whole life story.",
+      "Its only job is to make someone want to meet you.",
+      "Every line should help the reader say yes to an interview."
+     ],
+     "q": "What kind of job would you like your CV to open the door to?",
+     "c": "Write one sentence: the job I want an interview for is..."
+    },
+    "de": {
+     "t": "Wozu ein Lebenslauf da ist",
+     "g": "Verstehe, dass dein Lebenslauf ein kurzes Werkzeug für das Vorstellungsgespräch ist.",
+     "p": [
+      "Ein Lebenslauf ist ein Werbedokument, nicht deine ganze Lebensgeschichte.",
+      "Seine einzige Aufgabe: Interesse an einem Kennenlernen wecken.",
+      "Jede Zeile soll dem Leser helfen, dich zum Gespräch einzuladen."
+     ],
+     "q": "Welche Art von Job soll dein Lebenslauf dir ermöglichen?",
+     "c": "Schreibe einen Satz: Für diesen Job möchte ich ein Gespräch bekommen..."
+    },
+    "es": {
+     "t": "Para qué sirve un CV",
+     "g": "Entiende que el CV es una herramienta breve para conseguir una entrevista.",
+     "p": [
+      "El CV es un documento de promoción, no la historia de toda tu vida.",
+      "Su única misión es que alguien quiera conocerte.",
+      "Cada línea debe ayudar al lector a decir sí a una entrevista."
+     ],
+     "q": "¿A qué tipo de trabajo te gustaría que te abriera la puerta tu CV?",
+     "c": "Escribe una frase: el trabajo para el que quiero una entrevista es..."
+    },
+    "fr": {
+     "t": "À quoi sert un CV",
+     "g": "Comprends que le CV est un outil court pour décrocher un entretien.",
+     "p": [
+      "Un CV est un document de promotion, pas le récit de toute ta vie.",
+      "Son seul rôle : donner envie de te rencontrer.",
+      "Chaque ligne doit aider le recruteur à te dire oui pour un entretien."
+     ],
+     "q": "Quel type de poste aimerais-tu que ton CV t'ouvre ?",
+     "c": "Écris une phrase : le poste pour lequel je veux un entretien est..."
+    },
+    "it": {
+     "t": "A cosa serve un CV",
+     "g": "Capisci che il CV è un breve strumento per ottenere un colloquio.",
+     "p": [
+      "Il CV è un documento di presentazione, non la storia di tutta la tua vita.",
+      "Il suo unico compito è far venire voglia di conoscerti.",
+      "Ogni riga deve aiutare chi legge a dire sì a un colloquio."
+     ],
+     "q": "Quale lavoro vorresti che il tuo CV ti aiutasse a ottenere?",
+     "c": "Scrivi una frase: il lavoro per cui voglio un colloquio è..."
+    },
+    "pt": {
+     "t": "Para que serve um CV",
+     "g": "Percebe que o CV é uma ferramenta curta para conseguires uma entrevista.",
+     "p": [
+      "O CV é um documento de promoção, não a história de toda a tua vida.",
+      "A sua única missão é fazer alguém querer conhecer-te.",
+      "Cada linha deve ajudar o leitor a dizer sim a uma entrevista."
+     ],
+     "q": "Que tipo de trabalho gostavas que o teu CV te abrisse?",
+     "c": "Escreve uma frase: o trabalho para o qual quero uma entrevista é..."
+    },
+    "pt_BR": {
+     "t": "Para que serve um currículo",
+     "g": "Entenda que o currículo é uma ferramenta curta para conseguir uma entrevista.",
+     "p": [
+      "O currículo é um documento de divulgação, não a história de toda a sua vida.",
+      "A única missão dele é fazer alguém querer conhecer você.",
+      "Cada linha deve ajudar o leitor a dizer sim a uma entrevista."
+     ],
+     "q": "Que tipo de trabalho você gostaria que seu currículo abrisse?",
+     "c": "Escreva uma frase: o trabalho para o qual quero uma entrevista é..."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "CV, résumé and cover letter",
+     "g": "Tell apart a CV, a résumé and a cover letter and know when each is used.",
+     "p": [
+      "In many countries CV and résumé mean the same short summary of your career.",
+      "Some places use CV for a longer academic document and résumé for one page.",
+      "A cover letter is a short note that explains why you fit this role."
+     ],
+     "q": "Which of these documents have you written before, if any?",
+     "c": "Check one job ad: does it ask for a CV, a résumé, a letter or all?"
+    },
+    "de": {
+     "t": "Lebenslauf, Résumé, Anschreiben",
+     "g": "Unterscheide Lebenslauf, Résumé und Anschreiben und wisse, wann was gefragt ist.",
+     "p": [
+      "In vielen Ländern meinen CV und Résumé dasselbe kurze Karriereprofil.",
+      "Manchmal ist CV ein langes Akademikerdokument, Résumé nur eine Seite.",
+      "Das Anschreiben erklärt kurz, warum du zu dieser Stelle passt."
+     ],
+     "q": "Welche dieser Unterlagen hast du schon einmal geschrieben?",
+     "c": "Prüfe eine Anzeige: Wird Lebenslauf, Anschreiben oder beides verlangt?"
+    },
+    "es": {
+     "t": "CV, résumé y carta de presentación",
+     "g": "Distingue CV, résumé y carta de presentación y cuándo se usa cada uno.",
+     "p": [
+      "En muchos países CV y résumé son el mismo resumen breve de tu carrera.",
+      "En algunos sitios CV es un documento académico largo y résumé una página.",
+      "La carta de presentación explica en pocas líneas por qué encajas."
+     ],
+     "q": "¿Cuáles de estos documentos has escrito alguna vez?",
+     "c": "Mira una oferta: ¿pide CV, carta o ambos?"
+    },
+    "fr": {
+     "t": "CV, résumé et lettre de motivation",
+     "g": "Distingue CV, résumé et lettre de motivation et sache quand chacun est demandé.",
+     "p": [
+      "Dans beaucoup de pays, CV et résumé désignent le même court bilan de carrière.",
+      "Ailleurs, le CV est un long document académique et le résumé tient sur une page.",
+      "La lettre de motivation explique brièvement pourquoi tu corresponds au poste."
+     ],
+     "q": "Lesquels de ces documents as-tu déjà rédigés ?",
+     "c": "Regarde une annonce : demande-t-elle un CV, une lettre ou les deux ?"
+    },
+    "it": {
+     "t": "CV, résumé e lettera di presentazione",
+     "g": "Distingui CV, résumé e lettera di presentazione e quando servono.",
+     "p": [
+      "In molti paesi CV e résumé indicano lo stesso breve riassunto di carriera.",
+      "In certi posti il CV è un documento accademico lungo e il résumé una pagina.",
+      "La lettera di presentazione spiega in breve perché sei adatto al ruolo."
+     ],
+     "q": "Quali di questi documenti hai già scritto, se ne hai scritti?",
+     "c": "Guarda un annuncio: chiede CV, lettera o entrambi?"
+    },
+    "pt": {
+     "t": "CV, résumé e carta de apresentação",
+     "g": "Distingue CV, résumé e carta de apresentação e quando se usa cada um.",
+     "p": [
+      "Em muitos países, CV e résumé são o mesmo resumo breve da carreira.",
+      "Em alguns sítios, CV é um documento académico longo e résumé uma página.",
+      "A carta de apresentação explica em poucas linhas porque encaixas na vaga."
+     ],
+     "q": "Quais destes documentos já escreveste alguma vez?",
+     "c": "Vê um anúncio: pede CV, carta ou ambos?"
+    },
+    "pt_BR": {
+     "t": "Currículo, résumé e carta de apresentação",
+     "g": "Diferencie currículo, résumé e carta de apresentação e saiba quando cada um é pedido.",
+     "p": [
+      "Em muitos países, CV e résumé são o mesmo resumo curto da carreira.",
+      "Em alguns lugares, CV é um documento acadêmico longo e résumé tem uma página.",
+      "A carta de apresentação explica em poucas linhas por que você combina com a vaga."
+     ],
+     "q": "Quais desses documentos você já escreveu alguma vez?",
+     "c": "Olhe um anúncio: ele pede currículo, carta ou os dois?"
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The six-second recruiter scan",
+     "g": "See your CV the way a busy recruiter does: fast and focused on the top.",
+     "p": [
+      "Recruiters often skim a CV in seconds before deciding to read on.",
+      "Eyes go to name, job titles, employers, dates and headings first.",
+      "Clear layout and short lines win over dense walls of text."
+     ],
+     "q": "When you look at a CV for six seconds, what do you notice first?",
+     "c": "Show your CV to a friend for six seconds and ask what they saw."
+    },
+    "de": {
+     "t": "Der Sechs-Sekunden-Blick",
+     "g": "Sieh deinen Lebenslauf wie ein vielbeschäftigter Recruiter: schnell und auf den Anfang fokussiert.",
+     "p": [
+      "Recruiter überfliegen einen Lebenslauf oft in Sekunden, bevor sie weiterlesen.",
+      "Der Blick fällt zuerst auf Name, Berufsbezeichnungen, Firmen, Daten und Überschriften.",
+      "Klare Gliederung und kurze Zeilen schlagen dichte Textblöcke."
+     ],
+     "q": "Was fällt dir zuerst auf, wenn du einen Lebenslauf sechs Sekunden ansiehst?",
+     "c": "Zeige deinen Lebenslauf einer Freundin sechs Sekunden und frage, was sie gesehen hat."
+    },
+    "es": {
+     "t": "El escaneo de seis segundos",
+     "g": "Mira tu CV como lo hace un reclutador con prisa: rápido y centrado en la parte superior.",
+     "p": [
+      "Los reclutadores suelen hojear un CV en segundos antes de decidir si siguen.",
+      "La vista va primero a nombre, cargos, empresas, fechas y títulos.",
+      "Un diseño claro y líneas cortas ganan a los bloques densos de texto."
+     ],
+     "q": "Si miras un CV seis segundos, ¿qué es lo primero que notas?",
+     "c": "Enseña tu CV seis segundos a un amigo y pregunta qué vio."
+    },
+    "fr": {
+     "t": "Le scan de six secondes",
+     "g": "Vois ton CV comme un recruteur pressé : vite et centré sur le haut de page.",
+     "p": [
+      "Les recruteurs parcourent souvent un CV en quelques secondes avant de continuer.",
+      "Le regard va d'abord au nom, aux intitulés, employeurs, dates et titres.",
+      "Une mise en page claire et des lignes courtes battent les pavés de texte."
+     ],
+     "q": "Quand tu regardes un CV six secondes, que remarques-tu en premier ?",
+     "c": "Montre ton CV six secondes à un ami et demande ce qu'il a vu."
+    },
+    "it": {
+     "t": "La scansione di sei secondi",
+     "g": "Guarda il tuo CV come un selezionatore di fretta: veloce e concentrato sulla parte alta.",
+     "p": [
+      "I selezionatori spesso scorrono un CV in pochi secondi prima di leggerlo.",
+      "Lo sguardo va prima a nome, ruoli, aziende, date e titoli delle sezioni.",
+      "Impaginazione chiara e righe brevi battono i blocchi di testo fitti."
+     ],
+     "q": "Se guardi un CV per sei secondi, cosa noti per prima cosa?",
+     "c": "Mostra il tuo CV a un amico per sei secondi e chiedi cosa ha visto."
+    },
+    "pt": {
+     "t": "O olhar de seis segundos",
+     "g": "Vê o teu CV como um recrutador apressado: rápido e focado no topo.",
+     "p": [
+      "Os recrutadores costumam folhear um CV em segundos antes de decidir ler.",
+      "O olhar vai primeiro para nome, cargos, empresas, datas e títulos.",
+      "Um layout claro e linhas curtas vencem blocos densos de texto."
+     ],
+     "q": "Se olhares para um CV seis segundos, o que notas primeiro?",
+     "c": "Mostra o teu CV seis segundos a um amigo e pergunta o que viu."
+    },
+    "pt_BR": {
+     "t": "O olhar de seis segundos",
+     "g": "Veja seu currículo como um recrutador apressado: rápido e focado no topo.",
+     "p": [
+      "Recrutadores costumam folhear um currículo em segundos antes de decidir ler.",
+      "O olhar vai primeiro para nome, cargos, empresas, datas e títulos.",
+      "Um layout claro e linhas curtas vencem blocos densos de texto."
+     ],
+     "q": "Se você olhar um currículo por seis segundos, o que nota primeiro?",
+     "c": "Mostre seu currículo por seis segundos a um amigo e pergunte o que ele viu."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "CV styles around the world",
+     "g": "Learn that CV conventions differ by country and sector, and check yours.",
+     "p": [
+      "Length, photo and personal details vary a lot between countries.",
+      "Creative fields may allow design; law or finance usually prefer a plain look.",
+      "Look at samples from the country and industry you are targeting."
+     ],
+     "q": "In which country or sector do you hope to apply?",
+     "c": "Search for two sample CVs from your target country and note differences."
+    },
+    "de": {
+     "t": "Lebenslauf-Stile weltweit",
+     "g": "Lerne, dass Konventionen je nach Land und Branche abweichen, und prüfe deine.",
+     "p": [
+      "Länge, Foto und persönliche Angaben unterscheiden sich stark von Land zu Land.",
+      "Kreative Branchen erlauben Design; Recht oder Finanzen bevorzugen Schlichtheit.",
+      "Schau dir Beispiele aus deinem Zielland und deiner Branche an."
+     ],
+     "q": "In welchem Land oder welcher Branche möchtest du dich bewerben?",
+     "c": "Suche zwei Muster-Lebensläufe aus deinem Zielland und notiere Unterschiede."
+    },
+    "es": {
+     "t": "Estilos de CV en el mundo",
+     "g": "Aprende que las normas del CV cambian según país y sector, y revisa las tuyas.",
+     "p": [
+      "La extensión, la foto y los datos personales varían mucho entre países.",
+      "Los sectores creativos admiten diseño; derecho o finanzas prefieren sobriedad.",
+      "Mira ejemplos del país y del sector al que apuntas."
+     ],
+     "q": "¿En qué país o sector esperas presentarte?",
+     "c": "Busca dos CV de ejemplo de tu país objetivo y anota las diferencias."
+    },
+    "fr": {
+     "t": "Les styles de CV dans le monde",
+     "g": "Apprends que les usages du CV changent selon le pays et le secteur, et vérifie les tiens.",
+     "p": [
+      "La longueur, la photo et les données personnelles varient beaucoup selon les pays.",
+      "Les métiers créatifs tolèrent le design ; droit ou finance préfèrent la sobriété.",
+      "Regarde des exemples du pays et du secteur que tu vises."
+     ],
+     "q": "Dans quel pays ou secteur espères-tu postuler ?",
+     "c": "Cherche deux CV exemples de ton pays cible et note les différences."
+    },
+    "it": {
+     "t": "Stili di CV nel mondo",
+     "g": "Scopri che le regole del CV cambiano per paese e settore e controlla le tue.",
+     "p": [
+      "Lunghezza, foto e dati personali variano molto da un paese all'altro.",
+      "I settori creativi ammettono grafica; legale o finanza preferiscono la sobrietà.",
+      "Guarda esempi del paese e del settore a cui punti."
+     ],
+     "q": "In quale paese o settore speri di candidarti?",
+     "c": "Cerca due CV di esempio del tuo paese target e annota le differenze."
+    },
+    "pt": {
+     "t": "Estilos de CV pelo mundo",
+     "g": "Aprende que as regras do CV mudam com o país e o setor, e verifica as tuas.",
+     "p": [
+      "O tamanho, a foto e os dados pessoais variam muito entre países.",
+      "Áreas criativas admitem design; direito ou finanças preferem sobriedade.",
+      "Vê exemplos do país e do setor a que te candidatas."
+     ],
+     "q": "Em que país ou setor esperas candidatar-te?",
+     "c": "Procura dois CV de exemplo do teu país alvo e anota as diferenças."
+    },
+    "pt_BR": {
+     "t": "Estilos de currículo pelo mundo",
+     "g": "Aprenda que as regras do currículo mudam conforme o país e o setor, e confira as suas.",
+     "p": [
+      "O tamanho, a foto e os dados pessoais variam muito entre países.",
+      "Áreas criativas aceitam design; direito ou finanças preferem sobriedade.",
+      "Veja exemplos do país e do setor aos quais você se candidata."
+     ],
+     "q": "Em que país ou setor você espera se candidatar?",
+     "c": "Procure dois currículos de exemplo do seu país alvo e anote as diferenças."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your career inventory",
+     "g": "Build a raw list of everything you have done, as the base for your CV.",
+     "p": [
+      "List jobs, courses, projects, volunteering and roles, big or small.",
+      "For each, jot dates, place, tasks and anything you were proud of.",
+      "Do not filter yet; you will choose the best items later."
+     ],
+     "q": "Which experience are you proud of but never put on a CV?",
+     "c": "Write down at least ten experiences in a plain notes file."
+    },
+    "de": {
+     "t": "Dein Erfahrungs-Inventar",
+     "g": "Erstelle eine Rohliste von allem, was du getan hast, als Basis für den Lebenslauf.",
+     "p": [
+      "Liste Jobs, Kurse, Projekte, Ehrenämter und Rollen auf, groß oder klein.",
+      "Notiere je Eintrag Zeitraum, Ort, Aufgaben und worauf du stolz warst.",
+      "Filtere noch nicht; die besten Punkte wählst du später aus."
+     ],
+     "q": "Auf welche Erfahrung bist du stolz, hast sie aber nie aufgeführt?",
+     "c": "Schreibe mindestens zehn Erfahrungen in eine einfache Notizdatei."
+    },
+    "es": {
+     "t": "Tu inventario profesional",
+     "g": "Crea una lista en bruto de todo lo que has hecho como base de tu CV.",
+     "p": [
+      "Anota trabajos, cursos, proyectos, voluntariados y roles, grandes o pequeños.",
+      "De cada uno apunta fechas, lugar, tareas y lo que te enorgullece.",
+      "No filtres aún; elegirás lo mejor más adelante."
+     ],
+     "q": "¿De qué experiencia estás orgulloso y nunca la pusiste en un CV?",
+     "c": "Escribe al menos diez experiencias en un archivo de notas."
+    },
+    "fr": {
+     "t": "Ton inventaire de parcours",
+     "g": "Dresse une liste brute de tout ce que tu as fait, base de ton CV.",
+     "p": [
+      "Note emplois, formations, projets, bénévolat et rôles, grands ou petits.",
+      "Pour chacun, indique dates, lieu, tâches et ce dont tu es fier.",
+      "Ne trie pas encore ; tu choisiras le meilleur plus tard."
+     ],
+     "q": "De quelle expérience es-tu fier sans l'avoir jamais mise sur un CV ?",
+     "c": "Écris au moins dix expériences dans un simple fichier de notes."
+    },
+    "it": {
+     "t": "Il tuo inventario professionale",
+     "g": "Crea un elenco grezzo di tutto ciò che hai fatto come base del CV.",
+     "p": [
+      "Elenca lavori, corsi, progetti, volontariato e ruoli, grandi o piccoli.",
+      "Per ognuno annota date, luogo, compiti e ciò di cui vai fiero.",
+      "Non filtrare ancora: sceglierai il meglio più avanti."
+     ],
+     "q": "Di quale esperienza vai fiero ma non l'hai mai messa in un CV?",
+     "c": "Scrivi almeno dieci esperienze in un semplice file di appunti."
+    },
+    "pt": {
+     "t": "O teu inventário de carreira",
+     "g": "Cria uma lista em bruto de tudo o que fizeste, como base do CV.",
+     "p": [
+      "Lista empregos, cursos, projetos, voluntariado e funções, grandes ou pequenos.",
+      "De cada um, anota datas, local, tarefas e o que te orgulha.",
+      "Ainda não filtres; escolhes o melhor mais tarde."
+     ],
+     "q": "De que experiência te orgulhas e nunca puseste num CV?",
+     "c": "Escreve pelo menos dez experiências num ficheiro de notas."
+    },
+    "pt_BR": {
+     "t": "Seu inventário de carreira",
+     "g": "Crie uma lista bruta de tudo o que você já fez, como base do currículo.",
+     "p": [
+      "Liste empregos, cursos, projetos, voluntariado e funções, grandes ou pequenos.",
+      "De cada um, anote datas, local, tarefas e o que te deixa orgulhoso.",
+      "Ainda não filtre; você escolhe o melhor depois."
+     ],
+     "q": "De que experiência você se orgulha e nunca colocou num currículo?",
+     "c": "Escreva pelo menos dez experiências num arquivo de notas."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finding your strengths",
+     "g": "Spot the skills you use most and enjoy most, and name them clearly.",
+     "p": [
+      "Look at your inventory and ask what people usually thank you for.",
+      "Split strengths into skills you can prove and traits you can show.",
+      "Pick three strengths you actually enjoy using at work."
+     ],
+     "q": "What do friends or colleagues often ask you for help with?",
+     "c": "Write three strengths, each with one real example behind it."
+    },
+    "de": {
+     "t": "Deine Stärken finden",
+     "g": "Erkenne die Fähigkeiten, die du am meisten nutzt und magst, und benenne sie klar.",
+     "p": [
+      "Sieh dein Inventar durch und frage dich, wofür dir Leute oft danken.",
+      "Trenne belegbare Fähigkeiten von Eigenschaften, die du zeigen kannst.",
+      "Wähle drei Stärken, die du bei der Arbeit wirklich gern einsetzt."
+     ],
+     "q": "Wobei bitten dich Freunde oder Kollegen oft um Hilfe?",
+     "c": "Schreibe drei Stärken auf, jede mit einem echten Beispiel."
+    },
+    "es": {
+     "t": "Descubre tus puntos fuertes",
+     "g": "Detecta las habilidades que más usas y disfrutas, y nómbralas con claridad.",
+     "p": [
+      "Repasa tu inventario y piensa por qué suelen darte las gracias.",
+      "Separa las habilidades demostrables de los rasgos que puedes mostrar.",
+      "Elige tres fortalezas que de verdad disfrutas usando en el trabajo."
+     ],
+     "q": "¿Con qué te piden ayuda a menudo amigos o compañeros?",
+     "c": "Escribe tres fortalezas, cada una con un ejemplo real."
+    },
+    "fr": {
+     "t": "Trouver tes points forts",
+     "g": "Repère les compétences que tu utilises et aimes le plus, et nomme-les clairement.",
+     "p": [
+      "Relis ton inventaire et demande-toi pourquoi on te remercie souvent.",
+      "Distingue les compétences prouvables des qualités que tu peux montrer.",
+      "Choisis trois forces que tu aimes vraiment employer au travail."
+     ],
+     "q": "Pour quoi tes amis ou collègues te demandent-ils souvent de l'aide ?",
+     "c": "Écris trois forces, chacune avec un exemple réel."
+    },
+    "it": {
+     "t": "Scoprire i tuoi punti di forza",
+     "g": "Individua le competenze che usi e ami di più e nominale con chiarezza.",
+     "p": [
+      "Rileggi il tuo inventario e chiediti per cosa ti ringraziano di solito.",
+      "Separa le competenze dimostrabili dalle qualità che puoi mostrare.",
+      "Scegli tre punti di forza che ti piace davvero usare al lavoro."
+     ],
+     "q": "Per cosa ti chiedono spesso aiuto amici o colleghi?",
+     "c": "Scrivi tre punti di forza, ognuno con un esempio reale."
+    },
+    "pt": {
+     "t": "Descobrir os teus pontos fortes",
+     "g": "Identifica as competências que mais usas e de que mais gostas, e nomeia-as bem.",
+     "p": [
+      "Revê o teu inventário e pensa pelo que costumam agradecer-te.",
+      "Separa competências demonstráveis de qualidades que podes mostrar.",
+      "Escolhe três pontos fortes que gostas mesmo de usar no trabalho."
+     ],
+     "q": "Em que é que amigos ou colegas te pedem ajuda com frequência?",
+     "c": "Escreve três pontos fortes, cada um com um exemplo real."
+    },
+    "pt_BR": {
+     "t": "Descobrir seus pontos fortes",
+     "g": "Identifique as habilidades que você mais usa e de que mais gosta, e nomeie-as bem.",
+     "p": [
+      "Revise seu inventário e pense pelo que costumam agradecer a você.",
+      "Separe habilidades comprováveis de qualidades que você pode mostrar.",
+      "Escolha três pontos fortes que você gosta mesmo de usar no trabalho."
+     ],
+     "q": "Em que amigos ou colegas pedem sua ajuda com frequência?",
+     "c": "Escreva três pontos fortes, cada um com um exemplo real."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Knowing your target",
+     "g": "Understand why a CV aimed at one type of job beats a generic one.",
+     "p": [
+      "A focused CV shows you understand the role you are applying for.",
+      "Pick one target job title before you start polishing anything.",
+      "You can keep several versions for different kinds of roles."
+     ],
+     "q": "Which job title would you most like to be hired as next?",
+     "c": "Write your target job title at the top of your notes page."
+    },
+    "de": {
+     "t": "Das Ziel kennen",
+     "g": "Verstehe, warum ein auf eine Stelle ausgerichteter Lebenslauf besser wirkt als ein allgemeiner.",
+     "p": [
+      "Ein fokussierter Lebenslauf zeigt, dass du die Rolle verstanden hast.",
+      "Wähle einen Zieljob, bevor du irgendetwas feinschleifst.",
+      "Du kannst mehrere Versionen für verschiedene Rollen pflegen."
+     ],
+     "q": "Als was möchtest du als Nächstes am liebsten eingestellt werden?",
+     "c": "Schreibe deinen Zieljob oben auf deine Notizseite."
+    },
+    "es": {
+     "t": "Conocer tu objetivo",
+     "g": "Entiende por qué un CV dirigido a un tipo de puesto supera a uno genérico.",
+     "p": [
+      "Un CV enfocado demuestra que entiendes el puesto al que aspiras.",
+      "Elige un puesto objetivo antes de pulir nada.",
+      "Puedes tener varias versiones para distintos tipos de puesto."
+     ],
+     "q": "¿Con qué puesto te gustaría que te contrataran a continuación?",
+     "c": "Escribe tu puesto objetivo arriba en tu página de notas."
+    },
+    "fr": {
+     "t": "Connaître ta cible",
+     "g": "Comprends pourquoi un CV orienté vers un type de poste vaut mieux qu'un CV générique.",
+     "p": [
+      "Un CV ciblé montre que tu comprends le poste visé.",
+      "Choisis un intitulé de poste cible avant de peaufiner quoi que ce soit.",
+      "Tu peux garder plusieurs versions pour différents types de postes."
+     ],
+     "q": "Pour quel poste aimerais-tu être embauché ensuite ?",
+     "c": "Écris ton poste cible en haut de ta page de notes."
+    },
+    "it": {
+     "t": "Conoscere il tuo obiettivo",
+     "g": "Capisci perché un CV mirato a un tipo di lavoro batte uno generico.",
+     "p": [
+      "Un CV mirato mostra che capisci il ruolo per cui ti candidi.",
+      "Scegli un ruolo obiettivo prima di rifinire qualsiasi cosa.",
+      "Puoi tenere più versioni per diversi tipi di ruolo."
+     ],
+     "q": "Con quale ruolo ti piacerebbe essere assunto prossimamente?",
+     "c": "Scrivi il tuo ruolo obiettivo in cima alla pagina di appunti."
+    },
+    "pt": {
+     "t": "Conhecer o teu alvo",
+     "g": "Percebe porque um CV dirigido a um tipo de vaga vence um genérico.",
+     "p": [
+      "Um CV focado mostra que entendes a função a que te candidatas.",
+      "Escolhe uma função alvo antes de polires seja o que for.",
+      "Podes ter várias versões para diferentes tipos de função."
+     ],
+     "q": "Com que função gostavas de ser contratado a seguir?",
+     "c": "Escreve a tua função alvo no topo da página de notas."
+    },
+    "pt_BR": {
+     "t": "Conhecer seu alvo",
+     "g": "Entenda por que um currículo direcionado a um tipo de vaga vence um genérico.",
+     "p": [
+      "Um currículo focado mostra que você entende a função a que se candidata.",
+      "Escolha uma função alvo antes de polir qualquer coisa.",
+      "Você pode ter várias versões para diferentes tipos de função."
+     ],
+     "q": "Com que função você gostaria de ser contratado a seguir?",
+     "c": "Escreva sua função alvo no topo da página de notas."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading a job ad closely",
+     "g": "Separate must-have requirements from nice-to-have extras in an advert.",
+     "p": [
+      "Highlight repeated words: they show what the employer cares about most.",
+      "Must-haves are usually near the top or marked as required.",
+      "Nice-to-haves are bonuses; you can apply without every one."
+     ],
+     "q": "What word shows up most in the job ad you like best?",
+     "c": "Highlight five key requirements in one real job ad."
+    },
+    "de": {
+     "t": "Eine Stellenanzeige genau lesen",
+     "g": "Trenne Muss-Anforderungen von Wunsch-Extras in einer Anzeige.",
+     "p": [
+      "Markiere wiederholte Wörter: Sie zeigen, was dem Arbeitgeber wichtig ist.",
+      "Muss-Anforderungen stehen meist oben oder sind als erforderlich markiert.",
+      "Wünschenswertes ist ein Bonus; du kannst dich auch ohne alles bewerben."
+     ],
+     "q": "Welches Wort kommt in deiner Lieblingsanzeige am häufigsten vor?",
+     "c": "Markiere fünf Kernanforderungen in einer echten Anzeige."
+    },
+    "es": {
+     "t": "Leer bien una oferta de empleo",
+     "g": "Separa los requisitos imprescindibles de los deseables en un anuncio.",
+     "p": [
+      "Subraya las palabras repetidas: muestran lo que más importa a la empresa.",
+      "Los imprescindibles suelen ir arriba o marcados como obligatorios.",
+      "Los deseables son un extra; puedes postular sin cumplirlos todos."
+     ],
+     "q": "¿Qué palabra aparece más en la oferta que más te gusta?",
+     "c": "Subraya cinco requisitos clave en una oferta real."
+    },
+    "fr": {
+     "t": "Lire une annonce de près",
+     "g": "Sépare les exigences indispensables des atouts souhaités dans une annonce.",
+     "p": [
+      "Surligne les mots répétés : ils montrent ce qui compte pour l'employeur.",
+      "Les exigences clés sont souvent en haut ou marquées comme requises.",
+      "Les atouts sont un plus ; tu peux postuler sans tous les avoir."
+     ],
+     "q": "Quel mot revient le plus dans l'annonce qui te plaît le plus ?",
+     "c": "Surligne cinq exigences clés dans une vraie annonce."
+    },
+    "it": {
+     "t": "Leggere bene un annuncio",
+     "g": "Separa i requisiti indispensabili da quelli preferenziali in un annuncio.",
+     "p": [
+      "Evidenzia le parole ripetute: mostrano cosa conta di più per l'azienda.",
+      "I requisiti indispensabili stanno di solito in alto o sono indicati come richiesti.",
+      "Quelli preferenziali sono un extra; puoi candidarti senza averli tutti."
+     ],
+     "q": "Quale parola compare più spesso nell'annuncio che ti piace di più?",
+     "c": "Evidenzia cinque requisiti chiave in un annuncio reale."
+    },
+    "pt": {
+     "t": "Ler bem um anúncio de emprego",
+     "g": "Separa os requisitos obrigatórios dos desejáveis num anúncio.",
+     "p": [
+      "Sublinha as palavras repetidas: mostram o que mais importa à empresa.",
+      "Os obrigatórios costumam estar no topo ou marcados como exigidos.",
+      "Os desejáveis são um extra; podes candidatar-te sem os cumprir todos."
+     ],
+     "q": "Que palavra aparece mais no anúncio de que mais gostas?",
+     "c": "Sublinha cinco requisitos-chave num anúncio real."
+    },
+    "pt_BR": {
+     "t": "Ler bem um anúncio de vaga",
+     "g": "Separe os requisitos obrigatórios dos desejáveis em um anúncio.",
+     "p": [
+      "Destaque as palavras repetidas: elas mostram o que mais importa à empresa.",
+      "Os obrigatórios costumam estar no topo ou marcados como exigidos.",
+      "Os desejáveis são um extra; você pode se candidatar sem cumprir todos."
+     ],
+     "q": "Que palavra aparece mais no anúncio de que você mais gosta?",
+     "c": "Destaque cinco requisitos-chave em um anúncio real."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The basic CV structure",
+     "g": "Learn the standard order of CV sections so readers find things fast.",
+     "p": [
+      "A usual order: contact, summary, experience, education, skills.",
+      "Readers expect the most relevant information near the top.",
+      "Predictable headings help both people and scanning software."
+     ],
+     "q": "Which section of your CV do you find hardest to write?",
+     "c": "Sketch your CV as a list of section headings in your order."
+    },
+    "de": {
+     "t": "Der grundlegende Aufbau",
+     "g": "Lerne die übliche Reihenfolge der Abschnitte, damit Leser alles schnell finden.",
+     "p": [
+      "Übliche Reihenfolge: Kontakt, Profil, Erfahrung, Ausbildung, Kenntnisse.",
+      "Leser erwarten das Relevanteste weit oben.",
+      "Vorhersehbare Überschriften helfen Menschen und Scan-Software."
+     ],
+     "q": "Welchen Abschnitt deines Lebenslaufs findest du am schwersten?",
+     "c": "Skizziere deinen Lebenslauf als Liste von Überschriften in deiner Reihenfolge."
+    },
+    "es": {
+     "t": "La estructura básica del CV",
+     "g": "Aprende el orden habitual de las secciones para que el lector encuentre todo rápido.",
+     "p": [
+      "Un orden habitual: contacto, perfil, experiencia, formación, habilidades.",
+      "Los lectores esperan lo más relevante cerca del inicio.",
+      "Títulos previsibles ayudan a las personas y a los programas de lectura."
+     ],
+     "q": "¿Qué sección de tu CV te resulta más difícil de escribir?",
+     "c": "Esboza tu CV como una lista de títulos de sección en tu orden."
+    },
+    "fr": {
+     "t": "La structure de base du CV",
+     "g": "Apprends l'ordre habituel des rubriques pour que le lecteur trouve vite l'essentiel.",
+     "p": [
+      "Un ordre courant : coordonnées, profil, expérience, formation, compétences.",
+      "Les lecteurs attendent l'information la plus utile en haut.",
+      "Des titres prévisibles aident les personnes comme les logiciels de tri."
+     ],
+     "q": "Quelle rubrique de ton CV est la plus difficile à écrire ?",
+     "c": "Esquisse ton CV sous forme de liste de titres dans ton ordre."
+    },
+    "it": {
+     "t": "La struttura base del CV",
+     "g": "Impara l'ordine abituale delle sezioni perché chi legge trovi tutto in fretta.",
+     "p": [
+      "Un ordine tipico: contatti, profilo, esperienza, formazione, competenze.",
+      "I lettori si aspettano le informazioni più rilevanti in alto.",
+      "Titoli prevedibili aiutano sia le persone sia i software di lettura."
+     ],
+     "q": "Quale sezione del tuo CV trovi più difficile da scrivere?",
+     "c": "Abbozza il tuo CV come elenco di titoli di sezione nel tuo ordine."
+    },
+    "pt": {
+     "t": "A estrutura básica do CV",
+     "g": "Aprende a ordem habitual das secções para o leitor encontrar tudo depressa.",
+     "p": [
+      "Uma ordem habitual: contacto, perfil, experiência, formação, competências.",
+      "Os leitores esperam a informação mais relevante perto do topo.",
+      "Títulos previsíveis ajudam as pessoas e os programas de leitura."
+     ],
+     "q": "Que secção do teu CV achas mais difícil de escrever?",
+     "c": "Esboça o teu CV como lista de títulos de secção na tua ordem."
+    },
+    "pt_BR": {
+     "t": "A estrutura básica do currículo",
+     "g": "Aprenda a ordem habitual das seções para o leitor achar tudo rápido.",
+     "p": [
+      "Uma ordem habitual: contato, resumo, experiência, formação, habilidades.",
+      "Os leitores esperam a informação mais relevante perto do topo.",
+      "Títulos previsíveis ajudam as pessoas e os programas de leitura."
+     ],
+     "q": "Que seção do seu currículo você acha mais difícil de escrever?",
+     "c": "Esboce seu currículo como lista de títulos de seção na sua ordem."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chronological, skills or hybrid",
+     "g": "Compare the three main CV formats and choose the one that suits you.",
+     "p": [
+      "Chronological lists jobs newest first and suits steady careers.",
+      "A skills-based format groups abilities and suits career changers.",
+      "A hybrid mixes a skills summary with a dated job history."
+     ],
+     "q": "Does your career path look steady, changing or mixed?",
+     "c": "Choose one format and write a reason for your choice in one line."
+    },
+    "de": {
+     "t": "Chronologisch, funktional oder hybrid",
+     "g": "Vergleiche die drei Hauptformate und wähle das passende.",
+     "p": [
+      "Chronologisch listet Stationen mit der neuesten zuerst und passt zu geradlinigen Laufbahnen.",
+      "Ein funktionales Format gruppiert Fähigkeiten und passt zu Branchenwechslern.",
+      "Hybrid verbindet ein Kompetenzprofil mit datierter Berufshistorie."
+     ],
+     "q": "Ist dein Werdegang geradlinig, wechselhaft oder gemischt?",
+     "c": "Wähle ein Format und begründe die Wahl in einer Zeile."
+    },
+    "es": {
+     "t": "Cronológico, por habilidades o híbrido",
+     "g": "Compara los tres formatos principales y elige el que te convenga.",
+     "p": [
+      "El cronológico lista empleos del más reciente y sirve a carreras estables.",
+      "El de habilidades agrupa destrezas y sirve a quien cambia de rumbo.",
+      "El híbrido une un resumen de habilidades y un historial con fechas."
+     ],
+     "q": "¿Tu trayectoria es estable, cambiante o mixta?",
+     "c": "Elige un formato y escribe una razón en una línea."
+    },
+    "fr": {
+     "t": "Chronologique, par compétences ou mixte",
+     "g": "Compare les trois formats principaux et choisis celui qui te convient.",
+     "p": [
+      "Le chronologique liste les postes du plus récent et convient aux parcours réguliers.",
+      "Le format par compétences regroupe les savoir-faire et aide les reconversions.",
+      "Le mixte associe un résumé de compétences et un historique daté."
+     ],
+     "q": "Ton parcours est-il régulier, changeant ou mixte ?",
+     "c": "Choisis un format et écris la raison en une ligne."
+    },
+    "it": {
+     "t": "Cronologico, per competenze o ibrido",
+     "g": "Confronta i tre formati principali e scegli quello adatto a te.",
+     "p": [
+      "Il cronologico elenca i lavori dal più recente e va bene per percorsi lineari.",
+      "Quello per competenze raggruppa le abilità e aiuta chi cambia settore.",
+      "L'ibrido unisce un riepilogo di competenze e una storia lavorativa datata."
+     ],
+     "q": "Il tuo percorso è lineare, variabile o misto?",
+     "c": "Scegli un formato e scrivi il motivo in una riga."
+    },
+    "pt": {
+     "t": "Cronológico, por competências ou híbrido",
+     "g": "Compara os três formatos principais e escolhe o que te serve.",
+     "p": [
+      "O cronológico lista empregos do mais recente e serve carreiras estáveis.",
+      "O de competências agrupa capacidades e serve quem muda de área.",
+      "O híbrido junta um resumo de competências e um historial com datas."
+     ],
+     "q": "O teu percurso é estável, variável ou misto?",
+     "c": "Escolhe um formato e escreve a razão numa linha."
+    },
+    "pt_BR": {
+     "t": "Cronológico, por habilidades ou híbrido",
+     "g": "Compare os três formatos principais e escolha o que serve para você.",
+     "p": [
+      "O cronológico lista empregos do mais recente e serve carreiras estáveis.",
+      "O de habilidades agrupa capacidades e serve quem muda de área.",
+      "O híbrido junta um resumo de habilidades e um histórico com datas."
+     ],
+     "q": "Sua trajetória é estável, variável ou mista?",
+     "c": "Escolha um formato e escreva o motivo em uma linha."
+    }
+   }
+  }
+ ]
+}

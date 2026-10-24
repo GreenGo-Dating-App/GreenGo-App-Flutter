@@ -1,0 +1,835 @@
+{
+ "topic": "leadership",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Communication as the leader's main tool",
+     "g": "See why most leadership happens through conversations and messages.",
+     "p": [
+      "Most of a leader's day is talking, writing and listening.",
+      "People follow clarity, so every message shapes trust.",
+      "Small improvements in how you communicate bring big results."
+     ],
+     "q": "Which of your conversations had the biggest effect on someone lately?",
+     "c": "Notice every message you send today and ask: is it clear and kind?"
+    },
+    "de": {
+     "t": "Kommunikation als wichtigstes Werkzeug",
+     "g": "Erkennen, warum Führung meist in Gesprächen und Nachrichten stattfindet.",
+     "p": [
+      "Der größte Teil des Führungsalltags ist Sprechen, Schreiben und Zuhören.",
+      "Menschen folgen Klarheit, daher prägt jede Nachricht das Vertrauen.",
+      "Kleine Verbesserungen in der Kommunikation bringen große Wirkung."
+     ],
+     "q": "Welches deiner Gespräche hat zuletzt viel bei jemandem bewirkt?",
+     "c": "Beachte heute jede Nachricht und frage: Ist sie klar und freundlich?"
+    },
+    "es": {
+     "t": "La comunicación, herramienta principal",
+     "g": "Ver por qué casi todo el liderazgo ocurre en conversaciones y mensajes.",
+     "p": [
+      "Gran parte del día de un líder es hablar, escribir y escuchar.",
+      "La gente sigue la claridad, así que cada mensaje moldea la confianza.",
+      "Pequeñas mejoras al comunicar dan grandes resultados."
+     ],
+     "q": "¿Qué conversación tuya tuvo más efecto en alguien últimamente?",
+     "c": "Fíjate hoy en cada mensaje que envíes y pregúntate: ¿es claro y amable?"
+    },
+    "fr": {
+     "t": "La communication, outil principal du leader",
+     "g": "Voir pourquoi le leadership passe surtout par des échanges et des messages.",
+     "p": [
+      "L'essentiel de la journée d'un leader, c'est parler, écrire et écouter.",
+      "On suit la clarté : chaque message façonne la confiance.",
+      "De petites améliorations de communication donnent de grands résultats."
+     ],
+     "q": "Quelle conversation a eu le plus d'effet sur quelqu'un récemment ?",
+     "c": "Observe chaque message que tu envoies aujourd'hui : est-il clair et bienveillant ?"
+    },
+    "it": {
+     "t": "La comunicazione, strumento principale",
+     "g": "Vedere perché la leadership passa soprattutto da conversazioni e messaggi.",
+     "p": [
+      "Gran parte della giornata di un leader è parlare, scrivere e ascoltare.",
+      "Le persone seguono la chiarezza, quindi ogni messaggio crea fiducia.",
+      "Piccoli miglioramenti nel comunicare danno grandi risultati."
+     ],
+     "q": "Quale tua conversazione ha avuto più effetto su qualcuno di recente?",
+     "c": "Oggi osserva ogni messaggio che invii e chiediti: è chiaro e gentile?"
+    },
+    "pt": {
+     "t": "A comunicação como ferramenta principal",
+     "g": "Ver porque a liderança acontece sobretudo em conversas e mensagens.",
+     "p": [
+      "Grande parte do dia de um líder é falar, escrever e ouvir.",
+      "As pessoas seguem a clareza, por isso cada mensagem molda a confiança.",
+      "Pequenas melhorias na comunicação dão grandes resultados."
+     ],
+     "q": "Que conversa tua teve mais efeito em alguém ultimamente?",
+     "c": "Repara hoje em cada mensagem que enviares e pergunta: é clara e simpática?"
+    },
+    "pt_BR": {
+     "t": "A comunicação como ferramenta principal",
+     "g": "Ver por que a liderança acontece principalmente em conversas e mensagens.",
+     "p": [
+      "Grande parte do dia de um líder é falar, escrever e ouvir.",
+      "As pessoas seguem a clareza, então cada mensagem molda a confiança.",
+      "Pequenas melhorias na comunicação dão grandes resultados."
+     ],
+     "q": "Que conversa sua teve mais efeito em alguém ultimamente?",
+     "c": "Repare hoje em cada mensagem que enviar e pergunte: é clara e gentil?"
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Active listening",
+     "g": "Give full attention, paraphrase and ask follow-up questions.",
+     "p": [
+      "Put the phone away and face the person fully.",
+      "Paraphrase: so what you are saying is... to check you understood.",
+      "Ask a follow-up question before offering your own view."
+     ],
+     "q": "When did someone really listen to you, and how did it feel?",
+     "c": "In one chat today, paraphrase what the other person said before replying."
+    },
+    "de": {
+     "t": "Aktives Zuhören",
+     "g": "Volle Aufmerksamkeit schenken, umschreiben und nachfragen.",
+     "p": [
+      "Lege das Handy weg und wende dich der Person ganz zu.",
+      "Fasse zusammen: Du meinst also..., um dein Verständnis zu prüfen.",
+      "Stelle eine Nachfrage, bevor du deine Sicht nennst."
+     ],
+     "q": "Wann hat dir jemand wirklich zugehört, und wie fühlte es sich an?",
+     "c": "Fasse in einem Gespräch heute zusammen, was der andere sagte, bevor du antwortest."
+    },
+    "es": {
+     "t": "Escucha activa",
+     "g": "Dar atención plena, parafrasear y hacer preguntas de seguimiento.",
+     "p": [
+      "Guarda el móvil y mira a la persona de frente.",
+      "Parafrasea: entonces lo que dices es... para comprobar que entendiste.",
+      "Haz una pregunta de seguimiento antes de dar tu opinión."
+     ],
+     "q": "¿Cuándo te escuchó alguien de verdad y cómo se sintió?",
+     "c": "En una charla de hoy, parafrasea lo que dijo la otra persona antes de responder."
+    },
+    "fr": {
+     "t": "L'écoute active",
+     "g": "Donner toute ton attention, reformuler et poser des questions de suite.",
+     "p": [
+      "Range ton téléphone et fais face à la personne.",
+      "Reformule : si je comprends bien, tu dis que... pour vérifier.",
+      "Pose une question de suite avant de donner ton avis."
+     ],
+     "q": "Quand quelqu'un t'a-t-il vraiment écouté, et comment l'as-tu vécu ?",
+     "c": "Dans une discussion aujourd'hui, reformule ce que dit l'autre avant de répondre."
+    },
+    "it": {
+     "t": "L'ascolto attivo",
+     "g": "Dare piena attenzione, parafrasare e fare domande di approfondimento.",
+     "p": [
+      "Metti via il telefono e rivolgiti alla persona.",
+      "Parafrasa: quindi stai dicendo che... per verificare di aver capito.",
+      "Fai una domanda di approfondimento prima di dare la tua opinione."
+     ],
+     "q": "Quando qualcuno ti ha ascoltato davvero e come ti sei sentito?",
+     "c": "In una chiacchierata di oggi, parafrasa ciò che l'altro dice prima di rispondere."
+    },
+    "pt": {
+     "t": "A escuta ativa",
+     "g": "Dar atenção total, parafrasear e fazer perguntas de seguimento.",
+     "p": [
+      "Guarda o telemóvel e vira-te para a pessoa.",
+      "Parafraseia: então o que dizes é... para confirmar que percebeste.",
+      "Faz uma pergunta de seguimento antes de dares a tua opinião."
+     ],
+     "q": "Quando é que alguém te ouviu mesmo e como te sentiste?",
+     "c": "Numa conversa de hoje, parafraseia o que o outro disse antes de responder."
+    },
+    "pt_BR": {
+     "t": "A escuta ativa",
+     "g": "Dar atenção total, parafrasear e fazer perguntas de acompanhamento.",
+     "p": [
+      "Guarde o celular e fique de frente para a pessoa.",
+      "Parafraseie: então o que você diz é... para confirmar que entendeu.",
+      "Faça uma pergunta de acompanhamento antes de dar sua opinião."
+     ],
+     "q": "Quando alguém ouviu você de verdade e como foi?",
+     "c": "Numa conversa de hoje, parafraseie o que o outro disse antes de responder."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking open questions",
+     "g": "Use what, how and tell me more questions to understand people.",
+     "p": [
+      "Closed questions get yes or no; open ones get stories.",
+      "Try: what is most important here, and how can I help?",
+      "Avoid why questions that sound like blame; use what instead."
+     ],
+     "q": "Which question do you ask that makes people open up?",
+     "c": "Replace one closed question today with an open one and listen to the answer."
+    },
+    "de": {
+     "t": "Offene Fragen stellen",
+     "g": "Mit Was-, Wie- und Erzähl-mal-Fragen Menschen besser verstehen.",
+     "p": [
+      "Geschlossene Fragen bringen Ja oder Nein, offene bringen Geschichten.",
+      "Probiere: Was ist hier am wichtigsten, und wie kann ich helfen?",
+      "Vermeide Warum-Fragen, die nach Vorwurf klingen; frage lieber was."
+     ],
+     "q": "Welche Frage von dir lässt Menschen sich öffnen?",
+     "c": "Ersetze heute eine geschlossene Frage durch eine offene und höre zu."
+    },
+    "es": {
+     "t": "Hacer preguntas abiertas",
+     "g": "Usar preguntas de qué, cómo y cuéntame más para entender a las personas.",
+     "p": [
+      "Las preguntas cerradas dan sí o no; las abiertas, historias.",
+      "Prueba: ¿qué es lo más importante aquí y cómo puedo ayudar?",
+      "Evita los por qué que suenan a reproche; usa qué."
+     ],
+     "q": "¿Qué pregunta haces que hace que la gente se abra?",
+     "c": "Cambia hoy una pregunta cerrada por una abierta y escucha la respuesta."
+    },
+    "fr": {
+     "t": "Poser des questions ouvertes",
+     "g": "Utiliser des questions quoi, comment et dis-m'en plus pour comprendre.",
+     "p": [
+      "Les questions fermées donnent oui ou non ; les ouvertes, des histoires.",
+      "Essaie : qu'est-ce qui compte le plus ici, et comment puis-je aider ?",
+      "Évite les pourquoi qui sonnent comme un reproche ; préfère quoi."
+     ],
+     "q": "Quelle question poses-tu qui fait que les gens s'ouvrent ?",
+     "c": "Remplace aujourd'hui une question fermée par une ouverte et écoute la réponse."
+    },
+    "it": {
+     "t": "Fare domande aperte",
+     "g": "Usare domande con cosa, come e dimmi di più per capire le persone.",
+     "p": [
+      "Le domande chiuse danno sì o no; quelle aperte danno storie.",
+      "Prova: cosa è più importante qui e come posso aiutare?",
+      "Evita i perché che suonano come un'accusa; usa cosa."
+     ],
+     "q": "Quale domanda fai che fa aprire le persone?",
+     "c": "Sostituisci oggi una domanda chiusa con una aperta e ascolta la risposta."
+    },
+    "pt": {
+     "t": "Fazer perguntas abertas",
+     "g": "Usar perguntas com o quê, como e conta-me mais para perceber as pessoas.",
+     "p": [
+      "Perguntas fechadas dão sim ou não; as abertas dão histórias.",
+      "Experimenta: o que é mais importante aqui e como posso ajudar?",
+      "Evita os porquês que soam a acusação; usa o quê."
+     ],
+     "q": "Que pergunta fazes que leva as pessoas a abrirem-se?",
+     "c": "Troca hoje uma pergunta fechada por uma aberta e ouve a resposta."
+    },
+    "pt_BR": {
+     "t": "Fazendo perguntas abertas",
+     "g": "Usar perguntas com o quê, como e me conte mais para entender as pessoas.",
+     "p": [
+      "Perguntas fechadas dão sim ou não; as abertas dão histórias.",
+      "Experimente: o que é mais importante aqui e como posso ajudar?",
+      "Evite os por quês que soam como acusação; use o quê."
+     ],
+     "q": "Que pergunta você faz que leva as pessoas a se abrirem?",
+     "c": "Troque hoje uma pergunta fechada por uma aberta e ouça a resposta."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Being clear and concise",
+     "g": "State the point first and check that your message landed.",
+     "p": [
+      "Lead with the main point, then give the details.",
+      "Cut extra words; one idea per sentence is easier to follow.",
+      "Ask: what will you do next? to check understanding."
+     ],
+     "q": "Think of a message that confused people; how could it be shorter?",
+     "c": "Rewrite one message you plan to send in half the words."
+    },
+    "de": {
+     "t": "Klar und prägnant sein",
+     "g": "Den Kernpunkt zuerst nennen und prüfen, ob die Botschaft ankam.",
+     "p": [
+      "Beginne mit der Hauptaussage, dann folgen die Details.",
+      "Streiche Füllwörter; eine Idee pro Satz ist leichter zu verstehen.",
+      "Frage: Was machst du als Nächstes? So prüfst du das Verständnis."
+     ],
+     "q": "Denke an eine Nachricht, die verwirrte; wie hätte sie kürzer sein können?",
+     "c": "Schreibe eine geplante Nachricht mit halb so vielen Wörtern neu."
+    },
+    "es": {
+     "t": "Ser claro y conciso",
+     "g": "Decir primero lo esencial y comprobar que el mensaje llegó.",
+     "p": [
+      "Empieza por lo principal y luego da los detalles.",
+      "Quita palabras de más; una idea por frase se entiende mejor.",
+      "Pregunta: ¿qué harás ahora? para comprobar que se entendió."
+     ],
+     "q": "Piensa en un mensaje que confundió; ¿cómo podría ser más corto?",
+     "c": "Reescribe un mensaje que vayas a enviar con la mitad de palabras."
+    },
+    "fr": {
+     "t": "Être clair et concis",
+     "g": "Dire l'essentiel d'abord et vérifier que le message est passé.",
+     "p": [
+      "Commence par l'idée principale, puis donne les détails.",
+      "Coupe les mots en trop ; une idée par phrase se suit mieux.",
+      "Demande : que feras-tu ensuite ? pour vérifier la compréhension."
+     ],
+     "q": "Pense à un message qui a semé la confusion ; comment le raccourcir ?",
+     "c": "Réécris un message à envoyer avec deux fois moins de mots."
+    },
+    "it": {
+     "t": "Essere chiari e concisi",
+     "g": "Dire prima l'essenziale e verificare che il messaggio sia arrivato.",
+     "p": [
+      "Parti dal punto principale, poi dai i dettagli.",
+      "Taglia le parole in più; una idea per frase è più facile da seguire.",
+      "Chiedi: cosa farai adesso? per verificare la comprensione."
+     ],
+     "q": "Pensa a un messaggio che ha confuso; come potrebbe essere più breve?",
+     "c": "Riscrivi un messaggio che devi inviare con la metà delle parole."
+    },
+    "pt": {
+     "t": "Ser claro e conciso",
+     "g": "Dizer primeiro o essencial e confirmar que a mensagem chegou.",
+     "p": [
+      "Começa pelo ponto principal e depois dá os detalhes.",
+      "Corta palavras a mais; uma ideia por frase é mais fácil de seguir.",
+      "Pergunta: o que vais fazer a seguir? para confirmar a compreensão."
+     ],
+     "q": "Pensa numa mensagem que confundiu; como poderia ser mais curta?",
+     "c": "Reescreve uma mensagem que vais enviar com metade das palavras."
+    },
+    "pt_BR": {
+     "t": "Sendo claro e conciso",
+     "g": "Dizer primeiro o essencial e confirmar que a mensagem chegou.",
+     "p": [
+      "Comece pelo ponto principal e depois dê os detalhes.",
+      "Corte palavras sobrando; uma ideia por frase é mais fácil de seguir.",
+      "Pergunte: o que você vai fazer agora? para confirmar o entendimento."
+     ],
+     "q": "Pense numa mensagem que confundiu; como ela poderia ser mais curta?",
+     "c": "Reescreva uma mensagem que vai enviar com metade das palavras."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Body language and tone",
+     "g": "See how posture, eye contact and voice support or undermine your words.",
+     "p": [
+      "People trust tone and body more than words when they clash.",
+      "Open posture, relaxed shoulders and steady eye contact signal care.",
+      "Slow down and lower your voice slightly to sound calm and sure."
+     ],
+     "q": "What does your face or voice show when you are stressed?",
+     "c": "Check your posture and tone in two conversations today."
+    },
+    "de": {
+     "t": "Körpersprache und Tonfall",
+     "g": "Sehen, wie Haltung, Blickkontakt und Stimme deine Worte stützen oder schwächen.",
+     "p": [
+      "Bei Widerspruch glauben Menschen eher Tonfall und Körper als Worte.",
+      "Offene Haltung, entspannte Schultern und ruhiger Blickkontakt zeigen Zugewandtheit.",
+      "Sprich langsamer und etwas tiefer, um ruhig und sicher zu wirken."
+     ],
+     "q": "Was zeigen dein Gesicht oder deine Stimme bei Stress?",
+     "c": "Prüfe heute in zwei Gesprächen Haltung und Tonfall."
+    },
+    "es": {
+     "t": "Lenguaje corporal y tono",
+     "g": "Ver cómo postura, contacto visual y voz refuerzan o debilitan tus palabras.",
+     "p": [
+      "Si chocan, la gente cree más al tono y al cuerpo que a las palabras.",
+      "Postura abierta, hombros relajados y mirada estable muestran interés.",
+      "Habla más lento y algo más grave para sonar calmado y seguro."
+     ],
+     "q": "¿Qué muestran tu cara o tu voz cuando estás estresado?",
+     "c": "Revisa tu postura y tu tono en dos conversaciones de hoy."
+    },
+    "fr": {
+     "t": "Langage corporel et ton",
+     "g": "Voir comment posture, regard et voix soutiennent ou affaiblissent tes mots.",
+     "p": [
+      "En cas de contradiction, on croit le ton et le corps plus que les mots.",
+      "Posture ouverte, épaules détendues et regard stable montrent de l'attention.",
+      "Parle plus lentement, voix un peu plus grave, pour paraître calme et sûr."
+     ],
+     "q": "Que montrent ton visage ou ta voix quand tu es stressé ?",
+     "c": "Vérifie ta posture et ton ton dans deux conversations aujourd'hui."
+    },
+    "it": {
+     "t": "Linguaggio del corpo e tono",
+     "g": "Vedere come postura, sguardo e voce sostengono o indeboliscono le parole.",
+     "p": [
+      "Se contrastano, si crede più al tono e al corpo che alle parole.",
+      "Postura aperta, spalle rilassate e sguardo fermo mostrano attenzione.",
+      "Rallenta e abbassa un po' la voce per sembrare calmo e sicuro."
+     ],
+     "q": "Cosa mostrano il tuo viso o la tua voce quando sei stressato?",
+     "c": "Controlla postura e tono in due conversazioni oggi."
+    },
+    "pt": {
+     "t": "Linguagem corporal e tom",
+     "g": "Ver como postura, contacto visual e voz apoiam ou enfraquecem as tuas palavras.",
+     "p": [
+      "Quando chocam, as pessoas acreditam mais no tom e no corpo do que nas palavras.",
+      "Postura aberta, ombros relaxados e olhar firme mostram atenção.",
+      "Fala mais devagar e um pouco mais grave para soar calmo e seguro."
+     ],
+     "q": "O que mostram o teu rosto ou a tua voz quando estás sob stress?",
+     "c": "Verifica a tua postura e o teu tom em duas conversas de hoje."
+    },
+    "pt_BR": {
+     "t": "Linguagem corporal e tom",
+     "g": "Ver como postura, contato visual e voz apoiam ou enfraquecem suas palavras.",
+     "p": [
+      "Quando entram em choque, as pessoas acreditam mais no tom e no corpo do que nas palavras.",
+      "Postura aberta, ombros relaxados e olhar firme mostram atenção.",
+      "Fale mais devagar e um pouco mais grave para soar calmo e seguro."
+     ],
+     "q": "O que seu rosto ou sua voz mostram quando você está estressado?",
+     "c": "Verifique sua postura e seu tom em duas conversas de hoje."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Communicating expectations",
+     "g": "Explain what good looks like, by when and why it matters.",
+     "p": [
+      "Say what the result should be, with a clear example if you can.",
+      "Give a deadline and say why the task matters to the team.",
+      "Ask the person to say it back in their own words."
+     ],
+     "q": "When were you unsure what was expected of you, and what helped?",
+     "c": "Write one clear expectation: what, by when, why, then share it."
+    },
+    "de": {
+     "t": "Erwartungen klar kommunizieren",
+     "g": "Erklären, wie gut aussieht, bis wann und warum es wichtig ist.",
+     "p": [
+      "Sage, wie das Ergebnis aussehen soll, am besten mit Beispiel.",
+      "Nenne eine Frist und erkläre, warum die Aufgabe für das Team zählt.",
+      "Bitte die Person, es in eigenen Worten wiederzugeben."
+     ],
+     "q": "Wann war dir unklar, was von dir erwartet wurde, und was half?",
+     "c": "Formuliere eine klare Erwartung: was, bis wann, warum, und teile sie."
+    },
+    "es": {
+     "t": "Comunicar expectativas",
+     "g": "Explicar cómo se ve lo bien hecho, para cuándo y por qué importa.",
+     "p": [
+      "Di cuál debe ser el resultado, con un ejemplo claro si puedes.",
+      "Da una fecha límite y explica por qué importa la tarea al equipo.",
+      "Pide a la persona que lo repita con sus propias palabras."
+     ],
+     "q": "¿Cuándo no tenías claro qué esperaban de ti y qué te ayudó?",
+     "c": "Escribe una expectativa clara: qué, para cuándo, por qué, y compártela."
+    },
+    "fr": {
+     "t": "Communiquer les attentes",
+     "g": "Expliquer à quoi ressemble du bon travail, pour quand et pourquoi c'est important.",
+     "p": [
+      "Dis quel résultat est attendu, avec un exemple clair si possible.",
+      "Donne une échéance et explique pourquoi la tâche compte pour l'équipe.",
+      "Demande à la personne de reformuler avec ses propres mots."
+     ],
+     "q": "Quand ne savais-tu pas ce qu'on attendait de toi, et qu'est-ce qui a aidé ?",
+     "c": "Écris une attente claire : quoi, pour quand, pourquoi, et partage-la."
+    },
+    "it": {
+     "t": "Comunicare le aspettative",
+     "g": "Spiegare come appare il lavoro ben fatto, entro quando e perché conta.",
+     "p": [
+      "Di' quale deve essere il risultato, con un esempio chiaro se puoi.",
+      "Dai una scadenza e spiega perché il compito conta per il team.",
+      "Chiedi alla persona di ripeterlo con parole sue."
+     ],
+     "q": "Quando non eri sicuro di cosa ci si aspettasse da te e cosa ti ha aiutato?",
+     "c": "Scrivi un'aspettativa chiara: cosa, entro quando, perché, e condividila."
+    },
+    "pt": {
+     "t": "Comunicar expectativas",
+     "g": "Explicar como é o trabalho bem feito, para quando e porque importa.",
+     "p": [
+      "Diz qual deve ser o resultado, com um exemplo claro se puderes.",
+      "Dá um prazo e explica porque a tarefa importa para a equipa.",
+      "Pede à pessoa que repita por palavras dela."
+     ],
+     "q": "Quando não tinhas claro o que esperavam de ti e o que ajudou?",
+     "c": "Escreve uma expectativa clara: o quê, para quando, porquê, e partilha-a."
+    },
+    "pt_BR": {
+     "t": "Comunicando expectativas",
+     "g": "Explicar como é o trabalho bem feito, para quando e por que importa.",
+     "p": [
+      "Diga qual deve ser o resultado, com um exemplo claro se puder.",
+      "Dê um prazo e explique por que a tarefa importa para o time.",
+      "Peça à pessoa que repita com as palavras dela."
+     ],
+     "q": "Quando você não sabia ao certo o que esperavam de você e o que ajudou?",
+     "c": "Escreva uma expectativa clara: o quê, para quando, por quê, e compartilhe."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Adapting to your audience",
+     "g": "Tailor messages for team members, peers and senior people.",
+     "p": [
+      "Think about what your listener already knows and cares about.",
+      "Give teammates detail, and give busy seniors the short version first.",
+      "Match the channel: quick chat, call or written note."
+     ],
+     "q": "Who in your life needs you to explain things differently?",
+     "c": "Explain one idea two ways today: in detail and in one sentence."
+    },
+    "de": {
+     "t": "Auf dein Publikum eingehen",
+     "g": "Botschaften für Teammitglieder, Kollegen und Vorgesetzte passend gestalten.",
+     "p": [
+      "Überlege, was dein Gegenüber schon weiß und was ihm wichtig ist.",
+      "Gib Kollegen Details und beschäftigten Vorgesetzten zuerst die Kurzfassung.",
+      "Wähle den passenden Kanal: kurzer Chat, Anruf oder schriftliche Notiz."
+     ],
+     "q": "Wer in deinem Leben braucht Erklärungen auf andere Art?",
+     "c": "Erkläre heute eine Idee auf zwei Arten: ausführlich und in einem Satz."
+    },
+    "es": {
+     "t": "Adaptarte a tu audiencia",
+     "g": "Adaptar los mensajes a miembros del equipo, colegas y superiores.",
+     "p": [
+      "Piensa en lo que tu oyente ya sabe y en lo que le importa.",
+      "Da detalle a tus compañeros y la versión corta primero a superiores ocupados.",
+      "Elige bien el canal: chat rápido, llamada o nota escrita."
+     ],
+     "q": "¿Quién en tu vida necesita que le expliques las cosas de otra manera?",
+     "c": "Explica hoy una idea de dos formas: con detalle y en una sola frase."
+    },
+    "fr": {
+     "t": "T'adapter à ton public",
+     "g": "Adapter tes messages aux membres de l'équipe, aux pairs et aux supérieurs.",
+     "p": [
+      "Pense à ce que ton interlocuteur sait déjà et à ce qui compte pour lui.",
+      "Donne du détail aux collègues, et la version courte aux supérieurs occupés.",
+      "Choisis le bon canal : message rapide, appel ou note écrite."
+     ],
+     "q": "Qui, dans ta vie, a besoin que tu expliques autrement ?",
+     "c": "Explique aujourd'hui une idée de deux façons : en détail et en une phrase."
+    },
+    "it": {
+     "t": "Adattarti al tuo pubblico",
+     "g": "Adattare i messaggi a membri del team, colleghi e superiori.",
+     "p": [
+      "Pensa a cosa il tuo ascoltatore sa già e a cosa gli importa.",
+      "Dai dettagli ai colleghi e prima la versione breve ai superiori impegnati.",
+      "Scegli il canale giusto: chat veloce, chiamata o nota scritta."
+     ],
+     "q": "Chi nella tua vita ha bisogno che tu spieghi in modo diverso?",
+     "c": "Spiega oggi un'idea in due modi: nel dettaglio e in una frase."
+    },
+    "pt": {
+     "t": "Adaptar-te ao teu público",
+     "g": "Adaptar mensagens a membros da equipa, colegas e superiores.",
+     "p": [
+      "Pensa no que o teu ouvinte já sabe e no que lhe importa.",
+      "Dá detalhes aos colegas e a versão curta primeiro aos superiores ocupados.",
+      "Escolhe bem o canal: chat rápido, chamada ou nota escrita."
+     ],
+     "q": "Quem na tua vida precisa que expliques as coisas de outra forma?",
+     "c": "Explica hoje uma ideia de duas formas: em detalhe e numa só frase."
+    },
+    "pt_BR": {
+     "t": "Adaptando-se ao seu público",
+     "g": "Adaptar mensagens a membros do time, colegas e superiores.",
+     "p": [
+      "Pense no que quem ouve já sabe e no que importa para essa pessoa.",
+      "Dê detalhes aos colegas e a versão curta primeiro aos superiores ocupados.",
+      "Escolha bem o canal: chat rápido, ligação ou nota escrita."
+     ],
+     "q": "Quem na sua vida precisa que você explique as coisas de outro jeito?",
+     "c": "Explique hoje uma ideia de duas formas: em detalhe e em uma frase."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sharing information openly",
+     "g": "Build transparency habits that keep the team informed and reduce rumours.",
+     "p": [
+      "Share what you can, as early as you can, and explain why.",
+      "When you cannot share something, say so instead of staying silent.",
+      "A short regular update beats a long surprise."
+     ],
+     "q": "How do you feel when you are kept in the dark?",
+     "c": "Send one short update to your team or group about what is happening."
+    },
+    "de": {
+     "t": "Informationen offen teilen",
+     "g": "Transparenz-Gewohnheiten aufbauen, die das Team informieren und Gerüchte mindern.",
+     "p": [
+      "Teile, was du kannst, so früh wie möglich, und erkläre warum.",
+      "Kannst du etwas nicht teilen, sag das, statt zu schweigen.",
+      "Ein kurzes regelmäßiges Update schlägt eine lange Überraschung."
+     ],
+     "q": "Wie fühlst du dich, wenn man dich im Unklaren lässt?",
+     "c": "Sende heute ein kurzes Update an dein Team oder deine Gruppe."
+    },
+    "es": {
+     "t": "Compartir información con apertura",
+     "g": "Crear hábitos de transparencia que informen al equipo y reduzcan rumores.",
+     "p": [
+      "Comparte lo que puedas, lo antes posible, y explica por qué.",
+      "Si no puedes compartir algo, dilo en vez de callar.",
+      "Una actualización breve y regular vale más que una sorpresa larga."
+     ],
+     "q": "¿Cómo te sientes cuando te dejan sin información?",
+     "c": "Envía hoy una breve actualización a tu equipo o grupo."
+    },
+    "fr": {
+     "t": "Partager l'information ouvertement",
+     "g": "Prendre des habitudes de transparence qui informent l'équipe et limitent les rumeurs.",
+     "p": [
+      "Partage ce que tu peux, le plus tôt possible, en expliquant pourquoi.",
+      "Si tu ne peux pas partager, dis-le plutôt que de te taire.",
+      "Un court point régulier vaut mieux qu'une longue surprise."
+     ],
+     "q": "Comment te sens-tu quand on te laisse dans le flou ?",
+     "c": "Envoie aujourd'hui un court point à ton équipe ou groupe."
+    },
+    "it": {
+     "t": "Condividere le informazioni con apertura",
+     "g": "Creare abitudini di trasparenza che informano il team e riducono le voci.",
+     "p": [
+      "Condividi ciò che puoi, il prima possibile, spiegando perché.",
+      "Se non puoi condividere qualcosa, dillo invece di tacere.",
+      "Un breve aggiornamento regolare vale più di una lunga sorpresa."
+     ],
+     "q": "Come ti senti quando ti lasciano all'oscuro?",
+     "c": "Invia oggi un breve aggiornamento al tuo team o gruppo."
+    },
+    "pt": {
+     "t": "Partilhar informação com abertura",
+     "g": "Criar hábitos de transparência que informam a equipa e reduzem boatos.",
+     "p": [
+      "Partilha o que puderes, o mais cedo possível, e explica porquê.",
+      "Se não puderes partilhar algo, di-lo em vez de ficares em silêncio.",
+      "Uma atualização curta e regular vale mais do que uma surpresa longa."
+     ],
+     "q": "Como te sentes quando te deixam às escuras?",
+     "c": "Envia hoje uma atualização curta à tua equipa ou grupo."
+    },
+    "pt_BR": {
+     "t": "Compartilhando informação com abertura",
+     "g": "Criar hábitos de transparência que informam o time e reduzem boatos.",
+     "p": [
+      "Compartilhe o que puder, o mais cedo possível, e explique por quê.",
+      "Se não puder compartilhar algo, diga isso em vez de ficar em silêncio.",
+      "Uma atualização curta e regular vale mais do que uma surpresa longa."
+     ],
+     "q": "Como você se sente quando deixam você no escuro?",
+     "c": "Envie hoje uma atualização curta ao seu time ou grupo."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Silence as a tool",
+     "g": "Allow pauses so others can think and speak.",
+     "p": [
+      "Most people need a few seconds to form a thoughtful answer.",
+      "After asking, count to five before you fill the quiet.",
+      "Silence invites quieter voices to join the conversation."
+     ],
+     "q": "How comfortable are you with pauses in a conversation?",
+     "c": "Ask one question today and wait five seconds before you speak again."
+    },
+    "de": {
+     "t": "Stille als Werkzeug",
+     "g": "Pausen zulassen, damit andere nachdenken und sprechen können.",
+     "p": [
+      "Die meisten brauchen ein paar Sekunden für eine durchdachte Antwort.",
+      "Zähle nach einer Frage bis fünf, bevor du die Stille füllst.",
+      "Stille lädt leisere Stimmen ins Gespräch ein."
+     ],
+     "q": "Wie wohl fühlst du dich mit Pausen im Gespräch?",
+     "c": "Stelle heute eine Frage und warte fünf Sekunden, bevor du weiterredest."
+    },
+    "es": {
+     "t": "El silencio como herramienta",
+     "g": "Permitir pausas para que otros piensen y hablen.",
+     "p": [
+      "La mayoría necesita unos segundos para dar una respuesta pensada.",
+      "Tras preguntar, cuenta hasta cinco antes de llenar el silencio.",
+      "El silencio invita a las voces más tranquilas a participar."
+     ],
+     "q": "¿Qué tan cómodo te sientes con las pausas en una conversación?",
+     "c": "Haz hoy una pregunta y espera cinco segundos antes de volver a hablar."
+    },
+    "fr": {
+     "t": "Le silence comme outil",
+     "g": "Laisser des pauses pour que les autres puissent réfléchir et parler.",
+     "p": [
+      "La plupart ont besoin de quelques secondes pour répondre avec réflexion.",
+      "Après une question, compte jusqu'à cinq avant de combler le silence.",
+      "Le silence invite les voix plus discrètes à se joindre."
+     ],
+     "q": "À quel point es-tu à l'aise avec les pauses dans une conversation ?",
+     "c": "Pose une question aujourd'hui et attends cinq secondes avant de reparler."
+    },
+    "it": {
+     "t": "Il silenzio come strumento",
+     "g": "Concedere pause perché gli altri possano pensare e parlare.",
+     "p": [
+      "La maggior parte ha bisogno di qualche secondo per una risposta ponderata.",
+      "Dopo una domanda, conta fino a cinque prima di riempire il silenzio.",
+      "Il silenzio invita le voci più tranquille a unirsi."
+     ],
+     "q": "Quanto ti senti a tuo agio con le pause in una conversazione?",
+     "c": "Fai oggi una domanda e aspetta cinque secondi prima di riparlare."
+    },
+    "pt": {
+     "t": "O silêncio como ferramenta",
+     "g": "Permitir pausas para que os outros pensem e falem.",
+     "p": [
+      "A maioria precisa de alguns segundos para uma resposta ponderada.",
+      "Depois de perguntares, conta até cinco antes de encheres o silêncio.",
+      "O silêncio convida as vozes mais discretas a participar."
+     ],
+     "q": "Quão à vontade te sentes com pausas numa conversa?",
+     "c": "Faz hoje uma pergunta e espera cinco segundos antes de voltares a falar."
+    },
+    "pt_BR": {
+     "t": "O silêncio como ferramenta",
+     "g": "Permitir pausas para que os outros pensem e falem.",
+     "p": [
+      "A maioria precisa de alguns segundos para uma resposta pensada.",
+      "Depois de perguntar, conte até cinco antes de preencher o silêncio.",
+      "O silêncio convida as vozes mais discretas a participar."
+     ],
+     "q": "Quão à vontade você fica com pausas numa conversa?",
+     "c": "Faça hoje uma pergunta e espere cinco segundos antes de voltar a falar."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: self-awareness and communication",
+     "g": "Revisit the first month and choose one listening habit to practise.",
+     "p": [
+      "Self-awareness: values, strengths, blind spots and calm responses.",
+      "Communication: listening, open questions, clarity and tone.",
+      "Choose one habit and make it small enough to repeat daily."
+     ],
+     "q": "Which lesson from this month changed how you act the most?",
+     "c": "Pick one listening habit and do it in every conversation tomorrow."
+    },
+    "de": {
+     "t": "Rückblick: Selbstkenntnis und Kommunikation",
+     "g": "Den ersten Monat wiederholen und eine Zuhör-Gewohnheit zum Üben wählen.",
+     "p": [
+      "Selbstkenntnis: Werte, Stärken, blinde Flecken und ruhige Reaktionen.",
+      "Kommunikation: Zuhören, offene Fragen, Klarheit und Tonfall.",
+      "Wähle eine Gewohnheit, klein genug für tägliches Wiederholen."
+     ],
+     "q": "Welche Lektion dieses Monats hat dein Handeln am meisten verändert?",
+     "c": "Wähle eine Zuhör-Gewohnheit und wende sie morgen in jedem Gespräch an."
+    },
+    "es": {
+     "t": "Repaso: autoconocimiento y comunicación",
+     "g": "Repasar el primer mes y elegir un hábito de escucha para practicar.",
+     "p": [
+      "Autoconocimiento: valores, fortalezas, puntos ciegos y respuestas tranquilas.",
+      "Comunicación: escucha, preguntas abiertas, claridad y tono.",
+      "Elige un hábito y hazlo tan pequeño que puedas repetirlo a diario."
+     ],
+     "q": "¿Qué lección de este mes cambió más tu forma de actuar?",
+     "c": "Elige un hábito de escucha y aplícalo mañana en cada conversación."
+    },
+    "fr": {
+     "t": "Révision : conscience de soi et communication",
+     "g": "Revoir le premier mois et choisir une habitude d'écoute à pratiquer.",
+     "p": [
+      "Conscience de soi : valeurs, forces, angles morts et réponses calmes.",
+      "Communication : écoute, questions ouvertes, clarté et ton.",
+      "Choisis une habitude assez petite pour la répéter chaque jour."
+     ],
+     "q": "Quelle leçon de ce mois a le plus changé ta façon d'agir ?",
+     "c": "Choisis une habitude d'écoute et applique-la demain à chaque conversation."
+    },
+    "it": {
+     "t": "Ripasso: consapevolezza di sé e comunicazione",
+     "g": "Ripassare il primo mese e scegliere un'abitudine di ascolto da praticare.",
+     "p": [
+      "Consapevolezza di sé: valori, punti di forza, punti ciechi e risposte calme.",
+      "Comunicazione: ascolto, domande aperte, chiarezza e tono.",
+      "Scegli un'abitudine abbastanza piccola da ripeterla ogni giorno."
+     ],
+     "q": "Quale lezione di questo mese ha cambiato di più il tuo modo di agire?",
+     "c": "Scegli un'abitudine di ascolto e applicala domani in ogni conversazione."
+    },
+    "pt": {
+     "t": "Revisão: autoconsciência e comunicação",
+     "g": "Rever o primeiro mês e escolher um hábito de escuta para praticar.",
+     "p": [
+      "Autoconsciência: valores, forças, pontos cegos e respostas calmas.",
+      "Comunicação: escuta, perguntas abertas, clareza e tom.",
+      "Escolhe um hábito pequeno o suficiente para repetires todos os dias."
+     ],
+     "q": "Que lição deste mês mudou mais a tua forma de agir?",
+     "c": "Escolhe um hábito de escuta e aplica-o amanhã em todas as conversas."
+    },
+    "pt_BR": {
+     "t": "Revisão: autoconsciência e comunicação",
+     "g": "Rever o primeiro mês e escolher um hábito de escuta para praticar.",
+     "p": [
+      "Autoconsciência: valores, forças, pontos cegos e respostas calmas.",
+      "Comunicação: escuta, perguntas abertas, clareza e tom.",
+      "Escolha um hábito pequeno o suficiente para repetir todos os dias."
+     ],
+     "q": "Que lição deste mês mudou mais seu jeito de agir?",
+     "c": "Escolha um hábito de escuta e aplique amanhã em todas as conversas."
+    }
+   }
+  }
+ ]
+}

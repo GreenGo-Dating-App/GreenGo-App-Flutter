@@ -1,0 +1,835 @@
+{
+"topic": "entrepreneurship",
+"lessons": [
+{
+"d": 51,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Freelancing as a business",
+"g": "Sell your skills directly to clients and run yourself like a company.",
+"p": [
+"A freelancer is a one-person business: skills, clients, schedule and reputation.",
+"Clear offers, clear deliverables and clear communication build trust.",
+"General education only; rules for freelancers differ by place, so check locally."
+],
+"q": "Which of your skills could someone else use help with?",
+"c": "Write a three-line service offer: what you do, for whom and the result."
+},
+"de": {
+"t": "Freiberuflichkeit als Unternehmen",
+"g": "Verkaufe dein Können direkt an Kunden und führe dich wie eine Firma.",
+"p": [
+"Ein Freiberufler ist ein Ein-Personen-Betrieb: Können, Kunden, Zeitplan, Ruf.",
+"Klare Angebote, klare Ergebnisse und klare Kommunikation schaffen Vertrauen.",
+"Nur allgemeine Bildung; Regeln für Freiberufler unterscheiden sich, prüfe vor Ort."
+],
+"q": "Bei welchen deiner Fähigkeiten könnte jemand Hilfe gebrauchen?",
+"c": "Schreib ein Dreizeilen-Angebot: was du tust, für wen und mit welchem Ergebnis."
+},
+"es": {
+"t": "Ser freelance como negocio",
+"g": "Vende tus habilidades directamente a clientes y gestiónate como una empresa.",
+"p": [
+"Un freelance es un negocio de una persona: habilidades, clientes, agenda y reputación.",
+"Ofertas claras, entregables claros y buena comunicación generan confianza.",
+"Solo educación general; las reglas para autónomos varían por lugar, consulta localmente."
+],
+"q": "¿En cuál de tus habilidades podría alguien necesitar ayuda?",
+"c": "Escribe una oferta de tres líneas: qué haces, para quién y con qué resultado."
+},
+"fr": {
+"t": "Le freelance comme entreprise",
+"g": "Vends tes compétences directement à des clients et dirige-toi comme une entreprise.",
+"p": [
+"Un freelance est une entreprise d'une personne : compétences, clients, agenda, réputation.",
+"Des offres claires, des livrables clairs et une bonne communication créent la confiance.",
+"Éducation générale seulement; les règles varient selon le lieu, renseigne-toi localement."
+],
+"q": "Pour laquelle de tes compétences quelqu'un pourrait-il avoir besoin d'aide ?",
+"c": "Rédige une offre en trois lignes : ce que tu fais, pour qui et le résultat."
+},
+"it": {
+"t": "Fare il freelance come impresa",
+"g": "Vendi le tue competenze direttamente ai clienti e gestisciti come un'azienda.",
+"p": [
+"Un freelance è un'impresa di una persona: competenze, clienti, agenda e reputazione.",
+"Offerte chiare, risultati chiari e buona comunicazione creano fiducia.",
+"Solo formazione generale; le regole per i freelance variano, informati localmente."
+],
+"q": "Per quale tua competenza qualcuno potrebbe aver bisogno di aiuto?",
+"c": "Scrivi un'offerta in tre righe: cosa fai, per chi e con quale risultato."
+},
+"pt": {
+"t": "Ser freelancer como negócio",
+"g": "Vende as tuas competências diretamente a clientes e gere-te como uma empresa.",
+"p": [
+"Um freelancer é um negócio de uma pessoa: competências, clientes, agenda e reputação.",
+"Ofertas claras, entregas claras e boa comunicação criam confiança.",
+"Só educação geral; as regras para freelancers variam, informa-te localmente."
+],
+"q": "Em qual das tuas competências poderia alguém precisar de ajuda?",
+"c": "Escreve uma oferta de três linhas: o que fazes, para quem e com que resultado."
+},
+"pt_BR": {
+"t": "Ser freelancer como negócio",
+"g": "Venda suas habilidades diretamente a clientes e gerencie-se como uma empresa.",
+"p": [
+"Um freelancer é um negócio de uma pessoa: habilidades, clientes, agenda e reputação.",
+"Ofertas claras, entregas claras e boa comunicação criam confiança.",
+"Apenas educação geral; as regras para freelancers variam, informe-se localmente."
+],
+"q": "Em qual das suas habilidades alguém poderia precisar de ajuda?",
+"c": "Escreva uma oferta de três linhas: o que você faz, para quem e com que resultado."
+}
+}
+},
+{
+"d": 52,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "The idea of a startup",
+"g": "See what makes a startup different: searching for a repeatable, scalable model.",
+"p": [
+"A startup is a young company searching for a model that can repeat and grow.",
+"Not every business is a startup; a local shop can be great without scaling.",
+"Startups test fast, learn fast and accept that early plans often change."
+],
+"q": "Would you rather build something steady or something that could scale widely?",
+"c": "Write whether your idea is more a steady business or a scalable startup, and why."
+},
+"de": {
+"t": "Die Idee des Start-ups",
+"g": "Sieh, was ein Start-up ausmacht: die Suche nach einem wiederholbaren, skalierbaren Modell.",
+"p": [
+"Ein Start-up ist eine junge Firma, die ein Modell sucht, das sich wiederholen und wachsen lässt.",
+"Nicht jedes Unternehmen ist ein Start-up; ein lokaler Laden kann ohne Skalierung großartig sein.",
+"Start-ups testen schnell, lernen schnell und akzeptieren, dass Pläne sich oft ändern."
+],
+"q": "Würdest du lieber etwas Stetiges oder etwas breit Skalierbares aufbauen?",
+"c": "Schreib, ob deine Idee eher stetiges Geschäft oder skalierbares Start-up ist, und warum."
+},
+"es": {
+"t": "La idea de startup",
+"g": "Descubre qué distingue a una startup: buscar un modelo repetible y escalable.",
+"p": [
+"Una startup es una empresa joven que busca un modelo que se pueda repetir y crecer.",
+"No todo negocio es una startup; una tienda local puede ser genial sin escalar.",
+"Las startups prueban rápido, aprenden rápido y aceptan que los planes cambian."
+],
+"q": "¿Preferirías construir algo estable o algo que pueda escalar mucho?",
+"c": "Escribe si tu idea es más un negocio estable o una startup escalable, y por qué."
+},
+"fr": {
+"t": "L'idée de startup",
+"g": "Vois ce qui distingue une startup : la recherche d'un modèle reproductible et extensible.",
+"p": [
+"Une startup est une jeune entreprise qui cherche un modèle capable de se répéter et de grandir.",
+"Toute entreprise n'est pas une startup; un commerce local peut être excellent sans passer à l'échelle.",
+"Les startups testent vite, apprennent vite et acceptent que les plans changent."
+],
+"q": "Préfères-tu bâtir quelque chose de stable ou de très extensible ?",
+"c": "Écris si ton idée est plutôt une entreprise stable ou une startup extensible, et pourquoi."
+},
+"it": {
+"t": "L'idea di startup",
+"g": "Scopri cosa distingue una startup: la ricerca di un modello ripetibile e scalabile.",
+"p": [
+"Una startup è un'impresa giovane che cerca un modello che si possa ripetere e crescere.",
+"Non ogni impresa è una startup; un negozio locale può essere ottimo senza scalare.",
+"Le startup testano in fretta, imparano in fretta e accettano che i piani cambino."
+],
+"q": "Preferiresti costruire qualcosa di stabile o qualcosa di molto scalabile?",
+"c": "Scrivi se la tua idea è più un'impresa stabile o una startup scalabile, e perché."
+},
+"pt": {
+"t": "A ideia de startup",
+"g": "Vê o que distingue uma startup: a procura de um modelo repetível e escalável.",
+"p": [
+"Uma startup é uma empresa jovem à procura de um modelo que se possa repetir e crescer.",
+"Nem todo o negócio é uma startup; uma loja local pode ser ótima sem escalar.",
+"As startups testam depressa, aprendem depressa e aceitam que os planos mudam."
+],
+"q": "Preferias construir algo estável ou algo que possa escalar muito?",
+"c": "Escreve se a tua ideia é mais um negócio estável ou uma startup escalável, e porquê."
+},
+"pt_BR": {
+"t": "A ideia de startup",
+"g": "Veja o que distingue uma startup: a busca por um modelo repetível e escalável.",
+"p": [
+"Uma startup é uma empresa jovem em busca de um modelo que possa se repetir e crescer.",
+"Nem todo negócio é uma startup; uma loja local pode ser ótima sem escalar.",
+"Startups testam rápido, aprendem rápido e aceitam que os planos mudam."
+],
+"q": "Você preferiria construir algo estável ou algo que possa escalar bastante?",
+"c": "Escreva se a sua ideia é mais um negócio estável ou uma startup escalável, e por quê."
+}
+}
+},
+{
+"d": 53,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Bootstrapping",
+"g": "Grow a business with its own earnings instead of outside money.",
+"p": [
+"Bootstrapping means funding growth from sales and savings, step by step.",
+"It keeps control and forces focus on what customers truly pay for.",
+"Growth may be slower, so patience and low costs are your friends."
+],
+"q": "What could you start with almost no budget by using what you already have?",
+"c": "List five things you already own or know that could launch your idea cheaply."
+},
+"de": {
+"t": "Bootstrapping",
+"g": "Wachse mit eigenen Einnahmen statt mit fremdem Geld.",
+"p": [
+"Bootstrapping heißt, Wachstum aus Verkäufen und Ersparnissen Schritt für Schritt zu finanzieren.",
+"Es behält die Kontrolle und zwingt zum Fokus auf das, wofür Kunden wirklich zahlen.",
+"Wachstum kann langsamer sein, daher sind Geduld und niedrige Kosten deine Freunde."
+],
+"q": "Was könntest du fast ohne Budget mit dem starten, was du schon hast?",
+"c": "Liste fünf Dinge, die du hast oder kannst und die deine Idee günstig starten könnten."
+},
+"es": {
+"t": "Bootstrapping",
+"g": "Haz crecer un negocio con sus propios ingresos en lugar de dinero externo.",
+"p": [
+"Bootstrapping es financiar el crecimiento con ventas y ahorros, paso a paso.",
+"Mantiene el control y obliga a centrarse en lo que el cliente de verdad paga.",
+"El crecimiento puede ser más lento, así que la paciencia y los costes bajos ayudan."
+],
+"q": "¿Qué podrías empezar casi sin presupuesto con lo que ya tienes?",
+"c": "Lista cinco cosas que ya tienes o sabes y que podrían lanzar tu idea con poco gasto."
+},
+"fr": {
+"t": "Le bootstrapping",
+"g": "Fais grandir une entreprise avec ses propres revenus plutôt que de l'argent extérieur.",
+"p": [
+"Le bootstrapping consiste à financer la croissance par les ventes et l'épargne, pas à pas.",
+"Il garde le contrôle et impose de se concentrer sur ce que les clients paient vraiment.",
+"La croissance peut être plus lente; patience et coûts bas sont tes alliés."
+],
+"q": "Que pourrais-tu lancer presque sans budget avec ce que tu as déjà ?",
+"c": "Liste cinq choses que tu as ou sais et qui pourraient lancer ton idée à petit prix."
+},
+"it": {
+"t": "Il bootstrapping",
+"g": "Fai crescere un'impresa con i suoi guadagni invece che con denaro esterno.",
+"p": [
+"Bootstrapping significa finanziare la crescita con vendite e risparmi, passo dopo passo.",
+"Mantiene il controllo e obbliga a concentrarsi su ciò per cui i clienti pagano davvero.",
+"La crescita può essere più lenta, perciò pazienza e costi bassi sono alleati."
+],
+"q": "Cosa potresti avviare quasi senza budget con ciò che hai già?",
+"c": "Elenca cinque cose che hai o sai e che potrebbero lanciare la tua idea a basso costo."
+},
+"pt": {
+"t": "Bootstrapping",
+"g": "Faz crescer um negócio com os seus próprios ganhos em vez de dinheiro externo.",
+"p": [
+"Bootstrapping é financiar o crescimento com vendas e poupanças, passo a passo.",
+"Mantém o controlo e obriga a focar no que os clientes realmente pagam.",
+"O crescimento pode ser mais lento, por isso paciência e custos baixos ajudam."
+],
+"q": "O que podias começar quase sem orçamento com o que já tens?",
+"c": "Lista cinco coisas que já tens ou sabes e que lançariam a tua ideia a baixo custo."
+},
+"pt_BR": {
+"t": "Bootstrapping",
+"g": "Faça um negócio crescer com os próprios ganhos em vez de dinheiro externo.",
+"p": [
+"Bootstrapping é financiar o crescimento com vendas e economias, passo a passo.",
+"Mantém o controle e obriga a focar no que os clientes realmente pagam.",
+"O crescimento pode ser mais lento, então paciência e custos baixos ajudam."
+],
+"q": "O que você poderia começar quase sem orçamento com o que já tem?",
+"c": "Liste cinco coisas que você já tem ou sabe e que lançariam a sua ideia a baixo custo."
+}
+}
+},
+{
+"d": 54,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Cooperatives",
+"g": "Meet businesses owned and run by their members, and how decisions are shared.",
+"p": [
+"A cooperative is owned by the people who use it, work in it or both.",
+"Members usually have an equal voice, often one member, one vote.",
+"Shared ownership builds community, but decisions can take more discussion."
+],
+"q": "What would you want to run together with others rather than alone?",
+"c": "Think of one service your neighbours could run as a cooperative and why."
+},
+"de": {
+"t": "Genossenschaften",
+"g": "Lerne Unternehmen kennen, die ihren Mitgliedern gehören und von ihnen geführt werden.",
+"p": [
+"Eine Genossenschaft gehört denen, die sie nutzen, in ihr arbeiten oder beides.",
+"Mitglieder haben meist gleiches Gewicht, oft ein Mitglied, eine Stimme.",
+"Gemeinsames Eigentum stärkt die Gemeinschaft, doch Entscheidungen brauchen mehr Austausch."
+],
+"q": "Was würdest du gern gemeinsam mit anderen statt allein betreiben?",
+"c": "Überlege einen Service, den Nachbarn als Genossenschaft betreiben könnten, und warum."
+},
+"es": {
+"t": "Cooperativas",
+"g": "Conoce negocios que pertenecen a sus miembros y cómo se comparten las decisiones.",
+"p": [
+"Una cooperativa pertenece a quienes la usan, trabajan en ella o ambas cosas.",
+"Los miembros suelen tener la misma voz, a menudo un miembro, un voto.",
+"La propiedad compartida crea comunidad, pero decidir puede requerir más diálogo."
+],
+"q": "¿Qué te gustaría gestionar junto a otros en vez de solo?",
+"c": "Piensa en un servicio que tus vecinos podrían gestionar como cooperativa y por qué."
+},
+"fr": {
+"t": "Les coopératives",
+"g": "Découvre des entreprises détenues et dirigées par leurs membres, et comment les décisions se partagent.",
+"p": [
+"Une coopérative appartient à ceux qui l'utilisent, y travaillent ou les deux.",
+"Les membres ont généralement une voix égale, souvent un membre, une voix.",
+"La propriété partagée crée du lien, mais décider demande plus de discussion."
+],
+"q": "Qu'aimerais-tu gérer avec d'autres plutôt que seul ?",
+"c": "Imagine un service que tes voisins pourraient gérer en coopérative et pourquoi."
+},
+"it": {
+"t": "Le cooperative",
+"g": "Conosci imprese possedute e gestite dai soci e come si condividono le decisioni.",
+"p": [
+"Una cooperativa appartiene a chi la usa, ci lavora o entrambi.",
+"I soci hanno di solito pari voce, spesso un socio, un voto.",
+"La proprietà condivisa crea comunità, ma decidere può richiedere più confronto."
+],
+"q": "Cosa ti piacerebbe gestire insieme ad altri invece che da solo?",
+"c": "Pensa a un servizio che i vicini potrebbero gestire come cooperativa e perché."
+},
+"pt": {
+"t": "Cooperativas",
+"g": "Conhece negócios pertencentes aos seus membros e como as decisões são partilhadas.",
+"p": [
+"Uma cooperativa pertence a quem a usa, nela trabalha ou ambos.",
+"Os membros têm normalmente igual voz, muitas vezes um membro, um voto.",
+"A propriedade partilhada cria comunidade, mas decidir pode exigir mais conversa."
+],
+"q": "O que gostavas de gerir com outros em vez de sozinho?",
+"c": "Pensa num serviço que os teus vizinhos poderiam gerir como cooperativa e porquê."
+},
+"pt_BR": {
+"t": "Cooperativas",
+"g": "Conheça negócios pertencentes aos seus membros e como as decisões são compartilhadas.",
+"p": [
+"Uma cooperativa pertence a quem a usa, trabalha nela ou ambos.",
+"Os membros normalmente têm voz igual, muitas vezes um membro, um voto.",
+"A propriedade compartilhada cria comunidade, mas decidir pode exigir mais conversa."
+],
+"q": "O que você gostaria de gerir junto com outros em vez de sozinho?",
+"c": "Pense num serviço que seus vizinhos poderiam gerir como cooperativa e por quê."
+}
+}
+},
+{
+"d": 55,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Business models around the world",
+"g": "See how street markets, family shops and online stores differ by culture.",
+"p": [
+"Markets, bazaars, corner shops and apps meet the same need in different ways.",
+"Culture shapes trust, bargaining, payment habits and how people shop.",
+"Learning other models gives you new ideas and respect for local ways."
+],
+"q": "What is the most interesting way of shopping you have seen in another place?",
+"c": "Compare one local way of buying something with one from another country."
+},
+"de": {
+"t": "Geschäftsmodelle weltweit",
+"g": "Sieh, wie Straßenmärkte, Familienläden und Onlineshops je nach Kultur variieren.",
+"p": [
+"Märkte, Basare, Tante-Emma-Läden und Apps decken dasselbe Bedürfnis verschieden ab.",
+"Kultur prägt Vertrauen, Feilschen, Zahlungsgewohnheiten und Einkaufsweisen.",
+"Andere Modelle zu kennen gibt neue Ideen und Respekt vor lokalen Wegen."
+],
+"q": "Was war die interessanteste Art des Einkaufens, die du anderswo gesehen hast?",
+"c": "Vergleiche eine lokale Art des Einkaufs mit einer aus einem anderen Land."
+},
+"es": {
+"t": "Modelos de negocio en el mundo",
+"g": "Mira cómo mercados callejeros, tiendas familiares y tiendas en línea varían según la cultura.",
+"p": [
+"Mercados, bazares, tiendas de barrio y apps cubren la misma necesidad de distinto modo.",
+"La cultura moldea la confianza, el regateo, los hábitos de pago y cómo se compra.",
+"Conocer otros modelos da ideas nuevas y respeto por las costumbres locales."
+],
+"q": "¿Cuál es la forma de comprar más interesante que has visto en otro lugar?",
+"c": "Compara una forma local de comprar algo con una de otro país."
+},
+"fr": {
+"t": "Modèles d'affaires dans le monde",
+"g": "Vois comment marchés de rue, boutiques familiales et sites en ligne varient selon les cultures.",
+"p": [
+"Marchés, bazars, épiceries de quartier et applis répondent au même besoin autrement.",
+"La culture façonne confiance, marchandage, habitudes de paiement et façons d'acheter.",
+"Connaître d'autres modèles donne des idées neuves et du respect pour les usages locaux."
+],
+"q": "Quelle façon d'acheter la plus intéressante as-tu vue ailleurs ?",
+"c": "Compare une façon locale d'acheter quelque chose avec une d'un autre pays."
+},
+"it": {
+"t": "Modelli di business nel mondo",
+"g": "Scopri come mercati di strada, negozi di famiglia e shop online cambiano con la cultura.",
+"p": [
+"Mercati, bazar, negozi di quartiere e app soddisfano lo stesso bisogno in modi diversi.",
+"La cultura plasma fiducia, contrattazione, abitudini di pagamento e modi di comprare.",
+"Conoscere altri modelli dà idee nuove e rispetto per le usanze locali."
+],
+"q": "Qual è il modo di fare acquisti più interessante che hai visto altrove?",
+"c": "Confronta un modo locale di comprare qualcosa con uno di un altro paese."
+},
+"pt": {
+"t": "Modelos de negócio pelo mundo",
+"g": "Vê como mercados de rua, lojas de família e lojas online variam com a cultura.",
+"p": [
+"Mercados, bazares, mercearias e apps respondem à mesma necessidade de formas diferentes.",
+"A cultura molda a confiança, o regateio, os hábitos de pagamento e o modo de comprar.",
+"Conhecer outros modelos dá ideias novas e respeito pelas formas locais."
+],
+"q": "Qual foi a forma de comprar mais interessante que viste noutro lugar?",
+"c": "Compara uma forma local de comprar algo com uma de outro país."
+},
+"pt_BR": {
+"t": "Modelos de negócio pelo mundo",
+"g": "Veja como feiras de rua, lojas de família e lojas online variam com a cultura.",
+"p": [
+"Feiras, bazares, vendinhas e apps atendem à mesma necessidade de formas diferentes.",
+"A cultura molda a confiança, a pechincha, os hábitos de pagamento e o jeito de comprar.",
+"Conhecer outros modelos dá ideias novas e respeito pelas formas locais."
+],
+"q": "Qual foi o jeito de comprar mais interessante que você viu em outro lugar?",
+"c": "Compare um jeito local de comprar algo com um de outro país."
+}
+}
+},
+{
+"d": 56,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Sketching your own model",
+"g": "Fill a simple canvas for an idea you care about.",
+"p": [
+"Pick one idea and fill the nine blocks in pencil, a few words each.",
+"Start with customer and value, then work around to costs and partners.",
+"Mark blank or uncertain boxes; those are your next things to learn."
+],
+"q": "Which box was easiest to fill, and which one stopped you?",
+"c": "Complete a full nine-box canvas for your idea and star the three weakest boxes."
+},
+"de": {
+"t": "Dein eigenes Modell skizzieren",
+"g": "Fülle ein einfaches Canvas für eine Idee, die dir wichtig ist.",
+"p": [
+"Wähle eine Idee und fülle die neun Bausteine mit Bleistift, je wenige Worte.",
+"Beginne mit Kunde und Nutzen, dann arbeite dich zu Kosten und Partnern vor.",
+"Markiere leere oder unsichere Kästen; sie sind dein nächstes Lernziel."
+],
+"q": "Welcher Kasten war am leichtesten zu füllen, welcher hat dich gestoppt?",
+"c": "Fülle ein vollständiges Neun-Felder-Canvas für deine Idee und markiere die drei schwächsten."
+},
+"es": {
+"t": "Esbozar tu propio modelo",
+"g": "Rellena un lienzo sencillo para una idea que te importe.",
+"p": [
+"Elige una idea y rellena los nueve bloques a lápiz, pocas palabras en cada uno.",
+"Empieza por cliente y valor, y luego avanza hacia costes y socios.",
+"Marca las cajas vacías o inciertas; son lo próximo que aprender."
+],
+"q": "¿Qué caja fue la más fácil de rellenar y cuál te frenó?",
+"c": "Completa un lienzo de nueve cajas para tu idea y marca las tres más débiles."
+},
+"fr": {
+"t": "Esquisser ton propre modèle",
+"g": "Remplis un canevas simple pour une idée qui te tient à cœur.",
+"p": [
+"Choisis une idée et remplis les neuf blocs au crayon, quelques mots chacun.",
+"Commence par client et valeur, puis avance vers coûts et partenaires.",
+"Marque les cases vides ou incertaines; ce sont tes prochains apprentissages."
+],
+"q": "Quelle case était la plus facile à remplir, et laquelle t'a bloqué ?",
+"c": "Complète un canevas de neuf cases pour ton idée et marque les trois plus faibles."
+},
+"it": {
+"t": "Abbozzare il tuo modello",
+"g": "Compila una tela semplice per un'idea a cui tieni.",
+"p": [
+"Scegli un'idea e compila i nove blocchi a matita, poche parole ciascuno.",
+"Parti da cliente e valore, poi procedi verso costi e partner.",
+"Segna le caselle vuote o incerte; sono le prossime cose da imparare."
+],
+"q": "Quale casella è stata più facile da compilare e quale ti ha bloccato?",
+"c": "Completa una tela di nove caselle per la tua idea e segna le tre più deboli."
+},
+"pt": {
+"t": "Esboçar o teu próprio modelo",
+"g": "Preenche uma tela simples para uma ideia que te importe.",
+"p": [
+"Escolhe uma ideia e preenche os nove blocos a lápis, poucas palavras em cada.",
+"Começa por cliente e valor, depois avança para custos e parceiros.",
+"Marca as caixas vazias ou incertas; são o que aprender a seguir."
+],
+"q": "Que caixa foi mais fácil de preencher e qual te travou?",
+"c": "Completa uma tela de nove caixas para a tua ideia e marca as três mais fracas."
+},
+"pt_BR": {
+"t": "Esboçar o seu próprio modelo",
+"g": "Preencha uma tela simples para uma ideia que importa para você.",
+"p": [
+"Escolha uma ideia e preencha os nove blocos a lápis, poucas palavras em cada.",
+"Comece por cliente e valor, depois avance para custos e parceiros.",
+"Marque as caixas vazias ou incertas; são o que aprender a seguir."
+],
+"q": "Qual caixa foi a mais fácil de preencher e qual travou você?",
+"c": "Complete uma tela de nove caixas para a sua ideia e marque as três mais fracas."
+}
+}
+},
+{
+"d": 57,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Comparing two business models",
+"g": "Study two businesses in the same field that earn money differently.",
+"p": [
+"Pick two businesses in one field, like two bakeries or two fitness brands.",
+"Compare customers, channels, revenue and costs side by side.",
+"Differences show there is more than one way to serve the same need."
+],
+"q": "Which of the two models would you rather run, and why?",
+"c": "Fill a short table comparing two businesses on customer, revenue and channel."
+},
+"de": {
+"t": "Zwei Geschäftsmodelle vergleichen",
+"g": "Untersuche zwei Unternehmen derselben Branche, die anders Geld verdienen.",
+"p": [
+"Wähle zwei Unternehmen einer Branche, etwa zwei Bäckereien oder Fitnessmarken.",
+"Vergleiche Kunden, Kanäle, Einnahmen und Kosten nebeneinander.",
+"Unterschiede zeigen, dass es mehr als einen Weg gibt, dasselbe Bedürfnis zu bedienen."
+],
+"q": "Welches der beiden Modelle würdest du lieber führen, und warum?",
+"c": "Fülle eine kurze Tabelle, die zwei Unternehmen nach Kunde, Einnahmen und Kanal vergleicht."
+},
+"es": {
+"t": "Comparar dos modelos de negocio",
+"g": "Estudia dos negocios del mismo sector que ganan dinero de forma distinta.",
+"p": [
+"Elige dos negocios de un sector, como dos panaderías o dos marcas de fitness.",
+"Compara clientes, canales, ingresos y costes lado a lado.",
+"Las diferencias muestran que hay más de una forma de atender la misma necesidad."
+],
+"q": "¿Cuál de los dos modelos preferirías dirigir y por qué?",
+"c": "Rellena una tabla corta que compare dos negocios en cliente, ingresos y canal."
+},
+"fr": {
+"t": "Comparer deux modèles d'affaires",
+"g": "Étudie deux entreprises du même secteur qui gagnent de l'argent différemment.",
+"p": [
+"Choisis deux entreprises d'un même secteur, comme deux boulangeries ou deux marques de sport.",
+"Compare clients, canaux, revenus et coûts côte à côte.",
+"Les différences montrent qu'il existe plus d'une façon de servir le même besoin."
+],
+"q": "Lequel des deux modèles préférerais-tu diriger, et pourquoi ?",
+"c": "Remplis un court tableau comparant deux entreprises sur client, revenu et canal."
+},
+"it": {
+"t": "Confrontare due modelli di business",
+"g": "Studia due imprese dello stesso settore che guadagnano in modo diverso.",
+"p": [
+"Scegli due imprese di un settore, come due panifici o due marchi di fitness.",
+"Confronta clienti, canali, ricavi e costi fianco a fianco.",
+"Le differenze mostrano che c'è più di un modo di servire lo stesso bisogno."
+],
+"q": "Quale dei due modelli preferiresti gestire e perché?",
+"c": "Compila una breve tabella che confronta due imprese su cliente, ricavi e canale."
+},
+"pt": {
+"t": "Comparar dois modelos de negócio",
+"g": "Estuda dois negócios do mesmo setor que ganham dinheiro de forma diferente.",
+"p": [
+"Escolhe dois negócios de um setor, como duas padarias ou duas marcas de fitness.",
+"Compara clientes, canais, receitas e custos lado a lado.",
+"As diferenças mostram que há mais do que uma forma de servir a mesma necessidade."
+],
+"q": "Qual dos dois modelos preferias gerir e porquê?",
+"c": "Preenche uma tabela curta que compare dois negócios em cliente, receita e canal."
+},
+"pt_BR": {
+"t": "Comparar dois modelos de negócio",
+"g": "Estude dois negócios do mesmo setor que ganham dinheiro de formas diferentes.",
+"p": [
+"Escolha dois negócios de um setor, como duas padarias ou duas marcas de fitness.",
+"Compare clientes, canais, receitas e custos lado a lado.",
+"As diferenças mostram que há mais de um jeito de atender à mesma necessidade."
+],
+"q": "Qual dos dois modelos você preferiria gerir e por quê?",
+"c": "Preencha uma tabela curta comparando dois negócios em cliente, receita e canal."
+}
+}
+},
+{
+"d": 58,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "What makes a model work",
+"g": "Spot the link between customer value and a sustainable business.",
+"p": [
+"A model works when customers value the offer enough to keep paying for it.",
+"It also needs income to cover the work and resources behind the offer.",
+"Check the loop: value delivered, value paid for, value reinvested."
+],
+"q": "What is one business you trust to still be around in ten years, and why?",
+"c": "Test your idea with the loop: who benefits, who pays and what keeps it going?"
+},
+"de": {
+"t": "Was ein Modell tragfähig macht",
+"g": "Erkenne die Verbindung zwischen Kundennutzen und einem nachhaltigen Unternehmen.",
+"p": [
+"Ein Modell funktioniert, wenn Kunden das Angebot genug schätzen, um weiter zu zahlen.",
+"Es braucht auch Einnahmen, die Arbeit und Ressourcen hinter dem Angebot decken.",
+"Prüfe den Kreislauf: gelieferter Nutzen, bezahlter Nutzen, reinvestierter Nutzen."
+],
+"q": "Welchem Unternehmen traust du zu, in zehn Jahren noch da zu sein, und warum?",
+"c": "Prüfe deine Idee am Kreislauf: Wer profitiert, wer zahlt, was hält es am Laufen?"
+},
+"es": {
+"t": "Qué hace que un modelo funcione",
+"g": "Detecta el vínculo entre el valor para el cliente y un negocio sostenible.",
+"p": [
+"Un modelo funciona cuando los clientes valoran tanto la oferta que siguen pagando.",
+"También necesita ingresos que cubran el trabajo y los recursos tras la oferta.",
+"Comprueba el ciclo: valor entregado, valor pagado, valor reinvertido."
+],
+"q": "¿Qué negocio confías que seguirá aquí en diez años y por qué?",
+"c": "Prueba tu idea con el ciclo: ¿quién se beneficia, quién paga y qué la mantiene?"
+},
+"fr": {
+"t": "Ce qui fait qu'un modèle fonctionne",
+"g": "Repère le lien entre la valeur pour le client et une entreprise durable.",
+"p": [
+"Un modèle fonctionne quand les clients apprécient assez l'offre pour continuer de payer.",
+"Il faut aussi des revenus qui couvrent le travail et les ressources derrière l'offre.",
+"Vérifie la boucle : valeur délivrée, valeur payée, valeur réinvestie."
+],
+"q": "Quelle entreprise sera encore là dans dix ans selon toi, et pourquoi ?",
+"c": "Teste ton idée avec la boucle : qui profite, qui paie et qu'est-ce qui la fait durer ?"
+},
+"it": {
+"t": "Cosa fa funzionare un modello",
+"g": "Individua il legame tra valore per il cliente e un'impresa sostenibile.",
+"p": [
+"Un modello funziona quando i clienti apprezzano l'offerta abbastanza da continuare a pagare.",
+"Servono anche ricavi che coprano il lavoro e le risorse dietro l'offerta.",
+"Controlla il ciclo: valore consegnato, valore pagato, valore reinvestito."
+],
+"q": "Di quale impresa ti fidi che esisterà ancora fra dieci anni, e perché?",
+"c": "Prova la tua idea con il ciclo: chi ne beneficia, chi paga e cosa la mantiene?"
+},
+"pt": {
+"t": "O que faz um modelo funcionar",
+"g": "Identifica a ligação entre o valor para o cliente e um negócio sustentável.",
+"p": [
+"Um modelo funciona quando os clientes valorizam a oferta o bastante para continuar a pagar.",
+"Precisa também de receitas que cubram o trabalho e os recursos por trás da oferta.",
+"Verifica o ciclo: valor entregue, valor pago, valor reinvestido."
+],
+"q": "Que negócio acreditas que ainda existirá daqui a dez anos e porquê?",
+"c": "Testa a tua ideia com o ciclo: quem beneficia, quem paga e o que a mantém?"
+},
+"pt_BR": {
+"t": "O que faz um modelo funcionar",
+"g": "Identifique a ligação entre o valor para o cliente e um negócio sustentável.",
+"p": [
+"Um modelo funciona quando os clientes valorizam a oferta o bastante para continuar pagando.",
+"Precisa também de receitas que cubram o trabalho e os recursos por trás da oferta.",
+"Verifique o ciclo: valor entregue, valor pago, valor reinvestido."
+],
+"q": "Que negócio você acredita que ainda existirá daqui a dez anos e por quê?",
+"c": "Teste a sua ideia com o ciclo: quem se beneficia, quem paga e o que a mantém?"
+}
+}
+},
+{
+"d": 59,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Common beginner model mistakes",
+"g": "Spot early traps like too many customers at once and unclear value.",
+"p": [
+"Trying to serve everyone usually means serving no one well.",
+"Vague value, no real customer contact and ignoring costs are common traps.",
+"Spotting a trap early is a win; fix it with a small test or a simpler focus."
+],
+"q": "Which of these traps could you most easily fall into, and how would you notice?",
+"c": "Review your canvas and circle one trap that might apply, then plan one fix."
+},
+"de": {
+"t": "Häufige Modellfehler von Anfängern",
+"g": "Erkenne frühe Fallen wie zu viele Kunden gleichzeitig und unklaren Nutzen.",
+"p": [
+"Wer allen dienen will, dient meist niemandem gut.",
+"Vager Nutzen, kein echter Kundenkontakt und ignorierte Kosten sind häufige Fallen.",
+"Eine Falle früh zu erkennen ist ein Gewinn; behebe sie mit kleinem Test oder klarerem Fokus."
+],
+"q": "In welche dieser Fallen könntest du am leichtesten tappen, und wie würdest du es merken?",
+"c": "Prüfe dein Canvas, kreise eine mögliche Falle ein und plane eine Lösung."
+},
+"es": {
+"t": "Errores comunes de modelo al empezar",
+"g": "Detecta trampas tempranas como querer muchos clientes a la vez y un valor poco claro.",
+"p": [
+"Intentar atender a todos suele significar no atender bien a nadie.",
+"Valor vago, ningún contacto real con clientes e ignorar costes son trampas habituales.",
+"Detectar una trampa pronto es una victoria; arréglala con una prueba pequeña o más foco."
+],
+"q": "¿En cuál de estas trampas caerías más fácilmente y cómo lo notarías?",
+"c": "Revisa tu lienzo, rodea una trampa posible y planea un arreglo."
+},
+"fr": {
+"t": "Erreurs fréquentes de modèle au début",
+"g": "Repère les pièges précoces comme viser trop de clients et une valeur floue.",
+"p": [
+"Vouloir servir tout le monde revient souvent à ne bien servir personne.",
+"Valeur vague, absence de vrai contact client et coûts ignorés sont des pièges courants.",
+"Repérer un piège tôt est une victoire; corrige-le par un petit test ou un focus plus net."
+],
+"q": "Dans lequel de ces pièges tomberais-tu le plus facilement, et comment le verrais-tu ?",
+"c": "Relis ton canevas, entoure un piège possible et prévois une correction."
+},
+"it": {
+"t": "Errori comuni di modello all'inizio",
+"g": "Individua trappole iniziali come troppi clienti insieme e valore poco chiaro.",
+"p": [
+"Voler servire tutti di solito significa non servire bene nessuno.",
+"Valore vago, nessun vero contatto con i clienti e costi ignorati sono trappole comuni.",
+"Individuare una trappola presto è una vittoria; correggila con un piccolo test o più focus."
+],
+"q": "In quale di queste trappole cadresti più facilmente e come te ne accorgeresti?",
+"c": "Rivedi la tua tela, cerchia una possibile trappola e pianifica una correzione."
+},
+"pt": {
+"t": "Erros comuns de modelo no início",
+"g": "Identifica armadilhas iniciais como muitos clientes de uma vez e valor pouco claro.",
+"p": [
+"Tentar servir toda a gente costuma significar não servir bem ninguém.",
+"Valor vago, nenhum contacto real com clientes e ignorar custos são armadilhas comuns.",
+"Detetar uma armadilha cedo é uma vitória; corrige com um pequeno teste ou mais foco."
+],
+"q": "Em qual destas armadilhas cairias mais facilmente e como o notarias?",
+"c": "Revê a tua tela, assinala uma armadilha possível e planeia uma correção."
+},
+"pt_BR": {
+"t": "Erros comuns de modelo no início",
+"g": "Identifique armadilhas iniciais como muitos clientes de uma vez e valor pouco claro.",
+"p": [
+"Tentar atender todo mundo costuma significar não atender bem ninguém.",
+"Valor vago, nenhum contato real com clientes e ignorar custos são armadilhas comuns.",
+"Detectar uma armadilha cedo é uma vitória; corrija com um pequeno teste ou mais foco."
+],
+"q": "Em qual dessas armadilhas você cairia mais facilmente e como perceberia?",
+"c": "Revise a sua tela, circule uma armadilha possível e planeje uma correção."
+}
+}
+},
+{
+"d": 60,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Review: business models",
+"g": "Recap the canvas, model types and how value is created and captured.",
+"p": [
+"You met the nine canvas blocks and saw how they link customer, value and money.",
+"You compared products, services, subscriptions, marketplaces, freemium and local models.",
+"You explored startups, bootstrapping, cooperatives, families and social ventures."
+],
+"q": "Which business model surprised you most this month?",
+"c": "Choose one model type and write how your idea would change if it used it."
+},
+"de": {
+"t": "Rückblick: Geschäftsmodelle",
+"g": "Wiederhole das Canvas, Modelltypen und wie Nutzen geschaffen und erhalten wird.",
+"p": [
+"Du hast die neun Canvas-Bausteine kennengelernt und ihre Verbindung von Kunde, Nutzen und Geld.",
+"Du hast Produkte, Services, Abos, Marktplätze, Freemium und lokale Modelle verglichen.",
+"Du hast Start-ups, Bootstrapping, Genossenschaften, Familien und soziale Vorhaben erkundet."
+],
+"q": "Welches Geschäftsmodell hat dich diesen Monat am meisten überrascht?",
+"c": "Wähle einen Modelltyp und schreib, wie sich deine Idee damit veränderte."
+},
+"es": {
+"t": "Repaso: modelos de negocio",
+"g": "Repasa el lienzo, los tipos de modelo y cómo se crea y captura valor.",
+"p": [
+"Conociste los nueve bloques del lienzo y cómo unen cliente, valor y dinero.",
+"Comparaste productos, servicios, suscripciones, mercados, freemium y modelos locales.",
+"Exploraste startups, bootstrapping, cooperativas, familias y empresas sociales."
+],
+"q": "¿Qué modelo de negocio te sorprendió más este mes?",
+"c": "Elige un tipo de modelo y escribe cómo cambiaría tu idea con él."
+},
+"fr": {
+"t": "Révision : modèles d'affaires",
+"g": "Récapitule le canevas, les types de modèles et comment la valeur se crée et se capte.",
+"p": [
+"Tu as découvert les neuf blocs du canevas et leur lien entre client, valeur et argent.",
+"Tu as comparé produits, services, abonnements, places de marché, freemium et modèles locaux.",
+"Tu as exploré startups, bootstrapping, coopératives, familles et entreprises sociales."
+],
+"q": "Quel modèle d'affaires t'a le plus surpris ce mois-ci ?",
+"c": "Choisis un type de modèle et écris comment ton idée changerait avec lui."
+},
+"it": {
+"t": "Ripasso: modelli di business",
+"g": "Ripassa la tela, i tipi di modello e come si crea e cattura valore.",
+"p": [
+"Hai conosciuto i nove blocchi della tela e come legano cliente, valore e denaro.",
+"Hai confrontato prodotti, servizi, abbonamenti, marketplace, freemium e modelli locali.",
+"Hai esplorato startup, bootstrapping, cooperative, famiglie e imprese sociali."
+],
+"q": "Quale modello di business ti ha sorpreso di più questo mese?",
+"c": "Scegli un tipo di modello e scrivi come cambierebbe la tua idea con esso."
+},
+"pt": {
+"t": "Revisão: modelos de negócio",
+"g": "Revê a tela, os tipos de modelo e como o valor é criado e captado.",
+"p": [
+"Conheceste os nove blocos da tela e como ligam cliente, valor e dinheiro.",
+"Comparaste produtos, serviços, subscrições, marketplaces, freemium e modelos locais.",
+"Exploraste startups, bootstrapping, cooperativas, famílias e empresas sociais."
+],
+"q": "Que modelo de negócio mais te surpreendeu este mês?",
+"c": "Escolhe um tipo de modelo e escreve como a tua ideia mudaria com ele."
+},
+"pt_BR": {
+"t": "Revisão: modelos de negócio",
+"g": "Revise a tela, os tipos de modelo e como o valor é criado e capturado.",
+"p": [
+"Você conheceu os nove blocos da tela e como eles ligam cliente, valor e dinheiro.",
+"Você comparou produtos, serviços, assinaturas, marketplaces, freemium e modelos locais.",
+"Você explorou startups, bootstrapping, cooperativas, famílias e empresas sociais."
+],
+"q": "Que modelo de negócio mais surpreendeu você este mês?",
+"c": "Escolha um tipo de modelo e escreva como a sua ideia mudaria com ele."
+}
+}
+}
+]
+}

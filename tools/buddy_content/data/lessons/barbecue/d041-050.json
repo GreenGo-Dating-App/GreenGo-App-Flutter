@@ -1,0 +1,835 @@
+{
+ "topic": "barbecue",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What a marinade really does",
+     "g": "Learn what a marinade can and cannot do so you use it wisely.",
+     "p": [
+      "A marinade has three parts: acid like vinegar or citrus, oil to carry flavour, and aromatics like garlic and herbs.",
+      "Most flavour stays near the surface; only salt and some small molecules go deeper into the meat.",
+      "Marinate in the fridge, never on the counter, and never reuse raw marinade as a sauce unless you boil it first."
+     ],
+     "q": "Do you have a favourite marinade, maybe a family recipe?",
+     "c": "Write down a marinade you like and label each ingredient as acid, oil, aromatic or salt."
+    },
+    "de": {
+     "t": "Was eine Marinade wirklich bewirkt",
+     "g": "Lerne, was eine Marinade kann und was nicht, damit du sie klug einsetzt.",
+     "p": [
+      "Eine Marinade hat drei Teile: Säure wie Essig oder Zitrus, Öl als Aromaträger und Aromaten wie Knoblauch und Kräuter.",
+      "Das meiste Aroma bleibt an der Oberfläche; nur Salz und einige kleine Moleküle dringen tiefer ins Fleisch ein.",
+      "Im Kühlschrank marinieren, nie auf der Arbeitsfläche, und rohe Marinade nur aufgekocht als Sauce verwenden."
+     ],
+     "q": "Hast du eine Lieblingsmarinade, vielleicht ein Familienrezept?",
+     "c": "Schreib eine Marinade auf, die du magst, und ordne jede Zutat zu: Säure, Öl, Aromat oder Salz."
+    },
+    "es": {
+     "t": "Lo que hace de verdad un adobo",
+     "g": "Aprende lo que un adobo puede y no puede hacer para usarlo con cabeza.",
+     "p": [
+      "Un adobo tiene tres partes: ácido como vinagre o cítricos, aceite que lleva el sabor y aromáticos como ajo y hierbas.",
+      "Casi todo el sabor se queda en la superficie; solo la sal y algunas moléculas pequeñas penetran más en la carne.",
+      "Marina en la nevera, nunca a temperatura ambiente, y no reutilices el adobo crudo como salsa sin hervirlo antes."
+     ],
+     "q": "¿Tienes un adobo favorito, quizá una receta familiar?",
+     "c": "Escribe un adobo que te guste y clasifica cada ingrediente como ácido, aceite, aromático o sal."
+    },
+    "fr": {
+     "t": "Ce que fait vraiment une marinade",
+     "g": "Apprends ce qu'une marinade peut faire ou non pour l'utiliser à bon escient.",
+     "p": [
+      "Une marinade a trois composantes : un acide comme le vinaigre ou les agrumes, de l'huile et des aromates comme l'ail.",
+      "L'essentiel du goût reste en surface ; seuls le sel et quelques petites molécules pénètrent plus loin dans la viande.",
+      "Fais mariner au frigo, jamais sur le plan de travail, et ne réutilise la marinade crue en sauce qu'après l'avoir bouillie."
+     ],
+     "q": "As-tu une marinade préférée, peut-être une recette de famille ?",
+     "c": "Note une marinade que tu aimes et classe chaque ingrédient : acide, huile, aromate ou sel."
+    },
+    "it": {
+     "t": "Cosa fa davvero una marinata",
+     "g": "Scopri cosa può e non può fare una marinata per usarla con criterio.",
+     "p": [
+      "Una marinata ha tre parti: un acido come aceto o agrumi, olio che porta il sapore e aromi come aglio ed erbe.",
+      "Gran parte del sapore resta in superficie; solo il sale e alcune piccole molecole penetrano più a fondo.",
+      "Marina in frigo, mai sul piano di lavoro, e non riusare la marinata cruda come salsa senza prima bollirla."
+     ],
+     "q": "Hai una marinata preferita, magari una ricetta di famiglia?",
+     "c": "Scrivi una marinata che ti piace e classifica ogni ingrediente come acido, olio, aroma o sale."
+    },
+    "pt": {
+     "t": "O que uma marinada faz mesmo",
+     "g": "Aprende o que uma marinada pode e não pode fazer, para a usares com cabeça.",
+     "p": [
+      "Uma marinada tem três partes: um ácido como vinagre ou citrinos, óleo que leva o sabor e aromáticos como alho e ervas.",
+      "A maior parte do sabor fica à superfície; só o sal e algumas moléculas pequenas entram mais fundo na carne.",
+      "Marina no frigorífico, nunca à temperatura ambiente, e não reutilizes a marinada crua como molho sem a ferver antes."
+     ],
+     "q": "Tens uma marinada preferida, talvez uma receita de família?",
+     "c": "Escreve uma marinada de que gostes e classifica cada ingrediente como ácido, óleo, aromático ou sal."
+    },
+    "pt_BR": {
+     "t": "O que a marinada faz de verdade",
+     "g": "Aprenda o que a marinada pode e não pode fazer, para usar do jeito certo.",
+     "p": [
+      "A marinada tem três partes: ácido como vinagre ou limão, óleo que carrega o sabor e aromáticos como alho e ervas.",
+      "A maior parte do sabor fica na superfície; só o sal e algumas moléculas pequenas penetram mais fundo na carne.",
+      "Marine na geladeira, nunca fora dela, e não reaproveite a marinada crua como molho sem ferver antes."
+     ],
+     "q": "Você tem uma marinada favorita, talvez uma receita de família?",
+     "c": "Escreva uma marinada de que gosta e classifique cada ingrediente como ácido, óleo, aromático ou sal."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Citrus and herb marinades",
+     "g": "Make bright citrus and herb marinades for chicken and fish, and respect the time limit.",
+     "p": [
+      "Lemon, lime or orange juice with olive oil, garlic and fresh herbs like parsley, coriander or thyme is a classic base.",
+      "Acid works fast: fish needs only 15 to 30 minutes and chicken a few hours, or the texture turns mushy.",
+      "Add a pinch of salt and a little zest, which holds lots of citrus flavour without the extra acid."
+     ],
+     "q": "Which citrus fruit do you like best in savoury dishes?",
+     "c": "Make a quick lemon, garlic and herb marinade for chicken or fish, and set a timer so it does not go too long."
+    },
+    "de": {
+     "t": "Zitrus- und Kräutermarinaden",
+     "g": "Mach frische Zitrus-Kräuter-Marinaden für Hähnchen und Fisch und halte die Zeitgrenze ein.",
+     "p": [
+      "Zitronen-, Limetten- oder Orangensaft mit Olivenöl, Knoblauch und frischen Kräutern wie Petersilie oder Thymian ist ein Klassiker.",
+      "Säure wirkt schnell: Fisch braucht nur 15 bis 30 Minuten, Hähnchen ein paar Stunden, sonst wird die Textur matschig.",
+      "Gib eine Prise Salz und etwas Schale dazu: Sie bringt viel Zitrusaroma ohne zusätzliche Säure."
+     ],
+     "q": "Welche Zitrusfrucht magst du in herzhaften Gerichten am liebsten?",
+     "c": "Mach eine schnelle Marinade aus Zitrone, Knoblauch und Kräutern für Hähnchen oder Fisch und stell einen Timer."
+    },
+    "es": {
+     "t": "Adobos de cítricos y hierbas",
+     "g": "Prepara adobos frescos de cítricos y hierbas para pollo y pescado, y respeta el tiempo límite.",
+     "p": [
+      "Zumo de limón, lima o naranja con aceite de oliva, ajo y hierbas frescas como perejil, cilantro o tomillo es una base clásica.",
+      "El ácido actúa rápido: el pescado necesita solo de 15 a 30 minutos y el pollo unas horas, o la textura se vuelve blanda.",
+      "Añade una pizca de sal y un poco de ralladura, que da mucho sabor cítrico sin ácido extra."
+     ],
+     "q": "¿Qué cítrico te gusta más en platos salados?",
+     "c": "Prepara un adobo rápido de limón, ajo y hierbas para pollo o pescado, y pon un temporizador para no pasarte."
+    },
+    "fr": {
+     "t": "Marinades aux agrumes et aux herbes",
+     "g": "Prépare des marinades vives aux agrumes et herbes pour poulet et poisson, en respectant le temps.",
+     "p": [
+      "Jus de citron, de citron vert ou d'orange avec huile d'olive, ail et herbes fraîches comme persil ou thym : une base classique.",
+      "L'acide agit vite : 15 à 30 minutes suffisent pour le poisson, quelques heures pour le poulet, sinon la texture devient pâteuse.",
+      "Ajoute une pincée de sel et un peu de zeste, qui apporte beaucoup de goût d'agrume sans acidité en plus."
+     ],
+     "q": "Quel agrume préfères-tu dans les plats salés ?",
+     "c": "Prépare une marinade rapide citron, ail et herbes pour du poulet ou du poisson, et mets un minuteur pour ne pas dépasser."
+    },
+    "it": {
+     "t": "Marinate di agrumi ed erbe",
+     "g": "Prepara marinate fresche di agrumi ed erbe per pollo e pesce, rispettando i tempi.",
+     "p": [
+      "Succo di limone, lime o arancia con olio d'oliva, aglio ed erbe fresche come prezzemolo, coriandolo o timo: una base classica.",
+      "L'acido agisce in fretta: il pesce vuole solo 15-30 minuti e il pollo qualche ora, altrimenti la consistenza diventa molle.",
+      "Aggiungi un pizzico di sale e un po' di scorza, che dà tanto sapore di agrume senza acidità in più."
+     ],
+     "q": "Quale agrume preferisci nei piatti salati?",
+     "c": "Prepara una marinata veloce di limone, aglio ed erbe per pollo o pesce, e imposta un timer per non esagerare."
+    },
+    "pt": {
+     "t": "Marinadas de citrinos e ervas",
+     "g": "Faz marinadas frescas de citrinos e ervas para frango e peixe, respeitando o tempo limite.",
+     "p": [
+      "Sumo de limão, lima ou laranja com azeite, alho e ervas frescas como salsa, coentros ou tomilho é uma base clássica.",
+      "O ácido age depressa: o peixe precisa só de 15 a 30 minutos e o frango de algumas horas, ou a textura fica mole.",
+      "Junta uma pitada de sal e um pouco de raspa, que dá muito sabor a citrino sem acidez extra."
+     ],
+     "q": "Que citrino preferes em pratos salgados?",
+     "c": "Faz uma marinada rápida de limão, alho e ervas para frango ou peixe, e põe um temporizador para não passares do tempo."
+    },
+    "pt_BR": {
+     "t": "Marinadas de cítricos e ervas",
+     "g": "Faça marinadas frescas de cítricos e ervas para frango e peixe, respeitando o tempo limite.",
+     "p": [
+      "Suco de limão, lima ou laranja com azeite, alho e ervas frescas como salsinha, coentro ou tomilho é uma base clássica.",
+      "O ácido age rápido: peixe precisa só de 15 a 30 minutos e frango de algumas horas, senão a textura fica mole.",
+      "Acrescente uma pitada de sal e um pouco de raspas, que dão muito sabor cítrico sem acidez extra."
+     ],
+     "q": "Qual fruta cítrica você prefere em pratos salgados?",
+     "c": "Faça uma marinada rápida de limão, alho e ervas para frango ou peixe, e use um timer para não passar do tempo."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Yoghurt marinades",
+     "g": "Use yoghurt to tenderise gently, as in many South Asian and Middle Eastern recipes.",
+     "p": [
+      "Yoghurt is mildly acidic, so it softens meat slowly and evenly without turning it mushy.",
+      "Mixed with garlic, ginger and spices like cumin, coriander and turmeric, it is the base of dishes like tandoori chicken.",
+      "It also helps a beautiful golden crust form; marinate chicken 4 to 12 hours in the fridge."
+     ],
+     "q": "Have you ever tried a yoghurt-marinated dish like tandoori chicken or a Turkish kebab?",
+     "c": "Mix a yoghurt marinade with garlic and two spices, and use it on chicken, vegetables or paneer."
+    },
+    "de": {
+     "t": "Joghurtmarinaden",
+     "g": "Nutze Joghurt zum sanften Zartmachen, wie in vielen südasiatischen und nahöstlichen Rezepten.",
+     "p": [
+      "Joghurt ist leicht sauer und macht Fleisch langsam und gleichmäßig zart, ohne dass es matschig wird.",
+      "Mit Knoblauch, Ingwer und Gewürzen wie Kreuzkümmel, Koriander und Kurkuma ist er die Basis von Tandoori-Hähnchen.",
+      "Er sorgt auch für eine schöne goldene Kruste; Hähnchen 4 bis 12 Stunden im Kühlschrank marinieren."
+     ],
+     "q": "Hast du schon ein in Joghurt mariniertes Gericht probiert, etwa Tandoori-Hähnchen oder türkischen Kebab?",
+     "c": "Misch eine Joghurtmarinade mit Knoblauch und zwei Gewürzen und nutze sie für Hähnchen, Gemüse oder Paneer."
+    },
+    "es": {
+     "t": "Adobos de yogur",
+     "g": "Usa el yogur para ablandar con suavidad, como en muchas recetas del sur de Asia y Oriente Medio.",
+     "p": [
+      "El yogur es ligeramente ácido, así que ablanda la carne despacio y de forma pareja sin dejarla blanda.",
+      "Con ajo, jengibre y especias como comino, cilantro y cúrcuma es la base de platos como el pollo tandoori.",
+      "También ayuda a formar una costra dorada preciosa; marina el pollo de 4 a 12 horas en la nevera."
+     ],
+     "q": "¿Has probado algún plato marinado en yogur, como el pollo tandoori o un kebab turco?",
+     "c": "Mezcla un adobo de yogur con ajo y dos especias, y úsalo en pollo, verduras o paneer."
+    },
+    "fr": {
+     "t": "Marinades au yaourt",
+     "g": "Utilise le yaourt pour attendrir en douceur, comme dans de nombreuses recettes d'Asie du Sud et du Moyen-Orient.",
+     "p": [
+      "Le yaourt est légèrement acide : il attendrit la viande lentement et uniformément sans la rendre pâteuse.",
+      "Avec ail, gingembre et épices comme cumin, coriandre et curcuma, il est la base de plats comme le poulet tandoori.",
+      "Il aide aussi à former une belle croûte dorée ; fais mariner le poulet 4 à 12 heures au frigo."
+     ],
+     "q": "As-tu déjà goûté un plat mariné au yaourt, comme le poulet tandoori ou un kebab turc ?",
+     "c": "Mélange une marinade au yaourt avec de l'ail et deux épices, et utilise-la sur du poulet, des légumes ou du paneer."
+    },
+    "it": {
+     "t": "Marinate allo yogurt",
+     "g": "Usa lo yogurt per intenerire con delicatezza, come in molte ricette dell'Asia meridionale e del Medio Oriente.",
+     "p": [
+      "Lo yogurt è leggermente acido, quindi intenerisce la carne piano e in modo uniforme senza renderla molle.",
+      "Con aglio, zenzero e spezie come cumino, coriandolo e curcuma è la base di piatti come il pollo tandoori.",
+      "Aiuta anche a formare una bella crosticina dorata; marina il pollo 4-12 ore in frigo."
+     ],
+     "q": "Hai mai assaggiato un piatto marinato allo yogurt, come il pollo tandoori o un kebab turco?",
+     "c": "Prepara una marinata allo yogurt con aglio e due spezie, e usala su pollo, verdure o paneer."
+    },
+    "pt": {
+     "t": "Marinadas de iogurte",
+     "g": "Usa o iogurte para amaciar com suavidade, como em muitas receitas do Sul da Ásia e do Médio Oriente.",
+     "p": [
+      "O iogurte é ligeiramente ácido, por isso amacia a carne devagar e por igual, sem a deixar mole.",
+      "Com alho, gengibre e especiarias como cominho, coentros e açafrão-da-índia, é a base de pratos como o frango tandoori.",
+      "Também ajuda a formar uma bela crosta dourada; marina o frango 4 a 12 horas no frigorífico."
+     ],
+     "q": "Já provaste um prato marinado em iogurte, como o frango tandoori ou um kebab turco?",
+     "c": "Mistura uma marinada de iogurte com alho e duas especiarias e usa-a em frango, legumes ou paneer."
+    },
+    "pt_BR": {
+     "t": "Marinadas de iogurte",
+     "g": "Use iogurte para amaciar com suavidade, como em muitas receitas do sul da Ásia e do Oriente Médio.",
+     "p": [
+      "O iogurte é levemente ácido, então amacia a carne devagar e por igual, sem deixar mole.",
+      "Com alho, gengibre e especiarias como cominho, coentro e cúrcuma, é a base de pratos como o frango tandoori.",
+      "Também ajuda a formar uma linda crosta dourada; marine o frango de 4 a 12 horas na geladeira."
+     ],
+     "q": "Você já provou um prato marinado em iogurte, como frango tandoori ou um kebab turco?",
+     "c": "Misture uma marinada de iogurte com alho e duas especiarias e use em frango, legumes ou paneer."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Soy and ginger marinades",
+     "g": "Make savoury East Asian style marinades for beef, pork, chicken and tofu.",
+     "p": [
+      "Soy sauce brings salt and deep savoury flavour; fresh ginger and garlic add warmth and aroma.",
+      "A touch of sugar or honey and a little sesame oil round it out, as in Korean bulgogi or Japanese teriyaki styles.",
+      "Because soy is salty, 30 minutes to a few hours is plenty; watch the sugar over high heat so it does not burn."
+     ],
+     "q": "Which East Asian grilled dish would you love to make at home?",
+     "c": "Mix a soy, ginger and garlic marinade and use it on thin slices of beef, chicken or firm tofu."
+    },
+    "de": {
+     "t": "Soja-Ingwer-Marinaden",
+     "g": "Mach herzhafte ostasiatische Marinaden für Rind, Schwein, Hähnchen und Tofu.",
+     "p": [
+      "Sojasauce bringt Salz und tiefe Würze; frischer Ingwer und Knoblauch sorgen für Wärme und Duft.",
+      "Etwas Zucker oder Honig und ein wenig Sesamöl runden sie ab, wie beim koreanischen Bulgogi oder japanischen Teriyaki.",
+      "Weil Soja salzig ist, reichen 30 Minuten bis ein paar Stunden; achte bei starker Hitze auf den Zucker."
+     ],
+     "q": "Welches ostasiatische Grillgericht würdest du gern zu Hause zubereiten?",
+     "c": "Misch eine Marinade aus Soja, Ingwer und Knoblauch und nutze sie für dünne Scheiben Rind, Hähnchen oder festen Tofu."
+    },
+    "es": {
+     "t": "Adobos de soja y jengibre",
+     "g": "Prepara adobos sabrosos de estilo asiático oriental para ternera, cerdo, pollo y tofu.",
+     "p": [
+      "La salsa de soja aporta sal y un sabor umami profundo; el jengibre fresco y el ajo dan calidez y aroma.",
+      "Un toque de azúcar o miel y un poco de aceite de sésamo lo redondean, como en el bulgogi coreano o el teriyaki japonés.",
+      "Como la soja es salada, bastan de 30 minutos a unas horas; vigila el azúcar a fuego fuerte para que no se queme."
+     ],
+     "q": "¿Qué plato asiático a la parrilla te encantaría preparar en casa?",
+     "c": "Mezcla un adobo de soja, jengibre y ajo y úsalo en lonchas finas de ternera, pollo o tofu firme."
+    },
+    "fr": {
+     "t": "Marinades soja et gingembre",
+     "g": "Prépare des marinades savoureuses d'Asie de l'Est pour bœuf, porc, poulet et tofu.",
+     "p": [
+      "La sauce soja apporte du sel et un goût umami profond ; gingembre frais et ail donnent chaleur et parfum.",
+      "Un peu de sucre ou de miel et un filet d'huile de sésame complètent, comme dans le bulgogi coréen ou le teriyaki japonais.",
+      "Le soja étant salé, 30 minutes à quelques heures suffisent ; surveille le sucre à feu vif pour qu'il ne brûle pas."
+     ],
+     "q": "Quel plat grillé d'Asie de l'Est aimerais-tu faire chez toi ?",
+     "c": "Mélange une marinade soja, gingembre et ail et utilise-la sur de fines tranches de bœuf, de poulet ou de tofu ferme."
+    },
+    "it": {
+     "t": "Marinate di soia e zenzero",
+     "g": "Prepara marinate saporite in stile asiatico orientale per manzo, maiale, pollo e tofu.",
+     "p": [
+      "La salsa di soia porta sale e un sapore umami profondo; zenzero fresco e aglio danno calore e profumo.",
+      "Un tocco di zucchero o miele e un po' di olio di sesamo la completano, come nel bulgogi coreano o nel teriyaki giapponese.",
+      "Dato che la soia è salata, bastano da 30 minuti a qualche ora; attento allo zucchero a fuoco alto, che brucia."
+     ],
+     "q": "Quale piatto alla griglia dell'Asia orientale ti piacerebbe fare a casa?",
+     "c": "Prepara una marinata di soia, zenzero e aglio e usala su fettine sottili di manzo, pollo o tofu compatto."
+    },
+    "pt": {
+     "t": "Marinadas de soja e gengibre",
+     "g": "Faz marinadas saborosas ao estilo da Ásia Oriental para vaca, porco, frango e tofu.",
+     "p": [
+      "O molho de soja traz sal e um sabor umami profundo; o gengibre fresco e o alho dão calor e aroma.",
+      "Um toque de açúcar ou mel e um pouco de óleo de sésamo completam-na, como no bulgogi coreano ou no teriyaki japonês.",
+      "Como a soja é salgada, bastam 30 minutos a algumas horas; vigia o açúcar em calor forte para não queimar."
+     ],
+     "q": "Que prato grelhado da Ásia Oriental gostavas de fazer em casa?",
+     "c": "Mistura uma marinada de soja, gengibre e alho e usa-a em fatias finas de vaca, frango ou tofu firme."
+    },
+    "pt_BR": {
+     "t": "Marinadas de shoyu e gengibre",
+     "g": "Faça marinadas saborosas no estilo do Leste Asiático para carne bovina, porco, frango e tofu.",
+     "p": [
+      "O shoyu traz sal e um sabor umami profundo; gengibre fresco e alho dão calor e aroma.",
+      "Um toque de açúcar ou mel e um pouco de óleo de gergelim completam, como no bulgogi coreano ou no teriyaki japonês.",
+      "Como o shoyu é salgado, bastam 30 minutos a algumas horas; cuidado com o açúcar no fogo alto para não queimar."
+     ],
+     "q": "Que prato grelhado do Leste Asiático você adoraria fazer em casa?",
+     "c": "Misture uma marinada de shoyu, gengibre e alho e use em fatias finas de carne, frango ou tofu firme."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brining basics",
+     "g": "Understand wet and dry brining and how salt helps meat stay juicy on the grill.",
+     "p": [
+      "A wet brine is meat soaked in salted water, roughly 1 tablespoon of salt per cup of water, often with herbs or sugar.",
+      "A dry brine is simply salt rubbed on and left in the fridge, from an hour to overnight, uncovered or loosely covered.",
+      "Salt changes the proteins so they hold more moisture; rinse or pat dry and skip extra salt in the rub."
+     ],
+     "q": "Have you ever brined meat, maybe for a holiday roast?",
+     "c": "Dry brine a piece of chicken or pork in the fridge for a few hours before grilling and note the difference."
+    },
+    "de": {
+     "t": "Grundlagen des Pökelns mit Lake",
+     "g": "Verstehe Nass- und Trockenlake und wie Salz Fleisch auf dem Grill saftig hält.",
+     "p": [
+      "Bei der Nasslake liegt Fleisch in Salzwasser, etwa 1 Esslöffel Salz pro Tasse Wasser, oft mit Kräutern oder Zucker.",
+      "Bei der Trockenlake wird einfach Salz eingerieben und das Fleisch eine Stunde bis über Nacht in den Kühlschrank gestellt.",
+      "Salz verändert die Eiweiße, sodass sie mehr Feuchtigkeit halten; abtupfen und im Rub weniger Salz nehmen."
+     ],
+     "q": "Hast du schon einmal Fleisch in Lake eingelegt, vielleicht für einen Festbraten?",
+     "c": "Salze ein Stück Hähnchen oder Schwein ein paar Stunden vor dem Grillen trocken im Kühlschrank und notiere den Unterschied."
+    },
+    "es": {
+     "t": "Lo básico de la salmuera",
+     "g": "Entiende la salmuera húmeda y la seca, y cómo la sal ayuda a que la carne siga jugosa.",
+     "p": [
+      "La salmuera húmeda es carne en agua con sal, más o menos 1 cucharada de sal por taza de agua, a menudo con hierbas o azúcar.",
+      "La salmuera seca es solo sal frotada sobre la carne, que reposa en la nevera de una hora a toda la noche.",
+      "La sal cambia las proteínas para que retengan más humedad; seca bien la carne y no añadas más sal en el rub."
+     ],
+     "q": "¿Alguna vez has puesto carne en salmuera, quizá para un asado de fiesta?",
+     "c": "Haz una salmuera seca a un trozo de pollo o cerdo en la nevera unas horas antes de asarlo y anota la diferencia."
+    },
+    "fr": {
+     "t": "Les bases de la saumure",
+     "g": "Comprends la saumure liquide et sèche, et comment le sel garde la viande juteuse au grill.",
+     "p": [
+      "La saumure liquide, c'est de la viande dans de l'eau salée, environ 1 cuillère à soupe de sel par tasse, souvent avec herbes ou sucre.",
+      "La saumure sèche, c'est du sel frotté sur la viande, laissée au frigo d'une heure à toute une nuit.",
+      "Le sel modifie les protéines pour qu'elles retiennent plus d'eau ; sèche la viande et sale moins le rub."
+     ],
+     "q": "As-tu déjà mis de la viande en saumure, peut-être pour un rôti de fête ?",
+     "c": "Fais une saumure sèche sur du poulet ou du porc au frigo quelques heures avant de griller, et note la différence."
+    },
+    "it": {
+     "t": "Le basi della salamoia",
+     "g": "Capisci la salamoia liquida e quella a secco, e come il sale aiuta la carne a restare succosa.",
+     "p": [
+      "La salamoia liquida è carne in acqua salata, circa 1 cucchiaio di sale per tazza d'acqua, spesso con erbe o zucchero.",
+      "La salamoia a secco è sale strofinato sulla carne, lasciata in frigo da un'ora a tutta la notte.",
+      "Il sale modifica le proteine perché trattengano più umidità; asciuga la carne e metti meno sale nel rub."
+     ],
+     "q": "Hai mai messo la carne in salamoia, magari per un arrosto delle feste?",
+     "c": "Fai una salamoia a secco su pollo o maiale in frigo qualche ora prima di grigliare e annota la differenza."
+    },
+    "pt": {
+     "t": "O básico da salmoura",
+     "g": "Percebe a salmoura húmida e a seca, e como o sal ajuda a carne a ficar suculenta na grelha.",
+     "p": [
+      "A salmoura húmida é carne em água com sal, cerca de 1 colher de sopa de sal por chávena de água, muitas vezes com ervas ou açúcar.",
+      "A salmoura seca é só sal esfregado na carne, que fica no frigorífico de uma hora até à noite toda.",
+      "O sal altera as proteínas para reterem mais humidade; seca bem a carne e põe menos sal no rub."
+     ],
+     "q": "Já puseste carne em salmoura, talvez para um assado de festa?",
+     "c": "Faz uma salmoura seca a um pedaço de frango ou porco no frigorífico umas horas antes de grelhar e anota a diferença."
+    },
+    "pt_BR": {
+     "t": "O básico da salmoura",
+     "g": "Entenda a salmoura úmida e a seca, e como o sal ajuda a carne a ficar suculenta na grelha.",
+     "p": [
+      "A salmoura úmida é a carne em água com sal, cerca de 1 colher de sopa de sal por xícara de água, muitas vezes com ervas ou açúcar.",
+      "A salmoura seca é só sal esfregado na carne, que descansa na geladeira de uma hora até a noite toda.",
+      "O sal altera as proteínas para segurarem mais umidade; seque bem a carne e use menos sal no rub."
+     ],
+     "q": "Você já colocou carne na salmoura, talvez para um assado de festa?",
+     "c": "Faça uma salmoura seca num pedaço de frango ou porco na geladeira algumas horas antes de grelhar e anote a diferença."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Basting and mopping",
+     "g": "Add flavour during cooking without washing away the crust you have built.",
+     "p": [
+      "Basting means brushing on melted butter, oil or a thin sauce; mopping is dabbing on a thin vinegar-based liquid.",
+      "Wait until a crust has formed, then baste lightly and not too often, or you will soften the surface.",
+      "Use a clean brush and a separate bowl, never one that touched raw meat, and keep sugary bastes for the end."
+     ],
+     "q": "Have you ever seen someone mop meat on a barbecue, maybe at a festival or on TV?",
+     "c": "Mix a simple baste of melted butter, garlic and herbs, and brush it on vegetables or meat near the end of cooking."
+    },
+    "de": {
+     "t": "Bestreichen und Moppen",
+     "g": "Bring während des Garens Aroma ein, ohne die aufgebaute Kruste abzuwaschen.",
+     "p": [
+      "Beim Bestreichen pinselst du Butter, Öl oder dünne Sauce auf; beim Moppen tupfst du eine dünne Essigflüssigkeit auf.",
+      "Warte, bis sich eine Kruste gebildet hat, und streiche dann sparsam und nicht zu oft, sonst weicht die Oberfläche auf.",
+      "Nimm einen sauberen Pinsel und eine eigene Schüssel, nie eine, die rohes Fleisch berührt hat; Süßes erst zum Schluss."
+     ],
+     "q": "Hast du schon einmal gesehen, wie jemand Fleisch beim Barbecue moppt, etwa auf einem Fest oder im Fernsehen?",
+     "c": "Misch eine einfache Mischung aus Butter, Knoblauch und Kräutern und streiche sie gegen Ende auf Gemüse oder Fleisch."
+    },
+    "es": {
+     "t": "Pincelar y mopear",
+     "g": "Añade sabor durante la cocción sin quitar la costra que has formado.",
+     "p": [
+      "Pincelar es untar mantequilla, aceite o una salsa ligera con brocha; mopear es aplicar un líquido fino a base de vinagre.",
+      "Espera a que se forme la costra y luego pincela con moderación y no muy a menudo, o la superficie se ablandará.",
+      "Usa una brocha limpia y un bol aparte, nunca uno que tocara carne cruda, y deja los líquidos azucarados para el final."
+     ],
+     "q": "¿Has visto alguna vez a alguien mopear carne en una barbacoa, quizá en un festival o en la tele?",
+     "c": "Mezcla una untura sencilla de mantequilla, ajo y hierbas, y pincélala sobre verduras o carne al final de la cocción."
+    },
+    "fr": {
+     "t": "Badigeonner et arroser",
+     "g": "Ajoute du goût pendant la cuisson sans effacer la croûte que tu as créée.",
+     "p": [
+      "Badigeonner, c'est appliquer beurre fondu, huile ou sauce légère au pinceau ; le mop est un liquide fin à base de vinaigre.",
+      "Attends qu'une croûte se forme, puis badigeonne légèrement et pas trop souvent, sinon la surface ramollit.",
+      "Prends un pinceau propre et un bol à part, jamais un qui a touché la viande crue, et garde le sucré pour la fin."
+     ],
+     "q": "As-tu déjà vu quelqu'un arroser une viande au barbecue, dans un festival ou à la télévision ?",
+     "c": "Mélange un beurre fondu à l'ail et aux herbes, et badigeonne-le sur des légumes ou de la viande en fin de cuisson."
+    },
+    "it": {
+     "t": "Spennellare e bagnare",
+     "g": "Aggiungi sapore durante la cottura senza lavare via la crosticina che hai creato.",
+     "p": [
+      "Spennellare vuol dire passare burro fuso, olio o una salsa leggera; il mop è un liquido sottile a base di aceto.",
+      "Aspetta che si formi la crosta, poi spennella con moderazione e non troppo spesso, o la superficie si ammorbidisce.",
+      "Usa un pennello pulito e una ciotola a parte, mai una che ha toccato carne cruda, e tieni i liquidi zuccherati per la fine."
+     ],
+     "q": "Hai mai visto qualcuno bagnare la carne con il mop a un barbecue, magari a una sagra o in TV?",
+     "c": "Prepara un'emulsione semplice di burro fuso, aglio ed erbe e spennellala su verdure o carne a fine cottura."
+    },
+    "pt": {
+     "t": "Pincelar e regar",
+     "g": "Junta sabor durante a cozedura sem tirar a crosta que formaste.",
+     "p": [
+      "Pincelar é passar manteiga derretida, azeite ou um molho leve; o mop é um líquido fino à base de vinagre.",
+      "Espera que se forme a crosta e depois pincela com moderação e não muitas vezes, ou a superfície amolece.",
+      "Usa um pincel limpo e uma taça à parte, nunca uma que tocou carne crua, e deixa os líquidos açucarados para o fim."
+     ],
+     "q": "Já viste alguém regar carne com um mop num churrasco, talvez num festival ou na televisão?",
+     "c": "Mistura manteiga derretida com alho e ervas e pincela-a sobre legumes ou carne no fim da cozedura."
+    },
+    "pt_BR": {
+     "t": "Pincelar e regar",
+     "g": "Acrescente sabor durante o preparo sem tirar a crosta que você formou.",
+     "p": [
+      "Pincelar é passar manteiga derretida, azeite ou um molho leve; o mop é um líquido fino à base de vinagre.",
+      "Espere a crosta se formar e depois pincele com moderação e não muitas vezes, senão a superfície amolece.",
+      "Use um pincel limpo e uma tigela separada, nunca uma que tocou carne crua, e deixe os líquidos doces para o final."
+     ],
+     "q": "Você já viu alguém regar carne com um mop num churrasco, talvez num festival ou na TV?",
+     "c": "Misture manteiga derretida com alho e ervas e pincele sobre legumes ou carne no final do preparo."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Barbecue sauce 101",
+     "g": "Discover the main styles of barbecue sauce and the regions they come from.",
+     "p": [
+      "Tomato-based sauces are thick, sweet and tangy, the style most people know, linked to Kansas City.",
+      "Vinegar-based sauces are thin and sharp, from eastern North Carolina; mustard-based golden sauces come from South Carolina.",
+      "Alabama white sauce is mayonnaise-based with vinegar and pepper, traditionally served with smoked chicken."
+     ],
+     "q": "Which sauce style sounds most delicious to you, and why?",
+     "c": "Taste the barbecue sauce you have, or read its label, and decide which of the four styles it belongs to."
+    },
+    "de": {
+     "t": "Barbecue-Saucen 101",
+     "g": "Entdecke die wichtigsten Barbecue-Saucen und die Regionen, aus denen sie stammen.",
+     "p": [
+      "Saucen auf Tomatenbasis sind dick, süß und würzig-säuerlich, der bekannteste Stil, verbunden mit Kansas City.",
+      "Essigsaucen sind dünn und spritzig, aus dem Osten North Carolinas; goldene Senfsaucen kommen aus South Carolina.",
+      "Die weiße Alabama-Sauce basiert auf Mayonnaise mit Essig und Pfeffer und wird traditionell zu Räucherhähnchen serviert."
+     ],
+     "q": "Welcher Saucenstil klingt für dich am leckersten, und warum?",
+     "c": "Probier deine Barbecue-Sauce oder lies das Etikett und entscheide, zu welchem der vier Stile sie gehört."
+    },
+    "es": {
+     "t": "Salsas barbacoa 101",
+     "g": "Descubre los principales estilos de salsa barbacoa y las regiones de donde vienen.",
+     "p": [
+      "Las salsas de tomate son espesas, dulces y ácidas, el estilo más conocido, asociado a Kansas City.",
+      "Las de vinagre son ligeras e intensas, del este de Carolina del Norte; las doradas de mostaza vienen de Carolina del Sur.",
+      "La salsa blanca de Alabama lleva mayonesa, vinagre y pimienta, y se sirve tradicionalmente con pollo ahumado."
+     ],
+     "q": "¿Qué estilo de salsa te parece más delicioso y por qué?",
+     "c": "Prueba la salsa barbacoa que tengas, o lee su etiqueta, y decide a cuál de los cuatro estilos pertenece."
+    },
+    "fr": {
+     "t": "Les sauces barbecue 101",
+     "g": "Découvre les grands styles de sauce barbecue et les régions d'où ils viennent.",
+     "p": [
+      "Les sauces à la tomate sont épaisses, sucrées et acidulées : le style le plus connu, associé à Kansas City.",
+      "Les sauces au vinaigre, fines et vives, viennent de l'est de la Caroline du Nord ; les dorées à la moutarde, de Caroline du Sud.",
+      "La sauce blanche d'Alabama est à base de mayonnaise, vinaigre et poivre, servie traditionnellement avec du poulet fumé."
+     ],
+     "q": "Quel style de sauce te semble le plus délicieux, et pourquoi ?",
+     "c": "Goûte ta sauce barbecue ou lis son étiquette, et décide à lequel des quatre styles elle appartient."
+    },
+    "it": {
+     "t": "Salse barbecue 101",
+     "g": "Scopri i principali stili di salsa barbecue e le regioni da cui provengono.",
+     "p": [
+      "Le salse al pomodoro sono dense, dolci e acidule: lo stile più noto, legato a Kansas City.",
+      "Le salse all'aceto, leggere e pungenti, vengono dalla Carolina del Nord orientale; quelle dorate alla senape dalla Carolina del Sud.",
+      "La salsa bianca dell'Alabama è a base di maionese, aceto e pepe, servita tradizionalmente con il pollo affumicato."
+     ],
+     "q": "Quale stile di salsa ti sembra più buono, e perché?",
+     "c": "Assaggia la salsa barbecue che hai, o leggi l'etichetta, e decidi a quale dei quattro stili appartiene."
+    },
+    "pt": {
+     "t": "Molhos barbecue 101",
+     "g": "Descobre os principais estilos de molho barbecue e as regiões de onde vêm.",
+     "p": [
+      "Os molhos de tomate são espessos, doces e ácidos, o estilo mais conhecido, associado a Kansas City.",
+      "Os de vinagre são leves e intensos, do leste da Carolina do Norte; os dourados de mostarda vêm da Carolina do Sul.",
+      "O molho branco do Alabama leva maionese, vinagre e pimenta, e serve-se tradicionalmente com frango fumado."
+     ],
+     "q": "Que estilo de molho te parece mais delicioso, e porquê?",
+     "c": "Prova o molho barbecue que tens, ou lê o rótulo, e decide a qual dos quatro estilos pertence."
+    },
+    "pt_BR": {
+     "t": "Molho barbecue 101",
+     "g": "Descubra os principais estilos de molho barbecue e as regiões de onde eles vêm.",
+     "p": [
+      "Os molhos de tomate são grossos, doces e ácidos, o estilo mais conhecido, ligado a Kansas City.",
+      "Os de vinagre são finos e marcantes, do leste da Carolina do Norte; os dourados de mostarda vêm da Carolina do Sul.",
+      "O molho branco do Alabama leva maionese, vinagre e pimenta, e é servido tradicionalmente com frango defumado."
+     ],
+     "q": "Qual estilo de molho parece mais gostoso para você, e por quê?",
+     "c": "Prove o molho barbecue que você tem, ou leia o rótulo, e decida a qual dos quatro estilos ele pertence."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "When to add a sweet sauce",
+     "g": "Glaze with sweet sauces at the right moment so they caramelise instead of burning.",
+     "p": [
+      "Sugar starts to burn at grilling temperatures, so a sweet sauce added too early turns black and bitter.",
+      "Cook the food almost through first, then brush on the sauce during the last 5 to 10 minutes.",
+      "Use medium or indirect heat for glazing, add a thin layer, let it set, and repeat once or twice for a sticky finish."
+     ],
+     "q": "Have you ever had barbecue sauce burn on the grill?",
+     "c": "Next time you use a sweet sauce, wait until the last 10 minutes and glaze in two thin layers."
+    },
+    "de": {
+     "t": "Wann süße Sauce dazukommt",
+     "g": "Glasiere mit süßen Saucen im richtigen Moment, damit sie karamellisieren statt zu verbrennen.",
+     "p": [
+      "Zucker verbrennt bei Grilltemperaturen; eine zu früh aufgetragene süße Sauce wird schwarz und bitter.",
+      "Gare das Grillgut erst fast fertig und streiche die Sauce dann in den letzten 5 bis 10 Minuten auf.",
+      "Glasiere bei mittlerer oder indirekter Hitze, trag eine dünne Schicht auf, lass sie fest werden und wiederhole ein- bis zweimal."
+     ],
+     "q": "Ist dir schon einmal Barbecue-Sauce auf dem Grill verbrannt?",
+     "c": "Warte beim nächsten Mal mit süßer Sauce bis zu den letzten 10 Minuten und glasiere in zwei dünnen Schichten."
+    },
+    "es": {
+     "t": "Cuándo añadir una salsa dulce",
+     "g": "Glasea con salsas dulces en el momento justo para que caramelicen en vez de quemarse.",
+     "p": [
+      "El azúcar se quema a temperaturas de parrilla, así que una salsa dulce añadida pronto se vuelve negra y amarga.",
+      "Cocina primero la comida casi por completo y pincela la salsa en los últimos 5 a 10 minutos.",
+      "Glasea a fuego medio o indirecto, pon una capa fina, deja que se fije y repite una o dos veces para un acabado brillante."
+     ],
+     "q": "¿Alguna vez se te quemó la salsa barbacoa en la parrilla?",
+     "c": "La próxima vez que uses una salsa dulce, espera a los últimos 10 minutos y glasea en dos capas finas."
+    },
+    "fr": {
+     "t": "Quand ajouter une sauce sucrée",
+     "g": "Laque avec une sauce sucrée au bon moment pour qu'elle caramélise au lieu de brûler.",
+     "p": [
+      "Le sucre brûle aux températures du grill : une sauce sucrée ajoutée trop tôt devient noire et amère.",
+      "Cuis d'abord l'aliment presque entièrement, puis badigeonne la sauce pendant les 5 à 10 dernières minutes.",
+      "Laque à feu moyen ou indirect, en couche fine, laisse prendre et recommence une ou deux fois pour un fini collant."
+     ],
+     "q": "As-tu déjà vu ta sauce barbecue brûler sur la grille ?",
+     "c": "La prochaine fois que tu utilises une sauce sucrée, attends les 10 dernières minutes et laque en deux fines couches."
+    },
+    "it": {
+     "t": "Quando aggiungere una salsa dolce",
+     "g": "Glassa con le salse dolci al momento giusto perché caramellino invece di bruciare.",
+     "p": [
+      "Lo zucchero brucia alle temperature della griglia: una salsa dolce messa troppo presto diventa nera e amara.",
+      "Cuoci prima il cibo quasi del tutto, poi spennella la salsa negli ultimi 5-10 minuti.",
+      "Glassa a fuoco medio o indiretto, con uno strato sottile, lascia rapprendere e ripeti una o due volte per un finale lucido."
+     ],
+     "q": "Ti è mai bruciata la salsa barbecue sulla griglia?",
+     "c": "La prossima volta che usi una salsa dolce, aspetta gli ultimi 10 minuti e glassa in due strati sottili."
+    },
+    "pt": {
+     "t": "Quando juntar um molho doce",
+     "g": "Pincela molhos doces no momento certo para caramelizarem em vez de queimarem.",
+     "p": [
+      "O açúcar queima às temperaturas da grelha, por isso um molho doce posto cedo fica negro e amargo.",
+      "Coze primeiro a comida quase por completo e depois pincela o molho nos últimos 5 a 10 minutos.",
+      "Glaceia em calor médio ou indireto, numa camada fina, deixa secar e repete uma ou duas vezes para um acabamento brilhante."
+     ],
+     "q": "Já te aconteceu o molho barbecue queimar na grelha?",
+     "c": "Da próxima vez que usares um molho doce, espera pelos últimos 10 minutos e pincela em duas camadas finas."
+    },
+    "pt_BR": {
+     "t": "Quando passar um molho doce",
+     "g": "Pincele molhos doces na hora certa para caramelizarem em vez de queimar.",
+     "p": [
+      "O açúcar queima nas temperaturas da grelha, então um molho doce passado cedo fica preto e amargo.",
+      "Cozinhe a comida quase toda primeiro e só então pincele o molho nos últimos 5 a 10 minutos.",
+      "Pincele em fogo médio ou indireto, numa camada fina, deixe firmar e repita uma ou duas vezes para um acabamento brilhante."
+     ],
+     "q": "Já aconteceu de o molho barbecue queimar na grelha?",
+     "c": "Na próxima vez que usar um molho doce, espere os últimos 10 minutos e pincele em duas camadas finas."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Making a quick tomato barbecue sauce",
+     "g": "Cook a simple, balanced tomato barbecue sauce from everyday ingredients.",
+     "p": [
+      "Start with ketchup or tomato passata, then add vinegar for tang, brown sugar or honey for sweetness.",
+      "Season with smoked paprika, garlic powder, onion powder, mustard and a little salt and pepper.",
+      "Simmer gently for 10 to 15 minutes, stirring, then taste and balance sweet, sour, salty and spicy."
+     ],
+     "q": "Would you make your sauce sweeter, tangier, smokier or spicier?",
+     "c": "Make a small batch of quick tomato barbecue sauce, taste it at the end and adjust one thing to your liking."
+    },
+    "de": {
+     "t": "Schnelle Tomaten-Barbecue-Sauce",
+     "g": "Koch eine einfache, ausgewogene Tomaten-Barbecue-Sauce aus Alltagszutaten.",
+     "p": [
+      "Beginne mit Ketchup oder passierten Tomaten, dann Essig für Säure und braunen Zucker oder Honig für Süße.",
+      "Würze mit geräuchertem Paprika, Knoblauch- und Zwiebelpulver, Senf und etwas Salz und Pfeffer.",
+      "10 bis 15 Minuten sanft köcheln lassen und rühren, dann abschmecken: süß, sauer, salzig und scharf ausbalancieren."
+     ],
+     "q": "Würdest du deine Sauce süßer, saurer, rauchiger oder schärfer machen?",
+     "c": "Koch eine kleine Menge schnelle Tomaten-Barbecue-Sauce, probier sie am Ende und passe eine Sache an."
+    },
+    "es": {
+     "t": "Una salsa barbacoa de tomate rápida",
+     "g": "Prepara una salsa barbacoa de tomate sencilla y equilibrada con ingredientes de diario.",
+     "p": [
+      "Empieza con kétchup o tomate triturado y añade vinagre para la acidez y azúcar moreno o miel para el dulzor.",
+      "Sazona con pimentón ahumado, ajo y cebolla en polvo, mostaza y un poco de sal y pimienta.",
+      "Cuece a fuego suave de 10 a 15 minutos removiendo, luego prueba y equilibra dulce, ácido, salado y picante."
+     ],
+     "q": "¿Harías tu salsa más dulce, más ácida, más ahumada o más picante?",
+     "c": "Prepara una pequeña cantidad de salsa barbacoa de tomate rápida, pruébala al final y ajusta una cosa a tu gusto."
+    },
+    "fr": {
+     "t": "Une sauce barbecue tomate express",
+     "g": "Prépare une sauce barbecue à la tomate simple et équilibrée avec des ingrédients du quotidien.",
+     "p": [
+      "Commence avec du ketchup ou du coulis de tomate, puis ajoute du vinaigre pour l'acidité et du sucre roux ou du miel.",
+      "Assaisonne de paprika fumé, ail et oignon en poudre, moutarde, et un peu de sel et de poivre.",
+      "Laisse frémir 10 à 15 minutes en remuant, puis goûte et équilibre sucré, acide, salé et piquant."
+     ],
+     "q": "Ferais-tu ta sauce plus sucrée, plus acidulée, plus fumée ou plus piquante ?",
+     "c": "Prépare une petite quantité de sauce barbecue tomate express, goûte-la à la fin et ajuste un élément à ton goût."
+    },
+    "it": {
+     "t": "Salsa barbecue al pomodoro veloce",
+     "g": "Prepara una salsa barbecue al pomodoro semplice ed equilibrata con ingredienti di tutti i giorni.",
+     "p": [
+      "Parti da ketchup o passata di pomodoro, poi aggiungi aceto per l'acidità e zucchero di canna o miele per la dolcezza.",
+      "Insaporisci con paprika affumicata, aglio e cipolla in polvere, senape e un po' di sale e pepe.",
+      "Fai sobbollire 10-15 minuti mescolando, poi assaggia e bilancia dolce, acido, salato e piccante."
+     ],
+     "q": "Faresti la tua salsa più dolce, più acidula, più affumicata o più piccante?",
+     "c": "Prepara una piccola dose di salsa barbecue veloce, assaggiala alla fine e regola una cosa a tuo gusto."
+    },
+    "pt": {
+     "t": "Um molho barbecue de tomate rápido",
+     "g": "Faz um molho barbecue de tomate simples e equilibrado com ingredientes do dia a dia.",
+     "p": [
+      "Começa com ketchup ou polpa de tomate e junta vinagre para a acidez e açúcar mascavado ou mel para a doçura.",
+      "Tempera com colorau fumado, alho e cebola em pó, mostarda e um pouco de sal e pimenta.",
+      "Deixa ferver em lume brando 10 a 15 minutos, mexendo, e depois prova e equilibra doce, ácido, salgado e picante."
+     ],
+     "q": "Farias o teu molho mais doce, mais ácido, mais fumado ou mais picante?",
+     "c": "Faz uma pequena quantidade de molho barbecue de tomate rápido, prova-o no fim e ajusta uma coisa a teu gosto."
+    },
+    "pt_BR": {
+     "t": "Molho barbecue de tomate rápido",
+     "g": "Faça um molho barbecue de tomate simples e equilibrado com ingredientes do dia a dia.",
+     "p": [
+      "Comece com ketchup ou molho de tomate e acrescente vinagre para a acidez e açúcar mascavo ou mel para o doce.",
+      "Tempere com páprica defumada, alho e cebola em pó, mostarda e um pouco de sal e pimenta.",
+      "Cozinhe em fogo baixo por 10 a 15 minutos, mexendo, depois prove e equilibre doce, ácido, salgado e picante."
+     ],
+     "q": "Você deixaria seu molho mais doce, mais ácido, mais defumado ou mais picante?",
+     "c": "Faça uma pequena porção de molho barbecue de tomate rápido, prove no final e ajuste uma coisa ao seu gosto."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Herb butters for the grill",
+     "g": "Make a compound butter with garlic and herbs to melt over steaks and vegetables.",
+     "p": [
+      "Mash softened butter with chopped garlic, fresh herbs like parsley or chives, a pinch of salt and some lemon zest.",
+      "Roll it into a log in baking paper or cling film and chill until firm, then slice off rounds as needed.",
+      "Place a slice on hot steak, grilled corn, fish or vegetables right before serving and let it melt into a sauce."
+     ],
+     "q": "Which herbs would you put in your own butter?",
+     "c": "Make a small herb butter log and keep it in the fridge to top your next grilled meal."
+    },
+    "de": {
+     "t": "Kräuterbutter für den Grill",
+     "g": "Mach eine Kräuterbutter mit Knoblauch, die über Steaks und Gemüse schmilzt.",
+     "p": [
+      "Zerdrück weiche Butter mit gehacktem Knoblauch, frischen Kräutern wie Petersilie oder Schnittlauch, Salz und Zitronenschale.",
+      "Roll sie in Backpapier oder Frischhaltefolie zu einer Rolle, kühl sie fest und schneide nach Bedarf Scheiben ab.",
+      "Leg kurz vor dem Servieren eine Scheibe auf heißes Steak, Mais, Fisch oder Gemüse und lass sie zur Sauce schmelzen."
+     ],
+     "q": "Welche Kräuter würdest du in deine eigene Butter geben?",
+     "c": "Mach eine kleine Rolle Kräuterbutter und bewahre sie im Kühlschrank auf, für dein nächstes Grillessen."
+    },
+    "es": {
+     "t": "Mantequillas de hierbas para la parrilla",
+     "g": "Prepara una mantequilla compuesta con ajo y hierbas para fundir sobre filetes y verduras.",
+     "p": [
+      "Mezcla mantequilla blanda con ajo picado, hierbas frescas como perejil o cebollino, una pizca de sal y ralladura de limón.",
+      "Dale forma de cilindro con papel de horno o film, enfríala hasta que esté firme y corta rodajas cuando la necesites.",
+      "Pon una rodaja sobre el filete caliente, el maíz, el pescado o las verduras justo antes de servir y deja que se funda."
+     ],
+     "q": "¿Qué hierbas pondrías en tu propia mantequilla?",
+     "c": "Prepara un pequeño cilindro de mantequilla de hierbas y guárdalo en la nevera para tu próxima comida a la parrilla."
+    },
+    "fr": {
+     "t": "Beurres aux herbes pour le grill",
+     "g": "Prépare un beurre composé à l'ail et aux herbes à faire fondre sur steaks et légumes.",
+     "p": [
+      "Écrase du beurre mou avec ail haché, herbes fraîches comme persil ou ciboulette, une pincée de sel et du zeste de citron.",
+      "Roule-le en boudin dans du papier cuisson ou du film, laisse durcir au frais et coupe des rondelles au besoin.",
+      "Pose une rondelle sur un steak chaud, du maïs, du poisson ou des légumes juste avant de servir et laisse fondre."
+     ],
+     "q": "Quelles herbes mettrais-tu dans ton propre beurre ?",
+     "c": "Prépare un petit boudin de beurre aux herbes et garde-le au frigo pour ta prochaine grillade."
+    },
+    "it": {
+     "t": "Burri alle erbe per la griglia",
+     "g": "Prepara un burro aromatizzato con aglio ed erbe da far sciogliere su bistecche e verdure.",
+     "p": [
+      "Lavora il burro morbido con aglio tritato, erbe fresche come prezzemolo o erba cipollina, un pizzico di sale e scorza di limone.",
+      "Arrotolalo a cilindro nella carta forno o nella pellicola, fallo rassodare in frigo e taglia rondelle al bisogno.",
+      "Metti una rondella su bistecca calda, pannocchia, pesce o verdure appena prima di servire e lasciala sciogliere."
+     ],
+     "q": "Quali erbe metteresti nel tuo burro?",
+     "c": "Prepara un piccolo cilindro di burro alle erbe e tienilo in frigo per la tua prossima grigliata."
+    },
+    "pt": {
+     "t": "Manteigas de ervas para a grelha",
+     "g": "Faz uma manteiga composta com alho e ervas para derreter sobre bifes e legumes.",
+     "p": [
+      "Esmaga manteiga mole com alho picado, ervas frescas como salsa ou cebolinho, uma pitada de sal e raspa de limão.",
+      "Enrola-a num cilindro em papel vegetal ou película, deixa endurecer no frio e corta rodelas quando precisares.",
+      "Põe uma rodela sobre um bife quente, milho, peixe ou legumes mesmo antes de servir e deixa derreter."
+     ],
+     "q": "Que ervas porias na tua própria manteiga?",
+     "c": "Faz um pequeno rolo de manteiga de ervas e guarda-o no frigorífico para o teu próximo grelhado."
+    },
+    "pt_BR": {
+     "t": "Manteiga de ervas para o churrasco",
+     "g": "Faça uma manteiga composta com alho e ervas para derreter sobre carnes e legumes.",
+     "p": [
+      "Amasse manteiga em temperatura ambiente com alho picado, ervas frescas como salsinha ou cebolinha, sal e raspas de limão.",
+      "Enrole num cilindro com papel-manteiga ou filme, leve à geladeira até firmar e corte rodelas quando precisar.",
+      "Coloque uma rodela sobre a carne quente, o milho, o peixe ou os legumes logo antes de servir e deixe derreter."
+     ],
+     "q": "Quais ervas você colocaria na sua própria manteiga?",
+     "c": "Faça um pequeno rolo de manteiga de ervas e guarde na geladeira para o seu próximo churrasco."
+    }
+   }
+  }
+ ]
+}

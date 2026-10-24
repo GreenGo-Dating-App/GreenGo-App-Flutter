@@ -1,0 +1,835 @@
+{
+ "topic": "fashion_basics",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Washing clothes the right way",
+     "g": "Learn sorting, temperature and turning garments inside out to protect them.",
+     "p": [
+      "Sort by colour and fabric weight so dark dyes and delicates stay safe.",
+      "Turn clothes inside out and close zips to reduce wear.",
+      "Cooler washes and full loads save energy and are kinder to fabric."
+     ],
+     "q": "How do you sort your laundry now, and could one small change help?",
+     "c": "Wash one load today with a cooler setting and garments turned inside out."
+    },
+    "de": {
+     "t": "Kleidung richtig waschen",
+     "g": "Sortieren, Temperatur und Wenden von Kleidung lernen, um sie zu schützen.",
+     "p": [
+      "Sortiere nach Farbe und Stoffstärke, damit dunkle Farben und Zartes geschützt bleiben.",
+      "Wende Kleidung auf links und schließe Reißverschlüsse, um Verschleiß zu mindern.",
+      "Kühlere Wäschen und volle Trommeln sparen Energie und schonen den Stoff."
+     ],
+     "q": "Wie sortierst du deine Wäsche jetzt, und könnte eine kleine Änderung helfen?",
+     "c": "Wasche heute eine Ladung kühler und mit auf links gewendeten Teilen."
+    },
+    "es": {
+     "t": "Lavar la ropa correctamente",
+     "g": "Aprender a clasificar, elegir temperatura y poner la ropa del revés para protegerla.",
+     "p": [
+      "Separa por color y grosor del tejido para cuidar tintes oscuros y prendas delicadas.",
+      "Pon la ropa del revés y cierra las cremalleras para reducir el desgaste.",
+      "Lavar en frío y con carga completa ahorra energía y cuida el tejido."
+     ],
+     "q": "¿Cómo clasificas ahora tu colada y qué pequeño cambio podría ayudar?",
+     "c": "Haz hoy una colada en frío con las prendas del revés."
+    },
+    "fr": {
+     "t": "Bien laver ses vêtements",
+     "g": "Apprendre le tri, la température et le retournement des vêtements pour les protéger.",
+     "p": [
+      "Trie par couleur et épaisseur du tissu pour protéger teintes foncées et fragiles.",
+      "Retourne les vêtements et ferme les fermetures éclair pour limiter l'usure.",
+      "Des lavages plus froids et des machines pleines économisent l'énergie et ménagent le tissu."
+     ],
+     "q": "Comment tries-tu ton linge aujourd'hui, et un petit changement pourrait-il aider ?",
+     "c": "Fais aujourd'hui une machine à plus basse température, vêtements retournés."
+    },
+    "it": {
+     "t": "Lavare i vestiti nel modo giusto",
+     "g": "Imparare a dividere, scegliere la temperatura e rivoltare i capi per proteggerli.",
+     "p": [
+      "Dividi per colore e spessore del tessuto per proteggere tinte scure e capi delicati.",
+      "Rivolta i capi e chiudi le cerniere per ridurre l'usura.",
+      "Lavaggi più freddi e cariche piene risparmiano energia e rispettano il tessuto."
+     ],
+     "q": "Come dividi ora il bucato e quale piccolo cambiamento potrebbe aiutare?",
+     "c": "Oggi fai una lavatrice a temperatura più bassa con i capi rivoltati."
+    },
+    "pt": {
+     "t": "Lavar a roupa da forma certa",
+     "g": "Aprender a separar, escolher a temperatura e virar a roupa do avesso para a proteger.",
+     "p": [
+      "Separa por cor e espessura do tecido para proteger tintas escuras e peças delicadas.",
+      "Vira a roupa do avesso e fecha os fechos para reduzir o desgaste.",
+      "Lavagens mais frias e máquinas cheias poupam energia e poupam o tecido."
+     ],
+     "q": "Como separas a roupa agora e que pequena mudança poderia ajudar?",
+     "c": "Faz hoje uma máquina a temperatura mais baixa, com as peças do avesso."
+    },
+    "pt_BR": {
+     "t": "Lavando a roupa do jeito certo",
+     "g": "Aprender a separar, escolher a temperatura e virar a roupa do avesso para protegê-la.",
+     "p": [
+      "Separe por cor e espessura do tecido para proteger tingimentos escuros e peças delicadas.",
+      "Vire a roupa do avesso e feche os zíperes para reduzir o desgaste.",
+      "Lavagens mais frias e máquinas cheias economizam energia e poupam o tecido."
+     ],
+     "q": "Como você separa a roupa hoje e que pequena mudança poderia ajudar?",
+     "c": "Faça hoje uma lavagem em temperatura mais baixa, com as peças do avesso."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drying and storing clothes",
+     "g": "Learn air drying, folding knits and hanging the right pieces to keep their shape.",
+     "p": [
+      "Air drying is gentle on fabric and saves energy.",
+      "Fold heavy knits flat, because hanging can stretch them out.",
+      "Hang shirts, dresses and coats on suitable hangers to keep their shoulders."
+     ],
+     "q": "How do you dry and store your clothes, and what could be gentler?",
+     "c": "Fold one knit and hang one shirt properly today, then see how they look."
+    },
+    "de": {
+     "t": "Kleidung trocknen und aufbewahren",
+     "g": "Lufttrocknen, Strick falten und passende Teile aufhängen, damit sie ihre Form behalten.",
+     "p": [
+      "Lufttrocknen schont den Stoff und spart Energie.",
+      "Falte schwere Strickteile flach, denn Aufhängen kann sie ausleiern.",
+      "Hänge Hemden, Kleider und Mäntel auf passende Bügel, damit die Schultern in Form bleiben."
+     ],
+     "q": "Wie trocknest und lagerst du deine Kleidung, und was ginge schonender?",
+     "c": "Falte heute ein Strickteil und hänge ein Hemd richtig auf, dann sieh nach dem Ergebnis."
+    },
+    "es": {
+     "t": "Secar y guardar la ropa",
+     "g": "Aprender a secar al aire, doblar los jerséis y colgar lo adecuado para conservar la forma.",
+     "p": [
+      "Secar al aire cuida el tejido y ahorra energía.",
+      "Dobla los jerséis gruesos en plano, porque colgados pueden deformarse.",
+      "Cuelga camisas, vestidos y abrigos en perchas adecuadas para mantener los hombros."
+     ],
+     "q": "¿Cómo secas y guardas tu ropa y qué podría ser más suave?",
+     "c": "Dobla hoy un jersey y cuelga una camisa bien, y mira cómo quedan."
+    },
+    "fr": {
+     "t": "Sécher et ranger ses vêtements",
+     "g": "Apprendre le séchage à l'air, le pliage des mailles et le bon cintre pour garder la forme.",
+     "p": [
+      "Le séchage à l'air ménage le tissu et économise l'énergie.",
+      "Plie les tricots épais à plat, car le cintre peut les déformer.",
+      "Mets chemises, robes et manteaux sur des cintres adaptés pour garder les épaules."
+     ],
+     "q": "Comment sèches-tu et ranges-tu tes vêtements, et que pourrais-tu faire plus doucement ?",
+     "c": "Plie aujourd'hui un pull et suspends bien une chemise, puis observe le résultat."
+    },
+    "it": {
+     "t": "Asciugare e riporre i vestiti",
+     "g": "Imparare l'asciugatura all'aria, a piegare i maglioni e ad appendere i capi giusti per mantenere la forma.",
+     "p": [
+      "L'asciugatura all'aria è delicata con il tessuto e fa risparmiare energia.",
+      "Piega i maglioni pesanti in piano, perché appesi possono allungarsi.",
+      "Appendi camicie, abiti e cappotti su grucce adatte per mantenere le spalle."
+     ],
+     "q": "Come asciughi e riponi i vestiti e cosa potresti fare con più delicatezza?",
+     "c": "Oggi piega un maglione e appendi bene una camicia, poi guarda il risultato."
+    },
+    "pt": {
+     "t": "Secar e guardar a roupa",
+     "g": "Aprender a secar ao ar, dobrar a malha e pendurar as peças certas para manter a forma.",
+     "p": [
+      "Secar ao ar é suave para o tecido e poupa energia.",
+      "Dobra a malha grossa na horizontal, porque pendurada pode deformar.",
+      "Pendura camisas, vestidos e casacos em cabides adequados para manter os ombros."
+     ],
+     "q": "Como secas e guardas a tua roupa e o que poderia ser mais suave?",
+     "c": "Dobra hoje uma camisola de malha e pendura bem uma camisa, e vê o resultado."
+    },
+    "pt_BR": {
+     "t": "Secando e guardando a roupa",
+     "g": "Aprender a secar ao ar, dobrar a malharia e pendurar as peças certas para manter o formato.",
+     "p": [
+      "Secar ao ar é suave com o tecido e economiza energia.",
+      "Dobre a malha grossa na horizontal, porque pendurada pode deformar.",
+      "Pendure camisas, vestidos e casacos em cabides adequados para manter os ombros."
+     ],
+     "q": "Como você seca e guarda a roupa e o que poderia ser mais suave?",
+     "c": "Dobre hoje um suéter e pendure bem uma camisa, e veja como ficam."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ironing and steaming basics",
+     "g": "Learn when to iron, when to steam and simple tricks for a crisp look.",
+     "p": [
+      "Check the label for the right heat before ironing.",
+      "Steam relaxes creases gently and suits many delicate fabrics.",
+      "Hanging clothes in a steamy bathroom can smooth light wrinkles."
+     ],
+     "q": "Do you enjoy ironing, or do you prefer low-crease fabrics?",
+     "c": "Smooth one garment with steam or an iron, using the lowest suitable heat."
+    },
+    "de": {
+     "t": "Bügeln und Dampfen: die Grundlagen",
+     "g": "Lernen, wann man bügelt, wann man dampft und welche einfachen Tricks für einen glatten Look helfen.",
+     "p": [
+      "Prüfe vorm Bügeln auf dem Etikett die passende Hitze.",
+      "Dampf löst Falten sanft und eignet sich für viele zarte Stoffe.",
+      "Kleidung im dampfigen Bad aufzuhängen glättet leichte Knitter."
+     ],
+     "q": "Bügelst du gern, oder magst du knitterarme Stoffe lieber?",
+     "c": "Glätte heute ein Teil mit Dampf oder Bügeleisen bei möglichst niedriger passender Hitze."
+    },
+    "es": {
+     "t": "Planchado y vaporizado: lo básico",
+     "g": "Aprender cuándo planchar, cuándo vaporizar y trucos sencillos para un aspecto impecable.",
+     "p": [
+      "Mira la etiqueta para elegir el calor adecuado antes de planchar.",
+      "El vapor relaja las arrugas con suavidad y sirve para muchos tejidos delicados.",
+      "Colgar la ropa en un baño con vapor alisa arrugas leves."
+     ],
+     "q": "¿Te gusta planchar o prefieres tejidos que casi no se arrugan?",
+     "c": "Alisa hoy una prenda con vapor o plancha, con el calor más bajo posible."
+    },
+    "fr": {
+     "t": "Repassage et vapeur : les bases",
+     "g": "Apprendre quand repasser, quand utiliser la vapeur et des astuces simples pour un rendu net.",
+     "p": [
+      "Vérifie l'étiquette pour choisir la bonne chaleur avant de repasser.",
+      "La vapeur détend les plis en douceur et convient à beaucoup de tissus délicats.",
+      "Suspendre les vêtements dans une salle de bain pleine de vapeur lisse les petits plis."
+     ],
+     "q": "Aimes-tu repasser, ou préfères-tu les tissus qui se froissent peu ?",
+     "c": "Défroisse aujourd'hui une pièce à la vapeur ou au fer, à la température la plus basse adaptée."
+    },
+    "it": {
+     "t": "Stiro e vapore: le basi",
+     "g": "Imparare quando stirare, quando usare il vapore e trucchi semplici per un aspetto curato.",
+     "p": [
+      "Controlla l'etichetta per la giusta temperatura prima di stirare.",
+      "Il vapore rilassa le pieghe con dolcezza e va bene per molti tessuti delicati.",
+      "Appendere i vestiti in un bagno pieno di vapore distende le pieghe leggere."
+     ],
+     "q": "Ti piace stirare o preferisci tessuti che si sgualciscono poco?",
+     "c": "Oggi stira o vaporizza un capo, con la temperatura più bassa adatta."
+    },
+    "pt": {
+     "t": "Engomar e vaporizar: o básico",
+     "g": "Aprender quando engomar, quando usar vapor e truques simples para um aspeto cuidado.",
+     "p": [
+      "Confere a etiqueta para saber o calor certo antes de engomar.",
+      "O vapor relaxa os vincos com suavidade e serve para muitos tecidos delicados.",
+      "Pendurar a roupa numa casa de banho com vapor alisa amarrotados leves."
+     ],
+     "q": "Gostas de engomar ou preferes tecidos que amarrotam pouco?",
+     "c": "Alisa hoje uma peça com vapor ou ferro, com o calor mais baixo adequado."
+    },
+    "pt_BR": {
+     "t": "Passar e vaporizar: o básico",
+     "g": "Aprender quando passar, quando usar vapor e truques simples para um visual alinhado.",
+     "p": [
+      "Confira a etiqueta para saber o calor certo antes de passar.",
+      "O vapor relaxa os amassados com suavidade e serve para muitos tecidos delicados.",
+      "Pendurar a roupa num banheiro com vapor alisa amassados leves."
+     ],
+     "q": "Você gosta de passar roupa ou prefere tecidos que amassam pouco?",
+     "c": "Alise hoje uma peça com vapor ou ferro, com o calor mais baixo adequado."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Neutral colours",
+     "g": "Meet black, white, grey, navy, beige and brown as an easy base for outfits.",
+     "p": [
+      "Neutrals combine with almost any other colour.",
+      "A neutral base makes it simple to add one colourful piece.",
+      "Everyone's neutrals differ; choose the ones you enjoy wearing."
+     ],
+     "q": "Which neutral colours do you wear most already?",
+     "c": "Build an outfit today using only neutrals and see how calm it feels."
+    },
+    "de": {
+     "t": "Neutrale Farben",
+     "g": "Schwarz, Weiß, Grau, Marine, Beige und Braun als einfache Basis für Outfits kennenlernen.",
+     "p": [
+      "Neutrale Farben lassen sich mit fast jeder anderen Farbe kombinieren.",
+      "Eine neutrale Basis macht es leicht, ein farbiges Teil hinzuzufügen.",
+      "Jeder hat andere Neutrals; wähle die, die du gern trägst."
+     ],
+     "q": "Welche neutralen Farben trägst du schon am meisten?",
+     "c": "Stelle heute ein Outfit nur aus Neutralfarben zusammen und spüre, wie ruhig es wirkt."
+    },
+    "es": {
+     "t": "Colores neutros",
+     "g": "Conocer el negro, el blanco, el gris, el azul marino, el beige y el marrón como base fácil.",
+     "p": [
+      "Los neutros combinan con casi cualquier otro color.",
+      "Una base neutra facilita añadir una sola prenda de color.",
+      "Cada persona tiene sus neutros; elige los que disfrutes llevando."
+     ],
+     "q": "¿Qué colores neutros llevas ya con más frecuencia?",
+     "c": "Crea hoy un conjunto solo con neutros y fíjate en lo tranquilo que resulta."
+    },
+    "fr": {
+     "t": "Les couleurs neutres",
+     "g": "Découvrir le noir, le blanc, le gris, le bleu marine, le beige et le marron comme base facile.",
+     "p": [
+      "Les neutres se marient avec presque toutes les autres couleurs.",
+      "Une base neutre facilite l'ajout d'une pièce colorée.",
+      "Chacun a ses neutres; choisis ceux que tu aimes porter."
+     ],
+     "q": "Quelles couleurs neutres portes-tu déjà le plus ?",
+     "c": "Compose aujourd'hui une tenue uniquement en neutres et sens son calme."
+    },
+    "it": {
+     "t": "I colori neutri",
+     "g": "Scoprire nero, bianco, grigio, blu navy, beige e marrone come base facile per gli outfit.",
+     "p": [
+      "I neutri si abbinano a quasi tutti gli altri colori.",
+      "Una base neutra rende semplice aggiungere un solo capo colorato.",
+      "Ognuno ha i suoi neutri; scegli quelli che ti piace indossare."
+     ],
+     "q": "Quali colori neutri indossi già di più?",
+     "c": "Crea oggi un outfit solo con i neutri e osserva quanto è rilassante."
+    },
+    "pt": {
+     "t": "As cores neutras",
+     "g": "Conhecer o preto, o branco, o cinzento, o azul-marinho, o bege e o castanho como base fácil.",
+     "p": [
+      "As cores neutras combinam com quase todas as outras.",
+      "Uma base neutra facilita acrescentar uma única peça colorida.",
+      "Cada pessoa tem os seus neutros; escolhe os que gostas de vestir."
+     ],
+     "q": "Que cores neutras já usas mais?",
+     "c": "Cria hoje um conjunto só com neutros e repara como é tranquilo."
+    },
+    "pt_BR": {
+     "t": "As cores neutras",
+     "g": "Conhecer o preto, o branco, o cinza, o azul-marinho, o bege e o marrom como base fácil.",
+     "p": [
+      "As cores neutras combinam com quase todas as outras.",
+      "Uma base neutra facilita acrescentar uma única peça colorida.",
+      "Cada pessoa tem seus neutros; escolha os que você gosta de usar."
+     ],
+     "q": "Quais cores neutras você já usa mais?",
+     "c": "Monte hoje um look só com neutros e perceba como é tranquilo."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The colour wheel",
+     "g": "See how complementary, analogous and monochrome colours work in outfits.",
+     "p": [
+      "Complementary colours sit opposite on the wheel, like blue and orange.",
+      "Analogous colours are neighbours, like blue, teal and green, and feel harmonious.",
+      "Monochrome means different shades of one colour."
+     ],
+     "q": "Which colour combination do you find most pleasing to the eye?",
+     "c": "Pick a colour pair today and try one complementary or analogous outfit."
+    },
+    "de": {
+     "t": "Der Farbkreis",
+     "g": "Sehen, wie komplementäre, analoge und monochrome Farben in Outfits wirken.",
+     "p": [
+      "Komplementärfarben liegen sich im Kreis gegenüber, etwa Blau und Orange.",
+      "Analoge Farben sind Nachbarn, etwa Blau, Türkis und Grün, und wirken harmonisch.",
+      "Monochrom bedeutet verschiedene Töne einer Farbe."
+     ],
+     "q": "Welche Farbkombination gefällt deinem Auge am besten?",
+     "c": "Wähle heute ein Farbpaar und probiere ein komplementäres oder analoges Outfit."
+    },
+    "es": {
+     "t": "La rueda de color",
+     "g": "Ver cómo funcionan los colores complementarios, análogos y monocromos en un conjunto.",
+     "p": [
+      "Los colores complementarios están opuestos en la rueda, como azul y naranja.",
+      "Los análogos son vecinos, como azul, turquesa y verde, y resultan armoniosos.",
+      "Monocromo significa distintos tonos de un mismo color."
+     ],
+     "q": "¿Qué combinación de colores te resulta más agradable a la vista?",
+     "c": "Elige hoy una pareja de colores y prueba un conjunto complementario o análogo."
+    },
+    "fr": {
+     "t": "Le cercle chromatique",
+     "g": "Voir comment fonctionnent les couleurs complémentaires, analogues et monochromes en tenue.",
+     "p": [
+      "Les couleurs complémentaires sont opposées sur le cercle, comme le bleu et l'orange.",
+      "Les analogues sont voisines, comme bleu, turquoise et vert, et paraissent harmonieuses.",
+      "Monochrome signifie plusieurs teintes d'une même couleur."
+     ],
+     "q": "Quelle association de couleurs trouves-tu la plus agréable à l'oeil ?",
+     "c": "Choisis aujourd'hui un duo de couleurs et teste une tenue complémentaire ou analogue."
+    },
+    "it": {
+     "t": "La ruota dei colori",
+     "g": "Vedere come funzionano i colori complementari, analoghi e monocromatici negli outfit.",
+     "p": [
+      "I colori complementari sono opposti sulla ruota, come blu e arancione.",
+      "Gli analoghi sono vicini, come blu, turchese e verde, e danno armonia.",
+      "Monocromatico significa varie sfumature di uno stesso colore."
+     ],
+     "q": "Quale abbinamento di colori trovi più piacevole alla vista?",
+     "c": "Scegli oggi una coppia di colori e prova un outfit complementare o analogo."
+    },
+    "pt": {
+     "t": "O círculo cromático",
+     "g": "Ver como funcionam as cores complementares, análogas e monocromáticas num conjunto.",
+     "p": [
+      "As cores complementares ficam opostas no círculo, como azul e laranja.",
+      "As análogas são vizinhas, como azul, turquesa e verde, e dão harmonia.",
+      "Monocromático significa vários tons da mesma cor."
+     ],
+     "q": "Que combinação de cores achas mais agradável à vista?",
+     "c": "Escolhe hoje um par de cores e experimenta um conjunto complementar ou análogo."
+    },
+    "pt_BR": {
+     "t": "O círculo cromático",
+     "g": "Ver como funcionam as cores complementares, análogas e monocromáticas num look.",
+     "p": [
+      "As cores complementares ficam opostas no círculo, como azul e laranja.",
+      "As análogas são vizinhas, como azul, turquesa e verde, e dão harmonia.",
+      "Monocromático significa vários tons da mesma cor."
+     ],
+     "q": "Qual combinação de cores você acha mais agradável aos olhos?",
+     "c": "Escolha hoje um par de cores e experimente um look complementar ou análogo."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Warm and cool colours",
+     "g": "See how warm and cool shades create different moods in an outfit.",
+     "p": [
+      "Warm colours like red, orange and yellow feel energetic and cosy.",
+      "Cool colours like blue, green and purple feel calm and fresh.",
+      "You can mix both; a neutral in between helps them get along."
+     ],
+     "q": "Do you gravitate towards warm or cool colours, and how do they make you feel?",
+     "c": "Wear one warm and one cool colour today and notice how they play together."
+    },
+    "de": {
+     "t": "Warme und kühle Farben",
+     "g": "Sehen, wie warme und kühle Töne unterschiedliche Stimmungen im Outfit erzeugen.",
+     "p": [
+      "Warme Farben wie Rot, Orange und Gelb wirken energiegeladen und gemütlich.",
+      "Kühle Farben wie Blau, Grün und Violett wirken ruhig und frisch.",
+      "Du kannst beides mischen; ein Neutralton dazwischen hilft."
+     ],
+     "q": "Zieht es dich zu warmen oder kühlen Farben, und wie fühlst du dich damit?",
+     "c": "Trage heute eine warme und eine kühle Farbe und beobachte ihr Zusammenspiel."
+    },
+    "es": {
+     "t": "Colores cálidos y fríos",
+     "g": "Ver cómo los tonos cálidos y fríos crean estados de ánimo distintos en un conjunto.",
+     "p": [
+      "Los colores cálidos como rojo, naranja y amarillo transmiten energía y calidez.",
+      "Los fríos como azul, verde y morado transmiten calma y frescura.",
+      "Puedes mezclar ambos; un neutro de por medio ayuda a que se lleven bien."
+     ],
+     "q": "¿Te atraen más los colores cálidos o los fríos y cómo te hacen sentir?",
+     "c": "Lleva hoy un color cálido y uno frío y observa cómo se combinan."
+    },
+    "fr": {
+     "t": "Couleurs chaudes et froides",
+     "g": "Voir comment les teintes chaudes et froides créent des ambiances différentes.",
+     "p": [
+      "Les couleurs chaudes comme le rouge, l'orange et le jaune sont énergiques et réconfortantes.",
+      "Les froides comme le bleu, le vert et le violet sont calmes et fraîches.",
+      "Tu peux mélanger les deux; un neutre entre elles les aide à s'accorder."
+     ],
+     "q": "Es-tu plutôt attiré par les couleurs chaudes ou froides, et que ressens-tu ?",
+     "c": "Porte aujourd'hui une couleur chaude et une froide et observe leur dialogue."
+    },
+    "it": {
+     "t": "Colori caldi e freddi",
+     "g": "Vedere come le tinte calde e fredde creano atmosfere diverse in un outfit.",
+     "p": [
+      "I colori caldi come rosso, arancione e giallo danno energia e calore.",
+      "I freddi come blu, verde e viola danno calma e freschezza.",
+      "Puoi mescolarli; un neutro in mezzo aiuta a farli convivere."
+     ],
+     "q": "Sei attratto dai colori caldi o freddi e come ti fanno sentire?",
+     "c": "Indossa oggi un colore caldo e uno freddo e osserva come dialogano."
+    },
+    "pt": {
+     "t": "Cores quentes e frias",
+     "g": "Ver como os tons quentes e frios criam ambientes diferentes num conjunto.",
+     "p": [
+      "As cores quentes, como vermelho, laranja e amarelo, dão energia e aconchego.",
+      "As frias, como azul, verde e roxo, dão calma e frescura.",
+      "Podes misturar as duas; um neutro pelo meio ajuda a darem-se bem."
+     ],
+     "q": "Atraem-te mais as cores quentes ou as frias e como te fazem sentir?",
+     "c": "Usa hoje uma cor quente e uma fria e observa como combinam."
+    },
+    "pt_BR": {
+     "t": "Cores quentes e frias",
+     "g": "Ver como os tons quentes e frios criam climas diferentes num look.",
+     "p": [
+      "As cores quentes, como vermelho, laranja e amarelo, dão energia e aconchego.",
+      "As frias, como azul, verde e roxo, dão calma e frescor.",
+      "Você pode misturar as duas; um neutro no meio ajuda a combinarem."
+     ],
+     "q": "Você se atrai mais por cores quentes ou frias e como elas fazem você se sentir?",
+     "c": "Use hoje uma cor quente e uma fria e observe como combinam."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wearing one colour head to toe",
+     "g": "Try monochrome outfits as a simple, elegant way to look put together.",
+     "p": [
+      "Monochrome means one colour family from top to bottom.",
+      "Vary shades and textures so the outfit has depth.",
+      "It works in any colour, not just black or white."
+     ],
+     "q": "Which single colour would you love to wear head to toe?",
+     "c": "Make a monochrome outfit today with at least two shades of one colour."
+    },
+    "de": {
+     "t": "Eine Farbe von Kopf bis Fuß",
+     "g": "Monochrome Outfits als einfache, elegante Art ausprobieren, gepflegt zu wirken.",
+     "p": [
+      "Monochrom heißt eine Farbfamilie von oben bis unten.",
+      "Variiere Töne und Texturen, damit das Outfit Tiefe bekommt.",
+      "Es klappt in jeder Farbe, nicht nur in Schwarz oder Weiß."
+     ],
+     "q": "In welcher einzigen Farbe würdest du gern von Kopf bis Fuß gehen?",
+     "c": "Stelle heute ein monochromes Outfit mit mindestens zwei Tönen einer Farbe zusammen."
+    },
+    "es": {
+     "t": "Un solo color de pies a cabeza",
+     "g": "Probar conjuntos monocromos como una forma sencilla y elegante de verse arreglado.",
+     "p": [
+      "Monocromo significa una familia de color de arriba abajo.",
+      "Varía tonos y texturas para que el conjunto tenga profundidad.",
+      "Funciona con cualquier color, no solo con negro o blanco."
+     ],
+     "q": "¿Qué color te encantaría llevar de pies a cabeza?",
+     "c": "Crea hoy un conjunto monocromo con al menos dos tonos de un mismo color."
+    },
+    "fr": {
+     "t": "Une seule couleur de la tête aux pieds",
+     "g": "Essayer les tenues monochromes, une façon simple et élégante de paraître soigné.",
+     "p": [
+      "Monochrome signifie une seule famille de couleur de haut en bas.",
+      "Varie les teintes et les textures pour donner de la profondeur.",
+      "Cela marche avec toutes les couleurs, pas seulement le noir ou le blanc."
+     ],
+     "q": "Quelle couleur aimerais-tu porter de la tête aux pieds ?",
+     "c": "Compose aujourd'hui une tenue monochrome avec au moins deux teintes d'une couleur."
+    },
+    "it": {
+     "t": "Un solo colore dalla testa ai piedi",
+     "g": "Provare gli outfit monocromatici, un modo semplice ed elegante per apparire curati.",
+     "p": [
+      "Monocromatico significa una sola famiglia di colore dall'alto in basso.",
+      "Varia sfumature e texture perché l'outfit abbia profondità.",
+      "Funziona con qualsiasi colore, non solo nero o bianco."
+     ],
+     "q": "Quale colore ti piacerebbe indossare dalla testa ai piedi?",
+     "c": "Crea oggi un outfit monocromatico con almeno due sfumature di un colore."
+    },
+    "pt": {
+     "t": "Uma só cor da cabeça aos pés",
+     "g": "Experimentar conjuntos monocromáticos, uma forma simples e elegante de parecer composto.",
+     "p": [
+      "Monocromático significa uma só família de cor de cima a baixo.",
+      "Varia tons e texturas para o conjunto ter profundidade.",
+      "Funciona com qualquer cor, não só com preto ou branco."
+     ],
+     "q": "Que cor gostarias de usar da cabeça aos pés?",
+     "c": "Cria hoje um conjunto monocromático com pelo menos dois tons de uma cor."
+    },
+    "pt_BR": {
+     "t": "Uma cor só da cabeça aos pés",
+     "g": "Experimentar looks monocromáticos, um jeito simples e elegante de parecer composto.",
+     "p": [
+      "Monocromático significa uma só família de cor de cima a baixo.",
+      "Varie tons e texturas para o look ter profundidade.",
+      "Funciona com qualquer cor, não só preto ou branco."
+     ],
+     "q": "Qual cor você adoraria usar da cabeça aos pés?",
+     "c": "Monte hoje um look monocromático com pelo menos dois tons de uma cor."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Adding a pop of colour",
+     "g": "Use one bright piece or accessory to lift a neutral outfit.",
+     "p": [
+      "A pop of colour is a single bright item among calm colours.",
+      "Scarves, bags, shoes or socks are easy places to start.",
+      "Pick a colour you already like looking at, and repeat it once."
+     ],
+     "q": "Which bright item would you enjoy adding to a neutral outfit?",
+     "c": "Add one colourful accessory to a neutral outfit today and see how it feels."
+    },
+    "de": {
+     "t": "Ein Farbakzent setzen",
+     "g": "Mit einem leuchtenden Teil oder Accessoire ein neutrales Outfit aufwerten.",
+     "p": [
+      "Ein Farbakzent ist ein einzelnes leuchtendes Teil unter ruhigen Farben.",
+      "Schals, Taschen, Schuhe oder Socken sind leichte Startpunkte.",
+      "Wähle eine Farbe, die du gern ansiehst, und wiederhole sie einmal."
+     ],
+     "q": "Welches leuchtende Teil würdest du gern zu einem neutralen Outfit tragen?",
+     "c": "Ergänze heute ein neutrales Outfit mit einem farbigen Accessoire und spüre die Wirkung."
+    },
+    "es": {
+     "t": "Añadir un toque de color",
+     "g": "Usar una prenda o un complemento llamativo para dar vida a un conjunto neutro.",
+     "p": [
+      "Un toque de color es una sola pieza viva entre colores tranquilos.",
+      "Pañuelos, bolsos, zapatos o calcetines son sitios fáciles para empezar.",
+      "Elige un color que ya te guste mirar y repítelo una vez."
+     ],
+     "q": "¿Qué prenda viva te gustaría añadir a un conjunto neutro?",
+     "c": "Añade hoy un complemento de color a un conjunto neutro y fíjate en cómo se siente."
+    },
+    "fr": {
+     "t": "Ajouter une touche de couleur",
+     "g": "Utiliser une pièce ou un accessoire vif pour égayer une tenue neutre.",
+     "p": [
+      "Une touche de couleur, c'est une seule pièce vive parmi des tons calmes.",
+      "Foulards, sacs, chaussures ou chaussettes sont faciles pour commencer.",
+      "Choisis une couleur que tu aimes regarder et répète-la une fois."
+     ],
+     "q": "Quelle pièce vive aimerais-tu ajouter à une tenue neutre ?",
+     "c": "Ajoute aujourd'hui un accessoire coloré à une tenue neutre et vois l'effet."
+    },
+    "it": {
+     "t": "Aggiungere un tocco di colore",
+     "g": "Usare un capo o un accessorio vivace per ravvivare un outfit neutro.",
+     "p": [
+      "Un tocco di colore è un solo pezzo vivace tra tinte calme.",
+      "Sciarpe, borse, scarpe o calzini sono posti facili da cui iniziare.",
+      "Scegli un colore che ti piace guardare e ripetilo una volta."
+     ],
+     "q": "Quale pezzo vivace ti piacerebbe aggiungere a un outfit neutro?",
+     "c": "Aggiungi oggi un accessorio colorato a un outfit neutro e osserva l'effetto."
+    },
+    "pt": {
+     "t": "Acrescentar um toque de cor",
+     "g": "Usar uma peça ou acessório vivo para animar um conjunto neutro.",
+     "p": [
+      "Um toque de cor é uma só peça viva entre tons calmos.",
+      "Lenços, malas, sapatos ou meias são sítios fáceis para começar.",
+      "Escolhe uma cor que já gostes de ver e repete-a uma vez."
+     ],
+     "q": "Que peça viva gostarias de acrescentar a um conjunto neutro?",
+     "c": "Acrescenta hoje um acessório colorido a um conjunto neutro e repara no efeito."
+    },
+    "pt_BR": {
+     "t": "Adicionando um toque de cor",
+     "g": "Usar uma peça ou acessório vivo para animar um look neutro.",
+     "p": [
+      "Um toque de cor é uma só peça viva entre tons calmos.",
+      "Lenços, bolsas, sapatos ou meias são lugares fáceis para começar.",
+      "Escolha uma cor que você já goste de olhar e repita uma vez."
+     ],
+     "q": "Que peça viva você gostaria de adicionar a um look neutro?",
+     "c": "Adicione hoje um acessório colorido a um look neutro e perceba o efeito."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Patterns for beginners",
+     "g": "Meet stripes, checks, dots and florals and how to start wearing them with ease.",
+     "p": [
+      "Start with one patterned piece and keep the rest plain.",
+      "Small patterns look softer; large ones make a bolder statement.",
+      "Pick a pattern with colours that already match your wardrobe."
+     ],
+     "q": "Which pattern do you like most, and have you ever worn it?",
+     "c": "Wear one patterned item today and keep everything else a solid colour."
+    },
+    "de": {
+     "t": "Muster für Einsteiger",
+     "g": "Streifen, Karos, Punkte und Blumen kennenlernen und leicht mit dem Tragen beginnen.",
+     "p": [
+      "Beginne mit einem gemusterten Teil und halte den Rest schlicht.",
+      "Kleine Muster wirken zarter; große setzen ein kräftigeres Zeichen.",
+      "Wähle ein Muster mit Farben, die schon zu deinem Schrank passen."
+     ],
+     "q": "Welches Muster magst du am liebsten, und hast du es schon getragen?",
+     "c": "Trage heute ein gemustertes Teil und halte alles andere einfarbig."
+    },
+    "es": {
+     "t": "Estampados para empezar",
+     "g": "Conocer rayas, cuadros, lunares y flores y cómo empezar a llevarlos con soltura.",
+     "p": [
+      "Empieza con una prenda estampada y deja el resto liso.",
+      "Los estampados pequeños se ven más suaves; los grandes hacen una declaración más fuerte.",
+      "Elige un estampado con colores que ya combinen con tu armario."
+     ],
+     "q": "¿Qué estampado te gusta más y lo has llevado alguna vez?",
+     "c": "Lleva hoy una prenda estampada y el resto de un solo color."
+    },
+    "fr": {
+     "t": "Les motifs pour débuter",
+     "g": "Découvrir rayures, carreaux, pois et fleurs et comment commencer à les porter facilement.",
+     "p": [
+      "Commence avec une pièce à motif et garde le reste uni.",
+      "Les petits motifs paraissent plus doux; les grands affirment davantage.",
+      "Choisis un motif dont les couleurs vont déjà avec ta garde-robe."
+     ],
+     "q": "Quel motif préfères-tu, et l'as-tu déjà porté ?",
+     "c": "Porte aujourd'hui une pièce à motif et garde tout le reste uni."
+    },
+    "it": {
+     "t": "I motivi per iniziare",
+     "g": "Scoprire righe, quadri, pois e fiori e come iniziare a indossarli con naturalezza.",
+     "p": [
+      "Inizia con un capo a motivi e tieni il resto in tinta unita.",
+      "I motivi piccoli sembrano più delicati; quelli grandi dicono di più.",
+      "Scegli un motivo con colori che si abbinano già al tuo guardaroba."
+     ],
+     "q": "Quale motivo ti piace di più e lo hai mai indossato?",
+     "c": "Oggi indossa un capo a motivi e tieni tutto il resto in tinta unita."
+    },
+    "pt": {
+     "t": "Padrões para começar",
+     "g": "Conhecer riscas, xadrez, bolinhas e flores e como começar a usá-los à vontade.",
+     "p": [
+      "Começa com uma peça estampada e mantém o resto liso.",
+      "Os padrões pequenos parecem mais suaves; os grandes têm mais presença.",
+      "Escolhe um padrão com cores que já combinem com o teu guarda-roupa."
+     ],
+     "q": "Que padrão preferes e já o usaste alguma vez?",
+     "c": "Usa hoje uma peça estampada e o resto de uma só cor."
+    },
+    "pt_BR": {
+     "t": "Estampas para começar",
+     "g": "Conhecer listras, xadrez, bolinhas e flores e como começar a usá-las com naturalidade.",
+     "p": [
+      "Comece com uma peça estampada e mantenha o resto liso.",
+      "Estampas pequenas parecem mais suaves; as grandes têm mais presença.",
+      "Escolha uma estampa com cores que já combinem com seu guarda-roupa."
+     ],
+     "q": "Qual estampa você mais gosta e já usou alguma vez?",
+     "c": "Use hoje uma peça estampada e o resto de uma cor só."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month of style",
+     "g": "Look back at fit, fabrics and colour, and choose one idea to explore further.",
+     "p": [
+      "Remember what you learned: fit, fabrics, care labels and colour.",
+      "Notice which lesson changed how you look at your clothes.",
+      "Pick one idea to keep exploring in the coming weeks."
+     ],
+     "q": "Which idea from this month felt most useful or surprising?",
+     "c": "Choose one lesson from this month and put it into practice in today's outfit."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Stil-Monat",
+     "g": "Auf Passform, Stoffe und Farbe zurückblicken und eine Idee zum Vertiefen auswählen.",
+     "p": [
+      "Erinnere dich: Passform, Stoffe, Pflegeetiketten und Farbe.",
+      "Bemerke, welche Lektion deinen Blick auf deine Kleidung verändert hat.",
+      "Wähle eine Idee, die du in den kommenden Wochen weiter erkundest."
+     ],
+     "q": "Welche Idee dieses Monats war am nützlichsten oder überraschendsten?",
+     "c": "Wähle eine Lektion dieses Monats und setze sie heute im Outfit um."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes de estilo",
+     "g": "Mirar atrás a ajuste, tejidos y color, y elegir una idea para seguir explorando.",
+     "p": [
+      "Recuerda lo aprendido: ajuste, tejidos, etiquetas de cuidado y color.",
+      "Fíjate en qué lección cambió tu forma de mirar tu ropa.",
+      "Elige una idea para seguir explorando en las próximas semanas."
+     ],
+     "q": "¿Qué idea de este mes te resultó más útil o sorprendente?",
+     "c": "Elige una lección de este mes y ponla en práctica en el conjunto de hoy."
+    },
+    "fr": {
+     "t": "Bilan : ton premier mois de style",
+     "g": "Revenir sur la coupe, les matières et la couleur, et choisir une idée à approfondir.",
+     "p": [
+      "Rappelle-toi ce que tu as appris : coupe, matières, étiquettes d'entretien et couleur.",
+      "Remarque quelle leçon a changé ton regard sur tes vêtements.",
+      "Choisis une idée à explorer encore dans les semaines à venir."
+     ],
+     "q": "Quelle idée de ce mois t'a paru la plus utile ou surprenante ?",
+     "c": "Choisis une leçon de ce mois et mets-la en pratique dans ta tenue du jour."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese di stile",
+     "g": "Ripensare a vestibilità, tessuti e colore e scegliere un'idea da approfondire.",
+     "p": [
+      "Ricorda ciò che hai imparato: vestibilità, tessuti, etichette e colore.",
+      "Nota quale lezione ha cambiato il modo in cui guardi i tuoi vestiti.",
+      "Scegli un'idea da continuare a esplorare nelle prossime settimane."
+     ],
+     "q": "Quale idea di questo mese ti è sembrata più utile o sorprendente?",
+     "c": "Scegli una lezione di questo mese e mettila in pratica nell'outfit di oggi."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês de estilo",
+     "g": "Olhar para trás para o corte, os tecidos e a cor e escolher uma ideia para aprofundar.",
+     "p": [
+      "Recorda o que aprendeste: corte, tecidos, etiquetas de cuidados e cor.",
+      "Repara que lição mudou a forma como olhas para a tua roupa.",
+      "Escolhe uma ideia para continuar a explorar nas próximas semanas."
+     ],
+     "q": "Que ideia deste mês te pareceu mais útil ou surpreendente?",
+     "c": "Escolhe uma lição deste mês e põe-na em prática no conjunto de hoje."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês de estilo",
+     "g": "Olhar para trás para o caimento, os tecidos e a cor e escolher uma ideia para aprofundar.",
+     "p": [
+      "Lembre o que aprendeu: caimento, tecidos, etiquetas de cuidados e cor.",
+      "Repare qual lição mudou o jeito como você olha suas roupas.",
+      "Escolha uma ideia para continuar explorando nas próximas semanas."
+     ],
+     "q": "Qual ideia deste mês pareceu mais útil ou surpreendente?",
+     "c": "Escolha uma lição deste mês e coloque em prática no look de hoje."
+    }
+   }
+  }
+ ]
+}

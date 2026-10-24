@@ -1,0 +1,835 @@
+{
+ "topic": "nature_animals",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Animal senses overview",
+     "g": "Imagine how differently animals see, hear, smell, taste and touch the world.",
+     "p": [
+      "Every animal senses its world through tools shaped by its way of life.",
+      "A dog's nose, an owl's ears and a bee's eyes each notice things we barely detect.",
+      "Senses are the bridge between an animal and its food, friends, homes and dangers."
+     ],
+     "q": "If you could borrow one animal sense for a day, which would you pick?",
+     "c": "Stand still outdoors for one minute and list what you notice with each of your five senses."
+    },
+    "de": {
+     "t": "Die Sinne der Tiere im Überblick",
+     "g": "Sich vorstellen, wie anders Tiere die Welt sehen, hören, riechen, schmecken und fühlen.",
+     "p": [
+      "Jedes Tier nimmt seine Welt mit Werkzeugen wahr, die zu seiner Lebensweise passen.",
+      "Hundenase, Eulenohren und Bienenaugen bemerken Dinge, die wir kaum wahrnehmen.",
+      "Sinne verbinden ein Tier mit seiner Nahrung, seinen Freunden, seinem Zuhause und Gefahren."
+     ],
+     "q": "Welchen Tiersinn würdest du dir einen Tag lang ausleihen?",
+     "c": "Steh eine Minute still draußen und notiere, was du mit jedem deiner fünf Sinne bemerkst."
+    },
+    "es": {
+     "t": "Los sentidos de los animales",
+     "g": "Imaginar cuán distinto ven, oyen, huelen, saborean y tocan el mundo los animales.",
+     "p": [
+      "Cada animal percibe su mundo con herramientas moldeadas por su forma de vida.",
+      "La nariz de un perro, los oídos de un búho y los ojos de una abeja notan cosas que apenas detectamos.",
+      "Los sentidos unen al animal con su comida, sus amigos, su hogar y los peligros."
+     ],
+     "q": "Si pudieras tomar prestado un sentido animal por un día, ¿cuál elegirías?",
+     "c": "Quédate quieto un minuto al aire libre y anota qué notas con cada uno de tus cinco sentidos."
+    },
+    "fr": {
+     "t": "Les sens des animaux, vue d'ensemble",
+     "g": "Imaginer à quel point les animaux voient, entendent, sentent, goûtent et touchent le monde autrement.",
+     "p": [
+      "Chaque animal perçoit son monde avec des outils façonnés par son mode de vie.",
+      "Le nez d'un chien, les oreilles d'un hibou et les yeux d'une abeille remarquent ce que nous détectons à peine.",
+      "Les sens relient l'animal à sa nourriture, ses amis, son abri et les dangers."
+     ],
+     "q": "Si tu pouvais emprunter un sens animal pour une journée, lequel choisirais-tu ?",
+     "c": "Reste immobile une minute dehors et note ce que perçoit chacun de tes cinq sens."
+    },
+    "it": {
+     "t": "I sensi degli animali in breve",
+     "g": "Immaginare quanto diversamente gli animali vedono, sentono, annusano, gustano e toccano il mondo.",
+     "p": [
+      "Ogni animale percepisce il mondo con strumenti modellati dal suo stile di vita.",
+      "Il naso di un cane, le orecchie di un gufo e gli occhi di un'ape notano cose che noi a stento percepiamo.",
+      "I sensi collegano l'animale a cibo, amici, casa e pericoli."
+     ],
+     "q": "Se potessi prendere in prestito un senso animale per un giorno, quale sceglieresti?",
+     "c": "Stai fermo un minuto all'aperto e annota cosa noti con ciascuno dei tuoi cinque sensi."
+    },
+    "pt": {
+     "t": "Os sentidos dos animais em geral",
+     "g": "Imaginar como os animais veem, ouvem, cheiram, saboreiam e tocam o mundo de forma diferente.",
+     "p": [
+      "Cada animal percebe o seu mundo com ferramentas moldadas pelo seu modo de vida.",
+      "O nariz de um cão, os ouvidos de uma coruja e os olhos de uma abelha notam o que mal detetamos.",
+      "Os sentidos ligam o animal à comida, aos amigos, à casa e aos perigos."
+     ],
+     "q": "Se pudesses pedir emprestado um sentido animal por um dia, qual escolhias?",
+     "c": "Fica quieto um minuto ao ar livre e anota o que notas com cada um dos teus cinco sentidos."
+    },
+    "pt_BR": {
+     "t": "Os sentidos dos animais em geral",
+     "g": "Imaginar como os animais veem, ouvem, cheiram, saboreiam e tocam o mundo de modo diferente.",
+     "p": [
+      "Cada animal percebe seu mundo com ferramentas moldadas pelo seu modo de vida.",
+      "O nariz de um cão, os ouvidos de uma coruja e os olhos de uma abelha notam o que mal detectamos.",
+      "Os sentidos ligam o animal à comida, aos amigos, à casa e aos perigos."
+     ],
+     "q": "Se você pudesse pegar emprestado um sentido animal por um dia, qual escolheria?",
+     "c": "Fique parado um minuto ao ar livre e anote o que percebe com cada um dos cinco sentidos."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eyes in the animal kingdom",
+     "g": "Explore compound eyes, eyes on stalks and eyes that see ultraviolet light.",
+     "p": [
+      "Insects have compound eyes made of thousands of tiny lenses that detect movement fast.",
+      "Snails carry eyes on stalks, and chameleons can swivel each eye on its own.",
+      "Bees and many birds see ultraviolet light, so flowers show patterns we cannot see."
+     ],
+     "q": "Which animal eyes do you find most beautiful or surprising?",
+     "c": "Look closely at a pet, bird or insect eye and note its shape and where it sits on the head."
+    },
+    "de": {
+     "t": "Augen im Tierreich",
+     "g": "Facettenaugen, Stielaugen und Augen, die ultraviolettes Licht sehen, erkunden.",
+     "p": [
+      "Insekten haben Facettenaugen aus Tausenden kleinen Linsen, die Bewegung schnell erkennen.",
+      "Schnecken tragen Augen auf Stielen, und Chamäleons drehen jedes Auge einzeln.",
+      "Bienen und viele Vögel sehen ultraviolettes Licht, darum zeigen Blüten ihnen Muster, die wir nicht sehen."
+     ],
+     "q": "Welche Tieraugen findest du am schönsten oder überraschendsten?",
+     "c": "Betrachte das Auge eines Haustiers, Vogels oder Insekts genau und notiere Form und Platz am Kopf."
+    },
+    "es": {
+     "t": "Los ojos del reino animal",
+     "g": "Explorar ojos compuestos, ojos en pedúnculos y ojos que ven luz ultravioleta.",
+     "p": [
+      "Los insectos tienen ojos compuestos de miles de lentes diminutas que detectan rápido el movimiento.",
+      "Los caracoles llevan ojos en tentáculos, y los camaleones giran cada ojo por separado.",
+      "Las abejas y muchas aves ven luz ultravioleta, así que las flores muestran dibujos que no vemos."
+     ],
+     "q": "¿Qué ojos de animal te parecen más bellos o sorprendentes?",
+     "c": "Mira de cerca el ojo de una mascota, ave o insecto y anota su forma y su lugar en la cabeza."
+    },
+    "fr": {
+     "t": "Les yeux du règne animal",
+     "g": "Explorer les yeux composés, les yeux sur tiges et ceux qui voient les ultraviolets.",
+     "p": [
+      "Les insectes ont des yeux composés de milliers de petites lentilles qui détectent vite le mouvement.",
+      "Les escargots portent leurs yeux au bout de tentacules, et les caméléons orientent chaque oeil séparément.",
+      "Les abeilles et beaucoup d'oiseaux voient les ultraviolets, donc les fleurs leur montrent des motifs invisibles pour nous."
+     ],
+     "q": "Quels yeux d'animaux trouves-tu les plus beaux ou les plus surprenants ?",
+     "c": "Observe de près l'oeil d'un animal de compagnie, d'un oiseau ou d'un insecte et note sa forme et sa place."
+    },
+    "it": {
+     "t": "Gli occhi nel regno animale",
+     "g": "Esplorare occhi composti, occhi su peduncoli e occhi che vedono la luce ultravioletta.",
+     "p": [
+      "Gli insetti hanno occhi composti da migliaia di minuscole lenti che rilevano subito il movimento.",
+      "Le lumache portano gli occhi su peduncoli, e i camaleonti ruotano ogni occhio da solo.",
+      "Api e molti uccelli vedono la luce ultravioletta, quindi i fiori mostrano disegni che noi non vediamo."
+     ],
+     "q": "Quali occhi di animali trovi più belli o sorprendenti?",
+     "c": "Osserva da vicino l'occhio di un animale domestico, un uccello o un insetto e annota forma e posizione."
+    },
+    "pt": {
+     "t": "Os olhos no reino animal",
+     "g": "Explorar olhos compostos, olhos em pedúnculos e olhos que veem luz ultravioleta.",
+     "p": [
+      "Os insetos têm olhos compostos por milhares de lentes minúsculas que detetam depressa o movimento.",
+      "Os caracóis levam os olhos em pedúnculos, e os camaleões rodam cada olho em separado.",
+      "As abelhas e muitas aves veem luz ultravioleta, por isso as flores mostram padrões que não vemos."
+     ],
+     "q": "Que olhos de animais achas mais bonitos ou surpreendentes?",
+     "c": "Olha de perto o olho de um animal de estimação, ave ou inseto e anota a forma e a posição."
+    },
+    "pt_BR": {
+     "t": "Os olhos no reino animal",
+     "g": "Explorar olhos compostos, olhos em pedúnculos e olhos que veem luz ultravioleta.",
+     "p": [
+      "Os insetos têm olhos compostos por milhares de lentes minúsculas que detectam rápido o movimento.",
+      "Os caracóis levam os olhos em hastes, e os camaleões giram cada olho separadamente.",
+      "As abelhas e muitas aves veem luz ultravioleta, por isso as flores mostram padrões que não vemos."
+     ],
+     "q": "Quais olhos de animais você acha mais bonitos ou surpreendentes?",
+     "c": "Olhe de perto o olho de um bicho de estimação, ave ou inseto e anote o formato e a posição."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Super hearing",
+     "g": "Learn how owls, bats and elephants hear sounds we cannot.",
+     "p": [
+      "Owls have ears at slightly different heights, which helps them pinpoint a sound in the dark.",
+      "Bats make high-pitched calls and listen to the echoes to map their surroundings.",
+      "Elephants use very low rumbles that travel far and can be felt through the ground."
+     ],
+     "q": "What sound outdoors do you enjoy listening to most?",
+     "c": "Close your eyes outside for two minutes and count how many different sounds you hear."
+    },
+    "de": {
+     "t": "Superhören",
+     "g": "Lernen, wie Eulen, Fledermäuse und Elefanten Töne hören, die wir nicht hören.",
+     "p": [
+      "Eulen haben Ohren in leicht unterschiedlicher Höhe und orten so Geräusche im Dunkeln genau.",
+      "Fledermäuse stoßen hohe Rufe aus und lauschen den Echos, um ihre Umgebung zu erfassen.",
+      "Elefanten nutzen sehr tiefes Grollen, das weit reicht und auch über den Boden zu spüren ist."
+     ],
+     "q": "Welches Geräusch in der Natur hörst du am liebsten?",
+     "c": "Schließ draußen zwei Minuten die Augen und zähle, wie viele verschiedene Geräusche du hörst."
+    },
+    "es": {
+     "t": "Superaudición",
+     "g": "Aprender cómo búhos, murciélagos y elefantes oyen sonidos que nosotros no oímos.",
+     "p": [
+      "Los búhos tienen los oídos a alturas algo distintas, lo que les ayuda a ubicar un sonido en la oscuridad.",
+      "Los murciélagos emiten chillidos agudos y escuchan los ecos para dibujar su entorno.",
+      "Los elefantes usan retumbos muy graves que viajan lejos y se sienten por el suelo."
+     ],
+     "q": "¿Qué sonido al aire libre disfrutas más escuchando?",
+     "c": "Cierra los ojos dos minutos al aire libre y cuenta cuántos sonidos distintos oyes."
+    },
+    "fr": {
+     "t": "La super ouïe",
+     "g": "Apprendre comment hiboux, chauves-souris et éléphants entendent des sons qui nous échappent.",
+     "p": [
+      "Les hiboux ont des oreilles à des hauteurs légèrement différentes, ce qui les aide à situer un son dans le noir.",
+      "Les chauves-souris lancent des cris aigus et écoutent les échos pour cartographier leur environnement.",
+      "Les éléphants utilisent des grondements très graves qui portent loin et se ressentent par le sol."
+     ],
+     "q": "Quel son de la nature aimes-tu le plus écouter ?",
+     "c": "Ferme les yeux dehors pendant deux minutes et compte combien de sons différents tu entends."
+    },
+    "it": {
+     "t": "Super udito",
+     "g": "Imparare come gufi, pipistrelli ed elefanti sentono suoni che noi non sentiamo.",
+     "p": [
+      "I gufi hanno le orecchie ad altezze leggermente diverse, e così individuano un suono nel buio.",
+      "I pipistrelli emettono richiami acuti e ascoltano gli echi per mappare l'ambiente.",
+      "Gli elefanti usano brontolii molto bassi che viaggiano lontano e si avvertono attraverso il suolo."
+     ],
+     "q": "Quale suono all'aperto ti piace di più ascoltare?",
+     "c": "Chiudi gli occhi due minuti all'aperto e conta quanti suoni diversi senti."
+    },
+    "pt": {
+     "t": "Super audição",
+     "g": "Aprender como corujas, morcegos e elefantes ouvem sons que nós não ouvimos.",
+     "p": [
+      "As corujas têm os ouvidos a alturas ligeiramente diferentes, o que ajuda a localizar um som no escuro.",
+      "Os morcegos emitem chamamentos agudos e ouvem os ecos para mapear o ambiente.",
+      "Os elefantes usam roncos muito graves que viajam longe e se sentem pelo chão."
+     ],
+     "q": "Que som ao ar livre gostas mais de ouvir?",
+     "c": "Fecha os olhos dois minutos ao ar livre e conta quantos sons diferentes ouves."
+    },
+    "pt_BR": {
+     "t": "Superaudição",
+     "g": "Aprender como corujas, morcegos e elefantes ouvem sons que nós não ouvimos.",
+     "p": [
+      "As corujas têm os ouvidos em alturas ligeiramente diferentes, o que ajuda a localizar um som no escuro.",
+      "Os morcegos emitem chamados agudos e ouvem os ecos para mapear o ambiente.",
+      "Os elefantes usam roncos muito graves que viajam longe e são sentidos pelo chão."
+     ],
+     "q": "Que som ao ar livre você mais gosta de ouvir?",
+     "c": "Feche os olhos por dois minutos ao ar livre e conte quantos sons diferentes você ouve."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The power of smell",
+     "g": "See how noses and antennae find food and friends from far away.",
+     "p": [
+      "A dog has hundreds of millions of scent receptors, far more than a person.",
+      "Male moths can detect a female's scent with feathery antennae from very far away.",
+      "Bears and many other animals follow scent trails to find food across wide areas."
+     ],
+     "q": "Which smell in nature makes you happiest: rain, pine, flowers or sea?",
+     "c": "Take a slow walk and stop three times to smell something natural, like soil or a leaf."
+    },
+    "de": {
+     "t": "Die Kraft des Geruchs",
+     "g": "Sehen, wie Nasen und Fühler Futter und Freunde aus weiter Ferne finden.",
+     "p": [
+      "Ein Hund hat Hunderte Millionen Riechzellen, weit mehr als ein Mensch.",
+      "Männliche Nachtfalter spüren den Duft eines Weibchens mit gefiederten Fühlern aus großer Entfernung.",
+      "Bären und viele andere Tiere folgen Duftspuren, um in weiten Gebieten Futter zu finden."
+     ],
+     "q": "Welcher Naturgeruch macht dich am glücklichsten: Regen, Kiefer, Blumen oder Meer?",
+     "c": "Geh langsam spazieren und halte dreimal an, um an etwas Natürlichem zu riechen, etwa Erde oder Blatt."
+    },
+    "es": {
+     "t": "El poder del olfato",
+     "g": "Ver cómo narices y antenas encuentran comida y amigos desde muy lejos.",
+     "p": [
+      "Un perro tiene cientos de millones de receptores de olor, muchísimos más que una persona.",
+      "Las polillas macho detectan el olor de una hembra con antenas plumosas desde muy lejos.",
+      "Los osos y muchos otros animales siguen rastros de olor para hallar comida en grandes áreas."
+     ],
+     "q": "¿Qué olor de la naturaleza te hace más feliz: lluvia, pino, flores o mar?",
+     "c": "Da un paseo lento y párate tres veces a oler algo natural, como tierra u hoja."
+    },
+    "fr": {
+     "t": "Le pouvoir de l'odorat",
+     "g": "Voir comment nez et antennes trouvent nourriture et amis de très loin.",
+     "p": [
+      "Un chien possède des centaines de millions de récepteurs olfactifs, bien plus qu'une personne.",
+      "Les papillons de nuit mâles détectent l'odeur d'une femelle avec leurs antennes plumeuses, de très loin.",
+      "Les ours et bien d'autres animaux suivent des pistes odorantes pour trouver à manger sur de vastes zones."
+     ],
+     "q": "Quelle odeur de la nature te rend le plus heureux : pluie, pin, fleurs ou mer ?",
+     "c": "Marche lentement et arrête-toi trois fois pour sentir quelque chose de naturel, comme la terre ou une feuille."
+    },
+    "it": {
+     "t": "Il potere dell'olfatto",
+     "g": "Vedere come nasi e antenne trovano cibo e amici da molto lontano.",
+     "p": [
+      "Un cane ha centinaia di milioni di recettori olfattivi, molti più di una persona.",
+      "Le falene maschio sentono l'odore di una femmina con antenne piumate da molto lontano.",
+      "Orsi e molti altri animali seguono tracce di odore per trovare cibo su ampie zone."
+     ],
+     "q": "Quale profumo della natura ti rende più felice: pioggia, pino, fiori o mare?",
+     "c": "Fai una passeggiata lenta e fermati tre volte per annusare qualcosa di naturale, come terra o foglia."
+    },
+    "pt": {
+     "t": "O poder do olfato",
+     "g": "Ver como narizes e antenas encontram comida e amigos de muito longe.",
+     "p": [
+      "Um cão tem centenas de milhões de recetores de cheiro, muito mais do que uma pessoa.",
+      "As traças macho detetam o cheiro de uma fêmea com antenas plumosas, de muito longe.",
+      "Os ursos e muitos outros animais seguem rastos de cheiro para achar comida em grandes áreas."
+     ],
+     "q": "Que cheiro da natureza te deixa mais feliz: chuva, pinheiro, flores ou mar?",
+     "c": "Faz um passeio lento e pára três vezes para cheirar algo natural, como terra ou uma folha."
+    },
+    "pt_BR": {
+     "t": "O poder do olfato",
+     "g": "Ver como narizes e antenas encontram comida e amigos de muito longe.",
+     "p": [
+      "Um cão tem centenas de milhões de receptores de cheiro, muito mais do que uma pessoa.",
+      "As mariposas macho detectam o cheiro de uma fêmea com antenas plumosas, de muito longe.",
+      "Os ursos e muitos outros animais seguem rastros de cheiro para achar comida em grandes áreas."
+     ],
+     "q": "Que cheiro da natureza deixa você mais feliz: chuva, pinheiro, flores ou mar?",
+     "c": "Faça um passeio lento e pare três vezes para cheirar algo natural, como terra ou folha."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Touch, whiskers and vibrations",
+     "g": "Discover how cats, seals and spiders feel the world around them.",
+     "p": [
+      "Whiskers are long hairs rooted in sensitive skin that detect air movement and nearby objects.",
+      "Seals use their whiskers to sense the tiny wakes left by fish swimming in dark water.",
+      "Spiders feel vibrations through their legs, so a web works like a thread of information."
+     ],
+     "q": "Do you have a pet or a favourite animal that uses whiskers?",
+     "c": "Watch a cat or dog and notice how it moves its whiskers when it explores something new."
+    },
+    "de": {
+     "t": "Tastsinn, Schnurrhaare und Vibrationen",
+     "g": "Entdecken, wie Katzen, Robben und Spinnen ihre Umgebung fühlen.",
+     "p": [
+      "Schnurrhaare sind lange Haare in empfindlicher Haut, die Luftbewegung und nahe Dinge wahrnehmen.",
+      "Robben spüren mit ihren Barthaaren die winzigen Wirbel, die Fische im dunklen Wasser hinterlassen.",
+      "Spinnen fühlen Vibrationen mit den Beinen, ihr Netz ist also wie ein Informationsfaden."
+     ],
+     "q": "Hast du ein Haustier oder Lieblingstier mit Schnurrhaaren?",
+     "c": "Beobachte eine Katze oder einen Hund und achte darauf, wie er die Schnurrhaare bei Neuem bewegt."
+    },
+    "es": {
+     "t": "Tacto, bigotes y vibraciones",
+     "g": "Descubrir cómo gatos, focas y arañas sienten el mundo que los rodea.",
+     "p": [
+      "Los bigotes son pelos largos con raíz en piel sensible que detectan el aire y los objetos cercanos.",
+      "Las focas usan los bigotes para notar las diminutas estelas de los peces en el agua oscura.",
+      "Las arañas sienten vibraciones con las patas, así que la telaraña es como un hilo de información."
+     ],
+     "q": "¿Tienes una mascota o animal favorito con bigotes?",
+     "c": "Observa a un gato o perro y fíjate cómo mueve los bigotes al explorar algo nuevo."
+    },
+    "fr": {
+     "t": "Toucher, moustaches et vibrations",
+     "g": "Découvrir comment chats, phoques et araignées sentent le monde autour d'eux.",
+     "p": [
+      "Les moustaches sont de longs poils plantés dans une peau sensible, qui détectent l'air et les objets proches.",
+      "Les phoques sentent avec leurs moustaches les minuscules sillages des poissons dans l'eau sombre.",
+      "Les araignées ressentent les vibrations par leurs pattes : la toile est comme un fil d'information."
+     ],
+     "q": "As-tu un animal de compagnie ou préféré qui a des moustaches ?",
+     "c": "Observe un chat ou un chien et regarde comment il bouge ses moustaches devant une nouveauté."
+    },
+    "it": {
+     "t": "Tatto, vibrisse e vibrazioni",
+     "g": "Scoprire come gatti, foche e ragni sentono il mondo intorno a loro.",
+     "p": [
+      "Le vibrisse sono lunghi peli radicati in pelle sensibile che avvertono l'aria e gli oggetti vicini.",
+      "Le foche usano le vibrisse per sentire le minuscole scie dei pesci nell'acqua scura.",
+      "I ragni sentono le vibrazioni con le zampe, quindi la ragnatela è come un filo di informazioni."
+     ],
+     "q": "Hai un animale domestico o preferito con le vibrisse?",
+     "c": "Osserva un gatto o un cane e nota come muove le vibrisse davanti a qualcosa di nuovo."
+    },
+    "pt": {
+     "t": "Tato, bigodes e vibrações",
+     "g": "Descobrir como gatos, focas e aranhas sentem o mundo à sua volta.",
+     "p": [
+      "Os bigodes são pelos longos com raiz em pele sensível que detetam o ar e objetos próximos.",
+      "As focas usam os bigodes para sentir as pequenas esteiras dos peixes na água escura.",
+      "As aranhas sentem vibrações com as patas, por isso a teia é como um fio de informação."
+     ],
+     "q": "Tens um animal de estimação ou favorito com bigodes?",
+     "c": "Observa um gato ou cão e repara como mexe os bigodes perante algo novo."
+    },
+    "pt_BR": {
+     "t": "Tato, bigodes e vibrações",
+     "g": "Descobrir como gatos, focas e aranhas sentem o mundo ao redor.",
+     "p": [
+      "Os bigodes são pelos longos com raiz em pele sensível que detectam o ar e objetos próximos.",
+      "As focas usam os bigodes para sentir os pequenos rastros dos peixes na água escura.",
+      "As aranhas sentem vibrações com as patas, então a teia é como um fio de informação."
+     ],
+     "q": "Você tem um bicho de estimação ou favorito com bigodes?",
+     "c": "Observe um gato ou cão e repare como mexe os bigodes diante de algo novo."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Senses humans lack",
+     "g": "Meet electric fields, magnetic compasses and heat vision in sharks, birds and snakes.",
+     "p": [
+      "Sharks sense the faint electric fields that living animals give off, even in murky water.",
+      "Many migrating birds seem to sense Earth's magnetic field, like a built-in compass.",
+      "Pit vipers and some pythons have heat-sensing pits that detect warm objects in the dark."
+     ],
+     "q": "Which of these hidden senses would you most like to try for a day?",
+     "c": "Hold a magnet near a paper clip or compass to see how an invisible force acts."
+    },
+    "de": {
+     "t": "Sinne, die dem Menschen fehlen",
+     "g": "Elektrische Felder, magnetische Kompasse und Wärmesicht bei Haien, Vögeln und Schlangen kennenlernen.",
+     "p": [
+      "Haie spüren die schwachen elektrischen Felder, die Lebewesen abgeben, selbst in trübem Wasser.",
+      "Viele Zugvögel scheinen das Magnetfeld der Erde zu spüren, wie einen eingebauten Kompass.",
+      "Grubenottern und manche Pythons haben Wärmegruben, die warme Objekte im Dunkeln erkennen."
+     ],
+     "q": "Welchen dieser verborgenen Sinne würdest du gern einen Tag lang testen?",
+     "c": "Halte einen Magneten an eine Büroklammer oder einen Kompass und sieh, wie eine unsichtbare Kraft wirkt."
+    },
+    "es": {
+     "t": "Sentidos que los humanos no tenemos",
+     "g": "Conocer campos eléctricos, brújulas magnéticas y visión de calor en tiburones, aves y serpientes.",
+     "p": [
+      "Los tiburones perciben los débiles campos eléctricos de los seres vivos, incluso en aguas turbias.",
+      "Muchas aves migratorias parecen sentir el campo magnético terrestre, como una brújula integrada.",
+      "Las víboras de foseta y algunas pitones tienen fosetas que detectan objetos cálidos en la oscuridad."
+     ],
+     "q": "¿Cuál de estos sentidos ocultos te gustaría probar un día?",
+     "c": "Acerca un imán a un clip o a una brújula y observa cómo actúa una fuerza invisible."
+    },
+    "fr": {
+     "t": "Des sens que les humains n'ont pas",
+     "g": "Découvrir champs électriques, boussoles magnétiques et vision de la chaleur chez requins, oiseaux et serpents.",
+     "p": [
+      "Les requins perçoivent les faibles champs électriques des êtres vivants, même en eau trouble.",
+      "Beaucoup d'oiseaux migrateurs semblent sentir le champ magnétique terrestre, comme une boussole intégrée.",
+      "Les crotales et certains pythons ont des fossettes qui détectent les objets chauds dans le noir."
+     ],
+     "q": "Lequel de ces sens cachés aimerais-tu essayer une journée ?",
+     "c": "Approche un aimant d'un trombone ou d'une boussole et vois agir une force invisible."
+    },
+    "it": {
+     "t": "Sensi che gli umani non hanno",
+     "g": "Scoprire campi elettrici, bussole magnetiche e visione del calore in squali, uccelli e serpenti.",
+     "p": [
+      "Gli squali percepiscono i deboli campi elettrici degli esseri viventi, anche in acqua torbida.",
+      "Molti uccelli migratori sembrano sentire il campo magnetico terrestre, come una bussola integrata.",
+      "I crotali e alcuni pitoni hanno fossette che rilevano oggetti caldi al buio."
+     ],
+     "q": "Quale di questi sensi nascosti ti piacerebbe provare per un giorno?",
+     "c": "Avvicina una calamita a una graffetta o a una bussola e osserva come agisce una forza invisibile."
+    },
+    "pt": {
+     "t": "Sentidos que os humanos não têm",
+     "g": "Conhecer campos elétricos, bússolas magnéticas e visão de calor em tubarões, aves e serpentes.",
+     "p": [
+      "Os tubarões percebem os fracos campos elétricos dos seres vivos, mesmo em águas turvas.",
+      "Muitas aves migradoras parecem sentir o campo magnético da Terra, como uma bússola embutida.",
+      "As víboras-de-fosseta e algumas pitões têm fossetas que detetam objetos quentes no escuro."
+     ],
+     "q": "Qual destes sentidos escondidos gostarias de experimentar um dia?",
+     "c": "Aproxima um íman de um clipe ou de uma bússola e vê como age uma força invisível."
+    },
+    "pt_BR": {
+     "t": "Sentidos que os humanos não têm",
+     "g": "Conhecer campos elétricos, bússolas magnéticas e visão de calor em tubarões, aves e serpentes.",
+     "p": [
+      "Os tubarões percebem os fracos campos elétricos dos seres vivos, mesmo em águas turvas.",
+      "Muitas aves migratórias parecem sentir o campo magnético da Terra, como uma bússola embutida.",
+      "As cobras de fosseta e algumas pítons têm fossetas que detectam objetos quentes no escuro."
+     ],
+     "q": "Qual desses sentidos escondidos você gostaria de experimentar por um dia?",
+     "c": "Aproxime um ímã de um clipe ou de uma bússola e veja como age uma força invisível."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How animals move",
+     "g": "Explore walking, flying, swimming, slithering and jumping, and the bodies built for each.",
+     "p": [
+      "Legs, wings, fins and muscles are shaped by how an animal needs to get around.",
+      "Snakes slither with no legs, using their ribs and muscles to push against the ground.",
+      "Kangaroos hop using springy tendons that store and release energy like elastic bands."
+     ],
+     "q": "Which way of moving would you most like to try: flying, swimming, hopping or climbing?",
+     "c": "Watch an animal move for a minute and describe its steps or strokes in your own words."
+    },
+    "de": {
+     "t": "Wie sich Tiere bewegen",
+     "g": "Gehen, Fliegen, Schwimmen, Schlängeln und Springen erkunden und die Körper dafür.",
+     "p": [
+      "Beine, Flügel, Flossen und Muskeln sind so geformt, wie ein Tier sich fortbewegen muss.",
+      "Schlangen schlängeln sich ohne Beine und drücken sich mit Rippen und Muskeln vom Boden ab.",
+      "Kängurus hüpfen mit federnden Sehnen, die Energie speichern und abgeben wie Gummibänder."
+     ],
+     "q": "Welche Fortbewegung würdest du am liebsten ausprobieren: fliegen, schwimmen, hüpfen oder klettern?",
+     "c": "Beobachte eine Minute ein Tier beim Bewegen und beschreibe seine Schritte oder Züge mit eigenen Worten."
+    },
+    "es": {
+     "t": "Cómo se mueven los animales",
+     "g": "Explorar caminar, volar, nadar, reptar y saltar, y los cuerpos hechos para cada uno.",
+     "p": [
+      "Patas, alas, aletas y músculos se moldean según cómo necesita moverse el animal.",
+      "Las serpientes reptan sin patas, empujando el suelo con costillas y músculos.",
+      "Los canguros saltan con tendones elásticos que almacenan y devuelven energía como gomas."
+     ],
+     "q": "¿Qué forma de moverte te gustaría probar: volar, nadar, saltar o trepar?",
+     "c": "Observa a un animal moverse un minuto y describe sus pasos o brazadas con tus palabras."
+    },
+    "fr": {
+     "t": "Comment les animaux se déplacent",
+     "g": "Explorer marche, vol, nage, reptation et sauts, et les corps conçus pour chacun.",
+     "p": [
+      "Pattes, ailes, nageoires et muscles sont façonnés par la manière dont l'animal doit se déplacer.",
+      "Les serpents rampent sans pattes, en poussant sur le sol avec leurs côtes et leurs muscles.",
+      "Les kangourous bondissent grâce à des tendons élastiques qui stockent et rendent l'énergie."
+     ],
+     "q": "Quelle façon de te déplacer aimerais-tu essayer : voler, nager, bondir ou grimper ?",
+     "c": "Observe un animal se déplacer une minute et décris ses pas ou ses mouvements avec tes mots."
+    },
+    "it": {
+     "t": "Come si muovono gli animali",
+     "g": "Esplorare camminare, volare, nuotare, strisciare e saltare, e i corpi fatti per ciascuno.",
+     "p": [
+      "Zampe, ali, pinne e muscoli sono modellati dal modo in cui l'animale deve spostarsi.",
+      "I serpenti strisciano senza zampe, spingendo sul suolo con costole e muscoli.",
+      "I canguri saltano con tendini elastici che immagazzinano e restituiscono energia come elastici."
+     ],
+     "q": "Quale modo di muoverti ti piacerebbe provare: volare, nuotare, saltare o arrampicare?",
+     "c": "Osserva un animale muoversi per un minuto e descrivi i suoi passi o movimenti a parole tue."
+    },
+    "pt": {
+     "t": "Como os animais se movem",
+     "g": "Explorar andar, voar, nadar, rastejar e saltar, e os corpos feitos para cada um.",
+     "p": [
+      "Patas, asas, barbatanas e músculos são moldados pela forma como o animal precisa de se deslocar.",
+      "As serpentes rastejam sem patas, empurrando o chão com costelas e músculos.",
+      "Os cangurus saltam com tendões elásticos que guardam e devolvem energia como elásticos."
+     ],
+     "q": "Que forma de te moveres gostavas de experimentar: voar, nadar, saltar ou trepar?",
+     "c": "Observa um animal a mover-se durante um minuto e descreve os seus passos ou braçadas."
+    },
+    "pt_BR": {
+     "t": "Como os animais se movem",
+     "g": "Explorar andar, voar, nadar, rastejar e saltar, e os corpos feitos para cada um.",
+     "p": [
+      "Patas, asas, nadadeiras e músculos são moldados pelo jeito como o animal precisa se deslocar.",
+      "As cobras rastejam sem patas, empurrando o chão com costelas e músculos.",
+      "Os cangurus saltam com tendões elásticos que guardam e devolvem energia como elásticos."
+     ],
+     "q": "Qual jeito de se mover você gostaria de experimentar: voar, nadar, saltar ou escalar?",
+     "c": "Observe um animal se mover por um minuto e descreva seus passos ou braçadas com suas palavras."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How birds fly",
+     "g": "Understand wings, feathers and air, and the difference between flapping, gliding and hovering.",
+     "p": [
+      "A bird's wing is curved on top, so air moving over it creates lift that holds the bird up.",
+      "Many birds flap to gain speed, then glide on rising warm air with barely a wingbeat.",
+      "Hummingbirds hover by beating their wings dozens of times each second in a figure-eight."
+     ],
+     "q": "Which flying bird do you most enjoy watching?",
+     "c": "Watch a bird take off and land, and notice how it uses its wings and tail to steer."
+    },
+    "de": {
+     "t": "Wie Vögel fliegen",
+     "g": "Flügel, Federn und Luft verstehen und den Unterschied zwischen Flattern, Gleiten und Schweben.",
+     "p": [
+      "Der Vogelflügel ist oben gewölbt, die vorbeiströmende Luft erzeugt Auftrieb und trägt den Vogel.",
+      "Viele Vögel schlagen mit den Flügeln für Tempo und gleiten dann fast ohne Flügelschlag auf warmer Aufwindluft.",
+      "Kolibris schweben, indem sie die Flügel viele Dutzend Mal pro Sekunde in einer Acht schlagen."
+     ],
+     "q": "Welchen fliegenden Vogel beobachtest du am liebsten?",
+     "c": "Beobachte einen Vogel beim Starten und Landen und achte darauf, wie er mit Flügeln und Schwanz steuert."
+    },
+    "es": {
+     "t": "Cómo vuelan las aves",
+     "g": "Entender alas, plumas y aire, y la diferencia entre aletear, planear y cernerse.",
+     "p": [
+      "El ala de un ave es curva por arriba, y el aire que pasa crea una fuerza de sustentación que la mantiene.",
+      "Muchas aves aletean para ganar velocidad y luego planean sobre aire cálido ascendente casi sin batir.",
+      "Los colibríes se mantienen en el aire batiendo las alas decenas de veces por segundo en forma de ocho."
+     ],
+     "q": "¿Qué ave voladora disfrutas más observando?",
+     "c": "Observa a un ave despegar y aterrizar, y fíjate cómo usa alas y cola para dirigirse."
+    },
+    "fr": {
+     "t": "Comment volent les oiseaux",
+     "g": "Comprendre ailes, plumes et air, et la différence entre battre, planer et faire du sur-place.",
+     "p": [
+      "L'aile d'un oiseau est courbe sur le dessus, et l'air qui la longe crée une portance qui le soutient.",
+      "Beaucoup d'oiseaux battent des ailes pour prendre de la vitesse, puis planent sur de l'air chaud ascendant.",
+      "Les colibris font du sur-place en battant des ailes des dizaines de fois par seconde en huit."
+     ],
+     "q": "Quel oiseau en vol aimes-tu le plus regarder ?",
+     "c": "Observe un oiseau décoller et atterrir et regarde comment il dirige avec ailes et queue."
+    },
+    "it": {
+     "t": "Come volano gli uccelli",
+     "g": "Capire ali, piume e aria, e la differenza tra battere le ali, planare e librarsi.",
+     "p": [
+      "L'ala di un uccello è curva sopra, e l'aria che la sfiora crea una portanza che lo sostiene.",
+      "Molti uccelli battono le ali per prendere velocità e poi planano sull'aria calda ascendente quasi senza battere.",
+      "I colibrì restano fermi in aria battendo le ali decine di volte al secondo a forma di otto."
+     ],
+     "q": "Quale uccello in volo ti piace di più osservare?",
+     "c": "Osserva un uccello decollare e atterrare e nota come usa ali e coda per sterzare."
+    },
+    "pt": {
+     "t": "Como voam as aves",
+     "g": "Perceber asas, penas e ar, e a diferença entre bater as asas, planar e pairar.",
+     "p": [
+      "A asa de uma ave é curva em cima, e o ar que passa cria uma sustentação que a mantém no ar.",
+      "Muitas aves batem as asas para ganhar velocidade e depois planam em ar quente ascendente quase sem bater.",
+      "Os colibris pairam batendo as asas dezenas de vezes por segundo em forma de oito."
+     ],
+     "q": "Que ave a voar gostas mais de observar?",
+     "c": "Observa uma ave a levantar voo e a aterrar e repara como usa asas e cauda para se orientar."
+    },
+    "pt_BR": {
+     "t": "Como voam as aves",
+     "g": "Entender asas, penas e ar, e a diferença entre bater as asas, planar e pairar.",
+     "p": [
+      "A asa de uma ave é curva em cima, e o ar que passa cria uma sustentação que a mantém no ar.",
+      "Muitas aves batem as asas para ganhar velocidade e depois planam no ar quente ascendente quase sem bater.",
+      "Os beija-flores pairam batendo as asas dezenas de vezes por segundo em forma de oito."
+     ],
+     "q": "Qual ave voando você mais gosta de observar?",
+     "c": "Observe uma ave decolando e pousando e repare como usa asas e cauda para se guiar."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How fish swim",
+     "g": "Learn how fins, tails and swim bladders let fish steer, speed up and float.",
+     "p": [
+      "A fish pushes water with its tail and muscles, and fins help it turn, brake and balance.",
+      "Many bony fish have a swim bladder, a gas-filled organ that helps them hover at one depth.",
+      "Streamlined bodies and slippery scales reduce drag, helping fish glide through water."
+     ],
+     "q": "Have you ever watched fish in a stream, lake, aquarium or sea?",
+     "c": "Watch fish or a picture of fish and describe which fins move most as it swims."
+    },
+    "de": {
+     "t": "Wie Fische schwimmen",
+     "g": "Lernen, wie Flossen, Schwanz und Schwimmblase Fische steuern, beschleunigen und schweben lassen.",
+     "p": [
+      "Ein Fisch schiebt Wasser mit Schwanz und Muskeln, Flossen helfen beim Wenden, Bremsen und Balancieren.",
+      "Viele Knochenfische haben eine Schwimmblase, ein gasgefülltes Organ, das sie in einer Tiefe schweben lässt.",
+      "Stromlinienform und glatte Schuppen verringern den Widerstand, damit Fische durchs Wasser gleiten."
+     ],
+     "q": "Hast du schon Fische im Bach, See, Aquarium oder Meer beobachtet?",
+     "c": "Beobachte Fische oder ein Bild davon und beschreibe, welche Flossen sich beim Schwimmen am meisten bewegen."
+    },
+    "es": {
+     "t": "Cómo nadan los peces",
+     "g": "Aprender cómo aletas, cola y vejiga natatoria permiten a los peces dirigirse, acelerar y flotar.",
+     "p": [
+      "Un pez empuja el agua con la cola y los músculos, y las aletas ayudan a girar, frenar y equilibrarse.",
+      "Muchos peces óseos tienen vejiga natatoria, un órgano con gas que les ayuda a mantenerse a una profundidad.",
+      "Los cuerpos aerodinámicos y las escamas resbaladizas reducen la resistencia y ayudan a deslizarse."
+     ],
+     "q": "¿Has observado alguna vez peces en un arroyo, lago, acuario o mar?",
+     "c": "Observa peces o una foto y describe qué aletas se mueven más al nadar."
+    },
+    "fr": {
+     "t": "Comment nagent les poissons",
+     "g": "Apprendre comment nageoires, queue et vessie natatoire permettent aux poissons de se diriger, accélérer et flotter.",
+     "p": [
+      "Un poisson pousse l'eau avec sa queue et ses muscles, et les nageoires aident à tourner, freiner et s'équilibrer.",
+      "Beaucoup de poissons osseux ont une vessie natatoire, un organe rempli de gaz qui les aide à rester à une profondeur.",
+      "Un corps profilé et des écailles glissantes réduisent la résistance et aident à glisser dans l'eau."
+     ],
+     "q": "As-tu déjà observé des poissons dans un ruisseau, un lac, un aquarium ou la mer ?",
+     "c": "Observe des poissons ou une image et décris quelles nageoires bougent le plus en nageant."
+    },
+    "it": {
+     "t": "Come nuotano i pesci",
+     "g": "Imparare come pinne, coda e vescica natatoria permettono ai pesci di sterzare, accelerare e galleggiare.",
+     "p": [
+      "Un pesce spinge l'acqua con la coda e i muscoli, e le pinne aiutano a girare, frenare e bilanciarsi.",
+      "Molti pesci ossei hanno una vescica natatoria, un organo pieno di gas che li aiuta a restare a una profondità.",
+      "Corpi affusolati e squame scivolose riducono l'attrito e aiutano a scivolare nell'acqua."
+     ],
+     "q": "Hai mai osservato pesci in un ruscello, lago, acquario o mare?",
+     "c": "Osserva dei pesci o una foto e descrivi quali pinne si muovono di più mentre nuotano."
+    },
+    "pt": {
+     "t": "Como nadam os peixes",
+     "g": "Aprender como barbatanas, cauda e bexiga natatória deixam os peixes dirigir, acelerar e flutuar.",
+     "p": [
+      "Um peixe empurra a água com a cauda e os músculos, e as barbatanas ajudam a virar, travar e equilibrar.",
+      "Muitos peixes ósseos têm bexiga natatória, um órgão com gás que os ajuda a manter-se a uma profundidade.",
+      "Corpos aerodinâmicos e escamas escorregadias reduzem a resistência e ajudam a deslizar na água."
+     ],
+     "q": "Já observaste peixes num ribeiro, lago, aquário ou mar?",
+     "c": "Observa peixes ou uma fotografia e descreve que barbatanas mais se mexem ao nadar."
+    },
+    "pt_BR": {
+     "t": "Como nadam os peixes",
+     "g": "Aprender como nadadeiras, cauda e bexiga natatória deixam os peixes dirigir, acelerar e flutuar.",
+     "p": [
+      "Um peixe empurra a água com a cauda e os músculos, e as nadadeiras ajudam a virar, frear e equilibrar.",
+      "Muitos peixes ósseos têm bexiga natatória, um órgão com gás que os ajuda a ficar numa profundidade.",
+      "Corpos aerodinâmicos e escamas escorregadias reduzem a resistência e ajudam a deslizar na água."
+     ],
+     "q": "Você já observou peixes num riacho, lago, aquário ou mar?",
+     "c": "Observe peixes ou uma foto e descreva quais nadadeiras mais se mexem ao nadar."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Warm-blooded and cold-blooded",
+     "g": "See how mammals and birds make heat while reptiles borrow it from the Sun.",
+     "p": [
+      "Mammals and birds keep a steady body temperature by making their own heat, so they are endotherms.",
+      "Reptiles warm up by basking in the sun and cool off in shade, so they are ectotherms.",
+      "Making heat costs a lot of food, so a mouse eats far more for its size than a lizard."
+     ],
+     "q": "Do you prefer sunny warm days or cool shade, like a lizard would?",
+     "c": "On a sunny day, find a spot where a lizard, insect or bird might warm up and watch for visitors."
+    },
+    "de": {
+     "t": "Warmblüter und Kaltblüter",
+     "g": "Sehen, wie Säugetiere und Vögel Wärme erzeugen und Reptilien sie von der Sonne leihen.",
+     "p": [
+      "Säugetiere und Vögel halten ihre Körpertemperatur konstant, indem sie Wärme selbst erzeugen.",
+      "Reptilien wärmen sich beim Sonnenbad auf und kühlen im Schatten ab, sie sind wechselwarm.",
+      "Wärme erzeugen kostet viel Nahrung, darum frisst eine Maus im Verhältnis weit mehr als eine Eidechse."
+     ],
+     "q": "Magst du sonnige Wärme oder kühlen Schatten, wie eine Eidechse?",
+     "c": "Suche an einem sonnigen Tag einen Platz, an dem sich Eidechse, Insekt oder Vogel wärmen könnten."
+    },
+    "es": {
+     "t": "Sangre caliente y sangre fría",
+     "g": "Ver cómo mamíferos y aves producen calor y los reptiles lo toman del Sol.",
+     "p": [
+      "Mamíferos y aves mantienen una temperatura corporal estable produciendo su propio calor.",
+      "Los reptiles se calientan al sol y se enfrían a la sombra, así que su temperatura depende del entorno.",
+      "Producir calor cuesta mucha comida, así que un ratón come mucho más que un lagarto para su tamaño."
+     ],
+     "q": "¿Prefieres días soleados y cálidos o la sombra fresca, como un lagarto?",
+     "c": "En un día soleado, busca un sitio donde se caliente un lagarto, insecto o ave y observa visitas."
+    },
+    "fr": {
+     "t": "Sang chaud et sang froid",
+     "g": "Voir comment mammifères et oiseaux fabriquent leur chaleur et les reptiles l'empruntent au Soleil.",
+     "p": [
+      "Mammifères et oiseaux gardent une température stable en produisant leur propre chaleur.",
+      "Les reptiles se réchauffent au soleil et se rafraîchissent à l'ombre, leur température dépend du milieu.",
+      "Produire de la chaleur coûte beaucoup de nourriture : une souris mange bien plus qu'un lézard pour sa taille."
+     ],
+     "q": "Préfères-tu les journées chaudes et ensoleillées ou l'ombre fraîche, comme un lézard ?",
+     "c": "Un jour de soleil, trouve un endroit où un lézard, un insecte ou un oiseau pourrait se réchauffer."
+    },
+    "it": {
+     "t": "Sangue caldo e sangue freddo",
+     "g": "Vedere come mammiferi e uccelli producono calore e i rettili lo prendono dal Sole.",
+     "p": [
+      "Mammiferi e uccelli mantengono una temperatura stabile producendo il proprio calore.",
+      "I rettili si scaldano al sole e si rinfrescano all'ombra, quindi la loro temperatura dipende dall'ambiente.",
+      "Produrre calore costa molto cibo, quindi un topo mangia molto più di una lucertola per la sua taglia."
+     ],
+     "q": "Preferisci le giornate calde e soleggiate o l'ombra fresca, come una lucertola?",
+     "c": "In una giornata di sole, trova un posto dove una lucertola, un insetto o un uccello potrebbe scaldarsi."
+    },
+    "pt": {
+     "t": "Sangue quente e sangue frio",
+     "g": "Ver como mamíferos e aves produzem calor e os répteis o pedem emprestado ao Sol.",
+     "p": [
+      "Mamíferos e aves mantêm a temperatura estável produzindo o seu próprio calor.",
+      "Os répteis aquecem ao sol e arrefecem à sombra, por isso a sua temperatura depende do ambiente.",
+      "Produzir calor custa muita comida, por isso um rato come muito mais do que um lagarto para o seu tamanho."
+     ],
+     "q": "Preferes dias quentes de sol ou a sombra fresca, como um lagarto?",
+     "c": "Num dia de sol, procura um sítio onde um lagarto, inseto ou ave se possa aquecer."
+    },
+    "pt_BR": {
+     "t": "Sangue quente e sangue frio",
+     "g": "Ver como mamíferos e aves produzem calor e os répteis o pegam emprestado do Sol.",
+     "p": [
+      "Mamíferos e aves mantêm a temperatura estável produzindo o próprio calor.",
+      "Os répteis aquecem ao sol e esfriam na sombra, por isso a temperatura deles depende do ambiente.",
+      "Produzir calor custa muita comida, por isso um rato come muito mais que um lagarto para seu tamanho."
+     ],
+     "q": "Você prefere dias quentes de sol ou a sombra fresca, como um lagarto?",
+     "c": "Num dia de sol, ache um lugar onde um lagarto, inseto ou ave possa se aquecer."
+    }
+   }
+  }
+ ]
+}

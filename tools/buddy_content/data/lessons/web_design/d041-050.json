@@ -1,0 +1,835 @@
+{
+ "topic": "web_design",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Typography basics",
+     "g": "Learn what makes text comfortable to read on screen.",
+     "p": [
+      "Typeface, size, weight, line height and line length work together.",
+      "Body text around 16 pixels is a comfortable starting point.",
+      "Good typography is mostly invisible: readers just feel at ease."
+     ],
+     "q": "Which website do you find easiest to read, and why?",
+     "c": "Set body text to 1rem with a line-height of 1.6 and compare."
+    },
+    "de": {
+     "t": "Typografie-Grundlagen",
+     "g": "Lerne, was Text am Bildschirm angenehm lesbar macht.",
+     "p": [
+      "Schriftart, Größe, Stärke, Zeilenhöhe und Zeilenlänge wirken zusammen.",
+      "Fließtext um 16 Pixel ist ein guter Ausgangspunkt.",
+      "Gute Typografie ist meist unsichtbar: Leser fühlen sich einfach wohl."
+     ],
+     "q": "Welche Website liest sich für dich am leichtesten, und warum?",
+     "c": "Setze Fließtext auf 1rem mit line-height 1.6 und vergleiche."
+    },
+    "es": {
+     "t": "Fundamentos de tipografía",
+     "g": "Aprende qué hace cómodo leer un texto en pantalla.",
+     "p": [
+      "Tipo de letra, tamaño, grosor, interlineado y longitud de línea trabajan juntos.",
+      "Un texto base de unos 16 píxeles es un buen punto de partida.",
+      "La buena tipografía casi no se nota: el lector simplemente está a gusto."
+     ],
+     "q": "¿Qué sitio web te resulta más fácil de leer y por qué?",
+     "c": "Pon el texto en 1rem con line-height de 1.6 y compáralo."
+    },
+    "fr": {
+     "t": "Bases de la typographie",
+     "g": "Découvre ce qui rend un texte confortable à lire à l'écran.",
+     "p": [
+      "Police, taille, graisse, interligne et longueur de ligne travaillent ensemble.",
+      "Un texte courant d'environ 16 pixels est un bon point de départ.",
+      "Une bonne typographie est presque invisible : le lecteur est simplement à l'aise."
+     ],
+     "q": "Quel site web trouves-tu le plus facile à lire, et pourquoi ?",
+     "c": "Règle le texte à 1rem avec un line-height de 1.6 et compare."
+    },
+    "it": {
+     "t": "Le basi della tipografia",
+     "g": "Scopri cosa rende il testo comodo da leggere sullo schermo.",
+     "p": [
+      "Carattere, dimensione, peso, interlinea e lunghezza della riga lavorano insieme.",
+      "Un testo base di circa 16 pixel è un buon punto di partenza.",
+      "Una buona tipografia è quasi invisibile: il lettore si sente semplicemente a suo agio."
+     ],
+     "q": "Quale sito web trovi più facile da leggere e perché?",
+     "c": "Imposta il testo a 1rem con line-height 1.6 e confronta."
+    },
+    "pt": {
+     "t": "Noções básicas de tipografia",
+     "g": "Descobre o que torna o texto confortável de ler no ecrã.",
+     "p": [
+      "Tipo de letra, tamanho, espessura, entrelinha e comprimento da linha trabalham em conjunto.",
+      "Um texto base de cerca de 16 píxeis é um bom ponto de partida.",
+      "A boa tipografia quase não se nota: o leitor sente-se simplesmente à vontade."
+     ],
+     "q": "Que site achas mais fácil de ler e porquê?",
+     "c": "Define o texto a 1rem com line-height de 1.6 e compara."
+    },
+    "pt_BR": {
+     "t": "Noções básicas de tipografia",
+     "g": "Descubra o que torna o texto confortável de ler na tela.",
+     "p": [
+      "Tipo de letra, tamanho, espessura, entrelinha e comprimento da linha trabalham juntos.",
+      "Um texto base de cerca de 16 pixels é um bom ponto de partida.",
+      "A boa tipografia quase não se nota: o leitor simplesmente se sente à vontade."
+     ],
+     "q": "Que site você acha mais fácil de ler e por quê?",
+     "c": "Defina o texto em 1rem com line-height de 1.6 e compare."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Serif, sans-serif and more",
+     "g": "Match font categories to the feeling you want.",
+     "p": [
+      "Serif fonts have small strokes at letter ends and feel classic.",
+      "Sans-serif fonts are clean and modern; monospace suits code.",
+      "Always add a generic fallback such as sans-serif to your font stack."
+     ],
+     "q": "What personality should your site's text have: warm, sharp or playful?",
+     "c": "Set font-family: Georgia, serif on headings and compare with sans-serif."
+    },
+    "de": {
+     "t": "Serif, Sans-Serif und mehr",
+     "g": "Passe Schriftkategorien an das gewünschte Gefühl an.",
+     "p": [
+      "Serifenschriften haben kleine Striche an den Buchstabenenden und wirken klassisch.",
+      "Serifenlose Schriften wirken klar und modern; Monospace passt zu Code.",
+      "Füge deinem font-family-Stack immer eine generische Ersatzschrift wie sans-serif hinzu."
+     ],
+     "q": "Welche Persönlichkeit soll der Text deiner Seite haben: warm, scharf oder verspielt?",
+     "c": "Setze font-family: Georgia, serif für Überschriften und vergleiche mit sans-serif."
+    },
+    "es": {
+     "t": "Serif, sans-serif y más",
+     "g": "Une las categorías de fuentes con la sensación que buscas.",
+     "p": [
+      "Las fuentes serif tienen pequeños remates en las letras y se sienten clásicas.",
+      "Las sans-serif son limpias y modernas; las monoespaciadas van bien con código.",
+      "Añade siempre una fuente genérica de respaldo como sans-serif a tu lista de fuentes."
+     ],
+     "q": "¿Qué personalidad debería tener el texto de tu sitio: cálida, nítida o juguetona?",
+     "c": "Pon font-family: Georgia, serif en los títulos y compáralo con sans-serif."
+    },
+    "fr": {
+     "t": "Serif, sans-serif et autres",
+     "g": "Associe les catégories de polices à l'impression recherchée.",
+     "p": [
+      "Les polices serif ont de petits empattements et paraissent classiques.",
+      "Les sans-serif sont nettes et modernes ; la monospace convient au code.",
+      "Ajoute toujours une police générique de secours comme sans-serif à ta pile de polices."
+     ],
+     "q": "Quelle personnalité ton texte devrait-il avoir : chaleureuse, nette ou ludique ?",
+     "c": "Mets font-family: Georgia, serif sur les titres et compare avec sans-serif."
+    },
+    "it": {
+     "t": "Serif, sans-serif e altro",
+     "g": "Abbina le categorie di font alla sensazione che vuoi.",
+     "p": [
+      "I font serif hanno piccole grazie alle estremità e danno un tono classico.",
+      "I sans-serif sono puliti e moderni; il monospace va bene per il codice.",
+      "Aggiungi sempre un font generico di riserva come sans-serif al tuo elenco di font."
+     ],
+     "q": "Che personalità dovrebbe avere il testo del tuo sito: calda, netta o giocosa?",
+     "c": "Imposta font-family: Georgia, serif sui titoli e confronta con sans-serif."
+    },
+    "pt": {
+     "t": "Serifa, sem serifa e mais",
+     "g": "Associa as categorias de fontes à sensação que queres.",
+     "p": [
+      "As fontes com serifa têm pequenos remates nas letras e parecem clássicas.",
+      "As sem serifa são limpas e modernas; as monoespaçadas servem para código.",
+      "Acrescenta sempre uma fonte genérica de reserva como sans-serif à lista de fontes."
+     ],
+     "q": "Que personalidade deve ter o texto do teu site: calorosa, nítida ou divertida?",
+     "c": "Define font-family: Georgia, serif nos títulos e compara com sans-serif."
+    },
+    "pt_BR": {
+     "t": "Serifa, sem serifa e mais",
+     "g": "Combine as categorias de fontes com a sensação que você quer.",
+     "p": [
+      "Fontes com serifa têm pequenos acabamentos nas letras e parecem clássicas.",
+      "As sem serifa são limpas e modernas; as monoespaçadas servem para código.",
+      "Adicione sempre uma fonte genérica de reserva como sans-serif à lista de fontes."
+     ],
+     "q": "Que personalidade o texto do seu site deve ter: calorosa, nítida ou divertida?",
+     "c": "Defina font-family: Georgia, serif nos títulos e compare com sans-serif."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Web fonts",
+     "g": "Add custom fonts without slowing your page down.",
+     "p": [
+      "A font file loaded with @font-face lets you use a font you chose.",
+      "Every extra weight and style adds download size, so pick only what you need.",
+      "Modern formats like WOFF2 are small; font-display: swap shows text at once."
+     ],
+     "q": "Which one or two fonts would suit your site best?",
+     "c": "Load one font with two weights and set font-display: swap."
+    },
+    "de": {
+     "t": "Webfonts",
+     "g": "Füge eigene Schriften hinzu, ohne die Seite auszubremsen.",
+     "p": [
+      "Eine mit @font-face geladene Schriftdatei erlaubt dir eine selbst gewählte Schrift.",
+      "Jede zusätzliche Stärke und jeder Stil erhöht die Downloadgröße, wähle nur das Nötige.",
+      "Moderne Formate wie WOFF2 sind klein; font-display: swap zeigt Text sofort."
+     ],
+     "q": "Welche ein bis zwei Schriften würden zu deiner Seite am besten passen?",
+     "c": "Lade eine Schrift mit zwei Stärken und setze font-display: swap."
+    },
+    "es": {
+     "t": "Fuentes web",
+     "g": "Añade fuentes propias sin ralentizar tu página.",
+     "p": [
+      "Un archivo de fuente cargado con @font-face te deja usar la fuente que elijas.",
+      "Cada grosor y estilo extra aumenta la descarga, así que elige solo lo necesario.",
+      "Formatos modernos como WOFF2 pesan poco; font-display: swap muestra el texto al instante."
+     ],
+     "q": "¿Qué una o dos fuentes irían mejor con tu sitio?",
+     "c": "Carga una fuente con dos grosores y define font-display: swap."
+    },
+    "fr": {
+     "t": "Les polices web",
+     "g": "Ajoute des polices personnalisées sans ralentir ta page.",
+     "p": [
+      "Un fichier de police chargé avec @font-face te permet d'utiliser la police de ton choix.",
+      "Chaque graisse et style en plus alourdit le téléchargement, choisis seulement le nécessaire.",
+      "Les formats modernes comme WOFF2 sont légers ; font-display: swap affiche le texte tout de suite."
+     ],
+     "q": "Quelles une ou deux polices iraient le mieux à ton site ?",
+     "c": "Charge une police avec deux graisses et règle font-display: swap."
+    },
+    "it": {
+     "t": "I web font",
+     "g": "Aggiungi font personalizzati senza rallentare la pagina.",
+     "p": [
+      "Un file di font caricato con @font-face ti permette di usare il font che scegli.",
+      "Ogni peso e stile in più aumenta il download, quindi scegli solo il necessario.",
+      "Formati moderni come WOFF2 sono leggeri; font-display: swap mostra subito il testo."
+     ],
+     "q": "Quali uno o due font starebbero meglio al tuo sito?",
+     "c": "Carica un font con due pesi e imposta font-display: swap."
+    },
+    "pt": {
+     "t": "Fontes web",
+     "g": "Acrescenta fontes personalizadas sem abrandar a página.",
+     "p": [
+      "Um ficheiro de fonte carregado com @font-face permite usar a fonte que escolheres.",
+      "Cada espessura e estilo extra aumenta o descarregamento, por isso escolhe só o necessário.",
+      "Formatos modernos como WOFF2 são leves; font-display: swap mostra o texto logo."
+     ],
+     "q": "Que uma ou duas fontes combinariam melhor com o teu site?",
+     "c": "Carrega uma fonte com duas espessuras e define font-display: swap."
+    },
+    "pt_BR": {
+     "t": "Fontes web",
+     "g": "Adicione fontes personalizadas sem deixar a página lenta.",
+     "p": [
+      "Um arquivo de fonte carregado com @font-face permite usar a fonte que você escolher.",
+      "Cada espessura e estilo extra aumenta o download, então escolha só o necessário.",
+      "Formatos modernos como WOFF2 são leves; font-display: swap mostra o texto logo."
+     ],
+     "q": "Que uma ou duas fontes combinariam melhor com o seu site?",
+     "c": "Carregue uma fonte com duas espessuras e defina font-display: swap."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Font pairing",
+     "g": "Combine a heading font and body font that work together.",
+     "p": [
+      "Two fonts are usually enough: one for headings and one for text.",
+      "Pair fonts that clearly contrast, such as a serif heading with sans-serif text.",
+      "Avoid two fonts that are almost the same; it looks like a mistake."
+     ],
+     "q": "Which pairing would give your site a friendly, trustworthy voice?",
+     "c": "Try three heading and body pairings and keep the one you like best."
+    },
+    "de": {
+     "t": "Schriftkombinationen",
+     "g": "Kombiniere Überschrift- und Textschrift, die zusammenpassen.",
+     "p": [
+      "Zwei Schriften genügen meist: eine für Überschriften, eine für Text.",
+      "Kombiniere Schriften mit klarem Kontrast, etwa Serifen-Überschrift mit serifenlosem Text.",
+      "Vermeide zwei fast gleiche Schriften; das wirkt wie ein Fehler."
+     ],
+     "q": "Welche Kombination gäbe deiner Seite eine freundliche, vertrauenswürdige Stimme?",
+     "c": "Probiere drei Kombinationen für Überschrift und Text und behalte die beste."
+    },
+    "es": {
+     "t": "Combinar fuentes",
+     "g": "Combina una fuente de títulos y una de texto que funcionen juntas.",
+     "p": [
+      "Dos fuentes suelen bastar: una para títulos y otra para el texto.",
+      "Combina fuentes que contrasten claramente, como títulos serif con texto sans-serif.",
+      "Evita dos fuentes casi iguales; parece un error."
+     ],
+     "q": "¿Qué combinación daría a tu sitio una voz amable y de confianza?",
+     "c": "Prueba tres combinaciones de título y texto y quédate con la que más te guste."
+    },
+    "fr": {
+     "t": "Associer des polices",
+     "g": "Associe une police de titre et une police de texte qui s'accordent.",
+     "p": [
+      "Deux polices suffisent en général : une pour les titres, une pour le texte.",
+      "Associe des polices au contraste net, comme un titre serif avec un texte sans-serif.",
+      "Évite deux polices presque identiques ; cela ressemble à une erreur."
+     ],
+     "q": "Quelle association donnerait à ton site une voix chaleureuse et fiable ?",
+     "c": "Essaie trois associations titre et texte et garde celle que tu préfères."
+    },
+    "it": {
+     "t": "Abbinare i font",
+     "g": "Abbina un font per i titoli e uno per il testo che funzionino bene insieme.",
+     "p": [
+      "Di solito bastano due font: uno per i titoli e uno per il testo.",
+      "Abbina font con un contrasto chiaro, come titoli serif con testo sans-serif.",
+      "Evita due font quasi uguali; sembra un errore."
+     ],
+     "q": "Quale abbinamento darebbe al tuo sito una voce amichevole e affidabile?",
+     "c": "Prova tre abbinamenti titolo e testo e tieni quello che preferisci."
+    },
+    "pt": {
+     "t": "Combinar fontes",
+     "g": "Combina uma fonte de títulos e uma de texto que funcionem em conjunto.",
+     "p": [
+      "Duas fontes costumam chegar: uma para títulos e outra para o texto.",
+      "Combina fontes com contraste claro, como títulos com serifa e texto sem serifa.",
+      "Evita duas fontes quase iguais; parece um erro."
+     ],
+     "q": "Que combinação daria ao teu site uma voz amigável e de confiança?",
+     "c": "Experimenta três combinações de título e texto e fica com a que mais gostares."
+    },
+    "pt_BR": {
+     "t": "Combinando fontes",
+     "g": "Combine uma fonte de títulos e uma de texto que funcionem juntas.",
+     "p": [
+      "Duas fontes costumam bastar: uma para títulos e outra para o texto.",
+      "Combine fontes com contraste claro, como títulos com serifa e texto sem serifa.",
+      "Evite duas fontes quase iguais; parece um erro."
+     ],
+     "q": "Que combinação daria ao seu site uma voz amigável e confiável?",
+     "c": "Experimente três combinações de título e texto e fique com a que mais gostar."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Line height and line length",
+     "g": "Tune spacing between lines and width of text blocks.",
+     "p": [
+      "A line-height between 1.4 and 1.7 gives text room to breathe.",
+      "Lines of about 50 to 75 characters are the easiest to follow.",
+      "The ch unit helps: max-width: 65ch limits a paragraph's width."
+     ],
+     "q": "Do very long lines tire your eyes when you read on a wide screen?",
+     "c": "Set max-width: 65ch on a paragraph and compare the reading feel."
+    },
+    "de": {
+     "t": "Zeilenhöhe und Zeilenlänge",
+     "g": "Stimme Zeilenabstand und Breite von Textblöcken ab.",
+     "p": [
+      "Eine line-height zwischen 1.4 und 1.7 gibt dem Text Luft zum Atmen.",
+      "Zeilen mit etwa 50 bis 75 Zeichen lassen sich am leichtesten verfolgen.",
+      "Die Einheit ch hilft: max-width: 65ch begrenzt die Breite eines Absatzes."
+     ],
+     "q": "Ermüden sehr lange Zeilen deine Augen auf einem breiten Bildschirm?",
+     "c": "Setze max-width: 65ch auf einen Absatz und vergleiche das Lesegefühl."
+    },
+    "es": {
+     "t": "Interlineado y longitud de línea",
+     "g": "Ajusta el espacio entre líneas y el ancho de los bloques de texto.",
+     "p": [
+      "Un line-height entre 1.4 y 1.7 da aire al texto.",
+      "Líneas de unos 50 a 75 caracteres son las más fáciles de seguir.",
+      "La unidad ch ayuda: max-width: 65ch limita el ancho de un párrafo."
+     ],
+     "q": "¿Te cansan las líneas muy largas al leer en una pantalla ancha?",
+     "c": "Pon max-width: 65ch en un párrafo y compara la sensación de lectura."
+    },
+    "fr": {
+     "t": "Interligne et longueur de ligne",
+     "g": "Ajuste l'espace entre les lignes et la largeur des blocs de texte.",
+     "p": [
+      "Un line-height entre 1.4 et 1.7 laisse respirer le texte.",
+      "Des lignes de 50 à 75 caractères environ sont les plus faciles à suivre.",
+      "L'unité ch aide : max-width: 65ch limite la largeur d'un paragraphe."
+     ],
+     "q": "Les lignes très longues te fatiguent-elles les yeux sur un grand écran ?",
+     "c": "Mets max-width: 65ch sur un paragraphe et compare le confort de lecture."
+    },
+    "it": {
+     "t": "Interlinea e lunghezza della riga",
+     "g": "Regola lo spazio tra le righe e la larghezza dei blocchi di testo.",
+     "p": [
+      "Un line-height tra 1.4 e 1.7 lascia respirare il testo.",
+      "Righe di circa 50-75 caratteri sono le più facili da seguire.",
+      "L'unità ch aiuta: max-width: 65ch limita la larghezza di un paragrafo."
+     ],
+     "q": "Le righe molto lunghe ti stancano la vista su uno schermo largo?",
+     "c": "Imposta max-width: 65ch su un paragrafo e confronta la sensazione di lettura."
+    },
+    "pt": {
+     "t": "Entrelinha e comprimento da linha",
+     "g": "Afina o espaço entre linhas e a largura dos blocos de texto.",
+     "p": [
+      "Um line-height entre 1.4 e 1.7 dá ar ao texto.",
+      "Linhas de cerca de 50 a 75 caracteres são as mais fáceis de acompanhar.",
+      "A unidade ch ajuda: max-width: 65ch limita a largura de um parágrafo."
+     ],
+     "q": "Linhas muito longas cansam-te a vista num ecrã largo?",
+     "c": "Define max-width: 65ch num parágrafo e compara a sensação de leitura."
+    },
+    "pt_BR": {
+     "t": "Entrelinha e comprimento da linha",
+     "g": "Ajuste o espaço entre linhas e a largura dos blocos de texto.",
+     "p": [
+      "Um line-height entre 1.4 e 1.7 dá ar ao texto.",
+      "Linhas de cerca de 50 a 75 caracteres são as mais fáceis de acompanhar.",
+      "A unidade ch ajuda: max-width: 65ch limita a largura de um parágrafo."
+     ],
+     "q": "Linhas muito longas cansam sua vista em uma tela larga?",
+     "c": "Defina max-width: 65ch em um parágrafo e compare a sensação de leitura."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Type scale and hierarchy",
+     "g": "Use a consistent set of sizes for clear hierarchy.",
+     "p": [
+      "A type scale multiplies a base size by a ratio, like 1.25.",
+      "Headings, body text and captions should look clearly different.",
+      "Define sizes once as CSS variables and reuse them everywhere."
+     ],
+     "q": "How many text sizes does your page really need?",
+     "c": "Define five sizes as --text-sm to --text-xl and apply them to your page."
+    },
+    "de": {
+     "t": "Schriftskala und Hierarchie",
+     "g": "Nutze einheitliche Größen für eine klare Hierarchie.",
+     "p": [
+      "Eine Schriftskala multipliziert eine Basisgröße mit einem Faktor, etwa 1.25.",
+      "Überschriften, Fließtext und Bildunterschriften sollen klar verschieden aussehen.",
+      "Lege Größen einmal als CSS-Variablen fest und nutze sie überall."
+     ],
+     "q": "Wie viele Schriftgrößen braucht deine Seite wirklich?",
+     "c": "Definiere fünf Größen als --text-sm bis --text-xl und wende sie auf deine Seite an."
+    },
+    "es": {
+     "t": "Escala tipográfica y jerarquía",
+     "g": "Usa tamaños coherentes para una jerarquía clara.",
+     "p": [
+      "Una escala tipográfica multiplica un tamaño base por una razón, como 1.25.",
+      "Títulos, texto y pies de foto deben verse claramente distintos.",
+      "Define los tamaños una vez como variables CSS y reutilízalos en todo."
+     ],
+     "q": "¿Cuántos tamaños de texto necesita de verdad tu página?",
+     "c": "Define cinco tamaños como --text-sm a --text-xl y aplícalos a tu página."
+    },
+    "fr": {
+     "t": "Échelle typographique et hiérarchie",
+     "g": "Utilise des tailles cohérentes pour une hiérarchie claire.",
+     "p": [
+      "Une échelle typographique multiplie une taille de base par un rapport, comme 1.25.",
+      "Titres, texte courant et légendes doivent être nettement distincts.",
+      "Définis les tailles une fois comme variables CSS et réutilise-les partout."
+     ],
+     "q": "De combien de tailles de texte ta page a-t-elle vraiment besoin ?",
+     "c": "Définis cinq tailles de --text-sm à --text-xl et applique-les à ta page."
+    },
+    "it": {
+     "t": "Scala tipografica e gerarchia",
+     "g": "Usa dimensioni coerenti per una gerarchia chiara.",
+     "p": [
+      "Una scala tipografica moltiplica una dimensione base per un rapporto, come 1.25.",
+      "Titoli, testo e didascalie devono apparire chiaramente diversi.",
+      "Definisci le dimensioni una volta come variabili CSS e riusale ovunque."
+     ],
+     "q": "Di quante dimensioni di testo ha davvero bisogno la tua pagina?",
+     "c": "Definisci cinque dimensioni da --text-sm a --text-xl e applicale alla pagina."
+    },
+    "pt": {
+     "t": "Escala tipográfica e hierarquia",
+     "g": "Usa tamanhos coerentes para uma hierarquia clara.",
+     "p": [
+      "Uma escala tipográfica multiplica um tamanho base por uma razão, como 1.25.",
+      "Títulos, texto e legendas devem parecer claramente diferentes.",
+      "Define os tamanhos uma vez como variáveis CSS e reutiliza-os em todo o lado."
+     ],
+     "q": "De quantos tamanhos de texto precisa mesmo a tua página?",
+     "c": "Define cinco tamanhos de --text-sm a --text-xl e aplica-os à tua página."
+    },
+    "pt_BR": {
+     "t": "Escala tipográfica e hierarquia",
+     "g": "Use tamanhos coerentes para uma hierarquia clara.",
+     "p": [
+      "Uma escala tipográfica multiplica um tamanho base por uma razão, como 1.25.",
+      "Títulos, texto e legendas devem parecer claramente diferentes.",
+      "Defina os tamanhos uma vez como variáveis CSS e reutilize em todo lugar."
+     ],
+     "q": "De quantos tamanhos de texto a sua página realmente precisa?",
+     "c": "Defina cinco tamanhos de --text-sm a --text-xl e aplique à sua página."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Text alignment and readability",
+     "g": "Align text so it is easy to read in any language.",
+     "p": [
+      "Left-aligned text is easiest to read in left-to-right languages.",
+      "Centre short lines such as headings, not long paragraphs.",
+      "Avoid justified text on narrow screens; it creates odd gaps."
+     ],
+     "q": "Which text on your page, if any, should be centred?",
+     "c": "Left-align a paragraph, centre a heading and compare readability."
+    },
+    "de": {
+     "t": "Textausrichtung und Lesbarkeit",
+     "g": "Richte Text so aus, dass er in jeder Sprache gut lesbar ist.",
+     "p": [
+      "Linksbündiger Text liest sich in Sprachen von links nach rechts am leichtesten.",
+      "Zentriere kurze Zeilen wie Überschriften, keine langen Absätze.",
+      "Vermeide Blocksatz auf schmalen Bildschirmen; er erzeugt seltsame Lücken."
+     ],
+     "q": "Welcher Text deiner Seite, falls überhaupt, sollte zentriert sein?",
+     "c": "Setze einen Absatz linksbündig, zentriere eine Überschrift und vergleiche die Lesbarkeit."
+    },
+    "es": {
+     "t": "Alineación del texto y legibilidad",
+     "g": "Alinea el texto para que sea fácil de leer en cualquier idioma.",
+     "p": [
+      "El texto alineado a la izquierda es el más fácil en idiomas que se leen de izquierda a derecha.",
+      "Centra líneas cortas como los títulos, no párrafos largos.",
+      "Evita el texto justificado en pantallas estrechas; crea huecos raros."
+     ],
+     "q": "¿Qué texto de tu página, si alguno, debería ir centrado?",
+     "c": "Alinea un párrafo a la izquierda, centra un título y compara la legibilidad."
+    },
+    "fr": {
+     "t": "Alignement du texte et lisibilité",
+     "g": "Aligne le texte pour qu'il soit facile à lire dans toutes les langues.",
+     "p": [
+      "Le texte aligné à gauche est le plus facile dans les langues lues de gauche à droite.",
+      "Centre les lignes courtes comme les titres, pas les longs paragraphes.",
+      "Évite le texte justifié sur écran étroit ; il crée des trous étranges."
+     ],
+     "q": "Quel texte de ta page, s'il y en a un, devrait être centré ?",
+     "c": "Aligne un paragraphe à gauche, centre un titre et compare la lisibilité."
+    },
+    "it": {
+     "t": "Allineamento del testo e leggibilità",
+     "g": "Allinea il testo perché sia facile da leggere in ogni lingua.",
+     "p": [
+      "Il testo allineato a sinistra è il più facile nelle lingue lette da sinistra a destra.",
+      "Centra righe brevi come i titoli, non paragrafi lunghi.",
+      "Evita il testo giustificato su schermi stretti; crea strani vuoti."
+     ],
+     "q": "Quale testo della tua pagina, se ce n'è uno, dovrebbe essere centrato?",
+     "c": "Allinea un paragrafo a sinistra, centra un titolo e confronta la leggibilità."
+    },
+    "pt": {
+     "t": "Alinhamento do texto e legibilidade",
+     "g": "Alinha o texto para ser fácil de ler em qualquer língua.",
+     "p": [
+      "O texto alinhado à esquerda é o mais fácil nas línguas lidas da esquerda para a direita.",
+      "Centra linhas curtas como os títulos, não parágrafos longos.",
+      "Evita texto justificado em ecrãs estreitos; cria buracos estranhos."
+     ],
+     "q": "Que texto da tua página, se algum, devia ficar centrado?",
+     "c": "Alinha um parágrafo à esquerda, centra um título e compara a legibilidade."
+    },
+    "pt_BR": {
+     "t": "Alinhamento do texto e legibilidade",
+     "g": "Alinhe o texto para ser fácil de ler em qualquer idioma.",
+     "p": [
+      "O texto alinhado à esquerda é o mais fácil nos idiomas lidos da esquerda para a direita.",
+      "Centralize linhas curtas como os títulos, não parágrafos longos.",
+      "Evite texto justificado em telas estreitas; ele cria buracos estranhos."
+     ],
+     "q": "Que texto da sua página, se algum, deveria ficar centralizado?",
+     "c": "Alinhe um parágrafo à esquerda, centralize um título e compare a legibilidade."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Text decoration and transform",
+     "g": "Add emphasis with underlines, capitals and letter spacing.",
+     "p": [
+      "text-decoration controls underlines; links are best left underlined.",
+      "text-transform: uppercase changes case without retyping the text.",
+      "A little letter-spacing helps small capital labels breathe."
+     ],
+     "q": "Where would a small uppercase label suit your page?",
+     "c": "Make a small label uppercase with letter-spacing: 0.08em."
+    },
+    "de": {
+     "t": "Textdekoration und -umwandlung",
+     "g": "Setze Akzente mit Unterstreichung, Großbuchstaben und Laufweite.",
+     "p": [
+      "text-decoration steuert Unterstreichungen; Links bleiben am besten unterstrichen.",
+      "text-transform: uppercase ändert die Schreibung, ohne den Text neu zu tippen.",
+      "Etwas letter-spacing gibt kleinen Versalien-Labels Luft."
+     ],
+     "q": "Wo passt auf deiner Seite ein kleines Label in Großbuchstaben?",
+     "c": "Setze ein kleines Label in Versalien mit letter-spacing: 0.08em."
+    },
+    "es": {
+     "t": "Decoración y transformación del texto",
+     "g": "Añade énfasis con subrayados, mayúsculas y espaciado de letras.",
+     "p": [
+      "text-decoration controla los subrayados; es mejor dejar los enlaces subrayados.",
+      "text-transform: uppercase cambia las mayúsculas sin reescribir el texto.",
+      "Un poco de letter-spacing da aire a las etiquetas pequeñas en mayúsculas."
+     ],
+     "q": "¿Dónde quedaría bien una pequeña etiqueta en mayúsculas en tu página?",
+     "c": "Pon una etiqueta pequeña en mayúsculas con letter-spacing: 0.08em."
+    },
+    "fr": {
+     "t": "Décoration et transformation du texte",
+     "g": "Ajoute de l'emphase avec soulignements, majuscules et espacement des lettres.",
+     "p": [
+      "text-decoration contrôle les soulignements ; mieux vaut laisser les liens soulignés.",
+      "text-transform: uppercase change la casse sans retaper le texte.",
+      "Un peu de letter-spacing aère les petites étiquettes en capitales."
+     ],
+     "q": "Où une petite étiquette en majuscules irait-elle bien sur ta page ?",
+     "c": "Mets une petite étiquette en majuscules avec letter-spacing: 0.08em."
+    },
+    "it": {
+     "t": "Decorazione e trasformazione del testo",
+     "g": "Dai enfasi con sottolineature, maiuscole e spaziatura delle lettere.",
+     "p": [
+      "text-decoration controlla le sottolineature; meglio lasciare i link sottolineati.",
+      "text-transform: uppercase cambia le maiuscole senza riscrivere il testo.",
+      "Un po' di letter-spacing fa respirare le piccole etichette in maiuscolo."
+     ],
+     "q": "Dove starebbe bene una piccola etichetta in maiuscolo nella tua pagina?",
+     "c": "Metti una piccola etichetta in maiuscolo con letter-spacing: 0.08em."
+    },
+    "pt": {
+     "t": "Decoração e transformação do texto",
+     "g": "Dá ênfase com sublinhados, maiúsculas e espaçamento de letras.",
+     "p": [
+      "text-decoration controla os sublinhados; é melhor deixar as ligações sublinhadas.",
+      "text-transform: uppercase muda as maiúsculas sem reescrever o texto.",
+      "Um pouco de letter-spacing dá ar às pequenas etiquetas em maiúsculas."
+     ],
+     "q": "Onde ficaria bem uma pequena etiqueta em maiúsculas na tua página?",
+     "c": "Põe uma pequena etiqueta em maiúsculas com letter-spacing: 0.08em."
+    },
+    "pt_BR": {
+     "t": "Decoração e transformação do texto",
+     "g": "Dê ênfase com sublinhados, maiúsculas e espaçamento de letras.",
+     "p": [
+      "text-decoration controla os sublinhados; é melhor deixar os links sublinhados.",
+      "text-transform: uppercase muda as maiúsculas sem reescrever o texto.",
+      "Um pouco de letter-spacing dá ar às pequenas etiquetas em maiúsculas."
+     ],
+     "q": "Onde ficaria bem uma pequena etiqueta em maiúsculas na sua página?",
+     "c": "Coloque uma pequena etiqueta em maiúsculas com letter-spacing: 0.08em."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Styling lists and quotes",
+     "g": "Make lists and quotes pleasant to read.",
+     "p": [
+      "list-style changes bullets or numbers, and padding controls the indent.",
+      "Style a blockquote with a left border and some padding for a clean look.",
+      "Use the cite element for the source and keep quotes short."
+     ],
+     "q": "Which quote would you love to feature on your page?",
+     "c": "Style a blockquote with a 4px left border and italic text."
+    },
+    "de": {
+     "t": "Listen und Zitate gestalten",
+     "g": "Mach Listen und Zitate angenehm lesbar.",
+     "p": [
+      "list-style ändert Aufzählungszeichen oder Nummern, padding steuert den Einzug.",
+      "Gestalte ein blockquote mit linkem Rahmen und etwas Padding für einen klaren Look.",
+      "Nutze das cite-Element für die Quelle und halte Zitate kurz."
+     ],
+     "q": "Welches Zitat würdest du gern auf deiner Seite zeigen?",
+     "c": "Gestalte ein blockquote mit 4px linkem Rahmen und kursivem Text."
+    },
+    "es": {
+     "t": "Dar estilo a listas y citas",
+     "g": "Haz que listas y citas sean agradables de leer.",
+     "p": [
+      "list-style cambia viñetas o números y padding controla la sangría.",
+      "Da a un blockquote un borde izquierdo y algo de padding para un aspecto limpio.",
+      "Usa el elemento cite para la fuente y mantén las citas breves."
+     ],
+     "q": "¿Qué cita te gustaría destacar en tu página?",
+     "c": "Da a un blockquote un borde izquierdo de 4px y texto en cursiva."
+    },
+    "fr": {
+     "t": "Styliser listes et citations",
+     "g": "Rends listes et citations agréables à lire.",
+     "p": [
+      "list-style change les puces ou numéros, et padding contrôle le retrait.",
+      "Stylise un blockquote avec une bordure gauche et un peu de padding pour un rendu net.",
+      "Utilise l'élément cite pour la source et garde les citations courtes."
+     ],
+     "q": "Quelle citation aimerais-tu mettre en avant sur ta page ?",
+     "c": "Stylise un blockquote avec une bordure gauche de 4px et un texte en italique."
+    },
+    "it": {
+     "t": "Stilizzare liste e citazioni",
+     "g": "Rendi piacevoli da leggere liste e citazioni.",
+     "p": [
+      "list-style cambia puntini o numeri e padding controlla il rientro.",
+      "Stilizza un blockquote con un bordo sinistro e un po' di padding per un aspetto pulito.",
+      "Usa l'elemento cite per la fonte e tieni le citazioni brevi."
+     ],
+     "q": "Quale citazione ti piacerebbe mettere in evidenza nella tua pagina?",
+     "c": "Stilizza un blockquote con un bordo sinistro di 4px e testo corsivo."
+    },
+    "pt": {
+     "t": "Estilizar listas e citações",
+     "g": "Torna listas e citações agradáveis de ler.",
+     "p": [
+      "list-style muda marcadores ou números e padding controla o avanço.",
+      "Dá a um blockquote um contorno à esquerda e algum padding para um aspeto limpo.",
+      "Usa o elemento cite para a fonte e mantém as citações curtas."
+     ],
+     "q": "Que citação gostarias de destacar na tua página?",
+     "c": "Estiliza um blockquote com contorno esquerdo de 4px e texto em itálico."
+    },
+    "pt_BR": {
+     "t": "Estilizando listas e citações",
+     "g": "Torne listas e citações agradáveis de ler.",
+     "p": [
+      "list-style muda marcadores ou números e padding controla o recuo.",
+      "Dê a um blockquote uma borda à esquerda e algum padding para um visual limpo.",
+      "Use o elemento cite para a fonte e mantenha as citações curtas."
+     ],
+     "q": "Que citação você gostaria de destacar na sua página?",
+     "c": "Estilize um blockquote com borda esquerda de 4px e texto em itálico."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: boxes and type",
+     "g": "Recap the box model, units and typography essentials.",
+     "p": [
+      "Every element is a box: content, padding, border and margin.",
+      "Use border-box, rem units and a comfortable line height and length.",
+      "Pair fonts with clear contrast and keep a consistent type scale."
+     ],
+     "q": "Which idea from days 31 to 49 changed how you see web pages?",
+     "c": "Style a small article card with padding, a border, radius and tidy type."
+    },
+    "de": {
+     "t": "Rückblick: Boxen und Schrift",
+     "g": "Wiederhole Box-Modell, Einheiten und Typografie-Grundlagen.",
+     "p": [
+      "Jedes Element ist eine Box: Inhalt, Padding, Rahmen und Margin.",
+      "Nutze border-box, rem-Einheiten sowie angenehme Zeilenhöhe und -länge.",
+      "Kombiniere Schriften mit klarem Kontrast und halte eine einheitliche Schriftskala."
+     ],
+     "q": "Welche Idee der Tage 31 bis 49 hat deinen Blick auf Webseiten verändert?",
+     "c": "Gestalte eine kleine Artikelkarte mit Padding, Rahmen, Rundung und ordentlicher Schrift."
+    },
+    "es": {
+     "t": "Repaso: cajas y tipografía",
+     "g": "Repasa el modelo de caja, las unidades y lo esencial de la tipografía.",
+     "p": [
+      "Cada elemento es una caja: contenido, padding, borde y margin.",
+      "Usa border-box, unidades rem y un interlineado y ancho de línea cómodos.",
+      "Combina fuentes con contraste claro y mantén una escala tipográfica coherente."
+     ],
+     "q": "¿Qué idea de los días 31 a 49 cambió tu forma de ver las páginas web?",
+     "c": "Da estilo a una pequeña tarjeta de artículo con padding, borde, radio y tipografía cuidada."
+    },
+    "fr": {
+     "t": "Révision : boîtes et typographie",
+     "g": "Revois le modèle de boîte, les unités et l'essentiel de la typographie.",
+     "p": [
+      "Chaque élément est une boîte : contenu, padding, bordure et margin.",
+      "Utilise border-box, des unités rem, un interligne et une longueur de ligne confortables.",
+      "Associe des polices au contraste net et garde une échelle typographique cohérente."
+     ],
+     "q": "Quelle idée des jours 31 à 49 a changé ton regard sur les pages web ?",
+     "c": "Stylise une petite carte d'article avec padding, bordure, arrondi et typographie soignée."
+    },
+    "it": {
+     "t": "Ripasso: box e tipografia",
+     "g": "Ripassa box model, unità e i fondamenti della tipografia.",
+     "p": [
+      "Ogni elemento è una scatola: contenuto, padding, bordo e margin.",
+      "Usa border-box, unità rem e un'interlinea e una lunghezza di riga comode.",
+      "Abbina font con contrasto chiaro e mantieni una scala tipografica coerente."
+     ],
+     "q": "Quale idea dei giorni da 31 a 49 ha cambiato il tuo modo di vedere le pagine web?",
+     "c": "Stilizza una piccola card di articolo con padding, bordo, raggio e tipografia curata."
+    },
+    "pt": {
+     "t": "Revisão: caixas e tipografia",
+     "g": "Revê o modelo de caixa, as unidades e o essencial da tipografia.",
+     "p": [
+      "Cada elemento é uma caixa: conteúdo, padding, contorno e margin.",
+      "Usa border-box, unidades rem e uma entrelinha e largura de linha confortáveis.",
+      "Combina fontes com contraste claro e mantém uma escala tipográfica coerente."
+     ],
+     "q": "Que ideia dos dias 31 a 49 mudou a tua forma de ver as páginas web?",
+     "c": "Estiliza um pequeno cartão de artigo com padding, contorno, raio e tipografia cuidada."
+    },
+    "pt_BR": {
+     "t": "Revisão: caixas e tipografia",
+     "g": "Revise o modelo de caixa, as unidades e o essencial da tipografia.",
+     "p": [
+      "Cada elemento é uma caixa: conteúdo, padding, borda e margin.",
+      "Use border-box, unidades rem e uma entrelinha e largura de linha confortáveis.",
+      "Combine fontes com contraste claro e mantenha uma escala tipográfica coerente."
+     ],
+     "q": "Que ideia dos dias 31 a 49 mudou seu jeito de ver as páginas web?",
+     "c": "Estilize um pequeno cartão de artigo com padding, borda, raio e tipografia cuidada."
+    }
+   }
+  }
+ ]
+}

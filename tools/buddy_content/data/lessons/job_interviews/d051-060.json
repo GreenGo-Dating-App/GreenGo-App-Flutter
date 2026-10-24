@@ -1,0 +1,835 @@
+{
+ "topic": "job_interviews",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Questions to ask the interviewer",
+     "g": "Always have questions, because they show your interest and thinking.",
+     "p": [
+      "Having no questions can look like low interest.",
+      "Prepare five questions and expect that some will be answered during the talk.",
+      "Good questions show you think about the work, not just the benefits."
+     ],
+     "q": "What would you most like to ask a future team?",
+     "c": "Write five questions you could ask at the end of an interview."
+    },
+    "de": {
+     "t": "Fragen an die Gesprächspartner",
+     "g": "Immer Fragen bereithalten, denn sie zeigen dein Interesse und Denken.",
+     "p": [
+      "Keine Fragen zu haben, kann nach geringem Interesse aussehen.",
+      "Bereite fünf Fragen vor und rechne damit, dass manche schon beantwortet werden.",
+      "Gute Fragen zeigen, dass du über die Arbeit nachdenkst, nicht nur über Vorteile."
+     ],
+     "q": "Was würdest du ein künftiges Team am liebsten fragen?",
+     "c": "Schreibe fünf Fragen auf, die du am Ende eines Gesprächs stellen könntest."
+    },
+    "es": {
+     "t": "Preguntas para el entrevistador",
+     "g": "Tener siempre preguntas, porque muestran tu interés y tu forma de pensar.",
+     "p": [
+      "No tener preguntas puede parecer poco interés.",
+      "Prepara cinco preguntas y asume que algunas se responderán durante la charla.",
+      "Las buenas preguntas muestran que piensas en el trabajo, no solo en los beneficios."
+     ],
+     "q": "¿Qué te gustaría preguntar sobre todo a un futuro equipo?",
+     "c": "Escribe cinco preguntas que podrías hacer al final de una entrevista."
+    },
+    "fr": {
+     "t": "Les questions à poser",
+     "g": "Toujours avoir des questions, car elles montrent votre intérêt et votre réflexion.",
+     "p": [
+      "Ne pas en avoir peut paraître un manque d'intérêt.",
+      "Préparez cinq questions et attendez-vous à ce que certaines trouvent réponse en cours d'entretien.",
+      "De bonnes questions montrent que vous pensez au travail, pas seulement aux avantages."
+     ],
+     "q": "Que demanderiez-vous en priorité à une future équipe ?",
+     "c": "Écrivez cinq questions que vous pourriez poser à la fin d'un entretien."
+    },
+    "it": {
+     "t": "Domande da fare all'intervistatore",
+     "g": "Avere sempre delle domande, perché mostrano interesse e capacità di riflessione.",
+     "p": [
+      "Non avere domande può sembrare poco interesse.",
+      "Prepara cinque domande e metti in conto che ad alcune si risponderà durante il colloquio.",
+      "Le buone domande mostrano che pensi al lavoro, non solo ai vantaggi."
+     ],
+     "q": "Cosa chiederesti più volentieri a un futuro team?",
+     "c": "Scrivi cinque domande che potresti fare alla fine di un colloquio."
+    },
+    "pt": {
+     "t": "Perguntas para o entrevistador",
+     "g": "Ter sempre perguntas, porque mostram o teu interesse e a tua forma de pensar.",
+     "p": [
+      "Não ter perguntas pode parecer falta de interesse.",
+      "Prepara cinco perguntas e conta que algumas serão respondidas durante a conversa.",
+      "Boas perguntas mostram que pensas no trabalho, não apenas nas vantagens."
+     ],
+     "q": "O que mais gostarias de perguntar a uma futura equipa?",
+     "c": "Escreve cinco perguntas que poderias fazer no fim de uma entrevista."
+    },
+    "pt_BR": {
+     "t": "Perguntas para o entrevistador",
+     "g": "Sempre ter perguntas, porque elas mostram seu interesse e seu jeito de pensar.",
+     "p": [
+      "Não ter perguntas pode parecer falta de interesse.",
+      "Prepare cinco perguntas e conte que algumas serão respondidas durante a conversa.",
+      "Boas perguntas mostram que você pensa no trabalho, não só nos benefícios."
+     ],
+     "q": "O que você mais gostaria de perguntar a uma futura equipe?",
+     "c": "Escreva cinco perguntas que você poderia fazer no fim de uma entrevista."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Great questions about the role",
+     "g": "Ask about daily tasks, how success is measured and early priorities.",
+     "p": [
+      "What does a typical day or week in this role look like?",
+      "How will success be measured in the first months?",
+      "What are the main priorities for the person who starts?"
+     ],
+     "q": "Which of these questions feels most natural for you to ask?",
+     "c": "Write three questions about the role in your own natural words."
+    },
+    "de": {
+     "t": "Gute Fragen zur Stelle",
+     "g": "Nach Alltagsaufgaben, Erfolgsmessung und ersten Prioritäten fragen.",
+     "p": [
+      "Wie sieht ein typischer Tag oder eine typische Woche in dieser Rolle aus?",
+      "Woran wird Erfolg in den ersten Monaten gemessen?",
+      "Was sind die wichtigsten Prioritäten für die Person, die anfängt?"
+     ],
+     "q": "Welche dieser Fragen fällt dir am natürlichsten?",
+     "c": "Schreibe drei Fragen zur Stelle in deinen eigenen, natürlichen Worten."
+    },
+    "es": {
+     "t": "Buenas preguntas sobre el puesto",
+     "g": "Preguntar por las tareas diarias, cómo se mide el éxito y las primeras prioridades.",
+     "p": [
+      "¿Cómo es un día o una semana típica en este puesto?",
+      "¿Cómo se medirá el éxito en los primeros meses?",
+      "¿Cuáles son las prioridades principales de quien se incorpora?"
+     ],
+     "q": "¿Cuál de estas preguntas te resulta más natural?",
+     "c": "Escribe tres preguntas sobre el puesto con tus propias palabras naturales."
+    },
+    "fr": {
+     "t": "De bonnes questions sur le poste",
+     "g": "Poser des questions sur les tâches quotidiennes, la mesure du succès et les premières priorités.",
+     "p": [
+      "À quoi ressemble une journée ou une semaine type à ce poste ?",
+      "Comment le succès sera-t-il mesuré durant les premiers mois ?",
+      "Quelles sont les priorités principales de la personne qui arrive ?"
+     ],
+     "q": "Laquelle de ces questions vous paraît la plus naturelle ?",
+     "c": "Écrivez trois questions sur le poste avec vos propres mots naturels."
+    },
+    "it": {
+     "t": "Ottime domande sul ruolo",
+     "g": "Chiedere delle attività quotidiane, di come si misura il successo e delle prime priorità.",
+     "p": [
+      "Come si presenta una giornata o una settimana tipo in questo ruolo?",
+      "Come verrà misurato il successo nei primi mesi?",
+      "Quali sono le priorità principali per chi inizia?"
+     ],
+     "q": "Quale di queste domande ti viene più naturale?",
+     "c": "Scrivi tre domande sul ruolo con parole tue, in modo naturale."
+    },
+    "pt": {
+     "t": "Boas perguntas sobre a função",
+     "g": "Perguntar pelas tarefas diárias, como se mede o sucesso e as primeiras prioridades.",
+     "p": [
+      "Como é um dia ou uma semana típica nesta função?",
+      "Como será medido o sucesso nos primeiros meses?",
+      "Quais são as principais prioridades de quem começa?"
+     ],
+     "q": "Qual destas perguntas te parece mais natural?",
+     "c": "Escreve três perguntas sobre a função com as tuas próprias palavras naturais."
+    },
+    "pt_BR": {
+     "t": "Boas perguntas sobre a vaga",
+     "g": "Perguntar sobre as tarefas diárias, como o sucesso é medido e as primeiras prioridades.",
+     "p": [
+      "Como é um dia ou uma semana típica nesta vaga?",
+      "Como o sucesso será medido nos primeiros meses?",
+      "Quais são as principais prioridades de quem está começando?"
+     ],
+     "q": "Qual destas perguntas parece mais natural para você?",
+     "c": "Escreva três perguntas sobre a vaga com suas próprias palavras naturais."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Questions about team and culture",
+     "g": "Learn how the team works, communicates and grows together.",
+     "p": [
+      "Ask how the team shares updates and makes decisions.",
+      "Ask what people enjoy most about working there.",
+      "Ask how colleagues learn, get feedback and develop."
+     ],
+     "q": "What kind of team culture would help you do your best work?",
+     "c": "Write three questions about team and culture that matter most to you."
+    },
+    "de": {
+     "t": "Fragen zu Team und Kultur",
+     "g": "Erfahren, wie das Team arbeitet, kommuniziert und gemeinsam wächst.",
+     "p": [
+      "Frage, wie das Team Neuigkeiten teilt und Entscheidungen trifft.",
+      "Frage, was die Menschen an der Arbeit dort am meisten mögen.",
+      "Frage, wie Kolleginnen und Kollegen lernen, Feedback erhalten und sich entwickeln."
+     ],
+     "q": "Welche Teamkultur hilft dir, dein Bestes zu geben?",
+     "c": "Schreibe drei Fragen zu Team und Kultur auf, die dir am wichtigsten sind."
+    },
+    "es": {
+     "t": "Preguntas sobre equipo y cultura",
+     "g": "Descubrir cómo trabaja, se comunica y crece el equipo en conjunto.",
+     "p": [
+      "Pregunta cómo comparte novedades el equipo y cómo toma decisiones.",
+      "Pregunta qué es lo que más disfruta la gente de trabajar allí.",
+      "Pregunta cómo aprenden, reciben feedback y se desarrollan los compañeros."
+     ],
+     "q": "¿Qué cultura de equipo te ayudaría a dar lo mejor de ti?",
+     "c": "Escribe tres preguntas sobre equipo y cultura que más te importen."
+    },
+    "fr": {
+     "t": "Questions sur l'équipe et la culture",
+     "g": "Découvrir comment l'équipe travaille, communique et progresse ensemble.",
+     "p": [
+      "Demandez comment l'équipe partage les nouvelles et prend ses décisions.",
+      "Demandez ce que les gens apprécient le plus dans leur travail là-bas.",
+      "Demandez comment les collègues apprennent, reçoivent du feedback et évoluent."
+     ],
+     "q": "Quelle culture d'équipe vous aiderait à donner le meilleur de vous ?",
+     "c": "Écrivez trois questions sur l'équipe et la culture qui comptent le plus pour vous."
+    },
+    "it": {
+     "t": "Domande su team e cultura",
+     "g": "Scoprire come il team lavora, comunica e cresce insieme.",
+     "p": [
+      "Chiedi come il team condivide aggiornamenti e prende decisioni.",
+      "Chiedi cosa apprezzano di più le persone nel lavorare lì.",
+      "Chiedi come i colleghi imparano, ricevono feedback e si sviluppano."
+     ],
+     "q": "Quale cultura di squadra ti aiuterebbe a dare il meglio?",
+     "c": "Scrivi tre domande su team e cultura che per te contano di più."
+    },
+    "pt": {
+     "t": "Perguntas sobre equipa e cultura",
+     "g": "Descobrir como a equipa trabalha, comunica e cresce em conjunto.",
+     "p": [
+      "Pergunta como a equipa partilha novidades e toma decisões.",
+      "Pergunta o que as pessoas mais gostam em trabalhar lá.",
+      "Pergunta como os colegas aprendem, recebem feedback e se desenvolvem."
+     ],
+     "q": "Que cultura de equipa te ajudaria a dar o melhor?",
+     "c": "Escreve três perguntas sobre equipa e cultura que mais te importam."
+    },
+    "pt_BR": {
+     "t": "Perguntas sobre equipe e cultura",
+     "g": "Descobrir como a equipe trabalha, se comunica e cresce em conjunto.",
+     "p": [
+      "Pergunte como a equipe compartilha novidades e toma decisões.",
+      "Pergunte o que as pessoas mais gostam em trabalhar lá.",
+      "Pergunte como os colegas aprendem, recebem feedback e se desenvolvem."
+     ],
+     "q": "Que cultura de equipe ajudaria você a dar o seu melhor?",
+     "c": "Escreva três perguntas sobre equipe e cultura que mais importam para você."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Questions to save for later",
+     "g": "Some topics are best kept for later stages, and timing matters.",
+     "p": [
+      "Early on, focus on fit, the work and what you can contribute.",
+      "Practical details like pay or benefits usually come once there is mutual interest.",
+      "You can raise them politely when the employer opens the topic or makes an offer."
+     ],
+     "q": "Why might the order of topics matter in a conversation?",
+     "c": "Sort a list of ten questions into ask now and ask later."
+    },
+    "de": {
+     "t": "Fragen für später",
+     "g": "Manche Themen hebst du dir besser für spätere Phasen auf, Timing zählt.",
+     "p": [
+      "Anfangs geht es um Passung, die Arbeit und deinen Beitrag.",
+      "Praktische Details wie Bezahlung oder Zusatzleistungen kommen meist, wenn beidseitiges Interesse besteht.",
+      "Du kannst sie höflich ansprechen, wenn die Gegenseite das Thema öffnet oder ein Angebot macht."
+     ],
+     "q": "Warum kann die Reihenfolge der Themen in einem Gespräch wichtig sein?",
+     "c": "Sortiere zehn Fragen in jetzt fragen und später fragen."
+    },
+    "es": {
+     "t": "Preguntas para más adelante",
+     "g": "Algunos temas conviene dejarlos para fases posteriores, y el momento importa.",
+     "p": [
+      "Al principio, céntrate en el encaje, el trabajo y lo que puedes aportar.",
+      "Los detalles prácticos, como salario o beneficios, suelen llegar cuando hay interés mutuo.",
+      "Puedes plantearlos con cortesía cuando la empresa abra el tema o haga una oferta."
+     ],
+     "q": "¿Por qué puede importar el orden de los temas en una conversación?",
+     "c": "Clasifica diez preguntas en preguntar ahora y preguntar después."
+    },
+    "fr": {
+     "t": "Questions à garder pour plus tard",
+     "g": "Certains sujets sont à garder pour des étapes ultérieures, le moment compte.",
+     "p": [
+      "Au début, concentrez-vous sur l'adéquation, le travail et ce que vous apportez.",
+      "Les détails pratiques comme la rémunération ou les avantages viennent souvent quand l'intérêt est mutuel.",
+      "Vous pouvez les aborder poliment quand l'employeur ouvre le sujet ou fait une offre."
+     ],
+     "q": "Pourquoi l'ordre des sujets peut-il compter dans une conversation ?",
+     "c": "Classez dix questions en à poser maintenant et à poser plus tard."
+    },
+    "it": {
+     "t": "Domande da lasciare a dopo",
+     "g": "Alcuni argomenti è meglio lasciarli alle fasi successive, il momento conta.",
+     "p": [
+      "All'inizio concentrati su affinità, lavoro e ciò che puoi apportare.",
+      "I dettagli pratici come retribuzione o benefit arrivano di solito quando c'è interesse reciproco.",
+      "Puoi affrontarli con garbo quando l'azienda apre l'argomento o fa un'offerta."
+     ],
+     "q": "Perché l'ordine degli argomenti può contare in una conversazione?",
+     "c": "Dividi dieci domande in da chiedere ora e da chiedere dopo."
+    },
+    "pt": {
+     "t": "Perguntas para mais tarde",
+     "g": "Alguns temas é melhor deixá-los para fases posteriores, e o momento importa.",
+     "p": [
+      "No início, foca-te no ajuste, no trabalho e no que podes contribuir.",
+      "Os detalhes práticos, como remuneração ou benefícios, costumam chegar quando há interesse mútuo.",
+      "Podes levantá-los com cortesia quando a empresa abrir o tema ou fizer uma proposta."
+     ],
+     "q": "Porque pode a ordem dos temas importar numa conversa?",
+     "c": "Separa dez perguntas em perguntar agora e perguntar depois."
+    },
+    "pt_BR": {
+     "t": "Perguntas para mais tarde",
+     "g": "Alguns temas é melhor deixar para fases posteriores, e o momento importa.",
+     "p": [
+      "No início, foque no encaixe, no trabalho e no que você pode contribuir.",
+      "Detalhes práticos, como remuneração ou benefícios, costumam vir quando há interesse mútuo.",
+      "Você pode levantá-los com educação quando a empresa abrir o assunto ou fizer uma proposta."
+     ],
+     "q": "Por que a ordem dos assuntos pode importar numa conversa?",
+     "c": "Separe dez perguntas em perguntar agora e perguntar depois."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Closing the interview",
+     "g": "Sum up your interest and ask about the next steps.",
+     "p": [
+      "Say in one or two sentences why you are keen on the role.",
+      "Ask what happens next and when you might hear back.",
+      "Thank each person by name, with a warm smile and eye contact."
+     ],
+     "q": "How would you like to leave the room, feeling and looking?",
+     "c": "Write a 20-second closing statement of interest and practise it aloud."
+    },
+    "de": {
+     "t": "Das Gespräch abschließen",
+     "g": "Dein Interesse zusammenfassen und nach den nächsten Schritten fragen.",
+     "p": [
+      "Sage in ein, zwei Sätzen, warum du an der Stelle interessiert bist.",
+      "Frage, wie es weitergeht und wann du mit einer Rückmeldung rechnen kannst.",
+      "Bedanke dich bei jeder Person mit Namen, freundlichem Lächeln und Blickkontakt."
+     ],
+     "q": "Mit welchem Gefühl und Auftreten möchtest du den Raum verlassen?",
+     "c": "Schreibe ein Schlusswort von 20 Sekunden zu deinem Interesse und übe es laut."
+    },
+    "es": {
+     "t": "Cerrar la entrevista",
+     "g": "Resumir tu interés y preguntar por los siguientes pasos.",
+     "p": [
+      "Di en una o dos frases por qué te interesa el puesto.",
+      "Pregunta qué pasará después y cuándo podrías tener noticias.",
+      "Agradece a cada persona por su nombre, con una sonrisa cálida y contacto visual."
+     ],
+     "q": "¿Cómo te gustaría salir de la sala, en sensación y en imagen?",
+     "c": "Escribe un cierre de 20 segundos sobre tu interés y practícalo en voz alta."
+    },
+    "fr": {
+     "t": "Conclure l'entretien",
+     "g": "Résumer votre intérêt et demander quelles sont les prochaines étapes.",
+     "p": [
+      "Dites en une ou deux phrases pourquoi le poste vous motive.",
+      "Demandez la suite du processus et quand vous pourriez avoir des nouvelles.",
+      "Remerciez chaque personne par son nom, avec un sourire chaleureux et le regard."
+     ],
+     "q": "Comment aimeriez-vous quitter la pièce, dans votre ressenti et votre allure ?",
+     "c": "Écrivez une conclusion de 20 secondes sur votre intérêt et dites-la à voix haute."
+    },
+    "it": {
+     "t": "Chiudere il colloquio",
+     "g": "Riassumere il tuo interesse e chiedere quali sono i prossimi passi.",
+     "p": [
+      "Di' in una o due frasi perché sei interessato al ruolo.",
+      "Chiedi cosa succede dopo e quando potresti avere notizie.",
+      "Ringrazia ogni persona per nome, con un sorriso caloroso e contatto visivo."
+     ],
+     "q": "Come vorresti uscire dalla stanza, nel sentire e nell'aspetto?",
+     "c": "Scrivi una chiusura di 20 secondi sul tuo interesse ed esercitala ad alta voce."
+    },
+    "pt": {
+     "t": "Encerrar a entrevista",
+     "g": "Resumir o teu interesse e perguntar pelos próximos passos.",
+     "p": [
+      "Diz em uma ou duas frases porque estás interessado na função.",
+      "Pergunta o que acontece a seguir e quando poderás ter notícias.",
+      "Agradece a cada pessoa pelo nome, com um sorriso caloroso e contacto visual."
+     ],
+     "q": "Como gostarias de sair da sala, em sentimento e em imagem?",
+     "c": "Escreve um fecho de 20 segundos sobre o teu interesse e pratica-o em voz alta."
+    },
+    "pt_BR": {
+     "t": "Encerrando a entrevista",
+     "g": "Resumir seu interesse e perguntar sobre os próximos passos.",
+     "p": [
+      "Diga em uma ou duas frases por que você tem interesse na vaga.",
+      "Pergunte o que acontece a seguir e quando você pode ter notícias.",
+      "Agradeça a cada pessoa pelo nome, com um sorriso caloroso e contato visual."
+     ],
+     "q": "Como você gostaria de sair da sala, em sensação e em imagem?",
+     "c": "Escreva um fechamento de 20 segundos sobre seu interesse e pratique em voz alta."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The thank-you message",
+     "g": "Write a short, sincere thank-you note within a day of the interview.",
+     "p": [
+      "Send it within 24 hours while the conversation is fresh.",
+      "Thank them, mention one specific moment, and repeat your interest.",
+      "Keep it short, polite and free of typos."
+     ],
+     "q": "Who has recently helped you, and how did you thank them?",
+     "c": "Draft a four-sentence thank-you note for an imaginary interview."
+    },
+    "de": {
+     "t": "Die Dankesnachricht",
+     "g": "Innerhalb eines Tages eine kurze, aufrichtige Dankesnachricht schreiben.",
+     "p": [
+      "Sende sie innerhalb von 24 Stunden, solange das Gespräch frisch ist.",
+      "Bedanke dich, nenne einen konkreten Moment und bekräftige dein Interesse.",
+      "Halte sie kurz, höflich und frei von Tippfehlern."
+     ],
+     "q": "Wer hat dir zuletzt geholfen, und wie hast du dich bedankt?",
+     "c": "Entwirf eine Dankesnachricht in vier Sätzen für ein erfundenes Gespräch."
+    },
+    "es": {
+     "t": "El mensaje de agradecimiento",
+     "g": "Escribir una nota de agradecimiento breve y sincera en el plazo de un día.",
+     "p": [
+      "Envíala en 24 horas, mientras la conversación sigue fresca.",
+      "Da las gracias, menciona un momento concreto y reitera tu interés.",
+      "Que sea breve, educada y sin erratas."
+     ],
+     "q": "¿Quién te ayudó hace poco y cómo se lo agradeciste?",
+     "c": "Redacta una nota de agradecimiento de cuatro frases para una entrevista imaginaria."
+    },
+    "fr": {
+     "t": "Le message de remerciement",
+     "g": "Rédiger un court message de remerciement sincère dans la journée suivant l'entretien.",
+     "p": [
+      "Envoyez-le sous 24 heures, tant que l'échange est frais.",
+      "Remerciez, citez un moment précis et rappelez votre intérêt.",
+      "Restez bref, poli et sans fautes de frappe."
+     ],
+     "q": "Qui vous a aidé récemment, et comment l'avez-vous remercié ?",
+     "c": "Rédigez un message de remerciement de quatre phrases pour un entretien imaginaire."
+    },
+    "it": {
+     "t": "Il messaggio di ringraziamento",
+     "g": "Scrivere un breve messaggio di ringraziamento sincero entro un giorno dal colloquio.",
+     "p": [
+      "Invialo entro 24 ore, mentre la conversazione è ancora fresca.",
+      "Ringrazia, cita un momento specifico e ribadisci il tuo interesse.",
+      "Sii breve, cortese e senza errori di battitura."
+     ],
+     "q": "Chi ti ha aiutato di recente e come l'hai ringraziato?",
+     "c": "Scrivi un messaggio di ringraziamento di quattro frasi per un colloquio immaginario."
+    },
+    "pt": {
+     "t": "A mensagem de agradecimento",
+     "g": "Escrever uma nota de agradecimento curta e sincera no prazo de um dia.",
+     "p": [
+      "Envia-a em 24 horas, enquanto a conversa ainda está fresca.",
+      "Agradece, menciona um momento concreto e reforça o teu interesse.",
+      "Que seja curta, educada e sem gralhas."
+     ],
+     "q": "Quem te ajudou recentemente e como lhe agradeceste?",
+     "c": "Redige uma nota de agradecimento de quatro frases para uma entrevista imaginária."
+    },
+    "pt_BR": {
+     "t": "A mensagem de agradecimento",
+     "g": "Escrever uma nota de agradecimento curta e sincera dentro de um dia.",
+     "p": [
+      "Envie em 24 horas, enquanto a conversa ainda está fresca.",
+      "Agradeça, mencione um momento específico e reforce seu interesse.",
+      "Seja breve, educado e sem erros de digitação."
+     ],
+     "q": "Quem ajudou você recentemente e como você agradeceu?",
+     "c": "Redija uma nota de agradecimento de quatro frases para uma entrevista imaginária."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Following up politely",
+     "g": "Know when and how to check in if you have not heard back.",
+     "p": [
+      "Wait until the timeframe you were given has passed, plus a day or two.",
+      "Send a short, friendly message restating your interest.",
+      "One polite follow-up is fine, and a second after a longer pause."
+     ],
+     "q": "How do you feel about sending follow-up messages?",
+     "c": "Draft a three-sentence polite follow-up message you could send."
+    },
+    "de": {
+     "t": "Höflich nachfassen",
+     "g": "Wissen, wann und wie du nachfragst, wenn du noch keine Antwort hast.",
+     "p": [
+      "Warte, bis die genannte Frist verstrichen ist, plus ein, zwei Tage.",
+      "Sende eine kurze, freundliche Nachricht, die dein Interesse bekräftigt.",
+      "Eine höfliche Nachfrage ist in Ordnung, eine zweite nach längerer Pause."
+     ],
+     "q": "Wie fühlst du dich beim Schreiben von Nachfass-Nachrichten?",
+     "c": "Entwirf eine höfliche Nachfass-Nachricht in drei Sätzen, die du senden könntest."
+    },
+    "es": {
+     "t": "Hacer seguimiento con cortesía",
+     "g": "Saber cuándo y cómo preguntar si no has recibido respuesta.",
+     "p": [
+      "Espera a que pase el plazo que te dieron, más un día o dos.",
+      "Envía un mensaje breve y amable que reafirme tu interés.",
+      "Un seguimiento cortés está bien, y un segundo tras una pausa más larga."
+     ],
+     "q": "¿Cómo te sientes al enviar mensajes de seguimiento?",
+     "c": "Redacta un mensaje de seguimiento cortés de tres frases que podrías enviar."
+    },
+    "fr": {
+     "t": "Relancer poliment",
+     "g": "Savoir quand et comment relancer si vous n'avez pas de réponse.",
+     "p": [
+      "Attendez que le délai annoncé soit passé, plus un jour ou deux.",
+      "Envoyez un message court et aimable qui rappelle votre intérêt.",
+      "Une relance polie est correcte, une seconde après une pause plus longue."
+     ],
+     "q": "Que ressentez-vous à l'idée d'envoyer des messages de relance ?",
+     "c": "Rédigez un message de relance poli de trois phrases que vous pourriez envoyer."
+    },
+    "it": {
+     "t": "Fare follow-up con garbo",
+     "g": "Sapere quando e come farsi sentire se non hai ricevuto risposta.",
+     "p": [
+      "Aspetta che passi il termine che ti è stato dato, più un giorno o due.",
+      "Invia un messaggio breve e cordiale che ribadisca il tuo interesse.",
+      "Un follow-up cortese va bene, e un secondo dopo una pausa più lunga."
+     ],
+     "q": "Come ti senti nell'inviare messaggi di follow-up?",
+     "c": "Scrivi un messaggio di follow-up cortese di tre frasi che potresti inviare."
+    },
+    "pt": {
+     "t": "Acompanhar com cortesia",
+     "g": "Saber quando e como perguntar se ainda não tiveste resposta.",
+     "p": [
+      "Espera que passe o prazo que te deram, mais um dia ou dois.",
+      "Envia uma mensagem curta e simpática que reforce o teu interesse.",
+      "Um acompanhamento cortês está bem, e um segundo depois de uma pausa mais longa."
+     ],
+     "q": "Como te sentes ao enviar mensagens de acompanhamento?",
+     "c": "Redige uma mensagem de acompanhamento cortês de três frases que poderias enviar."
+    },
+    "pt_BR": {
+     "t": "Fazendo follow-up com educação",
+     "g": "Saber quando e como perguntar se você ainda não teve resposta.",
+     "p": [
+      "Espere passar o prazo que deram, mais um ou dois dias.",
+      "Envie uma mensagem curta e simpática que reforce seu interesse.",
+      "Um follow-up educado está ok, e um segundo depois de uma pausa maior."
+     ],
+     "q": "Como você se sente ao enviar mensagens de follow-up?",
+     "c": "Escreva uma mensagem de follow-up educada de três frases que você poderia enviar."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Waiting for an answer",
+     "g": "Stay patient and positive while you wait for news.",
+     "p": [
+      "Hiring often takes longer than expected because many people are involved.",
+      "Keep applying and learning, and do not pause your whole search.",
+      "Do something kind for yourself, like a walk or a hobby."
+     ],
+     "q": "What helps you stay positive during uncertain times?",
+     "c": "Plan three small activities for the days while you wait."
+    },
+    "de": {
+     "t": "Auf eine Antwort warten",
+     "g": "Geduldig und positiv bleiben, während du auf Neuigkeiten wartest.",
+     "p": [
+      "Einstellungen dauern oft länger als gedacht, weil viele Personen beteiligt sind.",
+      "Bewirb dich weiter und lerne weiter, und pausiere nicht deine ganze Suche.",
+      "Tu dir etwas Gutes, etwa einen Spaziergang oder ein Hobby."
+     ],
+     "q": "Was hilft dir, in unsicheren Zeiten positiv zu bleiben?",
+     "c": "Plane drei kleine Aktivitäten für die Tage des Wartens."
+    },
+    "es": {
+     "t": "Esperar una respuesta",
+     "g": "Mantener la paciencia y la positividad mientras esperas noticias.",
+     "p": [
+      "Contratar suele tardar más de lo esperado porque intervienen muchas personas.",
+      "Sigue postulándote y aprendiendo, y no detengas toda tu búsqueda.",
+      "Hazte un detalle amable, como un paseo o una afición."
+     ],
+     "q": "¿Qué te ayuda a mantenerte positivo en tiempos de incertidumbre?",
+     "c": "Planifica tres pequeñas actividades para los días de espera."
+    },
+    "fr": {
+     "t": "Attendre une réponse",
+     "g": "Rester patient et positif en attendant des nouvelles.",
+     "p": [
+      "Un recrutement prend souvent plus de temps que prévu, car beaucoup de personnes interviennent.",
+      "Continuez à postuler et à apprendre, sans mettre toute votre recherche en pause.",
+      "Faites-vous plaisir, par exemple avec une promenade ou un loisir."
+     ],
+     "q": "Qu'est-ce qui vous aide à rester positif quand tout est incertain ?",
+     "c": "Prévoyez trois petites activités pour les jours d'attente."
+    },
+    "it": {
+     "t": "Aspettare una risposta",
+     "g": "Restare paziente e positivo mentre aspetti notizie.",
+     "p": [
+      "Assumere spesso richiede più del previsto perché sono coinvolte molte persone.",
+      "Continua a candidarti e a imparare, senza fermare tutta la ricerca.",
+      "Fai qualcosa di gentile per te, come una passeggiata o un hobby."
+     ],
+     "q": "Cosa ti aiuta a restare positivo nei momenti di incertezza?",
+     "c": "Pianifica tre piccole attività per i giorni di attesa."
+    },
+    "pt": {
+     "t": "Esperar por uma resposta",
+     "g": "Manter a paciência e a positividade enquanto esperas notícias.",
+     "p": [
+      "Contratar demora muitas vezes mais do que o esperado porque há muitas pessoas envolvidas.",
+      "Continua a candidatar-te e a aprender, sem pausar toda a tua procura.",
+      "Faz algo simpático por ti, como um passeio ou um passatempo."
+     ],
+     "q": "O que te ajuda a manter-te positivo em tempos de incerteza?",
+     "c": "Planeia três pequenas atividades para os dias de espera."
+    },
+    "pt_BR": {
+     "t": "Esperando uma resposta",
+     "g": "Manter a paciência e a positividade enquanto espera notícias.",
+     "p": [
+      "Contratar costuma demorar mais que o esperado porque há muitas pessoas envolvidas.",
+      "Continue se candidatando e aprendendo, sem pausar toda a sua busca.",
+      "Faça algo gentil por você, como uma caminhada ou um hobby."
+     ],
+     "q": "O que ajuda você a se manter positivo em tempos de incerteza?",
+     "c": "Planeje três pequenas atividades para os dias de espera."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Learning from each interview",
+     "g": "Use a quick reflection routine: what went well and what to improve.",
+     "p": [
+      "Write notes within a few hours while the details are fresh.",
+      "List what went well, what surprised you and what to improve.",
+      "Choose one small change to try at your next interview."
+     ],
+     "q": "What do you usually learn about yourself after a challenge?",
+     "c": "After any conversation today, jot down one win and one improvement."
+    },
+    "de": {
+     "t": "Aus jedem Gespräch lernen",
+     "g": "Eine kurze Reflexionsroutine nutzen: Was lief gut, was kann besser werden.",
+     "p": [
+      "Schreibe innerhalb weniger Stunden Notizen, solange die Details frisch sind.",
+      "Liste auf, was gut lief, was überraschte und was besser werden kann.",
+      "Wähle eine kleine Änderung für das nächste Gespräch."
+     ],
+     "q": "Was lernst du meist über dich nach einer Herausforderung?",
+     "c": "Notiere nach einem Gespräch heute einen Erfolg und eine Verbesserung."
+    },
+    "es": {
+     "t": "Aprender de cada entrevista",
+     "g": "Usar una rutina rápida de reflexión: qué salió bien y qué mejorar.",
+     "p": [
+      "Anota en pocas horas, mientras los detalles siguen frescos.",
+      "Lista lo que salió bien, lo que te sorprendió y lo que mejorar.",
+      "Elige un pequeño cambio para probar en tu próxima entrevista."
+     ],
+     "q": "¿Qué sueles aprender de ti mismo tras un reto?",
+     "c": "Después de cualquier conversación hoy, anota un acierto y una mejora."
+    },
+    "fr": {
+     "t": "Apprendre de chaque entretien",
+     "g": "Utiliser une routine rapide de bilan : ce qui a bien marché et ce qu'il faut améliorer.",
+     "p": [
+      "Prenez des notes dans les heures qui suivent, tant que les détails sont frais.",
+      "Listez ce qui a bien marché, ce qui vous a surpris et ce qui est à améliorer.",
+      "Choisissez un petit changement à tester lors de votre prochain entretien."
+     ],
+     "q": "Qu'apprenez-vous d'habitude sur vous-même après un défi ?",
+     "c": "Après une conversation aujourd'hui, notez une réussite et une amélioration."
+    },
+    "it": {
+     "t": "Imparare da ogni colloquio",
+     "g": "Usare una routine rapida di riflessione: cosa è andato bene e cosa migliorare.",
+     "p": [
+      "Scrivi appunti entro poche ore, mentre i dettagli sono freschi.",
+      "Elenca cosa è andato bene, cosa ti ha sorpreso e cosa migliorare.",
+      "Scegli un piccolo cambiamento da provare al prossimo colloquio."
+     ],
+     "q": "Cosa impari di solito su di te dopo una sfida?",
+     "c": "Dopo una conversazione oggi, annota un successo e un miglioramento."
+    },
+    "pt": {
+     "t": "Aprender com cada entrevista",
+     "g": "Usar uma rotina rápida de reflexão: o que correu bem e o que melhorar.",
+     "p": [
+      "Escreve notas em poucas horas, enquanto os pormenores estão frescos.",
+      "Lista o que correu bem, o que te surpreendeu e o que melhorar.",
+      "Escolhe uma pequena mudança para testar na próxima entrevista."
+     ],
+     "q": "O que costumas aprender sobre ti depois de um desafio?",
+     "c": "Depois de qualquer conversa hoje, anota um acerto e uma melhoria."
+    },
+    "pt_BR": {
+     "t": "Aprendendo com cada entrevista",
+     "g": "Usar uma rotina rápida de reflexão: o que deu certo e o que melhorar.",
+     "p": [
+      "Faça anotações em poucas horas, enquanto os detalhes estão frescos.",
+      "Liste o que deu certo, o que surpreendeu você e o que melhorar.",
+      "Escolha uma pequena mudança para testar na próxima entrevista."
+     ],
+     "q": "O que você costuma aprender sobre si depois de um desafio?",
+     "c": "Depois de qualquer conversa hoje, anote um acerto e uma melhoria."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: impressions and follow-up",
+     "g": "A light recap of body language, logistics, your questions and thank-you notes.",
+     "p": [
+      "Presence: calm greeting, open posture, steady voice and active listening.",
+      "Logistics: outfit, route, timing, bag and a calm night before.",
+      "Closing: good questions, a clear finish, thank-you and polite follow-up."
+     ],
+     "q": "Which skill from the last month are you proudest of improving?",
+     "c": "Run a mini mock interview with a friend or your mirror, including a close."
+    },
+    "de": {
+     "t": "Rückblick: Eindruck und Nachbereitung",
+     "g": "Ein lockerer Rückblick auf Körpersprache, Organisation, deine Fragen und Dankesnachrichten.",
+     "p": [
+      "Auftreten: ruhige Begrüßung, offene Haltung, feste Stimme und aktives Zuhören.",
+      "Organisation: Outfit, Route, Zeit, Tasche und ein ruhiger Vorabend.",
+      "Abschluss: gute Fragen, klarer Schluss, Dank und höfliches Nachfassen."
+     ],
+     "q": "Auf welche Verbesserung des letzten Monats bist du am stolzesten?",
+     "c": "Spiele ein kleines Probegespräch mit Freund oder Spiegel, inklusive Abschluss."
+    },
+    "es": {
+     "t": "Repaso: impresión y seguimiento",
+     "g": "Un repaso ligero de lenguaje corporal, logística, tus preguntas y notas de agradecimiento.",
+     "p": [
+      "Presencia: saludo tranquilo, postura abierta, voz firme y escucha activa.",
+      "Logística: atuendo, ruta, horarios, bolsa y una noche previa tranquila.",
+      "Cierre: buenas preguntas, final claro, agradecimiento y seguimiento cortés."
+     ],
+     "q": "¿De qué habilidad del último mes te sientes más orgulloso de haber mejorado?",
+     "c": "Haz una mini entrevista simulada con un amigo o el espejo, con cierre incluido."
+    },
+    "fr": {
+     "t": "Bilan : impressions et suivi",
+     "g": "Un récapitulatif léger du langage corporel, de la logistique, de vos questions et des remerciements.",
+     "p": [
+      "Présence : salutation calme, posture ouverte, voix posée et écoute active.",
+      "Logistique : tenue, trajet, horaires, sac et veille tranquille.",
+      "Clôture : bonnes questions, fin claire, remerciements et relance polie."
+     ],
+     "q": "De quelle compétence du dernier mois êtes-vous le plus fier d'avoir progressé ?",
+     "c": "Faites un mini entretien simulé avec un ami ou le miroir, conclusion comprise."
+    },
+    "it": {
+     "t": "Ripasso: impressioni e follow-up",
+     "g": "Un ripasso leggero di linguaggio del corpo, logistica, le tue domande e i messaggi di ringraziamento.",
+     "p": [
+      "Presenza: saluto calmo, postura aperta, voce ferma e ascolto attivo.",
+      "Logistica: outfit, percorso, tempi, borsa e una sera prima tranquilla.",
+      "Chiusura: buone domande, finale chiaro, ringraziamento e follow-up cortese."
+     ],
+     "q": "Di quale abilità dell'ultimo mese sei più orgoglioso di essere migliorato?",
+     "c": "Fai un mini colloquio simulato con un amico o lo specchio, chiusura compresa."
+    },
+    "pt": {
+     "t": "Revisão: impressões e acompanhamento",
+     "g": "Uma revisão leve de linguagem corporal, logística, as tuas perguntas e notas de agradecimento.",
+     "p": [
+      "Presença: cumprimento calmo, postura aberta, voz firme e escuta ativa.",
+      "Logística: roupa, trajeto, horários, mala e uma noite anterior tranquila.",
+      "Encerramento: boas perguntas, final claro, agradecimento e acompanhamento cortês."
+     ],
+     "q": "De que competência do último mês te orgulhas mais de ter melhorado?",
+     "c": "Faz uma mini entrevista simulada com um amigo ou o espelho, incluindo o encerramento."
+    },
+    "pt_BR": {
+     "t": "Revisão: impressões e acompanhamento",
+     "g": "Uma revisão leve de linguagem corporal, logística, suas perguntas e notas de agradecimento.",
+     "p": [
+      "Presença: cumprimento calmo, postura aberta, voz firme e escuta ativa.",
+      "Logística: roupa, trajeto, horários, bolsa e uma noite anterior tranquila.",
+      "Encerramento: boas perguntas, final claro, agradecimento e follow-up educado."
+     ],
+     "q": "De que habilidade do último mês você mais se orgulha de ter melhorado?",
+     "c": "Faça uma mini entrevista simulada com um amigo ou o espelho, incluindo o encerramento."
+    }
+   }
+  }
+ ]
+}

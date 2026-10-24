@@ -1,0 +1,835 @@
+{
+ "topic": "geography",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Volcanoes on the map",
+     "g": "Find the Ring of Fire and other places where volcanoes cluster.",
+     "p": [
+      "Volcanoes form where molten rock from deep inside Earth reaches the surface.",
+      "Many sit along plate edges, especially the Ring of Fire around the Pacific Ocean.",
+      "Others, like Hawaii, rise over hot spots far from any plate edge."
+     ],
+     "q": "Have you ever seen a volcano, or would you like to?",
+     "c": "Locate Mount Fuji, Mount Etna and Hawaii on a map and see how they differ."
+    },
+    "de": {
+     "t": "Vulkane auf der Karte",
+     "g": "Finde den Feuerring und andere Orte, an denen sich Vulkane häufen.",
+     "p": [
+      "Vulkane entstehen, wo geschmolzenes Gestein aus dem Erdinneren die Oberfläche erreicht.",
+      "Viele liegen an Plattengrenzen, besonders im Feuerring rund um den Pazifik.",
+      "Andere, wie Hawaii, wachsen über Hotspots weit von Plattengrenzen entfernt."
+     ],
+     "q": "Hast du schon einmal einen Vulkan gesehen oder würdest du gern?",
+     "c": "Finde Fuji, Ätna und Hawaii auf der Karte und sieh, wie sie sich unterscheiden."
+    },
+    "es": {
+     "t": "Volcanes en el mapa",
+     "g": "Encuentra el Cinturón de Fuego y otros lugares donde se agrupan los volcanes.",
+     "p": [
+      "Los volcanes surgen donde roca fundida del interior de la Tierra llega a la superficie.",
+      "Muchos están en bordes de placas, sobre todo en el Cinturón de Fuego del Pacífico.",
+      "Otros, como Hawái, se alzan sobre puntos calientes lejos de los bordes de placa."
+     ],
+     "q": "¿Has visto alguna vez un volcán o te gustaría?",
+     "c": "Localiza el Fuji, el Etna y Hawái en un mapa y observa en qué se diferencian."
+    },
+    "fr": {
+     "t": "Les volcans sur la carte",
+     "g": "Trouve la ceinture de feu et d'autres lieux où se regroupent les volcans.",
+     "p": [
+      "Les volcans naissent là où de la roche en fusion venue du fond de la Terre atteint la surface.",
+      "Beaucoup sont au bord de plaques, surtout dans la ceinture de feu du Pacifique.",
+      "D'autres, comme Hawaï, s'élèvent sur des points chauds loin des bords de plaques."
+     ],
+     "q": "As-tu déjà vu un volcan, ou aimerais-tu en voir un ?",
+     "c": "Situe le mont Fuji, l'Etna et Hawaï sur une carte et vois ce qui les distingue."
+    },
+    "it": {
+     "t": "I vulcani sulla mappa",
+     "g": "Trova la Cintura di fuoco e altri luoghi dove si concentrano i vulcani.",
+     "p": [
+      "I vulcani nascono dove roccia fusa dall'interno della Terra raggiunge la superficie.",
+      "Molti stanno ai margini delle placche, soprattutto nella Cintura di fuoco del Pacifico.",
+      "Altri, come le Hawaii, sorgono su punti caldi lontani dai margini delle placche."
+     ],
+     "q": "Hai mai visto un vulcano o ti piacerebbe vederne uno?",
+     "c": "Localizza il Fuji, l'Etna e le Hawaii su una mappa e osserva le differenze."
+    },
+    "pt": {
+     "t": "Vulcões no mapa",
+     "g": "Encontra o Anel de Fogo e outros lugares onde os vulcões se concentram.",
+     "p": [
+      "Os vulcões nascem onde rocha fundida do interior da Terra chega à superfície.",
+      "Muitos ficam nas margens das placas, sobretudo no Anel de Fogo do Pacífico.",
+      "Outros, como o Havai, erguem-se sobre pontos quentes longe das margens das placas."
+     ],
+     "q": "Já viste um vulcão ou gostarias de ver?",
+     "c": "Localiza o Fuji, o Etna e o Havai num mapa e vê como diferem."
+    },
+    "pt_BR": {
+     "t": "Vulcões no mapa",
+     "g": "Encontre o Anel de Fogo e outros lugares onde os vulcões se concentram.",
+     "p": [
+      "Os vulcões nascem onde rocha derretida do interior da Terra chega à superfície.",
+      "Muitos ficam nas bordas das placas, principalmente no Anel de Fogo do Pacífico.",
+      "Outros, como o Havaí, se erguem sobre pontos quentes longe das bordas das placas."
+     ],
+     "q": "Você já viu um vulcão ou gostaria de ver?",
+     "c": "Localize o Fuji, o Etna e o Havaí num mapa e veja como se diferenciam."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Caves and karst",
+     "g": "Learn how water dissolves limestone to make caves, sinkholes and stone forests.",
+     "p": [
+      "Rainwater is slightly acidic and slowly dissolves limestone rock.",
+      "Over thousands of years this carves caves, underground rivers and sinkholes.",
+      "Landscapes shaped this way are called karst, like the Stone Forest of China."
+     ],
+     "q": "Would you like to explore a cave, or does it feel too dark?",
+     "c": "Find a karst region, such as the Slovenian Karst, on a map."
+    },
+    "de": {
+     "t": "Höhlen und Karst",
+     "g": "Lerne, wie Wasser Kalkstein löst und Höhlen, Dolinen und Steinwälder schafft.",
+     "p": [
+      "Regenwasser ist leicht sauer und löst langsam Kalkgestein.",
+      "Über Jahrtausende entstehen so Höhlen, unterirdische Flüsse und Dolinen.",
+      "Solche Landschaften heißen Karst, wie der Steinwald in China."
+     ],
+     "q": "Möchtest du eine Höhle erkunden oder ist sie dir zu dunkel?",
+     "c": "Finde eine Karstregion, etwa den Slowenischen Karst, auf einer Karte."
+    },
+    "es": {
+     "t": "Cuevas y karst",
+     "g": "Aprende cómo el agua disuelve la caliza y crea cuevas, dolinas y bosques de piedra.",
+     "p": [
+      "El agua de lluvia es algo ácida y disuelve poco a poco la roca caliza.",
+      "En miles de años esto talla cuevas, ríos subterráneos y dolinas.",
+      "Los paisajes así se llaman karst, como el Bosque de Piedra de China."
+     ],
+     "q": "¿Te gustaría explorar una cueva o te parece demasiado oscura?",
+     "c": "Encuentra una región kárstica, como el Karst esloveno, en un mapa."
+    },
+    "fr": {
+     "t": "Grottes et karst",
+     "g": "Apprends comment l'eau dissout le calcaire et crée grottes, dolines et forêts de pierre.",
+     "p": [
+      "L'eau de pluie est légèrement acide et dissout lentement le calcaire.",
+      "En des milliers d'années, cela creuse grottes, rivières souterraines et dolines.",
+      "Ces paysages s'appellent le karst, comme la Forêt de pierre en Chine."
+     ],
+     "q": "Aimerais-tu explorer une grotte, ou est-ce trop sombre ?",
+     "c": "Trouve une région karstique, comme le Karst slovène, sur une carte."
+    },
+    "it": {
+     "t": "Grotte e carsismo",
+     "g": "Scopri come l'acqua scioglie il calcare e crea grotte, doline e foreste di pietra.",
+     "p": [
+      "L'acqua piovana è leggermente acida e scioglie lentamente il calcare.",
+      "In migliaia di anni scava grotte, fiumi sotterranei e doline.",
+      "I paesaggi così formati si dicono carsici, come la Foresta di pietra in Cina."
+     ],
+     "q": "Ti piacerebbe esplorare una grotta o ti sembra troppo buia?",
+     "c": "Trova una regione carsica, come il Carso sloveno, su una mappa."
+    },
+    "pt": {
+     "t": "Grutas e carso",
+     "g": "Aprende como a água dissolve o calcário e cria grutas, dolinas e florestas de pedra.",
+     "p": [
+      "A água da chuva é ligeiramente ácida e dissolve devagar o calcário.",
+      "Em milhares de anos isso escava grutas, rios subterrâneos e dolinas.",
+      "Estas paisagens chamam-se carso, como a Floresta de Pedra na China."
+     ],
+     "q": "Gostarias de explorar uma gruta ou parece-te demasiado escuro?",
+     "c": "Encontra uma região cársica, como o Carso esloveno, num mapa."
+    },
+    "pt_BR": {
+     "t": "Cavernas e carste",
+     "g": "Aprenda como a água dissolve o calcário e cria cavernas, dolinas e florestas de pedra.",
+     "p": [
+      "A água da chuva é levemente ácida e dissolve devagar o calcário.",
+      "Em milhares de anos isso escava cavernas, rios subterrâneos e dolinas.",
+      "Essas paisagens se chamam carste, como a Floresta de Pedra na China."
+     ],
+     "q": "Você gostaria de explorar uma caverna ou acha escuro demais?",
+     "c": "Ache uma região cárstica, como o Carste esloveno, num mapa."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Canyons and gorges",
+     "g": "Meet deep valleys cut by rivers over millions of years, like the Grand Canyon.",
+     "p": [
+      "A canyon is a deep valley with steep sides, usually cut by a river.",
+      "The Colorado River carved the Grand Canyon over millions of years.",
+      "Layers of rock in the walls act like pages of Earth's history."
+     ],
+     "q": "Which canyon or gorge would you most like to see?",
+     "c": "Find the Grand Canyon on a map and trace the river that made it."
+    },
+    "de": {
+     "t": "Canyons und Schluchten",
+     "g": "Lerne tiefe Täler kennen, die Flüsse über Millionen Jahre schufen, wie den Grand Canyon.",
+     "p": [
+      "Ein Canyon ist ein tiefes Tal mit steilen Wänden, meist von einem Fluss geschaffen.",
+      "Der Colorado River schuf den Grand Canyon über Millionen von Jahren.",
+      "Gesteinsschichten in den Wänden wirken wie Seiten der Erdgeschichte."
+     ],
+     "q": "Welchen Canyon oder welche Schlucht würdest du am liebsten sehen?",
+     "c": "Finde den Grand Canyon auf der Karte und verfolge den Fluss, der ihn schuf."
+    },
+    "es": {
+     "t": "Cañones y gargantas",
+     "g": "Conoce valles profundos tallados por ríos durante millones de años, como el Gran Cañón.",
+     "p": [
+      "Un cañón es un valle profundo de paredes empinadas, normalmente tallado por un río.",
+      "El río Colorado excavó el Gran Cañón durante millones de años.",
+      "Las capas de roca de las paredes son como páginas de la historia de la Tierra."
+     ],
+     "q": "¿Qué cañón o garganta te gustaría ver más?",
+     "c": "Encuentra el Gran Cañón en un mapa y sigue el río que lo hizo."
+    },
+    "fr": {
+     "t": "Canyons et gorges",
+     "g": "Découvre les vallées profondes creusées par les rivières en des millions d'années, comme le Grand Canyon.",
+     "p": [
+      "Un canyon est une vallée profonde aux parois raides, en général creusée par un cours d'eau.",
+      "Le fleuve Colorado a creusé le Grand Canyon pendant des millions d'années.",
+      "Les couches de roche des parois sont comme les pages de l'histoire de la Terre."
+     ],
+     "q": "Quel canyon ou quelle gorge aimerais-tu le plus voir ?",
+     "c": "Trouve le Grand Canyon sur une carte et suis le fleuve qui l'a creusé."
+    },
+    "it": {
+     "t": "Canyon e gole",
+     "g": "Conosci le valli profonde scavate dai fiumi in milioni di anni, come il Grand Canyon.",
+     "p": [
+      "Un canyon è una valle profonda con pareti ripide, di solito scavata da un fiume.",
+      "Il fiume Colorado ha scavato il Grand Canyon in milioni di anni.",
+      "Gli strati di roccia sulle pareti sono come pagine della storia della Terra."
+     ],
+     "q": "Quale canyon o gola ti piacerebbe vedere di più?",
+     "c": "Trova il Grand Canyon su una mappa e segui il fiume che lo ha scavato."
+    },
+    "pt": {
+     "t": "Desfiladeiros e gargantas",
+     "g": "Conhece vales profundos esculpidos por rios ao longo de milhões de anos, como o Grand Canyon.",
+     "p": [
+      "Um desfiladeiro é um vale profundo de paredes íngremes, em geral escavado por um rio.",
+      "O rio Colorado escavou o Grand Canyon ao longo de milhões de anos.",
+      "As camadas de rocha nas paredes são como páginas da história da Terra."
+     ],
+     "q": "Que desfiladeiro ou garganta gostarias mais de ver?",
+     "c": "Encontra o Grand Canyon num mapa e segue o rio que o escavou."
+    },
+    "pt_BR": {
+     "t": "Cânions e gargantas",
+     "g": "Conheça vales profundos esculpidos por rios ao longo de milhões de anos, como o Grand Canyon.",
+     "p": [
+      "Um cânion é um vale profundo de paredes íngremes, em geral escavado por um rio.",
+      "O rio Colorado escavou o Grand Canyon ao longo de milhões de anos.",
+      "As camadas de rocha nas paredes são como páginas da história da Terra."
+     ],
+     "q": "Qual cânion ou garganta você mais gostaria de ver?",
+     "c": "Ache o Grand Canyon num mapa e siga o rio que o escavou."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Weather and climate",
+     "g": "Learn that weather changes daily, while climate is the typical pattern over many years.",
+     "p": [
+      "Weather is what happens today: sun, rain, wind or snow.",
+      "Climate is the average weather of a place over decades.",
+      "You pack for the weather, but you choose a home or holiday by its climate."
+     ],
+     "q": "What kind of climate do you enjoy the most?",
+     "c": "Write down today's weather and what you think your local climate is."
+    },
+    "de": {
+     "t": "Wetter und Klima",
+     "g": "Lerne, dass sich das Wetter täglich ändert, das Klima aber das typische Muster vieler Jahre ist.",
+     "p": [
+      "Wetter ist, was heute passiert: Sonne, Regen, Wind oder Schnee.",
+      "Klima ist das durchschnittliche Wetter eines Ortes über Jahrzehnte.",
+      "Du packst nach dem Wetter, wählst aber Wohnort oder Urlaub nach dem Klima."
+     ],
+     "q": "Welches Klima magst du am liebsten?",
+     "c": "Notiere das heutige Wetter und was du für das Klima deiner Gegend hältst."
+    },
+    "es": {
+     "t": "Tiempo y clima",
+     "g": "Aprende que el tiempo cambia a diario y el clima es el patrón típico de muchos años.",
+     "p": [
+      "El tiempo es lo que pasa hoy: sol, lluvia, viento o nieve.",
+      "El clima es el tiempo promedio de un lugar durante décadas.",
+      "Haces la maleta según el tiempo, pero eliges casa o vacaciones según el clima."
+     ],
+     "q": "¿Qué tipo de clima disfrutas más?",
+     "c": "Anota el tiempo de hoy y cuál crees que es el clima de tu zona."
+    },
+    "fr": {
+     "t": "Météo et climat",
+     "g": "Apprends que la météo change chaque jour, alors que le climat est le schéma typique sur de longues années.",
+     "p": [
+      "La météo, c'est ce qui se passe aujourd'hui : soleil, pluie, vent ou neige.",
+      "Le climat est la météo moyenne d'un lieu sur des décennies.",
+      "On fait sa valise selon la météo, mais on choisit un lieu de vie ou de vacances selon le climat."
+     ],
+     "q": "Quel type de climat apprécies-tu le plus ?",
+     "c": "Note la météo d'aujourd'hui et ce que tu crois être le climat de ta région."
+    },
+    "it": {
+     "t": "Tempo e clima",
+     "g": "Scopri che il tempo cambia ogni giorno, mentre il clima è lo schema tipico di molti anni.",
+     "p": [
+      "Il tempo è ciò che accade oggi: sole, pioggia, vento o neve.",
+      "Il clima è il tempo medio di un luogo nell'arco di decenni.",
+      "Fai la valigia in base al tempo, ma scegli casa o vacanza in base al clima."
+     ],
+     "q": "Che tipo di clima ti piace di più?",
+     "c": "Annota il tempo di oggi e quello che pensi sia il clima della tua zona."
+    },
+    "pt": {
+     "t": "Tempo e clima",
+     "g": "Aprende que o tempo muda todos os dias e o clima é o padrão típico de muitos anos.",
+     "p": [
+      "O tempo é o que acontece hoje: sol, chuva, vento ou neve.",
+      "O clima é o tempo médio de um lugar ao longo de décadas.",
+      "Fazes a mala conforme o tempo, mas escolhes casa ou férias pelo clima."
+     ],
+     "q": "Que tipo de clima gostas mais?",
+     "c": "Anota o tempo de hoje e o que achas ser o clima da tua zona."
+    },
+    "pt_BR": {
+     "t": "Tempo e clima",
+     "g": "Aprenda que o tempo muda todo dia e o clima é o padrão típico de muitos anos.",
+     "p": [
+      "O tempo é o que acontece hoje: sol, chuva, vento ou neve.",
+      "O clima é o tempo médio de um lugar ao longo de décadas.",
+      "Você arruma a mala conforme o tempo, mas escolhe casa ou férias pelo clima."
+     ],
+     "q": "Que tipo de clima você mais curte?",
+     "c": "Anote o tempo de hoje e o que você acha ser o clima da sua região."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What shapes a climate",
+     "g": "See how latitude, altitude, distance from the sea and ocean currents set climates.",
+     "p": [
+      "Latitude matters most: places near the equator receive more direct sunlight.",
+      "Higher places are cooler, and coasts have milder weather than inland areas.",
+      "Ocean currents carry warmth or cold, like the Gulf Stream warming western Europe."
+     ],
+     "q": "What do you think shapes the climate where you live?",
+     "c": "Compare a coastal town and an inland town at the same latitude."
+    },
+    "de": {
+     "t": "Was das Klima prägt",
+     "g": "Sieh, wie Breite, Höhe, Meeresnähe und Meeresströmungen das Klima bestimmen.",
+     "p": [
+      "Die Breite zählt am meisten: Nahe dem Äquator fällt Sonnenlicht steiler ein.",
+      "Höhere Orte sind kühler, und Küsten haben milderes Wetter als das Landesinnere.",
+      "Meeresströmungen bringen Wärme oder Kälte, etwa der Golfstrom für Westeuropa."
+     ],
+     "q": "Was prägt deiner Meinung nach das Klima, in dem du lebst?",
+     "c": "Vergleiche eine Küstenstadt und eine Stadt im Binnenland auf gleicher Breite."
+    },
+    "es": {
+     "t": "Qué moldea un clima",
+     "g": "Descubre cómo latitud, altitud, cercanía al mar y corrientes oceánicas fijan el clima.",
+     "p": [
+      "La latitud es lo principal: cerca del ecuador la luz solar llega más directa.",
+      "Los lugares altos son más fríos y las costas tienen un tiempo más suave que el interior.",
+      "Las corrientes oceánicas llevan calor o frío, como la corriente del Golfo en Europa occidental."
+     ],
+     "q": "¿Qué crees que moldea el clima donde vives?",
+     "c": "Compara una ciudad costera y una del interior a la misma latitud."
+    },
+    "fr": {
+     "t": "Ce qui façonne un climat",
+     "g": "Vois comment latitude, altitude, distance à la mer et courants marins fixent le climat.",
+     "p": [
+      "La latitude compte le plus : près de l'équateur, la lumière du Soleil est plus directe.",
+      "Les lieux élevés sont plus frais, et les côtes ont un temps plus doux que l'intérieur.",
+      "Les courants marins apportent chaleur ou froid, comme le Gulf Stream pour l'Europe de l'Ouest."
+     ],
+     "q": "Selon toi, qu'est-ce qui façonne le climat où tu vis ?",
+     "c": "Compare une ville côtière et une ville de l'intérieur à la même latitude."
+    },
+    "it": {
+     "t": "Cosa modella un clima",
+     "g": "Scopri come latitudine, altitudine, distanza dal mare e correnti oceaniche fissano il clima.",
+     "p": [
+      "La latitudine conta di più: vicino all'equatore la luce solare è più diretta.",
+      "I luoghi alti sono più freschi, e le coste hanno un clima più mite dell'interno.",
+      "Le correnti oceaniche portano caldo o freddo, come la Corrente del Golfo per l'Europa occidentale."
+     ],
+     "q": "Cosa pensi modelli il clima dove vivi?",
+     "c": "Confronta una città costiera e una dell'interno alla stessa latitudine."
+    },
+    "pt": {
+     "t": "O que molda um clima",
+     "g": "Vê como latitude, altitude, distância ao mar e correntes oceânicas definem o clima.",
+     "p": [
+      "A latitude é o mais importante: perto do equador a luz solar chega mais direta.",
+      "Os lugares altos são mais frescos e as costas têm tempo mais ameno do que o interior.",
+      "As correntes oceânicas levam calor ou frio, como a Corrente do Golfo na Europa ocidental."
+     ],
+     "q": "O que achas que molda o clima onde vives?",
+     "c": "Compara uma cidade costeira e uma do interior à mesma latitude."
+    },
+    "pt_BR": {
+     "t": "O que molda um clima",
+     "g": "Veja como latitude, altitude, distância do mar e correntes oceânicas definem o clima.",
+     "p": [
+      "A latitude é o mais importante: perto do equador a luz solar chega mais direta.",
+      "Os lugares altos são mais frios e as costas têm tempo mais ameno que o interior.",
+      "As correntes oceânicas levam calor ou frio, como a Corrente do Golfo na Europa ocidental."
+     ],
+     "q": "O que você acha que molda o clima onde mora?",
+     "c": "Compare uma cidade litorânea e uma do interior na mesma latitude."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Climate zones",
+     "g": "Tour the tropical, dry, temperate, continental and polar climates of the world.",
+     "p": [
+      "Tropical climates are warm all year, and dry climates get little rain.",
+      "Temperate climates have mild seasons, and continental ones have hot summers and cold winters.",
+      "Polar climates stay cold all year, with ice and snow near the poles."
+     ],
+     "q": "Which climate zone do you live in, and which would you like to try?",
+     "c": "Match five cities you know with the climate zone each one belongs to."
+    },
+    "de": {
+     "t": "Klimazonen",
+     "g": "Reise durch tropische, trockene, gemäßigte, kontinentale und polare Klimate der Welt.",
+     "p": [
+      "Tropische Klimate sind ganzjährig warm, trockene bekommen wenig Regen.",
+      "Gemäßigte Klimate haben milde Jahreszeiten, kontinentale heiße Sommer und kalte Winter.",
+      "Polare Klimate bleiben ganzjährig kalt, mit Eis und Schnee nahe den Polen."
+     ],
+     "q": "In welcher Klimazone lebst du, und welche würdest du gern ausprobieren?",
+     "c": "Ordne fünf Städte, die du kennst, ihrer Klimazone zu."
+    },
+    "es": {
+     "t": "Zonas climáticas",
+     "g": "Recorre los climas tropical, seco, templado, continental y polar del mundo.",
+     "p": [
+      "Los climas tropicales son cálidos todo el año y los secos reciben poca lluvia.",
+      "Los climas templados tienen estaciones suaves y los continentales veranos cálidos e inviernos fríos.",
+      "Los climas polares son fríos todo el año, con hielo y nieve cerca de los polos."
+     ],
+     "q": "¿En qué zona climática vives y cuál te gustaría probar?",
+     "c": "Une cinco ciudades que conozcas con la zona climática de cada una."
+    },
+    "fr": {
+     "t": "Les zones climatiques",
+     "g": "Parcours les climats tropical, sec, tempéré, continental et polaire du monde.",
+     "p": [
+      "Les climats tropicaux sont chauds toute l'année, les climats secs reçoivent peu de pluie.",
+      "Les climats tempérés ont des saisons douces, les continentaux des étés chauds et des hivers froids.",
+      "Les climats polaires restent froids toute l'année, avec glace et neige près des pôles."
+     ],
+     "q": "Dans quelle zone climatique vis-tu, et laquelle aimerais-tu essayer ?",
+     "c": "Associe cinq villes que tu connais à leur zone climatique."
+    },
+    "it": {
+     "t": "Le zone climatiche",
+     "g": "Fai il giro dei climi tropicale, secco, temperato, continentale e polare del mondo.",
+     "p": [
+      "I climi tropicali sono caldi tutto l'anno e quelli secchi ricevono poca pioggia.",
+      "I climi temperati hanno stagioni miti, i continentali estati calde e inverni freddi.",
+      "I climi polari restano freddi tutto l'anno, con ghiaccio e neve vicino ai poli."
+     ],
+     "q": "In quale zona climatica vivi e quale ti piacerebbe provare?",
+     "c": "Abbina cinque città che conosci alla loro zona climatica."
+    },
+    "pt": {
+     "t": "As zonas climáticas",
+     "g": "Percorre os climas tropical, seco, temperado, continental e polar do mundo.",
+     "p": [
+      "Os climas tropicais são quentes o ano todo e os secos recebem pouca chuva.",
+      "Os climas temperados têm estações suaves e os continentais verões quentes e invernos frios.",
+      "Os climas polares são frios o ano todo, com gelo e neve perto dos polos."
+     ],
+     "q": "Em que zona climática vives e qual gostarias de experimentar?",
+     "c": "Associa cinco cidades que conheças à zona climática de cada uma."
+    },
+    "pt_BR": {
+     "t": "As zonas climáticas",
+     "g": "Percorra os climas tropical, seco, temperado, continental e polar do mundo.",
+     "p": [
+      "Os climas tropicais são quentes o ano todo e os secos recebem pouca chuva.",
+      "Os climas temperados têm estações suaves e os continentais verões quentes e invernos frios.",
+      "Os climas polares são frios o ano todo, com gelo e neve perto dos polos."
+     ],
+     "q": "Em que zona climática você mora e qual gostaria de experimentar?",
+     "c": "Associe cinco cidades que você conhece à zona climática de cada uma."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rainfall patterns",
+     "g": "Find out why some places are soaked and others stay dry.",
+     "p": [
+      "Warm air rises near the equator, cools and drops heavy rain.",
+      "Around 30 degrees latitude, dry air sinks and many great deserts appear.",
+      "Coasts facing the wind and high mountains often catch the most rain."
+     ],
+     "q": "Is your area rainy, dry or somewhere in between?",
+     "c": "Compare the yearly rain of two cities on opposite sides of a mountain range."
+    },
+    "de": {
+     "t": "Niederschlagsmuster",
+     "g": "Finde heraus, warum manche Orte nass sind und andere trocken bleiben.",
+     "p": [
+      "Warme Luft steigt am Äquator auf, kühlt ab und bringt starken Regen.",
+      "Um 30 Grad Breite sinkt trockene Luft ab, und viele große Wüsten entstehen.",
+      "Windzugewandte Küsten und hohe Berge fangen oft am meisten Regen ein."
+     ],
+     "q": "Ist deine Gegend regnerisch, trocken oder irgendwo dazwischen?",
+     "c": "Vergleiche den Jahresregen zweier Städte auf den Seiten eines Gebirges."
+    },
+    "es": {
+     "t": "Patrones de lluvia",
+     "g": "Descubre por qué algunos lugares se empapan y otros siguen secos.",
+     "p": [
+      "El aire cálido sube cerca del ecuador, se enfría y deja lluvias intensas.",
+      "Hacia los 30 grados de latitud el aire seco desciende y surgen muchos grandes desiertos.",
+      "Las costas expuestas al viento y las montañas altas suelen recibir más lluvia."
+     ],
+     "q": "¿Tu zona es lluviosa, seca o algo intermedio?",
+     "c": "Compara la lluvia anual de dos ciudades a ambos lados de una cordillera."
+    },
+    "fr": {
+     "t": "Les régimes de pluie",
+     "g": "Découvre pourquoi certains lieux sont détrempés et d'autres restent secs.",
+     "p": [
+      "L'air chaud monte près de l'équateur, se refroidit et laisse de fortes pluies.",
+      "Vers 30 degrés de latitude, l'air sec descend et de nombreux grands déserts apparaissent.",
+      "Les côtes exposées au vent et les hautes montagnes reçoivent souvent le plus de pluie."
+     ],
+     "q": "Ta région est-elle pluvieuse, sèche ou entre les deux ?",
+     "c": "Compare les pluies annuelles de deux villes de part et d'autre d'une chaîne de montagnes."
+    },
+    "it": {
+     "t": "Gli schemi della pioggia",
+     "g": "Scopri perché alcuni luoghi sono inzuppati e altri restano asciutti.",
+     "p": [
+      "L'aria calda sale vicino all'equatore, si raffredda e lascia piogge intense.",
+      "Verso i 30 gradi di latitudine l'aria secca scende e nascono molti grandi deserti.",
+      "Le coste esposte al vento e le alte montagne ricevono spesso più pioggia."
+     ],
+     "q": "La tua zona è piovosa, secca o una via di mezzo?",
+     "c": "Confronta la pioggia annuale di due città ai lati opposti di una catena montuosa."
+    },
+    "pt": {
+     "t": "Os padrões de chuva",
+     "g": "Descobre porque alguns lugares ficam encharcados e outros ficam secos.",
+     "p": [
+      "O ar quente sobe perto do equador, arrefece e deixa chuvas fortes.",
+      "Perto dos 30 graus de latitude o ar seco desce e surgem muitos grandes desertos.",
+      "As costas viradas ao vento e as montanhas altas costumam apanhar mais chuva."
+     ],
+     "q": "A tua zona é chuvosa, seca ou algo intermédio?",
+     "c": "Compara a chuva anual de duas cidades em lados opostos de uma cordilheira."
+    },
+    "pt_BR": {
+     "t": "Os padrões de chuva",
+     "g": "Descubra por que alguns lugares ficam encharcados e outros ficam secos.",
+     "p": [
+      "O ar quente sobe perto do equador, esfria e deixa chuvas fortes.",
+      "Perto dos 30 graus de latitude o ar seco desce e surgem muitos grandes desertos.",
+      "As costas voltadas ao vento e as montanhas altas costumam pegar mais chuva."
+     ],
+     "q": "Sua região é chuvosa, seca ou algo intermediário?",
+     "c": "Compare a chuva anual de duas cidades em lados opostos de uma cordilheira."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mountains and rain shadows",
+     "g": "See how mountains force air to rise and rain, leaving the far side dry.",
+     "p": [
+      "Moist wind hits a mountain and is pushed upward, where it cools.",
+      "Cool air holds less water, so rain or snow falls on the windward side.",
+      "The leeward side gets dry air, creating a rain shadow, as east of the Andes."
+     ],
+     "q": "Have you seen the weather change on two sides of a mountain?",
+     "c": "Sketch a mountain with wind arrows, a wet side and a dry side."
+    },
+    "de": {
+     "t": "Berge und Regenschatten",
+     "g": "Sieh, wie Berge Luft zum Aufsteigen und Regnen zwingen und die Rückseite trocken lassen.",
+     "p": [
+      "Feuchter Wind trifft auf einen Berg, wird nach oben gedrückt und kühlt ab.",
+      "Kühle Luft hält weniger Wasser, deshalb regnet oder schneit es auf der Luvseite.",
+      "Die Leeseite bekommt trockene Luft, ein Regenschatten, wie östlich der Anden."
+     ],
+     "q": "Hast du schon erlebt, wie sich das Wetter auf zwei Seiten eines Berges ändert?",
+     "c": "Skizziere einen Berg mit Windpfeilen, einer nassen und einer trockenen Seite."
+    },
+    "es": {
+     "t": "Montañas y sombra de lluvia",
+     "g": "Descubre cómo las montañas fuerzan el aire a subir y llover, dejando seca la otra ladera.",
+     "p": [
+      "El viento húmedo choca con una montaña y sube, donde se enfría.",
+      "El aire frío retiene menos agua, así que llueve o nieva en la ladera de barlovento.",
+      "La ladera de sotavento recibe aire seco: una sombra de lluvia, como al este de los Andes."
+     ],
+     "q": "¿Has visto cambiar el tiempo a los dos lados de una montaña?",
+     "c": "Dibuja una montaña con flechas de viento, una cara húmeda y otra seca."
+    },
+    "fr": {
+     "t": "Montagnes et ombre pluviométrique",
+     "g": "Vois comment les montagnes forcent l'air à monter et à pleuvoir, laissant l'autre versant sec.",
+     "p": [
+      "Un vent humide heurte une montagne et monte, où il se refroidit.",
+      "L'air froid retient moins d'eau, donc il pleut ou neige sur le versant au vent.",
+      "Le versant sous le vent reçoit de l'air sec : une ombre pluviométrique, comme à l'est des Andes."
+     ],
+     "q": "As-tu déjà vu le temps changer de part et d'autre d'une montagne ?",
+     "c": "Dessine une montagne avec des flèches de vent, un versant humide et un versant sec."
+    },
+    "it": {
+     "t": "Montagne e ombra pluviometrica",
+     "g": "Scopri come le montagne costringono l'aria a salire e piovere, lasciando asciutto l'altro versante.",
+     "p": [
+      "Il vento umido urta una montagna e sale, dove si raffredda.",
+      "L'aria fredda trattiene meno acqua, perciò piove o nevica sul versante sopravvento.",
+      "Il versante sottovento riceve aria secca: un'ombra pluviometrica, come a est delle Ande."
+     ],
+     "q": "Hai mai visto il tempo cambiare ai due lati di una montagna?",
+     "c": "Disegna una montagna con frecce di vento, un lato umido e uno secco."
+    },
+    "pt": {
+     "t": "Montanhas e sombra de chuva",
+     "g": "Vê como as montanhas obrigam o ar a subir e a chover, deixando seca a outra vertente.",
+     "p": [
+      "O vento húmido bate numa montanha e sobe, onde arrefece.",
+      "O ar frio retém menos água, por isso chove ou neva na vertente de barlavento.",
+      "A vertente de sotavento recebe ar seco: uma sombra de chuva, como a leste dos Andes."
+     ],
+     "q": "Já viste o tempo mudar dos dois lados de uma montanha?",
+     "c": "Desenha uma montanha com setas de vento, uma face húmida e uma seca."
+    },
+    "pt_BR": {
+     "t": "Montanhas e sombra de chuva",
+     "g": "Veja como as montanhas obrigam o ar a subir e a chover, deixando seca a outra vertente.",
+     "p": [
+      "O vento úmido bate numa montanha e sobe, onde esfria.",
+      "O ar frio retém menos água, por isso chove ou neva na vertente de barlavento.",
+      "A vertente de sotavento recebe ar seco: uma sombra de chuva, como a leste dos Andes."
+     ],
+     "q": "Você já viu o tempo mudar dos dois lados de uma montanha?",
+     "c": "Desenhe uma montanha com setas de vento, uma face úmida e uma seca."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Monsoons",
+     "g": "Learn about seasonal winds that bring heavy rains to South Asia and other regions.",
+     "p": [
+      "A monsoon is a wind that changes direction with the seasons.",
+      "In summer, moist winds from the ocean bring heavy rain to South Asia.",
+      "In winter the winds reverse and the air turns dry across the same lands."
+     ],
+     "q": "Would you enjoy living where a rainy season is part of the year?",
+     "c": "Find India and note the two seasons: wet summer and dry winter."
+    },
+    "de": {
+     "t": "Monsune",
+     "g": "Lerne saisonale Winde kennen, die Südasien und anderen Regionen starke Regenfälle bringen.",
+     "p": [
+      "Ein Monsun ist ein Wind, der mit den Jahreszeiten die Richtung wechselt.",
+      "Im Sommer bringen feuchte Meereswinde Südasien heftigen Regen.",
+      "Im Winter kehren sich die Winde um, und die Luft wird über denselben Ländern trocken."
+     ],
+     "q": "Würdest du gern dort leben, wo eine Regenzeit zum Jahr gehört?",
+     "c": "Finde Indien und notiere die zwei Zeiten: nasser Sommer, trockener Winter."
+    },
+    "es": {
+     "t": "Monzones",
+     "g": "Conoce los vientos estacionales que traen lluvias intensas al sur de Asia y otras regiones.",
+     "p": [
+      "Un monzón es un viento que cambia de dirección con las estaciones.",
+      "En verano, vientos húmedos del océano traen lluvias intensas al sur de Asia.",
+      "En invierno los vientos se invierten y el aire se seca en las mismas tierras."
+     ],
+     "q": "¿Te gustaría vivir donde una temporada de lluvias forma parte del año?",
+     "c": "Encuentra la India y anota las dos estaciones: verano húmedo e invierno seco."
+    },
+    "fr": {
+     "t": "Les moussons",
+     "g": "Découvre les vents saisonniers qui apportent de fortes pluies à l'Asie du Sud et ailleurs.",
+     "p": [
+      "Une mousson est un vent qui change de direction selon les saisons.",
+      "En été, des vents humides venus de l'océan apportent de fortes pluies à l'Asie du Sud.",
+      "En hiver, les vents s'inversent et l'air devient sec sur les mêmes terres."
+     ],
+     "q": "Aimerais-tu vivre où une saison des pluies fait partie de l'année ?",
+     "c": "Trouve l'Inde et note les deux saisons : été humide, hiver sec."
+    },
+    "it": {
+     "t": "I monsoni",
+     "g": "Scopri i venti stagionali che portano forti piogge in Asia meridionale e altre regioni.",
+     "p": [
+      "Un monsone è un vento che cambia direzione con le stagioni.",
+      "In estate venti umidi dall'oceano portano piogge intense in Asia meridionale.",
+      "In inverno i venti si invertono e l'aria diventa secca sulle stesse terre."
+     ],
+     "q": "Ti piacerebbe vivere dove la stagione delle piogge fa parte dell'anno?",
+     "c": "Trova l'India e annota le due stagioni: estate umida e inverno secco."
+    },
+    "pt": {
+     "t": "As monções",
+     "g": "Conhece os ventos sazonais que trazem chuvas fortes ao sul da Ásia e a outras regiões.",
+     "p": [
+      "Uma monção é um vento que muda de direção com as estações do ano.",
+      "No verão, ventos húmidos do oceano trazem chuvas fortes ao sul da Ásia.",
+      "No inverno os ventos invertem-se e o ar fica seco nas mesmas terras."
+     ],
+     "q": "Gostarias de viver onde a estação das chuvas faz parte do ano?",
+     "c": "Encontra a Índia e anota as duas estações: verão húmido e inverno seco."
+    },
+    "pt_BR": {
+     "t": "As monções",
+     "g": "Conheça os ventos sazonais que trazem chuvas fortes ao sul da Ásia e a outras regiões.",
+     "p": [
+      "Uma monção é um vento que muda de direção com as estações do ano.",
+      "No verão, ventos úmidos do oceano trazem chuvas fortes ao sul da Ásia.",
+      "No inverno os ventos se invertem e o ar fica seco nas mesmas terras."
+     ],
+     "q": "Você gostaria de viver onde a estação das chuvas faz parte do ano?",
+     "c": "Ache a Índia e anote as duas estações: verão úmido e inverno seco."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Biomes of the world",
+     "g": "Discover large regions with similar climate, plants and animals.",
+     "p": [
+      "A biome is a big natural region defined by its climate and living things.",
+      "Examples are rainforest, desert, grassland, forest, tundra and ocean.",
+      "Biomes often form wide bands that follow latitude and rainfall."
+     ],
+     "q": "Which biome is closest to where you live?",
+     "c": "Name the biome of five places you know and say why it fits."
+    },
+    "de": {
+     "t": "Biome der Welt",
+     "g": "Entdecke große Regionen mit ähnlichem Klima, ähnlichen Pflanzen und Tieren.",
+     "p": [
+      "Ein Biom ist eine große Naturregion, bestimmt durch Klima und Lebewesen.",
+      "Beispiele sind Regenwald, Wüste, Grasland, Wald, Tundra und Ozean.",
+      "Biome bilden oft breite Gürtel, die Breitengrad und Niederschlag folgen."
+     ],
+     "q": "Welches Biom liegt deinem Wohnort am nächsten?",
+     "c": "Nenne das Biom von fünf Orten, die du kennst, und begründe es."
+    },
+    "es": {
+     "t": "Biomas del mundo",
+     "g": "Descubre grandes regiones con clima, plantas y animales parecidos.",
+     "p": [
+      "Un bioma es una gran región natural definida por su clima y sus seres vivos.",
+      "Ejemplos son selva, desierto, pradera, bosque, tundra y océano.",
+      "Los biomas suelen formar franjas anchas que siguen la latitud y la lluvia."
+     ],
+     "q": "¿Qué bioma está más cerca de donde vives?",
+     "c": "Nombra el bioma de cinco lugares que conozcas y explica por qué encaja."
+    },
+    "fr": {
+     "t": "Les biomes du monde",
+     "g": "Découvre de grandes régions au climat, aux plantes et aux animaux semblables.",
+     "p": [
+      "Un biome est une grande région naturelle définie par son climat et ses êtres vivants.",
+      "Exemples : forêt tropicale, désert, prairie, forêt, toundra et océan.",
+      "Les biomes forment souvent de larges bandes qui suivent la latitude et les pluies."
+     ],
+     "q": "Quel biome est le plus proche de chez toi ?",
+     "c": "Nomme le biome de cinq lieux que tu connais et explique pourquoi."
+    },
+    "it": {
+     "t": "I biomi del mondo",
+     "g": "Scopri grandi regioni con clima, piante e animali simili.",
+     "p": [
+      "Un bioma è una grande regione naturale definita da clima ed esseri viventi.",
+      "Esempi sono foresta pluviale, deserto, prateria, foresta, tundra e oceano.",
+      "I biomi formano spesso ampie fasce che seguono latitudine e piogge."
+     ],
+     "q": "Qual è il bioma più vicino a dove vivi?",
+     "c": "Indica il bioma di cinque luoghi che conosci e spiega perché."
+    },
+    "pt": {
+     "t": "Os biomas do mundo",
+     "g": "Descobre grandes regiões com clima, plantas e animais semelhantes.",
+     "p": [
+      "Um bioma é uma grande região natural definida pelo clima e pelos seres vivos.",
+      "Exemplos são floresta tropical, deserto, pradaria, floresta, tundra e oceano.",
+      "Os biomas formam muitas vezes faixas largas que seguem a latitude e a chuva."
+     ],
+     "q": "Que bioma fica mais perto de onde vives?",
+     "c": "Diz o bioma de cinco lugares que conheças e explica porquê."
+    },
+    "pt_BR": {
+     "t": "Os biomas do mundo",
+     "g": "Descubra grandes regiões com clima, plantas e animais semelhantes.",
+     "p": [
+      "Um bioma é uma grande região natural definida pelo clima e pelos seres vivos.",
+      "Exemplos são floresta tropical, deserto, pradaria, floresta, tundra e oceano.",
+      "Os biomas formam muitas vezes faixas largas que seguem a latitude e a chuva."
+     ],
+     "q": "Que bioma fica mais perto de onde você mora?",
+     "c": "Diga o bioma de cinco lugares que você conhece e explique por quê."
+    }
+   }
+  }
+ ]
+}

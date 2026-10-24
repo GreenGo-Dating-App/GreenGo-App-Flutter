@@ -1,0 +1,835 @@
+{
+ "topic": "nature_animals",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spiders and their relatives",
+     "g": "Tell arachnids from insects by counting legs and spotting what is missing.",
+     "p": [
+      "Arachnids have eight legs and two body parts, and no antennae or wings.",
+      "Spiders, scorpions, mites and harvestmen all belong to this big group.",
+      "Most spiders spin silk, and many use it for homes, egg sacs and catching food."
+     ],
+     "q": "Which small creature in your home or garden do you find most interesting?",
+     "c": "Find a spider web from a safe distance and count how many anchor threads you see."
+    },
+    "de": {
+     "t": "Spinnen und ihre Verwandten",
+     "g": "Spinnentiere von Insekten unterscheiden: Beine zählen und fehlende Teile entdecken.",
+     "p": [
+      "Spinnentiere haben acht Beine und zwei Körperteile, aber weder Fühler noch Flügel.",
+      "Spinnen, Skorpione, Milben und Weberknechte gehören zu dieser großen Gruppe.",
+      "Die meisten Spinnen spinnen Seide für Wohnung, Eikokon und Beutefang."
+     ],
+     "q": "Welches kleine Tier in Haus oder Garten findest du am spannendsten?",
+     "c": "Suche aus sicherer Entfernung ein Spinnennetz und zähle die Haltefäden."
+    },
+    "es": {
+     "t": "Arañas y sus parientes",
+     "g": "Distinguir arácnidos de insectos contando patas y notando lo que les falta.",
+     "p": [
+      "Los arácnidos tienen ocho patas y dos partes del cuerpo, sin antenas ni alas.",
+      "Arañas, escorpiones, ácaros y opiliones pertenecen a este gran grupo.",
+      "La mayoría de las arañas tejen seda para su hogar, sus huevos y para atrapar comida."
+     ],
+     "q": "¿Qué criatura pequeña de tu casa o jardín te resulta más interesante?",
+     "c": "Busca una telaraña desde una distancia segura y cuenta los hilos de anclaje."
+    },
+    "fr": {
+     "t": "Les araignées et leurs cousins",
+     "g": "Distinguer arachnides et insectes en comptant les pattes et ce qui manque.",
+     "p": [
+      "Les arachnides ont huit pattes et deux parties du corps, sans antennes ni ailes.",
+      "Araignées, scorpions, acariens et faucheux font partie de ce grand groupe.",
+      "La plupart des araignées tissent de la soie pour leur abri, leurs oeufs et leurs proies."
+     ],
+     "q": "Quelle petite bête de ta maison ou de ton jardin trouves-tu la plus intéressante ?",
+     "c": "Repère une toile d'araignée à bonne distance et compte ses fils d'ancrage."
+    },
+    "it": {
+     "t": "I ragni e i loro parenti",
+     "g": "Distinguere gli aracnidi dagli insetti contando le zampe e notando cosa manca.",
+     "p": [
+      "Gli aracnidi hanno otto zampe e due parti del corpo, senza antenne né ali.",
+      "Ragni, scorpioni, acari e opilioni fanno parte di questo grande gruppo.",
+      "La maggior parte dei ragni produce seta per la tana, le uova e per catturare il cibo."
+     ],
+     "q": "Quale piccola creatura di casa o del giardino trovi più interessante?",
+     "c": "Trova una ragnatela restando a distanza e conta i fili di ancoraggio."
+    },
+    "pt": {
+     "t": "As aranhas e os seus parentes",
+     "g": "Distinguir aracnídeos de insetos contando patas e notando o que lhes falta.",
+     "p": [
+      "Os aracnídeos têm oito patas e duas partes do corpo, sem antenas nem asas.",
+      "Aranhas, escorpiões, ácaros e opiliões pertencem a este grande grupo.",
+      "A maioria das aranhas tece seda para a casa, os ovos e para apanhar comida."
+     ],
+     "q": "Que pequena criatura da tua casa ou jardim achas mais interessante?",
+     "c": "Procura uma teia a uma distância segura e conta os fios de ancoragem."
+    },
+    "pt_BR": {
+     "t": "As aranhas e seus parentes",
+     "g": "Distinguir aracnídeos de insetos contando patas e notando o que falta neles.",
+     "p": [
+      "Os aracnídeos têm oito patas e duas partes do corpo, sem antenas nem asas.",
+      "Aranhas, escorpiões, ácaros e opiliões pertencem a esse grande grupo.",
+      "A maioria das aranhas tece seda para a casa, os ovos e para pegar comida."
+     ],
+     "q": "Qual pequena criatura da sua casa ou jardim você acha mais interessante?",
+     "c": "Procure uma teia a uma distância segura e conte os fios de ancoragem."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Crabs, shrimp and woodlice",
+     "g": "Meet the crustaceans and learn why they must shed their shells to grow.",
+     "p": [
+      "Crustaceans have hard outer skeletons, two pairs of antennae and many jointed legs.",
+      "To grow, a crab sheds its shell and swells up before the new one hardens.",
+      "Woodlice are land crustaceans and still need damp spots to breathe well."
+     ],
+     "q": "Have you ever seen a crab, shrimp or woodlouse up close? Where was it?",
+     "c": "Lift a flowerpot or log gently, spot any woodlice, then put everything back as it was."
+    },
+    "de": {
+     "t": "Krebse, Garnelen und Asseln",
+     "g": "Krebstiere kennenlernen und verstehen, warum sie zum Wachsen die Schale wechseln.",
+     "p": [
+      "Krebstiere haben ein hartes Außenskelett, zwei Fühlerpaare und viele gegliederte Beine.",
+      "Zum Wachsen streift ein Krebs seinen Panzer ab und quillt auf, bis der neue härtet.",
+      "Asseln sind Krebstiere an Land und brauchen weiterhin feuchte Plätze zum Atmen."
+     ],
+     "q": "Hast du schon mal eine Krabbe, Garnele oder Assel aus der Nähe gesehen? Wo?",
+     "c": "Hebe vorsichtig einen Blumentopf oder Ast an, entdecke Asseln und lege alles zurück."
+    },
+    "es": {
+     "t": "Cangrejos, camarones y cochinillas",
+     "g": "Conocer a los crustáceos y entender por qué mudan su caparazón para crecer.",
+     "p": [
+      "Los crustáceos tienen un esqueleto externo duro, dos pares de antenas y muchas patas articuladas.",
+      "Para crecer, un cangrejo muda el caparazón y se hincha antes de que el nuevo se endurezca.",
+      "Las cochinillas de humedad son crustáceos terrestres y necesitan lugares húmedos para respirar."
+     ],
+     "q": "¿Has visto alguna vez de cerca un cangrejo, un camarón o una cochinilla? ¿Dónde?",
+     "c": "Levanta con cuidado una maceta o un tronco, busca cochinillas y deja todo como estaba."
+    },
+    "fr": {
+     "t": "Crabes, crevettes et cloportes",
+     "g": "Découvrir les crustacés et comprendre pourquoi ils changent de carapace pour grandir.",
+     "p": [
+      "Les crustacés ont un squelette externe dur, deux paires d'antennes et de nombreuses pattes articulées.",
+      "Pour grandir, un crabe quitte sa carapace et gonfle avant que la nouvelle ne durcisse.",
+      "Les cloportes sont des crustacés terrestres qui ont besoin d'endroits humides pour respirer."
+     ],
+     "q": "As-tu déjà vu de près un crabe, une crevette ou un cloporte ? Où ?",
+     "c": "Soulève doucement un pot ou une bûche, repère des cloportes puis remets tout en place."
+    },
+    "it": {
+     "t": "Granchi, gamberi e porcellini di terra",
+     "g": "Conoscere i crostacei e capire perché cambiano guscio per crescere.",
+     "p": [
+      "I crostacei hanno uno scheletro esterno duro, due paia di antenne e molte zampe articolate.",
+      "Per crescere, un granchio lascia il guscio e si gonfia prima che il nuovo si indurisca.",
+      "I porcellini di terra sono crostacei terrestri e hanno bisogno di luoghi umidi per respirare."
+     ],
+     "q": "Hai mai visto da vicino un granchio, un gambero o un porcellino di terra? Dove?",
+     "c": "Solleva piano un vaso o un tronco, cerca i porcellini di terra e rimetti tutto a posto."
+    },
+    "pt": {
+     "t": "Caranguejos, camarões e bichos-de-conta",
+     "g": "Conhecer os crustáceos e perceber porque mudam de carapaça para crescer.",
+     "p": [
+      "Os crustáceos têm um esqueleto externo duro, dois pares de antenas e muitas patas articuladas.",
+      "Para crescer, um caranguejo muda de carapaça e incha antes de a nova endurecer.",
+      "Os bichos-de-conta são crustáceos terrestres e precisam de sítios húmidos para respirar."
+     ],
+     "q": "Já viste de perto um caranguejo, um camarão ou um bicho-de-conta? Onde?",
+     "c": "Levanta com cuidado um vaso ou um tronco, procura bichos-de-conta e deixa tudo como estava."
+    },
+    "pt_BR": {
+     "t": "Caranguejos, camarões e tatuzinhos",
+     "g": "Conhecer os crustáceos e entender por que trocam de carapaça para crescer.",
+     "p": [
+      "Os crustáceos têm um esqueleto externo duro, dois pares de antenas e muitas patas articuladas.",
+      "Para crescer, um caranguejo troca de carapaça e incha antes de a nova endurecer.",
+      "Os tatuzinhos-de-jardim são crustáceos terrestres e precisam de lugares úmidos para respirar."
+     ],
+     "q": "Você já viu de perto um caranguejo, um camarão ou um tatuzinho? Onde?",
+     "c": "Levante com cuidado um vaso ou tronco, procure tatuzinhos e deixe tudo como estava."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Snails, octopuses and clams",
+     "g": "Discover molluscs, from slow garden snails to clever octopuses.",
+     "p": [
+      "Molluscs have soft bodies, and many protect them with a shell, like snails and clams.",
+      "Octopuses have no outer shell, yet they solve puzzles and open jars.",
+      "Snails glide on a muscular foot and a layer of slime, even over sharp edges."
+     ],
+     "q": "If you could be any mollusc for a day, which one would you choose?",
+     "c": "Look for a snail or slug after rain and watch how its body stretches as it glides."
+    },
+    "de": {
+     "t": "Schnecken, Kraken und Muscheln",
+     "g": "Weichtiere entdecken, von langsamen Gartenschnecken bis zu klugen Kraken.",
+     "p": [
+      "Weichtiere haben einen weichen Körper, viele schützen ihn mit einer Schale wie Schnecken und Muscheln.",
+      "Kraken haben keine Außenschale, lösen aber Rätsel und öffnen sogar Schraubgläser.",
+      "Schnecken gleiten auf einem Muskelfuß und einer Schleimschicht, selbst über scharfe Kanten."
+     ],
+     "q": "Welches Weichtier wärst du gern für einen Tag?",
+     "c": "Suche nach Regen eine Schnecke und beobachte, wie sich ihr Körper beim Gleiten streckt."
+    },
+    "es": {
+     "t": "Caracoles, pulpos y almejas",
+     "g": "Descubrir los moluscos, desde lentos caracoles de jardín hasta pulpos astutos.",
+     "p": [
+      "Los moluscos tienen el cuerpo blando y muchos lo protegen con concha, como caracoles y almejas.",
+      "Los pulpos no tienen concha, pero resuelven puzles y hasta abren frascos.",
+      "Los caracoles se deslizan sobre un pie musculoso y una capa de baba, incluso sobre bordes afilados."
+     ],
+     "q": "Si pudieras ser un molusco por un día, ¿cuál elegirías?",
+     "c": "Busca un caracol o una babosa después de la lluvia y observa cómo estira el cuerpo al avanzar."
+    },
+    "fr": {
+     "t": "Escargots, pieuvres et palourdes",
+     "g": "Découvrir les mollusques, du lent escargot de jardin à la pieuvre intelligente.",
+     "p": [
+      "Les mollusques ont un corps mou, et beaucoup le protègent d'une coquille, comme l'escargot et la palourde.",
+      "Les pieuvres n'ont pas de coquille, mais résolvent des casse-tête et ouvrent des bocaux.",
+      "Les escargots glissent sur un pied musclé et une couche de bave, même sur des bords tranchants."
+     ],
+     "q": "Si tu pouvais être un mollusque pendant une journée, lequel choisirais-tu ?",
+     "c": "Cherche un escargot ou une limace après la pluie et observe comment son corps s'étire."
+    },
+    "it": {
+     "t": "Lumache, polpi e vongole",
+     "g": "Scoprire i molluschi, dalle lente lumache da giardino ai polpi intelligenti.",
+     "p": [
+      "I molluschi hanno il corpo molle e molti lo proteggono con una conchiglia, come lumache e vongole.",
+      "I polpi non hanno conchiglia, eppure risolvono rompicapi e aprono barattoli.",
+      "Le lumache scivolano su un piede muscoloso e uno strato di bava, anche su bordi affilati."
+     ],
+     "q": "Se potessi essere un mollusco per un giorno, quale sceglieresti?",
+     "c": "Cerca una lumaca o una limaccia dopo la pioggia e osserva come si allunga mentre avanza."
+    },
+    "pt": {
+     "t": "Caracóis, polvos e amêijoas",
+     "g": "Descobrir os moluscos, desde lentos caracóis de jardim a polvos inteligentes.",
+     "p": [
+      "Os moluscos têm o corpo mole e muitos protegem-no com uma concha, como caracóis e amêijoas.",
+      "Os polvos não têm concha, mas resolvem puzzles e até abrem frascos.",
+      "Os caracóis deslizam sobre um pé musculado e uma camada de muco, até sobre arestas afiadas."
+     ],
+     "q": "Se pudesses ser um molusco por um dia, qual escolhias?",
+     "c": "Procura um caracol ou uma lesma depois da chuva e vê como o corpo se estica ao deslizar."
+    },
+    "pt_BR": {
+     "t": "Caracóis, polvos e mariscos",
+     "g": "Descobrir os moluscos, de lentos caracóis de jardim a polvos inteligentes.",
+     "p": [
+      "Os moluscos têm o corpo mole e muitos o protegem com uma concha, como caracóis e mariscos.",
+      "Os polvos não têm concha, mas resolvem quebra-cabeças e até abrem potes.",
+      "Os caracóis deslizam sobre um pé musculoso e uma camada de muco, até sobre bordas afiadas."
+     ],
+     "q": "Se você pudesse ser um molusco por um dia, qual escolheria?",
+     "c": "Procure um caracol ou lesma depois da chuva e veja como o corpo estica ao deslizar."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Worms underground",
+     "g": "See earthworms as the tireless gardeners of the soil.",
+     "p": [
+      "Earthworms eat soil and leaf bits, and their waste is a rich natural fertiliser.",
+      "Their tunnels let air and rainwater sink deep, helping roots to grow.",
+      "A worm has no lungs or eyes: it breathes through moist skin and senses light and touch."
+     ],
+     "q": "Where in your area do you think the soil is richest in worms?",
+     "c": "After rain, look at a patch of soil or lawn and spot worm casts or tunnel holes."
+    },
+    "de": {
+     "t": "Würmer unter der Erde",
+     "g": "Regenwürmer als unermüdliche Gärtner des Bodens verstehen.",
+     "p": [
+      "Regenwürmer fressen Erde und Blattstückchen, ihre Ausscheidungen sind guter natürlicher Dünger.",
+      "Ihre Gänge lassen Luft und Regenwasser tief eindringen und helfen den Wurzeln beim Wachsen.",
+      "Ein Wurm hat weder Lunge noch Augen: Er atmet über die feuchte Haut und spürt Licht und Berührung."
+     ],
+     "q": "Wo in deiner Gegend ist der Boden wohl am wurmreichsten?",
+     "c": "Betrachte nach Regen ein Stück Erde oder Rasen und finde Wurmhäufchen oder Gangöffnungen."
+    },
+    "es": {
+     "t": "Gusanos bajo tierra",
+     "g": "Ver a las lombrices como las jardineras incansables del suelo.",
+     "p": [
+      "Las lombrices comen tierra y trocitos de hojas, y sus desechos son un fertilizante natural muy rico.",
+      "Sus túneles dejan entrar aire y agua de lluvia hasta lo hondo y ayudan a crecer a las raíces.",
+      "Una lombriz no tiene pulmones ni ojos: respira por la piel húmeda y siente la luz y el tacto."
+     ],
+     "q": "¿Dónde crees que el suelo de tu zona tiene más lombrices?",
+     "c": "Después de la lluvia, mira un trozo de tierra o césped y busca montoncitos de lombriz o agujeros."
+    },
+    "fr": {
+     "t": "Les vers sous terre",
+     "g": "Voir les vers de terre comme les jardiniers infatigables du sol.",
+     "p": [
+      "Les vers de terre mangent de la terre et des morceaux de feuilles, et leurs déjections fertilisent le sol.",
+      "Leurs galeries laissent l'air et l'eau de pluie descendre en profondeur et aident les racines.",
+      "Un ver n'a ni poumons ni yeux : il respire par sa peau humide et sent la lumière et le toucher."
+     ],
+     "q": "Où, près de chez toi, le sol te semble-t-il le plus riche en vers ?",
+     "c": "Après la pluie, observe un coin de terre ou de pelouse et repère turricules ou trous de galeries."
+    },
+    "it": {
+     "t": "Vermi sotto terra",
+     "g": "Vedere i lombrichi come gli instancabili giardinieri del suolo.",
+     "p": [
+      "I lombrichi mangiano terra e pezzetti di foglie, e i loro rifiuti sono un ricco concime naturale.",
+      "Le loro gallerie lasciano scendere aria e acqua piovana in profondità e aiutano le radici.",
+      "Un lombrico non ha polmoni né occhi: respira con la pelle umida e sente luce e tatto."
+     ],
+     "q": "Dove nella tua zona pensi che il terreno sia più ricco di lombrichi?",
+     "c": "Dopo la pioggia, osserva un pezzo di terra o prato e cerca i mucchietti di lombrico o i buchi."
+    },
+    "pt": {
+     "t": "Minhocas debaixo da terra",
+     "g": "Ver as minhocas como as jardineiras incansáveis do solo.",
+     "p": [
+      "As minhocas comem terra e pedacinhos de folhas, e os seus dejetos são um rico adubo natural.",
+      "Os seus túneis deixam entrar ar e água da chuva em profundidade e ajudam as raízes.",
+      "Uma minhoca não tem pulmões nem olhos: respira pela pele húmida e sente a luz e o toque."
+     ],
+     "q": "Onde na tua zona achas que o solo tem mais minhocas?",
+     "c": "Depois da chuva, olha para um canto de terra ou relva e procura montinhos de minhoca ou buracos."
+    },
+    "pt_BR": {
+     "t": "Minhocas debaixo da terra",
+     "g": "Ver as minhocas como as jardineiras incansáveis do solo.",
+     "p": [
+      "As minhocas comem terra e pedacinhos de folhas, e seus dejetos são um rico adubo natural.",
+      "Seus túneis deixam entrar ar e água da chuva em profundidade e ajudam as raízes.",
+      "Uma minhoca não tem pulmões nem olhos: respira pela pele úmida e sente a luz e o toque."
+     ],
+     "q": "Onde na sua região você acha que o solo tem mais minhocas?",
+     "c": "Depois da chuva, olhe um canto de terra ou grama e procure montinhos de minhoca ou buracos."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Jellyfish and corals",
+     "g": "Learn how simple animals with stinging cells shape the sea.",
+     "p": [
+      "Jellyfish drift with no brain or heart, using a simple net of nerves to sense the water.",
+      "Both jellyfish and corals belong to a group with tiny stinging cells called cnidarians.",
+      "Coral polyps are small animals that build stony skeletons, forming reefs over centuries."
+     ],
+     "q": "Would you rather snorkel over a coral reef or watch jellyfish from a boat?",
+     "c": "Look at a photo of a coral reef and count how many different shapes and colours you find."
+    },
+    "de": {
+     "t": "Quallen und Korallen",
+     "g": "Verstehen, wie einfache Tiere mit Nesselzellen das Meer prägen.",
+     "p": [
+      "Quallen treiben ohne Gehirn und Herz und nehmen das Wasser über ein einfaches Nervennetz wahr.",
+      "Quallen und Korallen gehören zu den Nesseltieren mit winzigen Nesselzellen.",
+      "Korallenpolypen sind kleine Tiere, die steinerne Skelette bauen und über Jahrhunderte Riffe formen."
+     ],
+     "q": "Würdest du lieber über einem Korallenriff schnorcheln oder Quallen vom Boot aus beobachten?",
+     "c": "Sieh dir ein Foto eines Korallenriffs an und zähle, wie viele Formen und Farben du findest."
+    },
+    "es": {
+     "t": "Medusas y corales",
+     "g": "Aprender cómo animales sencillos con células urticantes dan forma al mar.",
+     "p": [
+      "Las medusas flotan sin cerebro ni corazón y sienten el agua con una red simple de nervios.",
+      "Medusas y corales pertenecen a los cnidarios, con diminutas células urticantes.",
+      "Los pólipos del coral son animales pequeños que construyen esqueletos de piedra y forman arrecifes durante siglos."
+     ],
+     "q": "¿Prefieres hacer snorkel sobre un arrecife de coral o ver medusas desde un barco?",
+     "c": "Mira una foto de un arrecife de coral y cuenta cuántas formas y colores distintos encuentras."
+    },
+    "fr": {
+     "t": "Méduses et coraux",
+     "g": "Comprendre comment des animaux simples aux cellules urticantes façonnent la mer.",
+     "p": [
+      "Les méduses dérivent sans cerveau ni coeur et perçoivent l'eau grâce à un simple réseau de nerfs.",
+      "Méduses et coraux font partie des cnidaires, dotés de minuscules cellules urticantes.",
+      "Les polypes de corail sont de petits animaux qui bâtissent des squelettes de pierre et forment des récifs en des siècles."
+     ],
+     "q": "Préférerais-tu nager avec un tuba sur un récif ou observer des méduses depuis un bateau ?",
+     "c": "Regarde une photo de récif corallien et compte combien de formes et de couleurs tu trouves."
+    },
+    "it": {
+     "t": "Meduse e coralli",
+     "g": "Capire come animali semplici con cellule urticanti modellano il mare.",
+     "p": [
+      "Le meduse vagano senza cervello né cuore e sentono l'acqua con una semplice rete di nervi.",
+      "Meduse e coralli appartengono ai cnidari, con minuscole cellule urticanti.",
+      "I polipi dei coralli sono piccoli animali che costruiscono scheletri di pietra e formano barriere in secoli."
+     ],
+     "q": "Preferiresti fare snorkeling su una barriera corallina o guardare le meduse da una barca?",
+     "c": "Guarda la foto di una barriera corallina e conta quante forme e colori diversi trovi."
+    },
+    "pt": {
+     "t": "Alforrecas e corais",
+     "g": "Perceber como animais simples com células urticantes moldam o mar.",
+     "p": [
+      "As alforrecas flutuam sem cérebro nem coração e sentem a água com uma rede simples de nervos.",
+      "Alforrecas e corais pertencem aos cnidários, com minúsculas células urticantes.",
+      "Os pólipos de coral são pequenos animais que constroem esqueletos de pedra e formam recifes ao longo de séculos."
+     ],
+     "q": "Preferias fazer snorkel num recife de coral ou ver alforrecas de um barco?",
+     "c": "Vê uma fotografia de um recife de coral e conta quantas formas e cores diferentes encontras."
+    },
+    "pt_BR": {
+     "t": "Águas-vivas e corais",
+     "g": "Entender como animais simples com células urticantes moldam o mar.",
+     "p": [
+      "As águas-vivas flutuam sem cérebro nem coração e sentem a água com uma rede simples de nervos.",
+      "Águas-vivas e corais pertencem aos cnidários, com minúsculas células urticantes.",
+      "Os pólipos de coral são pequenos animais que constroem esqueletos de pedra e formam recifes ao longo de séculos."
+     ],
+     "q": "Você prefere mergulhar com snorkel num recife de coral ou ver águas-vivas de um barco?",
+     "c": "Veja uma foto de um recife de coral e conte quantas formas e cores diferentes você acha."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is a habitat?",
+     "g": "Understand that every species needs a home with the right food, water, shelter and space.",
+     "p": [
+      "A habitat is the place where an animal finds food, water, shelter and a spot to raise young.",
+      "Forests, ponds, deserts and even a rotting log are habitats, big or small.",
+      "Each species fits its own habitat, so when the place changes, the animals must adapt or move."
+     ],
+     "q": "What kind of habitat feels most like home to you: forest, coast, mountains or city?",
+     "c": "Pick one tree or bush nearby and note which animals use it for food or shelter."
+    },
+    "de": {
+     "t": "Was ist ein Lebensraum?",
+     "g": "Verstehen, dass jede Art ein Zuhause mit Nahrung, Wasser, Schutz und Platz braucht.",
+     "p": [
+      "Ein Lebensraum ist der Ort, an dem ein Tier Futter, Wasser, Schutz und einen Platz für Junge findet.",
+      "Wälder, Teiche, Wüsten und sogar ein morscher Baumstamm sind Lebensräume, groß oder klein.",
+      "Jede Art passt zu ihrem Lebensraum. Ändert er sich, müssen Tiere sich anpassen oder weiterziehen."
+     ],
+     "q": "Welcher Lebensraum fühlt sich für dich am meisten nach Zuhause an: Wald, Küste, Berge oder Stadt?",
+     "c": "Wähle einen Baum oder Busch in der Nähe und notiere, welche Tiere ihn nutzen."
+    },
+    "es": {
+     "t": "¿Qué es un hábitat?",
+     "g": "Entender que cada especie necesita un hogar con comida, agua, refugio y espacio.",
+     "p": [
+      "Un hábitat es el lugar donde un animal encuentra comida, agua, refugio y un sitio para criar.",
+      "Bosques, estanques, desiertos e incluso un tronco podrido son hábitats, grandes o pequeños.",
+      "Cada especie encaja en su hábitat; si el lugar cambia, los animales deben adaptarse o moverse."
+     ],
+     "q": "¿Qué hábitat te parece más tu hogar: bosque, costa, montaña o ciudad?",
+     "c": "Elige un árbol o arbusto cercano y anota qué animales lo usan para comer o refugiarse."
+    },
+    "fr": {
+     "t": "Qu'est-ce qu'un habitat ?",
+     "g": "Comprendre que chaque espèce a besoin d'un chez-soi avec nourriture, eau, abri et espace.",
+     "p": [
+      "Un habitat est le lieu où un animal trouve nourriture, eau, abri et un endroit pour élever ses petits.",
+      "Forêts, mares, déserts et même une vieille bûche sont des habitats, grands ou petits.",
+      "Chaque espèce convient à son habitat ; si le lieu change, les animaux doivent s'adapter ou partir."
+     ],
+     "q": "Quel habitat te semble le plus familier : forêt, côte, montagne ou ville ?",
+     "c": "Choisis un arbre ou un buisson proche et note quels animaux s'en servent pour manger ou s'abriter."
+    },
+    "it": {
+     "t": "Che cos'è un habitat?",
+     "g": "Capire che ogni specie ha bisogno di una casa con cibo, acqua, riparo e spazio.",
+     "p": [
+      "Un habitat è il luogo in cui un animale trova cibo, acqua, riparo e un posto per allevare i piccoli.",
+      "Foreste, stagni, deserti e persino un tronco marcio sono habitat, grandi o piccoli.",
+      "Ogni specie si adatta al suo habitat: se il luogo cambia, gli animali devono adattarsi o spostarsi."
+     ],
+     "q": "Quale habitat ti sembra più casa tua: bosco, costa, montagna o città?",
+     "c": "Scegli un albero o un cespuglio vicino e annota quali animali lo usano per cibo o riparo."
+    },
+    "pt": {
+     "t": "O que é um habitat?",
+     "g": "Perceber que cada espécie precisa de uma casa com comida, água, abrigo e espaço.",
+     "p": [
+      "Um habitat é o lugar onde um animal encontra comida, água, abrigo e um sítio para criar as crias.",
+      "Florestas, lagoas, desertos e até um tronco podre são habitats, grandes ou pequenos.",
+      "Cada espécie ajusta-se ao seu habitat; se o local muda, os animais têm de se adaptar ou mudar."
+     ],
+     "q": "Que habitat te parece mais a tua casa: floresta, costa, montanha ou cidade?",
+     "c": "Escolhe uma árvore ou arbusto perto e anota que animais o usam para comer ou abrigar-se."
+    },
+    "pt_BR": {
+     "t": "O que é um habitat?",
+     "g": "Entender que cada espécie precisa de uma casa com comida, água, abrigo e espaço.",
+     "p": [
+      "Um habitat é o lugar onde um animal encontra comida, água, abrigo e um canto para criar os filhotes.",
+      "Florestas, lagoas, desertos e até um tronco podre são habitats, grandes ou pequenos.",
+      "Cada espécie se encaixa no seu habitat; se o lugar muda, os animais precisam se adaptar ou se mudar."
+     ],
+     "q": "Qual habitat parece mais a sua casa: floresta, litoral, montanha ou cidade?",
+     "c": "Escolha uma árvore ou arbusto por perto e anote quais animais o usam para comer ou se abrigar."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food chains made simple",
+     "g": "Follow energy from the Sun through plants to the animals that eat them.",
+     "p": [
+      "Plants are producers: they turn sunlight into food that fuels almost every food chain.",
+      "A grasshopper eats grass, a frog eats the grasshopper and a hawk may eat the frog.",
+      "Each step passes on only a small share of energy, so top animals are fewer in number."
+     ],
+     "q": "Can you think of a food chain from a place you know well?",
+     "c": "Draw a three-step food chain using only living things you saw today or this week."
+    },
+    "de": {
+     "t": "Nahrungsketten einfach erklärt",
+     "g": "Der Energie von der Sonne über Pflanzen zu den Tieren folgen, die sie fressen.",
+     "p": [
+      "Pflanzen sind Produzenten: Sie wandeln Sonnenlicht in Nahrung um, die fast jede Kette antreibt.",
+      "Eine Heuschrecke frisst Gras, ein Frosch frisst die Heuschrecke, ein Bussard vielleicht den Frosch.",
+      "Jede Stufe gibt nur einen kleinen Teil der Energie weiter, darum gibt es oben weniger Tiere."
+     ],
+     "q": "Fällt dir eine Nahrungskette aus einem Ort ein, den du gut kennst?",
+     "c": "Zeichne eine Nahrungskette mit drei Stufen aus Lebewesen, die du diese Woche gesehen hast."
+    },
+    "es": {
+     "t": "Cadenas alimentarias fáciles",
+     "g": "Seguir la energía del Sol a través de las plantas hasta los animales que se las comen.",
+     "p": [
+      "Las plantas son productoras: convierten la luz solar en alimento que mueve casi toda cadena.",
+      "Un saltamontes come hierba, una rana come al saltamontes y un halcón puede comer a la rana.",
+      "Cada paso pasa solo una pequeña parte de la energía, así que arriba hay menos animales."
+     ],
+     "q": "¿Se te ocurre una cadena alimentaria de un lugar que conozcas bien?",
+     "c": "Dibuja una cadena de tres pasos solo con seres vivos que hayas visto esta semana."
+    },
+    "fr": {
+     "t": "Les chaînes alimentaires simplement",
+     "g": "Suivre l'énergie du Soleil jusqu'aux animaux, en passant par les plantes.",
+     "p": [
+      "Les plantes sont des producteurs : elles transforment la lumière en nourriture qui alimente presque toute chaîne.",
+      "Une sauterelle mange de l'herbe, une grenouille mange la sauterelle et une buse peut manger la grenouille.",
+      "Chaque étape ne transmet qu'une petite part d'énergie, d'où moins d'animaux tout en haut."
+     ],
+     "q": "Peux-tu imaginer une chaîne alimentaire d'un endroit que tu connais bien ?",
+     "c": "Dessine une chaîne de trois maillons avec des êtres vivants vus cette semaine."
+    },
+    "it": {
+     "t": "Le catene alimentari in breve",
+     "g": "Seguire l'energia dal Sole alle piante fino agli animali che le mangiano.",
+     "p": [
+      "Le piante sono produttori: trasformano la luce in cibo che alimenta quasi ogni catena.",
+      "Una cavalletta mangia l'erba, una rana mangia la cavalletta e una poiana può mangiare la rana.",
+      "Ogni passaggio trasmette solo una piccola parte di energia, quindi in alto ci sono meno animali."
+     ],
+     "q": "Ti viene in mente una catena alimentare di un luogo che conosci bene?",
+     "c": "Disegna una catena di tre passaggi usando solo esseri viventi visti questa settimana."
+    },
+    "pt": {
+     "t": "Cadeias alimentares simples",
+     "g": "Seguir a energia do Sol através das plantas até aos animais que as comem.",
+     "p": [
+      "As plantas são produtoras: transformam a luz solar em alimento que move quase todas as cadeias.",
+      "Um gafanhoto come erva, uma rã come o gafanhoto e um falcão pode comer a rã.",
+      "Cada passo passa só uma pequena parte da energia, por isso há menos animais no topo."
+     ],
+     "q": "Consegues pensar numa cadeia alimentar de um sítio que conheças bem?",
+     "c": "Desenha uma cadeia de três passos só com seres vivos que viste esta semana."
+    },
+    "pt_BR": {
+     "t": "Cadeias alimentares simples",
+     "g": "Seguir a energia do Sol pelas plantas até os animais que as comem.",
+     "p": [
+      "As plantas são produtoras: transformam a luz solar em alimento que move quase todas as cadeias.",
+      "Um gafanhoto come grama, uma rã come o gafanhoto e um gavião pode comer a rã.",
+      "Cada passo passa só uma pequena parte da energia, por isso há menos animais no topo."
+     ],
+     "q": "Você consegue pensar numa cadeia alimentar de um lugar que conhece bem?",
+     "c": "Desenhe uma cadeia de três passos só com seres vivos que você viu esta semana."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Herbivores, carnivores, omnivores",
+     "g": "Read an animal's diet from its teeth, beak and gut.",
+     "p": [
+      "Herbivores eat plants, carnivores eat meat and omnivores, like bears and humans, eat both.",
+      "Flat grinding teeth suit grass-eaters, while sharp pointed teeth suit meat-eaters.",
+      "Plant food is hard to digest, so cows and rabbits have long guts built for the job."
+     ],
+     "q": "Which of the three groups do you think is the biggest in your local area?",
+     "c": "Look at pictures of a rabbit, a cat and a pig and guess each diet from the teeth."
+    },
+    "de": {
+     "t": "Pflanzen-, Fleisch- und Allesfresser",
+     "g": "Die Nahrung eines Tieres an Zähnen, Schnabel und Darm ablesen.",
+     "p": [
+      "Pflanzenfresser essen Pflanzen, Fleischfresser Fleisch, Allesfresser wie Bären und Menschen beides.",
+      "Flache Mahlzähne passen zu Grasfressern, spitze Zähne zu Fleischfressern.",
+      "Pflanzenkost ist schwer verdaulich, darum haben Kühe und Hasen lange Därme dafür."
+     ],
+     "q": "Welche der drei Gruppen ist in deiner Gegend wohl die größte?",
+     "c": "Sieh dir Bilder von Hase, Katze und Schwein an und rate die Nahrung an den Zähnen."
+    },
+    "es": {
+     "t": "Herbívoros, carnívoros, omnívoros",
+     "g": "Leer la dieta de un animal en sus dientes, pico e intestino.",
+     "p": [
+      "Los herbívoros comen plantas, los carnívoros carne y los omnívoros, como osos y humanos, ambas cosas.",
+      "Los dientes planos para moler van con comedores de hierba y los puntiagudos con carnívoros.",
+      "La comida vegetal es difícil de digerir, por eso vacas y conejos tienen intestinos largos."
+     ],
+     "q": "¿Cuál de los tres grupos crees que es el mayor en tu zona?",
+     "c": "Mira fotos de un conejo, un gato y un cerdo y adivina su dieta por los dientes."
+    },
+    "fr": {
+     "t": "Herbivores, carnivores, omnivores",
+     "g": "Lire le régime d'un animal dans ses dents, son bec et son intestin.",
+     "p": [
+      "Les herbivores mangent des plantes, les carnivores de la viande, les omnivores, comme l'ours et l'humain, les deux.",
+      "Des dents plates pour broyer conviennent aux mangeurs d'herbe, des dents pointues aux carnivores.",
+      "Les plantes sont difficiles à digérer, d'où les longs intestins des vaches et des lapins."
+     ],
+     "q": "Quel groupe est selon toi le plus nombreux près de chez toi ?",
+     "c": "Regarde des photos d'un lapin, d'un chat et d'un cochon et devine leur régime d'après les dents."
+    },
+    "it": {
+     "t": "Erbivori, carnivori, onnivori",
+     "g": "Leggere la dieta di un animale dai denti, dal becco e dall'intestino.",
+     "p": [
+      "Gli erbivori mangiano piante, i carnivori carne e gli onnivori, come orsi e umani, entrambe.",
+      "Denti piatti per macinare vanno ai mangiatori d'erba, denti appuntiti ai carnivori.",
+      "Il cibo vegetale è difficile da digerire, per questo mucche e conigli hanno intestini lunghi."
+     ],
+     "q": "Quale dei tre gruppi pensi sia il più numeroso nella tua zona?",
+     "c": "Guarda le foto di un coniglio, un gatto e un maiale e indovina la dieta dai denti."
+    },
+    "pt": {
+     "t": "Herbívoros, carnívoros, omnívoros",
+     "g": "Ler a dieta de um animal nos dentes, no bico e no intestino.",
+     "p": [
+      "Os herbívoros comem plantas, os carnívoros carne e os omnívoros, como ursos e humanos, ambos.",
+      "Dentes planos para moer servem comedores de erva e dentes pontiagudos servem carnívoros.",
+      "A comida vegetal é difícil de digerir, por isso vacas e coelhos têm intestinos compridos."
+     ],
+     "q": "Qual dos três grupos achas que é o maior na tua zona?",
+     "c": "Vê fotografias de um coelho, um gato e um porco e adivinha a dieta pelos dentes."
+    },
+    "pt_BR": {
+     "t": "Herbívoros, carnívoros, onívoros",
+     "g": "Ler a dieta de um animal nos dentes, no bico e no intestino.",
+     "p": [
+      "Os herbívoros comem plantas, os carnívoros carne e os onívoros, como ursos e humanos, ambos.",
+      "Dentes planos para triturar servem comedores de capim e dentes pontudos servem carnívoros.",
+      "A comida vegetal é difícil de digerir, por isso vacas e coelhos têm intestinos longos."
+     ],
+     "q": "Qual dos três grupos você acha que é o maior na sua região?",
+     "c": "Veja fotos de um coelho, um gato e um porco e adivinhe a dieta pelos dentes."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Predators and prey",
+     "g": "Appreciate how hunting and hiding push both sides to keep improving.",
+     "p": [
+      "Predators have tools like sharp senses, speed and patience, and prey have tools too.",
+      "Prey use alarm calls, sharp turns, herds and camouflage to stay safe.",
+      "This long contest, called an arms race, shapes fast legs, keen eyes and clever tricks."
+     ],
+     "q": "Which animal do you admire most for its speed, patience or cleverness?",
+     "c": "Watch a bird or squirrel for two minutes and note every time it looks up or around."
+    },
+    "de": {
+     "t": "Jäger und Gejagte",
+     "g": "Verstehen, wie Jagen und Verstecken beide Seiten immer besser machen.",
+     "p": [
+      "Jäger haben scharfe Sinne, Tempo und Geduld, aber auch die Beutetiere haben ihre Mittel.",
+      "Beutetiere nutzen Warnrufe, plötzliche Wendungen, Herden und Tarnung, um sicher zu bleiben.",
+      "Dieser lange Wettlauf, ein Wettrüsten, formt schnelle Beine, scharfe Augen und kluge Tricks."
+     ],
+     "q": "Welches Tier bewunderst du am meisten für Tempo, Geduld oder Klugheit?",
+     "c": "Beobachte zwei Minuten einen Vogel oder ein Eichhörnchen und notiere jedes Mal, wenn es aufschaut."
+    },
+    "es": {
+     "t": "Depredadores y presas",
+     "g": "Apreciar cómo cazar y esconderse impulsa a ambos bandos a mejorar.",
+     "p": [
+      "Los depredadores tienen sentidos agudos, velocidad y paciencia, y las presas también tienen sus recursos.",
+      "Las presas usan alarmas, giros bruscos, manadas y camuflaje para estar seguras.",
+      "Esta larga carrera, llamada carrera armamentista, crea patas veloces, ojos agudos y trucos astutos."
+     ],
+     "q": "¿Qué animal admiras más por su velocidad, paciencia o astucia?",
+     "c": "Observa dos minutos a un ave o ardilla y anota cada vez que levanta la vista o mira alrededor."
+    },
+    "fr": {
+     "t": "Prédateurs et proies",
+     "g": "Apprécier comment chasser et se cacher poussent les deux camps à progresser.",
+     "p": [
+      "Les prédateurs ont des sens aiguisés, de la vitesse et de la patience, et les proies ont aussi leurs atouts.",
+      "Les proies utilisent cris d'alarme, virages brusques, troupeaux et camouflage pour rester en sécurité.",
+      "Cette longue course, appelée course aux armements, façonne pattes rapides, yeux vifs et ruses."
+     ],
+     "q": "Quel animal admires-tu le plus pour sa vitesse, sa patience ou son intelligence ?",
+     "c": "Observe un oiseau ou un écureuil deux minutes et note chaque fois qu'il lève la tête ou regarde autour."
+    },
+    "it": {
+     "t": "Predatori e prede",
+     "g": "Apprezzare come cacciare e nascondersi spinga entrambe le parti a migliorare.",
+     "p": [
+      "I predatori hanno sensi acuti, velocità e pazienza, e anche le prede hanno i loro strumenti.",
+      "Le prede usano richiami d'allarme, scarti improvvisi, branchi e mimetismo per restare al sicuro.",
+      "Questa lunga gara, detta corsa agli armamenti, crea zampe veloci, occhi acuti e trucchi astuti."
+     ],
+     "q": "Quale animale ammiri di più per velocità, pazienza o astuzia?",
+     "c": "Osserva per due minuti un uccello o uno scoiattolo e annota ogni volta che alza lo sguardo."
+    },
+    "pt": {
+     "t": "Predadores e presas",
+     "g": "Apreciar como caçar e esconder-se leva os dois lados a melhorar.",
+     "p": [
+      "Os predadores têm sentidos apurados, velocidade e paciência, e as presas também têm os seus recursos.",
+      "As presas usam alarmes, viragens bruscas, manadas e camuflagem para ficar seguras.",
+      "Esta longa corrida, chamada corrida ao armamento, cria patas rápidas, olhos atentos e truques."
+     ],
+     "q": "Que animal admiras mais pela velocidade, paciência ou esperteza?",
+     "c": "Observa durante dois minutos uma ave ou esquilo e anota cada vez que levanta o olhar."
+    },
+    "pt_BR": {
+     "t": "Predadores e presas",
+     "g": "Apreciar como caçar e se esconder leva os dois lados a melhorar.",
+     "p": [
+      "Os predadores têm sentidos apurados, velocidade e paciência, e as presas também têm seus recursos.",
+      "As presas usam alarmes, guinadas bruscas, manadas e camuflagem para ficar seguras.",
+      "Essa longa corrida, chamada corrida armamentista, cria patas rápidas, olhos atentos e truques."
+     ],
+     "q": "Qual animal você mais admira pela velocidade, paciência ou esperteza?",
+     "c": "Observe por dois minutos uma ave ou esquilo e anote cada vez que levanta o olhar."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Nature's clean-up crew",
+     "g": "Meet the decomposers that turn fallen leaves and old material back into soil.",
+     "p": [
+      "Fungi and bacteria break down fallen leaves and wood into nutrients plants can use.",
+      "Beetles, millipedes and woodlice shred leaf litter so decomposers can work faster.",
+      "Vultures and other scavengers tidy up the landscape and help keep it healthy."
+     ],
+     "q": "Have you ever noticed a log or leaf pile slowly turning into soil?",
+     "c": "Look under a pile of leaves from a distance or lift a few gently and spot the small helpers."
+    },
+    "de": {
+     "t": "Die Aufräumer der Natur",
+     "g": "Zersetzer kennenlernen, die Laub und altes Material wieder zu Erde machen.",
+     "p": [
+      "Pilze und Bakterien zerlegen Laub und Holz in Nährstoffe, die Pflanzen nutzen können.",
+      "Käfer, Tausendfüßer und Asseln zerkleinern Laub, damit die Zersetzer schneller arbeiten.",
+      "Geier und andere Aasfresser halten die Landschaft sauber und gesund."
+     ],
+     "q": "Hast du schon bemerkt, wie ein Baumstamm oder Laubhaufen langsam zu Erde wird?",
+     "c": "Hebe ein paar Blätter eines Laubhaufens vorsichtig an und entdecke die kleinen Helfer."
+    },
+    "es": {
+     "t": "El equipo de limpieza de la naturaleza",
+     "g": "Conocer a los descomponedores que convierten hojas caídas y materia vieja en suelo.",
+     "p": [
+      "Hongos y bacterias descomponen hojas caídas y madera en nutrientes que las plantas usan.",
+      "Escarabajos, milpiés y cochinillas trituran la hojarasca para que los descomponedores trabajen más rápido.",
+      "Los buitres y otros carroñeros mantienen limpio el paisaje y ayudan a que siga sano."
+     ],
+     "q": "¿Has notado alguna vez un tronco o montón de hojas convirtiéndose despacio en tierra?",
+     "c": "Mira con cuidado bajo un montón de hojas y encuentra a los pequeños ayudantes."
+    },
+    "fr": {
+     "t": "L'équipe de nettoyage de la nature",
+     "g": "Découvrir les décomposeurs qui transforment feuilles tombées et vieux matériaux en terre.",
+     "p": [
+      "Champignons et bactéries décomposent feuilles tombées et bois en nutriments utiles aux plantes.",
+      "Scarabées, mille-pattes et cloportes déchiquettent la litière pour que les décomposeurs aillent plus vite.",
+      "Les vautours et autres charognards gardent les paysages propres et en bonne santé."
+     ],
+     "q": "As-tu déjà remarqué un tronc ou un tas de feuilles se changer lentement en terre ?",
+     "c": "Soulève doucement quelques feuilles d'un tas et repère les petits auxiliaires."
+    },
+    "it": {
+     "t": "La squadra di pulizia della natura",
+     "g": "Conoscere i decompositori che trasformano foglie cadute e vecchio materiale in terra.",
+     "p": [
+      "Funghi e batteri scompongono foglie cadute e legno in nutrienti che le piante possono usare.",
+      "Coleotteri, millepiedi e porcellini di terra sminuzzano la lettiera così i decompositori lavorano più in fretta.",
+      "Gli avvoltoi e altri spazzini tengono pulito il paesaggio e lo aiutano a restare sano."
+     ],
+     "q": "Hai mai notato un tronco o un mucchio di foglie trasformarsi piano piano in terra?",
+     "c": "Solleva con delicatezza alcune foglie di un mucchio e individua i piccoli aiutanti."
+    },
+    "pt": {
+     "t": "A equipa de limpeza da natureza",
+     "g": "Conhecer os decompositores que transformam folhas caídas e matéria velha em solo.",
+     "p": [
+      "Fungos e bactérias decompõem folhas caídas e madeira em nutrientes que as plantas usam.",
+      "Escaravelhos, centopeias e bichos-de-conta trituram a folhada para os decompositores trabalharem mais depressa.",
+      "Os abutres e outros necrófagos mantêm a paisagem limpa e ajudam a mantê-la saudável."
+     ],
+     "q": "Já reparaste num tronco ou monte de folhas a transformar-se devagar em terra?",
+     "c": "Levanta com cuidado algumas folhas de um monte e descobre os pequenos ajudantes."
+    },
+    "pt_BR": {
+     "t": "A equipe de limpeza da natureza",
+     "g": "Conhecer os decompositores que transformam folhas caídas e matéria velha em solo.",
+     "p": [
+      "Fungos e bactérias decompõem folhas caídas e madeira em nutrientes que as plantas usam.",
+      "Besouros, piolhos-de-cobra e tatuzinhos trituram a serrapilheira para os decompositores trabalharem mais rápido.",
+      "Os urubus e outros necrófagos mantêm a paisagem limpa e ajudam a mantê-la saudável."
+     ],
+     "q": "Você já reparou num tronco ou monte de folhas virando terra devagar?",
+     "c": "Levante com cuidado algumas folhas de um monte e descubra os pequenos ajudantes."
+    }
+   }
+  }
+ ]
+}

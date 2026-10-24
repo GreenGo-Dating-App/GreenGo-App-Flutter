@@ -1,0 +1,835 @@
+{
+ "topic": "minimalism",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What minimalism really means",
+     "g": "Understand minimalism as keeping what adds value to your life.",
+     "p": [
+      "Minimalism is not owning as little as possible; it is owning what matters.",
+      "You do not need an empty white room or a strict number of items.",
+      "The goal is more room for the things, people and time you love."
+     ],
+     "q": "What is one thing at home that truly adds value to your day?",
+     "c": "Look around and name one object you love and use often."
+    },
+    "de": {
+     "t": "Was Minimalismus wirklich bedeutet",
+     "g": "Minimalismus heißt, das zu behalten, was deinem Leben guttut.",
+     "p": [
+      "Es geht nicht darum, möglichst wenig zu besitzen, sondern das, was zählt.",
+      "Du brauchst weder ein leeres weißes Zimmer noch eine feste Stückzahl.",
+      "Das Ziel ist mehr Raum für Dinge, Menschen und Zeit, die du liebst."
+     ],
+     "q": "Welcher Gegenstand bei dir zu Hause bereichert deinen Alltag wirklich?",
+     "c": "Schau dich um und nenne einen Gegenstand, den du liebst und oft nutzt."
+    },
+    "es": {
+     "t": "Qué significa realmente el minimalismo",
+     "g": "Entender el minimalismo como quedarte con lo que aporta valor a tu vida.",
+     "p": [
+      "No se trata de tener lo mínimo posible, sino de tener lo que importa.",
+      "No necesitas una habitación blanca y vacía ni un número fijo de objetos.",
+      "La meta es tener más espacio para las cosas, personas y tiempo que amas."
+     ],
+     "q": "¿Qué objeto de tu casa aporta de verdad valor a tu día?",
+     "c": "Mira a tu alrededor y nombra un objeto que quieras y uses a menudo."
+    },
+    "fr": {
+     "t": "Ce que le minimalisme veut vraiment dire",
+     "g": "Comprendre le minimalisme comme garder ce qui apporte de la valeur à ta vie.",
+     "p": [
+      "Ce n'est pas posséder le moins possible, mais posséder ce qui compte.",
+      "Tu n'as besoin ni d'une pièce blanche et vide ni d'un nombre d'objets fixé.",
+      "Le but est de faire plus de place aux choses, aux gens et au temps que tu aimes."
+     ],
+     "q": "Quel objet chez toi apporte vraiment de la valeur à ta journée ?",
+     "c": "Regarde autour de toi et cite un objet que tu aimes et utilises souvent."
+    },
+    "it": {
+     "t": "Cosa significa davvero minimalismo",
+     "g": "Capire il minimalismo come tenere ciò che dà valore alla tua vita.",
+     "p": [
+      "Non significa possedere il meno possibile, ma ciò che conta davvero.",
+      "Non servono una stanza bianca e vuota né un numero fisso di oggetti.",
+      "L'obiettivo è fare spazio a cose, persone e tempo che ami."
+     ],
+     "q": "Quale oggetto in casa dà davvero valore alla tua giornata?",
+     "c": "Guardati intorno e nomina un oggetto che ami e usi spesso."
+    },
+    "pt": {
+     "t": "O que o minimalismo realmente significa",
+     "g": "Perceber o minimalismo como ficar com o que traz valor à tua vida.",
+     "p": [
+      "Não é ter o mínimo possível, mas ter aquilo que importa.",
+      "Não precisas de uma sala branca e vazia nem de um número fixo de objetos.",
+      "O objetivo é abrir espaço para as coisas, pessoas e tempo de que gostas."
+     ],
+     "q": "Que objeto em tua casa traz mesmo valor ao teu dia?",
+     "c": "Olha à volta e diz o nome de um objeto que adores e uses muitas vezes."
+    },
+    "pt_BR": {
+     "t": "O que o minimalismo realmente significa",
+     "g": "Entender o minimalismo como ficar com o que traz valor para a sua vida.",
+     "p": [
+      "Não é ter o mínimo possível, e sim ter aquilo que importa.",
+      "Você não precisa de uma sala branca e vazia nem de um número fixo de objetos.",
+      "O objetivo é abrir espaço para as coisas, pessoas e o tempo que você ama."
+     ],
+     "q": "Que objeto da sua casa realmente traz valor para o seu dia?",
+     "c": "Olhe ao redor e diga o nome de um objeto que você ama e usa sempre."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your personal why",
+     "g": "Find your own reasons for wanting a simpler life.",
+     "p": [
+      "Common reasons: more time, less stress, more space, more energy.",
+      "Your why is personal; nobody else has to agree with it.",
+      "A clear reason helps when decluttering feels tiring."
+     ],
+     "q": "Which would help you most right now: time, calm, space or focus?",
+     "c": "Write your why in one short sentence and keep it where you can see it."
+    },
+    "de": {
+     "t": "Dein persönliches Warum",
+     "g": "Finde deine eigenen Gründe für ein einfacheres Leben.",
+     "p": [
+      "Häufige Gründe: mehr Zeit, weniger Stress, mehr Platz, mehr Energie.",
+      "Dein Warum ist persönlich; niemand muss es teilen.",
+      "Ein klarer Grund hilft, wenn das Ausmisten mal mühsam wird."
+     ],
+     "q": "Was würde dir jetzt am meisten helfen: Zeit, Ruhe, Platz oder Fokus?",
+     "c": "Schreib dein Warum in einen kurzen Satz und häng ihn gut sichtbar auf."
+    },
+    "es": {
+     "t": "Tu porqué personal",
+     "g": "Encuentra tus propias razones para querer una vida más sencilla.",
+     "p": [
+      "Razones habituales: más tiempo, menos estrés, más espacio, más energía.",
+      "Tu porqué es personal; nadie tiene que estar de acuerdo.",
+      "Una razón clara te ayuda cuando ordenar se hace cuesta arriba."
+     ],
+     "q": "¿Qué te ayudaría más ahora: tiempo, calma, espacio o concentración?",
+     "c": "Escribe tu porqué en una frase corta y ponla donde la veas."
+    },
+    "fr": {
+     "t": "Ton pourquoi personnel",
+     "g": "Trouver tes propres raisons de vouloir une vie plus simple.",
+     "p": [
+      "Raisons courantes : plus de temps, moins de stress, plus de place, plus d'énergie.",
+      "Ton pourquoi est personnel ; personne n'a à l'approuver.",
+      "Une raison claire aide quand désencombrer devient fatigant."
+     ],
+     "q": "Qu'est-ce qui t'aiderait le plus maintenant : temps, calme, espace ou concentration ?",
+     "c": "Écris ton pourquoi en une phrase courte et mets-la bien en vue."
+    },
+    "it": {
+     "t": "Il tuo motivo personale",
+     "g": "Trova le tue ragioni per volere una vita più semplice.",
+     "p": [
+      "Motivi comuni: più tempo, meno stress, più spazio, più energia.",
+      "Il tuo motivo è personale; nessuno deve condividerlo.",
+      "Una ragione chiara aiuta quando fare ordine stanca."
+     ],
+     "q": "Cosa ti aiuterebbe di più ora: tempo, calma, spazio o concentrazione?",
+     "c": "Scrivi il tuo motivo in una frase breve e mettila in un posto visibile."
+    },
+    "pt": {
+     "t": "O teu porquê pessoal",
+     "g": "Descobrir as tuas próprias razões para querer uma vida mais simples.",
+     "p": [
+      "Razões comuns: mais tempo, menos stress, mais espaço, mais energia.",
+      "O teu porquê é pessoal; ninguém tem de concordar.",
+      "Uma razão clara ajuda quando arrumar se torna cansativo."
+     ],
+     "q": "O que te ajudaria mais agora: tempo, calma, espaço ou foco?",
+     "c": "Escreve o teu porquê numa frase curta e põe-na num sítio visível."
+    },
+    "pt_BR": {
+     "t": "O seu porquê pessoal",
+     "g": "Descobrir as suas próprias razões para querer uma vida mais simples.",
+     "p": [
+      "Razões comuns: mais tempo, menos estresse, mais espaço, mais energia.",
+      "O seu porquê é pessoal; ninguém precisa concordar.",
+      "Uma razão clara ajuda quando organizar fica cansativo."
+     ],
+     "q": "O que ajudaria mais agora: tempo, calma, espaço ou foco?",
+     "c": "Escreva o seu porquê numa frase curta e deixe num lugar visível."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Many styles of minimalism",
+     "g": "See that there is no single correct minimalist look.",
+     "p": [
+      "Minimalism can be cosy and colourful or sleek and sparse.",
+      "Some people keep many books; others keep almost none. Both are fine.",
+      "Your style should fit your life, family and hobbies."
+     ],
+     "q": "What kind of home feels calm to you: warm and cosy or light and bare?",
+     "c": "Find one picture or memory of a space that felt calm to you."
+    },
+    "de": {
+     "t": "Viele Stile des Minimalismus",
+     "g": "Erkennen, dass es nicht den einen richtigen minimalistischen Look gibt.",
+     "p": [
+      "Minimalismus kann gemütlich und bunt oder schlicht und kahl sein.",
+      "Manche behalten viele Bücher, andere fast keine. Beides ist in Ordnung.",
+      "Dein Stil sollte zu deinem Leben, deiner Familie und deinen Hobbys passen."
+     ],
+     "q": "Welches Zuhause fühlt sich für dich ruhig an: warm und gemütlich oder hell und schlicht?",
+     "c": "Denk an einen Raum, in dem du dich ruhig gefühlt hast, und beschreib ihn kurz."
+    },
+    "es": {
+     "t": "Muchos estilos de minimalismo",
+     "g": "Ver que no existe un único aspecto minimalista correcto.",
+     "p": [
+      "El minimalismo puede ser acogedor y colorido o elegante y sobrio.",
+      "Unos conservan muchos libros y otros casi ninguno. Ambas opciones valen.",
+      "Tu estilo debe encajar con tu vida, tu familia y tus aficiones."
+     ],
+     "q": "¿Qué casa te transmite calma: cálida y acogedora o luminosa y despejada?",
+     "c": "Recuerda un espacio que te transmitió calma y descríbelo en pocas palabras."
+    },
+    "fr": {
+     "t": "Les nombreux styles de minimalisme",
+     "g": "Voir qu'il n'existe pas un seul look minimaliste correct.",
+     "p": [
+      "Le minimalisme peut être chaleureux et coloré ou épuré et sobre.",
+      "Certains gardent beaucoup de livres, d'autres presque aucun. Les deux sont bien.",
+      "Ton style doit convenir à ta vie, ta famille et tes loisirs."
+     ],
+     "q": "Quel intérieur te semble apaisant : chaleureux ou clair et dépouillé ?",
+     "c": "Pense à un lieu qui t'a semblé apaisant et décris-le en quelques mots."
+    },
+    "it": {
+     "t": "Tanti stili di minimalismo",
+     "g": "Capire che non esiste un solo look minimalista giusto.",
+     "p": [
+      "Il minimalismo può essere accogliente e colorato oppure essenziale e sobrio.",
+      "Alcuni tengono molti libri, altri quasi nessuno. Vanno bene entrambi.",
+      "Il tuo stile deve adattarsi alla tua vita, famiglia e passioni."
+     ],
+     "q": "Quale casa ti dà calma: calda e accogliente o luminosa e spoglia?",
+     "c": "Ricorda uno spazio che ti ha dato calma e descrivilo in poche parole."
+    },
+    "pt": {
+     "t": "Muitos estilos de minimalismo",
+     "g": "Perceber que não há um único visual minimalista correto.",
+     "p": [
+      "O minimalismo pode ser aconchegante e colorido ou elegante e sóbrio.",
+      "Alguns guardam muitos livros, outros quase nenhum. Ambos estão bem.",
+      "O teu estilo deve ajustar-se à tua vida, família e passatempos."
+     ],
+     "q": "Que casa te dá calma: quente e acolhedora ou clara e simples?",
+     "c": "Lembra-te de um espaço que te deu calma e descreve-o em poucas palavras."
+    },
+    "pt_BR": {
+     "t": "Muitos estilos de minimalismo",
+     "g": "Ver que não existe um único visual minimalista correto.",
+     "p": [
+      "O minimalismo pode ser aconchegante e colorido ou elegante e sóbrio.",
+      "Alguns guardam muitos livros, outros quase nenhum. Ambos estão certos.",
+      "O seu estilo deve combinar com a sua vida, família e hobbies."
+     ],
+     "q": "Que casa passa calma para você: quentinha e acolhedora ou clara e simples?",
+     "c": "Lembre de um espaço que lhe deu calma e descreva em poucas palavras."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The cost of clutter",
+     "g": "Notice how extra stuff quietly costs time, money, attention and energy.",
+     "p": [
+      "Clutter takes time to clean, move, search through and sort.",
+      "Things you do not use still take space, which you may be paying for.",
+      "Visual clutter can quietly tire the mind, even if you do not notice."
+     ],
+     "q": "Where do you lose the most time searching for things?",
+     "c": "Time yourself finding one everyday item, like keys or a charger."
+    },
+    "de": {
+     "t": "Die Kosten von Unordnung",
+     "g": "Bemerken, wie überflüssige Dinge leise Zeit, Geld, Aufmerksamkeit und Energie kosten.",
+     "p": [
+      "Dinge wollen geputzt, umgeräumt, gesucht und sortiert werden.",
+      "Ungenutzte Dinge brauchen trotzdem Platz, den du vielleicht mitbezahlst.",
+      "Optische Unruhe kann den Kopf müde machen, auch unbemerkt."
+     ],
+     "q": "Wo verlierst du am meisten Zeit mit Suchen?",
+     "c": "Miss, wie lange du für einen Alltagsgegenstand brauchst, etwa Schlüssel oder Ladekabel."
+    },
+    "es": {
+     "t": "El coste del desorden",
+     "g": "Notar cómo las cosas de más cuestan tiempo, dinero, atención y energía.",
+     "p": [
+      "El desorden exige tiempo para limpiar, mover, buscar y clasificar.",
+      "Lo que no usas sigue ocupando espacio, que quizá estés pagando.",
+      "El desorden visual puede cansar la mente sin que lo notes."
+     ],
+     "q": "¿Dónde pierdes más tiempo buscando cosas?",
+     "c": "Cronometra cuánto tardas en encontrar algo cotidiano, como las llaves o un cargador."
+    },
+    "fr": {
+     "t": "Le coût du désordre",
+     "g": "Remarquer comment les choses en trop coûtent du temps, de l'argent, de l'attention et de l'énergie.",
+     "p": [
+      "Le désordre demande du temps pour nettoyer, déplacer, chercher et trier.",
+      "Ce que tu n'utilises pas occupe quand même de la place, parfois payée.",
+      "Le désordre visuel peut fatiguer l'esprit sans que tu le remarques."
+     ],
+     "q": "Où perds-tu le plus de temps à chercher des choses ?",
+     "c": "Chronomètre le temps pour retrouver un objet courant, comme tes clés ou un chargeur."
+    },
+    "it": {
+     "t": "Il costo del disordine",
+     "g": "Notare come le cose in più costano tempo, denaro, attenzione ed energia.",
+     "p": [
+      "Il disordine richiede tempo per pulire, spostare, cercare e sistemare.",
+      "Ciò che non usi occupa comunque spazio, che magari paghi.",
+      "Il disordine visivo può stancare la mente senza che te ne accorga."
+     ],
+     "q": "Dove perdi più tempo a cercare le cose?",
+     "c": "Cronometra quanto ci metti a trovare un oggetto quotidiano, come le chiavi o un caricabatterie."
+    },
+    "pt": {
+     "t": "O custo da desarrumação",
+     "g": "Reparar como as coisas a mais custam tempo, dinheiro, atenção e energia.",
+     "p": [
+      "A desarrumação exige tempo para limpar, mudar, procurar e organizar.",
+      "O que não usas continua a ocupar espaço, que talvez estejas a pagar.",
+      "A confusão visual pode cansar a mente sem dares conta."
+     ],
+     "q": "Onde perdes mais tempo à procura de coisas?",
+     "c": "Cronometra quanto demoras a encontrar um objeto do dia a dia, como as chaves ou um carregador."
+    },
+    "pt_BR": {
+     "t": "O custo da bagunça",
+     "g": "Perceber como as coisas a mais custam tempo, dinheiro, atenção e energia.",
+     "p": [
+      "A bagunça exige tempo para limpar, mudar de lugar, procurar e organizar.",
+      "O que você não usa continua ocupando espaço, que talvez você pague.",
+      "A bagunça visual pode cansar a mente sem você perceber."
+     ],
+     "q": "Onde você perde mais tempo procurando coisas?",
+     "c": "Cronometre quanto tempo leva para achar algo do dia a dia, como chaves ou carregador."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Taking a calm inventory",
+     "g": "Walk through your home with fresh eyes, without judging yourself.",
+     "p": [
+      "Notice where things pile up; piles are information, not failure.",
+      "Take a few notes or photos instead of fixing everything now.",
+      "Look for the spots that bother you most, then pick the easiest."
+     ],
+     "q": "Which spot in your home do you notice piles most often?",
+     "c": "Take a slow five-minute walk and write down three spots that collect things."
+    },
+    "de": {
+     "t": "Eine ruhige Bestandsaufnahme",
+     "g": "Geh mit frischem Blick durch dein Zuhause, ohne dich zu verurteilen.",
+     "p": [
+      "Achte darauf, wo sich Dinge stapeln; Stapel sind Hinweise, kein Versagen.",
+      "Mach Notizen oder Fotos, statt sofort alles zu beheben.",
+      "Suche die Stellen, die dich am meisten stören, und starte mit der leichtesten."
+     ],
+     "q": "An welcher Stelle bei dir stapeln sich die Dinge am häufigsten?",
+     "c": "Geh fünf Minuten langsam durch und notiere drei Stellen, wo sich Dinge sammeln."
+    },
+    "es": {
+     "t": "Un inventario tranquilo",
+     "g": "Recorre tu casa con ojos nuevos, sin juzgarte.",
+     "p": [
+      "Fíjate dónde se acumulan las cosas; los montones son información, no fracaso.",
+      "Toma notas o fotos en lugar de arreglarlo todo ahora.",
+      "Busca los rincones que más te molestan y elige el más fácil."
+     ],
+     "q": "¿En qué rincón de tu casa notas más montones de cosas?",
+     "c": "Da un paseo lento de cinco minutos y anota tres sitios donde se acumulan cosas."
+    },
+    "fr": {
+     "t": "Faire un inventaire en douceur",
+     "g": "Parcourir ta maison avec un regard neuf, sans te juger.",
+     "p": [
+      "Repère où les choses s'accumulent ; les piles sont des indices, pas un échec.",
+      "Prends des notes ou des photos au lieu de tout régler tout de suite.",
+      "Cherche les endroits qui te gênent le plus, puis choisis le plus facile."
+     ],
+     "q": "À quel endroit de ta maison remarques-tu le plus de piles ?",
+     "c": "Fais une balade lente de cinq minutes et note trois endroits où les choses s'accumulent."
+    },
+    "it": {
+     "t": "Un inventario con calma",
+     "g": "Percorri casa con occhi nuovi, senza giudicarti.",
+     "p": [
+      "Nota dove le cose si accumulano; le pile sono informazioni, non un fallimento.",
+      "Prendi appunti o foto invece di sistemare tutto subito.",
+      "Cerca i punti che ti disturbano di più, poi scegli il più facile."
+     ],
+     "q": "In quale punto di casa noti più spesso cumuli di cose?",
+     "c": "Fai un giro lento di cinque minuti e annota tre punti dove si accumulano cose."
+    },
+    "pt": {
+     "t": "Um inventário com calma",
+     "g": "Percorrer a tua casa com olhos novos, sem te julgares.",
+     "p": [
+      "Repara onde as coisas se acumulam; as pilhas são informação, não falhanço.",
+      "Faz notas ou fotos em vez de resolver tudo já.",
+      "Procura os cantos que mais te incomodam e escolhe o mais fácil."
+     ],
+     "q": "Em que canto da tua casa reparas mais em pilhas de coisas?",
+     "c": "Faz um passeio lento de cinco minutos e anota três sítios onde as coisas se acumulam."
+    },
+    "pt_BR": {
+     "t": "Um inventário com calma",
+     "g": "Percorrer a sua casa com olhos novos, sem se julgar.",
+     "p": [
+      "Perceba onde as coisas se acumulam; pilhas são informação, não fracasso.",
+      "Faça anotações ou fotos em vez de resolver tudo agora.",
+      "Procure os cantos que mais incomodam e escolha o mais fácil."
+     ],
+     "q": "Em que canto da sua casa você mais nota pilhas de coisas?",
+     "c": "Faça uma volta lenta de cinco minutos e anote três lugares onde as coisas se acumulam."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "One drawer to start",
+     "g": "Learn why a tiny, finishable first project builds momentum.",
+     "p": [
+      "A single drawer takes about fifteen minutes and gives a real result.",
+      "Finishing something small makes the next step feel easier.",
+      "Giant weekend purges often end tired and unfinished."
+     ],
+     "q": "Which drawer in your home would be the easiest to start with?",
+     "c": "Pick one drawer, empty it fully and put back only what belongs there."
+    },
+    "de": {
+     "t": "Eine Schublade zum Anfangen",
+     "g": "Verstehen, warum ein kleines, machbares Startprojekt Schwung gibt.",
+     "p": [
+      "Eine einzige Schublade dauert etwa fünfzehn Minuten und zeigt echtes Ergebnis.",
+      "Etwas Kleines abzuschließen macht den nächsten Schritt leichter.",
+      "Riesige Wochenend-Aktionen enden oft müde und unfertig."
+     ],
+     "q": "Welche Schublade bei dir wäre der leichteste Einstieg?",
+     "c": "Such dir eine Schublade aus, leere sie ganz und lege nur zurück, was dorthin gehört."
+    },
+    "es": {
+     "t": "Un cajón para empezar",
+     "g": "Aprender por qué un primer proyecto pequeño y terminable da impulso.",
+     "p": [
+      "Un solo cajón lleva unos quince minutos y da un resultado real.",
+      "Terminar algo pequeño hace que el siguiente paso parezca más fácil.",
+      "Las limpiezas gigantes de fin de semana suelen acabar cansadas e inacabadas."
+     ],
+     "q": "¿Qué cajón de tu casa sería el más fácil para empezar?",
+     "c": "Elige un cajón, vacíalo por completo y devuelve solo lo que le corresponde."
+    },
+    "fr": {
+     "t": "Un tiroir pour commencer",
+     "g": "Comprendre pourquoi un petit premier projet réalisable donne de l'élan.",
+     "p": [
+      "Un seul tiroir prend environ quinze minutes et donne un vrai résultat.",
+      "Terminer quelque chose de petit rend l'étape suivante plus facile.",
+      "Les grands tris de week-end finissent souvent fatigués et inachevés."
+     ],
+     "q": "Quel tiroir de ta maison serait le plus simple pour commencer ?",
+     "c": "Choisis un tiroir, vide-le entièrement et ne remets que ce qui y a sa place."
+    },
+    "it": {
+     "t": "Un cassetto per iniziare",
+     "g": "Capire perché un primo piccolo progetto finibile dà slancio.",
+     "p": [
+      "Un solo cassetto richiede circa quindici minuti e dà un risultato concreto.",
+      "Finire qualcosa di piccolo rende il passo successivo più facile.",
+      "Le grandi pulizie del weekend spesso finiscono stanche e incompiute."
+     ],
+     "q": "Quale cassetto di casa sarebbe il più facile per cominciare?",
+     "c": "Scegli un cassetto, svuotalo del tutto e rimetti solo ciò che gli appartiene."
+    },
+    "pt": {
+     "t": "Uma gaveta para começar",
+     "g": "Perceber por que um primeiro projeto pequeno e concluível dá impulso.",
+     "p": [
+      "Uma só gaveta leva uns quinze minutos e dá um resultado real.",
+      "Terminar algo pequeno torna o passo seguinte mais fácil.",
+      "As grandes limpezas de fim de semana acabam muitas vezes cansadas e incompletas."
+     ],
+     "q": "Que gaveta da tua casa seria a mais fácil para começar?",
+     "c": "Escolhe uma gaveta, esvazia-a por completo e volta a pôr só o que lá pertence."
+    },
+    "pt_BR": {
+     "t": "Uma gaveta para começar",
+     "g": "Entender por que um primeiro projeto pequeno e possível de terminar dá impulso.",
+     "p": [
+      "Uma única gaveta leva uns quinze minutos e dá um resultado real.",
+      "Terminar algo pequeno deixa o próximo passo mais fácil.",
+      "Faxinas gigantes de fim de semana costumam acabar cansativas e incompletas."
+     ],
+     "q": "Qual gaveta da sua casa seria a mais fácil para começar?",
+     "c": "Escolha uma gaveta, esvazie por completo e devolva só o que pertence a ela."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keep, donate, recycle, trash",
+     "g": "Set up four simple boxes so every decision has a clear destination.",
+     "p": [
+      "Label four boxes or bags: keep, donate, recycle and trash.",
+      "Deciding is easier when each item has an obvious place to go.",
+      "Take donation items out of the house soon so they do not return."
+     ],
+     "q": "Which of the four boxes do you think will fill up first?",
+     "c": "Prepare four labelled boxes or bags and use them for one small area today."
+    },
+    "de": {
+     "t": "Behalten, spenden, recyceln, wegwerfen",
+     "g": "Vier einfache Kisten einrichten, damit jede Entscheidung ein klares Ziel hat.",
+     "p": [
+      "Beschrifte vier Kisten oder Tüten: behalten, spenden, recyceln, Müll.",
+      "Entscheiden fällt leichter, wenn jedes Ding einen klaren Platz bekommt.",
+      "Bring Spenden bald aus dem Haus, damit sie nicht zurückwandern."
+     ],
+     "q": "Welche der vier Kisten wird sich wohl zuerst füllen?",
+     "c": "Bereite vier beschriftete Kisten oder Tüten vor und nutze sie heute für einen kleinen Bereich."
+    },
+    "es": {
+     "t": "Conservar, donar, reciclar, tirar",
+     "g": "Preparar cuatro cajas sencillas para que cada decisión tenga un destino claro.",
+     "p": [
+      "Etiqueta cuatro cajas o bolsas: conservar, donar, reciclar y tirar.",
+      "Decidir es más fácil cuando cada objeto tiene un lugar claro adonde ir.",
+      "Saca pronto de casa lo que vas a donar para que no vuelva."
+     ],
+     "q": "¿Cuál de las cuatro cajas crees que se llenará primero?",
+     "c": "Prepara cuatro cajas o bolsas etiquetadas y úsalas hoy en una zona pequeña."
+    },
+    "fr": {
+     "t": "Garder, donner, recycler, jeter",
+     "g": "Préparer quatre boîtes simples pour que chaque décision ait une destination claire.",
+     "p": [
+      "Étiquette quatre boîtes ou sacs : garder, donner, recycler et jeter.",
+      "Décider est plus facile quand chaque objet a une destination évidente.",
+      "Sors vite les dons de la maison pour qu'ils ne reviennent pas."
+     ],
+     "q": "Laquelle des quatre boîtes va se remplir en premier, à ton avis ?",
+     "c": "Prépare quatre boîtes ou sacs étiquetés et utilise-les aujourd'hui sur un petit coin."
+    },
+    "it": {
+     "t": "Tenere, donare, riciclare, buttare",
+     "g": "Preparare quattro scatole semplici perché ogni decisione abbia una destinazione chiara.",
+     "p": [
+      "Etichetta quattro scatole o sacchi: tenere, donare, riciclare e buttare.",
+      "Decidere è più facile quando ogni oggetto ha un posto dove andare.",
+      "Porta presto fuori casa le cose da donare, così non tornano."
+     ],
+     "q": "Quale delle quattro scatole pensi si riempirà per prima?",
+     "c": "Prepara quattro scatole o sacchi etichettati e usali oggi in una piccola zona."
+    },
+    "pt": {
+     "t": "Guardar, doar, reciclar, deitar fora",
+     "g": "Preparar quatro caixas simples para que cada decisão tenha um destino claro.",
+     "p": [
+      "Etiqueta quatro caixas ou sacos: guardar, doar, reciclar e deitar fora.",
+      "Decidir é mais fácil quando cada objeto tem um sítio claro para ir.",
+      "Tira cedo de casa o que vais doar, para não voltar."
+     ],
+     "q": "Qual das quatro caixas achas que se vai encher primeiro?",
+     "c": "Prepara quatro caixas ou sacos etiquetados e usa-os hoje numa zona pequena."
+    },
+    "pt_BR": {
+     "t": "Guardar, doar, reciclar, descartar",
+     "g": "Preparar quatro caixas simples para que cada decisão tenha um destino claro.",
+     "p": [
+      "Etiquete quatro caixas ou sacos: guardar, doar, reciclar e descartar.",
+      "Decidir fica mais fácil quando cada objeto tem um destino claro.",
+      "Tire logo de casa o que vai doar para não voltar."
+     ],
+     "q": "Qual das quatro caixas você acha que vai encher primeiro?",
+     "c": "Prepare quatro caixas ou sacos etiquetados e use hoje numa área pequena."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The question that decides",
+     "g": "Use one simple question to make quick, honest decisions.",
+     "p": [
+      "Ask: do I use it, love it or need it?",
+      "If the answer is no three times, the item is probably ready to go.",
+      "Trust your first honest answer; long debates usually mean no."
+     ],
+     "q": "Which object in your home passes all three parts of the question?",
+     "c": "Ask the question about five objects on one shelf and move any no's to donate."
+    },
+    "de": {
+     "t": "Die Frage, die entscheidet",
+     "g": "Mit einer einfachen Frage schnell und ehrlich entscheiden.",
+     "p": [
+      "Frag dich: Benutze ich es, liebe ich es oder brauche ich es?",
+      "Lautet die Antwort dreimal nein, darf der Gegenstand vermutlich gehen.",
+      "Vertrau der ersten ehrlichen Antwort; langes Grübeln heißt meist nein."
+     ],
+     "q": "Welcher Gegenstand bei dir besteht alle drei Teile der Frage?",
+     "c": "Stell die Frage bei fünf Dingen eines Regals und leg alle Neins zum Spenden."
+    },
+    "es": {
+     "t": "La pregunta que decide",
+     "g": "Usar una pregunta sencilla para decidir rápido y con sinceridad.",
+     "p": [
+      "Pregúntate: ¿lo uso, lo quiero o lo necesito?",
+      "Si la respuesta es no las tres veces, probablemente esté listo para irse.",
+      "Confía en tu primera respuesta sincera; dudar mucho suele significar no."
+     ],
+     "q": "¿Qué objeto de tu casa cumple las tres partes de la pregunta?",
+     "c": "Haz la pregunta con cinco objetos de una estantería y aparta los que no para donar."
+    },
+    "fr": {
+     "t": "La question qui tranche",
+     "g": "Utiliser une question simple pour décider vite et honnêtement.",
+     "p": [
+      "Demande-toi : est-ce que je l'utilise, je l'aime ou j'en ai besoin ?",
+      "Si la réponse est non trois fois, l'objet est sans doute prêt à partir.",
+      "Fie-toi à ta première réponse honnête ; longtemps hésiter veut souvent dire non."
+     ],
+     "q": "Quel objet chez toi répond oui aux trois parties de la question ?",
+     "c": "Pose la question pour cinq objets d'une étagère et mets les non dans les dons."
+    },
+    "it": {
+     "t": "La domanda che decide",
+     "g": "Usare una domanda semplice per decidere in fretta e con onestà.",
+     "p": [
+      "Chiediti: lo uso, lo amo o ne ho bisogno?",
+      "Se la risposta è no tre volte, l'oggetto è probabilmente pronto a partire.",
+      "Fidati della prima risposta sincera; pensarci troppo di solito significa no."
+     ],
+     "q": "Quale oggetto in casa supera tutte e tre le parti della domanda?",
+     "c": "Fai la domanda per cinque oggetti di uno scaffale e metti i no tra le donazioni."
+    },
+    "pt": {
+     "t": "A pergunta que decide",
+     "g": "Usar uma pergunta simples para decidir depressa e com honestidade.",
+     "p": [
+      "Pergunta: uso, adoro ou preciso?",
+      "Se a resposta for não três vezes, o objeto provavelmente está pronto para sair.",
+      "Confia na primeira resposta honesta; pensar muito costuma significar não."
+     ],
+     "q": "Que objeto em tua casa passa as três partes da pergunta?",
+     "c": "Faz a pergunta com cinco objetos de uma prateleira e põe os nãos para doar."
+    },
+    "pt_BR": {
+     "t": "A pergunta que decide",
+     "g": "Usar uma pergunta simples para decidir rápido e com honestidade.",
+     "p": [
+      "Pergunte: eu uso, eu amo ou eu preciso?",
+      "Se a resposta for não três vezes, o objeto provavelmente está pronto para sair.",
+      "Confie na primeira resposta honesta; pensar demais costuma significar não."
+     ],
+     "q": "Que objeto da sua casa passa nas três partes da pergunta?",
+     "c": "Faça a pergunta com cinco objetos de uma prateleira e separe os nãos para doar."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Just-in-case thinking",
+     "g": "Recognise things kept for unlikely futures.",
+     "p": [
+      "Many just-in-case items are cheap or easy to borrow or replace.",
+      "Ask how likely the need is, and what is the worst that could happen.",
+      "Keep true safety items; release the rest with confidence."
+     ],
+     "q": "What is something you have kept for years just in case?",
+     "c": "Choose one just-in-case item and decide honestly whether to keep or release it."
+    },
+    "de": {
+     "t": "Das Für-alle-Fälle-Denken",
+     "g": "Dinge erkennen, die du für unwahrscheinliche Zukünfte aufhebst.",
+     "p": [
+      "Viele Für-alle-Fälle-Dinge sind günstig oder leicht zu leihen oder zu ersetzen.",
+      "Frag dich, wie wahrscheinlich der Bedarf ist und was schlimmstenfalls passiert.",
+      "Behalte echte Sicherheitsdinge; gib den Rest getrost ab."
+     ],
+     "q": "Was hebst du seit Jahren für alle Fälle auf?",
+     "c": "Wähl einen Für-alle-Fälle-Gegenstand und entscheide ehrlich, ob er bleibt oder geht."
+    },
+    "es": {
+     "t": "El pensamiento de por si acaso",
+     "g": "Reconocer las cosas que guardas para futuros poco probables.",
+     "p": [
+      "Muchos objetos de por si acaso son baratos o fáciles de pedir prestados o reponer.",
+      "Pregúntate cuán probable es necesitarlo y qué sería lo peor que pasaría.",
+      "Conserva lo de seguridad de verdad; suelta el resto con confianza."
+     ],
+     "q": "¿Qué guardas desde hace años por si acaso?",
+     "c": "Elige un objeto de por si acaso y decide con sinceridad si lo conservas o lo sueltas."
+    },
+    "fr": {
+     "t": "La pensée du au cas où",
+     "g": "Reconnaître les choses gardées pour des futurs peu probables.",
+     "p": [
+      "Beaucoup d'objets au cas où sont peu chers ou faciles à emprunter ou remplacer.",
+      "Demande-toi quelle est la probabilité du besoin et le pire qui pourrait arriver.",
+      "Garde les vrais objets de sécurité ; laisse partir le reste en confiance."
+     ],
+     "q": "Que gardes-tu depuis des années au cas où ?",
+     "c": "Choisis un objet gardé au cas où et décide honnêtement de le garder ou de le laisser partir."
+    },
+    "it": {
+     "t": "Il pensiero del non si sa mai",
+     "g": "Riconoscere le cose tenute per futuri improbabili.",
+     "p": [
+      "Molti oggetti del non si sa mai sono economici o facili da prendere in prestito o sostituire.",
+      "Chiediti quanto è probabile il bisogno e quale sarebbe il peggio che può accadere.",
+      "Tieni gli oggetti di vera sicurezza; lascia andare il resto con serenità."
+     ],
+     "q": "Cosa conservi da anni per non si sa mai?",
+     "c": "Scegli un oggetto del non si sa mai e decidi con onestà se tenerlo o lasciarlo andare."
+    },
+    "pt": {
+     "t": "O pensamento do por via das dúvidas",
+     "g": "Reconhecer as coisas guardadas para futuros pouco prováveis.",
+     "p": [
+      "Muitos objetos guardados por via das dúvidas são baratos ou fáceis de pedir emprestados ou repor.",
+      "Pergunta quão provável é precisares e qual seria o pior que podia acontecer.",
+      "Guarda o que é mesmo de segurança; larga o resto com confiança."
+     ],
+     "q": "O que guardas há anos por via das dúvidas?",
+     "c": "Escolhe um objeto guardado por via das dúvidas e decide com honestidade se fica ou sai."
+    },
+    "pt_BR": {
+     "t": "O pensamento do vai que precisa",
+     "g": "Reconhecer as coisas guardadas para futuros pouco prováveis.",
+     "p": [
+      "Muitos objetos do vai que precisa são baratos ou fáceis de emprestar ou repor.",
+      "Pergunte quão provável é precisar e qual seria o pior que poderia acontecer.",
+      "Guarde o que é de segurança de verdade; solte o resto com confiança."
+     ],
+     "q": "O que você guarda há anos só para o caso de precisar?",
+     "c": "Escolha um objeto do vai que precisa e decida com honestidade se fica ou sai."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Letting go of guilt",
+     "g": "See that guilt about past spending is no reason to keep unused things.",
+     "p": [
+      "The money is already spent; keeping the item does not bring it back.",
+      "A thing sitting unused still costs space and attention.",
+      "Passing it on lets someone else enjoy it, which is a good outcome."
+     ],
+     "q": "Is there an item you keep mainly because it felt like a waste to let go?",
+     "c": "Pick one guilt item, thank it for its lesson and place it in the donate box."
+    },
+    "de": {
+     "t": "Schuldgefühle loslassen",
+     "g": "Erkennen, dass Schuldgefühle über Ausgegebenes kein Grund zum Behalten sind.",
+     "p": [
+      "Das Geld ist ausgegeben; Behalten bringt es nicht zurück.",
+      "Ein ungenutztes Ding kostet trotzdem Platz und Aufmerksamkeit.",
+      "Weitergeben lässt jemand anderen Freude daran haben, ein gutes Ergebnis."
+     ],
+     "q": "Gibt es etwas, das du nur behältst, weil Weggeben sich verschwendet anfühlt?",
+     "c": "Such ein Schuldgefühl-Ding aus, danke ihm für die Lektion und leg es zum Spenden."
+    },
+    "es": {
+     "t": "Soltar la culpa",
+     "g": "Ver que sentir culpa por gastos pasados no es razón para guardar lo que no usas.",
+     "p": [
+      "El dinero ya está gastado; quedarte con el objeto no lo devuelve.",
+      "Algo sin usar sigue costando espacio y atención.",
+      "Pasarlo a otra persona le permite disfrutarlo, y eso es un buen final."
+     ],
+     "q": "¿Hay algo que guardas sobre todo porque soltarlo parece un desperdicio?",
+     "c": "Elige un objeto de culpa, agradécele su lección y ponlo en la caja de donar."
+    },
+    "fr": {
+     "t": "Se libérer de la culpabilité",
+     "g": "Voir que culpabiliser une dépense passée n'est pas une raison de garder l'inutilisé.",
+     "p": [
+      "L'argent est déjà dépensé ; garder l'objet ne le fait pas revenir.",
+      "Une chose inutilisée coûte quand même de la place et de l'attention.",
+      "La transmettre permet à quelqu'un d'autre d'en profiter, c'est une belle issue."
+     ],
+     "q": "Y a-t-il un objet que tu gardes surtout par peur du gaspillage ?",
+     "c": "Choisis un objet culpabilisant, remercie-le de sa leçon et mets-le dans la boîte des dons."
+    },
+    "it": {
+     "t": "Lasciar andare il senso di colpa",
+     "g": "Capire che il senso di colpa per una spesa passata non è un motivo per tenere ciò che non usi.",
+     "p": [
+      "Il denaro è già speso; tenere l'oggetto non lo restituisce.",
+      "Una cosa inutilizzata costa comunque spazio e attenzione.",
+      "Passarla a qualcuno gli permette di goderne, un ottimo risultato."
+     ],
+     "q": "C'è un oggetto che tieni soprattutto perché separartene sembra uno spreco?",
+     "c": "Scegli un oggetto del senso di colpa, ringrazialo per la lezione e mettilo tra le donazioni."
+    },
+    "pt": {
+     "t": "Largar a culpa",
+     "g": "Perceber que sentir culpa por gastos passados não é razão para guardar o que não usas.",
+     "p": [
+      "O dinheiro já foi gasto; ficar com o objeto não o devolve.",
+      "Uma coisa por usar continua a custar espaço e atenção.",
+      "Passá-la a outra pessoa permite que a desfrute, e isso é um bom fim."
+     ],
+     "q": "Há algo que guardas sobretudo porque largar parece um desperdício?",
+     "c": "Escolhe um objeto de culpa, agradece-lhe a lição e põe-no na caixa de doar."
+    },
+    "pt_BR": {
+     "t": "Soltar a culpa",
+     "g": "Perceber que sentir culpa por gastos passados não é motivo para guardar o que você não usa.",
+     "p": [
+      "O dinheiro já foi gasto; ficar com o objeto não traz ele de volta.",
+      "Algo sem uso continua custando espaço e atenção.",
+      "Passar adiante permite que outra pessoa aproveite, e isso é um bom fim."
+     ],
+     "q": "Tem algo que você guarda principalmente porque soltar parece desperdício?",
+     "c": "Escolha um objeto da culpa, agradeça pela lição e coloque na caixa de doação."
+    }
+   }
+  }
+ ]
+}

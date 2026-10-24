@@ -1,0 +1,835 @@
+{
+"topic": "entrepreneurship",
+"lessons": [
+{
+"d": 41,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Products versus services",
+"g": "See how selling things differs from selling time, skills or experiences.",
+"p": [
+"Products are things you make and hand over; services are help or skills delivered.",
+"Products can be stocked and repeated; services depend on people's time.",
+"Many businesses mix both, like a shop that also offers repairs."
+],
+"q": "Would your idea be more of a product, a service or a mix?",
+"c": "Write how your idea would look as a product and as a service."
+},
+"de": {
+"t": "Produkte oder Dienstleistungen",
+"g": "Sieh, wie sich Dinge verkaufen von Zeit, Können oder Erlebnissen unterscheidet.",
+"p": [
+"Produkte sind Dinge, die du herstellst und übergibst; Dienstleistungen sind Hilfe oder Können.",
+"Produkte lassen sich lagern und wiederholen; Dienstleistungen hängen von Zeit ab.",
+"Viele mischen beides, wie ein Laden mit Reparaturservice."
+],
+"q": "Wäre deine Idee eher Produkt, Dienstleistung oder eine Mischung?",
+"c": "Schreib, wie deine Idee als Produkt und als Dienstleistung aussähe."
+},
+"es": {
+"t": "Productos frente a servicios",
+"g": "Mira cómo vender cosas difiere de vender tiempo, habilidades o experiencias.",
+"p": [
+"Los productos son cosas que haces y entregas; los servicios son ayuda o habilidades prestadas.",
+"Los productos se almacenan y repiten; los servicios dependen del tiempo de las personas.",
+"Muchos negocios combinan ambos, como una tienda que también repara."
+],
+"q": "¿Tu idea sería más producto, servicio o una mezcla?",
+"c": "Escribe cómo sería tu idea como producto y como servicio."
+},
+"fr": {
+"t": "Produits ou services",
+"g": "Vois en quoi vendre des objets diffère de vendre du temps, des compétences ou des expériences.",
+"p": [
+"Les produits sont des choses que tu fabriques et remets; les services sont une aide ou un savoir-faire.",
+"Les produits se stockent et se répètent; les services dépendent du temps des gens.",
+"Beaucoup mêlent les deux, comme un magasin qui répare aussi."
+],
+"q": "Ton idée serait-elle plutôt un produit, un service ou un mélange ?",
+"c": "Écris à quoi ressemblerait ton idée en produit puis en service."
+},
+"it": {
+"t": "Prodotti e servizi",
+"g": "Scopri come vendere cose differisce dal vendere tempo, competenze o esperienze.",
+"p": [
+"I prodotti sono cose che crei e consegni; i servizi sono aiuto o competenze offerte.",
+"I prodotti si stoccano e si ripetono; i servizi dipendono dal tempo delle persone.",
+"Molte imprese uniscono entrambi, come un negozio che offre anche riparazioni."
+],
+"q": "La tua idea sarebbe più un prodotto, un servizio o un mix?",
+"c": "Scrivi come sarebbe la tua idea come prodotto e come servizio."
+},
+"pt": {
+"t": "Produtos versus serviços",
+"g": "Vê como vender coisas difere de vender tempo, competências ou experiências.",
+"p": [
+"Produtos são coisas que fazes e entregas; serviços são ajuda ou competências prestadas.",
+"Produtos armazenam-se e repetem-se; serviços dependem do tempo das pessoas.",
+"Muitos negócios misturam ambos, como uma loja que também repara."
+],
+"q": "A tua ideia seria mais produto, serviço ou uma mistura?",
+"c": "Escreve como seria a tua ideia como produto e como serviço."
+},
+"pt_BR": {
+"t": "Produtos versus serviços",
+"g": "Veja como vender coisas difere de vender tempo, habilidades ou experiências.",
+"p": [
+"Produtos são coisas que você faz e entrega; serviços são ajuda ou habilidades prestadas.",
+"Produtos se estocam e se repetem; serviços dependem do tempo das pessoas.",
+"Muitos negócios misturam os dois, como uma loja que também conserta."
+],
+"q": "A sua ideia seria mais produto, serviço ou uma mistura?",
+"c": "Escreva como seria a sua ideia como produto e como serviço."
+}
+}
+},
+{
+"d": 42,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Physical, digital or both",
+"g": "Compare businesses built on atoms, on bits, or on a mix of the two.",
+"p": [
+"Physical businesses need materials, space and delivery; digital ones need software and content.",
+"Digital copies cost little to repeat, but standing out online can be hard.",
+"Hybrid models, like a book shop with a website, combine strengths."
+],
+"q": "Do you feel more at home with physical things or digital tools?",
+"c": "List one physical, one digital and one hybrid version of your idea."
+},
+"de": {
+"t": "Physisch, digital oder beides",
+"g": "Vergleiche Unternehmen aus Atomen, aus Bits oder aus einer Mischung.",
+"p": [
+"Physische brauchen Material, Platz und Lieferung; digitale brauchen Software und Inhalte.",
+"Digitale Kopien sind billig, doch online aufzufallen kann schwer sein.",
+"Hybride Modelle wie eine Buchhandlung mit Website vereinen Stärken."
+],
+"q": "Fühlst du dich bei physischen Dingen oder digitalen Werkzeugen wohler?",
+"c": "Liste je eine physische, digitale und hybride Version deiner Idee."
+},
+"es": {
+"t": "Físico, digital o ambos",
+"g": "Compara negocios hechos de átomos, de bits o de una mezcla.",
+"p": [
+"Los físicos necesitan materiales, espacio y entrega; los digitales, software y contenido.",
+"Copiar lo digital cuesta poco, pero destacar en línea puede ser difícil.",
+"Los modelos híbridos, como una librería con web, combinan fortalezas."
+],
+"q": "¿Te sientes más cómodo con cosas físicas o con herramientas digitales?",
+"c": "Lista una versión física, una digital y una híbrida de tu idea."
+},
+"fr": {
+"t": "Physique, numérique ou les deux",
+"g": "Compare les entreprises faites d'atomes, de bits ou d'un mélange.",
+"p": [
+"Les physiques demandent matériaux, espace et livraison; les numériques, logiciels et contenus.",
+"Copier du numérique coûte peu, mais se distinguer en ligne peut être difficile.",
+"Les modèles hybrides, comme une librairie avec site, combinent les forces."
+],
+"q": "Es-tu plus à l'aise avec le physique ou les outils numériques ?",
+"c": "Liste une version physique, une numérique et une hybride de ton idée."
+},
+"it": {
+"t": "Fisico, digitale o entrambi",
+"g": "Confronta imprese fatte di atomi, di bit o di un mix.",
+"p": [
+"Le fisiche richiedono materiali, spazio e consegna; le digitali software e contenuti.",
+"Copiare il digitale costa poco, ma distinguersi online può essere difficile.",
+"I modelli ibridi, come una libreria con sito, uniscono i punti di forza."
+],
+"q": "Ti senti più a tuo agio con le cose fisiche o con gli strumenti digitali?",
+"c": "Elenca una versione fisica, una digitale e una ibrida della tua idea."
+},
+"pt": {
+"t": "Físico, digital ou ambos",
+"g": "Compara negócios feitos de átomos, de bits ou de uma mistura.",
+"p": [
+"Os físicos precisam de materiais, espaço e entrega; os digitais, de software e conteúdo.",
+"Copiar o digital custa pouco, mas destacar-se online pode ser difícil.",
+"Os modelos híbridos, como uma livraria com site, combinam pontos fortes."
+],
+"q": "Sentes-te mais à vontade com coisas físicas ou ferramentas digitais?",
+"c": "Lista uma versão física, uma digital e uma híbrida da tua ideia."
+},
+"pt_BR": {
+"t": "Físico, digital ou ambos",
+"g": "Compare negócios feitos de átomos, de bits ou de uma mistura.",
+"p": [
+"Os físicos precisam de materiais, espaço e entrega; os digitais, de software e conteúdo.",
+"Copiar o digital custa pouco, mas se destacar online pode ser difícil.",
+"Modelos híbridos, como uma livraria com site, combinam pontos fortes."
+],
+"q": "Você se sente mais à vontade com coisas físicas ou ferramentas digitais?",
+"c": "Liste uma versão física, uma digital e uma híbrida da sua ideia."
+}
+}
+},
+{
+"d": 43,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Subscription models",
+"g": "Learn why recurring payments appeal to customers and businesses alike.",
+"p": [
+"A subscription gives ongoing access or deliveries for a regular fee.",
+"Customers like convenience; businesses like steady, predictable relationships.",
+"It only works when the value keeps showing up; people leave if it fades."
+],
+"q": "Which subscription do you use that you would miss if it ended?",
+"c": "Imagine a subscription version of your idea and name what arrives each period."
+},
+"de": {
+"t": "Abo-Modelle",
+"g": "Lerne, warum wiederkehrende Zahlungen Kunden und Unternehmen ansprechen.",
+"p": [
+"Ein Abo bietet laufenden Zugang oder Lieferungen für eine regelmäßige Gebühr.",
+"Kunden mögen Bequemlichkeit; Unternehmen mögen stetige, planbare Beziehungen.",
+"Es funktioniert nur, wenn der Nutzen bleibt; sonst kündigen Menschen."
+],
+"q": "Welches Abo nutzt du, das dir fehlen würde, wenn es endete?",
+"c": "Stell dir ein Abo deiner Idee vor und nenne, was jede Periode ankommt."
+},
+"es": {
+"t": "Modelos de suscripción",
+"g": "Aprende por qué los pagos recurrentes atraen a clientes y negocios.",
+"p": [
+"Una suscripción da acceso o entregas continuas a cambio de una cuota regular.",
+"Al cliente le gusta la comodidad; al negocio, la relación estable y previsible.",
+"Solo funciona si el valor sigue llegando; si se apaga, la gente se va."
+],
+"q": "¿Qué suscripción usas que echarías de menos si terminara?",
+"c": "Imagina una versión por suscripción de tu idea y nombra qué llega cada periodo."
+},
+"fr": {
+"t": "Les modèles d'abonnement",
+"g": "Découvre pourquoi les paiements récurrents séduisent clients et entreprises.",
+"p": [
+"Un abonnement donne un accès ou des livraisons continus pour un tarif régulier.",
+"Le client aime la commodité; l'entreprise, une relation stable et prévisible.",
+"Ça ne marche que si la valeur continue d'arriver; sinon les gens partent."
+],
+"q": "Quel abonnement utilises-tu et regretterais-tu s'il s'arrêtait ?",
+"c": "Imagine une version par abonnement de ton idée et ce qui arrive à chaque période."
+},
+"it": {
+"t": "Modelli in abbonamento",
+"g": "Scopri perché i pagamenti ricorrenti piacciono a clienti e imprese.",
+"p": [
+"Un abbonamento dà accesso o consegne continue in cambio di una quota regolare.",
+"Ai clienti piace la comodità; alle imprese il rapporto stabile e prevedibile.",
+"Funziona solo se il valore continua ad arrivare; altrimenti le persone se ne vanno."
+],
+"q": "Quale abbonamento usi e ti mancherebbe se finisse?",
+"c": "Immagina una versione in abbonamento della tua idea e cosa arriva a ogni periodo."
+},
+"pt": {
+"t": "Modelos de subscrição",
+"g": "Aprende porque os pagamentos recorrentes atraem clientes e negócios.",
+"p": [
+"Uma subscrição dá acesso ou entregas contínuas por uma quota regular.",
+"Os clientes gostam da comodidade; os negócios, da relação estável e previsível.",
+"Só funciona se o valor continuar a chegar; se esmorece, as pessoas saem."
+],
+"q": "Que subscrição usas e farias falta se acabasse?",
+"c": "Imagina uma versão por subscrição da tua ideia e o que chega a cada período."
+},
+"pt_BR": {
+"t": "Modelos de assinatura",
+"g": "Aprenda por que pagamentos recorrentes atraem clientes e negócios.",
+"p": [
+"Uma assinatura dá acesso ou entregas contínuas por uma mensalidade regular.",
+"Clientes gostam da comodidade; negócios, da relação estável e previsível.",
+"Só funciona se o valor continuar chegando; se enfraquece, as pessoas saem."
+],
+"q": "Que assinatura você usa e sentiria falta se acabasse?",
+"c": "Imagine uma versão por assinatura da sua ideia e o que chega a cada período."
+}
+}
+},
+{
+"d": 44,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Marketplace models",
+"g": "Meet businesses that connect buyers and sellers instead of selling themselves.",
+"p": [
+"A marketplace brings two sides together and helps them trade safely.",
+"It earns by helping others succeed, often through a small fee per match.",
+"The hard start: you need both sides, so many begin with one niche or city."
+],
+"q": "Which marketplace have you used as a buyer or a seller?",
+"c": "Sketch a tiny marketplace for your area and say who the two sides are."
+},
+"de": {
+"t": "Marktplatz-Modelle",
+"g": "Lerne Unternehmen kennen, die Käufer und Verkäufer verbinden, statt selbst zu verkaufen.",
+"p": [
+"Ein Marktplatz bringt zwei Seiten zusammen und hilft ihnen, sicher zu handeln.",
+"Er verdient, indem andere Erfolg haben, oft durch eine kleine Gebühr pro Treffer.",
+"Der schwere Start: Du brauchst beide Seiten, daher beginnen viele mit einer Nische."
+],
+"q": "Welchen Marktplatz hast du schon als Käufer oder Verkäufer genutzt?",
+"c": "Skizziere einen kleinen Marktplatz für deine Gegend und nenne die zwei Seiten."
+},
+"es": {
+"t": "Modelos de mercado",
+"g": "Conoce negocios que conectan compradores y vendedores en vez de vender ellos mismos.",
+"p": [
+"Un mercado reúne a dos partes y les ayuda a comerciar con seguridad.",
+"Gana ayudando a otros a tener éxito, a menudo con una pequeña comisión por cada acuerdo.",
+"El arranque es difícil: necesitas a ambas partes, así que muchos empiezan en un nicho."
+],
+"q": "¿Qué mercado en línea has usado como comprador o vendedor?",
+"c": "Esboza un pequeño mercado para tu zona y di quiénes son las dos partes."
+},
+"fr": {
+"t": "Modèles de places de marché",
+"g": "Découvre les entreprises qui relient acheteurs et vendeurs au lieu de vendre elles-mêmes.",
+"p": [
+"Une place de marché réunit deux côtés et les aide à échanger en confiance.",
+"Elle gagne en aidant les autres à réussir, souvent par une petite commission.",
+"Le démarrage est dur : il faut les deux côtés, donc beaucoup commencent sur une niche."
+],
+"q": "Quelle place de marché as-tu déjà utilisée en acheteur ou vendeur ?",
+"c": "Esquisse une petite place de marché pour ta région et nomme les deux côtés."
+},
+"it": {
+"t": "Modelli marketplace",
+"g": "Conosci imprese che collegano acquirenti e venditori invece di vendere in prima persona.",
+"p": [
+"Un marketplace unisce due lati e li aiuta a scambiare in sicurezza.",
+"Guadagna aiutando gli altri ad avere successo, spesso con una piccola commissione.",
+"L'avvio è difficile: servono entrambi i lati, perciò molti partono da una nicchia."
+],
+"q": "Quale marketplace hai usato come acquirente o venditore?",
+"c": "Abbozza un piccolo marketplace per la tua zona e di' chi sono i due lati."
+},
+"pt": {
+"t": "Modelos de marketplace",
+"g": "Conhece negócios que ligam compradores e vendedores em vez de venderem eles próprios.",
+"p": [
+"Um marketplace junta dois lados e ajuda-os a negociar com segurança.",
+"Ganha ajudando os outros a ter sucesso, muitas vezes com uma pequena comissão.",
+"O arranque é difícil: precisas dos dois lados, por isso muitos começam num nicho."
+],
+"q": "Que marketplace já usaste como comprador ou vendedor?",
+"c": "Esboça um pequeno marketplace para a tua zona e diz quem são os dois lados."
+},
+"pt_BR": {
+"t": "Modelos de marketplace",
+"g": "Conheça negócios que ligam compradores e vendedores em vez de venderem eles próprios.",
+"p": [
+"Um marketplace junta dois lados e os ajuda a negociar com segurança.",
+"Ganha ajudando os outros a ter sucesso, muitas vezes com uma pequena comissão.",
+"O começo é difícil: você precisa dos dois lados, por isso muitos começam num nicho."
+],
+"q": "Que marketplace você já usou como comprador ou vendedor?",
+"c": "Esboce um pequeno marketplace para a sua região e diga quem são os dois lados."
+}
+}
+},
+{
+"d": 45,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Freemium explained",
+"g": "Offer a free basic version and a paid upgrade, and know when it fits.",
+"p": [
+"Freemium gives everyone a free basic level and sells extras to some.",
+"It works when free users spread the word and a fraction love the extras.",
+"It can fail if free is enough for everyone or free users cost too much."
+],
+"q": "Have you ever upgraded from a free version? What convinced you?",
+"c": "Decide what your idea would give free and what extra would be worth paying for."
+},
+"de": {
+"t": "Freemium erklärt",
+"g": "Biete eine kostenlose Basisversion und ein bezahltes Upgrade und erkenne, wann es passt.",
+"p": [
+"Freemium gibt allen eine freie Basisstufe und verkauft Extras an einige.",
+"Es klappt, wenn freie Nutzer Werbung machen und ein Teil die Extras liebt.",
+"Es kann scheitern, wenn gratis reicht oder freie Nutzer zu viel kosten."
+],
+"q": "Hast du schon mal von einer Gratisversion upgegradet? Was überzeugte dich?",
+"c": "Entscheide, was deine Idee gratis bietet und welches Extra Geld wert wäre."
+},
+"es": {
+"t": "Freemium explicado",
+"g": "Ofrece una versión básica gratis y una mejora de pago, y sabe cuándo encaja.",
+"p": [
+"Freemium da a todos un nivel básico gratis y vende extras a algunos.",
+"Funciona si los usuarios gratis difunden y una parte adora los extras.",
+"Puede fallar si lo gratis basta a todos o si los usuarios gratis cuestan demasiado."
+],
+"q": "¿Has pasado alguna vez de una versión gratis a una de pago? ¿Qué te convenció?",
+"c": "Decide qué daría gratis tu idea y qué extra valdría la pena pagar."
+},
+"fr": {
+"t": "Le freemium expliqué",
+"g": "Propose une version de base gratuite et une mise à niveau payante, et sache quand ça convient.",
+"p": [
+"Le freemium offre à tous un niveau de base gratuit et vend des options à certains.",
+"Ça marche si les utilisateurs gratuits font du bouche-à-oreille et qu'une partie aime les options.",
+"Ça peut échouer si le gratuit suffit à tous ou si les gratuits coûtent trop cher."
+],
+"q": "As-tu déjà passé d'une version gratuite à une payante ? Qu'est-ce qui t'a convaincu ?",
+"c": "Décide ce que ton idée offrirait gratuitement et quel plus vaudrait d'être payé."
+},
+"it": {
+"t": "Il freemium spiegato",
+"g": "Offri una versione base gratuita e un upgrade a pagamento, e sappi quando funziona.",
+"p": [
+"Il freemium dà a tutti un livello base gratis e vende extra ad alcuni.",
+"Funziona se gli utenti gratuiti passano parola e una parte ama gli extra.",
+"Può fallire se il gratis basta a tutti o se gli utenti gratuiti costano troppo."
+],
+"q": "Sei mai passato da una versione gratuita a una a pagamento? Cosa ti ha convinto?",
+"c": "Decidi cosa darebbe gratis la tua idea e quale extra varrebbe la pena pagare."
+},
+"pt": {
+"t": "Freemium explicado",
+"g": "Oferece uma versão básica grátis e uma melhoria paga, e sabe quando encaixa.",
+"p": [
+"O freemium dá a todos um nível básico grátis e vende extras a alguns.",
+"Funciona se os utilizadores grátis espalham a palavra e uma parte adora os extras.",
+"Pode falhar se o grátis chegar a todos ou se os utilizadores grátis custarem demasiado."
+],
+"q": "Já passaste de uma versão grátis para uma paga? O que te convenceu?",
+"c": "Decide o que a tua ideia daria grátis e que extra valeria a pena pagar."
+},
+"pt_BR": {
+"t": "Freemium explicado",
+"g": "Ofereça uma versão básica grátis e um upgrade pago, e saiba quando se encaixa.",
+"p": [
+"O freemium dá a todos um nível básico grátis e vende extras a alguns.",
+"Funciona se os usuários grátis espalham a palavra e uma parte adora os extras.",
+"Pode falhar se o grátis bastar para todos ou se os usuários grátis custarem demais."
+],
+"q": "Você já passou de uma versão grátis para uma paga? O que convenceu você?",
+"c": "Decida o que a sua ideia daria de graça e que extra valeria a pena pagar."
+}
+}
+},
+{
+"d": 46,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Local business models",
+"g": "See how cafes, salons and repair shops build a loyal neighbourhood following.",
+"p": [
+"Local businesses win through trust, convenience and a familiar face.",
+"Regulars, word of mouth and a pleasant place matter more than ads.",
+"Location, opening hours and small personal touches become the product."
+],
+"q": "What makes you return to a local place again and again?",
+"c": "Describe a local business you could start and the small touch people would remember."
+},
+"de": {
+"t": "Lokale Geschäftsmodelle",
+"g": "Sieh, wie Cafés, Salons und Reparaturläden eine treue Nachbarschaft gewinnen.",
+"p": [
+"Lokale Betriebe gewinnen durch Vertrauen, Bequemlichkeit und ein vertrautes Gesicht.",
+"Stammgäste, Mundpropaganda und ein angenehmer Ort zählen mehr als Werbung.",
+"Lage, Öffnungszeiten und kleine persönliche Gesten werden zum Produkt."
+],
+"q": "Was bringt dich immer wieder zu einem lokalen Ort zurück?",
+"c": "Beschreibe ein lokales Geschäft, das du gründen könntest, und die Geste, an die man sich erinnert."
+},
+"es": {
+"t": "Modelos de negocio local",
+"g": "Mira cómo cafeterías, peluquerías y talleres ganan seguidores fieles en el barrio.",
+"p": [
+"Los negocios locales ganan con confianza, comodidad y una cara conocida.",
+"Los clientes habituales, el boca a boca y un lugar agradable pesan más que la publicidad.",
+"La ubicación, el horario y los pequeños detalles personales se vuelven el producto."
+],
+"q": "¿Qué te hace volver una y otra vez a un lugar local?",
+"c": "Describe un negocio local que podrías abrir y el detalle que la gente recordaría."
+},
+"fr": {
+"t": "Modèles d'entreprises locales",
+"g": "Vois comment cafés, salons et ateliers de réparation fidélisent un quartier.",
+"p": [
+"Les commerces locaux gagnent par la confiance, la commodité et un visage familier.",
+"Habitués, bouche-à-oreille et lieu agréable comptent plus que la publicité.",
+"L'emplacement, les horaires et les petites attentions deviennent le produit."
+],
+"q": "Qu'est-ce qui te fait revenir sans cesse dans un lieu de proximité ?",
+"c": "Décris un commerce local que tu pourrais ouvrir et le petit geste dont on se souviendrait."
+},
+"it": {
+"t": "Modelli di attività locali",
+"g": "Scopri come bar, saloni e officine di riparazione conquistano un quartiere fedele.",
+"p": [
+"Le attività locali vincono con fiducia, comodità e un volto familiare.",
+"Clienti abituali, passaparola e un posto piacevole contano più della pubblicità.",
+"Posizione, orari e piccoli tocchi personali diventano il prodotto."
+],
+"q": "Cosa ti fa tornare sempre in un locale di quartiere?",
+"c": "Descrivi un'attività locale che potresti avviare e il tocco che la gente ricorderebbe."
+},
+"pt": {
+"t": "Modelos de negócio local",
+"g": "Vê como cafés, cabeleireiros e oficinas de reparação criam um bairro fiel.",
+"p": [
+"Os negócios locais ganham com confiança, comodidade e uma cara conhecida.",
+"Clientes habituais, passa-palavra e um sítio agradável pesam mais do que anúncios.",
+"A localização, o horário e pequenos toques pessoais tornam-se o produto."
+],
+"q": "O que te faz voltar vezes sem conta a um sítio local?",
+"c": "Descreve um negócio local que podias abrir e o pequeno toque que ficaria na memória."
+},
+"pt_BR": {
+"t": "Modelos de negócio local",
+"g": "Veja como cafés, salões e oficinas de reparo criam um bairro fiel.",
+"p": [
+"Negócios locais ganham com confiança, comodidade e um rosto conhecido.",
+"Clientes fiéis, boca a boca e um lugar agradável pesam mais do que anúncios.",
+"Localização, horário e pequenos toques pessoais viram o produto."
+],
+"q": "O que faz você voltar sempre a um lugar do bairro?",
+"c": "Descreva um negócio local que você poderia abrir e o toque que ficaria na memória."
+}
+}
+},
+{
+"d": 47,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Social enterprises",
+"g": "Meet businesses that aim to solve a social or environmental problem sustainably.",
+"p": [
+"A social enterprise sells something useful and reinvests to serve its mission.",
+"Impact and income work together: earning keeps the good work going.",
+"Measure both: how many people helped and whether the model sustains itself."
+],
+"q": "Which social or environmental problem would you most like to help solve?",
+"c": "Pick a problem you care about and sketch how a small business could serve it."
+},
+"de": {
+"t": "Sozialunternehmen",
+"g": "Lerne Unternehmen kennen, die ein soziales oder ökologisches Problem nachhaltig lösen wollen.",
+"p": [
+"Ein Sozialunternehmen verkauft Nützliches und investiert in seine Mission.",
+"Wirkung und Einkommen gehören zusammen: Verdienen hält die gute Arbeit am Laufen.",
+"Miss beides: wie vielen geholfen wurde und ob sich das Modell selbst trägt."
+],
+"q": "Welches soziale oder ökologische Problem würdest du am liebsten lösen helfen?",
+"c": "Wähle ein Problem, das dir wichtig ist, und skizziere, wie ein kleines Unternehmen helfen könnte."
+},
+"es": {
+"t": "Empresas sociales",
+"g": "Conoce negocios que buscan resolver de forma sostenible un problema social o ambiental.",
+"p": [
+"Una empresa social vende algo útil y reinvierte para servir a su misión.",
+"Impacto e ingresos van juntos: ganar mantiene vivo el buen trabajo.",
+"Mide ambas cosas: a cuántas personas ayudas y si el modelo se sostiene solo."
+],
+"q": "¿Qué problema social o ambiental te gustaría ayudar a resolver?",
+"c": "Elige un problema que te importe y esboza cómo un pequeño negocio podría atenderlo."
+},
+"fr": {
+"t": "Entreprises sociales",
+"g": "Découvre des entreprises qui veulent résoudre durablement un problème social ou environnemental.",
+"p": [
+"Une entreprise sociale vend quelque chose d'utile et réinvestit pour servir sa mission.",
+"Impact et revenus vont ensemble : gagner permet de poursuivre le bien.",
+"Mesure les deux : combien de personnes aidées et si le modèle se suffit."
+],
+"q": "Quel problème social ou environnemental aimerais-tu aider à résoudre ?",
+"c": "Choisis un problème qui te tient à cœur et esquisse comment une petite entreprise y répondrait."
+},
+"it": {
+"t": "Imprese sociali",
+"g": "Conosci imprese che vogliono risolvere in modo sostenibile un problema sociale o ambientale.",
+"p": [
+"Un'impresa sociale vende qualcosa di utile e reinveste per servire la sua missione.",
+"Impatto e reddito vanno insieme: guadagnare mantiene vivo il lavoro buono.",
+"Misura entrambi: quante persone aiuti e se il modello si regge da solo."
+],
+"q": "Quale problema sociale o ambientale vorresti aiutare a risolvere?",
+"c": "Scegli un problema a cui tieni e abbozza come una piccola impresa potrebbe affrontarlo."
+},
+"pt": {
+"t": "Empresas sociais",
+"g": "Conhece negócios que procuram resolver de forma sustentável um problema social ou ambiental.",
+"p": [
+"Uma empresa social vende algo útil e reinveste para servir a sua missão.",
+"Impacto e rendimento andam juntos: ganhar mantém vivo o bom trabalho.",
+"Mede ambos: quantas pessoas ajudas e se o modelo se sustenta sozinho."
+],
+"q": "Que problema social ou ambiental gostavas de ajudar a resolver?",
+"c": "Escolhe um problema que te importe e esboça como um pequeno negócio o poderia servir."
+},
+"pt_BR": {
+"t": "Empresas sociais",
+"g": "Conheça negócios que buscam resolver de forma sustentável um problema social ou ambiental.",
+"p": [
+"Uma empresa social vende algo útil e reinveste para servir à sua missão.",
+"Impacto e renda andam juntos: ganhar mantém vivo o bom trabalho.",
+"Meça ambos: quantas pessoas você ajuda e se o modelo se sustenta sozinho."
+],
+"q": "Que problema social ou ambiental você gostaria de ajudar a resolver?",
+"c": "Escolha um problema que importa para você e esboce como um pequeno negócio poderia atendê-lo."
+}
+}
+},
+{
+"d": 48,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Franchises in general",
+"g": "Learn how franchising works as an idea and how it differs from starting fresh.",
+"p": [
+"A franchise lets you run a business under an established brand and method.",
+"You get a proven system and support; in return you follow rules and share income.",
+"Starting fresh gives freedom but means building everything yourself."
+],
+"q": "Do you prefer a proven path or building your own from scratch?",
+"c": "List two pros and two cons of a proven system versus starting from zero."
+},
+"de": {
+"t": "Franchise allgemein",
+"g": "Lerne, wie Franchising als Idee funktioniert und sich vom Neustart unterscheidet.",
+"p": [
+"Ein Franchise erlaubt, ein Geschäft unter einer etablierten Marke und Methode zu führen.",
+"Du bekommst ein erprobtes System und Hilfe; dafür folgst du Regeln und teilst Einnahmen.",
+"Ein Neustart gibt Freiheit, heißt aber, alles selbst aufzubauen."
+],
+"q": "Magst du einen bewährten Weg oder lieber alles von null selbst bauen?",
+"c": "Liste je zwei Vor- und Nachteile von erprobtem System und Start bei null."
+},
+"es": {
+"t": "Franquicias en general",
+"g": "Aprende cómo funciona una franquicia como idea y en qué se diferencia de empezar de cero.",
+"p": [
+"Una franquicia permite dirigir un negocio bajo una marca y un método consolidados.",
+"Recibes un sistema probado y apoyo; a cambio sigues reglas y compartes ingresos.",
+"Empezar de cero da libertad, pero implica construirlo todo tú mismo."
+],
+"q": "¿Prefieres un camino probado o construir el tuyo desde cero?",
+"c": "Lista dos ventajas y dos desventajas de un sistema probado frente a empezar de cero."
+},
+"fr": {
+"t": "Les franchises en général",
+"g": "Comprends comment fonctionne la franchise comme idée et ce qui la distingue d'un départ de zéro.",
+"p": [
+"Une franchise permet d'exploiter un commerce sous une marque et une méthode établies.",
+"Tu reçois un système éprouvé et du soutien; en échange tu suis des règles et partages des revenus.",
+"Partir de zéro donne la liberté mais demande de tout construire soi-même."
+],
+"q": "Préfères-tu un chemin éprouvé ou construire le tien de zéro ?",
+"c": "Liste deux avantages et deux inconvénients d'un système éprouvé face à un départ de zéro."
+},
+"it": {
+"t": "Il franchising in generale",
+"g": "Scopri come funziona il franchising come idea e come si distingue dal partire da zero.",
+"p": [
+"Un franchising permette di gestire un'attività con un marchio e un metodo consolidati.",
+"Ricevi un sistema collaudato e supporto; in cambio segui regole e condividi i ricavi.",
+"Partire da zero dà libertà ma significa costruire tutto da soli."
+],
+"q": "Preferisci una strada collaudata o costruire la tua da zero?",
+"c": "Elenca due pro e due contro di un sistema collaudato rispetto al partire da zero."
+},
+"pt": {
+"t": "Franquias em geral",
+"g": "Aprende como funciona uma franquia como ideia e como difere de começar do zero.",
+"p": [
+"Uma franquia permite gerir um negócio sob uma marca e um método estabelecidos.",
+"Recebes um sistema testado e apoio; em troca segues regras e partilhas rendimentos.",
+"Começar do zero dá liberdade, mas obriga a construir tudo por ti."
+],
+"q": "Preferes um caminho testado ou construir o teu do zero?",
+"c": "Lista duas vantagens e duas desvantagens de um sistema testado face a começar do zero."
+},
+"pt_BR": {
+"t": "Franquias em geral",
+"g": "Aprenda como funciona uma franquia como ideia e como difere de começar do zero.",
+"p": [
+"Uma franquia permite gerir um negócio sob uma marca e um método estabelecidos.",
+"Você recebe um sistema testado e apoio; em troca segue regras e divide a receita.",
+"Começar do zero dá liberdade, mas exige construir tudo por conta própria."
+],
+"q": "Você prefere um caminho testado ou construir o seu do zero?",
+"c": "Liste duas vantagens e duas desvantagens de um sistema testado frente a começar do zero."
+}
+}
+},
+{
+"d": 49,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Family businesses",
+"g": "Explore strengths and challenges of building a business with relatives.",
+"p": [
+"Family businesses often have deep trust, shared values and long-term thinking.",
+"Challenges include mixing family and work roles and handling disagreements.",
+"Clear roles and open talks help both the business and the relationships."
+],
+"q": "Do you know a family business? What seems to make it last?",
+"c": "Write three agreements a family team should make early to stay on good terms."
+},
+"de": {
+"t": "Familienunternehmen",
+"g": "Erkunde Stärken und Herausforderungen, ein Geschäft mit Verwandten aufzubauen.",
+"p": [
+"Familienbetriebe haben oft tiefes Vertrauen, gemeinsame Werte und langen Atem.",
+"Herausforderungen sind vermischte Familien- und Arbeitsrollen und Meinungsverschiedenheiten.",
+"Klare Rollen und offene Gespräche helfen Geschäft und Beziehungen."
+],
+"q": "Kennst du einen Familienbetrieb? Was lässt ihn bestehen?",
+"c": "Schreib drei Absprachen, die ein Familienteam früh treffen sollte."
+},
+"es": {
+"t": "Negocios familiares",
+"g": "Explora las fortalezas y los retos de montar un negocio con parientes.",
+"p": [
+"Los negocios familiares suelen tener confianza profunda, valores comunes y visión a largo plazo.",
+"Los retos incluyen mezclar roles familiares y laborales y manejar desacuerdos.",
+"Roles claros y charlas abiertas ayudan al negocio y a las relaciones."
+],
+"q": "¿Conoces algún negocio familiar? ¿Qué parece hacerlo durar?",
+"c": "Escribe tres acuerdos que un equipo familiar debería tomar pronto."
+},
+"fr": {
+"t": "Entreprises familiales",
+"g": "Explore les forces et défis de bâtir une entreprise avec des proches.",
+"p": [
+"Les entreprises familiales ont souvent une confiance profonde, des valeurs communes et une vision longue.",
+"Les défis : mêler rôles familiaux et professionnels, gérer les désaccords.",
+"Des rôles clairs et des échanges ouverts aident l'entreprise comme les relations."
+],
+"q": "Connais-tu une entreprise familiale ? Qu'est-ce qui semble la faire durer ?",
+"c": "Écris trois accords qu'une équipe familiale devrait conclure tôt."
+},
+"it": {
+"t": "Imprese di famiglia",
+"g": "Esplora punti di forza e sfide del costruire un'impresa con i parenti.",
+"p": [
+"Le imprese di famiglia hanno spesso fiducia profonda, valori comuni e visione di lungo periodo.",
+"Le sfide: mescolare ruoli familiari e di lavoro e gestire i disaccordi.",
+"Ruoli chiari e dialoghi aperti aiutano l'impresa e i rapporti."
+],
+"q": "Conosci un'impresa di famiglia? Cosa sembra farla durare?",
+"c": "Scrivi tre accordi che una squadra familiare dovrebbe prendere presto."
+},
+"pt": {
+"t": "Negócios de família",
+"g": "Explora as forças e desafios de criar um negócio com familiares.",
+"p": [
+"Os negócios de família têm muitas vezes confiança profunda, valores comuns e visão de longo prazo.",
+"Os desafios incluem misturar papéis familiares e profissionais e gerir desacordos.",
+"Papéis claros e conversas abertas ajudam o negócio e as relações."
+],
+"q": "Conheces algum negócio de família? O que parece fazê-lo durar?",
+"c": "Escreve três acordos que uma equipa familiar deveria fazer cedo."
+},
+"pt_BR": {
+"t": "Negócios de família",
+"g": "Explore as forças e os desafios de criar um negócio com parentes.",
+"p": [
+"Negócios de família costumam ter confiança profunda, valores comuns e visão de longo prazo.",
+"Os desafios incluem misturar papéis familiares e profissionais e lidar com desacordos.",
+"Papéis claros e conversas abertas ajudam o negócio e as relações."
+],
+"q": "Você conhece algum negócio de família? O que parece fazê-lo durar?",
+"c": "Escreva três acordos que uma equipe familiar deveria fazer cedo."
+}
+}
+},
+{
+"d": 50,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Side projects that grow",
+"g": "Start small alongside other commitments and grow step by step.",
+"p": [
+"A side project lets you test an idea in spare hours with less risk.",
+"Protect your time: pick a small weekly slot and keep it realistic.",
+"Let evidence, not excitement alone, tell you when to give it more time."
+],
+"q": "How many hours a week could you realistically give an idea?",
+"c": "Block two small time slots this week and name what you will do in each."
+},
+"de": {
+"t": "Nebenprojekte, die wachsen",
+"g": "Starte klein neben anderen Verpflichtungen und wachse Schritt für Schritt.",
+"p": [
+"Ein Nebenprojekt lässt dich eine Idee in freien Stunden mit weniger Risiko testen.",
+"Schütze deine Zeit: Wähle einen kleinen Wochenslot und bleib realistisch.",
+"Lass Belege, nicht nur Begeisterung, entscheiden, wann es mehr Zeit bekommt."
+],
+"q": "Wie viele Stunden pro Woche könntest du einer Idee realistisch geben?",
+"c": "Blocke diese Woche zwei kleine Zeitfenster und nenne, was du darin tust."
+},
+"es": {
+"t": "Proyectos paralelos que crecen",
+"g": "Empieza pequeño junto a tus otros compromisos y crece paso a paso.",
+"p": [
+"Un proyecto paralelo te deja probar una idea en horas libres con menos riesgo.",
+"Protege tu tiempo: elige un pequeño hueco semanal y sé realista.",
+"Que las pruebas, y no solo la ilusión, te digan cuándo darle más tiempo."
+],
+"q": "¿Cuántas horas por semana podrías dedicar de forma realista a una idea?",
+"c": "Reserva dos pequeños huecos esta semana y nombra qué harás en cada uno."
+},
+"fr": {
+"t": "Des projets annexes qui grandissent",
+"g": "Démarre petit à côté de tes autres engagements et grandis pas à pas.",
+"p": [
+"Un projet annexe permet de tester une idée sur le temps libre avec moins de risque.",
+"Protège ton temps : choisis un petit créneau hebdomadaire réaliste.",
+"Laisse les preuves, pas seulement l'enthousiasme, décider quand lui donner plus de temps."
+],
+"q": "Combien d'heures par semaine pourrais-tu réellement consacrer à une idée ?",
+"c": "Bloque deux petits créneaux cette semaine et dis ce que tu feras dans chacun."
+},
+"it": {
+"t": "Progetti paralleli che crescono",
+"g": "Parti in piccolo accanto ad altri impegni e cresci passo dopo passo.",
+"p": [
+"Un progetto parallelo ti fa testare un'idea nelle ore libere con meno rischio.",
+"Proteggi il tuo tempo: scegli un piccolo spazio settimanale e resta realistico.",
+"Lascia che le prove, non solo l'entusiasmo, ti dicano quando dargli più tempo."
+],
+"q": "Quante ore a settimana potresti dedicare realisticamente a un'idea?",
+"c": "Blocca due piccoli spazi questa settimana e indica cosa farai in ciascuno."
+},
+"pt": {
+"t": "Projetos paralelos que crescem",
+"g": "Começa pequeno a par dos outros compromissos e cresce passo a passo.",
+"p": [
+"Um projeto paralelo deixa-te testar uma ideia nas horas livres com menos risco.",
+"Protege o teu tempo: escolhe um pequeno espaço semanal e sê realista.",
+"Deixa que as provas, e não só o entusiasmo, digam quando lhe dar mais tempo."
+],
+"q": "Quantas horas por semana poderias dar realisticamente a uma ideia?",
+"c": "Reserva dois pequenos espaços esta semana e diz o que farás em cada um."
+},
+"pt_BR": {
+"t": "Projetos paralelos que crescem",
+"g": "Comece pequeno junto com seus outros compromissos e cresça passo a passo.",
+"p": [
+"Um projeto paralelo deixa você testar uma ideia nas horas livres com menos risco.",
+"Proteja seu tempo: escolha um pequeno espaço semanal e seja realista.",
+"Deixe que as provas, e não só o entusiasmo, digam quando dar mais tempo."
+],
+"q": "Quantas horas por semana você poderia dar de forma realista a uma ideia?",
+"c": "Reserve dois pequenos espaços esta semana e diga o que fará em cada um."
+}
+}
+}
+]
+}

@@ -1,0 +1,835 @@
+{
+"topic": "entrepreneurship",
+"lessons": [
+{
+"d": 11,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Ideas from travel and cultures",
+"g": "See how products and habits from one country can inspire ideas in another.",
+"p": [
+"Travel shows you things that exist elsewhere but not yet at home.",
+"Food, crafts, services and routines often cross borders and find new fans.",
+"Adapt, do not copy blindly: local tastes and needs always matter."
+],
+"q": "What habit or product from another place would you like to see at home?",
+"c": "Note one thing from another culture that your area lacks and who would enjoy it."
+},
+"de": {
+"t": "Ideen aus Reisen und Kulturen",
+"g": "Sieh, wie Produkte und Gewohnheiten eines Landes Ideen für ein anderes liefern.",
+"p": [
+"Reisen zeigen dir Dinge, die es anderswo gibt, aber noch nicht bei dir.",
+"Essen, Handwerk, Services und Routinen überqueren oft Grenzen und finden neue Fans.",
+"Passe an, kopiere nicht blind: Vorlieben und Bedürfnisse vor Ort zählen immer."
+],
+"q": "Welche Gewohnheit oder welches Produkt von woanders wünschst du dir hier?",
+"c": "Notiere etwas aus einer anderen Kultur, das bei dir fehlt, und wem es gefiele."
+},
+"es": {
+"t": "Ideas de viajes y culturas",
+"g": "Descubre cómo productos y costumbres de un país inspiran ideas en otro.",
+"p": [
+"Viajar te muestra cosas que existen en otro lugar pero aún no en tu casa.",
+"Comida, artesanía, servicios y rutinas cruzan fronteras y ganan nuevos fans.",
+"Adapta, no copies a ciegas: los gustos y necesidades locales importan."
+],
+"q": "¿Qué costumbre o producto de otro lugar te gustaría ver aquí?",
+"c": "Anota algo de otra cultura que falta en tu zona y a quién le gustaría."
+},
+"fr": {
+"t": "Idées nées des voyages et des cultures",
+"g": "Vois comment produits et habitudes d'un pays inspirent des idées ailleurs.",
+"p": [
+"Voyager montre des choses qui existent ailleurs mais pas encore chez toi.",
+"Cuisine, artisanat, services et routines franchissent les frontières et séduisent.",
+"Adapte, ne copie pas aveuglément : goûts et besoins locaux comptent toujours."
+],
+"q": "Quelle habitude ou quel produit d'ailleurs aimerais-tu voir chez toi ?",
+"c": "Note une chose d'une autre culture absente chez toi et qui l'apprécierait."
+},
+"it": {
+"t": "Idee da viaggi e culture",
+"g": "Scopri come prodotti e abitudini di un paese ispirano idee in un altro.",
+"p": [
+"Viaggiare mostra cose che esistono altrove ma non ancora a casa tua.",
+"Cibo, artigianato, servizi e routine attraversano i confini e trovano nuovi fan.",
+"Adatta, non copiare alla cieca: gusti e bisogni locali contano sempre."
+],
+"q": "Quale abitudine o prodotto di un altro posto vorresti vedere qui?",
+"c": "Annota una cosa di un'altra cultura che manca da te e a chi piacerebbe."
+},
+"pt": {
+"t": "Ideias de viagens e culturas",
+"g": "Vê como produtos e hábitos de um país inspiram ideias noutro.",
+"p": [
+"Viajar mostra-te coisas que existem noutro lugar mas ainda não em tua casa.",
+"Comida, artesanato, serviços e rotinas atravessam fronteiras e ganham fãs.",
+"Adapta, não copies às cegas: os gostos e necessidades locais contam sempre."
+],
+"q": "Que hábito ou produto de outro lugar gostavas de ver aqui?",
+"c": "Anota algo de outra cultura que falta na tua zona e a quem agradaria."
+},
+"pt_BR": {
+"t": "Ideias de viagens e culturas",
+"g": "Veja como produtos e hábitos de um país inspiram ideias em outro.",
+"p": [
+"Viajar mostra coisas que existem em outro lugar, mas ainda não na sua cidade.",
+"Comida, artesanato, serviços e rotinas atravessam fronteiras e ganham fãs.",
+"Adapte, não copie às cegas: gostos e necessidades locais sempre contam."
+],
+"q": "Que hábito ou produto de outro lugar você gostaria de ver por aqui?",
+"c": "Anote algo de outra cultura que falta na sua região e quem iria gostar."
+}
+}
+},
+{
+"d": 12,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Who is your customer?",
+"g": "Picture one real person who would benefit from your idea.",
+"p": [
+"Start with a single person, not everybody; specific beats vague.",
+"Describe their age, daily routine, worries and what they already use.",
+"If you cannot picture them, talk to someone who fits and see their day."
+],
+"q": "Who is the first person that comes to mind for your best idea?",
+"c": "Write a short profile of one customer with a name, a routine and a problem."
+},
+"de": {
+"t": "Wer ist dein Kunde?",
+"g": "Stell dir einen echten Menschen vor, der von deiner Idee profitiert.",
+"p": [
+"Beginne mit einer einzelnen Person, nicht mit allen; konkret schlägt vage.",
+"Beschreibe Alter, Tagesablauf, Sorgen und was sie bereits nutzt.",
+"Kannst du sie dir nicht vorstellen, sprich mit jemandem, der passt."
+],
+"q": "Wer fällt dir als Erstes zu deiner besten Idee ein?",
+"c": "Schreib ein kurzes Profil eines Kunden mit Namen, Alltag und Problem."
+},
+"es": {
+"t": "¿Quién es tu cliente?",
+"g": "Imagina a una persona real que se beneficiaría de tu idea.",
+"p": [
+"Empieza con una sola persona, no con todos; lo concreto vence a lo vago.",
+"Describe su edad, rutina diaria, preocupaciones y lo que ya usa.",
+"Si no la imaginas, habla con alguien que encaje y mira su día."
+],
+"q": "¿Quién es la primera persona que te viene a la mente para tu mejor idea?",
+"c": "Escribe un perfil breve de un cliente con nombre, rutina y problema."
+},
+"fr": {
+"t": "Qui est ton client ?",
+"g": "Imagine une vraie personne qui bénéficierait de ton idée.",
+"p": [
+"Commence par une seule personne, pas tout le monde; le précis bat le vague.",
+"Décris son âge, sa routine, ses soucis et ce qu'elle utilise déjà.",
+"Si tu n'y arrives pas, parle à quelqu'un qui correspond et observe sa journée."
+],
+"q": "Qui te vient en premier à l'esprit pour ta meilleure idée ?",
+"c": "Rédige un court profil d'un client : prénom, routine et problème."
+},
+"it": {
+"t": "Chi è il tuo cliente?",
+"g": "Immagina una persona reale che trarrebbe vantaggio dalla tua idea.",
+"p": [
+"Parti da una sola persona, non da tutti; il concreto batte il vago.",
+"Descrivi età, routine quotidiana, preoccupazioni e cosa usa già.",
+"Se non riesci a immaginarla, parla con qualcuno che corrisponde e osserva la sua giornata."
+],
+"q": "Chi ti viene in mente per primo per la tua idea migliore?",
+"c": "Scrivi un breve profilo di un cliente con nome, routine e problema."
+},
+"pt": {
+"t": "Quem é o teu cliente?",
+"g": "Imagina uma pessoa real que beneficiaria da tua ideia.",
+"p": [
+"Começa por uma só pessoa, não por todos; o concreto vence o vago.",
+"Descreve a idade, rotina diária, preocupações e o que já usa.",
+"Se não a consegues imaginar, fala com alguém que encaixe e vê o seu dia."
+],
+"q": "Quem é a primeira pessoa que te ocorre para a tua melhor ideia?",
+"c": "Escreve um perfil curto de um cliente com nome, rotina e problema."
+},
+"pt_BR": {
+"t": "Quem é o seu cliente?",
+"g": "Imagine uma pessoa real que se beneficiaria da sua ideia.",
+"p": [
+"Comece com uma só pessoa, não com todo mundo; o concreto vence o vago.",
+"Descreva idade, rotina diária, preocupações e o que ela já usa.",
+"Se não consegue imaginá-la, converse com alguém que se encaixe e veja o dia dela."
+],
+"q": "Quem é a primeira pessoa que vem à sua mente para a sua melhor ideia?",
+"c": "Escreva um perfil curto de um cliente com nome, rotina e problema."
+}
+}
+},
+{
+"d": 13,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Customer problems and pains",
+"g": "Describe the exact frustration your customer feels, in their own words.",
+"p": [
+"Pain points are the specific moments where things go wrong or cost effort.",
+"Use the customer's own words; they reveal what really bothers them.",
+"Rank pains by how often they occur and how much they hurt."
+],
+"q": "What is the most annoying moment in a routine you know well?",
+"c": "Write three pains of your imagined customer, each as a short quote."
+},
+"de": {
+"t": "Kundenprobleme und Schmerzpunkte",
+"g": "Beschreibe den genauen Ärger deines Kunden in seinen eigenen Worten.",
+"p": [
+"Schmerzpunkte sind die konkreten Momente, in denen etwas schiefgeht oder Mühe kostet.",
+"Nutze die Worte des Kunden; sie zeigen, was ihn wirklich stört.",
+"Ordne Probleme danach, wie oft sie auftreten und wie sehr sie wehtun."
+],
+"q": "Was ist der nervigste Moment in einer Routine, die du gut kennst?",
+"c": "Schreib drei Schmerzpunkte deines Kunden, jeweils als kurzes Zitat."
+},
+"es": {
+"t": "Problemas y dolores del cliente",
+"g": "Describe la frustración exacta de tu cliente, con sus propias palabras.",
+"p": [
+"Los puntos de dolor son los momentos concretos donde algo falla o cuesta esfuerzo.",
+"Usa las palabras del cliente; muestran lo que de verdad le molesta.",
+"Ordena los dolores por frecuencia y por cuánto duelen."
+],
+"q": "¿Cuál es el momento más molesto en una rutina que conoces bien?",
+"c": "Escribe tres dolores de tu cliente imaginado, cada uno como una cita corta."
+},
+"fr": {
+"t": "Problèmes et irritants du client",
+"g": "Décris la frustration précise de ton client, avec ses propres mots.",
+"p": [
+"Les irritants sont les moments précis où quelque chose coince ou coûte de l'effort.",
+"Reprends les mots du client; ils révèlent ce qui le gêne vraiment.",
+"Classe les irritants selon leur fréquence et leur intensité."
+],
+"q": "Quel est le moment le plus pénible dans une routine que tu connais bien ?",
+"c": "Écris trois irritants de ton client imaginé, chacun en courte citation."
+},
+"it": {
+"t": "Problemi e fastidi del cliente",
+"g": "Descrivi l'esatta frustrazione del tuo cliente, con le sue parole.",
+"p": [
+"I punti dolenti sono i momenti precisi in cui qualcosa va storto o costa fatica.",
+"Usa le parole del cliente; rivelano ciò che lo infastidisce davvero.",
+"Ordina i fastidi per frequenza e per quanto pesano."
+],
+"q": "Qual è il momento più fastidioso in una routine che conosci bene?",
+"c": "Scrivi tre fastidi del tuo cliente immaginato, ciascuno come breve citazione."
+},
+"pt": {
+"t": "Problemas e dores do cliente",
+"g": "Descreve a frustração exata do teu cliente, com as palavras dele.",
+"p": [
+"Os pontos de dor são os momentos concretos em que algo corre mal ou custa esforço.",
+"Usa as palavras do cliente; mostram o que realmente o incomoda.",
+"Ordena as dores pela frequência e pelo quanto custam."
+],
+"q": "Qual é o momento mais irritante numa rotina que conheces bem?",
+"c": "Escreve três dores do teu cliente imaginado, cada uma como citação curta."
+},
+"pt_BR": {
+"t": "Problemas e dores do cliente",
+"g": "Descreva a frustração exata do seu cliente, com as palavras dele.",
+"p": [
+"Pontos de dor são os momentos concretos em que algo dá errado ou custa esforço.",
+"Use as palavras do cliente; elas mostram o que realmente incomoda.",
+"Ordene as dores pela frequência e pelo quanto incomodam."
+],
+"q": "Qual é o momento mais chato numa rotina que você conhece bem?",
+"c": "Escreva três dores do seu cliente imaginado, cada uma como uma citação curta."
+}
+}
+},
+{
+"d": 14,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Gains customers hope for",
+"g": "Think about what would make your customer's day better, not just less annoying.",
+"p": [
+"Gains are the good things people hope for: saved time, pride, joy, calm.",
+"Removing a pain is good; adding a delight is even better.",
+"Ask what a perfect outcome would feel like for your customer."
+],
+"q": "When did a product or service last make you genuinely happy?",
+"c": "Write three gains your customer would love, from saving time to feeling proud."
+},
+"de": {
+"t": "Gewinne, die Kunden erhoffen",
+"g": "Überlege, was den Tag deines Kunden besser macht, nicht nur weniger lästig.",
+"p": [
+"Gewinne sind das Gute, das Menschen hoffen: Zeit, Stolz, Freude, Ruhe.",
+"Einen Schmerz zu lindern ist gut; Freude hinzuzufügen ist noch besser.",
+"Frag, wie sich das perfekte Ergebnis für deinen Kunden anfühlen würde."
+],
+"q": "Wann hat dich ein Produkt oder Service zuletzt richtig glücklich gemacht?",
+"c": "Schreib drei Gewinne, die dein Kunde liebt, von Zeitersparnis bis Stolz."
+},
+"es": {
+"t": "Beneficios que el cliente espera",
+"g": "Piensa en qué mejoraría el día de tu cliente, no solo en qué lo molestaría menos.",
+"p": [
+"Los beneficios son lo bueno que la gente espera: tiempo, orgullo, alegría, calma.",
+"Quitar un dolor es bueno; añadir un deleite es aún mejor.",
+"Pregunta cómo se sentiría el resultado perfecto para tu cliente."
+],
+"q": "¿Cuándo fue la última vez que un producto o servicio te hizo muy feliz?",
+"c": "Escribe tres beneficios que tu cliente amaría, del ahorro de tiempo al orgullo."
+},
+"fr": {
+"t": "Les bénéfices que le client espère",
+"g": "Réfléchis à ce qui améliorerait la journée de ton client, pas seulement la rendre moins pénible.",
+"p": [
+"Les bénéfices sont ce que l'on espère : gain de temps, fierté, joie, sérénité.",
+"Supprimer un irritant est bien; ajouter du plaisir est encore mieux.",
+"Demande-toi à quoi ressemblerait le résultat parfait pour ton client."
+],
+"q": "Quand un produit ou service t'a-t-il vraiment rendu heureux pour la dernière fois ?",
+"c": "Écris trois bénéfices que ton client adorerait, du temps gagné à la fierté."
+},
+"it": {
+"t": "I vantaggi che il cliente spera",
+"g": "Pensa a cosa renderebbe migliore la giornata del cliente, non solo meno fastidiosa.",
+"p": [
+"I vantaggi sono ciò che si spera: tempo, orgoglio, gioia, calma.",
+"Togliere un fastidio è bene; aggiungere un piacere è ancora meglio.",
+"Chiediti come sarebbe il risultato perfetto per il tuo cliente."
+],
+"q": "Quando un prodotto o servizio ti ha reso davvero felice l'ultima volta?",
+"c": "Scrivi tre vantaggi che il tuo cliente amerebbe, dal tempo risparmiato all'orgoglio."
+},
+"pt": {
+"t": "Ganhos que o cliente espera",
+"g": "Pensa no que melhoraria o dia do teu cliente, e não só o incomodaria menos.",
+"p": [
+"Os ganhos são o que as pessoas esperam: tempo, orgulho, alegria, calma.",
+"Tirar uma dor é bom; acrescentar um deleite é ainda melhor.",
+"Pergunta como seria o resultado perfeito para o teu cliente."
+],
+"q": "Quando foi a última vez que um produto ou serviço te deixou mesmo feliz?",
+"c": "Escreve três ganhos que o teu cliente adoraria, de poupar tempo a sentir orgulho."
+},
+"pt_BR": {
+"t": "Ganhos que o cliente espera",
+"g": "Pense no que melhoraria o dia do seu cliente, e não só o incomodaria menos.",
+"p": [
+"Ganhos são o que as pessoas esperam: tempo, orgulho, alegria, calma.",
+"Tirar uma dor é bom; acrescentar um encanto é ainda melhor.",
+"Pergunte como seria o resultado perfeito para o seu cliente."
+],
+"q": "Quando foi a última vez que um produto ou serviço deixou você realmente feliz?",
+"c": "Escreva três ganhos que seu cliente adoraria, de economizar tempo a sentir orgulho."
+}
+}
+},
+{
+"d": 15,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "The value proposition",
+"g": "Write a one-sentence promise of what you offer, for whom and why it matters.",
+"p": [
+"A value proposition links a customer pain or gain to what you provide.",
+"Try the form: I help [who] to [get what] by [how].",
+"Plain words beat clever slogans; a stranger should understand it instantly."
+],
+"q": "How would you explain your idea to a friend in one sentence?",
+"c": "Write your value proposition in one sentence and read it aloud to someone."
+},
+"de": {
+"t": "Das Nutzenversprechen",
+"g": "Formuliere in einem Satz, was du bietest, für wen und warum es zählt.",
+"p": [
+"Ein Nutzenversprechen verbindet Schmerz oder Gewinn des Kunden mit deinem Angebot.",
+"Probiere: Ich helfe [wem], [was zu erreichen], indem ich [wie].",
+"Klare Worte schlagen clevere Slogans; Fremde sollten es sofort verstehen."
+],
+"q": "Wie würdest du einem Freund deine Idee in einem Satz erklären?",
+"c": "Schreib dein Nutzenversprechen in einem Satz und lies es jemandem vor."
+},
+"es": {
+"t": "La propuesta de valor",
+"g": "Escribe en una frase qué ofreces, para quién y por qué importa.",
+"p": [
+"Una propuesta de valor une un dolor o beneficio del cliente con lo que ofreces.",
+"Prueba la forma: Ayudo a [quién] a [lograr qué] mediante [cómo].",
+"Las palabras sencillas vencen a los eslóganes ingeniosos; un extraño debe entenderla."
+],
+"q": "¿Cómo explicarías tu idea a un amigo en una frase?",
+"c": "Escribe tu propuesta de valor en una frase y léela en voz alta a alguien."
+},
+"fr": {
+"t": "La proposition de valeur",
+"g": "Écris en une phrase ce que tu offres, pour qui et pourquoi c'est important.",
+"p": [
+"Une proposition de valeur relie un irritant ou un bénéfice du client à ton offre.",
+"Essaie : J'aide [qui] à [obtenir quoi] grâce à [comment].",
+"Des mots simples valent mieux qu'un slogan malin; un inconnu doit comprendre."
+],
+"q": "Comment expliquerais-tu ton idée à un ami en une phrase ?",
+"c": "Rédige ta proposition de valeur en une phrase et lis-la à voix haute à quelqu'un."
+},
+"it": {
+"t": "La proposta di valore",
+"g": "Scrivi in una frase cosa offri, per chi e perché conta.",
+"p": [
+"Una proposta di valore collega un fastidio o un vantaggio del cliente a ciò che offri.",
+"Prova la forma: Aiuto [chi] a [ottenere cosa] tramite [come].",
+"Parole semplici battono slogan furbi; uno sconosciuto deve capire subito."
+],
+"q": "Come spiegheresti la tua idea a un amico in una frase?",
+"c": "Scrivi la tua proposta di valore in una frase e leggila ad alta voce a qualcuno."
+},
+"pt": {
+"t": "A proposta de valor",
+"g": "Escreve numa frase o que ofereces, para quem e porque importa.",
+"p": [
+"Uma proposta de valor liga uma dor ou ganho do cliente ao que ofereces.",
+"Experimenta a forma: Ajudo [quem] a [conseguir o quê] através de [como].",
+"Palavras simples vencem slogans espertos; um desconhecido deve percebê-la."
+],
+"q": "Como explicarias a tua ideia a um amigo numa frase?",
+"c": "Escreve a tua proposta de valor numa frase e lê-a em voz alta a alguém."
+},
+"pt_BR": {
+"t": "A proposta de valor",
+"g": "Escreva em uma frase o que você oferece, para quem e por que importa.",
+"p": [
+"Uma proposta de valor liga uma dor ou ganho do cliente ao que você oferece.",
+"Experimente a forma: Ajudo [quem] a [conseguir o quê] por meio de [como].",
+"Palavras simples vencem slogans espertos; um desconhecido deve entender."
+],
+"q": "Como você explicaria sua ideia a um amigo em uma frase?",
+"c": "Escreva sua proposta de valor em uma frase e leia em voz alta para alguém."
+}
+}
+},
+{
+"d": 16,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Talking to potential customers",
+"g": "Learn why short, honest conversations beat guessing about what people want.",
+"p": [
+"Ten brief chats teach more than weeks of imagining alone.",
+"Ask people from your target group for ten minutes; keep it friendly.",
+"You are not selling; you are learning how their world really works."
+],
+"q": "Who could you chat with this week about the problem you care about?",
+"c": "Arrange one ten-minute chat with a person who fits your customer profile."
+},
+"de": {
+"t": "Mit möglichen Kunden sprechen",
+"g": "Lerne, warum kurze, ehrliche Gespräche Raten über Kundenwünsche schlagen.",
+"p": [
+"Zehn kurze Gespräche lehren mehr als Wochen allein am Schreibtisch.",
+"Bitte Menschen aus deiner Zielgruppe um zehn Minuten; bleib freundlich.",
+"Du verkaufst nicht; du lernst, wie ihre Welt wirklich funktioniert."
+],
+"q": "Mit wem könntest du diese Woche über dein Thema sprechen?",
+"c": "Verabrede ein zehnminütiges Gespräch mit jemandem aus deiner Zielgruppe."
+},
+"es": {
+"t": "Hablar con posibles clientes",
+"g": "Aprende por qué conversaciones breves y honestas vencen a adivinar lo que quiere la gente.",
+"p": [
+"Diez charlas cortas enseñan más que semanas imaginando a solas.",
+"Pide diez minutos a personas de tu público objetivo; mantén un tono amable.",
+"No vendes; aprendes cómo funciona de verdad su mundo."
+],
+"q": "¿Con quién podrías charlar esta semana sobre el problema que te importa?",
+"c": "Acuerda una charla de diez minutos con alguien de tu perfil de cliente."
+},
+"fr": {
+"t": "Parler à des clients potentiels",
+"g": "Comprends pourquoi de courtes conversations honnêtes valent mieux que deviner.",
+"p": [
+"Dix brefs échanges apprennent plus que des semaines d'imagination solitaire.",
+"Demande dix minutes à des gens de ta cible; reste amical.",
+"Tu ne vends pas; tu apprends comment leur monde fonctionne vraiment."
+],
+"q": "Avec qui pourrais-tu discuter cette semaine du problème qui te tient à cœur ?",
+"c": "Fixe un échange de dix minutes avec quelqu'un de ton profil client."
+},
+"it": {
+"t": "Parlare con potenziali clienti",
+"g": "Scopri perché brevi conversazioni sincere battono l'indovinare cosa vuole la gente.",
+"p": [
+"Dieci brevi chiacchierate insegnano più di settimane a immaginare da soli.",
+"Chiedi dieci minuti a persone del tuo pubblico; resta cordiale.",
+"Non vendi; impari come funziona davvero il loro mondo."
+],
+"q": "Con chi potresti parlare questa settimana del problema che ti sta a cuore?",
+"c": "Fissa una chiacchierata di dieci minuti con qualcuno del tuo profilo cliente."
+},
+"pt": {
+"t": "Falar com potenciais clientes",
+"g": "Aprende porque conversas curtas e honestas vencem adivinhar o que as pessoas querem.",
+"p": [
+"Dez conversas breves ensinam mais do que semanas a imaginar sozinho.",
+"Pede dez minutos a pessoas do teu público; mantém o tom simpático.",
+"Não vendes; aprendes como funciona realmente o mundo delas."
+],
+"q": "Com quem podias conversar esta semana sobre o problema que te interessa?",
+"c": "Combina uma conversa de dez minutos com alguém do teu perfil de cliente."
+},
+"pt_BR": {
+"t": "Falar com potenciais clientes",
+"g": "Aprenda por que conversas curtas e honestas vencem adivinhar o que as pessoas querem.",
+"p": [
+"Dez conversas breves ensinam mais do que semanas imaginando sozinho.",
+"Peça dez minutos a pessoas do seu público; mantenha o tom simpático.",
+"Você não vende; você aprende como o mundo delas realmente funciona."
+],
+"q": "Com quem você poderia conversar esta semana sobre o problema que lhe interessa?",
+"c": "Combine uma conversa de dez minutos com alguém do seu perfil de cliente."
+}
+}
+},
+{
+"d": 17,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Asking good questions",
+"g": "Ask about past behaviour instead of hypothetical opinions to get useful answers.",
+"p": [
+"Questions like Would you buy this? invite polite but unreliable answers.",
+"Ask: Tell me about the last time you had this problem. What did you do?",
+"Stories of real past actions reveal needs better than predictions."
+],
+"q": "What is the difference between asking what people would do and what they did?",
+"c": "Write five past-focused questions you could ask your customer this week."
+},
+"de": {
+"t": "Gute Fragen stellen",
+"g": "Frage nach vergangenem Verhalten statt nach hypothetischen Meinungen.",
+"p": [
+"Fragen wie Würdest du das kaufen? bringen höfliche, aber unzuverlässige Antworten.",
+"Frag: Erzähl von dem letzten Mal, als du dieses Problem hattest. Was tatest du?",
+"Geschichten echten Handelns zeigen Bedürfnisse besser als Vorhersagen."
+],
+"q": "Was ist der Unterschied zwischen Fragen nach Wollen und nach Getanem?",
+"c": "Schreib fünf Fragen zur Vergangenheit, die du diese Woche stellen könntest."
+},
+"es": {
+"t": "Hacer buenas preguntas",
+"g": "Pregunta por el comportamiento pasado, no por opiniones hipotéticas, y obtén respuestas útiles.",
+"p": [
+"Preguntas como ¿Lo comprarías? provocan respuestas amables pero poco fiables.",
+"Pregunta: Cuéntame la última vez que tuviste este problema. ¿Qué hiciste?",
+"Las historias de acciones reales revelan necesidades mejor que las predicciones."
+],
+"q": "¿Qué diferencia hay entre preguntar qué harían y qué hicieron?",
+"c": "Escribe cinco preguntas sobre el pasado que podrías hacer esta semana."
+},
+"fr": {
+"t": "Poser les bonnes questions",
+"g": "Interroge sur le comportement passé plutôt que sur des opinions hypothétiques.",
+"p": [
+"Des questions comme L'achèterais-tu ? donnent des réponses polies mais peu fiables.",
+"Demande : Raconte la dernière fois où tu as eu ce problème. Qu'as-tu fait ?",
+"Les récits d'actions réelles révèlent mieux les besoins que les prédictions."
+],
+"q": "Quelle différence entre demander ce que les gens feraient et ce qu'ils ont fait ?",
+"c": "Écris cinq questions tournées vers le passé à poser cette semaine."
+},
+"it": {
+"t": "Fare buone domande",
+"g": "Chiedi del comportamento passato invece di opinioni ipotetiche per ottenere risposte utili.",
+"p": [
+"Domande come Lo compreresti? portano risposte cortesi ma poco affidabili.",
+"Chiedi: Raccontami l'ultima volta che hai avuto questo problema. Cosa hai fatto?",
+"Le storie di azioni reali rivelano i bisogni meglio delle previsioni."
+],
+"q": "Che differenza c'è tra chiedere cosa farebbero e cosa hanno fatto?",
+"c": "Scrivi cinque domande sul passato da fare questa settimana."
+},
+"pt": {
+"t": "Fazer boas perguntas",
+"g": "Pergunta pelo comportamento passado, e não por opiniões hipotéticas, para teres respostas úteis.",
+"p": [
+"Perguntas como Compravas isto? dão respostas simpáticas mas pouco fiáveis.",
+"Pergunta: Conta-me a última vez que tiveste este problema. O que fizeste?",
+"Histórias de ações reais revelam necessidades melhor do que previsões."
+],
+"q": "Qual é a diferença entre perguntar o que fariam e o que fizeram?",
+"c": "Escreve cinco perguntas sobre o passado que podes fazer esta semana."
+},
+"pt_BR": {
+"t": "Fazer boas perguntas",
+"g": "Pergunte pelo comportamento passado, e não por opiniões hipotéticas, para ter respostas úteis.",
+"p": [
+"Perguntas como Você compraria isto? geram respostas simpáticas, mas pouco confiáveis.",
+"Pergunte: Conte a última vez que você teve esse problema. O que fez?",
+"Histórias de ações reais revelam necessidades melhor do que previsões."
+],
+"q": "Qual é a diferença entre perguntar o que fariam e o que fizeram?",
+"c": "Escreva cinco perguntas sobre o passado que você pode fazer esta semana."
+}
+}
+},
+{
+"d": 18,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Listening more than pitching",
+"g": "Stay curious in customer conversations and resist the urge to sell.",
+"p": [
+"Talk about 20 percent of the time; let the other person fill the rest.",
+"When excited about your idea, pause and ask a follow-up question instead.",
+"Silence is useful; people often add the most honest detail after a pause."
+],
+"q": "Do you tend to explain a lot or ask a lot in conversations?",
+"c": "In your next chat, count how many follow-up questions you ask."
+},
+"de": {
+"t": "Mehr zuhören als anpreisen",
+"g": "Bleib in Kundengesprächen neugierig und widerstehe dem Drang zu verkaufen.",
+"p": [
+"Sprich etwa 20 Prozent der Zeit; die andere Person füllt den Rest.",
+"Bist du begeistert von deiner Idee, halte inne und stelle eine Nachfrage.",
+"Stille ist nützlich; nach einer Pause kommt oft das ehrlichste Detail."
+],
+"q": "Erklärst du in Gesprächen eher viel oder fragst du viel?",
+"c": "Zähle im nächsten Gespräch, wie viele Nachfragen du stellst."
+},
+"es": {
+"t": "Escuchar más que vender",
+"g": "Mantén la curiosidad en las charlas con clientes y resiste la tentación de vender.",
+"p": [
+"Habla cerca del 20 por ciento del tiempo; deja que la otra persona llene el resto.",
+"Si te entusiasma tu idea, haz una pausa y pregunta algo más.",
+"El silencio es útil; tras una pausa suele llegar el detalle más sincero."
+],
+"q": "¿Sueles explicar mucho o preguntar mucho en las conversaciones?",
+"c": "En tu próxima charla, cuenta cuántas preguntas de seguimiento haces."
+},
+"fr": {
+"t": "Écouter plus que vendre",
+"g": "Reste curieux dans les échanges clients et résiste à l'envie de vendre.",
+"p": [
+"Parle environ 20 pour cent du temps; laisse l'autre remplir le reste.",
+"Quand ton idée t'enthousiasme, marque une pause et pose une question de suivi.",
+"Le silence est utile; après une pause vient souvent le détail le plus sincère."
+],
+"q": "Dans une conversation, as-tu tendance à beaucoup expliquer ou à beaucoup demander ?",
+"c": "Dans ton prochain échange, compte tes questions de suivi."
+},
+"it": {
+"t": "Ascoltare più che proporre",
+"g": "Resta curioso nelle conversazioni con i clienti e resisti alla voglia di vendere.",
+"p": [
+"Parla circa il 20 per cento del tempo; lascia all'altro il resto.",
+"Quando sei entusiasta dell'idea, fai una pausa e poni una domanda di approfondimento.",
+"Il silenzio è utile; dopo una pausa arriva spesso il dettaglio più sincero."
+],
+"q": "In una conversazione tendi a spiegare molto o a chiedere molto?",
+"c": "Nella prossima chiacchierata conta quante domande di approfondimento fai."
+},
+"pt": {
+"t": "Ouvir mais do que vender",
+"g": "Mantém a curiosidade nas conversas com clientes e resiste à vontade de vender.",
+"p": [
+"Fala cerca de 20 por cento do tempo; deixa o outro preencher o resto.",
+"Quando estás entusiasmado com a ideia, faz uma pausa e pergunta mais qualquer coisa.",
+"O silêncio é útil; depois de uma pausa surge muitas vezes o detalhe mais sincero."
+],
+"q": "Nas conversas, costumas explicar muito ou perguntar muito?",
+"c": "Na tua próxima conversa, conta quantas perguntas de seguimento fazes."
+},
+"pt_BR": {
+"t": "Ouvir mais do que vender",
+"g": "Mantenha a curiosidade nas conversas com clientes e resista à vontade de vender.",
+"p": [
+"Fale cerca de 20 por cento do tempo; deixe o outro preencher o resto.",
+"Quando estiver empolgado com a ideia, faça uma pausa e pergunte algo mais.",
+"O silêncio é útil; depois de uma pausa costuma vir o detalhe mais sincero."
+],
+"q": "Nas conversas, você costuma explicar muito ou perguntar muito?",
+"c": "Na sua próxima conversa, conte quantas perguntas de acompanhamento você faz."
+}
+}
+},
+{
+"d": 19,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Observing real behaviour",
+"g": "Watch what people actually do, which often differs from what they say.",
+"p": [
+"People forget details or answer to be polite; behaviour does not.",
+"Spend 15 minutes watching how people handle the problem you care about.",
+"Note workarounds, shortcuts and frustrations; they hint at needs."
+],
+"q": "What have you noticed people do that they might not mention?",
+"c": "Observe a real situation for 15 minutes and write down five specific details."
+},
+"de": {
+"t": "Echtes Verhalten beobachten",
+"g": "Beobachte, was Menschen tatsächlich tun; es weicht oft von ihren Worten ab.",
+"p": [
+"Menschen vergessen Details oder antworten höflich; Verhalten lügt nicht.",
+"Verbringe 15 Minuten damit, den Umgang mit deinem Problem zu beobachten.",
+"Notiere Umwege, Abkürzungen und Frust; sie deuten auf Bedürfnisse hin."
+],
+"q": "Was beobachtest du bei Menschen, das sie vielleicht nie erwähnen würden?",
+"c": "Beobachte 15 Minuten eine echte Situation und notiere fünf genaue Details."
+},
+"es": {
+"t": "Observar el comportamiento real",
+"g": "Observa lo que la gente hace en realidad, que suele diferir de lo que dice.",
+"p": [
+"La gente olvida detalles o responde por cortesía; el comportamiento no.",
+"Dedica 15 minutos a ver cómo manejan el problema que te interesa.",
+"Anota atajos, parches y frustraciones; apuntan a necesidades."
+],
+"q": "¿Qué has notado que la gente hace pero quizá no menciona?",
+"c": "Observa una situación real 15 minutos y anota cinco detalles concretos."
+},
+"fr": {
+"t": "Observer le comportement réel",
+"g": "Observe ce que les gens font vraiment, souvent différent de ce qu'ils disent.",
+"p": [
+"On oublie des détails ou on répond par politesse; le comportement, lui, ne ment pas.",
+"Passe 15 minutes à voir comment les gens gèrent le problème qui t'intéresse.",
+"Note astuces de contournement, raccourcis et frustrations; ils révèlent des besoins."
+],
+"q": "Qu'as-tu remarqué que les gens font sans forcément le dire ?",
+"c": "Observe une situation réelle 15 minutes et note cinq détails précis."
+},
+"it": {
+"t": "Osservare il comportamento reale",
+"g": "Osserva cosa fa davvero la gente, spesso diverso da ciò che dice.",
+"p": [
+"Le persone dimenticano dettagli o rispondono per gentilezza; il comportamento no.",
+"Dedica 15 minuti a vedere come gestiscono il problema che ti interessa.",
+"Annota scorciatoie, rimedi e frustrazioni; indicano bisogni."
+],
+"q": "Cosa hai notato che le persone fanno ma forse non dicono?",
+"c": "Osserva una situazione reale per 15 minuti e annota cinque dettagli precisi."
+},
+"pt": {
+"t": "Observar o comportamento real",
+"g": "Observa o que as pessoas realmente fazem, que muitas vezes difere do que dizem.",
+"p": [
+"As pessoas esquecem detalhes ou respondem por simpatia; o comportamento não mente.",
+"Passa 15 minutos a ver como lidam com o problema que te interessa.",
+"Anota atalhos, remendos e frustrações; apontam para necessidades."
+],
+"q": "O que reparaste que as pessoas fazem mas talvez não digam?",
+"c": "Observa uma situação real durante 15 minutos e anota cinco detalhes concretos."
+},
+"pt_BR": {
+"t": "Observar o comportamento real",
+"g": "Observe o que as pessoas realmente fazem, o que muitas vezes difere do que dizem.",
+"p": [
+"As pessoas esquecem detalhes ou respondem por educação; o comportamento não mente.",
+"Passe 15 minutos vendo como elas lidam com o problema que lhe interessa.",
+"Anote atalhos, gambiarras e frustrações; eles apontam necessidades."
+],
+"q": "O que você notou que as pessoas fazem mas talvez não digam?",
+"c": "Observe uma situação real por 15 minutos e anote cinco detalhes concretos."
+}
+}
+},
+{
+"d": 20,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Who else solves this problem?",
+"g": "Look at competitors and alternatives, including doing nothing at all.",
+"p": [
+"Every problem is already handled somehow, even if by a messy workaround.",
+"List direct competitors, indirect options and the choice to do nothing.",
+"Competition proves people care; study what they do well and badly."
+],
+"q": "How do people solve your chosen problem today without your idea?",
+"c": "List five ways people deal with your problem today, including doing nothing."
+},
+"de": {
+"t": "Wer löst dieses Problem noch?",
+"g": "Betrachte Wettbewerber und Alternativen, auch das Nichtstun.",
+"p": [
+"Jedes Problem wird irgendwie schon gelöst, sei es durch eine Notlösung.",
+"Liste direkte Wettbewerber, indirekte Optionen und die Wahl, nichts zu tun.",
+"Wettbewerb zeigt, dass es Menschen wichtig ist; lerne aus Stärken und Schwächen."
+],
+"q": "Wie lösen Menschen dein Problem heute ohne deine Idee?",
+"c": "Liste fünf Wege, wie Menschen heute damit umgehen, auch Nichtstun."
+},
+"es": {
+"t": "¿Quién más resuelve este problema?",
+"g": "Mira a los competidores y alternativas, incluso no hacer nada.",
+"p": [
+"Todo problema ya se resuelve de algún modo, aunque sea con un parche.",
+"Lista competidores directos, opciones indirectas y la opción de no hacer nada.",
+"La competencia prueba que importa; estudia lo que hacen bien y mal."
+],
+"q": "¿Cómo resuelve hoy la gente tu problema sin tu idea?",
+"c": "Lista cinco formas en que la gente maneja hoy tu problema, incluso no hacer nada."
+},
+"fr": {
+"t": "Qui d'autre résout ce problème ?",
+"g": "Examine concurrents et alternatives, y compris ne rien faire.",
+"p": [
+"Chaque problème est déjà traité d'une façon ou d'une autre, même par du bricolage.",
+"Liste les concurrents directs, les options indirectes et le choix de ne rien faire.",
+"La concurrence prouve que le sujet compte; étudie leurs forces et leurs failles."
+],
+"q": "Comment les gens résolvent-ils aujourd'hui ton problème sans ton idée ?",
+"c": "Liste cinq façons de gérer ton problème aujourd'hui, y compris ne rien faire."
+},
+"it": {
+"t": "Chi altro risolve questo problema?",
+"g": "Guarda concorrenti e alternative, compreso non fare nulla.",
+"p": [
+"Ogni problema è già gestito in qualche modo, anche con un rimedio improvvisato.",
+"Elenca concorrenti diretti, opzioni indirette e la scelta di non fare nulla.",
+"La concorrenza prova che il tema conta; studia cosa fanno bene e male."
+],
+"q": "Come risolvono oggi le persone il tuo problema senza la tua idea?",
+"c": "Elenca cinque modi in cui oggi si affronta il problema, anche non fare nulla."
+},
+"pt": {
+"t": "Quem mais resolve este problema?",
+"g": "Olha para concorrentes e alternativas, incluindo não fazer nada.",
+"p": [
+"Todo o problema já é tratado de alguma forma, mesmo com um remendo.",
+"Lista concorrentes diretos, opções indiretas e a escolha de não fazer nada.",
+"A concorrência prova que importa; estuda o que fazem bem e mal."
+],
+"q": "Como resolvem hoje as pessoas o teu problema sem a tua ideia?",
+"c": "Lista cinco formas de lidar hoje com o problema, incluindo não fazer nada."
+},
+"pt_BR": {
+"t": "Quem mais resolve este problema?",
+"g": "Olhe para concorrentes e alternativas, incluindo não fazer nada.",
+"p": [
+"Todo problema já é tratado de alguma forma, mesmo com uma gambiarra.",
+"Liste concorrentes diretos, opções indiretas e a escolha de não fazer nada.",
+"A concorrência prova que importa; estude o que fazem bem e mal."
+],
+"q": "Como as pessoas resolvem hoje o seu problema sem a sua ideia?",
+"c": "Liste cinco jeitos de lidar hoje com o problema, incluindo não fazer nada."
+}
+}
+}
+]
+}

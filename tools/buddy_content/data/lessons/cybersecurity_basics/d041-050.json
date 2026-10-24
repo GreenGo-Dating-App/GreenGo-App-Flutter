@@ -1,0 +1,835 @@
+{
+ "topic": "cybersecurity_basics",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Scam text messages",
+     "g": "Spot fake delivery notices, bank alerts and prize messages sent by SMS.",
+     "p": [
+      "Fake texts often claim a parcel is held, a payment failed or an account is locked.",
+      "They push a link or a phone number, hoping you tap before you think.",
+      "Check through the official app or website you type yourself, never the link in the text."
+     ],
+     "q": "Have you ever received a text about a parcel you were not expecting?",
+     "c": "Challenge: delete one unexpected text today without tapping any link in it."
+    },
+    "de": {
+     "t": "Betrugs-SMS",
+     "g": "Erkenne gefälschte Paketbenachrichtigungen, Bankwarnungen und Gewinn-SMS.",
+     "p": [
+      "Gefälschte SMS behaupten oft, ein Paket hänge fest, eine Zahlung sei gescheitert oder ein Konto gesperrt.",
+      "Sie drängen auf einen Link oder eine Nummer, in der Hoffnung, dass du vor dem Denken tippst.",
+      "Prüfe über die offizielle App oder Seite, die du selbst eintippst, nie über den Link in der SMS."
+     ],
+     "q": "Hast du schon eine SMS zu einem Paket bekommen, das du nicht erwartet hast?",
+     "c": "Challenge: Lösche heute eine unerwartete SMS, ohne einen Link darin anzutippen."
+    },
+    "es": {
+     "t": "Mensajes de texto fraudulentos",
+     "g": "Detecta avisos falsos de paquetes, alertas bancarias y premios enviados por SMS.",
+     "p": [
+      "Los SMS falsos suelen decir que un paquete está retenido, un pago falló o una cuenta está bloqueada.",
+      "Empujan un enlace o un teléfono, esperando que toques antes de pensar.",
+      "Comprueba en la app oficial o en el sitio que escribes tú, nunca con el enlace del SMS."
+     ],
+     "q": "¿Has recibido algún SMS sobre un paquete que no esperabas?",
+     "c": "Reto: borra hoy un SMS inesperado sin tocar ningún enlace."
+    },
+    "fr": {
+     "t": "SMS d'arnaque",
+     "g": "Repère les faux avis de colis, alertes bancaires et messages de gain envoyés par SMS.",
+     "p": [
+      "Les faux SMS prétendent souvent qu'un colis est bloqué, qu'un paiement a échoué ou qu'un compte est verrouillé.",
+      "Ils poussent un lien ou un numéro, en espérant que tu touches avant de réfléchir.",
+      "Vérifie via l'appli officielle ou le site que tu tapes toi-même, jamais via le lien du SMS."
+     ],
+     "q": "As-tu déjà reçu un SMS à propos d'un colis que tu n'attendais pas ?",
+     "c": "Défi : supprime aujourd'hui un SMS inattendu sans toucher aucun lien."
+    },
+    "it": {
+     "t": "SMS truffa",
+     "g": "Riconosci finti avvisi di pacchi, avvisi bancari e premi inviati via SMS.",
+     "p": [
+      "I falsi SMS dicono spesso che un pacco è bloccato, un pagamento è fallito o un account è sospeso.",
+      "Spingono un link o un numero, sperando che tocchi prima di pensare.",
+      "Controlla dall'app ufficiale o dal sito che digiti tu, mai dal link nell'SMS."
+     ],
+     "q": "Hai mai ricevuto un SMS su un pacco che non aspettavi?",
+     "c": "Sfida: elimina oggi un SMS inatteso senza toccare nessun link."
+    },
+    "pt": {
+     "t": "SMS de burla",
+     "g": "Deteta falsos avisos de encomendas, alertas bancários e prémios enviados por SMS.",
+     "p": [
+      "Os SMS falsos dizem muitas vezes que uma encomenda está retida, um pagamento falhou ou uma conta está bloqueada.",
+      "Empurram um link ou um número, na esperança de que toques antes de pensar.",
+      "Verifica pela aplicação oficial ou pelo site que escreves tu, nunca pelo link do SMS."
+     ],
+     "q": "Já recebeste um SMS sobre uma encomenda que não esperavas?",
+     "c": "Desafio: apaga hoje um SMS inesperado sem tocar em nenhum link."
+    },
+    "pt_BR": {
+     "t": "SMS de golpe",
+     "g": "Identifique falsos avisos de encomendas, alertas bancários e prêmios enviados por SMS.",
+     "p": [
+      "SMS falsos costumam dizer que uma encomenda está retida, um pagamento falhou ou uma conta foi bloqueada.",
+      "Eles empurram um link ou um número, na esperança de que você toque antes de pensar.",
+      "Confira pelo app oficial ou pelo site que você digita, nunca pelo link do SMS."
+     ],
+     "q": "Você já recebeu um SMS sobre uma encomenda que não esperava?",
+     "c": "Desafio: apague hoje um SMS inesperado sem tocar em nenhum link."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Messaging app scams",
+     "g": "Learn how messages pretending to be a friend or relative ask for urgent help.",
+     "p": [
+      "A message from a new number says it is your relative and needs money fast.",
+      "Scammers use stolen photos and an emotional story to make you act without checking.",
+      "Call the person on their known number or ask something only they would know."
+     ],
+     "q": "If a relative messaged from a new number, how would you check it was really them?",
+     "c": "Challenge: agree on a family check question or phrase that only your close people know."
+    },
+    "de": {
+     "t": "Betrug in Messenger-Apps",
+     "g": "Lerne, wie Nachrichten, die sich als Freund oder Verwandter ausgeben, dringend um Hilfe bitten.",
+     "p": [
+      "Eine Nachricht von neuer Nummer behauptet, dein Verwandter zu sein und schnell Geld zu brauchen.",
+      "Betrüger nutzen gestohlene Fotos und rührende Geschichten, damit du ohne Prüfung handelst.",
+      "Ruf die Person unter der bekannten Nummer an oder frag etwas, das nur sie weiß."
+     ],
+     "q": "Wie würdest du prüfen, ob eine Nachricht von neuer Nummer wirklich von einem Verwandten ist?",
+     "c": "Challenge: Vereinbare mit deinen Liebsten eine Kontrollfrage, die nur ihr kennt."
+    },
+    "es": {
+     "t": "Estafas en apps de mensajería",
+     "g": "Aprende cómo mensajes que fingen ser un amigo o familiar piden ayuda urgente.",
+     "p": [
+      "Un mensaje de un número nuevo dice ser tu familiar y necesitar dinero rápido.",
+      "Los estafadores usan fotos robadas y una historia emotiva para que actúes sin comprobar.",
+      "Llama a la persona a su número conocido o pregunta algo que solo ella sepa."
+     ],
+     "q": "Si un familiar escribiera desde un número nuevo, ¿cómo comprobarías que es él?",
+     "c": "Reto: acordad una pregunta o frase de control que solo conozcan tus personas cercanas."
+    },
+    "fr": {
+     "t": "Arnaques sur les messageries",
+     "g": "Apprends comment des messages se faisant passer pour un ami ou un proche demandent une aide urgente.",
+     "p": [
+      "Un message d'un nouveau numéro prétend venir d'un proche et avoir vite besoin d'argent.",
+      "Les escrocs utilisent des photos volées et une histoire touchante pour te faire agir sans vérifier.",
+      "Appelle la personne sur son numéro connu ou pose une question que seule elle connaît."
+     ],
+     "q": "Si un proche écrivait depuis un nouveau numéro, comment vérifierais-tu que c'est bien lui ?",
+     "c": "Défi : convenez d'une question ou d'une phrase de contrôle que seuls vos proches connaissent."
+    },
+    "it": {
+     "t": "Truffe sulle app di messaggistica",
+     "g": "Impara come messaggi che fingono di essere un amico o un parente chiedono aiuto urgente.",
+     "p": [
+      "Un messaggio da un nuovo numero dice di essere un tuo parente e di aver bisogno di soldi subito.",
+      "I truffatori usano foto rubate e una storia emotiva per farti agire senza controllare.",
+      "Chiama la persona sul numero che conosci o chiedi qualcosa che sa solo lei."
+     ],
+     "q": "Se un parente scrivesse da un nuovo numero, come verificheresti che sia davvero lui?",
+     "c": "Sfida: concordate una domanda o frase di controllo che conoscono solo le persone vicine."
+    },
+    "pt": {
+     "t": "Burlas em aplicações de mensagens",
+     "g": "Aprende como mensagens que fingem ser um amigo ou familiar pedem ajuda urgente.",
+     "p": [
+      "Uma mensagem de um número novo diz ser o teu familiar e precisar de dinheiro depressa.",
+      "Os burlões usam fotos roubadas e uma história emotiva para agires sem verificar.",
+      "Liga à pessoa para o número que conheces ou pergunta algo que só ela saiba."
+     ],
+     "q": "Se um familiar escrevesse de um número novo, como verificarias que era mesmo ele?",
+     "c": "Desafio: combinem uma pergunta ou frase de controlo que só as pessoas próximas conheçam."
+    },
+    "pt_BR": {
+     "t": "Golpes em apps de mensagens",
+     "g": "Aprenda como mensagens que fingem ser um amigo ou parente pedem ajuda urgente.",
+     "p": [
+      "Uma mensagem de um número novo diz ser seu parente e precisar de dinheiro rápido.",
+      "Golpistas usam fotos roubadas e uma história emocionante para você agir sem conferir.",
+      "Ligue para a pessoa no número que você conhece ou pergunte algo que só ela saiba."
+     ],
+     "q": "Se um parente escrevesse de um número novo, como você confirmaria que é ele mesmo?",
+     "c": "Desafio: combinem uma pergunta ou frase de controle que só as pessoas próximas conheçam."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Phone call scams",
+     "g": "Recognise callers pretending to be banks, tech support or officials.",
+     "p": [
+      "Scam callers claim to be your bank, a tech helper or an authority with a problem.",
+      "They create worry and ask you to act, pay or share details during the call.",
+      "Hang up, then call back using a number from the official website or your card."
+     ],
+     "q": "Has a stranger ever phoned claiming there was a problem with your account?",
+     "c": "Challenge: save your bank's official number in your phone so you can call back safely."
+    },
+    "de": {
+     "t": "Anruf-Betrug",
+     "g": "Erkenne Anrufer, die sich als Bank, Tech-Support oder Behörde ausgeben.",
+     "p": [
+      "Betrugsanrufer geben sich als deine Bank, ein Technikhelfer oder eine Behörde mit einem Problem aus.",
+      "Sie erzeugen Sorge und wollen, dass du während des Anrufs handelst, zahlst oder Daten nennst.",
+      "Leg auf und ruf dann unter einer Nummer von der offiziellen Webseite oder deiner Karte zurück."
+     ],
+     "q": "Hat dich schon mal ein Fremder angerufen und ein Problem mit deinem Konto behauptet?",
+     "c": "Challenge: Speichere die offizielle Nummer deiner Bank im Handy, damit du sicher zurückrufen kannst."
+    },
+    "es": {
+     "t": "Estafas por llamada telefónica",
+     "g": "Reconoce a quienes llaman fingiendo ser banco, soporte técnico o autoridades.",
+     "p": [
+      "Los estafadores dicen ser tu banco, un técnico o una autoridad con un problema.",
+      "Crean preocupación y te piden actuar, pagar o dar datos durante la llamada.",
+      "Cuelga y vuelve a llamar con un número de la web oficial o de tu tarjeta."
+     ],
+     "q": "¿Te ha llamado alguna vez un desconocido diciendo que había un problema con tu cuenta?",
+     "c": "Reto: guarda en tu móvil el número oficial de tu banco para devolver la llamada con seguridad."
+    },
+    "fr": {
+     "t": "Arnaques par téléphone",
+     "g": "Reconnais les appelants qui se font passer pour une banque, un support technique ou une autorité.",
+     "p": [
+      "Les escrocs disent être ta banque, un dépanneur informatique ou une autorité avec un problème.",
+      "Ils créent l'inquiétude et te demandent d'agir, de payer ou de donner des infos pendant l'appel.",
+      "Raccroche, puis rappelle avec un numéro du site officiel ou de ta carte."
+     ],
+     "q": "Un inconnu t'a-t-il déjà appelé en prétendant qu'il y avait un problème avec ton compte ?",
+     "c": "Défi : enregistre le numéro officiel de ta banque dans ton téléphone pour rappeler en sécurité."
+    },
+    "it": {
+     "t": "Truffe telefoniche",
+     "g": "Riconosci chi chiama fingendo di essere banca, assistenza tecnica o autorità.",
+     "p": [
+      "I truffatori dicono di essere la tua banca, un tecnico o un'autorità con un problema.",
+      "Creano preoccupazione e ti chiedono di agire, pagare o dare dati durante la chiamata.",
+      "Riattacca, poi richiama con un numero preso dal sito ufficiale o dalla tua carta."
+     ],
+     "q": "Ti ha mai telefonato uno sconosciuto dicendo che c'era un problema con il tuo conto?",
+     "c": "Sfida: salva nel telefono il numero ufficiale della tua banca per richiamare in sicurezza."
+    },
+    "pt": {
+     "t": "Burlas por chamada telefónica",
+     "g": "Reconhece quem liga a fingir ser banco, suporte técnico ou autoridade.",
+     "p": [
+      "Os burlões dizem ser o teu banco, um técnico ou uma autoridade com um problema.",
+      "Criam preocupação e pedem que ajas, pagues ou dês dados durante a chamada.",
+      "Desliga e volta a ligar para um número do site oficial ou do teu cartão."
+     ],
+     "q": "Alguma vez um desconhecido te ligou a dizer que havia um problema com a tua conta?",
+     "c": "Desafio: guarda no telemóvel o número oficial do teu banco para ligares de volta em segurança."
+    },
+    "pt_BR": {
+     "t": "Golpes por ligação telefônica",
+     "g": "Reconheça quem liga fingindo ser banco, suporte técnico ou autoridade.",
+     "p": [
+      "Golpistas dizem ser seu banco, um técnico ou uma autoridade com um problema.",
+      "Eles criam preocupação e pedem que você aja, pague ou passe dados durante a ligação.",
+      "Desligue e ligue de volta para um número do site oficial ou do seu cartão."
+     ],
+     "q": "Um desconhecido já ligou dizendo que havia um problema com a sua conta?",
+     "c": "Desafio: salve no celular o número oficial do seu banco para ligar de volta com segurança."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Caller ID can be faked",
+     "g": "Learn why the number on your screen does not prove who is calling.",
+     "p": [
+      "Scammers can make a call appear to come from a bank or a number you know.",
+      "A familiar name or number on screen is not proof of identity.",
+      "When in doubt, end the call and phone back using a number you looked up yourself."
+     ],
+     "q": "Did you know a phone number can be disguised? What surprised you?",
+     "c": "Challenge: tell someone close that caller ID can be faked, and share the hang-up-and-call-back rule."
+    },
+    "de": {
+     "t": "Die Anruferkennung lässt sich fälschen",
+     "g": "Lerne, warum die Nummer auf dem Display nicht beweist, wer anruft.",
+     "p": [
+      "Betrüger können einen Anruf so erscheinen lassen, als käme er von einer Bank oder bekannten Nummer.",
+      "Ein vertrauter Name oder eine Nummer auf dem Display ist kein Identitätsnachweis.",
+      "Im Zweifel beende den Anruf und ruf unter einer selbst herausgesuchten Nummer zurück."
+     ],
+     "q": "Wusstest du, dass sich eine Telefonnummer verschleiern lässt? Was hat dich überrascht?",
+     "c": "Challenge: Erzähl jemandem, dass die Anruferkennung gefälscht sein kann, und teile die Auflegen-und-zurückrufen-Regel."
+    },
+    "es": {
+     "t": "El identificador de llamadas se puede falsear",
+     "g": "Aprende por qué el número en pantalla no prueba quién llama.",
+     "p": [
+      "Los estafadores pueden hacer que una llamada parezca venir de un banco o de un número conocido.",
+      "Un nombre o número familiar en pantalla no es prueba de identidad.",
+      "Ante la duda, termina la llamada y vuelve a llamar a un número que hayas buscado tú."
+     ],
+     "q": "¿Sabías que un número de teléfono se puede disfrazar? ¿Qué te sorprendió?",
+     "c": "Reto: cuenta a alguien cercano que el identificador se puede falsear y comparte la regla de colgar y devolver la llamada."
+    },
+    "fr": {
+     "t": "L'identité de l'appelant peut être falsifiée",
+     "g": "Comprends pourquoi le numéro affiché ne prouve pas qui appelle.",
+     "p": [
+      "Des escrocs peuvent faire apparaître un appel comme venant d'une banque ou d'un numéro connu.",
+      "Un nom ou un numéro familier à l'écran n'est pas une preuve d'identité.",
+      "En cas de doute, termine l'appel et rappelle un numéro que tu as cherché toi-même."
+     ],
+     "q": "Savais-tu qu'un numéro de téléphone peut être masqué ? Qu'est-ce qui t'a surpris ?",
+     "c": "Défi : dis à un proche que l'affichage peut être falsifié et partage la règle raccrocher puis rappeler."
+    },
+    "it": {
+     "t": "L'ID chiamante si può falsificare",
+     "g": "Scopri perché il numero sullo schermo non prova chi sta chiamando.",
+     "p": [
+      "I truffatori possono far sembrare che una chiamata arrivi da una banca o da un numero che conosci.",
+      "Un nome o numero familiare sullo schermo non è una prova d'identità.",
+      "Nel dubbio, chiudi la chiamata e richiama un numero che hai cercato tu."
+     ],
+     "q": "Sapevi che un numero di telefono può essere camuffato? Cosa ti ha sorpreso?",
+     "c": "Sfida: di' a una persona vicina che l'ID chiamante si può falsificare e condividi la regola riattacca e richiama."
+    },
+    "pt": {
+     "t": "A identificação de chamadas pode ser falsificada",
+     "g": "Aprende porque o número no ecrã não prova quem está a ligar.",
+     "p": [
+      "Os burlões conseguem fazer uma chamada parecer vir de um banco ou de um número que conheces.",
+      "Um nome ou número familiar no ecrã não é prova de identidade.",
+      "Em caso de dúvida, termina a chamada e liga de volta para um número que tenhas procurado tu."
+     ],
+     "q": "Sabias que um número de telefone pode ser disfarçado? O que te surpreendeu?",
+     "c": "Desafio: conta a alguém próximo que a identificação pode ser falsificada e partilha a regra desligar e ligar de volta."
+    },
+    "pt_BR": {
+     "t": "O identificador de chamadas pode ser falsificado",
+     "g": "Aprenda por que o número na tela não prova quem está ligando.",
+     "p": [
+      "Golpistas conseguem fazer uma ligação parecer vir de um banco ou de um número que você conhece.",
+      "Um nome ou número familiar na tela não é prova de identidade.",
+      "Na dúvida, encerre a ligação e ligue de volta para um número que você mesmo procurou."
+     ],
+     "q": "Você sabia que um número de telefone pode ser disfarçado? O que surpreendeu você?",
+     "c": "Desafio: conte a alguém próximo que o identificador pode ser falsificado e compartilhe a regra desligar e ligar de volta."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fake online shops",
+     "g": "Learn the signs of a fake store: unreal prices, no contact details and odd payment methods.",
+     "p": [
+      "Prices far below everywhere else are a classic sign of a fake shop.",
+      "Look for a real address, contact details, clear return rules and honest reviews.",
+      "Be careful if a shop only accepts bank transfer or odd payment methods."
+     ],
+     "q": "What do you check before buying from a shop you have never used?",
+     "c": "Challenge: before your next online purchase, check the shop's contact details and return policy."
+    },
+    "de": {
+     "t": "Gefälschte Online-Shops",
+     "g": "Lerne die Zeichen eines Fake-Shops: unrealistische Preise, keine Kontaktdaten, seltsame Zahlungsarten.",
+     "p": [
+      "Preise weit unter allen anderen sind ein klassisches Zeichen eines Fake-Shops.",
+      "Achte auf echte Adresse, Kontaktdaten, klare Rückgaberegeln und ehrliche Bewertungen.",
+      "Vorsicht, wenn ein Shop nur Überweisung oder ungewöhnliche Zahlungsarten akzeptiert."
+     ],
+     "q": "Was prüfst du, bevor du in einem Shop kaufst, den du nicht kennst?",
+     "c": "Challenge: Prüfe vor deinem nächsten Online-Kauf Kontaktdaten und Rückgabebedingungen des Shops."
+    },
+    "es": {
+     "t": "Tiendas en línea falsas",
+     "g": "Aprende las señales de una tienda falsa: precios irreales, sin contacto y pagos raros.",
+     "p": [
+      "Precios muy por debajo de todos los demás son una señal clásica de tienda falsa.",
+      "Busca dirección real, datos de contacto, normas claras de devolución y opiniones honestas.",
+      "Cuidado si una tienda solo acepta transferencia u otros métodos de pago raros."
+     ],
+     "q": "¿Qué compruebas antes de comprar en una tienda que nunca has usado?",
+     "c": "Reto: antes de tu próxima compra en línea, revisa el contacto y la política de devoluciones de la tienda."
+    },
+    "fr": {
+     "t": "Fausses boutiques en ligne",
+     "g": "Apprends les signes d'une fausse boutique : prix irréels, aucun contact et moyens de paiement bizarres.",
+     "p": [
+      "Des prix très inférieurs à partout ailleurs sont un signe classique de fausse boutique.",
+      "Cherche une vraie adresse, des coordonnées, des règles de retour claires et des avis honnêtes.",
+      "Méfie-toi si une boutique n'accepte que le virement ou des paiements inhabituels."
+     ],
+     "q": "Que vérifies-tu avant d'acheter dans une boutique que tu ne connais pas ?",
+     "c": "Défi : avant ton prochain achat en ligne, vérifie les coordonnées et la politique de retour de la boutique."
+    },
+    "it": {
+     "t": "Negozi online falsi",
+     "g": "Impara i segni di un negozio finto: prezzi irreali, nessun contatto e pagamenti strani.",
+     "p": [
+      "Prezzi molto più bassi di ovunque sono un segno classico di negozio falso.",
+      "Cerca un indirizzo reale, contatti, regole di reso chiare e recensioni oneste.",
+      "Attenzione se un negozio accetta solo bonifico o metodi di pagamento insoliti."
+     ],
+     "q": "Cosa controlli prima di acquistare da un negozio che non hai mai usato?",
+     "c": "Sfida: prima del prossimo acquisto online, controlla i contatti e la politica di reso del negozio."
+    },
+    "pt": {
+     "t": "Lojas online falsas",
+     "g": "Aprende os sinais de uma loja falsa: preços irreais, sem contactos e pagamentos estranhos.",
+     "p": [
+      "Preços muito abaixo de todos os outros são um sinal clássico de loja falsa.",
+      "Procura morada real, contactos, regras de devolução claras e opiniões honestas.",
+      "Cuidado se uma loja só aceitar transferência ou métodos de pagamento estranhos."
+     ],
+     "q": "O que verificas antes de comprar numa loja que nunca usaste?",
+     "c": "Desafio: antes da próxima compra online, verifica os contactos e a política de devolução da loja."
+    },
+    "pt_BR": {
+     "t": "Lojas online falsas",
+     "g": "Aprenda os sinais de uma loja falsa: preços irreais, sem contato e pagamentos estranhos.",
+     "p": [
+      "Preços muito abaixo de todos os outros são um sinal clássico de loja falsa.",
+      "Procure endereço real, contatos, regras de devolução claras e avaliações honestas.",
+      "Cuidado se uma loja só aceitar transferência ou formas de pagamento estranhas."
+     ],
+     "q": "O que você confere antes de comprar numa loja que nunca usou?",
+     "c": "Desafio: antes da próxima compra online, confira os contatos e a política de devolução da loja."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Marketplace scams",
+     "g": "Stay safe when buying and selling second-hand items online.",
+     "p": [
+      "Beware of buyers who overpay, rush you, or want to move the chat elsewhere.",
+      "Meet in public places and use the platform's own payment and messaging tools.",
+      "Never accept a payment confirmation from an email or message; check your own account."
+     ],
+     "q": "Have you bought or sold second-hand online? How did it go?",
+     "c": "Challenge: write a three-point safety checklist for your next second-hand deal."
+    },
+    "de": {
+     "t": "Betrug auf Marktplätzen",
+     "g": "Bleib sicher beim Kaufen und Verkaufen gebrauchter Dinge im Netz.",
+     "p": [
+      "Vorsicht bei Käufern, die zu viel zahlen, drängeln oder den Chat verlagern wollen.",
+      "Triff dich an öffentlichen Orten und nutze die Zahlungs- und Nachrichtenfunktionen der Plattform.",
+      "Glaube keiner Zahlungsbestätigung per E-Mail oder Nachricht; prüfe dein eigenes Konto."
+     ],
+     "q": "Hast du schon gebraucht online gekauft oder verkauft? Wie lief es?",
+     "c": "Challenge: Schreibe eine Drei-Punkte-Sicherheitsliste für dein nächstes Gebrauchtgeschäft."
+    },
+    "es": {
+     "t": "Estafas en mercados de segunda mano",
+     "g": "Mantente seguro al comprar y vender artículos de segunda mano en línea.",
+     "p": [
+      "Cuidado con compradores que pagan de más, te meten prisa o quieren cambiar de chat.",
+      "Queda en lugares públicos y usa los pagos y mensajes de la propia plataforma.",
+      "Nunca aceptes una confirmación de pago por correo o mensaje; mira tu propia cuenta."
+     ],
+     "q": "¿Has comprado o vendido de segunda mano en línea? ¿Cómo fue?",
+     "c": "Reto: escribe una lista de seguridad de tres puntos para tu próxima operación de segunda mano."
+    },
+    "fr": {
+     "t": "Arnaques sur les places de marché",
+     "g": "Reste en sécurité en achetant et vendant d'occasion en ligne.",
+     "p": [
+      "Méfie-toi des acheteurs qui paient trop, te pressent ou veulent changer de messagerie.",
+      "Retrouve-toi dans des lieux publics et utilise les outils de paiement et de messagerie de la plateforme.",
+      "N'accepte jamais une confirmation de paiement reçue par e-mail ou message ; vérifie ton propre compte."
+     ],
+     "q": "As-tu déjà acheté ou vendu d'occasion en ligne ? Comment cela s'est passé ?",
+     "c": "Défi : écris une liste de sécurité en trois points pour ta prochaine transaction d'occasion."
+    },
+    "it": {
+     "t": "Truffe sui marketplace",
+     "g": "Resta al sicuro quando compri e vendi oggetti usati online.",
+     "p": [
+      "Attenzione ai compratori che pagano troppo, ti mettono fretta o vogliono spostare la chat.",
+      "Incontrati in luoghi pubblici e usa gli strumenti di pagamento e messaggi della piattaforma.",
+      "Non accettare mai una conferma di pagamento da email o messaggio; controlla il tuo conto."
+     ],
+     "q": "Hai mai comprato o venduto usato online? Com'è andata?",
+     "c": "Sfida: scrivi una lista di sicurezza in tre punti per il tuo prossimo affare di seconda mano."
+    },
+    "pt": {
+     "t": "Burlas em mercados de segunda mão",
+     "g": "Mantém-te seguro ao comprar e vender artigos usados online.",
+     "p": [
+      "Cuidado com compradores que pagam a mais, te apressam ou querem mudar de chat.",
+      "Encontra-te em locais públicos e usa os pagamentos e mensagens da própria plataforma.",
+      "Nunca aceites confirmação de pagamento por email ou mensagem; verifica a tua própria conta."
+     ],
+     "q": "Já compraste ou vendeste em segunda mão online? Como correu?",
+     "c": "Desafio: escreve uma lista de segurança de três pontos para o teu próximo negócio de segunda mão."
+    },
+    "pt_BR": {
+     "t": "Golpes em marketplaces",
+     "g": "Fique seguro ao comprar e vender itens usados online.",
+     "p": [
+      "Cuidado com compradores que pagam a mais, apressam você ou querem mudar de chat.",
+      "Encontre-se em locais públicos e use os pagamentos e mensagens da própria plataforma.",
+      "Nunca aceite confirmação de pagamento por e-mail ou mensagem; confira a sua própria conta."
+     ],
+     "q": "Você já comprou ou vendeu usado online? Como foi?",
+     "c": "Desafio: escreva uma lista de segurança de três pontos para o seu próximo negócio de usados."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gift card payment requests",
+     "g": "Learn why requests to pay with gift cards are a strong sign of a scam.",
+     "p": [
+      "No real bank, tax office or company demands payment in gift cards.",
+      "Gift cards are hard to trace or reverse, which is why scammers love them.",
+      "Any request to buy gift cards and read out the codes means: stop and tell someone."
+     ],
+     "q": "Would you know what to say to someone asking you for gift card codes?",
+     "c": "Challenge: memorise the rule: real organisations never ask for payment in gift cards."
+    },
+    "de": {
+     "t": "Zahlung mit Geschenkkarten",
+     "g": "Lerne, warum die Bitte um Zahlung mit Geschenkkarten ein starkes Betrugszeichen ist.",
+     "p": [
+      "Keine echte Bank, kein Finanzamt und keine Firma verlangt Zahlung per Geschenkkarte.",
+      "Geschenkkarten lassen sich schwer zurückverfolgen oder rückgängig machen, deshalb lieben Betrüger sie.",
+      "Jede Bitte, Karten zu kaufen und Codes vorzulesen, heißt: stopp und mit jemandem sprechen."
+     ],
+     "q": "Wüsstest du, was du jemandem sagst, der Geschenkkarten-Codes von dir will?",
+     "c": "Challenge: Merke dir die Regel: Echte Organisationen verlangen nie Zahlung per Geschenkkarte."
+    },
+    "es": {
+     "t": "Pagos con tarjetas regalo",
+     "g": "Aprende por qué pedir pagos con tarjetas regalo es una fuerte señal de estafa.",
+     "p": [
+      "Ningún banco, hacienda o empresa real exige pagar con tarjetas regalo.",
+      "Las tarjetas regalo son difíciles de rastrear o revertir, por eso encantan a los estafadores.",
+      "Toda petición de comprar tarjetas y leer los códigos significa: para y cuéntaselo a alguien."
+     ],
+     "q": "¿Sabrías qué decir a alguien que te pida códigos de tarjetas regalo?",
+     "c": "Reto: memoriza la regla: las organizaciones reales nunca piden pagos con tarjetas regalo."
+    },
+    "fr": {
+     "t": "Demandes de paiement par cartes cadeaux",
+     "g": "Apprends pourquoi une demande de paiement en cartes cadeaux est un fort signe d'arnaque.",
+     "p": [
+      "Aucune vraie banque, administration fiscale ou entreprise n'exige un paiement en cartes cadeaux.",
+      "Les cartes cadeaux sont difficiles à tracer ou annuler, d'où l'intérêt des escrocs.",
+      "Toute demande d'acheter des cartes et de lire les codes veut dire : stop, et parles-en à quelqu'un."
+     ],
+     "q": "Saurais-tu quoi dire à quelqu'un qui te réclame des codes de cartes cadeaux ?",
+     "c": "Défi : retiens la règle : les vraies organisations ne demandent jamais de paiement en cartes cadeaux."
+    },
+    "it": {
+     "t": "Richieste di pagamento con carte regalo",
+     "g": "Scopri perché chiedere pagamenti con carte regalo è un forte segno di truffa.",
+     "p": [
+      "Nessuna banca, ufficio delle imposte o azienda vera pretende pagamenti con carte regalo.",
+      "Le carte regalo sono difficili da rintracciare o annullare, per questo piacciono ai truffatori.",
+      "Ogni richiesta di comprare carte e leggere i codici significa: fermati e parlane con qualcuno."
+     ],
+     "q": "Sapresti cosa dire a chi ti chiede i codici di carte regalo?",
+     "c": "Sfida: memorizza la regola: le organizzazioni vere non chiedono mai pagamenti con carte regalo."
+    },
+    "pt": {
+     "t": "Pedidos de pagamento com cartões-presente",
+     "g": "Aprende porque pedir pagamento com cartões-presente é um forte sinal de burla.",
+     "p": [
+      "Nenhum banco, serviço de finanças ou empresa verdadeira exige pagamento com cartões-presente.",
+      "Os cartões-presente são difíceis de rastrear ou reverter, por isso os burlões gostam deles.",
+      "Qualquer pedido para comprar cartões e ler os códigos significa: pára e conta a alguém."
+     ],
+     "q": "Saberias o que dizer a alguém que te peça códigos de cartões-presente?",
+     "c": "Desafio: memoriza a regra: organizações verdadeiras nunca pedem pagamento com cartões-presente."
+    },
+    "pt_BR": {
+     "t": "Pedidos de pagamento com cartões-presente",
+     "g": "Aprenda por que pedir pagamento com cartões-presente é um forte sinal de golpe.",
+     "p": [
+      "Nenhum banco, órgão de impostos ou empresa de verdade exige pagamento com cartões-presente.",
+      "Cartões-presente são difíceis de rastrear ou reverter, por isso golpistas gostam deles.",
+      "Qualquer pedido para comprar cartões e ler os códigos significa: pare e conte a alguém."
+     ],
+     "q": "Você saberia o que dizer a alguém que pedisse códigos de cartões-presente?",
+     "c": "Desafio: memorize a regra: organizações de verdade nunca pedem pagamento com cartões-presente."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "QR code tricks",
+     "g": "Understand how fake QR codes on posters or messages lead to harmful websites.",
+     "p": [
+      "A QR code hides the web address, so you cannot see where it goes by looking.",
+      "Scammers stick fake codes over real ones on posters, parking signs and menus.",
+      "After scanning, check the address shown and never enter passwords or payment details unless sure."
+     ],
+     "q": "Where do you meet QR codes most often in daily life?",
+     "c": "Challenge: next time you scan a QR code, read the preview address before opening it."
+    },
+    "de": {
+     "t": "QR-Code-Tricks",
+     "g": "Verstehe, wie gefälschte QR-Codes auf Plakaten oder in Nachrichten zu schädlichen Seiten führen.",
+     "p": [
+      "Ein QR-Code verbirgt die Webadresse, man sieht also nicht, wohin er führt.",
+      "Betrüger kleben falsche Codes über echte auf Plakate, Parkautomaten und Speisekarten.",
+      "Prüfe nach dem Scannen die angezeigte Adresse und gib Passwörter oder Zahlungsdaten nur bei Sicherheit ein."
+     ],
+     "q": "Wo begegnen dir QR-Codes im Alltag am häufigsten?",
+     "c": "Challenge: Lies beim nächsten QR-Code die Vorschau-Adresse, bevor du sie öffnest."
+    },
+    "es": {
+     "t": "Trucos con códigos QR",
+     "g": "Entiende cómo códigos QR falsos en carteles o mensajes llevan a sitios dañinos.",
+     "p": [
+      "Un código QR oculta la dirección web, así que no ves adónde lleva con solo mirarlo.",
+      "Los estafadores pegan códigos falsos sobre los reales en carteles, parquímetros y cartas.",
+      "Tras escanear, revisa la dirección mostrada y no pongas claves ni pagos si no estás seguro."
+     ],
+     "q": "¿Dónde te encuentras códigos QR con más frecuencia en el día a día?",
+     "c": "Reto: la próxima vez que escanees un QR, lee la dirección de la vista previa antes de abrirla."
+    },
+    "fr": {
+     "t": "Pièges des codes QR",
+     "g": "Comprends comment de faux codes QR sur des affiches ou messages mènent à des sites nuisibles.",
+     "p": [
+      "Un code QR cache l'adresse web, donc on ne voit pas où il mène en le regardant.",
+      "Des escrocs collent de faux codes par-dessus les vrais sur affiches, horodateurs et menus.",
+      "Après le scan, vérifie l'adresse affichée et ne saisis ni mot de passe ni paiement sans certitude."
+     ],
+     "q": "Où croises-tu le plus souvent des codes QR dans ta vie quotidienne ?",
+     "c": "Défi : au prochain scan d'un code QR, lis l'adresse de l'aperçu avant de l'ouvrir."
+    },
+    "it": {
+     "t": "Trucchi con i codici QR",
+     "g": "Capisci come falsi codici QR su manifesti o messaggi portano a siti dannosi.",
+     "p": [
+      "Un codice QR nasconde l'indirizzo web, quindi non vedi dove porta guardandolo.",
+      "I truffatori incollano codici falsi sopra quelli veri su manifesti, parcometri e menu.",
+      "Dopo la scansione controlla l'indirizzo mostrato e non inserire password o pagamenti se non sei sicuro."
+     ],
+     "q": "Dove incontri più spesso i codici QR nella vita quotidiana?",
+     "c": "Sfida: la prossima volta che scansioni un QR, leggi l'indirizzo dell'anteprima prima di aprirlo."
+    },
+    "pt": {
+     "t": "Truques com códigos QR",
+     "g": "Percebe como códigos QR falsos em cartazes ou mensagens levam a sites prejudiciais.",
+     "p": [
+      "Um código QR esconde o endereço web, por isso não vês para onde leva só de olhar.",
+      "Os burlões colam códigos falsos por cima dos verdadeiros em cartazes, parquímetros e ementas.",
+      "Depois de ler, verifica o endereço mostrado e não ponhas palavras-passe nem pagamentos se não tiveres a certeza."
+     ],
+     "q": "Onde encontras códigos QR com mais frequência no dia a dia?",
+     "c": "Desafio: da próxima vez que leres um QR, lê o endereço da pré-visualização antes de abrir."
+    },
+    "pt_BR": {
+     "t": "Truques com códigos QR",
+     "g": "Entenda como códigos QR falsos em cartazes ou mensagens levam a sites prejudiciais.",
+     "p": [
+      "Um código QR esconde o endereço web, então você não vê para onde leva só de olhar.",
+      "Golpistas colam códigos falsos por cima dos verdadeiros em cartazes, parquímetros e cardápios.",
+      "Depois de escanear, confira o endereço mostrado e não digite senhas nem pagamentos se não tiver certeza."
+     ],
+     "q": "Onde você encontra códigos QR com mais frequência no dia a dia?",
+     "c": "Desafio: da próxima vez que escanear um QR, leia o endereço da pré-visualização antes de abrir."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pause, verify, then act",
+     "g": "Learn a simple three-step habit for any unexpected request for money or data.",
+     "p": [
+      "Pause: take a breath and do not respond straight away to pressure.",
+      "Verify: contact the person or company through a number or app you already trust.",
+      "Act only when it is confirmed, and tell someone if anything still feels wrong."
+     ],
+     "q": "Can you think of a recent request where this habit would have helped?",
+     "c": "Challenge: practise saying pause, verify, act out loud once today."
+    },
+    "de": {
+     "t": "Innehalten, prüfen, handeln",
+     "g": "Lerne eine einfache Drei-Schritte-Gewohnheit für jede unerwartete Bitte um Geld oder Daten.",
+     "p": [
+      "Innehalten: Atme durch und reagiere nicht sofort auf Druck.",
+      "Prüfen: Kontaktiere Person oder Firma über eine Nummer oder App, der du schon vertraust.",
+      "Handle erst nach Bestätigung und sprich mit jemandem, wenn sich etwas weiter falsch anfühlt."
+     ],
+     "q": "Fällt dir eine aktuelle Bitte ein, bei der diese Gewohnheit geholfen hätte?",
+     "c": "Challenge: Sag heute einmal laut: innehalten, prüfen, handeln."
+    },
+    "es": {
+     "t": "Pausa, verifica y actúa",
+     "g": "Aprende un hábito sencillo de tres pasos ante cualquier petición inesperada de dinero o datos.",
+     "p": [
+      "Pausa: respira y no respondas de inmediato a la presión.",
+      "Verifica: contacta a la persona o empresa por un número o app en la que ya confíes.",
+      "Actúa solo cuando esté confirmado y cuéntalo a alguien si algo sigue sin cuadrar."
+     ],
+     "q": "¿Se te ocurre una petición reciente en la que este hábito habría ayudado?",
+     "c": "Reto: practica decir pausa, verifica, actúa en voz alta una vez hoy."
+    },
+    "fr": {
+     "t": "Pause, vérifie, puis agis",
+     "g": "Apprends une habitude simple en trois étapes face à toute demande inattendue d'argent ou de données.",
+     "p": [
+      "Pause : respire et ne réponds pas tout de suite à la pression.",
+      "Vérifie : contacte la personne ou l'entreprise via un numéro ou une appli en qui tu as déjà confiance.",
+      "Agis seulement une fois confirmé, et parles-en à quelqu'un si quelque chose cloche encore."
+     ],
+     "q": "Vois-tu une demande récente où cette habitude t'aurait aidé ?",
+     "c": "Défi : entraîne-toi à dire à voix haute pause, vérifie, agis une fois aujourd'hui."
+    },
+    "it": {
+     "t": "Pausa, verifica, poi agisci",
+     "g": "Impara un'abitudine semplice in tre passi per ogni richiesta inattesa di denaro o dati.",
+     "p": [
+      "Pausa: respira e non rispondere subito alla pressione.",
+      "Verifica: contatta la persona o l'azienda con un numero o un'app di cui ti fidi già.",
+      "Agisci solo a conferma avvenuta e parlane con qualcuno se qualcosa ancora non torna."
+     ],
+     "q": "Ti viene in mente una richiesta recente in cui questa abitudine ti avrebbe aiutato?",
+     "c": "Sfida: esercitati a dire ad alta voce pausa, verifica, agisci una volta oggi."
+    },
+    "pt": {
+     "t": "Pausa, verifica e age",
+     "g": "Aprende um hábito simples de três passos perante qualquer pedido inesperado de dinheiro ou dados.",
+     "p": [
+      "Pausa: respira e não respondas logo à pressão.",
+      "Verifica: contacta a pessoa ou empresa por um número ou aplicação em que já confias.",
+      "Age só depois de confirmado e conta a alguém se algo ainda parecer errado."
+     ],
+     "q": "Lembras-te de um pedido recente em que este hábito teria ajudado?",
+     "c": "Desafio: pratica dizer pausa, verifica, age em voz alta uma vez hoje."
+    },
+    "pt_BR": {
+     "t": "Pausa, verifique e aja",
+     "g": "Aprenda um hábito simples de três passos diante de qualquer pedido inesperado de dinheiro ou dados.",
+     "p": [
+      "Pausa: respire e não responda logo à pressão.",
+      "Verifique: contate a pessoa ou empresa por um número ou app em que você já confia.",
+      "Aja só depois de confirmado e conte a alguém se algo ainda parecer errado."
+     ],
+     "q": "Você lembra de um pedido recente em que esse hábito teria ajudado?",
+     "c": "Desafio: pratique dizer pausa, verifique, aja em voz alta uma vez hoje."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Scam awareness challenge",
+     "g": "Share one scam warning sign with a friend or family member today.",
+     "p": [
+      "Teaching someone else is one of the best ways to remember what you learned.",
+      "Pick one sign, such as urgency, gift cards or caller ID tricks, and explain it simply.",
+      "Be kind: anyone can be fooled, so share without making anyone feel foolish."
+     ],
+     "q": "Who in your life would most benefit from hearing a scam warning from you?",
+     "c": "Challenge: share one scam warning sign with someone today, kindly and briefly."
+    },
+    "de": {
+     "t": "Betrugs-Aufmerksamkeits-Challenge",
+     "g": "Teile heute ein Betrugs-Warnzeichen mit einem Freund oder Familienmitglied.",
+     "p": [
+      "Jemand anderem etwas beizubringen ist eine der besten Arten, Gelerntes zu behalten.",
+      "Wähle ein Zeichen wie Dringlichkeit, Geschenkkarten oder Anruferkennungs-Tricks und erkläre es einfach.",
+      "Sei freundlich: Jeder kann getäuscht werden, also teile, ohne dass sich jemand dumm fühlt."
+     ],
+     "q": "Wem in deinem Umfeld würde eine Betrugswarnung von dir am meisten helfen?",
+     "c": "Challenge: Teile heute ein Betrugs-Warnzeichen mit jemandem, freundlich und kurz."
+    },
+    "es": {
+     "t": "Reto de conciencia sobre estafas",
+     "g": "Comparte hoy una señal de alerta de estafa con un amigo o familiar.",
+     "p": [
+      "Enseñar a otra persona es una de las mejores formas de recordar lo aprendido.",
+      "Elige una señal, como la urgencia, las tarjetas regalo o el identificador falso, y explícala con sencillez.",
+      "Sé amable: cualquiera puede ser engañado, así que comparte sin hacer sentir tonto a nadie."
+     ],
+     "q": "¿Quién de tu entorno se beneficiaría más de oír un aviso de estafa de tu parte?",
+     "c": "Reto: comparte hoy una señal de estafa con alguien, con amabilidad y brevedad."
+    },
+    "fr": {
+     "t": "Défi de vigilance anti-arnaques",
+     "g": "Partage aujourd'hui un signal d'alerte d'arnaque avec un ami ou un proche.",
+     "p": [
+      "Apprendre quelque chose à quelqu'un est l'un des meilleurs moyens de retenir ce qu'on a appris.",
+      "Choisis un signal, comme l'urgence, les cartes cadeaux ou les faux numéros, et explique-le simplement.",
+      "Sois bienveillant : tout le monde peut être trompé, partage sans faire sentir quelqu'un bête."
+     ],
+     "q": "Qui, dans ton entourage, tirerait le plus de profit d'une alerte arnaque venant de toi ?",
+     "c": "Défi : partage aujourd'hui un signal d'arnaque avec quelqu'un, gentiment et brièvement."
+    },
+    "it": {
+     "t": "Sfida di attenzione alle truffe",
+     "g": "Condividi oggi un segnale d'allarme di truffa con un amico o un familiare.",
+     "p": [
+      "Insegnare qualcosa a un altro è uno dei modi migliori per ricordare ciò che hai imparato.",
+      "Scegli un segnale, come urgenza, carte regalo o falsi ID chiamante, e spiegalo in modo semplice.",
+      "Sii gentile: chiunque può essere ingannato, quindi condividi senza far sentire nessuno sciocco."
+     ],
+     "q": "Chi nella tua vita trarrebbe più vantaggio da un avviso sulle truffe da parte tua?",
+     "c": "Sfida: condividi oggi un segnale di truffa con qualcuno, con gentilezza e in breve."
+    },
+    "pt": {
+     "t": "Desafio de atenção às burlas",
+     "g": "Partilha hoje um sinal de alerta de burla com um amigo ou familiar.",
+     "p": [
+      "Ensinar outra pessoa é uma das melhores formas de lembrar o que aprendeste.",
+      "Escolhe um sinal, como urgência, cartões-presente ou identificação falsa, e explica-o de forma simples.",
+      "Sê simpático: qualquer pessoa pode ser enganada, por isso partilha sem fazer ninguém sentir-se tolo."
+     ],
+     "q": "Quem na tua vida mais beneficiaria de ouvir um aviso de burla da tua parte?",
+     "c": "Desafio: partilha hoje um sinal de burla com alguém, com simpatia e brevidade."
+    },
+    "pt_BR": {
+     "t": "Desafio de atenção aos golpes",
+     "g": "Compartilhe hoje um sinal de alerta de golpe com um amigo ou familiar.",
+     "p": [
+      "Ensinar outra pessoa é uma das melhores formas de lembrar o que você aprendeu.",
+      "Escolha um sinal, como urgência, cartões-presente ou identificador falso, e explique de forma simples.",
+      "Seja gentil: qualquer um pode ser enganado, então compartilhe sem fazer ninguém se sentir bobo."
+     ],
+     "q": "Quem na sua vida mais se beneficiaria de ouvir um aviso de golpe vindo de você?",
+     "c": "Desafio: compartilhe hoje um sinal de golpe com alguém, com gentileza e brevidade."
+    }
+   }
+  }
+ ]
+}

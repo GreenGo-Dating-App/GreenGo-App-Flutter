@@ -1,0 +1,835 @@
+{
+ "topic": "studying",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How memory works",
+     "g": "Get a simple picture of encoding, storage and retrieval, and where studying goes wrong.",
+     "p": [
+      "Encoding means taking information in, storage means keeping it, retrieval means getting it back out.",
+      "Most studying focuses on taking in, but practising retrieval is what strengthens recall.",
+      "If you can't recall something, it may be a retrieval problem, not a lack of intelligence."
+     ],
+     "q": "Which of the three steps do you think is your weakest right now?",
+     "c": "Close your notes and write down everything you remember from today's study."
+    },
+    "de": {
+     "t": "Wie das Gedächtnis funktioniert",
+     "g": "Du bekommst ein einfaches Bild von Aufnehmen, Speichern und Abrufen und siehst, wo Lernen scheitert.",
+     "p": [
+      "Aufnehmen heißt Information einlesen, Speichern sie behalten, Abrufen sie wieder hervorholen.",
+      "Die meiste Lernzeit gilt dem Aufnehmen, doch das Üben des Abrufs stärkt das Erinnern.",
+      "Wenn dir etwas nicht einfällt, ist es oft ein Abrufproblem und kein Mangel an Intelligenz."
+     ],
+     "q": "Welcher der drei Schritte ist bei dir gerade der schwächste?",
+     "c": "Klapp deine Notizen zu und schreib alles auf, was du vom heutigen Lernen weißt."
+    },
+    "es": {
+     "t": "Cómo funciona la memoria",
+     "g": "Ten una imagen sencilla de codificar, almacenar y recuperar, y de dónde falla el estudio.",
+     "p": [
+      "Codificar es captar la información, almacenar es conservarla y recuperar es sacarla de nuevo.",
+      "Casi todo el estudio se centra en captar, pero practicar la recuperación es lo que fortalece el recuerdo.",
+      "Si no recuerdas algo, puede ser un problema de recuperación, no falta de inteligencia."
+     ],
+     "q": "¿Cuál de los tres pasos crees que es hoy tu punto más débil?",
+     "c": "Cierra los apuntes y escribe todo lo que recuerdes del estudio de hoy."
+    },
+    "fr": {
+     "t": "Comment fonctionne la mémoire",
+     "g": "Obtiens une image simple de l'encodage, du stockage et de la récupération, et de ce qui cloche en étudiant.",
+     "p": [
+      "Encoder, c'est faire entrer l'information, stocker la garder, récupérer la ressortir.",
+      "On étudie surtout pour faire entrer, mais s'entraîner à récupérer renforce vraiment le souvenir.",
+      "Si tu ne te souviens pas, c'est peut-être un souci de récupération, pas un manque d'intelligence."
+     ],
+     "q": "Laquelle des trois étapes est ta plus faible en ce moment ?",
+     "c": "Ferme tes notes et écris tout ce dont tu te souviens de l'étude d'aujourd'hui."
+    },
+    "it": {
+     "t": "Come funziona la memoria",
+     "g": "Ottieni un'immagine semplice di codifica, immagazzinamento e recupero, e di dove lo studio sbaglia.",
+     "p": [
+      "Codificare è far entrare l'informazione, immagazzinare è conservarla, recuperare è riportarla fuori.",
+      "Quasi tutto lo studio punta a far entrare, ma allenare il recupero rafforza davvero il ricordo.",
+      "Se non ricordi qualcosa, può essere un problema di recupero, non di intelligenza."
+     ],
+     "q": "Quale dei tre passi pensi sia il tuo più debole adesso?",
+     "c": "Chiudi gli appunti e scrivi tutto ciò che ricordi dello studio di oggi."
+    },
+    "pt": {
+     "t": "Como funciona a memória",
+     "g": "Fica com uma imagem simples de codificar, guardar e recuperar, e de onde o estudo falha.",
+     "p": [
+      "Codificar é captar a informação, guardar é conservá-la e recuperar é voltar a tirá-la cá para fora.",
+      "Quase todo o estudo foca-se em captar, mas treinar a recuperação é o que reforça a memória.",
+      "Se não te lembras de algo, pode ser um problema de recuperação e não falta de inteligência."
+     ],
+     "q": "Qual dos três passos achas que é o teu mais fraco agora?",
+     "c": "Fecha os apontamentos e escreve tudo o que te lembras do estudo de hoje."
+    },
+    "pt_BR": {
+     "t": "Como funciona a memória",
+     "g": "Tenha uma imagem simples de codificar, guardar e recuperar, e de onde o estudo falha.",
+     "p": [
+      "Codificar é captar a informação, guardar é conservá-la e recuperar é trazê-la de volta.",
+      "Quase todo estudo foca em captar, mas treinar a recuperação é o que fortalece a memória.",
+      "Se você não lembra algo, pode ser um problema de recuperação e não falta de inteligência."
+     ],
+     "q": "Qual dos três passos você acha que é o mais fraco agora?",
+     "c": "Feche as anotações e escreva tudo o que você lembra do estudo de hoje."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Working memory limits",
+     "g": "Learn why you can juggle only a few new ideas at once and how to split material.",
+     "p": [
+      "Working memory holds only a handful of new items at a time, so overload happens fast.",
+      "Break a big topic into small pieces and master one piece before adding the next.",
+      "Write things down to free your mind, and avoid doing other mental tasks meanwhile."
+     ],
+     "q": "When has too much new information at once left you feeling lost?",
+     "c": "Take one hard topic and split it into three small pieces on paper."
+    },
+    "de": {
+     "t": "Grenzen des Arbeitsgedächtnisses",
+     "g": "Du erfährst, warum du nur wenige neue Ideen gleichzeitig halten kannst und wie du Stoff teilst.",
+     "p": [
+      "Das Arbeitsgedächtnis hält nur eine Handvoll neuer Dinge gleichzeitig, Überlastung kommt schnell.",
+      "Zerlege ein großes Thema in kleine Stücke und beherrsche eins, bevor das nächste dazukommt.",
+      "Schreib Dinge auf, um den Kopf zu entlasten, und mach nebenbei keine anderen Denkaufgaben."
+     ],
+     "q": "Wann hat dich zu viel neue Information auf einmal ratlos gemacht?",
+     "c": "Nimm ein schweres Thema und teile es auf Papier in drei kleine Teile."
+    },
+    "es": {
+     "t": "Límites de la memoria de trabajo",
+     "g": "Aprende por qué solo puedes manejar pocas ideas nuevas a la vez y cómo dividir el material.",
+     "p": [
+      "La memoria de trabajo retiene solo un puñado de elementos nuevos a la vez, y se satura rápido.",
+      "Divide un tema grande en piezas pequeñas y domina una antes de añadir la siguiente.",
+      "Anota cosas para liberar la mente y evita hacer otras tareas mentales mientras tanto."
+     ],
+     "q": "¿Cuándo te ha desbordado demasiada información nueva de golpe?",
+     "c": "Toma un tema difícil y divídelo en tres piezas pequeñas en papel."
+    },
+    "fr": {
+     "t": "Les limites de la mémoire de travail",
+     "g": "Découvre pourquoi tu ne peux jongler qu'avec peu d'idées nouvelles et comment découper la matière.",
+     "p": [
+      "La mémoire de travail ne retient que quelques éléments nouveaux à la fois, la surcharge arrive vite.",
+      "Découpe un grand sujet en petits morceaux et maîtrise-en un avant d'ajouter le suivant.",
+      "Écris pour libérer ton esprit et évite de faire d'autres tâches mentales en même temps."
+     ],
+     "q": "Quand trop d'informations nouvelles d'un coup t'ont-elles fait perdre pied ?",
+     "c": "Prends un sujet difficile et découpe-le en trois petits morceaux sur papier."
+    },
+    "it": {
+     "t": "I limiti della memoria di lavoro",
+     "g": "Scopri perché puoi gestire poche idee nuove alla volta e come dividere il materiale.",
+     "p": [
+      "La memoria di lavoro trattiene solo una manciata di elementi nuovi alla volta e si sovraccarica in fretta.",
+      "Spezza un argomento grande in piccoli pezzi e padroneggia uno prima di aggiungere il successivo.",
+      "Scrivi le cose per liberare la mente ed evita altri compiti mentali nel frattempo."
+     ],
+     "q": "Quando troppe informazioni nuove insieme ti hanno fatto perdere il filo?",
+     "c": "Prendi un argomento difficile e dividilo in tre piccoli pezzi su carta."
+    },
+    "pt": {
+     "t": "Os limites da memória de trabalho",
+     "g": "Percebe porque só consegues manter poucas ideias novas ao mesmo tempo e como dividir a matéria.",
+     "p": [
+      "A memória de trabalho retém apenas um punhado de itens novos de cada vez e sobrecarrega depressa.",
+      "Divide um tema grande em pedaços pequenos e domina um antes de juntares o seguinte.",
+      "Escreve as coisas para libertar a mente e evita outras tarefas mentais entretanto."
+     ],
+     "q": "Quando é que demasiada informação nova de uma vez te deixou perdido?",
+     "c": "Pega num tema difícil e divide-o em três pedaços pequenos no papel."
+    },
+    "pt_BR": {
+     "t": "Limites da memória de trabalho",
+     "g": "Entenda por que você só segura poucas ideias novas ao mesmo tempo e como dividir o conteúdo.",
+     "p": [
+      "A memória de trabalho retém só um punhado de itens novos por vez e sobrecarrega rápido.",
+      "Divida um tema grande em pedaços pequenos e domine um antes de juntar o próximo.",
+      "Anote as coisas para liberar a mente e evite outras tarefas mentais enquanto isso."
+     ],
+     "q": "Quando informação nova demais de uma vez deixou você perdido?",
+     "c": "Pegue um tema difícil e divida em três pedaços pequenos no papel."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The forgetting curve",
+     "g": "See how fast we forget new material and why well-timed review saves time.",
+     "p": [
+      "Without review, we forget a large share of new material within days.",
+      "Each review makes the memory last longer, so gaps between reviews can grow.",
+      "A few short reviews beat one long cram session the night before."
+     ],
+     "q": "What do you remember best from a class you took last week?",
+     "c": "Pick today's notes and plan three quick reviews: tomorrow, in 3 days, in a week."
+    },
+    "de": {
+     "t": "Die Vergessenskurve",
+     "g": "Du siehst, wie schnell wir Neues vergessen und warum gut getimte Wiederholung Zeit spart.",
+     "p": [
+      "Ohne Wiederholung vergessen wir innerhalb weniger Tage einen großen Teil des Neuen.",
+      "Jede Wiederholung hält die Erinnerung länger, die Abstände dürfen also wachsen.",
+      "Mehrere kurze Wiederholungen schlagen eine lange Büffelnacht vor der Prüfung."
+     ],
+     "q": "Woran erinnerst du dich aus dem Unterricht der letzten Woche am besten?",
+     "c": "Plane für die heutigen Notizen drei Kurzwiederholungen: morgen, in 3 Tagen, in einer Woche."
+    },
+    "es": {
+     "t": "La curva del olvido",
+     "g": "Descubre lo rápido que olvidamos lo nuevo y por qué repasar a tiempo ahorra horas.",
+     "p": [
+      "Sin repaso, olvidamos buena parte de lo nuevo en pocos días.",
+      "Cada repaso hace que el recuerdo dure más, así que los intervalos pueden alargarse.",
+      "Varios repasos cortos superan un atracón largo la noche anterior."
+     ],
+     "q": "¿Qué recuerdas mejor de una clase de la semana pasada?",
+     "c": "Elige los apuntes de hoy y planea tres repasos rápidos: mañana, en 3 días y en una semana."
+    },
+    "fr": {
+     "t": "La courbe de l'oubli",
+     "g": "Vois à quelle vitesse on oublie le nouveau et pourquoi réviser au bon moment fait gagner du temps.",
+     "p": [
+      "Sans révision, on oublie une grande part du nouveau en quelques jours.",
+      "Chaque révision prolonge le souvenir, donc les intervalles peuvent s'allonger.",
+      "Plusieurs courtes révisions valent mieux qu'un long bachotage la veille."
+     ],
+     "q": "Que retiens-tu le mieux d'un cours de la semaine dernière ?",
+     "c": "Prends les notes d'aujourd'hui et planifie trois révisions rapides : demain, dans 3 jours, dans une semaine."
+    },
+    "it": {
+     "t": "La curva dell'oblio",
+     "g": "Scopri quanto in fretta dimentichiamo e perché ripassare al momento giusto fa risparmiare tempo.",
+     "p": [
+      "Senza ripasso dimentichiamo gran parte del nuovo in pochi giorni.",
+      "Ogni ripasso fa durare più a lungo il ricordo, quindi gli intervalli possono crescere.",
+      "Alcuni ripassi brevi battono una lunga nottata di studio prima dell'esame."
+     ],
+     "q": "Cosa ricordi meglio di una lezione della settimana scorsa?",
+     "c": "Prendi gli appunti di oggi e pianifica tre ripassi veloci: domani, tra 3 giorni, tra una settimana."
+    },
+    "pt": {
+     "t": "A curva do esquecimento",
+     "g": "Vê quão depressa esquecemos o novo e porque rever no momento certo poupa tempo.",
+     "p": [
+      "Sem revisão, esquecemos grande parte do novo em poucos dias.",
+      "Cada revisão faz a memória durar mais, por isso os intervalos podem aumentar.",
+      "Várias revisões curtas valem mais do que uma maratona na véspera."
+     ],
+     "q": "De que te lembras melhor de uma aula da semana passada?",
+     "c": "Pega nos apontamentos de hoje e planeia três revisões rápidas: amanhã, daqui a 3 dias, daqui a uma semana."
+    },
+    "pt_BR": {
+     "t": "A curva do esquecimento",
+     "g": "Veja quão rápido esquecemos o novo e por que revisar no momento certo poupa tempo.",
+     "p": [
+      "Sem revisão, esquecemos boa parte do novo em poucos dias.",
+      "Cada revisão faz a memória durar mais, então os intervalos podem aumentar.",
+      "Várias revisões curtas valem mais que uma maratona na véspera."
+     ],
+     "q": "Do que você mais se lembra de uma aula da semana passada?",
+     "c": "Pegue as anotações de hoje e planeje três revisões rápidas: amanhã, em 3 dias e em uma semana."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Attention is the gateway",
+     "g": "Understand why you cannot remember what you never noticed, and how to focus fully.",
+     "p": [
+      "Information that never gets your attention never reaches memory in the first place.",
+      "Before studying, decide what to ignore: phone, tabs, chatter and clutter.",
+      "Short, fully focused bursts work better than long, half-attentive hours."
+     ],
+     "q": "What most often steals your attention when you study?",
+     "c": "Do 15 minutes today with one task only and note how much you remember."
+    },
+    "de": {
+     "t": "Aufmerksamkeit ist das Tor",
+     "g": "Du verstehst, warum du dir nicht merkst, was du nie bemerkt hast, und wie du dich voll konzentrierst.",
+     "p": [
+      "Information, die keine Aufmerksamkeit bekommt, erreicht das Gedächtnis gar nicht erst.",
+      "Entscheide vor dem Lernen, was du ausblendest: Handy, Tabs, Gerede und Unordnung.",
+      "Kurze, voll konzentrierte Phasen wirken besser als lange, halb aufmerksame Stunden."
+     ],
+     "q": "Was stiehlt dir beim Lernen am häufigsten die Aufmerksamkeit?",
+     "c": "Arbeite heute 15 Minuten nur an einer Aufgabe und notiere, wie viel du behältst."
+    },
+    "es": {
+     "t": "La atención es la puerta",
+     "g": "Entiende por qué no recuerdas lo que nunca notaste y cómo concentrarte del todo.",
+     "p": [
+      "La información que no recibe atención ni siquiera llega a la memoria.",
+      "Antes de estudiar, decide qué ignorar: móvil, pestañas, charla y desorden.",
+      "Ráfagas cortas y muy concentradas funcionan mejor que horas largas y distraídas."
+     ],
+     "q": "¿Qué te roba más la atención cuando estudias?",
+     "c": "Dedica hoy 15 minutos a una sola tarea y anota cuánto recuerdas."
+    },
+    "fr": {
+     "t": "L'attention est la porte d'entrée",
+     "g": "Comprends pourquoi on ne retient pas ce qu'on n'a pas remarqué et comment se concentrer pleinement.",
+     "p": [
+      "Une information qui n'obtient pas ton attention n'arrive jamais jusqu'à la mémoire.",
+      "Avant d'étudier, décide quoi ignorer : téléphone, onglets, bavardages et désordre.",
+      "De courtes périodes très concentrées valent mieux que de longues heures à moitié attentives."
+     ],
+     "q": "Qu'est-ce qui vole le plus souvent ton attention quand tu étudies ?",
+     "c": "Fais 15 minutes aujourd'hui sur une seule tâche et note ce que tu retiens."
+    },
+    "it": {
+     "t": "L'attenzione è la porta d'ingresso",
+     "g": "Capisci perché non ricordi ciò che non hai mai notato e come concentrarti davvero.",
+     "p": [
+      "L'informazione che non riceve attenzione non arriva nemmeno alla memoria.",
+      "Prima di studiare decidi cosa ignorare: telefono, schede, chiacchiere e disordine.",
+      "Brevi scatti molto concentrati funzionano meglio di lunghe ore distratte."
+     ],
+     "q": "Cosa ti ruba più spesso l'attenzione quando studi?",
+     "c": "Oggi fai 15 minuti su un solo compito e annota quanto ricordi."
+    },
+    "pt": {
+     "t": "A atenção é a porta de entrada",
+     "g": "Percebe porque não te lembras do que nunca notaste e como te concentrares por completo.",
+     "p": [
+      "A informação que não recebe atenção nem chega a entrar na memória.",
+      "Antes de estudar, decide o que ignorar: telemóvel, separadores, conversa e desarrumação.",
+      "Períodos curtos e muito focados resultam melhor do que horas longas e distraídas."
+     ],
+     "q": "O que mais te rouba a atenção quando estudas?",
+     "c": "Hoje, faz 15 minutos numa só tarefa e anota quanto retiveste."
+    },
+    "pt_BR": {
+     "t": "A atenção é a porta de entrada",
+     "g": "Entenda por que você não lembra o que nunca notou e como se concentrar de verdade.",
+     "p": [
+      "A informação que não recebe atenção nem chega a entrar na memória.",
+      "Antes de estudar, decida o que ignorar: celular, abas, conversa e bagunça.",
+      "Períodos curtos e bem focados funcionam melhor que horas longas e distraídas."
+     ],
+     "q": "O que mais rouba sua atenção quando você estuda?",
+     "c": "Hoje, faça 15 minutos em uma só tarefa e anote quanto você reteve."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meaning beats repetition",
+     "g": "Link new facts to what you already know so they are easier to recall later.",
+     "p": [
+      "Facts that connect to your knowledge and experience are remembered far longer.",
+      "Ask yourself: what does this remind me of, and how is it different?",
+      "Explain the idea with a story from your own life."
+     ],
+     "q": "What does a topic you're studying now remind you of?",
+     "c": "Pick three new facts and connect each to something you already know."
+    },
+    "de": {
+     "t": "Bedeutung schlägt Wiederholung",
+     "g": "Verknüpfe Neues mit Bekanntem, damit du es später leichter abrufst.",
+     "p": [
+      "Fakten, die mit deinem Wissen und deinen Erfahrungen verbunden sind, bleiben viel länger.",
+      "Frag dich: Woran erinnert mich das, und worin unterscheidet es sich?",
+      "Erkläre die Idee mit einer Geschichte aus deinem eigenen Leben."
+     ],
+     "q": "Woran erinnert dich ein Thema, das du gerade lernst?",
+     "c": "Wähle drei neue Fakten und verbinde jeden mit etwas, das du schon weißt."
+    },
+    "es": {
+     "t": "El significado vence a la repetición",
+     "g": "Enlaza lo nuevo con lo que ya sabes para recordarlo mejor después.",
+     "p": [
+      "Los datos conectados con tu conocimiento y experiencia se recuerdan mucho más tiempo.",
+      "Pregúntate: ¿qué me recuerda esto y en qué se diferencia?",
+      "Explica la idea con una historia de tu propia vida."
+     ],
+     "q": "¿Qué te recuerda un tema que estudias ahora?",
+     "c": "Elige tres datos nuevos y conecta cada uno con algo que ya sepas."
+    },
+    "fr": {
+     "t": "Le sens vaut mieux que la répétition",
+     "g": "Relie le nouveau à ce que tu sais déjà pour mieux t'en souvenir plus tard.",
+     "p": [
+      "Les faits reliés à tes connaissances et à ton vécu se retiennent bien plus longtemps.",
+      "Demande-toi : à quoi cela me fait-il penser, et en quoi est-ce différent ?",
+      "Explique l'idée avec une histoire tirée de ta propre vie."
+     ],
+     "q": "À quoi te fait penser un sujet que tu étudies en ce moment ?",
+     "c": "Choisis trois faits nouveaux et relie chacun à quelque chose que tu connais déjà."
+    },
+    "it": {
+     "t": "Il significato batte la ripetizione",
+     "g": "Collega il nuovo a ciò che sai già per ricordarlo meglio dopo.",
+     "p": [
+      "I fatti collegati alle tue conoscenze ed esperienze si ricordano molto più a lungo.",
+      "Chiediti: cosa mi ricorda questo e in cosa è diverso?",
+      "Spiega l'idea con una storia della tua vita."
+     ],
+     "q": "Cosa ti ricorda un argomento che stai studiando ora?",
+     "c": "Scegli tre fatti nuovi e collega ciascuno a qualcosa che già conosci."
+    },
+    "pt": {
+     "t": "O significado vence a repetição",
+     "g": "Liga o novo ao que já sabes para o recordares melhor mais tarde.",
+     "p": [
+      "Os factos ligados ao teu conhecimento e à tua experiência lembram-se muito mais tempo.",
+      "Pergunta-te: o que me lembra isto e em que é diferente?",
+      "Explica a ideia com uma história da tua própria vida."
+     ],
+     "q": "O que te lembra um tema que estás a estudar agora?",
+     "c": "Escolhe três factos novos e liga cada um a algo que já conheces."
+    },
+    "pt_BR": {
+     "t": "O significado vence a repetição",
+     "g": "Ligue o novo ao que você já sabe para lembrar melhor depois.",
+     "p": [
+      "Fatos ligados ao seu conhecimento e à sua experiência são lembrados por muito mais tempo.",
+      "Pergunte-se: o que isso me lembra e em que é diferente?",
+      "Explique a ideia com uma história da sua própria vida."
+     ],
+     "q": "O que um tema que você estuda agora lembra a você?",
+     "c": "Escolha três fatos novos e ligue cada um a algo que você já conhece."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chunking information",
+     "g": "Group details into bigger meaningful units, like phone numbers split into blocks.",
+     "p": [
+      "A long list is easier when grouped into a few labelled chunks.",
+      "Look for patterns, categories or stories that bind several items together.",
+      "Experts remember more because they see big chunks where beginners see single facts."
+     ],
+     "q": "What list or set of facts are you trying to memorise right now?",
+     "c": "Take a list of ten items and sort them into three named groups."
+    },
+    "de": {
+     "t": "Informationen in Blöcke fassen",
+     "g": "Fasse Details zu größeren sinnvollen Einheiten zusammen, wie Telefonnummern in Blöcken.",
+     "p": [
+      "Eine lange Liste fällt leichter, wenn du sie in wenige benannte Gruppen gliederst.",
+      "Suche Muster, Kategorien oder Geschichten, die mehrere Punkte verbinden.",
+      "Experten merken sich mehr, weil sie große Blöcke sehen, wo Anfänger Einzelfakten sehen."
+     ],
+     "q": "Welche Liste oder Faktensammlung willst du dir gerade merken?",
+     "c": "Nimm eine Liste mit zehn Punkten und ordne sie in drei benannte Gruppen."
+    },
+    "es": {
+     "t": "Agrupar la información",
+     "g": "Agrupa los detalles en unidades con sentido, como un teléfono dividido en bloques.",
+     "p": [
+      "Una lista larga es más fácil si se agrupa en pocos bloques con nombre.",
+      "Busca patrones, categorías o historias que unan varios elementos.",
+      "Los expertos recuerdan más porque ven bloques grandes donde el principiante ve datos sueltos."
+     ],
+     "q": "¿Qué lista o conjunto de datos intentas memorizar ahora?",
+     "c": "Toma una lista de diez elementos y ordénala en tres grupos con nombre."
+    },
+    "fr": {
+     "t": "Regrouper l'information",
+     "g": "Regroupe les détails en unités plus grandes et parlantes, comme un numéro de téléphone en blocs.",
+     "p": [
+      "Une longue liste devient plus simple quand on la range en quelques blocs nommés.",
+      "Cherche des motifs, des catégories ou des histoires qui lient plusieurs éléments.",
+      "Les experts retiennent plus car ils voient de grands blocs là où les débutants voient des faits isolés."
+     ],
+     "q": "Quelle liste ou quels faits essaies-tu de mémoriser en ce moment ?",
+     "c": "Prends une liste de dix éléments et range-la en trois groupes nommés."
+    },
+    "it": {
+     "t": "Raggruppare le informazioni",
+     "g": "Raggruppa i dettagli in unità più grandi e sensate, come un numero di telefono a blocchi.",
+     "p": [
+      "Una lunga lista è più facile se raggruppata in pochi blocchi con un nome.",
+      "Cerca schemi, categorie o storie che leghino più elementi.",
+      "Gli esperti ricordano di più perché vedono grandi blocchi dove i principianti vedono fatti isolati."
+     ],
+     "q": "Quale elenco o insieme di fatti stai cercando di memorizzare ora?",
+     "c": "Prendi una lista di dieci elementi e ordinala in tre gruppi con un nome."
+    },
+    "pt": {
+     "t": "Agrupar a informação",
+     "g": "Agrupa os detalhes em unidades maiores e com sentido, como um telefone dividido em blocos.",
+     "p": [
+      "Uma lista longa fica mais fácil se a agrupares em poucos blocos com nome.",
+      "Procura padrões, categorias ou histórias que liguem vários itens.",
+      "Os peritos lembram-se de mais porque veem blocos grandes onde os principiantes veem factos soltos."
+     ],
+     "q": "Que lista ou conjunto de factos estás a tentar memorizar agora?",
+     "c": "Pega numa lista de dez itens e organiza-a em três grupos com nome."
+    },
+    "pt_BR": {
+     "t": "Agrupar a informação",
+     "g": "Agrupe os detalhes em unidades maiores e com sentido, como um telefone dividido em blocos.",
+     "p": [
+      "Uma lista longa fica mais fácil se você a agrupa em poucos blocos com nome.",
+      "Procure padrões, categorias ou histórias que liguem vários itens.",
+      "Especialistas lembram mais porque veem blocos grandes onde iniciantes veem fatos soltos."
+     ],
+     "q": "Que lista ou conjunto de fatos você está tentando memorizar agora?",
+     "c": "Pegue uma lista de dez itens e organize em três grupos com nome."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The power of examples",
+     "g": "Use concrete examples to understand abstract ideas and create your own.",
+     "p": [
+      "An abstract rule becomes clear when you see it working in a real case.",
+      "Making your own example is much stronger than just reading the textbook one.",
+      "Aim for different examples: a simple one, a tricky one and one from daily life."
+     ],
+     "q": "Which abstract idea in your studies would you like to see an example of?",
+     "c": "Take one concept and invent two original examples for it, then check them."
+    },
+    "de": {
+     "t": "Die Kraft der Beispiele",
+     "g": "Nutze konkrete Beispiele, um abstrakte Ideen zu verstehen, und erfinde eigene.",
+     "p": [
+      "Eine abstrakte Regel wird klar, wenn du sie an einem echten Fall siehst.",
+      "Ein eigenes Beispiel zu bilden wirkt viel stärker, als nur das Lehrbuchbeispiel zu lesen.",
+      "Suche verschiedene Beispiele: ein einfaches, ein kniffliges und eins aus dem Alltag."
+     ],
+     "q": "Zu welcher abstrakten Idee in deinem Fach wünschst du dir ein Beispiel?",
+     "c": "Nimm einen Begriff, erfinde zwei eigene Beispiele und prüfe sie."
+    },
+    "es": {
+     "t": "El poder de los ejemplos",
+     "g": "Usa ejemplos concretos para entender ideas abstractas y crea los tuyos.",
+     "p": [
+      "Una regla abstracta se aclara cuando la ves funcionar en un caso real.",
+      "Inventar tu propio ejemplo es mucho más potente que leer el del libro.",
+      "Busca ejemplos distintos: uno simple, uno difícil y otro de la vida diaria."
+     ],
+     "q": "¿De qué idea abstracta de tus estudios te gustaría ver un ejemplo?",
+     "c": "Toma un concepto e inventa dos ejemplos originales; luego compruébalos."
+    },
+    "fr": {
+     "t": "Le pouvoir des exemples",
+     "g": "Utilise des exemples concrets pour comprendre les idées abstraites et crée les tiens.",
+     "p": [
+      "Une règle abstraite devient claire quand on la voit fonctionner dans un cas réel.",
+      "Inventer son propre exemple est bien plus fort que lire celui du manuel.",
+      "Vise des exemples variés : un simple, un délicat et un tiré de la vie quotidienne."
+     ],
+     "q": "De quelle idée abstraite de tes études aimerais-tu voir un exemple ?",
+     "c": "Prends un concept et invente deux exemples originaux, puis vérifie-les."
+    },
+    "it": {
+     "t": "Il potere degli esempi",
+     "g": "Usa esempi concreti per capire le idee astratte e creane di tuoi.",
+     "p": [
+      "Una regola astratta si chiarisce quando la vedi funzionare in un caso reale.",
+      "Inventare un proprio esempio è molto più efficace che leggere quello del libro.",
+      "Cerca esempi diversi: uno semplice, uno difficile e uno di vita quotidiana."
+     ],
+     "q": "Di quale idea astratta dei tuoi studi vorresti vedere un esempio?",
+     "c": "Prendi un concetto e inventa due esempi originali, poi verificali."
+    },
+    "pt": {
+     "t": "O poder dos exemplos",
+     "g": "Usa exemplos concretos para perceber ideias abstratas e cria os teus.",
+     "p": [
+      "Uma regra abstrata fica clara quando a vês a funcionar num caso real.",
+      "Inventar o teu próprio exemplo é muito mais forte do que ler o do manual.",
+      "Procura exemplos diferentes: um simples, um difícil e um do dia a dia."
+     ],
+     "q": "De que ideia abstrata dos teus estudos gostarias de ver um exemplo?",
+     "c": "Pega num conceito e inventa dois exemplos originais; depois confirma-os."
+    },
+    "pt_BR": {
+     "t": "O poder dos exemplos",
+     "g": "Use exemplos concretos para entender ideias abstratas e crie os seus.",
+     "p": [
+      "Uma regra abstrata fica clara quando você a vê funcionando em um caso real.",
+      "Inventar seu próprio exemplo é muito mais forte que ler o do livro.",
+      "Procure exemplos diferentes: um simples, um difícil e um do dia a dia."
+     ],
+     "q": "De que ideia abstrata dos seus estudos você gostaria de ver um exemplo?",
+     "c": "Pegue um conceito e invente dois exemplos originais; depois confira-os."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dual coding",
+     "g": "Combine words with simple drawings, diagrams or timelines to give memory two routes in.",
+     "p": [
+      "Words plus pictures give your memory two ways to find the same idea.",
+      "Drawings do not need to be pretty: boxes, arrows and stick figures are enough.",
+      "Try a timeline for history, a flowchart for processes, a diagram for systems."
+     ],
+     "q": "Which topic of yours would look good as a drawing or diagram?",
+     "c": "Turn one paragraph of your notes into a quick sketch or flowchart."
+    },
+    "de": {
+     "t": "Doppelte Kodierung",
+     "g": "Verbinde Worte mit einfachen Zeichnungen, Diagrammen oder Zeitleisten für zwei Wege ins Gedächtnis.",
+     "p": [
+      "Wörter plus Bilder geben deinem Gedächtnis zwei Wege zur selben Idee.",
+      "Zeichnungen müssen nicht schön sein: Kästen, Pfeile und Strichmännchen genügen.",
+      "Probiere Zeitleisten für Geschichte, Flussdiagramme für Abläufe, Skizzen für Systeme."
+     ],
+     "q": "Welches deiner Themen würde als Zeichnung oder Diagramm gut aussehen?",
+     "c": "Verwandle einen Absatz deiner Notizen in eine schnelle Skizze oder ein Flussdiagramm."
+    },
+    "es": {
+     "t": "Codificación dual",
+     "g": "Combina palabras con dibujos, diagramas o líneas de tiempo para darle a la memoria dos vías.",
+     "p": [
+      "Palabras e imágenes dan a tu memoria dos caminos hacia la misma idea.",
+      "Los dibujos no tienen que ser bonitos: cajas, flechas y monigotes bastan.",
+      "Prueba una línea de tiempo para historia, un diagrama de flujo para procesos o un esquema para sistemas."
+     ],
+     "q": "¿Qué tema tuyo quedaría bien como dibujo o diagrama?",
+     "c": "Convierte un párrafo de tus apuntes en un boceto rápido o diagrama de flujo."
+    },
+    "fr": {
+     "t": "Le double codage",
+     "g": "Associe mots et dessins simples, schémas ou frises pour donner deux accès à la mémoire.",
+     "p": [
+      "Les mots plus les images donnent à ta mémoire deux chemins vers la même idée.",
+      "Les dessins n'ont pas besoin d'être beaux : cases, flèches et bonshommes suffisent.",
+      "Essaie une frise pour l'histoire, un organigramme pour un processus, un schéma pour un système."
+     ],
+     "q": "Lequel de tes sujets serait joli en dessin ou en schéma ?",
+     "c": "Transforme un paragraphe de tes notes en croquis rapide ou en organigramme."
+    },
+    "it": {
+     "t": "La doppia codifica",
+     "g": "Combina parole con disegni semplici, schemi o linee del tempo per dare due vie alla memoria.",
+     "p": [
+      "Parole e immagini danno alla memoria due strade verso la stessa idea.",
+      "I disegni non devono essere belli: riquadri, frecce e omini bastano.",
+      "Prova una linea del tempo per la storia, un diagramma di flusso per i processi, uno schema per i sistemi."
+     ],
+     "q": "Quale tuo argomento verrebbe bene come disegno o schema?",
+     "c": "Trasforma un paragrafo dei tuoi appunti in uno schizzo veloce o diagramma di flusso."
+    },
+    "pt": {
+     "t": "Codificação dupla",
+     "g": "Combina palavras com desenhos simples, diagramas ou linhas do tempo para dar duas vias à memória.",
+     "p": [
+      "Palavras e imagens dão à tua memória dois caminhos para a mesma ideia.",
+      "Os desenhos não precisam de ser bonitos: caixas, setas e bonecos chegam.",
+      "Experimenta uma linha do tempo para História, um fluxograma para processos, um esquema para sistemas."
+     ],
+     "q": "Qual dos teus temas ficaria bem como desenho ou diagrama?",
+     "c": "Transforma um parágrafo dos teus apontamentos num esboço rápido ou fluxograma."
+    },
+    "pt_BR": {
+     "t": "Codificação dupla",
+     "g": "Combine palavras com desenhos simples, diagramas ou linhas do tempo para dar duas vias à memória.",
+     "p": [
+      "Palavras e imagens dão à sua memória dois caminhos para a mesma ideia.",
+      "Os desenhos não precisam ser bonitos: caixas, setas e bonequinhos bastam.",
+      "Teste uma linha do tempo para História, um fluxograma para processos, um esquema para sistemas."
+     ],
+     "q": "Qual dos seus temas ficaria bom como desenho ou diagrama?",
+     "c": "Transforme um parágrafo das suas anotações em um esboço rápido ou fluxograma."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Elaboration",
+     "g": "Ask how and why questions about a topic to build rich connections between ideas.",
+     "p": [
+      "Asking why something is true forces you to link it with other things you know.",
+      "Keep asking 'why' and 'how' until you reach ideas you already understand well.",
+      "Explaining out loud, even to a pet or a mirror, shows where your gaps are."
+     ],
+     "q": "Which 'why' question about your current topic can you not yet answer?",
+     "c": "Pick one fact and write three why or how questions, then answer them."
+    },
+    "de": {
+     "t": "Elaboration",
+     "g": "Stelle Wie- und Warum-Fragen zu einem Thema, um reiche Verbindungen zwischen Ideen zu knüpfen.",
+     "p": [
+      "Wer fragt, warum etwas stimmt, muss es mit anderem Wissen verknüpfen.",
+      "Frag weiter 'warum' und 'wie', bis du bei Ideen ankommst, die du gut verstehst.",
+      "Lautes Erklären, auch vor Haustier oder Spiegel, zeigt dir deine Lücken."
+     ],
+     "q": "Welche Warum-Frage zu deinem Thema kannst du noch nicht beantworten?",
+     "c": "Wähle einen Fakt, schreib drei Warum- oder Wie-Fragen und beantworte sie."
+    },
+    "es": {
+     "t": "Elaboración",
+     "g": "Haz preguntas de cómo y por qué sobre un tema para tejer conexiones ricas entre ideas.",
+     "p": [
+      "Preguntarte por qué algo es cierto te obliga a enlazarlo con otras cosas que sabes.",
+      "Sigue preguntando 'por qué' y 'cómo' hasta llegar a ideas que ya entiendes bien.",
+      "Explicar en voz alta, aunque sea a una mascota o al espejo, muestra tus lagunas."
+     ],
+     "q": "¿Qué pregunta de 'por qué' sobre tu tema no sabes responder aún?",
+     "c": "Elige un dato, escribe tres preguntas de por qué o cómo y respóndelas."
+    },
+    "fr": {
+     "t": "L'élaboration",
+     "g": "Pose des questions comment et pourquoi sur un sujet pour tisser de riches liens entre les idées.",
+     "p": [
+      "Se demander pourquoi une chose est vraie oblige à la relier à d'autres connaissances.",
+      "Continue à demander 'pourquoi' et 'comment' jusqu'à des idées que tu comprends bien.",
+      "Expliquer à voix haute, même à un animal ou au miroir, révèle tes lacunes."
+     ],
+     "q": "À quelle question 'pourquoi' sur ton sujet ne sais-tu pas encore répondre ?",
+     "c": "Choisis un fait, écris trois questions pourquoi ou comment et réponds-y."
+    },
+    "it": {
+     "t": "L'elaborazione",
+     "g": "Poni domande su come e perché su un argomento per creare ricchi collegamenti tra le idee.",
+     "p": [
+      "Chiederti perché qualcosa è vero ti obbliga a collegarlo ad altre cose che sai.",
+      "Continua a chiedere 'perché' e 'come' fino a idee che capisci bene.",
+      "Spiegare ad alta voce, anche a un animale o allo specchio, mostra le tue lacune."
+     ],
+     "q": "A quale domanda 'perché' sul tuo argomento non sai ancora rispondere?",
+     "c": "Scegli un fatto, scrivi tre domande perché o come e rispondi."
+    },
+    "pt": {
+     "t": "Elaboração",
+     "g": "Faz perguntas de como e porquê sobre um tema para criar ligações ricas entre ideias.",
+     "p": [
+      "Perguntar porque é que algo é verdade obriga-te a ligá-lo a outras coisas que sabes.",
+      "Continua a perguntar 'porquê' e 'como' até chegares a ideias que já entendes bem.",
+      "Explicar em voz alta, mesmo a um animal ou ao espelho, mostra as tuas lacunas."
+     ],
+     "q": "A que pergunta 'porquê' sobre o teu tema ainda não sabes responder?",
+     "c": "Escolhe um facto, escreve três perguntas de porquê ou como e responde-lhes."
+    },
+    "pt_BR": {
+     "t": "Elaboração",
+     "g": "Faça perguntas de como e por que sobre um tema para criar ligações ricas entre ideias.",
+     "p": [
+      "Perguntar por que algo é verdade obriga você a ligá-lo a outras coisas que sabe.",
+      "Continue perguntando 'por quê' e 'como' até chegar a ideias que você já entende bem.",
+      "Explicar em voz alta, até para um bichinho ou o espelho, mostra suas lacunas."
+     ],
+     "q": "Que pergunta de 'por quê' sobre seu tema você ainda não sabe responder?",
+     "c": "Escolha um fato, escreva três perguntas de por que ou como e responda."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Memory basics recap",
+     "g": "Put encoding, chunking, examples and elaboration together on one short topic.",
+     "p": [
+      "Combine the tools: chunk the material, add examples, then ask why and how.",
+      "Finish by closing the book and recalling everything you can from memory.",
+      "Notice which tool felt most natural to you and keep using it."
+     ],
+     "q": "Which memory tool from the last ten days helped you most?",
+     "c": "Study one short topic using all four tools, then test yourself without notes."
+    },
+    "de": {
+     "t": "Gedächtnis-Grundlagen im Rückblick",
+     "g": "Verbinde Kodieren, Blöcke, Beispiele und Elaboration an einem kurzen Thema.",
+     "p": [
+      "Kombiniere die Werkzeuge: Stoff gliedern, Beispiele ergänzen, dann Warum und Wie fragen.",
+      "Schließe ab, indem du das Buch zuklappst und alles aus dem Kopf wiedergibst.",
+      "Merke dir, welches Werkzeug sich am natürlichsten anfühlte, und nutze es weiter."
+     ],
+     "q": "Welches Gedächtniswerkzeug der letzten zehn Tage hat dir am meisten geholfen?",
+     "c": "Lerne ein kurzes Thema mit allen vier Werkzeugen und teste dich dann ohne Notizen."
+    },
+    "es": {
+     "t": "Repaso de la memoria básica",
+     "g": "Junta codificación, agrupación, ejemplos y elaboración en un tema corto.",
+     "p": [
+      "Combina las herramientas: agrupa el material, añade ejemplos y pregunta por qué y cómo.",
+      "Termina cerrando el libro y recordando todo lo que puedas de memoria.",
+      "Fíjate en qué herramienta te resultó más natural y sigue usándola."
+     ],
+     "q": "¿Qué herramienta de memoria de los últimos diez días te ayudó más?",
+     "c": "Estudia un tema corto con las cuatro herramientas y luego pruébate sin apuntes."
+    },
+    "fr": {
+     "t": "Récap des bases de la mémoire",
+     "g": "Réunis encodage, regroupement, exemples et élaboration sur un court sujet.",
+     "p": [
+      "Combine les outils : regroupe la matière, ajoute des exemples, puis demande pourquoi et comment.",
+      "Termine en fermant le livre et en rappelant tout ce que tu peux de mémoire.",
+      "Repère l'outil qui t'a paru le plus naturel et continue à l'utiliser."
+     ],
+     "q": "Quel outil de mémoire des dix derniers jours t'a le plus aidé ?",
+     "c": "Étudie un court sujet avec les quatre outils, puis teste-toi sans notes."
+    },
+    "it": {
+     "t": "Ripasso delle basi della memoria",
+     "g": "Riunisci codifica, raggruppamento, esempi ed elaborazione su un breve argomento.",
+     "p": [
+      "Combina gli strumenti: raggruppa il materiale, aggiungi esempi, poi chiedi perché e come.",
+      "Concludi chiudendo il libro e ricordando tutto ciò che puoi a memoria.",
+      "Nota quale strumento ti è sembrato più naturale e continua a usarlo."
+     ],
+     "q": "Quale strumento di memoria degli ultimi dieci giorni ti ha aiutato di più?",
+     "c": "Studia un breve argomento con tutti e quattro gli strumenti, poi mettiti alla prova senza appunti."
+    },
+    "pt": {
+     "t": "Revisão dos básicos da memória",
+     "g": "Junta codificação, agrupamento, exemplos e elaboração num tema curto.",
+     "p": [
+      "Combina as ferramentas: agrupa a matéria, junta exemplos e depois pergunta porquê e como.",
+      "Termina a fechar o livro e a recordar tudo o que conseguires de memória.",
+      "Repara qual a ferramenta que te pareceu mais natural e continua a usá-la."
+     ],
+     "q": "Que ferramenta de memória dos últimos dez dias mais te ajudou?",
+     "c": "Estuda um tema curto com as quatro ferramentas e depois testa-te sem apontamentos."
+    },
+    "pt_BR": {
+     "t": "Revisão dos básicos da memória",
+     "g": "Junte codificação, agrupamento, exemplos e elaboração em um tema curto.",
+     "p": [
+      "Combine as ferramentas: agrupe o conteúdo, junte exemplos e depois pergunte por que e como.",
+      "Termine fechando o livro e lembrando tudo o que conseguir de memória.",
+      "Perceba qual ferramenta pareceu mais natural e continue usando."
+     ],
+     "q": "Que ferramenta de memória dos últimos dez dias mais ajudou você?",
+     "c": "Estude um tema curto com as quatro ferramentas e depois se teste sem anotações."
+    }
+   }
+  }
+ ]
+}

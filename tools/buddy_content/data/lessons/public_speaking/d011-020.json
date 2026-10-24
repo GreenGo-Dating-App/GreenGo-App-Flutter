@@ -1,0 +1,835 @@
+{
+ "topic": "public_speaking",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Posture that projects confidence",
+     "g": "Use an upright, relaxed posture that helps your voice and your presence.",
+     "p": [
+      "Imagine a string lifting the top of your head while shoulders stay soft.",
+      "Keep your chin level so your voice travels forward, not down.",
+      "Open chests let air flow; slumping squeezes breath and voice."
+     ],
+     "q": "When do you notice yourself slouching or hunching?",
+     "c": "Do a posture check three times today: head tall, shoulders soft, breathe."
+    },
+    "de": {
+     "t": "Haltung, die Sicherheit ausstrahlt",
+     "g": "Nutze eine aufrechte, entspannte Haltung für deine Stimme und Präsenz.",
+     "p": [
+      "Stell dir einen Faden vor, der den Scheitel hebt, während die Schultern locker bleiben.",
+      "Halte das Kinn waagerecht, damit die Stimme nach vorn trägt, nicht nach unten.",
+      "Ein offener Brustkorb lässt die Luft fließen; Zusammensinken engt Atem und Stimme ein."
+     ],
+     "q": "Wann merkst du, dass du dich krümmst oder die Schultern hochziehst?",
+     "c": "Mach heute dreimal einen Haltungscheck: Kopf aufrecht, Schultern locker, atmen."
+    },
+    "es": {
+     "t": "Una postura que transmite confianza",
+     "g": "Usa una postura erguida y relajada que ayude a tu voz y a tu presencia.",
+     "p": [
+      "Imagina un hilo que tira de la coronilla mientras los hombros se sueltan.",
+      "Mantén la barbilla recta para que la voz viaje hacia delante y no hacia abajo.",
+      "Un pecho abierto deja pasar el aire; encorvarse aprieta aliento y voz."
+     ],
+     "q": "¿Cuándo notas que te encorvas o encoges los hombros?",
+     "c": "Haz tres chequeos de postura hoy: cabeza alta, hombros sueltos, respira."
+    },
+    "fr": {
+     "t": "Une posture qui inspire confiance",
+     "g": "Adopte une posture droite et détendue qui aide ta voix et ta présence.",
+     "p": [
+      "Imagine un fil qui tire le haut de ta tête, les épaules restant souples.",
+      "Garde le menton à l'horizontale pour que la voix aille vers l'avant, pas vers le bas.",
+      "Une poitrine ouverte laisse passer l'air ; se voûter écrase le souffle et la voix."
+     ],
+     "q": "Quand remarques-tu que tu te voûtes ou rentres les épaules ?",
+     "c": "Fais trois contrôles de posture aujourd'hui : tête haute, épaules souples, respire."
+    },
+    "it": {
+     "t": "Una postura che trasmette sicurezza",
+     "g": "Usa una postura eretta e rilassata che aiuta la voce e la tua presenza.",
+     "p": [
+      "Immagina un filo che tira la sommità della testa mentre le spalle restano morbide.",
+      "Tieni il mento dritto così la voce viaggia in avanti, non verso il basso.",
+      "Un petto aperto lascia scorrere l'aria; curvarsi stringe respiro e voce."
+     ],
+     "q": "Quando noti che ti curvi o alzi le spalle?",
+     "c": "Fai tre controlli di postura oggi: testa alta, spalle morbide, respira."
+    },
+    "pt": {
+     "t": "Uma postura que transmite confiança",
+     "g": "Usa uma postura direita e descontraída que ajuda a voz e a tua presença.",
+     "p": [
+      "Imagina um fio a puxar o topo da cabeça enquanto os ombros ficam soltos.",
+      "Mantém o queixo direito para a voz seguir em frente, não para baixo.",
+      "Um peito aberto deixa o ar fluir; curvar-se aperta a respiração e a voz."
+     ],
+     "q": "Quando reparas que te curvas ou encolhes os ombros?",
+     "c": "Faz três verificações de postura hoje: cabeça alta, ombros soltos, respira."
+    },
+    "pt_BR": {
+     "t": "Uma postura que transmite confiança",
+     "g": "Use uma postura ereta e relaxada que ajuda a voz e a sua presença.",
+     "p": [
+      "Imagine um fio puxando o topo da cabeça enquanto os ombros ficam soltos.",
+      "Mantenha o queixo reto para a voz seguir à frente, não para baixo.",
+      "Um peito aberto deixa o ar fluir; curvar-se aperta a respiração e a voz."
+     ],
+     "q": "Quando você percebe que está curvado ou encolhendo os ombros?",
+     "c": "Faça três checagens de postura hoje: cabeça alta, ombros soltos, respire."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eye contact basics",
+     "g": "Look at real people for one thought at a time instead of at the floor.",
+     "p": [
+      "Look at one person for a full sentence or thought, then move on.",
+      "Spread your gaze across the room, left, middle and right.",
+      "If direct eyes feel hard, look at a forehead or a friendly nose."
+     ],
+     "q": "Whose eyes do you find easiest to look at when you speak?",
+     "c": "Hold eye contact for one full sentence in your next chat, then glance away."
+    },
+    "de": {
+     "t": "Grundlagen des Blickkontakts",
+     "g": "Schau echte Menschen an, jeweils für einen Gedanken, statt auf den Boden.",
+     "p": [
+      "Sieh eine Person für einen ganzen Satz oder Gedanken an, dann wechsle.",
+      "Verteile deinen Blick im Raum: links, Mitte und rechts.",
+      "Wenn direkte Augen schwerfallen, schau auf die Stirn oder eine freundliche Nase."
+     ],
+     "q": "Wessen Augen sind für dich beim Sprechen am leichtesten anzuschauen?",
+     "c": "Halte im nächsten Gespräch einen ganzen Satz lang Blickkontakt, dann schau kurz weg."
+    },
+    "es": {
+     "t": "Lo básico del contacto visual",
+     "g": "Mira a personas reales durante una idea, en lugar de mirar al suelo.",
+     "p": [
+      "Mira a una persona durante una frase o idea completa y luego pasa a otra.",
+      "Reparte la mirada por la sala: izquierda, centro y derecha.",
+      "Si mirar a los ojos cuesta, mira la frente o una nariz amable."
+     ],
+     "q": "¿A los ojos de quién te resulta más fácil mirar al hablar?",
+     "c": "En tu próxima charla, sostén la mirada una frase completa y luego desvía."
+    },
+    "fr": {
+     "t": "Les bases du contact visuel",
+     "g": "Regarde de vraies personnes, une idée à la fois, plutôt que le sol.",
+     "p": [
+      "Regarde une personne pendant une phrase ou une idée entière, puis passe à une autre.",
+      "Répartis ton regard dans la salle : gauche, centre et droite.",
+      "Si croiser les yeux est dur, regarde le front ou un nez bienveillant."
+     ],
+     "q": "Les yeux de qui te sont les plus faciles à regarder en parlant ?",
+     "c": "Lors de ta prochaine discussion, tiens le regard une phrase entière, puis détourne-le."
+    },
+    "it": {
+     "t": "Le basi del contatto visivo",
+     "g": "Guarda persone vere, un pensiero alla volta, invece del pavimento.",
+     "p": [
+      "Guarda una persona per una frase o un pensiero intero, poi passa a un'altra.",
+      "Distribuisci lo sguardo nella sala: sinistra, centro e destra.",
+      "Se gli occhi diretti sono difficili, guarda la fronte o un naso amichevole."
+     ],
+     "q": "Gli occhi di chi ti è più facile guardare mentre parli?",
+     "c": "Nella prossima chiacchierata, mantieni lo sguardo per una frase intera, poi distogli."
+    },
+    "pt": {
+     "t": "Noções básicas de contacto visual",
+     "g": "Olha para pessoas reais, uma ideia de cada vez, em vez de olhares o chão.",
+     "p": [
+      "Olha para uma pessoa durante uma frase ou ideia inteira e depois passa a outra.",
+      "Distribui o olhar pela sala: esquerda, centro e direita.",
+      "Se olhar nos olhos custa, olha para a testa ou para um nariz simpático."
+     ],
+     "q": "Os olhos de quem te é mais fácil olhar ao falar?",
+     "c": "Na próxima conversa, mantém o olhar uma frase inteira e depois desvia."
+    },
+    "pt_BR": {
+     "t": "Noções básicas de contato visual",
+     "g": "Olhe para pessoas reais, uma ideia de cada vez, em vez de olhar para o chão.",
+     "p": [
+      "Olhe para uma pessoa durante uma frase ou ideia inteira e depois passe para outra.",
+      "Distribua o olhar pela sala: esquerda, centro e direita.",
+      "Se olhar nos olhos é difícil, olhe para a testa ou para um nariz simpático."
+     ],
+     "q": "Os olhos de quem são mais fáceis de olhar quando você fala?",
+     "c": "Na próxima conversa, mantenha o olhar por uma frase inteira e depois desvie."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Smiling and warmth",
+     "g": "See how a genuine smile relaxes both you and the audience.",
+     "p": [
+      "A real smile softens your face and your voice at once.",
+      "Listeners often smile back, which makes the room feel friendly.",
+      "Smile where it fits: a greeting, a happy story, a thank-you."
+     ],
+     "q": "When did a speaker's smile last make you feel welcome?",
+     "c": "Say 'Hello, I am glad to be here' with a real smile in front of a mirror."
+    },
+    "de": {
+     "t": "Lächeln und Wärme",
+     "g": "Erlebe, wie ein echtes Lächeln dich und dein Publikum entspannt.",
+     "p": [
+      "Ein echtes Lächeln macht Gesicht und Stimme zugleich weicher.",
+      "Zuhörer lächeln oft zurück, und der Raum wirkt freundlicher.",
+      "Lächle, wo es passt: bei der Begrüßung, einer frohen Geschichte, einem Dank."
+     ],
+     "q": "Wann hat dir das Lächeln einer Rednerin oder eines Redners zuletzt gutgetan?",
+     "c": "Sag vor dem Spiegel mit echtem Lächeln: 'Hallo, ich freue mich, hier zu sein.'"
+    },
+    "es": {
+     "t": "Sonrisa y calidez",
+     "g": "Descubre cómo una sonrisa sincera relaja a ti y al público.",
+     "p": [
+      "Una sonrisa real suaviza tu cara y tu voz a la vez.",
+      "Los oyentes suelen devolver la sonrisa y la sala se siente amable.",
+      "Sonríe donde encaje: un saludo, una historia alegre, un agradecimiento."
+     ],
+     "q": "¿Cuándo la sonrisa de un orador te hizo sentir bienvenido?",
+     "c": "Di 'Hola, me alegra estar aquí' con una sonrisa real frente al espejo."
+    },
+    "fr": {
+     "t": "Sourire et chaleur",
+     "g": "Vois comment un vrai sourire détend toi et le public.",
+     "p": [
+      "Un vrai sourire adoucit à la fois ton visage et ta voix.",
+      "Les auditeurs sourient souvent en retour, et la salle devient chaleureuse.",
+      "Souris quand c'est naturel : un salut, une histoire joyeuse, un merci."
+     ],
+     "q": "Quand le sourire d'un orateur t'a-t-il mis à l'aise pour la dernière fois ?",
+     "c": "Dis « Bonjour, je suis content d'être là » avec un vrai sourire devant un miroir."
+    },
+    "it": {
+     "t": "Sorriso e calore",
+     "g": "Scopri come un sorriso sincero rilassa te e il pubblico.",
+     "p": [
+      "Un sorriso vero ammorbidisce insieme il viso e la voce.",
+      "Chi ascolta spesso sorride di rimando e la sala sembra più amichevole.",
+      "Sorridi dove ha senso: un saluto, una storia allegra, un ringraziamento."
+     ],
+     "q": "Quando il sorriso di un oratore ti ha fatto sentire il benvenuto?",
+     "c": "Di' 'Ciao, sono felice di essere qui' con un vero sorriso davanti allo specchio."
+    },
+    "pt": {
+     "t": "Sorriso e simpatia",
+     "g": "Vê como um sorriso genuíno relaxa-te a ti e ao público.",
+     "p": [
+      "Um sorriso real suaviza o rosto e a voz ao mesmo tempo.",
+      "Os ouvintes muitas vezes sorriem de volta e a sala fica simpática.",
+      "Sorri onde fizer sentido: uma saudação, uma história alegre, um agradecimento."
+     ],
+     "q": "Quando é que o sorriso de um orador te fez sentir bem-vindo?",
+     "c": "Diz 'Olá, estou feliz por estar aqui' com um sorriso real diante do espelho."
+    },
+    "pt_BR": {
+     "t": "Sorriso e simpatia",
+     "g": "Veja como um sorriso genuíno relaxa você e o público.",
+     "p": [
+      "Um sorriso de verdade suaviza o rosto e a voz ao mesmo tempo.",
+      "Os ouvintes costumam sorrir de volta e a sala fica acolhedora.",
+      "Sorria onde fizer sentido: uma saudação, uma história alegre, um agradecimento."
+     ],
+     "q": "Quando o sorriso de um orador fez você se sentir bem-vindo?",
+     "c": "Diga 'Olá, estou feliz por estar aqui' com um sorriso real diante do espelho."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Speaking slowly enough",
+     "g": "Learn why nervous speakers rush and how to find a comfortable pace.",
+     "p": [
+      "Nerves speed us up, so aim to feel slightly too slow.",
+      "A good pace is around 120 to 150 words per minute.",
+      "Slow down most on key ideas, numbers and names."
+     ],
+     "q": "Do friends ever tell you that you talk fast or slow?",
+     "c": "Read a paragraph aloud at your normal pace, then 20 percent slower."
+    },
+    "de": {
+     "t": "Langsam genug sprechen",
+     "g": "Lerne, warum Nervöse hetzen und wie du ein angenehmes Tempo findest.",
+     "p": [
+      "Nervosität macht schnell, also soll es sich etwas zu langsam anfühlen.",
+      "Ein gutes Tempo liegt bei etwa 120 bis 150 Wörtern pro Minute.",
+      "Werde bei Kernideen, Zahlen und Namen besonders langsam."
+     ],
+     "q": "Sagen Freunde dir manchmal, dass du schnell oder langsam sprichst?",
+     "c": "Lies einen Absatz im normalen Tempo vor, dann 20 Prozent langsamer."
+    },
+    "es": {
+     "t": "Hablar con calma suficiente",
+     "g": "Aprende por qué los nerviosos corren y cómo hallar un ritmo cómodo.",
+     "p": [
+      "Los nervios nos aceleran, así que busca sentirte un poco lento.",
+      "Un buen ritmo ronda las 120 a 150 palabras por minuto.",
+      "Ve más despacio en ideas clave, cifras y nombres."
+     ],
+     "q": "¿Alguna vez te dicen que hablas rápido o lento?",
+     "c": "Lee un párrafo en voz alta a tu ritmo normal y luego un 20 por ciento más lento."
+    },
+    "fr": {
+     "t": "Parler assez lentement",
+     "g": "Comprends pourquoi on se précipite quand on est nerveux et trouve un rythme confortable.",
+     "p": [
+      "Le trac nous accélère : vise un rythme un peu trop lent.",
+      "Un bon rythme tourne autour de 120 à 150 mots par minute.",
+      "Ralentis surtout sur les idées clés, les chiffres et les noms."
+     ],
+     "q": "Tes amis te disent-ils parfois que tu parles vite ou lentement ?",
+     "c": "Lis un paragraphe à voix haute à ton rythme, puis 20 pour cent plus lentement."
+    },
+    "it": {
+     "t": "Parlare abbastanza piano",
+     "g": "Scopri perché chi è teso corre e come trovare un ritmo comodo.",
+     "p": [
+      "L'agitazione ci accelera: punta a sentirti un po' troppo lento.",
+      "Un buon ritmo è intorno alle 120-150 parole al minuto.",
+      "Rallenta di più su idee chiave, numeri e nomi."
+     ],
+     "q": "Gli amici ti dicono mai che parli veloce o piano?",
+     "c": "Leggi un paragrafo a voce alta al tuo ritmo, poi un 20 per cento più lento."
+    },
+    "pt": {
+     "t": "Falar devagar o suficiente",
+     "g": "Percebe porque os nervosos se apressam e como encontrar um ritmo confortável.",
+     "p": [
+      "O nervosismo acelera-nos, por isso tenta sentir-te um pouco lento.",
+      "Um bom ritmo anda pelas 120 a 150 palavras por minuto.",
+      "Abranda mais nas ideias-chave, números e nomes."
+     ],
+     "q": "Os teus amigos dizem às vezes que falas depressa ou devagar?",
+     "c": "Lê um parágrafo em voz alta ao teu ritmo e depois 20 por cento mais devagar."
+    },
+    "pt_BR": {
+     "t": "Falar devagar o suficiente",
+     "g": "Entenda por que os nervosos se apressam e como achar um ritmo confortável.",
+     "p": [
+      "O nervosismo nos acelera, então tente se sentir um pouco lento.",
+      "Um bom ritmo fica entre 120 e 150 palavras por minuto.",
+      "Desacelere mais nas ideias-chave, números e nomes."
+     ],
+     "q": "Seus amigos já disseram que você fala rápido ou devagar?",
+     "c": "Leia um parágrafo em voz alta no seu ritmo e depois 20 por cento mais devagar."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The power of pauses",
+     "g": "Use short silences to give ideas weight and yourself time to breathe.",
+     "p": [
+      "A pause after a key sentence lets it land.",
+      "A pause before a new point shows the audience a change is coming.",
+      "Silence feels longer to you than to listeners; trust it."
+     ],
+     "q": "How do you feel when a speaker pauses before an important idea?",
+     "c": "Say three sentences about your day and pause for two counts after each."
+    },
+    "de": {
+     "t": "Die Kraft der Pause",
+     "g": "Nutze kurze Stille, um Ideen Gewicht zu geben und dir Zeit zum Atmen.",
+     "p": [
+      "Eine Pause nach einem Schlüsselsatz lässt ihn wirken.",
+      "Eine Pause vor einem neuen Punkt zeigt: Jetzt kommt etwas Neues.",
+      "Stille fühlt sich für dich länger an als für die Zuhörer; vertrau ihr."
+     ],
+     "q": "Wie fühlst du dich, wenn jemand vor einer wichtigen Idee innehält?",
+     "c": "Sag drei Sätze über deinen Tag und pausiere nach jedem zwei Zähler lang."
+    },
+    "es": {
+     "t": "El poder de las pausas",
+     "g": "Usa silencios cortos para dar peso a las ideas y tiempo para respirar.",
+     "p": [
+      "Una pausa tras una frase clave la deja calar.",
+      "Una pausa antes de un punto nuevo avisa de que algo cambia.",
+      "El silencio te parece más largo a ti que al público; confía en él."
+     ],
+     "q": "¿Cómo te sientes cuando alguien hace una pausa antes de una idea importante?",
+     "c": "Di tres frases sobre tu día y haz una pausa de dos tiempos tras cada una."
+    },
+    "fr": {
+     "t": "Le pouvoir des pauses",
+     "g": "Utilise de courts silences pour donner du poids aux idées et respirer.",
+     "p": [
+      "Une pause après une phrase clé lui laisse le temps de résonner.",
+      "Une pause avant un nouveau point annonce un changement.",
+      "Le silence te semble plus long qu'à l'auditoire ; fais-lui confiance."
+     ],
+     "q": "Que ressens-tu quand quelqu'un marque une pause avant une idée importante ?",
+     "c": "Dis trois phrases sur ta journée et marque deux temps de pause après chacune."
+    },
+    "it": {
+     "t": "Il potere delle pause",
+     "g": "Usa brevi silenzi per dare peso alle idee e tempo al respiro.",
+     "p": [
+      "Una pausa dopo una frase chiave la fa arrivare.",
+      "Una pausa prima di un nuovo punto annuncia un cambio.",
+      "Il silenzio sembra più lungo a te che al pubblico: fidati."
+     ],
+     "q": "Come ti senti quando qualcuno fa una pausa prima di un'idea importante?",
+     "c": "Di' tre frasi sulla tua giornata e fai una pausa di due tempi dopo ognuna."
+    },
+    "pt": {
+     "t": "O poder das pausas",
+     "g": "Usa silêncios curtos para dar peso às ideias e tempo para respirar.",
+     "p": [
+      "Uma pausa depois de uma frase-chave deixa-a assentar.",
+      "Uma pausa antes de um novo ponto anuncia uma mudança.",
+      "O silêncio parece-te mais longo do que ao público; confia nele."
+     ],
+     "q": "Como te sentes quando alguém faz uma pausa antes de uma ideia importante?",
+     "c": "Diz três frases sobre o teu dia e faz uma pausa de dois tempos após cada uma."
+    },
+    "pt_BR": {
+     "t": "O poder das pausas",
+     "g": "Use silêncios curtos para dar peso às ideias e tempo para respirar.",
+     "p": [
+      "Uma pausa depois de uma frase-chave deixa a ideia assentar.",
+      "Uma pausa antes de um novo ponto anuncia uma mudança.",
+      "O silêncio parece mais longo para você do que para o público; confie nele."
+     ],
+     "q": "Como você se sente quando alguém faz uma pausa antes de uma ideia importante?",
+     "c": "Diga três frases sobre o seu dia e faça uma pausa de dois tempos após cada uma."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Volume and projection",
+     "g": "Speak loud enough to be heard at the back without shouting.",
+     "p": [
+      "Projection comes from steady breath and an open mouth, not from straining your throat.",
+      "Aim your voice at the far wall, as if talking to the last row.",
+      "Vary your volume: a little softer can draw people in."
+     ],
+     "q": "Do people ever ask you to repeat yourself because they could not hear?",
+     "c": "Say 'Good morning, everyone' at three volumes: quiet, normal, projected."
+    },
+    "de": {
+     "t": "Lautstärke und Tragfähigkeit",
+     "g": "Sprich laut genug für die letzte Reihe, ohne zu schreien.",
+     "p": [
+      "Tragfähigkeit kommt aus gleichmäßigem Atem und offenem Mund, nicht aus Pressen im Hals.",
+      "Richte die Stimme zur hinteren Wand, als sprächst du zur letzten Reihe.",
+      "Variiere die Lautstärke: etwas leiser kann Zuhörer anziehen."
+     ],
+     "q": "Bitten dich Leute manchmal, etwas zu wiederholen, weil sie dich nicht hörten?",
+     "c": "Sag 'Guten Morgen zusammen' in drei Lautstärken: leise, normal, tragend."
+    },
+    "es": {
+     "t": "Volumen y proyección",
+     "g": "Habla lo bastante alto para el fondo de la sala sin gritar.",
+     "p": [
+      "La proyección viene del aire constante y la boca abierta, no de forzar la garganta.",
+      "Dirige la voz a la pared del fondo, como si hablaras a la última fila.",
+      "Varía el volumen: un poco más bajo puede atraer a la gente."
+     ],
+     "q": "¿Te piden a veces que repitas porque no te oyeron?",
+     "c": "Di 'Buenos días a todos' con tres volúmenes: bajo, normal, proyectado."
+    },
+    "fr": {
+     "t": "Volume et projection",
+     "g": "Parle assez fort pour être entendu au fond sans crier.",
+     "p": [
+      "La projection vient d'un souffle régulier et d'une bouche ouverte, pas d'une gorge forcée.",
+      "Dirige ta voix vers le mur du fond, comme pour le dernier rang.",
+      "Varie le volume : un peu plus doux peut attirer les gens."
+     ],
+     "q": "Te demande-t-on parfois de répéter parce qu'on ne t'entendait pas ?",
+     "c": "Dis « Bonjour à tous » avec trois volumes : doux, normal, projeté."
+    },
+    "it": {
+     "t": "Volume e proiezione",
+     "g": "Parla abbastanza forte da essere sentito in fondo senza gridare.",
+     "p": [
+      "La proiezione nasce dal respiro costante e dalla bocca aperta, non dalla gola forzata.",
+      "Dirigi la voce verso la parete in fondo, come per l'ultima fila.",
+      "Varia il volume: un po' più piano può attirare le persone."
+     ],
+     "q": "Ti chiedono mai di ripetere perché non ti sentivano?",
+     "c": "Di' 'Buongiorno a tutti' con tre volumi: basso, normale, proiettato."
+    },
+    "pt": {
+     "t": "Volume e projeção",
+     "g": "Fala alto o suficiente para ser ouvido ao fundo sem gritar.",
+     "p": [
+      "A projeção vem do ar constante e da boca aberta, não de forçar a garganta.",
+      "Dirige a voz à parede do fundo, como se falasses para a última fila.",
+      "Varia o volume: um pouco mais baixo pode atrair as pessoas."
+     ],
+     "q": "Já te pediram para repetir por não te ouvirem bem?",
+     "c": "Diz 'Bom dia a todos' em três volumes: baixo, normal, projetado."
+    },
+    "pt_BR": {
+     "t": "Volume e projeção",
+     "g": "Fale alto o suficiente para ser ouvido no fundo sem gritar.",
+     "p": [
+      "A projeção vem do ar constante e da boca aberta, não de forçar a garganta.",
+      "Direcione a voz à parede do fundo, como se falasse para a última fila.",
+      "Varie o volume: um pouco mais baixo pode atrair as pessoas."
+     ],
+     "q": "Já pediram para você repetir por não ouvirem bem?",
+     "c": "Diga 'Bom dia a todos' em três volumes: baixo, normal, projetado."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Clear articulation",
+     "g": "Warm up your lips and tongue so every word comes out crisp.",
+     "p": [
+      "Open your mouth a little more than usual; clear words need space.",
+      "Warm up with lip trills, tongue stretches and big silly smiles.",
+      "Finish the ends of words; they often get lost when we rush."
+     ],
+     "q": "Which words or sounds do you tend to blur when you speak fast?",
+     "c": "Say a tongue twister of your language three times, slowly then faster."
+    },
+    "de": {
+     "t": "Deutliche Aussprache",
+     "g": "Wärme Lippen und Zunge auf, damit jedes Wort klar klingt.",
+     "p": [
+      "Öffne den Mund etwas mehr als sonst; klare Worte brauchen Platz.",
+      "Wärme dich mit Lippenflattern, Zungendehnen und breitem Lächeln auf.",
+      "Sprich Wortenden zu Ende; sie gehen beim Hetzen oft verloren."
+     ],
+     "q": "Welche Wörter oder Laute verschluckst du bei schnellem Sprechen?",
+     "c": "Sag einen Zungenbrecher dreimal, erst langsam, dann schneller."
+    },
+    "es": {
+     "t": "Articulación clara",
+     "g": "Calienta labios y lengua para que cada palabra salga nítida.",
+     "p": [
+      "Abre la boca un poco más de lo normal; las palabras claras necesitan espacio.",
+      "Calienta con vibraciones de labios, estiramientos de lengua y sonrisas grandes.",
+      "Termina bien los finales de palabra; se pierden cuando vamos rápido."
+     ],
+     "q": "¿Qué palabras o sonidos sueles difuminar al hablar rápido?",
+     "c": "Di un trabalenguas tres veces, primero despacio y luego más rápido."
+    },
+    "fr": {
+     "t": "Une articulation claire",
+     "g": "Échauffe lèvres et langue pour que chaque mot sorte net.",
+     "p": [
+      "Ouvre la bouche un peu plus que d'habitude ; les mots clairs ont besoin d'espace.",
+      "Échauffe-toi avec des roulements de lèvres, des étirements de langue et de grands sourires.",
+      "Termine bien les fins de mots ; elles se perdent quand on se presse."
+     ],
+     "q": "Quels mots ou sons as-tu tendance à manger en parlant vite ?",
+     "c": "Dis un virelangue trois fois, d'abord lentement puis plus vite."
+    },
+    "it": {
+     "t": "Articolazione chiara",
+     "g": "Scalda labbra e lingua perché ogni parola esca nitida.",
+     "p": [
+      "Apri la bocca un po' più del solito: le parole chiare hanno bisogno di spazio.",
+      "Scaldati con vibrazioni delle labbra, stiramenti della lingua e grandi sorrisi.",
+      "Finisci bene le fini delle parole: si perdono quando corriamo."
+     ],
+     "q": "Quali parole o suoni tendi a impastare quando parli veloce?",
+     "c": "Di' uno scioglilingua tre volte, prima piano poi più veloce."
+    },
+    "pt": {
+     "t": "Articulação clara",
+     "g": "Aquece os lábios e a língua para cada palavra sair nítida.",
+     "p": [
+      "Abre a boca um pouco mais do que o normal; palavras claras precisam de espaço.",
+      "Aquece com vibrações dos lábios, alongamentos da língua e sorrisos largos.",
+      "Termina bem o fim das palavras; perdem-se quando nos apressamos."
+     ],
+     "q": "Que palavras ou sons costumas apagar quando falas depressa?",
+     "c": "Diz um trava-línguas três vezes, primeiro devagar e depois mais depressa."
+    },
+    "pt_BR": {
+     "t": "Articulação clara",
+     "g": "Aqueça os lábios e a língua para cada palavra sair nítida.",
+     "p": [
+      "Abra a boca um pouco mais do que o normal; palavras claras precisam de espaço.",
+      "Aqueça com vibração dos lábios, alongamentos da língua e sorrisos largos.",
+      "Termine bem o fim das palavras; elas se perdem quando nos apressamos."
+     ],
+     "q": "Que palavras ou sons você costuma embolar quando fala rápido?",
+     "c": "Diga um trava-línguas três vezes, primeiro devagar e depois mais rápido."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reducing filler words",
+     "g": "Notice um, uh and like, and replace them with calm pauses.",
+     "p": [
+      "Filler words are normal; the goal is fewer, not zero.",
+      "Fillers often appear when your brain searches for the next idea.",
+      "Swap each filler for a silent pause and a breath."
+     ],
+     "q": "Which filler word do you use most without noticing?",
+     "c": "Talk for 30 seconds about your morning and replace every filler with a pause."
+    },
+    "de": {
+     "t": "Füllwörter reduzieren",
+     "g": "Bemerke 'äh' und 'ähm' und ersetze sie durch ruhige Pausen.",
+     "p": [
+      "Füllwörter sind normal; das Ziel sind weniger, nicht null.",
+      "Sie tauchen oft auf, wenn das Gehirn die nächste Idee sucht.",
+      "Tausche jedes Füllwort gegen eine stille Pause und einen Atemzug."
+     ],
+     "q": "Welches Füllwort nutzt du am meisten, ohne es zu merken?",
+     "c": "Sprich 30 Sekunden über deinen Morgen und ersetze jedes Füllwort durch eine Pause."
+    },
+    "es": {
+     "t": "Reducir muletillas",
+     "g": "Fíjate en los 'eh' y 'o sea' y cámbialos por pausas tranquilas.",
+     "p": [
+      "Las muletillas son normales; la meta es tener menos, no cero.",
+      "Suelen aparecer cuando el cerebro busca la siguiente idea.",
+      "Cambia cada muletilla por una pausa en silencio y una respiración."
+     ],
+     "q": "¿Qué muletilla usas más sin darte cuenta?",
+     "c": "Habla 30 segundos sobre tu mañana y cambia cada muletilla por una pausa."
+    },
+    "fr": {
+     "t": "Réduire les mots de remplissage",
+     "g": "Repère les « euh » et « du coup » et remplace-les par de calmes pauses.",
+     "p": [
+      "Ces mots sont normaux ; le but est d'en avoir moins, pas zéro.",
+      "Ils apparaissent souvent quand le cerveau cherche la prochaine idée.",
+      "Remplace chacun par un silence et une respiration."
+     ],
+     "q": "Quel mot de remplissage utilises-tu le plus sans t'en rendre compte ?",
+     "c": "Parle 30 secondes de ton matin et remplace chaque tic par une pause."
+    },
+    "it": {
+     "t": "Ridurre i riempitivi",
+     "g": "Nota gli 'ehm' e i 'cioè' e sostituiscili con pause tranquille.",
+     "p": [
+      "I riempitivi sono normali: l'obiettivo è averne meno, non zero.",
+      "Spesso compaiono quando il cervello cerca la prossima idea.",
+      "Scambia ogni riempitivo con una pausa silenziosa e un respiro."
+     ],
+     "q": "Quale riempitivo usi di più senza accorgertene?",
+     "c": "Parla 30 secondi della tua mattina e sostituisci ogni riempitivo con una pausa."
+    },
+    "pt": {
+     "t": "Reduzir as palavras de enchimento",
+     "g": "Repara nos 'hum' e 'tipo' e troca-os por pausas calmas.",
+     "p": [
+      "Estas palavras são normais; o objetivo é ter menos, não zero.",
+      "Aparecem muitas vezes quando o cérebro procura a ideia seguinte.",
+      "Troca cada uma por uma pausa em silêncio e uma respiração."
+     ],
+     "q": "Que palavra de enchimento usas mais sem reparar?",
+     "c": "Fala 30 segundos sobre a tua manhã e troca cada tique por uma pausa."
+    },
+    "pt_BR": {
+     "t": "Reduzir os vícios de linguagem",
+     "g": "Perceba os 'é...' e 'tipo' e troque-os por pausas calmas.",
+     "p": [
+      "Esses vícios são normais; o objetivo é ter menos, não zero.",
+      "Costumam aparecer quando o cérebro procura a próxima ideia.",
+      "Troque cada um por uma pausa em silêncio e uma respiração."
+     ],
+     "q": "Qual vício de linguagem você mais usa sem perceber?",
+     "c": "Fale 30 segundos sobre a sua manhã e troque cada vício por uma pausa."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hands and gestures basics",
+     "g": "Use natural gestures that support your words instead of distracting.",
+     "p": [
+      "Let gestures happen on key words, like showing size or counting points.",
+      "Keep movements open and above the waist so people can see them.",
+      "Avoid repeating the same small motion again and again."
+     ],
+     "q": "Do you use your hands a lot when you talk, or very little?",
+     "c": "Tell a short story while using three clear gestures, such as counting or showing size."
+    },
+    "de": {
+     "t": "Hände und Gesten, Grundlagen",
+     "g": "Nutze natürliche Gesten, die deine Worte stützen, statt abzulenken.",
+     "p": [
+      "Lass Gesten bei Schlüsselwörtern entstehen: Größe zeigen oder Punkte zählen.",
+      "Halte Bewegungen offen und über der Taille, damit man sie sieht.",
+      "Vermeide, dieselbe kleine Bewegung immer wieder zu wiederholen."
+     ],
+     "q": "Benutzt du beim Sprechen viel oder wenig die Hände?",
+     "c": "Erzähle eine kurze Geschichte mit drei klaren Gesten, etwa Zählen oder Größe zeigen."
+    },
+    "es": {
+     "t": "Lo básico de manos y gestos",
+     "g": "Usa gestos naturales que apoyen tus palabras en lugar de distraer.",
+     "p": [
+      "Deja que los gestos surjan en palabras clave, como mostrar tamaño o contar puntos.",
+      "Mantén los movimientos abiertos y sobre la cintura para que se vean.",
+      "Evita repetir el mismo movimiento pequeño una y otra vez."
+     ],
+     "q": "¿Usas mucho las manos al hablar o muy poco?",
+     "c": "Cuenta una historia breve con tres gestos claros, como contar o mostrar tamaño."
+    },
+    "fr": {
+     "t": "Les bases des mains et des gestes",
+     "g": "Utilise des gestes naturels qui soutiennent tes mots au lieu de distraire.",
+     "p": [
+      "Laisse les gestes venir sur les mots clés : montrer une taille, compter des points.",
+      "Garde des mouvements ouverts, au-dessus de la taille, pour qu'on les voie.",
+      "Évite de répéter le même petit geste encore et encore."
+     ],
+     "q": "Utilises-tu beaucoup tes mains en parlant, ou très peu ?",
+     "c": "Raconte une courte histoire avec trois gestes clairs, comme compter ou montrer une taille."
+    },
+    "it": {
+     "t": "Le basi di mani e gesti",
+     "g": "Usa gesti naturali che sostengono le parole invece di distrarre.",
+     "p": [
+      "Lascia che i gesti nascano sulle parole chiave, come mostrare una misura o contare punti.",
+      "Tieni i movimenti aperti e sopra la vita, così si vedono.",
+      "Evita di ripetere sempre lo stesso piccolo movimento."
+     ],
+     "q": "Usi molto le mani quando parli o pochissimo?",
+     "c": "Racconta una breve storia con tre gesti chiari, come contare o mostrare una misura."
+    },
+    "pt": {
+     "t": "Noções básicas de mãos e gestos",
+     "g": "Usa gestos naturais que apoiam as palavras em vez de distrair.",
+     "p": [
+      "Deixa os gestos surgirem em palavras-chave, como mostrar tamanho ou contar pontos.",
+      "Mantém os movimentos abertos e acima da cintura para se verem.",
+      "Evita repetir o mesmo pequeno movimento vezes sem conta."
+     ],
+     "q": "Usas muito as mãos quando falas, ou muito pouco?",
+     "c": "Conta uma história curta com três gestos claros, como contar ou mostrar tamanho."
+    },
+    "pt_BR": {
+     "t": "Noções básicas de mãos e gestos",
+     "g": "Use gestos naturais que apoiam as palavras em vez de distrair.",
+     "p": [
+      "Deixe os gestos surgirem em palavras-chave, como mostrar tamanho ou contar pontos.",
+      "Mantenha os movimentos abertos e acima da cintura para serem vistos.",
+      "Evite repetir o mesmo pequeno movimento várias vezes."
+     ],
+     "q": "Você usa muito as mãos quando fala, ou bem pouco?",
+     "c": "Conte uma história curta com três gestos claros, como contar ou mostrar tamanho."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Where to put your hands",
+     "g": "Learn simple resting positions for when you are not gesturing.",
+     "p": [
+      "Let your arms hang loosely at your sides; it feels odd but looks calm.",
+      "Hold your hands lightly together at belly height, relaxed, not clenched.",
+      "Avoid pockets, crossed arms or fiddling with objects."
+     ],
+     "q": "What do your hands do when you feel a little nervous?",
+     "c": "Practise a 30-second talk with a relaxed resting position between gestures."
+    },
+    "de": {
+     "t": "Wohin mit den Händen",
+     "g": "Lerne einfache Ruhepositionen für Momente ohne Gesten.",
+     "p": [
+      "Lass die Arme locker an den Seiten hängen; es fühlt sich komisch an, wirkt aber ruhig.",
+      "Halte die Hände locker auf Bauchhöhe zusammen, entspannt, nicht verkrampft.",
+      "Meide Taschen, verschränkte Arme oder Spielen mit Gegenständen."
+     ],
+     "q": "Was machen deine Hände, wenn du ein wenig nervös bist?",
+     "c": "Übe einen 30-Sekunden-Vortrag mit entspannter Ruheposition zwischen den Gesten."
+    },
+    "es": {
+     "t": "Dónde poner las manos",
+     "g": "Aprende posiciones de reposo sencillas para cuando no gesticulas.",
+     "p": [
+      "Deja los brazos sueltos a los lados; se siente raro pero se ve tranquilo.",
+      "Junta las manos con suavidad a la altura del vientre, relajadas, sin apretar.",
+      "Evita bolsillos, brazos cruzados o jugar con objetos."
+     ],
+     "q": "¿Qué hacen tus manos cuando estás un poco nervioso?",
+     "c": "Practica una charla de 30 segundos con una posición de reposo relajada entre gestos."
+    },
+    "fr": {
+     "t": "Où mettre les mains",
+     "g": "Apprends des positions de repos simples pour les moments sans geste.",
+     "p": [
+      "Laisse les bras pendre souplement le long du corps ; c'est étrange mais paraît calme.",
+      "Joins légèrement les mains à hauteur du ventre, détendues, sans serrer.",
+      "Évite les poches, les bras croisés ou de tripoter des objets."
+     ],
+     "q": "Que font tes mains quand tu es un peu nerveux ?",
+     "c": "Entraîne-toi sur 30 secondes avec une position de repos détendue entre les gestes."
+    },
+    "it": {
+     "t": "Dove mettere le mani",
+     "g": "Impara semplici posizioni di riposo per quando non gesticoli.",
+     "p": [
+      "Lascia le braccia lungo i fianchi; sembra strano ma appare calmo.",
+      "Tieni le mani unite leggere all'altezza della pancia, rilassate, senza stringere.",
+      "Evita tasche, braccia conserte o giocherellare con oggetti."
+     ],
+     "q": "Cosa fanno le tue mani quando sei un po' agitato?",
+     "c": "Esercitati con 30 secondi di discorso con una posizione di riposo rilassata tra i gesti."
+    },
+    "pt": {
+     "t": "Onde pôr as mãos",
+     "g": "Aprende posições de repouso simples para quando não gesticulas.",
+     "p": [
+      "Deixa os braços soltos ao lado do corpo; parece estranho mas transmite calma.",
+      "Junta as mãos de leve à altura da barriga, relaxadas, sem apertar.",
+      "Evita bolsos, braços cruzados ou mexer em objetos."
+     ],
+     "q": "O que fazem as tuas mãos quando estás um pouco nervoso?",
+     "c": "Pratica 30 segundos de fala com uma posição de repouso relaxada entre gestos."
+    },
+    "pt_BR": {
+     "t": "Onde colocar as mãos",
+     "g": "Aprenda posições de repouso simples para quando você não gesticula.",
+     "p": [
+      "Deixe os braços soltos ao lado do corpo; parece estranho, mas transmite calma.",
+      "Junte as mãos de leve na altura da barriga, relaxadas, sem apertar.",
+      "Evite bolsos, braços cruzados ou mexer em objetos."
+     ],
+     "q": "O que as suas mãos fazem quando você está um pouco nervoso?",
+     "c": "Pratique 30 segundos de fala com uma posição de repouso relaxada entre gestos."
+    }
+   }
+  }
+ ]
+}

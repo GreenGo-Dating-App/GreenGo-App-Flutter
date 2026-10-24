@@ -1,0 +1,835 @@
+{
+ "topic": "marketing",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "People, process and evidence",
+     "g": "Learn the extra Ps that matter most for services.",
+     "p": [
+      "People are the staff who deliver the service; process is how it flows step by step.",
+      "Physical evidence is anything that proves quality: a tidy space, receipts, reviews.",
+      "With services, customers judge the experience, so every detail counts."
+     ],
+     "q": "Think of a service you like: what do its people and process do well?",
+     "c": "Visit or picture a cafe or clinic and list one thing for people, process and evidence."
+    },
+    "de": {
+     "t": "Menschen, Prozess und Belege",
+     "g": "Die zusätzlichen Ps kennenlernen, die bei Dienstleistungen zählen.",
+     "p": [
+      "Menschen sind das Team, das den Service erbringt; der Prozess ist der Ablauf Schritt für Schritt.",
+      "Physische Belege zeigen Qualität: ein ordentlicher Raum, Quittungen, Bewertungen.",
+      "Bei Dienstleistungen zählt das Erlebnis, daher ist jedes Detail wichtig."
+     ],
+     "q": "Denk an eine Dienstleistung, die du magst: Was machen Menschen und Ablauf dort gut?",
+     "c": "Stell dir ein Café oder eine Praxis vor und nenne je eines für Menschen, Prozess und Belege."
+    },
+    "es": {
+     "t": "Personas, procesos y evidencias",
+     "g": "Conocer las P extra que más importan en los servicios.",
+     "p": [
+      "Las personas son quienes prestan el servicio; el proceso es cómo fluye paso a paso.",
+      "La evidencia física es lo que demuestra calidad: un local cuidado, recibos, reseñas.",
+      "En los servicios el cliente juzga la experiencia, así que cada detalle cuenta."
+     ],
+     "q": "Piensa en un servicio que te guste: ¿qué hacen bien sus personas y su proceso?",
+     "c": "Visita o imagina una cafetería o clínica y anota algo de personas, proceso y evidencia."
+    },
+    "fr": {
+     "t": "Personnes, processus et preuves",
+     "g": "Découvrir les P supplémentaires qui comptent pour les services.",
+     "p": [
+      "Les personnes sont l'équipe qui rend le service ; le processus est son déroulement étape par étape.",
+      "Les preuves physiques attestent la qualité : un lieu soigné, des reçus, des avis.",
+      "Pour un service, le client juge l'expérience : chaque détail compte."
+     ],
+     "q": "Pense à un service que tu apprécies : que font bien ses équipes et son processus ?",
+     "c": "Visite ou imagine un café ou un cabinet et note un point pour personnes, processus et preuves."
+    },
+    "it": {
+     "t": "Persone, processo ed evidenze",
+     "g": "Conoscere le P extra che contano di più nei servizi.",
+     "p": [
+      "Le persone sono chi eroga il servizio; il processo è come scorre passo dopo passo.",
+      "Le evidenze fisiche dimostrano qualità: un locale curato, ricevute, recensioni.",
+      "Nei servizi il cliente giudica l'esperienza, quindi ogni dettaglio conta."
+     ],
+     "q": "Pensa a un servizio che ti piace: cosa fanno bene le sue persone e il suo processo?",
+     "c": "Visita o immagina un bar o uno studio e annota un elemento per persone, processo ed evidenze."
+    },
+    "pt": {
+     "t": "Pessoas, processos e evidências",
+     "g": "Conhecer os Ps extra que mais contam nos serviços.",
+     "p": [
+      "As pessoas são quem presta o serviço; o processo é como decorre passo a passo.",
+      "A evidência física é o que prova qualidade: um espaço cuidado, recibos, avaliações.",
+      "Nos serviços o cliente avalia a experiência, por isso cada detalhe conta."
+     ],
+     "q": "Pensa num serviço de que gostes: o que fazem bem as suas pessoas e o seu processo?",
+     "c": "Visita ou imagina um café ou uma clínica e anota um ponto de pessoas, processo e evidências."
+    },
+    "pt_BR": {
+     "t": "Pessoas, processos e evidências",
+     "g": "Conhecer os Ps extras que mais contam nos serviços.",
+     "p": [
+      "As pessoas são quem presta o serviço; o processo é como ele flui passo a passo.",
+      "A evidência física é o que prova qualidade: um espaço cuidado, recibos, avaliações.",
+      "Nos serviços o cliente avalia a experiência, então cada detalhe conta."
+     ],
+     "q": "Pense em um serviço de que você gosta: o que as pessoas e o processo dele fazem bem?",
+     "c": "Visite ou imagine um café ou clínica e anote um ponto de pessoas, processo e evidências."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Who is your audience?",
+     "g": "See why speaking to everyone often means reaching no one.",
+     "p": [
+      "A message for everyone feels like it is for nobody in particular.",
+      "Choosing an audience means choosing whom you can help best.",
+      "Specific words make the right people think: that is for me."
+     ],
+     "q": "When did an ad or message feel written just for you?",
+     "c": "Describe in two sentences the one group of people you most want to help."
+    },
+    "de": {
+     "t": "Wer ist deine Zielgruppe?",
+     "g": "Verstehen, warum Ansprache an alle oft niemanden erreicht.",
+     "p": [
+      "Eine Botschaft für alle fühlt sich an, als wäre sie für niemanden bestimmt.",
+      "Eine Zielgruppe zu wählen heißt wählen, wem du am besten helfen kannst.",
+      "Konkrete Worte lassen die Richtigen denken: Das ist für mich."
+     ],
+     "q": "Wann fühlte sich eine Anzeige oder Nachricht wie für dich geschrieben an?",
+     "c": "Beschreibe in zwei Sätzen die eine Gruppe, der du am liebsten helfen würdest."
+    },
+    "es": {
+     "t": "¿Quién es tu público?",
+     "g": "Ver por qué hablarle a todo el mundo suele significar no llegar a nadie.",
+     "p": [
+      "Un mensaje para todos parece no ser para nadie en concreto.",
+      "Elegir un público es elegir a quién puedes ayudar mejor.",
+      "Las palabras concretas hacen pensar a la gente adecuada: esto es para mí."
+     ],
+     "q": "¿Cuándo sentiste que un anuncio o mensaje estaba escrito justo para ti?",
+     "c": "Describe en dos frases el grupo de personas al que más quieres ayudar."
+    },
+    "fr": {
+     "t": "Qui est ton public ?",
+     "g": "Voir pourquoi parler à tout le monde revient souvent à ne toucher personne.",
+     "p": [
+      "Un message pour tous donne l'impression de n'être pour personne en particulier.",
+      "Choisir un public, c'est choisir qui tu peux aider le mieux.",
+      "Des mots précis font penser aux bonnes personnes : c'est pour moi."
+     ],
+     "q": "Quand une pub ou un message t'a-t-il semblé écrit rien que pour toi ?",
+     "c": "Décris en deux phrases le groupe de personnes que tu veux le plus aider."
+    },
+    "it": {
+     "t": "Chi è il tuo pubblico?",
+     "g": "Capire perché parlare a tutti spesso significa non raggiungere nessuno.",
+     "p": [
+      "Un messaggio per tutti sembra non essere per nessuno in particolare.",
+      "Scegliere un pubblico significa scegliere chi puoi aiutare meglio.",
+      "Parole specifiche fanno pensare alle persone giuste: questo è per me."
+     ],
+     "q": "Quando una pubblicità o un messaggio ti è sembrato scritto proprio per te?",
+     "c": "Descrivi in due frasi il gruppo di persone che vuoi aiutare di più."
+    },
+    "pt": {
+     "t": "Quem é o teu público?",
+     "g": "Ver porque falar para todos muitas vezes é não chegar a ninguém.",
+     "p": [
+      "Uma mensagem para todos parece não ser para ninguém em particular.",
+      "Escolher um público é escolher quem podes ajudar melhor.",
+      "Palavras concretas fazem as pessoas certas pensar: isto é para mim."
+     ],
+     "q": "Quando é que um anúncio ou mensagem te pareceu escrito mesmo para ti?",
+     "c": "Descreve em duas frases o grupo de pessoas que mais queres ajudar."
+    },
+    "pt_BR": {
+     "t": "Quem é o seu público?",
+     "g": "Ver por que falar com todo mundo muitas vezes é não alcançar ninguém.",
+     "p": [
+      "Uma mensagem para todos parece não ser para ninguém em particular.",
+      "Escolher um público é escolher quem você pode ajudar melhor.",
+      "Palavras concretas fazem as pessoas certas pensarem: isso é para mim."
+     ],
+     "q": "Quando um anúncio ou mensagem pareceu escrito só para você?",
+     "c": "Descreva em duas frases o grupo de pessoas que você mais quer ajudar."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Market segmentation",
+     "g": "Group people by needs, habits, places and life stages.",
+     "p": [
+      "A segment is a group of people who share a need or behaviour.",
+      "You can group by age, location, habits, goals or the problem they face.",
+      "Good segments are clear, reachable and big enough to matter."
+     ],
+     "q": "Which group do you belong to for a product you love?",
+     "c": "Split the buyers of one product into three segments and name each in a few words."
+    },
+    "de": {
+     "t": "Marktsegmentierung",
+     "g": "Menschen nach Bedürfnissen, Gewohnheiten, Orten und Lebensphasen gruppieren.",
+     "p": [
+      "Ein Segment ist eine Gruppe mit gemeinsamem Bedürfnis oder Verhalten.",
+      "Du kannst nach Alter, Ort, Gewohnheiten, Zielen oder dem Problem gruppieren.",
+      "Gute Segmente sind klar, erreichbar und groß genug, um zu zählen."
+     ],
+     "q": "Zu welcher Gruppe gehörst du bei einem Produkt, das du liebst?",
+     "c": "Teile die Käufer eines Produkts in drei Segmente und benenne jedes mit wenigen Worten."
+    },
+    "es": {
+     "t": "Segmentación de mercado",
+     "g": "Agrupar a las personas por necesidades, hábitos, lugares y etapas de la vida.",
+     "p": [
+      "Un segmento es un grupo de personas con una necesidad o conducta en común.",
+      "Puedes agrupar por edad, lugar, hábitos, metas o el problema que enfrentan.",
+      "Los buenos segmentos son claros, alcanzables y lo bastante grandes para importar."
+     ],
+     "q": "¿A qué grupo perteneces en un producto que te encanta?",
+     "c": "Divide a los compradores de un producto en tres segmentos y nombra cada uno."
+    },
+    "fr": {
+     "t": "La segmentation du marché",
+     "g": "Regrouper les gens par besoins, habitudes, lieux et étapes de vie.",
+     "p": [
+      "Un segment est un groupe de personnes partageant un besoin ou un comportement.",
+      "On peut grouper par âge, lieu, habitudes, objectifs ou problème rencontré.",
+      "De bons segments sont clairs, atteignables et assez grands pour compter."
+     ],
+     "q": "À quel groupe appartiens-tu pour un produit que tu adores ?",
+     "c": "Divise les acheteurs d'un produit en trois segments et nomme chacun en quelques mots."
+    },
+    "it": {
+     "t": "La segmentazione del mercato",
+     "g": "Raggruppare le persone per bisogni, abitudini, luoghi e fasi della vita.",
+     "p": [
+      "Un segmento è un gruppo di persone con un bisogno o un comportamento in comune.",
+      "Puoi raggruppare per età, luogo, abitudini, obiettivi o problema affrontato.",
+      "Buoni segmenti sono chiari, raggiungibili e abbastanza grandi da contare."
+     ],
+     "q": "A quale gruppo appartieni per un prodotto che ami?",
+     "c": "Dividi gli acquirenti di un prodotto in tre segmenti e dai un nome a ciascuno."
+    },
+    "pt": {
+     "t": "Segmentação de mercado",
+     "g": "Agrupar as pessoas por necessidades, hábitos, locais e fases da vida.",
+     "p": [
+      "Um segmento é um grupo de pessoas com uma necessidade ou comportamento em comum.",
+      "Podes agrupar por idade, local, hábitos, objetivos ou o problema que enfrentam.",
+      "Bons segmentos são claros, alcançáveis e grandes o suficiente para contar."
+     ],
+     "q": "A que grupo pertences num produto de que gostas muito?",
+     "c": "Divide os compradores de um produto em três segmentos e dá um nome a cada um."
+    },
+    "pt_BR": {
+     "t": "Segmentação de mercado",
+     "g": "Agrupar as pessoas por necessidades, hábitos, lugares e fases da vida.",
+     "p": [
+      "Um segmento é um grupo de pessoas com uma necessidade ou comportamento em comum.",
+      "Você pode agrupar por idade, lugar, hábitos, objetivos ou o problema que enfrentam.",
+      "Bons segmentos são claros, alcançáveis e grandes o bastante para importar."
+     ],
+     "q": "A que grupo você pertence em um produto que adora?",
+     "c": "Divida os compradores de um produto em três segmentos e dê um nome a cada um."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Demographics and psychographics",
+     "g": "Tell facts about people apart from their values and lifestyles.",
+     "p": [
+      "Demographics are facts: age, place, job, family; psychographics are values and interests.",
+      "Two people with the same age can want completely different things.",
+      "Combining both gives a fuller picture without stereotyping anyone."
+     ],
+     "q": "What do you do or care about that your age or job would not reveal?",
+     "c": "Write three demographic facts and three psychographic traits of someone you know well."
+    },
+    "de": {
+     "t": "Demografie und Psychografie",
+     "g": "Fakten über Menschen von ihren Werten und Lebensstilen unterscheiden.",
+     "p": [
+      "Demografie sind Fakten: Alter, Ort, Beruf, Familie; Psychografie sind Werte und Interessen.",
+      "Zwei Menschen im gleichen Alter können ganz Verschiedenes wollen.",
+      "Beides zusammen ergibt ein volleres Bild, ohne jemanden in Schubladen zu stecken."
+     ],
+     "q": "Was tust oder magst du, das dein Alter oder Beruf nicht verraten würde?",
+     "c": "Schreibe drei demografische Fakten und drei psychografische Merkmale einer Person, die du gut kennst."
+    },
+    "es": {
+     "t": "Demografía y psicografía",
+     "g": "Distinguir los datos de las personas de sus valores y estilos de vida.",
+     "p": [
+      "La demografía son datos: edad, lugar, empleo, familia; la psicografía, valores e intereses.",
+      "Dos personas de la misma edad pueden querer cosas totalmente distintas.",
+      "Combinar ambas da una imagen más completa sin encasillar a nadie."
+     ],
+     "q": "¿Qué haces o te importa que tu edad o trabajo no revelaría?",
+     "c": "Escribe tres datos demográficos y tres rasgos psicográficos de alguien que conozcas bien."
+    },
+    "fr": {
+     "t": "Démographie et psychographie",
+     "g": "Distinguer les faits sur les gens de leurs valeurs et modes de vie.",
+     "p": [
+      "La démographie, ce sont des faits : âge, lieu, métier, famille ; la psychographie, valeurs et centres d'intérêt.",
+      "Deux personnes du même âge peuvent vouloir des choses très différentes.",
+      "Combiner les deux donne une image plus complète sans enfermer personne dans un cliché."
+     ],
+     "q": "Que fais-tu ou aimes-tu que ton âge ou ton métier ne révélerait pas ?",
+     "c": "Écris trois faits démographiques et trois traits psychographiques d'une personne que tu connais bien."
+    },
+    "it": {
+     "t": "Demografia e psicografia",
+     "g": "Distinguere i fatti sulle persone dai loro valori e stili di vita.",
+     "p": [
+      "La demografia sono fatti: età, luogo, lavoro, famiglia; la psicografia, valori e interessi.",
+      "Due persone della stessa età possono volere cose del tutto diverse.",
+      "Unire le due dà un quadro più completo senza incasellare nessuno."
+     ],
+     "q": "Cosa fai o ti sta a cuore che la tua età o il tuo lavoro non rivelerebbero?",
+     "c": "Scrivi tre dati demografici e tre tratti psicografici di una persona che conosci bene."
+    },
+    "pt": {
+     "t": "Demografia e psicografia",
+     "g": "Distinguir os factos sobre as pessoas dos seus valores e estilos de vida.",
+     "p": [
+      "A demografia são factos: idade, local, profissão, família; a psicografia, valores e interesses.",
+      "Duas pessoas da mesma idade podem querer coisas completamente diferentes.",
+      "Juntar as duas dá uma imagem mais completa sem encaixar ninguém em estereótipos."
+     ],
+     "q": "O que fazes ou te importa que a tua idade ou profissão não revelaria?",
+     "c": "Escreve três dados demográficos e três traços psicográficos de alguém que conheças bem."
+    },
+    "pt_BR": {
+     "t": "Demografia e psicografia",
+     "g": "Distinguir os fatos sobre as pessoas dos seus valores e estilos de vida.",
+     "p": [
+      "A demografia são fatos: idade, lugar, profissão, família; a psicografia, valores e interesses.",
+      "Duas pessoas da mesma idade podem querer coisas completamente diferentes.",
+      "Juntar as duas dá uma imagem mais completa sem encaixar ninguém em estereótipos."
+     ],
+     "q": "O que você faz ou valoriza que sua idade ou profissão não revelaria?",
+     "c": "Escreva três dados demográficos e três traços psicográficos de alguém que você conhece bem."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Building a simple persona",
+     "g": "Create a customer profile based on real observations.",
+     "p": [
+      "A persona is a fictional but realistic person who stands for a segment.",
+      "Give them a name, a daily routine, a goal and a frustration.",
+      "Base it on real conversations and observations, not on assumptions."
+     ],
+     "q": "Who is a real person who would love what you could offer?",
+     "c": "Draft one persona in five lines, using details from someone you actually talked to."
+    },
+    "de": {
+     "t": "Eine einfache Persona erstellen",
+     "g": "Ein Kundenprofil auf Basis echter Beobachtungen entwickeln.",
+     "p": [
+      "Eine Persona ist eine erfundene, aber realistische Person, die für ein Segment steht.",
+      "Gib ihr einen Namen, einen Tagesablauf, ein Ziel und einen Frust.",
+      "Stütze sie auf echte Gespräche und Beobachtungen, nicht auf Annahmen."
+     ],
+     "q": "Wer ist ein echter Mensch, der lieben würde, was du anbieten könntest?",
+     "c": "Entwirf eine Persona in fünf Zeilen mit Details von jemandem, mit dem du wirklich gesprochen hast."
+    },
+    "es": {
+     "t": "Crear un buyer persona sencillo",
+     "g": "Crear un perfil de cliente basado en observaciones reales.",
+     "p": [
+      "Una persona es un individuo ficticio pero realista que representa un segmento.",
+      "Dale un nombre, una rutina diaria, una meta y una frustración.",
+      "Básala en conversaciones y observaciones reales, no en suposiciones."
+     ],
+     "q": "¿Quién es una persona real a la que le encantaría lo que podrías ofrecer?",
+     "c": "Redacta una persona en cinco líneas con detalles de alguien con quien hayas hablado."
+    },
+    "fr": {
+     "t": "Créer une persona simple",
+     "g": "Créer un profil client fondé sur des observations réelles.",
+     "p": [
+      "Une persona est un personnage fictif mais réaliste qui représente un segment.",
+      "Donne-lui un prénom, une routine, un objectif et une frustration.",
+      "Appuie-la sur de vraies conversations et observations, pas sur des suppositions."
+     ],
+     "q": "Qui est une vraie personne qui adorerait ce que tu pourrais proposer ?",
+     "c": "Rédige une persona en cinq lignes avec des détails de quelqu'un à qui tu as vraiment parlé."
+    },
+    "it": {
+     "t": "Creare una buyer persona semplice",
+     "g": "Creare un profilo cliente basato su osservazioni reali.",
+     "p": [
+      "Una persona è un individuo fittizio ma realistico che rappresenta un segmento.",
+      "Dagli un nome, una routine quotidiana, un obiettivo e una frustrazione.",
+      "Basala su conversazioni e osservazioni reali, non su supposizioni."
+     ],
+     "q": "Chi è una persona reale a cui piacerebbe ciò che potresti offrire?",
+     "c": "Scrivi una persona in cinque righe con dettagli di qualcuno con cui hai davvero parlato."
+    },
+    "pt": {
+     "t": "Criar uma persona simples",
+     "g": "Criar um perfil de cliente baseado em observações reais.",
+     "p": [
+      "Uma persona é uma pessoa fictícia mas realista que representa um segmento.",
+      "Dá-lhe um nome, uma rotina diária, um objetivo e uma frustração.",
+      "Baseia-a em conversas e observações reais, não em suposições."
+     ],
+     "q": "Quem é uma pessoa real que adoraria o que poderias oferecer?",
+     "c": "Escreve uma persona em cinco linhas com detalhes de alguém com quem realmente falaste."
+    },
+    "pt_BR": {
+     "t": "Criando uma persona simples",
+     "g": "Criar um perfil de cliente baseado em observações reais.",
+     "p": [
+      "Uma persona é uma pessoa fictícia, mas realista, que representa um segmento.",
+      "Dê a ela um nome, uma rotina diária, um objetivo e uma frustração.",
+      "Baseie-a em conversas e observações reais, não em suposições."
+     ],
+     "q": "Quem é uma pessoa real que adoraria o que você poderia oferecer?",
+     "c": "Escreva uma persona em cinco linhas com detalhes de alguém com quem você realmente conversou."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Targeting the right segment",
+     "g": "Choose which group to focus on first and why.",
+     "p": [
+      "Focus beats spreading thin: serve one group really well before adding others.",
+      "Judge a segment by its need, its size, how reachable it is and how well you fit.",
+      "Choosing a focus is not excluding people; it is starting where you are strongest."
+     ],
+     "q": "Which of your segments would you serve first, and why?",
+     "c": "Score three segments from 1 to 5 on need, reach and fit, then pick a winner."
+    },
+    "de": {
+     "t": "Das richtige Segment ansprechen",
+     "g": "Wählen, auf welche Gruppe du dich zuerst konzentrierst, und warum.",
+     "p": [
+      "Fokus schlägt Verzettelung: Bediene eine Gruppe richtig gut, bevor du weitere hinzunimmst.",
+      "Beurteile ein Segment nach Bedarf, Größe, Erreichbarkeit und deiner Passung.",
+      "Fokus heißt nicht ausschließen, sondern dort starten, wo du am stärksten bist."
+     ],
+     "q": "Welches deiner Segmente würdest du zuerst bedienen und warum?",
+     "c": "Bewerte drei Segmente von 1 bis 5 nach Bedarf, Reichweite und Passung und wähle den Sieger."
+    },
+    "es": {
+     "t": "Elegir el segmento adecuado",
+     "g": "Decidir en qué grupo centrarte primero y por qué.",
+     "p": [
+      "El foco gana a dispersarse: sirve muy bien a un grupo antes de añadir otros.",
+      "Valora un segmento por su necesidad, tamaño, alcance y lo bien que encajas.",
+      "Elegir un foco no es excluir: es empezar donde eres más fuerte."
+     ],
+     "q": "¿A cuál de tus segmentos atenderías primero y por qué?",
+     "c": "Puntúa tres segmentos de 1 a 5 en necesidad, alcance y encaje y elige un ganador."
+    },
+    "fr": {
+     "t": "Cibler le bon segment",
+     "g": "Choisir sur quel groupe te concentrer d'abord, et pourquoi.",
+     "p": [
+      "La concentration bat la dispersion : sers très bien un groupe avant d'en ajouter d'autres.",
+      "Juge un segment à son besoin, sa taille, son accessibilité et ton adéquation.",
+      "Choisir un cap n'exclut personne ; c'est commencer là où tu es le plus fort."
+     ],
+     "q": "Lequel de tes segments servirais-tu en premier, et pourquoi ?",
+     "c": "Note trois segments de 1 à 5 sur besoin, accès et adéquation, puis choisis un gagnant."
+    },
+    "it": {
+     "t": "Scegliere il segmento giusto",
+     "g": "Scegliere su quale gruppo concentrarti per primo e perché.",
+     "p": [
+      "Il focus batte la dispersione: servi benissimo un gruppo prima di aggiungerne altri.",
+      "Valuta un segmento per bisogno, dimensione, raggiungibilità e quanto ti si adatta.",
+      "Scegliere un focus non è escludere: è partire da dove sei più forte."
+     ],
+     "q": "Quale dei tuoi segmenti serviresti per primo e perché?",
+     "c": "Dai a tre segmenti un voto da 1 a 5 per bisogno, raggio e adattamento e scegli il vincitore."
+    },
+    "pt": {
+     "t": "Escolher o segmento certo",
+     "g": "Decidir em que grupo te concentrar primeiro e porquê.",
+     "p": [
+      "O foco vence a dispersão: serve muito bem um grupo antes de juntar outros.",
+      "Avalia um segmento pela necessidade, tamanho, alcance e pelo teu encaixe.",
+      "Escolher um foco não é excluir: é começar onde és mais forte."
+     ],
+     "q": "Qual dos teus segmentos servirias primeiro e porquê?",
+     "c": "Pontua três segmentos de 1 a 5 em necessidade, alcance e encaixe e escolhe um vencedor."
+    },
+    "pt_BR": {
+     "t": "Escolhendo o segmento certo",
+     "g": "Decidir em que grupo se concentrar primeiro e por quê.",
+     "p": [
+      "O foco vence a dispersão: atenda muito bem um grupo antes de somar outros.",
+      "Avalie um segmento pela necessidade, tamanho, alcance e pelo seu encaixe.",
+      "Escolher um foco não é excluir: é começar onde você é mais forte."
+     ],
+     "q": "Qual dos seus segmentos você atenderia primeiro e por quê?",
+     "c": "Dê nota de 1 a 5 a três segmentos em necessidade, alcance e encaixe e escolha um vencedor."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Positioning in the mind",
+     "g": "Understand the place your brand occupies in customers' thoughts.",
+     "p": [
+      "Positioning is not what you do to a product; it is what people think of it.",
+      "When someone hears a category, one or two brands come to mind first.",
+      "A clear position is simple, true and different from the alternatives."
+     ],
+     "q": "Which brand comes to mind first when you think of a category you know?",
+     "c": "Name a category and write the single word you link to each of three brands."
+    },
+    "de": {
+     "t": "Positionierung im Kopf",
+     "g": "Verstehen, welchen Platz deine Marke in den Gedanken der Kunden einnimmt.",
+     "p": [
+      "Positionierung ist nicht, was du mit dem Produkt tust, sondern was Menschen darüber denken.",
+      "Hört jemand eine Kategorie, fallen ihm zuerst ein bis zwei Marken ein.",
+      "Eine klare Position ist einfach, wahr und anders als die Alternativen."
+     ],
+     "q": "Welche Marke fällt dir bei einer Kategorie, die du kennst, zuerst ein?",
+     "c": "Nenne eine Kategorie und schreibe das eine Wort, das du mit je drei Marken verbindest."
+    },
+    "es": {
+     "t": "El posicionamiento en la mente",
+     "g": "Entender el lugar que ocupa tu marca en los pensamientos de los clientes.",
+     "p": [
+      "Posicionar no es lo que haces con un producto, sino lo que la gente piensa de él.",
+      "Al oír una categoría, primero vienen a la mente una o dos marcas.",
+      "Una posición clara es simple, verdadera y distinta de las alternativas."
+     ],
+     "q": "¿Qué marca te viene primero a la mente en una categoría que conoces?",
+     "c": "Nombra una categoría y escribe la palabra que asocias a cada una de tres marcas."
+    },
+    "fr": {
+     "t": "Le positionnement dans l'esprit",
+     "g": "Comprendre la place que ta marque occupe dans la tête des clients.",
+     "p": [
+      "Le positionnement n'est pas ce que tu fais au produit, mais ce que les gens en pensent.",
+      "En entendant une catégorie, une ou deux marques viennent d'abord à l'esprit.",
+      "Une position claire est simple, vraie et différente des alternatives."
+     ],
+     "q": "Quelle marque te vient d'abord à l'esprit dans une catégorie que tu connais ?",
+     "c": "Nomme une catégorie et écris le mot que tu associes à chacune de trois marques."
+    },
+    "it": {
+     "t": "Il posizionamento nella mente",
+     "g": "Capire il posto che il tuo marchio occupa nei pensieri dei clienti.",
+     "p": [
+      "Il posizionamento non è ciò che fai al prodotto, ma ciò che la gente ne pensa.",
+      "Sentendo una categoria, vengono in mente prima una o due marche.",
+      "Una posizione chiara è semplice, vera e diversa dalle alternative."
+     ],
+     "q": "Quale marchio ti viene in mente per primo in una categoria che conosci?",
+     "c": "Nomina una categoria e scrivi la parola che associ a ciascuno di tre marchi."
+    },
+    "pt": {
+     "t": "O posicionamento na mente",
+     "g": "Perceber o lugar que a tua marca ocupa nos pensamentos dos clientes.",
+     "p": [
+      "Posicionar não é o que fazes ao produto, mas o que as pessoas pensam dele.",
+      "Ao ouvir uma categoria, vêm primeiro à cabeça uma ou duas marcas.",
+      "Uma posição clara é simples, verdadeira e diferente das alternativas."
+     ],
+     "q": "Que marca te vem primeiro à cabeça numa categoria que conheças?",
+     "c": "Nomeia uma categoria e escreve a palavra que associas a cada uma de três marcas."
+    },
+    "pt_BR": {
+     "t": "O posicionamento na mente",
+     "g": "Entender o lugar que sua marca ocupa nos pensamentos dos clientes.",
+     "p": [
+      "Posicionar não é o que você faz com o produto, mas o que as pessoas pensam dele.",
+      "Ao ouvir uma categoria, uma ou duas marcas vêm primeiro à cabeça.",
+      "Uma posição clara é simples, verdadeira e diferente das alternativas."
+     ],
+     "q": "Que marca vem primeiro à sua cabeça em uma categoria que você conhece?",
+     "c": "Nomeie uma categoria e escreva a palavra que você associa a cada uma de três marcas."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing a positioning statement",
+     "g": "Write one short sentence defining audience, category and difference.",
+     "p": [
+      "A simple template: For audience, brand is the category that difference.",
+      "Every word should be true and something you can deliver every day.",
+      "Read it aloud: if it sounds like jargon, simplify it."
+     ],
+     "q": "What would you want your target customers to say about you in one line?",
+     "c": "Fill in the template for a real or imaginary brand, then trim it to under 25 words."
+    },
+    "de": {
+     "t": "Ein Positionierungsstatement schreiben",
+     "g": "Einen kurzen Satz formulieren, der Zielgruppe, Kategorie und Unterschied festlegt.",
+     "p": [
+      "Eine einfache Vorlage: Für Zielgruppe ist Marke die Kategorie, die Unterschied.",
+      "Jedes Wort sollte wahr sein und etwas, das du täglich einlösen kannst.",
+      "Lies es laut: Klingt es nach Fachjargon, vereinfache es."
+     ],
+     "q": "Was sollen deine Zielkunden in einem Satz über dich sagen?",
+     "c": "Fülle die Vorlage für eine echte oder erfundene Marke aus und kürze sie auf unter 25 Wörter."
+    },
+    "es": {
+     "t": "Redactar una declaración de posicionamiento",
+     "g": "Escribir una frase corta que defina público, categoría y diferencia.",
+     "p": [
+      "Una plantilla simple: Para público, marca es la categoría que diferencia.",
+      "Cada palabra debe ser verdadera y algo que puedas cumplir cada día.",
+      "Léela en voz alta: si suena a jerga, simplifícala."
+     ],
+     "q": "¿Qué querrías que tus clientes objetivo dijeran de ti en una línea?",
+     "c": "Rellena la plantilla para una marca real o imaginaria y recórtala a menos de 25 palabras."
+    },
+    "fr": {
+     "t": "Rédiger un énoncé de positionnement",
+     "g": "Écrire une phrase courte qui définit public, catégorie et différence.",
+     "p": [
+      "Un modèle simple : Pour public, marque est la catégorie qui différence.",
+      "Chaque mot doit être vrai et tenable au quotidien.",
+      "Lis-le à voix haute : s'il sonne comme du jargon, simplifie-le."
+     ],
+     "q": "Que voudrais-tu que tes clients cibles disent de toi en une ligne ?",
+     "c": "Remplis le modèle pour une marque réelle ou imaginaire, puis réduis-le à moins de 25 mots."
+    },
+    "it": {
+     "t": "Scrivere una dichiarazione di posizionamento",
+     "g": "Scrivere una frase breve che definisca pubblico, categoria e differenza.",
+     "p": [
+      "Un modello semplice: Per pubblico, marchio è la categoria che differenza.",
+      "Ogni parola deve essere vera e qualcosa che puoi mantenere ogni giorno.",
+      "Leggila ad alta voce: se suona come gergo, semplificala."
+     ],
+     "q": "Cosa vorresti che i tuoi clienti target dicessero di te in una riga?",
+     "c": "Compila il modello per un marchio reale o immaginario e riducilo a meno di 25 parole."
+    },
+    "pt": {
+     "t": "Escrever uma declaração de posicionamento",
+     "g": "Escrever uma frase curta que defina público, categoria e diferença.",
+     "p": [
+      "Um modelo simples: Para público, marca é a categoria que diferença.",
+      "Cada palavra deve ser verdadeira e algo que consigas cumprir todos os dias.",
+      "Lê-a em voz alta: se soar a jargão, simplifica."
+     ],
+     "q": "O que gostarias que os teus clientes-alvo dissessem de ti numa linha?",
+     "c": "Preenche o modelo para uma marca real ou imaginária e reduz para menos de 25 palavras."
+    },
+    "pt_BR": {
+     "t": "Escrevendo uma declaração de posicionamento",
+     "g": "Escrever uma frase curta que defina público, categoria e diferença.",
+     "p": [
+      "Um modelo simples: Para público, marca é a categoria que diferença.",
+      "Cada palavra deve ser verdadeira e algo que você consiga cumprir todo dia.",
+      "Leia em voz alta: se soar como jargão, simplifique."
+     ],
+     "q": "O que você gostaria que seus clientes-alvo dissessem de você em uma linha?",
+     "c": "Preencha o modelo para uma marca real ou imaginária e reduza para menos de 25 palavras."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Knowing your competitors",
+     "g": "Look at how others in your space present themselves.",
+     "p": [
+      "Competitors include direct rivals and any other way people solve the same problem.",
+      "Study their message, look, price and promises with curiosity, not envy.",
+      "Learn from them to find gaps, never to copy."
+     ],
+     "q": "Who else could a customer choose instead of you, even indirectly?",
+     "c": "List three competitors and write one thing each says and one thing none of them says."
+    },
+    "de": {
+     "t": "Die Konkurrenz kennen",
+     "g": "Beobachten, wie andere in deinem Feld auftreten.",
+     "p": [
+      "Zur Konkurrenz zählen direkte Rivalen und jede andere Art, dasselbe Problem zu lösen.",
+      "Studiere Botschaft, Look, Preis und Versprechen mit Neugier statt Neid.",
+      "Lerne von ihnen, um Lücken zu finden, nie um zu kopieren."
+     ],
+     "q": "Wen könnte ein Kunde statt dir wählen, auch indirekt?",
+     "c": "Liste drei Wettbewerber auf: je eine Aussage von ihnen und eine, die keiner trifft."
+    },
+    "es": {
+     "t": "Conocer a tu competencia",
+     "g": "Observar cómo se presentan otros en tu sector.",
+     "p": [
+      "La competencia incluye rivales directos y cualquier otra forma de resolver el mismo problema.",
+      "Estudia su mensaje, imagen, precio y promesas con curiosidad, no con envidia.",
+      "Aprende de ellos para hallar huecos, nunca para copiar."
+     ],
+     "q": "¿A quién podría elegir un cliente en lugar de a ti, aunque sea indirectamente?",
+     "c": "Lista tres competidores y escribe algo que dice cada uno y algo que ninguno dice."
+    },
+    "fr": {
+     "t": "Connaître tes concurrents",
+     "g": "Observer comment les autres se présentent dans ton domaine.",
+     "p": [
+      "Les concurrents incluent les rivaux directs et toute autre façon de résoudre le même problème.",
+      "Étudie leur message, leur look, leur prix et leurs promesses avec curiosité, pas envie.",
+      "Apprends d'eux pour trouver des vides, jamais pour copier."
+     ],
+     "q": "Qui d'autre un client pourrait-il choisir à ta place, même indirectement ?",
+     "c": "Liste trois concurrents : une chose que chacun dit et une chose qu'aucun ne dit."
+    },
+    "it": {
+     "t": "Conoscere i concorrenti",
+     "g": "Osservare come si presentano gli altri nel tuo settore.",
+     "p": [
+      "I concorrenti includono rivali diretti e ogni altro modo di risolvere lo stesso problema.",
+      "Studia messaggio, aspetto, prezzo e promesse con curiosità, non con invidia.",
+      "Impara da loro per trovare spazi vuoti, mai per copiare."
+     ],
+     "q": "Chi altri potrebbe scegliere un cliente al posto tuo, anche indirettamente?",
+     "c": "Elenca tre concorrenti: una cosa che dice ciascuno e una che nessuno dice."
+    },
+    "pt": {
+     "t": "Conhecer a concorrência",
+     "g": "Observar como os outros se apresentam no teu setor.",
+     "p": [
+      "A concorrência inclui rivais diretos e qualquer outra forma de resolver o mesmo problema.",
+      "Estuda a mensagem, imagem, preço e promessas com curiosidade, não com inveja.",
+      "Aprende com eles para encontrar lacunas, nunca para copiar."
+     ],
+     "q": "Quem mais poderia um cliente escolher em vez de ti, mesmo indiretamente?",
+     "c": "Lista três concorrentes: uma coisa que cada um diz e uma que nenhum diz."
+    },
+    "pt_BR": {
+     "t": "Conhecendo a concorrência",
+     "g": "Observar como os outros se apresentam no seu setor.",
+     "p": [
+      "A concorrência inclui rivais diretos e qualquer outro jeito de resolver o mesmo problema.",
+      "Estude a mensagem, o visual, o preço e as promessas com curiosidade, não com inveja.",
+      "Aprenda com eles para achar lacunas, nunca para copiar."
+     ],
+     "q": "Quem mais um cliente poderia escolher em vez de você, mesmo indiretamente?",
+     "c": "Liste três concorrentes: uma coisa que cada um diz e uma que nenhum diz."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Standing out with a clear difference",
+     "g": "Find one memorable reason to choose you.",
+     "p": [
+      "A difference matters only if customers care about it and believe it.",
+      "It can be speed, care, style, price, expertise or a way of working.",
+      "One clear difference is easier to remember than five vague ones."
+     ],
+     "q": "What makes a brand you love different from its alternatives?",
+     "c": "Write your one difference as a sentence a ten-year-old would understand."
+    },
+    "de": {
+     "t": "Mit klarem Unterschied auffallen",
+     "g": "Einen einprägsamen Grund finden, dich zu wählen.",
+     "p": [
+      "Ein Unterschied zählt nur, wenn Kunden ihn wichtig finden und ihm glauben.",
+      "Er kann Tempo, Sorgfalt, Stil, Preis, Fachwissen oder eine Arbeitsweise sein.",
+      "Ein klarer Unterschied bleibt besser haften als fünf vage."
+     ],
+     "q": "Was macht eine Marke, die du liebst, anders als die Alternativen?",
+     "c": "Schreibe deinen einen Unterschied als Satz, den ein Zehnjähriger versteht."
+    },
+    "es": {
+     "t": "Destacar con una diferencia clara",
+     "g": "Encontrar una razón memorable para elegirte.",
+     "p": [
+      "Una diferencia importa solo si al cliente le interesa y se la cree.",
+      "Puede ser rapidez, cuidado, estilo, precio, experiencia o una forma de trabajar.",
+      "Una diferencia clara se recuerda mejor que cinco vagas."
+     ],
+     "q": "¿Qué hace diferente a una marca que amas respecto a las alternativas?",
+     "c": "Escribe tu única diferencia en una frase que entendería un niño de diez años."
+    },
+    "fr": {
+     "t": "Se démarquer par une différence claire",
+     "g": "Trouver une raison mémorable de te choisir.",
+     "p": [
+      "Une différence ne compte que si les clients y tiennent et y croient.",
+      "Ce peut être la rapidité, le soin, le style, le prix, l'expertise ou une façon de travailler.",
+      "Une différence claire se retient mieux que cinq vagues."
+     ],
+     "q": "Qu'est-ce qui rend une marque que tu aimes différente des alternatives ?",
+     "c": "Écris ta différence unique en une phrase qu'un enfant de dix ans comprendrait."
+    },
+    "it": {
+     "t": "Distinguersi con una differenza chiara",
+     "g": "Trovare un motivo memorabile per sceglierti.",
+     "p": [
+      "Una differenza conta solo se ai clienti importa e ci credono.",
+      "Può essere velocità, cura, stile, prezzo, competenza o un modo di lavorare.",
+      "Una differenza chiara si ricorda meglio di cinque vaghe."
+     ],
+     "q": "Cosa rende diverso un marchio che ami rispetto alle alternative?",
+     "c": "Scrivi la tua unica differenza in una frase che capirebbe un bambino di dieci anni."
+    },
+    "pt": {
+     "t": "Destacar-se com uma diferença clara",
+     "g": "Encontrar uma razão memorável para te escolherem.",
+     "p": [
+      "Uma diferença só conta se os clientes se importarem e acreditarem nela.",
+      "Pode ser rapidez, cuidado, estilo, preço, perícia ou uma forma de trabalhar.",
+      "Uma diferença clara lembra-se melhor do que cinco vagas."
+     ],
+     "q": "O que torna uma marca de que gostas diferente das alternativas?",
+     "c": "Escreve a tua única diferença numa frase que uma criança de dez anos perceba."
+    },
+    "pt_BR": {
+     "t": "Se destacando com uma diferença clara",
+     "g": "Encontrar uma razão memorável para escolherem você.",
+     "p": [
+      "Uma diferença só conta se os clientes se importarem e acreditarem nela.",
+      "Pode ser rapidez, cuidado, estilo, preço, expertise ou um jeito de trabalhar.",
+      "Uma diferença clara se lembra melhor do que cinco vagas."
+     ],
+     "q": "O que torna diferente uma marca que você ama em relação às alternativas?",
+     "c": "Escreva sua única diferença em uma frase que uma criança de dez anos entenderia."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "moving_abroad",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dreaming about life abroad",
+     "g": "Explore why living in another country appeals to you and what you hope to find.",
+     "p": [
+      "Picture an ordinary Tuesday in your dream country, not only the holiday highlights.",
+      "Write down what excites you most: people, nature, work, food or freedom.",
+      "Every big move starts with a feeling, so listen to yours without judging it."
+     ],
+     "q": "What first made you imagine yourself living abroad?",
+     "c": "Write three words that describe your dream life abroad."
+    },
+    "de": {
+     "t": "Vom Leben im Ausland träumen",
+     "g": "Entdecke, warum dich ein Leben in einem anderen Land reizt und was du dir davon erhoffst.",
+     "p": [
+      "Stell dir einen ganz normalen Dienstag im Traumland vor, nicht nur die Urlaubshighlights.",
+      "Notiere, was dich am meisten begeistert: Menschen, Natur, Arbeit, Essen oder Freiheit.",
+      "Jeder große Umzug beginnt mit einem Gefühl. Hör auf deins, ohne es zu bewerten."
+     ],
+     "q": "Was hat dich zum ersten Mal vom Leben im Ausland träumen lassen?",
+     "c": "Schreib drei Wörter auf, die dein Traumleben im Ausland beschreiben."
+    },
+    "es": {
+     "t": "Soñar con vivir en el extranjero",
+     "g": "Descubre por qué te atrae vivir en otro país y qué esperas encontrar allí.",
+     "p": [
+      "Imagina un martes cualquiera en tu país soñado, no solo los mejores momentos de unas vacaciones.",
+      "Anota lo que más te ilusiona: la gente, la naturaleza, el trabajo, la comida o la libertad.",
+      "Toda gran mudanza empieza con una sensación. Escucha la tuya sin juzgarla."
+     ],
+     "q": "¿Qué fue lo primero que te hizo imaginarte viviendo fuera?",
+     "c": "Escribe tres palabras que describan tu vida soñada en el extranjero."
+    },
+    "fr": {
+     "t": "Rêver de vivre à l'étranger",
+     "g": "Découvre pourquoi vivre dans un autre pays t'attire et ce que tu espères y trouver.",
+     "p": [
+      "Imagine un mardi ordinaire dans ton pays de rêve, pas seulement les temps forts des vacances.",
+      "Note ce qui t'enthousiasme le plus : les gens, la nature, le travail, la cuisine ou la liberté.",
+      "Tout grand départ commence par une envie. Écoute la tienne sans la juger."
+     ],
+     "q": "Qu'est-ce qui t'a donné envie, pour la première fois, de vivre à l'étranger ?",
+     "c": "Écris trois mots qui décrivent ta vie de rêve à l'étranger."
+    },
+    "it": {
+     "t": "Sognare una vita all'estero",
+     "g": "Scopri perché vivere in un altro Paese ti attira e cosa speri di trovarci.",
+     "p": [
+      "Immagina un martedì qualunque nel tuo Paese dei sogni, non solo i momenti migliori delle vacanze.",
+      "Scrivi cosa ti entusiasma di più: le persone, la natura, il lavoro, il cibo o la libertà.",
+      "Ogni grande trasloco inizia da un'emozione. Ascolta la tua senza giudicarla."
+     ],
+     "q": "Cosa ti ha fatto immaginare per la prima volta di vivere all'estero?",
+     "c": "Scrivi tre parole che descrivono la tua vita da sogno all'estero."
+    },
+    "pt": {
+     "t": "Sonhar com uma vida no estrangeiro",
+     "g": "Descobre porque é que viver noutro país te atrai e o que esperas lá encontrar.",
+     "p": [
+      "Imagina uma terça-feira normal no teu país de sonho, e não só os melhores momentos de férias.",
+      "Regista o que mais te entusiasma: as pessoas, a natureza, o trabalho, a comida ou a liberdade.",
+      "Toda a grande mudança começa com um sentimento. Ouve o teu sem o julgar."
+     ],
+     "q": "O que te fez imaginar pela primeira vez a viver no estrangeiro?",
+     "c": "Escreve três palavras que descrevam a tua vida de sonho no estrangeiro."
+    },
+    "pt_BR": {
+     "t": "Sonhar com uma vida no exterior",
+     "g": "Descubra por que morar em outro país atrai você e o que espera encontrar por lá.",
+     "p": [
+      "Imagine uma terça-feira comum no seu país dos sonhos, e não só os melhores momentos das férias.",
+      "Anote o que mais empolga você: as pessoas, a natureza, o trabalho, a comida ou a liberdade.",
+      "Toda grande mudança começa com um sentimento. Escute o seu sem julgar."
+     ],
+     "q": "O que fez você imaginar pela primeira vez morando no exterior?",
+     "c": "Escreva três palavras que descrevam sua vida dos sonhos no exterior."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your reasons for moving",
+     "g": "Name your main reasons for moving, from work and study to adventure and family.",
+     "p": [
+      "Common reasons include a job, studies, love of a culture, family ties or a fresh start.",
+      "Most people have several reasons, and they can change over time.",
+      "Knowing your why helps you decide well and keeps you steady on hard days."
+     ],
+     "q": "What are your top two reasons for wanting to move?",
+     "c": "Rank your reasons from most to least important on a small note."
+    },
+    "de": {
+     "t": "Deine Gründe für den Umzug",
+     "g": "Benenne deine wichtigsten Gründe für den Umzug, von Arbeit und Studium bis Abenteuer und Familie.",
+     "p": [
+      "Häufige Gründe sind ein Job, ein Studium, die Liebe zu einer Kultur, Familie oder ein Neuanfang.",
+      "Die meisten Menschen haben mehrere Gründe, und die können sich mit der Zeit ändern.",
+      "Wer sein Warum kennt, entscheidet besser und bleibt an schweren Tagen standhaft."
+     ],
+     "q": "Was sind deine zwei wichtigsten Gründe für einen Umzug?",
+     "c": "Bring deine Gründe auf einem Zettel in eine Reihenfolge von wichtig bis weniger wichtig."
+    },
+    "es": {
+     "t": "Tus motivos para mudarte",
+     "g": "Nombra tus motivos principales para mudarte, del trabajo y los estudios a la aventura y la familia.",
+     "p": [
+      "Entre los motivos frecuentes están un empleo, los estudios, el amor por una cultura, la familia o empezar de cero.",
+      "La mayoría de la gente tiene varios motivos, y pueden cambiar con el tiempo.",
+      "Conocer tu porqué te ayuda a decidir bien y a mantenerte firme en los días difíciles."
+     ],
+     "q": "¿Cuáles son tus dos motivos principales para querer mudarte?",
+     "c": "Ordena tus motivos de más a menos importante en una nota pequeña."
+    },
+    "fr": {
+     "t": "Tes raisons de partir",
+     "g": "Nomme tes principales raisons de partir, du travail et des études à l'aventure et à la famille.",
+     "p": [
+      "Parmi les raisons courantes : un emploi, des études, l'amour d'une culture, la famille ou un nouveau départ.",
+      "La plupart des gens ont plusieurs raisons, et elles peuvent évoluer avec le temps.",
+      "Connaître ton pourquoi t'aide à bien décider et à tenir bon les jours difficiles."
+     ],
+     "q": "Quelles sont tes deux principales raisons de vouloir partir ?",
+     "c": "Classe tes raisons de la plus importante à la moins importante sur un petit papier."
+    },
+    "it": {
+     "t": "I tuoi motivi per trasferirti",
+     "g": "Individua i tuoi motivi principali per trasferirti, dal lavoro e studio all'avventura e alla famiglia.",
+     "p": [
+      "Motivi comuni sono un lavoro, gli studi, l'amore per una cultura, la famiglia o un nuovo inizio.",
+      "Quasi tutti hanno più motivi, e possono cambiare nel tempo.",
+      "Conoscere il tuo perché ti aiuta a scegliere bene e a restare saldo nei giorni difficili."
+     ],
+     "q": "Quali sono i tuoi due motivi principali per voler partire?",
+     "c": "Ordina i tuoi motivi dal più al meno importante su un bigliettino."
+    },
+    "pt": {
+     "t": "As tuas razões para mudar",
+     "g": "Identifica as tuas principais razões para mudar, do trabalho e estudos à aventura e à família.",
+     "p": [
+      "Razões comuns são um emprego, os estudos, o amor por uma cultura, a família ou um recomeço.",
+      "A maioria das pessoas tem várias razões, e elas podem mudar com o tempo.",
+      "Saber o teu porquê ajuda-te a decidir bem e a manter a firmeza nos dias difíceis."
+     ],
+     "q": "Quais são as tuas duas principais razões para querer mudar?",
+     "c": "Ordena as tuas razões da mais para a menos importante num papelinho."
+    },
+    "pt_BR": {
+     "t": "Seus motivos para se mudar",
+     "g": "Identifique seus principais motivos para se mudar, do trabalho e estudos à aventura e à família.",
+     "p": [
+      "Motivos comuns são um emprego, os estudos, o amor por uma cultura, a família ou um recomeço.",
+      "A maioria das pessoas tem vários motivos, e eles podem mudar com o tempo.",
+      "Saber o seu porquê ajuda a decidir bem e a se manter firme nos dias difíceis."
+     ],
+     "q": "Quais são seus dois principais motivos para querer se mudar?",
+     "c": "Ordene seus motivos do mais para o menos importante em um papelzinho."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Expectations versus reality",
+     "g": "Separate holiday impressions from everyday life in a new country.",
+     "p": [
+      "On holiday you see the best side. Daily life includes paperwork, queues and quiet evenings.",
+      "Both sides are real, and the everyday side is where you will spend most of your time.",
+      "Gently adjusted expectations make surprises easier and joys bigger."
+     ],
+     "q": "What do you imagine will be easier or harder than a holiday there?",
+     "c": "List one thing you expect to love and one that may be tricky."
+    },
+    "de": {
+     "t": "Erwartung und Wirklichkeit",
+     "g": "Trenne Urlaubseindrücke vom Alltag in einem neuen Land.",
+     "p": [
+      "Im Urlaub siehst du die Schokoladenseite. Zum Alltag gehören Papierkram, Warteschlangen und ruhige Abende.",
+      "Beides ist echt, und im Alltag verbringst du die meiste Zeit.",
+      "Behutsam angepasste Erwartungen machen Überraschungen leichter und Freuden größer."
+     ],
+     "q": "Was wird deiner Meinung nach leichter oder schwerer als im Urlaub dort?",
+     "c": "Liste eine Sache auf, die du lieben wirst, und eine, die knifflig sein könnte."
+    },
+    "es": {
+     "t": "Expectativas y realidad",
+     "g": "Separa las impresiones de las vacaciones de la vida diaria en un país nuevo.",
+     "p": [
+      "De vacaciones ves el lado bonito. La vida diaria incluye papeleos, colas y tardes tranquilas.",
+      "Ambos lados son reales, y el cotidiano es donde pasarás la mayor parte del tiempo.",
+      "Unas expectativas ajustadas con suavidad hacen las sorpresas más llevaderas y las alegrías mayores."
+     ],
+     "q": "¿Qué imaginas que será más fácil o más difícil que unas vacaciones allí?",
+     "c": "Anota algo que esperas amar y algo que podría complicarse."
+    },
+    "fr": {
+     "t": "Attentes et réalité",
+     "g": "Distingue les impressions de vacances de la vie quotidienne dans un nouveau pays.",
+     "p": [
+      "En vacances, on voit le beau côté. Le quotidien, c'est aussi les papiers, les files d'attente et les soirées calmes.",
+      "Les deux sont réels, et c'est le quotidien qui occupera l'essentiel de ton temps.",
+      "Des attentes ajustées avec douceur rendent les surprises plus faciles et les joies plus grandes."
+     ],
+     "q": "Qu'imagines-tu de plus facile ou de plus difficile que des vacances là-bas ?",
+     "c": "Note une chose que tu vas adorer et une qui pourrait être délicate."
+    },
+    "it": {
+     "t": "Aspettative e realtà",
+     "g": "Distingui le impressioni da vacanza dalla vita di tutti i giorni in un nuovo Paese.",
+     "p": [
+      "In vacanza vedi il lato migliore. La vita quotidiana include burocrazia, code e serate tranquille.",
+      "Entrambi i lati sono reali, e quello quotidiano è dove passerai più tempo.",
+      "Aspettative riviste con dolcezza rendono le sorprese più facili e le gioie più grandi."
+     ],
+     "q": "Cosa immagini sarà più facile o più difficile rispetto a una vacanza lì?",
+     "c": "Elenca una cosa che ti aspetti di amare e una che potrebbe essere complicata."
+    },
+    "pt": {
+     "t": "Expectativas e realidade",
+     "g": "Separa as impressões de férias da vida do dia a dia num país novo.",
+     "p": [
+      "Nas férias vês o lado bonito. O dia a dia inclui burocracias, filas e serões tranquilos.",
+      "Os dois lados são reais, e o quotidiano é onde vais passar mais tempo.",
+      "Expectativas ajustadas com calma tornam as surpresas mais fáceis e as alegrias maiores."
+     ],
+     "q": "O que imaginas que será mais fácil ou mais difícil do que umas férias lá?",
+     "c": "Anota uma coisa que esperas adorar e outra que pode ser complicada."
+    },
+    "pt_BR": {
+     "t": "Expectativas e realidade",
+     "g": "Separe as impressões de férias da vida do dia a dia em um país novo.",
+     "p": [
+      "Nas férias você vê o lado bonito. O dia a dia inclui burocracia, filas e noites tranquilas.",
+      "Os dois lados são reais, e o cotidiano é onde você vai passar mais tempo.",
+      "Expectativas ajustadas com calma deixam as surpresas mais leves e as alegrias maiores."
+     ],
+     "q": "O que você imagina que será mais fácil ou mais difícil do que umas férias lá?",
+     "c": "Anote uma coisa que espera amar e outra que pode ser complicada."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing a destination",
+     "g": "Compare countries by climate, language, lifestyle and opportunities.",
+     "p": [
+      "Make a short list of two or three places instead of one perfect answer.",
+      "Compare climate, language, pace of life, distance from home and opportunities.",
+      "No country is best for everyone. The right one fits your priorities."
+     ],
+     "q": "Which two or three countries are on your shortlist and why?",
+     "c": "Make a table with your shortlist and score each place from 1 to 5."
+    },
+    "de": {
+     "t": "Ein Zielland wählen",
+     "g": "Vergleiche Länder nach Klima, Sprache, Lebensstil und Chancen.",
+     "p": [
+      "Mach eine kurze Liste mit zwei oder drei Orten statt einer perfekten Antwort.",
+      "Vergleiche Klima, Sprache, Lebenstempo, Entfernung von zu Hause und Möglichkeiten.",
+      "Kein Land ist für alle das beste. Das richtige passt zu deinen Prioritäten."
+     ],
+     "q": "Welche zwei oder drei Länder stehen auf deiner Liste und warum?",
+     "c": "Erstelle eine Tabelle mit deiner Auswahl und bewerte jeden Ort von 1 bis 5."
+    },
+    "es": {
+     "t": "Elegir un destino",
+     "g": "Compara países según el clima, el idioma, el estilo de vida y las oportunidades.",
+     "p": [
+      "Haz una lista corta de dos o tres lugares en vez de buscar una única respuesta perfecta.",
+      "Compara clima, idioma, ritmo de vida, distancia de casa y oportunidades.",
+      "Ningún país es el mejor para todos. El adecuado encaja con tus prioridades."
+     ],
+     "q": "¿Qué dos o tres países están en tu lista corta y por qué?",
+     "c": "Haz una tabla con tu lista corta y puntúa cada lugar del 1 al 5."
+    },
+    "fr": {
+     "t": "Choisir une destination",
+     "g": "Compare les pays selon le climat, la langue, le mode de vie et les opportunités.",
+     "p": [
+      "Dresse une courte liste de deux ou trois lieux plutôt que de chercher la réponse parfaite.",
+      "Compare le climat, la langue, le rythme de vie, la distance et les opportunités.",
+      "Aucun pays n'est le meilleur pour tout le monde. Le bon correspond à tes priorités."
+     ],
+     "q": "Quels deux ou trois pays figurent sur ta liste et pourquoi ?",
+     "c": "Fais un tableau avec ta liste et note chaque lieu de 1 à 5."
+    },
+    "it": {
+     "t": "Scegliere una destinazione",
+     "g": "Confronta i Paesi per clima, lingua, stile di vita e opportunità.",
+     "p": [
+      "Fai una lista corta di due o tre luoghi invece di cercare l'unica risposta perfetta.",
+      "Confronta clima, lingua, ritmo di vita, distanza da casa e opportunità.",
+      "Nessun Paese è il migliore per tutti. Quello giusto si adatta alle tue priorità."
+     ],
+     "q": "Quali due o tre Paesi sono nella tua lista e perché?",
+     "c": "Fai una tabella con la tua lista e dai a ogni luogo un voto da 1 a 5."
+    },
+    "pt": {
+     "t": "Escolher um destino",
+     "g": "Compara países pelo clima, língua, estilo de vida e oportunidades.",
+     "p": [
+      "Faz uma lista curta de dois ou três lugares em vez de procurar uma única resposta perfeita.",
+      "Compara clima, língua, ritmo de vida, distância de casa e oportunidades.",
+      "Nenhum país é o melhor para todos. O certo é o que se ajusta às tuas prioridades."
+     ],
+     "q": "Que dois ou três países estão na tua lista curta e porquê?",
+     "c": "Faz uma tabela com a tua lista e dá a cada lugar uma nota de 1 a 5."
+    },
+    "pt_BR": {
+     "t": "Escolhendo um destino",
+     "g": "Compare países pelo clima, idioma, estilo de vida e oportunidades.",
+     "p": [
+      "Faça uma lista curta com dois ou três lugares em vez de buscar uma única resposta perfeita.",
+      "Compare clima, idioma, ritmo de vida, distância de casa e oportunidades.",
+      "Nenhum país é o melhor para todos. O certo é o que combina com suas prioridades."
+     ],
+     "q": "Quais dois ou três países estão na sua lista curta e por quê?",
+     "c": "Monte uma tabela com sua lista e dê a cada lugar uma nota de 1 a 5."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Researching from home",
+     "g": "Use guidebooks, official sources and expat stories to learn about a place.",
+     "p": [
+      "Mix sources: guidebooks for culture, official sites for rules, expat stories for daily life.",
+      "Notice who wrote each source and why. A blog post is an opinion, not a rule.",
+      "Keep a running list of questions to answer as you learn more."
+     ],
+     "q": "Which source have you found most helpful about your destination so far?",
+     "c": "Read one expat story or guide today and note two new things."
+    },
+    "de": {
+     "t": "Von zu Hause aus recherchieren",
+     "g": "Nutze Reiseführer, offizielle Quellen und Erfahrungsberichte, um einen Ort kennenzulernen.",
+     "p": [
+      "Mische Quellen: Reiseführer für Kultur, offizielle Seiten für Regeln, Erfahrungsberichte für den Alltag.",
+      "Achte darauf, wer eine Quelle verfasst hat und warum. Ein Blogbeitrag ist Meinung, keine Regel.",
+      "Führe eine Liste offener Fragen, die du beim Lernen nach und nach beantwortest."
+     ],
+     "q": "Welche Quelle hat dir über dein Zielland bisher am meisten geholfen?",
+     "c": "Lies heute einen Erfahrungsbericht oder Reiseführer und notiere zwei neue Dinge."
+    },
+    "es": {
+     "t": "Investigar desde casa",
+     "g": "Usa guías, fuentes oficiales y relatos de otros expatriados para conocer un lugar.",
+     "p": [
+      "Combina fuentes: guías para la cultura, webs oficiales para las normas y relatos para el día a día.",
+      "Fíjate en quién escribió cada fuente y por qué. Un blog es una opinión, no una norma.",
+      "Mantén una lista de preguntas pendientes para ir respondiéndolas."
+     ],
+     "q": "¿Qué fuente te ha resultado más útil sobre tu destino hasta ahora?",
+     "c": "Lee hoy un relato o una guía y anota dos cosas nuevas."
+    },
+    "fr": {
+     "t": "Se renseigner depuis chez soi",
+     "g": "Utilise guides, sources officielles et témoignages d'expatriés pour découvrir un lieu.",
+     "p": [
+      "Varie les sources : guides pour la culture, sites officiels pour les règles, témoignages pour le quotidien.",
+      "Regarde qui a écrit chaque source et pourquoi. Un blog est une opinion, pas une règle.",
+      "Garde une liste de questions à éclaircir au fil de tes lectures."
+     ],
+     "q": "Quelle source t'a été la plus utile sur ta destination jusqu'ici ?",
+     "c": "Lis aujourd'hui un témoignage ou un guide et note deux nouveautés."
+    },
+    "it": {
+     "t": "Informarsi da casa",
+     "g": "Usa guide, fonti ufficiali e racconti di chi è emigrato per conoscere un luogo.",
+     "p": [
+      "Mescola le fonti: guide per la cultura, siti ufficiali per le regole, racconti per la vita quotidiana.",
+      "Nota chi ha scritto ogni fonte e perché. Un blog è un'opinione, non una regola.",
+      "Tieni un elenco di domande aperte a cui rispondere man mano."
+     ],
+     "q": "Quale fonte ti è stata più utile finora sulla tua destinazione?",
+     "c": "Leggi oggi un racconto o una guida e annota due novità."
+    },
+    "pt": {
+     "t": "Pesquisar a partir de casa",
+     "g": "Usa guias, fontes oficiais e relatos de expatriados para conhecer um lugar.",
+     "p": [
+      "Combina fontes: guias para a cultura, sites oficiais para as regras, relatos para o dia a dia.",
+      "Repara em quem escreveu cada fonte e porquê. Um blogue é uma opinião, não uma regra.",
+      "Mantém uma lista de perguntas por responder à medida que aprendes."
+     ],
+     "q": "Que fonte te foi mais útil até agora sobre o teu destino?",
+     "c": "Lê hoje um relato ou um guia e anota duas novidades."
+    },
+    "pt_BR": {
+     "t": "Pesquisando de casa",
+     "g": "Use guias, fontes oficiais e relatos de expatriados para conhecer um lugar.",
+     "p": [
+      "Combine fontes: guias para a cultura, sites oficiais para as regras, relatos para o dia a dia.",
+      "Repare em quem escreveu cada fonte e por quê. Um blog é uma opinião, não uma regra.",
+      "Mantenha uma lista de perguntas a responder conforme você aprende."
+     ],
+     "q": "Qual fonte foi mais útil até agora sobre o seu destino?",
+     "c": "Leia hoje um relato ou guia e anote duas novidades."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Official sources first",
+     "g": "Learn why government and embassy websites are the place for rules and requirements.",
+     "p": [
+      "Rules about entry, stay and work change, so only official sources are reliable.",
+      "Look for the government, embassy or consulate website of the country you are considering.",
+      "Forums and friends can inspire you, but always confirm details officially."
+     ],
+     "q": "Have you ever found an official website for your destination?",
+     "c": "Bookmark one official website about your destination today."
+    },
+    "de": {
+     "t": "Offizielle Quellen zuerst",
+     "g": "Lerne, warum Regierungs- und Botschaftsseiten die richtige Adresse für Regeln und Anforderungen sind.",
+     "p": [
+      "Regeln zu Einreise, Aufenthalt und Arbeit ändern sich, daher sind nur offizielle Quellen verlässlich.",
+      "Suche die Website der Regierung, Botschaft oder des Konsulats des Landes, das du erwägst.",
+      "Foren und Freunde können inspirieren, aber bestätige Details immer offiziell."
+     ],
+     "q": "Hast du schon eine offizielle Website für dein Zielland gefunden?",
+     "c": "Speichere heute eine offizielle Website zu deinem Zielland als Lesezeichen."
+    },
+    "es": {
+     "t": "Primero, las fuentes oficiales",
+     "g": "Aprende por qué las webs de gobiernos y embajadas son el lugar para consultar normas y requisitos.",
+     "p": [
+      "Las normas de entrada, estancia y trabajo cambian, así que solo las fuentes oficiales son fiables.",
+      "Busca la web del gobierno, la embajada o el consulado del país que te interesa.",
+      "Los foros y los amigos inspiran, pero confirma siempre los detalles por vía oficial."
+     ],
+     "q": "¿Has encontrado ya una web oficial de tu destino?",
+     "c": "Guarda hoy en favoritos una web oficial sobre tu destino."
+    },
+    "fr": {
+     "t": "Les sources officielles d'abord",
+     "g": "Comprends pourquoi les sites des gouvernements et ambassades sont la référence pour les règles.",
+     "p": [
+      "Les règles d'entrée, de séjour et de travail changent : seules les sources officielles sont fiables.",
+      "Cherche le site du gouvernement, de l'ambassade ou du consulat du pays envisagé.",
+      "Forums et amis inspirent, mais vérifie toujours les détails auprès des sources officielles."
+     ],
+     "q": "As-tu déjà trouvé un site officiel pour ta destination ?",
+     "c": "Mets aujourd'hui en favori un site officiel sur ta destination."
+    },
+    "it": {
+     "t": "Prima le fonti ufficiali",
+     "g": "Scopri perché i siti di governi e ambasciate sono il posto giusto per regole e requisiti.",
+     "p": [
+      "Le regole su ingresso, soggiorno e lavoro cambiano, quindi solo le fonti ufficiali sono affidabili.",
+      "Cerca il sito del governo, dell'ambasciata o del consolato del Paese che valuti.",
+      "Forum e amici possono ispirare, ma conferma sempre i dettagli per via ufficiale."
+     ],
+     "q": "Hai già trovato un sito ufficiale per la tua destinazione?",
+     "c": "Salva oggi tra i preferiti un sito ufficiale sulla tua destinazione."
+    },
+    "pt": {
+     "t": "Primeiro, as fontes oficiais",
+     "g": "Percebe porque é que os sites de governos e embaixadas são o sítio certo para regras e requisitos.",
+     "p": [
+      "As regras de entrada, estadia e trabalho mudam, por isso só as fontes oficiais são fiáveis.",
+      "Procura o site do governo, da embaixada ou do consulado do país que consideras.",
+      "Fóruns e amigos inspiram, mas confirma sempre os detalhes por via oficial."
+     ],
+     "q": "Já encontraste um site oficial do teu destino?",
+     "c": "Guarda hoje nos favoritos um site oficial sobre o teu destino."
+    },
+    "pt_BR": {
+     "t": "Fontes oficiais primeiro",
+     "g": "Entenda por que sites de governos e embaixadas são o lugar certo para regras e requisitos.",
+     "p": [
+      "As regras de entrada, estadia e trabalho mudam, então só fontes oficiais são confiáveis.",
+      "Procure o site do governo, da embaixada ou do consulado do país que você considera.",
+      "Fóruns e amigos inspiram, mas confirme sempre os detalhes por via oficial."
+     ],
+     "q": "Você já encontrou um site oficial do seu destino?",
+     "c": "Salve hoje nos favoritos um site oficial sobre o seu destino."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cost of living in general",
+     "g": "Compare everyday costs like rent, food and transport between places.",
+     "p": [
+      "Rent is usually the biggest cost, followed by food, transport and health needs.",
+      "Costs differ by city, so compare your own habits rather than country averages.",
+      "Think in monthly categories, not single prices, and leave a margin."
+     ],
+     "q": "Which everyday cost worries you most about moving?",
+     "c": "List your five biggest monthly costs at home as a comparison base."
+    },
+    "de": {
+     "t": "Lebenshaltungskosten allgemein",
+     "g": "Vergleiche Alltagskosten wie Miete, Essen und Verkehr zwischen verschiedenen Orten.",
+     "p": [
+      "Die Miete ist meist der größte Posten, gefolgt von Essen, Verkehr und Gesundheit.",
+      "Die Kosten unterscheiden sich je nach Stadt, vergleiche also deine eigenen Gewohnheiten statt Landesdurchschnitte.",
+      "Denke in Monatskategorien statt Einzelpreisen und plane einen Puffer ein."
+     ],
+     "q": "Welche Alltagskosten bereiten dir beim Umzug die meisten Sorgen?",
+     "c": "Liste deine fünf größten monatlichen Kosten zu Hause als Vergleichsbasis auf."
+    },
+    "es": {
+     "t": "El coste de vida en general",
+     "g": "Compara gastos cotidianos como el alquiler, la comida y el transporte entre lugares.",
+     "p": [
+      "El alquiler suele ser el mayor gasto, seguido de comida, transporte y salud.",
+      "Los costes cambian según la ciudad, así que compara tus propios hábitos y no medias nacionales.",
+      "Piensa en categorías mensuales, no en precios sueltos, y deja un margen."
+     ],
+     "q": "¿Qué gasto cotidiano te preocupa más de mudarte?",
+     "c": "Apunta tus cinco mayores gastos mensuales actuales como base de comparación."
+    },
+    "fr": {
+     "t": "Le coût de la vie en général",
+     "g": "Compare les dépenses du quotidien comme le loyer, la nourriture et les transports.",
+     "p": [
+      "Le loyer est souvent la plus grosse dépense, suivi de la nourriture, des transports et de la santé.",
+      "Les coûts varient selon la ville : compare tes propres habitudes plutôt que des moyennes nationales.",
+      "Raisonne en catégories mensuelles plutôt qu'en prix isolés, et garde une marge."
+     ],
+     "q": "Quelle dépense du quotidien t'inquiète le plus dans un déménagement ?",
+     "c": "Liste tes cinq plus grosses dépenses mensuelles actuelles comme base de comparaison."
+    },
+    "it": {
+     "t": "Il costo della vita in generale",
+     "g": "Confronta le spese quotidiane come affitto, cibo e trasporti tra luoghi diversi.",
+     "p": [
+      "L'affitto è di solito la spesa maggiore, seguita da cibo, trasporti e salute.",
+      "I costi cambiano da città a città: confronta le tue abitudini, non le medie nazionali.",
+      "Ragiona per categorie mensili, non per prezzi singoli, e lascia un margine."
+     ],
+     "q": "Quale spesa quotidiana ti preoccupa di più nel trasferirti?",
+     "c": "Elenca le tue cinque maggiori spese mensili attuali come base di confronto."
+    },
+    "pt": {
+     "t": "O custo de vida em geral",
+     "g": "Compara despesas do dia a dia como renda, comida e transportes entre lugares.",
+     "p": [
+      "A renda da casa costuma ser a maior despesa, seguida de comida, transportes e saúde.",
+      "Os custos mudam de cidade para cidade, por isso compara os teus hábitos e não médias nacionais.",
+      "Pensa em categorias mensais e não em preços soltos, e deixa uma margem."
+     ],
+     "q": "Que despesa do dia a dia mais te preocupa numa mudança?",
+     "c": "Lista as tuas cinco maiores despesas mensais atuais como base de comparação."
+    },
+    "pt_BR": {
+     "t": "Custo de vida em geral",
+     "g": "Compare gastos do dia a dia como aluguel, comida e transporte entre lugares.",
+     "p": [
+      "O aluguel costuma ser o maior gasto, seguido de comida, transporte e saúde.",
+      "Os custos mudam de cidade para cidade, então compare seus hábitos e não médias nacionais.",
+      "Pense em categorias mensais e não em preços soltos, e deixe uma margem."
+     ],
+     "q": "Qual gasto do dia a dia mais preocupa você numa mudança?",
+     "c": "Liste seus cinco maiores gastos mensais atuais como base de comparação."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Climate and seasons",
+     "g": "See how weather and daylight shape daily routines and wellbeing.",
+     "p": [
+      "Long dark winters or very hot summers change when you shop, exercise and see friends.",
+      "Daylight hours affect mood and energy, so plan light, activity and warm company.",
+      "Ask locals how they enjoy each season. They know the best tricks."
+     ],
+     "q": "Which climate would make you happiest through the year?",
+     "c": "Look up the daylight hours in your target city for winter and summer."
+    },
+    "de": {
+     "t": "Klima und Jahreszeiten",
+     "g": "Sieh, wie Wetter und Tageslicht Alltag und Wohlbefinden prägen.",
+     "p": [
+      "Lange dunkle Winter oder sehr heiße Sommer verändern, wann du einkaufst, Sport machst und Freunde triffst.",
+      "Tageslicht beeinflusst Stimmung und Energie, plane also Licht, Bewegung und warme Gesellschaft ein.",
+      "Frag Einheimische, wie sie jede Jahreszeit genießen. Sie kennen die besten Tricks."
+     ],
+     "q": "Bei welchem Klima wärst du das ganze Jahr über am glücklichsten?",
+     "c": "Schau nach, wie viele Stunden Tageslicht deine Zielstadt im Winter und Sommer hat."
+    },
+    "es": {
+     "t": "Clima y estaciones",
+     "g": "Descubre cómo el tiempo y la luz del día influyen en la rutina y el bienestar.",
+     "p": [
+      "Inviernos largos y oscuros o veranos muy calurosos cambian cuándo compras, haces deporte o ves a amigos.",
+      "Las horas de luz afectan al ánimo y la energía: planifica luz, actividad y buena compañía.",
+      "Pregunta a la gente local cómo disfruta cada estación. Conoce los mejores trucos."
+     ],
+     "q": "¿Qué clima te haría más feliz a lo largo del año?",
+     "c": "Consulta las horas de luz de tu ciudad destino en invierno y en verano."
+    },
+    "fr": {
+     "t": "Climat et saisons",
+     "g": "Vois comment la météo et la lumière du jour façonnent le quotidien et le bien-être.",
+     "p": [
+      "Des hivers longs et sombres ou des étés très chauds changent quand tu fais tes courses, du sport ou vois tes amis.",
+      "La durée du jour influence l'humeur et l'énergie : prévois lumière, activité et compagnie chaleureuse.",
+      "Demande aux habitants comment ils profitent de chaque saison. Ils ont les meilleures astuces."
+     ],
+     "q": "Quel climat te rendrait le plus heureux tout au long de l'année ?",
+     "c": "Cherche la durée du jour de ta ville cible en hiver et en été."
+    },
+    "it": {
+     "t": "Clima e stagioni",
+     "g": "Scopri come meteo e luce del giorno influenzano la routine e il benessere.",
+     "p": [
+      "Inverni lunghi e bui o estati molto calde cambiano quando fai la spesa, sport o vedi gli amici.",
+      "Le ore di luce incidono su umore ed energia: pianifica luce, attività e buona compagnia.",
+      "Chiedi ai locali come vivono ogni stagione. Conoscono i trucchi migliori."
+     ],
+     "q": "Quale clima ti renderebbe più felice durante tutto l'anno?",
+     "c": "Cerca le ore di luce della tua città di destinazione in inverno e in estate."
+    },
+    "pt": {
+     "t": "Clima e estações do ano",
+     "g": "Vê como o tempo e a luz do dia moldam a rotina e o bem-estar.",
+     "p": [
+      "Invernos longos e escuros ou verões muito quentes mudam quando fazes compras, desporto ou vês amigos.",
+      "As horas de luz afetam o humor e a energia: planeia luz, atividade e boa companhia.",
+      "Pergunta aos locais como aproveitam cada estação. Eles sabem os melhores truques."
+     ],
+     "q": "Que clima te faria mais feliz ao longo do ano?",
+     "c": "Consulta as horas de luz da tua cidade-destino no inverno e no verão."
+    },
+    "pt_BR": {
+     "t": "Clima e estações do ano",
+     "g": "Veja como o tempo e a luz do dia moldam a rotina e o bem-estar.",
+     "p": [
+      "Invernos longos e escuros ou verões muito quentes mudam quando você faz compras, exercícios ou vê amigos.",
+      "As horas de luz afetam o humor e a energia: planeje luz, atividade e boa companhia.",
+      "Pergunte aos moradores como aproveitam cada estação. Eles sabem os melhores truques."
+     ],
+     "q": "Que clima deixaria você mais feliz ao longo do ano?",
+     "c": "Pesquise as horas de luz da sua cidade-destino no inverno e no verão."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Big city or small town",
+     "g": "Understand the everyday differences between living in a city and a smaller town.",
+     "p": [
+      "Cities offer variety, transport and anonymity. Towns offer calm, space and close communities.",
+      "Think about work, hobbies, noise, and how quickly you want to know your neighbours.",
+      "You can start in a city and move later. Your first choice is not forever."
+     ],
+     "q": "Do you picture yourself in a big city or a small town, and why?",
+     "c": "Write what a perfect Saturday looks like in each type of place."
+    },
+    "de": {
+     "t": "Großstadt oder Kleinstadt",
+     "g": "Verstehe die Alltagsunterschiede zwischen dem Leben in der Stadt und in einer kleineren Ortschaft.",
+     "p": [
+      "Städte bieten Vielfalt, Verkehrsanbindung und Anonymität. Kleinstädte bieten Ruhe, Platz und enge Gemeinschaften.",
+      "Denk an Arbeit, Hobbys, Lärm und daran, wie schnell du deine Nachbarn kennen möchtest.",
+      "Du kannst in einer Stadt anfangen und später umziehen. Die erste Wahl gilt nicht für immer."
+     ],
+     "q": "Siehst du dich eher in einer Großstadt oder einer Kleinstadt, und warum?",
+     "c": "Schreib auf, wie ein perfekter Samstag an beiden Ortstypen aussieht."
+    },
+    "es": {
+     "t": "Gran ciudad o pueblo",
+     "g": "Comprende las diferencias cotidianas entre vivir en una ciudad y en una población pequeña.",
+     "p": [
+      "Las ciudades ofrecen variedad, transporte y anonimato. Los pueblos, calma, espacio y comunidad cercana.",
+      "Piensa en trabajo, aficiones, ruido y en lo pronto que quieres conocer a tus vecinos.",
+      "Puedes empezar en una ciudad y mudarte después. La primera elección no es para siempre."
+     ],
+     "q": "¿Te ves en una gran ciudad o en un pueblo pequeño, y por qué?",
+     "c": "Escribe cómo sería un sábado perfecto en cada tipo de lugar."
+    },
+    "fr": {
+     "t": "Grande ville ou petite ville",
+     "g": "Comprends les différences du quotidien entre vivre en ville et dans une petite commune.",
+     "p": [
+      "Les grandes villes offrent variété, transports et anonymat. Les petites villes, calme, espace et communauté soudée.",
+      "Pense au travail, aux loisirs, au bruit et à la rapidité avec laquelle tu veux connaître tes voisins.",
+      "Tu peux commencer en ville et déménager plus tard. Ton premier choix n'est pas définitif."
+     ],
+     "q": "Te vois-tu plutôt dans une grande ville ou une petite ville, et pourquoi ?",
+     "c": "Écris à quoi ressemble un samedi parfait dans chaque type de lieu."
+    },
+    "it": {
+     "t": "Grande città o paese",
+     "g": "Capisci le differenze quotidiane tra vivere in una città e in un centro più piccolo.",
+     "p": [
+      "Le città offrono varietà, trasporti e anonimato. I paesi offrono calma, spazio e comunità unite.",
+      "Pensa a lavoro, hobby, rumore e a quanto presto vuoi conoscere i vicini.",
+      "Puoi iniziare in una città e spostarti poi. La prima scelta non è per sempre."
+     ],
+     "q": "Ti vedi in una grande città o in un piccolo paese, e perché?",
+     "c": "Scrivi come sarebbe un sabato perfetto in ciascun tipo di luogo."
+    },
+    "pt": {
+     "t": "Cidade grande ou vila pequena",
+     "g": "Compreende as diferenças do dia a dia entre viver numa cidade e numa localidade pequena.",
+     "p": [
+      "As cidades oferecem variedade, transportes e anonimato. As vilas oferecem calma, espaço e comunidades unidas.",
+      "Pensa no trabalho, nos passatempos, no ruído e em quão depressa queres conhecer os vizinhos.",
+      "Podes começar numa cidade e mudar depois. A primeira escolha não é para sempre."
+     ],
+     "q": "Vês-te numa cidade grande ou numa vila pequena, e porquê?",
+     "c": "Escreve como seria um sábado perfeito em cada tipo de lugar."
+    },
+    "pt_BR": {
+     "t": "Cidade grande ou cidade pequena",
+     "g": "Entenda as diferenças do dia a dia entre morar numa cidade grande e numa menor.",
+     "p": [
+      "Cidades grandes oferecem variedade, transporte e anonimato. Cidades pequenas, calma, espaço e comunidades unidas.",
+      "Pense no trabalho, nos hobbies, no barulho e em quão rápido quer conhecer os vizinhos.",
+      "Você pode começar numa cidade grande e mudar depois. A primeira escolha não é para sempre."
+     ],
+     "q": "Você se imagina numa cidade grande ou numa pequena, e por quê?",
+     "c": "Escreva como seria um sábado perfeito em cada tipo de lugar."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Language: how much do you need?",
+     "g": "Think about the language of your new home and start learning early.",
+     "p": [
+      "Even where English is common, local words open doors and show respect.",
+      "Daily life, such as shops, offices and neighbours, runs much more smoothly in the local language.",
+      "Start now with ten minutes a day. Small steps beat a rushed course later."
+     ],
+     "q": "Do you already speak any of the language of your destination?",
+     "c": "Pick one app, book or class and try ten minutes of it today."
+    },
+    "de": {
+     "t": "Sprache: Wie viel brauchst du?",
+     "g": "Überlege dir, welche Sprache in deiner neuen Heimat gesprochen wird, und fang früh an zu lernen.",
+     "p": [
+      "Auch wo Englisch verbreitet ist, öffnen Wörter der Landessprache Türen und zeigen Respekt.",
+      "Alltag in Geschäften, Ämtern und mit Nachbarn läuft in der Landessprache viel reibungsloser.",
+      "Starte jetzt mit zehn Minuten am Tag. Kleine Schritte schlagen einen hastigen Kurs später."
+     ],
+     "q": "Sprichst du schon etwas von der Sprache deines Ziellandes?",
+     "c": "Wähle eine App, ein Buch oder einen Kurs und probiere heute zehn Minuten."
+    },
+    "es": {
+     "t": "Idioma: ¿cuánto necesitas?",
+     "g": "Piensa en el idioma de tu nuevo hogar y empieza a aprenderlo pronto.",
+     "p": [
+      "Incluso donde se usa mucho el inglés, las palabras locales abren puertas y muestran respeto.",
+      "El día a día en tiendas, oficinas y con los vecinos fluye mucho mejor en el idioma local.",
+      "Empieza ya con diez minutos al día. Los pasos pequeños superan a un curso apresurado."
+     ],
+     "q": "¿Ya hablas algo del idioma de tu destino?",
+     "c": "Elige una app, un libro o una clase y prueba diez minutos hoy."
+    },
+    "fr": {
+     "t": "La langue : combien en faut-il ?",
+     "g": "Réfléchis à la langue de ton futur pays et commence à l'apprendre tôt.",
+     "p": [
+      "Même là où l'anglais est courant, les mots locaux ouvrent des portes et montrent du respect.",
+      "Le quotidien, dans les magasins, les administrations et avec les voisins, est bien plus fluide dans la langue locale.",
+      "Commence dès maintenant avec dix minutes par jour. Les petits pas valent mieux qu'un cours précipité."
+     ],
+     "q": "Parles-tu déjà un peu la langue de ta destination ?",
+     "c": "Choisis une appli, un livre ou un cours et essaie dix minutes aujourd'hui."
+    },
+    "it": {
+     "t": "La lingua: quanta te ne serve?",
+     "g": "Pensa alla lingua della tua nuova casa e inizia a impararla presto.",
+     "p": [
+      "Anche dove l'inglese è diffuso, le parole locali aprono porte e mostrano rispetto.",
+      "La vita di tutti i giorni, tra negozi, uffici e vicini, scorre molto meglio nella lingua locale.",
+      "Comincia ora con dieci minuti al giorno. I piccoli passi battono un corso fatto di fretta."
+     ],
+     "q": "Parli già un po' la lingua della tua destinazione?",
+     "c": "Scegli un'app, un libro o un corso e prova dieci minuti oggi."
+    },
+    "pt": {
+     "t": "Língua: de quanto precisas?",
+     "g": "Pensa na língua da tua nova casa e começa a aprendê-la cedo.",
+     "p": [
+      "Mesmo onde o inglês é comum, as palavras locais abrem portas e mostram respeito.",
+      "O dia a dia em lojas, repartições e com vizinhos corre muito melhor na língua local.",
+      "Começa já com dez minutos por dia. Passos pequenos valem mais do que um curso apressado."
+     ],
+     "q": "Já falas alguma coisa da língua do teu destino?",
+     "c": "Escolhe uma app, um livro ou uma aula e experimenta dez minutos hoje."
+    },
+    "pt_BR": {
+     "t": "Idioma: do quanto você precisa?",
+     "g": "Pense no idioma da sua nova casa e comece a aprender cedo.",
+     "p": [
+      "Mesmo onde o inglês é comum, as palavras locais abrem portas e mostram respeito.",
+      "O dia a dia em lojas, repartições e com vizinhos flui bem melhor no idioma local.",
+      "Comece já com dez minutos por dia. Passos pequenos valem mais que um curso apressado."
+     ],
+     "q": "Você já fala alguma coisa do idioma do seu destino?",
+     "c": "Escolha um app, um livro ou uma aula e tente dez minutos hoje."
+    }
+   }
+  }
+ ]
+}

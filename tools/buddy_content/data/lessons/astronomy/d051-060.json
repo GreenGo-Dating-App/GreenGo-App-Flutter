@@ -1,0 +1,835 @@
+{
+ "topic": "astronomy",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What light can tell us",
+     "g": "Learn that starlight carries clues about temperature, motion and composition.",
+     "p": [
+      "A prism or rainbow splits white light into colours; astronomers split starlight the same way into a spectrum.",
+      "Dark lines in a spectrum act like fingerprints that reveal which elements, such as hydrogen or helium, a star contains.",
+      "Colour shows temperature, and small shifts in the lines show whether an object moves toward us or away."
+     ],
+     "q": "Have you ever seen a rainbow or a prism split light into colours?",
+     "c": "Look at a CD, a glass of water or a rainbow and spot the order of colours from red to violet."
+    },
+    "de": {
+     "t": "Was uns das Licht verrät",
+     "g": "Erfahre, dass Sternenlicht Hinweise auf Temperatur, Bewegung und Zusammensetzung trägt.",
+     "p": [
+      "Ein Prisma oder Regenbogen zerlegt weißes Licht in Farben; Astronomen zerlegen Sternenlicht ebenso in ein Spektrum.",
+      "Dunkle Linien im Spektrum sind wie Fingerabdrücke und verraten, welche Elemente, etwa Wasserstoff oder Helium, ein Stern enthält.",
+      "Die Farbe zeigt die Temperatur, und kleine Verschiebungen der Linien zeigen, ob sich ein Objekt auf uns zu oder weg bewegt."
+     ],
+     "q": "Hast du schon einmal einen Regenbogen oder ein Prisma gesehen, das Licht in Farben zerlegt?",
+     "c": "Betrachte eine CD, ein Wasserglas oder einen Regenbogen und finde die Farbfolge von Rot bis Violett."
+    },
+    "es": {
+     "t": "Lo que nos cuenta la luz",
+     "g": "Aprende que la luz de las estrellas trae pistas sobre temperatura, movimiento y composición.",
+     "p": [
+      "Un prisma o un arcoíris separa la luz blanca en colores; los astrónomos separan así la luz estelar en un espectro.",
+      "Las líneas oscuras del espectro son como huellas dactilares que revelan qué elementos, como hidrógeno o helio, tiene una estrella.",
+      "El color indica la temperatura, y pequeños desplazamientos de las líneas muestran si un objeto se acerca o se aleja."
+     ],
+     "q": "¿Has visto alguna vez un arcoíris o un prisma separar la luz en colores?",
+     "c": "Mira un CD, un vaso de agua o un arcoíris y fíjate en el orden de los colores del rojo al violeta."
+    },
+    "fr": {
+     "t": "Ce que la lumière nous apprend",
+     "g": "Apprends que la lumière des étoiles porte des indices sur la température, le mouvement et la composition.",
+     "p": [
+      "Un prisme ou un arc-en-ciel sépare la lumière blanche en couleurs ; les astronomes séparent ainsi la lumière stellaire en spectre.",
+      "Les raies sombres du spectre sont des empreintes qui révèlent quels éléments, comme l'hydrogène ou l'hélium, contient une étoile.",
+      "La couleur indique la température, et de petits décalages des raies montrent si un objet s'approche ou s'éloigne."
+     ],
+     "q": "As-tu déjà vu un arc-en-ciel ou un prisme séparer la lumière en couleurs ?",
+     "c": "Regarde un CD, un verre d'eau ou un arc-en-ciel et repère l'ordre des couleurs, du rouge au violet."
+    },
+    "it": {
+     "t": "Cosa ci dice la luce",
+     "g": "Scopri che la luce delle stelle porta indizi su temperatura, moto e composizione.",
+     "p": [
+      "Un prisma o un arcobaleno separa la luce bianca in colori; gli astronomi separano così la luce stellare in uno spettro.",
+      "Le righe scure dello spettro sono impronte digitali che rivelano quali elementi, come idrogeno o elio, contiene una stella.",
+      "Il colore indica la temperatura, e piccoli spostamenti delle righe mostrano se un oggetto si avvicina o si allontana."
+     ],
+     "q": "Hai mai visto un arcobaleno o un prisma separare la luce in colori?",
+     "c": "Guarda un CD, un bicchiere d'acqua o un arcobaleno e nota l'ordine dei colori dal rosso al violetto."
+    },
+    "pt": {
+     "t": "O que a luz nos diz",
+     "g": "Aprende que a luz das estrelas traz pistas sobre temperatura, movimento e composição.",
+     "p": [
+      "Um prisma ou arco-íris separa a luz branca em cores; os astrónomos separam assim a luz estelar num espetro.",
+      "As riscas escuras do espetro são como impressões digitais que revelam que elementos, como hidrogénio ou hélio, tem uma estrela.",
+      "A cor indica a temperatura, e pequenos desvios das riscas mostram se um objeto se aproxima ou se afasta."
+     ],
+     "q": "Já viste um arco-íris ou um prisma separar a luz em cores?",
+     "c": "Olha para um CD, um copo de água ou um arco-íris e repara na ordem das cores do vermelho ao violeta."
+    },
+    "pt_BR": {
+     "t": "O que a luz nos diz",
+     "g": "Aprenda que a luz das estrelas traz pistas sobre temperatura, movimento e composição.",
+     "p": [
+      "Um prisma ou arco-íris separa a luz branca em cores; os astrônomos separam assim a luz estelar num espectro.",
+      "As linhas escuras do espectro são como impressões digitais que revelam que elementos, como hidrogênio ou hélio, uma estrela tem.",
+      "A cor indica a temperatura, e pequenos deslocamentos das linhas mostram se um objeto se aproxima ou se afasta."
+     ],
+     "q": "Você já viu um arco-íris ou um prisma separar a luz em cores?",
+     "c": "Olhe para um CD, um copo de água ou um arco-íris e repare na ordem das cores do vermelho ao violeta."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The speed of light",
+     "g": "Discover the cosmic speed limit and what it means for distance.",
+     "p": [
+      "Light travels about 300,000 kilometres per second, fast enough to circle Earth about seven times in one second.",
+      "Nothing with mass can reach or beat that speed, so it is the universe's ultimate speed limit.",
+      "Sunlight takes about 8 minutes and 20 seconds to reach us, and moonlight about 1.3 seconds."
+     ],
+     "q": "What would you do with 8 minutes if you knew the Sun's light was just leaving it?",
+     "c": "Next time you see the Sun or Moon, remember that you see them as they were seconds or minutes ago."
+    },
+    "de": {
+     "t": "Die Lichtgeschwindigkeit",
+     "g": "Entdecke das kosmische Tempolimit und was es für Entfernungen bedeutet.",
+     "p": [
+      "Licht legt etwa 300.000 Kilometer pro Sekunde zurück, schnell genug für etwa sieben Erdumrundungen in einer Sekunde.",
+      "Nichts mit Masse kann diese Geschwindigkeit erreichen oder übertreffen; sie ist das ultimative Tempolimit des Universums.",
+      "Sonnenlicht braucht etwa 8 Minuten und 20 Sekunden bis zu uns, Mondlicht etwa 1,3 Sekunden."
+     ],
+     "q": "Was würdest du mit 8 Minuten anfangen, wenn das Sonnenlicht gerade erst losflöge?",
+     "c": "Denk beim nächsten Blick auf Sonne oder Mond daran, dass du sie so siehst, wie sie vor Sekunden oder Minuten waren."
+    },
+    "es": {
+     "t": "La velocidad de la luz",
+     "g": "Descubre el límite de velocidad del cosmos y qué significa para las distancias.",
+     "p": [
+      "La luz viaja unos 300.000 kilómetros por segundo, lo bastante rápido para dar unas siete vueltas a la Tierra en un segundo.",
+      "Nada con masa puede alcanzar ni superar esa velocidad, así que es el límite máximo del universo.",
+      "La luz del Sol tarda unos 8 minutos y 20 segundos en llegar a nosotros y la de la Luna, unos 1,3 segundos."
+     ],
+     "q": "¿Qué harías con 8 minutos si supieras que la luz del Sol acaba de salir?",
+     "c": "La próxima vez que veas el Sol o la Luna, recuerda que los ves como eran hace segundos o minutos."
+    },
+    "fr": {
+     "t": "La vitesse de la lumière",
+     "g": "Découvre la limite de vitesse du cosmos et ce qu'elle signifie pour les distances.",
+     "p": [
+      "La lumière parcourt environ 300 000 kilomètres par seconde, assez pour faire sept fois le tour de la Terre en une seconde.",
+      "Rien qui ait une masse ne peut atteindre ou dépasser cette vitesse : c'est la limite ultime de l'Univers.",
+      "La lumière du Soleil met environ 8 minutes et 20 secondes à nous atteindre, celle de la Lune environ 1,3 seconde."
+     ],
+     "q": "Que ferais-tu de ces 8 minutes si tu savais que la lumière du Soleil vient de partir ?",
+     "c": "La prochaine fois que tu vois le Soleil ou la Lune, rappelle-toi que tu les vois tels qu'ils étaient il y a quelques secondes ou minutes."
+    },
+    "it": {
+     "t": "La velocità della luce",
+     "g": "Scopri il limite di velocità del cosmo e cosa significa per le distanze.",
+     "p": [
+      "La luce viaggia a circa 300.000 chilometri al secondo, abbastanza per fare circa sette giri della Terra in un secondo.",
+      "Nulla che abbia massa può raggiungere o superare quella velocità: è il limite massimo dell'universo.",
+      "La luce del Sole impiega circa 8 minuti e 20 secondi per arrivare a noi, quella della Luna circa 1,3 secondi."
+     ],
+     "q": "Cosa faresti con 8 minuti se sapessi che la luce del Sole è appena partita?",
+     "c": "La prossima volta che vedi il Sole o la Luna, ricorda che li vedi com'erano secondi o minuti fa."
+    },
+    "pt": {
+     "t": "A velocidade da luz",
+     "g": "Descobre o limite de velocidade do cosmos e o que significa para as distâncias.",
+     "p": [
+      "A luz viaja cerca de 300 000 quilómetros por segundo, o suficiente para dar umas sete voltas à Terra num segundo.",
+      "Nada com massa pode atingir ou ultrapassar essa velocidade, por isso é o limite máximo do universo.",
+      "A luz do Sol demora cerca de 8 minutos e 20 segundos a chegar até nós e a da Lua cerca de 1,3 segundos."
+     ],
+     "q": "O que farias com 8 minutos se soubesses que a luz do Sol acabou de partir?",
+     "c": "Da próxima vez que vires o Sol ou a Lua, lembra-te de que os vês como eram há segundos ou minutos."
+    },
+    "pt_BR": {
+     "t": "A velocidade da luz",
+     "g": "Descubra o limite de velocidade do cosmos e o que ele significa para as distâncias.",
+     "p": [
+      "A luz viaja cerca de 300 mil quilômetros por segundo, o suficiente para dar umas sete voltas na Terra em um segundo.",
+      "Nada com massa pode atingir ou ultrapassar essa velocidade, então ela é o limite máximo do universo.",
+      "A luz do Sol leva cerca de 8 minutos e 20 segundos para chegar até nós e a da Lua cerca de 1,3 segundo."
+     ],
+     "q": "O que você faria com 8 minutos se soubesse que a luz do Sol acabou de partir?",
+     "c": "Da próxima vez que você vir o Sol ou a Lua, lembre-se de que os vê como eram há segundos ou minutos."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Light-years explained",
+     "g": "Understand that a light-year is a distance, not a time.",
+     "p": [
+      "A light-year is the distance light travels in one year: about 9.46 trillion kilometres.",
+      "Using light-years keeps numbers manageable: the nearest star beyond the Sun is about 4.2 light-years away.",
+      "Our Milky Way galaxy is roughly 100,000 light-years across."
+     ],
+     "q": "Why do you think astronomers need a special unit for distances in space?",
+     "c": "Work it out: if light takes 8 minutes from the Sun, how many light-minutes is Earth from the Sun?"
+    },
+    "de": {
+     "t": "Lichtjahre erklärt",
+     "g": "Verstehe, dass ein Lichtjahr eine Entfernung ist, keine Zeit.",
+     "p": [
+      "Ein Lichtjahr ist die Strecke, die Licht in einem Jahr zurücklegt: etwa 9,46 Billionen Kilometer.",
+      "Mit Lichtjahren bleiben die Zahlen handlich: Der nächste Stern jenseits der Sonne ist etwa 4,2 Lichtjahre entfernt.",
+      "Unsere Milchstraße misst etwa 100.000 Lichtjahre im Durchmesser."
+     ],
+     "q": "Warum brauchen Astronomen wohl eine besondere Einheit für Entfernungen im All?",
+     "c": "Rechne nach: Wenn Licht 8 Minuten von der Sonne braucht, wie viele Lichtminuten ist die Erde von der Sonne entfernt?"
+    },
+    "es": {
+     "t": "Los años luz",
+     "g": "Entiende que un año luz es una distancia, no un tiempo.",
+     "p": [
+      "Un año luz es la distancia que recorre la luz en un año: unos 9,46 billones de kilómetros.",
+      "Los años luz mantienen los números manejables: la estrella más cercana tras el Sol está a unos 4,2 años luz.",
+      "Nuestra galaxia, la Vía Láctea, mide unos 100.000 años luz de lado a lado."
+     ],
+     "q": "¿Por qué crees que los astrónomos necesitan una unidad especial para las distancias del espacio?",
+     "c": "Calcula: si la luz tarda 8 minutos desde el Sol, ¿a cuántos minutos luz está la Tierra del Sol?"
+    },
+    "fr": {
+     "t": "L'année-lumière expliquée",
+     "g": "Comprends qu'une année-lumière est une distance, pas une durée.",
+     "p": [
+      "Une année-lumière est la distance parcourue par la lumière en un an : environ 9 460 milliards de kilomètres.",
+      "Elle garde des nombres maniables : l'étoile la plus proche après le Soleil est à environ 4,2 années-lumière.",
+      "Notre galaxie, la Voie lactée, mesure environ 100 000 années-lumière de diamètre."
+     ],
+     "q": "Pourquoi les astronomes ont-ils besoin d'une unité spéciale pour les distances dans l'espace, à ton avis ?",
+     "c": "Calcule : si la lumière met 8 minutes depuis le Soleil, à combien de minutes-lumière la Terre est-elle du Soleil ?"
+    },
+    "it": {
+     "t": "L'anno luce spiegato",
+     "g": "Capisci che un anno luce è una distanza, non un tempo.",
+     "p": [
+      "Un anno luce è la distanza percorsa dalla luce in un anno: circa 9,46 mila miliardi di chilometri.",
+      "Gli anni luce rendono i numeri gestibili: la stella più vicina dopo il Sole dista circa 4,2 anni luce.",
+      "La nostra galassia, la Via Lattea, misura circa 100.000 anni luce di diametro."
+     ],
+     "q": "Perché secondo te gli astronomi hanno bisogno di un'unità speciale per le distanze nello spazio?",
+     "c": "Calcola: se la luce impiega 8 minuti dal Sole, a quanti minuti luce è la Terra dal Sole?"
+    },
+    "pt": {
+     "t": "Anos-luz explicados",
+     "g": "Percebe que um ano-luz é uma distância, não um tempo.",
+     "p": [
+      "Um ano-luz é a distância que a luz percorre num ano: cerca de 9,46 biliões de quilómetros.",
+      "Os anos-luz mantêm os números manejáveis: a estrela mais próxima depois do Sol está a cerca de 4,2 anos-luz.",
+      "A nossa galáxia, a Via Láctea, tem cerca de 100 000 anos-luz de diâmetro."
+     ],
+     "q": "Porque achas que os astrónomos precisam de uma unidade especial para distâncias no espaço?",
+     "c": "Calcula: se a luz demora 8 minutos desde o Sol, a quantos minutos-luz está a Terra do Sol?"
+    },
+    "pt_BR": {
+     "t": "Anos-luz explicados",
+     "g": "Entenda que um ano-luz é uma distância, não um tempo.",
+     "p": [
+      "Um ano-luz é a distância que a luz percorre em um ano: cerca de 9,46 trilhões de quilômetros.",
+      "Os anos-luz mantêm os números manejáveis: a estrela mais próxima depois do Sol fica a cerca de 4,2 anos-luz.",
+      "Nossa galáxia, a Via Láctea, tem cerca de 100 mil anos-luz de diâmetro."
+     ],
+     "q": "Por que você acha que astrônomos precisam de uma unidade especial para distâncias no espaço?",
+     "c": "Calcule: se a luz leva 8 minutos desde o Sol, a quantos minutos-luz a Terra está do Sol?"
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Looking back in time",
+     "g": "Realise that we see distant objects as they were when their light set off.",
+     "p": [
+      "Light takes time to travel, so every glance at the sky shows the past.",
+      "Polaris is several hundred light-years away, so its light left it centuries ago.",
+      "The Andromeda Galaxy, visible as a faint smudge in dark skies, shows us light about 2.5 million years old."
+     ],
+     "q": "If you could see one thing in the sky exactly as it is right now, what would it be?",
+     "c": "Pick a star you know, look up how many light-years away it is, and say how old its light is."
+    },
+    "de": {
+     "t": "Der Blick in die Vergangenheit",
+     "g": "Erkenne, dass wir ferne Objekte so sehen, wie sie waren, als ihr Licht losflog.",
+     "p": [
+      "Licht braucht Zeit für seinen Weg, daher zeigt jeder Blick zum Himmel die Vergangenheit.",
+      "Der Polarstern ist mehrere hundert Lichtjahre entfernt, sein Licht ist also vor Jahrhunderten gestartet.",
+      "Die Andromeda-Galaxie, bei dunklem Himmel als schwacher Fleck sichtbar, zeigt uns etwa 2,5 Millionen Jahre altes Licht."
+     ],
+     "q": "Wenn du ein Ding am Himmel genau so sehen könntest, wie es jetzt ist, welches wäre es?",
+     "c": "Wähle einen Stern, den du kennst, suche seine Entfernung in Lichtjahren und sage, wie alt sein Licht ist."
+    },
+    "es": {
+     "t": "Mirar al pasado",
+     "g": "Comprende que vemos los objetos lejanos como eran cuando salió su luz.",
+     "p": [
+      "La luz tarda en viajar, así que cada mirada al cielo muestra el pasado.",
+      "Polaris está a varios cientos de años luz, así que su luz salió hace siglos.",
+      "La galaxia de Andrómeda, visible como una mancha tenue en cielos oscuros, nos muestra luz de unos 2,5 millones de años."
+     ],
+     "q": "Si pudieras ver una cosa del cielo exactamente como es ahora, ¿cuál sería?",
+     "c": "Elige una estrella que conozcas, busca a cuántos años luz está y di qué antigüedad tiene su luz."
+    },
+    "fr": {
+     "t": "Regarder dans le passé",
+     "g": "Comprends que nous voyons les objets lointains tels qu'ils étaient quand leur lumière est partie.",
+     "p": [
+      "La lumière met du temps à voyager : chaque regard vers le ciel montre le passé.",
+      "Polaris est à plusieurs centaines d'années-lumière : sa lumière est partie il y a des siècles.",
+      "La galaxie d'Andromède, tache floue sous un ciel noir, nous montre une lumière vieille d'environ 2,5 millions d'années."
+     ],
+     "q": "Si tu pouvais voir une chose du ciel exactement telle qu'elle est maintenant, laquelle serait-ce ?",
+     "c": "Choisis une étoile que tu connais, cherche sa distance en années-lumière et dis quel âge a sa lumière."
+    },
+    "it": {
+     "t": "Guardare nel passato",
+     "g": "Scopri che vediamo gli oggetti lontani com'erano quando la loro luce è partita.",
+     "p": [
+      "La luce impiega tempo a viaggiare, quindi ogni sguardo al cielo mostra il passato.",
+      "La Stella Polare dista alcune centinaia di anni luce, quindi la sua luce è partita secoli fa.",
+      "La galassia di Andromeda, debole macchia sotto cieli bui, ci mostra luce vecchia di circa 2,5 milioni di anni."
+     ],
+     "q": "Se potessi vedere una cosa del cielo esattamente com'è adesso, quale sarebbe?",
+     "c": "Scegli una stella che conosci, cerca a quanti anni luce sta e dì quanto è vecchia la sua luce."
+    },
+    "pt": {
+     "t": "Olhar para o passado",
+     "g": "Percebe que vemos os objetos distantes como eram quando a sua luz partiu.",
+     "p": [
+      "A luz demora a viajar, por isso cada olhar para o céu mostra o passado.",
+      "A Polar está a várias centenas de anos-luz, por isso a sua luz partiu há séculos.",
+      "A galáxia de Andrómeda, visível como uma mancha ténue em céus escuros, mostra-nos luz com cerca de 2,5 milhões de anos."
+     ],
+     "q": "Se pudesses ver uma coisa do céu exatamente como é agora, qual seria?",
+     "c": "Escolhe uma estrela que conheças, procura a quantos anos-luz está e diz que idade tem a sua luz."
+    },
+    "pt_BR": {
+     "t": "Olhando para o passado",
+     "g": "Perceba que vemos objetos distantes como eram quando a luz deles partiu.",
+     "p": [
+      "A luz leva tempo para viajar, então cada olhada para o céu mostra o passado.",
+      "A Polar fica a várias centenas de anos-luz, então a luz dela partiu há séculos.",
+      "A galáxia de Andrômeda, visível como uma mancha tênue em céus escuros, nos mostra luz de cerca de 2,5 milhões de anos."
+     ],
+     "q": "Se você pudesse ver uma coisa do céu exatamente como ela é agora, qual seria?",
+     "c": "Escolha uma estrela que você conheça, pesquise a quantos anos-luz ela está e diga que idade tem a luz dela."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Our nearest stars",
+     "g": "Meet the Alpha Centauri system, a bit more than four light-years away.",
+     "p": [
+      "Alpha Centauri is the closest star system, about 4.4 light-years away, and it is a triple star system.",
+      "Its two bright stars, A and B, orbit each other; the faint red dwarf Proxima Centauri is the nearest of all, at about 4.24 light-years.",
+      "It is visible to the naked eye from the southern hemisphere, near the Southern Cross pointers, but not from far northern latitudes."
+     ],
+     "q": "Would you want to know what a planet around a neighbouring star looks like?",
+     "c": "In the south, find the two pointer stars by the Southern Cross; the one farther from the cross is Alpha Centauri."
+    },
+    "de": {
+     "t": "Unsere nächsten Sterne",
+     "g": "Lerne das Alpha-Centauri-System kennen, etwas mehr als vier Lichtjahre entfernt.",
+     "p": [
+      "Alpha Centauri ist das nächste Sternsystem, etwa 4,4 Lichtjahre entfernt, und besteht aus drei Sternen.",
+      "Die zwei hellen Sterne A und B umkreisen einander; der schwache Rote Zwerg Proxima Centauri ist mit etwa 4,24 Lichtjahren der nächste.",
+      "Von der Südhalbkugel ist es mit bloßem Auge sichtbar, bei den Zeigersternen des Kreuzes des Südens, aber nicht aus hohen Nordbreiten."
+     ],
+     "q": "Möchtest du wissen, wie ein Planet bei einem Nachbarstern aussieht?",
+     "c": "Suche auf der Südhalbkugel die zwei hellen Zeigersterne beim Kreuz des Südens; der weiter vom Kreuz entfernte ist Alpha Centauri."
+    },
+    "es": {
+     "t": "Nuestras estrellas más cercanas",
+     "g": "Conoce el sistema Alfa Centauri, a poco más de cuatro años luz.",
+     "p": [
+      "Alfa Centauri es el sistema estelar más cercano, a unos 4,4 años luz, y es un sistema triple.",
+      "Sus dos estrellas brillantes, A y B, se orbitan entre sí, y la débil enana roja Próxima Centauri es la más cercana, a unos 4,24 años luz.",
+      "Se ve a simple vista desde el hemisferio sur, junto a las estrellas guía de la Cruz del Sur, pero no desde latitudes norte altas."
+     ],
+     "q": "¿Te gustaría saber cómo es un planeta de una estrella vecina?",
+     "c": "Si estás en el sur, busca las dos estrellas brillantes junto a la Cruz del Sur; la más lejana a la cruz es Alfa Centauri."
+    },
+    "fr": {
+     "t": "Nos étoiles les plus proches",
+     "g": "Rencontre le système Alpha du Centaure, à un peu plus de quatre années-lumière.",
+     "p": [
+      "Alpha du Centaure est le système stellaire le plus proche, à environ 4,4 années-lumière, et il compte trois étoiles.",
+      "Ses deux étoiles brillantes, A et B, orbitent ensemble ; la naine rouge Proxima est la plus proche, à environ 4,24 années-lumière.",
+      "Elle est visible à l'œil nu depuis l'hémisphère sud, près des étoiles repères de la Croix du Sud, mais pas depuis le grand nord."
+     ],
+     "q": "Aimerais-tu savoir à quoi ressemble une planète autour d'une étoile voisine ?",
+     "c": "Dans le sud, repère les deux étoiles brillantes près de la Croix du Sud ; celle qui est la plus éloignée de la croix est Alpha du Centaure."
+    },
+    "it": {
+     "t": "Le nostre stelle più vicine",
+     "g": "Scopri il sistema Alpha Centauri, a poco più di quattro anni luce.",
+     "p": [
+      "Alpha Centauri è il sistema stellare più vicino, a circa 4,4 anni luce, ed è un sistema triplo.",
+      "Le due stelle luminose, A e B, si orbitano; la debole nana rossa Proxima Centauri è la più vicina, a circa 4,24 anni luce.",
+      "Si vede a occhio nudo dall'emisfero australe, vicino alle stelle puntatrici della Croce del Sud, ma non dalle alte latitudini nord."
+     ],
+     "q": "Vorresti sapere com'è un pianeta attorno a una stella vicina?",
+     "c": "Se sei a sud, trova le due stelle luminose vicino alla Croce del Sud; quella più lontana dalla croce è Alpha Centauri."
+    },
+    "pt": {
+     "t": "As nossas estrelas mais próximas",
+     "g": "Conhece o sistema Alfa Centauro, a pouco mais de quatro anos-luz.",
+     "p": [
+      "Alfa Centauro é o sistema estelar mais próximo, a cerca de 4,4 anos-luz, e tem três estrelas.",
+      "As duas estrelas brilhantes, A e B, orbitam uma à outra; a ténue anã vermelha Próxima Centauro é a mais próxima, a cerca de 4,24 anos-luz.",
+      "Vê-se a olho nu no hemisfério sul, junto às estrelas guia do Cruzeiro do Sul, mas não de latitudes norte elevadas."
+     ],
+     "q": "Gostarias de saber como é um planeta à volta de uma estrela vizinha?",
+     "c": "Se estás no sul, procura as duas estrelas brilhantes junto ao Cruzeiro do Sul; a mais afastada da cruz é Alfa Centauro."
+    },
+    "pt_BR": {
+     "t": "Nossas estrelas mais próximas",
+     "g": "Conheça o sistema Alfa Centauro, a pouco mais de quatro anos-luz.",
+     "p": [
+      "Alfa Centauro é o sistema estelar mais próximo, a cerca de 4,4 anos-luz, e tem três estrelas.",
+      "As duas estrelas brilhantes, A e B, orbitam uma à outra; a fraca anã vermelha Próxima Centauro é a mais próxima, a cerca de 4,24 anos-luz.",
+      "Vê-se a olho nu no hemisfério sul, junto às estrelas guia do Cruzeiro do Sul, mas não de latitudes norte elevadas."
+     ],
+     "q": "Você gostaria de saber como é um planeta em volta de uma estrela vizinha?",
+     "c": "Se você está no sul, procure as duas estrelas brilhantes junto ao Cruzeiro do Sul; a mais afastada da cruz é Alfa Centauro."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brightest stars in the sky",
+     "g": "Meet Sirius, Canopus and friends, and why some stars look so bright.",
+     "p": [
+      "Sirius is the brightest star in our night sky; it is bright because it is both fairly close, 8.6 light-years, and intrinsically luminous.",
+      "Canopus is the second brightest, and is far more luminous than Sirius but much farther away.",
+      "A star looks bright due to its true power and its distance; the brightest-looking is not always the most powerful."
+     ],
+     "q": "Which star in the sky do you notice first when you look up?",
+     "c": "Use a sky chart to find the brightest star visible tonight and write its name."
+    },
+    "de": {
+     "t": "Die hellsten Sterne am Himmel",
+     "g": "Lerne Sirius, Canopus und andere kennen und warum manche Sterne so hell wirken.",
+     "p": [
+      "Sirius ist der hellste Stern unseres Nachthimmels; er ist hell, weil er recht nah ist, 8,6 Lichtjahre, und zugleich leuchtkräftig.",
+      "Canopus ist der zweithellste, viel leuchtkräftiger als Sirius, aber weit entfernter.",
+      "Ein Stern wirkt hell durch seine wahre Leistung und seine Entfernung; der hellste Anblick ist nicht immer der stärkste Stern."
+     ],
+     "q": "Welchen Stern am Himmel bemerkst du zuerst, wenn du nach oben schaust?",
+     "c": "Finde mit einer Sternkarte den hellsten Stern, der heute sichtbar ist, und schreibe seinen Namen auf."
+    },
+    "es": {
+     "t": "Las estrellas más brillantes del cielo",
+     "g": "Conoce a Sirio, Canopus y compañía, y por qué algunas estrellas lucen tanto.",
+     "p": [
+      "Sirio es la estrella más brillante de nuestro cielo nocturno; brilla porque está bastante cerca, a 8,6 años luz, y es muy luminosa.",
+      "Canopus es la segunda más brillante y es mucho más luminosa que Sirio, pero está mucho más lejos.",
+      "Una estrella luce brillante por su potencia real y su distancia; la que más brilla no siempre es la más potente."
+     ],
+     "q": "¿Qué estrella del cielo notas primero cuando miras hacia arriba?",
+     "c": "Usa un mapa del cielo para encontrar la estrella más brillante visible esta noche y anota su nombre."
+    },
+    "fr": {
+     "t": "Les étoiles les plus brillantes",
+     "g": "Rencontre Sirius, Canopus et leurs amies, et pourquoi certaines étoiles brillent tant.",
+     "p": [
+      "Sirius est l'étoile la plus brillante de notre ciel nocturne : assez proche, à 8,6 années-lumière, et naturellement très lumineuse.",
+      "Canopus est la deuxième plus brillante ; bien plus lumineuse que Sirius, mais beaucoup plus lointaine.",
+      "Une étoile paraît brillante selon sa vraie puissance et sa distance ; la plus brillante à l'œil n'est pas toujours la plus puissante."
+     ],
+     "q": "Quelle étoile remarques-tu en premier quand tu lèves les yeux ?",
+     "c": "Avec une carte du ciel, trouve l'étoile la plus brillante visible ce soir et note son nom."
+    },
+    "it": {
+     "t": "Le stelle più luminose del cielo",
+     "g": "Incontra Sirio, Canopo e le altre, e scopri perché alcune stelle appaiono così luminose.",
+     "p": [
+      "Sirio è la stella più luminosa del nostro cielo notturno: è abbastanza vicina, 8,6 anni luce, ed è intrinsecamente luminosa.",
+      "Canopo è la seconda più luminosa; è molto più potente di Sirio, ma molto più lontana.",
+      "Una stella appare luminosa per la sua vera potenza e la sua distanza; la più brillante all'occhio non è sempre la più potente."
+     ],
+     "q": "Quale stella del cielo noti per prima quando alzi lo sguardo?",
+     "c": "Usa una mappa del cielo per trovare la stella più luminosa visibile stasera e scrivi il suo nome."
+    },
+    "pt": {
+     "t": "As estrelas mais brilhantes do céu",
+     "g": "Conhece Sírio, Canopo e companhia, e porque algumas estrelas brilham tanto.",
+     "p": [
+      "Sírio é a estrela mais brilhante do nosso céu noturno: está bastante perto, a 8,6 anos-luz, e é muito luminosa.",
+      "Canopo é a segunda mais brilhante; é muito mais luminosa do que Sírio, mas está muito mais longe.",
+      "Uma estrela parece brilhante pela sua potência real e pela distância; a que mais brilha não é sempre a mais potente."
+     ],
+     "q": "Que estrela do céu notas primeiro quando olhas para cima?",
+     "c": "Usa um mapa do céu para encontrar a estrela mais brilhante visível esta noite e anota o seu nome."
+    },
+    "pt_BR": {
+     "t": "As estrelas mais brilhantes do céu",
+     "g": "Conheça Sírius, Canopus e companhia, e por que algumas estrelas brilham tanto.",
+     "p": [
+      "Sírius é a estrela mais brilhante do nosso céu noturno: fica bem perto, a 8,6 anos-luz, e é muito luminosa.",
+      "Canopus é a segunda mais brilhante; é muito mais luminosa que Sírius, mas fica muito mais longe.",
+      "Uma estrela parece brilhante pela potência real e pela distância; a que mais brilha nem sempre é a mais potente."
+     ],
+     "q": "Qual estrela do céu você nota primeiro quando olha para cima?",
+     "c": "Use um mapa do céu para encontrar a estrela mais brilhante visível hoje à noite e anote o nome dela."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Apparent magnitude",
+     "g": "Learn the backwards brightness scale where smaller numbers mean brighter.",
+     "p": [
+      "Apparent magnitude measures how bright an object looks from Earth; the ancient Greeks ranked stars from 1 (brightest) to 6 (faintest).",
+      "The scale is now exact and runs backwards: Sirius is about minus 1.5, Vega about 0, and the faintest naked-eye stars about 6.",
+      "A difference of 5 magnitudes means exactly 100 times in brightness, so each step is about 2.5 times."
+     ],
+     "q": "Can you spot the difference between a very bright star and a faint one tonight?",
+     "c": "Pick two stars of different brightness and rank them; then check their magnitudes in a chart."
+    },
+    "de": {
+     "t": "Scheinbare Helligkeit",
+     "g": "Lerne die rückwärts laufende Helligkeitsskala kennen, auf der kleinere Zahlen heller bedeuten.",
+     "p": [
+      "Die scheinbare Helligkeit misst, wie hell ein Objekt von der Erde wirkt; die Griechen ordneten Sterne von 1 (hellste) bis 6 (schwächste).",
+      "Die Skala ist heute exakt und läuft rückwärts: Sirius hat etwa minus 1,5, Wega etwa 0, die schwächsten Sterne fürs Auge etwa 6.",
+      "Ein Unterschied von 5 Größenklassen bedeutet genau das 100-Fache an Helligkeit, jeder Schritt also etwa das 2,5-Fache."
+     ],
+     "q": "Siehst du heute Nacht den Unterschied zwischen einem sehr hellen und einem schwachen Stern?",
+     "c": "Wähle zwei Sterne unterschiedlicher Helligkeit, ordne sie und prüfe dann ihre Größenklassen in einer Karte."
+    },
+    "es": {
+     "t": "La magnitud aparente",
+     "g": "Aprende la escala de brillo al revés, donde un número menor significa más brillante.",
+     "p": [
+      "La magnitud aparente mide cuánto brilla un objeto desde la Tierra; los griegos ordenaban las estrellas de 1 (la más brillante) a 6.",
+      "Hoy la escala es exacta y va al revés: Sirio ronda menos 1,5, Vega 0 y las estrellas más débiles a simple vista 6.",
+      "Una diferencia de 5 magnitudes equivale exactamente a 100 veces en brillo, así que cada paso es unas 2,5 veces."
+     ],
+     "q": "¿Notas esta noche la diferencia entre una estrella muy brillante y una débil?",
+     "c": "Elige dos estrellas de distinto brillo y ordénalas; luego comprueba sus magnitudes en un mapa."
+    },
+    "fr": {
+     "t": "La magnitude apparente",
+     "g": "Apprends l'échelle de brillance à l'envers, où un nombre plus petit signifie plus brillant.",
+     "p": [
+      "La magnitude apparente mesure l'éclat vu de la Terre ; les Grecs classaient les étoiles de 1 (la plus brillante) à 6 (la plus faible).",
+      "L'échelle est aujourd'hui exacte et à l'envers : Sirius vaut environ moins 1,5, Véga environ 0, les plus faibles à l'œil nu environ 6.",
+      "Un écart de 5 magnitudes correspond exactement à un facteur 100 en éclat : chaque pas vaut donc environ 2,5 fois."
+     ],
+     "q": "Peux-tu voir ce soir la différence entre une étoile très brillante et une faible ?",
+     "c": "Choisis deux étoiles d'éclat différent et classe-les ; puis vérifie leurs magnitudes sur une carte."
+    },
+    "it": {
+     "t": "La magnitudine apparente",
+     "g": "Impara la scala di luminosità al contrario, dove un numero minore significa più luminoso.",
+     "p": [
+      "La magnitudine apparente misura quanto brilla un oggetto dalla Terra; i Greci ordinavano le stelle da 1 (la più luminosa) a 6.",
+      "Oggi la scala è esatta e va al contrario: Sirio vale circa meno 1,5, Vega circa 0, le più deboli a occhio nudo circa 6.",
+      "Una differenza di 5 magnitudini è esattamente un fattore 100 in luminosità, quindi ogni gradino vale circa 2,5 volte."
+     ],
+     "q": "Stasera riesci a notare la differenza fra una stella molto luminosa e una debole?",
+     "c": "Scegli due stelle di luminosità diversa e ordinale; poi controlla le loro magnitudini su una mappa."
+    },
+    "pt": {
+     "t": "Magnitude aparente",
+     "g": "Aprende a escala de brilho ao contrário, onde um número menor significa mais brilhante.",
+     "p": [
+      "A magnitude aparente mede o brilho de um objeto visto da Terra; os gregos ordenavam as estrelas de 1 (mais brilhante) a 6 (mais fraca).",
+      "Hoje a escala é exata e vai ao contrário: Sírio tem cerca de menos 1,5, Vega cerca de 0 e as mais fracas a olho nu cerca de 6.",
+      "Uma diferença de 5 magnitudes é exatamente 100 vezes em brilho, por isso cada passo é cerca de 2,5 vezes."
+     ],
+     "q": "Consegues notar esta noite a diferença entre uma estrela muito brilhante e uma fraca?",
+     "c": "Escolhe duas estrelas de brilho diferente e ordena-as; depois confirma as magnitudes num mapa."
+    },
+    "pt_BR": {
+     "t": "Magnitude aparente",
+     "g": "Aprenda a escala de brilho ao contrário, onde número menor significa mais brilhante.",
+     "p": [
+      "A magnitude aparente mede o brilho de um objeto visto da Terra; os gregos ordenavam as estrelas de 1 (mais brilhante) a 6 (mais fraca).",
+      "Hoje a escala é exata e vai ao contrário: Sírius tem cerca de menos 1,5, Vega cerca de 0 e as mais fracas a olho nu cerca de 6.",
+      "Uma diferença de 5 magnitudes é exatamente 100 vezes em brilho, então cada passo é cerca de 2,5 vezes."
+     ],
+     "q": "Você consegue notar hoje à noite a diferença entre uma estrela muito brilhante e uma fraca?",
+     "c": "Escolha duas estrelas de brilho diferente e ordene-as; depois confira as magnitudes num mapa."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Double stars",
+     "g": "Tell apart stars that only look close together from real orbiting pairs.",
+     "p": [
+      "An optical double just lines up in our view, while a true binary has two stars bound by gravity, orbiting each other.",
+      "Mizar and Alcor in the Big Dipper's handle form a classic naked-eye pair, and Mizar itself is a true double in a small telescope.",
+      "Albireo in Cygnus is a favourite for small telescopes, showing a gold star beside a blue one."
+     ],
+     "q": "Do you prefer spotting a lone bright star or a close pair?",
+     "c": "On a dark night, look at the middle star of the Big Dipper's handle and try to split the faint partner Alcor."
+    },
+    "de": {
+     "t": "Doppelsterne",
+     "g": "Unterscheide Sterne, die nur nah beieinander wirken, von echten umeinander kreisenden Paaren.",
+     "p": [
+      "Ein optischer Doppelstern steht nur in unserer Sichtlinie nah; ein echter besteht aus zwei per Schwerkraft gebundenen Sternen.",
+      "Mizar und Alkor in der Deichsel des Großen Wagens sind ein klassisches Augenpaar; Mizar ist im Teleskop selbst ein echter Doppelstern.",
+      "Albireo im Schwan ist ein Liebling für kleine Teleskope: ein goldener Stern neben einem blauen."
+     ],
+     "q": "Entdeckst du lieber einen einzelnen hellen Stern oder ein enges Paar?",
+     "c": "Sieh in einer dunklen Nacht auf den mittleren Deichselstern des Großen Wagens und versuche, den schwachen Begleiter Alkor zu trennen."
+    },
+    "es": {
+     "t": "Estrellas dobles",
+     "g": "Distingue estrellas que solo parecen cercanas de verdaderas parejas que se orbitan.",
+     "p": [
+      "Una doble óptica solo coincide en nuestra línea de visión; una binaria real tiene dos estrellas unidas por gravedad que se orbitan.",
+      "Mizar y Alcor, en el mango del Carro, son una pareja clásica a simple vista, y Mizar es doble real en un telescopio pequeño.",
+      "Albireo, en el Cisne, es favorita para telescopios pequeños: una estrella dorada junto a una azul."
+     ],
+     "q": "¿Prefieres encontrar una estrella brillante solitaria o una pareja cercana?",
+     "c": "En una noche oscura, mira la estrella central del mango del Carro e intenta separar a su débil compañera Alcor."
+    },
+    "fr": {
+     "t": "Les étoiles doubles",
+     "g": "Distingue les étoiles qui semblent proches de vraies paires qui tournent l'une autour de l'autre.",
+     "p": [
+      "Une double optique s'aligne juste dans notre regard ; une vraie binaire compte deux étoiles liées par la gravité qui orbitent ensemble.",
+      "Mizar et Alcor, dans le timon du Grand Chariot, sont un couple classique à l'œil nu ; Mizar est elle-même une vraie double au télescope.",
+      "Albireo, dans le Cygne, est une favorite des petits télescopes : une étoile dorée à côté d'une bleue."
+     ],
+     "q": "Préfères-tu repérer une étoile brillante seule ou un couple serré ?",
+     "c": "Par nuit noire, regarde l'étoile centrale du timon du Grand Chariot et essaie de séparer sa faible compagne Alcor."
+    },
+    "it": {
+     "t": "Le stelle doppie",
+     "g": "Distingui le stelle che sembrano vicine dalle vere coppie che si orbitano.",
+     "p": [
+      "Una doppia ottica si allinea solo nella nostra visuale; una vera binaria ha due stelle legate dalla gravità che si orbitano.",
+      "Mizar e Alcor, nel timone del Grande Carro, sono una classica coppia a occhio nudo, e Mizar stessa è una vera doppia al piccolo telescopio.",
+      "Albireo, nel Cigno, è una favorita dei piccoli telescopi: una stella dorata accanto a una blu."
+     ],
+     "q": "Preferisci scovare una stella luminosa solitaria o una coppia stretta?",
+     "c": "In una notte buia guarda la stella centrale del timone del Grande Carro e prova a separare la debole compagna Alcor."
+    },
+    "pt": {
+     "t": "Estrelas duplas",
+     "g": "Distingue estrelas que só parecem próximas de verdadeiros pares que se orbitam.",
+     "p": [
+      "Uma dupla ótica só coincide na nossa linha de visão; uma binária real tem duas estrelas unidas pela gravidade que se orbitam.",
+      "Mizar e Alcor, na lança do Carro Grande, são um par clássico a olho nu, e Mizar é dupla real num telescópio pequeno.",
+      "Albireo, no Cisne, é favorita para telescópios pequenos: uma estrela dourada junto a uma azul."
+     ],
+     "q": "Preferes encontrar uma estrela brilhante solitária ou um par próximo?",
+     "c": "Numa noite escura, olha para a estrela central da lança do Carro Grande e tenta separar a fraca companheira Alcor."
+    },
+    "pt_BR": {
+     "t": "Estrelas duplas",
+     "g": "Distinga estrelas que só parecem próximas de verdadeiros pares que se orbitam.",
+     "p": [
+      "Uma dupla óptica só coincide na nossa linha de visão; uma binária real tem duas estrelas unidas pela gravidade que se orbitam.",
+      "Mizar e Alcor, no cabo da Ursa Maior, são um par clássico a olho nu, e Mizar é dupla real num telescópio pequeno.",
+      "Albireo, no Cisne, é favorita para telescópios pequenos: uma estrela dourada ao lado de uma azul."
+     ],
+     "q": "Você prefere encontrar uma estrela brilhante solitária ou um par próximo?",
+     "c": "Numa noite escura, olhe para a estrela central do cabo da Ursa Maior e tente separar a fraca companheira Alcor."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Pleiades star cluster",
+     "g": "Meet the Seven Sisters, a young star family known to cultures worldwide.",
+     "p": [
+      "The Pleiades, or Seven Sisters, is an open cluster of hundreds of young blue stars, only about 100 million years old.",
+      "Most people see six or seven stars with the naked eye, and binoculars reveal dozens more.",
+      "Many cultures have names and stories for it, such as Subaru in Japan and Matariki in Aotearoa New Zealand."
+     ],
+     "q": "Does your culture have a story about these stars?",
+     "c": "Find the Pleiades, a tiny dipper-shaped cluster in Taurus, and count how many stars you can see without and with binoculars."
+    },
+    "de": {
+     "t": "Der Sternhaufen der Plejaden",
+     "g": "Lerne die Sieben Schwestern kennen, eine junge Sternenfamilie, die Kulturen weltweit bekannt ist.",
+     "p": [
+      "Die Plejaden, die Sieben Schwestern, sind ein offener Haufen aus Hunderten junger blauer Sterne, nur etwa 100 Millionen Jahre alt.",
+      "Die meisten sehen mit bloßem Auge sechs oder sieben Sterne, ein Fernglas zeigt Dutzende mehr.",
+      "Viele Kulturen haben Namen und Geschichten dafür, etwa Subaru in Japan und Matariki in Neuseeland."
+     ],
+     "q": "Gibt es in deiner Kultur eine Geschichte zu diesen Sternen?",
+     "c": "Finde die Plejaden, den winzigen wagenförmigen Haufen im Stier, und zähle die Sterne ohne und mit Fernglas."
+    },
+    "es": {
+     "t": "El cúmulo de las Pléyades",
+     "g": "Conoce a las Siete Hermanas, una familia joven de estrellas conocida en todo el mundo.",
+     "p": [
+      "Las Pléyades, o Siete Hermanas, son un cúmulo abierto de cientos de estrellas azules jóvenes, de solo unos 100 millones de años.",
+      "A simple vista la mayoría ve seis o siete estrellas, y los prismáticos muestran decenas más.",
+      "Muchas culturas le dan nombres e historias, como Subaru en Japón y Matariki en Nueva Zelanda."
+     ],
+     "q": "¿Tiene tu cultura alguna historia sobre estas estrellas?",
+     "c": "Encuentra las Pléyades, un cúmulo diminuto con forma de cazo en Tauro, y cuenta las estrellas sin y con prismáticos."
+    },
+    "fr": {
+     "t": "L'amas des Pléiades",
+     "g": "Rencontre les Sept Sœurs, une jeune famille d'étoiles connue des cultures du monde entier.",
+     "p": [
+      "Les Pléiades, ou Sept Sœurs, sont un amas ouvert de centaines de jeunes étoiles bleues, âgées d'environ 100 millions d'années.",
+      "La plupart voient six ou sept étoiles à l'œil nu, et des jumelles en révèlent des dizaines de plus.",
+      "Beaucoup de cultures ont des noms et des histoires pour elles, comme Subaru au Japon et Matariki en Nouvelle-Zélande."
+     ],
+     "q": "Ta culture a-t-elle une histoire sur ces étoiles ?",
+     "c": "Trouve les Pléiades, petit amas en forme de casserole dans le Taureau, et compte les étoiles sans puis avec jumelles."
+    },
+    "it": {
+     "t": "L'ammasso delle Pleiadi",
+     "g": "Incontra le Sette Sorelle, una giovane famiglia di stelle nota alle culture di tutto il mondo.",
+     "p": [
+      "Le Pleiadi, o Sette Sorelle, sono un ammasso aperto di centinaia di giovani stelle blu, di soli circa 100 milioni di anni.",
+      "A occhio nudo la maggior parte vede sei o sette stelle, e il binocolo ne rivela decine in più.",
+      "Molte culture hanno nomi e storie per esse, come Subaru in Giappone e Matariki in Nuova Zelanda."
+     ],
+     "q": "La tua cultura ha una storia su queste stelle?",
+     "c": "Trova le Pleiadi, un minuscolo ammasso a forma di mestolo nel Toro, e conta le stelle senza e con il binocolo."
+    },
+    "pt": {
+     "t": "O enxame das Plêiades",
+     "g": "Conhece as Sete Irmãs, uma jovem família de estrelas conhecida por culturas de todo o mundo.",
+     "p": [
+      "As Plêiades, ou Sete Irmãs, são um enxame aberto de centenas de estrelas azuis jovens, com apenas cerca de 100 milhões de anos.",
+      "A maioria vê seis ou sete estrelas a olho nu, e os binóculos revelam dezenas mais.",
+      "Muitas culturas têm nomes e histórias para elas, como Subaru no Japão e Matariki na Nova Zelândia."
+     ],
+     "q": "A tua cultura tem alguma história sobre estas estrelas?",
+     "c": "Encontra as Plêiades, um enxame pequenino em forma de concha no Touro, e conta as estrelas sem e com binóculos."
+    },
+    "pt_BR": {
+     "t": "O aglomerado das Plêiades",
+     "g": "Conheça as Sete Irmãs, uma jovem família de estrelas conhecida por culturas do mundo todo.",
+     "p": [
+      "As Plêiades, ou Sete Irmãs, são um aglomerado aberto de centenas de estrelas azuis jovens, com apenas cerca de 100 milhões de anos.",
+      "A maioria vê seis ou sete estrelas a olho nu, e os binóculos revelam dezenas a mais.",
+      "Muitas culturas têm nomes e histórias para elas, como Subaru no Japão e Matariki na Nova Zelândia."
+     ],
+     "q": "A sua cultura tem alguma história sobre essas estrelas?",
+     "c": "Encontre as Plêiades, um aglomerado pequenino em forma de concha no Touro, e conte as estrelas sem e com binóculos."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: Solar System tour",
+     "g": "Recap the planets, small bodies, eclipses and the nature of light.",
+     "p": [
+      "Eight planets orbit the Sun: four rocky ones close in and four giants farther out, with dwarf planets, asteroids and comets beyond.",
+      "Eclipses, tides and meteor showers all come from the Sun, Moon, Earth and comet dust moving in regular patterns.",
+      "Light carries information and takes time to travel, so telescopes work like time machines: light-years measure distance."
+     ],
+     "q": "Which object from our Solar System tour would you most like to see in person?",
+     "c": "Draw a quick map of the Solar System from memory, then check it and fix what you forgot."
+    },
+    "de": {
+     "t": "Rückblick: Tour durchs Sonnensystem",
+     "g": "Wiederhole Planeten, Kleinkörper, Finsternisse und die Natur des Lichts.",
+     "p": [
+      "Acht Planeten umkreisen die Sonne: vier felsige nah innen und vier Riesen weiter außen, dahinter Zwergplaneten, Asteroiden und Kometen.",
+      "Finsternisse, Gezeiten und Meteorströme entstehen durch Sonne, Mond, Erde und Kometenstaub, die sich regelmäßig bewegen.",
+      "Licht trägt Informationen und braucht Zeit, daher sind Teleskope wie Zeitmaschinen; Lichtjahre messen Entfernung."
+     ],
+     "q": "Welches Objekt unserer Tour durchs Sonnensystem würdest du am liebsten persönlich sehen?",
+     "c": "Zeichne aus dem Gedächtnis schnell eine Karte des Sonnensystems, prüfe sie dann und ergänze, was fehlt."
+    },
+    "es": {
+     "t": "Repaso: viaje por el Sistema Solar",
+     "g": "Repasa los planetas, los cuerpos pequeños, los eclipses y la naturaleza de la luz.",
+     "p": [
+      "Ocho planetas orbitan el Sol: cuatro rocosos cerca y cuatro gigantes más lejos, con planetas enanos, asteroides y cometas más allá.",
+      "Los eclipses, las mareas y las lluvias de meteoros nacen del movimiento regular del Sol, la Luna, la Tierra y el polvo de cometas.",
+      "La luz lleva información y tarda en viajar, así que los telescopios son máquinas del tiempo; los años luz miden distancias."
+     ],
+     "q": "¿Qué objeto de nuestro viaje por el Sistema Solar te gustaría ver en persona?",
+     "c": "Dibuja de memoria un mapa rápido del Sistema Solar, compruébalo y corrige lo que olvidaste."
+    },
+    "fr": {
+     "t": "Révision : tour du Système solaire",
+     "g": "Reprends les planètes, les petits corps, les éclipses et la nature de la lumière.",
+     "p": [
+      "Huit planètes orbitent autour du Soleil : quatre rocheuses proches et quatre géantes plus loin, puis planètes naines, astéroïdes et comètes.",
+      "Éclipses, marées et pluies de météores naissent des mouvements réguliers du Soleil, de la Lune, de la Terre et de la poussière de comètes.",
+      "La lumière porte des informations et met du temps à voyager : un télescope remonte le temps ; l'année-lumière mesure les distances."
+     ],
+     "q": "Quel objet de notre tour du Système solaire aimerais-tu le plus voir en vrai ?",
+     "c": "Dessine de mémoire une carte rapide du Système solaire, puis vérifie-la et corrige ce que tu as oublié."
+    },
+    "it": {
+     "t": "Ripasso: tour del Sistema Solare",
+     "g": "Ripassa pianeti, corpi minori, eclissi e la natura della luce.",
+     "p": [
+      "Otto pianeti orbitano attorno al Sole: quattro rocciosi vicini e quattro giganti più lontani, poi pianeti nani, asteroidi e comete.",
+      "Eclissi, maree e sciami meteorici nascono dai moti regolari di Sole, Luna, Terra e polvere di comete.",
+      "La luce porta informazioni e impiega tempo a viaggiare: i telescopi sono macchine del tempo; gli anni luce misurano le distanze."
+     ],
+     "q": "Quale oggetto del nostro tour del Sistema Solare vorresti vedere di persona?",
+     "c": "Disegna a memoria una mappa rapida del Sistema Solare, poi controllala e correggi ciò che hai dimenticato."
+    },
+    "pt": {
+     "t": "Revisão: viagem pelo Sistema Solar",
+     "g": "Revê os planetas, os corpos pequenos, os eclipses e a natureza da luz.",
+     "p": [
+      "Oito planetas orbitam o Sol: quatro rochosos perto e quatro gigantes mais longe, com planetas anões, asteroides e cometas além.",
+      "Eclipses, marés e chuvas de meteoros nascem dos movimentos regulares do Sol, da Lua, da Terra e da poeira dos cometas.",
+      "A luz leva informação e demora a viajar, por isso os telescópios são máquinas do tempo; os anos-luz medem distâncias."
+     ],
+     "q": "Que objeto da nossa viagem pelo Sistema Solar gostarias de ver pessoalmente?",
+     "c": "Desenha de memória um mapa rápido do Sistema Solar, confirma-o e corrige o que esqueceste."
+    },
+    "pt_BR": {
+     "t": "Revisão: viagem pelo Sistema Solar",
+     "g": "Revise os planetas, os corpos pequenos, os eclipses e a natureza da luz.",
+     "p": [
+      "Oito planetas orbitam o Sol: quatro rochosos perto e quatro gigantes mais longe, com planetas anões, asteroides e cometas além.",
+      "Eclipses, marés e chuvas de meteoros nascem dos movimentos regulares do Sol, da Lua, da Terra e da poeira dos cometas.",
+      "A luz leva informação e demora para viajar, então os telescópios são máquinas do tempo; anos-luz medem distâncias."
+     ],
+     "q": "Qual objeto da nossa viagem pelo Sistema Solar você gostaria de ver pessoalmente?",
+     "c": "Desenhe de memória um mapa rápido do Sistema Solar, confira e corrija o que esqueceu."
+    }
+   }
+  }
+ ]
+}

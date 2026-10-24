@@ -1,0 +1,835 @@
+{
+ "topic": "science",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is energy",
+     "g": "Get to know energy as the ability to make things happen, in many forms.",
+     "p": [
+      "Energy makes things move, heat up, glow or change: it is behind everything that happens.",
+      "Common forms are heat, light, sound, motion, chemical and electrical energy.",
+      "Energy is never used up; it only moves from place to place or changes form."
+     ],
+     "q": "Which kinds of energy did you use before breakfast today?",
+     "c": "List five energy forms you notice in your home in the next ten minutes."
+    },
+    "de": {
+     "t": "Was ist Energie",
+     "g": "Lerne Energie als Fähigkeit kennen, etwas zu bewirken, in vielen Formen.",
+     "p": [
+      "Energie lässt Dinge sich bewegen, erwärmen, leuchten oder verändern: Sie steckt hinter allem, was geschieht.",
+      "Häufige Formen sind Wärme, Licht, Schall, Bewegung sowie chemische und elektrische Energie.",
+      "Energie wird nie verbraucht; sie wandert nur oder ändert ihre Form."
+     ],
+     "q": "Welche Arten von Energie hast du heute vor dem Frühstück genutzt?",
+     "c": "Notiere in den nächsten zehn Minuten fünf Energieformen, die du zu Hause bemerkst."
+    },
+    "es": {
+     "t": "Qué es la energía",
+     "g": "Conocer la energía como la capacidad de hacer que las cosas ocurran, en muchas formas.",
+     "p": [
+      "La energía hace que las cosas se muevan, se calienten, brillen o cambien: está detrás de todo lo que sucede.",
+      "Formas comunes son el calor, la luz, el sonido, el movimiento y la energía química y eléctrica.",
+      "La energía nunca se gasta del todo; solo se traslada o cambia de forma."
+     ],
+     "q": "¿Qué tipos de energía usaste hoy antes del desayuno?",
+     "c": "Anota cinco formas de energía que notes en tu casa en los próximos diez minutos."
+    },
+    "fr": {
+     "t": "Qu'est-ce que l'énergie",
+     "g": "Découvrir l'énergie comme la capacité de faire arriver les choses, sous de nombreuses formes.",
+     "p": [
+      "L'énergie fait bouger, chauffer, briller ou changer les choses : elle est derrière tout ce qui se passe.",
+      "Les formes courantes sont la chaleur, la lumière, le son, le mouvement, l'énergie chimique et électrique.",
+      "L'énergie ne disparaît jamais ; elle se déplace ou change de forme."
+     ],
+     "q": "Quels types d'énergie as-tu utilisés avant le petit-déjeuner aujourd'hui ?",
+     "c": "Note cinq formes d'énergie que tu remarques chez toi dans les dix prochaines minutes."
+    },
+    "it": {
+     "t": "Che cos'è l'energia",
+     "g": "Conoscere l'energia come capacità di far accadere le cose, in tante forme.",
+     "p": [
+      "L'energia fa muovere, scaldare, brillare o cambiare le cose: sta dietro a tutto ciò che accade.",
+      "Forme comuni sono calore, luce, suono, movimento, energia chimica ed elettrica.",
+      "L'energia non si esaurisce mai; si sposta soltanto o cambia forma."
+     ],
+     "q": "Quali tipi di energia hai usato oggi prima di colazione?",
+     "c": "Annota cinque forme di energia che noti in casa nei prossimi dieci minuti."
+    },
+    "pt": {
+     "t": "O que é a energia",
+     "g": "Conhecer a energia como a capacidade de fazer as coisas acontecerem, de muitas formas.",
+     "p": [
+      "A energia faz as coisas mover-se, aquecer, brilhar ou mudar: está por trás de tudo o que acontece.",
+      "Formas comuns são o calor, a luz, o som, o movimento e a energia química e elétrica.",
+      "A energia nunca se gasta de vez; só passa de um lugar para outro ou muda de forma."
+     ],
+     "q": "Que tipos de energia usaste hoje antes do pequeno-almoço?",
+     "c": "Anota cinco formas de energia que notes em casa nos próximos dez minutos."
+    },
+    "pt_BR": {
+     "t": "O que é energia",
+     "g": "Conhecer a energia como a capacidade de fazer as coisas acontecerem, de muitas formas.",
+     "p": [
+      "A energia faz as coisas se mover, esquentar, brilhar ou mudar: está por trás de tudo o que acontece.",
+      "Formas comuns são calor, luz, som, movimento e energia química e elétrica.",
+      "A energia nunca se acaba; só passa de um lugar para outro ou muda de forma."
+     ],
+     "q": "Que tipos de energia você usou hoje antes do café da manhã?",
+     "c": "Anote cinco formas de energia que você notar em casa nos próximos dez minutos."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Energy changes form",
+     "g": "See how energy transforms from one form into another all around us.",
+     "p": [
+      "A battery stores chemical energy that turns into light and heat in a flashlight.",
+      "Your body turns the chemical energy in food into movement and warmth.",
+      "In every change, some energy spreads out as heat, which is why devices warm up."
+     ],
+     "q": "What is a chain of energy changes you can trace, from sunlight to your lunch?",
+     "c": "Rub your hands together quickly and feel motion energy turn into warmth."
+    },
+    "de": {
+     "t": "Energie ändert ihre Form",
+     "g": "Sieh, wie sich Energie überall um uns von einer Form in eine andere verwandelt.",
+     "p": [
+      "Eine Batterie speichert chemische Energie, die in der Taschenlampe zu Licht und Wärme wird.",
+      "Dein Körper wandelt die chemische Energie der Nahrung in Bewegung und Wärme um.",
+      "Bei jeder Umwandlung verteilt sich etwas Energie als Wärme, deshalb werden Geräte warm."
+     ],
+     "q": "Kannst du eine Kette von Energieumwandlungen vom Sonnenlicht bis zu deinem Mittagessen nachzeichnen?",
+     "c": "Reibe die Hände schnell aneinander und spüre, wie Bewegungsenergie zu Wärme wird."
+    },
+    "es": {
+     "t": "La energía cambia de forma",
+     "g": "Ver cómo la energía se transforma de una forma a otra a nuestro alrededor.",
+     "p": [
+      "Una pila almacena energía química que en la linterna se convierte en luz y calor.",
+      "Tu cuerpo convierte la energía química de la comida en movimiento y calor.",
+      "En cada cambio, algo de energía se dispersa como calor, por eso los aparatos se calientan."
+     ],
+     "q": "¿Puedes seguir una cadena de cambios de energía, desde la luz del sol hasta tu comida?",
+     "c": "Frota las manos con rapidez y siente cómo la energía de movimiento se vuelve calor."
+    },
+    "fr": {
+     "t": "L'énergie change de forme",
+     "g": "Voir comment l'énergie se transforme d'une forme à une autre autour de nous.",
+     "p": [
+      "Une pile stocke de l'énergie chimique qui devient lumière et chaleur dans une lampe de poche.",
+      "Ton corps transforme l'énergie chimique des aliments en mouvement et en chaleur.",
+      "À chaque transformation, un peu d'énergie se disperse en chaleur, d'où l'échauffement des appareils."
+     ],
+     "q": "Peux-tu retracer une chaîne de transformations, du soleil jusqu'à ton déjeuner ?",
+     "c": "Frotte tes mains vite l'une contre l'autre et sens l'énergie de mouvement devenir chaleur."
+    },
+    "it": {
+     "t": "L'energia cambia forma",
+     "g": "Vedere come l'energia si trasforma da una forma all'altra intorno a noi.",
+     "p": [
+      "Una pila immagazzina energia chimica che nella torcia diventa luce e calore.",
+      "Il tuo corpo trasforma l'energia chimica del cibo in movimento e calore.",
+      "A ogni trasformazione un po' di energia si disperde come calore, per questo i dispositivi si scaldano."
+     ],
+     "q": "Sai seguire una catena di trasformazioni, dalla luce del sole al tuo pranzo?",
+     "c": "Strofina le mani velocemente e senti l'energia del movimento diventare calore."
+    },
+    "pt": {
+     "t": "A energia muda de forma",
+     "g": "Ver como a energia se transforma de uma forma noutra à nossa volta.",
+     "p": [
+      "Uma pilha guarda energia química que na lanterna se torna luz e calor.",
+      "O teu corpo transforma a energia química dos alimentos em movimento e calor.",
+      "Em cada mudança, alguma energia dispersa-se em calor, por isso os aparelhos aquecem."
+     ],
+     "q": "Consegues seguir uma cadeia de transformações, da luz do sol até ao teu almoço?",
+     "c": "Esfrega as mãos depressa e sente a energia do movimento tornar-se calor."
+    },
+    "pt_BR": {
+     "t": "A energia muda de forma",
+     "g": "Ver como a energia se transforma de uma forma em outra ao nosso redor.",
+     "p": [
+      "Uma pilha guarda energia química que na lanterna vira luz e calor.",
+      "O seu corpo transforma a energia química dos alimentos em movimento e calor.",
+      "Em cada mudança, um pouco de energia se espalha como calor, por isso os aparelhos esquentam."
+     ],
+     "q": "Você consegue seguir uma cadeia de transformações, da luz do sol até o seu almoço?",
+     "c": "Esfregue as mãos rápido e sinta a energia do movimento virar calor."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kinetic and potential energy",
+     "g": "Tell apart energy of motion from energy that is stored by position.",
+     "p": [
+      "Kinetic energy belongs to moving things: the faster and heavier, the more energy.",
+      "Potential energy is stored, like a ball held high or a stretched rubber band.",
+      "On a swing, energy keeps trading between the two kinds at every pass."
+     ],
+     "q": "Where on a playground slide is potential energy highest?",
+     "c": "Hold a small toy at different heights, drop it onto a soft cushion and compare the impact."
+    },
+    "de": {
+     "t": "Bewegungs- und Lageenergie",
+     "g": "Unterscheide die Energie der Bewegung von der Energie, die in der Lage gespeichert ist.",
+     "p": [
+      "Bewegungsenergie gehört zu bewegten Dingen: Je schneller und schwerer, desto mehr Energie.",
+      "Lageenergie ist gespeichert, etwa bei einem hoch gehaltenen Ball oder einem gespannten Gummiband.",
+      "Auf einer Schaukel wechselt die Energie bei jedem Schwung zwischen beiden Arten."
+     ],
+     "q": "Wo ist auf einer Rutsche die Lageenergie am größten?",
+     "c": "Halte ein kleines Spielzeug in verschiedenen Höhen, lass es auf ein Kissen fallen und vergleiche den Aufprall."
+    },
+    "es": {
+     "t": "Energía cinética y potencial",
+     "g": "Distinguir la energía del movimiento de la que se almacena por la posición.",
+     "p": [
+      "La energía cinética es de las cosas en movimiento: cuanto más rápidas y pesadas, más energía.",
+      "La energía potencial está almacenada, como en una pelota en alto o una goma elástica estirada.",
+      "En un columpio, la energía se intercambia entre ambas formas en cada vaivén."
+     ],
+     "q": "¿En qué punto de un tobogán es mayor la energía potencial?",
+     "c": "Sostén un juguete pequeño a distintas alturas, suéltalo sobre un cojín y compara el impacto."
+    },
+    "fr": {
+     "t": "Énergie cinétique et potentielle",
+     "g": "Distinguer l'énergie du mouvement de l'énergie stockée par la position.",
+     "p": [
+      "L'énergie cinétique appartient aux objets en mouvement : plus ils sont rapides et lourds, plus il y en a.",
+      "L'énergie potentielle est stockée, comme dans une balle tenue en hauteur ou un élastique tendu.",
+      "Sur une balançoire, l'énergie passe d'une forme à l'autre à chaque aller-retour."
+     ],
+     "q": "Où l'énergie potentielle est-elle la plus grande sur un toboggan ?",
+     "c": "Tiens un petit jouet à différentes hauteurs, lâche-le sur un coussin et compare l'impact."
+    },
+    "it": {
+     "t": "Energia cinetica e potenziale",
+     "g": "Distinguere l'energia del movimento da quella immagazzinata dalla posizione.",
+     "p": [
+      "L'energia cinetica è delle cose in movimento: più sono veloci e pesanti, più ne hanno.",
+      "L'energia potenziale è immagazzinata, come in una palla tenuta in alto o in un elastico teso.",
+      "Su un'altalena l'energia passa da una forma all'altra a ogni oscillazione."
+     ],
+     "q": "In quale punto di uno scivolo l'energia potenziale è maggiore?",
+     "c": "Tieni un giocattolo piccolo a varie altezze, lascialo cadere su un cuscino e confronta l'impatto."
+    },
+    "pt": {
+     "t": "Energia cinética e potencial",
+     "g": "Distinguir a energia do movimento da que fica guardada pela posição.",
+     "p": [
+      "A energia cinética é das coisas em movimento: quanto mais rápidas e pesadas, mais energia.",
+      "A energia potencial está guardada, como numa bola no alto ou num elástico esticado.",
+      "Num baloiço, a energia troca entre as duas formas a cada vaivém."
+     ],
+     "q": "Em que ponto de um escorrega é maior a energia potencial?",
+     "c": "Segura um brinquedo pequeno a várias alturas, larga-o numa almofada e compara o impacto."
+    },
+    "pt_BR": {
+     "t": "Energia cinética e potencial",
+     "g": "Distinguir a energia do movimento da que fica guardada pela posição.",
+     "p": [
+      "A energia cinética é das coisas em movimento: quanto mais rápidas e pesadas, mais energia.",
+      "A energia potencial fica guardada, como numa bola no alto ou num elástico esticado.",
+      "Num balanço, a energia troca entre as duas formas a cada vaivém."
+     ],
+     "q": "Em que ponto de um escorregador a energia potencial é maior?",
+     "c": "Segure um brinquedo pequeno em várias alturas, solte numa almofada e compare o impacto."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Heat and temperature",
+     "g": "Understand the difference between how hot something is and the heat it holds.",
+     "p": [
+      "Temperature measures how fast the tiny particles in something are moving on average.",
+      "Heat is energy flowing from a hotter thing to a colder thing.",
+      "A bathtub of warm water holds more heat than a hot cup of tea, though it is cooler."
+     ],
+     "q": "Why does a metal bench feel colder than a wooden one at the same temperature?",
+     "c": "Put a cup of cool water on the table and notice over an hour how it drifts toward room temperature."
+    },
+    "de": {
+     "t": "Wärme und Temperatur",
+     "g": "Verstehe den Unterschied zwischen dem Heißsein und der Wärme, die ein Körper enthält.",
+     "p": [
+      "Die Temperatur misst, wie schnell sich die winzigen Teilchen im Durchschnitt bewegen.",
+      "Wärme ist Energie, die von einem heißeren zu einem kälteren Körper fließt.",
+      "Eine Badewanne mit warmem Wasser enthält mehr Wärme als eine heiße Tasse Tee, obwohl sie kühler ist."
+     ],
+     "q": "Warum fühlt sich eine Metallbank kälter an als eine Holzbank gleicher Temperatur?",
+     "c": "Stell ein Glas kühles Wasser auf den Tisch und beobachte, wie es sich in einer Stunde der Raumtemperatur nähert."
+    },
+    "es": {
+     "t": "Calor y temperatura",
+     "g": "Entender la diferencia entre lo caliente que está algo y el calor que contiene.",
+     "p": [
+      "La temperatura mide la rapidez media con que se mueven las partículas diminutas.",
+      "El calor es energía que fluye de un cuerpo más caliente a uno más frío.",
+      "Una bañera de agua tibia contiene más calor que una taza de té caliente, aunque esté más fría."
+     ],
+     "q": "¿Por qué un banco de metal se siente más frío que uno de madera a la misma temperatura?",
+     "c": "Deja un vaso de agua fresca en la mesa y observa durante una hora cómo se acerca a la temperatura ambiente."
+    },
+    "fr": {
+     "t": "Chaleur et température",
+     "g": "Comprendre la différence entre le degré de chaud et la chaleur contenue.",
+     "p": [
+      "La température mesure la vitesse moyenne des minuscules particules d'un objet.",
+      "La chaleur est de l'énergie qui passe d'un corps plus chaud à un corps plus froid.",
+      "Une baignoire d'eau tiède contient plus de chaleur qu'une tasse de thé chaud, bien qu'elle soit moins chaude."
+     ],
+     "q": "Pourquoi un banc en métal semble-t-il plus froid qu'un banc en bois à la même température ?",
+     "c": "Pose un verre d'eau fraîche sur la table et observe pendant une heure comment il se rapproche de la température ambiante."
+    },
+    "it": {
+     "t": "Calore e temperatura",
+     "g": "Capire la differenza tra quanto è caldo un corpo e il calore che contiene.",
+     "p": [
+      "La temperatura misura la velocità media con cui si muovono le minuscole particelle.",
+      "Il calore è energia che passa da un corpo più caldo a uno più freddo.",
+      "Una vasca di acqua tiepida contiene più calore di una tazza di tè caldo, anche se è meno calda."
+     ],
+     "q": "Perché una panchina di metallo sembra più fredda di una di legno alla stessa temperatura?",
+     "c": "Metti un bicchiere d'acqua fresca sul tavolo e osserva per un'ora come si avvicina alla temperatura ambiente."
+    },
+    "pt": {
+     "t": "Calor e temperatura",
+     "g": "Perceber a diferença entre quão quente algo está e o calor que contém.",
+     "p": [
+      "A temperatura mede a velocidade média a que se movem as minúsculas partículas.",
+      "O calor é energia que passa de um corpo mais quente para um mais frio.",
+      "Uma banheira de água morna contém mais calor do que uma chávena de chá quente, embora esteja menos quente."
+     ],
+     "q": "Porque é que um banco de metal parece mais frio do que um de madeira à mesma temperatura?",
+     "c": "Põe um copo de água fresca na mesa e observa durante uma hora como se aproxima da temperatura ambiente."
+    },
+    "pt_BR": {
+     "t": "Calor e temperatura",
+     "g": "Entender a diferença entre quão quente algo está e o calor que ele contém.",
+     "p": [
+      "A temperatura mede a velocidade média com que se movem as minúsculas partículas.",
+      "O calor é energia que passa de um corpo mais quente para um mais frio.",
+      "Uma banheira de água morna contém mais calor do que uma xícara de chá quente, embora esteja menos quente."
+     ],
+     "q": "Por que um banco de metal parece mais frio do que um de madeira na mesma temperatura?",
+     "c": "Deixe um copo de água fresca na mesa e observe por uma hora como ele se aproxima da temperatura ambiente."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How heat travels",
+     "g": "Learn the three ways heat moves: conduction, convection and radiation.",
+     "p": [
+      "Conduction passes heat through touch, like a pan handle warming from the pan.",
+      "Convection moves heat in liquids and gases, as warm soup rises and cool soup sinks.",
+      "Radiation sends heat as invisible waves, which is how sunshine warms your face."
+     ],
+     "q": "Which of the three ways warms you when you stand near a sunny window?",
+     "c": "Hold your hand near, but not touching, a warm mug and feel the radiation reach you."
+    },
+    "de": {
+     "t": "Wie Wärme wandert",
+     "g": "Lerne die drei Wege der Wärme kennen: Leitung, Strömung und Strahlung.",
+     "p": [
+      "Wärmeleitung gibt Wärme durch Berührung weiter, etwa wenn sich der Pfannengriff erwärmt.",
+      "Strömung transportiert Wärme in Flüssigkeiten und Gasen: Warme Suppe steigt, kühle sinkt.",
+      "Strahlung sendet Wärme als unsichtbare Wellen, so wärmt dich die Sonne im Gesicht."
+     ],
+     "q": "Welcher der drei Wege wärmt dich, wenn du an einem sonnigen Fenster stehst?",
+     "c": "Halte die Hand nahe an eine warme Tasse, ohne sie zu berühren, und spüre die Strahlung."
+    },
+    "es": {
+     "t": "Cómo viaja el calor",
+     "g": "Aprender las tres formas en que se mueve el calor: conducción, convección y radiación.",
+     "p": [
+      "La conducción pasa el calor por contacto, como el mango de una sartén que se calienta.",
+      "La convección mueve el calor en líquidos y gases: la sopa caliente sube y la fría baja.",
+      "La radiación envía calor en ondas invisibles, así te calienta el sol en la cara."
+     ],
+     "q": "¿Cuál de las tres formas te calienta junto a una ventana soleada?",
+     "c": "Acerca la mano a una taza tibia, sin tocarla, y siente la radiación que te llega."
+    },
+    "fr": {
+     "t": "Comment la chaleur voyage",
+     "g": "Apprendre les trois façons dont la chaleur se déplace : conduction, convection et rayonnement.",
+     "p": [
+      "La conduction transmet la chaleur par contact, comme le manche d'une poêle qui chauffe.",
+      "La convection déplace la chaleur dans les liquides et les gaz : la soupe chaude monte, la froide descend.",
+      "Le rayonnement envoie la chaleur en ondes invisibles, comme le soleil qui réchauffe ton visage."
+     ],
+     "q": "Laquelle des trois façons te réchauffe près d'une fenêtre ensoleillée ?",
+     "c": "Approche ta main d'une tasse chaude sans la toucher et sens le rayonnement arriver."
+    },
+    "it": {
+     "t": "Come viaggia il calore",
+     "g": "Imparare i tre modi in cui si muove il calore: conduzione, convezione e irraggiamento.",
+     "p": [
+      "La conduzione passa il calore per contatto, come il manico di una padella che si scalda.",
+      "La convezione sposta il calore in liquidi e gas: la zuppa calda sale, quella fredda scende.",
+      "L'irraggiamento invia calore con onde invisibili, così il sole ti scalda il viso."
+     ],
+     "q": "Quale dei tre modi ti scalda vicino a una finestra al sole?",
+     "c": "Avvicina la mano a una tazza calda, senza toccarla, e senti l'irraggiamento arrivare."
+    },
+    "pt": {
+     "t": "Como viaja o calor",
+     "g": "Aprender as três formas como o calor se move: condução, convecção e radiação.",
+     "p": [
+      "A condução passa o calor por contacto, como o cabo de uma frigideira que aquece.",
+      "A convecção move o calor em líquidos e gases: a sopa quente sobe e a fria desce.",
+      "A radiação envia calor em ondas invisíveis, é assim que o sol te aquece o rosto."
+     ],
+     "q": "Qual das três formas te aquece junto a uma janela com sol?",
+     "c": "Aproxima a mão de uma caneca morna, sem tocar, e sente a radiação a chegar."
+    },
+    "pt_BR": {
+     "t": "Como o calor viaja",
+     "g": "Aprender as três formas como o calor se move: condução, convecção e radiação.",
+     "p": [
+      "A condução passa o calor por contato, como o cabo de uma frigideira que esquenta.",
+      "A convecção move o calor em líquidos e gases: a sopa quente sobe e a fria desce.",
+      "A radiação envia calor em ondas invisíveis, é assim que o sol aquece o seu rosto."
+     ],
+     "q": "Qual das três formas esquenta você perto de uma janela com sol?",
+     "c": "Aproxime a mão de uma caneca morna, sem tocar, e sinta a radiação chegando."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Insulators and conductors",
+     "g": "Find out why some materials pass heat easily and others block it.",
+     "p": [
+      "Metals are good conductors: heat travels through them quickly.",
+      "Wood, plastic, wool and trapped air are insulators that slow heat down.",
+      "A winter coat does not make warmth; it keeps your own body heat from escaping."
+     ],
+     "q": "Why do oven gloves use thick fabric instead of metal?",
+     "c": "Touch a metal spoon and a wooden spoon left in the same room and compare how cool each feels."
+    },
+    "de": {
+     "t": "Isolatoren und Leiter",
+     "g": "Finde heraus, warum manche Materialien Wärme leicht weitergeben und andere bremsen.",
+     "p": [
+      "Metalle sind gute Wärmeleiter: Die Wärme wandert schnell durch sie hindurch.",
+      "Holz, Plastik, Wolle und eingeschlossene Luft sind Isolatoren, die Wärme bremsen.",
+      "Eine Winterjacke erzeugt keine Wärme; sie hält nur deine eigene Körperwärme zurück."
+     ],
+     "q": "Warum bestehen Topfhandschuhe aus dickem Stoff und nicht aus Metall?",
+     "c": "Berühre einen Metall- und einen Holzlöffel aus demselben Raum und vergleiche, wie kühl sie sich anfühlen."
+    },
+    "es": {
+     "t": "Aislantes y conductores",
+     "g": "Descubrir por qué algunos materiales dejan pasar el calor y otros lo frenan.",
+     "p": [
+      "Los metales son buenos conductores: el calor viaja rápido a través de ellos.",
+      "La madera, el plástico, la lana y el aire atrapado son aislantes que frenan el calor.",
+      "Un abrigo no crea calor; evita que se escape el calor de tu propio cuerpo."
+     ],
+     "q": "¿Por qué las manoplas de cocina son de tela gruesa y no de metal?",
+     "c": "Toca una cuchara de metal y otra de madera del mismo cuarto y compara cuál se siente más fría."
+    },
+    "fr": {
+     "t": "Isolants et conducteurs",
+     "g": "Découvrir pourquoi certains matériaux laissent passer la chaleur et d'autres la bloquent.",
+     "p": [
+      "Les métaux sont de bons conducteurs : la chaleur les traverse vite.",
+      "Le bois, le plastique, la laine et l'air emprisonné sont des isolants qui ralentissent la chaleur.",
+      "Un manteau ne fabrique pas de chaleur ; il empêche celle de ton corps de s'échapper."
+     ],
+     "q": "Pourquoi les maniques de cuisine sont-elles en tissu épais et non en métal ?",
+     "c": "Touche une cuillère en métal et une en bois laissées dans la même pièce et compare leur fraîcheur."
+    },
+    "it": {
+     "t": "Isolanti e conduttori",
+     "g": "Scoprire perché alcuni materiali lasciano passare il calore e altri lo frenano.",
+     "p": [
+      "I metalli sono buoni conduttori: il calore li attraversa in fretta.",
+      "Legno, plastica, lana e aria intrappolata sono isolanti che rallentano il calore.",
+      "Un cappotto non crea calore; impedisce che quello del tuo corpo si disperda."
+     ],
+     "q": "Perché le presine da forno sono di tessuto spesso e non di metallo?",
+     "c": "Tocca un cucchiaio di metallo e uno di legno rimasti nella stessa stanza e confronta quanto sono freschi."
+    },
+    "pt": {
+     "t": "Isoladores e condutores",
+     "g": "Descobrir porque alguns materiais deixam passar o calor e outros o travam.",
+     "p": [
+      "Os metais são bons condutores: o calor atravessa-os depressa.",
+      "A madeira, o plástico, a lã e o ar preso são isoladores que travam o calor.",
+      "Um casaco não cria calor; impede que o calor do teu próprio corpo escape."
+     ],
+     "q": "Porque é que as luvas de forno são de tecido grosso e não de metal?",
+     "c": "Toca numa colher de metal e noutra de madeira da mesma divisão e compara qual parece mais fria."
+    },
+    "pt_BR": {
+     "t": "Isolantes e condutores",
+     "g": "Descobrir por que alguns materiais deixam o calor passar e outros o seguram.",
+     "p": [
+      "Os metais são bons condutores: o calor os atravessa rápido.",
+      "Madeira, plástico, lã e ar preso são isolantes que seguram o calor.",
+      "Um casaco não cria calor; ele impede que o calor do seu próprio corpo escape."
+     ],
+     "q": "Por que as luvas de forno são de tecido grosso e não de metal?",
+     "c": "Toque numa colher de metal e numa de madeira do mesmo cômodo e compare qual parece mais fria."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is a force",
+     "g": "Learn that a force is a push or a pull that can change how things move.",
+     "p": [
+      "Forces can start something moving, stop it, speed it up, slow it down or turn it.",
+      "Forces are measured in newtons, named after the scientist Isaac Newton.",
+      "Several forces often act at once, and together they decide what happens."
+     ],
+     "q": "Which pushes and pulls did you use to get out of bed this morning?",
+     "c": "Spot three pushes and three pulls as you open a door, a drawer and a tap."
+    },
+    "de": {
+     "t": "Was ist eine Kraft",
+     "g": "Lerne, dass eine Kraft ein Schub oder Zug ist, der Bewegungen verändern kann.",
+     "p": [
+      "Kräfte können etwas in Bewegung setzen, stoppen, beschleunigen, bremsen oder lenken.",
+      "Kräfte misst man in Newton, benannt nach dem Forscher Isaac Newton.",
+      "Oft wirken mehrere Kräfte zugleich, und zusammen bestimmen sie, was passiert."
+     ],
+     "q": "Welche Stöße und Züge hast du heute beim Aufstehen genutzt?",
+     "c": "Finde drei Stöße und drei Züge beim Öffnen einer Tür, einer Schublade und eines Hahns."
+    },
+    "es": {
+     "t": "Qué es una fuerza",
+     "g": "Aprender que una fuerza es un empujón o un tirón que puede cambiar el movimiento.",
+     "p": [
+      "Las fuerzas pueden poner algo en marcha, detenerlo, acelerarlo, frenarlo o desviarlo.",
+      "Las fuerzas se miden en newtons, nombre que viene del científico Isaac Newton.",
+      "A menudo actúan varias fuerzas a la vez y juntas deciden lo que pasa."
+     ],
+     "q": "¿Qué empujones y tirones usaste hoy al levantarte de la cama?",
+     "c": "Encuentra tres empujones y tres tirones al abrir una puerta, un cajón y un grifo."
+    },
+    "fr": {
+     "t": "Qu'est-ce qu'une force",
+     "g": "Comprendre qu'une force est une poussée ou une traction qui peut changer le mouvement.",
+     "p": [
+      "Une force peut mettre en mouvement, arrêter, accélérer, ralentir ou faire tourner un objet.",
+      "Les forces se mesurent en newtons, du nom du savant Isaac Newton.",
+      "Plusieurs forces agissent souvent ensemble et décident ensemble de ce qui se passe."
+     ],
+     "q": "Quelles poussées et tractions as-tu utilisées en te levant ce matin ?",
+     "c": "Repère trois poussées et trois tractions en ouvrant une porte, un tiroir et un robinet."
+    },
+    "it": {
+     "t": "Che cos'è una forza",
+     "g": "Capire che una forza è una spinta o una trazione che può cambiare il movimento.",
+     "p": [
+      "Le forze possono mettere in moto, fermare, accelerare, rallentare o far girare qualcosa.",
+      "Le forze si misurano in newton, dal nome dello scienziato Isaac Newton.",
+      "Spesso agiscono più forze insieme e insieme decidono cosa succede."
+     ],
+     "q": "Quali spinte e trazioni hai usato stamattina per alzarti dal letto?",
+     "c": "Individua tre spinte e tre trazioni mentre apri una porta, un cassetto e un rubinetto."
+    },
+    "pt": {
+     "t": "O que é uma força",
+     "g": "Perceber que uma força é um empurrão ou um puxão que pode mudar o movimento.",
+     "p": [
+      "As forças podem pôr algo em movimento, travá-lo, acelerá-lo, abrandá-lo ou desviá-lo.",
+      "As forças medem-se em newtons, nome que vem do cientista Isaac Newton.",
+      "Muitas vezes atuam várias forças ao mesmo tempo e juntas decidem o que acontece."
+     ],
+     "q": "Que empurrões e puxões usaste hoje ao sair da cama?",
+     "c": "Encontra três empurrões e três puxões ao abrires uma porta, uma gaveta e uma torneira."
+    },
+    "pt_BR": {
+     "t": "O que é uma força",
+     "g": "Entender que uma força é um empurrão ou um puxão que pode mudar o movimento.",
+     "p": [
+      "As forças podem pôr algo em movimento, pará-lo, acelerá-lo, desacelerá-lo ou desviá-lo.",
+      "As forças são medidas em newtons, nome que vem do cientista Isaac Newton.",
+      "Muitas vezes atuam várias forças ao mesmo tempo e juntas decidem o que acontece."
+     ],
+     "q": "Que empurrões e puxões você usou hoje ao sair da cama?",
+     "c": "Encontre três empurrões e três puxões ao abrir uma porta, uma gaveta e uma torneira."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gravity keeps us grounded",
+     "g": "Understand gravity as the pull that every object with mass has on others.",
+     "p": [
+      "Gravity pulls things toward each other, and Earth's pull is what keeps us on the ground.",
+      "The more mass something has, the stronger its pull, which is why Earth pulls you and not a pebble.",
+      "The Moon stays in orbit because gravity from Earth keeps bending its path."
+     ],
+     "q": "What do you think would happen if gravity suddenly turned off for a second?",
+     "c": "Drop a pen and a book at the same moment from the same height and watch which lands first."
+    },
+    "de": {
+     "t": "Die Schwerkraft hält uns am Boden",
+     "g": "Verstehe die Schwerkraft als Anziehung, die jedes Objekt mit Masse auf andere ausübt.",
+     "p": [
+      "Schwerkraft zieht Dinge zueinander, und die Anziehung der Erde hält uns am Boden.",
+      "Je mehr Masse etwas hat, desto stärker zieht es, deshalb zieht die Erde dich und nicht einen Kiesel.",
+      "Der Mond bleibt auf seiner Bahn, weil die Schwerkraft der Erde seinen Weg ständig krümmt."
+     ],
+     "q": "Was würde wohl passieren, wenn die Schwerkraft für eine Sekunde ausfiele?",
+     "c": "Lass einen Stift und ein Buch gleichzeitig aus gleicher Höhe fallen und sieh, was zuerst landet."
+    },
+    "es": {
+     "t": "La gravedad nos mantiene en el suelo",
+     "g": "Entender la gravedad como la atracción que todo objeto con masa ejerce sobre otros.",
+     "p": [
+      "La gravedad atrae las cosas entre sí, y la atracción de la Tierra nos mantiene en el suelo.",
+      "Cuanta más masa tiene algo, más fuerte atrae, por eso la Tierra te atrae a ti y no a un guijarro.",
+      "La Luna sigue en órbita porque la gravedad de la Tierra curva su trayectoria sin parar."
+     ],
+     "q": "¿Qué crees que pasaría si la gravedad se apagara un segundo?",
+     "c": "Suelta un bolígrafo y un libro a la vez desde la misma altura y mira cuál cae primero."
+    },
+    "fr": {
+     "t": "La gravité nous garde au sol",
+     "g": "Comprendre la gravité comme l'attraction qu'exerce tout objet ayant une masse.",
+     "p": [
+      "La gravité attire les objets les uns vers les autres, et l'attraction de la Terre nous garde au sol.",
+      "Plus un objet a de masse, plus il attire fort : la Terre t'attire, toi, pas un caillou.",
+      "La Lune reste en orbite parce que la gravité de la Terre courbe sans cesse sa trajectoire."
+     ],
+     "q": "Que se passerait-il si la gravité s'arrêtait une seconde, à ton avis ?",
+     "c": "Lâche un stylo et un livre en même temps de la même hauteur et vois lequel arrive en premier."
+    },
+    "it": {
+     "t": "La gravità ci tiene a terra",
+     "g": "Capire la gravità come l'attrazione che ogni oggetto con massa esercita sugli altri.",
+     "p": [
+      "La gravità attira le cose l'una verso l'altra, e l'attrazione della Terra ci tiene a terra.",
+      "Più massa ha un oggetto, più attira forte: per questo la Terra attira te e non un sassolino.",
+      "La Luna resta in orbita perché la gravità della Terra ne curva di continuo il percorso."
+     ],
+     "q": "Cosa pensi succederebbe se la gravità si spegnesse per un secondo?",
+     "c": "Lascia cadere una penna e un libro insieme dalla stessa altezza e guarda quale arriva prima."
+    },
+    "pt": {
+     "t": "A gravidade mantém-nos no chão",
+     "g": "Perceber a gravidade como a atração que todo o objeto com massa exerce sobre os outros.",
+     "p": [
+      "A gravidade atrai as coisas umas para as outras, e a atração da Terra mantém-nos no chão.",
+      "Quanto mais massa algo tem, mais forte atrai, por isso a Terra atrai-te a ti e não a uma pedrinha.",
+      "A Lua continua em órbita porque a gravidade da Terra curva sem parar a sua trajetória."
+     ],
+     "q": "O que achas que aconteceria se a gravidade desligasse por um segundo?",
+     "c": "Larga uma caneta e um livro ao mesmo tempo da mesma altura e vê qual cai primeiro."
+    },
+    "pt_BR": {
+     "t": "A gravidade nos mantém no chão",
+     "g": "Entender a gravidade como a atração que todo objeto com massa exerce sobre os outros.",
+     "p": [
+      "A gravidade atrai as coisas umas para as outras, e a atração da Terra nos mantém no chão.",
+      "Quanto mais massa algo tem, mais forte atrai, por isso a Terra atrai você e não uma pedrinha.",
+      "A Lua continua em órbita porque a gravidade da Terra curva sem parar a sua trajetória."
+     ],
+     "q": "O que você acha que aconteceria se a gravidade desligasse por um segundo?",
+     "c": "Solte uma caneta e um livro ao mesmo tempo da mesma altura e veja qual cai primeiro."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mass versus weight",
+     "g": "Learn why mass and weight are different things that people often mix up.",
+     "p": [
+      "Mass is how much matter an object has, and it stays the same everywhere.",
+      "Weight is the pull of gravity on that mass, so it changes from planet to planet.",
+      "On the Moon, gravity is about one sixth of Earth's, so you would weigh about one sixth as much."
+     ],
+     "q": "If you traveled to the Moon, would you have less body or less weight?",
+     "c": "Say aloud which words you use for kilograms at the shop: mass or weight? Notice the habit."
+    },
+    "de": {
+     "t": "Masse und Gewicht",
+     "g": "Lerne, warum Masse und Gewicht verschieden sind, auch wenn man sie oft verwechselt.",
+     "p": [
+      "Masse ist, wie viel Materie ein Objekt hat, und sie bleibt überall gleich.",
+      "Gewicht ist die Anziehung der Schwerkraft auf diese Masse und ändert sich von Planet zu Planet.",
+      "Auf dem Mond ist die Schwerkraft etwa ein Sechstel der irdischen, du würdest dort nur etwa ein Sechstel wiegen."
+     ],
+     "q": "Hättest du auf dem Mond weniger Körper oder weniger Gewicht?",
+     "c": "Sag laut, welches Wort du für Kilogramm im Laden benutzt: Masse oder Gewicht? Achte auf die Gewohnheit."
+    },
+    "es": {
+     "t": "Masa frente a peso",
+     "g": "Aprender por qué masa y peso son cosas distintas que a menudo se confunden.",
+     "p": [
+      "La masa es cuánta materia tiene un objeto y es igual en cualquier lugar.",
+      "El peso es la atracción de la gravedad sobre esa masa, así que cambia de un planeta a otro.",
+      "En la Luna la gravedad es una sexta parte de la terrestre, así que pesarías unas seis veces menos."
+     ],
+     "q": "Si viajaras a la Luna, ¿tendrías menos cuerpo o menos peso?",
+     "c": "Di en voz alta qué palabra usas para los kilos en la tienda: ¿masa o peso? Fíjate en el hábito."
+    },
+    "fr": {
+     "t": "Masse et poids",
+     "g": "Comprendre pourquoi la masse et le poids sont différents, même si on les confond souvent.",
+     "p": [
+      "La masse est la quantité de matière d'un objet, et elle reste la même partout.",
+      "Le poids est l'attraction de la gravité sur cette masse : il change d'une planète à l'autre.",
+      "Sur la Lune, la gravité vaut environ un sixième de celle de la Terre : tu pèserais six fois moins."
+     ],
+     "q": "Si tu allais sur la Lune, aurais-tu moins de corps ou moins de poids ?",
+     "c": "Dis à voix haute quel mot tu emploies pour les kilos au magasin : masse ou poids ? Remarque l'habitude."
+    },
+    "it": {
+     "t": "Massa e peso",
+     "g": "Capire perché massa e peso sono cose diverse, anche se spesso si confondono.",
+     "p": [
+      "La massa è quanta materia ha un oggetto e resta uguale ovunque.",
+      "Il peso è l'attrazione della gravità su quella massa, quindi cambia da pianeta a pianeta.",
+      "Sulla Luna la gravità è circa un sesto di quella terrestre, quindi peseresti circa sei volte meno."
+     ],
+     "q": "Se viaggiassi sulla Luna, avresti meno corpo o meno peso?",
+     "c": "Di' ad alta voce quale parola usi per i chili al negozio: massa o peso? Nota l'abitudine."
+    },
+    "pt": {
+     "t": "Massa e peso",
+     "g": "Perceber porque a massa e o peso são coisas diferentes, embora muitas vezes se confundam.",
+     "p": [
+      "A massa é a quantidade de matéria de um objeto e é igual em qualquer lugar.",
+      "O peso é a atração da gravidade sobre essa massa, por isso muda de planeta para planeta.",
+      "Na Lua a gravidade é cerca de um sexto da da Terra, por isso pesarias cerca de seis vezes menos."
+     ],
+     "q": "Se viajasses até à Lua, terias menos corpo ou menos peso?",
+     "c": "Diz em voz alta que palavra usas para os quilos na loja: massa ou peso? Repara no hábito."
+    },
+    "pt_BR": {
+     "t": "Massa e peso",
+     "g": "Entender por que massa e peso são coisas diferentes, embora muitas vezes se confundam.",
+     "p": [
+      "A massa é a quantidade de matéria de um objeto e é igual em qualquer lugar.",
+      "O peso é a atração da gravidade sobre essa massa, por isso muda de planeta para planeta.",
+      "Na Lua a gravidade é cerca de um sexto da da Terra, então você pesaria cerca de seis vezes menos."
+     ],
+     "q": "Se você viajasse até a Lua, teria menos corpo ou menos peso?",
+     "c": "Diga em voz alta que palavra você usa para quilos no mercado: massa ou peso? Note o hábito."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Friction, the grip force",
+     "g": "See how friction slows things down and also lets us walk, write and brake.",
+     "p": [
+      "Friction is a force that resists sliding when two surfaces rub together.",
+      "Rough surfaces create more friction, and smooth or oily surfaces create less.",
+      "Without friction, shoes would slip, pencils would not mark paper and cars could not stop."
+     ],
+     "q": "Where do you wish there were less friction, and where more?",
+     "c": "Slide a coin across a table, a towel and a smooth tray, and compare how far it goes."
+    },
+    "de": {
+     "t": "Reibung, die Haftkraft",
+     "g": "Sieh, wie Reibung Dinge bremst und uns zugleich gehen, schreiben und anhalten lässt.",
+     "p": [
+      "Reibung ist eine Kraft, die dem Rutschen entgegenwirkt, wenn zwei Flächen aneinander reiben.",
+      "Raue Flächen erzeugen mehr Reibung, glatte oder ölige weniger.",
+      "Ohne Reibung würden Schuhe rutschen, Stifte nicht schreiben und Autos nicht bremsen."
+     ],
+     "q": "Wo wünschst du dir weniger Reibung und wo mehr?",
+     "c": "Schiebe eine Münze über einen Tisch, ein Tuch und ein glattes Tablett und vergleiche die Strecke."
+    },
+    "es": {
+     "t": "Fricción, la fuerza que agarra",
+     "g": "Ver cómo la fricción frena las cosas y a la vez nos deja caminar, escribir y frenar.",
+     "p": [
+      "La fricción es una fuerza que se opone al deslizamiento cuando dos superficies se rozan.",
+      "Las superficies rugosas crean más fricción, y las lisas o aceitosas, menos.",
+      "Sin fricción los zapatos resbalarían, los lápices no marcarían el papel y los coches no podrían frenar."
+     ],
+     "q": "¿Dónde querrías menos fricción y dónde más?",
+     "c": "Desliza una moneda por una mesa, una toalla y una bandeja lisa y compara hasta dónde llega."
+    },
+    "fr": {
+     "t": "Le frottement, la force qui accroche",
+     "g": "Voir comment le frottement freine les choses tout en nous laissant marcher, écrire et freiner.",
+     "p": [
+      "Le frottement est une force qui s'oppose au glissement quand deux surfaces se touchent.",
+      "Les surfaces rugueuses frottent davantage, les surfaces lisses ou huileuses moins.",
+      "Sans frottement, les chaussures glisseraient, les crayons n'écriraient pas et les voitures ne s'arrêteraient pas."
+     ],
+     "q": "Où voudrais-tu moins de frottement, et où davantage ?",
+     "c": "Fais glisser une pièce sur une table, une serviette et un plateau lisse et compare la distance."
+    },
+    "it": {
+     "t": "L'attrito, la forza che fa presa",
+     "g": "Vedere come l'attrito frena le cose e allo stesso tempo ci fa camminare, scrivere e frenare.",
+     "p": [
+      "L'attrito è una forza che si oppone allo scivolamento quando due superfici si sfregano.",
+      "Le superfici ruvide creano più attrito, quelle lisce o oleose meno.",
+      "Senza attrito le scarpe scivolerebbero, le matite non scriverebbero e le auto non frenerebbero."
+     ],
+     "q": "Dove vorresti meno attrito e dove di più?",
+     "c": "Fai scivolare una moneta su un tavolo, un asciugamano e un vassoio liscio e confronta la distanza."
+    },
+    "pt": {
+     "t": "O atrito, a força que agarra",
+     "g": "Ver como o atrito trava as coisas e ao mesmo tempo nos deixa andar, escrever e travar.",
+     "p": [
+      "O atrito é uma força que se opõe ao deslizamento quando duas superfícies se roçam.",
+      "As superfícies ásperas criam mais atrito, as lisas ou oleosas criam menos.",
+      "Sem atrito, os sapatos escorregariam, os lápis não escreveriam e os carros não travariam."
+     ],
+     "q": "Onde gostarias de menos atrito e onde de mais?",
+     "c": "Faz deslizar uma moeda numa mesa, numa toalha e num tabuleiro liso e compara até onde vai."
+    },
+    "pt_BR": {
+     "t": "O atrito, a força que agarra",
+     "g": "Ver como o atrito segura as coisas e ao mesmo tempo nos deixa andar, escrever e frear.",
+     "p": [
+      "O atrito é uma força que se opõe ao deslizamento quando duas superfícies se esfregam.",
+      "As superfícies ásperas criam mais atrito, as lisas ou oleosas criam menos.",
+      "Sem atrito, os sapatos escorregariam, os lápis não escreveriam e os carros não freariam."
+     ],
+     "q": "Onde você queria menos atrito e onde mais?",
+     "c": "Deslize uma moeda numa mesa, numa toalha e numa bandeja lisa e compare até onde ela vai."
+    }
+   }
+  }
+ ]
+}

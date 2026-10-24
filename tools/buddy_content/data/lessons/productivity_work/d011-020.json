@@ -1,0 +1,835 @@
+{
+ "topic": "productivity_work",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Urgent versus important",
+     "g": "Learn the difference and why important work often gets pushed aside.",
+     "p": [
+      "Urgent things shout now; important things serve your longer-term goals.",
+      "Constant urgency leaves no room for what matters most.",
+      "Many urgent items are urgent only to someone else."
+     ],
+     "q": "What important thing keeps getting pushed aside in your week?",
+     "c": "Label today's tasks U for urgent and I for important, then compare."
+    },
+    "de": {
+     "t": "Dringend oder wichtig",
+     "g": "Den Unterschied verstehen und warum Wichtiges oft verdrängt wird.",
+     "p": [
+      "Dringendes schreit jetzt; Wichtiges dient deinen langfristigen Zielen.",
+      "Ständige Dringlichkeit lässt keinen Platz für das Wesentliche.",
+      "Vieles Dringende ist nur für jemand anderen dringend."
+     ],
+     "q": "Was Wichtiges wird in deiner Woche immer wieder verdrängt?",
+     "c": "Markiere heutige Aufgaben mit D für dringend und W für wichtig und vergleiche."
+    },
+    "es": {
+     "t": "Urgente frente a importante",
+     "g": "Entender la diferencia y por qué lo importante suele quedar relegado.",
+     "p": [
+      "Lo urgente grita ahora; lo importante sirve a tus metas a largo plazo.",
+      "La urgencia constante no deja espacio para lo que más importa.",
+      "Mucho de lo urgente solo lo es para otra persona."
+     ],
+     "q": "¿Qué cosa importante se queda siempre para después en tu semana?",
+     "c": "Marca las tareas de hoy con U de urgente e I de importante y compara."
+    },
+    "fr": {
+     "t": "Urgent ou important",
+     "g": "Comprendre la différence et pourquoi l'important est souvent repoussé.",
+     "p": [
+      "L'urgent crie maintenant ; l'important sert vos objectifs à long terme.",
+      "L'urgence permanente ne laisse aucune place à l'essentiel.",
+      "Beaucoup d'urgences ne le sont que pour quelqu'un d'autre."
+     ],
+     "q": "Quelle chose importante est sans cesse repoussée dans votre semaine ?",
+     "c": "Marquez les tâches du jour U pour urgent et I pour important, puis comparez."
+    },
+    "it": {
+     "t": "Urgente o importante",
+     "g": "Capire la differenza e perché l'importante viene spesso rimandato.",
+     "p": [
+      "L'urgente grida adesso; l'importante serve i tuoi obiettivi a lungo termine.",
+      "L'urgenza costante non lascia spazio a ciò che conta di più.",
+      "Molte cose urgenti lo sono solo per qualcun altro."
+     ],
+     "q": "Quale cosa importante viene sempre rimandata nella tua settimana?",
+     "c": "Segna i compiti di oggi con U per urgente e I per importante e confronta."
+    },
+    "pt": {
+     "t": "Urgente ou importante",
+     "g": "Perceber a diferença e porque o importante fica muitas vezes para trás.",
+     "p": [
+      "O urgente grita agora; o importante serve os teus objetivos a longo prazo.",
+      "A urgência constante não deixa espaço para o que mais importa.",
+      "Muito do que é urgente só o é para outra pessoa."
+     ],
+     "q": "Que coisa importante fica sempre adiada na tua semana?",
+     "c": "Marca as tarefas de hoje com U de urgente e I de importante e compara."
+    },
+    "pt_BR": {
+     "t": "Urgente ou importante",
+     "g": "Entender a diferença e por que o importante costuma ficar para trás.",
+     "p": [
+      "O urgente grita agora; o importante serve seus objetivos de longo prazo.",
+      "A urgência constante não deixa espaço para o que mais importa.",
+      "Muita coisa urgente só é urgente para outra pessoa."
+     ],
+     "q": "Que coisa importante fica sempre adiada na sua semana?",
+     "c": "Marque as tarefas de hoje com U de urgente e I de importante e compare."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Eisenhower matrix",
+     "g": "Sort tasks into do, schedule, delegate and drop.",
+     "p": [
+      "Draw a square with urgent and important on the axes.",
+      "Urgent and important: do now. Important only: schedule it.",
+      "Urgent only: delegate if you can. Neither: let it go."
+     ],
+     "q": "Which task on your list could you simply drop?",
+     "c": "Sort five of your tasks into the four boxes on paper."
+    },
+    "de": {
+     "t": "Die Eisenhower-Matrix",
+     "g": "Aufgaben in Erledigen, Einplanen, Delegieren und Streichen einsortieren.",
+     "p": [
+      "Zeichne ein Quadrat mit dringend und wichtig an den Achsen.",
+      "Dringend und wichtig: sofort tun. Nur wichtig: einplanen.",
+      "Nur dringend: wenn möglich delegieren. Keins von beiden: loslassen."
+     ],
+     "q": "Welche Aufgabe auf deiner Liste könntest du einfach streichen?",
+     "c": "Sortiere fünf deiner Aufgaben auf Papier in die vier Felder."
+    },
+    "es": {
+     "t": "La matriz de Eisenhower",
+     "g": "Clasificar tareas en hacer, programar, delegar y descartar.",
+     "p": [
+      "Dibuja un cuadrado con urgente e importante en los ejes.",
+      "Urgente e importante: hazlo ya. Solo importante: prográmalo.",
+      "Solo urgente: delega si puedes. Ninguna: déjalo ir."
+     ],
+     "q": "¿Qué tarea de tu lista podrías simplemente descartar?",
+     "c": "Clasifica cinco de tus tareas en los cuatro cuadros, en papel."
+    },
+    "fr": {
+     "t": "La matrice d'Eisenhower",
+     "g": "Trier les tâches en faire, planifier, déléguer et abandonner.",
+     "p": [
+      "Dessinez un carré avec urgent et important sur les axes.",
+      "Urgent et important : faites-le. Important seul : planifiez-le.",
+      "Urgent seul : déléguez si possible. Ni l'un ni l'autre : laissez tomber."
+     ],
+     "q": "Quelle tâche de votre liste pourriez-vous simplement abandonner ?",
+     "c": "Triez cinq de vos tâches dans les quatre cases, sur papier."
+    },
+    "it": {
+     "t": "La matrice di Eisenhower",
+     "g": "Smistare i compiti in fare, pianificare, delegare e lasciar perdere.",
+     "p": [
+      "Disegna un quadrato con urgente e importante sugli assi.",
+      "Urgente e importante: fallo subito. Solo importante: pianificalo.",
+      "Solo urgente: delega se puoi. Nessuno dei due: lascia perdere."
+     ],
+     "q": "Quale compito della tua lista potresti semplicemente lasciar perdere?",
+     "c": "Smista cinque tuoi compiti nei quattro riquadri, su carta."
+    },
+    "pt": {
+     "t": "A matriz de Eisenhower",
+     "g": "Separar tarefas em fazer, agendar, delegar e largar.",
+     "p": [
+      "Desenha um quadrado com urgente e importante nos eixos.",
+      "Urgente e importante: faz já. Só importante: agenda.",
+      "Só urgente: delega se puderes. Nenhum dos dois: larga."
+     ],
+     "q": "Que tarefa da tua lista podias simplesmente largar?",
+     "c": "Separa cinco das tuas tarefas pelos quatro quadrantes, em papel."
+    },
+    "pt_BR": {
+     "t": "A matriz de Eisenhower",
+     "g": "Separar tarefas em fazer, agendar, delegar e largar.",
+     "p": [
+      "Desenhe um quadrado com urgente e importante nos eixos.",
+      "Urgente e importante: faça já. Só importante: agende.",
+      "Só urgente: delegue se puder. Nenhum dos dois: largue."
+     ],
+     "q": "Que tarefa da sua lista você poderia simplesmente largar?",
+     "c": "Separe cinco das suas tarefas pelos quatro quadrantes, no papel."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Most important tasks",
+     "g": "Choose one to three key tasks for each day.",
+     "p": [
+      "A long list hides what matters; a short one points the way.",
+      "Ask: if only these got done today, would it be a good day?",
+      "Pick them the night before or first thing in the morning."
+     ],
+     "q": "What would be your one key task for today?",
+     "c": "Choose up to three key tasks for today and put them at the top."
+    },
+    "de": {
+     "t": "Die wichtigsten Aufgaben",
+     "g": "Für jeden Tag ein bis drei Kernaufgaben auswählen.",
+     "p": [
+      "Eine lange Liste versteckt das Wesentliche; eine kurze weist den Weg.",
+      "Frag: Wäre es ein guter Tag, wenn nur diese erledigt würden?",
+      "Wähle sie am Vorabend oder gleich morgens."
+     ],
+     "q": "Was wäre heute deine eine Kernaufgabe?",
+     "c": "Wähle bis zu drei Kernaufgaben für heute und setze sie ganz nach oben."
+    },
+    "es": {
+     "t": "Las tareas más importantes",
+     "g": "Elegir de una a tres tareas clave para cada día.",
+     "p": [
+      "Una lista larga oculta lo importante; una corta marca el camino.",
+      "Pregúntate: si solo se hiciera esto hoy, ¿sería un buen día?",
+      "Elígelas la noche anterior o a primera hora."
+     ],
+     "q": "¿Cuál sería tu tarea clave de hoy?",
+     "c": "Elige hasta tres tareas clave para hoy y ponlas arriba del todo."
+    },
+    "fr": {
+     "t": "Les tâches les plus importantes",
+     "g": "Choisir une à trois tâches clés pour chaque jour.",
+     "p": [
+      "Une longue liste cache l'essentiel ; une courte montre la voie.",
+      "Demandez-vous : si seulement cela était fait, la journée serait-elle bonne ?",
+      "Choisissez-les la veille ou dès le matin."
+     ],
+     "q": "Quelle serait votre tâche clé d'aujourd'hui ?",
+     "c": "Choisissez jusqu'à trois tâches clés pour aujourd'hui et placez-les en haut."
+    },
+    "it": {
+     "t": "I compiti più importanti",
+     "g": "Scegliere da uno a tre compiti chiave per ogni giorno.",
+     "p": [
+      "Una lista lunga nasconde ciò che conta; una corta indica la strada.",
+      "Chiediti: se oggi facessi solo questi, sarebbe una buona giornata?",
+      "Sceglili la sera prima o appena al mattino."
+     ],
+     "q": "Quale sarebbe il tuo compito chiave di oggi?",
+     "c": "Scegli fino a tre compiti chiave per oggi e mettili in cima."
+    },
+    "pt": {
+     "t": "As tarefas mais importantes",
+     "g": "Escolher de uma a três tarefas-chave para cada dia.",
+     "p": [
+      "Uma lista longa esconde o essencial; uma curta mostra o caminho.",
+      "Pergunta-te: se só isto ficasse feito hoje, seria um bom dia?",
+      "Escolhe-as na véspera ou logo de manhã."
+     ],
+     "q": "Qual seria a tua tarefa-chave de hoje?",
+     "c": "Escolhe até três tarefas-chave para hoje e põe-nas no topo."
+    },
+    "pt_BR": {
+     "t": "As tarefas mais importantes",
+     "g": "Escolher de uma a três tarefas-chave para cada dia.",
+     "p": [
+      "Uma lista longa esconde o essencial; uma curta mostra o caminho.",
+      "Pergunte-se: se só isso fosse feito hoje, seria um bom dia?",
+      "Escolha-as na véspera ou logo cedo."
+     ],
+     "q": "Qual seria sua tarefa-chave de hoje?",
+     "c": "Escolha até três tarefas-chave para hoje e coloque-as no topo."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eat the frog",
+     "g": "Tackle your hardest or most dreaded task first.",
+     "p": [
+      "The frog is the task you are most tempted to put off.",
+      "Doing it early frees you from dreading it all day.",
+      "Use it only when it fits; some days a gentle start is wiser."
+     ],
+     "q": "Which task is your frog this week?",
+     "c": "Do the first ten minutes of your frog before checking messages."
+    },
+    "de": {
+     "t": "Den Frosch zuerst essen",
+     "g": "Die schwerste oder unangenehmste Aufgabe zuerst angehen.",
+     "p": [
+      "Der Frosch ist die Aufgabe, die du am liebsten aufschiebst.",
+      "Früh erledigt, musst du nicht den ganzen Tag davor grübeln.",
+      "Nutze es, wenn es passt; manchmal ist ein sanfter Start klüger."
+     ],
+     "q": "Welche Aufgabe ist diese Woche dein Frosch?",
+     "c": "Arbeite die ersten zehn Minuten an deinem Frosch, bevor du Nachrichten liest."
+    },
+    "es": {
+     "t": "Cómete el sapo",
+     "g": "Abordar primero la tarea más difícil o la que más pereza da.",
+     "p": [
+      "El sapo es la tarea que más tentación da de aplazar.",
+      "Hacerla pronto te libera de temerla todo el día.",
+      "Úsalo cuando encaje; algunos días un comienzo suave es más sabio."
+     ],
+     "q": "¿Cuál es tu sapo esta semana?",
+     "c": "Dedica los primeros diez minutos a tu sapo antes de mirar mensajes."
+    },
+    "fr": {
+     "t": "Avaler le crapaud",
+     "g": "S'attaquer d'abord à la tâche la plus dure ou la plus redoutée.",
+     "p": [
+      "Le crapaud est la tâche que vous êtes le plus tenté de repousser.",
+      "La faire tôt vous évite de l'appréhender toute la journée.",
+      "Utilisez-le quand cela convient ; parfois un début doux est plus sage."
+     ],
+     "q": "Quel est votre crapaud cette semaine ?",
+     "c": "Travaillez dix minutes sur votre crapaud avant de lire vos messages."
+    },
+    "it": {
+     "t": "Mangia la rana",
+     "g": "Affrontare per prima la tua attività più difficile o temuta.",
+     "p": [
+      "La rana è il compito che sei più tentato di rimandare.",
+      "Farlo presto ti libera dal timore per tutta la giornata.",
+      "Usalo quando va bene; certi giorni un inizio dolce è più saggio."
+     ],
+     "q": "Qual è la tua rana questa settimana?",
+     "c": "Dedica i primi dieci minuti alla tua rana prima di guardare i messaggi."
+    },
+    "pt": {
+     "t": "Comer o sapo",
+     "g": "Enfrentar primeiro a tarefa mais difícil ou mais temida.",
+     "p": [
+      "O sapo é a tarefa que mais tentas adiar.",
+      "Fazê-la cedo livra-te de a recear o dia inteiro.",
+      "Usa quando fizer sentido; em certos dias um começo suave é mais sensato."
+     ],
+     "q": "Qual é o teu sapo esta semana?",
+     "c": "Dedica os primeiros dez minutos ao teu sapo antes de ver mensagens."
+    },
+    "pt_BR": {
+     "t": "Engolir o sapo",
+     "g": "Enfrentar primeiro a tarefa mais difícil ou mais temida.",
+     "p": [
+      "O sapo é a tarefa que você mais tem vontade de adiar.",
+      "Fazê-la cedo livra você de temê-la o dia inteiro.",
+      "Use quando fizer sentido; em alguns dias um começo suave é mais sensato."
+     ],
+     "q": "Qual é o seu sapo esta semana?",
+     "c": "Dedique os primeiros dez minutos ao seu sapo antes de ver mensagens."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The two-minute rule",
+     "g": "Do tiny tasks right away instead of adding them to a list.",
+     "p": [
+      "If a task takes under two minutes, do it now.",
+      "Logging a tiny task often costs more than doing it.",
+      "Do not let this rule turn into an excuse to skip your main work."
+     ],
+     "q": "What small task have you been carrying around for days?",
+     "c": "Do three two-minute tasks right now and enjoy ticking them off."
+    },
+    "de": {
+     "t": "Die Zwei-Minuten-Regel",
+     "g": "Winzige Aufgaben sofort erledigen, statt sie auf eine Liste zu setzen.",
+     "p": [
+      "Dauert eine Aufgabe unter zwei Minuten, tu sie jetzt.",
+      "Eine Mini-Aufgabe zu notieren kostet oft mehr als sie zu erledigen.",
+      "Lass die Regel nicht zur Ausrede werden, die Hauptarbeit zu meiden."
+     ],
+     "q": "Welche Kleinigkeit schleppst du schon seit Tagen mit dir herum?",
+     "c": "Erledige jetzt drei Zwei-Minuten-Aufgaben und hake sie zufrieden ab."
+    },
+    "es": {
+     "t": "La regla de los dos minutos",
+     "g": "Hacer enseguida las tareas minúsculas en lugar de apuntarlas.",
+     "p": [
+      "Si una tarea lleva menos de dos minutos, hazla ya.",
+      "Apuntar una tarea diminuta suele costar más que hacerla.",
+      "Que no sea excusa para esquivar tu trabajo principal."
+     ],
+     "q": "¿Qué tarea pequeña llevas días arrastrando?",
+     "c": "Haz ahora tres tareas de dos minutos y disfruta tachándolas."
+    },
+    "fr": {
+     "t": "La règle des deux minutes",
+     "g": "Faire tout de suite les petites tâches plutôt que les noter.",
+     "p": [
+      "Si une tâche prend moins de deux minutes, faites-la maintenant.",
+      "Noter une minuscule tâche coûte souvent plus que la faire.",
+      "Ne laissez pas cette règle devenir une excuse pour fuir l'essentiel."
+     ],
+     "q": "Quelle petite tâche traînez-vous depuis des jours ?",
+     "c": "Faites trois tâches de deux minutes maintenant et cochez-les avec plaisir."
+    },
+    "it": {
+     "t": "La regola dei due minuti",
+     "g": "Fare subito i compiti minuscoli invece di metterli in lista.",
+     "p": [
+      "Se un compito richiede meno di due minuti, fallo adesso.",
+      "Annotare un compito minuscolo costa spesso più che farlo.",
+      "Non farne una scusa per evitare il lavoro principale."
+     ],
+     "q": "Quale piccolo compito ti trascini da giorni?",
+     "c": "Fai ora tre compiti da due minuti e goditi la spunta."
+    },
+    "pt": {
+     "t": "A regra dos dois minutos",
+     "g": "Fazer logo as tarefas minúsculas em vez de as pôr numa lista.",
+     "p": [
+      "Se uma tarefa demora menos de dois minutos, faz já.",
+      "Anotar uma tarefa pequena custa muitas vezes mais do que a fazer.",
+      "Não deixes que isto sirva de desculpa para fugir ao trabalho principal."
+     ],
+     "q": "Que tarefa pequena trazes contigo há dias?",
+     "c": "Faz agora três tarefas de dois minutos e goza o prazer de as riscar."
+    },
+    "pt_BR": {
+     "t": "A regra dos dois minutos",
+     "g": "Fazer logo as tarefas minúsculas em vez de colocá-las numa lista.",
+     "p": [
+      "Se uma tarefa leva menos de dois minutos, faça agora.",
+      "Anotar uma tarefa pequena costuma custar mais do que fazê-la.",
+      "Não deixe isso virar desculpa para fugir do trabalho principal."
+     ],
+     "q": "Que tarefa pequena você carrega há dias?",
+     "c": "Faça agora três tarefas de dois minutos e curta riscá-las."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Planning tomorrow today",
+     "g": "Spend five minutes at day's end to set up the next one.",
+     "p": [
+      "Choose tomorrow's key tasks before you leave work.",
+      "Your morning self then starts with a plan, not a decision.",
+      "Five calm minutes tonight save a foggy start tomorrow."
+     ],
+     "q": "How do you usually decide what to do first each morning?",
+     "c": "Before stopping today, write tomorrow's top three tasks."
+    },
+    "de": {
+     "t": "Morgen heute planen",
+     "g": "Fünf Minuten am Tagesende nutzen, um den nächsten Tag vorzubereiten.",
+     "p": [
+      "Wähle die Kernaufgaben von morgen, bevor du Feierabend machst.",
+      "Dein Morgen-Ich startet dann mit Plan statt mit Entscheidung.",
+      "Fünf ruhige Minuten heute ersparen einen nebligen Start morgen."
+     ],
+     "q": "Wie entscheidest du morgens meist, was du zuerst tust?",
+     "c": "Schreib vor Feierabend die drei wichtigsten Aufgaben von morgen auf."
+    },
+    "es": {
+     "t": "Planear mañana hoy",
+     "g": "Dedicar cinco minutos al final del día a preparar el siguiente.",
+     "p": [
+      "Elige las tareas clave de mañana antes de salir del trabajo.",
+      "Tu yo de la mañana empezará con un plan, no con una decisión.",
+      "Cinco minutos tranquilos hoy evitan un arranque confuso mañana."
+     ],
+     "q": "¿Cómo decides normalmente qué hacer primero cada mañana?",
+     "c": "Antes de parar hoy, escribe las tres tareas principales de mañana."
+    },
+    "fr": {
+     "t": "Planifier demain aujourd'hui",
+     "g": "Consacrer cinq minutes en fin de journée à préparer la suivante.",
+     "p": [
+      "Choisissez les tâches clés de demain avant de quitter le travail.",
+      "Demain matin, vous démarrez avec un plan, pas avec une décision.",
+      "Cinq minutes calmes ce soir évitent un départ brumeux demain."
+     ],
+     "q": "Comment décidez-vous d'ordinaire quoi faire en premier le matin ?",
+     "c": "Avant d'arrêter aujourd'hui, notez les trois tâches clés de demain."
+    },
+    "it": {
+     "t": "Pianificare domani oggi",
+     "g": "Dedicare cinque minuti a fine giornata a preparare la successiva.",
+     "p": [
+      "Scegli i compiti chiave di domani prima di lasciare il lavoro.",
+      "Il te di domani mattina parte con un piano, non con una decisione.",
+      "Cinque minuti calmi stasera evitano un avvio confuso domani."
+     ],
+     "q": "Come decidi di solito cosa fare per primo ogni mattina?",
+     "c": "Prima di staccare oggi, scrivi i tre compiti principali di domani."
+    },
+    "pt": {
+     "t": "Planear amanhã hoje",
+     "g": "Dedicar cinco minutos no fim do dia a preparar o seguinte.",
+     "p": [
+      "Escolhe as tarefas-chave de amanhã antes de sair do trabalho.",
+      "O teu eu da manhã começa com um plano, não com uma decisão.",
+      "Cinco minutos calmos hoje poupam um arranque confuso amanhã."
+     ],
+     "q": "Como costumas decidir o que fazer primeiro cada manhã?",
+     "c": "Antes de parar hoje, escreve as três tarefas principais de amanhã."
+    },
+    "pt_BR": {
+     "t": "Planejar amanhã hoje",
+     "g": "Dedicar cinco minutos no fim do dia a preparar o seguinte.",
+     "p": [
+      "Escolha as tarefas-chave de amanhã antes de sair do trabalho.",
+      "Seu eu da manhã começa com um plano, não com uma decisão.",
+      "Cinco minutos calmos hoje poupam um início confuso amanhã."
+     ],
+     "q": "Como você costuma decidir o que fazer primeiro a cada manhã?",
+     "c": "Antes de parar hoje, escreva as três principais tarefas de amanhã."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Starting the day well",
+     "g": "Build a simple morning work routine that creates momentum.",
+     "p": [
+      "A short, repeatable start beats a perfect one you skip.",
+      "Try: water, glance at the plan, begin your first key task.",
+      "Keep email and social feeds for after your first focused block."
+     ],
+     "q": "What is the first thing you do when your work day starts?",
+     "c": "Design a three-step morning start and try it tomorrow."
+    },
+    "de": {
+     "t": "Gut in den Tag starten",
+     "g": "Eine einfache Morgenroutine für die Arbeit aufbauen, die Schwung gibt.",
+     "p": [
+      "Ein kurzer, wiederholbarer Start schlägt einen perfekten, den du auslässt.",
+      "Probiere: Wasser, kurzer Blick auf den Plan, erste Kernaufgabe beginnen.",
+      "Heb dir E-Mails und Feeds für nach dem ersten Fokusblock auf."
+     ],
+     "q": "Was ist das Erste, was du zu Arbeitsbeginn tust?",
+     "c": "Entwirf einen Drei-Schritte-Start für den Morgen und probiere ihn morgen."
+    },
+    "es": {
+     "t": "Empezar bien el día",
+     "g": "Crear una rutina matinal sencilla de trabajo que dé impulso.",
+     "p": [
+      "Un inicio corto y repetible vale más que uno perfecto que te saltas.",
+      "Prueba: agua, un vistazo al plan y empezar la primera tarea clave.",
+      "Deja el correo y las redes para después del primer bloque de foco."
+     ],
+     "q": "¿Qué es lo primero que haces al empezar tu jornada?",
+     "c": "Diseña un inicio de tres pasos y pruébalo mañana."
+    },
+    "fr": {
+     "t": "Bien démarrer la journée",
+     "g": "Construire une routine matinale simple qui donne de l'élan.",
+     "p": [
+      "Un départ court et répétable vaut mieux qu'un parfait que vous sautez.",
+      "Essayez : de l'eau, un coup d'œil au plan, puis la première tâche clé.",
+      "Gardez e-mails et réseaux pour après le premier bloc de concentration."
+     ],
+     "q": "Quelle est la première chose que vous faites en début de journée ?",
+     "c": "Concevez un démarrage en trois étapes et testez-le demain."
+    },
+    "it": {
+     "t": "Iniziare bene la giornata",
+     "g": "Costruire una semplice routine mattutina di lavoro che dia slancio.",
+     "p": [
+      "Un inizio breve e ripetibile vale più di uno perfetto che salti.",
+      "Prova: acqua, uno sguardo al piano, poi il primo compito chiave.",
+      "Lascia email e social a dopo il primo blocco di concentrazione."
+     ],
+     "q": "Qual è la prima cosa che fai quando inizia la giornata di lavoro?",
+     "c": "Progetta un avvio in tre passi e provalo domani."
+    },
+    "pt": {
+     "t": "Começar bem o dia",
+     "g": "Criar uma rotina matinal simples de trabalho que dê impulso.",
+     "p": [
+      "Um início curto e repetível vale mais do que um perfeito que não fazes.",
+      "Experimenta: água, olhar para o plano e começar a primeira tarefa-chave.",
+      "Deixa o email e as redes para depois do primeiro bloco de foco."
+     ],
+     "q": "Qual é a primeira coisa que fazes quando começa o dia de trabalho?",
+     "c": "Desenha um arranque de três passos e experimenta-o amanhã."
+    },
+    "pt_BR": {
+     "t": "Começar bem o dia",
+     "g": "Criar uma rotina matinal simples de trabalho que dê impulso.",
+     "p": [
+      "Um início curto e repetível vale mais que um perfeito que você pula.",
+      "Experimente: água, olhar o plano e começar a primeira tarefa-chave.",
+      "Deixe e-mail e redes para depois do primeiro bloco de foco."
+     ],
+     "q": "Qual é a primeira coisa que você faz quando o dia de trabalho começa?",
+     "c": "Desenhe um início de três passos e teste amanhã."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ending the day well",
+     "g": "A shutdown routine closes loops and helps you switch off.",
+     "p": [
+      "List what is unfinished so your mind can stop holding it.",
+      "Tidy your desk and say a clear done for today.",
+      "Rest is part of productivity; evenings are for recovering."
+     ],
+     "q": "How do you currently switch off from work at the end of the day?",
+     "c": "Create a three-step shutdown ritual and do it at day's end."
+    },
+    "de": {
+     "t": "Den Tag gut beenden",
+     "g": "Ein Feierabend-Ritual schließt offene Schleifen und hilft beim Abschalten.",
+     "p": [
+      "Liste Unerledigtes auf, damit dein Kopf es nicht mehr festhalten muss.",
+      "Räum den Schreibtisch auf und sag klar: Für heute ist Schluss.",
+      "Erholung gehört zur Produktivität; Abende dienen der Regeneration."
+     ],
+     "q": "Wie schaltest du derzeit am Ende des Tages von der Arbeit ab?",
+     "c": "Entwirf ein Feierabend-Ritual in drei Schritten und führe es heute aus."
+    },
+    "es": {
+     "t": "Terminar bien el día",
+     "g": "Una rutina de cierre cierra pendientes y ayuda a desconectar.",
+     "p": [
+      "Anota lo inacabado para que tu mente deje de sostenerlo.",
+      "Ordena tu mesa y di con claridad: por hoy, hecho.",
+      "El descanso forma parte de la productividad; las tardes son para recuperarse."
+     ],
+     "q": "¿Cómo desconectas ahora del trabajo al acabar el día?",
+     "c": "Crea un ritual de cierre de tres pasos y hazlo al terminar hoy."
+    },
+    "fr": {
+     "t": "Bien terminer la journée",
+     "g": "Un rituel de fin de journée clôt les boucles et aide à décrocher.",
+     "p": [
+      "Listez l'inachevé pour que votre esprit cesse de le retenir.",
+      "Rangez votre bureau et dites clairement : c'est fini pour aujourd'hui.",
+      "Le repos fait partie de la productivité ; les soirées servent à récupérer."
+     ],
+     "q": "Comment décrochez-vous du travail en fin de journée actuellement ?",
+     "c": "Créez un rituel de fin en trois étapes et faites-le ce soir."
+    },
+    "it": {
+     "t": "Finire bene la giornata",
+     "g": "Una routine di chiusura chiude i sospesi e aiuta a staccare.",
+     "p": [
+      "Elenca ciò che è incompiuto così la mente smette di tenerlo.",
+      "Riordina la scrivania e dì chiaramente: per oggi basta.",
+      "Il riposo fa parte della produttività; le sere servono a recuperare."
+     ],
+     "q": "Come stacchi ora dal lavoro a fine giornata?",
+     "c": "Crea un rituale di chiusura in tre passi e fallo a fine giornata."
+    },
+    "pt": {
+     "t": "Terminar bem o dia",
+     "g": "Uma rotina de encerramento fecha pendentes e ajuda a desligar.",
+     "p": [
+      "Lista o que ficou por fazer para a cabeça deixar de o carregar.",
+      "Arruma a secretária e diz com clareza: por hoje, chega.",
+      "O descanso faz parte da produtividade; as noites servem para recuperar."
+     ],
+     "q": "Como desligas atualmente do trabalho no fim do dia?",
+     "c": "Cria um ritual de encerramento em três passos e faz hoje no fim do dia."
+    },
+    "pt_BR": {
+     "t": "Terminar bem o dia",
+     "g": "Uma rotina de encerramento fecha pendências e ajuda a desligar.",
+     "p": [
+      "Liste o que ficou por fazer para a cabeça parar de carregar isso.",
+      "Arrume a mesa e diga com clareza: por hoje, chega.",
+      "Descanso faz parte da produtividade; as noites servem para recuperar."
+     ],
+     "q": "Como você desliga do trabalho hoje, no fim do dia?",
+     "c": "Crie um ritual de encerramento em três passos e faça hoje ao final do dia."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Single-tasking",
+     "g": "Why doing one thing at a time is usually faster than juggling.",
+     "p": [
+      "Give one task your full attention for a set stretch.",
+      "Close other windows and keep only what the task needs.",
+      "Finishing things brings a quiet satisfaction that juggling never does."
+     ],
+     "q": "What do you usually try to do at the same time at work?",
+     "c": "Do one task for 20 minutes with everything else closed."
+    },
+    "de": {
+     "t": "Eins nach dem anderen",
+     "g": "Warum eine Sache nach der anderen meist schneller ist als Jonglieren.",
+     "p": [
+      "Gib einer Aufgabe für eine feste Zeit deine volle Aufmerksamkeit.",
+      "Schließ andere Fenster und behalte nur, was die Aufgabe braucht.",
+      "Fertig zu werden schenkt eine stille Zufriedenheit, die Jonglieren nie bringt."
+     ],
+     "q": "Was versuchst du bei der Arbeit meist gleichzeitig zu tun?",
+     "c": "Arbeite 20 Minuten an einer Aufgabe, alles andere geschlossen."
+    },
+    "es": {
+     "t": "Hacer una cosa a la vez",
+     "g": "Por qué hacer una cosa cada vez suele ser más rápido que hacer malabares.",
+     "p": [
+      "Dale a una tarea toda tu atención durante un tramo fijo.",
+      "Cierra otras ventanas y deja solo lo que la tarea necesita.",
+      "Terminar cosas da una satisfacción tranquila que el malabarismo no da."
+     ],
+     "q": "¿Qué sueles intentar hacer a la vez en el trabajo?",
+     "c": "Trabaja 20 minutos en una sola tarea con todo lo demás cerrado."
+    },
+    "fr": {
+     "t": "Une chose à la fois",
+     "g": "Pourquoi faire une seule chose à la fois est souvent plus rapide que jongler.",
+     "p": [
+      "Donnez à une tâche toute votre attention pendant un temps défini.",
+      "Fermez les autres fenêtres et gardez seulement ce qu'il faut.",
+      "Terminer les choses procure une satisfaction calme que jongler n'offre pas."
+     ],
+     "q": "Que tentez-vous généralement de faire en même temps au travail ?",
+     "c": "Travaillez 20 minutes sur une seule tâche, tout le reste fermé."
+    },
+    "it": {
+     "t": "Una cosa alla volta",
+     "g": "Perché fare una cosa per volta è di solito più veloce che destreggiarsi.",
+     "p": [
+      "Dai a un compito tutta la tua attenzione per un tempo stabilito.",
+      "Chiudi le altre finestre e tieni solo ciò che serve al compito.",
+      "Finire le cose dà una soddisfazione quieta che il destreggiarsi non dà."
+     ],
+     "q": "Cosa cerchi di solito di fare contemporaneamente al lavoro?",
+     "c": "Lavora 20 minuti a un solo compito con tutto il resto chiuso."
+    },
+    "pt": {
+     "t": "Uma coisa de cada vez",
+     "g": "Porque fazer uma coisa de cada vez costuma ser mais rápido do que fazer malabarismo.",
+     "p": [
+      "Dá a uma tarefa toda a tua atenção durante um período fixo.",
+      "Fecha outras janelas e deixa só o que a tarefa precisa.",
+      "Concluir coisas dá uma satisfação tranquila que o malabarismo não dá."
+     ],
+     "q": "O que costumas tentar fazer ao mesmo tempo no trabalho?",
+     "c": "Trabalha 20 minutos numa só tarefa com tudo o resto fechado."
+    },
+    "pt_BR": {
+     "t": "Uma coisa de cada vez",
+     "g": "Por que fazer uma coisa de cada vez costuma ser mais rápido que fazer malabarismo.",
+     "p": [
+      "Dê a uma tarefa toda a sua atenção por um período fixo.",
+      "Feche outras janelas e deixe só o que a tarefa precisa.",
+      "Concluir coisas dá uma satisfação tranquila que o malabarismo não dá."
+     ],
+     "q": "O que você costuma tentar fazer ao mesmo tempo no trabalho?",
+     "c": "Trabalhe 20 minutos em uma só tarefa com todo o resto fechado."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The cost of multitasking",
+     "g": "See how switching between tasks drains attention and adds mistakes.",
+     "p": [
+      "Each switch leaves part of your attention behind on the last task.",
+      "Quick checks add up to lost time and more small errors.",
+      "Group your switching: handle messages at set times, not constantly."
+     ],
+     "q": "When did switching tasks last make you slip up?",
+     "c": "Count how many times you switch tasks in one hour today."
+    },
+    "de": {
+     "t": "Der Preis des Multitaskings",
+     "g": "Sehen, wie Aufgabenwechsel Aufmerksamkeit kostet und Fehler fördert.",
+     "p": [
+      "Bei jedem Wechsel bleibt ein Teil der Aufmerksamkeit bei der letzten Aufgabe.",
+      "Kurze Blicke summieren sich zu verlorener Zeit und mehr Flüchtigkeitsfehlern.",
+      "Bündle das Wechseln: Nachrichten zu festen Zeiten, nicht ständig."
+     ],
+     "q": "Wann hat dich ein Aufgabenwechsel zuletzt zu einem Fehler verleitet?",
+     "c": "Zähle, wie oft du heute in einer Stunde die Aufgabe wechselst."
+    },
+    "es": {
+     "t": "El coste de la multitarea",
+     "g": "Ver cómo cambiar de tarea agota la atención y suma errores.",
+     "p": [
+      "Cada cambio deja parte de tu atención atrás, en la tarea anterior.",
+      "Los vistazos rápidos suman tiempo perdido y más errores pequeños.",
+      "Agrupa los cambios: atiende mensajes a horas fijas, no sin parar."
+     ],
+     "q": "¿Cuándo te hizo cometer un error el cambio de tarea?",
+     "c": "Cuenta cuántas veces cambias de tarea en una hora de hoy."
+    },
+    "fr": {
+     "t": "Le coût du multitâche",
+     "g": "Voir comment passer d'une tâche à l'autre épuise l'attention et ajoute des erreurs.",
+     "p": [
+      "Chaque changement laisse une part d'attention sur la tâche précédente.",
+      "Les coups d'œil rapides s'additionnent en temps perdu et en petites erreurs.",
+      "Regroupez les changements : messages à heures fixes, pas en continu."
+     ],
+     "q": "Quand un changement de tâche vous a-t-il fait faire une erreur ?",
+     "c": "Comptez combien de fois vous changez de tâche en une heure aujourd'hui."
+    },
+    "it": {
+     "t": "Il costo del multitasking",
+     "g": "Vedere come passare da un compito all'altro consuma attenzione e aggiunge errori.",
+     "p": [
+      "Ogni passaggio lascia parte dell'attenzione sul compito precedente.",
+      "Le occhiate rapide si sommano in tempo perso e piccoli errori.",
+      "Raggruppa i passaggi: messaggi a orari fissi, non di continuo."
+     ],
+     "q": "Quando cambiare compito ti ha fatto commettere un errore?",
+     "c": "Conta quante volte cambi compito in un'ora oggi."
+    },
+    "pt": {
+     "t": "O custo do multitarefa",
+     "g": "Ver como mudar de tarefa gasta atenção e traz erros.",
+     "p": [
+      "Cada mudança deixa parte da atenção para trás, na tarefa anterior.",
+      "Espreitadelas rápidas somam tempo perdido e mais pequenos erros.",
+      "Agrupa as mudanças: mensagens a horas fixas, não sem parar."
+     ],
+     "q": "Quando é que mudar de tarefa te fez cometer um erro?",
+     "c": "Conta quantas vezes mudas de tarefa numa hora de hoje."
+    },
+    "pt_BR": {
+     "t": "O custo do multitarefa",
+     "g": "Ver como trocar de tarefa gasta atenção e traz erros.",
+     "p": [
+      "Cada troca deixa parte da atenção para trás, na tarefa anterior.",
+      "Espiadinhas rápidas somam tempo perdido e mais errinhos.",
+      "Agrupe as trocas: mensagens em horários fixos, não o tempo todo."
+     ],
+     "q": "Quando trocar de tarefa te fez cometer um erro?",
+     "c": "Conte quantas vezes você troca de tarefa em uma hora hoje."
+    }
+   }
+  }
+ ]
+}

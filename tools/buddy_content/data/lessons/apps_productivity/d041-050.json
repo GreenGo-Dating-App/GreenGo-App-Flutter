@@ -1,0 +1,835 @@
+{
+ "topic": "apps_productivity",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: staying secure",
+     "g": "Recap passwords, two-factor sign-in, updates and scam awareness.",
+     "p": [
+      "A password manager plus long passphrases protect each account separately.",
+      "Two-factor sign-in, ideally with an authenticator app, adds a second lock.",
+      "Updates, device locks and a sceptical eye on urgent messages do the rest."
+     ],
+     "q": "Which security habit is already automatic for you, and which is next?",
+     "c": "Pick one weak spot from this week and fix it today."
+    },
+    "de": {
+     "t": "Rückblick: sicher bleiben",
+     "g": "Wiederhole Passwörter, Zwei-Faktor-Login, Updates und Betrugsbewusstsein.",
+     "p": [
+      "Ein Passwort-Manager und lange Passphrasen schützen jedes Konto einzeln.",
+      "Zwei-Faktor-Login, am besten mit Authenticator-App, bringt ein zweites Schloss.",
+      "Updates, Gerätesperren und ein kritischer Blick auf dringende Nachrichten tun den Rest."
+     ],
+     "q": "Welche Sicherheitsgewohnheit läuft bei dir schon automatisch, und welche ist als Nächstes dran?",
+     "c": "Such dir eine Schwachstelle dieser Woche aus und behebe sie heute."
+    },
+    "es": {
+     "t": "Repaso: mantenerse seguro",
+     "g": "Repasa contraseñas, acceso en dos pasos, actualizaciones y alerta ante estafas.",
+     "p": [
+      "Un gestor y frases largas protegen cada cuenta por separado.",
+      "El acceso en dos pasos, mejor con app autenticadora, añade un segundo candado.",
+      "Actualizaciones, bloqueo del dispositivo y ojo crítico ante mensajes urgentes hacen el resto."
+     ],
+     "q": "¿Qué hábito de seguridad ya es automático para ti y cuál toca ahora?",
+     "c": "Elige un punto débil de esta semana y arréglalo hoy."
+    },
+    "fr": {
+     "t": "Révision : rester en sécurité",
+     "g": "Récapitule mots de passe, double vérification, mises à jour et vigilance anti-arnaque.",
+     "p": [
+      "Un gestionnaire et de longues phrases de passe protègent chaque compte séparément.",
+      "La double vérification, idéalement par appli, ajoute un second verrou.",
+      "Mises à jour, verrouillage et œil critique sur les messages urgents font le reste."
+     ],
+     "q": "Quelle habitude de sécurité est déjà automatique pour toi, et laquelle est la prochaine ?",
+     "c": "Choisis un point faible de cette semaine et corrige-le aujourd'hui."
+    },
+    "it": {
+     "t": "Ripasso: restare al sicuro",
+     "g": "Ripassa password, accesso a due fattori, aggiornamenti e attenzione alle truffe.",
+     "p": [
+      "Un gestore e frasi lunghe proteggono ogni account separatamente.",
+      "L'accesso a due fattori, meglio con app, aggiunge una seconda serratura.",
+      "Aggiornamenti, blocco del dispositivo e occhio critico sui messaggi urgenti fanno il resto."
+     ],
+     "q": "Quale abitudine di sicurezza è già automatica per te e quale è la prossima?",
+     "c": "Scegli un punto debole di questa settimana e sistemalo oggi."
+    },
+    "pt": {
+     "t": "Revisão: manter-se seguro",
+     "g": "Revê palavras-passe, dois fatores, atualizações e atenção a burlas.",
+     "p": [
+      "Um gestor e frases-passe longas protegem cada conta em separado.",
+      "Os dois fatores, de preferência com app, juntam uma segunda fechadura.",
+      "Atualizações, bloqueio do aparelho e olhar crítico sobre mensagens urgentes fazem o resto."
+     ],
+     "q": "Que hábito de segurança já é automático para ti e qual é o próximo?",
+     "c": "Escolhe um ponto fraco desta semana e corrige-o hoje."
+    },
+    "pt_BR": {
+     "t": "Revisão: mantendo-se seguro",
+     "g": "Revise senhas, dois fatores, atualizações e atenção a golpes.",
+     "p": [
+      "Um gerenciador e frases-senha longas protegem cada conta separadamente.",
+      "Os dois fatores, de preferência com app, somam uma segunda fechadura.",
+      "Atualizações, bloqueio do aparelho e olhar crítico sobre mensagens urgentes fazem o resto."
+     ],
+     "q": "Que hábito de segurança já é automático para você e qual é o próximo?",
+     "c": "Escolha um ponto fraco desta semana e corrija hoje."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cloud storage explained",
+     "g": "Cloud drives keep files online so they sync and survive a lost phone.",
+     "p": [
+      "Cloud storage means your files live on remote servers, not only on your device.",
+      "Sync keeps the same version on your phone, tablet and computer.",
+      "It also acts as a backup if a device is lost or broken."
+     ],
+     "q": "What files would you hate to lose, and where are they stored now?",
+     "c": "List your five most precious files and check if each has a second copy."
+    },
+    "de": {
+     "t": "Cloud-Speicher erklärt",
+     "g": "Cloud-Laufwerke halten Dateien online, synchron und sicher vor Handyverlust.",
+     "p": [
+      "Cloud-Speicher heißt: Deine Dateien liegen auf fernen Servern, nicht nur auf dem Gerät.",
+      "Synchronisation hält dieselbe Version auf Handy, Tablet und Computer.",
+      "Sie dient auch als Sicherung, wenn ein Gerät verloren geht oder kaputtgeht."
+     ],
+     "q": "Welche Dateien würdest du ungern verlieren, und wo liegen sie jetzt?",
+     "c": "Liste deine fünf wertvollsten Dateien und prüfe, ob jede eine zweite Kopie hat."
+    },
+    "es": {
+     "t": "Qué es el almacenamiento en la nube",
+     "g": "Las unidades en la nube guardan archivos en línea, sincronizados y a salvo si pierdes el móvil.",
+     "p": [
+      "La nube significa que tus archivos viven en servidores remotos, no solo en tu dispositivo.",
+      "La sincronización mantiene la misma versión en móvil, tableta y ordenador.",
+      "También sirve de copia si un dispositivo se pierde o se rompe."
+     ],
+     "q": "¿Qué archivos odiarías perder y dónde están guardados ahora?",
+     "c": "Lista tus cinco archivos más valiosos y comprueba si cada uno tiene una segunda copia."
+    },
+    "fr": {
+     "t": "Le stockage cloud expliqué",
+     "g": "Les disques cloud gardent tes fichiers en ligne, synchronisés et à l'abri d'un téléphone perdu.",
+     "p": [
+      "Le cloud signifie que tes fichiers vivent sur des serveurs distants, pas seulement sur ton appareil.",
+      "La synchronisation garde la même version sur téléphone, tablette et ordinateur.",
+      "Il sert aussi de sauvegarde si un appareil est perdu ou cassé."
+     ],
+     "q": "Quels fichiers détesterais-tu perdre, et où sont-ils stockés maintenant ?",
+     "c": "Liste tes cinq fichiers les plus précieux et vérifie que chacun a une seconde copie."
+    },
+    "it": {
+     "t": "Il cloud spiegato",
+     "g": "I dischi cloud tengono i file online, sincronizzati e salvi se perdi il telefono.",
+     "p": [
+      "Il cloud significa che i tuoi file stanno su server remoti, non solo sul dispositivo.",
+      "La sincronizzazione mantiene la stessa versione su telefono, tablet e computer.",
+      "Fa anche da copia di sicurezza se un dispositivo si perde o si rompe."
+     ],
+     "q": "Quali file odieresti perdere e dove sono salvati adesso?",
+     "c": "Elenca i tuoi cinque file più preziosi e controlla se ciascuno ha una seconda copia."
+    },
+    "pt": {
+     "t": "O armazenamento na nuvem explicado",
+     "g": "Os discos na nuvem guardam ficheiros online, sincronizados e a salvo se perderes o telemóvel.",
+     "p": [
+      "A nuvem significa que os teus ficheiros vivem em servidores remotos, não só no aparelho.",
+      "A sincronização mantém a mesma versão no telemóvel, tablet e computador.",
+      "Serve também de cópia se um aparelho se perder ou avariar."
+     ],
+     "q": "Que ficheiros odiarias perder e onde estão guardados agora?",
+     "c": "Lista os teus cinco ficheiros mais preciosos e verifica se cada um tem segunda cópia."
+    },
+    "pt_BR": {
+     "t": "Armazenamento na nuvem explicado",
+     "g": "Os drives na nuvem guardam arquivos online, sincronizados e a salvo se você perder o celular.",
+     "p": [
+      "A nuvem significa que seus arquivos moram em servidores remotos, não só no aparelho.",
+      "A sincronização mantém a mesma versão no celular, tablet e computador.",
+      "Também serve de cópia se um aparelho for perdido ou quebrar."
+     ],
+     "q": "Que arquivos você odiaria perder e onde estão guardados agora?",
+     "c": "Liste seus cinco arquivos mais preciosos e veja se cada um tem uma segunda cópia."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Naming files so you can find them",
+     "g": "Put dates first, use clear words and note versions.",
+     "p": [
+      "Starting with year-month-day sorts files in the right order automatically.",
+      "Use clear words, like 2024-05-trip-budget, instead of final-final2.",
+      "Add v1, v2 or a short note for versions, and avoid odd symbols."
+     ],
+     "q": "How do your file names look today: clear or mysterious?",
+     "c": "Rename five files with a date first and clear words."
+    },
+    "de": {
+     "t": "Dateien so benennen, dass du sie findest",
+     "g": "Setze Datum an den Anfang, nutze klare Wörter und vermerke Versionen.",
+     "p": [
+      "Mit Jahr-Monat-Tag am Anfang sortieren sich Dateien automatisch richtig.",
+      "Nutze klare Wörter wie 2024-05-reise-budget statt final-final2.",
+      "Hänge v1, v2 oder eine kurze Notiz an und meide seltsame Zeichen."
+     ],
+     "q": "Wie sehen deine Dateinamen heute aus: klar oder rätselhaft?",
+     "c": "Benenne fünf Dateien um, mit Datum zuerst und klaren Wörtern."
+    },
+    "es": {
+     "t": "Nombrar archivos para encontrarlos",
+     "g": "Pon la fecha primero, usa palabras claras y anota las versiones.",
+     "p": [
+      "Empezar con año-mes-día ordena los archivos solo y bien.",
+      "Usa palabras claras, como 2024-05-presupuesto-viaje, en vez de final-final2.",
+      "Añade v1, v2 o una nota breve para versiones y evita símbolos raros."
+     ],
+     "q": "¿Cómo son hoy tus nombres de archivo: claros o misteriosos?",
+     "c": "Renombra cinco archivos con la fecha primero y palabras claras."
+    },
+    "fr": {
+     "t": "Nommer ses fichiers pour les retrouver",
+     "g": "Mets la date en premier, utilise des mots clairs et note les versions.",
+     "p": [
+      "Commencer par année-mois-jour classe les fichiers automatiquement dans l'ordre.",
+      "Utilise des mots clairs, comme 2024-05-budget-voyage, plutôt que final-final2.",
+      "Ajoute v1, v2 ou une courte note pour les versions et évite les symboles étranges."
+     ],
+     "q": "À quoi ressemblent tes noms de fichiers : clairs ou mystérieux ?",
+     "c": "Renomme cinq fichiers avec la date d'abord et des mots clairs."
+    },
+    "it": {
+     "t": "Dare nomi ai file per ritrovarli",
+     "g": "Metti la data per prima, usa parole chiare e segna le versioni.",
+     "p": [
+      "Iniziare con anno-mese-giorno ordina i file automaticamente nel modo giusto.",
+      "Usa parole chiare, come 2024-05-budget-viaggio, invece di finale-finale2.",
+      "Aggiungi v1, v2 o una breve nota per le versioni e evita simboli strani."
+     ],
+     "q": "Come sono oggi i nomi dei tuoi file: chiari o misteriosi?",
+     "c": "Rinomina cinque file con la data per prima e parole chiare."
+    },
+    "pt": {
+     "t": "Dar nomes aos ficheiros para os encontrar",
+     "g": "Põe a data primeiro, usa palavras claras e anota as versões.",
+     "p": [
+      "Começar por ano-mês-dia ordena os ficheiros sozinho pela ordem certa.",
+      "Usa palavras claras, como 2024-05-orcamento-viagem, em vez de final-final2.",
+      "Junta v1, v2 ou uma nota curta para versões e evita símbolos estranhos."
+     ],
+     "q": "Como são hoje os nomes dos teus ficheiros: claros ou misteriosos?",
+     "c": "Muda o nome a cinco ficheiros com a data primeiro e palavras claras."
+    },
+    "pt_BR": {
+     "t": "Dando nomes aos arquivos para achá-los",
+     "g": "Coloque a data primeiro, use palavras claras e anote as versões.",
+     "p": [
+      "Começar por ano-mês-dia ordena os arquivos sozinho na ordem certa.",
+      "Use palavras claras, como 2024-05-orcamento-viagem, em vez de final-final2.",
+      "Some v1, v2 ou uma nota curta para versões e evite símbolos estranhos."
+     ],
+     "q": "Como estão hoje os nomes dos seus arquivos: claros ou misteriosos?",
+     "c": "Renomeie cinco arquivos com a data primeiro e palavras claras."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Folder structures that last",
+     "g": "Choose a few broad folders over dozens of deep ones.",
+     "p": [
+      "Three to seven top folders, like Home, Work and Learning, are enough.",
+      "Avoid more than two or three levels so filing stays quick.",
+      "Archive old years into one folder instead of reorganising everything."
+     ],
+     "q": "How would you split your files into five broad areas?",
+     "c": "Create five top-level folders and move ten loose files into them."
+    },
+    "de": {
+     "t": "Ordnerstrukturen, die halten",
+     "g": "Wähle wenige breite Ordner statt dutzender tiefer.",
+     "p": [
+      "Drei bis sieben Hauptordner wie Zuhause, Arbeit und Lernen reichen.",
+      "Meide mehr als zwei oder drei Ebenen, damit das Ablegen schnell bleibt.",
+      "Archiviere alte Jahre in einem Ordner, statt alles neu zu ordnen."
+     ],
+     "q": "Wie würdest du deine Dateien in fünf breite Bereiche teilen?",
+     "c": "Lege fünf Hauptordner an und verschiebe zehn lose Dateien hinein."
+    },
+    "es": {
+     "t": "Estructuras de carpetas que duran",
+     "g": "Elige pocas carpetas amplias en lugar de decenas profundas.",
+     "p": [
+      "Entre tres y siete carpetas principales, como Casa, Trabajo y Estudios, bastan.",
+      "Evita más de dos o tres niveles para archivar rápido.",
+      "Archiva los años viejos en una carpeta en vez de reorganizar todo."
+     ],
+     "q": "¿Cómo dividirías tus archivos en cinco áreas amplias?",
+     "c": "Crea cinco carpetas principales y mueve diez archivos sueltos a ellas."
+    },
+    "fr": {
+     "t": "Structures de dossiers durables",
+     "g": "Choisis quelques dossiers larges plutôt que des dizaines de profonds.",
+     "p": [
+      "Trois à sept dossiers principaux, comme Maison, Travail et Études, suffisent.",
+      "Évite plus de deux ou trois niveaux pour classer vite.",
+      "Archive les anciennes années dans un dossier plutôt que tout réorganiser."
+     ],
+     "q": "Comment répartirais-tu tes fichiers en cinq grands domaines ?",
+     "c": "Crée cinq dossiers principaux et range-y dix fichiers en vrac."
+    },
+    "it": {
+     "t": "Strutture di cartelle che durano",
+     "g": "Scegli poche cartelle ampie invece di decine profonde.",
+     "p": [
+      "Da tre a sette cartelle principali, come Casa, Lavoro e Studio, bastano.",
+      "Evita più di due o tre livelli così archiviare resta veloce.",
+      "Archivia gli anni vecchi in una cartella invece di riorganizzare tutto."
+     ],
+     "q": "Come divideresti i tuoi file in cinque aree ampie?",
+     "c": "Crea cinque cartelle principali e sposta dieci file sparsi al loro interno."
+    },
+    "pt": {
+     "t": "Estruturas de pastas que duram",
+     "g": "Escolhe poucas pastas largas em vez de dezenas profundas.",
+     "p": [
+      "Entre três e sete pastas principais, como Casa, Trabalho e Estudos, chegam.",
+      "Evita mais de dois ou três níveis para arrumar depressa.",
+      "Arquiva os anos antigos numa pasta em vez de reorganizar tudo."
+     ],
+     "q": "Como dividirias os teus ficheiros em cinco áreas largas?",
+     "c": "Cria cinco pastas principais e move dez ficheiros soltos para elas."
+    },
+    "pt_BR": {
+     "t": "Estruturas de pastas que duram",
+     "g": "Escolha poucas pastas amplas em vez de dezenas profundas.",
+     "p": [
+      "Entre três e sete pastas principais, como Casa, Trabalho e Estudos, bastam.",
+      "Evite mais de dois ou três níveis para arquivar rápido.",
+      "Arquive os anos antigos numa pasta em vez de reorganizar tudo."
+     ],
+     "q": "Como você dividiria seus arquivos em cinco áreas amplas?",
+     "c": "Crie cinco pastas principais e mova dez arquivos soltos para elas."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Photo backup and organising",
+     "g": "Use automatic backup, albums and smart search to keep memories safe.",
+     "p": [
+      "Automatic backup copies new photos to the cloud whenever you are online.",
+      "Albums gather trips, family and projects; favourites mark the best shots.",
+      "Smart search finds photos by place, date or what is in them."
+     ],
+     "q": "What photo set would you most want to protect forever?",
+     "c": "Turn on photo backup and create one album for your favourite memories."
+    },
+    "de": {
+     "t": "Fotos sichern und ordnen",
+     "g": "Nutze automatische Sicherung, Alben und smarte Suche für sichere Erinnerungen.",
+     "p": [
+      "Die automatische Sicherung kopiert neue Fotos in die Cloud, sobald du online bist.",
+      "Alben sammeln Reisen, Familie und Projekte; Favoriten markieren die besten Bilder.",
+      "Die smarte Suche findet Fotos nach Ort, Datum oder Inhalt."
+     ],
+     "q": "Welche Fotosammlung möchtest du für immer schützen?",
+     "c": "Schalte die Fotosicherung ein und lege ein Album für deine Lieblingserinnerungen an."
+    },
+    "es": {
+     "t": "Copia de seguridad y orden de fotos",
+     "g": "Usa copia automática, álbumes y búsqueda inteligente para guardar recuerdos.",
+     "p": [
+      "La copia automática sube las fotos nuevas a la nube cuando hay conexión.",
+      "Los álbumes reúnen viajes, familia y proyectos; los favoritos marcan las mejores.",
+      "La búsqueda inteligente halla fotos por lugar, fecha o contenido."
+     ],
+     "q": "¿Qué conjunto de fotos querrías proteger para siempre?",
+     "c": "Activa la copia de fotos y crea un álbum con tus recuerdos favoritos."
+    },
+    "fr": {
+     "t": "Sauvegarde et rangement des photos",
+     "g": "Utilise sauvegarde automatique, albums et recherche intelligente pour garder tes souvenirs.",
+     "p": [
+      "La sauvegarde automatique copie les nouvelles photos dans le cloud dès que tu es en ligne.",
+      "Les albums réunissent voyages, famille et projets; les favoris marquent les meilleures.",
+      "La recherche intelligente trouve des photos par lieu, date ou contenu."
+     ],
+     "q": "Quel ensemble de photos voudrais-tu protéger pour toujours ?",
+     "c": "Active la sauvegarde des photos et crée un album pour tes souvenirs préférés."
+    },
+    "it": {
+     "t": "Backup e ordine delle foto",
+     "g": "Usa backup automatico, album e ricerca intelligente per custodire i ricordi.",
+     "p": [
+      "Il backup automatico copia le nuove foto nel cloud quando sei online.",
+      "Gli album raccolgono viaggi, famiglia e progetti; i preferiti segnano gli scatti migliori.",
+      "La ricerca intelligente trova foto per luogo, data o contenuto."
+     ],
+     "q": "Quale raccolta di foto vorresti proteggere per sempre?",
+     "c": "Attiva il backup delle foto e crea un album per i tuoi ricordi preferiti."
+    },
+    "pt": {
+     "t": "Cópia de segurança e arrumação de fotos",
+     "g": "Usa cópia automática, álbuns e pesquisa inteligente para guardares memórias.",
+     "p": [
+      "A cópia automática envia as fotos novas para a nuvem sempre que estás online.",
+      "Os álbuns reúnem viagens, família e projetos; os favoritos marcam as melhores.",
+      "A pesquisa inteligente encontra fotos por local, data ou conteúdo."
+     ],
+     "q": "Que conjunto de fotos mais gostarias de proteger para sempre?",
+     "c": "Ativa a cópia de fotos e cria um álbum com as tuas memórias favoritas."
+    },
+    "pt_BR": {
+     "t": "Backup e organização de fotos",
+     "g": "Use backup automático, álbuns e busca inteligente para guardar memórias.",
+     "p": [
+      "O backup automático envia as fotos novas para a nuvem sempre que você está online.",
+      "Álbuns reúnem viagens, família e projetos; favoritos marcam as melhores.",
+      "A busca inteligente acha fotos por local, data ou conteúdo."
+     ],
+     "q": "Que conjunto de fotos você mais gostaria de proteger para sempre?",
+     "c": "Ative o backup de fotos e crie um álbum com suas memórias favoritas."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cleaning up storage",
+     "g": "Remove duplicates, big videos and unused apps to free space and speed.",
+     "p": [
+      "Check which categories take the most room: videos, photos, apps or downloads.",
+      "Delete duplicates and screenshots you no longer need after backing up.",
+      "Remove apps you have not opened for months; you can reinstall anytime."
+     ],
+     "q": "What eats most of your storage, and does that surprise you?",
+     "c": "Free up space by clearing ten items you no longer need, after a backup."
+    },
+    "de": {
+     "t": "Speicher aufräumen",
+     "g": "Entferne Duplikate, große Videos und ungenutzte Apps für Platz und Tempo.",
+     "p": [
+      "Prüfe, welche Kategorien am meisten Platz brauchen: Videos, Fotos, Apps oder Downloads.",
+      "Lösche Duplikate und Screenshots, die du nicht mehr brauchst, nach der Sicherung.",
+      "Entferne Apps, die du seit Monaten nicht geöffnet hast; du kannst sie jederzeit neu laden."
+     ],
+     "q": "Was frisst den meisten Speicher, und überrascht dich das?",
+     "c": "Schaffe Platz, indem du zehn nicht mehr benötigte Dinge löschst, nach einer Sicherung."
+    },
+    "es": {
+     "t": "Limpiar el almacenamiento",
+     "g": "Quita duplicados, vídeos grandes y apps sin uso para ganar espacio y velocidad.",
+     "p": [
+      "Revisa qué categorías ocupan más: vídeos, fotos, apps o descargas.",
+      "Borra duplicados y capturas que ya no necesites, tras hacer copia.",
+      "Quita apps que no abres hace meses; puedes reinstalarlas cuando quieras."
+     ],
+     "q": "¿Qué ocupa más de tu almacenamiento y te sorprende?",
+     "c": "Libera espacio borrando diez cosas que ya no necesites, tras una copia."
+    },
+    "fr": {
+     "t": "Nettoyer le stockage",
+     "g": "Retire doublons, grosses vidéos et applis inutilisées pour gagner place et vitesse.",
+     "p": [
+      "Regarde quelles catégories prennent le plus de place : vidéos, photos, applis ou téléchargements.",
+      "Supprime les doublons et captures d'écran devenus inutiles, après sauvegarde.",
+      "Retire les applis non ouvertes depuis des mois; tu peux les réinstaller à tout moment."
+     ],
+     "q": "Qu'est-ce qui occupe le plus ton stockage, et est-ce une surprise ?",
+     "c": "Libère de la place en effaçant dix éléments inutiles, après une sauvegarde."
+    },
+    "it": {
+     "t": "Pulire la memoria",
+     "g": "Togli duplicati, video grandi e app inutilizzate per spazio e velocità.",
+     "p": [
+      "Controlla quali categorie occupano di più: video, foto, app o download.",
+      "Elimina duplicati e screenshot che non servono più, dopo il backup.",
+      "Rimuovi le app non aperte da mesi; puoi reinstallarle quando vuoi."
+     ],
+     "q": "Cosa occupa più memoria e ti sorprende?",
+     "c": "Libera spazio eliminando dieci cose che non servono più, dopo un backup."
+    },
+    "pt": {
+     "t": "Limpar o armazenamento",
+     "g": "Remove duplicados, vídeos grandes e apps sem uso para ganhares espaço e velocidade.",
+     "p": [
+      "Vê que categorias ocupam mais: vídeos, fotos, apps ou transferências.",
+      "Apaga duplicados e capturas de ecrã de que já não precisas, após a cópia.",
+      "Remove apps que não abres há meses; podes reinstalá-las quando quiseres."
+     ],
+     "q": "O que ocupa mais do teu armazenamento e surpreende-te?",
+     "c": "Liberta espaço apagando dez coisas de que já não precisas, após uma cópia."
+    },
+    "pt_BR": {
+     "t": "Limpando o armazenamento",
+     "g": "Remova duplicados, vídeos grandes e apps sem uso para ganhar espaço e velocidade.",
+     "p": [
+      "Veja que categorias ocupam mais: vídeos, fotos, apps ou downloads.",
+      "Apague duplicados e capturas de tela de que não precisa mais, após o backup.",
+      "Remova apps que você não abre há meses; pode reinstalá-los quando quiser."
+     ],
+     "q": "O que ocupa mais do seu armazenamento e surpreende você?",
+     "c": "Libere espaço apagando dez coisas de que não precisa mais, após um backup."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sharing files and links",
+     "g": "Share with view or edit rights and remove access when done.",
+     "p": [
+      "A share link can allow viewing only, commenting or full editing.",
+      "Share with named people when possible instead of anyone with the link.",
+      "Review who has access from time to time and remove old shares."
+     ],
+     "q": "Who do you share files with most, and how do you do it today?",
+     "c": "Share one file with view-only rights, then remove that access again."
+    },
+    "de": {
+     "t": "Dateien und Links teilen",
+     "g": "Teile mit Ansicht- oder Bearbeitungsrechten und entziehe den Zugriff danach.",
+     "p": [
+      "Ein Freigabelink kann nur Ansehen, Kommentieren oder volles Bearbeiten erlauben.",
+      "Teile wenn möglich mit namentlichen Personen statt mit jedem, der den Link hat.",
+      "Prüfe ab und zu, wer Zugriff hat, und entferne alte Freigaben."
+     ],
+     "q": "Mit wem teilst du am meisten Dateien, und wie machst du das heute?",
+     "c": "Teile eine Datei nur mit Leserechten und entziehe den Zugriff danach wieder."
+    },
+    "es": {
+     "t": "Compartir archivos y enlaces",
+     "g": "Comparte con permiso de ver o editar y retira el acceso al terminar.",
+     "p": [
+      "Un enlace puede permitir solo ver, comentar o editar por completo.",
+      "Comparte con personas concretas mejor que con cualquiera que tenga el enlace.",
+      "Revisa de vez en cuando quién tiene acceso y quita los usos antiguos."
+     ],
+     "q": "¿Con quién compartes más archivos y cómo lo haces hoy?",
+     "c": "Comparte un archivo solo para ver y luego retira ese acceso."
+    },
+    "fr": {
+     "t": "Partager fichiers et liens",
+     "g": "Partage en lecture ou modification et retire l'accès une fois fini.",
+     "p": [
+      "Un lien de partage peut autoriser la lecture seule, les commentaires ou la modification.",
+      "Partage avec des personnes nommées plutôt qu'avec quiconque a le lien.",
+      "Vérifie de temps en temps qui a accès et supprime les anciens partages."
+     ],
+     "q": "Avec qui partages-tu le plus de fichiers, et comment le fais-tu ?",
+     "c": "Partage un fichier en lecture seule, puis retire à nouveau cet accès."
+    },
+    "it": {
+     "t": "Condividere file e link",
+     "g": "Condividi con diritti di lettura o modifica e togli l'accesso a fine uso.",
+     "p": [
+      "Un link può consentire solo la visualizzazione, i commenti o la modifica completa.",
+      "Condividi con persone indicate invece che con chiunque abbia il link.",
+      "Controlla ogni tanto chi ha accesso e togli le vecchie condivisioni."
+     ],
+     "q": "Con chi condividi più file e come lo fai oggi?",
+     "c": "Condividi un file solo in lettura, poi togli di nuovo quell'accesso."
+    },
+    "pt": {
+     "t": "Partilhar ficheiros e links",
+     "g": "Partilha com direitos de ver ou editar e retira o acesso no fim.",
+     "p": [
+      "Um link de partilha pode permitir só ver, comentar ou editar por completo.",
+      "Partilha com pessoas indicadas em vez de qualquer um com o link.",
+      "Revê de vez em quando quem tem acesso e retira partilhas antigas."
+     ],
+     "q": "Com quem partilhas mais ficheiros e como o fazes hoje?",
+     "c": "Partilha um ficheiro só para ver e depois retira esse acesso."
+    },
+    "pt_BR": {
+     "t": "Compartilhando arquivos e links",
+     "g": "Compartilhe com direitos de ver ou editar e retire o acesso ao terminar.",
+     "p": [
+      "Um link pode permitir só ver, comentar ou editar por completo.",
+      "Compartilhe com pessoas indicadas em vez de qualquer um com o link.",
+      "Revise de vez em quando quem tem acesso e retire compartilhamentos antigos."
+     ],
+     "q": "Com quem você mais compartilha arquivos e como faz isso hoje?",
+     "c": "Compartilhe um arquivo só para ver e depois retire esse acesso."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Offline access to files",
+     "g": "Mark key files for offline use so they open without a connection.",
+     "p": [
+      "Offline files are saved on your device so they open without internet.",
+      "Choose boarding passes, maps, tickets and key documents before a trip.",
+      "Remember to sync again when back online so changes are not lost."
+     ],
+     "q": "What would you need to open if you had no internet tomorrow?",
+     "c": "Mark three important files as available offline and test them in airplane mode."
+    },
+    "de": {
+     "t": "Offline-Zugriff auf Dateien",
+     "g": "Markiere wichtige Dateien für Offline-Nutzung, damit sie ohne Verbindung öffnen.",
+     "p": [
+      "Offline-Dateien liegen auf deinem Gerät und öffnen ohne Internet.",
+      "Wähle vor einer Reise Bordkarten, Karten, Tickets und wichtige Dokumente.",
+      "Synchronisiere wieder, sobald du online bist, damit Änderungen nicht verloren gehen."
+     ],
+     "q": "Was müsstest du morgen ohne Internet öffnen können?",
+     "c": "Markiere drei wichtige Dateien als offline verfügbar und teste sie im Flugmodus."
+    },
+    "es": {
+     "t": "Acceso sin conexión a archivos",
+     "g": "Marca archivos clave para uso sin conexión y ábrelos sin internet.",
+     "p": [
+      "Los archivos sin conexión se guardan en tu dispositivo y abren sin internet.",
+      "Elige tarjetas de embarque, mapas, entradas y documentos clave antes de un viaje.",
+      "Sincroniza de nuevo al volver a conectarte para no perder cambios."
+     ],
+     "q": "¿Qué necesitarías abrir si mañana no tuvieras internet?",
+     "c": "Marca tres archivos importantes como disponibles sin conexión y pruébalos en modo avión."
+    },
+    "fr": {
+     "t": "Accès hors ligne aux fichiers",
+     "g": "Marque des fichiers clés pour un usage hors ligne, sans connexion.",
+     "p": [
+      "Les fichiers hors ligne sont enregistrés sur ton appareil et s'ouvrent sans internet.",
+      "Choisis cartes d'embarquement, plans, billets et documents clés avant un voyage.",
+      "Pense à resynchroniser une fois en ligne pour ne pas perdre de modifications."
+     ],
+     "q": "Que devrais-tu ouvrir demain si tu n'avais pas internet ?",
+     "c": "Marque trois fichiers importants disponibles hors ligne et teste-les en mode avion."
+    },
+    "it": {
+     "t": "Accesso offline ai file",
+     "g": "Segna i file chiave per l'uso offline così si aprono senza connessione.",
+     "p": [
+      "I file offline sono salvati sul dispositivo e si aprono senza internet.",
+      "Scegli carte d'imbarco, mappe, biglietti e documenti chiave prima di un viaggio.",
+      "Ricorda di sincronizzare di nuovo online per non perdere modifiche."
+     ],
+     "q": "Cosa dovresti aprire se domani non avessi internet?",
+     "c": "Segna tre file importanti come disponibili offline e provali in modalità aereo."
+    },
+    "pt": {
+     "t": "Acesso offline a ficheiros",
+     "g": "Marca ficheiros-chave para uso offline para abrirem sem ligação.",
+     "p": [
+      "Os ficheiros offline ficam guardados no aparelho e abrem sem internet.",
+      "Escolhe cartões de embarque, mapas, bilhetes e documentos-chave antes de uma viagem.",
+      "Lembra-te de sincronizar de novo online para não perderes alterações."
+     ],
+     "q": "O que precisarias de abrir se amanhã não tivesses internet?",
+     "c": "Marca três ficheiros importantes como disponíveis offline e testa-os em modo avião."
+    },
+    "pt_BR": {
+     "t": "Acesso offline a arquivos",
+     "g": "Marque arquivos-chave para uso offline para abrirem sem conexão.",
+     "p": [
+      "Arquivos offline ficam guardados no aparelho e abrem sem internet.",
+      "Escolha cartões de embarque, mapas, ingressos e documentos-chave antes de uma viagem.",
+      "Lembre-se de sincronizar de novo online para não perder alterações."
+     ],
+     "q": "O que você precisaria abrir se amanhã não tivesse internet?",
+     "c": "Marque três arquivos importantes como disponíveis offline e teste no modo avião."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Scanning documents with your phone",
+     "g": "Turn paper into clear, searchable PDFs in seconds.",
+     "p": [
+      "A scanner app straightens the page, sharpens text and saves it as PDF.",
+      "Good light and a plain background give the cleanest scans.",
+      "Searchable text lets you find a word inside a scan later."
+     ],
+     "q": "Which paper documents do you keep that could live safely as scans?",
+     "c": "Scan one paper document, name it with a date and save it in the right folder."
+    },
+    "de": {
+     "t": "Dokumente mit dem Handy scannen",
+     "g": "Verwandle Papier in Sekunden in klare, durchsuchbare PDFs.",
+     "p": [
+      "Eine Scanner-App richtet die Seite aus, schärft Text und speichert als PDF.",
+      "Gutes Licht und ein schlichter Hintergrund ergeben die saubersten Scans.",
+      "Durchsuchbarer Text lässt dich später ein Wort im Scan finden."
+     ],
+     "q": "Welche Papierdokumente bewahrst du auf, die sicher als Scan leben könnten?",
+     "c": "Scanne ein Papierdokument, benenne es mit Datum und speichere es im richtigen Ordner."
+    },
+    "es": {
+     "t": "Escanear documentos con el móvil",
+     "g": "Convierte papel en PDF claros y con búsqueda en segundos.",
+     "p": [
+      "Una app escáner endereza la página, aclara el texto y la guarda como PDF.",
+      "Buena luz y un fondo liso dan los escaneos más limpios.",
+      "El texto buscable permite encontrar una palabra dentro del escaneo."
+     ],
+     "q": "¿Qué documentos en papel guardas que podrían vivir seguros como escaneos?",
+     "c": "Escanea un documento en papel, ponle fecha en el nombre y guárdalo en su carpeta."
+    },
+    "fr": {
+     "t": "Numériser des documents avec ton téléphone",
+     "g": "Transforme le papier en PDF nets et consultables en quelques secondes.",
+     "p": [
+      "Une appli de numérisation redresse la page, affine le texte et l'enregistre en PDF.",
+      "Une bonne lumière et un fond uni donnent les scans les plus propres.",
+      "Le texte consultable permet de retrouver un mot dans un scan."
+     ],
+     "q": "Quels documents papier gardes-tu qui pourraient vivre en toute sécurité en scans ?",
+     "c": "Numérise un document papier, nomme-le avec une date et range-le dans le bon dossier."
+    },
+    "it": {
+     "t": "Scansionare documenti con il telefono",
+     "g": "Trasforma la carta in PDF chiari e ricercabili in pochi secondi.",
+     "p": [
+      "Un'app scanner raddrizza la pagina, rende nitido il testo e salva in PDF.",
+      "Buona luce e sfondo semplice danno le scansioni più pulite.",
+      "Il testo ricercabile permette di trovare una parola dentro una scansione."
+     ],
+     "q": "Quali documenti cartacei conservi che potrebbero vivere sicuri come scansioni?",
+     "c": "Scansiona un documento cartaceo, nominalo con la data e salvalo nella cartella giusta."
+    },
+    "pt": {
+     "t": "Digitalizar documentos com o telemóvel",
+     "g": "Transforma papel em PDF claros e pesquisáveis em segundos.",
+     "p": [
+      "Uma app de digitalização endireita a página, afina o texto e guarda em PDF.",
+      "Boa luz e fundo liso dão as digitalizações mais limpas.",
+      "O texto pesquisável permite encontrar uma palavra dentro da digitalização."
+     ],
+     "q": "Que documentos em papel guardas que podiam viver seguros como digitalizações?",
+     "c": "Digitaliza um documento em papel, dá-lhe nome com data e guarda-o na pasta certa."
+    },
+    "pt_BR": {
+     "t": "Digitalizando documentos com o celular",
+     "g": "Transforme papel em PDF claros e pesquisáveis em segundos.",
+     "p": [
+      "Um app de digitalização endireita a página, afina o texto e salva em PDF.",
+      "Boa luz e fundo liso dão as digitalizações mais limpas.",
+      "O texto pesquisável permite achar uma palavra dentro da digitalização."
+     ],
+     "q": "Que documentos em papel você guarda que poderiam viver seguros como digitalizações?",
+     "c": "Digitalize um documento em papel, nomeie com data e salve na pasta certa."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: files and storage",
+     "g": "Recap cloud storage, naming, folders, photos and scanning.",
+     "p": [
+      "Cloud sync plus a second copy keeps important files safe.",
+      "Dated names and a few broad folders keep everything findable.",
+      "Photo backup, cleanups and scans keep memories and papers under control."
+     ],
+     "q": "Which file habit has made your life easiest in the last weeks?",
+     "c": "Find one old file with your new naming and folder system, timing yourself."
+    },
+    "de": {
+     "t": "Rückblick: Dateien und Speicher",
+     "g": "Wiederhole Cloud-Speicher, Benennung, Ordner, Fotos und Scannen.",
+     "p": [
+      "Cloud-Sync plus eine zweite Kopie halten wichtige Dateien sicher.",
+      "Datierte Namen und wenige breite Ordner halten alles auffindbar.",
+      "Fotosicherung, Aufräumen und Scans halten Erinnerungen und Papiere im Griff."
+     ],
+     "q": "Welche Dateigewohnheit hat dir zuletzt das Leben am meisten erleichtert?",
+     "c": "Finde mit deinem neuen Namens- und Ordnersystem eine alte Datei und stoppe die Zeit."
+    },
+    "es": {
+     "t": "Repaso: archivos y almacenamiento",
+     "g": "Repasa nube, nombres, carpetas, fotos y escaneo.",
+     "p": [
+      "Sincronizar con la nube y tener una segunda copia protege los archivos importantes.",
+      "Nombres con fecha y pocas carpetas amplias mantienen todo localizable.",
+      "Copia de fotos, limpiezas y escaneos controlan recuerdos y papeles."
+     ],
+     "q": "¿Qué hábito con archivos te ha facilitado más la vida estas semanas?",
+     "c": "Encuentra un archivo antiguo con tu nuevo sistema de nombres y carpetas, cronometrándote."
+    },
+    "fr": {
+     "t": "Révision : fichiers et stockage",
+     "g": "Récapitule cloud, nommage, dossiers, photos et numérisation.",
+     "p": [
+      "Synchronisation cloud et seconde copie protègent les fichiers importants.",
+      "Noms datés et quelques grands dossiers gardent tout retrouvable.",
+      "Sauvegarde photo, nettoyages et scans maîtrisent souvenirs et papiers."
+     ],
+     "q": "Quelle habitude de fichiers t'a le plus simplifié la vie ces dernières semaines ?",
+     "c": "Retrouve un vieux fichier avec ton nouveau système de noms et de dossiers, chronomètre en main."
+    },
+    "it": {
+     "t": "Ripasso: file e archiviazione",
+     "g": "Ripassa cloud, nomi, cartelle, foto e scansioni.",
+     "p": [
+      "Sincronizzazione cloud e una seconda copia proteggono i file importanti.",
+      "Nomi con data e poche cartelle ampie tengono tutto rintracciabile.",
+      "Backup foto, pulizie e scansioni tengono sotto controllo ricordi e carte."
+     ],
+     "q": "Quale abitudine con i file ti ha semplificato di più la vita in queste settimane?",
+     "c": "Trova un vecchio file con il tuo nuovo sistema di nomi e cartelle, cronometrandoti."
+    },
+    "pt": {
+     "t": "Revisão: ficheiros e armazenamento",
+     "g": "Revê nuvem, nomes, pastas, fotos e digitalização.",
+     "p": [
+      "A sincronização na nuvem e uma segunda cópia protegem os ficheiros importantes.",
+      "Nomes com data e poucas pastas largas mantêm tudo encontrável.",
+      "Cópia de fotos, limpezas e digitalizações controlam memórias e papéis."
+     ],
+     "q": "Que hábito com ficheiros mais te facilitou a vida nestas semanas?",
+     "c": "Encontra um ficheiro antigo com o teu novo sistema de nomes e pastas, a cronometrar."
+    },
+    "pt_BR": {
+     "t": "Revisão: arquivos e armazenamento",
+     "g": "Revise nuvem, nomes, pastas, fotos e digitalização.",
+     "p": [
+      "Sincronização na nuvem e uma segunda cópia protegem os arquivos importantes.",
+      "Nomes com data e poucas pastas amplas mantêm tudo encontrável.",
+      "Backup de fotos, limpezas e digitalizações controlam memórias e papéis."
+     ],
+     "q": "Que hábito com arquivos mais facilitou sua vida nestas semanas?",
+     "c": "Ache um arquivo antigo com seu novo sistema de nomes e pastas, cronometrando."
+    }
+   }
+  }
+ ]
+}

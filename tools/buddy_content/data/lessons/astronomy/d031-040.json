@@ -1,0 +1,835 @@
+{
+ "topic": "astronomy",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Saturn and its rings",
+     "g": "Discover the ringed planet and how a small telescope reveals its rings.",
+     "p": [
+      "Saturn's rings are made of countless pieces of ice and rock, from dust grains to house-sized chunks.",
+      "The rings are huge across but very thin, often only about ten metres thick in places.",
+      "A small telescope with about 30x magnification already shows the rings as a tilted oval around a golden globe."
+     ],
+     "q": "Have you ever seen a photo of Saturn and wondered what the rings are made of?",
+     "c": "Draw Saturn from memory with its ring tilted, then compare it with a real photo."
+    },
+    "de": {
+     "t": "Saturn und seine Ringe",
+     "g": "Entdecke den Ringplaneten und erfahre, wie ein kleines Teleskop seine Ringe zeigt.",
+     "p": [
+      "Saturns Ringe bestehen aus unzähligen Eis- und Gesteinsstücken, von Staubkörnern bis zu hausgroßen Brocken.",
+      "Die Ringe sind riesig breit, aber sehr dünn, stellenweise nur etwa zehn Meter dick.",
+      "Schon ein kleines Teleskop mit etwa 30-facher Vergrößerung zeigt die Ringe als schräges Oval um eine goldene Kugel."
+     ],
+     "q": "Hast du schon einmal ein Foto von Saturn gesehen und dich gefragt, woraus die Ringe bestehen?",
+     "c": "Zeichne Saturn aus dem Gedächtnis mit geneigtem Ring und vergleiche ihn dann mit einem echten Foto."
+    },
+    "es": {
+     "t": "Saturno y sus anillos",
+     "g": "Descubre el planeta de los anillos y cómo un telescopio pequeño los revela.",
+     "p": [
+      "Los anillos de Saturno están hechos de innumerables trozos de hielo y roca, desde granos de polvo hasta bloques como casas.",
+      "Los anillos son enormes de ancho pero muy delgados, a veces de solo unos diez metros de grosor.",
+      "Un telescopio pequeño con unos 30 aumentos ya muestra los anillos como un óvalo inclinado alrededor de un globo dorado."
+     ],
+     "q": "¿Has visto alguna foto de Saturno y te has preguntado de qué están hechos los anillos?",
+     "c": "Dibuja Saturno de memoria con el anillo inclinado y compáralo con una foto real."
+    },
+    "fr": {
+     "t": "Saturne et ses anneaux",
+     "g": "Découvre la planète aux anneaux et comment un petit télescope les révèle.",
+     "p": [
+      "Les anneaux de Saturne sont faits d'innombrables morceaux de glace et de roche, des grains de poussière aux blocs de la taille d'une maison.",
+      "Les anneaux sont immenses en largeur mais très minces, parfois d'une dizaine de mètres seulement.",
+      "Un petit télescope grossissant environ 30 fois montre déjà les anneaux comme un ovale incliné autour d'un globe doré."
+     ],
+     "q": "As-tu déjà vu une photo de Saturne en te demandant de quoi sont faits les anneaux ?",
+     "c": "Dessine Saturne de mémoire avec son anneau incliné, puis compare avec une vraie photo."
+    },
+    "it": {
+     "t": "Saturno e i suoi anelli",
+     "g": "Scopri il pianeta con gli anelli e come un piccolo telescopio li rivela.",
+     "p": [
+      "Gli anelli di Saturno sono fatti di innumerevoli pezzi di ghiaccio e roccia, da granelli di polvere a blocchi grandi come case.",
+      "Gli anelli sono enormi in larghezza ma sottilissimi, in certi punti spessi solo una decina di metri.",
+      "Un piccolo telescopio a circa 30 ingrandimenti mostra già gli anelli come un ovale inclinato attorno a un globo dorato."
+     ],
+     "q": "Hai mai visto una foto di Saturno chiedendoti di cosa siano fatti gli anelli?",
+     "c": "Disegna Saturno a memoria con l'anello inclinato e confrontalo con una foto vera."
+    },
+    "pt": {
+     "t": "Saturno e os seus anéis",
+     "g": "Descobre o planeta dos anéis e como um telescópio pequeno os revela.",
+     "p": [
+      "Os anéis de Saturno são feitos de inúmeros pedaços de gelo e rocha, de grãos de pó a blocos do tamanho de casas.",
+      "Os anéis são enormes em largura mas muito finos, por vezes com apenas uns dez metros de espessura.",
+      "Um telescópio pequeno com cerca de 30 aumentos já mostra os anéis como um oval inclinado à volta de um globo dourado."
+     ],
+     "q": "Já viste uma fotografia de Saturno e perguntaste de que são feitos os anéis?",
+     "c": "Desenha Saturno de memória com o anel inclinado e compara com uma fotografia real."
+    },
+    "pt_BR": {
+     "t": "Saturno e seus anéis",
+     "g": "Descubra o planeta dos anéis e como um telescópio pequeno os revela.",
+     "p": [
+      "Os anéis de Saturno são feitos de inúmeros pedaços de gelo e rocha, de grãos de poeira a blocos do tamanho de casas.",
+      "Os anéis são enormes em largura, mas muito finos, às vezes com apenas uns dez metros de espessura.",
+      "Um telescópio pequeno com cerca de 30 aumentos já mostra os anéis como um oval inclinado em volta de um globo dourado."
+     ],
+     "q": "Você já viu uma foto de Saturno e se perguntou do que são feitos os anéis?",
+     "c": "Desenhe Saturno de memória com o anel inclinado e compare com uma foto de verdade."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Uranus, the tilted giant",
+     "g": "Meet the ice giant that rolls around the Sun on its side.",
+     "p": [
+      "Uranus is tilted by about 98 degrees, so it spins almost on its side like a rolling ball.",
+      "It is an ice giant with a pale blue-green colour from methane in its atmosphere, and it has faint rings.",
+      "It was discovered with a telescope in 1781 by William Herschel; under very dark skies it is barely visible to the eye."
+     ],
+     "q": "If a planet spun on its side, what do you think its seasons would be like?",
+     "c": "Roll a ball around a lamp while keeping it tilted sideways, and imagine long polar summers and winters."
+    },
+    "de": {
+     "t": "Uranus, der gekippte Riese",
+     "g": "Lerne den Eisriesen kennen, der auf der Seite liegend um die Sonne rollt.",
+     "p": [
+      "Uranus ist um etwa 98 Grad gekippt und dreht sich fast auf der Seite wie eine rollende Kugel.",
+      "Er ist ein Eisriese mit blassblaugrüner Farbe durch Methan in der Atmosphäre und hat schwache Ringe.",
+      "Er wurde 1781 von William Herschel mit dem Teleskop entdeckt; unter sehr dunklem Himmel ist er knapp mit bloßem Auge sichtbar."
+     ],
+     "q": "Wie wären wohl die Jahreszeiten auf einem Planeten, der auf der Seite liegt?",
+     "c": "Rolle einen Ball seitlich gekippt um eine Lampe und stell dir lange Polarsommer und -winter vor."
+    },
+    "es": {
+     "t": "Urano, el gigante inclinado",
+     "g": "Conoce al gigante de hielo que rueda alrededor del Sol de lado.",
+     "p": [
+      "Urano está inclinado unos 98 grados, así que gira casi de lado, como una bola que rueda.",
+      "Es un gigante de hielo de color azul verdoso pálido por el metano de su atmósfera, y tiene anillos tenues.",
+      "William Herschel lo descubrió con un telescopio en 1781; con cielos muy oscuros apenas se ve a simple vista."
+     ],
+     "q": "Si un planeta girase de lado, ¿cómo crees que serían sus estaciones?",
+     "c": "Haz rodar una bola inclinada de lado alrededor de una lámpara e imagina veranos e inviernos polares larguísimos."
+    },
+    "fr": {
+     "t": "Uranus, le géant couché",
+     "g": "Rencontre le géant de glaces qui roule autour du Soleil sur le côté.",
+     "p": [
+      "Uranus est incliné d'environ 98 degrés : il tourne presque couché, comme une balle qui roule.",
+      "C'est un géant de glaces, d'un bleu-vert pâle à cause du méthane de son atmosphère, avec de faibles anneaux.",
+      "William Herschel l'a découvert au télescope en 1781 ; sous un ciel très noir, on l'aperçoit à peine à l'œil nu."
+     ],
+     "q": "Si une planète tournait sur le côté, comment seraient ses saisons, à ton avis ?",
+     "c": "Fais rouler une balle inclinée autour d'une lampe et imagine de très longs étés et hivers polaires."
+    },
+    "it": {
+     "t": "Urano, il gigante inclinato",
+     "g": "Incontra il gigante di ghiaccio che rotola attorno al Sole su un fianco.",
+     "p": [
+      "Urano è inclinato di circa 98 gradi, quindi ruota quasi sdraiato, come una palla che rotola.",
+      "È un gigante di ghiaccio di colore azzurro-verde pallido per il metano nell'atmosfera, con anelli sottili.",
+      "Lo scoprì con il telescopio William Herschel nel 1781; sotto cieli molto bui è appena visibile a occhio nudo."
+     ],
+     "q": "Se un pianeta ruotasse su un fianco, come pensi sarebbero le sue stagioni?",
+     "c": "Fai rotolare una palla inclinata attorno a una lampada e immagina estati e inverni polari lunghissimi."
+    },
+    "pt": {
+     "t": "Urano, o gigante inclinado",
+     "g": "Conhece o gigante de gelo que rola à volta do Sol de lado.",
+     "p": [
+      "Urano está inclinado cerca de 98 graus, por isso gira quase deitado, como uma bola a rolar.",
+      "É um gigante de gelo azul-esverdeado pálido por causa do metano na atmosfera, com anéis ténues.",
+      "William Herschel descobriu-o com um telescópio em 1781; sob céus muito escuros mal se vê a olho nu."
+     ],
+     "q": "Se um planeta girasse de lado, como achas que seriam as suas estações?",
+     "c": "Faz rolar uma bola inclinada à volta de um candeeiro e imagina verões e invernos polares muito longos."
+    },
+    "pt_BR": {
+     "t": "Urano, o gigante inclinado",
+     "g": "Conheça o gigante de gelo que rola em volta do Sol de lado.",
+     "p": [
+      "Urano é inclinado cerca de 98 graus, então gira quase deitado, como uma bola rolando.",
+      "É um gigante de gelo azul-esverdeado pálido por causa do metano na atmosfera, com anéis tênues.",
+      "William Herschel o descobriu com um telescópio em 1781; sob céus muito escuros mal se vê a olho nu."
+     ],
+     "q": "Se um planeta girasse de lado, como você acha que seriam as estações dele?",
+     "c": "Role uma bola inclinada em volta de uma lâmpada e imagine verões e invernos polares bem longos."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Neptune, the windy blue world",
+     "g": "Meet the farthest planet, found by mathematics before anyone saw it.",
+     "p": [
+      "Neptune is the farthest planet, about 30 times farther from the Sun than Earth, and a year there lasts about 165 Earth years.",
+      "It has some of the fastest winds known in the Solar System, and its deep blue colour comes partly from methane.",
+      "Astronomers predicted its position from tiny wobbles in Uranus's orbit, and it was found in 1846."
+     ],
+     "q": "Why do you think predicting a planet before seeing it feels so exciting?",
+     "c": "Check a sky map for Neptune: it needs a telescope, so imagine finding it with just numbers and a pencil."
+    },
+    "de": {
+     "t": "Neptun, die windige blaue Welt",
+     "g": "Lerne den entferntesten Planeten kennen, der durch Mathematik gefunden wurde, bevor ihn jemand sah.",
+     "p": [
+      "Neptun ist der äußerste Planet, etwa 30-mal weiter von der Sonne entfernt als die Erde; sein Jahr dauert rund 165 Erdenjahre.",
+      "Er hat einige der schnellsten Winde im Sonnensystem, und seine tiefblaue Farbe stammt teils von Methan.",
+      "Astronomen sagten seine Position aus winzigen Bahnstörungen des Uranus voraus; 1846 wurde er gefunden."
+     ],
+     "q": "Warum fühlt es sich wohl so aufregend an, einen Planeten vorherzusagen, bevor man ihn sieht?",
+     "c": "Sieh auf einer Sternkarte nach Neptun: Er braucht ein Teleskop, also stell dir vor, ihn nur mit Zahlen und Bleistift zu finden."
+    },
+    "es": {
+     "t": "Neptuno, el mundo azul y ventoso",
+     "g": "Conoce al planeta más lejano, hallado con matemáticas antes de que alguien lo viera.",
+     "p": [
+      "Neptuno es el planeta más lejano, unas 30 veces más lejos del Sol que la Tierra, y su año dura unos 165 años terrestres.",
+      "Tiene algunos de los vientos más rápidos del Sistema Solar, y su azul profundo se debe en parte al metano.",
+      "Los astrónomos predijeron su posición por pequeñas irregularidades en la órbita de Urano, y se halló en 1846."
+     ],
+     "q": "¿Por qué crees que predecir un planeta antes de verlo resulta tan emocionante?",
+     "c": "Consulta un mapa del cielo para ver Neptuno: necesita telescopio, así que imagina hallarlo solo con números y lápiz."
+    },
+    "fr": {
+     "t": "Neptune, le monde bleu et venteux",
+     "g": "Rencontre la planète la plus lointaine, trouvée par les mathématiques avant que personne ne la voie.",
+     "p": [
+      "Neptune est la planète la plus éloignée, environ 30 fois plus loin du Soleil que la Terre ; son année dure environ 165 ans terrestres.",
+      "Elle a certains des vents les plus rapides du Système solaire, et son bleu profond vient en partie du méthane.",
+      "Les astronomes ont prédit sa position grâce aux petits écarts de l'orbite d'Uranus, et elle fut trouvée en 1846."
+     ],
+     "q": "Pourquoi prédire une planète avant de la voir est-il si passionnant, à ton avis ?",
+     "c": "Consulte une carte du ciel pour Neptune : il faut un télescope, alors imagine la trouver avec des chiffres et un crayon."
+    },
+    "it": {
+     "t": "Nettuno, il mondo blu e ventoso",
+     "g": "Incontra il pianeta più lontano, trovato con la matematica prima che qualcuno lo vedesse.",
+     "p": [
+      "Nettuno è il pianeta più lontano, circa 30 volte più distante dal Sole della Terra, e il suo anno dura circa 165 anni terrestri.",
+      "Ha alcuni dei venti più veloci del Sistema Solare, e il suo blu intenso deriva in parte dal metano.",
+      "Gli astronomi previdero la sua posizione dalle piccole perturbazioni dell'orbita di Urano, e fu trovato nel 1846."
+     ],
+     "q": "Perché secondo te prevedere un pianeta prima di vederlo è così emozionante?",
+     "c": "Guarda una mappa del cielo per Nettuno: serve un telescopio, quindi immagina di trovarlo con numeri e matita."
+    },
+    "pt": {
+     "t": "Neptuno, o mundo azul e ventoso",
+     "g": "Conhece o planeta mais distante, encontrado pela matemática antes de alguém o ver.",
+     "p": [
+      "Neptuno é o planeta mais distante, cerca de 30 vezes mais longe do Sol do que a Terra, e o seu ano dura cerca de 165 anos terrestres.",
+      "Tem alguns dos ventos mais rápidos do Sistema Solar, e o seu azul profundo deve-se em parte ao metano.",
+      "Os astrónomos previram a posição a partir de pequenas perturbações na órbita de Úrano, e foi encontrado em 1846."
+     ],
+     "q": "Porque achas que prever um planeta antes de o ver é tão emocionante?",
+     "c": "Vê num mapa do céu onde está Neptuno: precisa de telescópio, por isso imagina encontrá-lo só com números e lápis."
+    },
+    "pt_BR": {
+     "t": "Netuno, o mundo azul e ventoso",
+     "g": "Conheça o planeta mais distante, encontrado pela matemática antes de alguém vê-lo.",
+     "p": [
+      "Netuno é o planeta mais distante, cerca de 30 vezes mais longe do Sol que a Terra, e seu ano dura cerca de 165 anos terrestres.",
+      "Tem alguns dos ventos mais rápidos do Sistema Solar, e seu azul profundo vem em parte do metano.",
+      "Astrônomos previram a posição a partir de pequenas perturbações na órbita de Urano, e ele foi encontrado em 1846."
+     ],
+     "q": "Por que você acha que prever um planeta antes de vê-lo é tão emocionante?",
+     "c": "Veja num mapa do céu onde Netuno está: precisa de telescópio, então imagine achá-lo só com números e lápis."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dwarf planets and Pluto",
+     "g": "Understand why Pluto became a dwarf planet and what that term means.",
+     "p": [
+      "A dwarf planet orbits the Sun and is round, but has not cleared other objects from its orbital neighbourhood.",
+      "In 2006 the astronomers' union reclassified Pluto as a dwarf planet; others include Ceres, Eris, Haumea and Makemake.",
+      "Pluto has a heart-shaped bright plain and five known moons; it is a fascinating world either way."
+     ],
+     "q": "Do you think a world is less interesting because its label changed?",
+     "c": "Make a list of the eight planets in order from the Sun, then add Pluto as a dwarf planet at the end."
+    },
+    "de": {
+     "t": "Zwergplaneten und Pluto",
+     "g": "Verstehe, warum Pluto ein Zwergplanet wurde und was dieser Begriff bedeutet.",
+     "p": [
+      "Ein Zwergplanet umkreist die Sonne und ist rund, hat aber seine Bahnumgebung nicht von anderen Objekten freigeräumt.",
+      "2006 stufte die Astronomische Union Pluto als Zwergplanet ein; weitere sind Ceres, Eris, Haumea und Makemake.",
+      "Pluto hat eine herzförmige helle Ebene und fünf bekannte Monde; er ist so oder so eine faszinierende Welt."
+     ],
+     "q": "Findest du eine Welt weniger interessant, nur weil sich ihre Bezeichnung geändert hat?",
+     "c": "Schreibe die acht Planeten der Reihe nach von der Sonne auf und füge Pluto als Zwergplaneten am Ende hinzu."
+    },
+    "es": {
+     "t": "Planetas enanos y Plutón",
+     "g": "Entiende por qué Plutón pasó a ser planeta enano y qué significa ese término.",
+     "p": [
+      "Un planeta enano orbita el Sol y es redondo, pero no ha despejado de otros objetos la vecindad de su órbita.",
+      "En 2006 la unión astronómica reclasificó a Plutón como planeta enano; otros son Ceres, Eris, Haumea y Makemake.",
+      "Plutón tiene una llanura brillante con forma de corazón y cinco lunas conocidas; es un mundo fascinante en cualquier caso."
+     ],
+     "q": "¿Crees que un mundo es menos interesante porque cambió su etiqueta?",
+     "c": "Haz una lista de los ocho planetas en orden desde el Sol y añade al final Plutón como planeta enano."
+    },
+    "fr": {
+     "t": "Planètes naines et Pluton",
+     "g": "Comprends pourquoi Pluton est devenue une planète naine et ce que ce terme signifie.",
+     "p": [
+      "Une planète naine orbite autour du Soleil et est ronde, mais n'a pas dégagé son voisinage orbital des autres objets.",
+      "En 2006, l'union astronomique a reclassé Pluton en planète naine ; il y a aussi Cérès, Éris, Hauméa et Makémaké.",
+      "Pluton a une plaine brillante en forme de cœur et cinq lunes connues ; c'est un monde fascinant dans tous les cas."
+     ],
+     "q": "Penses-tu qu'un monde soit moins intéressant parce que son étiquette a changé ?",
+     "c": "Dresse la liste des huit planètes dans l'ordre depuis le Soleil, puis ajoute Pluton comme planète naine."
+    },
+    "it": {
+     "t": "Pianeti nani e Plutone",
+     "g": "Capisci perché Plutone è diventato un pianeta nano e cosa significa il termine.",
+     "p": [
+      "Un pianeta nano orbita attorno al Sole ed è rotondo, ma non ha ripulito la propria fascia orbitale dagli altri oggetti.",
+      "Nel 2006 l'unione astronomica ha riclassificato Plutone come pianeta nano; altri sono Cerere, Eris, Haumea e Makemake.",
+      "Plutone ha una pianura luminosa a forma di cuore e cinque lune note; è un mondo affascinante in ogni caso."
+     ],
+     "q": "Pensi che un mondo sia meno interessante perché la sua etichetta è cambiata?",
+     "c": "Elenca gli otto pianeti in ordine dal Sole, poi aggiungi Plutone come pianeta nano alla fine."
+    },
+    "pt": {
+     "t": "Planetas anões e Plutão",
+     "g": "Percebe porque Plutão passou a planeta anão e o que significa esse termo.",
+     "p": [
+      "Um planeta anão orbita o Sol e é redondo, mas não limpou a vizinhança da sua órbita de outros objetos.",
+      "Em 2006 a união astronómica reclassificou Plutão como planeta anão; outros são Ceres, Éris, Haumea e Makemake.",
+      "Plutão tem uma planície brilhante em forma de coração e cinco luas conhecidas; é um mundo fascinante de qualquer modo."
+     ],
+     "q": "Achas que um mundo é menos interessante só porque mudou de etiqueta?",
+     "c": "Faz uma lista dos oito planetas por ordem a partir do Sol e acrescenta Plutão no fim como planeta anão."
+    },
+    "pt_BR": {
+     "t": "Planetas anões e Plutão",
+     "g": "Entenda por que Plutão virou planeta anão e o que esse termo significa.",
+     "p": [
+      "Um planeta anão orbita o Sol e é redondo, mas não limpou a vizinhança da sua órbita de outros objetos.",
+      "Em 2006 a união astronômica reclassificou Plutão como planeta anão; outros são Ceres, Éris, Haumea e Makemake.",
+      "Plutão tem uma planície brilhante em forma de coração e cinco luas conhecidas; é um mundo fascinante de qualquer jeito."
+     ],
+     "q": "Você acha que um mundo é menos interessante só porque mudou de rótulo?",
+     "c": "Faça uma lista dos oito planetas em ordem a partir do Sol e acrescente Plutão no fim como planeta anão."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Scale of the Solar System",
+     "g": "Build a walking model that shows how vast and empty the Solar System is.",
+     "p": [
+      "If the Sun were a grapefruit, Earth would be a grain of sand about 15 metres away.",
+      "On that scale Jupiter is a small marble about 80 metres away, and Neptune is roughly 450 metres from the Sun.",
+      "Most of the Solar System is empty space, which is why spacecraft take years to reach the outer planets."
+     ],
+     "q": "Which planet would you like to place on a path near your home?",
+     "c": "Pace out 15 steps from a lamp post or tree as the Sun, and drop a grain of rice for Earth."
+    },
+    "de": {
+     "t": "Maßstab des Sonnensystems",
+     "g": "Baue ein begehbares Modell, das zeigt, wie riesig und leer das Sonnensystem ist.",
+     "p": [
+      "Wäre die Sonne eine Grapefruit, wäre die Erde ein Sandkorn in etwa 15 Metern Entfernung.",
+      "In diesem Maßstab ist Jupiter eine kleine Murmel in etwa 80 Metern und Neptun rund 450 Meter von der Sonne entfernt.",
+      "Das meiste im Sonnensystem ist leerer Raum, deshalb brauchen Raumsonden Jahre bis zu den äußeren Planeten."
+     ],
+     "q": "Welchen Planeten würdest du gern auf einem Weg in deiner Nähe platzieren?",
+     "c": "Gehe von einem Laternenpfahl oder Baum als Sonne 15 Schritte und lege ein Reiskorn für die Erde hin."
+    },
+    "es": {
+     "t": "La escala del Sistema Solar",
+     "g": "Construye un modelo para caminar que muestre lo inmenso y vacío que es el Sistema Solar.",
+     "p": [
+      "Si el Sol fuese un pomelo, la Tierra sería un grano de arena a unos 15 metros.",
+      "A esa escala Júpiter es una canica pequeña a unos 80 metros y Neptuno está a unos 450 metros del Sol.",
+      "Casi todo el Sistema Solar es espacio vacío, por eso las sondas tardan años en llegar a los planetas exteriores."
+     ],
+     "q": "¿Qué planeta te gustaría colocar en un camino cerca de tu casa?",
+     "c": "Cuenta 15 pasos desde una farola o un árbol que haga de Sol y deja un grano de arroz como Tierra."
+    },
+    "fr": {
+     "t": "L'échelle du Système solaire",
+     "g": "Construis une maquette à parcourir à pied pour mesurer l'immensité et le vide du Système solaire.",
+     "p": [
+      "Si le Soleil était un pamplemousse, la Terre serait un grain de sable à environ 15 mètres.",
+      "À cette échelle, Jupiter est une petite bille à environ 80 mètres et Neptune est à environ 450 mètres du Soleil.",
+      "Le Système solaire est surtout du vide, ce qui explique que les sondes mettent des années à atteindre les planètes lointaines."
+     ],
+     "q": "Quelle planète aimerais-tu placer sur un chemin près de chez toi ?",
+     "c": "Compte 15 pas depuis un lampadaire ou un arbre qui fait le Soleil et dépose un grain de riz pour la Terre."
+    },
+    "it": {
+     "t": "La scala del Sistema Solare",
+     "g": "Costruisci un modello da percorrere a piedi che mostri quanto è vasto e vuoto il Sistema Solare.",
+     "p": [
+      "Se il Sole fosse un pompelmo, la Terra sarebbe un granello di sabbia a circa 15 metri.",
+      "A quella scala Giove è una piccola biglia a circa 80 metri e Nettuno è a circa 450 metri dal Sole.",
+      "Il Sistema Solare è quasi tutto spazio vuoto, per questo le sonde impiegano anni per raggiungere i pianeti esterni."
+     ],
+     "q": "Quale pianeta ti piacerebbe collocare su un sentiero vicino a casa tua?",
+     "c": "Conta 15 passi da un lampione o un albero che fa da Sole e lascia un chicco di riso per la Terra."
+    },
+    "pt": {
+     "t": "A escala do Sistema Solar",
+     "g": "Constrói um modelo para percorrer a pé que mostra como o Sistema Solar é vasto e vazio.",
+     "p": [
+      "Se o Sol fosse uma toranja, a Terra seria um grão de areia a cerca de 15 metros.",
+      "A essa escala Júpiter é uma pequena berlinde a uns 80 metros e Neptuno está a cerca de 450 metros do Sol.",
+      "O Sistema Solar é quase todo espaço vazio, por isso as sondas demoram anos a chegar aos planetas exteriores."
+     ],
+     "q": "Que planeta gostarias de colocar num caminho perto de tua casa?",
+     "c": "Conta 15 passos a partir de um candeeiro ou árvore que faça de Sol e deixa um grão de arroz como Terra."
+    },
+    "pt_BR": {
+     "t": "A escala do Sistema Solar",
+     "g": "Construa um modelo para percorrer a pé que mostra como o Sistema Solar é vasto e vazio.",
+     "p": [
+      "Se o Sol fosse uma toranja, a Terra seria um grão de areia a cerca de 15 metros.",
+      "Nessa escala Júpiter é uma bolinha de gude a uns 80 metros e Netuno está a cerca de 450 metros do Sol.",
+      "O Sistema Solar é quase todo espaço vazio, por isso as sondas levam anos para chegar aos planetas exteriores."
+     ],
+     "q": "Qual planeta você gostaria de colocar num caminho perto da sua casa?",
+     "c": "Conte 15 passos a partir de um poste ou árvore que faça de Sol e deixe um grão de arroz como Terra."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The asteroid belt",
+     "g": "Explore the rocky leftovers between Mars and Jupiter.",
+     "p": [
+      "The asteroid belt lies between Mars and Jupiter and holds millions of rocky bodies left over from the Solar System's birth.",
+      "Despite movies, the asteroids are far apart, and spacecraft pass through it easily.",
+      "Ceres, the largest object there, is a dwarf planet about 950 kilometres wide, and all the asteroids together weigh less than our Moon."
+     ],
+     "q": "What would you like to learn from a visit to an asteroid?",
+     "c": "Pick up a pebble outdoors and imagine it as a tiny asteroid, billions of years old in spirit."
+    },
+    "de": {
+     "t": "Der Asteroidengürtel",
+     "g": "Erkunde die Gesteinsreste zwischen Mars und Jupiter.",
+     "p": [
+      "Der Asteroidengürtel liegt zwischen Mars und Jupiter und enthält Millionen Gesteinskörper aus der Entstehungszeit des Sonnensystems.",
+      "Anders als im Film liegen die Asteroiden weit auseinander, und Raumsonden fliegen leicht hindurch.",
+      "Ceres, das größte Objekt dort, ist ein Zwergplanet von etwa 950 km Durchmesser; alle Asteroiden zusammen wiegen weniger als der Mond."
+     ],
+     "q": "Was würdest du bei einem Besuch auf einem Asteroiden gern lernen?",
+     "c": "Heb draußen einen Kiesel auf und stell ihn dir als winzigen Asteroiden vor, uralt wie das Sonnensystem."
+    },
+    "es": {
+     "t": "El cinturón de asteroides",
+     "g": "Explora los restos rocosos entre Marte y Júpiter.",
+     "p": [
+      "El cinturón de asteroides está entre Marte y Júpiter y contiene millones de cuerpos rocosos sobrantes del nacimiento del Sistema Solar.",
+      "A diferencia de las películas, los asteroides están muy separados y las sondas lo cruzan sin problemas.",
+      "Ceres, el mayor objeto, es un planeta enano de unos 950 kilómetros; todos los asteroides juntos pesan menos que nuestra Luna."
+     ],
+     "q": "¿Qué te gustaría aprender de una visita a un asteroide?",
+     "c": "Recoge una piedrecita al aire libre e imagínala como un pequeño asteroide, tan antiguo como el Sistema Solar."
+    },
+    "fr": {
+     "t": "La ceinture d'astéroïdes",
+     "g": "Explore les restes rocheux entre Mars et Jupiter.",
+     "p": [
+      "La ceinture d'astéroïdes, entre Mars et Jupiter, contient des millions de corps rocheux nés avec le Système solaire.",
+      "Contrairement aux films, les astéroïdes sont très éloignés les uns des autres et les sondes la traversent sans peine.",
+      "Cérès, le plus gros objet, est une planète naine d'environ 950 kilomètres ; tous les astéroïdes réunis pèsent moins que notre Lune."
+     ],
+     "q": "Qu'aimerais-tu apprendre en visitant un astéroïde ?",
+     "c": "Ramasse un petit caillou dehors et imagine un minuscule astéroïde, aussi vieux que le Système solaire."
+    },
+    "it": {
+     "t": "La fascia degli asteroidi",
+     "g": "Esplora i resti rocciosi fra Marte e Giove.",
+     "p": [
+      "La fascia degli asteroidi si trova fra Marte e Giove e contiene milioni di corpi rocciosi avanzati dalla nascita del Sistema Solare.",
+      "A differenza dei film, gli asteroidi sono molto distanti fra loro e le sonde l'attraversano senza problemi.",
+      "Cerere, l'oggetto maggiore, è un pianeta nano di circa 950 chilometri; tutti gli asteroidi insieme pesano meno della Luna."
+     ],
+     "q": "Cosa vorresti imparare da una visita a un asteroide?",
+     "c": "Raccogli un sassolino all'aperto e immaginalo come un piccolo asteroide, antico quanto il Sistema Solare."
+    },
+    "pt": {
+     "t": "A cintura de asteroides",
+     "g": "Explora os restos rochosos entre Marte e Júpiter.",
+     "p": [
+      "A cintura de asteroides fica entre Marte e Júpiter e tem milhões de corpos rochosos sobrantes do nascimento do Sistema Solar.",
+      "Ao contrário dos filmes, os asteroides estão muito afastados e as sondas atravessam-na sem problemas.",
+      "Ceres, o maior objeto, é um planeta anão com cerca de 950 quilómetros; todos os asteroides juntos pesam menos do que a nossa Lua."
+     ],
+     "q": "O que gostarias de aprender numa visita a um asteroide?",
+     "c": "Apanha uma pedrinha ao ar livre e imagina-a como um pequeno asteroide, tão antigo como o Sistema Solar."
+    },
+    "pt_BR": {
+     "t": "O cinturão de asteroides",
+     "g": "Explore os restos rochosos entre Marte e Júpiter.",
+     "p": [
+      "O cinturão de asteroides fica entre Marte e Júpiter e tem milhões de corpos rochosos que sobraram do nascimento do Sistema Solar.",
+      "Ao contrário dos filmes, os asteroides ficam muito distantes e as sondas atravessam o cinturão sem problemas.",
+      "Ceres, o maior objeto, é um planeta anão com cerca de 950 quilômetros; todos os asteroides juntos pesam menos que a nossa Lua."
+     ],
+     "q": "O que você gostaria de aprender numa visita a um asteroide?",
+     "c": "Pegue uma pedrinha ao ar livre e imagine-a como um pequeno asteroide, tão antigo quanto o Sistema Solar."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Comets, icy visitors",
+     "g": "Learn why icy bodies grow glowing tails near the Sun.",
+     "p": [
+      "A comet is a ball of ice, dust and rock, often called a dirty snowball, only a few kilometres wide.",
+      "Near the Sun, ice turns to gas and dust, forming a glowing head called a coma and a long tail.",
+      "A comet's tail always points away from the Sun, pushed by sunlight and the solar wind, even when the comet moves away."
+     ],
+     "q": "Would you stay up late for a chance to see a bright comet?",
+     "c": "Draw a comet moving toward the Sun and another moving away, with the tail pointing away from the Sun in both."
+    },
+    "de": {
+     "t": "Kometen, eisige Besucher",
+     "g": "Erfahre, warum eisige Körper nahe der Sonne leuchtende Schweife bekommen.",
+     "p": [
+      "Ein Komet ist ein Ball aus Eis, Staub und Gestein, oft schmutziger Schneeball genannt, nur wenige Kilometer groß.",
+      "Nahe der Sonne werden Eis zu Gas und Staub frei und bilden einen leuchtenden Kopf, die Koma, und einen langen Schweif.",
+      "Der Schweif zeigt immer von der Sonne weg, getrieben von Sonnenlicht und Sonnenwind, auch wenn sich der Komet entfernt."
+     ],
+     "q": "Würdest du lange aufbleiben, um vielleicht einen hellen Kometen zu sehen?",
+     "c": "Zeichne einen Kometen auf die Sonne zu und einen davon weg, bei beiden mit dem Schweif von der Sonne abgewandt."
+    },
+    "es": {
+     "t": "Cometas, visitantes helados",
+     "g": "Aprende por qué los cuerpos helados desarrollan colas brillantes cerca del Sol.",
+     "p": [
+      "Un cometa es una bola de hielo, polvo y roca, a menudo llamada bola de nieve sucia, de solo unos kilómetros de ancho.",
+      "Cerca del Sol, el hielo se vuelve gas y libera polvo, formando una cabeza brillante, la coma, y una larga cola.",
+      "La cola siempre apunta lejos del Sol, empujada por la luz solar y el viento solar, incluso cuando el cometa se aleja."
+     ],
+     "q": "¿Te quedarías despierto hasta tarde para ver un cometa brillante?",
+     "c": "Dibuja un cometa acercándose al Sol y otro alejándose, con la cola apuntando lejos del Sol en ambos."
+    },
+    "fr": {
+     "t": "Les comètes, visiteuses glacées",
+     "g": "Apprends pourquoi des corps glacés développent des queues lumineuses près du Soleil.",
+     "p": [
+      "Une comète est une boule de glace, de poussière et de roche, souvent appelée boule de neige sale, large de quelques kilomètres.",
+      "Près du Soleil, la glace se transforme en gaz et libère de la poussière : une tête brillante, la chevelure, et une longue queue.",
+      "La queue pointe toujours à l'opposé du Soleil, poussée par la lumière et le vent solaire, même quand la comète s'éloigne."
+     ],
+     "q": "Veillerais-tu tard pour tenter de voir une belle comète ?",
+     "c": "Dessine une comète qui approche du Soleil et une qui s'en éloigne, queue à l'opposé du Soleil dans les deux cas."
+    },
+    "it": {
+     "t": "Le comete, visitatrici di ghiaccio",
+     "g": "Scopri perché corpi ghiacciati sviluppano code luminose vicino al Sole.",
+     "p": [
+      "Una cometa è una palla di ghiaccio, polvere e roccia, spesso detta palla di neve sporca, larga solo pochi chilometri.",
+      "Vicino al Sole il ghiaccio diventa gas e libera polvere, formando una testa luminosa, la chioma, e una lunga coda.",
+      "La coda punta sempre lontano dal Sole, spinta dalla luce solare e dal vento solare, anche quando la cometa si allontana."
+     ],
+     "q": "Resteresti sveglio fino a tardi per vedere una cometa luminosa?",
+     "c": "Disegna una cometa che si avvicina al Sole e una che si allontana, con la coda opposta al Sole in entrambi i casi."
+    },
+    "pt": {
+     "t": "Cometas, visitantes gelados",
+     "g": "Aprende porque corpos gelados desenvolvem caudas brilhantes perto do Sol.",
+     "p": [
+      "Um cometa é uma bola de gelo, poeira e rocha, muitas vezes chamada bola de neve suja, com apenas alguns quilómetros de largura.",
+      "Perto do Sol, o gelo transforma-se em gás e liberta poeira, formando uma cabeça brilhante, a coma, e uma longa cauda.",
+      "A cauda aponta sempre para longe do Sol, empurrada pela luz solar e pelo vento solar, mesmo quando o cometa se afasta."
+     ],
+     "q": "Ficarias acordado até tarde para tentares ver um cometa brilhante?",
+     "c": "Desenha um cometa a aproximar-se do Sol e outro a afastar-se, com a cauda a apontar para longe do Sol nos dois."
+    },
+    "pt_BR": {
+     "t": "Cometas, visitantes gelados",
+     "g": "Aprenda por que corpos gelados desenvolvem caudas brilhantes perto do Sol.",
+     "p": [
+      "Um cometa é uma bola de gelo, poeira e rocha, muitas vezes chamada bola de neve suja, com apenas alguns quilômetros de largura.",
+      "Perto do Sol, o gelo vira gás e libera poeira, formando uma cabeça brilhante, a coma, e uma longa cauda.",
+      "A cauda aponta sempre para longe do Sol, empurrada pela luz solar e pelo vento solar, mesmo quando o cometa se afasta."
+     ],
+     "q": "Você ficaria acordado até tarde para tentar ver um cometa brilhante?",
+     "c": "Desenhe um cometa se aproximando do Sol e outro se afastando, com a cauda apontando para longe do Sol nos dois."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shooting stars",
+     "g": "Learn that meteors are tiny grains burning up in our air, not falling stars.",
+     "p": [
+      "A meteor is a streak of light made by a grain of dust or sand burning up about 80 to 100 kilometres above us.",
+      "These grains hit the air at tens of kilometres per second, heating the air around them until it glows.",
+      "Meteors are not real stars: a star is a huge Sun, while most meteoroids are no bigger than a grain of sand."
+     ],
+     "q": "Have you ever made a wish on a shooting star?",
+     "c": "Lie back in the dark for 15 minutes and count the shooting stars you see on a clear night."
+    },
+    "de": {
+     "t": "Sternschnuppen",
+     "g": "Erfahre, dass Meteore winzige Körnchen sind, die in unserer Luft verglühen, keine fallenden Sterne.",
+     "p": [
+      "Ein Meteor ist ein Lichtstreifen von einem Staub- oder Sandkorn, das etwa 80 bis 100 Kilometer über uns verglüht.",
+      "Die Körnchen treffen mit zig Kilometern pro Sekunde auf die Luft und bringen sie zum Leuchten.",
+      "Meteore sind keine echten Sterne: Ein Stern ist eine riesige Sonne, die meisten Meteoroiden sind kaum größer als ein Sandkorn."
+     ],
+     "q": "Hast du dir schon einmal etwas bei einer Sternschnuppe gewünscht?",
+     "c": "Leg dich in einer klaren Nacht 15 Minuten ins Dunkle und zähle die Sternschnuppen, die du siehst."
+    },
+    "es": {
+     "t": "Estrellas fugaces",
+     "g": "Descubre que los meteoros son granitos que se queman en nuestro aire, no estrellas que caen.",
+     "p": [
+      "Un meteoro es un trazo de luz que deja un grano de polvo o arena al quemarse a unos 80 o 100 kilómetros sobre nosotros.",
+      "Estos granos chocan con el aire a decenas de kilómetros por segundo y lo calientan hasta que brilla.",
+      "Los meteoros no son estrellas: una estrella es un Sol enorme y la mayoría de los meteoroides no superan un grano de arena."
+     ],
+     "q": "¿Alguna vez has pedido un deseo a una estrella fugaz?",
+     "c": "Túmbate 15 minutos en la oscuridad en una noche clara y cuenta las estrellas fugaces que veas."
+    },
+    "fr": {
+     "t": "Les étoiles filantes",
+     "g": "Apprends que les météores sont de minuscules grains qui brûlent dans notre air, pas des étoiles qui tombent.",
+     "p": [
+      "Un météore est une traînée de lumière due à un grain de poussière ou de sable qui brûle à 80-100 kilomètres au-dessus de nous.",
+      "Ces grains frappent l'air à des dizaines de kilomètres par seconde et le chauffent jusqu'à ce qu'il brille.",
+      "Les météores ne sont pas des étoiles : une étoile est un Soleil géant, alors que la plupart des météoroïdes valent un grain de sable."
+     ],
+     "q": "As-tu déjà fait un vœu devant une étoile filante ?",
+     "c": "Allonge-toi 15 minutes dans le noir une nuit claire et compte les étoiles filantes que tu vois."
+    },
+    "it": {
+     "t": "Le stelle cadenti",
+     "g": "Scopri che le meteore sono minuscoli granelli che bruciano nella nostra aria, non stelle che cadono.",
+     "p": [
+      "Una meteora è una scia di luce di un granello di polvere o sabbia che brucia a circa 80-100 chilometri sopra di noi.",
+      "Questi granelli colpiscono l'aria a decine di chilometri al secondo e la scaldano fino a farla brillare.",
+      "Le meteore non sono vere stelle: una stella è un enorme Sole, mentre la maggior parte dei meteoroidi è grande come un granello di sabbia."
+     ],
+     "q": "Hai mai espresso un desiderio davanti a una stella cadente?",
+     "c": "Sdraiati 15 minuti al buio in una notte limpida e conta le stelle cadenti che vedi."
+    },
+    "pt": {
+     "t": "Estrelas cadentes",
+     "g": "Descobre que os meteoros são grãos minúsculos que ardem no nosso ar, não estrelas a cair.",
+     "p": [
+      "Um meteoro é um traço de luz de um grão de poeira ou areia que arde a cerca de 80 a 100 quilómetros acima de nós.",
+      "Estes grãos batem no ar a dezenas de quilómetros por segundo e aquecem-no até brilhar.",
+      "Os meteoros não são estrelas: uma estrela é um Sol enorme, enquanto a maioria dos meteoroides não passa de um grão de areia."
+     ],
+     "q": "Alguma vez pediste um desejo a uma estrela cadente?",
+     "c": "Deita-te 15 minutos no escuro numa noite limpa e conta as estrelas cadentes que vires."
+    },
+    "pt_BR": {
+     "t": "Estrelas cadentes",
+     "g": "Descubra que os meteoros são grãos minúsculos que queimam no nosso ar, não estrelas caindo.",
+     "p": [
+      "Um meteoro é um traço de luz de um grão de poeira ou areia que queima a cerca de 80 a 100 quilômetros acima de nós.",
+      "Esses grãos batem no ar a dezenas de quilômetros por segundo e o aquecem até brilhar.",
+      "Meteoros não são estrelas: uma estrela é um Sol enorme, enquanto a maioria dos meteoroides não passa de um grão de areia."
+     ],
+     "q": "Você já fez um pedido a uma estrela cadente?",
+     "c": "Deite-se 15 minutos no escuro numa noite limpa e conte as estrelas cadentes que você ver."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meteor showers",
+     "g": "See why Earth meets streams of comet dust at the same time each year.",
+     "p": [
+      "Comets leave trails of dust along their orbits; when Earth crosses a trail, many meteors streak across the sky.",
+      "Meteors seem to spread from a point called the radiant; showers are named after its constellation, like the Perseids.",
+      "Showers happen around the same dates each year, and the best viewing is after midnight away from city lights."
+     ],
+     "q": "Do you remember a night when you watched the sky with someone?",
+     "c": "Look up the name of one yearly shower and write which month it usually peaks in."
+    },
+    "de": {
+     "t": "Meteorströme",
+     "g": "Sieh, warum die Erde jedes Jahr zur gleichen Zeit auf Ströme von Kometenstaub trifft.",
+     "p": [
+      "Kometen hinterlassen Staubspuren auf ihrer Bahn; durchquert die Erde eine Spur, ziehen viele Meteore über den Himmel.",
+      "Die Meteore scheinen von einem Punkt, dem Radianten, auszugehen; der Strom heißt nach seinem Sternbild, etwa Perseiden und Geminiden.",
+      "Die Ströme treten jedes Jahr um dieselben Daten auf, und die beste Sicht ist nach Mitternacht fern von Stadtlicht."
+     ],
+     "q": "Erinnerst du dich an eine Nacht, in der du mit jemandem den Himmel beobachtet hast?",
+     "c": "Suche den Namen eines jährlichen Stroms heraus und notiere, in welchem Monat er meist sein Maximum hat."
+    },
+    "es": {
+     "t": "Lluvias de meteoros",
+     "g": "Descubre por qué la Tierra cruza corrientes de polvo de cometa cada año por las mismas fechas.",
+     "p": [
+      "Los cometas dejan estelas de polvo en su órbita; cuando la Tierra cruza una, muchos meteoros surcan el cielo.",
+      "Los meteoros parecen salir de un punto, el radiante, y la lluvia se nombra por su constelación, como las Perseidas y las Gemínidas.",
+      "Las lluvias se repiten por las mismas fechas cada año y se ven mejor pasada la medianoche, lejos de las luces de la ciudad."
+     ],
+     "q": "¿Recuerdas alguna noche en que miraste el cielo con alguien?",
+     "c": "Busca el nombre de una lluvia anual y anota en qué mes suele alcanzar su máximo."
+    },
+    "fr": {
+     "t": "Les pluies de météores",
+     "g": "Vois pourquoi la Terre croise chaque année, aux mêmes dates, des flux de poussière de comète.",
+     "p": [
+      "Les comètes laissent des traînées de poussière sur leur orbite ; quand la Terre en traverse une, de nombreux météores filent dans le ciel.",
+      "Les météores semblent jaillir d'un point, le radiant, et l'essaim porte le nom de sa constellation : Perséides, Géminides...",
+      "Les essaims reviennent aux mêmes dates chaque année, et se voient mieux après minuit, loin des lumières de la ville."
+     ],
+     "q": "Te souviens-tu d'une nuit où tu as observé le ciel avec quelqu'un ?",
+     "c": "Cherche le nom d'un essaim annuel et note le mois où il atteint généralement son maximum."
+    },
+    "it": {
+     "t": "Gli sciami meteorici",
+     "g": "Scopri perché ogni anno la Terra incontra flussi di polvere di cometa alle stesse date.",
+     "p": [
+      "Le comete lasciano scie di polvere lungo l'orbita; quando la Terra ne attraversa una, molte meteore solcano il cielo.",
+      "Le meteore sembrano partire da un punto, il radiante, e lo sciame prende il nome dalla sua costellazione, come Perseidi e Geminidi.",
+      "Gli sciami tornano alle stesse date ogni anno e si vedono meglio dopo mezzanotte, lontano dalle luci cittadine."
+     ],
+     "q": "Ricordi una notte in cui hai osservato il cielo con qualcuno?",
+     "c": "Cerca il nome di uno sciame annuale e annota in quale mese di solito raggiunge il massimo."
+    },
+    "pt": {
+     "t": "Chuvas de meteoros",
+     "g": "Vê porque a Terra cruza correntes de poeira de cometa nas mesmas datas todos os anos.",
+     "p": [
+      "Os cometas deixam rastos de poeira na sua órbita; quando a Terra atravessa um, muitos meteoros riscam o céu.",
+      "Os meteoros parecem sair de um ponto, o radiante, e a chuva leva o nome da sua constelação, como as Perseidas e as Gemínidas.",
+      "As chuvas repetem-se nas mesmas datas todos os anos e veem-se melhor depois da meia-noite, longe das luzes da cidade."
+     ],
+     "q": "Lembras-te de uma noite em que observaste o céu com alguém?",
+     "c": "Procura o nome de uma chuva anual e regista em que mês costuma atingir o máximo."
+    },
+    "pt_BR": {
+     "t": "Chuvas de meteoros",
+     "g": "Veja por que a Terra cruza correntes de poeira de cometa nas mesmas datas todo ano.",
+     "p": [
+      "Os cometas deixam rastros de poeira na órbita; quando a Terra atravessa um, muitos meteoros riscam o céu.",
+      "Os meteoros parecem sair de um ponto, o radiante, e a chuva leva o nome da constelação, como as Perseidas e as Geminidas.",
+      "As chuvas se repetem nas mesmas datas todo ano e são vistas melhor depois da meia-noite, longe das luzes da cidade."
+     ],
+     "q": "Você se lembra de uma noite em que observou o céu com alguém?",
+     "c": "Pesquise o nome de uma chuva anual e anote em que mês ela costuma atingir o máximo."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meteorites you can touch",
+     "g": "Learn about space rocks that reach the ground and the stories they tell.",
+     "p": [
+      "A meteorite is a piece of space rock that survives the fall and lands on Earth; most come from asteroids.",
+      "Some are stony, and some are mostly iron and nickel, which makes them heavy and attracted to a magnet.",
+      "Meteorites are about 4.5 billion years old, so they are among the oldest materials we can hold."
+     ],
+     "q": "If you could hold one piece of space, what would you hope it looked like?",
+     "c": "Visit a museum or search images online and compare a stony and an iron meteorite."
+    },
+    "de": {
+     "t": "Meteoriten zum Anfassen",
+     "g": "Erfahre von Weltraumgestein, das den Boden erreicht, und den Geschichten, die es erzählt.",
+     "p": [
+      "Ein Meteorit ist ein Stück Weltraumgestein, das den Fall überlebt und auf der Erde landet; die meisten stammen von Asteroiden.",
+      "Manche sind steinig, andere bestehen fast nur aus Eisen und Nickel, sind schwer und werden von einem Magneten angezogen.",
+      "Meteoriten sind etwa 4,5 Milliarden Jahre alt und gehören zu den ältesten Materialien, die wir in der Hand halten können."
+     ],
+     "q": "Wenn du ein Stück Weltraum halten könntest, wie sollte es aussehen?",
+     "c": "Besuche ein Museum oder suche Bilder online und vergleiche einen Steinmeteoriten mit einem Eisenmeteoriten."
+    },
+    "es": {
+     "t": "Meteoritos que puedes tocar",
+     "g": "Conoce las rocas espaciales que llegan al suelo y las historias que cuentan.",
+     "p": [
+      "Un meteorito es un trozo de roca espacial que sobrevive a la caída y llega a la Tierra; la mayoría viene de asteroides.",
+      "Unos son rocosos y otros son sobre todo hierro y níquel, por lo que pesan mucho y un imán los atrae.",
+      "Los meteoritos tienen unos 4500 millones de años, así que son de los materiales más antiguos que podemos sostener."
+     ],
+     "q": "Si pudieras sostener un trozo del espacio, ¿cómo te gustaría que fuese?",
+     "c": "Visita un museo o busca imágenes en línea y compara un meteorito rocoso con uno de hierro."
+    },
+    "fr": {
+     "t": "Des météorites à toucher",
+     "g": "Découvre ces roches de l'espace qui atteignent le sol et les histoires qu'elles racontent.",
+     "p": [
+      "Une météorite est un morceau de roche spatiale qui survit à la chute et atteint la Terre ; la plupart viennent d'astéroïdes.",
+      "Certaines sont rocheuses, d'autres surtout faites de fer et de nickel : elles sont lourdes et attirées par un aimant.",
+      "Les météorites ont environ 4,5 milliards d'années : ce sont parmi les plus anciens matériaux que l'on puisse tenir."
+     ],
+     "q": "Si tu pouvais tenir un morceau d'espace, à quoi aimerais-tu qu'il ressemble ?",
+     "c": "Visite un musée ou cherche des images en ligne et compare une météorite rocheuse et une météorite de fer."
+    },
+    "it": {
+     "t": "Meteoriti da toccare",
+     "g": "Scopri le rocce spaziali che raggiungono il suolo e le storie che raccontano.",
+     "p": [
+      "Una meteorite è un frammento di roccia spaziale che sopravvive alla caduta e arriva sulla Terra; la maggior parte viene dagli asteroidi.",
+      "Alcune sono rocciose, altre soprattutto di ferro e nichel, quindi pesanti e attratte da una calamita.",
+      "Le meteoriti hanno circa 4,5 miliardi di anni: sono tra i materiali più antichi che possiamo tenere in mano."
+     ],
+     "q": "Se potessi tenere in mano un pezzo di spazio, come vorresti che fosse?",
+     "c": "Visita un museo o cerca immagini online e confronta una meteorite rocciosa con una di ferro."
+    },
+    "pt": {
+     "t": "Meteoritos que podes tocar",
+     "g": "Conhece as rochas espaciais que chegam ao chão e as histórias que contam.",
+     "p": [
+      "Um meteorito é um pedaço de rocha espacial que sobrevive à queda e chega à Terra; a maioria vem de asteroides.",
+      "Uns são rochosos e outros são sobretudo ferro e níquel, por isso pesam muito e são atraídos por um íman.",
+      "Os meteoritos têm cerca de 4,5 mil milhões de anos, por isso estão entre os materiais mais antigos que podemos segurar."
+     ],
+     "q": "Se pudesses segurar um pedaço do espaço, como gostarias que fosse?",
+     "c": "Visita um museu ou procura imagens online e compara um meteorito rochoso com um de ferro."
+    },
+    "pt_BR": {
+     "t": "Meteoritos que você pode tocar",
+     "g": "Conheça as rochas espaciais que chegam ao chão e as histórias que elas contam.",
+     "p": [
+      "Um meteorito é um pedaço de rocha espacial que sobrevive à queda e chega à Terra; a maioria vem de asteroides.",
+      "Alguns são rochosos e outros são sobretudo ferro e níquel, por isso pesam muito e são atraídos por um ímã.",
+      "Os meteoritos têm cerca de 4,5 bilhões de anos, então estão entre os materiais mais antigos que podemos segurar."
+     ],
+     "q": "Se você pudesse segurar um pedaço do espaço, como gostaria que fosse?",
+     "c": "Visite um museu ou procure imagens online e compare um meteorito rochoso com um de ferro."
+    }
+   }
+  }
+ ]
+}

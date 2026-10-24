@@ -1,0 +1,835 @@
+{
+ "topic": "negotiation",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Body language basics",
+     "g": "Use open posture, eye contact and relaxed hands as signals of confidence.",
+     "p": [
+      "Open posture and uncrossed arms feel welcoming.",
+      "Steady, friendly eye contact shows you are engaged.",
+      "Eye contact norms differ across cultures, so watch and adapt."
+     ],
+     "q": "What body language makes you trust someone quickly?",
+     "c": "Notice your posture in your next conversation and relax your shoulders."
+    },
+    "de": {
+     "t": "Grundlagen der Körpersprache",
+     "g": "Nutze offene Haltung, Blickkontakt und lockere Hände als Zeichen von Sicherheit.",
+     "p": [
+      "Offene Haltung und nicht verschränkte Arme wirken einladend.",
+      "Ruhiger, freundlicher Blickkontakt zeigt, dass du dabei bist.",
+      "Blickkontakt wird in Kulturen verschieden gesehen, also beobachte und passe dich an."
+     ],
+     "q": "Welche Körpersprache lässt dich jemandem schnell vertrauen?",
+     "c": "Achte im nächsten Gespräch auf deine Haltung und entspanne die Schultern."
+    },
+    "es": {
+     "t": "Lo básico del lenguaje corporal",
+     "g": "Usa postura abierta, contacto visual y manos relajadas como señales de seguridad.",
+     "p": [
+      "Una postura abierta y los brazos sin cruzar resultan acogedores.",
+      "Un contacto visual tranquilo y amable muestra que estás atento.",
+      "Las normas del contacto visual varían entre culturas: observa y adáptate."
+     ],
+     "q": "¿Qué lenguaje corporal te hace confiar rápido en alguien?",
+     "c": "Fíjate en tu postura en tu próxima conversación y relaja los hombros."
+    },
+    "fr": {
+     "t": "Bases du langage corporel",
+     "g": "Utilise posture ouverte, regard et mains détendues comme signes d'assurance.",
+     "p": [
+      "Une posture ouverte et des bras décroisés paraissent accueillants.",
+      "Un regard calme et amical montre que tu es présent.",
+      "Les usages du regard varient selon les cultures : observe et adapte-toi."
+     ],
+     "q": "Quel langage corporel te fait vite faire confiance à quelqu'un ?",
+     "c": "Dans ta prochaine conversation, observe ta posture et détends les épaules."
+    },
+    "it": {
+     "t": "Basi del linguaggio del corpo",
+     "g": "Usa postura aperta, contatto visivo e mani rilassate come segnali di sicurezza.",
+     "p": [
+      "Una postura aperta e le braccia non incrociate risultano accoglienti.",
+      "Un contatto visivo calmo e amichevole mostra che sei presente.",
+      "Le norme sul contatto visivo cambiano tra culture: osserva e adattati."
+     ],
+     "q": "Quale linguaggio del corpo ti fa fidare presto di qualcuno?",
+     "c": "Nella prossima conversazione nota la tua postura e rilassa le spalle."
+    },
+    "pt": {
+     "t": "Noções de linguagem corporal",
+     "g": "Usa postura aberta, contacto visual e mãos relaxadas como sinais de confiança.",
+     "p": [
+      "Uma postura aberta e braços descruzados parecem acolhedores.",
+      "Um contacto visual calmo e simpático mostra que estás atento.",
+      "As normas do contacto visual variam entre culturas: observa e adapta-te."
+     ],
+     "q": "Que linguagem corporal te faz confiar depressa em alguém?",
+     "c": "Na próxima conversa, repara na tua postura e relaxa os ombros."
+    },
+    "pt_BR": {
+     "t": "Noções de linguagem corporal",
+     "g": "Use postura aberta, contato visual e mãos relaxadas como sinais de confiança.",
+     "p": [
+      "Postura aberta e braços descruzados parecem acolhedores.",
+      "Um contato visual calmo e simpático mostra que você está atento.",
+      "As normas de contato visual variam entre culturas: observe e se adapte."
+     ],
+     "q": "Que linguagem corporal faz você confiar rápido em alguém?",
+     "c": "Na próxima conversa, perceba sua postura e relaxe os ombros."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "First impressions",
+     "g": "See how the first minutes set the mood for the whole conversation.",
+     "p": [
+      "People form a view of you very quickly.",
+      "A greeting, a smile and a clear purpose help a lot.",
+      "Start with warmth, then move to business."
+     ],
+     "q": "What first impression do you want to leave in your next talk?",
+     "c": "Prepare a warm 10-second opening for one conversation."
+    },
+    "de": {
+     "t": "Erste Eindrücke",
+     "g": "Sieh, wie die ersten Minuten die Stimmung des ganzen Gesprächs prägen.",
+     "p": [
+      "Menschen bilden sich sehr schnell ein Bild von dir.",
+      "Ein Gruß, ein Lächeln und ein klarer Zweck helfen sehr.",
+      "Beginne mit Wärme, dann komm zur Sache."
+     ],
+     "q": "Welchen ersten Eindruck willst du im nächsten Gespräch hinterlassen?",
+     "c": "Bereite eine herzliche Eröffnung von zehn Sekunden für ein Gespräch vor."
+    },
+    "es": {
+     "t": "Primeras impresiones",
+     "g": "Descubre cómo los primeros minutos marcan el ambiente de toda la conversación.",
+     "p": [
+      "La gente se forma una idea de ti muy rápido.",
+      "Un saludo, una sonrisa y un propósito claro ayudan mucho.",
+      "Empieza con calidez y luego pasa al asunto."
+     ],
+     "q": "¿Qué primera impresión quieres dar en tu próxima charla?",
+     "c": "Prepara una apertura cálida de diez segundos para una conversación."
+    },
+    "fr": {
+     "t": "Premières impressions",
+     "g": "Vois comment les premières minutes donnent le ton de toute la conversation.",
+     "p": [
+      "Les gens se font très vite une idée de toi.",
+      "Un salut, un sourire et un but clair aident beaucoup.",
+      "Commence par la chaleur, puis passe aux affaires."
+     ],
+     "q": "Quelle première impression veux-tu laisser lors de ta prochaine discussion ?",
+     "c": "Prépare une ouverture chaleureuse de dix secondes pour une conversation."
+    },
+    "it": {
+     "t": "Prime impressioni",
+     "g": "Scopri come i primi minuti fissano il clima di tutta la conversazione.",
+     "p": [
+      "Le persone si fanno un'idea di te molto in fretta.",
+      "Un saluto, un sorriso e uno scopo chiaro aiutano molto.",
+      "Parti con calore, poi passa agli affari."
+     ],
+     "q": "Che prima impressione vuoi lasciare nella prossima conversazione?",
+     "c": "Prepara un'apertura calda di dieci secondi per una conversazione."
+    },
+    "pt": {
+     "t": "Primeiras impressões",
+     "g": "Vê como os primeiros minutos definem o ambiente de toda a conversa.",
+     "p": [
+      "As pessoas formam uma ideia de ti muito depressa.",
+      "Um cumprimento, um sorriso e um objetivo claro ajudam muito.",
+      "Começa com simpatia e depois passa ao assunto."
+     ],
+     "q": "Que primeira impressão queres deixar na próxima conversa?",
+     "c": "Prepara uma abertura calorosa de dez segundos para uma conversa."
+    },
+    "pt_BR": {
+     "t": "Primeiras impressões",
+     "g": "Veja como os primeiros minutos definem o clima de toda a conversa.",
+     "p": [
+      "As pessoas formam uma ideia de você muito rápido.",
+      "Um cumprimento, um sorriso e um objetivo claro ajudam muito.",
+      "Comece com simpatia e depois vá ao assunto."
+     ],
+     "q": "Que primeira impressão você quer deixar na próxima conversa?",
+     "c": "Prepare uma abertura calorosa de dez segundos para uma conversa."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Practising a polite ask",
+     "g": "Make a clear, friendly request without apologising too much.",
+     "p": [
+      "State what you want in one clear sentence.",
+      "Add a short reason and invite a response.",
+      "Skip long apologies; they weaken a fair request."
+     ],
+     "q": "What is one request you have been putting off?",
+     "c": "Make one clear, polite request today using one sentence plus a reason."
+    },
+    "de": {
+     "t": "Eine höfliche Bitte üben",
+     "g": "Formuliere eine klare, freundliche Bitte ohne zu viel Entschuldigung.",
+     "p": [
+      "Sag in einem klaren Satz, was du möchtest.",
+      "Füge einen kurzen Grund hinzu und lade zur Antwort ein.",
+      "Verzichte auf lange Entschuldigungen; sie schwächen eine faire Bitte."
+     ],
+     "q": "Welche Bitte schiebst du schon länger vor dir her?",
+     "c": "Äußere heute eine klare, höfliche Bitte mit einem Satz plus Grund."
+    },
+    "es": {
+     "t": "Practicar una petición cortés",
+     "g": "Haz una petición clara y amable sin disculparte demasiado.",
+     "p": [
+      "Di lo que quieres en una frase clara.",
+      "Añade una razón breve e invita a responder.",
+      "Evita disculpas largas; debilitan una petición justa."
+     ],
+     "q": "¿Qué petición llevas tiempo posponiendo?",
+     "c": "Haz hoy una petición clara y cortés con una frase más un motivo."
+    },
+    "fr": {
+     "t": "S'entraîner à demander poliment",
+     "g": "Fais une demande claire et aimable sans trop t'excuser.",
+     "p": [
+      "Dis ce que tu veux en une phrase claire.",
+      "Ajoute une courte raison et invite à répondre.",
+      "Évite les longues excuses : elles affaiblissent une demande juste."
+     ],
+     "q": "Quelle demande repousses-tu depuis un moment ?",
+     "c": "Fais aujourd'hui une demande claire et polie : une phrase plus une raison."
+    },
+    "it": {
+     "t": "Esercitarsi in una richiesta cortese",
+     "g": "Fai una richiesta chiara e gentile senza scusarti troppo.",
+     "p": [
+      "Di' ciò che vuoi in una frase chiara.",
+      "Aggiungi un breve motivo e invita a rispondere.",
+      "Evita scuse lunghe: indeboliscono una richiesta giusta."
+     ],
+     "q": "Quale richiesta rimandi da un po'?",
+     "c": "Fai oggi una richiesta chiara e cortese: una frase più un motivo."
+    },
+    "pt": {
+     "t": "Praticar um pedido educado",
+     "g": "Faz um pedido claro e simpático sem pedir demasiadas desculpas.",
+     "p": [
+      "Diz o que queres numa frase clara.",
+      "Acrescenta uma razão breve e convida a responder.",
+      "Evita desculpas longas; enfraquecem um pedido justo."
+     ],
+     "q": "Que pedido andas a adiar?",
+     "c": "Faz hoje um pedido claro e educado com uma frase mais um motivo."
+    },
+    "pt_BR": {
+     "t": "Praticando um pedido educado",
+     "g": "Faça um pedido claro e simpático sem se desculpar demais.",
+     "p": [
+      "Diga o que você quer em uma frase clara.",
+      "Acrescente um motivo breve e convide a pessoa a responder.",
+      "Evite desculpas longas; elas enfraquecem um pedido justo."
+     ],
+     "q": "Que pedido você anda adiando?",
+     "c": "Faça hoje um pedido claro e educado com uma frase mais um motivo."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Saying no gracefully",
+     "g": "Decline an offer while keeping the relationship warm.",
+     "p": [
+      "Thank them first, then say no clearly.",
+      "Offer a reason or an alternative if you can.",
+      "A kind, firm no protects both the deal and the friendship."
+     ],
+     "q": "When was it hard for you to say no? What helped?",
+     "c": "Practise saying a warm no to one small request today."
+    },
+    "de": {
+     "t": "Freundlich nein sagen",
+     "g": "Lehne ein Angebot ab und halte die Beziehung warm.",
+     "p": [
+      "Bedanke dich zuerst, dann sag klar nein.",
+      "Nenne einen Grund oder eine Alternative, wenn du kannst.",
+      "Ein freundliches, festes Nein schützt Abschluss und Freundschaft."
+     ],
+     "q": "Wann fiel es dir schwer, nein zu sagen? Was hat geholfen?",
+     "c": "Übe heute, zu einer kleinen Bitte herzlich nein zu sagen."
+    },
+    "es": {
+     "t": "Decir no con elegancia",
+     "g": "Rechaza una oferta manteniendo cálida la relación.",
+     "p": [
+      "Da las gracias primero y luego di no con claridad.",
+      "Ofrece una razón o una alternativa si puedes.",
+      "Un no amable y firme protege el trato y la amistad."
+     ],
+     "q": "¿Cuándo te costó decir que no? ¿Qué te ayudó?",
+     "c": "Practica hoy un no cordial ante una petición pequeña."
+    },
+    "fr": {
+     "t": "Dire non avec grâce",
+     "g": "Décline une offre en gardant une relation chaleureuse.",
+     "p": [
+      "Remercie d'abord, puis dis non clairement.",
+      "Donne une raison ou une alternative si tu peux.",
+      "Un non aimable et ferme protège l'accord et l'amitié."
+     ],
+     "q": "Quand t'a-t-il été difficile de dire non ? Qu'est-ce qui a aidé ?",
+     "c": "Entraîne-toi aujourd'hui à dire un non chaleureux à une petite demande."
+    },
+    "it": {
+     "t": "Dire no con garbo",
+     "g": "Declina un'offerta mantenendo calda la relazione.",
+     "p": [
+      "Ringrazia prima, poi di' no con chiarezza.",
+      "Offri un motivo o un'alternativa, se puoi.",
+      "Un no gentile e fermo protegge l'accordo e l'amicizia."
+     ],
+     "q": "Quando ti è stato difficile dire no? Cosa ti ha aiutato?",
+     "c": "Oggi esercitati a dire un no cordiale a una piccola richiesta."
+    },
+    "pt": {
+     "t": "Dizer não com elegância",
+     "g": "Recusa uma oferta mantendo a relação calorosa.",
+     "p": [
+      "Agradece primeiro e depois diz não com clareza.",
+      "Dá uma razão ou uma alternativa, se puderes.",
+      "Um não simpático e firme protege o acordo e a amizade."
+     ],
+     "q": "Quando foi difícil dizer não? O que te ajudou?",
+     "c": "Hoje pratica um não caloroso a um pedido pequeno."
+    },
+    "pt_BR": {
+     "t": "Dizendo não com elegância",
+     "g": "Recuse uma oferta mantendo o relacionamento caloroso.",
+     "p": [
+      "Agradeça primeiro e depois diga não com clareza.",
+      "Dê uma razão ou uma alternativa, se puder.",
+      "Um não simpático e firme protege o acordo e a amizade."
+     ],
+     "q": "Quando foi difícil dizer não? O que ajudou?",
+     "c": "Hoje pratique um não caloroso a um pedido pequeno."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hearing no without panic",
+     "g": "Treat a no as the start of a conversation rather than the end.",
+     "p": [
+      "A no often means not like this, not yet or not now.",
+      "Ask: What would make this work for you?",
+      "Stay calm; pressure usually hardens a no."
+     ],
+     "q": "How do you usually feel after hearing a no?",
+     "c": "Ask one follow-up question the next time someone says no to you."
+    },
+    "de": {
+     "t": "Ein Nein ohne Panik hören",
+     "g": "Sieh ein Nein als Beginn eines Gesprächs, nicht als Ende.",
+     "p": [
+      "Ein Nein heißt oft: nicht so, noch nicht oder nicht jetzt.",
+      "Frage: Was würde es für dich passend machen?",
+      "Bleib ruhig; Druck verhärtet ein Nein meist."
+     ],
+     "q": "Wie fühlst du dich meistens nach einem Nein?",
+     "c": "Stelle bei einem Nein das nächste Mal eine Nachfrage."
+    },
+    "es": {
+     "t": "Oír un no sin pánico",
+     "g": "Trata un no como el inicio de una conversación, no como el final.",
+     "p": [
+      "Un no suele significar así no, aún no o ahora no.",
+      "Pregunta: ¿Qué haría que esto te funcionara?",
+      "Mantén la calma; la presión suele endurecer un no."
+     ],
+     "q": "¿Cómo te sientes normalmente tras oír un no?",
+     "c": "La próxima vez que te digan no, haz una pregunta de seguimiento."
+    },
+    "fr": {
+     "t": "Entendre non sans paniquer",
+     "g": "Vois un non comme le début d'une conversation, pas la fin.",
+     "p": [
+      "Un non veut souvent dire pas comme ça, pas encore ou pas maintenant.",
+      "Demande : Qu'est-ce qui rendrait cela acceptable pour toi ?",
+      "Reste calme : la pression durcit souvent un non."
+     ],
+     "q": "Comment te sens-tu d'habitude après un non ?",
+     "c": "La prochaine fois qu'on te dit non, pose une question de suivi."
+    },
+    "it": {
+     "t": "Sentire un no senza panico",
+     "g": "Considera un no l'inizio di una conversazione, non la fine.",
+     "p": [
+      "Un no spesso significa così no, non ancora o non ora.",
+      "Chiedi: Cosa renderebbe questo accettabile per te?",
+      "Resta calmo: la pressione di solito irrigidisce un no."
+     ],
+     "q": "Come ti senti di solito dopo un no?",
+     "c": "La prossima volta che ti dicono no, fai una domanda di approfondimento."
+    },
+    "pt": {
+     "t": "Ouvir um não sem pânico",
+     "g": "Trata um não como o início de uma conversa, não o fim.",
+     "p": [
+      "Um não muitas vezes significa assim não, ainda não ou agora não.",
+      "Pergunta: O que tornaria isto aceitável para ti?",
+      "Mantém a calma; a pressão costuma endurecer um não."
+     ],
+     "q": "Como te sentes normalmente depois de ouvir um não?",
+     "c": "Da próxima vez que te disserem não, faz uma pergunta de seguimento."
+    },
+    "pt_BR": {
+     "t": "Ouvindo um não sem pânico",
+     "g": "Trate um não como o começo de uma conversa, não o fim.",
+     "p": [
+      "Um não muitas vezes significa assim não, ainda não ou agora não.",
+      "Pergunte: O que tornaria isso aceitável para você?",
+      "Mantenha a calma; pressão costuma endurecer um não."
+     ],
+     "q": "Como você costuma se sentir depois de ouvir um não?",
+     "c": "Da próxima vez que ouvir não, faça uma pergunta de seguimento."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday haggling at markets",
+     "g": "Try friendly bargaining at a stall with a smile and a fair counteroffer.",
+     "p": [
+      "Show real interest in the item and the seller first.",
+      "Make a polite counteroffer, not a shocking one.",
+      "Be ready to thank them and walk away kindly."
+     ],
+     "q": "Have you ever bargained at a market? How did it go?",
+     "c": "If bargaining is normal where you are, practise one friendly counteroffer."
+    },
+    "de": {
+     "t": "Alltägliches Feilschen auf Märkten",
+     "g": "Probiere freundliches Handeln am Stand mit Lächeln und fairem Gegenangebot.",
+     "p": [
+      "Zeige erst echtes Interesse an der Ware und am Verkäufer.",
+      "Mache ein höfliches Gegenangebot, keinen Schock.",
+      "Sei bereit, dich zu bedanken und freundlich zu gehen."
+     ],
+     "q": "Hast du schon einmal auf einem Markt gehandelt? Wie lief es?",
+     "c": "Wo Handeln üblich ist, übe ein freundliches Gegenangebot."
+    },
+    "es": {
+     "t": "Regatear en el mercado",
+     "g": "Prueba el regateo amable en un puesto con sonrisa y una contraoferta justa.",
+     "p": [
+      "Muestra interés real por el producto y por el vendedor primero.",
+      "Haz una contraoferta educada, no una que asuste.",
+      "Prepárate para dar las gracias y marcharte con amabilidad."
+     ],
+     "q": "¿Has regateado alguna vez en un mercado? ¿Cómo fue?",
+     "c": "Si regatear es normal donde estás, practica una contraoferta amable."
+    },
+    "fr": {
+     "t": "Marchander au marché",
+     "g": "Essaie le marchandage amical à un étal, avec un sourire et une contre-offre juste.",
+     "p": [
+      "Montre d'abord un vrai intérêt pour l'objet et le vendeur.",
+      "Fais une contre-offre polie, pas une offre choquante.",
+      "Sois prêt à remercier et à partir aimablement."
+     ],
+     "q": "As-tu déjà marchandé sur un marché ? Comment cela s'est-il passé ?",
+     "c": "Si marchander est normal chez toi, essaie une contre-offre amicale."
+    },
+    "it": {
+     "t": "Contrattare al mercato",
+     "g": "Prova una contrattazione amichevole a una bancarella con un sorriso e una controfferta equa.",
+     "p": [
+      "Mostra prima un interesse vero per l'oggetto e per il venditore.",
+      "Fai una controfferta cortese, non una che spaventi.",
+      "Sii pronto a ringraziare e ad andartene con gentilezza."
+     ],
+     "q": "Hai mai contrattato in un mercato? Com'è andata?",
+     "c": "Se contrattare è normale dove vivi, prova una controfferta amichevole."
+    },
+    "pt": {
+     "t": "Regatear no mercado",
+     "g": "Experimenta um regateio simpático numa banca, com sorriso e contraproposta justa.",
+     "p": [
+      "Mostra primeiro interesse real pelo artigo e pelo vendedor.",
+      "Faz uma contraproposta educada, não uma que assuste.",
+      "Prepara-te para agradecer e sair com simpatia."
+     ],
+     "q": "Já regateaste num mercado? Como correu?",
+     "c": "Se regatear for normal onde estás, pratica uma contraproposta simpática."
+    },
+    "pt_BR": {
+     "t": "Pechinchando na feira",
+     "g": "Experimente uma pechincha simpática na banca, com sorriso e contraproposta justa.",
+     "p": [
+      "Mostre primeiro interesse de verdade pelo produto e pelo vendedor.",
+      "Faça uma contraproposta educada, não uma que assuste.",
+      "Esteja pronto para agradecer e ir embora com simpatia."
+     ],
+     "q": "Você já pechinchou numa feira? Como foi?",
+     "c": "Se pechinchar é normal onde você está, pratique uma contraproposta simpática."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "When haggling is not expected",
+     "g": "Recognise places and cultures where fixed prices are the norm.",
+     "p": [
+      "In many shops and countries, the price tag is final.",
+      "Haggling there can feel rude, so observe first.",
+      "You can still ask politely about bundles or small perks."
+     ],
+     "q": "Where do you live, and is haggling normal there?",
+     "c": "Observe how locals handle prices in one shop today."
+    },
+    "de": {
+     "t": "Wenn Feilschen nicht üblich ist",
+     "g": "Erkenne Orte und Kulturen, in denen Festpreise die Regel sind.",
+     "p": [
+      "In vielen Läden und Ländern ist der Preis endgültig.",
+      "Handeln wirkt dort unhöflich, also beobachte zuerst.",
+      "Du kannst trotzdem höflich nach Paketen oder kleinen Extras fragen."
+     ],
+     "q": "Wo lebst du, und ist Handeln dort üblich?",
+     "c": "Beobachte heute in einem Laden, wie Einheimische mit Preisen umgehen."
+    },
+    "es": {
+     "t": "Cuando no se espera regatear",
+     "g": "Reconoce lugares y culturas donde los precios fijos son lo normal.",
+     "p": [
+      "En muchas tiendas y países, el precio de la etiqueta es definitivo.",
+      "Regatear allí puede parecer grosero, así que observa primero.",
+      "Aun así puedes preguntar con educación por paquetes o pequeños extras."
+     ],
+     "q": "¿Dónde vives y es normal regatear allí?",
+     "c": "Observa hoy cómo manejan los precios los locales en una tienda."
+    },
+    "fr": {
+     "t": "Quand marchander n'est pas attendu",
+     "g": "Reconnais les lieux et cultures où les prix fixes sont la norme.",
+     "p": [
+      "Dans bien des magasins et pays, le prix affiché est définitif.",
+      "Marchander peut y paraître impoli : observe d'abord.",
+      "Tu peux tout de même demander poliment un lot ou un petit plus."
+     ],
+     "q": "Où habites-tu, et marchande-t-on là-bas ?",
+     "c": "Observe aujourd'hui comment les locaux traitent les prix dans un magasin."
+    },
+    "it": {
+     "t": "Quando contrattare non è previsto",
+     "g": "Riconosci luoghi e culture in cui i prezzi fissi sono la norma.",
+     "p": [
+      "In molti negozi e paesi il cartellino è definitivo.",
+      "Contrattare lì può sembrare scortese, quindi osserva prima.",
+      "Puoi comunque chiedere con garbo pacchetti o piccoli extra."
+     ],
+     "q": "Dove vivi e lì è normale contrattare?",
+     "c": "Oggi osserva come i locali trattano i prezzi in un negozio."
+    },
+    "pt": {
+     "t": "Quando regatear não é esperado",
+     "g": "Reconhece lugares e culturas onde os preços fixos são a norma.",
+     "p": [
+      "Em muitas lojas e países, o preço da etiqueta é final.",
+      "Regatear aí pode parecer mal-educado, por isso observa primeiro.",
+      "Podes na mesma perguntar com educação por pacotes ou pequenos extras."
+     ],
+     "q": "Onde vives e é normal regatear aí?",
+     "c": "Hoje observa como os locais lidam com preços numa loja."
+    },
+    "pt_BR": {
+     "t": "Quando pechinchar não é esperado",
+     "g": "Reconheça lugares e culturas onde preço fixo é a norma.",
+     "p": [
+      "Em muitas lojas e países, o preço da etiqueta é final.",
+      "Pechinchar ali pode parecer indelicado, então observe primeiro.",
+      "Você ainda pode perguntar com educação sobre combos ou pequenos extras."
+     ],
+     "q": "Onde você mora e é normal pechinchar lá?",
+     "c": "Hoje observe como os locais lidam com preços numa loja."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Negotiating plans with friends",
+     "g": "Choose a restaurant or trip together so everyone feels heard.",
+     "p": [
+      "Ask each person for their top wish and a dealbreaker.",
+      "Look for options that satisfy the main wishes.",
+      "Take turns so no one always gives in."
+     ],
+     "q": "How does your group usually decide where to go?",
+     "c": "Ask friends for top wish and dealbreaker before your next plan."
+    },
+    "de": {
+     "t": "Pläne mit Freunden aushandeln",
+     "g": "Wählt gemeinsam Restaurant oder Reise, sodass sich alle gehört fühlen.",
+     "p": [
+      "Frage jede Person nach Hauptwunsch und einem No-Go.",
+      "Suche Optionen, die die wichtigsten Wünsche erfüllen.",
+      "Wechselt euch ab, damit nicht immer dieselbe Person nachgibt."
+     ],
+     "q": "Wie entscheidet deine Gruppe meistens, wohin es geht?",
+     "c": "Frage Freunde vor dem nächsten Plan nach Hauptwunsch und No-Go."
+    },
+    "es": {
+     "t": "Negociar planes con amigos",
+     "g": "Elegid juntos restaurante o viaje para que todos se sientan escuchados.",
+     "p": [
+      "Pregunta a cada uno su deseo principal y qué es innegociable.",
+      "Busca opciones que cumplan los deseos principales.",
+      "Turnaos para que no siempre ceda la misma persona."
+     ],
+     "q": "¿Cómo suele decidir tu grupo adónde ir?",
+     "c": "Antes de tu próximo plan, pide a tus amigos su deseo principal y su límite."
+    },
+    "fr": {
+     "t": "Négocier des plans entre amis",
+     "g": "Choisissez ensemble un restaurant ou un voyage pour que tous se sentent écoutés.",
+     "p": [
+      "Demande à chacun son souhait principal et son point non négociable.",
+      "Cherche des options qui satisfont les souhaits principaux.",
+      "Alternez pour que ce ne soit pas toujours la même personne qui cède."
+     ],
+     "q": "Comment ton groupe décide-t-il d'habitude où aller ?",
+     "c": "Avant ton prochain projet, demande à tes amis leur souhait principal et leur limite."
+    },
+    "it": {
+     "t": "Negoziare i piani con gli amici",
+     "g": "Scegliete insieme ristorante o viaggio perché tutti si sentano ascoltati.",
+     "p": [
+      "Chiedi a ciascuno il desiderio principale e un limite invalicabile.",
+      "Cerca opzioni che soddisfino i desideri principali.",
+      "Fate a turno perché non ceda sempre la stessa persona."
+     ],
+     "q": "Come decide di solito il tuo gruppo dove andare?",
+     "c": "Prima del prossimo piano, chiedi agli amici desiderio principale e limite."
+    },
+    "pt": {
+     "t": "Negociar planos com amigos",
+     "g": "Escolham juntos restaurante ou viagem para que todos se sintam ouvidos.",
+     "p": [
+      "Pergunta a cada um o desejo principal e o que é inegociável.",
+      "Procura opções que cumpram os desejos principais.",
+      "Alternem para que não seja sempre a mesma pessoa a ceder."
+     ],
+     "q": "Como é que o teu grupo costuma decidir onde ir?",
+     "c": "Antes do próximo plano, pede aos amigos o desejo principal e o limite."
+    },
+    "pt_BR": {
+     "t": "Negociando planos com amigos",
+     "g": "Escolham juntos restaurante ou viagem para todos se sentirem ouvidos.",
+     "p": [
+      "Pergunte a cada um o desejo principal e o que é inegociável.",
+      "Procure opções que atendam aos desejos principais.",
+      "Revezem para não ser sempre a mesma pessoa a ceder."
+     ],
+     "q": "Como seu grupo costuma decidir aonde ir?",
+     "c": "Antes do próximo plano, peça aos amigos o desejo principal e o limite."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sharing chores at home",
+     "g": "Divide household tasks fairly by talking about preferences and time.",
+     "p": [
+      "Ask who likes or dislikes which tasks.",
+      "List all the chores so nothing stays invisible.",
+      "Agree on a trial period, then adjust together."
+     ],
+     "q": "Which household task would you happily trade for another?",
+     "c": "Propose one fair chore swap at home today."
+    },
+    "de": {
+     "t": "Aufgaben im Haushalt teilen",
+     "g": "Verteile Haushaltsaufgaben fair, indem ihr über Vorlieben und Zeit sprecht.",
+     "p": [
+      "Frage, wer welche Aufgaben mag oder nicht mag.",
+      "Liste alle Aufgaben auf, damit nichts unsichtbar bleibt.",
+      "Vereinbart eine Probezeit und passt dann gemeinsam an."
+     ],
+     "q": "Welche Haushaltsaufgabe würdest du gern gegen eine andere tauschen?",
+     "c": "Schlage heute zu Hause einen fairen Aufgabentausch vor."
+    },
+    "es": {
+     "t": "Repartir las tareas del hogar",
+     "g": "Divide las tareas domésticas con justicia hablando de preferencias y tiempo.",
+     "p": [
+      "Pregunta quién disfruta o evita cada tarea.",
+      "Haz una lista de todas las tareas para que nada quede invisible.",
+      "Acordad un periodo de prueba y ajustad juntos después."
+     ],
+     "q": "¿Qué tarea del hogar cambiarías gustosamente por otra?",
+     "c": "Propón hoy en casa un intercambio justo de tareas."
+    },
+    "fr": {
+     "t": "Partager les tâches à la maison",
+     "g": "Répartis équitablement les tâches ménagères en parlant des préférences et du temps.",
+     "p": [
+      "Demande qui aime ou n'aime pas chaque tâche.",
+      "Liste toutes les tâches pour que rien ne reste invisible.",
+      "Convenez d'un essai, puis ajustez ensemble."
+     ],
+     "q": "Quelle tâche ménagère échangerais-tu volontiers contre une autre ?",
+     "c": "Propose aujourd'hui un échange de tâches équitable à la maison."
+    },
+    "it": {
+     "t": "Dividere le faccende di casa",
+     "g": "Dividi equamente i lavori domestici parlando di preferenze e tempo.",
+     "p": [
+      "Chiedi chi ama o evita ciascun compito.",
+      "Elenca tutte le faccende perché nulla resti invisibile.",
+      "Concordate un periodo di prova, poi aggiustate insieme."
+     ],
+     "q": "Quale faccenda domestica scambieresti volentieri con un'altra?",
+     "c": "Oggi in casa proponi uno scambio equo di faccende."
+    },
+    "pt": {
+     "t": "Partilhar as tarefas de casa",
+     "g": "Divide as tarefas domésticas com justiça falando de preferências e tempo.",
+     "p": [
+      "Pergunta quem gosta ou evita cada tarefa.",
+      "Faz uma lista de todas as tarefas para que nada fique invisível.",
+      "Combinem um período experimental e ajustem juntos depois."
+     ],
+     "q": "Que tarefa doméstica trocarias de bom grado por outra?",
+     "c": "Propõe hoje em casa uma troca justa de tarefas."
+    },
+    "pt_BR": {
+     "t": "Dividindo as tarefas de casa",
+     "g": "Divida as tarefas domésticas com justiça falando de preferências e tempo.",
+     "p": [
+      "Pergunte quem gosta ou evita cada tarefa.",
+      "Liste todas as tarefas para nada ficar invisível.",
+      "Combinem um período de teste e ajustem juntos depois."
+     ],
+     "q": "Que tarefa doméstica você trocaria com gosto por outra?",
+     "c": "Proponha hoje em casa uma troca justa de tarefas."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month",
+     "g": "A light recap of interests, alternatives, listening and polite asking.",
+     "p": [
+      "Interests explain the why behind every position.",
+      "Know your goal, alternative and bottom line before talking.",
+      "Listen, ask open questions and ask politely."
+     ],
+     "q": "Which lesson of the month helped you most so far?",
+     "c": "Pick your favourite tool of the month and use it once today."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Monat",
+     "g": "Ein leichter Überblick über Interessen, Alternativen, Zuhören und höfliches Bitten.",
+     "p": [
+      "Interessen erklären das Warum hinter jeder Position.",
+      "Kenne Ziel, Alternative und Untergrenze, bevor du sprichst.",
+      "Höre zu, stelle offene Fragen und bitte höflich."
+     ],
+     "q": "Welche Lektion des Monats hat dir bisher am meisten geholfen?",
+     "c": "Wähle dein liebstes Werkzeug des Monats und nutze es heute einmal."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes",
+     "g": "Un repaso ligero de intereses, alternativas, escucha y peticiones corteses.",
+     "p": [
+      "Los intereses explican el porqué de cada posición.",
+      "Conoce tu objetivo, alternativa y límite antes de hablar.",
+      "Escucha, haz preguntas abiertas y pide con cortesía."
+     ],
+     "q": "¿Qué lección del mes te ha ayudado más hasta ahora?",
+     "c": "Elige tu herramienta favorita del mes y úsala una vez hoy."
+    },
+    "fr": {
+     "t": "Bilan : ton premier mois",
+     "g": "Un récapitulatif léger des intérêts, alternatives, écoute et demandes polies.",
+     "p": [
+      "Les intérêts expliquent le pourquoi de chaque position.",
+      "Connais ton objectif, ton alternative et ta limite avant de parler.",
+      "Écoute, pose des questions ouvertes et demande poliment."
+     ],
+     "q": "Quelle leçon du mois t'a le plus aidé jusqu'ici ?",
+     "c": "Choisis ton outil préféré du mois et utilise-le une fois aujourd'hui."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese",
+     "g": "Un ripasso leggero di interessi, alternative, ascolto e richieste cortesi.",
+     "p": [
+      "Gli interessi spiegano il perché di ogni posizione.",
+      "Conosci obiettivo, alternativa e limite prima di parlare.",
+      "Ascolta, fai domande aperte e chiedi con cortesia."
+     ],
+     "q": "Quale lezione del mese ti è stata più utile finora?",
+     "c": "Scegli lo strumento preferito del mese e usalo una volta oggi."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês",
+     "g": "Uma revisão leve de interesses, alternativas, escuta e pedidos educados.",
+     "p": [
+      "Os interesses explicam o porquê de cada posição.",
+      "Conhece o teu objetivo, alternativa e limite antes de falares.",
+      "Ouve, faz perguntas abertas e pede com educação."
+     ],
+     "q": "Que lição do mês te ajudou mais até agora?",
+     "c": "Escolhe a tua ferramenta preferida do mês e usa-a uma vez hoje."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês",
+     "g": "Uma revisão leve de interesses, alternativas, escuta e pedidos educados.",
+     "p": [
+      "Os interesses explicam o porquê de cada posição.",
+      "Conheça seu objetivo, alternativa e limite antes de falar.",
+      "Ouça, faça perguntas abertas e peça com educação."
+     ],
+     "q": "Qual lição do mês mais ajudou você até agora?",
+     "c": "Escolha sua ferramenta favorita do mês e use-a uma vez hoje."
+    }
+   }
+  }
+ ]
+}

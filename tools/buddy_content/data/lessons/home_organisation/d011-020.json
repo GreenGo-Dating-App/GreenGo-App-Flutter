@@ -1,0 +1,835 @@
+{
+ "topic": "home_organisation",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The five-minute reset",
+     "g": "Use a short daily tidy to stop small messes becoming big chores.",
+     "p": [
+      "Set a timer for five minutes and move through one room only.",
+      "Put away, bin or carry things to where they belong, nothing more.",
+      "Little and often beats one exhausting weekend clean-up."
+     ],
+     "q": "When in the day would five spare minutes fit best?",
+     "c": "Do one five-minute reset in your busiest room today."
+    },
+    "de": {
+     "t": "Der Fünf-Minuten-Reset",
+     "g": "Räume täglich kurz auf, damit kleine Unordnung nicht zur Großaktion wird.",
+     "p": [
+      "Stelle einen Timer auf fünf Minuten und nimm dir nur einen Raum vor.",
+      "Wegräumen, entsorgen, an den richtigen Ort tragen, mehr nicht.",
+      "Wenig und oft schlägt eine anstrengende Aufräumaktion am Wochenende."
+     ],
+     "q": "Wann am Tag passen fünf freie Minuten am besten?",
+     "c": "Mache heute einen Fünf-Minuten-Reset in deinem belebtesten Raum."
+    },
+    "es": {
+     "t": "El reinicio de cinco minutos",
+     "g": "Haz un repaso diario corto para que el desorden pequeño no se haga enorme.",
+     "p": [
+      "Pon un temporizador de cinco minutos y recorre una sola habitación.",
+      "Guarda, tira o lleva cada cosa a su sitio, nada más.",
+      "Poco y a menudo vale más que una limpieza agotadora el fin de semana."
+     ],
+     "q": "¿Cuándo te vendrían mejor cinco minutos libres al día?",
+     "c": "Haz hoy un reinicio de cinco minutos en tu habitación más usada."
+    },
+    "fr": {
+     "t": "La remise en ordre de cinq minutes",
+     "g": "Range un peu chaque jour pour que le petit désordre ne devienne pas une corvée.",
+     "p": [
+      "Lance un minuteur de cinq minutes et ne traite qu'une pièce.",
+      "Range, jette ou rapporte chaque chose à sa place, rien de plus.",
+      "Peu mais souvent vaut mieux qu'un grand rangement épuisant le week-end."
+     ],
+     "q": "À quel moment de la journée cinq minutes te conviendraient-elles ?",
+     "c": "Fais aujourd'hui cinq minutes de remise en ordre dans ta pièce la plus passante."
+    },
+    "it": {
+     "t": "Il riordino di cinque minuti",
+     "g": "Fai un breve riordino quotidiano perché il piccolo disordine non diventi una fatica.",
+     "p": [
+      "Imposta un timer di cinque minuti e passa in una sola stanza.",
+      "Riponi, butta o porta ogni cosa al suo posto, nient'altro.",
+      "Poco e spesso batte un faticoso riordino del fine settimana."
+     ],
+     "q": "In quale momento della giornata ti starebbero bene cinque minuti?",
+     "c": "Fai oggi un riordino di cinque minuti nella stanza più vissuta."
+    },
+    "pt": {
+     "t": "O reset de cinco minutos",
+     "g": "Arruma um pouco por dia para a pequena desordem não virar uma tarefa grande.",
+     "p": [
+      "Põe o temporizador a cinco minutos e percorre só uma divisão.",
+      "Guarda, deita fora ou leva cada coisa ao seu lugar, nada mais.",
+      "Pouco e muitas vezes vale mais do que uma arrumação cansativa ao fim de semana."
+     ],
+     "q": "Em que altura do dia te dariam jeito cinco minutos?",
+     "c": "Faz hoje cinco minutos de reset na divisão mais movimentada."
+    },
+    "pt_BR": {
+     "t": "O reset de cinco minutos",
+     "g": "Arrume um pouco por dia para a pequena bagunça não virar uma tarefa enorme.",
+     "p": [
+      "Marque cinco minutos no timer e percorra só um cômodo.",
+      "Guarde, jogue fora ou leve cada coisa ao seu lugar, nada mais.",
+      "Pouco e sempre vale mais do que uma faxina cansativa no fim de semana."
+     ],
+     "q": "Em que hora do dia cinco minutos livres cairiam bem?",
+     "c": "Faça hoje cinco minutos de reset no cômodo mais movimentado."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Making the bed in two minutes",
+     "g": "Start the day with a small win that calms the whole bedroom.",
+     "p": [
+      "Pull up the sheet, straighten the duvet and place the pillows.",
+      "A made bed makes the room look tidy even if other things are out.",
+      "Keep it simple: no tight corners needed, just neat enough for you."
+     ],
+     "q": "How do you usually feel walking into a made bedroom?",
+     "c": "Make your bed in under two minutes tomorrow morning, or today if it is still undone."
+    },
+    "de": {
+     "t": "Das Bett in zwei Minuten machen",
+     "g": "Starte mit einem kleinen Erfolg in den Tag, der das Schlafzimmer beruhigt.",
+     "p": [
+      "Ziehe das Laken glatt, richte die Decke und lege die Kissen hin.",
+      "Ein gemachtes Bett lässt den Raum ordentlich wirken, auch wenn sonst Dinge herumliegen.",
+      "Halte es einfach: keine straffen Ecken nötig, nur ordentlich genug für dich."
+     ],
+     "q": "Wie fühlst du dich, wenn du in ein gemachtes Schlafzimmer kommst?",
+     "c": "Mache dein Bett morgen in unter zwei Minuten, oder heute, falls es noch offen ist."
+    },
+    "es": {
+     "t": "Hacer la cama en dos minutos",
+     "g": "Empieza el día con un pequeño logro que calma todo el dormitorio.",
+     "p": [
+      "Estira la sábana, alisa el edredón y coloca las almohadas.",
+      "Una cama hecha hace que la habitación parezca ordenada aunque haya más cosas fuera.",
+      "Hazlo simple: sin esquinas perfectas, solo lo bastante pulcro para ti."
+     ],
+     "q": "¿Cómo te sientes al entrar en un dormitorio con la cama hecha?",
+     "c": "Haz tu cama en menos de dos minutos mañana, o hoy si aún está deshecha."
+    },
+    "fr": {
+     "t": "Faire son lit en deux minutes",
+     "g": "Commence la journée par une petite victoire qui apaise la chambre.",
+     "p": [
+      "Tire le drap, lisse la couette et place les oreillers.",
+      "Un lit fait donne un air rangé à la pièce même si d'autres choses traînent.",
+      "Reste simple : pas besoin de coins parfaits, juste assez net pour toi."
+     ],
+     "q": "Que ressens-tu en entrant dans une chambre au lit fait ?",
+     "c": "Fais ton lit en moins de deux minutes demain matin, ou aujourd'hui s'il est défait."
+    },
+    "it": {
+     "t": "Rifare il letto in due minuti",
+     "g": "Inizia la giornata con una piccola vittoria che calma tutta la camera.",
+     "p": [
+      "Tira il lenzuolo, sistema il piumone e disponi i cuscini.",
+      "Un letto fatto fa sembrare ordinata la stanza anche se altro è fuori posto.",
+      "Resta semplice: niente angoli perfetti, basta che sia curato quanto vuoi tu."
+     ],
+     "q": "Come ti senti entrando in una camera con il letto fatto?",
+     "c": "Rifai il letto in meno di due minuti domani mattina, o oggi se è ancora disfatto."
+    },
+    "pt": {
+     "t": "Fazer a cama em dois minutos",
+     "g": "Começa o dia com uma pequena vitória que acalma o quarto todo.",
+     "p": [
+      "Estica o lençol, alisa o edredão e põe as almofadas.",
+      "Uma cama feita faz o quarto parecer arrumado, mesmo com outras coisas fora do sítio.",
+      "Mantém simples: sem cantos perfeitos, só arrumado ao teu gosto."
+     ],
+     "q": "Como te sentes ao entrar num quarto com a cama feita?",
+     "c": "Faz a cama em menos de dois minutos amanhã de manhã, ou hoje se ainda estiver por fazer."
+    },
+    "pt_BR": {
+     "t": "Fazer a cama em dois minutos",
+     "g": "Comece o dia com uma pequena vitória que acalma o quarto todo.",
+     "p": [
+      "Estique o lençol, alise o edredom e ajeite os travesseiros.",
+      "Uma cama feita deixa o quarto com cara de arrumado, mesmo com outras coisas fora do lugar.",
+      "Mantenha simples: sem cantos perfeitos, só arrumado ao seu gosto."
+     ],
+     "q": "Como você se sente ao entrar num quarto com a cama feita?",
+     "c": "Faça a cama em menos de dois minutos amanhã cedo, ou hoje se ainda estiver desfeita."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The dishes rule",
+     "g": "Wash or load dishes right after meals so the kitchen starts clean.",
+     "p": [
+      "Dishes are quickest when food is still fresh and not dried on.",
+      "Rinse, load or wash straight away, even if it is only a few items.",
+      "Soaking pans with warm water makes later scrubbing easier."
+     ],
+     "q": "Which meal leaves you with the most dishes?",
+     "c": "After your next meal, deal with every dish before sitting down again."
+    },
+    "de": {
+     "t": "Die Geschirr-Regel",
+     "g": "Spüle oder räume das Geschirr gleich nach dem Essen ein, damit die Küche sauber startet.",
+     "p": [
+      "Geschirr geht am schnellsten, solange nichts angetrocknet ist.",
+      "Spüle ab, räume ein oder wasche sofort, auch bei wenigen Teilen.",
+      "Pfannen in warmem Wasser einzuweichen erleichtert das spätere Schrubben."
+     ],
+     "q": "Nach welcher Mahlzeit bleibt bei dir das meiste Geschirr?",
+     "c": "Erledige nach der nächsten Mahlzeit alles Geschirr, bevor du dich wieder setzt."
+    },
+    "es": {
+     "t": "La regla de los platos",
+     "g": "Lava o coloca los platos justo tras comer para que la cocina empiece limpia.",
+     "p": [
+      "Los platos salen más rápido cuando la comida aún no se ha secado.",
+      "Enjuaga, mete en el lavavajillas o lava enseguida, aunque sean pocos.",
+      "Dejar las sartenes en remojo con agua tibia facilita fregar después."
+     ],
+     "q": "¿Qué comida te deja más platos?",
+     "c": "Tras tu próxima comida, resuelve todos los platos antes de volver a sentarte."
+    },
+    "fr": {
+     "t": "La règle de la vaisselle",
+     "g": "Lave ou range la vaisselle juste après le repas pour une cuisine propre le matin.",
+     "p": [
+      "La vaisselle va plus vite quand la nourriture n'a pas séché.",
+      "Rince, charge ou lave tout de suite, même s'il y a peu de pièces.",
+      "Laisser tremper les poêles dans de l'eau tiède facilite le frottage."
+     ],
+     "q": "Quel repas te laisse le plus de vaisselle ?",
+     "c": "Après ton prochain repas, fais toute la vaisselle avant de te rasseoir."
+    },
+    "it": {
+     "t": "La regola dei piatti",
+     "g": "Lava o carica i piatti subito dopo i pasti così la cucina parte pulita.",
+     "p": [
+      "I piatti si lavano più in fretta quando il cibo non è ancora secco.",
+      "Sciacqua, carica o lava subito, anche se sono pochi pezzi.",
+      "Lasciare le padelle in ammollo con acqua tiepida facilita lo sfregamento."
+     ],
+     "q": "Quale pasto ti lascia più piatti da lavare?",
+     "c": "Dopo il prossimo pasto, sistema tutti i piatti prima di risederti."
+    },
+    "pt": {
+     "t": "A regra da loiça",
+     "g": "Lava ou carrega a loiça logo após as refeições para a cozinha começar limpa.",
+     "p": [
+      "A loiça sai mais depressa quando a comida ainda não secou.",
+      "Enxagua, carrega ou lava logo, mesmo que sejam poucas peças.",
+      "Deixar as panelas de molho em água morna facilita esfregar depois."
+     ],
+     "q": "Que refeição te deixa mais loiça?",
+     "c": "Depois da próxima refeição, trata de toda a loiça antes de te voltares a sentar."
+    },
+    "pt_BR": {
+     "t": "A regra da louça",
+     "g": "Lave ou coloque a louça na máquina logo após as refeições para a cozinha começar limpa.",
+     "p": [
+      "A louça sai mais rápido quando a comida ainda não secou.",
+      "Enxágue, coloque na máquina ou lave logo, mesmo que sejam poucas peças.",
+      "Deixar as panelas de molho em água morna facilita esfregar depois."
+     ],
+     "q": "Qual refeição deixa mais louça para você?",
+     "c": "Depois da próxima refeição, cuide de toda a louça antes de voltar a sentar."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A landing strip by the door",
+     "g": "Create one spot for keys, wallet, bags and post.",
+     "p": [
+      "A small tray, hook or shelf near the door catches the essentials.",
+      "When you arrive, drop your things there before anything else.",
+      "Leaving is easier too: everything you need is in one place."
+     ],
+     "q": "What do you most often lose when leaving the house?",
+     "c": "Choose a landing spot by the door and place your keys there today."
+    },
+    "de": {
+     "t": "Eine Ablage an der Tür",
+     "g": "Schaffe einen Platz für Schlüssel, Geldbeutel, Taschen und Post.",
+     "p": [
+      "Eine kleine Schale, ein Haken oder ein Regal an der Tür fängt das Wichtigste auf.",
+      "Lege beim Heimkommen zuerst deine Sachen dort ab.",
+      "Auch das Losgehen wird leichter: alles Nötige liegt an einem Ort."
+     ],
+     "q": "Was verlierst du beim Verlassen des Hauses am häufigsten?",
+     "c": "Wähle eine Ablage an der Tür und lege heute deine Schlüssel dorthin."
+    },
+    "es": {
+     "t": "Una zona de aterrizaje junto a la puerta",
+     "g": "Crea un sitio para llaves, cartera, bolsos y correo.",
+     "p": [
+      "Una bandeja, un gancho o una balda junto a la puerta recoge lo esencial.",
+      "Al llegar, deja tus cosas ahí antes de hacer nada más.",
+      "Salir también es más fácil: todo lo necesario está en un sitio."
+     ],
+     "q": "¿Qué sueles perder más al salir de casa?",
+     "c": "Elige un punto junto a la puerta y deja ahí tus llaves hoy."
+    },
+    "fr": {
+     "t": "Un coin d'arrivée près de la porte",
+     "g": "Crée une place pour clés, portefeuille, sacs et courrier.",
+     "p": [
+      "Un plateau, un crochet ou une étagère près de la porte rassemble l'essentiel.",
+      "En rentrant, pose tes affaires là avant toute autre chose.",
+      "Partir devient plus facile : tout ce qu'il faut est au même endroit."
+     ],
+     "q": "Qu'oublies-tu ou perds-tu le plus en quittant la maison ?",
+     "c": "Choisis un coin près de la porte et dépose-y tes clés dès aujourd'hui."
+    },
+    "it": {
+     "t": "Un angolo d'atterraggio vicino alla porta",
+     "g": "Crea un posto per chiavi, portafoglio, borse e posta.",
+     "p": [
+      "Un vassoio, un gancio o una mensola vicino alla porta raccoglie l'essenziale.",
+      "Quando torni, lascia lì le tue cose prima di fare altro.",
+      "Anche uscire è più facile: tutto il necessario è in un punto."
+     ],
+     "q": "Cosa perdi più spesso quando esci di casa?",
+     "c": "Scegli un punto vicino alla porta e lascia lì le chiavi oggi."
+    },
+    "pt": {
+     "t": "Um cantinho de chegada junto à porta",
+     "g": "Cria um sítio para chaves, carteira, malas e correio.",
+     "p": [
+      "Um tabuleiro, um gancho ou uma prateleira junto à porta apanha o essencial.",
+      "Ao chegar, deixa lá as tuas coisas antes de fazeres mais nada.",
+      "Sair também fica mais fácil: tudo o que precisas está num só lugar."
+     ],
+     "q": "O que costumas perder mais quando sais de casa?",
+     "c": "Escolhe um sítio junto à porta e deixa lá as chaves hoje."
+    },
+    "pt_BR": {
+     "t": "Um cantinho de chegada perto da porta",
+     "g": "Crie um lugar para chaves, carteira, bolsas e correspondência.",
+     "p": [
+      "Uma bandeja, um gancho ou uma prateleira perto da porta guarda o essencial.",
+      "Ao chegar, deixe suas coisas ali antes de fazer qualquer outra coisa.",
+      "Sair também fica mais fácil: tudo o que você precisa está num só lugar."
+     ],
+     "q": "O que você mais costuma perder ao sair de casa?",
+     "c": "Escolha um lugar perto da porta e deixe suas chaves ali hoje."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Taming shoes at the entrance",
+     "g": "Keep the doorway walkable with a rack, tray and a sensible limit.",
+     "p": [
+      "Choose a rack or tray for the shoes worn most this week.",
+      "Give each person a small limit, like two or three pairs by the door.",
+      "Store out-of-season shoes elsewhere so the entrance stays free."
+     ],
+     "q": "How many pairs of shoes sit by your door right now?",
+     "c": "Move all shoes not worn this week away from the entrance."
+    },
+    "de": {
+     "t": "Schuhe am Eingang bändigen",
+     "g": "Halte den Eingang begehbar mit Regal, Schale und einer vernünftigen Grenze.",
+     "p": [
+      "Wähle ein Regal oder eine Matte für die Schuhe, die du diese Woche trägst.",
+      "Gib jedem eine kleine Grenze, etwa zwei oder drei Paar an der Tür.",
+      "Lagere Schuhe außerhalb der Saison woanders, damit der Eingang frei bleibt."
+     ],
+     "q": "Wie viele Paar Schuhe stehen gerade an deiner Tür?",
+     "c": "Räume alle Schuhe, die du diese Woche nicht trägst, vom Eingang weg."
+    },
+    "es": {
+     "t": "Domar los zapatos de la entrada",
+     "g": "Mantén la entrada despejada con un zapatero, una bandeja y un límite razonable.",
+     "p": [
+      "Elige un zapatero o bandeja para los zapatos que más usas esta semana.",
+      "Da a cada persona un límite pequeño, como dos o tres pares junto a la puerta.",
+      "Guarda en otro sitio los zapatos fuera de temporada para dejar la entrada libre."
+     ],
+     "q": "¿Cuántos pares de zapatos hay ahora junto a tu puerta?",
+     "c": "Aparta de la entrada todos los zapatos que no uses esta semana."
+    },
+    "fr": {
+     "t": "Dompter les chaussures à l'entrée",
+     "g": "Garde l'entrée dégagée avec un meuble, un plateau et une limite raisonnable.",
+     "p": [
+      "Choisis un meuble ou un plateau pour les chaussures portées cette semaine.",
+      "Donne à chacun une petite limite, comme deux ou trois paires près de la porte.",
+      "Range ailleurs les chaussures hors saison pour que l'entrée reste libre."
+     ],
+     "q": "Combien de paires de chaussures traînent près de ta porte ?",
+     "c": "Éloigne de l'entrée toutes les chaussures que tu ne portes pas cette semaine."
+    },
+    "it": {
+     "t": "Domare le scarpe all'ingresso",
+     "g": "Tieni libero l'ingresso con una scarpiera, un vassoio e un limite sensato.",
+     "p": [
+      "Scegli una scarpiera o un vassoio per le scarpe usate questa settimana.",
+      "Dai a ciascuno un piccolo limite, come due o tre paia vicino alla porta.",
+      "Riponi altrove le scarpe fuori stagione, così l'ingresso resta libero."
+     ],
+     "q": "Quante paia di scarpe ci sono ora vicino alla tua porta?",
+     "c": "Allontana dall'ingresso tutte le scarpe che non usi questa settimana."
+    },
+    "pt": {
+     "t": "Domar os sapatos à entrada",
+     "g": "Mantém a entrada livre com sapateira, tabuleiro e um limite sensato.",
+     "p": [
+      "Escolhe uma sapateira ou tabuleiro para os sapatos usados esta semana.",
+      "Dá a cada pessoa um pequeno limite, como dois ou três pares junto à porta.",
+      "Guarda noutro sítio os sapatos fora de estação para a entrada ficar livre."
+     ],
+     "q": "Quantos pares de sapatos estão agora junto à tua porta?",
+     "c": "Afasta da entrada todos os sapatos que não usas esta semana."
+    },
+    "pt_BR": {
+     "t": "Domando os sapatos na entrada",
+     "g": "Mantenha a entrada livre com sapateira, bandeja e um limite sensato.",
+     "p": [
+      "Escolha uma sapateira ou bandeja para os sapatos usados esta semana.",
+      "Dê a cada pessoa um pequeno limite, como dois ou três pares perto da porta.",
+      "Guarde em outro lugar os sapatos fora de estação para a entrada ficar livre."
+     ],
+     "q": "Quantos pares de sapatos estão agora perto da sua porta?",
+     "c": "Afaste da entrada todos os sapatos que você não usa esta semana."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Coats, bags and hooks",
+     "g": "Use hooks at the right height so everyone actually hangs things up.",
+     "p": [
+      "Hooks are faster than hangers for things you use every day.",
+      "Place them at a height each person, including children, can reach.",
+      "Give each person their own hook so nothing is left on a chair."
+     ],
+     "q": "Where do coats and bags land in your home today?",
+     "c": "Hang up every coat and bag that is lying around right now."
+    },
+    "de": {
+     "t": "Jacken, Taschen und Haken",
+     "g": "Nutze Haken in der richtigen Höhe, damit wirklich alle ihre Sachen aufhängen.",
+     "p": [
+      "Haken sind für Alltägliches schneller als Bügel.",
+      "Bringe sie in einer Höhe an, die jeder erreicht, auch Kinder.",
+      "Gib jedem einen eigenen Haken, damit nichts auf dem Stuhl landet."
+     ],
+     "q": "Wo landen Jacken und Taschen bei dir zuhause?",
+     "c": "Hänge jetzt jede Jacke und Tasche auf, die herumliegt."
+    },
+    "es": {
+     "t": "Abrigos, bolsos y colgadores",
+     "g": "Usa colgadores a la altura adecuada para que todos cuelguen sus cosas.",
+     "p": [
+      "Los ganchos son más rápidos que las perchas para lo de uso diario.",
+      "Ponlos a una altura que cada persona, también los niños, alcance.",
+      "Da a cada persona su propio gancho para que nada acabe en una silla."
+     ],
+     "q": "¿Dónde acaban hoy los abrigos y bolsos en tu casa?",
+     "c": "Cuelga ahora todos los abrigos y bolsos que estén por ahí."
+    },
+    "fr": {
+     "t": "Manteaux, sacs et patères",
+     "g": "Utilise des patères à la bonne hauteur pour que chacun accroche ses affaires.",
+     "p": [
+      "Les crochets sont plus rapides que les cintres pour l'usage quotidien.",
+      "Place-les à une hauteur que chacun, enfants compris, peut atteindre.",
+      "Donne à chacun sa patère pour que rien ne finisse sur une chaise."
+     ],
+     "q": "Où atterrissent les manteaux et les sacs chez toi ?",
+     "c": "Accroche maintenant tous les manteaux et sacs qui traînent."
+    },
+    "it": {
+     "t": "Cappotti, borse e ganci",
+     "g": "Usa ganci all'altezza giusta così tutti appendono davvero le loro cose.",
+     "p": [
+      "I ganci sono più veloci delle grucce per ciò che usi ogni giorno.",
+      "Mettili a un'altezza raggiungibile da tutti, anche dai bambini.",
+      "Dai a ciascuno il suo gancio, così nulla finisce sulla sedia."
+     ],
+     "q": "Dove finiscono oggi i cappotti e le borse a casa tua?",
+     "c": "Appendi subito ogni cappotto e borsa che è in giro."
+    },
+    "pt": {
+     "t": "Casacos, malas e cabides de parede",
+     "g": "Usa ganchos à altura certa para todos pendurarem mesmo as suas coisas.",
+     "p": [
+      "Os ganchos são mais rápidos do que cabides para o uso diário.",
+      "Põe-nos a uma altura que todos alcancem, incluindo as crianças.",
+      "Dá a cada pessoa o seu gancho para nada acabar numa cadeira."
+     ],
+     "q": "Onde ficam hoje os casacos e as malas em tua casa?",
+     "c": "Pendura agora todos os casacos e malas que estão pela casa."
+    },
+    "pt_BR": {
+     "t": "Casacos, bolsas e ganchos",
+     "g": "Use ganchos na altura certa para todo mundo pendurar mesmo suas coisas.",
+     "p": [
+      "Os ganchos são mais rápidos do que cabides para o uso diário.",
+      "Coloque-os numa altura que todos alcancem, inclusive as crianças.",
+      "Dê a cada pessoa seu próprio gancho para nada acabar numa cadeira."
+     ],
+     "q": "Onde os casacos e bolsas ficam hoje na sua casa?",
+     "c": "Pendure agora todos os casacos e bolsas que estão espalhados."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Handling post and paper daily",
+     "g": "Open, sort and act on letters the day they arrive.",
+     "p": [
+      "Open post near a bin and a recycling bag so junk leaves at once.",
+      "Sort what is left into act now, file or read later.",
+      "One small tray for paper keeps everything from spreading around."
+     ],
+     "q": "How do you deal with letters and leaflets today?",
+     "c": "Open all your post now and sort it into act, file and recycle."
+    },
+    "de": {
+     "t": "Post und Papier täglich erledigen",
+     "g": "Öffne, sortiere und bearbeite Briefe am Tag ihres Eintreffens.",
+     "p": [
+      "Öffne Post neben Papierkorb und Recyclingbeutel, damit Werbung sofort geht.",
+      "Sortiere den Rest in sofort erledigen, ablegen oder später lesen.",
+      "Eine kleine Ablage für Papier verhindert, dass es sich überall verteilt."
+     ],
+     "q": "Wie gehst du heute mit Briefen und Prospekten um?",
+     "c": "Öffne jetzt deine ganze Post und sortiere sie in erledigen, ablegen, Recycling."
+    },
+    "es": {
+     "t": "Gestionar el correo y los papeles a diario",
+     "g": "Abre, clasifica y resuelve las cartas el mismo día que llegan.",
+     "p": [
+      "Abre el correo junto a una papelera y una bolsa de reciclaje para que la publicidad salga ya.",
+      "Clasifica lo restante en resolver ahora, archivar o leer después.",
+      "Una bandeja pequeña para papeles evita que se esparzan por casa."
+     ],
+     "q": "¿Cómo gestionas hoy las cartas y los folletos?",
+     "c": "Abre ahora todo tu correo y clasifícalo en resolver, archivar y reciclar."
+    },
+    "fr": {
+     "t": "Gérer courrier et papiers chaque jour",
+     "g": "Ouvre, trie et traite les lettres le jour même de leur arrivée.",
+     "p": [
+      "Ouvre le courrier près d'une poubelle et d'un sac de recyclage pour jeter les prospectus.",
+      "Trie le reste en à traiter, à classer ou à lire plus tard.",
+      "Un petit bac pour les papiers évite qu'ils s'éparpillent partout."
+     ],
+     "q": "Comment gères-tu aujourd'hui lettres et prospectus ?",
+     "c": "Ouvre tout ton courrier maintenant et trie-le en traiter, classer et recycler."
+    },
+    "it": {
+     "t": "Gestire posta e carte ogni giorno",
+     "g": "Apri, smista e agisci sulle lettere il giorno in cui arrivano.",
+     "p": [
+      "Apri la posta vicino a un cestino e a un sacco per il riciclo, così la pubblicità esce subito.",
+      "Dividi il resto in da fare ora, da archiviare o da leggere dopo.",
+      "Un piccolo vassoio per le carte evita che si sparpaglino ovunque."
+     ],
+     "q": "Come gestisci oggi lettere e volantini?",
+     "c": "Apri ora tutta la tua posta e dividila in da fare, archiviare e riciclare."
+    },
+    "pt": {
+     "t": "Tratar do correio e papéis todos os dias",
+     "g": "Abre, separa e resolve as cartas no dia em que chegam.",
+     "p": [
+      "Abre o correio junto ao lixo e a um saco de reciclagem para a publicidade sair logo.",
+      "Separa o resto em resolver agora, arquivar ou ler mais tarde.",
+      "Um tabuleiro pequeno para papéis evita que se espalhem pela casa."
+     ],
+     "q": "Como tratas hoje das cartas e dos folhetos?",
+     "c": "Abre já todo o teu correio e separa em resolver, arquivar e reciclar."
+    },
+    "pt_BR": {
+     "t": "Cuidar da correspondência e dos papéis todo dia",
+     "g": "Abra, separe e resolva as cartas no dia em que chegam.",
+     "p": [
+      "Abra a correspondência perto do lixo e de um saco de reciclagem para os panfletos saírem logo.",
+      "Separe o resto em resolver agora, arquivar ou ler depois.",
+      "Uma bandeja pequena para papéis evita que eles se espalhem pela casa."
+     ],
+     "q": "Como você lida hoje com cartas e panfletos?",
+     "c": "Abra agora toda a sua correspondência e separe em resolver, arquivar e reciclar."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The evening tidy",
+     "g": "Spend ten minutes before bed so tomorrow starts easier.",
+     "p": [
+      "Do a quick loop: dishes, surfaces, floor items and the sofa.",
+      "Put out tomorrow's things by the door: bag, keys and shoes.",
+      "Ten calm minutes now save a rushed, stressful morning."
+     ],
+     "q": "What small thing would make your mornings smoother?",
+     "c": "Do a ten-minute evening tidy tonight and notice how tomorrow feels."
+    },
+    "de": {
+     "t": "Das Abendaufräumen",
+     "g": "Nimm dir zehn Minuten vor dem Schlafen, damit der nächste Tag leichter beginnt.",
+     "p": [
+      "Mache eine schnelle Runde: Geschirr, Flächen, Herumliegendes und das Sofa.",
+      "Lege Dinge für morgen an die Tür: Tasche, Schlüssel und Schuhe.",
+      "Zehn ruhige Minuten jetzt ersparen einen hektischen Morgen."
+     ],
+     "q": "Was würde deine Morgen entspannter machen?",
+     "c": "Mache heute Abend zehn Minuten Aufräumen und spüre, wie sich morgen anfühlt."
+    },
+    "es": {
+     "t": "El repaso de la noche",
+     "g": "Dedica diez minutos antes de dormir para que mañana empiece más fácil.",
+     "p": [
+      "Haz una vuelta rápida: platos, superficies, cosas por el suelo y el sofá.",
+      "Deja lo de mañana junto a la puerta: bolso, llaves y zapatos.",
+      "Diez minutos tranquilos ahora ahorran una mañana con prisas."
+     ],
+     "q": "¿Qué pequeña cosa haría tus mañanas más fáciles?",
+     "c": "Haz esta noche un repaso de diez minutos y observa cómo se siente mañana."
+    },
+    "fr": {
+     "t": "Le rangement du soir",
+     "g": "Consacre dix minutes avant de dormir pour que demain commence mieux.",
+     "p": [
+      "Fais un tour rapide : vaisselle, surfaces, objets au sol et canapé.",
+      "Prépare près de la porte les affaires de demain : sac, clés et chaussures.",
+      "Dix minutes calmes ce soir évitent un matin précipité."
+     ],
+     "q": "Quelle petite chose faciliterait tes matins ?",
+     "c": "Fais dix minutes de rangement ce soir et observe comment demain se passe."
+    },
+    "it": {
+     "t": "Il riordino serale",
+     "g": "Dedica dieci minuti prima di dormire perché domani inizi più facile.",
+     "p": [
+      "Fai un giro veloce: piatti, superfici, cose per terra e divano.",
+      "Prepara vicino alla porta le cose di domani: borsa, chiavi e scarpe.",
+      "Dieci minuti tranquilli ora evitano una mattina frenetica."
+     ],
+     "q": "Quale piccola cosa renderebbe più facili le tue mattine?",
+     "c": "Fai stasera dieci minuti di riordino e nota come va domani."
+    },
+    "pt": {
+     "t": "A arrumação da noite",
+     "g": "Dedica dez minutos antes de dormir para amanhã começar mais fácil.",
+     "p": [
+      "Faz uma volta rápida: loiça, superfícies, coisas no chão e o sofá.",
+      "Deixa as coisas de amanhã junto à porta: mala, chaves e sapatos.",
+      "Dez minutos calmos agora poupam uma manhã apressada."
+     ],
+     "q": "Que pequena coisa tornaria as tuas manhãs mais fáceis?",
+     "c": "Faz esta noite dez minutos de arrumação e repara como amanhã corre."
+    },
+    "pt_BR": {
+     "t": "A arrumação da noite",
+     "g": "Dedique dez minutos antes de dormir para amanhã começar mais fácil.",
+     "p": [
+      "Dê uma volta rápida: louça, superfícies, coisas no chão e o sofá.",
+      "Deixe as coisas de amanhã perto da porta: bolsa, chaves e sapatos.",
+      "Dez minutos calmos agora poupam uma manhã corrida."
+     ],
+     "q": "Que pequena coisa deixaria suas manhãs mais fáceis?",
+     "c": "Faça hoje à noite dez minutos de arrumação e note como amanhã fica."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A calm morning setup",
+     "g": "Prepare clothes, bag and breakfast items the night before.",
+     "p": [
+      "Choose tomorrow's outfit and place it where you can see it.",
+      "Pack your bag and put it by the door with keys and phone charger.",
+      "Set out breakfast basics, such as a bowl and cup, for a gentle start."
+     ],
+     "q": "What is the most hurried part of your morning?",
+     "c": "Prepare one thing tonight for tomorrow morning, such as clothes or your bag."
+    },
+    "de": {
+     "t": "Ein ruhiger Morgen",
+     "g": "Bereite Kleidung, Tasche und Frühstück schon am Vorabend vor.",
+     "p": [
+      "Wähle das Outfit für morgen und lege es sichtbar bereit.",
+      "Packe deine Tasche und stelle sie mit Schlüssel und Ladegerät an die Tür.",
+      "Stelle Frühstücksbasics wie Schale und Tasse hin für einen sanften Start."
+     ],
+     "q": "Was ist der hektischste Teil deines Morgens?",
+     "c": "Bereite heute Abend eine Sache für morgen vor, etwa Kleidung oder Tasche."
+    },
+    "es": {
+     "t": "Una mañana tranquila",
+     "g": "Prepara la ropa, el bolso y el desayuno la noche anterior.",
+     "p": [
+      "Elige el conjunto de mañana y déjalo a la vista.",
+      "Prepara el bolso y ponlo junto a la puerta con las llaves y el cargador.",
+      "Deja listo lo básico del desayuno, como un cuenco y una taza, para empezar con calma."
+     ],
+     "q": "¿Qué parte de tu mañana es la más apresurada?",
+     "c": "Prepara esta noche una cosa para mañana, como la ropa o el bolso."
+    },
+    "fr": {
+     "t": "Un matin serein",
+     "g": "Prépare vêtements, sac et petit-déjeuner la veille au soir.",
+     "p": [
+      "Choisis la tenue de demain et pose-la bien en vue.",
+      "Prépare ton sac et mets-le près de la porte avec clés et chargeur.",
+      "Sors l'essentiel du petit-déjeuner, comme un bol et une tasse, pour démarrer doucement."
+     ],
+     "q": "Quelle partie de ta matinée est la plus précipitée ?",
+     "c": "Prépare ce soir une chose pour demain matin, comme tes vêtements ou ton sac."
+    },
+    "it": {
+     "t": "Una mattina serena",
+     "g": "Prepara vestiti, borsa e colazione la sera prima.",
+     "p": [
+      "Scegli l'outfit di domani e mettilo ben in vista.",
+      "Prepara la borsa e mettila vicino alla porta con chiavi e caricabatterie.",
+      "Metti fuori l'essenziale per la colazione, come ciotola e tazza, per iniziare con calma."
+     ],
+     "q": "Qual è la parte più frettolosa della tua mattina?",
+     "c": "Prepara stasera una cosa per domani mattina, come i vestiti o la borsa."
+    },
+    "pt": {
+     "t": "Uma manhã tranquila",
+     "g": "Prepara roupa, mala e pequeno-almoço na noite anterior.",
+     "p": [
+      "Escolhe a roupa de amanhã e deixa-a à vista.",
+      "Prepara a mala e põe-na junto à porta com as chaves e o carregador.",
+      "Deixa o básico do pequeno-almoço, como tigela e chávena, para um começo calmo."
+     ],
+     "q": "Que parte da tua manhã é a mais apressada?",
+     "c": "Prepara esta noite uma coisa para amanhã de manhã, como a roupa ou a mala."
+    },
+    "pt_BR": {
+     "t": "Uma manhã tranquila",
+     "g": "Prepare roupa, bolsa e café da manhã na noite anterior.",
+     "p": [
+      "Escolha a roupa de amanhã e deixe à vista.",
+      "Arrume a bolsa e coloque perto da porta com as chaves e o carregador.",
+      "Deixe o básico do café da manhã, como tigela e xícara, para um começo calmo."
+     ],
+     "q": "Que parte da sua manhã é a mais corrida?",
+     "c": "Prepare hoje à noite uma coisa para amanhã cedo, como a roupa ou a bolsa."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Laundry basics without the pile",
+     "g": "Pick laundry days, sort by colour and fold straight away.",
+     "p": [
+      "Choose fixed laundry days so loads never build up.",
+      "Sort whites, darks and delicates, and follow each care label.",
+      "Fold or hang clothes as soon as they are dry, while they are still smooth."
+     ],
+     "q": "How often do you wash clothes at the moment?",
+     "c": "Fold or hang one load of dry clothes today and put it all away."
+    },
+    "de": {
+     "t": "Wäsche-Grundlagen ohne Berg",
+     "g": "Lege Waschtage fest, sortiere nach Farbe und falte sofort.",
+     "p": [
+      "Feste Waschtage verhindern, dass sich Wäscheberge bilden.",
+      "Sortiere Weißes, Dunkles und Feines und beachte jedes Pflegeetikett.",
+      "Falte oder hänge Kleidung gleich nach dem Trocknen auf, solange sie glatt ist."
+     ],
+     "q": "Wie oft wäschst du im Moment Kleidung?",
+     "c": "Falte oder hänge heute eine Ladung trockener Wäsche auf und räume sie weg."
+    },
+    "es": {
+     "t": "Lo básico de la colada sin montañas",
+     "g": "Elige días de colada, separa por color y dobla enseguida.",
+     "p": [
+      "Fija días de colada para que no se acumulen las cargas.",
+      "Separa blanco, oscuro y delicado, y sigue cada etiqueta de cuidado.",
+      "Dobla o cuelga la ropa en cuanto esté seca, mientras está lisa."
+     ],
+     "q": "¿Cada cuánto lavas ropa ahora?",
+     "c": "Dobla o cuelga hoy una carga de ropa seca y guárdala toda."
+    },
+    "fr": {
+     "t": "Les bases de la lessive sans montagne",
+     "g": "Choisis des jours de lessive, trie par couleur et plie tout de suite.",
+     "p": [
+      "Des jours de lessive fixes évitent que le linge s'accumule.",
+      "Trie le blanc, le foncé et le délicat, et suis chaque étiquette d'entretien.",
+      "Plie ou suspends le linge dès qu'il est sec, quand il est encore lisse."
+     ],
+     "q": "À quelle fréquence fais-tu la lessive en ce moment ?",
+     "c": "Plie ou range aujourd'hui une machine de linge sec en totalité."
+    },
+    "it": {
+     "t": "Le basi del bucato senza montagne",
+     "g": "Scegli i giorni del bucato, dividi per colore e piega subito.",
+     "p": [
+      "Giorni fissi per il bucato evitano che i panni si accumulino.",
+      "Separa bianchi, scuri e delicati, e segui ogni etichetta di lavaggio.",
+      "Piega o appendi i panni appena asciutti, quando sono ancora lisci."
+     ],
+     "q": "Ogni quanto fai il bucato in questo periodo?",
+     "c": "Piega o appendi oggi un carico di panni asciutti e riponi tutto."
+    },
+    "pt": {
+     "t": "O básico da roupa sem montanhas",
+     "g": "Escolhe dias de lavagem, separa por cor e dobra logo.",
+     "p": [
+      "Dias fixos para lavar evitam que a roupa se acumule.",
+      "Separa branco, escuro e delicado, e segue cada etiqueta de cuidados.",
+      "Dobra ou pendura a roupa logo que seque, enquanto está lisa."
+     ],
+     "q": "Com que frequência lavas roupa neste momento?",
+     "c": "Dobra ou pendura hoje uma carga de roupa seca e guarda tudo."
+    },
+    "pt_BR": {
+     "t": "O básico da roupa lavada sem montanha",
+     "g": "Escolha dias de lavar, separe por cor e dobre logo.",
+     "p": [
+      "Dias fixos para lavar evitam que a roupa se acumule.",
+      "Separe branco, escuro e delicado, e siga cada etiqueta de cuidados.",
+      "Dobre ou pendure a roupa assim que secar, enquanto ainda está lisa."
+     ],
+     "q": "Com que frequência você lava roupa atualmente?",
+     "c": "Dobre ou pendure hoje uma leva de roupa seca e guarde tudo."
+    }
+   }
+  }
+ ]
+}

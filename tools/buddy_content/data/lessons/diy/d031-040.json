@@ -1,0 +1,835 @@
+{
+ "topic": "diy",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finding studs and joists",
+     "g": "Locate wall supports with a stud finder, knocking and magnets.",
+     "p": [
+      "A stud finder beeps or lights up when it senses denser material behind the wall.",
+      "Knocking sounds hollow between studs and more solid on them.",
+      "Studs are usually evenly spaced, so once you find one, measure for the next."
+     ],
+     "q": "Have you ever hung something that pulled out of the wall?",
+     "c": "Find two studs in a plasterboard wall and mark them lightly with pencil."
+    },
+    "de": {
+     "t": "Ständer und Balken finden",
+     "g": "Finde Wandstützen mit Balkenfinder, Klopfen und Magnet.",
+     "p": [
+      "Ein Ortungsgerät piept oder leuchtet, wenn es dichteres Material hinter der Wand spürt.",
+      "Klopfen klingt zwischen den Ständern hohl und auf ihnen fester.",
+      "Ständer stehen meist in gleichen Abständen: Hast du einen gefunden, miss zum nächsten."
+     ],
+     "q": "Ist dir schon mal etwas aus der Wand gerissen, das du aufgehängt hattest?",
+     "c": "Finde zwei Ständer in einer Trockenbauwand und markiere sie leicht mit Bleistift."
+    },
+    "es": {
+     "t": "Encontrar montantes y vigas",
+     "g": "Localiza los soportes de la pared con detector, golpeando y con imán.",
+     "p": [
+      "Un detector pita o se ilumina cuando nota material más denso tras la pared.",
+      "Al golpear suena hueco entre montantes y más macizo sobre ellos.",
+      "Los montantes suelen estar a distancias iguales: al hallar uno, mide hacia el siguiente."
+     ],
+     "q": "¿Alguna vez algo que colgaste se arrancó de la pared?",
+     "c": "Encuentra dos montantes en una pared de pladur y márcalos suavemente con lápiz."
+    },
+    "fr": {
+     "t": "Trouver montants et solives",
+     "g": "Repère les supports du mur avec un détecteur, en tapotant ou avec un aimant.",
+     "p": [
+      "Un détecteur sonne ou s'allume quand il sent un matériau plus dense derrière le mur.",
+      "Le tapotement sonne creux entre les montants et plus plein dessus.",
+      "Les montants sont souvent espacés régulièrement : une fois l'un trouvé, mesure vers le suivant."
+     ],
+     "q": "Quelque chose que tu avais accroché s'est-il déjà arraché du mur ?",
+     "c": "Trouve deux montants dans une cloison en plaques de plâtre et marque-les légèrement au crayon."
+    },
+    "it": {
+     "t": "Trovare montanti e travetti",
+     "g": "Individua i supporti della parete con rilevatore, battendo e con una calamita.",
+     "p": [
+      "Un rilevatore suona o si accende quando sente materiale più denso dietro il muro.",
+      "Battendo suona vuoto tra i montanti e più pieno sopra di essi.",
+      "I montanti sono di solito a distanza regolare: trovato uno, misura verso il successivo."
+     ],
+     "q": "Ti è mai capitato che qualcosa che avevi appeso si staccasse dal muro?",
+     "c": "Trova due montanti in una parete di cartongesso e segnali leggermente a matita."
+    },
+    "pt": {
+     "t": "Encontrar montantes e vigas",
+     "g": "Localiza os suportes da parede com detetor, batendo e com um íman.",
+     "p": [
+      "Um detetor apita ou acende quando sente material mais denso atrás da parede.",
+      "Ao bater soa oco entre montantes e mais maciço sobre eles.",
+      "Os montantes costumam estar a distâncias iguais: ao achar um, mede até ao seguinte."
+     ],
+     "q": "Já algo que penduraste se soltou da parede?",
+     "c": "Encontra dois montantes numa parede de pladur e marca-os levemente a lápis."
+    },
+    "pt_BR": {
+     "t": "Achando montantes e vigas",
+     "g": "Localize os suportes da parede com detector, batendo e com um ímã.",
+     "p": [
+      "Um detector apita ou acende quando sente material mais denso atrás da parede.",
+      "Ao bater soa oco entre montantes e mais maciço sobre eles.",
+      "Os montantes costumam ter distâncias iguais: ao achar um, meça até o próximo."
+     ],
+     "q": "Algo que você pendurou já se soltou da parede?",
+     "c": "Ache dois montantes numa parede de drywall e marque-os de leve a lápis."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Checking for hidden pipes and cables",
+     "g": "Scan walls before drilling and know which zones are risky.",
+     "p": [
+      "Pipes and cables often run straight up, down and sideways from sockets and switches.",
+      "Use a detector that finds metal, pipes and live wiring, and still stay cautious.",
+      "If you are unsure what is behind a wall, do not drill; ask a professional."
+     ],
+     "q": "Do you know where pipes and cables run in your home?",
+     "c": "Scan a wall with a detector and mark the zones to avoid."
+    },
+    "de": {
+     "t": "Verdeckte Leitungen prüfen",
+     "g": "Scanne Wände vor dem Bohren und kenne die riskanten Zonen.",
+     "p": [
+      "Rohre und Kabel verlaufen oft senkrecht und waagerecht von Steckdosen und Schaltern.",
+      "Nutze ein Gerät, das Metall, Rohre und Strom erkennt, und bleibe trotzdem vorsichtig.",
+      "Bist du unsicher, was hinter der Wand liegt, bohre nicht und frag einen Fachmann."
+     ],
+     "q": "Weißt du, wo in deinem Zuhause Rohre und Kabel verlaufen?",
+     "c": "Scanne eine Wand mit einem Ortungsgerät und markiere die zu meidenden Zonen."
+    },
+    "es": {
+     "t": "Comprobar tuberías y cables ocultos",
+     "g": "Escanea las paredes antes de taladrar y conoce las zonas de riesgo.",
+     "p": [
+      "Tuberías y cables suelen ir en vertical y horizontal desde enchufes e interruptores.",
+      "Usa un detector de metal, tuberías y cables con corriente, y aun así sé cauto.",
+      "Si no sabes qué hay tras la pared, no taladres: consulta a un profesional."
+     ],
+     "q": "¿Sabes por dónde pasan tuberías y cables en tu casa?",
+     "c": "Escanea una pared con un detector y marca las zonas que debes evitar."
+    },
+    "fr": {
+     "t": "Vérifier tuyaux et câbles cachés",
+     "g": "Scanne les murs avant de percer et connais les zones à risque.",
+     "p": [
+      "Tuyaux et câbles partent souvent à la verticale et à l'horizontale depuis prises et interrupteurs.",
+      "Utilise un détecteur de métal, tuyaux et fils sous tension, et reste prudent.",
+      "Si tu doutes de ce qu'il y a derrière, ne perce pas : demande à un professionnel."
+     ],
+     "q": "Sais-tu où passent tuyaux et câbles chez toi ?",
+     "c": "Scanne un mur avec un détecteur et marque les zones à éviter."
+    },
+    "it": {
+     "t": "Controllare tubi e cavi nascosti",
+     "g": "Scansiona le pareti prima di forare e riconosci le zone a rischio.",
+     "p": [
+      "Tubi e cavi corrono spesso in verticale e orizzontale da prese e interruttori.",
+      "Usa un rilevatore di metalli, tubi e cavi sotto tensione, e resta comunque prudente.",
+      "Se non sai cosa c'è dietro il muro, non forare: chiedi a un professionista."
+     ],
+     "q": "Sai dove passano tubi e cavi in casa tua?",
+     "c": "Scansiona una parete con un rilevatore e segna le zone da evitare."
+    },
+    "pt": {
+     "t": "Verificar canos e cabos escondidos",
+     "g": "Faz um varrimento das paredes antes de furar e conhece as zonas de risco.",
+     "p": [
+      "Canos e cabos correm muitas vezes na vertical e horizontal a partir de tomadas e interruptores.",
+      "Usa um detetor de metal, canos e cabos com corrente e mesmo assim tem cuidado.",
+      "Se não sabes o que há atrás da parede, não furar: pergunta a um profissional."
+     ],
+     "q": "Sabes por onde passam canos e cabos em tua casa?",
+     "c": "Faz o varrimento de uma parede com um detetor e marca as zonas a evitar."
+    },
+    "pt_BR": {
+     "t": "Verificando canos e fios escondidos",
+     "g": "Escaneie as paredes antes de furar e conheça as zonas de risco.",
+     "p": [
+      "Canos e fios costumam correr na vertical e horizontal a partir de tomadas e interruptores.",
+      "Use um detector de metal, canos e fios com energia e mesmo assim tenha cuidado.",
+      "Se não sabe o que há atrás da parede, não fure: consulte um profissional."
+     ],
+     "q": "Você sabe por onde passam canos e fios na sua casa?",
+     "c": "Escaneie uma parede com um detector e marque as zonas a evitar."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Types of walls",
+     "g": "Know solid masonry, plasterboard and timber stud walls and how they behave.",
+     "p": [
+      "Masonry walls are hard and need a hammer-action drill and plugs.",
+      "Plasterboard is hollow and needs special fixings unless you hit a stud.",
+      "Knock, tap and look at the edges of the room to guess what you have."
+     ],
+     "q": "What kind of walls do you think you have at home?",
+     "c": "Tap three different walls and note which sound hollow and which solid."
+    },
+    "de": {
+     "t": "Wandarten",
+     "g": "Kenne Massivwand, Trockenbau und Holzständerwand und ihr Verhalten.",
+     "p": [
+      "Massivwände sind hart und brauchen Schlagbohrer und Dübel.",
+      "Trockenbau ist hohl und braucht spezielle Befestigungen, wenn du keinen Ständer triffst.",
+      "Klopfe, horche und beachte die Raumkanten, um zu erraten, was du hast."
+     ],
+     "q": "Welche Wände vermutest du bei dir zu Hause?",
+     "c": "Klopfe drei verschiedene Wände ab und notiere, welche hohl und welche massiv klingen."
+    },
+    "es": {
+     "t": "Tipos de paredes",
+     "g": "Conoce paredes macizas, de pladur y de entramado de madera y cómo se comportan.",
+     "p": [
+      "Las paredes macizas son duras y piden taladro percutor y tacos.",
+      "El pladur es hueco y necesita fijaciones especiales si no das con un montante.",
+      "Golpea, escucha y observa los bordes de la habitación para adivinar qué tienes."
+     ],
+     "q": "¿Qué tipo de paredes crees que tienes en casa?",
+     "c": "Golpea tres paredes distintas y anota cuáles suenan huecas y cuáles macizas."
+    },
+    "fr": {
+     "t": "Les types de murs",
+     "g": "Connais murs pleins, plaques de plâtre et cloisons à ossature bois et leur comportement.",
+     "p": [
+      "Les murs pleins sont durs et demandent une perceuse à percussion et des chevilles.",
+      "Les plaques de plâtre sont creuses et demandent des fixations spéciales hors montant.",
+      "Tapote, écoute et observe les bords de la pièce pour deviner ce que tu as."
+     ],
+     "q": "Quels types de murs penses-tu avoir chez toi ?",
+     "c": "Tapote trois murs différents et note lesquels sonnent creux ou plein."
+    },
+    "it": {
+     "t": "I tipi di pareti",
+     "g": "Conosci muri pieni, cartongesso e pareti a montanti di legno e come si comportano.",
+     "p": [
+      "I muri pieni sono duri e richiedono trapano a percussione e tasselli.",
+      "Il cartongesso è cavo e richiede fissaggi speciali se non trovi un montante.",
+      "Batti, ascolta e osserva i bordi della stanza per capire cosa hai."
+     ],
+     "q": "Che tipo di pareti pensi di avere in casa?",
+     "c": "Batti tre pareti diverse e annota quali suonano vuote e quali piene."
+    },
+    "pt": {
+     "t": "Tipos de paredes",
+     "g": "Conhece paredes maciças, de pladur e de estrutura em madeira e como se comportam.",
+     "p": [
+      "As paredes maciças são duras e pedem berbequim de percussão e buchas.",
+      "O pladur é oco e precisa de fixações especiais se não acertares num montante.",
+      "Bate, escuta e observa os cantos da divisão para adivinhar o que tens."
+     ],
+     "q": "Que tipo de paredes achas que tens em casa?",
+     "c": "Bate em três paredes diferentes e anota quais soam ocas e quais maciças."
+    },
+    "pt_BR": {
+     "t": "Tipos de paredes",
+     "g": "Conheça paredes maciças, de drywall e de estrutura de madeira e como se comportam.",
+     "p": [
+      "As paredes maciças são duras e pedem furadeira de impacto e buchas.",
+      "O drywall é oco e precisa de fixações especiais se você não achar um montante.",
+      "Bata, escute e observe as bordas do cômodo para adivinhar o que tem."
+     ],
+     "q": "Que tipo de paredes você acha que tem em casa?",
+     "c": "Bata em três paredes diferentes e anote quais soam ocas e quais maciças."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wall plugs and anchors",
+     "g": "Choose plugs, spring toggles and cavity fixings for each wall type.",
+     "p": [
+      "Plastic plugs grip in solid masonry with a matching screw.",
+      "Spring toggles and cavity anchors spread the load behind plasterboard.",
+      "Check the weight rating on the pack and choose the size to match."
+     ],
+     "q": "Which things at home do you worry might be too heavy for the wall?",
+     "c": "Match three fixings to three wall types and read their weight ratings."
+    },
+    "de": {
+     "t": "Dübel und Anker",
+     "g": "Wähle Dübel, Federklappdübel und Hohlraumdübel für jede Wandart.",
+     "p": [
+      "Kunststoffdübel halten mit der passenden Schraube in Massivwand.",
+      "Federklapp- und Hohlraumdübel verteilen die Last hinter Trockenbauplatten.",
+      "Prüfe die Tragkraft auf der Packung und wähle die passende Größe."
+     ],
+     "q": "Welche Dinge bei dir sind vielleicht zu schwer für die Wand?",
+     "c": "Ordne drei Befestigungen drei Wandarten zu und lies ihre Tragkraft."
+    },
+    "es": {
+     "t": "Tacos y anclajes",
+     "g": "Elige tacos, mariposas y anclajes para cavidades según el tipo de pared.",
+     "p": [
+      "Los tacos de plástico agarran en pared maciza con el tornillo adecuado.",
+      "Las mariposas y anclajes para cavidades reparten la carga tras el pladur.",
+      "Mira la carga máxima en el envase y elige el tamaño correspondiente."
+     ],
+     "q": "¿Qué cosas de casa temes que sean demasiado pesadas para la pared?",
+     "c": "Empareja tres fijaciones con tres tipos de pared y lee su carga máxima."
+    },
+    "fr": {
+     "t": "Chevilles et ancrages",
+     "g": "Choisis chevilles, chevilles à bascule et fixations creuses selon le mur.",
+     "p": [
+      "Les chevilles plastique tiennent dans un mur plein avec la vis adaptée.",
+      "Les chevilles à bascule et pour cloisons creuses répartissent la charge derrière le placo.",
+      "Vérifie la charge maximale sur l'emballage et choisis la taille adaptée."
+     ],
+     "q": "Quels objets chez toi risquent d'être trop lourds pour le mur ?",
+     "c": "Associe trois fixations à trois types de murs et lis leurs charges maximales."
+    },
+    "it": {
+     "t": "Tasselli e ancoraggi",
+     "g": "Scegli tasselli, tasselli a molla e fissaggi per cavità secondo la parete.",
+     "p": [
+      "I tasselli di plastica tengono nel muro pieno con la vite giusta.",
+      "I tasselli a molla e per cavità distribuiscono il carico dietro il cartongesso.",
+      "Controlla il carico massimo sulla confezione e scegli la misura adatta."
+     ],
+     "q": "Quali cose di casa temi siano troppo pesanti per il muro?",
+     "c": "Abbina tre fissaggi a tre tipi di parete e leggi i loro carichi massimi."
+    },
+    "pt": {
+     "t": "Buchas e ancoragens",
+     "g": "Escolhe buchas, borboletas e ancoragens para cavidades conforme a parede.",
+     "p": [
+      "As buchas de plástico seguram em parede maciça com o parafuso certo.",
+      "As borboletas e ancoragens de cavidade distribuem a carga atrás do pladur.",
+      "Vê a carga máxima na embalagem e escolhe o tamanho correspondente."
+     ],
+     "q": "Que coisas em casa temes serem pesadas demais para a parede?",
+     "c": "Associa três fixações a três tipos de parede e lê as suas cargas máximas."
+    },
+    "pt_BR": {
+     "t": "Buchas e ancoragens",
+     "g": "Escolha buchas, borboletas e ancoragens para cavidades conforme a parede.",
+     "p": [
+      "As buchas de plástico seguram em parede maciça com o parafuso certo.",
+      "As borboletas e ancoragens de cavidade distribuem a carga atrás do drywall.",
+      "Veja a carga máxima na embalagem e escolha o tamanho correspondente."
+     ],
+     "q": "Que coisas da sua casa você teme que sejam pesadas demais para a parede?",
+     "c": "Associe três fixações a três tipos de parede e leia suas cargas máximas."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hanging a picture",
+     "g": "Hang frames level with hooks, wire and a good eye height.",
+     "p": [
+      "Hang the centre of the picture around eye level, roughly 145 centimetres.",
+      "Match the hook to the weight and wall; heavier frames need two hooks.",
+      "Use a level and a pencil mark before making any hole."
+     ],
+     "q": "What is the picture or photo you most want on your wall?",
+     "c": "Hang one light frame: mark, check with a level, fix and step back."
+    },
+    "de": {
+     "t": "Ein Bild aufhängen",
+     "g": "Hänge Rahmen gerade auf mit Haken, Draht und guter Augenhöhe.",
+     "p": [
+      "Hänge die Bildmitte etwa auf Augenhöhe, rund 145 Zentimeter.",
+      "Wähle den Haken passend zu Gewicht und Wand; schwere Rahmen brauchen zwei Haken.",
+      "Nutze Wasserwaage und Bleistiftmarkierung, bevor du ein Loch machst."
+     ],
+     "q": "Welches Bild oder Foto möchtest du am liebsten an deiner Wand?",
+     "c": "Hänge einen leichten Rahmen auf: anzeichnen, mit der Wasserwaage prüfen, befestigen, zurücktreten."
+    },
+    "es": {
+     "t": "Colgar un cuadro",
+     "g": "Cuelga marcos nivelados con ganchos, alambre y buena altura de ojos.",
+     "p": [
+      "Cuelga el centro del cuadro hacia la altura de los ojos, unos 145 centímetros.",
+      "Elige el gancho según peso y pared; los marcos pesados piden dos ganchos.",
+      "Usa nivel y una marca a lápiz antes de hacer ningún agujero."
+     ],
+     "q": "¿Qué cuadro o foto te gustaría más en tu pared?",
+     "c": "Cuelga un marco ligero: marca, comprueba con nivel, fija y mira desde lejos."
+    },
+    "fr": {
+     "t": "Accrocher un tableau",
+     "g": "Accroche des cadres droits avec crochets, fil et bonne hauteur d'œil.",
+     "p": [
+      "Place le centre du tableau à hauteur d'yeux, environ 145 centimètres.",
+      "Choisis le crochet selon le poids et le mur ; les cadres lourds demandent deux crochets.",
+      "Utilise un niveau et un repère au crayon avant de faire un trou."
+     ],
+     "q": "Quel tableau ou quelle photo aimerais-tu le plus sur ton mur ?",
+     "c": "Accroche un cadre léger : marque, vérifie au niveau, fixe et recule."
+    },
+    "it": {
+     "t": "Appendere un quadro",
+     "g": "Appendi cornici in piano con ganci, filo e una buona altezza degli occhi.",
+     "p": [
+      "Appendi il centro del quadro circa all'altezza degli occhi, 145 centimetri.",
+      "Scegli il gancio in base a peso e parete; le cornici pesanti richiedono due ganci.",
+      "Usa livella e un segno a matita prima di fare qualsiasi foro."
+     ],
+     "q": "Quale quadro o foto vorresti di più sulla tua parete?",
+     "c": "Appendi una cornice leggera: segna, controlla con la livella, fissa e allontanati."
+    },
+    "pt": {
+     "t": "Pendurar um quadro",
+     "g": "Pendura molduras direitas com ganchos, fio e boa altura dos olhos.",
+     "p": [
+      "Pendura o centro do quadro à altura dos olhos, cerca de 145 centímetros.",
+      "Escolhe o gancho conforme peso e parede; molduras pesadas pedem dois ganchos.",
+      "Usa nível e uma marca a lápis antes de fazeres qualquer furo."
+     ],
+     "q": "Que quadro ou foto gostarias mais de ter na parede?",
+     "c": "Pendura uma moldura leve: marca, confere com o nível, fixa e afasta-te."
+    },
+    "pt_BR": {
+     "t": "Pendurando um quadro",
+     "g": "Pendure quadros retos com ganchos, fio e boa altura dos olhos.",
+     "p": [
+      "Pendure o centro do quadro à altura dos olhos, cerca de 145 centímetros.",
+      "Escolha o gancho conforme peso e parede; quadros pesados pedem dois ganchos.",
+      "Use nível e uma marca a lápis antes de fazer qualquer furo."
+     ],
+     "q": "Que quadro ou foto você mais gostaria de ter na parede?",
+     "c": "Pendure um quadro leve: marque, confira com o nível, fixe e afaste-se."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hanging a mirror securely",
+     "g": "Hang heavier items with weight ratings, D-rings and the right fixings.",
+     "p": [
+      "Check the mirror weight and choose fixings rated well above it.",
+      "D-rings and straps are safer than a single wire for heavy mirrors.",
+      "Fix into studs or use heavy-duty anchors, and ask for help lifting."
+     ],
+     "q": "Where would a mirror make your home brighter?",
+     "c": "Weigh or look up a mirror's weight and pick fixings rated higher."
+    },
+    "de": {
+     "t": "Einen Spiegel sicher aufhängen",
+     "g": "Hänge Schwereres auf mit Tragkraftangabe, D-Ringen und passenden Befestigungen.",
+     "p": [
+      "Prüfe das Spiegelgewicht und wähle Befestigungen mit deutlich höherer Tragkraft.",
+      "D-Ringe und Gurte sind für schwere Spiegel sicherer als ein einzelner Draht.",
+      "Befestige in Ständern oder mit Schwerlastankern und lass dir beim Heben helfen."
+     ],
+     "q": "Wo würde ein Spiegel dein Zuhause heller machen?",
+     "c": "Wiege einen Spiegel oder suche sein Gewicht und wähle Befestigungen mit höherer Tragkraft."
+    },
+    "es": {
+     "t": "Colgar un espejo con seguridad",
+     "g": "Cuelga objetos pesados con carga máxima, anillas en D y fijaciones adecuadas.",
+     "p": [
+      "Comprueba el peso del espejo y elige fijaciones con una carga muy superior.",
+      "Las anillas en D y correas son más seguras que un solo alambre en espejos pesados.",
+      "Fija en montantes o usa anclajes de alta resistencia y pide ayuda para levantarlo."
+     ],
+     "q": "¿Dónde haría un espejo tu casa más luminosa?",
+     "c": "Pesa un espejo o busca su peso y elige fijaciones con carga mayor."
+    },
+    "fr": {
+     "t": "Accrocher un miroir en sécurité",
+     "g": "Accroche les objets lourds avec charge maximale, anneaux en D et bonnes fixations.",
+     "p": [
+      "Vérifie le poids du miroir et choisis des fixations prévues pour bien plus.",
+      "Anneaux en D et sangles sont plus sûrs qu'un seul fil pour les miroirs lourds.",
+      "Fixe dans des montants ou avec des chevilles lourdes et demande de l'aide pour soulever."
+     ],
+     "q": "Où un miroir rendrait-il ta maison plus lumineuse ?",
+     "c": "Pèse un miroir ou cherche son poids et choisis des fixations de charge supérieure."
+    },
+    "it": {
+     "t": "Appendere uno specchio in sicurezza",
+     "g": "Appendi oggetti pesanti con carico massimo, anelli a D e fissaggi adatti.",
+     "p": [
+      "Controlla il peso dello specchio e scegli fissaggi con carico molto superiore.",
+      "Anelli a D e cinghie sono più sicuri di un solo filo per gli specchi pesanti.",
+      "Fissa nei montanti o usa ancoraggi pesanti e chiedi aiuto per sollevare."
+     ],
+     "q": "Dove uno specchio renderebbe la tua casa più luminosa?",
+     "c": "Pesa uno specchio o cerca il suo peso e scegli fissaggi con carico maggiore."
+    },
+    "pt": {
+     "t": "Pendurar um espelho em segurança",
+     "g": "Pendura objetos pesados com carga máxima, argolas em D e fixações adequadas.",
+     "p": [
+      "Verifica o peso do espelho e escolhe fixações com carga muito superior.",
+      "Argolas em D e fitas são mais seguras do que um só fio em espelhos pesados.",
+      "Fixa em montantes ou usa ancoragens reforçadas e pede ajuda para levantar."
+     ],
+     "q": "Onde um espelho deixaria a tua casa mais luminosa?",
+     "c": "Pesa um espelho ou procura o seu peso e escolhe fixações com carga maior."
+    },
+    "pt_BR": {
+     "t": "Pendurando um espelho com segurança",
+     "g": "Pendure objetos pesados com carga máxima, argolas em D e fixações adequadas.",
+     "p": [
+      "Confira o peso do espelho e escolha fixações com carga bem superior.",
+      "Argolas em D e cintas são mais seguras do que um só fio em espelhos pesados.",
+      "Fixe em montantes ou use ancoragens reforçadas e peça ajuda para levantar."
+     ],
+     "q": "Onde um espelho deixaria sua casa mais iluminada?",
+     "c": "Pese um espelho ou procure seu peso e escolha fixações com carga maior."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Arranging a gallery wall",
+     "g": "Plan layouts with paper templates before making any holes.",
+     "p": [
+      "Trace each frame on paper and tape the shapes to the wall.",
+      "Keep gaps even, often about five to eight centimetres between frames.",
+      "Move paper around until it feels balanced, then mark the nail spots."
+     ],
+     "q": "What photos or art would you put on a gallery wall?",
+     "c": "Cut paper templates for four frames and tape a layout to a wall."
+    },
+    "de": {
+     "t": "Eine Bilderwand gestalten",
+     "g": "Plane Anordnungen mit Papierschablonen, bevor du Löcher bohrst.",
+     "p": [
+      "Zeichne jeden Rahmen auf Papier und klebe die Formen an die Wand.",
+      "Halte gleichmäßige Abstände, oft fünf bis acht Zentimeter zwischen den Rahmen.",
+      "Verschiebe das Papier, bis es ausgewogen wirkt, und markiere dann die Nagelpunkte."
+     ],
+     "q": "Welche Fotos oder Kunst würdest du an eine Bilderwand hängen?",
+     "c": "Schneide Papierschablonen für vier Rahmen aus und klebe eine Anordnung an die Wand."
+    },
+    "es": {
+     "t": "Organizar una pared de cuadros",
+     "g": "Planifica la distribución con plantillas de papel antes de hacer agujeros.",
+     "p": [
+      "Calca cada marco en papel y pega las formas en la pared.",
+      "Mantén separaciones iguales, a menudo de cinco a ocho centímetros entre marcos.",
+      "Mueve los papeles hasta lograr equilibrio y marca después los puntos de clavo."
+     ],
+     "q": "¿Qué fotos o arte pondrías en una pared de cuadros?",
+     "c": "Recorta plantillas de papel para cuatro marcos y pega una distribución en la pared."
+    },
+    "fr": {
+     "t": "Composer un mur de cadres",
+     "g": "Planifie la disposition avec des gabarits en papier avant de percer.",
+     "p": [
+      "Trace chaque cadre sur du papier et scotche les formes au mur.",
+      "Garde des espaces réguliers, souvent cinq à huit centimètres entre cadres.",
+      "Déplace les papiers jusqu'à l'équilibre, puis marque les points de clou."
+     ],
+     "q": "Quelles photos ou œuvres mettrais-tu sur un mur de cadres ?",
+     "c": "Découpe quatre gabarits en papier et scotche une disposition au mur."
+    },
+    "it": {
+     "t": "Comporre una parete di quadri",
+     "g": "Pianifica la disposizione con sagome di carta prima di fare fori.",
+     "p": [
+      "Ricalca ogni cornice su carta e attacca le sagome alla parete.",
+      "Mantieni spazi uniformi, spesso da cinque a otto centimetri tra le cornici.",
+      "Sposta i fogli finché è equilibrato, poi segna i punti dei chiodi."
+     ],
+     "q": "Quali foto o opere metteresti su una parete di quadri?",
+     "c": "Ritaglia sagome di carta per quattro cornici e attacca una disposizione alla parete."
+    },
+    "pt": {
+     "t": "Compor uma parede de quadros",
+     "g": "Planeia a disposição com moldes de papel antes de fazer furos.",
+     "p": [
+      "Contorna cada moldura em papel e cola as formas na parede.",
+      "Mantém espaços iguais, muitas vezes de cinco a oito centímetros entre molduras.",
+      "Move os papéis até haver equilíbrio e marca depois os pontos dos pregos."
+     ],
+     "q": "Que fotos ou arte porias numa parede de quadros?",
+     "c": "Recorta moldes de papel para quatro molduras e cola uma disposição na parede."
+    },
+    "pt_BR": {
+     "t": "Montando uma parede de quadros",
+     "g": "Planeje a disposição com moldes de papel antes de fazer furos.",
+     "p": [
+      "Contorne cada moldura em papel e cole as formas na parede.",
+      "Mantenha espaços iguais, em geral de cinco a oito centímetros entre molduras.",
+      "Mova os papéis até ficar equilibrado e marque depois os pontos dos pregos."
+     ],
+     "q": "Que fotos ou arte você poria numa parede de quadros?",
+     "c": "Recorte moldes de papel para quatro molduras e cole uma disposição na parede."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Putting up a floating shelf",
+     "g": "Mount a shelf with hidden brackets, careful levelling and weight limits.",
+     "p": [
+      "Find studs or use heavy anchors rated for the shelf and its load.",
+      "Fix the hidden bracket level first, then slide the shelf on.",
+      "Keep loads light and never exceed the limit on the instructions."
+     ],
+     "q": "What would you put on a floating shelf in your home?",
+     "c": "Plan a floating shelf: choose height, mark studs, and check the weight limit."
+    },
+    "de": {
+     "t": "Ein schwebendes Regal montieren",
+     "g": "Montiere ein Regal mit verdeckten Trägern, sorgfältigem Ausrichten und Tragkraft.",
+     "p": [
+      "Finde Ständer oder nutze Schwerlastanker passend zu Regal und Last.",
+      "Befestige zuerst den verdeckten Träger waagerecht, dann schiebe das Regal auf.",
+      "Belaste leicht und überschreite nie die Grenze der Anleitung."
+     ],
+     "q": "Was würdest du auf ein schwebendes Regal stellen?",
+     "c": "Plane ein schwebendes Regal: Höhe wählen, Ständer markieren, Tragkraft prüfen."
+    },
+    "es": {
+     "t": "Montar una estantería flotante",
+     "g": "Monta una balda con soportes ocultos, buena nivelación y límites de peso.",
+     "p": [
+      "Busca montantes o usa anclajes pesados adecuados para la balda y su carga.",
+      "Fija primero el soporte oculto a nivel y luego desliza la balda.",
+      "Mantén cargas ligeras y nunca superes el límite de las instrucciones."
+     ],
+     "q": "¿Qué pondrías en una balda flotante en tu casa?",
+     "c": "Planifica una balda flotante: elige altura, marca montantes y revisa el peso máximo."
+    },
+    "fr": {
+     "t": "Poser une étagère flottante",
+     "g": "Monte une étagère à fixations cachées, bien de niveau et dans les limites de charge.",
+     "p": [
+      "Trouve les montants ou utilise des chevilles lourdes adaptées à l'étagère et à sa charge.",
+      "Fixe d'abord le support caché de niveau, puis glisse l'étagère dessus.",
+      "Garde des charges légères et ne dépasse jamais la limite de la notice."
+     ],
+     "q": "Que poserais-tu sur une étagère flottante chez toi ?",
+     "c": "Planifie une étagère flottante : choisis la hauteur, marque les montants, vérifie la charge max."
+    },
+    "it": {
+     "t": "Montare una mensola flottante",
+     "g": "Monta una mensola con supporti nascosti, buona livellatura e limiti di peso.",
+     "p": [
+      "Trova i montanti o usa ancoraggi pesanti adatti alla mensola e al carico.",
+      "Fissa prima il supporto nascosto in piano, poi infila la mensola.",
+      "Mantieni carichi leggeri e non superare mai il limite delle istruzioni."
+     ],
+     "q": "Cosa metteresti su una mensola flottante in casa?",
+     "c": "Pianifica una mensola flottante: scegli l'altezza, segna i montanti, controlla il carico massimo."
+    },
+    "pt": {
+     "t": "Montar uma prateleira flutuante",
+     "g": "Monta uma prateleira com suportes ocultos, bom nivelamento e limites de peso.",
+     "p": [
+      "Encontra montantes ou usa ancoragens pesadas adequadas à prateleira e à carga.",
+      "Fixa primeiro o suporte oculto a nível e depois encaixa a prateleira.",
+      "Mantém cargas leves e nunca excedas o limite das instruções."
+     ],
+     "q": "O que porias numa prateleira flutuante em casa?",
+     "c": "Planeia uma prateleira flutuante: escolhe a altura, marca montantes e vê o peso máximo."
+    },
+    "pt_BR": {
+     "t": "Instalando uma prateleira flutuante",
+     "g": "Monte uma prateleira com suportes ocultos, bom nivelamento e limites de peso.",
+     "p": [
+      "Ache montantes ou use ancoragens pesadas adequadas à prateleira e à carga.",
+      "Fixe primeiro o suporte oculto nivelado e depois encaixe a prateleira.",
+      "Mantenha cargas leves e nunca ultrapasse o limite do manual."
+     ],
+     "q": "O que você poria numa prateleira flutuante em casa?",
+     "c": "Planeje uma prateleira flutuante: escolha a altura, marque montantes e veja o peso máximo."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Installing bracket shelves",
+     "g": "Space brackets well, fix into studs and check the load.",
+     "p": [
+      "Place brackets about a quarter in from each end of the shelf.",
+      "Screw them into studs or heavy anchors, with the long arm underneath.",
+      "Check level, then add the shelf and test with a light load first."
+     ],
+     "q": "What would you store on shelves if you had more room?",
+     "c": "Mark bracket positions on a wall and check them with a level."
+    },
+    "de": {
+     "t": "Regalträger montieren",
+     "g": "Setze Träger mit gutem Abstand, befestige sie in Ständern und prüfe die Last.",
+     "p": [
+      "Platziere Träger etwa ein Viertel der Länge von jedem Ende entfernt.",
+      "Schraube sie in Ständer oder Schwerlastanker, der lange Arm nach unten.",
+      "Prüfe die Waagerechte, lege das Brett auf und teste erst mit leichter Last."
+     ],
+     "q": "Was würdest du in Regalen lagern, wenn du mehr Platz hättest?",
+     "c": "Markiere Trägerpositionen an einer Wand und prüfe sie mit der Wasserwaage."
+    },
+    "es": {
+     "t": "Instalar estantes con escuadras",
+     "g": "Reparte bien las escuadras, fíjalas a montantes y comprueba la carga.",
+     "p": [
+      "Coloca las escuadras a un cuarto de la longitud desde cada extremo.",
+      "Atorníllalas a montantes o anclajes pesados, con el brazo largo debajo.",
+      "Comprueba el nivel, pon la balda y prueba primero con poca carga."
+     ],
+     "q": "¿Qué guardarías en estantes si tuvieras más espacio?",
+     "c": "Marca las posiciones de las escuadras en una pared y comprueba el nivel."
+    },
+    "fr": {
+     "t": "Installer des étagères sur équerres",
+     "g": "Espace bien les équerres, fixe-les dans les montants et vérifie la charge.",
+     "p": [
+      "Place les équerres à environ un quart de la longueur depuis chaque bout.",
+      "Visse-les dans les montants ou chevilles lourdes, le grand bras dessous.",
+      "Vérifie le niveau, pose l'étagère et teste d'abord avec une charge légère."
+     ],
+     "q": "Que rangerais-tu sur des étagères si tu avais plus de place ?",
+     "c": "Marque les positions des équerres sur un mur et vérifie-les au niveau."
+    },
+    "it": {
+     "t": "Installare mensole con staffe",
+     "g": "Distanzia bene le staffe, fissale nei montanti e controlla il carico.",
+     "p": [
+      "Metti le staffe a circa un quarto della lunghezza da ciascuna estremità.",
+      "Avvitale nei montanti o in ancoraggi pesanti, con il braccio lungo sotto.",
+      "Controlla la livella, appoggia la mensola e prova prima con un carico leggero."
+     ],
+     "q": "Cosa conserveresti su mensole se avessi più spazio?",
+     "c": "Segna le posizioni delle staffe su una parete e controllale con la livella."
+    },
+    "pt": {
+     "t": "Instalar prateleiras com suportes",
+     "g": "Distribui bem os suportes, fixa-os em montantes e verifica a carga.",
+     "p": [
+      "Coloca os suportes a cerca de um quarto do comprimento de cada ponta.",
+      "Aparafusa-os em montantes ou ancoragens pesadas, com o braço longo por baixo.",
+      "Confirma o nível, coloca a prateleira e testa primeiro com carga leve."
+     ],
+     "q": "O que guardarias em prateleiras se tivesses mais espaço?",
+     "c": "Marca as posições dos suportes numa parede e confirma o nível."
+    },
+    "pt_BR": {
+     "t": "Instalando prateleiras com suportes",
+     "g": "Distribua bem os suportes, fixe-os em montantes e confira a carga.",
+     "p": [
+      "Coloque os suportes a cerca de um quarto do comprimento de cada ponta.",
+      "Parafuse-os em montantes ou ancoragens pesadas, com o braço longo por baixo.",
+      "Confira o nível, coloque a prateleira e teste primeiro com carga leve."
+     ],
+     "q": "O que você guardaria em prateleiras se tivesse mais espaço?",
+     "c": "Marque as posições dos suportes numa parede e confira o nível."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mounting curtain rails",
+     "g": "Measure width and height and fix brackets securely for curtains.",
+     "p": [
+      "Extend the rail beyond the window so curtains clear the glass.",
+      "Mount about ten to fifteen centimetres above the frame for height.",
+      "Fix brackets level, with one near each end and one in the middle for long rails."
+     ],
+     "q": "Do you like curtains, blinds or something else at your windows?",
+     "c": "Measure a window, plan the rail length and mark the bracket spots."
+    },
+    "de": {
+     "t": "Gardinenstangen anbringen",
+     "g": "Miss Breite und Höhe und befestige Halter sicher für Vorhänge.",
+     "p": [
+      "Lass die Stange über das Fenster hinausragen, damit Vorhänge die Scheibe freigeben.",
+      "Montiere sie etwa zehn bis fünfzehn Zentimeter über dem Rahmen für mehr Höhe.",
+      "Befestige Halter waagerecht, je einen an den Enden und bei langen Stangen einen in der Mitte."
+     ],
+     "q": "Magst du Vorhänge, Jalousien oder etwas anderes an deinen Fenstern?",
+     "c": "Miss ein Fenster, plane die Stangenlänge und markiere die Halterstellen."
+    },
+    "es": {
+     "t": "Montar barras de cortinas",
+     "g": "Mide ancho y alto y fija bien los soportes para las cortinas.",
+     "p": [
+      "Haz que la barra sobresalga de la ventana para que las cortinas dejen libre el cristal.",
+      "Móntala unos diez a quince centímetros sobre el marco para dar altura.",
+      "Fija los soportes a nivel, uno en cada extremo y otro en medio si es larga."
+     ],
+     "q": "¿Prefieres cortinas, estores u otra cosa en tus ventanas?",
+     "c": "Mide una ventana, planifica el largo de la barra y marca los puntos de soporte."
+    },
+    "fr": {
+     "t": "Poser une tringle à rideaux",
+     "g": "Mesure largeur et hauteur et fixe solidement les supports pour les rideaux.",
+     "p": [
+      "Prévois une tringle plus large que la fenêtre pour dégager la vitre.",
+      "Monte-la à environ dix à quinze centimètres au-dessus du cadre pour la hauteur.",
+      "Fixe les supports de niveau, un à chaque bout et un au milieu si elle est longue."
+     ],
+     "q": "Préfères-tu rideaux, stores ou autre à tes fenêtres ?",
+     "c": "Mesure une fenêtre, prévois la longueur de tringle et marque les supports."
+    },
+    "it": {
+     "t": "Montare bastoni per tende",
+     "g": "Misura larghezza e altezza e fissa saldamente i supporti per le tende.",
+     "p": [
+      "Fai sporgere il bastone oltre la finestra per lasciare libero il vetro.",
+      "Montalo circa dieci o quindici centimetri sopra il telaio per dare altezza.",
+      "Fissa i supporti in piano, uno a ogni estremità e uno al centro se è lungo."
+     ],
+     "q": "Preferisci tende, tapparelle o altro alle finestre?",
+     "c": "Misura una finestra, pianifica la lunghezza del bastone e segna i punti dei supporti."
+    },
+    "pt": {
+     "t": "Montar varões de cortinados",
+     "g": "Mede largura e altura e fixa bem os suportes para os cortinados.",
+     "p": [
+      "Faz o varão exceder a janela para os cortinados libertarem o vidro.",
+      "Monta-o cerca de dez a quinze centímetros acima da moldura para dar altura.",
+      "Fixa os suportes a nível, um em cada ponta e um ao meio se for comprido."
+     ],
+     "q": "Preferes cortinados, estores ou outra coisa nas janelas?",
+     "c": "Mede uma janela, planeia o comprimento do varão e marca os pontos dos suportes."
+    },
+    "pt_BR": {
+     "t": "Instalando varões de cortina",
+     "g": "Meça largura e altura e fixe bem os suportes para as cortinas.",
+     "p": [
+      "Faça o varão exceder a janela para as cortinas liberarem o vidro.",
+      "Instale cerca de dez a quinze centímetros acima do batente para dar altura.",
+      "Fixe os suportes nivelados, um em cada ponta e um no meio se for longo."
+     ],
+     "q": "Você prefere cortinas, persianas ou outra coisa nas janelas?",
+     "c": "Meça uma janela, planeje o comprimento do varão e marque os pontos dos suportes."
+    }
+   }
+  }
+ ]
+}

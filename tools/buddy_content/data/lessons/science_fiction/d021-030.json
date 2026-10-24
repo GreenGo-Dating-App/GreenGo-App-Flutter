@@ -1,0 +1,835 @@
+{
+ "topic": "science_fiction",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first SF short story",
+     "g": "Learn why short stories are the perfect entry point into SF.",
+     "p": [
+      "A short story can be read in one sitting, so a big idea arrives without a long commitment.",
+      "Classics by Asimov, Bradbury, Clarke and Le Guin are easy to find in collections.",
+      "Pick one with an idea that interests you and read it slowly, noticing the 'what if'."
+     ],
+     "q": "Which short story or author would you like to try first?",
+     "c": "Choose a short SF story today and write its 'what if' in one sentence."
+    },
+    "de": {
+     "t": "Deine erste SF-Kurzgeschichte",
+     "g": "Erfahren, warum Kurzgeschichten der perfekte Einstieg in die SF sind.",
+     "p": [
+      "Eine Kurzgeschichte liest man in einem Zug, so kommt eine große Idee ohne langes Engagement an.",
+      "Klassiker von Asimov, Bradbury, Clarke und Le Guin gibt es leicht in Sammlungen.",
+      "Wähle eine mit einer Idee, die dich interessiert, und lies sie langsam, achte aufs Was-wäre-wenn."
+     ],
+     "q": "Welche Kurzgeschichte oder welchen Autor möchtest du zuerst probieren?",
+     "c": "Wähle heute eine kurze SF-Geschichte und schreibe ihr Was-wäre-wenn in einem Satz auf."
+    },
+    "es": {
+     "t": "Tu primer relato de CF",
+     "g": "Aprender por qué los cuentos cortos son la puerta de entrada perfecta a la CF.",
+     "p": [
+      "Un cuento se lee de una sentada, así que una gran idea llega sin un compromiso largo.",
+      "Los clásicos de Asimov, Bradbury, Clarke y Le Guin se encuentran fácilmente en antologías.",
+      "Elige uno con una idea que te interese y léelo despacio, fijándote en el qué pasaría si."
+     ],
+     "q": "¿Qué cuento o autor te gustaría probar primero?",
+     "c": "Elige hoy un cuento corto de CF y escribe su '¿y si...?' en una frase."
+    },
+    "fr": {
+     "t": "Ta première nouvelle de SF",
+     "g": "Comprendre pourquoi la nouvelle est la porte d'entrée idéale vers la SF.",
+     "p": [
+      "Une nouvelle se lit d'une traite, donc une grande idée arrive sans long engagement.",
+      "Des classiques d'Asimov, Bradbury, Clarke et Le Guin se trouvent facilement en recueils.",
+      "Choisis-en une dont l'idée t'intéresse et lis-la lentement en repérant le 'et si'."
+     ],
+     "q": "Quelle nouvelle ou quel auteur aimerais-tu essayer en premier ?",
+     "c": "Choisis aujourd'hui une nouvelle de SF et écris son 'et si ?' en une phrase."
+    },
+    "it": {
+     "t": "Il tuo primo racconto di fantascienza",
+     "g": "Capire perché i racconti brevi sono la porta d'ingresso perfetta alla fantascienza.",
+     "p": [
+      "Un racconto si legge in una sola seduta, così una grande idea arriva senza un lungo impegno.",
+      "I classici di Asimov, Bradbury, Clarke e Le Guin si trovano facilmente nelle antologie.",
+      "Scegline uno con un'idea che ti interessa e leggilo lentamente, notando l'e se."
+     ],
+     "q": "Quale racconto o autore vorresti provare per primo?",
+     "c": "Scegli oggi un racconto breve di fantascienza e scrivi il suo 'e se?' in una frase."
+    },
+    "pt": {
+     "t": "O teu primeiro conto de FC",
+     "g": "Perceber porque os contos curtos são a porta de entrada perfeita na FC.",
+     "p": [
+      "Um conto lê-se de uma assentada, por isso uma grande ideia chega sem compromisso longo.",
+      "Os clássicos de Asimov, Bradbury, Clarke e Le Guin encontram-se facilmente em antologias.",
+      "Escolhe um com uma ideia que te interesse e lê-o devagar, reparando no e se."
+     ],
+     "q": "Que conto ou autor gostarias de experimentar primeiro?",
+     "c": "Escolhe hoje um conto curto de FC e escreve o seu 'e se?' numa frase."
+    },
+    "pt_BR": {
+     "t": "Seu primeiro conto de FC",
+     "g": "Entender por que os contos curtos são a porta de entrada perfeita na FC.",
+     "p": [
+      "Um conto se lê de uma sentada, então uma grande ideia chega sem compromisso longo.",
+      "Os clássicos de Asimov, Bradbury, Clarke e Le Guin são fáceis de achar em antologias.",
+      "Escolha um com uma ideia que interesse você e leia devagar, reparando no e se."
+     ],
+     "q": "Que conto ou autor você gostaria de experimentar primeiro?",
+     "c": "Escolha hoje um conto curto de FC e escreva o seu 'e se?' numa frase."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Méliès' A Trip to the Moon",
+     "g": "Discover the 1902 silent film with the rocket in the Moon's eye.",
+     "p": [
+      "Georges Méliès, a French filmmaker and magician, made A Trip to the Moon in 1902.",
+      "Explorers fly in a capsule shot from a cannon, a nod to Jules Verne's story.",
+      "Méliès used playful tricks like stop-motion swaps and painted sets to create wonder."
+     ],
+     "q": "Why do you think such an old film still charms people today?",
+     "c": "Describe in one sentence a handmade special effect you could make with paper and light."
+    },
+    "de": {
+     "t": "Méliès' Die Reise zum Mond",
+     "g": "Den Stummfilm von 1902 mit der Rakete im Mondauge entdecken.",
+     "p": [
+      "Georges Méliès, französischer Filmemacher und Zauberer, drehte 1902 Die Reise zum Mond.",
+      "Forscher fliegen in einer Kapsel aus einer Kanone, eine Verbeugung vor Jules Vernes Geschichte.",
+      "Méliès nutzte spielerische Tricks wie Stopptricks und gemalte Kulissen, um Staunen zu wecken."
+     ],
+     "q": "Warum bezaubert so ein alter Film deiner Meinung nach noch heute?",
+     "c": "Beschreibe in einem Satz einen selbstgemachten Spezialeffekt mit Papier und Licht."
+    },
+    "es": {
+     "t": "Viaje a la Luna de Méliès",
+     "g": "Descubrir la película muda de 1902 con el cohete en el ojo de la Luna.",
+     "p": [
+      "Georges Méliès, cineasta y mago francés, hizo Viaje a la Luna en 1902.",
+      "Los exploradores vuelan en una cápsula disparada por un cañón, guiño a la historia de Jules Verne.",
+      "Méliès usó trucos divertidos, como cambios con cortes y decorados pintados, para crear asombro."
+     ],
+     "q": "¿Por qué crees que una película tan antigua aún encanta hoy?",
+     "c": "Describe en una frase un efecto especial casero que harías con papel y luz."
+    },
+    "fr": {
+     "t": "Le Voyage dans la Lune de Méliès",
+     "g": "Découvrir le film muet de 1902 avec la fusée dans l'oeil de la Lune.",
+     "p": [
+      "Georges Méliès, cinéaste et magicien français, réalise Le Voyage dans la Lune en 1902.",
+      "Des explorateurs volent dans une capsule tirée par un canon, clin d'oeil à l'histoire de Jules Verne.",
+      "Méliès utilise des trucs ludiques, comme les substitutions par arrêt de caméra et les décors peints."
+     ],
+     "q": "Pourquoi un film si ancien charme-t-il encore, selon toi ?",
+     "c": "Décris en une phrase un effet spécial fait maison avec du papier et de la lumière."
+    },
+    "it": {
+     "t": "Il Viaggio nella Luna di Méliès",
+     "g": "Scoprire il film muto del 1902 con il razzo nell'occhio della Luna.",
+     "p": [
+      "Georges Méliès, regista e prestigiatore francese, girò Il viaggio nella Luna nel 1902.",
+      "Gli esploratori volano in una capsula sparata da un cannone, omaggio alla storia di Jules Verne.",
+      "Méliès usò trucchi giocosi, come sostituzioni a camera ferma e scenari dipinti, per creare meraviglia."
+     ],
+     "q": "Perché pensi che un film così antico incanti ancora oggi?",
+     "c": "Descrivi in una frase un effetto speciale artigianale con carta e luce."
+    },
+    "pt": {
+     "t": "A Viagem à Lua de Méliès",
+     "g": "Descobrir o filme mudo de 1902 com o foguetão no olho da Lua.",
+     "p": [
+      "Georges Méliès, cineasta e mágico francês, fez Viagem à Lua em 1902.",
+      "Os exploradores voam numa cápsula disparada por um canhão, piscar de olho à história de Júlio Verne.",
+      "Méliès usou truques divertidos, como substituições com cortes e cenários pintados, para criar fascínio."
+     ],
+     "q": "Porque achas que um filme tão antigo ainda encanta hoje?",
+     "c": "Descreve numa frase um efeito especial caseiro que farias com papel e luz."
+    },
+    "pt_BR": {
+     "t": "A Viagem à Lua de Méliès",
+     "g": "Descobrir o filme mudo de 1902 com o foguete no olho da Lua.",
+     "p": [
+      "Georges Méliès, cineasta e mágico francês, fez Viagem à Lua em 1902.",
+      "Os exploradores voam numa cápsula disparada por um canhão, um aceno à história de Júlio Verne.",
+      "Méliès usou truques divertidos, como substituições com cortes e cenários pintados, para criar fascínio."
+     ],
+     "q": "Por que você acha que um filme tão antigo ainda encanta hoje?",
+     "c": "Descreva numa frase um efeito especial caseiro que você faria com papel e luz."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Metropolis and early SF cinema",
+     "g": "Meet Fritz Lang's 1927 film, its giant city and its famous robot.",
+     "p": [
+      "Metropolis, a German silent film by Fritz Lang, imagines a towering city of the future.",
+      "Its robot Maria, with a shining metal body, inspired many later movie robots.",
+      "The huge sets and miniature effects were among the most ambitious of their time."
+     ],
+     "q": "Which image from an old film would you love to see on a big screen?",
+     "c": "Sketch or describe a tower of your own future city using three striking shapes."
+    },
+    "de": {
+     "t": "Metropolis und das frühe SF-Kino",
+     "g": "Fritz Langs Film von 1927 mit riesiger Stadt und berühmtem Roboter kennenlernen.",
+     "p": [
+      "Metropolis, ein deutscher Stummfilm von Fritz Lang, zeigt eine himmelhohe Stadt der Zukunft.",
+      "Die Roboterfrau Maria mit glänzendem Metallkörper inspirierte viele spätere Filmroboter.",
+      "Die riesigen Kulissen und Miniatureffekte gehörten zu den ehrgeizigsten ihrer Zeit."
+     ],
+     "q": "Welches Bild eines alten Films würdest du gern auf großer Leinwand sehen?",
+     "c": "Skizziere oder beschreibe einen Turm deiner Zukunftsstadt mit drei auffälligen Formen."
+    },
+    "es": {
+     "t": "Metrópolis y el cine de CF temprano",
+     "g": "Conocer la película de Fritz Lang de 1927, su ciudad gigante y su famoso robot.",
+     "p": [
+      "Metrópolis, película muda alemana de Fritz Lang, imagina una ciudad futura de torres altísimas.",
+      "Su robot María, de cuerpo metálico brillante, inspiró a muchos robots de cine posteriores.",
+      "Los enormes decorados y las maquetas figuraron entre lo más ambicioso de su tiempo."
+     ],
+     "q": "¿Qué imagen de una película antigua te encantaría ver en pantalla grande?",
+     "c": "Dibuja o describe una torre de tu propia ciudad futura con tres formas llamativas."
+    },
+    "fr": {
+     "t": "Metropolis et le cinéma de SF des débuts",
+     "g": "Découvrir le film de Fritz Lang de 1927, sa cité géante et son célèbre robot.",
+     "p": [
+      "Metropolis, film muet allemand de Fritz Lang, imagine une ville future aux tours immenses.",
+      "Son robot Maria, au corps de métal brillant, a inspiré bien des robots de cinéma ensuite.",
+      "Les énormes décors et les effets en maquettes comptaient parmi les plus ambitieux de l'époque."
+     ],
+     "q": "Quelle image d'un vieux film adorerais-tu voir sur grand écran ?",
+     "c": "Dessine ou décris une tour de ta ville future avec trois formes frappantes."
+    },
+    "it": {
+     "t": "Metropolis e il primo cinema di fantascienza",
+     "g": "Conoscere il film di Fritz Lang del 1927, la sua città gigante e il famoso robot.",
+     "p": [
+      "Metropolis, film muto tedesco di Fritz Lang, immagina una città futura dalle torri altissime.",
+      "Il suo robot Maria, dal corpo di metallo lucente, ispirò molti robot cinematografici successivi.",
+      "Gli enormi scenari e gli effetti in miniatura furono tra i più ambiziosi del tempo."
+     ],
+     "q": "Quale immagine di un vecchio film ti piacerebbe vedere su grande schermo?",
+     "c": "Disegna o descrivi una torre della tua città futura con tre forme di impatto."
+    },
+    "pt": {
+     "t": "Metropolis e o primeiro cinema de FC",
+     "g": "Conhecer o filme de Fritz Lang de 1927, a sua cidade gigante e o famoso robô.",
+     "p": [
+      "Metropolis, filme mudo alemão de Fritz Lang, imagina uma cidade futura de torres altíssimas.",
+      "A sua robô Maria, de corpo metálico brilhante, inspirou muitos robôs de cinema posteriores.",
+      "Os enormes cenários e os efeitos em miniatura estavam entre os mais ambiciosos da época."
+     ],
+     "q": "Que imagem de um filme antigo gostarias de ver num grande ecrã?",
+     "c": "Desenha ou descreve uma torre da tua cidade futura com três formas marcantes."
+    },
+    "pt_BR": {
+     "t": "Metropolis e o primeiro cinema de FC",
+     "g": "Conhecer o filme de Fritz Lang de 1927, sua cidade gigante e o famoso robô.",
+     "p": [
+      "Metropolis, filme mudo alemão de Fritz Lang, imagina uma cidade futura de torres altíssimas.",
+      "Sua robô Maria, de corpo metálico brilhante, inspirou muitos robôs de cinema posteriores.",
+      "Os enormes cenários e os efeitos em miniatura estavam entre os mais ambiciosos da época."
+     ],
+     "q": "Que imagem de um filme antigo você adoraria ver numa tela grande?",
+     "c": "Desenhe ou descreva uma torre da sua cidade futura com três formas marcantes."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "1950s SF films",
+     "g": "Explore flying saucers, curious visitors and the boom of SF cinema.",
+     "p": [
+      "After the Second World War, SF films became very popular, with rockets and visitors from space.",
+      "The Day the Earth Stood Still (1951) shows an alien who comes with a message of peace.",
+      "Low budgets pushed filmmakers to use clever ideas, striking sets and memorable music."
+     ],
+     "q": "Which 1950s-style film cliché do you find the most charming?",
+     "c": "Write a catchy 1950s-style film title and a one-line poster slogan."
+    },
+    "de": {
+     "t": "SF-Filme der 1950er",
+     "g": "Fliegende Untertassen, neugierige Besucher und den Boom des SF-Kinos erkunden.",
+     "p": [
+      "Nach dem Zweiten Weltkrieg wurden SF-Filme sehr beliebt, mit Raketen und Besuchern aus dem All.",
+      "Der Tag, an dem die Erde stillstand (1951) zeigt einen Außerirdischen mit einer Friedensbotschaft.",
+      "Kleine Budgets zwangen Filmemacher zu klugen Ideen, starken Kulissen und einprägsamer Musik."
+     ],
+     "q": "Welches Klischee der 1950er-Filme findest du am charmantesten?",
+     "c": "Erfinde einen zugkräftigen Filmtitel im 50er-Stil und einen Einzeiler fürs Plakat."
+    },
+    "es": {
+     "t": "Cine de CF de los años cincuenta",
+     "g": "Explorar platillos volantes, visitantes curiosos y el auge del cine de CF.",
+     "p": [
+      "Tras la Segunda Guerra Mundial, el cine de CF se hizo muy popular, con cohetes y visitantes del espacio.",
+      "Ultimátum a la Tierra (1951) muestra a un alienígena que llega con un mensaje de paz.",
+      "Los presupuestos bajos empujaban a usar ideas ingeniosas, decorados llamativos y música memorable."
+     ],
+     "q": "¿Qué tópico del cine de los cincuenta te parece más encantador?",
+     "c": "Escribe un título pegadizo al estilo años cincuenta y un lema de cartel de una línea."
+    },
+    "fr": {
+     "t": "Les films de SF des années 1950",
+     "g": "Explorer soucoupes volantes, visiteurs curieux et essor du cinéma de SF.",
+     "p": [
+      "Après la Seconde Guerre mondiale, les films de SF deviennent très populaires, avec fusées et visiteurs de l'espace.",
+      "Le Jour où la Terre s'arrêta (1951) montre un extraterrestre venu avec un message de paix.",
+      "Les petits budgets poussaient à des idées ingénieuses, des décors frappants et une musique marquante."
+     ],
+     "q": "Quel cliché des films des années 1950 te semble le plus charmant ?",
+     "c": "Écris un titre accrocheur style années 1950 et un slogan d'affiche d'une ligne."
+    },
+    "it": {
+     "t": "I film di fantascienza anni Cinquanta",
+     "g": "Esplorare dischi volanti, visitatori curiosi e il boom del cinema di fantascienza.",
+     "p": [
+      "Dopo la Seconda guerra mondiale i film di fantascienza divennero molto popolari, con razzi e visitatori dallo spazio.",
+      "Ultimatum alla Terra (1951) mostra un alieno che arriva con un messaggio di pace.",
+      "I budget bassi spingevano a idee ingegnose, scenografie d'effetto e musica memorabile."
+     ],
+     "q": "Quale cliché dei film anni Cinquanta trovi più affascinante?",
+     "c": "Scrivi un titolo accattivante in stile anni Cinquanta e uno slogan da locandina di una riga."
+    },
+    "pt": {
+     "t": "Filmes de FC dos anos 1950",
+     "g": "Explorar discos voadores, visitantes curiosos e o boom do cinema de FC.",
+     "p": [
+      "Depois da Segunda Guerra Mundial, os filmes de FC tornaram-se muito populares, com foguetões e visitantes do espaço.",
+      "O Dia em que a Terra Parou (1951) mostra um extraterrestre que chega com uma mensagem de paz.",
+      "Orçamentos baixos empurravam para ideias engenhosas, cenários marcantes e música memorável."
+     ],
+     "q": "Que cliché dos filmes dos anos 1950 achas mais encantador?",
+     "c": "Escreve um título apelativo ao estilo dos anos 1950 e um slogan de cartaz de uma linha."
+    },
+    "pt_BR": {
+     "t": "Filmes de FC dos anos 1950",
+     "g": "Explorar discos voadores, visitantes curiosos e o boom do cinema de FC.",
+     "p": [
+      "Depois da Segunda Guerra Mundial, os filmes de FC ficaram muito populares, com foguetes e visitantes do espaço.",
+      "O Dia em que a Terra Parou (1951) mostra um extraterrestre que chega com uma mensagem de paz.",
+      "Orçamentos baixos levavam a ideias engenhosas, cenários marcantes e música memorável."
+     ],
+     "q": "Que clichê dos filmes dos anos 1950 você acha mais encantador?",
+     "c": "Escreva um título atraente no estilo dos anos 1950 e um slogan de cartaz de uma linha."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "2001: A Space Odyssey",
+     "g": "Discover Kubrick and Clarke's 1968 film about evolution, space and HAL 9000.",
+     "p": [
+      "Stanley Kubrick directed the film and wrote the script together with Arthur C. Clarke.",
+      "It follows humanity from early ancestors to journeys among the planets.",
+      "HAL 9000, the calm talking computer, became one of the best-known AI characters."
+     ],
+     "q": "What moment of film or music would you call truly awe-inspiring?",
+     "c": "Imagine one quiet, majestic scene in space and describe it in two sentences."
+    },
+    "de": {
+     "t": "2001: Odyssee im Weltraum",
+     "g": "Kubricks und Clarkes Film von 1968 über Evolution, Weltraum und HAL 9000 entdecken.",
+     "p": [
+      "Stanley Kubrick führte Regie und schrieb das Drehbuch gemeinsam mit Arthur C. Clarke.",
+      "Der Film begleitet die Menschheit von frühen Vorfahren bis zu Reisen zwischen den Planeten.",
+      "HAL 9000, der ruhig sprechende Computer, wurde zu einer der bekanntesten KI-Figuren."
+     ],
+     "q": "Welchen Moment aus Film oder Musik würdest du wirklich ehrfurchtgebietend nennen?",
+     "c": "Stell dir eine stille, erhabene Szene im Weltraum vor und beschreibe sie in zwei Sätzen."
+    },
+    "es": {
+     "t": "2001: Una odisea del espacio",
+     "g": "Descubrir la película de Kubrick y Clarke de 1968 sobre evolución, espacio y HAL 9000.",
+     "p": [
+      "Stanley Kubrick dirigió la película y escribió el guion junto con Arthur C. Clarke.",
+      "Sigue a la humanidad desde antepasados remotos hasta viajes entre los planetas.",
+      "HAL 9000, el ordenador de voz serena, se volvió uno de los personajes de IA más conocidos."
+     ],
+     "q": "¿Qué momento de cine o música llamarías realmente sobrecogedor?",
+     "c": "Imagina una escena tranquila y majestuosa en el espacio y descríbela en dos frases."
+    },
+    "fr": {
+     "t": "2001 : l'Odyssée de l'espace",
+     "g": "Découvrir le film de Kubrick et Clarke de 1968 sur l'évolution, l'espace et HAL 9000.",
+     "p": [
+      "Stanley Kubrick réalise le film et en écrit le scénario avec Arthur C. Clarke.",
+      "Il suit l'humanité des lointains ancêtres jusqu'aux voyages parmi les planètes.",
+      "HAL 9000, l'ordinateur à la voix calme, est devenu l'un des personnages d'IA les plus connus."
+     ],
+     "q": "Quel moment de cinéma ou de musique dirais-tu vraiment saisissant de beauté ?",
+     "c": "Imagine une scène calme et majestueuse dans l'espace et décris-la en deux phrases."
+    },
+    "it": {
+     "t": "2001: Odissea nello spazio",
+     "g": "Scoprire il film di Kubrick e Clarke del 1968 su evoluzione, spazio e HAL 9000.",
+     "p": [
+      "Stanley Kubrick diresse il film e scrisse la sceneggiatura insieme ad Arthur C. Clarke.",
+      "Segue l'umanità dagli antichi progenitori fino ai viaggi tra i pianeti.",
+      "HAL 9000, il computer dalla voce calma, divenne uno dei personaggi di IA più noti."
+     ],
+     "q": "Quale momento di cinema o musica definiresti davvero maestoso?",
+     "c": "Immagina una scena quieta e maestosa nello spazio e descrivila in due frasi."
+    },
+    "pt": {
+     "t": "2001: Odisseia no Espaço",
+     "g": "Descobrir o filme de Kubrick e Clarke de 1968 sobre evolução, espaço e HAL 9000.",
+     "p": [
+      "Stanley Kubrick realizou o filme e escreveu o argumento juntamente com Arthur C. Clarke.",
+      "Acompanha a humanidade desde antepassados remotos até viagens entre os planetas.",
+      "O HAL 9000, o computador de voz calma, tornou-se uma das personagens de IA mais conhecidas."
+     ],
+     "q": "Que momento de cinema ou música chamarias verdadeiramente majestoso?",
+     "c": "Imagina uma cena calma e majestosa no espaço e descreve-a em duas frases."
+    },
+    "pt_BR": {
+     "t": "2001: Uma Odisseia no Espaço",
+     "g": "Descobrir o filme de Kubrick e Clarke de 1968 sobre evolução, espaço e HAL 9000.",
+     "p": [
+      "Stanley Kubrick dirigiu o filme e escreveu o roteiro junto com Arthur C. Clarke.",
+      "Ele acompanha a humanidade desde ancestrais remotos até viagens entre os planetas.",
+      "HAL 9000, o computador de voz calma, virou um dos personagens de IA mais conhecidos."
+     ],
+     "q": "Que momento de cinema ou música você chamaria de realmente majestoso?",
+     "c": "Imagine uma cena calma e majestosa no espaço e descreva-a em duas frases."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Star Trek's optimistic future",
+     "g": "See the hopeful vision of exploration and cooperation that began on TV in 1966.",
+     "p": [
+      "Star Trek, created by Gene Roddenberry, first aired in 1966 on American television.",
+      "The crew of the starship Enterprise explores space with curiosity and works as a team.",
+      "Its diverse crew was an early example of people of many backgrounds working together."
+     ],
+     "q": "Which part of a hopeful future like Star Trek's appeals to you most?",
+     "c": "Write a short motto for a peaceful exploring crew in your own words."
+    },
+    "de": {
+     "t": "Star Treks optimistische Zukunft",
+     "g": "Die hoffnungsvolle Vision von Forschung und Zusammenarbeit entdecken, die 1966 im Fernsehen begann.",
+     "p": [
+      "Star Trek, erdacht von Gene Roddenberry, lief erstmals 1966 im amerikanischen Fernsehen.",
+      "Die Crew des Raumschiffs Enterprise erforscht den Weltraum neugierig und arbeitet als Team.",
+      "Die vielfältige Besatzung war ein früher Beleg dafür, dass Menschen verschiedener Herkunft zusammenarbeiten."
+     ],
+     "q": "Welcher Teil einer hoffnungsvollen Zukunft wie bei Star Trek reizt dich am meisten?",
+     "c": "Schreibe in eigenen Worten ein kurzes Motto für eine friedlich forschende Crew."
+    },
+    "es": {
+     "t": "El futuro optimista de Star Trek",
+     "g": "Ver la visión esperanzadora de exploración y cooperación que nació en la tele en 1966.",
+     "p": [
+      "Star Trek, creada por Gene Roddenberry, se emitió por primera vez en 1966 en la televisión estadounidense.",
+      "La tripulación de la nave Enterprise explora el espacio con curiosidad y trabaja en equipo.",
+      "Su tripulación diversa fue un temprano ejemplo de personas de orígenes distintos trabajando juntas."
+     ],
+     "q": "¿Qué parte de un futuro esperanzador como el de Star Trek te atrae más?",
+     "c": "Escribe con tus palabras un lema breve para una tripulación pacífica de exploradores."
+    },
+    "fr": {
+     "t": "L'avenir optimiste de Star Trek",
+     "g": "Voir la vision pleine d'espoir, d'exploration et de coopération née à la télé en 1966.",
+     "p": [
+      "Star Trek, créée par Gene Roddenberry, est diffusée pour la première fois en 1966 à la télévision américaine.",
+      "L'équipage du vaisseau Enterprise explore l'espace avec curiosité et travaille en équipe.",
+      "Son équipage varié a été un des premiers exemples de personnes d'horizons divers qui coopèrent."
+     ],
+     "q": "Quelle part d'un avenir plein d'espoir comme celui de Star Trek te plaît le plus ?",
+     "c": "Écris avec tes mots une courte devise pour un équipage d'explorateurs pacifiques."
+    },
+    "it": {
+     "t": "Il futuro ottimista di Star Trek",
+     "g": "Vedere la visione di speranza, esplorazione e cooperazione nata in TV nel 1966.",
+     "p": [
+      "Star Trek, creata da Gene Roddenberry, andò in onda per la prima volta nel 1966 sulla televisione americana.",
+      "L'equipaggio dell'astronave Enterprise esplora lo spazio con curiosità e lavora in squadra.",
+      "Il suo equipaggio variegato fu un primo esempio di persone di origini diverse che collaborano."
+     ],
+     "q": "Quale parte di un futuro speranzoso come quello di Star Trek ti attrae di più?",
+     "c": "Scrivi con parole tue un breve motto per un equipaggio di esploratori pacifici."
+    },
+    "pt": {
+     "t": "O futuro otimista de Star Trek",
+     "g": "Ver a visão esperançosa de exploração e cooperação que nasceu na TV em 1966.",
+     "p": [
+      "Star Trek, criada por Gene Roddenberry, foi emitida pela primeira vez em 1966 na televisão americana.",
+      "A tripulação da nave Enterprise explora o espaço com curiosidade e trabalha em equipa.",
+      "A sua tripulação diversa foi um dos primeiros exemplos de pessoas de origens distintas a colaborar."
+     ],
+     "q": "Que parte de um futuro esperançoso como o de Star Trek mais te atrai?",
+     "c": "Escreve com as tuas palavras um lema breve para uma tripulação pacífica de exploradores."
+    },
+    "pt_BR": {
+     "t": "O futuro otimista de Star Trek",
+     "g": "Ver a visão esperançosa de exploração e cooperação que nasceu na TV em 1966.",
+     "p": [
+      "Star Trek, criada por Gene Roddenberry, foi ao ar pela primeira vez em 1966 na televisão americana.",
+      "A tripulação da nave Enterprise explora o espaço com curiosidade e trabalha em equipe.",
+      "Sua tripulação diversa foi um dos primeiros exemplos de pessoas de origens distintas colaborando."
+     ],
+     "q": "Que parte de um futuro esperançoso como o de Star Trek mais atrai você?",
+     "c": "Escreva com suas palavras um lema breve para uma tripulação pacífica de exploradores."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Star Wars and space fantasy",
+     "g": "Learn why the 1977 film is often called space fantasy and how it changed cinema.",
+     "p": [
+      "George Lucas released Star Wars in 1977, mixing spaceships with heroes, mentors and the Force.",
+      "Because the Force works like a kind of magic, many call it space fantasy, not hard SF.",
+      "Its special effects and merchandising helped shape modern blockbuster movies."
+     ],
+     "q": "Does it matter to you whether a story is SF or fantasy if it is fun?",
+     "c": "Invent a new planet for a space fantasy and describe it in two sentences."
+    },
+    "de": {
+     "t": "Star Wars und Space Fantasy",
+     "g": "Erfahren, warum der Film von 1977 oft Space Fantasy heißt und wie er das Kino veränderte.",
+     "p": [
+      "George Lucas brachte 1977 Star Wars heraus, mit Raumschiffen, Helden, Mentoren und der Macht.",
+      "Weil die Macht wie eine Art Magie wirkt, nennen viele den Film Space Fantasy, nicht harte SF.",
+      "Seine Spezialeffekte und das Merchandising prägten das moderne Blockbuster-Kino."
+     ],
+     "q": "Ist es dir wichtig, ob eine Geschichte SF oder Fantasy ist, wenn sie Spaß macht?",
+     "c": "Erfinde einen neuen Planeten für eine Space Fantasy und beschreibe ihn in zwei Sätzen."
+    },
+    "es": {
+     "t": "Star Wars y la fantasía espacial",
+     "g": "Saber por qué la película de 1977 se llama a menudo fantasía espacial y cómo cambió el cine.",
+     "p": [
+      "George Lucas estrenó La guerra de las galaxias en 1977, mezclando naves con héroes, mentores y la Fuerza.",
+      "Como la Fuerza actúa como una especie de magia, muchos la llaman fantasía espacial y no CF dura.",
+      "Sus efectos especiales y su merchandising ayudaron a dar forma al cine de grandes éxitos moderno."
+     ],
+     "q": "¿Te importa que una historia sea CF o fantasía si es divertida?",
+     "c": "Inventa un planeta nuevo para una fantasía espacial y descríbelo en dos frases."
+    },
+    "fr": {
+     "t": "Star Wars et l'espace-fantasy",
+     "g": "Comprendre pourquoi le film de 1977 est dit space fantasy et comment il a changé le cinéma.",
+     "p": [
+      "George Lucas sort La Guerre des étoiles en 1977, mêlant vaisseaux, héros, mentors et la Force.",
+      "Comme la Force agit comme une forme de magie, beaucoup parlent de space fantasy plutôt que de SF dure.",
+      "Ses effets spéciaux et ses produits dérivés ont façonné le blockbuster moderne."
+     ],
+     "q": "Est-ce important pour toi qu'une histoire soit de SF ou de fantasy si elle est amusante ?",
+     "c": "Invente une nouvelle planète pour une space fantasy et décris-la en deux phrases."
+    },
+    "it": {
+     "t": "Star Wars e lo space fantasy",
+     "g": "Capire perché il film del 1977 è detto space fantasy e come cambiò il cinema.",
+     "p": [
+      "George Lucas realizzò Guerre stellari nel 1977, unendo astronavi a eroi, maestri e la Forza.",
+      "Poiché la Forza agisce come una specie di magia, molti parlano di space fantasy e non di fantascienza hard.",
+      "I suoi effetti speciali e il merchandising contribuirono a plasmare il blockbuster moderno."
+     ],
+     "q": "Ti importa se una storia è fantascienza o fantasy, se è divertente?",
+     "c": "Inventa un nuovo pianeta per uno space fantasy e descrivilo in due frasi."
+    },
+    "pt": {
+     "t": "Star Wars e a fantasia espacial",
+     "g": "Perceber porque o filme de 1977 é chamado de fantasia espacial e como mudou o cinema.",
+     "p": [
+      "George Lucas estreou Star Wars em 1977, misturando naves com heróis, mentores e a Força.",
+      "Como a Força age como uma espécie de magia, muitos falam de fantasia espacial e não de FC dura.",
+      "Os seus efeitos especiais e o merchandising ajudaram a moldar o cinema de grandes êxitos moderno."
+     ],
+     "q": "Importa-te que uma história seja FC ou fantasia se for divertida?",
+     "c": "Inventa um planeta novo para uma fantasia espacial e descreve-o em duas frases."
+    },
+    "pt_BR": {
+     "t": "Star Wars e a fantasia espacial",
+     "g": "Entender por que o filme de 1977 é chamado de fantasia espacial e como mudou o cinema.",
+     "p": [
+      "George Lucas lançou Star Wars em 1977, misturando naves com heróis, mentores e a Força.",
+      "Como a Força age como uma espécie de magia, muitos falam em fantasia espacial e não em FC hard.",
+      "Seus efeitos especiais e o merchandising ajudaram a moldar o cinema de grandes sucessos moderno."
+     ],
+     "q": "Importa para você se uma história é FC ou fantasia, se for divertida?",
+     "c": "Invente um planeta novo para uma fantasia espacial e descreva-o em duas frases."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Aliens who are not like us",
+     "g": "Learn how good SF makes aliens truly different in body, mind and culture.",
+     "p": [
+      "Aliens do not have to look like humans in costume; they can have different senses and values.",
+      "Stanislaw Lem's novel Solaris imagines a living ocean planet that is very hard to understand.",
+      "The challenge is to show something genuinely different, yet still tell a story we can follow."
+     ],
+     "q": "What sense or ability would you give an alien to make it unique?",
+     "c": "Invent an alien with one unusual sense and describe how it sees the world."
+    },
+    "de": {
+     "t": "Aliens, die nicht wie wir sind",
+     "g": "Lernen, wie gute SF Außerirdische in Körper, Geist und Kultur wirklich anders macht.",
+     "p": [
+      "Aliens müssen nicht wie verkleidete Menschen aussehen; sie können andere Sinne und Werte haben.",
+      "Stanisław Lems Roman Solaris erdenkt einen lebenden Ozeanplaneten, der schwer zu verstehen ist.",
+      "Die Kunst liegt darin, wirklich Anderes zu zeigen und doch eine nachvollziehbare Geschichte zu erzählen."
+     ],
+     "q": "Welchen Sinn oder welche Fähigkeit gäbest du einem Alien, damit es einzigartig wird?",
+     "c": "Erfinde ein Alien mit einem ungewöhnlichen Sinn und beschreibe, wie es die Welt sieht."
+    },
+    "es": {
+     "t": "Alienígenas que no se parecen a nosotros",
+     "g": "Aprender cómo la buena CF hace a los alienígenas realmente distintos en cuerpo, mente y cultura.",
+     "p": [
+      "Los alienígenas no tienen por qué parecer humanos disfrazados; pueden tener otros sentidos y valores.",
+      "La novela Solaris de Stanisław Lem imagina un planeta océano vivo muy difícil de entender.",
+      "El reto es mostrar algo de verdad diferente y aun así contar una historia que podamos seguir."
+     ],
+     "q": "¿Qué sentido o capacidad darías a un alienígena para hacerlo único?",
+     "c": "Inventa un alienígena con un sentido inusual y describe cómo ve el mundo."
+    },
+    "fr": {
+     "t": "Des extraterrestres qui ne nous ressemblent pas",
+     "g": "Apprendre comment la bonne SF rend les extraterrestres vraiment différents de corps, d'esprit et de culture.",
+     "p": [
+      "Les extraterrestres n'ont pas à ressembler à des humains déguisés ; ils peuvent avoir d'autres sens et valeurs.",
+      "Le roman Solaris de Stanisław Lem imagine une planète océan vivante très difficile à comprendre.",
+      "Le défi est de montrer du vraiment différent, tout en racontant une histoire que l'on peut suivre."
+     ],
+     "q": "Quel sens ou quelle capacité donnerais-tu à un extraterrestre pour le rendre unique ?",
+     "c": "Invente un extraterrestre avec un sens inhabituel et décris sa façon de voir le monde."
+    },
+    "it": {
+     "t": "Alieni che non sono come noi",
+     "g": "Imparare come la buona fantascienza rende gli alieni davvero diversi per corpo, mente e cultura.",
+     "p": [
+      "Gli alieni non devono sembrare umani in costume; possono avere altri sensi e valori.",
+      "Il romanzo Solaris di Stanisław Lem immagina un pianeta oceano vivente molto difficile da capire.",
+      "La sfida è mostrare qualcosa di davvero diverso, raccontando comunque una storia che si possa seguire."
+     ],
+     "q": "Quale senso o capacità daresti a un alieno per renderlo unico?",
+     "c": "Inventa un alieno con un senso insolito e descrivi come vede il mondo."
+    },
+    "pt": {
+     "t": "Alienígenas que não são como nós",
+     "g": "Aprender como a boa FC faz os alienígenas realmente diferentes em corpo, mente e cultura.",
+     "p": [
+      "Os alienígenas não têm de parecer humanos disfarçados; podem ter outros sentidos e valores.",
+      "O romance Solaris, de Stanisław Lem, imagina um planeta oceano vivo muito difícil de compreender.",
+      "O desafio é mostrar algo verdadeiramente diferente e ainda assim contar uma história que se possa seguir."
+     ],
+     "q": "Que sentido ou capacidade darias a um alienígena para o tornar único?",
+     "c": "Inventa um alienígena com um sentido invulgar e descreve como ele vê o mundo."
+    },
+    "pt_BR": {
+     "t": "Alienígenas que não são como nós",
+     "g": "Aprender como a boa FC faz os alienígenas realmente diferentes em corpo, mente e cultura.",
+     "p": [
+      "Os alienígenas não precisam parecer humanos fantasiados; podem ter outros sentidos e valores.",
+      "O romance Solaris, de Stanisław Lem, imagina um planeta oceano vivo muito difícil de entender.",
+      "O desafio é mostrar algo realmente diferente e ainda assim contar uma história que dê para acompanhar."
+     ],
+     "q": "Que sentido ou capacidade você daria a um alienígena para torná-lo único?",
+     "c": "Invente um alienígena com um sentido incomum e descreva como ele vê o mundo."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Famous spaceships",
+     "g": "See what famous vessels from Nautilus to Enterprise tell us about their stories.",
+     "p": [
+      "A ship's look hints at its tale: the Nautilus is elegant and mysterious, the Enterprise sleek and hopeful.",
+      "The Millennium Falcon looks patched and lived-in, matching its adventurous crew.",
+      "Even a tiny capsule can feel grand when a story gives it purpose."
+     ],
+     "q": "Which fictional ship would you most like to board for a day?",
+     "c": "Name your own ship, then give it one design feature that shows its personality."
+    },
+    "de": {
+     "t": "Berühmte Raumschiffe",
+     "g": "Sehen, was berühmte Fahrzeuge von der Nautilus bis zur Enterprise über ihre Geschichten verraten.",
+     "p": [
+      "Das Aussehen eines Schiffs verrät seine Geschichte: Die Nautilus wirkt elegant und geheimnisvoll, die Enterprise schlank und hoffnungsvoll.",
+      "Der Millennium Falke wirkt geflickt und benutzt, passend zu seiner abenteuerlustigen Crew.",
+      "Selbst eine winzige Kapsel kann groß wirken, wenn eine Geschichte ihr Sinn gibt."
+     ],
+     "q": "Auf welches erfundene Schiff würdest du am liebsten einen Tag lang steigen?",
+     "c": "Gib deinem eigenen Schiff einen Namen und ein Designmerkmal, das seine Persönlichkeit zeigt."
+    },
+    "es": {
+     "t": "Naves espaciales famosas",
+     "g": "Ver qué cuentan de sus historias naves famosas, del Nautilus al Enterprise.",
+     "p": [
+      "El aspecto de una nave insinúa su relato: el Nautilus es elegante y misterioso, el Enterprise esbelto y esperanzador.",
+      "El Halcón Milenario parece remendado y muy usado, a juego con su tripulación aventurera.",
+      "Incluso una cápsula diminuta puede sentirse grandiosa cuando una historia le da propósito."
+     ],
+     "q": "¿A qué nave ficticia te gustaría subir un día?",
+     "c": "Pon nombre a tu propia nave y dale un rasgo de diseño que muestre su personalidad."
+    },
+    "fr": {
+     "t": "Les vaisseaux célèbres",
+     "g": "Voir ce que des vaisseaux célèbres, du Nautilus à l'Enterprise, disent de leurs histoires.",
+     "p": [
+      "L'aspect d'un vaisseau suggère son récit : le Nautilus est élégant et mystérieux, l'Enterprise élancé et plein d'espoir.",
+      "Le Faucon Millenium paraît rapiécé et usé, à l'image de son équipage aventurier.",
+      "Même une petite capsule peut sembler grandiose quand une histoire lui donne un but."
+     ],
+     "q": "Quel vaisseau imaginaire aimerais-tu le plus embarquer pour une journée ?",
+     "c": "Donne un nom à ton propre vaisseau, puis un trait de design qui montre sa personnalité."
+    },
+    "it": {
+     "t": "Astronavi famose",
+     "g": "Vedere cosa raccontano delle loro storie le navi famose, dal Nautilus all'Enterprise.",
+     "p": [
+      "L'aspetto di una nave suggerisce il suo racconto: il Nautilus è elegante e misterioso, l'Enterprise slanciata e speranzosa.",
+      "Il Millennium Falcon sembra rattoppato e vissuto, come il suo equipaggio avventuroso.",
+      "Anche una piccola capsula può sembrare grandiosa quando una storia le dà uno scopo."
+     ],
+     "q": "A bordo di quale nave immaginaria vorresti salire per un giorno?",
+     "c": "Dai un nome alla tua nave e un tratto di design che ne mostri la personalità."
+    },
+    "pt": {
+     "t": "Naves espaciais famosas",
+     "g": "Ver o que naves famosas, do Nautilus à Enterprise, dizem sobre as suas histórias.",
+     "p": [
+      "O aspeto de uma nave sugere o seu conto: o Nautilus é elegante e misterioso, a Enterprise esguia e esperançosa.",
+      "O Millennium Falcon parece remendado e usado, como a sua tripulação aventureira.",
+      "Até uma pequena cápsula pode parecer grandiosa quando uma história lhe dá propósito."
+     ],
+     "q": "A que nave fictícia gostarias de subir por um dia?",
+     "c": "Dá um nome à tua nave e uma característica de design que mostre a sua personalidade."
+    },
+    "pt_BR": {
+     "t": "Naves espaciais famosas",
+     "g": "Ver o que naves famosas, do Nautilus à Enterprise, dizem sobre suas histórias.",
+     "p": [
+      "O visual de uma nave sugere seu conto: o Nautilus é elegante e misterioso, a Enterprise esguia e esperançosa.",
+      "A Millennium Falcon parece remendada e usada, como sua tripulação aventureira.",
+      "Até uma pequena cápsula pode parecer grandiosa quando uma história dá propósito a ela."
+     ],
+     "q": "A que nave fictícia você gostaria de subir por um dia?",
+     "c": "Dê um nome à sua nave e uma característica de design que mostre sua personalidade."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first SF month",
+     "g": "Look back at the genre's roots, big ideas and first films, and pick a favourite.",
+     "p": [
+      "You met Shelley, Verne, Wells, Gernsback and the Golden Age authors.",
+      "You explored robots, time travel, first contact, utopias and early SF films.",
+      "Everything starts from one curious question: what if?"
+     ],
+     "q": "Which topic of this month would you like to explore further?",
+     "c": "Write a three-line recap of the month and name your favourite idea so far."
+    },
+    "de": {
+     "t": "Rückblick: dein erster SF-Monat",
+     "g": "Auf Wurzeln, große Ideen und erste Filme des Genres zurückblicken und einen Favoriten wählen.",
+     "p": [
+      "Du hast Shelley, Verne, Wells, Gernsback und die Autoren des Goldenen Zeitalters kennengelernt.",
+      "Du hast Roboter, Zeitreisen, Erstkontakt, Utopien und frühe SF-Filme erkundet.",
+      "Alles beginnt mit einer neugierigen Frage: Was wäre, wenn?"
+     ],
+     "q": "Welches Thema dieses Monats möchtest du weiter vertiefen?",
+     "c": "Schreibe eine Drei-Zeilen-Zusammenfassung des Monats und nenne deine bisherige Lieblingsidee."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes de CF",
+     "g": "Mirar atrás a las raíces, grandes ideas y primeras películas del género y elegir una favorita.",
+     "p": [
+      "Conociste a Shelley, Verne, Wells, Gernsback y a los autores de la Edad de Oro.",
+      "Exploraste robots, viajes en el tiempo, primer contacto, utopías y el cine de CF temprano.",
+      "Todo empieza con una pregunta curiosa: ¿y si...?"
+     ],
+     "q": "¿Qué tema de este mes te gustaría explorar más?",
+     "c": "Escribe un resumen de tres líneas del mes y nombra tu idea favorita hasta ahora."
+    },
+    "fr": {
+     "t": "Bilan : ton premier mois de SF",
+     "g": "Revenir sur les racines, les grandes idées et les premiers films du genre et choisir un favori.",
+     "p": [
+      "Tu as rencontré Shelley, Verne, Wells, Gernsback et les auteurs de l'âge d'or.",
+      "Tu as exploré robots, voyage dans le temps, premier contact, utopies et cinéma de SF des débuts.",
+      "Tout commence par une question curieuse : et si ?"
+     ],
+     "q": "Quel sujet de ce mois aimerais-tu approfondir ?",
+     "c": "Écris un résumé en trois lignes du mois et nomme ton idée préférée jusqu'ici."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese di fantascienza",
+     "g": "Guardare indietro alle radici, alle grandi idee e ai primi film del genere e scegliere un preferito.",
+     "p": [
+      "Hai incontrato Shelley, Verne, Wells, Gernsback e gli autori dell'età d'oro.",
+      "Hai esplorato robot, viaggi nel tempo, primo contatto, utopie e il primo cinema di fantascienza.",
+      "Tutto parte da una domanda curiosa: e se?"
+     ],
+     "q": "Quale tema di questo mese vorresti approfondire?",
+     "c": "Scrivi un riassunto di tre righe del mese e nomina la tua idea preferita finora."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês de FC",
+     "g": "Olhar para trás para as raízes, grandes ideias e primeiros filmes do género e escolher um favorito.",
+     "p": [
+      "Conheceste Shelley, Verne, Wells, Gernsback e os autores da Idade de Ouro.",
+      "Exploraste robôs, viagens no tempo, primeiro contacto, utopias e o primeiro cinema de FC.",
+      "Tudo começa com uma pergunta curiosa: e se?"
+     ],
+     "q": "Que tema deste mês gostarias de explorar mais?",
+     "c": "Escreve um resumo de três linhas do mês e nomeia a tua ideia favorita até agora."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês de FC",
+     "g": "Olhar para trás para as raízes, grandes ideias e primeiros filmes do gênero e escolher um favorito.",
+     "p": [
+      "Você conheceu Shelley, Verne, Wells, Gernsback e os autores da Era de Ouro.",
+      "Você explorou robôs, viagem no tempo, primeiro contato, utopias e o primeiro cinema de FC.",
+      "Tudo começa com uma pergunta curiosa: e se?"
+     ],
+     "q": "Que tema deste mês você gostaria de explorar mais?",
+     "c": "Escreva um resumo de três linhas do mês e nomeie sua ideia favorita até agora."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "science_fiction",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cryosleep and long journeys",
+     "g": "See how stories put travellers into deep sleep for voyages lasting decades.",
+     "p": [
+      "Cryosleep, also called suspended animation, lets characters skip the long boring years of a journey.",
+      "It is a story device; real science cannot yet freeze and revive a person safely.",
+      "It also raises neat questions: who wakes up first, and what has changed back home?"
+     ],
+     "q": "Would you sleep through a long trip or stay awake to watch the stars?",
+     "c": "Write the first two lines a traveller would say on waking after fifty years."
+    },
+    "de": {
+     "t": "Kryoschlaf und lange Reisen",
+     "g": "Sehen, wie Geschichten Reisende für jahrzehntelange Flüge in tiefen Schlaf versetzen.",
+     "p": [
+      "Der Kryoschlaf, auch Winterschlaf genannt, lässt Figuren die langen, öden Jahre einer Reise überspringen.",
+      "Er ist ein Erzählmittel; die echte Wissenschaft kann Menschen noch nicht sicher einfrieren und wecken.",
+      "Er wirft auch hübsche Fragen auf: Wer wacht zuerst auf, und was hat sich zu Hause verändert?"
+     ],
+     "q": "Würdest du eine lange Reise verschlafen oder wach die Sterne beobachten?",
+     "c": "Schreibe die ersten zwei Zeilen, die ein Reisender nach dem Aufwachen nach fünfzig Jahren sagt."
+    },
+    "es": {
+     "t": "Criosueño y viajes largos",
+     "g": "Ver cómo las historias duermen a los viajeros durante viajes de décadas.",
+     "p": [
+      "El criosueño, o animación suspendida, permite a los personajes saltarse los largos y aburridos años del viaje.",
+      "Es un recurso narrativo; la ciencia real aún no puede congelar y revivir a una persona sin riesgo.",
+      "Además plantea buenas preguntas: ¿quién despierta primero y qué ha cambiado en casa?"
+     ],
+     "q": "¿Dormirías durante un viaje largo o te quedarías despierto mirando las estrellas?",
+     "c": "Escribe las dos primeras líneas que diría un viajero al despertar tras cincuenta años."
+    },
+    "fr": {
+     "t": "Cryosommeil et longs voyages",
+     "g": "Voir comment les récits endorment les voyageurs pour des voyages de plusieurs décennies.",
+     "p": [
+      "Le cryosommeil, ou animation suspendue, permet aux personnages de sauter les longues années ennuyeuses du trajet.",
+      "C'est un procédé narratif ; la science réelle ne sait pas encore congeler et réveiller une personne sans risque.",
+      "Il soulève aussi de belles questions : qui se réveille en premier, et qu'est-ce qui a changé chez soi ?"
+     ],
+     "q": "Dormirais-tu pendant un long voyage ou resterais-tu éveillé à regarder les étoiles ?",
+     "c": "Écris les deux premières lignes qu'un voyageur dirait en se réveillant après cinquante ans."
+    },
+    "it": {
+     "t": "Criosonno e lunghi viaggi",
+     "g": "Vedere come le storie addormentano i viaggiatori per viaggi di decenni.",
+     "p": [
+      "Il criosonno, o animazione sospesa, permette ai personaggi di saltare i lunghi e noiosi anni del viaggio.",
+      "È un espediente narrativo; la scienza reale non sa ancora congelare e risvegliare una persona in sicurezza.",
+      "Solleva anche belle domande: chi si sveglia per primo e cosa è cambiato a casa?"
+     ],
+     "q": "Dormiresti durante un lungo viaggio o resteresti sveglio a guardare le stelle?",
+     "c": "Scrivi le prime due righe che un viaggiatore direbbe svegliandosi dopo cinquant'anni."
+    },
+    "pt": {
+     "t": "Criossono e viagens longas",
+     "g": "Ver como as histórias adormecem os viajantes em viagens de décadas.",
+     "p": [
+      "O criossono, ou animação suspensa, permite às personagens saltar os longos e aborrecidos anos da viagem.",
+      "É um recurso narrativo; a ciência real ainda não consegue congelar e reanimar uma pessoa em segurança.",
+      "Levanta também boas perguntas: quem acorda primeiro e o que mudou em casa?"
+     ],
+     "q": "Dormirias durante uma viagem longa ou ficarias acordado a ver as estrelas?",
+     "c": "Escreve as duas primeiras linhas que um viajante diria ao acordar passados cinquenta anos."
+    },
+    "pt_BR": {
+     "t": "Criossono e viagens longas",
+     "g": "Ver como as histórias adormecem os viajantes em viagens de décadas.",
+     "p": [
+      "O criossono, ou animação suspensa, permite aos personagens pular os longos e chatos anos da viagem.",
+      "É um recurso narrativo; a ciência real ainda não consegue congelar e reanimar uma pessoa com segurança.",
+      "Levanta também boas perguntas: quem acorda primeiro e o que mudou em casa?"
+     ],
+     "q": "Você dormiria durante uma viagem longa ou ficaria acordado vendo as estrelas?",
+     "c": "Escreva as duas primeiras linhas que um viajante diria ao acordar depois de cinquenta anos."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mars in fiction",
+     "g": "Travel from Burroughs' Barsoom to modern realistic Mars stories.",
+     "p": [
+      "Edgar Rice Burroughs set A Princess of Mars (1912) on Barsoom, a dusty world of adventure.",
+      "Ray Bradbury's Mars is poetic, while Andy Weir's The Martian (2011) is a science-heavy survival tale.",
+      "As real probes revealed Mars, fictional versions grew more realistic."
+     ],
+     "q": "Would you like to live on Mars, or only visit? What would you miss?",
+     "c": "Write a postcard from Mars in three sentences, describing the sky and the ground."
+    },
+    "de": {
+     "t": "Der Mars in der Fiktion",
+     "g": "Von Burroughs' Barsoom zu modernen, realistischen Mars-Geschichten reisen.",
+     "p": [
+      "Edgar Rice Burroughs spielte A Princess of Mars (1912) auf Barsoom, einer staubigen Abenteuerwelt.",
+      "Ray Bradburys Mars ist poetisch, Andy Weirs Der Marsianer (2011) ist eine wissenschaftsnahe Überlebensgeschichte.",
+      "Als echte Sonden den Mars enthüllten, wurden die erfundenen Versionen realistischer."
+     ],
+     "q": "Möchtest du auf dem Mars leben oder ihn nur besuchen? Was würdest du vermissen?",
+     "c": "Schreibe in drei Sätzen eine Postkarte vom Mars und beschreibe Himmel und Boden."
+    },
+    "es": {
+     "t": "Marte en la ficción",
+     "g": "Viajar desde la Barsoom de Burroughs hasta historias modernas y realistas de Marte.",
+     "p": [
+      "Edgar Rice Burroughs situó Una princesa de Marte (1912) en Barsoom, un mundo polvoriento de aventuras.",
+      "El Marte de Ray Bradbury es poético; Marte (2011), de Andy Weir, es una historia de supervivencia muy científica.",
+      "Cuando las sondas reales revelaron Marte, las versiones ficticias se volvieron más realistas."
+     ],
+     "q": "¿Te gustaría vivir en Marte o solo visitarlo? ¿Qué echarías de menos?",
+     "c": "Escribe una postal desde Marte en tres frases, describiendo el cielo y el suelo."
+    },
+    "fr": {
+     "t": "Mars dans la fiction",
+     "g": "Voyager de la Barsoom de Burroughs aux récits martiens réalistes modernes.",
+     "p": [
+      "Edgar Rice Burroughs situe Une princesse de Mars (1912) sur Barsoom, un monde poussiéreux d'aventures.",
+      "Le Mars de Ray Bradbury est poétique ; Seul sur Mars (2011) d'Andy Weir est un récit de survie très scientifique.",
+      "Quand les vraies sondes ont dévoilé Mars, les versions fictives sont devenues plus réalistes."
+     ],
+     "q": "Aimerais-tu vivre sur Mars ou seulement la visiter ? Qu'est-ce qui te manquerait ?",
+     "c": "Écris une carte postale de Mars en trois phrases, en décrivant le ciel et le sol."
+    },
+    "it": {
+     "t": "Marte nella narrativa",
+     "g": "Viaggiare dalla Barsoom di Burroughs ai racconti moderni e realistici su Marte.",
+     "p": [
+      "Edgar Rice Burroughs ambientò Una principessa di Marte (1912) su Barsoom, un mondo polveroso di avventure.",
+      "Il Marte di Ray Bradbury è poetico; L'uomo di Marte (2011) di Andy Weir è una storia di sopravvivenza molto scientifica.",
+      "Quando le sonde reali svelarono Marte, le versioni immaginarie divennero più realistiche."
+     ],
+     "q": "Ti piacerebbe vivere su Marte o solo visitarlo? Cosa ti mancherebbe?",
+     "c": "Scrivi una cartolina da Marte in tre frasi, descrivendo cielo e terreno."
+    },
+    "pt": {
+     "t": "Marte na ficção",
+     "g": "Viajar da Barsoom de Burroughs até às histórias modernas e realistas de Marte.",
+     "p": [
+      "Edgar Rice Burroughs situou Uma Princesa de Marte (1912) em Barsoom, um mundo poeirento de aventuras.",
+      "O Marte de Ray Bradbury é poético; O Marciano (2011), de Andy Weir, é uma história de sobrevivência muito científica.",
+      "Quando as sondas reais revelaram Marte, as versões fictícias tornaram-se mais realistas."
+     ],
+     "q": "Gostarias de viver em Marte ou só de o visitar? O que te faria falta?",
+     "c": "Escreve um postal de Marte em três frases, descrevendo o céu e o chão."
+    },
+    "pt_BR": {
+     "t": "Marte na ficção",
+     "g": "Viajar da Barsoom de Burroughs até as histórias modernas e realistas de Marte.",
+     "p": [
+      "Edgar Rice Burroughs situou Uma Princesa de Marte (1912) em Barsoom, um mundo empoeirado de aventuras.",
+      "O Marte de Ray Bradbury é poético; Perdido em Marte (2011), de Andy Weir, é uma história de sobrevivência muito científica.",
+      "Quando as sondas reais revelaram Marte, as versões fictícias ficaram mais realistas."
+     ],
+     "q": "Você gostaria de morar em Marte ou só visitar? O que sentiria falta?",
+     "c": "Escreva um cartão-postal de Marte em três frases, descrevendo o céu e o chão."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Moon in science fiction",
+     "g": "See how lunar stories changed before and after astronauts walked there in 1969.",
+     "p": [
+      "Early stories, like Verne's and Wells', imagined moon people, caves and strange plants.",
+      "In 1969 Apollo 11 astronauts landed on the Moon, and fiction turned toward real settings.",
+      "Later tales picture quiet bases, mining towns and the Earth rising over grey hills."
+     ],
+     "q": "What would you most like to see from the Moon's surface?",
+     "c": "Describe a Moon base in three sentences, using only details that could be real."
+    },
+    "de": {
+     "t": "Der Mond in der Science-Fiction",
+     "g": "Sehen, wie sich Mondgeschichten vor und nach den Mondspaziergängen von 1969 wandelten.",
+     "p": [
+      "Frühe Geschichten, etwa von Verne und Wells, ersannen Mondvölker, Höhlen und seltsame Pflanzen.",
+      "1969 landeten die Astronauten von Apollo 11 auf dem Mond, und die Fiktion wandte sich echten Schauplätzen zu.",
+      "Spätere Geschichten zeigen stille Basen, Bergbaustädte und die Erde, die über grauen Hügeln aufgeht."
+     ],
+     "q": "Was würdest du von der Mondoberfläche am liebsten sehen?",
+     "c": "Beschreibe eine Mondbasis in drei Sätzen und nutze nur Details, die echt sein könnten."
+    },
+    "es": {
+     "t": "La Luna en la ciencia ficción",
+     "g": "Ver cómo cambiaron las historias lunares antes y después de que los astronautas pisaran la Luna en 1969.",
+     "p": [
+      "Los primeros relatos, como los de Verne y Wells, imaginaban selenitas, cuevas y plantas extrañas.",
+      "En 1969 los astronautas del Apolo 11 aterrizaron en la Luna y la ficción se volvió hacia escenarios reales.",
+      "Los relatos posteriores muestran bases tranquilas, pueblos mineros y la Tierra saliendo sobre colinas grises."
+     ],
+     "q": "¿Qué te gustaría más ver desde la superficie de la Luna?",
+     "c": "Describe una base lunar en tres frases usando solo detalles que podrían ser reales."
+    },
+    "fr": {
+     "t": "La Lune dans la science-fiction",
+     "g": "Voir comment les récits lunaires ont changé avant et après les pas des astronautes en 1969.",
+     "p": [
+      "Les premiers récits, comme ceux de Verne et Wells, imaginaient des Lunaires, des grottes et des plantes étranges.",
+      "En 1969, les astronautes d'Apollo 11 se posent sur la Lune et la fiction se tourne vers des décors réels.",
+      "Les récits ultérieurs montrent des bases tranquilles, des villes minières et la Terre se levant sur des collines grises."
+     ],
+     "q": "Que voudrais-tu le plus voir depuis la surface de la Lune ?",
+     "c": "Décris une base lunaire en trois phrases avec seulement des détails qui pourraient être réels."
+    },
+    "it": {
+     "t": "La Luna nella fantascienza",
+     "g": "Vedere come le storie lunari cambiarono prima e dopo i passi degli astronauti nel 1969.",
+     "p": [
+      "I primi racconti, come quelli di Verne e Wells, immaginavano selenti, grotte e piante strane.",
+      "Nel 1969 gli astronauti dell'Apollo 11 atterrarono sulla Luna e la narrativa si rivolse a scenari reali.",
+      "I racconti successivi mostrano basi tranquille, città minerarie e la Terra che sorge sopra colline grigie."
+     ],
+     "q": "Cosa ti piacerebbe di più vedere dalla superficie della Luna?",
+     "c": "Descrivi una base lunare in tre frasi usando solo dettagli che potrebbero essere reali."
+    },
+    "pt": {
+     "t": "A Lua na ficção científica",
+     "g": "Ver como as histórias lunares mudaram antes e depois de os astronautas pisarem a Lua em 1969.",
+     "p": [
+      "Os primeiros contos, como os de Verne e Wells, imaginavam selenitas, grutas e plantas estranhas.",
+      "Em 1969 os astronautas da Apollo 11 aterraram na Lua e a ficção virou-se para cenários reais.",
+      "Os contos posteriores mostram bases calmas, vilas mineiras e a Terra a nascer sobre colinas cinzentas."
+     ],
+     "q": "O que gostarias mais de ver da superfície da Lua?",
+     "c": "Descreve uma base lunar em três frases usando só detalhes que poderiam ser reais."
+    },
+    "pt_BR": {
+     "t": "A Lua na ficção científica",
+     "g": "Ver como as histórias lunares mudaram antes e depois de os astronautas pisarem a Lua em 1969.",
+     "p": [
+      "Os primeiros contos, como os de Verne e Wells, imaginavam selenitas, grutas e plantas estranhas.",
+      "Em 1969 os astronautas da Apollo 11 pousaram na Lua e a ficção se voltou para cenários reais.",
+      "Os contos posteriores mostram bases calmas, vilas de mineração e a Terra nascendo sobre colinas cinzentas."
+     ],
+     "q": "O que você mais gostaria de ver da superfície da Lua?",
+     "c": "Descreva uma base lunar em três frases usando só detalhes que poderiam ser reais."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ray Bradbury's poetic SF",
+     "g": "Explore The Martian Chronicles and Bradbury's lyrical, nostalgic style.",
+     "p": [
+      "Ray Bradbury published The Martian Chronicles in 1950, linking tales about people settling Mars.",
+      "His writing is rich in images, memories and feelings, like poetry in prose.",
+      "He cared less about machines and more about hopes, wonder and what humans bring along."
+     ],
+     "q": "Which sentence from any book made you stop and reread it for its beauty?",
+     "c": "Write one poetic sentence describing a sunset on another planet."
+    },
+    "de": {
+     "t": "Ray Bradburys poetische SF",
+     "g": "Die Mars-Chroniken und Bradburys lyrischen, nostalgischen Stil erkunden.",
+     "p": [
+      "Ray Bradbury veröffentlichte 1950 Die Mars-Chroniken, verbundene Geschichten über Menschen, die den Mars besiedeln.",
+      "Seine Sprache ist reich an Bildern, Erinnerungen und Gefühlen, wie Poesie in Prosa.",
+      "Ihn interessierten weniger Maschinen als Hoffnungen, Staunen und was Menschen mitbringen."
+     ],
+     "q": "Welcher Satz aus einem Buch hat dich wegen seiner Schönheit innehalten lassen?",
+     "c": "Schreibe einen poetischen Satz über einen Sonnenuntergang auf einem anderen Planeten."
+    },
+    "es": {
+     "t": "La ciencia ficción poética de Ray Bradbury",
+     "g": "Explorar Crónicas marcianas y el estilo lírico y nostálgico de Bradbury.",
+     "p": [
+      "Ray Bradbury publicó Crónicas marcianas en 1950, relatos enlazados sobre personas que colonizan Marte.",
+      "Su escritura es rica en imágenes, recuerdos y sentimientos, como poesía en prosa.",
+      "Le importaban menos las máquinas y más las esperanzas, el asombro y lo que los humanos llevan consigo."
+     ],
+     "q": "¿Qué frase de algún libro te hizo parar y releer por su belleza?",
+     "c": "Escribe una frase poética que describa un atardecer en otro planeta."
+    },
+    "fr": {
+     "t": "La SF poétique de Ray Bradbury",
+     "g": "Explorer Chroniques martiennes et le style lyrique et nostalgique de Bradbury.",
+     "p": [
+      "Ray Bradbury publie Chroniques martiennes en 1950, des récits liés sur des gens qui s'installent sur Mars.",
+      "Son écriture est riche d'images, de souvenirs et d'émotions, comme une poésie en prose.",
+      "Il se souciait moins des machines que des espoirs, de l'émerveillement et de ce que les humains emportent."
+     ],
+     "q": "Quelle phrase d'un livre t'a fait t'arrêter et la relire pour sa beauté ?",
+     "c": "Écris une phrase poétique décrivant un coucher de soleil sur une autre planète."
+    },
+    "it": {
+     "t": "La fantascienza poetica di Ray Bradbury",
+     "g": "Esplorare Cronache marziane e lo stile lirico e nostalgico di Bradbury.",
+     "p": [
+      "Ray Bradbury pubblicò Cronache marziane nel 1950, racconti collegati su persone che colonizzano Marte.",
+      "La sua scrittura è ricca di immagini, ricordi e sentimenti, come poesia in prosa.",
+      "Gli importavano meno le macchine e più le speranze, la meraviglia e ciò che gli esseri umani portano con sé."
+     ],
+     "q": "Quale frase di un libro ti ha fatto fermare e rileggere per la sua bellezza?",
+     "c": "Scrivi una frase poetica che descriva un tramonto su un altro pianeta."
+    },
+    "pt": {
+     "t": "A FC poética de Ray Bradbury",
+     "g": "Explorar As Crónicas Marcianas e o estilo lírico e nostálgico de Bradbury.",
+     "p": [
+      "Ray Bradbury publicou As Crónicas Marcianas em 1950, contos ligados sobre pessoas que colonizam Marte.",
+      "A sua escrita é rica em imagens, memórias e sentimentos, como poesia em prosa.",
+      "Importavam-lhe menos as máquinas e mais as esperanças, o assombro e o que os humanos levam consigo."
+     ],
+     "q": "Que frase de algum livro te fez parar e reler pela sua beleza?",
+     "c": "Escreve uma frase poética que descreva um pôr do sol noutro planeta."
+    },
+    "pt_BR": {
+     "t": "A FC poética de Ray Bradbury",
+     "g": "Explorar Crônicas Marcianas e o estilo lírico e nostálgico de Bradbury.",
+     "p": [
+      "Ray Bradbury publicou Crônicas Marcianas em 1950, contos ligados sobre pessoas que colonizam Marte.",
+      "Sua escrita é rica em imagens, memórias e sentimentos, como poesia em prosa.",
+      "Importavam-lhe menos as máquinas e mais as esperanças, o assombro e o que os humanos levam consigo."
+     ],
+     "q": "Que frase de algum livro fez você parar e reler pela beleza?",
+     "c": "Escreva uma frase poética que descreva um pôr do sol em outro planeta."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fahrenheit 451's big idea",
+     "g": "Discover a future where books are banned and why the novel celebrates reading.",
+     "p": [
+      "Fahrenheit 451 (1953) imagines a society where people avoid books and chase fast entertainment.",
+      "Its hero, Guy Montag, starts to wonder what books hold and why they matter.",
+      "Bradbury said the story is about the joy of reading and the value of thinking for yourself."
+     ],
+     "q": "Which book would you most want to protect and pass on to others?",
+     "c": "Pick a favourite book and write one sentence explaining why it deserves to be kept."
+    },
+    "de": {
+     "t": "Die große Idee von Fahrenheit 451",
+     "g": "Eine Zukunft ohne Bücher entdecken und warum der Roman das Lesen feiert.",
+     "p": [
+      "Fahrenheit 451 (1953) zeigt eine Gesellschaft, die Bücher meidet und schnelle Unterhaltung jagt.",
+      "Sein Held Guy Montag beginnt sich zu fragen, was Bücher enthalten und warum sie wichtig sind.",
+      "Bradbury sagte, es gehe um die Freude am Lesen und den Wert des Selbstdenkens."
+     ],
+     "q": "Welches Buch würdest du am liebsten schützen und an andere weitergeben?",
+     "c": "Wähle ein Lieblingsbuch und schreibe einen Satz, warum es bewahrt zu werden verdient."
+    },
+    "es": {
+     "t": "La gran idea de Fahrenheit 451",
+     "g": "Descubrir un futuro donde los libros se prohíben y por qué la novela celebra la lectura.",
+     "p": [
+      "Fahrenheit 451 (1953) imagina una sociedad que evita los libros y persigue el entretenimiento rápido.",
+      "Su protagonista, Guy Montag, empieza a preguntarse qué contienen los libros y por qué importan.",
+      "Bradbury decía que la historia trata del placer de leer y del valor de pensar por uno mismo."
+     ],
+     "q": "¿Qué libro querrías proteger más y transmitir a otros?",
+     "c": "Elige un libro favorito y escribe una frase que explique por qué merece conservarse."
+    },
+    "fr": {
+     "t": "La grande idée de Fahrenheit 451",
+     "g": "Découvrir un futur où les livres sont interdits et pourquoi le roman célèbre la lecture.",
+     "p": [
+      "Fahrenheit 451 (1953) imagine une société qui fuit les livres et poursuit le divertissement rapide.",
+      "Son héros, Guy Montag, se demande ce que contiennent les livres et pourquoi ils comptent.",
+      "Bradbury disait que l'histoire parle du plaisir de lire et de la valeur de penser par soi-même."
+     ],
+     "q": "Quel livre voudrais-tu le plus protéger et transmettre aux autres ?",
+     "c": "Choisis un livre préféré et écris une phrase expliquant pourquoi il mérite d'être gardé."
+    },
+    "it": {
+     "t": "La grande idea di Fahrenheit 451",
+     "g": "Scoprire un futuro in cui i libri sono vietati e perché il romanzo celebra la lettura.",
+     "p": [
+      "Fahrenheit 451 (1953) immagina una società che evita i libri e rincorre l'intrattenimento veloce.",
+      "Il protagonista, Guy Montag, comincia a chiedersi cosa contengano i libri e perché contino.",
+      "Bradbury diceva che la storia parla del piacere di leggere e del valore di pensare con la propria testa."
+     ],
+     "q": "Quale libro vorresti di più proteggere e tramandare ad altri?",
+     "c": "Scegli un libro preferito e scrivi una frase che spieghi perché merita di essere conservato."
+    },
+    "pt": {
+     "t": "A grande ideia de Fahrenheit 451",
+     "g": "Descobrir um futuro onde os livros são proibidos e porque o romance celebra a leitura.",
+     "p": [
+      "Fahrenheit 451 (1953) imagina uma sociedade que evita os livros e persegue o entretenimento rápido.",
+      "O herói, Guy Montag, começa a perguntar-se o que os livros contêm e porque importam.",
+      "Bradbury dizia que a história fala do prazer de ler e do valor de pensar por si próprio."
+     ],
+     "q": "Que livro gostarias mais de proteger e passar a outros?",
+     "c": "Escolhe um livro favorito e escreve uma frase a explicar porque merece ser guardado."
+    },
+    "pt_BR": {
+     "t": "A grande ideia de Fahrenheit 451",
+     "g": "Descobrir um futuro onde os livros são proibidos e por que o romance celebra a leitura.",
+     "p": [
+      "Fahrenheit 451 (1953) imagina uma sociedade que evita os livros e persegue o entretenimento rápido.",
+      "O herói, Guy Montag, começa a se perguntar o que os livros contêm e por que importam.",
+      "Bradbury dizia que a história fala do prazer de ler e do valor de pensar por conta própria."
+     ],
+     "q": "Que livro você mais gostaria de proteger e passar adiante?",
+     "c": "Escolha um livro favorito e escreva uma frase explicando por que ele merece ser guardado."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet Ursula K. Le Guin",
+     "g": "Get to know Le Guin and her thoughtful, anthropological approach to SF worlds.",
+     "p": [
+      "Ursula K. Le Guin, an American author, grew up with a father who was an anthropologist.",
+      "Her novels, like The Left Hand of Darkness (1969), imagine other societies with great care.",
+      "She used SF to ask how culture, language and ideas shape the way people live."
+     ],
+     "q": "What would you want to learn about a world you had never visited?",
+     "c": "Invent one custom or greeting from an imaginary society and explain what it means."
+    },
+    "de": {
+     "t": "Ursula K. Le Guin kennenlernen",
+     "g": "Le Guin und ihren nachdenklichen, ethnologischen Blick auf SF-Welten kennenlernen.",
+     "p": [
+      "Die Amerikanerin Ursula K. Le Guin wuchs mit einem Vater auf, der Ethnologe war.",
+      "Ihre Romane, etwa Die linke Hand der Dunkelheit (1969), erdenken andere Gesellschaften mit großer Sorgfalt.",
+      "Sie nutzte SF, um zu fragen, wie Kultur, Sprache und Ideen das Leben der Menschen prägen."
+     ],
+     "q": "Was würdest du über eine nie besuchte Welt wissen wollen?",
+     "c": "Erfinde einen Brauch oder Gruß einer erdachten Gesellschaft und erkläre, was er bedeutet."
+    },
+    "es": {
+     "t": "Conoce a Ursula K. Le Guin",
+     "g": "Conocer a Le Guin y su mirada reflexiva y antropológica sobre los mundos de CF.",
+     "p": [
+      "Ursula K. Le Guin, autora estadounidense, creció con un padre que era antropólogo.",
+      "Sus novelas, como La mano izquierda de la oscuridad (1969), imaginan otras sociedades con gran cuidado.",
+      "Usaba la CF para preguntar cómo la cultura, el lenguaje y las ideas moldean la vida de las personas."
+     ],
+     "q": "¿Qué querrías aprender de un mundo que nunca has visitado?",
+     "c": "Inventa una costumbre o un saludo de una sociedad imaginaria y explica qué significa."
+    },
+    "fr": {
+     "t": "Rencontre avec Ursula K. Le Guin",
+     "g": "Faire connaissance avec Le Guin et son regard réfléchi, anthropologique, sur les mondes de SF.",
+     "p": [
+      "Ursula K. Le Guin, autrice américaine, a grandi auprès d'un père anthropologue.",
+      "Ses romans, comme La Main gauche de la nuit (1969), imaginent d'autres sociétés avec grand soin.",
+      "Elle utilisait la SF pour demander comment culture, langue et idées façonnent la vie des gens."
+     ],
+     "q": "Que voudrais-tu apprendre d'un monde que tu n'as jamais visité ?",
+     "c": "Invente une coutume ou un salut d'une société imaginaire et explique ce qu'il signifie."
+    },
+    "it": {
+     "t": "Conosci Ursula K. Le Guin",
+     "g": "Conoscere Le Guin e il suo sguardo attento e antropologico sui mondi di fantascienza.",
+     "p": [
+      "Ursula K. Le Guin, autrice americana, crebbe con un padre antropologo.",
+      "I suoi romanzi, come La mano sinistra delle tenebre (1969), immaginano altre società con grande cura.",
+      "Usava la fantascienza per chiedere come cultura, lingua e idee plasmino la vita delle persone."
+     ],
+     "q": "Cosa vorresti imparare di un mondo che non hai mai visitato?",
+     "c": "Inventa un'usanza o un saluto di una società immaginaria e spiega cosa significa."
+    },
+    "pt": {
+     "t": "Conhece Ursula K. Le Guin",
+     "g": "Conhecer Le Guin e o seu olhar ponderado e antropológico sobre os mundos da FC.",
+     "p": [
+      "Ursula K. Le Guin, autora americana, cresceu com um pai que era antropólogo.",
+      "Os seus romances, como A Mão Esquerda da Escuridão (1969), imaginam outras sociedades com grande cuidado.",
+      "Usava a FC para perguntar como a cultura, a língua e as ideias moldam a vida das pessoas."
+     ],
+     "q": "O que gostarias de aprender sobre um mundo que nunca visitaste?",
+     "c": "Inventa um costume ou cumprimento de uma sociedade imaginária e explica o que significa."
+    },
+    "pt_BR": {
+     "t": "Conheça Ursula K. Le Guin",
+     "g": "Conhecer Le Guin e seu olhar ponderado e antropológico sobre os mundos da FC.",
+     "p": [
+      "Ursula K. Le Guin, autora americana, cresceu com um pai que era antropólogo.",
+      "Seus romances, como A Mão Esquerda da Escuridão (1969), imaginam outras sociedades com grande cuidado.",
+      "Ela usava a FC para perguntar como cultura, língua e ideias moldam a vida das pessoas."
+     ],
+     "q": "O que você gostaria de aprender sobre um mundo que nunca visitou?",
+     "c": "Invente um costume ou cumprimento de uma sociedade imaginária e explique o que significa."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Computers in classic SF",
+     "g": "See how early SF pictured room-sized brains and talking machines.",
+     "p": [
+      "E. M. Forster's story The Machine Stops (1909) imagined a world linked by a vast machine, like a hint of the internet.",
+      "Asimov's Multivac was a giant computer that answered the questions of a whole planet.",
+      "Early writers often pictured one huge brain, not millions of small personal devices."
+     ],
+     "q": "What do you use a computer or phone for that a 1950s writer would never guess?",
+     "c": "Describe a giant helpful computer from an old story, then shrink it into your pocket."
+    },
+    "de": {
+     "t": "Computer in der klassischen SF",
+     "g": "Sehen, wie frühe SF zimmergroße Gehirne und sprechende Maschinen darstellte.",
+     "p": [
+      "E. M. Forsters Geschichte Die Maschine steht still (1909) erdachte eine durch eine riesige Maschine verbundene Welt, wie ein Hauch Internet.",
+      "Asimovs Multivac war ein Riesencomputer, der die Fragen eines ganzen Planeten beantwortete.",
+      "Frühe Autoren malten sich oft ein riesiges Gehirn aus, nicht Millionen kleiner persönlicher Geräte."
+     ],
+     "q": "Wofür nutzt du Computer oder Handy, was ein Autor der 1950er nie erraten hätte?",
+     "c": "Beschreibe einen riesigen hilfreichen Computer aus einer alten Geschichte und schrumpfe ihn in deine Tasche."
+    },
+    "es": {
+     "t": "Ordenadores en la CF clásica",
+     "g": "Ver cómo imaginaba la CF temprana cerebros del tamaño de una sala y máquinas parlantes.",
+     "p": [
+      "El relato La máquina se detiene (1909), de E. M. Forster, imaginó un mundo conectado por una vasta máquina, un atisbo de internet.",
+      "El Multivac de Asimov era un ordenador gigante que respondía las preguntas de un planeta entero.",
+      "Los primeros autores solían imaginar un enorme cerebro, no millones de pequeños dispositivos personales."
+     ],
+     "q": "¿Para qué usas un ordenador o móvil que un autor de los cincuenta jamás adivinaría?",
+     "c": "Describe un ordenador gigante y útil de un relato antiguo y luego redúcelo a tu bolsillo."
+    },
+    "fr": {
+     "t": "Les ordinateurs dans la SF classique",
+     "g": "Voir comment la SF des débuts imaginait des cerveaux grands comme une salle et des machines parlantes.",
+     "p": [
+      "La nouvelle La Machine s'arrête (1909) d'E. M. Forster imagine un monde relié par une vaste machine, aperçu d'internet.",
+      "Le Multivac d'Asimov était un ordinateur géant qui répondait aux questions de toute une planète.",
+      "Les premiers auteurs imaginaient souvent un seul énorme cerveau, pas des millions de petits appareils personnels."
+     ],
+     "q": "À quoi sers-tu d'un ordinateur ou téléphone qu'un auteur des années 1950 n'aurait jamais deviné ?",
+     "c": "Décris un ordinateur géant et serviable d'une vieille histoire, puis réduis-le jusqu'à ta poche."
+    },
+    "it": {
+     "t": "I computer nella fantascienza classica",
+     "g": "Vedere come la fantascienza delle origini immaginava cervelli grandi come una stanza e macchine parlanti.",
+     "p": [
+      "Il racconto La macchina si ferma (1909) di E. M. Forster immaginò un mondo collegato da una vasta macchina, un'anticipazione di internet.",
+      "Il Multivac di Asimov era un computer gigante che rispondeva alle domande di un intero pianeta.",
+      "I primi autori immaginavano spesso un solo enorme cervello, non milioni di piccoli dispositivi personali."
+     ],
+     "q": "A cosa usi un computer o telefono che uno scrittore degli anni Cinquanta non avrebbe mai indovinato?",
+     "c": "Descrivi un computer gigante e utile di una vecchia storia, poi riducilo fino alla tua tasca."
+    },
+    "pt": {
+     "t": "Computadores na FC clássica",
+     "g": "Ver como a FC inicial imaginava cérebros do tamanho de uma sala e máquinas falantes.",
+     "p": [
+      "O conto A Máquina Pára (1909), de E. M. Forster, imaginou um mundo ligado por uma vasta máquina, um vislumbre da internet.",
+      "O Multivac de Asimov era um computador gigante que respondia às perguntas de um planeta inteiro.",
+      "Os primeiros autores imaginavam muitas vezes um único cérebro enorme, não milhões de pequenos aparelhos pessoais."
+     ],
+     "q": "Para que usas um computador ou telemóvel que um autor dos anos 1950 jamais adivinharia?",
+     "c": "Descreve um computador gigante e útil de uma história antiga e depois encolhe-o até ao teu bolso."
+    },
+    "pt_BR": {
+     "t": "Computadores na FC clássica",
+     "g": "Ver como a FC inicial imaginava cérebros do tamanho de uma sala e máquinas falantes.",
+     "p": [
+      "O conto A Máquina Para (1909), de E. M. Forster, imaginou um mundo ligado por uma vasta máquina, um vislumbre da internet.",
+      "O Multivac de Asimov era um computador gigante que respondia às perguntas de um planeta inteiro.",
+      "Os primeiros autores imaginavam muitas vezes um único cérebro enorme, não milhões de pequenos aparelhos pessoais."
+     ],
+     "q": "Para que você usa um computador ou celular que um autor dos anos 1950 jamais adivinharia?",
+     "c": "Descreva um computador gigante e útil de uma história antiga e depois encolha-o até o seu bolso."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Artificial intelligence basics",
+     "g": "Learn what AI means in fiction and how stories explore machines that think and feel.",
+     "p": [
+      "In stories, AI usually means a machine that can learn, reason and talk, sometimes with feelings.",
+      "Fiction asks big questions: can a machine be a friend, a helper, a colleague?",
+      "Real AI is a different matter, built from data and code, while fiction explores possibilities."
+     ],
+     "q": "If a machine could truly understand you, what would you want it to know?",
+     "c": "Write three questions you would ask a fictional AI to learn about its mind."
+    },
+    "de": {
+     "t": "Grundlagen der künstlichen Intelligenz",
+     "g": "Lernen, was KI in der Fiktion bedeutet und wie Geschichten denkende, fühlende Maschinen erkunden.",
+     "p": [
+      "In Geschichten ist KI meist eine Maschine, die lernen, denken und sprechen kann, manchmal mit Gefühlen.",
+      "Die Fiktion stellt große Fragen: Kann eine Maschine Freund, Helfer oder Kollege sein?",
+      "Echte KI ist etwas anderes, aus Daten und Code gebaut, während die Fiktion Möglichkeiten erkundet."
+     ],
+     "q": "Wenn eine Maschine dich wirklich verstehen könnte, was sollte sie über dich wissen?",
+     "c": "Schreibe drei Fragen, die du einer erfundenen KI stellen würdest, um ihren Geist zu verstehen."
+    },
+    "es": {
+     "t": "Conceptos básicos de inteligencia artificial",
+     "g": "Aprender qué significa la IA en la ficción y cómo exploran las historias las máquinas que piensan y sienten.",
+     "p": [
+      "En los relatos, la IA suele ser una máquina que aprende, razona y habla, a veces con sentimientos.",
+      "La ficción plantea grandes preguntas: ¿puede una máquina ser amiga, ayudante o colega?",
+      "La IA real es otra cosa, hecha de datos y código, mientras que la ficción explora posibilidades."
+     ],
+     "q": "Si una máquina pudiera entenderte de verdad, ¿qué querrías que supiera de ti?",
+     "c": "Escribe tres preguntas que harías a una IA ficticia para conocer su mente."
+    },
+    "fr": {
+     "t": "Bases de l'intelligence artificielle",
+     "g": "Comprendre ce que signifie l'IA dans la fiction et comment les récits explorent des machines qui pensent et ressentent.",
+     "p": [
+      "Dans les récits, l'IA est souvent une machine qui apprend, raisonne et parle, parfois avec des sentiments.",
+      "La fiction pose de grandes questions : une machine peut-elle être une amie, une aide, une collègue ?",
+      "La vraie IA est autre chose, faite de données et de code, tandis que la fiction explore des possibles."
+     ],
+     "q": "Si une machine pouvait vraiment te comprendre, que voudrais-tu qu'elle sache de toi ?",
+     "c": "Écris trois questions que tu poserais à une IA fictive pour connaître son esprit."
+    },
+    "it": {
+     "t": "Nozioni di base sull'intelligenza artificiale",
+     "g": "Imparare cosa significa IA nella narrativa e come le storie esplorano macchine che pensano e sentono.",
+     "p": [
+      "Nelle storie l'IA è di solito una macchina che impara, ragiona e parla, a volte con sentimenti.",
+      "La narrativa pone grandi domande: una macchina può essere amica, aiutante, collega?",
+      "La vera IA è un'altra cosa, fatta di dati e codice, mentre la narrativa esplora possibilità."
+     ],
+     "q": "Se una macchina potesse davvero capirti, cosa vorresti che sapesse di te?",
+     "c": "Scrivi tre domande che faresti a una IA immaginaria per conoscere la sua mente."
+    },
+    "pt": {
+     "t": "Noções básicas de inteligência artificial",
+     "g": "Aprender o que significa a IA na ficção e como as histórias exploram máquinas que pensam e sentem.",
+     "p": [
+      "Nas histórias, a IA costuma ser uma máquina que aprende, raciocina e fala, às vezes com sentimentos.",
+      "A ficção levanta grandes perguntas: pode uma máquina ser amiga, ajudante ou colega?",
+      "A IA real é outra coisa, feita de dados e código, enquanto a ficção explora possibilidades."
+     ],
+     "q": "Se uma máquina pudesse realmente compreender-te, o que gostarias que soubesse de ti?",
+     "c": "Escreve três perguntas que farias a uma IA fictícia para conhecer a sua mente."
+    },
+    "pt_BR": {
+     "t": "Noções básicas de inteligência artificial",
+     "g": "Aprender o que significa a IA na ficção e como as histórias exploram máquinas que pensam e sentem.",
+     "p": [
+      "Nas histórias, a IA costuma ser uma máquina que aprende, raciocina e fala, às vezes com sentimentos.",
+      "A ficção levanta grandes perguntas: uma máquina pode ser amiga, ajudante ou colega?",
+      "A IA real é outra coisa, feita de dados e código, enquanto a ficção explora possibilidades."
+     ],
+     "q": "Se uma máquina pudesse realmente entender você, o que gostaria que ela soubesse?",
+     "c": "Escreva três perguntas que você faria a uma IA fictícia para conhecer sua mente."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Friendly AI characters",
+     "g": "Meet helpful companions like Data, R2-D2 and TARS and see why audiences love them.",
+     "p": [
+      "Data in Star Trek: The Next Generation is an android who wants to understand humanity.",
+      "R2-D2 in Star Wars beeps and whistles, yet shows courage and loyalty.",
+      "TARS in the film Interstellar (2014) has an adjustable sense of humour."
+     ],
+     "q": "Which fictional AI would you pick as a travel companion, and why?",
+     "c": "Create a small AI companion with a name, a personality trait and a catchphrase."
+    },
+    "de": {
+     "t": "Freundliche KI-Figuren",
+     "g": "Hilfreiche Begleiter wie Data, R2-D2 und TARS kennenlernen und sehen, warum das Publikum sie liebt.",
+     "p": [
+      "Data in Star Trek: Das nächste Jahrhundert ist ein Android, der die Menschheit verstehen will.",
+      "R2-D2 in Star Wars piept und pfeift, zeigt aber Mut und Treue.",
+      "TARS im Film Interstellar (2014) hat einen einstellbaren Sinn für Humor."
+     ],
+     "q": "Welche erfundene KI würdest du als Reisebegleiter wählen, und warum?",
+     "c": "Erschaffe einen kleinen KI-Begleiter mit Namen, einer Charaktereigenschaft und einem Spruch."
+    },
+    "es": {
+     "t": "Personajes de IA amistosos",
+     "g": "Conocer compañeros útiles como Data, R2-D2 y TARS y ver por qué el público los quiere.",
+     "p": [
+      "Data, en Star Trek: La nueva generación, es un androide que quiere entender a la humanidad.",
+      "R2-D2, en Star Wars, pita y silba, pero demuestra valentía y lealtad.",
+      "TARS, en la película Interstellar (2014), tiene un sentido del humor ajustable."
+     ],
+     "q": "¿Qué IA ficticia elegirías como compañera de viaje y por qué?",
+     "c": "Crea un pequeño compañero de IA con nombre, un rasgo de personalidad y una frase típica."
+    },
+    "fr": {
+     "t": "Personnages d'IA sympathiques",
+     "g": "Rencontrer des compagnons serviables comme Data, R2-D2 et TARS et voir pourquoi le public les aime.",
+     "p": [
+      "Data, dans Star Trek : La Nouvelle Génération, est un androïde qui veut comprendre l'humanité.",
+      "R2-D2, dans Star Wars, bipe et siffle, mais montre courage et loyauté.",
+      "TARS, dans le film Interstellar (2014), a un sens de l'humour réglable."
+     ],
+     "q": "Quelle IA fictive choisirais-tu comme compagnon de voyage, et pourquoi ?",
+     "c": "Crée un petit compagnon IA avec un nom, un trait de caractère et une phrase fétiche."
+    },
+    "it": {
+     "t": "Personaggi di IA amichevoli",
+     "g": "Conoscere compagni utili come Data, R2-D2 e TARS e capire perché il pubblico li ama.",
+     "p": [
+      "Data, in Star Trek: The Next Generation, è un androide che vuole capire l'umanità.",
+      "R2-D2, in Guerre stellari, emette bip e fischi, ma mostra coraggio e lealtà.",
+      "TARS, nel film Interstellar (2014), ha un senso dell'umorismo regolabile."
+     ],
+     "q": "Quale IA immaginaria sceglieresti come compagna di viaggio e perché?",
+     "c": "Crea un piccolo compagno IA con un nome, un tratto della personalità e una frase tipica."
+    },
+    "pt": {
+     "t": "Personagens de IA simpáticas",
+     "g": "Conhecer companheiros úteis como Data, R2-D2 e TARS e ver porque o público os adora.",
+     "p": [
+      "Data, em Star Trek: The Next Generation, é um andróide que quer compreender a humanidade.",
+      "R2-D2, em Star Wars, apita e assobia, mas mostra coragem e lealdade.",
+      "TARS, no filme Interstellar (2014), tem um sentido de humor ajustável."
+     ],
+     "q": "Que IA fictícia escolherias como companheira de viagem e porquê?",
+     "c": "Cria um pequeno companheiro de IA com nome, um traço de personalidade e uma frase típica."
+    },
+    "pt_BR": {
+     "t": "Personagens de IA simpáticos",
+     "g": "Conhecer companheiros úteis como Data, R2-D2 e TARS e ver por que o público os adora.",
+     "p": [
+      "Data, em Star Trek: The Next Generation, é um androide que quer compreender a humanidade.",
+      "R2-D2, em Star Wars, apita e assobia, mas mostra coragem e lealdade.",
+      "TARS, no filme Interestelar (2014), tem um senso de humor ajustável."
+     ],
+     "q": "Que IA fictícia você escolheria como companheira de viagem e por quê?",
+     "c": "Crie um pequeno companheiro de IA com nome, um traço de personalidade e uma frase típica."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Aliens as a mirror",
+     "g": "See how alien cultures in SF help us view our own customs from the outside.",
+     "p": [
+      "By showing a very different society, a story invites us to notice what we take for granted.",
+      "Le Guin's Left Hand of Darkness shows a world where people think about gender very differently.",
+      "Writers also use aliens to explore ideas like cooperation, language and what makes a home."
+     ],
+     "q": "What custom from your own culture would an alien visitor find most curious?",
+     "c": "Describe one everyday habit of yours as an alien observer would, in two sentences."
+    },
+    "de": {
+     "t": "Aliens als Spiegel",
+     "g": "Sehen, wie fremde Kulturen in der SF helfen, die eigenen Bräuche von außen zu betrachten.",
+     "p": [
+      "Eine sehr andere Gesellschaft lädt dazu ein, Selbstverständliches neu zu bemerken.",
+      "Le Guins Die linke Hand der Dunkelheit zeigt eine Welt, in der Menschen ganz anders über Geschlecht denken.",
+      "Autoren nutzen Aliens auch, um Ideen wie Zusammenarbeit, Sprache und Heimat zu erkunden."
+     ],
+     "q": "Welchen Brauch deiner Kultur fände ein außerirdischer Besucher am merkwürdigsten?",
+     "c": "Beschreibe eine alltägliche Gewohnheit von dir in zwei Sätzen aus Sicht eines Alien-Beobachters."
+    },
+    "es": {
+     "t": "Los alienígenas como espejo",
+     "g": "Ver cómo las culturas alienígenas de la CF nos ayudan a mirar nuestras costumbres desde fuera.",
+     "p": [
+      "Al mostrar una sociedad muy distinta, una historia nos invita a notar lo que damos por sentado.",
+      "La mano izquierda de la oscuridad, de Le Guin, muestra un mundo donde se piensa muy distinto sobre el género.",
+      "Los autores también usan alienígenas para explorar ideas como cooperación, lenguaje y qué hace un hogar."
+     ],
+     "q": "¿Qué costumbre de tu cultura le parecería más curiosa a un visitante alienígena?",
+     "c": "Describe un hábito cotidiano tuyo como lo haría un observador alienígena, en dos frases."
+    },
+    "fr": {
+     "t": "Les extraterrestres comme miroir",
+     "g": "Voir comment les cultures extraterrestres de la SF aident à regarder nos coutumes de l'extérieur.",
+     "p": [
+      "En montrant une société très différente, un récit nous invite à remarquer ce que l'on tient pour acquis.",
+      "La Main gauche de la nuit de Le Guin montre un monde où l'on pense le genre très différemment.",
+      "Les auteurs utilisent aussi les extraterrestres pour explorer coopération, langage et ce qui fait un foyer."
+     ],
+     "q": "Quelle coutume de ta culture un visiteur extraterrestre trouverait-il la plus curieuse ?",
+     "c": "Décris une de tes habitudes quotidiennes comme le ferait un observateur extraterrestre, en deux phrases."
+    },
+    "it": {
+     "t": "Gli alieni come specchio",
+     "g": "Vedere come le culture aliene della fantascienza ci aiutino a guardare le nostre usanze da fuori.",
+     "p": [
+      "Mostrando una società molto diversa, una storia ci invita a notare ciò che diamo per scontato.",
+      "La mano sinistra delle tenebre di Le Guin mostra un mondo dove si pensa al genere in modo molto diverso.",
+      "Gli autori usano gli alieni anche per esplorare idee come cooperazione, linguaggio e cosa fa una casa."
+     ],
+     "q": "Quale usanza della tua cultura troverebbe più curiosa un visitatore alieno?",
+     "c": "Descrivi una tua abitudine quotidiana come farebbe un osservatore alieno, in due frasi."
+    },
+    "pt": {
+     "t": "Os alienígenas como espelho",
+     "g": "Ver como as culturas alienígenas da FC nos ajudam a olhar os nossos costumes de fora.",
+     "p": [
+      "Ao mostrar uma sociedade muito diferente, uma história convida-nos a notar o que damos por garantido.",
+      "A Mão Esquerda da Escuridão, de Le Guin, mostra um mundo onde se pensa no género de forma muito diferente.",
+      "Os autores usam também alienígenas para explorar ideias como cooperação, linguagem e o que faz um lar."
+     ],
+     "q": "Que costume da tua cultura acharia mais curioso um visitante alienígena?",
+     "c": "Descreve um hábito teu do dia a dia como faria um observador alienígena, em duas frases."
+    },
+    "pt_BR": {
+     "t": "Os alienígenas como espelho",
+     "g": "Ver como as culturas alienígenas da FC nos ajudam a olhar nossos costumes de fora.",
+     "p": [
+      "Ao mostrar uma sociedade muito diferente, uma história nos convida a notar o que damos por garantido.",
+      "A Mão Esquerda da Escuridão, de Le Guin, mostra um mundo onde se pensa no gênero de forma muito diferente.",
+      "Os autores também usam alienígenas para explorar ideias como cooperação, linguagem e o que faz um lar."
+     ],
+     "q": "Que costume da sua cultura um visitante alienígena acharia mais curioso?",
+     "c": "Descreva um hábito seu do dia a dia como faria um observador alienígena, em duas frases."
+    }
+   }
+  }
+ ]
+}

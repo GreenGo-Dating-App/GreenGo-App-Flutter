@@ -1,0 +1,835 @@
+{
+ "topic": "web_design",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The box model",
+     "g": "See every element as a box with four layers.",
+     "p": [
+      "From the inside out: content, padding, border and margin.",
+      "Browsers draw each element as a rectangle, even round-looking ones.",
+      "The inspector shows the box model as coloured layers you can hover."
+     ],
+     "q": "Which element on your page looks like it needs more breathing room?",
+     "c": "Inspect a paragraph and read its padding and margin values."
+    },
+    "de": {
+     "t": "Das Box-Modell",
+     "g": "Sieh jedes Element als Box mit vier Schichten.",
+     "p": [
+      "Von innen nach außen: Inhalt, Innenabstand, Rahmen und Außenabstand.",
+      "Browser zeichnen jedes Element als Rechteck, auch runde wirken so.",
+      "Der Inspektor zeigt das Box-Modell als farbige Schichten zum Überfahren."
+     ],
+     "q": "Welches Element deiner Seite braucht scheinbar mehr Luft?",
+     "c": "Untersuche einen Absatz und lies seine Werte für padding und margin ab."
+    },
+    "es": {
+     "t": "El modelo de caja",
+     "g": "Ve cada elemento como una caja con cuatro capas.",
+     "p": [
+      "De dentro afuera: contenido, relleno, borde y margen.",
+      "Los navegadores dibujan cada elemento como un rectángulo, incluso los redondeados.",
+      "El inspector muestra el modelo de caja como capas de colores al pasar el ratón."
+     ],
+     "q": "¿Qué elemento de tu página parece necesitar más aire?",
+     "c": "Inspecciona un párrafo y lee sus valores de padding y margin."
+    },
+    "fr": {
+     "t": "Le modèle de boîte",
+     "g": "Vois chaque élément comme une boîte à quatre couches.",
+     "p": [
+      "De l'intérieur vers l'extérieur : contenu, remplissage, bordure et marge.",
+      "Les navigateurs dessinent chaque élément comme un rectangle, même les formes arrondies.",
+      "L'inspecteur montre le modèle de boîte en couches colorées au survol."
+     ],
+     "q": "Quel élément de ta page semble avoir besoin de plus d'air ?",
+     "c": "Inspecte un paragraphe et lis ses valeurs de padding et margin."
+    },
+    "it": {
+     "t": "Il box model",
+     "g": "Vedi ogni elemento come una scatola a quattro strati.",
+     "p": [
+      "Dall'interno all'esterno: contenuto, padding, bordo e margine.",
+      "I browser disegnano ogni elemento come un rettangolo, anche quelli dall'aspetto rotondo.",
+      "L'ispettore mostra il box model come strati colorati al passaggio del mouse."
+     ],
+     "q": "Quale elemento della tua pagina sembra avere bisogno di più aria?",
+     "c": "Ispeziona un paragrafo e leggi i suoi valori di padding e margin."
+    },
+    "pt": {
+     "t": "O modelo de caixa",
+     "g": "Vê cada elemento como uma caixa com quatro camadas.",
+     "p": [
+      "De dentro para fora: conteúdo, espaçamento interno, contorno e margem.",
+      "Os navegadores desenham cada elemento como um retângulo, mesmo os de aspeto redondo.",
+      "O inspetor mostra o modelo de caixa em camadas coloridas ao passar o rato."
+     ],
+     "q": "Que elemento da tua página parece precisar de mais espaço?",
+     "c": "Inspeciona um parágrafo e lê os valores de padding e margin."
+    },
+    "pt_BR": {
+     "t": "O modelo de caixa",
+     "g": "Veja cada elemento como uma caixa com quatro camadas.",
+     "p": [
+      "De dentro para fora: conteúdo, espaçamento interno, borda e margem.",
+      "Navegadores desenham cada elemento como um retângulo, mesmo os de aparência redonda.",
+      "O inspetor mostra o modelo de caixa em camadas coloridas ao passar o mouse."
+     ],
+     "q": "Que elemento da sua página parece precisar de mais espaço?",
+     "c": "Inspecione um parágrafo e leia os valores de padding e margin."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Padding vs margin",
+     "g": "Know when to add space inside an element and when outside.",
+     "p": [
+      "Padding is space inside the border, so backgrounds fill it.",
+      "Margin is space outside the border, pushing neighbours away.",
+      "Shorthand like padding: 1rem 2rem sets vertical and horizontal at once."
+     ],
+     "q": "Where on your page would extra padding help most?",
+     "c": "Give a button padding 0.75rem 1.5rem and a margin-bottom of 1rem."
+    },
+    "de": {
+     "t": "Padding und Margin",
+     "g": "Wisse, wann du Abstand innen und wann außen brauchst.",
+     "p": [
+      "Padding ist Abstand innerhalb des Rahmens, daher füllt ihn der Hintergrund.",
+      "Margin ist Abstand außerhalb des Rahmens und schiebt Nachbarn weg.",
+      "Kurzschreibweisen wie padding: 1rem 2rem setzen vertikal und horizontal zugleich."
+     ],
+     "q": "Wo auf deiner Seite würde mehr Padding am meisten helfen?",
+     "c": "Gib einem Button padding 0.75rem 1.5rem und ein margin-bottom von 1rem."
+    },
+    "es": {
+     "t": "Padding frente a margin",
+     "g": "Sabe cuándo añadir espacio dentro de un elemento y cuándo fuera.",
+     "p": [
+      "El padding es espacio dentro del borde, por eso el fondo lo rellena.",
+      "El margin es espacio fuera del borde y aparta a los vecinos.",
+      "Atajos como padding: 1rem 2rem fijan vertical y horizontal a la vez."
+     ],
+     "q": "¿Dónde de tu página ayudaría más un padding extra?",
+     "c": "Da a un botón padding 0.75rem 1.5rem y un margin-bottom de 1rem."
+    },
+    "fr": {
+     "t": "Padding contre margin",
+     "g": "Sache quand ajouter de l'espace à l'intérieur d'un élément et quand à l'extérieur.",
+     "p": [
+      "Le padding est l'espace dans la bordure, donc le fond le remplit.",
+      "La margin est l'espace hors de la bordure et éloigne les voisins.",
+      "Des raccourcis comme padding: 1rem 2rem règlent vertical et horizontal d'un coup."
+     ],
+     "q": "Où sur ta page un padding supplémentaire aiderait-il le plus ?",
+     "c": "Donne à un bouton padding 0.75rem 1.5rem et une margin-bottom de 1rem."
+    },
+    "it": {
+     "t": "Padding contro margin",
+     "g": "Sappi quando aggiungere spazio dentro un elemento e quando fuori.",
+     "p": [
+      "Il padding è lo spazio dentro il bordo, quindi lo sfondo lo riempie.",
+      "Il margin è lo spazio fuori dal bordo e allontana i vicini.",
+      "Scorciatoie come padding: 1rem 2rem impostano verticale e orizzontale insieme."
+     ],
+     "q": "Dove nella tua pagina un padding in più aiuterebbe di più?",
+     "c": "Dai a un pulsante padding 0.75rem 1.5rem e un margin-bottom di 1rem."
+    },
+    "pt": {
+     "t": "Padding versus margin",
+     "g": "Sabe quando pôr espaço dentro de um elemento e quando fora.",
+     "p": [
+      "O padding é o espaço dentro do contorno, por isso o fundo preenche-o.",
+      "A margin é o espaço fora do contorno e afasta os vizinhos.",
+      "Atalhos como padding: 1rem 2rem definem vertical e horizontal de uma vez."
+     ],
+     "q": "Onde na tua página ajudaria mais um padding extra?",
+     "c": "Dá a um botão padding 0.75rem 1.5rem e uma margin-bottom de 1rem."
+    },
+    "pt_BR": {
+     "t": "Padding versus margin",
+     "g": "Saiba quando pôr espaço dentro de um elemento e quando fora.",
+     "p": [
+      "O padding é o espaço dentro da borda, por isso o fundo o preenche.",
+      "A margin é o espaço fora da borda e afasta os vizinhos.",
+      "Atalhos como padding: 1rem 2rem definem vertical e horizontal de uma vez."
+     ],
+     "q": "Onde na sua página um padding extra ajudaria mais?",
+     "c": "Dê a um botão padding 0.75rem 1.5rem e uma margin-bottom de 1rem."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Borders and rounded corners",
+     "g": "Frame elements and soften them with rounded corners.",
+     "p": [
+      "The border shorthand takes width, style and colour, like 1px solid grey.",
+      "The border-radius property rounds corners; 50 percent makes circles.",
+      "Subtle borders and radii feel friendlier than heavy black lines."
+     ],
+     "q": "Do you prefer sharp or rounded corners for your site's style?",
+     "c": "Give a card a thin border and a border-radius of 12px."
+    },
+    "de": {
+     "t": "Rahmen und runde Ecken",
+     "g": "Rahme Elemente ein und mildere sie mit runden Ecken.",
+     "p": [
+      "Die border-Kurzform nimmt Breite, Stil und Farbe, etwa 1px solid grey.",
+      "Mit border-radius rundest du Ecken ab; 50 Prozent ergeben Kreise.",
+      "Dezente Rahmen und Radien wirken freundlicher als dicke schwarze Linien."
+     ],
+     "q": "Magst du für deine Seite eher eckige oder runde Ecken?",
+     "c": "Gib einer Karte einen dünnen Rahmen und ein border-radius von 12px."
+    },
+    "es": {
+     "t": "Bordes y esquinas redondeadas",
+     "g": "Enmarca elementos y suavízalos con esquinas redondeadas.",
+     "p": [
+      "El atajo border admite grosor, estilo y color, como 1px solid grey.",
+      "La propiedad border-radius redondea esquinas; 50 por ciento crea círculos.",
+      "Bordes y radios sutiles resultan más amables que líneas negras gruesas."
+     ],
+     "q": "¿Prefieres esquinas rectas o redondeadas para el estilo de tu sitio?",
+     "c": "Da a una tarjeta un borde fino y un border-radius de 12px."
+    },
+    "fr": {
+     "t": "Bordures et coins arrondis",
+     "g": "Encadre les éléments et adoucis-les avec des coins arrondis.",
+     "p": [
+      "Le raccourci border prend épaisseur, style et couleur, comme 1px solid grey.",
+      "La propriété border-radius arrondit les coins ; 50 pour cent donne des cercles.",
+      "Des bordures et rayons discrets paraissent plus aimables que de gros traits noirs."
+     ],
+     "q": "Préfères-tu des coins francs ou arrondis pour le style de ton site ?",
+     "c": "Donne à une carte une bordure fine et un border-radius de 12px."
+    },
+    "it": {
+     "t": "Bordi e angoli arrotondati",
+     "g": "Incornicia gli elementi e ammorbidiscili con angoli arrotondati.",
+     "p": [
+      "La scorciatoia border accetta spessore, stile e colore, come 1px solid grey.",
+      "La proprietà border-radius arrotonda gli angoli; il 50 per cento crea cerchi.",
+      "Bordi e raggi delicati risultano più amichevoli di pesanti linee nere."
+     ],
+     "q": "Preferisci angoli netti o arrotondati per lo stile del tuo sito?",
+     "c": "Dai a una card un bordo sottile e un border-radius di 12px."
+    },
+    "pt": {
+     "t": "Contornos e cantos arredondados",
+     "g": "Emoldura elementos e suaviza-os com cantos arredondados.",
+     "p": [
+      "O atalho border aceita espessura, estilo e cor, como 1px solid grey.",
+      "A propriedade border-radius arredonda cantos; 50 por cento faz círculos.",
+      "Contornos e raios subtis parecem mais amigáveis do que linhas pretas grossas."
+     ],
+     "q": "Preferes cantos retos ou arredondados para o estilo do teu site?",
+     "c": "Dá a um cartão um contorno fino e um border-radius de 12px."
+    },
+    "pt_BR": {
+     "t": "Bordas e cantos arredondados",
+     "g": "Emoldure elementos e suavize-os com cantos arredondados.",
+     "p": [
+      "O atalho border aceita espessura, estilo e cor, como 1px solid grey.",
+      "A propriedade border-radius arredonda cantos; 50 por cento faz círculos.",
+      "Bordas e raios sutis parecem mais amigáveis que linhas pretas grossas."
+     ],
+     "q": "Você prefere cantos retos ou arredondados para o estilo do seu site?",
+     "c": "Dê a um cartão uma borda fina e um border-radius de 12px."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Width, height and box sizing",
+     "g": "Make sizes predictable with border-box.",
+     "p": [
+      "By default, padding and border are added on top of the width.",
+      "With box-sizing: border-box, the width already includes them.",
+      "Many designers set it once for every element with a universal rule."
+     ],
+     "q": "Have you seen a box grow bigger than the size you set?",
+     "c": "Add * { box-sizing: border-box; } and compare two boxes with padding."
+    },
+    "de": {
+     "t": "Breite, Höhe und Box-Sizing",
+     "g": "Mach Größen mit border-box vorhersagbar.",
+     "p": [
+      "Standardmäßig kommen Padding und Rahmen zur Breite hinzu.",
+      "Mit box-sizing: border-box enthält die Breite beides bereits.",
+      "Viele setzen es einmal für alle Elemente mit einer universellen Regel."
+     ],
+     "q": "Hast du schon erlebt, dass eine Box größer wurde als eingestellt?",
+     "c": "Füge * { box-sizing: border-box; } hinzu und vergleiche zwei Boxen mit Padding."
+    },
+    "es": {
+     "t": "Ancho, alto y box-sizing",
+     "g": "Haz los tamaños predecibles con border-box.",
+     "p": [
+      "Por defecto, el padding y el borde se suman al ancho.",
+      "Con box-sizing: border-box, el ancho ya los incluye.",
+      "Muchos diseñadores lo definen una vez para todos los elementos con una regla universal."
+     ],
+     "q": "¿Has visto una caja crecer más que el tamaño que fijaste?",
+     "c": "Añade * { box-sizing: border-box; } y compara dos cajas con padding."
+    },
+    "fr": {
+     "t": "Largeur, hauteur et box-sizing",
+     "g": "Rends les tailles prévisibles avec border-box.",
+     "p": [
+      "Par défaut, le padding et la bordure s'ajoutent à la largeur.",
+      "Avec box-sizing: border-box, la largeur les inclut déjà.",
+      "Beaucoup de designers le définissent une fois pour tous les éléments avec une règle universelle."
+     ],
+     "q": "As-tu déjà vu une boîte grandir plus que la taille définie ?",
+     "c": "Ajoute * { box-sizing: border-box; } et compare deux boîtes avec padding."
+    },
+    "it": {
+     "t": "Larghezza, altezza e box-sizing",
+     "g": "Rendi prevedibili le dimensioni con border-box.",
+     "p": [
+      "Per impostazione predefinita, padding e bordo si sommano alla larghezza.",
+      "Con box-sizing: border-box, la larghezza li include già.",
+      "Molti designer lo impostano una volta per tutti gli elementi con una regola universale."
+     ],
+     "q": "Hai mai visto una scatola crescere più della dimensione impostata?",
+     "c": "Aggiungi * { box-sizing: border-box; } e confronta due box con padding."
+    },
+    "pt": {
+     "t": "Largura, altura e box-sizing",
+     "g": "Torna os tamanhos previsíveis com border-box.",
+     "p": [
+      "Por predefinição, o padding e o contorno somam-se à largura.",
+      "Com box-sizing: border-box, a largura já os inclui.",
+      "Muitos designers definem-no uma vez para todos os elementos com uma regra universal."
+     ],
+     "q": "Já viste uma caixa crescer mais do que o tamanho definido?",
+     "c": "Acrescenta * { box-sizing: border-box; } e compara duas caixas com padding."
+    },
+    "pt_BR": {
+     "t": "Largura, altura e box-sizing",
+     "g": "Torne os tamanhos previsíveis com border-box.",
+     "p": [
+      "Por padrão, o padding e a borda se somam à largura.",
+      "Com box-sizing: border-box, a largura já os inclui.",
+      "Muitos designers definem isso uma vez para todos os elementos com uma regra universal."
+     ],
+     "q": "Você já viu uma caixa crescer mais do que o tamanho definido?",
+     "c": "Adicione * { box-sizing: border-box; } e compare duas caixas com padding."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Block and inline elements",
+     "g": "Understand how elements stack or flow in text.",
+     "p": [
+      "Block elements like div, p and h1 start on a new line and fill the width.",
+      "Inline elements like a, span and strong sit within a line of text.",
+      "The display property can switch an element between these behaviours."
+     ],
+     "q": "Which elements on your page are block, and which are inline?",
+     "c": "Wrap one word in span, style it, and compare it with a p."
+    },
+    "de": {
+     "t": "Block- und Inline-Elemente",
+     "g": "Verstehe, wie Elemente sich stapeln oder im Text fließen.",
+     "p": [
+      "Block-Elemente wie div, p und h1 beginnen in neuer Zeile und füllen die Breite.",
+      "Inline-Elemente wie a, span und strong stehen innerhalb einer Textzeile.",
+      "Mit display lässt sich ein Element zwischen diesen Verhalten umschalten."
+     ],
+     "q": "Welche Elemente deiner Seite sind Block, welche Inline?",
+     "c": "Umschließe ein Wort mit span, gestalte es und vergleiche es mit einem p."
+    },
+    "es": {
+     "t": "Elementos de bloque y en línea",
+     "g": "Entiende cómo los elementos se apilan o fluyen en el texto.",
+     "p": [
+      "Los de bloque como div, p y h1 empiezan en línea nueva y ocupan todo el ancho.",
+      "Los elementos en línea como a, span y strong van dentro de una línea de texto.",
+      "La propiedad display permite cambiar un elemento entre ambos comportamientos."
+     ],
+     "q": "¿Cuáles elementos de tu página son de bloque y cuáles en línea?",
+     "c": "Envuelve una palabra en span, dale estilo y compárala con un p."
+    },
+    "fr": {
+     "t": "Éléments de bloc et en ligne",
+     "g": "Comprends comment les éléments s'empilent ou s'écoulent dans le texte.",
+     "p": [
+      "Les éléments de bloc comme div, p et h1 commencent une ligne et occupent la largeur.",
+      "Les éléments en ligne comme a, span et strong s'insèrent dans une ligne de texte.",
+      "La propriété display permet de passer d'un comportement à l'autre."
+     ],
+     "q": "Quels éléments de ta page sont de bloc, lesquels en ligne ?",
+     "c": "Entoure un mot d'un span, stylise-le et compare-le à un p."
+    },
+    "it": {
+     "t": "Elementi block e inline",
+     "g": "Capisci come gli elementi si impilano o scorrono nel testo.",
+     "p": [
+      "Gli elementi block come div, p e h1 iniziano su una nuova riga e occupano la larghezza.",
+      "Gli elementi inline come a, span e strong stanno dentro una riga di testo.",
+      "La proprietà display permette di passare da un comportamento all'altro."
+     ],
+     "q": "Quali elementi della tua pagina sono block e quali inline?",
+     "c": "Racchiudi una parola in uno span, stilizzala e confrontala con un p."
+    },
+    "pt": {
+     "t": "Elementos de bloco e em linha",
+     "g": "Percebe como os elementos se empilham ou fluem no texto.",
+     "p": [
+      "Os de bloco como div, p e h1 começam em nova linha e ocupam a largura.",
+      "Os elementos em linha como a, span e strong ficam dentro de uma linha de texto.",
+      "A propriedade display permite trocar um elemento entre os dois comportamentos."
+     ],
+     "q": "Que elementos da tua página são de bloco e quais em linha?",
+     "c": "Envolve uma palavra num span, dá-lhe estilo e compara-a com um p."
+    },
+    "pt_BR": {
+     "t": "Elementos de bloco e inline",
+     "g": "Entenda como os elementos se empilham ou fluem no texto.",
+     "p": [
+      "Os de bloco como div, p e h1 começam em nova linha e ocupam a largura.",
+      "Os elementos inline como a, span e strong ficam dentro de uma linha de texto.",
+      "A propriedade display permite trocar um elemento entre os dois comportamentos."
+     ],
+     "q": "Quais elementos da sua página são de bloco e quais são inline?",
+     "c": "Envolva uma palavra em um span, estilize e compare com um p."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Units: px, em, rem and percent",
+     "g": "Pick the right unit for sizes and spacing.",
+     "p": [
+      "Pixels are fixed; percent follows the parent's size.",
+      "The em unit follows the current font size; rem follows the root size.",
+      "Using rem for text lets people scale it through browser settings."
+     ],
+     "q": "Which sizes on your page should stay fixed, and which should flex?",
+     "c": "Set html font-size to 100 percent and body text to 1rem."
+    },
+    "de": {
+     "t": "Einheiten: px, em, rem und Prozent",
+     "g": "Wähle die passende Einheit für Größen und Abstände.",
+     "p": [
+      "Pixel sind fest; Prozent richtet sich nach der Größe des Elternelements.",
+      "em folgt der aktuellen Schriftgröße; rem folgt der Wurzelgröße.",
+      "Mit rem für Text können Menschen ihn über Browsereinstellungen skalieren."
+     ],
+     "q": "Welche Größen deiner Seite sollten fest bleiben, welche flexibel sein?",
+     "c": "Setze html font-size auf 100 Prozent und den Fließtext auf 1rem."
+    },
+    "es": {
+     "t": "Unidades: px, em, rem y porcentaje",
+     "g": "Elige la unidad adecuada para tamaños y espacios.",
+     "p": [
+      "Los píxeles son fijos; el porcentaje sigue el tamaño del elemento padre.",
+      "La unidad em sigue el tamaño de fuente actual; rem sigue el tamaño raíz.",
+      "Usar rem para el texto permite escalarlo desde los ajustes del navegador."
+     ],
+     "q": "¿Qué tamaños de tu página deberían ser fijos y cuáles flexibles?",
+     "c": "Pon html font-size al 100 por ciento y el texto del body en 1rem."
+    },
+    "fr": {
+     "t": "Unités : px, em, rem et pourcentage",
+     "g": "Choisis la bonne unité pour les tailles et les espaces.",
+     "p": [
+      "Les pixels sont fixes ; le pourcentage suit la taille du parent.",
+      "L'unité em suit la taille de police actuelle ; rem suit la taille racine.",
+      "Utiliser rem pour le texte permet de le redimensionner via les réglages du navigateur."
+     ],
+     "q": "Quelles tailles de ta page doivent rester fixes, lesquelles flexibles ?",
+     "c": "Mets html font-size à 100 pour cent et le texte du body à 1rem."
+    },
+    "it": {
+     "t": "Unità: px, em, rem e percentuale",
+     "g": "Scegli l'unità giusta per dimensioni e spazi.",
+     "p": [
+      "I pixel sono fissi; la percentuale segue la dimensione del genitore.",
+      "L'unità em segue la dimensione del font corrente; rem segue quella della radice.",
+      "Usare rem per il testo permette di scalarlo dalle impostazioni del browser."
+     ],
+     "q": "Quali dimensioni della tua pagina dovrebbero restare fisse e quali flessibili?",
+     "c": "Imposta html font-size al 100 per cento e il testo del body a 1rem."
+    },
+    "pt": {
+     "t": "Unidades: px, em, rem e percentagem",
+     "g": "Escolhe a unidade certa para tamanhos e espaços.",
+     "p": [
+      "Os píxeis são fixos; a percentagem segue o tamanho do elemento pai.",
+      "A unidade em segue o tamanho de letra atual; rem segue o tamanho da raiz.",
+      "Usar rem no texto permite escalá-lo pelas definições do navegador."
+     ],
+     "q": "Que tamanhos da tua página deviam ser fixos e quais flexíveis?",
+     "c": "Define html font-size a 100 por cento e o texto do body a 1rem."
+    },
+    "pt_BR": {
+     "t": "Unidades: px, em, rem e porcentagem",
+     "g": "Escolha a unidade certa para tamanhos e espaços.",
+     "p": [
+      "Pixels são fixos; porcentagem segue o tamanho do elemento pai.",
+      "A unidade em segue o tamanho da fonte atual; rem segue o tamanho da raiz.",
+      "Usar rem no texto permite escalá-lo pelas configurações do navegador."
+     ],
+     "q": "Que tamanhos da sua página deveriam ser fixos e quais flexíveis?",
+     "c": "Defina html font-size em 100 por cento e o texto do body em 1rem."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Backgrounds and gradients",
+     "g": "Add depth with colours, images and gradients.",
+     "p": [
+      "The background-color property fills an element with a solid colour.",
+      "A linear-gradient blends two or more colours with no image file.",
+      "Background images can be sized with cover and placed with center."
+     ],
+     "q": "Do you picture a flat colour or a gentle gradient for your header?",
+     "c": "Give a header a linear-gradient from one colour to a lighter one."
+    },
+    "de": {
+     "t": "Hintergründe und Verläufe",
+     "g": "Gib Tiefe mit Farben, Bildern und Verläufen.",
+     "p": [
+      "background-color füllt ein Element mit einer einfarbigen Fläche.",
+      "Ein linear-gradient mischt zwei oder mehr Farben ganz ohne Bilddatei.",
+      "Hintergrundbilder lassen sich mit cover skalieren und mit center platzieren."
+     ],
+     "q": "Stellst du dir für deinen Kopfbereich eine Fläche oder einen sanften Verlauf vor?",
+     "c": "Gib einem Header einen linear-gradient von einer Farbe zu einer helleren."
+    },
+    "es": {
+     "t": "Fondos y degradados",
+     "g": "Aporta profundidad con colores, imágenes y degradados.",
+     "p": [
+      "La propiedad background-color rellena un elemento con un color sólido.",
+      "Un linear-gradient mezcla dos o más colores sin archivo de imagen.",
+      "Las imágenes de fondo se escalan con cover y se colocan con center."
+     ],
+     "q": "¿Imaginas un color plano o un degradado suave para tu cabecera?",
+     "c": "Da a una cabecera un linear-gradient de un color a otro más claro."
+    },
+    "fr": {
+     "t": "Arrière-plans et dégradés",
+     "g": "Ajoute de la profondeur avec couleurs, images et dégradés.",
+     "p": [
+      "La propriété background-color remplit un élément d'une couleur unie.",
+      "Un linear-gradient fond deux couleurs ou plus sans fichier image.",
+      "Les images de fond se dimensionnent avec cover et se placent avec center."
+     ],
+     "q": "Imagines-tu une couleur unie ou un dégradé doux pour ton en-tête ?",
+     "c": "Donne à un en-tête un linear-gradient d'une couleur vers une plus claire."
+    },
+    "it": {
+     "t": "Sfondi e gradienti",
+     "g": "Aggiungi profondità con colori, immagini e gradienti.",
+     "p": [
+      "La proprietà background-color riempie un elemento con un colore pieno.",
+      "Un linear-gradient fonde due o più colori senza file immagine.",
+      "Le immagini di sfondo si ridimensionano con cover e si posizionano con center."
+     ],
+     "q": "Immagini un colore piatto o un gradiente delicato per la tua intestazione?",
+     "c": "Dai a un header un linear-gradient da un colore a uno più chiaro."
+    },
+    "pt": {
+     "t": "Fundos e gradientes",
+     "g": "Acrescenta profundidade com cores, imagens e gradientes.",
+     "p": [
+      "A propriedade background-color preenche um elemento com uma cor sólida.",
+      "Um linear-gradient mistura duas ou mais cores sem ficheiro de imagem.",
+      "As imagens de fundo dimensionam-se com cover e posicionam-se com center."
+     ],
+     "q": "Imaginas uma cor lisa ou um gradiente suave para o teu cabeçalho?",
+     "c": "Dá a um cabeçalho um linear-gradient de uma cor para outra mais clara."
+    },
+    "pt_BR": {
+     "t": "Fundos e gradientes",
+     "g": "Adicione profundidade com cores, imagens e gradientes.",
+     "p": [
+      "A propriedade background-color preenche um elemento com uma cor sólida.",
+      "Um linear-gradient mistura duas ou mais cores sem arquivo de imagem.",
+      "Imagens de fundo se dimensionam com cover e se posicionam com center."
+     ],
+     "q": "Você imagina uma cor lisa ou um gradiente suave para o seu cabeçalho?",
+     "c": "Dê a um cabeçalho um linear-gradient de uma cor para outra mais clara."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shadows for depth",
+     "g": "Use gentle shadows to create layers and focus.",
+     "p": [
+      "The box-shadow property takes offsets, blur and a colour.",
+      "Soft, low-opacity shadows look natural; hard black ones look heavy.",
+      "Use the same shadow style across cards so the page feels consistent."
+     ],
+     "q": "Where would a light shadow help your content stand out?",
+     "c": "Give a card box-shadow: 0 4px 12px with a colour at low opacity."
+    },
+    "de": {
+     "t": "Schatten für Tiefe",
+     "g": "Nutze sanfte Schatten für Ebenen und Fokus.",
+     "p": [
+      "box-shadow nimmt Versatz, Unschärfe und eine Farbe.",
+      "Weiche Schatten mit geringer Deckkraft wirken natürlich, harte schwarze schwer.",
+      "Nutze denselben Schattenstil für alle Karten, damit die Seite einheitlich wirkt."
+     ],
+     "q": "Wo würde ein leichter Schatten deinen Inhalt hervorheben?",
+     "c": "Gib einer Karte box-shadow: 0 4px 12px mit einer Farbe bei geringer Deckkraft."
+    },
+    "es": {
+     "t": "Sombras para dar profundidad",
+     "g": "Usa sombras suaves para crear capas y foco.",
+     "p": [
+      "La propiedad box-shadow admite desplazamientos, desenfoque y un color.",
+      "Las sombras suaves y de poca opacidad parecen naturales; las negras duras, pesadas.",
+      "Usa el mismo estilo de sombra en las tarjetas para que la página sea coherente."
+     ],
+     "q": "¿Dónde ayudaría una sombra ligera a destacar tu contenido?",
+     "c": "Da a una tarjeta box-shadow: 0 4px 12px con un color de baja opacidad."
+    },
+    "fr": {
+     "t": "Des ombres pour la profondeur",
+     "g": "Utilise des ombres douces pour créer des niveaux et un point focal.",
+     "p": [
+      "La propriété box-shadow prend des décalages, un flou et une couleur.",
+      "Des ombres douces à faible opacité paraissent naturelles ; les noires dures, lourdes.",
+      "Utilise le même style d'ombre sur toutes les cartes pour une page cohérente."
+     ],
+     "q": "Où une ombre légère mettrait-elle ton contenu en valeur ?",
+     "c": "Donne à une carte box-shadow: 0 4px 12px avec une couleur à faible opacité."
+    },
+    "it": {
+     "t": "Ombre per la profondità",
+     "g": "Usa ombre delicate per creare livelli e punti focali.",
+     "p": [
+      "La proprietà box-shadow accetta scostamenti, sfocatura e un colore.",
+      "Ombre morbide a bassa opacità sembrano naturali; quelle nere dure, pesanti.",
+      "Usa lo stesso stile di ombra su tutte le card per una pagina coerente."
+     ],
+     "q": "Dove un'ombra leggera farebbe risaltare il tuo contenuto?",
+     "c": "Dai a una card box-shadow: 0 4px 12px con un colore a bassa opacità."
+    },
+    "pt": {
+     "t": "Sombras para dar profundidade",
+     "g": "Usa sombras suaves para criar camadas e foco.",
+     "p": [
+      "A propriedade box-shadow aceita desvios, desfoque e uma cor.",
+      "Sombras suaves e de baixa opacidade parecem naturais; as pretas duras, pesadas.",
+      "Usa o mesmo estilo de sombra nos cartões para a página ficar coerente."
+     ],
+     "q": "Onde ajudaria uma sombra leve a destacar o teu conteúdo?",
+     "c": "Dá a um cartão box-shadow: 0 4px 12px com uma cor de baixa opacidade."
+    },
+    "pt_BR": {
+     "t": "Sombras para dar profundidade",
+     "g": "Use sombras suaves para criar camadas e foco.",
+     "p": [
+      "A propriedade box-shadow aceita deslocamentos, desfoque e uma cor.",
+      "Sombras suaves e de baixa opacidade parecem naturais; as pretas duras, pesadas.",
+      "Use o mesmo estilo de sombra nos cartões para a página ficar coerente."
+     ],
+     "q": "Onde uma sombra leve ajudaria seu conteúdo a se destacar?",
+     "c": "Dê a um cartão box-shadow: 0 4px 12px com uma cor de baixa opacidade."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Styling links and buttons",
+     "g": "Show people clearly what can be clicked.",
+     "p": [
+      "Links and buttons need hover, focus and active states.",
+      "Never remove the focus outline without a clear replacement.",
+      "Make buttons big enough to tap comfortably, about 44 pixels tall."
+     ],
+     "q": "What makes a button feel clickable to you?",
+     "c": "Style a button with a hover colour change and a visible focus ring."
+    },
+    "de": {
+     "t": "Links und Buttons gestalten",
+     "g": "Zeige klar, was anklickbar ist.",
+     "p": [
+      "Links und Buttons brauchen Zustände für hover, focus und active.",
+      "Entferne den Fokusrahmen nie ohne klaren Ersatz.",
+      "Mach Buttons groß genug zum bequemen Tippen, etwa 44 Pixel hoch."
+     ],
+     "q": "Woran erkennst du, dass ein Button anklickbar wirkt?",
+     "c": "Gestalte einen Button mit Farbwechsel bei hover und sichtbarem Fokusring."
+    },
+    "es": {
+     "t": "Dar estilo a enlaces y botones",
+     "g": "Muestra con claridad qué se puede pulsar.",
+     "p": [
+      "Enlaces y botones necesitan estados hover, focus y active.",
+      "Nunca quites el contorno de foco sin un reemplazo claro.",
+      "Haz los botones lo bastante grandes para pulsar con comodidad, unos 44 píxeles de alto."
+     ],
+     "q": "¿Qué hace que un botón te parezca pulsable?",
+     "c": "Da estilo a un botón con cambio de color en hover y un anillo de foco visible."
+    },
+    "fr": {
+     "t": "Styliser liens et boutons",
+     "g": "Montre clairement ce sur quoi on peut cliquer.",
+     "p": [
+      "Liens et boutons ont besoin des états hover, focus et active.",
+      "Ne supprime jamais le contour de focus sans remplacement clair.",
+      "Fais des boutons assez grands pour être touchés confortablement, environ 44 pixels de haut."
+     ],
+     "q": "Qu'est-ce qui rend un bouton cliquable à tes yeux ?",
+     "c": "Stylise un bouton avec un changement de couleur au hover et un anneau de focus visible."
+    },
+    "it": {
+     "t": "Stilizzare link e pulsanti",
+     "g": "Mostra chiaramente cosa si può cliccare.",
+     "p": [
+      "Link e pulsanti hanno bisogno degli stati hover, focus e active.",
+      "Non rimuovere mai il contorno del focus senza un sostituto chiaro.",
+      "Rendi i pulsanti abbastanza grandi da toccare comodamente, circa 44 pixel di altezza."
+     ],
+     "q": "Cosa rende un pulsante cliccabile ai tuoi occhi?",
+     "c": "Stilizza un pulsante con cambio colore in hover e un anello di focus visibile."
+    },
+    "pt": {
+     "t": "Estilizar ligações e botões",
+     "g": "Mostra com clareza o que se pode clicar.",
+     "p": [
+      "Ligações e botões precisam de estados hover, focus e active.",
+      "Nunca removas o contorno de foco sem uma substituição clara.",
+      "Faz os botões grandes o bastante para tocar com conforto, cerca de 44 píxeis de altura."
+     ],
+     "q": "O que faz um botão parecer clicável para ti?",
+     "c": "Estiliza um botão com mudança de cor em hover e um anel de foco visível."
+    },
+    "pt_BR": {
+     "t": "Estilizando links e botões",
+     "g": "Mostre com clareza o que pode ser clicado.",
+     "p": [
+      "Links e botões precisam de estados hover, focus e active.",
+      "Nunca remova o contorno de foco sem uma substituição clara.",
+      "Faça botões grandes o bastante para tocar com conforto, cerca de 44 pixels de altura."
+     ],
+     "q": "O que faz um botão parecer clicável para você?",
+     "c": "Estilize um botão com mudança de cor em hover e um anel de foco visível."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pseudo-classes in practice",
+     "g": "Style elements by state or position with pseudo-classes.",
+     "p": [
+      "A colon plus a name, like :hover or :focus, targets a state.",
+      "Position selectors like :first-child and :nth-child pick items in a group.",
+      "Zebra stripes on a table use tr:nth-child(even)."
+     ],
+     "q": "Which list or table of yours could use alternating colours?",
+     "c": "Add tr:nth-child(even) with a light background to a table."
+    },
+    "de": {
+     "t": "Pseudoklassen in der Praxis",
+     "g": "Gestalte Elemente nach Zustand oder Position mit Pseudoklassen.",
+     "p": [
+      "Doppelpunkt plus Name, etwa :hover oder :focus, wählt einen Zustand.",
+      "Positionsselektoren wie :first-child und :nth-child wählen Einträge einer Gruppe.",
+      "Zebrastreifen in einer Tabelle nutzen tr:nth-child(even)."
+     ],
+     "q": "Welche Liste oder Tabelle von dir könnte wechselnde Farben vertragen?",
+     "c": "Füge einer Tabelle tr:nth-child(even) mit hellem Hintergrund hinzu."
+    },
+    "es": {
+     "t": "Pseudoclases en la práctica",
+     "g": "Da estilo a elementos según su estado o posición con pseudoclases.",
+     "p": [
+      "Dos puntos más un nombre, como :hover o :focus, apuntan a un estado.",
+      "Selectores de posición como :first-child y :nth-child eligen elementos de un grupo.",
+      "Las rayas cebra de una tabla usan tr:nth-child(even)."
+     ],
+     "q": "¿Qué lista o tabla tuya podría usar colores alternos?",
+     "c": "Añade tr:nth-child(even) con un fondo claro a una tabla."
+    },
+    "fr": {
+     "t": "Les pseudo-classes en pratique",
+     "g": "Stylise des éléments selon leur état ou leur position avec les pseudo-classes.",
+     "p": [
+      "Deux-points plus un nom, comme :hover ou :focus, cible un état.",
+      "Des sélecteurs de position comme :first-child et :nth-child choisissent des éléments d'un groupe.",
+      "Les lignes zébrées d'un tableau utilisent tr:nth-child(even)."
+     ],
+     "q": "Quelle liste ou quel tableau à toi pourrait avoir des couleurs alternées ?",
+     "c": "Ajoute tr:nth-child(even) avec un fond clair à un tableau."
+    },
+    "it": {
+     "t": "Pseudo-classi in pratica",
+     "g": "Stilizza gli elementi per stato o posizione con le pseudo-classi.",
+     "p": [
+      "Due punti più un nome, come :hover o :focus, indicano uno stato.",
+      "Selettori di posizione come :first-child e :nth-child scelgono voci di un gruppo.",
+      "Le righe zebrate di una tabella usano tr:nth-child(even)."
+     ],
+     "q": "Quale tua lista o tabella potrebbe usare colori alternati?",
+     "c": "Aggiungi tr:nth-child(even) con uno sfondo chiaro a una tabella."
+    },
+    "pt": {
+     "t": "Pseudoclasses na prática",
+     "g": "Estiliza elementos por estado ou posição com pseudoclasses.",
+     "p": [
+      "Dois pontos mais um nome, como :hover ou :focus, apontam um estado.",
+      "Seletores de posição como :first-child e :nth-child escolhem itens de um grupo.",
+      "As riscas de zebra numa tabela usam tr:nth-child(even)."
+     ],
+     "q": "Que lista ou tabela tua podia ter cores alternadas?",
+     "c": "Acrescenta tr:nth-child(even) com um fundo claro a uma tabela."
+    },
+    "pt_BR": {
+     "t": "Pseudoclasses na prática",
+     "g": "Estilize elementos por estado ou posição com pseudoclasses.",
+     "p": [
+      "Dois pontos mais um nome, como :hover ou :focus, apontam um estado.",
+      "Seletores de posição como :first-child e :nth-child escolhem itens de um grupo.",
+      "As listras de zebra em uma tabela usam tr:nth-child(even)."
+     ],
+     "q": "Que lista ou tabela sua poderia ter cores alternadas?",
+     "c": "Adicione tr:nth-child(even) com um fundo claro a uma tabela."
+    }
+   }
+  }
+ ]
+}

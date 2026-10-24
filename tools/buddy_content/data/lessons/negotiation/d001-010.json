@@ -1,0 +1,835 @@
+{
+ "topic": "negotiation",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What negotiation really is",
+     "g": "Understand negotiation as everyday problem-solving, not a battle.",
+     "p": [
+      "Negotiation is two people talking to reach an agreement that works.",
+      "You negotiate with people you need, so the relationship matters too.",
+      "Good negotiators are curious and calm, not pushy."
+     ],
+     "q": "When did you last reach a good agreement with someone?",
+     "c": "Today, notice one moment where you and someone else had to agree."
+    },
+    "de": {
+     "t": "Was Verhandeln wirklich ist",
+     "g": "Verstehe Verhandeln als Problemlösen im Alltag, nicht als Kampf.",
+     "p": [
+      "Verhandeln heißt: Zwei Menschen sprechen, bis eine Lösung für beide passt.",
+      "Du verhandelst mit Menschen, die du brauchst, also zählt die Beziehung mit.",
+      "Gute Verhandler sind neugierig und ruhig, nicht aufdringlich."
+     ],
+     "q": "Wann hast du zuletzt mit jemandem eine gute Einigung gefunden?",
+     "c": "Achte heute auf einen Moment, in dem ihr euch einigen musstet."
+    },
+    "es": {
+     "t": "Qué es de verdad negociar",
+     "g": "Entiende la negociación como resolver problemas del día a día, no una batalla.",
+     "p": [
+      "Negociar es hablar entre dos personas hasta llegar a un acuerdo que funcione.",
+      "Negocias con gente que necesitas, así que la relación también cuenta.",
+      "Quien negocia bien es curioso y tranquilo, no insistente."
+     ],
+     "q": "¿Cuándo llegaste por última vez a un buen acuerdo con alguien?",
+     "c": "Hoy fíjate en un momento en que tú y otra persona tuvierais que ponerse de acuerdo."
+    },
+    "fr": {
+     "t": "Ce qu'est vraiment négocier",
+     "g": "Comprends la négociation comme une résolution de problèmes du quotidien, pas un combat.",
+     "p": [
+      "Négocier, c'est parler à deux jusqu'à trouver un accord qui convient.",
+      "Tu négocies avec des gens dont tu as besoin : la relation compte aussi.",
+      "Un bon négociateur est curieux et calme, pas insistant."
+     ],
+     "q": "Quand as-tu trouvé pour la dernière fois un bon accord avec quelqu'un ?",
+     "c": "Aujourd'hui, repère un moment où vous avez dû vous mettre d'accord."
+    },
+    "it": {
+     "t": "Cos'è davvero la negoziazione",
+     "g": "Capisci la negoziazione come risolvere problemi quotidiani, non come una battaglia.",
+     "p": [
+      "Negoziare significa parlare in due fino a un accordo che funzioni.",
+      "Negozi con persone di cui hai bisogno, quindi conta anche la relazione.",
+      "Chi negozia bene è curioso e calmo, non insistente."
+     ],
+     "q": "Quando hai raggiunto l'ultima volta un buon accordo con qualcuno?",
+     "c": "Oggi nota un momento in cui tu e un'altra persona dovevate accordarvi."
+    },
+    "pt": {
+     "t": "O que é realmente negociar",
+     "g": "Percebe a negociação como resolução de problemas do dia a dia, não uma batalha.",
+     "p": [
+      "Negociar é duas pessoas conversarem até chegarem a um acordo que funcione.",
+      "Negoceias com pessoas de quem precisas, por isso a relação também conta.",
+      "Quem negoceia bem é curioso e calmo, não insistente."
+     ],
+     "q": "Quando foi a última vez que chegaste a um bom acordo com alguém?",
+     "c": "Hoje repara num momento em que tu e outra pessoa tiveram de chegar a acordo."
+    },
+    "pt_BR": {
+     "t": "O que é negociar de verdade",
+     "g": "Entenda a negociação como resolver problemas do dia a dia, não uma batalha.",
+     "p": [
+      "Negociar é duas pessoas conversarem até chegar a um acordo que funcione.",
+      "Você negocia com gente de quem precisa, então o relacionamento também conta.",
+      "Quem negocia bem é curioso e calmo, não insistente."
+     ],
+     "q": "Quando foi a última vez que você chegou a um bom acordo com alguém?",
+     "c": "Hoje, perceba um momento em que você e outra pessoa precisaram combinar algo."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Negotiations hiding in your day",
+     "g": "Spot the small negotiations that fill an ordinary day.",
+     "p": [
+      "Chores, plans, prices, deadlines and favours are all negotiations.",
+      "Seeing them makes it easier to handle them on purpose.",
+      "Most are friendly and low-stakes, perfect for practice."
+     ],
+     "q": "Which small negotiation did you have yesterday without noticing?",
+     "c": "List three negotiations you have today, however tiny."
+    },
+    "de": {
+     "t": "Verhandlungen in deinem Tag",
+     "g": "Erkenne die kleinen Verhandlungen, die einen normalen Tag füllen.",
+     "p": [
+      "Aufgaben, Pläne, Preise, Fristen und Gefallen sind alles Verhandlungen.",
+      "Wer sie erkennt, kann sie bewusst angehen.",
+      "Die meisten sind freundlich und unkritisch, ideal zum Üben."
+     ],
+     "q": "Welche kleine Verhandlung hattest du gestern, ohne es zu merken?",
+     "c": "Notiere drei Verhandlungen, die du heute hast, auch winzige."
+    },
+    "es": {
+     "t": "Negociaciones escondidas en tu día",
+     "g": "Detecta las pequeñas negociaciones que llenan un día normal.",
+     "p": [
+      "Tareas, planes, precios, plazos y favores son negociaciones.",
+      "Verlas te ayuda a manejarlas a propósito.",
+      "La mayoría son amistosas y de poco riesgo, ideales para practicar."
+     ],
+     "q": "¿Qué pequeña negociación tuviste ayer sin darte cuenta?",
+     "c": "Anota tres negociaciones que tendrás hoy, por pequeñas que sean."
+    },
+    "fr": {
+     "t": "Des négociations cachées dans ta journée",
+     "g": "Repère les petites négociations qui remplissent une journée ordinaire.",
+     "p": [
+      "Corvées, projets, prix, délais et services sont des négociations.",
+      "Les voir t'aide à les gérer volontairement.",
+      "La plupart sont amicales et sans gros enjeu, idéales pour s'entraîner."
+     ],
+     "q": "Quelle petite négociation as-tu eue hier sans t'en rendre compte ?",
+     "c": "Note trois négociations de ta journée, même minuscules."
+    },
+    "it": {
+     "t": "Negoziazioni nascoste nella tua giornata",
+     "g": "Individua le piccole negoziazioni che riempiono una giornata normale.",
+     "p": [
+      "Faccende, piani, prezzi, scadenze e favori sono tutte negoziazioni.",
+      "Riconoscerle ti aiuta a gestirle di proposito.",
+      "Quasi tutte sono amichevoli e a basso rischio, perfette per esercitarsi."
+     ],
+     "q": "Quale piccola negoziazione hai avuto ieri senza accorgertene?",
+     "c": "Elenca tre negoziazioni di oggi, anche minuscole."
+    },
+    "pt": {
+     "t": "Negociações escondidas no teu dia",
+     "g": "Descobre as pequenas negociações que enchem um dia normal.",
+     "p": [
+      "Tarefas, planos, preços, prazos e favores são negociações.",
+      "Reconhecê-las ajuda-te a geri-las de propósito.",
+      "A maioria é amigável e de baixo risco, ideal para treinar."
+     ],
+     "q": "Que pequena negociação tiveste ontem sem dares conta?",
+     "c": "Anota três negociações do teu dia, por mais pequenas que sejam."
+    },
+    "pt_BR": {
+     "t": "Negociações escondidas no seu dia",
+     "g": "Descubra as pequenas negociações que preenchem um dia comum.",
+     "p": [
+      "Tarefas, planos, preços, prazos e favores são negociações.",
+      "Percebê-las ajuda você a lidar com elas de propósito.",
+      "A maioria é amigável e de baixo risco, ótima para treinar."
+     ],
+     "q": "Que pequena negociação você teve ontem sem perceber?",
+     "c": "Anote três negociações do seu dia, por menores que sejam."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The win-win mindset",
+     "g": "See why outcomes that work for both sides usually beat winning alone.",
+     "p": [
+      "A win-win deal leaves both people willing to keep their word.",
+      "Beating the other side often costs you trust and future chances.",
+      "Ask how both of us can be satisfied before thinking of tricks."
+     ],
+     "q": "Think of a deal where both sides felt good. What made it work?",
+     "c": "Before your next talk, write one sentence: what would be good for both of us?"
+    },
+    "de": {
+     "t": "Die Win-win-Haltung",
+     "g": "Sieh, warum Lösungen für beide Seiten meist besser sind als allein zu gewinnen.",
+     "p": [
+      "Bei einer Win-win-Lösung halten beide gern Wort.",
+      "Wer die andere Seite schlägt, verliert oft Vertrauen und spätere Chancen.",
+      "Frage zuerst, wie beide zufrieden sein können, statt an Tricks zu denken."
+     ],
+     "q": "Denk an eine Abmachung, bei der sich beide gut fühlten. Was hat geholfen?",
+     "c": "Schreibe vor dem nächsten Gespräch einen Satz: Was wäre für uns beide gut?"
+    },
+    "es": {
+     "t": "La mentalidad ganar-ganar",
+     "g": "Ve por qué los resultados buenos para ambos suelen superar ganar a solas.",
+     "p": [
+      "En un acuerdo ganar-ganar, ambos cumplen su palabra con gusto.",
+      "Vencer al otro suele costar confianza y futuras oportunidades.",
+      "Pregunta cómo podemos quedar satisfechos los dos antes de pensar en trucos."
+     ],
+     "q": "Piensa en un trato donde ambos quedaron contentos. ¿Qué lo hizo posible?",
+     "c": "Antes de tu próxima charla, escribe una frase: ¿qué sería bueno para los dos?"
+    },
+    "fr": {
+     "t": "L'état d'esprit gagnant-gagnant",
+     "g": "Vois pourquoi un résultat bon pour les deux vaut mieux que gagner seul.",
+     "p": [
+      "Un accord gagnant-gagnant donne envie aux deux de tenir parole.",
+      "Battre l'autre coûte souvent de la confiance et des occasions futures.",
+      "Demande comment satisfaire les deux avant de penser aux astuces."
+     ],
+     "q": "Pense à un accord où les deux étaient contents. Qu'est-ce qui a marché ?",
+     "c": "Avant ta prochaine discussion, écris une phrase : qu'est-ce qui serait bon pour nous deux ?"
+    },
+    "it": {
+     "t": "La mentalità win-win",
+     "g": "Scopri perché un risultato buono per entrambi di solito batte vincere da soli.",
+     "p": [
+      "In un accordo win-win entrambi mantengono volentieri la parola.",
+      "Battere l'altro spesso costa fiducia e occasioni future.",
+      "Chiediti come soddisfare entrambi prima di pensare a trucchi."
+     ],
+     "q": "Pensa a un accordo in cui entrambi erano contenti. Cosa ha funzionato?",
+     "c": "Prima del prossimo confronto scrivi una frase: cosa sarebbe buono per entrambi?"
+    },
+    "pt": {
+     "t": "A mentalidade ganha-ganha",
+     "g": "Vê porque é que resultados bons para ambos costumam superar ganhar sozinho.",
+     "p": [
+      "Num acordo ganha-ganha, ambos cumprem a palavra de bom grado.",
+      "Vencer o outro costuma custar confiança e oportunidades futuras.",
+      "Pergunta como podemos ficar satisfeitos os dois antes de pensar em truques."
+     ],
+     "q": "Pensa num acordo em que ambos ficaram contentes. O que o tornou possível?",
+     "c": "Antes da próxima conversa, escreve uma frase: o que seria bom para os dois?"
+    },
+    "pt_BR": {
+     "t": "A mentalidade ganha-ganha",
+     "g": "Veja por que resultados bons para os dois costumam superar ganhar sozinho.",
+     "p": [
+      "Num acordo ganha-ganha, os dois cumprem a palavra com gosto.",
+      "Vencer o outro costuma custar confiança e oportunidades futuras.",
+      "Pergunte como os dois podem ficar satisfeitos antes de pensar em truques."
+     ],
+     "q": "Pense num acordo em que os dois ficaram contentes. O que fez dar certo?",
+     "c": "Antes da próxima conversa, escreva uma frase: o que seria bom para nós dois?"
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Positions versus interests",
+     "g": "Tell apart what people say they want from why they want it.",
+     "p": [
+      "A position is the demand; an interest is the need behind it.",
+      "Different positions can hide interests that fit together.",
+      "Focus on interests and more solutions appear."
+     ],
+     "q": "Think of a recent disagreement. What was the interest behind each position?",
+     "c": "Pick one demand you hear today and guess the need behind it."
+    },
+    "de": {
+     "t": "Positionen und Interessen",
+     "g": "Unterscheide, was Menschen fordern, von dem, warum sie es wollen.",
+     "p": [
+      "Eine Position ist die Forderung, ein Interesse das Bedürfnis dahinter.",
+      "Verschiedene Positionen verbergen oft Interessen, die zusammenpassen.",
+      "Wer auf Interessen schaut, findet mehr Lösungen."
+     ],
+     "q": "Denk an einen Streit der letzten Zeit. Welches Interesse steckte hinter jeder Position?",
+     "c": "Wähle heute eine Forderung und rate das Bedürfnis dahinter."
+    },
+    "es": {
+     "t": "Posiciones frente a intereses",
+     "g": "Distingue lo que la gente dice querer de por qué lo quiere.",
+     "p": [
+      "Una posición es la exigencia; un interés es la necesidad detrás.",
+      "Posiciones distintas pueden esconder intereses compatibles.",
+      "Si te centras en los intereses, aparecen más soluciones."
+     ],
+     "q": "Piensa en un desacuerdo reciente. ¿Qué interés había tras cada posición?",
+     "c": "Elige una petición que oigas hoy e imagina la necesidad detrás."
+    },
+    "fr": {
+     "t": "Positions et intérêts",
+     "g": "Distingue ce que les gens disent vouloir de la raison pour laquelle ils le veulent.",
+     "p": [
+      "Une position est l'exigence ; un intérêt est le besoin derrière.",
+      "Des positions différentes cachent parfois des intérêts compatibles.",
+      "En te concentrant sur les intérêts, tu trouves plus de solutions."
+     ],
+     "q": "Pense à un désaccord récent. Quel intérêt se cachait derrière chaque position ?",
+     "c": "Choisis une demande entendue aujourd'hui et devine le besoin derrière."
+    },
+    "it": {
+     "t": "Posizioni e interessi",
+     "g": "Distingui ciò che le persone dicono di volere da perché lo vogliono.",
+     "p": [
+      "La posizione è la richiesta; l'interesse è il bisogno dietro.",
+      "Posizioni diverse possono nascondere interessi compatibili.",
+      "Se ti concentri sugli interessi, emergono più soluzioni."
+     ],
+     "q": "Pensa a un disaccordo recente. Quale interesse c'era dietro ogni posizione?",
+     "c": "Scegli una richiesta sentita oggi e immagina il bisogno che c'è dietro."
+    },
+    "pt": {
+     "t": "Posições e interesses",
+     "g": "Distingue o que as pessoas dizem querer do porquê de o quererem.",
+     "p": [
+      "Uma posição é a exigência; um interesse é a necessidade por trás.",
+      "Posições diferentes podem esconder interesses compatíveis.",
+      "Se te focares nos interesses, surgem mais soluções."
+     ],
+     "q": "Pensa num desacordo recente. Que interesse havia por trás de cada posição?",
+     "c": "Escolhe um pedido que ouças hoje e imagina a necessidade por trás."
+    },
+    "pt_BR": {
+     "t": "Posições e interesses",
+     "g": "Diferencie o que as pessoas dizem querer do porquê de quererem.",
+     "p": [
+      "Uma posição é a exigência; um interesse é a necessidade por trás.",
+      "Posições diferentes podem esconder interesses compatíveis.",
+      "Se você focar nos interesses, aparecem mais soluções."
+     ],
+     "q": "Pense numa discordância recente. Qual interesse havia por trás de cada posição?",
+     "c": "Escolha um pedido que ouvir hoje e imagine a necessidade por trás."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking why to find interests",
+     "g": "Use gentle questions to uncover the needs behind a demand.",
+     "p": [
+      "Ask what matters most about it, not a sharp why that sounds like blame.",
+      "Try: What would that help you achieve?",
+      "Listen to the answer fully before suggesting anything."
+     ],
+     "q": "How could you ask why in a way that feels friendly and curious?",
+     "c": "Ask one person a gentle what-for question today and just listen."
+    },
+    "de": {
+     "t": "Warum fragen, um Interessen zu finden",
+     "g": "Finde mit sanften Fragen die Bedürfnisse hinter einer Forderung.",
+     "p": [
+      "Frage, was daran am wichtigsten ist, nicht scharf warum wie ein Vorwurf.",
+      "Probiere: Was würde dir das ermöglichen?",
+      "Hör die Antwort ganz an, bevor du etwas vorschlägst."
+     ],
+     "q": "Wie könntest du nach dem Warum freundlich und neugierig fragen?",
+     "c": "Stelle heute einer Person eine sanfte Wozu-Frage und höre nur zu."
+    },
+    "es": {
+     "t": "Preguntar por qué para hallar intereses",
+     "g": "Usa preguntas suaves para descubrir las necesidades tras una exigencia.",
+     "p": [
+      "Pregunta qué es lo más importante, no un por qué seco que suene a reproche.",
+      "Prueba: ¿Qué te ayudaría a conseguir eso?",
+      "Escucha la respuesta entera antes de proponer nada."
+     ],
+     "q": "¿Cómo podrías preguntar el porqué de forma amable y curiosa?",
+     "c": "Hoy haz a alguien una pregunta suave sobre el para qué y solo escucha."
+    },
+    "fr": {
+     "t": "Demander pourquoi pour trouver les intérêts",
+     "g": "Utilise des questions douces pour découvrir les besoins derrière une demande.",
+     "p": [
+      "Demande ce qui compte le plus, pas un pourquoi sec qui sonne en reproche.",
+      "Essaie : Qu'est-ce que cela te permettrait d'obtenir ?",
+      "Écoute toute la réponse avant de proposer quoi que ce soit."
+     ],
+     "q": "Comment poser la question du pourquoi de façon amicale et curieuse ?",
+     "c": "Aujourd'hui, pose à quelqu'un une question douce sur le but et écoute."
+    },
+    "it": {
+     "t": "Chiedere perché per trovare gli interessi",
+     "g": "Usa domande gentili per scoprire i bisogni dietro una richiesta.",
+     "p": [
+      "Chiedi cosa conta di più, non un perché secco che suona come accusa.",
+      "Prova: Cosa ti permetterebbe di ottenere?",
+      "Ascolta tutta la risposta prima di proporre qualcosa."
+     ],
+     "q": "Come potresti chiedere il perché in modo amichevole e curioso?",
+     "c": "Oggi fai a qualcuno una domanda gentile sullo scopo e ascolta soltanto."
+    },
+    "pt": {
+     "t": "Perguntar porquê para achar interesses",
+     "g": "Usa perguntas suaves para descobrir as necessidades por trás de um pedido.",
+     "p": [
+      "Pergunta o que mais importa, não um porquê seco que soe a censura.",
+      "Experimenta: O que isso te ajudaria a conseguir?",
+      "Ouve a resposta toda antes de sugerires seja o que for."
+     ],
+     "q": "Como poderias perguntar o porquê de forma amigável e curiosa?",
+     "c": "Hoje faz a alguém uma pergunta suave sobre o objetivo e só ouve."
+    },
+    "pt_BR": {
+     "t": "Perguntar por quê para achar interesses",
+     "g": "Use perguntas suaves para descobrir as necessidades por trás de um pedido.",
+     "p": [
+      "Pergunte o que mais importa, não um por quê seco que soe como cobrança.",
+      "Experimente: O que isso ajudaria você a conseguir?",
+      "Ouça a resposta toda antes de sugerir qualquer coisa."
+     ],
+     "q": "Como você poderia perguntar o porquê de um jeito amigável e curioso?",
+     "c": "Hoje faça a alguém uma pergunta suave sobre o objetivo e só escute."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The orange story",
+     "g": "Learn the classic tale that shows why interests beat positions.",
+     "p": [
+      "Two people both demand the last orange and plan to split it.",
+      "One wants only the juice, the other only the peel for baking.",
+      "Asking why let both get everything they truly needed."
+     ],
+     "q": "Where in your life might two people want different parts of the same thing?",
+     "c": "Retell the orange story to someone and ask what they would have done."
+    },
+    "de": {
+     "t": "Die Orangengeschichte",
+     "g": "Lerne die klassische Geschichte, die zeigt, warum Interessen vor Positionen gehen.",
+     "p": [
+      "Zwei Personen wollen beide die letzte Orange und teilen sie schon.",
+      "Einer will nur den Saft, die andere nur die Schale zum Backen.",
+      "Durch Nachfragen bekamen beide alles, was sie wirklich brauchten."
+     ],
+     "q": "Wo könnten in deinem Leben zwei Menschen verschiedene Teile desselben wollen?",
+     "c": "Erzähle die Orangengeschichte jemandem und frage, was er getan hätte."
+    },
+    "es": {
+     "t": "La historia de la naranja",
+     "g": "Aprende el cuento clásico que muestra por qué los intereses superan a las posiciones.",
+     "p": [
+      "Dos personas quieren la última naranja y la van a partir por la mitad.",
+      "Una solo quiere el zumo, la otra solo la cáscara para hornear.",
+      "Al preguntar por qué, ambas lograron todo lo que necesitaban."
+     ],
+     "q": "¿Dónde en tu vida dos personas podrían querer partes distintas de lo mismo?",
+     "c": "Cuenta la historia de la naranja a alguien y pregunta qué habría hecho."
+    },
+    "fr": {
+     "t": "L'histoire de l'orange",
+     "g": "Découvre le conte classique qui montre pourquoi les intérêts priment sur les positions.",
+     "p": [
+      "Deux personnes veulent la dernière orange et s'apprêtent à la partager.",
+      "L'une veut seulement le jus, l'autre seulement le zeste pour pâtisser.",
+      "En demandant pourquoi, chacune a obtenu tout ce dont elle avait besoin."
+     ],
+     "q": "Où, dans ta vie, deux personnes veulent-elles des parts différentes d'une même chose ?",
+     "c": "Raconte l'histoire de l'orange à quelqu'un et demande ce qu'il aurait fait."
+    },
+    "it": {
+     "t": "La storia dell'arancia",
+     "g": "Scopri la storia classica che mostra perché gli interessi battono le posizioni.",
+     "p": [
+      "Due persone vogliono l'ultima arancia e stanno per dividerla a metà.",
+      "Una vuole solo il succo, l'altra solo la buccia per cucinare.",
+      "Chiedendo perché, entrambe hanno ottenuto tutto ciò che serviva."
+     ],
+     "q": "Dove nella tua vita due persone potrebbero volere parti diverse della stessa cosa?",
+     "c": "Racconta la storia dell'arancia a qualcuno e chiedi cosa avrebbe fatto."
+    },
+    "pt": {
+     "t": "A história da laranja",
+     "g": "Conhece o conto clássico que mostra porque os interesses vencem as posições.",
+     "p": [
+      "Duas pessoas querem a última laranja e vão dividi-la ao meio.",
+      "Uma quer só o sumo, a outra só a casca para cozinhar.",
+      "Ao perguntar porquê, ambas ficaram com tudo o que precisavam."
+     ],
+     "q": "Onde na tua vida duas pessoas podem querer partes diferentes da mesma coisa?",
+     "c": "Conta a história da laranja a alguém e pergunta o que teria feito."
+    },
+    "pt_BR": {
+     "t": "A história da laranja",
+     "g": "Conheça o conto clássico que mostra por que interesses vencem posições.",
+     "p": [
+      "Duas pessoas querem a última laranja e vão dividir ao meio.",
+      "Uma quer só o suco, a outra só a casca para fazer um bolo.",
+      "Ao perguntar por quê, as duas ficaram com tudo de que precisavam."
+     ],
+     "q": "Onde na sua vida duas pessoas podem querer partes diferentes da mesma coisa?",
+     "c": "Conte a história da laranja a alguém e pergunte o que a pessoa teria feito."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your own goals first",
+     "g": "Write down what you want, why, and what a good result looks like.",
+     "p": [
+      "Be clear on your goal before you ask for anything.",
+      "Note the reason behind it; it keeps you flexible about how to get it.",
+      "Describe a good, a great and an acceptable result."
+     ],
+     "q": "What is one thing you would like to negotiate soon?",
+     "c": "Write goal, reason and a good result for one upcoming conversation."
+    },
+    "de": {
+     "t": "Zuerst deine eigenen Ziele",
+     "g": "Schreibe auf, was du willst, warum und wie ein gutes Ergebnis aussieht.",
+     "p": [
+      "Sei dir über dein Ziel klar, bevor du etwas erbittest.",
+      "Notiere den Grund dahinter; er macht dich beim Weg dorthin flexibel.",
+      "Beschreibe ein gutes, ein sehr gutes und ein annehmbares Ergebnis."
+     ],
+     "q": "Was möchtest du demnächst gern verhandeln?",
+     "c": "Schreibe Ziel, Grund und gutes Ergebnis für ein anstehendes Gespräch auf."
+    },
+    "es": {
+     "t": "Primero tus propios objetivos",
+     "g": "Escribe qué quieres, por qué y cómo sería un buen resultado.",
+     "p": [
+      "Ten claro tu objetivo antes de pedir nada.",
+      "Anota la razón; te da flexibilidad sobre cómo conseguirlo.",
+      "Describe un resultado bueno, uno excelente y uno aceptable."
+     ],
+     "q": "¿Qué te gustaría negociar pronto?",
+     "c": "Escribe objetivo, motivo y buen resultado para una conversación próxima."
+    },
+    "fr": {
+     "t": "D'abord tes propres objectifs",
+     "g": "Note ce que tu veux, pourquoi, et à quoi ressemble un bon résultat.",
+     "p": [
+      "Sois clair sur ton objectif avant de demander quoi que ce soit.",
+      "Note la raison : elle te garde flexible sur la manière d'y arriver.",
+      "Décris un résultat bon, un excellent et un acceptable."
+     ],
+     "q": "Qu'aimerais-tu négocier prochainement ?",
+     "c": "Écris objectif, raison et bon résultat pour une conversation à venir."
+    },
+    "it": {
+     "t": "Prima i tuoi obiettivi",
+     "g": "Scrivi cosa vuoi, perché e come sarebbe un buon risultato.",
+     "p": [
+      "Sii chiaro sul tuo obiettivo prima di chiedere qualcosa.",
+      "Annota il motivo: ti rende flessibile sul modo di ottenerlo.",
+      "Descrivi un risultato buono, uno ottimo e uno accettabile."
+     ],
+     "q": "Cosa ti piacerebbe negoziare a breve?",
+     "c": "Scrivi obiettivo, motivo e buon risultato per una conversazione imminente."
+    },
+    "pt": {
+     "t": "Primeiro os teus objetivos",
+     "g": "Escreve o que queres, porquê e como seria um bom resultado.",
+     "p": [
+      "Sê claro quanto ao teu objetivo antes de pedires seja o que for.",
+      "Anota a razão; dá-te flexibilidade sobre a forma de lá chegar.",
+      "Descreve um resultado bom, um ótimo e um aceitável."
+     ],
+     "q": "O que gostarias de negociar em breve?",
+     "c": "Escreve objetivo, motivo e bom resultado para uma conversa próxima."
+    },
+    "pt_BR": {
+     "t": "Primeiro os seus objetivos",
+     "g": "Escreva o que você quer, por quê e como seria um bom resultado.",
+     "p": [
+      "Tenha clareza sobre seu objetivo antes de pedir qualquer coisa.",
+      "Anote a razão; ela dá flexibilidade sobre como chegar lá.",
+      "Descreva um resultado bom, um ótimo e um aceitável."
+     ],
+     "q": "O que você gostaria de negociar em breve?",
+     "c": "Escreva objetivo, motivo e bom resultado para uma conversa próxima."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Knowing your walk-away option",
+     "g": "Meet BATNA: your best alternative if no agreement is reached.",
+     "p": [
+      "BATNA means Best Alternative To a Negotiated Agreement.",
+      "It is what you would do if this talk ended without a deal.",
+      "A good alternative lets you stay calm and not accept just anything."
+     ],
+     "q": "If this talk failed, what would you do next?",
+     "c": "Write your BATNA for one situation in a single sentence."
+    },
+    "de": {
+     "t": "Deine Ausstiegsoption kennen",
+     "g": "Lerne BATNA kennen: deine beste Alternative, falls es keine Einigung gibt.",
+     "p": [
+      "BATNA heißt Best Alternative To a Negotiated Agreement.",
+      "Es ist das, was du tun würdest, wenn das Gespräch ohne Abschluss endet.",
+      "Eine gute Alternative hält dich ruhig, sodass du nicht alles annimmst."
+     ],
+     "q": "Was würdest du tun, wenn dieses Gespräch scheitert?",
+     "c": "Schreibe deine BATNA für eine Situation in einem Satz auf."
+    },
+    "es": {
+     "t": "Conocer tu opción de salida",
+     "g": "Conoce el BATNA: tu mejor alternativa si no hay acuerdo.",
+     "p": [
+      "BATNA significa Mejor Alternativa a un Acuerdo Negociado.",
+      "Es lo que harías si la conversación acabara sin trato.",
+      "Una buena alternativa te mantiene tranquilo y no aceptas cualquier cosa."
+     ],
+     "q": "Si esta conversación fallara, ¿qué harías después?",
+     "c": "Escribe tu BATNA para una situación en una sola frase."
+    },
+    "fr": {
+     "t": "Connaître ta solution de repli",
+     "g": "Découvre la MESORE (BATNA) : ta meilleure alternative sans accord.",
+     "p": [
+      "BATNA veut dire Best Alternative To a Negotiated Agreement.",
+      "C'est ce que tu ferais si la discussion s'arrêtait sans accord.",
+      "Une bonne alternative te garde calme et t'évite d'accepter n'importe quoi."
+     ],
+     "q": "Si cette discussion échouait, que ferais-tu ensuite ?",
+     "c": "Écris ton BATNA pour une situation en une seule phrase."
+    },
+    "it": {
+     "t": "Conoscere la tua alternativa",
+     "g": "Scopri il BATNA: la tua migliore alternativa se non c'è accordo.",
+     "p": [
+      "BATNA significa Best Alternative To a Negotiated Agreement.",
+      "È ciò che faresti se la conversazione finisse senza accordo.",
+      "Una buona alternativa ti tiene calmo e ti evita di accettare qualsiasi cosa."
+     ],
+     "q": "Se questa conversazione fallisse, cosa faresti dopo?",
+     "c": "Scrivi il tuo BATNA per una situazione in una sola frase."
+    },
+    "pt": {
+     "t": "Conhecer a tua opção de saída",
+     "g": "Conhece o BATNA: a tua melhor alternativa se não houver acordo.",
+     "p": [
+      "BATNA significa Melhor Alternativa a um Acordo Negociado.",
+      "É o que farias se a conversa terminasse sem acordo.",
+      "Uma boa alternativa mantém-te calmo e evita que aceites qualquer coisa."
+     ],
+     "q": "Se esta conversa falhasse, o que farias a seguir?",
+     "c": "Escreve o teu BATNA para uma situação numa só frase."
+    },
+    "pt_BR": {
+     "t": "Conhecendo sua opção de saída",
+     "g": "Conheça o BATNA: sua melhor alternativa se não houver acordo.",
+     "p": [
+      "BATNA significa Melhor Alternativa a um Acordo Negociado.",
+      "É o que você faria se a conversa terminasse sem acordo.",
+      "Uma boa alternativa mantém você calmo e evita aceitar qualquer coisa."
+     ],
+     "q": "Se esta conversa não desse certo, o que você faria depois?",
+     "c": "Escreva seu BATNA para uma situação em uma única frase."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Strengthening your alternatives",
+     "g": "Improve your options with small steps before you sit down to talk.",
+     "p": [
+      "Get a second quote, a second buyer or a second plan.",
+      "Even one extra option changes how confident you feel.",
+      "Strengthen your alternative quietly, then stay respectful at the table."
+     ],
+     "q": "What small step could give you one more option this week?",
+     "c": "Find one extra option for something you want to negotiate."
+    },
+    "de": {
+     "t": "Deine Alternativen stärken",
+     "g": "Verbessere deine Optionen in kleinen Schritten, bevor du verhandelst.",
+     "p": [
+      "Hole ein zweites Angebot, einen zweiten Käufer oder einen zweiten Plan ein.",
+      "Schon eine zusätzliche Option verändert, wie sicher du dich fühlst.",
+      "Stärke deine Alternative still und bleib am Tisch respektvoll."
+     ],
+     "q": "Welcher kleine Schritt gäbe dir diese Woche eine weitere Option?",
+     "c": "Finde eine zusätzliche Option für etwas, das du verhandeln willst."
+    },
+    "es": {
+     "t": "Fortalecer tus alternativas",
+     "g": "Mejora tus opciones con pasos pequeños antes de sentarte a hablar.",
+     "p": [
+      "Consigue un segundo presupuesto, otro comprador u otro plan.",
+      "Incluso una opción extra cambia cuánta seguridad sientes.",
+      "Fortalece tu alternativa en silencio y sé respetuoso en la mesa."
+     ],
+     "q": "¿Qué pequeño paso te daría una opción más esta semana?",
+     "c": "Busca una opción extra para algo que quieras negociar."
+    },
+    "fr": {
+     "t": "Renforcer tes alternatives",
+     "g": "Améliore tes options par de petites étapes avant de discuter.",
+     "p": [
+      "Obtiens un deuxième devis, un deuxième acheteur ou un deuxième plan.",
+      "Même une option de plus change ta confiance.",
+      "Renforce ton alternative discrètement, puis reste respectueux à la table."
+     ],
+     "q": "Quelle petite étape te donnerait une option de plus cette semaine ?",
+     "c": "Trouve une option supplémentaire pour quelque chose que tu veux négocier."
+    },
+    "it": {
+     "t": "Rafforzare le tue alternative",
+     "g": "Migliora le tue opzioni con piccoli passi prima di parlare.",
+     "p": [
+      "Procurati un secondo preventivo, un altro acquirente o un altro piano.",
+      "Anche un'opzione in più cambia quanta sicurezza senti.",
+      "Rafforza la tua alternativa in silenzio, poi sii rispettoso al tavolo."
+     ],
+     "q": "Quale piccolo passo ti darebbe un'opzione in più questa settimana?",
+     "c": "Trova un'opzione extra per qualcosa che vuoi negoziare."
+    },
+    "pt": {
+     "t": "Reforçar as tuas alternativas",
+     "g": "Melhora as tuas opções com pequenos passos antes de conversares.",
+     "p": [
+      "Arranja um segundo orçamento, outro comprador ou outro plano.",
+      "Até uma opção extra muda a confiança que sentes.",
+      "Reforça a tua alternativa em silêncio e sê respeitoso à mesa."
+     ],
+     "q": "Que pequeno passo te daria mais uma opção esta semana?",
+     "c": "Encontra uma opção extra para algo que queiras negociar."
+    },
+    "pt_BR": {
+     "t": "Fortalecendo suas alternativas",
+     "g": "Melhore suas opções com pequenos passos antes de conversar.",
+     "p": [
+      "Consiga um segundo orçamento, outro comprador ou outro plano.",
+      "Até uma opção extra muda a confiança que você sente.",
+      "Fortaleça sua alternativa em silêncio e seja respeitoso na mesa."
+     ],
+     "q": "Que pequeno passo daria a você mais uma opção esta semana?",
+     "c": "Encontre uma opção extra para algo que você quer negociar."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Guessing the other side's options",
+     "g": "Think about what the other person can do if you do not agree.",
+     "p": [
+      "Everyone has alternatives; consider theirs honestly.",
+      "Ask yourself how much they need this deal compared to you.",
+      "Never assume they are desperate; guess, then listen for clues."
+     ],
+     "q": "What might the other person do if you two cannot agree?",
+     "c": "Write what you think their best alternative is, then check it in conversation."
+    },
+    "de": {
+     "t": "Die Optionen der anderen Seite erraten",
+     "g": "Überlege, was die andere Person tun kann, wenn ihr euch nicht einigt.",
+     "p": [
+      "Jeder hat Alternativen; denke ehrlich über ihre nach.",
+      "Frage dich, wie sehr sie diesen Abschluss braucht im Vergleich zu dir.",
+      "Nimm nie an, sie sei verzweifelt; vermute und achte dann auf Hinweise."
+     ],
+     "q": "Was könnte die andere Person tun, wenn ihr euch nicht einigt?",
+     "c": "Schreibe auf, was ihre beste Alternative sein könnte, und prüfe es im Gespräch."
+    },
+    "es": {
+     "t": "Adivinar las opciones del otro lado",
+     "g": "Piensa qué puede hacer la otra persona si no os ponéis de acuerdo.",
+     "p": [
+      "Todos tienen alternativas; considera las suyas con honestidad.",
+      "Pregúntate cuánto necesita ella este trato en comparación contigo.",
+      "Nunca des por hecho que está desesperada; supón y luego busca pistas."
+     ],
+     "q": "¿Qué podría hacer la otra persona si no llegáis a un acuerdo?",
+     "c": "Anota cuál crees que es su mejor alternativa y compruébalo al hablar."
+    },
+    "fr": {
+     "t": "Deviner les options de l'autre",
+     "g": "Réfléchis à ce que l'autre peut faire si vous ne vous entendez pas.",
+     "p": [
+      "Chacun a des alternatives ; considère les siennes honnêtement.",
+      "Demande-toi à quel point l'autre a besoin de cet accord par rapport à toi.",
+      "Ne suppose jamais qu'il est désespéré : devine, puis cherche des indices."
+     ],
+     "q": "Que pourrait faire l'autre personne si vous ne parvenez pas à un accord ?",
+     "c": "Écris sa meilleure alternative selon toi, puis vérifie-le en discutant."
+    },
+    "it": {
+     "t": "Intuire le opzioni dell'altro",
+     "g": "Pensa a cosa può fare l'altra persona se non vi accordate.",
+     "p": [
+      "Tutti hanno alternative; considera le sue con onestà.",
+      "Chiediti quanto l'altro ha bisogno di questo accordo rispetto a te.",
+      "Non dare per scontato che sia disperato: ipotizza, poi cerca indizi."
+     ],
+     "q": "Cosa potrebbe fare l'altra persona se non trovate un accordo?",
+     "c": "Scrivi quale credi sia la sua migliore alternativa e verificalo parlando."
+    },
+    "pt": {
+     "t": "Adivinhar as opções do outro lado",
+     "g": "Pensa no que a outra pessoa pode fazer se não chegarem a acordo.",
+     "p": [
+      "Todos têm alternativas; considera as dela com honestidade.",
+      "Pergunta-te quanto ela precisa deste acordo em comparação contigo.",
+      "Nunca presumas que está desesperada; supõe e depois procura pistas."
+     ],
+     "q": "O que poderia a outra pessoa fazer se não chegassem a acordo?",
+     "c": "Escreve qual achas ser a melhor alternativa dela e confirma ao conversar."
+    },
+    "pt_BR": {
+     "t": "Imaginando as opções do outro lado",
+     "g": "Pense no que a outra pessoa pode fazer se vocês não chegarem a um acordo.",
+     "p": [
+      "Todo mundo tem alternativas; considere as dela com honestidade.",
+      "Pergunte-se o quanto ela precisa deste acordo comparado a você.",
+      "Nunca presuma que ela está desesperada; suponha e depois procure pistas."
+     ],
+     "q": "O que a outra pessoa poderia fazer se vocês não chegarem a um acordo?",
+     "c": "Escreva qual você acha ser a melhor alternativa dela e confira ao conversar."
+    }
+   }
+  }
+ ]
+}

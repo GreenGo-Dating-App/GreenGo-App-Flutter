@@ -1,0 +1,835 @@
+{
+ "topic": "cv",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Contact details done right",
+     "g": "Know which contact details belong on a CV and which to leave out.",
+     "p": [
+      "Include your name, phone number, email and the city or region you live in.",
+      "A full street address is rarely needed and shares more than necessary.",
+      "Double-check every digit; one typo can lose you a call."
+     ],
+     "q": "Which phone number and email do you check most often?",
+     "c": "Write your contact block and test each detail once."
+    },
+    "de": {
+     "t": "Kontaktdaten richtig angeben",
+     "g": "Wisse, welche Kontaktdaten in den Lebenslauf gehören und welche nicht.",
+     "p": [
+      "Nenne Namen, Telefonnummer, E-Mail und Wohnort oder Region.",
+      "Eine volle Straßenadresse ist selten nötig und verrät mehr als nötig.",
+      "Prüfe jede Ziffer doppelt; ein Tippfehler kann einen Anruf kosten."
+     ],
+     "q": "Welche Nummer und E-Mail-Adresse liest du am häufigsten?",
+     "c": "Schreibe deinen Kontaktblock und teste jede Angabe einmal."
+    },
+    "es": {
+     "t": "Datos de contacto bien hechos",
+     "g": "Sabe qué datos de contacto van en el CV y cuáles conviene omitir.",
+     "p": [
+      "Incluye nombre, teléfono, correo y la ciudad o región donde vives.",
+      "Rara vez hace falta la dirección completa y revela más de lo necesario.",
+      "Revisa cada dígito; un error puede costarte una llamada."
+     ],
+     "q": "¿Qué teléfono y correo revisas con más frecuencia?",
+     "c": "Escribe tu bloque de contacto y prueba cada dato una vez."
+    },
+    "fr": {
+     "t": "Des coordonnées bien présentées",
+     "g": "Sache quelles coordonnées figurent sur un CV et lesquelles omettre.",
+     "p": [
+      "Indique nom, téléphone, e-mail et la ville ou région où tu vis.",
+      "L'adresse postale complète est rarement utile et en dit trop.",
+      "Vérifie chaque chiffre ; une faute de frappe peut coûter un appel."
+     ],
+     "q": "Quel numéro et quelle adresse e-mail consultes-tu le plus souvent ?",
+     "c": "Écris ton bloc de contact et teste chaque information une fois."
+    },
+    "it": {
+     "t": "I recapiti fatti bene",
+     "g": "Sappi quali recapiti mettere nel CV e quali tralasciare.",
+     "p": [
+      "Inserisci nome, telefono, email e la città o regione in cui vivi.",
+      "L'indirizzo completo serve di rado e rivela più del necessario.",
+      "Ricontrolla ogni cifra: un refuso può costarti una chiamata."
+     ],
+     "q": "Quale numero e quale email controlli più spesso?",
+     "c": "Scrivi il tuo blocco contatti e prova ogni dato una volta."
+    },
+    "pt": {
+     "t": "Contactos bem apresentados",
+     "g": "Sabe que contactos entram no CV e quais deixar de fora.",
+     "p": [
+      "Inclui nome, telefone, email e a cidade ou região onde vives.",
+      "A morada completa raramente é precisa e revela mais do que o necessário.",
+      "Confirma cada dígito; um erro pode custar-te uma chamada."
+     ],
+     "q": "Que telefone e email consultas com mais frequência?",
+     "c": "Escreve o teu bloco de contactos e testa cada dado uma vez."
+    },
+    "pt_BR": {
+     "t": "Dados de contato bem feitos",
+     "g": "Saiba quais dados de contato entram no currículo e quais deixar de fora.",
+     "p": [
+      "Inclua nome, telefone, e-mail e a cidade ou região onde você mora.",
+      "O endereço completo raramente é necessário e revela mais do que precisa.",
+      "Confira cada dígito; um erro pode custar uma ligação."
+     ],
+     "q": "Que telefone e e-mail você consulta com mais frequência?",
+     "c": "Escreva seu bloco de contato e teste cada dado uma vez."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A professional email address",
+     "g": "See why a simple name-based email makes a better first impression.",
+     "p": [
+      "Use a plain address built from your name, like first.last.",
+      "Avoid jokes, nicknames, birth years or anything you would not say aloud to an employer.",
+      "Create a free address just for job hunting if you need one."
+     ],
+     "q": "Would your current email address look good on a CV?",
+     "c": "Check your email address and create a cleaner one if needed."
+    },
+    "de": {
+     "t": "Eine professionelle E-Mail-Adresse",
+     "g": "Sieh, warum eine schlichte Adresse mit Namen einen besseren ersten Eindruck macht.",
+     "p": [
+      "Nutze eine einfache Adresse aus deinem Namen, etwa vorname.nachname.",
+      "Vermeide Scherze, Spitznamen, Geburtsjahre oder alles, was du Arbeitgebern nicht sagen würdest.",
+      "Lege bei Bedarf eine kostenlose Adresse nur für die Jobsuche an."
+     ],
+     "q": "Würde deine aktuelle E-Mail-Adresse in einem Lebenslauf gut aussehen?",
+     "c": "Prüfe deine Adresse und lege bei Bedarf eine sauberere an."
+    },
+    "es": {
+     "t": "Un correo profesional",
+     "g": "Descubre por qué un correo sencillo con tu nombre causa mejor primera impresión.",
+     "p": [
+      "Usa una dirección simple basada en tu nombre, como nombre.apellido.",
+      "Evita bromas, apodos, años de nacimiento o algo que no dirías a un empleador.",
+      "Crea una cuenta gratuita solo para buscar empleo si la necesitas."
+     ],
+     "q": "¿Quedaría bien tu correo actual en un CV?",
+     "c": "Revisa tu dirección y crea una más limpia si hace falta."
+    },
+    "fr": {
+     "t": "Une adresse e-mail professionnelle",
+     "g": "Vois pourquoi une adresse simple avec ton nom fait meilleure impression.",
+     "p": [
+      "Choisis une adresse sobre basée sur ton nom, comme prenom.nom.",
+      "Évite blagues, surnoms, années de naissance ou tout ce que tu ne dirais pas à un employeur.",
+      "Crée une adresse gratuite dédiée à la recherche d'emploi si besoin."
+     ],
+     "q": "Ton adresse actuelle ferait-elle bonne figure sur un CV ?",
+     "c": "Vérifie ton adresse et crée-en une plus sobre si nécessaire."
+    },
+    "it": {
+     "t": "Un indirizzo email professionale",
+     "g": "Scopri perché un'email semplice con il tuo nome fa una prima impressione migliore.",
+     "p": [
+      "Usa un indirizzo sobrio basato sul tuo nome, come nome.cognome.",
+      "Evita scherzi, soprannomi, anni di nascita o cose che non diresti a un datore di lavoro.",
+      "Crea un indirizzo gratuito solo per cercare lavoro, se serve."
+     ],
+     "q": "Il tuo indirizzo email attuale farebbe una bella figura in un CV?",
+     "c": "Controlla il tuo indirizzo e creane uno più pulito se serve."
+    },
+    "pt": {
+     "t": "Um email profissional",
+     "g": "Percebe porque um email simples com o teu nome causa melhor primeira impressão.",
+     "p": [
+      "Usa um endereço simples com o teu nome, como nome.apelido.",
+      "Evita piadas, alcunhas, anos de nascimento ou algo que não dirias a um empregador.",
+      "Cria uma conta gratuita só para procurar emprego, se precisares."
+     ],
+     "q": "O teu email atual ficaria bem num CV?",
+     "c": "Verifica o teu endereço e cria um mais limpo, se for preciso."
+    },
+    "pt_BR": {
+     "t": "Um e-mail profissional",
+     "g": "Veja por que um e-mail simples com seu nome causa melhor primeira impressão.",
+     "p": [
+      "Use um endereço simples com seu nome, como nome.sobrenome.",
+      "Evite piadas, apelidos, anos de nascimento ou algo que não diria a um empregador.",
+      "Crie uma conta gratuita só para buscar emprego, se precisar."
+     ],
+     "q": "Seu e-mail atual ficaria bem em um currículo?",
+     "c": "Confira seu endereço e crie um mais limpo, se for preciso."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "To add a photo or not",
+     "g": "Learn how photo conventions differ by country and choose wisely.",
+     "p": [
+      "In some countries a photo is common; in others it is discouraged.",
+      "If you add one, use a clear, friendly, well-lit head-and-shoulders shot.",
+      "When unsure, follow the job ad and local norms, or leave it out."
+     ],
+     "q": "Does the country you apply in usually expect a CV photo?",
+     "c": "Check the norm for your target country and decide yes or no."
+    },
+    "de": {
+     "t": "Foto oder kein Foto",
+     "g": "Lerne, wie Fotokonventionen je nach Land abweichen, und entscheide klug.",
+     "p": [
+      "In manchen Ländern ist ein Foto üblich, in anderen unerwünscht.",
+      "Wenn du eines nutzt: klares, freundliches, gut beleuchtetes Porträt.",
+      "Bei Unsicherheit richte dich nach Anzeige und Landesbrauch oder lasse es weg."
+     ],
+     "q": "Erwartet das Land, in dem du dich bewirbst, meist ein Foto?",
+     "c": "Prüfe die Regel für dein Zielland und entscheide dich für Ja oder Nein."
+    },
+    "es": {
+     "t": "Poner foto o no",
+     "g": "Aprende cómo cambian las costumbres sobre la foto según el país y decide bien.",
+     "p": [
+      "En algunos países la foto es habitual; en otros no se aconseja.",
+      "Si la pones, que sea clara, amable, bien iluminada y de busto.",
+      "Si dudas, sigue la oferta y las normas locales, o no la pongas."
+     ],
+     "q": "¿El país donde te postulas suele esperar foto en el CV?",
+     "c": "Comprueba la norma de tu país objetivo y decide sí o no."
+    },
+    "fr": {
+     "t": "Mettre une photo ou non",
+     "g": "Apprends comment les usages de la photo varient selon les pays et décide bien.",
+     "p": [
+      "Dans certains pays la photo est courante ; dans d'autres elle est déconseillée.",
+      "Si tu en mets une, choisis un portrait net, souriant et bien éclairé.",
+      "En cas de doute, suis l'annonce et les usages locaux, ou n'en mets pas."
+     ],
+     "q": "Le pays où tu postules attend-il généralement une photo ?",
+     "c": "Vérifie l'usage de ton pays cible et décide oui ou non."
+    },
+    "it": {
+     "t": "Foto sì o no",
+     "g": "Scopri come le abitudini sulla foto cambiano da paese a paese e scegli bene.",
+     "p": [
+      "In alcuni paesi la foto è comune, in altri è sconsigliata.",
+      "Se la metti, scegli un primo piano nitido, cordiale e ben illuminato.",
+      "Nel dubbio, segui l'annuncio e le usanze locali, oppure non metterla."
+     ],
+     "q": "Il paese in cui ti candidi di solito si aspetta una foto?",
+     "c": "Verifica la norma del tuo paese target e decidi sì o no."
+    },
+    "pt": {
+     "t": "Pôr foto ou não",
+     "g": "Aprende como os costumes sobre a foto mudam de país para país e decide bem.",
+     "p": [
+      "Em alguns países a foto é comum; noutros é desaconselhada.",
+      "Se a puseres, escolhe uma foto nítida, simpática e bem iluminada, de busto.",
+      "Na dúvida, segue o anúncio e as normas locais, ou deixa-a de fora."
+     ],
+     "q": "O país a que te candidatas costuma esperar foto no CV?",
+     "c": "Verifica a norma do teu país alvo e decide sim ou não."
+    },
+    "pt_BR": {
+     "t": "Colocar foto ou não",
+     "g": "Aprenda como os costumes sobre a foto mudam de país para país e decida bem.",
+     "p": [
+      "Em alguns países a foto é comum; em outros é desaconselhada.",
+      "Se colocar, escolha uma foto nítida, simpática e bem iluminada, de busto.",
+      "Na dúvida, siga o anúncio e as normas locais, ou deixe de fora."
+     ],
+     "q": "O país em que você se candidata costuma esperar foto no currículo?",
+     "c": "Confira a norma do seu país alvo e decida sim ou não."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Personal details to skip",
+     "g": "Understand why age, marital status and ID numbers are usually unnecessary.",
+     "p": [
+      "Never put ID, passport or tax numbers on a CV; they invite misuse.",
+      "Age, marital status and children are usually not needed for hiring.",
+      "Share only what helps an employer judge your fit for the work."
+     ],
+     "q": "What personal detail have you seen on a CV that felt too much?",
+     "c": "Remove any needless personal detail from your draft today."
+    },
+    "de": {
+     "t": "Persönliche Angaben weglassen",
+     "g": "Verstehe, warum Alter, Familienstand und Ausweisnummern meist überflüssig sind.",
+     "p": [
+      "Setze nie Ausweis-, Pass- oder Steuernummern in den Lebenslauf; sie laden zu Missbrauch ein.",
+      "Alter, Familienstand und Kinder sind für die Einstellung meist nicht nötig.",
+      "Teile nur, was dem Arbeitgeber hilft, deine Eignung zu beurteilen."
+     ],
+     "q": "Welche persönliche Angabe in einem Lebenslauf fandest du zu viel?",
+     "c": "Entferne heute jede überflüssige persönliche Angabe aus deinem Entwurf."
+    },
+    "es": {
+     "t": "Datos personales que omitir",
+     "g": "Entiende por qué edad, estado civil y números de documento suelen sobrar.",
+     "p": [
+      "Nunca pongas DNI, pasaporte o número fiscal en un CV; facilitan el mal uso.",
+      "Edad, estado civil e hijos no suelen hacer falta para contratar.",
+      "Comparte solo lo que ayuda a valorar si encajas en el trabajo."
+     ],
+     "q": "¿Qué dato personal has visto en un CV que te pareció excesivo?",
+     "c": "Quita hoy cualquier dato personal innecesario de tu borrador."
+    },
+    "fr": {
+     "t": "Les informations personnelles à omettre",
+     "g": "Comprends pourquoi âge, situation familiale et numéros d'identité sont souvent superflus.",
+     "p": [
+      "Ne mets jamais de numéro de pièce d'identité, passeport ou fiscal : risque de mauvais usage.",
+      "Âge, situation familiale et enfants ne sont généralement pas nécessaires.",
+      "Partage seulement ce qui aide à juger ton adéquation au poste."
+     ],
+     "q": "Quelle information personnelle vue sur un CV t'a semblé de trop ?",
+     "c": "Retire aujourd'hui toute donnée personnelle inutile de ton brouillon."
+    },
+    "it": {
+     "t": "Dati personali da omettere",
+     "g": "Capisci perché età, stato civile e numeri di documento di solito non servono.",
+     "p": [
+      "Non mettere mai numeri di documento, passaporto o codice fiscale nel CV: invitano all'uso improprio.",
+      "Età, stato civile e figli di solito non servono per assumere.",
+      "Condividi solo ciò che aiuta a valutare se sei adatto al lavoro."
+     ],
+     "q": "Quale dato personale visto in un CV ti è sembrato eccessivo?",
+     "c": "Togli oggi ogni dato personale inutile dalla tua bozza."
+    },
+    "pt": {
+     "t": "Dados pessoais a omitir",
+     "g": "Percebe porque idade, estado civil e números de documentos costumam ser desnecessários.",
+     "p": [
+      "Nunca ponhas número de cartão, passaporte ou contribuinte num CV; facilitam o uso indevido.",
+      "Idade, estado civil e filhos normalmente não são precisos para contratar.",
+      "Partilha só o que ajuda a avaliar se encaixas no trabalho."
+     ],
+     "q": "Que dado pessoal vista num CV te pareceu demais?",
+     "c": "Retira hoje qualquer dado pessoal desnecessário do teu rascunho."
+    },
+    "pt_BR": {
+     "t": "Dados pessoais a omitir",
+     "g": "Entenda por que idade, estado civil e números de documentos costumam ser desnecessários.",
+     "p": [
+      "Nunca coloque RG, CPF ou passaporte no currículo; isso facilita o uso indevido.",
+      "Idade, estado civil e filhos normalmente não são necessários para contratar.",
+      "Compartilhe só o que ajuda a avaliar se você combina com o trabalho."
+     ],
+     "q": "Que dado pessoal visto em um currículo pareceu demais para você?",
+     "c": "Retire hoje qualquer dado pessoal desnecessário do seu rascunho."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Links that add value",
+     "g": "Add a profile or portfolio link only when it helps your case.",
+     "p": [
+      "A professional profile or portfolio can back up your claims.",
+      "Make sure every linked page is up to date and tidy.",
+      "Skip personal social accounts that do not support your goal."
+     ],
+     "q": "Do you have work samples or a profile worth showing?",
+     "c": "Review your public profiles and pick one link, or none, to include."
+    },
+    "de": {
+     "t": "Links mit Mehrwert",
+     "g": "Füge ein Profil oder Portfolio nur hinzu, wenn es deine Bewerbung stärkt.",
+     "p": [
+      "Ein berufliches Profil oder Portfolio kann deine Aussagen belegen.",
+      "Sorge dafür, dass jede verlinkte Seite aktuell und aufgeräumt ist.",
+      "Lasse private Social-Media-Konten weg, die dein Ziel nicht stützen."
+     ],
+     "q": "Hast du Arbeitsproben oder ein Profil, das sich zu zeigen lohnt?",
+     "c": "Prüfe deine öffentlichen Profile und wähle einen Link oder keinen aus."
+    },
+    "es": {
+     "t": "Enlaces que aportan valor",
+     "g": "Añade un perfil o portafolio solo cuando refuerce tu candidatura.",
+     "p": [
+      "Un perfil profesional o portafolio puede respaldar lo que dices.",
+      "Asegúrate de que cada página enlazada esté actualizada y ordenada.",
+      "Omite cuentas personales de redes que no apoyen tu objetivo."
+     ],
+     "q": "¿Tienes trabajos o un perfil que merezca la pena mostrar?",
+     "c": "Revisa tus perfiles públicos y elige un enlace, o ninguno."
+    },
+    "fr": {
+     "t": "Des liens qui apportent de la valeur",
+     "g": "Ajoute un profil ou portfolio seulement s'il renforce ta candidature.",
+     "p": [
+      "Un profil professionnel ou un portfolio peut appuyer tes affirmations.",
+      "Vérifie que chaque page liée est à jour et soignée.",
+      "Écarte les comptes personnels qui ne servent pas ton objectif."
+     ],
+     "q": "As-tu des réalisations ou un profil qui valent la peine d'être montrés ?",
+     "c": "Passe en revue tes profils publics et choisis un lien, ou aucun."
+    },
+    "it": {
+     "t": "Link che aggiungono valore",
+     "g": "Aggiungi un profilo o portfolio solo quando rafforza la tua candidatura.",
+     "p": [
+      "Un profilo professionale o un portfolio può sostenere ciò che dici.",
+      "Assicurati che ogni pagina collegata sia aggiornata e curata.",
+      "Evita account social personali che non sostengono il tuo obiettivo."
+     ],
+     "q": "Hai lavori o un profilo che vale la pena mostrare?",
+     "c": "Rivedi i tuoi profili pubblici e scegli un link, oppure nessuno."
+    },
+    "pt": {
+     "t": "Ligações que acrescentam valor",
+     "g": "Acrescenta um perfil ou portefólio só quando reforça a tua candidatura.",
+     "p": [
+      "Um perfil profissional ou portefólio pode sustentar o que dizes.",
+      "Garante que cada página ligada está atualizada e arrumada.",
+      "Deixa de fora contas pessoais de redes que não apoiam o teu objetivo."
+     ],
+     "q": "Tens trabalhos ou um perfil que valha a pena mostrar?",
+     "c": "Revê os teus perfis públicos e escolhe uma ligação, ou nenhuma."
+    },
+    "pt_BR": {
+     "t": "Links que agregam valor",
+     "g": "Adicione um perfil ou portfólio só quando reforçar sua candidatura.",
+     "p": [
+      "Um perfil profissional ou portfólio pode sustentar o que você diz.",
+      "Garanta que cada página linkada esteja atualizada e organizada.",
+      "Deixe de fora contas pessoais de redes que não apoiam seu objetivo."
+     ],
+     "q": "Você tem trabalhos ou um perfil que vale a pena mostrar?",
+     "c": "Revise seus perfis públicos e escolha um link, ou nenhum."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing a CV headline",
+     "g": "Write a short title under your name that says who you are at a glance.",
+     "p": [
+      "A headline is a few words: your role, field or specialty.",
+      "Mirror the title of the job you want, if it is honest.",
+      "Add one proof point, like a key skill or years of experience."
+     ],
+     "q": "How would you describe your work in five words?",
+     "c": "Write three headline options and keep your favourite."
+    },
+    "de": {
+     "t": "Eine Lebenslauf-Überschrift schreiben",
+     "g": "Schreibe unter deinen Namen einen kurzen Titel, der auf einen Blick sagt, wer du bist.",
+     "p": [
+      "Eine Überschrift besteht aus wenigen Wörtern: Rolle, Fach oder Spezialgebiet.",
+      "Spiegle den Titel der Wunschstelle, wenn es ehrlich ist.",
+      "Ergänze einen Beleg, etwa eine Kernfähigkeit oder Berufsjahre."
+     ],
+     "q": "Wie würdest du deine Arbeit in fünf Wörtern beschreiben?",
+     "c": "Schreibe drei Überschriften und behalte deine liebste."
+    },
+    "es": {
+     "t": "Escribir un titular de CV",
+     "g": "Escribe un título breve bajo tu nombre que diga quién eres de un vistazo.",
+     "p": [
+      "Un titular son pocas palabras: tu rol, campo o especialidad.",
+      "Refleja el título del puesto que buscas, si es honesto.",
+      "Añade una prueba, como una habilidad clave o años de experiencia."
+     ],
+     "q": "¿Cómo describirías tu trabajo en cinco palabras?",
+     "c": "Escribe tres opciones de titular y quédate con la favorita."
+    },
+    "fr": {
+     "t": "Écrire un titre de CV",
+     "g": "Écris sous ton nom un titre court qui dit qui tu es en un coup d'oeil.",
+     "p": [
+      "Un titre, ce sont quelques mots : ton rôle, ton domaine ou ta spécialité.",
+      "Reprends l'intitulé du poste visé, si c'est honnête.",
+      "Ajoute une preuve, comme une compétence clé ou des années d'expérience."
+     ],
+     "q": "Comment décrirais-tu ton métier en cinq mots ?",
+     "c": "Écris trois titres possibles et garde ton préféré."
+    },
+    "it": {
+     "t": "Scrivere il titolo del CV",
+     "g": "Scrivi sotto il tuo nome un titolo breve che dica chi sei a colpo d'occhio.",
+     "p": [
+      "Un titolo sono poche parole: ruolo, ambito o specializzazione.",
+      "Riprendi il titolo del lavoro che vuoi, se è onesto.",
+      "Aggiungi una prova, come una competenza chiave o gli anni di esperienza."
+     ],
+     "q": "Come descriveresti il tuo lavoro in cinque parole?",
+     "c": "Scrivi tre titoli possibili e tieni il preferito."
+    },
+    "pt": {
+     "t": "Escrever um título de CV",
+     "g": "Escreve sob o teu nome um título curto que diga quem és num relance.",
+     "p": [
+      "Um título são poucas palavras: a tua função, área ou especialidade.",
+      "Espelha o título da vaga que queres, se for honesto.",
+      "Acrescenta uma prova, como uma competência-chave ou anos de experiência."
+     ],
+     "q": "Como descreverias o teu trabalho em cinco palavras?",
+     "c": "Escreve três opções de título e fica com a preferida."
+    },
+    "pt_BR": {
+     "t": "Escrever um título de currículo",
+     "g": "Escreva sob seu nome um título curto que diga quem você é num relance.",
+     "p": [
+      "Um título são poucas palavras: sua função, área ou especialidade.",
+      "Espelhe o título da vaga que você quer, se for honesto.",
+      "Acrescente uma prova, como uma habilidade-chave ou anos de experiência."
+     ],
+     "q": "Como você descreveria seu trabalho em cinco palavras?",
+     "c": "Escreva três opções de título e fique com a preferida."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The profile summary",
+     "g": "Write three or four lines that sum up your experience, strengths and goal.",
+     "p": [
+      "A summary sits below the headline and gives a quick overview.",
+      "Keep it to three or four lines that a busy reader will finish.",
+      "Match it to the job you want, not to every job you could do."
+     ],
+     "q": "What would you want an employer to remember about you?",
+     "c": "Draft a first summary of three lines, then trim one word per line."
+    },
+    "de": {
+     "t": "Das Kurzprofil",
+     "g": "Schreibe drei bis vier Zeilen, die Erfahrung, Stärken und Ziel zusammenfassen.",
+     "p": [
+      "Das Profil steht unter der Überschrift und gibt einen schnellen Überblick.",
+      "Halte es bei drei bis vier Zeilen, die ein eiliger Leser zu Ende liest.",
+      "Richte es auf die Wunschstelle aus, nicht auf jeden möglichen Job."
+     ],
+     "q": "Woran soll sich ein Arbeitgeber bei dir erinnern?",
+     "c": "Entwirf ein Profil in drei Zeilen und streiche dann ein Wort pro Zeile."
+    },
+    "es": {
+     "t": "El resumen de perfil",
+     "g": "Escribe tres o cuatro líneas que resuman tu experiencia, fortalezas y meta.",
+     "p": [
+      "El resumen va bajo el titular y da una visión rápida.",
+      "Que sean tres o cuatro líneas que un lector con prisa termine.",
+      "Adáptalo al trabajo que quieres, no a todos los que podrías hacer."
+     ],
+     "q": "¿Qué te gustaría que recordara un empleador de ti?",
+     "c": "Redacta un primer resumen de tres líneas y quita una palabra por línea."
+    },
+    "fr": {
+     "t": "Le résumé de profil",
+     "g": "Écris trois ou quatre lignes qui résument ton expérience, tes forces et ton objectif.",
+     "p": [
+      "Le résumé se place sous le titre et offre une vue d'ensemble rapide.",
+      "Garde trois ou quatre lignes qu'un lecteur pressé lira jusqu'au bout.",
+      "Adapte-le au poste visé, pas à tous ceux que tu pourrais faire."
+     ],
+     "q": "Que voudrais-tu qu'un employeur retienne de toi ?",
+     "c": "Rédige un premier résumé de trois lignes, puis retire un mot par ligne."
+    },
+    "it": {
+     "t": "Il profilo sintetico",
+     "g": "Scrivi tre o quattro righe che riassumano esperienza, punti di forza e obiettivo.",
+     "p": [
+      "Il profilo sta sotto il titolo e dà una panoramica veloce.",
+      "Tienilo a tre o quattro righe che chi ha fretta legga fino in fondo.",
+      "Adattalo al lavoro che vuoi, non a tutti quelli che potresti fare."
+     ],
+     "q": "Cosa vorresti che un datore di lavoro ricordasse di te?",
+     "c": "Scrivi una prima bozza di tre righe e togli una parola per riga."
+    },
+    "pt": {
+     "t": "O resumo de perfil",
+     "g": "Escreve três ou quatro linhas que resumam a tua experiência, pontos fortes e objetivo.",
+     "p": [
+      "O resumo fica sob o título e dá uma visão geral rápida.",
+      "Mantém-no em três ou quatro linhas que um leitor apressado acabe.",
+      "Adapta-o ao trabalho que queres, não a todos os que poderias fazer."
+     ],
+     "q": "O que gostavas que um empregador recordasse de ti?",
+     "c": "Redige um primeiro resumo de três linhas e corta uma palavra por linha."
+    },
+    "pt_BR": {
+     "t": "O resumo de perfil",
+     "g": "Escreva três ou quatro linhas que resumam sua experiência, pontos fortes e objetivo.",
+     "p": [
+      "O resumo fica sob o título e dá uma visão geral rápida.",
+      "Mantenha em três ou quatro linhas que um leitor apressado termine.",
+      "Adapte-o ao trabalho que você quer, não a todos que poderia fazer."
+     ],
+     "q": "O que você gostaria que um empregador lembrasse de você?",
+     "c": "Redija um primeiro resumo de três linhas e corte uma palavra por linha."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Summary formulas that work",
+     "g": "Use a simple recipe: who you are, what you do best, what you want next.",
+     "p": [
+      "Start with your role and experience, like a careful accountant with five years.",
+      "Add your strongest skill or result in the middle.",
+      "Close with the kind of role or contribution you are seeking."
+     ],
+     "q": "Which of the three parts is easiest for you to write?",
+     "c": "Fill the three-part recipe and join it into one smooth paragraph."
+    },
+    "de": {
+     "t": "Profil-Formeln, die funktionieren",
+     "g": "Nutze ein einfaches Rezept: wer du bist, was du am besten kannst, was du willst.",
+     "p": [
+      "Beginne mit Rolle und Erfahrung, etwa gewissenhafte Buchhalterin mit fünf Jahren Praxis.",
+      "Füge in der Mitte deine stärkste Fähigkeit oder dein bestes Ergebnis ein.",
+      "Schließe mit der Art von Aufgabe, die du suchst."
+     ],
+     "q": "Welcher der drei Teile fällt dir am leichtesten?",
+     "c": "Fülle das Drei-Teile-Rezept und fasse es zu einem runden Absatz zusammen."
+    },
+    "es": {
+     "t": "Fórmulas de resumen que funcionan",
+     "g": "Usa una receta simple: quién eres, qué haces mejor y qué buscas.",
+     "p": [
+      "Empieza con tu rol y experiencia, como contable meticulosa con cinco años.",
+      "Añade en medio tu mejor habilidad o resultado.",
+      "Cierra con el tipo de puesto o aportación que buscas."
+     ],
+     "q": "¿Cuál de las tres partes te resulta más fácil de escribir?",
+     "c": "Rellena la receta de tres partes y únela en un párrafo fluido."
+    },
+    "fr": {
+     "t": "Des formules de résumé efficaces",
+     "g": "Utilise une recette simple : qui tu es, ce que tu fais de mieux, ce que tu vises.",
+     "p": [
+      "Commence par ton rôle et ton expérience, comme comptable rigoureuse depuis cinq ans.",
+      "Ajoute au milieu ta meilleure compétence ou ton meilleur résultat.",
+      "Termine par le type de poste ou d'apport que tu recherches."
+     ],
+     "q": "Laquelle des trois parties est la plus facile à écrire pour toi ?",
+     "c": "Remplis la recette en trois temps et fusionne-la en un paragraphe fluide."
+    },
+    "it": {
+     "t": "Formule di profilo che funzionano",
+     "g": "Usa una ricetta semplice: chi sei, cosa fai meglio, cosa cerchi.",
+     "p": [
+      "Parti dal ruolo e dall'esperienza, come contabile attenta con cinque anni di pratica.",
+      "Aggiungi al centro la tua competenza o il tuo risultato migliore.",
+      "Chiudi con il tipo di ruolo o contributo che cerchi."
+     ],
+     "q": "Quale delle tre parti ti viene più facile scrivere?",
+     "c": "Compila la ricetta in tre parti e uniscila in un paragrafo scorrevole."
+    },
+    "pt": {
+     "t": "Fórmulas de resumo que funcionam",
+     "g": "Usa uma receita simples: quem és, o que fazes melhor, o que queres a seguir.",
+     "p": [
+      "Começa pela função e experiência, como contabilista rigorosa com cinco anos.",
+      "Acrescenta ao meio a tua melhor competência ou resultado.",
+      "Fecha com o tipo de função ou contributo que procuras."
+     ],
+     "q": "Qual das três partes é mais fácil de escrever para ti?",
+     "c": "Preenche a receita de três partes e junta tudo num parágrafo fluido."
+    },
+    "pt_BR": {
+     "t": "Fórmulas de resumo que funcionam",
+     "g": "Use uma receita simples: quem você é, o que faz melhor, o que quer a seguir.",
+     "p": [
+      "Comece pela função e experiência, como contadora rigorosa com cinco anos.",
+      "Acrescente no meio sua melhor habilidade ou resultado.",
+      "Feche com o tipo de função ou contribuição que você procura."
+     ],
+     "q": "Qual das três partes é mais fácil de escrever para você?",
+     "c": "Preencha a receita de três partes e junte tudo em um parágrafo fluido."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Avoiding empty buzzwords",
+     "g": "Replace words like hard-working and passionate with real evidence.",
+     "p": [
+      "Words like team player or dynamic are everywhere and prove nothing.",
+      "Show the quality through a fact: what you did and what happened.",
+      "Search your draft and swap each buzzword for a concrete detail."
+     ],
+     "q": "Which buzzword do you tend to use about yourself?",
+     "c": "Find three buzzwords in your CV and replace each with proof."
+    },
+    "de": {
+     "t": "Leere Schlagwörter vermeiden",
+     "g": "Ersetze Wörter wie fleißig und leidenschaftlich durch echte Belege.",
+     "p": [
+      "Wörter wie Teamplayer oder dynamisch stehen überall und beweisen nichts.",
+      "Zeige die Eigenschaft durch eine Tatsache: was du getan hast und was daraus wurde.",
+      "Suche in deinem Entwurf und tausche jedes Schlagwort gegen ein konkretes Detail."
+     ],
+     "q": "Welches Schlagwort benutzt du gern über dich selbst?",
+     "c": "Finde drei Schlagwörter in deinem Lebenslauf und ersetze jedes durch einen Beleg."
+    },
+    "es": {
+     "t": "Evitar palabras vacías",
+     "g": "Sustituye palabras como trabajador y apasionado por pruebas reales.",
+     "p": [
+      "Palabras como proactivo o dinámico están en todas partes y no prueban nada.",
+      "Demuestra la cualidad con un hecho: qué hiciste y qué ocurrió.",
+      "Busca en tu borrador y cambia cada palabra vacía por un detalle concreto."
+     ],
+     "q": "¿Qué palabra vacía sueles usar para describirte?",
+     "c": "Encuentra tres palabras vacías en tu CV y sustituye cada una por una prueba."
+    },
+    "fr": {
+     "t": "Éviter les mots creux",
+     "g": "Remplace des mots comme travailleur et passionné par de vraies preuves.",
+     "p": [
+      "Des mots comme dynamique ou esprit d'équipe sont partout et ne prouvent rien.",
+      "Montre la qualité par un fait : ce que tu as fait et ce qui s'est passé.",
+      "Parcours ton brouillon et remplace chaque mot creux par un détail concret."
+     ],
+     "q": "Quel mot creux utilises-tu volontiers pour te décrire ?",
+     "c": "Trouve trois mots creux dans ton CV et remplace chacun par une preuve."
+    },
+    "it": {
+     "t": "Evitare le parole vuote",
+     "g": "Sostituisci parole come determinato e appassionato con prove concrete.",
+     "p": [
+      "Parole come dinamico o team player sono ovunque e non provano nulla.",
+      "Mostra la qualità con un fatto: cosa hai fatto e cosa è successo.",
+      "Rileggi la bozza e cambia ogni parola vuota con un dettaglio concreto."
+     ],
+     "q": "Quale parola vuota tendi a usare per descriverti?",
+     "c": "Trova tre parole vuote nel tuo CV e sostituisci ognuna con una prova."
+    },
+    "pt": {
+     "t": "Evitar palavras vazias",
+     "g": "Troca palavras como trabalhador e apaixonado por provas reais.",
+     "p": [
+      "Palavras como dinâmico ou espírito de equipa estão em todo o lado e nada provam.",
+      "Mostra a qualidade com um facto: o que fizeste e o que aconteceu.",
+      "Procura no rascunho e troca cada palavra vazia por um detalhe concreto."
+     ],
+     "q": "Que palavra vazia costumas usar para te descrever?",
+     "c": "Encontra três palavras vazias no teu CV e troca cada uma por uma prova."
+    },
+    "pt_BR": {
+     "t": "Evitar palavras vazias",
+     "g": "Troque palavras como esforçado e apaixonado por provas reais.",
+     "p": [
+      "Palavras como dinâmico ou espírito de equipe estão em todo lugar e nada provam.",
+      "Mostre a qualidade com um fato: o que você fez e o que aconteceu.",
+      "Procure no rascunho e troque cada palavra vazia por um detalhe concreto."
+     ],
+     "q": "Que palavra vazia você costuma usar para se descrever?",
+     "c": "Encontre três palavras vazias no seu currículo e troque cada uma por uma prova."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Profile for first-time job seekers",
+     "g": "Write a confident summary even when you have little work experience.",
+     "p": [
+      "Lead with education, training, projects and the skills you have built.",
+      "Mention reliability, learning speed and examples from school or home.",
+      "State clearly the kind of first role you are looking for."
+     ],
+     "q": "What have you done outside paid work that you are proud of?",
+     "c": "Write a three-line summary for yourself with no paid job in it."
+    },
+    "de": {
+     "t": "Profil für Berufseinsteiger",
+     "g": "Schreibe ein selbstbewusstes Profil, auch mit wenig Berufserfahrung.",
+     "p": [
+      "Stelle Ausbildung, Training, Projekte und erworbene Fähigkeiten voran.",
+      "Nenne Zuverlässigkeit, Lerntempo und Beispiele aus Schule oder Alltag.",
+      "Sage klar, welche Art von erster Stelle du suchst."
+     ],
+     "q": "Worauf bist du stolz, das nichts mit bezahlter Arbeit zu tun hat?",
+     "c": "Schreibe ein dreizeiliges Profil für dich, ganz ohne bezahlten Job."
+    },
+    "es": {
+     "t": "Perfil para quien busca su primer empleo",
+     "g": "Escribe un resumen seguro aunque tengas poca experiencia laboral.",
+     "p": [
+      "Empieza por estudios, formación, proyectos y habilidades que has desarrollado.",
+      "Menciona responsabilidad, rapidez al aprender y ejemplos de estudios o casa.",
+      "Indica con claridad el tipo de primer puesto que buscas."
+     ],
+     "q": "¿De qué has hecho fuera del trabajo remunerado que te sientas orgulloso?",
+     "c": "Escribe un resumen de tres líneas sin ningún empleo pagado."
+    },
+    "fr": {
+     "t": "Un profil pour un premier emploi",
+     "g": "Écris un résumé assuré même avec peu d'expérience professionnelle.",
+     "p": [
+      "Mets en avant formation, projets et compétences que tu as développées.",
+      "Mentionne fiabilité, rapidité d'apprentissage et exemples tirés de l'école ou du quotidien.",
+      "Dis clairement le type de premier poste que tu cherches."
+     ],
+     "q": "De quoi es-tu fier en dehors d'un travail rémunéré ?",
+     "c": "Écris un résumé de trois lignes sans aucun emploi rémunéré."
+    },
+    "it": {
+     "t": "Profilo per chi cerca il primo lavoro",
+     "g": "Scrivi un profilo sicuro anche con poca esperienza lavorativa.",
+     "p": [
+      "Parti da studi, formazione, progetti e competenze che hai sviluppato.",
+      "Cita affidabilità, rapidità nell'imparare ed esempi da scuola o vita quotidiana.",
+      "Indica chiaramente che tipo di primo ruolo cerchi."
+     ],
+     "q": "Di cosa vai fiero tra le cose fatte fuori dal lavoro retribuito?",
+     "c": "Scrivi un profilo di tre righe senza alcun lavoro retribuito."
+    },
+    "pt": {
+     "t": "Perfil para o primeiro emprego",
+     "g": "Escreve um resumo confiante mesmo com pouca experiência profissional.",
+     "p": [
+      "Começa pela formação, projetos e competências que desenvolveste.",
+      "Menciona responsabilidade, rapidez a aprender e exemplos da escola ou do dia a dia.",
+      "Diz claramente o tipo de primeira função que procuras."
+     ],
+     "q": "Do que fizeste fora do trabalho remunerado te orgulhas?",
+     "c": "Escreve um resumo de três linhas sem nenhum emprego pago."
+    },
+    "pt_BR": {
+     "t": "Resumo para o primeiro emprego",
+     "g": "Escreva um resumo confiante mesmo com pouca experiência profissional.",
+     "p": [
+      "Comece pela formação, projetos e habilidades que você desenvolveu.",
+      "Mencione responsabilidade, rapidez para aprender e exemplos da escola ou do dia a dia.",
+      "Diga claramente o tipo de primeira função que você procura."
+     ],
+     "q": "Do que você fez fora do trabalho remunerado se orgulha?",
+     "c": "Escreva um resumo de três linhas sem nenhum emprego pago."
+    }
+   }
+  }
+ ]
+}

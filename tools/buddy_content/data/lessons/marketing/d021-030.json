@@ -1,0 +1,835 @@
+{
+ "topic": "marketing",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The customer journey",
+     "g": "Learn awareness, consideration, purchase, use and loyalty as stages.",
+     "p": [
+      "People move from first noticing you to comparing, buying, using and maybe recommending.",
+      "Each stage needs different help: attention, information, ease, support, thanks.",
+      "The journey does not end at the sale; use and loyalty are where trust grows."
+     ],
+     "q": "Think of your last big purchase: what were the steps from first idea to using it?",
+     "c": "Map your last purchase in five steps, one for each stage of the journey."
+    },
+    "de": {
+     "t": "Die Customer Journey",
+     "g": "Bewusstsein, Abwägung, Kauf, Nutzung und Treue als Phasen kennenlernen.",
+     "p": [
+      "Menschen gehen vom ersten Bemerken über Vergleichen, Kaufen und Nutzen zur Empfehlung.",
+      "Jede Phase braucht andere Hilfe: Aufmerksamkeit, Information, Leichtigkeit, Support, Dank.",
+      "Die Reise endet nicht beim Verkauf; in Nutzung und Treue wächst Vertrauen."
+     ],
+     "q": "Denk an deinen letzten großen Kauf: Welche Schritte gab es von der Idee bis zur Nutzung?",
+     "c": "Zeichne deinen letzten Kauf in fünf Schritten nach, einen je Phase der Reise."
+    },
+    "es": {
+     "t": "El recorrido del cliente",
+     "g": "Conocer conciencia, consideración, compra, uso y fidelidad como etapas.",
+     "p": [
+      "Las personas pasan de notarte a comparar, comprar, usar y quizá recomendar.",
+      "Cada etapa necesita una ayuda distinta: atención, información, facilidad, soporte, gracias.",
+      "El recorrido no acaba en la venta; en el uso y la fidelidad crece la confianza."
+     ],
+     "q": "Piensa en tu última compra grande: ¿qué pasos hubo desde la idea hasta usarla?",
+     "c": "Dibuja tu última compra en cinco pasos, uno por cada etapa del recorrido."
+    },
+    "fr": {
+     "t": "Le parcours client",
+     "g": "Découvrir la découverte, la considération, l'achat, l'usage et la fidélité comme étapes.",
+     "p": [
+      "Les gens passent du premier regard à la comparaison, l'achat, l'usage et parfois la recommandation.",
+      "Chaque étape demande une aide différente : attention, information, simplicité, soutien, merci.",
+      "Le parcours ne s'arrête pas à la vente ; l'usage et la fidélité font grandir la confiance."
+     ],
+     "q": "Pense à ton dernier gros achat : quelles étapes de l'idée à l'usage ?",
+     "c": "Retrace ton dernier achat en cinq étapes, une par phase du parcours."
+    },
+    "it": {
+     "t": "Il percorso del cliente",
+     "g": "Conoscere consapevolezza, considerazione, acquisto, uso e fedeltà come fasi.",
+     "p": [
+      "Le persone passano dal notarti al confrontare, comprare, usare e magari consigliare.",
+      "Ogni fase richiede un aiuto diverso: attenzione, informazioni, facilità, assistenza, grazie.",
+      "Il percorso non finisce con la vendita; nell'uso e nella fedeltà cresce la fiducia."
+     ],
+     "q": "Pensa al tuo ultimo grande acquisto: quali passaggi dall'idea all'uso?",
+     "c": "Ripercorri il tuo ultimo acquisto in cinque passi, uno per ogni fase del percorso."
+    },
+    "pt": {
+     "t": "O percurso do cliente",
+     "g": "Conhecer consciência, consideração, compra, uso e fidelização como etapas.",
+     "p": [
+      "As pessoas passam de te notar a comparar, comprar, usar e talvez recomendar.",
+      "Cada etapa precisa de ajuda diferente: atenção, informação, facilidade, apoio, obrigado.",
+      "O percurso não acaba na venda; no uso e na fidelização cresce a confiança."
+     ],
+     "q": "Pensa na tua última compra grande: que passos houve da ideia ao uso?",
+     "c": "Desenha a tua última compra em cinco passos, um por cada etapa do percurso."
+    },
+    "pt_BR": {
+     "t": "A jornada do cliente",
+     "g": "Conhecer consciência, consideração, compra, uso e fidelização como etapas.",
+     "p": [
+      "As pessoas passam de notar você a comparar, comprar, usar e talvez indicar.",
+      "Cada etapa precisa de uma ajuda diferente: atenção, informação, facilidade, suporte, obrigado.",
+      "A jornada não acaba na venda; no uso e na fidelização a confiança cresce."
+     ],
+     "q": "Pense na sua última compra grande: quais foram os passos da ideia ao uso?",
+     "c": "Desenhe sua última compra em cinco passos, um para cada etapa da jornada."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Touchpoints",
+     "g": "See every moment a person meets a brand, online and offline.",
+     "p": [
+      "A touchpoint is any contact: a sign, a website, a phone call, a package, a review.",
+      "People judge the whole brand from many small moments, not one big one.",
+      "Check each touchpoint for the same tone, quality and helpfulness."
+     ],
+     "q": "What touchpoint with a brand left you with the best feeling recently?",
+     "c": "List ten touchpoints of one brand and mark the one that is weakest."
+    },
+    "de": {
+     "t": "Berührungspunkte",
+     "g": "Jeden Moment erkennen, in dem Menschen einer Marke begegnen, online und offline.",
+     "p": [
+      "Ein Touchpoint ist jeder Kontakt: ein Schild, eine Website, ein Anruf, ein Paket, eine Bewertung.",
+      "Menschen beurteilen die ganze Marke an vielen kleinen Momenten, nicht an einem großen.",
+      "Prüfe jeden Touchpoint auf gleichen Ton, gleiche Qualität und Hilfsbereitschaft."
+     ],
+     "q": "Welcher Kontakt mit einer Marke hat dir zuletzt das beste Gefühl gegeben?",
+     "c": "Liste zehn Touchpoints einer Marke und markiere den schwächsten."
+    },
+    "es": {
+     "t": "Puntos de contacto",
+     "g": "Ver cada momento en que una persona se encuentra con una marca, online y offline.",
+     "p": [
+      "Un punto de contacto es cualquier encuentro: un cartel, una web, una llamada, un paquete, una reseña.",
+      "La gente juzga toda la marca por muchos momentos pequeños, no por uno grande.",
+      "Revisa cada punto de contacto: mismo tono, calidad y ganas de ayudar."
+     ],
+     "q": "¿Qué contacto con una marca te dejó la mejor sensación últimamente?",
+     "c": "Lista diez puntos de contacto de una marca y marca el más débil."
+    },
+    "fr": {
+     "t": "Les points de contact",
+     "g": "Voir chaque moment où une personne rencontre une marque, en ligne et hors ligne.",
+     "p": [
+      "Un point de contact est toute rencontre : une enseigne, un site, un appel, un colis, un avis.",
+      "Les gens jugent toute la marque sur de nombreux petits moments, pas sur un seul grand.",
+      "Vérifie chaque point de contact : même ton, même qualité, même utilité."
+     ],
+     "q": "Quel contact avec une marque t'a laissé la meilleure impression récemment ?",
+     "c": "Liste dix points de contact d'une marque et repère le plus faible."
+    },
+    "it": {
+     "t": "I punti di contatto",
+     "g": "Vedere ogni momento in cui una persona incontra un marchio, online e offline.",
+     "p": [
+      "Un punto di contatto è ogni incontro: un'insegna, un sito, una telefonata, un pacco, una recensione.",
+      "Le persone giudicano l'intero marchio da tanti piccoli momenti, non da uno grande.",
+      "Controlla ogni punto di contatto: stesso tono, qualità e disponibilità."
+     ],
+     "q": "Quale contatto con un marchio ti ha lasciato la sensazione migliore di recente?",
+     "c": "Elenca dieci punti di contatto di un marchio e segna il più debole."
+    },
+    "pt": {
+     "t": "Pontos de contacto",
+     "g": "Ver cada momento em que uma pessoa encontra uma marca, online e offline.",
+     "p": [
+      "Um ponto de contacto é qualquer encontro: um letreiro, um site, um telefonema, uma encomenda, uma avaliação.",
+      "As pessoas julgam a marca toda por muitos pequenos momentos, não por um grande.",
+      "Verifica cada ponto de contacto: mesmo tom, qualidade e boa vontade."
+     ],
+     "q": "Que contacto com uma marca te deixou a melhor sensação recentemente?",
+     "c": "Lista dez pontos de contacto de uma marca e marca o mais fraco."
+    },
+    "pt_BR": {
+     "t": "Pontos de contato",
+     "g": "Ver cada momento em que uma pessoa encontra uma marca, online e offline.",
+     "p": [
+      "Um ponto de contato é qualquer encontro: uma placa, um site, uma ligação, uma encomenda, uma avaliação.",
+      "As pessoas julgam a marca toda por muitos pequenos momentos, não por um grande.",
+      "Verifique cada ponto de contato: mesmo tom, qualidade e boa vontade."
+     ],
+     "q": "Que contato com uma marca deixou a melhor sensação em você recentemente?",
+     "c": "Liste dez pontos de contato de uma marca e marque o mais fraco."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The marketing funnel",
+     "g": "See how many people notice you, how many get interested and how many act.",
+     "p": [
+      "The funnel shows people narrowing: aware, interested, deciding, acting.",
+      "At each step some people drop out, and that is normal.",
+      "Look for the step where you lose most people and help them there."
+     ],
+     "q": "At which step of a purchase did you last change your mind?",
+     "c": "Draw a four-step funnel for a small business and guess where people drop out."
+    },
+    "de": {
+     "t": "Der Marketing-Trichter",
+     "g": "Sehen, wie viele dich bemerken, wie viele Interesse zeigen und wie viele handeln.",
+     "p": [
+      "Der Trichter zeigt, wie Menschen weniger werden: bekannt, interessiert, entscheidend, handelnd.",
+      "Bei jedem Schritt springen einige ab, und das ist normal.",
+      "Finde den Schritt, an dem du die meisten verlierst, und hilf dort."
+     ],
+     "q": "Bei welchem Schritt eines Kaufs hast du zuletzt deine Meinung geändert?",
+     "c": "Zeichne einen Vier-Stufen-Trichter für ein kleines Unternehmen und rate, wo Menschen abspringen."
+    },
+    "es": {
+     "t": "El embudo de marketing",
+     "g": "Ver cuántas personas te notan, cuántas se interesan y cuántas actúan.",
+     "p": [
+      "El embudo muestra cómo se reducen las personas: conocen, se interesan, deciden, actúan.",
+      "En cada paso algunas se quedan fuera, y es normal.",
+      "Busca el paso donde pierdes a más gente y ayúdales ahí."
+     ],
+     "q": "¿En qué paso de una compra cambiaste de opinión la última vez?",
+     "c": "Dibuja un embudo de cuatro pasos para un negocio pequeño y calcula dónde se pierde gente."
+    },
+    "fr": {
+     "t": "L'entonnoir marketing",
+     "g": "Voir combien de personnes te remarquent, s'intéressent et passent à l'action.",
+     "p": [
+      "L'entonnoir montre les gens qui se raréfient : informés, intéressés, décidés, actifs.",
+      "À chaque étape, certains partent, et c'est normal.",
+      "Cherche l'étape où tu perds le plus de monde et aide-les là."
+     ],
+     "q": "À quelle étape d'un achat as-tu changé d'avis la dernière fois ?",
+     "c": "Dessine un entonnoir en quatre étapes pour une petite entreprise et devine où l'on décroche."
+    },
+    "it": {
+     "t": "L'imbuto del marketing",
+     "g": "Vedere quante persone ti notano, quante si interessano e quante agiscono.",
+     "p": [
+      "L'imbuto mostra le persone che diminuiscono: informate, interessate, decise, in azione.",
+      "A ogni passo alcuni escono, ed è normale.",
+      "Cerca il passo in cui perdi più gente e aiutala lì."
+     ],
+     "q": "In quale fase di un acquisto hai cambiato idea l'ultima volta?",
+     "c": "Disegna un imbuto in quattro passi per una piccola attività e ipotizza dove si esce."
+    },
+    "pt": {
+     "t": "O funil de marketing",
+     "g": "Ver quantas pessoas te notam, quantas se interessam e quantas agem.",
+     "p": [
+      "O funil mostra as pessoas a diminuir: conhecem, interessam-se, decidem, agem.",
+      "Em cada passo algumas saem, e isso é normal.",
+      "Procura o passo onde perdes mais gente e ajuda-a aí."
+     ],
+     "q": "Em que passo de uma compra mudaste de ideias da última vez?",
+     "c": "Desenha um funil de quatro passos para um pequeno negócio e adivinha onde se perde gente."
+    },
+    "pt_BR": {
+     "t": "O funil de marketing",
+     "g": "Ver quantas pessoas notam você, quantas se interessam e quantas agem.",
+     "p": [
+      "O funil mostra as pessoas diminuindo: conhecem, se interessam, decidem, agem.",
+      "Em cada passo algumas saem, e isso é normal.",
+      "Procure o passo onde você perde mais gente e ajude-a ali."
+     ],
+     "q": "Em que passo de uma compra você mudou de ideia da última vez?",
+     "c": "Desenhe um funil de quatro passos para um pequeno negócio e chute onde se perde gente."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why people buy",
+     "g": "Habits, emotions, convenience and trust in purchase decisions.",
+     "p": [
+      "Many choices are habit or feeling first, and logic comes later to justify them.",
+      "Convenience wins often: the easy option beats the slightly better one.",
+      "Trust lowers risk, so clear information and honest promises sell better than hype."
+     ],
+     "q": "Which of your regular purchases are habits, and which are real decisions?",
+     "c": "Track one purchase today and note whether habit, emotion, convenience or trust drove it."
+    },
+    "de": {
+     "t": "Warum Menschen kaufen",
+     "g": "Gewohnheit, Emotion, Bequemlichkeit und Vertrauen bei Kaufentscheidungen.",
+     "p": [
+      "Viele Entscheidungen sind erst Gewohnheit oder Gefühl, die Logik rechtfertigt sie danach.",
+      "Bequemlichkeit gewinnt oft: Die einfache Option schlägt die etwas bessere.",
+      "Vertrauen senkt das Risiko, daher verkaufen klare Infos und ehrliche Versprechen besser als Hype."
+     ],
+     "q": "Welche deiner regelmäßigen Käufe sind Gewohnheit und welche echte Entscheidungen?",
+     "c": "Verfolge heute einen Kauf und notiere, ob Gewohnheit, Gefühl, Bequemlichkeit oder Vertrauen ihn lenkte."
+    },
+    "es": {
+     "t": "Por qué compra la gente",
+     "g": "Hábitos, emociones, comodidad y confianza en las decisiones de compra.",
+     "p": [
+      "Muchas decisiones son hábito o emoción primero, y la lógica llega después a justificarlas.",
+      "La comodidad gana a menudo: la opción fácil vence a la algo mejor.",
+      "La confianza reduce el riesgo, así que información clara y promesas honestas venden más que el bombo."
+     ],
+     "q": "¿Cuáles de tus compras habituales son hábito y cuáles decisiones reales?",
+     "c": "Sigue una compra hoy y anota si la guio el hábito, la emoción, la comodidad o la confianza."
+    },
+    "fr": {
+     "t": "Pourquoi les gens achètent",
+     "g": "Habitudes, émotions, praticité et confiance dans les décisions d'achat.",
+     "p": [
+      "Beaucoup de choix sont d'abord habitude ou émotion, la logique vient ensuite les justifier.",
+      "La praticité l'emporte souvent : l'option facile bat celle qui est un peu meilleure.",
+      "La confiance réduit le risque : informations claires et promesses honnêtes vendent mieux que le battage."
+     ],
+     "q": "Parmi tes achats réguliers, lesquels sont des habitudes et lesquels de vraies décisions ?",
+     "c": "Suis un achat aujourd'hui et note si l'habitude, l'émotion, la praticité ou la confiance l'a guidé."
+    },
+    "it": {
+     "t": "Perché le persone comprano",
+     "g": "Abitudini, emozioni, comodità e fiducia nelle decisioni d'acquisto.",
+     "p": [
+      "Molte scelte sono prima abitudine o emozione, e la logica arriva dopo a giustificarle.",
+      "La comodità vince spesso: l'opzione facile batte quella un po' migliore.",
+      "La fiducia riduce il rischio, quindi informazioni chiare e promesse oneste vendono meglio dell'hype."
+     ],
+     "q": "Quali dei tuoi acquisti abituali sono abitudini e quali vere decisioni?",
+     "c": "Segui un acquisto oggi e annota se l'ha guidato abitudine, emozione, comodità o fiducia."
+    },
+    "pt": {
+     "t": "Porque é que as pessoas compram",
+     "g": "Hábitos, emoções, comodidade e confiança nas decisões de compra.",
+     "p": [
+      "Muitas escolhas são primeiro hábito ou emoção, e a lógica chega depois para as justificar.",
+      "A comodidade ganha muitas vezes: a opção fácil vence a ligeiramente melhor.",
+      "A confiança reduz o risco, por isso informação clara e promessas honestas vendem mais do que o exagero."
+     ],
+     "q": "Quais das tuas compras habituais são hábitos e quais são decisões reais?",
+     "c": "Acompanha uma compra hoje e anota se foi guiada por hábito, emoção, comodidade ou confiança."
+    },
+    "pt_BR": {
+     "t": "Por que as pessoas compram",
+     "g": "Hábitos, emoções, conveniência e confiança nas decisões de compra.",
+     "p": [
+      "Muitas escolhas são primeiro hábito ou emoção, e a lógica vem depois para justificá-las.",
+      "A conveniência ganha muitas vezes: a opção fácil vence a um pouco melhor.",
+      "A confiança reduz o risco, então informação clara e promessas honestas vendem mais que exagero."
+     ],
+     "q": "Quais das suas compras habituais são hábitos e quais são decisões reais?",
+     "c": "Acompanhe uma compra hoje e anote se foi guiada por hábito, emoção, conveniência ou confiança."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Basic psychology in marketing",
+     "g": "Understand social proof, scarcity and reciprocity, used ethically.",
+     "p": [
+      "Social proof: we trust what others like us choose, such as honest reviews.",
+      "Scarcity is only honest when it is real; fake countdowns break trust.",
+      "Reciprocity: giving something useful first makes people feel warmly toward you."
+     ],
+     "q": "Which of these three influences you most when you shop?",
+     "c": "Spot one example of each principle today and decide if it was used honestly."
+    },
+    "de": {
+     "t": "Grundlagen der Marketing-Psychologie",
+     "g": "Soziale Bewährtheit, Knappheit und Reziprozität verstehen und ethisch einsetzen.",
+     "p": [
+      "Soziale Bewährtheit: Wir vertrauen dem, was Menschen wie wir wählen, etwa ehrlichen Bewertungen.",
+      "Knappheit ist nur ehrlich, wenn sie echt ist; falsche Countdowns zerstören Vertrauen.",
+      "Reziprozität: Wer zuerst etwas Nützliches gibt, weckt Wohlwollen."
+     ],
+     "q": "Welches dieser drei Prinzipien beeinflusst dich beim Einkaufen am meisten?",
+     "c": "Finde heute je ein Beispiel für jedes Prinzip und entscheide, ob es ehrlich genutzt wurde."
+    },
+    "es": {
+     "t": "Psicología básica del marketing",
+     "g": "Entender prueba social, escasez y reciprocidad, usadas con ética.",
+     "p": [
+      "Prueba social: confiamos en lo que eligen otros como nosotros, como las reseñas honestas.",
+      "La escasez es honesta solo si es real; las cuentas atrás falsas rompen la confianza.",
+      "Reciprocidad: dar algo útil primero genera simpatía hacia ti."
+     ],
+     "q": "¿Cuál de estos tres principios te influye más al comprar?",
+     "c": "Detecta hoy un ejemplo de cada principio y decide si se usó con honestidad."
+    },
+    "fr": {
+     "t": "Psychologie de base du marketing",
+     "g": "Comprendre preuve sociale, rareté et réciprocité, utilisées avec éthique.",
+     "p": [
+      "Preuve sociale : on fait confiance à ce que choisissent des gens comme nous, comme les avis honnêtes.",
+      "La rareté n'est honnête que si elle est réelle ; les faux comptes à rebours brisent la confiance.",
+      "Réciprocité : donner d'abord quelque chose d'utile crée de la sympathie."
+     ],
+     "q": "Lequel de ces trois principes t'influence le plus quand tu achètes ?",
+     "c": "Repère aujourd'hui un exemple de chaque principe et juge s'il a été utilisé honnêtement."
+    },
+    "it": {
+     "t": "Psicologia di base del marketing",
+     "g": "Capire riprova sociale, scarsità e reciprocità, usate con etica.",
+     "p": [
+      "Riprova sociale: ci fidiamo di ciò che scelgono persone come noi, come le recensioni oneste.",
+      "La scarsità è onesta solo se è reale; i falsi conti alla rovescia rompono la fiducia.",
+      "Reciprocità: dare prima qualcosa di utile crea simpatia verso di te."
+     ],
+     "q": "Quale di questi tre principi ti influenza di più quando compri?",
+     "c": "Individua oggi un esempio di ogni principio e decidi se è stato usato onestamente."
+    },
+    "pt": {
+     "t": "Psicologia básica do marketing",
+     "g": "Perceber prova social, escassez e reciprocidade, usadas com ética.",
+     "p": [
+      "Prova social: confiamos no que escolhem pessoas como nós, como avaliações honestas.",
+      "A escassez só é honesta se for real; contagens decrescentes falsas quebram a confiança.",
+      "Reciprocidade: dar primeiro algo útil gera simpatia por ti."
+     ],
+     "q": "Qual destes três princípios mais te influencia quando compras?",
+     "c": "Deteta hoje um exemplo de cada princípio e decide se foi usado com honestidade."
+    },
+    "pt_BR": {
+     "t": "Psicologia básica do marketing",
+     "g": "Entender prova social, escassez e reciprocidade, usadas com ética.",
+     "p": [
+      "Prova social: confiamos no que pessoas como nós escolhem, como avaliações honestas.",
+      "A escassez só é honesta se for real; contagens regressivas falsas quebram a confiança.",
+      "Reciprocidade: dar algo útil primeiro gera simpatia por você."
+     ],
+     "q": "Qual desses três princípios mais influencia você quando compra?",
+     "c": "Identifique hoje um exemplo de cada princípio e decida se foi usado com honestidade."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ethical marketing",
+     "g": "Honesty, respect and transparency as the foundation of good marketing.",
+     "p": [
+      "Tell the truth, show what the product really does and admit its limits.",
+      "Respect people's time, attention, privacy and ability to say no.",
+      "Trust built honestly lasts far longer than a trick that works once."
+     ],
+     "q": "What would make you trust a brand more: honesty, openness or fairness?",
+     "c": "Write three rules your own marketing would never break."
+    },
+    "de": {
+     "t": "Ethisches Marketing",
+     "g": "Ehrlichkeit, Respekt und Transparenz als Fundament guten Marketings.",
+     "p": [
+      "Sag die Wahrheit, zeige, was das Produkt wirklich kann, und nenne seine Grenzen.",
+      "Respektiere Zeit, Aufmerksamkeit, Privatsphäre und das Recht, Nein zu sagen.",
+      "Ehrlich gewonnenes Vertrauen hält viel länger als ein Trick, der einmal wirkt."
+     ],
+     "q": "Was würde dein Vertrauen in eine Marke stärken: Ehrlichkeit, Offenheit oder Fairness?",
+     "c": "Schreibe drei Regeln auf, die dein eigenes Marketing nie brechen würde."
+    },
+    "es": {
+     "t": "Marketing ético",
+     "g": "Honestidad, respeto y transparencia como base del buen marketing.",
+     "p": [
+      "Di la verdad, muestra lo que el producto realmente hace y admite sus límites.",
+      "Respeta el tiempo, la atención, la privacidad y el derecho a decir que no.",
+      "La confianza ganada con honestidad dura mucho más que un truco que funciona una vez."
+     ],
+     "q": "¿Qué te haría confiar más en una marca: honestidad, apertura o justicia?",
+     "c": "Escribe tres reglas que tu propio marketing nunca rompería."
+    },
+    "fr": {
+     "t": "Le marketing éthique",
+     "g": "Honnêteté, respect et transparence comme base d'un bon marketing.",
+     "p": [
+      "Dis la vérité, montre ce que le produit fait vraiment et reconnais ses limites.",
+      "Respecte le temps, l'attention, la vie privée et le droit de dire non.",
+      "Une confiance gagnée honnêtement dure bien plus qu'une astuce qui marche une fois."
+     ],
+     "q": "Qu'est-ce qui te ferait davantage confiance à une marque : honnêteté, ouverture ou équité ?",
+     "c": "Écris trois règles que ton propre marketing ne briserait jamais."
+    },
+    "it": {
+     "t": "Marketing etico",
+     "g": "Onestà, rispetto e trasparenza come base del buon marketing.",
+     "p": [
+      "Di' la verità, mostra cosa fa davvero il prodotto e ammetti i suoi limiti.",
+      "Rispetta tempo, attenzione, privacy e il diritto di dire no.",
+      "La fiducia guadagnata onestamente dura molto più di un trucco che funziona una volta."
+     ],
+     "q": "Cosa ti farebbe fidare di più di un marchio: onestà, apertura o equità?",
+     "c": "Scrivi tre regole che il tuo marketing non violerebbe mai."
+    },
+    "pt": {
+     "t": "Marketing ético",
+     "g": "Honestidade, respeito e transparência como base do bom marketing.",
+     "p": [
+      "Diz a verdade, mostra o que o produto realmente faz e admite os seus limites.",
+      "Respeita o tempo, a atenção, a privacidade e o direito de dizer não.",
+      "A confiança ganha com honestidade dura muito mais do que um truque que funciona uma vez."
+     ],
+     "q": "O que te faria confiar mais numa marca: honestidade, abertura ou justiça?",
+     "c": "Escreve três regras que o teu próprio marketing nunca quebraria."
+    },
+    "pt_BR": {
+     "t": "Marketing ético",
+     "g": "Honestidade, respeito e transparência como base do bom marketing.",
+     "p": [
+      "Diga a verdade, mostre o que o produto realmente faz e admita seus limites.",
+      "Respeite o tempo, a atenção, a privacidade e o direito de dizer não.",
+      "A confiança conquistada com honestidade dura muito mais que um truque que funciona uma vez."
+     ],
+     "q": "O que faria você confiar mais em uma marca: honestidade, abertura ou justiça?",
+     "c": "Escreva três regras que o seu próprio marketing nunca quebraria."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Famous classic campaigns",
+     "g": "What timeless campaigns teach about simple, strong ideas.",
+     "p": [
+      "Many lasting campaigns rest on one simple idea repeated in many ways.",
+      "They often tap a human truth, like belonging, courage, joy or family.",
+      "A clear, short line and consistent look make a campaign easy to remember."
+     ],
+     "q": "Which advertising line or campaign from your life still sticks with you?",
+     "c": "Pick a campaign you remember and sum up its idea in one short sentence."
+    },
+    "de": {
+     "t": "Berühmte klassische Kampagnen",
+     "g": "Was zeitlose Kampagnen über einfache, starke Ideen lehren.",
+     "p": [
+      "Viele langlebige Kampagnen beruhen auf einer einfachen Idee, vielfach variiert.",
+      "Oft greifen sie eine menschliche Wahrheit auf: Zugehörigkeit, Mut, Freude, Familie.",
+      "Ein klarer, kurzer Satz und ein konsequenter Look machen Kampagnen merkbar."
+     ],
+     "q": "Welcher Werbespruch oder welche Kampagne aus deinem Leben ist dir geblieben?",
+     "c": "Wähle eine Kampagne, an die du dich erinnerst, und fasse ihre Idee in einem kurzen Satz."
+    },
+    "es": {
+     "t": "Famosas campañas clásicas",
+     "g": "Qué enseñan las campañas atemporales sobre ideas simples y fuertes.",
+     "p": [
+      "Muchas campañas duraderas se basan en una idea simple repetida de muchas formas.",
+      "A menudo tocan una verdad humana: pertenencia, valentía, alegría, familia.",
+      "Una frase corta y clara y una imagen coherente hacen una campaña memorable."
+     ],
+     "q": "¿Qué eslogan o campaña de tu vida se te ha quedado grabado?",
+     "c": "Elige una campaña que recuerdes y resume su idea en una frase corta."
+    },
+    "fr": {
+     "t": "Grandes campagnes classiques",
+     "g": "Ce que les campagnes intemporelles enseignent sur les idées simples et fortes.",
+     "p": [
+      "Beaucoup de campagnes durables reposent sur une idée simple répétée de mille façons.",
+      "Elles touchent souvent une vérité humaine : appartenance, courage, joie, famille.",
+      "Une phrase courte et claire et un style constant rendent une campagne mémorable."
+     ],
+     "q": "Quelle accroche ou campagne de ta vie t'est restée en tête ?",
+     "c": "Choisis une campagne dont tu te souviens et résume son idée en une phrase courte."
+    },
+    "it": {
+     "t": "Celebri campagne classiche",
+     "g": "Cosa insegnano le campagne senza tempo sulle idee semplici e forti.",
+     "p": [
+      "Molte campagne durature poggiano su un'idea semplice ripetuta in molti modi.",
+      "Spesso toccano una verità umana: appartenenza, coraggio, gioia, famiglia.",
+      "Una frase breve e chiara e un aspetto coerente rendono una campagna memorabile."
+     ],
+     "q": "Quale slogan o campagna della tua vita ti è rimasto in mente?",
+     "c": "Scegli una campagna che ricordi e riassumi la sua idea in una frase breve."
+    },
+    "pt": {
+     "t": "Famosas campanhas clássicas",
+     "g": "O que as campanhas intemporais ensinam sobre ideias simples e fortes.",
+     "p": [
+      "Muitas campanhas duradouras assentam numa ideia simples repetida de muitas formas.",
+      "Muitas vezes tocam uma verdade humana: pertença, coragem, alegria, família.",
+      "Uma frase curta e clara e uma imagem coerente tornam a campanha memorável."
+     ],
+     "q": "Que slogan ou campanha da tua vida ainda te ficou na memória?",
+     "c": "Escolhe uma campanha de que te lembres e resume a ideia numa frase curta."
+    },
+    "pt_BR": {
+     "t": "Famosas campanhas clássicas",
+     "g": "O que as campanhas atemporais ensinam sobre ideias simples e fortes.",
+     "p": [
+      "Muitas campanhas duradouras se apoiam em uma ideia simples repetida de várias formas.",
+      "Elas costumam tocar uma verdade humana: pertencimento, coragem, alegria, família.",
+      "Uma frase curta e clara e um visual coerente tornam a campanha memorável."
+     ],
+     "q": "Que slogan ou campanha da sua vida ainda ficou na sua memória?",
+     "c": "Escolha uma campanha de que você se lembra e resuma a ideia em uma frase curta."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Marketing in different cultures",
+     "g": "How colours, humour and symbols are read differently worldwide.",
+     "p": [
+      "A colour or gesture that feels friendly in one place may mean something else elsewhere.",
+      "Humour, idioms and even slogans often fail when translated word for word.",
+      "Ask local people and test with the audience before you launch abroad."
+     ],
+     "q": "Have you seen a symbol or phrase that meant different things in two places?",
+     "c": "Choose one colour or symbol and research how two cultures read it."
+    },
+    "de": {
+     "t": "Marketing in verschiedenen Kulturen",
+     "g": "Wie Farben, Humor und Symbole weltweit unterschiedlich gelesen werden.",
+     "p": [
+      "Eine Farbe oder Geste, die hier freundlich wirkt, kann anderswo etwas anderes bedeuten.",
+      "Humor, Redewendungen und Slogans scheitern oft bei wörtlicher Übersetzung.",
+      "Frag Einheimische und teste mit der Zielgruppe, bevor du im Ausland startest."
+     ],
+     "q": "Hast du ein Symbol oder einen Satz erlebt, der an zwei Orten Verschiedenes bedeutete?",
+     "c": "Wähle eine Farbe oder ein Symbol und recherchiere, wie zwei Kulturen es lesen."
+    },
+    "es": {
+     "t": "Marketing en distintas culturas",
+     "g": "Cómo se leen de forma distinta colores, humor y símbolos en el mundo.",
+     "p": [
+      "Un color o gesto amistoso en un lugar puede significar otra cosa en otro.",
+      "El humor, los modismos e incluso los eslóganes suelen fallar traducidos palabra por palabra.",
+      "Pregunta a gente local y prueba con el público antes de lanzar en el extranjero."
+     ],
+     "q": "¿Has visto un símbolo o frase que significara cosas distintas en dos lugares?",
+     "c": "Elige un color o símbolo e investiga cómo lo leen dos culturas."
+    },
+    "fr": {
+     "t": "Le marketing selon les cultures",
+     "g": "Comment couleurs, humour et symboles se lisent différemment dans le monde.",
+     "p": [
+      "Une couleur ou un geste amical ici peut signifier autre chose ailleurs.",
+      "L'humour, les expressions et même les slogans échouent souvent traduits mot à mot.",
+      "Demande à des locaux et teste auprès du public avant de te lancer à l'étranger."
+     ],
+     "q": "As-tu vu un symbole ou une phrase qui voulait dire autre chose dans deux endroits ?",
+     "c": "Choisis une couleur ou un symbole et vois comment deux cultures le lisent."
+    },
+    "it": {
+     "t": "Il marketing nelle diverse culture",
+     "g": "Come colori, umorismo e simboli si leggono in modo diverso nel mondo.",
+     "p": [
+      "Un colore o gesto amichevole in un posto può significare altro altrove.",
+      "Umorismo, modi di dire e perfino slogan spesso falliscono tradotti parola per parola.",
+      "Chiedi a persone del posto e prova con il pubblico prima di lanciarti all'estero."
+     ],
+     "q": "Hai visto un simbolo o una frase con significati diversi in due luoghi?",
+     "c": "Scegli un colore o un simbolo e scopri come lo leggono due culture."
+    },
+    "pt": {
+     "t": "O marketing em diferentes culturas",
+     "g": "Como cores, humor e símbolos são lidos de forma diferente pelo mundo.",
+     "p": [
+      "Uma cor ou gesto simpático num lugar pode significar outra coisa noutro.",
+      "O humor, as expressões e até os slogans falham muitas vezes traduzidos à letra.",
+      "Pergunta a gente local e testa com o público antes de lançar no estrangeiro."
+     ],
+     "q": "Já viste um símbolo ou frase com significados diferentes em dois lugares?",
+     "c": "Escolhe uma cor ou símbolo e pesquisa como duas culturas o leem."
+    },
+    "pt_BR": {
+     "t": "Marketing em diferentes culturas",
+     "g": "Como cores, humor e símbolos são lidos de formas diferentes pelo mundo.",
+     "p": [
+      "Uma cor ou gesto simpático em um lugar pode significar outra coisa em outro.",
+      "Humor, expressões e até slogans costumam falhar traduzidos ao pé da letra.",
+      "Pergunte a gente local e teste com o público antes de lançar no exterior."
+     ],
+     "q": "Você já viu um símbolo ou frase com significados diferentes em dois lugares?",
+     "c": "Escolha uma cor ou símbolo e pesquise como duas culturas o leem."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first marketing map",
+     "g": "Sketch audience, value and channels for a product you like.",
+     "p": [
+      "A one-page map holds: who it is for, what value it gives, why it is different.",
+      "Add where you will meet them and how you will say it in a friendly way.",
+      "Simple and written down beats perfect and only in your head."
+     ],
+     "q": "Which product would you love to map, and who is it for?",
+     "c": "Draw your map on one page with five boxes: audience, value, difference, place, message."
+    },
+    "de": {
+     "t": "Deine erste Marketing-Landkarte",
+     "g": "Zielgruppe, Wert und Kanäle für ein Produkt skizzieren, das du magst.",
+     "p": [
+      "Eine Seite hält fest: für wen, welchen Wert, warum anders.",
+      "Ergänze, wo du die Menschen triffst und wie du es freundlich sagst.",
+      "Einfach und aufgeschrieben schlägt perfekt und nur im Kopf."
+     ],
+     "q": "Welches Produkt würdest du gern skizzieren und für wen ist es?",
+     "c": "Zeichne deine Karte auf einer Seite mit fünf Kästchen: Zielgruppe, Wert, Unterschied, Ort, Botschaft."
+    },
+    "es": {
+     "t": "Tu primer mapa de marketing",
+     "g": "Esbozar público, valor y canales para un producto que te guste.",
+     "p": [
+      "Un mapa de una página recoge: para quién es, qué valor da, por qué es diferente.",
+      "Añade dónde encontrarás a esas personas y cómo lo dirás de forma cercana.",
+      "Simple y por escrito vence a perfecto y solo en la cabeza."
+     ],
+     "q": "¿Qué producto te gustaría mapear y para quién es?",
+     "c": "Dibuja tu mapa en una página con cinco cajas: público, valor, diferencia, lugar, mensaje."
+    },
+    "fr": {
+     "t": "Ta première carte marketing",
+     "g": "Esquisser public, valeur et canaux pour un produit que tu aimes.",
+     "p": [
+      "Une carte d'une page contient : pour qui, quelle valeur, pourquoi différent.",
+      "Ajoute où tu rencontreras ces gens et comment tu le diras avec chaleur.",
+      "Simple et écrit vaut mieux que parfait et seulement dans ta tête."
+     ],
+     "q": "Quel produit aimerais-tu cartographier, et pour qui est-il ?",
+     "c": "Dessine ta carte sur une page avec cinq cases : public, valeur, différence, lieu, message."
+    },
+    "it": {
+     "t": "La tua prima mappa di marketing",
+     "g": "Abbozzare pubblico, valore e canali per un prodotto che ti piace.",
+     "p": [
+      "Una mappa di una pagina contiene: per chi è, che valore dà, perché è diverso.",
+      "Aggiungi dove incontrerai quelle persone e come lo dirai in modo cordiale.",
+      "Semplice e scritto batte perfetto e solo in testa."
+     ],
+     "q": "Quale prodotto ti piacerebbe mappare e per chi è?",
+     "c": "Disegna la tua mappa su una pagina con cinque caselle: pubblico, valore, differenza, luogo, messaggio."
+    },
+    "pt": {
+     "t": "O teu primeiro mapa de marketing",
+     "g": "Esboçar público, valor e canais para um produto de que gostes.",
+     "p": [
+      "Um mapa de uma página reúne: para quem é, que valor dá, porque é diferente.",
+      "Junta onde vais encontrar essas pessoas e como o dirás de forma simpática.",
+      "Simples e escrito vence perfeito e só na cabeça."
+     ],
+     "q": "Que produto gostarias de mapear e para quem é?",
+     "c": "Desenha o teu mapa numa página com cinco caixas: público, valor, diferença, local, mensagem."
+    },
+    "pt_BR": {
+     "t": "Seu primeiro mapa de marketing",
+     "g": "Esboçar público, valor e canais para um produto de que você gosta.",
+     "p": [
+      "Um mapa de uma página reúne: para quem é, que valor dá, por que é diferente.",
+      "Some onde você vai encontrar essas pessoas e como vai dizer de forma simpática.",
+      "Simples e escrito vence perfeito e só na cabeça."
+     ],
+     "q": "Que produto você gostaria de mapear e para quem é?",
+     "c": "Desenhe seu mapa em uma página com cinco caixas: público, valor, diferença, praça, mensagem."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: marketing foundations",
+     "g": "A friendly recap of the four Ps, audiences, positioning and the funnel.",
+     "p": [
+      "The four Ps, audience, positioning and the funnel work together as one system.",
+      "Start with real people and their needs; everything else follows from that.",
+      "Honesty and clarity are the thread through every step so far."
+     ],
+     "q": "Which idea from the last 29 days has changed how you see ads and shops?",
+     "c": "Pick a brand and quickly run it through: four Ps, audience, position, funnel."
+    },
+    "de": {
+     "t": "Rückblick: Marketing-Grundlagen",
+     "g": "Ein freundlicher Rückblick auf die vier Ps, Zielgruppen, Positionierung und Trichter.",
+     "p": [
+      "Die vier Ps, Zielgruppe, Positionierung und Trichter wirken als ein System zusammen.",
+      "Beginne bei echten Menschen und ihren Bedürfnissen; alles andere folgt daraus.",
+      "Ehrlichkeit und Klarheit sind der rote Faden durch alle bisherigen Schritte."
+     ],
+     "q": "Welche Idee der letzten 29 Tage hat verändert, wie du Werbung und Läden siehst?",
+     "c": "Wähle eine Marke und prüfe schnell: vier Ps, Zielgruppe, Position, Trichter."
+    },
+    "es": {
+     "t": "Repaso: fundamentos del marketing",
+     "g": "Un repaso amable de las cuatro P, los públicos, el posicionamiento y el embudo.",
+     "p": [
+      "Las cuatro P, el público, el posicionamiento y el embudo funcionan como un sistema.",
+      "Empieza por personas reales y sus necesidades; todo lo demás se deriva de ahí.",
+      "La honestidad y la claridad son el hilo de todos los pasos hasta ahora."
+     ],
+     "q": "¿Qué idea de los últimos 29 días ha cambiado cómo ves anuncios y tiendas?",
+     "c": "Elige una marca y repásala rápido: cuatro P, público, posición, embudo."
+    },
+    "fr": {
+     "t": "Révision : les bases du marketing",
+     "g": "Un récapitulatif amical des quatre P, des publics, du positionnement et de l'entonnoir.",
+     "p": [
+      "Les quatre P, le public, le positionnement et l'entonnoir forment un seul système.",
+      "Pars de vraies personnes et de leurs besoins ; tout le reste en découle.",
+      "L'honnêteté et la clarté sont le fil conducteur de toutes les étapes jusqu'ici."
+     ],
+     "q": "Quelle idée des 29 derniers jours a changé ton regard sur les pubs et les boutiques ?",
+     "c": "Choisis une marque et passe-la en revue vite : quatre P, public, position, entonnoir."
+    },
+    "it": {
+     "t": "Ripasso: le basi del marketing",
+     "g": "Un ripasso amichevole di quattro P, pubblici, posizionamento e imbuto.",
+     "p": [
+      "Le quattro P, il pubblico, il posizionamento e l'imbuto funzionano come un sistema.",
+      "Parti da persone reali e dai loro bisogni; tutto il resto ne deriva.",
+      "Onestà e chiarezza sono il filo conduttore di tutti i passi finora."
+     ],
+     "q": "Quale idea degli ultimi 29 giorni ha cambiato il tuo sguardo su pubblicità e negozi?",
+     "c": "Scegli un marchio e passalo in rassegna: quattro P, pubblico, posizione, imbuto."
+    },
+    "pt": {
+     "t": "Revisão: fundamentos do marketing",
+     "g": "Uma revisão amigável dos quatro Ps, públicos, posicionamento e funil.",
+     "p": [
+      "Os quatro Ps, o público, o posicionamento e o funil funcionam como um sistema.",
+      "Começa por pessoas reais e as suas necessidades; tudo o resto decorre daí.",
+      "Honestidade e clareza são o fio condutor de todos os passos até aqui."
+     ],
+     "q": "Que ideia dos últimos 29 dias mudou a forma como vês anúncios e lojas?",
+     "c": "Escolhe uma marca e passa-a em revista: quatro Ps, público, posição, funil."
+    },
+    "pt_BR": {
+     "t": "Revisão: fundamentos do marketing",
+     "g": "Uma revisão amigável dos quatro Ps, públicos, posicionamento e funil.",
+     "p": [
+      "Os quatro Ps, o público, o posicionamento e o funil funcionam como um sistema.",
+      "Comece por pessoas reais e suas necessidades; todo o resto decorre daí.",
+      "Honestidade e clareza são o fio condutor de todos os passos até aqui."
+     ],
+     "q": "Que ideia dos últimos 29 dias mudou o jeito como você vê anúncios e lojas?",
+     "c": "Escolha uma marca e passe por: quatro Ps, público, posição, funil."
+    }
+   }
+  }
+ ]
+}

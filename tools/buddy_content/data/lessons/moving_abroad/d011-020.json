@@ -1,0 +1,835 @@
+{
+ "topic": "moving_abroad",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first words",
+     "g": "Learn greetings, thank you and please before you even leave.",
+     "p": [
+      "Hello, goodbye, please, thank you and sorry are the five words that earn the most smiles.",
+      "Listen to native speakers online so you hear the rhythm, not just the spelling.",
+      "Locals often appreciate an imperfect try more than perfect silence."
+     ],
+     "q": "Which greeting will you learn first in your new language?",
+     "c": "Learn to say hello and thank you and say them aloud three times."
+    },
+    "de": {
+     "t": "Deine ersten Wörter",
+     "g": "Lerne Begrüßung, Danke und Bitte, bevor du überhaupt abreist.",
+     "p": [
+      "Hallo, Tschüss, Bitte, Danke und Entschuldigung sind die fünf Wörter, die die meisten Lächeln bringen.",
+      "Hör Muttersprachlern online zu, damit du den Klang hörst und nicht nur die Schreibweise.",
+      "Einheimische schätzen einen unperfekten Versuch oft mehr als perfektes Schweigen."
+     ],
+     "q": "Welche Begrüßung lernst du in deiner neuen Sprache zuerst?",
+     "c": "Lerne Hallo und Danke und sag beides dreimal laut."
+    },
+    "es": {
+     "t": "Tus primeras palabras",
+     "g": "Aprende saludos, gracias y por favor antes incluso de marcharte.",
+     "p": [
+      "Hola, adiós, por favor, gracias y perdón son las cinco palabras que más sonrisas consiguen.",
+      "Escucha a hablantes nativos en internet para captar el ritmo, no solo la escritura.",
+      "La gente local suele valorar un intento imperfecto más que un silencio perfecto."
+     ],
+     "q": "¿Qué saludo aprenderás primero en tu nuevo idioma?",
+     "c": "Aprende a decir hola y gracias y repítelos en voz alta tres veces."
+    },
+    "fr": {
+     "t": "Tes premiers mots",
+     "g": "Apprends les salutations, merci et s'il te plaît avant même de partir.",
+     "p": [
+      "Bonjour, au revoir, s'il te plaît, merci et pardon sont les cinq mots qui font le plus sourire.",
+      "Écoute des locuteurs natifs en ligne pour entendre le rythme, pas seulement l'orthographe.",
+      "Les habitants apprécient souvent un essai imparfait plus qu'un silence parfait."
+     ],
+     "q": "Quelle salutation vas-tu apprendre en premier dans ta nouvelle langue ?",
+     "c": "Apprends à dire bonjour et merci et répète-les à voix haute trois fois."
+    },
+    "it": {
+     "t": "Le tue prime parole",
+     "g": "Impara saluti, grazie e per favore prima ancora di partire.",
+     "p": [
+      "Ciao, arrivederci, per favore, grazie e scusa sono le cinque parole che fanno sorridere di più.",
+      "Ascolta madrelingua online per sentire il ritmo, non solo l'ortografia.",
+      "I locali spesso apprezzano un tentativo imperfetto più di un silenzio perfetto."
+     ],
+     "q": "Quale saluto imparerai per primo nella tua nuova lingua?",
+     "c": "Impara a dire buongiorno e grazie e ripetili ad alta voce tre volte."
+    },
+    "pt": {
+     "t": "As tuas primeiras palavras",
+     "g": "Aprende cumprimentos, obrigado e por favor antes mesmo de partires.",
+     "p": [
+      "Olá, adeus, por favor, obrigado e desculpa são as cinco palavras que mais sorrisos conquistam.",
+      "Ouve falantes nativos online para captares o ritmo, e não só a escrita.",
+      "Os locais valorizam muitas vezes uma tentativa imperfeita mais do que um silêncio perfeito."
+     ],
+     "q": "Que cumprimento vais aprender primeiro na tua nova língua?",
+     "c": "Aprende a dizer olá e obrigado e repete-os em voz alta três vezes."
+    },
+    "pt_BR": {
+     "t": "Suas primeiras palavras",
+     "g": "Aprenda cumprimentos, obrigado e por favor antes mesmo de partir.",
+     "p": [
+      "Olá, tchau, por favor, obrigado e desculpa são as cinco palavras que mais conquistam sorrisos.",
+      "Ouça falantes nativos online para captar o ritmo, e não só a escrita.",
+      "Os moradores muitas vezes valorizam uma tentativa imperfeita mais que um silêncio perfeito."
+     ],
+     "q": "Que cumprimento você vai aprender primeiro no seu novo idioma?",
+     "c": "Aprenda a dizer olá e obrigado e repita em voz alta três vezes."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Culture at a glance",
+     "g": "Learn the basics of customs, values and everyday etiquette.",
+     "p": [
+      "Small habits differ: greetings, punctuality, personal space and how direct people are.",
+      "Observe before judging. Different does not mean wrong, just unfamiliar.",
+      "Ask a local about one custom you do not understand. People love explaining."
+     ],
+     "q": "Which cultural difference are you most curious about?",
+     "c": "Look up how people greet each other in your destination."
+    },
+    "de": {
+     "t": "Kultur auf einen Blick",
+     "g": "Lerne die Grundlagen von Bräuchen, Werten und Alltagsetikette kennen.",
+     "p": [
+      "Kleine Gewohnheiten unterscheiden sich: Begrüßung, Pünktlichkeit, Abstand und Direktheit.",
+      "Beobachte, bevor du urteilst. Anders heißt nicht falsch, nur ungewohnt.",
+      "Frag Einheimische nach einem Brauch, den du nicht verstehst. Menschen erklären gern."
+     ],
+     "q": "Welcher kulturelle Unterschied macht dich am neugierigsten?",
+     "c": "Recherchiere, wie sich die Menschen in deinem Zielland begrüßen."
+    },
+    "es": {
+     "t": "La cultura de un vistazo",
+     "g": "Aprende lo básico sobre costumbres, valores y etiqueta cotidiana.",
+     "p": [
+      "Los pequeños hábitos cambian: saludos, puntualidad, espacio personal y franqueza.",
+      "Observa antes de juzgar. Diferente no significa mal, solo desconocido.",
+      "Pregunta a alguien local por una costumbre que no entiendas. A la gente le gusta explicar."
+     ],
+     "q": "¿Qué diferencia cultural te da más curiosidad?",
+     "c": "Busca cómo se saluda la gente en tu destino."
+    },
+    "fr": {
+     "t": "La culture en un coup d'oeil",
+     "g": "Apprends les bases des coutumes, des valeurs et de l'étiquette au quotidien.",
+     "p": [
+      "Les petites habitudes varient : salutations, ponctualité, espace personnel et franchise.",
+      "Observe avant de juger. Différent ne veut pas dire mauvais, juste inhabituel.",
+      "Demande à un habitant une coutume que tu ne comprends pas. Les gens adorent expliquer."
+     ],
+     "q": "Quelle différence culturelle te rend le plus curieux ?",
+     "c": "Renseigne-toi sur la façon dont les gens se saluent dans ta destination."
+    },
+    "it": {
+     "t": "La cultura in breve",
+     "g": "Impara le basi di usanze, valori e galateo quotidiano.",
+     "p": [
+      "Le piccole abitudini cambiano: saluti, puntualità, spazio personale e franchezza.",
+      "Osserva prima di giudicare. Diverso non significa sbagliato, solo non familiare.",
+      "Chiedi a un locale un'usanza che non capisci. Alla gente piace spiegare."
+     ],
+     "q": "Quale differenza culturale ti incuriosisce di più?",
+     "c": "Scopri come si salutano le persone nella tua destinazione."
+    },
+    "pt": {
+     "t": "A cultura num relance",
+     "g": "Aprende o essencial sobre costumes, valores e etiqueta do dia a dia.",
+     "p": [
+      "Os pequenos hábitos mudam: cumprimentos, pontualidade, espaço pessoal e franqueza.",
+      "Observa antes de julgar. Diferente não é errado, é apenas desconhecido.",
+      "Pergunta a um local sobre um costume que não percebas. As pessoas gostam de explicar."
+     ],
+     "q": "Que diferença cultural te deixa mais curioso?",
+     "c": "Descobre como as pessoas se cumprimentam no teu destino."
+    },
+    "pt_BR": {
+     "t": "A cultura num relance",
+     "g": "Aprenda o básico sobre costumes, valores e etiqueta do dia a dia.",
+     "p": [
+      "Os pequenos hábitos mudam: cumprimentos, pontualidade, espaço pessoal e franqueza.",
+      "Observe antes de julgar. Diferente não é errado, é apenas desconhecido.",
+      "Pergunte a um morador sobre um costume que você não entende. As pessoas gostam de explicar."
+     ],
+     "q": "Qual diferença cultural deixa você mais curioso?",
+     "c": "Descubra como as pessoas se cumprimentam no seu destino."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food culture preview",
+     "g": "Discover typical dishes, meal times and eating habits.",
+     "p": [
+      "Meal times vary: some places eat dinner at six, others close to ten.",
+      "Try cooking one traditional dish from your destination at home.",
+      "Food is often the friendliest doorway into a culture and into conversations."
+     ],
+     "q": "Which dish from your destination would you most like to try?",
+     "c": "Cook or order one dish from your destination and note what surprised you."
+    },
+    "de": {
+     "t": "Esskultur im Vorgeschmack",
+     "g": "Entdecke typische Gerichte, Essenszeiten und Essgewohnheiten.",
+     "p": [
+      "Essenszeiten unterscheiden sich: Manchmal gibt es Abendessen um sechs, anderswo erst gegen zehn.",
+      "Koch zu Hause ein traditionelles Gericht aus deinem Zielland.",
+      "Essen ist oft der freundlichste Zugang zu einer Kultur und zu Gesprächen."
+     ],
+     "q": "Welches Gericht aus deinem Zielland möchtest du am liebsten probieren?",
+     "c": "Koch oder bestell ein Gericht aus deinem Zielland und notiere, was dich überrascht hat."
+    },
+    "es": {
+     "t": "Un anticipo de la cultura gastronómica",
+     "g": "Descubre platos típicos, horarios de comida y hábitos al comer.",
+     "p": [
+      "Los horarios varían: en unos sitios se cena a las seis y en otros casi a las diez.",
+      "Prueba a cocinar en casa un plato tradicional de tu destino.",
+      "La comida suele ser la puerta más amable a una cultura y a las conversaciones."
+     ],
+     "q": "¿Qué plato de tu destino te gustaría probar más?",
+     "c": "Cocina o pide un plato de tu destino y anota qué te sorprendió."
+    },
+    "fr": {
+     "t": "Aperçu de la culture culinaire",
+     "g": "Découvre les plats typiques, les horaires des repas et les habitudes à table.",
+     "p": [
+      "Les horaires varient : ici on dîne à dix-huit heures, ailleurs presque à vingt-deux heures.",
+      "Essaie de cuisiner chez toi un plat traditionnel de ta destination.",
+      "La cuisine est souvent la porte d'entrée la plus chaleureuse vers une culture et des conversations."
+     ],
+     "q": "Quel plat de ta destination aimerais-tu goûter le plus ?",
+     "c": "Cuisine ou commande un plat de ta destination et note ce qui t'a surpris."
+    },
+    "it": {
+     "t": "Assaggio di cultura gastronomica",
+     "g": "Scopri piatti tipici, orari dei pasti e abitudini a tavola.",
+     "p": [
+      "Gli orari variano: in alcuni posti si cena alle sei, in altri quasi alle dieci.",
+      "Prova a cucinare a casa un piatto tradizionale della tua destinazione.",
+      "Il cibo è spesso la porta più amichevole verso una cultura e verso le conversazioni."
+     ],
+     "q": "Quale piatto della tua destinazione vorresti assaggiare di più?",
+     "c": "Cucina o ordina un piatto della tua destinazione e annota cosa ti ha sorpreso."
+    },
+    "pt": {
+     "t": "Uma amostra da cultura gastronómica",
+     "g": "Descobre pratos típicos, horários de refeições e hábitos à mesa.",
+     "p": [
+      "Os horários variam: em alguns sítios janta-se às seis, noutros quase às dez.",
+      "Experimenta cozinhar em casa um prato tradicional do teu destino.",
+      "A comida é muitas vezes a porta mais simpática para uma cultura e para conversas."
+     ],
+     "q": "Que prato do teu destino gostavas mais de provar?",
+     "c": "Cozinha ou pede um prato do teu destino e anota o que te surpreendeu."
+    },
+    "pt_BR": {
+     "t": "Uma prévia da cultura gastronômica",
+     "g": "Descubra pratos típicos, horários de refeições e hábitos à mesa.",
+     "p": [
+      "Os horários variam: em alguns lugares se janta às seis, em outros quase às dez.",
+      "Experimente cozinhar em casa um prato tradicional do seu destino.",
+      "A comida costuma ser a porta mais simpática para uma cultura e para conversas."
+     ],
+     "q": "Que prato do seu destino você mais gostaria de provar?",
+     "c": "Cozinhe ou peça um prato do seu destino e anote o que surpreendeu você."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Talking to people who moved there",
+     "g": "Learn from people who already live in your chosen country.",
+     "p": [
+      "People who moved before you know the real small details no guidebook has.",
+      "Find communities online or in your city of people from or in your destination.",
+      "Ask open questions: what surprised you, what helped, what would you do differently?"
+     ],
+     "q": "Do you know anyone who lives in your destination country?",
+     "c": "Send one friendly message to someone who lives there and ask one question."
+    },
+    "de": {
+     "t": "Mit Menschen sprechen, die schon dort leben",
+     "g": "Lerne von Menschen, die bereits in deinem Wunschland leben.",
+     "p": [
+      "Wer vor dir umgezogen ist, kennt die kleinen echten Details, die in keinem Reiseführer stehen.",
+      "Finde Gruppen online oder in deiner Stadt mit Menschen aus oder in deinem Zielland.",
+      "Stell offene Fragen: Was hat dich überrascht, was hat geholfen, was würdest du anders machen?"
+     ],
+     "q": "Kennst du jemanden, der in deinem Zielland lebt?",
+     "c": "Schick eine freundliche Nachricht an jemanden dort und stell eine Frage."
+    },
+    "es": {
+     "t": "Hablar con quienes ya se mudaron",
+     "g": "Aprende de personas que ya viven en el país que has elegido.",
+     "p": [
+      "Quien se mudó antes que tú conoce los pequeños detalles reales que ninguna guía recoge.",
+      "Busca comunidades en línea o en tu ciudad de gente de tu destino o que viva allí.",
+      "Haz preguntas abiertas: qué te sorprendió, qué te ayudó, qué harías distinto."
+     ],
+     "q": "¿Conoces a alguien que viva en tu país de destino?",
+     "c": "Envía un mensaje amable a alguien que viva allí y hazle una pregunta."
+    },
+    "fr": {
+     "t": "Parler à ceux qui sont déjà partis",
+     "g": "Apprends de personnes qui vivent déjà dans le pays que tu as choisi.",
+     "p": [
+      "Ceux qui sont partis avant toi connaissent les petits détails réels qu'aucun guide ne donne.",
+      "Trouve des communautés en ligne ou dans ta ville de personnes liées à ta destination.",
+      "Pose des questions ouvertes : ce qui t'a surpris, ce qui a aidé, ce que tu ferais autrement."
+     ],
+     "q": "Connais-tu quelqu'un qui vit dans ton pays de destination ?",
+     "c": "Envoie un message sympathique à quelqu'un qui vit là-bas et pose-lui une question."
+    },
+    "it": {
+     "t": "Parlare con chi si è già trasferito",
+     "g": "Impara da chi vive già nel Paese che hai scelto.",
+     "p": [
+      "Chi si è trasferito prima di te conosce i piccoli dettagli veri che nessuna guida riporta.",
+      "Trova comunità online o nella tua città di persone legate alla tua destinazione.",
+      "Fai domande aperte: cosa ti ha sorpreso, cosa ti ha aiutato, cosa faresti diversamente."
+     ],
+     "q": "Conosci qualcuno che vive nel tuo Paese di destinazione?",
+     "c": "Manda un messaggio gentile a qualcuno che vive lì e fagli una domanda."
+    },
+    "pt": {
+     "t": "Falar com quem já se mudou",
+     "g": "Aprende com quem já vive no país que escolheste.",
+     "p": [
+      "Quem se mudou antes de ti conhece os pequenos detalhes reais que nenhum guia traz.",
+      "Procura comunidades online ou na tua cidade de pessoas ligadas ao teu destino.",
+      "Faz perguntas abertas: o que te surpreendeu, o que ajudou, o que farias de outra forma."
+     ],
+     "q": "Conheces alguém que viva no teu país de destino?",
+     "c": "Envia uma mensagem simpática a alguém que viva lá e faz-lhe uma pergunta."
+    },
+    "pt_BR": {
+     "t": "Conversando com quem já se mudou",
+     "g": "Aprenda com quem já mora no país que você escolheu.",
+     "p": [
+      "Quem se mudou antes de você conhece os pequenos detalhes reais que nenhum guia traz.",
+      "Procure comunidades online ou na sua cidade de pessoas ligadas ao seu destino.",
+      "Faça perguntas abertas: o que surpreendeu, o que ajudou, o que faria diferente."
+     ],
+     "q": "Você conhece alguém que mora no seu país de destino?",
+     "c": "Mande uma mensagem simpática a alguém que mora lá e faça uma pergunta."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Visiting before moving",
+     "g": "Know what to look at if you can visit your future home first.",
+     "p": [
+      "A trial visit shows you transport, noise, shops and the feel of a neighbourhood.",
+      "Stay like a resident: shop at a supermarket, ride the bus and walk at different hours.",
+      "Notice how you feel on an ordinary day, not just at famous sights."
+     ],
+     "q": "Have you ever visited your destination, or will you before moving?",
+     "c": "Plan a visit checklist with five everyday things to observe."
+    },
+    "de": {
+     "t": "Vorher zu Besuch kommen",
+     "g": "Wisse, worauf du achten kannst, wenn du dein künftiges Zuhause vorab besuchen kannst.",
+     "p": [
+      "Ein Probebesuch zeigt dir Verkehr, Lärm, Geschäfte und das Gefühl eines Viertels.",
+      "Verhalte dich wie ein Bewohner: im Supermarkt einkaufen, Bus fahren, zu verschiedenen Zeiten spazieren.",
+      "Achte darauf, wie du dich an einem normalen Tag fühlst, nicht nur an berühmten Sehenswürdigkeiten."
+     ],
+     "q": "Warst du schon in deinem Zielland oder fährst du vor dem Umzug hin?",
+     "c": "Erstelle eine Checkliste mit fünf Alltagsdingen, die du beobachten willst."
+    },
+    "es": {
+     "t": "Visitar antes de mudarte",
+     "g": "Sabe en qué fijarte si puedes visitar tu futuro hogar antes.",
+     "p": [
+      "Una visita de prueba te muestra el transporte, el ruido, las tiendas y el ambiente de un barrio.",
+      "Vive como un residente: compra en el súper, usa el autobús y pasea a distintas horas.",
+      "Fíjate en cómo te sientes en un día normal, no solo ante los lugares famosos."
+     ],
+     "q": "¿Has visitado ya tu destino o lo harás antes de mudarte?",
+     "c": "Prepara una lista con cinco cosas cotidianas que quieras observar."
+    },
+    "fr": {
+     "t": "Visiter avant de partir",
+     "g": "Sache quoi observer si tu peux visiter ton futur chez-toi avant le départ.",
+     "p": [
+      "Une visite d'essai te montre les transports, le bruit, les commerces et l'ambiance d'un quartier.",
+      "Vis comme un habitant : fais tes courses au supermarché, prends le bus, marche à différentes heures.",
+      "Remarque ce que tu ressens un jour ordinaire, pas seulement devant les sites célèbres."
+     ],
+     "q": "As-tu déjà visité ta destination, ou le feras-tu avant de partir ?",
+     "c": "Prépare une liste de cinq choses du quotidien à observer."
+    },
+    "it": {
+     "t": "Visitare prima di trasferirti",
+     "g": "Scopri a cosa fare attenzione se puoi visitare la tua futura casa prima.",
+     "p": [
+      "Una visita di prova ti mostra trasporti, rumore, negozi e l'atmosfera di un quartiere.",
+      "Vivi da residente: fai la spesa al supermercato, prendi l'autobus, passeggia a orari diversi.",
+      "Nota come ti senti in un giorno normale, non solo davanti ai luoghi famosi."
+     ],
+     "q": "Hai già visitato la tua destinazione, o lo farai prima di partire?",
+     "c": "Prepara una lista con cinque cose quotidiane da osservare."
+    },
+    "pt": {
+     "t": "Visitar antes de mudares",
+     "g": "Sabe ao que prestar atenção se puderes visitar a tua futura casa antes.",
+     "p": [
+      "Uma visita de teste mostra-te transportes, ruído, lojas e o ambiente de um bairro.",
+      "Vive como um residente: faz compras no supermercado, apanha o autocarro, passeia a horas diferentes.",
+      "Repara em como te sentes num dia normal, e não só nos locais famosos."
+     ],
+     "q": "Já visitaste o teu destino, ou vais fazê-lo antes de mudares?",
+     "c": "Prepara uma lista com cinco coisas do dia a dia para observar."
+    },
+    "pt_BR": {
+     "t": "Visitando antes de se mudar",
+     "g": "Saiba o que observar se puder visitar sua futura casa antes.",
+     "p": [
+      "Uma visita de teste mostra transporte, barulho, lojas e o clima de um bairro.",
+      "Viva como morador: faça compras no mercado, pegue o ônibus, caminhe em horários diferentes.",
+      "Note como você se sente num dia comum, e não só nos pontos famosos."
+     ],
+     "q": "Você já visitou seu destino, ou vai visitar antes de se mudar?",
+     "c": "Monte uma lista com cinco coisas do dia a dia para observar."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pros and cons list",
+     "g": "Weigh what you gain and what you will miss.",
+     "p": [
+      "Write both columns honestly: opportunities on one side, people and habits you will miss on the other.",
+      "Give each point a weight from 1 to 5, because not everything matters equally.",
+      "A list will not decide for you, but it shows what your heart already knows."
+     ],
+     "q": "Which item on your list weighs the most for you?",
+     "c": "Write your pros and cons and circle the three heaviest items."
+    },
+    "de": {
+     "t": "Pro-und-Kontra-Liste",
+     "g": "Wäge ab, was du gewinnst und was du vermissen wirst.",
+     "p": [
+      "Schreib beide Spalten ehrlich auf: Chancen auf der einen Seite, Menschen und Gewohnheiten, die du vermissen wirst, auf der anderen.",
+      "Gib jedem Punkt ein Gewicht von 1 bis 5, denn nicht alles wiegt gleich viel.",
+      "Eine Liste entscheidet nicht für dich, zeigt aber, was dein Herz schon weiß."
+     ],
+     "q": "Welcher Punkt auf deiner Liste wiegt für dich am schwersten?",
+     "c": "Schreib deine Pro- und Kontra-Punkte auf und kreise die drei schwersten ein."
+    },
+    "es": {
+     "t": "Lista de pros y contras",
+     "g": "Sopesa lo que ganas y lo que echarás de menos.",
+     "p": [
+      "Escribe las dos columnas con sinceridad: oportunidades en una, personas y hábitos que añorarás en la otra.",
+      "Da a cada punto un peso del 1 al 5, porque no todo importa igual.",
+      "Una lista no decide por ti, pero muestra lo que tu corazón ya sabe."
+     ],
+     "q": "¿Qué punto de tu lista pesa más para ti?",
+     "c": "Escribe tus pros y contras y rodea los tres que más pesan."
+    },
+    "fr": {
+     "t": "Liste des pour et des contre",
+     "g": "Pèse ce que tu gagnes et ce qui te manquera.",
+     "p": [
+      "Écris honnêtement les deux colonnes : les opportunités d'un côté, les personnes et habitudes qui te manqueront de l'autre.",
+      "Donne à chaque point un poids de 1 à 5, car tout n'a pas la même importance.",
+      "Une liste ne décide pas à ta place, mais elle montre ce que ton coeur sait déjà."
+     ],
+     "q": "Quel élément de ta liste pèse le plus pour toi ?",
+     "c": "Écris tes pour et tes contre et entoure les trois plus lourds."
+    },
+    "it": {
+     "t": "Lista pro e contro",
+     "g": "Valuta cosa guadagni e cosa ti mancherà.",
+     "p": [
+      "Scrivi onestamente le due colonne: le opportunità da una parte, le persone e le abitudini che ti mancheranno dall'altra.",
+      "Dai a ogni punto un peso da 1 a 5, perché non tutto conta allo stesso modo.",
+      "Una lista non decide per te, ma mostra ciò che il tuo cuore già sa."
+     ],
+     "q": "Quale voce della tua lista pesa di più per te?",
+     "c": "Scrivi pro e contro e cerchia le tre voci più pesanti."
+    },
+    "pt": {
+     "t": "Lista de prós e contras",
+     "g": "Pondera o que ganhas e o que vais sentir falta.",
+     "p": [
+      "Escreve as duas colunas com sinceridade: oportunidades de um lado, pessoas e hábitos de que terás saudades do outro.",
+      "Dá a cada ponto um peso de 1 a 5, porque nem tudo importa por igual.",
+      "Uma lista não decide por ti, mas mostra o que o teu coração já sabe."
+     ],
+     "q": "Que ponto da tua lista pesa mais para ti?",
+     "c": "Escreve os teus prós e contras e circunda os três mais pesados."
+    },
+    "pt_BR": {
+     "t": "Lista de prós e contras",
+     "g": "Pondere o que você ganha e do que vai sentir falta.",
+     "p": [
+      "Escreva as duas colunas com sinceridade: oportunidades de um lado, pessoas e hábitos de que vai sentir saudade do outro.",
+      "Dê a cada ponto um peso de 1 a 5, porque nem tudo importa igual.",
+      "Uma lista não decide por você, mas mostra o que seu coração já sabe."
+     ],
+     "q": "Qual item da sua lista pesa mais para você?",
+     "c": "Escreva seus prós e contras e circule os três mais pesados."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Talking with your loved ones",
+     "g": "Share your plans with family and friends kindly and clearly.",
+     "p": [
+      "Choose a calm moment and start with how you feel, not only what you decided.",
+      "Listen to their worries. They often come from love, not from doubt about you.",
+      "Offer a picture of how you will stay in touch, such as visits and calls."
+     ],
+     "q": "Who will be hardest to tell about your plans?",
+     "c": "Plan what you will say to one person and when you will say it."
+    },
+    "de": {
+     "t": "Mit deinen Liebsten sprechen",
+     "g": "Teile deine Pläne freundlich und klar mit Familie und Freunden.",
+     "p": [
+      "Wähle einen ruhigen Moment und beginn damit, wie du dich fühlst, nicht nur mit dem, was du entschieden hast.",
+      "Hör dir ihre Sorgen an. Sie kommen oft aus Liebe, nicht aus Zweifel an dir.",
+      "Zeig, wie ihr in Kontakt bleiben werdet, etwa durch Besuche und Anrufe."
+     ],
+     "q": "Wem fällt es dir am schwersten, von deinen Plänen zu erzählen?",
+     "c": "Überlege, was du einer Person sagen willst und wann."
+    },
+    "es": {
+     "t": "Hablar con tus seres queridos",
+     "g": "Comparte tus planes con familia y amigos con cariño y claridad.",
+     "p": [
+      "Elige un momento tranquilo y empieza por cómo te sientes, no solo por lo que has decidido.",
+      "Escucha sus preocupaciones. Suelen nacer del cariño, no de dudar de ti.",
+      "Ofrece una imagen de cómo os mantendréis en contacto, con visitas y llamadas."
+     ],
+     "q": "¿A quién te costará más contarle tus planes?",
+     "c": "Prepara qué le dirás a una persona y cuándo lo harás."
+    },
+    "fr": {
+     "t": "Parler à tes proches",
+     "g": "Partage tes projets avec ta famille et tes amis avec douceur et clarté.",
+     "p": [
+      "Choisis un moment calme et commence par ce que tu ressens, pas seulement par ce que tu as décidé.",
+      "Écoute leurs inquiétudes. Elles viennent souvent de l'affection, pas d'un doute sur toi.",
+      "Montre comment vous resterez en contact, avec des visites et des appels."
+     ],
+     "q": "À qui sera-t-il le plus difficile d'annoncer tes projets ?",
+     "c": "Prépare ce que tu diras à une personne et quand tu le diras."
+    },
+    "it": {
+     "t": "Parlarne con i tuoi cari",
+     "g": "Condividi i tuoi piani con familiari e amici con gentilezza e chiarezza.",
+     "p": [
+      "Scegli un momento tranquillo e parti da come ti senti, non solo da ciò che hai deciso.",
+      "Ascolta le loro preoccupazioni. Spesso nascono dall'affetto, non dal dubitare di te.",
+      "Mostra come resterete in contatto, con visite e chiamate."
+     ],
+     "q": "A chi sarà più difficile raccontare i tuoi piani?",
+     "c": "Prepara cosa dirai a una persona e quando glielo dirai."
+    },
+    "pt": {
+     "t": "Falar com quem gostas",
+     "g": "Partilha os teus planos com família e amigos com carinho e clareza.",
+     "p": [
+      "Escolhe um momento calmo e começa por como te sentes, e não só pelo que decidiste.",
+      "Ouve as preocupações deles. Muitas vezes nascem do afeto, não de duvidarem de ti.",
+      "Mostra como vão manter o contacto, com visitas e chamadas."
+     ],
+     "q": "A quem vai ser mais difícil contar os teus planos?",
+     "c": "Prepara o que vais dizer a uma pessoa e quando o vais fazer."
+    },
+    "pt_BR": {
+     "t": "Conversando com quem você ama",
+     "g": "Compartilhe seus planos com família e amigos com carinho e clareza.",
+     "p": [
+      "Escolha um momento calmo e comece por como você se sente, e não só pelo que decidiu.",
+      "Escute as preocupações deles. Muitas vezes nascem do carinho, não de duvidarem de você.",
+      "Mostre como vocês vão manter contato, com visitas e chamadas."
+     ],
+     "q": "Para quem vai ser mais difícil contar seus planos?",
+     "c": "Prepare o que vai dizer a uma pessoa e quando vai dizer."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Moving alone or together",
+     "g": "Explore different experiences of moving solo, as a couple or as a family.",
+     "p": [
+      "Moving solo gives freedom and quick growth, but you build your circle from zero.",
+      "Moving with others brings support, yet everyone adapts at a different speed.",
+      "Whatever your case, talk openly about needs, fears and small daily routines."
+     ],
+     "q": "Would you move alone or with someone, and how does that feel?",
+     "c": "Write one thing you would need most from yourself or your travel partners."
+    },
+    "de": {
+     "t": "Allein oder gemeinsam umziehen",
+     "g": "Entdecke die unterschiedlichen Erfahrungen beim Umzug allein, als Paar oder als Familie.",
+     "p": [
+      "Allein umzuziehen schenkt Freiheit und schnelles Wachstum, aber du baust deinen Kreis bei null auf.",
+      "Mit anderen umzuziehen bringt Halt, doch jeder gewöhnt sich unterschiedlich schnell ein.",
+      "Sprich in jedem Fall offen über Bedürfnisse, Ängste und kleine Alltagsroutinen."
+     ],
+     "q": "Würdest du allein oder mit jemandem umziehen, und wie fühlt sich das an?",
+     "c": "Schreib auf, was du von dir oder deinen Mitreisenden am meisten brauchst."
+    },
+    "es": {
+     "t": "Mudarse solo o acompañado",
+     "g": "Explora las distintas experiencias de mudarse solo, en pareja o en familia.",
+     "p": [
+      "Mudarte solo da libertad y un crecimiento rápido, pero tu círculo se construye desde cero.",
+      "Mudarte acompañado da apoyo, aunque cada persona se adapta a su ritmo.",
+      "En cualquier caso, habla con franqueza de necesidades, miedos y pequeñas rutinas."
+     ],
+     "q": "¿Te mudarías solo o con alguien, y cómo te sientes con eso?",
+     "c": "Anota qué necesitarías más de ti mismo o de quienes viajan contigo."
+    },
+    "fr": {
+     "t": "Partir seul ou à plusieurs",
+     "g": "Explore les expériences d'un départ en solo, en couple ou en famille.",
+     "p": [
+      "Partir seul donne liberté et progrès rapides, mais tu construis ton cercle à partir de zéro.",
+      "Partir à plusieurs apporte du soutien, même si chacun s'adapte à son rythme.",
+      "Dans tous les cas, parlez ouvertement des besoins, des peurs et des petites routines."
+     ],
+     "q": "Partirais-tu seul ou avec quelqu'un, et qu'en ressens-tu ?",
+     "c": "Écris ce dont tu aurais le plus besoin, de toi-même ou de ceux qui partent avec toi."
+    },
+    "it": {
+     "t": "Trasferirsi da soli o insieme",
+     "g": "Esplora le diverse esperienze di chi si trasferisce da solo, in coppia o in famiglia.",
+     "p": [
+      "Trasferirsi da soli dà libertà e crescita rapida, ma il tuo cerchio nasce da zero.",
+      "Trasferirsi insieme dà sostegno, anche se ognuno si adatta ai propri tempi.",
+      "In ogni caso, parlate apertamente di bisogni, paure e piccole routine."
+     ],
+     "q": "Ti trasferiresti da solo o con qualcuno, e come ti senti?",
+     "c": "Scrivi di cosa avresti più bisogno da te stesso o da chi parte con te."
+    },
+    "pt": {
+     "t": "Mudar sozinho ou acompanhado",
+     "g": "Explora as diferentes experiências de mudar sozinho, a dois ou em família.",
+     "p": [
+      "Mudar sozinho dá liberdade e crescimento rápido, mas o teu círculo constrói-se do zero.",
+      "Mudar acompanhado traz apoio, embora cada um se adapte ao seu ritmo.",
+      "Seja qual for o caso, falem abertamente de necessidades, receios e pequenas rotinas."
+     ],
+     "q": "Mudavas sozinho ou com alguém, e como te sentes com isso?",
+     "c": "Escreve do que mais precisarias de ti ou de quem vai contigo."
+    },
+    "pt_BR": {
+     "t": "Mudar sozinho ou acompanhado",
+     "g": "Explore as diferentes experiências de se mudar sozinho, a dois ou em família.",
+     "p": [
+      "Mudar sozinho dá liberdade e crescimento rápido, mas seu círculo começa do zero.",
+      "Mudar acompanhado traz apoio, embora cada um se adapte no seu ritmo.",
+      "Seja qual for o caso, conversem abertamente sobre necessidades, receios e pequenas rotinas."
+     ],
+     "q": "Você se mudaria sozinho ou com alguém, e como se sente com isso?",
+     "c": "Escreva do que mais precisaria de si mesmo ou de quem vai com você."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your skills that travel",
+     "g": "Recognise the skills and experience that are useful anywhere.",
+     "p": [
+      "Problem solving, teamwork, kindness, digital skills and reliability are valued everywhere.",
+      "Think about how you helped others or solved a hard task in the past.",
+      "Skills can be shown in a simple list, ready when you meet new people."
+     ],
+     "q": "Which of your skills are you most proud of?",
+     "c": "Write down five skills and one short example for each."
+    },
+    "de": {
+     "t": "Deine Fähigkeiten für unterwegs",
+     "g": "Erkenne Fähigkeiten und Erfahrungen, die überall nützlich sind.",
+     "p": [
+      "Problemlösung, Teamarbeit, Freundlichkeit, digitale Kompetenz und Verlässlichkeit sind überall gefragt.",
+      "Denk daran, wie du anderen geholfen oder eine schwere Aufgabe gelöst hast.",
+      "Fähigkeiten lassen sich in einer einfachen Liste zeigen, bereit für neue Begegnungen."
+     ],
+     "q": "Auf welche deiner Fähigkeiten bist du am meisten stolz?",
+     "c": "Schreib fünf Fähigkeiten mit je einem kurzen Beispiel auf."
+    },
+    "es": {
+     "t": "Tus habilidades portátiles",
+     "g": "Reconoce las habilidades y la experiencia que sirven en cualquier lugar.",
+     "p": [
+      "Resolver problemas, trabajar en equipo, la amabilidad, lo digital y la fiabilidad se valoran en todas partes.",
+      "Piensa en cómo ayudaste a otros o resolviste una tarea difícil.",
+      "Las habilidades se pueden mostrar en una lista sencilla, lista para cuando conozcas gente."
+     ],
+     "q": "¿De qué habilidad tuya te sientes más orgulloso?",
+     "c": "Anota cinco habilidades con un ejemplo breve de cada una."
+    },
+    "fr": {
+     "t": "Tes compétences qui voyagent",
+     "g": "Reconnais les compétences et l'expérience utiles partout.",
+     "p": [
+      "Résoudre des problèmes, travailler en équipe, la gentillesse, le numérique et la fiabilité sont appréciés partout.",
+      "Pense à la façon dont tu as aidé les autres ou résolu une tâche difficile.",
+      "Tes compétences peuvent tenir dans une liste simple, prête pour les nouvelles rencontres."
+     ],
+     "q": "De quelle compétence es-tu le plus fier ?",
+     "c": "Note cinq compétences avec un court exemple pour chacune."
+    },
+    "it": {
+     "t": "Le tue competenze portatili",
+     "g": "Riconosci le competenze e l'esperienza utili ovunque.",
+     "p": [
+      "Risolvere problemi, lavorare in squadra, gentilezza, competenze digitali e affidabilità sono apprezzati ovunque.",
+      "Pensa a come hai aiutato gli altri o risolto un compito difficile.",
+      "Le competenze si possono mostrare in un elenco semplice, pronto per i nuovi incontri."
+     ],
+     "q": "Di quale tua competenza sei più orgoglioso?",
+     "c": "Scrivi cinque competenze con un breve esempio per ciascuna."
+    },
+    "pt": {
+     "t": "As tuas competências que viajam",
+     "g": "Reconhece as competências e a experiência úteis em qualquer lugar.",
+     "p": [
+      "Resolver problemas, trabalhar em equipa, simpatia, competências digitais e fiabilidade valem em todo o lado.",
+      "Pensa em como ajudaste outros ou resolveste uma tarefa difícil.",
+      "As competências podem ser mostradas numa lista simples, pronta para novos encontros."
+     ],
+     "q": "De que competência tua tens mais orgulho?",
+     "c": "Escreve cinco competências com um exemplo curto para cada uma."
+    },
+    "pt_BR": {
+     "t": "Suas habilidades que viajam",
+     "g": "Reconheça as habilidades e a experiência úteis em qualquer lugar.",
+     "p": [
+      "Resolver problemas, trabalhar em equipe, gentileza, habilidades digitais e confiabilidade valem em todo lugar.",
+      "Pense em como você ajudou outros ou resolveu uma tarefa difícil.",
+      "As habilidades podem ser mostradas numa lista simples, pronta para novos encontros."
+     ],
+     "q": "De qual habilidade sua você mais se orgulha?",
+     "c": "Escreva cinco habilidades com um exemplo curto para cada uma."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Work and study in general",
+     "g": "Understand that permits and rules vary and must be checked officially.",
+     "p": [
+      "Rules for working or studying abroad differ by country, nationality and situation.",
+      "This is general information only, not legal advice. Never rely on hearsay.",
+      "Check the official immigration site and, if needed, a qualified adviser."
+     ],
+     "q": "Do you plan to work, study or both in your new country?",
+     "c": "Find the official page on work or study rules for your destination and save it."
+    },
+    "de": {
+     "t": "Arbeit und Studium allgemein",
+     "g": "Verstehe, dass Genehmigungen und Regeln variieren und offiziell geprüft werden müssen.",
+     "p": [
+      "Die Regeln für Arbeit oder Studium im Ausland unterscheiden sich nach Land, Staatsangehörigkeit und Situation.",
+      "Das sind nur allgemeine Informationen, keine Rechtsberatung. Verlass dich nie auf Hörensagen.",
+      "Prüfe die offizielle Einwanderungsseite und bei Bedarf eine qualifizierte Beratung."
+     ],
+     "q": "Möchtest du in deinem neuen Land arbeiten, studieren oder beides?",
+     "c": "Finde die offizielle Seite zu Arbeits- oder Studienregeln deines Ziellandes und speichere sie."
+    },
+    "es": {
+     "t": "Trabajo y estudios en general",
+     "g": "Entiende que los permisos y las normas varían y deben comprobarse por vía oficial.",
+     "p": [
+      "Las normas para trabajar o estudiar fuera cambian según el país, la nacionalidad y la situación.",
+      "Esto es solo información general, no asesoramiento legal. Nunca te fíes del boca a boca.",
+      "Consulta la web oficial de inmigración y, si hace falta, a un profesional cualificado."
+     ],
+     "q": "¿Piensas trabajar, estudiar o ambas cosas en tu nuevo país?",
+     "c": "Encuentra la página oficial sobre normas de trabajo o estudio de tu destino y guárdala."
+    },
+    "fr": {
+     "t": "Travail et études en général",
+     "g": "Comprends que les permis et les règles varient et doivent être vérifiés officiellement.",
+     "p": [
+      "Les règles pour travailler ou étudier à l'étranger varient selon le pays, la nationalité et la situation.",
+      "Ce sont des informations générales, pas un conseil juridique. Ne te fie jamais aux on-dit.",
+      "Consulte le site officiel de l'immigration et, si besoin, un conseiller qualifié."
+     ],
+     "q": "Comptes-tu travailler, étudier ou les deux dans ton nouveau pays ?",
+     "c": "Trouve la page officielle sur les règles de travail ou d'études de ta destination et enregistre-la."
+    },
+    "it": {
+     "t": "Lavoro e studio in generale",
+     "g": "Capisci che permessi e regole variano e vanno verificati per via ufficiale.",
+     "p": [
+      "Le regole per lavorare o studiare all'estero cambiano per Paese, nazionalità e situazione.",
+      "Sono informazioni generali, non consulenza legale. Non fidarti mai del sentito dire.",
+      "Controlla il sito ufficiale dell'immigrazione e, se serve, un consulente qualificato."
+     ],
+     "q": "Pensi di lavorare, studiare o entrambe le cose nel tuo nuovo Paese?",
+     "c": "Trova la pagina ufficiale sulle regole di lavoro o studio della tua destinazione e salvala."
+    },
+    "pt": {
+     "t": "Trabalho e estudo em geral",
+     "g": "Percebe que as autorizações e regras variam e devem ser verificadas por via oficial.",
+     "p": [
+      "As regras para trabalhar ou estudar no estrangeiro mudam conforme o país, a nacionalidade e a situação.",
+      "Isto é apenas informação geral, não aconselhamento jurídico. Nunca confies no ouvir dizer.",
+      "Consulta o site oficial de imigração e, se preciso, um profissional qualificado."
+     ],
+     "q": "Pensas trabalhar, estudar ou ambos no teu novo país?",
+     "c": "Encontra a página oficial sobre regras de trabalho ou estudo do teu destino e guarda-a."
+    },
+    "pt_BR": {
+     "t": "Trabalho e estudo em geral",
+     "g": "Entenda que autorizações e regras variam e devem ser verificadas por via oficial.",
+     "p": [
+      "As regras para trabalhar ou estudar no exterior mudam conforme o país, a nacionalidade e a situação.",
+      "Isto é só informação geral, não aconselhamento jurídico. Nunca confie no ouvir dizer.",
+      "Consulte o site oficial de imigração e, se preciso, um profissional qualificado."
+     ],
+     "q": "Você pensa em trabalhar, estudar ou os dois no seu novo país?",
+     "c": "Encontre a página oficial sobre regras de trabalho ou estudo do seu destino e salve."
+    }
+   }
+  }
+ ]
+}

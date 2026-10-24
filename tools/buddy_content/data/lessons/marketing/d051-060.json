@@ -1,0 +1,835 @@
+{
+ "topic": "marketing",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Personal branding basics",
+     "g": "Present your own skills and values clearly and authentically.",
+     "p": [
+      "Your personal brand is what people say about you when you are not in the room.",
+      "Name what you do well, whom you help and what you care about.",
+      "Be consistent and honest: never claim skills you do not have."
+     ],
+     "q": "What are you known for among friends or colleagues?",
+     "c": "Write a three-sentence introduction: who you are, what you do, who you help."
+    },
+    "de": {
+     "t": "Grundlagen der Personal Brand",
+     "g": "Deine Fähigkeiten und Werte klar und authentisch präsentieren.",
+     "p": [
+      "Deine Personal Brand ist, was Menschen über dich sagen, wenn du nicht im Raum bist.",
+      "Benenne, was du gut kannst, wem du hilfst und was dir wichtig ist.",
+      "Sei konsequent und ehrlich: Behaupte nie Fähigkeiten, die du nicht hast."
+     ],
+     "q": "Wofür bist du bei Freunden oder Kollegen bekannt?",
+     "c": "Schreibe eine Vorstellung in drei Sätzen: wer du bist, was du tust, wem du hilfst."
+    },
+    "es": {
+     "t": "Fundamentos de la marca personal",
+     "g": "Presentar tus habilidades y valores con claridad y autenticidad.",
+     "p": [
+      "Tu marca personal es lo que dicen de ti cuando no estás presente.",
+      "Nombra lo que haces bien, a quién ayudas y qué te importa.",
+      "Sé coherente y honesto: nunca afirmes habilidades que no tienes."
+     ],
+     "q": "¿Por qué eres conocido entre amigos o compañeros?",
+     "c": "Escribe una presentación de tres frases: quién eres, qué haces, a quién ayudas."
+    },
+    "fr": {
+     "t": "Les bases de la marque personnelle",
+     "g": "Présenter tes compétences et valeurs avec clarté et authenticité.",
+     "p": [
+      "Ta marque personnelle, c'est ce que les gens disent de toi quand tu n'es pas là.",
+      "Nomme ce que tu fais bien, qui tu aides et ce qui compte pour toi.",
+      "Sois constant et honnête : ne prétends jamais des compétences que tu n'as pas."
+     ],
+     "q": "Pour quoi es-tu connu parmi tes amis ou collègues ?",
+     "c": "Écris une présentation en trois phrases : qui tu es, ce que tu fais, qui tu aides."
+    },
+    "it": {
+     "t": "Le basi del personal branding",
+     "g": "Presentare competenze e valori in modo chiaro e autentico.",
+     "p": [
+      "Il tuo personal brand è ciò che dicono di te quando non sei presente.",
+      "Indica cosa fai bene, chi aiuti e cosa ti sta a cuore.",
+      "Sii coerente e onesto: non dichiarare mai competenze che non hai."
+     ],
+     "q": "Per cosa sei conosciuto tra amici o colleghi?",
+     "c": "Scrivi una presentazione in tre frasi: chi sei, cosa fai, chi aiuti."
+    },
+    "pt": {
+     "t": "Fundamentos da marca pessoal",
+     "g": "Apresentar as tuas competências e valores com clareza e autenticidade.",
+     "p": [
+      "A tua marca pessoal é o que dizem de ti quando não estás presente.",
+      "Nomeia o que fazes bem, a quem ajudas e o que te importa.",
+      "Sê consistente e honesto: nunca afirmes competências que não tens."
+     ],
+     "q": "Pelo que és conhecido entre amigos ou colegas?",
+     "c": "Escreve uma apresentação em três frases: quem és, o que fazes, a quem ajudas."
+    },
+    "pt_BR": {
+     "t": "Fundamentos da marca pessoal",
+     "g": "Apresentar suas habilidades e valores com clareza e autenticidade.",
+     "p": [
+      "Sua marca pessoal é o que dizem de você quando você não está presente.",
+      "Nomeie o que você faz bem, a quem ajuda e o que importa para você.",
+      "Seja consistente e honesto: nunca afirme habilidades que você não tem."
+     ],
+     "q": "Pelo que você é conhecido entre amigos ou colegas?",
+     "c": "Escreva uma apresentação em três frases: quem você é, o que faz, a quem ajuda."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brand audits made simple",
+     "g": "Check how a brand looks and sounds across all touchpoints.",
+     "p": [
+      "An audit is a calm look at everything the brand shows the world.",
+      "Collect examples, lay them side by side and compare look, voice and promise.",
+      "Note what is consistent, what clashes and what is missing."
+     ],
+     "q": "Where would you expect to find inconsistencies in a brand you know?",
+     "c": "Gather five touchpoints of a brand, lay them out and score each for consistency."
+    },
+    "de": {
+     "t": "Marken-Audit einfach gemacht",
+     "g": "Prüfen, wie eine Marke an allen Touchpoints aussieht und klingt.",
+     "p": [
+      "Ein Audit ist ein ruhiger Blick auf alles, was die Marke der Welt zeigt.",
+      "Sammle Beispiele, lege sie nebeneinander und vergleiche Look, Stimme und Versprechen.",
+      "Notiere, was einheitlich ist, was nicht zusammenpasst und was fehlt."
+     ],
+     "q": "Wo vermutest du Unstimmigkeiten bei einer Marke, die du kennst?",
+     "c": "Sammle fünf Touchpoints einer Marke, lege sie aus und bewerte jeden auf Einheitlichkeit."
+    },
+    "es": {
+     "t": "Auditorías de marca sin complicaciones",
+     "g": "Revisar cómo se ve y suena una marca en todos sus puntos de contacto.",
+     "p": [
+      "Una auditoría es una mirada tranquila a todo lo que la marca muestra al mundo.",
+      "Reúne ejemplos, ponlos lado a lado y compara imagen, voz y promesa.",
+      "Anota qué es coherente, qué choca y qué falta."
+     ],
+     "q": "¿Dónde esperarías hallar incoherencias en una marca que conoces?",
+     "c": "Reúne cinco puntos de contacto de una marca, colócalos juntos y puntúa su coherencia."
+    },
+    "fr": {
+     "t": "L'audit de marque simplifié",
+     "g": "Vérifier l'allure et la voix d'une marque sur tous ses points de contact.",
+     "p": [
+      "Un audit est un regard calme sur tout ce que la marque montre au monde.",
+      "Rassemble des exemples, mets-les côte à côte et compare style, voix et promesse.",
+      "Note ce qui est cohérent, ce qui jure et ce qui manque."
+     ],
+     "q": "Où t'attendrais-tu à trouver des incohérences chez une marque que tu connais ?",
+     "c": "Rassemble cinq points de contact d'une marque, étale-les et note leur cohérence."
+    },
+    "it": {
+     "t": "Audit del marchio semplificato",
+     "g": "Verificare come appare e suona un marchio in tutti i punti di contatto.",
+     "p": [
+      "Un audit è uno sguardo calmo a tutto ciò che il marchio mostra al mondo.",
+      "Raccogli esempi, mettili uno accanto all'altro e confronta aspetto, voce e promessa.",
+      "Annota cosa è coerente, cosa stona e cosa manca."
+     ],
+     "q": "Dove ti aspetteresti incoerenze in un marchio che conosci?",
+     "c": "Raccogli cinque punti di contatto di un marchio, affiancali e valuta la coerenza di ciascuno."
+    },
+    "pt": {
+     "t": "Auditorias de marca sem complicação",
+     "g": "Verificar como uma marca parece e soa em todos os pontos de contacto.",
+     "p": [
+      "Uma auditoria é um olhar calmo a tudo o que a marca mostra ao mundo.",
+      "Reúne exemplos, põe-nos lado a lado e compara imagem, voz e promessa.",
+      "Anota o que é consistente, o que destoa e o que falta."
+     ],
+     "q": "Onde esperarias encontrar inconsistências numa marca que conheces?",
+     "c": "Reúne cinco pontos de contacto de uma marca, coloca-os lado a lado e avalia a consistência."
+    },
+    "pt_BR": {
+     "t": "Auditoria de marca sem complicação",
+     "g": "Verificar como uma marca parece e soa em todos os pontos de contato.",
+     "p": [
+      "Uma auditoria é um olhar calmo para tudo o que a marca mostra ao mundo.",
+      "Reúna exemplos, coloque-os lado a lado e compare visual, voz e promessa.",
+      "Anote o que é consistente, o que destoa e o que falta."
+     ],
+     "q": "Onde você esperaria encontrar inconsistências em uma marca que conhece?",
+     "c": "Reúna cinco pontos de contato de uma marca, coloque lado a lado e dê nota à consistência."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sketching a mood board",
+     "g": "Collect images, colours and words that capture a brand feeling.",
+     "p": [
+      "A mood board is a collage that shows the feeling you want, before final design.",
+      "Gather pictures, textures, colours and a few words that fit the personality.",
+      "Remove anything that does not belong until a clear mood remains."
+     ],
+     "q": "What images or colours would show the feeling of a brand you imagine?",
+     "c": "Make a mood board of eight items on paper or screen and write a one-line mood."
+    },
+    "de": {
+     "t": "Ein Moodboard skizzieren",
+     "g": "Bilder, Farben und Worte sammeln, die ein Markengefühl einfangen.",
+     "p": [
+      "Ein Moodboard ist eine Collage, die das gewünschte Gefühl vor dem finalen Design zeigt.",
+      "Sammle Bilder, Texturen, Farben und ein paar Worte, die zur Persönlichkeit passen.",
+      "Entferne alles, was nicht passt, bis eine klare Stimmung bleibt."
+     ],
+     "q": "Welche Bilder oder Farben würden das Gefühl einer Marke zeigen, die du dir vorstellst?",
+     "c": "Erstelle ein Moodboard aus acht Elementen auf Papier oder Bildschirm und schreibe die Stimmung in einer Zeile."
+    },
+    "es": {
+     "t": "Esbozar un moodboard",
+     "g": "Reunir imágenes, colores y palabras que capturen la sensación de una marca.",
+     "p": [
+      "Un moodboard es un collage que muestra la sensación deseada antes del diseño final.",
+      "Reúne fotos, texturas, colores y algunas palabras que encajen con la personalidad.",
+      "Quita lo que no pertenece hasta que quede un ambiente claro."
+     ],
+     "q": "¿Qué imágenes o colores mostrarían la sensación de una marca que imaginas?",
+     "c": "Haz un moodboard de ocho elementos en papel o pantalla y escribe el ambiente en una línea."
+    },
+    "fr": {
+     "t": "Esquisser un moodboard",
+     "g": "Rassembler images, couleurs et mots qui expriment le ressenti d'une marque.",
+     "p": [
+      "Un moodboard est un collage qui montre le ressenti voulu avant le design final.",
+      "Rassemble images, textures, couleurs et quelques mots qui collent à la personnalité.",
+      "Retire ce qui n'a pas sa place jusqu'à ce qu'une ambiance claire reste."
+     ],
+     "q": "Quelles images ou couleurs montreraient le ressenti d'une marque que tu imagines ?",
+     "c": "Fais un moodboard de huit éléments sur papier ou écran et écris l'ambiance en une ligne."
+    },
+    "it": {
+     "t": "Abbozzare un moodboard",
+     "g": "Raccogliere immagini, colori e parole che catturano la sensazione di un marchio.",
+     "p": [
+      "Un moodboard è un collage che mostra la sensazione voluta prima del design finale.",
+      "Raccogli immagini, texture, colori e qualche parola adatta alla personalità.",
+      "Togli ciò che non c'entra finché resta un'atmosfera chiara."
+     ],
+     "q": "Quali immagini o colori mostrerebbero la sensazione di un marchio che immagini?",
+     "c": "Crea un moodboard di otto elementi su carta o schermo e scrivi l'atmosfera in una riga."
+    },
+    "pt": {
+     "t": "Esboçar um moodboard",
+     "g": "Reunir imagens, cores e palavras que captem a sensação de uma marca.",
+     "p": [
+      "Um moodboard é uma colagem que mostra a sensação desejada antes do design final.",
+      "Reúne fotos, texturas, cores e algumas palavras que combinem com a personalidade.",
+      "Retira o que não pertence até ficar uma atmosfera clara."
+     ],
+     "q": "Que imagens ou cores mostrariam a sensação de uma marca que imaginas?",
+     "c": "Faz um moodboard de oito elementos em papel ou ecrã e escreve a atmosfera numa linha."
+    },
+    "pt_BR": {
+     "t": "Esboçando um moodboard",
+     "g": "Reunir imagens, cores e palavras que captem a sensação de uma marca.",
+     "p": [
+      "Um moodboard é uma colagem que mostra a sensação desejada antes do design final.",
+      "Reúna fotos, texturas, cores e algumas palavras que combinem com a personalidade.",
+      "Tire o que não pertence até sobrar um clima claro."
+     ],
+     "q": "Que imagens ou cores mostrariam a sensação de uma marca que você imagina?",
+     "c": "Faça um moodboard de oito elementos no papel ou na tela e escreva o clima em uma linha."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing a brand promise",
+     "g": "Summarise what customers can always expect from you.",
+     "p": [
+      "A promise is one sentence about what people will always get from you.",
+      "It must be specific, valuable to them and something you can keep daily.",
+      "A kept small promise beats a broken big one every time."
+     ],
+     "q": "What promise does a brand you trust keep for you every time?",
+     "c": "Write a brand promise in one sentence and list three habits that keep it true."
+    },
+    "de": {
+     "t": "Ein Markenversprechen formulieren",
+     "g": "Zusammenfassen, was Kunden immer von dir erwarten können.",
+     "p": [
+      "Ein Versprechen ist ein Satz darüber, was Menschen von dir immer bekommen.",
+      "Es muss konkret sein, für sie wertvoll und etwas, das du täglich halten kannst.",
+      "Ein gehaltenes kleines Versprechen schlägt ein gebrochenes großes jedes Mal."
+     ],
+     "q": "Welches Versprechen hält dir eine Marke, der du vertraust, jedes Mal?",
+     "c": "Schreibe ein Markenversprechen in einem Satz und drei Gewohnheiten, die es wahr halten."
+    },
+    "es": {
+     "t": "Redactar una promesa de marca",
+     "g": "Resumir lo que los clientes pueden esperar siempre de ti.",
+     "p": [
+      "Una promesa es una frase sobre lo que la gente recibirá siempre de ti.",
+      "Debe ser concreta, valiosa para ellos y algo que puedas cumplir a diario.",
+      "Una pequeña promesa cumplida vale más que una grande rota."
+     ],
+     "q": "¿Qué promesa te cumple siempre una marca en la que confías?",
+     "c": "Escribe una promesa de marca en una frase y tres hábitos que la mantengan verdadera."
+    },
+    "fr": {
+     "t": "Rédiger une promesse de marque",
+     "g": "Résumer ce que les clients peuvent toujours attendre de toi.",
+     "p": [
+      "Une promesse est une phrase sur ce que les gens recevront toujours de toi.",
+      "Elle doit être précise, précieuse pour eux et tenable au quotidien.",
+      "Une petite promesse tenue vaut toujours mieux qu'une grande rompue."
+     ],
+     "q": "Quelle promesse une marque de confiance tient-elle pour toi à chaque fois ?",
+     "c": "Écris une promesse de marque en une phrase et trois habitudes qui la rendent vraie."
+    },
+    "it": {
+     "t": "Scrivere una promessa di marca",
+     "g": "Riassumere ciò che i clienti possono sempre aspettarsi da te.",
+     "p": [
+      "Una promessa è una frase su ciò che le persone riceveranno sempre da te.",
+      "Deve essere specifica, preziosa per loro e mantenibile ogni giorno.",
+      "Una piccola promessa mantenuta vale più di una grande infranta."
+     ],
+     "q": "Quale promessa ti mantiene ogni volta un marchio di cui ti fidi?",
+     "c": "Scrivi una promessa di marca in una frase e tre abitudini che la mantengono vera."
+    },
+    "pt": {
+     "t": "Escrever uma promessa de marca",
+     "g": "Resumir o que os clientes podem sempre esperar de ti.",
+     "p": [
+      "Uma promessa é uma frase sobre o que as pessoas receberão sempre de ti.",
+      "Deve ser concreta, valiosa para elas e algo que consigas cumprir diariamente.",
+      "Uma pequena promessa cumprida vale mais do que uma grande quebrada."
+     ],
+     "q": "Que promessa te cumpre sempre uma marca em que confias?",
+     "c": "Escreve uma promessa de marca numa frase e três hábitos que a mantenham verdadeira."
+    },
+    "pt_BR": {
+     "t": "Escrevendo uma promessa de marca",
+     "g": "Resumir o que os clientes podem sempre esperar de você.",
+     "p": [
+      "Uma promessa é uma frase sobre o que as pessoas receberão sempre de você.",
+      "Ela deve ser concreta, valiosa para elas e algo que você consiga cumprir diariamente.",
+      "Uma pequena promessa cumprida vale mais que uma grande quebrada."
+     ],
+     "q": "Que promessa uma marca em que você confia cumpre sempre?",
+     "c": "Escreva uma promessa de marca em uma frase e três hábitos que a mantenham verdadeira."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Case study: a brand built on values",
+     "g": "How a clear purpose shaped a brand's choices.",
+     "p": [
+      "Imagine a brand whose purpose is to make outdoor life accessible to everyone.",
+      "That purpose guides what it makes, whom it hires and what it says no to.",
+      "When values drive decisions, customers can feel the brand is real."
+     ],
+     "q": "Which brand do you think truly lives its values, and how can you tell?",
+     "c": "Pick a brand with a clear purpose and list three choices that show it."
+    },
+    "de": {
+     "t": "Fallstudie: eine Marke auf Werten",
+     "g": "Wie ein klarer Zweck die Entscheidungen einer Marke prägte.",
+     "p": [
+      "Stell dir eine Marke vor, deren Zweck es ist, Outdoor-Leben für alle zugänglich zu machen.",
+      "Dieser Zweck lenkt, was sie herstellt, wen sie einstellt und wozu sie Nein sagt.",
+      "Wenn Werte Entscheidungen lenken, spüren Kunden, dass die Marke echt ist."
+     ],
+     "q": "Welche Marke lebt deiner Meinung nach wirklich ihre Werte und woran erkennst du das?",
+     "c": "Wähle eine Marke mit klarem Zweck und liste drei Entscheidungen, die ihn zeigen."
+    },
+    "es": {
+     "t": "Caso práctico: una marca basada en valores",
+     "g": "Cómo un propósito claro marcó las decisiones de una marca.",
+     "p": [
+      "Imagina una marca cuyo propósito es hacer la vida al aire libre accesible para todos.",
+      "Ese propósito guía qué fabrica, a quién contrata y a qué dice no.",
+      "Cuando los valores mueven las decisiones, el cliente nota que la marca es real."
+     ],
+     "q": "¿Qué marca crees que vive de verdad sus valores y cómo lo notas?",
+     "c": "Elige una marca con propósito claro y anota tres decisiones que lo demuestran."
+    },
+    "fr": {
+     "t": "Étude de cas : une marque fondée sur des valeurs",
+     "g": "Comment un but clair a façonné les choix d'une marque.",
+     "p": [
+      "Imagine une marque dont le but est de rendre la vie en plein air accessible à tous.",
+      "Ce but guide ce qu'elle fabrique, qui elle recrute et ce à quoi elle dit non.",
+      "Quand les valeurs guident les décisions, les clients sentent que la marque est vraie."
+     ],
+     "q": "Quelle marque vit vraiment ses valeurs selon toi, et à quoi le vois-tu ?",
+     "c": "Choisis une marque au but clair et note trois choix qui le montrent."
+    },
+    "it": {
+     "t": "Caso di studio: un marchio fondato sui valori",
+     "g": "Come uno scopo chiaro ha plasmato le scelte di un marchio.",
+     "p": [
+      "Immagina un marchio il cui scopo è rendere la vita all'aria aperta accessibile a tutti.",
+      "Quello scopo guida cosa produce, chi assume e a cosa dice no.",
+      "Quando i valori guidano le decisioni, i clienti sentono che il marchio è vero."
+     ],
+     "q": "Quale marchio vive davvero i suoi valori secondo te e come lo capisci?",
+     "c": "Scegli un marchio con scopo chiaro ed elenca tre scelte che lo dimostrano."
+    },
+    "pt": {
+     "t": "Estudo de caso: uma marca baseada em valores",
+     "g": "Como um propósito claro moldou as escolhas de uma marca.",
+     "p": [
+      "Imagina uma marca cujo propósito é tornar a vida ao ar livre acessível a todos.",
+      "Esse propósito orienta o que fabrica, quem contrata e a que diz não.",
+      "Quando os valores guiam as decisões, os clientes sentem que a marca é real."
+     ],
+     "q": "Que marca achas que vive mesmo os seus valores e como o notas?",
+     "c": "Escolhe uma marca com propósito claro e lista três escolhas que o demonstram."
+    },
+    "pt_BR": {
+     "t": "Estudo de caso: uma marca baseada em valores",
+     "g": "Como um propósito claro moldou as escolhas de uma marca.",
+     "p": [
+      "Imagine uma marca cujo propósito é tornar a vida ao ar livre acessível a todos.",
+      "Esse propósito orienta o que ela fabrica, quem contrata e a que diz não.",
+      "Quando os valores guiam as decisões, os clientes sentem que a marca é real."
+     ],
+     "q": "Que marca você acha que vive mesmo seus valores e como percebe isso?",
+     "c": "Escolha uma marca com propósito claro e liste três escolhas que o demonstram."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Case study: a simple strong identity",
+     "g": "How a minimal identity became instantly recognisable.",
+     "p": [
+      "Picture a brand that uses one colour, one shape and one friendly word.",
+      "Fewer elements mean each one is repeated more often and remembered more easily.",
+      "Simplicity needs discipline: say no to extras that dilute the idea."
+     ],
+     "q": "Which minimal design do you recognise in a second?",
+     "c": "Simplify a brand idea to one colour, one shape and one word, and test it on a friend."
+    },
+    "de": {
+     "t": "Fallstudie: eine einfache starke Identität",
+     "g": "Wie eine minimalistische Identität sofort wiedererkennbar wurde.",
+     "p": [
+      "Stell dir eine Marke vor mit einer Farbe, einer Form und einem freundlichen Wort.",
+      "Weniger Elemente bedeuten, dass jedes öfter wiederholt und leichter gemerkt wird.",
+      "Einfachheit braucht Disziplin: Sag Nein zu Extras, die die Idee verwässern."
+     ],
+     "q": "Welches minimalistische Design erkennst du in einer Sekunde?",
+     "c": "Vereinfache eine Markenidee auf eine Farbe, eine Form und ein Wort und teste sie bei einer Freundin."
+    },
+    "es": {
+     "t": "Caso práctico: una identidad simple y fuerte",
+     "g": "Cómo una identidad mínima se hizo reconocible al instante.",
+     "p": [
+      "Imagina una marca con un color, una forma y una palabra amable.",
+      "Menos elementos significa que cada uno se repite más y se recuerda mejor.",
+      "La simplicidad requiere disciplina: di no a los extras que diluyen la idea."
+     ],
+     "q": "¿Qué diseño minimalista reconoces en un segundo?",
+     "c": "Simplifica una idea de marca a un color, una forma y una palabra, y pruébala con un amigo."
+    },
+    "fr": {
+     "t": "Étude de cas : une identité simple et forte",
+     "g": "Comment une identité minimale est devenue instantanément reconnaissable.",
+     "p": [
+      "Imagine une marque avec une couleur, une forme et un mot amical.",
+      "Moins d'éléments, c'est chacun répété plus souvent et mieux retenu.",
+      "La simplicité exige de la discipline : dis non aux extras qui diluent l'idée."
+     ],
+     "q": "Quel design minimaliste reconnais-tu en une seconde ?",
+     "c": "Simplifie une idée de marque en une couleur, une forme et un mot, et teste-la auprès d'un ami."
+    },
+    "it": {
+     "t": "Caso di studio: un'identità semplice e forte",
+     "g": "Come un'identità minimale è diventata riconoscibile all'istante.",
+     "p": [
+      "Immagina un marchio con un colore, una forma e una parola amichevole.",
+      "Meno elementi significa che ognuno è ripetuto di più e ricordato meglio.",
+      "La semplicità richiede disciplina: di' no agli extra che diluiscono l'idea."
+     ],
+     "q": "Quale design minimale riconosci in un secondo?",
+     "c": "Semplifica un'idea di marchio a un colore, una forma e una parola e provala con un amico."
+    },
+    "pt": {
+     "t": "Estudo de caso: uma identidade simples e forte",
+     "g": "Como uma identidade mínima se tornou reconhecível de imediato.",
+     "p": [
+      "Imagina uma marca com uma cor, uma forma e uma palavra simpática.",
+      "Menos elementos significa que cada um se repete mais e se recorda melhor.",
+      "A simplicidade exige disciplina: diz não aos extras que diluem a ideia."
+     ],
+     "q": "Que design minimalista reconheces num segundo?",
+     "c": "Simplifica uma ideia de marca para uma cor, uma forma e uma palavra e testa com um amigo."
+    },
+    "pt_BR": {
+     "t": "Estudo de caso: uma identidade simples e forte",
+     "g": "Como uma identidade mínima se tornou reconhecível na hora.",
+     "p": [
+      "Imagine uma marca com uma cor, uma forma e uma palavra simpática.",
+      "Menos elementos significa que cada um se repete mais e é lembrado melhor.",
+      "A simplicidade exige disciplina: diga não aos extras que diluem a ideia."
+     ],
+     "q": "Que design minimalista você reconhece em um segundo?",
+     "c": "Simplifique uma ideia de marca para uma cor, uma forma e uma palavra e teste com um amigo."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Branding mistakes to avoid",
+     "g": "Inconsistency, copying others and unclear messages.",
+     "p": [
+      "Common slips: changing the look too often, copying a rival, or saying too many things.",
+      "Copying invites confusion and weakens trust; your own truth is stronger.",
+      "One clear message repeated well beats ten messages that fight each other."
+     ],
+     "q": "Which branding mistake have you noticed most in the wild?",
+     "c": "Review your own brand idea and fix one mistake from today's list."
+    },
+    "de": {
+     "t": "Branding-Fehler, die du vermeiden solltest",
+     "g": "Inkonsistenz, Nachahmung und unklare Botschaften.",
+     "p": [
+      "Häufige Patzer: das Aussehen zu oft ändern, Rivalen kopieren oder zu viel auf einmal sagen.",
+      "Kopieren stiftet Verwirrung und schwächt Vertrauen; deine eigene Wahrheit ist stärker.",
+      "Eine klare, gut wiederholte Botschaft schlägt zehn, die miteinander ringen."
+     ],
+     "q": "Welchen Branding-Fehler hast du draußen am häufigsten bemerkt?",
+     "c": "Prüfe deine eigene Markenidee und behebe einen Fehler aus der heutigen Liste."
+    },
+    "es": {
+     "t": "Errores de marca que evitar",
+     "g": "Incoherencia, copiar a otros y mensajes poco claros.",
+     "p": [
+      "Tropiezos comunes: cambiar el aspecto muy a menudo, copiar a un rival o decir demasiadas cosas.",
+      "Copiar genera confusión y debilita la confianza; tu propia verdad es más fuerte.",
+      "Un mensaje claro bien repetido vale más que diez que se pelean entre sí."
+     ],
+     "q": "¿Qué error de marca has visto más a menudo por ahí?",
+     "c": "Revisa tu propia idea de marca y corrige un error de la lista de hoy."
+    },
+    "fr": {
+     "t": "Erreurs de marque à éviter",
+     "g": "Incohérence, copie des autres et messages flous.",
+     "p": [
+      "Faux pas courants : changer de style trop souvent, copier un rival ou dire trop de choses.",
+      "Copier crée de la confusion et affaiblit la confiance ; ta propre vérité est plus forte.",
+      "Un message clair bien répété vaut mieux que dix qui se disputent."
+     ],
+     "q": "Quelle erreur de marque as-tu le plus souvent remarquée autour de toi ?",
+     "c": "Relis ta propre idée de marque et corrige une erreur de la liste du jour."
+    },
+    "it": {
+     "t": "Errori di branding da evitare",
+     "g": "Incoerenza, copiare gli altri e messaggi poco chiari.",
+     "p": [
+      "Scivoloni comuni: cambiare aspetto troppo spesso, copiare un rivale o dire troppe cose.",
+      "Copiare crea confusione e indebolisce la fiducia; la tua verità è più forte.",
+      "Un messaggio chiaro ripetuto bene vale più di dieci che si contraddicono."
+     ],
+     "q": "Quale errore di branding hai notato più spesso in giro?",
+     "c": "Rivedi la tua idea di marchio e correggi un errore dell'elenco di oggi."
+    },
+    "pt": {
+     "t": "Erros de marca a evitar",
+     "g": "Inconsistência, copiar os outros e mensagens pouco claras.",
+     "p": [
+      "Deslizes comuns: mudar a imagem demasiado, copiar um rival ou dizer coisas a mais.",
+      "Copiar gera confusão e enfraquece a confiança; a tua própria verdade é mais forte.",
+      "Uma mensagem clara bem repetida vale mais do que dez que se contradizem."
+     ],
+     "q": "Que erro de marca notaste mais vezes por aí?",
+     "c": "Revê a tua própria ideia de marca e corrige um erro da lista de hoje."
+    },
+    "pt_BR": {
+     "t": "Erros de marca a evitar",
+     "g": "Inconsistência, copiar os outros e mensagens pouco claras.",
+     "p": [
+      "Escorregões comuns: mudar o visual demais, copiar um rival ou dizer coisas demais.",
+      "Copiar gera confusão e enfraquece a confiança; a sua própria verdade é mais forte.",
+      "Uma mensagem clara bem repetida vale mais que dez que se contradizem."
+     ],
+     "q": "Que erro de marca você mais notou por aí?",
+     "c": "Revise sua própria ideia de marca e corrija um erro da lista de hoje."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Trust signals",
+     "g": "Reviews, guarantees and transparency that make brands credible.",
+     "p": [
+      "Trust signals reduce risk: honest reviews, clear returns, guarantees, real contact details.",
+      "Show real people, real results and real limits instead of exaggerating.",
+      "Never fake reviews or badges; one discovered lie can undo years of trust."
+     ],
+     "q": "What makes you comfortable buying from a brand you have never used before?",
+     "c": "List five trust signals a new small shop could show and how it could earn each honestly."
+    },
+    "de": {
+     "t": "Vertrauenssignale",
+     "g": "Bewertungen, Garantien und Transparenz, die Marken glaubwürdig machen.",
+     "p": [
+      "Vertrauenssignale senken das Risiko: ehrliche Bewertungen, klare Rückgabe, Garantien, echte Kontaktdaten.",
+      "Zeige echte Menschen, echte Ergebnisse und echte Grenzen statt Übertreibung.",
+      "Fälsche nie Bewertungen oder Siegel; eine entdeckte Lüge kann Jahre an Vertrauen vernichten."
+     ],
+     "q": "Was macht dich beim Kauf bei einer dir unbekannten Marke sicher?",
+     "c": "Liste fünf Vertrauenssignale, die ein neuer kleiner Laden zeigen könnte, und wie er sie ehrlich verdient."
+    },
+    "es": {
+     "t": "Señales de confianza",
+     "g": "Reseñas, garantías y transparencia que hacen creíbles a las marcas.",
+     "p": [
+      "Las señales de confianza reducen el riesgo: reseñas honestas, devoluciones claras, garantías, datos de contacto reales.",
+      "Muestra personas reales, resultados reales y límites reales en lugar de exagerar.",
+      "Nunca falsees reseñas ni sellos; una mentira descubierta puede borrar años de confianza."
+     ],
+     "q": "¿Qué te hace sentir cómodo al comprar a una marca que nunca has usado?",
+     "c": "Lista cinco señales de confianza que podría mostrar una tienda nueva y cómo ganarlas con honestidad."
+    },
+    "fr": {
+     "t": "Signaux de confiance",
+     "g": "Avis, garanties et transparence qui rendent les marques crédibles.",
+     "p": [
+      "Les signaux de confiance réduisent le risque : avis honnêtes, retours clairs, garanties, vrais contacts.",
+      "Montre de vraies personnes, de vrais résultats et de vraies limites plutôt que d'exagérer.",
+      "Ne falsifie jamais avis ni labels ; un mensonge découvert peut effacer des années de confiance."
+     ],
+     "q": "Qu'est-ce qui te met à l'aise pour acheter chez une marque inconnue ?",
+     "c": "Liste cinq signaux de confiance qu'une nouvelle petite boutique pourrait montrer et comment les mériter."
+    },
+    "it": {
+     "t": "Segnali di fiducia",
+     "g": "Recensioni, garanzie e trasparenza che rendono credibili i marchi.",
+     "p": [
+      "I segnali di fiducia riducono il rischio: recensioni oneste, resi chiari, garanzie, contatti reali.",
+      "Mostra persone vere, risultati veri e limiti veri invece di esagerare.",
+      "Non falsificare mai recensioni o bollini; una bugia scoperta può cancellare anni di fiducia."
+     ],
+     "q": "Cosa ti fa sentire a tuo agio nell'acquistare da un marchio mai usato?",
+     "c": "Elenca cinque segnali di fiducia che un nuovo piccolo negozio potrebbe mostrare e come meritarli."
+    },
+    "pt": {
+     "t": "Sinais de confiança",
+     "g": "Avaliações, garantias e transparência que tornam as marcas credíveis.",
+     "p": [
+      "Os sinais de confiança reduzem o risco: avaliações honestas, devoluções claras, garantias, contactos reais.",
+      "Mostra pessoas reais, resultados reais e limites reais em vez de exagerar.",
+      "Nunca falsifiques avaliações ou selos; uma mentira descoberta pode apagar anos de confiança."
+     ],
+     "q": "O que te deixa à vontade para comprar a uma marca que nunca usaste?",
+     "c": "Lista cinco sinais de confiança que uma loja nova poderia mostrar e como os ganhar com honestidade."
+    },
+    "pt_BR": {
+     "t": "Sinais de confiança",
+     "g": "Avaliações, garantias e transparência que tornam as marcas confiáveis.",
+     "p": [
+      "Os sinais de confiança reduzem o risco: avaliações honestas, trocas claras, garantias, contatos reais.",
+      "Mostre pessoas reais, resultados reais e limites reais em vez de exagerar.",
+      "Nunca falsifique avaliações ou selos; uma mentira descoberta pode apagar anos de confiança."
+     ],
+     "q": "O que deixa você à vontade para comprar de uma marca que nunca usou?",
+     "c": "Liste cinco sinais de confiança que uma loja nova poderia mostrar e como conquistá-los com honestidade."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your brand in three words",
+     "g": "Choose three words that describe the brand you want to build.",
+     "p": [
+      "Three words force you to decide what matters most about your brand.",
+      "Pick words you can prove through actions, not just wishful adjectives.",
+      "Use them as a filter for every choice: does this fit our three words?"
+     ],
+     "q": "Which three words would your friends use to describe you or your brand?",
+     "c": "Choose your three words and write one real action that proves each."
+    },
+    "de": {
+     "t": "Deine Marke in drei Worten",
+     "g": "Drei Worte wählen, die die Marke beschreiben, die du aufbauen willst.",
+     "p": [
+      "Drei Worte zwingen dich zu entscheiden, was an deiner Marke am wichtigsten ist.",
+      "Wähle Worte, die du durch Taten belegen kannst, nicht bloße Wunschadjektive.",
+      "Nutze sie als Filter für jede Entscheidung: Passt das zu unseren drei Worten?"
+     ],
+     "q": "Welche drei Worte würden deine Freunde für dich oder deine Marke wählen?",
+     "c": "Wähle deine drei Worte und schreibe zu jedem eine echte Handlung, die es belegt."
+    },
+    "es": {
+     "t": "Tu marca en tres palabras",
+     "g": "Elegir tres palabras que describan la marca que quieres construir.",
+     "p": [
+      "Tres palabras te obligan a decidir qué importa más de tu marca.",
+      "Elige palabras que puedas demostrar con hechos, no meros adjetivos deseados.",
+      "Úsalas como filtro en cada decisión: ¿encaja con nuestras tres palabras?"
+     ],
+     "q": "¿Qué tres palabras usarían tus amigos para describirte a ti o a tu marca?",
+     "c": "Elige tus tres palabras y escribe una acción real que pruebe cada una."
+    },
+    "fr": {
+     "t": "Ta marque en trois mots",
+     "g": "Choisir trois mots qui décrivent la marque que tu veux construire.",
+     "p": [
+      "Trois mots t'obligent à décider ce qui compte le plus dans ta marque.",
+      "Choisis des mots que tu peux prouver par des actes, pas de simples adjectifs rêvés.",
+      "Sers-t'en comme filtre pour chaque choix : est-ce cohérent avec nos trois mots ?"
+     ],
+     "q": "Quels trois mots tes amis utiliseraient-ils pour te décrire ou décrire ta marque ?",
+     "c": "Choisis tes trois mots et écris une action réelle qui prouve chacun."
+    },
+    "it": {
+     "t": "Il tuo marchio in tre parole",
+     "g": "Scegliere tre parole che descrivono il marchio che vuoi costruire.",
+     "p": [
+      "Tre parole ti obbligano a decidere cosa conta di più nel tuo marchio.",
+      "Scegli parole che puoi dimostrare con i fatti, non semplici aggettivi desiderati.",
+      "Usale come filtro per ogni scelta: è coerente con le nostre tre parole?"
+     ],
+     "q": "Quali tre parole userebbero i tuoi amici per descrivere te o il tuo marchio?",
+     "c": "Scegli le tue tre parole e scrivi un'azione reale che dimostri ciascuna."
+    },
+    "pt": {
+     "t": "A tua marca em três palavras",
+     "g": "Escolher três palavras que descrevam a marca que queres construir.",
+     "p": [
+      "Três palavras obrigam-te a decidir o que mais importa na tua marca.",
+      "Escolhe palavras que consigas provar com atos, não meros adjetivos desejados.",
+      "Usa-as como filtro em cada decisão: isto combina com as nossas três palavras?"
+     ],
+     "q": "Que três palavras usariam os teus amigos para te descrever a ti ou à tua marca?",
+     "c": "Escolhe as tuas três palavras e escreve uma ação real que prove cada uma."
+    },
+    "pt_BR": {
+     "t": "Sua marca em três palavras",
+     "g": "Escolher três palavras que descrevam a marca que você quer construir.",
+     "p": [
+      "Três palavras obrigam você a decidir o que mais importa na sua marca.",
+      "Escolha palavras que você consiga provar com ações, não meros adjetivos desejados.",
+      "Use-as como filtro em cada decisão: isso combina com nossas três palavras?"
+     ],
+     "q": "Que três palavras seus amigos usariam para descrever você ou sua marca?",
+     "c": "Escolha suas três palavras e escreva uma ação real que comprove cada uma."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: branding",
+     "g": "A recap of identity, voice, story and consistency.",
+     "p": [
+      "A brand is a promise made real through identity, voice, story and values.",
+      "Consistency and honesty hold all the pieces together over time.",
+      "Trust signals and a good experience prove the promise day after day."
+     ],
+     "q": "Which branding lesson of the last 30 days will you use first?",
+     "c": "Write a one-page summary of your brand: promise, three words, voice, colours, story."
+    },
+    "de": {
+     "t": "Rückblick: Branding",
+     "g": "Ein Rückblick auf Identität, Stimme, Geschichte und Konsistenz.",
+     "p": [
+      "Eine Marke ist ein Versprechen, das durch Identität, Stimme, Geschichte und Werte real wird.",
+      "Konsistenz und Ehrlichkeit halten alle Teile über die Zeit zusammen.",
+      "Vertrauenssignale und gutes Erlebnis beweisen das Versprechen Tag für Tag."
+     ],
+     "q": "Welche Branding-Lektion der letzten 30 Tage nutzt du zuerst?",
+     "c": "Schreibe eine Zusammenfassung deiner Marke auf einer Seite: Versprechen, drei Worte, Stimme, Farben, Geschichte."
+    },
+    "es": {
+     "t": "Repaso: branding",
+     "g": "Un repaso de identidad, voz, historia y coherencia.",
+     "p": [
+      "Una marca es una promesa hecha real con identidad, voz, historia y valores.",
+      "La coherencia y la honestidad mantienen unidas todas las piezas con el tiempo.",
+      "Las señales de confianza y una buena experiencia prueban la promesa día tras día."
+     ],
+     "q": "¿Qué lección de branding de los últimos 30 días usarás primero?",
+     "c": "Escribe un resumen de una página de tu marca: promesa, tres palabras, voz, colores, historia."
+    },
+    "fr": {
+     "t": "Révision : l'image de marque",
+     "g": "Un récapitulatif de l'identité, de la voix, de l'histoire et de la cohérence.",
+     "p": [
+      "Une marque est une promesse rendue réelle par l'identité, la voix, l'histoire et les valeurs.",
+      "Cohérence et honnêteté tiennent toutes les pièces ensemble dans la durée.",
+      "Signaux de confiance et belle expérience prouvent la promesse jour après jour."
+     ],
+     "q": "Quelle leçon de branding des 30 derniers jours utiliseras-tu en premier ?",
+     "c": "Écris un résumé d'une page de ta marque : promesse, trois mots, voix, couleurs, histoire."
+    },
+    "it": {
+     "t": "Ripasso: il branding",
+     "g": "Un ripasso di identità, voce, storia e coerenza.",
+     "p": [
+      "Un marchio è una promessa resa reale da identità, voce, storia e valori.",
+      "Coerenza e onestà tengono insieme tutti i pezzi nel tempo.",
+      "Segnali di fiducia e una buona esperienza provano la promessa giorno dopo giorno."
+     ],
+     "q": "Quale lezione di branding degli ultimi 30 giorni userai per prima?",
+     "c": "Scrivi un riassunto di una pagina del tuo marchio: promessa, tre parole, voce, colori, storia."
+    },
+    "pt": {
+     "t": "Revisão: branding",
+     "g": "Uma revisão de identidade, voz, história e consistência.",
+     "p": [
+      "Uma marca é uma promessa tornada real por identidade, voz, história e valores.",
+      "Consistência e honestidade mantêm todas as peças unidas ao longo do tempo.",
+      "Sinais de confiança e uma boa experiência provam a promessa dia após dia."
+     ],
+     "q": "Que lição de branding dos últimos 30 dias vais usar primeiro?",
+     "c": "Escreve um resumo de uma página da tua marca: promessa, três palavras, voz, cores, história."
+    },
+    "pt_BR": {
+     "t": "Revisão: branding",
+     "g": "Uma revisão de identidade, voz, história e consistência.",
+     "p": [
+      "Uma marca é uma promessa tornada real por identidade, voz, história e valores.",
+      "Consistência e honestidade mantêm todas as peças unidas ao longo do tempo.",
+      "Sinais de confiança e uma boa experiência provam a promessa dia após dia."
+     ],
+     "q": "Que lição de branding dos últimos 30 dias você vai usar primeiro?",
+     "c": "Escreva um resumo de uma página da sua marca: promessa, três palavras, voz, cores, história."
+    }
+   }
+  }
+ ]
+}

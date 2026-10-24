@@ -1,0 +1,835 @@
+{
+ "topic": "habits",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Start ridiculously small",
+     "g": "Shrink a new habit until it takes two minutes or less.",
+     "p": [
+      "A tiny habit is easy to start, even on a bad day.",
+      "Do one push-up, read one page, drink one glass of water.",
+      "Once it is automatic, you can grow it a little at a time."
+     ],
+     "q": "What is the smallest version of your first habit?",
+     "c": "Do the tiniest version of your habit today and stop there if you like."
+    },
+    "de": {
+     "t": "Lächerlich klein anfangen",
+     "g": "Eine neue Gewohnheit auf zwei Minuten oder weniger schrumpfen.",
+     "p": [
+      "Eine winzige Gewohnheit lässt sich auch an schlechten Tagen starten.",
+      "Mach eine Liegestütze, lies eine Seite, trink ein Glas Wasser.",
+      "Wird sie automatisch, kannst du sie Stück für Stück ausbauen."
+     ],
+     "q": "Was ist die kleinste Version deiner ersten Gewohnheit?",
+     "c": "Mach heute die winzigste Version deiner Gewohnheit und hör auf Wunsch dort auf."
+    },
+    "es": {
+     "t": "Empieza ridículamente pequeño",
+     "g": "Reducir un hábito nuevo hasta que lleve dos minutos o menos.",
+     "p": [
+      "Un hábito diminuto es fácil de empezar, incluso en un mal día.",
+      "Haz una flexión, lee una página, bebe un vaso de agua.",
+      "Cuando sea automático, puedes hacerlo crecer poco a poco."
+     ],
+     "q": "¿Cuál es la versión más pequeña de tu primer hábito?",
+     "c": "Haz hoy la versión mínima de tu hábito y para ahí si quieres."
+    },
+    "fr": {
+     "t": "Commencer ridiculement petit",
+     "g": "Réduire une nouvelle habitude à deux minutes ou moins.",
+     "p": [
+      "Une toute petite habitude se lance facilement, même un mauvais jour.",
+      "Fais une pompe, lis une page, bois un verre d'eau.",
+      "Quand elle devient automatique, tu peux la faire grandir peu à peu."
+     ],
+     "q": "Quelle est la plus petite version de ta première habitude ?",
+     "c": "Fais aujourd'hui la version minuscule de ton habitude et arrête-toi là si tu veux."
+    },
+    "it": {
+     "t": "Inizia in modo ridicolmente piccolo",
+     "g": "Ridurre una nuova abitudine a due minuti o meno.",
+     "p": [
+      "Un'abitudine minuscola è facile da iniziare, anche in una giornata storta.",
+      "Fai un solo piegamento, leggi una pagina, bevi un bicchiere d'acqua.",
+      "Quando diventa automatica, puoi farla crescere un poco alla volta."
+     ],
+     "q": "Qual è la versione più piccola della tua prima abitudine?",
+     "c": "Oggi fai la versione minima della tua abitudine e fermati lì, se vuoi."
+    },
+    "pt": {
+     "t": "Começa ridiculamente pequeno",
+     "g": "Reduzir um hábito novo até levar dois minutos ou menos.",
+     "p": [
+      "Um hábito minúsculo é fácil de começar, mesmo num dia mau.",
+      "Faz uma flexão, lê uma página, bebe um copo de água.",
+      "Quando for automático, podes fazê-lo crescer aos poucos."
+     ],
+     "q": "Qual é a versão mais pequena do teu primeiro hábito?",
+     "c": "Faz hoje a versão mínima do teu hábito e pára aí, se quiseres."
+    },
+    "pt_BR": {
+     "t": "Comece ridiculamente pequeno",
+     "g": "Reduzir um hábito novo até levar dois minutos ou menos.",
+     "p": [
+      "Um hábito minúsculo é fácil de começar, até num dia ruim.",
+      "Faça uma flexão, leia uma página, beba um copo d'água.",
+      "Quando for automático, você pode aumentá-lo aos poucos."
+     ],
+     "q": "Qual é a menor versão do seu primeiro hábito?",
+     "c": "Faça hoje a versão mínima do seu hábito e pare por aí, se quiser."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The two-minute rule",
+     "g": "Start with a version so small you cannot say no.",
+     "p": [
+      "Scale the habit down: reading becomes opening the book.",
+      "The goal is to show up, not to perform.",
+      "Often you will keep going, but you are allowed to stop."
+     ],
+     "q": "How would you shrink your habit to two minutes?",
+     "c": "Set a timer for two minutes and do your habit until it rings."
+    },
+    "de": {
+     "t": "Die Zwei-Minuten-Regel",
+     "g": "Mit einer Version starten, so klein, dass du nicht Nein sagen kannst.",
+     "p": [
+      "Verkleinere die Gewohnheit: Aus Lesen wird, das Buch aufzuschlagen.",
+      "Das Ziel ist zu erscheinen, nicht zu glänzen.",
+      "Oft machst du weiter, aber du darfst auch aufhören."
+     ],
+     "q": "Wie würdest du deine Gewohnheit auf zwei Minuten verkleinern?",
+     "c": "Stell einen Timer auf zwei Minuten und mach deine Gewohnheit, bis er klingelt."
+    },
+    "es": {
+     "t": "La regla de los dos minutos",
+     "g": "Empezar con una versión tan pequeña que no puedas decir que no.",
+     "p": [
+      "Reduce el hábito: leer se convierte en abrir el libro.",
+      "La meta es presentarte, no lucirte.",
+      "A menudo seguirás, pero tienes permiso para parar."
+     ],
+     "q": "¿Cómo reducirías tu hábito a dos minutos?",
+     "c": "Pon un temporizador de dos minutos y haz tu hábito hasta que suene."
+    },
+    "fr": {
+     "t": "La règle des deux minutes",
+     "g": "Commencer par une version si petite que tu ne peux pas dire non.",
+     "p": [
+      "Réduis l'habitude : lire devient ouvrir le livre.",
+      "Le but est de se présenter, pas de performer.",
+      "Souvent tu continueras, mais tu as le droit de t'arrêter."
+     ],
+     "q": "Comment réduirais-tu ton habitude à deux minutes ?",
+     "c": "Lance un minuteur de deux minutes et fais ton habitude jusqu'à la sonnerie."
+    },
+    "it": {
+     "t": "La regola dei due minuti",
+     "g": "Iniziare con una versione così piccola da non poter dire no.",
+     "p": [
+      "Riduci l'abitudine: leggere diventa aprire il libro.",
+      "L'obiettivo è esserci, non fare prestazioni.",
+      "Spesso continuerai, ma puoi anche fermarti."
+     ],
+     "q": "Come ridurresti la tua abitudine a due minuti?",
+     "c": "Imposta un timer di due minuti e fai la tua abitudine finché suona."
+    },
+    "pt": {
+     "t": "A regra dos dois minutos",
+     "g": "Começar com uma versão tão pequena que não consigas dizer não.",
+     "p": [
+      "Reduz o hábito: ler passa a ser abrir o livro.",
+      "O objetivo é aparecer, não brilhar.",
+      "Muitas vezes continuarás, mas podes parar."
+     ],
+     "q": "Como reduzirias o teu hábito a dois minutos?",
+     "c": "Põe um temporizador de dois minutos e faz o teu hábito até tocar."
+    },
+    "pt_BR": {
+     "t": "A regra dos dois minutos",
+     "g": "Começar com uma versão tão pequena que você não consiga dizer não.",
+     "p": [
+      "Reduza o hábito: ler vira abrir o livro.",
+      "O objetivo é aparecer, não brilhar.",
+      "Muitas vezes você continua, mas pode parar."
+     ],
+     "q": "Como você reduziria seu hábito a dois minutos?",
+     "c": "Programe um timer de dois minutos e faça seu hábito até tocar."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Habit stacking",
+     "g": "Link a new habit to one you already have.",
+     "p": [
+      "The formula is: after I do X, I will do Y.",
+      "The old habit becomes the cue for the new one.",
+      "Keep the new action tiny so the chain stays smooth."
+     ],
+     "q": "What existing habit could carry a new one with it?",
+     "c": "Finish this sentence and use it today: After I pour my coffee, I will..."
+    },
+    "de": {
+     "t": "Gewohnheiten verketten",
+     "g": "Eine neue Gewohnheit an eine bestehende koppeln.",
+     "p": [
+      "Die Formel lautet: Nachdem ich X getan habe, tue ich Y.",
+      "Die alte Gewohnheit wird zum Auslöser der neuen.",
+      "Halte die neue Handlung winzig, damit die Kette flüssig bleibt."
+     ],
+     "q": "Welche bestehende Gewohnheit könnte eine neue mittragen?",
+     "c": "Vervollständige und nutze heute: Nachdem ich meinen Kaffee eingeschenkt habe, werde ich..."
+    },
+    "es": {
+     "t": "Apilar hábitos",
+     "g": "Unir un hábito nuevo a uno que ya tienes.",
+     "p": [
+      "La fórmula es: después de hacer X, haré Y.",
+      "El hábito viejo se convierte en la señal del nuevo.",
+      "Mantén la acción nueva diminuta para que la cadena fluya."
+     ],
+     "q": "¿Qué hábito existente podría llevar consigo uno nuevo?",
+     "c": "Completa y usa hoy: Después de servirme el café, voy a..."
+    },
+    "fr": {
+     "t": "L'empilement d'habitudes",
+     "g": "Relier une nouvelle habitude à une habitude existante.",
+     "p": [
+      "La formule : après avoir fait X, je ferai Y.",
+      "L'ancienne habitude devient le signal de la nouvelle.",
+      "Garde la nouvelle action minuscule pour que la chaîne reste fluide."
+     ],
+     "q": "Quelle habitude existante pourrait en porter une nouvelle ?",
+     "c": "Complète et applique aujourd'hui : Après avoir versé mon café, je vais..."
+    },
+    "it": {
+     "t": "Abitudini in sequenza",
+     "g": "Collegare una nuova abitudine a una che hai già.",
+     "p": [
+      "La formula è: dopo aver fatto X, farò Y.",
+      "La vecchia abitudine diventa il segnale della nuova.",
+      "Tieni la nuova azione minuscola, così la catena scorre."
+     ],
+     "q": "Quale abitudine esistente potrebbe portarne con sé una nuova?",
+     "c": "Completa e usa oggi: Dopo aver versato il caffè, farò..."
+    },
+    "pt": {
+     "t": "Empilhar hábitos",
+     "g": "Ligar um hábito novo a um que já tens.",
+     "p": [
+      "A fórmula é: depois de fazer X, vou fazer Y.",
+      "O hábito antigo passa a ser o sinal do novo.",
+      "Mantém a ação nova minúscula para a cadeia fluir."
+     ],
+     "q": "Que hábito existente poderia levar consigo um novo?",
+     "c": "Completa e usa hoje: Depois de servir o café, vou..."
+    },
+    "pt_BR": {
+     "t": "Empilhar hábitos",
+     "g": "Ligar um hábito novo a um que você já tem.",
+     "p": [
+      "A fórmula é: depois de fazer X, vou fazer Y.",
+      "O hábito antigo vira o gatilho do novo.",
+      "Mantenha a ação nova minúscula para a corrente fluir."
+     ],
+     "q": "Que hábito existente poderia levar um novo junto?",
+     "c": "Complete e use hoje: Depois de coar o café, eu vou..."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Picking a strong anchor",
+     "g": "Choose an existing routine that happens reliably every day.",
+     "p": [
+      "A good anchor happens daily at a steady moment, like brushing teeth.",
+      "Specific anchors beat vague ones: after I sit at my desk.",
+      "Match the size of the anchor to the new habit."
+     ],
+     "q": "Which daily moments in your life never get skipped?",
+     "c": "List three solid anchors from your day and pick one for your habit."
+    },
+    "de": {
+     "t": "Einen starken Anker wählen",
+     "g": "Eine bestehende Routine wählen, die jeden Tag zuverlässig stattfindet.",
+     "p": [
+      "Ein guter Anker passiert täglich zu festen Zeiten, etwa Zähneputzen.",
+      "Konkrete Anker schlagen vage: nachdem ich mich an den Schreibtisch setze.",
+      "Passe die Größe des Ankers an die neue Gewohnheit an."
+     ],
+     "q": "Welche täglichen Momente in deinem Leben fallen nie aus?",
+     "c": "Liste drei feste Anker deines Tages und wähle einen für deine Gewohnheit."
+    },
+    "es": {
+     "t": "Elige un ancla sólida",
+     "g": "Escoger una rutina existente que ocurra con fiabilidad cada día.",
+     "p": [
+      "Un buen ancla ocurre a diario en un momento estable, como cepillarte los dientes.",
+      "Las anclas concretas ganan a las vagas: al sentarme en mi escritorio.",
+      "Ajusta el tamaño del ancla al nuevo hábito."
+     ],
+     "q": "¿Qué momentos de tu día nunca se saltan?",
+     "c": "Lista tres anclas sólidas de tu día y elige una para tu hábito."
+    },
+    "fr": {
+     "t": "Choisir une bonne ancre",
+     "g": "Choisir une routine existante qui a lieu chaque jour de façon fiable.",
+     "p": [
+      "Une bonne ancre revient chaque jour à un moment stable, comme le brossage des dents.",
+      "Les ancres précises battent les vagues : quand je m'assois à mon bureau.",
+      "Adapte la taille de l'ancre à la nouvelle habitude."
+     ],
+     "q": "Quels moments de ta journée ne sont jamais sautés ?",
+     "c": "Liste trois ancres solides de ta journée et choisis-en une pour ton habitude."
+    },
+    "it": {
+     "t": "Scegli un'ancora solida",
+     "g": "Scegliere una routine esistente che avviene ogni giorno in modo affidabile.",
+     "p": [
+      "Una buona ancora capita ogni giorno in un momento fisso, come lavarsi i denti.",
+      "Le ancore precise battono quelle vaghe: quando mi siedo alla scrivania.",
+      "Adatta la dimensione dell'ancora alla nuova abitudine."
+     ],
+     "q": "Quali momenti della tua giornata non vengono mai saltati?",
+     "c": "Elenca tre ancore solide della tua giornata e scegline una per la tua abitudine."
+    },
+    "pt": {
+     "t": "Escolhe uma âncora forte",
+     "g": "Escolher uma rotina existente que acontece com fiabilidade todos os dias.",
+     "p": [
+      "Uma boa âncora acontece todos os dias a uma hora estável, como lavar os dentes.",
+      "Âncoras concretas vencem as vagas: quando me sento à secretária.",
+      "Ajusta o tamanho da âncora ao novo hábito."
+     ],
+     "q": "Que momentos do teu dia nunca ficam por fazer?",
+     "c": "Lista três âncoras sólidas do teu dia e escolhe uma para o teu hábito."
+    },
+    "pt_BR": {
+     "t": "Escolha uma âncora forte",
+     "g": "Escolher uma rotina existente que acontece com confiança todo dia.",
+     "p": [
+      "Uma boa âncora acontece todo dia num horário estável, como escovar os dentes.",
+      "Âncoras concretas vencem as vagas: quando eu sentar na mesa de trabalho.",
+      "Ajuste o tamanho da âncora ao novo hábito."
+     ],
+     "q": "Que momentos do seu dia nunca ficam sem acontecer?",
+     "c": "Liste três âncoras sólidas do seu dia e escolha uma para o seu hábito."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Implementation intentions",
+     "g": "Write down exactly when and where you will act.",
+     "p": [
+      "The plan is: I will do X at time Y in place Z.",
+      "Specific plans remove the daily decision of whether to start.",
+      "Writing it down makes the plan feel real."
+     ],
+     "q": "When and where will you do your habit this week?",
+     "c": "Write your plan as a sentence and put it where you will see it."
+    },
+    "de": {
+     "t": "Konkrete Wenn-dann-Pläne",
+     "g": "Genau aufschreiben, wann und wo du handelst.",
+     "p": [
+      "Der Plan lautet: Ich tue X um Y Uhr am Ort Z.",
+      "Konkrete Pläne nehmen dir die tägliche Entscheidung, ob du startest.",
+      "Aufschreiben macht den Plan greifbar."
+     ],
+     "q": "Wann und wo machst du deine Gewohnheit diese Woche?",
+     "c": "Schreibe deinen Plan als Satz auf und häng ihn dorthin, wo du ihn siehst."
+    },
+    "es": {
+     "t": "Intenciones de implementación",
+     "g": "Anotar exactamente cuándo y dónde vas a actuar.",
+     "p": [
+      "El plan es: haré X a la hora Y en el lugar Z.",
+      "Los planes concretos quitan la decisión diaria de si empezar.",
+      "Escribirlo hace que el plan se sienta real."
+     ],
+     "q": "¿Cuándo y dónde harás tu hábito esta semana?",
+     "c": "Escribe tu plan en una frase y ponla donde la veas."
+    },
+    "fr": {
+     "t": "Les intentions d'implémentation",
+     "g": "Écrire exactement quand et où tu vas agir.",
+     "p": [
+      "Le plan : je ferai X à l'heure Y à l'endroit Z.",
+      "Un plan précis supprime la décision quotidienne de commencer ou non.",
+      "L'écrire rend le plan réel."
+     ],
+     "q": "Quand et où feras-tu ton habitude cette semaine ?",
+     "c": "Écris ton plan en une phrase et place-le là où tu le verras."
+    },
+    "it": {
+     "t": "Intenzioni di attuazione",
+     "g": "Scrivere esattamente quando e dove agirai.",
+     "p": [
+      "Il piano è: farò X all'ora Y nel luogo Z.",
+      "I piani precisi tolgono la decisione quotidiana se iniziare o no.",
+      "Scriverlo rende il piano concreto."
+     ],
+     "q": "Quando e dove farai la tua abitudine questa settimana?",
+     "c": "Scrivi il piano in una frase e mettilo dove lo vedrai."
+    },
+    "pt": {
+     "t": "Intenções de implementação",
+     "g": "Escrever exatamente quando e onde vais agir.",
+     "p": [
+      "O plano é: vou fazer X à hora Y no lugar Z.",
+      "Planos concretos tiram a decisão diária de começar ou não.",
+      "Escrever torna o plano real."
+     ],
+     "q": "Quando e onde vais fazer o teu hábito esta semana?",
+     "c": "Escreve o teu plano numa frase e põe-no onde o vejas."
+    },
+    "pt_BR": {
+     "t": "Intenções de implementação",
+     "g": "Escrever exatamente quando e onde você vai agir.",
+     "p": [
+      "O plano é: vou fazer X no horário Y no lugar Z.",
+      "Planos concretos tiram a decisão diária de começar ou não.",
+      "Escrever deixa o plano real."
+     ],
+     "q": "Quando e onde você vai fazer seu hábito esta semana?",
+     "c": "Escreva seu plano em uma frase e deixe onde você vê."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Showing up beats intensity",
+     "g": "Learn why a little every day beats big bursts.",
+     "p": [
+      "Frequency builds the groove, and intensity can wait.",
+      "A five-minute walk daily beats one long walk a month.",
+      "On low-energy days, a small version still keeps the habit alive."
+     ],
+     "q": "When has a small, steady effort paid off for you?",
+     "c": "Do a very small version of your habit today, even if you feel tired."
+    },
+    "de": {
+     "t": "Dranbleiben schlägt Intensität",
+     "g": "Lernen, warum täglich ein bisschen mehr bringt als seltene Kraftakte.",
+     "p": [
+      "Häufigkeit schafft die Spur, Intensität kann warten.",
+      "Fünf Minuten Gehen täglich schlagen einen langen Spaziergang im Monat.",
+      "An müden Tagen hält eine kleine Version die Gewohnheit am Leben."
+     ],
+     "q": "Wann hat sich ein kleiner, stetiger Einsatz für dich gelohnt?",
+     "c": "Mach heute eine sehr kleine Version deiner Gewohnheit, auch wenn du müde bist."
+    },
+    "es": {
+     "t": "Aparecer vale más que la intensidad",
+     "g": "Aprender por qué un poco cada día supera a los grandes arrebatos.",
+     "p": [
+      "La frecuencia crea el surco, la intensidad puede esperar.",
+      "Cinco minutos de paseo diarios superan un paseo largo al mes.",
+      "En días de poca energía, una versión pequeña mantiene viva la costumbre."
+     ],
+     "q": "¿Cuándo te ha dado frutos un esfuerzo pequeño y constante?",
+     "c": "Haz hoy una versión muy pequeña de tu hábito, aunque estés cansado."
+    },
+    "fr": {
+     "t": "Être présent plutôt qu'intense",
+     "g": "Comprendre pourquoi un peu chaque jour vaut mieux que de grands élans.",
+     "p": [
+      "La fréquence creuse le sillon, l'intensité peut attendre.",
+      "Cinq minutes de marche par jour valent mieux qu'une longue sortie par mois.",
+      "Les jours de fatigue, une petite version garde l'habitude en vie."
+     ],
+     "q": "Quand un effort petit et régulier a-t-il porté ses fruits pour toi ?",
+     "c": "Fais aujourd'hui une toute petite version de ton habitude, même fatigué."
+    },
+    "it": {
+     "t": "Esserci batte l'intensità",
+     "g": "Capire perché poco ogni giorno batte i grandi sforzi occasionali.",
+     "p": [
+      "La frequenza scava il solco, l'intensità può attendere.",
+      "Cinque minuti di passeggiata al giorno battono una lunga camminata al mese.",
+      "Nei giorni di poca energia, una versione piccola tiene viva l'abitudine."
+     ],
+     "q": "Quando un impegno piccolo e costante ha dato frutti per te?",
+     "c": "Oggi fai una versione piccolissima della tua abitudine, anche se sei stanco."
+    },
+    "pt": {
+     "t": "Aparecer vale mais do que intensidade",
+     "g": "Perceber porque é que um pouco todos os dias vence os grandes esforços raros.",
+     "p": [
+      "A frequência cria o sulco, a intensidade pode esperar.",
+      "Cinco minutos de caminhada por dia vencem uma caminhada longa por mês.",
+      "Em dias de pouca energia, uma versão pequena mantém o hábito vivo."
+     ],
+     "q": "Quando é que um esforço pequeno e constante deu frutos para ti?",
+     "c": "Faz hoje uma versão muito pequena do teu hábito, mesmo cansado."
+    },
+    "pt_BR": {
+     "t": "Aparecer vale mais que intensidade",
+     "g": "Entender por que um pouco todo dia vence grandes esforços raros.",
+     "p": [
+      "A frequência cria o sulco, a intensidade pode esperar.",
+      "Cinco minutos de caminhada por dia vencem uma caminhada longa por mês.",
+      "Em dias de pouca energia, uma versão pequena mantém o hábito vivo."
+     ],
+     "q": "Quando um esforço pequeno e constante deu resultado para você?",
+     "c": "Faça hoje uma versão bem pequena do seu hábito, mesmo cansado."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Celebrate tiny wins",
+     "g": "Give yourself a quick moment of pride after your habit.",
+     "p": [
+      "Celebrating right away teaches your brain that the habit feels good.",
+      "Use a smile, a fist pump or the words: well done.",
+      "The feeling matters more than the size of the celebration."
+     ],
+     "q": "How do you like to celebrate small good moments?",
+     "c": "After your habit today, celebrate for three seconds in your own way."
+    },
+    "de": {
+     "t": "Kleine Erfolge feiern",
+     "g": "Dir direkt nach der Gewohnheit einen Moment des Stolzes gönnen.",
+     "p": [
+      "Sofortiges Feiern lehrt dein Gehirn, dass sich die Gewohnheit gut anfühlt.",
+      "Nutze ein Lächeln, eine geballte Faust oder die Worte: gut gemacht.",
+      "Das Gefühl zählt mehr als die Größe der Feier."
+     ],
+     "q": "Wie feierst du gern kleine schöne Momente?",
+     "c": "Feiere nach deiner Gewohnheit heute drei Sekunden lang auf deine Art."
+    },
+    "es": {
+     "t": "Celebra las pequeñas victorias",
+     "g": "Darte un momento de orgullo justo tras tu hábito.",
+     "p": [
+      "Celebrar al instante enseña a tu cerebro que el hábito sienta bien.",
+      "Usa una sonrisa, un puño al aire o las palabras: bien hecho.",
+      "La sensación importa más que el tamaño de la celebración."
+     ],
+     "q": "¿Cómo te gusta celebrar los pequeños buenos momentos?",
+     "c": "Tras tu hábito de hoy, celebra tres segundos a tu manera."
+    },
+    "fr": {
+     "t": "Fêter les petites victoires",
+     "g": "T'offrir un instant de fierté juste après ton habitude.",
+     "p": [
+      "Fêter tout de suite apprend à ton cerveau que l'habitude fait du bien.",
+      "Un sourire, un poing levé ou les mots : bien joué.",
+      "Le ressenti compte plus que la taille de la fête."
+     ],
+     "q": "Comment aimes-tu fêter les petits bons moments ?",
+     "c": "Après ton habitude aujourd'hui, fête trois secondes à ta façon."
+    },
+    "it": {
+     "t": "Festeggia le piccole vittorie",
+     "g": "Concederti un momento di orgoglio subito dopo l'abitudine.",
+     "p": [
+      "Festeggiare subito insegna al cervello che l'abitudine fa stare bene.",
+      "Usa un sorriso, un pugno alzato o le parole: ben fatto.",
+      "Conta più la sensazione che la grandezza della festa."
+     ],
+     "q": "Come ti piace festeggiare i piccoli bei momenti?",
+     "c": "Dopo la tua abitudine di oggi, festeggia tre secondi a modo tuo."
+    },
+    "pt": {
+     "t": "Celebra as pequenas vitórias",
+     "g": "Dar-te um momento de orgulho logo a seguir ao hábito.",
+     "p": [
+      "Celebrar logo ensina ao cérebro que o hábito sabe bem.",
+      "Usa um sorriso, um punho no ar ou as palavras: bem feito.",
+      "A sensação conta mais do que o tamanho da celebração."
+     ],
+     "q": "Como gostas de celebrar os pequenos bons momentos?",
+     "c": "Depois do teu hábito de hoje, celebra três segundos à tua maneira."
+    },
+    "pt_BR": {
+     "t": "Comemore as pequenas vitórias",
+     "g": "Dar a si mesmo um momento de orgulho logo após o hábito.",
+     "p": [
+      "Comemorar na hora ensina ao cérebro que o hábito faz bem.",
+      "Use um sorriso, um soco no ar ou as palavras: mandei bem.",
+      "A sensação importa mais que o tamanho da comemoração."
+     ],
+     "q": "Como você gosta de comemorar os pequenos bons momentos?",
+     "c": "Depois do seu hábito de hoje, comemore três segundos do seu jeito."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Identity-based habits",
+     "g": "Think I am someone who... to make habits part of you.",
+     "p": [
+      "Habits stick when they match who you believe you are.",
+      "Say I am a reader instead of I want to read more.",
+      "Identity grows from small proofs, not from big declarations."
+     ],
+     "q": "Complete this: I am someone who...",
+     "c": "Write one identity sentence for your habit and read it aloud once."
+    },
+    "de": {
+     "t": "Identitätsbasierte Gewohnheiten",
+     "g": "Denken: Ich bin jemand, der..., damit Gewohnheiten zu dir gehören.",
+     "p": [
+      "Gewohnheiten halten, wenn sie zu dem passen, wer du glaubst zu sein.",
+      "Sag: Ich bin Leser, statt: Ich will mehr lesen.",
+      "Identität wächst aus kleinen Beweisen, nicht aus großen Ansagen."
+     ],
+     "q": "Vervollständige: Ich bin jemand, der...",
+     "c": "Schreibe einen Identitätssatz für deine Gewohnheit und lies ihn einmal laut vor."
+    },
+    "es": {
+     "t": "Hábitos basados en la identidad",
+     "g": "Pensar soy alguien que... para que el hábito forme parte de ti.",
+     "p": [
+      "Los hábitos se quedan cuando encajan con quien crees ser.",
+      "Di soy lector en vez de quiero leer más.",
+      "La identidad crece con pequeñas pruebas, no con grandes declaraciones."
+     ],
+     "q": "Completa: soy alguien que...",
+     "c": "Escribe una frase de identidad para tu hábito y léela en voz alta una vez."
+    },
+    "fr": {
+     "t": "Les habitudes d'identité",
+     "g": "Penser je suis quelqu'un qui... pour ancrer les habitudes en toi.",
+     "p": [
+      "Les habitudes durent quand elles correspondent à qui tu crois être.",
+      "Dis je suis lecteur plutôt que je veux lire plus.",
+      "L'identité grandit par de petites preuves, pas par de grandes déclarations."
+     ],
+     "q": "Complète : je suis quelqu'un qui...",
+     "c": "Écris une phrase d'identité pour ton habitude et lis-la une fois à voix haute."
+    },
+    "it": {
+     "t": "Abitudini basate sull'identità",
+     "g": "Pensare sono una persona che... per far entrare l'abitudine in te.",
+     "p": [
+      "Le abitudini restano quando corrispondono a chi credi di essere.",
+      "Di' sono un lettore invece di voglio leggere di più.",
+      "L'identità cresce da piccole prove, non da grandi dichiarazioni."
+     ],
+     "q": "Completa: sono una persona che...",
+     "c": "Scrivi una frase d'identità per la tua abitudine e leggila ad alta voce una volta."
+    },
+    "pt": {
+     "t": "Hábitos baseados na identidade",
+     "g": "Pensar sou alguém que... para o hábito fazer parte de ti.",
+     "p": [
+      "Os hábitos ficam quando condizem com quem acreditas ser.",
+      "Diz sou leitor em vez de quero ler mais.",
+      "A identidade cresce com pequenas provas, não com grandes declarações."
+     ],
+     "q": "Completa: sou alguém que...",
+     "c": "Escreve uma frase de identidade para o teu hábito e lê-a em voz alta uma vez."
+    },
+    "pt_BR": {
+     "t": "Hábitos baseados na identidade",
+     "g": "Pensar eu sou alguém que... para o hábito fazer parte de você.",
+     "p": [
+      "Hábitos ficam quando combinam com quem você acredita ser.",
+      "Diga sou leitor em vez de quero ler mais.",
+      "A identidade cresce com pequenas provas, não com grandes declarações."
+     ],
+     "q": "Complete: eu sou alguém que...",
+     "c": "Escreva uma frase de identidade para seu hábito e leia em voz alta uma vez."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Votes for your identity",
+     "g": "See each small action as a vote for who you become.",
+     "p": [
+      "Every action is a vote for a type of person.",
+      "You do not need a unanimous vote, only a growing majority.",
+      "One missed vote does not undo the votes you already cast."
+     ],
+     "q": "What small action today would count as a vote for your new identity?",
+     "c": "Cast one clear vote today and say to yourself: that is me."
+    },
+    "de": {
+     "t": "Stimmen für deine Identität",
+     "g": "Jede kleine Handlung als Stimme für den Menschen sehen, der du wirst.",
+     "p": [
+      "Jede Handlung ist eine Stimme für eine Art von Mensch.",
+      "Du brauchst keine einstimmige Wahl, nur eine wachsende Mehrheit.",
+      "Eine verpasste Stimme macht die bisherigen nicht ungültig."
+     ],
+     "q": "Welche kleine Handlung heute wäre eine Stimme für deine neue Identität?",
+     "c": "Gib heute eine klare Stimme ab und sag dir: Das bin ich."
+    },
+    "es": {
+     "t": "Votos para tu identidad",
+     "g": "Ver cada pequeña acción como un voto por quien llegas a ser.",
+     "p": [
+      "Cada acción es un voto por un tipo de persona.",
+      "No necesitas unanimidad, solo una mayoría creciente.",
+      "Un voto perdido no borra los que ya emitiste."
+     ],
+     "q": "¿Qué pequeña acción hoy contaría como voto por tu nueva identidad?",
+     "c": "Emite hoy un voto claro y dite: ese soy yo."
+    },
+    "fr": {
+     "t": "Des votes pour ton identité",
+     "g": "Voir chaque petite action comme un vote pour la personne que tu deviens.",
+     "p": [
+      "Chaque action est un vote pour un type de personne.",
+      "Pas besoin d'unanimité, juste d'une majorité qui grandit.",
+      "Un vote manqué n'annule pas ceux que tu as déjà donnés."
+     ],
+     "q": "Quelle petite action aujourd'hui compterait comme un vote pour ta nouvelle identité ?",
+     "c": "Donne aujourd'hui un vote clair et dis-toi : c'est moi."
+    },
+    "it": {
+     "t": "Voti per la tua identità",
+     "g": "Vedere ogni piccola azione come un voto per la persona che diventi.",
+     "p": [
+      "Ogni azione è un voto per un tipo di persona.",
+      "Non serve l'unanimità, basta una maggioranza che cresce.",
+      "Un voto mancato non cancella quelli già dati."
+     ],
+     "q": "Quale piccola azione oggi conterebbe come voto per la tua nuova identità?",
+     "c": "Dai oggi un voto chiaro e dì a te stesso: questo sono io."
+    },
+    "pt": {
+     "t": "Votos para a tua identidade",
+     "g": "Ver cada pequena ação como um voto na pessoa em que te tornas.",
+     "p": [
+      "Cada ação é um voto num tipo de pessoa.",
+      "Não precisas de unanimidade, só de uma maioria a crescer.",
+      "Um voto falhado não anula os que já deste."
+     ],
+     "q": "Que pequena ação hoje contaria como voto na tua nova identidade?",
+     "c": "Dá hoje um voto claro e diz para ti: este sou eu."
+    },
+    "pt_BR": {
+     "t": "Votos para a sua identidade",
+     "g": "Ver cada pequena ação como um voto na pessoa que você está se tornando.",
+     "p": [
+      "Cada ação é um voto em um tipo de pessoa.",
+      "Você não precisa de unanimidade, só de uma maioria crescente.",
+      "Um voto perdido não anula os que você já deu."
+     ],
+     "q": "Que pequena ação hoje contaria como voto na sua nova identidade?",
+     "c": "Dê hoje um voto claro e diga a si mesmo: esse sou eu."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Small start recap",
+     "g": "Combine tiny habits, stacking and celebration.",
+     "p": [
+      "Make it tiny, anchor it to a routine and celebrate right away.",
+      "Write your plan with a time, a place and an identity sentence.",
+      "Review what feels easy and what still feels heavy."
+     ],
+     "q": "Which of these tools helps you most so far?",
+     "c": "Put it all together: after anchor, tiny habit, then celebrate. Do it today."
+    },
+    "de": {
+     "t": "Rückblick: klein starten",
+     "g": "Winzige Gewohnheiten, Verketten und Feiern verbinden.",
+     "p": [
+      "Mach es winzig, verankere es in einer Routine und feiere sofort.",
+      "Schreibe deinen Plan mit Zeit, Ort und einem Identitätssatz auf.",
+      "Prüfe, was sich leicht anfühlt und was noch schwer ist."
+     ],
+     "q": "Welches dieser Werkzeuge hilft dir bisher am meisten?",
+     "c": "Alles zusammen: nach dem Anker die winzige Gewohnheit, dann feiern. Mach es heute."
+    },
+    "es": {
+     "t": "Repaso del inicio pequeño",
+     "g": "Combinar hábitos diminutos, apilado y celebración.",
+     "p": [
+      "Hazlo diminuto, ánclalo a una rutina y celebra al instante.",
+      "Escribe tu plan con hora, lugar y una frase de identidad.",
+      "Revisa qué te resulta fácil y qué aún pesa."
+     ],
+     "q": "¿Cuál de estas herramientas te ayuda más hasta ahora?",
+     "c": "Todo junto: tras el ancla, el hábito diminuto, luego celebra. Hazlo hoy."
+    },
+    "fr": {
+     "t": "Récap du petit départ",
+     "g": "Combiner petites habitudes, empilement et célébration.",
+     "p": [
+      "Rends-la minuscule, ancre-la à une routine et fête tout de suite.",
+      "Écris ton plan avec une heure, un lieu et une phrase d'identité.",
+      "Vois ce qui te semble facile et ce qui pèse encore."
+     ],
+     "q": "Lequel de ces outils t'aide le plus jusqu'ici ?",
+     "c": "Tout ensemble : après l'ancre, la mini-habitude, puis fête-la. Fais-le aujourd'hui."
+    },
+    "it": {
+     "t": "Riepilogo del piccolo inizio",
+     "g": "Unire abitudini minuscole, sequenze e festeggiamento.",
+     "p": [
+      "Rendila minuscola, ancorala a una routine e festeggia subito.",
+      "Scrivi il piano con ora, luogo e una frase d'identità.",
+      "Verifica cosa ti sembra facile e cosa pesa ancora."
+     ],
+     "q": "Quale di questi strumenti ti aiuta di più finora?",
+     "c": "Tutto insieme: dopo l'ancora, l'abitudine minuscola, poi festeggia. Fallo oggi."
+    },
+    "pt": {
+     "t": "Resumo do começo pequeno",
+     "g": "Combinar hábitos minúsculos, empilhamento e celebração.",
+     "p": [
+      "Faz pequenino, ancora a uma rotina e celebra logo.",
+      "Escreve o plano com hora, lugar e uma frase de identidade.",
+      "Revê o que parece fácil e o que ainda pesa."
+     ],
+     "q": "Qual destas ferramentas te ajuda mais até agora?",
+     "c": "Tudo junto: depois da âncora, o hábito minúsculo, depois celebra. Faz hoje."
+    },
+    "pt_BR": {
+     "t": "Resumo do começo pequeno",
+     "g": "Combinar hábitos minúsculos, empilhamento e comemoração.",
+     "p": [
+      "Faça pequenininho, ancore numa rotina e comemore na hora.",
+      "Escreva o plano com horário, lugar e uma frase de identidade.",
+      "Reveja o que parece fácil e o que ainda pesa."
+     ],
+     "q": "Qual dessas ferramentas mais ajuda você até agora?",
+     "c": "Tudo junto: depois da âncora, o hábito minúsculo, depois comemore. Faça hoje."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "gadgets",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Laptop types",
+     "g": "Ultrabooks, 2-in-1s, gaming laptops and workstations for different needs.",
+     "p": [
+      "Ultrabooks are thin and light, made for travel, study and everyday office work.",
+      "2-in-1s have touchscreens that fold or detach to work as a tablet.",
+      "Gaming laptops and workstations pack stronger parts, so they run hotter, weigh more and drain batteries faster."
+     ],
+     "q": "Which laptop type fits your life best, and why?",
+     "c": "Write down your three top needs, such as weight, battery or power, and match a type."
+    },
+    "de": {
+     "t": "Laptop-Arten",
+     "g": "Ultrabooks, 2-in-1-Geräte, Gaming-Laptops und Workstations für verschiedene Bedürfnisse.",
+     "p": [
+      "Ultrabooks sind dünn und leicht, gemacht für Reisen, Studium und Büroalltag.",
+      "2-in-1-Geräte haben Touchscreens, die sich falten oder abnehmen lassen und als Tablet dienen.",
+      "Gaming-Laptops und Workstations bieten stärkere Teile, werden heißer, wiegen mehr und leeren Akkus schneller."
+     ],
+     "q": "Welche Laptop-Art passt am besten zu deinem Leben, und warum?",
+     "c": "Schreibe deine drei wichtigsten Bedürfnisse auf, etwa Gewicht, Akku oder Leistung, und ordne eine Art zu."
+    },
+    "es": {
+     "t": "Tipos de portátiles",
+     "g": "Ultrabooks, 2 en 1, portátiles gaming y estaciones de trabajo para distintas necesidades.",
+     "p": [
+      "Los ultrabooks son finos y ligeros, hechos para viajar, estudiar y la oficina de cada día.",
+      "Los 2 en 1 tienen pantalla táctil que se pliega o se separa para usarse como tableta.",
+      "Los portátiles gaming y las estaciones de trabajo llevan piezas potentes: se calientan más, pesan más y gastan más batería."
+     ],
+     "q": "¿Qué tipo de portátil encaja mejor con tu vida y por qué?",
+     "c": "Anota tus tres necesidades principales, como peso, batería o potencia, y elige un tipo."
+    },
+    "fr": {
+     "t": "Types d'ordinateurs portables",
+     "g": "Ultrabooks, 2-en-1, portables gaming et stations de travail selon les besoins.",
+     "p": [
+      "Les ultrabooks sont fins et légers, faits pour voyager, étudier et le bureau au quotidien.",
+      "Les 2-en-1 ont un écran tactile qui se plie ou se détache pour servir de tablette.",
+      "Les portables gaming et stations de travail embarquent des pièces puissantes : ils chauffent, pèsent et vident la batterie plus."
+     ],
+     "q": "Quel type de portable convient le mieux à ta vie, et pourquoi ?",
+     "c": "Note tes trois besoins principaux, comme poids, batterie ou puissance, et associe un type."
+    },
+    "it": {
+     "t": "Tipi di portatili",
+     "g": "Ultrabook, 2-in-1, portatili gaming e workstation per esigenze diverse.",
+     "p": [
+      "Gli ultrabook sono sottili e leggeri, pensati per viaggio, studio e ufficio di tutti i giorni.",
+      "I 2-in-1 hanno uno schermo touch che si ripiega o si stacca per fare da tablet.",
+      "I portatili gaming e le workstation montano componenti potenti: scaldano di più, pesano di più e consumano più batteria."
+     ],
+     "q": "Quale tipo di portatile si adatta meglio alla tua vita e perché?",
+     "c": "Scrivi le tue tre esigenze principali, come peso, batteria o potenza, e abbina un tipo."
+    },
+    "pt": {
+     "t": "Tipos de portáteis",
+     "g": "Ultrabooks, 2 em 1, portáteis gaming e estações de trabalho para necessidades diferentes.",
+     "p": [
+      "Os ultrabooks são finos e leves, feitos para viajar, estudar e o escritório do dia a dia.",
+      "Os 2 em 1 têm ecrã tátil que dobra ou se separa para servir de tablet.",
+      "Os portáteis gaming e as estações de trabalho têm peças potentes: aquecem mais, pesam mais e gastam mais bateria."
+     ],
+     "q": "Que tipo de portátil encaixa melhor na tua vida e porquê?",
+     "c": "Escreve as tuas três principais necessidades, como peso, bateria ou potência, e escolhe um tipo."
+    },
+    "pt_BR": {
+     "t": "Tipos de notebooks",
+     "g": "Ultrabooks, 2 em 1, notebooks gamer e estações de trabalho para necessidades diferentes.",
+     "p": [
+      "Os ultrabooks são finos e leves, feitos para viajar, estudar e o escritório do dia a dia.",
+      "Os 2 em 1 têm tela touch que dobra ou se separa para servir de tablet.",
+      "Os notebooks gamer e as estações de trabalho têm peças potentes: esquentam mais, pesam mais e gastam mais bateria."
+     ],
+     "q": "Que tipo de notebook combina melhor com a sua vida e por quê?",
+     "c": "Anote suas três principais necessidades, como peso, bateria ou potência, e escolha um tipo."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Desktop computers",
+     "g": "Towers and all-in-ones offer power and upgradability for home and work.",
+     "p": [
+      "A tower holds the parts in a case, while screen, keyboard and mouse are separate.",
+      "An all-in-one hides the computer behind the screen to save desk space.",
+      "Desktops are easier to upgrade, cool better and usually give more power per cost."
+     ],
+     "q": "Would a desktop or a laptop suit your daily routine better?",
+     "c": "Look at where a desktop would sit in your home and measure the space."
+    },
+    "de": {
+     "t": "Desktop-Computer",
+     "g": "Tower und All-in-One bieten Leistung und Aufrüstbarkeit für Zuhause und Büro.",
+     "p": [
+      "Ein Tower hält die Teile im Gehäuse, Bildschirm, Tastatur und Maus sind getrennt.",
+      "Ein All-in-One versteckt den Computer hinter dem Bildschirm und spart Schreibtischplatz.",
+      "Desktops sind leichter aufzurüsten, kühlen besser und bieten meist mehr Leistung pro Kosten."
+     ],
+     "q": "Würde ein Desktop oder ein Laptop besser zu deinem Alltag passen?",
+     "c": "Sieh nach, wo ein Desktop bei dir stehen würde, und miss den Platz."
+    },
+    "es": {
+     "t": "Ordenadores de sobremesa",
+     "g": "Torres y todo en uno ofrecen potencia y ampliación para casa y trabajo.",
+     "p": [
+      "Una torre guarda las piezas en una caja y pantalla, teclado y ratón van aparte.",
+      "Un todo en uno esconde el ordenador tras la pantalla para ahorrar espacio.",
+      "Los de sobremesa se amplían con más facilidad, se enfrían mejor y suelen dar más potencia por coste."
+     ],
+     "q": "¿Te encajaría mejor un sobremesa o un portátil en tu rutina diaria?",
+     "c": "Mira dónde iría un sobremesa en tu casa y mide el espacio."
+    },
+    "fr": {
+     "t": "Les ordinateurs de bureau",
+     "g": "Tours et tout-en-un offrent puissance et évolutivité pour la maison et le travail.",
+     "p": [
+      "Une tour range les pièces dans un boîtier ; écran, clavier et souris sont séparés.",
+      "Un tout-en-un cache l'ordinateur derrière l'écran pour gagner de la place.",
+      "Les ordinateurs de bureau évoluent plus facilement, refroidissent mieux et offrent souvent plus de puissance pour le prix."
+     ],
+     "q": "Un ordinateur de bureau ou un portable irait-il mieux à ton quotidien ?",
+     "c": "Regarde où un ordinateur de bureau tiendrait chez toi et mesure la place."
+    },
+    "it": {
+     "t": "I computer desktop",
+     "g": "Torri e all-in-one offrono potenza e possibilità di potenziamento per casa e lavoro.",
+     "p": [
+      "Una torre contiene i componenti in un case, mentre schermo, tastiera e mouse sono separati.",
+      "Un all-in-one nasconde il computer dietro lo schermo per risparmiare spazio.",
+      "I desktop si potenziano più facilmente, si raffreddano meglio e di solito danno più potenza per costo."
+     ],
+     "q": "Un desktop o un portatile si adatterebbe meglio alla tua giornata?",
+     "c": "Guarda dove starebbe un desktop in casa tua e misura lo spazio."
+    },
+    "pt": {
+     "t": "Computadores de secretária",
+     "g": "Torres e tudo em um oferecem potência e capacidade de expansão para casa e trabalho.",
+     "p": [
+      "Uma torre guarda as peças numa caixa e o ecrã, teclado e rato são separados.",
+      "Um tudo em um esconde o computador atrás do ecrã para poupar espaço.",
+      "Os de secretária atualizam-se mais facilmente, arrefecem melhor e costumam dar mais potência pelo custo."
+     ],
+     "q": "Um computador de secretária ou um portátil serviria melhor a tua rotina?",
+     "c": "Vê onde ficaria um computador de secretária em casa e mede o espaço."
+    },
+    "pt_BR": {
+     "t": "Computadores de mesa",
+     "g": "Torres e all-in-one oferecem potência e possibilidade de upgrade para casa e trabalho.",
+     "p": [
+      "Uma torre guarda as peças num gabinete e a tela, o teclado e o mouse são separados.",
+      "Um all-in-one esconde o computador atrás da tela para poupar espaço.",
+      "Os de mesa são mais fáceis de atualizar, esfriam melhor e costumam dar mais potência pelo custo."
+     ],
+     "q": "Um computador de mesa ou um notebook serviria melhor à sua rotina?",
+     "c": "Veja onde ficaria um computador de mesa na sua casa e meça o espaço."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Computer operating systems",
+     "g": "Windows, macOS, Linux and ChromeOS and what each is known for.",
+     "p": [
+      "Windows is the most widespread on PCs, with a huge range of software and hardware.",
+      "macOS runs on Apple computers; Linux is free, open and loved by tinkerers and servers.",
+      "ChromeOS is simple, built around the browser and popular in education."
+     ],
+     "q": "Which operating system do you use at home or work?",
+     "c": "Find out your computer's operating system name and version in its settings."
+    },
+    "de": {
+     "t": "Computer-Betriebssysteme",
+     "g": "Windows, macOS, Linux und ChromeOS und wofür jedes bekannt ist.",
+     "p": [
+      "Windows ist am Weitesten auf PCs verbreitet, mit riesiger Software- und Hardwareauswahl.",
+      "macOS läuft auf Apple-Computern; Linux ist frei, offen und bei Bastlern und Servern beliebt.",
+      "ChromeOS ist einfach, auf den Browser ausgerichtet und in der Bildung verbreitet."
+     ],
+     "q": "Welches Betriebssystem nutzt du zu Hause oder bei der Arbeit?",
+     "c": "Finde in den Einstellungen Name und Version deines Computer-Betriebssystems."
+    },
+    "es": {
+     "t": "Sistemas operativos de ordenador",
+     "g": "Windows, macOS, Linux y ChromeOS, y por qué se conoce cada uno.",
+     "p": [
+      "Windows es el más extendido en PC, con una enorme variedad de software y hardware.",
+      "macOS funciona en ordenadores Apple; Linux es libre, abierto y querido por aficionados y servidores.",
+      "ChromeOS es sencillo, gira en torno al navegador y es popular en educación."
+     ],
+     "q": "¿Qué sistema operativo usas en casa o en el trabajo?",
+     "c": "Averigua en los ajustes el nombre y la versión del sistema de tu ordenador."
+    },
+    "fr": {
+     "t": "Systèmes d'exploitation d'ordinateur",
+     "g": "Windows, macOS, Linux et ChromeOS et ce pour quoi chacun est connu.",
+     "p": [
+      "Windows est le plus répandu sur PC, avec une énorme variété de logiciels et de matériel.",
+      "macOS tourne sur les ordinateurs Apple ; Linux est libre, ouvert et apprécié des bricoleurs et des serveurs.",
+      "ChromeOS est simple, bâti autour du navigateur et courant dans l'éducation."
+     ],
+     "q": "Quel système utilises-tu à la maison ou au travail ?",
+     "c": "Trouve dans les réglages le nom et la version du système de ton ordinateur."
+    },
+    "it": {
+     "t": "Sistemi operativi dei computer",
+     "g": "Windows, macOS, Linux e ChromeOS e per cosa è noto ciascuno.",
+     "p": [
+      "Windows è il più diffuso sui PC, con un'enorme varietà di software e hardware.",
+      "macOS gira sui computer Apple; Linux è libero, aperto e amato da appassionati e server.",
+      "ChromeOS è semplice, costruito attorno al browser e diffuso nella scuola."
+     ],
+     "q": "Quale sistema operativo usi a casa o al lavoro?",
+     "c": "Scopri nelle impostazioni nome e versione del sistema del tuo computer."
+    },
+    "pt": {
+     "t": "Sistemas operativos de computador",
+     "g": "Windows, macOS, Linux e ChromeOS e pelo que cada um é conhecido.",
+     "p": [
+      "O Windows é o mais difundido nos PC, com uma enorme variedade de software e hardware.",
+      "O macOS corre em computadores Apple; o Linux é livre, aberto e adorado por curiosos e servidores.",
+      "O ChromeOS é simples, gira em torno do navegador e é popular na educação."
+     ],
+     "q": "Que sistema operativo usas em casa ou no trabalho?",
+     "c": "Descobre nas definições o nome e a versão do sistema do teu computador."
+    },
+    "pt_BR": {
+     "t": "Sistemas operacionais de computador",
+     "g": "Windows, macOS, Linux e ChromeOS e pelo que cada um é conhecido.",
+     "p": [
+      "O Windows é o mais difundido nos PCs, com enorme variedade de software e hardware.",
+      "O macOS roda em computadores Apple; o Linux é livre, aberto e adorado por curiosos e servidores.",
+      "O ChromeOS é simples, gira em torno do navegador e é popular na educação."
+     ],
+     "q": "Que sistema operacional você usa em casa ou no trabalho?",
+     "c": "Descubra nas configurações o nome e a versão do sistema do seu computador."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The keyboard and trackpad",
+     "g": "Shortcuts, gestures and comfort tips for typing and navigating.",
+     "p": [
+      "Keys are arranged in the QWERTY layout, whose name comes from the first six letters.",
+      "Trackpad gestures like two-finger scroll and pinch to zoom make moving around faster.",
+      "Comfort counts: relaxed shoulders, straight wrists and regular breaks protect your body."
+     ],
+     "q": "What is the most awkward thing about your keyboard or trackpad?",
+     "c": "Try a two-finger scroll and a pinch-to-zoom on your trackpad or touchscreen."
+    },
+    "de": {
+     "t": "Tastatur und Touchpad",
+     "g": "Kurzbefehle, Gesten und Komforttipps zum Tippen und Navigieren.",
+     "p": [
+      "Die Tasten sind im QWERTY-Layout angeordnet, benannt nach den ersten sechs Buchstaben.",
+      "Touchpad-Gesten wie Zwei-Finger-Scrollen und Zoomen durch Spreizen beschleunigen die Navigation.",
+      "Komfort zählt: entspannte Schultern, gerade Handgelenke und regelmäßige Pausen schützen den Körper."
+     ],
+     "q": "Was ist an deiner Tastatur oder deinem Touchpad am umständlichsten?",
+     "c": "Probiere Zwei-Finger-Scrollen und Zoomen auf Touchpad oder Touchscreen."
+    },
+    "es": {
+     "t": "El teclado y el trackpad",
+     "g": "Atajos, gestos y consejos de comodidad para escribir y navegar.",
+     "p": [
+      "Las teclas siguen la disposición QWERTY, cuyo nombre viene de las seis primeras letras.",
+      "Los gestos del trackpad, como desplazar con dos dedos y pellizcar para ampliar, aceleran el manejo.",
+      "La comodidad cuenta: hombros relajados, muñecas rectas y pausas regulares cuidan tu cuerpo."
+     ],
+     "q": "¿Qué es lo más incómodo de tu teclado o trackpad?",
+     "c": "Prueba el desplazamiento con dos dedos y el pellizco para ampliar en tu trackpad o pantalla."
+    },
+    "fr": {
+     "t": "Le clavier et le pavé tactile",
+     "g": "Raccourcis, gestes et conseils de confort pour taper et naviguer.",
+     "p": [
+      "Les touches suivent la disposition QWERTY, dont le nom vient des six premières lettres.",
+      "Les gestes du pavé tactile, comme défiler à deux doigts et pincer pour zoomer, accélèrent la navigation.",
+      "Le confort compte : épaules détendues, poignets droits et pauses régulières protègent ton corps."
+     ],
+     "q": "Qu'y a-t-il de plus gênant avec ton clavier ou ton pavé tactile ?",
+     "c": "Essaie le défilement à deux doigts et le pincement pour zoomer sur ton pavé ou écran."
+    },
+    "it": {
+     "t": "Tastiera e trackpad",
+     "g": "Scorciatoie, gesti e consigli di comfort per scrivere e navigare.",
+     "p": [
+      "I tasti seguono la disposizione QWERTY, il cui nome viene dalle prime sei lettere.",
+      "I gesti del trackpad, come scorrere con due dita e pizzicare per ingrandire, velocizzano l'uso.",
+      "Il comfort conta: spalle rilassate, polsi dritti e pause regolari proteggono il corpo."
+     ],
+     "q": "Cosa trovi più scomodo nella tua tastiera o nel tuo trackpad?",
+     "c": "Prova lo scorrimento con due dita e il pizzico per ingrandire su trackpad o touchscreen."
+    },
+    "pt": {
+     "t": "O teclado e o trackpad",
+     "g": "Atalhos, gestos e dicas de conforto para escrever e navegar.",
+     "p": [
+      "As teclas seguem a disposição QWERTY, cujo nome vem das primeiras seis letras.",
+      "Os gestos do trackpad, como deslizar com dois dedos e beliscar para ampliar, aceleram o uso.",
+      "O conforto conta: ombros relaxados, pulsos retos e pausas regulares protegem o corpo."
+     ],
+     "q": "O que é mais incómodo no teu teclado ou trackpad?",
+     "c": "Experimenta deslizar com dois dedos e beliscar para ampliar no trackpad ou ecrã."
+    },
+    "pt_BR": {
+     "t": "O teclado e o trackpad",
+     "g": "Atalhos, gestos e dicas de conforto para digitar e navegar.",
+     "p": [
+      "As teclas seguem a disposição QWERTY, cujo nome vem das seis primeiras letras.",
+      "Os gestos do trackpad, como rolar com dois dedos e pinçar para ampliar, aceleram o uso.",
+      "O conforto conta: ombros relaxados, pulsos retos e pausas regulares protegem o corpo."
+     ],
+     "q": "O que é mais incômodo no seu teclado ou trackpad?",
+     "c": "Experimente rolar com dois dedos e pinçar para ampliar no trackpad ou na tela."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ports and connections",
+     "g": "USB, HDMI, audio jacks and card readers, and what plugs in where.",
+     "p": [
+      "USB ports connect keyboards, drives and chargers; HDMI sends picture and sound to a screen.",
+      "An audio jack takes headphones, and a card reader opens camera memory cards.",
+      "Plug in gently and straight; forcing a connector can bend pins or crack the port."
+     ],
+     "q": "Which ports does your laptop or computer have, and which do you use?",
+     "c": "Look at the sides of your computer and name every port you can see."
+    },
+    "de": {
+     "t": "Anschlüsse und Verbindungen",
+     "g": "USB, HDMI, Audiobuchse und Kartenleser, und was wohin gehört.",
+     "p": [
+      "USB-Anschlüsse verbinden Tastaturen, Laufwerke und Ladegeräte; HDMI sendet Bild und Ton an einen Bildschirm.",
+      "Eine Audiobuchse nimmt Kopfhörer auf, ein Kartenleser öffnet Kamera-Speicherkarten.",
+      "Stecke sanft und gerade ein; Gewalt kann Pins verbiegen oder den Anschluss brechen."
+     ],
+     "q": "Welche Anschlüsse hat dein Laptop oder Computer, und welche nutzt du?",
+     "c": "Sieh dir die Seiten deines Computers an und benenne jeden Anschluss, den du siehst."
+    },
+    "es": {
+     "t": "Puertos y conexiones",
+     "g": "USB, HDMI, jack de audio y lector de tarjetas, y qué se conecta dónde.",
+     "p": [
+      "Los puertos USB conectan teclados, discos y cargadores; HDMI envía imagen y sonido a una pantalla.",
+      "El jack de audio recibe auriculares y el lector de tarjetas abre las tarjetas de memoria de cámaras.",
+      "Conecta con suavidad y recto; forzar un conector puede doblar pines o romper el puerto."
+     ],
+     "q": "¿Qué puertos tiene tu portátil o computadora y cuáles usas?",
+     "c": "Mira los lados de tu ordenador y nombra todos los puertos que veas."
+    },
+    "fr": {
+     "t": "Ports et connexions",
+     "g": "USB, HDMI, prise audio et lecteur de cartes, et ce qui se branche où.",
+     "p": [
+      "Les ports USB relient claviers, disques et chargeurs ; le HDMI envoie image et son vers un écran.",
+      "La prise audio accueille un casque et le lecteur de cartes ouvre les cartes mémoire d'appareil photo.",
+      "Branche doucement et bien droit ; forcer un connecteur peut plier les broches ou casser le port."
+     ],
+     "q": "Quels ports a ton ordinateur et lesquels utilises-tu ?",
+     "c": "Regarde les côtés de ton ordinateur et nomme chaque port que tu vois."
+    },
+    "it": {
+     "t": "Porte e connessioni",
+     "g": "USB, HDMI, jack audio e lettore di schede, e cosa si collega dove.",
+     "p": [
+      "Le porte USB collegano tastiere, dischi e caricabatterie; l'HDMI invia immagine e suono a uno schermo.",
+      "Il jack audio accoglie le cuffie e il lettore di schede apre le schede di memoria delle fotocamere.",
+      "Collega con delicatezza e dritto; forzare un connettore può piegare i pin o rompere la porta."
+     ],
+     "q": "Quali porte ha il tuo computer e quali usi?",
+     "c": "Guarda i lati del computer e nomina ogni porta che vedi."
+    },
+    "pt": {
+     "t": "Portas e ligações",
+     "g": "USB, HDMI, ficha de áudio e leitor de cartões, e o que se liga onde.",
+     "p": [
+      "As portas USB ligam teclados, discos e carregadores; o HDMI envia imagem e som para um ecrã.",
+      "A ficha de áudio recebe auscultadores e o leitor de cartões abre os cartões de memória de câmaras.",
+      "Liga com suavidade e a direito; forçar um conector pode dobrar pinos ou partir a porta."
+     ],
+     "q": "Que portas tem o teu computador e quais usas?",
+     "c": "Olha para os lados do computador e nomeia todas as portas que vês."
+    },
+    "pt_BR": {
+     "t": "Portas e conexões",
+     "g": "USB, HDMI, entrada de áudio e leitor de cartões, e o que se liga onde.",
+     "p": [
+      "As portas USB ligam teclados, HDs e carregadores; o HDMI envia imagem e som para uma tela.",
+      "A entrada de áudio recebe fones e o leitor de cartões abre os cartões de memória de câmeras.",
+      "Conecte com suavidade e reto; forçar um conector pode entortar pinos ou quebrar a porta."
+     ],
+     "q": "Que portas o seu computador tem e quais você usa?",
+     "c": "Olhe as laterais do computador e nomeie todas as portas que vir."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "USB-C explained",
+     "g": "One small reversible plug for charging, data and video on many devices.",
+     "p": [
+      "USB-C is a small, oval plug that goes in either way up, so there is no wrong side.",
+      "One cable type can charge, move data and carry video, but not every cable does all three.",
+      "Use good-quality cables made for the power your device needs to charge safely."
+     ],
+     "q": "How many different cables do you have, and could USB-C replace some?",
+     "c": "Gather your cables and sort them by plug type to see which you really need."
+    },
+    "de": {
+     "t": "USB-C erklärt",
+     "g": "Ein kleiner, wendbarer Stecker für Laden, Daten und Video an vielen Geräten.",
+     "p": [
+      "USB-C ist ein kleiner, ovaler Stecker, der in beide Richtungen passt, es gibt keine falsche Seite.",
+      "Ein Kabeltyp kann laden, Daten übertragen und Video führen, doch nicht jedes Kabel kann alle drei.",
+      "Nutze hochwertige Kabel für die Leistung, die dein Gerät zum sicheren Laden braucht."
+     ],
+     "q": "Wie viele verschiedene Kabel hast du, und könnte USB-C manche ersetzen?",
+     "c": "Sammle deine Kabel und sortiere sie nach Steckertyp, um zu sehen, welche du wirklich brauchst."
+    },
+    "es": {
+     "t": "USB-C explicado",
+     "g": "Un conector pequeño y reversible para cargar, datos y vídeo en muchos aparatos.",
+     "p": [
+      "USB-C es un conector pequeño y ovalado que entra por cualquier lado, sin lado incorrecto.",
+      "Un solo tipo de cable puede cargar, mover datos y llevar vídeo, pero no todos hacen las tres cosas.",
+      "Usa cables de buena calidad hechos para la potencia que tu aparato necesita para cargar con seguridad."
+     ],
+     "q": "¿Cuántos cables distintos tienes y podría USB-C sustituir algunos?",
+     "c": "Reúne tus cables y clasifícalos por tipo de conector para ver cuáles necesitas."
+    },
+    "fr": {
+     "t": "L'USB-C expliqué",
+     "g": "Une petite prise réversible pour la charge, les données et la vidéo sur beaucoup d'appareils.",
+     "p": [
+      "L'USB-C est une petite prise ovale qui se branche dans les deux sens : pas de mauvais côté.",
+      "Un seul type de câble peut charger, transférer des données et porter la vidéo, mais pas tous ne font les trois.",
+      "Utilise des câbles de bonne qualité adaptés à la puissance dont ton appareil a besoin pour charger sans risque."
+     ],
+     "q": "Combien de câbles différents as-tu, et l'USB-C pourrait-il en remplacer ?",
+     "c": "Rassemble tes câbles et trie-les par type de prise pour voir lesquels te servent vraiment."
+    },
+    "it": {
+     "t": "USB-C spiegato",
+     "g": "Un piccolo connettore reversibile per ricarica, dati e video su molti dispositivi.",
+     "p": [
+      "L'USB-C è un piccolo connettore ovale che entra in entrambi i versi, senza lato sbagliato.",
+      "Un solo tipo di cavo può ricaricare, spostare dati e portare video, ma non tutti fanno tutte e tre le cose.",
+      "Usa cavi di buona qualità adatti alla potenza che il tuo dispositivo richiede per ricaricare in sicurezza."
+     ],
+     "q": "Quanti cavi diversi hai e l'USB-C potrebbe sostituirne alcuni?",
+     "c": "Raccogli i tuoi cavi e ordinali per tipo di connettore per vedere quali servono davvero."
+    },
+    "pt": {
+     "t": "USB-C explicado",
+     "g": "Uma ficha pequena e reversível para carregar, dados e vídeo em muitos aparelhos.",
+     "p": [
+      "O USB-C é uma ficha pequena e oval que entra de qualquer lado, sem lado errado.",
+      "Um só tipo de cabo pode carregar, mover dados e levar vídeo, mas nem todos fazem as três coisas.",
+      "Usa cabos de boa qualidade feitos para a potência de que o aparelho precisa para carregar em segurança."
+     ],
+     "q": "Quantos cabos diferentes tens e o USB-C poderia substituir alguns?",
+     "c": "Junta os teus cabos e organiza-os por tipo de ficha para ver quais precisas mesmo."
+    },
+    "pt_BR": {
+     "t": "USB-C explicado",
+     "g": "Um plugue pequeno e reversível para carregar, dados e vídeo em muitos aparelhos.",
+     "p": [
+      "O USB-C é um plugue pequeno e oval que entra de qualquer lado, sem lado errado.",
+      "Um só tipo de cabo pode carregar, mover dados e levar vídeo, mas nem todos fazem as três coisas.",
+      "Use cabos de boa qualidade feitos para a potência de que o aparelho precisa para carregar com segurança."
+     ],
+     "q": "Quantos cabos diferentes você tem e o USB-C poderia substituir alguns?",
+     "c": "Junte seus cabos e organize por tipo de plugue para ver quais você precisa mesmo."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "External drives",
+     "g": "Extra storage for backups, big files and moving data between computers.",
+     "p": [
+      "An external drive adds storage through a cable and holds backups or large files.",
+      "Hard drives use spinning disks; solid-state drives have no moving parts and are tougher.",
+      "Always eject a drive safely before unplugging, and never move it while a disk is spinning."
+     ],
+     "q": "What would you store on an external drive, if you had one?",
+     "c": "Find the safe-eject option on your computer so you know where it lives."
+    },
+    "de": {
+     "t": "Externe Laufwerke",
+     "g": "Zusätzlicher Speicher für Backups, große Dateien und den Datentransfer zwischen Computern.",
+     "p": [
+      "Ein externes Laufwerk erweitert den Speicher per Kabel und hält Backups oder große Dateien.",
+      "Festplatten nutzen rotierende Scheiben; SSDs haben keine beweglichen Teile und sind robuster.",
+      "Wirf ein Laufwerk immer sicher aus, bevor du es abziehst, und bewege es nie während des Drehens."
+     ],
+     "q": "Was würdest du auf einem externen Laufwerk speichern, wenn du eines hättest?",
+     "c": "Finde die Funktion zum sicheren Auswerfen auf deinem Computer, damit du weißt, wo sie ist."
+    },
+    "es": {
+     "t": "Unidades externas",
+     "g": "Almacenamiento extra para copias, archivos grandes y mover datos entre ordenadores.",
+     "p": [
+      "Una unidad externa añade almacenamiento por cable y guarda copias o archivos grandes.",
+      "Los discos duros usan platos giratorios; los SSD no tienen piezas móviles y son más resistentes.",
+      "Expulsa siempre la unidad de forma segura antes de desenchufar y no la muevas mientras gira."
+     ],
+     "q": "¿Qué guardarías en una unidad externa, si tuvieras una?",
+     "c": "Busca la opción de expulsión segura en tu ordenador para saber dónde está."
+    },
+    "fr": {
+     "t": "Disques externes",
+     "g": "Du stockage en plus pour sauvegardes, gros fichiers et transferts entre ordinateurs.",
+     "p": [
+      "Un disque externe ajoute du stockage par câble et garde sauvegardes et gros fichiers.",
+      "Les disques durs ont des plateaux qui tournent ; les SSD n'ont aucune pièce mobile et sont plus robustes.",
+      "Éjecte toujours le disque proprement avant de le débrancher et ne le déplace pas pendant qu'il tourne."
+     ],
+     "q": "Que stockerais-tu sur un disque externe, si tu en avais un ?",
+     "c": "Trouve l'option d'éjection sécurisée de ton ordinateur pour savoir où elle se trouve."
+    },
+    "it": {
+     "t": "Unità esterne",
+     "g": "Spazio in più per backup, file grandi e per spostare dati tra computer.",
+     "p": [
+      "Un'unità esterna aggiunge spazio tramite cavo e custodisce backup o file grandi.",
+      "Gli hard disk usano dischi rotanti; gli SSD non hanno parti mobili e sono più resistenti.",
+      "Espelli sempre l'unità in modo sicuro prima di scollegarla e non spostarla mentre gira."
+     ],
+     "q": "Cosa conserveresti su un'unità esterna, se ne avessi una?",
+     "c": "Trova l'opzione di espulsione sicura sul computer per sapere dov'è."
+    },
+    "pt": {
+     "t": "Discos externos",
+     "g": "Armazenamento extra para cópias, ficheiros grandes e mover dados entre computadores.",
+     "p": [
+      "Um disco externo acrescenta armazenamento por cabo e guarda cópias ou ficheiros grandes.",
+      "Os discos rígidos usam pratos giratórios; os SSD não têm peças móveis e são mais resistentes.",
+      "Ejeta sempre o disco em segurança antes de o desligar e não o movas enquanto gira."
+     ],
+     "q": "O que guardarias num disco externo, se tivesses um?",
+     "c": "Encontra a opção de ejeção segura no computador para saberes onde fica."
+    },
+    "pt_BR": {
+     "t": "Discos externos",
+     "g": "Armazenamento extra para backups, arquivos grandes e mover dados entre computadores.",
+     "p": [
+      "Um disco externo acrescenta armazenamento por cabo e guarda backups ou arquivos grandes.",
+      "Os HDs usam pratos giratórios; os SSDs não têm peças móveis e são mais resistentes.",
+      "Ejete sempre o disco com segurança antes de desconectar e não o mova enquanto gira."
+     ],
+     "q": "O que você guardaria num disco externo, se tivesse um?",
+     "c": "Ache a opção de ejeção segura no computador para saber onde fica."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Files and folders",
+     "g": "Organising documents so you can always find what you need.",
+     "p": [
+      "A file holds one thing, like a document or photo; folders group files like drawers.",
+      "Clear names with dates, such as trip-notes-2026, make files easy to find later.",
+      "A simple structure of a few main folders beats a deep maze of subfolders."
+     ],
+     "q": "Where do your files pile up, and what folders would tidy them?",
+     "c": "Create three clear folders and move ten loose files into them today."
+    },
+    "de": {
+     "t": "Dateien und Ordner",
+     "g": "Dokumente so ordnen, dass du immer findest, was du brauchst.",
+     "p": [
+      "Eine Datei enthält eine Sache, wie Dokument oder Foto; Ordner gruppieren Dateien wie Schubladen.",
+      "Klare Namen mit Datum, etwa reise-notizen-2026, machen Dateien später leicht auffindbar.",
+      "Eine einfache Struktur aus wenigen Hauptordnern schlägt ein tiefes Labyrinth aus Unterordnern."
+     ],
+     "q": "Wo häufen sich deine Dateien, und welche Ordner würden sie ordnen?",
+     "c": "Lege heute drei klare Ordner an und verschiebe zehn lose Dateien hinein."
+    },
+    "es": {
+     "t": "Archivos y carpetas",
+     "g": "Organizar documentos para encontrar siempre lo que necesitas.",
+     "p": [
+      "Un archivo contiene una cosa, como un documento o foto; las carpetas agrupan archivos como cajones.",
+      "Nombres claros con fecha, como notas-viaje-2026, facilitan encontrar archivos después.",
+      "Una estructura simple de pocas carpetas principales vale más que un laberinto de subcarpetas."
+     ],
+     "q": "¿Dónde se acumulan tus archivos y qué carpetas los ordenarían?",
+     "c": "Crea hoy tres carpetas claras y mueve diez archivos sueltos a ellas."
+    },
+    "fr": {
+     "t": "Fichiers et dossiers",
+     "g": "Organiser ses documents pour toujours retrouver ce dont on a besoin.",
+     "p": [
+      "Un fichier contient une chose, comme un document ou une photo ; les dossiers regroupent les fichiers comme des tiroirs.",
+      "Des noms clairs avec la date, comme notes-voyage-2026, facilitent la recherche plus tard.",
+      "Une structure simple de quelques dossiers principaux vaut mieux qu'un labyrinthe de sous-dossiers."
+     ],
+     "q": "Où tes fichiers s'accumulent-ils, et quels dossiers les rangeraient ?",
+     "c": "Crée aujourd'hui trois dossiers clairs et déplace-y dix fichiers en vrac."
+    },
+    "it": {
+     "t": "File e cartelle",
+     "g": "Organizzare i documenti per trovare sempre ciò che serve.",
+     "p": [
+      "Un file contiene una cosa, come un documento o una foto; le cartelle raggruppano i file come cassetti.",
+      "Nomi chiari con data, come note-viaggio-2026, rendono facile trovare i file dopo.",
+      "Una struttura semplice con poche cartelle principali batte un labirinto di sottocartelle."
+     ],
+     "q": "Dove si accumulano i tuoi file e quali cartelle li metterebbero in ordine?",
+     "c": "Crea oggi tre cartelle chiare e sposta dieci file sparsi al loro interno."
+    },
+    "pt": {
+     "t": "Ficheiros e pastas",
+     "g": "Organizar documentos para encontrares sempre o que precisas.",
+     "p": [
+      "Um ficheiro contém uma coisa, como um documento ou foto; as pastas agrupam ficheiros como gavetas.",
+      "Nomes claros com data, como notas-viagem-2026, facilitam encontrar ficheiros depois.",
+      "Uma estrutura simples com poucas pastas principais vale mais do que um labirinto de subpastas."
+     ],
+     "q": "Onde se acumulam os teus ficheiros e que pastas os organizariam?",
+     "c": "Cria hoje três pastas claras e move dez ficheiros soltos para elas."
+    },
+    "pt_BR": {
+     "t": "Arquivos e pastas",
+     "g": "Organizar documentos para sempre achar o que você precisa.",
+     "p": [
+      "Um arquivo contém uma coisa, como um documento ou foto; as pastas agrupam arquivos como gavetas.",
+      "Nomes claros com data, como notas-viagem-2026, facilitam achar arquivos depois.",
+      "Uma estrutura simples com poucas pastas principais vale mais que um labirinto de subpastas."
+     ],
+     "q": "Onde seus arquivos se acumulam e que pastas os organizariam?",
+     "c": "Crie hoje três pastas claras e mova dez arquivos soltos para elas."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keyboard shortcuts",
+     "g": "Copy, paste, undo, find and switch apps in a flash.",
+     "p": [
+      "Copy, cut and paste use Ctrl or Cmd with C, X and V; undo uses Z.",
+      "Find on a page uses Ctrl or Cmd with F; switching apps uses Alt or Cmd with Tab.",
+      "Learn one shortcut at a time and use it until your fingers do it by themselves."
+     ],
+     "q": "Which action do you repeat most that a shortcut could speed up?",
+     "c": "Use copy, paste and undo with shortcuts only, ten times, without the mouse."
+    },
+    "de": {
+     "t": "Tastenkürzel",
+     "g": "Kopieren, Einfügen, Rückgängig, Suchen und App-Wechsel im Handumdrehen.",
+     "p": [
+      "Kopieren, Ausschneiden und Einfügen nutzen Strg oder Cmd mit C, X und V; Rückgängig mit Z.",
+      "Suchen auf einer Seite geht mit Strg oder Cmd plus F; App-Wechsel mit Alt oder Cmd plus Tab.",
+      "Lerne ein Kürzel nach dem anderen und nutze es, bis die Finger es von selbst tun."
+     ],
+     "q": "Welche Handlung wiederholst du am meisten, die ein Kürzel beschleunigen könnte?",
+     "c": "Nutze Kopieren, Einfügen und Rückgängig zehnmal nur per Tastenkürzel, ohne Maus."
+    },
+    "es": {
+     "t": "Atajos de teclado",
+     "g": "Copiar, pegar, deshacer, buscar y cambiar de app en un instante.",
+     "p": [
+      "Copiar, cortar y pegar usan Ctrl o Cmd con C, X y V; deshacer usa Z.",
+      "Buscar en una página usa Ctrl o Cmd con F; cambiar de app usa Alt o Cmd con Tab.",
+      "Aprende un atajo cada vez y úsalo hasta que tus dedos lo hagan solos."
+     ],
+     "q": "¿Qué acción repites más que un atajo podría acelerar?",
+     "c": "Usa copiar, pegar y deshacer diez veces solo con atajos, sin ratón."
+    },
+    "fr": {
+     "t": "Raccourcis clavier",
+     "g": "Copier, coller, annuler, rechercher et changer d'appli en un éclair.",
+     "p": [
+      "Copier, couper et coller utilisent Ctrl ou Cmd avec C, X et V ; annuler utilise Z.",
+      "Rechercher dans une page utilise Ctrl ou Cmd avec F ; changer d'appli utilise Alt ou Cmd avec Tab.",
+      "Apprends un raccourci à la fois et utilise-le jusqu'à ce que tes doigts le fassent seuls."
+     ],
+     "q": "Quelle action répètes-tu le plus qu'un raccourci pourrait accélérer ?",
+     "c": "Utilise copier, coller et annuler dix fois uniquement avec des raccourcis, sans souris."
+    },
+    "it": {
+     "t": "Scorciatoie da tastiera",
+     "g": "Copiare, incollare, annullare, cercare e cambiare app in un lampo.",
+     "p": [
+      "Copia, taglia e incolla usano Ctrl o Cmd con C, X e V; annulla usa Z.",
+      "Cercare in una pagina usa Ctrl o Cmd con F; cambiare app usa Alt o Cmd con Tab.",
+      "Impara una scorciatoia alla volta e usala finché le dita lo fanno da sole."
+     ],
+     "q": "Quale azione ripeti di più che una scorciatoia potrebbe velocizzare?",
+     "c": "Usa copia, incolla e annulla dieci volte solo con le scorciatoie, senza mouse."
+    },
+    "pt": {
+     "t": "Atalhos de teclado",
+     "g": "Copiar, colar, anular, procurar e trocar de app num instante.",
+     "p": [
+      "Copiar, cortar e colar usam Ctrl ou Cmd com C, X e V; anular usa Z.",
+      "Procurar numa página usa Ctrl ou Cmd com F; trocar de app usa Alt ou Cmd com Tab.",
+      "Aprende um atalho de cada vez e usa-o até os dedos o fazerem sozinhos."
+     ],
+     "q": "Que ação repetes mais que um atalho poderia acelerar?",
+     "c": "Usa copiar, colar e anular dez vezes só com atalhos, sem rato."
+    },
+    "pt_BR": {
+     "t": "Atalhos de teclado",
+     "g": "Copiar, colar, desfazer, procurar e trocar de app num instante.",
+     "p": [
+      "Copiar, recortar e colar usam Ctrl ou Cmd com C, X e V; desfazer usa Z.",
+      "Procurar numa página usa Ctrl ou Cmd com F; trocar de app usa Alt ou Cmd com Tab.",
+      "Aprenda um atalho de cada vez e use até os dedos fazerem sozinhos."
+     ],
+     "q": "Que ação você mais repete que um atalho poderia acelerar?",
+     "c": "Use copiar, colar e desfazer dez vezes só com atalhos, sem mouse."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Web browsers",
+     "g": "Tabs, bookmarks, history and private windows explained.",
+     "p": [
+      "A browser is the app that opens websites; tabs let you keep several pages open.",
+      "Bookmarks save favourite pages, and history lists where you have been.",
+      "A private window does not keep history on your device, but websites and networks may still see you."
+     ],
+     "q": "Which websites do you visit daily, and are they bookmarked?",
+     "c": "Bookmark three pages you use often and close tabs you no longer need."
+    },
+    "de": {
+     "t": "Webbrowser",
+     "g": "Tabs, Lesezeichen, Verlauf und private Fenster erklärt.",
+     "p": [
+      "Ein Browser ist die App, die Websites öffnet; Tabs halten mehrere Seiten gleichzeitig offen.",
+      "Lesezeichen speichern Lieblingsseiten, und der Verlauf listet, wo du warst.",
+      "Ein privates Fenster speichert keinen Verlauf auf dem Gerät, doch Websites und Netzwerke können dich sehen."
+     ],
+     "q": "Welche Websites besuchst du täglich, und hast du sie als Lesezeichen?",
+     "c": "Setze drei oft genutzte Seiten als Lesezeichen und schließe nicht mehr benötigte Tabs."
+    },
+    "es": {
+     "t": "Navegadores web",
+     "g": "Pestañas, marcadores, historial y ventanas privadas explicados.",
+     "p": [
+      "Un navegador es la app que abre sitios web; las pestañas mantienen varias páginas abiertas.",
+      "Los marcadores guardan páginas favoritas y el historial lista por dónde has pasado.",
+      "Una ventana privada no guarda historial en tu aparato, pero sitios y redes aún pueden verte."
+     ],
+     "q": "¿Qué sitios visitas a diario y los tienes en marcadores?",
+     "c": "Guarda tres páginas que uses a menudo y cierra las pestañas que ya no necesites."
+    },
+    "fr": {
+     "t": "Les navigateurs web",
+     "g": "Onglets, favoris, historique et fenêtres privées expliqués.",
+     "p": [
+      "Un navigateur est l'appli qui ouvre les sites web ; les onglets gardent plusieurs pages ouvertes.",
+      "Les favoris enregistrent tes pages préférées et l'historique liste où tu es allé.",
+      "Une fenêtre privée ne garde pas d'historique sur ton appareil, mais sites et réseaux peuvent encore te voir."
+     ],
+     "q": "Quels sites visites-tu chaque jour, et sont-ils en favoris ?",
+     "c": "Mets trois pages courantes en favoris et ferme les onglets inutiles."
+    },
+    "it": {
+     "t": "I browser web",
+     "g": "Schede, segnalibri, cronologia e finestre private spiegati.",
+     "p": [
+      "Un browser è l'app che apre i siti web; le schede tengono aperte più pagine.",
+      "I segnalibri salvano le pagine preferite e la cronologia elenca dove sei stato.",
+      "Una finestra privata non conserva la cronologia sul dispositivo, ma siti e reti possono comunque vederti."
+     ],
+     "q": "Quali siti visiti ogni giorno e sono nei segnalibri?",
+     "c": "Aggiungi ai segnalibri tre pagine che usi spesso e chiudi le schede che non servono."
+    },
+    "pt": {
+     "t": "Navegadores web",
+     "g": "Separadores, marcadores, histórico e janelas privadas explicados.",
+     "p": [
+      "Um navegador é a app que abre sites; os separadores mantêm várias páginas abertas.",
+      "Os marcadores guardam páginas favoritas e o histórico lista por onde passaste.",
+      "Uma janela privada não guarda histórico no aparelho, mas sites e redes ainda te podem ver."
+     ],
+     "q": "Que sites visitas todos os dias e tens nos marcadores?",
+     "c": "Guarda três páginas que uses muitas vezes e fecha os separadores de que já não precisas."
+    },
+    "pt_BR": {
+     "t": "Navegadores web",
+     "g": "Abas, favoritos, histórico e janelas privadas explicados.",
+     "p": [
+      "Um navegador é o app que abre sites; as abas mantêm várias páginas abertas.",
+      "Os favoritos guardam páginas preferidas e o histórico lista por onde você passou.",
+      "Uma janela privada não guarda histórico no aparelho, mas sites e redes ainda podem ver você."
+     ],
+     "q": "Que sites você visita todo dia e tem nos favoritos?",
+     "c": "Salve três páginas que você usa muito e feche as abas de que não precisa mais."
+    }
+   }
+  }
+ ]
+}

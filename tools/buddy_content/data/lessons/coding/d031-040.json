@@ -1,0 +1,835 @@
+{
+ "topic": "coding",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "While loops",
+     "g": "Repeat code as long as a condition stays true.",
+     "p": [
+      "while checks the condition, runs the block, then checks again.",
+      "Example: while count < 3: print(count) then count = count + 1.",
+      "Loops save you from copying the same line many times."
+     ],
+     "q": "What do you repeat every day that a loop could describe?",
+     "c": "Print the numbers 1 to 5 with a while loop and a counter variable."
+    },
+    "de": {
+     "t": "While-Schleifen",
+     "g": "Wiederhole Code, solange eine Bedingung wahr bleibt.",
+     "p": [
+      "while prüft die Bedingung, führt den Block aus und prüft erneut.",
+      "Beispiel: while count < 3: print(count), dann count = count + 1.",
+      "Schleifen ersparen dir, dieselbe Zeile oft zu kopieren."
+     ],
+     "q": "Was wiederholst du täglich, das eine Schleife beschreiben könnte?",
+     "c": "Gib mit einer while-Schleife und einer Zählvariable die Zahlen 1 bis 5 aus."
+    },
+    "es": {
+     "t": "Bucles while",
+     "g": "Repite código mientras una condición siga siendo verdadera.",
+     "p": [
+      "while comprueba la condición, ejecuta el bloque y vuelve a comprobar.",
+      "Ejemplo: while count < 3: print(count) y luego count = count + 1.",
+      "Los bucles evitan copiar la misma línea muchas veces."
+     ],
+     "q": "¿Qué repites cada día que un bucle podría describir?",
+     "c": "Imprime los números del 1 al 5 con un bucle while y una variable contador."
+    },
+    "fr": {
+     "t": "Les boucles while",
+     "g": "Répète du code tant qu'une condition reste vraie.",
+     "p": [
+      "while vérifie la condition, exécute le bloc, puis vérifie à nouveau.",
+      "Exemple : while count < 3: print(count) puis count = count + 1.",
+      "Les boucles t'évitent de copier la même ligne plusieurs fois."
+     ],
+     "q": "Que répètes-tu chaque jour qu'une boucle pourrait décrire ?",
+     "c": "Affiche les nombres de 1 à 5 avec une boucle while et un compteur."
+    },
+    "it": {
+     "t": "I cicli while",
+     "g": "Ripeti il codice finché una condizione resta vera.",
+     "p": [
+      "while controlla la condizione, esegue il blocco, poi controlla di nuovo.",
+      "Esempio: while count < 3: print(count) poi count = count + 1.",
+      "I cicli evitano di copiare la stessa riga tante volte."
+     ],
+     "q": "Cosa ripeti ogni giorno che un ciclo potrebbe descrivere?",
+     "c": "Stampa i numeri da 1 a 5 con un ciclo while e una variabile contatore."
+    },
+    "pt": {
+     "t": "Ciclos while",
+     "g": "Repete código enquanto uma condição se mantiver verdadeira.",
+     "p": [
+      "while verifica a condição, executa o bloco e verifica de novo.",
+      "Exemplo: while count < 3: print(count) e depois count = count + 1.",
+      "Os ciclos poupam-te de copiar a mesma linha muitas vezes."
+     ],
+     "q": "O que repetes todos os dias que um ciclo podia descrever?",
+     "c": "Imprime os números de 1 a 5 com um ciclo while e uma variável contador."
+    },
+    "pt_BR": {
+     "t": "Laços while",
+     "g": "Repita código enquanto uma condição continuar verdadeira.",
+     "p": [
+      "while verifica a condição, executa o bloco e verifica de novo.",
+      "Exemplo: while count < 3: print(count) e depois count = count + 1.",
+      "Laços evitam copiar a mesma linha muitas vezes."
+     ],
+     "q": "O que você repete todo dia que um laço poderia descrever?",
+     "c": "Imprima os números de 1 a 5 com um laço while e uma variável contador."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Avoiding infinite loops",
+     "g": "Make sure a loop condition eventually becomes false.",
+     "p": [
+      "If nothing changes the condition, the loop never ends.",
+      "Always update the counter inside the loop body.",
+      "If a program freezes, stop it with Ctrl+C in the terminal."
+     ],
+     "q": "Can you think of a real-life loop that never stops, like a song on repeat?",
+     "c": "Fix this: n = 3 then while n > 0: print(n). Add the line that makes it end."
+    },
+    "de": {
+     "t": "Endlosschleifen vermeiden",
+     "g": "Sorge dafür, dass eine Schleifenbedingung irgendwann falsch wird.",
+     "p": [
+      "Ändert nichts die Bedingung, endet die Schleife nie.",
+      "Aktualisiere den Zähler immer im Schleifenkörper.",
+      "Hängt ein Programm, brich es im Terminal mit Strg+C ab."
+     ],
+     "q": "Fällt dir ein Alltags-Loop ein, der nie endet, etwa ein Lied auf Repeat?",
+     "c": "Repariere: n = 3, dann while n > 0: print(n). Füge die Zeile hinzu, die es beenden lässt."
+    },
+    "es": {
+     "t": "Evitar bucles infinitos",
+     "g": "Asegúrate de que la condición de un bucle acabe siendo falsa.",
+     "p": [
+      "Si nada cambia la condición, el bucle nunca termina.",
+      "Actualiza siempre el contador dentro del cuerpo del bucle.",
+      "Si un programa se congela, páralo con Ctrl+C en la terminal."
+     ],
+     "q": "¿Se te ocurre un bucle real que no para, como una canción en repetición?",
+     "c": "Arregla: n = 3 y while n > 0: print(n). Añade la línea que haga que termine."
+    },
+    "fr": {
+     "t": "Éviter les boucles infinies",
+     "g": "Assure-toi que la condition d'une boucle finisse par devenir fausse.",
+     "p": [
+      "Si rien ne change la condition, la boucle ne s'arrête jamais.",
+      "Mets toujours à jour le compteur dans le corps de la boucle.",
+      "Si un programme se fige, arrête-le avec Ctrl+C dans le terminal."
+     ],
+     "q": "Vois-tu une boucle de la vie réelle qui ne s'arrête pas, comme une chanson en répétition ?",
+     "c": "Corrige : n = 3 puis while n > 0: print(n). Ajoute la ligne qui la fait finir."
+    },
+    "it": {
+     "t": "Evitare i cicli infiniti",
+     "g": "Assicurati che la condizione di un ciclo diventi prima o poi falsa.",
+     "p": [
+      "Se nulla cambia la condizione, il ciclo non finisce mai.",
+      "Aggiorna sempre il contatore dentro il corpo del ciclo.",
+      "Se un programma si blocca, fermalo con Ctrl+C nel terminale."
+     ],
+     "q": "Ti viene in mente un ciclo reale che non si ferma, come una canzone in ripetizione?",
+     "c": "Correggi: n = 3 poi while n > 0: print(n). Aggiungi la riga che lo fa finire."
+    },
+    "pt": {
+     "t": "Evitar ciclos infinitos",
+     "g": "Garante que a condição de um ciclo acaba por ficar falsa.",
+     "p": [
+      "Se nada mudar a condição, o ciclo nunca termina.",
+      "Atualiza sempre o contador dentro do corpo do ciclo.",
+      "Se um programa bloquear, pára-o com Ctrl+C no terminal."
+     ],
+     "q": "Lembras-te de um ciclo real que não pára, como uma canção em repetição?",
+     "c": "Corrige: n = 3 e while n > 0: print(n). Acrescenta a linha que o faz terminar."
+    },
+    "pt_BR": {
+     "t": "Evitando laços infinitos",
+     "g": "Garanta que a condição de um laço acabe ficando falsa.",
+     "p": [
+      "Se nada mudar a condição, o laço nunca termina.",
+      "Atualize sempre o contador dentro do corpo do laço.",
+      "Se um programa travar, pare-o com Ctrl+C no terminal."
+     ],
+     "q": "Você lembra de um laço real que nunca para, como uma música em repetição?",
+     "c": "Corrija: n = 3 e while n > 0: print(n). Adicione a linha que faz terminar."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "For loops",
+     "g": "Repeat code once for each item in a sequence.",
+     "p": [
+      "for takes items one at a time: for letter in 'cat': print(letter).",
+      "The loop variable holds the current item on each round.",
+      "for is perfect when you know what you want to loop over."
+     ],
+     "q": "Which word would you like to spell out letter by letter?",
+     "c": "Loop over your own name and print each letter on its own line."
+    },
+    "de": {
+     "t": "For-Schleifen",
+     "g": "Wiederhole Code einmal für jedes Element einer Folge.",
+     "p": [
+      "for nimmt Elemente einzeln: for letter in 'cat': print(letter).",
+      "Die Schleifenvariable enthält in jeder Runde das aktuelle Element.",
+      "for passt perfekt, wenn du weißt, worüber du laufen willst."
+     ],
+     "q": "Welches Wort möchtest du Buchstabe für Buchstabe ausgeben?",
+     "c": "Laufe über deinen Namen und gib jeden Buchstaben in einer eigenen Zeile aus."
+    },
+    "es": {
+     "t": "Bucles for",
+     "g": "Repite código una vez por cada elemento de una secuencia.",
+     "p": [
+      "for toma los elementos uno a uno: for letter in 'cat': print(letter).",
+      "La variable del bucle guarda el elemento actual en cada vuelta.",
+      "for es ideal cuando sabes sobre qué quieres recorrer."
+     ],
+     "q": "¿Qué palabra te gustaría deletrear letra a letra?",
+     "c": "Recorre tu propio nombre e imprime cada letra en su propia línea."
+    },
+    "fr": {
+     "t": "Les boucles for",
+     "g": "Répète du code une fois pour chaque élément d'une séquence.",
+     "p": [
+      "for prend les éléments un par un : for letter in 'cat': print(letter).",
+      "La variable de boucle contient l'élément courant à chaque tour.",
+      "for convient parfaitement quand tu sais sur quoi boucler."
+     ],
+     "q": "Quel mot aimerais-tu épeler lettre par lettre ?",
+     "c": "Parcours ton prénom et affiche chaque lettre sur sa propre ligne."
+    },
+    "it": {
+     "t": "I cicli for",
+     "g": "Ripeti il codice una volta per ogni elemento di una sequenza.",
+     "p": [
+      "for prende gli elementi uno alla volta: for letter in 'cat': print(letter).",
+      "La variabile del ciclo contiene l'elemento corrente a ogni giro.",
+      "for è perfetto quando sai su cosa vuoi ciclare."
+     ],
+     "q": "Quale parola ti piacerebbe sillabare lettera per lettera?",
+     "c": "Scorri il tuo nome e stampa ogni lettera su una riga a parte."
+    },
+    "pt": {
+     "t": "Ciclos for",
+     "g": "Repete código uma vez por cada elemento de uma sequência.",
+     "p": [
+      "for toma os elementos um a um: for letter in 'cat': print(letter).",
+      "A variável do ciclo guarda o elemento atual em cada volta.",
+      "for é ideal quando sabes sobre o que queres percorrer."
+     ],
+     "q": "Que palavra gostarias de soletrar letra a letra?",
+     "c": "Percorre o teu nome e imprime cada letra na sua própria linha."
+    },
+    "pt_BR": {
+     "t": "Laços for",
+     "g": "Repita código uma vez para cada elemento de uma sequência.",
+     "p": [
+      "for pega os elementos um a um: for letter in 'cat': print(letter).",
+      "A variável do laço guarda o elemento atual a cada volta.",
+      "for é ideal quando você sabe sobre o que quer percorrer."
+     ],
+     "q": "Que palavra você gostaria de soletrar letra por letra?",
+     "c": "Percorra seu nome e imprima cada letra na sua própria linha."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The range function",
+     "g": "Count with range to repeat something a set number of times.",
+     "p": [
+      "range(5) gives 0, 1, 2, 3, 4: it stops before the end number.",
+      "range(1, 6) starts at 1; range(0, 10, 2) steps by 2.",
+      "for i in range(3): runs the block exactly three times."
+     ],
+     "q": "Which number would you count to if you could count anything?",
+     "c": "Print 'Hello' five times using for and range, then print only the even numbers up to 10."
+    },
+    "de": {
+     "t": "Die range-Funktion",
+     "g": "Zähle mit range, um etwas bestimmte Male zu wiederholen.",
+     "p": [
+      "range(5) liefert 0, 1, 2, 3, 4: es endet vor der Endzahl.",
+      "range(1, 6) startet bei 1; range(0, 10, 2) geht in Zweierschritten.",
+      "for i in range(3): führt den Block genau dreimal aus."
+     ],
+     "q": "Bis zu welcher Zahl würdest du zählen, wenn du alles zählen könntest?",
+     "c": "Gib mit for und range fünfmal 'Hello' aus, dann nur die geraden Zahlen bis 10."
+    },
+    "es": {
+     "t": "La función range",
+     "g": "Cuenta con range para repetir algo un número exacto de veces.",
+     "p": [
+      "range(5) da 0, 1, 2, 3, 4: se detiene antes del número final.",
+      "range(1, 6) empieza en 1; range(0, 10, 2) avanza de 2 en 2.",
+      "for i in range(3): ejecuta el bloque exactamente tres veces."
+     ],
+     "q": "¿Hasta qué número contarías si pudieras contar lo que quisieras?",
+     "c": "Imprime 'Hello' cinco veces con for y range, y luego solo los pares hasta 10."
+    },
+    "fr": {
+     "t": "La fonction range",
+     "g": "Compte avec range pour répéter quelque chose un nombre précis de fois.",
+     "p": [
+      "range(5) donne 0, 1, 2, 3, 4 : il s'arrête avant le nombre de fin.",
+      "range(1, 6) commence à 1 ; range(0, 10, 2) avance de 2 en 2.",
+      "for i in range(3): exécute le bloc exactement trois fois."
+     ],
+     "q": "Jusqu'à quel nombre compterais-tu si tu pouvais tout compter ?",
+     "c": "Affiche 'Hello' cinq fois avec for et range, puis seulement les nombres pairs jusqu'à 10."
+    },
+    "it": {
+     "t": "La funzione range",
+     "g": "Conta con range per ripetere qualcosa un numero preciso di volte.",
+     "p": [
+      "range(5) dà 0, 1, 2, 3, 4: si ferma prima del numero finale.",
+      "range(1, 6) parte da 1; range(0, 10, 2) avanza di 2 in 2.",
+      "for i in range(3): esegue il blocco esattamente tre volte."
+     ],
+     "q": "Fino a quale numero conteresti se potessi contare qualsiasi cosa?",
+     "c": "Stampa 'Hello' cinque volte con for e range, poi solo i numeri pari fino a 10."
+    },
+    "pt": {
+     "t": "A função range",
+     "g": "Conta com range para repetir algo um número exato de vezes.",
+     "p": [
+      "range(5) dá 0, 1, 2, 3, 4: pára antes do número final.",
+      "range(1, 6) começa em 1; range(0, 10, 2) avança de 2 em 2.",
+      "for i in range(3): executa o bloco exatamente três vezes."
+     ],
+     "q": "Até que número contarias se pudesses contar qualquer coisa?",
+     "c": "Imprime 'Hello' cinco vezes com for e range e depois só os pares até 10."
+    },
+    "pt_BR": {
+     "t": "A função range",
+     "g": "Conte com range para repetir algo um número exato de vezes.",
+     "p": [
+      "range(5) dá 0, 1, 2, 3, 4: para antes do número final.",
+      "range(1, 6) começa em 1; range(0, 10, 2) avança de 2 em 2.",
+      "for i in range(3): executa o bloco exatamente três vezes."
+     ],
+     "q": "Até que número você contaria se pudesse contar qualquer coisa?",
+     "c": "Imprima 'Hello' cinco vezes com for e range e depois só os pares até 10."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Loop control",
+     "g": "Use break to stop early and continue to skip a round.",
+     "p": [
+      "break leaves the loop immediately, even if items remain.",
+      "continue skips the rest of this round and moves to the next.",
+      "Use them with an if inside the loop to react to special cases."
+     ],
+     "q": "When searching for something, do you stop as soon as you find it?",
+     "c": "Loop over range(10) and stop at 6 with break, then skip 3 with continue."
+    },
+    "de": {
+     "t": "Schleifensteuerung",
+     "g": "Nutze break zum frühen Stoppen und continue zum Überspringen einer Runde.",
+     "p": [
+      "break verlässt die Schleife sofort, auch wenn Elemente übrig sind.",
+      "continue überspringt den Rest dieser Runde und geht zur nächsten.",
+      "Nutze beide mit einem if in der Schleife, um auf Sonderfälle zu reagieren."
+     ],
+     "q": "Hörst du beim Suchen auf, sobald du etwas gefunden hast?",
+     "c": "Laufe über range(10), stoppe bei 6 mit break und überspringe 3 mit continue."
+    },
+    "es": {
+     "t": "Control de bucles",
+     "g": "Usa break para parar antes y continue para saltar una vuelta.",
+     "p": [
+      "break sale del bucle de inmediato, aunque queden elementos.",
+      "continue salta el resto de esta vuelta y pasa a la siguiente.",
+      "Úsalos con un if dentro del bucle para reaccionar a casos especiales."
+     ],
+     "q": "Cuando buscas algo, ¿paras en cuanto lo encuentras?",
+     "c": "Recorre range(10) y para en el 6 con break, y salta el 3 con continue."
+    },
+    "fr": {
+     "t": "Contrôler les boucles",
+     "g": "Utilise break pour s'arrêter plus tôt et continue pour sauter un tour.",
+     "p": [
+      "break quitte la boucle immédiatement, même s'il reste des éléments.",
+      "continue saute la fin de ce tour et passe au suivant.",
+      "Utilise-les avec un if dans la boucle pour traiter des cas spéciaux."
+     ],
+     "q": "Quand tu cherches quelque chose, t'arrêtes-tu dès que tu le trouves ?",
+     "c": "Parcours range(10) et arrête-toi à 6 avec break, puis saute 3 avec continue."
+    },
+    "it": {
+     "t": "Controllo dei cicli",
+     "g": "Usa break per fermarti prima e continue per saltare un giro.",
+     "p": [
+      "break esce subito dal ciclo, anche se restano elementi.",
+      "continue salta il resto di questo giro e passa al successivo.",
+      "Usali con un if nel ciclo per reagire a casi speciali."
+     ],
+     "q": "Quando cerchi qualcosa, ti fermi appena lo trovi?",
+     "c": "Scorri range(10) e fermati a 6 con break, poi salta il 3 con continue."
+    },
+    "pt": {
+     "t": "Controlo de ciclos",
+     "g": "Usa break para parar mais cedo e continue para saltar uma volta.",
+     "p": [
+      "break sai do ciclo de imediato, mesmo que restem elementos.",
+      "continue salta o resto desta volta e passa à seguinte.",
+      "Usa-os com um if dentro do ciclo para reagir a casos especiais."
+     ],
+     "q": "Quando procuras algo, páras assim que o encontras?",
+     "c": "Percorre range(10) e pára no 6 com break, e salta o 3 com continue."
+    },
+    "pt_BR": {
+     "t": "Controle de laços",
+     "g": "Use break para parar antes e continue para pular uma volta.",
+     "p": [
+      "break sai do laço imediatamente, mesmo que restem elementos.",
+      "continue pula o resto desta volta e passa para a próxima.",
+      "Use-os com um if dentro do laço para reagir a casos especiais."
+     ],
+     "q": "Quando você procura algo, para assim que encontra?",
+     "c": "Percorra range(10) e pare no 6 com break, e pule o 3 com continue."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Nested loops",
+     "g": "Put a loop inside a loop for grids and patterns.",
+     "p": [
+      "The inner loop runs fully for every single round of the outer loop.",
+      "Rows and columns are a classic use: outer for rows, inner for columns.",
+      "Indent the inner loop one more level."
+     ],
+     "q": "Where do you see grids in daily life, like calendars or chessboards?",
+     "c": "Print a 3 by 3 block of stars using two for loops and print with end=''."
+    },
+    "de": {
+     "t": "Verschachtelte Schleifen",
+     "g": "Setze eine Schleife in eine Schleife für Raster und Muster.",
+     "p": [
+      "Die innere Schleife läuft bei jeder Runde der äußeren komplett durch.",
+      "Zeilen und Spalten sind der Klassiker: außen Zeilen, innen Spalten.",
+      "Rücke die innere Schleife eine Ebene weiter ein."
+     ],
+     "q": "Wo siehst du im Alltag Raster, etwa Kalender oder Schachbretter?",
+     "c": "Gib einen 3 mal 3 Block Sterne mit zwei for-Schleifen und print mit end='' aus."
+    },
+    "es": {
+     "t": "Bucles anidados",
+     "g": "Pon un bucle dentro de otro para crear cuadrículas y patrones.",
+     "p": [
+      "El bucle interior se ejecuta entero en cada vuelta del exterior.",
+      "Filas y columnas son el uso clásico: fuera filas, dentro columnas.",
+      "Aplica una sangría más al bucle interior."
+     ],
+     "q": "¿Dónde ves cuadrículas a diario, como calendarios o tableros de ajedrez?",
+     "c": "Imprime un bloque de 3 por 3 estrellas con dos bucles for y print con end=''."
+    },
+    "fr": {
+     "t": "Boucles imbriquées",
+     "g": "Mets une boucle dans une boucle pour des grilles et des motifs.",
+     "p": [
+      "La boucle intérieure s'exécute en entier à chaque tour de l'extérieure.",
+      "Lignes et colonnes sont l'usage classique : dehors les lignes, dedans les colonnes.",
+      "Indente la boucle intérieure d'un niveau de plus."
+     ],
+     "q": "Où vois-tu des grilles au quotidien, comme des calendriers ou des échiquiers ?",
+     "c": "Affiche un bloc de 3 par 3 étoiles avec deux boucles for et print avec end=''."
+    },
+    "it": {
+     "t": "Cicli annidati",
+     "g": "Metti un ciclo dentro un ciclo per griglie e schemi.",
+     "p": [
+      "Il ciclo interno gira per intero a ogni giro di quello esterno.",
+      "Righe e colonne sono l'uso classico: fuori le righe, dentro le colonne.",
+      "Indenta il ciclo interno di un livello in più."
+     ],
+     "q": "Dove vedi griglie nella vita quotidiana, come calendari o scacchiere?",
+     "c": "Stampa un blocco di 3 per 3 stelle con due cicli for e print con end=''."
+    },
+    "pt": {
+     "t": "Ciclos encadeados",
+     "g": "Põe um ciclo dentro de outro para grelhas e padrões.",
+     "p": [
+      "O ciclo interior corre por inteiro em cada volta do exterior.",
+      "Linhas e colunas são o uso clássico: fora as linhas, dentro as colunas.",
+      "Indenta o ciclo interior mais um nível."
+     ],
+     "q": "Onde vês grelhas no dia a dia, como calendários ou tabuleiros de xadrez?",
+     "c": "Imprime um bloco de 3 por 3 estrelas com dois ciclos for e print com end=''."
+    },
+    "pt_BR": {
+     "t": "Laços aninhados",
+     "g": "Coloque um laço dentro de outro para grades e padrões.",
+     "p": [
+      "O laço interno roda inteiro a cada volta do externo.",
+      "Linhas e colunas são o uso clássico: fora as linhas, dentro as colunas.",
+      "Indente o laço interno mais um nível."
+     ],
+     "q": "Onde você vê grades no dia a dia, como calendários ou tabuleiros de xadrez?",
+     "c": "Imprima um bloco de 3 por 3 estrelas com dois laços for e print com end=''."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mini project: times tables",
+     "g": "Print a multiplication table using nested loops.",
+     "p": [
+      "Outer loop picks the row number, inner loop picks the column number.",
+      "Print each product with an f-string: f'{a} x {b} = {a * b}'.",
+      "Change the range numbers to make a bigger or smaller table."
+     ],
+     "q": "Which times table did you find hardest at school?",
+     "c": "Print the 7 times table from 1 to 10 first, then the full 1 to 5 grid."
+    },
+    "de": {
+     "t": "Mini-Projekt: Einmaleins",
+     "g": "Gib mit verschachtelten Schleifen eine Multiplikationstabelle aus.",
+     "p": [
+      "Die äußere Schleife wählt die Zeile, die innere die Spalte.",
+      "Gib jedes Produkt mit einem f-String aus: f'{a} x {b} = {a * b}'.",
+      "Ändere die range-Zahlen für eine größere oder kleinere Tabelle."
+     ],
+     "q": "Welches Einmaleins fiel dir in der Schule am schwersten?",
+     "c": "Gib zuerst die 7er-Reihe von 1 bis 10 aus, dann das ganze Raster von 1 bis 5."
+    },
+    "es": {
+     "t": "Miniproyecto: tablas de multiplicar",
+     "g": "Imprime una tabla de multiplicar con bucles anidados.",
+     "p": [
+      "El bucle exterior elige la fila y el interior elige la columna.",
+      "Imprime cada producto con un f-string: f'{a} x {b} = {a * b}'.",
+      "Cambia los números de range para una tabla más grande o pequeña."
+     ],
+     "q": "¿Qué tabla de multiplicar te costó más en el colegio?",
+     "c": "Imprime primero la tabla del 7 del 1 al 10 y luego la cuadrícula completa del 1 al 5."
+    },
+    "fr": {
+     "t": "Mini-projet : tables de multiplication",
+     "g": "Affiche une table de multiplication avec des boucles imbriquées.",
+     "p": [
+      "La boucle extérieure choisit la ligne, l'intérieure choisit la colonne.",
+      "Affiche chaque produit avec une f-string : f'{a} x {b} = {a * b}'.",
+      "Change les nombres de range pour une table plus grande ou plus petite."
+     ],
+     "q": "Quelle table de multiplication t'a le plus posé problème à l'école ?",
+     "c": "Affiche d'abord la table de 7 de 1 à 10, puis la grille complète de 1 à 5."
+    },
+    "it": {
+     "t": "Mini progetto: tabelline",
+     "g": "Stampa una tavola pitagorica con cicli annidati.",
+     "p": [
+      "Il ciclo esterno sceglie la riga, quello interno sceglie la colonna.",
+      "Stampa ogni prodotto con una f-string: f'{a} x {b} = {a * b}'.",
+      "Cambia i numeri di range per una tabella più grande o più piccola."
+     ],
+     "q": "Quale tabellina ti è sembrata più difficile a scuola?",
+     "c": "Stampa prima la tabellina del 7 da 1 a 10, poi la griglia completa da 1 a 5."
+    },
+    "pt": {
+     "t": "Mini projeto: tabuadas",
+     "g": "Imprime uma tabuada com ciclos encadeados.",
+     "p": [
+      "O ciclo exterior escolhe a linha e o interior escolhe a coluna.",
+      "Imprime cada produto com uma f-string: f'{a} x {b} = {a * b}'.",
+      "Muda os números do range para uma tabela maior ou menor."
+     ],
+     "q": "Que tabuada achaste mais difícil na escola?",
+     "c": "Imprime primeiro a tabuada do 7 de 1 a 10 e depois a grelha completa de 1 a 5."
+    },
+    "pt_BR": {
+     "t": "Mini projeto: tabuadas",
+     "g": "Imprima uma tabuada com laços aninhados.",
+     "p": [
+      "O laço externo escolhe a linha e o interno escolhe a coluna.",
+      "Imprima cada produto com uma f-string: f'{a} x {b} = {a * b}'.",
+      "Mude os números do range para uma tabela maior ou menor."
+     ],
+     "q": "Que tabuada foi mais difícil para você na escola?",
+     "c": "Imprima primeiro a tabuada do 7 de 1 a 10 e depois a grade completa de 1 a 5."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lists",
+     "g": "Store many values in order under a single name.",
+     "p": [
+      "A list uses square brackets: fruits = ['apple', 'pear', 'plum'].",
+      "Items are separated by commas and can be text, numbers or both.",
+      "One list is neater than many separate variables."
+     ],
+     "q": "What would be on a list of your five favourite foods?",
+     "c": "Create a list of 4 favourite things and print the whole list."
+    },
+    "de": {
+     "t": "Listen",
+     "g": "Speichere viele Werte geordnet unter einem Namen.",
+     "p": [
+      "Eine Liste nutzt eckige Klammern: fruits = ['apple', 'pear', 'plum'].",
+      "Elemente werden durch Kommas getrennt und können Text, Zahlen oder beides sein.",
+      "Eine Liste ist ordentlicher als viele einzelne Variablen."
+     ],
+     "q": "Was stünde auf einer Liste deiner fünf Lieblingsspeisen?",
+     "c": "Erstelle eine Liste mit 4 Lieblingsdingen und gib die ganze Liste aus."
+    },
+    "es": {
+     "t": "Listas",
+     "g": "Guarda muchos valores en orden bajo un solo nombre.",
+     "p": [
+      "Una lista usa corchetes: fruits = ['apple', 'pear', 'plum'].",
+      "Los elementos se separan con comas y pueden ser texto, números o ambos.",
+      "Una lista es más ordenada que muchas variables sueltas."
+     ],
+     "q": "¿Qué habría en una lista de tus cinco comidas favoritas?",
+     "c": "Crea una lista con 4 cosas favoritas e imprime la lista completa."
+    },
+    "fr": {
+     "t": "Les listes",
+     "g": "Stocke plusieurs valeurs dans l'ordre sous un seul nom.",
+     "p": [
+      "Une liste utilise des crochets : fruits = ['apple', 'pear', 'plum'].",
+      "Les éléments sont séparés par des virgules : texte, nombres ou les deux.",
+      "Une liste est plus propre que plein de variables séparées."
+     ],
+     "q": "Que mettrais-tu dans une liste de tes cinq plats préférés ?",
+     "c": "Crée une liste de 4 choses préférées et affiche la liste entière."
+    },
+    "it": {
+     "t": "Le liste",
+     "g": "Salva molti valori in ordine sotto un solo nome.",
+     "p": [
+      "Una lista usa le parentesi quadre: fruits = ['apple', 'pear', 'plum'].",
+      "Gli elementi sono separati da virgole e possono essere testo, numeri o entrambi.",
+      "Una lista è più ordinata di tante variabili separate."
+     ],
+     "q": "Cosa ci sarebbe in una lista dei tuoi cinque cibi preferiti?",
+     "c": "Crea una lista di 4 cose preferite e stampa la lista intera."
+    },
+    "pt": {
+     "t": "Listas",
+     "g": "Guarda muitos valores por ordem sob um só nome.",
+     "p": [
+      "Uma lista usa parênteses retos: fruits = ['apple', 'pear', 'plum'].",
+      "Os elementos separam-se com vírgulas e podem ser texto, números ou ambos.",
+      "Uma lista é mais arrumada do que muitas variáveis soltas."
+     ],
+     "q": "O que haveria numa lista das tuas cinco comidas favoritas?",
+     "c": "Cria uma lista com 4 coisas favoritas e imprime a lista completa."
+    },
+    "pt_BR": {
+     "t": "Listas",
+     "g": "Guarde muitos valores em ordem sob um só nome.",
+     "p": [
+      "Uma lista usa colchetes: fruits = ['apple', 'pear', 'plum'].",
+      "Os elementos se separam com vírgulas e podem ser texto, números ou ambos.",
+      "Uma lista é mais organizada do que muitas variáveis soltas."
+     ],
+     "q": "O que teria numa lista das suas cinco comidas favoritas?",
+     "c": "Crie uma lista com 4 coisas favoritas e imprima a lista completa."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Indexing lists",
+     "g": "Get items by position, and learn why counting starts at zero.",
+     "p": [
+      "fruits[0] is the first item, fruits[1] the second.",
+      "fruits[-1] gives the last item, counting from the end.",
+      "Asking for a position that does not exist causes an IndexError."
+     ],
+     "q": "Do you ever start counting from zero in daily life? Programmers do!",
+     "c": "Print the first and last items of your favourites list using [0] and [-1]."
+    },
+    "de": {
+     "t": "Listen indizieren",
+     "g": "Hole Elemente über ihre Position und verstehe, warum bei null gezählt wird.",
+     "p": [
+      "fruits[0] ist das erste Element, fruits[1] das zweite.",
+      "fruits[-1] liefert das letzte Element, vom Ende gezählt.",
+      "Eine nicht vorhandene Position verursacht einen IndexError."
+     ],
+     "q": "Zählst du im Alltag je bei null los? Programmierer tun es!",
+     "c": "Gib das erste und letzte Element deiner Favoritenliste mit [0] und [-1] aus."
+    },
+    "es": {
+     "t": "Indexar listas",
+     "g": "Obtén elementos por posición y entiende por qué se cuenta desde cero.",
+     "p": [
+      "fruits[0] es el primer elemento, fruits[1] el segundo.",
+      "fruits[-1] da el último elemento, contando desde el final.",
+      "Pedir una posición que no existe causa un IndexError."
+     ],
+     "q": "¿Cuentas alguna vez desde cero en la vida diaria? ¡Los programadores sí!",
+     "c": "Imprime el primer y el último elemento de tu lista de favoritos con [0] y [-1]."
+    },
+    "fr": {
+     "t": "Indexer les listes",
+     "g": "Récupère des éléments par position et comprends pourquoi on compte depuis zéro.",
+     "p": [
+      "fruits[0] est le premier élément, fruits[1] le deuxième.",
+      "fruits[-1] donne le dernier élément, compté depuis la fin.",
+      "Demander une position inexistante provoque une IndexError."
+     ],
+     "q": "Comptes-tu parfois à partir de zéro dans la vie courante ? Les programmeurs, oui !",
+     "c": "Affiche le premier et le dernier élément de ta liste de favoris avec [0] et [-1]."
+    },
+    "it": {
+     "t": "Indicizzare le liste",
+     "g": "Ottieni elementi per posizione e capisci perché si conta da zero.",
+     "p": [
+      "fruits[0] è il primo elemento, fruits[1] il secondo.",
+      "fruits[-1] dà l'ultimo elemento, contando dalla fine.",
+      "Chiedere una posizione che non esiste causa un IndexError."
+     ],
+     "q": "Conti mai da zero nella vita quotidiana? I programmatori sì!",
+     "c": "Stampa il primo e l'ultimo elemento della tua lista di preferiti con [0] e [-1]."
+    },
+    "pt": {
+     "t": "Indexar listas",
+     "g": "Obtém elementos pela posição e percebe porque se conta desde zero.",
+     "p": [
+      "fruits[0] é o primeiro elemento, fruits[1] o segundo.",
+      "fruits[-1] dá o último elemento, contando do fim.",
+      "Pedir uma posição que não existe causa um IndexError."
+     ],
+     "q": "Contas alguma vez desde zero no dia a dia? Os programadores contam!",
+     "c": "Imprime o primeiro e o último elemento da tua lista de favoritos com [0] e [-1]."
+    },
+    "pt_BR": {
+     "t": "Indexando listas",
+     "g": "Pegue elementos pela posição e entenda por que se conta a partir do zero.",
+     "p": [
+      "fruits[0] é o primeiro elemento, fruits[1] o segundo.",
+      "fruits[-1] dá o último elemento, contando do fim.",
+      "Pedir uma posição que não existe causa um IndexError."
+     ],
+     "q": "Você conta a partir do zero no dia a dia? Programadores contam!",
+     "c": "Imprima o primeiro e o último elemento da sua lista de favoritos com [0] e [-1]."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Changing lists",
+     "g": "Add, remove and replace items with list methods.",
+     "p": [
+      "append adds an item at the end: fruits.append('kiwi').",
+      "remove deletes by value; insert(0, 'fig') adds at a chosen position.",
+      "Replace an item by assigning to its index: fruits[1] = 'lemon'."
+     ],
+     "q": "If you could add one thing to your list right now, what would it be?",
+     "c": "Append one item, remove another and replace the first, then print the list."
+    },
+    "de": {
+     "t": "Listen verändern",
+     "g": "Füge Elemente hinzu, entferne und ersetze sie mit Listenmethoden.",
+     "p": [
+      "append hängt am Ende an: fruits.append('kiwi').",
+      "remove löscht nach Wert; insert(0, 'fig') fügt an gewählter Stelle ein.",
+      "Ersetze ein Element über seinen Index: fruits[1] = 'lemon'."
+     ],
+     "q": "Was würdest du jetzt gern zu deiner Liste hinzufügen?",
+     "c": "Hänge ein Element an, entferne ein anderes, ersetze das erste und gib die Liste aus."
+    },
+    "es": {
+     "t": "Modificar listas",
+     "g": "Añade, quita y reemplaza elementos con métodos de lista.",
+     "p": [
+      "append añade al final: fruits.append('kiwi').",
+      "remove borra por valor; insert(0, 'fig') añade en la posición elegida.",
+      "Reemplaza un elemento asignando a su índice: fruits[1] = 'lemon'."
+     ],
+     "q": "Si pudieras añadir algo a tu lista ahora mismo, ¿qué sería?",
+     "c": "Añade un elemento, quita otro y reemplaza el primero, luego imprime la lista."
+    },
+    "fr": {
+     "t": "Modifier les listes",
+     "g": "Ajoute, retire et remplace des éléments avec les méthodes de liste.",
+     "p": [
+      "append ajoute à la fin : fruits.append('kiwi').",
+      "remove supprime par valeur ; insert(0, 'fig') ajoute à la position choisie.",
+      "Remplace un élément en l'affectant à son indice : fruits[1] = 'lemon'."
+     ],
+     "q": "Si tu pouvais ajouter une chose à ta liste maintenant, laquelle serait-ce ?",
+     "c": "Ajoute un élément, retires-en un autre et remplace le premier, puis affiche la liste."
+    },
+    "it": {
+     "t": "Modificare le liste",
+     "g": "Aggiungi, rimuovi e sostituisci elementi con i metodi delle liste.",
+     "p": [
+      "append aggiunge in fondo: fruits.append('kiwi').",
+      "remove elimina per valore; insert(0, 'fig') aggiunge nella posizione scelta.",
+      "Sostituisci un elemento assegnandolo al suo indice: fruits[1] = 'lemon'."
+     ],
+     "q": "Se potessi aggiungere una cosa alla tua lista ora, quale sarebbe?",
+     "c": "Aggiungi un elemento, rimuovine un altro e sostituisci il primo, poi stampa la lista."
+    },
+    "pt": {
+     "t": "Alterar listas",
+     "g": "Acrescenta, remove e substitui elementos com métodos de lista.",
+     "p": [
+      "append acrescenta no fim: fruits.append('kiwi').",
+      "remove apaga por valor; insert(0, 'fig') acrescenta na posição escolhida.",
+      "Substitui um elemento atribuindo ao seu índice: fruits[1] = 'lemon'."
+     ],
+     "q": "Se pudesses acrescentar algo à tua lista agora, o que seria?",
+     "c": "Acrescenta um elemento, remove outro e substitui o primeiro; depois imprime a lista."
+    },
+    "pt_BR": {
+     "t": "Alterando listas",
+     "g": "Acrescente, remova e substitua elementos com métodos de lista.",
+     "p": [
+      "append acrescenta no fim: fruits.append('kiwi').",
+      "remove apaga por valor; insert(0, 'fig') acrescenta na posição escolhida.",
+      "Substitua um elemento atribuindo ao seu índice: fruits[1] = 'lemon'."
+     ],
+     "q": "Se você pudesse acrescentar algo à sua lista agora, o que seria?",
+     "c": "Acrescente um elemento, remova outro e substitua o primeiro; depois imprima a lista."
+    }
+   }
+  }
+ ]
+}

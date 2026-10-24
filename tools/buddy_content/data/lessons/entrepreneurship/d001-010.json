@@ -1,0 +1,835 @@
+{
+"topic": "entrepreneurship",
+"lessons": [
+{
+"d": 1,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "What is entrepreneurship?",
+"g": "Understand entrepreneurship as turning an idea into something people value.",
+"p": [
+"It starts with noticing a problem or wish that others share and deciding to act.",
+"Entrepreneurs create value for others first; money follows when that value is real.",
+"You do not need a big plan or a lot of money to start thinking like one."
+],
+"q": "What is something around you that you wish worked better?",
+"c": "Write down one everyday thing that annoys you or others today."
+},
+"de": {
+"t": "Was ist Unternehmertum?",
+"g": "Verstehe Unternehmertum als Weg, aus einer Idee etwas zu machen, das Menschen schätzen.",
+"p": [
+"Es beginnt damit, ein Problem oder einen Wunsch zu bemerken und zu handeln.",
+"Unternehmer schaffen zuerst Nutzen für andere; Geld folgt, wenn der Nutzen echt ist.",
+"Für das Denken eines Unternehmers brauchst du keinen großen Plan und kein großes Budget."
+],
+"q": "Was in deinem Umfeld sollte deiner Meinung nach besser funktionieren?",
+"c": "Schreib heute eine alltägliche Sache auf, die dich oder andere stört."
+},
+"es": {
+"t": "¿Qué es emprender?",
+"g": "Entiende emprender como convertir una idea en algo que la gente valora.",
+"p": [
+"Empieza al notar un problema o deseo compartido y decidir actuar.",
+"Quien emprende crea valor para otros primero; el dinero llega cuando ese valor es real.",
+"No necesitas un gran plan ni mucho dinero para empezar a pensar como emprendedor."
+],
+"q": "¿Qué cosa de tu entorno te gustaría que funcionara mejor?",
+"c": "Anota hoy una cosa cotidiana que te moleste a ti o a otros."
+},
+"fr": {
+"t": "Qu'est-ce que entreprendre ?",
+"g": "Comprends l'entrepreneuriat comme l'art de transformer une idée en quelque chose d'utile aux autres.",
+"p": [
+"Tout commence en remarquant un problème ou un souhait partagé, puis en agissant.",
+"L'entrepreneur crée d'abord de la valeur pour les autres; l'argent suit si elle est réelle.",
+"Pas besoin d'un grand plan ni de beaucoup d'argent pour penser en entrepreneur."
+],
+"q": "Qu'est-ce qui, autour de toi, mériterait de mieux fonctionner ?",
+"c": "Note aujourd'hui une chose du quotidien qui t'agace ou agace les autres."
+},
+"it": {
+"t": "Che cos'è l'imprenditorialità?",
+"g": "Capisci l'imprenditorialità come il trasformare un'idea in qualcosa che le persone apprezzano.",
+"p": [
+"Si parte notando un problema o un desiderio condiviso e decidendo di agire.",
+"Chi fa impresa crea prima valore per gli altri; il denaro arriva quando il valore è reale.",
+"Non servono un grande piano né molti soldi per iniziare a pensare da imprenditore."
+],
+"q": "Cosa intorno a te vorresti che funzionasse meglio?",
+"c": "Scrivi oggi una cosa quotidiana che dà fastidio a te o ad altri."
+},
+"pt": {
+"t": "O que é empreender?",
+"g": "Percebe o empreendedorismo como transformar uma ideia em algo que as pessoas valorizam.",
+"p": [
+"Começa por notar um problema ou desejo partilhado e decidir agir.",
+"Quem empreende cria primeiro valor para os outros; o dinheiro vem quando esse valor é real.",
+"Não precisas de um grande plano nem de muito dinheiro para pensar como empreendedor."
+],
+"q": "O que há à tua volta que gostavas que funcionasse melhor?",
+"c": "Anota hoje uma coisa do dia a dia que te irrita a ti ou a outros."
+},
+"pt_BR": {
+"t": "O que é empreender?",
+"g": "Entenda o empreendedorismo como transformar uma ideia em algo que as pessoas valorizam.",
+"p": [
+"Tudo começa ao notar um problema ou desejo compartilhado e decidir agir.",
+"Quem empreende cria valor para os outros primeiro; o dinheiro vem quando esse valor é real.",
+"Você não precisa de um grande plano nem de muito dinheiro para pensar como empreendedor."
+],
+"q": "O que ao seu redor você gostaria que funcionasse melhor?",
+"c": "Anote hoje uma coisa do dia a dia que irrita você ou outras pessoas."
+}
+}
+},
+{
+"d": 2,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Many kinds of entrepreneurs",
+"g": "See that entrepreneurs come in many forms, all driven by the same spirit.",
+"p": [
+"Side projects, family shops, freelancers, social ventures and startups all count.",
+"Some want growth, others want independence, a steady income or a cause they believe in.",
+"There is no single right type; pick the form that fits your life and goals."
+],
+"q": "Which type of entrepreneur feels closest to the way you like to work?",
+"c": "Name one person you know who runs their own small venture and what they offer."
+},
+"de": {
+"t": "Viele Arten von Unternehmern",
+"g": "Erkenne, dass Unternehmer in vielen Formen auftreten und doch denselben Geist teilen.",
+"p": [
+"Nebenprojekte, Familienläden, Freiberufler, soziale Projekte und Start-ups zählen alle.",
+"Manche wollen Wachstum, andere Unabhängigkeit, ein stabiles Einkommen oder ein Anliegen.",
+"Es gibt keinen einzig richtigen Typ; wähle die Form, die zu deinem Leben passt."
+],
+"q": "Welcher Unternehmertyp kommt deiner Arbeitsweise am nächsten?",
+"c": "Nenne eine Person, die ein eigenes kleines Vorhaben führt, und was sie anbietet."
+},
+"es": {
+"t": "Muchos tipos de emprendedores",
+"g": "Descubre que hay muchas formas de emprender, todas con el mismo espíritu.",
+"p": [
+"Proyectos paralelos, negocios familiares, freelancers, empresas sociales y startups cuentan.",
+"Unos buscan crecer, otros independencia, un ingreso estable o una causa en la que creen.",
+"No hay un tipo correcto; elige la forma que encaje con tu vida y tus metas."
+],
+"q": "¿Qué tipo de emprendedor se parece más a tu forma de trabajar?",
+"c": "Nombra a alguien que conozcas con un pequeño negocio propio y qué ofrece."
+},
+"fr": {
+"t": "Les nombreux visages de l'entrepreneur",
+"g": "Vois que les entrepreneurs prennent mille formes, toutes animées du même esprit.",
+"p": [
+"Projets annexes, commerces familiaux, indépendants, entreprises sociales et startups comptent.",
+"Certains veulent grandir, d'autres l'indépendance, un revenu stable ou une cause.",
+"Il n'existe pas de modèle unique; choisis la forme qui convient à ta vie."
+],
+"q": "Quel type d'entrepreneur ressemble le plus à ta façon de travailler ?",
+"c": "Cite une personne qui mène son petit projet et ce qu'elle propose."
+},
+"it": {
+"t": "Tanti tipi di imprenditori",
+"g": "Scopri che gli imprenditori hanno molte forme, tutte mosse dallo stesso spirito.",
+"p": [
+"Progetti paralleli, negozi di famiglia, freelance, imprese sociali e startup contano tutti.",
+"Alcuni cercano crescita, altri indipendenza, un reddito stabile o una causa.",
+"Non esiste un tipo giusto; scegli la forma adatta alla tua vita e ai tuoi obiettivi."
+],
+"q": "Quale tipo di imprenditore somiglia di più al tuo modo di lavorare?",
+"c": "Nomina una persona che conosci con una piccola attività propria e cosa offre."
+},
+"pt": {
+"t": "Muitos tipos de empreendedores",
+"g": "Vê que os empreendedores surgem de muitas formas, todas com o mesmo espírito.",
+"p": [
+"Projetos paralelos, negócios de família, freelancers, empresas sociais e startups contam.",
+"Uns querem crescer, outros independência, um rendimento estável ou uma causa.",
+"Não há um tipo certo; escolhe a forma que se adapta à tua vida e objetivos."
+],
+"q": "Que tipo de empreendedor se parece mais com o teu modo de trabalhar?",
+"c": "Nomeia alguém que conheces com um pequeno negócio próprio e o que oferece."
+},
+"pt_BR": {
+"t": "Muitos tipos de empreendedores",
+"g": "Veja que empreendedores existem de muitas formas, todas com o mesmo espírito.",
+"p": [
+"Projetos paralelos, negócios de família, freelancers, empresas sociais e startups contam.",
+"Uns querem crescer, outros independência, uma renda estável ou uma causa.",
+"Não existe um tipo certo; escolha a forma que combina com sua vida e seus objetivos."
+],
+"q": "Que tipo de empreendedor mais se parece com seu jeito de trabalhar?",
+"c": "Cite alguém que você conhece com um pequeno negócio próprio e o que ele oferece."
+}
+}
+},
+{
+"d": 3,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "The entrepreneurial mindset",
+"g": "Practise curiosity, initiative and learning from mistakes as everyday habits.",
+"p": [
+"Curiosity: ask why things work the way they do and how they could be better.",
+"Initiative: take a small first step instead of waiting for the perfect moment.",
+"Mistakes are lessons; each one tells you what to try differently next time."
+],
+"q": "When did you last try something new even though it felt uncertain?",
+"c": "Take one tiny action today on something you have been putting off."
+},
+"de": {
+"t": "Die unternehmerische Denkweise",
+"g": "Übe Neugier, Eigeninitiative und das Lernen aus Fehlern als tägliche Gewohnheiten.",
+"p": [
+"Neugier: Frag, warum Dinge so funktionieren und wie sie besser gehen könnten.",
+"Initiative: Mach einen kleinen ersten Schritt, statt auf den perfekten Moment zu warten.",
+"Fehler sind Lektionen; jeder zeigt dir, was du beim nächsten Mal anders versuchst."
+],
+"q": "Wann hast du zuletzt etwas Neues versucht, obwohl es ungewiss war?",
+"c": "Unternimm heute eine winzige Handlung bei etwas, das du aufgeschoben hast."
+},
+"es": {
+"t": "La mentalidad emprendedora",
+"g": "Practica la curiosidad, la iniciativa y aprender de los errores como hábitos diarios.",
+"p": [
+"Curiosidad: pregunta por qué las cosas funcionan así y cómo podrían mejorar.",
+"Iniciativa: da un pequeño primer paso en vez de esperar el momento perfecto.",
+"Los errores son lecciones; cada uno te dice qué probar distinto la próxima vez."
+],
+"q": "¿Cuándo fue la última vez que probaste algo nuevo aunque fuera incierto?",
+"c": "Da hoy un pequeño paso en algo que venías posponiendo."
+},
+"fr": {
+"t": "L'état d'esprit entrepreneurial",
+"g": "Cultive curiosité, initiative et apprentissage par l'erreur comme habitudes quotidiennes.",
+"p": [
+"Curiosité : demande-toi pourquoi les choses fonctionnent ainsi et comment les améliorer.",
+"Initiative : fais un petit premier pas plutôt que d'attendre le moment parfait.",
+"Les erreurs sont des leçons; chacune indique quoi essayer autrement ensuite."
+],
+"q": "Quand as-tu essayé quelque chose de nouveau malgré l'incertitude ?",
+"c": "Fais aujourd'hui une toute petite action sur ce que tu repoussais."
+},
+"it": {
+"t": "La mentalità imprenditoriale",
+"g": "Esercita curiosità, iniziativa e imparare dagli errori come abitudini quotidiane.",
+"p": [
+"Curiosità: chiediti perché le cose funzionano così e come migliorarle.",
+"Iniziativa: fai un piccolo primo passo invece di aspettare il momento perfetto.",
+"Gli errori sono lezioni; ognuno ti dice cosa provare in modo diverso."
+],
+"q": "Quando hai provato per l'ultima volta qualcosa di nuovo pur con incertezza?",
+"c": "Fai oggi una piccola azione su qualcosa che rimandavi."
+},
+"pt": {
+"t": "A mentalidade empreendedora",
+"g": "Pratica a curiosidade, a iniciativa e o aprender com os erros como hábitos diários.",
+"p": [
+"Curiosidade: pergunta porque as coisas funcionam assim e como melhorá-las.",
+"Iniciativa: dá um pequeno primeiro passo em vez de esperar o momento perfeito.",
+"Os erros são lições; cada um mostra o que experimentar de outra forma."
+],
+"q": "Quando foi a última vez que tentaste algo novo mesmo com incerteza?",
+"c": "Dá hoje um pequeno passo em algo que andavas a adiar."
+},
+"pt_BR": {
+"t": "A mentalidade empreendedora",
+"g": "Pratique curiosidade, iniciativa e aprender com os erros como hábitos diários.",
+"p": [
+"Curiosidade: pergunte por que as coisas funcionam assim e como melhorá-las.",
+"Iniciativa: dê um pequeno primeiro passo em vez de esperar o momento perfeito.",
+"Erros são lições; cada um mostra o que tentar de outro jeito."
+],
+"q": "Quando foi a última vez que você tentou algo novo mesmo com incerteza?",
+"c": "Dê hoje um pequeno passo em algo que você vinha adiando."
+}
+}
+},
+{
+"d": 4,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Problems are opportunities",
+"g": "Learn why everyday frustrations are often the best starting point for an idea.",
+"p": [
+"A frustration that many people share is a sign that something is missing.",
+"Good ideas often hide in queues, delays, confusing steps and wasted effort.",
+"The stronger the annoyance, the more people may value a simple fix."
+],
+"q": "What small frustration have you run into this week?",
+"c": "List three frustrations you notice today and note who else feels them."
+},
+"de": {
+"t": "Probleme sind Chancen",
+"g": "Lerne, warum alltäglicher Ärger oft der beste Startpunkt für eine Idee ist.",
+"p": [
+"Ärger, den viele teilen, zeigt, dass etwas fehlt.",
+"Gute Ideen verstecken sich oft in Warteschlangen, Verzögerungen und verwirrenden Abläufen.",
+"Je stärker der Ärger, desto mehr Menschen schätzen vielleicht eine einfache Lösung."
+],
+"q": "Welchen kleinen Ärger hattest du diese Woche?",
+"c": "Notiere heute drei Ärgernisse und wer sie sonst noch spürt."
+},
+"es": {
+"t": "Los problemas son oportunidades",
+"g": "Aprende por qué las frustraciones diarias suelen ser el mejor punto de partida.",
+"p": [
+"Una frustración que muchos comparten indica que falta algo.",
+"Las buenas ideas se esconden en colas, retrasos, pasos confusos y esfuerzo perdido.",
+"Cuanto mayor la molestia, más gente puede valorar una solución sencilla."
+],
+"q": "¿Qué pequeña frustración has tenido esta semana?",
+"c": "Anota hoy tres frustraciones y quién más las siente."
+},
+"fr": {
+"t": "Les problèmes sont des opportunités",
+"g": "Découvre pourquoi les agacements du quotidien sont souvent le meilleur point de départ.",
+"p": [
+"Une frustration partagée par beaucoup signale qu'il manque quelque chose.",
+"Les bonnes idées se cachent dans les files d'attente, retards et démarches confuses.",
+"Plus la gêne est forte, plus une solution simple peut avoir de la valeur."
+],
+"q": "Quelle petite frustration as-tu rencontrée cette semaine ?",
+"c": "Note aujourd'hui trois frustrations et qui d'autre les ressent."
+},
+"it": {
+"t": "I problemi sono opportunità",
+"g": "Scopri perché le frustrazioni quotidiane sono spesso il miglior punto di partenza.",
+"p": [
+"Una frustrazione condivisa da molti indica che manca qualcosa.",
+"Le buone idee si nascondono in code, ritardi, passaggi confusi e fatica sprecata.",
+"Più forte è il fastidio, più persone possono apprezzare una soluzione semplice."
+],
+"q": "Quale piccola frustrazione hai incontrato questa settimana?",
+"c": "Annota oggi tre frustrazioni e chi altro le prova."
+},
+"pt": {
+"t": "Os problemas são oportunidades",
+"g": "Aprende porque as frustrações do dia a dia são muitas vezes o melhor ponto de partida.",
+"p": [
+"Uma frustração partilhada por muitos mostra que falta qualquer coisa.",
+"As boas ideias escondem-se em filas, atrasos, passos confusos e esforço perdido.",
+"Quanto maior o incómodo, mais pessoas podem valorizar uma solução simples."
+],
+"q": "Que pequena frustração tiveste esta semana?",
+"c": "Anota hoje três frustrações e quem mais as sente."
+},
+"pt_BR": {
+"t": "Problemas são oportunidades",
+"g": "Aprenda por que as frustrações do dia a dia costumam ser o melhor ponto de partida.",
+"p": [
+"Uma frustração compartilhada por muitos mostra que falta alguma coisa.",
+"Boas ideias se escondem em filas, atrasos, passos confusos e esforço perdido.",
+"Quanto maior o incômodo, mais gente pode valorizar uma solução simples."
+],
+"q": "Que pequena frustração você teve esta semana?",
+"c": "Anote hoje três frustrações e quem mais as sente."
+}
+}
+},
+{
+"d": 5,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Keeping an idea notebook",
+"g": "Build a simple habit of capturing problems, wishes and ideas as you notice them.",
+"p": [
+"Use paper or a phone note; the best notebook is the one you actually carry.",
+"Write the problem, who has it and one possible fix, in a single line.",
+"Do not judge entries; review them once a week to spot patterns."
+],
+"q": "Where do your best ideas usually pop up: walking, showering, talking?",
+"c": "Start your notebook now and add at least three entries today."
+},
+"de": {
+"t": "Ein Ideenbuch führen",
+"g": "Baue die Gewohnheit auf, Probleme, Wünsche und Ideen sofort festzuhalten.",
+"p": [
+"Nutze Papier oder eine Handynotiz; das beste Notizbuch ist das, das du dabeihast.",
+"Schreib Problem, Betroffene und eine mögliche Lösung in eine Zeile.",
+"Bewerte Einträge nicht; sieh sie einmal pro Woche durch und finde Muster."
+],
+"q": "Wo kommen dir die besten Ideen: beim Gehen, Duschen, Reden?",
+"c": "Starte jetzt dein Ideenbuch und schreib heute mindestens drei Einträge."
+},
+"es": {
+"t": "Un cuaderno de ideas",
+"g": "Crea el hábito de anotar problemas, deseos e ideas en cuanto los notas.",
+"p": [
+"Usa papel o una nota del móvil; el mejor cuaderno es el que llevas contigo.",
+"Escribe el problema, quién lo tiene y una posible solución en una línea.",
+"No juzgues las entradas; repásalas una vez por semana para ver patrones."
+],
+"q": "¿Dónde surgen tus mejores ideas: caminando, duchándote, conversando?",
+"c": "Empieza tu cuaderno ahora y añade al menos tres entradas hoy."
+},
+"fr": {
+"t": "Tenir un carnet d'idées",
+"g": "Prends l'habitude de noter problèmes, envies et idées dès que tu les remarques.",
+"p": [
+"Papier ou note sur téléphone : le meilleur carnet est celui que tu as sur toi.",
+"Écris le problème, qui l'a et une piste de solution en une seule ligne.",
+"Ne juge pas les entrées; relis-les chaque semaine pour repérer des tendances."
+],
+"q": "Où te viennent tes meilleures idées : en marchant, sous la douche, en parlant ?",
+"c": "Commence ton carnet maintenant et ajoute au moins trois entrées aujourd'hui."
+},
+"it": {
+"t": "Un quaderno delle idee",
+"g": "Costruisci l'abitudine di annotare problemi, desideri e idee appena li noti.",
+"p": [
+"Usa carta o una nota sul telefono; il quaderno migliore è quello che hai con te.",
+"Scrivi il problema, chi lo ha e una possibile soluzione in una riga.",
+"Non giudicare le voci; rileggile una volta a settimana per trovare schemi."
+],
+"q": "Dove ti vengono le idee migliori: camminando, sotto la doccia, parlando?",
+"c": "Inizia ora il quaderno e aggiungi almeno tre voci oggi."
+},
+"pt": {
+"t": "Um caderno de ideias",
+"g": "Cria o hábito de anotar problemas, desejos e ideias assim que os notas.",
+"p": [
+"Usa papel ou uma nota no telemóvel; o melhor caderno é o que levas contigo.",
+"Escreve o problema, quem o tem e uma possível solução numa só linha.",
+"Não julgues as entradas; revê-as uma vez por semana para ver padrões."
+],
+"q": "Onde surgem as tuas melhores ideias: a andar, no duche, a conversar?",
+"c": "Começa já o teu caderno e acrescenta pelo menos três entradas hoje."
+},
+"pt_BR": {
+"t": "Um caderno de ideias",
+"g": "Crie o hábito de anotar problemas, desejos e ideias assim que os notar.",
+"p": [
+"Use papel ou uma nota no celular; o melhor caderno é o que você carrega.",
+"Escreva o problema, quem o tem e uma possível solução em uma linha.",
+"Não julgue as entradas; revise-as uma vez por semana para ver padrões."
+],
+"q": "Onde surgem suas melhores ideias: andando, no banho, conversando?",
+"c": "Comece seu caderno agora e adicione pelo menos três entradas hoje."
+}
+}
+},
+{
+"d": 6,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Solving your own problem",
+"g": "See how many businesses begin because the founder needed something that did not exist.",
+"p": [
+"You understand your own problem deeply, which is a real head start.",
+"Ask whether others share it; if so, your solution may help them too.",
+"Be careful: your need is a hypothesis until other people confirm it."
+],
+"q": "Is there something you have built, hacked or fixed for yourself?",
+"c": "Ask two people whether they share one of your everyday problems."
+},
+"de": {
+"t": "Dein eigenes Problem lösen",
+"g": "Sieh, wie viele Unternehmen entstehen, weil der Gründer etwas brauchte, das fehlte.",
+"p": [
+"Dein eigenes Problem kennst du genau, das ist ein echter Vorsprung.",
+"Frag, ob andere es teilen; wenn ja, hilft deine Lösung vielleicht auch ihnen.",
+"Vorsicht: Dein Bedarf ist eine Annahme, bis andere ihn bestätigen."
+],
+"q": "Hast du je etwas für dich selbst gebaut, gebastelt oder repariert?",
+"c": "Frag zwei Personen, ob sie eines deiner Alltagsprobleme teilen."
+},
+"es": {
+"t": "Resolver tu propio problema",
+"g": "Descubre cómo muchos negocios nacen porque alguien necesitaba algo que no existía.",
+"p": [
+"Conoces a fondo tu propio problema, y eso es una ventaja real.",
+"Pregunta si otros lo comparten; si es así, tu solución también podría ayudarles.",
+"Cuidado: tu necesidad es una hipótesis hasta que otros la confirmen."
+],
+"q": "¿Has creado, adaptado o arreglado algo para ti mismo?",
+"c": "Pregunta a dos personas si comparten uno de tus problemas cotidianos."
+},
+"fr": {
+"t": "Résoudre ton propre problème",
+"g": "Vois comment beaucoup d'entreprises naissent d'un besoin personnel sans réponse.",
+"p": [
+"Tu connais très bien ton propre problème, c'est une vraie longueur d'avance.",
+"Demande si d'autres le partagent; si oui, ta solution peut aussi les aider.",
+"Attention : ton besoin reste une hypothèse tant que d'autres ne le confirment pas."
+],
+"q": "As-tu déjà construit, bricolé ou réparé quelque chose pour toi ?",
+"c": "Demande à deux personnes si elles partagent un de tes soucis du quotidien."
+},
+"it": {
+"t": "Risolvere un tuo problema",
+"g": "Scopri come molte imprese nascono perché il fondatore aveva bisogno di qualcosa che non esisteva.",
+"p": [
+"Conosci a fondo il tuo problema, ed è un vero vantaggio di partenza.",
+"Chiedi se altri lo condividono; se sì, la tua soluzione può aiutare anche loro.",
+"Attenzione: il tuo bisogno è un'ipotesi finché altri non lo confermano."
+],
+"q": "Hai mai costruito, adattato o riparato qualcosa per te?",
+"c": "Chiedi a due persone se condividono uno dei tuoi problemi quotidiani."
+},
+"pt": {
+"t": "Resolver o teu próprio problema",
+"g": "Vê como muitos negócios nascem porque alguém precisava de algo que não existia.",
+"p": [
+"Conheces bem o teu próprio problema, e isso é uma vantagem real.",
+"Pergunta se outros o partilham; se sim, a tua solução pode ajudá-los também.",
+"Atenção: a tua necessidade é uma hipótese até outros a confirmarem."
+],
+"q": "Já criaste, adaptaste ou arranjaste algo só para ti?",
+"c": "Pergunta a duas pessoas se partilham um dos teus problemas do dia a dia."
+},
+"pt_BR": {
+"t": "Resolver seu próprio problema",
+"g": "Veja como muitos negócios nascem porque alguém precisava de algo que não existia.",
+"p": [
+"Você conhece bem seu próprio problema, e isso é uma vantagem real.",
+"Pergunte se outros o compartilham; se sim, sua solução pode ajudá-los também.",
+"Atenção: sua necessidade é uma hipótese até outros a confirmarem."
+],
+"q": "Você já criou, adaptou ou consertou algo só para você?",
+"c": "Pergunte a duas pessoas se elas compartilham um dos seus problemas do dia a dia."
+}
+}
+},
+{
+"d": 7,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Skills, passions and needs",
+"g": "Find ideas where what you are good at meets what you love and what people need.",
+"p": [
+"List your skills, interests and the problems you often see around you.",
+"The overlap of all three is where energy and usefulness meet.",
+"Add a fourth check: could someone reasonably pay for it, in principle?"
+],
+"q": "What do friends usually ask you for help with?",
+"c": "Draw three circles for skills, passions and needs and fill each with five items."
+},
+"de": {
+"t": "Fähigkeiten, Leidenschaft, Bedarf",
+"g": "Finde Ideen dort, wo dein Können auf deine Leidenschaft und den Bedarf trifft.",
+"p": [
+"Liste deine Fähigkeiten, Interessen und die Probleme auf, die du oft siehst.",
+"Wo sich alle drei überschneiden, treffen Energie und Nutzen zusammen.",
+"Prüfe zusätzlich: Könnte jemand dafür grundsätzlich bezahlen?"
+],
+"q": "Wobei bitten dich Freunde meistens um Hilfe?",
+"c": "Zeichne drei Kreise für Können, Leidenschaft, Bedarf und füll jeden mit fünf Punkten."
+},
+"es": {
+"t": "Habilidades, pasiones y necesidades",
+"g": "Encuentra ideas donde lo que haces bien se une a lo que amas y a lo que se necesita.",
+"p": [
+"Haz una lista de tus habilidades, intereses y problemas que ves a menudo.",
+"Donde se cruzan los tres, se encuentran energía y utilidad.",
+"Añade una cuarta prueba: ¿podría alguien pagar por ello, en principio?"
+],
+"q": "¿Para qué te piden ayuda tus amigos con más frecuencia?",
+"c": "Dibuja tres círculos de habilidades, pasiones y necesidades y llena cada uno con cinco ideas."
+},
+"fr": {
+"t": "Talents, passions et besoins",
+"g": "Trouve des idées là où ce que tu fais bien rejoint ce que tu aimes et ce dont on a besoin.",
+"p": [
+"Liste tes compétences, tes centres d'intérêt et les problèmes que tu vois souvent.",
+"À l'intersection des trois se rencontrent énergie et utilité.",
+"Ajoute un quatrième test : quelqu'un pourrait-il payer pour cela, en principe ?"
+],
+"q": "Pour quoi tes amis te demandent-ils le plus souvent de l'aide ?",
+"c": "Dessine trois cercles talents, passions, besoins et mets cinq éléments dans chacun."
+},
+"it": {
+"t": "Competenze, passioni e bisogni",
+"g": "Trova idee dove ciò che sai fare incontra ciò che ami e ciò di cui c'è bisogno.",
+"p": [
+"Elenca competenze, interessi e problemi che vedi spesso intorno a te.",
+"Dove i tre cerchi si incontrano si uniscono energia e utilità.",
+"Aggiungi un quarto controllo: qualcuno potrebbe pagare per questo, in linea di principio?"
+],
+"q": "Per cosa ti chiedono più spesso aiuto gli amici?",
+"c": "Disegna tre cerchi per competenze, passioni, bisogni e riempi ognuno con cinque voci."
+},
+"pt": {
+"t": "Competências, paixões e necessidades",
+"g": "Encontra ideias onde o que fazes bem encontra o que amas e o que é preciso.",
+"p": [
+"Lista as tuas competências, interesses e problemas que vês com frequência.",
+"Onde os três se cruzam, encontram-se energia e utilidade.",
+"Junta um quarto teste: poderia alguém pagar por isto, em princípio?"
+],
+"q": "Em que é que os teus amigos mais te pedem ajuda?",
+"c": "Desenha três círculos de competências, paixões e necessidades e põe cinco itens em cada."
+},
+"pt_BR": {
+"t": "Habilidades, paixões e necessidades",
+"g": "Encontre ideias onde o que você faz bem encontra o que ama e o que é preciso.",
+"p": [
+"Liste suas habilidades, interesses e problemas que você vê com frequência.",
+"Onde os três se cruzam, encontram-se energia e utilidade.",
+"Some um quarto teste: alguém poderia pagar por isso, em princípio?"
+],
+"q": "Com o que seus amigos mais pedem ajuda a você?",
+"c": "Desenhe três círculos de habilidades, paixões e necessidades e coloque cinco itens em cada."
+}
+}
+},
+{
+"d": 8,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Small ideas count too",
+"g": "Appreciate that a modest local service can be as meaningful as a big tech startup.",
+"p": [
+"Many good businesses serve one neighbourhood, one hobby or one small group.",
+"Small does not mean unimportant; steady value and trust build real businesses.",
+"You can start small, learn fast and decide later whether to grow."
+],
+"q": "Which small local business do you love, and why does it work?",
+"c": "Think of a small service you could offer nearby and describe it in one sentence."
+},
+"de": {
+"t": "Auch kleine Ideen zählen",
+"g": "Erkenne, dass ein bescheidener lokaler Service so wertvoll sein kann wie ein Tech-Start-up.",
+"p": [
+"Viele gute Unternehmen bedienen ein Viertel, ein Hobby oder eine kleine Gruppe.",
+"Klein heißt nicht unwichtig; stetiger Nutzen und Vertrauen tragen echte Firmen.",
+"Du kannst klein starten, schnell lernen und später über Wachstum entscheiden."
+],
+"q": "Welches kleine lokale Geschäft liebst du, und warum funktioniert es?",
+"c": "Überlege einen kleinen Service in deiner Nähe und beschreibe ihn in einem Satz."
+},
+"es": {
+"t": "Las ideas pequeñas también cuentan",
+"g": "Valora que un servicio local modesto puede ser tan valioso como una gran startup.",
+"p": [
+"Muchos buenos negocios atienden a un barrio, una afición o un grupo pequeño.",
+"Pequeño no es poco importante; el valor constante y la confianza sostienen negocios reales.",
+"Puedes empezar pequeño, aprender rápido y decidir después si crecer."
+],
+"q": "¿Qué pequeño negocio local te encanta y por qué funciona?",
+"c": "Piensa en un servicio pequeño que podrías ofrecer cerca y descríbelo en una frase."
+},
+"fr": {
+"t": "Les petites idées comptent aussi",
+"g": "Mesure qu'un modeste service local peut avoir autant de sens qu'une grande startup.",
+"p": [
+"Beaucoup de bonnes entreprises servent un quartier, une passion ou un petit groupe.",
+"Petit ne veut pas dire sans importance; valeur régulière et confiance font les vrais commerces.",
+"Tu peux démarrer petit, apprendre vite et décider plus tard de grandir."
+],
+"q": "Quel petit commerce local aimes-tu, et pourquoi fonctionne-t-il ?",
+"c": "Imagine un petit service à proposer près de chez toi et décris-le en une phrase."
+},
+"it": {
+"t": "Anche le piccole idee contano",
+"g": "Riconosci che un modesto servizio locale può avere tanto valore quanto una grande startup.",
+"p": [
+"Molte buone attività servono un quartiere, un hobby o un piccolo gruppo.",
+"Piccolo non vuol dire poco importante; valore costante e fiducia fanno vere imprese.",
+"Puoi partire in piccolo, imparare in fretta e decidere poi se crescere."
+],
+"q": "Quale piccola attività locale ami e perché funziona?",
+"c": "Pensa a un piccolo servizio da offrire vicino a te e descrivilo in una frase."
+},
+"pt": {
+"t": "Ideias pequenas também contam",
+"g": "Reconhece que um serviço local modesto pode valer tanto como uma grande startup.",
+"p": [
+"Muitos bons negócios servem um bairro, um passatempo ou um pequeno grupo.",
+"Pequeno não é pouco importante; valor constante e confiança sustentam negócios reais.",
+"Podes começar pequeno, aprender depressa e decidir depois se queres crescer."
+],
+"q": "Que pequeno negócio local adoras e porque funciona?",
+"c": "Pensa num pequeno serviço que podias oferecer perto de ti e descreve-o numa frase."
+},
+"pt_BR": {
+"t": "Ideias pequenas também contam",
+"g": "Reconheça que um serviço local modesto pode valer tanto quanto uma grande startup.",
+"p": [
+"Muitos bons negócios atendem um bairro, um hobby ou um pequeno grupo.",
+"Pequeno não é pouco importante; valor constante e confiança sustentam negócios reais.",
+"Você pode começar pequeno, aprender rápido e decidir depois se quer crescer."
+],
+"q": "Que pequeno negócio local você adora e por que ele funciona?",
+"c": "Pense num pequeno serviço que você poderia oferecer por perto e descreva em uma frase."
+}
+}
+},
+{
+"d": 9,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Brainstorming without judging",
+"g": "Generate many ideas first and filter them only afterwards.",
+"p": [
+"Set a timer and write as many ideas as you can, silly ones included.",
+"Judging while you generate shuts down the unusual ideas that often win.",
+"Afterwards, mark the ideas that excite you and that solve a real problem."
+],
+"q": "What is the wildest business idea you ever had, even as a joke?",
+"c": "Set a five-minute timer and list 20 ideas on one problem; do not edit."
+},
+"de": {
+"t": "Brainstorming ohne Bewertung",
+"g": "Sammle zuerst viele Ideen und filtere sie erst danach.",
+"p": [
+"Stell einen Timer und schreib so viele Ideen wie möglich auf, auch alberne.",
+"Wer beim Sammeln bewertet, erstickt die ungewöhnlichen Ideen, die oft gewinnen.",
+"Markiere danach die Ideen, die dich begeistern und ein echtes Problem lösen."
+],
+"q": "Was war deine verrückteste Geschäftsidee, auch nur im Scherz?",
+"c": "Stell fünf Minuten den Timer und liste 20 Ideen zu einem Problem, ohne zu ändern."
+},
+"es": {
+"t": "Lluvia de ideas sin juzgar",
+"g": "Genera muchas ideas primero y fíltralas solo después.",
+"p": [
+"Pon un temporizador y escribe cuantas ideas puedas, incluso las tontas.",
+"Juzgar mientras generas apaga las ideas raras que a menudo ganan.",
+"Después, marca las ideas que te emocionan y resuelven un problema real."
+],
+"q": "¿Cuál fue la idea de negocio más loca que tuviste, aunque fuera en broma?",
+"c": "Pon cinco minutos y lista 20 ideas sobre un problema sin corregir."
+},
+"fr": {
+"t": "Remue-méninges sans juger",
+"g": "Génère d'abord beaucoup d'idées et ne les filtre qu'ensuite.",
+"p": [
+"Lance un minuteur et note un maximum d'idées, même farfelues.",
+"Juger en créant étouffe les idées inhabituelles qui gagnent souvent.",
+"Ensuite, marque celles qui t'enthousiasment et résolvent un vrai problème."
+],
+"q": "Quelle est l'idée d'entreprise la plus folle que tu aies eue, même pour rire ?",
+"c": "Règle cinq minutes et liste 20 idées sur un problème, sans corriger."
+},
+"it": {
+"t": "Brainstorming senza giudicare",
+"g": "Genera prima molte idee e filtrale solo dopo.",
+"p": [
+"Imposta un timer e scrivi più idee possibile, anche quelle buffe.",
+"Giudicare mentre generi spegne le idee insolite che spesso vincono.",
+"Poi segna le idee che ti entusiasmano e risolvono un problema reale."
+],
+"q": "Qual è l'idea d'impresa più folle che hai avuto, anche per scherzo?",
+"c": "Imposta cinque minuti e scrivi 20 idee su un problema, senza correggere."
+},
+"pt": {
+"t": "Brainstorming sem julgar",
+"g": "Gera primeiro muitas ideias e filtra-as só depois.",
+"p": [
+"Põe um temporizador e escreve quantas ideias conseguires, até as tolas.",
+"Julgar enquanto crias apaga as ideias invulgares que muitas vezes ganham.",
+"Depois, marca as ideias que te entusiasmam e resolvem um problema real."
+],
+"q": "Qual foi a ideia de negócio mais louca que tiveste, mesmo a brincar?",
+"c": "Põe cinco minutos no temporizador e lista 20 ideias sobre um problema, sem corrigir."
+},
+"pt_BR": {
+"t": "Brainstorming sem julgar",
+"g": "Gere primeiro muitas ideias e filtre-as só depois.",
+"p": [
+"Ligue um timer e escreva quantas ideias conseguir, até as bobas.",
+"Julgar enquanto cria apaga as ideias incomuns que muitas vezes vencem.",
+"Depois, marque as ideias que empolgam você e resolvem um problema real."
+],
+"q": "Qual foi a ideia de negócio mais maluca que você já teve, mesmo de brincadeira?",
+"c": "Ligue um timer de cinco minutos e liste 20 ideias sobre um problema, sem editar."
+}
+}
+},
+{
+"d": 10,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Improving an existing product",
+"g": "Find ideas that make something faster, cheaper, simpler or more pleasant.",
+"p": [
+"You do not have to invent from scratch; a better version can be a business.",
+"Look at a product you use and ask what is slow, confusing or ugly about it.",
+"Small improvements in speed, price, ease or comfort can win loyal fans."
+],
+"q": "Which everyday product would you redesign if you could?",
+"c": "Pick one product and list three ways to make it simpler or nicer."
+},
+"de": {
+"t": "Ein Produkt verbessern",
+"g": "Finde Ideen, die etwas schneller, günstiger, einfacher oder angenehmer machen.",
+"p": [
+"Du musst nicht bei null erfinden; eine bessere Version kann ein Geschäft sein.",
+"Schau dir ein Produkt an und frag, was daran langsam, verwirrend oder hässlich ist.",
+"Kleine Verbesserungen bei Tempo, Preis, Einfachheit oder Komfort gewinnen treue Fans."
+],
+"q": "Welches Alltagsprodukt würdest du neu gestalten, wenn du könntest?",
+"c": "Wähle ein Produkt und nenne drei Wege, es einfacher oder schöner zu machen."
+},
+"es": {
+"t": "Mejorar un producto existente",
+"g": "Encuentra ideas que hagan algo más rápido, barato, simple o agradable.",
+"p": [
+"No hace falta inventar desde cero; una versión mejor puede ser un negocio.",
+"Mira un producto que usas y pregunta qué tiene de lento, confuso o feo.",
+"Pequeñas mejoras en rapidez, precio, facilidad o comodidad ganan fieles."
+],
+"q": "¿Qué producto cotidiano rediseñarías si pudieras?",
+"c": "Elige un producto y anota tres formas de hacerlo más simple o agradable."
+},
+"fr": {
+"t": "Améliorer un produit existant",
+"g": "Trouve des idées qui rendent une chose plus rapide, moins chère, plus simple ou plus agréable.",
+"p": [
+"Inutile d'inventer de zéro; une meilleure version peut devenir une entreprise.",
+"Observe un produit que tu utilises : qu'est-il de lent, confus ou laid ?",
+"De petites améliorations de rapidité, prix, simplicité ou confort fidélisent."
+],
+"q": "Quel produit du quotidien redessinerais-tu si tu le pouvais ?",
+"c": "Choisis un produit et note trois façons de le rendre plus simple ou plaisant."
+},
+"it": {
+"t": "Migliorare un prodotto esistente",
+"g": "Trova idee che rendano qualcosa più veloce, economico, semplice o piacevole.",
+"p": [
+"Non serve inventare da zero; una versione migliore può essere un'impresa.",
+"Guarda un prodotto che usi e chiediti cosa ha di lento, confuso o brutto.",
+"Piccoli miglioramenti in velocità, prezzo, facilità o comfort conquistano fedeli."
+],
+"q": "Quale prodotto quotidiano ridisegneresti, se potessi?",
+"c": "Scegli un prodotto e annota tre modi per renderlo più semplice o piacevole."
+},
+"pt": {
+"t": "Melhorar um produto existente",
+"g": "Encontra ideias que tornem algo mais rápido, barato, simples ou agradável.",
+"p": [
+"Não é preciso inventar do zero; uma versão melhor pode ser um negócio.",
+"Olha para um produto que usas e pergunta o que tem de lento, confuso ou feio.",
+"Pequenas melhorias em rapidez, preço, facilidade ou conforto conquistam fiéis."
+],
+"q": "Que produto do dia a dia redesenharias se pudesses?",
+"c": "Escolhe um produto e anota três formas de o tornar mais simples ou agradável."
+},
+"pt_BR": {
+"t": "Melhorar um produto existente",
+"g": "Encontre ideias que deixem algo mais rápido, barato, simples ou agradável.",
+"p": [
+"Não precisa inventar do zero; uma versão melhor pode ser um negócio.",
+"Olhe um produto que você usa e pergunte o que ele tem de lento, confuso ou feio.",
+"Pequenas melhorias em rapidez, preço, facilidade ou conforto conquistam fiéis."
+],
+"q": "Que produto do dia a dia você redesenharia se pudesse?",
+"c": "Escolha um produto e anote três jeitos de deixá-lo mais simples ou agradável."
+}
+}
+}
+]
+}

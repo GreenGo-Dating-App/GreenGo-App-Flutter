@@ -1,0 +1,835 @@
+{
+ "topic": "cv",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Career objective or summary",
+     "g": "Know when a short objective still makes sense and when a summary works better.",
+     "p": [
+      "An objective states the role you want; a summary shows what you offer.",
+      "Objectives suit career changers and first jobs; summaries suit experience.",
+      "Either way, keep it short, specific and about the employer's needs."
+     ],
+     "q": "Is your situation closer to starting out or to continuing?",
+     "c": "Write one objective and one summary, then keep the stronger one."
+    },
+    "de": {
+     "t": "Karriereziel oder Profil",
+     "g": "Wisse, wann ein kurzes Ziel noch sinnvoll ist und wann ein Profil besser wirkt.",
+     "p": [
+      "Ein Ziel nennt die gewünschte Rolle; ein Profil zeigt, was du bietest.",
+      "Ziele passen zu Quereinsteigern und Erstjobs; Profile zu Erfahrenen.",
+      "In beiden Fällen: kurz, konkret und auf den Bedarf des Arbeitgebers bezogen."
+     ],
+     "q": "Steht dein Weg eher am Anfang oder in der Fortsetzung?",
+     "c": "Schreibe ein Ziel und ein Profil und behalte das stärkere."
+    },
+    "es": {
+     "t": "Objetivo profesional o resumen",
+     "g": "Sabe cuándo un objetivo breve aún sirve y cuándo un resumen funciona mejor.",
+     "p": [
+      "El objetivo indica el puesto que quieres; el resumen muestra lo que ofreces.",
+      "Los objetivos van bien a quien cambia de rumbo o busca su primer empleo.",
+      "En ambos casos, sé breve, concreto y centrado en lo que necesita la empresa."
+     ],
+     "q": "¿Tu situación se parece más a empezar o a continuar?",
+     "c": "Escribe un objetivo y un resumen y quédate con el más fuerte."
+    },
+    "fr": {
+     "t": "Objectif professionnel ou résumé",
+     "g": "Sache quand un court objectif reste utile et quand un résumé fonctionne mieux.",
+     "p": [
+      "L'objectif nomme le poste voulu ; le résumé montre ce que tu apportes.",
+      "L'objectif convient aux reconversions et premiers emplois ; le résumé aux parcours riches.",
+      "Dans les deux cas, sois bref, précis et centré sur les besoins de l'employeur."
+     ],
+     "q": "Ta situation ressemble-t-elle plus à un début ou à une continuité ?",
+     "c": "Écris un objectif et un résumé, puis garde le plus fort."
+    },
+    "it": {
+     "t": "Obiettivo professionale o profilo",
+     "g": "Sappi quando un breve obiettivo ha ancora senso e quando un profilo funziona meglio.",
+     "p": [
+      "L'obiettivo indica il ruolo che vuoi; il profilo mostra ciò che offri.",
+      "Gli obiettivi vanno bene per chi cambia strada o cerca il primo lavoro.",
+      "In entrambi i casi sii breve, specifico e centrato sulle esigenze dell'azienda."
+     ],
+     "q": "La tua situazione somiglia più a un inizio o a una continuazione?",
+     "c": "Scrivi un obiettivo e un profilo e tieni il più forte."
+    },
+    "pt": {
+     "t": "Objetivo profissional ou resumo",
+     "g": "Sabe quando um objetivo curto ainda faz sentido e quando um resumo funciona melhor.",
+     "p": [
+      "O objetivo indica a função que queres; o resumo mostra o que ofereces.",
+      "Os objetivos servem a quem muda de rumo ou procura o primeiro emprego.",
+      "Em ambos os casos, sê breve, concreto e focado no que a empresa precisa."
+     ],
+     "q": "A tua situação parece mais um começo ou uma continuação?",
+     "c": "Escreve um objetivo e um resumo e fica com o mais forte."
+    },
+    "pt_BR": {
+     "t": "Objetivo profissional ou resumo",
+     "g": "Saiba quando um objetivo curto ainda faz sentido e quando um resumo funciona melhor.",
+     "p": [
+      "O objetivo indica a função que você quer; o resumo mostra o que você oferece.",
+      "Objetivos servem a quem muda de rumo ou busca o primeiro emprego.",
+      "Nos dois casos, seja breve, concreto e focado no que a empresa precisa."
+     ],
+     "q": "Sua situação parece mais um começo ou uma continuação?",
+     "c": "Escreva um objetivo e um resumo e fique com o mais forte."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tone and voice on a CV",
+     "g": "Use crisp, active phrases and usually skip the word I.",
+     "p": [
+      "CV lines are short phrases, not full sentences with I and my.",
+      "Start with the action: led, built, trained, improved.",
+      "Keep a calm, confident, factual tone without exaggeration."
+     ],
+     "q": "Do you tend to write modestly, boastfully or somewhere between?",
+     "c": "Rewrite two CV lines that begin with I into crisp phrases."
+    },
+    "de": {
+     "t": "Ton und Stimme im Lebenslauf",
+     "g": "Nutze knappe, aktive Formulierungen und lasse das Wort ich meist weg.",
+     "p": [
+      "Lebenslaufzeilen sind kurze Wendungen, keine ganzen Sätze mit ich und mein.",
+      "Beginne mit der Handlung: leitete, baute, schulte, verbesserte.",
+      "Bleibe ruhig, selbstsicher und sachlich, ohne zu übertreiben."
+     ],
+     "q": "Schreibst du eher bescheiden, angeberisch oder dazwischen?",
+     "c": "Formuliere zwei Zeilen, die mit ich beginnen, in knappe Wendungen um."
+    },
+    "es": {
+     "t": "Tono y voz en el CV",
+     "g": "Usa frases breves y activas y normalmente omite la palabra yo.",
+     "p": [
+      "Las líneas del CV son frases cortas, no oraciones completas con yo y mi.",
+      "Empieza por la acción: dirigí, construí, formé, mejoré.",
+      "Mantén un tono sereno, seguro y objetivo, sin exagerar."
+     ],
+     "q": "¿Sueles escribir con modestia, con presunción o en un punto medio?",
+     "c": "Reescribe dos líneas que empiecen por yo como frases breves."
+    },
+    "fr": {
+     "t": "Ton et voix dans un CV",
+     "g": "Utilise des phrases nettes et actives et évite en général le mot je.",
+     "p": [
+      "Les lignes de CV sont de courtes formules, pas des phrases avec je et mon.",
+      "Commence par l'action : dirigé, créé, formé, amélioré.",
+      "Garde un ton calme, assuré et factuel, sans exagérer."
+     ],
+     "q": "As-tu tendance à écrire avec modestie, avec emphase ou entre les deux ?",
+     "c": "Réécris deux lignes qui commencent par je en formules nettes."
+    },
+    "it": {
+     "t": "Tono e voce nel CV",
+     "g": "Usa frasi brevi e attive e di solito evita la parola io.",
+     "p": [
+      "Le righe del CV sono brevi espressioni, non frasi complete con io e mio.",
+      "Parti dall'azione: guidato, creato, formato, migliorato.",
+      "Mantieni un tono calmo, sicuro e fattuale, senza esagerare."
+     ],
+     "q": "Tendi a scrivere con modestia, con vanto o a metà strada?",
+     "c": "Riscrivi due righe che iniziano con io in espressioni brevi."
+    },
+    "pt": {
+     "t": "Tom e voz no CV",
+     "g": "Usa frases curtas e ativas e normalmente evita a palavra eu.",
+     "p": [
+      "As linhas do CV são frases curtas, não orações completas com eu e meu.",
+      "Começa pela ação: liderei, construí, formei, melhorei.",
+      "Mantém um tom calmo, seguro e factual, sem exagerar."
+     ],
+     "q": "Costumas escrever com modéstia, com vaidade ou algures no meio?",
+     "c": "Reescreve duas linhas que comecem por eu em frases curtas."
+    },
+    "pt_BR": {
+     "t": "Tom e voz no currículo",
+     "g": "Use frases curtas e ativas e normalmente evite a palavra eu.",
+     "p": [
+      "As linhas do currículo são frases curtas, não orações completas com eu e meu.",
+      "Comece pela ação: liderei, construí, treinei, melhorei.",
+      "Mantenha um tom calmo, seguro e factual, sem exagerar."
+     ],
+     "q": "Você costuma escrever com modéstia, com vaidade ou no meio-termo?",
+     "c": "Reescreva duas linhas que começam com eu em frases curtas."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tense consistency",
+     "g": "Use present tense for current roles and past tense for previous ones, every time.",
+     "p": [
+      "For your current job, describe ongoing tasks in the present tense.",
+      "For finished jobs, use the past tense throughout.",
+      "Reread each bullet; mixed tenses look careless."
+     ],
+     "q": "Which of your roles are current and which are finished?",
+     "c": "Check every bullet in your CV and fix any tense mix-ups."
+    },
+    "de": {
+     "t": "Zeitformen einheitlich",
+     "g": "Nutze für aktuelle Stellen das Präsens und für frühere die Vergangenheit, immer.",
+     "p": [
+      "Beschreibe in deinem aktuellen Job laufende Aufgaben im Präsens.",
+      "Für beendete Jobs nutze durchgehend die Vergangenheit.",
+      "Lies jeden Punkt nach; gemischte Zeiten wirken nachlässig."
+     ],
+     "q": "Welche deiner Stellen laufen noch und welche sind beendet?",
+     "c": "Prüfe jeden Punkt deines Lebenslaufs und korrigiere Zeitenmix."
+    },
+    "es": {
+     "t": "Coherencia de tiempos verbales",
+     "g": "Usa presente en los puestos actuales y pasado en los anteriores, siempre.",
+     "p": [
+      "En tu trabajo actual, describe las tareas en curso en presente.",
+      "Para trabajos terminados, usa el pasado en todo momento.",
+      "Relee cada viñeta; mezclar tiempos parece descuido."
+     ],
+     "q": "¿Cuáles de tus puestos son actuales y cuáles han terminado?",
+     "c": "Revisa cada viñeta de tu CV y corrige las mezclas de tiempos."
+    },
+    "fr": {
+     "t": "Cohérence des temps",
+     "g": "Utilise le présent pour les postes actuels et le passé pour les précédents, toujours.",
+     "p": [
+      "Pour ton poste actuel, décris les tâches en cours au présent.",
+      "Pour les emplois terminés, emploie le passé de bout en bout.",
+      "Relis chaque ligne ; des temps mélangés font négligé."
+     ],
+     "q": "Quels postes sont en cours et lesquels sont terminés ?",
+     "c": "Vérifie chaque ligne de ton CV et corrige les mélanges de temps."
+    },
+    "it": {
+     "t": "Coerenza dei tempi verbali",
+     "g": "Usa il presente per i ruoli attuali e il passato per quelli precedenti, sempre.",
+     "p": [
+      "Per il lavoro attuale descrivi i compiti in corso al presente.",
+      "Per i lavori conclusi usa il passato dall'inizio alla fine.",
+      "Rileggi ogni punto: tempi mescolati sembrano trascuratezza."
+     ],
+     "q": "Quali dei tuoi ruoli sono in corso e quali conclusi?",
+     "c": "Controlla ogni punto del CV e correggi i tempi mescolati."
+    },
+    "pt": {
+     "t": "Coerência dos tempos verbais",
+     "g": "Usa o presente nas funções atuais e o passado nas anteriores, sempre.",
+     "p": [
+      "No trabalho atual, descreve as tarefas em curso no presente.",
+      "Nos empregos terminados, usa o passado do princípio ao fim.",
+      "Relê cada ponto; tempos misturados parecem descuido."
+     ],
+     "q": "Quais das tuas funções são atuais e quais terminaram?",
+     "c": "Verifica cada ponto do CV e corrige misturas de tempos."
+    },
+    "pt_BR": {
+     "t": "Coerência dos tempos verbais",
+     "g": "Use o presente nas funções atuais e o passado nas anteriores, sempre.",
+     "p": [
+      "No trabalho atual, descreva as tarefas em andamento no presente.",
+      "Nos empregos encerrados, use o passado do início ao fim.",
+      "Releia cada item; tempos misturados parecem descuido."
+     ],
+     "q": "Quais das suas funções são atuais e quais terminaram?",
+     "c": "Confira cada item do currículo e corrija misturas de tempos."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing what to leave out",
+     "g": "Decide which old or unrelated experience no longer earns its space.",
+     "p": [
+      "Ask of every item: does it help me get this particular job?",
+      "Very old or unrelated jobs can shrink to one line or go.",
+      "Cutting is not lying; it is choosing the best story."
+     ],
+     "q": "Which item on your CV is the hardest to let go of, and why?",
+     "c": "Mark one item to shorten and one to remove from your draft."
+    },
+    "de": {
+     "t": "Entscheiden, was wegfällt",
+     "g": "Entscheide, welche alte oder unpassende Erfahrung ihren Platz nicht mehr verdient.",
+     "p": [
+      "Frage bei jedem Punkt: Hilft er mir bei genau dieser Stelle?",
+      "Sehr alte oder unpassende Jobs können auf eine Zeile schrumpfen oder wegfallen.",
+      "Weglassen ist nicht Lügen, sondern die beste Geschichte wählen."
+     ],
+     "q": "Welcher Punkt fällt dir am schwersten loszulassen, und warum?",
+     "c": "Markiere einen Punkt zum Kürzen und einen zum Streichen."
+    },
+    "es": {
+     "t": "Elegir qué dejar fuera",
+     "g": "Decide qué experiencia antigua o ajena ya no merece su espacio.",
+     "p": [
+      "Pregunta de cada punto: ¿me ayuda a conseguir este trabajo concreto?",
+      "Los empleos muy antiguos o ajenos pueden quedar en una línea o salir.",
+      "Recortar no es mentir; es elegir la mejor historia."
+     ],
+     "q": "¿Qué elemento de tu CV te cuesta más quitar y por qué?",
+     "c": "Marca un elemento para acortar y otro para eliminar."
+    },
+    "fr": {
+     "t": "Choisir ce qu'on laisse de côté",
+     "g": "Décide quelle expérience ancienne ou éloignée ne mérite plus sa place.",
+     "p": [
+      "Demande-toi pour chaque ligne : m'aide-t-elle à décrocher ce poste précis ?",
+      "Les emplois très anciens ou hors sujet peuvent tenir en une ligne ou disparaître.",
+      "Couper n'est pas mentir ; c'est choisir la meilleure histoire."
+     ],
+     "q": "Quel élément de ton CV as-tu le plus de mal à retirer, et pourquoi ?",
+     "c": "Marque un élément à raccourcir et un à supprimer."
+    },
+    "it": {
+     "t": "Scegliere cosa lasciare fuori",
+     "g": "Decidi quale esperienza vecchia o lontana non merita più il suo spazio.",
+     "p": [
+      "Chiediti per ogni voce: mi aiuta a ottenere proprio questo lavoro?",
+      "Lavori molto vecchi o non pertinenti possono ridursi a una riga o sparire.",
+      "Tagliare non è mentire: è scegliere la storia migliore."
+     ],
+     "q": "Quale voce del tuo CV fai più fatica a togliere, e perché?",
+     "c": "Segna una voce da accorciare e una da eliminare."
+    },
+    "pt": {
+     "t": "Escolher o que deixar de fora",
+     "g": "Decide que experiência antiga ou alheia já não merece o seu espaço.",
+     "p": [
+      "Pergunta de cada ponto: ajuda-me a conseguir este trabalho em concreto?",
+      "Empregos muito antigos ou alheios podem ficar numa linha ou sair.",
+      "Cortar não é mentir; é escolher a melhor história."
+     ],
+     "q": "Que item do teu CV mais custa a tirar, e porquê?",
+     "c": "Marca um item para encurtar e outro para eliminar."
+    },
+    "pt_BR": {
+     "t": "Escolher o que deixar de fora",
+     "g": "Decida que experiência antiga ou alheia já não merece o espaço.",
+     "p": [
+      "Pergunte de cada item: isso me ajuda a conseguir este trabalho específico?",
+      "Empregos muito antigos ou alheios podem ficar numa linha ou sair.",
+      "Cortar não é mentir; é escolher a melhor história."
+     ],
+     "q": "Que item do seu currículo é mais difícil de tirar, e por quê?",
+     "c": "Marque um item para encurtar e outro para eliminar."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "One page or two",
+     "g": "Judge the right CV length for your experience level and industry.",
+     "p": [
+      "Early in a career, one page is usually enough.",
+      "Longer careers may fill two pages if every line earns its place.",
+      "Some countries and fields, such as academia, expect more; check local norms."
+     ],
+     "q": "How many pages is your CV now, and does each one need to be there?",
+     "c": "Count your pages and cut until every line has a reason."
+    },
+    "de": {
+     "t": "Eine Seite oder zwei",
+     "g": "Beurteile die passende Länge für Erfahrung und Branche.",
+     "p": [
+      "Am Karrierebeginn reicht meist eine Seite.",
+      "Längere Laufbahnen füllen zwei Seiten, wenn jede Zeile ihren Platz verdient.",
+      "Manche Länder und Felder wie die Wissenschaft erwarten mehr; prüfe die Gepflogenheiten."
+     ],
+     "q": "Wie viele Seiten hat dein Lebenslauf jetzt, und braucht jede Seite ihren Platz?",
+     "c": "Zähle deine Seiten und kürze, bis jede Zeile einen Grund hat."
+    },
+    "es": {
+     "t": "Una página o dos",
+     "g": "Juzga la extensión adecuada según tu experiencia y sector.",
+     "p": [
+      "Al inicio de la carrera, una página suele bastar.",
+      "Las trayectorias largas pueden llenar dos si cada línea se lo merece.",
+      "Algunos países y campos, como el académico, esperan más; revisa las normas locales."
+     ],
+     "q": "¿Cuántas páginas tiene tu CV ahora y necesita cada una estar ahí?",
+     "c": "Cuenta tus páginas y recorta hasta que cada línea tenga motivo."
+    },
+    "fr": {
+     "t": "Une page ou deux",
+     "g": "Détermine la bonne longueur selon ton expérience et ton secteur.",
+     "p": [
+      "En début de carrière, une page suffit généralement.",
+      "Les carrières longues peuvent remplir deux pages si chaque ligne le mérite.",
+      "Certains pays et domaines, comme la recherche, en attendent plus ; vérifie les usages."
+     ],
+     "q": "Combien de pages fait ton CV et chacune a-t-elle sa raison d'être ?",
+     "c": "Compte tes pages et coupe jusqu'à ce que chaque ligne ait une raison."
+    },
+    "it": {
+     "t": "Una pagina o due",
+     "g": "Valuta la lunghezza giusta per la tua esperienza e il tuo settore.",
+     "p": [
+      "All'inizio della carriera di solito basta una pagina.",
+      "Carriere lunghe possono riempire due pagine se ogni riga se lo merita.",
+      "Alcuni paesi e ambiti, come quello accademico, ne aspettano di più; controlla le usanze."
+     ],
+     "q": "Quante pagine ha ora il tuo CV e ognuna è davvero necessaria?",
+     "c": "Conta le pagine e taglia finché ogni riga ha una ragione."
+    },
+    "pt": {
+     "t": "Uma página ou duas",
+     "g": "Avalia o tamanho certo para a tua experiência e setor.",
+     "p": [
+      "No início da carreira, uma página costuma bastar.",
+      "Carreiras longas podem encher duas se cada linha o merecer.",
+      "Alguns países e áreas, como a académica, esperam mais; confirma as normas locais."
+     ],
+     "q": "Quantas páginas tem agora o teu CV e cada uma é mesmo necessária?",
+     "c": "Conta as páginas e corta até cada linha ter razão de estar."
+    },
+    "pt_BR": {
+     "t": "Uma página ou duas",
+     "g": "Avalie o tamanho certo para sua experiência e setor.",
+     "p": [
+      "No início da carreira, uma página costuma bastar.",
+      "Carreiras longas podem encher duas se cada linha merecer.",
+      "Alguns países e áreas, como a acadêmica, esperam mais; confira as normas locais."
+     ],
+     "q": "Quantas páginas tem seu currículo agora e cada uma é mesmo necessária?",
+     "c": "Conte as páginas e corte até cada linha ter razão de estar."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Margins and white space",
+     "g": "Give the page room to breathe so the reader's eye moves easily.",
+     "p": [
+      "Leave comfortable margins, roughly two centimetres or one inch.",
+      "Add space between sections so blocks are easy to tell apart.",
+      "Crowded pages tire the eye; empty space makes content look confident."
+     ],
+     "q": "Does your CV feel airy or crowded when you look at it?",
+     "c": "Adjust margins and section spacing, then compare before and after."
+    },
+    "de": {
+     "t": "Ränder und Weißraum",
+     "g": "Gib der Seite Luft, damit das Auge mühelos wandert.",
+     "p": [
+      "Lasse angenehme Ränder von etwa zwei Zentimetern.",
+      "Plane Abstand zwischen Abschnitten, damit Blöcke gut unterscheidbar sind.",
+      "Volle Seiten ermüden; Leerraum lässt Inhalt souverän wirken."
+     ],
+     "q": "Wirkt dein Lebenslauf luftig oder gedrängt, wenn du ihn ansiehst?",
+     "c": "Passe Ränder und Abschnittsabstände an und vergleiche vorher und nachher."
+    },
+    "es": {
+     "t": "Márgenes y espacio en blanco",
+     "g": "Deja respirar la página para que la vista se mueva con facilidad.",
+     "p": [
+      "Deja márgenes cómodos, de unos dos centímetros.",
+      "Añade espacio entre secciones para distinguir bien los bloques.",
+      "Las páginas apretadas cansan; el espacio da seguridad al contenido."
+     ],
+     "q": "¿Tu CV se ve aireado o apretado cuando lo miras?",
+     "c": "Ajusta márgenes y espacios entre secciones y compara antes y después."
+    },
+    "fr": {
+     "t": "Marges et espaces blancs",
+     "g": "Laisse respirer la page pour que l'oeil circule facilement.",
+     "p": [
+      "Prévois des marges confortables, environ deux centimètres.",
+      "Ajoute de l'espace entre les rubriques pour bien distinguer les blocs.",
+      "Les pages serrées fatiguent ; le vide donne de l'assurance au contenu."
+     ],
+     "q": "Ton CV paraît-il aéré ou chargé quand tu le regardes ?",
+     "c": "Ajuste marges et espacements, puis compare avant et après."
+    },
+    "it": {
+     "t": "Margini e spazio bianco",
+     "g": "Lascia respirare la pagina perché l'occhio scorra con facilità.",
+     "p": [
+      "Lascia margini comodi, circa due centimetri.",
+      "Aggiungi spazio tra le sezioni per distinguere bene i blocchi.",
+      "Le pagine affollate stancano; lo spazio dà sicurezza al contenuto."
+     ],
+     "q": "Il tuo CV sembra arioso o affollato quando lo guardi?",
+     "c": "Regola margini e spazi tra le sezioni e confronta prima e dopo."
+    },
+    "pt": {
+     "t": "Margens e espaço em branco",
+     "g": "Deixa a página respirar para o olhar se mover com facilidade.",
+     "p": [
+      "Deixa margens confortáveis, cerca de dois centímetros.",
+      "Põe espaço entre secções para distinguir bem os blocos.",
+      "Páginas apertadas cansam; o espaço dá confiança ao conteúdo."
+     ],
+     "q": "O teu CV parece arejado ou apertado quando o olhas?",
+     "c": "Ajusta margens e espaços entre secções e compara antes e depois."
+    },
+    "pt_BR": {
+     "t": "Margens e espaço em branco",
+     "g": "Deixe a página respirar para o olhar se mover com facilidade.",
+     "p": [
+      "Deixe margens confortáveis, cerca de dois centímetros.",
+      "Coloque espaço entre seções para distinguir bem os blocos.",
+      "Páginas apertadas cansam; o espaço dá confiança ao conteúdo."
+     ],
+     "q": "Seu currículo parece arejado ou apertado quando você olha?",
+     "c": "Ajuste margens e espaços entre seções e compare antes e depois."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Picking a readable font",
+     "g": "Choose clean, common fonts and sensible sizes for body text and headings.",
+     "p": [
+      "Pick one or two common, clean fonts and avoid decorative ones.",
+      "Body text around ten to twelve points is comfortable to read.",
+      "Make headings slightly larger or bolder, not wildly different."
+     ],
+     "q": "What font does your CV use right now, and is it easy to read?",
+     "c": "Switch to a clean font, set body text to 11 points and compare."
+    },
+    "de": {
+     "t": "Eine lesbare Schrift wählen",
+     "g": "Wähle klare, verbreitete Schriften und passende Größen für Text und Überschriften.",
+     "p": [
+      "Nimm eine oder zwei gängige, klare Schriften und meide Zierschriften.",
+      "Fließtext um zehn bis zwölf Punkt liest sich angenehm.",
+      "Mache Überschriften etwas größer oder fetter, nicht völlig anders."
+     ],
+     "q": "Welche Schrift nutzt dein Lebenslauf gerade, und ist sie gut lesbar?",
+     "c": "Wechsle zu einer klaren Schrift, stelle Text auf 11 Punkt und vergleiche."
+    },
+    "es": {
+     "t": "Elegir una fuente legible",
+     "g": "Elige fuentes limpias y comunes y tamaños sensatos para texto y títulos.",
+     "p": [
+      "Elige una o dos fuentes limpias y comunes y evita las decorativas.",
+      "Un texto de diez a doce puntos se lee cómodamente.",
+      "Haz los títulos algo mayores o en negrita, sin cambios extremos."
+     ],
+     "q": "¿Qué fuente usa ahora tu CV y es fácil de leer?",
+     "c": "Cambia a una fuente limpia, pon el texto en 11 puntos y compara."
+    },
+    "fr": {
+     "t": "Choisir une police lisible",
+     "g": "Choisis des polices sobres et courantes et des tailles raisonnables.",
+     "p": [
+      "Prends une ou deux polices courantes et nettes, sans fioritures.",
+      "Un corps de texte de dix à douze points est confortable.",
+      "Rends les titres un peu plus grands ou gras, sans contraste excessif."
+     ],
+     "q": "Quelle police utilise ton CV et est-elle facile à lire ?",
+     "c": "Passe à une police sobre, mets le texte en 11 points et compare."
+    },
+    "it": {
+     "t": "Scegliere un carattere leggibile",
+     "g": "Scegli caratteri puliti e comuni e dimensioni sensate per testo e titoli.",
+     "p": [
+      "Scegli uno o due caratteri comuni e puliti ed evita quelli decorativi.",
+      "Un testo da dieci a dodici punti si legge comodamente.",
+      "Rendi i titoli un po' più grandi o in grassetto, senza stravolgere."
+     ],
+     "q": "Che carattere usa ora il tuo CV ed è facile da leggere?",
+     "c": "Passa a un carattere pulito, imposta il testo a 11 punti e confronta."
+    },
+    "pt": {
+     "t": "Escolher uma fonte legível",
+     "g": "Escolhe fontes limpas e comuns e tamanhos sensatos para texto e títulos.",
+     "p": [
+      "Escolhe uma ou duas fontes limpas e comuns e evita as decorativas.",
+      "Texto de dez a doze pontos lê-se confortavelmente.",
+      "Faz os títulos um pouco maiores ou a negrito, sem exageros."
+     ],
+     "q": "Que fonte usa agora o teu CV e é fácil de ler?",
+     "c": "Muda para uma fonte limpa, põe o texto a 11 pontos e compara."
+    },
+    "pt_BR": {
+     "t": "Escolher uma fonte legível",
+     "g": "Escolha fontes limpas e comuns e tamanhos sensatos para texto e títulos.",
+     "p": [
+      "Escolha uma ou duas fontes limpas e comuns e evite as decorativas.",
+      "Texto de dez a doze pontos se lê confortavelmente.",
+      "Deixe os títulos um pouco maiores ou em negrito, sem exageros."
+     ],
+     "q": "Que fonte seu currículo usa agora e ela é fácil de ler?",
+     "c": "Mude para uma fonte limpa, ponha o texto em 11 pontos e compare."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Headings that guide the eye",
+     "g": "Use clear section headings that make the whole CV easy to scan in seconds.",
+     "p": [
+      "Use simple names: Summary, Experience, Education, Skills.",
+      "Style all headings the same way for a consistent look.",
+      "Clever or quirky heading names can confuse readers and software."
+     ],
+     "q": "Which of your headings could be clearer or shorter?",
+     "c": "Rename any creative headings to plain, standard ones."
+    },
+    "de": {
+     "t": "Überschriften, die den Blick führen",
+     "g": "Nutze klare Abschnittsüberschriften, damit alles in Sekunden erfassbar ist.",
+     "p": [
+      "Nimm einfache Namen: Profil, Berufserfahrung, Ausbildung, Kenntnisse.",
+      "Gestalte alle Überschriften gleich für ein einheitliches Bild.",
+      "Witzige Überschriften können Leser und Software verwirren."
+     ],
+     "q": "Welche deiner Überschriften könnte klarer oder kürzer sein?",
+     "c": "Benenne kreative Überschriften in schlichte, übliche um."
+    },
+    "es": {
+     "t": "Títulos que guían la vista",
+     "g": "Usa títulos de sección claros para que todo el CV se escanee en segundos.",
+     "p": [
+      "Usa nombres simples: Perfil, Experiencia, Formación, Habilidades.",
+      "Da el mismo estilo a todos los títulos para un aspecto coherente.",
+      "Títulos ocurrentes pueden confundir a lectores y programas."
+     ],
+     "q": "¿Qué títulos tuyos podrían ser más claros o más cortos?",
+     "c": "Cambia los títulos creativos por otros simples y habituales."
+    },
+    "fr": {
+     "t": "Des titres qui guident le regard",
+     "g": "Utilise des titres de rubrique clairs pour que le CV se parcoure en quelques secondes.",
+     "p": [
+      "Choisis des noms simples : Profil, Expérience, Formation, Compétences.",
+      "Applique le même style à tous les titres pour une allure cohérente.",
+      "Des titres fantaisistes peuvent dérouter lecteurs et logiciels."
+     ],
+     "q": "Quels titres pourraient être plus clairs ou plus courts ?",
+     "c": "Remplace les titres créatifs par des titres simples et usuels."
+    },
+    "it": {
+     "t": "Titoli che guidano lo sguardo",
+     "g": "Usa titoli di sezione chiari perché tutto il CV si scorra in pochi secondi.",
+     "p": [
+      "Usa nomi semplici: Profilo, Esperienza, Formazione, Competenze.",
+      "Dai a tutti i titoli lo stesso stile per un aspetto coerente.",
+      "Titoli bizzarri possono confondere lettori e software."
+     ],
+     "q": "Quali dei tuoi titoli potrebbero essere più chiari o più brevi?",
+     "c": "Rinomina i titoli creativi con nomi semplici e standard."
+    },
+    "pt": {
+     "t": "Títulos que guiam o olhar",
+     "g": "Usa títulos de secção claros para o CV se percorrer em segundos.",
+     "p": [
+      "Usa nomes simples: Perfil, Experiência, Formação, Competências.",
+      "Dá o mesmo estilo a todos os títulos para um aspeto coerente.",
+      "Títulos engraçados podem confundir leitores e programas."
+     ],
+     "q": "Que títulos teus podiam ser mais claros ou mais curtos?",
+     "c": "Troca os títulos criativos por outros simples e habituais."
+    },
+    "pt_BR": {
+     "t": "Títulos que guiam o olhar",
+     "g": "Use títulos de seção claros para o currículo ser percorrido em segundos.",
+     "p": [
+      "Use nomes simples: Resumo, Experiência, Formação, Habilidades.",
+      "Dê o mesmo estilo a todos os títulos para um visual coerente.",
+      "Títulos engraçados podem confundir leitores e programas."
+     ],
+     "q": "Que títulos seus poderiam ser mais claros ou mais curtos?",
+     "c": "Troque os títulos criativos por outros simples e habituais."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mini draft: the top third",
+     "g": "Put contact details, headline and summary together as one strong block.",
+     "p": [
+      "The top third of page one is what readers see first.",
+      "Combine name, contact line, headline and summary neatly.",
+      "Read it aloud; it should sound clear and confident in under fifteen seconds."
+     ],
+     "q": "Does your top third tell a stranger who you are?",
+     "c": "Assemble your full top block and ask someone to read it aloud."
+    },
+    "de": {
+     "t": "Mini-Entwurf: das obere Drittel",
+     "g": "Füge Kontakt, Überschrift und Profil zu einem starken Block zusammen.",
+     "p": [
+      "Das obere Drittel der ersten Seite sehen Leser zuerst.",
+      "Verbinde Name, Kontaktzeile, Überschrift und Profil sauber.",
+      "Lies es laut; es sollte in unter fünfzehn Sekunden klar und sicher klingen."
+     ],
+     "q": "Sagt dein oberes Drittel einem Fremden, wer du bist?",
+     "c": "Setze deinen ganzen Kopfbereich zusammen und lass ihn jemanden vorlesen."
+    },
+    "es": {
+     "t": "Mini borrador: el tercio superior",
+     "g": "Junta contacto, titular y resumen en un bloque sólido.",
+     "p": [
+      "El tercio superior de la primera página es lo que se ve primero.",
+      "Combina nombre, línea de contacto, titular y resumen con orden.",
+      "Léelo en voz alta; debe sonar claro y seguro en menos de quince segundos."
+     ],
+     "q": "¿Tu tercio superior dice a un desconocido quién eres?",
+     "c": "Monta todo tu bloque superior y pide a alguien que lo lea en voz alta."
+    },
+    "fr": {
+     "t": "Mini brouillon : le tiers supérieur",
+     "g": "Réunis coordonnées, titre et résumé en un bloc solide.",
+     "p": [
+      "Le tiers supérieur de la première page est ce qu'on voit d'abord.",
+      "Combine proprement nom, ligne de contact, titre et résumé.",
+      "Lis-le à voix haute ; il doit sonner clair et sûr en moins de quinze secondes."
+     ],
+     "q": "Ton tiers supérieur dit-il à un inconnu qui tu es ?",
+     "c": "Assemble tout ton bloc d'en-tête et fais-le lire à voix haute par quelqu'un."
+    },
+    "it": {
+     "t": "Mini bozza: il terzo superiore",
+     "g": "Riunisci recapiti, titolo e profilo in un blocco solido.",
+     "p": [
+      "Il terzo superiore della prima pagina è ciò che si vede per primo.",
+      "Combina con ordine nome, riga di contatto, titolo e profilo.",
+      "Leggilo ad alta voce: deve suonare chiaro e sicuro in meno di quindici secondi."
+     ],
+     "q": "Il tuo terzo superiore dice a un estraneo chi sei?",
+     "c": "Metti insieme tutto il blocco in alto e fallo leggere ad alta voce a qualcuno."
+    },
+    "pt": {
+     "t": "Mini rascunho: o terço superior",
+     "g": "Junta contactos, título e resumo num bloco sólido.",
+     "p": [
+      "O terço superior da primeira página é o que se vê primeiro.",
+      "Combina com ordem nome, linha de contacto, título e resumo.",
+      "Lê em voz alta; deve soar claro e seguro em menos de quinze segundos."
+     ],
+     "q": "O teu terço superior diz a um desconhecido quem és?",
+     "c": "Monta todo o teu bloco superior e pede a alguém que o leia em voz alta."
+    },
+    "pt_BR": {
+     "t": "Mini rascunho: o terço superior",
+     "g": "Junte contato, título e resumo em um bloco sólido.",
+     "p": [
+      "O terço superior da primeira página é o que se vê primeiro.",
+      "Combine com ordem nome, linha de contato, título e resumo.",
+      "Leia em voz alta; deve soar claro e seguro em menos de quinze segundos."
+     ],
+     "q": "Seu terço superior diz a um desconhecido quem você é?",
+     "c": "Monte todo o seu bloco superior e peça a alguém que leia em voz alta."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: the first month",
+     "g": "Look back at purpose, structure and the top part of your CV.",
+     "p": [
+      "Recall the goal: a CV earns an interview for one kind of job.",
+      "Check structure, format, contact details and a clear summary.",
+      "Celebrate progress; small edits add up to a strong document."
+     ],
+     "q": "Which lesson this month changed your CV the most?",
+     "c": "Reread your whole draft and list three things you will still improve."
+    },
+    "de": {
+     "t": "Rückblick: der erste Monat",
+     "g": "Blicke auf Zweck, Aufbau und den oberen Teil deines Lebenslaufs zurück.",
+     "p": [
+      "Erinnere dich ans Ziel: Ein Lebenslauf bringt ein Gespräch für eine Art Job.",
+      "Prüfe Aufbau, Format, Kontaktdaten und ein klares Profil.",
+      "Feiere den Fortschritt; kleine Änderungen ergeben ein starkes Dokument."
+     ],
+     "q": "Welche Lektion dieses Monats hat deinen Lebenslauf am meisten verändert?",
+     "c": "Lies den ganzen Entwurf noch einmal und notiere drei Verbesserungen."
+    },
+    "es": {
+     "t": "Repaso: el primer mes",
+     "g": "Repasa el propósito, la estructura y la parte superior de tu CV.",
+     "p": [
+      "Recuerda la meta: un CV consigue una entrevista para un tipo de puesto.",
+      "Revisa estructura, formato, datos de contacto y un resumen claro.",
+      "Celebra el progreso; pequeños cambios forman un documento sólido."
+     ],
+     "q": "¿Qué lección de este mes cambió más tu CV?",
+     "c": "Relee todo tu borrador y anota tres cosas que aún mejorarás."
+    },
+    "fr": {
+     "t": "Révision : le premier mois",
+     "g": "Revois le but, la structure et le haut de ton CV.",
+     "p": [
+      "Rappelle-toi l'objectif : un CV décroche un entretien pour un type de poste.",
+      "Vérifie structure, format, coordonnées et un résumé clair.",
+      "Célèbre tes progrès ; de petites retouches font un document solide."
+     ],
+     "q": "Quelle leçon de ce mois a le plus changé ton CV ?",
+     "c": "Relis tout ton brouillon et note trois points à améliorer encore."
+    },
+    "it": {
+     "t": "Ripasso: il primo mese",
+     "g": "Rivedi scopo, struttura e parte alta del tuo CV.",
+     "p": [
+      "Ricorda l'obiettivo: un CV ottiene un colloquio per un tipo di lavoro.",
+      "Controlla struttura, formato, recapiti e un profilo chiaro.",
+      "Festeggia i progressi: piccole modifiche fanno un documento solido."
+     ],
+     "q": "Quale lezione di questo mese ha cambiato di più il tuo CV?",
+     "c": "Rileggi tutta la bozza e annota tre cose da migliorare ancora."
+    },
+    "pt": {
+     "t": "Revisão: o primeiro mês",
+     "g": "Revê o propósito, a estrutura e a parte de cima do teu CV.",
+     "p": [
+      "Recorda o objetivo: um CV consegue uma entrevista para um tipo de vaga.",
+      "Verifica estrutura, formato, contactos e um resumo claro.",
+      "Celebra o progresso; pequenas mudanças formam um documento forte."
+     ],
+     "q": "Que lição deste mês mais mudou o teu CV?",
+     "c": "Relê todo o rascunho e anota três coisas que ainda vais melhorar."
+    },
+    "pt_BR": {
+     "t": "Revisão: o primeiro mês",
+     "g": "Reveja o propósito, a estrutura e a parte de cima do seu currículo.",
+     "p": [
+      "Lembre o objetivo: um currículo consegue uma entrevista para um tipo de vaga.",
+      "Confira estrutura, formato, contato e um resumo claro.",
+      "Comemore o progresso; pequenas mudanças formam um documento forte."
+     ],
+     "q": "Que lição deste mês mais mudou seu currículo?",
+     "c": "Releia todo o rascunho e anote três coisas que ainda vai melhorar."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "productivity_work",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting up your workspace",
+     "g": "Arrange your desk for comfort, light and focus.",
+     "p": [
+      "Put what you use most within easy reach.",
+      "Place the screen so you are not squinting or craning.",
+      "A spot that feels pleasant makes it easier to begin."
+     ],
+     "q": "What one change would make your workspace nicer to sit in?",
+     "c": "Make one small change to your workspace today and see how it feels."
+    },
+    "de": {
+     "t": "Deinen Arbeitsplatz einrichten",
+     "g": "Den Schreibtisch für Komfort, Licht und Fokus gestalten.",
+     "p": [
+      "Leg das Meistgenutzte in bequeme Reichweite.",
+      "Stell den Bildschirm so, dass du nicht schielst oder den Hals reckst.",
+      "Ein angenehmer Platz erleichtert den Anfang."
+     ],
+     "q": "Welche eine Änderung würde deinen Arbeitsplatz angenehmer machen?",
+     "c": "Nimm heute eine kleine Änderung an deinem Arbeitsplatz vor und spür nach."
+    },
+    "es": {
+     "t": "Preparar tu espacio de trabajo",
+     "g": "Organizar tu mesa para tener comodidad, luz y concentración.",
+     "p": [
+      "Pon lo que más usas al alcance de la mano.",
+      "Coloca la pantalla de modo que no entrecierres los ojos ni estires el cuello.",
+      "Un sitio agradable facilita empezar."
+     ],
+     "q": "¿Qué cambio haría tu espacio más agradable para sentarte?",
+     "c": "Haz hoy un pequeño cambio en tu espacio y observa cómo te sienta."
+    },
+    "fr": {
+     "t": "Aménager votre espace de travail",
+     "g": "Organiser votre bureau pour le confort, la lumière et la concentration.",
+     "p": [
+      "Placez à portée de main ce que vous utilisez le plus.",
+      "Placez l'écran pour ne pas plisser les yeux ni tendre le cou.",
+      "Un endroit agréable facilite le début."
+     ],
+     "q": "Quel changement rendrait votre espace plus agréable ?",
+     "c": "Faites aujourd'hui un petit changement à votre espace et observez l'effet."
+    },
+    "it": {
+     "t": "Preparare il tuo spazio di lavoro",
+     "g": "Sistemare la scrivania per comfort, luce e concentrazione.",
+     "p": [
+      "Metti a portata di mano ciò che usi di più.",
+      "Posiziona lo schermo senza strizzare gli occhi né allungare il collo.",
+      "Un posto gradevole rende più facile iniziare."
+     ],
+     "q": "Quale cambiamento renderebbe il tuo spazio più piacevole?",
+     "c": "Fai oggi un piccolo cambiamento al tuo spazio e senti come va."
+    },
+    "pt": {
+     "t": "Preparar o teu espaço de trabalho",
+     "g": "Organizar a secretária para conforto, luz e foco.",
+     "p": [
+      "Põe ao alcance o que mais usas.",
+      "Coloca o ecrã de modo a não semicerrares os olhos nem esticares o pescoço.",
+      "Um sítio agradável torna mais fácil começar."
+     ],
+     "q": "Que mudança tornaria o teu espaço mais agradável?",
+     "c": "Faz hoje uma pequena mudança no teu espaço e vê como te sentes."
+    },
+    "pt_BR": {
+     "t": "Preparar seu espaço de trabalho",
+     "g": "Organizar a mesa para conforto, luz e foco.",
+     "p": [
+      "Deixe ao alcance o que você mais usa.",
+      "Posicione a tela sem apertar os olhos nem esticar o pescoço.",
+      "Um lugar agradável facilita começar."
+     ],
+     "q": "Que mudança deixaria seu espaço mais agradável?",
+     "c": "Faça hoje uma pequena mudança no seu espaço e veja como se sente."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A tidy desk",
+     "g": "Keep only what you need for the task at hand within reach.",
+     "p": [
+      "Visual clutter quietly competes for your attention.",
+      "Clear the desk to the one task in front of you.",
+      "Take two minutes at day's end to reset the surface."
+     ],
+     "q": "How does your desk look right now, and how does it feel?",
+     "c": "Clear everything not needed for your current task off the desk."
+    },
+    "de": {
+     "t": "Ein aufgeräumter Schreibtisch",
+     "g": "Nur das in Reichweite haben, was die aktuelle Aufgabe braucht.",
+     "p": [
+      "Sichtbares Durcheinander konkurriert leise um deine Aufmerksamkeit.",
+      "Räum den Tisch bis auf die eine Aufgabe vor dir leer.",
+      "Nimm dir am Tagesende zwei Minuten, um die Fläche zurückzusetzen."
+     ],
+     "q": "Wie sieht dein Schreibtisch gerade aus, und wie fühlt er sich an?",
+     "c": "Räum alles, was du für die aktuelle Aufgabe nicht brauchst, vom Tisch."
+    },
+    "es": {
+     "t": "Una mesa ordenada",
+     "g": "Tener a mano solo lo necesario para la tarea actual.",
+     "p": [
+      "El desorden visual compite en silencio por tu atención.",
+      "Despeja la mesa hasta dejar solo la tarea que tienes delante.",
+      "Dedica dos minutos al final del día a reiniciar la superficie."
+     ],
+     "q": "¿Cómo se ve tu mesa ahora y cómo te hace sentir?",
+     "c": "Quita de la mesa todo lo que no necesites para la tarea actual."
+    },
+    "fr": {
+     "t": "Un bureau rangé",
+     "g": "Garder à portée seulement ce qu'il faut pour la tâche en cours.",
+     "p": [
+      "Le désordre visuel rivalise discrètement avec votre attention.",
+      "Dégagez le bureau pour ne garder que la tâche du moment.",
+      "Prenez deux minutes en fin de journée pour remettre la surface à zéro."
+     ],
+     "q": "À quoi ressemble votre bureau maintenant, et que vous fait-il ressentir ?",
+     "c": "Retirez du bureau tout ce qui n'est pas utile à votre tâche actuelle."
+    },
+    "it": {
+     "t": "Una scrivania in ordine",
+     "g": "Tenere a portata solo ciò che serve per il compito in corso.",
+     "p": [
+      "Il disordine visivo compete in silenzio per la tua attenzione.",
+      "Libera la scrivania lasciando solo il compito che hai davanti.",
+      "Dedica due minuti a fine giornata a ripristinare il piano."
+     ],
+     "q": "Com'è la tua scrivania adesso e come ti fa sentire?",
+     "c": "Togli dalla scrivania tutto ciò che non serve al compito attuale."
+    },
+    "pt": {
+     "t": "Uma secretária arrumada",
+     "g": "Ter à mão só o que precisas para a tarefa em curso.",
+     "p": [
+      "A desarrumação visual compete em silêncio pela tua atenção.",
+      "Limpa a secretária até ficar só a tarefa à tua frente.",
+      "Dedica dois minutos no fim do dia a repor a superfície."
+     ],
+     "q": "Como está a tua secretária agora e como te faz sentir?",
+     "c": "Tira da secretária tudo o que não precisas para a tarefa atual."
+    },
+    "pt_BR": {
+     "t": "Uma mesa arrumada",
+     "g": "Deixar à mão só o que você precisa para a tarefa em curso.",
+     "p": [
+      "A bagunça visual compete em silêncio pela sua atenção.",
+      "Limpe a mesa até ficar só a tarefa à sua frente.",
+      "Dedique dois minutos no fim do dia para recompor a superfície."
+     ],
+     "q": "Como está sua mesa agora e como ela te faz sentir?",
+     "c": "Tire da mesa tudo o que você não precisa para a tarefa atual."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ergonomics basics",
+     "g": "General tips for chair height, screen position and posture.",
+     "p": [
+      "Keep feet flat and let your arms rest comfortably at the desk.",
+      "Set the top of the screen near eye level, an arm's length away.",
+      "This is general comfort advice, not medical advice."
+     ],
+     "q": "Where do you feel tension after a long stretch of sitting?",
+     "c": "Adjust your chair and screen today, then notice any difference."
+    },
+    "de": {
+     "t": "Grundlagen der Ergonomie",
+     "g": "Allgemeine Tipps zu Stuhlhöhe, Bildschirmposition und Haltung.",
+     "p": [
+      "Stell die Füße flach auf und lass die Arme bequem am Tisch ruhen.",
+      "Die Bildschirmoberkante etwa auf Augenhöhe, eine Armlänge entfernt.",
+      "Das sind allgemeine Komforttipps, keine medizinische Beratung."
+     ],
+     "q": "Wo spürst du nach langem Sitzen Verspannung?",
+     "c": "Stell heute Stuhl und Bildschirm ein und achte auf Unterschiede."
+    },
+    "es": {
+     "t": "Nociones de ergonomía",
+     "g": "Consejos generales sobre altura de silla, pantalla y postura.",
+     "p": [
+      "Apoya los pies en el suelo y deja los brazos cómodos en la mesa.",
+      "Pon el borde superior de la pantalla cerca de la altura de los ojos, a un brazo.",
+      "Son consejos generales de comodidad, no médicos."
+     ],
+     "q": "¿Dónde notas tensión tras mucho rato sentado?",
+     "c": "Ajusta hoy silla y pantalla y fíjate en si notas diferencia."
+    },
+    "fr": {
+     "t": "Les bases de l'ergonomie",
+     "g": "Conseils généraux sur la hauteur du siège, l'écran et la posture.",
+     "p": [
+      "Pieds à plat, bras confortablement posés sur le bureau.",
+      "Haut de l'écran près du niveau des yeux, à une longueur de bras.",
+      "Ce sont des conseils de confort généraux, pas médicaux."
+     ],
+     "q": "Où ressentez-vous de la tension après un long moment assis ?",
+     "c": "Réglez aujourd'hui siège et écran, puis observez la différence."
+    },
+    "it": {
+     "t": "Basi di ergonomia",
+     "g": "Consigli generali su altezza della sedia, schermo e postura.",
+     "p": [
+      "Tieni i piedi appoggiati e le braccia comode sulla scrivania.",
+      "Porta il bordo superiore dello schermo vicino all'altezza degli occhi, a un braccio.",
+      "Sono consigli generali di comfort, non medici."
+     ],
+     "q": "Dove senti tensione dopo molto tempo seduto?",
+     "c": "Regola oggi sedia e schermo e nota se senti differenza."
+    },
+    "pt": {
+     "t": "Noções de ergonomia",
+     "g": "Dicas gerais sobre altura da cadeira, ecrã e postura.",
+     "p": [
+      "Mantém os pés assentes e os braços confortáveis na secretária.",
+      "Põe o topo do ecrã perto da altura dos olhos, à distância de um braço.",
+      "São dicas gerais de conforto, não aconselhamento médico."
+     ],
+     "q": "Onde sentes tensão depois de muito tempo sentado?",
+     "c": "Ajusta hoje a cadeira e o ecrã e repara se notas diferença."
+    },
+    "pt_BR": {
+     "t": "Noções de ergonomia",
+     "g": "Dicas gerais sobre altura da cadeira, tela e postura.",
+     "p": [
+      "Mantenha os pés apoiados e os braços confortáveis na mesa.",
+      "Deixe o topo da tela perto da altura dos olhos, a um braço de distância.",
+      "São dicas gerais de conforto, não orientação médica."
+     ],
+     "q": "Onde você sente tensão depois de muito tempo sentado?",
+     "c": "Ajuste hoje cadeira e tela e perceba se há diferença."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lighting and sound",
+     "g": "How light and noise levels affect your concentration.",
+     "p": [
+      "Natural light and a soft lamp are easier on the eyes than glare.",
+      "Steady background sound can help, while sudden noise breaks focus.",
+      "Headphones or gentle ambient sound can create a quiet bubble."
+     ],
+     "q": "What sound or light helps you concentrate best?",
+     "c": "Try one new lighting or sound setup for a focus block today."
+    },
+    "de": {
+     "t": "Licht und Geräusche",
+     "g": "Wie Licht und Lärm deine Konzentration beeinflussen.",
+     "p": [
+      "Tageslicht und eine sanfte Lampe sind angenehmer als Blendung.",
+      "Gleichmäßiges Hintergrundgeräusch kann helfen, plötzlicher Lärm stört.",
+      "Kopfhörer oder sanfte Klänge schaffen eine ruhige Blase."
+     ],
+     "q": "Welcher Klang oder welches Licht hilft dir am besten beim Konzentrieren?",
+     "c": "Probiere heute für einen Fokusblock eine neue Licht- oder Klangeinstellung."
+    },
+    "es": {
+     "t": "Luz y sonido",
+     "g": "Cómo afectan la luz y el ruido a tu concentración.",
+     "p": [
+      "La luz natural y una lámpara suave cansan menos la vista que el deslumbramiento.",
+      "Un sonido constante de fondo puede ayudar; el ruido brusco rompe el foco.",
+      "Auriculares o sonido ambiente suave crean una burbuja tranquila."
+     ],
+     "q": "¿Qué sonido o luz te ayuda más a concentrarte?",
+     "c": "Prueba hoy una nueva combinación de luz o sonido en un bloque de foco."
+    },
+    "fr": {
+     "t": "Lumière et son",
+     "g": "Comment la lumière et le bruit influencent votre concentration.",
+     "p": [
+      "La lumière naturelle et une lampe douce fatiguent moins que l'éblouissement.",
+      "Un son de fond régulier peut aider ; un bruit soudain rompt la concentration.",
+      "Un casque ou une ambiance douce créent une bulle de calme."
+     ],
+     "q": "Quel son ou quelle lumière vous aide le mieux à vous concentrer ?",
+     "c": "Essayez aujourd'hui une nouvelle lumière ou ambiance sonore pour un bloc."
+    },
+    "it": {
+     "t": "Luce e suono",
+     "g": "Come luce e rumore influenzano la tua concentrazione.",
+     "p": [
+      "La luce naturale e una lampada morbida affaticano meno degli abbagliamenti.",
+      "Un suono di fondo costante può aiutare; il rumore improvviso rompe la concentrazione.",
+      "Cuffie o suoni ambientali dolci creano una bolla di quiete."
+     ],
+     "q": "Quale suono o luce ti aiuta di più a concentrarti?",
+     "c": "Prova oggi una nuova luce o ambiente sonoro per un blocco di lavoro."
+    },
+    "pt": {
+     "t": "Luz e som",
+     "g": "Como a luz e o ruído afetam a tua concentração.",
+     "p": [
+      "A luz natural e um candeeiro suave cansam menos do que o encandeamento.",
+      "Um som de fundo constante pode ajudar; o ruído súbito quebra o foco.",
+      "Auscultadores ou som ambiente suave criam uma bolha tranquila."
+     ],
+     "q": "Que som ou luz te ajuda mais a concentrar?",
+     "c": "Experimenta hoje uma nova luz ou som num bloco de foco."
+    },
+    "pt_BR": {
+     "t": "Luz e som",
+     "g": "Como a luz e o ruído afetam sua concentração.",
+     "p": [
+      "A luz natural e uma luminária suave cansam menos que o ofuscamento.",
+      "Um som de fundo constante pode ajudar; o ruído súbito quebra o foco.",
+      "Fones ou som ambiente suave criam uma bolha tranquila."
+     ],
+     "q": "Que som ou luz mais ajuda você a se concentrar?",
+     "c": "Experimente hoje uma nova luz ou som em um bloco de foco."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Digital desktop declutter",
+     "g": "Clear your computer desktop and organise your files.",
+     "p": [
+      "A crowded desktop is a pile of unfinished decisions.",
+      "Move files into folders, delete the junk, keep only active items.",
+      "Do a first pass in 15 minutes; perfection can wait."
+     ],
+     "q": "How many loose files sit on your computer desktop right now?",
+     "c": "Spend 15 minutes clearing your desktop down to a few items."
+    },
+    "de": {
+     "t": "Digitalen Desktop entrümpeln",
+     "g": "Den Computer-Desktop leeren und deine Dateien ordnen.",
+     "p": [
+      "Ein voller Desktop ist ein Haufen unerledigter Entscheidungen.",
+      "Dateien in Ordner verschieben, Müll löschen, nur Aktuelles behalten.",
+      "Ein erster Durchgang in 15 Minuten genügt; Perfektion kann warten."
+     ],
+     "q": "Wie viele lose Dateien liegen gerade auf deinem Desktop?",
+     "c": "Nimm dir 15 Minuten und räum den Desktop auf wenige Einträge."
+    },
+    "es": {
+     "t": "Despejar el escritorio digital",
+     "g": "Limpiar el escritorio del ordenador y organizar tus archivos.",
+     "p": [
+      "Un escritorio saturado es un montón de decisiones sin tomar.",
+      "Mueve archivos a carpetas, borra lo inútil y deja solo lo activo.",
+      "Haz una primera pasada en 15 minutos; la perfección puede esperar."
+     ],
+     "q": "¿Cuántos archivos sueltos hay ahora en tu escritorio?",
+     "c": "Dedica 15 minutos a dejar tu escritorio con unos pocos elementos."
+    },
+    "fr": {
+     "t": "Désencombrer le bureau numérique",
+     "g": "Vider le bureau de votre ordinateur et ranger vos fichiers.",
+     "p": [
+      "Un bureau encombré est un tas de décisions non prises.",
+      "Déplacez les fichiers dans des dossiers, supprimez le superflu, gardez l'actif.",
+      "Un premier passage en 15 minutes suffit ; la perfection peut attendre."
+     ],
+     "q": "Combien de fichiers traînent sur votre bureau en ce moment ?",
+     "c": "Prenez 15 minutes pour réduire votre bureau à quelques éléments."
+    },
+    "it": {
+     "t": "Sgomberare il desktop digitale",
+     "g": "Svuotare il desktop del computer e ordinare i file.",
+     "p": [
+      "Un desktop affollato è un mucchio di decisioni non prese.",
+      "Sposta i file in cartelle, elimina il superfluo, tieni solo ciò che è attivo.",
+      "Un primo passaggio in 15 minuti basta; la perfezione può aspettare."
+     ],
+     "q": "Quanti file sparsi ci sono ora sul tuo desktop?",
+     "c": "Dedica 15 minuti a ridurre il desktop a pochi elementi."
+    },
+    "pt": {
+     "t": "Desimpedir o ambiente de trabalho digital",
+     "g": "Limpar o ambiente de trabalho do computador e organizar os ficheiros.",
+     "p": [
+      "Um ambiente cheio é um monte de decisões por tomar.",
+      "Move ficheiros para pastas, apaga o lixo e deixa só o que está ativo.",
+      "Uma primeira passagem em 15 minutos chega; a perfeição pode esperar."
+     ],
+     "q": "Quantos ficheiros soltos tens agora no ambiente de trabalho?",
+     "c": "Dedica 15 minutos a reduzir o ambiente de trabalho a poucos itens."
+    },
+    "pt_BR": {
+     "t": "Desimpedir a área de trabalho digital",
+     "g": "Limpar a área de trabalho do computador e organizar seus arquivos.",
+     "p": [
+      "Uma área cheia é um monte de decisões por tomar.",
+      "Mova arquivos para pastas, apague o lixo e deixe só o que está ativo.",
+      "Uma primeira passada em 15 minutos basta; a perfeição pode esperar."
+     ],
+     "q": "Quantos arquivos soltos há agora na sua área de trabalho?",
+     "c": "Dedique 15 minutos a reduzir a área de trabalho a poucos itens."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Folder structures that work",
+     "g": "Design simple folders so files are easy to find.",
+     "p": [
+      "Fewer, broader folders beat dozens of tiny ones.",
+      "Group by project or area, such as Clients, Finance or Projects.",
+      "Limit depth to about three levels so nothing gets lost."
+     ],
+     "q": "How do you usually search for a file you saved last month?",
+     "c": "Sketch a simple folder tree with five main folders and create them."
+    },
+    "de": {
+     "t": "Ordnerstrukturen, die funktionieren",
+     "g": "Einfache Ordner gestalten, damit Dateien leicht zu finden sind.",
+     "p": [
+      "Wenige, breite Ordner schlagen Dutzende winziger.",
+      "Gruppiere nach Projekt oder Bereich, etwa Kunden, Finanzen oder Projekte.",
+      "Begrenze die Tiefe auf etwa drei Ebenen, damit nichts verloren geht."
+     ],
+     "q": "Wie suchst du meist eine Datei, die du letzten Monat gespeichert hast?",
+     "c": "Skizziere einen einfachen Ordnerbaum mit fünf Hauptordnern und leg sie an."
+    },
+    "es": {
+     "t": "Estructuras de carpetas que funcionan",
+     "g": "Diseñar carpetas sencillas para encontrar fácilmente los archivos.",
+     "p": [
+      "Pocas carpetas amplias valen más que decenas de diminutas.",
+      "Agrupa por proyecto o área, como Clientes, Finanzas o Proyectos.",
+      "Limita la profundidad a unos tres niveles para no perder nada."
+     ],
+     "q": "¿Cómo sueles buscar un archivo que guardaste el mes pasado?",
+     "c": "Esboza un árbol de carpetas sencillo con cinco carpetas principales y créalas."
+    },
+    "fr": {
+     "t": "Des dossiers qui fonctionnent",
+     "g": "Concevoir des dossiers simples pour retrouver facilement vos fichiers.",
+     "p": [
+      "Peu de dossiers larges valent mieux que des dizaines de minuscules.",
+      "Groupez par projet ou domaine : Clients, Finances, Projets.",
+      "Limitez la profondeur à environ trois niveaux pour ne rien perdre."
+     ],
+     "q": "Comment cherchez-vous un fichier enregistré le mois dernier ?",
+     "c": "Esquissez une arborescence simple de cinq dossiers principaux et créez-les."
+    },
+    "it": {
+     "t": "Strutture di cartelle che funzionano",
+     "g": "Progettare cartelle semplici per trovare facilmente i file.",
+     "p": [
+      "Poche cartelle ampie valgono più di decine di cartelle minuscole.",
+      "Raggruppa per progetto o area, come Clienti, Finanze o Progetti.",
+      "Limita la profondità a circa tre livelli per non perdere nulla."
+     ],
+     "q": "Come cerchi di solito un file salvato il mese scorso?",
+     "c": "Abbozza un albero di cartelle semplice con cinque cartelle principali e creale."
+    },
+    "pt": {
+     "t": "Estruturas de pastas que funcionam",
+     "g": "Desenhar pastas simples para encontrar facilmente os ficheiros.",
+     "p": [
+      "Poucas pastas amplas valem mais do que dezenas de minúsculas.",
+      "Agrupa por projeto ou área, como Clientes, Finanças ou Projetos.",
+      "Limita a profundidade a cerca de três níveis para não perder nada."
+     ],
+     "q": "Como costumas procurar um ficheiro guardado no mês passado?",
+     "c": "Esboça uma árvore de pastas simples com cinco pastas principais e cria-as."
+    },
+    "pt_BR": {
+     "t": "Estruturas de pastas que funcionam",
+     "g": "Desenhar pastas simples para encontrar arquivos com facilidade.",
+     "p": [
+      "Poucas pastas amplas valem mais que dezenas de minúsculas.",
+      "Agrupe por projeto ou área, como Clientes, Finanças ou Projetos.",
+      "Limite a profundidade a cerca de três níveis para não perder nada."
+     ],
+     "q": "Como você costuma procurar um arquivo salvo no mês passado?",
+     "c": "Esboce uma árvore de pastas simples com cinco pastas principais e crie-as."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Naming files clearly",
+     "g": "Use dates and clear names so you never hunt for documents.",
+     "p": [
+      "Start with the date as year-month-day so files sort themselves.",
+      "Add a short, descriptive name, not final or new2.",
+      "Pick one pattern and use it every time."
+     ],
+     "q": "What is the most confusing file name you have ever had?",
+     "c": "Rename five recent files using a date plus a clear description."
+    },
+    "de": {
+     "t": "Dateien klar benennen",
+     "g": "Mit Datum und klaren Namen musst du nie mehr nach Dokumenten suchen.",
+     "p": [
+      "Beginne mit dem Datum als Jahr-Monat-Tag, dann sortieren sich Dateien selbst.",
+      "Füge einen kurzen, aussagekräftigen Namen hinzu, nicht final oder neu2.",
+      "Wähle ein Muster und verwende es jedes Mal."
+     ],
+     "q": "Was war der verwirrendste Dateiname, den du je hattest?",
+     "c": "Benenne fünf aktuelle Dateien mit Datum und klarer Beschreibung um."
+    },
+    "es": {
+     "t": "Nombrar bien los archivos",
+     "g": "Usa fechas y nombres claros para no tener que buscar documentos.",
+     "p": [
+      "Empieza con la fecha como año-mes-día y los archivos se ordenan solos.",
+      "Añade un nombre corto y descriptivo, no final ni nuevo2.",
+      "Elige un patrón y úsalo siempre."
+     ],
+     "q": "¿Cuál fue el nombre de archivo más confuso que has tenido?",
+     "c": "Renombra cinco archivos recientes con fecha y una descripción clara."
+    },
+    "fr": {
+     "t": "Bien nommer ses fichiers",
+     "g": "Utiliser des dates et des noms clairs pour ne plus chercher vos documents.",
+     "p": [
+      "Commencez par la date en année-mois-jour, les fichiers se trient seuls.",
+      "Ajoutez un nom court et descriptif, pas final ni nouveau2.",
+      "Choisissez un modèle et appliquez-le à chaque fois."
+     ],
+     "q": "Quel est le nom de fichier le plus confus que vous ayez eu ?",
+     "c": "Renommez cinq fichiers récents avec une date et une description claire."
+    },
+    "it": {
+     "t": "Dare nomi chiari ai file",
+     "g": "Usa date e nomi chiari per non cercare più i documenti.",
+     "p": [
+      "Inizia con la data come anno-mese-giorno e i file si ordinano da soli.",
+      "Aggiungi un nome breve e descrittivo, non finale o nuovo2.",
+      "Scegli uno schema e usalo ogni volta."
+     ],
+     "q": "Qual è il nome di file più confuso che hai mai avuto?",
+     "c": "Rinomina cinque file recenti con data e descrizione chiara."
+    },
+    "pt": {
+     "t": "Dar nomes claros aos ficheiros",
+     "g": "Usa datas e nomes claros para nunca teres de caçar documentos.",
+     "p": [
+      "Começa pela data em ano-mês-dia e os ficheiros ordenam-se sozinhos.",
+      "Acrescenta um nome curto e descritivo, não final nem novo2.",
+      "Escolhe um padrão e usa-o sempre."
+     ],
+     "q": "Qual foi o nome de ficheiro mais confuso que já tiveste?",
+     "c": "Renomeia cinco ficheiros recentes com data e uma descrição clara."
+    },
+    "pt_BR": {
+     "t": "Dar nomes claros aos arquivos",
+     "g": "Use datas e nomes claros para nunca caçar documentos.",
+     "p": [
+      "Comece pela data em ano-mês-dia e os arquivos se ordenam sozinhos.",
+      "Acrescente um nome curto e descritivo, não final nem novo2.",
+      "Escolha um padrão e use sempre."
+     ],
+     "q": "Qual foi o nome de arquivo mais confuso que você já teve?",
+     "c": "Renomeie cinco arquivos recentes com data e uma descrição clara."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Browser tabs under control",
+     "g": "Close, group and save tabs to reduce clutter.",
+     "p": [
+      "Every open tab is a small open loop pulling at attention.",
+      "Close what you are done with; save the rest as bookmarks or a list.",
+      "Use tab groups or separate windows for separate projects."
+     ],
+     "q": "How many tabs do you have open right now?",
+     "c": "Close half of your open tabs and save any you need later."
+    },
+    "de": {
+     "t": "Browser-Tabs im Griff",
+     "g": "Tabs schließen, gruppieren und speichern, um Unordnung zu verringern.",
+     "p": [
+      "Jeder offene Tab ist eine kleine offene Schleife, die an der Aufmerksamkeit zieht.",
+      "Schließ Erledigtes; speichere den Rest als Lesezeichen oder Liste.",
+      "Nutze Tab-Gruppen oder getrennte Fenster für getrennte Projekte."
+     ],
+     "q": "Wie viele Tabs hast du gerade offen?",
+     "c": "Schließ die Hälfte deiner offenen Tabs und speichere, was du später brauchst."
+    },
+    "es": {
+     "t": "Las pestañas bajo control",
+     "g": "Cerrar, agrupar y guardar pestañas para reducir el desorden.",
+     "p": [
+      "Cada pestaña abierta es un pequeño pendiente que tira de tu atención.",
+      "Cierra lo que ya acabaste; guarda el resto como marcadores o lista.",
+      "Usa grupos de pestañas o ventanas separadas para proyectos distintos."
+     ],
+     "q": "¿Cuántas pestañas tienes abiertas ahora mismo?",
+     "c": "Cierra la mitad de tus pestañas abiertas y guarda las que necesites luego."
+    },
+    "fr": {
+     "t": "Les onglets sous contrôle",
+     "g": "Fermer, regrouper et enregistrer les onglets pour réduire le désordre.",
+     "p": [
+      "Chaque onglet ouvert est une petite boucle ouverte qui tire sur l'attention.",
+      "Fermez ce qui est fini ; gardez le reste en favoris ou en liste.",
+      "Utilisez des groupes d'onglets ou des fenêtres séparées par projet."
+     ],
+     "q": "Combien d'onglets avez-vous ouverts en ce moment ?",
+     "c": "Fermez la moitié de vos onglets et enregistrez ceux dont vous aurez besoin."
+    },
+    "it": {
+     "t": "Le schede del browser sotto controllo",
+     "g": "Chiudere, raggruppare e salvare le schede per ridurre il disordine.",
+     "p": [
+      "Ogni scheda aperta è un piccolo sospeso che tira la tua attenzione.",
+      "Chiudi ciò che hai finito; salva il resto nei segnalibri o in una lista.",
+      "Usa gruppi di schede o finestre separate per progetti diversi."
+     ],
+     "q": "Quante schede hai aperte in questo momento?",
+     "c": "Chiudi metà delle schede aperte e salva quelle che ti servono dopo."
+    },
+    "pt": {
+     "t": "Separadores do navegador sob controlo",
+     "g": "Fechar, agrupar e guardar separadores para reduzir a confusão.",
+     "p": [
+      "Cada separador aberto é um pequeno pendente que puxa a atenção.",
+      "Fecha o que já acabaste; guarda o resto nos favoritos ou numa lista.",
+      "Usa grupos de separadores ou janelas separadas para projetos diferentes."
+     ],
+     "q": "Quantos separadores tens abertos neste momento?",
+     "c": "Fecha metade dos separadores abertos e guarda os que precisares depois."
+    },
+    "pt_BR": {
+     "t": "Abas do navegador sob controle",
+     "g": "Fechar, agrupar e salvar abas para reduzir a bagunça.",
+     "p": [
+      "Cada aba aberta é uma pequena pendência que puxa a atenção.",
+      "Feche o que já terminou; salve o resto nos favoritos ou numa lista.",
+      "Use grupos de abas ou janelas separadas para projetos diferentes."
+     ],
+     "q": "Quantas abas você tem abertas agora?",
+     "c": "Feche metade das suas abas abertas e salve as que precisar depois."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Organised logins",
+     "g": "Save time and stress with a secure, well-organised password manager.",
+     "p": [
+      "A password manager remembers strong, unique passwords for you.",
+      "You only need to remember one strong main password.",
+      "Never reuse passwords and never share them in messages."
+     ],
+     "q": "How do you currently keep track of your passwords?",
+     "c": "Look into a password manager and move three accounts into it."
+    },
+    "de": {
+     "t": "Geordnete Zugangsdaten",
+     "g": "Mit einem sicheren, gut organisierten Passwortmanager Zeit und Stress sparen.",
+     "p": [
+      "Ein Passwortmanager merkt sich starke, einzigartige Passwörter für dich.",
+      "Du musst dir nur ein starkes Hauptpasswort merken.",
+      "Nutze Passwörter nie doppelt und teile sie nie in Nachrichten."
+     ],
+     "q": "Wie behältst du derzeit den Überblick über deine Passwörter?",
+     "c": "Sieh dir einen Passwortmanager an und übertrage drei Konten dorthin."
+    },
+    "es": {
+     "t": "Accesos ordenados",
+     "g": "Ahorrar tiempo y estrés con un gestor de contraseñas seguro y ordenado.",
+     "p": [
+      "Un gestor de contraseñas recuerda por ti claves fuertes y únicas.",
+      "Solo necesitas recordar una contraseña maestra fuerte.",
+      "Nunca repitas contraseñas ni las compartas por mensajes."
+     ],
+     "q": "¿Cómo llevas ahora el control de tus contraseñas?",
+     "c": "Investiga un gestor de contraseñas y pasa tres cuentas a él."
+    },
+    "fr": {
+     "t": "Des identifiants bien rangés",
+     "g": "Gagner du temps et de la sérénité avec un gestionnaire de mots de passe sûr.",
+     "p": [
+      "Un gestionnaire retient pour vous des mots de passe forts et uniques.",
+      "Vous ne retenez qu'un seul mot de passe principal solide.",
+      "Ne réutilisez jamais un mot de passe et ne le partagez pas par message."
+     ],
+     "q": "Comment gérez-vous vos mots de passe actuellement ?",
+     "c": "Renseignez-vous sur un gestionnaire et transférez-y trois comptes."
+    },
+    "it": {
+     "t": "Accessi ordinati",
+     "g": "Risparmiare tempo e stress con un gestore di password sicuro e ordinato.",
+     "p": [
+      "Un gestore di password ricorda per te password forti e uniche.",
+      "Devi ricordare solo una password principale robusta.",
+      "Non riutilizzare mai le password e non condividerle nei messaggi."
+     ],
+     "q": "Come tieni ora traccia delle tue password?",
+     "c": "Informati su un gestore di password e sposta lì tre account."
+    },
+    "pt": {
+     "t": "Acessos organizados",
+     "g": "Poupar tempo e stresse com um gestor de palavras-passe seguro e organizado.",
+     "p": [
+      "Um gestor de palavras-passe lembra por ti chaves fortes e únicas.",
+      "Só precisas de decorar uma palavra-passe principal forte.",
+      "Nunca repitas palavras-passe nem as partilhes em mensagens."
+     ],
+     "q": "Como controlas atualmente as tuas palavras-passe?",
+     "c": "Informa-te sobre um gestor de palavras-passe e passa três contas para lá."
+    },
+    "pt_BR": {
+     "t": "Acessos organizados",
+     "g": "Poupar tempo e estresse com um gerenciador de senhas seguro e organizado.",
+     "p": [
+      "Um gerenciador de senhas lembra por você senhas fortes e únicas.",
+      "Você só precisa decorar uma senha mestra forte.",
+      "Nunca repita senhas nem as compartilhe em mensagens."
+     ],
+     "q": "Como você controla suas senhas hoje?",
+     "c": "Pesquise um gerenciador de senhas e passe três contas para lá."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bookmarks and quick links",
+     "g": "Organise the pages you use most for fast access.",
+     "p": [
+      "Bookmark the pages you open every week.",
+      "Use a few clearly named folders, like Daily, Tools and Reading.",
+      "Prune old links now and then so the list stays useful."
+     ],
+     "q": "Which web pages do you visit every single day for work?",
+     "c": "Create a Daily folder and save your five most-used pages in it."
+    },
+    "de": {
+     "t": "Lesezeichen und Schnellzugriffe",
+     "g": "Die meistgenutzten Seiten für schnellen Zugriff ordnen.",
+     "p": [
+      "Setz Lesezeichen für Seiten, die du jede Woche öffnest.",
+      "Nutze wenige klar benannte Ordner wie Täglich, Werkzeuge und Lesen.",
+      "Miste alte Links ab und zu aus, damit die Liste nützlich bleibt."
+     ],
+     "q": "Welche Webseiten besuchst du bei der Arbeit jeden Tag?",
+     "c": "Leg einen Ordner Täglich an und speichere dort deine fünf meistgenutzten Seiten."
+    },
+    "es": {
+     "t": "Marcadores y accesos rápidos",
+     "g": "Organizar las páginas que más usas para acceder rápido.",
+     "p": [
+      "Guarda como marcador las páginas que abres cada semana.",
+      "Usa pocas carpetas bien nombradas, como Diario, Herramientas y Lectura.",
+      "Poda enlaces viejos de vez en cuando para que la lista siga siendo útil."
+     ],
+     "q": "¿Qué páginas web visitas cada día para trabajar?",
+     "c": "Crea una carpeta Diario y guarda en ella tus cinco páginas más usadas."
+    },
+    "fr": {
+     "t": "Favoris et liens rapides",
+     "g": "Organiser les pages les plus utilisées pour y accéder vite.",
+     "p": [
+      "Mettez en favori les pages que vous ouvrez chaque semaine.",
+      "Utilisez quelques dossiers bien nommés : Quotidien, Outils, Lecture.",
+      "Élaguez les vieux liens de temps en temps pour garder la liste utile."
+     ],
+     "q": "Quelles pages web visitez-vous chaque jour pour travailler ?",
+     "c": "Créez un dossier Quotidien et placez-y vos cinq pages les plus utilisées."
+    },
+    "it": {
+     "t": "Segnalibri e collegamenti rapidi",
+     "g": "Organizzare le pagine più usate per accedervi in fretta.",
+     "p": [
+      "Salva tra i segnalibri le pagine che apri ogni settimana.",
+      "Usa poche cartelle ben nominate, come Quotidiano, Strumenti e Lettura.",
+      "Elimina ogni tanto i link vecchi perché la lista resti utile."
+     ],
+     "q": "Quali pagine web visiti ogni giorno per lavoro?",
+     "c": "Crea una cartella Quotidiano e salvaci le tue cinque pagine più usate."
+    },
+    "pt": {
+     "t": "Favoritos e ligações rápidas",
+     "g": "Organizar as páginas que mais usas para acesso rápido.",
+     "p": [
+      "Guarda nos favoritos as páginas que abres todas as semanas.",
+      "Usa poucas pastas bem nomeadas, como Diário, Ferramentas e Leitura.",
+      "Poda ligações antigas de vez em quando para a lista continuar útil."
+     ],
+     "q": "Que páginas web visitas todos os dias para trabalhar?",
+     "c": "Cria uma pasta Diário e guarda lá as tuas cinco páginas mais usadas."
+    },
+    "pt_BR": {
+     "t": "Favoritos e links rápidos",
+     "g": "Organizar as páginas que você mais usa para acesso rápido.",
+     "p": [
+      "Salve nos favoritos as páginas que abre toda semana.",
+      "Use poucas pastas bem nomeadas, como Diário, Ferramentas e Leitura.",
+      "Pode links antigos de vez em quando para a lista continuar útil."
+     ],
+     "q": "Que páginas da web você visita todo dia para trabalhar?",
+     "c": "Crie uma pasta Diário e salve nela suas cinco páginas mais usadas."
+    }
+   }
+  }
+ ]
+}

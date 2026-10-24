@@ -1,0 +1,835 @@
+{
+ "topic": "coding",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing a data structure",
+     "g": "Know when to use a list, a tuple, a dictionary or a set.",
+     "p": [
+      "List: ordered items that can change, like a to-do list.",
+      "Tuple: fixed ordered data. Dictionary: labelled data. Set: unique items only.",
+      "Ask what you need: order, labels, no repeats, or no changes?"
+     ],
+     "q": "Which of the four would you use to store your friends and their birthdays?",
+     "c": "Pick the best structure for each: a playlist, a person's details, and a set of visited countries."
+    },
+    "de": {
+     "t": "Die passende Datenstruktur wählen",
+     "g": "Wisse, wann Liste, Tupel, Dictionary oder Set passt.",
+     "p": [
+      "Liste: geordnete, veränderbare Elemente, wie eine To-do-Liste.",
+      "Tupel: feste, geordnete Daten. Dictionary: beschriftete Daten. Set: nur einmalige Elemente.",
+      "Frage dich: Brauche ich Reihenfolge, Beschriftung, keine Wiederholung oder keine Änderung?"
+     ],
+     "q": "Was würdest du für deine Freunde und deren Geburtstage nutzen?",
+     "c": "Wähle jeweils die beste Struktur: eine Playlist, Personendaten und besuchte Länder."
+    },
+    "es": {
+     "t": "Elegir una estructura de datos",
+     "g": "Sabe cuándo usar lista, tupla, diccionario o set.",
+     "p": [
+      "Lista: elementos ordenados que pueden cambiar, como una lista de tareas.",
+      "Tupla: datos fijos ordenados. Diccionario: datos etiquetados. Set: solo elementos únicos.",
+      "Pregúntate qué necesitas: orden, etiquetas, sin repetidos o sin cambios."
+     ],
+     "q": "¿Cuál de las cuatro usarías para guardar a tus amigos y sus cumpleaños?",
+     "c": "Elige la mejor estructura para cada caso: una playlist, los datos de una persona y los países visitados."
+    },
+    "fr": {
+     "t": "Choisir une structure de données",
+     "g": "Sache quand utiliser liste, tuple, dictionnaire ou set.",
+     "p": [
+      "Liste : éléments ordonnés qui peuvent changer, comme une liste de tâches.",
+      "Tuple : données fixes ordonnées. Dictionnaire : données étiquetées. Set : éléments uniques.",
+      "Demande-toi ce qu'il te faut : ordre, étiquettes, pas de doublons ou pas de changement."
+     ],
+     "q": "Laquelle des quatre utiliserais-tu pour tes amis et leurs anniversaires ?",
+     "c": "Choisis la meilleure structure pour chaque cas : une playlist, les infos d'une personne et les pays visités."
+    },
+    "it": {
+     "t": "Scegliere una struttura dati",
+     "g": "Sappi quando usare lista, tupla, dizionario o set.",
+     "p": [
+      "Lista: elementi ordinati che possono cambiare, come una lista di cose da fare.",
+      "Tupla: dati fissi ordinati. Dizionario: dati etichettati. Set: solo elementi unici.",
+      "Chiediti cosa ti serve: ordine, etichette, niente doppioni o niente modifiche."
+     ],
+     "q": "Quale delle quattro useresti per i tuoi amici e i loro compleanni?",
+     "c": "Scegli la struttura migliore per ogni caso: una playlist, i dati di una persona e i paesi visitati."
+    },
+    "pt": {
+     "t": "Escolher uma estrutura de dados",
+     "g": "Sabe quando usar lista, tuplo, dicionário ou set.",
+     "p": [
+      "Lista: elementos ordenados que podem mudar, como uma lista de tarefas.",
+      "Tuplo: dados fixos ordenados. Dicionário: dados etiquetados. Set: só elementos únicos.",
+      "Pergunta-te o que precisas: ordem, etiquetas, sem repetidos ou sem alterações."
+     ],
+     "q": "Qual das quatro usarias para os teus amigos e os seus aniversários?",
+     "c": "Escolhe a melhor estrutura para cada caso: uma playlist, os dados de uma pessoa e os países visitados."
+    },
+    "pt_BR": {
+     "t": "Escolhendo uma estrutura de dados",
+     "g": "Saiba quando usar lista, tupla, dicionário ou set.",
+     "p": [
+      "Lista: elementos ordenados que podem mudar, como uma lista de tarefas.",
+      "Tupla: dados fixos ordenados. Dicionário: dados etiquetados. Set: só elementos únicos.",
+      "Pergunte-se o que precisa: ordem, etiquetas, sem repetidos ou sem alterações."
+     ],
+     "q": "Qual das quatro você usaria para seus amigos e seus aniversários?",
+     "c": "Escolha a melhor estrutura para cada caso: uma playlist, os dados de uma pessoa e os países visitados."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mini project: contact book",
+     "g": "Store names and phone numbers in a dictionary and search them.",
+     "p": [
+      "Use a dictionary: the name is the key and the number is the value.",
+      "Loop with while True and offer add, find and quit commands.",
+      "Use get to answer politely when a name is not found."
+     ],
+     "q": "Why is a contact book a perfect job for a dictionary?",
+     "c": "Build the contact book with add and find, using fake numbers like 555-0100."
+    },
+    "de": {
+     "t": "Mini-Projekt: Kontaktbuch",
+     "g": "Speichere Namen und Telefonnummern in einem Dictionary und suche darin.",
+     "p": [
+      "Nutze ein Dictionary: der Name ist der Schlüssel, die Nummer der Wert.",
+      "Laufe mit while True und biete die Befehle add, find und quit an.",
+      "Nutze get, um höflich zu antworten, wenn ein Name fehlt."
+     ],
+     "q": "Warum ist ein Kontaktbuch ideal für ein Dictionary?",
+     "c": "Baue das Kontaktbuch mit add und find und nutze erfundene Nummern wie 555-0100."
+    },
+    "es": {
+     "t": "Miniproyecto: agenda de contactos",
+     "g": "Guarda nombres y teléfonos en un diccionario y búscalos.",
+     "p": [
+      "Usa un diccionario: el nombre es la clave y el número es el valor.",
+      "Repite con while True y ofrece los comandos add, find y quit.",
+      "Usa get para responder con educación cuando no se encuentra un nombre."
+     ],
+     "q": "¿Por qué una agenda de contactos es perfecta para un diccionario?",
+     "c": "Crea la agenda con add y find, usando números inventados como 555-0100."
+    },
+    "fr": {
+     "t": "Mini-projet : carnet de contacts",
+     "g": "Stocke des noms et numéros dans un dictionnaire et recherche-les.",
+     "p": [
+      "Utilise un dictionnaire : le nom est la clé et le numéro la valeur.",
+      "Boucle avec while True et propose les commandes add, find et quit.",
+      "Utilise get pour répondre poliment quand un nom est introuvable."
+     ],
+     "q": "Pourquoi un carnet de contacts est-il idéal pour un dictionnaire ?",
+     "c": "Crée le carnet avec add et find, en utilisant de faux numéros comme 555-0100."
+    },
+    "it": {
+     "t": "Mini progetto: rubrica",
+     "g": "Salva nomi e numeri in un dizionario e cercali.",
+     "p": [
+      "Usa un dizionario: il nome è la chiave e il numero è il valore.",
+      "Cicla con while True e offri i comandi add, find e quit.",
+      "Usa get per rispondere con garbo quando un nome non c'è."
+     ],
+     "q": "Perché una rubrica è perfetta per un dizionario?",
+     "c": "Crea la rubrica con add e find, usando numeri inventati come 555-0100."
+    },
+    "pt": {
+     "t": "Mini projeto: agenda de contactos",
+     "g": "Guarda nomes e números num dicionário e procura-os.",
+     "p": [
+      "Usa um dicionário: o nome é a chave e o número é o valor.",
+      "Repete com while True e oferece os comandos add, find e quit.",
+      "Usa get para responder com simpatia quando o nome não existe."
+     ],
+     "q": "Porque é que uma agenda de contactos é perfeita para um dicionário?",
+     "c": "Cria a agenda com add e find, usando números inventados como 555-0100."
+    },
+    "pt_BR": {
+     "t": "Mini projeto: agenda de contatos",
+     "g": "Guarde nomes e números em um dicionário e procure por eles.",
+     "p": [
+      "Use um dicionário: o nome é a chave e o número é o valor.",
+      "Repita com while True e ofereça os comandos add, find e quit.",
+      "Use get para responder com educação quando o nome não existe."
+     ],
+     "q": "Por que uma agenda de contatos é perfeita para um dicionário?",
+     "c": "Crie a agenda com add e find, usando números inventados como 555-0100."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Functions",
+     "g": "Write a named block of code you can reuse anytime.",
+     "p": [
+      "Define it with def: def greet(): then an indented body.",
+      "Call it by name with brackets: greet() runs the code inside.",
+      "Functions avoid repeating yourself: write once, use many times."
+     ],
+     "q": "What small task do you repeat so often that it deserves a name?",
+     "c": "Define a function say_hello that prints a greeting, then call it three times."
+    },
+    "de": {
+     "t": "Funktionen",
+     "g": "Schreibe einen benannten Codeblock, den du jederzeit wiederverwenden kannst.",
+     "p": [
+      "Definiere ihn mit def: def greet(): und dann ein eingerückter Körper.",
+      "Rufe ihn mit Klammern beim Namen auf: greet() führt den Code darin aus.",
+      "Funktionen vermeiden Wiederholung: einmal schreiben, oft nutzen."
+     ],
+     "q": "Welche kleine Aufgabe wiederholst du so oft, dass sie einen Namen verdient?",
+     "c": "Definiere eine Funktion say_hello, die einen Gruß ausgibt, und rufe sie dreimal auf."
+    },
+    "es": {
+     "t": "Funciones",
+     "g": "Escribe un bloque de código con nombre que puedes reutilizar siempre.",
+     "p": [
+      "Se define con def: def greet(): y luego un cuerpo con sangría.",
+      "Se llama por su nombre con paréntesis: greet() ejecuta el código de dentro.",
+      "Las funciones evitan repetirte: se escribe una vez y se usa muchas."
+     ],
+     "q": "¿Qué tarea pequeña repites tanto que merece un nombre?",
+     "c": "Define una función say_hello que imprima un saludo y llámala tres veces."
+    },
+    "fr": {
+     "t": "Les fonctions",
+     "g": "Écris un bloc de code nommé que tu peux réutiliser à tout moment.",
+     "p": [
+      "On la définit avec def : def greet(): puis un corps indenté.",
+      "On l'appelle par son nom avec des parenthèses : greet() exécute le code dedans.",
+      "Les fonctions évitent les répétitions : on écrit une fois, on utilise souvent."
+     ],
+     "q": "Quelle petite tâche répètes-tu si souvent qu'elle mérite un nom ?",
+     "c": "Définis une fonction say_hello qui affiche un salut, puis appelle-la trois fois."
+    },
+    "it": {
+     "t": "Le funzioni",
+     "g": "Scrivi un blocco di codice con nome che puoi riusare sempre.",
+     "p": [
+      "Si definisce con def: def greet(): e poi un corpo indentato.",
+      "La chiami per nome con le parentesi: greet() esegue il codice dentro.",
+      "Le funzioni evitano le ripetizioni: si scrive una volta e si usa tante volte."
+     ],
+     "q": "Quale piccolo compito ripeti così spesso da meritare un nome?",
+     "c": "Definisci una funzione say_hello che stampa un saluto, poi chiamala tre volte."
+    },
+    "pt": {
+     "t": "Funções",
+     "g": "Escreve um bloco de código com nome que podes reutilizar sempre.",
+     "p": [
+      "Define-se com def: def greet(): e depois um corpo indentado.",
+      "Chama-se pelo nome com parênteses: greet() executa o código lá dentro.",
+      "As funções evitam repetições: escreve-se uma vez e usa-se muitas."
+     ],
+     "q": "Que tarefa pequena repetes tantas vezes que merece um nome?",
+     "c": "Define uma função say_hello que imprime um cumprimento e chama-a três vezes."
+    },
+    "pt_BR": {
+     "t": "Funções",
+     "g": "Escreva um bloco de código com nome que você pode reutilizar sempre.",
+     "p": [
+      "Define-se com def: def greet(): e depois um corpo indentado.",
+      "Chama-se pelo nome com parênteses: greet() executa o código lá dentro.",
+      "Funções evitam repetição: escreve-se uma vez e usa-se muitas."
+     ],
+     "q": "Que tarefa pequena você repete tanto que merece um nome?",
+     "c": "Defina uma função say_hello que imprime um cumprimento e chame-a três vezes."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Parameters and arguments",
+     "g": "Give a function the information it needs to do its job.",
+     "p": [
+      "Parameters are names in the brackets: def greet(name):.",
+      "Arguments are the real values you pass: greet('Ana').",
+      "Each call can use different arguments, so one function does many jobs."
+     ],
+     "q": "Who would you greet first with your new function?",
+     "c": "Write greet(name) that prints Hello and the name, then call it with two names."
+    },
+    "de": {
+     "t": "Parameter und Argumente",
+     "g": "Gib einer Funktion die Informationen, die sie für ihre Arbeit braucht.",
+     "p": [
+      "Parameter sind Namen in den Klammern: def greet(name):.",
+      "Argumente sind die echten Werte, die du übergibst: greet('Ana').",
+      "Jeder Aufruf kann andere Argumente nutzen, eine Funktion erledigt viele Aufgaben."
+     ],
+     "q": "Wen würdest du mit deiner neuen Funktion zuerst begrüßen?",
+     "c": "Schreibe greet(name), die Hello und den Namen ausgibt, und rufe sie mit zwei Namen auf."
+    },
+    "es": {
+     "t": "Parámetros y argumentos",
+     "g": "Dale a una función la información que necesita para trabajar.",
+     "p": [
+      "Los parámetros son nombres entre paréntesis: def greet(name):.",
+      "Los argumentos son los valores reales que pasas: greet('Ana').",
+      "Cada llamada puede usar argumentos distintos, así una función hace muchas tareas."
+     ],
+     "q": "¿A quién saludarías primero con tu nueva función?",
+     "c": "Escribe greet(name) que imprima Hello y el nombre, y llámala con dos nombres."
+    },
+    "fr": {
+     "t": "Paramètres et arguments",
+     "g": "Donne à une fonction les informations dont elle a besoin.",
+     "p": [
+      "Les paramètres sont des noms entre parenthèses : def greet(name):.",
+      "Les arguments sont les vraies valeurs que tu passes : greet('Ana').",
+      "Chaque appel peut utiliser d'autres arguments, une fonction fait donc plusieurs tâches."
+     ],
+     "q": "Qui saluerais-tu en premier avec ta nouvelle fonction ?",
+     "c": "Écris greet(name) qui affiche Hello et le nom, puis appelle-la avec deux noms."
+    },
+    "it": {
+     "t": "Parametri e argomenti",
+     "g": "Dai a una funzione le informazioni che le servono per lavorare.",
+     "p": [
+      "I parametri sono nomi tra parentesi: def greet(name):.",
+      "Gli argomenti sono i valori reali che passi: greet('Ana').",
+      "Ogni chiamata può usare argomenti diversi, così una funzione fa tanti lavori."
+     ],
+     "q": "Chi saluteresti per primo con la tua nuova funzione?",
+     "c": "Scrivi greet(name) che stampa Hello e il nome, poi chiamala con due nomi."
+    },
+    "pt": {
+     "t": "Parâmetros e argumentos",
+     "g": "Dá a uma função a informação de que ela precisa para trabalhar.",
+     "p": [
+      "Os parâmetros são nomes entre parênteses: def greet(name):.",
+      "Os argumentos são os valores reais que passas: greet('Ana').",
+      "Cada chamada pode usar argumentos diferentes, por isso uma função faz muitas tarefas."
+     ],
+     "q": "A quem cumprimentarias primeiro com a tua nova função?",
+     "c": "Escreve greet(name) que imprime Hello e o nome e chama-a com dois nomes."
+    },
+    "pt_BR": {
+     "t": "Parâmetros e argumentos",
+     "g": "Dê a uma função a informação de que ela precisa para trabalhar.",
+     "p": [
+      "Parâmetros são nomes entre parênteses: def greet(name):.",
+      "Argumentos são os valores reais que você passa: greet('Ana').",
+      "Cada chamada pode usar argumentos diferentes, então uma função faz muitas tarefas."
+     ],
+     "q": "Quem você cumprimentaria primeiro com sua nova função?",
+     "c": "Escreva greet(name) que imprime Hello e o nome e chame com dois nomes."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Return values",
+     "g": "Get a result back from a function to use elsewhere.",
+     "p": [
+      "return sends a value back to the place where the function was called.",
+      "print only shows a value; return lets you store and reuse it.",
+      "Example: def add(a, b): return a + b, then total = add(2, 3)."
+     ],
+     "q": "What small calculation would you love a function to do for you?",
+     "c": "Write square(n) that returns n * n, then print square(4) and square(square(2))."
+    },
+    "de": {
+     "t": "Rückgabewerte",
+     "g": "Bekomme ein Ergebnis aus einer Funktion zurück und nutze es weiter.",
+     "p": [
+      "return schickt einen Wert an die Stelle zurück, an der die Funktion aufgerufen wurde.",
+      "print zeigt nur an; mit return kannst du den Wert speichern und wiederverwenden.",
+      "Beispiel: def add(a, b): return a + b, dann total = add(2, 3)."
+     ],
+     "q": "Welche kleine Rechnung sollte eine Funktion für dich erledigen?",
+     "c": "Schreibe square(n), die n * n zurückgibt, und gib square(4) und square(square(2)) aus."
+    },
+    "es": {
+     "t": "Valores de retorno",
+     "g": "Recupera un resultado de una función para usarlo en otro sitio.",
+     "p": [
+      "return envía un valor de vuelta al lugar donde se llamó a la función.",
+      "print solo muestra un valor; return te permite guardarlo y reutilizarlo.",
+      "Ejemplo: def add(a, b): return a + b, luego total = add(2, 3)."
+     ],
+     "q": "¿Qué cálculo pequeño te gustaría que hiciera una función por ti?",
+     "c": "Escribe square(n) que devuelva n * n e imprime square(4) y square(square(2))."
+    },
+    "fr": {
+     "t": "Valeurs de retour",
+     "g": "Récupère un résultat d'une fonction pour l'utiliser ailleurs.",
+     "p": [
+      "return renvoie une valeur à l'endroit où la fonction a été appelée.",
+      "print affiche seulement ; avec return tu peux stocker et réutiliser la valeur.",
+      "Exemple : def add(a, b): return a + b, puis total = add(2, 3)."
+     ],
+     "q": "Quel petit calcul aimerais-tu qu'une fonction fasse pour toi ?",
+     "c": "Écris square(n) qui renvoie n * n, puis affiche square(4) et square(square(2))."
+    },
+    "it": {
+     "t": "Valori di ritorno",
+     "g": "Ottieni un risultato da una funzione per usarlo altrove.",
+     "p": [
+      "return rimanda un valore al punto in cui la funzione è stata chiamata.",
+      "print mostra soltanto; con return puoi salvare e riusare il valore.",
+      "Esempio: def add(a, b): return a + b, poi total = add(2, 3)."
+     ],
+     "q": "Quale piccolo calcolo vorresti che una funzione facesse per te?",
+     "c": "Scrivi square(n) che restituisce n * n, poi stampa square(4) e square(square(2))."
+    },
+    "pt": {
+     "t": "Valores de retorno",
+     "g": "Recebe um resultado de uma função para o usares noutro sítio.",
+     "p": [
+      "return devolve um valor ao local onde a função foi chamada.",
+      "print só mostra um valor; com return podes guardá-lo e reutilizá-lo.",
+      "Exemplo: def add(a, b): return a + b, e depois total = add(2, 3)."
+     ],
+     "q": "Que cálculo pequeno gostarias que uma função fizesse por ti?",
+     "c": "Escreve square(n) que devolve n * n e imprime square(4) e square(square(2))."
+    },
+    "pt_BR": {
+     "t": "Valores de retorno",
+     "g": "Receba um resultado de uma função para usar em outro lugar.",
+     "p": [
+      "return devolve um valor ao local onde a função foi chamada.",
+      "print só mostra um valor; com return você pode guardá-lo e reutilizá-lo.",
+      "Exemplo: def add(a, b): return a + b, e depois total = add(2, 3)."
+     ],
+     "q": "Que cálculo pequeno você gostaria que uma função fizesse por você?",
+     "c": "Escreva square(n) que devolve n * n e imprima square(4) e square(square(2))."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Default and keyword arguments",
+     "g": "Make functions flexible and easier to call.",
+     "p": [
+      "A default gives a fallback: def greet(name='friend'):.",
+      "Calling greet() now works, and greet('Ana') overrides the default.",
+      "Keyword arguments name the value: greet(name='Ana'), easier to read."
+     ],
+     "q": "Which default value would make your own function friendlier?",
+     "c": "Write power(base, exp=2) that returns base ** exp and call it with and without exp."
+    },
+    "de": {
+     "t": "Standard- und Schlüsselwortargumente",
+     "g": "Mache Funktionen flexibler und leichter aufrufbar.",
+     "p": [
+      "Ein Standardwert ist der Ersatz: def greet(name='friend'):.",
+      "greet() funktioniert nun, und greet('Ana') überschreibt den Standard.",
+      "Schlüsselwortargumente benennen den Wert: greet(name='Ana'), besser lesbar."
+     ],
+     "q": "Welcher Standardwert würde deine Funktion freundlicher machen?",
+     "c": "Schreibe power(base, exp=2), die base ** exp zurückgibt, und rufe sie mit und ohne exp auf."
+    },
+    "es": {
+     "t": "Argumentos por defecto y con nombre",
+     "g": "Haz las funciones más flexibles y fáciles de llamar.",
+     "p": [
+      "Un valor por defecto da una alternativa: def greet(name='friend'):.",
+      "Ahora greet() funciona y greet('Ana') cambia el valor por defecto.",
+      "Los argumentos con nombre indican el valor: greet(name='Ana'), más legible."
+     ],
+     "q": "¿Qué valor por defecto haría tu función más amable?",
+     "c": "Escribe power(base, exp=2) que devuelva base ** exp y llámala con y sin exp."
+    },
+    "fr": {
+     "t": "Arguments par défaut et nommés",
+     "g": "Rends les fonctions plus souples et plus faciles à appeler.",
+     "p": [
+      "Une valeur par défaut sert de secours : def greet(name='friend'):.",
+      "greet() fonctionne désormais, et greet('Ana') remplace la valeur par défaut.",
+      "Les arguments nommés précisent la valeur : greet(name='Ana'), plus lisible."
+     ],
+     "q": "Quelle valeur par défaut rendrait ta fonction plus sympathique ?",
+     "c": "Écris power(base, exp=2) qui renvoie base ** exp et appelle-la avec et sans exp."
+    },
+    "it": {
+     "t": "Argomenti predefiniti e con nome",
+     "g": "Rendi le funzioni più flessibili e facili da chiamare.",
+     "p": [
+      "Un valore predefinito fa da riserva: def greet(name='friend'):.",
+      "Ora greet() funziona e greet('Ana') sostituisce il predefinito.",
+      "Gli argomenti con nome indicano il valore: greet(name='Ana'), più leggibile."
+     ],
+     "q": "Quale valore predefinito renderebbe più amichevole la tua funzione?",
+     "c": "Scrivi power(base, exp=2) che restituisce base ** exp e chiamala con e senza exp."
+    },
+    "pt": {
+     "t": "Argumentos por omissão e com nome",
+     "g": "Torna as funções mais flexíveis e fáceis de chamar.",
+     "p": [
+      "Um valor por omissão serve de reserva: def greet(name='friend'):.",
+      "Agora greet() funciona e greet('Ana') substitui o valor por omissão.",
+      "Os argumentos com nome indicam o valor: greet(name='Ana'), mais legível."
+     ],
+     "q": "Que valor por omissão tornaria a tua função mais simpática?",
+     "c": "Escreve power(base, exp=2) que devolve base ** exp e chama-a com e sem exp."
+    },
+    "pt_BR": {
+     "t": "Argumentos padrão e nomeados",
+     "g": "Deixe as funções mais flexíveis e fáceis de chamar.",
+     "p": [
+      "Um valor padrão serve de reserva: def greet(name='friend'):.",
+      "Agora greet() funciona e greet('Ana') substitui o valor padrão.",
+      "Argumentos nomeados indicam o valor: greet(name='Ana'), mais legível."
+     ],
+     "q": "Que valor padrão deixaria sua função mais simpática?",
+     "c": "Escreva power(base, exp=2) que devolve base ** exp e chame com e sem exp."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Scope",
+     "g": "Learn where a variable lives and why.",
+     "p": [
+      "A variable made inside a function exists only inside that function.",
+      "Variables made outside are global; a function can read them.",
+      "Pass values in as parameters and send them out with return instead."
+     ],
+     "q": "Do you keep some things private and others shared? Scope is similar!",
+     "c": "Create x inside a function, try to print it outside, and read the NameError."
+    },
+    "de": {
+     "t": "Gültigkeitsbereich (Scope)",
+     "g": "Lerne, wo eine Variable lebt und warum.",
+     "p": [
+      "Eine Variable innerhalb einer Funktion existiert nur in dieser Funktion.",
+      "Variablen außerhalb sind global; eine Funktion kann sie lesen.",
+      "Gib Werte besser als Parameter hinein und per return heraus."
+     ],
+     "q": "Hältst du manches privat und anderes gemeinsam? Scope funktioniert ähnlich!",
+     "c": "Erstelle x in einer Funktion, versuche es außerhalb auszugeben und lies den NameError."
+    },
+    "es": {
+     "t": "Ámbito (scope)",
+     "g": "Aprende dónde vive una variable y por qué.",
+     "p": [
+      "Una variable creada dentro de una función solo existe dentro de ella.",
+      "Las variables creadas fuera son globales; una función puede leerlas.",
+      "Mejor pasa valores como parámetros y devuélvelos con return."
+     ],
+     "q": "¿Guardas algunas cosas en privado y otras compartidas? ¡El ámbito es parecido!",
+     "c": "Crea x dentro de una función, intenta imprimirla fuera y lee el NameError."
+    },
+    "fr": {
+     "t": "La portée (scope)",
+     "g": "Apprends où vit une variable et pourquoi.",
+     "p": [
+      "Une variable créée dans une fonction n'existe que dans cette fonction.",
+      "Les variables créées dehors sont globales ; une fonction peut les lire.",
+      "Mieux vaut passer les valeurs en paramètres et les renvoyer avec return."
+     ],
+     "q": "Gardes-tu certaines choses privées et d'autres partagées ? La portée, c'est pareil !",
+     "c": "Crée x dans une fonction, essaie de l'afficher dehors et lis la NameError."
+    },
+    "it": {
+     "t": "Ambito (scope)",
+     "g": "Impara dove vive una variabile e perché.",
+     "p": [
+      "Una variabile creata dentro una funzione esiste solo dentro quella funzione.",
+      "Le variabili create fuori sono globali; una funzione può leggerle.",
+      "Meglio passare i valori come parametri e restituirli con return."
+     ],
+     "q": "Tieni alcune cose private e altre condivise? L'ambito è simile!",
+     "c": "Crea x dentro una funzione, prova a stamparla fuori e leggi il NameError."
+    },
+    "pt": {
+     "t": "Âmbito (scope)",
+     "g": "Aprende onde vive uma variável e porquê.",
+     "p": [
+      "Uma variável criada dentro de uma função só existe dentro dela.",
+      "As variáveis criadas fora são globais; uma função pode lê-las.",
+      "É melhor passar valores como parâmetros e devolvê-los com return."
+     ],
+     "q": "Manténs algumas coisas privadas e outras partilhadas? O âmbito é parecido!",
+     "c": "Cria x dentro de uma função, tenta imprimi-la fora e lê o NameError."
+    },
+    "pt_BR": {
+     "t": "Escopo (scope)",
+     "g": "Aprenda onde uma variável vive e por quê.",
+     "p": [
+      "Uma variável criada dentro de uma função só existe dentro dela.",
+      "Variáveis criadas fora são globais; uma função pode lê-las.",
+      "Melhor passar valores como parâmetros e devolvê-los com return."
+     ],
+     "q": "Você mantém algumas coisas privadas e outras compartilhadas? O escopo é parecido!",
+     "c": "Crie x dentro de uma função, tente imprimi-la fora e leia o NameError."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Small functions, clear code",
+     "g": "Give each function one job and a name that says it.",
+     "p": [
+      "A function should do one thing well, like calculate_tax or print_menu.",
+      "Names that start with a verb make the code read like a story.",
+      "Short functions are easier to test, reuse and fix."
+     ],
+     "q": "Which long task could you split into two or three small functions?",
+     "c": "Split a program that asks a number, doubles it and prints it into three functions."
+    },
+    "de": {
+     "t": "Kleine Funktionen, klarer Code",
+     "g": "Gib jeder Funktion eine Aufgabe und einen sprechenden Namen.",
+     "p": [
+      "Eine Funktion sollte eine Sache gut tun, etwa calculate_tax oder print_menu.",
+      "Namen mit einem Verb am Anfang lassen den Code wie eine Geschichte lesen.",
+      "Kurze Funktionen lassen sich leichter testen, wiederverwenden und reparieren."
+     ],
+     "q": "Welche lange Aufgabe könntest du in zwei oder drei kleine Funktionen teilen?",
+     "c": "Teile ein Programm, das eine Zahl erfragt, verdoppelt und ausgibt, in drei Funktionen."
+    },
+    "es": {
+     "t": "Funciones pequeñas, código claro",
+     "g": "Da a cada función una tarea y un nombre que la describa.",
+     "p": [
+      "Una función debe hacer una cosa bien, como calculate_tax o print_menu.",
+      "Los nombres que empiezan con un verbo hacen que el código se lea como un cuento.",
+      "Las funciones cortas son más fáciles de probar, reutilizar y arreglar."
+     ],
+     "q": "¿Qué tarea larga podrías dividir en dos o tres funciones pequeñas?",
+     "c": "Divide en tres funciones un programa que pide un número, lo duplica y lo imprime."
+    },
+    "fr": {
+     "t": "Petites fonctions, code clair",
+     "g": "Donne à chaque fonction une seule tâche et un nom explicite.",
+     "p": [
+      "Une fonction doit bien faire une chose, comme calculate_tax ou print_menu.",
+      "Des noms commençant par un verbe font lire le code comme une histoire.",
+      "Les fonctions courtes se testent, se réutilisent et se corrigent plus facilement."
+     ],
+     "q": "Quelle longue tâche pourrais-tu découper en deux ou trois petites fonctions ?",
+     "c": "Découpe en trois fonctions un programme qui demande un nombre, le double et l'affiche."
+    },
+    "it": {
+     "t": "Funzioni piccole, codice chiaro",
+     "g": "Dai a ogni funzione un compito e un nome che lo dica.",
+     "p": [
+      "Una funzione dovrebbe fare bene una cosa, come calculate_tax o print_menu.",
+      "Nomi che iniziano con un verbo fanno leggere il codice come una storia.",
+      "Le funzioni brevi sono più facili da provare, riusare e correggere."
+     ],
+     "q": "Quale compito lungo potresti dividere in due o tre piccole funzioni?",
+     "c": "Dividi in tre funzioni un programma che chiede un numero, lo raddoppia e lo stampa."
+    },
+    "pt": {
+     "t": "Funções pequenas, código claro",
+     "g": "Dá a cada função uma só tarefa e um nome que a descreva.",
+     "p": [
+      "Uma função deve fazer bem uma só coisa, como calculate_tax ou print_menu.",
+      "Nomes que começam por um verbo fazem o código ler-se como uma história.",
+      "As funções curtas são mais fáceis de testar, reutilizar e corrigir."
+     ],
+     "q": "Que tarefa longa podias dividir em duas ou três funções pequenas?",
+     "c": "Divide em três funções um programa que pede um número, o duplica e o imprime."
+    },
+    "pt_BR": {
+     "t": "Funções pequenas, código claro",
+     "g": "Dê a cada função uma só tarefa e um nome que a descreva.",
+     "p": [
+      "Uma função deve fazer bem uma só coisa, como calculate_tax ou print_menu.",
+      "Nomes que começam com um verbo fazem o código ler-se como uma história.",
+      "Funções curtas são mais fáceis de testar, reutilizar e corrigir."
+     ],
+     "q": "Que tarefa longa você poderia dividir em duas ou três funções pequenas?",
+     "c": "Divida em três funções um programa que pede um número, o dobra e o imprime."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mini project: unit converter",
+     "g": "Write functions that convert km to miles and Celsius to Fahrenheit.",
+     "p": [
+      "One mile is about 1.609 km, so miles = km / 1.609.",
+      "Fahrenheit = celsius * 9 / 5 + 32.",
+      "Give each conversion its own function and return the result."
+     ],
+     "q": "Which conversion do you need most when travelling or cooking?",
+     "c": "Write km_to_miles and c_to_f functions, then print the results for 10 km and 25 degrees."
+    },
+    "de": {
+     "t": "Mini-Projekt: Einheitenumrechner",
+     "g": "Schreibe Funktionen, die km in Meilen und Celsius in Fahrenheit umrechnen.",
+     "p": [
+      "Eine Meile sind etwa 1,609 km, also miles = km / 1.609.",
+      "Fahrenheit = celsius * 9 / 5 + 32.",
+      "Gib jeder Umrechnung eine eigene Funktion und liefere das Ergebnis per return."
+     ],
+     "q": "Welche Umrechnung brauchst du auf Reisen oder beim Kochen am meisten?",
+     "c": "Schreibe km_to_miles und c_to_f und gib die Ergebnisse für 10 km und 25 Grad aus."
+    },
+    "es": {
+     "t": "Miniproyecto: conversor de unidades",
+     "g": "Escribe funciones que conviertan km a millas y Celsius a Fahrenheit.",
+     "p": [
+      "Una milla son unos 1,609 km, así que miles = km / 1.609.",
+      "Fahrenheit = celsius * 9 / 5 + 32.",
+      "Da a cada conversión su propia función y devuelve el resultado."
+     ],
+     "q": "¿Qué conversión necesitas más al viajar o cocinar?",
+     "c": "Escribe km_to_miles y c_to_f e imprime los resultados para 10 km y 25 grados."
+    },
+    "fr": {
+     "t": "Mini-projet : convertisseur d'unités",
+     "g": "Écris des fonctions qui convertissent km en miles et Celsius en Fahrenheit.",
+     "p": [
+      "Un mile fait environ 1,609 km, donc miles = km / 1.609.",
+      "Fahrenheit = celsius * 9 / 5 + 32.",
+      "Donne à chaque conversion sa propre fonction et renvoie le résultat."
+     ],
+     "q": "Quelle conversion te sert le plus en voyage ou en cuisine ?",
+     "c": "Écris km_to_miles et c_to_f puis affiche les résultats pour 10 km et 25 degrés."
+    },
+    "it": {
+     "t": "Mini progetto: convertitore di unità",
+     "g": "Scrivi funzioni che convertono km in miglia e Celsius in Fahrenheit.",
+     "p": [
+      "Un miglio è circa 1,609 km, quindi miles = km / 1.609.",
+      "Fahrenheit = celsius * 9 / 5 + 32.",
+      "Dai a ogni conversione la sua funzione e restituisci il risultato."
+     ],
+     "q": "Quale conversione ti serve di più in viaggio o in cucina?",
+     "c": "Scrivi km_to_miles e c_to_f e stampa i risultati per 10 km e 25 gradi."
+    },
+    "pt": {
+     "t": "Mini projeto: conversor de unidades",
+     "g": "Escreve funções que convertem km em milhas e Celsius em Fahrenheit.",
+     "p": [
+      "Uma milha são cerca de 1,609 km, por isso miles = km / 1.609.",
+      "Fahrenheit = celsius * 9 / 5 + 32.",
+      "Dá a cada conversão a sua função e devolve o resultado."
+     ],
+     "q": "Que conversão precisas mais ao viajar ou cozinhar?",
+     "c": "Escreve km_to_miles e c_to_f e imprime os resultados para 10 km e 25 graus."
+    },
+    "pt_BR": {
+     "t": "Mini projeto: conversor de unidades",
+     "g": "Escreva funções que convertem km em milhas e Celsius em Fahrenheit.",
+     "p": [
+      "Uma milha tem cerca de 1,609 km, então miles = km / 1.609.",
+      "Fahrenheit = celsius * 9 / 5 + 32.",
+      "Dê a cada conversão sua própria função e devolva o resultado."
+     ],
+     "q": "Que conversão você mais precisa ao viajar ou cozinhar?",
+     "c": "Escreva km_to_miles e c_to_f e imprima os resultados para 10 km e 25 graus."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: loops, lists and functions",
+     "g": "Recap the second month with small exercises to try.",
+     "p": [
+      "Loops repeat: use while for conditions, and for with range for sequences.",
+      "Lists, tuples, dictionaries and sets each fit a different job.",
+      "Functions package code: parameters in, return value out."
+     ],
+     "q": "Which project from the last month made you proudest?",
+     "c": "Write is_even(n) returning True or False, then use a loop to print the even numbers up to 10."
+    },
+    "de": {
+     "t": "Rückblick: Schleifen, Listen und Funktionen",
+     "g": "Wiederhole den zweiten Monat mit kleinen Übungen.",
+     "p": [
+      "Schleifen wiederholen: while für Bedingungen, for für Folgen und range.",
+      "Listen, Tupel, Dictionaries und Sets passen jeweils zu anderen Aufgaben.",
+      "Funktionen bündeln Code: Parameter rein, Rückgabewert raus."
+     ],
+     "q": "Welches Projekt des letzten Monats hat dich am stolzesten gemacht?",
+     "c": "Schreibe is_even(n), die True oder False liefert, und gib per Schleife die geraden Zahlen bis 10 aus."
+    },
+    "es": {
+     "t": "Repaso: bucles, listas y funciones",
+     "g": "Repasa el segundo mes con pequeños ejercicios.",
+     "p": [
+      "Los bucles repiten: while para condiciones, for para secuencias y range.",
+      "Listas, tuplas, diccionarios y sets sirven cada uno para una tarea distinta.",
+      "Las funciones empaquetan código: parámetros de entrada, valor de retorno de salida."
+     ],
+     "q": "¿Qué proyecto del último mes te enorgullece más?",
+     "c": "Escribe is_even(n) que devuelva True o False y usa un bucle para imprimir los pares hasta 10."
+    },
+    "fr": {
+     "t": "Révision : boucles, listes et fonctions",
+     "g": "Révise le deuxième mois avec de petits exercices.",
+     "p": [
+      "Les boucles répètent : while pour les conditions, for pour les séquences et range.",
+      "Listes, tuples, dictionnaires et sets conviennent chacun à une tâche différente.",
+      "Les fonctions regroupent le code : paramètres en entrée, valeur de retour en sortie."
+     ],
+     "q": "Quel projet du dernier mois te rend le plus fier ?",
+     "c": "Écris is_even(n) qui renvoie True ou False, puis affiche les nombres pairs jusqu'à 10 avec une boucle."
+    },
+    "it": {
+     "t": "Ripasso: cicli, liste e funzioni",
+     "g": "Ripassa il secondo mese con piccoli esercizi.",
+     "p": [
+      "I cicli ripetono: while per le condizioni, for per le sequenze e range.",
+      "Liste, tuple, dizionari e set servono ciascuno a un compito diverso.",
+      "Le funzioni racchiudono il codice: parametri in ingresso, valore di ritorno in uscita."
+     ],
+     "q": "Quale progetto dell'ultimo mese ti rende più orgoglioso?",
+     "c": "Scrivi is_even(n) che restituisce True o False, poi stampa con un ciclo i numeri pari fino a 10."
+    },
+    "pt": {
+     "t": "Revisão: ciclos, listas e funções",
+     "g": "Revê o segundo mês com pequenos exercícios.",
+     "p": [
+      "Os ciclos repetem: while para condições, for para sequências e range.",
+      "Listas, tuplos, dicionários e sets servem cada um uma tarefa diferente.",
+      "As funções empacotam código: parâmetros à entrada, valor de retorno à saída."
+     ],
+     "q": "Que projeto do último mês te deixou mais orgulhoso?",
+     "c": "Escreve is_even(n) que devolve True ou False e usa um ciclo para imprimir os pares até 10."
+    },
+    "pt_BR": {
+     "t": "Revisão: laços, listas e funções",
+     "g": "Revise o segundo mês com pequenos exercícios.",
+     "p": [
+      "Laços repetem: while para condições, for para sequências e range.",
+      "Listas, tuplas, dicionários e sets servem cada um para uma tarefa diferente.",
+      "Funções empacotam código: parâmetros na entrada, valor de retorno na saída."
+     ],
+     "q": "Que projeto do último mês te deixou mais orgulhoso?",
+     "c": "Escreva is_even(n) que devolve True ou False e use um laço para imprimir os pares até 10."
+    }
+   }
+  }
+ ]
+}

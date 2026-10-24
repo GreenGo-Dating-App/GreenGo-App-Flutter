@@ -1,0 +1,835 @@
+{
+ "topic": "fashion_basics",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What personal style really is",
+     "g": "Understand style as a way to express who you are, not a strict set of rules.",
+     "p": [
+      "Style is how you show your personality through clothes.",
+      "There is no single correct look; many styles are equally valid.",
+      "You can start with what you already enjoy wearing."
+     ],
+     "q": "What is one piece of clothing that feels most like you, and why?",
+     "c": "Today, wear one item purely because you like it, and notice how it feels."
+    },
+    "de": {
+     "t": "Was persönlicher Stil wirklich ist",
+     "g": "Stil verstehen als Ausdruck deiner Persönlichkeit, nicht als starres Regelwerk.",
+     "p": [
+      "Stil bedeutet, deine Persönlichkeit durch Kleidung zu zeigen.",
+      "Es gibt keinen einzigen richtigen Look; viele Stile sind gleich gültig.",
+      "Du kannst mit dem beginnen, was du schon gern trägst."
+     ],
+     "q": "Welches Kleidungsstück fühlt sich am meisten nach dir an, und warum?",
+     "c": "Trage heute ein Teil nur, weil du es magst, und achte darauf, wie es sich anfühlt."
+    },
+    "es": {
+     "t": "Qué es realmente el estilo personal",
+     "g": "Entender el estilo como una forma de expresar quién eres, no como un conjunto de reglas.",
+     "p": [
+      "El estilo es la manera de mostrar tu personalidad con la ropa.",
+      "No existe un único look correcto; muchos estilos son igual de válidos.",
+      "Puedes empezar por lo que ya disfrutas llevando."
+     ],
+     "q": "¿Qué prenda sientes más tuya y por qué?",
+     "c": "Hoy ponte una prenda solo porque te gusta y fíjate en cómo te hace sentir."
+    },
+    "fr": {
+     "t": "Ce qu'est vraiment le style personnel",
+     "g": "Comprendre le style comme une façon d'exprimer qui tu es, pas comme un règlement strict.",
+     "p": [
+      "Le style, c'est montrer ta personnalité à travers tes vêtements.",
+      "Il n'existe pas de look unique et correct; beaucoup de styles se valent.",
+      "Tu peux commencer par ce que tu aimes déjà porter."
+     ],
+     "q": "Quel vêtement te ressemble le plus, et pourquoi ?",
+     "c": "Aujourd'hui, porte une pièce uniquement parce qu'elle te plaît et observe ce que tu ressens."
+    },
+    "it": {
+     "t": "Che cos'è davvero lo stile personale",
+     "g": "Capire lo stile come un modo di esprimere chi sei, non come un elenco di regole.",
+     "p": [
+      "Lo stile è il modo in cui mostri la tua personalità attraverso i vestiti.",
+      "Non esiste un solo look giusto; molti stili sono ugualmente validi.",
+      "Puoi partire da ciò che già ti piace indossare."
+     ],
+     "q": "Quale capo senti più tuo, e perché?",
+     "c": "Oggi indossa un capo solo perché ti piace e osserva come ti fa sentire."
+    },
+    "pt": {
+     "t": "O que é realmente o estilo pessoal",
+     "g": "Perceber o estilo como uma forma de expressar quem és, não como um conjunto de regras.",
+     "p": [
+      "O estilo é a forma de mostrares a tua personalidade através da roupa.",
+      "Não há um único visual certo; muitos estilos são igualmente válidos.",
+      "Podes começar pelo que já gostas de vestir."
+     ],
+     "q": "Que peça de roupa sentes mais tua e porquê?",
+     "c": "Hoje veste uma peça só porque gostas dela e repara em como te sentes."
+    },
+    "pt_BR": {
+     "t": "O que é realmente o estilo pessoal",
+     "g": "Entender o estilo como um jeito de expressar quem você é, não como um conjunto de regras.",
+     "p": [
+      "Estilo é a forma de mostrar sua personalidade por meio das roupas.",
+      "Não existe um único visual certo; muitos estilos são igualmente válidos.",
+      "Você pode começar pelo que já gosta de vestir."
+     ],
+     "q": "Qual peça de roupa você sente mais sua, e por quê?",
+     "c": "Hoje use uma peça só porque você gosta dela e perceba como se sente."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fashion versus style",
+     "g": "Learn how fashion changes with the seasons while personal style stays with you.",
+     "p": [
+      "Fashion is what is popular now and changes often.",
+      "Personal style is what you return to because it feels like you.",
+      "You can borrow from fashion without losing your own style."
+     ],
+     "q": "Which clothes have you loved for years, no matter what was popular?",
+     "c": "Pick one favourite piece you have worn for years and style it in a new way today."
+    },
+    "de": {
+     "t": "Mode und Stil im Vergleich",
+     "g": "Lernen, wie sich die Mode mit den Jahreszeiten wandelt, während dein Stil bleibt.",
+     "p": [
+      "Mode ist das, was gerade beliebt ist, und sie wechselt oft.",
+      "Persönlicher Stil ist das, wozu du zurückkehrst, weil es zu dir passt.",
+      "Du kannst dich von der Mode inspirieren lassen, ohne deinen Stil zu verlieren."
+     ],
+     "q": "Welche Kleidung liebst du seit Jahren, egal was gerade angesagt war?",
+     "c": "Wähle ein Lieblingsteil, das du seit Jahren trägst, und kombiniere es heute neu."
+    },
+    "es": {
+     "t": "Moda frente a estilo",
+     "g": "Aprender cómo la moda cambia con las estaciones mientras tu estilo permanece.",
+     "p": [
+      "La moda es lo que está de actualidad y cambia a menudo.",
+      "El estilo personal es lo que repites porque se siente como tú.",
+      "Puedes tomar ideas de la moda sin perder tu propio estilo."
+     ],
+     "q": "¿Qué ropa llevas años queriendo, sin importar lo que estuviera de moda?",
+     "c": "Elige una prenda favorita de siempre y combínala hoy de una manera nueva."
+    },
+    "fr": {
+     "t": "Mode et style",
+     "g": "Comprendre que la mode change avec les saisons alors que ton style reste avec toi.",
+     "p": [
+      "La mode, c'est ce qui est populaire en ce moment, et elle change souvent.",
+      "Le style personnel, c'est ce vers quoi tu reviens parce qu'il te ressemble.",
+      "Tu peux t'inspirer de la mode sans perdre ton propre style."
+     ],
+     "q": "Quels vêtements aimes-tu depuis des années, quelle que soit la mode ?",
+     "c": "Choisis une pièce fétiche portée depuis longtemps et associe-la autrement aujourd'hui."
+    },
+    "it": {
+     "t": "Moda e stile a confronto",
+     "g": "Capire come la moda cambia con le stagioni mentre il tuo stile resta con te.",
+     "p": [
+      "La moda è ciò che è popolare ora e cambia spesso.",
+      "Lo stile personale è ciò a cui torni perché ti somiglia.",
+      "Puoi prendere ispirazione dalla moda senza perdere il tuo stile."
+     ],
+     "q": "Quali vestiti ami da anni, indipendentemente da cosa andava di moda?",
+     "c": "Scegli un capo preferito che porti da anni e abbinalo oggi in modo nuovo."
+    },
+    "pt": {
+     "t": "Moda versus estilo",
+     "g": "Perceber como a moda muda com as estações enquanto o teu estilo fica contigo.",
+     "p": [
+      "A moda é o que está popular agora e muda com frequência.",
+      "O estilo pessoal é aquilo a que voltas porque tem a ver contigo.",
+      "Podes inspirar-te na moda sem perderes o teu estilo."
+     ],
+     "q": "Que roupa adoras há anos, independentemente do que estava na moda?",
+     "c": "Escolhe uma peça favorita de há anos e combina-a hoje de forma nova."
+    },
+    "pt_BR": {
+     "t": "Moda versus estilo",
+     "g": "Entender como a moda muda com as estações enquanto o seu estilo fica com você.",
+     "p": [
+      "Moda é o que está popular agora e muda com frequência.",
+      "Estilo pessoal é aquilo a que você volta porque combina com você.",
+      "Dá para se inspirar na moda sem perder o seu estilo."
+     ],
+     "q": "Que roupa você adora há anos, independentemente do que estava na moda?",
+     "c": "Escolha uma peça favorita de anos atrás e combine de um jeito novo hoje."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Style for every body",
+     "g": "Remember that every body deserves clothes that fit and feel good.",
+     "p": [
+      "Bodies come in many shapes and all of them are worthy of great clothes.",
+      "The goal is comfort and confidence, not changing your body.",
+      "Clothes should adapt to you, never the other way around."
+     ],
+     "q": "What makes you feel most comfortable in your clothes?",
+     "c": "Tell yourself one kind thing about your body today while you get dressed."
+    },
+    "de": {
+     "t": "Stil für jeden Körper",
+     "g": "Daran denken: Jeder Körper verdient Kleidung, die passt und sich gut anfühlt.",
+     "p": [
+      "Körper haben viele Formen, und alle verdienen schöne Kleidung.",
+      "Ziel sind Komfort und Selbstvertrauen, nicht ein anderer Körper.",
+      "Kleidung soll sich dir anpassen, nie umgekehrt."
+     ],
+     "q": "Was lässt dich in deiner Kleidung am wohlsten fühlen?",
+     "c": "Sag dir heute beim Anziehen etwas Freundliches über deinen Körper."
+    },
+    "es": {
+     "t": "Estilo para todos los cuerpos",
+     "g": "Recordar que todo cuerpo merece ropa que le quede bien y le haga sentir bien.",
+     "p": [
+      "Los cuerpos tienen muchas formas y todos merecen ropa estupenda.",
+      "La meta es la comodidad y la confianza, no cambiar tu cuerpo.",
+      "La ropa debe adaptarse a ti, nunca al revés."
+     ],
+     "q": "¿Qué te hace sentir más cómodo o cómoda con tu ropa?",
+     "c": "Hoy, al vestirte, dite una frase amable sobre tu cuerpo."
+    },
+    "fr": {
+     "t": "Du style pour tous les corps",
+     "g": "Se rappeler que chaque corps mérite des vêtements qui lui vont et le mettent à l'aise.",
+     "p": [
+      "Les corps ont mille formes et tous méritent de beaux vêtements.",
+      "Le but est le confort et la confiance, pas de changer ton corps.",
+      "Ce sont les vêtements qui s'adaptent à toi, jamais l'inverse."
+     ],
+     "q": "Qu'est-ce qui te fait te sentir le plus à l'aise dans tes vêtements ?",
+     "c": "Aujourd'hui, en t'habillant, dis-toi une chose bienveillante sur ton corps."
+    },
+    "it": {
+     "t": "Stile per ogni corpo",
+     "g": "Ricordare che ogni corpo merita vestiti che calzano bene e fanno stare bene.",
+     "p": [
+      "I corpi hanno tante forme e tutti meritano bei vestiti.",
+      "L'obiettivo è comfort e sicurezza, non cambiare il tuo corpo.",
+      "Sono i vestiti ad adattarsi a te, mai il contrario."
+     ],
+     "q": "Cosa ti fa sentire più a tuo agio nei vestiti?",
+     "c": "Oggi mentre ti vesti, dì a te stesso o stessa una cosa gentile sul tuo corpo."
+    },
+    "pt": {
+     "t": "Estilo para todos os corpos",
+     "g": "Lembrar que todos os corpos merecem roupa que sirva bem e faça sentir bem.",
+     "p": [
+      "Os corpos têm muitas formas e todos merecem roupa bonita.",
+      "O objetivo é conforto e confiança, não mudar o teu corpo.",
+      "A roupa deve adaptar-se a ti, nunca o contrário."
+     ],
+     "q": "O que te faz sentir mais confortável com a tua roupa?",
+     "c": "Hoje, ao vestires-te, diz uma coisa simpática sobre o teu corpo."
+    },
+    "pt_BR": {
+     "t": "Estilo para todos os corpos",
+     "g": "Lembrar que todo corpo merece roupas que sirvam bem e façam você se sentir bem.",
+     "p": [
+      "Os corpos têm muitas formas e todos merecem roupas lindas.",
+      "O objetivo é conforto e confiança, não mudar o seu corpo.",
+      "A roupa deve se adaptar a você, nunca o contrário."
+     ],
+     "q": "O que faz você se sentir mais confortável com suas roupas?",
+     "c": "Hoje, ao se vestir, diga a si mesmo uma coisa gentil sobre o seu corpo."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your style starting point",
+     "g": "Notice which clothes you reach for most and why they feel good.",
+     "p": [
+      "Your most-worn clothes show what already works for you.",
+      "Look at fit, colour and fabric: what do your favourites share?",
+      "Starting from what you love is easier than starting from scratch."
+     ],
+     "q": "Which three items do you wear most often, and what do you like in them?",
+     "c": "Today, jot down the three things your favourite clothes have in common."
+    },
+    "de": {
+     "t": "Dein Stil-Ausgangspunkt",
+     "g": "Bemerken, nach welchen Kleidern du am häufigsten greifst und warum sie sich gut anfühlen.",
+     "p": [
+      "Deine meistgetragenen Teile zeigen, was bei dir schon funktioniert.",
+      "Achte auf Passform, Farbe und Stoff: Was haben deine Favoriten gemeinsam?",
+      "Von dem auszugehen, was du liebst, ist leichter als ein Neustart."
+     ],
+     "q": "Welche drei Teile trägst du am häufigsten, und was gefällt dir daran?",
+     "c": "Notiere heute, was deine drei Lieblingsteile gemeinsam haben."
+    },
+    "es": {
+     "t": "Tu punto de partida de estilo",
+     "g": "Fíjate en la ropa que más eliges y en por qué te hace sentir bien.",
+     "p": [
+      "Lo que más usas muestra lo que ya funciona para ti.",
+      "Observa ajuste, color y tejido: ¿qué tienen en común tus favoritas?",
+      "Partir de lo que amas es más fácil que empezar de cero."
+     ],
+     "q": "¿Qué tres prendas usas más a menudo y qué te gusta de ellas?",
+     "c": "Hoy anota qué tienen en común tus tres prendas favoritas."
+    },
+    "fr": {
+     "t": "Ton point de départ en style",
+     "g": "Remarquer les vêtements que tu choisis le plus souvent et pourquoi ils te font du bien.",
+     "p": [
+      "Tes vêtements les plus portés montrent ce qui fonctionne déjà pour toi.",
+      "Regarde la coupe, la couleur et la matière: que partagent tes préférés ?",
+      "Partir de ce que tu aimes est plus simple que de repartir de zéro."
+     ],
+     "q": "Quelles trois pièces portes-tu le plus souvent, et qu'y aimes-tu ?",
+     "c": "Aujourd'hui, note ce que tes trois pièces préférées ont en commun."
+    },
+    "it": {
+     "t": "Il tuo punto di partenza di stile",
+     "g": "Notare quali capi scegli più spesso e perché ti fanno stare bene.",
+     "p": [
+      "I capi che indossi di più mostrano cosa funziona già per te.",
+      "Guarda vestibilità, colore e tessuto: cosa hanno in comune i tuoi preferiti?",
+      "Partire da ciò che ami è più facile che ricominciare da zero."
+     ],
+     "q": "Quali tre capi indossi più spesso e cosa ti piace in loro?",
+     "c": "Oggi annota cosa hanno in comune i tuoi tre capi preferiti."
+    },
+    "pt": {
+     "t": "O teu ponto de partida de estilo",
+     "g": "Reparar na roupa que escolhes mais vezes e porque te faz sentir bem.",
+     "p": [
+      "A roupa que mais usas mostra o que já funciona para ti.",
+      "Observa o corte, a cor e o tecido: o que têm em comum as tuas favoritas?",
+      "Partir do que amas é mais fácil do que começar do zero."
+     ],
+     "q": "Que três peças usas mais vezes e o que gostas nelas?",
+     "c": "Hoje anota o que têm em comum as tuas três peças favoritas."
+    },
+    "pt_BR": {
+     "t": "Seu ponto de partida de estilo",
+     "g": "Perceber quais roupas você mais escolhe e por que elas fazem você se sentir bem.",
+     "p": [
+      "As roupas que você mais usa mostram o que já funciona para você.",
+      "Observe caimento, cor e tecido: o que suas favoritas têm em comum?",
+      "Partir do que você ama é mais fácil do que começar do zero."
+     ],
+     "q": "Quais três peças você mais usa e o que gosta nelas?",
+     "c": "Hoje anote o que suas três peças favoritas têm em comum."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Words that describe you",
+     "g": "Pick three words, like relaxed, bold or elegant, to guide your style choices.",
+     "p": [
+      "Three style words act like a small compass for shopping and dressing.",
+      "Choose words about how you want to feel, not only how you want to look.",
+      "You can change your words any time as you grow."
+     ],
+     "q": "Which three words would you like your clothes to say about you?",
+     "c": "Write your three style words on a note and check one outfit against them."
+    },
+    "de": {
+     "t": "Wörter, die dich beschreiben",
+     "g": "Drei Wörter wie entspannt, mutig oder elegant wählen, die deine Stilentscheidungen leiten.",
+     "p": [
+      "Drei Stilwörter sind wie ein kleiner Kompass beim Einkaufen und Anziehen.",
+      "Wähle Wörter dazu, wie du dich fühlen willst, nicht nur, wie du aussehen willst.",
+      "Du kannst deine Wörter jederzeit ändern, wenn du dich weiterentwickelst."
+     ],
+     "q": "Welche drei Wörter sollen deine Kleider über dich sagen?",
+     "c": "Schreibe deine drei Stilwörter auf einen Zettel und prüfe ein Outfit daran."
+    },
+    "es": {
+     "t": "Palabras que te describen",
+     "g": "Elegir tres palabras, como relajado, atrevido o elegante, para guiar tus decisiones de estilo.",
+     "p": [
+      "Tres palabras de estilo funcionan como una pequeña brújula al comprar y vestir.",
+      "Elige palabras sobre cómo quieres sentirte, no solo cómo quieres verte.",
+      "Puedes cambiar tus palabras cuando quieras, a medida que creces."
+     ],
+     "q": "¿Qué tres palabras te gustaría que dijera tu ropa de ti?",
+     "c": "Escribe tus tres palabras en una nota y comprueba un conjunto con ellas."
+    },
+    "fr": {
+     "t": "Les mots qui te décrivent",
+     "g": "Choisir trois mots, comme détendu, audacieux ou élégant, pour guider tes choix de style.",
+     "p": [
+      "Trois mots de style servent de petite boussole pour acheter et s'habiller.",
+      "Choisis des mots sur ce que tu veux ressentir, pas seulement sur ton apparence.",
+      "Tu peux changer tes mots à tout moment, au fil de ton évolution."
+     ],
+     "q": "Quels trois mots aimerais-tu que tes vêtements disent de toi ?",
+     "c": "Écris tes trois mots sur un papier et vérifie une tenue avec eux."
+    },
+    "it": {
+     "t": "Le parole che ti descrivono",
+     "g": "Scegliere tre parole, come rilassato, audace o elegante, per guidare le tue scelte di stile.",
+     "p": [
+      "Tre parole di stile sono una piccola bussola per comprare e vestirsi.",
+      "Scegli parole su come vuoi sentirti, non solo su come vuoi apparire.",
+      "Puoi cambiare le tue parole quando vuoi, man mano che cresci."
+     ],
+     "q": "Quali tre parole vorresti che i tuoi vestiti dicessero di te?",
+     "c": "Scrivi le tue tre parole su un foglietto e verifica un outfit con esse."
+    },
+    "pt": {
+     "t": "Palavras que te descrevem",
+     "g": "Escolher três palavras, como descontraído, ousado ou elegante, para guiar as tuas escolhas de estilo.",
+     "p": [
+      "Três palavras de estilo funcionam como uma pequena bússola ao comprar e vestir.",
+      "Escolhe palavras sobre como queres sentir-te, não só como queres parecer.",
+      "Podes mudar as tuas palavras quando quiseres, à medida que evoluis."
+     ],
+     "q": "Que três palavras gostarias que a tua roupa dissesse de ti?",
+     "c": "Escreve as tuas três palavras num papel e confere um conjunto com elas."
+    },
+    "pt_BR": {
+     "t": "Palavras que descrevem você",
+     "g": "Escolher três palavras, como descontraído, ousado ou elegante, para guiar suas escolhas de estilo.",
+     "p": [
+      "Três palavras de estilo funcionam como uma pequena bússola ao comprar e se vestir.",
+      "Escolha palavras sobre como quer se sentir, não só como quer parecer.",
+      "Você pode mudar suas palavras quando quiser, conforme for evoluindo."
+     ],
+     "q": "Quais três palavras você gostaria que suas roupas dissessem sobre você?",
+     "c": "Escreva suas três palavras num papel e confira um look com elas."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The wardrobe audit",
+     "g": "Look at what you own, what you wear and what you never touch, without judgement.",
+     "p": [
+      "Sort clothes into three groups: love and wear, sometimes, never.",
+      "Ask why unworn items stay unworn: fit, comfort, colour or habit?",
+      "An audit is about learning, not about throwing things away."
+     ],
+     "q": "Which clothes in your wardrobe do you never wear, and what holds you back?",
+     "c": "Pull out five unworn pieces and note one reason for each, kindly and calmly."
+    },
+    "de": {
+     "t": "Die Kleiderschrank-Bestandsaufnahme",
+     "g": "Anschauen, was du besitzt, trägst und nie anfasst, ohne zu urteilen.",
+     "p": [
+      "Sortiere in drei Gruppen: liebe und trage ich, manchmal, nie.",
+      "Frag dich, warum ungetragene Teile ungetragen bleiben: Passform, Komfort, Farbe, Gewohnheit?",
+      "Eine Bestandsaufnahme dient dem Lernen, nicht dem Wegwerfen."
+     ],
+     "q": "Welche Kleidung trägst du nie, und was hält dich davon ab?",
+     "c": "Nimm fünf ungetragene Teile heraus und notiere freundlich je einen Grund."
+    },
+    "es": {
+     "t": "La auditoría del armario",
+     "g": "Mirar lo que tienes, lo que usas y lo que nunca tocas, sin juzgar.",
+     "p": [
+      "Clasifica la ropa en tres grupos: la amo y la uso, a veces, nunca.",
+      "Pregúntate por qué algo no se usa: ¿ajuste, comodidad, color o costumbre?",
+      "Una auditoría sirve para aprender, no para tirar cosas."
+     ],
+     "q": "¿Qué ropa de tu armario nunca usas y qué te frena?",
+     "c": "Saca cinco prendas sin uso y anota un motivo para cada una, con calma."
+    },
+    "fr": {
+     "t": "L'audit de ta garde-robe",
+     "g": "Regarder ce que tu possèdes, portes et ne touches jamais, sans jugement.",
+     "p": [
+      "Trie en trois groupes: j'adore et je porte, parfois, jamais.",
+      "Demande-toi pourquoi une pièce reste au placard: coupe, confort, couleur ou habitude ?",
+      "Un audit sert à apprendre, pas à jeter."
+     ],
+     "q": "Quels vêtements de ta garde-robe ne portes-tu jamais, et qu'est-ce qui te freine ?",
+     "c": "Sors cinq pièces jamais portées et note une raison pour chacune, avec bienveillance."
+    },
+    "it": {
+     "t": "L'audit del guardaroba",
+     "g": "Guardare cosa possiedi, cosa indossi e cosa non tocchi mai, senza giudicare.",
+     "p": [
+      "Dividi i vestiti in tre gruppi: amo e indosso, a volte, mai.",
+      "Chiediti perché un capo resta fermo: vestibilità, comfort, colore o abitudine?",
+      "Un audit serve a imparare, non a buttare via."
+     ],
+     "q": "Quali vestiti del tuo armadio non indossi mai e cosa ti frena?",
+     "c": "Tira fuori cinque capi mai indossati e annota un motivo per ciascuno, con calma."
+    },
+    "pt": {
+     "t": "A auditoria ao guarda-roupa",
+     "g": "Olhar para o que tens, o que usas e o que nunca tocas, sem julgamentos.",
+     "p": [
+      "Separa a roupa em três grupos: adoro e uso, às vezes, nunca.",
+      "Pergunta porque é que algo não é usado: corte, conforto, cor ou hábito?",
+      "Uma auditoria serve para aprender, não para deitar fora."
+     ],
+     "q": "Que roupa do teu guarda-roupa nunca usas e o que te trava?",
+     "c": "Tira cinco peças por usar e anota um motivo para cada, com calma."
+    },
+    "pt_BR": {
+     "t": "A auditoria do guarda-roupa",
+     "g": "Olhar para o que você tem, o que usa e o que nunca toca, sem julgamentos.",
+     "p": [
+      "Separe as roupas em três grupos: amo e uso, às vezes, nunca.",
+      "Pergunte por que algo fica parado: caimento, conforto, cor ou hábito?",
+      "Uma auditoria serve para aprender, não para descartar."
+     ],
+     "q": "Que roupas do seu guarda-roupa você nunca usa e o que impede?",
+     "c": "Separe cinco peças paradas e anote um motivo para cada uma, com calma."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wardrobe essentials explained",
+     "g": "Meet the idea of versatile basics that combine easily and form your wardrobe core.",
+     "p": [
+      "Basics are simple pieces that go with many other things.",
+      "Plain tops, comfortable trousers and a layer cover a lot of days.",
+      "Your essentials depend on your life, climate and taste."
+     ],
+     "q": "Which simple pieces in your wardrobe go with almost everything?",
+     "c": "Make two different outfits today using the same basic piece."
+    },
+    "de": {
+     "t": "Garderoben-Basics erklärt",
+     "g": "Die Idee vielseitiger Basics kennenlernen, die sich leicht kombinieren lassen und den Kern bilden.",
+     "p": [
+      "Basics sind schlichte Teile, die zu vielem passen.",
+      "Einfache Oberteile, bequeme Hosen und eine Jacke decken viele Tage ab.",
+      "Deine Basics hängen von Alltag, Klima und Geschmack ab."
+     ],
+     "q": "Welche schlichten Teile in deinem Schrank passen zu fast allem?",
+     "c": "Stelle heute mit demselben Basic-Teil zwei verschiedene Outfits zusammen."
+    },
+    "es": {
+     "t": "Los básicos del armario",
+     "g": "Conocer la idea de básicos versátiles que combinan fácil y forman el núcleo del armario.",
+     "p": [
+      "Los básicos son prendas simples que combinan con muchas otras.",
+      "Camisetas lisas, pantalones cómodos y una capa cubren muchos días.",
+      "Tus básicos dependen de tu vida, tu clima y tu gusto."
+     ],
+     "q": "¿Qué prendas sencillas de tu armario combinan con casi todo?",
+     "c": "Hoy crea dos conjuntos distintos con la misma prenda básica."
+    },
+    "fr": {
+     "t": "Les basiques de la garde-robe",
+     "g": "Découvrir l'idée de basiques polyvalents qui se combinent facilement et forment le socle.",
+     "p": [
+      "Les basiques sont des pièces simples qui vont avec beaucoup d'autres.",
+      "Des hauts unis, un pantalon confortable et une couche couvrent bien des jours.",
+      "Tes basiques dépendent de ta vie, de ton climat et de tes goûts."
+     ],
+     "q": "Quelles pièces simples de ta garde-robe vont avec presque tout ?",
+     "c": "Aujourd'hui, crée deux tenues différentes avec la même pièce basique."
+    },
+    "it": {
+     "t": "I capi base del guardaroba",
+     "g": "Scoprire l'idea di capi base versatili che si abbinano facilmente e formano il nucleo.",
+     "p": [
+      "I capi base sono pezzi semplici che stanno bene con molte altre cose.",
+      "Magliette semplici, pantaloni comodi e un capo da sopra coprono molti giorni.",
+      "I tuoi capi base dipendono da vita, clima e gusti."
+     ],
+     "q": "Quali capi semplici del tuo armadio stanno bene con quasi tutto?",
+     "c": "Oggi crea due outfit diversi con lo stesso capo base."
+    },
+    "pt": {
+     "t": "Os essenciais do guarda-roupa",
+     "g": "Conhecer a ideia de básicos versáteis que combinam facilmente e formam o núcleo.",
+     "p": [
+      "Os básicos são peças simples que combinam com muitas outras.",
+      "Tops lisos, calças confortáveis e uma camada cobrem muitos dias.",
+      "Os teus essenciais dependem da tua vida, clima e gosto."
+     ],
+     "q": "Que peças simples do teu guarda-roupa combinam com quase tudo?",
+     "c": "Hoje cria dois conjuntos diferentes com a mesma peça básica."
+    },
+    "pt_BR": {
+     "t": "Os essenciais do guarda-roupa",
+     "g": "Conhecer a ideia de básicos versáteis que combinam fácil e formam o núcleo.",
+     "p": [
+      "Básicos são peças simples que combinam com muitas outras.",
+      "Camisetas lisas, calças confortáveis e uma camada cobrem muitos dias.",
+      "Seus essenciais dependem da sua vida, clima e gosto."
+     ],
+     "q": "Quais peças simples do seu guarda-roupa combinam com quase tudo?",
+     "c": "Hoje monte dois looks diferentes com a mesma peça básica."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fit comes first",
+     "g": "Learn why good fit matters more than brand or price, and what well-fitting looks like.",
+     "p": [
+      "A garment that fits well looks good and feels easy to wear.",
+      "You should be able to move, sit and breathe comfortably.",
+      "Fit can often be improved with small adjustments."
+     ],
+     "q": "Do you own something that fits perfectly? What makes it feel so right?",
+     "c": "Try on one favourite and one rarely worn item and compare how each fits."
+    },
+    "de": {
+     "t": "Passform kommt zuerst",
+     "g": "Lernen, warum gute Passform wichtiger ist als Marke oder Preis, und woran man sie erkennt.",
+     "p": [
+      "Ein gut sitzendes Teil sieht gut aus und trägt sich mühelos.",
+      "Du solltest dich bequem bewegen, setzen und atmen können.",
+      "Die Passform lässt sich oft mit kleinen Änderungen verbessern."
+     ],
+     "q": "Besitzt du etwas, das perfekt sitzt? Was macht es so stimmig?",
+     "c": "Probiere ein Lieblingsteil und ein selten getragenes an und vergleiche den Sitz."
+    },
+    "es": {
+     "t": "El ajuste es lo primero",
+     "g": "Aprender por qué un buen ajuste importa más que la marca o el precio y cómo reconocerlo.",
+     "p": [
+      "Una prenda que te queda bien se ve bien y es fácil de llevar.",
+      "Debes poder moverte, sentarte y respirar con comodidad.",
+      "El ajuste suele mejorarse con pequeños arreglos."
+     ],
+     "q": "¿Tienes algo que te queda perfecto? ¿Qué lo hace sentirse tan bien?",
+     "c": "Pruébate una prenda favorita y otra poco usada y compara cómo te quedan."
+    },
+    "fr": {
+     "t": "La coupe avant tout",
+     "g": "Comprendre pourquoi une bonne coupe compte plus que la marque ou le prix, et comment la reconnaître.",
+     "p": [
+      "Un vêtement bien ajusté est beau et facile à porter.",
+      "Tu dois pouvoir bouger, t'asseoir et respirer confortablement.",
+      "La coupe peut souvent s'améliorer avec de petites retouches."
+     ],
+     "q": "As-tu une pièce qui te va parfaitement ? Qu'est-ce qui la rend si juste ?",
+     "c": "Essaie une pièce préférée et une peu portée, puis compare leur coupe."
+    },
+    "it": {
+     "t": "La vestibilità prima di tutto",
+     "g": "Capire perché una buona vestibilità conta più di marca o prezzo e come riconoscerla.",
+     "p": [
+      "Un capo che calza bene sta bene ed è facile da portare.",
+      "Dovresti poterti muovere, sederti e respirare comodamente.",
+      "La vestibilità si può spesso migliorare con piccoli ritocchi."
+     ],
+     "q": "Hai un capo che ti calza alla perfezione? Cosa lo rende così giusto?",
+     "c": "Prova un capo preferito e uno poco usato e confronta come calzano."
+    },
+    "pt": {
+     "t": "O corte vem primeiro",
+     "g": "Perceber porque é que um bom corte importa mais do que a marca ou o preço e como o reconhecer.",
+     "p": [
+      "Uma peça que serve bem fica bonita e é fácil de usar.",
+      "Deves poder mover-te, sentar-te e respirar à vontade.",
+      "O corte pode muitas vezes melhorar com pequenos ajustes."
+     ],
+     "q": "Tens algo que te serve na perfeição? O que o torna tão certo?",
+     "c": "Experimenta uma peça favorita e outra pouco usada e compara o corte."
+    },
+    "pt_BR": {
+     "t": "O caimento vem primeiro",
+     "g": "Entender por que um bom caimento importa mais que marca ou preço e como reconhecê-lo.",
+     "p": [
+      "Uma peça que veste bem fica bonita e é fácil de usar.",
+      "Você deve conseguir se mover, sentar e respirar à vontade.",
+      "O caimento muitas vezes melhora com pequenos ajustes."
+     ],
+     "q": "Você tem algo que veste perfeitamente? O que o deixa tão certo?",
+     "c": "Experimente uma peça favorita e outra pouco usada e compare o caimento."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Checking the fit of a top",
+     "g": "Use shoulder seams, sleeve length and ease of movement to judge a top.",
+     "p": [
+      "Shoulder seams should sit near the edge of your shoulders.",
+      "Sleeves should reach the wrist or the length the design intends.",
+      "Raise your arms: a good top lets you move without pulling."
+     ],
+     "q": "How does your favourite top fit at the shoulders and sleeves?",
+     "c": "Check the shoulders and sleeves of three tops and see which fit best."
+    },
+    "de": {
+     "t": "Die Passform eines Oberteils prüfen",
+     "g": "Mit Schulternähten, Ärmellänge und Bewegungsfreiheit ein Oberteil beurteilen.",
+     "p": [
+      "Die Schulternähte sollten nahe am Schulterrand sitzen.",
+      "Ärmel sollten bis zum Handgelenk oder zur vorgesehenen Länge reichen.",
+      "Heb die Arme: Ein gutes Oberteil lässt dich ohne Ziehen bewegen."
+     ],
+     "q": "Wie sitzt dein Lieblingsoberteil an Schultern und Ärmeln?",
+     "c": "Prüfe Schultern und Ärmel von drei Oberteilen und finde das beste."
+    },
+    "es": {
+     "t": "Comprobar el ajuste de una parte de arriba",
+     "g": "Usar las costuras del hombro, el largo de manga y la libertad de movimiento para juzgar.",
+     "p": [
+      "Las costuras del hombro deben quedar cerca del borde del hombro.",
+      "Las mangas deben llegar a la muñeca o al largo que pide el diseño.",
+      "Levanta los brazos: una buena prenda no tira al moverte."
+     ],
+     "q": "¿Cómo te queda tu camiseta favorita en hombros y mangas?",
+     "c": "Revisa hombros y mangas de tres prendas y mira cuál te queda mejor."
+    },
+    "fr": {
+     "t": "Vérifier la coupe d'un haut",
+     "g": "Utiliser les coutures d'épaule, la longueur des manches et l'aisance pour juger un haut.",
+     "p": [
+      "Les coutures d'épaule doivent se placer près du bord de l'épaule.",
+      "Les manches doivent atteindre le poignet ou la longueur prévue.",
+      "Lève les bras: un bon haut te laisse bouger sans tirer."
+     ],
+     "q": "Comment ton haut préféré te va-t-il aux épaules et aux manches ?",
+     "c": "Vérifie épaules et manches de trois hauts et vois lequel te va le mieux."
+    },
+    "it": {
+     "t": "Controllare la vestibilità di un top",
+     "g": "Usare cuciture della spalla, lunghezza delle maniche e libertà di movimento per giudicare.",
+     "p": [
+      "Le cuciture della spalla dovrebbero stare vicino al bordo della spalla.",
+      "Le maniche dovrebbero arrivare al polso o alla lunghezza prevista.",
+      "Alza le braccia: un buon capo non tira quando ti muovi."
+     ],
+     "q": "Come ti calza il tuo top preferito su spalle e maniche?",
+     "c": "Controlla spalle e maniche di tre top e vedi quale calza meglio."
+    },
+    "pt": {
+     "t": "Verificar o corte de uma parte de cima",
+     "g": "Usar as costuras do ombro, o comprimento da manga e a liberdade de movimento para avaliar.",
+     "p": [
+      "As costuras do ombro devem ficar perto da ponta do ombro.",
+      "As mangas devem chegar ao pulso ou ao comprimento previsto.",
+      "Levanta os braços: uma boa peça não repuxa quando te mexes."
+     ],
+     "q": "Como te serve a tua camisola favorita nos ombros e mangas?",
+     "c": "Verifica ombros e mangas de três peças e vê qual serve melhor."
+    },
+    "pt_BR": {
+     "t": "Checando o caimento de uma parte de cima",
+     "g": "Usar costuras do ombro, comprimento da manga e liberdade de movimento para avaliar.",
+     "p": [
+      "As costuras do ombro devem ficar perto da ponta do ombro.",
+      "As mangas devem chegar ao pulso ou ao comprimento previsto.",
+      "Levante os braços: uma boa peça não repuxa quando você se mexe."
+     ],
+     "q": "Como sua blusa favorita veste nos ombros e mangas?",
+     "c": "Confira ombros e mangas de três peças e veja qual veste melhor."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Checking the fit of trousers",
+     "g": "Learn what to check at the waist, rise, seat and length of trousers.",
+     "p": [
+      "The waist should be comfortable sitting or standing, without digging in.",
+      "Rise is the distance from crotch to waistband; choose what feels best.",
+      "Length should suit your shoes and your taste, and can be hemmed."
+     ],
+     "q": "Which part of trousers is hardest for you to get right: waist, length or seat?",
+     "c": "Try on two pairs and sit, bend and walk to test comfort before deciding."
+    },
+    "de": {
+     "t": "Die Passform einer Hose prüfen",
+     "g": "Lernen, worauf du bei Bund, Leibhöhe, Sitz und Länge einer Hose achten kannst.",
+     "p": [
+      "Der Bund sollte im Sitzen und Stehen bequem sein, ohne einzuschneiden.",
+      "Die Leibhöhe ist der Abstand vom Schritt zum Bund; wähle, was sich gut anfühlt.",
+      "Die Länge sollte zu Schuhen und Geschmack passen und lässt sich kürzen."
+     ],
+     "q": "Was ist bei Hosen für dich am schwierigsten: Bund, Länge oder Sitz?",
+     "c": "Probiere zwei Hosen an und setze dich, bücke dich und geh umher, bevor du entscheidest."
+    },
+    "es": {
+     "t": "Comprobar el ajuste de un pantalón",
+     "g": "Aprender qué revisar en cintura, tiro, cadera y largo de un pantalón.",
+     "p": [
+      "La cintura debe ser cómoda de pie y sentado, sin apretar.",
+      "El tiro es la distancia de la entrepierna a la cintura; elige lo más cómodo.",
+      "El largo debe ir con tus zapatos y tu gusto, y se puede arreglar."
+     ],
+     "q": "¿Qué te cuesta más acertar en un pantalón: cintura, largo o cadera?",
+     "c": "Pruébate dos pantalones y siéntate, agáchate y camina antes de decidir."
+    },
+    "fr": {
+     "t": "Vérifier la coupe d'un pantalon",
+     "g": "Apprendre quoi contrôler à la taille, à l'entrejambe, aux hanches et à la longueur.",
+     "p": [
+      "La taille doit être confortable assis ou debout, sans serrer.",
+      "La hauteur d'entrejambe va du bas du buste à la ceinture; choisis ce qui est confortable.",
+      "La longueur doit aller avec tes chaussures et tes goûts, et peut être ourlée."
+     ],
+     "q": "Qu'est-ce qui est le plus difficile pour toi : taille, longueur ou hanches ?",
+     "c": "Essaie deux pantalons, assieds-toi, penche-toi et marche avant de décider."
+    },
+    "it": {
+     "t": "Controllare la vestibilità dei pantaloni",
+     "g": "Imparare cosa controllare su vita, cavallo, fianchi e lunghezza dei pantaloni.",
+     "p": [
+      "La vita deve essere comoda in piedi e seduti, senza stringere.",
+      "L'altezza del cavallo va dall'inforcatura alla cintura; scegli ciò che è comodo.",
+      "La lunghezza deve andare con scarpe e gusti e si può accorciare."
+     ],
+     "q": "Cosa è più difficile per te nei pantaloni: vita, lunghezza o fianchi?",
+     "c": "Prova due paia e siediti, piegati e cammina prima di decidere."
+    },
+    "pt": {
+     "t": "Verificar o corte das calças",
+     "g": "Aprender o que verificar na cintura, cavalo, anca e comprimento das calças.",
+     "p": [
+      "A cintura deve ser confortável de pé e sentado, sem apertar.",
+      "A altura do cavalo é a distância da entreperna à cintura; escolhe o mais confortável.",
+      "O comprimento deve combinar com os sapatos e o gosto, e pode ser feito a bainha."
+     ],
+     "q": "O que é mais difícil acertar nas calças: cintura, comprimento ou anca?",
+     "c": "Experimenta duas calças e senta-te, baixa-te e anda antes de decidir."
+    },
+    "pt_BR": {
+     "t": "Checando o caimento da calça",
+     "g": "Aprender o que conferir na cintura, gancho, quadril e comprimento da calça.",
+     "p": [
+      "A cintura deve ser confortável em pé e sentado, sem apertar.",
+      "O gancho é a distância da virilha à cintura; escolha o mais confortável.",
+      "O comprimento deve combinar com os sapatos e o gosto, e pode ser ajustado."
+     ],
+     "q": "O que é mais difícil acertar na calça: cintura, comprimento ou quadril?",
+     "c": "Experimente duas calças e sente, abaixe e ande antes de decidir."
+    }
+   }
+  }
+ ]
+}

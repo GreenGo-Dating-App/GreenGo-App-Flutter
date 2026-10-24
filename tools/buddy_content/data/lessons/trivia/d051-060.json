@@ -1,0 +1,835 @@
+{
+ "topic": "trivia",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Language trivia",
+     "g": "Learn surprising facts about the world's languages.",
+     "p": [
+      "Mandarin Chinese has the most native speakers, while English is the most studied language.",
+      "There are thousands of languages in the world, and many have only a small number of speakers.",
+      "Many languages share roots: Spanish, Italian and French all grew from Latin."
+     ],
+     "q": "Which languages do you speak or want to learn, and why?",
+     "c": "Learn to say hello in one new language today and use it once."
+    },
+    "de": {
+     "t": "Sprach-Quiz",
+     "g": "Lerne überraschende Fakten über die Sprachen der Welt.",
+     "p": [
+      "Mandarin hat die meisten Muttersprachler, während Englisch die meistgelernte Sprache ist.",
+      "Es gibt auf der Welt Tausende Sprachen, und viele haben nur wenige Sprecher.",
+      "Viele Sprachen haben gemeinsame Wurzeln: Spanisch, Italienisch und Französisch entstanden aus Latein."
+     ],
+     "q": "Welche Sprachen sprichst du oder möchtest du lernen, und warum?",
+     "c": "Lerne heute, in einer neuen Sprache Hallo zu sagen, und nutze es einmal."
+    },
+    "es": {
+     "t": "Trivia de idiomas",
+     "g": "Aprende datos sorprendentes sobre los idiomas del mundo.",
+     "p": [
+      "El chino mandarín tiene más hablantes nativos, mientras que el inglés es el idioma más estudiado.",
+      "Hay miles de idiomas en el mundo y muchos tienen pocos hablantes.",
+      "Muchos idiomas comparten raíces: español, italiano y francés surgieron del latín."
+     ],
+     "q": "¿Qué idiomas hablas o quieres aprender y por qué?",
+     "c": "Aprende a decir hola en un idioma nuevo hoy y úsalo una vez."
+    },
+    "fr": {
+     "t": "Quiz sur les langues",
+     "g": "Apprends des faits surprenants sur les langues du monde.",
+     "p": [
+      "Le mandarin a le plus de locuteurs natifs, tandis que l'anglais est la langue la plus étudiée.",
+      "Il existe des milliers de langues dans le monde, et beaucoup n'ont que peu de locuteurs.",
+      "Beaucoup de langues partagent des racines : espagnol, italien et français viennent du latin."
+     ],
+     "q": "Quelles langues parles-tu ou veux-tu apprendre, et pourquoi ?",
+     "c": "Apprends à dire bonjour dans une nouvelle langue aujourd'hui et utilise-le une fois."
+    },
+    "it": {
+     "t": "Curiosità sulle lingue",
+     "g": "Impara fatti sorprendenti sulle lingue del mondo.",
+     "p": [
+      "Il cinese mandarino ha il maggior numero di madrelingua, mentre l'inglese è la lingua più studiata.",
+      "Nel mondo ci sono migliaia di lingue e molte hanno pochi parlanti.",
+      "Molte lingue hanno radici comuni: spagnolo, italiano e francese derivano dal latino."
+     ],
+     "q": "Quali lingue parli o vuoi imparare e perché?",
+     "c": "Impara a dire ciao in una nuova lingua oggi e usalo una volta."
+    },
+    "pt": {
+     "t": "Curiosidades sobre línguas",
+     "g": "Aprende factos surpreendentes sobre as línguas do mundo.",
+     "p": [
+      "O mandarim tem mais falantes nativos, enquanto o inglês é a língua mais estudada.",
+      "Há milhares de línguas no mundo e muitas têm poucos falantes.",
+      "Muitas línguas partilham raízes: espanhol, italiano e francês nasceram do latim."
+     ],
+     "q": "Que línguas falas ou queres aprender e porquê?",
+     "c": "Aprende a dizer olá numa língua nova hoje e usa-o uma vez."
+    },
+    "pt_BR": {
+     "t": "Curiosidades sobre idiomas",
+     "g": "Aprenda fatos surpreendentes sobre os idiomas do mundo.",
+     "p": [
+      "O mandarim tem mais falantes nativos, enquanto o inglês é o idioma mais estudado.",
+      "Há milhares de idiomas no mundo e muitos têm poucos falantes.",
+      "Muitos idiomas compartilham raízes: espanhol, italiano e francês nasceram do latim."
+     ],
+     "q": "Quais idiomas você fala ou quer aprender e por quê?",
+     "c": "Aprenda a dizer oi em um idioma novo hoje e use uma vez."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Alphabets and scripts",
+     "g": "Discover the main writing systems and where each is used.",
+     "p": [
+      "The Latin alphabet is used for English, Spanish, German and many more languages.",
+      "Cyrillic is used for Russian and Bulgarian, and the Arabic script is written from right to left.",
+      "Devanagari is used for Hindi, and Chinese characters stand for words or ideas rather than single sounds."
+     ],
+     "q": "Which writing system would you most like to learn to read?",
+     "c": "Look at a sign or text in a different script and try to spot a repeated symbol."
+    },
+    "de": {
+     "t": "Alphabete und Schriften",
+     "g": "Entdecke die wichtigsten Schriftsysteme und wo sie genutzt werden.",
+     "p": [
+      "Das lateinische Alphabet wird für Deutsch, Englisch, Spanisch und viele weitere Sprachen genutzt.",
+      "Kyrillisch dient für Russisch und Bulgarisch, und die arabische Schrift wird von rechts nach links geschrieben.",
+      "Devanagari wird für Hindi genutzt, und chinesische Schriftzeichen stehen für Wörter oder Ideen statt einzelner Laute."
+     ],
+     "q": "Welches Schriftsystem würdest du am liebsten lesen lernen?",
+     "c": "Betrachte ein Schild oder einen Text in einer anderen Schrift und finde ein wiederkehrendes Zeichen."
+    },
+    "es": {
+     "t": "Alfabetos y escrituras",
+     "g": "Descubre los principales sistemas de escritura y dónde se usan.",
+     "p": [
+      "El alfabeto latino se usa para español, inglés, alemán y muchos idiomas más.",
+      "El cirílico se usa para ruso y búlgaro, y la escritura árabe se escribe de derecha a izquierda.",
+      "El devanagari se usa para el hindi y los caracteres chinos representan palabras o ideas, no sonidos sueltos."
+     ],
+     "q": "¿Qué sistema de escritura te gustaría más aprender a leer?",
+     "c": "Mira un cartel o texto en otra escritura e intenta encontrar un símbolo repetido."
+    },
+    "fr": {
+     "t": "Alphabets et écritures",
+     "g": "Découvre les principaux systèmes d'écriture et où ils sont utilisés.",
+     "p": [
+      "L'alphabet latin sert pour le français, l'anglais, l'espagnol et bien d'autres langues.",
+      "Le cyrillique sert pour le russe et le bulgare, et l'écriture arabe se lit de droite à gauche.",
+      "Le devanagari sert pour l'hindi, et les caractères chinois représentent des mots ou des idées plutôt que des sons isolés."
+     ],
+     "q": "Quel système d'écriture aimerais-tu apprendre à lire ?",
+     "c": "Regarde un panneau ou un texte dans une autre écriture et repère un symbole qui revient."
+    },
+    "it": {
+     "t": "Alfabeti e scritture",
+     "g": "Scopri i principali sistemi di scrittura e dove si usano.",
+     "p": [
+      "L'alfabeto latino si usa per italiano, inglese, spagnolo e molte altre lingue.",
+      "Il cirillico si usa per russo e bulgaro e la scrittura araba si scrive da destra a sinistra.",
+      "Il devanagari si usa per l'hindi e i caratteri cinesi rappresentano parole o idee, non suoni singoli."
+     ],
+     "q": "Quale sistema di scrittura ti piacerebbe imparare a leggere?",
+     "c": "Guarda un cartello o un testo in un'altra scrittura e prova a individuare un simbolo ripetuto."
+    },
+    "pt": {
+     "t": "Alfabetos e escritas",
+     "g": "Descobre os principais sistemas de escrita e onde são usados.",
+     "p": [
+      "O alfabeto latino é usado para português, inglês, espanhol e muitas outras línguas.",
+      "O cirílico usa-se para russo e búlgaro, e a escrita árabe escreve-se da direita para a esquerda.",
+      "O devanágari usa-se para o hindi e os caracteres chineses representam palavras ou ideias, não sons isolados."
+     ],
+     "q": "Que sistema de escrita gostarias mais de aprender a ler?",
+     "c": "Olha para um cartaz ou texto noutra escrita e tenta encontrar um símbolo repetido."
+    },
+    "pt_BR": {
+     "t": "Alfabetos e escritas",
+     "g": "Descubra os principais sistemas de escrita e onde são usados.",
+     "p": [
+      "O alfabeto latino é usado para português, inglês, espanhol e muitos outros idiomas.",
+      "O cirílico é usado para russo e búlgaro, e a escrita árabe é escrita da direita para a esquerda.",
+      "O devanágari é usado para o hindi e os caracteres chineses representam palavras ou ideias, não sons isolados."
+     ],
+     "q": "Qual sistema de escrita você mais gostaria de aprender a ler?",
+     "c": "Olhe para uma placa ou texto em outra escrita e tente encontrar um símbolo repetido."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Greetings around the world",
+     "g": "Learn how people say hello, in words and in gestures.",
+     "p": [
+      "Hello is Hola in Spanish, Bonjour in French, Ciao in Italian, Namaste in Hindi and Konnichiwa in Japanese.",
+      "In Japan people often bow, in India many press palms together, and in France cheek kisses are common.",
+      "A warm smile is understood almost everywhere."
+     ],
+     "q": "How do you greet a friend, and how do you greet someone you have just met?",
+     "c": "Greet three people today in three different ways: a word, a smile and a wave."
+    },
+    "de": {
+     "t": "Begrüßungen weltweit",
+     "g": "Lerne, wie Menschen Hallo sagen, in Worten und Gesten.",
+     "p": [
+      "Hallo heißt Hola auf Spanisch, Bonjour auf Französisch, Ciao auf Italienisch, Namaste auf Hindi und Konnichiwa auf Japanisch.",
+      "In Japan verbeugt man sich oft, in Indien legen viele die Handflächen zusammen, in Frankreich sind Wangenküsse üblich.",
+      "Ein warmes Lächeln wird fast überall verstanden."
+     ],
+     "q": "Wie begrüßt du eine Freundin, und wie begrüßt du jemanden, den du gerade triffst?",
+     "c": "Begrüße heute drei Menschen auf drei Arten: mit Wort, Lächeln und Winken."
+    },
+    "es": {
+     "t": "Saludos del mundo",
+     "g": "Aprende cómo la gente dice hola, con palabras y con gestos.",
+     "p": [
+      "Hola es Hello en inglés, Bonjour en francés, Ciao en italiano, Namaste en hindi y Konnichiwa en japonés.",
+      "En Japón se suele hacer una reverencia, en India muchos juntan las palmas y en Francia son comunes los besos en la mejilla.",
+      "Una sonrisa cálida se entiende casi en todas partes."
+     ],
+     "q": "¿Cómo saludas a un amigo y cómo saludas a alguien que acabas de conocer?",
+     "c": "Saluda hoy a tres personas de tres formas: una palabra, una sonrisa y un gesto con la mano."
+    },
+    "fr": {
+     "t": "Salutations dans le monde",
+     "g": "Apprends comment on dit bonjour, en mots et en gestes.",
+     "p": [
+      "Bonjour se dit Hello en anglais, Hola en espagnol, Ciao en italien, Namaste en hindi et Konnichiwa en japonais.",
+      "Au Japon on s'incline souvent, en Inde beaucoup joignent les paumes, et en France la bise est courante.",
+      "Un sourire chaleureux se comprend presque partout."
+     ],
+     "q": "Comment salues-tu un ami, et comment salues-tu quelqu'un que tu viens de rencontrer ?",
+     "c": "Salue aujourd'hui trois personnes de trois façons : un mot, un sourire et un signe de la main."
+    },
+    "it": {
+     "t": "Saluti dal mondo",
+     "g": "Impara come si dice ciao, a parole e a gesti.",
+     "p": [
+      "Ciao si dice Hello in inglese, Hola in spagnolo, Bonjour in francese, Namaste in hindi e Konnichiwa in giapponese.",
+      "In Giappone ci si inchina spesso, in India molti uniscono i palmi e in Francia i baci sulla guancia sono comuni.",
+      "Un sorriso caloroso si capisce quasi ovunque."
+     ],
+     "q": "Come saluti un amico e come saluti qualcuno appena conosciuto?",
+     "c": "Saluta oggi tre persone in tre modi: una parola, un sorriso e un cenno della mano."
+    },
+    "pt": {
+     "t": "Cumprimentos pelo mundo",
+     "g": "Aprende como se diz olá, em palavras e em gestos.",
+     "p": [
+      "Olá diz-se Hello em inglês, Hola em espanhol, Bonjour em francês, Namaste em hindi e Konnichiwa em japonês.",
+      "No Japão faz-se muitas vezes uma vénia, na Índia muitos juntam as palmas e em França são comuns os beijos na face.",
+      "Um sorriso caloroso entende-se quase em toda a parte."
+     ],
+     "q": "Como cumprimentas um amigo e como cumprimentas alguém que acabaste de conhecer?",
+     "c": "Cumprimenta hoje três pessoas de três formas: uma palavra, um sorriso e um aceno."
+    },
+    "pt_BR": {
+     "t": "Cumprimentos pelo mundo",
+     "g": "Aprenda como se diz oi, em palavras e em gestos.",
+     "p": [
+      "Oi se diz Hello em inglês, Hola em espanhol, Bonjour em francês, Namaste em hindi e Konnichiwa em japonês.",
+      "No Japão muitas vezes se faz uma reverência, na Índia muitos juntam as palmas e na França são comuns os beijos no rosto.",
+      "Um sorriso caloroso é entendido quase em toda parte."
+     ],
+     "q": "Como você cumprimenta um amigo e como cumprimenta alguém que acabou de conhecer?",
+     "c": "Cumprimente hoje três pessoas de três formas: uma palavra, um sorriso e um aceno."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Currencies of the world",
+     "g": "Match common currencies with the countries that use them.",
+     "p": [
+      "Japan uses the yen, India the rupee, Brazil the real and Mexico the peso.",
+      "The euro is shared by many European countries, while the pound is used in the United Kingdom.",
+      "Every currency has a short code, such as USD, EUR or JPY."
+     ],
+     "q": "Have you ever handled foreign money, and what did you notice about it?",
+     "c": "Look at a coin or banknote and find the country, a number and a symbol on it."
+    },
+    "de": {
+     "t": "Währungen der Welt",
+     "g": "Ordne gängige Währungen den Ländern zu, die sie nutzen.",
+     "p": [
+      "Japan nutzt den Yen, Indien die Rupie, Brasilien den Real und Mexiko den Peso.",
+      "Den Euro teilen viele europäische Länder, das Pfund wird im Vereinigten Königreich genutzt.",
+      "Jede Währung hat ein Kürzel, etwa USD, EUR oder JPY."
+     ],
+     "q": "Hast du schon einmal fremdes Geld in der Hand gehabt, und was fiel dir daran auf?",
+     "c": "Betrachte eine Münze oder einen Schein und finde Land, Zahl und Symbol darauf."
+    },
+    "es": {
+     "t": "Monedas del mundo",
+     "g": "Une monedas comunes con los países que las usan.",
+     "p": [
+      "Japón usa el yen, India la rupia, Brasil el real y México el peso.",
+      "El euro lo comparten muchos países europeos, mientras que la libra se usa en el Reino Unido.",
+      "Cada moneda tiene un código corto, como USD, EUR o JPY."
+     ],
+     "q": "¿Has tenido alguna vez dinero extranjero en la mano y qué notaste?",
+     "c": "Mira una moneda o billete y busca el país, un número y un símbolo."
+    },
+    "fr": {
+     "t": "Monnaies du monde",
+     "g": "Associe des monnaies courantes aux pays qui les utilisent.",
+     "p": [
+      "Le Japon utilise le yen, l'Inde la roupie, le Brésil le réal et le Mexique le peso.",
+      "L'euro est partagé par de nombreux pays européens, tandis que la livre sterling sert au Royaume-Uni.",
+      "Chaque monnaie a un code court, comme USD, EUR ou JPY."
+     ],
+     "q": "As-tu déjà tenu de l'argent étranger, et qu'as-tu remarqué ?",
+     "c": "Regarde une pièce ou un billet et trouve le pays, un nombre et un symbole."
+    },
+    "it": {
+     "t": "Valute del mondo",
+     "g": "Abbina valute comuni ai paesi che le usano.",
+     "p": [
+      "Il Giappone usa lo yen, l'India la rupia, il Brasile il real e il Messico il peso.",
+      "L'euro è condiviso da molti paesi europei, mentre la sterlina si usa nel Regno Unito.",
+      "Ogni valuta ha un codice breve, come USD, EUR o JPY."
+     ],
+     "q": "Hai mai avuto in mano denaro straniero e cosa hai notato?",
+     "c": "Guarda una moneta o banconota e trova il paese, un numero e un simbolo."
+    },
+    "pt": {
+     "t": "Moedas do mundo",
+     "g": "Associa moedas comuns aos países que as usam.",
+     "p": [
+      "O Japão usa o iene, a Índia a rupia, o Brasil o real e o México o peso.",
+      "O euro é partilhado por muitos países europeus, enquanto a libra se usa no Reino Unido.",
+      "Cada moeda tem um código curto, como USD, EUR ou JPY."
+     ],
+     "q": "Já tiveste dinheiro estrangeiro na mão e o que reparaste?",
+     "c": "Olha para uma moeda ou nota e encontra o país, um número e um símbolo."
+    },
+    "pt_BR": {
+     "t": "Moedas do mundo",
+     "g": "Associe moedas comuns aos países que as usam.",
+     "p": [
+      "O Japão usa o iene, a Índia a rupia, o Brasil o real e o México o peso.",
+      "O euro é compartilhado por muitos países europeus, enquanto a libra é usada no Reino Unido.",
+      "Cada moeda tem um código curto, como USD, EUR ou JPY."
+     ],
+     "q": "Você já teve dinheiro estrangeiro na mão e o que percebeu?",
+     "c": "Olhe para uma moeda ou nota e encontre o país, um número e um símbolo."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Time zones",
+     "g": "Understand why the world is divided into time zones.",
+     "p": [
+      "Earth turns once a day, so when it is noon in one place, it is night elsewhere.",
+      "The world has about twenty-four main time zones, each roughly one hour apart.",
+      "China spans a huge area but uses one official time, while Russia uses many time zones."
+     ],
+     "q": "If you could call someone on the other side of the world, what time would it be there?",
+     "c": "Pick a faraway city and work out what time it is there right now."
+    },
+    "de": {
+     "t": "Zeitzonen",
+     "g": "Verstehe, warum die Welt in Zeitzonen geteilt ist.",
+     "p": [
+      "Die Erde dreht sich einmal am Tag, also ist es woanders Nacht, wenn bei dir Mittag ist.",
+      "Die Welt hat etwa vierundzwanzig Hauptzeitzonen, jeweils etwa eine Stunde auseinander.",
+      "China ist riesig, nutzt aber eine offizielle Zeit, Russland dagegen viele Zeitzonen."
+     ],
+     "q": "Wenn du jemanden am anderen Ende der Welt anrufen könntest, wie spät wäre es dort?",
+     "c": "Such dir eine ferne Stadt und rechne aus, wie spät es dort gerade ist."
+    },
+    "es": {
+     "t": "Husos horarios",
+     "g": "Comprende por qué el mundo se divide en husos horarios.",
+     "p": [
+      "La Tierra gira una vez al día, así que cuando es mediodía en un lugar, es de noche en otro.",
+      "El mundo tiene unos veinticuatro husos principales, separados más o menos una hora.",
+      "China abarca un área enorme pero usa una sola hora oficial, mientras que Rusia usa muchos husos."
+     ],
+     "q": "Si pudieras llamar a alguien al otro lado del mundo, ¿qué hora sería allí?",
+     "c": "Elige una ciudad lejana y calcula qué hora es allí ahora mismo."
+    },
+    "fr": {
+     "t": "Fuseaux horaires",
+     "g": "Comprends pourquoi le monde est divisé en fuseaux horaires.",
+     "p": [
+      "La Terre tourne une fois par jour, donc quand il est midi ici, il fait nuit ailleurs.",
+      "Le monde compte environ vingt-quatre fuseaux principaux, espacés d'environ une heure.",
+      "La Chine couvre un territoire immense mais utilise une seule heure officielle, tandis que la Russie utilise de nombreux fuseaux."
+     ],
+     "q": "Si tu pouvais appeler quelqu'un à l'autre bout du monde, quelle heure serait-il là-bas ?",
+     "c": "Choisis une ville lointaine et calcule l'heure qu'il y est maintenant."
+    },
+    "it": {
+     "t": "Fusi orari",
+     "g": "Capisci perché il mondo è diviso in fusi orari.",
+     "p": [
+      "La Terra ruota una volta al giorno, quindi quando è mezzogiorno in un posto, altrove è notte.",
+      "Il mondo ha circa ventiquattro fusi principali, distanti più o meno un'ora.",
+      "La Cina copre un'area enorme ma usa un solo orario ufficiale, mentre la Russia usa molti fusi."
+     ],
+     "q": "Se potessi chiamare qualcuno dall'altra parte del mondo, che ora sarebbe lì?",
+     "c": "Scegli una città lontana e calcola che ora è lì adesso."
+    },
+    "pt": {
+     "t": "Fusos horários",
+     "g": "Compreende porque o mundo está dividido em fusos horários.",
+     "p": [
+      "A Terra roda uma vez por dia, por isso quando é meio-dia num sítio, é noite noutro.",
+      "O mundo tem cerca de vinte e quatro fusos principais, separados por cerca de uma hora.",
+      "A China abrange uma área enorme mas usa uma só hora oficial, enquanto a Rússia usa muitos fusos."
+     ],
+     "q": "Se pudesses ligar a alguém do outro lado do mundo, que horas seriam lá?",
+     "c": "Escolhe uma cidade distante e calcula que horas são lá agora."
+    },
+    "pt_BR": {
+     "t": "Fusos horários",
+     "g": "Entenda por que o mundo é dividido em fusos horários.",
+     "p": [
+      "A Terra gira uma vez por dia, por isso quando é meio-dia num lugar, é noite em outro.",
+      "O mundo tem cerca de vinte e quatro fusos principais, separados por cerca de uma hora.",
+      "A China abrange uma área enorme mas usa um só horário oficial, enquanto a Rússia usa muitos fusos."
+     ],
+     "q": "Se você pudesse ligar para alguém do outro lado do mundo, que horas seriam lá?",
+     "c": "Escolha uma cidade distante e calcule que horas são lá agora."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Calendar curiosities",
+     "g": "Explore leap years, short Februaries and different new years.",
+     "p": [
+      "A leap year adds one extra day, February 29, because Earth takes a little over 365 days to orbit the Sun.",
+      "February is short because of old Roman calendar rules, and it gets the extra day in leap years.",
+      "Not everyone celebrates the new year on January 1: Lunar New Year and Nowruz fall on other dates."
+     ],
+     "q": "Which new year or seasonal celebration do you enjoy most, and how do you mark it?",
+     "c": "Look up the date of one new year celebrated by another culture and share it."
+    },
+    "de": {
+     "t": "Kalenderkuriositäten",
+     "g": "Erkunde Schaltjahre, den kurzen Februar und verschiedene Neujahrstage.",
+     "p": [
+      "Ein Schaltjahr fügt einen Tag hinzu, den 29. Februar, weil die Erde etwas mehr als 365 Tage für die Sonnenumrundung braucht.",
+      "Der Februar ist kurz wegen alter römischer Kalenderregeln und bekommt im Schaltjahr den Zusatztag.",
+      "Nicht alle feiern Neujahr am 1. Januar: Das Mondneujahr und Nowruz fallen auf andere Daten."
+     ],
+     "q": "Welchen Jahresbeginn oder welches Jahreszeitenfest magst du am liebsten, und wie feierst du es?",
+     "c": "Such das Datum eines Neujahrsfests einer anderen Kultur und teile es mit jemandem."
+    },
+    "es": {
+     "t": "Curiosidades del calendario",
+     "g": "Explora los años bisiestos, el febrero corto y distintos años nuevos.",
+     "p": [
+      "Un año bisiesto añade un día, el 29 de febrero, porque la Tierra tarda algo más de 365 días en orbitar el Sol.",
+      "Febrero es corto por antiguas reglas del calendario romano y recibe el día extra en años bisiestos.",
+      "No todos celebran el año nuevo el 1 de enero: el Año Nuevo Lunar y el Nowruz caen en otras fechas."
+     ],
+     "q": "¿Qué año nuevo o fiesta de estación disfrutas más y cómo la celebras?",
+     "c": "Busca la fecha de un año nuevo de otra cultura y compártela."
+    },
+    "fr": {
+     "t": "Curiosités du calendrier",
+     "g": "Explore les années bissextiles, le court mois de février et les différents nouvel an.",
+     "p": [
+      "Une année bissextile ajoute un jour, le 29 février, car la Terre met un peu plus de 365 jours à tourner autour du Soleil.",
+      "Février est court à cause d'anciennes règles du calendrier romain, et il gagne un jour les années bissextiles.",
+      "Tout le monde ne fête pas le nouvel an le 1er janvier : le Nouvel An lunaire et Norouz tombent à d'autres dates."
+     ],
+     "q": "Quel nouvel an ou quelle fête de saison préfères-tu, et comment la célèbres-tu ?",
+     "c": "Cherche la date d'un nouvel an d'une autre culture et partage-la."
+    },
+    "it": {
+     "t": "Curiosità del calendario",
+     "g": "Esplora anni bisestili, il febbraio corto e diversi capodanni.",
+     "p": [
+      "Un anno bisestile aggiunge un giorno, il 29 febbraio, perché la Terra impiega poco più di 365 giorni a orbitare intorno al Sole.",
+      "Febbraio è corto per antiche regole del calendario romano e negli anni bisestili riceve il giorno extra.",
+      "Non tutti festeggiano il capodanno il primo gennaio: il Capodanno lunare e il Nowruz cadono in altre date."
+     ],
+     "q": "Quale capodanno o festa stagionale ti piace di più e come la celebri?",
+     "c": "Cerca la data di un capodanno di un'altra cultura e condividila."
+    },
+    "pt": {
+     "t": "Curiosidades do calendário",
+     "g": "Explora os anos bissextos, o fevereiro curto e diferentes anos novos.",
+     "p": [
+      "Um ano bissexto acrescenta um dia, 29 de fevereiro, porque a Terra demora um pouco mais de 365 dias a orbitar o Sol.",
+      "Fevereiro é curto por antigas regras do calendário romano e ganha o dia extra nos anos bissextos.",
+      "Nem todos celebram o ano novo a 1 de janeiro: o Ano Novo Lunar e o Nowruz caem noutras datas."
+     ],
+     "q": "Que ano novo ou festa sazonal gostas mais e como a celebras?",
+     "c": "Procura a data de um ano novo de outra cultura e partilha-a."
+    },
+    "pt_BR": {
+     "t": "Curiosidades do calendário",
+     "g": "Explore os anos bissextos, o fevereiro curto e diferentes anos novos.",
+     "p": [
+      "Um ano bissexto acrescenta um dia, 29 de fevereiro, porque a Terra leva um pouco mais de 365 dias para orbitar o Sol.",
+      "Fevereiro é curto por antigas regras do calendário romano e ganha o dia extra nos anos bissextos.",
+      "Nem todos celebram o ano novo em 1º de janeiro: o Ano Novo Lunar e o Nowruz caem em outras datas."
+     ],
+     "q": "Qual ano novo ou festa sazonal você mais gosta e como a celebra?",
+     "c": "Procure a data de um ano novo de outra cultura e compartilhe."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Weather wonders",
+     "g": "Learn why rainbows, thunder and hurricanes happen.",
+     "p": [
+      "A rainbow forms when sunlight bends and reflects inside raindrops and spreads into colours.",
+      "Thunder follows lightning because light travels much faster than sound, so you see the flash first.",
+      "A hurricane spins because of Earth's rotation and grows over warm ocean water."
+     ],
+     "q": "What kind of weather do you enjoy most, and what do you like to do in it?",
+     "c": "Next storm or rain, count the seconds between flash and thunder to feel the distance."
+    },
+    "de": {
+     "t": "Wetterwunder",
+     "g": "Erfahre, warum Regenbögen, Donner und Hurrikane entstehen.",
+     "p": [
+      "Ein Regenbogen entsteht, wenn Sonnenlicht in Regentropfen gebrochen und gespiegelt wird und sich in Farben auffächert.",
+      "Der Donner folgt dem Blitz, weil Licht viel schneller reist als Schall, du siehst also zuerst den Blitz.",
+      "Ein Hurrikan dreht sich wegen der Erdrotation und wächst über warmem Meerwasser."
+     ],
+     "q": "Welches Wetter magst du am liebsten, und was machst du dann gern?",
+     "c": "Zähle beim nächsten Gewitter die Sekunden zwischen Blitz und Donner, um die Entfernung zu spüren."
+    },
+    "es": {
+     "t": "Maravillas del clima",
+     "g": "Aprende por qué ocurren los arcoíris, los truenos y los huracanes.",
+     "p": [
+      "Un arcoíris se forma cuando la luz del sol se desvía y refleja dentro de las gotas de lluvia y se separa en colores.",
+      "El trueno sigue al relámpago porque la luz viaja mucho más rápido que el sonido, y ves primero el destello.",
+      "Un huracán gira por la rotación de la Tierra y crece sobre aguas oceánicas cálidas."
+     ],
+     "q": "¿Qué tipo de clima disfrutas más y qué te gusta hacer con él?",
+     "c": "En la próxima tormenta, cuenta los segundos entre relámpago y trueno para sentir la distancia."
+    },
+    "fr": {
+     "t": "Merveilles de la météo",
+     "g": "Apprends pourquoi apparaissent les arcs-en-ciel, le tonnerre et les ouragans.",
+     "p": [
+      "Un arc-en-ciel se forme quand la lumière du soleil se courbe et se reflète dans les gouttes de pluie et se sépare en couleurs.",
+      "Le tonnerre suit l'éclair car la lumière va bien plus vite que le son : on voit d'abord l'éclat.",
+      "Un ouragan tourne à cause de la rotation de la Terre et grandit sur une mer chaude."
+     ],
+     "q": "Quel temps préfères-tu, et qu'aimes-tu faire par ce temps ?",
+     "c": "Au prochain orage, compte les secondes entre l'éclair et le tonnerre pour sentir la distance."
+    },
+    "it": {
+     "t": "Meraviglie del meteo",
+     "g": "Scopri perché si formano arcobaleni, tuoni e uragani.",
+     "p": [
+      "Un arcobaleno si forma quando la luce del sole si piega e si riflette nelle gocce di pioggia e si separa in colori.",
+      "Il tuono segue il lampo perché la luce viaggia molto più veloce del suono, quindi vedi prima il bagliore.",
+      "Un uragano ruota per la rotazione terrestre e cresce sul mare caldo."
+     ],
+     "q": "Quale tempo preferisci e cosa ti piace fare con quel tempo?",
+     "c": "Al prossimo temporale conta i secondi tra lampo e tuono per sentire la distanza."
+    },
+    "pt": {
+     "t": "Maravilhas do tempo",
+     "g": "Aprende porque surgem os arco-íris, os trovões e os furacões.",
+     "p": [
+      "Um arco-íris forma-se quando a luz do sol se desvia e reflete dentro das gotas de chuva e se separa em cores.",
+      "O trovão segue o relâmpago porque a luz viaja muito mais depressa do que o som, e vês primeiro o clarão.",
+      "Um furacão gira por causa da rotação da Terra e cresce sobre águas oceânicas quentes."
+     ],
+     "q": "Que tipo de tempo gostas mais e o que gostas de fazer com ele?",
+     "c": "Na próxima tempestade, conta os segundos entre relâmpago e trovão para sentir a distância."
+    },
+    "pt_BR": {
+     "t": "Maravilhas do clima",
+     "g": "Aprenda por que surgem os arco-íris, os trovões e os furacões.",
+     "p": [
+      "Um arco-íris se forma quando a luz do sol se desvia e reflete dentro das gotas de chuva e se separa em cores.",
+      "O trovão segue o relâmpago porque a luz viaja muito mais rápido que o som, e você vê primeiro o clarão.",
+      "Um furacão gira por causa da rotação da Terra e cresce sobre águas oceânicas quentes."
+     ],
+     "q": "Que tipo de clima você mais gosta e o que gosta de fazer nele?",
+     "c": "Na próxima tempestade, conte os segundos entre relâmpago e trovão para sentir a distância."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Volcanoes and earthquakes",
+     "g": "Learn where the Earth is most active and a few famous volcanoes.",
+     "p": [
+      "The Ring of Fire is a belt around the Pacific Ocean with many volcanoes and earthquakes.",
+      "Mount Vesuvius in Italy buried the Roman town of Pompeii in 79 CE.",
+      "Mount Fuji in Japan is a volcano and a symbol of the country."
+     ],
+     "q": "Have you ever visited a volcano or felt the ground move, and what was it like?",
+     "c": "Find the Ring of Fire on a map and name two countries on it."
+    },
+    "de": {
+     "t": "Vulkane und Erdbeben",
+     "g": "Erfahre, wo die Erde am aktivsten ist, und lerne einige berühmte Vulkane kennen.",
+     "p": [
+      "Der Feuerring ist ein Gürtel um den Pazifik mit vielen Vulkanen und Erdbeben.",
+      "Der Vesuv in Italien begrub im Jahr 79 n. Chr. die römische Stadt Pompeji.",
+      "Der Fuji in Japan ist ein Vulkan und ein Symbol des Landes."
+     ],
+     "q": "Hast du schon einen Vulkan besucht oder den Boden beben gespürt, und wie war das?",
+     "c": "Such den Feuerring auf einer Karte und nenne zwei Länder, die darauf liegen."
+    },
+    "es": {
+     "t": "Volcanes y terremotos",
+     "g": "Aprende dónde la Tierra es más activa y conoce algunos volcanes famosos.",
+     "p": [
+      "El Cinturón de Fuego es una franja alrededor del Pacífico con muchos volcanes y terremotos.",
+      "El Vesubio, en Italia, enterró la ciudad romana de Pompeya en el año 79 d. C.",
+      "El monte Fuji, en Japón, es un volcán y un símbolo del país."
+     ],
+     "q": "¿Has visitado alguna vez un volcán o sentido moverse el suelo y cómo fue?",
+     "c": "Busca el Cinturón de Fuego en un mapa y nombra dos países que lo forman."
+    },
+    "fr": {
+     "t": "Volcans et séismes",
+     "g": "Apprends où la Terre est la plus active et découvre des volcans célèbres.",
+     "p": [
+      "La Ceinture de feu est une bande autour du Pacifique avec de nombreux volcans et séismes.",
+      "Le Vésuve, en Italie, ensevelit la ville romaine de Pompéi en 79 de notre ère.",
+      "Le mont Fuji, au Japon, est un volcan et un symbole du pays."
+     ],
+     "q": "As-tu déjà visité un volcan ou senti le sol bouger, et comment était-ce ?",
+     "c": "Trouve la Ceinture de feu sur une carte et nomme deux pays qui en font partie."
+    },
+    "it": {
+     "t": "Vulcani e terremoti",
+     "g": "Scopri dove la Terra è più attiva e conosci alcuni vulcani famosi.",
+     "p": [
+      "La Cintura di fuoco è una fascia attorno al Pacifico con molti vulcani e terremoti.",
+      "Il Vesuvio, in Italia, seppellì la città romana di Pompei nel 79 d.C.",
+      "Il monte Fuji, in Giappone, è un vulcano e un simbolo del paese."
+     ],
+     "q": "Hai mai visitato un vulcano o sentito muoversi il suolo e com'è stato?",
+     "c": "Trova la Cintura di fuoco su una mappa e nomina due paesi che ne fanno parte."
+    },
+    "pt": {
+     "t": "Vulcões e sismos",
+     "g": "Aprende onde a Terra é mais ativa e conhece alguns vulcões famosos.",
+     "p": [
+      "O Anel de Fogo é uma faixa à volta do Pacífico com muitos vulcões e sismos.",
+      "O Vesúvio, em Itália, enterrou a cidade romana de Pompeia no ano 79 d.C.",
+      "O monte Fuji, no Japão, é um vulcão e um símbolo do país."
+     ],
+     "q": "Já visitaste um vulcão ou sentiste o chão mexer e como foi?",
+     "c": "Procura o Anel de Fogo num mapa e nomeia dois países que o integram."
+    },
+    "pt_BR": {
+     "t": "Vulcões e terremotos",
+     "g": "Aprenda onde a Terra é mais ativa e conheça alguns vulcões famosos.",
+     "p": [
+      "O Círculo de Fogo é uma faixa ao redor do Pacífico com muitos vulcões e terremotos.",
+      "O Vesúvio, na Itália, soterrou a cidade romana de Pompeia no ano 79 d.C.",
+      "O monte Fuji, no Japão, é um vulcão e um símbolo do país."
+     ],
+     "q": "Você já visitou um vulcão ou sentiu o chão se mexer e como foi?",
+     "c": "Procure o Círculo de Fogo num mapa e nomeie dois países que fazem parte dele."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Deserts",
+     "g": "Find out what really makes a desert and which ones are biggest.",
+     "p": [
+      "A desert is defined by very little rain, not by heat, so cold places can be deserts too.",
+      "The Sahara in Africa is the largest hot desert in the world.",
+      "Antarctica is the largest desert of all, because it gets very little precipitation."
+     ],
+     "q": "Which desert would you most like to see, and what would you bring?",
+     "c": "Tell someone that Antarctica is a desert and watch their surprise."
+    },
+    "de": {
+     "t": "Wüsten",
+     "g": "Erfahre, was eine Wüste wirklich ausmacht und welche am größten sind.",
+     "p": [
+      "Eine Wüste wird durch sehr wenig Regen definiert, nicht durch Hitze, also können auch kalte Orte Wüsten sein.",
+      "Die Sahara in Afrika ist die größte heiße Wüste der Welt.",
+      "Die Antarktis ist die größte Wüste von allen, weil sie sehr wenig Niederschlag bekommt."
+     ],
+     "q": "Welche Wüste würdest du am liebsten sehen, und was würdest du mitnehmen?",
+     "c": "Sag jemandem, dass die Antarktis eine Wüste ist, und beobachte die Überraschung."
+    },
+    "es": {
+     "t": "Desiertos",
+     "g": "Descubre qué define realmente a un desierto y cuáles son los mayores.",
+     "p": [
+      "Un desierto se define por tener muy poca lluvia, no por el calor, así que lugares fríos también pueden serlo.",
+      "El Sáhara, en África, es el mayor desierto cálido del mundo.",
+      "La Antártida es el mayor desierto de todos, porque recibe muy poca precipitación."
+     ],
+     "q": "¿Qué desierto te gustaría ver más y qué llevarías?",
+     "c": "Dile a alguien que la Antártida es un desierto y observa su sorpresa."
+    },
+    "fr": {
+     "t": "Déserts",
+     "g": "Découvre ce qui définit vraiment un désert et lesquels sont les plus grands.",
+     "p": [
+      "Un désert se définit par très peu de pluie, pas par la chaleur : des lieux froids peuvent aussi en être.",
+      "Le Sahara, en Afrique, est le plus grand désert chaud du monde.",
+      "L'Antarctique est le plus grand désert de tous, car il reçoit très peu de précipitations."
+     ],
+     "q": "Quel désert aimerais-tu le plus voir, et qu'emporterais-tu ?",
+     "c": "Dis à quelqu'un que l'Antarctique est un désert et observe sa surprise."
+    },
+    "it": {
+     "t": "Deserti",
+     "g": "Scopri cosa definisce davvero un deserto e quali sono i più grandi.",
+     "p": [
+      "Un deserto si definisce per la scarsissima pioggia, non per il caldo, quindi anche luoghi freddi possono esserlo.",
+      "Il Sahara, in Africa, è il più grande deserto caldo del mondo.",
+      "L'Antartide è il più grande deserto in assoluto, perché riceve pochissime precipitazioni."
+     ],
+     "q": "Quale deserto ti piacerebbe vedere di più e cosa porteresti?",
+     "c": "Di' a qualcuno che l'Antartide è un deserto e osserva la sorpresa."
+    },
+    "pt": {
+     "t": "Desertos",
+     "g": "Descobre o que define realmente um deserto e quais são os maiores.",
+     "p": [
+      "Um deserto define-se por ter muito pouca chuva, não pelo calor, por isso lugares frios também o podem ser.",
+      "O Saara, em África, é o maior deserto quente do mundo.",
+      "A Antártida é o maior deserto de todos, porque recebe muito pouca precipitação."
+     ],
+     "q": "Que deserto gostarias mais de ver e o que levarias?",
+     "c": "Diz a alguém que a Antártida é um deserto e observa a surpresa."
+    },
+    "pt_BR": {
+     "t": "Desertos",
+     "g": "Descubra o que define realmente um deserto e quais são os maiores.",
+     "p": [
+      "Um deserto se define por ter muito pouca chuva, não pelo calor, por isso lugares frios também podem ser.",
+      "O Saara, na África, é o maior deserto quente do mundo.",
+      "A Antártida é o maior deserto de todos, porque recebe muito pouca precipitação."
+     ],
+     "q": "Qual deserto você mais gostaria de ver e o que levaria?",
+     "c": "Diga a alguém que a Antártida é um deserto e observe a surpresa."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: second month quiz",
+     "g": "Test yourself with a mixed quiz on wonders, history, art, languages and nature.",
+     "p": [
+      "Quick one: which is the only ancient wonder still standing, and in which country is Petra?",
+      "Quick two: who painted the Mona Lisa, and what do Roman numerals X and L mean?",
+      "Quick three: what is the largest hot desert, and what is the largest desert of all?"
+     ],
+     "q": "Which question was easiest, and which topic would you like to revisit?",
+     "c": "Write down your three favourite facts from this month and share one with someone."
+    },
+    "de": {
+     "t": "Wiederholung: Quiz des zweiten Monats",
+     "g": "Teste dich mit einem Mixquiz zu Wundern, Geschichte, Kunst, Sprachen und Natur.",
+     "p": [
+      "Schnell eins: Welches antike Wunder steht noch, und in welchem Land liegt Petra?",
+      "Schnell zwei: Wer malte die Mona Lisa, und was bedeuten die römischen Zahlen X und L?",
+      "Schnell drei: Was ist die größte heiße Wüste, und was die größte Wüste überhaupt?"
+     ],
+     "q": "Welche Frage war am leichtesten, und welches Thema möchtest du wiederholen?",
+     "c": "Schreibe deine drei liebsten Fakten dieses Monats auf und teile einen mit jemandem."
+    },
+    "es": {
+     "t": "Repaso: quiz del segundo mes",
+     "g": "Ponte a prueba con un quiz mixto sobre maravillas, historia, arte, idiomas y naturaleza.",
+     "p": [
+      "Rápida uno: ¿cuál es la única maravilla antigua que sigue en pie y en qué país está Petra?",
+      "Rápida dos: ¿quién pintó la Mona Lisa y qué significan los números romanos X y L?",
+      "Rápida tres: ¿cuál es el mayor desierto cálido y cuál es el mayor desierto de todos?"
+     ],
+     "q": "¿Qué pregunta fue más fácil y qué tema te gustaría repasar?",
+     "c": "Anota tus tres datos favoritos de este mes y comparte uno con alguien."
+    },
+    "fr": {
+     "t": "Révision : quiz du deuxième mois",
+     "g": "Teste-toi avec un quiz mixte sur les merveilles, l'histoire, l'art, les langues et la nature.",
+     "p": [
+      "Express n°1 : quelle est la seule merveille antique encore debout, et dans quel pays se trouve Pétra ?",
+      "Express n°2 : qui a peint la Joconde, et que signifient les chiffres romains X et L ?",
+      "Express n°3 : quel est le plus grand désert chaud, et quel est le plus grand désert de tous ?"
+     ],
+     "q": "Quelle question était la plus facile, et quel thème aimerais-tu revoir ?",
+     "c": "Note tes trois faits préférés de ce mois et partage-en un avec quelqu'un."
+    },
+    "it": {
+     "t": "Ripasso: quiz del secondo mese",
+     "g": "Mettiti alla prova con un quiz misto su meraviglie, storia, arte, lingue e natura.",
+     "p": [
+      "Veloce uno: qual è l'unica meraviglia antica ancora in piedi e in quale paese si trova Petra?",
+      "Veloce due: chi dipinse la Gioconda e cosa significano i numeri romani X e L?",
+      "Veloce tre: qual è il più grande deserto caldo e qual è il più grande deserto in assoluto?"
+     ],
+     "q": "Quale domanda era più facile e quale tema vorresti ripassare?",
+     "c": "Scrivi i tuoi tre fatti preferiti di questo mese e condividine uno con qualcuno."
+    },
+    "pt": {
+     "t": "Revisão: quiz do segundo mês",
+     "g": "Põe-te à prova com um quiz misto sobre maravilhas, história, arte, línguas e natureza.",
+     "p": [
+      "Rápida um: qual é a única maravilha antiga ainda de pé e em que país fica Petra?",
+      "Rápida dois: quem pintou a Mona Lisa e o que significam os números romanos X e L?",
+      "Rápida três: qual é o maior deserto quente e qual é o maior deserto de todos?"
+     ],
+     "q": "Que pergunta foi mais fácil e que tema gostarias de rever?",
+     "c": "Escreve os teus três factos preferidos deste mês e partilha um com alguém."
+    },
+    "pt_BR": {
+     "t": "Revisão: quiz do segundo mês",
+     "g": "Teste-se com um quiz misto sobre maravilhas, história, arte, idiomas e natureza.",
+     "p": [
+      "Rápida um: qual é a única maravilha antiga ainda de pé e em que país fica Petra?",
+      "Rápida dois: quem pintou a Mona Lisa e o que significam os números romanos X e L?",
+      "Rápida três: qual é o maior deserto quente e qual é o maior deserto de todos?"
+     ],
+     "q": "Qual pergunta foi mais fácil e que tema você gostaria de rever?",
+     "c": "Escreva seus três fatos favoritos deste mês e compartilhe um com alguém."
+    }
+   }
+  }
+ ]
+}

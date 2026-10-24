@@ -1,0 +1,835 @@
+{
+ "topic": "negotiation",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What anchoring means",
+     "g": "See how the first number mentioned pulls the whole discussion toward it.",
+     "p": [
+      "The first figure on the table becomes a reference point.",
+      "Even random or odd numbers can shift what feels reasonable.",
+      "Knowing about anchors helps you notice them and stay balanced."
+     ],
+     "q": "Have you ever felt a first price shape your idea of fair?",
+     "c": "Notice one first number you hear today and ask yourself if it is fair."
+    },
+    "de": {
+     "t": "Was Verankern bedeutet",
+     "g": "Sieh, wie die erste genannte Zahl das ganze Gespräch zu sich zieht.",
+     "p": [
+      "Die erste Zahl auf dem Tisch wird zum Bezugspunkt.",
+      "Selbst zufällige oder seltsame Zahlen verschieben, was angemessen wirkt.",
+      "Wer Anker kennt, bemerkt sie und bleibt im Gleichgewicht."
+     ],
+     "q": "Hat dir ein erster Preis schon einmal geprägt, was fair ist?",
+     "c": "Achte heute auf eine erste Zahl und frage dich, ob sie fair ist."
+    },
+    "es": {
+     "t": "Qué significa el anclaje",
+     "g": "Descubre cómo la primera cifra mencionada arrastra toda la conversación.",
+     "p": [
+      "La primera cifra sobre la mesa se convierte en punto de referencia.",
+      "Incluso números al azar o raros cambian lo que parece razonable.",
+      "Conocer los anclajes te ayuda a notarlos y mantener el equilibrio."
+     ],
+     "q": "¿Te ha influido alguna vez un primer precio en tu idea de lo justo?",
+     "c": "Fíjate hoy en una primera cifra que oigas y pregúntate si es justa."
+    },
+    "fr": {
+     "t": "Ce qu'est l'ancrage",
+     "g": "Vois comment le premier chiffre cité attire toute la discussion.",
+     "p": [
+      "Le premier chiffre sur la table devient un point de référence.",
+      "Même des nombres aléatoires ou étranges déplacent ce qui paraît raisonnable.",
+      "Connaître les ancres aide à les repérer et à rester équilibré."
+     ],
+     "q": "Un premier prix a-t-il déjà influencé ton idée du juste ?",
+     "c": "Repère aujourd'hui un premier chiffre et demande-toi s'il est juste."
+    },
+    "it": {
+     "t": "Cosa significa ancoraggio",
+     "g": "Scopri come la prima cifra citata attira tutta la discussione.",
+     "p": [
+      "La prima cifra sul tavolo diventa un punto di riferimento.",
+      "Anche numeri casuali o strani spostano ciò che sembra ragionevole.",
+      "Conoscere le ancore ti aiuta a notarle e a restare equilibrato."
+     ],
+     "q": "Un primo prezzo ha mai influenzato la tua idea di equo?",
+     "c": "Oggi nota una prima cifra e chiediti se è equa."
+    },
+    "pt": {
+     "t": "O que significa ancoragem",
+     "g": "Vê como o primeiro número mencionado puxa toda a conversa para si.",
+     "p": [
+      "O primeiro valor em cima da mesa torna-se ponto de referência.",
+      "Até números aleatórios ou estranhos mudam o que parece razoável.",
+      "Conhecer as âncoras ajuda-te a notá-las e a manter o equilíbrio."
+     ],
+     "q": "Já um primeiro preço moldou a tua ideia do que é justo?",
+     "c": "Hoje repara num primeiro número e pergunta-te se é justo."
+    },
+    "pt_BR": {
+     "t": "O que é ancoragem",
+     "g": "Veja como o primeiro número citado puxa toda a conversa para si.",
+     "p": [
+      "O primeiro valor na mesa vira ponto de referência.",
+      "Até números aleatórios ou estranhos mudam o que parece razoável.",
+      "Conhecer as âncoras ajuda a notá-las e manter o equilíbrio."
+     ],
+     "q": "Um primeiro preço já moldou sua ideia do que é justo?",
+     "c": "Hoje perceba um primeiro número e pergunte-se se é justo."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Should you go first?",
+     "g": "Learn when making the first offer helps and when waiting is wiser.",
+     "p": [
+      "Going first sets the anchor if you know the market well.",
+      "If you know little, listen first and learn their range.",
+      "Whichever you choose, prepare your number in advance."
+     ],
+     "q": "When do you prefer to speak first, and when to wait?",
+     "c": "Decide in advance whether to open or wait in your next talk."
+    },
+    "de": {
+     "t": "Solltest du anfangen?",
+     "g": "Lerne, wann ein erstes Angebot hilft und wann Abwarten klüger ist.",
+     "p": [
+      "Wer zuerst nennt, setzt den Anker, wenn er den Markt gut kennt.",
+      "Weißt du wenig, höre zuerst zu und erfahre ihren Rahmen.",
+      "Wie auch immer du wählst, bereite deine Zahl vorher vor."
+     ],
+     "q": "Wann sprichst du lieber zuerst, wann wartest du ab?",
+     "c": "Entscheide im nächsten Gespräch vorab, ob du eröffnest oder wartest."
+    },
+    "es": {
+     "t": "¿Debes ir primero?",
+     "g": "Aprende cuándo conviene hacer la primera oferta y cuándo esperar.",
+     "p": [
+      "Ir primero fija el ancla si conoces bien el mercado.",
+      "Si sabes poco, escucha antes y descubre su rango.",
+      "Elijas lo que elijas, prepara tu cifra de antemano."
+     ],
+     "q": "¿Cuándo prefieres hablar primero y cuándo esperar?",
+     "c": "Decide de antemano si abrirás tú o esperarás en tu próxima charla."
+    },
+    "fr": {
+     "t": "Faut-il parler le premier ?",
+     "g": "Apprends quand une première offre aide et quand attendre est plus sage.",
+     "p": [
+      "Parler en premier fixe l'ancre si tu connais bien le marché.",
+      "Si tu en sais peu, écoute d'abord et découvre leur fourchette.",
+      "Quel que soit ton choix, prépare ton chiffre à l'avance."
+     ],
+     "q": "Quand préfères-tu parler d'abord, et quand attendre ?",
+     "c": "Décide à l'avance, pour ta prochaine discussion, d'ouvrir ou d'attendre."
+    },
+    "it": {
+     "t": "Conviene parlare per primi?",
+     "g": "Scopri quando una prima offerta aiuta e quando aspettare è più saggio.",
+     "p": [
+      "Parlare per primi fissa l'ancora se conosci bene il mercato.",
+      "Se ne sai poco, ascolta prima e scopri il loro intervallo.",
+      "Qualunque scelta fai, prepara prima la tua cifra."
+     ],
+     "q": "Quando preferisci parlare per primo e quando aspettare?",
+     "c": "Decidi in anticipo se aprire o attendere nella prossima conversazione."
+    },
+    "pt": {
+     "t": "Deves falar primeiro?",
+     "g": "Aprende quando uma primeira oferta ajuda e quando esperar é mais sensato.",
+     "p": [
+      "Falar primeiro fixa a âncora se conheces bem o mercado.",
+      "Se sabes pouco, ouve primeiro e descobre o intervalo deles.",
+      "Escolhas o que escolheres, prepara o teu valor com antecedência."
+     ],
+     "q": "Quando preferes falar primeiro e quando esperar?",
+     "c": "Decide de antemão se abres ou esperas na próxima conversa."
+    },
+    "pt_BR": {
+     "t": "Você deve falar primeiro?",
+     "g": "Aprenda quando uma primeira oferta ajuda e quando esperar é mais sensato.",
+     "p": [
+      "Falar primeiro fixa a âncora se você conhece bem o mercado.",
+      "Se sabe pouco, ouça primeiro e descubra a faixa deles.",
+      "Seja qual for a escolha, prepare seu valor com antecedência."
+     ],
+     "q": "Quando você prefere falar primeiro e quando esperar?",
+     "c": "Decida antes se vai abrir ou esperar na próxima conversa."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Responding to a bad anchor",
+     "g": "Calmly set aside an extreme offer and reset the conversation.",
+     "p": [
+      "Do not react with anger or counter with a number at once.",
+      "Say: That is far from what I had in mind. Let us look at the facts.",
+      "Bring in market data or standards to rebuild a fair range."
+     ],
+     "q": "How might you stay calm if someone opened with an extreme number?",
+     "c": "Write a calm sentence you could use to reject an extreme first offer."
+    },
+    "de": {
+     "t": "Auf einen schlechten Anker reagieren",
+     "g": "Lege ein extremes Angebot ruhig beiseite und starte das Gespräch neu.",
+     "p": [
+      "Reagiere nicht wütend und nenne nicht sofort eine Gegenzahl.",
+      "Sag: Das liegt weit von meiner Vorstellung. Schauen wir auf die Fakten.",
+      "Bringe Marktdaten oder Maßstäbe ein, um einen fairen Rahmen aufzubauen."
+     ],
+     "q": "Wie bliebest du ruhig, wenn jemand mit einer extremen Zahl beginnt?",
+     "c": "Schreibe einen ruhigen Satz, mit dem du ein extremes erstes Angebot ablehnst."
+    },
+    "es": {
+     "t": "Responder a un mal ancla",
+     "g": "Aparta con calma una oferta extrema y reinicia la conversación.",
+     "p": [
+      "No reacciones con enfado ni contestes con una cifra enseguida.",
+      "Di: Eso está lejos de lo que tenía en mente. Veamos los hechos.",
+      "Aporta datos de mercado o estándares para reconstruir un rango justo."
+     ],
+     "q": "¿Cómo mantendrías la calma si alguien abre con una cifra extrema?",
+     "c": "Escribe una frase serena para rechazar una primera oferta extrema."
+    },
+    "fr": {
+     "t": "Répondre à une mauvaise ancre",
+     "g": "Écarte calmement une offre extrême et relance la conversation.",
+     "p": [
+      "Ne réagis pas par la colère ni par un chiffre immédiat.",
+      "Dis : C'est loin de ce que j'imaginais. Regardons les faits.",
+      "Apporte des données de marché ou des normes pour rebâtir une fourchette juste."
+     ],
+     "q": "Comment resterais-tu calme si quelqu'un ouvrait avec un chiffre extrême ?",
+     "c": "Écris une phrase calme pour refuser une première offre extrême."
+    },
+    "it": {
+     "t": "Rispondere a una cattiva ancora",
+     "g": "Metti da parte con calma un'offerta estrema e riparti con la conversazione.",
+     "p": [
+      "Non reagire con rabbia né rispondere subito con una cifra.",
+      "Di': È lontano da ciò che avevo in mente. Guardiamo i fatti.",
+      "Porta dati di mercato o standard per ricostruire un intervallo equo."
+     ],
+     "q": "Come resteresti calmo se qualcuno aprisse con una cifra estrema?",
+     "c": "Scrivi una frase calma per rifiutare una prima offerta estrema."
+    },
+    "pt": {
+     "t": "Responder a uma má âncora",
+     "g": "Põe de lado com calma uma oferta extrema e recomeça a conversa.",
+     "p": [
+      "Não reajas com raiva nem respondas logo com um valor.",
+      "Diz: Isso está longe do que eu tinha em mente. Vejamos os factos.",
+      "Traz dados de mercado ou padrões para reconstruir um intervalo justo."
+     ],
+     "q": "Como manterias a calma se alguém abrisse com um valor extremo?",
+     "c": "Escreve uma frase calma para recusar uma primeira oferta extrema."
+    },
+    "pt_BR": {
+     "t": "Respondendo a uma má âncora",
+     "g": "Deixe de lado com calma uma oferta extrema e reinicie a conversa.",
+     "p": [
+      "Não reaja com raiva nem responda logo com um valor.",
+      "Diga: Isso está longe do que eu tinha em mente. Vamos olhar os fatos.",
+      "Traga dados de mercado ou padrões para reconstruir uma faixa justa."
+     ],
+     "q": "Como você manteria a calma se alguém abrisse com um valor extremo?",
+     "c": "Escreva uma frase calma para recusar uma primeira oferta extrema."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Making offers with reasons",
+     "g": "See why a number backed by a clear reason feels fairer.",
+     "p": [
+      "A reason turns a demand into a proposal.",
+      "Say: Because of X, I suggest Y.",
+      "Honest reasons invite discussion rather than argument."
+     ],
+     "q": "What reason would back up a request you plan to make?",
+     "c": "Add one honest reason to an offer or request today."
+    },
+    "de": {
+     "t": "Angebote mit Begründung",
+     "g": "Sieh, warum eine Zahl mit klarem Grund fairer wirkt.",
+     "p": [
+      "Ein Grund macht aus einer Forderung einen Vorschlag.",
+      "Sag: Wegen X schlage ich Y vor.",
+      "Ehrliche Gründe laden zum Gespräch statt zum Streit ein."
+     ],
+     "q": "Welcher Grund würde eine geplante Bitte stützen?",
+     "c": "Füge heute einem Angebot oder einer Bitte einen ehrlichen Grund hinzu."
+    },
+    "es": {
+     "t": "Ofertas con razones",
+     "g": "Descubre por qué una cifra respaldada por una razón clara parece más justa.",
+     "p": [
+      "Una razón convierte una exigencia en una propuesta.",
+      "Di: Por X, propongo Y.",
+      "Las razones honestas invitan a dialogar en vez de discutir."
+     ],
+     "q": "¿Qué razón respaldaría una petición que piensas hacer?",
+     "c": "Añade hoy una razón honesta a una oferta o petición."
+    },
+    "fr": {
+     "t": "Des offres avec des raisons",
+     "g": "Vois pourquoi un chiffre appuyé par une raison claire paraît plus juste.",
+     "p": [
+      "Une raison transforme une exigence en proposition.",
+      "Dis : À cause de X, je propose Y.",
+      "Les raisons honnêtes invitent à discuter plutôt qu'à se disputer."
+     ],
+     "q": "Quelle raison appuierait une demande que tu prévois de faire ?",
+     "c": "Ajoute aujourd'hui une raison honnête à une offre ou une demande."
+    },
+    "it": {
+     "t": "Offerte con motivazioni",
+     "g": "Scopri perché una cifra sostenuta da un motivo chiaro sembra più equa.",
+     "p": [
+      "Un motivo trasforma una pretesa in una proposta.",
+      "Di': Per X, propongo Y.",
+      "Le ragioni oneste invitano al dialogo, non alla lite."
+     ],
+     "q": "Quale motivo sosterrebbe una richiesta che pensi di fare?",
+     "c": "Oggi aggiungi un motivo onesto a un'offerta o a una richiesta."
+    },
+    "pt": {
+     "t": "Ofertas com razões",
+     "g": "Vê porque um valor sustentado por uma razão clara parece mais justo.",
+     "p": [
+      "Uma razão transforma uma exigência numa proposta.",
+      "Diz: Por causa de X, proponho Y.",
+      "Razões honestas convidam ao diálogo em vez da discussão."
+     ],
+     "q": "Que razão sustentaria um pedido que planeias fazer?",
+     "c": "Hoje acrescenta uma razão honesta a uma oferta ou pedido."
+    },
+    "pt_BR": {
+     "t": "Ofertas com motivos",
+     "g": "Veja por que um valor apoiado por uma razão clara parece mais justo.",
+     "p": [
+      "Um motivo transforma uma exigência numa proposta.",
+      "Diga: Por causa de X, proponho Y.",
+      "Motivos honestos convidam ao diálogo em vez de briga."
+     ],
+     "q": "Que razão apoiaria um pedido que você pretende fazer?",
+     "c": "Hoje acrescente um motivo honesto a uma oferta ou pedido."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ranges and precise numbers",
+     "g": "Learn how precise figures can seem better researched than round ones.",
+     "p": [
+      "A figure like 4,850 sounds more considered than 5,000.",
+      "Precise numbers suggest you did your homework, so do it.",
+      "Be careful with ranges: the other side often hears only your lower end."
+     ],
+     "q": "Which number would you use in a talk, and why that one?",
+     "c": "Replace one round number in a plan with a figure you can justify."
+    },
+    "de": {
+     "t": "Spannen und genaue Zahlen",
+     "g": "Lerne, wie genaue Zahlen besser recherchiert wirken als runde.",
+     "p": [
+      "Eine Zahl wie 4.850 klingt durchdachter als 5.000.",
+      "Genaue Zahlen zeigen, dass du dich vorbereitet hast, also tu es auch.",
+      "Vorsicht mit Spannen: Die andere Seite hört oft nur dein unteres Ende."
+     ],
+     "q": "Welche Zahl würdest du nennen, und warum genau diese?",
+     "c": "Ersetze eine runde Zahl in einem Plan durch eine, die du begründen kannst."
+    },
+    "es": {
+     "t": "Rangos y cifras precisas",
+     "g": "Aprende cómo las cifras precisas parecen más investigadas que las redondas.",
+     "p": [
+      "Una cifra como 4.850 suena más meditada que 5.000.",
+      "Las cifras precisas sugieren que preparaste el tema, así que hazlo.",
+      "Ojo con los rangos: la otra parte suele oír solo tu extremo más bajo."
+     ],
+     "q": "¿Qué cifra usarías en una charla y por qué esa?",
+     "c": "Cambia un número redondo de un plan por una cifra que puedas justificar."
+    },
+    "fr": {
+     "t": "Fourchettes et chiffres précis",
+     "g": "Apprends comment des chiffres précis paraissent mieux étudiés que des chiffres ronds.",
+     "p": [
+      "Un chiffre comme 4 850 semble plus réfléchi que 5 000.",
+      "Un chiffre précis suggère que tu as préparé ton sujet : fais-le.",
+      "Attention aux fourchettes : l'autre n'entend souvent que ta borne basse."
+     ],
+     "q": "Quel chiffre utiliserais-tu dans une discussion, et pourquoi celui-là ?",
+     "c": "Remplace un chiffre rond d'un plan par un chiffre que tu peux justifier."
+    },
+    "it": {
+     "t": "Intervalli e cifre precise",
+     "g": "Scopri come le cifre precise sembrano più studiate di quelle tonde.",
+     "p": [
+      "Una cifra come 4.850 sembra più ponderata di 5.000.",
+      "Le cifre precise suggeriscono che hai fatto i compiti, quindi falli.",
+      "Attenzione agli intervalli: l'altro spesso sente solo il tuo estremo basso."
+     ],
+     "q": "Quale cifra useresti in una conversazione e perché proprio quella?",
+     "c": "Sostituisci una cifra tonda di un piano con una che sai giustificare."
+    },
+    "pt": {
+     "t": "Intervalos e valores precisos",
+     "g": "Aprende como valores precisos parecem mais pesquisados do que redondos.",
+     "p": [
+      "Um valor como 4.850 soa mais ponderado do que 5.000.",
+      "Valores precisos sugerem que fizeste o trabalho de casa, por isso faz.",
+      "Cuidado com intervalos: o outro lado costuma ouvir só o teu extremo mais baixo."
+     ],
+     "q": "Que valor usarias numa conversa e porquê esse?",
+     "c": "Troca um número redondo de um plano por um valor que consigas justificar."
+    },
+    "pt_BR": {
+     "t": "Faixas e números precisos",
+     "g": "Aprenda como números precisos parecem mais pesquisados que redondos.",
+     "p": [
+      "Um valor como 4.850 soa mais ponderado que 5.000.",
+      "Números precisos sugerem que você fez a lição de casa, então faça.",
+      "Cuidado com faixas: o outro lado costuma ouvir só o seu extremo mais baixo."
+     ],
+     "q": "Que número você usaria numa conversa e por que esse?",
+     "c": "Troque um número redondo de um plano por um valor que você consiga justificar."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The art of the concession",
+     "g": "Give ground slowly, in shrinking steps, and always for something in return.",
+     "p": [
+      "Large first concessions invite the other side to ask for more.",
+      "Make each concession smaller than the last to signal you are near your limit.",
+      "Never give for free; ask for something back."
+     ],
+     "q": "How do you usually feel when you have to give something up?",
+     "c": "In a small deal today, make one concession only after getting one."
+    },
+    "de": {
+     "t": "Die Kunst des Zugeständnisses",
+     "g": "Gib langsam nach, in kleiner werdenden Schritten und stets gegen etwas.",
+     "p": [
+      "Große erste Zugeständnisse laden die andere Seite ein, mehr zu fordern.",
+      "Mach jedes Zugeständnis kleiner als das letzte, um deine Grenze zu zeigen.",
+      "Gib nie umsonst nach; bitte um etwas zurück."
+     ],
+     "q": "Wie fühlst du dich meist, wenn du etwas aufgeben musst?",
+     "c": "Mach heute bei einer kleinen Sache ein Zugeständnis erst nach einem erhaltenen."
+    },
+    "es": {
+     "t": "El arte de la concesión",
+     "g": "Cede terreno despacio, en pasos cada vez menores y siempre a cambio de algo.",
+     "p": [
+      "Grandes concesiones iniciales invitan a la otra parte a pedir más.",
+      "Haz cada concesión menor que la anterior para señalar que te acercas a tu límite.",
+      "Nunca cedas gratis; pide algo a cambio."
+     ],
+     "q": "¿Cómo te sientes normalmente cuando tienes que ceder algo?",
+     "c": "En un trato pequeño de hoy, concede algo solo tras recibir algo."
+    },
+    "fr": {
+     "t": "L'art de la concession",
+     "g": "Cède du terrain lentement, par petits pas décroissants, et toujours contre quelque chose.",
+     "p": [
+      "De grandes premières concessions incitent l'autre à demander plus.",
+      "Fais chaque concession plus petite que la précédente pour signaler ta limite.",
+      "Ne cède jamais gratuitement ; demande quelque chose en retour."
+     ],
+     "q": "Que ressens-tu d'habitude quand tu dois renoncer à quelque chose ?",
+     "c": "Dans un petit accord aujourd'hui, ne concède qu'après avoir obtenu quelque chose."
+    },
+    "it": {
+     "t": "L'arte della concessione",
+     "g": "Cedi terreno lentamente, a passi sempre più piccoli e sempre in cambio di qualcosa.",
+     "p": [
+      "Grandi prime concessioni invitano l'altro a chiedere di più.",
+      "Rendi ogni concessione più piccola della precedente per segnalare il tuo limite.",
+      "Non cedere mai gratis; chiedi qualcosa in cambio."
+     ],
+     "q": "Come ti senti di solito quando devi rinunciare a qualcosa?",
+     "c": "In un piccolo accordo di oggi, concedi qualcosa solo dopo aver ricevuto qualcosa."
+    },
+    "pt": {
+     "t": "A arte da concessão",
+     "g": "Cede terreno devagar, em passos cada vez menores e sempre em troca de algo.",
+     "p": [
+      "Grandes concessões iniciais convidam o outro lado a pedir mais.",
+      "Faz cada concessão menor que a anterior para sinalizar que te aproximas do limite.",
+      "Nunca cedas de graça; pede algo em troca."
+     ],
+     "q": "Como te sentes normalmente quando tens de abdicar de algo?",
+     "c": "Num pequeno acordo de hoje, só cede depois de receberes algo."
+    },
+    "pt_BR": {
+     "t": "A arte da concessão",
+     "g": "Ceda terreno devagar, em passos cada vez menores e sempre em troca de algo.",
+     "p": [
+      "Grandes concessões iniciais convidam o outro lado a pedir mais.",
+      "Faça cada concessão menor que a anterior para sinalizar que está perto do limite.",
+      "Nunca ceda de graça; peça algo em troca."
+     ],
+     "q": "Como você costuma se sentir quando precisa abrir mão de algo?",
+     "c": "Num pequeno acordo de hoje, só ceda depois de receber algo."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Trading, not giving",
+     "g": "Use if-then phrasing: if you can do this, I can do that.",
+     "p": [
+      "If-then links two things so a gift becomes a trade.",
+      "Try: If you can deliver Friday, I can confirm today.",
+      "Trades feel fair because both sides give and get."
+     ],
+     "q": "What could you offer in exchange for something you want?",
+     "c": "Phrase one request today as an if-then sentence."
+    },
+    "de": {
+     "t": "Tauschen statt Schenken",
+     "g": "Nutze Wenn-dann: Wenn du das kannst, kann ich jenes.",
+     "p": [
+      "Wenn-dann verknüpft zwei Dinge, aus einem Geschenk wird ein Tausch.",
+      "Probiere: Wenn du bis Freitag lieferst, bestätige ich heute.",
+      "Tausch wirkt fair, weil beide geben und bekommen."
+     ],
+     "q": "Was könntest du für etwas anbieten, das du willst?",
+     "c": "Formuliere heute eine Bitte als Wenn-dann-Satz."
+    },
+    "es": {
+     "t": "Intercambiar, no regalar",
+     "g": "Usa el si-entonces: si puedes hacer esto, yo puedo hacer aquello.",
+     "p": [
+      "El si-entonces une dos cosas y un regalo se vuelve un intercambio.",
+      "Prueba: Si puedes entregar el viernes, confirmo hoy.",
+      "Los intercambios parecen justos porque ambos dan y reciben."
+     ],
+     "q": "¿Qué podrías ofrecer a cambio de algo que quieres?",
+     "c": "Formula hoy una petición como frase de si-entonces."
+    },
+    "fr": {
+     "t": "Échanger, pas offrir",
+     "g": "Utilise le si-alors : si tu peux faire ceci, je peux faire cela.",
+     "p": [
+      "Le si-alors relie deux choses : un cadeau devient un échange.",
+      "Essaie : Si tu peux livrer vendredi, je confirme aujourd'hui.",
+      "Un échange paraît juste car chacun donne et reçoit."
+     ],
+     "q": "Que pourrais-tu offrir en échange de ce que tu veux ?",
+     "c": "Formule aujourd'hui une demande sous forme de phrase si-alors."
+    },
+    "it": {
+     "t": "Scambiare, non regalare",
+     "g": "Usa il se-allora: se puoi fare questo, io posso fare quello.",
+     "p": [
+      "Il se-allora lega due cose e un regalo diventa uno scambio.",
+      "Prova: Se consegni venerdì, confermo oggi.",
+      "Gli scambi sembrano equi perché entrambi danno e ricevono."
+     ],
+     "q": "Cosa potresti offrire in cambio di qualcosa che vuoi?",
+     "c": "Oggi formula una richiesta come frase se-allora."
+    },
+    "pt": {
+     "t": "Trocar, não oferecer",
+     "g": "Usa o se-então: se podes fazer isto, eu posso fazer aquilo.",
+     "p": [
+      "O se-então liga duas coisas e uma oferta torna-se uma troca.",
+      "Experimenta: Se entregares na sexta, confirmo hoje.",
+      "As trocas parecem justas porque ambos dão e recebem."
+     ],
+     "q": "O que poderias oferecer em troca de algo que queres?",
+     "c": "Hoje formula um pedido como frase de se-então."
+    },
+    "pt_BR": {
+     "t": "Trocar, não dar de graça",
+     "g": "Use o se-então: se você pode fazer isto, eu posso fazer aquilo.",
+     "p": [
+      "O se-então liga duas coisas e um presente vira uma troca.",
+      "Experimente: Se você entregar na sexta, eu confirmo hoje.",
+      "Trocas parecem justas porque os dois dão e recebem."
+     ],
+     "q": "O que você poderia oferecer em troca de algo que quer?",
+     "c": "Hoje formule um pedido como frase de se-então."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Beyond splitting the difference",
+     "g": "See why meeting in the middle is not always the fairest or smartest solution.",
+     "p": [
+      "A split can ignore what each side truly needs.",
+      "It also rewards extreme opening numbers.",
+      "Ask whether a more creative solution serves both better."
+     ],
+     "q": "When did a fifty-fifty split feel unfair to you?",
+     "c": "Before splitting something today, ask if a better trade exists."
+    },
+    "de": {
+     "t": "Mehr als die Mitte treffen",
+     "g": "Sieh, warum die Mitte nicht immer die fairste oder klügste Lösung ist.",
+     "p": [
+      "Eine Teilung ignoriert oft, was jede Seite wirklich braucht.",
+      "Sie belohnt außerdem extreme Eröffnungszahlen.",
+      "Frage, ob eine kreativere Lösung beiden besser dient."
+     ],
+     "q": "Wann fühlte sich eine Fifty-fifty-Teilung für dich unfair an?",
+     "c": "Frage heute vor dem Teilen, ob ein besserer Tausch möglich ist."
+    },
+    "es": {
+     "t": "Más allá de partir la diferencia",
+     "g": "Descubre por qué el punto medio no siempre es la solución más justa ni más lista.",
+     "p": [
+      "Partir por la mitad puede ignorar lo que cada parte necesita de verdad.",
+      "Además premia las cifras iniciales extremas.",
+      "Pregunta si una solución más creativa sirve mejor a ambos."
+     ],
+     "q": "¿Cuándo te pareció injusto un reparto mitad y mitad?",
+     "c": "Antes de repartir algo hoy, pregunta si hay un intercambio mejor."
+    },
+    "fr": {
+     "t": "Au-delà du juste milieu",
+     "g": "Vois pourquoi couper la poire en deux n'est pas toujours la solution la plus juste ni la plus maligne.",
+     "p": [
+      "Un partage peut ignorer ce dont chacun a vraiment besoin.",
+      "Il récompense aussi les chiffres de départ extrêmes.",
+      "Demande si une solution plus créative sert mieux les deux."
+     ],
+     "q": "Quand un partage moitié-moitié t'a-t-il semblé injuste ?",
+     "c": "Avant de partager quelque chose aujourd'hui, demande s'il existe un meilleur échange."
+    },
+    "it": {
+     "t": "Oltre il dividere a metà",
+     "g": "Scopri perché incontrarsi a metà non è sempre la soluzione più equa o intelligente.",
+     "p": [
+      "Dividere a metà può ignorare ciò di cui ciascuno ha davvero bisogno.",
+      "Premia anche le cifre iniziali estreme.",
+      "Chiedi se una soluzione più creativa serve meglio entrambi."
+     ],
+     "q": "Quando una divisione cinquanta e cinquanta ti è sembrata ingiusta?",
+     "c": "Prima di dividere qualcosa oggi, chiedi se esiste uno scambio migliore."
+    },
+    "pt": {
+     "t": "Para além de dividir ao meio",
+     "g": "Vê porque o meio-termo nem sempre é a solução mais justa ou inteligente.",
+     "p": [
+      "Dividir ao meio pode ignorar o que cada lado realmente precisa.",
+      "Também premeia valores iniciais extremos.",
+      "Pergunta se uma solução mais criativa serve melhor ambos."
+     ],
+     "q": "Quando é que uma divisão meio a meio te pareceu injusta?",
+     "c": "Antes de dividir algo hoje, pergunta se há uma troca melhor."
+    },
+    "pt_BR": {
+     "t": "Além de dividir no meio",
+     "g": "Veja por que o meio-termo nem sempre é a solução mais justa ou inteligente.",
+     "p": [
+      "Dividir no meio pode ignorar o que cada lado realmente precisa.",
+      "Também premia valores iniciais extremos.",
+      "Pergunte se uma solução mais criativa atende melhor os dois."
+     ],
+     "q": "Quando uma divisão meio a meio pareceu injusta para você?",
+     "c": "Antes de dividir algo hoje, pergunte se existe uma troca melhor."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Expanding the pie",
+     "g": "Look for extra value so both sides can get more than a simple split.",
+     "p": [
+      "Many deals are not fixed-size; value can be created.",
+      "Add topics such as timing, extras or flexibility.",
+      "More issues on the table means more room for trades."
+     ],
+     "q": "What could you add to a talk to make the pie bigger?",
+     "c": "Find one extra topic you could add to a negotiation you have."
+    },
+    "de": {
+     "t": "Den Kuchen vergrößern",
+     "g": "Suche zusätzlichen Wert, damit beide mehr bekommen als bei einer einfachen Teilung.",
+     "p": [
+      "Viele Abschlüsse haben keine feste Größe; Wert lässt sich schaffen.",
+      "Nimm Themen wie Zeit, Extras oder Flexibilität hinzu.",
+      "Mehr Themen auf dem Tisch bedeuten mehr Raum für Tausch."
+     ],
+     "q": "Was könntest du einem Gespräch hinzufügen, um den Kuchen zu vergrößern?",
+     "c": "Finde ein zusätzliches Thema für eine Verhandlung, die du hast."
+    },
+    "es": {
+     "t": "Agrandar el pastel",
+     "g": "Busca valor extra para que ambos consigan más que con un simple reparto.",
+     "p": [
+      "Muchos tratos no tienen tamaño fijo; se puede crear valor.",
+      "Añade temas como plazos, extras o flexibilidad.",
+      "Más asuntos sobre la mesa dan más margen para intercambiar."
+     ],
+     "q": "¿Qué podrías añadir a una charla para agrandar el pastel?",
+     "c": "Encuentra un tema extra que podrías añadir a una negociación tuya."
+    },
+    "fr": {
+     "t": "Agrandir le gâteau",
+     "g": "Cherche de la valeur en plus pour que chacun obtienne plus qu'avec un simple partage.",
+     "p": [
+      "Beaucoup d'accords n'ont pas de taille fixe : on peut créer de la valeur.",
+      "Ajoute des sujets comme le calendrier, des extras ou la souplesse.",
+      "Plus de sujets sur la table, plus de place pour échanger."
+     ],
+     "q": "Que pourrais-tu ajouter à une discussion pour agrandir le gâteau ?",
+     "c": "Trouve un sujet supplémentaire à ajouter à une négociation que tu as."
+    },
+    "it": {
+     "t": "Ingrandire la torta",
+     "g": "Cerca valore extra perché entrambi ottengano più di una semplice divisione.",
+     "p": [
+      "Molti accordi non hanno dimensione fissa: si può creare valore.",
+      "Aggiungi temi come tempi, extra o flessibilità.",
+      "Più temi sul tavolo significano più spazio per scambiare."
+     ],
+     "q": "Cosa potresti aggiungere a una conversazione per ingrandire la torta?",
+     "c": "Trova un tema in più da aggiungere a una tua negoziazione."
+    },
+    "pt": {
+     "t": "Aumentar o bolo",
+     "g": "Procura valor extra para que ambos consigam mais do que numa simples divisão.",
+     "p": [
+      "Muitos acordos não têm tamanho fixo; pode criar-se valor.",
+      "Acrescenta temas como prazos, extras ou flexibilidade.",
+      "Mais assuntos em cima da mesa dão mais margem para trocas."
+     ],
+     "q": "O que poderias acrescentar a uma conversa para aumentar o bolo?",
+     "c": "Encontra um tema extra que possas juntar a uma negociação tua."
+    },
+    "pt_BR": {
+     "t": "Aumentando o bolo",
+     "g": "Procure valor extra para os dois ganharem mais que numa simples divisão.",
+     "p": [
+      "Muitos acordos não têm tamanho fixo; dá para criar valor.",
+      "Acrescente temas como prazos, extras ou flexibilidade.",
+      "Mais assuntos na mesa dão mais margem para trocas."
+     ],
+     "q": "O que você poderia acrescentar a uma conversa para aumentar o bolo?",
+     "c": "Encontre um tema extra para juntar a uma negociação sua."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brainstorming options together",
+     "g": "Generate several possible solutions before deciding on any of them.",
+     "p": [
+      "Separate inventing options from choosing among them.",
+      "Aim for quantity first; judge later.",
+      "Invite the other side to add ideas of their own."
+     ],
+     "q": "How many ways could you solve a problem you face now?",
+     "c": "Write five possible solutions to one disagreement before choosing."
+    },
+    "de": {
+     "t": "Gemeinsam Optionen sammeln",
+     "g": "Entwickle mehrere mögliche Lösungen, bevor du dich für eine entscheidest.",
+     "p": [
+      "Trenne das Erfinden von Optionen vom Auswählen.",
+      "Zuerst zählt die Menge; bewerte später.",
+      "Lade die andere Seite ein, eigene Ideen einzubringen."
+     ],
+     "q": "Auf wie viele Arten könntest du ein aktuelles Problem lösen?",
+     "c": "Schreibe fünf mögliche Lösungen für einen Streitpunkt auf, bevor du wählst."
+    },
+    "es": {
+     "t": "Idear opciones juntos",
+     "g": "Genera varias soluciones posibles antes de decidirte por alguna.",
+     "p": [
+      "Separa inventar opciones de elegir entre ellas.",
+      "Primero busca cantidad; juzga después.",
+      "Invita a la otra parte a aportar ideas propias."
+     ],
+     "q": "¿De cuántas maneras podrías resolver un problema que tienes ahora?",
+     "c": "Escribe cinco soluciones posibles a un desacuerdo antes de elegir."
+    },
+    "fr": {
+     "t": "Imaginer des options ensemble",
+     "g": "Génère plusieurs solutions possibles avant d'en choisir une.",
+     "p": [
+      "Sépare l'invention d'options du choix entre elles.",
+      "Vise d'abord la quantité ; juge ensuite.",
+      "Invite l'autre à ajouter ses propres idées."
+     ],
+     "q": "De combien de façons pourrais-tu résoudre un problème actuel ?",
+     "c": "Écris cinq solutions possibles à un désaccord avant de choisir."
+    },
+    "it": {
+     "t": "Ideare opzioni insieme",
+     "g": "Genera diverse soluzioni possibili prima di sceglierne una.",
+     "p": [
+      "Separa l'inventare opzioni dallo sceglierne una.",
+      "Punta prima sulla quantità; giudica dopo.",
+      "Invita l'altra parte ad aggiungere idee proprie."
+     ],
+     "q": "In quanti modi potresti risolvere un problema che hai ora?",
+     "c": "Scrivi cinque soluzioni possibili a un disaccordo prima di scegliere."
+    },
+    "pt": {
+     "t": "Idealizar opções em conjunto",
+     "g": "Gera várias soluções possíveis antes de decidires por alguma.",
+     "p": [
+      "Separa inventar opções de escolher entre elas.",
+      "Procura primeiro quantidade; julga depois.",
+      "Convida o outro lado a juntar ideias próprias."
+     ],
+     "q": "De quantas maneiras poderias resolver um problema que tens agora?",
+     "c": "Escreve cinco soluções possíveis para um desacordo antes de escolher."
+    },
+    "pt_BR": {
+     "t": "Criando opções juntos",
+     "g": "Gere várias soluções possíveis antes de decidir por alguma.",
+     "p": [
+      "Separe inventar opções de escolher entre elas.",
+      "Busque primeiro quantidade; julgue depois.",
+      "Convide o outro lado a acrescentar ideias próprias."
+     ],
+     "q": "De quantas maneiras você poderia resolver um problema que tem agora?",
+     "c": "Escreva cinco soluções possíveis para uma discordância antes de escolher."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "trivia",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Flags with stories",
+     "g": "Find out why so many flags look alike and why Nepal's is unique.",
+     "p": [
+      "Red, white and blue appear on many flags, from France to the United States to Thailand.",
+      "Nepal's flag is the only national flag that is not a rectangle: it is two stacked pennants.",
+      "Many flags carry meaning: colours and symbols can stand for land, sea, history or hope."
+     ],
+     "q": "Which flag do you find most beautiful, and what does it show?",
+     "c": "Draw your favourite flag from memory and explain its colours to someone."
+    },
+    "de": {
+     "t": "Flaggen mit Geschichte",
+     "g": "Erfahre, warum so viele Flaggen ähnlich aussehen und warum die nepalesische einzigartig ist.",
+     "p": [
+      "Rot, Weiß und Blau erscheinen auf vielen Flaggen, von Frankreich über die USA bis Thailand.",
+      "Nepals Flagge ist die einzige Nationalflagge ohne Rechteckform: zwei gestapelte Wimpel.",
+      "Viele Flaggen haben Bedeutung: Farben und Symbole stehen für Land, Meer, Geschichte oder Hoffnung."
+     ],
+     "q": "Welche Flagge findest du am schönsten, und was zeigt sie?",
+     "c": "Zeichne deine Lieblingsflagge aus dem Gedächtnis und erkläre jemandem ihre Farben."
+    },
+    "es": {
+     "t": "Banderas con historia",
+     "g": "Descubre por qué tantas banderas se parecen y por qué la de Nepal es única.",
+     "p": [
+      "El rojo, el blanco y el azul aparecen en muchas banderas, de Francia a Estados Unidos y Tailandia.",
+      "La bandera de Nepal es la única nacional que no es rectangular: son dos banderines apilados.",
+      "Muchas banderas tienen significado: colores y símbolos representan tierra, mar, historia o esperanza."
+     ],
+     "q": "¿Qué bandera te parece la más bonita y qué muestra?",
+     "c": "Dibuja tu bandera favorita de memoria y explica sus colores a alguien."
+    },
+    "fr": {
+     "t": "Drapeaux et leurs histoires",
+     "g": "Découvre pourquoi tant de drapeaux se ressemblent et pourquoi celui du Népal est unique.",
+     "p": [
+      "Le rouge, le blanc et le bleu figurent sur de nombreux drapeaux, de la France aux États-Unis et à la Thaïlande.",
+      "Le drapeau du Népal est le seul drapeau national non rectangulaire : deux fanions superposés.",
+      "Beaucoup de drapeaux ont un sens : couleurs et symboles évoquent terre, mer, histoire ou espoir."
+     ],
+     "q": "Quel drapeau trouves-tu le plus beau, et que montre-t-il ?",
+     "c": "Dessine ton drapeau préféré de mémoire et explique ses couleurs à quelqu'un."
+    },
+    "it": {
+     "t": "Bandiere con una storia",
+     "g": "Scopri perché tante bandiere si somigliano e perché quella del Nepal è unica.",
+     "p": [
+      "Rosso, bianco e blu compaiono su molte bandiere, dalla Francia agli Stati Uniti alla Thailandia.",
+      "La bandiera del Nepal è l'unica nazionale non rettangolare: due gagliardetti sovrapposti.",
+      "Molte bandiere hanno un significato: colori e simboli rappresentano terra, mare, storia o speranza."
+     ],
+     "q": "Quale bandiera trovi più bella e cosa mostra?",
+     "c": "Disegna a memoria la tua bandiera preferita e spiega i suoi colori a qualcuno."
+    },
+    "pt": {
+     "t": "Bandeiras com história",
+     "g": "Descobre porque é que tantas bandeiras se parecem e porque a do Nepal é única.",
+     "p": [
+      "O vermelho, o branco e o azul surgem em muitas bandeiras, da França aos Estados Unidos e à Tailândia.",
+      "A bandeira do Nepal é a única nacional que não é retangular: são dois galhardetes sobrepostos.",
+      "Muitas bandeiras têm significado: cores e símbolos representam terra, mar, história ou esperança."
+     ],
+     "q": "Que bandeira achas mais bonita e o que mostra?",
+     "c": "Desenha de memória a tua bandeira favorita e explica as cores a alguém."
+    },
+    "pt_BR": {
+     "t": "Bandeiras com história",
+     "g": "Descubra por que tantas bandeiras se parecem e por que a do Nepal é única.",
+     "p": [
+      "O vermelho, o branco e o azul aparecem em muitas bandeiras, da França aos Estados Unidos e à Tailândia.",
+      "A bandeira do Nepal é a única nacional que não é retangular: são dois galhardetes sobrepostos.",
+      "Muitas bandeiras têm significado: cores e símbolos representam terra, mar, história ou esperança."
+     ],
+     "q": "Qual bandeira você acha mais bonita e o que ela mostra?",
+     "c": "Desenhe de memória a sua bandeira favorita e explique as cores para alguém."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Animal record holders",
+     "g": "Meet the fastest and biggest animals in the natural world.",
+     "p": [
+      "The cheetah is the fastest land animal, sprinting in short bursts faster than a car in town.",
+      "The blue whale is the largest animal that has ever lived, bigger than any dinosaur.",
+      "The peregrine falcon is the fastest animal of all when it dives through the sky."
+     ],
+     "q": "Which animal fascinates you most, and what would you ask it if it could talk?",
+     "c": "Imagine a race between a cheetah, a falcon and a whale and say who wins where."
+    },
+    "de": {
+     "t": "Tierische Rekordhalter",
+     "g": "Lerne die schnellsten und größten Tiere der Natur kennen.",
+     "p": [
+      "Der Gepard ist das schnellste Landtier und sprintet kurz schneller als ein Auto in der Stadt.",
+      "Der Blauwal ist das größte Tier, das je gelebt hat, größer als jeder Dinosaurier.",
+      "Der Wanderfalke ist im Sturzflug das schnellste Tier überhaupt."
+     ],
+     "q": "Welches Tier fasziniert dich am meisten, und was würdest du es fragen, wenn es sprechen könnte?",
+     "c": "Stell dir ein Rennen zwischen Gepard, Falke und Wal vor und sag, wer wo gewinnt."
+    },
+    "es": {
+     "t": "Animales récord",
+     "g": "Conoce a los animales más rápidos y grandes de la naturaleza.",
+     "p": [
+      "El guepardo es el animal terrestre más rápido y corre en ráfagas más que un coche en ciudad.",
+      "La ballena azul es el animal más grande que ha existido, mayor que cualquier dinosaurio.",
+      "El halcón peregrino es el animal más rápido de todos cuando se lanza en picado."
+     ],
+     "q": "¿Qué animal te fascina más y qué le preguntarías si pudiera hablar?",
+     "c": "Imagina una carrera entre guepardo, halcón y ballena y di quién gana dónde."
+    },
+    "fr": {
+     "t": "Animaux recordmen",
+     "g": "Découvre les animaux les plus rapides et les plus grands de la nature.",
+     "p": [
+      "Le guépard est l'animal terrestre le plus rapide, plus qu'une voiture en ville sur de courtes distances.",
+      "La baleine bleue est le plus grand animal ayant jamais vécu, plus grand que tout dinosaure.",
+      "Le faucon pèlerin est l'animal le plus rapide de tous quand il pique du haut du ciel."
+     ],
+     "q": "Quel animal te fascine le plus, et que lui demanderais-tu s'il parlait ?",
+     "c": "Imagine une course entre guépard, faucon et baleine et dis qui gagne où."
+    },
+    "it": {
+     "t": "Animali da record",
+     "g": "Conosci gli animali più veloci e più grandi della natura.",
+     "p": [
+      "Il ghepardo è l'animale terrestre più veloce e scatta più di un'auto in città per brevi tratti.",
+      "La balenottera azzurra è il più grande animale mai vissuto, più di qualsiasi dinosauro.",
+      "Il falco pellegrino è l'animale più veloce di tutti quando si getta in picchiata."
+     ],
+     "q": "Quale animale ti affascina di più e cosa gli chiederesti se parlasse?",
+     "c": "Immagina una gara fra ghepardo, falco e balena e dì chi vince dove."
+    },
+    "pt": {
+     "t": "Animais recordistas",
+     "g": "Conhece os animais mais rápidos e maiores da natureza.",
+     "p": [
+      "A chita é o animal terrestre mais rápido e, em curtos sprints, supera um carro na cidade.",
+      "A baleia-azul é o maior animal que alguma vez existiu, maior do que qualquer dinossauro.",
+      "O falcão-peregrino é o animal mais rápido de todos quando mergulha do céu."
+     ],
+     "q": "Que animal mais te fascina e o que lhe perguntarias se falasse?",
+     "c": "Imagina uma corrida entre chita, falcão e baleia e diz quem ganha onde."
+    },
+    "pt_BR": {
+     "t": "Animais recordistas",
+     "g": "Conheça os animais mais rápidos e maiores da natureza.",
+     "p": [
+      "O guepardo é o animal terrestre mais rápido e, em curtas arrancadas, supera um carro na cidade.",
+      "A baleia-azul é o maior animal que já existiu, maior do que qualquer dinossauro.",
+      "O falcão-peregrino é o animal mais rápido de todos quando mergulha do céu."
+     ],
+     "q": "Qual animal mais fascina você e o que perguntaria a ele se falasse?",
+     "c": "Imagine uma corrida entre guepardo, falcão e baleia e diga quem ganha onde."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Surprising animal facts",
+     "g": "Collect odd animal facts that make great conversation starters.",
+     "p": [
+      "Octopuses have three hearts and blue blood.",
+      "A group of flamingos is called a flamboyance, a name as colourful as the birds.",
+      "Giraffes have the same number of neck bones as humans: seven, just much longer."
+     ],
+     "q": "Which animal fact would you share to surprise a friend at dinner?",
+     "c": "Share the octopus or flamingo fact with someone and watch their reaction."
+    },
+    "de": {
+     "t": "Überraschende Tierfakten",
+     "g": "Sammle seltsame Tierfakten, die gute Gesprächsstarter sind.",
+     "p": [
+      "Kraken haben drei Herzen und blaues Blut.",
+      "Eine Gruppe Flamingos heißt auf Englisch Flamboyance, ein so bunter Name wie die Vögel.",
+      "Giraffen haben genauso viele Halswirbel wie Menschen: sieben, nur viel länger."
+     ],
+     "q": "Welchen Tierfakt würdest du beim Abendessen erzählen, um einen Freund zu überraschen?",
+     "c": "Erzähle jemandem den Kraken- oder Flamingo-Fakt und beobachte die Reaktion."
+    },
+    "es": {
+     "t": "Datos sorprendentes de animales",
+     "g": "Reúne datos animales raros que son buenos temas de conversación.",
+     "p": [
+      "Los pulpos tienen tres corazones y sangre azul.",
+      "Un grupo de flamencos se llama en inglés flamboyance, un nombre tan colorido como las aves.",
+      "Las jirafas tienen las mismas vértebras de cuello que los humanos: siete, pero mucho más largas."
+     ],
+     "q": "¿Qué dato animal contarías para sorprender a un amigo en la cena?",
+     "c": "Cuéntale a alguien el dato del pulpo o del flamenco y observa su reacción."
+    },
+    "fr": {
+     "t": "Faits animaux surprenants",
+     "g": "Collectionne des faits insolites sur les animaux, parfaits pour lancer une conversation.",
+     "p": [
+      "Les pieuvres ont trois cœurs et du sang bleu.",
+      "Un groupe de flamants se dit flamboyance en anglais, un nom aussi coloré que les oiseaux.",
+      "Les girafes ont autant de vertèbres cervicales que nous : sept, mais bien plus longues."
+     ],
+     "q": "Quel fait animal raconterais-tu pour surprendre un ami au dîner ?",
+     "c": "Raconte le fait de la pieuvre ou du flamant à quelqu'un et observe sa réaction."
+    },
+    "it": {
+     "t": "Curiosità animali sorprendenti",
+     "g": "Raccogli curiosità animali strane che aprono belle conversazioni.",
+     "p": [
+      "I polpi hanno tre cuori e sangue blu.",
+      "Un gruppo di fenicotteri in inglese si dice flamboyance, un nome colorato come gli uccelli.",
+      "Le giraffe hanno le stesse vertebre del collo degli umani: sette, ma molto più lunghe."
+     ],
+     "q": "Quale curiosità animale racconteresti per sorprendere un amico a cena?",
+     "c": "Racconta a qualcuno la curiosità del polpo o del fenicottero e osserva la reazione."
+    },
+    "pt": {
+     "t": "Curiosidades animais surpreendentes",
+     "g": "Reúne curiosidades animais estranhas que dão boas conversas.",
+     "p": [
+      "Os polvos têm três corações e sangue azul.",
+      "Um grupo de flamingos chama-se em inglês flamboyance, um nome tão colorido como as aves.",
+      "As girafas têm o mesmo número de vértebras no pescoço que os humanos: sete, só que bem mais longas."
+     ],
+     "q": "Que curiosidade animal contarias para surpreender um amigo ao jantar?",
+     "c": "Conta a alguém a curiosidade do polvo ou do flamingo e observa a reação."
+    },
+    "pt_BR": {
+     "t": "Curiosidades animais surpreendentes",
+     "g": "Reúna curiosidades animais estranhas que rendem boas conversas.",
+     "p": [
+      "Os polvos têm três corações e sangue azul.",
+      "Um grupo de flamingos se chama em inglês flamboyance, um nome tão colorido quanto as aves.",
+      "As girafas têm o mesmo número de vértebras no pescoço que os humanos: sete, só que bem mais longas."
+     ],
+     "q": "Qual curiosidade animal você contaria para surpreender um amigo no jantar?",
+     "c": "Conte a alguém a curiosidade do polvo ou do flamingo e observe a reação."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bird trivia",
+     "g": "Learn record-breaking and surprising facts about birds.",
+     "p": [
+      "Ostriches lay the largest eggs of any bird and are the largest living birds.",
+      "Hummingbirds can fly backwards and even hover in place.",
+      "Wild penguins live mostly in the Southern Hemisphere, and not only on ice."
+     ],
+     "q": "Which bird do you see most often near your home, and do you know its song?",
+     "c": "Watch or listen for birds for two minutes today and name one you notice."
+    },
+    "de": {
+     "t": "Vogel-Quiz",
+     "g": "Lerne rekordverdächtige und überraschende Fakten über Vögel.",
+     "p": [
+      "Strauße legen die größten Eier aller Vögel und sind die größten lebenden Vögel.",
+      "Kolibris können rückwärts fliegen und sogar auf der Stelle schweben.",
+      "Wilde Pinguine leben überwiegend auf der Südhalbkugel, und nicht nur im Eis."
+     ],
+     "q": "Welchen Vogel siehst du am häufigsten bei dir zu Hause, und kennst du seinen Gesang?",
+     "c": "Beobachte oder lausche heute zwei Minuten Vögeln und nenne einen, den du bemerkst."
+    },
+    "es": {
+     "t": "Trivia de aves",
+     "g": "Aprende datos récord y sorprendentes sobre las aves.",
+     "p": [
+      "Las avestruces ponen los huevos más grandes de todas las aves y son las aves vivas más grandes.",
+      "Los colibríes pueden volar hacia atrás e incluso quedarse suspendidos en el aire.",
+      "Los pingüinos salvajes viven sobre todo en el hemisferio sur, y no solo entre hielo."
+     ],
+     "q": "¿Qué ave ves más a menudo cerca de casa y conoces su canto?",
+     "c": "Observa o escucha aves dos minutos hoy y nombra una que notes."
+    },
+    "fr": {
+     "t": "Quiz sur les oiseaux",
+     "g": "Apprends des faits records et surprenants sur les oiseaux.",
+     "p": [
+      "Les autruches pondent les plus gros œufs et sont les plus grands oiseaux vivants.",
+      "Les colibris peuvent voler en arrière et même faire du sur-place.",
+      "Les manchots sauvages vivent surtout dans l'hémisphère sud, et pas seulement sur la glace."
+     ],
+     "q": "Quel oiseau vois-tu le plus souvent près de chez toi, et connais-tu son chant ?",
+     "c": "Observe ou écoute les oiseaux deux minutes aujourd'hui et nomme-en un."
+    },
+    "it": {
+     "t": "Curiosità sugli uccelli",
+     "g": "Impara fatti da record e sorprendenti sugli uccelli.",
+     "p": [
+      "Gli struzzi depongono le uova più grandi e sono gli uccelli viventi più grandi.",
+      "I colibrì possono volare all'indietro e persino librarsi sul posto.",
+      "I pinguini selvatici vivono soprattutto nell'emisfero australe, e non solo sul ghiaccio."
+     ],
+     "q": "Quale uccello vedi più spesso vicino a casa e conosci il suo canto?",
+     "c": "Osserva o ascolta gli uccelli per due minuti oggi e nomina uno che noti."
+    },
+    "pt": {
+     "t": "Curiosidades sobre aves",
+     "g": "Aprende factos recordistas e surpreendentes sobre as aves.",
+     "p": [
+      "As avestruzes põem os maiores ovos e são as maiores aves vivas.",
+      "Os colibris conseguem voar para trás e até pairar no mesmo sítio.",
+      "Os pinguins selvagens vivem sobretudo no hemisfério sul, e não apenas no gelo."
+     ],
+     "q": "Que ave vês mais vezes perto de casa e conheces o seu canto?",
+     "c": "Observa ou ouve aves durante dois minutos hoje e nomeia uma que notes."
+    },
+    "pt_BR": {
+     "t": "Curiosidades sobre aves",
+     "g": "Aprenda fatos recordistas e surpreendentes sobre as aves.",
+     "p": [
+      "As avestruzes botam os maiores ovos e são as maiores aves vivas.",
+      "Os beija-flores conseguem voar de costas e até pairar no mesmo lugar.",
+      "Os pinguins selvagens vivem principalmente no hemisfério sul, e não só no gelo."
+     ],
+     "q": "Qual ave você vê mais perto de casa e conhece o canto dela?",
+     "c": "Observe ou ouça aves por dois minutos hoje e nomeie uma que notar."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ocean creatures",
+     "g": "Dive into strange facts about life in the sea.",
+     "p": [
+      "Jellyfish have no brain, no heart and no bones, yet they have lived for hundreds of millions of years.",
+      "Seahorse fathers carry the babies in a pouch until they are born.",
+      "Some deep-sea fish make their own light, a glow called bioluminescence."
+     ],
+     "q": "If you could explore the sea in a tiny submarine, what would you hope to find?",
+     "c": "Look up a picture of a glowing sea creature and describe it in one sentence."
+    },
+    "de": {
+     "t": "Meerestiere",
+     "g": "Tauche ein in seltsame Fakten über das Leben im Meer.",
+     "p": [
+      "Quallen haben kein Gehirn, kein Herz und keine Knochen und leben doch seit hunderten Millionen Jahren.",
+      "Seepferdchen-Väter tragen die Babys in einer Bruttasche, bis sie geboren werden.",
+      "Manche Tiefseefische erzeugen eigenes Licht, ein Leuchten namens Biolumineszenz."
+     ],
+     "q": "Wenn du das Meer in einem kleinen U-Boot erkunden könntest, was würdest du finden wollen?",
+     "c": "Such ein Bild eines leuchtenden Meerestiers und beschreibe es in einem Satz."
+    },
+    "es": {
+     "t": "Criaturas del océano",
+     "g": "Sumérgete en datos extraños sobre la vida marina.",
+     "p": [
+      "Las medusas no tienen cerebro, corazón ni huesos, y llevan cientos de millones de años viviendo.",
+      "Los padres caballito de mar llevan a las crías en una bolsa hasta que nacen.",
+      "Algunos peces de aguas profundas producen su propia luz, un brillo llamado bioluminiscencia."
+     ],
+     "q": "Si pudieras explorar el mar en un pequeño submarino, ¿qué esperarías encontrar?",
+     "c": "Busca la foto de un animal marino luminoso y descríbelo en una frase."
+    },
+    "fr": {
+     "t": "Créatures de l'océan",
+     "g": "Plonge dans des faits étranges sur la vie marine.",
+     "p": [
+      "Les méduses n'ont ni cerveau, ni cœur, ni os, et vivent pourtant depuis des centaines de millions d'années.",
+      "Chez les hippocampes, c'est le père qui porte les bébés dans une poche jusqu'à la naissance.",
+      "Certains poissons des abysses produisent leur propre lumière : c'est la bioluminescence."
+     ],
+     "q": "Si tu pouvais explorer la mer en petit sous-marin, qu'espérerais-tu trouver ?",
+     "c": "Cherche l'image d'une créature marine lumineuse et décris-la en une phrase."
+    },
+    "it": {
+     "t": "Creature dell'oceano",
+     "g": "Immergiti in fatti strani sulla vita marina.",
+     "p": [
+      "Le meduse non hanno cervello, cuore né ossa, eppure vivono da centinaia di milioni di anni.",
+      "I cavallucci marini maschi portano i piccoli in una tasca finché nascono.",
+      "Alcuni pesci abissali producono luce propria, un bagliore detto bioluminescenza."
+     ],
+     "q": "Se potessi esplorare il mare con un piccolo sommergibile, cosa speri di trovare?",
+     "c": "Cerca l'immagine di una creatura marina luminosa e descrivila in una frase."
+    },
+    "pt": {
+     "t": "Criaturas do oceano",
+     "g": "Mergulha em factos estranhos sobre a vida no mar.",
+     "p": [
+      "As alforrecas não têm cérebro, coração nem ossos e vivem há centenas de milhões de anos.",
+      "Os cavalos-marinhos machos carregam as crias numa bolsa até nascerem.",
+      "Alguns peixes das profundezas fazem a sua própria luz, um brilho chamado bioluminescência."
+     ],
+     "q": "Se pudesses explorar o mar num pequeno submarino, o que esperavas encontrar?",
+     "c": "Procura a imagem de uma criatura marinha luminosa e descreve-a numa frase."
+    },
+    "pt_BR": {
+     "t": "Criaturas do oceano",
+     "g": "Mergulhe em fatos estranhos sobre a vida no mar.",
+     "p": [
+      "As águas-vivas não têm cérebro, coração nem ossos e vivem há centenas de milhões de anos.",
+      "Os cavalos-marinhos machos carregam os filhotes numa bolsa até nascerem.",
+      "Alguns peixes de águas profundas fazem a própria luz, um brilho chamado bioluminescência."
+     ],
+     "q": "Se você pudesse explorar o mar num pequeno submarino, o que esperaria encontrar?",
+     "c": "Procure a imagem de uma criatura marinha luminosa e descreva em uma frase."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Insects and tiny wonders",
+     "g": "Discover how small creatures do remarkable things.",
+     "p": [
+      "Honeybees share directions to flowers with a waggle dance.",
+      "Ants can carry many times their own body weight.",
+      "Butterflies taste with their feet, and some insects live only a day as adults."
+     ],
+     "q": "Is there a tiny creature you find charming or useful in your garden or park?",
+     "c": "Watch an ant or a bee for one minute and tell what it was doing."
+    },
+    "de": {
+     "t": "Insekten und kleine Wunder",
+     "g": "Entdecke, wie kleine Lebewesen Erstaunliches leisten.",
+     "p": [
+      "Honigbienen teilen den Weg zu Blumen mit einem Schwänzeltanz mit.",
+      "Ameisen können ein Vielfaches ihres eigenen Körpergewichts tragen.",
+      "Schmetterlinge schmecken mit den Füßen, und manche Insekten leben als Erwachsene nur einen Tag."
+     ],
+     "q": "Gibt es ein winziges Tier, das du in Garten oder Park charmant oder nützlich findest?",
+     "c": "Beobachte eine Minute lang eine Ameise oder Biene und erzähle, was sie tat."
+    },
+    "es": {
+     "t": "Insectos y pequeñas maravillas",
+     "g": "Descubre cómo las criaturas diminutas hacen cosas notables.",
+     "p": [
+      "Las abejas comunican la ruta a las flores con una danza de meneo.",
+      "Las hormigas pueden cargar muchas veces su propio peso.",
+      "Las mariposas saborean con las patas, y algunos insectos adultos viven solo un día."
+     ],
+     "q": "¿Hay alguna criatura diminuta que te parezca encantadora o útil en tu jardín o parque?",
+     "c": "Observa una hormiga o una abeja un minuto y cuenta qué hacía."
+    },
+    "fr": {
+     "t": "Insectes et petites merveilles",
+     "g": "Découvre comment de petites créatures accomplissent des choses remarquables.",
+     "p": [
+      "Les abeilles indiquent le chemin des fleurs par une danse frétillante.",
+      "Les fourmis peuvent porter plusieurs fois leur propre poids.",
+      "Les papillons goûtent avec leurs pattes, et certains insectes adultes ne vivent qu'un jour."
+     ],
+     "q": "Y a-t-il une petite bête que tu trouves charmante ou utile dans ton jardin ou ton parc ?",
+     "c": "Observe une fourmi ou une abeille une minute et raconte ce qu'elle faisait."
+    },
+    "it": {
+     "t": "Insetti e piccole meraviglie",
+     "g": "Scopri come piccole creature compiono cose notevoli.",
+     "p": [
+      "Le api mellifere indicano la direzione dei fiori con una danza scodinzolante.",
+      "Le formiche possono trasportare molte volte il proprio peso.",
+      "Le farfalle sentono il sapore con le zampe e alcuni insetti adulti vivono un solo giorno."
+     ],
+     "q": "C'è una creatura minuscola che trovi affascinante o utile nel tuo giardino o parco?",
+     "c": "Osserva una formica o un'ape per un minuto e racconta cosa faceva."
+    },
+    "pt": {
+     "t": "Insetos e pequenas maravilhas",
+     "g": "Descobre como criaturas minúsculas fazem coisas notáveis.",
+     "p": [
+      "As abelhas indicam o caminho das flores com uma dança de abanar.",
+      "As formigas conseguem carregar muitas vezes o seu próprio peso.",
+      "As borboletas provam com as patas, e alguns insetos adultos vivem apenas um dia."
+     ],
+     "q": "Há alguma criatura minúscula que achas encantadora ou útil no teu jardim ou parque?",
+     "c": "Observa uma formiga ou uma abelha durante um minuto e conta o que fazia."
+    },
+    "pt_BR": {
+     "t": "Insetos e pequenas maravilhas",
+     "g": "Descubra como criaturas minúsculas fazem coisas notáveis.",
+     "p": [
+      "As abelhas indicam o caminho das flores com uma dança do requebrado.",
+      "As formigas conseguem carregar muitas vezes o próprio peso.",
+      "As borboletas sentem o gosto com as patas, e alguns insetos adultos vivem só um dia."
+     ],
+     "q": "Há alguma criatura minúscula que você acha encantadora ou útil no seu jardim ou parque?",
+     "c": "Observe uma formiga ou uma abelha por um minuto e conte o que ela fazia."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Our solar system",
+     "g": "Learn the eight planets and a fact about each kind.",
+     "p": [
+      "The eight planets in order from the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune.",
+      "Jupiter is the largest planet, and Saturn is famous for its bright rings.",
+      "A handy memory line is a sentence whose first letters match the planets' names."
+     ],
+     "q": "Which planet would you most like to visit, and what would you do there?",
+     "c": "Invent a short sentence whose first letters spell the eight planets in order."
+    },
+    "de": {
+     "t": "Unser Sonnensystem",
+     "g": "Lerne die acht Planeten und je einen Fakt dazu kennen.",
+     "p": [
+      "Die acht Planeten ab der Sonne: Merkur, Venus, Erde, Mars, Jupiter, Saturn, Uranus, Neptun.",
+      "Jupiter ist der größte Planet, und Saturn ist berühmt für seine hellen Ringe.",
+      "Ein Merksatz, dessen Anfangsbuchstaben zu den Planetennamen passen, hilft sehr."
+     ],
+     "q": "Welchen Planeten würdest du am liebsten besuchen, und was würdest du dort tun?",
+     "c": "Erfinde einen kurzen Satz, dessen Anfangsbuchstaben die acht Planeten der Reihe nach ergeben."
+    },
+    "es": {
+     "t": "Nuestro sistema solar",
+     "g": "Aprende los ocho planetas y un dato de cada tipo.",
+     "p": [
+      "Los ocho planetas desde el Sol: Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano, Neptuno.",
+      "Júpiter es el planeta más grande y Saturno es famoso por sus anillos brillantes.",
+      "Una frase cuyas iniciales coincidan con los planetas es un buen truco de memoria."
+     ],
+     "q": "¿Qué planeta te gustaría visitar más y qué harías allí?",
+     "c": "Inventa una frase corta cuyas iniciales deletreen los ocho planetas en orden."
+    },
+    "fr": {
+     "t": "Notre système solaire",
+     "g": "Apprends les huit planètes et un fait sur chaque type.",
+     "p": [
+      "Les huit planètes depuis le Soleil : Mercure, Vénus, Terre, Mars, Jupiter, Saturne, Uranus, Neptune.",
+      "Jupiter est la plus grande planète, et Saturne est célèbre pour ses anneaux brillants.",
+      "Une phrase dont les initiales suivent les planètes est une bonne astuce mnémotechnique."
+     ],
+     "q": "Quelle planète aimerais-tu visiter le plus, et que ferais-tu là-bas ?",
+     "c": "Invente une courte phrase dont les initiales donnent les huit planètes dans l'ordre."
+    },
+    "it": {
+     "t": "Il nostro sistema solare",
+     "g": "Impara gli otto pianeti e una curiosità per ogni tipo.",
+     "p": [
+      "Gli otto pianeti dal Sole: Mercurio, Venere, Terra, Marte, Giove, Saturno, Urano, Nettuno.",
+      "Giove è il pianeta più grande e Saturno è famoso per i suoi anelli luminosi.",
+      "Una frase le cui iniziali corrispondono ai pianeti è un ottimo trucco di memoria."
+     ],
+     "q": "Quale pianeta ti piacerebbe visitare di più e cosa faresti lì?",
+     "c": "Inventa una breve frase le cui iniziali formino gli otto pianeti in ordine."
+    },
+    "pt": {
+     "t": "O nosso sistema solar",
+     "g": "Aprende os oito planetas e um facto sobre cada tipo.",
+     "p": [
+      "Os oito planetas a partir do Sol: Mercúrio, Vénus, Terra, Marte, Júpiter, Saturno, Urano, Neptuno.",
+      "Júpiter é o maior planeta e Saturno é famoso pelos seus anéis brilhantes.",
+      "Uma frase cujas iniciais coincidam com os planetas é um bom truque de memória."
+     ],
+     "q": "Que planeta gostarias mais de visitar e o que farias lá?",
+     "c": "Inventa uma frase curta cujas iniciais soletrem os oito planetas por ordem."
+    },
+    "pt_BR": {
+     "t": "Nosso sistema solar",
+     "g": "Aprenda os oito planetas e um fato sobre cada tipo.",
+     "p": [
+      "Os oito planetas a partir do Sol: Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano, Netuno.",
+      "Júpiter é o maior planeta e Saturno é famoso pelos anéis brilhantes.",
+      "Uma frase cujas iniciais coincidam com os planetas é um bom truque de memória."
+     ],
+     "q": "Qual planeta você mais gostaria de visitar e o que faria lá?",
+     "c": "Invente uma frase curta cujas iniciais soletrem os oito planetas em ordem."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Moon facts",
+     "g": "Explore surprising facts about Earth's only natural satellite.",
+     "p": [
+      "The Moon always shows us the same face, because it turns once for every orbit around Earth.",
+      "Twelve astronauts walked on the Moon between 1969 and 1972.",
+      "The Moon's pull is the main cause of ocean tides on Earth."
+     ],
+     "q": "Have you ever watched a full moon rise, and how did it make you feel?",
+     "c": "Look at the Moon tonight, if you can, and spot its dark patches and bright areas."
+    },
+    "de": {
+     "t": "Mondfakten",
+     "g": "Entdecke überraschende Fakten über den einzigen natürlichen Satelliten der Erde.",
+     "p": [
+      "Der Mond zeigt uns immer dieselbe Seite, weil er sich pro Erdumlauf genau einmal dreht.",
+      "Zwölf Astronauten gingen zwischen 1969 und 1972 auf dem Mond.",
+      "Die Anziehung des Mondes ist die Hauptursache der Gezeiten auf der Erde."
+     ],
+     "q": "Hast du schon einmal einen Vollmond aufgehen sehen, und wie hat er auf dich gewirkt?",
+     "c": "Betrachte heute Abend den Mond, falls möglich, und finde dunkle und helle Flächen."
+    },
+    "es": {
+     "t": "Datos de la Luna",
+     "g": "Explora datos sorprendentes sobre el único satélite natural de la Tierra.",
+     "p": [
+      "La Luna siempre nos muestra la misma cara, porque gira una vez por cada órbita alrededor de la Tierra.",
+      "Doce astronautas caminaron sobre la Luna entre 1969 y 1972.",
+      "La atracción de la Luna es la principal causa de las mareas en la Tierra."
+     ],
+     "q": "¿Has visto salir una luna llena alguna vez y qué sentiste?",
+     "c": "Mira la Luna esta noche, si puedes, y busca sus manchas oscuras y zonas claras."
+    },
+    "fr": {
+     "t": "Faits sur la Lune",
+     "g": "Explore des faits surprenants sur l'unique satellite naturel de la Terre.",
+     "p": [
+      "La Lune nous montre toujours la même face, car elle tourne une fois par tour autour de la Terre.",
+      "Douze astronautes ont marché sur la Lune entre 1969 et 1972.",
+      "L'attraction de la Lune est la principale cause des marées sur Terre."
+     ],
+     "q": "As-tu déjà vu se lever une pleine lune, et qu'as-tu ressenti ?",
+     "c": "Regarde la Lune ce soir, si possible, et repère ses taches sombres et ses zones claires."
+    },
+    "it": {
+     "t": "Curiosità sulla Luna",
+     "g": "Esplora fatti sorprendenti sull'unico satellite naturale della Terra.",
+     "p": [
+      "La Luna ci mostra sempre la stessa faccia, perché ruota una volta per ogni giro intorno alla Terra.",
+      "Dodici astronauti hanno camminato sulla Luna tra il 1969 e il 1972.",
+      "L'attrazione della Luna è la principale causa delle maree sulla Terra."
+     ],
+     "q": "Hai mai visto sorgere una luna piena e cosa hai provato?",
+     "c": "Guarda la Luna stasera, se puoi, e individua le macchie scure e le zone chiare."
+    },
+    "pt": {
+     "t": "Factos sobre a Lua",
+     "g": "Explora factos surpreendentes sobre o único satélite natural da Terra.",
+     "p": [
+      "A Lua mostra-nos sempre a mesma face, porque roda uma vez por cada órbita à volta da Terra.",
+      "Doze astronautas caminharam na Lua entre 1969 e 1972.",
+      "A atração da Lua é a principal causa das marés na Terra."
+     ],
+     "q": "Já viste nascer uma lua cheia e o que sentiste?",
+     "c": "Olha para a Lua esta noite, se puderes, e procura as manchas escuras e as zonas claras."
+    },
+    "pt_BR": {
+     "t": "Fatos sobre a Lua",
+     "g": "Explore fatos surpreendentes sobre o único satélite natural da Terra.",
+     "p": [
+      "A Lua nos mostra sempre a mesma face, porque gira uma vez a cada órbita ao redor da Terra.",
+      "Doze astronautas andaram na Lua entre 1969 e 1972.",
+      "A atração da Lua é a principal causa das marés na Terra."
+     ],
+     "q": "Você já viu nascer uma lua cheia e o que sentiu?",
+     "c": "Olhe para a Lua esta noite, se puder, e procure as manchas escuras e as áreas claras."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stars and constellations",
+     "g": "Learn what stars are and how people used them to find their way.",
+     "p": [
+      "The Sun is a star, the closest one to us, and the others are very far away.",
+      "Polaris, the North Star, sits almost directly above Earth's North Pole.",
+      "Constellations such as the Big Dipper and Orion are patterns that cultures named in stories."
+     ],
+     "q": "Which star pattern, if any, can you recognise in the night sky?",
+     "c": "On a clear night, find the Big Dipper or Orion and trace its shape."
+    },
+    "de": {
+     "t": "Sterne und Sternbilder",
+     "g": "Lerne, was Sterne sind und wie Menschen sie zur Orientierung nutzten.",
+     "p": [
+      "Die Sonne ist ein Stern, der uns nächste, und die anderen sind sehr weit entfernt.",
+      "Polaris, der Nordstern, steht fast genau über dem Nordpol der Erde.",
+      "Sternbilder wie der Große Wagen und Orion sind Muster, die Kulturen in Geschichten benannten."
+     ],
+     "q": "Welches Sternbild, falls überhaupt, erkennst du am Nachthimmel?",
+     "c": "Such in einer klaren Nacht den Großen Wagen oder Orion und zeichne die Form nach."
+    },
+    "es": {
+     "t": "Estrellas y constelaciones",
+     "g": "Aprende qué son las estrellas y cómo la gente las usó para orientarse.",
+     "p": [
+      "El Sol es una estrella, la más cercana a nosotros; las demás están muy lejos.",
+      "Polaris, la estrella del norte, está casi justo sobre el polo norte de la Tierra.",
+      "Constelaciones como la Osa Mayor y Orión son patrones que las culturas nombraron en relatos."
+     ],
+     "q": "¿Qué figura de estrellas, si alguna, reconoces en el cielo nocturno?",
+     "c": "En una noche clara, busca la Osa Mayor u Orión y traza su forma."
+    },
+    "fr": {
+     "t": "Étoiles et constellations",
+     "g": "Apprends ce que sont les étoiles et comment on s'en servait pour s'orienter.",
+     "p": [
+      "Le Soleil est une étoile, la plus proche de nous ; les autres sont très lointaines.",
+      "Polaris, l'étoile polaire, se trouve presque exactement au-dessus du pôle Nord terrestre.",
+      "Des constellations comme la Grande Ourse et Orion sont des motifs que les cultures ont nommés dans des récits."
+     ],
+     "q": "Quelle figure d'étoiles reconnais-tu, le cas échéant, dans le ciel nocturne ?",
+     "c": "Par nuit claire, trouve la Grande Ourse ou Orion et trace sa forme."
+    },
+    "it": {
+     "t": "Stelle e costellazioni",
+     "g": "Impara cosa sono le stelle e come le persone le usavano per orientarsi.",
+     "p": [
+      "Il Sole è una stella, la più vicina a noi; le altre sono lontanissime.",
+      "Polaris, la Stella Polare, si trova quasi esattamente sopra il Polo Nord terrestre.",
+      "Costellazioni come l'Orsa Maggiore e Orione sono figure che le culture hanno raccontato in storie."
+     ],
+     "q": "Quale disegno di stelle, se ce n'è uno, riconosci nel cielo notturno?",
+     "c": "In una notte limpida trova l'Orsa Maggiore o Orione e traccia la sua forma."
+    },
+    "pt": {
+     "t": "Estrelas e constelações",
+     "g": "Aprende o que são as estrelas e como as pessoas as usavam para se orientar.",
+     "p": [
+      "O Sol é uma estrela, a mais próxima de nós; as outras estão muito longe.",
+      "Polaris, a Estrela do Norte, fica quase mesmo por cima do Polo Norte da Terra.",
+      "Constelações como a Ursa Maior e Orionte são padrões que as culturas nomearam em histórias."
+     ],
+     "q": "Que desenho de estrelas, se algum, reconheces no céu noturno?",
+     "c": "Numa noite limpa, procura a Ursa Maior ou Orionte e traça a sua forma."
+    },
+    "pt_BR": {
+     "t": "Estrelas e constelações",
+     "g": "Aprenda o que são as estrelas e como as pessoas as usavam para se orientar.",
+     "p": [
+      "O Sol é uma estrela, a mais próxima de nós; as outras estão muito longe.",
+      "Polaris, a Estrela do Norte, fica quase exatamente acima do Polo Norte da Terra.",
+      "Constelações como a Ursa Maior e Órion são padrões que as culturas nomearam em histórias."
+     ],
+     "q": "Que desenho de estrelas, se algum, você reconhece no céu noturno?",
+     "c": "Numa noite limpa, procure a Ursa Maior ou Órion e trace a forma."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Human body basics",
+     "g": "Learn a few amazing facts about your own body.",
+     "p": [
+      "An adult has 206 bones, while babies are born with many more that join together as they grow.",
+      "The smallest bone in the body, the stapes, is in the ear and is about the size of a grain of rice.",
+      "The skin is the body's largest organ and renews itself all the time."
+     ],
+     "q": "Which part of the body do you find most amazing, and why?",
+     "c": "Feel your pulse for fifteen seconds and notice the steady rhythm of your heart."
+    },
+    "de": {
+     "t": "Grundlagen des menschlichen Körpers",
+     "g": "Lerne einige erstaunliche Fakten über deinen eigenen Körper.",
+     "p": [
+      "Ein Erwachsener hat 206 Knochen, Babys haben mehr, die beim Wachsen zusammenwachsen.",
+      "Der kleinste Knochen, der Steigbügel, liegt im Ohr und ist etwa so groß wie ein Reiskorn.",
+      "Die Haut ist das größte Organ des Körpers und erneuert sich ständig."
+     ],
+     "q": "Welchen Körperteil findest du am erstaunlichsten, und warum?",
+     "c": "Fühle fünfzehn Sekunden deinen Puls und achte auf den gleichmäßigen Rhythmus deines Herzens."
+    },
+    "es": {
+     "t": "Nociones básicas del cuerpo humano",
+     "g": "Aprende datos asombrosos sobre tu propio cuerpo.",
+     "p": [
+      "Un adulto tiene 206 huesos; los bebés nacen con más, que se unen al crecer.",
+      "El hueso más pequeño, el estribo, está en el oído y es del tamaño de un grano de arroz.",
+      "La piel es el órgano más grande del cuerpo y se renueva constantemente."
+     ],
+     "q": "¿Qué parte del cuerpo te parece más asombrosa y por qué?",
+     "c": "Siente tu pulso quince segundos y fíjate en el ritmo constante de tu corazón."
+    },
+    "fr": {
+     "t": "Bases du corps humain",
+     "g": "Apprends quelques faits étonnants sur ton propre corps.",
+     "p": [
+      "Un adulte a 206 os ; les bébés en ont davantage, qui se soudent en grandissant.",
+      "Le plus petit os, l'étrier, est dans l'oreille et a la taille d'un grain de riz.",
+      "La peau est le plus grand organe du corps et se renouvelle sans cesse."
+     ],
+     "q": "Quelle partie du corps trouves-tu la plus étonnante, et pourquoi ?",
+     "c": "Prends ton pouls quinze secondes et remarque le rythme régulier de ton cœur."
+    },
+    "it": {
+     "t": "Basi del corpo umano",
+     "g": "Impara alcuni fatti sorprendenti sul tuo corpo.",
+     "p": [
+      "Un adulto ha 206 ossa; i neonati ne hanno di più, che si uniscono crescendo.",
+      "L'osso più piccolo, la staffa, è nell'orecchio e ha la dimensione di un chicco di riso.",
+      "La pelle è l'organo più grande del corpo e si rinnova di continuo."
+     ],
+     "q": "Quale parte del corpo trovi più sorprendente e perché?",
+     "c": "Senti il tuo battito per quindici secondi e nota il ritmo costante del cuore."
+    },
+    "pt": {
+     "t": "Noções básicas do corpo humano",
+     "g": "Aprende alguns factos espantosos sobre o teu próprio corpo.",
+     "p": [
+      "Um adulto tem 206 ossos; os bebés nascem com mais, que se juntam ao crescer.",
+      "O osso mais pequeno, o estribo, está no ouvido e tem o tamanho de um grão de arroz.",
+      "A pele é o maior órgão do corpo e renova-se constantemente."
+     ],
+     "q": "Que parte do corpo achas mais espantosa e porquê?",
+     "c": "Sente a tua pulsação durante quinze segundos e repara no ritmo constante do coração."
+    },
+    "pt_BR": {
+     "t": "Noções básicas do corpo humano",
+     "g": "Aprenda alguns fatos espantosos sobre o seu próprio corpo.",
+     "p": [
+      "Um adulto tem 206 ossos; os bebês nascem com mais, que se juntam ao crescer.",
+      "O menor osso, o estribo, fica no ouvido e tem o tamanho de um grão de arroz.",
+      "A pele é o maior órgão do corpo e se renova o tempo todo."
+     ],
+     "q": "Qual parte do corpo você acha mais espantosa e por quê?",
+     "c": "Sinta sua pulsação por quinze segundos e perceba o ritmo constante do coração."
+    }
+   }
+  }
+ ]
+}

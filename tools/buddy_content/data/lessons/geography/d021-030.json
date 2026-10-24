@@ -1,0 +1,835 @@
+{
+ "topic": "geography",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Digital maps and GPS",
+     "g": "See how satellites help your phone know exactly where you are.",
+     "p": [
+      "GPS satellites orbit Earth and send out signals with the exact time.",
+      "Your phone compares signals from several satellites to work out its position.",
+      "Digital maps then draw that position on a map and plan routes for you."
+     ],
+     "q": "How do you usually find your way in a new place?",
+     "c": "Switch off map apps for a short walk and use landmarks to find your way home."
+    },
+    "de": {
+     "t": "Digitale Karten und GPS",
+     "g": "Sieh, wie Satelliten deinem Handy helfen, genau zu wissen, wo du bist.",
+     "p": [
+      "GPS-Satelliten kreisen um die Erde und senden Signale mit der genauen Uhrzeit.",
+      "Dein Handy vergleicht die Signale mehrerer Satelliten und berechnet seine Position.",
+      "Digitale Karten zeichnen diese Position ein und planen dir Routen."
+     ],
+     "q": "Wie findest du dich meist an einem neuen Ort zurecht?",
+     "c": "Geh ohne Karten-App ein Stück und finde mit Orientierungspunkten heim."
+    },
+    "es": {
+     "t": "Mapas digitales y GPS",
+     "g": "Descubre cómo los satélites ayudan a tu móvil a saber dónde estás.",
+     "p": [
+      "Los satélites GPS orbitan la Tierra y emiten señales con la hora exacta.",
+      "Tu móvil compara las señales de varios satélites para calcular su posición.",
+      "Los mapas digitales dibujan esa posición y te trazan rutas."
+     ],
+     "q": "¿Cómo te orientas normalmente en un lugar nuevo?",
+     "c": "Haz un paseo corto sin app de mapas y vuelve a casa guiándote por referencias."
+    },
+    "fr": {
+     "t": "Cartes numériques et GPS",
+     "g": "Vois comment les satellites aident ton téléphone à savoir où tu es.",
+     "p": [
+      "Les satellites GPS tournent autour de la Terre et émettent des signaux avec l'heure exacte.",
+      "Ton téléphone compare les signaux de plusieurs satellites pour calculer sa position.",
+      "Les cartes numériques dessinent cette position et te proposent des itinéraires."
+     ],
+     "q": "Comment t'orientes-tu d'habitude dans un lieu inconnu ?",
+     "c": "Fais une courte balade sans appli de cartes et rentre en suivant des repères."
+    },
+    "it": {
+     "t": "Mappe digitali e GPS",
+     "g": "Scopri come i satelliti aiutano il telefono a sapere dove sei.",
+     "p": [
+      "I satelliti GPS orbitano attorno alla Terra e inviano segnali con l'ora esatta.",
+      "Il telefono confronta i segnali di più satelliti per calcolare la sua posizione.",
+      "Le mappe digitali disegnano quella posizione e ti propongono percorsi."
+     ],
+     "q": "Come ti orienti di solito in un posto nuovo?",
+     "c": "Fai una breve passeggiata senza app di mappe e torna a casa seguendo i punti di riferimento."
+    },
+    "pt": {
+     "t": "Mapas digitais e GPS",
+     "g": "Descobre como os satélites ajudam o telemóvel a saber onde estás.",
+     "p": [
+      "Os satélites GPS orbitam a Terra e emitem sinais com a hora exata.",
+      "O telemóvel compara os sinais de vários satélites para calcular a sua posição.",
+      "Os mapas digitais desenham essa posição e traçam-te percursos."
+     ],
+     "q": "Como te orientas normalmente num sítio novo?",
+     "c": "Faz um passeio curto sem app de mapas e volta a casa guiando-te por referências."
+    },
+    "pt_BR": {
+     "t": "Mapas digitais e GPS",
+     "g": "Descubra como os satélites ajudam o celular a saber onde você está.",
+     "p": [
+      "Os satélites GPS orbitam a Terra e emitem sinais com a hora exata.",
+      "O celular compara os sinais de vários satélites para calcular sua posição.",
+      "Os mapas digitais desenham essa posição e traçam rotas para você."
+     ],
+     "q": "Como você costuma se orientar num lugar novo?",
+     "c": "Faça uma caminhada curta sem app de mapas e volte para casa guiado por referências."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mental maps",
+     "g": "Discover the maps we carry in our heads and why they differ from real maps.",
+     "p": [
+      "A mental map is your own picture of a place, built from experience.",
+      "It often makes familiar areas bigger and leaves out places you rarely visit.",
+      "Comparing mental maps with real ones shows how we really see the world."
+     ],
+     "q": "Can you picture your neighborhood without looking at a map?",
+     "c": "Draw your neighborhood from memory, then compare it with a real map."
+    },
+    "de": {
+     "t": "Mentale Karten",
+     "g": "Entdecke die Karten in unserem Kopf und warum sie von echten Karten abweichen.",
+     "p": [
+      "Eine mentale Karte ist dein eigenes Bild eines Ortes, aus Erfahrung gebaut.",
+      "Sie vergrößert oft vertraute Gegenden und lässt selten besuchte Orte weg.",
+      "Der Vergleich mit echten Karten zeigt, wie wir die Welt wirklich sehen."
+     ],
+     "q": "Kannst du dir deine Umgebung ohne Karte vorstellen?",
+     "c": "Zeichne deine Nachbarschaft aus dem Gedächtnis und vergleiche sie mit einer Karte."
+    },
+    "es": {
+     "t": "Mapas mentales",
+     "g": "Descubre los mapas que llevamos en la cabeza y por qué difieren de los reales.",
+     "p": [
+      "Un mapa mental es tu propia imagen de un lugar, hecha de experiencia.",
+      "Suele agrandar las zonas conocidas y omitir lugares que rara vez visitas.",
+      "Compararlo con mapas reales muestra cómo vemos de verdad el mundo."
+     ],
+     "q": "¿Puedes imaginar tu barrio sin mirar un mapa?",
+     "c": "Dibuja tu barrio de memoria y compáralo con un mapa real."
+    },
+    "fr": {
+     "t": "Les cartes mentales",
+     "g": "Découvre les cartes que nous portons dans la tête et pourquoi elles diffèrent des vraies.",
+     "p": [
+      "Une carte mentale est ta propre image d'un lieu, construite par l'expérience.",
+      "Elle agrandit souvent les zones familières et oublie les lieux peu visités.",
+      "La comparer aux vraies cartes montre comment nous voyons vraiment le monde."
+     ],
+     "q": "Peux-tu imaginer ton quartier sans regarder de carte ?",
+     "c": "Dessine ton quartier de mémoire, puis compare-le à une vraie carte."
+    },
+    "it": {
+     "t": "Le mappe mentali",
+     "g": "Scopri le mappe che portiamo nella testa e perché sono diverse da quelle reali.",
+     "p": [
+      "Una mappa mentale è la tua immagine di un luogo, costruita con l'esperienza.",
+      "Spesso ingrandisce le zone familiari e dimentica i posti poco visitati.",
+      "Confrontarla con mappe vere mostra come vediamo davvero il mondo."
+     ],
+     "q": "Riesci a immaginare il tuo quartiere senza guardare una mappa?",
+     "c": "Disegna il tuo quartiere a memoria e confrontalo con una mappa vera."
+    },
+    "pt": {
+     "t": "Os mapas mentais",
+     "g": "Descobre os mapas que levamos na cabeça e porque diferem dos reais.",
+     "p": [
+      "Um mapa mental é a tua própria imagem de um lugar, feita de experiência.",
+      "Costuma aumentar as zonas conhecidas e esquecer sítios que raramente visitas.",
+      "Compará-lo com mapas reais mostra como vemos mesmo o mundo."
+     ],
+     "q": "Consegues imaginar o teu bairro sem olhar para um mapa?",
+     "c": "Desenha o teu bairro de memória e compara-o com um mapa real."
+    },
+    "pt_BR": {
+     "t": "Os mapas mentais",
+     "g": "Descubra os mapas que carregamos na cabeça e por que diferem dos reais.",
+     "p": [
+      "Um mapa mental é a sua própria imagem de um lugar, feita de experiência.",
+      "Ele costuma aumentar as áreas conhecidas e esquecer lugares que você raramente visita.",
+      "Compará-lo com mapas reais mostra como vemos de fato o mundo."
+     ],
+     "q": "Você consegue imaginar seu bairro sem olhar para um mapa?",
+     "c": "Desenhe seu bairro de memória e compare com um mapa real."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading a world map",
+     "g": "Spot continents, oceans, the equator and major countries at a glance.",
+     "p": [
+      "Look first for the big shapes: continents and oceans stand out at once.",
+      "Find the equator, then use it to see which places lie north or south.",
+      "Learn a few anchor countries and use them to locate their neighbors."
+     ],
+     "q": "Which part of the world map do you know best, and which least?",
+     "c": "Name five countries from memory and then find each on a world map."
+    },
+    "de": {
+     "t": "Eine Weltkarte lesen",
+     "g": "Erkenne Kontinente, Ozeane, Äquator und große Länder auf einen Blick.",
+     "p": [
+      "Achte zuerst auf die großen Formen: Kontinente und Ozeane fallen sofort auf.",
+      "Finde den Äquator und sieh, welche Orte nördlich oder südlich liegen.",
+      "Lerne ein paar Ankerländer und finde mit ihnen deren Nachbarn."
+     ],
+     "q": "Welchen Teil der Weltkarte kennst du am besten, welchen am wenigsten?",
+     "c": "Nenne fünf Länder aus dem Kopf und suche jedes auf der Weltkarte."
+    },
+    "es": {
+     "t": "Leer un mapamundi",
+     "g": "Reconoce continentes, océanos, el ecuador y países grandes de un vistazo.",
+     "p": [
+      "Busca primero las formas grandes: continentes y océanos destacan enseguida.",
+      "Localiza el ecuador y úsalo para ver qué lugares quedan al norte o al sur.",
+      "Aprende algunos países ancla y úsalos para ubicar a sus vecinos."
+     ],
+     "q": "¿Qué parte del mapamundi conoces mejor y cuál menos?",
+     "c": "Nombra cinco países de memoria y luego encuentra cada uno en un mapamundi."
+    },
+    "fr": {
+     "t": "Lire un planisphère",
+     "g": "Repère continents, océans, équateur et grands pays en un coup d'œil.",
+     "p": [
+      "Cherche d'abord les grandes formes : continents et océans se remarquent tout de suite.",
+      "Trouve l'équateur et vois quels lieux sont au nord ou au sud.",
+      "Apprends quelques pays repères et utilise-les pour situer leurs voisins."
+     ],
+     "q": "Quelle partie du planisphère connais-tu le mieux, et laquelle le moins ?",
+     "c": "Cite cinq pays de mémoire puis trouve chacun sur un planisphère."
+    },
+    "it": {
+     "t": "Leggere un planisfero",
+     "g": "Individua continenti, oceani, equatore e grandi paesi a colpo d'occhio.",
+     "p": [
+      "Cerca prima le forme grandi: continenti e oceani saltano subito all'occhio.",
+      "Trova l'equatore e vedi quali luoghi stanno a nord o a sud.",
+      "Impara qualche paese di riferimento e usalo per trovare i vicini."
+     ],
+     "q": "Quale parte del planisfero conosci meglio e quale meno?",
+     "c": "Nomina cinque paesi a memoria e poi trova ciascuno su un planisfero."
+    },
+    "pt": {
+     "t": "Ler um mapa-múndi",
+     "g": "Reconhece continentes, oceanos, o equador e países grandes num relance.",
+     "p": [
+      "Procura primeiro as formas grandes: continentes e oceanos destacam-se logo.",
+      "Localiza o equador e vê que lugares ficam a norte ou a sul.",
+      "Aprende alguns países de referência e usa-os para situar os vizinhos."
+     ],
+     "q": "Que parte do mapa-múndi conheces melhor e qual conheces menos?",
+     "c": "Diz cinco países de memória e depois encontra cada um no mapa-múndi."
+    },
+    "pt_BR": {
+     "t": "Lendo um mapa-múndi",
+     "g": "Reconheça continentes, oceanos, o equador e países grandes num relance.",
+     "p": [
+      "Procure primeiro as formas grandes: continentes e oceanos se destacam logo.",
+      "Localize o equador e veja quais lugares ficam ao norte ou ao sul.",
+      "Aprenda alguns países de referência e use-os para situar os vizinhos."
+     ],
+     "q": "Que parte do mapa-múndi você conhece melhor e qual conhece menos?",
+     "c": "Diga cinco países de memória e depois ache cada um no mapa-múndi."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The seven continents",
+     "g": "Meet Africa, Antarctica, Asia, Australia or Oceania, Europe, North America and South America.",
+     "p": [
+      "The seven continents are huge landmasses, usually with oceans around them.",
+      "Europe and Asia share one landmass, and the Americas are joined by a narrow isthmus.",
+      "Antarctica is the only continent with no permanent population of its own."
+     ],
+     "q": "Which continent have you never visited but would love to see?",
+     "c": "Place seven small objects on a table as continents and name each one."
+    },
+    "de": {
+     "t": "Die sieben Kontinente",
+     "g": "Lerne Afrika, Antarktis, Asien, Australien oder Ozeanien, Europa, Nord- und Südamerika kennen.",
+     "p": [
+      "Die sieben Kontinente sind riesige Landmassen, meist von Ozeanen umgeben.",
+      "Europa und Asien teilen sich eine Landmasse, die Amerikas verbindet eine schmale Landenge.",
+      "Die Antarktis ist der einzige Kontinent ohne eigene ständige Bevölkerung."
+     ],
+     "q": "Welchen Kontinent kennst du noch nicht und würdest ihn gern sehen?",
+     "c": "Lege sieben kleine Gegenstände als Kontinente auf den Tisch und benenne sie."
+    },
+    "es": {
+     "t": "Los siete continentes",
+     "g": "Conoce África, Antártida, Asia, Oceanía o Australia, Europa, América del Norte y del Sur.",
+     "p": [
+      "Los siete continentes son enormes masas de tierra, normalmente rodeadas de océanos.",
+      "Europa y Asia comparten una masa de tierra y las Américas las une un istmo estrecho.",
+      "La Antártida es el único continente sin población permanente propia."
+     ],
+     "q": "¿Qué continente no conoces todavía y te encantaría ver?",
+     "c": "Pon siete objetos pequeños sobre la mesa como continentes y nombra cada uno."
+    },
+    "fr": {
+     "t": "Les sept continents",
+     "g": "Découvre l'Afrique, l'Antarctique, l'Asie, l'Océanie, l'Europe, l'Amérique du Nord et du Sud.",
+     "p": [
+      "Les sept continents sont d'immenses masses de terre, souvent entourées d'océans.",
+      "L'Europe et l'Asie partagent une masse de terre, et les Amériques sont reliées par un isthme étroit.",
+      "L'Antarctique est le seul continent sans population permanente propre."
+     ],
+     "q": "Quel continent ne connais-tu pas encore et aimerais-tu voir ?",
+     "c": "Place sept petits objets sur une table comme des continents et nomme chacun."
+    },
+    "it": {
+     "t": "I sette continenti",
+     "g": "Conosci Africa, Antartide, Asia, Oceania, Europa, Nord America e Sud America.",
+     "p": [
+      "I sette continenti sono enormi masse di terra, di solito circondate da oceani.",
+      "Europa e Asia condividono una massa di terra, e le Americhe sono unite da uno stretto istmo.",
+      "L'Antartide è l'unico continente senza una popolazione permanente propria."
+     ],
+     "q": "Quale continente non hai ancora visitato e ti piacerebbe vedere?",
+     "c": "Metti sette piccoli oggetti sul tavolo come continenti e nomina ciascuno."
+    },
+    "pt": {
+     "t": "Os sete continentes",
+     "g": "Conhece a África, a Antártida, a Ásia, a Oceânia, a Europa e as Américas do Norte e do Sul.",
+     "p": [
+      "Os sete continentes são enormes massas de terra, em geral rodeadas de oceanos.",
+      "A Europa e a Ásia partilham uma massa de terra, e as Américas unem-se por um istmo estreito.",
+      "A Antártida é o único continente sem população permanente própria."
+     ],
+     "q": "Que continente ainda não conheces e gostarias de ver?",
+     "c": "Põe sete objetos pequenos na mesa como continentes e diz o nome de cada um."
+    },
+    "pt_BR": {
+     "t": "Os sete continentes",
+     "g": "Conheça a África, a Antártida, a Ásia, a Oceania, a Europa e as Américas do Norte e do Sul.",
+     "p": [
+      "Os sete continentes são enormes massas de terra, em geral cercadas por oceanos.",
+      "A Europa e a Ásia dividem uma massa de terra, e as Américas se ligam por um istmo estreito.",
+      "A Antártida é o único continente sem população permanente própria."
+     ],
+     "q": "Que continente você ainda não conhece e adoraria ver?",
+     "c": "Coloque sete objetos pequenos na mesa como continentes e diga o nome de cada um."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The five oceans",
+     "g": "Learn the Pacific, Atlantic, Indian, Southern and Arctic oceans and what makes each special.",
+     "p": [
+      "The Pacific is the largest and deepest ocean, covering a third of the planet.",
+      "The Atlantic separates the Americas from Europe and Africa, and the Indian lies south of Asia.",
+      "The Southern Ocean circles Antarctica, and the Arctic is the smallest and coldest."
+     ],
+     "q": "Which ocean have you seen with your own eyes, if any?",
+     "c": "Sort the five oceans from the one you know best to the one you know least."
+    },
+    "de": {
+     "t": "Die fünf Ozeane",
+     "g": "Lerne Pazifik, Atlantik, Indischen, Südlichen und Arktischen Ozean und ihre Besonderheiten kennen.",
+     "p": [
+      "Der Pazifik ist der größte und tiefste Ozean und bedeckt ein Drittel der Erde.",
+      "Der Atlantik trennt Amerika von Europa und Afrika, der Indische liegt südlich von Asien.",
+      "Der Südliche Ozean umkreist die Antarktis, der Arktische ist der kleinste und kälteste."
+     ],
+     "q": "Welchen Ozean hast du schon mit eigenen Augen gesehen?",
+     "c": "Ordne die fünf Ozeane vom bekanntesten bis zum unbekanntesten für dich."
+    },
+    "es": {
+     "t": "Los cinco océanos",
+     "g": "Conoce los océanos Pacífico, Atlántico, Índico, Austral y Ártico y qué los hace especiales.",
+     "p": [
+      "El Pacífico es el océano más grande y profundo y cubre un tercio del planeta.",
+      "El Atlántico separa América de Europa y África, y el Índico queda al sur de Asia.",
+      "El océano Austral rodea la Antártida y el Ártico es el más pequeño y frío."
+     ],
+     "q": "¿Qué océano has visto con tus propios ojos, si alguno?",
+     "c": "Ordena los cinco océanos del que mejor conoces al que menos."
+    },
+    "fr": {
+     "t": "Les cinq océans",
+     "g": "Découvre les océans Pacifique, Atlantique, Indien, Austral et Arctique et leurs particularités.",
+     "p": [
+      "Le Pacifique est le plus grand et le plus profond océan, il couvre un tiers de la planète.",
+      "L'Atlantique sépare les Amériques de l'Europe et de l'Afrique, l'Indien est au sud de l'Asie.",
+      "L'océan Austral entoure l'Antarctique, et l'Arctique est le plus petit et le plus froid."
+     ],
+     "q": "Quel océan as-tu vu de tes propres yeux, s'il y en a ?",
+     "c": "Classe les cinq océans de celui que tu connais le mieux à celui que tu connais le moins."
+    },
+    "it": {
+     "t": "I cinque oceani",
+     "g": "Conosci gli oceani Pacifico, Atlantico, Indiano, Antartico e Artico e le loro particolarità.",
+     "p": [
+      "Il Pacifico è l'oceano più grande e profondo e copre un terzo del pianeta.",
+      "L'Atlantico separa le Americhe da Europa e Africa, l'Indiano sta a sud dell'Asia.",
+      "L'oceano Antartico circonda l'Antartide, e l'Artico è il più piccolo e freddo."
+     ],
+     "q": "Quale oceano hai visto con i tuoi occhi, se ne hai visto qualcuno?",
+     "c": "Ordina i cinque oceani dal più conosciuto al meno conosciuto da te."
+    },
+    "pt": {
+     "t": "Os cinco oceanos",
+     "g": "Conhece os oceanos Pacífico, Atlântico, Índico, Antártico e Ártico e o que os torna especiais.",
+     "p": [
+      "O Pacífico é o maior e mais profundo oceano e cobre um terço do planeta.",
+      "O Atlântico separa as Américas da Europa e de África, e o Índico fica a sul da Ásia.",
+      "O oceano Antártico rodeia a Antártida e o Ártico é o mais pequeno e frio."
+     ],
+     "q": "Que oceano já viste com os teus próprios olhos, se algum?",
+     "c": "Ordena os cinco oceanos do que conheces melhor ao que conheces menos."
+    },
+    "pt_BR": {
+     "t": "Os cinco oceanos",
+     "g": "Conheça os oceanos Pacífico, Atlântico, Índico, Antártico e Ártico e o que os torna especiais.",
+     "p": [
+      "O Pacífico é o maior e mais profundo oceano e cobre um terço do planeta.",
+      "O Atlântico separa as Américas da Europa e da África, e o Índico fica ao sul da Ásia.",
+      "O oceano Antártico cerca a Antártida e o Ártico é o menor e mais frio."
+     ],
+     "q": "Qual oceano você já viu com os próprios olhos, se algum?",
+     "c": "Ordene os cinco oceanos do que você mais conhece ao que menos conhece."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Seas, gulfs and bays",
+     "g": "Meet the smaller bodies of salt water partly surrounded by land.",
+     "p": [
+      "A sea is a part of an ocean, often partly enclosed by land, like the Mediterranean.",
+      "A gulf is a large inlet, such as the Gulf of Mexico, and a bay is usually smaller.",
+      "These waters often shelter ports, fishing grounds and busy shipping routes."
+     ],
+     "q": "Is there a sea, gulf or bay near where you live or have traveled?",
+     "c": "Find three seas on a map and note which continents they touch."
+    },
+    "de": {
+     "t": "Meere, Golfe und Buchten",
+     "g": "Lerne die kleineren Salzwassergebiete kennen, die teilweise von Land umgeben sind.",
+     "p": [
+      "Ein Meer ist ein Teil des Ozeans, oft vom Land teils umschlossen, wie das Mittelmeer.",
+      "Ein Golf ist eine große Einbuchtung wie der Golf von Mexiko, eine Bucht meist kleiner.",
+      "Solche Gewässer bergen oft Häfen, Fanggründe und belebte Schifffahrtsrouten."
+     ],
+     "q": "Gibt es ein Meer, einen Golf oder eine Bucht in deiner Nähe oder auf Reisen?",
+     "c": "Suche drei Meere auf einer Karte und notiere, welche Kontinente sie berühren."
+    },
+    "es": {
+     "t": "Mares, golfos y bahías",
+     "g": "Conoce las masas de agua salada más pequeñas, parcialmente rodeadas de tierra.",
+     "p": [
+      "Un mar es parte de un océano, a menudo rodeado en parte por tierra, como el Mediterráneo.",
+      "Un golfo es una gran entrada de mar, como el golfo de México, y una bahía suele ser menor.",
+      "Estas aguas suelen albergar puertos, zonas de pesca y rutas marítimas muy activas."
+     ],
+     "q": "¿Hay un mar, golfo o bahía cerca de donde vives o has viajado?",
+     "c": "Encuentra tres mares en un mapa y anota qué continentes tocan."
+    },
+    "fr": {
+     "t": "Mers, golfes et baies",
+     "g": "Découvre les étendues d'eau salée plus petites, en partie entourées de terres.",
+     "p": [
+      "Une mer est une partie d'un océan, souvent à demi fermée par les terres, comme la Méditerranée.",
+      "Un golfe est une grande échancrure, comme le golfe du Mexique, une baie est souvent plus petite.",
+      "Ces eaux abritent souvent des ports, des zones de pêche et des routes maritimes actives."
+     ],
+     "q": "Y a-t-il une mer, un golfe ou une baie près de chez toi ou de tes voyages ?",
+     "c": "Trouve trois mers sur une carte et note les continents qu'elles touchent."
+    },
+    "it": {
+     "t": "Mari, golfi e baie",
+     "g": "Conosci le distese d'acqua salata più piccole, in parte circondate da terre.",
+     "p": [
+      "Un mare è parte di un oceano, spesso in parte chiuso dalla terra, come il Mediterraneo.",
+      "Un golfo è una grande insenatura, come il golfo del Messico, una baia è di solito più piccola.",
+      "Queste acque ospitano spesso porti, zone di pesca e rotte di navigazione molto frequentate."
+     ],
+     "q": "C'è un mare, un golfo o una baia vicino a casa tua o ai tuoi viaggi?",
+     "c": "Trova tre mari su una mappa e annota quali continenti toccano."
+    },
+    "pt": {
+     "t": "Mares, golfos e baías",
+     "g": "Conhece as massas de água salgada mais pequenas, em parte rodeadas de terra.",
+     "p": [
+      "Um mar é parte de um oceano, muitas vezes em parte cercado por terra, como o Mediterrâneo.",
+      "Um golfo é uma grande reentrância, como o golfo do México, e uma baía costuma ser menor.",
+      "Estas águas costumam abrigar portos, zonas de pesca e rotas marítimas movimentadas."
+     ],
+     "q": "Há um mar, golfo ou baía perto de onde vives ou viajaste?",
+     "c": "Encontra três mares num mapa e anota que continentes tocam."
+    },
+    "pt_BR": {
+     "t": "Mares, golfos e baías",
+     "g": "Conheça as massas de água salgada menores, em parte cercadas por terra.",
+     "p": [
+      "Um mar é parte de um oceano, muitas vezes em parte cercado por terra, como o Mediterrâneo.",
+      "Um golfo é uma grande reentrância, como o golfo do México, e uma baía costuma ser menor.",
+      "Essas águas costumam abrigar portos, áreas de pesca e rotas marítimas movimentadas."
+     ],
+     "q": "Há um mar, golfo ou baía perto de onde você mora ou já viajou?",
+     "c": "Encontre três mares num mapa e anote quais continentes eles tocam."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Continents by size",
+     "g": "Compare the continents by area, from the largest to the smallest.",
+     "p": [
+      "Asia is the largest continent, followed by Africa and North America.",
+      "South America, Antarctica and Europe come next in size, and Australia is the smallest.",
+      "Size on a flat map can fool you, so compare areas with data or a globe."
+     ],
+     "q": "Were you surprised by the size order of the continents?",
+     "c": "Rank the seven continents from memory, then check your guess."
+    },
+    "de": {
+     "t": "Kontinente nach Größe",
+     "g": "Vergleiche die Kontinente nach Fläche, vom größten zum kleinsten.",
+     "p": [
+      "Asien ist der größte Kontinent, gefolgt von Afrika und Nordamerika.",
+      "Südamerika, Antarktis und Europa folgen, und Australien ist der kleinste.",
+      "Die Größe auf flachen Karten täuscht, vergleiche daher Flächen mit Daten oder Globus."
+     ],
+     "q": "Hat dich die Größenreihenfolge der Kontinente überrascht?",
+     "c": "Ordne die sieben Kontinente aus dem Kopf nach Größe und prüfe dann nach."
+    },
+    "es": {
+     "t": "Continentes por tamaño",
+     "g": "Compara los continentes por superficie, del mayor al menor.",
+     "p": [
+      "Asia es el continente más grande, seguido de África y América del Norte.",
+      "Siguen América del Sur, la Antártida y Europa, y Oceanía es el más pequeño.",
+      "El tamaño en un mapa plano engaña, así que compara superficies con datos o un globo."
+     ],
+     "q": "¿Te sorprendió el orden de tamaño de los continentes?",
+     "c": "Ordena los siete continentes de memoria por tamaño y luego comprueba."
+    },
+    "fr": {
+     "t": "Les continents par taille",
+     "g": "Compare les continents selon leur superficie, du plus grand au plus petit.",
+     "p": [
+      "L'Asie est le plus grand continent, suivie de l'Afrique et de l'Amérique du Nord.",
+      "Viennent ensuite l'Amérique du Sud, l'Antarctique et l'Europe, l'Océanie est la plus petite.",
+      "La taille sur une carte plane trompe, compare donc les surfaces avec des données ou un globe."
+     ],
+     "q": "L'ordre de taille des continents t'a-t-il surpris ?",
+     "c": "Classe les sept continents de mémoire par taille, puis vérifie."
+    },
+    "it": {
+     "t": "I continenti per dimensione",
+     "g": "Confronta i continenti per superficie, dal più grande al più piccolo.",
+     "p": [
+      "L'Asia è il continente più grande, seguita da Africa e Nord America.",
+      "Seguono Sud America, Antartide ed Europa, e l'Oceania è la più piccola.",
+      "La dimensione su una carta piana inganna, confronta le superfici con dati o un globo."
+     ],
+     "q": "Ti ha sorpreso l'ordine di grandezza dei continenti?",
+     "c": "Ordina a memoria i sette continenti per dimensione e poi verifica."
+    },
+    "pt": {
+     "t": "Os continentes por tamanho",
+     "g": "Compara os continentes por área, do maior ao menor.",
+     "p": [
+      "A Ásia é o maior continente, seguida da África e da América do Norte.",
+      "Seguem-se a América do Sul, a Antártida e a Europa, e a Oceânia é a mais pequena.",
+      "O tamanho num mapa plano engana, por isso compara áreas com dados ou um globo."
+     ],
+     "q": "Surpreendeu-te a ordem de tamanho dos continentes?",
+     "c": "Ordena os sete continentes de memória por tamanho e depois confirma."
+    },
+    "pt_BR": {
+     "t": "Os continentes por tamanho",
+     "g": "Compare os continentes por área, do maior ao menor.",
+     "p": [
+      "A Ásia é o maior continente, seguida da África e da América do Norte.",
+      "Em seguida vêm a América do Sul, a Antártida e a Europa, e a Oceania é a menor.",
+      "O tamanho num mapa plano engana, então compare áreas com dados ou um globo."
+     ],
+     "q": "A ordem de tamanho dos continentes surpreendeu você?",
+     "c": "Ordene os sete continentes de memória por tamanho e depois confira."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Land versus water",
+     "g": "Find out why about 71 percent of Earth's surface is water, mostly in the oceans.",
+     "p": [
+      "Roughly seven tenths of the planet's surface is covered by water.",
+      "Most of that water is salty ocean, and only a small share is fresh.",
+      "Land and water are unevenly split: the north has far more land than the south."
+     ],
+     "q": "Does it surprise you that Earth is mostly blue?",
+     "c": "Look at a globe and find the side of Earth with the most water."
+    },
+    "de": {
+     "t": "Land und Wasser",
+     "g": "Finde heraus, warum etwa 71 Prozent der Erdoberfläche Wasser sind, meist Ozeane.",
+     "p": [
+      "Rund sieben Zehntel der Erdoberfläche sind von Wasser bedeckt.",
+      "Das meiste davon ist salziger Ozean, nur ein kleiner Teil ist Süßwasser.",
+      "Land und Wasser sind ungleich verteilt: Der Norden hat viel mehr Land als der Süden."
+     ],
+     "q": "Überrascht es dich, dass die Erde überwiegend blau ist?",
+     "c": "Such auf einem Globus die Seite der Erde mit dem meisten Wasser."
+    },
+    "es": {
+     "t": "Tierra y agua",
+     "g": "Descubre por qué cerca del 71 por ciento de la superficie terrestre es agua, sobre todo océanos.",
+     "p": [
+      "Casi siete décimas partes de la superficie del planeta están cubiertas de agua.",
+      "La mayor parte es océano salado y solo una pequeña parte es agua dulce.",
+      "Tierra y agua se reparten de forma desigual: el norte tiene mucha más tierra que el sur."
+     ],
+     "q": "¿Te sorprende que la Tierra sea sobre todo azul?",
+     "c": "Mira un globo y busca el lado de la Tierra con más agua."
+    },
+    "fr": {
+     "t": "Terres et eaux",
+     "g": "Découvre pourquoi environ 71 pour cent de la surface de la Terre est de l'eau, surtout des océans.",
+     "p": [
+      "Environ sept dixièmes de la surface de la planète sont couverts d'eau.",
+      "L'essentiel est de l'océan salé, et seule une petite part est de l'eau douce.",
+      "Terres et eaux sont inégalement réparties : le nord a bien plus de terres que le sud."
+     ],
+     "q": "Es-tu surpris que la Terre soit surtout bleue ?",
+     "c": "Regarde un globe et trouve le côté de la Terre qui compte le plus d'eau."
+    },
+    "it": {
+     "t": "Terra e acqua",
+     "g": "Scopri perché circa il 71 per cento della superficie terrestre è acqua, soprattutto oceani.",
+     "p": [
+      "Circa sette decimi della superficie del pianeta sono coperti d'acqua.",
+      "Gran parte è oceano salato, e solo una piccola quota è acqua dolce.",
+      "Terra e acqua sono divise in modo diseguale: il nord ha molta più terra del sud."
+     ],
+     "q": "Ti sorprende che la Terra sia soprattutto blu?",
+     "c": "Guarda un globo e trova il lato della Terra con più acqua."
+    },
+    "pt": {
+     "t": "Terra e água",
+     "g": "Descobre porque cerca de 71 por cento da superfície da Terra é água, sobretudo oceanos.",
+     "p": [
+      "Cerca de sete décimos da superfície do planeta estão cobertos de água.",
+      "A maior parte é oceano salgado e só uma pequena parte é água doce.",
+      "Terra e água distribuem-se de forma desigual: o norte tem muito mais terra do que o sul."
+     ],
+     "q": "Surpreende-te que a Terra seja sobretudo azul?",
+     "c": "Olha para um globo e encontra o lado da Terra com mais água."
+    },
+    "pt_BR": {
+     "t": "Terra e água",
+     "g": "Descubra por que cerca de 71 por cento da superfície da Terra é água, principalmente oceanos.",
+     "p": [
+      "Cerca de sete décimos da superfície do planeta são cobertos de água.",
+      "A maior parte é oceano salgado e só uma pequena parte é água doce.",
+      "Terra e água se distribuem de forma desigual: o norte tem muito mais terra que o sul."
+     ],
+     "q": "Surpreende você que a Terra seja principalmente azul?",
+     "c": "Olhe um globo e encontre o lado da Terra com mais água."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mountains",
+     "g": "Learn how mountains form and the highest peak on each continent.",
+     "p": [
+      "Many mountains rise where moving plates of Earth's crust push into each other.",
+      "Everest in Asia is the highest peak on Earth above sea level.",
+      "Each continent has its summit, like Aconcagua, Kilimanjaro, Denali and Mont Blanc."
+     ],
+     "q": "Do you prefer mountains, sea or plains for a holiday?",
+     "c": "Match three famous peaks with their continents on a map."
+    },
+    "de": {
+     "t": "Gebirge",
+     "g": "Lerne, wie Gebirge entstehen und welcher der höchste Gipfel jedes Kontinents ist.",
+     "p": [
+      "Viele Gebirge wachsen dort, wo sich bewegende Platten der Erdkruste aufeinander schieben.",
+      "Der Everest in Asien ist der höchste Gipfel der Erde über dem Meeresspiegel.",
+      "Jeder Kontinent hat seinen Gipfel, etwa Aconcagua, Kilimandscharo, Denali, Montblanc."
+     ],
+     "q": "Machst du Urlaub lieber in den Bergen, am Meer oder im Flachland?",
+     "c": "Ordne drei berühmte Gipfel auf einer Karte ihren Kontinenten zu."
+    },
+    "es": {
+     "t": "Montañas",
+     "g": "Aprende cómo se forman las montañas y cuál es la cima más alta de cada continente.",
+     "p": [
+      "Muchas montañas se elevan donde placas de la corteza terrestre empujan una contra otra.",
+      "El Everest, en Asia, es la cima más alta de la Tierra sobre el nivel del mar.",
+      "Cada continente tiene su cima, como Aconcagua, Kilimanjaro, Denali y Mont Blanc."
+     ],
+     "q": "¿Prefieres montaña, mar o llanura para tus vacaciones?",
+     "c": "Une tres cimas famosas con sus continentes en un mapa."
+    },
+    "fr": {
+     "t": "Les montagnes",
+     "g": "Apprends comment se forment les montagnes et quel est le plus haut sommet de chaque continent.",
+     "p": [
+      "Beaucoup de montagnes s'élèvent là où des plaques de la croûte terrestre se poussent.",
+      "L'Everest, en Asie, est le plus haut sommet de la Terre au-dessus du niveau de la mer.",
+      "Chaque continent a son sommet, comme l'Aconcagua, le Kilimandjaro, le Denali, le mont Blanc."
+     ],
+     "q": "Préfères-tu la montagne, la mer ou la plaine pour des vacances ?",
+     "c": "Associe trois sommets célèbres à leur continent sur une carte."
+    },
+    "it": {
+     "t": "Le montagne",
+     "g": "Scopri come si formano le montagne e qual è la vetta più alta di ogni continente.",
+     "p": [
+      "Molte montagne si alzano dove placche della crosta terrestre si spingono l'una contro l'altra.",
+      "L'Everest, in Asia, è la vetta più alta della Terra sul livello del mare.",
+      "Ogni continente ha la sua vetta, come Aconcagua, Kilimangiaro, Denali e Monte Bianco."
+     ],
+     "q": "Per le vacanze preferisci montagna, mare o pianura?",
+     "c": "Abbina su una mappa tre vette famose ai loro continenti."
+    },
+    "pt": {
+     "t": "As montanhas",
+     "g": "Aprende como se formam as montanhas e qual é o pico mais alto de cada continente.",
+     "p": [
+      "Muitas montanhas erguem-se onde placas da crosta terrestre se empurram umas contra as outras.",
+      "O Evereste, na Ásia, é o pico mais alto da Terra acima do nível do mar.",
+      "Cada continente tem o seu cume, como o Aconcágua, o Quilimanjaro, o Denali e o Monte Branco."
+     ],
+     "q": "Preferes montanha, mar ou planície para as férias?",
+     "c": "Associa três picos famosos aos seus continentes num mapa."
+    },
+    "pt_BR": {
+     "t": "As montanhas",
+     "g": "Aprenda como se formam as montanhas e qual é o pico mais alto de cada continente.",
+     "p": [
+      "Muitas montanhas se erguem onde placas da crosta terrestre se empurram umas contra as outras.",
+      "O Everest, na Ásia, é o pico mais alto da Terra acima do nível do mar.",
+      "Cada continente tem seu cume, como o Aconcágua, o Kilimanjaro, o Denali e o Monte Branco."
+     ],
+     "q": "Você prefere montanha, mar ou planície nas férias?",
+     "c": "Associe três picos famosos aos seus continentes num mapa."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hills and plateaus",
+     "g": "Explore gentle hills and high flat plateaus such as the Tibetan Plateau.",
+     "p": [
+      "Hills are lower and rounder than mountains, with gentler slopes.",
+      "A plateau is a high flat area, often with steep edges on one or more sides.",
+      "The Tibetan Plateau is so high that it is nicknamed the roof of the world."
+     ],
+     "q": "Do you live among hills, on a plateau or on a plain?",
+     "c": "Find the Tibetan Plateau and one more plateau on a map."
+    },
+    "de": {
+     "t": "Hügel und Hochebenen",
+     "g": "Entdecke sanfte Hügel und hohe flache Plateaus wie das Hochland von Tibet.",
+     "p": [
+      "Hügel sind niedriger und runder als Berge und haben sanftere Hänge.",
+      "Ein Plateau ist eine hoch gelegene Ebene, oft mit steilen Rändern.",
+      "Das Hochland von Tibet liegt so hoch, dass es Dach der Welt heißt."
+     ],
+     "q": "Lebst du zwischen Hügeln, auf einer Hochebene oder im Flachland?",
+     "c": "Finde das Hochland von Tibet und ein weiteres Plateau auf einer Karte."
+    },
+    "es": {
+     "t": "Colinas y mesetas",
+     "g": "Explora colinas suaves y mesetas altas y planas como la meseta del Tíbet.",
+     "p": [
+      "Las colinas son más bajas y redondeadas que las montañas, con pendientes suaves.",
+      "Una meseta es una zona alta y plana, a menudo con bordes empinados.",
+      "La meseta del Tíbet es tan alta que la llaman el techo del mundo."
+     ],
+     "q": "¿Vives entre colinas, en una meseta o en una llanura?",
+     "c": "Encuentra la meseta del Tíbet y otra meseta en un mapa."
+    },
+    "fr": {
+     "t": "Collines et plateaux",
+     "g": "Explore les douces collines et les hauts plateaux plats comme le plateau tibétain.",
+     "p": [
+      "Les collines sont plus basses et plus rondes que les montagnes, aux pentes douces.",
+      "Un plateau est une zone haute et plane, souvent bordée de pentes raides.",
+      "Le plateau tibétain est si haut qu'on l'appelle le toit du monde."
+     ],
+     "q": "Vis-tu parmi des collines, sur un plateau ou dans une plaine ?",
+     "c": "Trouve le plateau tibétain et un autre plateau sur une carte."
+    },
+    "it": {
+     "t": "Colline e altopiani",
+     "g": "Esplora dolci colline e alti altopiani piatti come l'altopiano tibetano.",
+     "p": [
+      "Le colline sono più basse e rotonde delle montagne, con pendii dolci.",
+      "Un altopiano è una zona alta e piatta, spesso con bordi ripidi.",
+      "L'altopiano tibetano è così alto che lo chiamano il tetto del mondo."
+     ],
+     "q": "Vivi tra le colline, su un altopiano o in pianura?",
+     "c": "Trova l'altopiano tibetano e un altro altopiano su una mappa."
+    },
+    "pt": {
+     "t": "Colinas e planaltos",
+     "g": "Explora colinas suaves e planaltos altos e planos como o planalto do Tibete.",
+     "p": [
+      "As colinas são mais baixas e redondas do que as montanhas, com encostas suaves.",
+      "Um planalto é uma área alta e plana, muitas vezes com bordas íngremes.",
+      "O planalto do Tibete é tão alto que lhe chamam o telhado do mundo."
+     ],
+     "q": "Vives entre colinas, num planalto ou numa planície?",
+     "c": "Encontra o planalto do Tibete e outro planalto num mapa."
+    },
+    "pt_BR": {
+     "t": "Colinas e planaltos",
+     "g": "Explore colinas suaves e planaltos altos e planos como o planalto do Tibete.",
+     "p": [
+      "As colinas são mais baixas e redondas que as montanhas, com encostas suaves.",
+      "Um planalto é uma área alta e plana, muitas vezes com bordas íngremes.",
+      "O planalto do Tibete é tão alto que o chamam de teto do mundo."
+     ],
+     "q": "Você vive entre colinas, num planalto ou numa planície?",
+     "c": "Encontre o planalto do Tibete e outro planalto num mapa."
+    }
+   }
+  }
+ ]
+}

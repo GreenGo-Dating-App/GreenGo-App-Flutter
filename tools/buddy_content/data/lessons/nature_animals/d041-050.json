@@ -1,0 +1,835 @@
+{
+ "topic": "nature_animals",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Camouflage",
+     "g": "Discover colours and patterns that help animals vanish into leaves, sand or snow.",
+     "p": [
+      "Camouflage works when an animal's colour and pattern match its background.",
+      "Stick insects look like twigs, and flounders copy the sand they rest on.",
+      "Arctic hares and ptarmigans turn white in winter and brown again in summer."
+     ],
+     "q": "Which camouflaged animal would you love to spot in the wild?",
+     "c": "Look at a tree trunk or leafy bush for one minute and try to find any hidden creature."
+    },
+    "de": {
+     "t": "Tarnung",
+     "g": "Farben und Muster entdecken, mit denen Tiere im Laub, Sand oder Schnee verschwinden.",
+     "p": [
+      "Tarnung wirkt, wenn Farbe und Muster eines Tieres zum Hintergrund passen.",
+      "Gespenstschrecken sehen aus wie Zweige, und Schollen ahmen den Sand nach, auf dem sie ruhen.",
+      "Schneehasen und Schneehühner werden im Winter weiß und im Sommer wieder braun."
+     ],
+     "q": "Welches getarnte Tier würdest du gern in freier Natur entdecken?",
+     "c": "Betrachte eine Minute einen Baumstamm oder Busch und versuche, ein verstecktes Tier zu finden."
+    },
+    "es": {
+     "t": "Camuflaje",
+     "g": "Descubrir colores y dibujos que ayudan a los animales a desaparecer entre hojas, arena o nieve.",
+     "p": [
+      "El camuflaje funciona cuando el color y el dibujo del animal imitan el fondo.",
+      "Los insectos palo parecen ramitas, y los lenguados copian la arena donde descansan.",
+      "Las liebres árticas y los lagópodos se vuelven blancos en invierno y marrones en verano."
+     ],
+     "q": "¿Qué animal camuflado te encantaría descubrir en la naturaleza?",
+     "c": "Mira un tronco o un arbusto un minuto e intenta encontrar algún animalito escondido."
+    },
+    "fr": {
+     "t": "Le camouflage",
+     "g": "Découvrir les couleurs et motifs qui font disparaître les animaux dans les feuilles, le sable ou la neige.",
+     "p": [
+      "Le camouflage marche quand la couleur et le motif de l'animal ressemblent à son décor.",
+      "Les phasmes ressemblent à des brindilles, et les soles imitent le sable où elles reposent.",
+      "Les lièvres arctiques et les lagopèdes deviennent blancs en hiver et bruns en été."
+     ],
+     "q": "Quel animal camouflé aimerais-tu repérer dans la nature ?",
+     "c": "Observe un tronc ou un buisson pendant une minute et cherche une petite bête cachée."
+    },
+    "it": {
+     "t": "Il mimetismo",
+     "g": "Scoprire colori e disegni che aiutano gli animali a sparire tra foglie, sabbia o neve.",
+     "p": [
+      "Il mimetismo funziona quando colore e disegno dell'animale imitano lo sfondo.",
+      "Gli insetti stecco sembrano ramoscelli, e le sogliole copiano la sabbia su cui riposano.",
+      "Le lepri artiche e le pernici bianche diventano bianche d'inverno e di nuovo brune d'estate."
+     ],
+     "q": "Quale animale mimetizzato ti piacerebbe scoprire in natura?",
+     "c": "Guarda per un minuto un tronco o un cespuglio e cerca di trovare un animaletto nascosto."
+    },
+    "pt": {
+     "t": "Camuflagem",
+     "g": "Descobrir cores e padrões que ajudam os animais a desaparecer entre folhas, areia ou neve.",
+     "p": [
+      "A camuflagem funciona quando a cor e o padrão do animal imitam o fundo.",
+      "Os bichos-pau parecem raminhos, e os linguados copiam a areia onde repousam.",
+      "As lebres-árticas e os lagópodes ficam brancos no inverno e castanhos no verão."
+     ],
+     "q": "Que animal camuflado adorarias descobrir na natureza?",
+     "c": "Olha um minuto para um tronco ou arbusto e tenta encontrar um bichinho escondido."
+    },
+    "pt_BR": {
+     "t": "Camuflagem",
+     "g": "Descobrir cores e padrões que ajudam os animais a sumir entre folhas, areia ou neve.",
+     "p": [
+      "A camuflagem funciona quando a cor e o padrão do animal imitam o fundo.",
+      "Os bichos-pau parecem gravetos, e os linguados copiam a areia onde descansam.",
+      "As lebres-árticas e as perdizes-da-neve ficam brancas no inverno e marrons no verão."
+     ],
+     "q": "Qual animal camuflado você adoraria descobrir na natureza?",
+     "c": "Olhe um minuto para um tronco ou arbusto e tente achar um bichinho escondido."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Warning colours",
+     "g": "Learn how bright reds and yellows say do not eat me, and who copies them.",
+     "p": [
+      "Many animals with bad taste or poison wear bold red, yellow or black as a warning.",
+      "Poison dart frogs and ladybirds are bright because predators learn to avoid them.",
+      "Some harmless species, like hoverflies, copy the stripes of wasps to look dangerous."
+     ],
+     "q": "Which bright animal has caught your eye the most?",
+     "c": "Look at a hoverfly or wasp picture and note three differences between them."
+    },
+    "de": {
+     "t": "Warnfarben",
+     "g": "Lernen, wie leuchtendes Rot und Gelb sagen: Nicht fressen! Und wer sie nachahmt.",
+     "p": [
+      "Viele Tiere mit schlechtem Geschmack oder Gift tragen als Warnung auffälliges Rot, Gelb oder Schwarz.",
+      "Pfeilgiftfrösche und Marienkäfer sind bunt, weil Fressfeinde lernen, sie zu meiden.",
+      "Manche harmlose Arten wie Schwebfliegen ahmen die Streifen von Wespen nach und wirken gefährlich."
+     ],
+     "q": "Welches bunte Tier ist dir am meisten aufgefallen?",
+     "c": "Sieh dir ein Bild einer Schwebfliege und einer Wespe an und finde drei Unterschiede."
+    },
+    "es": {
+     "t": "Colores de advertencia",
+     "g": "Aprender cómo los rojos y amarillos vivos dicen no me comas, y quién los imita.",
+     "p": [
+      "Muchos animales de mal sabor o venenosos lucen rojo, amarillo o negro intensos como aviso.",
+      "Las ranas flecha y las mariquitas son vistosas porque los depredadores aprenden a evitarlas.",
+      "Algunas especies inofensivas, como los sírfidos, copian las rayas de las avispas para parecer peligrosas."
+     ],
+     "q": "¿Qué animal de colores vivos te ha llamado más la atención?",
+     "c": "Mira una foto de un sírfido y de una avispa y anota tres diferencias entre ellos."
+    },
+    "fr": {
+     "t": "Les couleurs d'avertissement",
+     "g": "Apprendre comment rouges et jaunes vifs disent ne me mange pas, et qui les copie.",
+     "p": [
+      "Beaucoup d'animaux au mauvais goût ou venimeux arborent rouge, jaune ou noir vifs en avertissement.",
+      "Les grenouilles à flèches et les coccinelles sont vives car les prédateurs apprennent à les éviter.",
+      "Certaines espèces inoffensives, comme les syrphes, copient les rayures des guêpes pour paraître dangereuses."
+     ],
+     "q": "Quel animal coloré a le plus attiré ton regard ?",
+     "c": "Regarde une photo de syrphe et de guêpe et note trois différences entre eux."
+    },
+    "it": {
+     "t": "Colori di avvertimento",
+     "g": "Imparare come rossi e gialli vivaci dicono non mangiarmi, e chi li copia.",
+     "p": [
+      "Molti animali dal cattivo sapore o velenosi mostrano rosso, giallo o nero vivaci come avvertimento.",
+      "Le rane freccia e le coccinelle sono vistose perché i predatori imparano a evitarle.",
+      "Alcune specie innocue, come i sirfidi, copiano le strisce delle vespe per sembrare pericolose."
+     ],
+     "q": "Quale animale dai colori vivaci ha attirato di più la tua attenzione?",
+     "c": "Guarda la foto di un sirfide e di una vespa e annota tre differenze tra loro."
+    },
+    "pt": {
+     "t": "Cores de aviso",
+     "g": "Aprender como vermelhos e amarelos vivos dizem não me comas, e quem os imita.",
+     "p": [
+      "Muitos animais de mau sabor ou venenosos usam vermelho, amarelo ou preto vivos como aviso.",
+      "As rãs-flecha e as joaninhas são vistosas porque os predadores aprendem a evitá-las.",
+      "Algumas espécies inofensivas, como os sirfídeos, copiam as riscas das vespas para parecerem perigosas."
+     ],
+     "q": "Que animal de cores vivas mais te chamou a atenção?",
+     "c": "Vê uma fotografia de um sirfídeo e de uma vespa e anota três diferenças entre eles."
+    },
+    "pt_BR": {
+     "t": "Cores de aviso",
+     "g": "Aprender como vermelhos e amarelos vivos dizem não me coma, e quem os imita.",
+     "p": [
+      "Muitos animais de mau gosto ou venenosos usam vermelho, amarelo ou preto vivos como aviso.",
+      "As rãs-flecha e as joaninhas são vistosas porque os predadores aprendem a evitá-las.",
+      "Algumas espécies inofensivas, como os sirfídeos, copiam as listras das vespas para parecer perigosas."
+     ],
+     "q": "Qual animal de cores vivas mais chamou sua atenção?",
+     "c": "Veja uma foto de um sirfídeo e de uma vespa e anote três diferenças entre eles."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Animal homes and nests",
+     "g": "Admire burrows, nests, dens and hives, and the skill animals put into building them.",
+     "p": [
+      "Birds weave nests from twigs, grass, mud and even spider silk, each species in its own style.",
+      "Rabbits and badgers dig burrows, and honeybees build wax hives with six-sided cells.",
+      "Weaverbirds knot grass into hanging baskets that swing safely from thin branches."
+     ],
+     "q": "What animal home would you most like to see in real life?",
+     "c": "Look for a nest, burrow or web from a distance and do not touch or disturb it."
+    },
+    "de": {
+     "t": "Tierbehausungen und Nester",
+     "g": "Höhlen, Nester, Baue und Bienenstöcke und das Können ihrer Baumeister bewundern.",
+     "p": [
+      "Vögel weben Nester aus Zweigen, Gras, Lehm und sogar Spinnseide, jede Art auf ihre Weise.",
+      "Kaninchen und Dachse graben Baue, und Honigbienen bauen Wachswaben mit sechseckigen Zellen.",
+      "Webervögel knoten Gras zu hängenden Körben, die sicher an dünnen Zweigen schaukeln."
+     ],
+     "q": "Welche Tierwohnung würdest du am liebsten in echt sehen?",
+     "c": "Suche aus der Ferne ein Nest, einen Bau oder ein Netz und berühre oder störe es nicht."
+    },
+    "es": {
+     "t": "Hogares y nidos de animales",
+     "g": "Admirar madrigueras, nidos, guaridas y colmenas, y la habilidad de quienes los construyen.",
+     "p": [
+      "Las aves tejen nidos con ramitas, hierba, barro e incluso seda de araña, cada especie a su estilo.",
+      "Conejos y tejones cavan madrigueras, y las abejas construyen panales de cera con celdas hexagonales.",
+      "Los tejedores anudan hierba en cestas colgantes que se mecen seguras en ramas finas."
+     ],
+     "q": "¿Qué hogar animal te gustaría ver más en la vida real?",
+     "c": "Busca un nido, madriguera o telaraña desde lejos y no lo toques ni lo molestes."
+    },
+    "fr": {
+     "t": "Maisons et nids des animaux",
+     "g": "Admirer terriers, nids, tanières et ruches, et l'habileté de leurs bâtisseurs.",
+     "p": [
+      "Les oiseaux tissent des nids de brindilles, d'herbe, de boue et même de soie d'araignée, chacun à sa façon.",
+      "Lapins et blaireaux creusent des terriers, et les abeilles bâtissent des rayons de cire aux cellules hexagonales.",
+      "Les tisserins nouent l'herbe en paniers suspendus qui se balancent sans risque au bout de fines branches."
+     ],
+     "q": "Quelle habitation animale aimerais-tu le plus voir en vrai ?",
+     "c": "Cherche de loin un nid, un terrier ou une toile, sans le toucher ni le déranger."
+    },
+    "it": {
+     "t": "Case e nidi degli animali",
+     "g": "Ammirare tane, nidi, covi e alveari, e l'abilità di chi li costruisce.",
+     "p": [
+      "Gli uccelli intrecciano nidi con rametti, erba, fango e persino seta di ragno, ogni specie a suo modo.",
+      "Conigli e tassi scavano tane, e le api costruiscono favi di cera con celle esagonali.",
+      "I tessitori annodano l'erba in ceste appese che dondolano al sicuro su rami sottili."
+     ],
+     "q": "Quale casa di animali ti piacerebbe di più vedere dal vivo?",
+     "c": "Cerca da lontano un nido, una tana o una ragnatela e non toccarli né disturbarli."
+    },
+    "pt": {
+     "t": "Casas e ninhos dos animais",
+     "g": "Admirar tocas, ninhos, covas e colmeias, e a habilidade de quem os constrói.",
+     "p": [
+      "As aves tecem ninhos com raminhos, erva, lama e até seda de aranha, cada espécie ao seu estilo.",
+      "Coelhos e texugos cavam tocas, e as abelhas constroem favos de cera com células hexagonais.",
+      "Os tecelões dão nós na erva para fazer cestos pendentes que balouçam seguros em ramos finos."
+     ],
+     "q": "Que casa de animal gostarias mais de ver ao vivo?",
+     "c": "Procura de longe um ninho, toca ou teia e não lhe toques nem o incomodes."
+    },
+    "pt_BR": {
+     "t": "Casas e ninhos dos animais",
+     "g": "Admirar tocas, ninhos, covas e colmeias, e a habilidade de quem os constrói.",
+     "p": [
+      "As aves tecem ninhos com gravetos, capim, barro e até seda de aranha, cada espécie ao seu estilo.",
+      "Coelhos e texugos cavam tocas, e as abelhas constroem favos de cera com células hexagonais.",
+      "Os tecelões dão nós no capim para fazer cestos pendurados que balançam seguros em galhos finos."
+     ],
+     "q": "Qual casa de animal você gostaria mais de ver ao vivo?",
+     "c": "Procure de longe um ninho, toca ou teia e não toque nem incomode."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Beavers, nature's engineers",
+     "g": "See how beaver dams create ponds and wetlands full of other life.",
+     "p": [
+      "Beavers cut trees with strong front teeth and stack branches and mud into dams.",
+      "A dam slows a stream and forms a pond, where the beavers build a safe lodge.",
+      "These wetlands shelter fish, frogs, birds and plants, so beavers help many other species."
+     ],
+     "q": "Which animal do you think is the best builder of all?",
+     "c": "Find a puddle or small stream and try to build a tiny stick dam to see how water slows."
+    },
+    "de": {
+     "t": "Biber, die Ingenieure der Natur",
+     "g": "Sehen, wie Biberdämme Teiche und Feuchtgebiete voller Leben schaffen.",
+     "p": [
+      "Biber fällen Bäume mit kräftigen Schneidezähnen und stapeln Äste und Schlamm zu Dämmen.",
+      "Ein Damm bremst einen Bach und bildet einen Teich, in dem der Biber eine sichere Burg baut.",
+      "Diese Feuchtgebiete beherbergen Fische, Frösche, Vögel und Pflanzen, Biber helfen also vielen Arten."
+     ],
+     "q": "Welches Tier ist deiner Meinung nach der beste Baumeister?",
+     "c": "Such eine Pfütze oder einen kleinen Bach und baue einen winzigen Stockdamm, um zu sehen, wie Wasser langsamer wird."
+    },
+    "es": {
+     "t": "Los castores, ingenieros de la naturaleza",
+     "g": "Ver cómo las presas de los castores crean estanques y humedales llenos de vida.",
+     "p": [
+      "Los castores cortan árboles con sus fuertes incisivos y apilan ramas y barro formando presas.",
+      "Una presa frena el arroyo y forma un estanque donde el castor construye una madriguera segura.",
+      "Estos humedales dan refugio a peces, ranas, aves y plantas, así que los castores ayudan a muchas especies."
+     ],
+     "q": "¿Qué animal crees que es el mejor constructor de todos?",
+     "c": "Busca un charco o arroyo pequeño y haz una mini presa de palitos para ver cómo se frena el agua."
+    },
+    "fr": {
+     "t": "Les castors, ingénieurs de la nature",
+     "g": "Voir comment les barrages de castors créent des étangs et des zones humides pleins de vie.",
+     "p": [
+      "Les castors coupent les arbres avec leurs fortes incisives et empilent branches et boue en barrages.",
+      "Un barrage ralentit le ruisseau et forme un étang où le castor bâtit une hutte sûre.",
+      "Ces zones humides abritent poissons, grenouilles, oiseaux et plantes : les castors aident beaucoup d'espèces."
+     ],
+     "q": "Quel animal est selon toi le meilleur bâtisseur ?",
+     "c": "Trouve une flaque ou un petit ruisseau et construis un mini barrage de bâtons pour voir l'eau ralentir."
+    },
+    "it": {
+     "t": "I castori, ingegneri della natura",
+     "g": "Vedere come le dighe dei castori creano stagni e zone umide piene di vita.",
+     "p": [
+      "I castori tagliano alberi con forti incisivi e impilano rami e fango in dighe.",
+      "Una diga rallenta il ruscello e forma uno stagno dove il castoro costruisce una tana sicura.",
+      "Queste zone umide ospitano pesci, rane, uccelli e piante, quindi i castori aiutano molte specie."
+     ],
+     "q": "Quale animale pensi sia il miglior costruttore di tutti?",
+     "c": "Trova una pozzanghera o un ruscello e costruisci una mini diga di rametti per vedere l'acqua rallentare."
+    },
+    "pt": {
+     "t": "Os castores, engenheiros da natureza",
+     "g": "Ver como as barragens dos castores criam lagoas e zonas húmidas cheias de vida.",
+     "p": [
+      "Os castores cortam árvores com os fortes incisivos e empilham ramos e lama em barragens.",
+      "Uma barragem abranda o ribeiro e forma uma lagoa onde o castor constrói uma toca segura.",
+      "Estas zonas húmidas abrigam peixes, rãs, aves e plantas, por isso os castores ajudam muitas espécies."
+     ],
+     "q": "Que animal achas que é o melhor construtor de todos?",
+     "c": "Procura uma poça ou ribeiro pequeno e faz uma mini barragem de paus para ver a água abrandar."
+    },
+    "pt_BR": {
+     "t": "Os castores, engenheiros da natureza",
+     "g": "Ver como as barragens dos castores criam lagoas e áreas alagadas cheias de vida.",
+     "p": [
+      "Os castores cortam árvores com os fortes incisivos e empilham galhos e lama em barragens.",
+      "Uma barragem desacelera o riacho e forma uma lagoa onde o castor constrói uma toca segura.",
+      "Essas áreas alagadas abrigam peixes, rãs, aves e plantas, por isso os castores ajudam muitas espécies."
+     ],
+     "q": "Qual animal você acha que é o melhor construtor de todos?",
+     "c": "Procure uma poça ou riacho pequeno e faça uma mini barragem de gravetos para ver a água desacelerar."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Baby animals",
+     "g": "Compare eggs and live birth, and helpless versus ready-to-run newborns.",
+     "p": [
+      "Birds, most reptiles and fish lay eggs, while mammals mostly give birth to live young.",
+      "Some babies, like kittens, start helpless, while wildebeest calves can run within minutes.",
+      "Marsupials such as kangaroos finish growing in a pouch after being born tiny."
+     ],
+     "q": "What baby animal makes you smile the most?",
+     "c": "Look at photos of three baby animals and sort them: egg-layers or live birth, helpless or active."
+    },
+    "de": {
+     "t": "Tierbabys",
+     "g": "Eier und Lebendgeburt sowie hilflose und sofort laufende Neugeborene vergleichen.",
+     "p": [
+      "Vögel, die meisten Reptilien und Fische legen Eier, Säugetiere bringen meist lebende Junge zur Welt.",
+      "Manche Babys wie Kätzchen sind anfangs hilflos, Gnukälber können schon nach Minuten laufen.",
+      "Beuteltiere wie Kängurus wachsen nach der Geburt winzig in einem Beutel weiter."
+     ],
+     "q": "Welches Tierbaby bringt dich am meisten zum Lächeln?",
+     "c": "Sieh dir Fotos von drei Tierbabys an und sortiere: Eier oder Lebendgeburt, hilflos oder aktiv."
+    },
+    "es": {
+     "t": "Crías de animales",
+     "g": "Comparar huevos y parto, y recién nacidos indefensos o listos para correr.",
+     "p": [
+      "Aves, la mayoría de reptiles y peces ponen huevos, mientras que los mamíferos suelen parir crías vivas.",
+      "Algunas crías, como los gatitos, nacen indefensas, y las del ñu pueden correr a los pocos minutos.",
+      "Los marsupiales como los canguros terminan de crecer en una bolsa tras nacer diminutos."
+     ],
+     "q": "¿Qué cría de animal te hace sonreír más?",
+     "c": "Mira fotos de tres crías y clasifícalas: ponen huevos o paren, indefensas o activas."
+    },
+    "fr": {
+     "t": "Les bébés animaux",
+     "g": "Comparer oeufs et naissance vivante, nouveau-nés fragiles ou prêts à courir.",
+     "p": [
+      "Oiseaux, la plupart des reptiles et poissons pondent des oeufs, tandis que les mammifères mettent surtout au monde des petits vivants.",
+      "Certains bébés, comme les chatons, naissent fragiles, alors que les petits gnous courent en quelques minutes.",
+      "Les marsupiaux comme les kangourous finissent de grandir dans une poche après être nés minuscules."
+     ],
+     "q": "Quel bébé animal te fait le plus sourire ?",
+     "c": "Regarde des photos de trois bébés animaux et classe-les : oeufs ou naissance vivante, fragiles ou actifs."
+    },
+    "it": {
+     "t": "I cuccioli di animali",
+     "g": "Confrontare uova e parto, e neonati indifesi o pronti a correre.",
+     "p": [
+      "Uccelli, la maggior parte dei rettili e dei pesci depongono uova, mentre i mammiferi per lo più partoriscono piccoli vivi.",
+      "Alcuni cuccioli, come i gattini, nascono indifesi, mentre i piccoli di gnu corrono dopo pochi minuti.",
+      "I marsupiali come i canguri finiscono di crescere in un marsupio dopo essere nati minuscoli."
+     ],
+     "q": "Quale cucciolo ti fa sorridere di più?",
+     "c": "Guarda le foto di tre cuccioli e classificali: uova o parto, indifesi o attivi."
+    },
+    "pt": {
+     "t": "Crias de animais",
+     "g": "Comparar ovos e parto, e recém-nascidos indefesos ou prontos a correr.",
+     "p": [
+      "Aves, a maioria dos répteis e peixes põem ovos, enquanto os mamíferos geralmente têm crias vivas.",
+      "Algumas crias, como os gatinhos, nascem indefesas, e as crias de gnu correm em poucos minutos.",
+      "Os marsupiais como os cangurus acabam de crescer numa bolsa depois de nascerem minúsculos."
+     ],
+     "q": "Que cria de animal te faz sorrir mais?",
+     "c": "Vê fotografias de três crias e classifica-as: ovos ou parto, indefesas ou ativas."
+    },
+    "pt_BR": {
+     "t": "Filhotes de animais",
+     "g": "Comparar ovos e parto, e recém-nascidos indefesos ou prontos para correr.",
+     "p": [
+      "Aves, a maioria dos répteis e peixes põem ovos, enquanto os mamíferos geralmente têm filhotes vivos.",
+      "Alguns filhotes, como gatinhos, nascem indefesos, e os filhotes de gnu correm em poucos minutos.",
+      "Os marsupiais como os cangurus terminam de crescer numa bolsa depois de nascerem minúsculos."
+     ],
+     "q": "Qual filhote de animal faz você sorrir mais?",
+     "c": "Veja fotos de três filhotes e classifique: ovos ou parto, indefesos ou ativos."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Animal parents",
+     "g": "Meet the mothers, fathers and helpers that feed and protect their young.",
+     "p": [
+      "Emperor penguin fathers keep a single egg warm on their feet through the Antarctic winter.",
+      "Seahorse fathers carry the eggs in a pouch until the babies are ready to swim.",
+      "In some species, like elephants and some birds, aunts and older siblings help raise the young."
+     ],
+     "q": "What do you admire most about animal parents?",
+     "c": "Watch birds in spring and see if you can spot a parent bringing food to a nest from afar."
+    },
+    "de": {
+     "t": "Tiereltern",
+     "g": "Mütter, Väter und Helfer kennenlernen, die ihre Jungen füttern und beschützen.",
+     "p": [
+      "Kaiserpinguin-Väter halten ein einziges Ei den antarktischen Winter über auf den Füßen warm.",
+      "Seepferdchen-Väter tragen die Eier in einer Tasche, bis die Jungen schwimmen können.",
+      "Bei manchen Arten, etwa Elefanten und einigen Vögeln, helfen Tanten und ältere Geschwister bei der Aufzucht."
+     ],
+     "q": "Was bewunderst du an Tiereltern am meisten?",
+     "c": "Beobachte im Frühling Vögel und achte aus der Ferne darauf, ob ein Elternteil Futter zum Nest bringt."
+    },
+    "es": {
+     "t": "Padres y madres animales",
+     "g": "Conocer a las madres, padres y ayudantes que alimentan y protegen a sus crías.",
+     "p": [
+      "Los padres pingüino emperador mantienen un solo huevo caliente sobre sus patas durante el invierno antártico.",
+      "Los padres caballito de mar llevan los huevos en una bolsa hasta que las crías pueden nadar.",
+      "En algunas especies, como elefantes y ciertas aves, tías y hermanos mayores ayudan a criar."
+     ],
+     "q": "¿Qué es lo que más admiras de los padres animales?",
+     "c": "Observa aves en primavera y mira de lejos si algún progenitor lleva comida a un nido."
+    },
+    "fr": {
+     "t": "Les parents animaux",
+     "g": "Rencontrer mères, pères et aides qui nourrissent et protègent leurs petits.",
+     "p": [
+      "Les pères manchots empereurs gardent au chaud un seul oeuf sur leurs pattes pendant l'hiver antarctique.",
+      "Les pères hippocampes portent les oeufs dans une poche jusqu'à ce que les petits sachent nager.",
+      "Chez certaines espèces, comme les éléphants et quelques oiseaux, tantes et grands frères aident à élever les petits."
+     ],
+     "q": "Qu'admires-tu le plus chez les parents animaux ?",
+     "c": "Observe les oiseaux au printemps et vois, de loin, si un parent apporte à manger au nid."
+    },
+    "it": {
+     "t": "I genitori animali",
+     "g": "Conoscere madri, padri e aiutanti che nutrono e proteggono i piccoli.",
+     "p": [
+      "I papà pinguino imperatore tengono al caldo un solo uovo sui piedi durante l'inverno antartico.",
+      "I papà cavalluccio marino portano le uova in una tasca finché i piccoli sanno nuotare.",
+      "In alcune specie, come elefanti e certi uccelli, zie e fratelli maggiori aiutano a crescere i piccoli."
+     ],
+     "q": "Che cosa ammiri di più dei genitori animali?",
+     "c": "Osserva gli uccelli in primavera e vedi, da lontano, se un genitore porta cibo al nido."
+    },
+    "pt": {
+     "t": "Pais e mães animais",
+     "g": "Conhecer as mães, pais e ajudantes que alimentam e protegem as crias.",
+     "p": [
+      "Os pais pinguim-imperador mantêm um único ovo quente sobre os pés durante o inverno antártico.",
+      "Os pais cavalo-marinho levam os ovos numa bolsa até as crias saberem nadar.",
+      "Em algumas espécies, como elefantes e certas aves, tias e irmãos mais velhos ajudam a criar."
+     ],
+     "q": "O que mais admiras nos pais animais?",
+     "c": "Observa aves na primavera e vê, de longe, se um progenitor leva comida ao ninho."
+    },
+    "pt_BR": {
+     "t": "Pais e mães animais",
+     "g": "Conhecer as mães, pais e ajudantes que alimentam e protegem os filhotes.",
+     "p": [
+      "Os pais pinguim-imperador mantêm um único ovo aquecido sobre os pés durante o inverno antártico.",
+      "Os pais cavalo-marinho levam os ovos numa bolsa até os filhotes saberem nadar.",
+      "Em algumas espécies, como elefantes e certas aves, tias e irmãos mais velhos ajudam a criar."
+     ],
+     "q": "O que você mais admira nos pais animais?",
+     "c": "Observe aves na primavera e veja, de longe, se um progenitor leva comida ao ninho."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Growing up through metamorphosis",
+     "g": "Follow caterpillars to butterflies and tadpoles to frogs, bodies that totally change.",
+     "p": [
+      "Metamorphosis means a young animal changes shape completely on its way to adulthood.",
+      "A caterpillar eats leaves, forms a chrysalis and comes out as a winged butterfly.",
+      "A tadpole has gills and a tail, then grows legs, lungs and a new way of life as a frog."
+     ],
+     "q": "Which transformation do you find the most amazing?",
+     "c": "Look for a caterpillar, tadpole or picture and sketch its stages in order."
+    },
+    "de": {
+     "t": "Aufwachsen mit Verwandlung",
+     "g": "Raupen zu Schmetterlingen und Kaulquappen zu Fröschen folgen, Körper die sich ganz verändern.",
+     "p": [
+      "Metamorphose heißt, dass ein junges Tier auf dem Weg zum Erwachsenen seine Gestalt völlig ändert.",
+      "Eine Raupe frisst Blätter, bildet eine Puppe und schlüpft als geflügelter Schmetterling.",
+      "Eine Kaulquappe hat Kiemen und Schwanz, dann wachsen Beine, Lungen und ein neues Leben als Frosch."
+     ],
+     "q": "Welche Verwandlung findest du am erstaunlichsten?",
+     "c": "Suche eine Raupe, Kaulquappe oder ein Bild und zeichne ihre Stadien der Reihe nach."
+    },
+    "es": {
+     "t": "Crecer con metamorfosis",
+     "g": "Seguir de orugas a mariposas y de renacuajos a ranas, cuerpos que cambian por completo.",
+     "p": [
+      "Metamorfosis significa que un animal joven cambia por completo de forma al hacerse adulto.",
+      "Una oruga come hojas, forma una crisálida y sale como mariposa con alas.",
+      "Un renacuajo tiene branquias y cola, y luego le salen patas, pulmones y una nueva vida de rana."
+     ],
+     "q": "¿Qué transformación te parece más asombrosa?",
+     "c": "Busca una oruga, renacuajo o una imagen y dibuja sus etapas en orden."
+    },
+    "fr": {
+     "t": "Grandir par métamorphose",
+     "g": "Suivre chenille et papillon, têtard et grenouille, des corps qui changent complètement.",
+     "p": [
+      "La métamorphose, c'est quand un jeune animal change entièrement de forme en devenant adulte.",
+      "Une chenille mange des feuilles, forme une chrysalide et sort en papillon ailé.",
+      "Un têtard a des branchies et une queue, puis des pattes, des poumons et une nouvelle vie de grenouille."
+     ],
+     "q": "Quelle transformation te semble la plus étonnante ?",
+     "c": "Cherche une chenille, un têtard ou une image et dessine ses étapes dans l'ordre."
+    },
+    "it": {
+     "t": "Crescere con la metamorfosi",
+     "g": "Seguire bruchi e farfalle, girini e rane, corpi che cambiano del tutto.",
+     "p": [
+      "Metamorfosi significa che un giovane animale cambia completamente forma diventando adulto.",
+      "Un bruco mangia foglie, forma una crisalide ed esce come farfalla alata.",
+      "Un girino ha branchie e coda, poi crescono zampe, polmoni e una nuova vita da rana."
+     ],
+     "q": "Quale trasformazione trovi più incredibile?",
+     "c": "Cerca un bruco, un girino o un'immagine e disegna le sue fasi in ordine."
+    },
+    "pt": {
+     "t": "Crescer com metamorfose",
+     "g": "Seguir lagartas a borboletas e girinos a rãs, corpos que mudam por completo.",
+     "p": [
+      "Metamorfose significa que um animal jovem muda totalmente de forma ao tornar-se adulto.",
+      "Uma lagarta come folhas, forma uma crisálida e sai como borboleta com asas.",
+      "Um girino tem guelras e cauda, depois crescem patas, pulmões e uma nova vida de rã."
+     ],
+     "q": "Que transformação achas mais incrível?",
+     "c": "Procura uma lagarta, girino ou uma imagem e desenha as fases por ordem."
+    },
+    "pt_BR": {
+     "t": "Crescer com metamorfose",
+     "g": "Seguir lagartas a borboletas e girinos a rãs, corpos que mudam por completo.",
+     "p": [
+      "Metamorfose significa que um animal jovem muda totalmente de forma ao virar adulto.",
+      "Uma lagarta come folhas, forma uma crisálida e sai como borboleta com asas.",
+      "Um girino tem brânquias e cauda, depois crescem patas, pulmões e uma nova vida de rã."
+     ],
+     "q": "Qual transformação você acha mais incrível?",
+     "c": "Procure uma lagarta, girino ou uma imagem e desenhe as fases em ordem."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How long animals live",
+     "g": "Compare mayflies, tortoises and whales and their very different lifespans.",
+     "p": [
+      "Adult mayflies live only a day or so, while a Greenland shark can live for centuries.",
+      "Giant tortoises often reach well over a hundred years, and some whales do too.",
+      "Small animals tend to live shorter lives, though bats and some birds are surprising exceptions."
+     ],
+     "q": "If you could live like any animal, which lifespan would you choose?",
+     "c": "Look up one animal and guess its lifespan, then check how close your guess was."
+    },
+    "de": {
+     "t": "Wie lange Tiere leben",
+     "g": "Eintagsfliegen, Schildkröten und Wale mit ihren sehr verschiedenen Lebensspannen vergleichen.",
+     "p": [
+      "Erwachsene Eintagsfliegen leben nur etwa einen Tag, ein Grönlandhai kann Jahrhunderte leben.",
+      "Riesenschildkröten werden oft weit über hundert Jahre alt, manche Wale auch.",
+      "Kleine Tiere leben meist kürzer, doch Fledermäuse und manche Vögel sind überraschende Ausnahmen."
+     ],
+     "q": "Welche Lebensdauer eines Tieres würdest du dir wünschen?",
+     "c": "Such ein Tier heraus, schätze seine Lebensdauer und prüfe, wie nah du lagst."
+    },
+    "es": {
+     "t": "Cuánto viven los animales",
+     "g": "Comparar efímeras, tortugas y ballenas, con vidas muy distintas.",
+     "p": [
+      "Las efímeras adultas viven solo un día más o menos, y un tiburón de Groenlandia puede vivir siglos.",
+      "Las tortugas gigantes superan a menudo los cien años, y algunas ballenas también.",
+      "Los animales pequeños suelen vivir menos, aunque los murciélagos y algunas aves son excepciones sorprendentes."
+     ],
+     "q": "Si pudieras vivir como un animal, ¿qué duración de vida elegirías?",
+     "c": "Busca un animal, adivina cuánto vive y comprueba cuánto te acercaste."
+    },
+    "fr": {
+     "t": "La durée de vie des animaux",
+     "g": "Comparer éphémères, tortues et baleines, aux vies très différentes.",
+     "p": [
+      "Les éphémères adultes ne vivent qu'environ un jour, alors qu'un requin du Groenland peut vivre des siècles.",
+      "Les tortues géantes dépassent souvent cent ans, comme certaines baleines.",
+      "Les petits animaux vivent en général moins longtemps, mais chauves-souris et certains oiseaux font exception."
+     ],
+     "q": "Si tu pouvais vivre comme un animal, quelle durée de vie choisirais-tu ?",
+     "c": "Choisis un animal, devine sa durée de vie et vérifie si tu étais proche."
+    },
+    "it": {
+     "t": "Quanto vivono gli animali",
+     "g": "Confrontare effimere, tartarughe e balene, con vite molto diverse.",
+     "p": [
+      "Le effimere adulte vivono solo circa un giorno, mentre uno squalo della Groenlandia può vivere secoli.",
+      "Le tartarughe giganti superano spesso i cento anni, e anche alcune balene.",
+      "Gli animali piccoli vivono in genere meno, ma pipistrelli e alcuni uccelli sono eccezioni sorprendenti."
+     ],
+     "q": "Se potessi vivere come un animale, quale durata di vita sceglieresti?",
+     "c": "Scegli un animale, indovina quanto vive e verifica quanto ti sei avvicinato."
+    },
+    "pt": {
+     "t": "Quanto vivem os animais",
+     "g": "Comparar efémeras, tartarugas e baleias, com vidas muito diferentes.",
+     "p": [
+      "As efémeras adultas vivem apenas cerca de um dia, e um tubarão-da-gronelândia pode viver séculos.",
+      "As tartarugas-gigantes ultrapassam muitas vezes os cem anos, e algumas baleias também.",
+      "Os animais pequenos costumam viver menos, mas os morcegos e algumas aves são exceções surpreendentes."
+     ],
+     "q": "Se pudesses viver como um animal, que duração de vida escolhias?",
+     "c": "Escolhe um animal, adivinha quanto vive e confirma quão perto ficaste."
+    },
+    "pt_BR": {
+     "t": "Quanto vivem os animais",
+     "g": "Comparar efêmeras, tartarugas e baleias, com vidas muito diferentes.",
+     "p": [
+      "As efêmeras adultas vivem apenas cerca de um dia, e um tubarão-da-groenlândia pode viver séculos.",
+      "As tartarugas-gigantes passam muitas vezes dos cem anos, e algumas baleias também.",
+      "Os animais pequenos costumam viver menos, mas os morcegos e algumas aves são exceções surpreendentes."
+     ],
+     "q": "Se você pudesse viver como um animal, qual duração de vida escolheria?",
+     "c": "Escolha um animal, adivinhe quanto vive e confira o quanto chegou perto."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Animals that live in groups",
+     "g": "Learn why herds, flocks, schools and packs help animals thrive together.",
+     "p": [
+      "Many eyes are better than two: a flock spots danger sooner than a single bird.",
+      "Fish in a school confuse hunters, and wolves in a pack share care and hunting.",
+      "Meerkats take turns standing guard while the rest of the group searches for food."
+     ],
+     "q": "Do you think of yourself as more of a team or a solo type in nature?",
+     "c": "Watch pigeons, sparrows or ducks and notice how they move or look around as a group."
+    },
+    "de": {
+     "t": "Tiere, die in Gruppen leben",
+     "g": "Lernen, warum Herden, Schwärme und Rudel Tieren gemeinsam helfen.",
+     "p": [
+      "Viele Augen sehen mehr als zwei: Ein Schwarm entdeckt Gefahr früher als ein einzelner Vogel.",
+      "Fische im Schwarm verwirren Jäger, und Wölfe im Rudel teilen Betreuung und Jagd.",
+      "Erdmännchen wechseln sich beim Wachehalten ab, während der Rest Futter sucht."
+     ],
+     "q": "Bist du in der Natur eher ein Team- oder ein Einzelgänger-Typ?",
+     "c": "Beobachte Tauben, Spatzen oder Enten und achte darauf, wie sie sich als Gruppe bewegen und umschauen."
+    },
+    "es": {
+     "t": "Animales que viven en grupo",
+     "g": "Aprender por qué manadas, bandadas y bancos ayudan a los animales a prosperar juntos.",
+     "p": [
+      "Muchos ojos ven más que dos: una bandada detecta el peligro antes que un ave sola.",
+      "Los peces en banco confunden a los cazadores, y los lobos en manada comparten cuidados y caza.",
+      "Los suricatas se turnan para vigilar mientras el resto del grupo busca comida."
+     ],
+     "q": "¿Te ves más como alguien de equipo o de solitario en la naturaleza?",
+     "c": "Observa palomas, gorriones o patos y fíjate cómo se mueven o miran alrededor como grupo."
+    },
+    "fr": {
+     "t": "Les animaux qui vivent en groupe",
+     "g": "Apprendre pourquoi troupeaux, volées, bancs et meutes aident les animaux à prospérer ensemble.",
+     "p": [
+      "Beaucoup d'yeux valent mieux que deux : une volée repère le danger plus tôt qu'un oiseau seul.",
+      "Les poissons en banc déroutent les chasseurs, et les loups en meute partagent soins et chasse.",
+      "Les suricates montent la garde à tour de rôle pendant que le groupe cherche à manger."
+     ],
+     "q": "Te vois-tu plutôt en équipe ou en solitaire dans la nature ?",
+     "c": "Observe des pigeons, moineaux ou canards et regarde comment ils bougent ou regardent autour en groupe."
+    },
+    "it": {
+     "t": "Animali che vivono in gruppo",
+     "g": "Imparare perché branchi, stormi e banchi aiutano gli animali a prosperare insieme.",
+     "p": [
+      "Molti occhi vedono più di due: uno stormo scorge il pericolo prima di un uccello solo.",
+      "I pesci in banco confondono i cacciatori, e i lupi nel branco condividono cura e caccia.",
+      "I suricati fanno la guardia a turno mentre il resto del gruppo cerca cibo."
+     ],
+     "q": "Ti senti più una persona da squadra o da solitario in natura?",
+     "c": "Osserva piccioni, passeri o anatre e nota come si muovono o si guardano intorno in gruppo."
+    },
+    "pt": {
+     "t": "Animais que vivem em grupo",
+     "g": "Aprender porque manadas, bandos e cardumes ajudam os animais a prosperar juntos.",
+     "p": [
+      "Muitos olhos veem mais do que dois: um bando deteta o perigo antes de uma ave sozinha.",
+      "Os peixes em cardume confundem caçadores, e os lobos em alcateia partilham cuidados e caça.",
+      "Os suricatas revezam-se a vigiar enquanto o resto do grupo procura comida."
+     ],
+     "q": "Vês-te mais como alguém de equipa ou solitário na natureza?",
+     "c": "Observa pombos, pardais ou patos e repara como se movem ou olham à volta em grupo."
+    },
+    "pt_BR": {
+     "t": "Animais que vivem em grupo",
+     "g": "Aprender por que manadas, bandos e cardumes ajudam os animais a prosperar juntos.",
+     "p": [
+      "Muitos olhos veem mais do que dois: um bando percebe o perigo antes de uma ave sozinha.",
+      "Os peixes em cardume confundem caçadores, e os lobos em alcateia dividem cuidados e caça.",
+      "Os suricatos se revezam na vigia enquanto o resto do grupo procura comida."
+     ],
+     "q": "Você se vê mais como alguém de equipe ou solitário na natureza?",
+     "c": "Observe pombos, pardais ou patos e repare como se movem ou olham ao redor em grupo."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Animals that live alone",
+     "g": "Meet solitary hunters like tigers and leopards and how they share space.",
+     "p": [
+      "Tigers and leopards live mostly alone, each patrolling its own territory.",
+      "Solitary animals mark their ground with scent or scratches to say this area is taken.",
+      "Living alone means no sharing of food, and avoids the noise and attention of a crowd."
+     ],
+     "q": "Do you recharge best alone or with others?",
+     "c": "Look for scratch marks on a tree or a lone bird on a branch and note how it stays apart."
+    },
+    "de": {
+     "t": "Tiere, die allein leben",
+     "g": "Einzelgänger wie Tiger und Leoparden kennenlernen und wie sie den Raum teilen.",
+     "p": [
+      "Tiger und Leoparden leben meist allein und kontrollieren jeweils ihr eigenes Revier.",
+      "Einzelgänger markieren ihr Gebiet mit Duft oder Kratzspuren: Dieser Bereich ist besetzt.",
+      "Alleine leben heißt, kein Futter zu teilen und Lärm und Aufmerksamkeit einer Menge zu meiden."
+     ],
+     "q": "Tankst du lieber allein oder mit anderen Energie?",
+     "c": "Suche Kratzspuren oder einen einzelnen Vogel auf einem Ast und beobachte, wie er für sich bleibt."
+    },
+    "es": {
+     "t": "Animales que viven solos",
+     "g": "Conocer a cazadores solitarios como tigres y leopardos y cómo comparten el espacio.",
+     "p": [
+      "Tigres y leopardos viven casi siempre solos, cada uno patrullando su propio territorio.",
+      "Los animales solitarios marcan su zona con olor o arañazos para decir que está ocupada.",
+      "Vivir solo significa no compartir la comida y evitar el ruido y la atención de una multitud."
+     ],
+     "q": "¿Recargas mejor energía solo o con otros?",
+     "c": "Busca arañazos o un ave solitaria en una rama y observa cómo se mantiene aparte."
+    },
+    "fr": {
+     "t": "Les animaux qui vivent seuls",
+     "g": "Rencontrer des chasseurs solitaires comme tigres et léopards et comment ils partagent l'espace.",
+     "p": [
+      "Tigres et léopards vivent surtout seuls, chacun patrouillant son propre territoire.",
+      "Les animaux solitaires marquent leur zone avec des odeurs ou des griffures pour dire qu'elle est prise.",
+      "Vivre seul signifie ne pas partager la nourriture et éviter le bruit et l'attention d'une foule."
+     ],
+     "q": "Te ressources-tu mieux seul ou avec d'autres ?",
+     "c": "Cherche des griffures ou un oiseau solitaire sur une branche et observe comment il reste à l'écart."
+    },
+    "it": {
+     "t": "Animali che vivono da soli",
+     "g": "Conoscere cacciatori solitari come tigri e leopardi e come condividono lo spazio.",
+     "p": [
+      "Tigri e leopardi vivono per lo più da soli, ognuno pattugliando il proprio territorio.",
+      "Gli animali solitari segnano la zona con odori o graffi per dire che è occupata.",
+      "Vivere da soli significa non dividere il cibo ed evitare il rumore e l'attenzione di una folla."
+     ],
+     "q": "Ti ricarichi meglio da solo o con gli altri?",
+     "c": "Cerca graffi o un uccello solitario su un ramo e osserva come resta in disparte."
+    },
+    "pt": {
+     "t": "Animais que vivem sozinhos",
+     "g": "Conhecer caçadores solitários como tigres e leopardos e como partilham o espaço.",
+     "p": [
+      "Tigres e leopardos vivem sobretudo sozinhos, cada um a patrulhar o seu território.",
+      "Os animais solitários marcam a zona com cheiros ou arranhões para dizer que está ocupada.",
+      "Viver sozinho significa não partilhar comida e evitar o barulho e a atenção de uma multidão."
+     ],
+     "q": "Recarregas melhor as energias sozinho ou com outros?",
+     "c": "Procura arranhões ou uma ave solitária num ramo e observa como se mantém à parte."
+    },
+    "pt_BR": {
+     "t": "Animais que vivem sozinhos",
+     "g": "Conhecer caçadores solitários como tigres e leopardos e como dividem o espaço.",
+     "p": [
+      "Tigres e leopardos vivem principalmente sozinhos, cada um patrulhando seu território.",
+      "Os animais solitários marcam a área com cheiros ou arranhões para dizer que está ocupada.",
+      "Viver sozinho significa não dividir comida e evitar o barulho e a atenção de uma multidão."
+     ],
+     "q": "Você recarrega melhor as energias sozinho ou com outras pessoas?",
+     "c": "Procure arranhões ou uma ave solitária num galho e observe como ela fica à parte."
+    }
+   }
+  }
+ ]
+}

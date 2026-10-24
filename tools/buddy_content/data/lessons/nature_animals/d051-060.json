@@ -1,0 +1,835 @@
+{
+ "topic": "nature_animals",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Day and night animals",
+     "g": "Learn about diurnal, nocturnal and dawn-and-dusk lifestyles.",
+     "p": [
+      "Diurnal animals are active by day, nocturnal ones by night, and crepuscular ones at dawn and dusk.",
+      "Night animals often have big eyes, sharp hearing or good noses to find their way in the dark.",
+      "Sharing a place across shifts lets different species use the same food and space without crowding."
+     ],
+     "q": "Are you more of a morning lark or a night owl?",
+     "c": "At dusk, step outside and listen: note which sounds start as the light fades."
+    },
+    "de": {
+     "t": "Tag- und Nachttiere",
+     "g": "Tagaktive, nachtaktive und dämmerungsaktive Lebensweisen kennenlernen.",
+     "p": [
+      "Tagaktive Tiere sind tagsüber unterwegs, nachtaktive nachts, dämmerungsaktive bei Morgen- und Abendlicht.",
+      "Nachttiere haben oft große Augen, scharfe Ohren oder gute Nasen, um sich im Dunkeln zurechtzufinden.",
+      "Wechselnde Schichten erlauben verschiedenen Arten, dieselbe Nahrung und denselben Raum ohne Gedränge zu nutzen."
+     ],
+     "q": "Bist du eher eine Lerche oder eine Eule?",
+     "c": "Tritt in der Dämmerung vor die Tür und lausche: Welche Geräusche beginnen, wenn das Licht schwindet?"
+    },
+    "es": {
+     "t": "Animales de día y de noche",
+     "g": "Conocer los hábitos diurnos, nocturnos y de amanecer y atardecer.",
+     "p": [
+      "Los animales diurnos están activos de día, los nocturnos de noche y los crepusculares al alba y al ocaso.",
+      "Los animales nocturnos suelen tener ojos grandes, buen oído o buen olfato para moverse en la oscuridad.",
+      "Compartir un lugar por turnos permite que distintas especies usen la misma comida y espacio sin aglomerarse."
+     ],
+     "q": "¿Eres más alondra madrugadora o búho nocturno?",
+     "c": "Al atardecer sal fuera y escucha: anota qué sonidos empiezan cuando baja la luz."
+    },
+    "fr": {
+     "t": "Animaux de jour et de nuit",
+     "g": "Découvrir les modes de vie diurne, nocturne et crépusculaire.",
+     "p": [
+      "Les animaux diurnes sont actifs le jour, les nocturnes la nuit et les crépusculaires à l'aube et au crépuscule.",
+      "Les animaux de nuit ont souvent de grands yeux, une ouïe fine ou un bon nez pour se repérer dans le noir.",
+      "Se partager un lieu par équipes permet à plusieurs espèces d'utiliser la même nourriture et le même espace sans se gêner."
+     ],
+     "q": "Es-tu plutôt alouette du matin ou oiseau de nuit ?",
+     "c": "Au crépuscule, sors écouter : note quels sons commencent quand la lumière baisse."
+    },
+    "it": {
+     "t": "Animali del giorno e della notte",
+     "g": "Conoscere gli stili di vita diurni, notturni e crepuscolari.",
+     "p": [
+      "Gli animali diurni sono attivi di giorno, i notturni di notte e i crepuscolari all'alba e al tramonto.",
+      "Gli animali notturni hanno spesso occhi grandi, udito fine o buon fiuto per orientarsi al buio.",
+      "Condividere un posto a turni permette a specie diverse di usare lo stesso cibo e spazio senza affollarsi."
+     ],
+     "q": "Sei più un'allodola mattiniera o un gufo notturno?",
+     "c": "Al tramonto esci e ascolta: annota quali suoni iniziano quando la luce cala."
+    },
+    "pt": {
+     "t": "Animais do dia e da noite",
+     "g": "Conhecer os hábitos diurnos, noturnos e de madrugada e entardecer.",
+     "p": [
+      "Os animais diurnos estão ativos de dia, os noturnos de noite e os crepusculares ao amanhecer e entardecer.",
+      "Os animais noturnos têm muitas vezes olhos grandes, bom ouvido ou bom olfato para se orientarem no escuro.",
+      "Partilhar um lugar por turnos permite que espécies diferentes usem a mesma comida e espaço sem se atropelarem."
+     ],
+     "q": "És mais uma cotovia madrugadora ou uma coruja noturna?",
+     "c": "Ao entardecer, sai lá fora e escuta: anota que sons começam quando a luz diminui."
+    },
+    "pt_BR": {
+     "t": "Animais do dia e da noite",
+     "g": "Conhecer os hábitos diurnos, noturnos e de amanhecer e entardecer.",
+     "p": [
+      "Os animais diurnos ficam ativos de dia, os noturnos de noite e os crepusculares ao amanhecer e entardecer.",
+      "Os animais noturnos têm muitas vezes olhos grandes, bom ouvido ou bom olfato para se orientar no escuro.",
+      "Dividir um lugar em turnos permite que espécies diferentes usem a mesma comida e espaço sem se atrapalhar."
+     ],
+     "q": "Você é mais uma cotovia madrugadora ou uma coruja noturna?",
+     "c": "No entardecer, saia e escute: anote quais sons começam quando a luz diminui."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sleeping in nature",
+     "g": "See how dolphins, birds and other animals rest, sometimes with half the brain awake.",
+     "p": [
+      "Dolphins rest one half of the brain at a time and keep swimming and breathing.",
+      "Some birds can sleep with one eye open, keeping half the brain alert to watch around.",
+      "Giraffes only nap in short bursts, while cats and sloths can spend many hours resting."
+     ],
+     "q": "How do you like to rest best: long nights or short naps?",
+     "c": "Watch a pet or bird at rest and note its sleeping posture and when it opens its eyes."
+    },
+    "de": {
+     "t": "Schlafen in der Natur",
+     "g": "Sehen, wie Delfine, Vögel und andere Tiere ruhen, manchmal mit halbem Gehirn wach.",
+     "p": [
+      "Delfine ruhen immer nur eine Gehirnhälfte und schwimmen und atmen weiter.",
+      "Manche Vögel schlafen mit einem offenen Auge und halten eine Gehirnhälfte wachsam.",
+      "Giraffen schlafen nur in kurzen Nickerchen, Katzen und Faultiere ruhen viele Stunden."
+     ],
+     "q": "Wie ruhst du am liebsten: lange Nächte oder kurze Nickerchen?",
+     "c": "Beobachte ein Haustier oder einen Vogel beim Ruhen und achte auf Haltung und Augenöffnen."
+    },
+    "es": {
+     "t": "Dormir en la naturaleza",
+     "g": "Ver cómo delfines, aves y otros animales descansan, a veces con medio cerebro despierto.",
+     "p": [
+      "Los delfines duermen una mitad del cerebro cada vez y siguen nadando y respirando.",
+      "Algunas aves duermen con un ojo abierto y media parte del cerebro alerta para vigilar.",
+      "Las jirafas solo echan siestas breves, mientras que gatos y perezosos descansan muchas horas."
+     ],
+     "q": "¿Cómo prefieres descansar: noches largas o siestas cortas?",
+     "c": "Observa a una mascota o ave descansando y anota su postura y cuándo abre los ojos."
+    },
+    "fr": {
+     "t": "Dormir dans la nature",
+     "g": "Voir comment dauphins, oiseaux et autres animaux se reposent, parfois avec la moitié du cerveau éveillée.",
+     "p": [
+      "Les dauphins reposent une moitié du cerveau à la fois et continuent de nager et de respirer.",
+      "Certains oiseaux dorment avec un oeil ouvert, gardant la moitié du cerveau en alerte pour surveiller.",
+      "Les girafes ne font que de courtes siestes, alors que chats et paresseux se reposent de longues heures."
+     ],
+     "q": "Comment aimes-tu te reposer : longues nuits ou courtes siestes ?",
+     "c": "Observe un animal de compagnie ou un oiseau au repos et note sa posture et quand il ouvre les yeux."
+    },
+    "it": {
+     "t": "Dormire in natura",
+     "g": "Vedere come delfini, uccelli e altri animali riposano, a volte con metà cervello sveglio.",
+     "p": [
+      "I delfini riposano una metà del cervello alla volta e continuano a nuotare e respirare.",
+      "Alcuni uccelli dormono con un occhio aperto, tenendo metà cervello in allerta per sorvegliare.",
+      "Le giraffe fanno solo brevi pisolini, mentre gatti e bradipi riposano molte ore."
+     ],
+     "q": "Come ti piace riposare: notti lunghe o brevi pisolini?",
+     "c": "Osserva un animale domestico o un uccello a riposo e annota postura e quando apre gli occhi."
+    },
+    "pt": {
+     "t": "Dormir na natureza",
+     "g": "Ver como golfinhos, aves e outros animais descansam, por vezes com metade do cérebro acordada.",
+     "p": [
+      "Os golfinhos descansam uma metade do cérebro de cada vez e continuam a nadar e a respirar.",
+      "Algumas aves dormem com um olho aberto, mantendo metade do cérebro alerta para vigiar.",
+      "As girafas só fazem sestas curtas, enquanto gatos e preguiças descansam muitas horas."
+     ],
+     "q": "Como gostas mais de descansar: noites longas ou sestas curtas?",
+     "c": "Observa um animal de estimação ou ave a descansar e anota a postura e quando abre os olhos."
+    },
+    "pt_BR": {
+     "t": "Dormir na natureza",
+     "g": "Ver como golfinhos, aves e outros animais descansam, às vezes com metade do cérebro acordada.",
+     "p": [
+      "Os golfinhos descansam uma metade do cérebro de cada vez e continuam nadando e respirando.",
+      "Algumas aves dormem com um olho aberto, mantendo metade do cérebro alerta para vigiar.",
+      "As girafas só tiram sonecas curtas, enquanto gatos e preguiças descansam muitas horas."
+     ],
+     "q": "Como você mais gosta de descansar: noites longas ou sonecas curtas?",
+     "c": "Observe um bicho de estimação ou ave descansando e anote a postura e quando abre os olhos."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hibernation",
+     "g": "Learn how bears, hedgehogs and bats get through winter by slowing their bodies down.",
+     "p": [
+      "In hibernation, heart rate, breathing and body temperature drop to save energy.",
+      "Hedgehogs and bats sleep deeply in sheltered nests or caves and wake in spring.",
+      "Bears have a lighter winter sleep, and may wake up and move around on mild days."
+     ],
+     "q": "Where would you build the coziest winter hideaway if you were an animal?",
+     "c": "Look for a quiet spot a hedgehog or insect might use for winter, like a leaf pile, without disturbing it."
+    },
+    "de": {
+     "t": "Winterschlaf",
+     "g": "Lernen, wie Bären, Igel und Fledermäuse den Winter überstehen, indem sie den Körper herunterfahren.",
+     "p": [
+      "Im Winterschlaf sinken Herzschlag, Atmung und Körpertemperatur, um Energie zu sparen.",
+      "Igel und Fledermäuse schlafen tief in geschützten Nestern oder Höhlen und erwachen im Frühling.",
+      "Bären halten eine leichtere Winterruhe und bewegen sich an milden Tagen manchmal."
+     ],
+     "q": "Wo würdest du als Tier dein gemütlichstes Winterversteck bauen?",
+     "c": "Suche einen ruhigen Platz, den ein Igel oder Insekt im Winter nutzen könnte, etwa einen Laubhaufen, ohne zu stören."
+    },
+    "es": {
+     "t": "Hibernación",
+     "g": "Aprender cómo osos, erizos y murciélagos superan el invierno frenando su cuerpo.",
+     "p": [
+      "En la hibernación bajan el pulso, la respiración y la temperatura corporal para ahorrar energía.",
+      "Erizos y murciélagos duermen profundamente en nidos o cuevas resguardadas y despiertan en primavera.",
+      "Los osos tienen un sueño invernal más ligero y pueden moverse en días suaves."
+     ],
+     "q": "¿Dónde construirías el refugio de invierno más acogedor si fueras animal?",
+     "c": "Busca un rincón tranquilo que un erizo o insecto use en invierno, como un montón de hojas, sin molestar."
+    },
+    "fr": {
+     "t": "L'hibernation",
+     "g": "Apprendre comment ours, hérissons et chauves-souris passent l'hiver en ralentissant leur corps.",
+     "p": [
+      "En hibernation, le rythme cardiaque, la respiration et la température baissent pour économiser l'énergie.",
+      "Hérissons et chauves-souris dorment profondément dans des nids ou grottes abrités et se réveillent au printemps.",
+      "Les ours ont un sommeil hivernal plus léger et peuvent bouger par temps doux."
+     ],
+     "q": "Où construirais-tu la cachette d'hiver la plus confortable si tu étais un animal ?",
+     "c": "Cherche un coin calme qu'un hérisson ou un insecte pourrait utiliser en hiver, comme un tas de feuilles, sans le déranger."
+    },
+    "it": {
+     "t": "Il letargo",
+     "g": "Imparare come orsi, ricci e pipistrelli superano l'inverno rallentando il corpo.",
+     "p": [
+      "Nel letargo battito, respiro e temperatura corporea calano per risparmiare energia.",
+      "Ricci e pipistrelli dormono profondamente in nidi o grotte riparati e si svegliano in primavera.",
+      "Gli orsi hanno un sonno invernale più leggero e possono muoversi nei giorni miti."
+     ],
+     "q": "Dove costruiresti il rifugio invernale più comodo se fossi un animale?",
+     "c": "Cerca un angolo tranquillo che un riccio o un insetto userebbe d'inverno, come un mucchio di foglie, senza disturbare."
+    },
+    "pt": {
+     "t": "Hibernação",
+     "g": "Aprender como ursos, ouriços e morcegos passam o inverno abrandando o corpo.",
+     "p": [
+      "Na hibernação, o batimento, a respiração e a temperatura corporal descem para poupar energia.",
+      "Ouriços e morcegos dormem profundamente em ninhos ou grutas abrigados e acordam na primavera.",
+      "Os ursos têm um sono de inverno mais leve e podem mexer-se em dias amenos."
+     ],
+     "q": "Onde construirias o esconderijo de inverno mais acolhedor se fosses um animal?",
+     "c": "Procura um canto sossegado que um ouriço ou inseto use no inverno, como um monte de folhas, sem perturbar."
+    },
+    "pt_BR": {
+     "t": "Hibernação",
+     "g": "Aprender como ursos, ouriços e morcegos passam o inverno desacelerando o corpo.",
+     "p": [
+      "Na hibernação, os batimentos, a respiração e a temperatura do corpo caem para poupar energia.",
+      "Ouriços e morcegos dormem profundamente em ninhos ou cavernas abrigados e acordam na primavera.",
+      "Os ursos têm um sono de inverno mais leve e podem se mexer em dias amenos."
+     ],
+     "q": "Onde você construiria o esconderijo de inverno mais aconchegante se fosse um animal?",
+     "c": "Procure um canto sossegado que um ouriço ou inseto use no inverno, como um monte de folhas, sem perturbar."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Seasons in nature",
+     "g": "Follow spring births, summer growth, autumn stores and winter rest.",
+     "p": [
+      "Spring brings new leaves, flowers and many baby animals, timed to the growing food supply.",
+      "Summer is a season of growth, and autumn is when squirrels and jays store seeds and nuts.",
+      "In winter many animals rest, migrate or live on stored food while plants pause growing."
+     ],
+     "q": "Which season do you find most beautiful in nature?",
+     "c": "Take a photo of the same tree or spot each season, or imagine how it changes through the year."
+    },
+    "de": {
+     "t": "Jahreszeiten in der Natur",
+     "g": "Frühlingsgeburten, Sommerwachstum, Herbstvorräte und Winterruhe verfolgen.",
+     "p": [
+      "Der Frühling bringt neue Blätter, Blüten und viele Tierbabys, passend zum wachsenden Nahrungsangebot.",
+      "Der Sommer ist Wachstumszeit, im Herbst legen Eichhörnchen und Eichelhäher Vorräte an.",
+      "Im Winter ruhen viele Tiere, ziehen fort oder leben von Vorräten, und Pflanzen pausieren."
+     ],
+     "q": "Welche Jahreszeit findest du in der Natur am schönsten?",
+     "c": "Fotografiere denselben Baum oder Platz zu jeder Jahreszeit oder stell dir vor, wie er sich verändert."
+    },
+    "es": {
+     "t": "Estaciones en la naturaleza",
+     "g": "Seguir los nacimientos de primavera, el crecimiento de verano, las reservas de otoño y el reposo invernal.",
+     "p": [
+      "La primavera trae hojas nuevas, flores y muchas crías, a tiempo con el alimento que crece.",
+      "El verano es época de crecimiento y en otoño ardillas y arrendajos guardan semillas y frutos secos.",
+      "En invierno muchos animales descansan, migran o viven de reservas, y las plantas frenan su crecimiento."
+     ],
+     "q": "¿Qué estación te parece más bella en la naturaleza?",
+     "c": "Fotografía el mismo árbol o lugar en cada estación, o imagina cómo cambia a lo largo del año."
+    },
+    "fr": {
+     "t": "Les saisons dans la nature",
+     "g": "Suivre les naissances du printemps, la croissance de l'été, les réserves de l'automne et le repos de l'hiver.",
+     "p": [
+      "Le printemps apporte feuilles neuves, fleurs et nombreux jeunes, au rythme de la nourriture qui pousse.",
+      "L'été est la saison de la croissance, et à l'automne écureuils et geais font des réserves de graines et noix.",
+      "En hiver, beaucoup d'animaux se reposent, migrent ou vivent de réserves, et les plantes s'arrêtent de grandir."
+     ],
+     "q": "Quelle saison trouves-tu la plus belle dans la nature ?",
+     "c": "Photographie le même arbre ou lieu à chaque saison, ou imagine comment il change au fil de l'année."
+    },
+    "it": {
+     "t": "Le stagioni in natura",
+     "g": "Seguire le nascite di primavera, la crescita estiva, le scorte autunnali e il riposo invernale.",
+     "p": [
+      "La primavera porta foglie nuove, fiori e molti cuccioli, al ritmo del cibo che cresce.",
+      "L'estate è stagione di crescita, e in autunno scoiattoli e ghiandaie fanno scorta di semi e noci.",
+      "In inverno molti animali riposano, migrano o vivono di scorte, e le piante rallentano la crescita."
+     ],
+     "q": "Quale stagione trovi più bella in natura?",
+     "c": "Fotografa lo stesso albero o luogo in ogni stagione, o immagina come cambia durante l'anno."
+    },
+    "pt": {
+     "t": "As estações na natureza",
+     "g": "Seguir os nascimentos da primavera, o crescimento do verão, as reservas do outono e o descanso do inverno.",
+     "p": [
+      "A primavera traz folhas novas, flores e muitas crias, a tempo do alimento que cresce.",
+      "O verão é época de crescimento e no outono esquilos e gaios guardam sementes e frutos secos.",
+      "No inverno muitos animais descansam, migram ou vivem de reservas, e as plantas abrandam o crescimento."
+     ],
+     "q": "Que estação achas mais bonita na natureza?",
+     "c": "Fotografa a mesma árvore ou sítio em cada estação, ou imagina como muda ao longo do ano."
+    },
+    "pt_BR": {
+     "t": "As estações na natureza",
+     "g": "Seguir os nascimentos da primavera, o crescimento do verão, as reservas do outono e o descanso do inverno.",
+     "p": [
+      "A primavera traz folhas novas, flores e muitos filhotes, no ritmo do alimento que cresce.",
+      "O verão é época de crescimento e no outono esquilos e gaios guardam sementes e castanhas.",
+      "No inverno muitos animais descansam, migram ou vivem de reservas, e as plantas desaceleram o crescimento."
+     ],
+     "q": "Qual estação você acha mais bonita na natureza?",
+     "c": "Fotografe a mesma árvore ou lugar em cada estação, ou imagine como ele muda ao longo do ano."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why leaves change colour",
+     "g": "Discover the pigments hidden in leaves and why many trees drop them in autumn.",
+     "p": [
+      "Leaves are green from chlorophyll, but yellow and orange pigments are there all along.",
+      "In autumn, trees stop making chlorophyll, so the hidden yellows and oranges show up.",
+      "Reds are often made fresh from sugars in the leaf, and dropping leaves saves energy in winter."
+     ],
+     "q": "What is your favourite autumn colour: gold, orange or deep red?",
+     "c": "Collect a few fallen leaves of different colours and arrange them from green to red."
+    },
+    "de": {
+     "t": "Warum Blätter ihre Farbe wechseln",
+     "g": "Die verborgenen Farbstoffe in Blättern entdecken und warum viele Bäume sie im Herbst abwerfen.",
+     "p": [
+      "Blätter sind durch Chlorophyll grün, doch gelbe und orange Farbstoffe sind immer schon da.",
+      "Im Herbst bilden Bäume kein Chlorophyll mehr, darum treten Gelb und Orange hervor.",
+      "Rote Töne entstehen oft neu aus Zuckern, und der Laubabwurf spart im Winter Energie."
+     ],
+     "q": "Welche Herbstfarbe magst du am liebsten: Gold, Orange oder Tiefrot?",
+     "c": "Sammle einige gefallene Blätter in verschiedenen Farben und ordne sie von Grün bis Rot."
+    },
+    "es": {
+     "t": "Por qué las hojas cambian de color",
+     "g": "Descubrir los pigmentos ocultos en las hojas y por qué muchos árboles las sueltan en otoño.",
+     "p": [
+      "Las hojas son verdes por la clorofila, pero los pigmentos amarillos y naranjas están ahí desde siempre.",
+      "En otoño los árboles dejan de producir clorofila, y asoman los amarillos y naranjas ocultos.",
+      "Los rojos suelen formarse de nuevo a partir de azúcares, y soltar hojas ahorra energía en invierno."
+     ],
+     "q": "¿Cuál es tu color de otoño favorito: dorado, naranja o rojo intenso?",
+     "c": "Recoge hojas caídas de varios colores y ordénalas del verde al rojo."
+    },
+    "fr": {
+     "t": "Pourquoi les feuilles changent de couleur",
+     "g": "Découvrir les pigments cachés dans les feuilles et pourquoi beaucoup d'arbres les perdent à l'automne.",
+     "p": [
+      "Les feuilles sont vertes grâce à la chlorophylle, mais les pigments jaunes et orange sont là depuis toujours.",
+      "À l'automne, les arbres cessent de fabriquer de la chlorophylle et les jaunes et orange cachés apparaissent.",
+      "Les rouges se forment souvent à nouveau à partir de sucres, et perdre les feuilles économise de l'énergie en hiver."
+     ],
+     "q": "Quelle est ta couleur d'automne préférée : or, orange ou rouge profond ?",
+     "c": "Ramasse quelques feuilles tombées de couleurs variées et range-les du vert au rouge."
+    },
+    "it": {
+     "t": "Perché le foglie cambiano colore",
+     "g": "Scoprire i pigmenti nascosti nelle foglie e perché molti alberi le perdono in autunno.",
+     "p": [
+      "Le foglie sono verdi per la clorofilla, ma i pigmenti gialli e arancioni ci sono da sempre.",
+      "In autunno gli alberi smettono di produrre clorofilla e spuntano i gialli e gli arancioni nascosti.",
+      "I rossi si formano spesso di nuovo dagli zuccheri, e perdere le foglie fa risparmiare energia in inverno."
+     ],
+     "q": "Qual è il tuo colore autunnale preferito: oro, arancione o rosso intenso?",
+     "c": "Raccogli alcune foglie cadute di vari colori e disponile dal verde al rosso."
+    },
+    "pt": {
+     "t": "Porque as folhas mudam de cor",
+     "g": "Descobrir os pigmentos escondidos nas folhas e porque muitas árvores as largam no outono.",
+     "p": [
+      "As folhas são verdes por causa da clorofila, mas os pigmentos amarelos e laranja estão lá desde sempre.",
+      "No outono as árvores deixam de produzir clorofila, e aparecem os amarelos e laranjas escondidos.",
+      "Os vermelhos formam-se muitas vezes de novo a partir de açúcares, e largar folhas poupa energia no inverno."
+     ],
+     "q": "Qual é a tua cor de outono preferida: dourado, laranja ou vermelho intenso?",
+     "c": "Apanha algumas folhas caídas de várias cores e ordena-as do verde ao vermelho."
+    },
+    "pt_BR": {
+     "t": "Por que as folhas mudam de cor",
+     "g": "Descobrir os pigmentos escondidos nas folhas e por que muitas árvores as soltam no outono.",
+     "p": [
+      "As folhas são verdes por causa da clorofila, mas os pigmentos amarelos e laranja estão lá desde sempre.",
+      "No outono as árvores param de produzir clorofila, e aparecem os amarelos e laranjas escondidos.",
+      "Os vermelhos muitas vezes se formam de novo a partir de açúcares, e soltar folhas poupa energia no inverno."
+     ],
+     "q": "Qual é a sua cor de outono favorita: dourado, laranja ou vermelho intenso?",
+     "c": "Recolha algumas folhas caídas de várias cores e organize do verde ao vermelho."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Nature in your neighbourhood",
+     "g": "Find parks, gardens and street trees as homes for surprising wildlife.",
+     "p": [
+      "Even a small park or garden can host birds, insects, bats, hedgehogs or foxes.",
+      "Street trees give shade, cool the air and offer perches, food and nesting spots.",
+      "A pot of flowers on a balcony can feed bees and butterflies passing through the city."
+     ],
+     "q": "What green space near you do you enjoy most?",
+     "c": "Walk for ten minutes nearby and count how many different living things you can notice."
+    },
+    "de": {
+     "t": "Natur in deiner Nachbarschaft",
+     "g": "Parks, Gärten und Straßenbäume als Zuhause für überraschende Wildtiere entdecken.",
+     "p": [
+      "Schon ein kleiner Park oder Garten kann Vögel, Insekten, Fledermäuse, Igel oder Füchse beherbergen.",
+      "Straßenbäume spenden Schatten, kühlen die Luft und bieten Sitzplätze, Futter und Nistplätze.",
+      "Ein Blumentopf auf dem Balkon kann Bienen und Schmetterlinge ernähren, die durch die Stadt ziehen."
+     ],
+     "q": "Welche Grünfläche in deiner Nähe magst du am liebsten?",
+     "c": "Geh zehn Minuten in der Nähe spazieren und zähle, wie viele verschiedene Lebewesen du bemerkst."
+    },
+    "es": {
+     "t": "Naturaleza en tu barrio",
+     "g": "Encontrar parques, jardines y árboles de calle como hogar de fauna sorprendente.",
+     "p": [
+      "Incluso un parque o jardín pequeño puede albergar aves, insectos, murciélagos, erizos o zorros.",
+      "Los árboles de la calle dan sombra, refrescan el aire y ofrecen posaderos, comida y sitios de nido.",
+      "Una maceta con flores en el balcón puede alimentar abejas y mariposas que cruzan la ciudad."
+     ],
+     "q": "¿Qué espacio verde cerca de ti disfrutas más?",
+     "c": "Camina diez minutos cerca de casa y cuenta cuántos seres vivos distintos notas."
+    },
+    "fr": {
+     "t": "La nature dans ton quartier",
+     "g": "Trouver parcs, jardins et arbres de rue comme refuges d'une faune surprenante.",
+     "p": [
+      "Même un petit parc ou jardin peut accueillir oiseaux, insectes, chauves-souris, hérissons ou renards.",
+      "Les arbres de rue donnent de l'ombre, rafraîchissent l'air et offrent perchoirs, nourriture et sites de nid.",
+      "Un pot de fleurs sur un balcon peut nourrir abeilles et papillons qui traversent la ville."
+     ],
+     "q": "Quel espace vert près de chez toi préfères-tu ?",
+     "c": "Marche dix minutes près de chez toi et compte combien d'êtres vivants différents tu remarques."
+    },
+    "it": {
+     "t": "La natura nel tuo quartiere",
+     "g": "Trovare parchi, giardini e alberi di strada come case di fauna sorprendente.",
+     "p": [
+      "Anche un piccolo parco o giardino può ospitare uccelli, insetti, pipistrelli, ricci o volpi.",
+      "Gli alberi di strada danno ombra, rinfrescano l'aria e offrono posatoi, cibo e posti per il nido.",
+      "Un vaso di fiori sul balcone può nutrire api e farfalle che attraversano la città."
+     ],
+     "q": "Quale spazio verde vicino a te ti piace di più?",
+     "c": "Cammina dieci minuti vicino a casa e conta quanti esseri viventi diversi noti."
+    },
+    "pt": {
+     "t": "Natureza no teu bairro",
+     "g": "Encontrar parques, jardins e árvores de rua como casa de fauna surpreendente.",
+     "p": [
+      "Até um pequeno parque ou jardim pode albergar aves, insetos, morcegos, ouriços ou raposas.",
+      "As árvores de rua dão sombra, refrescam o ar e oferecem poisos, comida e sítios de ninho.",
+      "Um vaso de flores na varanda pode alimentar abelhas e borboletas que atravessam a cidade."
+     ],
+     "q": "Que espaço verde perto de ti gostas mais?",
+     "c": "Caminha dez minutos perto de casa e conta quantos seres vivos diferentes notas."
+    },
+    "pt_BR": {
+     "t": "Natureza no seu bairro",
+     "g": "Encontrar parques, jardins e árvores de rua como casa de fauna surpreendente.",
+     "p": [
+      "Até um pequeno parque ou jardim pode abrigar aves, insetos, morcegos, ouriços ou raposas.",
+      "As árvores de rua dão sombra, refrescam o ar e oferecem poleiros, comida e lugares de ninho.",
+      "Um vaso de flores na varanda pode alimentar abelhas e borboletas que atravessam a cidade."
+     ],
+     "q": "Qual espaço verde perto de você mais agrada?",
+     "c": "Caminhe dez minutos perto de casa e conte quantos seres vivos diferentes percebe."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Birds you can see in a city",
+     "g": "Meet pigeons, sparrows, crows and others that thrive alongside people.",
+     "p": [
+      "Pigeons descend from rock doves, and city ledges feel like cliffs to them.",
+      "Crows are very clever, remember faces and can use simple tools in some species.",
+      "Sparrows and starlings nest in building gaps, and many cities host peregrine falcons on tall towers."
+     ],
+     "q": "Which city bird do you find the most charming or interesting?",
+     "c": "Spend five minutes watching one common city bird and note what it eats and how it moves."
+    },
+    "de": {
+     "t": "Vögel, die du in der Stadt siehst",
+     "g": "Tauben, Spatzen, Krähen und andere Stadtvögel kennenlernen, die neben Menschen gedeihen.",
+     "p": [
+      "Stadttauben stammen von Felsentauben ab, und Fenstersimse fühlen sich für sie wie Klippen an.",
+      "Krähen sind sehr klug, erkennen Gesichter und nutzen bei manchen Arten einfache Werkzeuge.",
+      "Spatzen und Stare nisten in Gebäudelücken, und viele Städte beherbergen Wanderfalken auf hohen Türmen."
+     ],
+     "q": "Welchen Stadtvogel findest du am charmantesten oder interessantesten?",
+     "c": "Beobachte fünf Minuten einen häufigen Stadtvogel und notiere, was er frisst und wie er sich bewegt."
+    },
+    "es": {
+     "t": "Aves que puedes ver en la ciudad",
+     "g": "Conocer palomas, gorriones, cuervos y otras aves que prosperan junto a las personas.",
+     "p": [
+      "Las palomas descienden de la paloma bravía, y las cornisas de la ciudad les parecen acantilados.",
+      "Los cuervos son muy listos, recuerdan caras y algunas especies usan herramientas sencillas.",
+      "Gorriones y estorninos anidan en huecos de edificios, y muchas ciudades albergan halcones peregrinos en torres altas."
+     ],
+     "q": "¿Qué ave de ciudad te parece más encantadora o interesante?",
+     "c": "Pasa cinco minutos observando un ave común de ciudad y anota qué come y cómo se mueve."
+    },
+    "fr": {
+     "t": "Les oiseaux que l'on voit en ville",
+     "g": "Rencontrer pigeons, moineaux, corneilles et autres oiseaux qui prospèrent près des humains.",
+     "p": [
+      "Les pigeons descendent des biset sauvages, et les corniches de la ville leur rappellent des falaises.",
+      "Les corneilles sont très intelligentes, retiennent les visages et certaines espèces utilisent des outils simples.",
+      "Moineaux et étourneaux nichent dans les creux des bâtiments, et beaucoup de villes abritent des faucons pèlerins sur de hautes tours."
+     ],
+     "q": "Quel oiseau de ville trouves-tu le plus charmant ou intéressant ?",
+     "c": "Passe cinq minutes à observer un oiseau commun de ville et note ce qu'il mange et comment il bouge."
+    },
+    "it": {
+     "t": "Uccelli che puoi vedere in città",
+     "g": "Conoscere piccioni, passeri, cornacchie e altri uccelli che prosperano accanto alle persone.",
+     "p": [
+      "I piccioni discendono dai colombi selvatici, e le cornici della città sembrano loro scogliere.",
+      "Le cornacchie sono molto intelligenti, ricordano i volti e alcune specie usano semplici strumenti.",
+      "Passeri e storni nidificano negli spazi degli edifici, e molte città ospitano falchi pellegrini su alte torri."
+     ],
+     "q": "Quale uccello di città trovi più affascinante o interessante?",
+     "c": "Dedica cinque minuti a osservare un uccello comune di città e annota cosa mangia e come si muove."
+    },
+    "pt": {
+     "t": "Aves que podes ver na cidade",
+     "g": "Conhecer pombos, pardais, corvos e outras aves que prosperam junto das pessoas.",
+     "p": [
+      "Os pombos descendem do pombo-das-rochas, e as cornijas da cidade parecem-lhes falésias.",
+      "Os corvos são muito espertos, lembram-se de caras e algumas espécies usam ferramentas simples.",
+      "Pardais e estorninhos nidificam em frestas de edifícios, e muitas cidades têm falcões-peregrinos em torres altas."
+     ],
+     "q": "Que ave de cidade achas mais encantadora ou interessante?",
+     "c": "Passa cinco minutos a observar uma ave comum da cidade e anota o que come e como se move."
+    },
+    "pt_BR": {
+     "t": "Aves que você pode ver na cidade",
+     "g": "Conhecer pombos, pardais, corvos e outras aves que prosperam junto das pessoas.",
+     "p": [
+      "Os pombos descendem do pombo-das-rochas, e os beirais da cidade parecem penhascos para eles.",
+      "Os corvos são muito espertos, lembram rostos e algumas espécies usam ferramentas simples.",
+      "Pardais e estorninhos nidificam em frestas de prédios, e muitas cidades têm falcões-peregrinos em torres altas."
+     ],
+     "q": "Qual ave de cidade você acha mais encantadora ou interessante?",
+     "c": "Passe cinco minutos observando uma ave comum da cidade e anote o que come e como se move."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Garden minibeasts",
+     "g": "Meet ladybirds, beetles, woodlice and bugs you can find under a single stone.",
+     "p": [
+      "A garden has thousands of minibeasts, from beetles and ants to snails and centipedes.",
+      "Ladybirds, ground beetles and lacewings are gardeners' friends, helping control pests.",
+      "Rotting wood and damp stones make perfect cool, dark shelters for many tiny creatures."
+     ],
+     "q": "Which minibeast would you most like to meet up close?",
+     "c": "Gently lift a stone or log, count the minibeasts, then put it back exactly as it was."
+    },
+    "de": {
+     "t": "Krabbeltiere im Garten",
+     "g": "Marienkäfer, Käfer, Asseln und Wanzen unter einem einzigen Stein entdecken.",
+     "p": [
+      "Ein Garten hat Tausende Krabbeltiere, von Käfern und Ameisen bis zu Schnecken und Hundertfüßern.",
+      "Marienkäfer, Laufkäfer und Florfliegen sind Freunde der Gärtner und helfen gegen Schädlinge.",
+      "Morsches Holz und feuchte Steine sind kühle, dunkle Verstecke für viele winzige Tiere."
+     ],
+     "q": "Welches Krabbeltier würdest du am liebsten aus der Nähe treffen?",
+     "c": "Hebe vorsichtig einen Stein oder Ast an, zähle die Krabbeltiere und lege alles genau zurück."
+    },
+    "es": {
+     "t": "Bichitos del jardín",
+     "g": "Conocer mariquitas, escarabajos, cochinillas y chinches bajo una sola piedra.",
+     "p": [
+      "Un jardín tiene miles de bichitos, desde escarabajos y hormigas hasta caracoles y ciempiés.",
+      "Mariquitas, escarabajos de tierra y crisopas son amigos del jardinero y ayudan a controlar plagas.",
+      "La madera podrida y las piedras húmedas son refugios frescos y oscuros para muchas criaturas diminutas."
+     ],
+     "q": "¿Qué bichito te gustaría conocer más de cerca?",
+     "c": "Levanta con cuidado una piedra o tronco, cuenta los bichitos y déjalo exactamente como estaba."
+    },
+    "fr": {
+     "t": "Petites bêtes du jardin",
+     "g": "Rencontrer coccinelles, scarabées, cloportes et punaises sous une seule pierre.",
+     "p": [
+      "Un jardin abrite des milliers de petites bêtes, des scarabées et fourmis aux escargots et mille-pattes.",
+      "Coccinelles, carabes et chrysopes sont les amis des jardiniers et aident à limiter les nuisibles.",
+      "Le bois pourri et les pierres humides sont des abris frais et sombres pour beaucoup de minuscules créatures."
+     ],
+     "q": "Quelle petite bête aimerais-tu rencontrer de près ?",
+     "c": "Soulève doucement une pierre ou une bûche, compte les petites bêtes puis remets tout exactement en place."
+    },
+    "it": {
+     "t": "Piccoli animali del giardino",
+     "g": "Conoscere coccinelle, coleotteri, porcellini di terra e cimici sotto un solo sasso.",
+     "p": [
+      "Un giardino ospita migliaia di piccoli animali, da coleotteri e formiche a lumache e centopiedi.",
+      "Coccinelle, carabidi e crisope sono amici del giardiniere e aiutano a limitare i parassiti.",
+      "Legno marcio e sassi umidi sono rifugi freschi e bui per molte minuscole creature."
+     ],
+     "q": "Quale piccolo animale ti piacerebbe incontrare da vicino?",
+     "c": "Solleva con delicatezza un sasso o un tronco, conta i piccoli animali e rimetti tutto esattamente com'era."
+    },
+    "pt": {
+     "t": "Bichinhos do jardim",
+     "g": "Conhecer joaninhas, escaravelhos, bichos-de-conta e percevejos debaixo de uma só pedra.",
+     "p": [
+      "Um jardim tem milhares de bichinhos, de escaravelhos e formigas a caracóis e centopeias.",
+      "Joaninhas, escaravelhos-de-chão e crisopas são amigos do jardineiro e ajudam a controlar pragas.",
+      "Madeira podre e pedras húmidas são abrigos frescos e escuros para muitas criaturas minúsculas."
+     ],
+     "q": "Que bichinho gostarias de conhecer de perto?",
+     "c": "Levanta com cuidado uma pedra ou tronco, conta os bichinhos e volta a pôr tudo exatamente como estava."
+    },
+    "pt_BR": {
+     "t": "Bichinhos do jardim",
+     "g": "Conhecer joaninhas, besouros, tatuzinhos e percevejos debaixo de uma só pedra.",
+     "p": [
+      "Um jardim tem milhares de bichinhos, de besouros e formigas a caracóis e centopeias.",
+      "Joaninhas, besouros-de-solo e crisopas são amigos do jardineiro e ajudam a controlar pragas.",
+      "Madeira podre e pedras úmidas são abrigos frescos e escuros para muitas criaturas minúsculas."
+     ],
+     "q": "Qual bichinho você gostaria de conhecer de perto?",
+     "c": "Levante com cuidado uma pedra ou tronco, conte os bichinhos e recoloque tudo exatamente como estava."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How to watch wildlife politely",
+     "g": "Learn the golden rules of keeping a distance, staying quiet and leaving no trace.",
+     "p": [
+      "Keep far enough away that the animal keeps behaving naturally, and never chase or touch it.",
+      "Stay quiet, move slowly, and use binoculars or a phone zoom to see more detail.",
+      "Never feed wildlife, and take your litter home, so nature stays as you found it."
+     ],
+     "q": "What would be the most exciting animal for you to watch quietly?",
+     "c": "Find a comfy spot, sit still for ten minutes, and note every animal that comes by."
+    },
+    "de": {
+     "t": "Wildtiere höflich beobachten",
+     "g": "Die goldenen Regeln lernen: Abstand halten, leise sein und nichts hinterlassen.",
+     "p": [
+      "Halte genug Abstand, damit sich das Tier natürlich verhält, und jage oder berühre es nie.",
+      "Sei leise, bewege dich langsam und nutze Fernglas oder Handy-Zoom für mehr Details.",
+      "Füttere nie Wildtiere und nimm deinen Müll mit, damit die Natur bleibt, wie du sie fandest."
+     ],
+     "q": "Welches Tier wäre für dich am spannendsten, um es still zu beobachten?",
+     "c": "Such dir einen bequemen Platz, sitze zehn Minuten still und notiere jedes Tier, das vorbeikommt."
+    },
+    "es": {
+     "t": "Cómo observar la fauna con respeto",
+     "g": "Aprender las reglas de oro: mantener distancia, estar callado y no dejar rastro.",
+     "p": [
+      "Mantente a distancia para que el animal se comporte con naturalidad, y nunca lo persigas ni lo toques.",
+      "Guarda silencio, muévete despacio y usa prismáticos o el zoom del móvil para ver detalles.",
+      "Nunca alimentes a la fauna y llévate tu basura, para que la naturaleza quede como la encontraste."
+     ],
+     "q": "¿Qué animal sería el más emocionante para observar en silencio?",
+     "c": "Busca un sitio cómodo, siéntate quieto diez minutos y anota cada animal que pase."
+    },
+    "fr": {
+     "t": "Observer la faune avec respect",
+     "g": "Apprendre les règles d'or : garder ses distances, rester silencieux et ne laisser aucune trace.",
+     "p": [
+      "Reste assez loin pour que l'animal se comporte naturellement, et ne le poursuis ni ne le touche jamais.",
+      "Reste silencieux, bouge lentement et utilise des jumelles ou le zoom du téléphone pour voir les détails.",
+      "Ne nourris jamais la faune et rapporte tes déchets, pour que la nature reste comme tu l'as trouvée."
+     ],
+     "q": "Quel animal serait le plus passionnant à observer en silence ?",
+     "c": "Trouve un endroit confortable, reste immobile dix minutes et note chaque animal qui passe."
+    },
+    "it": {
+     "t": "Osservare la fauna con rispetto",
+     "g": "Imparare le regole d'oro: mantenere la distanza, stare in silenzio e non lasciare tracce.",
+     "p": [
+      "Resta abbastanza lontano perché l'animale si comporti naturalmente, e non inseguirlo né toccarlo mai.",
+      "Fai silenzio, muoviti piano e usa binocolo o zoom del telefono per vedere i dettagli.",
+      "Non dare mai da mangiare agli animali selvatici e porta via i rifiuti, così la natura resta com'era."
+     ],
+     "q": "Quale animale sarebbe più emozionante osservare in silenzio?",
+     "c": "Trova un posto comodo, resta fermo dieci minuti e annota ogni animale che passa."
+    },
+    "pt": {
+     "t": "Observar a vida selvagem com respeito",
+     "g": "Aprender as regras de ouro: manter distância, estar em silêncio e não deixar rasto.",
+     "p": [
+      "Mantém-te longe o suficiente para o animal se comportar naturalmente, e nunca o persigas nem lhe toques.",
+      "Fica em silêncio, move-te devagar e usa binóculos ou o zoom do telemóvel para ver detalhes.",
+      "Nunca alimentes animais selvagens e leva o teu lixo, para a natureza ficar como a encontraste."
+     ],
+     "q": "Que animal seria mais emocionante observar em silêncio?",
+     "c": "Procura um sítio confortável, fica quieto dez minutos e anota cada animal que passe."
+    },
+    "pt_BR": {
+     "t": "Observar a vida selvagem com respeito",
+     "g": "Aprender as regras de ouro: manter distância, ficar em silêncio e não deixar rastro.",
+     "p": [
+      "Fique longe o bastante para o animal se comportar naturalmente, e nunca o persiga nem toque.",
+      "Fique em silêncio, mova-se devagar e use binóculo ou o zoom do celular para ver detalhes.",
+      "Nunca alimente animais selvagens e leve seu lixo, para a natureza ficar como você a encontrou."
+     ],
+     "q": "Qual animal seria mais emocionante observar em silêncio?",
+     "c": "Procure um lugar confortável, fique quieto dez minutos e anote cada animal que passar."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: senses, bodies and behaviour",
+     "g": "Recap senses, movement, families and seasons from the second month.",
+     "p": [
+      "Animals sense the world in many ways, from whiskers to magnetic compasses.",
+      "Bodies are built for movement, from wings and fins to springy legs, and for staying warm or cool.",
+      "Families, groups, sleep and seasons shape how animals live through the year."
+     ],
+     "q": "Which fact from the last month would you most like to tell a friend?",
+     "c": "Pick one animal and tell its story: how it senses, moves, rests and raises young."
+    },
+    "de": {
+     "t": "Rückblick: Sinne, Körper und Verhalten",
+     "g": "Sinne, Fortbewegung, Familien und Jahreszeiten des zweiten Monats wiederholen.",
+     "p": [
+      "Tiere nehmen die Welt auf viele Arten wahr, von Schnurrhaaren bis zu magnetischen Kompassen.",
+      "Körper sind für Bewegung gebaut, von Flügeln und Flossen bis zu Sprungbeinen, und für Wärme oder Kühlung.",
+      "Familien, Gruppen, Schlaf und Jahreszeiten prägen, wie Tiere durchs Jahr leben."
+     ],
+     "q": "Welche Tatsache aus dem letzten Monat würdest du am liebsten einem Freund erzählen?",
+     "c": "Wähle ein Tier und erzähle seine Geschichte: wie es wahrnimmt, sich bewegt, ruht und Junge großzieht."
+    },
+    "es": {
+     "t": "Repaso: sentidos, cuerpos y conducta",
+     "g": "Repasar sentidos, movimiento, familias y estaciones del segundo mes.",
+     "p": [
+      "Los animales perciben el mundo de muchas formas, desde bigotes hasta brújulas magnéticas.",
+      "Los cuerpos están hechos para moverse, de alas y aletas a patas saltadoras, y para mantenerse cálidos o frescos.",
+      "Familias, grupos, sueño y estaciones moldean cómo viven los animales a lo largo del año."
+     ],
+     "q": "¿Qué dato del último mes te gustaría contarle a un amigo?",
+     "c": "Elige un animal y cuenta su historia: cómo percibe, se mueve, descansa y cría."
+    },
+    "fr": {
+     "t": "Révision : sens, corps et comportement",
+     "g": "Réviser sens, mouvement, familles et saisons du deuxième mois.",
+     "p": [
+      "Les animaux perçoivent le monde de bien des façons, des moustaches aux boussoles magnétiques.",
+      "Les corps sont faits pour se déplacer, des ailes et nageoires aux pattes bondissantes, et pour garder chaud ou frais.",
+      "Familles, groupes, sommeil et saisons façonnent la vie des animaux au fil de l'année."
+     ],
+     "q": "Quel fait du mois dernier aimerais-tu raconter à un ami ?",
+     "c": "Choisis un animal et raconte son histoire : comment il perçoit, bouge, se repose et élève ses petits."
+    },
+    "it": {
+     "t": "Ripasso: sensi, corpi e comportamento",
+     "g": "Ripassare sensi, movimento, famiglie e stagioni del secondo mese.",
+     "p": [
+      "Gli animali percepiscono il mondo in molti modi, dalle vibrisse alle bussole magnetiche.",
+      "I corpi sono fatti per muoversi, da ali e pinne a zampe saltatrici, e per restare caldi o freschi.",
+      "Famiglie, gruppi, sonno e stagioni plasmano come vivono gli animali nel corso dell'anno."
+     ],
+     "q": "Quale fatto dell'ultimo mese ti piacerebbe raccontare a un amico?",
+     "c": "Scegli un animale e racconta la sua storia: come percepisce, si muove, riposa e alleva i piccoli."
+    },
+    "pt": {
+     "t": "Revisão: sentidos, corpos e comportamento",
+     "g": "Rever sentidos, movimento, famílias e estações do segundo mês.",
+     "p": [
+      "Os animais percebem o mundo de muitas formas, de bigodes a bússolas magnéticas.",
+      "Os corpos são feitos para se mover, de asas e barbatanas a patas saltadoras, e para se manterem quentes ou frescos.",
+      "Famílias, grupos, sono e estações moldam como os animais vivem ao longo do ano."
+     ],
+     "q": "Que facto do último mês gostavas de contar a um amigo?",
+     "c": "Escolhe um animal e conta a sua história: como percebe, move-se, descansa e cria as crias."
+    },
+    "pt_BR": {
+     "t": "Revisão: sentidos, corpos e comportamento",
+     "g": "Rever sentidos, movimento, famílias e estações do segundo mês.",
+     "p": [
+      "Os animais percebem o mundo de muitas formas, de bigodes a bússolas magnéticas.",
+      "Os corpos são feitos para se mover, de asas e nadadeiras a patas saltadoras, e para se manterem quentes ou frescos.",
+      "Famílias, grupos, sono e estações moldam como os animais vivem ao longo do ano."
+     ],
+     "q": "Qual fato do último mês você gostaria de contar a um amigo?",
+     "c": "Escolha um animal e conte sua história: como percebe, se move, descansa e cria os filhotes."
+    }
+   }
+  }
+ ]
+}

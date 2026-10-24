@@ -1,0 +1,835 @@
+{
+ "topic": "budgeting_basics",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Building your first budget",
+     "g": "Turn tracked numbers into a simple monthly plan with clear categories.",
+     "p": [
+      "Take your take-home income and your tracked spending, and lay them side by side.",
+      "Start with a short list of categories and give each one an amount for the month.",
+      "Your first budget is a draft; you will improve it every month."
+     ],
+     "q": "What part of building a budget feels most exciting or most intimidating?",
+     "c": "Draw a simple table with income at the top and three categories below it."
+    },
+    "de": {
+     "t": "Dein erstes Budget aufbauen",
+     "g": "Erfasste Zahlen in einen einfachen Monatsplan mit klaren Kategorien verwandeln.",
+     "p": [
+      "Nimm dein Nettoeinkommen und deine erfassten Ausgaben und lege sie nebeneinander.",
+      "Starte mit einer kurzen Kategorienliste und gib jeder einen Betrag für den Monat.",
+      "Dein erstes Budget ist ein Entwurf; du verbesserst es jeden Monat."
+     ],
+     "q": "Was fühlt sich beim Budgetbau am spannendsten oder am einschüchterndsten an?",
+     "c": "Zeichne eine einfache Tabelle mit dem Einkommen oben und drei Kategorien darunter."
+    },
+    "es": {
+     "t": "Construir tu primer presupuesto",
+     "g": "Convertir tus números registrados en un plan mensual sencillo con categorías claras.",
+     "p": [
+      "Toma tus ingresos netos y tus gastos registrados y ponlos uno al lado del otro.",
+      "Empieza con una lista corta de categorías y dale a cada una una cantidad para el mes.",
+      "Tu primer presupuesto es un borrador; lo mejorarás cada mes."
+     ],
+     "q": "¿Qué parte de armar un presupuesto te emociona más o te intimida más?",
+     "c": "Dibuja una tabla sencilla con los ingresos arriba y tres categorías debajo."
+    },
+    "fr": {
+     "t": "Construire ton premier budget",
+     "g": "Transformer tes chiffres suivis en un plan mensuel simple avec des catégories claires.",
+     "p": [
+      "Prends ton revenu net et tes dépenses suivies, et mets-les côte à côte.",
+      "Commence par une courte liste de catégories et donne à chacune un montant pour le mois.",
+      "Ton premier budget est un brouillon ; tu l'amélioreras chaque mois."
+     ],
+     "q": "Quelle partie de la construction d'un budget te motive ou t'intimide le plus ?",
+     "c": "Dessine un tableau simple avec le revenu en haut et trois catégories dessous."
+    },
+    "it": {
+     "t": "Costruire il tuo primo budget",
+     "g": "Trasformare i numeri tracciati in un semplice piano mensile con categorie chiare.",
+     "p": [
+      "Prendi il tuo reddito netto e le spese tracciate e mettili uno accanto all'altro.",
+      "Parti da un breve elenco di categorie e dai a ciascuna un importo per il mese.",
+      "Il tuo primo budget è una bozza; lo migliorerai ogni mese."
+     ],
+     "q": "Quale parte del costruire un budget ti entusiasma o ti intimidisce di più?",
+     "c": "Disegna una tabella semplice con il reddito in alto e tre categorie sotto."
+    },
+    "pt": {
+     "t": "Construir o teu primeiro orçamento",
+     "g": "Transformar os números registados num plano mensal simples com categorias claras.",
+     "p": [
+      "Pega no teu rendimento líquido e nos gastos registados e põe-nos lado a lado.",
+      "Começa com uma lista curta de categorias e dá a cada uma um valor para o mês.",
+      "O teu primeiro orçamento é um rascunho; vais melhorá-lo todos os meses."
+     ],
+     "q": "Que parte de montar um orçamento te entusiasma ou intimida mais?",
+     "c": "Desenha uma tabela simples com o rendimento em cima e três categorias por baixo."
+    },
+    "pt_BR": {
+     "t": "Construir seu primeiro orçamento",
+     "g": "Transformar os números registrados num plano mensal simples com categorias claras.",
+     "p": [
+      "Pegue sua renda líquida e seus gastos registrados e coloque lado a lado.",
+      "Comece com uma lista curta de categorias e dê a cada uma um valor para o mês.",
+      "Seu primeiro orçamento é um rascunho; você vai melhorá-lo todo mês."
+     ],
+     "q": "Que parte de montar um orçamento mais empolga ou mais intimida você?",
+     "c": "Desenhe uma tabela simples com a renda em cima e três categorias embaixo."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing budget categories",
+     "g": "Pick a handful of categories that fit your real life.",
+     "p": [
+      "Five to ten categories are plenty: housing, food, transport, bills, fun, saving.",
+      "Use names that make sense to you, even funny ones, so the budget feels personal.",
+      "Too many categories get tiring; merge small ones into a group called other."
+     ],
+     "q": "Which categories does your real life need that a standard list might miss?",
+     "c": "Write your own list of six to eight categories using your own words."
+    },
+    "de": {
+     "t": "Budgetkategorien wählen",
+     "g": "Eine Handvoll Kategorien wählen, die zu deinem echten Leben passen.",
+     "p": [
+      "Fünf bis zehn Kategorien genügen: Wohnen, Essen, Verkehr, Rechnungen, Freizeit, Sparen.",
+      "Nimm Namen, die für dich Sinn ergeben, auch lustige, damit das Budget persönlich wirkt.",
+      "Zu viele Kategorien ermüden; fasse kleine zu einer Gruppe namens Sonstiges zusammen."
+     ],
+     "q": "Welche Kategorien braucht dein Leben, die eine Standardliste übersehen könnte?",
+     "c": "Schreibe deine eigene Liste mit sechs bis acht Kategorien in deinen eigenen Worten."
+    },
+    "es": {
+     "t": "Elegir las categorías del presupuesto",
+     "g": "Elegir unas pocas categorías que encajen con tu vida real.",
+     "p": [
+      "De cinco a diez categorías bastan: vivienda, comida, transporte, facturas, ocio, ahorro.",
+      "Usa nombres que te digan algo, incluso graciosos, para que el presupuesto sea personal.",
+      "Demasiadas categorías cansan; junta las pequeñas en un grupo llamado otros."
+     ],
+     "q": "¿Qué categorías necesita tu vida real que una lista estándar podría pasar por alto?",
+     "c": "Escribe tu propia lista de seis a ocho categorías con tus palabras."
+    },
+    "fr": {
+     "t": "Choisir tes catégories de budget",
+     "g": "Choisir quelques catégories qui collent à ta vraie vie.",
+     "p": [
+      "Cinq à dix catégories suffisent : logement, nourriture, transport, factures, loisirs, épargne.",
+      "Utilise des noms qui te parlent, même drôles, pour que le budget soit personnel.",
+      "Trop de catégories fatiguent ; regroupe les petites dans une catégorie autres."
+     ],
+     "q": "Quelles catégories ta vie réelle demande-t-elle qu'une liste standard pourrait oublier ?",
+     "c": "Écris ta propre liste de six à huit catégories avec tes mots."
+    },
+    "it": {
+     "t": "Scegliere le categorie del budget",
+     "g": "Scegliere poche categorie che si adattino alla tua vita reale.",
+     "p": [
+      "Bastano da cinque a dieci categorie: casa, cibo, trasporti, bollette, svago, risparmio.",
+      "Usa nomi che ti dicano qualcosa, anche buffi, così il budget è personale.",
+      "Troppe categorie stancano; unisci le piccole in un gruppo chiamato altro."
+     ],
+     "q": "Quali categorie servono alla tua vita che un elenco standard potrebbe dimenticare?",
+     "c": "Scrivi la tua lista di sei-otto categorie con parole tue."
+    },
+    "pt": {
+     "t": "Escolher as categorias do orçamento",
+     "g": "Escolher algumas categorias que se ajustem à tua vida real.",
+     "p": [
+      "Chegam cinco a dez categorias: casa, comida, transportes, contas, lazer, poupança.",
+      "Usa nomes que te digam algo, até engraçados, para o orçamento ser pessoal.",
+      "Categorias a mais cansam; junta as pequenas num grupo chamado outros."
+     ],
+     "q": "Que categorias a tua vida real precisa que uma lista padrão podia esquecer?",
+     "c": "Escreve a tua lista de seis a oito categorias com as tuas palavras."
+    },
+    "pt_BR": {
+     "t": "Escolher as categorias do orçamento",
+     "g": "Escolher algumas categorias que combinem com a sua vida real.",
+     "p": [
+      "Cinco a dez categorias bastam: moradia, comida, transporte, contas, lazer, poupança.",
+      "Use nomes que façam sentido para você, até engraçados, para o orçamento ser pessoal.",
+      "Categorias demais cansam; junte as pequenas num grupo chamado outros."
+     ],
+     "q": "Que categorias a sua vida real precisa que uma lista padrão poderia esquecer?",
+     "c": "Escreva sua lista de seis a oito categorias com as suas palavras."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Realistic numbers, not perfect ones",
+     "g": "Set amounts based on actual spending so the budget can work.",
+     "p": [
+      "A budget built on wishes breaks fast; one built on real spending has a fair chance.",
+      "Use your tracked averages as the starting amount, then trim gently where you want to.",
+      "Small changes you can keep beat big cuts you abandon after a week."
+     ],
+     "q": "Where in your plans do you tend to be a bit too optimistic?",
+     "c": "Compare one category's real average with the amount you hoped for."
+    },
+    "de": {
+     "t": "Realistische Zahlen, keine perfekten",
+     "g": "Beträge nach tatsächlichen Ausgaben ansetzen, damit das Budget funktionieren kann.",
+     "p": [
+      "Ein Budget aus Wünschen bricht schnell; eines aus echten Ausgaben hat eine faire Chance.",
+      "Nimm deine erfassten Durchschnitte als Startwert und kürze sanft, wo du willst.",
+      "Kleine, haltbare Änderungen schlagen große Kürzungen, die du nach einer Woche aufgibst."
+     ],
+     "q": "Wo bist du in deinen Plänen manchmal etwas zu optimistisch?",
+     "c": "Vergleiche den echten Durchschnitt einer Kategorie mit dem Betrag, den du dir erhofft hattest."
+    },
+    "es": {
+     "t": "Números realistas, no perfectos",
+     "g": "Fijar cantidades basadas en el gasto real para que el presupuesto funcione.",
+     "p": [
+      "Un presupuesto basado en deseos se rompe rápido; uno basado en gasto real tiene opciones.",
+      "Usa tus promedios registrados como punto de partida y recorta con suavidad donde quieras.",
+      "Pequeños cambios que mantienes valen más que grandes recortes que abandonas en una semana."
+     ],
+     "q": "¿En qué parte de tus planes sueles ser un poco demasiado optimista?",
+     "c": "Compara el promedio real de una categoría con la cantidad que esperabas."
+    },
+    "fr": {
+     "t": "Des chiffres réalistes, pas parfaits",
+     "g": "Fixer des montants basés sur les dépenses réelles pour que le budget tienne.",
+     "p": [
+      "Un budget fondé sur des souhaits casse vite ; un budget fondé sur le réel a sa chance.",
+      "Prends tes moyennes suivies comme point de départ, puis réduis doucement où tu veux.",
+      "De petits changements durables valent mieux que de grosses coupes abandonnées en une semaine."
+     ],
+     "q": "Où as-tu tendance à être un peu trop optimiste dans tes plans ?",
+     "c": "Compare la moyenne réelle d'une catégorie avec le montant que tu espérais."
+    },
+    "it": {
+     "t": "Numeri realistici, non perfetti",
+     "g": "Fissare importi basati sulla spesa reale perché il budget possa funzionare.",
+     "p": [
+      "Un budget basato su desideri si rompe presto; uno basato sulla spesa reale ha buone possibilità.",
+      "Usa le medie tracciate come punto di partenza e riduci con dolcezza dove vuoi.",
+      "Piccoli cambiamenti che mantieni valgono più di grandi tagli abbandonati in una settimana."
+     ],
+     "q": "In quale parte dei tuoi piani tendi a essere un po' troppo ottimista?",
+     "c": "Confronta la media reale di una categoria con l'importo che speravi."
+    },
+    "pt": {
+     "t": "Números realistas, não perfeitos",
+     "g": "Definir valores com base nos gastos reais para o orçamento poder funcionar.",
+     "p": [
+      "Um orçamento baseado em desejos parte-se depressa; um baseado em gastos reais tem hipóteses.",
+      "Usa as tuas médias registadas como ponto de partida e corta com jeito onde quiseres.",
+      "Pequenas mudanças que manténs valem mais do que grandes cortes que abandonas numa semana."
+     ],
+     "q": "Em que parte dos teus planos costumas ser um pouco otimista demais?",
+     "c": "Compara a média real de uma categoria com o valor que esperavas."
+    },
+    "pt_BR": {
+     "t": "Números realistas, não perfeitos",
+     "g": "Definir valores com base nos gastos reais para o orçamento poder funcionar.",
+     "p": [
+      "Um orçamento baseado em desejos quebra rápido; um baseado em gastos reais tem chance.",
+      "Use suas médias registradas como ponto de partida e corte com jeito onde quiser.",
+      "Pequenas mudanças que você mantém valem mais do que grandes cortes abandonados numa semana."
+     ],
+     "q": "Em que parte dos seus planos você costuma ser um pouco otimista demais?",
+     "c": "Compare a média real de uma categoria com o valor que você esperava."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Giving every coin a job",
+     "g": "Plan income so each part has a purpose, including saving.",
+     "p": [
+      "Giving every part of your income a job means nothing slips away without a decision.",
+      "Jobs can be simple: pay bills, buy food, enjoy life, save for my goal.",
+      "Include saving as a job, not as whatever happens to be left over."
+     ],
+     "q": "If your next income had to be split into jobs, what jobs would you give it?",
+     "c": "Take your income and assign a job to every part of it on paper."
+    },
+    "de": {
+     "t": "Jeder Münze einen Job geben",
+     "g": "Das Einkommen so planen, dass jeder Teil einen Zweck hat, auch das Sparen.",
+     "p": [
+      "Hat jeder Teil deines Einkommens einen Job, rutscht nichts ohne Entscheidung weg.",
+      "Jobs können einfach sein: Rechnungen zahlen, Essen kaufen, das Leben genießen, für mein Ziel sparen.",
+      "Nimm Sparen als Job auf, nicht als das, was zufällig übrig bleibt."
+     ],
+     "q": "Wenn dein nächstes Einkommen in Jobs aufgeteilt werden müsste, welche würdest du vergeben?",
+     "c": "Nimm dein Einkommen und gib auf dem Papier jedem Teil einen Job."
+    },
+    "es": {
+     "t": "Darle un trabajo a cada moneda",
+     "g": "Planificar el ingreso para que cada parte tenga un propósito, incluido el ahorro.",
+     "p": [
+      "Darle un trabajo a cada parte de tu ingreso evita que algo se escape sin decisión.",
+      "Los trabajos pueden ser simples: pagar facturas, comprar comida, disfrutar, ahorrar para mi meta.",
+      "Incluye el ahorro como un trabajo, no como lo que sobre por casualidad."
+     ],
+     "q": "Si tu próximo ingreso se repartiera en trabajos, ¿qué trabajos le darías?",
+     "c": "Toma tu ingreso y asigna en papel un trabajo a cada parte."
+    },
+    "fr": {
+     "t": "Donner un rôle à chaque pièce",
+     "g": "Planifier ton revenu pour que chaque part ait un but, y compris l'épargne.",
+     "p": [
+      "Donner un rôle à chaque part de ton revenu évite que quelque chose file sans décision.",
+      "Les rôles peuvent être simples : payer les factures, acheter à manger, profiter, épargner pour mon objectif.",
+      "Inclus l'épargne comme un rôle, pas comme ce qui reste par hasard."
+     ],
+     "q": "Si ton prochain revenu devait être réparti en rôles, lesquels lui donnerais-tu ?",
+     "c": "Prends ton revenu et attribue sur papier un rôle à chaque part."
+    },
+    "it": {
+     "t": "Dare un lavoro a ogni moneta",
+     "g": "Pianificare il reddito perché ogni parte abbia uno scopo, risparmio incluso.",
+     "p": [
+      "Dare un lavoro a ogni parte del reddito evita che qualcosa sfugga senza una decisione.",
+      "I lavori possono essere semplici: pagare bollette, comprare cibo, godersi la vita, risparmiare per l'obiettivo.",
+      "Includi il risparmio come lavoro, non come ciò che avanza per caso."
+     ],
+     "q": "Se il tuo prossimo reddito dovesse essere diviso in lavori, quali gli daresti?",
+     "c": "Prendi il tuo reddito e assegna su carta un lavoro a ogni parte."
+    },
+    "pt": {
+     "t": "Dar uma função a cada moeda",
+     "g": "Planear o rendimento para que cada parte tenha um propósito, incluindo a poupança.",
+     "p": [
+      "Dar uma função a cada parte do rendimento evita que algo escape sem decisão.",
+      "As funções podem ser simples: pagar contas, comprar comida, aproveitar a vida, poupar para a meta.",
+      "Inclui a poupança como função, não como o que sobrar por acaso."
+     ],
+     "q": "Se o teu próximo rendimento fosse dividido em funções, que funções lhe darias?",
+     "c": "Pega no teu rendimento e atribui no papel uma função a cada parte."
+    },
+    "pt_BR": {
+     "t": "Dar uma função a cada moeda",
+     "g": "Planejar a renda para que cada parte tenha um propósito, incluindo a poupança.",
+     "p": [
+      "Dar uma função a cada parte da renda evita que algo escape sem decisão.",
+      "As funções podem ser simples: pagar contas, comprar comida, curtir a vida, poupar para a meta.",
+      "Inclua a poupança como função, não como o que sobrar por acaso."
+     ],
+     "q": "Se a sua próxima renda fosse dividida em funções, que funções você daria?",
+     "c": "Pegue sua renda e atribua no papel uma função a cada parte."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Leaving room for fun",
+     "g": "Learn why a small fun budget helps you stick to the whole plan.",
+     "p": [
+      "A budget with no fun in it is hard to follow; a little joy keeps you on track.",
+      "Give fun its own category, so enjoying it comes with no guilt at all.",
+      "Fun can be cheap or free: a walk, a game night, a library book."
+     ],
+     "q": "What is a low-cost thing that reliably makes your week better?",
+     "c": "Name your fun category and write three enjoyable, low-cost ideas for it."
+    },
+    "de": {
+     "t": "Platz für Spaß lassen",
+     "g": "Verstehen, warum ein kleines Spaßbudget hilft, den ganzen Plan durchzuhalten.",
+     "p": [
+      "Ein Budget ohne Spaß ist schwer durchzuhalten; ein bisschen Freude hält dich auf Kurs.",
+      "Gib Spaß eine eigene Kategorie, damit du ihn ganz ohne Schuldgefühle genießt.",
+      "Spaß kann günstig oder gratis sein: ein Spaziergang, ein Spieleabend, ein Bibliotheksbuch."
+     ],
+     "q": "Was ist etwas Günstiges, das deine Woche zuverlässig besser macht?",
+     "c": "Benenne deine Spaßkategorie und schreibe drei schöne, günstige Ideen dafür auf."
+    },
+    "es": {
+     "t": "Dejar espacio para la diversión",
+     "g": "Entender por qué un pequeño presupuesto de ocio ayuda a mantener todo el plan.",
+     "p": [
+      "Un presupuesto sin diversión es difícil de seguir; un poco de alegría te mantiene en el camino.",
+      "Dale al ocio su propia categoría, para disfrutarlo sin ninguna culpa.",
+      "La diversión puede ser barata o gratis: un paseo, una noche de juegos, un libro de la biblioteca."
+     ],
+     "q": "¿Qué cosa de bajo coste mejora tu semana de forma fiable?",
+     "c": "Pon nombre a tu categoría de ocio y escribe tres ideas agradables y baratas."
+    },
+    "fr": {
+     "t": "Garder une place pour le plaisir",
+     "g": "Comprendre pourquoi un petit budget plaisir aide à tenir tout le plan.",
+     "p": [
+      "Un budget sans plaisir est difficile à suivre ; un peu de joie te garde sur la bonne voie.",
+      "Donne au plaisir sa propre catégorie, pour en profiter sans aucune culpabilité.",
+      "Le plaisir peut être bon marché ou gratuit : une balade, une soirée jeux, un livre de bibliothèque."
+     ],
+     "q": "Quelle chose peu coûteuse améliore sûrement ta semaine ?",
+     "c": "Nomme ta catégorie plaisir et écris trois idées agréables et peu coûteuses."
+    },
+    "it": {
+     "t": "Lasciare spazio al divertimento",
+     "g": "Capire perché un piccolo budget svago aiuta a seguire tutto il piano.",
+     "p": [
+      "Un budget senza divertimento è difficile da seguire; un po' di gioia ti tiene in carreggiata.",
+      "Dai allo svago una categoria sua, per goderlo senza alcun senso di colpa.",
+      "Il divertimento può costare poco o niente: una passeggiata, una serata giochi, un libro in biblioteca."
+     ],
+     "q": "Qual è una cosa economica che migliora sempre la tua settimana?",
+     "c": "Dai un nome alla tua categoria svago e scrivi tre idee piacevoli ed economiche."
+    },
+    "pt": {
+     "t": "Deixar espaço para a diversão",
+     "g": "Perceber porque um pequeno orçamento de lazer ajuda a manter o plano todo.",
+     "p": [
+      "Um orçamento sem diversão é difícil de seguir; um pouco de alegria mantém-te no caminho.",
+      "Dá ao lazer a sua própria categoria, para o aproveitares sem culpa nenhuma.",
+      "A diversão pode ser barata ou grátis: um passeio, uma noite de jogos, um livro da biblioteca."
+     ],
+     "q": "O que é algo barato que melhora sempre a tua semana?",
+     "c": "Dá nome à tua categoria de lazer e escreve três ideias agradáveis e baratas."
+    },
+    "pt_BR": {
+     "t": "Deixar espaço para a diversão",
+     "g": "Entender por que um pequeno orçamento de lazer ajuda a manter o plano todo.",
+     "p": [
+      "Um orçamento sem diversão é difícil de seguir; um pouco de alegria mantém você no caminho.",
+      "Dê ao lazer sua própria categoria, para aproveitar sem culpa nenhuma.",
+      "A diversão pode ser barata ou grátis: um passeio, uma noite de jogos, um livro da biblioteca."
+     ],
+     "q": "O que é algo barato que sempre melhora a sua semana?",
+     "c": "Dê nome à sua categoria de lazer e escreva três ideias gostosas e baratas."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The buffer category",
+     "g": "Add a small cushion for the little things you forgot to plan.",
+     "p": [
+      "A buffer is a small category for surprises: a missed item, a tiny repair, a last-minute gift.",
+      "It keeps one forgotten cost from making the whole budget feel broken.",
+      "Start with a small amount; if it is never used, move it to your goal."
+     ],
+     "q": "What small unplanned costs showed up in your tracking so far?",
+     "c": "Add a buffer line to your budget and give it a small amount."
+    },
+    "de": {
+     "t": "Die Puffer-Kategorie",
+     "g": "Ein kleines Polster für die Dinge einplanen, die du vergessen hast.",
+     "p": [
+      "Ein Puffer ist eine kleine Kategorie für Überraschungen: Vergessenes, kleine Reparatur, Last-Minute-Geschenk.",
+      "Er verhindert, dass eine vergessene Ausgabe das ganze Budget kaputt wirken lässt.",
+      "Starte mit einem kleinen Betrag; wird er nie gebraucht, schiebe ihn zu deinem Ziel."
+     ],
+     "q": "Welche kleinen ungeplanten Kosten sind in deiner Erfassung bisher aufgetaucht?",
+     "c": "Füge deinem Budget eine Pufferzeile mit einem kleinen Betrag hinzu."
+    },
+    "es": {
+     "t": "La categoría colchón",
+     "g": "Añadir un pequeño margen para las cosas pequeñas que olvidaste planificar.",
+     "p": [
+      "Un colchón es una categoría pequeña para sorpresas: algo olvidado, una reparación mínima, un regalo de última hora.",
+      "Evita que un gasto olvidado haga sentir roto todo el presupuesto.",
+      "Empieza con poco; si nunca se usa, pásalo a tu meta."
+     ],
+     "q": "¿Qué pequeños gastos imprevistos aparecieron en tu registro hasta ahora?",
+     "c": "Añade una línea de colchón a tu presupuesto con una cantidad pequeña."
+    },
+    "fr": {
+     "t": "La catégorie coussin",
+     "g": "Ajouter un petit coussin pour les petites choses oubliées dans le plan.",
+     "p": [
+      "Un coussin est une petite catégorie pour les surprises : un oubli, une petite réparation, un cadeau de dernière minute.",
+      "Il évite qu'un coût oublié donne l'impression que tout le budget est cassé.",
+      "Commence petit ; s'il n'est jamais utilisé, déplace-le vers ton objectif."
+     ],
+     "q": "Quelles petites dépenses imprévues sont apparues dans ton suivi jusqu'ici ?",
+     "c": "Ajoute une ligne coussin à ton budget avec un petit montant."
+    },
+    "it": {
+     "t": "La categoria cuscinetto",
+     "g": "Aggiungere un piccolo margine per le piccole cose che non hai pianificato.",
+     "p": [
+      "Un cuscinetto è una piccola categoria per le sorprese: una dimenticanza, una piccola riparazione, un regalo last minute.",
+      "Evita che un costo dimenticato faccia sembrare rotto l'intero budget.",
+      "Parti con poco; se non viene mai usato, spostalo sul tuo obiettivo."
+     ],
+     "q": "Quali piccole spese impreviste sono comparse finora nel tuo tracciamento?",
+     "c": "Aggiungi una riga cuscinetto al budget con un importo piccolo."
+    },
+    "pt": {
+     "t": "A categoria almofada",
+     "g": "Juntar uma pequena margem para as coisas pequenas que te esqueceste de planear.",
+     "p": [
+      "Uma almofada é uma categoria pequena para surpresas: um esquecimento, uma reparação mínima, uma prenda à última hora.",
+      "Evita que um custo esquecido faça o orçamento todo parecer estragado.",
+      "Começa com pouco; se nunca for usada, passa-a para a tua meta."
+     ],
+     "q": "Que pequenos gastos imprevistos apareceram no teu registo até agora?",
+     "c": "Acrescenta uma linha de almofada ao orçamento com um valor pequeno."
+    },
+    "pt_BR": {
+     "t": "A categoria colchão",
+     "g": "Adicionar uma pequena margem para as coisinhas que você esqueceu de planejar.",
+     "p": [
+      "Um colchão é uma categoria pequena para surpresas: um esquecimento, um conserto mínimo, um presente de última hora.",
+      "Evita que um custo esquecido faça o orçamento todo parecer quebrado.",
+      "Comece com pouco; se nunca for usado, passe para a sua meta."
+     ],
+     "q": "Que pequenos gastos imprevistos apareceram no seu registro até agora?",
+     "c": "Adicione uma linha de colchão ao orçamento com um valor pequeno."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Checking in mid-month",
+     "g": "Do a quick halfway review to adjust before the month ends.",
+     "p": [
+      "A five-minute check around day fifteen shows whether you are on track.",
+      "Compare each category with the money left and the days left in the month.",
+      "If a category runs low, move money from another one rather than giving up."
+     ],
+     "q": "When would be the best moment in your month for a quick money check?",
+     "c": "Set a reminder for mid-month and do a five-minute review of your budget."
+    },
+    "de": {
+     "t": "Die Monatsmitte prüfen",
+     "g": "Eine kurze Halbzeit-Prüfung machen, um vor Monatsende nachzusteuern.",
+     "p": [
+      "Ein Fünf-Minuten-Check um den 15. zeigt, ob du auf Kurs bist.",
+      "Vergleiche jede Kategorie mit dem Restgeld und den verbleibenden Tagen des Monats.",
+      "Wird eine Kategorie knapp, verschiebe Geld aus einer anderen, statt aufzugeben."
+     ],
+     "q": "Wann wäre der beste Moment in deinem Monat für einen kurzen Geld-Check?",
+     "c": "Stelle eine Erinnerung für die Monatsmitte und prüfe dein Budget fünf Minuten lang."
+    },
+    "es": {
+     "t": "Revisar a mitad de mes",
+     "g": "Hacer una revisión rápida a mitad de camino para ajustar antes de que acabe el mes.",
+     "p": [
+      "Un chequeo de cinco minutos hacia el día quince muestra si vas bien.",
+      "Compara cada categoría con el dinero que queda y los días que faltan del mes.",
+      "Si una categoría se queda corta, mueve dinero de otra en vez de rendirte."
+     ],
+     "q": "¿Cuál sería el mejor momento de tu mes para un chequeo rápido del dinero?",
+     "c": "Pon un recordatorio a mitad de mes y haz una revisión de cinco minutos."
+    },
+    "fr": {
+     "t": "Faire le point à mi-mois",
+     "g": "Faire une rapide revue à mi-parcours pour ajuster avant la fin du mois.",
+     "p": [
+      "Un point de cinq minutes vers le quinze montre si tu es dans les clous.",
+      "Compare chaque catégorie avec l'argent restant et les jours restants du mois.",
+      "Si une catégorie baisse, déplace de l'argent d'une autre plutôt que d'abandonner."
+     ],
+     "q": "Quel serait le meilleur moment de ton mois pour un rapide point argent ?",
+     "c": "Programme un rappel à mi-mois et fais cinq minutes de revue de ton budget."
+    },
+    "it": {
+     "t": "Controllo a metà mese",
+     "g": "Fare una rapida revisione a metà strada per aggiustare prima della fine del mese.",
+     "p": [
+      "Un controllo di cinque minuti verso il quindici mostra se sei in linea.",
+      "Confronta ogni categoria con i soldi rimasti e i giorni che mancano al mese.",
+      "Se una categoria scarseggia, sposta soldi da un'altra invece di arrenderti."
+     ],
+     "q": "Quale sarebbe il momento migliore del tuo mese per un rapido controllo dei soldi?",
+     "c": "Imposta un promemoria a metà mese e fai cinque minuti di revisione del budget."
+    },
+    "pt": {
+     "t": "Verificar a meio do mês",
+     "g": "Fazer uma revisão rápida a meio caminho para ajustar antes de o mês acabar.",
+     "p": [
+      "Uma verificação de cinco minutos por volta do dia quinze mostra se estás no caminho.",
+      "Compara cada categoria com o dinheiro que resta e os dias que faltam.",
+      "Se uma categoria ficar curta, passa dinheiro de outra em vez de desistir."
+     ],
+     "q": "Qual seria o melhor momento do teu mês para uma verificação rápida do dinheiro?",
+     "c": "Põe um lembrete a meio do mês e faz cinco minutos de revisão do orçamento."
+    },
+    "pt_BR": {
+     "t": "Conferir no meio do mês",
+     "g": "Fazer uma revisão rápida na metade para ajustar antes de o mês acabar.",
+     "p": [
+      "Uma conferida de cinco minutos por volta do dia quinze mostra se você está no caminho.",
+      "Compare cada categoria com o dinheiro que sobrou e os dias que faltam.",
+      "Se uma categoria ficar curta, passe dinheiro de outra em vez de desistir."
+     ],
+     "q": "Qual seria o melhor momento do seu mês para uma conferida rápida do dinheiro?",
+     "c": "Coloque um lembrete para o meio do mês e faça cinco minutos de revisão do orçamento."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ending the month kindly",
+     "g": "Review the month without guilt and note what to change.",
+     "p": [
+      "At month end, look at the numbers like a friend would: curious, not harsh.",
+      "Ask three questions: what worked, what surprised me, what will I try next month?",
+      "Overspending is data, not a verdict on you. Adjust the plan and carry on."
+     ],
+     "q": "How do you usually feel when you look back at your month of spending?",
+     "c": "Answer the three review questions in writing and add one idea for next month."
+    },
+    "de": {
+     "t": "Den Monat freundlich abschließen",
+     "g": "Den Monat ohne Schuldgefühle überprüfen und festhalten, was sich ändern soll.",
+     "p": [
+      "Sieh am Monatsende auf die Zahlen wie eine Freundin oder ein Freund: neugierig, nicht hart.",
+      "Stelle drei Fragen: Was lief gut, was hat mich überrascht, was probiere ich nächsten Monat?",
+      "Mehrausgaben sind Daten, kein Urteil über dich. Passe den Plan an und mach weiter."
+     ],
+     "q": "Wie fühlst du dich meistens, wenn du auf deinen Ausgabenmonat zurückblickst?",
+     "c": "Beantworte die drei Fragen schriftlich und füge eine Idee für den nächsten Monat hinzu."
+    },
+    "es": {
+     "t": "Cerrar el mes con amabilidad",
+     "g": "Revisar el mes sin culpa y anotar qué cambiar.",
+     "p": [
+      "Al final del mes, mira las cifras como lo haría un amigo: con curiosidad, sin dureza.",
+      "Hazte tres preguntas: qué funcionó, qué me sorprendió, qué probaré el mes que viene.",
+      "Gastar de más son datos, no un veredicto sobre ti. Ajusta el plan y sigue."
+     ],
+     "q": "¿Cómo te sientes normalmente al mirar atrás tu mes de gastos?",
+     "c": "Responde por escrito las tres preguntas y añade una idea para el mes próximo."
+    },
+    "fr": {
+     "t": "Terminer le mois avec bienveillance",
+     "g": "Passer en revue le mois sans culpabilité et noter ce qu'il faut changer.",
+     "p": [
+      "En fin de mois, regarde les chiffres comme un ami : avec curiosité, sans dureté.",
+      "Pose trois questions : qu'est-ce qui a marché, qui m'a surpris, qu'est-ce que j'essaie le mois prochain ?",
+      "Dépasser le budget donne des données, pas un verdict sur toi. Ajuste le plan et continue."
+     ],
+     "q": "Que ressens-tu d'habitude en regardant ton mois de dépenses ?",
+     "c": "Réponds par écrit aux trois questions et ajoute une idée pour le mois prochain."
+    },
+    "it": {
+     "t": "Chiudere il mese con gentilezza",
+     "g": "Rivedere il mese senza sensi di colpa e annotare cosa cambiare.",
+     "p": [
+      "A fine mese guarda i numeri come farebbe un amico: con curiosità, senza durezza.",
+      "Fatti tre domande: cosa ha funzionato, cosa mi ha sorpreso, cosa provo il mese prossimo?",
+      "Spendere troppo sono dati, non un verdetto su di te. Aggiusta il piano e vai avanti."
+     ],
+     "q": "Come ti senti di solito guardando indietro il tuo mese di spese?",
+     "c": "Rispondi per iscritto alle tre domande e aggiungi un'idea per il mese prossimo."
+    },
+    "pt": {
+     "t": "Fechar o mês com gentileza",
+     "g": "Rever o mês sem culpa e anotar o que mudar.",
+     "p": [
+      "No fim do mês, olha para os números como um amigo faria: com curiosidade, sem dureza.",
+      "Faz três perguntas: o que funcionou, o que me surpreendeu, o que vou experimentar no próximo mês?",
+      "Gastar a mais são dados, não um veredicto sobre ti. Ajusta o plano e segue em frente."
+     ],
+     "q": "Como te sentes normalmente ao olhar para trás para o teu mês de gastos?",
+     "c": "Responde por escrito às três perguntas e acrescenta uma ideia para o mês seguinte."
+    },
+    "pt_BR": {
+     "t": "Fechar o mês com gentileza",
+     "g": "Rever o mês sem culpa e anotar o que mudar.",
+     "p": [
+      "No fim do mês, olhe os números como um amigo faria: com curiosidade, sem dureza.",
+      "Faça três perguntas: o que funcionou, o que me surpreendeu, o que vou testar no próximo mês?",
+      "Gastar demais são dados, não um veredito sobre você. Ajuste o plano e siga em frente."
+     ],
+     "q": "Como você costuma se sentir ao olhar para trás o seu mês de gastos?",
+     "c": "Responda por escrito às três perguntas e acrescente uma ideia para o mês seguinte."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Adjusting your second month",
+     "g": "Use last month's lessons to make the new budget more accurate.",
+     "p": [
+      "Your second budget starts smarter, because you now have a month of real numbers.",
+      "Change amounts where reality differed from the plan, up or down, without drama.",
+      "Keep one thing that worked and test one new idea, so you can see what helps."
+     ],
+     "q": "Which category from last month needs the biggest adjustment?",
+     "c": "Copy last month's budget, change two amounts and note why you changed them."
+    },
+    "de": {
+     "t": "Deinen zweiten Monat anpassen",
+     "g": "Die Erkenntnisse des Vormonats nutzen, um das neue Budget genauer zu machen.",
+     "p": [
+      "Dein zweites Budget startet klüger, denn du hast jetzt einen Monat echte Zahlen.",
+      "Ändere Beträge, wo die Realität vom Plan abwich, nach oben oder unten, ohne Drama.",
+      "Behalte eine Sache, die funktionierte, und teste eine neue Idee, um zu sehen, was hilft."
+     ],
+     "q": "Welche Kategorie des letzten Monats braucht die größte Anpassung?",
+     "c": "Kopiere das Budget des Vormonats, ändere zwei Beträge und notiere, warum."
+    },
+    "es": {
+     "t": "Ajustar tu segundo mes",
+     "g": "Usar lo aprendido el mes pasado para que el nuevo presupuesto sea más exacto.",
+     "p": [
+      "Tu segundo presupuesto empieza más listo, porque ya tienes un mes de números reales.",
+      "Cambia cantidades donde la realidad difirió del plan, hacia arriba o abajo, sin dramas.",
+      "Conserva algo que funcionó y prueba una idea nueva, para ver qué ayuda."
+     ],
+     "q": "¿Qué categoría del mes pasado necesita el mayor ajuste?",
+     "c": "Copia el presupuesto del mes pasado, cambia dos cantidades y anota por qué."
+    },
+    "fr": {
+     "t": "Ajuster ton deuxième mois",
+     "g": "Utiliser les leçons du mois dernier pour rendre le nouveau budget plus précis.",
+     "p": [
+      "Ton deuxième budget démarre plus malin, car tu as maintenant un mois de chiffres réels.",
+      "Change les montants là où la réalité a différé du plan, à la hausse ou à la baisse, sans drame.",
+      "Garde une chose qui a marché et teste une nouvelle idée, pour voir ce qui aide."
+     ],
+     "q": "Quelle catégorie du mois dernier demande le plus gros ajustement ?",
+     "c": "Copie le budget du mois dernier, change deux montants et note pourquoi."
+    },
+    "it": {
+     "t": "Aggiustare il secondo mese",
+     "g": "Usare le lezioni del mese scorso per rendere il nuovo budget più accurato.",
+     "p": [
+      "Il tuo secondo budget parte più furbo, perché ora hai un mese di numeri reali.",
+      "Cambia gli importi dove la realtà era diversa dal piano, in su o in giù, senza drammi.",
+      "Tieni una cosa che ha funzionato e prova un'idea nuova, per vedere cosa aiuta."
+     ],
+     "q": "Quale categoria del mese scorso richiede l'aggiustamento maggiore?",
+     "c": "Copia il budget del mese scorso, cambia due importi e annota perché."
+    },
+    "pt": {
+     "t": "Ajustar o teu segundo mês",
+     "g": "Usar o que aprendeste no mês passado para o novo orçamento ser mais exato.",
+     "p": [
+      "O teu segundo orçamento começa mais esperto, porque já tens um mês de números reais.",
+      "Muda valores onde a realidade diferiu do plano, para cima ou para baixo, sem dramas.",
+      "Mantém uma coisa que funcionou e testa uma ideia nova, para ver o que ajuda."
+     ],
+     "q": "Que categoria do mês passado precisa do maior ajuste?",
+     "c": "Copia o orçamento do mês passado, muda dois valores e anota porquê."
+    },
+    "pt_BR": {
+     "t": "Ajustar o seu segundo mês",
+     "g": "Usar o que você aprendeu no mês passado para o novo orçamento ficar mais exato.",
+     "p": [
+      "Seu segundo orçamento começa mais esperto, porque você já tem um mês de números reais.",
+      "Mude valores onde a realidade diferiu do plano, para cima ou para baixo, sem drama.",
+      "Mantenha uma coisa que funcionou e teste uma ideia nova, para ver o que ajuda."
+     ],
+     "q": "Que categoria do mês passado precisa do maior ajuste?",
+     "c": "Copie o orçamento do mês passado, mude dois valores e anote o porquê."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month",
+     "g": "Review tracking, categories and your first real budget.",
+     "p": [
+      "You learned to track, sort costs, list bills and build a simple plan with a buffer and some fun.",
+      "The habits matter more than the numbers: notice, plan, check in, adjust.",
+      "Look how far you have come in thirty days, and be proud of it."
+     ],
+     "q": "Which step of your first month was the most useful for you?",
+     "c": "Pick one habit from the last thirty days and promise to keep it going."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Monat",
+     "g": "Erfassung, Kategorien und dein erstes echtes Budget wiederholen.",
+     "p": [
+      "Du hast gelernt zu erfassen, Kosten zu sortieren, Rechnungen zu listen und einen Plan mit Puffer und Spaß zu bauen.",
+      "Die Gewohnheiten zählen mehr als die Zahlen: bemerken, planen, prüfen, anpassen.",
+      "Sieh, wie weit du in dreißig Tagen gekommen bist, und sei stolz darauf."
+     ],
+     "q": "Welcher Schritt deines ersten Monats war für dich am nützlichsten?",
+     "c": "Wähle eine Gewohnheit der letzten dreißig Tage und versprich, dabei zu bleiben."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes",
+     "g": "Repasar el registro, las categorías y tu primer presupuesto real.",
+     "p": [
+      "Aprendiste a registrar, clasificar gastos, listar facturas y armar un plan con colchón y algo de ocio.",
+      "Los hábitos importan más que las cifras: observar, planificar, revisar, ajustar.",
+      "Mira cuánto has avanzado en treinta días y siéntete orgulloso de ello."
+     ],
+     "q": "¿Qué paso de tu primer mes te resultó más útil?",
+     "c": "Elige un hábito de los últimos treinta días y prométete mantenerlo."
+    },
+    "fr": {
+     "t": "Révision : ton premier mois",
+     "g": "Revoir le suivi, les catégories et ton premier vrai budget.",
+     "p": [
+      "Tu as appris à suivre, trier les coûts, lister les factures et bâtir un plan avec coussin et plaisir.",
+      "Les habitudes comptent plus que les chiffres : observer, planifier, faire le point, ajuster.",
+      "Regarde le chemin parcouru en trente jours et sois-en fier."
+     ],
+     "q": "Quelle étape de ton premier mois t'a été la plus utile ?",
+     "c": "Choisis une habitude des trente derniers jours et promets de la garder."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese",
+     "g": "Ripassare tracciamento, categorie e il tuo primo vero budget.",
+     "p": [
+      "Hai imparato a tracciare, ordinare i costi, elencare le bollette e costruire un piano con cuscinetto e svago.",
+      "Le abitudini contano più dei numeri: osservare, pianificare, controllare, aggiustare.",
+      "Guarda quanta strada hai fatto in trenta giorni e sii orgoglioso."
+     ],
+     "q": "Quale passo del tuo primo mese ti è stato più utile?",
+     "c": "Scegli un'abitudine degli ultimi trenta giorni e prometti di mantenerla."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês",
+     "g": "Rever o registo, as categorias e o teu primeiro orçamento real.",
+     "p": [
+      "Aprendeste a registar, separar custos, listar contas e montar um plano com almofada e lazer.",
+      "Os hábitos contam mais do que os números: observar, planear, verificar, ajustar.",
+      "Vê quanto já avançaste em trinta dias e orgulha-te disso."
+     ],
+     "q": "Que passo do teu primeiro mês foi mais útil para ti?",
+     "c": "Escolhe um hábito dos últimos trinta dias e promete mantê-lo."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês",
+     "g": "Rever o registro, as categorias e o seu primeiro orçamento real.",
+     "p": [
+      "Você aprendeu a registrar, separar custos, listar contas e montar um plano com colchão e lazer.",
+      "Os hábitos contam mais do que os números: observar, planejar, conferir, ajustar.",
+      "Veja quanto você avançou em trinta dias e se orgulhe disso."
+     ],
+     "q": "Que passo do seu primeiro mês foi mais útil para você?",
+     "c": "Escolha um hábito dos últimos trinta dias e prometa manter."
+    }
+   }
+  }
+ ]
+}

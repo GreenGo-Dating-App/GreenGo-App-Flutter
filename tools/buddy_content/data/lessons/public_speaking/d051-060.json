@@ -1,0 +1,835 @@
+{
+ "topic": "public_speaking",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing a talk outline",
+     "g": "Make a one-page outline with your opening, main points and closing.",
+     "p": [
+      "List your opening, three main points and closing in short phrases.",
+      "Under each point, note one example or fact, not whole sentences.",
+      "A good outline fits on one page and shows the whole talk at a glance."
+     ],
+     "q": "Do you prefer outlines with bullets, boxes or numbers?",
+     "c": "Write a one-page outline for a three-minute talk using only key phrases."
+    },
+    "de": {
+     "t": "Eine Vortragsgliederung schreiben",
+     "g": "Erstelle eine einseitige Gliederung mit Einstieg, Hauptpunkten und Schluss.",
+     "p": [
+      "Liste Einstieg, drei Hauptpunkte und Schluss in kurzen Stichworten.",
+      "Notiere unter jedem Punkt ein Beispiel oder einen Fakt, keine ganzen Sätze.",
+      "Eine gute Gliederung passt auf eine Seite und zeigt den ganzen Vortrag auf einen Blick."
+     ],
+     "q": "Magst du Gliederungen lieber mit Spiegelstrichen, Kästen oder Nummern?",
+     "c": "Schreib eine einseitige Gliederung für einen Dreiminutenvortrag, nur mit Stichworten."
+    },
+    "es": {
+     "t": "Escribir el esquema de una charla",
+     "g": "Haz un esquema de una página con apertura, puntos principales y cierre.",
+     "p": [
+      "Anota apertura, tres puntos principales y cierre en frases cortas.",
+      "Bajo cada punto, apunta un ejemplo o dato, no frases completas.",
+      "Un buen esquema cabe en una página y muestra toda la charla de un vistazo."
+     ],
+     "q": "¿Prefieres esquemas con viñetas, cajas o números?",
+     "c": "Escribe un esquema de una página para una charla de tres minutos solo con palabras clave."
+    },
+    "fr": {
+     "t": "Rédiger le plan d'un exposé",
+     "g": "Fais un plan d'une page avec ouverture, points principaux et conclusion.",
+     "p": [
+      "Note l'ouverture, trois points principaux et la conclusion en phrases courtes.",
+      "Sous chaque point, mets un exemple ou un fait, pas des phrases entières.",
+      "Un bon plan tient sur une page et montre tout l'exposé d'un coup d'œil."
+     ],
+     "q": "Préfères-tu les plans à puces, à cases ou numérotés ?",
+     "c": "Écris un plan d'une page pour un exposé de trois minutes, avec seulement des mots clés."
+    },
+    "it": {
+     "t": "Scrivere la scaletta di un discorso",
+     "g": "Crea una scaletta di una pagina con apertura, punti principali e chiusura.",
+     "p": [
+      "Annota apertura, tre punti principali e chiusura in frasi brevi.",
+      "Sotto ogni punto metti un esempio o un fatto, non frasi intere.",
+      "Una buona scaletta sta in una pagina e mostra tutto il discorso a colpo d'occhio."
+     ],
+     "q": "Preferisci scalette con elenchi puntati, riquadri o numeri?",
+     "c": "Scrivi una scaletta di una pagina per un discorso di tre minuti usando solo parole chiave."
+    },
+    "pt": {
+     "t": "Escrever o guião de uma apresentação",
+     "g": "Faz um guião de uma página com abertura, pontos principais e fecho.",
+     "p": [
+      "Anota abertura, três pontos principais e fecho em frases curtas.",
+      "Sob cada ponto, regista um exemplo ou facto, não frases inteiras.",
+      "Um bom guião cabe numa página e mostra a apresentação toda num relance."
+     ],
+     "q": "Preferes guiões com marcadores, caixas ou números?",
+     "c": "Escreve um guião de uma página para uma apresentação de três minutos só com palavras-chave."
+    },
+    "pt_BR": {
+     "t": "Escrever o roteiro de uma apresentação",
+     "g": "Faça um roteiro de uma página com abertura, pontos principais e fechamento.",
+     "p": [
+      "Anote abertura, três pontos principais e fechamento em frases curtas.",
+      "Sob cada ponto, registre um exemplo ou fato, não frases inteiras.",
+      "Um bom roteiro cabe numa página e mostra a apresentação toda de relance."
+     ],
+     "q": "Você prefere roteiros com marcadores, caixas ou números?",
+     "c": "Escreva um roteiro de uma página para uma apresentação de três minutos só com palavras-chave."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Speaking from notes",
+     "g": "Use keyword notes instead of reading a full script.",
+     "p": [
+      "Reading word for word makes your voice flat and breaks eye contact.",
+      "Keywords remind you of the idea, and your own words come naturally.",
+      "Glance at your notes, then look up and say the thought."
+     ],
+     "q": "Have you ever read a script aloud, and how did it feel?",
+     "c": "Turn one paragraph into five keywords and speak it without reading."
+    },
+    "de": {
+     "t": "Frei sprechen mit Notizen",
+     "g": "Nutze Stichwortnotizen, statt ein volles Manuskript abzulesen.",
+     "p": [
+      "Wortwörtliches Ablesen macht die Stimme flach und unterbricht den Blickkontakt.",
+      "Stichworte erinnern an die Idee, und deine eigenen Worte kommen von selbst.",
+      "Wirf einen Blick auf die Notizen, schau auf und sag den Gedanken."
+     ],
+     "q": "Hast du schon einmal ein Manuskript vorgelesen, und wie fühlte sich das an?",
+     "c": "Mach aus einem Absatz fünf Stichworte und sprich ihn ohne Ablesen."
+    },
+    "es": {
+     "t": "Hablar con apuntes",
+     "g": "Usa notas de palabras clave en vez de leer un guion completo.",
+     "p": [
+      "Leer palabra por palabra aplana la voz y rompe el contacto visual.",
+      "Las palabras clave te recuerdan la idea y las palabras salen naturales.",
+      "Echa un vistazo a las notas, levanta la vista y di la idea."
+     ],
+     "q": "¿Has leído alguna vez un guion en voz alta y cómo fue?",
+     "c": "Convierte un párrafo en cinco palabras clave y dilo sin leer."
+    },
+    "fr": {
+     "t": "Parler avec des notes",
+     "g": "Utilise des notes à mots clés plutôt que de lire un texte entier.",
+     "p": [
+      "Lire mot à mot rend la voix plate et coupe le contact visuel.",
+      "Les mots clés rappellent l'idée, et tes propres mots viennent naturellement.",
+      "Jette un œil aux notes, relève la tête et dis l'idée."
+     ],
+     "q": "As-tu déjà lu un texte à voix haute, et comment était-ce ?",
+     "c": "Transforme un paragraphe en cinq mots clés et dis-le sans lire."
+    },
+    "it": {
+     "t": "Parlare con appunti",
+     "g": "Usa appunti a parole chiave invece di leggere un copione intero.",
+     "p": [
+      "Leggere parola per parola appiattisce la voce e rompe il contatto visivo.",
+      "Le parole chiave ricordano l'idea e le parole vengono naturali.",
+      "Dai un'occhiata agli appunti, alza lo sguardo e di' il pensiero."
+     ],
+     "q": "Hai mai letto un copione a voce alta, e com'è andata?",
+     "c": "Trasforma un paragrafo in cinque parole chiave e dillo senza leggere."
+    },
+    "pt": {
+     "t": "Falar com notas",
+     "g": "Usa notas com palavras-chave em vez de ler um guião completo.",
+     "p": [
+      "Ler palavra por palavra achata a voz e quebra o contacto visual.",
+      "As palavras-chave lembram a ideia e as palavras saem naturais.",
+      "Dá uma vista de olhos às notas, levanta o olhar e di a ideia."
+     ],
+     "q": "Já leste um guião em voz alta e como foi?",
+     "c": "Transforma um parágrafo em cinco palavras-chave e di-o sem ler."
+    },
+    "pt_BR": {
+     "t": "Falar com anotações",
+     "g": "Use anotações com palavras-chave em vez de ler um roteiro completo.",
+     "p": [
+      "Ler palavra por palavra achata a voz e quebra o contato visual.",
+      "As palavras-chave lembram a ideia e as palavras saem naturais.",
+      "Dê uma olhada nas anotações, levante o olhar e diga a ideia."
+     ],
+     "q": "Você já leu um roteiro em voz alta e como foi?",
+     "c": "Transforme um parágrafo em cinco palavras-chave e diga sem ler."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cue cards that work",
+     "g": "Make large, simple cards with keywords and a numbered order.",
+     "p": [
+      "Use one card per main point with big handwriting, three to five words.",
+      "Number every card and tie them together so they cannot get mixed up.",
+      "Hold cards at chest height and glance down, do not hide behind them."
+     ],
+     "q": "Do you prefer paper cards, a phone or nothing at all?",
+     "c": "Make three cue cards for a talk and practise using them once."
+    },
+    "de": {
+     "t": "Stichwortkarten, die funktionieren",
+     "g": "Fertige große, einfache Karten mit Stichworten und Nummern an.",
+     "p": [
+      "Eine Karte pro Hauptpunkt, große Schrift, drei bis fünf Wörter.",
+      "Nummeriere jede Karte und binde sie zusammen, damit nichts durcheinandergerät.",
+      "Halte die Karten auf Brusthöhe und blick kurz hinunter, versteck dich nicht dahinter."
+     ],
+     "q": "Magst du Papierkarten, das Handy oder gar nichts?",
+     "c": "Mach drei Stichwortkarten für einen Vortrag und übe einmal damit."
+    },
+    "es": {
+     "t": "Fichas que funcionan",
+     "g": "Haz fichas grandes y simples con palabras clave y orden numerado.",
+     "p": [
+      "Una ficha por punto principal, letra grande y de tres a cinco palabras.",
+      "Numera cada ficha y átalas para que no se mezclen.",
+      "Sostén las fichas a la altura del pecho y echa un vistazo; no te escondas tras ellas."
+     ],
+     "q": "¿Prefieres fichas de papel, el móvil o nada?",
+     "c": "Haz tres fichas para una charla y practica con ellas una vez."
+    },
+    "fr": {
+     "t": "Des fiches qui fonctionnent",
+     "g": "Fais de grandes fiches simples avec des mots clés et un ordre numéroté.",
+     "p": [
+      "Une fiche par point principal, grosse écriture, trois à cinq mots.",
+      "Numérote chaque fiche et attache-les pour qu'elles ne se mélangent pas.",
+      "Tiens les fiches à hauteur de poitrine et jette un œil ; ne te cache pas derrière."
+     ],
+     "q": "Préfères-tu des fiches papier, le téléphone ou rien ?",
+     "c": "Fais trois fiches pour un exposé et entraîne-toi une fois avec elles."
+    },
+    "it": {
+     "t": "Cartoncini che funzionano",
+     "g": "Crea cartoncini grandi e semplici con parole chiave e ordine numerato.",
+     "p": [
+      "Un cartoncino per punto principale, scrittura grande, da tre a cinque parole.",
+      "Numera ogni cartoncino e legali insieme perché non si mescolino.",
+      "Tieni i cartoncini all'altezza del petto e dai un'occhiata, non nasconderti dietro."
+     ],
+     "q": "Preferisci cartoncini di carta, il telefono o niente?",
+     "c": "Fai tre cartoncini per un discorso e prova a usarli una volta."
+    },
+    "pt": {
+     "t": "Cartões de apoio que funcionam",
+     "g": "Faz cartões grandes e simples com palavras-chave e ordem numerada.",
+     "p": [
+      "Um cartão por ponto principal, letra grande, três a cinco palavras.",
+      "Numera cada cartão e prende-os juntos para não se misturarem.",
+      "Segura os cartões à altura do peito e espreita; não te escondas atrás deles."
+     ],
+     "q": "Preferes cartões de papel, o telemóvel ou nada?",
+     "c": "Faz três cartões para uma apresentação e pratica com eles uma vez."
+    },
+    "pt_BR": {
+     "t": "Cartões de apoio que funcionam",
+     "g": "Faça cartões grandes e simples com palavras-chave e ordem numerada.",
+     "p": [
+      "Um cartão por ponto principal, letra grande, de três a cinco palavras.",
+      "Numere cada cartão e prenda-os juntos para não se misturarem.",
+      "Segure os cartões na altura do peito e dê uma olhada; não se esconda atrás deles."
+     ],
+     "q": "Você prefere cartões de papel, o celular ou nada?",
+     "c": "Faça três cartões para uma apresentação e pratique com eles uma vez."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why not to memorise everything",
+     "g": "Memorise key moments only and keep the rest natural.",
+     "p": [
+      "Word-for-word memorising can freeze you if one line slips.",
+      "Memorise just your opening, your closing and any key phrase.",
+      "Know your ideas well and let the words be a little different each time."
+     ],
+     "q": "What worries you most about forgetting your words?",
+     "c": "Memorise only your first sentence and last sentence, and say the middle freely."
+    },
+    "de": {
+     "t": "Warum nicht alles auswendig lernen",
+     "g": "Lerne nur Schlüsselmomente auswendig und halte den Rest natürlich.",
+     "p": [
+      "Wortwörtliches Auswendiglernen kann blockieren, wenn eine Zeile fehlt.",
+      "Lerne nur Einstieg, Schluss und wichtige Schlüsselsätze auswendig.",
+      "Kenne deine Ideen gut und lass die Worte jedes Mal etwas anders sein."
+     ],
+     "q": "Was beunruhigt dich am meisten beim Gedanken, Worte zu vergessen?",
+     "c": "Lerne nur den ersten und letzten Satz auswendig und sprich die Mitte frei."
+    },
+    "es": {
+     "t": "Por qué no memorizarlo todo",
+     "g": "Memoriza solo los momentos clave y deja el resto natural.",
+     "p": [
+      "Memorizar palabra por palabra puede bloquearte si falla una línea.",
+      "Memoriza solo tu apertura, tu cierre y alguna frase clave.",
+      "Conoce bien tus ideas y deja que las palabras cambien un poco cada vez."
+     ],
+     "q": "¿Qué te preocupa más de olvidar tus palabras?",
+     "c": "Memoriza solo tu primera y última frase y di el medio con libertad."
+    },
+    "fr": {
+     "t": "Pourquoi ne pas tout mémoriser",
+     "g": "Mémorise seulement les moments clés et garde le reste naturel.",
+     "p": [
+      "Apprendre mot à mot peut te bloquer si une ligne t'échappe.",
+      "Mémorise seulement ton ouverture, ta conclusion et quelques phrases clés.",
+      "Connais bien tes idées et laisse les mots varier un peu à chaque fois."
+     ],
+     "q": "Qu'est-ce qui t'inquiète le plus dans l'idée d'oublier tes mots ?",
+     "c": "Mémorise seulement ta première et ta dernière phrase et dis le milieu librement."
+    },
+    "it": {
+     "t": "Perché non memorizzare tutto",
+     "g": "Memorizza solo i momenti chiave e lascia il resto naturale.",
+     "p": [
+      "Imparare parola per parola può bloccarti se una riga sfugge.",
+      "Memorizza solo apertura, chiusura e qualche frase chiave.",
+      "Conosci bene le idee e lascia che le parole cambino un po' ogni volta."
+     ],
+     "q": "Cosa ti preoccupa di più nel dimenticare le parole?",
+     "c": "Memorizza solo la prima e l'ultima frase e di' il centro liberamente."
+    },
+    "pt": {
+     "t": "Porque não decorar tudo",
+     "g": "Decora apenas os momentos-chave e deixa o resto natural.",
+     "p": [
+      "Decorar palavra por palavra pode bloquear-te se uma linha falhar.",
+      "Decora só a abertura, o fecho e algumas frases-chave.",
+      "Conhece bem as tuas ideias e deixa as palavras mudar um pouco de cada vez."
+     ],
+     "q": "O que mais te preocupa em esquecer as palavras?",
+     "c": "Decora só a primeira e a última frase e di o meio livremente."
+    },
+    "pt_BR": {
+     "t": "Por que não decorar tudo",
+     "g": "Decore apenas os momentos-chave e deixe o resto natural.",
+     "p": [
+      "Decorar palavra por palavra pode travar você se uma linha falhar.",
+      "Decore só a abertura, o fechamento e algumas frases-chave.",
+      "Conheça bem as suas ideias e deixe as palavras mudarem um pouco a cada vez."
+     ],
+     "q": "O que mais preocupa você em esquecer as palavras?",
+     "c": "Decore só a primeira e a última frase e diga o meio livremente."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rehearsing out loud",
+     "g": "Learn why silent reading is not practice and how to rehearse properly.",
+     "p": [
+      "Your mouth needs practice, not just your eyes: say it out loud.",
+      "Stand up and rehearse as if the audience were there.",
+      "Practise the whole talk straight through, without stopping to fix."
+     ],
+     "q": "How do you usually prepare: reading, writing or speaking it aloud?",
+     "c": "Rehearse a two-minute talk out loud, standing, from start to finish."
+    },
+    "de": {
+     "t": "Laut proben",
+     "g": "Verstehe, warum stilles Lesen kein Üben ist und wie du richtig probst.",
+     "p": [
+      "Dein Mund braucht Übung, nicht nur deine Augen: sprich laut.",
+      "Steh auf und probe, als wäre das Publikum da.",
+      "Übe den ganzen Vortrag am Stück, ohne zum Korrigieren anzuhalten."
+     ],
+     "q": "Wie bereitest du dich meist vor: lesen, schreiben oder laut sprechen?",
+     "c": "Probe einen Zweiminutenvortrag laut, stehend, von Anfang bis Ende."
+    },
+    "es": {
+     "t": "Ensayar en voz alta",
+     "g": "Aprende por qué leer en silencio no es practicar y cómo ensayar bien.",
+     "p": [
+      "Tu boca necesita práctica, no solo tus ojos: dilo en voz alta.",
+      "Ponte de pie y ensaya como si el público estuviera allí.",
+      "Practica la charla entera de corrido, sin parar a corregir."
+     ],
+     "q": "¿Cómo sueles prepararte: leyendo, escribiendo o hablando en voz alta?",
+     "c": "Ensaya una charla de dos minutos en voz alta, de pie, de principio a fin."
+    },
+    "fr": {
+     "t": "Répéter à voix haute",
+     "g": "Comprends pourquoi lire en silence n'est pas s'entraîner et comment bien répéter.",
+     "p": [
+      "Ta bouche a besoin d'entraînement, pas seulement tes yeux : dis-le à voix haute.",
+      "Mets-toi debout et répète comme si le public était là.",
+      "Entraîne-toi sur tout l'exposé d'une traite, sans t'arrêter pour corriger."
+     ],
+     "q": "Comment te prépares-tu d'habitude : en lisant, en écrivant ou à voix haute ?",
+     "c": "Répète un exposé de deux minutes à voix haute, debout, du début à la fin."
+    },
+    "it": {
+     "t": "Provare ad alta voce",
+     "g": "Scopri perché leggere in silenzio non è esercizio e come provare bene.",
+     "p": [
+      "La tua bocca ha bisogno di esercizio, non solo gli occhi: dillo ad alta voce.",
+      "Alzati e prova come se il pubblico fosse presente.",
+      "Esercitati su tutto il discorso di fila, senza fermarti a correggere."
+     ],
+     "q": "Come ti prepari di solito: leggendo, scrivendo o parlando ad alta voce?",
+     "c": "Prova un discorso di due minuti ad alta voce, in piedi, dall'inizio alla fine."
+    },
+    "pt": {
+     "t": "Ensaiar em voz alta",
+     "g": "Percebe porque ler em silêncio não é praticar e como ensaiar bem.",
+     "p": [
+      "A tua boca precisa de prática, não só os olhos: di-o em voz alta.",
+      "Levanta-te e ensaia como se o público estivesse presente.",
+      "Pratica a apresentação toda de seguida, sem parar para corrigir."
+     ],
+     "q": "Como costumas preparar-te: a ler, a escrever ou a falar em voz alta?",
+     "c": "Ensaia uma apresentação de dois minutos em voz alta, de pé, do início ao fim."
+    },
+    "pt_BR": {
+     "t": "Ensaiar em voz alta",
+     "g": "Entenda por que ler em silêncio não é praticar e como ensaiar bem.",
+     "p": [
+      "Sua boca precisa de prática, não só os olhos: diga em voz alta.",
+      "Levante-se e ensaie como se o público estivesse presente.",
+      "Pratique a apresentação toda de uma vez, sem parar para corrigir."
+     ],
+     "q": "Como você costuma se preparar: lendo, escrevendo ou falando em voz alta?",
+     "c": "Ensaie uma apresentação de dois minutos em voz alta, de pé, do início ao fim."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Timing your talk",
+     "g": "Measure how long your talk takes and adjust it to fit.",
+     "p": [
+      "Use a phone timer during a full run-through.",
+      "Your real talk is often a bit longer than rehearsal because of pauses.",
+      "Note timing marks, like 'point two by minute three'."
+     ],
+     "q": "Have you ever run out of time or finished far too early?",
+     "c": "Time a two-minute talk and write down how long each part took."
+    },
+    "de": {
+     "t": "Den Vortrag zeitlich messen",
+     "g": "Miss, wie lang dein Vortrag dauert, und passe ihn an.",
+     "p": [
+      "Nutze beim kompletten Durchlauf den Handytimer.",
+      "Der echte Vortrag ist wegen Pausen oft etwas länger als die Probe.",
+      "Notiere Zeitmarken wie 'Punkt zwei bis Minute drei'."
+     ],
+     "q": "Ist dir schon einmal die Zeit ausgegangen oder warst du viel zu früh fertig?",
+     "c": "Stoppe einen Zweiminutenvortrag und notiere, wie lang jeder Teil dauerte."
+    },
+    "es": {
+     "t": "Cronometrar tu charla",
+     "g": "Mide cuánto dura tu charla y ajústala para que encaje.",
+     "p": [
+      "Usa el temporizador del móvil en un ensayo completo.",
+      "La charla real suele durar algo más que el ensayo por las pausas.",
+      "Anota marcas de tiempo, como 'punto dos antes del minuto tres'."
+     ],
+     "q": "¿Alguna vez te quedaste sin tiempo o terminaste demasiado pronto?",
+     "c": "Cronometra una charla de dos minutos y anota cuánto duró cada parte."
+    },
+    "fr": {
+     "t": "Chronométrer ton exposé",
+     "g": "Mesure la durée de ton exposé et ajuste-la pour qu'il tienne.",
+     "p": [
+      "Utilise le minuteur du téléphone pendant une répétition complète.",
+      "Le vrai exposé dure souvent un peu plus que la répétition à cause des pauses.",
+      "Note des repères de temps, comme « point deux avant la minute trois »."
+     ],
+     "q": "T'est-il déjà arrivé de manquer de temps ou de finir bien trop tôt ?",
+     "c": "Chronomètre un exposé de deux minutes et note la durée de chaque partie."
+    },
+    "it": {
+     "t": "Cronometrare il discorso",
+     "g": "Misura quanto dura il discorso e adattalo perché stia nel tempo.",
+     "p": [
+      "Usa il timer del telefono durante una prova completa.",
+      "Il discorso reale dura spesso un po' di più della prova per via delle pause.",
+      "Segna punti di tempo, come 'punto due entro il minuto tre'."
+     ],
+     "q": "Ti è mai capitato di finire il tempo o di finire troppo presto?",
+     "c": "Cronometra un discorso di due minuti e annota quanto dura ogni parte."
+    },
+    "pt": {
+     "t": "Cronometrar a apresentação",
+     "g": "Mede quanto dura a apresentação e ajusta-a para caber no tempo.",
+     "p": [
+      "Usa o temporizador do telemóvel num ensaio completo.",
+      "A apresentação real costuma durar um pouco mais do que o ensaio, por causa das pausas.",
+      "Anota marcas de tempo, como 'ponto dois até ao minuto três'."
+     ],
+     "q": "Já te acabou o tempo ou terminaste demasiado cedo?",
+     "c": "Cronometra uma apresentação de dois minutos e anota quanto durou cada parte."
+    },
+    "pt_BR": {
+     "t": "Cronometrar a apresentação",
+     "g": "Meça quanto dura a apresentação e ajuste para caber no tempo.",
+     "p": [
+      "Use o timer do celular em um ensaio completo.",
+      "A apresentação real costuma durar um pouco mais que o ensaio, por causa das pausas.",
+      "Anote marcas de tempo, como 'ponto dois até o minuto três'."
+     ],
+     "q": "Já acabou o seu tempo ou você terminou cedo demais?",
+     "c": "Cronometre uma apresentação de dois minutos e anote quanto durou cada parte."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cutting to fit time",
+     "g": "Remove details gracefully when your talk runs too long.",
+     "p": [
+      "Cut whole details, not speed: never rush to cram it all in.",
+      "Remove the weakest example or the least needed side story.",
+      "Keep your opening, core message and closing safe."
+     ],
+     "q": "What is the hardest part of cutting something you like?",
+     "c": "Cut one detail from a talk that runs long and re-time it."
+    },
+    "de": {
+     "t": "Kürzen, damit es passt",
+     "g": "Streiche Details elegant, wenn dein Vortrag zu lang ist.",
+     "p": [
+      "Streiche ganze Details, nicht das Tempo: nie hastig alles hineinpressen.",
+      "Entferne das schwächste Beispiel oder die am wenigsten nötige Nebengeschichte.",
+      "Schütze Einstieg, Kernbotschaft und Schluss."
+     ],
+     "q": "Was fällt dir beim Streichen von etwas Liebgewonnenem am schwersten?",
+     "c": "Streiche ein Detail aus einem zu langen Vortrag und miss die Zeit neu."
+    },
+    "es": {
+     "t": "Recortar para ajustar el tiempo",
+     "g": "Quita detalles con elegancia cuando tu charla se alarga.",
+     "p": [
+      "Recorta detalles enteros, no la velocidad: nunca corras para meterlo todo.",
+      "Quita el ejemplo más débil o la anécdota menos necesaria.",
+      "Protege tu apertura, tu mensaje central y tu cierre."
+     ],
+     "q": "¿Qué es lo más difícil de recortar algo que te gusta?",
+     "c": "Quita un detalle de una charla larga y vuelve a cronometrarla."
+    },
+    "fr": {
+     "t": "Couper pour tenir dans le temps",
+     "g": "Retire des détails avec élégance quand ton exposé est trop long.",
+     "p": [
+      "Coupe des détails entiers, pas la vitesse : ne te précipite jamais pour tout caser.",
+      "Retire l'exemple le plus faible ou l'anecdote la moins utile.",
+      "Protège ton ouverture, ton message central et ta conclusion."
+     ],
+     "q": "Qu'y a-t-il de plus difficile à couper quand on aime ce qu'on retire ?",
+     "c": "Retire un détail d'un exposé trop long et chronomètre-le de nouveau."
+    },
+    "it": {
+     "t": "Tagliare per stare nel tempo",
+     "g": "Togli dettagli con eleganza quando il discorso è troppo lungo.",
+     "p": [
+      "Taglia interi dettagli, non la velocità: mai correre per farci stare tutto.",
+      "Elimina l'esempio più debole o l'aneddoto meno necessario.",
+      "Proteggi apertura, messaggio centrale e chiusura."
+     ],
+     "q": "Qual è la cosa più difficile nel tagliare qualcosa che ti piace?",
+     "c": "Togli un dettaglio da un discorso troppo lungo e cronometralo di nuovo."
+    },
+    "pt": {
+     "t": "Cortar para caber no tempo",
+     "g": "Retira detalhes com elegância quando a apresentação é demasiado longa.",
+     "p": [
+      "Corta detalhes inteiros, não a velocidade: nunca corras para meter tudo.",
+      "Remove o exemplo mais fraco ou a história lateral menos necessária.",
+      "Protege a abertura, a mensagem central e o fecho."
+     ],
+     "q": "O que é mais difícil ao cortar algo de que gostas?",
+     "c": "Corta um detalhe de uma apresentação longa e cronometra de novo."
+    },
+    "pt_BR": {
+     "t": "Cortar para caber no tempo",
+     "g": "Retire detalhes com elegância quando a apresentação está longa demais.",
+     "p": [
+      "Corte detalhes inteiros, não a velocidade: nunca corra para encaixar tudo.",
+      "Remova o exemplo mais fraco ou a história lateral menos necessária.",
+      "Proteja a abertura, a mensagem central e o fechamento."
+     ],
+     "q": "O que é mais difícil ao cortar algo de que você gosta?",
+     "c": "Corte um detalhe de uma apresentação longa e cronometre de novo."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mini talk: a skill I have",
+     "g": "Give a three-minute talk teaching something you can do.",
+     "p": [
+      "Pick a skill with simple steps: a recipe, a knot, a stretch, a shortcut.",
+      "Teach it in three steps and show the key motion with your hands.",
+      "Open with why it is useful and close by inviting a try."
+     ],
+     "q": "What simple skill could you teach someone in three minutes?",
+     "c": "Give a 3-minute how-to talk with three steps and record it."
+    },
+    "de": {
+     "t": "Mini-Vortrag: eine Fähigkeit von mir",
+     "g": "Halte einen Dreiminutenvortrag und bring etwas bei, das du kannst.",
+     "p": [
+      "Wähle eine Fähigkeit mit einfachen Schritten: Rezept, Knoten, Dehnübung, Trick.",
+      "Erkläre sie in drei Schritten und zeige die Schlüsselbewegung mit den Händen.",
+      "Beginne mit dem Nutzen und lade am Ende zum Ausprobieren ein."
+     ],
+     "q": "Welche einfache Fähigkeit könntest du jemandem in drei Minuten beibringen?",
+     "c": "Halte einen 3-Minuten-Anleitungsvortrag mit drei Schritten und nimm ihn auf."
+    },
+    "es": {
+     "t": "Mini charla: una habilidad que tengo",
+     "g": "Da una charla de tres minutos enseñando algo que sabes hacer.",
+     "p": [
+      "Elige una habilidad con pasos simples: receta, nudo, estiramiento, atajo.",
+      "Enséñala en tres pasos y muestra el movimiento clave con las manos.",
+      "Abre con por qué es útil y cierra invitando a probar."
+     ],
+     "q": "¿Qué habilidad simple podrías enseñar a alguien en tres minutos?",
+     "c": "Da una charla de 3 minutos con tres pasos y grábala."
+    },
+    "fr": {
+     "t": "Mini exposé : une compétence que j'ai",
+     "g": "Fais un exposé de trois minutes pour enseigner quelque chose que tu sais faire.",
+     "p": [
+      "Choisis une compétence aux étapes simples : recette, nœud, étirement, astuce.",
+      "Enseigne-la en trois étapes et montre le geste clé avec les mains.",
+      "Ouvre sur son utilité et termine en invitant à essayer."
+     ],
+     "q": "Quelle compétence simple pourrais-tu enseigner en trois minutes ?",
+     "c": "Fais un exposé pratique de 3 minutes en trois étapes et enregistre-le."
+    },
+    "it": {
+     "t": "Mini discorso: un'abilità che ho",
+     "g": "Fai un discorso di tre minuti insegnando qualcosa che sai fare.",
+     "p": [
+      "Scegli un'abilità con passaggi semplici: ricetta, nodo, stretching, scorciatoia.",
+      "Insegnala in tre passaggi e mostra il gesto chiave con le mani.",
+      "Apri dicendo perché è utile e chiudi invitando a provare."
+     ],
+     "q": "Quale abilità semplice potresti insegnare a qualcuno in tre minuti?",
+     "c": "Fai un discorso pratico di 3 minuti in tre passaggi e registralo."
+    },
+    "pt": {
+     "t": "Mini apresentação: uma competência que tenho",
+     "g": "Faz uma apresentação de três minutos a ensinar algo que sabes fazer.",
+     "p": [
+      "Escolhe uma competência com passos simples: receita, nó, alongamento, atalho.",
+      "Ensina-a em três passos e mostra o gesto principal com as mãos.",
+      "Abre com a utilidade e fecha a convidar a experimentar."
+     ],
+     "q": "Que competência simples poderias ensinar a alguém em três minutos?",
+     "c": "Faz uma apresentação prática de 3 minutos com três passos e grava-a."
+    },
+    "pt_BR": {
+     "t": "Mini apresentação: uma habilidade que eu tenho",
+     "g": "Faça uma apresentação de três minutos ensinando algo que você sabe fazer.",
+     "p": [
+      "Escolha uma habilidade com passos simples: receita, nó, alongamento, atalho.",
+      "Ensine em três passos e mostre o gesto principal com as mãos.",
+      "Abra com a utilidade e feche convidando a experimentar."
+     ],
+     "q": "Que habilidade simples você poderia ensinar a alguém em três minutos?",
+     "c": "Faça uma apresentação prática de 3 minutos com três passos e grave."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Self-review checklist",
+     "g": "Use a simple checklist to evaluate your own practice talks.",
+     "p": [
+      "Check voice: pace, pauses, volume, clear words, few fillers.",
+      "Check body: posture, eye contact, hands, a warm face.",
+      "Check content: clear opening, three points, strong closing, on time."
+     ],
+     "q": "Which three checklist items matter most for you right now?",
+     "c": "Review your last recording with the checklist and note one next step."
+    },
+    "de": {
+     "t": "Selbstcheck-Liste",
+     "g": "Nutze eine einfache Checkliste, um deine Übungsvorträge zu bewerten.",
+     "p": [
+      "Stimme prüfen: Tempo, Pausen, Lautstärke, klare Worte, wenige Füllwörter.",
+      "Körper prüfen: Haltung, Blickkontakt, Hände, ein warmes Gesicht.",
+      "Inhalt prüfen: klarer Einstieg, drei Punkte, starker Schluss, Zeit eingehalten."
+     ],
+     "q": "Welche drei Punkte der Liste sind dir gerade am wichtigsten?",
+     "c": "Geh deine letzte Aufnahme mit der Liste durch und notiere einen nächsten Schritt."
+    },
+    "es": {
+     "t": "Lista de autoevaluación",
+     "g": "Usa una lista sencilla para evaluar tus charlas de práctica.",
+     "p": [
+      "Revisa la voz: ritmo, pausas, volumen, palabras claras, pocas muletillas.",
+      "Revisa el cuerpo: postura, contacto visual, manos, cara cálida.",
+      "Revisa el contenido: apertura clara, tres puntos, cierre fuerte, a tiempo."
+     ],
+     "q": "¿Qué tres puntos de la lista te importan más ahora?",
+     "c": "Revisa tu última grabación con la lista y anota un siguiente paso."
+    },
+    "fr": {
+     "t": "Liste d'auto-évaluation",
+     "g": "Utilise une liste simple pour évaluer tes exposés d'entraînement.",
+     "p": [
+      "Vérifie la voix : rythme, pauses, volume, mots clairs, peu de tics.",
+      "Vérifie le corps : posture, regard, mains, visage chaleureux.",
+      "Vérifie le contenu : ouverture claire, trois points, conclusion forte, durée tenue."
+     ],
+     "q": "Quels trois points de la liste comptent le plus pour toi en ce moment ?",
+     "c": "Passe ton dernier enregistrement au crible avec la liste et note une prochaine étape."
+    },
+    "it": {
+     "t": "Lista di autovalutazione",
+     "g": "Usa una lista semplice per valutare i tuoi discorsi di prova.",
+     "p": [
+      "Controlla la voce: ritmo, pause, volume, parole chiare, pochi riempitivi.",
+      "Controlla il corpo: postura, sguardo, mani, viso caldo.",
+      "Controlla il contenuto: apertura chiara, tre punti, chiusura forte, tempo rispettato."
+     ],
+     "q": "Quali tre voci della lista contano di più per te ora?",
+     "c": "Rivedi la tua ultima registrazione con la lista e annota un passo successivo."
+    },
+    "pt": {
+     "t": "Lista de autoavaliação",
+     "g": "Usa uma lista simples para avaliar as tuas apresentações de treino.",
+     "p": [
+      "Verifica a voz: ritmo, pausas, volume, palavras claras, poucos tiques.",
+      "Verifica o corpo: postura, olhar, mãos, rosto simpático.",
+      "Verifica o conteúdo: abertura clara, três pontos, fecho forte, tempo cumprido."
+     ],
+     "q": "Que três itens da lista mais importam para ti agora?",
+     "c": "Revê a tua última gravação com a lista e anota um próximo passo."
+    },
+    "pt_BR": {
+     "t": "Lista de autoavaliação",
+     "g": "Use uma lista simples para avaliar as suas apresentações de treino.",
+     "p": [
+      "Verifique a voz: ritmo, pausas, volume, palavras claras, poucos vícios.",
+      "Verifique o corpo: postura, olhar, mãos, rosto simpático.",
+      "Verifique o conteúdo: abertura clara, três pontos, fechamento forte, tempo cumprido."
+     ],
+     "q": "Que três itens da lista mais importam para você agora?",
+     "c": "Reveja a sua última gravação com a lista e anote um próximo passo."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: building a talk",
+     "g": "Recap topics, structure, openings and closings.",
+     "p": [
+      "Recap: choose and narrow a topic, then pick three main points.",
+      "Recap: strong openings, signposts, support and memorable closings.",
+      "Recap: outline, cue cards, out-loud rehearsal and timing."
+     ],
+     "q": "Which part of building a talk feels easiest to you now?",
+     "c": "Plan and give a 3-minute talk on any topic, using your outline and cue cards."
+    },
+    "de": {
+     "t": "Rückblick: einen Vortrag bauen",
+     "g": "Wiederhole Themenwahl, Struktur, Einstiege und Schlüsse.",
+     "p": [
+      "Rückblick: Thema wählen und eingrenzen, dann drei Hauptpunkte festlegen.",
+      "Rückblick: starke Einstiege, Wegweiser, Belege und einprägsame Schlüsse.",
+      "Rückblick: Gliederung, Karten, lautes Proben und Zeitmessung."
+     ],
+     "q": "Welcher Teil beim Bauen eines Vortrags fällt dir jetzt am leichtesten?",
+     "c": "Plane und halte einen Dreiminutenvortrag zu einem Thema mit Gliederung und Karten."
+    },
+    "es": {
+     "t": "Repaso: construir una charla",
+     "g": "Repasa temas, estructura, aperturas y cierres.",
+     "p": [
+      "Repaso: elige y acota un tema y luego escoge tres puntos principales.",
+      "Repaso: aperturas fuertes, señales, apoyos y cierres memorables.",
+      "Repaso: esquema, fichas, ensayo en voz alta y tiempos."
+     ],
+     "q": "¿Qué parte de construir una charla te resulta más fácil ahora?",
+     "c": "Planifica y da una charla de 3 minutos sobre cualquier tema con esquema y fichas."
+    },
+    "fr": {
+     "t": "Bilan : construire un exposé",
+     "g": "Récapitule sujets, structure, ouvertures et conclusions.",
+     "p": [
+      "Bilan : choisir et cibler un sujet, puis fixer trois points principaux.",
+      "Bilan : ouvertures fortes, jalons, appuis et conclusions mémorables.",
+      "Bilan : plan, fiches, répétition à voix haute et chronométrage."
+     ],
+     "q": "Quelle partie de la construction d'un exposé te semble la plus facile maintenant ?",
+     "c": "Prépare et donne un exposé de 3 minutes sur un sujet avec plan et fiches."
+    },
+    "it": {
+     "t": "Ripasso: costruire un discorso",
+     "g": "Ripassa temi, struttura, aperture e chiusure.",
+     "p": [
+      "Ripasso: scegli e restringi un tema, poi scegli tre punti principali.",
+      "Ripasso: aperture forti, segnali, sostegni e chiusure memorabili.",
+      "Ripasso: scaletta, cartoncini, prove ad alta voce e tempi."
+     ],
+     "q": "Quale parte del costruire un discorso ti sembra più facile ora?",
+     "c": "Pianifica e tieni un discorso di 3 minuti su un tema con scaletta e cartoncini."
+    },
+    "pt": {
+     "t": "Revisão: construir uma apresentação",
+     "g": "Revê temas, estrutura, aberturas e fechos.",
+     "p": [
+      "Revisão: escolher e delimitar um tema e depois três pontos principais.",
+      "Revisão: aberturas fortes, sinais, apoios e fechos memoráveis.",
+      "Revisão: guião, cartões, ensaio em voz alta e tempos."
+     ],
+     "q": "Que parte de construir uma apresentação te parece mais fácil agora?",
+     "c": "Planeia e faz uma apresentação de 3 minutos sobre um tema, com guião e cartões."
+    },
+    "pt_BR": {
+     "t": "Revisão: construir uma apresentação",
+     "g": "Reveja temas, estrutura, aberturas e fechamentos.",
+     "p": [
+      "Revisão: escolher e delimitar um tema e depois três pontos principais.",
+      "Revisão: aberturas fortes, sinais, apoios e fechamentos memoráveis.",
+      "Revisão: roteiro, cartões, ensaio em voz alta e tempos."
+     ],
+     "q": "Que parte de construir uma apresentação parece mais fácil para você agora?",
+     "c": "Planeje e faça uma apresentação de 3 minutos sobre um tema, com roteiro e cartões."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "habits",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your morning routine test",
+     "g": "Try your morning routine for a week and adjust the order.",
+     "p": [
+      "Run the routine for seven days before judging it.",
+      "Note which step feels natural and which feels forced.",
+      "Swap the order or drop a step instead of quitting."
+     ],
+     "q": "Which part of your morning routine do you enjoy most?",
+     "c": "Do your routine today and write one tweak you will test tomorrow."
+    },
+    "de": {
+     "t": "Dein Morgenroutine-Test",
+     "g": "Deine Morgenroutine eine Woche testen und die Reihenfolge anpassen.",
+     "p": [
+      "Führe die Routine sieben Tage durch, bevor du urteilst.",
+      "Notiere, welcher Schritt natürlich wirkt und welcher erzwungen.",
+      "Tausche die Reihenfolge oder streiche einen Schritt, statt aufzugeben."
+     ],
+     "q": "Welchen Teil deiner Morgenroutine magst du am meisten?",
+     "c": "Mach heute deine Routine und schreibe eine Änderung auf, die du morgen testest."
+    },
+    "es": {
+     "t": "Prueba tu rutina matinal",
+     "g": "Probar tu rutina matinal una semana y ajustar el orden.",
+     "p": [
+      "Haz la rutina siete días antes de juzgarla.",
+      "Anota qué paso te sale natural y cuál forzado.",
+      "Cambia el orden o quita un paso en lugar de rendirte."
+     ],
+     "q": "¿Qué parte de tu rutina matinal disfrutas más?",
+     "c": "Haz hoy tu rutina y anota un ajuste que probarás mañana."
+    },
+    "fr": {
+     "t": "Le test de ta routine matinale",
+     "g": "Essayer ta routine matinale une semaine et ajuster l'ordre.",
+     "p": [
+      "Fais la routine sept jours avant de la juger.",
+      "Note quelle étape paraît naturelle et laquelle forcée.",
+      "Change l'ordre ou retire une étape plutôt qu'abandonner."
+     ],
+     "q": "Quelle partie de ta routine matinale préfères-tu ?",
+     "c": "Fais ta routine aujourd'hui et note un ajustement à tester demain."
+    },
+    "it": {
+     "t": "Il test della routine mattutina",
+     "g": "Provare la routine mattutina per una settimana e aggiustare l'ordine.",
+     "p": [
+      "Fai la routine per sette giorni prima di giudicarla.",
+      "Annota quale passo ti viene naturale e quale forzato.",
+      "Cambia l'ordine o togli un passo invece di mollare."
+     ],
+     "q": "Quale parte della tua routine mattutina ti piace di più?",
+     "c": "Fai oggi la routine e annota un ritocco da provare domani."
+    },
+    "pt": {
+     "t": "O teste da tua rotina matinal",
+     "g": "Experimentar a rotina matinal durante uma semana e ajustar a ordem.",
+     "p": [
+      "Faz a rotina sete dias antes de a julgares.",
+      "Anota que passo sai natural e qual sai forçado.",
+      "Troca a ordem ou tira um passo em vez de desistires."
+     ],
+     "q": "Que parte da tua rotina matinal mais gostas?",
+     "c": "Faz hoje a tua rotina e anota um ajuste para testar amanhã."
+    },
+    "pt_BR": {
+     "t": "O teste da sua rotina matinal",
+     "g": "Experimentar a rotina matinal por uma semana e ajustar a ordem.",
+     "p": [
+      "Faça a rotina por sete dias antes de julgar.",
+      "Anote qual passo parece natural e qual parece forçado.",
+      "Troque a ordem ou tire um passo em vez de desistir."
+     ],
+     "q": "Que parte da sua rotina matinal você mais curte?",
+     "c": "Faça hoje sua rotina e anote um ajuste para testar amanhã."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why evenings matter",
+     "g": "See how the end of the day affects sleep, mood and tomorrow's energy.",
+     "p": [
+      "How you end the day shapes how you rest.",
+      "A calm evening helps your mind slow down.",
+      "Small evening habits make tomorrow morning easier."
+     ],
+     "q": "How do your evenings usually go, busy or calm?",
+     "c": "Tonight, notice what you do in the last hour before bed."
+    },
+    "de": {
+     "t": "Warum Abende zählen",
+     "g": "Sehen, wie das Tagesende Schlaf, Stimmung und Energie von morgen beeinflusst.",
+     "p": [
+      "Wie du den Tag beendest, prägt deine Erholung.",
+      "Ein ruhiger Abend hilft deinem Kopf, herunterzufahren.",
+      "Kleine Abendgewohnheiten erleichtern den nächsten Morgen."
+     ],
+     "q": "Wie verlaufen deine Abende meistens, hektisch oder ruhig?",
+     "c": "Achte heute Abend darauf, was du in der letzten Stunde vor dem Schlafen tust."
+    },
+    "es": {
+     "t": "Por qué importan las noches",
+     "g": "Ver cómo el final del día afecta al sueño, al ánimo y a la energía de mañana.",
+     "p": [
+      "Cómo terminas el día influye en cómo descansas.",
+      "Una tarde-noche tranquila ayuda a tu mente a frenar.",
+      "Pequeños hábitos nocturnos facilitan la mañana siguiente."
+     ],
+     "q": "¿Cómo suelen ser tus noches, ajetreadas o tranquilas?",
+     "c": "Esta noche fíjate en qué haces durante la última hora antes de dormir."
+    },
+    "fr": {
+     "t": "Pourquoi les soirées comptent",
+     "g": "Voir comment la fin de journée influence sommeil, humeur et énergie de demain.",
+     "p": [
+      "La façon de finir la journée façonne ton repos.",
+      "Une soirée calme aide ton esprit à ralentir.",
+      "De petites habitudes du soir facilitent le matin suivant."
+     ],
+     "q": "Comment se passent d'habitude tes soirées, agitées ou calmes ?",
+     "c": "Ce soir, observe ce que tu fais pendant la dernière heure avant de dormir."
+    },
+    "it": {
+     "t": "Perché le sere contano",
+     "g": "Vedere come la fine della giornata influisce su sonno, umore ed energia di domani.",
+     "p": [
+      "Come chiudi la giornata influenza il tuo riposo.",
+      "Una serata calma aiuta la mente a rallentare.",
+      "Piccole abitudini serali rendono più facile la mattina dopo."
+     ],
+     "q": "Come sono di solito le tue sere, frenetiche o calme?",
+     "c": "Stasera nota cosa fai nell'ultima ora prima di dormire."
+    },
+    "pt": {
+     "t": "Porque importam as noites",
+     "g": "Ver como o fim do dia afeta o sono, o humor e a energia de amanhã.",
+     "p": [
+      "A forma como acabas o dia molda o teu descanso.",
+      "Uma noite calma ajuda a mente a abrandar.",
+      "Pequenos hábitos noturnos facilitam a manhã seguinte."
+     ],
+     "q": "Como costumam ser as tuas noites, agitadas ou calmas?",
+     "c": "Esta noite repara no que fazes na última hora antes de dormir."
+    },
+    "pt_BR": {
+     "t": "Por que as noites importam",
+     "g": "Ver como o fim do dia afeta o sono, o humor e a energia de amanhã.",
+     "p": [
+      "A forma como você termina o dia molda seu descanso.",
+      "Uma noite calma ajuda a mente a desacelerar.",
+      "Pequenos hábitos noturnos facilitam a manhã seguinte."
+     ],
+     "q": "Como costumam ser suas noites, agitadas ou calmas?",
+     "c": "Esta noite observe o que você faz na última hora antes de dormir."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A shutdown ritual",
+     "g": "End work or study with a short routine that tells your brain you are done.",
+     "p": [
+      "Close your laptop, jot tomorrow's top task and say: done for today.",
+      "A clear ending keeps work from drifting into your evening.",
+      "The ritual can take under five minutes."
+     ],
+     "q": "How do you currently switch off from work or study?",
+     "c": "Create a three-step shutdown ritual and use it at the end of today."
+    },
+    "de": {
+     "t": "Ein Feierabend-Ritual",
+     "g": "Arbeit oder Lernen mit einer kurzen Routine beenden, die deinem Kopf Schluss signalisiert.",
+     "p": [
+      "Klapp den Laptop zu, notiere die wichtigste Aufgabe von morgen und sag: Feierabend.",
+      "Ein klares Ende verhindert, dass Arbeit in den Abend hinüberfließt.",
+      "Das Ritual kann unter fünf Minuten dauern."
+     ],
+     "q": "Wie schaltest du derzeit von Arbeit oder Lernen ab?",
+     "c": "Entwirf ein Feierabend-Ritual mit drei Schritten und nutze es heute am Ende."
+    },
+    "es": {
+     "t": "Un ritual de cierre",
+     "g": "Terminar el trabajo o estudio con una rutina corta que avise a tu cerebro.",
+     "p": [
+      "Cierra el portátil, anota la tarea principal de mañana y di: listo por hoy.",
+      "Un final claro evita que el trabajo se cuele en tu tarde.",
+      "El ritual puede durar menos de cinco minutos."
+     ],
+     "q": "¿Cómo desconectas ahora del trabajo o el estudio?",
+     "c": "Crea un ritual de cierre de tres pasos y úsalo hoy al terminar."
+    },
+    "fr": {
+     "t": "Un rituel de fin de journée",
+     "g": "Terminer le travail ou les études par une courte routine qui prévient ton cerveau.",
+     "p": [
+      "Ferme l'ordinateur, note la tâche clé de demain et dis : c'est fini pour aujourd'hui.",
+      "Une fin nette évite que le travail déborde sur ta soirée.",
+      "Le rituel peut durer moins de cinq minutes."
+     ],
+     "q": "Comment décroches-tu actuellement du travail ou des études ?",
+     "c": "Crée un rituel de fin en trois étapes et utilise-le ce soir."
+    },
+    "it": {
+     "t": "Un rituale di chiusura",
+     "g": "Concludere lavoro o studio con una breve routine che avvisa il cervello.",
+     "p": [
+      "Chiudi il portatile, annota il compito principale di domani e di': basta per oggi.",
+      "Una fine chiara evita che il lavoro invada la serata.",
+      "Il rituale può durare meno di cinque minuti."
+     ],
+     "q": "Come stacchi oggi dal lavoro o dallo studio?",
+     "c": "Crea un rituale di chiusura in tre passi e usalo oggi a fine giornata."
+    },
+    "pt": {
+     "t": "Um ritual de encerramento",
+     "g": "Terminar o trabalho ou estudo com uma rotina curta que avisa o teu cérebro.",
+     "p": [
+      "Fecha o portátil, anota a tarefa principal de amanhã e diz: por hoje chega.",
+      "Um fim claro evita que o trabalho invada a tua noite.",
+      "O ritual pode levar menos de cinco minutos."
+     ],
+     "q": "Como desligas atualmente do trabalho ou do estudo?",
+     "c": "Cria um ritual de encerramento de três passos e usa-o hoje no fim do dia."
+    },
+    "pt_BR": {
+     "t": "Um ritual de encerramento",
+     "g": "Terminar o trabalho ou estudo com uma rotina curta que avisa o seu cérebro.",
+     "p": [
+      "Feche o notebook, anote a tarefa principal de amanhã e diga: por hoje chega.",
+      "Um fim claro evita que o trabalho invada a sua noite.",
+      "O ritual pode levar menos de cinco minutos."
+     ],
+     "q": "Como você desliga hoje do trabalho ou do estudo?",
+     "c": "Crie um ritual de encerramento de três passos e use hoje no fim do dia."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tidying for ten minutes",
+     "g": "A quick evening reset so you wake up to a calm home.",
+     "p": [
+      "Set a timer and tidy only until it rings.",
+      "Start with surfaces you see first in the morning.",
+      "A clear space tomorrow starts with ten minutes tonight."
+     ],
+     "q": "Which spot, if tidy, would make tomorrow feel lighter?",
+     "c": "Tonight, set a ten-minute timer and tidy one area."
+    },
+    "de": {
+     "t": "Zehn Minuten aufräumen",
+     "g": "Ein kurzer Abend-Reset, damit du in einem ruhigen Zuhause aufwachst.",
+     "p": [
+      "Stell einen Timer und räum nur, bis er klingelt.",
+      "Beginne mit Flächen, die du morgens zuerst siehst.",
+      "Ein freier Raum morgen beginnt mit zehn Minuten heute Abend."
+     ],
+     "q": "Welcher Platz würde den morgigen Tag leichter machen, wenn er aufgeräumt wäre?",
+     "c": "Stell heute Abend einen Zehn-Minuten-Timer und räum einen Bereich auf."
+    },
+    "es": {
+     "t": "Ordenar diez minutos",
+     "g": "Un breve reinicio nocturno para despertar en un hogar tranquilo.",
+     "p": [
+      "Pon un temporizador y ordena solo hasta que suene.",
+      "Empieza por las superficies que ves primero por la mañana.",
+      "Un espacio despejado mañana empieza con diez minutos esta noche."
+     ],
+     "q": "¿Qué rincón, si estuviera ordenado, haría más ligero tu mañana?",
+     "c": "Esta noche pon un temporizador de diez minutos y ordena una zona."
+    },
+    "fr": {
+     "t": "Ranger dix minutes",
+     "g": "Un petit reset du soir pour te réveiller dans un foyer apaisé.",
+     "p": [
+      "Lance un minuteur et range seulement jusqu'à la sonnerie.",
+      "Commence par les surfaces que tu vois en premier le matin.",
+      "Un espace dégagé demain commence par dix minutes ce soir."
+     ],
+     "q": "Quel endroit, une fois rangé, rendrait ta journée de demain plus légère ?",
+     "c": "Ce soir, lance un minuteur de dix minutes et range une zone."
+    },
+    "it": {
+     "t": "Riordinare dieci minuti",
+     "g": "Un breve reset serale per svegliarti in una casa serena.",
+     "p": [
+      "Imposta un timer e riordina solo finché suona.",
+      "Parti dalle superfici che vedi per prime al mattino.",
+      "Uno spazio libero domani comincia con dieci minuti stasera."
+     ],
+     "q": "Quale angolo, se in ordine, renderebbe più leggero il tuo domani?",
+     "c": "Stasera imposta un timer di dieci minuti e riordina una zona."
+    },
+    "pt": {
+     "t": "Arrumar dez minutos",
+     "g": "Um breve reinício noturno para acordares numa casa calma.",
+     "p": [
+      "Põe um temporizador e arruma só até tocar.",
+      "Começa pelas superfícies que vês primeiro de manhã.",
+      "Um espaço livre amanhã começa com dez minutos esta noite."
+     ],
+     "q": "Que canto, se arrumado, tornaria o teu amanhã mais leve?",
+     "c": "Esta noite põe um temporizador de dez minutos e arruma uma zona."
+    },
+    "pt_BR": {
+     "t": "Arrumar por dez minutos",
+     "g": "Um breve reinício noturno para acordar numa casa calma.",
+     "p": [
+      "Programe um timer e arrume só até tocar.",
+      "Comece pelas superfícies que você vê primeiro de manhã.",
+      "Um espaço livre amanhã começa com dez minutos esta noite."
+     ],
+     "q": "Que canto, se arrumado, deixaria seu amanhã mais leve?",
+     "c": "Esta noite programe um timer de dez minutos e arrume uma área."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Screens before bed",
+     "g": "Create a screen-free buffer before sleep for better rest.",
+     "p": [
+      "Bright screens and busy feeds keep the mind active.",
+      "Aim for thirty minutes without screens before bed if you can.",
+      "Replace it with something calm, like a book or tea."
+     ],
+     "q": "What could you do instead of scrolling before sleep?",
+     "c": "Tonight, put your phone away fifteen minutes before bed."
+    },
+    "de": {
+     "t": "Bildschirme vor dem Schlafen",
+     "g": "Eine bildschirmfreie Pufferzeit vor dem Schlaf für bessere Erholung schaffen.",
+     "p": [
+      "Helle Bildschirme und volle Feeds halten den Kopf aktiv.",
+      "Peile dreißig Minuten ohne Bildschirm vor dem Schlafen an, wenn möglich.",
+      "Ersetze sie durch etwas Ruhiges, etwa ein Buch oder Tee."
+     ],
+     "q": "Was könntest du statt Scrollen vor dem Schlafen tun?",
+     "c": "Leg heute Abend das Handy fünfzehn Minuten vor dem Schlafen weg."
+    },
+    "es": {
+     "t": "Pantallas antes de dormir",
+     "g": "Crear un margen sin pantallas antes de dormir para descansar mejor.",
+     "p": [
+      "Las pantallas brillantes y los feeds llenos mantienen la mente activa.",
+      "Intenta pasar treinta minutos sin pantallas antes de dormir si puedes.",
+      "Sustitúyelo por algo tranquilo, como un libro o una infusión."
+     ],
+     "q": "¿Qué podrías hacer en vez de deslizar antes de dormir?",
+     "c": "Esta noche guarda el móvil quince minutos antes de acostarte."
+    },
+    "fr": {
+     "t": "Les écrans avant le coucher",
+     "g": "Créer une pause sans écran avant de dormir pour mieux se reposer.",
+     "p": [
+      "Les écrans lumineux et les fils d'actualité gardent l'esprit actif.",
+      "Vise trente minutes sans écran avant le coucher si possible.",
+      "Remplace-les par du calme, comme un livre ou une tisane."
+     ],
+     "q": "Que pourrais-tu faire à la place de faire défiler avant de dormir ?",
+     "c": "Ce soir, range ton téléphone quinze minutes avant d'aller au lit."
+    },
+    "it": {
+     "t": "Schermi prima di dormire",
+     "g": "Creare una pausa senza schermi prima del sonno per riposare meglio.",
+     "p": [
+      "Schermi luminosi e feed pieni tengono la mente attiva.",
+      "Punta a trenta minuti senza schermi prima di dormire, se puoi.",
+      "Sostituiscili con qualcosa di calmo, come un libro o una tisana."
+     ],
+     "q": "Cosa potresti fare invece di scorrere prima di dormire?",
+     "c": "Stasera metti via il telefono quindici minuti prima di andare a letto."
+    },
+    "pt": {
+     "t": "Ecrãs antes de dormir",
+     "g": "Criar uma pausa sem ecrãs antes de dormir para descansares melhor.",
+     "p": [
+      "Ecrãs brilhantes e feeds cheios mantêm a mente ativa.",
+      "Tenta ficar trinta minutos sem ecrãs antes de dormir, se puderes.",
+      "Troca por algo calmo, como um livro ou um chá."
+     ],
+     "q": "O que poderias fazer em vez de deslizar antes de dormir?",
+     "c": "Esta noite guarda o telemóvel quinze minutos antes de ires para a cama."
+    },
+    "pt_BR": {
+     "t": "Telas antes de dormir",
+     "g": "Criar uma pausa sem telas antes de dormir para descansar melhor.",
+     "p": [
+      "Telas brilhantes e feeds cheios mantêm a mente ativa.",
+      "Tente ficar trinta minutos sem telas antes de dormir, se puder.",
+      "Troque por algo calmo, como um livro ou um chá."
+     ],
+     "q": "O que você poderia fazer em vez de rolar a tela antes de dormir?",
+     "c": "Esta noite guarde o celular quinze minutos antes de ir para a cama."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A relaxing wind-down",
+     "g": "Use reading, stretching or quiet music to slow down at night.",
+     "p": [
+      "Pick one or two gentle activities that feel good to you.",
+      "A dim light and a slower pace tell your body evening has come.",
+      "Repeat the same wind-down to turn it into a signal."
+     ],
+     "q": "What helps you feel relaxed in the evening?",
+     "c": "Tonight, choose one gentle wind-down activity for ten minutes."
+    },
+    "de": {
+     "t": "Sanftes Runterfahren",
+     "g": "Mit Lesen, Dehnen oder leiser Musik abends zur Ruhe kommen.",
+     "p": [
+      "Wähle ein oder zwei sanfte Tätigkeiten, die dir guttun.",
+      "Gedämpftes Licht und ein langsameres Tempo zeigen dem Körper: Abend.",
+      "Wiederhole das gleiche Runterfahren, damit es zum Signal wird."
+     ],
+     "q": "Was hilft dir, abends entspannt zu werden?",
+     "c": "Wähle heute Abend zehn Minuten lang eine sanfte Tätigkeit zum Runterfahren."
+    },
+    "es": {
+     "t": "Una relajación nocturna",
+     "g": "Usar lectura, estiramientos o música suave para bajar el ritmo por la noche.",
+     "p": [
+      "Elige una o dos actividades suaves que te sienten bien.",
+      "Una luz tenue y un ritmo lento le dicen a tu cuerpo que llegó la noche.",
+      "Repite la misma relajación para convertirla en señal."
+     ],
+     "q": "¿Qué te ayuda a sentirte relajado por la noche?",
+     "c": "Esta noche elige una actividad suave para relajarte durante diez minutos."
+    },
+    "fr": {
+     "t": "Une détente douce du soir",
+     "g": "Utiliser lecture, étirements ou musique douce pour ralentir le soir.",
+     "p": [
+      "Choisis une ou deux activités douces qui te font du bien.",
+      "Une lumière tamisée et un rythme lent disent à ton corps que le soir est là.",
+      "Répète la même détente pour qu'elle devienne un signal."
+     ],
+     "q": "Qu'est-ce qui t'aide à te détendre le soir ?",
+     "c": "Ce soir, choisis une activité douce pendant dix minutes pour ralentir."
+    },
+    "it": {
+     "t": "Un relax serale",
+     "g": "Usare lettura, stretching o musica soft per rallentare la sera.",
+     "p": [
+      "Scegli una o due attività dolci che ti fanno stare bene.",
+      "Luce soffusa e ritmo lento dicono al corpo che è arrivata la sera.",
+      "Ripeti lo stesso relax per trasformarlo in un segnale."
+     ],
+     "q": "Cosa ti aiuta a rilassarti la sera?",
+     "c": "Stasera scegli un'attività dolce per dieci minuti per rallentare."
+    },
+    "pt": {
+     "t": "Um relaxamento ao fim do dia",
+     "g": "Usar leitura, alongamentos ou música calma para abrandar à noite.",
+     "p": [
+      "Escolhe uma ou duas atividades suaves de que gostes.",
+      "Uma luz fraca e um ritmo lento dizem ao corpo que a noite chegou.",
+      "Repete o mesmo relaxamento para o tornares um sinal."
+     ],
+     "q": "O que te ajuda a sentires-te relaxado à noite?",
+     "c": "Esta noite escolhe uma atividade suave para relaxares durante dez minutos."
+    },
+    "pt_BR": {
+     "t": "Um relaxamento no fim do dia",
+     "g": "Usar leitura, alongamento ou música calma para desacelerar à noite.",
+     "p": [
+      "Escolha uma ou duas atividades suaves de que você goste.",
+      "Uma luz fraca e um ritmo lento dizem ao corpo que a noite chegou.",
+      "Repita o mesmo relaxamento para torná-lo um sinal."
+     ],
+     "q": "O que ajuda você a relaxar à noite?",
+     "c": "Esta noite escolha uma atividade suave para relaxar por dez minutos."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Regular bedtime",
+     "g": "Go to bed at a consistent time to support a steady rhythm.",
+     "p": [
+      "A steady bedtime helps your body expect sleep.",
+      "Move it earlier by ten or fifteen minutes at a time.",
+      "Persistent sleep trouble is worth discussing with a doctor."
+     ],
+     "q": "What bedtime would fit your life most days?",
+     "c": "Pick a target bedtime and set a gentle reminder for tonight."
+    },
+    "de": {
+     "t": "Regelmäßige Schlafenszeit",
+     "g": "Zu einer festen Zeit ins Bett gehen, um einen stabilen Rhythmus zu stützen.",
+     "p": [
+      "Eine feste Schlafenszeit hilft deinem Körper, Schlaf zu erwarten.",
+      "Verschiebe sie in Schritten von zehn bis fünfzehn Minuten nach vorn.",
+      "Anhaltende Schlafprobleme solltest du mit einem Arzt besprechen."
+     ],
+     "q": "Welche Schlafenszeit würde an den meisten Tagen zu deinem Leben passen?",
+     "c": "Wähle eine Ziel-Schlafenszeit und stell heute eine sanfte Erinnerung."
+    },
+    "es": {
+     "t": "Hora regular de acostarse",
+     "g": "Acostarte a una hora constante para apoyar un ritmo estable.",
+     "p": [
+      "Una hora fija de dormir ayuda a tu cuerpo a esperar el sueño.",
+      "Adelántala diez o quince minutos cada vez.",
+      "Si los problemas de sueño persisten, conviene hablar con un médico."
+     ],
+     "q": "¿Qué hora de acostarte encajaría con tu vida casi todos los días?",
+     "c": "Elige una hora objetivo de acostarte y pon un recordatorio suave para esta noche."
+    },
+    "fr": {
+     "t": "Une heure de coucher régulière",
+     "g": "Se coucher à heure fixe pour soutenir un rythme stable.",
+     "p": [
+      "Une heure de coucher stable aide ton corps à attendre le sommeil.",
+      "Avance-la de dix ou quinze minutes à la fois.",
+      "Des troubles du sommeil persistants méritent d'en parler à un médecin."
+     ],
+     "q": "Quelle heure de coucher conviendrait à ta vie la plupart des jours ?",
+     "c": "Choisis une heure de coucher cible et mets un rappel doux pour ce soir."
+    },
+    "it": {
+     "t": "Un orario regolare per andare a letto",
+     "g": "Andare a letto a un'ora costante per sostenere un ritmo stabile.",
+     "p": [
+      "Un orario fisso aiuta il corpo ad aspettarsi il sonno.",
+      "Anticipalo di dieci o quindici minuti alla volta.",
+      "Se i problemi di sonno persistono, conviene parlarne con un medico."
+     ],
+     "q": "Quale orario per andare a letto si adatterebbe alla tua vita quasi ogni giorno?",
+     "c": "Scegli un orario obiettivo e imposta un promemoria gentile per stasera."
+    },
+    "pt": {
+     "t": "Hora regular de deitar",
+     "g": "Deitar-te a uma hora constante para apoiar um ritmo estável.",
+     "p": [
+      "Uma hora fixa de deitar ajuda o corpo a esperar o sono.",
+      "Adianta-a dez ou quinze minutos de cada vez.",
+      "Se os problemas de sono persistirem, vale a pena falar com um médico."
+     ],
+     "q": "Que hora de deitar se ajustaria à tua vida na maioria dos dias?",
+     "c": "Escolhe uma hora-alvo de deitar e põe um lembrete suave para esta noite."
+    },
+    "pt_BR": {
+     "t": "Horário regular de dormir",
+     "g": "Ir para a cama num horário constante para apoiar um ritmo estável.",
+     "p": [
+      "Um horário fixo de dormir ajuda o corpo a esperar o sono.",
+      "Adiante-o dez ou quinze minutos de cada vez.",
+      "Se os problemas de sono persistirem, vale conversar com um médico."
+     ],
+     "q": "Que horário de dormir caberia na sua vida na maioria dos dias?",
+     "c": "Escolha um horário-alvo de dormir e ponha um lembrete suave para esta noite."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Preparing tomorrow tonight",
+     "g": "Get clothes, bag and list ready so mornings run smoothly.",
+     "p": [
+      "Five minutes of prep tonight removes morning decisions.",
+      "Lay out clothes, pack your bag, write tomorrow's top three.",
+      "Place keys and essentials by the door."
+     ],
+     "q": "What always slows down your morning that you could prep tonight?",
+     "c": "Tonight, prepare three things for tomorrow: clothes, bag and a list."
+    },
+    "de": {
+     "t": "Morgen schon heute Abend vorbereiten",
+     "g": "Kleidung, Tasche und Liste bereitlegen, damit der Morgen glatt läuft.",
+     "p": [
+      "Fünf Minuten Vorbereitung heute Abend nehmen dir Morgenentscheidungen ab.",
+      "Leg Kleidung bereit, pack die Tasche, schreibe die Top Drei für morgen auf.",
+      "Lege Schlüssel und Wichtiges an die Tür."
+     ],
+     "q": "Was bremst deinen Morgen immer, das du heute Abend vorbereiten könntest?",
+     "c": "Bereite heute Abend drei Dinge vor: Kleidung, Tasche und eine Liste."
+    },
+    "es": {
+     "t": "Prepara mañana esta noche",
+     "g": "Dejar lista la ropa, la bolsa y la lista para que las mañanas fluyan.",
+     "p": [
+      "Cinco minutos de preparación esta noche quitan decisiones por la mañana.",
+      "Deja la ropa lista, prepara la bolsa, anota las tres tareas de mañana.",
+      "Pon las llaves y lo esencial junto a la puerta."
+     ],
+     "q": "¿Qué siempre frena tu mañana y podrías preparar esta noche?",
+     "c": "Esta noche prepara tres cosas para mañana: ropa, bolsa y una lista."
+    },
+    "fr": {
+     "t": "Préparer demain ce soir",
+     "g": "Préparer vêtements, sac et liste pour que les matins se passent bien.",
+     "p": [
+      "Cinq minutes de préparation ce soir suppriment des décisions le matin.",
+      "Sors tes vêtements, prépare ton sac, note tes trois priorités de demain.",
+      "Place clés et essentiels près de la porte."
+     ],
+     "q": "Qu'est-ce qui ralentit toujours ton matin et que tu pourrais préparer ce soir ?",
+     "c": "Ce soir, prépare trois choses pour demain : vêtements, sac et liste."
+    },
+    "it": {
+     "t": "Preparare domani stasera",
+     "g": "Preparare vestiti, borsa e lista perché le mattine scorrano lisce.",
+     "p": [
+      "Cinque minuti di preparazione stasera tolgono decisioni al mattino.",
+      "Prepara i vestiti, la borsa, annota le tre cose di domani.",
+      "Metti chiavi e cose essenziali vicino alla porta."
+     ],
+     "q": "Cosa rallenta sempre la tua mattina e potresti preparare stasera?",
+     "c": "Stasera prepara tre cose per domani: vestiti, borsa e una lista."
+    },
+    "pt": {
+     "t": "Preparar amanhã esta noite",
+     "g": "Deixar a roupa, a mala e a lista prontas para as manhãs correrem bem.",
+     "p": [
+      "Cinco minutos de preparação esta noite tiram decisões à manhã.",
+      "Deixa a roupa pronta, faz a mala, escreve as três tarefas de amanhã.",
+      "Põe as chaves e o essencial junto à porta."
+     ],
+     "q": "O que trava sempre a tua manhã e podias preparar esta noite?",
+     "c": "Esta noite prepara três coisas para amanhã: roupa, mala e uma lista."
+    },
+    "pt_BR": {
+     "t": "Preparar amanhã hoje à noite",
+     "g": "Deixar roupa, bolsa e lista prontas para as manhãs fluírem bem.",
+     "p": [
+      "Cinco minutos de preparo esta noite tiram decisões da manhã.",
+      "Separe a roupa, arrume a bolsa, anote as três tarefas de amanhã.",
+      "Deixe as chaves e o essencial perto da porta."
+     ],
+     "q": "O que sempre atrasa sua manhã e você poderia preparar à noite?",
+     "c": "Esta noite prepare três coisas para amanhã: roupa, bolsa e uma lista."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gratitude at night",
+     "g": "Write down three good things from the day.",
+     "p": [
+      "Even on hard days, small good things exist: a laugh, a meal, a kind word.",
+      "Noticing them trains your mind to look for the positive.",
+      "Keep it short and honest, never forced."
+     ],
+     "q": "What is one good thing that happened to you today?",
+     "c": "Tonight, write three good things from today in a notebook or notes app."
+    },
+    "de": {
+     "t": "Dankbarkeit am Abend",
+     "g": "Drei gute Dinge des Tages aufschreiben.",
+     "p": [
+      "Auch an schweren Tagen gibt es Kleines: ein Lachen, eine Mahlzeit, ein freundliches Wort.",
+      "Sie zu bemerken trainiert deinen Blick für das Positive.",
+      "Halte es kurz und ehrlich, nie erzwungen."
+     ],
+     "q": "Was Gutes ist dir heute passiert?",
+     "c": "Schreibe heute Abend drei gute Dinge des Tages in ein Heft oder eine Notiz-App."
+    },
+    "es": {
+     "t": "Gratitud por la noche",
+     "g": "Anotar tres cosas buenas del día.",
+     "p": [
+      "Incluso en días duros hay cosas pequeñas: una risa, una comida, una palabra amable.",
+      "Notarlas entrena tu mente para buscar lo positivo.",
+      "Que sea breve y sincero, nunca forzado."
+     ],
+     "q": "¿Qué cosa buena te pasó hoy?",
+     "c": "Esta noche escribe tres cosas buenas de hoy en una libreta o app de notas."
+    },
+    "fr": {
+     "t": "Gratitude du soir",
+     "g": "Noter trois bonnes choses de la journée.",
+     "p": [
+      "Même les jours difficiles, il y a de petits bonheurs : un rire, un repas, un mot gentil.",
+      "Les remarquer entraîne ton esprit à chercher le positif.",
+      "Reste bref et sincère, jamais forcé."
+     ],
+     "q": "Quelle bonne chose t'est arrivée aujourd'hui ?",
+     "c": "Ce soir, écris trois bonnes choses du jour dans un carnet ou une appli de notes."
+    },
+    "it": {
+     "t": "Gratitudine serale",
+     "g": "Scrivere tre cose belle della giornata.",
+     "p": [
+      "Anche nei giorni duri ci sono piccole cose: una risata, un pasto, una parola gentile.",
+      "Notarle allena la mente a cercare il positivo.",
+      "Mantieni breve e sincero, mai forzato."
+     ],
+     "q": "Qual è una cosa bella che ti è successa oggi?",
+     "c": "Stasera scrivi tre cose belle di oggi su un quaderno o un'app di note."
+    },
+    "pt": {
+     "t": "Gratidão à noite",
+     "g": "Escrever três coisas boas do dia.",
+     "p": [
+      "Mesmo em dias difíceis há pequenas coisas: um riso, uma refeição, uma palavra gentil.",
+      "Reparar nelas treina a mente para procurar o positivo.",
+      "Mantém breve e sincero, nunca forçado."
+     ],
+     "q": "Que coisa boa te aconteceu hoje?",
+     "c": "Esta noite escreve três coisas boas de hoje num caderno ou app de notas."
+    },
+    "pt_BR": {
+     "t": "Gratidão à noite",
+     "g": "Escrever três coisas boas do dia.",
+     "p": [
+      "Mesmo em dias difíceis há pequenas coisas: uma risada, uma refeição, uma palavra gentil.",
+      "Reparar nelas treina a mente para procurar o positivo.",
+      "Mantenha curto e sincero, nunca forçado."
+     ],
+     "q": "Que coisa boa aconteceu com você hoje?",
+     "c": "Esta noite escreva três coisas boas de hoje num caderno ou app de notas."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Evening reflection",
+     "g": "Ask what went well today and what you would do differently.",
+     "p": [
+      "Two questions are enough: what went well, and what to tweak.",
+      "Reflect with curiosity, not criticism.",
+      "One small lesson a day adds up to a lot over time."
+     ],
+     "q": "What are you most glad you did today?",
+     "c": "Tonight, answer both questions in one or two sentences each."
+    },
+    "de": {
+     "t": "Abendliche Reflexion",
+     "g": "Fragen, was heute gut lief und was du anders machen würdest.",
+     "p": [
+      "Zwei Fragen genügen: Was lief gut, und was anpassen?",
+      "Reflektiere mit Neugier statt Kritik.",
+      "Eine kleine Lehre am Tag summiert sich mit der Zeit enorm."
+     ],
+     "q": "Worüber bist du heute am meisten froh, es getan zu haben?",
+     "c": "Beantworte heute Abend beide Fragen in ein bis zwei Sätzen."
+    },
+    "es": {
+     "t": "Reflexión nocturna",
+     "g": "Preguntarte qué salió bien hoy y qué harías distinto.",
+     "p": [
+      "Dos preguntas bastan: qué salió bien y qué ajustar.",
+      "Reflexiona con curiosidad, no con crítica.",
+      "Una pequeña lección al día suma mucho con el tiempo."
+     ],
+     "q": "¿De qué te alegras más de haber hecho hoy?",
+     "c": "Esta noche responde ambas preguntas en una o dos frases."
+    },
+    "fr": {
+     "t": "Réflexion du soir",
+     "g": "Te demander ce qui s'est bien passé et ce que tu ferais autrement.",
+     "p": [
+      "Deux questions suffisent : ce qui a marché et ce qu'on ajuste.",
+      "Réfléchis avec curiosité, pas avec critique.",
+      "Une petite leçon par jour finit par peser beaucoup."
+     ],
+     "q": "De quoi es-tu le plus content aujourd'hui ?",
+     "c": "Ce soir, réponds aux deux questions en une ou deux phrases."
+    },
+    "it": {
+     "t": "Riflessione serale",
+     "g": "Chiederti cosa è andato bene oggi e cosa faresti diversamente.",
+     "p": [
+      "Bastano due domande: cosa è andato bene e cosa ritoccare.",
+      "Rifletti con curiosità, non con critica.",
+      "Una piccola lezione al giorno col tempo vale moltissimo."
+     ],
+     "q": "Di cosa sei più contento di aver fatto oggi?",
+     "c": "Stasera rispondi a entrambe le domande in una o due frasi."
+    },
+    "pt": {
+     "t": "Reflexão noturna",
+     "g": "Perguntares o que correu bem hoje e o que farias de outra forma.",
+     "p": [
+      "Duas perguntas bastam: o que correu bem e o que ajustar.",
+      "Reflete com curiosidade, não com crítica.",
+      "Uma pequena lição por dia soma muito com o tempo."
+     ],
+     "q": "De que ficas mais contente por teres feito hoje?",
+     "c": "Esta noite responde às duas perguntas em uma ou duas frases."
+    },
+    "pt_BR": {
+     "t": "Reflexão noturna",
+     "g": "Perguntar o que deu certo hoje e o que você faria diferente.",
+     "p": [
+      "Duas perguntas bastam: o que deu certo e o que ajustar.",
+      "Reflita com curiosidade, não com crítica.",
+      "Uma pequena lição por dia soma muito com o tempo."
+     ],
+     "q": "De que você mais se alegra por ter feito hoje?",
+     "c": "Esta noite responda às duas perguntas em uma ou duas frases."
+    }
+   }
+  }
+ ]
+}

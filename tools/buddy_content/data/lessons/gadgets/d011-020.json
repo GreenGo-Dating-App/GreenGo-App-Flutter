@@ -1,0 +1,835 @@
+{
+ "topic": "gadgets",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The processor: the brain",
+     "g": "The chip that runs apps and the system, measured by speed, cores and efficiency.",
+     "p": [
+      "The processor follows instructions from apps and the system, billions of times a second.",
+      "Cores are like workers: more cores can share work, but software must use them well.",
+      "Efficiency matters too: a cool, frugal chip means longer battery life."
+     ],
+     "q": "When does your phone feel slow, and what are you doing at that moment?",
+     "c": "Open a battery or device-info screen and find your processor's name."
+    },
+    "de": {
+     "t": "Der Prozessor: das Gehirn",
+     "g": "Der Chip, der Apps und System ausführt, gemessen an Tempo, Kernen und Effizienz.",
+     "p": [
+      "Der Prozessor folgt den Anweisungen von Apps und System, Milliarden Mal pro Sekunde.",
+      "Kerne sind wie Arbeiter: mehr Kerne teilen Arbeit, doch Software muss sie gut nutzen.",
+      "Effizienz zählt auch: ein kühler, sparsamer Chip bedeutet längere Akkulaufzeit."
+     ],
+     "q": "Wann fühlt sich dein Handy langsam an, und was tust du dann gerade?",
+     "c": "Öffne einen Geräteinfo-Bildschirm und finde den Namen deines Prozessors."
+    },
+    "es": {
+     "t": "El procesador: el cerebro",
+     "g": "El chip que ejecuta apps y sistema, medido por velocidad, núcleos y eficiencia.",
+     "p": [
+      "El procesador sigue las instrucciones de apps y sistema, miles de millones de veces por segundo.",
+      "Los núcleos son como trabajadores: más núcleos reparten tareas si el software los aprovecha.",
+      "La eficiencia también cuenta: un chip fresco y ahorrador alarga la batería."
+     ],
+     "q": "¿Cuándo notas lento tu móvil y qué estás haciendo en ese momento?",
+     "c": "Abre la información del dispositivo y localiza el nombre de tu procesador."
+    },
+    "fr": {
+     "t": "Le processeur : le cerveau",
+     "g": "La puce qui exécute applis et système, mesurée en vitesse, cœurs et efficacité.",
+     "p": [
+      "Le processeur suit les instructions des applis et du système, des milliards de fois par seconde.",
+      "Les cœurs sont comme des ouvriers : plus de cœurs partagent le travail si le logiciel les exploite.",
+      "L'efficacité compte aussi : une puce fraîche et sobre prolonge l'autonomie."
+     ],
+     "q": "Quand ton téléphone te semble-t-il lent, et que fais-tu à ce moment ?",
+     "c": "Ouvre les infos de l'appareil et trouve le nom de ton processeur."
+    },
+    "it": {
+     "t": "Il processore: il cervello",
+     "g": "Il chip che esegue app e sistema, misurato in velocità, core ed efficienza.",
+     "p": [
+      "Il processore segue le istruzioni di app e sistema, miliardi di volte al secondo.",
+      "I core sono come operai: più core dividono il lavoro se il software li sfrutta.",
+      "Conta anche l'efficienza: un chip fresco e parsimonioso allunga la batteria."
+     ],
+     "q": "Quando il telefono ti sembra lento e cosa stai facendo in quel momento?",
+     "c": "Apri le info del dispositivo e trova il nome del tuo processore."
+    },
+    "pt": {
+     "t": "O processador: o cérebro",
+     "g": "O chip que executa apps e sistema, medido em velocidade, núcleos e eficiência.",
+     "p": [
+      "O processador segue as instruções das apps e do sistema, milhares de milhões de vezes por segundo.",
+      "Os núcleos são como operários: mais núcleos dividem o trabalho se o software os aproveitar.",
+      "A eficiência também conta: um chip fresco e poupado prolonga a bateria."
+     ],
+     "q": "Quando é que o teu telemóvel te parece lento e o que estás a fazer nesse momento?",
+     "c": "Abre a informação do dispositivo e encontra o nome do teu processador."
+    },
+    "pt_BR": {
+     "t": "O processador: o cérebro",
+     "g": "O chip que executa apps e sistema, medido em velocidade, núcleos e eficiência.",
+     "p": [
+      "O processador segue as instruções dos apps e do sistema, bilhões de vezes por segundo.",
+      "Os núcleos são como operários: mais núcleos dividem o trabalho se o software os aproveitar.",
+      "A eficiência também conta: um chip frio e econômico prolonga a bateria."
+     ],
+     "q": "Quando o seu celular parece lento e o que você está fazendo nessa hora?",
+     "c": "Abra as informações do aparelho e ache o nome do seu processador."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Memory versus storage",
+     "g": "RAM is short-term working memory, storage keeps your photos and apps long term.",
+     "p": [
+      "RAM is fast workspace for what is open now; it empties when the device restarts.",
+      "Storage keeps photos, apps and files even when the device is off.",
+      "Think of RAM as a desk and storage as a filing cabinet: a bigger desk holds more open work."
+     ],
+     "q": "If your phone slows down, is it more likely RAM or storage? Why?",
+     "c": "Find your phone's storage screen and note how much is used and free."
+    },
+    "de": {
+     "t": "Arbeitsspeicher oder Speicher",
+     "g": "RAM ist das Kurzzeitgedächtnis, der Speicher bewahrt Fotos und Apps dauerhaft auf.",
+     "p": [
+      "RAM ist schneller Arbeitsplatz für das, was gerade offen ist, und leert sich beim Neustart.",
+      "Der Speicher bewahrt Fotos, Apps und Dateien auch bei ausgeschaltetem Gerät.",
+      "RAM ist der Schreibtisch, Speicher der Aktenschrank: ein größerer Tisch fasst mehr offene Arbeit."
+     ],
+     "q": "Wird dein Handy eher wegen RAM oder Speicher langsam? Warum?",
+     "c": "Finde die Speicheranzeige deines Handys und notiere belegt und frei."
+    },
+    "es": {
+     "t": "Memoria frente a almacenamiento",
+     "g": "La RAM es memoria de trabajo a corto plazo; el almacenamiento guarda fotos y apps.",
+     "p": [
+      "La RAM es un espacio rápido para lo abierto ahora y se vacía al reiniciar.",
+      "El almacenamiento guarda fotos, apps y archivos aunque el aparato esté apagado.",
+      "Piensa en la RAM como un escritorio y el almacenamiento como un archivador: más escritorio, más trabajo abierto."
+     ],
+     "q": "Si tu móvil va lento, ¿es más probable la RAM o el almacenamiento? ¿Por qué?",
+     "c": "Busca la pantalla de almacenamiento de tu móvil y anota lo usado y lo libre."
+    },
+    "fr": {
+     "t": "Mémoire et stockage",
+     "g": "La RAM est la mémoire de travail à court terme ; le stockage garde photos et applis.",
+     "p": [
+      "La RAM est un espace rapide pour ce qui est ouvert et se vide au redémarrage.",
+      "Le stockage conserve photos, applis et fichiers même appareil éteint.",
+      "La RAM est le bureau, le stockage est le classeur : un bureau plus grand accueille plus de travail."
+     ],
+     "q": "Si ton téléphone ralentit, est-ce plutôt la RAM ou le stockage ? Pourquoi ?",
+     "c": "Trouve l'écran de stockage de ton téléphone et note l'espace utilisé et libre."
+    },
+    "it": {
+     "t": "Memoria e archiviazione",
+     "g": "La RAM è la memoria di lavoro a breve termine, l'archiviazione conserva foto e app.",
+     "p": [
+      "La RAM è uno spazio veloce per ciò che è aperto ora e si svuota al riavvio.",
+      "L'archiviazione conserva foto, app e file anche a dispositivo spento.",
+      "La RAM è la scrivania, l'archiviazione lo schedario: più scrivania, più lavoro aperto."
+     ],
+     "q": "Se il telefono rallenta, è più probabile la RAM o l'archiviazione? Perché?",
+     "c": "Trova la schermata dell'archiviazione del telefono e annota spazio usato e libero."
+    },
+    "pt": {
+     "t": "Memória versus armazenamento",
+     "g": "A RAM é a memória de trabalho de curto prazo; o armazenamento guarda fotos e apps.",
+     "p": [
+      "A RAM é um espaço rápido para o que está aberto agora e esvazia-se ao reiniciar.",
+      "O armazenamento guarda fotos, apps e ficheiros mesmo com o aparelho desligado.",
+      "Pensa na RAM como uma secretária e no armazenamento como um arquivo: mais secretária, mais trabalho aberto."
+     ],
+     "q": "Se o teu telemóvel abranda, é mais provável a RAM ou o armazenamento? Porquê?",
+     "c": "Encontra o ecrã de armazenamento do telemóvel e anota o usado e o livre."
+    },
+    "pt_BR": {
+     "t": "Memória versus armazenamento",
+     "g": "A RAM é a memória de trabalho de curto prazo; o armazenamento guarda fotos e apps.",
+     "p": [
+      "A RAM é um espaço rápido para o que está aberto agora e esvazia ao reiniciar.",
+      "O armazenamento guarda fotos, apps e arquivos mesmo com o aparelho desligado.",
+      "Pense na RAM como uma mesa e no armazenamento como um arquivo: mais mesa, mais trabalho aberto."
+     ],
+     "q": "Se o seu celular fica lento, é mais provável a RAM ou o armazenamento? Por quê?",
+     "c": "Ache a tela de armazenamento do celular e anote o usado e o livre."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gigabytes in everyday terms",
+     "g": "Roughly how many photos, songs, apps or videos fit in a given amount of storage.",
+     "p": [
+      "A byte is tiny; a gigabyte is about a billion of them, a handy unit for storage.",
+      "A phone photo is a few megabytes, so one gigabyte holds hundreds of photos.",
+      "Video is hungry: minutes of high-quality footage can take a whole gigabyte."
+     ],
+     "q": "What eats most storage on your phone: photos, videos, apps or messages?",
+     "c": "Check your storage screen and see which category is the biggest."
+    },
+    "de": {
+     "t": "Gigabytes im Alltag",
+     "g": "Grob, wie viele Fotos, Songs, Apps oder Videos in eine Speichergröße passen.",
+     "p": [
+      "Ein Byte ist winzig; ein Gigabyte sind rund eine Milliarde davon, praktisch für Speicher.",
+      "Ein Handyfoto hat einige Megabyte, in ein Gigabyte passen also hunderte Fotos.",
+      "Video ist hungrig: Minuten hochwertiges Material können ein ganzes Gigabyte brauchen."
+     ],
+     "q": "Was frisst bei dir am meisten Speicher: Fotos, Videos, Apps oder Nachrichten?",
+     "c": "Sieh in der Speicheranzeige nach, welche Kategorie die größte ist."
+    },
+    "es": {
+     "t": "Gigabytes en la vida real",
+     "g": "Cuántas fotos, canciones, apps o vídeos caben, más o menos, en cierto almacenamiento.",
+     "p": [
+      "Un byte es diminuto; un gigabyte son unos mil millones, unidad práctica para almacenar.",
+      "Una foto de móvil pesa unos megabytes, así que un gigabyte guarda cientos de fotos.",
+      "El vídeo es voraz: unos minutos en alta calidad pueden ocupar un gigabyte entero."
+     ],
+     "q": "¿Qué ocupa más en tu móvil: fotos, vídeos, apps o mensajes?",
+     "c": "Mira la pantalla de almacenamiento y descubre qué categoría es la mayor."
+    },
+    "fr": {
+     "t": "Les gigaoctets au quotidien",
+     "g": "Combien de photos, morceaux, applis ou vidéos tiennent à peu près dans un espace donné.",
+     "p": [
+      "Un octet est minuscule ; un gigaoctet en vaut environ un milliard, unité pratique du stockage.",
+      "Une photo de téléphone pèse quelques mégaoctets : un gigaoctet en contient des centaines.",
+      "La vidéo est gourmande : quelques minutes en haute qualité peuvent prendre un gigaoctet."
+     ],
+     "q": "Qu'est-ce qui occupe le plus de place sur ton téléphone : photos, vidéos, applis ou messages ?",
+     "c": "Consulte l'écran de stockage et vois quelle catégorie est la plus grosse."
+    },
+    "it": {
+     "t": "I gigabyte nella vita reale",
+     "g": "Quante foto, canzoni, app o video entrano più o meno in una certa memoria.",
+     "p": [
+      "Un byte è minuscolo; un gigabyte ne vale circa un miliardo, unità pratica per l'archiviazione.",
+      "Una foto da telefono pesa qualche megabyte, quindi un gigabyte ne contiene centinaia.",
+      "Il video è vorace: pochi minuti in alta qualità possono occupare un intero gigabyte."
+     ],
+     "q": "Cosa occupa più spazio sul tuo telefono: foto, video, app o messaggi?",
+     "c": "Guarda la schermata dell'archiviazione e scopri quale categoria è la più grande."
+    },
+    "pt": {
+     "t": "Gigabytes no dia a dia",
+     "g": "Quantas fotos, músicas, apps ou vídeos cabem, mais ou menos, num certo armazenamento.",
+     "p": [
+      "Um byte é minúsculo; um gigabyte são cerca de mil milhões, unidade prática de armazenamento.",
+      "Uma foto de telemóvel pesa uns megabytes, por isso um gigabyte guarda centenas de fotos.",
+      "O vídeo é guloso: uns minutos em alta qualidade podem ocupar um gigabyte inteiro."
+     ],
+     "q": "O que ocupa mais espaço no teu telemóvel: fotos, vídeos, apps ou mensagens?",
+     "c": "Vê o ecrã de armazenamento e descobre qual é a categoria maior."
+    },
+    "pt_BR": {
+     "t": "Gigabytes no dia a dia",
+     "g": "Quantas fotos, músicas, apps ou vídeos cabem, mais ou menos, em certo armazenamento.",
+     "p": [
+      "Um byte é minúsculo; um gigabyte são cerca de um bilhão deles, unidade prática de armazenamento.",
+      "Uma foto de celular pesa uns megabytes, então um gigabyte guarda centenas de fotos.",
+      "O vídeo é guloso: uns minutos em alta qualidade podem ocupar um gigabyte inteiro."
+     ],
+     "q": "O que ocupa mais espaço no seu celular: fotos, vídeos, apps ou mensagens?",
+     "c": "Veja a tela de armazenamento e descubra qual categoria é a maior."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The battery basics",
+     "g": "Phones use lithium-ion batteries; capacity is measured in milliamp-hours.",
+     "p": [
+      "Most gadgets use lithium-ion batteries, which store a lot of energy in a small space.",
+      "Capacity is shown in milliamp-hours (mAh); a higher number usually means longer use.",
+      "Batteries age with every charge cycle, slowly holding less than when new."
+     ],
+     "q": "How long does your phone battery last on a normal day?",
+     "c": "Look up your phone battery health screen if it has one and note what it says."
+    },
+    "de": {
+     "t": "Akku-Grundlagen",
+     "g": "Handys nutzen Lithium-Ionen-Akkus; die Kapazität wird in Milliamperestunden gemessen.",
+     "p": [
+      "Die meisten Gadgets nutzen Lithium-Ionen-Akkus, die viel Energie auf kleinem Raum speichern.",
+      "Die Kapazität steht in Milliamperestunden (mAh); eine höhere Zahl heißt meist längere Nutzung.",
+      "Akkus altern mit jedem Ladezyklus und fassen langsam weniger als neu."
+     ],
+     "q": "Wie lange hält dein Handyakku an einem normalen Tag?",
+     "c": "Sieh nach, ob dein Handy eine Akkugesundheit anzeigt, und notiere den Wert."
+    },
+    "es": {
+     "t": "Lo básico de la batería",
+     "g": "Los móviles usan baterías de iones de litio; la capacidad se mide en miliamperios hora.",
+     "p": [
+      "La mayoría de gadgets usan baterías de iones de litio, que guardan mucha energía en poco espacio.",
+      "La capacidad se indica en miliamperios hora (mAh); más cifra suele significar más uso.",
+      "Las baterías envejecen con cada ciclo de carga y guardan poco a poco menos que nuevas."
+     ],
+     "q": "¿Cuánto te dura la batería del móvil en un día normal?",
+     "c": "Mira si tu móvil tiene pantalla de salud de la batería y anota lo que indica."
+    },
+    "fr": {
+     "t": "Les bases de la batterie",
+     "g": "Les téléphones utilisent des batteries lithium-ion ; la capacité se mesure en milliampères-heures.",
+     "p": [
+      "La plupart des gadgets ont des batteries lithium-ion, qui stockent beaucoup d'énergie dans peu de place.",
+      "La capacité s'indique en milliampères-heures (mAh) ; un chiffre plus haut dure souvent plus longtemps.",
+      "Les batteries vieillissent à chaque cycle de charge et retiennent peu à peu moins qu'au départ."
+     ],
+     "q": "Combien de temps ta batterie tient-elle un jour normal ?",
+     "c": "Regarde si ton téléphone affiche l'état de la batterie et note ce qu'il indique."
+    },
+    "it": {
+     "t": "Le basi della batteria",
+     "g": "I telefoni usano batterie agli ioni di litio; la capacità si misura in milliampere-ora.",
+     "p": [
+      "La maggior parte dei gadget usa batterie agli ioni di litio, che accumulano molta energia in poco spazio.",
+      "La capacità si indica in milliampere-ora (mAh); un numero più alto di solito dura di più.",
+      "Le batterie invecchiano a ogni ciclo di ricarica e col tempo trattengono meno di quando erano nuove."
+     ],
+     "q": "Quanto dura la batteria del tuo telefono in una giornata normale?",
+     "c": "Controlla se il telefono ha la schermata di salute della batteria e annota cosa dice."
+    },
+    "pt": {
+     "t": "O básico da bateria",
+     "g": "Os telemóveis usam baterias de iões de lítio; a capacidade mede-se em miliamperes-hora.",
+     "p": [
+      "A maioria dos gadgets usa baterias de iões de lítio, que guardam muita energia em pouco espaço.",
+      "A capacidade indica-se em miliamperes-hora (mAh); um número maior costuma durar mais.",
+      "As baterias envelhecem a cada ciclo de carga e guardam, aos poucos, menos do que novas."
+     ],
+     "q": "Quanto tempo dura a bateria do teu telemóvel num dia normal?",
+     "c": "Vê se o teu telemóvel tem um ecrã de saúde da bateria e anota o que indica."
+    },
+    "pt_BR": {
+     "t": "O básico da bateria",
+     "g": "Os celulares usam baterias de íons de lítio; a capacidade se mede em miliamperes-hora.",
+     "p": [
+      "A maioria dos gadgets usa baterias de íons de lítio, que guardam muita energia em pouco espaço.",
+      "A capacidade vem em miliamperes-hora (mAh); um número maior costuma durar mais.",
+      "As baterias envelhecem a cada ciclo de carga e guardam, aos poucos, menos do que novas."
+     ],
+     "q": "Quanto tempo a bateria do seu celular dura num dia normal?",
+     "c": "Veja se o seu celular tem tela de saúde da bateria e anote o que ela indica."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Screens: the window to your gadget",
+     "g": "Size, sharpness and brightness, and why the screen uses the most battery.",
+     "p": [
+      "Screen size is measured diagonally in inches; sharpness depends on how many pixels fit.",
+      "Brightness is measured in nits; brighter is easier outdoors but drinks more power.",
+      "The screen is usually the biggest battery user, so lowering brightness helps most."
+     ],
+     "q": "Where do you use your phone most: indoors, outdoors, in bed?",
+     "c": "Set brightness a notch lower today and see if you even notice."
+    },
+    "de": {
+     "t": "Bildschirme: das Fenster zum Gerät",
+     "g": "Größe, Schärfe und Helligkeit, und warum der Bildschirm am meisten Akku braucht.",
+     "p": [
+      "Die Bildschirmgröße misst man diagonal in Zoll; die Schärfe hängt von der Pixelzahl ab.",
+      "Helligkeit misst man in Nits; heller ist draußen besser, braucht aber mehr Strom.",
+      "Der Bildschirm ist meist der größte Akkuverbraucher, weniger Helligkeit hilft am meisten."
+     ],
+     "q": "Wo nutzt du dein Handy am meisten: drinnen, draußen, im Bett?",
+     "c": "Stell die Helligkeit heute eine Stufe niedriger und merke, ob es dir auffällt."
+    },
+    "es": {
+     "t": "Pantallas: la ventana de tu gadget",
+     "g": "Tamaño, nitidez y brillo, y por qué la pantalla gasta más batería.",
+     "p": [
+      "El tamaño se mide en diagonal, en pulgadas; la nitidez depende de cuántos píxeles caben.",
+      "El brillo se mide en nits; más brillo ayuda al aire libre pero consume más energía.",
+      "La pantalla suele ser lo que más batería gasta, así que bajar el brillo ayuda mucho."
+     ],
+     "q": "¿Dónde usas más el móvil: en casa, en la calle, en la cama?",
+     "c": "Baja hoy el brillo un punto y comprueba si lo notas."
+    },
+    "fr": {
+     "t": "Les écrans : la fenêtre de ton gadget",
+     "g": "Taille, netteté et luminosité, et pourquoi l'écran consomme le plus de batterie.",
+     "p": [
+      "La taille se mesure en diagonale, en pouces ; la netteté dépend du nombre de pixels.",
+      "La luminosité se mesure en nits ; plus lumineux aide dehors mais consomme davantage.",
+      "L'écran est souvent le plus gros consommateur, donc baisser la luminosité aide beaucoup."
+     ],
+     "q": "Où utilises-tu le plus ton téléphone : à l'intérieur, dehors, au lit ?",
+     "c": "Baisse la luminosité d'un cran aujourd'hui et vois si tu le remarques."
+    },
+    "it": {
+     "t": "Gli schermi: la finestra del gadget",
+     "g": "Dimensione, nitidezza e luminosità, e perché lo schermo consuma più batteria.",
+     "p": [
+      "La dimensione si misura in diagonale, in pollici; la nitidezza dipende da quanti pixel ci stanno.",
+      "La luminosità si misura in nit; più luce aiuta all'aperto ma consuma più energia.",
+      "Lo schermo di solito consuma più batteria, quindi abbassare la luminosità aiuta molto."
+     ],
+     "q": "Dove usi di più il telefono: in casa, all'aperto, a letto?",
+     "c": "Abbassa oggi la luminosità di un livello e vedi se te ne accorgi."
+    },
+    "pt": {
+     "t": "Ecrãs: a janela do teu gadget",
+     "g": "Tamanho, nitidez e brilho, e porque o ecrã gasta mais bateria.",
+     "p": [
+      "O tamanho mede-se na diagonal, em polegadas; a nitidez depende de quantos píxeis cabem.",
+      "O brilho mede-se em nits; mais brilho ajuda ao ar livre mas gasta mais energia.",
+      "O ecrã costuma ser o maior consumidor de bateria, por isso baixar o brilho ajuda muito."
+     ],
+     "q": "Onde usas mais o telemóvel: em casa, na rua, na cama?",
+     "c": "Baixa hoje o brilho um nível e vê se notas a diferença."
+    },
+    "pt_BR": {
+     "t": "Telas: a janela do seu gadget",
+     "g": "Tamanho, nitidez e brilho, e por que a tela gasta mais bateria.",
+     "p": [
+      "O tamanho se mede na diagonal, em polegadas; a nitidez depende de quantos pixels cabem.",
+      "O brilho se mede em nits; mais brilho ajuda ao ar livre mas gasta mais energia.",
+      "A tela costuma ser a maior consumidora de bateria, então baixar o brilho ajuda muito."
+     ],
+     "q": "Onde você mais usa o celular: em casa, na rua, na cama?",
+     "c": "Baixe hoje o brilho um nível e veja se percebe a diferença."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Touchscreens explained",
+     "g": "Most phone screens sense the tiny electrical charge of your finger.",
+     "p": [
+      "Capacitive screens have a grid of tiny electric fields across the glass.",
+      "Your finger conducts electricity and disturbs the field where it touches.",
+      "That is why ordinary gloves often fail, and special touch gloves or styluses work."
+     ],
+     "q": "Do you ever have trouble with your touchscreen, for example with wet fingers?",
+     "c": "Try tapping your screen with a dry fingertip, then a slightly damp one, and compare."
+    },
+    "de": {
+     "t": "Touchscreens erklärt",
+     "g": "Die meisten Handybildschirme spüren die winzige elektrische Ladung deines Fingers.",
+     "p": [
+      "Kapazitive Bildschirme haben ein Gitter winziger elektrischer Felder im Glas.",
+      "Dein Finger leitet Strom und stört das Feld an der berührten Stelle.",
+      "Deshalb versagen normale Handschuhe oft, Touch-Handschuhe oder Stifte funktionieren."
+     ],
+     "q": "Hast du manchmal Probleme mit dem Touchscreen, etwa mit nassen Fingern?",
+     "c": "Tippe mit trockener und dann leicht feuchter Fingerspitze auf den Bildschirm und vergleiche."
+    },
+    "es": {
+     "t": "Pantallas táctiles explicadas",
+     "g": "La mayoría de pantallas de móvil detectan la mínima carga eléctrica de tu dedo.",
+     "p": [
+      "Las pantallas capacitivas tienen una rejilla de campos eléctricos diminutos bajo el cristal.",
+      "Tu dedo conduce electricidad y altera el campo donde toca.",
+      "Por eso los guantes normales suelen fallar y los guantes táctiles o los lápices funcionan."
+     ],
+     "q": "¿Alguna vez tienes problemas con la pantalla táctil, por ejemplo con los dedos mojados?",
+     "c": "Toca la pantalla con un dedo seco y luego con uno algo húmedo, y compara."
+    },
+    "fr": {
+     "t": "Les écrans tactiles expliqués",
+     "g": "La plupart des écrans de téléphone détectent la minuscule charge électrique de ton doigt.",
+     "p": [
+      "Les écrans capacitifs ont une grille de minuscules champs électriques sous la vitre.",
+      "Ton doigt conduit l'électricité et perturbe le champ à l'endroit touché.",
+      "C'est pourquoi les gants ordinaires échouent souvent, alors que les gants tactiles ou stylets marchent."
+     ],
+     "q": "As-tu parfois des soucis d'écran tactile, par exemple avec les doigts mouillés ?",
+     "c": "Touche l'écran avec un doigt sec, puis un doigt légèrement humide, et compare."
+    },
+    "it": {
+     "t": "Gli schermi touch spiegati",
+     "g": "La maggior parte degli schermi dei telefoni percepisce la minuscola carica elettrica del dito.",
+     "p": [
+      "Gli schermi capacitivi hanno una griglia di minuscoli campi elettrici sotto il vetro.",
+      "Il dito conduce elettricità e disturba il campo nel punto in cui tocca.",
+      "Per questo i guanti normali spesso non funzionano, mentre quelli touch o i pennini sì."
+     ],
+     "q": "Hai mai problemi con lo schermo touch, per esempio con le dita bagnate?",
+     "c": "Tocca lo schermo con un dito asciutto e poi con uno leggermente umido, e confronta."
+    },
+    "pt": {
+     "t": "Ecrãs táteis explicados",
+     "g": "A maioria dos ecrãs de telemóvel deteta a minúscula carga elétrica do teu dedo.",
+     "p": [
+      "Os ecrãs capacitivos têm uma grelha de campos elétricos minúsculos sob o vidro.",
+      "O teu dedo conduz eletricidade e perturba o campo onde toca.",
+      "Por isso as luvas normais costumam falhar e as luvas táteis ou canetas funcionam."
+     ],
+     "q": "Tens por vezes problemas com o ecrã tátil, por exemplo com os dedos molhados?",
+     "c": "Toca no ecrã com o dedo seco e depois com um ligeiramente húmido, e compara."
+    },
+    "pt_BR": {
+     "t": "Telas sensíveis ao toque explicadas",
+     "g": "A maioria das telas de celular detecta a minúscula carga elétrica do seu dedo.",
+     "p": [
+      "As telas capacitivas têm uma grade de campos elétricos minúsculos sob o vidro.",
+      "Seu dedo conduz eletricidade e perturba o campo onde toca.",
+      "Por isso luvas comuns costumam falhar e luvas touch ou canetas funcionam."
+     ],
+     "q": "Você às vezes tem problemas com a tela touch, por exemplo com os dedos molhados?",
+     "c": "Toque na tela com o dedo seco e depois com um levemente úmido, e compare."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Phone cameras at a glance",
+     "g": "Main, wide and zoom lenses, front cameras and what each one is good for.",
+     "p": [
+      "The main camera is your all-rounder for everyday photos and video.",
+      "A wide lens fits more in the frame, great for rooms, buildings and groups.",
+      "A zoom lens gets you closer; the front camera is for selfies and video calls."
+     ],
+     "q": "Which camera on your phone do you use most, and for what?",
+     "c": "Take the same scene with each lens your phone has and compare the shots."
+    },
+    "de": {
+     "t": "Handykameras im Überblick",
+     "g": "Haupt-, Weitwinkel- und Zoomobjektiv, Frontkamera und wofür jede gut ist.",
+     "p": [
+      "Die Hauptkamera ist dein Allrounder für Alltagsfotos und Video.",
+      "Ein Weitwinkel fasst mehr ins Bild, ideal für Räume, Gebäude und Gruppen.",
+      "Ein Zoomobjektiv holt Motive näher; die Frontkamera dient Selfies und Videoanrufen."
+     ],
+     "q": "Welche Kamera deines Handys nutzt du am meisten und wofür?",
+     "c": "Fotografiere dieselbe Szene mit jedem Objektiv deines Handys und vergleiche."
+    },
+    "es": {
+     "t": "Las cámaras del móvil de un vistazo",
+     "g": "Objetivos principal, gran angular y zoom, cámara frontal y para qué sirve cada uno.",
+     "p": [
+      "La cámara principal es tu todoterreno para fotos y vídeo de cada día.",
+      "El gran angular abarca más escena: ideal para salas, edificios y grupos.",
+      "El zoom acerca los motivos; la cámara frontal sirve para selfis y videollamadas."
+     ],
+     "q": "¿Qué cámara de tu móvil usas más y para qué?",
+     "c": "Haz la misma escena con cada objetivo de tu móvil y compara las fotos."
+    },
+    "fr": {
+     "t": "Les caméras du téléphone en bref",
+     "g": "Objectifs principal, grand-angle et zoom, caméra frontale et usage de chacun.",
+     "p": [
+      "L'objectif principal est ton polyvalent pour les photos et vidéos du quotidien.",
+      "Le grand-angle fait entrer plus de scène : idéal pour pièces, bâtiments et groupes.",
+      "Le zoom rapproche les sujets ; la caméra frontale sert aux selfies et visios."
+     ],
+     "q": "Quel objectif de ton téléphone utilises-tu le plus, et pour quoi ?",
+     "c": "Photographie la même scène avec chaque objectif de ton téléphone et compare."
+    },
+    "it": {
+     "t": "Le fotocamere del telefono in breve",
+     "g": "Obiettivi principale, grandangolo e zoom, fotocamera frontale e a cosa serve ciascuno.",
+     "p": [
+      "La fotocamera principale è la tuttofare per foto e video di ogni giorno.",
+      "Il grandangolo fa entrare più scena: ideale per stanze, edifici e gruppi.",
+      "Lo zoom avvicina i soggetti; la frontale serve per selfie e videochiamate."
+     ],
+     "q": "Quale fotocamera del telefono usi di più e per cosa?",
+     "c": "Scatta la stessa scena con ogni obiettivo del telefono e confronta."
+    },
+    "pt": {
+     "t": "As câmaras do telemóvel num relance",
+     "g": "Objetivas principal, grande angular e zoom, câmara frontal e para que serve cada uma.",
+     "p": [
+      "A câmara principal é a tua faz-tudo para fotos e vídeo do dia a dia.",
+      "A grande angular abrange mais cena: ideal para salas, edifícios e grupos.",
+      "O zoom aproxima os motivos; a câmara frontal serve para selfies e videochamadas."
+     ],
+     "q": "Que câmara do teu telemóvel usas mais e para quê?",
+     "c": "Fotografa a mesma cena com cada objetiva do telemóvel e compara."
+    },
+    "pt_BR": {
+     "t": "As câmeras do celular num relance",
+     "g": "Lentes principal, grande angular e zoom, câmera frontal e para que serve cada uma.",
+     "p": [
+      "A câmera principal é a sua faz-tudo para fotos e vídeo do dia a dia.",
+      "A grande angular abrange mais cena: ideal para salas, prédios e grupos.",
+      "O zoom aproxima os assuntos; a câmera frontal serve para selfies e chamadas de vídeo."
+     ],
+     "q": "Qual câmera do seu celular você mais usa e para quê?",
+     "c": "Fotografe a mesma cena com cada lente do celular e compare."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sensors in your phone",
+     "g": "Accelerometer, gyroscope, compass, proximity and light sensors all quietly at work.",
+     "p": [
+      "The accelerometer feels movement and tilt; it rotates your screen and counts steps.",
+      "The gyroscope and compass sense turning and direction, handy for maps and games.",
+      "Proximity and light sensors turn the screen off at your ear and adjust brightness."
+     ],
+     "q": "Which of these sensors have you noticed in action without thinking?",
+     "c": "Tilt your phone and watch the screen rotate; then cover the top edge and watch the brightness."
+    },
+    "de": {
+     "t": "Sensoren in deinem Handy",
+     "g": "Beschleunigungssensor, Gyroskop, Kompass, Näherungs- und Lichtsensor arbeiten leise mit.",
+     "p": [
+      "Der Beschleunigungssensor spürt Bewegung und Neigung, dreht den Bildschirm und zählt Schritte.",
+      "Gyroskop und Kompass erfassen Drehung und Richtung, nützlich für Karten und Spiele.",
+      "Näherungs- und Lichtsensor schalten am Ohr den Bildschirm aus und regeln die Helligkeit."
+     ],
+     "q": "Welche dieser Sensoren hast du schon unbewusst bei der Arbeit erlebt?",
+     "c": "Kippe dein Handy und sieh die Drehung; verdecke dann die Oberkante und beobachte die Helligkeit."
+    },
+    "es": {
+     "t": "Sensores de tu móvil",
+     "g": "Acelerómetro, giroscopio, brújula, proximidad y luz trabajan en silencio.",
+     "p": [
+      "El acelerómetro nota el movimiento y la inclinación: gira la pantalla y cuenta pasos.",
+      "El giroscopio y la brújula detectan giros y dirección, útiles en mapas y juegos.",
+      "Los sensores de proximidad y luz apagan la pantalla junto a la oreja y ajustan el brillo."
+     ],
+     "q": "¿Cuáles de estos sensores has visto funcionar sin darte cuenta?",
+     "c": "Inclina el móvil y mira girar la pantalla; tapa el borde superior y observa el brillo."
+    },
+    "fr": {
+     "t": "Les capteurs de ton téléphone",
+     "g": "Accéléromètre, gyroscope, boussole, proximité et lumière travaillent discrètement.",
+     "p": [
+      "L'accéléromètre sent le mouvement et l'inclinaison : il fait pivoter l'écran et compte les pas.",
+      "Le gyroscope et la boussole captent rotation et direction, utiles pour cartes et jeux.",
+      "Les capteurs de proximité et de lumière éteignent l'écran à l'oreille et règlent la luminosité."
+     ],
+     "q": "Lesquels de ces capteurs as-tu vus en action sans y penser ?",
+     "c": "Incline ton téléphone et regarde l'écran pivoter ; couvre le haut et observe la luminosité."
+    },
+    "it": {
+     "t": "I sensori del tuo telefono",
+     "g": "Accelerometro, giroscopio, bussola, prossimità e luce lavorano in silenzio.",
+     "p": [
+      "L'accelerometro sente movimento e inclinazione: ruota lo schermo e conta i passi.",
+      "Giroscopio e bussola rilevano rotazione e direzione, utili per mappe e giochi.",
+      "I sensori di prossimità e luce spengono lo schermo all'orecchio e regolano la luminosità."
+     ],
+     "q": "Quali di questi sensori hai visto in azione senza pensarci?",
+     "c": "Inclina il telefono e guarda ruotare lo schermo; copri il bordo alto e osserva la luminosità."
+    },
+    "pt": {
+     "t": "Sensores do teu telemóvel",
+     "g": "Acelerómetro, giroscópio, bússola, proximidade e luz trabalham em silêncio.",
+     "p": [
+      "O acelerómetro sente o movimento e a inclinação: roda o ecrã e conta passos.",
+      "O giroscópio e a bússola detetam rotação e direção, úteis em mapas e jogos.",
+      "Os sensores de proximidade e luz desligam o ecrã junto à orelha e ajustam o brilho."
+     ],
+     "q": "Quais destes sensores já viste a funcionar sem reparar?",
+     "c": "Inclina o telemóvel e vê o ecrã rodar; tapa a borda de cima e observa o brilho."
+    },
+    "pt_BR": {
+     "t": "Sensores do seu celular",
+     "g": "Acelerômetro, giroscópio, bússola, proximidade e luz trabalham em silêncio.",
+     "p": [
+      "O acelerômetro sente o movimento e a inclinação: gira a tela e conta passos.",
+      "O giroscópio e a bússola detectam rotação e direção, úteis em mapas e jogos.",
+      "Os sensores de proximidade e luz apagam a tela junto ao ouvido e ajustam o brilho."
+     ],
+     "q": "Quais desses sensores você já viu funcionando sem perceber?",
+     "c": "Incline o celular e veja a tela girar; cubra a borda de cima e observe o brilho."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Operating systems",
+     "g": "The main software that manages hardware and apps, with Android and iOS leading on phones.",
+     "p": [
+      "An operating system links the hardware, the apps and you in one working whole.",
+      "On phones, Android and iOS lead; each has its own look, apps and update style.",
+      "The system handles memory, battery, security and what apps may access."
+     ],
+     "q": "Which phone system do you use, and what do you like about it?",
+     "c": "Open settings and find your system's name and version number."
+    },
+    "de": {
+     "t": "Betriebssysteme",
+     "g": "Die Hauptsoftware, die Hardware und Apps steuert; bei Handys führen Android und iOS.",
+     "p": [
+      "Ein Betriebssystem verbindet Hardware, Apps und dich zu einem funktionierenden Ganzen.",
+      "Bei Handys führen Android und iOS; jedes hat eigenes Aussehen, Apps und Update-Stil.",
+      "Das System verwaltet Speicher, Akku, Sicherheit und was Apps nutzen dürfen."
+     ],
+     "q": "Welches Handy-System nutzt du und was gefällt dir daran?",
+     "c": "Öffne die Einstellungen und finde Namen und Versionsnummer deines Systems."
+    },
+    "es": {
+     "t": "Sistemas operativos",
+     "g": "El software principal que gestiona hardware y apps; en móviles lideran Android e iOS.",
+     "p": [
+      "Un sistema operativo une hardware, apps y a ti en un conjunto que funciona.",
+      "En móviles lideran Android e iOS; cada uno tiene su aspecto, apps y estilo de actualización.",
+      "El sistema gestiona memoria, batería, seguridad y a qué pueden acceder las apps."
+     ],
+     "q": "¿Qué sistema de móvil usas y qué te gusta de él?",
+     "c": "Abre ajustes y busca el nombre y número de versión de tu sistema."
+    },
+    "fr": {
+     "t": "Les systèmes d'exploitation",
+     "g": "Le logiciel principal qui gère matériel et applis ; Android et iOS dominent sur téléphone.",
+     "p": [
+      "Un système d'exploitation relie le matériel, les applis et toi en un tout cohérent.",
+      "Sur téléphone, Android et iOS dominent ; chacun a son look, ses applis et ses mises à jour.",
+      "Le système gère la mémoire, la batterie, la sécurité et ce que les applis peuvent utiliser."
+     ],
+     "q": "Quel système de téléphone utilises-tu et qu'aimes-tu en lui ?",
+     "c": "Ouvre les réglages et trouve le nom et le numéro de version de ton système."
+    },
+    "it": {
+     "t": "I sistemi operativi",
+     "g": "Il software principale che gestisce hardware e app; sui telefoni dominano Android e iOS.",
+     "p": [
+      "Un sistema operativo collega hardware, app e te in un insieme che funziona.",
+      "Sui telefoni dominano Android e iOS; ognuno ha aspetto, app e stile di aggiornamento propri.",
+      "Il sistema gestisce memoria, batteria, sicurezza e a cosa possono accedere le app."
+     ],
+     "q": "Quale sistema usi sul telefono e cosa ti piace?",
+     "c": "Apri le impostazioni e trova nome e numero di versione del tuo sistema."
+    },
+    "pt": {
+     "t": "Sistemas operativos",
+     "g": "O software principal que gere hardware e apps; nos telemóveis lideram Android e iOS.",
+     "p": [
+      "Um sistema operativo liga o hardware, as apps e tu num conjunto que funciona.",
+      "Nos telemóveis lideram Android e iOS; cada um tem o seu aspeto, apps e estilo de atualização.",
+      "O sistema gere memória, bateria, segurança e aquilo a que as apps podem aceder."
+     ],
+     "q": "Que sistema de telemóvel usas e o que gostas nele?",
+     "c": "Abre as definições e encontra o nome e o número de versão do teu sistema."
+    },
+    "pt_BR": {
+     "t": "Sistemas operacionais",
+     "g": "O software principal que gerencia hardware e apps; nos celulares lideram Android e iOS.",
+     "p": [
+      "Um sistema operacional liga o hardware, os apps e você num conjunto que funciona.",
+      "Nos celulares lideram Android e iOS; cada um tem seu visual, apps e estilo de atualização.",
+      "O sistema gerencia memória, bateria, segurança e ao que os apps podem acessar."
+     ],
+     "q": "Qual sistema de celular você usa e o que gosta nele?",
+     "c": "Abra as configurações e ache o nome e o número de versão do seu sistema."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Apps and app stores",
+     "g": "How apps are found, installed, updated and removed safely.",
+     "p": [
+      "Apps are small programs; official app stores check them before they reach you.",
+      "Read the app's rating, number of downloads and the permissions it asks for.",
+      "Update apps regularly and remove those you no longer use to save space and stay safe."
+     ],
+     "q": "Which app has been the most useful in your life so far?",
+     "c": "Open your app list and uninstall one app you have not used for months."
+    },
+    "de": {
+     "t": "Apps und App-Stores",
+     "g": "Wie man Apps findet, installiert, aktualisiert und sicher entfernt.",
+     "p": [
+      "Apps sind kleine Programme; offizielle App-Stores prüfen sie, bevor sie bei dir ankommen.",
+      "Lies Bewertung, Downloadzahl und die Berechtigungen, die die App verlangt.",
+      "Aktualisiere Apps regelmäßig und entferne ungenutzte, um Platz zu sparen und sicher zu bleiben."
+     ],
+     "q": "Welche App war bisher am nützlichsten in deinem Leben?",
+     "c": "Öffne deine App-Liste und deinstalliere eine App, die du seit Monaten nicht nutzt."
+    },
+    "es": {
+     "t": "Apps y tiendas de apps",
+     "g": "Cómo encontrar, instalar, actualizar y eliminar apps de forma segura.",
+     "p": [
+      "Las apps son pequeños programas; las tiendas oficiales las revisan antes de llegar a ti.",
+      "Mira la valoración, el número de descargas y los permisos que pide la app.",
+      "Actualiza las apps y borra las que no uses para ahorrar espacio y estar más seguro."
+     ],
+     "q": "¿Qué app te ha resultado más útil hasta ahora?",
+     "c": "Abre tu lista de apps y desinstala una que no uses desde hace meses."
+    },
+    "fr": {
+     "t": "Applis et boutiques d'applis",
+     "g": "Comment trouver, installer, mettre à jour et supprimer des applis en sécurité.",
+     "p": [
+      "Les applis sont de petits programmes ; les boutiques officielles les vérifient avant qu'elles t'atteignent.",
+      "Regarde la note, le nombre de téléchargements et les autorisations demandées.",
+      "Mets les applis à jour et supprime celles que tu n'utilises plus pour gagner de la place."
+     ],
+     "q": "Quelle appli t'a été la plus utile jusqu'ici ?",
+     "c": "Ouvre ta liste d'applis et désinstalle-en une que tu n'as pas utilisée depuis des mois."
+    },
+    "it": {
+     "t": "App e store di app",
+     "g": "Come trovare, installare, aggiornare e rimuovere le app in sicurezza.",
+     "p": [
+      "Le app sono piccoli programmi; gli store ufficiali le controllano prima che arrivino a te.",
+      "Guarda valutazione, numero di download e permessi richiesti dall'app.",
+      "Aggiorna le app e rimuovi quelle che non usi più per risparmiare spazio ed essere più sicuro."
+     ],
+     "q": "Quale app ti è stata più utile finora?",
+     "c": "Apri l'elenco delle app e disinstallane una che non usi da mesi."
+    },
+    "pt": {
+     "t": "Apps e lojas de apps",
+     "g": "Como encontrar, instalar, atualizar e remover apps em segurança.",
+     "p": [
+      "As apps são pequenos programas; as lojas oficiais verificam-nas antes de chegarem a ti.",
+      "Vê a avaliação, o número de transferências e as permissões que a app pede.",
+      "Atualiza as apps e remove as que já não usas para poupar espaço e estar mais seguro."
+     ],
+     "q": "Que app tem sido a mais útil na tua vida até agora?",
+     "c": "Abre a lista de apps e desinstala uma que não usas há meses."
+    },
+    "pt_BR": {
+     "t": "Apps e lojas de apps",
+     "g": "Como encontrar, instalar, atualizar e remover apps com segurança.",
+     "p": [
+      "Os apps são pequenos programas; as lojas oficiais os verificam antes de chegarem a você.",
+      "Veja a avaliação, o número de downloads e as permissões que o app pede.",
+      "Atualize os apps e remova os que não usa mais para ganhar espaço e ficar mais seguro."
+     ],
+     "q": "Qual app tem sido o mais útil na sua vida até agora?",
+     "c": "Abra a lista de apps e desinstale um que você não usa há meses."
+    }
+   }
+  }
+ ]
+}

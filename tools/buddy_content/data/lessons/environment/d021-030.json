@@ -1,0 +1,835 @@
+{
+ "topic": "environment",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reusable bottles and cups",
+     "g": "Choose, clean and remember to carry your reusable bottle and cup.",
+     "p": [
+      "Steel, glass and tough plastic bottles all work: pick one you will enjoy using.",
+      "Wash after each day, and let it dry open so it stays fresh.",
+      "Keep it by your keys or bag so it becomes part of leaving home."
+     ],
+     "q": "Do you carry a bottle or cup already? What would help you remember?",
+     "c": "Fill your reusable bottle before leaving home today and bring it along."
+    },
+    "de": {
+     "t": "Mehrwegflaschen und -becher",
+     "g": "Eine Mehrwegflasche und einen Becher auswählen, pflegen und nicht vergessen.",
+     "p": [
+      "Edelstahl, Glas und robuster Kunststoff taugen alle: Nimm eine, die dir gefällt.",
+      "Wasch sie täglich und lass sie offen trocknen, damit sie frisch bleibt.",
+      "Stell sie neben Schlüssel oder Tasche, damit sie zum Teil des Losgehens wird."
+     ],
+     "q": "Hast du schon Flasche oder Becher dabei? Was würde dir beim Erinnern helfen?",
+     "c": "Fülle heute vor dem Losgehen deine Mehrwegflasche und nimm sie mit."
+    },
+    "es": {
+     "t": "Botellas y vasos reutilizables",
+     "g": "Elegir, limpiar y acordarte de llevar tu botella y taza reutilizables.",
+     "p": [
+      "Acero, vidrio y plástico resistente sirven: elige una que te guste usar.",
+      "Lávala cada día y déjala secar abierta para que se mantenga fresca.",
+      "Déjala junto a las llaves o el bolso para que forme parte de salir de casa."
+     ],
+     "q": "¿Ya llevas botella o taza? ¿Qué te ayudaría a acordarte?",
+     "c": "Llena hoy tu botella reutilizable antes de salir de casa y llévala contigo."
+    },
+    "fr": {
+     "t": "Gourdes et tasses réutilisables",
+     "g": "Choisir, laver et penser à emporter sa gourde et sa tasse réutilisables.",
+     "p": [
+      "Acier, verre et plastique solide conviennent : choisis celle que tu aimeras utiliser.",
+      "Lave-la chaque jour et laisse-la sécher ouverte pour qu'elle reste fraîche.",
+      "Garde-la près des clés ou du sac pour qu'elle fasse partie du départ de chez toi."
+     ],
+     "q": "Emportes-tu déjà une gourde ou une tasse ? Qu'est-ce qui t'aiderait à y penser ?",
+     "c": "Remplis ta gourde réutilisable avant de partir aujourd'hui et emporte-la avec toi."
+    },
+    "it": {
+     "t": "Borracce e tazze riutilizzabili",
+     "g": "Scegliere, lavare e ricordarsi di portare la propria borraccia e tazza riutilizzabili.",
+     "p": [
+      "Acciaio, vetro e plastica robusta vanno bene: scegline una che ti piaccia usare.",
+      "Lavala ogni giorno e lasciala asciugare aperta per mantenerla fresca.",
+      "Tienila vicino alle chiavi o alla borsa così diventa parte dell'uscire di casa."
+     ],
+     "q": "Porti già con te una borraccia o una tazza? Cosa ti aiuterebbe a ricordarlo?",
+     "c": "Riempi oggi la tua borraccia prima di uscire di casa e portala con te."
+    },
+    "pt": {
+     "t": "Garrafas e copos reutilizáveis",
+     "g": "Escolher, lavar e lembrar-te de levar a tua garrafa e copo reutilizáveis.",
+     "p": [
+      "Aço, vidro e plástico resistente servem: escolhe uma de que gostes de usar.",
+      "Lava-a todos os dias e deixa-a secar aberta para se manter fresca.",
+      "Deixa-a junto às chaves ou à mala para fazer parte do sair de casa."
+     ],
+     "q": "Já levas garrafa ou copo contigo? O que te ajudaria a lembrar?",
+     "c": "Enche hoje a tua garrafa reutilizável antes de saíres de casa e leva-a contigo."
+    },
+    "pt_BR": {
+     "t": "Garrafas e copos reutilizáveis",
+     "g": "Escolher, lavar e lembrar de levar sua garrafa e seu copo reutilizáveis.",
+     "p": [
+      "Aço, vidro e plástico resistente servem: escolha uma que você goste de usar.",
+      "Lave todo dia e deixe secar aberta para se manter fresca.",
+      "Deixe junto das chaves ou da bolsa para fazer parte do sair de casa."
+     ],
+     "q": "Você já leva garrafa ou copo? O que ajudaria você a lembrar?",
+     "c": "Encha hoje sua garrafa reutilizável antes de sair de casa e leve com você."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shopping with your own bags",
+     "g": "Build small habits that make reusable bags second nature.",
+     "p": [
+      "A good bag can be used hundreds of times, so it quickly beats one-use bags.",
+      "Keep spares in your coat, car, backpack or by the front door.",
+      "Fold a small bag into a pocket-size pouch for surprise shopping."
+     ],
+     "q": "Where could you keep a bag so you never forget it?",
+     "c": "Put a reusable bag in your coat or backpack today, then use it on your next shop."
+    },
+    "de": {
+     "t": "Einkaufen mit eigener Tasche",
+     "g": "Kleine Gewohnheiten aufbauen, damit die eigene Tasche selbstverständlich wird.",
+     "p": [
+      "Eine gute Tasche hält hunderte Einkäufe und schlägt Einwegtüten damit schnell.",
+      "Bewahre Ersatz in Jacke, Auto, Rucksack oder neben der Haustür auf.",
+      "Falte eine kleine Tasche zum Taschenformat für spontane Einkäufe."
+     ],
+     "q": "Wo könntest du eine Tasche aufbewahren, damit du sie nie vergisst?",
+     "c": "Steck heute eine Stofftasche in Jacke oder Rucksack und nutze sie beim nächsten Einkauf."
+    },
+    "es": {
+     "t": "Comprar con tus propias bolsas",
+     "g": "Crear pequeños hábitos para que las bolsas reutilizables sean algo natural.",
+     "p": [
+      "Una buena bolsa se usa cientos de veces, así que supera enseguida a las de un solo uso.",
+      "Guarda bolsas de repuesto en el abrigo, el coche, la mochila o junto a la puerta.",
+      "Dobla una bolsa pequeña en formato de bolsillo para compras imprevistas."
+     ],
+     "q": "¿Dónde podrías guardar una bolsa para no olvidarla nunca?",
+     "c": "Mete hoy una bolsa reutilizable en el abrigo o la mochila y úsala en tu próxima compra."
+    },
+    "fr": {
+     "t": "Faire ses courses avec ses propres sacs",
+     "g": "Prendre de petites habitudes pour que le sac réutilisable devienne naturel.",
+     "p": [
+      "Un bon sac sert des centaines de fois et surpasse vite les sacs jetables.",
+      "Garde des sacs de rechange dans ton manteau, ta voiture, ton sac à dos ou près de la porte.",
+      "Plie un petit sac en pochette de poche pour les courses imprévues."
+     ],
+     "q": "Où pourrais-tu ranger un sac pour ne jamais l'oublier ?",
+     "c": "Glisse aujourd'hui un sac réutilisable dans ton manteau ou ton sac à dos et sers-t'en pour tes prochaines courses."
+    },
+    "it": {
+     "t": "Fare la spesa con le proprie borse",
+     "g": "Creare piccole abitudini che rendano naturale la borsa riutilizzabile.",
+     "p": [
+      "Una buona borsa si usa centinaia di volte e batte presto i sacchetti monouso.",
+      "Tieni borse di scorta nel cappotto, in auto, nello zaino o vicino alla porta.",
+      "Piega una borsa piccola in un sacchetto tascabile per la spesa improvvisa."
+     ],
+     "q": "Dove potresti tenere una borsa per non dimenticarla mai?",
+     "c": "Metti oggi una borsa riutilizzabile nel cappotto o nello zaino e usala alla prossima spesa."
+    },
+    "pt": {
+     "t": "Fazer compras com os teus sacos",
+     "g": "Criar pequenos hábitos para que o saco reutilizável seja natural.",
+     "p": [
+      "Um bom saco usa-se centenas de vezes e depressa supera os sacos de uso único.",
+      "Guarda sacos de reserva no casaco, no carro, na mochila ou junto à porta.",
+      "Dobra um saco pequeno num formato de bolso para compras imprevistas."
+     ],
+     "q": "Onde podias guardar um saco para nunca o esqueceres?",
+     "c": "Mete hoje um saco reutilizável no casaco ou na mochila e usa-o na próxima compra."
+    },
+    "pt_BR": {
+     "t": "Fazer compras com suas próprias sacolas",
+     "g": "Criar pequenos hábitos para que a sacola reutilizável seja natural.",
+     "p": [
+      "Uma boa sacola é usada centenas de vezes e logo supera as descartáveis.",
+      "Guarde sacolas extras no casaco, no carro, na mochila ou perto da porta.",
+      "Dobre uma sacola pequena em formato de bolso para compras de última hora."
+     ],
+     "q": "Onde você poderia guardar uma sacola para nunca esquecer?",
+     "c": "Coloque hoje uma sacola reutilizável no casaco ou na mochila e use na próxima compra."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Composting at home",
+     "g": "Learn how fruit peels and garden waste turn into rich soil for plants.",
+     "p": [
+      "Compost is made when tiny organisms break down plant matter into dark, crumbly soil.",
+      "It keeps food scraps out of landfill and returns nutrients to the ground.",
+      "A heap, a bin or a simple pile in a corner of the garden is enough to start."
+     ],
+     "q": "Have you ever seen compost at work, at home, a garden or a farm?",
+     "c": "Set aside today's fruit and vegetable scraps in a small container for composting."
+    },
+    "de": {
+     "t": "Kompostieren zu Hause",
+     "g": "Lernen, wie Obstschalen und Gartenabfälle zu reicher Erde werden.",
+     "p": [
+      "Kompost entsteht, wenn winzige Organismen Pflanzenreste zu dunkler, krümeliger Erde abbauen.",
+      "So bleiben Küchenreste aus dem Restmüll, und Nährstoffe kehren in den Boden zurück.",
+      "Ein Haufen, ein Behälter oder ein einfacher Stapel in der Gartenecke genügt zum Start."
+     ],
+     "q": "Hast du Kompost schon mal bei der Arbeit gesehen, zu Hause, im Garten oder auf einem Hof?",
+     "c": "Sammle heute Obst- und Gemüsereste in einem kleinen Behälter zum Kompostieren."
+    },
+    "es": {
+     "t": "Compostar en casa",
+     "g": "Aprender cómo las cáscaras de fruta y los restos del jardín se vuelven tierra rica.",
+     "p": [
+      "El compost se forma cuando organismos diminutos descomponen la materia vegetal en tierra oscura y suelta.",
+      "Evita que los restos de comida acaben en el vertedero y devuelve nutrientes al suelo.",
+      "Un montón, un cubo o una simple pila en un rincón del jardín bastan para empezar."
+     ],
+     "q": "¿Has visto alguna vez el compost en acción, en casa, un jardín o una granja?",
+     "c": "Aparta hoy los restos de fruta y verdura en un recipiente pequeño para compostar."
+    },
+    "fr": {
+     "t": "Composter à la maison",
+     "g": "Apprendre comment épluchures et déchets de jardin deviennent un terreau riche.",
+     "p": [
+      "Le compost naît quand de minuscules organismes décomposent les végétaux en terre sombre et friable.",
+      "Il évite d'envoyer les restes de cuisine à la décharge et rend des nutriments au sol.",
+      "Un tas, un bac ou une simple pile dans un coin du jardin suffisent pour débuter."
+     ],
+     "q": "As-tu déjà vu du compost à l'œuvre, chez toi, au jardin ou dans une ferme ?",
+     "c": "Mets de côté aujourd'hui tes épluchures de fruits et légumes dans un petit récipient pour le compost."
+    },
+    "it": {
+     "t": "Compostare in casa",
+     "g": "Imparare come bucce di frutta e scarti del giardino diventano terriccio ricco.",
+     "p": [
+      "Il compost nasce quando minuscoli organismi trasformano la materia vegetale in terra scura e friabile.",
+      "Tiene gli scarti di cucina fuori dalla discarica e restituisce nutrienti al suolo.",
+      "Un mucchio, un contenitore o una semplice pila in un angolo del giardino bastano per iniziare."
+     ],
+     "q": "Hai mai visto il compost al lavoro, a casa, in un giardino o in una fattoria?",
+     "c": "Metti da parte oggi gli scarti di frutta e verdura in un piccolo contenitore per il compost."
+    },
+    "pt": {
+     "t": "Compostar em casa",
+     "g": "Aprender como as cascas de fruta e os restos do jardim se tornam terra rica.",
+     "p": [
+      "O composto forma-se quando organismos minúsculos decompõem matéria vegetal em terra escura e solta.",
+      "Evita que restos de comida acabem no aterro e devolve nutrientes ao solo.",
+      "Um monte, um recipiente ou uma simples pilha num canto do jardim chegam para começar."
+     ],
+     "q": "Já viste o composto em ação, em casa, num jardim ou numa quinta?",
+     "c": "Põe hoje de lado as sobras de fruta e legumes num recipiente pequeno para compostar."
+    },
+    "pt_BR": {
+     "t": "Compostar em casa",
+     "g": "Aprender como cascas de fruta e restos do jardim viram terra rica.",
+     "p": [
+      "O composto se forma quando organismos minúsculos decompõem matéria vegetal em terra escura e solta.",
+      "Evita que restos de comida acabem no aterro e devolve nutrientes ao solo.",
+      "Um monte, uma composteira ou uma simples pilha num canto do quintal bastam para começar."
+     ],
+     "q": "Você já viu a compostagem funcionando, em casa, num jardim ou num sítio?",
+     "c": "Separe hoje as sobras de frutas e legumes num recipiente pequeno para compostar."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What can go in the compost?",
+     "g": "Learn about greens, browns and items to keep out for a happy compost heap.",
+     "p": [
+      "Greens are wet, fresh scraps like peels and grass; browns are dry things like leaves and cardboard.",
+      "A mix of both, roughly balanced, keeps the heap airy, tidy and free of bad smells.",
+      "Keep out meat, dairy, oils and cooked leftovers if you have a simple home heap."
+     ],
+     "q": "Which of your kitchen scraps would count as greens, and which as browns?",
+     "c": "Sort today's scraps into greens and browns, and add a handful of dry leaves or torn paper."
+    },
+    "de": {
+     "t": "Was darf auf den Kompost?",
+     "g": "Grüne und braune Abfälle kennen und wissen, was für einen gesunden Kompost draußen bleibt.",
+     "p": [
+      "Grünes ist feucht und frisch, wie Schalen und Gras; Braunes ist trocken, wie Laub und Karton.",
+      "Eine ausgewogene Mischung hält den Haufen luftig, sauber und frei von üblem Geruch.",
+      "Fleisch, Milchprodukte, Öle und gekochte Reste gehören nicht auf einen einfachen Heimkompost."
+     ],
+     "q": "Welche deiner Küchenreste zählen zu Grün, welche zu Braun?",
+     "c": "Sortiere heute deine Reste in Grün und Braun und gib eine Handvoll trockenes Laub oder Papier dazu."
+    },
+    "es": {
+     "t": "¿Qué se puede echar al compost?",
+     "g": "Conocer los verdes, los marrones y lo que debe quedarse fuera para un compost feliz.",
+     "p": [
+      "Los verdes son restos húmedos y frescos, como cáscaras y césped; los marrones son secos, como hojas y cartón.",
+      "Una mezcla equilibrada de ambos mantiene el montón aireado, limpio y sin malos olores.",
+      "Deja fuera carne, lácteos, aceites y sobras cocinadas si tienes un compost casero sencillo."
+     ],
+     "q": "¿Cuáles de tus restos de cocina serían verdes y cuáles marrones?",
+     "c": "Clasifica hoy tus restos en verdes y marrones y añade un puñado de hojas secas o papel roto."
+    },
+    "fr": {
+     "t": "Que mettre dans le compost ?",
+     "g": "Connaître les verts, les bruns et ce qu'il faut éviter pour un compost heureux.",
+     "p": [
+      "Les verts sont des restes humides et frais, comme épluchures et herbe ; les bruns sont secs, comme feuilles et carton.",
+      "Un mélange équilibré garde le tas aéré, propre et sans mauvaises odeurs.",
+      "Évite viande, produits laitiers, huiles et restes cuisinés dans un composteur domestique simple."
+     ],
+     "q": "Parmi tes restes de cuisine, lesquels sont des verts et lesquels des bruns ?",
+     "c": "Trie aujourd'hui tes restes en verts et bruns et ajoute une poignée de feuilles sèches ou de papier déchiré."
+    },
+    "it": {
+     "t": "Cosa va nel compost?",
+     "g": "Conoscere verdi, marroni e cosa tenere fuori per un compost in salute.",
+     "p": [
+      "I verdi sono scarti freschi e umidi, come bucce ed erba; i marroni sono secchi, come foglie e cartone.",
+      "Un mix equilibrato dei due mantiene il cumulo areato, pulito e senza cattivi odori.",
+      "Tieni fuori carne, latticini, oli e avanzi cotti se hai una semplice compostiera domestica."
+     ],
+     "q": "Quali dei tuoi scarti di cucina sono verdi e quali marroni?",
+     "c": "Dividi oggi i tuoi scarti in verdi e marroni e aggiungi una manciata di foglie secche o carta strappata."
+    },
+    "pt": {
+     "t": "O que pode ir para o composto?",
+     "g": "Conhecer os verdes, os castanhos e o que deve ficar de fora para um composto feliz.",
+     "p": [
+      "Os verdes são restos húmidos e frescos, como cascas e relva; os castanhos são secos, como folhas e cartão.",
+      "Uma mistura equilibrada dos dois mantém o monte arejado, limpo e sem maus cheiros.",
+      "Deixa de fora carne, lacticínios, óleos e sobras cozinhadas num compostor caseiro simples."
+     ],
+     "q": "Quais dos teus restos de cozinha são verdes e quais castanhos?",
+     "c": "Separa hoje os teus restos em verdes e castanhos e junta um punhado de folhas secas ou papel rasgado."
+    },
+    "pt_BR": {
+     "t": "O que pode ir na composteira?",
+     "g": "Conhecer os verdes, os marrons e o que deve ficar de fora para uma composteira feliz.",
+     "p": [
+      "Verdes são restos úmidos e frescos, como cascas e grama; marrons são secos, como folhas e papelão.",
+      "Uma mistura equilibrada dos dois mantém a pilha arejada, limpa e sem mau cheiro.",
+      "Deixe de fora carne, laticínios, óleos e sobras cozidas numa composteira caseira simples."
+     ],
+     "q": "Quais dos seus restos de cozinha são verdes e quais são marrons?",
+     "c": "Separe hoje seus restos em verdes e marrons e junte um punhado de folhas secas ou papel rasgado."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Composting without a garden",
+     "g": "Discover worm bins, bokashi and community compost options for flats.",
+     "p": [
+      "A worm bin lets red worms turn scraps into rich compost in a small box.",
+      "Bokashi ferments scraps in a sealed bucket, and the result is buried or added to compost.",
+      "Many towns also have shared compost drop-offs or collections, so ask locally."
+     ],
+     "q": "Would a worm bin, a bokashi bucket or a community scheme suit your home?",
+     "c": "Search for a community compost point or collection near you and note what it accepts."
+    },
+    "de": {
+     "t": "Kompost ohne Garten",
+     "g": "Wurmkiste, Bokashi und Gemeinschaftskompost für Wohnungen entdecken.",
+     "p": [
+      "In einer Wurmkiste verwandeln Kompostwürmer Reste in einer kleinen Box zu reichem Kompost.",
+      "Bokashi vergärt Reste im geschlossenen Eimer, das Ergebnis wird vergraben oder kompostiert.",
+      "Viele Orte haben Sammelstellen oder Abholung für Kompost, frag vor Ort nach."
+     ],
+     "q": "Würde eine Wurmkiste, ein Bokashi-Eimer oder ein Gemeinschaftsangebot zu dir passen?",
+     "c": "Suche heute eine Kompoststelle oder Abholung in deiner Nähe und notiere, was sie annimmt."
+    },
+    "es": {
+     "t": "Compostar sin jardín",
+     "g": "Descubrir las vermicomposteras, el bokashi y el compost comunitario para pisos.",
+     "p": [
+      "Una vermicompostera deja que las lombrices rojas conviertan restos en compost en una cajita.",
+      "El bokashi fermenta restos en un cubo cerrado y el resultado se entierra o se añade al compost.",
+      "Muchos municipios tienen puntos o recogida de compost compartida, pregunta en tu zona."
+     ],
+     "q": "¿Te iría bien una vermicompostera, un cubo bokashi o un programa comunitario?",
+     "c": "Busca hoy un punto o recogida de compost comunitario cerca de ti y anota qué admite."
+    },
+    "fr": {
+     "t": "Composter sans jardin",
+     "g": "Découvrir le lombricomposteur, le bokashi et le compost collectif pour les appartements.",
+     "p": [
+      "Un lombricomposteur laisse des vers rouges transformer les restes en compost dans une petite caisse.",
+      "Le bokashi fait fermenter les restes dans un seau fermé, puis on l'enterre ou on l'ajoute au compost.",
+      "De nombreuses communes offrent des points d'apport ou une collecte partagée, renseigne-toi localement."
+     ],
+     "q": "Un lombricomposteur, un seau bokashi ou un dispositif collectif conviendrait-il à ton logement ?",
+     "c": "Cherche aujourd'hui un point de compost collectif ou une collecte près de chez toi et note ce qu'il accepte."
+    },
+    "it": {
+     "t": "Compostare senza giardino",
+     "g": "Scoprire vermicompostiera, bokashi e compost di comunità per chi vive in appartamento.",
+     "p": [
+      "In una vermicompostiera i lombrichi rossi trasformano gli scarti in compost in una piccola scatola.",
+      "Il bokashi fa fermentare gli scarti in un secchio chiuso, poi si interra o si aggiunge al compost.",
+      "Molti comuni hanno punti di conferimento o raccolte di compost condivise, informati in zona."
+     ],
+     "q": "Ti andrebbe bene una vermicompostiera, un secchio bokashi o un servizio di comunità?",
+     "c": "Cerca oggi un punto o una raccolta di compost di comunità vicino a te e annota cosa accetta."
+    },
+    "pt": {
+     "t": "Compostar sem jardim",
+     "g": "Descobrir a vermicompostagem, o bokashi e o composto comunitário para apartamentos.",
+     "p": [
+      "Num vermicompostor, minhocas vermelhas transformam restos em composto numa caixa pequena.",
+      "O bokashi fermenta restos num balde fechado, e o resultado é enterrado ou juntado ao composto.",
+      "Muitos concelhos têm pontos ou recolhas de composto partilhadas, pergunta na tua zona."
+     ],
+     "q": "Um vermicompostor, um balde bokashi ou um programa comunitário serviria à tua casa?",
+     "c": "Procura hoje um ponto ou recolha de composto comunitário perto de ti e anota o que aceita."
+    },
+    "pt_BR": {
+     "t": "Compostar sem quintal",
+     "g": "Descobrir o minhocário, o bokashi e a compostagem comunitária para apartamentos.",
+     "p": [
+      "Num minhocário, minhocas vermelhas transformam restos em composto numa caixa pequena.",
+      "O bokashi fermenta restos num balde fechado, e o resultado é enterrado ou misturado ao composto.",
+      "Muitas cidades têm pontos ou coletas de composto compartilhadas, pergunte na sua região."
+     ],
+     "q": "Um minhocário, um balde bokashi ou um programa comunitário serviria para a sua casa?",
+     "c": "Procure hoje um ponto ou coleta de composto comunitário perto de você e anote o que aceita."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food waste at home",
+     "g": "See why food gets thrown away and how to waste less.",
+     "p": [
+      "Food is often wasted because we buy too much, forget it or cook too large portions.",
+      "Wasted food also wastes the water, land and energy that grew it.",
+      "Seeing what you throw away for a week shows you where the easy wins are."
+     ],
+     "q": "What food do you most often end up throwing out?",
+     "c": "Check your fridge today and put anything that needs eating soon at the front."
+    },
+    "de": {
+     "t": "Lebensmittelverschwendung zu Hause",
+     "g": "Sehen, warum Essen im Müll landet und wie man weniger wegwirft.",
+     "p": [
+      "Essen wird oft verschwendet, weil wir zu viel kaufen, es vergessen oder zu große Portionen kochen.",
+      "Weggeworfenes Essen verschwendet auch das Wasser, die Fläche und die Energie, die es hervorgebracht haben.",
+      "Eine Woche lang zu sehen, was du wegwirfst, zeigt dir die einfachen Hebel."
+     ],
+     "q": "Welches Lebensmittel wirfst du am häufigsten weg?",
+     "c": "Schau heute in deinen Kühlschrank und stell alles, was bald weg muss, nach vorn."
+    },
+    "es": {
+     "t": "El desperdicio de comida en casa",
+     "g": "Ver por qué se tira la comida y cómo desperdiciar menos.",
+     "p": [
+      "A menudo se desperdicia comida porque compramos demasiado, la olvidamos o cocinamos raciones grandes.",
+      "Tirar comida también desperdicia el agua, la tierra y la energía que costó producirla.",
+      "Fijarte una semana en lo que tiras te muestra dónde están las victorias fáciles."
+     ],
+     "q": "¿Qué alimento acabas tirando con más frecuencia?",
+     "c": "Mira hoy tu nevera y pon delante lo que haya que comer pronto."
+    },
+    "fr": {
+     "t": "Le gaspillage alimentaire à la maison",
+     "g": "Voir pourquoi on jette de la nourriture et comment en gaspiller moins.",
+     "p": [
+      "On gaspille souvent parce qu'on achète trop, qu'on oublie ou qu'on cuisine des portions trop grandes.",
+      "Jeter de la nourriture gaspille aussi l'eau, les terres et l'énergie qui l'ont produite.",
+      "Observer ce que tu jettes pendant une semaine montre où se trouvent les gains faciles."
+     ],
+     "q": "Quel aliment finis-tu le plus souvent par jeter ?",
+     "c": "Regarde ton frigo aujourd'hui et place devant ce qu'il faut manger bientôt."
+    },
+    "it": {
+     "t": "Lo spreco di cibo in casa",
+     "g": "Vedere perché il cibo viene buttato e come sprecarne meno.",
+     "p": [
+      "Spesso si spreca cibo perché si compra troppo, lo si dimentica o si cucinano porzioni troppo grandi.",
+      "Buttare cibo spreca anche l'acqua, la terra e l'energia che sono servite a produrlo.",
+      "Osservare per una settimana cosa butti mostra dove sono i guadagni facili."
+     ],
+     "q": "Quale cibo finisci più spesso per buttare?",
+     "c": "Guarda oggi nel frigo e metti davanti ciò che va mangiato presto."
+    },
+    "pt": {
+     "t": "O desperdício de comida em casa",
+     "g": "Ver por que se deita comida fora e como desperdiçar menos.",
+     "p": [
+      "Desperdiça-se comida muitas vezes porque se compra demais, se esquece ou se cozinham doses grandes.",
+      "Deitar comida fora desperdiça também a água, a terra e a energia que a produziram.",
+      "Reparar numa semana no que deitas fora mostra onde estão as vitórias fáceis."
+     ],
+     "q": "Que alimento acabas por deitar fora com mais frequência?",
+     "c": "Vê hoje o teu frigorífico e coloca à frente o que tem de ser comido em breve."
+    },
+    "pt_BR": {
+     "t": "O desperdício de comida em casa",
+     "g": "Ver por que se joga comida fora e como desperdiçar menos.",
+     "p": [
+      "Desperdiça-se comida muitas vezes porque se compra demais, se esquece ou se cozinham porções grandes.",
+      "Jogar comida fora desperdiça também a água, a terra e a energia que a produziram.",
+      "Reparar por uma semana no que você joga fora mostra onde estão as vitórias fáceis."
+     ],
+     "q": "Que alimento você mais costuma acabar jogando fora?",
+     "c": "Olhe hoje a sua geladeira e coloque na frente o que precisa ser comido logo."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Planning meals to waste less",
+     "g": "Use shopping lists, meal plans and a fridge check before you buy.",
+     "p": [
+      "A simple plan for three or four dinners prevents many impulse buys.",
+      "Check the fridge and cupboards first, then write a list only of what is missing.",
+      "Plan one flexible meal that can use whatever vegetables need finishing."
+     ],
+     "q": "Do you usually shop with a list, or by feeling in the shop?",
+     "c": "Plan three dinners for the coming days and write a short list of only what you lack."
+    },
+    "de": {
+     "t": "Mahlzeiten planen, weniger wegwerfen",
+     "g": "Mit Einkaufszettel, Essensplan und Kühlschrank-Check vor dem Einkauf arbeiten.",
+     "p": [
+      "Ein einfacher Plan für drei oder vier Abendessen verhindert viele Spontankäufe.",
+      "Schau zuerst in Kühlschrank und Vorrat, dann schreib nur auf, was fehlt.",
+      "Plane ein flexibles Gericht, das alles Gemüse aufbrauchen kann, was weg muss."
+     ],
+     "q": "Kaufst du meist mit Liste ein oder nach Gefühl im Laden?",
+     "c": "Plane drei Abendessen für die nächsten Tage und schreib eine kurze Liste nur mit dem, was fehlt."
+    },
+    "es": {
+     "t": "Planificar comidas para desperdiciar menos",
+     "g": "Usar listas de la compra, menús semanales y revisar la nevera antes de comprar.",
+     "p": [
+      "Un plan sencillo para tres o cuatro cenas evita muchas compras impulsivas.",
+      "Revisa antes la nevera y la despensa, y anota solo lo que falta.",
+      "Planea una comida flexible que aproveche las verduras que haya que terminar."
+     ],
+     "q": "¿Sueles comprar con lista o por intuición en la tienda?",
+     "c": "Planea tres cenas para los próximos días y escribe una lista corta solo con lo que te falta."
+    },
+    "fr": {
+     "t": "Planifier ses repas pour gaspiller moins",
+     "g": "Utiliser listes de courses, menus et vérification du frigo avant d'acheter.",
+     "p": [
+      "Un plan simple pour trois ou quatre dîners évite bien des achats impulsifs.",
+      "Regarde d'abord frigo et placards, puis note seulement ce qui manque.",
+      "Prévois un repas souple qui peut utiliser les légumes à finir."
+     ],
+     "q": "Fais-tu d'habitude tes courses avec une liste, ou au feeling dans le magasin ?",
+     "c": "Planifie trois dîners pour les prochains jours et écris une courte liste de ce qui te manque seulement."
+    },
+    "it": {
+     "t": "Pianificare i pasti per sprecare meno",
+     "g": "Usare liste della spesa, piani dei pasti e controllo del frigo prima di comprare.",
+     "p": [
+      "Un piano semplice per tre o quattro cene evita molti acquisti d'impulso.",
+      "Controlla prima frigo e dispensa, poi scrivi una lista solo di ciò che manca.",
+      "Pianifica un pasto flessibile che usi le verdure che vanno finite."
+     ],
+     "q": "Di solito fai la spesa con una lista o a sensazione nel negozio?",
+     "c": "Pianifica tre cene per i prossimi giorni e scrivi una breve lista solo di ciò che ti manca."
+    },
+    "pt": {
+     "t": "Planear refeições para desperdiçar menos",
+     "g": "Usar listas de compras, planos de refeições e verificar o frigorífico antes de comprar.",
+     "p": [
+      "Um plano simples para três ou quatro jantares evita muitas compras por impulso.",
+      "Vê primeiro o frigorífico e a despensa, e depois escreve só o que falta.",
+      "Planeia uma refeição flexível que aproveite os legumes que têm de ser gastos."
+     ],
+     "q": "Costumas comprar com lista ou ao sabor do momento na loja?",
+     "c": "Planeia três jantares para os próximos dias e escreve uma lista curta só com o que te falta."
+    },
+    "pt_BR": {
+     "t": "Planejar refeições para desperdiçar menos",
+     "g": "Usar listas de compras, cardápios e checar a geladeira antes de comprar.",
+     "p": [
+      "Um plano simples para três ou quatro jantares evita muitas compras por impulso.",
+      "Olhe primeiro a geladeira e a despensa, e depois anote só o que falta.",
+      "Planeje uma refeição flexível que aproveite os legumes que precisam ser usados."
+     ],
+     "q": "Você costuma comprar com lista ou no improviso na loja?",
+     "c": "Planeje três jantares para os próximos dias e escreva uma lista curta só com o que falta."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Understanding date labels",
+     "g": "Learn the difference between use-by and best-before dates.",
+     "p": [
+      "Use-by is about safety: after that date, do not eat the food, especially meat and fish.",
+      "Best-before is about quality: food is often still fine after it, if it looks and smells good.",
+      "Looking, smelling and checking storage help you decide, rather than the date alone."
+     ],
+     "q": "Do you ever throw food away just because of the date on it?",
+     "c": "Find one best-before item at home and check it by sight and smell before deciding."
+    },
+    "de": {
+     "t": "Datumsangaben verstehen",
+     "g": "Den Unterschied zwischen Verbrauchs- und Mindesthaltbarkeitsdatum kennenlernen.",
+     "p": [
+      "Das Verbrauchsdatum betrifft Sicherheit: Danach das Lebensmittel nicht mehr essen, vor allem Fleisch und Fisch.",
+      "Das Mindesthaltbarkeitsdatum betrifft Qualität: Oft ist Essen danach noch gut, wenn es gut aussieht und riecht.",
+      "Anschauen, Riechen und die Lagerung prüfen helfen mehr als das Datum allein."
+     ],
+     "q": "Wirfst du manchmal Essen nur wegen des Datums weg?",
+     "c": "Such ein Lebensmittel mit Mindesthaltbarkeit zu Hause und prüfe es mit Augen und Nase, bevor du entscheidest."
+    },
+    "es": {
+     "t": "Entender las fechas de los envases",
+     "g": "Aprender la diferencia entre fecha de caducidad y consumo preferente.",
+     "p": [
+      "La caducidad se refiere a la seguridad: pasada la fecha, no comas el alimento, sobre todo carne y pescado.",
+      "El consumo preferente se refiere a la calidad: a menudo sigue bien después, si se ve y huele bien.",
+      "Mirar, oler y revisar el almacenamiento ayuda más a decidir que solo la fecha."
+     ],
+     "q": "¿Has tirado alguna vez comida solo por la fecha que traía?",
+     "c": "Busca en casa un alimento de consumo preferente y compruébalo con la vista y el olfato antes de decidir."
+    },
+    "fr": {
+     "t": "Comprendre les dates sur les produits",
+     "g": "Apprendre la différence entre date limite de consommation et date de durabilité minimale.",
+     "p": [
+      "La DLC concerne la sécurité : passé cette date, ne mange pas l'aliment, surtout viande et poisson.",
+      "La DDM concerne la qualité : l'aliment est souvent encore bon après, s'il a bon aspect et bonne odeur.",
+      "Regarder, sentir et vérifier la conservation aide mieux à décider que la date seule."
+     ],
+     "q": "T'arrive-t-il de jeter un aliment juste à cause de sa date ?",
+     "c": "Trouve chez toi un produit à DDM et vérifie-le à la vue et à l'odeur avant de décider."
+    },
+    "it": {
+     "t": "Capire le date sulle etichette",
+     "g": "Imparare la differenza tra data di scadenza e termine minimo di conservazione.",
+     "p": [
+      "La scadenza riguarda la sicurezza: dopo quella data non mangiare l'alimento, soprattutto carne e pesce.",
+      "Il termine minimo riguarda la qualità: spesso l'alimento è ancora buono dopo, se ha buon aspetto e odore.",
+      "Guardare, annusare e controllare la conservazione aiuta più della sola data."
+     ],
+     "q": "Ti capita di buttare del cibo solo per la data che riporta?",
+     "c": "Trova in casa un alimento con termine minimo e controllalo a vista e olfatto prima di decidere."
+    },
+    "pt": {
+     "t": "Perceber as datas nos rótulos",
+     "g": "Aprender a diferença entre prazo de validade e data de durabilidade mínima.",
+     "p": [
+      "O prazo de validade refere-se à segurança: depois dele, não comas o alimento, sobretudo carne e peixe.",
+      "A durabilidade mínima refere-se à qualidade: muitas vezes ainda está bom depois, se tiver bom aspeto e cheiro.",
+      "Ver, cheirar e verificar o armazenamento ajuda mais do que só a data."
+     ],
+     "q": "Já deitaste comida fora só por causa da data?",
+     "c": "Procura em casa um alimento com durabilidade mínima e verifica-o com a vista e o olfato antes de decidir."
+    },
+    "pt_BR": {
+     "t": "Entendendo as datas nos rótulos",
+     "g": "Aprender a diferença entre data de validade e data de consumo preferencial.",
+     "p": [
+      "A validade se refere à segurança: depois dela, não coma o alimento, sobretudo carne e peixe.",
+      "O consumo preferencial se refere à qualidade: muitas vezes ainda está bom depois, se tiver boa aparência e cheiro.",
+      "Olhar, cheirar e verificar o armazenamento ajuda mais do que só a data."
+     ],
+     "q": "Você já jogou comida fora só por causa da data?",
+     "c": "Procure em casa um alimento de consumo preferencial e confira com a vista e o olfato antes de decidir."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cooking with leftovers",
+     "g": "Turn extra rice, bread and vegetables into tasty new meals.",
+     "p": [
+      "Day-old rice becomes fried rice, and stale bread becomes toast, croutons or breadcrumbs.",
+      "Odd vegetables make soups, omelettes, stir-fries and curries.",
+      "Cool leftovers quickly and keep them covered in the fridge to stay safe."
+     ],
+     "q": "What is your best leftover recipe, or one you would like to try?",
+     "c": "Make one meal today partly or wholly from leftovers or forgotten ingredients."
+    },
+    "de": {
+     "t": "Kochen mit Resten",
+     "g": "Übrigen Reis, Brot und Gemüse in leckere neue Mahlzeiten verwandeln.",
+     "p": [
+      "Reis vom Vortag wird zu gebratenem Reis, altes Brot zu Toast, Croutons oder Semmelbröseln.",
+      "Gemüsereste ergeben Suppen, Omeletts, Pfannengerichte und Currys.",
+      "Reste schnell abkühlen und abgedeckt im Kühlschrank lagern, damit sie sicher bleiben."
+     ],
+     "q": "Was ist dein bestes Resterezept, oder eines, das du probieren möchtest?",
+     "c": "Koche heute ein Essen ganz oder teilweise aus Resten oder vergessenen Zutaten."
+    },
+    "es": {
+     "t": "Cocinar con sobras",
+     "g": "Convertir arroz, pan y verduras sobrantes en comidas nuevas y sabrosas.",
+     "p": [
+      "El arroz del día anterior se convierte en arroz frito, y el pan duro en tostadas, picatostes o pan rallado.",
+      "Las verduras sueltas sirven para sopas, tortillas, salteados y currys.",
+      "Enfría las sobras rápido y guárdalas tapadas en la nevera para que sean seguras."
+     ],
+     "q": "¿Cuál es tu mejor receta con sobras, o cuál te gustaría probar?",
+     "c": "Prepara hoy una comida en parte o del todo con sobras o ingredientes olvidados."
+    },
+    "fr": {
+     "t": "Cuisiner les restes",
+     "g": "Transformer riz, pain et légumes en trop en nouveaux plats savoureux.",
+     "p": [
+      "Le riz de la veille devient riz sauté, le pain rassis devient toasts, croûtons ou chapelure.",
+      "Les légumes dépareillés font soupes, omelettes, sautés et currys.",
+      "Refroidis vite les restes et garde-les couverts au frigo pour qu'ils restent sûrs."
+     ],
+     "q": "Quelle est ta meilleure recette de restes, ou celle que tu aimerais essayer ?",
+     "c": "Prépare aujourd'hui un repas en partie ou entièrement avec des restes ou des ingrédients oubliés."
+    },
+    "it": {
+     "t": "Cucinare con gli avanzi",
+     "g": "Trasformare riso, pane e verdure avanzati in nuovi piatti gustosi.",
+     "p": [
+      "Il riso del giorno prima diventa riso saltato, il pane raffermo toast, crostini o pangrattato.",
+      "Le verdure spaiate diventano zuppe, frittate, saltati e curry.",
+      "Raffredda in fretta gli avanzi e tienili coperti in frigo per mantenerli sicuri."
+     ],
+     "q": "Qual è la tua migliore ricetta con gli avanzi, o quale vorresti provare?",
+     "c": "Prepara oggi un pasto in parte o del tutto con avanzi o ingredienti dimenticati."
+    },
+    "pt": {
+     "t": "Cozinhar com sobras",
+     "g": "Transformar arroz, pão e legumes que sobraram em refeições novas e saborosas.",
+     "p": [
+      "O arroz do dia anterior vira arroz salteado, e o pão duro vira torradas, croutons ou pão ralado.",
+      "Os legumes soltos dão sopas, omeletes, salteados e caris.",
+      "Arrefece as sobras depressa e guarda-as tapadas no frigorífico para ficarem seguras."
+     ],
+     "q": "Qual é a tua melhor receita com sobras, ou qual gostavas de experimentar?",
+     "c": "Faz hoje uma refeição em parte ou por inteiro com sobras ou ingredientes esquecidos."
+    },
+    "pt_BR": {
+     "t": "Cozinhar com sobras",
+     "g": "Transformar arroz, pão e legumes que sobraram em refeições novas e saborosas.",
+     "p": [
+      "O arroz do dia anterior vira arroz frito, e o pão dormido vira torrada, croutons ou farinha de rosca.",
+      "Legumes soltos viram sopas, omeletes, refogados e currys.",
+      "Esfrie as sobras rápido e guarde cobertas na geladeira para ficarem seguras."
+     ],
+     "q": "Qual é a sua melhor receita com sobras, ou qual você gostaria de experimentar?",
+     "c": "Faça hoje uma refeição em parte ou inteira com sobras ou ingredientes esquecidos."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: first steps for the planet",
+     "g": "A light recap of cycles, waste, recycling and food habits.",
+     "p": [
+      "Nature runs on cycles of water and carbon that we can protect with small choices.",
+      "The waste ladder says: refuse, reduce, reuse, recycle, and sort carefully.",
+      "Plan meals, use leftovers and compost to keep food out of the bin."
+     ],
+     "q": "Which habit from the last month feels easiest, and which would you like to keep?",
+     "c": "Choose your favourite habit from this month and do it once more today, on purpose."
+    },
+    "de": {
+     "t": "Rückblick: erste Schritte für den Planeten",
+     "g": "Ein lockerer Rückblick auf Kreisläufe, Abfall, Recycling und Essgewohnheiten.",
+     "p": [
+      "Die Natur läuft in Wasser- und Kohlenstoffkreisläufen, die wir mit kleinen Entscheidungen schützen können.",
+      "Die Abfalltreppe sagt: vermeiden, verringern, wiederverwenden, recyceln und sorgfältig trennen.",
+      "Plane Mahlzeiten, nutze Reste und kompostiere, damit Essen nicht im Müll landet."
+     ],
+     "q": "Welche Gewohnheit des letzten Monats fällt dir am leichtesten, und welche willst du behalten?",
+     "c": "Wähle deine Lieblingsgewohnheit dieses Monats und übe sie heute bewusst noch einmal."
+    },
+    "es": {
+     "t": "Repaso: primeros pasos por el planeta",
+     "g": "Un repaso ligero de ciclos, residuos, reciclaje y hábitos de comida.",
+     "p": [
+      "La naturaleza funciona con ciclos de agua y carbono que podemos proteger con pequeñas decisiones.",
+      "La escalera de residuos dice: rechazar, reducir, reutilizar, reciclar y separar con cuidado.",
+      "Planifica comidas, aprovecha sobras y composta para que la comida no acabe en la basura."
+     ],
+     "q": "¿Qué hábito del último mes te resulta más fácil y cuál quieres mantener?",
+     "c": "Elige tu hábito favorito de este mes y hazlo una vez más hoy, a propósito."
+    },
+    "fr": {
+     "t": "Révision : premiers pas pour la planète",
+     "g": "Un petit récapitulatif des cycles, des déchets, du recyclage et des habitudes alimentaires.",
+     "p": [
+      "La nature fonctionne par cycles de l'eau et du carbone que de petits choix peuvent protéger.",
+      "L'échelle des déchets dit : refuser, réduire, réutiliser, recycler et trier avec soin.",
+      "Planifie tes repas, utilise les restes et composte pour garder la nourriture hors de la poubelle."
+     ],
+     "q": "Quelle habitude du mois dernier te semble la plus facile et laquelle veux-tu garder ?",
+     "c": "Choisis ton habitude préférée de ce mois et refais-la une fois aujourd'hui, exprès."
+    },
+    "it": {
+     "t": "Ripasso: i primi passi per il pianeta",
+     "g": "Un ripasso leggero di cicli, rifiuti, riciclo e abitudini alimentari.",
+     "p": [
+      "La natura funziona con cicli di acqua e carbonio che possiamo proteggere con piccole scelte.",
+      "La scala dei rifiuti dice: rifiutare, ridurre, riutilizzare, riciclare e separare con cura.",
+      "Pianifica i pasti, usa gli avanzi e composta per tenere il cibo fuori dal bidone."
+     ],
+     "q": "Quale abitudine dell'ultimo mese ti sembra più facile e quale vuoi mantenere?",
+     "c": "Scegli la tua abitudine preferita di questo mese e rifalla oggi una volta, di proposito."
+    },
+    "pt": {
+     "t": "Revisão: primeiros passos pelo planeta",
+     "g": "Uma revisão leve de ciclos, resíduos, reciclagem e hábitos alimentares.",
+     "p": [
+      "A natureza funciona com ciclos de água e carbono que podemos proteger com pequenas escolhas.",
+      "A escada dos resíduos diz: recusar, reduzir, reutilizar, reciclar e separar com cuidado.",
+      "Planeia refeições, aproveita sobras e faz composto para que a comida não vá para o lixo."
+     ],
+     "q": "Que hábito do último mês te parece mais fácil e qual queres manter?",
+     "c": "Escolhe o teu hábito preferido deste mês e repete-o hoje uma vez, de propósito."
+    },
+    "pt_BR": {
+     "t": "Revisão: primeiros passos pelo planeta",
+     "g": "Uma revisão leve de ciclos, resíduos, reciclagem e hábitos alimentares.",
+     "p": [
+      "A natureza funciona com ciclos de água e carbono que podemos proteger com pequenas escolhas.",
+      "A escada dos resíduos diz: recusar, reduzir, reutilizar, reciclar e separar com cuidado.",
+      "Planeje refeições, aproveite sobras e faça composto para que a comida não vá para o lixo."
+     ],
+     "q": "Qual hábito do último mês parece mais fácil para você e qual quer manter?",
+     "c": "Escolha seu hábito favorito deste mês e repita hoje uma vez, de propósito."
+    }
+   }
+  }
+ ]
+}

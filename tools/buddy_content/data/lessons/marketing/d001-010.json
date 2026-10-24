@@ -1,0 +1,835 @@
+{
+ "topic": "marketing",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is marketing?",
+     "g": "Understand marketing as creating, communicating and delivering value to people.",
+     "p": [
+      "Marketing starts with people's needs, not with ads or slogans.",
+      "It covers making something useful, explaining it clearly and getting it to people.",
+      "Good marketing helps the right person find the right thing."
+     ],
+     "q": "What product or brand did you discover recently, and what made you notice it?",
+     "c": "Pick one product you use and write one sentence on the value it gives you."
+    },
+    "de": {
+     "t": "Was ist Marketing?",
+     "g": "Marketing als das Schaffen, Vermitteln und Liefern von Wert für Menschen verstehen.",
+     "p": [
+      "Marketing beginnt bei den Bedürfnissen der Menschen, nicht bei Werbung oder Slogans.",
+      "Dazu gehört, etwas Nützliches zu schaffen, es klar zu erklären und es zu den Menschen zu bringen.",
+      "Gutes Marketing hilft der richtigen Person, das Richtige zu finden."
+     ],
+     "q": "Welches Produkt oder welche Marke hast du zuletzt entdeckt und was hat dich darauf aufmerksam gemacht?",
+     "c": "Wähle ein Produkt, das du nutzt, und schreibe einen Satz zu dem Wert, den es dir gibt."
+    },
+    "es": {
+     "t": "¿Qué es el marketing?",
+     "g": "Entender el marketing como crear, comunicar y entregar valor a las personas.",
+     "p": [
+      "El marketing empieza por las necesidades de la gente, no por los anuncios ni los eslóganes.",
+      "Incluye crear algo útil, explicarlo con claridad y hacerlo llegar a las personas.",
+      "Un buen marketing ayuda a la persona adecuada a encontrar lo adecuado."
+     ],
+     "q": "¿Qué producto o marca has descubierto hace poco y qué te hizo fijarte en él?",
+     "c": "Elige un producto que uses y escribe una frase sobre el valor que te aporta."
+    },
+    "fr": {
+     "t": "Qu'est-ce que le marketing ?",
+     "g": "Comprendre le marketing comme l'art de créer, communiquer et délivrer de la valeur aux gens.",
+     "p": [
+      "Le marketing part des besoins des gens, pas des pubs ni des slogans.",
+      "Il consiste à créer quelque chose d'utile, l'expliquer clairement et le rendre accessible.",
+      "Un bon marketing aide la bonne personne à trouver la bonne chose."
+     ],
+     "q": "Quel produit ou quelle marque as-tu découvert récemment, et qu'est-ce qui t'a fait la remarquer ?",
+     "c": "Choisis un produit que tu utilises et écris une phrase sur la valeur qu'il t'apporte."
+    },
+    "it": {
+     "t": "Che cos'è il marketing?",
+     "g": "Capire il marketing come creare, comunicare e offrire valore alle persone.",
+     "p": [
+      "Il marketing parte dai bisogni delle persone, non dalle pubblicità o dagli slogan.",
+      "Comprende creare qualcosa di utile, spiegarlo bene e farlo arrivare alle persone.",
+      "Un buon marketing aiuta la persona giusta a trovare la cosa giusta."
+     ],
+     "q": "Quale prodotto o marchio hai scoperto di recente e cosa te lo ha fatto notare?",
+     "c": "Scegli un prodotto che usi e scrivi una frase sul valore che ti dà."
+    },
+    "pt": {
+     "t": "O que é o marketing?",
+     "g": "Perceber o marketing como criar, comunicar e entregar valor às pessoas.",
+     "p": [
+      "O marketing começa nas necessidades das pessoas, não nos anúncios nem nos slogans.",
+      "Inclui criar algo útil, explicá-lo com clareza e fazê-lo chegar às pessoas.",
+      "Um bom marketing ajuda a pessoa certa a encontrar a coisa certa."
+     ],
+     "q": "Que produto ou marca descobriste recentemente e o que te chamou a atenção?",
+     "c": "Escolhe um produto que uses e escreve uma frase sobre o valor que ele te dá."
+    },
+    "pt_BR": {
+     "t": "O que é marketing?",
+     "g": "Entender o marketing como criar, comunicar e entregar valor para as pessoas.",
+     "p": [
+      "O marketing começa nas necessidades das pessoas, não em anúncios nem em slogans.",
+      "Isso inclui criar algo útil, explicar com clareza e fazer chegar até as pessoas.",
+      "Um bom marketing ajuda a pessoa certa a encontrar a coisa certa."
+     ],
+     "q": "Que produto ou marca você descobriu recentemente e o que chamou sua atenção?",
+     "c": "Escolha um produto que você usa e escreva uma frase sobre o valor que ele te dá."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Marketing is everywhere",
+     "g": "Spot marketing in shops, streets, apps and everyday conversations.",
+     "p": [
+      "Shop windows, packaging, logos and even a friend's recommendation are all marketing.",
+      "Not all marketing is paid: word of mouth and a good reputation count too.",
+      "Noticing it makes you a more thoughtful buyer and a better marketer."
+     ],
+     "q": "Where did you run into marketing today without really noticing?",
+     "c": "Today, spot five marketing moments and note what each one wants you to feel."
+    },
+    "de": {
+     "t": "Marketing ist überall",
+     "g": "Marketing in Geschäften, auf der Straße, in Apps und im Alltag erkennen.",
+     "p": [
+      "Schaufenster, Verpackungen, Logos und sogar die Empfehlung einer Freundin sind Marketing.",
+      "Nicht alles Marketing ist bezahlt: Mundpropaganda und ein guter Ruf zählen auch.",
+      "Wer es bemerkt, kauft bewusster und wird ein besserer Marketer."
+     ],
+     "q": "Wo ist dir heute Marketing begegnet, ohne dass du es richtig bemerkt hast?",
+     "c": "Finde heute fünf Marketing-Momente und notiere, was jeder bei dir auslösen will."
+    },
+    "es": {
+     "t": "El marketing está en todas partes",
+     "g": "Detectar el marketing en tiendas, calles, apps y conversaciones cotidianas.",
+     "p": [
+      "Escaparates, envases, logotipos e incluso la recomendación de un amigo son marketing.",
+      "No todo el marketing se paga: el boca a boca y la buena reputación también cuentan.",
+      "Fijarte en ello te hace un comprador más reflexivo y un mejor profesional."
+     ],
+     "q": "¿Dónde te has topado hoy con marketing sin darte cuenta?",
+     "c": "Hoy detecta cinco momentos de marketing y anota qué quiere que sientas cada uno."
+    },
+    "fr": {
+     "t": "Le marketing est partout",
+     "g": "Repérer le marketing dans les magasins, la rue, les applis et les conversations.",
+     "p": [
+      "Vitrines, emballages, logos et même le conseil d'un ami relèvent du marketing.",
+      "Tout n'est pas payant : le bouche-à-oreille et une bonne réputation comptent aussi.",
+      "Le remarquer fait de toi un acheteur plus attentif et un meilleur marketeur."
+     ],
+     "q": "Où as-tu croisé du marketing aujourd'hui sans vraiment le remarquer ?",
+     "c": "Aujourd'hui, repère cinq moments de marketing et note ce que chacun veut te faire ressentir."
+    },
+    "it": {
+     "t": "Il marketing è ovunque",
+     "g": "Individuare il marketing nei negozi, per strada, nelle app e nelle conversazioni.",
+     "p": [
+      "Vetrine, confezioni, loghi e perfino il consiglio di un amico sono marketing.",
+      "Non tutto il marketing è a pagamento: contano anche il passaparola e la reputazione.",
+      "Accorgertene ti rende un acquirente più attento e un marketer migliore."
+     ],
+     "q": "Dove hai incontrato del marketing oggi senza farci davvero caso?",
+     "c": "Oggi individua cinque momenti di marketing e annota cosa vuole farti sentire ciascuno."
+    },
+    "pt": {
+     "t": "O marketing está em todo o lado",
+     "g": "Reconhecer o marketing em lojas, ruas, aplicações e conversas do dia a dia.",
+     "p": [
+      "Montras, embalagens, logótipos e até a recomendação de um amigo são marketing.",
+      "Nem todo o marketing é pago: o passa-palavra e a boa reputação também contam.",
+      "Reparar nisso faz de ti um comprador mais atento e um melhor profissional."
+     ],
+     "q": "Onde te cruzaste hoje com marketing sem dares por isso?",
+     "c": "Hoje, deteta cinco momentos de marketing e anota o que cada um quer que sintas."
+    },
+    "pt_BR": {
+     "t": "O marketing está em todo lugar",
+     "g": "Reconhecer o marketing em lojas, ruas, apps e conversas do dia a dia.",
+     "p": [
+      "Vitrines, embalagens, logos e até a indicação de um amigo são marketing.",
+      "Nem todo marketing é pago: o boca a boca e a boa reputação também contam.",
+      "Perceber isso faz de você um comprador mais atento e um profissional melhor."
+     ],
+     "q": "Onde você esbarrou em marketing hoje sem perceber?",
+     "c": "Hoje, identifique cinco momentos de marketing e anote o que cada um quer que você sinta."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Needs, wants and demand",
+     "g": "See how human needs become wants and then real buying decisions.",
+     "p": [
+      "A need is basic, like food or connection; a want is a specific way to meet it.",
+      "Demand appears when a want meets the ability and willingness to pay.",
+      "Marketers do not invent needs; they connect products to needs people already have."
+     ],
+     "q": "Think of something you bought recently: what need was behind it?",
+     "c": "List three recent purchases and label each one need, want or a mix of both."
+    },
+    "de": {
+     "t": "Bedürfnisse, Wünsche und Nachfrage",
+     "g": "Verstehen, wie aus Bedürfnissen Wünsche und dann Kaufentscheidungen werden.",
+     "p": [
+      "Ein Bedürfnis ist grundlegend, etwa Essen oder Nähe; ein Wunsch ist ein konkreter Weg, es zu erfüllen.",
+      "Nachfrage entsteht, wenn ein Wunsch auf Kaufkraft und Kaufbereitschaft trifft.",
+      "Marketer erfinden keine Bedürfnisse, sie verbinden Produkte mit vorhandenen Bedürfnissen."
+     ],
+     "q": "Denk an etwas, das du kürzlich gekauft hast: Welches Bedürfnis steckte dahinter?",
+     "c": "Liste drei letzte Käufe auf und ordne jeden zu: Bedürfnis, Wunsch oder beides."
+    },
+    "es": {
+     "t": "Necesidades, deseos y demanda",
+     "g": "Ver cómo las necesidades humanas se convierten en deseos y en decisiones de compra.",
+     "p": [
+      "Una necesidad es básica, como comer o conectar; un deseo es una forma concreta de cubrirla.",
+      "La demanda aparece cuando un deseo se une a la capacidad y la voluntad de pagar.",
+      "Los profesionales no inventan necesidades: conectan productos con necesidades que ya existen."
+     ],
+     "q": "Piensa en algo que compraste hace poco: ¿qué necesidad había detrás?",
+     "c": "Anota tres compras recientes y clasifica cada una como necesidad, deseo o mezcla."
+    },
+    "fr": {
+     "t": "Besoins, envies et demande",
+     "g": "Voir comment les besoins deviennent des envies puis de vraies décisions d'achat.",
+     "p": [
+      "Un besoin est fondamental, comme manger ou être en lien ; une envie est une façon précise d'y répondre.",
+      "La demande naît quand une envie rencontre la capacité et la volonté de payer.",
+      "Les marketeurs n'inventent pas les besoins : ils relient les produits à des besoins déjà là."
+     ],
+     "q": "Pense à un achat récent : quel besoin se cachait derrière ?",
+     "c": "Liste trois achats récents et classe chacun : besoin, envie ou un mélange des deux."
+    },
+    "it": {
+     "t": "Bisogni, desideri e domanda",
+     "g": "Vedere come i bisogni diventano desideri e poi vere decisioni d'acquisto.",
+     "p": [
+      "Un bisogno è di base, come mangiare o stare con gli altri; un desiderio è un modo preciso di soddisfarlo.",
+      "La domanda nasce quando un desiderio incontra la capacità e la volontà di pagare.",
+      "I marketer non inventano i bisogni: collegano i prodotti a bisogni che le persone hanno già."
+     ],
+     "q": "Pensa a un acquisto recente: quale bisogno c'era dietro?",
+     "c": "Elenca tre acquisti recenti e classifica ognuno: bisogno, desiderio o un mix."
+    },
+    "pt": {
+     "t": "Necessidades, desejos e procura",
+     "g": "Ver como as necessidades se tornam desejos e depois decisões de compra.",
+     "p": [
+      "Uma necessidade é básica, como comer ou ligar-se aos outros; um desejo é uma forma concreta de a satisfazer.",
+      "A procura surge quando um desejo encontra capacidade e vontade de pagar.",
+      "Os profissionais não inventam necessidades: ligam produtos a necessidades que já existem."
+     ],
+     "q": "Pensa numa compra recente: que necessidade estava por trás?",
+     "c": "Lista três compras recentes e classifica cada uma: necessidade, desejo ou ambos."
+    },
+    "pt_BR": {
+     "t": "Necessidades, desejos e demanda",
+     "g": "Ver como as necessidades viram desejos e depois decisões de compra.",
+     "p": [
+      "Uma necessidade é básica, como comer ou se conectar; um desejo é um jeito específico de atendê-la.",
+      "A demanda surge quando um desejo encontra capacidade e disposição de pagar.",
+      "Profissionais não inventam necessidades: ligam produtos a necessidades que já existem."
+     ],
+     "q": "Pense em algo que você comprou recentemente: que necessidade havia por trás?",
+     "c": "Liste três compras recentes e classifique cada uma: necessidade, desejo ou os dois."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Value from the customer's view",
+     "g": "Learn why customers buy benefits and feelings, not just features.",
+     "p": [
+      "Value is what the customer gains minus what they give up in money, time and effort.",
+      "People often buy peace of mind, status, fun or saved time.",
+      "Seeing through the customer's eyes beats guessing from your own."
+     ],
+     "q": "Think of a favourite product: what does it give you beyond what it does?",
+     "c": "Ask one person why they chose a product they own, and write down their exact words."
+    },
+    "de": {
+     "t": "Wert aus Kundensicht",
+     "g": "Lernen, warum Kunden Nutzen und Gefühle kaufen, nicht nur Eigenschaften.",
+     "p": [
+      "Wert ist, was der Kunde gewinnt, minus dem, was er an Geld, Zeit und Aufwand aufgibt.",
+      "Menschen kaufen oft Sicherheit, Status, Freude oder gesparte Zeit.",
+      "Durch die Augen des Kunden zu sehen schlägt Raten aus der eigenen Sicht."
+     ],
+     "q": "Denk an ein Lieblingsprodukt: Was gibt es dir über seine Funktion hinaus?",
+     "c": "Frag eine Person, warum sie ein Produkt gewählt hat, und notiere ihre genauen Worte."
+    },
+    "es": {
+     "t": "El valor desde el punto de vista del cliente",
+     "g": "Aprender por qué los clientes compran beneficios y emociones, no solo características.",
+     "p": [
+      "El valor es lo que gana el cliente menos lo que cede en dinero, tiempo y esfuerzo.",
+      "La gente suele comprar tranquilidad, estatus, diversión o tiempo ahorrado.",
+      "Mirar con los ojos del cliente es mejor que adivinar desde los propios."
+     ],
+     "q": "Piensa en un producto favorito: ¿qué te da más allá de lo que hace?",
+     "c": "Pregunta a una persona por qué eligió un producto que tiene y apunta sus palabras exactas."
+    },
+    "fr": {
+     "t": "La valeur vue par le client",
+     "g": "Apprendre pourquoi les clients achètent des bénéfices et des émotions, pas que des caractéristiques.",
+     "p": [
+      "La valeur, c'est ce que le client gagne moins ce qu'il donne en argent, temps et effort.",
+      "Les gens achètent souvent de la tranquillité, du statut, du plaisir ou du temps gagné.",
+      "Voir avec les yeux du client vaut mieux que deviner depuis les siens."
+     ],
+     "q": "Pense à un produit préféré : que te donne-t-il au-delà de sa fonction ?",
+     "c": "Demande à une personne pourquoi elle a choisi un produit et note ses mots exacts."
+    },
+    "it": {
+     "t": "Il valore dal punto di vista del cliente",
+     "g": "Imparare perché i clienti comprano benefici ed emozioni, non solo caratteristiche.",
+     "p": [
+      "Il valore è ciò che il cliente ottiene meno ciò che cede in denaro, tempo e fatica.",
+      "Spesso le persone comprano tranquillità, status, divertimento o tempo risparmiato.",
+      "Guardare con gli occhi del cliente è meglio che indovinare dai propri."
+     ],
+     "q": "Pensa a un prodotto preferito: cosa ti dà oltre a ciò che fa?",
+     "c": "Chiedi a una persona perché ha scelto un prodotto e scrivi le sue parole esatte."
+    },
+    "pt": {
+     "t": "O valor do ponto de vista do cliente",
+     "g": "Aprender porque os clientes compram benefícios e emoções, não só características.",
+     "p": [
+      "O valor é o que o cliente ganha menos o que cede em dinheiro, tempo e esforço.",
+      "As pessoas compram muitas vezes tranquilidade, estatuto, diversão ou tempo poupado.",
+      "Ver pelos olhos do cliente é melhor do que adivinhar pelos nossos."
+     ],
+     "q": "Pensa num produto favorito: o que te dá para além do que faz?",
+     "c": "Pergunta a uma pessoa porque escolheu um produto que tem e anota as palavras exatas."
+    },
+    "pt_BR": {
+     "t": "O valor do ponto de vista do cliente",
+     "g": "Aprender por que os clientes compram benefícios e emoções, não só características.",
+     "p": [
+      "Valor é o que o cliente ganha menos o que abre mão em dinheiro, tempo e esforço.",
+      "As pessoas costumam comprar tranquilidade, status, diversão ou tempo economizado.",
+      "Ver pelos olhos do cliente é melhor do que adivinhar pelos seus."
+     ],
+     "q": "Pense em um produto favorito: o que ele te dá além do que faz?",
+     "c": "Pergunte a uma pessoa por que escolheu um produto que tem e anote as palavras exatas."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Features versus benefits",
+     "g": "Turn what a product is into what it does for the person using it.",
+     "p": [
+      "A feature is a fact about the product; a benefit is what that fact means for you.",
+      "Use the bridge phrase so you can: waterproof, so you can walk home dry.",
+      "Lead with the benefit, then back it up with the feature."
+     ],
+     "q": "Which feature of something you own do you value for its benefit?",
+     "c": "Take an object on your desk and write three features, each turned into a benefit."
+    },
+    "de": {
+     "t": "Eigenschaften und Nutzen",
+     "g": "Aus dem, was ein Produkt ist, machen, was es für die Nutzer tut.",
+     "p": [
+      "Eine Eigenschaft ist ein Fakt zum Produkt; ein Nutzen ist, was dieser Fakt für dich bedeutet.",
+      "Nutze die Brücke damit du: wasserdicht, damit du trocken nach Hause kommst.",
+      "Stelle den Nutzen voran und belege ihn dann mit der Eigenschaft."
+     ],
+     "q": "Welche Eigenschaft eines Dinges, das du besitzt, schätzt du wegen ihres Nutzens?",
+     "c": "Nimm einen Gegenstand auf deinem Tisch und schreibe drei Eigenschaften als Nutzen um."
+    },
+    "es": {
+     "t": "Características frente a beneficios",
+     "g": "Convertir lo que un producto es en lo que hace por quien lo usa.",
+     "p": [
+      "Una característica es un dato del producto; un beneficio es lo que ese dato significa para ti.",
+      "Usa el puente para que puedas: impermeable, para que llegues seco a casa.",
+      "Empieza por el beneficio y respáldalo después con la característica."
+     ],
+     "q": "¿Qué característica de algo que tienes valoras por su beneficio?",
+     "c": "Toma un objeto de tu mesa y escribe tres características convertidas en beneficios."
+    },
+    "fr": {
+     "t": "Caractéristiques et bénéfices",
+     "g": "Transformer ce qu'est un produit en ce qu'il fait pour celui qui l'utilise.",
+     "p": [
+      "Une caractéristique est un fait sur le produit ; un bénéfice est ce que ce fait signifie pour toi.",
+      "Utilise le pont pour que tu puisses : imperméable, pour rentrer au sec.",
+      "Commence par le bénéfice, puis appuie-le avec la caractéristique."
+     ],
+     "q": "Quelle caractéristique d'un objet que tu possèdes apprécies-tu pour son bénéfice ?",
+     "c": "Prends un objet sur ton bureau et réécris trois caractéristiques en bénéfices."
+    },
+    "it": {
+     "t": "Caratteristiche e benefici",
+     "g": "Trasformare ciò che un prodotto è in ciò che fa per chi lo usa.",
+     "p": [
+      "Una caratteristica è un fatto sul prodotto; un beneficio è ciò che quel fatto significa per te.",
+      "Usa il ponte così puoi: impermeabile, così torni a casa asciutto.",
+      "Parti dal beneficio e poi sostienilo con la caratteristica."
+     ],
+     "q": "Quale caratteristica di un oggetto che possiedi apprezzi per il suo beneficio?",
+     "c": "Prendi un oggetto sulla scrivania e trasforma tre caratteristiche in benefici."
+    },
+    "pt": {
+     "t": "Características e benefícios",
+     "g": "Transformar o que um produto é no que ele faz por quem o usa.",
+     "p": [
+      "Uma característica é um facto sobre o produto; um benefício é o que esse facto significa para ti.",
+      "Usa a ponte para que possas: impermeável, para chegares a casa seco.",
+      "Começa pelo benefício e depois apoia-o com a característica."
+     ],
+     "q": "Que característica de algo que tens valorizas pelo seu benefício?",
+     "c": "Pega num objeto da tua secretária e transforma três características em benefícios."
+    },
+    "pt_BR": {
+     "t": "Características e benefícios",
+     "g": "Transformar o que um produto é no que ele faz por quem o usa.",
+     "p": [
+      "Uma característica é um fato sobre o produto; um benefício é o que esse fato significa para você.",
+      "Use a ponte para que você possa: impermeável, para chegar em casa seco.",
+      "Comece pelo benefício e depois sustente com a característica."
+     ],
+     "q": "Que característica de algo que você tem você valoriza pelo benefício?",
+     "c": "Pegue um objeto da sua mesa e transforme três características em benefícios."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The marketing mix",
+     "g": "Learn product, price, place and promotion as the classic four Ps.",
+     "p": [
+      "Product is what you offer; price is what it costs; place is where it is found.",
+      "Promotion is how people hear about it; all four must fit together.",
+      "If one P clashes with the others, customers feel it right away."
+     ],
+     "q": "Which of the four Ps do you think matters most for your favourite brand?",
+     "c": "Pick a snack or drink and describe its four Ps in one line each."
+    },
+    "de": {
+     "t": "Der Marketing-Mix",
+     "g": "Produkt, Preis, Platz und Promotion als die klassischen vier Ps kennenlernen.",
+     "p": [
+      "Produkt ist, was du anbietest; Preis, was es kostet; Platz, wo man es findet.",
+      "Promotion ist, wie Menschen davon erfahren; alle vier müssen zusammenpassen.",
+      "Passt ein P nicht zu den anderen, spüren Kunden das sofort."
+     ],
+     "q": "Welches der vier Ps ist deiner Meinung nach bei deiner Lieblingsmarke am wichtigsten?",
+     "c": "Wähle einen Snack oder ein Getränk und beschreibe die vier Ps in je einer Zeile."
+    },
+    "es": {
+     "t": "El marketing mix",
+     "g": "Aprender producto, precio, lugar y promoción como las cuatro P clásicas.",
+     "p": [
+      "El producto es lo que ofreces; el precio, lo que cuesta; el lugar, dónde se encuentra.",
+      "La promoción es cómo la gente se entera; las cuatro deben encajar entre sí.",
+      "Si una P choca con las demás, los clientes lo notan enseguida."
+     ],
+     "q": "¿Cuál de las cuatro P crees que más importa en tu marca favorita?",
+     "c": "Elige un snack o bebida y describe sus cuatro P en una línea cada una."
+    },
+    "fr": {
+     "t": "Le mix marketing",
+     "g": "Découvrir produit, prix, place et promotion, les quatre P classiques.",
+     "p": [
+      "Le produit est ce que tu offres ; le prix, ce qu'il coûte ; la place, où on le trouve.",
+      "La promotion, c'est comment on en entend parler ; les quatre doivent s'accorder.",
+      "Si un P jure avec les autres, les clients le sentent tout de suite."
+     ],
+     "q": "Lequel des quatre P compte le plus pour ta marque préférée, selon toi ?",
+     "c": "Choisis un snack ou une boisson et décris ses quatre P en une ligne chacun."
+    },
+    "it": {
+     "t": "Il marketing mix",
+     "g": "Imparare prodotto, prezzo, luogo e promozione come le quattro P classiche.",
+     "p": [
+      "Il prodotto è ciò che offri; il prezzo, quanto costa; il luogo, dove si trova.",
+      "La promozione è come se ne sente parlare; le quattro devono stare insieme.",
+      "Se una P stona con le altre, i clienti lo sentono subito."
+     ],
+     "q": "Quale delle quattro P conta di più per il tuo marchio preferito, secondo te?",
+     "c": "Scegli uno snack o una bevanda e descrivi le sue quattro P in una riga ciascuna."
+    },
+    "pt": {
+     "t": "O marketing mix",
+     "g": "Conhecer produto, preço, local e promoção como os quatro Ps clássicos.",
+     "p": [
+      "O produto é o que ofereces; o preço, o que custa; o local, onde se encontra.",
+      "A promoção é como as pessoas ouvem falar dele; os quatro têm de combinar.",
+      "Se um P destoa dos outros, os clientes notam logo."
+     ],
+     "q": "Qual dos quatro Ps achas que mais importa na tua marca favorita?",
+     "c": "Escolhe um snack ou bebida e descreve os quatro Ps numa linha cada."
+    },
+    "pt_BR": {
+     "t": "O mix de marketing",
+     "g": "Conhecer produto, preço, praça e promoção como os quatro Ps clássicos.",
+     "p": [
+      "Produto é o que você oferece; preço, quanto custa; praça, onde se encontra.",
+      "Promoção é como as pessoas ficam sabendo; os quatro precisam combinar.",
+      "Se um P destoa dos outros, os clientes percebem na hora."
+     ],
+     "q": "Qual dos quatro Ps você acha que mais importa na sua marca favorita?",
+     "c": "Escolha um lanche ou bebida e descreva os quatro Ps em uma linha cada."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Product in the marketing mix",
+     "g": "See how the product itself is the first and strongest message.",
+     "p": [
+      "Quality, design and reliability speak louder than any advertisement.",
+      "A product includes its packaging, its guarantee and the service around it.",
+      "Great marketing cannot save a product that disappoints people."
+     ],
+     "q": "What product have you recommended to others, and why that one?",
+     "c": "Write three ways your favourite product communicates quality without a single word."
+    },
+    "de": {
+     "t": "Das Produkt im Marketing-Mix",
+     "g": "Erkennen, dass das Produkt selbst die erste und stärkste Botschaft ist.",
+     "p": [
+      "Qualität, Design und Zuverlässigkeit sprechen lauter als jede Anzeige.",
+      "Zum Produkt gehören auch Verpackung, Garantie und der Service drumherum.",
+      "Großartiges Marketing rettet kein Produkt, das enttäuscht."
+     ],
+     "q": "Welches Produkt hast du anderen empfohlen und warum gerade dieses?",
+     "c": "Schreibe drei Wege auf, wie dein Lieblingsprodukt ohne ein Wort Qualität zeigt."
+    },
+    "es": {
+     "t": "El producto en el marketing mix",
+     "g": "Ver cómo el propio producto es el primer y más fuerte mensaje.",
+     "p": [
+      "La calidad, el diseño y la fiabilidad hablan más alto que cualquier anuncio.",
+      "Un producto incluye su envase, su garantía y el servicio que lo rodea.",
+      "Un gran marketing no salva un producto que decepciona."
+     ],
+     "q": "¿Qué producto has recomendado a otros y por qué ese?",
+     "c": "Escribe tres formas en que tu producto favorito comunica calidad sin una sola palabra."
+    },
+    "fr": {
+     "t": "Le produit dans le mix marketing",
+     "g": "Voir comment le produit lui-même est le premier et le plus fort des messages.",
+     "p": [
+      "La qualité, le design et la fiabilité parlent plus fort que n'importe quelle pub.",
+      "Un produit inclut son emballage, sa garantie et le service autour.",
+      "Un excellent marketing ne sauve pas un produit qui déçoit."
+     ],
+     "q": "Quel produit as-tu recommandé à d'autres, et pourquoi celui-là ?",
+     "c": "Écris trois façons dont ton produit préféré montre sa qualité sans un mot."
+    },
+    "it": {
+     "t": "Il prodotto nel marketing mix",
+     "g": "Vedere come il prodotto stesso sia il primo e più forte messaggio.",
+     "p": [
+      "Qualità, design e affidabilità parlano più forte di qualsiasi pubblicità.",
+      "Un prodotto include confezione, garanzia e il servizio che lo accompagna.",
+      "Un grande marketing non salva un prodotto che delude."
+     ],
+     "q": "Quale prodotto hai consigliato ad altri e perché proprio quello?",
+     "c": "Scrivi tre modi in cui il tuo prodotto preferito comunica qualità senza una parola."
+    },
+    "pt": {
+     "t": "O produto no marketing mix",
+     "g": "Ver como o próprio produto é a primeira e mais forte mensagem.",
+     "p": [
+      "A qualidade, o design e a fiabilidade falam mais alto do que qualquer anúncio.",
+      "Um produto inclui a embalagem, a garantia e o serviço à volta.",
+      "Um ótimo marketing não salva um produto que desilude."
+     ],
+     "q": "Que produto recomendaste a outros e porquê esse?",
+     "c": "Escreve três formas como o teu produto favorito comunica qualidade sem uma palavra."
+    },
+    "pt_BR": {
+     "t": "O produto no mix de marketing",
+     "g": "Ver como o próprio produto é a primeira e mais forte mensagem.",
+     "p": [
+      "Qualidade, design e confiabilidade falam mais alto que qualquer anúncio.",
+      "Um produto inclui a embalagem, a garantia e o atendimento ao redor.",
+      "Um ótimo marketing não salva um produto que decepciona."
+     ],
+     "q": "Que produto você já indicou para outras pessoas e por que esse?",
+     "c": "Escreva três jeitos de seu produto favorito comunicar qualidade sem uma palavra."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Price as a signal",
+     "g": "See how price communicates quality, positioning and value.",
+     "p": [
+      "A price tells people what to expect before they try anything.",
+      "Very low can signal doubt; high can signal premium, but only if the value backs it up.",
+      "Fair pricing covers costs, respects customers and reflects the value delivered."
+     ],
+     "q": "Do you ever judge a product by its price? When did that feel right or wrong?",
+     "c": "Compare two similar products at different prices and note what each price suggests."
+    },
+    "de": {
+     "t": "Preis als Signal",
+     "g": "Verstehen, wie der Preis Qualität, Positionierung und Wert vermittelt.",
+     "p": [
+      "Ein Preis sagt den Menschen, was sie erwarten können, bevor sie etwas ausprobieren.",
+      "Sehr niedrig kann Zweifel wecken, hoch kann Premium bedeuten, aber nur mit passendem Wert.",
+      "Faire Preise decken Kosten, respektieren Kunden und spiegeln den gelieferten Wert."
+     ],
+     "q": "Beurteilst du Produkte nach dem Preis? Wann hat das gestimmt oder nicht?",
+     "c": "Vergleiche zwei ähnliche Produkte mit verschiedenen Preisen und notiere, was jeder Preis andeutet."
+    },
+    "es": {
+     "t": "El precio como señal",
+     "g": "Ver cómo el precio comunica calidad, posicionamiento y valor.",
+     "p": [
+      "Un precio dice qué esperar antes de probar nada.",
+      "Muy bajo puede generar dudas; alto puede indicar premium, pero solo si el valor lo respalda.",
+      "Un precio justo cubre costes, respeta al cliente y refleja el valor entregado."
+     ],
+     "q": "¿Juzgas productos por su precio? ¿Cuándo acertaste o te equivocaste?",
+     "c": "Compara dos productos parecidos con distinto precio y anota qué sugiere cada uno."
+    },
+    "fr": {
+     "t": "Le prix comme signal",
+     "g": "Voir comment le prix communique qualité, positionnement et valeur.",
+     "p": [
+      "Un prix dit à quoi s'attendre avant d'essayer quoi que ce soit.",
+      "Très bas peut semer le doute ; élevé peut évoquer le premium, si la valeur suit.",
+      "Un prix juste couvre les coûts, respecte les clients et reflète la valeur apportée."
+     ],
+     "q": "Juges-tu parfois un produit à son prix ? Quand cela t'a-t-il aidé ou trompé ?",
+     "c": "Compare deux produits similaires à prix différents et note ce que suggère chaque prix."
+    },
+    "it": {
+     "t": "Il prezzo come segnale",
+     "g": "Vedere come il prezzo comunica qualità, posizionamento e valore.",
+     "p": [
+      "Un prezzo dice cosa aspettarsi prima di provare qualsiasi cosa.",
+      "Molto basso può far dubitare; alto può dire premium, ma solo se il valore lo sostiene.",
+      "Un prezzo equo copre i costi, rispetta i clienti e riflette il valore offerto."
+     ],
+     "q": "Giudichi mai un prodotto dal prezzo? Quando ti ha aiutato o ingannato?",
+     "c": "Confronta due prodotti simili a prezzi diversi e annota cosa suggerisce ogni prezzo."
+    },
+    "pt": {
+     "t": "O preço como sinal",
+     "g": "Ver como o preço comunica qualidade, posicionamento e valor.",
+     "p": [
+      "Um preço diz o que esperar antes de experimentares fosse o que fosse.",
+      "Muito baixo pode gerar dúvidas; alto pode sugerir premium, mas só se o valor o justificar.",
+      "Um preço justo cobre custos, respeita os clientes e reflete o valor entregue."
+     ],
+     "q": "Costumas julgar um produto pelo preço? Quando acertaste ou falhaste?",
+     "c": "Compara dois produtos parecidos de preços diferentes e anota o que cada preço sugere."
+    },
+    "pt_BR": {
+     "t": "O preço como sinal",
+     "g": "Ver como o preço comunica qualidade, posicionamento e valor.",
+     "p": [
+      "Um preço diz o que esperar antes de você experimentar qualquer coisa.",
+      "Muito baixo pode gerar dúvida; alto pode sugerir premium, mas só se o valor sustentar.",
+      "Um preço justo cobre custos, respeita o cliente e reflete o valor entregue."
+     ],
+     "q": "Você costuma julgar um produto pelo preço? Quando acertou ou errou?",
+     "c": "Compare dois produtos parecidos de preços diferentes e anote o que cada preço sugere."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Place and distribution",
+     "g": "Get the product to where customers actually are.",
+     "p": [
+      "Place means every spot where people can find and buy: shops, websites, markets, apps.",
+      "Being easy to find and easy to get matters as much as being good.",
+      "Go where your audience already spends time instead of asking them to travel."
+     ],
+     "q": "Where do you usually buy things, and why do you prefer those places?",
+     "c": "Choose a product and list every place you could buy it, then pick the most convenient."
+    },
+    "de": {
+     "t": "Platz und Vertrieb",
+     "g": "Das Produkt dorthin bringen, wo die Kunden tatsächlich sind.",
+     "p": [
+      "Platz meint jeden Ort, an dem man finden und kaufen kann: Läden, Websites, Märkte, Apps.",
+      "Leicht zu finden und leicht zu bekommen zu sein, zählt so viel wie gut zu sein.",
+      "Geh dorthin, wo deine Zielgruppe ohnehin Zeit verbringt, statt sie reisen zu lassen."
+     ],
+     "q": "Wo kaufst du meistens ein und warum bevorzugst du diese Orte?",
+     "c": "Wähle ein Produkt, liste alle Kaufmöglichkeiten auf und wähle die bequemste."
+    },
+    "es": {
+     "t": "Lugar y distribución",
+     "g": "Hacer llegar el producto a donde están los clientes de verdad.",
+     "p": [
+      "El lugar es cada sitio donde se puede encontrar y comprar: tiendas, webs, mercados, apps.",
+      "Ser fácil de encontrar y de conseguir importa tanto como ser bueno.",
+      "Ve donde tu público ya pasa el tiempo en lugar de pedirle que viaje."
+     ],
+     "q": "¿Dónde sueles comprar y por qué prefieres esos sitios?",
+     "c": "Elige un producto, lista todos los sitios donde comprarlo y elige el más cómodo."
+    },
+    "fr": {
+     "t": "Place et distribution",
+     "g": "Amener le produit là où se trouvent vraiment les clients.",
+     "p": [
+      "La place, c'est chaque endroit où l'on peut trouver et acheter : boutiques, sites, marchés, applis.",
+      "Être facile à trouver et à obtenir compte autant qu'être bon.",
+      "Va là où ton public passe déjà du temps plutôt que de lui demander de venir."
+     ],
+     "q": "Où achètes-tu d'habitude, et pourquoi préfères-tu ces endroits ?",
+     "c": "Choisis un produit, liste tous les lieux où l'acheter et retiens le plus pratique."
+    },
+    "it": {
+     "t": "Luogo e distribuzione",
+     "g": "Portare il prodotto dove i clienti si trovano davvero.",
+     "p": [
+      "Il luogo è ogni punto in cui si può trovare e comprare: negozi, siti, mercati, app.",
+      "Essere facili da trovare e da ottenere conta quanto essere buoni.",
+      "Vai dove il tuo pubblico già passa il tempo invece di chiedergli di spostarsi."
+     ],
+     "q": "Dove compri di solito e perché preferisci quei posti?",
+     "c": "Scegli un prodotto, elenca tutti i posti dove comprarlo e scegli il più comodo."
+    },
+    "pt": {
+     "t": "Local e distribuição",
+     "g": "Fazer o produto chegar onde os clientes realmente estão.",
+     "p": [
+      "O local é cada sítio onde se pode encontrar e comprar: lojas, sites, mercados, aplicações.",
+      "Ser fácil de encontrar e de obter importa tanto quanto ser bom.",
+      "Vai onde o teu público já passa tempo, em vez de lhe pedir que se desloque."
+     ],
+     "q": "Onde costumas comprar e porque preferes esses sítios?",
+     "c": "Escolhe um produto, lista todos os sítios onde o comprar e escolhe o mais prático."
+    },
+    "pt_BR": {
+     "t": "Praça e distribuição",
+     "g": "Fazer o produto chegar onde os clientes realmente estão.",
+     "p": [
+      "Praça é cada lugar onde dá para encontrar e comprar: lojas, sites, feiras, apps.",
+      "Ser fácil de encontrar e de obter importa tanto quanto ser bom.",
+      "Vá onde seu público já passa o tempo, em vez de pedir que ele se desloque."
+     ],
+     "q": "Onde você costuma comprar e por que prefere esses lugares?",
+     "c": "Escolha um produto, liste todos os lugares onde comprar e escolha o mais prático."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Promotion explained",
+     "g": "Meet advertising, sales, PR and content as ways to communicate.",
+     "p": [
+      "Advertising is paid and controlled; PR earns attention through stories and relationships.",
+      "Content teaches or entertains so people come to you; sales talk one to one.",
+      "The best promotion is honest, clear and useful to the person receiving it."
+     ],
+     "q": "Which kind of promotion do you trust most, and which do you ignore?",
+     "c": "Find one example each of advertising, PR and content from brands around you."
+    },
+    "de": {
+     "t": "Promotion erklärt",
+     "g": "Werbung, Verkauf, PR und Content als Wege der Kommunikation kennenlernen.",
+     "p": [
+      "Werbung ist bezahlt und kontrolliert; PR verdient Aufmerksamkeit durch Geschichten und Beziehungen.",
+      "Content lehrt oder unterhält, damit Menschen zu dir kommen; Verkauf ist ein Gespräch von Mensch zu Mensch.",
+      "Die beste Promotion ist ehrlich, klar und nützlich für den Empfänger."
+     ],
+     "q": "Welcher Art von Promotion vertraust du am meisten und welche ignorierst du?",
+     "c": "Finde je ein Beispiel für Werbung, PR und Content von Marken in deiner Umgebung."
+    },
+    "es": {
+     "t": "La promoción explicada",
+     "g": "Conocer publicidad, ventas, relaciones públicas y contenido como formas de comunicar.",
+     "p": [
+      "La publicidad es de pago y controlada; las RR. PP. ganan atención con historias y relaciones.",
+      "El contenido enseña o entretiene para que vengan a ti; la venta es de tú a tú.",
+      "La mejor promoción es honesta, clara y útil para quien la recibe."
+     ],
+     "q": "¿En qué tipo de promoción confías más y cuál ignoras?",
+     "c": "Encuentra un ejemplo de publicidad, de RR. PP. y de contenido en marcas de tu entorno."
+    },
+    "fr": {
+     "t": "La promotion expliquée",
+     "g": "Découvrir publicité, vente, relations presse et contenu comme moyens de communiquer.",
+     "p": [
+      "La publicité est payante et maîtrisée ; les relations presse gagnent l'attention par des histoires et des liens.",
+      "Le contenu enseigne ou divertit pour qu'on vienne à toi ; la vente se joue en face à face.",
+      "La meilleure promotion est honnête, claire et utile pour celui qui la reçoit."
+     ],
+     "q": "Quel type de promotion te inspire le plus confiance, et lequel ignores-tu ?",
+     "c": "Trouve un exemple de publicité, de relations presse et de contenu autour de toi."
+    },
+    "it": {
+     "t": "La promozione spiegata",
+     "g": "Conoscere pubblicità, vendita, PR e contenuti come modi di comunicare.",
+     "p": [
+      "La pubblicità è a pagamento e controllata; le PR guadagnano attenzione con storie e relazioni.",
+      "I contenuti insegnano o intrattengono perché le persone vengano da te; la vendita è un dialogo diretto.",
+      "La migliore promozione è onesta, chiara e utile per chi la riceve."
+     ],
+     "q": "Di quale tipo di promozione ti fidi di più e quale ignori?",
+     "c": "Trova un esempio di pubblicità, uno di PR e uno di contenuti dai marchi intorno a te."
+    },
+    "pt": {
+     "t": "A promoção explicada",
+     "g": "Conhecer publicidade, vendas, relações públicas e conteúdo como formas de comunicar.",
+     "p": [
+      "A publicidade é paga e controlada; as relações públicas ganham atenção com histórias e relações.",
+      "O conteúdo ensina ou entretém para que venham ter contigo; a venda é de pessoa para pessoa.",
+      "A melhor promoção é honesta, clara e útil para quem a recebe."
+     ],
+     "q": "Em que tipo de promoção confias mais e qual ignoras?",
+     "c": "Encontra um exemplo de publicidade, de relações públicas e de conteúdo em marcas à tua volta."
+    },
+    "pt_BR": {
+     "t": "A promoção explicada",
+     "g": "Conhecer publicidade, vendas, relações públicas e conteúdo como formas de comunicar.",
+     "p": [
+      "A publicidade é paga e controlada; as relações públicas ganham atenção com histórias e relacionamentos.",
+      "O conteúdo ensina ou entretém para que venham até você; a venda é de pessoa para pessoa.",
+      "A melhor promoção é honesta, clara e útil para quem a recebe."
+     ],
+     "q": "Em que tipo de promoção você mais confia e qual você ignora?",
+     "c": "Encontre um exemplo de publicidade, de relações públicas e de conteúdo em marcas ao seu redor."
+    }
+   }
+  }
+ ]
+}

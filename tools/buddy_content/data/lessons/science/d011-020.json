@@ -1,0 +1,835 @@
+{
+ "topic": "science",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is matter",
+     "g": "Learn that matter is anything that has mass and takes up space.",
+     "p": [
+      "Rocks, water, air and even you are made of matter.",
+      "Air is matter too: a blown-up balloon shows it takes up space.",
+      "Light, sound and ideas are not matter, because they have no mass of their own."
+     ],
+     "q": "Can you name something around you that is not matter?",
+     "c": "Push an upside-down empty glass straight into water and watch the air keep the water out."
+    },
+    "de": {
+     "t": "Was ist Materie",
+     "g": "Lerne, dass Materie alles ist, was Masse hat und Raum einnimmt.",
+     "p": [
+      "Steine, Wasser, Luft und auch du bestehen aus Materie.",
+      "Auch Luft ist Materie: Ein aufgeblasener Ballon zeigt, dass sie Platz braucht.",
+      "Licht, Schall und Gedanken sind keine Materie, denn sie haben keine eigene Masse."
+     ],
+     "q": "Kannst du etwas in deiner Nähe nennen, das keine Materie ist?",
+     "c": "Drück ein leeres Glas umgedreht gerade ins Wasser und sieh, wie die Luft das Wasser draußen hält."
+    },
+    "es": {
+     "t": "Qué es la materia",
+     "g": "Aprender que la materia es todo lo que tiene masa y ocupa espacio.",
+     "p": [
+      "Las rocas, el agua, el aire y tú mismo estáis hechos de materia.",
+      "El aire también es materia: un globo inflado demuestra que ocupa espacio.",
+      "La luz, el sonido y las ideas no son materia, porque no tienen masa propia."
+     ],
+     "q": "¿Puedes nombrar algo a tu alrededor que no sea materia?",
+     "c": "Mete un vaso vacío boca abajo y recto en agua y mira cómo el aire impide que entre el agua."
+    },
+    "fr": {
+     "t": "Qu'est-ce que la matière",
+     "g": "Apprendre que la matière est tout ce qui a une masse et occupe de l'espace.",
+     "p": [
+      "Les roches, l'eau, l'air et toi-même êtes faits de matière.",
+      "L'air aussi est de la matière : un ballon gonflé montre qu'il prend de la place.",
+      "La lumière, le son et les idées ne sont pas de la matière, car ils n'ont pas de masse propre."
+     ],
+     "q": "Peux-tu citer quelque chose autour de toi qui n'est pas de la matière ?",
+     "c": "Enfonce un verre vide à l'envers bien droit dans l'eau et vois l'air empêcher l'eau d'entrer."
+    },
+    "it": {
+     "t": "Che cos'è la materia",
+     "g": "Imparare che la materia è tutto ciò che ha massa e occupa spazio.",
+     "p": [
+      "Le rocce, l'acqua, l'aria e anche tu siete fatti di materia.",
+      "Anche l'aria è materia: un palloncino gonfio mostra che occupa spazio.",
+      "Luce, suono e idee non sono materia, perché non hanno una massa propria."
+     ],
+     "q": "Sai nominare qualcosa intorno a te che non sia materia?",
+     "c": "Spingi un bicchiere vuoto capovolto dritto nell'acqua e guarda l'aria tenere fuori l'acqua."
+    },
+    "pt": {
+     "t": "O que é a matéria",
+     "g": "Aprender que a matéria é tudo o que tem massa e ocupa espaço.",
+     "p": [
+      "As rochas, a água, o ar e tu próprio são feitos de matéria.",
+      "O ar também é matéria: um balão cheio mostra que ocupa espaço.",
+      "A luz, o som e as ideias não são matéria, porque não têm massa própria."
+     ],
+     "q": "Consegues dizer algo à tua volta que não seja matéria?",
+     "c": "Mergulha um copo vazio virado ao contrário, a direito, na água e vê o ar impedir a água de entrar."
+    },
+    "pt_BR": {
+     "t": "O que é matéria",
+     "g": "Aprender que matéria é tudo o que tem massa e ocupa espaço.",
+     "p": [
+      "Pedras, água, ar e você mesmo são feitos de matéria.",
+      "O ar também é matéria: um balão cheio mostra que ele ocupa espaço.",
+      "Luz, som e ideias não são matéria, porque não têm massa própria."
+     ],
+     "q": "Você consegue citar algo ao seu redor que não seja matéria?",
+     "c": "Mergulhe um copo vazio de boca para baixo, reto, na água e veja o ar impedir a água de entrar."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Solids, liquids and gases",
+     "g": "Learn the three everyday states of matter and how their particles behave.",
+     "p": [
+      "In a solid, particles are packed tightly and only vibrate, so it keeps its shape.",
+      "In a liquid, particles slide past each other, so it takes the shape of its container.",
+      "In a gas, particles fly freely and spread out to fill any space."
+     ],
+     "q": "What is your favorite example of each state at home?",
+     "c": "Find one solid, one liquid and one gas in your kitchen right now."
+    },
+    "de": {
+     "t": "Feststoffe, Flüssigkeiten und Gase",
+     "g": "Lerne die drei alltäglichen Aggregatzustände kennen und wie sich ihre Teilchen verhalten.",
+     "p": [
+      "In einem Feststoff sitzen die Teilchen dicht und schwingen nur, darum behält er seine Form.",
+      "In einer Flüssigkeit gleiten die Teilchen aneinander vorbei, sie nimmt die Form des Gefäßes an.",
+      "In einem Gas fliegen die Teilchen frei umher und füllen jeden Raum aus."
+     ],
+     "q": "Was ist zu Hause dein Lieblingsbeispiel für jeden Zustand?",
+     "c": "Finde jetzt in deiner Küche einen Feststoff, eine Flüssigkeit und ein Gas."
+    },
+    "es": {
+     "t": "Sólidos, líquidos y gases",
+     "g": "Conocer los tres estados cotidianos de la materia y cómo se comportan sus partículas.",
+     "p": [
+      "En un sólido las partículas están muy juntas y solo vibran, por eso mantiene su forma.",
+      "En un líquido las partículas se deslizan, por eso toma la forma del recipiente.",
+      "En un gas las partículas vuelan libres y se extienden por todo el espacio."
+     ],
+     "q": "¿Cuál es tu ejemplo favorito de cada estado en casa?",
+     "c": "Encuentra ahora en tu cocina un sólido, un líquido y un gas."
+    },
+    "fr": {
+     "t": "Solides, liquides et gaz",
+     "g": "Découvrir les trois états courants de la matière et le comportement de leurs particules.",
+     "p": [
+      "Dans un solide, les particules sont serrées et vibrent seulement : il garde sa forme.",
+      "Dans un liquide, elles glissent les unes sur les autres : il prend la forme du récipient.",
+      "Dans un gaz, elles volent librement et remplissent tout l'espace disponible."
+     ],
+     "q": "Quel est ton exemple préféré de chaque état chez toi ?",
+     "c": "Trouve tout de suite dans ta cuisine un solide, un liquide et un gaz."
+    },
+    "it": {
+     "t": "Solidi, liquidi e gas",
+     "g": "Conoscere i tre stati comuni della materia e come si comportano le loro particelle.",
+     "p": [
+      "In un solido le particelle sono strette e vibrano soltanto, così mantiene la sua forma.",
+      "In un liquido le particelle scorrono tra loro, così prende la forma del recipiente.",
+      "In un gas le particelle volano libere e riempiono tutto lo spazio."
+     ],
+     "q": "Qual è il tuo esempio preferito di ogni stato in casa?",
+     "c": "Trova adesso in cucina un solido, un liquido e un gas."
+    },
+    "pt": {
+     "t": "Sólidos, líquidos e gases",
+     "g": "Conhecer os três estados comuns da matéria e como se comportam as suas partículas.",
+     "p": [
+      "Num sólido as partículas estão muito juntas e só vibram, por isso mantém a forma.",
+      "Num líquido as partículas deslizam entre si, por isso toma a forma do recipiente.",
+      "Num gás as partículas voam livremente e espalham-se por todo o espaço."
+     ],
+     "q": "Qual é o teu exemplo preferido de cada estado em casa?",
+     "c": "Encontra agora na tua cozinha um sólido, um líquido e um gás."
+    },
+    "pt_BR": {
+     "t": "Sólidos, líquidos e gases",
+     "g": "Conhecer os três estados comuns da matéria e como suas partículas se comportam.",
+     "p": [
+      "Num sólido as partículas ficam bem juntas e só vibram, por isso ele mantém a forma.",
+      "Num líquido as partículas deslizam umas pelas outras, por isso ele toma a forma do recipiente.",
+      "Num gás as partículas voam livres e se espalham por todo o espaço."
+     ],
+     "q": "Qual é seu exemplo favorito de cada estado em casa?",
+     "c": "Encontre agora na sua cozinha um sólido, um líquido e um gás."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Melting and freezing",
+     "g": "See how heating makes solids melt and cooling makes liquids freeze at set temperatures.",
+     "p": [
+      "Adding heat makes particles move faster until a solid becomes a liquid.",
+      "Each substance melts at its own temperature: ice at 0 °C, chocolate near 30 °C.",
+      "Freezing is the reverse: liquid water turns to ice at the same 0 °C."
+     ],
+     "q": "What melts in your hand or in your mouth that you enjoy?",
+     "c": "Put two equal ice cubes on a plate and a metal tray and see which melts first."
+    },
+    "de": {
+     "t": "Schmelzen und Gefrieren",
+     "g": "Sieh, wie Wärme Feststoffe schmelzen und Kälte Flüssigkeiten bei festen Temperaturen gefrieren lässt.",
+     "p": [
+      "Wärme lässt Teilchen schneller schwingen, bis aus einem Feststoff eine Flüssigkeit wird.",
+      "Jeder Stoff hat seinen Schmelzpunkt: Eis bei 0 °C, Schokolade bei etwa 30 °C.",
+      "Gefrieren ist der umgekehrte Weg: Wasser wird ebenfalls bei 0 °C zu Eis."
+     ],
+     "q": "Was schmilzt dir gern in der Hand oder im Mund?",
+     "c": "Leg zwei gleiche Eiswürfel auf einen Teller und ein Metallblech: Welcher schmilzt zuerst?"
+    },
+    "es": {
+     "t": "Fundir y congelar",
+     "g": "Ver cómo el calor funde los sólidos y el frío congela los líquidos a temperaturas fijas.",
+     "p": [
+      "El calor hace que las partículas se muevan más rápido hasta que el sólido se vuelve líquido.",
+      "Cada sustancia se funde a su temperatura: el hielo a 0 °C, el chocolate cerca de 30 °C.",
+      "Congelar es lo contrario: el agua líquida se vuelve hielo a esos mismos 0 °C."
+     ],
+     "q": "¿Qué cosa que se derrite en la mano o en la boca te encanta?",
+     "c": "Pon dos cubitos iguales, uno en un plato y otro en una bandeja de metal, y mira cuál se funde antes."
+    },
+    "fr": {
+     "t": "Fondre et geler",
+     "g": "Voir comment la chaleur fait fondre les solides et le froid geler les liquides à des températures précises.",
+     "p": [
+      "La chaleur fait bouger les particules plus vite jusqu'à ce que le solide devienne liquide.",
+      "Chaque substance fond à sa propre température : la glace à 0 °C, le chocolat vers 30 °C.",
+      "Geler, c'est l'inverse : l'eau liquide devient glace à ces mêmes 0 °C."
+     ],
+     "q": "Qu'est-ce qui fond dans ta main ou dans ta bouche et que tu adores ?",
+     "c": "Pose deux glaçons identiques, l'un sur une assiette, l'autre sur un plateau en métal : lequel fond d'abord ?"
+    },
+    "it": {
+     "t": "Fondere e congelare",
+     "g": "Vedere come il calore fa fondere i solidi e il freddo congelare i liquidi a temperature precise.",
+     "p": [
+      "Il calore fa muovere le particelle più in fretta finché il solido diventa liquido.",
+      "Ogni sostanza fonde alla sua temperatura: il ghiaccio a 0 °C, il cioccolato verso 30 °C.",
+      "Congelare è il contrario: l'acqua liquida diventa ghiaccio agli stessi 0 °C."
+     ],
+     "q": "Cosa ti piace che si scioglie in mano o in bocca?",
+     "c": "Metti due cubetti uguali, uno su un piatto e uno su un vassoio di metallo: quale si scioglie prima?"
+    },
+    "pt": {
+     "t": "Fundir e congelar",
+     "g": "Ver como o calor funde os sólidos e o frio congela os líquidos a temperaturas certas.",
+     "p": [
+      "O calor faz as partículas mexerem-se mais depressa até o sólido ficar líquido.",
+      "Cada substância funde à sua temperatura: o gelo a 0 °C, o chocolate perto de 30 °C.",
+      "Congelar é o inverso: a água líquida passa a gelo aos mesmos 0 °C."
+     ],
+     "q": "O que gostas de sentir a derreter na mão ou na boca?",
+     "c": "Põe dois cubos de gelo iguais, um num prato e outro num tabuleiro de metal: qual derrete primeiro?"
+    },
+    "pt_BR": {
+     "t": "Derreter e congelar",
+     "g": "Ver como o calor derrete sólidos e o frio congela líquidos em temperaturas certas.",
+     "p": [
+      "O calor faz as partículas se mexerem mais rápido até o sólido virar líquido.",
+      "Cada substância derrete na sua temperatura: o gelo a 0 °C, o chocolate perto de 30 °C.",
+      "Congelar é o contrário: a água líquida vira gelo nos mesmos 0 °C."
+     ],
+     "q": "O que você adora sentir derretendo na mão ou na boca?",
+     "c": "Coloque dois cubos de gelo iguais, um num prato e outro numa assadeira de metal: qual derrete primeiro?"
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Evaporation and condensation",
+     "g": "Understand why puddles disappear and why a cold glass gets wet outside.",
+     "p": [
+      "In evaporation, fast particles escape from a liquid's surface and become gas.",
+      "Warmth, wind and a big surface make evaporation faster.",
+      "In condensation, water vapor in the air cools and turns back into tiny drops."
+     ],
+     "q": "Where have you seen condensation, like on windows, mirrors or bottles?",
+     "c": "Take a cold drink from the fridge and watch drops form on the outside."
+    },
+    "de": {
+     "t": "Verdunsten und Kondensieren",
+     "g": "Verstehe, warum Pfützen verschwinden und ein kaltes Glas außen nass wird.",
+     "p": [
+      "Beim Verdunsten entweichen schnelle Teilchen von der Oberfläche einer Flüssigkeit als Gas.",
+      "Wärme, Wind und eine große Oberfläche beschleunigen das Verdunsten.",
+      "Beim Kondensieren kühlt Wasserdampf ab und wird wieder zu winzigen Tropfen."
+     ],
+     "q": "Wo hast du schon Kondensation gesehen, etwa an Fenstern, Spiegeln oder Flaschen?",
+     "c": "Nimm ein kaltes Getränk aus dem Kühlschrank und beobachte, wie sich außen Tropfen bilden."
+    },
+    "es": {
+     "t": "Evaporación y condensación",
+     "g": "Entender por qué desaparecen los charcos y por qué un vaso frío se moja por fuera.",
+     "p": [
+      "En la evaporación, partículas rápidas escapan de la superficie del líquido como gas.",
+      "El calor, el viento y una superficie grande aceleran la evaporación.",
+      "En la condensación, el vapor de agua del aire se enfría y vuelve a formar gotitas."
+     ],
+     "q": "¿Dónde has visto condensación, como en ventanas, espejos o botellas?",
+     "c": "Saca una bebida fría de la nevera y observa cómo se forman gotas por fuera."
+    },
+    "fr": {
+     "t": "Évaporation et condensation",
+     "g": "Comprendre pourquoi les flaques disparaissent et pourquoi un verre froid se mouille dehors.",
+     "p": [
+      "Lors de l'évaporation, des particules rapides quittent la surface du liquide en gaz.",
+      "La chaleur, le vent et une grande surface accélèrent l'évaporation.",
+      "Lors de la condensation, la vapeur d'eau de l'air refroidit et redevient gouttelettes."
+     ],
+     "q": "Où as-tu vu de la condensation : fenêtres, miroirs, bouteilles ?",
+     "c": "Sors une boisson froide du frigo et observe les gouttes se former à l'extérieur."
+    },
+    "it": {
+     "t": "Evaporazione e condensazione",
+     "g": "Capire perché le pozzanghere spariscono e perché un bicchiere freddo si bagna fuori.",
+     "p": [
+      "Nell'evaporazione, le particelle più veloci lasciano la superficie del liquido come gas.",
+      "Calore, vento e una superficie ampia rendono l'evaporazione più rapida.",
+      "Nella condensazione, il vapore acqueo dell'aria si raffredda e torna goccioline."
+     ],
+     "q": "Dove hai visto la condensa, su finestre, specchi o bottiglie?",
+     "c": "Prendi una bibita fredda dal frigo e guarda le gocce formarsi all'esterno."
+    },
+    "pt": {
+     "t": "Evaporação e condensação",
+     "g": "Perceber porque as poças desaparecem e porque um copo frio fica molhado por fora.",
+     "p": [
+      "Na evaporação, partículas rápidas escapam da superfície do líquido como gás.",
+      "O calor, o vento e uma superfície grande tornam a evaporação mais rápida.",
+      "Na condensação, o vapor de água do ar arrefece e volta a formar gotinhas."
+     ],
+     "q": "Onde já viste condensação, como em janelas, espelhos ou garrafas?",
+     "c": "Tira uma bebida fria do frigorífico e observa as gotas a formarem-se por fora."
+    },
+    "pt_BR": {
+     "t": "Evaporação e condensação",
+     "g": "Entender por que as poças somem e por que um copo gelado fica molhado por fora.",
+     "p": [
+      "Na evaporação, partículas rápidas escapam da superfície do líquido como gás.",
+      "Calor, vento e uma superfície grande deixam a evaporação mais rápida.",
+      "Na condensação, o vapor de água do ar esfria e volta a formar gotinhas."
+     ],
+     "q": "Onde você já viu condensação, como em janelas, espelhos ou garrafas?",
+     "c": "Tire uma bebida gelada da geladeira e observe as gotas se formando por fora."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mass, volume and density",
+     "g": "Discover why a small stone sinks while a huge ship floats.",
+     "p": [
+      "Mass is how much matter something has; volume is how much space it fills.",
+      "Density is mass divided by volume: how tightly matter is packed.",
+      "Things denser than water sink; a ship floats because its hollow shape holds lots of air."
+     ],
+     "q": "Which surprised you more as a kid: a heavy log floating or a tiny coin sinking?",
+     "c": "Test five small objects in a bowl of water and guess first which will float."
+    },
+    "de": {
+     "t": "Masse, Volumen und Dichte",
+     "g": "Entdecke, warum ein kleiner Stein sinkt, aber ein riesiges Schiff schwimmt.",
+     "p": [
+      "Masse ist, wie viel Materie etwas hat; Volumen, wie viel Raum es einnimmt.",
+      "Dichte ist Masse geteilt durch Volumen: wie eng die Materie gepackt ist.",
+      "Was dichter als Wasser ist, sinkt; ein Schiff schwimmt, weil sein hohler Rumpf viel Luft enthält."
+     ],
+     "q": "Was hat dich als Kind mehr überrascht: ein schwimmender Baumstamm oder eine sinkende Münze?",
+     "c": "Teste fünf kleine Gegenstände in einer Schüssel Wasser und rate vorher, was schwimmt."
+    },
+    "es": {
+     "t": "Masa, volumen y densidad",
+     "g": "Descubrir por qué una piedra pequeña se hunde y un barco enorme flota.",
+     "p": [
+      "La masa es cuánta materia tiene algo; el volumen, cuánto espacio ocupa.",
+      "La densidad es la masa dividida por el volumen: lo apretada que está la materia.",
+      "Lo más denso que el agua se hunde; un barco flota porque su forma hueca contiene mucho aire."
+     ],
+     "q": "¿Qué te sorprendía más de niño: un tronco pesado que flota o una moneda que se hunde?",
+     "c": "Prueba cinco objetos pequeños en un bol con agua y adivina antes cuáles flotarán."
+    },
+    "fr": {
+     "t": "Masse, volume et densité",
+     "g": "Découvrir pourquoi un petit caillou coule alors qu'un énorme navire flotte.",
+     "p": [
+      "La masse est la quantité de matière ; le volume est l'espace occupé.",
+      "La masse volumique est la masse divisée par le volume : à quel point la matière est tassée.",
+      "Ce qui est plus dense que l'eau coule ; un navire flotte car sa coque creuse contient beaucoup d'air."
+     ],
+     "q": "Enfant, qu'est-ce qui t'étonnait le plus : un gros tronc qui flotte ou une pièce qui coule ?",
+     "c": "Teste cinq petits objets dans un bol d'eau en devinant d'abord lesquels flotteront."
+    },
+    "it": {
+     "t": "Massa, volume e densità",
+     "g": "Scoprire perché un piccolo sasso affonda mentre un'enorme nave galleggia.",
+     "p": [
+      "La massa è quanta materia ha un oggetto; il volume è quanto spazio occupa.",
+      "La densità è la massa divisa per il volume: quanto è compatta la materia.",
+      "Ciò che è più denso dell'acqua affonda; una nave galleggia perché lo scafo cavo contiene molta aria."
+     ],
+     "q": "Da piccolo ti stupiva di più un tronco pesante che galleggia o una monetina che affonda?",
+     "c": "Prova cinque piccoli oggetti in una ciotola d'acqua e indovina prima quali galleggeranno."
+    },
+    "pt": {
+     "t": "Massa, volume e densidade",
+     "g": "Descobrir porque uma pedra pequena vai ao fundo e um navio enorme flutua.",
+     "p": [
+      "A massa é a quantidade de matéria; o volume é o espaço que ocupa.",
+      "A densidade é a massa a dividir pelo volume: quão apertada está a matéria.",
+      "O que é mais denso do que a água afunda; um navio flutua porque o casco oco tem muito ar."
+     ],
+     "q": "Em criança, o que te surpreendia mais: um tronco pesado a flutuar ou uma moeda a afundar?",
+     "c": "Testa cinco objetos pequenos numa taça com água e adivinha antes quais vão flutuar."
+    },
+    "pt_BR": {
+     "t": "Massa, volume e densidade",
+     "g": "Descobrir por que uma pedrinha afunda e um navio enorme flutua.",
+     "p": [
+      "Massa é quanta matéria algo tem; volume é quanto espaço ocupa.",
+      "Densidade é a massa dividida pelo volume: o quanto a matéria está apertada.",
+      "O que é mais denso que a água afunda; um navio flutua porque o casco oco guarda muito ar."
+     ],
+     "q": "Quando criança, o que te surpreendia mais: um tronco pesado flutuando ou uma moeda afundando?",
+     "c": "Teste cinco objetos pequenos numa tigela com água e adivinhe antes quais vão boiar."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mixtures all around us",
+     "g": "See that salad, sea water and air are mixtures whose parts can be separated.",
+     "p": [
+      "A mixture is two or more substances combined but not chemically joined.",
+      "In some mixtures you see the parts, like a salad; in others you cannot, like sea water.",
+      "Air is a mixture too, mostly nitrogen and oxygen."
+     ],
+     "q": "What mixtures did you eat or drink today?",
+     "c": "List five mixtures in your home and mark which ones you can see the parts of."
+    },
+    "de": {
+     "t": "Gemische überall",
+     "g": "Sieh, dass Salat, Meerwasser und Luft Gemische sind, deren Bestandteile man trennen kann.",
+     "p": [
+      "Ein Gemisch besteht aus zwei oder mehr Stoffen, die nicht chemisch verbunden sind.",
+      "Bei manchen Gemischen sieht man die Teile, wie beim Salat, bei anderen nicht, wie bei Meerwasser.",
+      "Auch Luft ist ein Gemisch, vor allem aus Stickstoff und Sauerstoff."
+     ],
+     "q": "Welche Gemische hast du heute gegessen oder getrunken?",
+     "c": "Liste fünf Gemische bei dir zu Hause auf und markiere, bei welchen man die Teile sieht."
+    },
+    "es": {
+     "t": "Mezclas por todas partes",
+     "g": "Ver que la ensalada, el agua de mar y el aire son mezclas cuyas partes se pueden separar.",
+     "p": [
+      "Una mezcla son dos o más sustancias juntas pero no unidas químicamente.",
+      "En algunas mezclas ves las partes, como en una ensalada; en otras no, como en el agua de mar.",
+      "El aire también es una mezcla, sobre todo de nitrógeno y oxígeno."
+     ],
+     "q": "¿Qué mezclas has comido o bebido hoy?",
+     "c": "Haz una lista de cinco mezclas de tu casa y marca en cuáles se ven las partes."
+    },
+    "fr": {
+     "t": "Des mélanges partout",
+     "g": "Voir que la salade, l'eau de mer et l'air sont des mélanges dont on peut séparer les parties.",
+     "p": [
+      "Un mélange réunit deux substances ou plus, sans liaison chimique entre elles.",
+      "Dans certains mélanges on voit les parties, comme une salade ; dans d'autres non, comme l'eau de mer.",
+      "L'air est aussi un mélange, surtout d'azote et d'oxygène."
+     ],
+     "q": "Quels mélanges as-tu mangés ou bus aujourd'hui ?",
+     "c": "Note cinq mélanges chez toi et indique ceux dont on voit les parties."
+    },
+    "it": {
+     "t": "Miscugli ovunque",
+     "g": "Vedere che insalata, acqua di mare e aria sono miscugli le cui parti si possono separare.",
+     "p": [
+      "Un miscuglio è formato da due o più sostanze unite ma non legate chimicamente.",
+      "In alcuni miscugli vedi le parti, come nell'insalata; in altri no, come nell'acqua di mare.",
+      "Anche l'aria è un miscuglio, soprattutto di azoto e ossigeno."
+     ],
+     "q": "Quali miscugli hai mangiato o bevuto oggi?",
+     "c": "Elenca cinque miscugli di casa tua e segna quelli di cui vedi le parti."
+    },
+    "pt": {
+     "t": "Misturas por todo o lado",
+     "g": "Ver que a salada, a água do mar e o ar são misturas cujas partes se podem separar.",
+     "p": [
+      "Uma mistura junta duas ou mais substâncias sem as ligar quimicamente.",
+      "Em algumas misturas vês as partes, como na salada; noutras não, como na água do mar.",
+      "O ar também é uma mistura, sobretudo de azoto e oxigénio."
+     ],
+     "q": "Que misturas comeste ou bebeste hoje?",
+     "c": "Faz uma lista de cinco misturas em tua casa e assinala aquelas em que se veem as partes."
+    },
+    "pt_BR": {
+     "t": "Misturas por toda parte",
+     "g": "Ver que salada, água do mar e ar são misturas cujas partes podem ser separadas.",
+     "p": [
+      "Uma mistura junta duas ou mais substâncias sem ligá-las quimicamente.",
+      "Em algumas misturas dá para ver as partes, como na salada; em outras não, como na água do mar.",
+      "O ar também é uma mistura, principalmente de nitrogênio e oxigênio."
+     ],
+     "q": "Quais misturas você comeu ou bebeu hoje?",
+     "c": "Liste cinco misturas da sua casa e marque em quais dá para ver as partes."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dissolving and solutions",
+     "g": "Understand why sugar vanishes in tea and how temperature changes how much dissolves.",
+     "p": [
+      "When sugar dissolves, its particles spread evenly between water particles.",
+      "The sugar is still there: you can taste it, and it reappears if the water evaporates.",
+      "Warm water usually dissolves more sugar, and faster, than cold water."
+     ],
+     "q": "Do you stir your drinks, and have you noticed sugar dissolving slower in cold ones?",
+     "c": "Stir one spoon of sugar into cold and warm tap water and time how long each takes."
+    },
+    "de": {
+     "t": "Lösen und Lösungen",
+     "g": "Verstehe, warum Zucker im Tee verschwindet und wie die Temperatur das Lösen beeinflusst.",
+     "p": [
+      "Löst sich Zucker, verteilen sich seine Teilchen gleichmäßig zwischen den Wasserteilchen.",
+      "Der Zucker ist noch da: Man schmeckt ihn, und er erscheint wieder, wenn das Wasser verdunstet.",
+      "Warmes Wasser löst meist mehr Zucker, und das schneller, als kaltes."
+     ],
+     "q": "Rührst du deine Getränke um, und löst sich Zucker in kalten bei dir langsamer?",
+     "c": "Rühr je einen Löffel Zucker in kaltes und warmes Leitungswasser und stopp die Zeit."
+    },
+    "es": {
+     "t": "Disolver y disoluciones",
+     "g": "Entender por qué el azúcar desaparece en el té y cómo la temperatura cambia cuánto se disuelve.",
+     "p": [
+      "Al disolverse, las partículas de azúcar se reparten por igual entre las del agua.",
+      "El azúcar sigue ahí: lo notas al probarlo y reaparece si el agua se evapora.",
+      "El agua tibia suele disolver más azúcar, y más rápido, que el agua fría."
+     ],
+     "q": "¿Remueves tus bebidas? ¿Has notado que en las frías el azúcar tarda más?",
+     "c": "Remueve una cucharada de azúcar en agua fría y otra en agua tibia y cronometra cuánto tardan."
+    },
+    "fr": {
+     "t": "Dissoudre et solutions",
+     "g": "Comprendre pourquoi le sucre disparaît dans le thé et comment la température change sa dissolution.",
+     "p": [
+      "En se dissolvant, les particules de sucre se répartissent entre celles de l'eau.",
+      "Le sucre est toujours là : on le goûte, et il réapparaît si l'eau s'évapore.",
+      "L'eau tiède dissout en général plus de sucre, et plus vite, que l'eau froide."
+     ],
+     "q": "Remues-tu tes boissons, et as-tu remarqué que le sucre fond plus lentement dans le froid ?",
+     "c": "Mélange une cuillère de sucre dans de l'eau froide et de l'eau tiède du robinet et chronomètre."
+    },
+    "it": {
+     "t": "Sciogliere e soluzioni",
+     "g": "Capire perché lo zucchero sparisce nel tè e come la temperatura cambia quanto se ne scioglie.",
+     "p": [
+      "Quando lo zucchero si scioglie, le sue particelle si distribuiscono tra quelle dell'acqua.",
+      "Lo zucchero c'è ancora: lo senti al gusto e ricompare se l'acqua evapora.",
+      "L'acqua tiepida di solito scioglie più zucchero, e più in fretta, di quella fredda."
+     ],
+     "q": "Mescoli le tue bevande? Hai notato che in quelle fredde lo zucchero si scioglie più piano?",
+     "c": "Mescola un cucchiaino di zucchero in acqua fredda e tiepida del rubinetto e cronometra."
+    },
+    "pt": {
+     "t": "Dissolver e soluções",
+     "g": "Perceber porque o açúcar desaparece no chá e como a temperatura muda quanto se dissolve.",
+     "p": [
+      "Ao dissolver-se, as partículas de açúcar espalham-se por igual entre as da água.",
+      "O açúcar continua lá: sente-se o sabor e ele reaparece se a água evaporar.",
+      "A água morna costuma dissolver mais açúcar, e mais depressa, do que a fria."
+     ],
+     "q": "Mexes as tuas bebidas? Já reparaste que nas frias o açúcar demora mais?",
+     "c": "Mexe uma colher de açúcar em água fria e noutra morna da torneira e cronometra cada uma."
+    },
+    "pt_BR": {
+     "t": "Dissolver e soluções",
+     "g": "Entender por que o açúcar some no chá e como a temperatura muda quanto se dissolve.",
+     "p": [
+      "Ao dissolver, as partículas de açúcar se espalham por igual entre as da água.",
+      "O açúcar continua ali: dá para sentir o gosto e ele reaparece se a água evaporar.",
+      "A água morna costuma dissolver mais açúcar, e mais rápido, que a gelada."
+     ],
+     "q": "Você mexe suas bebidas? Já notou que nas geladas o açúcar demora mais?",
+     "c": "Mexa uma colher de açúcar em água fria e outra em água morna da torneira e cronometre."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Separating mixtures",
+     "g": "Learn how filtering, sieving, evaporating and magnets pull mixtures apart.",
+     "p": [
+      "A sieve separates big pieces from small ones, like pasta from water.",
+      "A filter, like a coffee filter, stops tiny solid bits but lets liquid pass.",
+      "Evaporation leaves dissolved salt behind, and magnets pull out iron bits."
+     ],
+     "q": "Which separation method do you use most in your kitchen?",
+     "c": "Mix sand and water in a cup and filter it through a paper towel in a funnel."
+    },
+    "de": {
+     "t": "Gemische trennen",
+     "g": "Lerne, wie Filtern, Sieben, Verdunsten und Magnete Gemische trennen.",
+     "p": [
+      "Ein Sieb trennt große von kleinen Teilen, etwa Nudeln vom Wasser.",
+      "Ein Filter, wie ein Kaffeefilter, hält winzige feste Teilchen zurück und lässt Flüssigkeit durch.",
+      "Verdunsten lässt gelöstes Salz zurück, und Magnete ziehen Eisenteilchen heraus."
+     ],
+     "q": "Welche Trennmethode benutzt du in deiner Küche am häufigsten?",
+     "c": "Misch Sand und Wasser in einem Becher und filtere es durch ein Küchentuch in einem Trichter."
+    },
+    "es": {
+     "t": "Separar mezclas",
+     "g": "Aprender cómo filtrar, tamizar, evaporar y usar imanes separa las mezclas.",
+     "p": [
+      "Un colador separa trozos grandes de pequeños, como la pasta del agua.",
+      "Un filtro, como el del café, retiene partículas sólidas diminutas y deja pasar el líquido.",
+      "La evaporación deja atrás la sal disuelta, y los imanes atraen trocitos de hierro."
+     ],
+     "q": "¿Qué método de separación usas más en tu cocina?",
+     "c": "Mezcla arena y agua en un vaso y fíltrala con papel de cocina en un embudo."
+    },
+    "fr": {
+     "t": "Séparer les mélanges",
+     "g": "Apprendre comment filtrer, tamiser, évaporer et aimanter séparent les mélanges.",
+     "p": [
+      "Une passoire sépare les gros morceaux des petits, comme les pâtes de l'eau.",
+      "Un filtre, comme un filtre à café, retient les minuscules grains solides et laisse passer le liquide.",
+      "L'évaporation laisse le sel dissous derrière elle, et un aimant attire les grains de fer."
+     ],
+     "q": "Quelle méthode de séparation utilises-tu le plus en cuisine ?",
+     "c": "Mélange du sable et de l'eau dans un verre et filtre-les avec de l'essuie-tout dans un entonnoir."
+    },
+    "it": {
+     "t": "Separare i miscugli",
+     "g": "Imparare come filtrare, setacciare, far evaporare e usare calamite separa i miscugli.",
+     "p": [
+      "Uno scolapasta separa i pezzi grandi da quelli piccoli, come la pasta dall'acqua.",
+      "Un filtro, come quello del caffè, trattiene minuscoli pezzetti solidi e lascia passare il liquido.",
+      "L'evaporazione lascia il sale disciolto, e le calamite attirano i frammenti di ferro."
+     ],
+     "q": "Quale metodo di separazione usi di più in cucina?",
+     "c": "Mescola sabbia e acqua in un bicchiere e filtrala con carta da cucina in un imbuto."
+    },
+    "pt": {
+     "t": "Separar misturas",
+     "g": "Aprender como filtrar, peneirar, evaporar e usar ímanes separa misturas.",
+     "p": [
+      "Um passador separa pedaços grandes de pequenos, como a massa da água.",
+      "Um filtro, como o do café, retém partículas sólidas minúsculas e deixa passar o líquido.",
+      "A evaporação deixa para trás o sal dissolvido, e os ímanes atraem pedacinhos de ferro."
+     ],
+     "q": "Que método de separação usas mais na tua cozinha?",
+     "c": "Mistura areia e água num copo e filtra com papel de cozinha num funil."
+    },
+    "pt_BR": {
+     "t": "Separando misturas",
+     "g": "Aprender como filtrar, peneirar, evaporar e usar ímãs separa misturas.",
+     "p": [
+      "Um escorredor separa pedaços grandes dos pequenos, como o macarrão da água.",
+      "Um filtro, como o de café, segura partículas sólidas minúsculas e deixa o líquido passar.",
+      "A evaporação deixa para trás o sal dissolvido, e os ímãs puxam pedacinhos de ferro."
+     ],
+     "q": "Qual método de separação você mais usa na cozinha?",
+     "c": "Misture areia e água num copo e filtre com papel-toalha num funil."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Atoms, the tiny building blocks",
+     "g": "Discover that everything is made of atoms, so small that millions fit across a hair.",
+     "p": [
+      "All matter, from your phone to the stars, is built from atoms.",
+      "Atoms are so tiny that about a million side by side match the width of a hair.",
+      "Atoms combine in endless ways, like letters forming millions of words."
+     ],
+     "q": "Does it surprise you that your body is made of atoms that once were part of stars?",
+     "c": "Tell someone today how many atoms roughly fit across a single hair."
+    },
+    "de": {
+     "t": "Atome, die winzigen Bausteine",
+     "g": "Entdecke, dass alles aus Atomen besteht, so klein, dass Millionen über ein Haar passen.",
+     "p": [
+      "Alle Materie, vom Handy bis zu den Sternen, ist aus Atomen aufgebaut.",
+      "Atome sind so winzig, dass etwa eine Million nebeneinander so breit sind wie ein Haar.",
+      "Atome verbinden sich auf unzählige Arten, so wie Buchstaben Millionen Wörter bilden."
+     ],
+     "q": "Überrascht es dich, dass dein Körper aus Atomen besteht, die einst in Sternen waren?",
+     "c": "Erzähl heute jemandem, wie viele Atome ungefähr über ein einzelnes Haar passen."
+    },
+    "es": {
+     "t": "Átomos, los diminutos ladrillos",
+     "g": "Descubrir que todo está hecho de átomos, tan pequeños que caben millones en el grosor de un pelo.",
+     "p": [
+      "Toda la materia, desde tu móvil hasta las estrellas, está formada por átomos.",
+      "Los átomos son tan diminutos que un millón en fila mide lo que el grosor de un pelo.",
+      "Los átomos se combinan de infinitas formas, como letras que forman millones de palabras."
+     ],
+     "q": "¿Te sorprende que tu cuerpo esté hecho de átomos que un día formaron parte de estrellas?",
+     "c": "Cuéntale hoy a alguien cuántos átomos caben más o menos en el grosor de un pelo."
+    },
+    "fr": {
+     "t": "Les atomes, briques minuscules",
+     "g": "Découvrir que tout est fait d'atomes, si petits que des millions tiennent dans l'épaisseur d'un cheveu.",
+     "p": [
+      "Toute la matière, de ton téléphone aux étoiles, est faite d'atomes.",
+      "Les atomes sont si petits qu'environ un million alignés font l'épaisseur d'un cheveu.",
+      "Les atomes se combinent à l'infini, comme des lettres qui forment des millions de mots."
+     ],
+     "q": "Es-tu surpris que ton corps soit fait d'atomes qui ont un jour appartenu à des étoiles ?",
+     "c": "Raconte aujourd'hui à quelqu'un combien d'atomes tiennent à peu près dans un cheveu."
+    },
+    "it": {
+     "t": "Gli atomi, mattoncini minuscoli",
+     "g": "Scoprire che tutto è fatto di atomi, così piccoli che milioni stanno nello spessore di un capello.",
+     "p": [
+      "Tutta la materia, dal telefono alle stelle, è fatta di atomi.",
+      "Gli atomi sono così piccoli che circa un milione in fila equivale allo spessore di un capello.",
+      "Gli atomi si combinano in infiniti modi, come lettere che formano milioni di parole."
+     ],
+     "q": "Ti sorprende che il tuo corpo sia fatto di atomi che un tempo erano nelle stelle?",
+     "c": "Racconta oggi a qualcuno quanti atomi stanno più o meno nello spessore di un capello."
+    },
+    "pt": {
+     "t": "Átomos, os tijolos minúsculos",
+     "g": "Descobrir que tudo é feito de átomos, tão pequenos que milhões cabem na espessura de um cabelo.",
+     "p": [
+      "Toda a matéria, do telemóvel às estrelas, é feita de átomos.",
+      "Os átomos são tão pequenos que cerca de um milhão em fila mede a espessura de um cabelo.",
+      "Os átomos combinam-se de infinitas maneiras, como letras que formam milhões de palavras."
+     ],
+     "q": "Surpreende-te que o teu corpo seja feito de átomos que já fizeram parte de estrelas?",
+     "c": "Conta hoje a alguém quantos átomos cabem mais ou menos na espessura de um cabelo."
+    },
+    "pt_BR": {
+     "t": "Átomos, os tijolinhos do mundo",
+     "g": "Descobrir que tudo é feito de átomos, tão pequenos que milhões cabem na espessura de um fio de cabelo.",
+     "p": [
+      "Toda a matéria, do celular às estrelas, é feita de átomos.",
+      "Os átomos são tão pequenos que cerca de um milhão enfileirados medem a espessura de um fio de cabelo.",
+      "Os átomos se combinam de infinitas formas, como letras formando milhões de palavras."
+     ],
+     "q": "Te surpreende que seu corpo seja feito de átomos que já fizeram parte de estrelas?",
+     "c": "Conte hoje a alguém quantos átomos cabem mais ou menos na espessura de um fio de cabelo."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Inside the atom",
+     "g": "Meet protons, neutrons and electrons and learn how they are arranged.",
+     "p": [
+      "At the center is the nucleus, made of protons (positive) and neutrons (no charge).",
+      "Electrons (negative) move around the nucleus in a cloud of energy levels.",
+      "Most of an atom is empty space: the nucleus is like a pea in a stadium."
+     ],
+     "q": "Which picture of the atom do you remember from school?",
+     "c": "Draw a simple atom with 2 protons, 2 neutrons and 2 electrons: that is helium."
+    },
+    "de": {
+     "t": "Im Inneren des Atoms",
+     "g": "Lerne Protonen, Neutronen und Elektronen kennen und wie sie angeordnet sind.",
+     "p": [
+      "In der Mitte liegt der Kern aus Protonen (positiv) und Neutronen (ungeladen).",
+      "Elektronen (negativ) bewegen sich in einer Wolke aus Energiestufen um den Kern.",
+      "Ein Atom ist größtenteils leer: Der Kern ist wie eine Erbse in einem Stadion."
+     ],
+     "q": "An welches Atombild aus der Schule erinnerst du dich?",
+     "c": "Zeichne ein einfaches Atom mit 2 Protonen, 2 Neutronen und 2 Elektronen: Das ist Helium."
+    },
+    "es": {
+     "t": "Dentro del átomo",
+     "g": "Conocer los protones, neutrones y electrones y cómo se organizan.",
+     "p": [
+      "En el centro está el núcleo, con protones (positivos) y neutrones (sin carga).",
+      "Los electrones (negativos) se mueven alrededor del núcleo en una nube de niveles de energía.",
+      "Casi todo el átomo es espacio vacío: el núcleo es como un guisante en un estadio."
+     ],
+     "q": "¿Qué dibujo del átomo recuerdas del colegio?",
+     "c": "Dibuja un átomo sencillo con 2 protones, 2 neutrones y 2 electrones: es el helio."
+    },
+    "fr": {
+     "t": "À l'intérieur de l'atome",
+     "g": "Rencontrer protons, neutrons et électrons et voir comment ils sont organisés.",
+     "p": [
+      "Au centre se trouve le noyau, fait de protons (positifs) et de neutrons (neutres).",
+      "Les électrons (négatifs) se déplacent autour du noyau dans un nuage de niveaux d'énergie.",
+      "L'atome est surtout du vide : le noyau est comme un petit pois dans un stade."
+     ],
+     "q": "Quelle image de l'atome te reste de l'école ?",
+     "c": "Dessine un atome simple avec 2 protons, 2 neutrons et 2 électrons : c'est l'hélium."
+    },
+    "it": {
+     "t": "Dentro l'atomo",
+     "g": "Conoscere protoni, neutroni ed elettroni e come sono disposti.",
+     "p": [
+      "Al centro c'è il nucleo, fatto di protoni (positivi) e neutroni (senza carica).",
+      "Gli elettroni (negativi) si muovono intorno al nucleo in una nuvola di livelli di energia.",
+      "L'atomo è quasi tutto vuoto: il nucleo è come un pisello in uno stadio."
+     ],
+     "q": "Quale disegno dell'atomo ricordi dalla scuola?",
+     "c": "Disegna un atomo semplice con 2 protoni, 2 neutroni e 2 elettroni: è l'elio."
+    },
+    "pt": {
+     "t": "Dentro do átomo",
+     "g": "Conhecer os protões, neutrões e eletrões e como estão organizados.",
+     "p": [
+      "No centro está o núcleo, com protões (positivos) e neutrões (sem carga).",
+      "Os eletrões (negativos) movem-se à volta do núcleo numa nuvem de níveis de energia.",
+      "O átomo é quase todo espaço vazio: o núcleo é como uma ervilha num estádio."
+     ],
+     "q": "Que desenho do átomo te lembras da escola?",
+     "c": "Desenha um átomo simples com 2 protões, 2 neutrões e 2 eletrões: é o hélio."
+    },
+    "pt_BR": {
+     "t": "Dentro do átomo",
+     "g": "Conhecer prótons, nêutrons e elétrons e como eles se organizam.",
+     "p": [
+      "No centro fica o núcleo, com prótons (positivos) e nêutrons (sem carga).",
+      "Os elétrons (negativos) se movem ao redor do núcleo numa nuvem de níveis de energia.",
+      "O átomo é quase todo espaço vazio: o núcleo é como uma ervilha num estádio."
+     ],
+     "q": "Qual desenho do átomo você lembra da escola?",
+     "c": "Desenhe um átomo simples com 2 prótons, 2 nêutrons e 2 elétrons: é o hélio."
+    }
+   }
+  }
+ ]
+}

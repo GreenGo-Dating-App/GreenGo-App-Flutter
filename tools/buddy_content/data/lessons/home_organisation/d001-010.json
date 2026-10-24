@@ -1,0 +1,835 @@
+{
+ "topic": "home_organisation",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why an organised home feels good",
+     "g": "See how a little order saves time and makes daily life calmer.",
+     "p": [
+      "When things have a place, you spend less time searching and rushing.",
+      "A clear space gives your mind less to juggle, so stress often drops.",
+      "Order is not about rules; it is about a home that is easier to live in."
+     ],
+     "q": "What part of your home would you love to feel calmer?",
+     "c": "Pick one item you often search for and put it somewhere easy to find."
+    },
+    "de": {
+     "t": "Warum ein geordnetes Zuhause gut tut",
+     "g": "Entdecke, wie etwas Ordnung Zeit spart und den Alltag ruhiger macht.",
+     "p": [
+      "Hat alles seinen Platz, suchst und hetzt du weniger.",
+      "Ein freier Raum entlastet den Kopf, und oft sinkt auch der Stress.",
+      "Ordnung bedeutet keine strengen Regeln, sondern ein Zuhause, in dem man leichter lebt."
+     ],
+     "q": "Welcher Bereich deines Zuhauses darf sich ruhiger anfühlen?",
+     "c": "Such dir etwas, das du oft suchst, und lege es an einen leicht auffindbaren Ort."
+    },
+    "es": {
+     "t": "Por qué un hogar ordenado sienta bien",
+     "g": "Descubre cómo un poco de orden ahorra tiempo y calma el día a día.",
+     "p": [
+      "Cuando cada cosa tiene su sitio, pierdes menos tiempo buscando y corriendo.",
+      "Un espacio despejado deja menos cosas en la cabeza y suele bajar el estrés.",
+      "El orden no son normas estrictas, sino una casa en la que se vive mejor."
+     ],
+     "q": "¿Qué rincón de tu casa te gustaría sentir más tranquilo?",
+     "c": "Elige algo que sueles buscar y déjalo en un lugar fácil de encontrar."
+    },
+    "fr": {
+     "t": "Pourquoi un foyer rangé fait du bien",
+     "g": "Découvre comment un peu d'ordre fait gagner du temps et apaise le quotidien.",
+     "p": [
+      "Quand chaque chose a sa place, on cherche et on court moins.",
+      "Un espace dégagé laisse moins de choses en tête, et le stress baisse souvent.",
+      "L'ordre n'est pas une règle stricte, c'est une maison plus agréable à vivre."
+     ],
+     "q": "Quelle partie de ta maison aimerais-tu rendre plus paisible ?",
+     "c": "Choisis un objet que tu cherches souvent et pose-le à un endroit facile à trouver."
+    },
+    "it": {
+     "t": "Perché una casa ordinata fa stare bene",
+     "g": "Scopri come un po' di ordine fa risparmiare tempo e rende le giornate più serene.",
+     "p": [
+      "Se ogni cosa ha il suo posto, cerchi e corri di meno.",
+      "Uno spazio libero lascia meno pensieri in testa e spesso riduce lo stress.",
+      "L'ordine non è una regola rigida, ma una casa in cui si vive meglio."
+     ],
+     "q": "Quale angolo della tua casa vorresti sentire più sereno?",
+     "c": "Scegli un oggetto che cerchi spesso e mettilo in un posto facile da trovare."
+    },
+    "pt": {
+     "t": "Porque uma casa organizada sabe bem",
+     "g": "Descobre como um pouco de ordem poupa tempo e acalma o dia a dia.",
+     "p": [
+      "Quando cada coisa tem o seu lugar, procuras e corres menos.",
+      "Um espaço livre deixa menos coisas na cabeça e o stress costuma baixar.",
+      "Ordem não são regras rígidas, é uma casa onde se vive melhor."
+     ],
+     "q": "Que canto da tua casa gostavas de sentir mais calmo?",
+     "c": "Escolhe algo que costumas procurar e põe num sítio fácil de encontrar."
+    },
+    "pt_BR": {
+     "t": "Por que uma casa organizada faz bem",
+     "g": "Descubra como um pouco de ordem economiza tempo e deixa o dia a dia mais calmo.",
+     "p": [
+      "Quando cada coisa tem seu lugar, você procura e corre menos.",
+      "Um espaço livre deixa menos coisa na cabeça, e o estresse costuma diminuir.",
+      "Ordem não é regra rígida, é uma casa em que dá para viver melhor."
+     ],
+     "q": "Que cantinho da sua casa você gostaria de sentir mais tranquilo?",
+     "c": "Escolha algo que você costuma procurar e deixe num lugar fácil de achar."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Organised is not the same as perfect",
+     "g": "Learn that a tidy home works for you, not for a magazine photo.",
+     "p": [
+      "A home is for living, so a few things out of place are perfectly normal.",
+      "Aim for good enough: a space you can reset in minutes, not a spotless one.",
+      "Your own routines and family set the standard, never someone else's pictures."
+     ],
+     "q": "Which small mess do you honestly not mind living with?",
+     "c": "Leave one spot deliberately a bit messy today and enjoy not worrying about it."
+    },
+    "de": {
+     "t": "Ordentlich heißt nicht perfekt",
+     "g": "Lerne, dass ein aufgeräumtes Zuhause zu dir passt und kein Katalogfoto sein muss.",
+     "p": [
+      "Ein Zuhause ist zum Leben da, ein paar Dinge am falschen Platz sind völlig normal.",
+      "Ziel ist gut genug: ein Raum, den du in Minuten wieder in Ordnung bringst.",
+      "Dein Alltag und deine Familie setzen den Maßstab, nicht fremde Bilder."
+     ],
+     "q": "Welche kleine Unordnung stört dich ehrlich gesagt nicht?",
+     "c": "Lass heute eine Ecke bewusst etwas unordentlich und genieße die Gelassenheit."
+    },
+    "es": {
+     "t": "Ordenado no es lo mismo que perfecto",
+     "g": "Aprende que una casa ordenada funciona para ti, no para una foto de revista.",
+     "p": [
+      "Una casa es para vivir, así que algunas cosas fuera de lugar son normales.",
+      "Busca algo suficientemente bueno: un espacio que recoges en minutos, sin brillo de catálogo.",
+      "Tu rutina y tu familia marcan el nivel, no las fotos de otros."
+     ],
+     "q": "¿Qué pequeño desorden no te molesta de verdad?",
+     "c": "Deja hoy un rincón un poco desordenado a propósito y disfruta sin preocuparte."
+    },
+    "fr": {
+     "t": "Rangé ne veut pas dire parfait",
+     "g": "Comprends qu'une maison rangée doit te convenir, pas ressembler à un magazine.",
+     "p": [
+      "Une maison sert à vivre : quelques objets déplacés, c'est tout à fait normal.",
+      "Vise le suffisant : un lieu que tu remets en ordre en quelques minutes.",
+      "Ta routine et ta famille fixent la norme, pas les photos des autres."
+     ],
+     "q": "Quel petit désordre ne te dérange vraiment pas ?",
+     "c": "Laisse aujourd'hui un coin volontairement un peu en désordre, sans culpabiliser."
+    },
+    "it": {
+     "t": "Ordinato non significa perfetto",
+     "g": "Impara che una casa in ordine deve funzionare per te, non sembrare una rivista.",
+     "p": [
+      "La casa serve per vivere, quindi qualche cosa fuori posto è normalissimo.",
+      "Punta a un risultato abbastanza buono: uno spazio che rimetti a posto in pochi minuti.",
+      "La tua routine e la tua famiglia decidono lo standard, non le foto degli altri."
+     ],
+     "q": "Quale piccolo disordine non ti disturba davvero?",
+     "c": "Lascia oggi un angolo volutamente un po' disordinato e goditi la serenità."
+    },
+    "pt": {
+     "t": "Organizado não é o mesmo que perfeito",
+     "g": "Aprende que uma casa arrumada tem de funcionar para ti, não parecer uma revista.",
+     "p": [
+      "Uma casa é para viver, por isso algumas coisas fora do sítio são normais.",
+      "Procura o suficiente: um espaço que arrumas em minutos, sem brilho de catálogo.",
+      "A tua rotina e a tua família definem o padrão, não as fotos dos outros."
+     ],
+     "q": "Que pequena desarrumação não te incomoda mesmo nada?",
+     "c": "Deixa hoje um canto propositadamente um pouco desarrumado e não te preocupes."
+    },
+    "pt_BR": {
+     "t": "Organizado não é o mesmo que perfeito",
+     "g": "Aprenda que uma casa arrumada tem que funcionar para você, não parecer uma revista.",
+     "p": [
+      "Casa é para viver, então algumas coisas fora do lugar são normais.",
+      "Busque o suficiente: um espaço que você arruma em minutos, sem brilho de catálogo.",
+      "Sua rotina e sua família definem o padrão, não as fotos dos outros."
+     ],
+     "q": "Que pequena bagunça realmente não te incomoda?",
+     "c": "Deixe hoje um cantinho de propósito um pouco bagunçado e relaxe."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your home organisation goals",
+     "g": "Choose two or three clear wishes that will guide your tidying.",
+     "p": [
+      "Concrete goals work best, like finding keys fast or a clear dinner table.",
+      "Fewer goals means more progress; start with the ones that annoy you daily.",
+      "Write them down where you will see them, such as on the fridge."
+     ],
+     "q": "What would make your home easier to live in this month?",
+     "c": "Write down two goals on a note and stick it somewhere visible."
+    },
+    "de": {
+     "t": "Deine Ziele für Ordnung zuhause",
+     "g": "Wähle zwei oder drei klare Wünsche, die dein Aufräumen leiten.",
+     "p": [
+      "Konkrete Ziele wirken am besten, etwa Schlüssel schnell finden oder ein freier Esstisch.",
+      "Weniger Ziele bringen mehr Fortschritt; starte mit dem, was dich täglich nervt.",
+      "Schreibe sie dorthin, wo du sie siehst, zum Beispiel an den Kühlschrank."
+     ],
+     "q": "Was würde dein Zuhause diesen Monat alltagstauglicher machen?",
+     "c": "Schreibe zwei Ziele auf einen Zettel und hänge ihn sichtbar auf."
+    },
+    "es": {
+     "t": "Tus objetivos de orden en casa",
+     "g": "Elige dos o tres deseos claros que guíen tu orden.",
+     "p": [
+      "Los objetivos concretos funcionan mejor, como encontrar las llaves o tener la mesa libre.",
+      "Menos objetivos dan más avance; empieza por lo que te molesta a diario.",
+      "Anótalos donde los veas, por ejemplo en la nevera."
+     ],
+     "q": "¿Qué haría tu casa más fácil de vivir este mes?",
+     "c": "Escribe dos objetivos en una nota y pégala en un sitio visible."
+    },
+    "fr": {
+     "t": "Tes objectifs de rangement",
+     "g": "Choisis deux ou trois souhaits clairs pour guider ton rangement.",
+     "p": [
+      "Les objectifs concrets marchent mieux, comme trouver ses clés ou avoir une table dégagée.",
+      "Moins d'objectifs, plus de progrès : commence par ce qui t'agace chaque jour.",
+      "Note-les là où tu les verras, par exemple sur le frigo."
+     ],
+     "q": "Qu'est-ce qui rendrait ta maison plus facile à vivre ce mois-ci ?",
+     "c": "Écris deux objectifs sur un papier et colle-le à un endroit visible."
+    },
+    "it": {
+     "t": "I tuoi obiettivi di ordine",
+     "g": "Scegli due o tre desideri chiari che guidino il tuo riordino.",
+     "p": [
+      "Gli obiettivi concreti funzionano meglio, come trovare le chiavi o avere il tavolo libero.",
+      "Meno obiettivi, più progressi: parti da ciò che ti infastidisce ogni giorno.",
+      "Scrivili dove li vedrai, per esempio sul frigorifero."
+     ],
+     "q": "Cosa renderebbe la tua casa più facile da vivere questo mese?",
+     "c": "Scrivi due obiettivi su un foglietto e attaccalo in un posto visibile."
+    },
+    "pt": {
+     "t": "Os teus objetivos de organização",
+     "g": "Escolhe dois ou três desejos claros para guiar a tua arrumação.",
+     "p": [
+      "Objetivos concretos funcionam melhor, como achar as chaves ou ter a mesa livre.",
+      "Menos objetivos, mais progresso: começa pelo que te irrita todos os dias.",
+      "Escreve-os onde os vejas, por exemplo no frigorífico."
+     ],
+     "q": "O que tornaria a tua casa mais fácil de viver este mês?",
+     "c": "Escreve dois objetivos num papel e cola-o num sítio visível."
+    },
+    "pt_BR": {
+     "t": "Seus objetivos de organização",
+     "g": "Escolha dois ou três desejos claros para guiar sua arrumação.",
+     "p": [
+      "Metas concretas funcionam melhor, como achar as chaves ou ter a mesa livre.",
+      "Menos metas, mais progresso: comece pelo que te irrita todo dia.",
+      "Escreva onde você veja, por exemplo na geladeira."
+     ],
+     "q": "O que deixaria sua casa mais fácil de viver neste mês?",
+     "c": "Escreva duas metas num papel e cole num lugar visível."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Start small: one drawer",
+     "g": "Finish one drawer in about fifteen minutes and feel the win.",
+     "p": [
+      "A single drawer is small enough to finish, which builds momentum.",
+      "Empty it fully, wipe it with a damp cloth, and look at what you own.",
+      "Put back only what you use and gives you a reason to open that drawer."
+     ],
+     "q": "Which drawer in your home bothers you the most?",
+     "c": "Set a timer for fifteen minutes and tidy one drawer from start to end."
+    },
+    "de": {
+     "t": "Klein anfangen: eine Schublade",
+     "g": "Schaffe eine Schublade in etwa fünfzehn Minuten und spüre den Erfolg.",
+     "p": [
+      "Eine Schublade ist klein genug, um fertig zu werden, das gibt Schwung.",
+      "Leere sie ganz, wische sie feucht aus und sieh dir an, was du besitzt.",
+      "Lege nur zurück, was du nutzt und wofür du diese Schublade öffnest."
+     ],
+     "q": "Welche Schublade bei dir stört am meisten?",
+     "c": "Stelle einen Timer auf fünfzehn Minuten und räume eine Schublade komplett auf."
+    },
+    "es": {
+     "t": "Empieza poco a poco: un cajón",
+     "g": "Termina un cajón en unos quince minutos y siente el logro.",
+     "p": [
+      "Un solo cajón es lo bastante pequeño para acabarlo, y eso da impulso.",
+      "Vacíalo entero, límpialo con un paño húmedo y mira lo que tienes.",
+      "Devuelve solo lo que usas y lo que te hace abrir ese cajón."
+     ],
+     "q": "¿Qué cajón de tu casa te molesta más?",
+     "c": "Pon un temporizador de quince minutos y ordena un cajón de principio a fin."
+    },
+    "fr": {
+     "t": "Commencer petit : un tiroir",
+     "g": "Termine un tiroir en une quinzaine de minutes et savoure la réussite.",
+     "p": [
+      "Un seul tiroir est assez petit pour être fini, ce qui donne de l'élan.",
+      "Vide-le entièrement, essuie-le avec un chiffon humide et regarde ce que tu as.",
+      "Ne remets que ce que tu utilises et qui justifie d'ouvrir ce tiroir."
+     ],
+     "q": "Quel tiroir de ta maison te dérange le plus ?",
+     "c": "Lance un minuteur de quinze minutes et range un tiroir du début à la fin."
+    },
+    "it": {
+     "t": "Iniziare in piccolo: un cassetto",
+     "g": "Finisci un cassetto in circa quindici minuti e senti la soddisfazione.",
+     "p": [
+      "Un solo cassetto è abbastanza piccolo da essere completato, e dà slancio.",
+      "Svuotalo del tutto, passa un panno umido e guarda cosa possiedi.",
+      "Rimetti solo ciò che usi e che ti fa aprire quel cassetto."
+     ],
+     "q": "Quale cassetto di casa ti disturba di più?",
+     "c": "Imposta un timer di quindici minuti e riordina un cassetto dall'inizio alla fine."
+    },
+    "pt": {
+     "t": "Começar pequeno: uma gaveta",
+     "g": "Termina uma gaveta em cerca de quinze minutos e sente a vitória.",
+     "p": [
+      "Uma só gaveta é pequena o suficiente para acabar, o que dá ânimo.",
+      "Esvazia-a toda, limpa com um pano húmido e vê o que tens.",
+      "Volta a pôr só o que usas e que te faz abrir essa gaveta."
+     ],
+     "q": "Que gaveta da tua casa te incomoda mais?",
+     "c": "Marca quinze minutos no temporizador e arruma uma gaveta do início ao fim."
+    },
+    "pt_BR": {
+     "t": "Comece pequeno: uma gaveta",
+     "g": "Termine uma gaveta em uns quinze minutos e sinta a vitória.",
+     "p": [
+      "Uma só gaveta é pequena o bastante para terminar, o que dá ânimo.",
+      "Esvazie tudo, limpe com um pano úmido e veja o que você tem.",
+      "Guarde de volta só o que usa e que faz você abrir aquela gaveta."
+     ],
+     "q": "Qual gaveta da sua casa mais te incomoda?",
+     "c": "Marque quinze minutos no timer e arrume uma gaveta do começo ao fim."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The four-box sort",
+     "g": "Sort things into keep, donate, recycle and bin so each has a destination.",
+     "p": [
+      "Label four boxes or bags: keep, donate, recycle and bin.",
+      "Decide quickly; if an item is in good shape and unused, donating is kind.",
+      "Take the donate and recycle boxes out of the house within a few days."
+     ],
+     "q": "What is one thing you are ready to pass on to someone else?",
+     "c": "Fill the donate box with at least three things you no longer use."
+    },
+    "de": {
+     "t": "Die Vier-Kisten-Methode",
+     "g": "Sortiere in Behalten, Spenden, Recycling und Müll, damit alles ein Ziel hat.",
+     "p": [
+      "Beschrifte vier Kisten oder Beutel: behalten, spenden, recyceln, Müll.",
+      "Entscheide zügig; gut erhaltene, ungenutzte Dinge zu spenden ist freundlich.",
+      "Bringe Spenden und Recycling innerhalb weniger Tage aus dem Haus."
+     ],
+     "q": "Was gibst du gerne an jemand anderen weiter?",
+     "c": "Fülle die Spendenkiste heute mit mindestens drei Dingen, die du nicht mehr nutzt."
+    },
+    "es": {
+     "t": "El método de las cuatro cajas",
+     "g": "Clasifica en conservar, donar, reciclar y tirar para que todo tenga destino.",
+     "p": [
+      "Etiqueta cuatro cajas o bolsas: conservar, donar, reciclar y tirar.",
+      "Decide rápido; si algo está bien y no se usa, donarlo es un gesto amable.",
+      "Saca las cajas de donar y reciclar de casa en pocos días."
+     ],
+     "q": "¿Qué cosa estás listo para pasar a otra persona?",
+     "c": "Llena la caja de donar con al menos tres cosas que ya no uses."
+    },
+    "fr": {
+     "t": "La méthode des quatre cartons",
+     "g": "Trie en garder, donner, recycler et jeter pour que tout ait une destination.",
+     "p": [
+      "Étiquette quatre cartons ou sacs : garder, donner, recycler, jeter.",
+      "Décide vite ; un objet en bon état et inutilisé, le donner est un beau geste.",
+      "Sors les cartons à donner et à recycler de la maison en quelques jours."
+     ],
+     "q": "Qu'est-ce que tu es prêt à transmettre à quelqu'un d'autre ?",
+     "c": "Remplis le carton à donner avec au moins trois choses que tu n'utilises plus."
+    },
+    "it": {
+     "t": "Il metodo delle quattro scatole",
+     "g": "Dividi in tenere, donare, riciclare e buttare, così ogni cosa ha una meta.",
+     "p": [
+      "Etichetta quattro scatole o sacchi: tenere, donare, riciclare, buttare.",
+      "Decidi in fretta; un oggetto in buono stato e inutilizzato, donarlo è un bel gesto.",
+      "Porta fuori casa le scatole da donare e riciclare entro pochi giorni."
+     ],
+     "q": "Cosa sei pronto a passare a qualcun altro?",
+     "c": "Riempi la scatola da donare con almeno tre cose che non usi più."
+    },
+    "pt": {
+     "t": "O método das quatro caixas",
+     "g": "Separa em guardar, doar, reciclar e deitar fora, para tudo ter destino.",
+     "p": [
+      "Etiqueta quatro caixas ou sacos: guardar, doar, reciclar e lixo.",
+      "Decide depressa; se algo está em bom estado e não se usa, doar é simpático.",
+      "Leva as caixas de doar e reciclar para fora de casa em poucos dias."
+     ],
+     "q": "O que estás pronto para passar a outra pessoa?",
+     "c": "Enche a caixa de doar com pelo menos três coisas que já não usas."
+    },
+    "pt_BR": {
+     "t": "O método das quatro caixas",
+     "g": "Separe em guardar, doar, reciclar e jogar fora, para tudo ter destino.",
+     "p": [
+      "Etiquete quatro caixas ou sacolas: guardar, doar, reciclar e lixo.",
+      "Decida rápido; se algo está em bom estado e não é usado, doar é um gesto bonito.",
+      "Leve as caixas de doar e reciclar para fora de casa em poucos dias."
+     ],
+     "q": "O que você está pronto para passar para outra pessoa?",
+     "c": "Encha a caixa de doar com pelo menos três coisas que você não usa mais."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A home for everything",
+     "g": "Give each item one fixed place so tidying means putting things back.",
+     "p": [
+      "Every object needs one home, chosen where you use it most.",
+      "When the place is obvious, putting things away takes seconds.",
+      "Tell everyone at home where things live so the system works for all."
+     ],
+     "q": "Which item in your home never seems to have a fixed place?",
+     "c": "Choose one homeless item today, give it a spot and say its place out loud."
+    },
+    "de": {
+     "t": "Ein Platz für alles",
+     "g": "Gib jedem Ding einen festen Platz, damit Aufräumen heißt: zurücklegen.",
+     "p": [
+      "Jeder Gegenstand braucht ein Zuhause, dort, wo du ihn am meisten brauchst.",
+      "Ist der Platz klar, dauert das Wegräumen nur Sekunden.",
+      "Sag allen im Haushalt, wo was liegt, damit das System für alle klappt."
+     ],
+     "q": "Welcher Gegenstand hat bei dir nie einen festen Platz?",
+     "c": "Wähle heute ein heimatloses Ding, gib ihm einen Platz und sage ihn laut."
+    },
+    "es": {
+     "t": "Un lugar para cada cosa",
+     "g": "Da a cada objeto un sitio fijo para que ordenar sea devolver las cosas.",
+     "p": [
+      "Cada objeto necesita un hogar, elegido donde más lo usas.",
+      "Si el lugar es obvio, guardar las cosas lleva segundos.",
+      "Cuenta a todos en casa dónde vive cada cosa para que funcione."
+     ],
+     "q": "¿Qué objeto de tu casa nunca tiene sitio fijo?",
+     "c": "Elige hoy un objeto sin sitio, dale uno y di en voz alta dónde vive."
+    },
+    "fr": {
+     "t": "Une place pour chaque chose",
+     "g": "Donne à chaque objet une place fixe : ranger devient simplement remettre.",
+     "p": [
+      "Chaque objet a besoin d'un chez-soi, choisi là où tu t'en sers le plus.",
+      "Quand la place est évidente, ranger prend quelques secondes.",
+      "Dis à tous à la maison où vivent les choses pour que ça marche."
+     ],
+     "q": "Quel objet de ta maison n'a jamais de place fixe ?",
+     "c": "Choisis aujourd'hui un objet sans place, donne-lui en une et dis-la à voix haute."
+    },
+    "it": {
+     "t": "Un posto per ogni cosa",
+     "g": "Dai a ogni oggetto un posto fisso, così riordinare è rimettere a posto.",
+     "p": [
+      "Ogni oggetto ha bisogno di una casa, scelta dove lo usi di più.",
+      "Quando il posto è ovvio, riporre richiede pochi secondi.",
+      "Dì a tutti in casa dove vivono le cose, così il sistema funziona."
+     ],
+     "q": "Quale oggetto di casa tua non ha mai un posto fisso?",
+     "c": "Scegli oggi un oggetto senza posto, dagliene uno e dillo ad alta voce."
+    },
+    "pt": {
+     "t": "Um lugar para cada coisa",
+     "g": "Dá a cada objeto um sítio fixo, para arrumar ser só voltar a pôr no lugar.",
+     "p": [
+      "Cada objeto precisa de uma casa, escolhida onde mais o usas.",
+      "Quando o lugar é óbvio, guardar demora segundos.",
+      "Diz a todos em casa onde vive cada coisa, para o sistema funcionar."
+     ],
+     "q": "Que objeto da tua casa nunca tem lugar fixo?",
+     "c": "Escolhe hoje um objeto sem lugar, dá-lhe um e diz em voz alta onde fica."
+    },
+    "pt_BR": {
+     "t": "Um lugar para cada coisa",
+     "g": "Dê a cada objeto um lugar fixo, para arrumar ser só devolver ao lugar.",
+     "p": [
+      "Cada objeto precisa de uma casa, escolhida onde você mais usa.",
+      "Quando o lugar é óbvio, guardar leva segundos.",
+      "Diga a todos em casa onde cada coisa mora, para o sistema funcionar."
+     ],
+     "q": "Que objeto da sua casa nunca tem lugar fixo?",
+     "c": "Escolha hoje um objeto sem lugar, dê um a ele e diga em voz alta onde fica."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Store by how often you use it",
+     "g": "Place things by frequency: daily close, weekly nearby, rare far away.",
+     "p": [
+      "Daily items belong at arm's reach, between knee and shoulder height.",
+      "Weekly items can sit a little further; rare ones go up high or at the back.",
+      "Seasonal things fit well in a box on a top shelf with a clear label."
+     ],
+     "q": "Which item do you use every day but keep too far away?",
+     "c": "Move one daily-use item closer and one rarely used item further away."
+    },
+    "de": {
+     "t": "Nach Nutzungshäufigkeit lagern",
+     "g": "Ordne nach Häufigkeit: Tägliches nah, Wöchentliches in der Nähe, Seltenes weit weg.",
+     "p": [
+      "Tägliches gehört in Griffweite, zwischen Knie- und Schulterhöhe.",
+      "Wöchentliches darf etwas weiter weg, Seltenes nach oben oder nach hinten.",
+      "Saisonales passt in eine beschriftete Kiste auf dem obersten Regal."
+     ],
+     "q": "Was nutzt du täglich, bewahrst es aber zu weit weg auf?",
+     "c": "Hole einen täglich genutzten Gegenstand näher und einen seltenen weiter weg."
+    },
+    "es": {
+     "t": "Guarda según la frecuencia de uso",
+     "g": "Coloca según el uso: lo diario cerca, lo semanal a mano, lo raro lejos.",
+     "p": [
+      "Lo de cada día va al alcance, entre la rodilla y el hombro.",
+      "Lo semanal puede ir algo más lejos; lo raro, arriba o al fondo.",
+      "Lo de temporada cabe en una caja en el estante alto con etiqueta clara."
+     ],
+     "q": "¿Qué usas a diario pero guardas demasiado lejos?",
+     "c": "Acerca un objeto de uso diario y aleja uno que uses poco."
+    },
+    "fr": {
+     "t": "Ranger selon la fréquence d'usage",
+     "g": "Place selon l'usage : le quotidien près, l'hebdo à proximité, le rare loin.",
+     "p": [
+      "Le quotidien se met à portée de main, entre le genou et l'épaule.",
+      "L'hebdomadaire peut être un peu plus loin ; le rare, en haut ou au fond.",
+      "Le saisonnier tient dans un carton étiqueté sur l'étagère du haut."
+     ],
+     "q": "Qu'utilises-tu chaque jour mais ranges trop loin ?",
+     "c": "Rapproche un objet du quotidien et éloigne un objet rarement utilisé."
+    },
+    "it": {
+     "t": "Riporre in base a quanto usi le cose",
+     "g": "Disponi per frequenza: il quotidiano vicino, il settimanale a portata, il raro lontano.",
+     "p": [
+      "Il quotidiano va a portata di mano, tra il ginocchio e la spalla.",
+      "Il settimanale può stare un po' più lontano; il raro in alto o in fondo.",
+      "Le cose stagionali stanno in una scatola etichettata sul ripiano alto."
+     ],
+     "q": "Cosa usi ogni giorno ma tieni troppo lontano?",
+     "c": "Avvicina un oggetto d'uso quotidiano e allontana uno che usi poco."
+    },
+    "pt": {
+     "t": "Guardar conforme a frequência de uso",
+     "g": "Põe conforme o uso: o diário perto, o semanal à mão, o raro longe.",
+     "p": [
+      "O diário fica ao alcance, entre o joelho e o ombro.",
+      "O semanal pode ficar um pouco mais longe; o raro em cima ou ao fundo.",
+      "O sazonal cabe numa caixa etiquetada na prateleira de cima."
+     ],
+     "q": "O que usas todos os dias mas guardas demasiado longe?",
+     "c": "Aproxima um objeto de uso diário e afasta um que uses pouco."
+    },
+    "pt_BR": {
+     "t": "Guarde conforme a frequência de uso",
+     "g": "Coloque conforme o uso: o diário perto, o semanal à mão, o raro longe.",
+     "p": [
+      "O diário fica ao alcance, entre o joelho e o ombro.",
+      "O semanal pode ficar um pouco mais longe; o raro em cima ou lá no fundo.",
+      "O sazonal cabe numa caixa etiquetada na prateleira de cima."
+     ],
+     "q": "O que você usa todo dia mas guarda longe demais?",
+     "c": "Aproxime um objeto de uso diário e afaste um que você usa pouco."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Declutter before you buy boxes",
+     "g": "Understand why sorting first beats buying containers first.",
+     "p": [
+      "New containers can hide clutter instead of solving it.",
+      "Sort and let go first, then measure what is left before choosing storage.",
+      "Often you need fewer boxes than you thought, saving money and space."
+     ],
+     "q": "Have you ever bought storage that you did not end up needing?",
+     "c": "Declutter one shelf today, then check whether it still needs any box."
+    },
+    "de": {
+     "t": "Erst ausmisten, dann Boxen kaufen",
+     "g": "Verstehe, warum Sortieren vor dem Kauf von Behältern kommt.",
+     "p": [
+      "Neue Behälter können Unordnung verstecken, statt sie zu lösen.",
+      "Sortiere zuerst aus, miss dann, was bleibt, und wähle erst dann Aufbewahrung.",
+      "Oft brauchst du weniger Boxen als gedacht, das spart Geld und Platz."
+     ],
+     "q": "Hast du schon mal Aufbewahrung gekauft, die du dann nicht brauchtest?",
+     "c": "Miste heute ein Regal aus und prüfe, ob es noch eine Box braucht."
+    },
+    "es": {
+     "t": "Despeja antes de comprar cajas",
+     "g": "Entiende por qué clasificar va antes que comprar recipientes.",
+     "p": [
+      "Los recipientes nuevos pueden esconder el desorden en vez de resolverlo.",
+      "Primero clasifica y suelta; luego mide lo que queda y elige dónde guardarlo.",
+      "A menudo necesitas menos cajas de las que creías, y ahorras espacio."
+     ],
+     "q": "¿Alguna vez compraste almacenaje que al final no necesitaste?",
+     "c": "Despeja hoy una balda y comprueba si aún necesita alguna caja."
+    },
+    "fr": {
+     "t": "Trier avant d'acheter des boîtes",
+     "g": "Comprends pourquoi trier passe avant d'acheter des rangements.",
+     "p": [
+      "De nouveaux contenants peuvent cacher le désordre au lieu de le résoudre.",
+      "Trie et laisse partir d'abord, puis mesure ce qui reste avant de choisir.",
+      "Souvent il faut moins de boîtes que prévu, ce qui fait gagner de la place."
+     ],
+     "q": "As-tu déjà acheté du rangement dont tu n'as pas eu besoin ?",
+     "c": "Désencombre une étagère aujourd'hui, puis vois si elle a encore besoin d'une boîte."
+    },
+    "it": {
+     "t": "Fai ordine prima di comprare scatole",
+     "g": "Capisci perché selezionare viene prima di comprare contenitori.",
+     "p": [
+      "I contenitori nuovi possono nascondere il disordine invece di risolverlo.",
+      "Prima seleziona e lascia andare, poi misura ciò che resta e scegli come riporlo.",
+      "Spesso servono meno scatole del previsto, e si guadagna spazio."
+     ],
+     "q": "Hai mai comprato contenitori che poi non ti servivano?",
+     "c": "Sfoltisci oggi un ripiano e controlla se ha ancora bisogno di una scatola."
+    },
+    "pt": {
+     "t": "Despeja antes de comprar caixas",
+     "g": "Percebe porque separar vem antes de comprar recipientes.",
+     "p": [
+      "Recipientes novos podem esconder a desordem em vez de a resolver.",
+      "Primeiro separa e larga; depois mede o que sobra e escolhe onde guardar.",
+      "Muitas vezes precisas de menos caixas do que pensavas, e ganhas espaço."
+     ],
+     "q": "Já compraste arrumação de que afinal não precisaste?",
+     "c": "Despeja hoje uma prateleira e vê se ainda precisa de alguma caixa."
+    },
+    "pt_BR": {
+     "t": "Desapegue antes de comprar caixas",
+     "g": "Entenda por que separar vem antes de comprar organizadores.",
+     "p": [
+      "Organizadores novos podem esconder a bagunça em vez de resolver.",
+      "Primeiro separe e solte; depois meça o que sobrou e escolha onde guardar.",
+      "Muitas vezes você precisa de menos caixas do que pensava, e ganha espaço."
+     ],
+     "q": "Você já comprou organizadores que no fim não precisou?",
+     "c": "Desapegue hoje de uma prateleira e veja se ela ainda precisa de alguma caixa."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The one-in, one-out habit",
+     "g": "Keep belongings steady: when something new arrives, something old leaves.",
+     "p": [
+      "Pair every new item with an old one that goes to donation or recycling.",
+      "The rule works best for clothes, books, mugs and toys.",
+      "It is a guide, not a punishment; be kind to yourself when you forget."
+     ],
+     "q": "What was the last thing you bought that replaced something old?",
+     "c": "Pick one item to say goodbye to for the next new thing you bring home."
+    },
+    "de": {
+     "t": "Die Eins-rein-eins-raus-Regel",
+     "g": "Halte deinen Besitz stabil: kommt etwas Neues, geht etwas Altes.",
+     "p": [
+      "Verbinde jedes neue Teil mit einem alten, das gespendet oder recycelt wird.",
+      "Die Regel klappt gut bei Kleidung, Büchern, Tassen und Spielzeug.",
+      "Sie ist ein Leitfaden, keine Strafe; sei nachsichtig, wenn du sie vergisst."
+     ],
+     "q": "Was hast du zuletzt gekauft, das etwas Altes ersetzt hat?",
+     "c": "Wähle ein Teil zum Verabschieden für das nächste Neue, das du heimbringst."
+    },
+    "es": {
+     "t": "La regla de uno entra, uno sale",
+     "g": "Mantén tus cosas estables: si entra algo nuevo, sale algo viejo.",
+     "p": [
+      "Empareja cada objeto nuevo con uno viejo que se done o se recicle.",
+      "La regla funciona muy bien con ropa, libros, tazas y juguetes.",
+      "Es una guía, no un castigo; sé amable contigo si se te olvida."
+     ],
+     "q": "¿Qué fue lo último que compraste para reemplazar algo viejo?",
+     "c": "Elige un objeto del que despedirte para la próxima cosa nueva que traigas."
+    },
+    "fr": {
+     "t": "La règle un qui entre, un qui sort",
+     "g": "Garde tes affaires stables : quand quelque chose entre, quelque chose sort.",
+     "p": [
+      "Associe chaque nouvel objet à un ancien qui part en don ou au recyclage.",
+      "La règle marche bien pour les vêtements, livres, tasses et jouets.",
+      "C'est un repère, pas une punition ; sois indulgent si tu oublies."
+     ],
+     "q": "Quel est le dernier achat qui a remplacé un objet ancien ?",
+     "c": "Choisis un objet à quitter pour la prochaine nouveauté que tu ramèneras."
+    },
+    "it": {
+     "t": "La regola uno entra, uno esce",
+     "g": "Mantieni stabili le tue cose: se entra qualcosa di nuovo, esce qualcosa di vecchio.",
+     "p": [
+      "Abbina ogni oggetto nuovo a uno vecchio da donare o riciclare.",
+      "La regola funziona bene con vestiti, libri, tazze e giocattoli.",
+      "È una guida, non una punizione; sii gentile con te se te ne scordi."
+     ],
+     "q": "Qual è l'ultima cosa che hai comprato al posto di una vecchia?",
+     "c": "Scegli un oggetto da salutare per la prossima novità che porterai a casa."
+    },
+    "pt": {
+     "t": "A regra de um entra, um sai",
+     "g": "Mantém as tuas coisas estáveis: se entra algo novo, sai algo velho.",
+     "p": [
+      "Associa cada objeto novo a um velho que vai para doação ou reciclagem.",
+      "A regra funciona bem com roupa, livros, canecas e brinquedos.",
+      "É um guia, não um castigo; sê simpático contigo se te esqueceres."
+     ],
+     "q": "Qual foi a última coisa que compraste para substituir algo velho?",
+     "c": "Escolhe um objeto de que te vais despedir quando trouxeres algo novo."
+    },
+    "pt_BR": {
+     "t": "A regra de um entra, um sai",
+     "g": "Mantenha suas coisas estáveis: se entra algo novo, sai algo velho.",
+     "p": [
+      "Associe cada objeto novo a um velho que vai para doação ou reciclagem.",
+      "A regra funciona bem com roupas, livros, canecas e brinquedos.",
+      "É um guia, não um castigo; seja gentil consigo se esquecer."
+     ],
+     "q": "Qual foi a última coisa que você comprou para substituir algo velho?",
+     "c": "Escolha um objeto para se despedir quando trouxer algo novo para casa."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Clear one flat surface",
+     "g": "Win quickly by clearing one table or counter completely.",
+     "p": [
+      "Flat surfaces attract things because they are easy to drop stuff on.",
+      "Clear everything off, wipe it with a damp cloth, and return only what belongs.",
+      "Notice how a clear surface makes the whole room feel lighter."
+     ],
+     "q": "Which flat surface in your home collects the most things?",
+     "c": "Clear one surface fully today and keep it empty until tonight."
+    },
+    "de": {
+     "t": "Eine freie Fläche schaffen",
+     "g": "Erziele einen schnellen Erfolg: Räume einen Tisch oder eine Arbeitsplatte frei.",
+     "p": [
+      "Flächen ziehen Dinge an, weil man so leicht etwas darauf ablegt.",
+      "Räume alles ab, wische feucht und stelle nur Zugehöriges zurück.",
+      "Spüre, wie eine freie Fläche den ganzen Raum leichter wirken lässt."
+     ],
+     "q": "Welche Fläche bei dir sammelt die meisten Dinge?",
+     "c": "Räume heute eine Fläche ganz frei und halte sie bis zum Abend leer."
+    },
+    "es": {
+     "t": "Despeja una superficie plana",
+     "g": "Consigue un logro rápido despejando una mesa o encimera por completo.",
+     "p": [
+      "Las superficies planas atraen cosas porque es fácil dejarlas ahí.",
+      "Quita todo, límpiala con un paño húmedo y devuelve solo lo que le corresponde.",
+      "Notarás cómo una superficie libre aligera toda la habitación."
+     ],
+     "q": "¿Qué superficie de tu casa acumula más cosas?",
+     "c": "Despeja hoy una superficie del todo y mantenla libre hasta la noche."
+    },
+    "fr": {
+     "t": "Dégager une surface plane",
+     "g": "Obtiens une victoire rapide en dégageant une table ou un plan de travail.",
+     "p": [
+      "Les surfaces planes attirent les objets car il est facile d'y poser des choses.",
+      "Retire tout, essuie avec un chiffon humide et ne remets que ce qui y a sa place.",
+      "Tu verras qu'une surface libre allège toute la pièce."
+     ],
+     "q": "Quelle surface de ta maison accumule le plus de choses ?",
+     "c": "Dégage une surface entièrement aujourd'hui et garde-la vide jusqu'au soir."
+    },
+    "it": {
+     "t": "Libera una superficie piana",
+     "g": "Ottieni una vittoria rapida liberando un tavolo o un piano di lavoro.",
+     "p": [
+      "Le superfici piane attirano oggetti perché è facile appoggiarci cose.",
+      "Togli tutto, passa un panno umido e rimetti solo ciò che le appartiene.",
+      "Noterai che una superficie libera alleggerisce tutta la stanza."
+     ],
+     "q": "Quale superficie di casa tua accumula più cose?",
+     "c": "Libera oggi una superficie del tutto e tienila vuota fino a sera."
+    },
+    "pt": {
+     "t": "Libertar uma superfície plana",
+     "g": "Consegue uma vitória rápida libertando uma mesa ou bancada.",
+     "p": [
+      "As superfícies planas atraem coisas porque é fácil pousá-las ali.",
+      "Tira tudo, limpa com um pano húmido e põe só o que lá pertence.",
+      "Vais reparar que uma superfície livre alivia a divisão toda."
+     ],
+     "q": "Que superfície da tua casa acumula mais coisas?",
+     "c": "Liberta hoje uma superfície por completo e mantém-na vazia até à noite."
+    },
+    "pt_BR": {
+     "t": "Libere uma superfície plana",
+     "g": "Conquiste uma vitória rápida liberando uma mesa ou bancada.",
+     "p": [
+      "Superfícies planas atraem coisas porque é fácil largar objetos ali.",
+      "Tire tudo, limpe com um pano úmido e devolva só o que pertence ali.",
+      "Você vai notar que uma superfície livre deixa o ambiente inteiro mais leve."
+     ],
+     "q": "Qual superfície da sua casa acumula mais coisas?",
+     "c": "Libere hoje uma superfície por completo e mantenha vazia até a noite."
+    }
+   }
+  }
+ ]
+}

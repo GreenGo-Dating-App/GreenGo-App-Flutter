@@ -1,0 +1,835 @@
+{
+ "topic": "leadership",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking for feedback as a leader",
+     "g": "Invite honest feedback on your own leadership.",
+     "p": [
+      "Ask specific questions: what is one thing I should keep, one to change?",
+      "Choose a good moment and a person who will be honest.",
+      "Show you are safe to talk to: stay calm and curious."
+     ],
+     "q": "Who could give you honest feedback about how you lead?",
+     "c": "Ask one person for one thing to keep and one thing to change."
+    },
+    "de": {
+     "t": "Als Führungskraft um Feedback bitten",
+     "g": "Ehrliches Feedback zu deiner eigenen Führung einladen.",
+     "p": [
+      "Stelle konkrete Fragen: Was soll ich beibehalten, was ändern?",
+      "Wähle einen guten Moment und eine Person, die ehrlich sein wird.",
+      "Zeige, dass man mit dir reden kann: bleib ruhig und neugierig."
+     ],
+     "q": "Wer könnte dir ehrliches Feedback zu deiner Führung geben?",
+     "c": "Bitte eine Person um eine Sache zum Beibehalten und eine zum Ändern."
+    },
+    "es": {
+     "t": "Pedir feedback como líder",
+     "g": "Invitar a recibir feedback honesto sobre tu propio liderazgo.",
+     "p": [
+      "Haz preguntas concretas: ¿qué debo mantener y qué cambiar?",
+      "Elige un buen momento y una persona que sea honesta.",
+      "Muestra que es seguro hablar contigo: mantén la calma y la curiosidad."
+     ],
+     "q": "¿Quién podría darte feedback honesto sobre cómo lideras?",
+     "c": "Pide a una persona algo que mantener y algo que cambiar."
+    },
+    "fr": {
+     "t": "Demander du feedback en tant que leader",
+     "g": "Inviter un feedback honnête sur ta propre façon de guider.",
+     "p": [
+      "Pose des questions précises : que garder, que changer ?",
+      "Choisis un bon moment et une personne qui sera franche.",
+      "Montre qu'on peut te parler : reste calme et curieux."
+     ],
+     "q": "Qui pourrait te donner un feedback honnête sur ta façon de guider ?",
+     "c": "Demande à une personne une chose à garder et une à changer."
+    },
+    "it": {
+     "t": "Chiedere feedback da leader",
+     "g": "Invitare un feedback onesto sulla tua leadership.",
+     "p": [
+      "Fai domande specifiche: cosa dovrei mantenere e cosa cambiare?",
+      "Scegli un buon momento e una persona che sarà onesta.",
+      "Mostra che con te si può parlare: resta calmo e curioso."
+     ],
+     "q": "Chi potrebbe darti un feedback onesto su come guidi?",
+     "c": "Chiedi a una persona una cosa da mantenere e una da cambiare."
+    },
+    "pt": {
+     "t": "Pedir feedback como líder",
+     "g": "Convidar a um feedback honesto sobre a tua liderança.",
+     "p": [
+      "Faz perguntas específicas: o que devo manter e o que mudar?",
+      "Escolhe um bom momento e uma pessoa que seja honesta.",
+      "Mostra que é seguro falar contigo: mantém a calma e a curiosidade."
+     ],
+     "q": "Quem poderia dar-te feedback honesto sobre como lideras?",
+     "c": "Pede a uma pessoa uma coisa a manter e uma a mudar."
+    },
+    "pt_BR": {
+     "t": "Pedindo feedback como líder",
+     "g": "Convidar a um feedback honesto sobre sua liderança.",
+     "p": [
+      "Faça perguntas específicas: o que devo manter e o que mudar?",
+      "Escolha um bom momento e uma pessoa que seja honesta.",
+      "Mostre que é seguro falar com você: mantenha a calma e a curiosidade."
+     ],
+     "q": "Quem poderia dar a você feedback honesto sobre como lidera?",
+     "c": "Peça a uma pessoa uma coisa a manter e uma a mudar."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Receiving feedback without defending",
+     "g": "Listen, thank and ask questions instead of justifying.",
+     "p": [
+      "Your first job is to listen to the whole message.",
+      "Say thank you, then ask for an example to understand better.",
+      "Pause before replying; you can think and respond later."
+     ],
+     "q": "What is your first reaction when someone criticises your work?",
+     "c": "Practise: next time you get feedback, reply with just thank you and one question."
+    },
+    "de": {
+     "t": "Feedback annehmen ohne Verteidigung",
+     "g": "Zuhören, danken und nachfragen, statt dich zu rechtfertigen.",
+     "p": [
+      "Deine erste Aufgabe ist, die ganze Botschaft anzuhören.",
+      "Sage danke und bitte um ein Beispiel, um besser zu verstehen.",
+      "Halte vor der Antwort inne; du kannst später nachdenken und antworten."
+     ],
+     "q": "Was ist deine erste Reaktion, wenn jemand deine Arbeit kritisiert?",
+     "c": "Übe: Antworte beim nächsten Feedback nur mit Danke und einer Frage."
+    },
+    "es": {
+     "t": "Recibir feedback sin ponerte a la defensiva",
+     "g": "Escuchar, agradecer y preguntar en vez de justificarte.",
+     "p": [
+      "Tu primera tarea es escuchar el mensaje completo.",
+      "Di gracias y pide un ejemplo para entender mejor.",
+      "Haz una pausa antes de responder; puedes pensar y contestar después."
+     ],
+     "q": "¿Cuál es tu primera reacción cuando alguien critica tu trabajo?",
+     "c": "Practica: la próxima vez que recibas feedback, responde solo gracias y una pregunta."
+    },
+    "fr": {
+     "t": "Recevoir un feedback sans se défendre",
+     "g": "Écouter, remercier et questionner plutôt que te justifier.",
+     "p": [
+      "Ta première tâche est d'écouter le message en entier.",
+      "Dis merci, puis demande un exemple pour mieux comprendre.",
+      "Fais une pause avant de répondre ; tu peux réfléchir et répondre plus tard."
+     ],
+     "q": "Quelle est ta première réaction quand on critique ton travail ?",
+     "c": "Entraîne-toi : au prochain feedback, réponds juste merci et une question."
+    },
+    "it": {
+     "t": "Ricevere feedback senza difendersi",
+     "g": "Ascoltare, ringraziare e chiedere invece di giustificarti.",
+     "p": [
+      "Il tuo primo compito è ascoltare tutto il messaggio.",
+      "Di' grazie, poi chiedi un esempio per capire meglio.",
+      "Fai una pausa prima di rispondere; puoi pensare e rispondere dopo."
+     ],
+     "q": "Qual è la tua prima reazione quando qualcuno critica il tuo lavoro?",
+     "c": "Esercitati: al prossimo feedback, rispondi solo grazie e una domanda."
+    },
+    "pt": {
+     "t": "Receber feedback sem te defenderes",
+     "g": "Ouvir, agradecer e perguntar em vez de te justificares.",
+     "p": [
+      "A tua primeira tarefa é ouvir a mensagem toda.",
+      "Diz obrigado e pede um exemplo para perceber melhor.",
+      "Faz uma pausa antes de responder; podes pensar e responder depois."
+     ],
+     "q": "Qual é a tua primeira reação quando alguém critica o teu trabalho?",
+     "c": "Pratica: no próximo feedback, responde só obrigado e uma pergunta."
+    },
+    "pt_BR": {
+     "t": "Recebendo feedback sem se defender",
+     "g": "Ouvir, agradecer e perguntar em vez de se justificar.",
+     "p": [
+      "Sua primeira tarefa é ouvir a mensagem inteira.",
+      "Diga obrigado e peça um exemplo para entender melhor.",
+      "Faça uma pausa antes de responder; você pode pensar e responder depois."
+     ],
+     "q": "Qual é sua primeira reação quando alguém critica seu trabalho?",
+     "c": "Pratique: no próximo feedback, responda só obrigado e uma pergunta."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Separating feedback from identity",
+     "g": "See feedback as information about actions, not about your worth.",
+     "p": [
+      "A comment about your work is not a verdict on you as a person.",
+      "Actions can change; that is good news, not an insult.",
+      "Remind yourself: I am learning, and this helps me learn."
+     ],
+     "q": "How do you usually talk to yourself after a critique?",
+     "c": "Write one kind sentence you can tell yourself after hard feedback."
+    },
+    "de": {
+     "t": "Feedback von Identität trennen",
+     "g": "Feedback als Information über Handlungen sehen, nicht über deinen Wert.",
+     "p": [
+      "Ein Kommentar zu deiner Arbeit ist kein Urteil über dich als Mensch.",
+      "Handlungen lassen sich ändern; das ist eine gute Nachricht, keine Beleidigung.",
+      "Sage dir: Ich lerne, und das hilft mir dabei."
+     ],
+     "q": "Wie sprichst du nach einer Kritik meist mit dir selbst?",
+     "c": "Schreibe einen freundlichen Satz, den du dir nach hartem Feedback sagen kannst."
+    },
+    "es": {
+     "t": "Separar el feedback de la identidad",
+     "g": "Ver el feedback como información sobre acciones, no sobre tu valor.",
+     "p": [
+      "Un comentario sobre tu trabajo no es un veredicto sobre ti como persona.",
+      "Las acciones pueden cambiar; es una buena noticia, no un insulto.",
+      "Recuérdate: estoy aprendiendo y esto me ayuda a aprender."
+     ],
+     "q": "¿Cómo te hablas normalmente después de una crítica?",
+     "c": "Escribe una frase amable que puedas decirte tras un feedback duro."
+    },
+    "fr": {
+     "t": "Séparer le feedback de l'identité",
+     "g": "Voir le feedback comme une information sur des actes, pas sur ta valeur.",
+     "p": [
+      "Une remarque sur ton travail n'est pas un verdict sur toi.",
+      "Les actes peuvent changer ; c'est une bonne nouvelle, pas une insulte.",
+      "Rappelle-toi : j'apprends, et cela m'aide à apprendre."
+     ],
+     "q": "Comment te parles-tu d'habitude après une critique ?",
+     "c": "Écris une phrase bienveillante à te dire après un feedback difficile."
+    },
+    "it": {
+     "t": "Separare il feedback dall'identità",
+     "g": "Vedere il feedback come informazione sulle azioni, non sul tuo valore.",
+     "p": [
+      "Un commento sul tuo lavoro non è un verdetto su di te come persona.",
+      "Le azioni possono cambiare; è una buona notizia, non un'offesa.",
+      "Ricordati: sto imparando, e questo mi aiuta a imparare."
+     ],
+     "q": "Come ti parli di solito dopo una critica?",
+     "c": "Scrivi una frase gentile da dirti dopo un feedback duro."
+    },
+    "pt": {
+     "t": "Separar o feedback da identidade",
+     "g": "Ver o feedback como informação sobre ações, não sobre o teu valor.",
+     "p": [
+      "Um comentário sobre o teu trabalho não é um veredicto sobre ti.",
+      "As ações podem mudar; é uma boa notícia, não um insulto.",
+      "Lembra-te: estou a aprender, e isto ajuda-me a aprender."
+     ],
+     "q": "Como costumas falar contigo depois de uma crítica?",
+     "c": "Escreve uma frase simpática que possas dizer a ti próprio após um feedback duro."
+    },
+    "pt_BR": {
+     "t": "Separando o feedback da identidade",
+     "g": "Ver o feedback como informação sobre ações, não sobre o seu valor.",
+     "p": [
+      "Um comentário sobre seu trabalho não é um veredito sobre você.",
+      "Ações podem mudar; é uma boa notícia, não um insulto.",
+      "Lembre-se: estou aprendendo, e isto me ajuda a aprender."
+     ],
+     "q": "Como você costuma falar consigo depois de uma crítica?",
+     "c": "Escreva uma frase gentil que você possa dizer a si mesmo após um feedback duro."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Handling unfair feedback",
+     "g": "Stay calm, look for useful parts and clarify respectfully.",
+     "p": [
+      "Take a breath and avoid answering while upset.",
+      "Look for a small piece that may be useful, even in rough feedback.",
+      "Ask politely for examples; you can disagree respectfully later."
+     ],
+     "q": "How do you react when feedback feels unfair?",
+     "c": "Next time, ask: can you give me an example so I understand?"
+    },
+    "de": {
+     "t": "Mit unfairem Feedback umgehen",
+     "g": "Ruhig bleiben, Nützliches suchen und respektvoll nachfragen.",
+     "p": [
+      "Atme durch und antworte nicht, solange du aufgewühlt bist.",
+      "Suche einen kleinen nützlichen Teil, auch in grobem Feedback.",
+      "Bitte höflich um Beispiele; widersprechen kannst du später respektvoll."
+     ],
+     "q": "Wie reagierst du, wenn sich Feedback unfair anfühlt?",
+     "c": "Frage beim nächsten Mal: Kannst du mir ein Beispiel geben, damit ich es verstehe?"
+    },
+    "es": {
+     "t": "Manejar un feedback injusto",
+     "g": "Mantener la calma, buscar lo útil y aclarar con respeto.",
+     "p": [
+      "Respira y evita responder mientras estás alterado.",
+      "Busca una parte pequeña que pueda servir, incluso en un feedback duro.",
+      "Pide ejemplos con educación; puedes discrepar con respeto más tarde."
+     ],
+     "q": "¿Cómo reaccionas cuando un feedback te parece injusto?",
+     "c": "La próxima vez pregunta: ¿puedes darme un ejemplo para entenderlo?"
+    },
+    "fr": {
+     "t": "Gérer un feedback injuste",
+     "g": "Rester calme, chercher l'utile et clarifier avec respect.",
+     "p": [
+      "Respire et évite de répondre quand tu es énervé.",
+      "Cherche un petit élément utile, même dans un feedback rude.",
+      "Demande poliment des exemples ; tu pourras nuancer ensuite avec respect."
+     ],
+     "q": "Comment réagis-tu quand un feedback te semble injuste ?",
+     "c": "La prochaine fois, demande : peux-tu me donner un exemple pour que je comprenne ?"
+    },
+    "it": {
+     "t": "Gestire un feedback ingiusto",
+     "g": "Restare calmi, cercare l'utile e chiarire con rispetto.",
+     "p": [
+      "Respira ed evita di rispondere mentre sei agitato.",
+      "Cerca una piccola parte utile, anche in un feedback duro.",
+      "Chiedi esempi con cortesia; potrai dissentire con rispetto più tardi."
+     ],
+     "q": "Come reagisci quando un feedback ti sembra ingiusto?",
+     "c": "La prossima volta chiedi: puoi farmi un esempio così capisco?"
+    },
+    "pt": {
+     "t": "Lidar com feedback injusto",
+     "g": "Manter a calma, procurar o útil e esclarecer com respeito.",
+     "p": [
+      "Respira e evita responder enquanto estás alterado.",
+      "Procura uma pequena parte útil, mesmo num feedback duro.",
+      "Pede exemplos com educação; podes discordar com respeito mais tarde."
+     ],
+     "q": "Como reages quando um feedback te parece injusto?",
+     "c": "Da próxima vez, pergunta: podes dar-me um exemplo para eu perceber?"
+    },
+    "pt_BR": {
+     "t": "Lidando com feedback injusto",
+     "g": "Manter a calma, buscar o útil e esclarecer com respeito.",
+     "p": [
+      "Respire e evite responder enquanto estiver alterado.",
+      "Procure uma pequena parte útil, mesmo num feedback duro.",
+      "Peça exemplos com educação; você pode discordar com respeito depois."
+     ],
+     "q": "Como você reage quando um feedback parece injusto?",
+     "c": "Da próxima vez, pergunte: você pode me dar um exemplo para eu entender?"
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Acting on feedback",
+     "g": "Choose what to change and show others you listened.",
+     "p": [
+      "Pick one or two changes; trying to fix everything fixes nothing.",
+      "Tell the giver what you will try, and thank them again later.",
+      "Visible change shows people their words mattered."
+     ],
+     "q": "What change did you make after feedback that paid off?",
+     "c": "Choose one feedback you received and commit to one small change."
+    },
+    "de": {
+     "t": "Auf Feedback reagieren",
+     "g": "Entscheiden, was du änderst, und zeigen, dass du zugehört hast.",
+     "p": [
+      "Wähle ein oder zwei Änderungen; alles auf einmal zu ändern bringt nichts.",
+      "Sage der Person, was du probierst, und danke ihr später noch einmal.",
+      "Sichtbare Veränderung zeigt, dass ihre Worte zählten."
+     ],
+     "q": "Welche Änderung nach Feedback hat sich für dich gelohnt?",
+     "c": "Wähle ein erhaltenes Feedback und nimm dir eine kleine Änderung vor."
+    },
+    "es": {
+     "t": "Actuar según el feedback",
+     "g": "Elegir qué cambiar y mostrar a otros que escuchaste.",
+     "p": [
+      "Elige uno o dos cambios; intentar arreglarlo todo no arregla nada.",
+      "Cuéntale a quien te dio feedback qué probarás y agradécele de nuevo después.",
+      "El cambio visible muestra que sus palabras importaron."
+     ],
+     "q": "¿Qué cambio hiciste tras un feedback que dio buen resultado?",
+     "c": "Elige un feedback recibido y comprométete con un pequeño cambio."
+    },
+    "fr": {
+     "t": "Agir après un feedback",
+     "g": "Choisir quoi changer et montrer aux autres que tu as écouté.",
+     "p": [
+      "Choisis un ou deux changements ; vouloir tout corriger ne corrige rien.",
+      "Dis à la personne ce que tu vas essayer et remercie-la à nouveau plus tard.",
+      "Un changement visible montre que ses mots ont compté."
+     ],
+     "q": "Quel changement fait après un feedback a porté ses fruits ?",
+     "c": "Choisis un feedback reçu et engage-toi sur un petit changement."
+    },
+    "it": {
+     "t": "Agire sul feedback",
+     "g": "Scegliere cosa cambiare e mostrare agli altri che hai ascoltato.",
+     "p": [
+      "Scegli uno o due cambiamenti; voler sistemare tutto non sistema nulla.",
+      "Di' a chi ti ha dato il feedback cosa proverai e ringrazialo di nuovo dopo.",
+      "Un cambiamento visibile mostra che le sue parole hanno contato."
+     ],
+     "q": "Quale cambiamento fatto dopo un feedback ha dato buoni frutti?",
+     "c": "Scegli un feedback ricevuto e impegnati in un piccolo cambiamento."
+    },
+    "pt": {
+     "t": "Agir com base no feedback",
+     "g": "Escolher o que mudar e mostrar aos outros que ouviste.",
+     "p": [
+      "Escolhe uma ou duas mudanças; tentar corrigir tudo não corrige nada.",
+      "Diz a quem deu o feedback o que vais tentar e agradece de novo depois.",
+      "Uma mudança visível mostra que as palavras dessa pessoa contaram."
+     ],
+     "q": "Que mudança fizeste após um feedback que valeu a pena?",
+     "c": "Escolhe um feedback que recebeste e compromete-te com uma pequena mudança."
+    },
+    "pt_BR": {
+     "t": "Agindo com base no feedback",
+     "g": "Escolher o que mudar e mostrar aos outros que você ouviu.",
+     "p": [
+      "Escolha uma ou duas mudanças; tentar corrigir tudo não corrige nada.",
+      "Diga a quem deu o feedback o que vai tentar e agradeça de novo depois.",
+      "Uma mudança visível mostra que as palavras da pessoa contaram."
+     ],
+     "q": "Que mudança você fez após um feedback e valeu a pena?",
+     "c": "Escolha um feedback que recebeu e se comprometa com uma pequena mudança."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Upward feedback culture",
+     "g": "Make it safe for team members to give feedback to their leader.",
+     "p": [
+      "People speak up when they see that honesty is welcomed.",
+      "Thank people for hard truths, never punish them.",
+      "Offer easy ways: one-on-ones, a short survey or an open question."
+     ],
+     "q": "Would you feel safe telling your leader something difficult?",
+     "c": "Ask your team or group: what is one thing that would help us work better?"
+    },
+    "de": {
+     "t": "Aufwärts-Feedback-Kultur",
+     "g": "Es sicher machen, dass Teammitglieder ihrer Führungskraft Feedback geben.",
+     "p": [
+      "Menschen sprechen offen, wenn sie sehen, dass Ehrlichkeit willkommen ist.",
+      "Danke für unbequeme Wahrheiten und bestrafe sie nie.",
+      "Biete einfache Wege: Einzelgespräche, kurze Umfrage oder offene Frage."
+     ],
+     "q": "Würdest du dich sicher fühlen, deiner Führung etwas Schwieriges zu sagen?",
+     "c": "Frage dein Team: Was würde uns helfen, besser zusammenzuarbeiten?"
+    },
+    "es": {
+     "t": "Cultura de feedback hacia arriba",
+     "g": "Hacer seguro que el equipo dé feedback a su líder.",
+     "p": [
+      "La gente habla cuando ve que la honestidad es bienvenida.",
+      "Agradece las verdades difíciles y nunca las castigues.",
+      "Ofrece vías fáciles: reuniones uno a uno, encuesta breve o pregunta abierta."
+     ],
+     "q": "¿Te sentirías seguro diciéndole algo difícil a tu líder?",
+     "c": "Pregunta a tu equipo: ¿qué nos ayudaría a trabajar mejor?"
+    },
+    "fr": {
+     "t": "Une culture du feedback ascendant",
+     "g": "Rendre sûr pour l'équipe le fait de donner du feedback à son leader.",
+     "p": [
+      "On parle quand on voit que l'honnêteté est bienvenue.",
+      "Remercie pour les vérités difficiles, ne punis jamais.",
+      "Offre des moyens simples : tête-à-tête, court sondage ou question ouverte."
+     ],
+     "q": "Te sentirais-tu en sécurité pour dire quelque chose de difficile à ton leader ?",
+     "c": "Demande à ton équipe : qu'est-ce qui nous aiderait à mieux travailler ?"
+    },
+    "it": {
+     "t": "Cultura del feedback verso l'alto",
+     "g": "Rendere sicuro per il team dare feedback al proprio leader.",
+     "p": [
+      "Le persone parlano quando vedono che l'onestà è benvenuta.",
+      "Ringrazia per le verità difficili, non punirle mai.",
+      "Offri modi semplici: one-to-one, breve sondaggio o domanda aperta."
+     ],
+     "q": "Ti sentiresti al sicuro a dire qualcosa di difficile al tuo leader?",
+     "c": "Chiedi al tuo team: cosa ci aiuterebbe a lavorare meglio?"
+    },
+    "pt": {
+     "t": "Cultura de feedback ascendente",
+     "g": "Tornar seguro que a equipa dê feedback ao seu líder.",
+     "p": [
+      "As pessoas falam quando veem que a honestidade é bem-vinda.",
+      "Agradece as verdades difíceis e nunca as castigues.",
+      "Oferece formas fáceis: reuniões individuais, inquérito curto ou pergunta aberta."
+     ],
+     "q": "Sentir-te-ias seguro a dizer algo difícil ao teu líder?",
+     "c": "Pergunta à tua equipa: o que nos ajudaria a trabalhar melhor?"
+    },
+    "pt_BR": {
+     "t": "Cultura de feedback para cima",
+     "g": "Tornar seguro que o time dê feedback ao seu líder.",
+     "p": [
+      "As pessoas falam quando veem que a honestidade é bem-vinda.",
+      "Agradeça as verdades difíceis e nunca as puna.",
+      "Ofereça formas fáceis: conversas individuais, pesquisa curta ou pergunta aberta."
+     ],
+     "q": "Você se sentiria seguro dizendo algo difícil ao seu líder?",
+     "c": "Pergunte ao seu time: o que nos ajudaria a trabalhar melhor?"
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Feedback from peers",
+     "g": "Learn from colleagues at your level through regular exchanges.",
+     "p": [
+      "Peers see your daily work and often notice what leaders miss.",
+      "Agree on a simple swap: each shares one strength and one idea.",
+      "Keep it kind, specific and two-way so it feels equal."
+     ],
+     "q": "Which peer would give you useful and caring feedback?",
+     "c": "Invite one peer for a ten-minute feedback swap this week."
+    },
+    "de": {
+     "t": "Feedback von Kollegen",
+     "g": "Von Kollegen auf Augenhöhe durch regelmäßigen Austausch lernen.",
+     "p": [
+      "Kollegen sehen deine tägliche Arbeit und bemerken oft, was Vorgesetzte übersehen.",
+      "Vereinbart einen einfachen Tausch: jeder nennt eine Stärke und eine Idee.",
+      "Haltet es freundlich, konkret und beidseitig, damit es sich gleichwertig anfühlt."
+     ],
+     "q": "Welcher Kollege würde dir nützliches und wohlwollendes Feedback geben?",
+     "c": "Lade diese Woche eine Person zu einem zehnminütigen Feedback-Tausch ein."
+    },
+    "es": {
+     "t": "Feedback de tus iguales",
+     "g": "Aprender de colegas de tu nivel mediante intercambios regulares.",
+     "p": [
+      "Los iguales ven tu trabajo diario y notan lo que los jefes pasan por alto.",
+      "Acuerden un intercambio sencillo: cada uno comparte una fortaleza y una idea.",
+      "Que sea amable, concreto y en ambos sentidos para que sea entre iguales."
+     ],
+     "q": "¿Qué colega te daría un feedback útil y afectuoso?",
+     "c": "Invita esta semana a un colega a un intercambio de feedback de diez minutos."
+    },
+    "fr": {
+     "t": "Le feedback des pairs",
+     "g": "Apprendre de collègues de ton niveau grâce à des échanges réguliers.",
+     "p": [
+      "Les pairs voient ton travail quotidien et remarquent ce que les chefs manquent.",
+      "Convenez d'un échange simple : chacun partage une force et une idée.",
+      "Reste bienveillant, précis et réciproque pour que ce soit égal."
+     ],
+     "q": "Quel pair te donnerait un feedback utile et bienveillant ?",
+     "c": "Invite cette semaine un collègue à un échange de feedback de dix minutes."
+    },
+    "it": {
+     "t": "Feedback dai colleghi",
+     "g": "Imparare da colleghi del tuo livello con scambi regolari.",
+     "p": [
+      "I colleghi vedono il tuo lavoro quotidiano e notano ciò che i capi perdono.",
+      "Concordate uno scambio semplice: ognuno condivide un punto di forza e un'idea.",
+      "Sii gentile, specifico e reciproco, così è alla pari."
+     ],
+     "q": "Quale collega ti darebbe un feedback utile e premuroso?",
+     "c": "Invita questa settimana un collega a uno scambio di feedback di dieci minuti."
+    },
+    "pt": {
+     "t": "Feedback dos pares",
+     "g": "Aprender com colegas do teu nível através de trocas regulares.",
+     "p": [
+      "Os pares veem o teu trabalho diário e notam o que os chefes não veem.",
+      "Combinem uma troca simples: cada um partilha uma força e uma ideia.",
+      "Mantém-no simpático, específico e recíproco para ser entre iguais."
+     ],
+     "q": "Que colega te daria feedback útil e atencioso?",
+     "c": "Convida esta semana um colega para uma troca de feedback de dez minutos."
+    },
+    "pt_BR": {
+     "t": "Feedback dos colegas",
+     "g": "Aprender com colegas do seu nível por meio de trocas regulares.",
+     "p": [
+      "Colegas veem seu trabalho diário e notam o que os chefes não veem.",
+      "Combinem uma troca simples: cada um compartilha uma força e uma ideia.",
+      "Mantenha gentil, específico e recíproco para ser entre iguais."
+     ],
+     "q": "Que colega daria a você um feedback útil e atencioso?",
+     "c": "Convide nesta semana um colega para uma troca de feedback de dez minutos."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "360-degree feedback",
+     "g": "Gather views from many directions to see your leadership fully.",
+     "p": [
+      "360 feedback collects views from team, peers, seniors and yourself.",
+      "Look for patterns that many people mention, not single comments.",
+      "Celebrate your strengths too; they are part of the picture."
+     ],
+     "q": "Whose view of you would be most useful to hear?",
+     "c": "List four to six people you could ask for a few honest comments."
+    },
+    "de": {
+     "t": "360-Grad-Feedback",
+     "g": "Sichtweisen aus vielen Richtungen sammeln, um deine Führung ganz zu sehen.",
+     "p": [
+      "360-Grad-Feedback sammelt Sichten von Team, Kollegen, Vorgesetzten und dir selbst.",
+      "Achte auf Muster, die viele nennen, nicht auf einzelne Kommentare.",
+      "Feiere auch deine Stärken; sie gehören zum Gesamtbild."
+     ],
+     "q": "Wessen Sicht auf dich wäre am nützlichsten zu hören?",
+     "c": "Liste vier bis sechs Personen, die du um ehrliche Kommentare bitten könntest."
+    },
+    "es": {
+     "t": "Feedback de 360 grados",
+     "g": "Reunir miradas desde muchas direcciones para ver tu liderazgo completo.",
+     "p": [
+      "El feedback 360 reúne visiones del equipo, iguales, superiores y tuya.",
+      "Busca patrones que mencionen muchos, no comentarios sueltos.",
+      "Celebra también tus fortalezas; forman parte del cuadro."
+     ],
+     "q": "¿La visión de quién sobre ti sería más útil escuchar?",
+     "c": "Anota de cuatro a seis personas a quienes pedir comentarios honestos."
+    },
+    "fr": {
+     "t": "Le feedback à 360 degrés",
+     "g": "Recueillir des points de vue de toutes parts pour voir ton leadership en entier.",
+     "p": [
+      "Le 360 rassemble les avis de l'équipe, des pairs, des supérieurs et de toi.",
+      "Cherche les schémas cités par beaucoup, pas les remarques isolées.",
+      "Célèbre aussi tes forces ; elles font partie du tableau."
+     ],
+     "q": "Le regard de qui sur toi serait le plus utile à entendre ?",
+     "c": "Note quatre à six personnes à qui demander quelques commentaires honnêtes."
+    },
+    "it": {
+     "t": "Feedback a 360 gradi",
+     "g": "Raccogliere punti di vista da più direzioni per vedere la tua leadership per intero.",
+     "p": [
+      "Il 360 raccoglie pareri di team, colleghi, superiori e tuoi.",
+      "Cerca schemi citati da molti, non commenti isolati.",
+      "Celebra anche i tuoi punti di forza; fanno parte del quadro."
+     ],
+     "q": "Il punto di vista di chi su di te sarebbe più utile ascoltare?",
+     "c": "Elenca da quattro a sei persone a cui chiedere commenti onesti."
+    },
+    "pt": {
+     "t": "Feedback de 360 graus",
+     "g": "Reunir pontos de vista de várias direções para veres a tua liderança por inteiro.",
+     "p": [
+      "O 360 reúne opiniões da equipa, pares, superiores e tua.",
+      "Procura padrões que muitos referem, não comentários isolados.",
+      "Celebra também as tuas forças; fazem parte do quadro."
+     ],
+     "q": "A visão de quem sobre ti seria mais útil ouvir?",
+     "c": "Lista quatro a seis pessoas a quem pedir comentários honestos."
+    },
+    "pt_BR": {
+     "t": "Feedback de 360 graus",
+     "g": "Reunir pontos de vista de várias direções para ver sua liderança por inteiro.",
+     "p": [
+      "O 360 reúne opiniões do time, colegas, superiores e suas.",
+      "Procure padrões que muitos citam, não comentários isolados.",
+      "Celebre também suas forças; elas fazem parte do quadro."
+     ],
+     "q": "A visão de quem sobre você seria mais útil ouvir?",
+     "c": "Liste quatro a seis pessoas a quem pedir comentários honestos."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Turning feedback into a growth plan",
+     "g": "Convert feedback themes into small, concrete goals.",
+     "p": [
+      "Group the comments into two or three themes.",
+      "For each theme, write one small action and a date to try it.",
+      "Ask someone to cheer you on and check in with you."
+     ],
+     "q": "Which feedback theme keeps coming back for you?",
+     "c": "Write one growth goal: I will..., by..., and tell one person."
+    },
+    "de": {
+     "t": "Feedback in einen Entwicklungsplan verwandeln",
+     "g": "Feedback-Themen in kleine, konkrete Ziele umwandeln.",
+     "p": [
+      "Gruppiere die Kommentare in zwei oder drei Themen.",
+      "Schreibe zu jedem Thema eine kleine Aktion und ein Datum zum Ausprobieren.",
+      "Bitte jemanden, dich anzufeuern und nachzufragen."
+     ],
+     "q": "Welches Feedback-Thema kehrt bei dir immer wieder?",
+     "c": "Schreibe ein Entwicklungsziel: Ich werde..., bis..., und sag es einer Person."
+    },
+    "es": {
+     "t": "Convertir el feedback en un plan de crecimiento",
+     "g": "Transformar los temas del feedback en metas pequeñas y concretas.",
+     "p": [
+      "Agrupa los comentarios en dos o tres temas.",
+      "Para cada tema, escribe una pequeña acción y una fecha para probarla.",
+      "Pide a alguien que te anime y te haga seguimiento."
+     ],
+     "q": "¿Qué tema de feedback vuelve una y otra vez en tu caso?",
+     "c": "Escribe una meta de crecimiento: yo voy a..., para..., y cuéntasela a alguien."
+    },
+    "fr": {
+     "t": "Transformer le feedback en plan de progrès",
+     "g": "Convertir les thèmes de feedback en petits objectifs concrets.",
+     "p": [
+      "Regroupe les remarques en deux ou trois thèmes.",
+      "Pour chaque thème, écris une petite action et une date pour l'essayer.",
+      "Demande à quelqu'un de t'encourager et de prendre de tes nouvelles."
+     ],
+     "q": "Quel thème de feedback revient sans cesse pour toi ?",
+     "c": "Écris un objectif de progrès : je vais..., d'ici..., et dis-le à quelqu'un."
+    },
+    "it": {
+     "t": "Trasformare il feedback in un piano di crescita",
+     "g": "Convertire i temi del feedback in piccoli obiettivi concreti.",
+     "p": [
+      "Raggruppa i commenti in due o tre temi.",
+      "Per ogni tema scrivi una piccola azione e una data per provarla.",
+      "Chiedi a qualcuno di fare il tifo per te e di controllare i progressi."
+     ],
+     "q": "Quale tema di feedback ritorna sempre per te?",
+     "c": "Scrivi un obiettivo di crescita: io farò..., entro..., e dillo a una persona."
+    },
+    "pt": {
+     "t": "Transformar o feedback num plano de crescimento",
+     "g": "Converter os temas do feedback em pequenos objetivos concretos.",
+     "p": [
+      "Agrupa os comentários em dois ou três temas.",
+      "Para cada tema, escreve uma pequena ação e uma data para a testar.",
+      "Pede a alguém que te anime e acompanhe o teu progresso."
+     ],
+     "q": "Que tema de feedback volta sempre no teu caso?",
+     "c": "Escreve um objetivo de crescimento: vou..., até..., e conta a alguém."
+    },
+    "pt_BR": {
+     "t": "Transformando feedback em plano de crescimento",
+     "g": "Converter os temas do feedback em pequenos objetivos concretos.",
+     "p": [
+      "Agrupe os comentários em dois ou três temas.",
+      "Para cada tema, escreva uma pequena ação e uma data para testá-la.",
+      "Peça a alguém que torça por você e acompanhe seu progresso."
+     ],
+     "q": "Que tema de feedback sempre volta no seu caso?",
+     "c": "Escreva um objetivo de crescimento: vou..., até..., e conte a alguém."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: trust and feedback",
+     "g": "Revisit trust and feedback skills and plan one feedback conversation.",
+     "p": [
+      "Trust grows through kept promises, honesty, fairness and care.",
+      "Feedback works when it is specific, kind, timely and followed up.",
+      "Receiving feedback well is a leadership skill too."
+     ],
+     "q": "Which trust or feedback habit has helped you most so far?",
+     "c": "Plan one real feedback conversation and set a day to have it."
+    },
+    "de": {
+     "t": "Rückblick: Vertrauen und Feedback",
+     "g": "Vertrauen und Feedback wiederholen und ein Feedbackgespräch planen.",
+     "p": [
+      "Vertrauen wächst durch gehaltene Versprechen, Ehrlichkeit, Fairness und Fürsorge.",
+      "Feedback wirkt, wenn es konkret, freundlich, zeitnah und nachverfolgt ist.",
+      "Feedback gut anzunehmen ist ebenfalls eine Führungsfähigkeit."
+     ],
+     "q": "Welche Vertrauens- oder Feedback-Gewohnheit hat dir bisher am meisten geholfen?",
+     "c": "Plane ein echtes Feedbackgespräch und lege einen Tag dafür fest."
+    },
+    "es": {
+     "t": "Repaso: confianza y feedback",
+     "g": "Repasar las habilidades de confianza y feedback y planificar una conversación de feedback.",
+     "p": [
+      "La confianza crece con promesas cumplidas, honestidad, justicia y cuidado.",
+      "El feedback funciona si es concreto, amable, oportuno y con seguimiento.",
+      "Recibir bien el feedback también es una habilidad de liderazgo."
+     ],
+     "q": "¿Qué hábito de confianza o feedback te ha ayudado más hasta ahora?",
+     "c": "Planifica una conversación de feedback real y fija un día para tenerla."
+    },
+    "fr": {
+     "t": "Révision : confiance et feedback",
+     "g": "Revoir les compétences de confiance et de feedback et planifier un échange de feedback.",
+     "p": [
+      "La confiance grandit par les promesses tenues, l'honnêteté, l'équité et l'attention.",
+      "Le feedback marche s'il est précis, bienveillant, rapide et suivi.",
+      "Bien recevoir le feedback est aussi une compétence de leader."
+     ],
+     "q": "Quelle habitude de confiance ou de feedback t'a le plus aidé jusqu'ici ?",
+     "c": "Planifie un vrai échange de feedback et fixe un jour pour le faire."
+    },
+    "it": {
+     "t": "Ripasso: fiducia e feedback",
+     "g": "Ripassare le competenze di fiducia e feedback e pianificare una conversazione di feedback.",
+     "p": [
+      "La fiducia cresce con promesse mantenute, onestà, equità e cura.",
+      "Il feedback funziona se è specifico, gentile, tempestivo e seguito.",
+      "Ricevere bene il feedback è anch'essa una competenza da leader."
+     ],
+     "q": "Quale abitudine di fiducia o feedback ti ha aiutato di più finora?",
+     "c": "Pianifica una vera conversazione di feedback e fissa un giorno per farla."
+    },
+    "pt": {
+     "t": "Revisão: confiança e feedback",
+     "g": "Rever as competências de confiança e feedback e planear uma conversa de feedback.",
+     "p": [
+      "A confiança cresce com promessas cumpridas, honestidade, justiça e cuidado.",
+      "O feedback funciona quando é específico, simpático, oportuno e acompanhado.",
+      "Receber bem o feedback também é uma competência de liderança."
+     ],
+     "q": "Que hábito de confiança ou feedback mais te ajudou até agora?",
+     "c": "Planeia uma conversa de feedback real e marca um dia para a ter."
+    },
+    "pt_BR": {
+     "t": "Revisão: confiança e feedback",
+     "g": "Rever as habilidades de confiança e feedback e planejar uma conversa de feedback.",
+     "p": [
+      "A confiança cresce com promessas cumpridas, honestidade, justiça e cuidado.",
+      "O feedback funciona quando é específico, gentil, oportuno e acompanhado.",
+      "Receber bem o feedback também é uma habilidade de liderança."
+     ],
+     "q": "Que hábito de confiança ou feedback mais ajudou você até agora?",
+     "c": "Planeje uma conversa de feedback real e marque um dia para tê-la."
+    }
+   }
+  }
+ ]
+}

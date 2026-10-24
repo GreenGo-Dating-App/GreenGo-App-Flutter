@@ -1,0 +1,835 @@
+{
+ "topic": "ai",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Classification: sorting into boxes",
+     "g": "Learn how AI decides which category something belongs to.",
+     "p": [
+      "Classification puts each item into one of several boxes.",
+      "Spam or not spam is the classic two-box example.",
+      "Models can also be unsure when an item fits two boxes."
+     ],
+     "q": "What everyday sorting would you trust a model to do for you?",
+     "c": "Sort your last ten messages into three boxes of your own."
+    },
+    "de": {
+     "t": "Klassifikation: Sortieren in Kisten",
+     "g": "Lerne, wie KI entscheidet, zu welcher Kategorie etwas gehört.",
+     "p": [
+      "Klassifikation steckt jedes Objekt in eine von mehreren Kisten.",
+      "Spam oder kein Spam ist das klassische Beispiel mit zwei Kisten.",
+      "Modelle können auch unsicher sein, wenn etwas in zwei Kisten passt."
+     ],
+     "q": "Welches Alltagssortieren würdest du einem Modell anvertrauen?",
+     "c": "Sortiere deine letzten zehn Nachrichten in drei eigene Kisten."
+    },
+    "es": {
+     "t": "Clasificación: ordenar en cajas",
+     "g": "Aprende cómo la IA decide a qué categoría pertenece algo.",
+     "p": [
+      "Clasificar es poner cada elemento en una de varias cajas.",
+      "Spam o no spam es el ejemplo clásico de dos cajas.",
+      "Un modelo también puede dudar cuando algo encaja en dos cajas."
+     ],
+     "q": "¿Qué clasificación cotidiana confiarías a un modelo?",
+     "c": "Ordena tus últimos diez mensajes en tres cajas que inventes."
+    },
+    "fr": {
+     "t": "Classification : trier en catégories",
+     "g": "Apprendre comment l'IA décide de la catégorie d'un élément.",
+     "p": [
+      "Classer, c'est ranger chaque élément dans l'une de plusieurs boîtes.",
+      "Spam ou non-spam est l'exemple classique à deux boîtes.",
+      "Un modèle peut aussi hésiter quand un élément va dans deux boîtes."
+     ],
+     "q": "Quel tri du quotidien confierais-tu à un modèle ?",
+     "c": "Trie tes dix derniers messages dans trois boîtes de ton choix."
+    },
+    "it": {
+     "t": "Classificazione: ordinare in scatole",
+     "g": "Scopri come l'IA decide a quale categoria appartiene qualcosa.",
+     "p": [
+      "Classificare significa mettere ogni elemento in una di più scatole.",
+      "Spam o non spam è il classico esempio a due scatole.",
+      "Un modello può anche essere incerto se un elemento sta in due scatole."
+     ],
+     "q": "Quale smistamento quotidiano affideresti a un modello?",
+     "c": "Ordina i tuoi ultimi dieci messaggi in tre scatole inventate da te."
+    },
+    "pt": {
+     "t": "Classificação: separar por caixas",
+     "g": "Aprender como a IA decide a que categoria algo pertence.",
+     "p": [
+      "Classificar é pôr cada item numa de várias caixas.",
+      "Spam ou não spam é o exemplo clássico de duas caixas.",
+      "Um modelo também pode ficar em dúvida quando algo cabe em duas caixas."
+     ],
+     "q": "Que separação do dia a dia confiarias a um modelo?",
+     "c": "Separa as tuas últimas dez mensagens em três caixas à tua escolha."
+    },
+    "pt_BR": {
+     "t": "Classificação: separar por caixas",
+     "g": "Aprender como a IA decide a que categoria algo pertence.",
+     "p": [
+      "Classificar é pôr cada item numa de várias caixas.",
+      "Spam ou não spam é o exemplo clássico de duas caixas.",
+      "Um modelo também pode ficar em dúvida quando algo cabe em duas caixas."
+     ],
+     "q": "Que separação do dia a dia você confiaria a um modelo?",
+     "c": "Separe suas últimas dez mensagens em três caixas à sua escolha."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Regression: predicting numbers",
+     "g": "Learn how AI predicts a number instead of a category.",
+     "p": [
+      "Regression guesses a number, like tomorrow's temperature.",
+      "It finds how inputs relate to the output, such as distance and time.",
+      "Predictions come with errors, so the result is an estimate."
+     ],
+     "q": "What number in your life would you like to predict better?",
+     "c": "Guess the time of your next trip, then compare with the real time."
+    },
+    "de": {
+     "t": "Regression: Zahlen vorhersagen",
+     "g": "Lerne, wie KI eine Zahl statt einer Kategorie vorhersagt.",
+     "p": [
+      "Regression schätzt eine Zahl, etwa die Temperatur von morgen.",
+      "Sie findet, wie Eingaben und Ergebnis zusammenhängen, etwa Strecke und Zeit.",
+      "Vorhersagen haben Fehler, das Ergebnis ist eine Schätzung."
+     ],
+     "q": "Welche Zahl in deinem Leben möchtest du besser vorhersagen?",
+     "c": "Schätze die Dauer deiner nächsten Fahrt und vergleiche mit der echten."
+    },
+    "es": {
+     "t": "Regresión: predecir números",
+     "g": "Aprende cómo la IA predice un número en vez de una categoría.",
+     "p": [
+      "La regresión adivina un número, como la temperatura de mañana.",
+      "Halla cómo se relacionan las entradas con el resultado, como distancia y tiempo.",
+      "Las predicciones tienen error, así que son estimaciones."
+     ],
+     "q": "¿Qué número de tu vida te gustaría predecir mejor?",
+     "c": "Calcula cuánto durará tu próximo trayecto y compáralo con el real."
+    },
+    "fr": {
+     "t": "Régression : prédire des nombres",
+     "g": "Apprendre comment l'IA prédit un nombre plutôt qu'une catégorie.",
+     "p": [
+      "La régression devine un nombre, comme la température de demain.",
+      "Elle trouve le lien entre entrées et résultat, comme distance et durée.",
+      "Les prédictions comportent des erreurs : c'est une estimation."
+     ],
+     "q": "Quel nombre de ta vie aimerais-tu mieux prévoir ?",
+     "c": "Estime la durée de ton prochain trajet et compare avec la réalité."
+    },
+    "it": {
+     "t": "Regressione: prevedere numeri",
+     "g": "Scopri come l'IA prevede un numero invece di una categoria.",
+     "p": [
+      "La regressione indovina un numero, come la temperatura di domani.",
+      "Trova come gli input si legano al risultato, come distanza e tempo.",
+      "Le previsioni hanno errori, quindi sono stime."
+     ],
+     "q": "Quale numero della tua vita vorresti prevedere meglio?",
+     "c": "Stima la durata del prossimo viaggio e confrontala con quella vera."
+    },
+    "pt": {
+     "t": "Regressão: prever números",
+     "g": "Aprender como a IA prevê um número em vez de uma categoria.",
+     "p": [
+      "A regressão adivinha um número, como a temperatura de amanhã.",
+      "Descobre como as entradas se ligam ao resultado, como distância e tempo.",
+      "As previsões têm erro, por isso são estimativas."
+     ],
+     "q": "Que número da tua vida gostarias de prever melhor?",
+     "c": "Estima a duração da tua próxima viagem e compara com a real."
+    },
+    "pt_BR": {
+     "t": "Regressão: prever números",
+     "g": "Aprender como a IA prevê um número em vez de uma categoria.",
+     "p": [
+      "A regressão adivinha um número, como a temperatura de amanhã.",
+      "Ela descobre como as entradas se ligam ao resultado, como distância e tempo.",
+      "As previsões têm erro, por isso são estimativas."
+     ],
+     "q": "Que número da sua vida você gostaria de prever melhor?",
+     "c": "Estime a duração da sua próxima viagem e compare com a real."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Clustering: finding groups",
+     "g": "See how AI groups similar things without being told how.",
+     "p": [
+      "Clustering gathers items that look alike into groups.",
+      "Shops use it to find customers with similar tastes.",
+      "The groups need a human to interpret what they mean."
+     ],
+     "q": "What groups of friends or hobbies would a model find in your life?",
+     "c": "Group your playlist songs by mood and name each group."
+    },
+    "de": {
+     "t": "Clustering: Gruppen finden",
+     "g": "Sieh, wie KI Ähnliches gruppiert, ohne dass man es ihr sagt.",
+     "p": [
+      "Clustering sammelt ähnlich aussehende Objekte in Gruppen.",
+      "Läden nutzen es, um Kunden mit ähnlichem Geschmack zu finden.",
+      "Was die Gruppen bedeuten, muss ein Mensch deuten."
+     ],
+     "q": "Welche Gruppen würde ein Modell in deinem Leben finden?",
+     "c": "Gruppiere Lieder deiner Playlist nach Stimmung und benenne die Gruppen."
+    },
+    "es": {
+     "t": "Agrupamiento: encontrar grupos",
+     "g": "Mira cómo la IA agrupa lo parecido sin que se lo digan.",
+     "p": [
+      "El agrupamiento reúne elementos parecidos en grupos.",
+      "Las tiendas lo usan para hallar clientes con gustos similares.",
+      "Hace falta una persona para interpretar qué significan los grupos."
+     ],
+     "q": "¿Qué grupos de amigos o aficiones encontraría un modelo en tu vida?",
+     "c": "Agrupa las canciones de tu lista por estado de ánimo y ponles nombre."
+    },
+    "fr": {
+     "t": "Regroupement : trouver des groupes",
+     "g": "Voir comment l'IA regroupe le semblable sans consigne.",
+     "p": [
+      "Le regroupement rassemble les éléments qui se ressemblent.",
+      "Les boutiques s'en servent pour trouver des clients aux goûts proches.",
+      "Il faut un humain pour interpréter le sens des groupes."
+     ],
+     "q": "Quels groupes d'amis ou de loisirs un modèle trouverait-il chez toi ?",
+     "c": "Regroupe les titres de ta playlist par ambiance et nomme chaque groupe."
+    },
+    "it": {
+     "t": "Clustering: trovare gruppi",
+     "g": "Vedi come l'IA raggruppa le cose simili senza istruzioni.",
+     "p": [
+      "Il clustering riunisce elementi simili in gruppi.",
+      "I negozi lo usano per trovare clienti con gusti simili.",
+      "Serve una persona per interpretare cosa significhino i gruppi."
+     ],
+     "q": "Quali gruppi di amici o hobby troverebbe un modello nella tua vita?",
+     "c": "Raggruppa i brani della tua playlist per umore e dai un nome ai gruppi."
+    },
+    "pt": {
+     "t": "Agrupamento: encontrar grupos",
+     "g": "Ver como a IA agrupa o que é parecido sem instruções.",
+     "p": [
+      "O agrupamento reúne itens parecidos em grupos.",
+      "As lojas usam-no para achar clientes com gostos semelhantes.",
+      "É preciso uma pessoa para interpretar o que os grupos significam."
+     ],
+     "q": "Que grupos de amigos ou hobbies um modelo acharia na tua vida?",
+     "c": "Agrupa as músicas da tua playlist por humor e dá nome a cada grupo."
+    },
+    "pt_BR": {
+     "t": "Agrupamento: encontrar grupos",
+     "g": "Ver como a IA agrupa o que é parecido sem instruções.",
+     "p": [
+      "O agrupamento reúne itens parecidos em grupos.",
+      "As lojas usam isso para achar clientes com gostos semelhantes.",
+      "É preciso uma pessoa para interpretar o que os grupos significam."
+     ],
+     "q": "Que grupos de amigos ou hobbies um modelo acharia na sua vida?",
+     "c": "Agrupe as músicas da sua playlist por clima e dê nome a cada grupo."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Features: what the model looks at",
+     "g": "Learn that features are the clues a model uses.",
+     "p": [
+      "Features are measurable clues, like size, colour or word counts.",
+      "Good features make a task easier to learn.",
+      "Poor or biased features can lead a model astray."
+     ],
+     "q": "Which clues would you use to guess if a fruit is ripe?",
+     "c": "List five features that tell an apple from a pear."
+    },
+    "de": {
+     "t": "Merkmale: worauf das Modell schaut",
+     "g": "Lerne, dass Merkmale die Hinweise sind, die ein Modell nutzt.",
+     "p": [
+      "Merkmale sind messbare Hinweise wie Größe, Farbe oder Wortzahlen.",
+      "Gute Merkmale machen eine Aufgabe leichter lernbar.",
+      "Schlechte oder verzerrte Merkmale können ein Modell in die Irre führen."
+     ],
+     "q": "Welche Hinweise nutzt du, um zu erraten, ob eine Frucht reif ist?",
+     "c": "Liste fünf Merkmale auf, die einen Apfel von einer Birne unterscheiden."
+    },
+    "es": {
+     "t": "Características: lo que mira el modelo",
+     "g": "Aprende que las características son las pistas que usa un modelo.",
+     "p": [
+      "Son pistas medibles, como tamaño, color o número de palabras.",
+      "Buenas características facilitan aprender una tarea.",
+      "Características pobres o sesgadas pueden despistar al modelo."
+     ],
+     "q": "¿Qué pistas usarías para saber si una fruta está madura?",
+     "c": "Anota cinco características que distinguen una manzana de una pera."
+    },
+    "fr": {
+     "t": "Caractéristiques : ce que regarde le modèle",
+     "g": "Comprendre que les caractéristiques sont les indices du modèle.",
+     "p": [
+      "Ce sont des indices mesurables, comme taille, couleur ou nombre de mots.",
+      "De bons indices rendent une tâche plus facile à apprendre.",
+      "Des indices pauvres ou biaisés peuvent égarer un modèle."
+     ],
+     "q": "Quels indices utilises-tu pour savoir si un fruit est mûr ?",
+     "c": "Liste cinq caractéristiques qui distinguent une pomme d'une poire."
+    },
+    "it": {
+     "t": "Caratteristiche: cosa guarda il modello",
+     "g": "Scopri che le caratteristiche sono gli indizi usati da un modello.",
+     "p": [
+      "Sono indizi misurabili, come dimensione, colore o numero di parole.",
+      "Buone caratteristiche rendono un compito più facile da imparare.",
+      "Caratteristiche povere o di parte possono portare fuori strada."
+     ],
+     "q": "Quali indizi useresti per capire se un frutto è maturo?",
+     "c": "Elenca cinque caratteristiche che distinguono una mela da una pera."
+    },
+    "pt": {
+     "t": "Características: o que o modelo observa",
+     "g": "Perceber que as características são as pistas do modelo.",
+     "p": [
+      "São pistas mensuráveis, como tamanho, cor ou número de palavras.",
+      "Boas características facilitam a aprendizagem de uma tarefa.",
+      "Características fracas ou enviesadas podem desorientar o modelo."
+     ],
+     "q": "Que pistas usarias para saber se uma fruta está madura?",
+     "c": "Lista cinco características que distinguem uma maçã de uma pera."
+    },
+    "pt_BR": {
+     "t": "Características: o que o modelo observa",
+     "g": "Entender que as características são as pistas do modelo.",
+     "p": [
+      "São pistas mensuráveis, como tamanho, cor ou número de palavras.",
+      "Boas características facilitam o aprendizado de uma tarefa.",
+      "Características fracas ou enviesadas podem desorientar o modelo."
+     ],
+     "q": "Que pistas você usaria para saber se uma fruta está madura?",
+     "c": "Liste cinco características que distinguem uma maçã de uma pera."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Good data, good AI",
+     "g": "Learn why data quality shapes what AI can do.",
+     "p": [
+      "Garbage in, garbage out: messy data gives poor results.",
+      "Wrong, old or one-sided data teaches wrong lessons.",
+      "Cleaning and checking data is a big part of real AI work."
+     ],
+     "q": "Have you ever got a poor result from bad information?",
+     "c": "Spot one error or outdated fact in a note, list or old map."
+    },
+    "de": {
+     "t": "Gute Daten, gute KI",
+     "g": "Lerne, warum Datenqualität bestimmt, was KI kann.",
+     "p": [
+      "Müll rein, Müll raus: unordentliche Daten liefern schlechte Ergebnisse.",
+      "Falsche, alte oder einseitige Daten lehren Falsches.",
+      "Daten zu säubern und zu prüfen ist ein großer Teil echter KI-Arbeit."
+     ],
+     "q": "Hast du schon mal wegen schlechter Infos ein schlechtes Ergebnis gehabt?",
+     "c": "Finde einen Fehler oder veralteten Fakt in einer Notiz oder Liste."
+    },
+    "es": {
+     "t": "Buenos datos, buena IA",
+     "g": "Aprende por qué la calidad de los datos marca lo que la IA puede hacer.",
+     "p": [
+      "Basura entra, basura sale: datos desordenados dan malos resultados.",
+      "Datos erróneos, viejos o parciales enseñan lecciones equivocadas.",
+      "Limpiar y revisar datos es gran parte del trabajo real con IA."
+     ],
+     "q": "¿Alguna vez obtuviste un mal resultado por información mala?",
+     "c": "Encuentra un error o dato desactualizado en una nota o lista."
+    },
+    "fr": {
+     "t": "De bonnes données, une bonne IA",
+     "g": "Comprendre pourquoi la qualité des données détermine ce que fait l'IA.",
+     "p": [
+      "Déchets en entrée, déchets en sortie : des données brouillonnes donnent de mauvais résultats.",
+      "Des données fausses, anciennes ou partiales enseignent de mauvaises leçons.",
+      "Nettoyer et vérifier les données est une grande part du travail en IA."
+     ],
+     "q": "As-tu déjà eu un mauvais résultat à cause d'une mauvaise information ?",
+     "c": "Repère une erreur ou un fait périmé dans une note ou une liste."
+    },
+    "it": {
+     "t": "Buoni dati, buona IA",
+     "g": "Scopri perché la qualità dei dati determina cosa può fare l'IA.",
+     "p": [
+      "Spazzatura dentro, spazzatura fuori: dati disordinati danno cattivi risultati.",
+      "Dati sbagliati, vecchi o di parte insegnano lezioni sbagliate.",
+      "Pulire e controllare i dati è gran parte del lavoro vero con l'IA."
+     ],
+     "q": "Ti è mai capitato un cattivo risultato per un'informazione sbagliata?",
+     "c": "Trova un errore o un dato superato in un appunto o in una lista."
+    },
+    "pt": {
+     "t": "Bons dados, boa IA",
+     "g": "Perceber porque a qualidade dos dados define o que a IA consegue.",
+     "p": [
+      "Lixo entra, lixo sai: dados desarrumados dão maus resultados.",
+      "Dados errados, antigos ou parciais ensinam lições erradas.",
+      "Limpar e verificar dados é grande parte do trabalho real com IA."
+     ],
+     "q": "Já tiveste um mau resultado por causa de informação errada?",
+     "c": "Encontra um erro ou facto desatualizado numa nota ou lista."
+    },
+    "pt_BR": {
+     "t": "Bons dados, boa IA",
+     "g": "Entender por que a qualidade dos dados define o que a IA consegue.",
+     "p": [
+      "Lixo entra, lixo sai: dados bagunçados dão maus resultados.",
+      "Dados errados, antigos ou parciais ensinam lições erradas.",
+      "Limpar e verificar dados é grande parte do trabalho real com IA."
+     ],
+     "q": "Você já teve um mau resultado por causa de informação errada?",
+     "c": "Encontre um erro ou fato desatualizado numa nota ou lista."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How much data is enough",
+     "g": "Understand that the right amount of data depends on the task.",
+     "p": [
+      "Simple tasks need little data, complex ones need much more.",
+      "Quality and variety matter as much as quantity.",
+      "More of the same data does not fix missing kinds of examples."
+     ],
+     "q": "Why might ten photos of one cat not teach a model about cats?",
+     "c": "Take photos of one object in three different settings."
+    },
+    "de": {
+     "t": "Wie viele Daten genügen",
+     "g": "Verstehe, dass die richtige Datenmenge von der Aufgabe abhängt.",
+     "p": [
+      "Einfache Aufgaben brauchen wenig Daten, komplexe viel mehr.",
+      "Qualität und Vielfalt zählen so viel wie Menge.",
+      "Mehr vom Gleichen ersetzt keine fehlenden Arten von Beispielen."
+     ],
+     "q": "Warum lehren zehn Fotos von einer Katze ein Modell nicht über Katzen?",
+     "c": "Fotografiere einen Gegenstand in drei verschiedenen Umgebungen."
+    },
+    "es": {
+     "t": "Cuántos datos bastan",
+     "g": "Entiende que la cantidad adecuada de datos depende de la tarea.",
+     "p": [
+      "Las tareas simples necesitan pocos datos y las complejas muchos más.",
+      "La calidad y la variedad importan tanto como la cantidad.",
+      "Más datos iguales no arreglan la falta de tipos de ejemplos."
+     ],
+     "q": "¿Por qué diez fotos de un gato no enseñan a un modelo sobre gatos?",
+     "c": "Fotografía un objeto en tres lugares distintos."
+    },
+    "fr": {
+     "t": "Combien de données suffisent",
+     "g": "Comprendre que la bonne quantité dépend de la tâche.",
+     "p": [
+      "Les tâches simples demandent peu de données, les complexes bien plus.",
+      "La qualité et la variété comptent autant que la quantité.",
+      "Plus de données identiques ne comblent pas l'absence de certains exemples."
+     ],
+     "q": "Pourquoi dix photos d'un seul chat n'apprennent-elles pas ce qu'est un chat ?",
+     "c": "Photographie un objet dans trois cadres différents."
+    },
+    "it": {
+     "t": "Quanti dati bastano",
+     "g": "Capisci che la quantità giusta di dati dipende dal compito.",
+     "p": [
+      "I compiti semplici richiedono pochi dati, quelli complessi molti di più.",
+      "Qualità e varietà contano quanto la quantità.",
+      "Più dati uguali non sostituiscono i tipi di esempi mancanti."
+     ],
+     "q": "Perché dieci foto di un solo gatto non insegnano cos'è un gatto?",
+     "c": "Fotografa un oggetto in tre ambienti diversi."
+    },
+    "pt": {
+     "t": "Quantos dados chegam",
+     "g": "Perceber que a quantidade certa de dados depende da tarefa.",
+     "p": [
+      "Tarefas simples precisam de poucos dados, as complexas de muitos mais.",
+      "A qualidade e a variedade contam tanto como a quantidade.",
+      "Mais dados iguais não resolvem a falta de tipos de exemplos."
+     ],
+     "q": "Porque é que dez fotos de um gato não ensinam um modelo sobre gatos?",
+     "c": "Fotografa um objeto em três locais diferentes."
+    },
+    "pt_BR": {
+     "t": "Quantos dados bastam",
+     "g": "Entender que a quantidade certa de dados depende da tarefa.",
+     "p": [
+      "Tarefas simples precisam de poucos dados, as complexas de muito mais.",
+      "A qualidade e a variedade contam tanto quanto a quantidade.",
+      "Mais dados iguais não resolvem a falta de tipos de exemplos."
+     ],
+     "q": "Por que dez fotos de um gato não ensinam um modelo sobre gatos?",
+     "c": "Fotografe um objeto em três lugares diferentes."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Train, validate, test",
+     "g": "Learn why data is split into parts before a model is judged.",
+     "p": [
+      "Training data teaches the model its patterns.",
+      "Validation data helps tune choices along the way.",
+      "Test data, never seen before, gives an honest final score."
+     ],
+     "q": "Why would a student who sees the exam in advance score unfairly?",
+     "c": "Study with half a set of questions and quiz yourself on the rest."
+    },
+    "de": {
+     "t": "Trainieren, validieren, testen",
+     "g": "Lerne, warum Daten vor der Bewertung eines Modells aufgeteilt werden.",
+     "p": [
+      "Trainingsdaten bringen dem Modell seine Muster bei.",
+      "Validierungsdaten helfen, Entscheidungen unterwegs abzustimmen.",
+      "Testdaten, vorher nie gesehen, ergeben ein ehrliches Endergebnis."
+     ],
+     "q": "Warum hätte ein Schüler, der die Prüfung vorab sieht, ein unfaires Ergebnis?",
+     "c": "Lerne mit der Hälfte einer Fragenliste und teste dich mit dem Rest."
+    },
+    "es": {
+     "t": "Entrenar, validar, probar",
+     "g": "Aprende por qué los datos se dividen antes de juzgar un modelo.",
+     "p": [
+      "Los datos de entrenamiento enseñan los patrones al modelo.",
+      "Los de validación ayudan a ajustar decisiones por el camino.",
+      "Los de prueba, nunca vistos, dan una nota final honesta."
+     ],
+     "q": "¿Por qué sería injusto que un alumno viera el examen antes?",
+     "c": "Estudia con la mitad de unas preguntas y ponte a prueba con el resto."
+    },
+    "fr": {
+     "t": "Entraîner, valider, tester",
+     "g": "Comprendre pourquoi on découpe les données avant de juger un modèle.",
+     "p": [
+      "Les données d'entraînement enseignent ses motifs au modèle.",
+      "Les données de validation aident à régler les choix en route.",
+      "Les données de test, jamais vues, donnent une note finale honnête."
+     ],
+     "q": "Pourquoi un élève qui voit l'examen à l'avance a-t-il une note faussée ?",
+     "c": "Révise avec la moitié des questions et teste-toi avec le reste."
+    },
+    "it": {
+     "t": "Addestrare, validare, testare",
+     "g": "Scopri perché i dati si dividono prima di giudicare un modello.",
+     "p": [
+      "I dati di addestramento insegnano al modello i suoi schemi.",
+      "I dati di validazione aiutano a regolare le scelte lungo la strada.",
+      "I dati di test, mai visti, danno un voto finale onesto."
+     ],
+     "q": "Perché sarebbe scorretto che uno studente vedesse l'esame in anticipo?",
+     "c": "Studia con metà di un elenco di domande e verificati con il resto."
+    },
+    "pt": {
+     "t": "Treinar, validar, testar",
+     "g": "Perceber porque os dados se dividem antes de avaliar um modelo.",
+     "p": [
+      "Os dados de treino ensinam os padrões ao modelo.",
+      "Os de validação ajudam a afinar decisões pelo caminho.",
+      "Os de teste, nunca vistos, dão uma nota final honesta."
+     ],
+     "q": "Porque seria injusto um aluno ver o exame antes?",
+     "c": "Estuda com metade de uma lista de perguntas e testa-te com o resto."
+    },
+    "pt_BR": {
+     "t": "Treinar, validar, testar",
+     "g": "Entender por que os dados são divididos antes de avaliar um modelo.",
+     "p": [
+      "Os dados de treino ensinam os padrões ao modelo.",
+      "Os de validação ajudam a ajustar decisões pelo caminho.",
+      "Os de teste, nunca vistos, dão uma nota final honesta."
+     ],
+     "q": "Por que seria injusto um aluno ver a prova antes?",
+     "c": "Estude com metade de uma lista de perguntas e se teste com o resto."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Accuracy and mistakes",
+     "g": "Learn how to measure a model and why some errors cost more.",
+     "p": [
+      "Accuracy is the share of answers a model gets right.",
+      "Not all mistakes are equal: missing a danger beats a false alarm.",
+      "A high score can hide weak spots in rare cases."
+     ],
+     "q": "Which mistake would bother you more in a smoke alarm?",
+     "c": "Out of ten guesses about tomorrow, count your accuracy honestly."
+    },
+    "de": {
+     "t": "Genauigkeit und Fehler",
+     "g": "Lerne, ein Modell zu messen und warum manche Fehler mehr kosten.",
+     "p": [
+      "Genauigkeit ist der Anteil richtiger Antworten eines Modells.",
+      "Nicht alle Fehler wiegen gleich: Eine übersehene Gefahr ist schlimmer als Fehlalarm.",
+      "Ein hoher Wert kann Schwächen bei seltenen Fällen verbergen."
+     ],
+     "q": "Welcher Fehler würde dich bei einem Rauchmelder mehr stören?",
+     "c": "Zähle bei zehn Vermutungen zu morgen ehrlich deine Trefferquote."
+    },
+    "es": {
+     "t": "Precisión y errores",
+     "g": "Aprende a medir un modelo y por qué algunos errores cuestan más.",
+     "p": [
+      "La precisión es la parte de respuestas que acierta un modelo.",
+      "No todos los errores pesan igual: no ver un peligro es peor que una falsa alarma.",
+      "Una nota alta puede ocultar fallos en casos raros."
+     ],
+     "q": "¿Qué error te molestaría más en una alarma de humo?",
+     "c": "Haz diez predicciones sobre mañana y cuenta tu acierto con honestidad."
+    },
+    "fr": {
+     "t": "Précision et erreurs",
+     "g": "Apprendre à mesurer un modèle et pourquoi certaines erreurs coûtent plus.",
+     "p": [
+      "La précision est la part de réponses justes d'un modèle.",
+      "Toutes les erreurs ne se valent pas : rater un danger est pire qu'une fausse alerte.",
+      "Un bon score peut cacher des faiblesses sur les cas rares."
+     ],
+     "q": "Quelle erreur te gênerait le plus pour un détecteur de fumée ?",
+     "c": "Fais dix pronostics sur demain et compte honnêtement ton taux de réussite."
+    },
+    "it": {
+     "t": "Accuratezza ed errori",
+     "g": "Impara a misurare un modello e perché certi errori costano di più.",
+     "p": [
+      "L'accuratezza è la quota di risposte giuste di un modello.",
+      "Gli errori non pesano tutti uguale: non vedere un pericolo è peggio di un falso allarme.",
+      "Un punteggio alto può nascondere debolezze nei casi rari."
+     ],
+     "q": "Quale errore ti darebbe più fastidio in un rilevatore di fumo?",
+     "c": "Fai dieci previsioni su domani e conta con onestà quante ne indovini."
+    },
+    "pt": {
+     "t": "Precisão e erros",
+     "g": "Aprender a medir um modelo e porque alguns erros custam mais.",
+     "p": [
+      "A precisão é a parte das respostas que o modelo acerta.",
+      "Nem todos os erros pesam o mesmo: falhar um perigo é pior que um falso alarme.",
+      "Uma nota alta pode esconder falhas em casos raros."
+     ],
+     "q": "Que erro te incomodaria mais num detetor de fumo?",
+     "c": "Faz dez previsões sobre amanhã e conta o teu acerto com honestidade."
+    },
+    "pt_BR": {
+     "t": "Precisão e erros",
+     "g": "Aprender a medir um modelo e por que alguns erros custam mais.",
+     "p": [
+      "A precisão é a parte das respostas que o modelo acerta.",
+      "Nem todos os erros pesam igual: deixar passar um perigo é pior que um falso alarme.",
+      "Uma nota alta pode esconder falhas em casos raros."
+     ],
+     "q": "Que erro incomodaria mais você num detector de fumaça?",
+     "c": "Faça dez previsões sobre amanhã e conte seu acerto com honestidade."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "AI and probability",
+     "g": "Understand that most AI answers are best guesses with confidence.",
+     "p": [
+      "A model often gives a probability, like 90 percent cat.",
+      "High confidence is not the same as being correct.",
+      "Treat AI output as a strong hint and check what matters."
+     ],
+     "q": "When would you double-check an answer that sounds very sure?",
+     "c": "Give three weather guesses with a percent and see how they turn out."
+    },
+    "de": {
+     "t": "KI und Wahrscheinlichkeit",
+     "g": "Verstehe, dass die meisten KI-Antworten beste Vermutungen mit Sicherheitsgrad sind.",
+     "p": [
+      "Ein Modell nennt oft eine Wahrscheinlichkeit, etwa 90 Prozent Katze.",
+      "Hohe Sicherheit heißt nicht, dass es stimmt.",
+      "Sieh KI-Ausgaben als starken Hinweis und prüfe, was wichtig ist."
+     ],
+     "q": "Wann würdest du eine sehr sicher klingende Antwort nachprüfen?",
+     "c": "Gib drei Wettertipps mit Prozentwert ab und sieh, wie sie ausgehen."
+    },
+    "es": {
+     "t": "IA y probabilidad",
+     "g": "Entiende que casi toda respuesta de IA es una mejor conjetura con confianza.",
+     "p": [
+      "Un modelo suele dar una probabilidad, como 90 por ciento gato.",
+      "Mucha confianza no es lo mismo que acertar.",
+      "Toma la salida de la IA como una pista fuerte y verifica lo importante."
+     ],
+     "q": "¿Cuándo comprobarías una respuesta que suena muy segura?",
+     "c": "Haz tres pronósticos del tiempo con porcentaje y mira cómo salen."
+    },
+    "fr": {
+     "t": "IA et probabilité",
+     "g": "Comprendre que la plupart des réponses de l'IA sont des estimations avec confiance.",
+     "p": [
+      "Un modèle donne souvent une probabilité, comme 90 pour cent chat.",
+      "Une grande confiance ne veut pas dire que c'est juste.",
+      "Prends la sortie de l'IA comme un fort indice et vérifie l'important."
+     ],
+     "q": "Quand vérifierais-tu une réponse qui paraît très sûre ?",
+     "c": "Fais trois pronostics météo avec un pourcentage et regarde le résultat."
+    },
+    "it": {
+     "t": "IA e probabilità",
+     "g": "Capisci che la maggior parte delle risposte dell'IA sono ipotesi con una fiducia.",
+     "p": [
+      "Un modello spesso dà una probabilità, come 90 per cento gatto.",
+      "Molta sicurezza non equivale ad aver ragione.",
+      "Tratta l'output dell'IA come un forte indizio e controlla ciò che conta."
+     ],
+     "q": "Quando ricontrolleresti una risposta che sembra molto sicura?",
+     "c": "Fai tre previsioni meteo con una percentuale e guarda come vanno."
+    },
+    "pt": {
+     "t": "IA e probabilidade",
+     "g": "Perceber que a maioria das respostas da IA são palpites com confiança.",
+     "p": [
+      "Um modelo dá muitas vezes uma probabilidade, como 90 por cento gato.",
+      "Muita confiança não é o mesmo que estar certo.",
+      "Trata a saída da IA como uma forte pista e verifica o que importa."
+     ],
+     "q": "Quando verificarias uma resposta que parece muito segura?",
+     "c": "Faz três previsões do tempo com percentagem e vê como correm."
+    },
+    "pt_BR": {
+     "t": "IA e probabilidade",
+     "g": "Entender que a maioria das respostas da IA são palpites com confiança.",
+     "p": [
+      "Um modelo dá muitas vezes uma probabilidade, como 90 por cento gato.",
+      "Muita confiança não é o mesmo que estar certo.",
+      "Trate a saída da IA como uma forte pista e verifique o que importa."
+     ],
+     "q": "Quando você conferiria uma resposta que parece muito segura?",
+     "c": "Faça três previsões do tempo com porcentagem e veja como saem."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: the AI basics",
+     "g": "Recap the first month: what AI is, how it learns, where you meet it.",
+     "p": [
+      "AI is pattern finding in data, built and guided by people.",
+      "Models learn from examples: labelled, unlabelled or by reward.",
+      "Good data, honest testing and healthy doubt keep AI useful."
+     ],
+     "q": "Which idea from this month surprised you the most?",
+     "c": "Explain AI to a friend in three sentences without jargon."
+    },
+    "de": {
+     "t": "Rückblick: die KI-Grundlagen",
+     "g": "Wiederhole den ersten Monat: was KI ist, wie sie lernt, wo du ihr begegnest.",
+     "p": [
+      "KI ist Mustererkennung in Daten, gebaut und gelenkt von Menschen.",
+      "Modelle lernen aus Beispielen: beschriftet, unbeschriftet oder per Belohnung.",
+      "Gute Daten, ehrliches Testen und gesunder Zweifel halten KI nützlich."
+     ],
+     "q": "Welche Idee dieses Monats hat dich am meisten überrascht?",
+     "c": "Erkläre KI einem Freund in drei Sätzen ohne Fachchinesisch."
+    },
+    "es": {
+     "t": "Repaso: lo básico de la IA",
+     "g": "Repasa el primer mes: qué es la IA, cómo aprende y dónde la encuentras.",
+     "p": [
+      "La IA es búsqueda de patrones en datos, creada y guiada por personas.",
+      "Los modelos aprenden de ejemplos: etiquetados, sin etiquetar o por recompensa.",
+      "Buenos datos, pruebas honestas y duda sana mantienen útil a la IA."
+     ],
+     "q": "¿Qué idea de este mes te sorprendió más?",
+     "c": "Explica la IA a un amigo en tres frases sin jerga."
+    },
+    "fr": {
+     "t": "Révision : les bases de l'IA",
+     "g": "Récapituler le premier mois : ce qu'est l'IA, comment elle apprend, où on la croise.",
+     "p": [
+      "L'IA est une recherche de motifs dans les données, conçue et guidée par des humains.",
+      "Les modèles apprennent par exemples : étiquetés, non étiquetés ou par récompense.",
+      "De bonnes données, des tests honnêtes et un doute sain gardent l'IA utile."
+     ],
+     "q": "Quelle idée de ce mois t'a le plus surpris ?",
+     "c": "Explique l'IA à un ami en trois phrases sans jargon."
+    },
+    "it": {
+     "t": "Ripasso: le basi dell'IA",
+     "g": "Ripassa il primo mese: cos'è l'IA, come impara, dove la incontri.",
+     "p": [
+      "L'IA è ricerca di schemi nei dati, creata e guidata da persone.",
+      "I modelli imparano da esempi: etichettati, non etichettati o a premio.",
+      "Buoni dati, test onesti e sano dubbio mantengono utile l'IA."
+     ],
+     "q": "Quale idea di questo mese ti ha sorpreso di più?",
+     "c": "Spiega l'IA a un amico in tre frasi senza paroloni."
+    },
+    "pt": {
+     "t": "Revisão: o essencial da IA",
+     "g": "Recordar o primeiro mês: o que é a IA, como aprende, onde a encontras.",
+     "p": [
+      "A IA é procura de padrões em dados, criada e guiada por pessoas.",
+      "Os modelos aprendem com exemplos: etiquetados, sem etiqueta ou por recompensa.",
+      "Bons dados, testes honestos e dúvida saudável mantêm a IA útil."
+     ],
+     "q": "Que ideia deste mês mais te surpreendeu?",
+     "c": "Explica a IA a um amigo em três frases sem jargão."
+    },
+    "pt_BR": {
+     "t": "Revisão: o básico da IA",
+     "g": "Relembrar o primeiro mês: o que é a IA, como aprende, onde você a encontra.",
+     "p": [
+      "A IA é busca de padrões em dados, criada e guiada por pessoas.",
+      "Os modelos aprendem com exemplos: rotulados, sem rótulo ou por recompensa.",
+      "Bons dados, testes honestos e dúvida saudável mantêm a IA útil."
+     ],
+     "q": "Que ideia deste mês mais surpreendeu você?",
+     "c": "Explique a IA a um amigo em três frases sem jargão."
+    }
+   }
+  }
+ ]
+}

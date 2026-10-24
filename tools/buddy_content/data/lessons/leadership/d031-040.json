@@ -1,0 +1,835 @@
+{
+ "topic": "leadership",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What trust is made of",
+     "g": "Learn how competence, reliability, honesty and care build trust.",
+     "p": [
+      "Competence: people trust you to know your work or learn it.",
+      "Reliability and honesty: you do what you say and tell the truth.",
+      "Care: people trust those who clearly want the best for them."
+     ],
+     "q": "Which of the four pillars is your strongest right now?",
+     "c": "Rate yourself on the four pillars and pick one to strengthen."
+    },
+    "de": {
+     "t": "Woraus Vertrauen besteht",
+     "g": "Lernen, wie Kompetenz, Verlässlichkeit, Ehrlichkeit und Fürsorge Vertrauen schaffen.",
+     "p": [
+      "Kompetenz: Man traut dir zu, dein Fach zu kennen oder zu lernen.",
+      "Verlässlichkeit und Ehrlichkeit: Du tust, was du sagst, und sagst die Wahrheit.",
+      "Fürsorge: Man vertraut Menschen, die erkennbar das Beste für andere wollen."
+     ],
+     "q": "Welche der vier Säulen ist gerade deine stärkste?",
+     "c": "Bewerte dich bei den vier Säulen und wähle eine zum Stärken."
+    },
+    "es": {
+     "t": "De qué está hecha la confianza",
+     "g": "Aprender cómo competencia, fiabilidad, honestidad y cuidado crean confianza.",
+     "p": [
+      "Competencia: confían en que conoces tu trabajo o lo aprendes.",
+      "Fiabilidad y honestidad: haces lo que dices y dices la verdad.",
+      "Cuidado: se confía en quien quiere claramente lo mejor para los demás."
+     ],
+     "q": "¿Cuál de los cuatro pilares es hoy tu punto más fuerte?",
+     "c": "Puntúate en los cuatro pilares y elige uno para reforzar."
+    },
+    "fr": {
+     "t": "De quoi est faite la confiance",
+     "g": "Apprendre comment compétence, fiabilité, honnêteté et attention créent la confiance.",
+     "p": [
+      "Compétence : on te croit capable de maîtriser ton travail ou de l'apprendre.",
+      "Fiabilité et honnêteté : tu fais ce que tu dis et tu dis vrai.",
+      "Attention : on fait confiance à ceux qui veulent clairement notre bien."
+     ],
+     "q": "Lequel des quatre piliers est ton plus fort en ce moment ?",
+     "c": "Note-toi sur les quatre piliers et choisis-en un à renforcer."
+    },
+    "it": {
+     "t": "Di cosa è fatta la fiducia",
+     "g": "Imparare come competenza, affidabilità, onestà e cura creano fiducia.",
+     "p": [
+      "Competenza: ti credono capace di conoscere il lavoro o di impararlo.",
+      "Affidabilità e onestà: fai ciò che dici e dici la verità.",
+      "Cura: ci si fida di chi vuole chiaramente il bene degli altri."
+     ],
+     "q": "Quale dei quattro pilastri è ora il tuo più forte?",
+     "c": "Datti un voto sui quattro pilastri e scegline uno da rafforzare."
+    },
+    "pt": {
+     "t": "De que é feita a confiança",
+     "g": "Aprender como competência, fiabilidade, honestidade e cuidado criam confiança.",
+     "p": [
+      "Competência: confiam que conheces o teu trabalho ou o aprendes.",
+      "Fiabilidade e honestidade: fazes o que dizes e dizes a verdade.",
+      "Cuidado: confia-se em quem quer claramente o melhor para os outros."
+     ],
+     "q": "Qual dos quatro pilares é agora o teu mais forte?",
+     "c": "Avalia-te nos quatro pilares e escolhe um para reforçar."
+    },
+    "pt_BR": {
+     "t": "Do que é feita a confiança",
+     "g": "Aprender como competência, confiabilidade, honestidade e cuidado criam confiança.",
+     "p": [
+      "Competência: confiam que você conhece seu trabalho ou aprende.",
+      "Confiabilidade e honestidade: você faz o que diz e diz a verdade.",
+      "Cuidado: confia-se em quem quer claramente o melhor para os outros."
+     ],
+     "q": "Qual dos quatro pilares é hoje o seu mais forte?",
+     "c": "Avalie-se nos quatro pilares e escolha um para reforçar."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keeping your promises",
+     "g": "See why small commitments kept daily build your credibility.",
+     "p": [
+      "Credibility is built from many small kept promises.",
+      "Say yes carefully; a thoughtful no beats a broken yes.",
+      "If plans change, tell people early and offer a new date."
+     ],
+     "q": "Which promise do you find hardest to keep, and why?",
+     "c": "Keep every small promise today, even a quick reply or call back."
+    },
+    "de": {
+     "t": "Versprechen halten",
+     "g": "Sehen, warum täglich gehaltene kleine Zusagen deine Glaubwürdigkeit aufbauen.",
+     "p": [
+      "Glaubwürdigkeit entsteht aus vielen gehaltenen kleinen Versprechen.",
+      "Sage mit Bedacht ja; ein überlegtes Nein ist besser als ein gebrochenes Ja.",
+      "Ändern sich Pläne, sag es früh und biete einen neuen Termin an."
+     ],
+     "q": "Welches Versprechen fällt dir am schwersten, und warum?",
+     "c": "Halte heute jedes kleine Versprechen, auch eine kurze Antwort oder einen Rückruf."
+    },
+    "es": {
+     "t": "Cumplir tus promesas",
+     "g": "Ver por qué cumplir cada día compromisos pequeños construye tu credibilidad.",
+     "p": [
+      "La credibilidad se construye con muchas pequeñas promesas cumplidas.",
+      "Di que sí con cuidado; un no meditado vale más que un sí roto.",
+      "Si cambian los planes, avisa pronto y ofrece una nueva fecha."
+     ],
+     "q": "¿Qué promesa te cuesta más cumplir y por qué?",
+     "c": "Cumple hoy cada pequeña promesa, incluso una respuesta rápida o una llamada."
+    },
+    "fr": {
+     "t": "Tenir tes promesses",
+     "g": "Voir pourquoi de petits engagements tenus chaque jour construisent ta crédibilité.",
+     "p": [
+      "La crédibilité naît de nombreuses petites promesses tenues.",
+      "Dis oui avec soin ; un non réfléchi vaut mieux qu'un oui rompu.",
+      "Si les plans changent, préviens tôt et propose une nouvelle date."
+     ],
+     "q": "Quelle promesse as-tu le plus de mal à tenir, et pourquoi ?",
+     "c": "Tiens aujourd'hui chaque petite promesse, même une réponse rapide ou un rappel."
+    },
+    "it": {
+     "t": "Mantenere le promesse",
+     "g": "Vedere perché piccoli impegni mantenuti ogni giorno costruiscono la tua credibilità.",
+     "p": [
+      "La credibilità nasce da tante piccole promesse mantenute.",
+      "Di' sì con cautela; un no ponderato vale più di un sì mancato.",
+      "Se i piani cambiano, avvisa presto e proponi una nuova data."
+     ],
+     "q": "Quale promessa fai più fatica a mantenere e perché?",
+     "c": "Oggi mantieni ogni piccola promessa, anche una risposta rapida o una richiamata."
+    },
+    "pt": {
+     "t": "Cumprir as tuas promessas",
+     "g": "Ver porque pequenos compromissos cumpridos todos os dias constroem a tua credibilidade.",
+     "p": [
+      "A credibilidade constrói-se com muitas pequenas promessas cumpridas.",
+      "Diz sim com cuidado; um não ponderado vale mais do que um sim quebrado.",
+      "Se os planos mudarem, avisa cedo e propõe uma nova data."
+     ],
+     "q": "Que promessa te custa mais cumprir e porquê?",
+     "c": "Cumpre hoje cada pequena promessa, mesmo uma resposta rápida ou um telefonema."
+    },
+    "pt_BR": {
+     "t": "Cumprindo suas promessas",
+     "g": "Ver por que pequenos compromissos cumpridos todo dia constroem sua credibilidade.",
+     "p": [
+      "A credibilidade se constrói com muitas pequenas promessas cumpridas.",
+      "Diga sim com cuidado; um não ponderado vale mais que um sim quebrado.",
+      "Se os planos mudarem, avise cedo e proponha uma nova data."
+     ],
+     "q": "Que promessa é a mais difícil de cumprir para você e por quê?",
+     "c": "Cumpra hoje cada pequena promessa, até uma resposta rápida ou uma ligação."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Admitting mistakes",
+     "g": "Learn how owning errors openly builds respect, not weakness.",
+     "p": [
+      "Say it plainly: I made a mistake, and here is what I will do.",
+      "Skip excuses and blame; focus on fixing and learning.",
+      "When leaders admit errors, others feel safe to do the same."
+     ],
+     "q": "What mistake taught you the most, and who helped you through it?",
+     "c": "Admit one small slip out loud today and say how you will fix it."
+    },
+    "de": {
+     "t": "Fehler zugeben",
+     "g": "Lernen, wie offenes Eingestehen von Fehlern Respekt schafft, nicht Schwäche.",
+     "p": [
+      "Sag es klar: Ich habe einen Fehler gemacht, und das tue ich jetzt.",
+      "Lass Ausreden und Schuldzuweisungen weg; konzentriere dich auf Lösung und Lernen.",
+      "Wenn Führende Fehler zugeben, trauen sich andere es auch."
+     ],
+     "q": "Welcher Fehler hat dich am meisten gelehrt, und wer half dir dabei?",
+     "c": "Gib heute einen kleinen Ausrutscher laut zu und sag, wie du ihn behebst."
+    },
+    "es": {
+     "t": "Admitir errores",
+     "g": "Aprender cómo reconocer errores abiertamente genera respeto, no debilidad.",
+     "p": [
+      "Dilo claro: me equivoqué, y esto es lo que haré.",
+      "Sin excusas ni culpas; céntrate en arreglar y aprender.",
+      "Cuando los líderes admiten errores, los demás se sienten seguros de hacerlo."
+     ],
+     "q": "¿Qué error te enseñó más y quién te ayudó a superarlo?",
+     "c": "Admite hoy un pequeño desliz en voz alta y di cómo lo arreglarás."
+    },
+    "fr": {
+     "t": "Admettre ses erreurs",
+     "g": "Apprendre comment reconnaître ses erreurs ouvertement crée du respect, pas de la faiblesse.",
+     "p": [
+      "Dis-le simplement : j'ai fait une erreur, et voici ce que je vais faire.",
+      "Pas d'excuses ni de reproches ; concentre-toi sur la solution et l'apprentissage.",
+      "Quand un leader admet ses erreurs, les autres osent aussi."
+     ],
+     "q": "Quelle erreur t'a le plus appris, et qui t'a aidé à la traverser ?",
+     "c": "Admets aujourd'hui une petite erreur à voix haute et dis comment la réparer."
+    },
+    "it": {
+     "t": "Ammettere gli errori",
+     "g": "Imparare come riconoscere apertamente gli errori genera rispetto, non debolezza.",
+     "p": [
+      "Dillo chiaro: ho sbagliato, ed ecco cosa farò.",
+      "Niente scuse né colpe; concentrati su rimediare e imparare.",
+      "Quando i leader ammettono errori, anche gli altri si sentono al sicuro."
+     ],
+     "q": "Quale errore ti ha insegnato di più e chi ti ha aiutato?",
+     "c": "Ammetti oggi un piccolo scivolone ad alta voce e di' come rimedierai."
+    },
+    "pt": {
+     "t": "Admitir erros",
+     "g": "Aprender como reconhecer erros abertamente gera respeito, não fraqueza.",
+     "p": [
+      "Diz com clareza: enganei-me, e isto é o que vou fazer.",
+      "Sem desculpas nem culpas; foca-te em corrigir e aprender.",
+      "Quando os líderes admitem erros, os outros sentem-se seguros para o fazer."
+     ],
+     "q": "Que erro te ensinou mais e quem te ajudou a superá-lo?",
+     "c": "Admite hoje um pequeno deslize em voz alta e diz como o vais corrigir."
+    },
+    "pt_BR": {
+     "t": "Admitindo erros",
+     "g": "Aprender como reconhecer erros abertamente gera respeito, não fraqueza.",
+     "p": [
+      "Diga com clareza: eu errei, e isto é o que vou fazer.",
+      "Sem desculpas nem culpados; foque em corrigir e aprender.",
+      "Quando líderes admitem erros, os outros se sentem seguros para fazer o mesmo."
+     ],
+     "q": "Que erro mais ensinou você e quem ajudou você a superar?",
+     "c": "Admita hoje um pequeno deslize em voz alta e diga como vai corrigir."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Showing genuine care",
+     "g": "Learn about people's goals and lives in a respectful way.",
+     "p": [
+      "Ask about goals and what matters to each person, without prying.",
+      "Remember small details, like a plan, a hobby or a worry they shared.",
+      "Care shows in actions: time, flexibility and real listening."
+     ],
+     "q": "What small gesture of care meant a lot to you once?",
+     "c": "Ask one person about a goal they have and note their answer."
+    },
+    "de": {
+     "t": "Echte Anteilnahme zeigen",
+     "g": "Auf respektvolle Weise etwas über Ziele und Leben der Menschen erfahren.",
+     "p": [
+      "Frage nach Zielen und danach, was jedem wichtig ist, ohne auszufragen.",
+      "Merke dir kleine Details, etwa einen Plan, ein Hobby oder eine Sorge.",
+      "Fürsorge zeigt sich in Taten: Zeit, Flexibilität und echtes Zuhören."
+     ],
+     "q": "Welche kleine Geste der Fürsorge hat dir einmal viel bedeutet?",
+     "c": "Frage eine Person nach einem Ziel und notiere dir ihre Antwort."
+    },
+    "es": {
+     "t": "Mostrar interés genuino",
+     "g": "Conocer con respeto las metas y la vida de las personas.",
+     "p": [
+      "Pregunta por metas y por lo que importa a cada uno, sin invadir.",
+      "Recuerda pequeños detalles: un plan, una afición, una preocupación.",
+      "El cuidado se ve en hechos: tiempo, flexibilidad y escucha real."
+     ],
+     "q": "¿Qué pequeño gesto de cuidado significó mucho para ti?",
+     "c": "Pregunta a una persona por una meta suya y anota su respuesta."
+    },
+    "fr": {
+     "t": "Montrer une attention sincère",
+     "g": "Découvrir avec respect les objectifs et la vie des personnes.",
+     "p": [
+      "Interroge sur les objectifs et ce qui compte, sans être indiscret.",
+      "Retiens de petits détails : un projet, un loisir, une inquiétude.",
+      "L'attention se voit dans les actes : temps, souplesse et vraie écoute."
+     ],
+     "q": "Quel petit geste d'attention a beaucoup compté pour toi ?",
+     "c": "Demande à une personne un objectif qu'elle a et note sa réponse."
+    },
+    "it": {
+     "t": "Mostrare cura sincera",
+     "g": "Conoscere con rispetto gli obiettivi e la vita delle persone.",
+     "p": [
+      "Chiedi di obiettivi e di ciò che conta per ciascuno, senza invadere.",
+      "Ricorda piccoli dettagli: un progetto, un hobby, una preoccupazione.",
+      "La cura si vede nei fatti: tempo, flessibilità e vero ascolto."
+     ],
+     "q": "Quale piccolo gesto di cura ha significato molto per te?",
+     "c": "Chiedi a una persona un suo obiettivo e annota la risposta."
+    },
+    "pt": {
+     "t": "Mostrar interesse genuíno",
+     "g": "Conhecer com respeito os objetivos e a vida das pessoas.",
+     "p": [
+      "Pergunta por objetivos e pelo que importa a cada um, sem invadir.",
+      "Lembra pequenos detalhes: um plano, um passatempo, uma preocupação.",
+      "O cuidado vê-se em atos: tempo, flexibilidade e escuta real."
+     ],
+     "q": "Que pequeno gesto de cuidado significou muito para ti?",
+     "c": "Pergunta a uma pessoa por um objetivo dela e anota a resposta."
+    },
+    "pt_BR": {
+     "t": "Mostrando cuidado genuíno",
+     "g": "Conhecer com respeito os objetivos e a vida das pessoas.",
+     "p": [
+      "Pergunte sobre objetivos e o que importa a cada um, sem invadir.",
+      "Lembre pequenos detalhes: um plano, um hobby, uma preocupação.",
+      "O cuidado aparece em ações: tempo, flexibilidade e escuta real."
+     ],
+     "q": "Que pequeno gesto de cuidado significou muito para você?",
+     "c": "Pergunte a uma pessoa sobre um objetivo dela e anote a resposta."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Being consistent and fair",
+     "g": "Treat people by the same standards and explain your reasoning.",
+     "p": [
+      "Fairness means the same rules for everyone, applied openly.",
+      "Explain why you decide something, especially when people disagree.",
+      "Fair does not always mean identical; needs can differ, so explain."
+     ],
+     "q": "When did you feel treated fairly, and what made it so?",
+     "c": "Before your next decision, write the reason in one sentence."
+    },
+    "de": {
+     "t": "Beständig und fair sein",
+     "g": "Menschen nach gleichen Maßstäben behandeln und deine Gründe erklären.",
+     "p": [
+      "Fairness heißt gleiche Regeln für alle, offen angewendet.",
+      "Erkläre, warum du etwas entscheidest, besonders bei Widerspruch.",
+      "Fair heißt nicht immer gleich; Bedürfnisse unterscheiden sich, also erkläre es."
+     ],
+     "q": "Wann fühltest du dich fair behandelt, und woran lag es?",
+     "c": "Schreibe vor deiner nächsten Entscheidung den Grund in einem Satz auf."
+    },
+    "es": {
+     "t": "Ser coherente y justo",
+     "g": "Tratar a las personas con los mismos criterios y explicar tus razones.",
+     "p": [
+      "Justicia es aplicar las mismas reglas a todos, con transparencia.",
+      "Explica por qué decides algo, sobre todo si hay desacuerdo.",
+      "Justo no siempre es idéntico; las necesidades varían, así que explica."
+     ],
+     "q": "¿Cuándo te sentiste tratado con justicia y por qué?",
+     "c": "Antes de tu próxima decisión, escribe el motivo en una frase."
+    },
+    "fr": {
+     "t": "Être constant et équitable",
+     "g": "Traiter chacun selon les mêmes critères et expliquer tes raisons.",
+     "p": [
+      "L'équité, c'est les mêmes règles pour tous, appliquées ouvertement.",
+      "Explique pourquoi tu décides, surtout en cas de désaccord.",
+      "Équitable ne veut pas toujours dire identique ; explique les différences."
+     ],
+     "q": "Quand t'es-tu senti traité équitablement, et pourquoi ?",
+     "c": "Avant ta prochaine décision, écris la raison en une phrase."
+    },
+    "it": {
+     "t": "Essere coerenti ed equi",
+     "g": "Trattare le persone con gli stessi criteri e spiegare le tue ragioni.",
+     "p": [
+      "Equità significa stesse regole per tutti, applicate apertamente.",
+      "Spiega perché decidi qualcosa, soprattutto quando c'è disaccordo.",
+      "Equo non sempre significa identico; i bisogni variano, quindi spiega."
+     ],
+     "q": "Quando ti sei sentito trattato equamente e perché?",
+     "c": "Prima della tua prossima decisione, scrivi il motivo in una frase."
+    },
+    "pt": {
+     "t": "Ser coerente e justo",
+     "g": "Tratar as pessoas pelos mesmos critérios e explicar as tuas razões.",
+     "p": [
+      "Justiça é aplicar as mesmas regras a todos, de forma aberta.",
+      "Explica porque decides algo, sobretudo quando há desacordo.",
+      "Justo nem sempre é idêntico; as necessidades variam, por isso explica."
+     ],
+     "q": "Quando te sentiste tratado com justiça e porquê?",
+     "c": "Antes da tua próxima decisão, escreve o motivo numa frase."
+    },
+    "pt_BR": {
+     "t": "Sendo coerente e justo",
+     "g": "Tratar as pessoas pelos mesmos critérios e explicar suas razões.",
+     "p": [
+      "Justiça é aplicar as mesmas regras a todos, de forma aberta.",
+      "Explique por que decide algo, principalmente quando há desacordo.",
+      "Justo nem sempre é idêntico; as necessidades variam, então explique."
+     ],
+     "q": "Quando você se sentiu tratado com justiça e por quê?",
+     "c": "Antes da sua próxima decisão, escreva o motivo em uma frase."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Giving credit generously",
+     "g": "Highlight others' contributions and share success with the team.",
+     "p": [
+      "Name the person and what exactly they did well.",
+      "Credit people in front of others, especially those who work quietly.",
+      "Generous credit makes your own leadership stronger, not smaller."
+     ],
+     "q": "Whose quiet work deserves more recognition right now?",
+     "c": "Publicly thank one person today and name their specific contribution."
+    },
+    "de": {
+     "t": "Anerkennung großzügig geben",
+     "g": "Beiträge anderer hervorheben und Erfolge mit dem Team teilen.",
+     "p": [
+      "Nenne die Person und konkret, was sie gut gemacht hat.",
+      "Würdige Menschen vor anderen, besonders die, die still arbeiten.",
+      "Großzügige Anerkennung macht deine Führung stärker, nicht kleiner."
+     ],
+     "q": "Wessen stille Arbeit verdient gerade mehr Anerkennung?",
+     "c": "Danke heute einer Person öffentlich und nenne ihren konkreten Beitrag."
+    },
+    "es": {
+     "t": "Dar crédito con generosidad",
+     "g": "Destacar las aportaciones de otros y compartir el éxito con el equipo.",
+     "p": [
+      "Nombra a la persona y qué hizo exactamente bien.",
+      "Reconoce a la gente ante los demás, sobre todo a quienes trabajan en silencio.",
+      "Reconocer con generosidad fortalece tu liderazgo, no lo reduce."
+     ],
+     "q": "¿El trabajo callado de quién merece más reconocimiento ahora?",
+     "c": "Agradece hoy públicamente a una persona y nombra su aporte concreto."
+    },
+    "fr": {
+     "t": "Reconnaître généreusement les mérites",
+     "g": "Mettre en avant les apports des autres et partager le succès avec l'équipe.",
+     "p": [
+      "Nomme la personne et ce qu'elle a précisément bien fait.",
+      "Valorise les gens devant les autres, surtout ceux qui travaillent discrètement.",
+      "Un crédit généreux renforce ton leadership au lieu de le réduire."
+     ],
+     "q": "Le travail discret de qui mérite plus de reconnaissance en ce moment ?",
+     "c": "Remercie aujourd'hui quelqu'un publiquement en citant sa contribution précise."
+    },
+    "it": {
+     "t": "Dare merito con generosità",
+     "g": "Valorizzare i contributi degli altri e condividere il successo con il team.",
+     "p": [
+      "Nomina la persona e cosa ha fatto di preciso bene.",
+      "Riconosci le persone davanti agli altri, soprattutto chi lavora in silenzio.",
+      "Dare merito con generosità rafforza la tua leadership, non la riduce."
+     ],
+     "q": "Il lavoro silenzioso di chi merita più riconoscimento adesso?",
+     "c": "Ringrazia oggi pubblicamente una persona e nomina il suo contributo concreto."
+    },
+    "pt": {
+     "t": "Dar crédito com generosidade",
+     "g": "Destacar os contributos dos outros e partilhar o sucesso com a equipa.",
+     "p": [
+      "Nomeia a pessoa e o que fez exatamente bem.",
+      "Reconhece as pessoas perante os outros, sobretudo quem trabalha em silêncio.",
+      "Dar crédito com generosidade reforça a tua liderança, não a diminui."
+     ],
+     "q": "O trabalho discreto de quem merece mais reconhecimento agora?",
+     "c": "Agradece hoje publicamente a uma pessoa e nomeia o seu contributo concreto."
+    },
+    "pt_BR": {
+     "t": "Dando crédito com generosidade",
+     "g": "Destacar as contribuições dos outros e compartilhar o sucesso com o time.",
+     "p": [
+      "Nomeie a pessoa e o que ela fez exatamente bem.",
+      "Reconheça as pessoas diante dos outros, principalmente quem trabalha em silêncio.",
+      "Dar crédito com generosidade fortalece sua liderança, não a diminui."
+     ],
+     "q": "O trabalho discreto de quem merece mais reconhecimento agora?",
+     "c": "Agradeça hoje publicamente a uma pessoa e nomeie a contribuição concreta dela."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Protecting confidentiality",
+     "g": "Handle private information with discretion.",
+     "p": [
+      "Treat what people tell you in confidence as theirs, not yours.",
+      "Share only what is needed, with those who need to know.",
+      "If you must share something, tell the person first and explain why."
+     ],
+     "q": "Why does it matter to you when someone keeps your secret?",
+     "c": "Today, pause before sharing any personal detail about someone else."
+    },
+    "de": {
+     "t": "Vertraulichkeit wahren",
+     "g": "Mit privaten Informationen diskret umgehen.",
+     "p": [
+      "Behandle, was dir im Vertrauen gesagt wird, als Eigentum der Person.",
+      "Teile nur das Nötige, und nur mit denen, die es wissen müssen.",
+      "Musst du etwas weitergeben, sag es der Person vorher und erkläre warum."
+     ],
+     "q": "Warum ist es dir wichtig, wenn jemand dein Geheimnis bewahrt?",
+     "c": "Halte heute inne, bevor du ein persönliches Detail über andere weitergibst."
+    },
+    "es": {
+     "t": "Proteger la confidencialidad",
+     "g": "Manejar la información privada con discreción.",
+     "p": [
+      "Lo que te cuentan en confianza es de la persona, no tuyo.",
+      "Comparte solo lo necesario, con quienes necesitan saberlo.",
+      "Si debes compartir algo, díselo antes a la persona y explica por qué."
+     ],
+     "q": "¿Por qué te importa que alguien guarde tu secreto?",
+     "c": "Hoy, haz una pausa antes de compartir un dato personal de otra persona."
+    },
+    "fr": {
+     "t": "Protéger la confidentialité",
+     "g": "Traiter les informations privées avec discrétion.",
+     "p": [
+      "Ce qu'on te confie appartient à la personne, pas à toi.",
+      "Ne partage que le nécessaire, avec ceux qui ont besoin de savoir.",
+      "Si tu dois partager, préviens d'abord la personne et explique pourquoi."
+     ],
+     "q": "Pourquoi est-ce important pour toi que quelqu'un garde ton secret ?",
+     "c": "Aujourd'hui, fais une pause avant de partager un détail personnel sur autrui."
+    },
+    "it": {
+     "t": "Proteggere la riservatezza",
+     "g": "Gestire le informazioni private con discrezione.",
+     "p": [
+      "Ciò che ti viene confidato è della persona, non tuo.",
+      "Condividi solo il necessario, con chi ha bisogno di saperlo.",
+      "Se devi condividere qualcosa, dillo prima alla persona e spiega perché."
+     ],
+     "q": "Perché per te conta che qualcuno custodisca il tuo segreto?",
+     "c": "Oggi fai una pausa prima di condividere un dettaglio personale di qualcun altro."
+    },
+    "pt": {
+     "t": "Proteger a confidencialidade",
+     "g": "Lidar com informação privada com discrição.",
+     "p": [
+      "O que te contam em confiança pertence à pessoa, não a ti.",
+      "Partilha só o necessário, com quem precisa de saber.",
+      "Se tiveres de partilhar, diz primeiro à pessoa e explica porquê."
+     ],
+     "q": "Porque é que te importa que alguém guarde o teu segredo?",
+     "c": "Hoje, faz uma pausa antes de partilhar um detalhe pessoal de outra pessoa."
+    },
+    "pt_BR": {
+     "t": "Protegendo a confidencialidade",
+     "g": "Lidar com informação privada com discrição.",
+     "p": [
+      "O que contam a você em confiança pertence à pessoa, não a você.",
+      "Compartilhe só o necessário, com quem precisa saber.",
+      "Se precisar compartilhar, avise antes a pessoa e explique por quê."
+     ],
+     "q": "Por que importa para você que alguém guarde seu segredo?",
+     "c": "Hoje, faça uma pausa antes de compartilhar um detalhe pessoal de outra pessoa."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Trusting your team first",
+     "g": "Extend trust and autonomy as a starting point.",
+     "p": [
+      "Begin with trust; people often grow to match it.",
+      "Give a clear goal and let the person choose how to reach it.",
+      "Check in lightly, support when asked, and avoid hovering."
+     ],
+     "q": "When did someone trusting you make you try harder?",
+     "c": "Hand one small task to someone, with the goal but not the method."
+    },
+    "de": {
+     "t": "Dem Team zuerst vertrauen",
+     "g": "Vertrauen und Eigenständigkeit als Ausgangspunkt geben.",
+     "p": [
+      "Beginne mit Vertrauen; Menschen wachsen oft daran.",
+      "Gib ein klares Ziel und lass die Person den Weg wählen.",
+      "Frage locker nach, hilf auf Wunsch und schaue nicht ständig über die Schulter."
+     ],
+     "q": "Wann hat dich das Vertrauen eines anderen angespornt?",
+     "c": "Gib heute eine kleine Aufgabe ab, mit Ziel, aber ohne Vorgabe des Wegs."
+    },
+    "es": {
+     "t": "Confiar primero en tu equipo",
+     "g": "Dar confianza y autonomía como punto de partida.",
+     "p": [
+      "Empieza con confianza; la gente suele crecer hasta merecerla.",
+      "Da una meta clara y deja que la persona elija cómo lograrla.",
+      "Haz seguimiento suave, apoya si te lo piden y no agobies."
+     ],
+     "q": "¿Cuándo que alguien confiara en ti te hizo esforzarte más?",
+     "c": "Entrega hoy una tarea pequeña con la meta, pero sin el método."
+    },
+    "fr": {
+     "t": "Faire confiance à ton équipe d'abord",
+     "g": "Offrir confiance et autonomie comme point de départ.",
+     "p": [
+      "Commence par la confiance ; les gens grandissent souvent à sa hauteur.",
+      "Donne un objectif clair et laisse choisir la manière d'y arriver.",
+      "Prends des nouvelles légèrement, aide sur demande, ne surveille pas."
+     ],
+     "q": "Quand la confiance de quelqu'un t'a-t-elle fait te dépasser ?",
+     "c": "Confie aujourd'hui une petite tâche avec l'objectif, sans la méthode."
+    },
+    "it": {
+     "t": "Fidarti prima del tuo team",
+     "g": "Offrire fiducia e autonomia come punto di partenza.",
+     "p": [
+      "Parti dalla fiducia; spesso le persone crescono per meritarla.",
+      "Dai un obiettivo chiaro e lascia scegliere come raggiungerlo.",
+      "Controlla con leggerezza, aiuta se richiesto ed evita di sorvegliare."
+     ],
+     "q": "Quando la fiducia di qualcuno ti ha spinto a impegnarti di più?",
+     "c": "Affida oggi un piccolo compito con l'obiettivo, ma senza il metodo."
+    },
+    "pt": {
+     "t": "Confiar primeiro na tua equipa",
+     "g": "Dar confiança e autonomia como ponto de partida.",
+     "p": [
+      "Começa com confiança; as pessoas muitas vezes crescem para a merecer.",
+      "Dá um objetivo claro e deixa a pessoa escolher como lá chegar.",
+      "Acompanha de leve, apoia se pedirem e evita vigiar."
+     ],
+     "q": "Quando é que a confiança de alguém te fez esforçar mais?",
+     "c": "Entrega hoje uma tarefa pequena com o objetivo, mas sem o método."
+    },
+    "pt_BR": {
+     "t": "Confiando primeiro no seu time",
+     "g": "Dar confiança e autonomia como ponto de partida.",
+     "p": [
+      "Comece com confiança; as pessoas muitas vezes crescem para merecê-la.",
+      "Dê um objetivo claro e deixe a pessoa escolher como chegar lá.",
+      "Acompanhe de leve, apoie se pedirem e evite vigiar."
+     ],
+     "q": "Quando a confiança de alguém fez você se esforçar mais?",
+     "c": "Entregue hoje uma tarefa pequena com o objetivo, mas sem o método."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Building trust with a new team",
+     "g": "Take first steps to earn trust when you start leading a group.",
+     "p": [
+      "Listen first: meet each person and ask what is working and what is not.",
+      "Make small promises and keep them in the first weeks.",
+      "Be honest about what you do not yet know."
+     ],
+     "q": "How would you want a new leader to introduce themselves to you?",
+     "c": "Plan three questions to ask each person when you meet a new group."
+    },
+    "de": {
+     "t": "Vertrauen in einem neuen Team aufbauen",
+     "g": "Erste Schritte, um Vertrauen zu gewinnen, wenn du eine Gruppe übernimmst.",
+     "p": [
+      "Höre zuerst zu: Triff jede Person und frage, was gut läuft und was nicht.",
+      "Gib in den ersten Wochen kleine Versprechen und halte sie.",
+      "Sei ehrlich darüber, was du noch nicht weißt."
+     ],
+     "q": "Wie sollte sich eine neue Führungsperson dir vorstellen?",
+     "c": "Plane drei Fragen, die du jeder Person in einer neuen Gruppe stellst."
+    },
+    "es": {
+     "t": "Generar confianza en un equipo nuevo",
+     "g": "Dar los primeros pasos para ganar confianza al empezar a liderar un grupo.",
+     "p": [
+      "Primero escucha: conoce a cada persona y pregunta qué funciona y qué no.",
+      "Haz promesas pequeñas y cúmplelas en las primeras semanas.",
+      "Sé honesto sobre lo que aún no sabes."
+     ],
+     "q": "¿Cómo te gustaría que un nuevo líder se presentara ante ti?",
+     "c": "Prepara tres preguntas para cada persona al conocer un grupo nuevo."
+    },
+    "fr": {
+     "t": "Bâtir la confiance avec une nouvelle équipe",
+     "g": "Faire les premiers pas pour gagner la confiance en prenant la tête d'un groupe.",
+     "p": [
+      "Écoute d'abord : rencontre chacun et demande ce qui marche ou non.",
+      "Fais de petites promesses et tiens-les durant les premières semaines.",
+      "Sois honnête sur ce que tu ne sais pas encore."
+     ],
+     "q": "Comment aimerais-tu qu'un nouveau leader se présente à toi ?",
+     "c": "Prépare trois questions à poser à chacun en rencontrant un nouveau groupe."
+    },
+    "it": {
+     "t": "Costruire fiducia con un nuovo team",
+     "g": "Fare i primi passi per guadagnare fiducia quando inizi a guidare un gruppo.",
+     "p": [
+      "Ascolta prima: incontra ognuno e chiedi cosa funziona e cosa no.",
+      "Fai piccole promesse e mantienile nelle prime settimane.",
+      "Sii onesto su ciò che ancora non sai."
+     ],
+     "q": "Come vorresti che un nuovo leader si presentasse a te?",
+     "c": "Prepara tre domande da fare a ciascuno incontrando un nuovo gruppo."
+    },
+    "pt": {
+     "t": "Construir confiança com uma equipa nova",
+     "g": "Dar os primeiros passos para ganhar confiança ao começar a liderar um grupo.",
+     "p": [
+      "Ouve primeiro: conhece cada pessoa e pergunta o que funciona e o que não.",
+      "Faz pequenas promessas e cumpre-as nas primeiras semanas.",
+      "Sê honesto sobre o que ainda não sabes."
+     ],
+     "q": "Como gostarias que um novo líder se apresentasse a ti?",
+     "c": "Prepara três perguntas para fazer a cada pessoa ao conheceres um grupo novo."
+    },
+    "pt_BR": {
+     "t": "Construindo confiança com um time novo",
+     "g": "Dar os primeiros passos para ganhar confiança ao começar a liderar um grupo.",
+     "p": [
+      "Escute primeiro: conheça cada pessoa e pergunte o que funciona e o que não.",
+      "Faça pequenas promessas e cumpra nas primeiras semanas.",
+      "Seja honesto sobre o que você ainda não sabe."
+     ],
+     "q": "Como você gostaria que um novo líder se apresentasse a você?",
+     "c": "Prepare três perguntas para fazer a cada pessoa ao conhecer um grupo novo."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rebuilding broken trust",
+     "g": "Follow steps to repair trust after a misunderstanding or broken promise.",
+     "p": [
+      "Acknowledge what happened and how it affected the other person.",
+      "Apologise simply, without but, and say what you will change.",
+      "Then show it: small kept promises over time rebuild trust."
+     ],
+     "q": "Have you repaired a relationship before, and what helped?",
+     "c": "If something needs repair, write a short honest apology and send it."
+    },
+    "de": {
+     "t": "Gebrochenes Vertrauen wiederaufbauen",
+     "g": "Schritte kennen, um Vertrauen nach Missverständnis oder gebrochenem Versprechen zu reparieren.",
+     "p": [
+      "Erkenne an, was geschah und wie es die andere Person getroffen hat.",
+      "Entschuldige dich schlicht, ohne Aber, und sag, was du ändern wirst.",
+      "Dann zeige es: Kleine gehaltene Versprechen bauen mit der Zeit Vertrauen auf."
+     ],
+     "q": "Hast du schon einmal eine Beziehung repariert, und was half?",
+     "c": "Falls etwas zu reparieren ist, schreibe eine kurze ehrliche Entschuldigung und sende sie."
+    },
+    "es": {
+     "t": "Reconstruir la confianza rota",
+     "g": "Seguir pasos para reparar la confianza tras un malentendido o promesa rota.",
+     "p": [
+      "Reconoce lo ocurrido y cómo afectó a la otra persona.",
+      "Pide perdón con sencillez, sin peros, y di qué cambiarás.",
+      "Luego demuéstralo: pequeñas promesas cumplidas reconstruyen la confianza."
+     ],
+     "q": "¿Has reparado una relación antes y qué ayudó?",
+     "c": "Si algo necesita arreglo, escribe una disculpa breve y sincera y envíala."
+    },
+    "fr": {
+     "t": "Rebâtir une confiance brisée",
+     "g": "Suivre des étapes pour réparer la confiance après un malentendu ou une promesse rompue.",
+     "p": [
+      "Reconnais ce qui s'est passé et l'effet sur l'autre personne.",
+      "Excuse-toi simplement, sans mais, et dis ce que tu vas changer.",
+      "Puis prouve-le : de petites promesses tenues rebâtissent la confiance."
+     ],
+     "q": "As-tu déjà réparé une relation, et qu'est-ce qui a aidé ?",
+     "c": "Si quelque chose est à réparer, écris de courtes excuses sincères et envoie-les."
+    },
+    "it": {
+     "t": "Ricostruire la fiducia spezzata",
+     "g": "Seguire dei passi per riparare la fiducia dopo un malinteso o una promessa mancata.",
+     "p": [
+      "Riconosci cosa è successo e come ha toccato l'altra persona.",
+      "Scusati con semplicità, senza ma, e di' cosa cambierai.",
+      "Poi dimostralo: piccole promesse mantenute ricostruiscono la fiducia."
+     ],
+     "q": "Hai già riparato una relazione e cosa ti ha aiutato?",
+     "c": "Se qualcosa va riparato, scrivi delle scuse brevi e sincere e inviale."
+    },
+    "pt": {
+     "t": "Reconstruir a confiança quebrada",
+     "g": "Seguir passos para reparar a confiança após um mal-entendido ou promessa falhada.",
+     "p": [
+      "Reconhece o que aconteceu e como afetou a outra pessoa.",
+      "Pede desculpa com simplicidade, sem mas, e diz o que vais mudar.",
+      "Depois mostra-o: pequenas promessas cumpridas reconstroem a confiança."
+     ],
+     "q": "Já reparaste uma relação antes e o que ajudou?",
+     "c": "Se algo precisar de reparação, escreve um pedido de desculpa curto e sincero e envia-o."
+    },
+    "pt_BR": {
+     "t": "Reconstruindo a confiança quebrada",
+     "g": "Seguir passos para reparar a confiança após um mal-entendido ou promessa quebrada.",
+     "p": [
+      "Reconheça o que aconteceu e como afetou a outra pessoa.",
+      "Peça desculpas com simplicidade, sem mas, e diga o que vai mudar.",
+      "Depois mostre: pequenas promessas cumpridas reconstroem a confiança."
+     ],
+     "q": "Você já reparou um relacionamento antes e o que ajudou?",
+     "c": "Se algo precisar de reparo, escreva um pedido de desculpas curto e sincero e envie."
+    }
+   }
+  }
+ ]
+}

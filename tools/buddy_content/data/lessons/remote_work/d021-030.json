@@ -1,0 +1,835 @@
+{
+ "topic": "remote_work",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Designing your ideal workday",
+     "g": "Sketch the shape of a good remote day from start to finish.",
+     "p": [
+      "A good day has a clear start, focus blocks, breaks and a clear finish.",
+      "Put your hardest task in the hours when your energy is highest.",
+      "Leave room for the unexpected; a plan is a guide, not a cage."
+     ],
+     "q": "At what time of day do you think most clearly?",
+     "c": "Draw your ideal day as a simple timeline with blocks and breaks."
+    },
+    "de": {
+     "t": "Deinen idealen Arbeitstag gestalten",
+     "g": "Skizziere, wie ein guter Remote-Tag von Anfang bis Ende aussieht.",
+     "p": [
+      "Ein guter Tag hat einen klaren Start, Fokusblöcke, Pausen und ein klares Ende.",
+      "Lege die schwerste Aufgabe in die Stunden mit der höchsten Energie.",
+      "Lass Raum für Unerwartetes; ein Plan ist Orientierung, kein Käfig."
+     ],
+     "q": "Zu welcher Tageszeit denkst du am klarsten?",
+     "c": "Zeichne deinen Idealtag als einfache Zeitleiste mit Blöcken und Pausen."
+    },
+    "es": {
+     "t": "Diseñar tu jornada ideal",
+     "g": "Esboza cómo es un buen día remoto de principio a fin.",
+     "p": [
+      "Un buen día tiene un inicio claro, bloques de concentración, descansos y un cierre claro.",
+      "Pon la tarea más difícil en las horas en que tienes más energía.",
+      "Deja hueco para lo inesperado; un plan es una guía, no una jaula."
+     ],
+     "q": "¿A qué hora del día piensas con más claridad?",
+     "c": "Dibuja tu día ideal como una línea de tiempo sencilla con bloques y pausas."
+    },
+    "fr": {
+     "t": "Concevoir ta journée de travail idéale",
+     "g": "Esquisse à quoi ressemble une bonne journée à distance du début à la fin.",
+     "p": [
+      "Une bonne journée a un début net, des plages de concentration, des pauses et une fin claire.",
+      "Place ta tâche la plus difficile aux heures où ton énergie est la plus haute.",
+      "Garde de la place pour l'imprévu ; un plan guide, il n'enferme pas."
+     ],
+     "q": "À quel moment de la journée penses-tu le plus clairement ?",
+     "c": "Dessine ta journée idéale en frise simple avec blocs et pauses."
+    },
+    "it": {
+     "t": "Progettare la tua giornata ideale",
+     "g": "Abbozza come è una buona giornata da remoto dall'inizio alla fine.",
+     "p": [
+      "Una buona giornata ha un inizio chiaro, blocchi di concentrazione, pause e una fine chiara.",
+      "Metti il compito più difficile nelle ore in cui hai più energia.",
+      "Lascia spazio all'imprevisto; un piano è una guida, non una gabbia."
+     ],
+     "q": "In quale momento della giornata pensi con più chiarezza?",
+     "c": "Disegna la tua giornata ideale come una semplice linea del tempo con blocchi e pause."
+    },
+    "pt": {
+     "t": "Desenhar o teu dia de trabalho ideal",
+     "g": "Esboça como é um bom dia remoto do princípio ao fim.",
+     "p": [
+      "Um bom dia tem um início claro, blocos de concentração, pausas e um fim claro.",
+      "Põe a tarefa mais difícil nas horas em que tens mais energia.",
+      "Deixa espaço para o inesperado; um plano é um guia, não uma jaula."
+     ],
+     "q": "A que hora do dia pensas com mais clareza?",
+     "c": "Desenha o teu dia ideal como uma linha do tempo simples com blocos e pausas."
+    },
+    "pt_BR": {
+     "t": "Desenhando o seu dia de trabalho ideal",
+     "g": "Esboce como é um bom dia remoto do começo ao fim.",
+     "p": [
+      "Um bom dia tem um início claro, blocos de foco, pausas e um fim claro.",
+      "Coloque a tarefa mais difícil nas horas em que você tem mais energia.",
+      "Deixe espaço para o inesperado; um plano é um guia, não uma jaula."
+     ],
+     "q": "Em que hora do dia você pensa com mais clareza?",
+     "c": "Desenhe seu dia ideal como uma linha do tempo simples com blocos e pausas."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Morning rituals that start the day",
+     "g": "Replace the commute with a short routine that signals work time.",
+     "p": [
+      "A ritual can be small: water, stretching, a short walk or a favourite drink.",
+      "Repeating the same steps tells your brain the day is starting.",
+      "Avoid opening messages in bed; give yourself a calm buffer first."
+     ],
+     "q": "What does a calm, good morning look like for you?",
+     "c": "Pick a three-step morning ritual and try it tomorrow."
+    },
+    "de": {
+     "t": "Morgenrituale, die den Tag einleiten",
+     "g": "Ersetze den Arbeitsweg durch eine kurze Routine, die Arbeitszeit signalisiert.",
+     "p": [
+      "Ein Ritual kann klein sein: Wasser, Dehnen, ein kurzer Spaziergang oder ein Lieblingsgetränk.",
+      "Gleiche Schritte sagen deinem Gehirn, dass der Tag beginnt.",
+      "Öffne Nachrichten nicht im Bett; gönn dir erst einen ruhigen Puffer."
+     ],
+     "q": "Wie sieht für dich ein ruhiger, guter Morgen aus?",
+     "c": "Wähle ein Morgenritual aus drei Schritten und probiere es morgen aus."
+    },
+    "es": {
+     "t": "Rituales de mañana que inician el día",
+     "g": "Sustituye el trayecto por una rutina breve que marque la hora de trabajar.",
+     "p": [
+      "Un ritual puede ser pequeño: agua, estiramientos, un paseo corto o tu bebida favorita.",
+      "Repetir los mismos pasos le dice a tu cerebro que empieza el día.",
+      "Evita abrir mensajes en la cama; date primero un margen tranquilo."
+     ],
+     "q": "¿Cómo es para ti una mañana tranquila y buena?",
+     "c": "Elige un ritual matutino de tres pasos y pruébalo mañana."
+    },
+    "fr": {
+     "t": "Des rituels du matin pour lancer la journée",
+     "g": "Remplace le trajet par une courte routine qui annonce l'heure de travailler.",
+     "p": [
+      "Un rituel peut être petit : eau, étirements, courte marche ou boisson préférée.",
+      "Répéter les mêmes gestes dit à ton cerveau que la journée commence.",
+      "Évite d'ouvrir tes messages au lit ; offre-toi d'abord un temps calme."
+     ],
+     "q": "À quoi ressemble pour toi un bon matin tranquille ?",
+     "c": "Choisis un rituel du matin en trois étapes et essaie-le demain."
+    },
+    "it": {
+     "t": "Rituali del mattino per iniziare la giornata",
+     "g": "Sostituisci il tragitto con una breve routine che segnala l'ora di lavorare.",
+     "p": [
+      "Un rituale può essere piccolo: acqua, stretching, una breve passeggiata o la bevanda preferita.",
+      "Ripetere gli stessi passi dice al cervello che la giornata comincia.",
+      "Evita di aprire i messaggi a letto; concediti prima un cuscinetto di calma."
+     ],
+     "q": "Come è per te una buona mattina tranquilla?",
+     "c": "Scegli un rituale mattutino in tre passi e provalo domani."
+    },
+    "pt": {
+     "t": "Rituais de manhã para começar o dia",
+     "g": "Substitui o trajeto por uma rotina curta que marca a hora de trabalhar.",
+     "p": [
+      "Um ritual pode ser pequeno: água, alongamentos, um passeio curto ou a bebida favorita.",
+      "Repetir os mesmos passos diz ao cérebro que o dia está a começar.",
+      "Evita abrir mensagens na cama; dá-te primeiro uma margem tranquila."
+     ],
+     "q": "Como é para ti uma manhã calma e boa?",
+     "c": "Escolhe um ritual matinal de três passos e experimenta amanhã."
+    },
+    "pt_BR": {
+     "t": "Rituais da manhã para começar o dia",
+     "g": "Troque o trajeto por uma rotina curta que marca a hora de trabalhar.",
+     "p": [
+      "Um ritual pode ser pequeno: água, alongamento, uma caminhada curta ou a bebida favorita.",
+      "Repetir os mesmos passos diz ao cérebro que o dia está começando.",
+      "Evite abrir mensagens na cama; dê a si mesmo primeiro uma margem tranquila."
+     ],
+     "q": "Como é para você uma manhã calma e boa?",
+     "c": "Escolha um ritual matinal de três passos e experimente amanhã."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The fake commute",
+     "g": "Use a short outing to create a mental border between home and work.",
+     "p": [
+      "A ten-minute walk before and after work can replace the daily journey.",
+      "It gives your mind time to switch on in the morning and off at night.",
+      "No time outside? Even a few minutes on the balcony or at a window helps."
+     ],
+     "q": "What would be a pleasant fake commute for you?",
+     "c": "Do a ten-minute fake commute at the start and end of your day."
+    },
+    "de": {
+     "t": "Der Schein-Arbeitsweg",
+     "g": "Nutze einen kurzen Ausflug als mentale Grenze zwischen Zuhause und Arbeit.",
+     "p": [
+      "Zehn Minuten Gehen vor und nach der Arbeit können den täglichen Weg ersetzen.",
+      "So hat dein Kopf Zeit, morgens an- und abends abzuschalten.",
+      "Keine Zeit draußen? Schon ein paar Minuten auf dem Balkon oder am Fenster helfen."
+     ],
+     "q": "Was wäre für dich ein angenehmer Schein-Arbeitsweg?",
+     "c": "Mach heute zu Beginn und Ende deines Tages einen Zehn-Minuten-Weg."
+    },
+    "es": {
+     "t": "El trayecto de mentira",
+     "g": "Usa una salida breve para crear una frontera mental entre casa y trabajo.",
+     "p": [
+      "Un paseo de diez minutos antes y después del trabajo puede sustituir el trayecto diario.",
+      "Da tiempo a tu mente para encenderse por la mañana y apagarse por la noche.",
+      "¿Sin tiempo para salir? Unos minutos en el balcón o junto a la ventana ayudan."
+     ],
+     "q": "¿Cuál sería un trayecto de mentira agradable para ti?",
+     "c": "Haz hoy un trayecto de mentira de diez minutos al empezar y al acabar tu día."
+    },
+    "fr": {
+     "t": "Le faux trajet domicile-travail",
+     "g": "Utilise une courte sortie pour créer une frontière mentale entre maison et travail.",
+     "p": [
+      "Dix minutes de marche avant et après le travail peuvent remplacer le trajet quotidien.",
+      "Ton esprit a ainsi le temps de s'allumer le matin et de s'éteindre le soir.",
+      "Pas le temps de sortir ? Quelques minutes au balcon ou à la fenêtre aident."
+     ],
+     "q": "Quel serait un faux trajet agréable pour toi ?",
+     "c": "Fais aujourd'hui un faux trajet de dix minutes au début et à la fin de ta journée."
+    },
+    "it": {
+     "t": "Il finto tragitto casa-lavoro",
+     "g": "Usa una breve uscita per creare un confine mentale tra casa e lavoro.",
+     "p": [
+      "Una camminata di dieci minuti prima e dopo il lavoro può sostituire il tragitto quotidiano.",
+      "Dà alla mente il tempo di accendersi al mattino e spegnersi la sera.",
+      "Niente tempo per uscire? Bastano pochi minuti sul balcone o alla finestra."
+     ],
+     "q": "Quale sarebbe per te un finto tragitto piacevole?",
+     "c": "Fai oggi un finto tragitto di dieci minuti a inizio e fine giornata."
+    },
+    "pt": {
+     "t": "O falso trajeto casa-trabalho",
+     "g": "Usa uma saída curta para criar uma fronteira mental entre casa e trabalho.",
+     "p": [
+      "Uma caminhada de dez minutos antes e depois do trabalho pode substituir o trajeto diário.",
+      "Dá tempo à mente para ligar de manhã e desligar à noite.",
+      "Sem tempo para sair? Uns minutos na varanda ou à janela ajudam."
+     ],
+     "q": "Qual seria um falso trajeto agradável para ti?",
+     "c": "Faz hoje um falso trajeto de dez minutos no início e no fim do dia."
+    },
+    "pt_BR": {
+     "t": "O falso trajeto casa-trabalho",
+     "g": "Use uma saída curta para criar uma fronteira mental entre casa e trabalho.",
+     "p": [
+      "Uma caminhada de dez minutos antes e depois do trabalho pode substituir o trajeto diário.",
+      "Dá tempo à mente para ligar de manhã e desligar à noite.",
+      "Sem tempo para sair? Uns minutinhos na varanda ou na janela ajudam."
+     ],
+     "q": "Qual seria um falso trajeto agradável para você?",
+     "c": "Faça hoje um falso trajeto de dez minutos no começo e no fim do dia."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "To dress up or not",
+     "g": "See how clothing choices can influence focus and confidence.",
+     "p": [
+      "Changing out of sleepwear can signal your brain that work has begun.",
+      "You do not need formal clothes; comfortable and put-together is enough.",
+      "Dress for your day: a video call may call for a nicer top."
+     ],
+     "q": "Does what you wear change how you feel about work?",
+     "c": "Try a work outfit for one day and notice any difference in mood."
+    },
+    "de": {
+     "t": "Schick machen oder nicht?",
+     "g": "Erkenne, wie Kleidung Fokus und Selbstvertrauen beeinflussen kann.",
+     "p": [
+      "Der Wechsel aus der Schlafkleidung kann deinem Kopf signalisieren, dass die Arbeit beginnt.",
+      "Formelle Kleidung ist nicht nötig; bequem und gepflegt reicht.",
+      "Kleide dich nach dem Tag: Für einen Videoanruf passt vielleicht ein schönes Oberteil."
+     ],
+     "q": "Verändert deine Kleidung, wie du dich bei der Arbeit fühlst?",
+     "c": "Probiere einen Tag lang ein Arbeitsoutfit und achte auf Unterschiede in der Stimmung."
+    },
+    "es": {
+     "t": "Arreglarse o no",
+     "g": "Descubre cómo la ropa puede influir en la concentración y la confianza.",
+     "p": [
+      "Cambiarte la ropa de dormir puede avisar a tu cerebro de que empieza el trabajo.",
+      "No hace falta ropa formal; cómoda y cuidada es suficiente.",
+      "Vístete según tu día: una videollamada quizá pida una prenda más arreglada."
+     ],
+     "q": "¿Lo que te pones cambia cómo te sientes con el trabajo?",
+     "c": "Prueba un día un atuendo de trabajo y observa si cambia tu ánimo."
+    },
+    "fr": {
+     "t": "S'habiller ou non",
+     "g": "Vois comment tes vêtements peuvent influencer concentration et confiance.",
+     "p": [
+      "Quitter le pyjama peut signaler à ton cerveau que le travail commence.",
+      "Pas besoin de tenue formelle ; confortable et soignée suffit.",
+      "Habille-toi selon ta journée : une visio appelle peut-être un haut plus soigné."
+     ],
+     "q": "Ce que tu portes change-t-il ton ressenti face au travail ?",
+     "c": "Essaie une tenue de travail pendant une journée et note l'effet sur ton humeur."
+    },
+    "it": {
+     "t": "Vestirsi bene oppure no",
+     "g": "Scopri come i vestiti possono influenzare concentrazione e fiducia.",
+     "p": [
+      "Cambiarti d'abito dal pigiama può segnalare al cervello che il lavoro è iniziato.",
+      "Non servono abiti formali; comodo e curato basta.",
+      "Vestiti secondo la giornata: una videochiamata può richiedere una maglia più curata."
+     ],
+     "q": "Ciò che indossi cambia come ti senti riguardo al lavoro?",
+     "c": "Prova per un giorno un outfit da lavoro e nota se cambia l'umore."
+    },
+    "pt": {
+     "t": "Arranjar-se ou não",
+     "g": "Percebe como a roupa pode influenciar a concentração e a confiança.",
+     "p": [
+      "Mudar da roupa de dormir pode avisar o cérebro de que o trabalho começou.",
+      "Não precisas de roupa formal; confortável e cuidada chega.",
+      "Veste-te conforme o dia: uma videochamada pode pedir uma peça mais arranjada."
+     ],
+     "q": "O que vestes muda a forma como te sentes em relação ao trabalho?",
+     "c": "Experimenta um dia um traje de trabalho e repara se o humor muda."
+    },
+    "pt_BR": {
+     "t": "Se arrumar ou não",
+     "g": "Perceba como a roupa pode influenciar o foco e a confiança.",
+     "p": [
+      "Trocar a roupa de dormir pode avisar o cérebro de que o trabalho começou.",
+      "Não precisa de roupa formal; confortável e cuidada basta.",
+      "Vista-se conforme o dia: uma videochamada pode pedir uma peça mais arrumada."
+     ],
+     "q": "O que você veste muda como você se sente em relação ao trabalho?",
+     "c": "Experimente um dia um look de trabalho e repare se o humor muda."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting your working hours",
+     "g": "Choose clear start and end times and share them with others.",
+     "p": [
+      "Clear hours protect your rest and help others know when to reach you.",
+      "Even with flexible work, a rough core window makes teamwork easier.",
+      "Put your hours in your calendar or chat profile."
+     ],
+     "q": "What start and end times would suit your energy and your team?",
+     "c": "Write your working hours and share them with your team today."
+    },
+    "de": {
+     "t": "Deine Arbeitszeiten festlegen",
+     "g": "Wähle klare Anfangs- und Endzeiten und teile sie mit anderen.",
+     "p": [
+      "Klare Zeiten schützen deine Erholung und zeigen anderen, wann sie dich erreichen.",
+      "Auch bei flexibler Arbeit erleichtert ein grobes Kernfenster die Zusammenarbeit.",
+      "Trage deine Zeiten in Kalender oder Chat-Profil ein."
+     ],
+     "q": "Welche Start- und Endzeiten passen zu deiner Energie und deinem Team?",
+     "c": "Schreib deine Arbeitszeiten auf und teile sie heute mit deinem Team."
+    },
+    "es": {
+     "t": "Fijar tu horario de trabajo",
+     "g": "Elige horas claras de inicio y fin y compártelas con los demás.",
+     "p": [
+      "Un horario claro protege tu descanso y avisa a otros de cuándo localizarte.",
+      "Incluso con trabajo flexible, una franja central aproximada facilita el trabajo en equipo.",
+      "Pon tu horario en tu calendario o en tu perfil del chat."
+     ],
+     "q": "¿Qué horas de inicio y fin encajan con tu energía y tu equipo?",
+     "c": "Escribe tu horario y compártelo hoy con tu equipo."
+    },
+    "fr": {
+     "t": "Fixer tes horaires de travail",
+     "g": "Choisis des heures de début et de fin claires et partage-les avec les autres.",
+     "p": [
+      "Des horaires clairs protègent ton repos et indiquent quand te joindre.",
+      "Même en travail flexible, une plage commune approximative facilite le travail d'équipe.",
+      "Mets tes horaires dans ton agenda ou ton profil de messagerie."
+     ],
+     "q": "Quels horaires de début et de fin conviennent à ton énergie et à ton équipe ?",
+     "c": "Écris tes horaires et partage-les aujourd'hui avec ton équipe."
+    },
+    "it": {
+     "t": "Stabilire i tuoi orari di lavoro",
+     "g": "Scegli orari di inizio e fine chiari e condividili con gli altri.",
+     "p": [
+      "Orari chiari proteggono il tuo riposo e dicono agli altri quando trovarti.",
+      "Anche con lavoro flessibile, una fascia centrale approssimativa facilita il lavoro di squadra.",
+      "Metti i tuoi orari nel calendario o nel profilo della chat."
+     ],
+     "q": "Quali orari di inizio e fine si adattano alla tua energia e al team?",
+     "c": "Scrivi i tuoi orari e condividili oggi con il team."
+    },
+    "pt": {
+     "t": "Definir o teu horário de trabalho",
+     "g": "Escolhe horas claras de início e fim e partilha-as com os outros.",
+     "p": [
+      "Horários claros protegem o teu descanso e avisam os outros de quando te contactar.",
+      "Mesmo com trabalho flexível, uma faixa central aproximada facilita o trabalho em equipa.",
+      "Põe o teu horário no calendário ou no perfil do chat."
+     ],
+     "q": "Que horas de início e fim combinam com a tua energia e a tua equipa?",
+     "c": "Escreve o teu horário e partilha-o hoje com a tua equipa."
+    },
+    "pt_BR": {
+     "t": "Definindo seu horário de trabalho",
+     "g": "Escolha horas claras de início e fim e compartilhe com os outros.",
+     "p": [
+      "Horários claros protegem o seu descanso e avisam os outros de quando falar com você.",
+      "Mesmo com trabalho flexível, uma faixa central aproximada facilita o trabalho em equipe.",
+      "Coloque seu horário na agenda ou no perfil do chat."
+     ],
+     "q": "Quais horas de início e fim combinam com sua energia e seu time?",
+     "c": "Escreva seu horário e compartilhe hoje com seu time."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shutdown rituals to end the day",
+     "g": "Close the workday with a short routine that lets you truly switch off.",
+     "p": [
+      "List what is done and what is left, then note tomorrow's first task.",
+      "Close tabs, tidy the desk and say a small closing phrase to yourself.",
+      "A clear ending keeps work thoughts from following you into the evening."
+     ],
+     "q": "How do you usually leave work behind at the end of the day?",
+     "c": "Create a five-minute shutdown ritual and use it today."
+    },
+    "de": {
+     "t": "Feierabendrituale zum Tagesende",
+     "g": "Beende den Arbeitstag mit einer kurzen Routine, die echtes Abschalten ermöglicht.",
+     "p": [
+      "Notiere, was erledigt ist und was bleibt, und halte die erste Aufgabe für morgen fest.",
+      "Schließe Tabs, räum den Tisch auf und sag dir einen kleinen Abschlusssatz.",
+      "Ein klares Ende hält Arbeitsgedanken vom Abend fern."
+     ],
+     "q": "Wie lässt du die Arbeit am Tagesende meist hinter dir?",
+     "c": "Entwirf ein Fünf-Minuten-Feierabendritual und nutze es heute."
+    },
+    "es": {
+     "t": "Rituales de cierre para acabar el día",
+     "g": "Cierra la jornada con una rutina breve que te deje desconectar de verdad.",
+     "p": [
+      "Anota lo hecho y lo pendiente, y apunta la primera tarea de mañana.",
+      "Cierra pestañas, ordena la mesa y di una pequeña frase de cierre.",
+      "Un final claro evita que los pensamientos del trabajo te sigan por la tarde."
+     ],
+     "q": "¿Cómo sueles dejar el trabajo atrás al terminar el día?",
+     "c": "Crea un ritual de cierre de cinco minutos y úsalo hoy."
+    },
+    "fr": {
+     "t": "Des rituels de fin de journée",
+     "g": "Termine la journée par une courte routine qui te permet de vraiment décrocher.",
+     "p": [
+      "Note ce qui est fait et ce qui reste, puis la première tâche de demain.",
+      "Ferme les onglets, range le bureau et dis-toi une petite phrase de clôture.",
+      "Une fin nette évite que les pensées de travail te suivent le soir."
+     ],
+     "q": "Comment laisses-tu d'habitude le travail derrière toi en fin de journée ?",
+     "c": "Crée un rituel de clôture de cinq minutes et utilise-le aujourd'hui."
+    },
+    "it": {
+     "t": "Rituali di chiusura per finire la giornata",
+     "g": "Chiudi la giornata con una breve routine che ti faccia staccare davvero.",
+     "p": [
+      "Elenca ciò che è fatto e ciò che resta, poi scrivi il primo compito di domani.",
+      "Chiudi le schede, riordina la scrivania e dì a te stesso una piccola frase di chiusura.",
+      "Una fine chiara evita che i pensieri di lavoro ti seguano la sera."
+     ],
+     "q": "Come lasci di solito il lavoro alle spalle a fine giornata?",
+     "c": "Crea un rituale di chiusura di cinque minuti e usalo oggi."
+    },
+    "pt": {
+     "t": "Rituais de encerramento para acabar o dia",
+     "g": "Fecha o dia com uma rotina curta que te deixe desligar a sério.",
+     "p": [
+      "Anota o que está feito e o que falta, e regista a primeira tarefa de amanhã.",
+      "Fecha os separadores, arruma a secretária e diz uma pequena frase de encerramento.",
+      "Um fim claro evita que os pensamentos do trabalho te sigam à noite."
+     ],
+     "q": "Como costumas deixar o trabalho para trás no fim do dia?",
+     "c": "Cria um ritual de encerramento de cinco minutos e usa-o hoje."
+    },
+    "pt_BR": {
+     "t": "Rituais de encerramento para terminar o dia",
+     "g": "Feche o dia com uma rotina curta que deixe você desligar de verdade.",
+     "p": [
+      "Anote o que está feito e o que falta, e registre a primeira tarefa de amanhã.",
+      "Feche as abas, arrume a mesa e diga a si mesmo uma pequena frase de encerramento.",
+      "Um fim claro evita que os pensamentos do trabalho sigam você à noite."
+     ],
+     "q": "Como você costuma deixar o trabalho para trás no fim do dia?",
+     "c": "Crie um ritual de encerramento de cinco minutos e use hoje."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Planning your day the night before",
+     "g": "Write tomorrow's top tasks so you start with clarity, not email.",
+     "p": [
+      "Choose up to three priorities; more than that becomes a wish list.",
+      "Starting with your top task protects it from the day's interruptions.",
+      "Plan takes five minutes and lowers morning stress."
+     ],
+     "q": "What are the three things that would make tomorrow a good day?",
+     "c": "Write tomorrow's top three tasks tonight and place them where you will see them."
+    },
+    "de": {
+     "t": "Den Tag am Vorabend planen",
+     "g": "Notiere die wichtigsten Aufgaben für morgen, damit du klar statt mit E-Mails startest.",
+     "p": [
+      "Wähle bis zu drei Prioritäten; mehr wird zur Wunschliste.",
+      "Die wichtigste Aufgabe zuerst schützt sie vor den Unterbrechungen des Tages.",
+      "Die Planung dauert fünf Minuten und senkt den Stress am Morgen."
+     ],
+     "q": "Welche drei Dinge würden morgen zu einem guten Tag machen?",
+     "c": "Schreib heute Abend die drei wichtigsten Aufgaben für morgen auf und leg sie sichtbar hin."
+    },
+    "es": {
+     "t": "Planificar el día la noche anterior",
+     "g": "Escribe las tareas clave de mañana para empezar con claridad, no con el correo.",
+     "p": [
+      "Elige hasta tres prioridades; más se convierte en una lista de deseos.",
+      "Empezar por tu tarea principal la protege de las interrupciones del día.",
+      "Planificar lleva cinco minutos y reduce el estrés de la mañana."
+     ],
+     "q": "¿Cuáles son las tres cosas que harían de mañana un buen día?",
+     "c": "Escribe esta noche las tres tareas clave de mañana y ponlas donde las veas."
+    },
+    "fr": {
+     "t": "Planifier sa journée la veille",
+     "g": "Note les tâches clés de demain pour commencer avec clarté, pas par les e-mails.",
+     "p": [
+      "Choisis jusqu'à trois priorités ; au-delà, c'est une liste de souhaits.",
+      "Commencer par ta tâche principale la protège des interruptions de la journée.",
+      "Planifier prend cinq minutes et réduit le stress du matin."
+     ],
+     "q": "Quelles sont les trois choses qui feraient de demain une bonne journée ?",
+     "c": "Écris ce soir les trois tâches clés de demain et place-les là où tu les verras."
+    },
+    "it": {
+     "t": "Pianificare la giornata la sera prima",
+     "g": "Scrivi i compiti principali di domani per iniziare con chiarezza, non con le email.",
+     "p": [
+      "Scegli fino a tre priorità; oltre diventa una lista dei desideri.",
+      "Iniziare dal compito principale lo protegge dalle interruzioni della giornata.",
+      "Pianificare richiede cinque minuti e riduce lo stress del mattino."
+     ],
+     "q": "Quali sono le tre cose che renderebbero domani una buona giornata?",
+     "c": "Scrivi stasera i tre compiti principali di domani e mettili dove li vedi."
+    },
+    "pt": {
+     "t": "Planear o dia na noite anterior",
+     "g": "Escreve as tarefas principais de amanhã para começares com clareza e não com o email.",
+     "p": [
+      "Escolhe até três prioridades; mais do que isso torna-se lista de desejos.",
+      "Começar pela tarefa principal protege-a das interrupções do dia.",
+      "Planear leva cinco minutos e reduz o stress da manhã."
+     ],
+     "q": "Quais são as três coisas que fariam de amanhã um bom dia?",
+     "c": "Escreve esta noite as três tarefas principais de amanhã e põe-nas onde as vejas."
+    },
+    "pt_BR": {
+     "t": "Planejando o dia na noite anterior",
+     "g": "Escreva as tarefas principais de amanhã para começar com clareza e não com o e-mail.",
+     "p": [
+      "Escolha até três prioridades; mais do que isso vira lista de desejos.",
+      "Começar pela tarefa principal a protege das interrupções do dia.",
+      "Planejar leva cinco minutos e reduz o estresse da manhã."
+     ],
+     "q": "Quais são as três coisas que fariam de amanhã um bom dia?",
+     "c": "Escreva hoje à noite as três tarefas principais de amanhã e deixe onde você veja."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breaks that actually recharge you",
+     "g": "Choose break activities that restore energy instead of draining it.",
+     "p": [
+      "Stretching, fresh air, water or a snack restore you better than scrolling.",
+      "A short break every hour or so keeps focus from fading.",
+      "Look away from screens and let your eyes rest on something distant."
+     ],
+     "q": "What kind of break leaves you feeling most refreshed?",
+     "c": "Take three real breaks today, with no screen, and note how you feel."
+    },
+    "de": {
+     "t": "Pausen, die wirklich Kraft geben",
+     "g": "Wähle Pausenaktivitäten, die Energie bringen statt sie zu rauben.",
+     "p": [
+      "Dehnen, frische Luft, Wasser oder ein Snack erholen besser als Scrollen.",
+      "Eine kurze Pause etwa jede Stunde hält den Fokus aufrecht.",
+      "Schau vom Bildschirm weg und lass die Augen auf etwas Entferntem ruhen."
+     ],
+     "q": "Welche Art Pause lässt dich am erfrischtesten zurück?",
+     "c": "Mach heute drei echte Pausen ohne Bildschirm und spür, wie es dir damit geht."
+    },
+    "es": {
+     "t": "Descansos que de verdad recargan",
+     "g": "Elige actividades de descanso que devuelvan energía en lugar de gastarla.",
+     "p": [
+      "Estirarte, tomar el aire, beber agua o picar algo recupera más que hacer scroll.",
+      "Una pausa corta cada hora, más o menos, evita que decaiga la concentración.",
+      "Aparta la vista de las pantallas y deja que tus ojos descansen en algo lejano."
+     ],
+     "q": "¿Qué tipo de pausa te deja más renovado?",
+     "c": "Haz hoy tres descansos reales, sin pantalla, y anota cómo te sientes."
+    },
+    "fr": {
+     "t": "Des pauses qui rechargent vraiment",
+     "g": "Choisis des activités de pause qui redonnent de l'énergie plutôt que d'en prendre.",
+     "p": [
+      "S'étirer, prendre l'air, boire de l'eau ou grignoter repose mieux que faire défiler.",
+      "Une courte pause environ chaque heure évite que la concentration baisse.",
+      "Détourne les yeux des écrans et laisse-les se reposer sur quelque chose de lointain."
+     ],
+     "q": "Quel type de pause te laisse le plus ressourcé ?",
+     "c": "Fais aujourd'hui trois vraies pauses, sans écran, et note comment tu te sens."
+    },
+    "it": {
+     "t": "Pause che ricaricano davvero",
+     "g": "Scegli attività di pausa che restituiscano energia invece di toglierla.",
+     "p": [
+      "Stirarsi, prendere aria, bere acqua o uno spuntino riposano più dello scorrere lo schermo.",
+      "Una breve pausa circa ogni ora evita che la concentrazione cali.",
+      "Stacca lo sguardo dagli schermi e lascia riposare gli occhi su qualcosa di lontano."
+     ],
+     "q": "Che tipo di pausa ti lascia più rigenerato?",
+     "c": "Fai oggi tre pause vere, senza schermo, e annota come ti senti."
+    },
+    "pt": {
+     "t": "Pausas que recarregam a sério",
+     "g": "Escolhe atividades de pausa que devolvam energia em vez de a gastar.",
+     "p": [
+      "Alongar, apanhar ar, beber água ou comer um snack descansa mais do que fazer scroll.",
+      "Uma pausa curta a cada hora, mais ou menos, evita que a concentração desça.",
+      "Desvia o olhar dos ecrãs e deixa os olhos descansarem em algo distante."
+     ],
+     "q": "Que tipo de pausa te deixa mais retemperado?",
+     "c": "Faz hoje três pausas a sério, sem ecrã, e anota como te sentes."
+    },
+    "pt_BR": {
+     "t": "Pausas que recarregam de verdade",
+     "g": "Escolha atividades de pausa que devolvam energia em vez de gastar.",
+     "p": [
+      "Alongar, tomar ar, beber água ou comer um lanche descansa mais do que ficar rolando a tela.",
+      "Uma pausa curta a cada hora, mais ou menos, evita que o foco caia.",
+      "Tire os olhos das telas e deixe-os descansar em algo distante."
+     ],
+     "q": "Que tipo de pausa deixa você mais renovado?",
+     "c": "Faça hoje três pausas de verdade, sem tela, e anote como você se sente."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lunch away from the screen",
+     "g": "See why a real lunch break matters and make it a pleasant pause.",
+     "p": [
+      "Eating at your desk blurs rest and work; a real break restores energy.",
+      "Step away from the screen, sit somewhere else and eat slowly.",
+      "Add something nice: a short walk, music or lunch with a friend."
+     ],
+     "q": "What would make your lunch break feel like a true pause?",
+     "c": "Eat lunch today without a screen, for at least twenty minutes."
+    },
+    "de": {
+     "t": "Mittagessen weg vom Bildschirm",
+     "g": "Erkenne, warum eine echte Mittagspause zählt, und mach sie zur angenehmen Auszeit.",
+     "p": [
+      "Essen am Schreibtisch vermischt Ruhe und Arbeit; eine echte Pause gibt Energie zurück.",
+      "Geh vom Bildschirm weg, setz dich woanders hin und iss langsam.",
+      "Füge etwas Schönes hinzu: ein kurzer Spaziergang, Musik oder Essen mit einer Freundin."
+     ],
+     "q": "Was würde deine Mittagspause zu einer echten Auszeit machen?",
+     "c": "Iss heute mindestens zwanzig Minuten ohne Bildschirm zu Mittag."
+    },
+    "es": {
+     "t": "Comer lejos de la pantalla",
+     "g": "Descubre por qué importa una pausa real para comer y hazla agradable.",
+     "p": [
+      "Comer en el escritorio mezcla descanso y trabajo; una pausa real devuelve energía.",
+      "Aléjate de la pantalla, siéntate en otro sitio y come despacio.",
+      "Añade algo agradable: un paseo corto, música o comer con un amigo."
+     ],
+     "q": "¿Qué haría que tu pausa para comer fuese una pausa de verdad?",
+     "c": "Come hoy sin pantalla, durante al menos veinte minutos."
+    },
+    "fr": {
+     "t": "Déjeuner loin de l'écran",
+     "g": "Comprends pourquoi une vraie pause déjeuner compte et rends-la agréable.",
+     "p": [
+      "Manger au bureau mélange repos et travail ; une vraie pause redonne de l'énergie.",
+      "Éloigne-toi de l'écran, assieds-toi ailleurs et mange lentement.",
+      "Ajoute un plaisir : une courte marche, de la musique ou un repas avec un ami."
+     ],
+     "q": "Qu'est-ce qui ferait de ta pause déjeuner une vraie pause ?",
+     "c": "Déjeune aujourd'hui sans écran, pendant au moins vingt minutes."
+    },
+    "it": {
+     "t": "Pranzo lontano dallo schermo",
+     "g": "Scopri perché una vera pausa pranzo conta e rendila piacevole.",
+     "p": [
+      "Mangiare alla scrivania mescola riposo e lavoro; una vera pausa restituisce energia.",
+      "Allontanati dallo schermo, siediti altrove e mangia con calma.",
+      "Aggiungi qualcosa di piacevole: una breve passeggiata, musica o pranzo con un amico."
+     ],
+     "q": "Che cosa farebbe della tua pausa pranzo una vera pausa?",
+     "c": "Oggi pranza senza schermo, per almeno venti minuti."
+    },
+    "pt": {
+     "t": "Almoçar longe do ecrã",
+     "g": "Percebe porque uma pausa de almoço a sério importa e torna-a agradável.",
+     "p": [
+      "Comer à secretária mistura descanso e trabalho; uma pausa a sério devolve energia.",
+      "Afasta-te do ecrã, senta-te noutro sítio e come devagar.",
+      "Acrescenta algo agradável: um passeio curto, música ou almoço com um amigo."
+     ],
+     "q": "O que faria da tua pausa de almoço uma pausa a sério?",
+     "c": "Almoça hoje sem ecrã, durante pelo menos vinte minutos."
+    },
+    "pt_BR": {
+     "t": "Almoçar longe da tela",
+     "g": "Entenda por que uma pausa de almoço de verdade importa e torne-a agradável.",
+     "p": [
+      "Comer na mesa de trabalho mistura descanso e trabalho; uma pausa de verdade devolve energia.",
+      "Afaste-se da tela, sente-se em outro lugar e coma devagar.",
+      "Acrescente algo agradável: uma caminhada curta, música ou almoço com um amigo."
+     ],
+     "q": "O que faria da sua pausa de almoço uma pausa de verdade?",
+     "c": "Almoce hoje sem tela, por pelo menos vinte minutos."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your workspace and routine",
+     "g": "Look back at your setup and routines and keep one improvement.",
+     "p": [
+      "Revisit your space, posture, light, noise and daily rhythm.",
+      "Celebrate what already works before listing what to fix.",
+      "Choose one improvement to keep for the whole next month."
+     ],
+     "q": "Which change from this month made the biggest difference to you?",
+     "c": "Write your chosen improvement and a small reminder to practise it."
+    },
+    "de": {
+     "t": "Rückblick: Arbeitsplatz und Routine",
+     "g": "Blicke auf Einrichtung und Routinen zurück und behalte eine Verbesserung bei.",
+     "p": [
+      "Schau nochmals auf Platz, Haltung, Licht, Lärm und Tagesrhythmus.",
+      "Feiere zuerst, was schon gut klappt, bevor du Mängel auflistest.",
+      "Wähle eine Verbesserung, die du den ganzen nächsten Monat behältst."
+     ],
+     "q": "Welche Änderung dieses Monats hat dir am meisten gebracht?",
+     "c": "Schreib deine gewählte Verbesserung auf und eine kleine Erinnerung dazu."
+    },
+    "es": {
+     "t": "Repaso: tu espacio y tu rutina",
+     "g": "Mira atrás a tu montaje y tus rutinas y quédate con una mejora.",
+     "p": [
+      "Repasa tu espacio, postura, luz, ruido y ritmo diario.",
+      "Celebra lo que ya funciona antes de listar lo que arreglar.",
+      "Elige una mejora para mantener durante todo el próximo mes."
+     ],
+     "q": "¿Qué cambio de este mes te ha hecho más diferencia?",
+     "c": "Escribe la mejora elegida y un pequeño recordatorio para practicarla."
+    },
+    "fr": {
+     "t": "Bilan : ton espace et ta routine",
+     "g": "Reviens sur ton installation et tes routines et garde une amélioration.",
+     "p": [
+      "Revois ton espace, ta posture, la lumière, le bruit et ton rythme quotidien.",
+      "Célèbre d'abord ce qui marche déjà avant de lister ce qu'il faut corriger.",
+      "Choisis une amélioration à garder pendant tout le mois prochain."
+     ],
+     "q": "Quel changement de ce mois a fait la plus grande différence pour toi ?",
+     "c": "Écris l'amélioration choisie et un petit rappel pour la pratiquer."
+    },
+    "it": {
+     "t": "Ripasso: il tuo spazio e la tua routine",
+     "g": "Guarda indietro a postazione e routine e tieni un miglioramento.",
+     "p": [
+      "Rivedi spazio, postura, luce, rumore e ritmo quotidiano.",
+      "Festeggia ciò che già funziona prima di elencare cosa sistemare.",
+      "Scegli un miglioramento da mantenere per tutto il mese prossimo."
+     ],
+     "q": "Quale cambiamento di questo mese ha fatto più differenza per te?",
+     "c": "Scrivi il miglioramento scelto e un piccolo promemoria per praticarlo."
+    },
+    "pt": {
+     "t": "Revisão: o teu espaço e a tua rotina",
+     "g": "Olha para trás para o teu espaço e rotinas e fica com uma melhoria.",
+     "p": [
+      "Revê o espaço, a postura, a luz, o ruído e o ritmo diário.",
+      "Celebra o que já funciona antes de listares o que corrigir.",
+      "Escolhe uma melhoria para manter durante todo o próximo mês."
+     ],
+     "q": "Que mudança deste mês fez mais diferença para ti?",
+     "c": "Escreve a melhoria escolhida e um pequeno lembrete para a praticares."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu espaço e sua rotina",
+     "g": "Olhe para trás para seu espaço e suas rotinas e fique com uma melhoria.",
+     "p": [
+      "Revise espaço, postura, luz, barulho e ritmo diário.",
+      "Comemore o que já funciona antes de listar o que corrigir.",
+      "Escolha uma melhoria para manter durante todo o próximo mês."
+     ],
+     "q": "Qual mudança deste mês fez mais diferença para você?",
+     "c": "Escreva a melhoria escolhida e um pequeno lembrete para praticá-la."
+    }
+   }
+  }
+ ]
+}

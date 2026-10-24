@@ -1,0 +1,835 @@
+{
+ "topic": "robotics",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Transistors as switches",
+     "g": "See how a tiny signal can switch a much bigger load.",
+     "p": [
+      "A transistor has three legs: base, collector and emitter in a common NPN type.",
+      "A small current into the base lets a larger current flow from collector to emitter.",
+      "Use a resistor in the base line, so a weak pin can switch a lamp or small motor."
+     ],
+     "q": "What would you switch with a transistor in your own robot?",
+     "c": "Sketch an NPN transistor switching an LED, with a resistor on the base."
+    },
+    "de": {
+     "t": "Transistoren als Schalter",
+     "g": "Sieh, wie ein winziges Signal eine viel größere Last schalten kann.",
+     "p": [
+      "Ein Transistor hat drei Beine: beim üblichen NPN-Typ Basis, Kollektor und Emitter.",
+      "Ein kleiner Basisstrom lässt einen größeren Strom von Kollektor zu Emitter fließen.",
+      "Setze einen Widerstand in die Basisleitung, damit ein schwacher Pin eine Lampe oder einen kleinen Motor schaltet."
+     ],
+     "q": "Was würdest du in deinem Roboter mit einem Transistor schalten?",
+     "c": "Skizziere einen NPN-Transistor, der eine LED schaltet, mit Widerstand an der Basis."
+    },
+    "es": {
+     "t": "Transistores como interruptores",
+     "g": "Mira cómo una señal diminuta puede activar una carga mucho mayor.",
+     "p": [
+      "Un transistor tiene tres patas: en el tipo NPN común, base, colector y emisor.",
+      "Una pequeña corriente en la base deja pasar una mayor del colector al emisor.",
+      "Pon una resistencia en la base para que un pin débil active una lámpara o un motor pequeño."
+     ],
+     "q": "¿Qué activarías con un transistor en tu propio robot?",
+     "c": "Dibuja un transistor NPN que active un LED, con una resistencia en la base."
+    },
+    "fr": {
+     "t": "Transistors comme interrupteurs",
+     "g": "Vois comment un minuscule signal peut commander une charge bien plus grande.",
+     "p": [
+      "Un transistor a trois pattes : pour le type NPN courant, base, collecteur et émetteur.",
+      "Un petit courant dans la base laisse passer un courant plus fort du collecteur à l'émetteur.",
+      "Mets une résistance sur la base pour qu'une broche faible commande une lampe ou un petit moteur."
+     ],
+     "q": "Que commanderais-tu avec un transistor dans ton propre robot ?",
+     "c": "Dessine un transistor NPN qui commande une LED, avec une résistance sur la base."
+    },
+    "it": {
+     "t": "Transistor come interruttori",
+     "g": "Scopri come un segnale minuscolo può comandare un carico molto più grande.",
+     "p": [
+      "Un transistor ha tre piedini: nel comune tipo NPN, base, collettore ed emettitore.",
+      "Una piccola corrente nella base lascia passare una corrente maggiore da collettore a emettitore.",
+      "Metti un resistore sulla base, così un pin debole comanda una lampadina o un piccolo motore."
+     ],
+     "q": "Cosa comanderesti con un transistor nel tuo robot?",
+     "c": "Disegna un transistor NPN che comanda un LED, con un resistore sulla base."
+    },
+    "pt": {
+     "t": "Transístores como interruptores",
+     "g": "Vê como um sinal minúsculo pode comandar uma carga muito maior.",
+     "p": [
+      "Um transístor tem três pernas: no tipo NPN comum, base, coletor e emissor.",
+      "Uma pequena corrente na base deixa passar uma maior do coletor para o emissor.",
+      "Põe uma resistência na base para que um pino fraco comande uma lâmpada ou um motor pequeno."
+     ],
+     "q": "O que comandarias com um transístor no teu próprio robô?",
+     "c": "Esboça um transístor NPN a comandar um LED, com uma resistência na base."
+    },
+    "pt_BR": {
+     "t": "Transistores como chaves",
+     "g": "Veja como um sinal minúsculo pode comandar uma carga bem maior.",
+     "p": [
+      "Um transistor tem três pernas: no tipo NPN comum, base, coletor e emissor.",
+      "Uma pequena corrente na base deixa passar uma maior do coletor para o emissor.",
+      "Ponha um resistor na base para que um pino fraco comande uma lâmpada ou um motor pequeno."
+     ],
+     "q": "O que você comandaria com um transistor no seu próprio robô?",
+     "c": "Esboce um transistor NPN comandando um LED, com um resistor na base."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Power: watts and heat",
+     "g": "Learn why parts get warm and what ratings mean.",
+     "p": [
+      "Power is voltage times current and is measured in watts.",
+      "Power that is not used for work turns into heat, so parts warm up.",
+      "Resistors have a power rating, such as a quarter watt, which you should not exceed."
+     ],
+     "q": "Which robot parts do you expect to get warm, and why?",
+     "c": "Compute the power of 5 volts at 0.2 amps, then compare with a quarter watt."
+    },
+    "de": {
+     "t": "Leistung: Watt und Wärme",
+     "g": "Lerne, warum Bauteile warm werden und was Nennwerte bedeuten.",
+     "p": [
+      "Leistung ist Spannung mal Strom und wird in Watt gemessen.",
+      "Leistung, die keine Arbeit verrichtet, wird zu Wärme, deshalb werden Teile warm.",
+      "Widerstände haben eine Nennleistung, etwa ein Viertelwatt, die man nicht überschreiten sollte."
+     ],
+     "q": "Welche Roboterteile werden deiner Meinung nach warm und warum?",
+     "c": "Berechne die Leistung von 5 Volt bei 0,2 Ampere und vergleiche mit einem Viertelwatt."
+    },
+    "es": {
+     "t": "Potencia: vatios y calor",
+     "g": "Aprende por qué las piezas se calientan y qué significan sus valores nominales.",
+     "p": [
+      "La potencia es voltaje por corriente y se mide en vatios.",
+      "La potencia que no hace trabajo se convierte en calor, por eso las piezas se calientan.",
+      "Las resistencias tienen una potencia nominal, como un cuarto de vatio, que no debes superar."
+     ],
+     "q": "¿Qué piezas de un robot esperas que se calienten y por qué?",
+     "c": "Calcula la potencia de 5 voltios a 0,2 amperios y compárala con un cuarto de vatio."
+    },
+    "fr": {
+     "t": "Puissance : watts et chaleur",
+     "g": "Apprends pourquoi les composants chauffent et ce que signifient leurs valeurs nominales.",
+     "p": [
+      "La puissance est la tension multipliée par le courant, mesurée en watts.",
+      "La puissance qui ne fait pas de travail devient chaleur, donc les pièces chauffent.",
+      "Les résistances ont une puissance nominale, comme un quart de watt, à ne pas dépasser."
+     ],
+     "q": "Quelles pièces d'un robot t'attends-tu à voir chauffer, et pourquoi ?",
+     "c": "Calcule la puissance de 5 volts à 0,2 ampère et compare avec un quart de watt."
+    },
+    "it": {
+     "t": "Potenza: watt e calore",
+     "g": "Scopri perché i componenti si scaldano e cosa significano i valori nominali.",
+     "p": [
+      "La potenza è tensione per corrente e si misura in watt.",
+      "La potenza che non compie lavoro diventa calore, per questo i componenti si scaldano.",
+      "I resistori hanno una potenza nominale, come un quarto di watt, da non superare."
+     ],
+     "q": "Quali parti di un robot ti aspetti si scaldino e perché?",
+     "c": "Calcola la potenza di 5 volt a 0,2 ampere e confrontala con un quarto di watt."
+    },
+    "pt": {
+     "t": "Potência: watts e calor",
+     "g": "Aprende porque as peças aquecem e o que significam os valores nominais.",
+     "p": [
+      "A potência é tensão vezes corrente e mede-se em watts.",
+      "A potência que não faz trabalho transforma-se em calor, por isso as peças aquecem.",
+      "As resistências têm uma potência nominal, como um quarto de watt, que não deves exceder."
+     ],
+     "q": "Que peças de um robô esperas que aqueçam e porquê?",
+     "c": "Calcula a potência de 5 volts a 0,2 amperes e compara com um quarto de watt."
+    },
+    "pt_BR": {
+     "t": "Potência: watts e calor",
+     "g": "Aprenda por que as peças esquentam e o que significam os valores nominais.",
+     "p": [
+      "A potência é tensão vezes corrente e é medida em watts.",
+      "A potência que não faz trabalho vira calor, por isso as peças esquentam.",
+      "Os resistores têm uma potência nominal, como um quarto de watt, que você não deve ultrapassar."
+     ],
+     "q": "Que peças de um robô você espera que esquentem e por quê?",
+     "c": "Calcule a potência de 5 volts a 0,2 ampère e compare com um quarto de watt."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading a simple schematic",
+     "g": "Learn the symbol language that all makers share.",
+     "p": [
+      "A schematic shows parts as symbols and wires as lines.",
+      "It shows how things connect, not how they are laid out on the board.",
+      "A zigzag is a resistor, a circle with an arrow is an LED, and long and short lines are a battery."
+     ],
+     "q": "Which symbol do you find the most fun or the most confusing?",
+     "c": "Draw the schematic of your LED circuit with battery, resistor and LED."
+    },
+    "de": {
+     "t": "Einen einfachen Schaltplan lesen",
+     "g": "Lerne die Symbolsprache, die alle Bastler teilen.",
+     "p": [
+      "Ein Schaltplan zeigt Bauteile als Symbole und Drähte als Linien.",
+      "Er zeigt, wie alles verbunden ist, nicht wie es auf der Platine liegt.",
+      "Ein Zickzack ist ein Widerstand, ein Kreis mit Pfeil eine LED, lange und kurze Striche eine Batterie."
+     ],
+     "q": "Welches Symbol findest du am lustigsten oder am verwirrendsten?",
+     "c": "Zeichne den Schaltplan deiner LED-Schaltung mit Batterie, Widerstand und LED."
+    },
+    "es": {
+     "t": "Leer un esquema sencillo",
+     "g": "Aprende el lenguaje de símbolos que comparten todos los aficionados.",
+     "p": [
+      "Un esquema muestra las piezas como símbolos y los cables como líneas.",
+      "Muestra cómo se conectan las cosas, no cómo están colocadas en la placa.",
+      "Un zigzag es una resistencia, un círculo con flecha es un LED y rayas largas y cortas son una pila."
+     ],
+     "q": "¿Qué símbolo te parece más divertido o más confuso?",
+     "c": "Dibuja el esquema de tu circuito LED con pila, resistencia y LED."
+    },
+    "fr": {
+     "t": "Lire un schéma simple",
+     "g": "Apprends le langage de symboles que tous les bricoleurs partagent.",
+     "p": [
+      "Un schéma montre les composants par des symboles et les fils par des lignes.",
+      "Il montre comment tout est relié, pas la disposition sur la carte.",
+      "Un zigzag est une résistance, un cercle avec flèche est une LED, des traits longs et courts sont une pile."
+     ],
+     "q": "Quel symbole trouves-tu le plus amusant ou le plus déroutant ?",
+     "c": "Dessine le schéma de ton circuit LED avec pile, résistance et LED."
+    },
+    "it": {
+     "t": "Leggere uno schema semplice",
+     "g": "Impara il linguaggio dei simboli condiviso da tutti gli appassionati.",
+     "p": [
+      "Uno schema mostra i componenti come simboli e i fili come linee.",
+      "Mostra come le cose sono collegate, non come sono disposte sulla scheda.",
+      "Uno zigzag è un resistore, un cerchio con freccia è un LED, linee lunghe e corte sono una batteria."
+     ],
+     "q": "Quale simbolo trovi più divertente o più confuso?",
+     "c": "Disegna lo schema del tuo circuito LED con batteria, resistore e LED."
+    },
+    "pt": {
+     "t": "Ler um esquema simples",
+     "g": "Aprende a linguagem de símbolos que todos os entusiastas partilham.",
+     "p": [
+      "Um esquema mostra as peças como símbolos e os fios como linhas.",
+      "Mostra como as coisas se ligam, não como estão dispostas na placa.",
+      "Um ziguezague é uma resistência, um círculo com seta é um LED e traços longos e curtos são uma pilha."
+     ],
+     "q": "Que símbolo achas mais divertido ou mais confuso?",
+     "c": "Desenha o esquema do teu circuito LED com pilha, resistência e LED."
+    },
+    "pt_BR": {
+     "t": "Lendo um esquema simples",
+     "g": "Aprenda a linguagem de símbolos que todos os entusiastas compartilham.",
+     "p": [
+      "Um esquema mostra as peças como símbolos e os fios como linhas.",
+      "Mostra como as coisas se ligam, não como estão dispostas na placa.",
+      "Um zigue-zague é um resistor, um círculo com seta é um LED e traços longos e curtos são uma pilha."
+     ],
+     "q": "Que símbolo você acha mais divertido ou mais confuso?",
+     "c": "Desenhe o esquema do seu circuito LED com pilha, resistor e LED."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ground: the shared reference",
+     "g": "Understand why every part must share a common zero point.",
+     "p": [
+      "Ground is the reference point of a circuit, called zero volts.",
+      "Voltages are always measured between two points, and ground is the usual second point.",
+      "When two boards talk to each other, joining their grounds is almost always needed."
+     ],
+     "q": "How would you explain ground to someone new to electronics?",
+     "c": "Take a multimeter and measure a battery, with the black probe on the negative side."
+    },
+    "de": {
+     "t": "Masse: der gemeinsame Bezugspunkt",
+     "g": "Verstehe, warum alle Teile einen gemeinsamen Nullpunkt teilen müssen.",
+     "p": [
+      "Masse ist der Bezugspunkt einer Schaltung, genannt null Volt.",
+      "Spannungen werden immer zwischen zwei Punkten gemessen, und Masse ist meist der zweite Punkt.",
+      "Wenn zwei Boards miteinander sprechen, müssen fast immer ihre Massen verbunden sein."
+     ],
+     "q": "Wie würdest du Masse jemandem erklären, der neu in der Elektronik ist?",
+     "c": "Miss mit dem Multimeter eine Batterie, die schwarze Spitze am Minuspol."
+    },
+    "es": {
+     "t": "Masa: la referencia compartida",
+     "g": "Entiende por qué todas las piezas deben compartir un punto cero común.",
+     "p": [
+      "La masa es el punto de referencia de un circuito, llamado cero voltios.",
+      "Los voltajes siempre se miden entre dos puntos, y la masa suele ser el segundo.",
+      "Cuando dos placas se comunican, casi siempre hay que unir sus masas."
+     ],
+     "q": "¿Cómo le explicarías la masa a alguien nuevo en electrónica?",
+     "c": "Con un multímetro mide una pila, con la punta negra en el lado negativo."
+    },
+    "fr": {
+     "t": "La masse : la référence commune",
+     "g": "Comprends pourquoi toutes les pièces doivent partager un point zéro commun.",
+     "p": [
+      "La masse est le point de référence d'un circuit, appelé zéro volt.",
+      "Les tensions se mesurent toujours entre deux points, et la masse est souvent le second.",
+      "Quand deux cartes communiquent, il faut presque toujours relier leurs masses."
+     ],
+     "q": "Comment expliquerais-tu la masse à quelqu'un qui débute en électronique ?",
+     "c": "Avec un multimètre, mesure une pile, la pointe noire côté négatif."
+    },
+    "it": {
+     "t": "Massa: il riferimento comune",
+     "g": "Capisci perché tutti i componenti devono condividere un punto zero comune.",
+     "p": [
+      "La massa è il punto di riferimento di un circuito, detto zero volt.",
+      "Le tensioni si misurano sempre fra due punti, e la massa è di solito il secondo.",
+      "Quando due schede dialogano, quasi sempre vanno collegate le loro masse."
+     ],
+     "q": "Come spiegheresti la massa a chi è nuovo all'elettronica?",
+     "c": "Con il multimetro misura una pila, con il puntale nero sul lato negativo."
+    },
+    "pt": {
+     "t": "Massa: a referência partilhada",
+     "g": "Compreende porque todas as peças devem partilhar um ponto zero comum.",
+     "p": [
+      "A massa é o ponto de referência de um circuito, chamado zero volts.",
+      "As tensões medem-se sempre entre dois pontos, e a massa costuma ser o segundo.",
+      "Quando duas placas comunicam, quase sempre é preciso ligar as suas massas."
+     ],
+     "q": "Como explicarias a massa a alguém novo na eletrónica?",
+     "c": "Com um multímetro mede uma pilha, com a ponta preta no lado negativo."
+    },
+    "pt_BR": {
+     "t": "Terra: a referência compartilhada",
+     "g": "Entenda por que todas as peças devem compartilhar um ponto zero comum.",
+     "p": [
+      "O terra é o ponto de referência de um circuito, chamado zero volt.",
+      "As tensões são sempre medidas entre dois pontos, e o terra costuma ser o segundo.",
+      "Quando duas placas se comunicam, quase sempre é preciso ligar seus terras."
+     ],
+     "q": "Como você explicaria o terra para alguém novo em eletrônica?",
+     "c": "Com um multímetro meça uma pilha, com a ponta preta no lado negativo."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Common tools for makers",
+     "g": "Meet the small tools that handle most hobby jobs.",
+     "p": [
+      "Wire strippers remove insulation without cutting the copper.",
+      "Small pliers and a flush cutter hold and trim wires and leads neatly.",
+      "Precision screwdrivers and tweezers handle tiny screws and parts."
+     ],
+     "q": "Which tool would you buy or borrow first, and why?",
+     "c": "Gather any tools you own and sort them by what each does."
+    },
+    "de": {
+     "t": "Gängige Werkzeuge für Bastler",
+     "g": "Lerne die kleinen Werkzeuge kennen, die die meisten Hobbyarbeiten erledigen.",
+     "p": [
+      "Abisolierzangen entfernen die Isolierung, ohne das Kupfer zu durchtrennen.",
+      "Kleine Zangen und ein Seitenschneider halten und kürzen Drähte sauber.",
+      "Feinschraubendreher und Pinzetten bewältigen winzige Schrauben und Teile."
+     ],
+     "q": "Welches Werkzeug würdest du zuerst kaufen oder ausleihen und warum?",
+     "c": "Sammle deine Werkzeuge und sortiere sie nach ihrer Aufgabe."
+    },
+    "es": {
+     "t": "Herramientas comunes para aficionados",
+     "g": "Conoce las herramientas pequeñas que resuelven la mayoría de trabajos.",
+     "p": [
+      "Los pelacables quitan el aislante sin cortar el cobre.",
+      "Unos alicates pequeños y un alicate de corte sujetan y recortan cables con limpieza.",
+      "Los destornilladores de precisión y las pinzas manejan tornillos y piezas diminutas."
+     ],
+     "q": "¿Qué herramienta comprarías o pedirías prestada primero y por qué?",
+     "c": "Reúne las herramientas que tengas y clasifícalas según para qué sirven."
+    },
+    "fr": {
+     "t": "Outils courants du bricoleur",
+     "g": "Découvre les petits outils qui font la plupart des travaux.",
+     "p": [
+      "Une pince à dénuder retire l'isolant sans couper le cuivre.",
+      "De petites pinces et une pince coupante tiennent et coupent proprement fils et pattes.",
+      "Les tournevis de précision et les brucelles gèrent les petites vis et pièces."
+     ],
+     "q": "Quel outil achèterais-tu ou emprunterais-tu en premier, et pourquoi ?",
+     "c": "Rassemble tes outils et classe-les selon leur usage."
+    },
+    "it": {
+     "t": "Attrezzi comuni per appassionati",
+     "g": "Conosci i piccoli attrezzi che svolgono la maggior parte dei lavori.",
+     "p": [
+      "Le pinze spelafili tolgono l'isolante senza tagliare il rame.",
+      "Pinze piccole e un tronchesino tengono e tagliano fili e piedini con pulizia.",
+      "I cacciaviti di precisione e le pinzette gestiscono viti e parti minuscole."
+     ],
+     "q": "Quale attrezzo compreresti o ti faresti prestare per primo e perché?",
+     "c": "Raccogli gli attrezzi che hai e ordinali in base alla loro funzione."
+    },
+    "pt": {
+     "t": "Ferramentas comuns para entusiastas",
+     "g": "Conhece as ferramentas pequenas que tratam da maioria dos trabalhos.",
+     "p": [
+      "Os descarnadores tiram o isolamento sem cortar o cobre.",
+      "Alicates pequenos e um alicate de corte seguram e cortam fios e pernas com limpeza.",
+      "Chaves de precisão e pinças tratam de parafusos e peças minúsculas."
+     ],
+     "q": "Que ferramenta comprarias ou pedirias emprestada primeiro e porquê?",
+     "c": "Reúne as ferramentas que tens e ordena-as pelo que cada uma faz."
+    },
+    "pt_BR": {
+     "t": "Ferramentas comuns para entusiastas",
+     "g": "Conheça as ferramentas pequenas que resolvem a maioria dos trabalhos.",
+     "p": [
+      "Os desencapadores tiram o isolamento sem cortar o cobre.",
+      "Alicates pequenos e um alicate de corte seguram e cortam fios e terminais com capricho.",
+      "Chaves de precisão e pinças cuidam de parafusos e peças minúsculas."
+     ],
+     "q": "Que ferramenta você compraria ou pediria emprestada primeiro e por quê?",
+     "c": "Reúna as ferramentas que você tem e organize pelo que cada uma faz."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wires, jumpers and connectors",
+     "g": "Choose the right wire and connector for each job.",
+     "p": [
+      "Solid wire suits breadboards, while stranded wire bends better inside moving robots.",
+      "Jumper cables with pins plug straight into breadboards and board headers.",
+      "Common connectors, such as battery clips and screw terminals, make parts easy to swap."
+     ],
+     "q": "Which part of a robot will need flexible wire, and why?",
+     "c": "Strip a short piece of wire cleanly and compare solid and stranded types."
+    },
+    "de": {
+     "t": "Drähte, Jumper und Steckverbinder",
+     "g": "Wähle für jede Aufgabe den passenden Draht und Stecker.",
+     "p": [
+      "Massivdraht passt zu Steckbrettern, Litze lässt sich in beweglichen Robotern besser biegen.",
+      "Jumperkabel mit Stiften passen direkt in Steckbretter und Stiftleisten.",
+      "Gängige Verbinder wie Batterieclips und Schraubklemmen machen den Teiletausch leicht."
+     ],
+     "q": "Welcher Teil eines Roboters braucht flexible Drähte und warum?",
+     "c": "Isoliere ein kurzes Drahtstück sauber ab und vergleiche Massivdraht und Litze."
+    },
+    "es": {
+     "t": "Cables, puentes y conectores",
+     "g": "Elige el cable y el conector adecuados para cada trabajo.",
+     "p": [
+      "El cable rígido va bien en placas de pruebas; el flexible se dobla mejor en robots con movimiento.",
+      "Los cables puente con pines se enchufan directo en placas y cabeceras.",
+      "Conectores comunes, como clips de pila y bornes de tornillo, facilitan cambiar piezas."
+     ],
+     "q": "¿Qué parte de un robot necesitará cable flexible y por qué?",
+     "c": "Pela con limpieza un trozo corto de cable y compara el rígido con el flexible."
+    },
+    "fr": {
+     "t": "Fils, cavaliers et connecteurs",
+     "g": "Choisis le bon fil et le bon connecteur pour chaque tâche.",
+     "p": [
+      "Le fil rigide convient aux platines ; le fil souple se plie mieux dans un robot qui bouge.",
+      "Les fils à broches s'enfichent directement sur les platines et les connecteurs de carte.",
+      "Des connecteurs courants, comme les clips de pile et les borniers à vis, facilitent l'échange."
+     ],
+     "q": "Quelle partie d'un robot aura besoin de fil souple, et pourquoi ?",
+     "c": "Dénude proprement un court morceau de fil et compare fil rigide et souple."
+    },
+    "it": {
+     "t": "Fili, jumper e connettori",
+     "g": "Scegli il filo e il connettore giusti per ogni lavoro.",
+     "p": [
+      "Il filo rigido va bene per le breadboard; quello flessibile si piega meglio nei robot in movimento.",
+      "I cavetti jumper con pin si inseriscono direttamente in breadboard e connettori delle schede.",
+      "Connettori comuni, come clip per batteria e morsetti a vite, rendono facile sostituire i pezzi."
+     ],
+     "q": "Quale parte di un robot avrà bisogno di filo flessibile e perché?",
+     "c": "Spela con cura un pezzetto di filo e confronta quello rigido e flessibile."
+    },
+    "pt": {
+     "t": "Fios, jumpers e conectores",
+     "g": "Escolhe o fio e o conector certos para cada trabalho.",
+     "p": [
+      "O fio rígido serve para placas de ensaio; o flexível dobra melhor em robôs com movimento.",
+      "Os cabos jumper com pinos encaixam direto em placas de ensaio e conectores.",
+      "Conectores comuns, como clipes de pilha e bornes de parafuso, facilitam a troca de peças."
+     ],
+     "q": "Que parte de um robô vai precisar de fio flexível e porquê?",
+     "c": "Descasca com cuidado um bocado de fio e compara o rígido com o flexível."
+    },
+    "pt_BR": {
+     "t": "Fios, jumpers e conectores",
+     "g": "Escolha o fio e o conector certos para cada trabalho.",
+     "p": [
+      "O fio rígido serve para protoboards; o flexível dobra melhor em robôs com movimento.",
+      "Os cabos jumper com pinos encaixam direto em protoboards e conectores.",
+      "Conectores comuns, como clipes de pilha e bornes de parafuso, facilitam a troca de peças."
+     ],
+     "q": "Que parte de um robô vai precisar de fio flexível e por quê?",
+     "c": "Descasque com cuidado um pedaço de fio e compare o rígido com o flexível."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Soldering basics",
+     "g": "Learn how to make strong joints safely, and why heat matters.",
+     "p": [
+      "Solder is a metal that melts to join parts; the iron gets very hot, so use its stand.",
+      "Heat the pad and the leg together, then touch the solder to the joint, not the tip.",
+      "Work in a ventilated space, wear safety glasses and wash your hands afterwards."
+     ],
+     "q": "What project would you like to solder first?",
+     "c": "Tin a clean iron tip and rest it back in its stand each time you pause."
+    },
+    "de": {
+     "t": "Löten: die Grundlagen",
+     "g": "Lerne, wie du sicher feste Lötstellen machst und warum Wärme zählt.",
+     "p": [
+      "Lot ist ein Metall, das schmilzt und Teile verbindet; der Kolben wird sehr heiß, nutze den Ständer.",
+      "Erhitze Pad und Anschlussbein zusammen, dann halte das Lot an die Stelle, nicht an die Spitze.",
+      "Arbeite gut belüftet, trage eine Schutzbrille und wasche danach die Hände."
+     ],
+     "q": "Welches Projekt möchtest du zuerst löten?",
+     "c": "Verzinne eine saubere Spitze und lege den Kolben bei jeder Pause zurück in den Ständer."
+    },
+    "es": {
+     "t": "Soldadura: lo básico",
+     "g": "Aprende a hacer uniones fuertes con seguridad y por qué importa el calor.",
+     "p": [
+      "La soldadura es un metal que se funde para unir piezas; el soldador quema, usa siempre su soporte.",
+      "Calienta la pista y la pata a la vez y acerca el estaño a la unión, no a la punta.",
+      "Trabaja con ventilación, usa gafas de seguridad y lávate las manos después."
+     ],
+     "q": "¿Qué proyecto te gustaría soldar primero?",
+     "c": "Estaña una punta limpia y déjala en su soporte cada vez que hagas una pausa."
+    },
+    "fr": {
+     "t": "Les bases de la soudure",
+     "g": "Apprends à réaliser des joints solides en sécurité, et pourquoi la chaleur compte.",
+     "p": [
+      "La soudure est un métal qui fond pour assembler ; le fer devient très chaud, utilise son support.",
+      "Chauffe la pastille et la patte ensemble, puis touche le joint avec la soudure, pas la panne.",
+      "Travaille dans un lieu aéré, avec lunettes de protection, et lave-toi les mains ensuite."
+     ],
+     "q": "Quel projet voudrais-tu souder en premier ?",
+     "c": "Étame une panne propre et repose le fer sur son support à chaque pause."
+    },
+    "it": {
+     "t": "Le basi della saldatura",
+     "g": "Impara a fare giunzioni solide in sicurezza e perché conta il calore.",
+     "p": [
+      "Lo stagno è un metallo che fonde per unire i pezzi; il saldatore scotta, usa sempre il suo supporto.",
+      "Scalda piazzola e piedino insieme, poi appoggia lo stagno alla giunzione, non alla punta.",
+      "Lavora in un luogo ventilato, con occhiali protettivi, e lavati le mani dopo."
+     ],
+     "q": "Quale progetto ti piacerebbe saldare per primo?",
+     "c": "Stagna una punta pulita e riponi il saldatore nel supporto a ogni pausa."
+    },
+    "pt": {
+     "t": "Noções básicas de soldadura",
+     "g": "Aprende a fazer juntas fortes em segurança e porque importa o calor.",
+     "p": [
+      "A solda é um metal que derrete para unir peças; o ferro fica muito quente, usa sempre o suporte.",
+      "Aquece a pista e a perna ao mesmo tempo e encosta a solda à junta, não à ponta.",
+      "Trabalha num local ventilado, com óculos de proteção, e lava as mãos depois."
+     ],
+     "q": "Que projeto gostarias de soldar primeiro?",
+     "c": "Estanha uma ponta limpa e pousa o ferro no suporte sempre que fizeres uma pausa."
+    },
+    "pt_BR": {
+     "t": "Noções básicas de solda",
+     "g": "Aprenda a fazer juntas fortes com segurança e por que o calor importa.",
+     "p": [
+      "A solda é um metal que derrete para unir peças; o ferro fica muito quente, use sempre o suporte.",
+      "Aqueça a trilha e a perna ao mesmo tempo e encoste a solda na junta, não na ponta.",
+      "Trabalhe em local ventilado, com óculos de proteção, e lave as mãos depois."
+     ],
+     "q": "Que projeto você gostaria de soldar primeiro?",
+     "c": "Estanhe uma ponta limpa e apoie o ferro no suporte sempre que fizer uma pausa."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Practising solder joints",
+     "g": "Train on scrap boards until your joints look good every time.",
+     "p": [
+      "A good joint is shiny and shaped like a small volcano around the leg.",
+      "A dull blob or a gap usually means too little heat or a dirty surface.",
+      "Hold the part still while the solder cools, then trim the leg flush."
+     ],
+     "q": "How did your first joints look, and what would you change?",
+     "c": "Solder ten joints on a practice board and pick your best and worst."
+    },
+    "de": {
+     "t": "Lötstellen üben",
+     "g": "Übe an Restplatinen, bis deine Lötstellen immer gut aussehen.",
+     "p": [
+      "Eine gute Lötstelle glänzt und sieht wie ein kleiner Vulkan um das Bein aus.",
+      "Ein matter Klecks oder eine Lücke bedeutet meist zu wenig Hitze oder eine schmutzige Fläche.",
+      "Halte das Teil still, bis das Lot erkaltet ist, und kürze dann das Bein."
+     ],
+     "q": "Wie sahen deine ersten Lötstellen aus und was würdest du ändern?",
+     "c": "Löte zehn Stellen auf einer Übungsplatine und wähle deine beste und schlechteste."
+    },
+    "es": {
+     "t": "Practicar uniones de soldadura",
+     "g": "Entrena con placas de desecho hasta que tus uniones queden bien siempre.",
+     "p": [
+      "Una buena unión es brillante y con forma de volcán pequeño alrededor de la pata.",
+      "Una bola mate o un hueco suele indicar poco calor o una superficie sucia.",
+      "Mantén la pieza quieta mientras se enfría el estaño y recorta la pata al ras."
+     ],
+     "q": "¿Cómo quedaron tus primeras uniones y qué cambiarías?",
+     "c": "Suelda diez puntos en una placa de práctica y elige el mejor y el peor."
+    },
+    "fr": {
+     "t": "S'entraîner à souder",
+     "g": "Entraîne-toi sur des cartes de rebut jusqu'à réussir chaque joint.",
+     "p": [
+      "Un bon joint est brillant, en forme de petit volcan autour de la patte.",
+      "Une boule terne ou un vide indique souvent trop peu de chaleur ou une surface sale.",
+      "Tiens la pièce immobile pendant le refroidissement, puis coupe la patte au ras."
+     ],
+     "q": "À quoi ressemblaient tes premiers joints et que changerais-tu ?",
+     "c": "Soude dix points sur une carte d'essai et choisis le meilleur et le pire."
+    },
+    "it": {
+     "t": "Fare pratica con le saldature",
+     "g": "Allenati su schede di scarto finché le saldature vengono bene ogni volta.",
+     "p": [
+      "Una buona saldatura è lucida e a forma di piccolo vulcano attorno al piedino.",
+      "Una goccia opaca o un vuoto indica di solito poco calore o una superficie sporca.",
+      "Tieni fermo il pezzo mentre lo stagno si raffredda, poi taglia il piedino a filo."
+     ],
+     "q": "Com'erano le tue prime saldature e cosa cambieresti?",
+     "c": "Salda dieci punti su una scheda di prova e scegli la migliore e la peggiore."
+    },
+    "pt": {
+     "t": "Praticar juntas de soldadura",
+     "g": "Treina em placas de sucata até as tuas juntas ficarem sempre boas.",
+     "p": [
+      "Uma boa junta é brilhante e tem a forma de um pequeno vulcão à volta da perna.",
+      "Uma bola baça ou um vazio indica normalmente pouco calor ou superfície suja.",
+      "Mantém a peça imóvel enquanto a solda arrefece e corta a perna rente."
+     ],
+     "q": "Como ficaram as tuas primeiras juntas e o que mudarias?",
+     "c": "Solda dez pontos numa placa de treino e escolhe a melhor e a pior."
+    },
+    "pt_BR": {
+     "t": "Praticando juntas de solda",
+     "g": "Treine em placas de sucata até suas juntas ficarem sempre boas.",
+     "p": [
+      "Uma boa junta é brilhante e tem a forma de um pequeno vulcão em volta da perna.",
+      "Uma bolinha fosca ou um vazio indica geralmente pouco calor ou superfície suja.",
+      "Mantenha a peça parada enquanto a solda esfria e corte a perna rente."
+     ],
+     "q": "Como ficaram suas primeiras juntas e o que você mudaria?",
+     "c": "Solde dez pontos em uma placa de treino e escolha a melhor e a pior."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Desoldering and fixing mistakes",
+     "g": "Remove parts and correct errors calmly and safely.",
+     "p": [
+      "Solder wick soaks up melted solder when pressed onto a joint with the iron.",
+      "A desoldering pump sucks molten solder away with a quick spring-loaded push.",
+      "Work slowly and avoid overheating the pad, which can lift off the board."
+     ],
+     "q": "What mistake did you make while learning, and how did you fix it?",
+     "c": "Practise removing a resistor from a scrap board with wick or a pump."
+    },
+    "de": {
+     "t": "Entlöten und Fehler beheben",
+     "g": "Entferne Teile und korrigiere Fehler ruhig und sicher.",
+     "p": [
+      "Entlötlitze saugt geschmolzenes Lot auf, wenn man sie mit dem Kolben auf die Stelle drückt.",
+      "Eine Entlötpumpe saugt flüssiges Lot mit einem schnellen Federstoß weg.",
+      "Arbeite langsam und überhitze das Pad nicht, sonst kann es sich von der Platine lösen."
+     ],
+     "q": "Welchen Fehler hast du beim Lernen gemacht und wie hast du ihn behoben?",
+     "c": "Übe, an einer Restplatine einen Widerstand mit Litze oder Pumpe zu entfernen."
+    },
+    "es": {
+     "t": "Desoldar y corregir errores",
+     "g": "Quita piezas y corrige errores con calma y seguridad.",
+     "p": [
+      "La malla desoldadora absorbe el estaño fundido al apretarla contra la unión con el soldador.",
+      "Una bomba desoldadora aspira el estaño fundido con un empujón rápido de resorte.",
+      "Trabaja despacio y evita sobrecalentar la pista, que puede despegarse de la placa."
+     ],
+     "q": "¿Qué error cometiste al aprender y cómo lo arreglaste?",
+     "c": "Practica quitar una resistencia de una placa de desecho con malla o bomba."
+    },
+    "fr": {
+     "t": "Dessouder et corriger ses erreurs",
+     "g": "Retire des pièces et corrige les erreurs calmement et en sécurité.",
+     "p": [
+      "La tresse à dessouder absorbe la soudure fondue quand on la presse sur le joint avec le fer.",
+      "Une pompe à dessouder aspire la soudure fondue d'un coup de ressort rapide.",
+      "Travaille lentement et évite de surchauffer la pastille, qui peut se décoller."
+     ],
+     "q": "Quelle erreur as-tu faite en apprenant, et comment l'as-tu réparée ?",
+     "c": "Entraîne-toi à retirer une résistance d'une carte de rebut avec tresse ou pompe."
+    },
+    "it": {
+     "t": "Dissaldare e correggere gli errori",
+     "g": "Rimuovi componenti e correggi gli errori con calma e in sicurezza.",
+     "p": [
+      "La treccia dissaldante assorbe lo stagno fuso se premuta sulla giunzione con il saldatore.",
+      "Una pompetta dissaldante aspira lo stagno fuso con una rapida spinta a molla.",
+      "Lavora piano ed evita di surriscaldare la piazzola, che può staccarsi dalla scheda."
+     ],
+     "q": "Che errore hai fatto imparando e come l'hai risolto?",
+     "c": "Esercitati a togliere un resistore da una scheda di scarto con treccia o pompetta."
+    },
+    "pt": {
+     "t": "Dessoldar e corrigir erros",
+     "g": "Retira peças e corrige erros com calma e segurança.",
+     "p": [
+      "A malha de dessoldar absorve a solda derretida quando é pressionada na junta com o ferro.",
+      "Uma bomba de dessoldar aspira a solda derretida com um empurrão rápido de mola.",
+      "Trabalha devagar e evita sobreaquecer a pista, que se pode descolar da placa."
+     ],
+     "q": "Que erro cometeste ao aprender e como o resolveste?",
+     "c": "Pratica retirar uma resistência de uma placa de sucata com malha ou bomba."
+    },
+    "pt_BR": {
+     "t": "Dessoldando e corrigindo erros",
+     "g": "Retire peças e corrija erros com calma e segurança.",
+     "p": [
+      "A malha de dessoldar absorve a solda derretida quando pressionada na junta com o ferro.",
+      "Uma bomba de dessoldar aspira a solda derretida com um empurrão rápido de mola.",
+      "Trabalhe devagar e evite superaquecer a trilha, que pode descolar da placa."
+     ],
+     "q": "Que erro você cometeu ao aprender e como resolveu?",
+     "c": "Pratique retirar um resistor de uma placa de sucata com malha ou bomba."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kits versus building from scratch",
+     "g": "Weigh the two ways to start a robot project.",
+     "p": [
+      "Kits give you tested parts, clear steps and a quick first success.",
+      "Scratch builds teach design, sourcing parts and solving your own problems.",
+      "Many makers start with a kit, then modify it and later design their own."
+     ],
+     "q": "Which path appeals to you today, kit or scratch?",
+     "c": "List three things you would want from a kit and three from a scratch build."
+    },
+    "de": {
+     "t": "Bausätze oder Eigenbau von Grund auf",
+     "g": "Wäge die zwei Wege ab, ein Roboterprojekt zu beginnen.",
+     "p": [
+      "Bausätze liefern geprüfte Teile, klare Schritte und einen schnellen ersten Erfolg.",
+      "Eigenbauten lehren Entwurf, Teilebeschaffung und das Lösen eigener Probleme.",
+      "Viele starten mit einem Bausatz, ändern ihn später ab und entwerfen dann eigene Roboter."
+     ],
+     "q": "Welcher Weg reizt dich heute, Bausatz oder Eigenbau?",
+     "c": "Liste drei Dinge, die du von einem Bausatz willst, und drei vom Eigenbau."
+    },
+    "es": {
+     "t": "Kits frente a construir desde cero",
+     "g": "Sopesa las dos formas de empezar un proyecto de robot.",
+     "p": [
+      "Los kits dan piezas probadas, pasos claros y un primer éxito rápido.",
+      "Construir desde cero enseña diseño, búsqueda de piezas y resolver tus propios problemas.",
+      "Muchos empiezan con un kit, luego lo modifican y después diseñan el suyo."
+     ],
+     "q": "¿Qué camino te atrae hoy, kit o desde cero?",
+     "c": "Anota tres cosas que quieres de un kit y tres de una construcción desde cero."
+    },
+    "fr": {
+     "t": "Kit ou construction de zéro",
+     "g": "Compare les deux façons de démarrer un projet de robot.",
+     "p": [
+      "Les kits offrent des pièces testées, des étapes claires et un premier succès rapide.",
+      "Construire de zéro enseigne la conception, la recherche de pièces et la résolution de problèmes.",
+      "Beaucoup commencent avec un kit, le modifient, puis conçoivent le leur."
+     ],
+     "q": "Quelle voie t'attire aujourd'hui, le kit ou la construction de zéro ?",
+     "c": "Note trois choses que tu attends d'un kit et trois d'une construction de zéro."
+    },
+    "it": {
+     "t": "Kit contro costruire da zero",
+     "g": "Confronta i due modi di iniziare un progetto di robot.",
+     "p": [
+      "I kit offrono componenti testati, passaggi chiari e un rapido primo successo.",
+      "Costruire da zero insegna progettazione, ricerca dei pezzi e a risolvere problemi tuoi.",
+      "Molti iniziano con un kit, poi lo modificano e infine progettano il proprio."
+     ],
+     "q": "Quale strada ti attira oggi, kit o da zero?",
+     "c": "Elenca tre cose che vuoi da un kit e tre da una costruzione da zero."
+    },
+    "pt": {
+     "t": "Kits ou construir de raiz",
+     "g": "Pondera as duas formas de começar um projeto de robô.",
+     "p": [
+      "Os kits dão peças testadas, passos claros e um primeiro sucesso rápido.",
+      "Construir de raiz ensina conceção, procura de peças e a resolver os teus problemas.",
+      "Muitos começam com um kit, depois modificam-no e mais tarde projetam o seu."
+     ],
+     "q": "Que caminho te atrai hoje, kit ou de raiz?",
+     "c": "Lista três coisas que queres de um kit e três de uma construção de raiz."
+    },
+    "pt_BR": {
+     "t": "Kits ou construir do zero",
+     "g": "Pese as duas formas de começar um projeto de robô.",
+     "p": [
+      "Os kits dão peças testadas, passos claros e um primeiro sucesso rápido.",
+      "Construir do zero ensina projeto, busca de peças e a resolver seus próprios problemas.",
+      "Muita gente começa com um kit, depois o modifica e mais tarde projeta o seu."
+     ],
+     "q": "Que caminho atrai você hoje, kit ou do zero?",
+     "c": "Liste três coisas que você quer de um kit e três de uma construção do zero."
+    }
+   }
+  }
+ ]
+}

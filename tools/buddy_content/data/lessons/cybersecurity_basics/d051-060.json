@@ -1,0 +1,835 @@
+{
+ "topic": "cybersecurity_basics",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why software updates matter",
+     "g": "See how updates fix security holes and keep your devices protected.",
+     "p": [
+      "Software has flaws, and updates fix the ones that could let harmful programs in.",
+      "Once a fix is public, delaying only gives problem makers more time to use the gap.",
+      "Updates also bring new features and make your devices run more smoothly."
+     ],
+     "q": "When did you last update your phone, and how did it go?",
+     "c": "Challenge: open your phone settings and look at when it last checked for updates."
+    },
+    "de": {
+     "t": "Warum Software-Updates wichtig sind",
+     "g": "Sieh, wie Updates Sicherheitslücken schließen und deine Geräte schützen.",
+     "p": [
+      "Software hat Fehler, und Updates beheben die, durch die Schadprogramme hereinkommen könnten.",
+      "Ist eine Lösung öffentlich, gibt Zögern Störenfrieden nur mehr Zeit, die Lücke zu nutzen.",
+      "Updates bringen außerdem neue Funktionen und lassen Geräte flüssiger laufen."
+     ],
+     "q": "Wann hast du dein Handy zuletzt aktualisiert, und wie lief es?",
+     "c": "Challenge: Öffne die Handy-Einstellungen und sieh nach, wann zuletzt nach Updates gesucht wurde."
+    },
+    "es": {
+     "t": "Por qué importan las actualizaciones",
+     "g": "Descubre cómo las actualizaciones cierran brechas de seguridad y protegen tus dispositivos.",
+     "p": [
+      "El software tiene fallos y las actualizaciones corrigen los que dejarían entrar programas dañinos.",
+      "Cuando una corrección es pública, retrasarla solo da más tiempo a quien quiere aprovechar el fallo.",
+      "Las actualizaciones también traen novedades y hacen que tus dispositivos funcionen mejor."
+     ],
+     "q": "¿Cuándo actualizaste por última vez tu móvil y cómo fue?",
+     "c": "Reto: abre los ajustes del móvil y mira cuándo buscó actualizaciones por última vez."
+    },
+    "fr": {
+     "t": "Pourquoi les mises à jour comptent",
+     "g": "Vois comment les mises à jour corrigent des failles et protègent tes appareils.",
+     "p": [
+      "Les logiciels ont des défauts, et les mises à jour corrigent ceux qui laisseraient entrer des programmes nuisibles.",
+      "Une fois le correctif public, tarder laisse seulement plus de temps pour exploiter la faille.",
+      "Les mises à jour apportent aussi des nouveautés et fluidifient tes appareils."
+     ],
+     "q": "Quand as-tu mis à jour ton téléphone pour la dernière fois, et comment cela s'est passé ?",
+     "c": "Défi : ouvre les réglages du téléphone et regarde quand il a cherché des mises à jour pour la dernière fois."
+    },
+    "it": {
+     "t": "Perché gli aggiornamenti contano",
+     "g": "Scopri come gli aggiornamenti correggono falle e proteggono i tuoi dispositivi.",
+     "p": [
+      "Il software ha difetti e gli aggiornamenti correggono quelli che farebbero entrare programmi dannosi.",
+      "Quando una correzione è pubblica, rimandare dà solo più tempo a chi vuole sfruttare la falla.",
+      "Gli aggiornamenti portano anche novità e fanno funzionare meglio i dispositivi."
+     ],
+     "q": "Quando hai aggiornato il telefono l'ultima volta e com'è andata?",
+     "c": "Sfida: apri le impostazioni del telefono e guarda quando ha cercato aggiornamenti l'ultima volta."
+    },
+    "pt": {
+     "t": "Porque são importantes as atualizações",
+     "g": "Vê como as atualizações corrigem falhas de segurança e protegem os teus dispositivos.",
+     "p": [
+      "O software tem falhas e as atualizações corrigem as que deixariam entrar programas maliciosos.",
+      "Quando uma correção é pública, adiar só dá mais tempo a quem quer aproveitar a falha.",
+      "As atualizações também trazem novidades e fazem os dispositivos funcionar melhor."
+     ],
+     "q": "Quando atualizaste o telemóvel pela última vez e como correu?",
+     "c": "Desafio: abre as definições do telemóvel e vê quando procurou atualizações pela última vez."
+    },
+    "pt_BR": {
+     "t": "Por que as atualizações importam",
+     "g": "Veja como as atualizações corrigem falhas de segurança e protegem seus dispositivos.",
+     "p": [
+      "Softwares têm falhas e as atualizações corrigem as que deixariam entrar programas maliciosos.",
+      "Quando uma correção é pública, adiar só dá mais tempo a quem quer aproveitar a falha.",
+      "As atualizações também trazem novidades e fazem os aparelhos funcionarem melhor."
+     ],
+     "q": "Quando você atualizou o celular pela última vez e como foi?",
+     "c": "Desafio: abra as configurações do celular e veja quando ele procurou atualizações pela última vez."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Turning on automatic updates",
+     "g": "Set phones, computers and apps to update themselves.",
+     "p": [
+      "Automatic updates install fixes without you having to remember them.",
+      "Look for Software Update or System in settings and switch automatic updates on.",
+      "Set updates to run overnight on Wi-Fi and while charging, so they never get in your way."
+     ],
+     "q": "Which of your devices still needs a nudge to update itself?",
+     "c": "Challenge: turn on automatic updates on one device today."
+    },
+    "de": {
+     "t": "Automatische Updates einschalten",
+     "g": "Stelle Handys, Computer und Apps so ein, dass sie sich selbst aktualisieren.",
+     "p": [
+      "Automatische Updates installieren Korrekturen, ohne dass du daran denken musst.",
+      "Suche in den Einstellungen nach Softwareupdate oder System und schalte automatische Updates ein.",
+      "Lass Updates nachts im WLAN und beim Laden laufen, damit sie dir nie im Weg sind."
+     ],
+     "q": "Welches deiner Geräte braucht noch einen Anstoß, um sich selbst zu aktualisieren?",
+     "c": "Challenge: Schalte heute bei einem Gerät automatische Updates ein."
+    },
+    "es": {
+     "t": "Activar las actualizaciones automáticas",
+     "g": "Configura móviles, ordenadores y apps para que se actualicen solos.",
+     "p": [
+      "Las actualizaciones automáticas instalan correcciones sin que tengas que acordarte.",
+      "Busca Actualización de software o Sistema en los ajustes y activa las actualizaciones automáticas.",
+      "Haz que se ejecuten de noche, con wifi y cargando, para que nunca estorben."
+     ],
+     "q": "¿Qué dispositivo tuyo necesita aún un empujón para actualizarse solo?",
+     "c": "Reto: activa hoy las actualizaciones automáticas en un dispositivo."
+    },
+    "fr": {
+     "t": "Activer les mises à jour automatiques",
+     "g": "Règle téléphones, ordinateurs et applis pour qu'ils se mettent à jour seuls.",
+     "p": [
+      "Les mises à jour automatiques installent les correctifs sans que tu aies à y penser.",
+      "Cherche Mise à jour logicielle ou Système dans les réglages et active les mises à jour automatiques.",
+      "Programme-les la nuit, en Wi-Fi et pendant la charge, pour qu'elles ne te gênent jamais."
+     ],
+     "q": "Lequel de tes appareils a encore besoin d'un coup de pouce pour se mettre à jour ?",
+     "c": "Défi : active aujourd'hui les mises à jour automatiques sur un appareil."
+    },
+    "it": {
+     "t": "Attivare gli aggiornamenti automatici",
+     "g": "Imposta telefoni, computer e app perché si aggiornino da soli.",
+     "p": [
+      "Gli aggiornamenti automatici installano le correzioni senza che tu debba ricordartene.",
+      "Cerca Aggiornamento software o Sistema nelle impostazioni e attiva gli aggiornamenti automatici.",
+      "Fai in modo che avvengano di notte, con Wi-Fi e in carica, così non ti danno mai fastidio."
+     ],
+     "q": "Quale dei tuoi dispositivi ha ancora bisogno di una spinta per aggiornarsi da solo?",
+     "c": "Sfida: attiva oggi gli aggiornamenti automatici su un dispositivo."
+    },
+    "pt": {
+     "t": "Ativar as atualizações automáticas",
+     "g": "Configura telemóveis, computadores e aplicações para se atualizarem sozinhos.",
+     "p": [
+      "As atualizações automáticas instalam correções sem teres de te lembrar.",
+      "Procura Atualização de software ou Sistema nas definições e liga as atualizações automáticas.",
+      "Deixa-as correr de noite, com Wi-Fi e a carregar, para nunca atrapalharem."
+     ],
+     "q": "Qual dos teus dispositivos ainda precisa de um empurrão para se atualizar sozinho?",
+     "c": "Desafio: liga hoje as atualizações automáticas num dispositivo."
+    },
+    "pt_BR": {
+     "t": "Ativar as atualizações automáticas",
+     "g": "Configure celulares, computadores e apps para se atualizarem sozinhos.",
+     "p": [
+      "As atualizações automáticas instalam correções sem você precisar lembrar.",
+      "Procure Atualização de software ou Sistema nas configurações e ligue as atualizações automáticas.",
+      "Deixe-as rodar de noite, no Wi-Fi e carregando, para nunca atrapalharem."
+     ],
+     "q": "Qual dos seus aparelhos ainda precisa de um empurrãozinho para se atualizar sozinho?",
+     "c": "Desafio: ligue hoje as atualizações automáticas em um aparelho."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Updating apps and browsers",
+     "g": "Keep the programs you use every day up to date.",
+     "p": [
+      "Browsers and apps are used every day, so their flaws matter a lot.",
+      "Turn on auto-update in your phone's app store, and update your browser when asked.",
+      "Restart the browser or app when it asks, because the fix only works afterwards."
+     ],
+     "q": "Which app or browser do you use most, and is it up to date right now?",
+     "c": "Challenge: check that your browser and your three most-used apps are on the latest version."
+    },
+    "de": {
+     "t": "Apps und Browser aktualisieren",
+     "g": "Halte die Programme, die du täglich nutzt, auf dem neuesten Stand.",
+     "p": [
+      "Browser und Apps nutzt du täglich, deshalb zählen ihre Fehler besonders.",
+      "Schalte im App-Store deines Handys die automatische Aktualisierung ein und aktualisiere den Browser bei Aufforderung.",
+      "Starte Browser oder App neu, wenn sie es verlangen, denn erst danach wirkt die Korrektur."
+     ],
+     "q": "Welche App oder welchen Browser nutzt du am meisten, und ist er gerade aktuell?",
+     "c": "Challenge: Prüfe, ob Browser und deine drei meistgenutzten Apps die neueste Version haben."
+    },
+    "es": {
+     "t": "Actualizar apps y navegadores",
+     "g": "Mantén al día los programas que usas a diario.",
+     "p": [
+      "Navegadores y apps se usan cada día, así que sus fallos importan mucho.",
+      "Activa la actualización automática en la tienda de apps del móvil y actualiza el navegador cuando lo pida.",
+      "Reinicia el navegador o la app cuando lo pida, porque la corrección solo actúa después."
+     ],
+     "q": "¿Qué app o navegador usas más y está actualizado ahora mismo?",
+     "c": "Reto: comprueba que tu navegador y tus tres apps más usadas tengan la última versión."
+    },
+    "fr": {
+     "t": "Mettre à jour applis et navigateurs",
+     "g": "Garde à jour les programmes que tu utilises chaque jour.",
+     "p": [
+      "Navigateurs et applis servent tous les jours : leurs failles comptent beaucoup.",
+      "Active la mise à jour automatique dans la boutique d'applis et mets à jour ton navigateur quand on te le demande.",
+      "Redémarre le navigateur ou l'appli quand c'est demandé, car le correctif n'agit qu'ensuite."
+     ],
+     "q": "Quelle appli ou quel navigateur utilises-tu le plus, et est-il à jour en ce moment ?",
+     "c": "Défi : vérifie que ton navigateur et tes trois applis les plus utilisées sont à la dernière version."
+    },
+    "it": {
+     "t": "Aggiornare app e browser",
+     "g": "Mantieni aggiornati i programmi che usi ogni giorno.",
+     "p": [
+      "Browser e app si usano ogni giorno, quindi i loro difetti contano molto.",
+      "Attiva l'aggiornamento automatico nello store del telefono e aggiorna il browser quando richiesto.",
+      "Riavvia browser o app quando lo chiedono, perché la correzione funziona solo dopo."
+     ],
+     "q": "Quale app o browser usi di più ed è aggiornato in questo momento?",
+     "c": "Sfida: controlla che browser e le tue tre app più usate siano all'ultima versione."
+    },
+    "pt": {
+     "t": "Atualizar aplicações e navegadores",
+     "g": "Mantém atualizados os programas que usas todos os dias.",
+     "p": [
+      "Navegadores e aplicações usam-se todos os dias, por isso as suas falhas importam muito.",
+      "Liga a atualização automática na loja de aplicações do telemóvel e atualiza o navegador quando pedir.",
+      "Reinicia o navegador ou a aplicação quando pedir, porque a correção só atua depois."
+     ],
+     "q": "Que aplicação ou navegador usas mais e está atualizado neste momento?",
+     "c": "Desafio: confirma que o navegador e as tuas três aplicações mais usadas têm a versão mais recente."
+    },
+    "pt_BR": {
+     "t": "Atualizar apps e navegadores",
+     "g": "Mantenha atualizados os programas que você usa todo dia.",
+     "p": [
+      "Navegadores e apps são usados todo dia, então as falhas deles importam muito.",
+      "Ligue a atualização automática na loja de apps do celular e atualize o navegador quando pedir.",
+      "Reinicie o navegador ou o app quando pedir, porque a correção só funciona depois."
+     ],
+     "q": "Qual app ou navegador você mais usa e está atualizado agora?",
+     "c": "Desafio: confirme que o navegador e seus três apps mais usados estão na versão mais recente."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Old devices and end of support",
+     "g": "Understand what it means when a device no longer receives security updates.",
+     "p": [
+      "Makers stop sending security updates for a device after some years.",
+      "An unsupported device keeps its known flaws forever, which makes it riskier to use.",
+      "Plan a replacement, and meanwhile avoid banking and sensitive logins on it."
+     ],
+     "q": "Do you have an older device at home that may no longer get updates?",
+     "c": "Challenge: find the oldest device you use and look up if its maker still supports it."
+    },
+    "de": {
+     "t": "Alte Geräte und Support-Ende",
+     "g": "Verstehe, was es bedeutet, wenn ein Gerät keine Sicherheitsupdates mehr bekommt.",
+     "p": [
+      "Hersteller stellen Sicherheitsupdates für ein Gerät nach einigen Jahren ein.",
+      "Ein nicht mehr unterstütztes Gerät behält bekannte Lücken für immer und ist riskanter.",
+      "Plane einen Ersatz und meide darauf vorerst Banking und sensible Anmeldungen."
+     ],
+     "q": "Hast du zu Hause ein älteres Gerät, das vielleicht keine Updates mehr bekommt?",
+     "c": "Challenge: Finde dein ältestes genutztes Gerät und prüfe, ob der Hersteller es noch unterstützt."
+    },
+    "es": {
+     "t": "Dispositivos antiguos y fin de soporte",
+     "g": "Entiende qué significa que un dispositivo ya no reciba actualizaciones de seguridad.",
+     "p": [
+      "Los fabricantes dejan de enviar actualizaciones de seguridad tras algunos años.",
+      "Un dispositivo sin soporte conserva sus fallos conocidos para siempre y es más arriesgado.",
+      "Planea un reemplazo y mientras evita la banca y accesos sensibles en él."
+     ],
+     "q": "¿Tienes en casa un dispositivo antiguo que quizá ya no reciba actualizaciones?",
+     "c": "Reto: busca tu dispositivo más antiguo y comprueba si su fabricante aún le da soporte."
+    },
+    "fr": {
+     "t": "Vieux appareils et fin de support",
+     "g": "Comprends ce que signifie un appareil qui ne reçoit plus de mises à jour de sécurité.",
+     "p": [
+      "Les fabricants cessent d'envoyer des mises à jour de sécurité après quelques années.",
+      "Un appareil non pris en charge garde ses failles connues pour toujours et devient plus risqué.",
+      "Prévois un remplacement et, en attendant, évite banque et connexions sensibles dessus."
+     ],
+     "q": "As-tu chez toi un vieil appareil qui ne reçoit peut-être plus de mises à jour ?",
+     "c": "Défi : repère ton plus vieil appareil et regarde si son fabricant le prend encore en charge."
+    },
+    "it": {
+     "t": "Vecchi dispositivi e fine del supporto",
+     "g": "Capisci cosa significa quando un dispositivo non riceve più aggiornamenti di sicurezza.",
+     "p": [
+      "I produttori smettono di inviare aggiornamenti di sicurezza dopo alcuni anni.",
+      "Un dispositivo senza supporto conserva per sempre le falle note ed è più rischioso.",
+      "Pianifica una sostituzione e intanto evita banca e accessi sensibili su di esso."
+     ],
+     "q": "Hai in casa un dispositivo vecchio che forse non riceve più aggiornamenti?",
+     "c": "Sfida: trova il dispositivo più vecchio che usi e verifica se il produttore lo supporta ancora."
+    },
+    "pt": {
+     "t": "Dispositivos antigos e fim de suporte",
+     "g": "Percebe o que significa um dispositivo deixar de receber atualizações de segurança.",
+     "p": [
+      "Os fabricantes deixam de enviar atualizações de segurança passados alguns anos.",
+      "Um dispositivo sem suporte mantém as falhas conhecidas para sempre e é mais arriscado.",
+      "Planeia uma substituição e entretanto evita o banco e inícios de sessão sensíveis nele."
+     ],
+     "q": "Tens em casa um dispositivo antigo que talvez já não receba atualizações?",
+     "c": "Desafio: encontra o teu dispositivo mais antigo e vê se o fabricante ainda lhe dá suporte."
+    },
+    "pt_BR": {
+     "t": "Aparelhos antigos e fim do suporte",
+     "g": "Entenda o que significa um aparelho deixar de receber atualizações de segurança.",
+     "p": [
+      "Os fabricantes deixam de enviar atualizações de segurança depois de alguns anos.",
+      "Um aparelho sem suporte mantém as falhas conhecidas para sempre e é mais arriscado.",
+      "Planeje uma substituição e, enquanto isso, evite banco e logins sensíveis nele."
+     ],
+     "q": "Você tem em casa um aparelho antigo que talvez não receba mais atualizações?",
+     "c": "Desafio: encontre o seu aparelho mais antigo e veja se o fabricante ainda dá suporte a ele."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Antivirus and built-in protection",
+     "g": "Learn about the security tools already included in modern operating systems.",
+     "p": [
+      "Modern Windows, macOS, Android and iOS include protection against harmful programs.",
+      "Keep that built-in protection switched on rather than turning it off to save time.",
+      "Extra antivirus can help, but avoid free tools from unknown sources and fake alerts."
+     ],
+     "q": "Do you know whether the built-in protection on your computer is turned on?",
+     "c": "Challenge: find the security or protection screen on your computer or phone and check it is on."
+    },
+    "de": {
+     "t": "Virenschutz und eingebaute Sicherheit",
+     "g": "Lerne die Sicherheitswerkzeuge kennen, die moderne Betriebssysteme schon mitbringen.",
+     "p": [
+      "Moderne Systeme wie Windows, macOS, Android und iOS enthalten Schutz vor Schadprogrammen.",
+      "Lass diesen eingebauten Schutz an, statt ihn zur Zeitersparnis abzuschalten.",
+      "Zusätzlicher Virenschutz kann helfen, aber meide Gratis-Tools aus unbekannten Quellen und falsche Warnungen."
+     ],
+     "q": "Weißt du, ob der eingebaute Schutz auf deinem Computer eingeschaltet ist?",
+     "c": "Challenge: Finde am Computer oder Handy die Sicherheitsseite und prüfe, ob der Schutz an ist."
+    },
+    "es": {
+     "t": "Antivirus y protección integrada",
+     "g": "Conoce las herramientas de seguridad que ya incluyen los sistemas operativos modernos.",
+     "p": [
+      "Windows, macOS, Android e iOS modernos incluyen protección contra programas dañinos.",
+      "Mantén activada esa protección integrada en vez de apagarla para ahorrar tiempo.",
+      "Un antivirus extra puede ayudar, pero evita herramientas gratis de fuentes desconocidas y falsas alertas."
+     ],
+     "q": "¿Sabes si la protección integrada de tu ordenador está activada?",
+     "c": "Reto: busca la pantalla de seguridad o protección de tu ordenador o móvil y comprueba que esté activa."
+    },
+    "fr": {
+     "t": "Antivirus et protection intégrée",
+     "g": "Découvre les outils de sécurité déjà inclus dans les systèmes modernes.",
+     "p": [
+      "Windows, macOS, Android et iOS récents incluent une protection contre les programmes nuisibles.",
+      "Garde cette protection intégrée activée plutôt que de la couper pour gagner du temps.",
+      "Un antivirus en plus peut aider, mais évite les outils gratuits de source inconnue et les fausses alertes."
+     ],
+     "q": "Sais-tu si la protection intégrée de ton ordinateur est activée ?",
+     "c": "Défi : trouve l'écran de sécurité ou de protection de ton ordinateur ou téléphone et vérifie qu'il est actif."
+    },
+    "it": {
+     "t": "Antivirus e protezione integrata",
+     "g": "Scopri gli strumenti di sicurezza già inclusi nei sistemi operativi moderni.",
+     "p": [
+      "Windows, macOS, Android e iOS moderni includono protezione contro programmi dannosi.",
+      "Tieni attiva la protezione integrata invece di spegnerla per risparmiare tempo.",
+      "Un antivirus extra può aiutare, ma evita strumenti gratuiti di fonti sconosciute e falsi avvisi."
+     ],
+     "q": "Sai se la protezione integrata del tuo computer è attiva?",
+     "c": "Sfida: trova la schermata di sicurezza o protezione del computer o telefono e controlla che sia attiva."
+    },
+    "pt": {
+     "t": "Antivírus e proteção integrada",
+     "g": "Conhece as ferramentas de segurança já incluídas nos sistemas operativos modernos.",
+     "p": [
+      "Windows, macOS, Android e iOS modernos incluem proteção contra programas maliciosos.",
+      "Mantém ligada essa proteção integrada em vez de a desligar para poupar tempo.",
+      "Um antivírus extra pode ajudar, mas evita ferramentas grátis de fontes desconhecidas e falsos alertas."
+     ],
+     "q": "Sabes se a proteção integrada do teu computador está ligada?",
+     "c": "Desafio: encontra o ecrã de segurança ou proteção do computador ou telemóvel e confirma que está ativo."
+    },
+    "pt_BR": {
+     "t": "Antivírus e proteção integrada",
+     "g": "Conheça as ferramentas de segurança já incluídas nos sistemas operacionais modernos.",
+     "p": [
+      "Windows, macOS, Android e iOS modernos incluem proteção contra programas maliciosos.",
+      "Mantenha ligada essa proteção integrada em vez de desligá-la para economizar tempo.",
+      "Um antivírus extra pode ajudar, mas evite ferramentas grátis de fontes desconhecidas e falsos alertas."
+     ],
+     "q": "Você sabe se a proteção integrada do seu computador está ligada?",
+     "c": "Desafio: encontre a tela de segurança ou proteção do computador ou celular e confirme que está ativa."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Installing apps safely",
+     "g": "Use official app stores and check reviews and permissions.",
+     "p": [
+      "Official stores check apps for known problems, which unofficial sites do not.",
+      "Read the number of downloads, recent reviews and who made the app before installing.",
+      "Be wary if a simple app asks for access to contacts, camera or messages it does not need."
+     ],
+     "q": "Do you check what an app asks for before you tap install?",
+     "c": "Challenge: review the permissions of one app you have and turn off one it does not need."
+    },
+    "de": {
+     "t": "Apps sicher installieren",
+     "g": "Nutze offizielle App-Stores und prüfe Bewertungen und Berechtigungen.",
+     "p": [
+      "Offizielle Stores prüfen Apps auf bekannte Probleme, inoffizielle Seiten nicht.",
+      "Sieh dir vor der Installation Downloads, aktuelle Bewertungen und den Hersteller an.",
+      "Sei misstrauisch, wenn eine einfache App Zugriff auf Kontakte, Kamera oder Nachrichten will, den sie nicht braucht."
+     ],
+     "q": "Prüfst du, was eine App anfordert, bevor du auf Installieren tippst?",
+     "c": "Challenge: Sieh dir die Berechtigungen einer App an und schalte eine unnötige ab."
+    },
+    "es": {
+     "t": "Instalar apps con seguridad",
+     "g": "Usa tiendas oficiales y revisa opiniones y permisos.",
+     "p": [
+      "Las tiendas oficiales revisan las apps en busca de problemas conocidos; los sitios no oficiales no.",
+      "Mira las descargas, las opiniones recientes y quién creó la app antes de instalarla.",
+      "Desconfía si una app sencilla pide acceso a contactos, cámara o mensajes que no necesita."
+     ],
+     "q": "¿Revisas lo que pide una app antes de tocar instalar?",
+     "c": "Reto: revisa los permisos de una app que tengas y desactiva uno que no necesite."
+    },
+    "fr": {
+     "t": "Installer des applis en sécurité",
+     "g": "Utilise les boutiques officielles et vérifie avis et autorisations.",
+     "p": [
+      "Les boutiques officielles contrôlent les applis pour des problèmes connus, pas les sites non officiels.",
+      "Regarde le nombre de téléchargements, les avis récents et l'éditeur avant d'installer.",
+      "Méfie-toi si une appli simple demande accès aux contacts, à la caméra ou aux messages sans en avoir besoin."
+     ],
+     "q": "Regardes-tu ce qu'une appli demande avant de toucher installer ?",
+     "c": "Défi : passe en revue les autorisations d'une appli et désactive-en une qu'elle n'a pas besoin d'avoir."
+    },
+    "it": {
+     "t": "Installare le app in sicurezza",
+     "g": "Usa gli store ufficiali e controlla recensioni e autorizzazioni.",
+     "p": [
+      "Gli store ufficiali controllano le app per problemi noti, i siti non ufficiali no.",
+      "Guarda download, recensioni recenti e chi ha creato l'app prima di installarla.",
+      "Diffida se una semplice app chiede accesso a contatti, fotocamera o messaggi che non le servono."
+     ],
+     "q": "Controlli cosa chiede un'app prima di toccare installa?",
+     "c": "Sfida: controlla le autorizzazioni di un'app che hai e disattiva una di cui non ha bisogno."
+    },
+    "pt": {
+     "t": "Instalar aplicações em segurança",
+     "g": "Usa lojas oficiais e verifica opiniões e permissões.",
+     "p": [
+      "As lojas oficiais verificam as aplicações quanto a problemas conhecidos, os sites não oficiais não.",
+      "Vê os descarregamentos, as opiniões recentes e quem criou a aplicação antes de a instalar.",
+      "Desconfia se uma aplicação simples pedir acesso a contactos, câmara ou mensagens de que não precisa."
+     ],
+     "q": "Verificas o que uma aplicação pede antes de tocar em instalar?",
+     "c": "Desafio: revê as permissões de uma aplicação que tenhas e desativa uma de que ela não precise."
+    },
+    "pt_BR": {
+     "t": "Instalar apps com segurança",
+     "g": "Use lojas oficiais e confira avaliações e permissões.",
+     "p": [
+      "As lojas oficiais verificam os apps quanto a problemas conhecidos, os sites não oficiais não.",
+      "Veja os downloads, as avaliações recentes e quem criou o app antes de instalar.",
+      "Desconfie se um app simples pedir acesso a contatos, câmera ou mensagens de que não precisa."
+     ],
+     "q": "Você confere o que um app pede antes de tocar em instalar?",
+     "c": "Desafio: revise as permissões de um app que você tem e desative uma de que ele não precise."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Downloads from the internet",
+     "g": "Avoid unknown programs, cracked software and fake download buttons.",
+     "p": [
+      "Free cracked software and unofficial downloads often come bundled with harmful extras.",
+      "Download programs only from the maker's own website or a trusted store.",
+      "Beware of big green Download buttons that are really ads; look for the genuine link."
+     ],
+     "q": "Have you ever downloaded a program from a site you did not know well?",
+     "c": "Challenge: before your next download, confirm you are on the maker's official website."
+    },
+    "de": {
+     "t": "Downloads aus dem Internet",
+     "g": "Meide unbekannte Programme, geknackte Software und gefälschte Download-Buttons.",
+     "p": [
+      "Kostenlose geknackte Software und inoffizielle Downloads enthalten oft schädliche Zugaben.",
+      "Lade Programme nur von der Webseite des Herstellers oder aus einem vertrauenswürdigen Store.",
+      "Vorsicht vor großen grünen Download-Knöpfen, die in Wahrheit Werbung sind; suche den echten Link."
+     ],
+     "q": "Hast du schon ein Programm von einer Seite geladen, die du kaum kanntest?",
+     "c": "Challenge: Prüfe vor deinem nächsten Download, ob du auf der offiziellen Herstellerseite bist."
+    },
+    "es": {
+     "t": "Descargas de internet",
+     "g": "Evita programas desconocidos, software pirata y botones de descarga falsos.",
+     "p": [
+      "El software pirata gratis y las descargas no oficiales suelen traer extras dañinos.",
+      "Descarga programas solo de la web del fabricante o de una tienda de confianza.",
+      "Cuidado con los botones verdes grandes de Descargar que son anuncios; busca el enlace genuino."
+     ],
+     "q": "¿Has descargado alguna vez un programa de un sitio que no conocías bien?",
+     "c": "Reto: antes de tu próxima descarga, confirma que estás en la web oficial del fabricante."
+    },
+    "fr": {
+     "t": "Téléchargements sur Internet",
+     "g": "Évite les programmes inconnus, les logiciels piratés et les faux boutons de téléchargement.",
+     "p": [
+      "Les logiciels piratés gratuits et les téléchargements non officiels cachent souvent des extras nuisibles.",
+      "Télécharge les programmes seulement sur le site du fabricant ou dans une boutique de confiance.",
+      "Méfie-toi des gros boutons verts Télécharger qui sont en fait des pubs ; cherche le vrai lien."
+     ],
+     "q": "As-tu déjà téléchargé un programme depuis un site que tu connaissais mal ?",
+     "c": "Défi : avant ton prochain téléchargement, vérifie que tu es sur le site officiel du fabricant."
+    },
+    "it": {
+     "t": "Download da internet",
+     "g": "Evita programmi sconosciuti, software craccato e falsi pulsanti di download.",
+     "p": [
+      "Il software craccato gratuito e i download non ufficiali spesso nascondono extra dannosi.",
+      "Scarica i programmi solo dal sito del produttore o da uno store affidabile.",
+      "Attenzione ai grandi pulsanti verdi Scarica che sono in realtà pubblicità; cerca il link vero."
+     ],
+     "q": "Hai mai scaricato un programma da un sito che conoscevi poco?",
+     "c": "Sfida: prima del prossimo download, verifica di essere sul sito ufficiale del produttore."
+    },
+    "pt": {
+     "t": "Descarregamentos da internet",
+     "g": "Evita programas desconhecidos, software pirateado e botões de descarregar falsos.",
+     "p": [
+      "O software pirateado grátis e os descarregamentos não oficiais trazem muitas vezes extras prejudiciais.",
+      "Descarrega programas só do site do fabricante ou de uma loja de confiança.",
+      "Cuidado com os grandes botões verdes Descarregar que são afinal publicidade; procura o link genuíno."
+     ],
+     "q": "Já descarregaste um programa de um site que conhecias mal?",
+     "c": "Desafio: antes do próximo descarregamento, confirma que estás no site oficial do fabricante."
+    },
+    "pt_BR": {
+     "t": "Downloads da internet",
+     "g": "Evite programas desconhecidos, software pirata e botões de download falsos.",
+     "p": [
+      "Software pirata grátis e downloads não oficiais costumam vir com extras prejudiciais.",
+      "Baixe programas só do site do fabricante ou de uma loja de confiança.",
+      "Cuidado com os grandes botões verdes Baixar que na verdade são anúncios; procure o link genuíno."
+     ],
+     "q": "Você já baixou um programa de um site que conhecia pouco?",
+     "c": "Desafio: antes do próximo download, confirme que está no site oficial do fabricante."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Restarting your devices",
+     "g": "Learn why a regular restart helps updates install and keeps things running smoothly.",
+     "p": [
+      "Many updates only finish installing after a restart.",
+      "A restart also clears small glitches and frees memory your device was holding on to.",
+      "Aim to restart your phone and computer at least once a week."
+     ],
+     "q": "When did you last switch your phone fully off and on again?",
+     "c": "Challenge: restart your phone or computer now and check whether it was waiting on an update."
+    },
+    "de": {
+     "t": "Geräte neu starten",
+     "g": "Lerne, warum ein regelmäßiger Neustart Updates abschließt und alles flüssig hält.",
+     "p": [
+      "Viele Updates werden erst nach einem Neustart fertig installiert.",
+      "Ein Neustart behebt außerdem kleine Störungen und gibt belegten Speicher frei.",
+      "Starte Handy und Computer mindestens einmal pro Woche neu."
+     ],
+     "q": "Wann hast du dein Handy zuletzt ganz aus- und wieder eingeschaltet?",
+     "c": "Challenge: Starte jetzt Handy oder Computer neu und sieh nach, ob ein Update wartete."
+    },
+    "es": {
+     "t": "Reiniciar tus dispositivos",
+     "g": "Aprende por qué reiniciar con regularidad ayuda a instalar actualizaciones y mantiene todo fluido.",
+     "p": [
+      "Muchas actualizaciones solo terminan de instalarse tras un reinicio.",
+      "Reiniciar también limpia pequeños fallos y libera memoria que el dispositivo retenía.",
+      "Intenta reiniciar el móvil y el ordenador al menos una vez por semana."
+     ],
+     "q": "¿Cuándo apagaste y encendiste del todo tu móvil por última vez?",
+     "c": "Reto: reinicia ahora tu móvil u ordenador y mira si esperaba una actualización."
+    },
+    "fr": {
+     "t": "Redémarrer tes appareils",
+     "g": "Apprends pourquoi un redémarrage régulier aide les mises à jour et garde tout fluide.",
+     "p": [
+      "Beaucoup de mises à jour ne se terminent qu'après un redémarrage.",
+      "Un redémarrage efface aussi de petits bugs et libère la mémoire que l'appareil retenait.",
+      "Vise un redémarrage du téléphone et de l'ordinateur au moins une fois par semaine."
+     ],
+     "q": "Quand as-tu éteint puis rallumé complètement ton téléphone pour la dernière fois ?",
+     "c": "Défi : redémarre maintenant ton téléphone ou ordinateur et regarde s'il attendait une mise à jour."
+    },
+    "it": {
+     "t": "Riavviare i tuoi dispositivi",
+     "g": "Scopri perché un riavvio regolare aiuta gli aggiornamenti e mantiene tutto fluido.",
+     "p": [
+      "Molti aggiornamenti finiscono di installarsi solo dopo un riavvio.",
+      "Un riavvio elimina anche piccoli intoppi e libera memoria che il dispositivo teneva occupata.",
+      "Punta a riavviare telefono e computer almeno una volta a settimana."
+     ],
+     "q": "Quando hai spento e riacceso completamente il telefono l'ultima volta?",
+     "c": "Sfida: riavvia ora telefono o computer e controlla se aspettava un aggiornamento."
+    },
+    "pt": {
+     "t": "Reiniciar os teus dispositivos",
+     "g": "Aprende porque reiniciar com regularidade ajuda as atualizações e mantém tudo fluido.",
+     "p": [
+      "Muitas atualizações só acabam de instalar depois de um reinício.",
+      "Reiniciar também limpa pequenas falhas e liberta memória que o dispositivo retinha.",
+      "Tenta reiniciar o telemóvel e o computador pelo menos uma vez por semana."
+     ],
+     "q": "Quando desligaste e voltaste a ligar totalmente o telemóvel pela última vez?",
+     "c": "Desafio: reinicia agora o telemóvel ou computador e vê se estava à espera de uma atualização."
+    },
+    "pt_BR": {
+     "t": "Reiniciar seus aparelhos",
+     "g": "Aprenda por que reiniciar com regularidade ajuda as atualizações e mantém tudo fluido.",
+     "p": [
+      "Muitas atualizações só terminam de instalar depois de uma reinicialização.",
+      "Reiniciar também limpa pequenas falhas e libera memória que o aparelho segurava.",
+      "Tente reiniciar o celular e o computador pelo menos uma vez por semana."
+     ],
+     "q": "Quando você desligou e ligou totalmente o celular pela última vez?",
+     "c": "Desafio: reinicie agora o celular ou computador e veja se ele estava esperando uma atualização."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: phishing, scams and updates",
+     "g": "Recap scam warning signs and keeping your devices up to date.",
+     "p": [
+      "Scam signs: urgency, fear, too-good offers, odd senders, gift cards and fake caller ID.",
+      "Your routine: pause, verify through a trusted channel, then act or ignore.",
+      "Update routine: automatic updates on, apps from official stores, restart each week."
+     ],
+     "q": "Which scam sign or update habit do you feel most confident about now?",
+     "c": "Challenge: explain to yourself, out loud, three scam signs and two update habits."
+    },
+    "de": {
+     "t": "Wiederholung: Phishing, Betrug und Updates",
+     "g": "Wiederhole Betrugs-Warnzeichen und das Aktuellhalten deiner Geräte.",
+     "p": [
+      "Betrugszeichen: Dringlichkeit, Angst, zu gute Angebote, seltsame Absender, Geschenkkarten, falsche Anruferkennung.",
+      "Deine Routine: innehalten, über einen vertrauenswürdigen Kanal prüfen, dann handeln oder ignorieren.",
+      "Update-Routine: automatische Updates an, Apps aus offiziellen Stores, wöchentlich neu starten."
+     ],
+     "q": "Bei welchem Betrugszeichen oder welcher Update-Gewohnheit fühlst du dich jetzt am sichersten?",
+     "c": "Challenge: Erkläre dir laut drei Betrugszeichen und zwei Update-Gewohnheiten."
+    },
+    "es": {
+     "t": "Repaso: phishing, estafas y actualizaciones",
+     "g": "Repasa las señales de estafa y cómo mantener tus dispositivos al día.",
+     "p": [
+      "Señales de estafa: urgencia, miedo, ofertas demasiado buenas, remitentes raros, tarjetas regalo, identificador falso.",
+      "Tu rutina: pausa, verifica por un canal de confianza y luego actúa o ignora.",
+      "Rutina de actualización: automáticas activadas, apps de tiendas oficiales, reinicio semanal."
+     ],
+     "q": "¿Con qué señal de estafa o hábito de actualización te sientes más seguro ahora?",
+     "c": "Reto: explícate en voz alta tres señales de estafa y dos hábitos de actualización."
+    },
+    "fr": {
+     "t": "Révision : hameçonnage, arnaques et mises à jour",
+     "g": "Révise les signaux d'arnaque et la mise à jour de tes appareils.",
+     "p": [
+      "Signaux d'arnaque : urgence, peur, offres trop belles, expéditeurs bizarres, cartes cadeaux, faux numéro.",
+      "Ta routine : pause, vérification par un canal de confiance, puis agir ou ignorer.",
+      "Routine de mise à jour : mises à jour auto activées, applis de boutiques officielles, redémarrage hebdomadaire."
+     ],
+     "q": "Avec quel signal d'arnaque ou quelle habitude de mise à jour te sens-tu le plus à l'aise ?",
+     "c": "Défi : explique-toi à voix haute trois signaux d'arnaque et deux habitudes de mise à jour."
+    },
+    "it": {
+     "t": "Ripasso: phishing, truffe e aggiornamenti",
+     "g": "Ripassa i segnali di truffa e come tenere aggiornati i dispositivi.",
+     "p": [
+      "Segnali di truffa: urgenza, paura, offerte troppo belle, mittenti strani, carte regalo, falso ID chiamante.",
+      "La tua routine: pausa, verifica tramite un canale fidato, poi agisci o ignora.",
+      "Routine di aggiornamento: automatici attivi, app da store ufficiali, riavvio settimanale."
+     ],
+     "q": "Con quale segnale di truffa o abitudine di aggiornamento ti senti più sicuro ora?",
+     "c": "Sfida: spiega a te stesso ad alta voce tre segnali di truffa e due abitudini di aggiornamento."
+    },
+    "pt": {
+     "t": "Revisão: phishing, burlas e atualizações",
+     "g": "Revê os sinais de burla e como manter os teus dispositivos atualizados.",
+     "p": [
+      "Sinais de burla: urgência, medo, ofertas boas demais, remetentes estranhos, cartões-presente, identificação falsa.",
+      "A tua rotina: pausa, verifica por um canal de confiança e depois age ou ignora.",
+      "Rotina de atualização: automáticas ligadas, aplicações de lojas oficiais, reinício semanal."
+     ],
+     "q": "Com que sinal de burla ou hábito de atualização te sentes mais seguro agora?",
+     "c": "Desafio: explica-te em voz alta três sinais de burla e dois hábitos de atualização."
+    },
+    "pt_BR": {
+     "t": "Revisão: phishing, golpes e atualizações",
+     "g": "Revise os sinais de golpe e como manter seus aparelhos atualizados.",
+     "p": [
+      "Sinais de golpe: urgência, medo, ofertas boas demais, remetentes estranhos, cartões-presente, identificador falso.",
+      "Sua rotina: pausa, verifique por um canal de confiança e depois aja ou ignore.",
+      "Rotina de atualização: automáticas ligadas, apps de lojas oficiais, reinício semanal."
+     ],
+     "q": "Com qual sinal de golpe ou hábito de atualização você se sente mais seguro agora?",
+     "c": "Desafio: explique para si mesmo em voz alta três sinais de golpe e dois hábitos de atualização."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Update check challenge",
+     "g": "Check every device you own for pending updates and install them.",
+     "p": [
+      "List each device: phone, tablet, computer, TV, router and any smart gadgets.",
+      "Check each for waiting updates and install them, one device at a time.",
+      "Note the date you did it, and repeat this check about once a month."
+     ],
+     "q": "How many devices did you find that were waiting on an update?",
+     "c": "Challenge: update every device you can reach today, and note the date in your calendar."
+    },
+    "de": {
+     "t": "Update-Check-Challenge",
+     "g": "Prüfe alle deine Geräte auf ausstehende Updates und installiere sie.",
+     "p": [
+      "Liste jedes Gerät auf: Handy, Tablet, Computer, Fernseher, Router und Smart-Geräte.",
+      "Prüfe jedes auf wartende Updates und installiere sie, ein Gerät nach dem anderen.",
+      "Notiere das Datum und wiederhole den Check etwa einmal im Monat."
+     ],
+     "q": "Wie viele Geräte hast du gefunden, die auf ein Update warteten?",
+     "c": "Challenge: Aktualisiere heute jedes erreichbare Gerät und notiere das Datum im Kalender."
+    },
+    "es": {
+     "t": "Reto de revisión de actualizaciones",
+     "g": "Revisa todos tus dispositivos en busca de actualizaciones pendientes e instálalas.",
+     "p": [
+      "Haz una lista de cada dispositivo: móvil, tableta, ordenador, tele, router y aparatos inteligentes.",
+      "Revisa en cada uno si hay actualizaciones y instálalas, un dispositivo cada vez.",
+      "Anota la fecha y repite esta revisión más o menos una vez al mes."
+     ],
+     "q": "¿Cuántos dispositivos encontraste esperando una actualización?",
+     "c": "Reto: actualiza hoy todos los dispositivos a tu alcance y anota la fecha en tu calendario."
+    },
+    "fr": {
+     "t": "Défi de vérification des mises à jour",
+     "g": "Vérifie tous tes appareils pour des mises à jour en attente et installe-les.",
+     "p": [
+      "Liste chaque appareil : téléphone, tablette, ordinateur, télé, box et objets connectés.",
+      "Vérifie chacun pour des mises à jour en attente et installe-les, un appareil à la fois.",
+      "Note la date et refais ce contrôle environ une fois par mois."
+     ],
+     "q": "Combien d'appareils as-tu trouvés qui attendaient une mise à jour ?",
+     "c": "Défi : mets à jour aujourd'hui tous les appareils à ta portée et note la date dans ton agenda."
+    },
+    "it": {
+     "t": "Sfida di controllo aggiornamenti",
+     "g": "Controlla tutti i tuoi dispositivi per aggiornamenti in sospeso e installali.",
+     "p": [
+      "Elenca ogni dispositivo: telefono, tablet, computer, TV, router e gadget smart.",
+      "Controlla ciascuno per aggiornamenti in attesa e installali, un dispositivo alla volta.",
+      "Annota la data e ripeti il controllo circa una volta al mese."
+     ],
+     "q": "Quanti dispositivi hai trovato in attesa di un aggiornamento?",
+     "c": "Sfida: aggiorna oggi ogni dispositivo a portata di mano e annota la data nel calendario."
+    },
+    "pt": {
+     "t": "Desafio de verificação de atualizações",
+     "g": "Verifica todos os teus dispositivos à procura de atualizações pendentes e instala-as.",
+     "p": [
+      "Lista cada dispositivo: telemóvel, tablet, computador, televisor, router e aparelhos inteligentes.",
+      "Verifica em cada um se há atualizações à espera e instala-as, um dispositivo de cada vez.",
+      "Anota a data e repete esta verificação cerca de uma vez por mês."
+     ],
+     "q": "Quantos dispositivos encontraste à espera de uma atualização?",
+     "c": "Desafio: atualiza hoje todos os dispositivos ao teu alcance e anota a data no calendário."
+    },
+    "pt_BR": {
+     "t": "Desafio de verificação de atualizações",
+     "g": "Verifique todos os seus aparelhos em busca de atualizações pendentes e instale-as.",
+     "p": [
+      "Liste cada aparelho: celular, tablet, computador, TV, roteador e dispositivos inteligentes.",
+      "Verifique em cada um se há atualizações esperando e instale, um aparelho de cada vez.",
+      "Anote a data e repita essa verificação cerca de uma vez por mês."
+     ],
+     "q": "Quantos aparelhos você encontrou esperando uma atualização?",
+     "c": "Desafio: atualize hoje todos os aparelhos ao seu alcance e anote a data na agenda."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "geography",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tropical rainforests",
+     "g": "Visit hot, wet forests full of life, from the Amazon to the Congo Basin.",
+     "p": [
+      "Rainforests grow near the equator, where it is warm and rainy all year.",
+      "They have layers: tall emergent trees, a thick canopy and a shady forest floor.",
+      "They hold a huge share of the world's plant and animal species."
+     ],
+     "q": "Which rainforest animal or plant fascinates you most?",
+     "c": "Find the Amazon, the Congo Basin and Southeast Asia's rainforests on a map."
+    },
+    "de": {
+     "t": "Tropische Regenwälder",
+     "g": "Besuche heiße, feuchte Wälder voller Leben, vom Amazonas bis zum Kongobecken.",
+     "p": [
+      "Regenwälder wachsen nahe dem Äquator, wo es ganzjährig warm und nass ist.",
+      "Sie haben Stockwerke: hohe Überragerbäume, dichtes Kronendach und schattigen Boden.",
+      "Sie beherbergen einen riesigen Anteil der Pflanzen- und Tierarten der Welt."
+     ],
+     "q": "Welches Tier oder welche Pflanze des Regenwalds fasziniert dich am meisten?",
+     "c": "Finde Amazonas, Kongobecken und Südostasiens Regenwälder auf einer Karte."
+    },
+    "es": {
+     "t": "Selvas tropicales",
+     "g": "Visita bosques cálidos y húmedos llenos de vida, del Amazonas a la cuenca del Congo.",
+     "p": [
+      "Las selvas crecen cerca del ecuador, donde hace calor y llueve todo el año.",
+      "Tienen capas: árboles altos emergentes, un dosel denso y un suelo sombreado.",
+      "Albergan una gran parte de las especies de plantas y animales del mundo."
+     ],
+     "q": "¿Qué animal o planta de la selva te fascina más?",
+     "c": "Encuentra el Amazonas, la cuenca del Congo y las selvas del sudeste asiático en un mapa."
+    },
+    "fr": {
+     "t": "Les forêts tropicales humides",
+     "g": "Visite des forêts chaudes et humides pleines de vie, de l'Amazonie au bassin du Congo.",
+     "p": [
+      "Les forêts tropicales poussent près de l'équateur, où il fait chaud et pleut toute l'année.",
+      "Elles ont des étages : grands arbres émergents, canopée dense et sous-bois ombragé.",
+      "Elles abritent une grande part des espèces de plantes et d'animaux du monde."
+     ],
+     "q": "Quel animal ou quelle plante de la forêt tropicale te fascine le plus ?",
+     "c": "Trouve l'Amazonie, le bassin du Congo et les forêts d'Asie du Sud-Est sur une carte."
+    },
+    "it": {
+     "t": "Le foreste pluviali tropicali",
+     "g": "Visita foreste calde e umide piene di vita, dall'Amazzonia al bacino del Congo.",
+     "p": [
+      "Le foreste pluviali crescono vicino all'equatore, dove fa caldo e piove tutto l'anno.",
+      "Hanno livelli: alberi alti emergenti, una chioma fitta e un sottobosco ombroso.",
+      "Ospitano una gran parte delle specie di piante e animali del mondo."
+     ],
+     "q": "Quale animale o pianta della foresta pluviale ti affascina di più?",
+     "c": "Trova l'Amazzonia, il bacino del Congo e le foreste del Sud-est asiatico su una mappa."
+    },
+    "pt": {
+     "t": "As florestas tropicais",
+     "g": "Visita florestas quentes e húmidas cheias de vida, da Amazónia à bacia do Congo.",
+     "p": [
+      "As florestas tropicais crescem perto do equador, onde faz calor e chove o ano todo.",
+      "Têm camadas: árvores altas emergentes, um dossel denso e um solo sombreado.",
+      "Abrigam uma grande parte das espécies de plantas e animais do mundo."
+     ],
+     "q": "Que animal ou planta da floresta tropical te fascina mais?",
+     "c": "Encontra a Amazónia, a bacia do Congo e as florestas do Sudeste Asiático num mapa."
+    },
+    "pt_BR": {
+     "t": "As florestas tropicais",
+     "g": "Visite florestas quentes e úmidas cheias de vida, da Amazônia à bacia do Congo.",
+     "p": [
+      "As florestas tropicais crescem perto do equador, onde faz calor e chove o ano todo.",
+      "Têm camadas: árvores altas emergentes, um dossel denso e um solo sombreado.",
+      "Abrigam uma grande parte das espécies de plantas e animais do mundo."
+     ],
+     "q": "Que animal ou planta da floresta tropical fascina você mais?",
+     "c": "Ache a Amazônia, a bacia do Congo e as florestas do Sudeste Asiático num mapa."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Savannas",
+     "g": "Walk through grasslands with scattered trees, famous for great herds of animals.",
+     "p": [
+      "Savannas are warm grasslands with scattered trees and a wet and a dry season.",
+      "They cover large parts of Africa, and similar lands exist in South America and Australia.",
+      "Herds of zebras, wildebeest and elephants follow the rains across the plains."
+     ],
+     "q": "Would you enjoy a safari to see savanna wildlife?",
+     "c": "Find the Serengeti and the Brazilian Cerrado on a map and compare them."
+    },
+    "de": {
+     "t": "Savannen",
+     "g": "Streife durch Grasland mit verstreuten Bäumen, berühmt für riesige Tierherden.",
+     "p": [
+      "Savannen sind warme Graslandschaften mit verstreuten Bäumen und Regen- und Trockenzeit.",
+      "Sie bedecken große Teile Afrikas, ähnliche Gebiete gibt es in Südamerika und Australien.",
+      "Herden von Zebras, Gnus und Elefanten folgen den Regenfällen durch die Ebenen."
+     ],
+     "q": "Würde dir eine Safari zu den Tieren der Savanne gefallen?",
+     "c": "Finde die Serengeti und den brasilianischen Cerrado auf einer Karte und vergleiche sie."
+    },
+    "es": {
+     "t": "Sabanas",
+     "g": "Recorre praderas con árboles dispersos, famosas por sus grandes manadas de animales.",
+     "p": [
+      "Las sabanas son praderas cálidas con árboles dispersos y estación húmeda y seca.",
+      "Cubren gran parte de África y hay tierras parecidas en Sudamérica y Australia.",
+      "Manadas de cebras, ñus y elefantes siguen las lluvias por las llanuras."
+     ],
+     "q": "¿Te gustaría un safari para ver la fauna de la sabana?",
+     "c": "Encuentra el Serengeti y el Cerrado brasileño en un mapa y compáralos."
+    },
+    "fr": {
+     "t": "Les savanes",
+     "g": "Parcours des prairies aux arbres dispersés, célèbres pour leurs grands troupeaux.",
+     "p": [
+      "Les savanes sont des prairies chaudes aux arbres épars, avec une saison humide et une sèche.",
+      "Elles couvrent de grandes parties de l'Afrique, et des terres semblables existent en Amérique du Sud et en Australie.",
+      "Des troupeaux de zèbres, de gnous et d'éléphants suivent les pluies à travers les plaines."
+     ],
+     "q": "Aimerais-tu un safari pour voir la faune de la savane ?",
+     "c": "Trouve le Serengeti et le Cerrado brésilien sur une carte et compare-les."
+    },
+    "it": {
+     "t": "Le savane",
+     "g": "Cammina tra praterie con alberi sparsi, famose per le grandi mandrie di animali.",
+     "p": [
+      "Le savane sono praterie calde con alberi sparsi e una stagione umida e una secca.",
+      "Coprono gran parte dell'Africa, e terre simili esistono in Sud America e Australia.",
+      "Mandrie di zebre, gnu ed elefanti seguono le piogge attraverso le pianure."
+     ],
+     "q": "Ti piacerebbe un safari per vedere la fauna della savana?",
+     "c": "Trova il Serengeti e il Cerrado brasiliano su una mappa e confrontali."
+    },
+    "pt": {
+     "t": "As savanas",
+     "g": "Percorre pradarias com árvores dispersas, famosas pelas grandes manadas de animais.",
+     "p": [
+      "As savanas são pradarias quentes com árvores dispersas e uma estação húmida e uma seca.",
+      "Cobrem grande parte de África, e há terras parecidas na América do Sul e na Austrália.",
+      "Manadas de zebras, gnus e elefantes seguem as chuvas pelas planícies."
+     ],
+     "q": "Gostarias de um safari para ver a fauna da savana?",
+     "c": "Encontra o Serengeti e o Cerrado brasileiro num mapa e compara-os."
+    },
+    "pt_BR": {
+     "t": "As savanas",
+     "g": "Percorra pradarias com árvores dispersas, famosas pelas grandes manadas de animais.",
+     "p": [
+      "As savanas são pradarias quentes com árvores dispersas e uma estação úmida e uma seca.",
+      "Cobrem grande parte da África, e há terras parecidas na América do Sul e na Austrália.",
+      "Manadas de zebras, gnus e elefantes seguem as chuvas pelas planícies."
+     ],
+     "q": "Você gostaria de um safári para ver a fauna da savana?",
+     "c": "Ache o Serengeti e o Cerrado brasileiro num mapa e compare os dois."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Temperate forests",
+     "g": "Wander through forests with four seasons and trees that change color in autumn.",
+     "p": [
+      "Temperate forests grow where summers are mild, winters are cool and rain is steady.",
+      "Deciduous trees like oak and maple drop their leaves in autumn.",
+      "Forests in Europe, eastern North America and East Asia glow red and gold in fall."
+     ],
+     "q": "What is your favorite season in a forest?",
+     "c": "Collect or photograph three different leaves and guess their trees."
+    },
+    "de": {
+     "t": "Wälder der gemäßigten Zone",
+     "g": "Wandere durch Wälder mit vier Jahreszeiten und Bäumen, die sich im Herbst färben.",
+     "p": [
+      "Gemäßigte Wälder wachsen, wo Sommer mild, Winter kühl und Regen beständig sind.",
+      "Laubbäume wie Eiche und Ahorn werfen im Herbst ihre Blätter ab.",
+      "Wälder in Europa, Ostnordamerika und Ostasien leuchten im Herbst rot und golden."
+     ],
+     "q": "Welche Jahreszeit magst du im Wald am liebsten?",
+     "c": "Sammle oder fotografiere drei verschiedene Blätter und rate die Bäume."
+    },
+    "es": {
+     "t": "Bosques templados",
+     "g": "Pasea por bosques con cuatro estaciones y árboles que cambian de color en otoño.",
+     "p": [
+      "Los bosques templados crecen donde los veranos son suaves, los inviernos frescos y la lluvia constante.",
+      "Árboles caducifolios como el roble y el arce pierden sus hojas en otoño.",
+      "Los bosques de Europa, el este de Norteamérica y Asia oriental brillan en rojo y oro."
+     ],
+     "q": "¿Cuál es tu estación favorita en un bosque?",
+     "c": "Recoge o fotografía tres hojas distintas y adivina de qué árboles son."
+    },
+    "fr": {
+     "t": "Les forêts tempérées",
+     "g": "Promène-toi dans des forêts à quatre saisons aux arbres qui changent de couleur en automne.",
+     "p": [
+      "Les forêts tempérées poussent là où les étés sont doux, les hivers frais et la pluie régulière.",
+      "Les arbres caducs comme le chêne et l'érable perdent leurs feuilles en automne.",
+      "Les forêts d'Europe, de l'est de l'Amérique du Nord et d'Asie de l'Est s'embrasent de rouge et d'or."
+     ],
+     "q": "Quelle est ta saison préférée en forêt ?",
+     "c": "Ramasse ou photographie trois feuilles différentes et devine leurs arbres."
+    },
+    "it": {
+     "t": "Le foreste temperate",
+     "g": "Passeggia in foreste con quattro stagioni e alberi che cambiano colore in autunno.",
+     "p": [
+      "Le foreste temperate crescono dove le estati sono miti, gli inverni freschi e la pioggia regolare.",
+      "Gli alberi decidui come quercia e acero perdono le foglie in autunno.",
+      "Le foreste di Europa, Nord America orientale e Asia orientale si tingono di rosso e oro."
+     ],
+     "q": "Qual è la tua stagione preferita in un bosco?",
+     "c": "Raccogli o fotografa tre foglie diverse e indovina da quali alberi vengono."
+    },
+    "pt": {
+     "t": "As florestas temperadas",
+     "g": "Passeia por florestas com quatro estações e árvores que mudam de cor no outono.",
+     "p": [
+      "As florestas temperadas crescem onde os verões são amenos, os invernos frescos e a chuva regular.",
+      "As árvores caducifólias, como o carvalho e o bordo, perdem as folhas no outono.",
+      "As florestas da Europa, do leste da América do Norte e da Ásia Oriental ficam vermelhas e douradas."
+     ],
+     "q": "Qual é a tua estação preferida numa floresta?",
+     "c": "Apanha ou fotografa três folhas diferentes e adivinha de que árvores são."
+    },
+    "pt_BR": {
+     "t": "As florestas temperadas",
+     "g": "Passeie por florestas com quatro estações e árvores que mudam de cor no outono.",
+     "p": [
+      "As florestas temperadas crescem onde os verões são amenos, os invernos frescos e a chuva regular.",
+      "As árvores caducifólias, como o carvalho e o bordo, perdem as folhas no outono.",
+      "As florestas da Europa, do leste da América do Norte e da Ásia Oriental ficam vermelhas e douradas."
+     ],
+     "q": "Qual é a sua estação preferida numa floresta?",
+     "c": "Colete ou fotografe três folhas diferentes e adivinhe de que árvores são."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grasslands and steppes",
+     "g": "Roam prairies, pampas and steppes, vast open lands of grass.",
+     "p": [
+      "Temperate grasslands have too little rain for forests but enough for grass.",
+      "They have local names: prairies in North America, pampas in South America, steppes in Eurasia.",
+      "Their deep, rich soils make many of them some of the world's best farmland."
+     ],
+     "q": "Do you like wide open landscapes or more enclosed places?",
+     "c": "Find the Great Plains, the Pampas and the Eurasian Steppe on a map."
+    },
+    "de": {
+     "t": "Grasländer und Steppen",
+     "g": "Durchstreife Prärien, Pampas und Steppen, weite offene Graslandschaften.",
+     "p": [
+      "Gemäßigtes Grasland hat zu wenig Regen für Wald, aber genug für Gras.",
+      "Es hat örtliche Namen: Prärie in Nordamerika, Pampa in Südamerika, Steppe in Eurasien.",
+      "Ihre tiefen, reichen Böden machen viele zu den besten Ackerböden der Welt."
+     ],
+     "q": "Magst du weite offene Landschaften oder eher geschlossene Orte?",
+     "c": "Finde die Great Plains, die Pampa und die Eurasische Steppe auf einer Karte."
+    },
+    "es": {
+     "t": "Praderas y estepas",
+     "g": "Recorre praderas, pampas y estepas, vastas tierras abiertas de hierba.",
+     "p": [
+      "Las praderas templadas tienen poca lluvia para bosques pero suficiente para hierba.",
+      "Tienen nombres locales: praderas en Norteamérica, pampas en Sudamérica, estepas en Eurasia.",
+      "Sus suelos profundos y ricos las hacen de las mejores tierras agrícolas del mundo."
+     ],
+     "q": "¿Te gustan los paisajes amplios y abiertos o los lugares más cerrados?",
+     "c": "Encuentra las Grandes Llanuras, la Pampa y la estepa euroasiática en un mapa."
+    },
+    "fr": {
+     "t": "Prairies et steppes",
+     "g": "Parcours prairies, pampas et steppes, vastes étendues ouvertes d'herbe.",
+     "p": [
+      "Les prairies tempérées reçoivent trop peu de pluie pour des forêts mais assez pour l'herbe.",
+      "Elles ont des noms locaux : prairies en Amérique du Nord, pampas en Amérique du Sud, steppes en Eurasie.",
+      "Leurs sols profonds et riches en font parmi les meilleures terres agricoles du monde."
+     ],
+     "q": "Préfères-tu les grands paysages ouverts ou les lieux plus fermés ?",
+     "c": "Trouve les Grandes Plaines, la Pampa et la steppe eurasienne sur une carte."
+    },
+    "it": {
+     "t": "Praterie e steppe",
+     "g": "Percorri prerie, pampas e steppe, vaste terre aperte coperte d'erba.",
+     "p": [
+      "Le praterie temperate hanno poca pioggia per le foreste ma abbastanza per l'erba.",
+      "Hanno nomi locali: prateria in Nord America, pampa in Sud America, steppa in Eurasia.",
+      "I loro suoli profondi e ricchi ne fanno alcune delle migliori terre agricole del mondo."
+     ],
+     "q": "Ti piacciono i paesaggi ampi e aperti o i luoghi più chiusi?",
+     "c": "Trova le Grandi Pianure, la Pampa e la steppa eurasiatica su una mappa."
+    },
+    "pt": {
+     "t": "Pradarias e estepes",
+     "g": "Percorre pradarias, pampas e estepes, vastas terras abertas de erva.",
+     "p": [
+      "As pradarias temperadas têm pouca chuva para florestas mas bastante para erva.",
+      "Têm nomes locais: pradaria na América do Norte, pampa na América do Sul, estepe na Eurásia.",
+      "Os seus solos profundos e ricos fazem delas algumas das melhores terras agrícolas do mundo."
+     ],
+     "q": "Gostas de paisagens amplas e abertas ou de lugares mais fechados?",
+     "c": "Encontra as Grandes Planícies, o Pampa e a estepe euro-asiática num mapa."
+    },
+    "pt_BR": {
+     "t": "Pradarias e estepes",
+     "g": "Percorra pradarias, pampas e estepes, vastas terras abertas de capim.",
+     "p": [
+      "As pradarias temperadas têm pouca chuva para florestas mas bastante para capim.",
+      "Têm nomes locais: pradaria na América do Norte, pampa na América do Sul, estepe na Eurásia.",
+      "Seus solos profundos e ricos fazem delas algumas das melhores terras agrícolas do mundo."
+     ],
+     "q": "Você gosta de paisagens amplas e abertas ou de lugares mais fechados?",
+     "c": "Ache as Grandes Planícies, o Pampa e a estepe eurasiana num mapa."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Taiga",
+     "g": "Cross the northern forests of conifers stretching across Russia, Scandinavia and Canada.",
+     "p": [
+      "The taiga, or boreal forest, is the largest land biome, circling the far north.",
+      "Its trees are mostly conifers like spruce, pine and fir, with needles that shed snow.",
+      "Winters are long and cold, summers short, and wolves, moose and bears roam there."
+     ],
+     "q": "Would you enjoy a winter cabin in a snowy forest?",
+     "c": "Find the taiga belt across Canada, Scandinavia and Siberia on a map."
+    },
+    "de": {
+     "t": "Taiga",
+     "g": "Durchquere die nördlichen Nadelwälder in Russland, Skandinavien und Kanada.",
+     "p": [
+      "Die Taiga, der boreale Wald, ist das größte Landbiom und umgibt den hohen Norden.",
+      "Ihre Bäume sind meist Nadelbäume wie Fichte, Kiefer und Tanne, deren Nadeln Schnee abwerfen.",
+      "Winter sind lang und kalt, Sommer kurz, und Wölfe, Elche und Bären streifen umher."
+     ],
+     "q": "Würdest du gern eine Winterhütte in einem verschneiten Wald genießen?",
+     "c": "Finde den Taiga-Gürtel durch Kanada, Skandinavien und Sibirien auf einer Karte."
+    },
+    "es": {
+     "t": "Taiga",
+     "g": "Cruza los bosques de coníferas del norte que se extienden por Rusia, Escandinavia y Canadá.",
+     "p": [
+      "La taiga, o bosque boreal, es el mayor bioma terrestre y rodea el extremo norte.",
+      "Sus árboles son sobre todo coníferas, como abeto, pino y pinabete, con agujas que sueltan la nieve.",
+      "Los inviernos son largos y fríos, los veranos cortos, y allí viven lobos, alces y osos."
+     ],
+     "q": "¿Te gustaría pasar un invierno en una cabaña de un bosque nevado?",
+     "c": "Encuentra la franja de taiga por Canadá, Escandinavia y Siberia en un mapa."
+    },
+    "fr": {
+     "t": "La taïga",
+     "g": "Traverse les forêts de conifères du Nord qui s'étendent sur la Russie, la Scandinavie et le Canada.",
+     "p": [
+      "La taïga, ou forêt boréale, est le plus grand biome terrestre, autour du Grand Nord.",
+      "Ses arbres sont surtout des conifères, comme l'épicéa, le pin et le sapin, dont les aiguilles laissent glisser la neige.",
+      "Les hivers sont longs et froids, les étés courts, et loups, élans et ours y vivent."
+     ],
+     "q": "Aimerais-tu passer l'hiver dans un chalet au milieu d'une forêt enneigée ?",
+     "c": "Trouve la ceinture de taïga au Canada, en Scandinavie et en Sibérie sur une carte."
+    },
+    "it": {
+     "t": "La taiga",
+     "g": "Attraversa le foreste di conifere del nord che si estendono tra Russia, Scandinavia e Canada.",
+     "p": [
+      "La taiga, o foresta boreale, è il più grande bioma terrestre e circonda l'estremo nord.",
+      "I suoi alberi sono soprattutto conifere come abete rosso, pino e abete, con aghi che scaricano la neve.",
+      "Gli inverni sono lunghi e freddi, le estati brevi, e vi vivono lupi, alci e orsi."
+     ],
+     "q": "Ti piacerebbe una baita invernale in una foresta innevata?",
+     "c": "Trova la fascia di taiga tra Canada, Scandinavia e Siberia su una mappa."
+    },
+    "pt": {
+     "t": "A taiga",
+     "g": "Atravessa as florestas de coníferas do norte que se estendem pela Rússia, Escandinávia e Canadá.",
+     "p": [
+      "A taiga, ou floresta boreal, é o maior bioma terrestre e rodeia o extremo norte.",
+      "As suas árvores são sobretudo coníferas, como o abeto, o pinheiro e o pinheiro-abeto, com agulhas que largam a neve.",
+      "Os invernos são longos e frios, os verões curtos, e por lá vivem lobos, alces e ursos."
+     ],
+     "q": "Gostarias de passar um inverno numa cabana de uma floresta com neve?",
+     "c": "Encontra a faixa de taiga pelo Canadá, Escandinávia e Sibéria num mapa."
+    },
+    "pt_BR": {
+     "t": "A taiga",
+     "g": "Atravesse as florestas de coníferas do norte que se estendem pela Rússia, Escandinávia e Canadá.",
+     "p": [
+      "A taiga, ou floresta boreal, é o maior bioma terrestre e cerca o extremo norte.",
+      "Suas árvores são principalmente coníferas, como o abeto, o pinheiro e o pinheiro-abeto, com agulhas que soltam a neve.",
+      "Os invernos são longos e frios, os verões curtos, e por lá vivem lobos, alces e ursos."
+     ],
+     "q": "Você gostaria de passar um inverno numa cabana de uma floresta com neve?",
+     "c": "Ache a faixa de taiga pelo Canadá, Escandinávia e Sibéria num mapa."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tundra",
+     "g": "Explore cold treeless lands with frozen ground and short colorful summers.",
+     "p": [
+      "Tundra lies near the poles and on high mountains, too cold for trees.",
+      "Beneath the surface the ground can stay frozen all year, called permafrost.",
+      "In the short summer, mosses, lichens and tiny flowers bloom in bright colors."
+     ],
+     "q": "Would you visit a place where trees cannot grow?",
+     "c": "Find the Arctic tundra of northern Canada and Siberia on a map."
+    },
+    "de": {
+     "t": "Tundra",
+     "g": "Entdecke kalte baumlose Länder mit gefrorenem Boden und kurzen bunten Sommern.",
+     "p": [
+      "Tundra liegt nahe den Polen und auf hohen Bergen, zu kalt für Bäume.",
+      "Unter der Oberfläche kann der Boden das ganze Jahr gefroren bleiben, genannt Permafrost.",
+      "Im kurzen Sommer blühen Moose, Flechten und winzige Blumen in leuchtenden Farben."
+     ],
+     "q": "Würdest du einen Ort besuchen, an dem keine Bäume wachsen?",
+     "c": "Finde die arktische Tundra im Norden Kanadas und Sibiriens auf einer Karte."
+    },
+    "es": {
+     "t": "Tundra",
+     "g": "Explora tierras frías sin árboles, de suelo helado y veranos cortos y coloridos.",
+     "p": [
+      "La tundra está cerca de los polos y en montañas altas, demasiado frías para los árboles.",
+      "Bajo la superficie el suelo puede estar helado todo el año: es el permafrost.",
+      "En el breve verano florecen musgos, líquenes y flores diminutas de colores vivos."
+     ],
+     "q": "¿Visitarías un lugar donde los árboles no pueden crecer?",
+     "c": "Encuentra la tundra ártica del norte de Canadá y de Siberia en un mapa."
+    },
+    "fr": {
+     "t": "La toundra",
+     "g": "Explore des terres froides sans arbres, au sol gelé et aux étés courts et colorés.",
+     "p": [
+      "La toundra se trouve près des pôles et sur les hautes montagnes, trop froides pour les arbres.",
+      "Sous la surface, le sol peut rester gelé toute l'année : c'est le pergélisol.",
+      "Pendant le court été, mousses, lichens et minuscules fleurs éclatent de couleurs vives."
+     ],
+     "q": "Visiterais-tu un lieu où les arbres ne peuvent pas pousser ?",
+     "c": "Trouve la toundra arctique du nord du Canada et de la Sibérie sur une carte."
+    },
+    "it": {
+     "t": "La tundra",
+     "g": "Esplora terre fredde senza alberi, dal suolo ghiacciato e dalle estati brevi e colorate.",
+     "p": [
+      "La tundra si trova vicino ai poli e sulle alte montagne, troppo fredde per gli alberi.",
+      "Sotto la superficie il suolo può restare ghiacciato tutto l'anno: è il permafrost.",
+      "Nella breve estate fioriscono muschi, licheni e minuscoli fiori dai colori vivaci."
+     ],
+     "q": "Visiteresti un posto dove gli alberi non possono crescere?",
+     "c": "Trova la tundra artica del nord del Canada e della Siberia su una mappa."
+    },
+    "pt": {
+     "t": "A tundra",
+     "g": "Explora terras frias sem árvores, de solo gelado e verões curtos e coloridos.",
+     "p": [
+      "A tundra fica perto dos polos e em montanhas altas, demasiado frias para árvores.",
+      "Sob a superfície o solo pode ficar gelado o ano todo: é o permafrost.",
+      "No curto verão florescem musgos, líquenes e minúsculas flores de cores vivas."
+     ],
+     "q": "Visitarias um lugar onde as árvores não conseguem crescer?",
+     "c": "Encontra a tundra ártica do norte do Canadá e da Sibéria num mapa."
+    },
+    "pt_BR": {
+     "t": "A tundra",
+     "g": "Explore terras frias sem árvores, de solo congelado e verões curtos e coloridos.",
+     "p": [
+      "A tundra fica perto dos polos e em montanhas altas, frias demais para árvores.",
+      "Sob a superfície o solo pode ficar congelado o ano todo: é o permafrost.",
+      "No curto verão florescem musgos, liquens e minúsculas flores de cores vivas."
+     ],
+     "q": "Você visitaria um lugar onde árvores não conseguem crescer?",
+     "c": "Ache a tundra ártica do norte do Canadá e da Sibéria num mapa."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mediterranean landscapes",
+     "g": "Enjoy hot dry summers, mild wet winters, olives and vineyards.",
+     "p": [
+      "Mediterranean climates have hot dry summers and mild rainy winters.",
+      "They are found around the Mediterranean Sea, and also in California, Chile, South Africa and southwest Australia.",
+      "Olives, grapes, citrus fruits and fragrant herbs thrive in these lands."
+     ],
+     "q": "Which Mediterranean food or place is your favorite?",
+     "c": "Find the five regions of Mediterranean climate on a world map."
+    },
+    "de": {
+     "t": "Mittelmeerlandschaften",
+     "g": "Genieße heiße trockene Sommer, milde nasse Winter, Oliven und Weinberge.",
+     "p": [
+      "Mittelmeerklima hat heiße trockene Sommer und milde regnerische Winter.",
+      "Es kommt rund ums Mittelmeer vor, auch in Kalifornien, Chile, Südafrika und Südwestaustralien.",
+      "Oliven, Trauben, Zitrusfrüchte und duftende Kräuter gedeihen in diesen Ländern."
+     ],
+     "q": "Welches mediterrane Essen oder welcher Ort ist dein Favorit?",
+     "c": "Finde die fünf Regionen mit Mittelmeerklima auf einer Weltkarte."
+    },
+    "es": {
+     "t": "Paisajes mediterráneos",
+     "g": "Disfruta de veranos cálidos y secos, inviernos suaves y húmedos, olivos y viñedos.",
+     "p": [
+      "Los climas mediterráneos tienen veranos cálidos y secos e inviernos suaves y lluviosos.",
+      "Se dan alrededor del Mediterráneo y también en California, Chile, Sudáfrica y el suroeste de Australia.",
+      "Olivos, uvas, cítricos y hierbas aromáticas prosperan en estas tierras."
+     ],
+     "q": "¿Qué comida o lugar mediterráneo es tu favorito?",
+     "c": "Encuentra las cinco regiones de clima mediterráneo en un mapamundi."
+    },
+    "fr": {
+     "t": "Paysages méditerranéens",
+     "g": "Savoure des étés chauds et secs, des hivers doux et humides, des oliviers et des vignes.",
+     "p": [
+      "Les climats méditerranéens ont des étés chauds et secs et des hivers doux et pluvieux.",
+      "On les trouve autour de la Méditerranée, mais aussi en Californie, au Chili, en Afrique du Sud et dans le sud-ouest de l'Australie.",
+      "Oliviers, raisins, agrumes et herbes parfumées y prospèrent."
+     ],
+     "q": "Quel plat ou quel lieu méditerranéen préfères-tu ?",
+     "c": "Trouve les cinq régions au climat méditerranéen sur un planisphère."
+    },
+    "it": {
+     "t": "Paesaggi mediterranei",
+     "g": "Goditi estati calde e secche, inverni miti e piovosi, ulivi e vigneti.",
+     "p": [
+      "I climi mediterranei hanno estati calde e secche e inverni miti e piovosi.",
+      "Si trovano attorno al Mediterraneo e anche in California, Cile, Sudafrica e Australia sud-occidentale.",
+      "Ulivi, uva, agrumi ed erbe aromatiche prosperano in queste terre."
+     ],
+     "q": "Quale cibo o luogo mediterraneo è il tuo preferito?",
+     "c": "Trova le cinque regioni a clima mediterraneo su un planisfero."
+    },
+    "pt": {
+     "t": "Paisagens mediterrânicas",
+     "g": "Desfruta de verões quentes e secos, invernos suaves e chuvosos, oliveiras e vinhas.",
+     "p": [
+      "Os climas mediterrânicos têm verões quentes e secos e invernos suaves e chuvosos.",
+      "Encontram-se à volta do Mediterrâneo e também na Califórnia, Chile, África do Sul e sudoeste da Austrália.",
+      "Oliveiras, uvas, citrinos e ervas aromáticas prosperam nestas terras."
+     ],
+     "q": "Que comida ou lugar mediterrânico é o teu favorito?",
+     "c": "Encontra as cinco regiões de clima mediterrânico num mapa-múndi."
+    },
+    "pt_BR": {
+     "t": "Paisagens mediterrâneas",
+     "g": "Desfrute de verões quentes e secos, invernos suaves e chuvosos, oliveiras e vinhedos.",
+     "p": [
+      "Os climas mediterrâneos têm verões quentes e secos e invernos suaves e chuvosos.",
+      "Encontram-se em torno do Mediterrâneo e também na Califórnia, no Chile, na África do Sul e no sudoeste da Austrália.",
+      "Oliveiras, uvas, cítricos e ervas aromáticas prosperam nessas terras."
+     ],
+     "q": "Que comida ou lugar mediterrâneo é o seu favorito?",
+     "c": "Ache as cinco regiões de clima mediterrâneo num mapa-múndi."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mountain environments",
+     "g": "See how climate and life change as you climb higher.",
+     "p": [
+      "Temperature drops about six degrees Celsius for every thousand meters you climb.",
+      "Zones change with height: forests low down, then meadows, rock and finally snow.",
+      "Mountain animals like goats, llamas and snow leopards are adapted to cold, thin air."
+     ],
+     "q": "Have you ever climbed high enough to feel the air change?",
+     "c": "List the zones you would pass on a hike from a valley to a snowy peak."
+    },
+    "de": {
+     "t": "Bergwelten",
+     "g": "Sieh, wie sich Klima und Leben beim Aufstieg verändern.",
+     "p": [
+      "Die Temperatur sinkt pro tausend Höhenmeter um etwa sechs Grad Celsius.",
+      "Zonen wechseln mit der Höhe: unten Wald, dann Wiesen, Fels und schließlich Schnee.",
+      "Bergtiere wie Steinböcke, Lamas und Schneeleoparden sind an Kälte und dünne Luft angepasst."
+     ],
+     "q": "Bist du schon einmal so hoch gestiegen, dass sich die Luft veränderte?",
+     "c": "Liste die Zonen auf, die du auf einer Wanderung vom Tal zum Schneegipfel durchquerst."
+    },
+    "es": {
+     "t": "Entornos de montaña",
+     "g": "Descubre cómo cambian el clima y la vida a medida que subes.",
+     "p": [
+      "La temperatura baja unos seis grados Celsius por cada mil metros que subes.",
+      "Las zonas cambian con la altura: bosque abajo, luego prados, roca y por fin nieve.",
+      "Animales de montaña como cabras, llamas y leopardos de las nieves se adaptan al frío y al aire fino."
+     ],
+     "q": "¿Has subido alguna vez tan alto que notaste el cambio del aire?",
+     "c": "Enumera las zonas que cruzarías en una ruta del valle a una cima nevada."
+    },
+    "fr": {
+     "t": "Les milieux de montagne",
+     "g": "Vois comment le climat et la vie changent à mesure que tu montes.",
+     "p": [
+      "La température baisse d'environ six degrés Celsius par tranche de mille mètres d'altitude.",
+      "Les étages changent avec la hauteur : forêt en bas, puis prairies, roche et enfin neige.",
+      "Les animaux de montagne comme les chèvres, les lamas et les panthères des neiges sont adaptés au froid et à l'air rare."
+     ],
+     "q": "As-tu déjà grimpé assez haut pour sentir l'air changer ?",
+     "c": "Dresse la liste des étages traversés lors d'une randonnée de la vallée à un sommet enneigé."
+    },
+    "it": {
+     "t": "Gli ambienti di montagna",
+     "g": "Scopri come cambiano clima e vita man mano che sali.",
+     "p": [
+      "La temperatura scende di circa sei gradi Celsius ogni mille metri di salita.",
+      "Le fasce cambiano con l'altezza: bosco in basso, poi prati, roccia e infine neve.",
+      "Animali di montagna come stambecchi, lama e leopardi delle nevi sono adattati al freddo e all'aria rarefatta."
+     ],
+     "q": "Sei mai salito abbastanza in alto da sentire l'aria cambiare?",
+     "c": "Elenca le fasce che attraverseresti in un'escursione dalla valle a una vetta innevata."
+    },
+    "pt": {
+     "t": "Os ambientes de montanha",
+     "g": "Vê como mudam o clima e a vida à medida que subes.",
+     "p": [
+      "A temperatura desce cerca de seis graus Celsius por cada mil metros de subida.",
+      "As zonas mudam com a altura: floresta em baixo, depois prados, rocha e por fim neve.",
+      "Animais de montanha como cabras, lamas e leopardos-das-neves adaptam-se ao frio e ao ar rarefeito."
+     ],
+     "q": "Já subiste tão alto que sentiste o ar mudar?",
+     "c": "Lista as zonas que atravessarias num percurso do vale a um pico nevado."
+    },
+    "pt_BR": {
+     "t": "Os ambientes de montanha",
+     "g": "Veja como mudam o clima e a vida à medida que você sobe.",
+     "p": [
+      "A temperatura cai cerca de seis graus Celsius a cada mil metros de subida.",
+      "As zonas mudam com a altura: floresta embaixo, depois campos, rocha e por fim neve.",
+      "Animais de montanha como cabras, lhamas e leopardos-das-neves se adaptam ao frio e ao ar rarefeito."
+     ],
+     "q": "Você já subiu tão alto que sentiu o ar mudar?",
+     "c": "Liste as zonas que você atravessaria numa trilha do vale a um pico nevado."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Oceans as habitats",
+     "g": "Dive into coral reefs, kelp forests and the deep sea.",
+     "p": [
+      "Coral reefs grow in warm shallow water and shelter a huge variety of fish.",
+      "Kelp forests are underwater jungles of giant seaweed in cool coastal water.",
+      "The deep sea is dark, cold and home to strange glowing creatures."
+     ],
+     "q": "Would you rather snorkel on a reef or explore the deep sea in a submarine?",
+     "c": "Find the Great Barrier Reef on a map and note the sea it lies in."
+    },
+    "de": {
+     "t": "Ozeane als Lebensraum",
+     "g": "Tauche ein in Korallenriffe, Kelpwälder und die Tiefsee.",
+     "p": [
+      "Korallenriffe wachsen in warmem Flachwasser und bieten unzähligen Fischen Schutz.",
+      "Kelpwälder sind Unterwasserdschungel aus Riesentang im kühlen Küstenwasser.",
+      "Die Tiefsee ist dunkel, kalt und Heimat seltsamer leuchtender Wesen."
+     ],
+     "q": "Würdest du lieber an einem Riff schnorcheln oder die Tiefsee im U-Boot erkunden?",
+     "c": "Finde das Great Barrier Reef auf einer Karte und notiere das Meer, in dem es liegt."
+    },
+    "es": {
+     "t": "Los océanos como hábitat",
+     "g": "Sumérgete en arrecifes de coral, bosques de algas y el mar profundo.",
+     "p": [
+      "Los arrecifes de coral crecen en aguas cálidas poco profundas y dan refugio a muchos peces.",
+      "Los bosques de kelp son selvas submarinas de algas gigantes en aguas costeras frescas.",
+      "El mar profundo es oscuro, frío y hogar de extrañas criaturas luminosas."
+     ],
+     "q": "¿Preferirías hacer snorkel en un arrecife o explorar el mar profundo en submarino?",
+     "c": "Encuentra la Gran Barrera de Coral en un mapa y anota en qué mar está."
+    },
+    "fr": {
+     "t": "Les océans comme habitats",
+     "g": "Plonge dans les récifs coralliens, les forêts de laminaires et les grands fonds.",
+     "p": [
+      "Les récifs coralliens poussent en eau chaude peu profonde et abritent une immense variété de poissons.",
+      "Les forêts de laminaires sont des jungles sous-marines de goémon géant dans les eaux côtières fraîches.",
+      "Les grands fonds sont sombres, froids et peuplés d'étranges créatures lumineuses."
+     ],
+     "q": "Préfères-tu faire du snorkeling sur un récif ou explorer les abysses en sous-marin ?",
+     "c": "Trouve la Grande Barrière de corail sur une carte et note la mer où elle se trouve."
+    },
+    "it": {
+     "t": "Gli oceani come habitat",
+     "g": "Immergiti nelle barriere coralline, nelle foreste di kelp e negli abissi.",
+     "p": [
+      "Le barriere coralline crescono in acque calde e basse e ospitano una grande varietà di pesci.",
+      "Le foreste di kelp sono giungle sottomarine di alghe giganti nelle fresche acque costiere.",
+      "Gli abissi sono bui, freddi e casa di strane creature luminose."
+     ],
+     "q": "Preferiresti fare snorkeling su una barriera o esplorare gli abissi in sommergibile?",
+     "c": "Trova la Grande Barriera Corallina su una mappa e annota in quale mare si trova."
+    },
+    "pt": {
+     "t": "Os oceanos como habitat",
+     "g": "Mergulha nos recifes de coral, nas florestas de algas e no mar profundo.",
+     "p": [
+      "Os recifes de coral crescem em águas quentes e pouco profundas e abrigam muitos peixes.",
+      "As florestas de kelp são selvas submarinas de algas gigantes em águas costeiras frescas.",
+      "O mar profundo é escuro, frio e casa de estranhas criaturas luminosas."
+     ],
+     "q": "Preferias fazer snorkeling num recife ou explorar o mar profundo de submarino?",
+     "c": "Encontra a Grande Barreira de Coral num mapa e anota em que mar fica."
+    },
+    "pt_BR": {
+     "t": "Os oceanos como habitat",
+     "g": "Mergulhe nos recifes de coral, nas florestas de algas e no mar profundo.",
+     "p": [
+      "Os recifes de coral crescem em águas quentes e rasas e abrigam muitos peixes.",
+      "As florestas de kelp são selvas submarinas de algas gigantes em águas costeiras frescas.",
+      "O mar profundo é escuro, frio e lar de estranhas criaturas luminosas."
+     ],
+     "q": "Você preferiria mergulhar num recife ou explorar o mar profundo de submarino?",
+     "c": "Ache a Grande Barreira de Corais num mapa e anote em que mar ela fica."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wetlands",
+     "g": "Wade into marshes, swamps and mangroves that filter water and shelter wildlife.",
+     "p": [
+      "Wetlands are lands soaked with water for much or all of the year.",
+      "Marshes have grasses, swamps have trees, and mangroves grow in salty coastal water.",
+      "They filter water, soak up floods and shelter birds, fish and many other animals."
+     ],
+     "q": "Have you ever visited a marsh, a swamp or a mangrove?",
+     "c": "Find the Pantanal, the Everglades and the Okavango Delta on a map."
+    },
+    "de": {
+     "t": "Feuchtgebiete",
+     "g": "Wate durch Sümpfe, Moore und Mangroven, die Wasser filtern und Tiere schützen.",
+     "p": [
+      "Feuchtgebiete sind Land, das einen Großteil oder das ganze Jahr von Wasser durchtränkt ist.",
+      "Marschen haben Gräser, Sümpfe haben Bäume, und Mangroven wachsen im salzigen Küstenwasser.",
+      "Sie filtern Wasser, nehmen Hochwasser auf und schützen Vögel, Fische und andere Tiere."
+     ],
+     "q": "Hast du schon einmal ein Moor, einen Sumpf oder Mangroven besucht?",
+     "c": "Finde Pantanal, Everglades und Okavango-Delta auf einer Karte."
+    },
+    "es": {
+     "t": "Humedales",
+     "g": "Adéntrate en marismas, pantanos y manglares que filtran el agua y dan refugio a la fauna.",
+     "p": [
+      "Los humedales son tierras empapadas de agua durante buena parte o todo el año.",
+      "Las marismas tienen hierbas, los pantanos tienen árboles y los manglares crecen en agua salada costera.",
+      "Filtran el agua, absorben crecidas y dan cobijo a aves, peces y muchos otros animales."
+     ],
+     "q": "¿Has visitado alguna vez una marisma, un pantano o un manglar?",
+     "c": "Encuentra el Pantanal, los Everglades y el delta del Okavango en un mapa."
+    },
+    "fr": {
+     "t": "Les zones humides",
+     "g": "Avance dans les marais, les marécages et les mangroves qui filtrent l'eau et abritent la faune.",
+     "p": [
+      "Les zones humides sont des terres gorgées d'eau une grande partie ou toute l'année.",
+      "Les marais ont des herbes, les marécages des arbres, et les mangroves poussent dans l'eau salée côtière.",
+      "Elles filtrent l'eau, absorbent les crues et abritent oiseaux, poissons et bien d'autres animaux."
+     ],
+     "q": "As-tu déjà visité un marais, un marécage ou une mangrove ?",
+     "c": "Trouve le Pantanal, les Everglades et le delta de l'Okavango sur une carte."
+    },
+    "it": {
+     "t": "Le zone umide",
+     "g": "Addentrati in paludi, acquitrini e mangrovie che filtrano l'acqua e ospitano la fauna.",
+     "p": [
+      "Le zone umide sono terre inzuppate d'acqua per gran parte o tutto l'anno.",
+      "Le paludi hanno erbe, gli acquitrini hanno alberi e le mangrovie crescono in acque salate costiere.",
+      "Filtrano l'acqua, assorbono le piene e ospitano uccelli, pesci e molti altri animali."
+     ],
+     "q": "Hai mai visitato una palude, un acquitrino o una mangrovia?",
+     "c": "Trova il Pantanal, le Everglades e il delta dell'Okavango su una mappa."
+    },
+    "pt": {
+     "t": "As zonas húmidas",
+     "g": "Entra em sapais, pântanos e mangais que filtram a água e abrigam a vida selvagem.",
+     "p": [
+      "As zonas húmidas são terras encharcadas de água durante grande parte ou todo o ano.",
+      "Os sapais têm ervas, os pântanos têm árvores e os mangais crescem em água salgada costeira.",
+      "Filtram a água, absorvem cheias e abrigam aves, peixes e muitos outros animais."
+     ],
+     "q": "Já visitaste um sapal, um pântano ou um mangal?",
+     "c": "Encontra o Pantanal, os Everglades e o delta do Okavango num mapa."
+    },
+    "pt_BR": {
+     "t": "As áreas úmidas",
+     "g": "Entre em brejos, pântanos e manguezais que filtram a água e abrigam a vida selvagem.",
+     "p": [
+      "As áreas úmidas são terras encharcadas de água durante boa parte ou todo o ano.",
+      "Os brejos têm capim, os pântanos têm árvores e os manguezais crescem em água salgada costeira.",
+      "Filtram a água, absorvem cheias e abrigam aves, peixes e muitos outros animais."
+     ],
+     "q": "Você já visitou um brejo, um pântano ou um manguezal?",
+     "c": "Ache o Pantanal, as Everglades e o delta do Okavango num mapa."
+    }
+   }
+  }
+ ]
+}

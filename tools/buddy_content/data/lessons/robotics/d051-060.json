@@ -1,0 +1,835 @@
+{
+ "topic": "robotics",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Functions to tidy your code",
+     "g": "Split programs into named pieces that are easy to read and reuse.",
+     "p": [
+      "A function is a named block of code that you can call whenever you need it.",
+      "Names like beepTwice or blinkFast explain the code without extra comments.",
+      "Functions can take inputs, called parameters, such as how many times to blink."
+     ],
+     "q": "Which action in your robot would you turn into a function first?",
+     "c": "Turn your blink code into a function that takes the number of blinks."
+    },
+    "de": {
+     "t": "Funktionen für ordentlichen Code",
+     "g": "Teile Programme in benannte Stücke, die leicht lesbar und wiederverwendbar sind.",
+     "p": [
+      "Eine Funktion ist ein benannter Codeblock, den du aufrufen kannst, wann du willst.",
+      "Namen wie zweimalPiepen oder schnellBlinken erklären den Code ohne Kommentare.",
+      "Funktionen können Eingaben haben, Parameter, etwa wie oft geblinkt wird."
+     ],
+     "q": "Welche Aktion deines Roboters würdest du zuerst zur Funktion machen?",
+     "c": "Mache aus deinem Blinkcode eine Funktion, die die Blinkanzahl bekommt."
+    },
+    "es": {
+     "t": "Funciones para ordenar tu código",
+     "g": "Divide los programas en piezas con nombre fáciles de leer y reutilizar.",
+     "p": [
+      "Una función es un bloque de código con nombre que puedes llamar cuando quieras.",
+      "Nombres como pitarDosVeces o parpadeoRapido explican el código sin más comentarios.",
+      "Las funciones pueden recibir entradas, llamadas parámetros, como cuántas veces parpadear."
+     ],
+     "q": "¿Qué acción de tu robot convertirías primero en función?",
+     "c": "Convierte tu código de parpadeo en una función que reciba el número de parpadeos."
+    },
+    "fr": {
+     "t": "Des fonctions pour ranger ton code",
+     "g": "Découpe les programmes en morceaux nommés, faciles à lire et à réutiliser.",
+     "p": [
+      "Une fonction est un bloc de code nommé que tu peux appeler quand tu veux.",
+      "Des noms comme biperDeuxFois ou clignoterVite expliquent le code sans commentaire.",
+      "Les fonctions peuvent recevoir des entrées, les paramètres, comme le nombre de clignotements."
+     ],
+     "q": "Quelle action de ton robot transformerais-tu en fonction en premier ?",
+     "c": "Transforme ton code de clignotement en fonction qui reçoit le nombre de clignotements."
+    },
+    "it": {
+     "t": "Funzioni per ordinare il codice",
+     "g": "Dividi i programmi in pezzi con un nome, facili da leggere e riusare.",
+     "p": [
+      "Una funzione è un blocco di codice con un nome che puoi chiamare quando serve.",
+      "Nomi come bipDueVolte o lampeggioVeloce spiegano il codice senza altri commenti.",
+      "Le funzioni possono ricevere ingressi, i parametri, come quante volte lampeggiare."
+     ],
+     "q": "Quale azione del tuo robot trasformeresti per prima in funzione?",
+     "c": "Trasforma il tuo codice di lampeggio in una funzione che riceve il numero di lampeggi."
+    },
+    "pt": {
+     "t": "Funções para arrumar o código",
+     "g": "Divide os programas em peças com nome, fáceis de ler e reutilizar.",
+     "p": [
+      "Uma função é um bloco de código com nome que podes chamar quando quiseres.",
+      "Nomes como apitarDuasVezes ou piscarRapido explicam o código sem mais comentários.",
+      "As funções podem receber entradas, os parâmetros, como quantas vezes piscar."
+     ],
+     "q": "Que ação do teu robô transformarias primeiro em função?",
+     "c": "Transforma o teu código de piscar numa função que recebe o número de piscadelas."
+    },
+    "pt_BR": {
+     "t": "Funções para organizar o código",
+     "g": "Divida os programas em peças com nome, fáceis de ler e reutilizar.",
+     "p": [
+      "Uma função é um bloco de código com nome que você pode chamar quando quiser.",
+      "Nomes como apitarDuasVezes ou piscarRapido explicam o código sem mais comentários.",
+      "As funções podem receber entradas, os parâmetros, como quantas vezes piscar."
+     ],
+     "q": "Que ação do seu robô você transformaria primeiro em função?",
+     "c": "Transforme seu código de piscar em uma função que recebe o número de piscadas."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Planning a project on paper",
+     "g": "Sketch your idea before coding and wiring.",
+     "p": [
+      "List the inputs, such as sensors and buttons, and the outputs, such as motors and lights.",
+      "Write the behaviour in plain steps: when this happens, do that.",
+      "Draw a rough block diagram, then build and test one piece at a time."
+     ],
+     "q": "What simple robot project would you plan on paper first?",
+     "c": "Plan a night light on paper: inputs, outputs and behaviour in three lines."
+    },
+    "de": {
+     "t": "Ein Projekt auf Papier planen",
+     "g": "Skizziere deine Idee, bevor du programmierst und verdrahtest.",
+     "p": [
+      "Liste Eingänge wie Sensoren und Taster und Ausgänge wie Motoren und Lichter auf.",
+      "Schreibe das Verhalten in einfachen Schritten: wenn das passiert, tu das.",
+      "Zeichne ein grobes Blockschaltbild, dann baue und teste Stück für Stück."
+     ],
+     "q": "Welches einfache Roboterprojekt würdest du zuerst auf Papier planen?",
+     "c": "Plane ein Nachtlicht auf Papier: Eingänge, Ausgänge und Verhalten in drei Zeilen."
+    },
+    "es": {
+     "t": "Planificar un proyecto en papel",
+     "g": "Dibuja tu idea antes de programar y cablear.",
+     "p": [
+      "Haz una lista de entradas, como sensores y botones, y de salidas, como motores y luces.",
+      "Escribe el comportamiento en pasos sencillos: cuando pase esto, haz aquello.",
+      "Dibuja un diagrama de bloques básico y construye y prueba una pieza cada vez."
+     ],
+     "q": "¿Qué proyecto sencillo de robot planearías primero en papel?",
+     "c": "Planifica una luz nocturna en papel: entradas, salidas y comportamiento en tres líneas."
+    },
+    "fr": {
+     "t": "Planifier un projet sur papier",
+     "g": "Dessine ton idée avant de programmer et de câbler.",
+     "p": [
+      "Liste les entrées, comme capteurs et boutons, et les sorties, comme moteurs et lumières.",
+      "Écris le comportement en étapes simples : quand ceci arrive, fais cela.",
+      "Dessine un schéma-bloc approximatif, puis construis et teste une pièce à la fois."
+     ],
+     "q": "Quel projet de robot simple planifierais-tu d'abord sur papier ?",
+     "c": "Planifie une veilleuse sur papier : entrées, sorties et comportement en trois lignes."
+    },
+    "it": {
+     "t": "Pianificare un progetto su carta",
+     "g": "Disegna la tua idea prima di programmare e cablare.",
+     "p": [
+      "Elenca gli ingressi, come sensori e pulsanti, e le uscite, come motori e luci.",
+      "Scrivi il comportamento in passi semplici: quando succede questo, fai quello.",
+      "Disegna uno schema a blocchi approssimativo, poi costruisci e collauda un pezzo alla volta."
+     ],
+     "q": "Quale semplice progetto di robot pianificheresti per primo su carta?",
+     "c": "Pianifica una luce notturna su carta: ingressi, uscite e comportamento in tre righe."
+    },
+    "pt": {
+     "t": "Planear um projeto no papel",
+     "g": "Esboça a tua ideia antes de programar e ligar fios.",
+     "p": [
+      "Lista as entradas, como sensores e botões, e as saídas, como motores e luzes.",
+      "Escreve o comportamento em passos simples: quando isto acontecer, faz aquilo.",
+      "Desenha um diagrama de blocos simples e constrói e testa uma peça de cada vez."
+     ],
+     "q": "Que projeto simples de robô planearias primeiro no papel?",
+     "c": "Planeia uma luz de presença no papel: entradas, saídas e comportamento em três linhas."
+    },
+    "pt_BR": {
+     "t": "Planejando um projeto no papel",
+     "g": "Esboce sua ideia antes de programar e ligar fios.",
+     "p": [
+      "Liste as entradas, como sensores e botões, e as saídas, como motores e luzes.",
+      "Escreva o comportamento em passos simples: quando isso acontecer, faça aquilo.",
+      "Desenhe um diagrama de blocos simples e construa e teste uma peça de cada vez."
+     ],
+     "q": "Que projeto simples de robô você planejaria primeiro no papel?",
+     "c": "Planeje uma luz de presença no papel: entradas, saídas e comportamento em três linhas."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How DC motors work",
+     "g": "Understand how magnets and coils make something spin.",
+     "p": [
+      "A DC motor has a coil that turns inside a magnetic field when current flows.",
+      "More voltage makes it spin faster; swapping the two wires reverses the direction.",
+      "Small hobby motors suit low-voltage batteries and should never be forced to stall for long."
+     ],
+     "q": "Which part of your robot do you want a motor to move?",
+     "c": "Connect a small motor to a battery pack briefly and watch it spin both ways."
+    },
+    "de": {
+     "t": "Wie Gleichstrommotoren funktionieren",
+     "g": "Verstehe, wie Magnete und Spulen etwas zum Drehen bringen.",
+     "p": [
+      "Ein Gleichstrommotor hat eine Spule, die sich bei Stromfluss in einem Magnetfeld dreht.",
+      "Mehr Spannung dreht schneller; vertauschte Anschlüsse kehren die Richtung um.",
+      "Kleine Hobbymotoren passen zu Niederspannungsbatterien und sollten nie lange blockiert werden."
+     ],
+     "q": "Welchen Teil deines Roboters soll ein Motor bewegen?",
+     "c": "Schließe einen kleinen Motor kurz an einen Batteriehalter an und sieh ihn in beide Richtungen drehen."
+    },
+    "es": {
+     "t": "Cómo funcionan los motores de corriente continua",
+     "g": "Entiende cómo imanes y bobinas hacen girar algo.",
+     "p": [
+      "Un motor DC tiene una bobina que gira dentro de un campo magnético cuando pasa corriente.",
+      "Más voltaje lo hace girar más rápido; intercambiar los dos cables invierte el sentido.",
+      "Los motores pequeños van con pilas de baja tensión y no deben forzarse a atascarse mucho rato."
+     ],
+     "q": "¿Qué parte de tu robot quieres que mueva un motor?",
+     "c": "Conecta brevemente un motor pequeño a un portapilas y mira cómo gira en ambos sentidos."
+    },
+    "fr": {
+     "t": "Comment fonctionnent les moteurs à courant continu",
+     "g": "Comprends comment aimants et bobines font tourner quelque chose.",
+     "p": [
+      "Un moteur DC a une bobine qui tourne dans un champ magnétique quand le courant passe.",
+      "Plus de tension le fait tourner plus vite ; inverser les deux fils change le sens.",
+      "Les petits moteurs conviennent aux piles basse tension et ne doivent pas rester bloqués longtemps."
+     ],
+     "q": "Quelle partie de ton robot veux-tu qu'un moteur déplace ?",
+     "c": "Branche brièvement un petit moteur sur un support de piles et regarde-le tourner dans les deux sens."
+    },
+    "it": {
+     "t": "Come funzionano i motori in corrente continua",
+     "g": "Capisci come magneti e bobine fanno girare qualcosa.",
+     "p": [
+      "Un motore DC ha una bobina che gira in un campo magnetico quando passa corrente.",
+      "Più tensione lo fa girare più veloce; scambiare i due fili inverte il verso.",
+      "I piccoli motori vanno con batterie a bassa tensione e non vanno tenuti bloccati a lungo."
+     ],
+     "q": "Quale parte del tuo robot vuoi che muova un motore?",
+     "c": "Collega brevemente un piccolo motore a un portapile e guardalo girare nei due versi."
+    },
+    "pt": {
+     "t": "Como funcionam os motores de corrente contínua",
+     "g": "Compreende como ímanes e bobinas fazem algo rodar.",
+     "p": [
+      "Um motor DC tem uma bobina que roda dentro de um campo magnético quando passa corrente.",
+      "Mais tensão faz rodar mais depressa; trocar os dois fios inverte o sentido.",
+      "Motores pequenos servem para pilhas de baixa tensão e não devem ficar bloqueados muito tempo."
+     ],
+     "q": "Que parte do teu robô queres que um motor mova?",
+     "c": "Liga brevemente um motor pequeno a um porta-pilhas e vê-o rodar nos dois sentidos."
+    },
+    "pt_BR": {
+     "t": "Como funcionam os motores de corrente contínua",
+     "g": "Entenda como ímãs e bobinas fazem algo girar.",
+     "p": [
+      "Um motor DC tem uma bobina que gira dentro de um campo magnético quando passa corrente.",
+      "Mais tensão faz girar mais rápido; trocar os dois fios inverte o sentido.",
+      "Motores pequenos servem para pilhas de baixa tensão e não devem ficar travados por muito tempo."
+     ],
+     "q": "Que parte do seu robô você quer que um motor mova?",
+     "c": "Ligue brevemente um motor pequeno a um porta-pilhas e veja-o girar nos dois sentidos."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why motors need drivers",
+     "g": "Learn why a pin cannot power a motor directly.",
+     "p": [
+      "A board pin can supply only a few tens of milliamps, far less than most motors need.",
+      "A transistor or driver chip takes the small signal and switches the motor's own power.",
+      "An H-bridge driver can also reverse the motor, giving forward and backward."
+     ],
+     "q": "What could go wrong if a motor were wired straight to a pin?",
+     "c": "Sketch a pin controlling a transistor that switches a motor from a battery."
+    },
+    "de": {
+     "t": "Warum Motoren Treiber brauchen",
+     "g": "Lerne, warum ein Pin einen Motor nicht direkt versorgen kann.",
+     "p": [
+      "Ein Board-Pin liefert nur einige Dutzend Milliampere, viel weniger als die meisten Motoren brauchen.",
+      "Ein Transistor oder Treiberchip nimmt das kleine Signal und schaltet die eigene Motorversorgung.",
+      "Ein H-Brücken-Treiber kann den Motor auch umpolen, also vor und zurück."
+     ],
+     "q": "Was könnte schiefgehen, wenn ein Motor direkt an einen Pin käme?",
+     "c": "Skizziere einen Pin, der einen Transistor steuert, der einen Motor aus einer Batterie schaltet."
+    },
+    "es": {
+     "t": "Por qué los motores necesitan controladores",
+     "g": "Aprende por qué un pin no puede alimentar un motor directamente.",
+     "p": [
+      "Un pin de placa solo da unas decenas de miliamperios, mucho menos de lo que piden casi todos los motores.",
+      "Un transistor o chip controlador toma la señal pequeña y conmuta la alimentación propia del motor.",
+      "Un controlador de puente H también invierte el motor, para ir adelante y atrás."
+     ],
+     "q": "¿Qué podría salir mal si un motor se conectara directo a un pin?",
+     "c": "Dibuja un pin que controla un transistor que conmuta un motor desde una pila."
+    },
+    "fr": {
+     "t": "Pourquoi les moteurs ont besoin de pilotes",
+     "g": "Apprends pourquoi une broche ne peut pas alimenter un moteur directement.",
+     "p": [
+      "Une broche de carte ne fournit que quelques dizaines de milliampères, bien moins que la plupart des moteurs.",
+      "Un transistor ou une puce de pilotage prend le petit signal et commute l'alimentation propre du moteur.",
+      "Un pilote en pont en H peut aussi inverser le moteur, pour avancer et reculer."
+     ],
+     "q": "Que pourrait-il arriver si un moteur était relié directement à une broche ?",
+     "c": "Dessine une broche qui commande un transistor qui commute un moteur depuis une pile."
+    },
+    "it": {
+     "t": "Perché i motori hanno bisogno di driver",
+     "g": "Scopri perché un pin non può alimentare direttamente un motore.",
+     "p": [
+      "Un pin della scheda fornisce solo qualche decina di milliampere, molto meno di quanto serve ai motori.",
+      "Un transistor o chip driver prende il piccolo segnale e commuta l'alimentazione propria del motore.",
+      "Un driver a ponte H può anche invertire il motore, per andare avanti e indietro."
+     ],
+     "q": "Cosa potrebbe andare storto se un motore fosse collegato dritto a un pin?",
+     "c": "Disegna un pin che comanda un transistor che commuta un motore da una batteria."
+    },
+    "pt": {
+     "t": "Porque os motores precisam de drivers",
+     "g": "Aprende porque um pino não pode alimentar um motor diretamente.",
+     "p": [
+      "Um pino de placa só dá umas dezenas de miliamperes, muito menos do que a maioria dos motores pede.",
+      "Um transístor ou chip driver recebe o sinal pequeno e comuta a alimentação própria do motor.",
+      "Um driver em ponte H também inverte o motor, para andar para a frente e para trás."
+     ],
+     "q": "O que poderia correr mal se um motor fosse ligado direto a um pino?",
+     "c": "Esboça um pino a comandar um transístor que comuta um motor a partir de uma pilha."
+    },
+    "pt_BR": {
+     "t": "Por que os motores precisam de drivers",
+     "g": "Aprenda por que um pino não pode alimentar um motor diretamente.",
+     "p": [
+      "Um pino de placa só dá algumas dezenas de miliampères, bem menos do que a maioria dos motores pede.",
+      "Um transistor ou chip driver recebe o sinal pequeno e comuta a alimentação própria do motor.",
+      "Um driver em ponte H também inverte o motor, para ir para frente e para trás."
+     ],
+     "q": "O que poderia dar errado se um motor fosse ligado direto a um pino?",
+     "c": "Esboce um pino comandando um transistor que comuta um motor a partir de uma pilha."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Flyback diodes for motors",
+     "g": "Protect your transistor from the spike a motor makes when switched off.",
+     "p": [
+      "A motor is a coil, and a coil resists sudden changes in current.",
+      "When switched off it can push a short high-voltage spike back into the circuit.",
+      "A diode across the motor, with the stripe toward the positive side, absorbs it."
+     ],
+     "q": "Why do you think such a simple part is so important?",
+     "c": "Add a diode across a motor in your drawing and mark the stripe side."
+    },
+    "de": {
+     "t": "Freilaufdioden für Motoren",
+     "g": "Schütze deinen Transistor vor der Spannungsspitze, die ein Motor beim Abschalten erzeugt.",
+     "p": [
+      "Ein Motor ist eine Spule, und eine Spule wehrt sich gegen plötzliche Stromänderungen.",
+      "Beim Abschalten kann sie eine kurze Hochspannungsspitze in die Schaltung zurückdrücken.",
+      "Eine Diode über dem Motor, Streifen zur Plusseite, fängt sie ab."
+     ],
+     "q": "Warum ist so ein einfaches Bauteil deiner Meinung nach so wichtig?",
+     "c": "Zeichne eine Diode über einem Motor ein und markiere die Streifenseite."
+    },
+    "es": {
+     "t": "Diodos de rueda libre para motores",
+     "g": "Protege tu transistor del pico que genera un motor al apagarse.",
+     "p": [
+      "Un motor es una bobina y una bobina se resiste a los cambios bruscos de corriente.",
+      "Al apagarse puede devolver al circuito un breve pico de alto voltaje.",
+      "Un diodo en paralelo con el motor, con la franja hacia el lado positivo, lo absorbe."
+     ],
+     "q": "¿Por qué crees que una pieza tan simple es tan importante?",
+     "c": "Añade un diodo en paralelo con un motor en tu dibujo y marca el lado de la franja."
+    },
+    "fr": {
+     "t": "Diodes de roue libre pour moteurs",
+     "g": "Protège ton transistor de la pointe de tension qu'un moteur crée à l'arrêt.",
+     "p": [
+      "Un moteur est une bobine, et une bobine résiste aux variations brusques de courant.",
+      "À l'arrêt, elle peut renvoyer dans le circuit une brève pointe de haute tension.",
+      "Une diode aux bornes du moteur, bande vers le plus, l'absorbe."
+     ],
+     "q": "Pourquoi un composant si simple est-il si important, à ton avis ?",
+     "c": "Ajoute une diode aux bornes d'un moteur sur ton dessin et marque le côté de la bande."
+    },
+    "it": {
+     "t": "Diodi di ricircolo per motori",
+     "g": "Proteggi il transistor dal picco che un motore genera allo spegnimento.",
+     "p": [
+      "Un motore è una bobina e una bobina resiste ai cambi bruschi di corrente.",
+      "Allo spegnimento può rimandare nel circuito un breve picco di alta tensione.",
+      "Un diodo ai capi del motore, con la striscia verso il positivo, lo assorbe."
+     ],
+     "q": "Perché pensi che un componente così semplice sia tanto importante?",
+     "c": "Aggiungi un diodo ai capi di un motore nel disegno e segna il lato della striscia."
+    },
+    "pt": {
+     "t": "Díodos de roda livre para motores",
+     "g": "Protege o transístor do pico que um motor gera ao desligar.",
+     "p": [
+      "Um motor é uma bobina e uma bobina resiste a mudanças bruscas de corrente.",
+      "Ao desligar, pode devolver ao circuito um breve pico de alta tensão.",
+      "Um díodo ligado aos terminais do motor, risca para o lado positivo, absorve-o."
+     ],
+     "q": "Porque achas que uma peça tão simples é tão importante?",
+     "c": "Acrescenta um díodo aos terminais de um motor no desenho e marca o lado da risca."
+    },
+    "pt_BR": {
+     "t": "Diodos de roda livre para motores",
+     "g": "Proteja o transistor do pico que um motor gera ao desligar.",
+     "p": [
+      "Um motor é uma bobina e uma bobina resiste a mudanças bruscas de corrente.",
+      "Ao desligar, ela pode devolver ao circuito um breve pico de alta tensão.",
+      "Um diodo nos terminais do motor, faixa para o lado positivo, absorve o pico."
+     ],
+     "q": "Por que você acha que uma peça tão simples é tão importante?",
+     "c": "Acrescente um diodo nos terminais de um motor no desenho e marque o lado da faixa."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Servo motors",
+     "g": "Meet the motor that moves to an angle you choose.",
+     "p": [
+      "A hobby servo has a motor, gears and a position sensor inside one small case.",
+      "It has three wires: power, ground and a control signal.",
+      "A pulse of about one to two milliseconds repeated every twenty sets the angle."
+     ],
+     "q": "Which part of a robot could a servo move, an arm or a head?",
+     "c": "Look at a servo, find its three wires and note which one is the signal."
+    },
+    "de": {
+     "t": "Servomotoren",
+     "g": "Lerne den Motor kennen, der einen gewählten Winkel anfährt.",
+     "p": [
+      "Ein Hobby-Servo hat Motor, Getriebe und Positionssensor in einem kleinen Gehäuse.",
+      "Er hat drei Kabel: Versorgung, Masse und ein Steuersignal.",
+      "Ein Impuls von etwa ein bis zwei Millisekunden, alle zwanzig wiederholt, bestimmt den Winkel."
+     ],
+     "q": "Welchen Teil eines Roboters könnte ein Servo bewegen, einen Arm oder einen Kopf?",
+     "c": "Sieh dir einen Servo an, finde die drei Kabel und merke dir das Signalkabel."
+    },
+    "es": {
+     "t": "Servomotores",
+     "g": "Conoce el motor que se mueve al ángulo que elijas.",
+     "p": [
+      "Un servo de aficionado lleva motor, engranajes y sensor de posición en una carcasa pequeña.",
+      "Tiene tres cables: alimentación, masa y señal de control.",
+      "Un pulso de uno a dos milisegundos repetido cada veinte fija el ángulo."
+     ],
+     "q": "¿Qué parte de un robot podría mover un servo, un brazo o una cabeza?",
+     "c": "Mira un servo, encuentra sus tres cables y anota cuál es la señal."
+    },
+    "fr": {
+     "t": "Servomoteurs",
+     "g": "Découvre le moteur qui se place à l'angle que tu choisis.",
+     "p": [
+      "Un servo de loisir contient moteur, engrenages et capteur de position dans un petit boîtier.",
+      "Il a trois fils : alimentation, masse et signal de commande.",
+      "Une impulsion d'environ une à deux millisecondes, répétée toutes les vingt, fixe l'angle."
+     ],
+     "q": "Quelle partie d'un robot un servo pourrait-il bouger, un bras ou une tête ?",
+     "c": "Regarde un servo, trouve ses trois fils et note lequel est le signal."
+    },
+    "it": {
+     "t": "Servomotori",
+     "g": "Conosci il motore che si porta all'angolo che scegli.",
+     "p": [
+      "Un servo hobbistico ha motore, ingranaggi e sensore di posizione in un piccolo involucro.",
+      "Ha tre fili: alimentazione, massa e segnale di controllo.",
+      "Un impulso di circa uno-due millisecondi ripetuto ogni venti stabilisce l'angolo."
+     ],
+     "q": "Quale parte di un robot potrebbe muovere un servo, un braccio o una testa?",
+     "c": "Guarda un servo, trova i suoi tre fili e segna quale è il segnale."
+    },
+    "pt": {
+     "t": "Servomotores",
+     "g": "Conhece o motor que se move para o ângulo que escolheres.",
+     "p": [
+      "Um servo de hobby tem motor, engrenagens e sensor de posição numa caixa pequena.",
+      "Tem três fios: alimentação, massa e sinal de controlo.",
+      "Um impulso de cerca de um a dois milissegundos repetido a cada vinte define o ângulo."
+     ],
+     "q": "Que parte de um robô poderia mover um servo, um braço ou uma cabeça?",
+     "c": "Vê um servo, encontra os três fios e anota qual é o sinal."
+    },
+    "pt_BR": {
+     "t": "Servomotores",
+     "g": "Conheça o motor que se move para o ângulo que você escolher.",
+     "p": [
+      "Um servo de hobby tem motor, engrenagens e sensor de posição em uma caixa pequena.",
+      "Tem três fios: alimentação, terra e sinal de controle.",
+      "Um pulso de cerca de um a dois milissegundos repetido a cada vinte define o ângulo."
+     ],
+     "q": "Que parte de um robô um servo poderia mover, um braço ou uma cabeça?",
+     "c": "Olhe um servo, ache os três fios e anote qual é o sinal."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Controlling a servo in code",
+     "g": "Send angles to a servo and sweep it smoothly.",
+     "p": [
+      "A servo library turns an angle like 90 degrees into the right pulse for you.",
+      "Attach the signal wire to a pin and write the angle you want.",
+      "Sweep in small steps with short delays so the arm moves smoothly."
+     ],
+     "q": "What smooth movement would you like your servo to perform?",
+     "c": "Sweep a servo from 0 to 180 degrees and back, in small steps."
+    },
+    "de": {
+     "t": "Einen Servo im Code steuern",
+     "g": "Sende Winkel an einen Servo und lass ihn sanft schwenken.",
+     "p": [
+      "Eine Servo-Bibliothek macht aus einem Winkel wie 90 Grad den passenden Impuls.",
+      "Verbinde das Signalkabel mit einem Pin und schreibe den gewünschten Winkel.",
+      "Schwenke in kleinen Schritten mit kurzen Pausen, damit der Arm sanft fährt."
+     ],
+     "q": "Welche sanfte Bewegung soll dein Servo ausführen?",
+     "c": "Lass einen Servo in kleinen Schritten von 0 auf 180 Grad und zurück schwenken."
+    },
+    "es": {
+     "t": "Controlar un servo con código",
+     "g": "Envía ángulos a un servo y haz que barra con suavidad.",
+     "p": [
+      "Una librería de servos convierte un ángulo como 90 grados en el pulso adecuado.",
+      "Conecta el cable de señal a un pin y escribe el ángulo que quieras.",
+      "Barre en pasos pequeños con pausas cortas para que el brazo se mueva con suavidad."
+     ],
+     "q": "¿Qué movimiento suave te gustaría que hiciera tu servo?",
+     "c": "Haz que un servo vaya de 0 a 180 grados y vuelva, en pasos pequeños."
+    },
+    "fr": {
+     "t": "Piloter un servo par le code",
+     "g": "Envoie des angles à un servo et fais-le balayer en douceur.",
+     "p": [
+      "Une bibliothèque de servo transforme un angle comme 90 degrés en impulsion adaptée.",
+      "Relie le fil de signal à une broche et écris l'angle voulu.",
+      "Balaye par petits pas avec de courtes attentes pour que le bras bouge en douceur."
+     ],
+     "q": "Quel mouvement fluide voudrais-tu que ton servo réalise ?",
+     "c": "Fais balayer un servo de 0 à 180 degrés et retour, par petits pas."
+    },
+    "it": {
+     "t": "Controllare un servo con il codice",
+     "g": "Invia angoli a un servo e fallo muovere dolcemente avanti e indietro.",
+     "p": [
+      "Una libreria per servo trasforma un angolo come 90 gradi nell'impulso giusto.",
+      "Collega il filo di segnale a un pin e scrivi l'angolo desiderato.",
+      "Muovi a piccoli passi con brevi pause perché il braccio si muova dolcemente."
+     ],
+     "q": "Quale movimento fluido vorresti far fare al tuo servo?",
+     "c": "Fai muovere un servo da 0 a 180 gradi e ritorno, a piccoli passi."
+    },
+    "pt": {
+     "t": "Controlar um servo com código",
+     "g": "Envia ângulos a um servo e faz com que varra com suavidade.",
+     "p": [
+      "Uma biblioteca de servos converte um ângulo como 90 graus no impulso certo.",
+      "Liga o fio de sinal a um pino e escreve o ângulo que queres.",
+      "Varre em passos pequenos com pausas curtas para o braço mover-se com suavidade."
+     ],
+     "q": "Que movimento suave gostarias que o teu servo fizesse?",
+     "c": "Faz um servo ir de 0 a 180 graus e voltar, em passos pequenos."
+    },
+    "pt_BR": {
+     "t": "Controlando um servo com código",
+     "g": "Envie ângulos a um servo e faça-o varrer com suavidade.",
+     "p": [
+      "Uma biblioteca de servos converte um ângulo como 90 graus no pulso certo.",
+      "Ligue o fio de sinal a um pino e escreva o ângulo que você quer.",
+      "Varra em passos pequenos com pausas curtas para o braço se mover com suavidade."
+     ],
+     "q": "Que movimento suave você gostaria que seu servo fizesse?",
+     "c": "Faça um servo ir de 0 a 180 graus e voltar, em passos pequenos."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Continuous rotation servos",
+     "g": "Use a modified servo as an easy way to drive small wheels.",
+     "p": [
+      "A continuous rotation servo spins freely instead of holding an angle.",
+      "The command sets speed and direction: one value stops it, others spin each way.",
+      "With two of them, a small robot can drive, turn and spin in place."
+     ],
+     "q": "Would you rather drive with servos or with plain motors, and why?",
+     "c": "Find the stop value for a continuous servo, then test slow and fast each way."
+    },
+    "de": {
+     "t": "Servos mit kontinuierlicher Drehung",
+     "g": "Nutze einen umgebauten Servo als einfachen Antrieb für kleine Räder.",
+     "p": [
+      "Ein Servo mit kontinuierlicher Drehung dreht frei, statt einen Winkel zu halten.",
+      "Der Befehl bestimmt Tempo und Richtung: Ein Wert stoppt ihn, andere drehen jeweils in eine Richtung.",
+      "Mit zweien kann ein kleiner Roboter fahren, lenken und sich auf der Stelle drehen."
+     ],
+     "q": "Würdest du lieber mit Servos oder mit normalen Motoren fahren, und warum?",
+     "c": "Finde den Stoppwert eines Servos, dann teste langsam und schnell in beide Richtungen."
+    },
+    "es": {
+     "t": "Servos de rotación continua",
+     "g": "Usa un servo modificado como forma fácil de mover ruedas pequeñas.",
+     "p": [
+      "Un servo de rotación continua gira libremente en vez de mantener un ángulo.",
+      "La orden fija velocidad y sentido: un valor lo detiene y otros lo giran en cada sentido.",
+      "Con dos, un robot pequeño puede avanzar, girar y dar vueltas sobre sí mismo."
+     ],
+     "q": "¿Preferirías mover tu robot con servos o con motores normales y por qué?",
+     "c": "Encuentra el valor de parada de un servo continuo y prueba lento y rápido en cada sentido."
+    },
+    "fr": {
+     "t": "Servos à rotation continue",
+     "g": "Utilise un servo modifié pour entraîner facilement de petites roues.",
+     "p": [
+      "Un servo à rotation continue tourne librement au lieu de tenir un angle.",
+      "La commande fixe vitesse et sens : une valeur l'arrête, les autres le font tourner dans chaque sens.",
+      "Avec deux, un petit robot peut avancer, tourner et pivoter sur place."
+     ],
+     "q": "Préférerais-tu rouler avec des servos ou des moteurs ordinaires, et pourquoi ?",
+     "c": "Trouve la valeur d'arrêt d'un servo continu, puis teste lent et rapide dans chaque sens."
+    },
+    "it": {
+     "t": "Servo a rotazione continua",
+     "g": "Usa un servo modificato come modo semplice per muovere piccole ruote.",
+     "p": [
+      "Un servo a rotazione continua gira liberamente invece di mantenere un angolo.",
+      "Il comando imposta velocità e verso: un valore lo ferma, gli altri lo fanno girare nei due versi.",
+      "Con due servo un piccolo robot può avanzare, girare e ruotare sul posto."
+     ],
+     "q": "Preferiresti muoverti con servo o con motori normali, e perché?",
+     "c": "Trova il valore di arresto di un servo continuo, poi prova lento e veloce nei due versi."
+    },
+    "pt": {
+     "t": "Servos de rotação contínua",
+     "g": "Usa um servo modificado como forma fácil de mover rodas pequenas.",
+     "p": [
+      "Um servo de rotação contínua roda livremente em vez de manter um ângulo.",
+      "O comando define velocidade e sentido: um valor pára-o e outros fazem-no rodar em cada sentido.",
+      "Com dois, um robô pequeno pode andar, virar e rodar sobre si mesmo."
+     ],
+     "q": "Preferias mover o robô com servos ou com motores normais e porquê?",
+     "c": "Encontra o valor de paragem de um servo contínuo e testa lento e rápido em cada sentido."
+    },
+    "pt_BR": {
+     "t": "Servos de rotação contínua",
+     "g": "Use um servo modificado como forma fácil de mover rodas pequenas.",
+     "p": [
+      "Um servo de rotação contínua gira livremente em vez de manter um ângulo.",
+      "O comando define velocidade e sentido: um valor o para e outros o fazem girar em cada sentido.",
+      "Com dois, um robô pequeno pode andar, virar e girar no próprio eixo."
+     ],
+     "q": "Você preferiria mover o robô com servos ou com motores comuns, e por quê?",
+     "c": "Ache o valor de parada de um servo contínuo e teste lento e rápido em cada sentido."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gear motors and torque",
+     "g": "Trade speed for pushing power with a gearbox.",
+     "p": [
+      "A plain small motor spins fast but has little twisting force, called torque.",
+      "A gearbox slows the output and multiplies the torque by the gear ratio.",
+      "A 50 to 1 ratio gives about fifty times the torque at one fiftieth of the speed, minus losses."
+     ],
+     "q": "Does your robot need to be fast or strong, and what does that choose?",
+     "c": "Compare two gear ratios and decide which suits a slow, heavy robot."
+    },
+    "de": {
+     "t": "Getriebemotoren und Drehmoment",
+     "g": "Tausche Geschwindigkeit gegen Schubkraft mit einem Getriebe.",
+     "p": [
+      "Ein einfacher kleiner Motor dreht schnell, hat aber wenig Drehkraft, das Drehmoment.",
+      "Ein Getriebe bremst den Ausgang und vervielfacht das Drehmoment um das Übersetzungsverhältnis.",
+      "Bei 50 zu 1 erhältst du etwa das Fünfzigfache Drehmoment bei einem Fünfzigstel der Drehzahl, minus Verluste."
+     ],
+     "q": "Soll dein Roboter schnell oder stark sein und was bestimmt das?",
+     "c": "Vergleiche zwei Übersetzungen und entscheide, welche zu einem langsamen, schweren Roboter passt."
+    },
+    "es": {
+     "t": "Motorreductores y par",
+     "g": "Cambia velocidad por fuerza de empuje con una caja de engranajes.",
+     "p": [
+      "Un motor pequeño sin reductor gira rápido pero tiene poca fuerza de giro, el par.",
+      "Una caja reductora frena la salida y multiplica el par por la relación de engranajes.",
+      "Una relación de 50 a 1 da unas cincuenta veces el par a una cincuentava parte de la velocidad, menos pérdidas."
+     ],
+     "q": "¿Tu robot debe ser rápido o fuerte y qué decide eso?",
+     "c": "Compara dos relaciones de engranajes y decide cuál sirve para un robot lento y pesado."
+    },
+    "fr": {
+     "t": "Motoréducteurs et couple",
+     "g": "Échange de la vitesse contre de la force de poussée grâce à un réducteur.",
+     "p": [
+      "Un petit moteur seul tourne vite mais a peu de force de rotation, le couple.",
+      "Un réducteur ralentit la sortie et multiplie le couple par le rapport d'engrenages.",
+      "Un rapport de 50 pour 1 donne environ cinquante fois le couple à un cinquantième de la vitesse, pertes en moins."
+     ],
+     "q": "Ton robot doit-il être rapide ou fort, et qu'est-ce que cela décide ?",
+     "c": "Compare deux rapports d'engrenages et décide lequel convient à un robot lent et lourd."
+    },
+    "it": {
+     "t": "Motoriduttori e coppia",
+     "g": "Scambia velocità con forza di spinta usando un riduttore.",
+     "p": [
+      "Un piccolo motore semplice gira veloce ma ha poca forza di rotazione, la coppia.",
+      "Un riduttore rallenta l'uscita e moltiplica la coppia per il rapporto di riduzione.",
+      "Un rapporto di 50 a 1 dà circa cinquanta volte la coppia a un cinquantesimo della velocità, perdite escluse."
+     ],
+     "q": "Il tuo robot deve essere veloce o forte e cosa decide questo?",
+     "c": "Confronta due rapporti di riduzione e decidi quale va bene per un robot lento e pesante."
+    },
+    "pt": {
+     "t": "Motorredutores e binário",
+     "g": "Troca velocidade por força de empurre com uma caixa redutora.",
+     "p": [
+      "Um motor pequeno simples roda depressa mas tem pouca força de rotação, o binário.",
+      "Uma caixa redutora abranda a saída e multiplica o binário pela relação de engrenagens.",
+      "Uma relação de 50 para 1 dá cerca de cinquenta vezes o binário a um quinquagésimo da velocidade, menos perdas."
+     ],
+     "q": "O teu robô tem de ser rápido ou forte e o que decide isso?",
+     "c": "Compara duas relações de engrenagens e decide qual serve para um robô lento e pesado."
+    },
+    "pt_BR": {
+     "t": "Motorredutores e torque",
+     "g": "Troque velocidade por força de empurre com uma caixa de redução.",
+     "p": [
+      "Um motor pequeno simples gira rápido mas tem pouca força de rotação, o torque.",
+      "Uma caixa de redução diminui a saída e multiplica o torque pela relação de engrenagens.",
+      "Uma relação de 50 para 1 dá cerca de cinquenta vezes o torque a um cinquenta avos da velocidade, menos perdas."
+     ],
+     "q": "Seu robô precisa ser rápido ou forte e o que decide isso?",
+     "c": "Compare duas relações de engrenagens e decida qual serve para um robô lento e pesado."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wheels and traction",
+     "g": "See how wheel size and grip shape speed and turning.",
+     "p": [
+      "A bigger wheel travels farther per turn, so the robot goes faster at the same motor speed.",
+      "A smaller wheel gives more pushing force, as if using a lower gear.",
+      "Rubber tyres grip well, while hard plastic slips on smooth floors."
+     ],
+     "q": "What surface will your robot drive on, and which wheels suit it?",
+     "c": "Roll two different wheels across a table and see which grips better."
+    },
+    "de": {
+     "t": "Räder und Traktion",
+     "g": "Sieh, wie Radgröße und Haftung Tempo und Lenken beeinflussen.",
+     "p": [
+      "Ein größeres Rad legt pro Umdrehung mehr Weg zurück, der Roboter ist bei gleicher Motordrehzahl schneller.",
+      "Ein kleineres Rad gibt mehr Schubkraft, als hätte man einen niedrigeren Gang.",
+      "Gummireifen haften gut, hartes Plastik rutscht auf glattem Boden."
+     ],
+     "q": "Auf welchem Untergrund fährt dein Roboter und welche Räder passen dazu?",
+     "c": "Rolle zwei verschiedene Räder über einen Tisch und sieh, welches besser haftet."
+    },
+    "es": {
+     "t": "Ruedas y tracción",
+     "g": "Mira cómo el tamaño de la rueda y el agarre afectan la velocidad y los giros.",
+     "p": [
+      "Una rueda mayor avanza más por vuelta, así que el robot va más rápido con el mismo motor.",
+      "Una rueda menor da más fuerza de empuje, como una marcha más corta.",
+      "Los neumáticos de goma agarran bien y el plástico duro patina en suelos lisos."
+     ],
+     "q": "¿Sobre qué superficie rodará tu robot y qué ruedas le convienen?",
+     "c": "Haz rodar dos ruedas distintas por una mesa y mira cuál agarra mejor."
+    },
+    "fr": {
+     "t": "Roues et adhérence",
+     "g": "Vois comment la taille des roues et l'adhérence influencent vitesse et virages.",
+     "p": [
+      "Une grande roue parcourt plus de chemin par tour, le robot va plus vite à même vitesse de moteur.",
+      "Une petite roue donne plus de force de poussée, comme un rapport plus court.",
+      "Les pneus en caoutchouc adhèrent bien, le plastique dur glisse sur sol lisse."
+     ],
+     "q": "Sur quelle surface roulera ton robot et quelles roues lui conviennent ?",
+     "c": "Fais rouler deux roues différentes sur une table et vois laquelle adhère le mieux."
+    },
+    "it": {
+     "t": "Ruote e aderenza",
+     "g": "Scopri come dimensione delle ruote e aderenza influenzano velocità e curve.",
+     "p": [
+      "Una ruota più grande percorre più strada a giro, quindi il robot va più veloce a pari velocità del motore.",
+      "Una ruota più piccola dà più forza di spinta, come una marcia più corta.",
+      "Le gomme in gomma aderiscono bene, la plastica dura scivola sui pavimenti lisci."
+     ],
+     "q": "Su quale superficie viaggerà il tuo robot e quali ruote gli servono?",
+     "c": "Fai rotolare due ruote diverse su un tavolo e guarda quale aderisce meglio."
+    },
+    "pt": {
+     "t": "Rodas e tração",
+     "g": "Vê como o tamanho das rodas e a aderência afetam a velocidade e as curvas.",
+     "p": [
+      "Uma roda maior percorre mais por volta, por isso o robô anda mais depressa com o mesmo motor.",
+      "Uma roda menor dá mais força de empurre, como uma mudança mais curta.",
+      "Os pneus de borracha aderem bem e o plástico duro escorrega em pisos lisos."
+     ],
+     "q": "Em que superfície vai andar o teu robô e que rodas lhe servem?",
+     "c": "Faz rolar duas rodas diferentes numa mesa e vê qual adere melhor."
+    },
+    "pt_BR": {
+     "t": "Rodas e tração",
+     "g": "Veja como o tamanho das rodas e a aderência afetam a velocidade e as curvas.",
+     "p": [
+      "Uma roda maior percorre mais por volta, então o robô anda mais rápido com o mesmo motor.",
+      "Uma roda menor dá mais força de empurre, como uma marcha mais curta.",
+      "Os pneus de borracha aderem bem e o plástico duro escorrega em pisos lisos."
+     ],
+     "q": "Em que superfície seu robô vai andar e que rodas servem para ele?",
+     "c": "Role duas rodas diferentes numa mesa e veja qual adere melhor."
+    }
+   }
+  }
+ ]
+}

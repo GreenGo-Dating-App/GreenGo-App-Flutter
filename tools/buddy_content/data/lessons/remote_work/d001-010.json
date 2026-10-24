@@ -1,0 +1,835 @@
+{
+ "topic": "remote_work",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What remote work really means",
+     "g": "Learn the main forms of remote work and how they differ.",
+     "p": [
+      "Fully remote means no office at all; the team is spread out.",
+      "Hybrid mixes office days with home days; remote-first treats home as the default.",
+      "Freelancers and travelling workers also work remotely, each with their own rhythm."
+     ],
+     "q": "Which form of remote work sounds closest to your life right now?",
+     "c": "Today, write one line describing the setup you would like to have."
+    },
+    "de": {
+     "t": "Was Remote-Arbeit wirklich bedeutet",
+     "g": "Du lernst die wichtigsten Formen von Remote-Arbeit kennen und was sie unterscheidet.",
+     "p": [
+      "Voll remote heißt: kein Büro, das Team arbeitet verteilt.",
+      "Hybrid verbindet Bürotage mit Homeoffice; bei Remote-first ist zu Hause der Normalfall.",
+      "Auch Freelancer und reisende Berufstätige arbeiten remote, jeweils in eigenem Rhythmus."
+     ],
+     "q": "Welche Form klingt aktuell am ehesten nach deinem Leben?",
+     "c": "Schreib heute einen Satz auf, wie dein Wunsch-Arbeitsmodell aussieht."
+    },
+    "es": {
+     "t": "Qué significa de verdad el trabajo remoto",
+     "g": "Conocerás las formas principales de trabajo remoto y en qué se diferencian.",
+     "p": [
+      "Totalmente remoto significa sin oficina: el equipo está repartido.",
+      "El híbrido combina días en la oficina con días en casa; en remote-first, casa es lo habitual.",
+      "Freelances y personas que viajan también trabajan en remoto, cada una a su ritmo."
+     ],
+     "q": "¿Qué forma de trabajo remoto se parece más a tu vida ahora mismo?",
+     "c": "Hoy escribe una frase que describa la configuración que te gustaría tener."
+    },
+    "fr": {
+     "t": "Ce que signifie vraiment le télétravail",
+     "g": "Découvre les grandes formes de travail à distance et ce qui les distingue.",
+     "p": [
+      "Entièrement à distance, c'est sans bureau : l'équipe est dispersée.",
+      "Le mode hybride mêle jours au bureau et jours à la maison ; en remote-first, la maison est la norme.",
+      "Freelances et travailleurs nomades travaillent aussi à distance, chacun à son rythme."
+     ],
+     "q": "Quelle forme de travail à distance ressemble le plus à ta vie actuelle ?",
+     "c": "Aujourd'hui, écris une phrase décrivant l'organisation que tu aimerais avoir."
+    },
+    "it": {
+     "t": "Che cosa significa davvero lavorare da remoto",
+     "g": "Scopri le principali forme di lavoro da remoto e come si differenziano.",
+     "p": [
+      "Full remote significa niente ufficio: il team è distribuito.",
+      "L'ibrido alterna giorni in ufficio e a casa; nel remote-first la casa è la base.",
+      "Anche freelance e chi viaggia lavorano da remoto, ognuno con il proprio ritmo."
+     ],
+     "q": "Quale forma di lavoro da remoto è più vicina alla tua vita adesso?",
+     "c": "Oggi scrivi una riga che descriva l'assetto che vorresti avere."
+    },
+    "pt": {
+     "t": "O que significa realmente trabalhar remotamente",
+     "g": "Vais conhecer as principais formas de trabalho remoto e o que as distingue.",
+     "p": [
+      "Totalmente remoto quer dizer sem escritório: a equipa está espalhada.",
+      "O híbrido junta dias no escritório com dias em casa; no remote-first, a casa é o normal.",
+      "Freelancers e quem viaja também trabalham remotamente, cada um ao seu ritmo."
+     ],
+     "q": "Que forma de trabalho remoto se parece mais com a tua vida neste momento?",
+     "c": "Hoje escreve uma frase a descrever a organização que gostavas de ter."
+    },
+    "pt_BR": {
+     "t": "O que significa de verdade trabalhar remotamente",
+     "g": "Você vai conhecer as principais formas de trabalho remoto e o que as diferencia.",
+     "p": [
+      "Totalmente remoto quer dizer sem escritório: o time fica espalhado.",
+      "O híbrido mistura dias no escritório com dias em casa; no remote-first, a casa é o padrão.",
+      "Freelancers e quem viaja também trabalham remotamente, cada um no seu ritmo."
+     ],
+     "q": "Qual forma de trabalho remoto mais combina com a sua vida agora?",
+     "c": "Hoje escreva uma frase descrevendo o formato que você gostaria de ter."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your personal reasons for working remotely",
+     "g": "Clarify what you want from remote work so your choices fit you.",
+     "p": [
+      "Common reasons: focus, flexibility, family time, location freedom or autonomy.",
+      "Your top reason shapes your setup, your hours and the jobs you look for.",
+      "Reasons can change over time, so it is fine to review them now and then."
+     ],
+     "q": "What is the number one thing you hope remote work gives you?",
+     "c": "Rank your top three reasons on paper, with the most important first."
+    },
+    "de": {
+     "t": "Deine persönlichen Gründe für Remote-Arbeit",
+     "g": "Finde heraus, was du dir von Remote-Arbeit wünschst, damit deine Entscheidungen passen.",
+     "p": [
+      "Häufige Gründe: Fokus, Flexibilität, Familienzeit, Ortsfreiheit oder Selbstbestimmung.",
+      "Dein wichtigster Grund prägt Arbeitsplatz, Arbeitszeiten und die Jobs, die du suchst.",
+      "Gründe ändern sich mit der Zeit, darum lohnt sich ein gelegentlicher Rückblick."
+     ],
+     "q": "Was ist das Wichtigste, das du dir von Remote-Arbeit erhoffst?",
+     "c": "Bring deine drei wichtigsten Gründe schriftlich in eine Reihenfolge."
+    },
+    "es": {
+     "t": "Tus motivos personales para trabajar en remoto",
+     "g": "Aclara qué quieres del trabajo remoto para que tus decisiones encajen contigo.",
+     "p": [
+      "Motivos habituales: concentración, flexibilidad, tiempo en familia, libertad de lugar o autonomía.",
+      "Tu motivo principal define tu espacio, tus horarios y los empleos que buscas.",
+      "Los motivos cambian con el tiempo, así que conviene revisarlos de vez en cuando."
+     ],
+     "q": "¿Qué es lo principal que esperas que te dé el trabajo remoto?",
+     "c": "Ordena por escrito tus tres motivos principales, el más importante primero."
+    },
+    "fr": {
+     "t": "Tes raisons personnelles de travailler à distance",
+     "g": "Précise ce que tu attends du télétravail pour que tes choix te ressemblent.",
+     "p": [
+      "Raisons courantes : concentration, souplesse, temps en famille, liberté du lieu ou autonomie.",
+      "Ta raison principale influence ton espace, tes horaires et les postes que tu cherches.",
+      "Les raisons évoluent, alors il est bon de les revoir de temps en temps."
+     ],
+     "q": "Quelle est la chose la plus importante que tu attends du télétravail ?",
+     "c": "Classe par écrit tes trois raisons principales, la plus importante en premier."
+    },
+    "it": {
+     "t": "I tuoi motivi personali per lavorare da remoto",
+     "g": "Chiarisci cosa vuoi dal lavoro da remoto così le tue scelte ti somigliano.",
+     "p": [
+      "Motivi comuni: concentrazione, flessibilità, tempo in famiglia, libertà di luogo o autonomia.",
+      "Il tuo motivo principale influenza spazio, orari e il tipo di lavoro che cerchi.",
+      "I motivi cambiano nel tempo, quindi è utile rivederli ogni tanto."
+     ],
+     "q": "Qual è la cosa più importante che speri ti dia il lavoro da remoto?",
+     "c": "Metti in ordine su carta i tuoi tre motivi principali, il più importante per primo."
+    },
+    "pt": {
+     "t": "Os teus motivos pessoais para trabalhar remotamente",
+     "g": "Esclarece o que queres do trabalho remoto para que as escolhas combinem contigo.",
+     "p": [
+      "Motivos comuns: concentração, flexibilidade, tempo em família, liberdade de local ou autonomia.",
+      "O teu motivo principal molda o espaço, os horários e os empregos que procuras.",
+      "Os motivos mudam com o tempo, por isso convém revê-los de vez em quando."
+     ],
+     "q": "Qual é a coisa mais importante que esperas do trabalho remoto?",
+     "c": "Ordena por escrito os teus três motivos principais, o mais importante primeiro."
+    },
+    "pt_BR": {
+     "t": "Seus motivos pessoais para trabalhar remotamente",
+     "g": "Esclareça o que você quer do trabalho remoto para que suas escolhas combinem com você.",
+     "p": [
+      "Motivos comuns: foco, flexibilidade, tempo com a família, liberdade de lugar ou autonomia.",
+      "Seu motivo principal molda seu espaço, seus horários e as vagas que você procura.",
+      "Os motivos mudam com o tempo, então vale revisá-los de vez em quando."
+     ],
+     "q": "Qual é a coisa mais importante que você espera do trabalho remoto?",
+     "c": "Ordene por escrito seus três principais motivos, o mais importante primeiro."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The upsides of working from anywhere",
+     "g": "Spot the real benefits of remote work and how to make the most of them.",
+     "p": [
+      "No commute gives back time and energy; use it for sleep, movement or family.",
+      "Quiet hours at home can mean deeper focus and fewer interruptions.",
+      "Flexible hours and a wider choice of employers open more doors."
+     ],
+     "q": "Which upside would change your week the most?",
+     "c": "Pick one benefit and decide how you will use it this week."
+    },
+    "de": {
+     "t": "Die Vorteile, von überall zu arbeiten",
+     "g": "Erkenne die echten Vorteile von Remote-Arbeit und wie du sie nutzt.",
+     "p": [
+      "Kein Arbeitsweg spart Zeit und Energie; nutze sie für Schlaf, Bewegung oder Familie.",
+      "Ruhige Stunden zu Hause bedeuten oft tieferen Fokus und weniger Unterbrechungen.",
+      "Flexible Zeiten und eine größere Auswahl an Arbeitgebern öffnen neue Türen."
+     ],
+     "q": "Welcher Vorteil würde deine Woche am meisten verändern?",
+     "c": "Such dir einen Vorteil aus und plane, wie du ihn diese Woche nutzt."
+    },
+    "es": {
+     "t": "Las ventajas de trabajar desde cualquier lugar",
+     "g": "Reconoce los beneficios reales del trabajo remoto y cómo aprovecharlos.",
+     "p": [
+      "Sin desplazamientos ganas tiempo y energía; úsalos para dormir, moverte o estar en familia.",
+      "Las horas tranquilas en casa pueden dar más concentración y menos interrupciones.",
+      "Horarios flexibles y más opciones de empresa abren nuevas puertas."
+     ],
+     "q": "¿Qué ventaja cambiaría más tu semana?",
+     "c": "Elige un beneficio y decide cómo lo usarás esta semana."
+    },
+    "fr": {
+     "t": "Les avantages de travailler de n'importe où",
+     "g": "Repère les vrais bénéfices du télétravail et comment en profiter.",
+     "p": [
+      "Sans trajet, tu gagnes temps et énergie ; utilise-les pour dormir, bouger ou être en famille.",
+      "Des heures calmes à la maison offrent souvent plus de concentration et moins d'interruptions.",
+      "Des horaires souples et un choix d'employeurs plus large ouvrent des portes."
+     ],
+     "q": "Quel avantage changerait le plus ta semaine ?",
+     "c": "Choisis un avantage et décide comment tu l'utiliseras cette semaine."
+    },
+    "it": {
+     "t": "I vantaggi di lavorare da ovunque",
+     "g": "Riconosci i veri benefici del lavoro da remoto e come sfruttarli.",
+     "p": [
+      "Niente pendolarismo restituisce tempo ed energia: usali per dormire, muoverti o stare in famiglia.",
+      "Le ore tranquille a casa possono dare più concentrazione e meno interruzioni.",
+      "Orari flessibili e più scelta di datori di lavoro aprono nuove porte."
+     ],
+     "q": "Quale vantaggio cambierebbe di più la tua settimana?",
+     "c": "Scegli un vantaggio e decidi come usarlo questa settimana."
+    },
+    "pt": {
+     "t": "As vantagens de trabalhar de qualquer lugar",
+     "g": "Reconhece os benefícios reais do trabalho remoto e como aproveitá-los.",
+     "p": [
+      "Sem deslocações ganhas tempo e energia; usa-os para dormir, mexer-te ou estar em família.",
+      "Horas tranquilas em casa podem dar mais concentração e menos interrupções.",
+      "Horários flexíveis e mais escolha de empregadores abrem novas portas."
+     ],
+     "q": "Que vantagem mudaria mais a tua semana?",
+     "c": "Escolhe um benefício e decide como o vais usar esta semana."
+    },
+    "pt_BR": {
+     "t": "As vantagens de trabalhar de qualquer lugar",
+     "g": "Reconheça os benefícios reais do trabalho remoto e como aproveitá-los.",
+     "p": [
+      "Sem deslocamento você ganha tempo e energia; use-os para dormir, se mexer ou ficar com a família.",
+      "Horas tranquilas em casa podem dar mais foco e menos interrupções.",
+      "Horários flexíveis e mais opções de empregadores abrem novas portas."
+     ],
+     "q": "Qual vantagem mudaria mais a sua semana?",
+     "c": "Escolha um benefício e decida como vai usá-lo esta semana."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The honest challenges of remote work",
+     "g": "Name the usual difficulties early so they do not catch you off guard.",
+     "p": [
+      "Isolation can creep in when nobody drops by your desk.",
+      "Work and home blur easily, so boundaries need to be made on purpose.",
+      "Distractions and communication gaps are normal and can be managed."
+     ],
+     "q": "Which challenge do you expect to be the hardest for you?",
+     "c": "Write down one challenge and one small action that would ease it."
+    },
+    "de": {
+     "t": "Die ehrlichen Herausforderungen der Remote-Arbeit",
+     "g": "Benenne die typischen Schwierigkeiten früh, damit sie dich nicht überraschen.",
+     "p": [
+      "Isolation schleicht sich ein, wenn niemand am Schreibtisch vorbeikommt.",
+      "Arbeit und Zuhause verschwimmen leicht, also braucht es bewusste Grenzen.",
+      "Ablenkungen und Kommunikationslücken sind normal und lassen sich meistern."
+     ],
+     "q": "Welche Herausforderung wird für dich wohl die schwierigste?",
+     "c": "Notiere eine Herausforderung und eine kleine Handlung, die sie erleichtert."
+    },
+    "es": {
+     "t": "Los retos reales del trabajo remoto",
+     "g": "Nombra pronto las dificultades habituales para que no te pillen por sorpresa.",
+     "p": [
+      "El aislamiento aparece cuando nadie se pasa por tu mesa.",
+      "Trabajo y hogar se mezclan fácilmente, así que los límites se crean a propósito.",
+      "Las distracciones y los fallos de comunicación son normales y se pueden gestionar."
+     ],
+     "q": "¿Qué reto crees que será el más difícil para ti?",
+     "c": "Anota un reto y una pequeña acción que lo aliviaría."
+    },
+    "fr": {
+     "t": "Les vrais défis du télétravail",
+     "g": "Nomme tôt les difficultés habituelles pour qu'elles ne te surprennent pas.",
+     "p": [
+      "L'isolement s'installe quand personne ne passe à ton bureau.",
+      "Travail et maison se mélangent vite : il faut poser des limites volontairement.",
+      "Distractions et manques de communication sont normaux et se gèrent."
+     ],
+     "q": "Quel défi te semble le plus difficile pour toi ?",
+     "c": "Note un défi et une petite action qui l'adoucirait."
+    },
+    "it": {
+     "t": "Le sfide reali del lavoro da remoto",
+     "g": "Dai un nome presto alle difficoltà tipiche così non ti colgono di sorpresa.",
+     "p": [
+      "L'isolamento si insinua quando nessuno passa dalla tua scrivania.",
+      "Lavoro e casa si mescolano facilmente, quindi i confini vanno creati di proposito.",
+      "Distrazioni e lacune nella comunicazione sono normali e si possono gestire."
+     ],
+     "q": "Quale sfida pensi sarà la più difficile per te?",
+     "c": "Scrivi una sfida e una piccola azione che potrebbe alleggerirla."
+    },
+    "pt": {
+     "t": "Os desafios reais do trabalho remoto",
+     "g": "Dá nome cedo às dificuldades habituais para não seres apanhado de surpresa.",
+     "p": [
+      "O isolamento surge quando ninguém passa pela tua secretária.",
+      "Trabalho e casa misturam-se facilmente, por isso os limites criam-se de propósito.",
+      "Distrações e falhas de comunicação são normais e podem ser geridas."
+     ],
+     "q": "Que desafio achas que será o mais difícil para ti?",
+     "c": "Anota um desafio e uma pequena ação que o aliviaria."
+    },
+    "pt_BR": {
+     "t": "Os desafios reais do trabalho remoto",
+     "g": "Dê nome cedo às dificuldades comuns para não ser pego de surpresa.",
+     "p": [
+      "O isolamento aparece quando ninguém passa pela sua mesa.",
+      "Trabalho e casa se misturam fácil, então os limites são criados de propósito.",
+      "Distrações e falhas de comunicação são normais e dá para administrar."
+     ],
+     "q": "Qual desafio você acha que será o mais difícil para você?",
+     "c": "Anote um desafio e uma pequena ação que o aliviaria."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Remote, hybrid or office: finding your fit",
+     "g": "Compare work setups and notice which one suits your personality and tasks.",
+     "p": [
+      "Some people recharge alone; others need people around to feel energised.",
+      "Deep-focus tasks often suit home, while brainstorming can suit a shared room.",
+      "Hybrid can offer both, but only if days are planned with care."
+     ],
+     "q": "When do you do your best work: alone, with others, or a mix?",
+     "c": "List three tasks you do and mark where each would go best."
+    },
+    "de": {
+     "t": "Remote, hybrid oder Büro: Was passt zu dir?",
+     "g": "Vergleiche Arbeitsmodelle und finde heraus, was zu Persönlichkeit und Aufgaben passt.",
+     "p": [
+      "Manche tanken allein auf, andere brauchen Menschen um sich, um Energie zu spüren.",
+      "Fokusarbeit passt oft nach Hause, Brainstorming eher in einen gemeinsamen Raum.",
+      "Hybrid kann beides bieten, aber nur, wenn die Tage gut geplant sind."
+     ],
+     "q": "Wann arbeitest du am besten: allein, mit anderen oder gemischt?",
+     "c": "Liste drei Aufgaben auf und markiere, wo sie am besten laufen."
+    },
+    "es": {
+     "t": "Remoto, híbrido u oficina: encuentra tu encaje",
+     "g": "Compara formas de trabajar y descubre cuál encaja con tu personalidad y tus tareas.",
+     "p": [
+      "Algunas personas se recargan solas; otras necesitan gente alrededor para sentirse con energía.",
+      "Las tareas de concentración suelen ir bien en casa; la lluvia de ideas, en una sala compartida.",
+      "El híbrido puede ofrecer ambas cosas, pero solo si los días se planifican bien."
+     ],
+     "q": "¿Cuándo trabajas mejor: solo, con otros o con una mezcla?",
+     "c": "Anota tres tareas que haces y marca dónde saldrían mejor."
+    },
+    "fr": {
+     "t": "Remote, hybride ou bureau : trouver ton équilibre",
+     "g": "Compare les modes de travail et vois lequel convient à ta personnalité et à tes tâches.",
+     "p": [
+      "Certains se ressourcent seuls ; d'autres ont besoin de monde pour être en forme.",
+      "Les tâches de concentration vont souvent bien à la maison, le brainstorming en salle commune.",
+      "L'hybride peut offrir les deux, à condition de bien planifier les jours."
+     ],
+     "q": "Quand travailles-tu le mieux : seul, avec d'autres ou un mélange ?",
+     "c": "Liste trois tâches que tu fais et note où chacune se passerait le mieux."
+    },
+    "it": {
+     "t": "Remoto, ibrido o ufficio: trova il tuo posto",
+     "g": "Confronta i modi di lavorare e scopri quale si adatta a personalità e compiti.",
+     "p": [
+      "C'è chi si ricarica da solo e chi ha bisogno di persone attorno per sentirsi carico.",
+      "I compiti di concentrazione di solito vanno bene a casa, il brainstorming in una sala condivisa.",
+      "L'ibrido può dare entrambe le cose, ma solo se i giorni sono pianificati bene."
+     ],
+     "q": "Quando lavori meglio: da solo, con altri o un mix?",
+     "c": "Elenca tre attività che svolgi e segna dove riuscirebbero meglio."
+    },
+    "pt": {
+     "t": "Remoto, híbrido ou escritório: o teu lugar",
+     "g": "Compara formas de trabalhar e vê qual combina com a tua personalidade e tarefas.",
+     "p": [
+      "Há quem recarregue sozinho e quem precise de gente à volta para ganhar energia.",
+      "Tarefas de concentração costumam resultar em casa; o brainstorming numa sala partilhada.",
+      "O híbrido pode dar as duas coisas, mas só se os dias forem bem planeados."
+     ],
+     "q": "Quando trabalhas melhor: sozinho, com outros ou um misto?",
+     "c": "Lista três tarefas que fazes e marca onde resultariam melhor."
+    },
+    "pt_BR": {
+     "t": "Remoto, híbrido ou escritório: o seu lugar",
+     "g": "Compare formatos de trabalho e veja qual combina com sua personalidade e tarefas.",
+     "p": [
+      "Tem quem recarregue sozinho e quem precise de gente por perto para ganhar energia.",
+      "Tarefas de foco costumam render em casa; o brainstorming, numa sala compartilhada.",
+      "O híbrido pode dar as duas coisas, mas só se os dias forem bem planejados."
+     ],
+     "q": "Quando você trabalha melhor: sozinho, com outros ou misturado?",
+     "c": "Liste três tarefas que você faz e marque onde renderiam melhor."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Synchronous vs asynchronous work",
+     "g": "Understand real-time work versus work done on each person's own schedule.",
+     "p": [
+      "Synchronous means live: calls, meetings and instant replies.",
+      "Asynchronous means people reply when it suits them, like email or shared notes.",
+      "Async protects focus and helps across time zones, while sync builds quick alignment."
+     ],
+     "q": "Which of your recent tasks could have been async instead of a meeting?",
+     "c": "Turn one routine question into a written message instead of a call today."
+    },
+    "de": {
+     "t": "Synchrone und asynchrone Arbeit",
+     "g": "Verstehe den Unterschied zwischen Arbeit in Echtzeit und zeitversetzter Arbeit.",
+     "p": [
+      "Synchron heißt live: Anrufe, Meetings und sofortige Antworten.",
+      "Asynchron heißt: Jeder antwortet, wenn es passt, etwa per E-Mail oder gemeinsamen Notizen.",
+      "Async schützt den Fokus und hilft über Zeitzonen hinweg, sync schafft schnelle Abstimmung."
+     ],
+     "q": "Welche deiner letzten Aufgaben hätte statt eines Meetings async laufen können?",
+     "c": "Verwandle heute eine Routinefrage in eine schriftliche Nachricht statt eines Anrufs."
+    },
+    "es": {
+     "t": "Trabajo síncrono y asíncrono",
+     "g": "Entiende la diferencia entre trabajar en tiempo real y a tu propio ritmo.",
+     "p": [
+      "Síncrono significa en directo: llamadas, reuniones y respuestas inmediatas.",
+      "Asíncrono significa que cada uno responde cuando puede, como en el correo o en notas compartidas.",
+      "Lo asíncrono protege la concentración y ayuda con husos horarios; lo síncrono alinea rápido."
+     ],
+     "q": "¿Qué tarea reciente podría haber sido asíncrona en vez de una reunión?",
+     "c": "Hoy convierte una pregunta rutinaria en un mensaje escrito en vez de una llamada."
+    },
+    "fr": {
+     "t": "Travail synchrone et asynchrone",
+     "g": "Comprends la différence entre travail en temps réel et travail à son propre rythme.",
+     "p": [
+      "Synchrone, c'est en direct : appels, réunions et réponses immédiates.",
+      "Asynchrone, c'est répondre quand cela convient, comme par e-mail ou notes partagées.",
+      "L'asynchrone protège la concentration et aide entre fuseaux horaires ; le synchrone aligne vite."
+     ],
+     "q": "Quelle tâche récente aurait pu être asynchrone plutôt qu'une réunion ?",
+     "c": "Aujourd'hui, transforme une question de routine en message écrit plutôt qu'en appel."
+    },
+    "it": {
+     "t": "Lavoro sincrono e asincrono",
+     "g": "Capisci la differenza tra lavorare in tempo reale e con i propri tempi.",
+     "p": [
+      "Sincrono significa in diretta: chiamate, riunioni e risposte immediate.",
+      "Asincrono significa che ognuno risponde quando può, come con email o note condivise.",
+      "L'asincrono protegge la concentrazione e aiuta tra fusi orari; il sincrono allinea in fretta."
+     ],
+     "q": "Quale tua attività recente poteva essere asincrona invece di una riunione?",
+     "c": "Oggi trasforma una domanda di routine in un messaggio scritto anziché una chiamata."
+    },
+    "pt": {
+     "t": "Trabalho síncrono e assíncrono",
+     "g": "Percebe a diferença entre trabalhar em tempo real e ao teu próprio ritmo.",
+     "p": [
+      "Síncrono quer dizer em direto: chamadas, reuniões e respostas imediatas.",
+      "Assíncrono quer dizer que cada um responde quando pode, como no email ou em notas partilhadas.",
+      "O assíncrono protege a concentração e ajuda entre fusos horários; o síncrono alinha depressa."
+     ],
+     "q": "Que tarefa recente podia ter sido assíncrona em vez de uma reunião?",
+     "c": "Hoje transforma uma pergunta de rotina numa mensagem escrita em vez de uma chamada."
+    },
+    "pt_BR": {
+     "t": "Trabalho síncrono e assíncrono",
+     "g": "Entenda a diferença entre trabalhar em tempo real e no seu próprio ritmo.",
+     "p": [
+      "Síncrono quer dizer ao vivo: chamadas, reuniões e respostas imediatas.",
+      "Assíncrono quer dizer que cada um responde quando pode, como no e-mail ou em notas compartilhadas.",
+      "O assíncrono protege o foco e ajuda entre fusos horários; o síncrono alinha rápido."
+     ],
+     "q": "Qual tarefa recente poderia ter sido assíncrona em vez de uma reunião?",
+     "c": "Hoje transforme uma pergunta de rotina numa mensagem escrita em vez de uma ligação."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The remote work mindset",
+     "g": "See why ownership, self-direction and trust are the base of remote work.",
+     "p": [
+      "Ownership means you notice what needs doing and follow through.",
+      "Self-direction means planning your own day without someone watching.",
+      "Trust grows when you deliver reliably and share progress openly."
+     ],
+     "q": "When have you worked well without anyone supervising you?",
+     "c": "Share one small update proactively today, before anyone asks for it."
+    },
+    "de": {
+     "t": "Die Remote-Denkweise",
+     "g": "Erkenne, warum Eigenverantwortung, Selbststeuerung und Vertrauen die Basis sind.",
+     "p": [
+      "Eigenverantwortung heißt: Du siehst, was zu tun ist, und bringst es zu Ende.",
+      "Selbststeuerung heißt, den eigenen Tag zu planen, ohne dass jemand zusieht.",
+      "Vertrauen wächst, wenn du verlässlich lieferst und Fortschritte offen teilst."
+     ],
+     "q": "Wann hast du schon gut gearbeitet, ohne dass dich jemand kontrolliert hat?",
+     "c": "Teile heute von dir aus ein kleines Update, bevor jemand danach fragt."
+    },
+    "es": {
+     "t": "La mentalidad del trabajo remoto",
+     "g": "Descubre por qué la responsabilidad, la autonomía y la confianza son la base.",
+     "p": [
+      "Responsabilidad es ver lo que hay que hacer y llevarlo hasta el final.",
+      "Autonomía es planificar tu día sin que nadie te vigile.",
+      "La confianza crece cuando cumples con fiabilidad y compartes tus avances con transparencia."
+     ],
+     "q": "¿Cuándo has trabajado bien sin que nadie te supervisara?",
+     "c": "Hoy comparte una pequeña actualización por iniciativa propia, antes de que te la pidan."
+    },
+    "fr": {
+     "t": "L'état d'esprit du télétravail",
+     "g": "Vois pourquoi responsabilité, autonomie et confiance en sont la base.",
+     "p": [
+      "La responsabilité, c'est voir ce qui doit être fait et aller jusqu'au bout.",
+      "L'autonomie, c'est planifier sa journée sans que personne ne regarde.",
+      "La confiance grandit quand tu livres avec fiabilité et partages tes avancées ouvertement."
+     ],
+     "q": "Quand as-tu bien travaillé sans que personne ne te supervise ?",
+     "c": "Aujourd'hui, partage spontanément une petite mise à jour, avant qu'on te la demande."
+    },
+    "it": {
+     "t": "La mentalità del lavoro da remoto",
+     "g": "Scopri perché responsabilità, autonomia e fiducia ne sono la base.",
+     "p": [
+      "Responsabilità significa vedere cosa va fatto e portarlo a termine.",
+      "Autonomia significa pianificare la propria giornata senza che qualcuno controlli.",
+      "La fiducia cresce quando consegni con affidabilità e condividi i progressi apertamente."
+     ],
+     "q": "Quando hai lavorato bene senza che nessuno ti supervisionasse?",
+     "c": "Oggi condividi di tua iniziativa un piccolo aggiornamento, prima che te lo chiedano."
+    },
+    "pt": {
+     "t": "A mentalidade do trabalho remoto",
+     "g": "Percebe porque a responsabilidade, a autonomia e a confiança são a base.",
+     "p": [
+      "Responsabilidade é ver o que há a fazer e levar até ao fim.",
+      "Autonomia é planear o teu dia sem ninguém a vigiar.",
+      "A confiança cresce quando entregas com fiabilidade e partilhas o progresso abertamente."
+     ],
+     "q": "Quando é que trabalhaste bem sem ninguém a supervisionar-te?",
+     "c": "Hoje partilha, por iniciativa tua, uma pequena atualização antes de ta pedirem."
+    },
+    "pt_BR": {
+     "t": "A mentalidade do trabalho remoto",
+     "g": "Entenda por que responsabilidade, autonomia e confiança são a base.",
+     "p": [
+      "Responsabilidade é ver o que precisa ser feito e levar até o fim.",
+      "Autonomia é planejar seu dia sem ninguém vigiando.",
+      "A confiança cresce quando você entrega com consistência e compartilha o progresso abertamente."
+     ],
+     "q": "Quando você trabalhou bem sem ninguém supervisionando?",
+     "c": "Hoje compartilhe, por iniciativa própria, uma pequena atualização antes de pedirem."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Remote work vocabulary",
+     "g": "Learn everyday remote terms so team chats feel familiar.",
+     "p": [
+      "Async means not at the same time; standup is a short daily check-in.",
+      "WFH is working from home; coworking is a shared workspace for independents.",
+      "Time zone overlap means the hours when two locations are both working."
+     ],
+     "q": "Which of these terms have you already heard at work?",
+     "c": "Use one new term in a real message or conversation today."
+    },
+    "de": {
+     "t": "Vokabeln der Remote-Arbeit",
+     "g": "Lerne alltägliche Begriffe, damit Team-Chats vertraut klingen.",
+     "p": [
+      "Async heißt nicht gleichzeitig; Standup ist ein kurzes tägliches Check-in.",
+      "WFH heißt von zu Hause arbeiten; Coworking ist ein gemeinsamer Arbeitsraum für Selbstständige.",
+      "Zeitzonen-Überschneidung sind die Stunden, in denen beide Orte arbeiten."
+     ],
+     "q": "Welche dieser Begriffe hast du schon bei der Arbeit gehört?",
+     "c": "Benutze heute einen neuen Begriff in einer echten Nachricht oder einem Gespräch."
+    },
+    "es": {
+     "t": "Vocabulario del trabajo remoto",
+     "g": "Aprende términos habituales para que los chats de equipo te resulten familiares.",
+     "p": [
+      "Async es no a la vez; standup es una breve reunión diaria de seguimiento.",
+      "WFH es trabajar desde casa; coworking es un espacio compartido para profesionales independientes.",
+      "La coincidencia horaria son las horas en que dos lugares trabajan a la vez."
+     ],
+     "q": "¿Cuáles de estos términos ya has oído en el trabajo?",
+     "c": "Hoy usa un término nuevo en un mensaje o conversación real."
+    },
+    "fr": {
+     "t": "Le vocabulaire du travail à distance",
+     "g": "Apprends les termes courants pour que les discussions d'équipe te paraissent familières.",
+     "p": [
+      "Async veut dire pas en même temps ; le standup est un court point quotidien.",
+      "WFH, c'est travailler depuis chez soi ; le coworking est un espace partagé pour indépendants.",
+      "Le chevauchement horaire, ce sont les heures où deux lieux travaillent à la fois."
+     ],
+     "q": "Lesquels de ces termes as-tu déjà entendus au travail ?",
+     "c": "Aujourd'hui, utilise un nouveau terme dans un vrai message ou une vraie conversation."
+    },
+    "it": {
+     "t": "Il vocabolario del lavoro da remoto",
+     "g": "Impara i termini di tutti i giorni così le chat di team ti sembrano familiari.",
+     "p": [
+      "Async significa non allo stesso momento; standup è un breve punto quotidiano.",
+      "WFH è lavorare da casa; coworking è uno spazio condiviso per chi lavora in autonomia.",
+      "La sovrapposizione di fusi sono le ore in cui due luoghi lavorano insieme."
+     ],
+     "q": "Quali di questi termini hai già sentito al lavoro?",
+     "c": "Oggi usa un termine nuovo in un messaggio o una conversazione vera."
+    },
+    "pt": {
+     "t": "Vocabulário do trabalho remoto",
+     "g": "Aprende termos do dia a dia para que as conversas de equipa te soem familiares.",
+     "p": [
+      "Async é não ao mesmo tempo; standup é um ponto diário curto.",
+      "WFH é trabalhar a partir de casa; coworking é um espaço partilhado para independentes.",
+      "A sobreposição de fusos são as horas em que dois locais trabalham ao mesmo tempo."
+     ],
+     "q": "Quais destes termos já ouviste no trabalho?",
+     "c": "Hoje usa um termo novo numa mensagem ou conversa real."
+    },
+    "pt_BR": {
+     "t": "Vocabulário do trabalho remoto",
+     "g": "Aprenda termos do dia a dia para que as conversas do time soem familiares.",
+     "p": [
+      "Async é não ao mesmo tempo; standup é uma reunião diária curta.",
+      "WFH é trabalhar de casa; coworking é um espaço compartilhado para autônomos.",
+      "A sobreposição de fusos são as horas em que dois locais trabalham ao mesmo tempo."
+     ],
+     "q": "Quais desses termos você já ouviu no trabalho?",
+     "c": "Hoje use um termo novo numa mensagem ou conversa real."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Myths about remote work",
+     "g": "Bust common myths so you can judge remote work fairly.",
+     "p": [
+      "Myth: remote people are less productive. Results depend on habits, not location.",
+      "Myth: remote workers are always available; healthy boundaries matter.",
+      "Myth: it is always lonely; connection takes effort but is very possible."
+     ],
+     "q": "Which myth have you heard most often from friends or family?",
+     "c": "Share one fact from today's lesson with someone who believes a myth."
+    },
+    "de": {
+     "t": "Mythen über Remote-Arbeit",
+     "g": "Räume mit gängigen Mythen auf, um Remote-Arbeit fair zu beurteilen.",
+     "p": [
+      "Mythos: Remote-Arbeitende sind weniger produktiv. Ergebnisse hängen von Gewohnheiten ab, nicht vom Ort.",
+      "Mythos: Remote-Arbeitende sind immer erreichbar; gesunde Grenzen sind wichtig.",
+      "Mythos: Es ist immer einsam; Verbindung braucht Mühe, ist aber gut möglich."
+     ],
+     "q": "Welchen Mythos hast du von Freunden oder Familie am häufigsten gehört?",
+     "c": "Teile einen Fakt aus der heutigen Lektion mit jemandem, der an einen Mythos glaubt."
+    },
+    "es": {
+     "t": "Mitos sobre el trabajo remoto",
+     "g": "Desmonta mitos comunes para juzgar el trabajo remoto con justicia.",
+     "p": [
+      "Mito: quien trabaja en remoto rinde menos. El resultado depende de los hábitos, no del lugar.",
+      "Mito: están siempre disponibles; los límites sanos son importantes.",
+      "Mito: siempre es solitario; conectar requiere esfuerzo, pero es muy posible."
+     ],
+     "q": "¿Qué mito has oído más a menudo entre amigos o familia?",
+     "c": "Comparte un dato de la lección de hoy con alguien que crea en un mito."
+    },
+    "fr": {
+     "t": "Les mythes du télétravail",
+     "g": "Démonte les mythes courants pour juger le travail à distance avec justesse.",
+     "p": [
+      "Mythe : les télétravailleurs sont moins productifs. Les résultats dépendent des habitudes, pas du lieu.",
+      "Mythe : ils sont toujours disponibles ; des limites saines comptent.",
+      "Mythe : c'est toujours solitaire ; le lien demande des efforts, mais il est tout à fait possible."
+     ],
+     "q": "Quel mythe as-tu le plus souvent entendu chez tes amis ou ta famille ?",
+     "c": "Partage un fait de la leçon du jour avec quelqu'un qui croit à un mythe."
+    },
+    "it": {
+     "t": "I miti sul lavoro da remoto",
+     "g": "Sfata i miti più comuni per giudicare il lavoro da remoto in modo equo.",
+     "p": [
+      "Mito: chi lavora da remoto è meno produttivo. I risultati dipendono dalle abitudini, non dal luogo.",
+      "Mito: sono sempre reperibili; confini sani sono importanti.",
+      "Mito: è sempre solitario; i legami richiedono impegno ma sono possibilissimi."
+     ],
+     "q": "Quale mito hai sentito più spesso da amici o familiari?",
+     "c": "Condividi un fatto della lezione di oggi con qualcuno che crede a un mito."
+    },
+    "pt": {
+     "t": "Mitos sobre o trabalho remoto",
+     "g": "Desfaz mitos comuns para avaliares o trabalho remoto com justiça.",
+     "p": [
+      "Mito: quem trabalha remotamente rende menos. O resultado depende dos hábitos, não do local.",
+      "Mito: estão sempre disponíveis; limites saudáveis são importantes.",
+      "Mito: é sempre solitário; criar ligação exige esforço, mas é perfeitamente possível."
+     ],
+     "q": "Que mito ouviste mais vezes entre amigos ou família?",
+     "c": "Partilha um facto da lição de hoje com alguém que acredite num mito."
+    },
+    "pt_BR": {
+     "t": "Mitos sobre o trabalho remoto",
+     "g": "Desfaça mitos comuns para avaliar o trabalho remoto com justiça.",
+     "p": [
+      "Mito: quem trabalha remotamente rende menos. O resultado depende dos hábitos, não do lugar.",
+      "Mito: estão sempre disponíveis; limites saudáveis são importantes.",
+      "Mito: é sempre solitário; criar conexão exige esforço, mas é totalmente possível."
+     ],
+     "q": "Qual mito você mais ouviu de amigos ou família?",
+     "c": "Compartilhe um fato da lição de hoje com alguém que acredita num mito."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your remote work starting point",
+     "g": "Take a quick self-check of your habits, setup and goals.",
+     "p": [
+      "Look at three areas: your space, your routine and your communication.",
+      "Rate each from one to five, kindly and without judging yourself.",
+      "Choose one area to improve first; small steps beat big overhauls."
+     ],
+     "q": "Which area scored lowest, and what feels like an easy first step?",
+     "c": "Write your three scores and one next step where you will see it daily."
+    },
+    "de": {
+     "t": "Dein Startpunkt in der Remote-Arbeit",
+     "g": "Mach einen schnellen Selbstcheck deiner Gewohnheiten, deines Arbeitsplatzes und deiner Ziele.",
+     "p": [
+      "Schau auf drei Bereiche: Arbeitsplatz, Routine und Kommunikation.",
+      "Bewerte jeden von eins bis fünf, freundlich und ohne dich zu verurteilen.",
+      "Wähle einen Bereich zum Verbessern; kleine Schritte schlagen große Umbrüche."
+     ],
+     "q": "Welcher Bereich hat am schlechtesten abgeschnitten, und was wäre ein leichter erster Schritt?",
+     "c": "Schreib deine drei Werte und einen nächsten Schritt dorthin, wo du sie täglich siehst."
+    },
+    "es": {
+     "t": "Tu punto de partida en el trabajo remoto",
+     "g": "Haz un autochequeo rápido de tus hábitos, tu espacio y tus metas.",
+     "p": [
+      "Mira tres áreas: tu espacio, tu rutina y tu comunicación.",
+      "Puntúa cada una de uno a cinco, con amabilidad y sin juzgarte.",
+      "Elige un área para mejorar primero; los pasos pequeños ganan a los grandes cambios."
+     ],
+     "q": "¿Qué área sacó menos puntos y cuál sería un primer paso fácil?",
+     "c": "Escribe tus tres puntuaciones y un siguiente paso donde lo veas a diario."
+    },
+    "fr": {
+     "t": "Ton point de départ en télétravail",
+     "g": "Fais un rapide bilan de tes habitudes, de ton espace et de tes objectifs.",
+     "p": [
+      "Regarde trois domaines : ton espace, ta routine et ta communication.",
+      "Note chacun de un à cinq, avec bienveillance et sans te juger.",
+      "Choisis un domaine à améliorer d'abord ; les petits pas valent mieux que les grands bouleversements."
+     ],
+     "q": "Quel domaine a le plus bas score, et quel serait un premier pas facile ?",
+     "c": "Écris tes trois notes et un prochain pas à un endroit que tu vois chaque jour."
+    },
+    "it": {
+     "t": "Il tuo punto di partenza nel lavoro da remoto",
+     "g": "Fai un rapido check di abitudini, spazio e obiettivi.",
+     "p": [
+      "Guarda tre aree: spazio, routine e comunicazione.",
+      "Dai a ciascuna un voto da uno a cinque, con gentilezza e senza giudicarti.",
+      "Scegli un'area da migliorare per prima; i piccoli passi battono le grandi rivoluzioni."
+     ],
+     "q": "Quale area ha ottenuto il voto più basso e quale sarebbe un primo passo facile?",
+     "c": "Scrivi i tre voti e un prossimo passo dove li vedi ogni giorno."
+    },
+    "pt": {
+     "t": "O teu ponto de partida no trabalho remoto",
+     "g": "Faz uma verificação rápida dos teus hábitos, espaço e objetivos.",
+     "p": [
+      "Olha para três áreas: o teu espaço, a tua rotina e a tua comunicação.",
+      "Avalia cada uma de um a cinco, com gentileza e sem te julgares.",
+      "Escolhe uma área para melhorar primeiro; pequenos passos vencem grandes revoluções."
+     ],
+     "q": "Que área teve a pontuação mais baixa e qual seria um primeiro passo fácil?",
+     "c": "Escreve as três notas e um próximo passo onde os vejas todos os dias."
+    },
+    "pt_BR": {
+     "t": "O seu ponto de partida no trabalho remoto",
+     "g": "Faça uma checagem rápida dos seus hábitos, espaço e objetivos.",
+     "p": [
+      "Olhe para três áreas: seu espaço, sua rotina e sua comunicação.",
+      "Dê a cada uma uma nota de um a cinco, com gentileza e sem se julgar.",
+      "Escolha uma área para melhorar primeiro; passos pequenos vencem grandes reformas."
+     ],
+     "q": "Qual área ficou com a nota mais baixa e qual seria um primeiro passo fácil?",
+     "c": "Escreva as três notas e um próximo passo onde você veja todo dia."
+    }
+   }
+  }
+ ]
+}

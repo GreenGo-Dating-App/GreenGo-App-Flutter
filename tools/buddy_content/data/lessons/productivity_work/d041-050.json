@@ -1,0 +1,835 @@
+{
+ "topic": "productivity_work",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Email basics",
+     "g": "Learn why email can drain your day and how to take back control.",
+     "p": [
+      "Email is a tool for communication, not a to-do list written by others.",
+      "Constant checking breaks your focus into small pieces.",
+      "You decide when email gets your attention, not the inbox."
+     ],
+     "q": "How do you feel when you open your inbox?",
+     "c": "Notice how often you open email today and just count it."
+    },
+    "de": {
+     "t": "E-Mail-Grundlagen",
+     "g": "Verstehen, warum E-Mails den Tag aufzehren können und wie du die Kontrolle zurückholst.",
+     "p": [
+      "E-Mail ist ein Kommunikationsmittel, keine fremdgeschriebene To-do-Liste.",
+      "Ständiges Nachsehen zerstückelt deinen Fokus.",
+      "Du entscheidest, wann E-Mail Aufmerksamkeit bekommt, nicht der Posteingang."
+     ],
+     "q": "Wie fühlst du dich, wenn du deinen Posteingang öffnest?",
+     "c": "Beobachte heute, wie oft du E-Mails öffnest, und zähle einfach mit."
+    },
+    "es": {
+     "t": "Nociones básicas del correo",
+     "g": "Entender por qué el correo puede agotar tu día y cómo recuperar el control.",
+     "p": [
+      "El correo es una herramienta de comunicación, no una lista de tareas escrita por otros.",
+      "Revisarlo sin parar fragmenta tu concentración.",
+      "Tú decides cuándo el correo recibe tu atención, no la bandeja."
+     ],
+     "q": "¿Cómo te sientes al abrir tu bandeja de entrada?",
+     "c": "Fíjate hoy en cuántas veces abres el correo y simplemente cuéntalas."
+    },
+    "fr": {
+     "t": "Les bases de l'e-mail",
+     "g": "Comprendre pourquoi l'e-mail peut épuiser la journée et reprendre le contrôle.",
+     "p": [
+      "L'e-mail est un outil de communication, pas une liste de tâches écrite par d'autres.",
+      "Le consulter sans cesse fragmente votre concentration.",
+      "C'est vous qui décidez quand l'e-mail a votre attention, pas la boîte."
+     ],
+     "q": "Que ressentez-vous en ouvrant votre boîte de réception ?",
+     "c": "Observez aujourd'hui combien de fois vous ouvrez vos e-mails et comptez."
+    },
+    "it": {
+     "t": "Basi della posta elettronica",
+     "g": "Capire perché l'email può prosciugare la giornata e come riprendere il controllo.",
+     "p": [
+      "L'email è uno strumento di comunicazione, non una lista di cose scritta da altri.",
+      "Controllarla di continuo frammenta la concentrazione.",
+      "Decidi tu quando l'email riceve attenzione, non la posta in arrivo."
+     ],
+     "q": "Come ti senti quando apri la posta in arrivo?",
+     "c": "Osserva oggi quante volte apri l'email e conta semplicemente."
+    },
+    "pt": {
+     "t": "Noções básicas de email",
+     "g": "Perceber porque o email pode esgotar o dia e como retomar o controlo.",
+     "p": [
+      "O email é uma ferramenta de comunicação, não uma lista de tarefas escrita por outros.",
+      "Verificá-lo sem parar fragmenta a tua concentração.",
+      "Tu decides quando o email recebe atenção, não a caixa de entrada."
+     ],
+     "q": "Como te sentes quando abres a caixa de entrada?",
+     "c": "Repara hoje quantas vezes abres o email e limita-te a contar."
+    },
+    "pt_BR": {
+     "t": "Noções básicas de e-mail",
+     "g": "Entender por que o e-mail pode esgotar o dia e como retomar o controle.",
+     "p": [
+      "O e-mail é uma ferramenta de comunicação, não uma lista de tarefas escrita por outros.",
+      "Checar sem parar fragmenta sua concentração.",
+      "Você decide quando o e-mail recebe atenção, não a caixa de entrada."
+     ],
+     "q": "Como você se sente ao abrir sua caixa de entrada?",
+     "c": "Perceba hoje quantas vezes abre o e-mail e só conte."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Checking email in batches",
+     "g": "Set specific times for email instead of constant checking.",
+     "p": [
+      "Pick two or three fixed times a day to process email.",
+      "Close the email tab between those times.",
+      "Most messages can wait a few hours without any harm."
+     ],
+     "q": "When during the day would email checks fit your rhythm best?",
+     "c": "Choose two email times today and stick to them."
+    },
+    "de": {
+     "t": "E-Mails gebündelt abarbeiten",
+     "g": "Feste Zeiten für E-Mail statt ständigem Nachsehen festlegen.",
+     "p": [
+      "Wähle zwei oder drei feste Zeiten am Tag für E-Mails.",
+      "Schließ den E-Mail-Tab zwischen diesen Zeiten.",
+      "Die meisten Nachrichten können ein paar Stunden ohne Schaden warten."
+     ],
+     "q": "Wann am Tag passen E-Mail-Zeiten am besten zu deinem Rhythmus?",
+     "c": "Wähle heute zwei E-Mail-Zeiten und halte dich daran."
+    },
+    "es": {
+     "t": "Revisar el correo por lotes",
+     "g": "Fijar horas concretas para el correo en lugar de mirarlo sin parar.",
+     "p": [
+      "Elige dos o tres momentos fijos al día para procesar el correo.",
+      "Cierra la pestaña del correo entre esos momentos.",
+      "La mayoría de los mensajes pueden esperar unas horas sin problema."
+     ],
+     "q": "¿En qué momentos del día encajaría mejor revisar el correo?",
+     "c": "Elige hoy dos horas para el correo y respétalas."
+    },
+    "fr": {
+     "t": "Traiter ses e-mails par lots",
+     "g": "Fixer des moments précis pour l'e-mail plutôt que de le consulter sans cesse.",
+     "p": [
+      "Choisissez deux ou trois moments fixes par jour pour traiter l'e-mail.",
+      "Fermez l'onglet de messagerie entre ces moments.",
+      "La plupart des messages peuvent attendre quelques heures sans dommage."
+     ],
+     "q": "À quels moments de la journée vérifier vos e-mails vous convient le mieux ?",
+     "c": "Choisissez deux moments pour l'e-mail aujourd'hui et tenez-vous-y."
+    },
+    "it": {
+     "t": "Controllare l'email a blocchi",
+     "g": "Fissare orari precisi per l'email invece di controllarla di continuo.",
+     "p": [
+      "Scegli due o tre orari fissi al giorno per gestire l'email.",
+      "Chiudi la scheda della posta tra un momento e l'altro.",
+      "La maggior parte dei messaggi può aspettare qualche ora senza danni."
+     ],
+     "q": "In quali momenti della giornata ti starebbe meglio controllare l'email?",
+     "c": "Scegli oggi due orari per l'email e rispettali."
+    },
+    "pt": {
+     "t": "Ver o email por lotes",
+     "g": "Definir horas fixas para o email em vez de o verificar sem parar.",
+     "p": [
+      "Escolhe dois ou três momentos fixos por dia para tratar do email.",
+      "Fecha o separador do email entre esses momentos.",
+      "A maioria das mensagens pode esperar umas horas sem problema."
+     ],
+     "q": "Em que alturas do dia encaixaria melhor ver o email?",
+     "c": "Escolhe hoje duas horas para o email e cumpre-as."
+    },
+    "pt_BR": {
+     "t": "Checar e-mail em blocos",
+     "g": "Definir horários fixos para o e-mail em vez de checar sem parar.",
+     "p": [
+      "Escolha dois ou três momentos fixos por dia para tratar o e-mail.",
+      "Feche a aba do e-mail entre esses momentos.",
+      "A maioria das mensagens pode esperar algumas horas sem problema."
+     ],
+     "q": "Em que momentos do dia checar e-mail combinaria mais com seu ritmo?",
+     "c": "Escolha hoje dois horários para o e-mail e cumpra-os."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Inbox zero explained",
+     "g": "Process each message: delete, reply, delegate, defer or file.",
+     "p": [
+      "Inbox zero means an empty mind, not necessarily an empty inbox.",
+      "Decide once per message: delete, reply, delegate, defer or file.",
+      "If a reply takes under two minutes, send it right away."
+     ],
+     "q": "How many messages sit unread or undecided in your inbox?",
+     "c": "Process the oldest 20 messages in your inbox using the five choices."
+    },
+    "de": {
+     "t": "Inbox Zero erklärt",
+     "g": "Jede Nachricht verarbeiten: löschen, antworten, delegieren, aufschieben oder ablegen.",
+     "p": [
+      "Inbox Zero meint einen leeren Kopf, nicht unbedingt ein leeres Postfach.",
+      "Entscheide pro Nachricht einmal: löschen, antworten, delegieren, aufschieben oder ablegen.",
+      "Dauert eine Antwort unter zwei Minuten, sende sie sofort."
+     ],
+     "q": "Wie viele Nachrichten liegen ungelesen oder unentschieden in deinem Postfach?",
+     "c": "Bearbeite die ältesten 20 Nachrichten mit den fünf Entscheidungen."
+    },
+    "es": {
+     "t": "Bandeja a cero explicada",
+     "g": "Procesar cada mensaje: borrar, responder, delegar, aplazar o archivar.",
+     "p": [
+      "Bandeja a cero significa mente despejada, no necesariamente bandeja vacía.",
+      "Decide una vez por mensaje: borrar, responder, delegar, aplazar o archivar.",
+      "Si responder lleva menos de dos minutos, hazlo al momento."
+     ],
+     "q": "¿Cuántos mensajes hay sin leer o sin decidir en tu bandeja?",
+     "c": "Procesa los 20 mensajes más antiguos con las cinco opciones."
+    },
+    "fr": {
+     "t": "Inbox zéro expliquée",
+     "g": "Traiter chaque message : supprimer, répondre, déléguer, différer ou classer.",
+     "p": [
+      "Inbox zéro veut dire un esprit vide, pas forcément une boîte vide.",
+      "Décidez une fois par message : supprimer, répondre, déléguer, différer ou classer.",
+      "Si la réponse prend moins de deux minutes, envoyez-la tout de suite."
+     ],
+     "q": "Combien de messages sont non lus ou en suspens dans votre boîte ?",
+     "c": "Traitez les 20 plus anciens messages avec les cinq choix."
+    },
+    "it": {
+     "t": "Inbox zero spiegata",
+     "g": "Gestire ogni messaggio: eliminare, rispondere, delegare, rimandare o archiviare.",
+     "p": [
+      "Inbox zero significa mente libera, non per forza posta vuota.",
+      "Decidi una volta per messaggio: eliminare, rispondere, delegare, rimandare o archiviare.",
+      "Se rispondere richiede meno di due minuti, fallo subito."
+     ],
+     "q": "Quanti messaggi sono non letti o in sospeso nella tua posta?",
+     "c": "Gestisci i 20 messaggi più vecchi con le cinque scelte."
+    },
+    "pt": {
+     "t": "Caixa a zero explicada",
+     "g": "Tratar cada mensagem: apagar, responder, delegar, adiar ou arquivar.",
+     "p": [
+      "Caixa a zero significa mente livre, não necessariamente caixa vazia.",
+      "Decide uma vez por mensagem: apagar, responder, delegar, adiar ou arquivar.",
+      "Se responder demora menos de dois minutos, faz logo."
+     ],
+     "q": "Quantas mensagens estão por ler ou por decidir na tua caixa?",
+     "c": "Trata as 20 mensagens mais antigas com as cinco opções."
+    },
+    "pt_BR": {
+     "t": "Caixa zerada explicada",
+     "g": "Tratar cada mensagem: apagar, responder, delegar, adiar ou arquivar.",
+     "p": [
+      "Caixa zerada significa mente livre, não necessariamente caixa vazia.",
+      "Decida uma vez por mensagem: apagar, responder, delegar, adiar ou arquivar.",
+      "Se responder leva menos de dois minutos, faça na hora."
+     ],
+     "q": "Quantas mensagens estão não lidas ou sem decisão na sua caixa?",
+     "c": "Trate as 20 mensagens mais antigas com as cinco opções."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing clear emails",
+     "g": "Short subject lines, one purpose and a clear request.",
+     "p": [
+      "Make the subject line say what the email is about.",
+      "One email, one purpose; put the request near the top.",
+      "State any deadline kindly and plainly, with a day and a time."
+     ],
+     "q": "Which emails do you find hardest to read, and why?",
+     "c": "Rewrite one email you plan to send in under five sentences."
+    },
+    "de": {
+     "t": "Klare E-Mails schreiben",
+     "g": "Kurze Betreffzeilen, ein Zweck und eine klare Bitte.",
+     "p": [
+      "Der Betreff sagt, worum es in der E-Mail geht.",
+      "Eine E-Mail, ein Zweck; die Bitte steht möglichst weit oben.",
+      "Nenne Fristen freundlich und klar, mit Tag und Uhrzeit."
+     ],
+     "q": "Welche E-Mails findest du am schwersten zu lesen, und warum?",
+     "c": "Schreib eine geplante E-Mail so um, dass sie unter fünf Sätzen bleibt."
+    },
+    "es": {
+     "t": "Escribir correos claros",
+     "g": "Asuntos breves, un solo propósito y una petición clara.",
+     "p": [
+      "Haz que el asunto diga de qué trata el correo.",
+      "Un correo, un propósito; pon la petición cerca del principio.",
+      "Indica cualquier plazo con amabilidad y claridad, con día y hora."
+     ],
+     "q": "¿Qué correos te resultan más difíciles de leer y por qué?",
+     "c": "Reescribe un correo que vayas a enviar en menos de cinco frases."
+    },
+    "fr": {
+     "t": "Écrire des e-mails clairs",
+     "g": "Objets courts, un seul but et une demande claire.",
+     "p": [
+      "Que l'objet dise de quoi parle l'e-mail.",
+      "Un e-mail, un but ; mettez la demande près du début.",
+      "Indiquez toute échéance aimablement et clairement, avec jour et heure."
+     ],
+     "q": "Quels e-mails trouvez-vous les plus difficiles à lire, et pourquoi ?",
+     "c": "Réécrivez un e-mail à envoyer en moins de cinq phrases."
+    },
+    "it": {
+     "t": "Scrivere email chiare",
+     "g": "Oggetti brevi, un solo scopo e una richiesta chiara.",
+     "p": [
+      "Fai dire all'oggetto di cosa parla l'email.",
+      "Un'email, uno scopo; metti la richiesta vicino all'inizio.",
+      "Indica ogni scadenza con gentilezza e chiarezza, con giorno e ora."
+     ],
+     "q": "Quali email trovi più difficili da leggere e perché?",
+     "c": "Riscrivi un'email che devi inviare in meno di cinque frasi."
+    },
+    "pt": {
+     "t": "Escrever emails claros",
+     "g": "Assuntos curtos, um só objetivo e um pedido claro.",
+     "p": [
+      "Faz o assunto dizer do que trata o email.",
+      "Um email, um objetivo; põe o pedido perto do início.",
+      "Indica qualquer prazo com gentileza e clareza, com dia e hora."
+     ],
+     "q": "Que emails achas mais difíceis de ler e porquê?",
+     "c": "Reescreve um email que vás enviar em menos de cinco frases."
+    },
+    "pt_BR": {
+     "t": "Escrever e-mails claros",
+     "g": "Assuntos curtos, um só propósito e um pedido claro.",
+     "p": [
+      "Faça o assunto dizer do que trata o e-mail.",
+      "Um e-mail, um propósito; coloque o pedido perto do início.",
+      "Indique qualquer prazo com gentileza e clareza, com dia e hora."
+     ],
+     "q": "Quais e-mails você acha mais difíceis de ler e por quê?",
+     "c": "Reescreva um e-mail que você vai enviar em menos de cinco frases."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Email templates",
+     "g": "Save reusable replies for common messages.",
+     "p": [
+      "If you type the same reply often, save it as a template.",
+      "Keep it warm and edit one personal line each time.",
+      "Templates save time without making you sound like a robot."
+     ],
+     "q": "Which message do you write again and again?",
+     "c": "Save one template for your most repeated reply today."
+    },
+    "de": {
+     "t": "E-Mail-Vorlagen",
+     "g": "Wiederverwendbare Antworten für häufige Nachrichten speichern.",
+     "p": [
+      "Schreibst du oft dieselbe Antwort, speichere sie als Vorlage.",
+      "Halte sie freundlich und ändere jedes Mal eine persönliche Zeile.",
+      "Vorlagen sparen Zeit, ohne dass du wie ein Roboter klingst."
+     ],
+     "q": "Welche Nachricht schreibst du immer wieder?",
+     "c": "Speichere heute eine Vorlage für deine am häufigsten wiederholte Antwort."
+    },
+    "es": {
+     "t": "Plantillas de correo",
+     "g": "Guardar respuestas reutilizables para mensajes comunes.",
+     "p": [
+      "Si escribes a menudo la misma respuesta, guárdala como plantilla.",
+      "Mantenla cercana y cambia una línea personal cada vez.",
+      "Las plantillas ahorran tiempo sin que suenes como un robot."
+     ],
+     "q": "¿Qué mensaje escribes una y otra vez?",
+     "c": "Guarda hoy una plantilla para tu respuesta más repetida."
+    },
+    "fr": {
+     "t": "Modèles d'e-mails",
+     "g": "Enregistrer des réponses réutilisables pour les messages courants.",
+     "p": [
+      "Si vous tapez souvent la même réponse, enregistrez-la comme modèle.",
+      "Gardez un ton chaleureux et changez une ligne personnelle à chaque fois.",
+      "Les modèles font gagner du temps sans vous faire paraître robotique."
+     ],
+     "q": "Quel message écrivez-vous encore et encore ?",
+     "c": "Enregistrez aujourd'hui un modèle pour votre réponse la plus répétée."
+    },
+    "it": {
+     "t": "Modelli di email",
+     "g": "Salvare risposte riutilizzabili per i messaggi più comuni.",
+     "p": [
+      "Se scrivi spesso la stessa risposta, salvala come modello.",
+      "Mantienila cordiale e cambia una riga personale ogni volta.",
+      "I modelli fanno risparmiare tempo senza farti sembrare un robot."
+     ],
+     "q": "Quale messaggio scrivi sempre di nuovo?",
+     "c": "Salva oggi un modello per la tua risposta più ripetuta."
+    },
+    "pt": {
+     "t": "Modelos de email",
+     "g": "Guardar respostas reutilizáveis para mensagens comuns.",
+     "p": [
+      "Se escreves muitas vezes a mesma resposta, guarda-a como modelo.",
+      "Mantém-na simpática e muda uma linha pessoal de cada vez.",
+      "Os modelos poupam tempo sem te fazer soar como um robô."
+     ],
+     "q": "Que mensagem escreves uma e outra vez?",
+     "c": "Guarda hoje um modelo para a tua resposta mais repetida."
+    },
+    "pt_BR": {
+     "t": "Modelos de e-mail",
+     "g": "Salvar respostas reutilizáveis para mensagens comuns.",
+     "p": [
+      "Se você escreve muitas vezes a mesma resposta, salve-a como modelo.",
+      "Mantenha-a simpática e mude uma linha pessoal a cada vez.",
+      "Modelos poupam tempo sem fazer você soar como um robô."
+     ],
+     "q": "Que mensagem você escreve de novo e de novo?",
+     "c": "Salve hoje um modelo para sua resposta mais repetida."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Unsubscribing",
+     "g": "Cut newsletters and mailing lists you no longer read.",
+     "p": [
+      "Every unread newsletter adds a little noise to your day.",
+      "Unsubscribe as each one arrives; it takes a few seconds.",
+      "Keep only the ones that truly teach or delight you."
+     ],
+     "q": "Which subscriptions do you never open anymore?",
+     "c": "Unsubscribe from five lists today and notice the quieter inbox."
+    },
+    "de": {
+     "t": "Abbestellen",
+     "g": "Newsletter und Verteiler abbestellen, die du nicht mehr liest.",
+     "p": [
+      "Jeder ungelesene Newsletter macht den Tag ein wenig lauter.",
+      "Bestelle ab, sobald einer kommt; das dauert nur Sekunden.",
+      "Behalte nur, was dich wirklich weiterbringt oder erfreut."
+     ],
+     "q": "Welche Abos öffnest du schon lange nicht mehr?",
+     "c": "Bestelle heute fünf Listen ab und spür das ruhigere Postfach."
+    },
+    "es": {
+     "t": "Darse de baja",
+     "g": "Eliminar boletines y listas que ya no lees.",
+     "p": [
+      "Cada boletín sin leer añade un poco de ruido a tu día.",
+      "Date de baja cuando llegue cada uno; lleva unos segundos.",
+      "Quédate solo con los que de verdad te enseñan o te alegran."
+     ],
+     "q": "¿Qué suscripciones ya no abres nunca?",
+     "c": "Date de baja de cinco listas hoy y nota la bandeja más tranquila."
+    },
+    "fr": {
+     "t": "Se désabonner",
+     "g": "Supprimer les newsletters et listes que vous ne lisez plus.",
+     "p": [
+      "Chaque newsletter non lue ajoute un peu de bruit à votre journée.",
+      "Désabonnez-vous dès qu'elle arrive ; cela prend quelques secondes.",
+      "Gardez seulement celles qui vous apprennent ou vous plaisent vraiment."
+     ],
+     "q": "Quels abonnements n'ouvrez-vous plus jamais ?",
+     "c": "Désabonnez-vous de cinq listes aujourd'hui et savourez une boîte plus calme."
+    },
+    "it": {
+     "t": "Annullare le iscrizioni",
+     "g": "Eliminare newsletter e liste che non leggi più.",
+     "p": [
+      "Ogni newsletter non letta aggiunge un po' di rumore alla giornata.",
+      "Annulla l'iscrizione appena arriva; bastano pochi secondi.",
+      "Tieni solo quelle che ti insegnano o ti piacciono davvero."
+     ],
+     "q": "Quali iscrizioni non apri più?",
+     "c": "Disiscriviti oggi da cinque liste e senti la posta più tranquilla."
+    },
+    "pt": {
+     "t": "Cancelar subscrições",
+     "g": "Eliminar newsletters e listas que já não lês.",
+     "p": [
+      "Cada newsletter por ler acrescenta um pouco de ruído ao teu dia.",
+      "Cancela quando cada uma chegar; demora uns segundos.",
+      "Fica só com as que realmente te ensinam ou te agradam."
+     ],
+     "q": "Que subscrições já nunca abres?",
+     "c": "Cancela hoje cinco listas e repara na caixa mais tranquila."
+    },
+    "pt_BR": {
+     "t": "Cancelar inscrições",
+     "g": "Eliminar newsletters e listas que você não lê mais.",
+     "p": [
+      "Cada newsletter não lida adiciona um pouco de ruído ao seu dia.",
+      "Cancele quando cada uma chegar; leva poucos segundos.",
+      "Fique só com as que realmente ensinam ou agradam você."
+     ],
+     "q": "Que inscrições você nunca mais abre?",
+     "c": "Cancele hoje cinco listas e perceba a caixa mais tranquila."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Filters and labels",
+     "g": "Let rules sort incoming email automatically.",
+     "p": [
+      "A rule can move messages from one sender straight to a folder.",
+      "Labels or folders such as Waiting or Read later add structure.",
+      "Start with two or three rules; too many become confusing."
+     ],
+     "q": "Which messages could safely skip your main inbox?",
+     "c": "Create one rule that sorts a regular sender into its own folder."
+    },
+    "de": {
+     "t": "Filter und Labels",
+     "g": "Regeln sortieren eingehende E-Mails automatisch.",
+     "p": [
+      "Eine Regel kann Nachrichten eines Absenders direkt in einen Ordner schieben.",
+      "Labels oder Ordner wie Warten oder Später lesen schaffen Struktur.",
+      "Beginne mit zwei oder drei Regeln; zu viele verwirren."
+     ],
+     "q": "Welche Nachrichten dürften den Haupt-Posteingang umgehen?",
+     "c": "Erstelle eine Regel, die einen regelmäßigen Absender in einen eigenen Ordner sortiert."
+    },
+    "es": {
+     "t": "Filtros y etiquetas",
+     "g": "Dejar que las reglas ordenen el correo entrante automáticamente.",
+     "p": [
+      "Una regla puede llevar los mensajes de un remitente directo a una carpeta.",
+      "Etiquetas o carpetas como Esperando o Leer luego dan estructura.",
+      "Empieza con dos o tres reglas; demasiadas confunden."
+     ],
+     "q": "¿Qué mensajes podrían saltarse tu bandeja principal sin problema?",
+     "c": "Crea una regla que envíe a un remitente habitual a su propia carpeta."
+    },
+    "fr": {
+     "t": "Filtres et libellés",
+     "g": "Laisser des règles trier automatiquement le courrier entrant.",
+     "p": [
+      "Une règle peut envoyer les messages d'un expéditeur directement dans un dossier.",
+      "Des libellés comme En attente ou À lire plus tard donnent de la structure.",
+      "Commencez par deux ou trois règles ; trop de règles embrouillent."
+     ],
+     "q": "Quels messages pourraient éviter sans risque votre boîte principale ?",
+     "c": "Créez une règle qui range un expéditeur régulier dans son propre dossier."
+    },
+    "it": {
+     "t": "Filtri ed etichette",
+     "g": "Lasciare che le regole smistino automaticamente la posta in arrivo.",
+     "p": [
+      "Una regola può spostare i messaggi di un mittente direttamente in una cartella.",
+      "Etichette o cartelle come In attesa o Leggi dopo danno struttura.",
+      "Parti con due o tre regole; troppe creano confusione."
+     ],
+     "q": "Quali messaggi potrebbero saltare senza problemi la posta principale?",
+     "c": "Crea una regola che smisti un mittente abituale in una cartella dedicata."
+    },
+    "pt": {
+     "t": "Filtros e etiquetas",
+     "g": "Deixar que regras ordenem automaticamente o email recebido.",
+     "p": [
+      "Uma regra pode levar as mensagens de um remetente direto para uma pasta.",
+      "Etiquetas ou pastas como Em espera ou Ler depois dão estrutura.",
+      "Começa com duas ou três regras; demasiadas confundem."
+     ],
+     "q": "Que mensagens podiam dispensar sem problema a caixa principal?",
+     "c": "Cria uma regra que envie um remetente habitual para a sua própria pasta."
+    },
+    "pt_BR": {
+     "t": "Filtros e marcadores",
+     "g": "Deixar que regras organizem automaticamente o e-mail recebido.",
+     "p": [
+      "Uma regra pode levar as mensagens de um remetente direto para uma pasta.",
+      "Marcadores ou pastas como Aguardando ou Ler depois dão estrutura.",
+      "Comece com duas ou três regras; muitas confundem."
+     ],
+     "q": "Que mensagens poderiam dispensar sem problema a caixa principal?",
+     "c": "Crie uma regra que envie um remetente habitual para a própria pasta."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Calendar basics",
+     "g": "Use your calendar as the single home for all time commitments.",
+     "p": [
+      "Meetings, deadlines and appointments all belong in one calendar.",
+      "If it has a time, it goes in the calendar, not on a sticky note.",
+      "Add short reminders so important items never sneak up on you."
+     ],
+     "q": "Do you use one calendar or several, and does it work for you?",
+     "c": "Add every commitment of the next seven days to a single calendar."
+    },
+    "de": {
+     "t": "Kalender-Grundlagen",
+     "g": "Den Kalender als einzigen Ort für alle Terminverpflichtungen nutzen.",
+     "p": [
+      "Meetings, Fristen und Termine gehören in einen Kalender.",
+      "Was eine Uhrzeit hat, gehört in den Kalender, nicht auf einen Zettel.",
+      "Kurze Erinnerungen sorgen dafür, dass Wichtiges dich nie überrascht."
+     ],
+     "q": "Nutzt du einen oder mehrere Kalender, und funktioniert das für dich?",
+     "c": "Trag alle Verpflichtungen der nächsten sieben Tage in einen Kalender ein."
+    },
+    "es": {
+     "t": "Nociones básicas del calendario",
+     "g": "Usar el calendario como único lugar de todos tus compromisos de tiempo.",
+     "p": [
+      "Reuniones, plazos y citas pertenecen a un mismo calendario.",
+      "Si tiene hora, va al calendario, no a una nota adhesiva.",
+      "Añade recordatorios breves para que nada importante te pille por sorpresa."
+     ],
+     "q": "¿Usas un calendario o varios y te funciona?",
+     "c": "Añade a un solo calendario todos tus compromisos de los próximos siete días."
+    },
+    "fr": {
+     "t": "Les bases de l'agenda",
+     "g": "Faire de l'agenda l'unique endroit de tous vos engagements horaires.",
+     "p": [
+      "Réunions, échéances et rendez-vous vont dans un seul agenda.",
+      "Si cela a une heure, cela va dans l'agenda, pas sur un post-it.",
+      "Ajoutez de brefs rappels pour que l'important ne vous surprenne jamais."
+     ],
+     "q": "Utilisez-vous un ou plusieurs agendas, et cela vous convient-il ?",
+     "c": "Ajoutez tous vos engagements des sept prochains jours dans un seul agenda."
+    },
+    "it": {
+     "t": "Basi del calendario",
+     "g": "Usare il calendario come unico posto per tutti gli impegni di tempo.",
+     "p": [
+      "Riunioni, scadenze e appuntamenti appartengono a un solo calendario.",
+      "Se ha un orario, va nel calendario, non su un post-it.",
+      "Aggiungi brevi promemoria perché nulla di importante ti colga di sorpresa."
+     ],
+     "q": "Usi un calendario o più di uno, e ti funziona?",
+     "c": "Aggiungi a un solo calendario tutti gli impegni dei prossimi sette giorni."
+    },
+    "pt": {
+     "t": "Noções básicas de calendário",
+     "g": "Usar o calendário como único lugar para todos os compromissos de tempo.",
+     "p": [
+      "Reuniões, prazos e marcações pertencem a um só calendário.",
+      "Se tem hora, vai para o calendário, não para um post-it.",
+      "Acrescenta lembretes curtos para que o importante nunca te apanhe de surpresa."
+     ],
+     "q": "Usas um calendário ou vários e funciona para ti?",
+     "c": "Põe num só calendário todos os compromissos dos próximos sete dias."
+    },
+    "pt_BR": {
+     "t": "Noções básicas de calendário",
+     "g": "Usar o calendário como único lugar para todos os compromissos de tempo.",
+     "p": [
+      "Reuniões, prazos e compromissos pertencem a um só calendário.",
+      "Se tem hora, vai para o calendário, não para um post-it.",
+      "Adicione lembretes curtos para que o importante nunca te pegue de surpresa."
+     ],
+     "q": "Você usa um calendário ou vários e isso funciona para você?",
+     "c": "Coloque num só calendário todos os compromissos dos próximos sete dias."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Time blocking",
+     "g": "Reserve blocks of time on your calendar for focused work.",
+     "p": [
+      "Treat a block for your key task like an appointment with yourself.",
+      "Name the block with the exact task, not just Work.",
+      "Protect it kindly: decline or move other things around it."
+     ],
+     "q": "When in your week could you spare a two-hour block?",
+     "c": "Block one focus session this week and put your key task in it."
+    },
+    "de": {
+     "t": "Zeitblöcke planen",
+     "g": "Zeitblöcke im Kalender für konzentrierte Arbeit reservieren.",
+     "p": [
+      "Behandle einen Block für deine Kernaufgabe wie einen Termin mit dir selbst.",
+      "Benenne den Block mit der genauen Aufgabe, nicht nur mit Arbeit.",
+      "Schütze ihn freundlich: Lehne anderes ab oder verschiebe es."
+     ],
+     "q": "Wann in deiner Woche könntest du einen Zwei-Stunden-Block freihalten?",
+     "c": "Blocke diese Woche eine Fokus-Session und lege deine Kernaufgabe hinein."
+    },
+    "es": {
+     "t": "Bloques de tiempo",
+     "g": "Reservar bloques en el calendario para el trabajo concentrado.",
+     "p": [
+      "Trata un bloque para tu tarea clave como una cita contigo mismo.",
+      "Nombra el bloque con la tarea exacta, no solo Trabajo.",
+      "Protégelo con amabilidad: rechaza o mueve lo demás a su alrededor."
+     ],
+     "q": "¿Cuándo en tu semana podrías reservar un bloque de dos horas?",
+     "c": "Bloquea esta semana una sesión de foco y pon en ella tu tarea clave."
+    },
+    "fr": {
+     "t": "Le blocage de temps",
+     "g": "Réserver des blocs dans l'agenda pour le travail concentré.",
+     "p": [
+      "Traitez un bloc pour votre tâche clé comme un rendez-vous avec vous-même.",
+      "Nommez le bloc avec la tâche précise, pas seulement Travail.",
+      "Protégez-le avec bienveillance : refusez ou déplacez le reste autour."
+     ],
+     "q": "Quand dans votre semaine pourriez-vous libérer un bloc de deux heures ?",
+     "c": "Bloquez cette semaine une session de concentration pour votre tâche clé."
+    },
+    "it": {
+     "t": "Blocchi di tempo",
+     "g": "Riservare blocchi nel calendario per il lavoro concentrato.",
+     "p": [
+      "Tratta un blocco per il compito chiave come un appuntamento con te stesso.",
+      "Dai al blocco il nome del compito preciso, non solo Lavoro.",
+      "Proteggilo con gentilezza: rifiuta o sposta il resto attorno."
+     ],
+     "q": "Quando nella tua settimana potresti liberare un blocco di due ore?",
+     "c": "Blocca questa settimana una sessione di concentrazione per il compito chiave."
+    },
+    "pt": {
+     "t": "Blocos de tempo",
+     "g": "Reservar blocos no calendário para trabalho concentrado.",
+     "p": [
+      "Trata um bloco para a tua tarefa-chave como uma marcação contigo mesmo.",
+      "Dá ao bloco o nome da tarefa exata, não só Trabalho.",
+      "Protege-o com gentileza: recusa ou move o resto à volta."
+     ],
+     "q": "Quando na tua semana poderias reservar um bloco de duas horas?",
+     "c": "Bloqueia esta semana uma sessão de foco e põe lá a tua tarefa-chave."
+    },
+    "pt_BR": {
+     "t": "Blocos de tempo",
+     "g": "Reservar blocos no calendário para trabalho concentrado.",
+     "p": [
+      "Trate um bloco para sua tarefa-chave como um compromisso consigo mesmo.",
+      "Dê ao bloco o nome da tarefa exata, não só Trabalho.",
+      "Proteja-o com gentileza: recuse ou mova o resto ao redor."
+     ],
+     "q": "Quando na sua semana você poderia reservar um bloco de duas horas?",
+     "c": "Bloqueie esta semana uma sessão de foco e coloque nela sua tarefa-chave."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Buffer time",
+     "g": "Add gaps between tasks and meetings for overruns and transitions.",
+     "p": [
+      "Back-to-back plans leave no room for things to run long.",
+      "A ten-minute gap lets you breathe, note actions and reset.",
+      "Buffers turn a tense day into a calm one."
+     ],
+     "q": "How often does your day run late because nothing was spaced out?",
+     "c": "Add ten-minute buffers between two commitments tomorrow."
+    },
+    "de": {
+     "t": "Pufferzeit",
+     "g": "Lücken zwischen Aufgaben und Terminen für Überziehen und Übergänge einplanen.",
+     "p": [
+      "Lückenlose Pläne lassen keinen Raum, wenn etwas länger dauert.",
+      "Zehn Minuten Luft zum Atmen, Notieren und Umschalten.",
+      "Puffer machen aus einem angespannten Tag einen ruhigen."
+     ],
+     "q": "Wie oft läuft dein Tag aus dem Ruder, weil nichts Luft hatte?",
+     "c": "Plane morgen zehn Minuten Puffer zwischen zwei Verpflichtungen ein."
+    },
+    "es": {
+     "t": "Tiempo de margen",
+     "g": "Añadir huecos entre tareas y reuniones para retrasos y transiciones.",
+     "p": [
+      "Los planes pegados no dejan espacio si algo se alarga.",
+      "Diez minutos de hueco permiten respirar, anotar y reiniciar.",
+      "Los márgenes convierten un día tenso en uno tranquilo."
+     ],
+     "q": "¿Con qué frecuencia se te retrasa el día por no dejar huecos?",
+     "c": "Añade mañana diez minutos de margen entre dos compromisos."
+    },
+    "fr": {
+     "t": "Le temps tampon",
+     "g": "Ajouter des marges entre tâches et réunions pour les dépassements.",
+     "p": [
+      "Des plans enchaînés ne laissent aucune place si quelque chose déborde.",
+      "Dix minutes de marge pour respirer, noter les actions et se réinitialiser.",
+      "Les marges transforment une journée tendue en journée sereine."
+     ],
+     "q": "À quelle fréquence votre journée dérape-t-elle faute de marges ?",
+     "c": "Ajoutez demain dix minutes de marge entre deux engagements."
+    },
+    "it": {
+     "t": "Tempo cuscinetto",
+     "g": "Aggiungere pause tra compiti e riunioni per sforamenti e passaggi.",
+     "p": [
+      "Piani senza spazi non lasciano margine se qualcosa si allunga.",
+      "Dieci minuti di pausa permettono di respirare, annotare e ripartire.",
+      "I margini trasformano una giornata tesa in una serena."
+     ],
+     "q": "Quanto spesso la tua giornata slitta perché non c'erano margini?",
+     "c": "Aggiungi domani dieci minuti di margine tra due impegni."
+    },
+    "pt": {
+     "t": "Tempo de margem",
+     "g": "Acrescentar intervalos entre tarefas e reuniões para atrasos e transições.",
+     "p": [
+      "Planos colados não deixam espaço se algo se prolongar.",
+      "Dez minutos de intervalo permitem respirar, anotar e recomeçar.",
+      "As margens transformam um dia tenso num dia calmo."
+     ],
+     "q": "Com que frequência o teu dia atrasa por não haver folgas?",
+     "c": "Acrescenta amanhã dez minutos de margem entre dois compromissos."
+    },
+    "pt_BR": {
+     "t": "Tempo de folga",
+     "g": "Acrescentar intervalos entre tarefas e reuniões para atrasos e transições.",
+     "p": [
+      "Planos colados não deixam espaço se algo se prolongar.",
+      "Dez minutos de intervalo permitem respirar, anotar e recomeçar.",
+      "Folgas transformam um dia tenso em um dia calmo."
+     ],
+     "q": "Com que frequência seu dia atrasa por não haver folgas?",
+     "c": "Acrescente amanhã dez minutos de folga entre dois compromissos."
+    }
+   }
+  }
+ ]
+}

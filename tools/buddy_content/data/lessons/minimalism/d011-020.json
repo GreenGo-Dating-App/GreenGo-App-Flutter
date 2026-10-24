@@ -1,0 +1,835 @@
+{
+ "topic": "minimalism",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The one-in, one-out rule",
+     "g": "Learn a simple habit that keeps your belongings steady.",
+     "p": [
+      "When something new comes in, something old goes out.",
+      "It works well for clothes, books, mugs and gadgets.",
+      "It makes you pause and ask if a new thing is really worth the space."
+     ],
+     "q": "Which category would the one-in, one-out rule help you with most?",
+     "c": "Next time something new arrives, choose one similar item to donate."
+    },
+    "de": {
+     "t": "Die Eins-rein-eins-raus-Regel",
+     "g": "Eine einfache Gewohnheit lernen, die deinen Besitz im Gleichgewicht hält.",
+     "p": [
+      "Kommt etwas Neues herein, geht etwas Altes hinaus.",
+      "Das klappt gut bei Kleidung, Büchern, Tassen und Geräten.",
+      "Sie lässt dich innehalten und fragen, ob etwas Neues den Platz wert ist."
+     ],
+     "q": "Bei welcher Kategorie würde dir die Regel am meisten helfen?",
+     "c": "Wenn das nächste Neue kommt, such ein ähnliches Teil zum Spenden aus."
+    },
+    "es": {
+     "t": "La regla de uno entra, uno sale",
+     "g": "Aprender un hábito sencillo que mantiene estable lo que tienes.",
+     "p": [
+      "Cuando entra algo nuevo, sale algo viejo.",
+      "Funciona bien con ropa, libros, tazas y aparatos.",
+      "Te hace parar y preguntarte si lo nuevo merece realmente el espacio."
+     ],
+     "q": "¿En qué categoría te ayudaría más la regla de uno entra, uno sale?",
+     "c": "La próxima vez que llegue algo nuevo, elige un objeto parecido para donar."
+    },
+    "fr": {
+     "t": "La règle un entre, un sort",
+     "g": "Apprendre une habitude simple qui garde tes affaires stables.",
+     "p": [
+      "Quand quelque chose de neuf entre, quelque chose d'ancien sort.",
+      "Elle marche bien pour les vêtements, livres, tasses et gadgets.",
+      "Elle te fait réfléchir : le nouvel objet vaut-il vraiment la place ?"
+     ],
+     "q": "Dans quelle catégorie cette règle t'aiderait-elle le plus ?",
+     "c": "Au prochain achat, choisis un objet semblable à donner."
+    },
+    "it": {
+     "t": "La regola uno entra, uno esce",
+     "g": "Imparare un'abitudine semplice che mantiene stabili le tue cose.",
+     "p": [
+      "Quando entra qualcosa di nuovo, esce qualcosa di vecchio.",
+      "Funziona bene con vestiti, libri, tazze e gadget.",
+      "Ti fa fermare a chiederti se il nuovo oggetto vale davvero lo spazio."
+     ],
+     "q": "In quale categoria ti aiuterebbe di più la regola uno entra, uno esce?",
+     "c": "La prossima volta che arriva qualcosa di nuovo, scegli un oggetto simile da donare."
+    },
+    "pt": {
+     "t": "A regra de um entra, um sai",
+     "g": "Aprender um hábito simples que mantém estável o que tens.",
+     "p": [
+      "Quando entra algo novo, sai algo antigo.",
+      "Funciona bem com roupa, livros, canecas e aparelhos.",
+      "Faz-te parar e perguntar se o novo objeto vale mesmo o espaço."
+     ],
+     "q": "Em que categoria te ajudaria mais a regra de um entra, um sai?",
+     "c": "Da próxima vez que chegar algo novo, escolhe um objeto parecido para doar."
+    },
+    "pt_BR": {
+     "t": "A regra de um entra, um sai",
+     "g": "Aprender um hábito simples que mantém estável o que você tem.",
+     "p": [
+      "Quando entra algo novo, sai algo antigo.",
+      "Funciona bem com roupas, livros, canecas e aparelhos.",
+      "Faz você parar e perguntar se o novo item vale mesmo o espaço."
+     ],
+     "q": "Em que categoria a regra de um entra, um sai mais ajudaria você?",
+     "c": "Da próxima vez que chegar algo novo, escolha um item parecido para doar."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Clearing flat surfaces",
+     "g": "See how clear surfaces instantly calm a room.",
+     "p": [
+      "Tables, counters and desks attract clutter because they are easy to use.",
+      "Keep only a few useful or beautiful things on each surface.",
+      "A clear surface is also much quicker to wipe clean."
+     ],
+     "q": "Which flat surface in your home collects the most things?",
+     "c": "Clear one surface completely and return only three items to it."
+    },
+    "de": {
+     "t": "Ebene Flächen freiräumen",
+     "g": "Erleben, wie freie Flächen einen Raum sofort beruhigen.",
+     "p": [
+      "Tische, Arbeitsplatten und Schreibtische ziehen Krempel an, weil sie so praktisch sind.",
+      "Lass auf jeder Fläche nur wenige nützliche oder schöne Dinge stehen.",
+      "Eine freie Fläche ist außerdem viel schneller abgewischt."
+     ],
+     "q": "Welche Fläche bei dir sammelt die meisten Dinge?",
+     "c": "Räum eine Fläche ganz leer und stell nur drei Dinge zurück."
+    },
+    "es": {
+     "t": "Despejar las superficies planas",
+     "g": "Ver cómo las superficies despejadas calman una habitación al instante.",
+     "p": [
+      "Mesas, encimeras y escritorios atraen el desorden porque son fáciles de usar.",
+      "Deja solo unas pocas cosas útiles o bonitas en cada superficie.",
+      "Una superficie libre también se limpia mucho más rápido."
+     ],
+     "q": "¿Qué superficie plana de tu casa acumula más cosas?",
+     "c": "Despeja una superficie por completo y devuelve solo tres objetos."
+    },
+    "fr": {
+     "t": "Dégager les surfaces planes",
+     "g": "Voir comment des surfaces dégagées apaisent une pièce aussitôt.",
+     "p": [
+      "Tables, plans de travail et bureaux attirent le désordre car ils sont pratiques.",
+      "Ne laisse que quelques objets utiles ou beaux sur chaque surface.",
+      "Une surface libre s'essuie aussi bien plus vite."
+     ],
+     "q": "Quelle surface plane de ta maison accumule le plus d'objets ?",
+     "c": "Dégage une surface entièrement et ne remets que trois objets."
+    },
+    "it": {
+     "t": "Liberare le superfici piane",
+     "g": "Vedere come le superfici libere calmano subito una stanza.",
+     "p": [
+      "Tavoli, piani cucina e scrivanie attirano il disordine perché sono comodi.",
+      "Lascia su ogni superficie solo poche cose utili o belle.",
+      "Una superficie libera si pulisce anche molto più in fretta."
+     ],
+     "q": "Quale superficie piana di casa accumula più cose?",
+     "c": "Libera del tutto una superficie e rimetti solo tre oggetti."
+    },
+    "pt": {
+     "t": "Libertar as superfícies planas",
+     "g": "Ver como superfícies livres acalmam logo uma divisão.",
+     "p": [
+      "Mesas, bancadas e secretárias atraem desarrumação por serem práticas.",
+      "Deixa em cada superfície só umas poucas coisas úteis ou bonitas.",
+      "Uma superfície livre limpa-se também muito mais depressa."
+     ],
+     "q": "Que superfície plana da tua casa acumula mais coisas?",
+     "c": "Liberta uma superfície por completo e volta a pôr só três objetos."
+    },
+    "pt_BR": {
+     "t": "Liberar as superfícies planas",
+     "g": "Ver como superfícies livres acalmam um cômodo na hora.",
+     "p": [
+      "Mesas, bancadas e escrivaninhas atraem bagunça por serem práticas.",
+      "Deixe em cada superfície só poucas coisas úteis ou bonitas.",
+      "Uma superfície livre também se limpa muito mais rápido."
+     ],
+     "q": "Qual superfície plana da sua casa acumula mais coisas?",
+     "c": "Libere uma superfície por completo e devolva só três itens."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A home for everything",
+     "g": "Give each item a fixed place so tidying is quick.",
+     "p": [
+      "When things have a home, tidying is just putting them back.",
+      "Store items near where you use them first.",
+      "Searching for things drops sharply once everyone knows where they live."
+     ],
+     "q": "Is there an item that never seems to have a proper place?",
+     "c": "Choose three homeless items and give each one a fixed spot today."
+    },
+    "de": {
+     "t": "Ein Platz für alles",
+     "g": "Jedem Ding einen festen Platz geben, damit Aufräumen schnell geht.",
+     "p": [
+      "Hat alles ein Zuhause, heißt Aufräumen nur noch zurückstellen.",
+      "Lagere Dinge zuerst dort, wo du sie benutzt.",
+      "Das Suchen nimmt stark ab, sobald alle wissen, wo etwas hingehört."
+     ],
+     "q": "Gibt es etwas, das nie einen richtigen Platz zu haben scheint?",
+     "c": "Such drei heimatlose Dinge aus und gib jedem heute einen festen Platz."
+    },
+    "es": {
+     "t": "Un lugar para cada cosa",
+     "g": "Dar a cada objeto un sitio fijo para ordenar rápido.",
+     "p": [
+      "Cuando las cosas tienen su lugar, ordenar es solo devolverlas.",
+      "Guarda primero los objetos cerca de donde los usas.",
+      "Buscar cosas disminuye mucho cuando todos saben dónde viven."
+     ],
+     "q": "¿Hay algún objeto que nunca parece tener un sitio propio?",
+     "c": "Elige tres objetos sin hogar y dale a cada uno un sitio fijo hoy."
+    },
+    "fr": {
+     "t": "Une place pour chaque chose",
+     "g": "Donner à chaque objet une place fixe pour ranger vite.",
+     "p": [
+      "Quand les choses ont leur place, ranger revient à les remettre.",
+      "Range d'abord les objets près de l'endroit où tu les utilises.",
+      "On cherche beaucoup moins quand tout le monde sait où est chaque chose."
+     ],
+     "q": "Y a-t-il un objet qui n'a jamais de vraie place ?",
+     "c": "Choisis trois objets sans place et donne à chacun un endroit fixe aujourd'hui."
+    },
+    "it": {
+     "t": "Un posto per ogni cosa",
+     "g": "Dare a ogni oggetto un posto fisso per riordinare in fretta.",
+     "p": [
+      "Quando le cose hanno la loro casa, riordinare è solo rimetterle a posto.",
+      "Conserva prima gli oggetti vicino a dove li usi.",
+      "Si cerca molto meno quando tutti sanno dove sta ogni cosa."
+     ],
+     "q": "C'è un oggetto che non sembra mai avere un posto giusto?",
+     "c": "Scegli tre oggetti senza casa e dai a ciascuno un posto fisso oggi."
+    },
+    "pt": {
+     "t": "Um lugar para cada coisa",
+     "g": "Dar a cada objeto um sítio fixo para arrumar depressa.",
+     "p": [
+      "Quando as coisas têm casa, arrumar é só voltar a pô-las lá.",
+      "Guarda primeiro os objetos perto de onde os usas.",
+      "Procura-se muito menos quando todos sabem onde cada coisa mora."
+     ],
+     "q": "Há algum objeto que nunca parece ter um sítio certo?",
+     "c": "Escolhe três objetos sem casa e dá a cada um um sítio fixo hoje."
+    },
+    "pt_BR": {
+     "t": "Um lugar para cada coisa",
+     "g": "Dar a cada item um lugar fixo para arrumar rápido.",
+     "p": [
+      "Quando as coisas têm casa, arrumar é só devolver ao lugar.",
+      "Guarde primeiro os itens perto de onde você os usa.",
+      "Procurar coisas diminui muito quando todos sabem onde cada uma mora."
+     ],
+     "q": "Tem algum item que nunca parece ter um lugar certo?",
+     "c": "Escolha três itens sem casa e dê a cada um um lugar fixo hoje."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The ten-minute reset",
+     "g": "Use a short daily tidy to keep your space under control.",
+     "p": [
+      "Set a timer for ten minutes and put things back where they belong.",
+      "Small daily effort beats a big cleaning session once a month.",
+      "Many people do it in the evening to wake up to a calm home."
+     ],
+     "q": "When in your day would a ten-minute reset fit best?",
+     "c": "Set a ten-minute timer today and tidy until it rings, then stop."
+    },
+    "de": {
+     "t": "Der Zehn-Minuten-Reset",
+     "g": "Mit einem kurzen täglichen Aufräumen den Raum im Griff behalten.",
+     "p": [
+      "Stell einen Timer auf zehn Minuten und räum alles an seinen Platz.",
+      "Kleiner täglicher Einsatz schlägt eine große Putzaktion pro Monat.",
+      "Viele machen es abends und wachen dann in einem ruhigen Zuhause auf."
+     ],
+     "q": "Wann in deinem Tag würde ein Zehn-Minuten-Reset am besten passen?",
+     "c": "Stell heute einen Zehn-Minuten-Timer, räum bis zum Klingeln auf und hör dann auf."
+    },
+    "es": {
+     "t": "El reinicio de diez minutos",
+     "g": "Usar un orden diario breve para mantener tu espacio bajo control.",
+     "p": [
+      "Pon un temporizador de diez minutos y devuelve cada cosa a su sitio.",
+      "Un pequeño esfuerzo diario supera a una gran limpieza al mes.",
+      "Mucha gente lo hace por la noche para despertar en una casa en calma."
+     ],
+     "q": "¿En qué momento del día encajaría mejor un reinicio de diez minutos?",
+     "c": "Pon hoy un temporizador de diez minutos, ordena hasta que suene y para."
+    },
+    "fr": {
+     "t": "La remise à zéro de dix minutes",
+     "g": "Utiliser un rangement quotidien court pour garder ton espace sous contrôle.",
+     "p": [
+      "Mets un minuteur sur dix minutes et remets chaque chose à sa place.",
+      "Un petit effort quotidien vaut mieux qu'un grand ménage mensuel.",
+      "Beaucoup le font le soir pour se réveiller dans une maison apaisée."
+     ],
+     "q": "À quel moment de ta journée dix minutes de remise à zéro iraient le mieux ?",
+     "c": "Lance un minuteur de dix minutes aujourd'hui, range jusqu'à la sonnerie, puis arrête."
+    },
+    "it": {
+     "t": "Il reset di dieci minuti",
+     "g": "Usare un breve riordino quotidiano per tenere lo spazio sotto controllo.",
+     "p": [
+      "Imposta un timer di dieci minuti e rimetti ogni cosa al suo posto.",
+      "Un piccolo impegno quotidiano batte una grande pulizia al mese.",
+      "Molti lo fanno la sera per svegliarsi in una casa serena."
+     ],
+     "q": "In quale momento della giornata starebbe meglio un reset di dieci minuti?",
+     "c": "Oggi imposta un timer di dieci minuti, riordina finché suona e poi fermati."
+    },
+    "pt": {
+     "t": "O reinício de dez minutos",
+     "g": "Usar uma arrumação diária curta para manter o teu espaço sob controlo.",
+     "p": [
+      "Põe um temporizador de dez minutos e volta a pôr cada coisa no seu lugar.",
+      "Um pequeno esforço diário vence uma grande limpeza por mês.",
+      "Muita gente faz à noite para acordar numa casa calma."
+     ],
+     "q": "Em que momento do teu dia encaixaria melhor um reinício de dez minutos?",
+     "c": "Põe hoje um temporizador de dez minutos, arruma até tocar e pára."
+    },
+    "pt_BR": {
+     "t": "O reset de dez minutos",
+     "g": "Usar uma arrumação diária curta para manter o seu espaço sob controle.",
+     "p": [
+      "Ponha o timer em dez minutos e devolva cada coisa ao seu lugar.",
+      "Um pequeno esforço diário vence uma faxina grande por mês.",
+      "Muita gente faz à noite para acordar numa casa tranquila."
+     ],
+     "q": "Em que momento do seu dia um reset de dez minutos caberia melhor?",
+     "c": "Ponha hoje um timer de dez minutos, arrume até tocar e pare."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Decluttering the bathroom",
+     "g": "Enjoy quick wins in an easy room.",
+     "p": [
+      "Check for expired products, empty bottles and many near-duplicates.",
+      "Keep the products you actually use; the rest can be used up or passed on.",
+      "Fewer towels and bottles make the bathroom easier to clean."
+     ],
+     "q": "What is one bathroom product you keep but never use?",
+     "c": "Sort one bathroom shelf and discard anything expired or empty."
+    },
+    "de": {
+     "t": "Das Bad entrümpeln",
+     "g": "Schnelle Erfolge in einem leichten Raum erleben.",
+     "p": [
+      "Prüfe auf abgelaufene Produkte, leere Flaschen und viele Fast-Doppelte.",
+      "Behalte, was du wirklich benutzt; den Rest kannst du aufbrauchen oder weitergeben.",
+      "Weniger Handtücher und Flaschen machen das Bad leichter sauber."
+     ],
+     "q": "Welches Badprodukt hebst du auf, benutzt es aber nie?",
+     "c": "Sortiere ein Badregal und wirf Abgelaufenes oder Leeres weg."
+    },
+    "es": {
+     "t": "Ordenar el baño",
+     "g": "Disfrutar de logros rápidos en una habitación fácil.",
+     "p": [
+      "Revisa productos caducados, botes vacíos y muchos casi duplicados.",
+      "Quédate con lo que usas de verdad; lo demás se gasta o se regala.",
+      "Menos toallas y botes hacen el baño más fácil de limpiar."
+     ],
+     "q": "¿Qué producto de baño guardas pero nunca usas?",
+     "c": "Ordena una balda del baño y tira lo caducado o vacío."
+    },
+    "fr": {
+     "t": "Désencombrer la salle de bains",
+     "g": "Savourer des victoires rapides dans une pièce facile.",
+     "p": [
+      "Vérifie les produits périmés, les flacons vides et les quasi-doublons.",
+      "Garde les produits que tu utilises vraiment ; le reste se termine ou se donne.",
+      "Moins de serviettes et de flacons rendent le nettoyage plus simple."
+     ],
+     "q": "Quel produit de salle de bains gardes-tu sans jamais l'utiliser ?",
+     "c": "Trie une étagère de la salle de bains et jette le périmé ou le vide."
+    },
+    "it": {
+     "t": "Fare ordine in bagno",
+     "g": "Godersi vittorie rapide in una stanza facile.",
+     "p": [
+      "Controlla prodotti scaduti, flaconi vuoti e tanti quasi doppioni.",
+      "Tieni ciò che usi davvero; il resto si finisce o si regala.",
+      "Meno asciugamani e flaconi rendono il bagno più facile da pulire."
+     ],
+     "q": "Quale prodotto del bagno tieni ma non usi mai?",
+     "c": "Sistema un ripiano del bagno e butta ciò che è scaduto o vuoto."
+    },
+    "pt": {
+     "t": "Arrumar a casa de banho",
+     "g": "Desfrutar de vitórias rápidas numa divisão fácil.",
+     "p": [
+      "Verifica produtos fora do prazo, frascos vazios e muitos quase repetidos.",
+      "Fica com o que usas de verdade; o resto gasta-se ou oferece-se.",
+      "Menos toalhas e frascos tornam a casa de banho mais fácil de limpar."
+     ],
+     "q": "Que produto da casa de banho guardas mas nunca usas?",
+     "c": "Arruma uma prateleira da casa de banho e deita fora o que estiver caducado ou vazio."
+    },
+    "pt_BR": {
+     "t": "Organizar o banheiro",
+     "g": "Aproveitar vitórias rápidas num cômodo fácil.",
+     "p": [
+      "Confira produtos vencidos, frascos vazios e muitos quase repetidos.",
+      "Fique com o que você usa de verdade; o resto se usa até o fim ou se doa.",
+      "Menos toalhas e frascos deixam o banheiro mais fácil de limpar."
+     ],
+     "q": "Que produto do banheiro você guarda mas nunca usa?",
+     "c": "Organize uma prateleira do banheiro e descarte o que estiver vencido ou vazio."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your entryway",
+     "g": "Make the first space you see welcoming and functional.",
+     "p": [
+      "The entryway handles shoes, keys, bags and mail every day.",
+      "A few hooks and one tray can replace a pile on the floor.",
+      "A calm entrance sets the tone when you arrive home."
+     ],
+     "q": "What usually ends up on your entryway floor or shelf?",
+     "c": "Choose one spot for keys and mail and use it every day this week."
+    },
+    "de": {
+     "t": "Dein Eingangsbereich",
+     "g": "Den ersten Bereich, den du siehst, einladend und praktisch machen.",
+     "p": [
+      "Im Flur landen täglich Schuhe, Schlüssel, Taschen und Post.",
+      "Ein paar Haken und eine Schale ersetzen den Haufen am Boden.",
+      "Ein ruhiger Eingang stimmt dich beim Heimkommen gut ein."
+     ],
+     "q": "Was landet bei dir meistens im Flur auf Boden oder Regal?",
+     "c": "Wähl einen Platz für Schlüssel und Post und nutze ihn diese Woche täglich."
+    },
+    "es": {
+     "t": "Tu entrada",
+     "g": "Hacer acogedor y funcional el primer espacio que ves.",
+     "p": [
+      "La entrada recibe cada día zapatos, llaves, bolsos y correo.",
+      "Unos ganchos y una bandeja pueden sustituir el montón del suelo.",
+      "Una entrada en calma marca el tono al llegar a casa."
+     ],
+     "q": "¿Qué suele acabar en el suelo o en la repisa de tu entrada?",
+     "c": "Elige un sitio para llaves y correo y úsalo todos los días esta semana."
+    },
+    "fr": {
+     "t": "Ton entrée",
+     "g": "Rendre accueillant et pratique le premier espace que tu vois.",
+     "p": [
+      "L'entrée voit passer chaque jour chaussures, clés, sacs et courrier.",
+      "Quelques crochets et un plateau remplacent le tas au sol.",
+      "Une entrée calme donne le ton en rentrant chez toi."
+     ],
+     "q": "Qu'est-ce qui finit d'habitude par terre ou sur l'étagère de ton entrée ?",
+     "c": "Choisis un endroit pour les clés et le courrier et utilise-le chaque jour cette semaine."
+    },
+    "it": {
+     "t": "Il tuo ingresso",
+     "g": "Rendere accogliente e funzionale il primo spazio che vedi.",
+     "p": [
+      "L'ingresso accoglie ogni giorno scarpe, chiavi, borse e posta.",
+      "Qualche gancio e un vassoio sostituiscono il mucchio a terra.",
+      "Un ingresso calmo dà il tono quando torni a casa."
+     ],
+     "q": "Cosa finisce di solito sul pavimento o sul mobile del tuo ingresso?",
+     "c": "Scegli un posto per chiavi e posta e usalo ogni giorno questa settimana."
+    },
+    "pt": {
+     "t": "A tua entrada",
+     "g": "Tornar acolhedor e funcional o primeiro espaço que vês.",
+     "p": [
+      "A entrada recebe todos os dias sapatos, chaves, malas e correio.",
+      "Uns cabides e um tabuleiro substituem a pilha no chão.",
+      "Uma entrada calma dá o tom quando chegas a casa."
+     ],
+     "q": "O que costuma acabar no chão ou na prateleira da tua entrada?",
+     "c": "Escolhe um sítio para chaves e correio e usa-o todos os dias esta semana."
+    },
+    "pt_BR": {
+     "t": "A sua entrada",
+     "g": "Deixar acolhedor e funcional o primeiro espaço que você vê.",
+     "p": [
+      "A entrada recebe todos os dias sapatos, chaves, bolsas e correspondência.",
+      "Uns ganchos e uma bandeja substituem a pilha no chão.",
+      "Uma entrada tranquila dá o tom quando você chega em casa."
+     ],
+     "q": "O que costuma acabar no chão ou na prateleira da sua entrada?",
+     "c": "Escolha um lugar para chaves e correspondência e use todo dia nesta semana."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The paper pile",
+     "g": "Sort paper into act, file or recycle so it stops piling up.",
+     "p": [
+      "Sort each paper fast: needs action, needs keeping, or can be recycled.",
+      "Many papers can be photographed or found online, so you need fewer copies.",
+      "Check your local guidance on which documents to keep and for how long."
+     ],
+     "q": "What kind of paper piles up most at your place?",
+     "c": "Sort one stack of paper into three groups and recycle what you can."
+    },
+    "de": {
+     "t": "Der Papierstapel",
+     "g": "Papier in Erledigen, Ablegen oder Recyceln sortieren, damit nichts mehr aufläuft.",
+     "p": [
+      "Sortiere jedes Blatt schnell: braucht Handlung, aufbewahren oder recyceln.",
+      "Vieles lässt sich fotografieren oder online finden, du brauchst weniger Kopien.",
+      "Informiere dich vor Ort, welche Unterlagen wie lange aufbewahrt werden sollten."
+     ],
+     "q": "Welche Art Papier häuft sich bei dir am meisten an?",
+     "c": "Sortiere einen Papierstapel in drei Gruppen und recycle, was geht."
+    },
+    "es": {
+     "t": "El montón de papeles",
+     "g": "Clasificar el papel en actuar, archivar o reciclar para que deje de acumularse.",
+     "p": [
+      "Clasifica cada papel rápido: requiere acción, hay que guardarlo o se recicla.",
+      "Muchos papeles se pueden fotografiar o encontrar en línea, así necesitas menos copias.",
+      "Consulta la información local sobre qué documentos guardar y por cuánto tiempo."
+     ],
+     "q": "¿Qué tipo de papel se acumula más en tu casa?",
+     "c": "Clasifica un montón de papeles en tres grupos y recicla lo que puedas."
+    },
+    "fr": {
+     "t": "La pile de papiers",
+     "g": "Trier le papier en agir, classer ou recycler pour qu'il cesse de s'accumuler.",
+     "p": [
+      "Trie chaque papier vite : à traiter, à conserver ou à recycler.",
+      "Beaucoup de papiers se photographient ou se retrouvent en ligne : moins de copies.",
+      "Renseigne-toi localement sur les documents à garder et leur durée."
+     ],
+     "q": "Quel type de papier s'accumule le plus chez toi ?",
+     "c": "Trie une pile de papiers en trois groupes et recycle ce que tu peux."
+    },
+    "it": {
+     "t": "La pila di carte",
+     "g": "Dividere la carta in agire, archiviare o riciclare perché smetta di accumularsi.",
+     "p": [
+      "Smista ogni foglio in fretta: serve un'azione, va conservato o si ricicla.",
+      "Molti fogli si possono fotografare o trovare online, quindi servono meno copie.",
+      "Informati localmente su quali documenti conservare e per quanto tempo."
+     ],
+     "q": "Che tipo di carta si accumula di più a casa tua?",
+     "c": "Smista una pila di carte in tre gruppi e ricicla ciò che puoi."
+    },
+    "pt": {
+     "t": "A pilha de papéis",
+     "g": "Separar o papel em agir, arquivar ou reciclar para deixar de acumular.",
+     "p": [
+      "Separa cada papel depressa: precisa de ação, guardar ou reciclar.",
+      "Muitos papéis podem ser fotografados ou encontrados online, precisas de menos cópias.",
+      "Informa-te localmente sobre que documentos guardar e por quanto tempo."
+     ],
+     "q": "Que tipo de papel mais se acumula em tua casa?",
+     "c": "Separa uma pilha de papéis em três grupos e recicla o que puderes."
+    },
+    "pt_BR": {
+     "t": "A pilha de papéis",
+     "g": "Separar o papel em agir, arquivar ou reciclar para parar de acumular.",
+     "p": [
+      "Separe cada papel rápido: precisa de ação, guardar ou reciclar.",
+      "Muitos papéis podem ser fotografados ou achados online, então você precisa de menos cópias.",
+      "Informe-se localmente sobre quais documentos guardar e por quanto tempo."
+     ],
+     "q": "Que tipo de papel mais se acumula na sua casa?",
+     "c": "Separe uma pilha de papéis em três grupos e recicle o que puder."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Junk drawer rescue",
+     "g": "Turn the random-things drawer into a small, useful space.",
+     "p": [
+      "Empty it, then group items: batteries, tape, pens, tools.",
+      "Throw out dead pens, broken items and loose mystery parts.",
+      "Small trays or boxes keep the drawer tidy for the long run."
+     ],
+     "q": "What is the strangest thing you have found in a junk drawer?",
+     "c": "Empty your junk drawer, group what is left and bin anything broken."
+    },
+    "de": {
+     "t": "Rettung für die Krimskramsschublade",
+     "g": "Die Schublade voller Kleinkram in einen kleinen, nützlichen Ort verwandeln.",
+     "p": [
+      "Leere sie aus und gruppiere: Batterien, Klebeband, Stifte, Werkzeug.",
+      "Wirf leere Stifte, Kaputtes und lose Rätselteile weg.",
+      "Kleine Schalen oder Boxen halten die Schublade lange ordentlich."
+     ],
+     "q": "Was ist das Seltsamste, das du je in einer Krimskramsschublade gefunden hast?",
+     "c": "Leere deine Krimskramsschublade, gruppiere den Rest und wirf Kaputtes weg."
+    },
+    "es": {
+     "t": "Rescate del cajón de cosas sueltas",
+     "g": "Convertir el cajón de objetos sueltos en un espacio pequeño y útil.",
+     "p": [
+      "Vacíalo y agrupa: pilas, cinta, bolígrafos, herramientas.",
+      "Tira bolígrafos secos, cosas rotas y piezas sueltas misteriosas.",
+      "Bandejas o cajitas pequeñas lo mantienen ordenado a largo plazo."
+     ],
+     "q": "¿Qué es lo más raro que has encontrado en un cajón de cosas sueltas?",
+     "c": "Vacía tu cajón de cosas sueltas, agrupa lo que quede y tira lo roto."
+    },
+    "fr": {
+     "t": "Sauver le tiroir fourre-tout",
+     "g": "Transformer le tiroir des objets en vrac en petit espace utile.",
+     "p": [
+      "Vide-le, puis regroupe : piles, ruban adhésif, stylos, outils.",
+      "Jette les stylos vides, les objets cassés et les pièces mystérieuses.",
+      "De petits bacs ou boîtes gardent le tiroir en ordre longtemps."
+     ],
+     "q": "Quelle est la chose la plus étrange trouvée dans un tiroir fourre-tout ?",
+     "c": "Vide ton tiroir fourre-tout, regroupe le reste et jette ce qui est cassé."
+    },
+    "it": {
+     "t": "Salvare il cassetto dei ciarpami",
+     "g": "Trasformare il cassetto delle cose a caso in uno spazio piccolo e utile.",
+     "p": [
+      "Svuotalo e raggruppa: pile, nastro adesivo, penne, attrezzi.",
+      "Butta penne scariche, cose rotte e pezzi sciolti misteriosi.",
+      "Piccoli vassoi o scatole mantengono il cassetto in ordine a lungo."
+     ],
+     "q": "Qual è la cosa più strana che hai trovato in un cassetto dei ciarpami?",
+     "c": "Svuota il cassetto dei ciarpami, raggruppa il resto e butta ciò che è rotto."
+    },
+    "pt": {
+     "t": "Salvar a gaveta das tralhas",
+     "g": "Transformar a gaveta das coisas soltas num espaço pequeno e útil.",
+     "p": [
+      "Esvazia-a e agrupa: pilhas, fita-cola, canetas, ferramentas.",
+      "Deita fora canetas secas, coisas partidas e peças soltas misteriosas.",
+      "Pequenos tabuleiros ou caixas mantêm a gaveta arrumada a longo prazo."
+     ],
+     "q": "Qual é a coisa mais estranha que já encontraste numa gaveta das tralhas?",
+     "c": "Esvazia a tua gaveta das tralhas, agrupa o que sobrar e deita fora o partido."
+    },
+    "pt_BR": {
+     "t": "Salvando a gaveta de bagulhos",
+     "g": "Transformar a gaveta de coisas soltas num espaço pequeno e útil.",
+     "p": [
+      "Esvazie e agrupe: pilhas, fita adesiva, canetas, ferramentas.",
+      "Jogue fora canetas secas, coisas quebradas e peças soltas misteriosas.",
+      "Bandejas ou caixinhas pequenas mantêm a gaveta organizada por muito tempo."
+     ],
+     "q": "Qual é a coisa mais estranha que você já achou numa gaveta de bagulhos?",
+     "c": "Esvazie sua gaveta de bagulhos, agrupe o que sobrar e descarte o quebrado."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bedroom calm",
+     "g": "See why a simple bedroom supports rest.",
+     "p": [
+      "A calm bedroom has fewer items in view and a clear path.",
+      "Things like piles of laundry, work papers and gadgets often drift in.",
+      "Choose what helps rest: soft light, a book, a clear bedside."
+     ],
+     "q": "What would make your bedroom feel more restful?",
+     "c": "Remove three items from your bedroom that are not about rest."
+    },
+    "de": {
+     "t": "Ruhe im Schlafzimmer",
+     "g": "Verstehen, warum ein schlichtes Schlafzimmer die Erholung unterstützt.",
+     "p": [
+      "Ein ruhiges Schlafzimmer hat weniger sichtbare Dinge und freie Wege.",
+      "Wäschehaufen, Arbeitspapiere und Geräte wandern oft unbemerkt hinein.",
+      "Wähl, was der Erholung dient: weiches Licht, ein Buch, ein freier Nachttisch."
+     ],
+     "q": "Was würde dein Schlafzimmer erholsamer machen?",
+     "c": "Räum drei Dinge aus dem Schlafzimmer, die nichts mit Erholung zu tun haben."
+    },
+    "es": {
+     "t": "Calma en el dormitorio",
+     "g": "Ver por qué un dormitorio sencillo favorece el descanso.",
+     "p": [
+      "Un dormitorio en calma tiene menos objetos a la vista y un paso libre.",
+      "Montones de ropa, papeles de trabajo y aparatos suelen colarse.",
+      "Elige lo que ayuda a descansar: luz suave, un libro, una mesilla despejada."
+     ],
+     "q": "¿Qué haría tu dormitorio más tranquilo para descansar?",
+     "c": "Saca del dormitorio tres objetos que no tengan que ver con el descanso."
+    },
+    "fr": {
+     "t": "Le calme de la chambre",
+     "g": "Voir pourquoi une chambre simple favorise le repos.",
+     "p": [
+      "Une chambre apaisante a moins d'objets visibles et un passage dégagé.",
+      "Piles de linge, papiers de travail et appareils s'y glissent souvent.",
+      "Choisis ce qui aide à se reposer : lumière douce, un livre, une table de chevet dégagée."
+     ],
+     "q": "Qu'est-ce qui rendrait ta chambre plus reposante ?",
+     "c": "Retire de ta chambre trois objets qui n'ont rien à voir avec le repos."
+    },
+    "it": {
+     "t": "La calma della camera",
+     "g": "Capire perché una camera semplice favorisce il riposo.",
+     "p": [
+      "Una camera calma ha meno oggetti in vista e un passaggio libero.",
+      "Mucchi di bucato, carte di lavoro e gadget spesso ci finiscono dentro.",
+      "Scegli ciò che aiuta il riposo: luce soffusa, un libro, un comodino libero."
+     ],
+     "q": "Cosa renderebbe la tua camera più riposante?",
+     "c": "Porta fuori dalla camera tre oggetti che non c'entrano col riposo."
+    },
+    "pt": {
+     "t": "A calma do quarto",
+     "g": "Perceber por que um quarto simples ajuda ao descanso.",
+     "p": [
+      "Um quarto calmo tem menos objetos à vista e um caminho livre.",
+      "Montes de roupa, papéis de trabalho e aparelhos costumam entrar sem darmos conta.",
+      "Escolhe o que ajuda a descansar: luz suave, um livro, uma mesa de cabeceira livre."
+     ],
+     "q": "O que tornaria o teu quarto mais descansado?",
+     "c": "Tira do quarto três objetos que não tenham a ver com descanso."
+    },
+    "pt_BR": {
+     "t": "A calma do quarto",
+     "g": "Entender por que um quarto simples ajuda no descanso.",
+     "p": [
+      "Um quarto tranquilo tem menos itens à vista e um caminho livre.",
+      "Pilhas de roupa, papéis de trabalho e aparelhos costumam ir entrando.",
+      "Escolha o que ajuda a descansar: luz suave, um livro, um criado-mudo livre."
+     ],
+     "q": "O que deixaria o seu quarto mais tranquilo para descansar?",
+     "c": "Tire do quarto três itens que não tenham a ver com descanso."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Under the bed and on top of wardrobes",
+     "g": "Deal with hidden storage spots where forgotten things collect.",
+     "p": [
+      "Hidden spots collect things we forget we own.",
+      "Pull everything out in daylight and look at it with fresh eyes.",
+      "If you forgot it for a year, you probably will not miss it."
+     ],
+     "q": "What might be hiding under your bed or on top of a wardrobe?",
+     "c": "Empty one hidden spot and keep only what you would happily use again."
+    },
+    "de": {
+     "t": "Unter dem Bett und auf dem Schrank",
+     "g": "Versteckte Lagerplätze angehen, wo sich Vergessenes sammelt.",
+     "p": [
+      "Versteckte Ecken sammeln Dinge, von denen wir vergessen, dass wir sie haben.",
+      "Zieh alles bei Tageslicht heraus und sieh es mit frischem Blick an.",
+      "Wenn du es ein Jahr vergessen hast, vermisst du es wohl nicht."
+     ],
+     "q": "Was könnte sich unter deinem Bett oder auf dem Schrank verstecken?",
+     "c": "Leere einen versteckten Platz und behalte nur, was du gern wieder nutzt."
+    },
+    "es": {
+     "t": "Debajo de la cama y encima del armario",
+     "g": "Atender los escondites donde se acumulan cosas olvidadas.",
+     "p": [
+      "Los rincones ocultos acumulan cosas que olvidamos que tenemos.",
+      "Saca todo a la luz del día y míralo con ojos nuevos.",
+      "Si lo olvidaste durante un año, probablemente no lo echarás de menos."
+     ],
+     "q": "¿Qué podría esconderse debajo de tu cama o encima del armario?",
+     "c": "Vacía un rincón oculto y conserva solo lo que usarías con gusto."
+    },
+    "fr": {
+     "t": "Sous le lit et sur les armoires",
+     "g": "S'occuper des rangements cachés où s'accumulent les choses oubliées.",
+     "p": [
+      "Les recoins cachés accumulent des choses dont on oublie la présence.",
+      "Sors tout à la lumière du jour et regarde-le d'un oeil neuf.",
+      "Si tu l'as oublié pendant un an, il ne te manquera sans doute pas."
+     ],
+     "q": "Qu'est-ce qui pourrait se cacher sous ton lit ou sur ton armoire ?",
+     "c": "Vide un recoin caché et ne garde que ce que tu réutiliserais avec plaisir."
+    },
+    "it": {
+     "t": "Sotto il letto e sopra gli armadi",
+     "g": "Occuparsi dei posti nascosti dove si accumulano cose dimenticate.",
+     "p": [
+      "I posti nascosti accumulano cose che dimentichiamo di avere.",
+      "Tira fuori tutto alla luce del giorno e guardalo con occhi nuovi.",
+      "Se l'hai dimenticato per un anno, probabilmente non ti mancherà."
+     ],
+     "q": "Cosa potrebbe nascondersi sotto il tuo letto o sopra l'armadio?",
+     "c": "Svuota un posto nascosto e tieni solo ciò che useresti volentieri."
+    },
+    "pt": {
+     "t": "Debaixo da cama e em cima dos armários",
+     "g": "Tratar dos esconderijos onde se acumulam coisas esquecidas.",
+     "p": [
+      "Os cantos escondidos acumulam coisas de que nos esquecemos.",
+      "Tira tudo cá para fora à luz do dia e olha com olhos novos.",
+      "Se te esqueceste durante um ano, provavelmente não terás saudades."
+     ],
+     "q": "O que poderá estar escondido debaixo da tua cama ou em cima do armário?",
+     "c": "Esvazia um canto escondido e guarda só o que usarias com gosto."
+    },
+    "pt_BR": {
+     "t": "Embaixo da cama e em cima dos armários",
+     "g": "Cuidar dos esconderijos onde se acumulam coisas esquecidas.",
+     "p": [
+      "Os cantos escondidos acumulam coisas que a gente esquece que tem.",
+      "Tire tudo para fora à luz do dia e olhe com olhos novos.",
+      "Se você esqueceu por um ano, provavelmente não vai sentir falta."
+     ],
+     "q": "O que pode estar escondido embaixo da sua cama ou em cima do armário?",
+     "c": "Esvazie um canto escondido e fique só com o que usaria com prazer."
+    }
+   }
+  }
+ ]
+}

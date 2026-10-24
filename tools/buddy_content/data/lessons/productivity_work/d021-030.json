@@ -1,0 +1,835 @@
+{
+ "topic": "productivity_work",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Pomodoro technique",
+     "g": "Work in focused 25-minute sprints with short breaks in between.",
+     "p": [
+      "Set a timer for 25 minutes and work on one task only.",
+      "Then take a 5-minute break away from the screen.",
+      "After four rounds, take a longer break of 15 to 30 minutes."
+     ],
+     "q": "Do you think you could focus for 25 minutes without checking anything?",
+     "c": "Do one 25-minute sprint today, then enjoy a real 5-minute break."
+    },
+    "de": {
+     "t": "Die Pomodoro-Technik",
+     "g": "In fokussierten 25-Minuten-Sprints mit kurzen Pausen dazwischen arbeiten.",
+     "p": [
+      "Stell einen Timer auf 25 Minuten und arbeite nur an einer Aufgabe.",
+      "Danach folgen 5 Minuten Pause weg vom Bildschirm.",
+      "Nach vier Runden gönn dir eine längere Pause von 15 bis 30 Minuten."
+     ],
+     "q": "Glaubst du, du könntest 25 Minuten fokussiert bleiben, ohne irgendetwas zu prüfen?",
+     "c": "Mach heute einen 25-Minuten-Sprint und genieße danach 5 echte Minuten Pause."
+    },
+    "es": {
+     "t": "La técnica Pomodoro",
+     "g": "Trabajar en sprints de 25 minutos con descansos cortos entre medias.",
+     "p": [
+      "Pon un temporizador de 25 minutos y trabaja en una sola tarea.",
+      "Luego descansa 5 minutos lejos de la pantalla.",
+      "Tras cuatro rondas, haz una pausa más larga de 15 a 30 minutos."
+     ],
+     "q": "¿Crees que podrías concentrarte 25 minutos sin mirar nada más?",
+     "c": "Haz hoy un sprint de 25 minutos y disfruta después de 5 minutos de descanso real."
+    },
+    "fr": {
+     "t": "La technique Pomodoro",
+     "g": "Travailler en sprints de 25 minutes avec de courtes pauses entre eux.",
+     "p": [
+      "Réglez une minuterie sur 25 minutes et ne faites qu'une tâche.",
+      "Puis faites 5 minutes de pause loin de l'écran.",
+      "Après quatre tours, prenez une pause plus longue de 15 à 30 minutes."
+     ],
+     "q": "Pensez-vous pouvoir vous concentrer 25 minutes sans rien vérifier ?",
+     "c": "Faites un sprint de 25 minutes aujourd'hui, puis profitez de 5 minutes de vraie pause."
+    },
+    "it": {
+     "t": "La tecnica del Pomodoro",
+     "g": "Lavorare in sprint concentrati di 25 minuti con brevi pause in mezzo.",
+     "p": [
+      "Imposta un timer di 25 minuti e lavora a un solo compito.",
+      "Poi fai 5 minuti di pausa lontano dallo schermo.",
+      "Dopo quattro giri, fai una pausa più lunga da 15 a 30 minuti."
+     ],
+     "q": "Pensi di riuscire a concentrarti 25 minuti senza controllare nulla?",
+     "c": "Fai oggi uno sprint di 25 minuti, poi goditi 5 minuti di vera pausa."
+    },
+    "pt": {
+     "t": "A técnica Pomodoro",
+     "g": "Trabalhar em sprints de 25 minutos com pausas curtas pelo meio.",
+     "p": [
+      "Põe um temporizador a 25 minutos e trabalha numa só tarefa.",
+      "Depois faz 5 minutos de pausa longe do ecrã.",
+      "Após quatro rondas, faz uma pausa maior de 15 a 30 minutos."
+     ],
+     "q": "Achas que conseguirias concentrar-te 25 minutos sem ver mais nada?",
+     "c": "Faz hoje um sprint de 25 minutos e goza depois 5 minutos de pausa a sério."
+    },
+    "pt_BR": {
+     "t": "A técnica Pomodoro",
+     "g": "Trabalhar em sprints de 25 minutos com pausas curtas entre eles.",
+     "p": [
+      "Coloque um timer em 25 minutos e trabalhe em uma só tarefa.",
+      "Depois faça 5 minutos de pausa longe da tela.",
+      "Após quatro rodadas, faça uma pausa maior de 15 a 30 minutos."
+     ],
+     "q": "Você acha que conseguiria focar 25 minutos sem checar mais nada?",
+     "c": "Faça hoje um sprint de 25 minutos e aproveite depois 5 minutos de pausa de verdade."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Adapting work intervals",
+     "g": "Find focus block lengths that suit you and your tasks.",
+     "p": [
+      "25 minutes is a starting point, not a law.",
+      "Deep work may suit 50 minutes; light admin may suit 15.",
+      "Test a few lengths for a week and keep what feels natural."
+     ],
+     "q": "How long can you usually focus before your mind wanders?",
+     "c": "Try a 15, a 25 and a 45-minute block today and compare how they feel."
+    },
+    "de": {
+     "t": "Arbeitsintervalle anpassen",
+     "g": "Fokusblöcke finden, die zu dir und deinen Aufgaben passen.",
+     "p": [
+      "25 Minuten sind ein Startpunkt, kein Gesetz.",
+      "Tiefe Arbeit passt vielleicht zu 50 Minuten, leichte Verwaltung zu 15.",
+      "Teste eine Woche lang verschiedene Längen und behalte, was sich natürlich anfühlt."
+     ],
+     "q": "Wie lange kannst du meist fokussiert bleiben, bevor die Gedanken wandern?",
+     "c": "Probiere heute je einen Block von 15, 25 und 45 Minuten und vergleiche."
+    },
+    "es": {
+     "t": "Adaptar los intervalos de trabajo",
+     "g": "Encontrar bloques de concentración que se ajusten a ti y a tus tareas.",
+     "p": [
+      "25 minutos son un punto de partida, no una ley.",
+      "El trabajo profundo puede pedir 50 minutos; el administrativo, 15.",
+      "Prueba varias duraciones durante una semana y quédate con la que fluya."
+     ],
+     "q": "¿Cuánto sueles concentrarte antes de que tu mente divague?",
+     "c": "Prueba hoy un bloque de 15, otro de 25 y otro de 45 minutos y compara."
+    },
+    "fr": {
+     "t": "Adapter les intervalles de travail",
+     "g": "Trouver des blocs de concentration adaptés à vous et à vos tâches.",
+     "p": [
+      "25 minutes sont un point de départ, pas une loi.",
+      "Le travail de fond peut aimer 50 minutes ; l'administratif, 15.",
+      "Testez plusieurs durées une semaine et gardez celle qui vous convient."
+     ],
+     "q": "Combien de temps restez-vous concentré avant que l'esprit vagabonde ?",
+     "c": "Essayez aujourd'hui un bloc de 15, de 25 et de 45 minutes et comparez."
+    },
+    "it": {
+     "t": "Adattare gli intervalli di lavoro",
+     "g": "Trovare blocchi di concentrazione adatti a te e ai tuoi compiti.",
+     "p": [
+      "25 minuti sono un punto di partenza, non una legge.",
+      "Il lavoro profondo può volere 50 minuti; la burocrazia leggera, 15.",
+      "Prova diverse durate per una settimana e tieni quella naturale."
+     ],
+     "q": "Per quanto riesci di solito a concentrarti prima che la mente vaghi?",
+     "c": "Prova oggi un blocco da 15, uno da 25 e uno da 45 minuti e confronta."
+    },
+    "pt": {
+     "t": "Adaptar os intervalos de trabalho",
+     "g": "Encontrar blocos de foco que se ajustem a ti e às tuas tarefas.",
+     "p": [
+      "25 minutos são um ponto de partida, não uma lei.",
+      "O trabalho profundo pode pedir 50 minutos; o administrativo, 15.",
+      "Testa várias durações durante uma semana e fica com a que fluir."
+     ],
+     "q": "Quanto tempo costumas concentrar-te antes de a mente divagar?",
+     "c": "Experimenta hoje um bloco de 15, um de 25 e um de 45 minutos e compara."
+    },
+    "pt_BR": {
+     "t": "Adaptar os intervalos de trabalho",
+     "g": "Encontrar blocos de foco que combinem com você e suas tarefas.",
+     "p": [
+      "25 minutos são um ponto de partida, não uma lei.",
+      "Trabalho profundo pode pedir 50 minutos; o administrativo, 15.",
+      "Teste várias durações por uma semana e fique com a que fluir."
+     ],
+     "q": "Por quanto tempo você costuma focar antes de a mente divagar?",
+     "c": "Experimente hoje um bloco de 15, um de 25 e um de 45 minutos e compare."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The power of breaks",
+     "g": "Why short breaks restore attention and creativity.",
+     "p": [
+      "Attention works like a battery; breaks recharge it.",
+      "The best breaks are screen-free: look out a window, breathe, stand up.",
+      "A pause before you are exhausted works better than one after."
+     ],
+     "q": "What do you usually do on a break, and does it refresh you?",
+     "c": "Take three screen-free breaks of five minutes today."
+    },
+    "de": {
+     "t": "Die Kraft der Pausen",
+     "g": "Warum kurze Pausen Aufmerksamkeit und Kreativität zurückbringen.",
+     "p": [
+      "Aufmerksamkeit funktioniert wie ein Akku; Pausen laden ihn auf.",
+      "Die besten Pausen sind bildschirmfrei: aus dem Fenster schauen, atmen, aufstehen.",
+      "Eine Pause vor der Erschöpfung wirkt besser als eine danach."
+     ],
+     "q": "Was machst du in Pausen meist, und erfrischt es dich?",
+     "c": "Mach heute drei bildschirmfreie Pausen von je fünf Minuten."
+    },
+    "es": {
+     "t": "El poder de las pausas",
+     "g": "Por qué las pausas cortas devuelven atención y creatividad.",
+     "p": [
+      "La atención funciona como una batería; las pausas la recargan.",
+      "Las mejores pausas son sin pantalla: mirar por la ventana, respirar, levantarte.",
+      "Parar antes de agotarte funciona mejor que parar después."
+     ],
+     "q": "¿Qué sueles hacer en una pausa y te refresca?",
+     "c": "Haz hoy tres pausas de cinco minutos sin pantalla."
+    },
+    "fr": {
+     "t": "Le pouvoir des pauses",
+     "g": "Pourquoi de courtes pauses restaurent attention et créativité.",
+     "p": [
+      "L'attention fonctionne comme une batterie ; les pauses la rechargent.",
+      "Les meilleures pauses sont sans écran : regarder dehors, respirer, se lever.",
+      "Une pause avant l'épuisement vaut mieux qu'une pause après."
+     ],
+     "q": "Que faites-vous d'habitude en pause, et cela vous ressource-t-il ?",
+     "c": "Faites aujourd'hui trois pauses de cinq minutes sans écran."
+    },
+    "it": {
+     "t": "Il potere delle pause",
+     "g": "Perché le pause brevi ridanno attenzione e creatività.",
+     "p": [
+      "L'attenzione funziona come una batteria; le pause la ricaricano.",
+      "Le pause migliori sono senza schermo: guardare fuori, respirare, alzarsi.",
+      "Una pausa prima di esaurirti funziona meglio di una dopo."
+     ],
+     "q": "Cosa fai di solito in pausa e ti rinfresca?",
+     "c": "Fai oggi tre pause di cinque minuti senza schermo."
+    },
+    "pt": {
+     "t": "O poder das pausas",
+     "g": "Porque as pausas curtas devolvem atenção e criatividade.",
+     "p": [
+      "A atenção funciona como uma bateria; as pausas recarregam-na.",
+      "As melhores pausas são sem ecrã: olhar pela janela, respirar, levantar-te.",
+      "Parar antes de te esgotares funciona melhor do que depois."
+     ],
+     "q": "O que costumas fazer numa pausa e isso refresca-te?",
+     "c": "Faz hoje três pausas de cinco minutos sem ecrã."
+    },
+    "pt_BR": {
+     "t": "O poder das pausas",
+     "g": "Por que pausas curtas devolvem atenção e criatividade.",
+     "p": [
+      "A atenção funciona como uma bateria; as pausas a recarregam.",
+      "As melhores pausas são sem tela: olhar pela janela, respirar, levantar.",
+      "Parar antes de se esgotar funciona melhor do que depois."
+     ],
+     "q": "O que você costuma fazer numa pausa e isso te refresca?",
+     "c": "Faça hoje três pausas de cinco minutos sem tela."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Movement during work",
+     "g": "Stretching and short walks to stay alert at your desk.",
+     "p": [
+      "Sitting for long stretches makes body and mind feel heavy.",
+      "Stand, roll your shoulders or walk to refill your water every hour.",
+      "A short walk can unlock a problem you were stuck on."
+     ],
+     "q": "How much do you move during a typical work day?",
+     "c": "Set a reminder to stand and stretch once an hour today."
+    },
+    "de": {
+     "t": "Bewegung bei der Arbeit",
+     "g": "Dehnen und kurze Spaziergänge, um am Schreibtisch wach zu bleiben.",
+     "p": [
+      "Langes Sitzen macht Körper und Kopf schwer.",
+      "Steh jede Stunde auf, kreise die Schultern oder hol dir Wasser.",
+      "Ein kurzer Spaziergang löst manchmal ein festgefahrenes Problem."
+     ],
+     "q": "Wie viel bewegst du dich an einem typischen Arbeitstag?",
+     "c": "Stell dir heute stündlich eine Erinnerung zum Aufstehen und Dehnen."
+    },
+    "es": {
+     "t": "Movimiento durante el trabajo",
+     "g": "Estirar y dar paseos cortos para estar despierto en tu mesa.",
+     "p": [
+      "Estar mucho rato sentado vuelve pesados el cuerpo y la mente.",
+      "Cada hora, levántate, mueve los hombros o ve a por agua.",
+      "Un paseo corto puede desatascar un problema que te bloqueaba."
+     ],
+     "q": "¿Cuánto te mueves en un día de trabajo normal?",
+     "c": "Pon hoy una alarma para levantarte y estirarte cada hora."
+    },
+    "fr": {
+     "t": "Bouger pendant le travail",
+     "g": "S'étirer et marcher un peu pour rester alerte à son bureau.",
+     "p": [
+      "Rester longtemps assis alourdit le corps et l'esprit.",
+      "Chaque heure, levez-vous, roulez les épaules ou allez chercher de l'eau.",
+      "Une courte marche peut débloquer un problème qui vous bloquait."
+     ],
+     "q": "Combien bougez-vous pendant une journée de travail typique ?",
+     "c": "Réglez aujourd'hui un rappel pour vous lever et vous étirer chaque heure."
+    },
+    "it": {
+     "t": "Muoversi durante il lavoro",
+     "g": "Stretching e brevi passeggiate per restare svegli alla scrivania.",
+     "p": [
+      "Stare seduti a lungo appesantisce corpo e mente.",
+      "Ogni ora alzati, ruota le spalle o vai a prendere l'acqua.",
+      "Una breve camminata può sbloccare un problema che ti bloccava."
+     ],
+     "q": "Quanto ti muovi in una tipica giornata di lavoro?",
+     "c": "Imposta oggi un promemoria per alzarti e fare stretching ogni ora."
+    },
+    "pt": {
+     "t": "Movimento durante o trabalho",
+     "g": "Alongar e dar passeios curtos para te manteres desperto à secretária.",
+     "p": [
+      "Estar muito tempo sentado deixa o corpo e a mente pesados.",
+      "A cada hora, levanta-te, roda os ombros ou vai buscar água.",
+      "Um passeio curto pode desbloquear um problema que te prendia."
+     ],
+     "q": "Quanto te mexes num dia de trabalho normal?",
+     "c": "Põe hoje um lembrete para te levantares e alongares a cada hora."
+    },
+    "pt_BR": {
+     "t": "Movimento durante o trabalho",
+     "g": "Alongar e dar caminhadas curtas para ficar desperto na mesa.",
+     "p": [
+      "Ficar muito tempo sentado deixa corpo e mente pesados.",
+      "A cada hora, levante, gire os ombros ou vá buscar água.",
+      "Uma caminhada curta pode destravar um problema que te prendia."
+     ],
+     "q": "Quanto você se mexe num dia de trabalho normal?",
+     "c": "Coloque hoje um lembrete para levantar e alongar a cada hora."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Water and steady energy",
+     "g": "General tips for staying fresh and alert through the workday.",
+     "p": [
+      "Keep a glass or bottle of water within reach as a gentle cue.",
+      "Regular meals and snacks help avoid sudden energy dips.",
+      "This is general wellbeing, not medical advice."
+     ],
+     "q": "What helps you feel steady and awake in the afternoon?",
+     "c": "Put a water bottle on your desk today and note your afternoon energy."
+    },
+    "de": {
+     "t": "Wasser und gleichmäßige Energie",
+     "g": "Allgemeine Tipps, um frisch und wach durch den Arbeitstag zu kommen.",
+     "p": [
+      "Ein Glas oder eine Flasche Wasser in Reichweite erinnert sanft ans Trinken.",
+      "Regelmäßige Mahlzeiten und Snacks verhindern plötzliche Energietiefs.",
+      "Das sind allgemeine Wohlfühltipps, keine medizinische Beratung."
+     ],
+     "q": "Was hilft dir, dich am Nachmittag stabil und wach zu fühlen?",
+     "c": "Stell heute eine Wasserflasche auf den Tisch und notiere deine Nachmittagsenergie."
+    },
+    "es": {
+     "t": "Agua y energía estable",
+     "g": "Consejos generales para mantenerte fresco y atento durante la jornada.",
+     "p": [
+      "Ten un vaso o botella de agua a mano como recordatorio suave.",
+      "Comer con regularidad ayuda a evitar bajones de energía.",
+      "Es bienestar general, no consejo médico."
+     ],
+     "q": "¿Qué te ayuda a sentirte estable y despierto por la tarde?",
+     "c": "Pon hoy una botella de agua en tu mesa y anota tu energía por la tarde."
+    },
+    "fr": {
+     "t": "L'eau et une énergie stable",
+     "g": "Conseils généraux pour rester frais et alerte pendant la journée.",
+     "p": [
+      "Gardez un verre ou une bouteille d'eau à portée comme rappel doux.",
+      "Des repas réguliers aident à éviter les baisses d'énergie soudaines.",
+      "Il s'agit de bien-être général, pas de conseil médical."
+     ],
+     "q": "Qu'est-ce qui vous aide à rester stable et éveillé l'après-midi ?",
+     "c": "Posez une bouteille d'eau sur votre bureau et notez votre énergie l'après-midi."
+    },
+    "it": {
+     "t": "Acqua ed energia costante",
+     "g": "Consigli generali per restare freschi e attenti durante il lavoro.",
+     "p": [
+      "Tieni un bicchiere o una bottiglia d'acqua a portata come promemoria gentile.",
+      "Pasti regolari aiutano a evitare cali di energia improvvisi.",
+      "Benessere generale, non un consiglio medico."
+     ],
+     "q": "Cosa ti aiuta a sentirti stabile e sveglio nel pomeriggio?",
+     "c": "Metti oggi una bottiglia d'acqua sulla scrivania e annota l'energia pomeridiana."
+    },
+    "pt": {
+     "t": "Água e energia estável",
+     "g": "Dicas gerais para te manteres fresco e atento durante o dia de trabalho.",
+     "p": [
+      "Mantém um copo ou garrafa de água à mão como lembrete suave.",
+      "Refeições regulares ajudam a evitar quebras de energia súbitas.",
+      "É bem-estar geral, não aconselhamento médico."
+     ],
+     "q": "O que te ajuda a sentir-te estável e desperto à tarde?",
+     "c": "Põe hoje uma garrafa de água na secretária e anota a tua energia à tarde."
+    },
+    "pt_BR": {
+     "t": "Água e energia estável",
+     "g": "Dicas gerais para ficar fresco e atento durante o dia de trabalho.",
+     "p": [
+      "Deixe um copo ou garrafa de água à mão como lembrete suave.",
+      "Refeições regulares ajudam a evitar quedas bruscas de energia.",
+      "É bem-estar geral, não orientação médica."
+     ],
+     "q": "O que te ajuda a se sentir estável e desperto à tarde?",
+     "c": "Coloque hoje uma garrafa de água na mesa e anote sua energia à tarde."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Taming notifications",
+     "g": "Turn off non-essential alerts to protect your attention.",
+     "p": [
+      "Most alerts serve the sender, not you.",
+      "Keep notifications only for people and things that truly cannot wait.",
+      "Check the rest at times you choose."
+     ],
+     "q": "Which notification interrupts you most often?",
+     "c": "Turn off three non-essential notifications on your phone or computer."
+    },
+    "de": {
+     "t": "Benachrichtigungen zähmen",
+     "g": "Unwichtige Hinweise ausschalten, um deine Aufmerksamkeit zu schützen.",
+     "p": [
+      "Die meisten Hinweise dienen dem Absender, nicht dir.",
+      "Behalte Benachrichtigungen nur für Menschen und Dinge, die nicht warten können.",
+      "Den Rest prüfst du zu Zeiten, die du selbst wählst."
+     ],
+     "q": "Welche Benachrichtigung unterbricht dich am häufigsten?",
+     "c": "Schalte drei unwichtige Benachrichtigungen an Handy oder Computer aus."
+    },
+    "es": {
+     "t": "Domar las notificaciones",
+     "g": "Desactivar alertas no esenciales para proteger tu atención.",
+     "p": [
+      "La mayoría de las alertas sirven al remitente, no a ti.",
+      "Deja avisos solo para personas y cosas que no pueden esperar.",
+      "Revisa el resto en los momentos que tú elijas."
+     ],
+     "q": "¿Qué notificación te interrumpe más a menudo?",
+     "c": "Desactiva tres notificaciones no esenciales del móvil o del ordenador."
+    },
+    "fr": {
+     "t": "Apprivoiser les notifications",
+     "g": "Couper les alertes non essentielles pour protéger votre attention.",
+     "p": [
+      "La plupart des alertes servent l'expéditeur, pas vous.",
+      "Gardez les notifications pour ce qui ne peut vraiment pas attendre.",
+      "Consultez le reste aux moments que vous choisissez."
+     ],
+     "q": "Quelle notification vous interrompt le plus souvent ?",
+     "c": "Désactivez trois notifications non essentielles sur votre téléphone ou ordinateur."
+    },
+    "it": {
+     "t": "Domare le notifiche",
+     "g": "Disattivare gli avvisi non essenziali per proteggere la tua attenzione.",
+     "p": [
+      "La maggior parte degli avvisi serve a chi li manda, non a te.",
+      "Tieni le notifiche solo per persone e cose che non possono aspettare.",
+      "Controlla il resto nei momenti che scegli tu."
+     ],
+     "q": "Quale notifica ti interrompe più spesso?",
+     "c": "Disattiva tre notifiche non essenziali su telefono o computer."
+    },
+    "pt": {
+     "t": "Domar as notificações",
+     "g": "Desligar alertas não essenciais para proteger a tua atenção.",
+     "p": [
+      "A maioria dos alertas serve quem os envia, não a ti.",
+      "Mantém notificações só para pessoas e coisas que não podem esperar.",
+      "Vê o resto nos momentos que escolheres."
+     ],
+     "q": "Que notificação te interrompe mais vezes?",
+     "c": "Desliga três notificações não essenciais no telemóvel ou no computador."
+    },
+    "pt_BR": {
+     "t": "Domar as notificações",
+     "g": "Desligar alertas não essenciais para proteger sua atenção.",
+     "p": [
+      "A maioria dos alertas serve a quem envia, não a você.",
+      "Mantenha notificações só para pessoas e coisas que não podem esperar.",
+      "Veja o resto nos momentos que você escolher."
+     ],
+     "q": "Qual notificação mais te interrompe?",
+     "c": "Desligue três notificações não essenciais no celular ou no computador."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your phone at work",
+     "g": "Simple ways to keep your phone from stealing your focus.",
+     "p": [
+      "Out of sight is often out of mind: try a drawer or another room.",
+      "Silent mode or a focus mode keeps urgent calls reachable.",
+      "Phone breaks are fine when you choose them, not when pulled."
+     ],
+     "q": "How often do you pick up your phone without a real reason?",
+     "c": "Put your phone out of reach during your next focus block."
+    },
+    "de": {
+     "t": "Dein Handy bei der Arbeit",
+     "g": "Einfache Wege, damit das Handy deinen Fokus nicht stiehlt.",
+     "p": [
+      "Aus den Augen, aus dem Sinn: Schublade oder anderer Raum helfen.",
+      "Stumm- oder Fokusmodus lässt dringende Anrufe trotzdem durch.",
+      "Handypausen sind okay, wenn du sie wählst und nicht gezogen wirst."
+     ],
+     "q": "Wie oft greifst du ohne echten Grund zum Handy?",
+     "c": "Leg dein Handy im nächsten Fokusblock außer Reichweite."
+    },
+    "es": {
+     "t": "Tu móvil en el trabajo",
+     "g": "Formas sencillas de que el móvil no te robe la concentración.",
+     "p": [
+      "Lo que no se ve, no distrae: prueba un cajón u otra habitación.",
+      "El modo silencio o concentración deja pasar las llamadas urgentes.",
+      "Las pausas con el móvil están bien si las eliges tú."
+     ],
+     "q": "¿Con qué frecuencia coges el móvil sin un motivo real?",
+     "c": "Deja el móvil fuera de tu alcance en tu próximo bloque de foco."
+    },
+    "fr": {
+     "t": "Votre téléphone au travail",
+     "g": "Moyens simples pour que le téléphone ne vole pas votre concentration.",
+     "p": [
+      "Loin des yeux, loin de l'esprit : essayez un tiroir ou une autre pièce.",
+      "Le mode silencieux ou concentration laisse passer les appels urgents.",
+      "Les pauses téléphone sont bien quand vous les choisissez."
+     ],
+     "q": "À quelle fréquence prenez-vous votre téléphone sans vraie raison ?",
+     "c": "Éloignez votre téléphone pendant votre prochain bloc de concentration."
+    },
+    "it": {
+     "t": "Il telefono al lavoro",
+     "g": "Modi semplici perché il telefono non rubi la tua concentrazione.",
+     "p": [
+      "Lontano dagli occhi, lontano dalla mente: prova un cassetto o un'altra stanza.",
+      "La modalità silenziosa o concentrazione lascia passare le chiamate urgenti.",
+      "Le pause col telefono vanno bene se le scegli tu."
+     ],
+     "q": "Quanto spesso prendi il telefono senza un vero motivo?",
+     "c": "Tieni il telefono fuori portata durante il prossimo blocco di concentrazione."
+    },
+    "pt": {
+     "t": "O telemóvel no trabalho",
+     "g": "Formas simples de o telemóvel não te roubar o foco.",
+     "p": [
+      "Longe da vista, longe da mente: experimenta uma gaveta ou outra divisão.",
+      "O modo silêncio ou foco deixa passar chamadas urgentes.",
+      "As pausas com o telemóvel são boas quando és tu a escolhê-las."
+     ],
+     "q": "Com que frequência pegas no telemóvel sem motivo real?",
+     "c": "Deixa o telemóvel fora de alcance no teu próximo bloco de foco."
+    },
+    "pt_BR": {
+     "t": "O celular no trabalho",
+     "g": "Formas simples de o celular não roubar seu foco.",
+     "p": [
+      "Longe dos olhos, longe da mente: tente uma gaveta ou outro cômodo.",
+      "O modo silencioso ou foco ainda deixa passar chamadas urgentes.",
+      "Pausas com o celular são boas quando é você quem as escolhe."
+     ],
+     "q": "Com que frequência você pega o celular sem motivo real?",
+     "c": "Deixe o celular fora de alcance no seu próximo bloco de foco."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Common distractions",
+     "g": "Identify your biggest interruptions and what triggers them.",
+     "p": [
+      "Distractions come from outside, like noise, and from inside, like boredom.",
+      "Notice the moment before you reach for a distraction.",
+      "Knowing your triggers lets you plan around them kindly."
+     ],
+     "q": "What distracts you most while you work?",
+     "c": "Tally your distractions today with a mark for each one."
+    },
+    "de": {
+     "t": "Typische Ablenkungen",
+     "g": "Deine größten Unterbrechungen und ihre Auslöser erkennen.",
+     "p": [
+      "Ablenkung kommt von außen, wie Lärm, und von innen, wie Langeweile.",
+      "Bemerke den Moment, bevor du nach einer Ablenkung greifst.",
+      "Wer seine Auslöser kennt, kann freundlich um sie herum planen."
+     ],
+     "q": "Was lenkt dich bei der Arbeit am meisten ab?",
+     "c": "Führe heute eine Strichliste deiner Ablenkungen."
+    },
+    "es": {
+     "t": "Distracciones comunes",
+     "g": "Identificar tus mayores interrupciones y qué las provoca.",
+     "p": [
+      "Las distracciones vienen de fuera, como el ruido, y de dentro, como el aburrimiento.",
+      "Fíjate en el instante previo a buscar una distracción.",
+      "Conocer tus detonantes permite planificar con amabilidad."
+     ],
+     "q": "¿Qué es lo que más te distrae cuando trabajas?",
+     "c": "Lleva hoy un recuento con una marca por cada distracción."
+    },
+    "fr": {
+     "t": "Les distractions courantes",
+     "g": "Identifier vos principales interruptions et leurs déclencheurs.",
+     "p": [
+      "Les distractions viennent de l'extérieur, comme le bruit, et de l'intérieur, comme l'ennui.",
+      "Repérez le moment juste avant de chercher une distraction.",
+      "Connaître vos déclencheurs permet de s'organiser avec bienveillance."
+     ],
+     "q": "Qu'est-ce qui vous distrait le plus quand vous travaillez ?",
+     "c": "Tenez aujourd'hui un décompte avec un trait par distraction."
+    },
+    "it": {
+     "t": "Distrazioni comuni",
+     "g": "Individuare le tue interruzioni maggiori e cosa le provoca.",
+     "p": [
+      "Le distrazioni vengono da fuori, come il rumore, e da dentro, come la noia.",
+      "Nota l'istante prima di cercare una distrazione.",
+      "Conoscere i tuoi inneschi permette di organizzarti con gentilezza."
+     ],
+     "q": "Cosa ti distrae di più mentre lavori?",
+     "c": "Tieni oggi un conteggio con un segno per ogni distrazione."
+    },
+    "pt": {
+     "t": "Distrações comuns",
+     "g": "Identificar as tuas maiores interrupções e o que as provoca.",
+     "p": [
+      "As distrações vêm de fora, como o ruído, e de dentro, como o tédio.",
+      "Repara no instante antes de procurares uma distração.",
+      "Conhecer os teus gatilhos permite planear com gentileza."
+     ],
+     "q": "O que mais te distrai quando trabalhas?",
+     "c": "Faz hoje uma contagem com um risco por cada distração."
+    },
+    "pt_BR": {
+     "t": "Distrações comuns",
+     "g": "Identificar suas maiores interrupções e o que as provoca.",
+     "p": [
+      "As distrações vêm de fora, como o ruído, e de dentro, como o tédio.",
+      "Perceba o instante antes de procurar uma distração.",
+      "Conhecer seus gatilhos permite planejar com gentileza."
+     ],
+     "q": "O que mais te distrai quando você trabalha?",
+     "c": "Faça hoje uma contagem com um risco para cada distração."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The distraction list",
+     "g": "Write down stray thoughts to handle later instead of now.",
+     "p": [
+      "Keep a scrap of paper beside you while you work.",
+      "When a random thought pops up, jot it down and go back.",
+      "The thought is safe on paper, so your mind can let go."
+     ],
+     "q": "What kind of random thoughts tend to pull you away?",
+     "c": "Keep a distraction list during your next focus block and review it after."
+    },
+    "de": {
+     "t": "Die Ablenkungsliste",
+     "g": "Zufällige Gedanken aufschreiben und später statt jetzt erledigen.",
+     "p": [
+      "Leg beim Arbeiten einen Zettel neben dich.",
+      "Taucht ein Gedanke auf, notiere ihn kurz und mach weiter.",
+      "Auf Papier ist der Gedanke sicher, dein Kopf kann loslassen."
+     ],
+     "q": "Welche zufälligen Gedanken ziehen dich meist weg?",
+     "c": "Führe im nächsten Fokusblock eine Ablenkungsliste und sieh sie danach durch."
+    },
+    "es": {
+     "t": "La lista de distracciones",
+     "g": "Anotar pensamientos sueltos para tratarlos luego y no ahora.",
+     "p": [
+      "Ten un papel a mano mientras trabajas.",
+      "Si aparece una idea al azar, apúntala y vuelve a lo tuyo.",
+      "El pensamiento queda a salvo en el papel y tu mente puede soltarlo."
+     ],
+     "q": "¿Qué tipo de pensamientos sueltos te sacan de la tarea?",
+     "c": "Lleva una lista de distracciones en tu próximo bloque y revísala después."
+    },
+    "fr": {
+     "t": "La liste des distractions",
+     "g": "Noter les pensées parasites pour les traiter plus tard plutôt que maintenant.",
+     "p": [
+      "Gardez un bout de papier près de vous pendant que vous travaillez.",
+      "Quand une pensée surgit, notez-la et reprenez votre tâche.",
+      "La pensée est en sécurité sur le papier, l'esprit peut lâcher prise."
+     ],
+     "q": "Quelles pensées parasites vous détournent le plus souvent ?",
+     "c": "Tenez une liste de distractions pendant votre prochain bloc et relisez-la après."
+    },
+    "it": {
+     "t": "La lista delle distrazioni",
+     "g": "Annotare i pensieri vaganti per occuparsene dopo, non adesso.",
+     "p": [
+      "Tieni un foglietto accanto a te mentre lavori.",
+      "Quando spunta un pensiero a caso, annotalo e torna al lavoro.",
+      "Il pensiero è al sicuro sulla carta e la mente può lasciarlo andare."
+     ],
+     "q": "Che tipo di pensieri vaganti ti porta più spesso fuori strada?",
+     "c": "Tieni una lista delle distrazioni nel prossimo blocco e rivedila dopo."
+    },
+    "pt": {
+     "t": "A lista de distrações",
+     "g": "Anotar pensamentos soltos para tratar depois e não agora.",
+     "p": [
+      "Tem um papelinho ao lado enquanto trabalhas.",
+      "Quando surge um pensamento aleatório, anota-o e volta ao que fazias.",
+      "O pensamento fica seguro no papel e a mente pode largá-lo."
+     ],
+     "q": "Que tipo de pensamentos soltos mais te tiram da tarefa?",
+     "c": "Faz uma lista de distrações no próximo bloco de foco e revê-a depois."
+    },
+    "pt_BR": {
+     "t": "A lista de distrações",
+     "g": "Anotar pensamentos soltos para tratar depois e não agora.",
+     "p": [
+      "Deixe um papelzinho ao lado enquanto trabalha.",
+      "Quando surgir um pensamento aleatório, anote e volte ao que fazia.",
+      "O pensamento fica seguro no papel e a mente pode soltá-lo."
+     ],
+     "q": "Que tipo de pensamentos soltos mais te tiram da tarefa?",
+     "c": "Faça uma lista de distrações no próximo bloco de foco e revise depois."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month",
+     "g": "A light recap of tasks, priorities, focus sprints and distractions.",
+     "p": [
+      "You learned to write clear tasks and pick one to three priorities.",
+      "Focus sprints, breaks and fewer alerts protect your attention.",
+      "Notice how far you have come and keep only what works for you."
+     ],
+     "q": "Which habit from this month helped you most?",
+     "c": "Choose one habit to keep and write it where you will see it."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Monat",
+     "g": "Ein leichter Rückblick auf Aufgaben, Prioritäten, Fokussprints und Ablenkungen.",
+     "p": [
+      "Du hast klare Aufgaben formuliert und ein bis drei Prioritäten gewählt.",
+      "Fokussprints, Pausen und weniger Hinweise schützen deine Aufmerksamkeit.",
+      "Sieh, wie weit du gekommen bist, und behalte nur, was dir hilft."
+     ],
+     "q": "Welche Gewohnheit dieses Monats hat dir am meisten geholfen?",
+     "c": "Wähle eine Gewohnheit zum Behalten und schreib sie dorthin, wo du sie siehst."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes",
+     "g": "Un repaso ligero de tareas, prioridades, sprints de foco y distracciones.",
+     "p": [
+      "Aprendiste a escribir tareas claras y a elegir de una a tres prioridades.",
+      "Los sprints, las pausas y menos alertas protegen tu atención.",
+      "Mira cuánto has avanzado y quédate solo con lo que te funciona."
+     ],
+     "q": "¿Qué hábito de este mes te ayudó más?",
+     "c": "Elige un hábito para conservar y escríbelo donde lo veas."
+    },
+    "fr": {
+     "t": "Bilan : votre premier mois",
+     "g": "Un bilan léger des tâches, priorités, sprints de concentration et distractions.",
+     "p": [
+      "Vous avez appris à écrire des tâches claires et à choisir une à trois priorités.",
+      "Sprints, pauses et moins d'alertes protègent votre attention.",
+      "Mesurez le chemin parcouru et gardez seulement ce qui vous convient."
+     ],
+     "q": "Quelle habitude de ce mois vous a le plus aidé ?",
+     "c": "Choisissez une habitude à garder et écrivez-la là où vous la verrez."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese",
+     "g": "Un ripasso leggero di compiti, priorità, sprint di concentrazione e distrazioni.",
+     "p": [
+      "Hai imparato a scrivere compiti chiari e a scegliere da una a tre priorità.",
+      "Sprint, pause e meno avvisi proteggono la tua attenzione.",
+      "Guarda quanta strada hai fatto e tieni solo ciò che funziona per te."
+     ],
+     "q": "Quale abitudine di questo mese ti ha aiutato di più?",
+     "c": "Scegli un'abitudine da tenere e scrivila dove la vedrai."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês",
+     "g": "Uma revisão leve de tarefas, prioridades, sprints de foco e distrações.",
+     "p": [
+      "Aprendeste a escrever tarefas claras e a escolher de uma a três prioridades.",
+      "Sprints, pausas e menos alertas protegem a tua atenção.",
+      "Vê quanto já avançaste e fica só com o que funciona para ti."
+     ],
+     "q": "Que hábito deste mês te ajudou mais?",
+     "c": "Escolhe um hábito para manter e escreve-o onde o vejas."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês",
+     "g": "Uma revisão leve de tarefas, prioridades, sprints de foco e distrações.",
+     "p": [
+      "Você aprendeu a escrever tarefas claras e a escolher de uma a três prioridades.",
+      "Sprints, pausas e menos alertas protegem sua atenção.",
+      "Veja o quanto você avançou e fique só com o que funciona para você."
+     ],
+     "q": "Que hábito deste mês mais te ajudou?",
+     "c": "Escolha um hábito para manter e escreva onde você veja."
+    }
+   }
+  }
+ ]
+}

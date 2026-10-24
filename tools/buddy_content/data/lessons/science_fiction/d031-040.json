@@ -1,0 +1,835 @@
+{
+ "topic": "science_fiction",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gadgets that came true",
+     "g": "Look at inventions SF imagined long before they existed.",
+     "p": [
+      "Video calls appeared in stories and films decades before they became common.",
+      "Star Trek's handheld communicators and slim data pads resemble phones and tablets we use now.",
+      "Earbuds and talking assistants echo ideas from Bradbury's and Clarke's stories."
+     ],
+     "q": "Which imagined gadget would you most like to see become real?",
+     "c": "Pick one SF gadget and write what you would use it for tomorrow."
+    },
+    "de": {
+     "t": "Gadgets, die wahr wurden",
+     "g": "Erfindungen betrachten, die SF lange vor ihrer Existenz ausmalte.",
+     "p": [
+      "Videoanrufe tauchten in Geschichten und Filmen Jahrzehnte auf, bevor sie alltäglich wurden.",
+      "Star Treks Handkommunikatoren und flache Datenpads ähneln heutigen Handys und Tablets.",
+      "Ohrstöpsel und sprechende Assistenten erinnern an Ideen aus Geschichten von Bradbury und Clarke."
+     ],
+     "q": "Welches erdachte Gerät würdest du am liebsten Wirklichkeit werden sehen?",
+     "c": "Wähle ein SF-Gadget und schreibe, wofür du es morgen nutzen würdest."
+    },
+    "es": {
+     "t": "Aparatos que se hicieron realidad",
+     "g": "Ver inventos que la CF imaginó mucho antes de que existieran.",
+     "p": [
+      "Las videollamadas aparecieron en relatos y películas décadas antes de ser comunes.",
+      "Los comunicadores de mano y las tabletas finas de Star Trek se parecen a nuestros móviles y tabletas.",
+      "Los auriculares y los asistentes parlantes recuerdan ideas de relatos de Bradbury y Clarke."
+     ],
+     "q": "¿Qué aparato imaginado te gustaría más ver hecho realidad?",
+     "c": "Elige un aparato de CF y escribe para qué lo usarías mañana."
+    },
+    "fr": {
+     "t": "Des gadgets devenus réalité",
+     "g": "Regarder des inventions que la SF imaginait bien avant leur existence.",
+     "p": [
+      "Les appels vidéo sont apparus dans les récits et films des décennies avant de devenir courants.",
+      "Les communicateurs de poche et les tablettes fines de Star Trek ressemblent à nos téléphones et tablettes.",
+      "Écouteurs et assistants parlants rappellent des idées d'histoires de Bradbury et Clarke."
+     ],
+     "q": "Quel gadget imaginé aimerais-tu le plus voir devenir réel ?",
+     "c": "Choisis un gadget de SF et écris à quoi il te servirait demain."
+    },
+    "it": {
+     "t": "Gadget che sono diventati realtà",
+     "g": "Guardare invenzioni che la fantascienza immaginò molto prima che esistessero.",
+     "p": [
+      "Le videochiamate comparvero in racconti e film decenni prima di diventare comuni.",
+      "I comunicatori tascabili e i sottili tablet di Star Trek somigliano ai nostri telefoni e tablet.",
+      "Auricolari e assistenti parlanti ricordano idee di racconti di Bradbury e Clarke."
+     ],
+     "q": "Quale gadget immaginato vorresti vedere diventare reale?",
+     "c": "Scegli un gadget di fantascienza e scrivi a cosa lo useresti domani."
+    },
+    "pt": {
+     "t": "Gadgets que se tornaram realidade",
+     "g": "Ver invenções que a FC imaginou muito antes de existirem.",
+     "p": [
+      "As videochamadas apareceram em contos e filmes décadas antes de se tornarem comuns.",
+      "Os comunicadores de mão e os tablets finos de Star Trek parecem os nossos telemóveis e tablets.",
+      "Auriculares e assistentes falantes lembram ideias de contos de Bradbury e Clarke."
+     ],
+     "q": "Que gadget imaginado gostarias mais de ver tornar-se real?",
+     "c": "Escolhe um gadget de FC e escreve para que o usarias amanhã."
+    },
+    "pt_BR": {
+     "t": "Gadgets que viraram realidade",
+     "g": "Ver invenções que a FC imaginou muito antes de existirem.",
+     "p": [
+      "As videochamadas apareceram em contos e filmes décadas antes de ficarem comuns.",
+      "Os comunicadores de mão e os tablets finos de Star Trek parecem nossos celulares e tablets.",
+      "Fones de ouvido e assistentes falantes lembram ideias de contos de Bradbury e Clarke."
+     ],
+     "q": "Que gadget imaginado você mais gostaria de ver virar realidade?",
+     "c": "Escolha um gadget de FC e escreva para que você o usaria amanhã."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Predictions that missed",
+     "g": "Learn why some forecasts failed and what that teaches us.",
+     "p": [
+      "Flying cars and Moon bases by 2000 were popular predictions that did not happen.",
+      "SF mainly imagines possibilities and asks questions; it does not promise the future.",
+      "Forecasts often miss because they extend today's trends and overlook surprises."
+     ],
+     "q": "Which prediction that missed do you find the funniest or most charming?",
+     "c": "Write one prediction for 50 years from now, and add why it might be wrong."
+    },
+    "de": {
+     "t": "Vorhersagen, die danebenlagen",
+     "g": "Lernen, warum manche Prognosen scheiterten und was uns das lehrt.",
+     "p": [
+      "Fliegende Autos und Mondbasen bis 2000 waren beliebte Vorhersagen, die nicht eintrafen.",
+      "SF malt vor allem Möglichkeiten aus und stellt Fragen; sie verspricht die Zukunft nicht.",
+      "Prognosen irren oft, weil sie heutige Trends fortschreiben und Überraschungen übersehen."
+     ],
+     "q": "Welche danebenliegende Vorhersage findest du am lustigsten oder charmantesten?",
+     "c": "Schreibe eine Vorhersage für in 50 Jahren und füge hinzu, warum sie falsch sein könnte."
+    },
+    "es": {
+     "t": "Predicciones que fallaron",
+     "g": "Aprender por qué fallaron algunos pronósticos y qué nos enseña eso.",
+     "p": [
+      "Coches voladores y bases lunares para el año 2000 fueron predicciones populares que no se cumplieron.",
+      "La CF imagina sobre todo posibilidades y hace preguntas; no promete el futuro.",
+      "Los pronósticos fallan a menudo porque prolongan las tendencias de hoy y pasan por alto las sorpresas."
+     ],
+     "q": "¿Qué predicción fallida te parece más divertida o encantadora?",
+     "c": "Escribe una predicción para dentro de 50 años y añade por qué podría ser errónea."
+    },
+    "fr": {
+     "t": "Des prédictions ratées",
+     "g": "Comprendre pourquoi certaines prévisions ont échoué et ce que cela nous apprend.",
+     "p": [
+      "Voitures volantes et bases lunaires pour l'an 2000 étaient des prédictions populaires qui ne se sont pas réalisées.",
+      "La SF imagine surtout des possibles et pose des questions ; elle ne promet pas l'avenir.",
+      "Les prévisions ratent souvent car elles prolongent les tendances actuelles et négligent les surprises."
+     ],
+     "q": "Quelle prédiction ratée te semble la plus drôle ou la plus charmante ?",
+     "c": "Écris une prédiction pour dans 50 ans et ajoute pourquoi elle pourrait être fausse."
+    },
+    "it": {
+     "t": "Previsioni sbagliate",
+     "g": "Capire perché alcune previsioni fallirono e cosa ci insegna.",
+     "p": [
+      "Auto volanti e basi lunari entro il 2000 erano previsioni popolari che non si avverarono.",
+      "La fantascienza immagina soprattutto possibilità e pone domande; non promette il futuro.",
+      "Le previsioni sbagliano spesso perché prolungano le tendenze di oggi e trascurano le sorprese."
+     ],
+     "q": "Quale previsione sbagliata trovi più divertente o più affascinante?",
+     "c": "Scrivi una previsione per fra 50 anni e aggiungi perché potrebbe essere sbagliata."
+    },
+    "pt": {
+     "t": "Previsões que falharam",
+     "g": "Perceber porque falharam algumas previsões e o que isso nos ensina.",
+     "p": [
+      "Carros voadores e bases lunares até 2000 eram previsões populares que não se cumpriram.",
+      "A FC imagina sobretudo possibilidades e faz perguntas; não promete o futuro.",
+      "As previsões falham muitas vezes porque prolongam as tendências de hoje e ignoram surpresas."
+     ],
+     "q": "Que previsão falhada achas mais engraçada ou encantadora?",
+     "c": "Escreve uma previsão para daqui a 50 anos e acrescenta porque pode estar errada."
+    },
+    "pt_BR": {
+     "t": "Previsões que falharam",
+     "g": "Entender por que algumas previsões falharam e o que isso nos ensina.",
+     "p": [
+      "Carros voadores e bases lunares até 2000 eram previsões populares que não se cumpriram.",
+      "A FC imagina sobretudo possibilidades e faz perguntas; não promete o futuro.",
+      "As previsões falham muitas vezes porque prolongam as tendências de hoje e ignoram surpresas."
+     ],
+     "q": "Que previsão que falhou você acha mais engraçada ou encantadora?",
+     "c": "Escreva uma previsão para daqui a 50 anos e acrescente por que ela pode estar errada."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading an SF book with ease",
+     "g": "Pick up tips for handling invented words, strange settings and big ideas.",
+     "p": [
+      "Invented words are usually explained by context, so keep reading and let meaning build.",
+      "Do not memorise everything at once; the world reveals itself step by step.",
+      "Many books have a glossary, and a quick note of names can keep you oriented."
+     ],
+     "q": "What usually makes a book feel hard for you to start?",
+     "c": "Read one page of an SF book and underline one word you could guess from context."
+    },
+    "de": {
+     "t": "Ein SF-Buch mühelos lesen",
+     "g": "Tipps für erfundene Wörter, fremde Schauplätze und große Ideen mitnehmen.",
+     "p": [
+      "Erfundene Wörter erklären sich meist aus dem Zusammenhang, also weiterlesen und Bedeutung wachsen lassen.",
+      "Man muss nicht alles auf einmal merken; die Welt enthüllt sich Schritt für Schritt.",
+      "Viele Bücher haben ein Glossar, und eine kurze Namensliste hilft bei der Orientierung."
+     ],
+     "q": "Was macht dir den Einstieg in ein Buch meistens schwer?",
+     "c": "Lies eine Seite eines SF-Buchs und unterstreiche ein Wort, das du aus dem Kontext erraten kannst."
+    },
+    "es": {
+     "t": "Leer un libro de CF con soltura",
+     "g": "Recoger consejos para manejar palabras inventadas, escenarios extraños y grandes ideas.",
+     "p": [
+      "Las palabras inventadas suelen explicarse por el contexto, así que sigue leyendo y deja que el sentido se forme.",
+      "No hace falta memorizarlo todo de golpe; el mundo se revela paso a paso.",
+      "Muchos libros traen glosario, y una nota rápida de nombres ayuda a orientarse."
+     ],
+     "q": "¿Qué suele hacer que un libro te cueste empezar?",
+     "c": "Lee una página de un libro de CF y subraya una palabra que puedas adivinar por el contexto."
+    },
+    "fr": {
+     "t": "Lire un livre de SF avec aisance",
+     "g": "Recueillir des astuces pour les mots inventés, les décors étranges et les grandes idées.",
+     "p": [
+      "Les mots inventés s'expliquent souvent par le contexte : continue et laisse le sens se construire.",
+      "Inutile de tout retenir d'un coup ; le monde se dévoile pas à pas.",
+      "Beaucoup de livres ont un glossaire, et une courte liste de noms aide à s'y retrouver."
+     ],
+     "q": "Qu'est-ce qui rend souvent un livre difficile à commencer pour toi ?",
+     "c": "Lis une page d'un livre de SF et souligne un mot que tu peux deviner grâce au contexte."
+    },
+    "it": {
+     "t": "Leggere un libro di fantascienza con facilità",
+     "g": "Raccogliere consigli per parole inventate, ambientazioni strane e grandi idee.",
+     "p": [
+      "Le parole inventate si spiegano di solito col contesto: continua a leggere e lascia che il senso si formi.",
+      "Non serve memorizzare tutto subito; il mondo si rivela passo dopo passo.",
+      "Molti libri hanno un glossario, e una breve nota dei nomi aiuta a orientarsi."
+     ],
+     "q": "Cosa rende di solito difficile per te iniziare un libro?",
+     "c": "Leggi una pagina di un libro di fantascienza e sottolinea una parola che puoi intuire dal contesto."
+    },
+    "pt": {
+     "t": "Ler um livro de FC com facilidade",
+     "g": "Recolher dicas para palavras inventadas, cenários estranhos e grandes ideias.",
+     "p": [
+      "As palavras inventadas costumam explicar-se pelo contexto, por isso continua a ler e deixa o sentido formar-se.",
+      "Não é preciso memorizar tudo de uma vez; o mundo revela-se passo a passo.",
+      "Muitos livros têm glossário, e uma nota rápida de nomes ajuda a orientar-te."
+     ],
+     "q": "O que costuma tornar difícil para ti começar um livro?",
+     "c": "Lê uma página de um livro de FC e sublinha uma palavra que consigas adivinhar pelo contexto."
+    },
+    "pt_BR": {
+     "t": "Ler um livro de FC com facilidade",
+     "g": "Reunir dicas para palavras inventadas, cenários estranhos e grandes ideias.",
+     "p": [
+      "As palavras inventadas costumam se explicar pelo contexto, então continue lendo e deixe o sentido se formar.",
+      "Não precisa memorizar tudo de uma vez; o mundo se revela passo a passo.",
+      "Muitos livros têm glossário, e uma nota rápida de nomes ajuda a se orientar."
+     ],
+     "q": "O que costuma tornar difícil para você começar um livro?",
+     "c": "Leia uma página de um livro de FC e sublinhe uma palavra que dê para adivinhar pelo contexto."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Words SF gave us",
+     "g": "See how words like robot, cyberspace and grok entered everyday language.",
+     "p": [
+      "Robot came from a 1920 Czech play; cyberspace was popularised by William Gibson in the 1980s.",
+      "Grok, meaning to understand deeply, comes from Heinlein's novel Stranger in a Strange Land.",
+      "Words travel from stories into daily life when they name something people need to say."
+     ],
+     "q": "Which new word would you like to add to the language?",
+     "c": "Invent a word for a feeling or gadget of the future and write its definition."
+    },
+    "de": {
+     "t": "Wörter, die uns die SF schenkte",
+     "g": "Sehen, wie Wörter wie Roboter, Cyberspace und grok in den Alltag kamen.",
+     "p": [
+      "Roboter stammt aus einem tschechischen Stück von 1920; Cyberspace machte William Gibson in den 1980ern bekannt.",
+      "Grok, tief verstehen, stammt aus Heinleins Roman Fremder in einer fremden Welt.",
+      "Wörter wandern aus Geschichten in den Alltag, wenn sie etwas benennen, das man sagen will."
+     ],
+     "q": "Welches neue Wort würdest du gern der Sprache hinzufügen?",
+     "c": "Erfinde ein Wort für ein Gefühl oder Gerät der Zukunft und schreibe seine Definition."
+    },
+    "es": {
+     "t": "Palabras que nos dio la CF",
+     "g": "Ver cómo palabras como robot, ciberespacio y grok llegaron al lenguaje cotidiano.",
+     "p": [
+      "Robot viene de una obra checa de 1920; ciberespacio lo popularizó William Gibson en los años ochenta.",
+      "Grok, entender a fondo, viene de la novela de Heinlein Forastero en tierra extraña.",
+      "Las palabras pasan de los relatos a la vida diaria cuando nombran algo que la gente necesita decir."
+     ],
+     "q": "¿Qué palabra nueva te gustaría añadir al idioma?",
+     "c": "Inventa una palabra para un sentimiento o aparato del futuro y escribe su definición."
+    },
+    "fr": {
+     "t": "Les mots que la SF nous a donnés",
+     "g": "Voir comment des mots comme robot, cyberespace et grok sont entrés dans le langage courant.",
+     "p": [
+      "Robot vient d'une pièce tchèque de 1920 ; cyberespace a été popularisé par William Gibson dans les années 1980.",
+      "Grok, comprendre en profondeur, vient du roman de Heinlein En terre étrangère.",
+      "Les mots passent des récits à la vie quotidienne quand ils nomment ce que les gens ont besoin de dire."
+     ],
+     "q": "Quel mot nouveau aimerais-tu ajouter à la langue ?",
+     "c": "Invente un mot pour un sentiment ou un gadget du futur et écris sa définition."
+    },
+    "it": {
+     "t": "Parole che ci ha dato la fantascienza",
+     "g": "Vedere come parole come robot, cyberspazio e grok sono entrate nel linguaggio quotidiano.",
+     "p": [
+      "Robot viene da un'opera ceca del 1920; cyberspazio fu reso popolare da William Gibson negli anni Ottanta.",
+      "Grok, capire a fondo, viene dal romanzo di Heinlein Straniero in terra straniera.",
+      "Le parole passano dai racconti alla vita quotidiana quando nominano qualcosa che la gente ha bisogno di dire."
+     ],
+     "q": "Quale parola nuova vorresti aggiungere alla lingua?",
+     "c": "Inventa una parola per un sentimento o un gadget del futuro e scrivi la sua definizione."
+    },
+    "pt": {
+     "t": "Palavras que a FC nos deu",
+     "g": "Ver como palavras como robô, ciberespaço e grok entraram na linguagem do dia a dia.",
+     "p": [
+      "Robô vem de uma peça checa de 1920; ciberespaço foi popularizado por William Gibson nos anos 1980.",
+      "Grok, compreender profundamente, vem do romance de Heinlein Um Estranho numa Terra Estranha.",
+      "As palavras passam das histórias para o quotidiano quando nomeiam algo que as pessoas precisam de dizer."
+     ],
+     "q": "Que palavra nova gostarias de juntar à língua?",
+     "c": "Inventa uma palavra para um sentimento ou gadget do futuro e escreve a sua definição."
+    },
+    "pt_BR": {
+     "t": "Palavras que a FC nos deu",
+     "g": "Ver como palavras como robô, ciberespaço e grok entraram na linguagem do dia a dia.",
+     "p": [
+      "Robô vem de uma peça tcheca de 1920; ciberespaço foi popularizado por William Gibson nos anos 1980.",
+      "Grok, compreender profundamente, vem do romance de Heinlein Um Estranho numa Terra Estranha.",
+      "As palavras passam das histórias para o cotidiano quando nomeiam algo que as pessoas precisam dizer."
+     ],
+     "q": "Que palavra nova você gostaria de acrescentar à língua?",
+     "c": "Invente uma palavra para um sentimento ou gadget do futuro e escreva sua definição."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Karel Čapek and the word robot",
+     "g": "Meet the 1920 play R.U.R. that introduced the word robot.",
+     "p": [
+      "Karel Čapek, a Czech writer, wrote R.U.R., short for Rossum's Universal Robots.",
+      "The word robot comes from robota, a Czech word for forced labour; his brother Josef suggested it.",
+      "In the play, robots are made to work for people and raise questions about fairness."
+     ],
+     "q": "What tasks would you happily hand over to a helpful machine?",
+     "c": "Write a one-line job description for a robot that helps in a library."
+    },
+    "de": {
+     "t": "Karel Čapek und das Wort Roboter",
+     "g": "Das Stück R.U.R. von 1920 kennenlernen, das das Wort Roboter einführte.",
+     "p": [
+      "Der Tscheche Karel Čapek schrieb R.U.R., kurz für Rossums Universal-Roboter.",
+      "Roboter kommt von robota, tschechisch für Zwangsarbeit; sein Bruder Josef schlug das Wort vor.",
+      "Im Stück werden Roboter geschaffen, um für Menschen zu arbeiten, und werfen Fragen der Fairness auf."
+     ],
+     "q": "Welche Aufgaben würdest du gern an eine hilfreiche Maschine abgeben?",
+     "c": "Schreibe einen Einzeiler als Stellenbeschreibung für einen Roboter, der in einer Bibliothek hilft."
+    },
+    "es": {
+     "t": "Karel Čapek y la palabra robot",
+     "g": "Conocer la obra R.U.R. de 1920 que introdujo la palabra robot.",
+     "p": [
+      "Karel Čapek, escritor checo, escribió R.U.R., siglas de Robots Universales de Rossum.",
+      "Robot viene de robota, palabra checa para trabajo forzado; la sugirió su hermano Josef.",
+      "En la obra, los robots se fabrican para trabajar para las personas y plantean preguntas de justicia."
+     ],
+     "q": "¿Qué tareas dejarías encantado en manos de una máquina útil?",
+     "c": "Escribe en una línea la descripción de puesto de un robot que ayuda en una biblioteca."
+    },
+    "fr": {
+     "t": "Karel Čapek et le mot robot",
+     "g": "Découvrir la pièce R.U.R. de 1920 qui a introduit le mot robot.",
+     "p": [
+      "Karel Čapek, écrivain tchèque, écrit R.U.R., pour Rossum's Universal Robots.",
+      "Robot vient de robota, mot tchèque pour travail forcé ; c'est son frère Josef qui l'a suggéré.",
+      "Dans la pièce, les robots sont fabriqués pour travailler pour les gens et soulèvent des questions d'équité."
+     ],
+     "q": "Quelles tâches confierais-tu volontiers à une machine serviable ?",
+     "c": "Écris en une ligne la fiche de poste d'un robot qui aide dans une bibliothèque."
+    },
+    "it": {
+     "t": "Karel Čapek e la parola robot",
+     "g": "Conoscere l'opera R.U.R. del 1920 che introdusse la parola robot.",
+     "p": [
+      "Karel Čapek, scrittore ceco, scrisse R.U.R., sigla di Rossum's Universal Robots.",
+      "Robot viene da robota, parola ceca per lavoro forzato; la suggerì il fratello Josef.",
+      "Nell'opera i robot sono costruiti per lavorare per le persone e sollevano questioni di equità."
+     ],
+     "q": "Quali compiti affideresti volentieri a una macchina utile?",
+     "c": "Scrivi in una riga la descrizione del lavoro di un robot che aiuta in una biblioteca."
+    },
+    "pt": {
+     "t": "Karel Čapek e a palavra robô",
+     "g": "Conhecer a peça R.U.R. de 1920 que introduziu a palavra robô.",
+     "p": [
+      "Karel Čapek, escritor checo, escreveu R.U.R., sigla de Robôs Universais de Rossum.",
+      "Robô vem de robota, palavra checa para trabalho forçado; foi sugerida pelo irmão Josef.",
+      "Na peça, os robôs são feitos para trabalhar para as pessoas e levantam questões de justiça."
+     ],
+     "q": "Que tarefas entregarias de bom grado a uma máquina útil?",
+     "c": "Escreve numa linha a descrição de funções de um robô que ajuda numa biblioteca."
+    },
+    "pt_BR": {
+     "t": "Karel Čapek e a palavra robô",
+     "g": "Conhecer a peça R.U.R. de 1920 que introduziu a palavra robô.",
+     "p": [
+      "Karel Čapek, escritor tcheco, escreveu R.U.R., sigla de Robôs Universais de Rossum.",
+      "Robô vem de robota, palavra tcheca para trabalho forçado; foi sugerida pelo irmão Josef.",
+      "Na peça, os robôs são feitos para trabalhar para as pessoas e levantam questões de justiça."
+     ],
+     "q": "Que tarefas você entregaria de bom grado a uma máquina útil?",
+     "c": "Escreva numa linha a descrição de funções de um robô que ajuda numa biblioteca."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Space stations",
+     "g": "Go from rotating wheels in films to the real International Space Station.",
+     "p": [
+      "In 2001: A Space Odyssey, a huge rotating wheel station orbits Earth.",
+      "The real International Space Station has been home to astronauts from many countries since 2000.",
+      "It is a science lab in orbit where people study how living and working in space is different."
+     ],
+     "q": "What experiment would you most like to try in a space lab?",
+     "c": "Describe a room of a future space station and one thing that makes it homey."
+    },
+    "de": {
+     "t": "Raumstationen",
+     "g": "Von rotierenden Rädern im Film zur echten Internationalen Raumstation gelangen.",
+     "p": [
+      "In 2001: Odyssee im Weltraum kreist eine riesige, rotierende Radstation um die Erde.",
+      "Die echte Internationale Raumstation beherbergt seit 2000 Astronauten vieler Länder.",
+      "Sie ist ein Forschungslabor im Orbit, in dem man erforscht, wie Leben und Arbeiten im All anders sind."
+     ],
+     "q": "Welches Experiment würdest du am liebsten in einem Weltraumlabor ausprobieren?",
+     "c": "Beschreibe einen Raum einer künftigen Raumstation und etwas, das ihn gemütlich macht."
+    },
+    "es": {
+     "t": "Estaciones espaciales",
+     "g": "Pasar de las ruedas giratorias del cine a la Estación Espacial Internacional real.",
+     "p": [
+      "En 2001: Una odisea del espacio, una enorme estación en forma de rueda gira en órbita terrestre.",
+      "La Estación Espacial Internacional real alberga a astronautas de muchos países desde el año 2000.",
+      "Es un laboratorio en órbita donde se estudia cómo cambia vivir y trabajar en el espacio."
+     ],
+     "q": "¿Qué experimento te gustaría probar más en un laboratorio espacial?",
+     "c": "Describe una sala de una futura estación espacial y algo que la haga acogedora."
+    },
+    "fr": {
+     "t": "Les stations spatiales",
+     "g": "Passer des roues tournantes du cinéma à la vraie Station spatiale internationale.",
+     "p": [
+      "Dans 2001 : l'Odyssée de l'espace, une immense station en forme de roue tourne autour de la Terre.",
+      "La vraie Station spatiale internationale accueille des astronautes de nombreux pays depuis 2000.",
+      "C'est un laboratoire en orbite où l'on étudie comment vivre et travailler dans l'espace change."
+     ],
+     "q": "Quelle expérience aimerais-tu le plus tenter dans un labo spatial ?",
+     "c": "Décris une pièce d'une future station spatiale et un détail qui la rend chaleureuse."
+    },
+    "it": {
+     "t": "Stazioni spaziali",
+     "g": "Passare dalle ruote rotanti del cinema alla vera Stazione Spaziale Internazionale.",
+     "p": [
+      "In 2001: Odissea nello spazio, un'enorme stazione a ruota ruota in orbita attorno alla Terra.",
+      "La vera Stazione Spaziale Internazionale ospita astronauti di molti paesi dal 2000.",
+      "È un laboratorio in orbita dove si studia come cambia vivere e lavorare nello spazio."
+     ],
+     "q": "Quale esperimento ti piacerebbe provare di più in un laboratorio spaziale?",
+     "c": "Descrivi una stanza di una futura stazione spaziale e un dettaglio che la rende accogliente."
+    },
+    "pt": {
+     "t": "Estações espaciais",
+     "g": "Passar das rodas giratórias do cinema para a verdadeira Estação Espacial Internacional.",
+     "p": [
+      "Em 2001: Odisseia no Espaço, uma enorme estação em forma de roda gira em órbita da Terra.",
+      "A verdadeira Estação Espacial Internacional alberga astronautas de muitos países desde 2000.",
+      "É um laboratório em órbita onde se estuda como viver e trabalhar no espaço é diferente."
+     ],
+     "q": "Que experiência gostarias mais de tentar num laboratório espacial?",
+     "c": "Descreve uma sala de uma futura estação espacial e algo que a torne acolhedora."
+    },
+    "pt_BR": {
+     "t": "Estações espaciais",
+     "g": "Passar das rodas giratórias do cinema para a verdadeira Estação Espacial Internacional.",
+     "p": [
+      "Em 2001: Uma Odisseia no Espaço, uma enorme estação em forma de roda gira em órbita da Terra.",
+      "A verdadeira Estação Espacial Internacional abriga astronautas de muitos países desde 2000.",
+      "É um laboratório em órbita onde se estuda como viver e trabalhar no espaço é diferente."
+     ],
+     "q": "Que experimento você mais gostaria de tentar num laboratório espacial?",
+     "c": "Descreva uma sala de uma futura estação espacial e algo que a deixe aconchegante."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Artificial gravity",
+     "g": "Learn how SF handles the problem of weightlessness.",
+     "p": [
+      "In space, floating is normal because spacecraft are in constant free fall around a planet.",
+      "A rotating ring or cylinder can press people outward and feel like gravity, as in many designs.",
+      "Many films simply invent magic floors, because spinning ships are costly to show."
+     ],
+     "q": "If you lived in a spinning habitat, what would feel strange at first?",
+     "c": "Imagine tossing a ball in a rotating ship and describe in two sentences how it moves."
+    },
+    "de": {
+     "t": "Künstliche Schwerkraft",
+     "g": "Lernen, wie SF das Problem der Schwerelosigkeit löst.",
+     "p": [
+      "Im All ist Schweben normal, weil Raumfahrzeuge ständig im freien Fall um einen Planeten sind.",
+      "Ein rotierender Ring oder Zylinder drückt Menschen nach außen und fühlt sich wie Schwerkraft an.",
+      "Viele Filme erfinden einfach magische Böden, weil sich drehende Schiffe aufwendig darzustellen sind."
+     ],
+     "q": "Was fühlte sich in einem rotierenden Lebensraum zuerst merkwürdig an?",
+     "c": "Stell dir vor, du wirfst in einem rotierenden Schiff einen Ball, und beschreibe in zwei Sätzen seine Bewegung."
+    },
+    "es": {
+     "t": "Gravedad artificial",
+     "g": "Aprender cómo trata la CF el problema de la ausencia de peso.",
+     "p": [
+      "En el espacio flotar es normal porque las naves están en caída libre constante alrededor de un planeta.",
+      "Un anillo o cilindro giratorio empuja a las personas hacia fuera y se siente como gravedad.",
+      "Muchas películas inventan suelos mágicos porque las naves giratorias son costosas de mostrar."
+     ],
+     "q": "Si vivieras en un hábitat giratorio, ¿qué te parecería raro al principio?",
+     "c": "Imagina lanzar una pelota en una nave giratoria y describe en dos frases cómo se mueve."
+    },
+    "fr": {
+     "t": "La gravité artificielle",
+     "g": "Apprendre comment la SF traite le problème de l'apesanteur.",
+     "p": [
+      "Dans l'espace, flotter est normal car les vaisseaux sont en chute libre permanente autour d'une planète.",
+      "Un anneau ou un cylindre en rotation pousse les gens vers l'extérieur, ce qui ressemble à la gravité.",
+      "Beaucoup de films inventent des sols magiques, car les vaisseaux tournants sont coûteux à montrer."
+     ],
+     "q": "Si tu vivais dans un habitat tournant, qu'est-ce qui te semblerait étrange au début ?",
+     "c": "Imagine lancer une balle dans un vaisseau tournant et décris son mouvement en deux phrases."
+    },
+    "it": {
+     "t": "Gravità artificiale",
+     "g": "Imparare come la fantascienza affronta il problema dell'assenza di peso.",
+     "p": [
+      "Nello spazio fluttuare è normale perché le navi sono in caduta libera costante attorno a un pianeta.",
+      "Un anello o cilindro rotante spinge le persone verso l'esterno e dà una sensazione di gravità.",
+      "Molti film inventano pavimenti magici, perché le navi rotanti sono costose da mostrare."
+     ],
+     "q": "Se vivessi in un habitat rotante, cosa ti sembrerebbe strano all'inizio?",
+     "c": "Immagina di lanciare una palla in una nave rotante e descrivi in due frasi come si muove."
+    },
+    "pt": {
+     "t": "Gravidade artificial",
+     "g": "Aprender como a FC trata o problema da ausência de peso.",
+     "p": [
+      "No espaço flutuar é normal porque as naves estão em queda livre constante em volta de um planeta.",
+      "Um anel ou cilindro rotativo empurra as pessoas para fora e dá a sensação de gravidade.",
+      "Muitos filmes inventam chãos mágicos, porque as naves a rodar são caras de mostrar."
+     ],
+     "q": "Se vivesses num habitat rotativo, o que te pareceria estranho ao início?",
+     "c": "Imagina atirar uma bola numa nave a rodar e descreve em duas frases como se move."
+    },
+    "pt_BR": {
+     "t": "Gravidade artificial",
+     "g": "Aprender como a FC trata o problema da ausência de peso.",
+     "p": [
+      "No espaço flutuar é normal porque as naves estão em queda livre constante em volta de um planeta.",
+      "Um anel ou cilindro giratório empurra as pessoas para fora e dá a sensação de gravidade.",
+      "Muitos filmes inventam pisos mágicos, porque as naves girando são caras de mostrar."
+     ],
+     "q": "Se você vivesse num hábitat giratório, o que pareceria estranho no começo?",
+     "c": "Imagine jogar uma bola numa nave girando e descreva em duas frases como ela se move."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Faster than light",
+     "g": "Explore warp drives, hyperspace and wormholes, the tricks SF uses to cross the galaxy.",
+     "p": [
+      "Without faster-than-light travel, stories would take centuries to reach another star.",
+      "Warp drives bend space, hyperspace is a shortcut dimension, and wormholes link distant places.",
+      "These are story tools, and real physics has no proven way to do any of them yet."
+     ],
+     "q": "Which method of crossing space would you pick for your own story?",
+     "c": "Name your own made-up FTL system and explain it in two sentences."
+    },
+    "de": {
+     "t": "Schneller als das Licht",
+     "g": "Warpantriebe, Hyperraum und Wurmlöcher erkunden, die Tricks der SF für die Reise durch die Galaxis.",
+     "p": [
+      "Ohne Überlichtreisen bräuchten Geschichten Jahrhunderte, um einen anderen Stern zu erreichen.",
+      "Warpantriebe krümmen den Raum, der Hyperraum ist eine Abkürzungsdimension, Wurmlöcher verbinden ferne Orte.",
+      "Das sind Erzählwerkzeuge; die echte Physik kennt dafür noch keinen bewährten Weg."
+     ],
+     "q": "Welche Methode, den Raum zu durchqueren, würdest du für deine Geschichte wählen?",
+     "c": "Erfinde dein eigenes Überlichtsystem und erkläre es in zwei Sätzen."
+    },
+    "es": {
+     "t": "Más rápido que la luz",
+     "g": "Explorar motores de curvatura, hiperespacio y agujeros de gusano, los trucos de la CF para cruzar la galaxia.",
+     "p": [
+      "Sin viajes más rápidos que la luz, las historias tardarían siglos en llegar a otra estrella.",
+      "Los motores de curvatura doblan el espacio, el hiperespacio es un atajo y los agujeros de gusano unen lugares lejanos.",
+      "Son herramientas narrativas; la física real aún no tiene una forma comprobada de hacerlo."
+     ],
+     "q": "¿Qué método para cruzar el espacio elegirías para tu propia historia?",
+     "c": "Pon nombre a tu propio sistema de viaje más rápido que la luz y explícalo en dos frases."
+    },
+    "fr": {
+     "t": "Plus vite que la lumière",
+     "g": "Explorer propulsion de distorsion, hyperespace et trous de ver, les astuces de la SF pour traverser la galaxie.",
+     "p": [
+      "Sans voyage plus rapide que la lumière, les histoires mettraient des siècles à atteindre une autre étoile.",
+      "La distorsion courbe l'espace, l'hyperespace est un raccourci, les trous de ver relient des lieux lointains.",
+      "Ce sont des outils narratifs ; la vraie physique n'a pas encore de moyen prouvé d'y parvenir."
+     ],
+     "q": "Quelle méthode pour traverser l'espace choisirais-tu pour ta propre histoire ?",
+     "c": "Donne un nom à ton propre système plus rapide que la lumière et explique-le en deux phrases."
+    },
+    "it": {
+     "t": "Più veloce della luce",
+     "g": "Esplorare motori a curvatura, iperspazio e wormhole, i trucchi della fantascienza per attraversare la galassia.",
+     "p": [
+      "Senza viaggi più veloci della luce le storie impiegherebbero secoli a raggiungere un'altra stella.",
+      "I motori a curvatura piegano lo spazio, l'iperspazio è una scorciatoia e i wormhole collegano luoghi lontani.",
+      "Sono strumenti narrativi; la fisica reale non ha ancora un modo provato per farlo."
+     ],
+     "q": "Quale metodo per attraversare lo spazio sceglieresti per la tua storia?",
+     "c": "Dai un nome al tuo sistema inventato più veloce della luce e spiegalo in due frasi."
+    },
+    "pt": {
+     "t": "Mais rápido do que a luz",
+     "g": "Explorar motores de dobra, hiperespaço e buracos de minhoca, os truques da FC para atravessar a galáxia.",
+     "p": [
+      "Sem viagens mais rápidas do que a luz, as histórias levariam séculos a chegar a outra estrela.",
+      "Os motores de dobra curvam o espaço, o hiperespaço é um atalho e os buracos de minhoca ligam lugares distantes.",
+      "São ferramentas narrativas; a física real ainda não tem uma forma comprovada de o fazer."
+     ],
+     "q": "Que método de atravessar o espaço escolherias para a tua história?",
+     "c": "Dá nome ao teu sistema inventado mais rápido do que a luz e explica-o em duas frases."
+    },
+    "pt_BR": {
+     "t": "Mais rápido que a luz",
+     "g": "Explorar motores de dobra, hiperespaço e buracos de minhoca, os truques da FC para atravessar a galáxia.",
+     "p": [
+      "Sem viagens mais rápidas que a luz, as histórias levariam séculos para chegar a outra estrela.",
+      "Os motores de dobra curvam o espaço, o hiperespaço é um atalho e os buracos de minhoca ligam lugares distantes.",
+      "São ferramentas narrativas; a física real ainda não tem uma forma comprovada de fazer isso."
+     ],
+     "q": "Que método de atravessar o espaço você escolheria para a sua história?",
+     "c": "Dê nome ao seu sistema inventado mais rápido que a luz e explique-o em duas frases."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The speed of light limit",
+     "g": "Understand why real physics makes interstellar travel hard.",
+     "p": [
+      "Light travels about 300,000 kilometres per second, and nothing with mass is known to match it.",
+      "Even at that speed, the nearest star beyond the Sun is over four light-years away.",
+      "Stories that respect the limit show long journeys, slow messages and clever planning."
+     ],
+     "q": "Would you take a decades-long journey to a new star? Why or why not?",
+     "c": "Calculate how old you would be after a 10-year trip, and write a two-line travel diary."
+    },
+    "de": {
+     "t": "Die Lichtgeschwindigkeits-Grenze",
+     "g": "Verstehen, warum echte Physik interstellare Reisen schwer macht.",
+     "p": [
+      "Licht legt rund 300.000 Kilometer pro Sekunde zurück; nichts mit Masse erreicht sie nach heutigem Wissen.",
+      "Selbst damit ist der nächste Stern jenseits der Sonne über vier Lichtjahre entfernt.",
+      "Geschichten, die die Grenze achten, zeigen lange Reisen, langsame Nachrichten und kluge Planung."
+     ],
+     "q": "Würdest du eine jahrzehntelange Reise zu einem neuen Stern antreten? Warum oder warum nicht?",
+     "c": "Rechne aus, wie alt du nach einer 10-jährigen Reise wärst, und schreibe ein Zwei-Zeilen-Reisetagebuch."
+    },
+    "es": {
+     "t": "El límite de la velocidad de la luz",
+     "g": "Entender por qué la física real hace difícil el viaje interestelar.",
+     "p": [
+      "La luz viaja a unos 300.000 kilómetros por segundo y no se conoce nada con masa que la iguale.",
+      "Incluso a esa velocidad, la estrella más cercana al Sol está a más de cuatro años luz.",
+      "Las historias que respetan el límite muestran viajes largos, mensajes lentos y planificación astuta."
+     ],
+     "q": "¿Harías un viaje de décadas a una nueva estrella? ¿Por qué sí o por qué no?",
+     "c": "Calcula qué edad tendrías tras un viaje de 10 años y escribe un diario de viaje de dos líneas."
+    },
+    "fr": {
+     "t": "La limite de la vitesse de la lumière",
+     "g": "Comprendre pourquoi la vraie physique rend le voyage interstellaire difficile.",
+     "p": [
+      "La lumière va à environ 300 000 kilomètres par seconde, et rien de massif n'est connu pour l'égaler.",
+      "Même à cette vitesse, l'étoile la plus proche après le Soleil est à plus de quatre années-lumière.",
+      "Les récits qui respectent la limite montrent de longs voyages, des messages lents et une planification astucieuse."
+     ],
+     "q": "Ferais-tu un voyage de plusieurs décennies vers une nouvelle étoile ? Pourquoi ?",
+     "c": "Calcule quel âge tu aurais après un voyage de 10 ans et écris un carnet de bord de deux lignes."
+    },
+    "it": {
+     "t": "Il limite della velocità della luce",
+     "g": "Capire perché la fisica reale rende difficile il viaggio interstellare.",
+     "p": [
+      "La luce viaggia a circa 300.000 chilometri al secondo e nulla con massa è noto eguagliarla.",
+      "Anche a quella velocità, la stella più vicina al Sole dista oltre quattro anni luce.",
+      "Le storie che rispettano il limite mostrano lunghi viaggi, messaggi lenti e pianificazione ingegnosa."
+     ],
+     "q": "Faresti un viaggio di decenni verso una nuova stella? Perché sì o no?",
+     "c": "Calcola quanti anni avresti dopo un viaggio di 10 anni e scrivi un diario di bordo di due righe."
+    },
+    "pt": {
+     "t": "O limite da velocidade da luz",
+     "g": "Perceber porque a física real torna difícil a viagem interestelar.",
+     "p": [
+      "A luz viaja a cerca de 300 000 quilómetros por segundo e nada com massa se sabe igualá-la.",
+      "Mesmo a essa velocidade, a estrela mais próxima do Sol fica a mais de quatro anos-luz.",
+      "As histórias que respeitam o limite mostram viagens longas, mensagens lentas e planeamento engenhoso."
+     ],
+     "q": "Farias uma viagem de décadas até uma nova estrela? Porquê?",
+     "c": "Calcula que idade terias após uma viagem de 10 anos e escreve um diário de bordo de duas linhas."
+    },
+    "pt_BR": {
+     "t": "O limite da velocidade da luz",
+     "g": "Entender por que a física real torna difícil a viagem interestelar.",
+     "p": [
+      "A luz viaja a cerca de 300 mil quilômetros por segundo e nada com massa se sabe igualá-la.",
+      "Mesmo a essa velocidade, a estrela mais próxima do Sol fica a mais de quatro anos-luz.",
+      "As histórias que respeitam o limite mostram viagens longas, mensagens lentas e planejamento engenhoso."
+     ],
+     "q": "Você faria uma viagem de décadas até uma nova estrela? Por quê?",
+     "c": "Calcule que idade teria após uma viagem de 10 anos e escreva um diário de bordo de duas linhas."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Generation ships",
+     "g": "Imagine huge ships where families live for centuries on the way to a new star.",
+     "p": [
+      "On a generation ship, the people who depart are not those who arrive; their descendants are.",
+      "Heinlein's Orphans of the Sky (1941) is a classic tale of a ship whose people have forgotten their journey.",
+      "Such a ship must be a complete small world with farms, schools and shared purpose."
+     ],
+     "q": "What tradition would you make sure is kept alive on a centuries-long voyage?",
+     "c": "Design the motto and three daily jobs for a generation ship community."
+    },
+    "de": {
+     "t": "Generationenschiffe",
+     "g": "Sich riesige Schiffe vorstellen, auf denen Familien Jahrhunderte auf dem Weg zu einem neuen Stern leben.",
+     "p": [
+      "Auf einem Generationenschiff kommen nicht die an, die aufbrechen, sondern ihre Nachkommen.",
+      "Heinleins Orphans of the Sky (1941) ist ein Klassiker über ein Schiff, dessen Menschen ihre Reise vergessen haben.",
+      "Ein solches Schiff muss eine vollständige kleine Welt mit Feldern, Schulen und gemeinsamem Ziel sein."
+     ],
+     "q": "Welche Tradition würdest du auf einer Reise über Jahrhunderte lebendig halten?",
+     "c": "Entwirf Motto und drei tägliche Aufgaben für die Gemeinschaft eines Generationenschiffs."
+    },
+    "es": {
+     "t": "Naves generacionales",
+     "g": "Imaginar enormes naves donde las familias viven siglos camino de una nueva estrella.",
+     "p": [
+      "En una nave generacional, quienes parten no son quienes llegan; llegan sus descendientes.",
+      "Universo (1941), de Heinlein, es un clásico sobre una nave cuya gente ha olvidado su viaje.",
+      "Una nave así debe ser un pequeño mundo completo con cultivos, escuelas y un propósito común."
+     ],
+     "q": "¿Qué tradición te asegurarías de mantener viva en un viaje de siglos?",
+     "c": "Diseña el lema y tres tareas diarias para la comunidad de una nave generacional."
+    },
+    "fr": {
+     "t": "Les vaisseaux-génération",
+     "g": "Imaginer d'immenses vaisseaux où des familles vivent des siècles en route vers une nouvelle étoile.",
+     "p": [
+      "Sur un vaisseau-génération, ceux qui partent ne sont pas ceux qui arrivent ; ce sont leurs descendants.",
+      "Orphans of the Sky (1941) de Heinlein est un classique sur un vaisseau dont les gens ont oublié leur voyage.",
+      "Un tel vaisseau doit être un petit monde complet, avec cultures, écoles et but commun."
+     ],
+     "q": "Quelle tradition ferais-tu vivre pendant un voyage de plusieurs siècles ?",
+     "c": "Conçois la devise et trois tâches quotidiennes pour la communauté d'un vaisseau-génération."
+    },
+    "it": {
+     "t": "Navi generazionali",
+     "g": "Immaginare enormi navi dove le famiglie vivono secoli verso una nuova stella.",
+     "p": [
+      "Su una nave generazionale chi parte non è chi arriva; arrivano i discendenti.",
+      "Orphans of the Sky (1941) di Heinlein è un classico su una nave i cui abitanti hanno dimenticato il viaggio.",
+      "Una nave così deve essere un piccolo mondo completo con coltivazioni, scuole e scopo comune."
+     ],
+     "q": "Quale tradizione ti assicureresti di mantenere viva in un viaggio di secoli?",
+     "c": "Progetta il motto e tre compiti quotidiani per la comunità di una nave generazionale."
+    },
+    "pt": {
+     "t": "Naves geracionais",
+     "g": "Imaginar enormes naves onde as famílias vivem séculos a caminho de uma nova estrela.",
+     "p": [
+      "Numa nave geracional, quem parte não é quem chega; chegam os descendentes.",
+      "Orphans of the Sky (1941), de Heinlein, é um clássico sobre uma nave cujas gentes esqueceram a viagem.",
+      "Uma nave assim tem de ser um pequeno mundo completo, com cultivos, escolas e um propósito comum."
+     ],
+     "q": "Que tradição farias questão de manter viva numa viagem de séculos?",
+     "c": "Desenha o lema e três tarefas diárias para a comunidade de uma nave geracional."
+    },
+    "pt_BR": {
+     "t": "Naves geracionais",
+     "g": "Imaginar enormes naves onde as famílias vivem séculos a caminho de uma nova estrela.",
+     "p": [
+      "Numa nave geracional, quem parte não é quem chega; chegam os descendentes.",
+      "Orphans of the Sky (1941), de Heinlein, é um clássico sobre uma nave cuja gente esqueceu a viagem.",
+      "Uma nave assim precisa ser um pequeno mundo completo, com cultivos, escolas e um propósito comum."
+     ],
+     "q": "Que tradição você faria questão de manter viva numa viagem de séculos?",
+     "c": "Crie o lema e três tarefas diárias para a comunidade de uma nave geracional."
+    }
+   }
+  }
+ ]
+}

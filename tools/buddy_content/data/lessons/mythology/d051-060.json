@@ -1,0 +1,835 @@
+{
+ "topic": "mythology",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gilgamesh the king",
+     "g": "Meet the hero of the world's oldest epic and his friendship with wild Enkidu.",
+     "p": [
+      "Gilgamesh was a king of Uruk in the Epic of Gilgamesh, one of the oldest stories ever written down.",
+      "The gods created Enkidu, a wild man who lived among animals, and after a wrestling match he became Gilgamesh's best friend.",
+      "Together they went on adventures, and the tale is really about friendship, growing wiser and what lasts."
+     ],
+     "q": "What makes a friendship strong enough for shared adventures?",
+     "c": "Write three lines to a friend, real or imagined, saying what makes them a great companion."
+    },
+    "de": {
+     "t": "Gilgamesch, der König",
+     "g": "Lerne den Helden des ältesten Epos der Welt und seine Freundschaft mit dem wilden Enkidu kennen.",
+     "p": [
+      "Gilgamesch war König von Uruk im Gilgamesch-Epos, einer der ältesten aufgeschriebenen Geschichten überhaupt.",
+      "Die Götter schufen Enkidu, einen wilden Mann unter Tieren, der nach einem Ringkampf Gilgameschs bester Freund wurde.",
+      "Gemeinsam erlebten sie Abenteuer, und die Erzählung handelt von Freundschaft, Weisheit und dem, was bleibt."
+     ],
+     "q": "Was macht eine Freundschaft stark genug für gemeinsame Abenteuer?",
+     "c": "Schreibe drei Zeilen an einen echten oder erfundenen Freund und nenne, was ihn zum tollen Begleiter macht."
+    },
+    "es": {
+     "t": "Gilgamesh el rey",
+     "g": "Conoce al héroe de la epopeya más antigua del mundo y su amistad con el salvaje Enkidu.",
+     "p": [
+      "Gilgamesh era un rey de Uruk en la Epopeya de Gilgamesh, una de las historias escritas más antiguas.",
+      "Los dioses crearon a Enkidu, un hombre salvaje que vivía entre animales y que, tras un combate de lucha, fue el mejor amigo de Gilgamesh.",
+      "Juntos vivieron aventuras, y el relato trata de amistad, de ganar sabiduría y de lo que perdura."
+     ],
+     "q": "¿Qué hace que una amistad sea lo bastante fuerte para vivir aventuras juntos?",
+     "c": "Escribe tres líneas a un amigo, real o imaginado, diciendo qué lo hace un gran compañero."
+    },
+    "fr": {
+     "t": "Gilgamesh le roi",
+     "g": "Rencontre le héros de la plus ancienne épopée du monde et son amitié avec le sauvage Enkidu.",
+     "p": [
+      "Gilgamesh était roi d'Uruk dans l'Épopée de Gilgamesh, l'un des plus anciens récits jamais écrits.",
+      "Les dieux créèrent Enkidu, un homme sauvage vivant parmi les animaux, qui devint après un combat de lutte le meilleur ami de Gilgamesh.",
+      "Ensemble ils vécurent des aventures, et le récit parle d'amitié, de sagesse et de ce qui dure."
+     ],
+     "q": "Qu'est-ce qui rend une amitié assez forte pour vivre des aventures ensemble ?",
+     "c": "Écris trois lignes à un ami, réel ou imaginaire, pour dire ce qui fait de lui un grand compagnon."
+    },
+    "it": {
+     "t": "Gilgamesh il re",
+     "g": "Conosci l'eroe della più antica epopea del mondo e la sua amicizia con il selvaggio Enkidu.",
+     "p": [
+      "Gilgamesh era re di Uruk nell'Epopea di Gilgamesh, una delle storie scritte più antiche.",
+      "Gli dèi crearono Enkidu, un uomo selvaggio che viveva tra gli animali e che, dopo una lotta, divenne il migliore amico di Gilgamesh.",
+      "Insieme vissero avventure, e il racconto parla di amicizia, di crescita in saggezza e di ciò che dura."
+     ],
+     "q": "Cosa rende un'amicizia abbastanza forte per vivere avventure insieme?",
+     "c": "Scrivi tre righe a un amico, vero o immaginario, dicendo cosa ne fa un grande compagno."
+    },
+    "pt": {
+     "t": "Gilgamesh, o rei",
+     "g": "Conhece o herói da epopeia mais antiga do mundo e a sua amizade com o selvagem Enkidu.",
+     "p": [
+      "Gilgamesh era rei de Uruk na Epopeia de Gilgamesh, uma das histórias escritas mais antigas.",
+      "Os deuses criaram Enkidu, um homem selvagem que vivia entre animais e que, depois de uma luta, se tornou o melhor amigo de Gilgamesh.",
+      "Juntos viveram aventuras, e o relato fala de amizade, de ganhar sabedoria e do que perdura."
+     ],
+     "q": "O que torna uma amizade forte o bastante para viver aventuras juntos?",
+     "c": "Escreve três linhas a um amigo, real ou imaginado, a dizer o que o faz um grande companheiro."
+    },
+    "pt_BR": {
+     "t": "Gilgamesh, o rei",
+     "g": "Conheça o herói da epopeia mais antiga do mundo e sua amizade com o selvagem Enkidu.",
+     "p": [
+      "Gilgamesh era rei de Uruk na Epopeia de Gilgamesh, uma das histórias escritas mais antigas.",
+      "Os deuses criaram Enkidu, um homem selvagem que vivia entre animais e que, depois de uma luta, virou o melhor amigo de Gilgamesh.",
+      "Juntos viveram aventuras, e o relato fala de amizade, de ganhar sabedoria e do que permanece."
+     ],
+     "q": "O que faz uma amizade ser forte o bastante para viver aventuras juntos?",
+     "c": "Escreva três linhas a um amigo, real ou imaginado, dizendo o que faz dele um grande companheiro."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Inanna, star of the morning",
+     "g": "Meet the bright Sumerian goddess linked with Venus, nature and royal power.",
+     "p": [
+      "Inanna, later called Ishtar, was a major Sumerian goddess of love, fertility and the morning and evening star.",
+      "The planet Venus, which shines brightly at dawn and dusk, was linked to her.",
+      "Poems and hymns praised her, and the priestess Enheduanna, one of the first authors known by name, wrote hymns to her."
+     ],
+     "q": "Which star or planet have you noticed in the evening or morning sky?",
+     "c": "Look at the sky at dawn or dusk and describe the brightest point you can see."
+    },
+    "de": {
+     "t": "Inanna, Stern des Morgens",
+     "g": "Lerne die strahlende sumerische Göttin kennen, die mit Venus, Natur und königlicher Macht verbunden war.",
+     "p": [
+      "Inanna, später Ischtar genannt, war eine große sumerische Göttin der Liebe, Fruchtbarkeit und des Morgen- und Abendsterns.",
+      "Der Planet Venus, der morgens und abends hell leuchtet, wurde mit ihr verbunden.",
+      "Lieder und Hymnen priesen sie, und die Priesterin Enheduanna, eine der frühesten namentlich bekannten Dichterinnen, schrieb Hymnen an sie."
+     ],
+     "q": "Welchen Stern oder Planeten hast du am Abend- oder Morgenhimmel bemerkt?",
+     "c": "Schau bei Dämmerung zum Himmel und beschreibe den hellsten Punkt, den du siehst."
+    },
+    "es": {
+     "t": "Inanna, estrella de la mañana",
+     "g": "Conoce a la brillante diosa sumeria unida a Venus, la naturaleza y el poder real.",
+     "p": [
+      "Inanna, llamada luego Ishtar, era una gran diosa sumeria del amor, la fertilidad y la estrella de la mañana y de la tarde.",
+      "Se la vinculaba con el planeta Venus, que brilla con fuerza al amanecer y al anochecer.",
+      "Poemas e himnos la alababan, y la sacerdotisa Enheduanna, una de las primeras autoras con nombre, le escribió himnos."
+     ],
+     "q": "¿Qué estrella o planeta has notado en el cielo de la tarde o la mañana?",
+     "c": "Mira el cielo al amanecer o al anochecer y describe el punto más brillante que veas."
+    },
+    "fr": {
+     "t": "Inanna, étoile du matin",
+     "g": "Rencontre la brillante déesse sumérienne liée à Vénus, à la nature et au pouvoir royal.",
+     "p": [
+      "Inanna, appelée plus tard Ishtar, était une grande déesse sumérienne de l'amour, de la fertilité et de l'étoile du matin et du soir.",
+      "La planète Vénus, très brillante à l'aube et au crépuscule, lui était associée.",
+      "Poèmes et hymnes la célébraient, et la prêtresse Enheduanna, l'une des premières autrices connues par son nom, écrivit des hymnes pour elle."
+     ],
+     "q": "Quelle étoile ou planète as-tu remarquée dans le ciel du soir ou du matin ?",
+     "c": "Regarde le ciel à l'aube ou au crépuscule et décris le point le plus brillant que tu vois."
+    },
+    "it": {
+     "t": "Inanna, stella del mattino",
+     "g": "Conosci la luminosa dea sumera legata a Venere, alla natura e al potere regale.",
+     "p": [
+      "Inanna, poi detta Ishtar, era una grande dea sumera dell'amore, della fertilità e della stella del mattino e della sera.",
+      "Il pianeta Venere, che brilla forte all'alba e al tramonto, era legato a lei.",
+      "Poemi e inni la lodavano, e la sacerdotessa Enheduanna, una delle prime autrici note per nome, scrisse inni per lei."
+     ],
+     "q": "Quale stella o pianeta hai notato nel cielo della sera o del mattino?",
+     "c": "Guarda il cielo all'alba o al tramonto e descrivi il punto più luminoso che vedi."
+    },
+    "pt": {
+     "t": "Inanna, estrela da manhã",
+     "g": "Conhece a brilhante deusa suméria ligada a Vénus, à natureza e ao poder real.",
+     "p": [
+      "Inanna, mais tarde chamada Ishtar, era uma grande deusa suméria do amor, da fertilidade e da estrela da manhã e da tarde.",
+      "O planeta Vénus, que brilha forte ao amanhecer e ao anoitecer, era associado a ela.",
+      "Poemas e hinos louvavam-na, e a sacerdotisa Enheduanna, uma das primeiras autoras com nome, escreveu hinos para ela."
+     ],
+     "q": "Que estrela ou planeta já notaste no céu da tarde ou da manhã?",
+     "c": "Olha para o céu ao amanhecer ou ao anoitecer e descreve o ponto mais brilhante que vires."
+    },
+    "pt_BR": {
+     "t": "Inanna, estrela da manhã",
+     "g": "Conheça a brilhante deusa suméria ligada a Vênus, à natureza e ao poder real.",
+     "p": [
+      "Inanna, mais tarde chamada Ishtar, era uma grande deusa suméria do amor, da fertilidade e da estrela da manhã e da tarde.",
+      "O planeta Vênus, que brilha forte ao amanhecer e ao anoitecer, era associado a ela.",
+      "Poemas e hinos a louvavam, e a sacerdotisa Enheduanna, uma das primeiras autoras com nome, escreveu hinos para ela."
+     ],
+     "q": "Que estrela ou planeta você já notou no céu da tarde ou da manhã?",
+     "c": "Olhe para o céu ao amanhecer ou ao anoitecer e descreva o ponto mais brilhante que vir."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The great flood story",
+     "g": "Meet Utnapishtim's boat and the flood tales found in many cultures.",
+     "p": [
+      "In the Epic of Gilgamesh, a wise man named Utnapishtim builds a great boat after being warned of a flood.",
+      "He brings his family and many animals aboard, and when the waters calm, he sends out birds to look for land.",
+      "Flood stories appear in many cultures, which shows how deeply people have always thought about water and renewal."
+     ],
+     "q": "Why do you think so many peoples tell stories about great floods?",
+     "c": "Name three animals you would take on a boat and explain why in one line each."
+    },
+    "de": {
+     "t": "Die große Flutgeschichte",
+     "g": "Lerne Utnapischtims Boot und die Flutsagen kennen, die es in vielen Kulturen gibt.",
+     "p": [
+      "Im Gilgamesch-Epos baut der weise Utnapischtim ein großes Boot, nachdem er vor einer Flut gewarnt wurde.",
+      "Er nimmt seine Familie und viele Tiere an Bord, und als das Wasser sich beruhigt, schickt er Vögel aus, um Land zu suchen.",
+      "Flutgeschichten gibt es in vielen Kulturen, ein Zeichen, wie sehr Menschen immer über Wasser und Erneuerung nachdachten."
+     ],
+     "q": "Warum erzählen wohl so viele Völker von großen Fluten?",
+     "c": "Nenne drei Tiere, die du auf ein Boot mitnehmen würdest, und begründe jedes in einer Zeile."
+    },
+    "es": {
+     "t": "El gran relato del diluvio",
+     "g": "Conoce el barco de Utnapishtim y los relatos del diluvio presentes en muchas culturas.",
+     "p": [
+      "En la Epopeya de Gilgamesh, un sabio llamado Utnapishtim construye un gran barco tras ser avisado de un diluvio.",
+      "Sube a bordo a su familia y a muchos animales y, cuando las aguas se calman, envía aves a buscar tierra.",
+      "Hay relatos de diluvio en muchas culturas, señal de cuánto han pensado siempre las personas en el agua y la renovación."
+     ],
+     "q": "¿Por qué crees que tantos pueblos cuentan historias de grandes diluvios?",
+     "c": "Nombra tres animales que llevarías en un barco y explica por qué en una línea cada uno."
+    },
+    "fr": {
+     "t": "Le grand récit du déluge",
+     "g": "Découvre le bateau d'Outa-napishti et les récits de déluge présents dans bien des cultures.",
+     "p": [
+      "Dans l'Épopée de Gilgamesh, un sage nommé Outa-napishti construit un grand bateau après avoir été averti d'un déluge.",
+      "Il embarque sa famille et de nombreux animaux, et quand les eaux se calment, il lâche des oiseaux pour chercher la terre.",
+      "Les récits de déluge existent dans de nombreuses cultures, signe de l'importance de l'eau et du renouveau pour les humains."
+     ],
+     "q": "Pourquoi, selon toi, tant de peuples racontent-ils de grands déluges ?",
+     "c": "Cite trois animaux que tu emmènerais sur un bateau et explique pourquoi en une ligne chacun."
+    },
+    "it": {
+     "t": "La grande storia del diluvio",
+     "g": "Scopri la barca di Utnapishtim e i racconti del diluvio presenti in molte culture.",
+     "p": [
+      "Nell'Epopea di Gilgamesh un saggio di nome Utnapishtim costruisce una grande barca dopo essere stato avvertito di un diluvio.",
+      "Porta a bordo la famiglia e molti animali e, quando le acque si calmano, manda uccelli a cercare terra.",
+      "I racconti del diluvio esistono in molte culture, segno di quanto gli esseri umani abbiano sempre pensato all'acqua e al rinnovamento."
+     ],
+     "q": "Perché secondo te tanti popoli raccontano di grandi diluvi?",
+     "c": "Nomina tre animali che porteresti su una barca e spiega perché in una riga ciascuno."
+    },
+    "pt": {
+     "t": "A grande história do dilúvio",
+     "g": "Conhece o barco de Utnapishtim e as histórias do dilúvio presentes em muitas culturas.",
+     "p": [
+      "Na Epopeia de Gilgamesh, um sábio chamado Utnapishtim constrói um grande barco depois de avisado de um dilúvio.",
+      "Leva a família e muitos animais a bordo e, quando as águas acalmam, envia aves a procurar terra.",
+      "Há histórias de dilúvio em muitas culturas, sinal de quanto os humanos sempre pensaram na água e na renovação."
+     ],
+     "q": "Porque achas que tantos povos contam histórias de grandes dilúvios?",
+     "c": "Diz três animais que levarias num barco e explica porquê numa linha cada um."
+    },
+    "pt_BR": {
+     "t": "A grande história do dilúvio",
+     "g": "Conheça o barco de Utnapishtim e as histórias do dilúvio presentes em muitas culturas.",
+     "p": [
+      "Na Epopeia de Gilgamesh, um sábio chamado Utnapishtim constrói um grande barco depois de avisado de um dilúvio.",
+      "Ele leva a família e muitos animais a bordo e, quando as águas acalmam, solta aves para procurar terra.",
+      "Há histórias de dilúvio em muitas culturas, sinal de quanto os humanos sempre pensaram na água e na renovação."
+     ],
+     "q": "Por que você acha que tantos povos contam histórias de grandes dilúvios?",
+     "c": "Diga três animais que levaria num barco e explique por quê em uma linha cada um."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Marduk and the Enuma Elish",
+     "g": "Explore Babylon's creation epic and the ordering of heaven and earth.",
+     "p": [
+      "The Enuma Elish is a Babylonian poem about how the world was ordered, named after its opening words.",
+      "Its hero Marduk, patron god of Babylon, shaped sky and earth and set the stars, months and seasons in place.",
+      "It was read aloud at the New Year festival, a reminder of order and fresh starts for the city."
+     ],
+     "q": "What small thing in your life would you like to bring more order to?",
+     "c": "Create a short creation poem of three lines starting with the words when above."
+    },
+    "de": {
+     "t": "Marduk und das Enuma Elisch",
+     "g": "Erkunde Babylons Schöpfungsepos und die Ordnung von Himmel und Erde.",
+     "p": [
+      "Das Enuma Elisch ist ein babylonisches Gedicht über die Ordnung der Welt und nach seinen Anfangsworten benannt.",
+      "Sein Held Marduk, Stadtgott von Babylon, formte Himmel und Erde und ordnete Sterne, Monate und Jahreszeiten.",
+      "Es wurde beim Neujahrsfest laut gelesen, als Erinnerung an Ordnung und Neubeginn für die Stadt."
+     ],
+     "q": "Welche kleine Sache in deinem Leben möchtest du besser ordnen?",
+     "c": "Schreibe ein kurzes Schöpfungsgedicht in drei Zeilen, das mit den Worten Als oben beginnt."
+    },
+    "es": {
+     "t": "Marduk y el Enuma Elish",
+     "g": "Explora la epopeya de la creación de Babilonia y el orden del cielo y la tierra.",
+     "p": [
+      "El Enuma Elish es un poema babilonio sobre cómo se ordenó el mundo, llamado así por sus primeras palabras.",
+      "Su héroe Marduk, dios patrono de Babilonia, dio forma al cielo y la tierra y fijó estrellas, meses y estaciones.",
+      "Se leía en voz alta en la fiesta de Año Nuevo, recordando orden y nuevos comienzos para la ciudad."
+     ],
+     "q": "¿Qué cosa pequeña de tu vida te gustaría ordenar mejor?",
+     "c": "Crea un breve poema de creación de tres líneas que empiece con las palabras Cuando arriba."
+    },
+    "fr": {
+     "t": "Mardouk et l'Enûma elish",
+     "g": "Explore l'épopée de la création de Babylone et l'ordre du ciel et de la terre.",
+     "p": [
+      "L'Enûma elish est un poème babylonien sur la mise en ordre du monde, nommé d'après ses premiers mots.",
+      "Son héros Mardouk, dieu protecteur de Babylone, façonna ciel et terre et fixa étoiles, mois et saisons.",
+      "On le récitait à la fête du Nouvel An, rappel d'ordre et de renouveau pour la cité."
+     ],
+     "q": "Qu'aimerais-tu mieux ordonner dans ta vie, même un détail ?",
+     "c": "Compose un court poème de création de trois lignes qui commence par les mots Quand en haut."
+    },
+    "it": {
+     "t": "Marduk e l'Enuma Elish",
+     "g": "Esplora l'epopea della creazione di Babilonia e l'ordine di cielo e terra.",
+     "p": [
+      "L'Enuma Elish è un poema babilonese su come il mondo fu ordinato, chiamato così dalle sue prime parole.",
+      "Il suo eroe Marduk, dio patrono di Babilonia, plasmò cielo e terra e fissò stelle, mesi e stagioni.",
+      "Veniva letto ad alta voce alla festa di Capodanno, a ricordo di ordine e nuovi inizi per la città."
+     ],
+     "q": "Quale piccola cosa della tua vita vorresti ordinare meglio?",
+     "c": "Crea un breve poema della creazione di tre righe che inizi con le parole Quando in alto."
+    },
+    "pt": {
+     "t": "Marduk e o Enuma Elish",
+     "g": "Explora a epopeia da criação de Babilónia e a ordem do céu e da terra.",
+     "p": [
+      "O Enuma Elish é um poema babilónico sobre como o mundo foi ordenado, com o nome das suas primeiras palavras.",
+      "O seu herói Marduk, deus protetor de Babilónia, moldou céu e terra e fixou estrelas, meses e estações.",
+      "Era lido em voz alta na festa de Ano Novo, a lembrar ordem e novos começos para a cidade."
+     ],
+     "q": "Que coisa pequena da tua vida gostarias de organizar melhor?",
+     "c": "Cria um breve poema de criação de três linhas que comece com as palavras Quando no alto."
+    },
+    "pt_BR": {
+     "t": "Marduk e o Enuma Elish",
+     "g": "Explore a epopeia da criação da Babilônia e a ordem do céu e da terra.",
+     "p": [
+      "O Enuma Elish é um poema babilônico sobre como o mundo foi ordenado, com o nome das suas primeiras palavras.",
+      "O herói dele, Marduk, deus protetor da Babilônia, moldou céu e terra e fixou estrelas, meses e estações.",
+      "Era lido em voz alta na festa de Ano Novo, lembrando ordem e novos começos para a cidade."
+     ],
+     "q": "Que coisa pequena da sua vida você gostaria de organizar melhor?",
+     "c": "Crie um breve poema de criação de três linhas que comece com as palavras Quando no alto."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "India's great epics",
+     "g": "Discover the Ramayana and the Mahabharata, Indian epics loved and retold for centuries.",
+     "p": [
+      "The Ramayana and the Mahabharata are two great Sanskrit epics that are still told, sung, danced and performed today.",
+      "The Ramayana follows Prince Rama, while the Mahabharata is much longer and includes the Bhagavad Gita.",
+      "They are living traditions, retold in many languages, in plays, films, puppet shows and festivals."
+     ],
+     "q": "Have you seen or heard a story retold in different ways, like film, theatre or song?",
+     "c": "Choose a story you love and imagine it as a puppet show: who are the three main puppets?"
+    },
+    "de": {
+     "t": "Indiens große Epen",
+     "g": "Entdecke das Ramayana und das Mahabharata, indische Epen, die seit Jahrhunderten geliebt und neu erzählt werden.",
+     "p": [
+      "Ramayana und Mahabharata sind zwei große Sanskrit-Epen, die bis heute erzählt, gesungen, getanzt und aufgeführt werden.",
+      "Das Ramayana folgt Prinz Rama, das Mahabharata ist viel länger und enthält die Bhagavad Gita.",
+      "Sie sind lebendige Traditionen, in vielen Sprachen neu erzählt, in Theater, Film, Puppenspiel und Festen."
+     ],
+     "q": "Hast du eine Geschichte schon auf verschiedene Arten erlebt, als Film, Theater oder Lied?",
+     "c": "Wähle eine Lieblingsgeschichte und stell sie dir als Puppenspiel vor: Wer sind die drei Hauptpuppen?"
+    },
+    "es": {
+     "t": "Las grandes epopeyas de la India",
+     "g": "Descubre el Ramayana y el Mahabharata, epopeyas indias amadas y recontadas durante siglos.",
+     "p": [
+      "El Ramayana y el Mahabharata son dos grandes epopeyas en sánscrito que aún se cuentan, cantan, bailan y representan.",
+      "El Ramayana sigue al príncipe Rama, mientras que el Mahabharata es mucho más largo e incluye el Bhagavad Gita.",
+      "Son tradiciones vivas, recontadas en muchos idiomas, en teatro, cine, títeres y fiestas."
+     ],
+     "q": "¿Has visto una historia contada de distintas formas, como en cine, teatro o canción?",
+     "c": "Elige una historia que ames e imagínala como obra de títeres: ¿quiénes son los tres títeres principales?"
+    },
+    "fr": {
+     "t": "Les grandes épopées de l'Inde",
+     "g": "Découvre le Râmâyana et le Mahâbhârata, épopées indiennes aimées et racontées depuis des siècles.",
+     "p": [
+      "Le Râmâyana et le Mahâbhârata sont deux grandes épopées sanskrites encore racontées, chantées, dansées et jouées aujourd'hui.",
+      "Le Râmâyana suit le prince Rama, tandis que le Mahâbhârata, bien plus long, contient la Bhagavad-Gîtâ.",
+      "Ce sont des traditions vivantes, racontées en de nombreuses langues, au théâtre, au cinéma, en marionnettes et en fêtes."
+     ],
+     "q": "As-tu déjà vu une histoire racontée de plusieurs façons, au cinéma, au théâtre ou en chanson ?",
+     "c": "Choisis une histoire que tu aimes et imagine-la en spectacle de marionnettes : qui sont les trois marionnettes principales ?"
+    },
+    "it": {
+     "t": "I grandi poemi dell'India",
+     "g": "Scopri il Ramayana e il Mahabharata, epopee indiane amate e raccontate da secoli.",
+     "p": [
+      "Il Ramayana e il Mahabharata sono due grandi epopee sanscrite ancora oggi narrate, cantate, danzate e rappresentate.",
+      "Il Ramayana segue il principe Rama, mentre il Mahabharata, molto più lungo, comprende la Bhagavad Gita.",
+      "Sono tradizioni vive, raccontate in molte lingue, a teatro, al cinema, con burattini e feste."
+     ],
+     "q": "Hai visto una storia raccontata in modi diversi, come film, teatro o canzone?",
+     "c": "Scegli una storia che ami e immaginala come spettacolo di burattini: chi sono i tre burattini principali?"
+    },
+    "pt": {
+     "t": "As grandes epopeias da Índia",
+     "g": "Descobre o Ramayana e o Mahabharata, epopeias indianas amadas e recontadas há séculos.",
+     "p": [
+      "O Ramayana e o Mahabharata são duas grandes epopeias em sânscrito que ainda hoje se contam, cantam, dançam e representam.",
+      "O Ramayana segue o príncipe Rama, enquanto o Mahabharata, muito mais longo, inclui o Bhagavad Gita.",
+      "São tradições vivas, recontadas em muitas línguas, no teatro, cinema, marionetas e festas."
+     ],
+     "q": "Já viste uma história contada de vários modos, como cinema, teatro ou canção?",
+     "c": "Escolhe uma história que ames e imagina-a como espetáculo de marionetas: quais as três marionetas principais?"
+    },
+    "pt_BR": {
+     "t": "As grandes epopeias da Índia",
+     "g": "Descubra o Ramayana e o Mahabharata, epopeias indianas amadas e recontadas há séculos.",
+     "p": [
+      "O Ramayana e o Mahabharata são duas grandes epopeias em sânscrito que ainda hoje se contam, cantam, dançam e encenam.",
+      "O Ramayana segue o príncipe Rama, enquanto o Mahabharata, bem mais longo, inclui o Bhagavad Gita.",
+      "São tradições vivas, recontadas em muitas línguas, no teatro, cinema, fantoches e festas."
+     ],
+     "q": "Você já viu uma história contada de vários jeitos, como cinema, teatro ou música?",
+     "c": "Escolha uma história que você ama e imagine como um teatro de fantoches: quais são os três principais?"
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rama and Sita",
+     "g": "Meet the prince, the princess and the long journey home celebrated with lamps at Diwali.",
+     "p": [
+      "Prince Rama was sent to live in a forest for fourteen years, and his wife Sita and brother Lakshmana joined him.",
+      "Their journey was full of challenges, and Rama and his friends, including Hanuman, worked to bring Sita home.",
+      "Many people celebrate Rama's homecoming at Diwali, lighting lamps to welcome light, hope and goodness."
+     ],
+     "q": "What does home mean to you, and what would you do to welcome someone back?",
+     "c": "Light a candle or imagine one, and say one wish for your home in a single sentence."
+    },
+    "de": {
+     "t": "Rama und Sita",
+     "g": "Lerne den Prinzen, die Prinzessin und die lange Heimreise kennen, die mit Lichtern zu Diwali gefeiert wird.",
+     "p": [
+      "Prinz Rama sollte vierzehn Jahre im Wald leben, und seine Frau Sita und sein Bruder Lakshmana begleiteten ihn.",
+      "Ihre Reise war voller Prüfungen, und Rama und seine Freunde, darunter Hanuman, brachten Sita nach Hause.",
+      "Viele feiern Ramas Heimkehr zu Diwali und zünden Lichter für Licht, Hoffnung und Güte an."
+     ],
+     "q": "Was bedeutet Zuhause für dich, und wie würdest du jemanden willkommen heißen?",
+     "c": "Zünde eine Kerze an oder stell sie dir vor und sage in einem Satz einen Wunsch für dein Zuhause."
+    },
+    "es": {
+     "t": "Rama y Sita",
+     "g": "Conoce al príncipe, la princesa y el largo viaje a casa celebrado con lámparas en Diwali.",
+     "p": [
+      "El príncipe Rama fue enviado a vivir catorce años en el bosque, y su esposa Sita y su hermano Lakshmana lo acompañaron.",
+      "Su viaje estuvo lleno de retos, y Rama y sus amigos, entre ellos Hanuman, trabajaron para traer a Sita a casa.",
+      "Muchas personas celebran el regreso de Rama en Diwali, encendiendo lámparas para dar la bienvenida a la luz, la esperanza y el bien."
+     ],
+     "q": "¿Qué significa para ti el hogar y qué harías para dar la bienvenida a alguien?",
+     "c": "Enciende una vela o imagínala y di un deseo para tu hogar en una sola frase."
+    },
+    "fr": {
+     "t": "Rama et Sita",
+     "g": "Rencontre le prince, la princesse et le long retour célébré par des lampes à Divali.",
+     "p": [
+      "Le prince Rama fut envoyé vivre quatorze ans en forêt, et sa femme Sita et son frère Lakshmana le suivirent.",
+      "Leur voyage fut plein d'épreuves, et Rama et ses amis, dont Hanuman, œuvrèrent pour ramener Sita chez elle.",
+      "Beaucoup célèbrent le retour de Rama à Divali en allumant des lampes pour accueillir lumière, espoir et bonté."
+     ],
+     "q": "Que signifie pour toi la maison et que ferais-tu pour accueillir quelqu'un ?",
+     "c": "Allume une bougie ou imagine-la et formule un vœu pour ta maison en une seule phrase."
+    },
+    "it": {
+     "t": "Rama e Sita",
+     "g": "Conosci il principe, la principessa e il lungo ritorno celebrato con lampade a Diwali.",
+     "p": [
+      "Il principe Rama fu mandato a vivere quattordici anni nella foresta, e la moglie Sita e il fratello Lakshmana lo seguirono.",
+      "Il loro viaggio fu pieno di prove, e Rama e i suoi amici, tra cui Hanuman, si adoperarono per riportare Sita a casa.",
+      "Molti celebrano il ritorno di Rama a Diwali, accendendo lampade per accogliere luce, speranza e bontà."
+     ],
+     "q": "Cosa significa per te casa e cosa faresti per accogliere qualcuno?",
+     "c": "Accendi una candela o immaginala e di' un desiderio per la tua casa in una sola frase."
+    },
+    "pt": {
+     "t": "Rama e Sita",
+     "g": "Conhece o príncipe, a princesa e a longa viagem de regresso celebrada com lamparinas no Diwali.",
+     "p": [
+      "O príncipe Rama foi enviado a viver catorze anos na floresta, e a esposa Sita e o irmão Lakshmana acompanharam-no.",
+      "A viagem foi cheia de desafios, e Rama e os amigos, incluindo Hanuman, trabalharam para levar Sita para casa.",
+      "Muitas pessoas celebram o regresso de Rama no Diwali, acendendo lamparinas para acolher a luz, a esperança e o bem."
+     ],
+     "q": "O que significa para ti o lar e o que farias para acolher alguém?",
+     "c": "Acende uma vela ou imagina-a e diz um desejo para a tua casa numa só frase."
+    },
+    "pt_BR": {
+     "t": "Rama e Sita",
+     "g": "Conheça o príncipe, a princesa e a longa viagem de volta celebrada com lamparinas no Diwali.",
+     "p": [
+      "O príncipe Rama foi enviado a viver catorze anos na floresta, e a esposa Sita e o irmão Lakshmana o acompanharam.",
+      "A viagem foi cheia de desafios, e Rama e os amigos, incluindo Hanuman, trabalharam para levar Sita para casa.",
+      "Muitas pessoas celebram a volta de Rama no Diwali, acendendo lamparinas para receber a luz, a esperança e o bem."
+     ],
+     "q": "O que o lar significa para você e o que faria para receber alguém?",
+     "c": "Acenda uma vela ou imagine uma e diga um desejo para sua casa em uma só frase."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hanuman the monkey hero",
+     "g": "Meet a loyal, strong hero who could leap across the sea to Lanka.",
+     "p": [
+      "Hanuman is a monkey hero of the Ramayana, known for loyalty, courage and devotion to Rama.",
+      "He could change his size and once leapt across the sea to find Sita and bring news of her safety.",
+      "Many people admire Hanuman as a symbol of strength joined with humility and service."
+     ],
+     "q": "Who is someone loyal in your life, and how do you thank them?",
+     "c": "Do a big stretch like a leaping hero and say one kind thing about a loyal friend."
+    },
+    "de": {
+     "t": "Hanuman, der Affenheld",
+     "g": "Lerne einen treuen, starken Helden kennen, der übers Meer nach Lanka springen konnte.",
+     "p": [
+      "Hanuman ist ein Affenheld des Ramayana, bekannt für Treue, Mut und Hingabe an Rama.",
+      "Er konnte seine Größe verändern und sprang einmal über das Meer, um Sita zu finden und Nachricht von ihr zu bringen.",
+      "Viele bewundern Hanuman als Symbol für Stärke, verbunden mit Bescheidenheit und Dienst."
+     ],
+     "q": "Wer ist in deinem Leben treu, und wie bedankst du dich bei ihm?",
+     "c": "Mach eine große Dehnung wie ein springender Held und sage etwas Nettes über einen treuen Freund."
+    },
+    "es": {
+     "t": "Hanuman, el héroe mono",
+     "g": "Conoce a un héroe leal y fuerte que podía saltar sobre el mar hasta Lanka.",
+     "p": [
+      "Hanuman es un héroe mono del Ramayana, conocido por su lealtad, valentía y devoción a Rama.",
+      "Podía cambiar de tamaño y una vez saltó sobre el mar para encontrar a Sita y llevar noticias de que estaba a salvo.",
+      "Mucha gente admira a Hanuman como símbolo de fuerza unida a humildad y servicio."
+     ],
+     "q": "¿Quién es alguien leal en tu vida y cómo se lo agradeces?",
+     "c": "Haz un gran estiramiento como un héroe que salta y di algo amable sobre un amigo leal."
+    },
+    "fr": {
+     "t": "Hanuman le héros singe",
+     "g": "Rencontre un héros fidèle et fort capable de bondir par-dessus la mer jusqu'à Lanka.",
+     "p": [
+      "Hanuman est un héros singe du Râmâyana, connu pour sa loyauté, son courage et sa dévotion à Rama.",
+      "Il pouvait changer de taille et une fois bondit par-dessus la mer pour retrouver Sita et rapporter de ses nouvelles.",
+      "Beaucoup admirent Hanuman comme symbole de force unie à l'humilité et au service."
+     ],
+     "q": "Qui est loyal dans ta vie et comment le remercies-tu ?",
+     "c": "Fais un grand étirement de héros bondissant et dis une chose gentille sur un ami loyal."
+    },
+    "it": {
+     "t": "Hanuman l'eroe scimmia",
+     "g": "Conosci un eroe fedele e forte capace di saltare sul mare fino a Lanka.",
+     "p": [
+      "Hanuman è un eroe scimmia del Ramayana, noto per lealtà, coraggio e devozione a Rama.",
+      "Poteva cambiare dimensione e una volta saltò sul mare per trovare Sita e portare notizie di lei.",
+      "Molti ammirano Hanuman come simbolo di forza unita a umiltà e servizio."
+     ],
+     "q": "Chi è una persona leale nella tua vita e come la ringrazi?",
+     "c": "Fai un grande stiramento da eroe che salta e di' una cosa gentile su un amico leale."
+    },
+    "pt": {
+     "t": "Hanuman, o herói macaco",
+     "g": "Conhece um herói leal e forte capaz de saltar sobre o mar até Lanka.",
+     "p": [
+      "Hanuman é um herói macaco do Ramayana, conhecido pela lealdade, coragem e devoção a Rama.",
+      "Podia mudar de tamanho e uma vez saltou sobre o mar para encontrar Sita e trazer notícias dela.",
+      "Muitos admiram Hanuman como símbolo de força unida à humildade e ao serviço."
+     ],
+     "q": "Quem é leal na tua vida e como lhe agradeces?",
+     "c": "Faz um grande alongamento de herói a saltar e diz algo simpático sobre um amigo leal."
+    },
+    "pt_BR": {
+     "t": "Hanuman, o herói macaco",
+     "g": "Conheça um herói leal e forte capaz de saltar sobre o mar até Lanka.",
+     "p": [
+      "Hanuman é um herói macaco do Ramayana, conhecido pela lealdade, coragem e devoção a Rama.",
+      "Ele podia mudar de tamanho e uma vez saltou sobre o mar para encontrar Sita e trazer notícias dela.",
+      "Muitos admiram Hanuman como símbolo de força unida à humildade e ao serviço."
+     ],
+     "q": "Quem é leal na sua vida e como você agradece a essa pessoa?",
+     "c": "Faça um grande alongamento de herói saltando e diga algo gentil sobre um amigo leal."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ganesha and the broken tusk",
+     "g": "Meet the elephant-headed figure of new beginnings and the legend of writing an epic.",
+     "p": [
+      "Ganesha has an elephant head and is honoured in India as a remover of obstacles and patron of new beginnings.",
+      "One legend says he broke off a tusk to use as a pen when Vyasa dictated the Mahabharata.",
+      "People often say his name before starting a journey, a project or a school year, wishing for a good start."
+     ],
+     "q": "What new project would you like to begin, and what obstacle might you face?",
+     "c": "Name one obstacle in a plan of yours and write a tiny wish to ease it."
+    },
+    "de": {
+     "t": "Ganesha und der gebrochene Stoßzahn",
+     "g": "Lerne die elefantenköpfige Gestalt der Neuanfänge und die Sage vom Aufschreiben eines Epos kennen.",
+     "p": [
+      "Ganesha hat einen Elefantenkopf und wird in Indien als Beseitiger von Hindernissen und Schutzherr von Neuanfängen verehrt.",
+      "Eine Sage erzählt, er brach einen Stoßzahn ab, um ihn als Stift zu benutzen, als Vyasa das Mahabharata diktierte.",
+      "Viele nennen seinen Namen vor einer Reise, einem Projekt oder dem Schuljahr und wünschen sich einen guten Start."
+     ],
+     "q": "Welches neue Projekt möchtest du beginnen, und welches Hindernis könnte dich erwarten?",
+     "c": "Nenne ein Hindernis in einem deiner Pläne und schreibe einen kleinen Wunsch, es zu erleichtern."
+    },
+    "es": {
+     "t": "Ganesha y el colmillo roto",
+     "g": "Conoce a la figura con cabeza de elefante de los nuevos comienzos y la leyenda de escribir una epopeya.",
+     "p": [
+      "Ganesha tiene cabeza de elefante y se lo honra en la India como quien quita obstáculos y protege los comienzos.",
+      "Una leyenda dice que rompió un colmillo para usarlo de pluma cuando Vyasa dictó el Mahabharata.",
+      "Mucha gente dice su nombre antes de un viaje, un proyecto o el curso escolar, deseando un buen comienzo."
+     ],
+     "q": "¿Qué nuevo proyecto te gustaría empezar y qué obstáculo podrías encontrar?",
+     "c": "Nombra un obstáculo en un plan tuyo y escribe un pequeño deseo para aliviarlo."
+    },
+    "fr": {
+     "t": "Ganesh et la défense brisée",
+     "g": "Rencontre la figure à tête d'éléphant des nouveaux départs et la légende de l'écriture d'une épopée.",
+     "p": [
+      "Ganesh a une tête d'éléphant et est honoré en Inde comme celui qui lève les obstacles et protège les commencements.",
+      "Une légende dit qu'il brisa une défense pour s'en servir de plume quand Vyâsa dicta le Mahâbhârata.",
+      "On prononce souvent son nom avant un voyage, un projet ou la rentrée, en souhaitant un bon début."
+     ],
+     "q": "Quel nouveau projet aimerais-tu commencer et quel obstacle pourrait se présenter ?",
+     "c": "Nomme un obstacle dans un de tes projets et écris un petit vœu pour l'alléger."
+    },
+    "it": {
+     "t": "Ganesha e la zanna spezzata",
+     "g": "Conosci la figura dalla testa di elefante dei nuovi inizi e la leggenda della scrittura di un'epopea.",
+     "p": [
+      "Ganesha ha testa di elefante ed è onorato in India come colui che rimuove gli ostacoli e protegge gli inizi.",
+      "Una leggenda dice che spezzò una zanna per usarla come penna quando Vyasa dettò il Mahabharata.",
+      "Molti dicono il suo nome prima di un viaggio, un progetto o l'anno scolastico, augurandosi un buon inizio."
+     ],
+     "q": "Quale nuovo progetto vorresti iniziare e quale ostacolo potresti incontrare?",
+     "c": "Nomina un ostacolo in un tuo piano e scrivi un piccolo desiderio per alleggerirlo."
+    },
+    "pt": {
+     "t": "Ganesha e a presa quebrada",
+     "g": "Conhece a figura de cabeça de elefante dos novos começos e a lenda da escrita de uma epopeia.",
+     "p": [
+      "Ganesha tem cabeça de elefante e é honrado na Índia como quem remove obstáculos e protege os começos.",
+      "Uma lenda diz que quebrou uma presa para a usar como pena quando Vyasa ditou o Mahabharata.",
+      "Muita gente diz o seu nome antes de uma viagem, de um projeto ou do ano letivo, desejando um bom começo."
+     ],
+     "q": "Que novo projeto gostarias de começar e que obstáculo poderias encontrar?",
+     "c": "Diz um obstáculo num plano teu e escreve um pequeno desejo para o aliviar."
+    },
+    "pt_BR": {
+     "t": "Ganesha e a presa quebrada",
+     "g": "Conheça a figura de cabeça de elefante dos novos começos e a lenda da escrita de uma epopeia.",
+     "p": [
+      "Ganesha tem cabeça de elefante e é honrado na Índia como quem remove obstáculos e protege os começos.",
+      "Uma lenda diz que ele quebrou uma presa para usar como pena quando Vyasa ditou o Mahabharata.",
+      "Muita gente diz o nome dele antes de uma viagem, de um projeto ou do ano letivo, desejando um bom começo."
+     ],
+     "q": "Que novo projeto você gostaria de começar e que obstáculo poderia encontrar?",
+     "c": "Diga um obstáculo num plano seu e escreva um pequeno desejo para aliviá-lo."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The churning of the ocean",
+     "g": "Join gods and rivals pulling a giant serpent to churn treasures out of the cosmic sea.",
+     "p": [
+      "In a Hindu legend, gods and their rivals, the asuras, cooperated to churn the cosmic ocean using a mountain as a churning stick.",
+      "They wrapped the serpent Vasuki around it and pulled from both ends, and many treasures rose from the waves.",
+      "The story is often read as a lesson that great things need teamwork, patience and steady effort."
+     ],
+     "q": "What is something you achieved only by working with others?",
+     "c": "Mime pulling a long rope with a friend and name one treasure your teamwork could bring."
+    },
+    "de": {
+     "t": "Das Quirlen des Ozeans",
+     "g": "Begleite Götter und Rivalen, die an einer riesigen Schlange ziehen, um Schätze aus dem Urmeer zu quirlen.",
+     "p": [
+      "In einer hinduistischen Legende arbeiteten Götter und ihre Rivalen, die Asuras, zusammen und quirlten den Urozean mit einem Berg als Quirl.",
+      "Sie wickelten die Schlange Vasuki darum, zogen an beiden Enden, und aus den Wellen stiegen viele Schätze auf.",
+      "Die Geschichte wird oft so gelesen: Große Dinge brauchen Teamarbeit, Geduld und stetigen Einsatz."
+     ],
+     "q": "Was hast du nur gemeinsam mit anderen erreicht?",
+     "c": "Tu so, als zögest du mit einem Freund an einem langen Seil, und nenne einen Schatz eurer Teamarbeit."
+    },
+    "es": {
+     "t": "El batido del océano",
+     "g": "Únete a dioses y rivales que tiran de una serpiente gigante para batir tesoros del mar cósmico.",
+     "p": [
+      "En una leyenda hindú, los dioses y sus rivales, los asuras, cooperaron para batir el océano cósmico usando una montaña como vara.",
+      "Enrollaron a la serpiente Vasuki en ella y tiraron de ambos extremos, y muchos tesoros surgieron de las olas.",
+      "La historia suele leerse como lección: las grandes cosas piden trabajo en equipo, paciencia y esfuerzo constante."
+     ],
+     "q": "¿Qué lograste solo trabajando con otros?",
+     "c": "Imita tirar de una cuerda larga con un amigo y nombra un tesoro que traería vuestro trabajo en equipo."
+    },
+    "fr": {
+     "t": "Le barattage de l'océan",
+     "g": "Rejoins dieux et rivaux tirant un serpent géant pour baratter des trésors de la mer cosmique.",
+     "p": [
+      "Dans une légende hindoue, les dieux et leurs rivaux, les asuras, coopérèrent pour baratter l'océan cosmique avec une montagne pour bâton.",
+      "Ils enroulèrent le serpent Vasuki autour et tirèrent aux deux bouts, et bien des trésors surgirent des vagues.",
+      "On lit souvent ce récit comme une leçon : les grandes choses demandent travail d'équipe, patience et effort régulier."
+     ],
+     "q": "Qu'as-tu accompli uniquement en travaillant avec d'autres ?",
+     "c": "Mime de tirer une longue corde avec un ami et cite un trésor que votre équipe pourrait apporter."
+    },
+    "it": {
+     "t": "La zangolatura dell'oceano",
+     "g": "Unisciti a dèi e rivali che tirano un serpente gigante per zangolare tesori dal mare cosmico.",
+     "p": [
+      "In una leggenda indù, gli dèi e i loro rivali, gli asura, collaborarono per zangolare l'oceano cosmico usando una montagna come bastone.",
+      "Avvolsero il serpente Vasuki intorno e tirarono dalle due estremità, e molti tesori emersero dalle onde.",
+      "La storia si legge spesso come una lezione: le grandi cose richiedono lavoro di squadra, pazienza e impegno costante."
+     ],
+     "q": "Cosa hai ottenuto solo lavorando con altri?",
+     "c": "Mima di tirare una lunga corda con un amico e nomina un tesoro che il vostro lavoro di squadra porterebbe."
+    },
+    "pt": {
+     "t": "A batedura do oceano",
+     "g": "Junta-te a deuses e rivais que puxam uma serpente gigante para bater tesouros do mar cósmico.",
+     "p": [
+      "Numa lenda hindu, os deuses e os seus rivais, os asuras, cooperaram para bater o oceano cósmico usando uma montanha como vara.",
+      "Enrolaram a serpente Vasuki nela e puxaram pelas duas pontas, e muitos tesouros surgiram das ondas.",
+      "A história costuma ler-se como lição: coisas grandes pedem trabalho de equipa, paciência e esforço constante."
+     ],
+     "q": "O que conseguiste só a trabalhar com outros?",
+     "c": "Imita puxar uma corda longa com um amigo e diz um tesouro que o vosso trabalho de equipa traria."
+    },
+    "pt_BR": {
+     "t": "A batedura do oceano",
+     "g": "Junte-se a deuses e rivais que puxam uma serpente gigante para bater tesouros do mar cósmico.",
+     "p": [
+      "Numa lenda hindu, os deuses e seus rivais, os asuras, cooperaram para bater o oceano cósmico usando uma montanha como vara.",
+      "Enrolaram a serpente Vasuki nela e puxaram pelas duas pontas, e muitos tesouros surgiram das ondas.",
+      "A história costuma ser lida como lição: coisas grandes pedem trabalho em equipe, paciência e esforço constante."
+     ],
+     "q": "O que você conseguiu só trabalhando com outros?",
+     "c": "Imite puxar uma corda longa com um amigo e diga um tesouro que o trabalho em equipe de vocês traria."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: Norse, Egypt, India",
+     "g": "Play a light recap game with the stars of days 31 to 59.",
+     "p": [
+      "From the Norse world you met Odin, Thor, Loki, Freya, the nine worlds and the weekdays named after gods.",
+      "Egypt gave you Ra, Isis, Horus, Thoth, Bastet and hieroglyphs, and Mesopotamia added Gilgamesh, Inanna and the flood story.",
+      "India brought the Ramayana, Rama and Sita, Hanuman, Ganesha and the churning of the ocean."
+     ],
+     "q": "Which character from this month would you invite to dinner, and what would you ask?",
+     "c": "Match each of three characters to a symbol, such as hammer, eye or lamp, in a quick game."
+    },
+    "de": {
+     "t": "Rückblick: Norden, Ägypten, Indien",
+     "g": "Spiele eine lockere Wiederholung mit den Stars der Tage 31 bis 59.",
+     "p": [
+      "Aus der nordischen Welt kennst du Odin, Thor, Loki, Freya, die neun Welten und die nach Göttern benannten Wochentage.",
+      "Ägypten schenkte dir Ra, Isis, Horus, Thot, Bastet und Hieroglyphen, Mesopotamien Gilgamesch, Inanna und die Flutgeschichte.",
+      "Indien brachte das Ramayana, Rama und Sita, Hanuman, Ganesha und das Quirlen des Ozeans."
+     ],
+     "q": "Welche Figur dieses Monats würdest du zum Essen einladen, und was würdest du fragen?",
+     "c": "Ordne in einem Schnellspiel drei Figuren je ein Symbol zu, etwa Hammer, Auge oder Lampe."
+    },
+    "es": {
+     "t": "Repaso: Norte, Egipto, India",
+     "g": "Juega a un repaso ligero con las estrellas de los días 31 a 59.",
+     "p": [
+      "Del mundo nórdico conociste a Odín, Thor, Loki, Freya, los nueve mundos y los días de la semana con nombre de dioses.",
+      "Egipto te dio a Ra, Isis, Horus, Tot, Bastet y los jeroglíficos, y Mesopotamia añadió a Gilgamesh, Inanna y el diluvio.",
+      "La India trajo el Ramayana, Rama y Sita, Hanuman, Ganesha y el batido del océano."
+     ],
+     "q": "¿A qué personaje de este mes invitarías a cenar y qué le preguntarías?",
+     "c": "Empareja tres personajes con un símbolo, como martillo, ojo o lámpara, en un juego rápido."
+    },
+    "fr": {
+     "t": "Révision : Nord, Égypte, Inde",
+     "g": "Joue à un récapitulatif léger avec les vedettes des jours 31 à 59.",
+     "p": [
+      "Du monde nordique, tu as rencontré Odin, Thor, Loki, Freyja, les neuf mondes et les jours nommés d'après des dieux.",
+      "L'Égypte t'a donné Rê, Isis, Horus, Thot, Bastet et les hiéroglyphes, la Mésopotamie Gilgamesh, Inanna et le déluge.",
+      "L'Inde a apporté le Râmâyana, Rama et Sita, Hanuman, Ganesh et le barattage de l'océan."
+     ],
+     "q": "Quel personnage de ce mois inviterais-tu à dîner, et que lui demanderais-tu ?",
+     "c": "Associe trois personnages à un symbole, comme marteau, œil ou lampe, dans un jeu rapide."
+    },
+    "it": {
+     "t": "Ripasso: Nord, Egitto, India",
+     "g": "Gioca a un ripasso leggero con le stelle dei giorni da 31 a 59.",
+     "p": [
+      "Dal mondo norreno hai incontrato Odino, Thor, Loki, Freya, i nove mondi e i giorni della settimana con nomi di dèi.",
+      "L'Egitto ti ha dato Ra, Iside, Horus, Thot, Bastet e i geroglifici, la Mesopotamia Gilgamesh, Inanna e il diluvio.",
+      "L'India ha portato il Ramayana, Rama e Sita, Hanuman, Ganesha e la zangolatura dell'oceano."
+     ],
+     "q": "Quale personaggio di questo mese inviteresti a cena e cosa gli chiederesti?",
+     "c": "Abbina tre personaggi a un simbolo, come martello, occhio o lampada, in un gioco rapido."
+    },
+    "pt": {
+     "t": "Revisão: Norte, Egito, Índia",
+     "g": "Joga uma revisão leve com as estrelas dos dias 31 a 59.",
+     "p": [
+      "Do mundo nórdico conheceste Odin, Thor, Loki, Freya, os nove mundos e os dias da semana com nomes de deuses.",
+      "O Egito deu-te Rá, Ísis, Hórus, Tot, Bastet e os hieróglifos, e a Mesopotâmia, Gilgamesh, Inanna e o dilúvio.",
+      "A Índia trouxe o Ramayana, Rama e Sita, Hanuman, Ganesha e a batedura do oceano."
+     ],
+     "q": "Que personagem deste mês convidarias para jantar e o que lhe perguntarias?",
+     "c": "Associa três personagens a um símbolo, como martelo, olho ou lamparina, num jogo rápido."
+    },
+    "pt_BR": {
+     "t": "Revisão: Norte, Egito, Índia",
+     "g": "Jogue uma revisão leve com as estrelas dos dias 31 a 59.",
+     "p": [
+      "Do mundo nórdico você conheceu Odin, Thor, Loki, Freya, os nove mundos e os dias da semana com nomes de deuses.",
+      "O Egito deu a você Rá, Ísis, Hórus, Tot, Bastet e os hieróglifos, e a Mesopotâmia, Gilgamesh, Inanna e o dilúvio.",
+      "A Índia trouxe o Ramayana, Rama e Sita, Hanuman, Ganesha e a batedura do oceano."
+     ],
+     "q": "Qual personagem deste mês você convidaria para jantar e o que perguntaria?",
+     "c": "Associe três personagens a um símbolo, como martelo, olho ou lamparina, num jogo rápido."
+    }
+   }
+  }
+ ]
+}

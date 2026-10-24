@@ -1,0 +1,835 @@
+{
+ "topic": "street_food",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Belgian fries",
+     "g": "Learn why Belgian fries are crisp outside and soft inside.",
+     "p": [
+      "Potatoes are cut thick and fried twice: first at a lower heat to cook through, then hotter for a golden crunch.",
+      "They are served in a paper cone, often with mayonnaise or one of many sauces from the stand.",
+      "Travel tip: a busy stand with fresh oil and a steady queue usually means hot, freshly fried fries."
+     ],
+     "q": "Which sauce would you try first on a cone of fries?",
+     "c": "Fry or bake potato sticks in two steps today and taste the difference with a dip."
+    },
+    "de": {
+     "t": "Belgische Pommes",
+     "g": "Verstehen, warum belgische Pommes außen knusprig und innen weich sind.",
+     "p": [
+      "Die Kartoffeln werden dick geschnitten und zweimal frittiert: erst sanft zum Garen, dann heiß für die goldene Kruste.",
+      "Man isst sie aus der Papiertüte, oft mit Mayonnaise oder einer von vielen Soßen der Frittenbude.",
+      "Reisetipp: Eine gut besuchte Bude mit frischem Fett und stetiger Schlange hat meist frisch frittierte, heiße Pommes."
+     ],
+     "q": "Welche Soße würdest du als Erstes zu einer Tüte Pommes probieren?",
+     "c": "Brate oder backe heute Kartoffelstäbchen in zwei Schritten und probiere sie mit einem Dip."
+    },
+    "es": {
+     "t": "Patatas fritas belgas",
+     "g": "Entender por qué las patatas belgas son crujientes por fuera y tiernas por dentro.",
+     "p": [
+      "Las patatas se cortan gruesas y se fríen dos veces: primero a fuego suave para cocerlas y luego más fuerte para dorarlas.",
+      "Se sirven en un cucurucho de papel, a menudo con mayonesa o alguna de las muchas salsas del puesto.",
+      "Consejo de viaje: un puesto concurrido, con aceite fresco y cola constante, suele ofrecer patatas recién hechas y calientes."
+     ],
+     "q": "¿Qué salsa probarías primero en un cucurucho de patatas?",
+     "c": "Fríe u hornea hoy palitos de patata en dos pasos y prueba la diferencia con una salsa."
+    },
+    "fr": {
+     "t": "Les frites belges",
+     "g": "Comprendre pourquoi les frites belges sont croustillantes dehors et fondantes dedans.",
+     "p": [
+      "Les pommes de terre sont coupées épais et frites deux fois : d'abord doucement pour cuire, puis plus chaud pour dorer.",
+      "On les sert dans un cornet en papier, souvent avec de la mayonnaise ou l'une des nombreuses sauces de la friterie.",
+      "Conseil de voyage : une friterie très fréquentée, à l'huile fraîche et à la file régulière, sert en général des frites chaudes."
+     ],
+     "q": "Quelle sauce goûterais-tu en premier sur un cornet de frites ?",
+     "c": "Fais frire ou cuire aujourd'hui des bâtonnets de pomme de terre en deux temps et goûte avec une sauce."
+    },
+    "it": {
+     "t": "Patatine fritte belghe",
+     "g": "Capire perché le patatine belghe sono croccanti fuori e morbide dentro.",
+     "p": [
+      "Le patate si tagliano spesse e si friggono due volte: prima a fuoco dolce per cuocerle, poi più forte per dorarle.",
+      "Si servono in un cartoccio di carta, spesso con maionese o una delle tante salse del chiosco.",
+      "Consiglio di viaggio: un chiosco affollato, con olio fresco e fila costante, di solito serve patatine appena fritte e calde."
+     ],
+     "q": "Quale salsa assaggeresti per prima su un cartoccio di patatine?",
+     "c": "Friggi o inforna oggi bastoncini di patata in due fasi e assaggia la differenza con una salsa."
+    },
+    "pt": {
+     "t": "Batatas fritas belgas",
+     "g": "Perceber porque as batatas belgas são estaladiças por fora e macias por dentro.",
+     "p": [
+      "As batatas cortam-se grossas e fritam-se duas vezes: primeiro em lume brando para cozer, depois mais forte para dourar.",
+      "Servem-se num cone de papel, muitas vezes com maionese ou um dos muitos molhos da banca.",
+      "Dica de viagem: uma banca cheia, com óleo fresco e fila constante, costuma servir batatas acabadas de fritar."
+     ],
+     "q": "Que molho provarias primeiro num cone de batatas fritas?",
+     "c": "Frita ou assa hoje palitos de batata em dois passos e prova a diferença com um molho."
+    },
+    "pt_BR": {
+     "t": "Batata frita belga",
+     "g": "Entender por que a batata belga é crocante por fora e macia por dentro.",
+     "p": [
+      "As batatas são cortadas grossas e fritas duas vezes: primeiro em fogo baixo para cozinhar, depois mais forte para dourar.",
+      "São servidas em um cone de papel, geralmente com maionese ou um dos vários molhos da barraca.",
+      "Dica de viagem: uma barraca cheia, com óleo novo e fila constante, costuma servir batata na hora e quentinha."
+     ],
+     "q": "Qual molho você provaria primeiro em um cone de batata frita?",
+     "c": "Frite ou asse hoje palitos de batata em duas etapas e sinta a diferença com um molho."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Currywurst",
+     "g": "Meet Berlin's famous sausage with curry ketchup.",
+     "p": [
+      "Currywurst is a sliced pork sausage topped with a warm ketchup sauce and curry powder.",
+      "It is linked to Berlin in the late 1940s and is often eaten standing at a snack stand, with fries or a bread roll.",
+      "Germans also love Bratwurst and Thüringer sausages; each region has its own favourite way to grill them."
+     ],
+     "q": "Do you like your snacks mild or spicy?",
+     "c": "Warm ketchup with a little curry powder today and dip a sliced sausage or veggie sausage."
+    },
+    "de": {
+     "t": "Currywurst",
+     "g": "Berlins berühmte Wurst mit Curry-Ketchup kennenlernen.",
+     "p": [
+      "Die Currywurst ist eine aufgeschnittene Schweinswurst mit warmer Ketchup-Soße und Currypulver.",
+      "Sie wird mit Berlin Ende der 1940er-Jahre verbunden und oft stehend am Imbiss gegessen, mit Pommes oder Brötchen.",
+      "Auch Bratwurst und Thüringer sind beliebt; jede Region hat ihre eigene Art, sie zu grillen."
+     ],
+     "q": "Magst du deine Snacks eher mild oder scharf?",
+     "c": "Erwärme heute Ketchup mit etwas Currypulver und tunke eine geschnittene Wurst oder vegetarische Wurst hinein."
+    },
+    "es": {
+     "t": "Currywurst",
+     "g": "Conocer la famosa salchicha de Berlín con kétchup al curri.",
+     "p": [
+      "La currywurst es una salchicha de cerdo cortada en rodajas con salsa de kétchup caliente y curri en polvo.",
+      "Se asocia a Berlín a finales de los años cuarenta y se suele comer de pie en un puesto, con patatas o un panecillo.",
+      "En Alemania también gustan la Bratwurst y las salchichas de Turingia; cada región tiene su modo favorito de asarlas."
+     ],
+     "q": "¿Prefieres los aperitivos suaves o picantes?",
+     "c": "Calienta hoy kétchup con un poco de curri y moja en él una salchicha cortada, también vegetal."
+    },
+    "fr": {
+     "t": "La currywurst",
+     "g": "Découvrir la célèbre saucisse berlinoise au ketchup au curry.",
+     "p": [
+      "La currywurst est une saucisse de porc coupée en tranches, nappée de ketchup chaud et de poudre de curry.",
+      "On la lie à Berlin à la fin des années 1940 ; on la mange souvent debout à un stand, avec des frites ou un petit pain.",
+      "Les Allemands aiment aussi la Bratwurst et les saucisses de Thuringe ; chaque région a sa façon préférée de les griller."
+     ],
+     "q": "Préfères-tu les en-cas doux ou épicés ?",
+     "c": "Réchauffe aujourd'hui du ketchup avec un peu de curry et trempes-y une saucisse coupée, même végétale."
+    },
+    "it": {
+     "t": "Currywurst",
+     "g": "Conoscere la famosa salsiccia di Berlino con ketchup al curry.",
+     "p": [
+      "La currywurst è una salsiccia di maiale a rondelle, con salsa ketchup calda e curry in polvere.",
+      "Si lega a Berlino alla fine degli anni Quaranta e si mangia spesso in piedi a un chiosco, con patatine o un panino.",
+      "In Germania piacciono anche la Bratwurst e le salsicce della Turingia; ogni regione ha il suo modo di grigliarle."
+     ],
+     "q": "Preferisci gli snack delicati o piccanti?",
+     "c": "Scalda oggi del ketchup con un po' di curry e intingici una salsiccia a rondelle, anche vegetale."
+    },
+    "pt": {
+     "t": "Currywurst",
+     "g": "Conhecer a famosa salsicha de Berlim com ketchup de caril.",
+     "p": [
+      "A currywurst é uma salsicha de porco às rodelas, com molho de ketchup quente e caril em pó.",
+      "Associa-se a Berlim no final dos anos 1940 e come-se muitas vezes de pé numa banca, com batatas fritas ou um pãozinho.",
+      "Na Alemanha também se gosta de Bratwurst e de salsichas da Turíngia; cada região tem a sua forma de as grelhar."
+     ],
+     "q": "Preferes snacks suaves ou picantes?",
+     "c": "Aquece hoje ketchup com um pouco de caril e mergulha lá uma salsicha às rodelas, até vegetal."
+    },
+    "pt_BR": {
+     "t": "Currywurst",
+     "g": "Conhecer a famosa salsicha de Berlim com ketchup de curry.",
+     "p": [
+      "A currywurst é uma salsicha de porco fatiada, com molho de ketchup quente e curry em pó.",
+      "Está ligada a Berlim no fim dos anos 1940 e costuma ser comida em pé numa barraquinha, com batata frita ou pãozinho.",
+      "Os alemães também adoram Bratwurst e salsichas da Turíngia; cada região tem seu jeito de grelhar."
+     ],
+     "q": "Você prefere lanches suaves ou picantes?",
+     "c": "Esquente hoje ketchup com um pouco de curry e mergulhe nele uma salsicha fatiada, até vegetariana."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fish and chips",
+     "g": "Learn the British takeaway classic and how to enjoy it.",
+     "p": [
+      "White fish such as cod or haddock is dipped in batter and fried, then served with thick chips.",
+      "Fish and chips shops, called chippies, were once known for wrapping meals in paper, and many still do.",
+      "Common extras are salt, malt vinegar and mushy peas; always let the hot batter cool a minute before biting."
+     ],
+     "q": "What would you add to your fish and chips?",
+     "c": "Make oven chips and crispy fish today, and try a squeeze of lemon or a splash of vinegar."
+    },
+    "de": {
+     "t": "Fish and Chips",
+     "g": "Den britischen Imbiss-Klassiker kennenlernen und genießen.",
+     "p": [
+      "Weißer Fisch wie Kabeljau oder Schellfisch wird in Teig getaucht, frittiert und mit dicken Pommes serviert.",
+      "Die Fish-and-Chips-Läden, genannt Chippies, packten das Essen früher in Papier ein, und viele tun es noch.",
+      "Üblich sind Salz, Malzessig und Erbsenpüree; lass den heißen Teig vor dem ersten Biss kurz abkühlen."
+     ],
+     "q": "Was würdest du zu deinem Fish and Chips dazunehmen?",
+     "c": "Mach heute Ofenpommes und knusprigen Fisch und probiere Zitrone oder einen Spritzer Essig."
+    },
+    "es": {
+     "t": "Fish and chips",
+     "g": "Conocer el clásico británico para llevar y cómo disfrutarlo.",
+     "p": [
+      "El pescado blanco, como bacalao o eglefino, se reboza en una masa y se fríe; se sirve con patatas gruesas.",
+      "Las tiendas de fish and chips, llamadas chippies, envolvían la comida en papel, y muchas aún lo hacen.",
+      "Se suele añadir sal, vinagre de malta y puré de guisantes; deja enfriar un minuto el rebozado caliente antes de morder."
+     ],
+     "q": "¿Qué añadirías a tu fish and chips?",
+     "c": "Prepara hoy patatas al horno y pescado crujiente, y prueba un chorrito de limón o de vinagre."
+    },
+    "fr": {
+     "t": "Fish and chips",
+     "g": "Découvrir le classique britannique à emporter et comment le savourer.",
+     "p": [
+      "Un poisson blanc, comme le cabillaud ou l'églefin, est trempé dans une pâte puis frit, et servi avec de grosses frites.",
+      "Les boutiques de fish and chips, les chippies, enveloppaient autrefois les repas dans du papier, et beaucoup le font encore.",
+      "On ajoute souvent sel, vinaigre de malt et purée de petits pois ; laisse refroidir la pâte brûlante une minute avant de croquer."
+     ],
+     "q": "Qu'ajouterais-tu à ton fish and chips ?",
+     "c": "Prépare aujourd'hui des frites au four et du poisson croustillant, avec citron ou un trait de vinaigre."
+    },
+    "it": {
+     "t": "Fish and chips",
+     "g": "Scoprire il classico britannico da asporto e come gustarlo.",
+     "p": [
+      "Un pesce bianco, come merluzzo o eglefino, si passa in pastella e si frigge; si serve con patate spesse.",
+      "I negozi di fish and chips, i chippies, un tempo avvolgevano il cibo nella carta, e molti lo fanno ancora.",
+      "Di solito si aggiungono sale, aceto di malto e purè di piselli; lascia raffreddare un minuto la pastella calda prima di morderla."
+     ],
+     "q": "Cosa aggiungeresti al tuo fish and chips?",
+     "c": "Prepara oggi patate al forno e pesce croccante, e prova una spruzzata di limone o di aceto."
+    },
+    "pt": {
+     "t": "Fish and chips",
+     "g": "Conhecer o clássico britânico para levar e como o apreciar.",
+     "p": [
+      "O peixe branco, como bacalhau ou arinca, é passado por massa e frito; serve-se com batatas grossas.",
+      "As lojas de fish and chips, as chippies, embrulhavam a comida em papel, e muitas ainda o fazem.",
+      "Costuma juntar-se sal, vinagre de malte e puré de ervilhas; deixa a massa quente arrefecer um minuto antes de trincar."
+     ],
+     "q": "O que acrescentarias ao teu fish and chips?",
+     "c": "Faz hoje batatas no forno e peixe estaladiço, e prova um fio de limão ou de vinagre."
+    },
+    "pt_BR": {
+     "t": "Fish and chips",
+     "g": "Conhecer o clássico britânico para viagem e como aproveitá-lo.",
+     "p": [
+      "Peixe branco, como bacalhau ou hadoque, é passado em massa e frito; vem com batatas grossas.",
+      "As lojas de fish and chips, as chippies, embrulhavam a comida em papel, e muitas ainda fazem isso.",
+      "Costuma-se juntar sal, vinagre de malte e purê de ervilhas; deixe a massa quente esfriar um minuto antes de morder."
+     ],
+     "q": "O que você colocaria no seu fish and chips?",
+     "c": "Faça hoje batatas no forno e peixe crocante, e experimente um fio de limão ou de vinagre."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Churros",
+     "g": "Learn how churros are made and enjoyed in Spain.",
+     "p": [
+      "Churro dough is flour, water and salt, piped through a star-shaped nozzle into hot oil.",
+      "In Spain they are a classic breakfast or late snack, dipped in thick hot chocolate at a churrería.",
+      "Eat them fresh: they are best straight from the oil, crisp outside and soft inside, and take care with hot oil and chocolate."
+     ],
+     "q": "Would you dip your churros or sprinkle sugar on them?",
+     "c": "Dip anything crisp, like a biscuit, into thick hot chocolate today and enjoy the contrast."
+    },
+    "de": {
+     "t": "Churros",
+     "g": "Lernen, wie Churros in Spanien gemacht und genossen werden.",
+     "p": [
+      "Der Churro-Teig besteht aus Mehl, Wasser und Salz und wird durch eine Sterntülle ins heiße Öl gespritzt.",
+      "In Spanien sind sie ein Klassiker zum Frühstück oder späten Snack, in dicke heiße Schokolade getaucht, in der Churrería.",
+      "Iss sie frisch: Direkt aus dem Öl sind sie außen knusprig und innen weich; Vorsicht bei heißem Öl und heißer Schokolade."
+     ],
+     "q": "Würdest du Churros eintunken oder mit Zucker bestreuen?",
+     "c": "Tunke heute etwas Knuspriges, etwa einen Keks, in dicke heiße Schokolade und genieße den Kontrast."
+    },
+    "es": {
+     "t": "Churros",
+     "g": "Aprender cómo se hacen y se disfrutan los churros en España.",
+     "p": [
+      "La masa del churro es de harina, agua y sal, y se pasa por una boquilla de estrella al aceite caliente.",
+      "En España son un clásico del desayuno o de la merienda, mojados en chocolate espeso en una churrería.",
+      "Cómelos recién hechos: salen crujientes por fuera y tiernos por dentro; ojo con el aceite y el chocolate calientes."
+     ],
+     "q": "¿Mojarías los churros o los espolvorearías con azúcar?",
+     "c": "Moja hoy algo crujiente, como una galleta, en chocolate caliente espeso y disfruta del contraste."
+    },
+    "fr": {
+     "t": "Les churros",
+     "g": "Apprendre comment on fait et savoure les churros en Espagne.",
+     "p": [
+      "La pâte à churros se fait avec farine, eau et sel, et passe par une douille cannelée dans l'huile chaude.",
+      "En Espagne, c'est un classique du petit-déjeuner ou du goûter, trempé dans un chocolat chaud épais, dans une churrería.",
+      "Mange-les frais : sortis de l'huile, ils sont croustillants dehors et moelleux dedans ; attention à l'huile et au chocolat brûlants."
+     ],
+     "q": "Tremperais-tu tes churros ou les saupoudrerais-tu de sucre ?",
+     "c": "Trempe aujourd'hui un biscuit croustillant dans un chocolat chaud épais et savoure le contraste."
+    },
+    "it": {
+     "t": "Churros",
+     "g": "Imparare come si preparano e si gustano i churros in Spagna.",
+     "p": [
+      "L'impasto dei churros è farina, acqua e sale, spremuto con una bocchetta a stella nell'olio caldo.",
+      "In Spagna sono un classico della colazione o della merenda, intinti in cioccolata calda densa in una churrería.",
+      "Mangiali freschi: appena fritti sono croccanti fuori e morbidi dentro; attenzione all'olio e alla cioccolata bollenti."
+     ],
+     "q": "Intingeresti i churros o li cospargeresti di zucchero?",
+     "c": "Intingi oggi qualcosa di croccante, come un biscotto, in cioccolata calda densa e goditi il contrasto."
+    },
+    "pt": {
+     "t": "Churros",
+     "g": "Aprender como se fazem e saboreiam os churros em Espanha.",
+     "p": [
+      "A massa dos churros leva farinha, água e sal, e passa por um bico de estrela para o óleo quente.",
+      "Em Espanha são um clássico do pequeno-almoço ou do lanche, mergulhados em chocolate quente espesso, numa churrería.",
+      "Come-os frescos: acabados de fritar são estaladiços por fora e macios por dentro; cuidado com o óleo e o chocolate quentes."
+     ],
+     "q": "Mergulhavas os churros ou polvilhavas com açúcar?",
+     "c": "Mergulha hoje algo estaladiço, como uma bolacha, em chocolate quente espesso e goza o contraste."
+    },
+    "pt_BR": {
+     "t": "Churros",
+     "g": "Aprender como os churros são feitos e saboreados na Espanha.",
+     "p": [
+      "A massa do churro leva farinha, água e sal, e passa por um bico de estrela direto no óleo quente.",
+      "Na Espanha, é clássico no café da manhã ou no lanche da tarde, mergulhado em chocolate quente espesso numa churrería.",
+      "Coma na hora: saindo do óleo é crocante por fora e macio por dentro; cuidado com o óleo e o chocolate quentes."
+     ],
+     "q": "Você mergulharia os churros ou polvilharia com açúcar?",
+     "c": "Mergulhe hoje algo crocante, como um biscoito, em chocolate quente espesso e curta o contraste."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pastel de nata",
+     "g": "Discover Portugal's famous custard tart.",
+     "p": [
+      "Pastel de nata has a crisp, flaky pastry shell filled with egg custard, baked until the top is lightly caramelised.",
+      "Pastéis de Belém, from the Jerónimos monastery area in Lisbon, made the recipe famous; many bakeries across Portugal bake their own.",
+      "Eat it warm with a little cinnamon or icing sugar, ideally with a small coffee."
+     ],
+     "q": "Do you prefer cinnamon or plain on custard tarts?",
+     "c": "Warm a custard tart or any egg-custard pastry today and add a pinch of cinnamon."
+    },
+    "de": {
+     "t": "Pastel de nata",
+     "g": "Portugals berühmtes Puddingtörtchen entdecken.",
+     "p": [
+      "Pastel de nata hat eine knusprige Blätterteighülle mit Eiercreme, gebacken, bis die Oberfläche leicht karamellisiert.",
+      "Die Pastéis de Belém aus dem Viertel des Klosters Jerónimos in Lissabon machten das Rezept berühmt; viele Bäckereien backen eigene.",
+      "Iss es warm mit etwas Zimt oder Puderzucker, am besten mit einem kleinen Kaffee."
+     ],
+     "q": "Magst du Puddingtörtchen lieber mit Zimt oder pur?",
+     "c": "Wärme heute ein Puddingtörtchen oder ein Eiercreme-Gebäck auf und gib eine Prise Zimt dazu."
+    },
+    "es": {
+     "t": "Pastel de nata",
+     "g": "Descubrir el famoso pastelito de crema de Portugal.",
+     "p": [
+      "El pastel de nata tiene una base de hojaldre crujiente rellena de crema de huevo, horneada hasta caramelizar ligeramente la superficie.",
+      "Los pastéis de Belém, del barrio del monasterio de los Jerónimos en Lisboa, hicieron famosa la receta; muchas pastelerías hornean los suyos.",
+      "Se come caliente con un poco de canela o azúcar glas, mejor con un café pequeño."
+     ],
+     "q": "¿Prefieres los pasteles de nata con canela o sin ella?",
+     "c": "Calienta hoy un pastelito de crema o un dulce de natillas y añade una pizca de canela."
+    },
+    "fr": {
+     "t": "Pastel de nata",
+     "g": "Découvrir la célèbre tartelette à la crème du Portugal.",
+     "p": [
+      "Le pastel de nata a une croûte de pâte feuilletée croustillante garnie de crème aux œufs, cuite jusqu'à caraméliser légèrement le dessus.",
+      "Les pastéis de Belém, près du monastère des Hiéronymites à Lisbonne, ont rendu la recette célèbre ; d'autres boulangeries ont la leur.",
+      "On le mange tiède avec un peu de cannelle ou de sucre glace, idéalement avec un petit café."
+     ],
+     "q": "Préfères-tu les tartelettes avec ou sans cannelle ?",
+     "c": "Réchauffe aujourd'hui une tartelette à la crème ou une pâtisserie aux œufs et ajoute une pincée de cannelle."
+    },
+    "it": {
+     "t": "Pastel de nata",
+     "g": "Scoprire il famoso tortino alla crema del Portogallo.",
+     "p": [
+      "Il pastel de nata ha un guscio di pasta sfoglia croccante con crema all'uovo, cotto finché la superficie caramella leggermente.",
+      "I pastéis de Belém, dal quartiere del monastero dos Jerónimos a Lisbona, resero famosa la ricetta; molti forni ne fanno di propri.",
+      "Si mangia tiepido con un po' di cannella o zucchero a velo, meglio con un caffè piccolo."
+     ],
+     "q": "Preferisci i tortini alla crema con la cannella o senza?",
+     "c": "Scalda oggi un tortino alla crema o un dolce all'uovo e aggiungi un pizzico di cannella."
+    },
+    "pt": {
+     "t": "Pastel de nata",
+     "g": "Descobrir a famosa tartelete de nata de Portugal.",
+     "p": [
+      "O pastel de nata tem uma base de massa folhada estaladiça com creme de ovos, cozido até o topo caramelizar ligeiramente.",
+      "Os pastéis de Belém, da zona do Mosteiro dos Jerónimos, em Lisboa, tornaram a receita famosa; muitas pastelarias fazem os seus.",
+      "Come-se morno com um pouco de canela ou açúcar em pó, de preferência com uma bica."
+     ],
+     "q": "Preferes os pastéis de nata com canela ou sem?",
+     "c": "Aquece hoje um pastel de nata ou um doce de ovos e junta uma pitada de canela."
+    },
+    "pt_BR": {
+     "t": "Pastel de nata",
+     "g": "Descobrir a famosa tortinha de creme de Portugal.",
+     "p": [
+      "O pastel de nata tem uma massa folhada crocante recheada com creme de ovos, assada até o topo caramelizar levemente.",
+      "Os pastéis de Belém, da região do Mosteiro dos Jerónimos, em Lisboa, deram fama à receita; muitas padarias fazem os seus.",
+      "Come-se morno com um pouco de canela ou açúcar de confeiteiro, de preferência com um cafezinho."
+     ],
+     "q": "Você prefere pastel de nata com canela ou sem?",
+     "c": "Esquente hoje uma tortinha de creme ou um doce de ovos e junte uma pitada de canela."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bifana",
+     "g": "Meet Portugal's simple, tasty pork sandwich.",
+     "p": [
+      "A bifana is a thin pork steak marinated in garlic, white wine and spices, then cooked and served in a crusty roll.",
+      "It is a classic snack in cafés and snack bars across Portugal, and Vendas Novas is often praised for its version.",
+      "Add a little mustard or piri-piri if you like, and enjoy it with a cold drink; check that the pork is cooked through."
+     ],
+     "q": "What is the best sandwich you have ever eaten?",
+     "c": "Marinate thin slices of meat or mushrooms with garlic and wine today and tuck them into a roll."
+    },
+    "de": {
+     "t": "Bifana",
+     "g": "Portugals einfaches, leckeres Schweinefleisch-Sandwich kennenlernen.",
+     "p": [
+      "Eine Bifana ist ein dünnes Schweinesteak, in Knoblauch, Weißwein und Gewürzen mariniert und im knusprigen Brötchen serviert.",
+      "Sie ist ein Klassiker in Cafés und Imbissstuben in ganz Portugal; die Version aus Vendas Novas wird oft gelobt.",
+      "Gib nach Wunsch etwas Senf oder Piri-Piri dazu und trink etwas Kaltes; das Schweinefleisch muss durchgegart sein."
+     ],
+     "q": "Was ist das beste Sandwich, das du je gegessen hast?",
+     "c": "Mariniere heute dünne Fleisch- oder Pilzscheiben mit Knoblauch und Wein und leg sie in ein Brötchen."
+    },
+    "es": {
+     "t": "Bifana",
+     "g": "Conocer el sencillo y sabroso bocadillo de cerdo de Portugal.",
+     "p": [
+      "La bifana es un filete fino de cerdo marinado con ajo, vino blanco y especias, cocinado y servido en un panecillo crujiente.",
+      "Es un clásico de cafés y casas de comidas de todo Portugal; la versión de Vendas Novas suele ser muy elogiada.",
+      "Añade un poco de mostaza o piri-piri si quieres y disfrútala con una bebida fría; comprueba que el cerdo esté bien hecho."
+     ],
+     "q": "¿Cuál es el mejor bocadillo que has comido nunca?",
+     "c": "Marina hoy lonchas finas de carne o de setas con ajo y vino y métalas en un panecillo."
+    },
+    "fr": {
+     "t": "La bifana",
+     "g": "Découvrir le sandwich portugais au porc, simple et savoureux.",
+     "p": [
+      "La bifana est une fine tranche de porc marinée à l'ail, au vin blanc et aux épices, cuite et servie dans un petit pain croustillant.",
+      "C'est un classique des cafés et snacks du Portugal ; la version de Vendas Novas est souvent très appréciée.",
+      "Ajoute un peu de moutarde ou de piri-piri si tu veux, avec une boisson fraîche ; vérifie que le porc est bien cuit."
+     ],
+     "q": "Quel est le meilleur sandwich que tu aies mangé ?",
+     "c": "Fais mariner aujourd'hui de fines tranches de viande ou de champignons à l'ail et au vin, et glisse-les dans un petit pain."
+    },
+    "it": {
+     "t": "Bifana",
+     "g": "Conoscere il semplice e gustoso panino di maiale portoghese.",
+     "p": [
+      "La bifana è una fettina sottile di maiale marinata con aglio, vino bianco e spezie, cotta e servita in un panino croccante.",
+      "È un classico di caffè e tavole calde in tutto il Portogallo; la versione di Vendas Novas è spesso molto lodata.",
+      "Aggiungi un po' di senape o piri-piri se vuoi e gustala con una bibita fresca; controlla che il maiale sia ben cotto."
+     ],
+     "q": "Qual è il miglior panino che tu abbia mai mangiato?",
+     "c": "Marina oggi fettine sottili di carne o di funghi con aglio e vino e mettile in un panino."
+    },
+    "pt": {
+     "t": "Bifana",
+     "g": "Conhecer a simples e saborosa sandes de porco portuguesa.",
+     "p": [
+      "A bifana é um bife fino de porco marinado em alho, vinho branco e especiarias, cozinhado e servido num pão estaladiço.",
+      "É um clássico de cafés e casas de pasto por todo o país; a versão de Vendas Novas é muito elogiada.",
+      "Junta um pouco de mostarda ou piri-piri se quiseres, com uma bebida fresca; confirma que o porco está bem cozinhado."
+     ],
+     "q": "Qual é a melhor sandes que já comeste?",
+     "c": "Marina hoje fatias finas de carne ou cogumelos com alho e vinho e mete-as num pão."
+    },
+    "pt_BR": {
+     "t": "Bifana",
+     "g": "Conhecer o simples e saboroso sanduíche de porco português.",
+     "p": [
+      "A bifana é um bife fino de porco marinado com alho, vinho branco e temperos, cozido e servido num pão crocante.",
+      "É um clássico de cafés e lanchonetes em todo Portugal; a versão de Vendas Novas costuma ser muito elogiada.",
+      "Junte um pouco de mostarda ou piri-piri se quiser, com uma bebida gelada; confirme que a carne de porco está bem cozida."
+     ],
+     "q": "Qual é o melhor sanduíche que você já comeu?",
+     "c": "Marine hoje fatias finas de carne ou cogumelos com alho e vinho e coloque num pão."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hot dogs in America",
+     "g": "Follow the sausage in a bun from New York to Chicago.",
+     "p": [
+      "Sausages in rolls were sold from carts in New York in the late 1800s, and Coney Island made them a seaside favourite.",
+      "New York style often means mustard and sauerkraut; Chicago style piles on tomato, pickles, onion, relish and peppers, but no ketchup.",
+      "Hot dog carts are common and safe when the sausage is steaming hot and the vendor keeps it above a gentle heat."
+     ],
+     "q": "Which toppings would you put on your own hot dog?",
+     "c": "Build a hot dog today in New York or Chicago style, or invent your own."
+    },
+    "de": {
+     "t": "Hot Dogs in Amerika",
+     "g": "Der Wurst im Brötchen von New York bis Chicago folgen.",
+     "p": [
+      "Würstchen im Brötchen wurden Ende des 19. Jahrhunderts von Karren in New York verkauft; Coney Island machte sie zum Strandfavoriten.",
+      "Der New-Yorker Stil heißt oft Senf und Sauerkraut; Chicago-Stil türmt Tomate, Gurke, Zwiebel, Relish und Peperoni auf, aber keinen Ketchup.",
+      "Hotdog-Wagen sind verbreitet und sicher, wenn die Wurst dampfend heiß ist und der Verkäufer sie warm hält."
+     ],
+     "q": "Welche Beläge würdest du auf deinen eigenen Hot Dog tun?",
+     "c": "Bau dir heute einen Hot Dog im New-Yorker oder Chicagoer Stil oder erfinde deinen eigenen."
+    },
+    "es": {
+     "t": "Perritos calientes en EE. UU.",
+     "g": "Seguir la salchicha en pan de Nueva York a Chicago.",
+     "p": [
+      "Las salchichas en panecillo se vendían en carritos de Nueva York a finales del siglo XIX, y Coney Island las hizo favoritas junto al mar.",
+      "El estilo de Nueva York suele llevar mostaza y chucrut; el de Chicago apila tomate, pepinillo, cebolla, relish y pimientos, sin kétchup.",
+      "Los carritos son habituales y seguros si la salchicha está muy caliente y el vendedor la mantiene bien caliente."
+     ],
+     "q": "¿Qué ingredientes pondrías en tu propio perrito?",
+     "c": "Monta hoy un perrito al estilo de Nueva York o de Chicago, o inventa el tuyo."
+    },
+    "fr": {
+     "t": "Les hot-dogs américains",
+     "g": "Suivre la saucisse dans son pain, de New York à Chicago.",
+     "p": [
+      "Les saucisses en pain se vendaient sur des charrettes à New York à la fin du XIXe siècle ; Coney Island en a fait un favori du bord de mer.",
+      "Style new-yorkais : souvent moutarde et choucroute ; style Chicago : tomate, cornichon, oignon, relish et piments, mais pas de ketchup.",
+      "Les chariots sont courants et sûrs si la saucisse est bien chaude et que le vendeur la garde chaude."
+     ],
+     "q": "Quelles garnitures mettrais-tu sur ton propre hot-dog ?",
+     "c": "Compose aujourd'hui un hot-dog style New York ou Chicago, ou invente le tien."
+    },
+    "it": {
+     "t": "Gli hot dog americani",
+     "g": "Seguire la salsiccia nel panino da New York a Chicago.",
+     "p": [
+      "I panini con salsiccia si vendevano dai carretti di New York a fine Ottocento, e Coney Island li rese un classico del lungomare.",
+      "Lo stile newyorkese è spesso senape e crauti; quello di Chicago ha pomodoro, cetriolino, cipolla, relish e peperoncini, ma niente ketchup.",
+      "I carretti sono comuni e sicuri se la salsiccia è ben calda e il venditore la tiene calda."
+     ],
+     "q": "Quali condimenti metteresti sul tuo hot dog?",
+     "c": "Prepara oggi un hot dog in stile New York o Chicago, o inventane uno tuo."
+    },
+    "pt": {
+     "t": "Cachorros-quentes na América",
+     "g": "Seguir a salsicha no pão de Nova Iorque a Chicago.",
+     "p": [
+      "As salsichas em pão vendiam-se em carrinhos de Nova Iorque no fim do século XIX, e Coney Island tornou-as favoritas à beira-mar.",
+      "O estilo de Nova Iorque leva mostarda e chucrute; o de Chicago empilha tomate, pickles, cebola, relish e pimentos, mas sem ketchup.",
+      "Os carrinhos são comuns e seguros se a salsicha estiver bem quente e o vendedor a mantiver quente."
+     ],
+     "q": "Que ingredientes porias no teu cachorro-quente?",
+     "c": "Monta hoje um cachorro-quente ao estilo de Nova Iorque ou de Chicago, ou inventa o teu."
+    },
+    "pt_BR": {
+     "t": "Cachorro-quente na América",
+     "g": "Seguir a salsicha no pão de Nova York a Chicago.",
+     "p": [
+      "Salsichas no pão eram vendidas em carrinhos de Nova York no fim do século XIX, e Coney Island as tornou favoritas à beira-mar.",
+      "O estilo de Nova York costuma levar mostarda e chucrute; o de Chicago empilha tomate, picles, cebola, relish e pimentas, sem ketchup.",
+      "Os carrinhos são comuns e seguros se a salsicha estiver bem quente e o vendedor a mantiver quente."
+     ],
+     "q": "Quais ingredientes você colocaria no seu cachorro-quente?",
+     "c": "Monte hoje um cachorro-quente no estilo de Nova York ou de Chicago, ou invente o seu."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pretzels",
+     "g": "Compare German bakery pretzels with Philadelphia street pretzels.",
+     "p": [
+      "German Laugenbrezeln are dipped in a lye solution before baking, giving a dark, shiny crust and a distinct flavour.",
+      "In Philadelphia, soft pretzels are a street snack, often eaten with yellow mustard, and sold from carts and bakeries.",
+      "Pretzels are best fresh on the day; buy from a busy bakery or cart, and keep them dry in paper to stay chewy."
+     ],
+     "q": "Would you eat a pretzel plain, salted or with mustard?",
+     "c": "Try a soft pretzel with mustard or butter today and note the chewy crust."
+    },
+    "de": {
+     "t": "Brezeln",
+     "g": "Bäckerei-Brezeln aus Deutschland mit Straßenbrezeln aus Philadelphia vergleichen.",
+     "p": [
+      "Deutsche Laugenbrezeln werden vor dem Backen in Natronlauge getaucht; das gibt eine dunkle, glänzende Kruste und einen eigenen Geschmack.",
+      "In Philadelphia sind weiche Brezeln ein Straßensnack, oft mit gelbem Senf, von Karren und Bäckereien verkauft.",
+      "Brezeln sind am besten frisch vom selben Tag; kaufe sie bei einer gut besuchten Bäckerei oder am Karren und halte sie in Papier trocken."
+     ],
+     "q": "Isst du Brezeln lieber pur, gesalzen oder mit Senf?",
+     "c": "Probiere heute eine weiche Brezel mit Senf oder Butter und achte auf die zähe Kruste."
+    },
+    "es": {
+     "t": "Pretzels",
+     "g": "Comparar los pretzels de panadería alemanes con los callejeros de Filadelfia.",
+     "p": [
+      "Las Laugenbrezeln alemanas se bañan en una solución alcalina antes de hornearse, lo que da una corteza oscura, brillante y un sabor propio.",
+      "En Filadelfia los pretzels blandos son un aperitivo callejero, a menudo con mostaza amarilla, vendidos en carritos y panaderías.",
+      "Los pretzels están mejor frescos y del mismo día; cómpralos en una panadería concurrida y guárdalos en papel para que sigan tiernos."
+     ],
+     "q": "¿Comerías un pretzel solo, con sal o con mostaza?",
+     "c": "Prueba hoy un pretzel blando con mostaza o mantequilla y fíjate en su corteza correosa."
+    },
+    "fr": {
+     "t": "Les bretzels",
+     "g": "Comparer les bretzels de boulangerie allemands à ceux des rues de Philadelphie.",
+     "p": [
+      "Les Laugenbrezeln allemands sont plongés dans une solution alcaline avant cuisson, d'où une croûte foncée, brillante et un goût unique.",
+      "À Philadelphie, les bretzels mous sont un en-cas de rue, souvent avec de la moutarde jaune, vendus sur des chariots et en boulangerie.",
+      "Les bretzels sont meilleurs frais, le jour même ; achète-les dans une boulangerie très fréquentée et garde-les dans du papier."
+     ],
+     "q": "Mangerais-tu un bretzel nature, salé ou à la moutarde ?",
+     "c": "Goûte aujourd'hui un bretzel mou avec moutarde ou beurre et remarque sa croûte élastique."
+    },
+    "it": {
+     "t": "I pretzel",
+     "g": "Confrontare i pretzel da forno tedeschi con quelli di strada di Filadelfia.",
+     "p": [
+      "I Laugenbrezeln tedeschi si immergono in una soluzione alcalina prima della cottura: crosta scura e lucida e un sapore particolare.",
+      "A Filadelfia i pretzel morbidi sono uno snack di strada, spesso con senape gialla, venduti da carretti e panifici.",
+      "I pretzel sono migliori freschi, del giorno; comprali in un forno affollato e tienili nella carta per mantenerli morbidi."
+     ],
+     "q": "Mangeresti un pretzel semplice, salato o con la senape?",
+     "c": "Assaggia oggi un pretzel morbido con senape o burro e nota la crosta gommosa."
+    },
+    "pt": {
+     "t": "Pretzels",
+     "g": "Comparar os pretzels de padaria alemães com os de rua de Filadélfia.",
+     "p": [
+      "Os Laugenbrezeln alemães são mergulhados numa solução alcalina antes de cozer, o que dá uma crosta escura, brilhante e um sabor próprio.",
+      "Em Filadélfia, os pretzels macios são um petisco de rua, muitas vezes com mostarda amarela, vendidos em carrinhos e padarias.",
+      "Os pretzels são melhores frescos, do próprio dia; compra numa padaria concorrida e guarda-os em papel para ficarem macios."
+     ],
+     "q": "Comerias um pretzel simples, com sal ou com mostarda?",
+     "c": "Prova hoje um pretzel macio com mostarda ou manteiga e repara na crosta elástica."
+    },
+    "pt_BR": {
+     "t": "Pretzels",
+     "g": "Comparar os pretzels de padaria alemães com os de rua da Filadélfia.",
+     "p": [
+      "Os Laugenbrezeln alemães são mergulhados numa solução alcalina antes de assar, o que dá uma crosta escura, brilhante e um sabor próprio.",
+      "Na Filadélfia, os pretzels macios são um lanche de rua, muitas vezes com mostarda amarela, vendidos em carrinhos e padarias.",
+      "Pretzels são melhores frescos, do mesmo dia; compre numa padaria movimentada e guarde em papel para continuarem macios."
+     ],
+     "q": "Você comeria um pretzel puro, com sal ou com mostarda?",
+     "c": "Experimente hoje um pretzel macio com mostarda ou manteiga e note a crosta elástica."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food trucks",
+     "g": "See how mobile kitchens became a creative street food scene.",
+     "p": [
+      "Food trucks are kitchens on wheels that park at markets, festivals and busy streets, often with a short, focused menu.",
+      "Many serve fusion ideas, like tacos with new fillings, and let young cooks start a business with a small setup.",
+      "Check for a posted hygiene or licence notice, a clean serving window and a cook who handles money and food separately."
+     ],
+     "q": "What would your dream food truck sell?",
+     "c": "Sketch a menu of three dishes for your own food truck and give it a name."
+    },
+    "de": {
+     "t": "Foodtrucks",
+     "g": "Sehen, wie mobile Küchen zu einer kreativen Streetfood-Szene wurden.",
+     "p": [
+      "Foodtrucks sind Küchen auf Rädern, die auf Märkten, Festivals und belebten Straßen stehen, oft mit kleiner, klarer Karte.",
+      "Viele bieten Fusion-Ideen, etwa Tacos mit neuen Füllungen, und erlauben jungen Köchen einen Start mit kleinem Aufwand.",
+      "Achte auf einen Hygiene- oder Lizenzaushang, ein sauberes Ausgabefenster und Köche, die Geld und Essen getrennt anfassen."
+     ],
+     "q": "Was würde dein Traum-Foodtruck verkaufen?",
+     "c": "Skizziere heute eine Karte mit drei Gerichten für deinen eigenen Foodtruck und gib ihm einen Namen."
+    },
+    "es": {
+     "t": "Food trucks",
+     "g": "Ver cómo las cocinas móviles se volvieron una escena creativa de comida callejera.",
+     "p": [
+      "Los food trucks son cocinas sobre ruedas que se aparcan en mercados, festivales y calles animadas, con un menú corto y claro.",
+      "Muchos ofrecen cocina de fusión, como tacos con rellenos nuevos, y permiten a cocineros jóvenes empezar con poca inversión.",
+      "Fíjate en que haya un aviso de higiene o licencia, una ventanilla limpia y alguien que no maneje a la vez dinero y comida."
+     ],
+     "q": "¿Qué vendería tu food truck soñado?",
+     "c": "Dibuja hoy un menú de tres platos para tu propio food truck y ponle nombre."
+    },
+    "fr": {
+     "t": "Les food trucks",
+     "g": "Voir comment les cuisines mobiles sont devenues une scène créative.",
+     "p": [
+      "Les food trucks sont des cuisines sur roues garées sur des marchés, des festivals et des rues animées, avec une carte courte et claire.",
+      "Beaucoup proposent une cuisine fusion, comme des tacos aux garnitures nouvelles, et aident de jeunes cuisiniers à se lancer simplement.",
+      "Repère un affichage d'hygiène ou de licence, un comptoir propre et un cuisinier qui ne manipule pas l'argent et les aliments ensemble."
+     ],
+     "q": "Que vendrait ton food truck idéal ?",
+     "c": "Dessine aujourd'hui une carte de trois plats pour ton propre food truck et donne-lui un nom."
+    },
+    "it": {
+     "t": "I food truck",
+     "g": "Vedere come le cucine mobili sono diventate una scena creativa.",
+     "p": [
+      "I food truck sono cucine su ruote che si fermano in mercati, festival e strade animate, con un menu breve e chiaro.",
+      "Molti propongono cucina fusion, come tacos con ripieni nuovi, e permettono ai giovani cuochi di iniziare con poco.",
+      "Controlla un avviso di igiene o licenza, un banco pulito e un cuoco che non maneggia insieme soldi e cibo."
+     ],
+     "q": "Cosa venderebbe il tuo food truck dei sogni?",
+     "c": "Disegna oggi un menu di tre piatti per il tuo food truck e dagli un nome."
+    },
+    "pt": {
+     "t": "Food trucks",
+     "g": "Ver como as cozinhas móveis se tornaram uma cena criativa.",
+     "p": [
+      "Os food trucks são cozinhas sobre rodas que estacionam em mercados, festivais e ruas animadas, com uma ementa curta e clara.",
+      "Muitos servem cozinha de fusão, como tacos com recheios novos, e permitem a jovens cozinheiros começar com pouco.",
+      "Repara num aviso de higiene ou licença, num balcão limpo e num cozinheiro que não manuseia dinheiro e comida em simultâneo."
+     ],
+     "q": "O que venderia o teu food truck de sonho?",
+     "c": "Desenha hoje uma ementa de três pratos para o teu food truck e dá-lhe um nome."
+    },
+    "pt_BR": {
+     "t": "Food trucks",
+     "g": "Ver como as cozinhas móveis viraram uma cena criativa.",
+     "p": [
+      "Food trucks são cozinhas sobre rodas que estacionam em feiras, festivais e ruas movimentadas, com um cardápio curto e claro.",
+      "Muitos servem culinária fusão, como tacos com recheios novos, e permitem que jovens cozinheiros comecem com pouco.",
+      "Procure um aviso de higiene ou licença, um balcão limpo e um cozinheiro que não manuseia dinheiro e comida ao mesmo tempo."
+     ],
+     "q": "O que o seu food truck dos sonhos venderia?",
+     "c": "Desenhe hoje um cardápio de três pratos para o seu food truck e dê um nome a ele."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Jianbing",
+     "g": "Discover China's savoury crepe, a breakfast favourite.",
+     "p": [
+      "Jianbing is made on a round griddle: a thin batter, an egg, sauces and herbs, with a crispy cracker folded inside.",
+      "It is a popular breakfast across northern China, and Tianjin is often named as its home.",
+      "Watch the cook make it fresh and hot; ask for less chilli sauce if you are unsure, and eat it while it is still warm."
+     ],
+     "q": "What would you want inside a savoury crepe?",
+     "c": "Make a thin pancake with egg today and fold in something crunchy and fresh herbs."
+    },
+    "de": {
+     "t": "Jianbing",
+     "g": "Chinas herzhaften Crêpe entdecken, ein beliebtes Frühstück.",
+     "p": [
+      "Jianbing entsteht auf einer runden Platte: dünner Teig, ein Ei, Soßen und Kräuter, dazu ein knuspriger Cracker im Inneren.",
+      "Es ist ein beliebtes Frühstück im Norden Chinas, und Tianjin gilt oft als Heimat.",
+      "Sieh zu, wie frisch und heiß gebacken wird; bitte bei Unsicherheit um weniger Chilisoße und iss es noch warm."
+     ],
+     "q": "Was würdest du gern in einen herzhaften Crêpe füllen?",
+     "c": "Back heute einen dünnen Pfannkuchen mit Ei und falte etwas Knuspriges und frische Kräuter hinein."
+    },
+    "es": {
+     "t": "Jianbing",
+     "g": "Descubrir la crepe salada de China, un desayuno favorito.",
+     "p": [
+      "El jianbing se hace en una plancha redonda: masa fina, un huevo, salsas y hierbas, con una galleta crujiente doblada dentro.",
+      "Es un desayuno popular en el norte de China, y Tianjin suele citarse como su cuna.",
+      "Mira cómo lo preparan fresco y caliente; pide menos salsa picante si dudas, y cómelo todavía templado."
+     ],
+     "q": "¿Qué te gustaría llevar dentro de una crepe salada?",
+     "c": "Haz hoy una tortita fina con huevo y dobla dentro algo crujiente y hierbas frescas."
+    },
+    "fr": {
+     "t": "Le jianbing",
+     "g": "Découvrir la crêpe salée chinoise, un petit-déjeuner favori.",
+     "p": [
+      "Le jianbing se fait sur une plaque ronde : pâte fine, un œuf, des sauces et des herbes, avec une galette croustillante pliée à l'intérieur.",
+      "C'est un petit-déjeuner populaire dans le nord de la Chine, et Tianjin est souvent citée comme son berceau.",
+      "Regarde le cuisinier le préparer frais et chaud ; demande moins de sauce pimentée si tu hésites, et mange-le encore tiède."
+     ],
+     "q": "Que voudrais-tu dans une crêpe salée ?",
+     "c": "Fais aujourd'hui une crêpe fine à l'œuf et plie-y quelque chose de croquant et des herbes fraîches."
+    },
+    "it": {
+     "t": "Jianbing",
+     "g": "Scoprire la crêpe salata cinese, una colazione amata.",
+     "p": [
+      "Il jianbing si fa su una piastra rotonda: pastella sottile, un uovo, salse ed erbe, con un cracker croccante piegato dentro.",
+      "È una colazione popolare nel nord della Cina, e Tianjin è spesso indicata come la sua patria.",
+      "Guarda il cuoco prepararlo fresco e caldo; chiedi meno salsa piccante se hai dubbi, e mangialo ancora tiepido."
+     ],
+     "q": "Cosa vorresti dentro una crêpe salata?",
+     "c": "Fai oggi una crêpe sottile con uovo e piega dentro qualcosa di croccante ed erbe fresche."
+    },
+    "pt": {
+     "t": "Jianbing",
+     "g": "Descobrir a crepe salgada da China, um pequeno-almoço favorito.",
+     "p": [
+      "O jianbing faz-se numa chapa redonda: massa fina, um ovo, molhos e ervas, com uma bolacha estaladiça dobrada no interior.",
+      "É um pequeno-almoço popular no norte da China, e Tianjin é muitas vezes apontada como a sua terra.",
+      "Vê o cozinheiro prepará-lo fresco e quente; pede menos molho picante se tiveres dúvidas e come-o ainda morno."
+     ],
+     "q": "O que gostarias de ter dentro de uma crepe salgada?",
+     "c": "Faz hoje uma panqueca fina com ovo e dobra lá dentro algo estaladiço e ervas frescas."
+    },
+    "pt_BR": {
+     "t": "Jianbing",
+     "g": "Descobrir a crepe salgada da China, um café da manhã favorito.",
+     "p": [
+      "O jianbing é feito numa chapa redonda: massa fina, um ovo, molhos e ervas, com uma bolacha crocante dobrada por dentro.",
+      "É um café da manhã popular no norte da China, e Tianjin costuma ser apontada como sua terra.",
+      "Veja o cozinheiro fazer na hora e bem quente; peça menos molho de pimenta se tiver dúvida e coma ainda morno."
+     ],
+     "q": "O que você gostaria de ter dentro de uma crepe salgada?",
+     "c": "Faça hoje uma panqueca fina com ovo e dobre dentro algo crocante e ervas frescas."
+    }
+   }
+  }
+ ]
+}

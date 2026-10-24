@@ -1,0 +1,835 @@
+{
+ "topic": "astronomy",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The celestial sphere",
+     "g": "Picture the sky as a huge dome around you and learn its key landmarks.",
+     "p": [
+      "Imagine every star painted on a giant sphere around Earth: a handy map, even though stars are at very different distances.",
+      "The horizon is the edge of your view, and the zenith is the point straight above your head.",
+      "Earth's axis points to the celestial poles; the celestial equator is Earth's equator projected onto the sky."
+     ],
+     "q": "When you look up, which part of the sky do you usually look at first?",
+     "c": "Tonight, point to the zenith and to the horizon, then name the compass direction you face."
+    },
+    "de": {
+     "t": "Die Himmelskugel",
+     "g": "Stell dir den Himmel als riesige Kuppel um dich vor und lerne ihre wichtigsten Orientierungspunkte.",
+     "p": [
+      "Denk dir alle Sterne auf eine riesige Kugel um die Erde gemalt: ein praktisches Modell, auch wenn die Sterne verschieden weit entfernt sind.",
+      "Der Horizont ist der Rand deiner Sicht, der Zenit der Punkt genau über deinem Kopf.",
+      "Die Erdachse zeigt zu den Himmelspolen; der Himmelsäquator ist der an den Himmel projizierte Erdäquator."
+     ],
+     "q": "Welchen Teil des Himmels betrachtest du meistens zuerst, wenn du nach oben schaust?",
+     "c": "Zeige heute Abend auf den Zenit und den Horizont und nenne die Himmelsrichtung, in die du schaust."
+    },
+    "es": {
+     "t": "La esfera celeste",
+     "g": "Imagina el cielo como una gran cúpula a tu alrededor y aprende sus puntos de referencia.",
+     "p": [
+      "Imagina todas las estrellas pintadas en una esfera gigante alrededor de la Tierra: un mapa útil, aunque estén a distancias muy distintas.",
+      "El horizonte es el borde de tu vista y el cenit es el punto justo sobre tu cabeza.",
+      "El eje de la Tierra apunta a los polos celestes; el ecuador celeste es el ecuador terrestre proyectado en el cielo."
+     ],
+     "q": "Cuando miras hacia arriba, ¿qué parte del cielo observas primero?",
+     "c": "Esta noche señala el cenit y el horizonte, y nombra el punto cardinal hacia el que miras."
+    },
+    "fr": {
+     "t": "La sphère céleste",
+     "g": "Imagine le ciel comme un grand dôme autour de toi et apprends ses repères essentiels.",
+     "p": [
+      "Imagine toutes les étoiles peintes sur une sphère géante autour de la Terre : une carte pratique, même si les distances diffèrent.",
+      "L'horizon est la limite de ta vue et le zénith est le point juste au-dessus de ta tête.",
+      "L'axe de la Terre pointe vers les pôles célestes ; l'équateur céleste est l'équateur terrestre projeté sur le ciel."
+     ],
+     "q": "Quand tu lèves les yeux, quelle partie du ciel regardes-tu en premier ?",
+     "c": "Ce soir, montre le zénith et l'horizon, puis nomme le point cardinal vers lequel tu regardes."
+    },
+    "it": {
+     "t": "La sfera celeste",
+     "g": "Immagina il cielo come una grande cupola intorno a te e scopri i suoi punti di riferimento.",
+     "p": [
+      "Immagina tutte le stelle dipinte su una sfera gigante attorno alla Terra: una mappa comoda, anche se le distanze sono molto diverse.",
+      "L'orizzonte è il bordo della tua vista e lo zenit è il punto esattamente sopra la tua testa.",
+      "L'asse terrestre punta ai poli celesti; l'equatore celeste è l'equatore terrestre proiettato sul cielo."
+     ],
+     "q": "Quando guardi in alto, quale parte del cielo osservi per prima?",
+     "c": "Stasera indica lo zenit e l'orizzonte, poi dì verso quale punto cardinale stai guardando."
+    },
+    "pt": {
+     "t": "A esfera celeste",
+     "g": "Imagina o céu como uma grande cúpula à tua volta e aprende os seus pontos de referência.",
+     "p": [
+      "Imagina todas as estrelas pintadas numa esfera gigante à volta da Terra: um mapa útil, mesmo que as distâncias sejam muito diferentes.",
+      "O horizonte é o limite da tua vista e o zénite é o ponto mesmo por cima da tua cabeça.",
+      "O eixo da Terra aponta para os polos celestes; o equador celeste é o equador terrestre projetado no céu."
+     ],
+     "q": "Quando olhas para cima, que parte do céu observas primeiro?",
+     "c": "Esta noite, aponta para o zénite e para o horizonte e diz o ponto cardeal para onde olhas."
+    },
+    "pt_BR": {
+     "t": "A esfera celeste",
+     "g": "Imagine o céu como uma grande cúpula ao seu redor e aprenda seus pontos de referência.",
+     "p": [
+      "Imagine todas as estrelas pintadas numa esfera gigante em volta da Terra: um mapa útil, mesmo que as distâncias sejam bem diferentes.",
+      "O horizonte é o limite da sua vista e o zênite é o ponto bem em cima da sua cabeça.",
+      "O eixo da Terra aponta para os polos celestes; o equador celeste é o equador terrestre projetado no céu."
+     ],
+     "q": "Quando você olha para cima, que parte do céu observa primeiro?",
+     "c": "Hoje à noite, aponte para o zênite e para o horizonte e diga o ponto cardeal para onde você olha."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why stars circle the pole",
+     "g": "See how Earth's rotation makes the whole sky appear to turn around a fixed point.",
+     "p": [
+      "Because Earth spins, stars seem to circle the celestial pole once about every 23 hours 56 minutes.",
+      "In the north, stars turn slowly around Polaris; in the south they circle a point near the Southern Cross.",
+      "Long-exposure photos show this as star trails: concentric arcs around the pole."
+     ],
+     "q": "Have you ever noticed a star moving from one side of a window or tree to the other?",
+     "c": "Note a star beside a roof or tree, then check again an hour later: it has shifted."
+    },
+    "de": {
+     "t": "Warum Sterne um den Pol kreisen",
+     "g": "Erkenne, wie die Erddrehung den ganzen Himmel scheinbar um einen festen Punkt dreht.",
+     "p": [
+      "Weil sich die Erde dreht, kreisen die Sterne etwa alle 23 Stunden und 56 Minuten scheinbar um den Himmelspol.",
+      "Im Norden drehen sie sich langsam um den Polarstern; im Süden um einen Punkt nahe dem Kreuz des Südens.",
+      "Langzeitbelichtungen zeigen das als Sternspuren: Kreisbögen um den Pol."
+     ],
+     "q": "Ist dir schon einmal aufgefallen, wie ein Stern von einer Seite des Fensters zur anderen wandert?",
+     "c": "Merke dir einen Stern neben Dach oder Baum und schau eine Stunde später nach: Er ist weitergewandert."
+    },
+    "es": {
+     "t": "Por qué las estrellas giran en torno al polo",
+     "g": "Descubre cómo la rotación de la Tierra hace girar todo el cielo alrededor de un punto fijo.",
+     "p": [
+      "Como la Tierra gira, las estrellas parecen dar una vuelta al polo celeste cada 23 horas y 56 minutos aproximadamente.",
+      "En el norte giran despacio alrededor de Polaris; en el sur, alrededor de un punto cercano a la Cruz del Sur.",
+      "Las fotos de larga exposición lo muestran como estelas: arcos concéntricos alrededor del polo."
+     ],
+     "q": "¿Alguna vez has notado una estrella moverse de un lado a otro de una ventana o un árbol?",
+     "c": "Anota una estrella junto a un tejado o árbol y mírala una hora después: se habrá desplazado."
+    },
+    "fr": {
+     "t": "Pourquoi les étoiles tournent autour du pôle",
+     "g": "Vois comment la rotation de la Terre fait tourner tout le ciel autour d'un point fixe.",
+     "p": [
+      "Comme la Terre tourne, les étoiles semblent faire un tour autour du pôle céleste en 23 heures et 56 minutes environ.",
+      "Au nord, elles tournent lentement autour de Polaris ; au sud, autour d'un point proche de la Croix du Sud.",
+      "Les photos à longue pose le montrent sous forme de traînées : des arcs concentriques autour du pôle."
+     ],
+     "q": "As-tu déjà remarqué une étoile passer d'un côté à l'autre d'une fenêtre ou d'un arbre ?",
+     "c": "Repère une étoile près d'un toit ou d'un arbre, puis regarde une heure plus tard : elle s'est déplacée."
+    },
+    "it": {
+     "t": "Perché le stelle girano attorno al polo",
+     "g": "Scopri come la rotazione terrestre fa ruotare tutto il cielo attorno a un punto fisso.",
+     "p": [
+      "Poiché la Terra ruota, le stelle sembrano girare attorno al polo celeste in circa 23 ore e 56 minuti.",
+      "A nord ruotano lentamente attorno alla Stella Polare; a sud attorno a un punto vicino alla Croce del Sud.",
+      "Le foto a lunga esposizione lo mostrano come scie stellari: archi concentrici attorno al polo."
+     ],
+     "q": "Hai mai notato una stella spostarsi da un lato all'altro di una finestra o di un albero?",
+     "c": "Segna una stella vicino a un tetto o un albero e ricontrolla dopo un'ora: si sarà spostata."
+    },
+    "pt": {
+     "t": "Porque as estrelas giram em torno do polo",
+     "g": "Descobre como a rotação da Terra faz o céu inteiro girar em torno de um ponto fixo.",
+     "p": [
+      "Como a Terra roda, as estrelas parecem dar uma volta ao polo celeste em cerca de 23 horas e 56 minutos.",
+      "No norte giram devagar à volta da Polar; no sul, à volta de um ponto perto do Cruzeiro do Sul.",
+      "As fotografias de longa exposição mostram isto como rastos de estrelas: arcos concêntricos à volta do polo."
+     ],
+     "q": "Já reparaste numa estrela a deslocar-se de um lado ao outro de uma janela ou de uma árvore?",
+     "c": "Regista uma estrela junto a um telhado ou árvore e volta a olhar uma hora depois: mudou de lugar."
+    },
+    "pt_BR": {
+     "t": "Por que as estrelas giram em torno do polo",
+     "g": "Descubra como a rotação da Terra faz o céu inteiro girar em torno de um ponto fixo.",
+     "p": [
+      "Como a Terra gira, as estrelas parecem dar uma volta em torno do polo celeste em cerca de 23 horas e 56 minutos.",
+      "No norte elas giram devagar em torno da Polar; no sul, em torno de um ponto perto do Cruzeiro do Sul.",
+      "Fotos de longa exposição mostram isso como rastros de estrelas: arcos concêntricos em volta do polo."
+     ],
+     "q": "Você já reparou em uma estrela se movendo de um lado ao outro de uma janela ou de uma árvore?",
+     "c": "Anote uma estrela perto de um telhado ou árvore e olhe de novo uma hora depois: ela mudou de lugar."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The ecliptic, the Sun's path",
+     "g": "Learn the yearly track of the Sun among the stars, where the planets also travel.",
+     "p": [
+      "The ecliptic is the apparent path of the Sun across the sky through the year, as Earth orbits it.",
+      "The Moon and all the planets stay close to this line because the Solar System is roughly flat like a plate.",
+      "So if you spot a bright star-like point near the ecliptic, it may well be a planet."
+     ],
+     "q": "Have you ever watched the Sun or Moon rise in different places during the year?",
+     "c": "At dusk, picture a curved line from where the Sun set up across the sky: that is roughly the ecliptic."
+    },
+    "de": {
+     "t": "Die Ekliptik, der Weg der Sonne",
+     "g": "Lerne die jährliche Bahn der Sonne vor den Sternen kennen, auf der auch die Planeten wandern.",
+     "p": [
+      "Die Ekliptik ist der scheinbare Weg der Sonne durchs Jahr, weil die Erde sie umkreist.",
+      "Mond und Planeten bleiben nahe dieser Linie, weil das Sonnensystem etwa so flach ist wie ein Teller.",
+      "Ein heller sternartiger Punkt nahe der Ekliptik kann also gut ein Planet sein."
+     ],
+     "q": "Hast du schon beobachtet, dass Sonne oder Mond im Lauf des Jahres an verschiedenen Stellen aufgehen?",
+     "c": "Stell dir in der Dämmerung eine Bogenlinie vom Sonnenuntergang über den Himmel vor: Das ist ungefähr die Ekliptik."
+    },
+    "es": {
+     "t": "La eclíptica, el camino del Sol",
+     "g": "Conoce el recorrido anual del Sol entre las estrellas, por donde también viajan los planetas.",
+     "p": [
+      "La eclíptica es el camino aparente del Sol por el cielo a lo largo del año, porque la Tierra lo orbita.",
+      "La Luna y los planetas se mantienen cerca de esa línea porque el Sistema Solar es casi plano, como un plato.",
+      "Así, un punto brillante parecido a una estrella cerca de la eclíptica bien puede ser un planeta."
+     ],
+     "q": "¿Has visto alguna vez salir el Sol o la Luna por lugares distintos a lo largo del año?",
+     "c": "Al anochecer, imagina una línea curva desde donde se puso el Sol hacia arriba: es más o menos la eclíptica."
+    },
+    "fr": {
+     "t": "L'écliptique, la route du Soleil",
+     "g": "Découvre le trajet annuel du Soleil parmi les étoiles, là où voyagent aussi les planètes.",
+     "p": [
+      "L'écliptique est le chemin apparent du Soleil dans le ciel au fil de l'année, car la Terre tourne autour de lui.",
+      "La Lune et les planètes restent près de cette ligne car le Système solaire est à peu près plat, comme une assiette.",
+      "Un point brillant semblable à une étoile près de l'écliptique peut donc très bien être une planète."
+     ],
+     "q": "As-tu déjà vu le Soleil ou la Lune se lever à des endroits différents au cours de l'année ?",
+     "c": "Au crépuscule, imagine une courbe depuis l'endroit où le Soleil s'est couché : c'est à peu près l'écliptique."
+    },
+    "it": {
+     "t": "L'eclittica, il cammino del Sole",
+     "g": "Scopri il percorso annuale del Sole fra le stelle, lungo il quale viaggiano anche i pianeti.",
+     "p": [
+      "L'eclittica è il cammino apparente del Sole nel cielo durante l'anno, perché la Terra gli gira intorno.",
+      "Luna e pianeti restano vicini a questa linea perché il Sistema Solare è quasi piatto, come un piatto.",
+      "Quindi un punto luminoso simile a una stella vicino all'eclittica può benissimo essere un pianeta."
+     ],
+     "q": "Hai mai visto il Sole o la Luna sorgere in punti diversi nel corso dell'anno?",
+     "c": "Al crepuscolo immagina una linea curva dal punto del tramonto verso l'alto: è più o meno l'eclittica."
+    },
+    "pt": {
+     "t": "A eclítica, o caminho do Sol",
+     "g": "Conhece o percurso anual do Sol entre as estrelas, por onde também viajam os planetas.",
+     "p": [
+      "A eclítica é o caminho aparente do Sol no céu ao longo do ano, porque a Terra o orbita.",
+      "A Lua e os planetas ficam perto desta linha porque o Sistema Solar é quase plano, como um prato.",
+      "Assim, um ponto brilhante parecido com uma estrela perto da eclítica pode muito bem ser um planeta."
+     ],
+     "q": "Já viste o Sol ou a Lua nascer em locais diferentes ao longo do ano?",
+     "c": "Ao anoitecer, imagina uma linha curva desde onde o Sol se pôs para cima: é mais ou menos a eclítica."
+    },
+    "pt_BR": {
+     "t": "A eclíptica, o caminho do Sol",
+     "g": "Conheça o percurso anual do Sol entre as estrelas, por onde os planetas também viajam.",
+     "p": [
+      "A eclíptica é o caminho aparente do Sol no céu ao longo do ano, porque a Terra gira em torno dele.",
+      "A Lua e os planetas ficam perto dessa linha porque o Sistema Solar é quase plano, como um prato.",
+      "Assim, um ponto brilhante parecido com uma estrela perto da eclíptica pode muito bem ser um planeta."
+     ],
+     "q": "Você já viu o Sol ou a Lua nascerem em lugares diferentes ao longo do ano?",
+     "c": "Ao anoitecer, imagine uma linha curva de onde o Sol se pôs para cima: é mais ou menos a eclíptica."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Zodiac constellations",
+     "g": "Meet the star groups along the ecliptic, seen with an astronomer's eyes.",
+     "p": [
+      "The zodiac is the band of constellations the Sun, Moon and planets pass through, such as Taurus, Leo and Scorpius.",
+      "Astronomically there are 13 constellations on the ecliptic; Ophiuchus is the one often forgotten.",
+      "Which zodiac constellations are up at night depends on the season, because the Sun hides those near it."
+     ],
+     "q": "Do you know which constellation the Moon was in the last time you noticed it?",
+     "c": "Find the Moon tonight and note which bright star or planet is nearest to it."
+    },
+    "de": {
+     "t": "Tierkreissternbilder",
+     "g": "Lerne die Sternbilder entlang der Ekliptik mit dem Blick einer Astronomin oder eines Astronomen kennen.",
+     "p": [
+      "Der Tierkreis ist das Band von Sternbildern, durch das Sonne, Mond und Planeten ziehen, etwa Stier, Löwe und Skorpion.",
+      "Astronomisch liegen 13 Sternbilder auf der Ekliptik; der Schlangenträger wird oft vergessen.",
+      "Welche davon nachts sichtbar sind, hängt von der Jahreszeit ab, denn die Sonne verdeckt die in ihrer Nähe."
+     ],
+     "q": "Weißt du, in welchem Sternbild der Mond stand, als du ihn zuletzt bemerkt hast?",
+     "c": "Suche heute Abend den Mond und notiere, welcher helle Stern oder Planet ihm am nächsten steht."
+    },
+    "es": {
+     "t": "Constelaciones del zodiaco",
+     "g": "Conoce los grupos de estrellas a lo largo de la eclíptica, vistos con ojos de astrónomo.",
+     "p": [
+      "El zodiaco es la franja de constelaciones por la que pasan el Sol, la Luna y los planetas, como Tauro, Leo y Escorpio.",
+      "Astronómicamente hay 13 constelaciones en la eclíptica; Ofiuco es la que suele olvidarse.",
+      "Cuáles se ven de noche depende de la estación, porque el Sol oculta las que están cerca de él."
+     ],
+     "q": "¿Sabes en qué constelación estaba la Luna la última vez que la miraste?",
+     "c": "Busca la Luna esta noche y anota qué estrella o planeta brillante tiene más cerca."
+    },
+    "fr": {
+     "t": "Les constellations du zodiaque",
+     "g": "Découvre les groupes d'étoiles le long de l'écliptique, avec un regard d'astronome.",
+     "p": [
+      "Le zodiaque est la bande de constellations que traversent le Soleil, la Lune et les planètes : Taureau, Lion, Scorpion...",
+      "Astronomiquement, 13 constellations se trouvent sur l'écliptique ; Ophiuchus est celle qu'on oublie souvent.",
+      "Celles visibles la nuit dépendent de la saison, car le Soleil cache celles qui sont près de lui."
+     ],
+     "q": "Sais-tu dans quelle constellation se trouvait la Lune la dernière fois que tu l'as regardée ?",
+     "c": "Trouve la Lune ce soir et note quelle étoile ou planète brillante est la plus proche."
+    },
+    "it": {
+     "t": "Le costellazioni zodiacali",
+     "g": "Conosci i gruppi di stelle lungo l'eclittica, visti con gli occhi di un astronomo.",
+     "p": [
+      "Lo zodiaco è la fascia di costellazioni attraversata da Sole, Luna e pianeti, come Toro, Leone e Scorpione.",
+      "Astronomicamente le costellazioni sull'eclittica sono 13; l'Ofiuco è quella che spesso si dimentica.",
+      "Quali si vedono di notte dipende dalla stagione, perché il Sole nasconde quelle vicine a lui."
+     ],
+     "q": "Sai in quale costellazione si trovava la Luna l'ultima volta che l'hai guardata?",
+     "c": "Trova la Luna stasera e annota quale stella o pianeta luminoso le è più vicino."
+    },
+    "pt": {
+     "t": "Constelações do zodíaco",
+     "g": "Conhece os grupos de estrelas ao longo da eclítica, vistos com olhos de astrónomo.",
+     "p": [
+      "O zodíaco é a faixa de constelações por onde passam o Sol, a Lua e os planetas, como Touro, Leão e Escorpião.",
+      "Astronomicamente há 13 constelações na eclítica; o Serpentário é a que muitas vezes se esquece.",
+      "As visíveis à noite dependem da estação, porque o Sol esconde as que estão perto dele."
+     ],
+     "q": "Sabes em que constelação estava a Lua da última vez que olhaste para ela?",
+     "c": "Procura a Lua esta noite e regista que estrela ou planeta brilhante está mais perto dela."
+    },
+    "pt_BR": {
+     "t": "Constelações do zodíaco",
+     "g": "Conheça os grupos de estrelas ao longo da eclíptica, vistos com olhos de astrônomo.",
+     "p": [
+      "O zodíaco é a faixa de constelações por onde passam o Sol, a Lua e os planetas, como Touro, Leão e Escorpião.",
+      "Astronomicamente há 13 constelações na eclíptica; Ofiúco é a que muita gente esquece.",
+      "As visíveis à noite dependem da estação, porque o Sol esconde as que estão perto dele."
+     ],
+     "q": "Você sabe em que constelação a Lua estava na última vez que olhou para ela?",
+     "c": "Procure a Lua hoje à noite e anote qual estrela ou planeta brilhante está mais perto dela."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mercury, the swift planet",
+     "g": "Meet the smallest planet, which races around the Sun and hides in twilight.",
+     "p": [
+      "Mercury is only slightly bigger than our Moon and circles the Sun in just 88 Earth days.",
+      "Its surface is covered in craters, with very hot days and freezing nights because it has almost no air.",
+      "It always stays close to the Sun in our sky, so look low near the horizon soon after sunset or before sunrise."
+     ],
+     "q": "Have you ever tried to spot a planet low on the horizon at twilight?",
+     "c": "Find a spot with a clear low horizon and watch the twilight glow for a bright point; never use binoculars until the Sun is fully set."
+    },
+    "de": {
+     "t": "Merkur, der flinke Planet",
+     "g": "Lerne den kleinsten Planeten kennen, der um die Sonne rast und sich in der Dämmerung versteckt.",
+     "p": [
+      "Merkur ist nur wenig größer als unser Mond und umkreist die Sonne in nur 88 Erdentagen.",
+      "Seine Oberfläche ist voller Krater, mit sehr heißen Tagen und eiskalten Nächten, da er kaum Atmosphäre hat.",
+      "Er bleibt am Himmel immer nahe der Sonne: Schau tief am Horizont kurz nach Sonnenuntergang oder vor Sonnenaufgang."
+     ],
+     "q": "Hast du schon einmal versucht, in der Dämmerung einen Planeten tief am Horizont zu entdecken?",
+     "c": "Such dir einen Platz mit freiem Horizont und halte in der Dämmerung nach einem hellen Punkt Ausschau; Fernglas erst nach Sonnenuntergang."
+    },
+    "es": {
+     "t": "Mercurio, el planeta veloz",
+     "g": "Conoce al planeta más pequeño, que corre alrededor del Sol y se esconde en el crepúsculo.",
+     "p": [
+      "Mercurio es solo un poco más grande que nuestra Luna y rodea el Sol en apenas 88 días terrestres.",
+      "Su superficie está llena de cráteres, con días muy calurosos y noches gélidas porque casi no tiene atmósfera.",
+      "Siempre queda cerca del Sol en nuestro cielo: busca bajo el horizonte poco después del ocaso o antes del amanecer."
+     ],
+     "q": "¿Has intentado alguna vez localizar un planeta bajo en el horizonte al anochecer?",
+     "c": "Busca un lugar con horizonte despejado y vigila el crepúsculo por si ves un punto brillante; usa prismáticos solo con el Sol ya puesto."
+    },
+    "fr": {
+     "t": "Mercure, la planète rapide",
+     "g": "Fais connaissance avec la plus petite planète, qui file autour du Soleil et se cache au crépuscule.",
+     "p": [
+      "Mercure est à peine plus grosse que notre Lune et fait le tour du Soleil en seulement 88 jours terrestres.",
+      "Sa surface est criblée de cratères, avec des jours brûlants et des nuits glaciales car elle n'a presque pas d'atmosphère.",
+      "Elle reste toujours près du Soleil dans notre ciel : cherche bas sur l'horizon juste après le coucher ou avant le lever du Soleil."
+     ],
+     "q": "As-tu déjà essayé de repérer une planète basse sur l'horizon au crépuscule ?",
+     "c": "Choisis un endroit à l'horizon dégagé et guette un point brillant au crépuscule ; jumelles seulement une fois le Soleil bien couché."
+    },
+    "it": {
+     "t": "Mercurio, il pianeta veloce",
+     "g": "Conosci il pianeta più piccolo, che corre attorno al Sole e si nasconde nel crepuscolo.",
+     "p": [
+      "Mercurio è solo un po' più grande della nostra Luna e gira attorno al Sole in appena 88 giorni terrestri.",
+      "La superficie è piena di crateri, con giorni caldissimi e notti gelide perché ha quasi nessuna atmosfera.",
+      "Resta sempre vicino al Sole nel nostro cielo: cercalo basso all'orizzonte subito dopo il tramonto o prima dell'alba."
+     ],
+     "q": "Hai mai provato a individuare un pianeta basso sull'orizzonte al crepuscolo?",
+     "c": "Scegli un posto con orizzonte libero e cerca un punto luminoso nel crepuscolo; binocolo solo a Sole completamente tramontato."
+    },
+    "pt": {
+     "t": "Mercúrio, o planeta veloz",
+     "g": "Conhece o menor planeta, que corre à volta do Sol e se esconde no crepúsculo.",
+     "p": [
+      "Mercúrio é só um pouco maior do que a nossa Lua e dá a volta ao Sol em apenas 88 dias terrestres.",
+      "A superfície está cheia de crateras, com dias muito quentes e noites gélidas porque quase não tem atmosfera.",
+      "Fica sempre perto do Sol no nosso céu: procura junto ao horizonte pouco depois do pôr do Sol ou antes do nascer."
+     ],
+     "q": "Já tentaste localizar um planeta baixo no horizonte ao crepúsculo?",
+     "c": "Escolhe um local com horizonte livre e procura um ponto brilhante no crepúsculo; binóculos só com o Sol já posto."
+    },
+    "pt_BR": {
+     "t": "Mercúrio, o planeta veloz",
+     "g": "Conheça o menor planeta, que corre em volta do Sol e se esconde no crepúsculo.",
+     "p": [
+      "Mercúrio é só um pouco maior que a nossa Lua e dá a volta no Sol em apenas 88 dias terrestres.",
+      "A superfície está cheia de crateras, com dias muito quentes e noites geladas porque quase não tem atmosfera.",
+      "Ele fica sempre perto do Sol no nosso céu: procure rente ao horizonte logo após o pôr do sol ou antes do nascer."
+     ],
+     "q": "Você já tentou localizar um planeta baixo no horizonte ao anoitecer?",
+     "c": "Escolha um lugar com horizonte livre e procure um ponto brilhante no crepúsculo; binóculos só com o Sol já posto."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Venus, the evening star",
+     "g": "Discover the brightest planet, shining at dusk or dawn behind thick clouds.",
+     "p": [
+      "Venus is the brightest planet because thick clouds reflect lots of sunlight, and it is close to us.",
+      "Its air is mostly carbon dioxide and its surface is the hottest of any planet, hotter than Mercury.",
+      "It is never far from the Sun, so we see it as an evening star after sunset or a morning star before sunrise."
+     ],
+     "q": "Have you ever noticed a very bright light in the west after sunset?",
+     "c": "When Venus is visible, look for a steady, very bright white point low in the twilight sky."
+    },
+    "de": {
+     "t": "Venus, der Abendstern",
+     "g": "Entdecke den hellsten Planeten, der hinter dichten Wolken in der Abend- oder Morgendämmerung leuchtet.",
+     "p": [
+      "Venus ist der hellste Planet, weil dichte Wolken viel Sonnenlicht zurückwerfen und sie uns nahe ist.",
+      "Ihre Atmosphäre besteht fast nur aus Kohlendioxid, und ihre Oberfläche ist heißer als die jedes anderen Planeten, sogar als Merkur.",
+      "Sie entfernt sich nie weit von der Sonne und ist Abendstern nach Sonnenuntergang oder Morgenstern vor Sonnenaufgang."
+     ],
+     "q": "Ist dir schon einmal ein sehr helles Licht im Westen nach Sonnenuntergang aufgefallen?",
+     "c": "Wenn Venus sichtbar ist, suche in der Dämmerung nach einem ruhigen, sehr hellen weißen Punkt tief am Himmel."
+    },
+    "es": {
+     "t": "Venus, el lucero vespertino",
+     "g": "Descubre el planeta más brillante, que luce al anochecer o al amanecer tras densas nubes.",
+     "p": [
+      "Venus es el planeta más brillante porque sus densas nubes reflejan mucha luz solar y está cerca de nosotros.",
+      "Su aire es sobre todo dióxido de carbono y su superficie es la más caliente de todos los planetas, más que Mercurio.",
+      "Nunca se aleja mucho del Sol, así que la vemos como lucero vespertino tras el ocaso o matutino antes del amanecer."
+     ],
+     "q": "¿Has notado alguna vez una luz muy brillante en el oeste después del atardecer?",
+     "c": "Cuando Venus sea visible, busca un punto blanco, fijo y muy brillante, bajo en el cielo del crepúsculo."
+    },
+    "fr": {
+     "t": "Vénus, l'étoile du soir",
+     "g": "Découvre la planète la plus brillante, qui luit au crépuscule ou à l'aube derrière d'épais nuages.",
+     "p": [
+      "Vénus est la planète la plus brillante : ses nuages épais réfléchissent beaucoup de lumière solaire et elle est proche de nous.",
+      "Son atmosphère est surtout du dioxyde de carbone et sa surface est la plus chaude du Système solaire, plus que Mercure.",
+      "Elle ne s'éloigne jamais beaucoup du Soleil : étoile du soir après le coucher, étoile du matin avant le lever."
+     ],
+     "q": "As-tu déjà remarqué une lumière très brillante à l'ouest après le coucher du Soleil ?",
+     "c": "Quand Vénus est visible, cherche un point blanc, fixe et très brillant, bas dans le ciel du crépuscule."
+    },
+    "it": {
+     "t": "Venere, la stella della sera",
+     "g": "Scopri il pianeta più luminoso, che brilla al tramonto o all'alba dietro spesse nubi.",
+     "p": [
+      "Venere è il pianeta più luminoso perché le sue dense nubi riflettono molta luce solare ed è vicina a noi.",
+      "La sua aria è soprattutto anidride carbonica e la superficie è la più calda di tutti i pianeti, più di Mercurio.",
+      "Non si allontana mai molto dal Sole: la vediamo come stella della sera dopo il tramonto o del mattino prima dell'alba."
+     ],
+     "q": "Hai mai notato una luce molto brillante a ovest dopo il tramonto?",
+     "c": "Quando Venere è visibile, cerca un punto bianco, fermo e brillantissimo, basso nel cielo del crepuscolo."
+    },
+    "pt": {
+     "t": "Vénus, a estrela da tarde",
+     "g": "Descobre o planeta mais brilhante, que reluz ao anoitecer ou ao amanhecer atrás de nuvens densas.",
+     "p": [
+      "Vénus é o planeta mais brilhante porque as nuvens densas refletem muita luz solar e está perto de nós.",
+      "A atmosfera é sobretudo dióxido de carbono e a superfície é a mais quente de todos os planetas, mais do que Mercúrio.",
+      "Nunca se afasta muito do Sol: vemo-la como estrela da tarde depois do pôr do Sol ou da manhã antes do nascer."
+     ],
+     "q": "Já reparaste numa luz muito brilhante a oeste depois do pôr do Sol?",
+     "c": "Quando Vénus estiver visível, procura um ponto branco, fixo e muito brilhante, baixo no céu do crepúsculo."
+    },
+    "pt_BR": {
+     "t": "Vênus, a estrela-d'alva",
+     "g": "Descubra o planeta mais brilhante, que reluz ao anoitecer ou ao amanhecer atrás de nuvens densas.",
+     "p": [
+      "Vênus é o planeta mais brilhante porque as nuvens densas refletem muita luz solar e ele está perto de nós.",
+      "A atmosfera é sobretudo dióxido de carbono e a superfície é a mais quente de todos os planetas, mais que Mercúrio.",
+      "Ele nunca se afasta muito do Sol: o vemos como estrela da tarde após o pôr do sol ou estrela-d'alva antes do nascer."
+     ],
+     "q": "Você já reparou em uma luz muito brilhante no oeste depois do pôr do sol?",
+     "c": "Quando Vênus estiver visível, procure um ponto branco, fixo e muito brilhante, baixo no céu do crepúsculo."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Earth, a planet too",
+     "g": "See our home as a planet and learn what makes it special for life.",
+     "p": [
+      "Earth is the only known world with liquid water on its surface, covering about 70 percent of it.",
+      "Our air gives us oxygen to breathe and also shields us from some harmful space particles and small meteoroids.",
+      "Earth's magnetic field deflects the solar wind, and the auroras glow near the poles where particles meet the upper air."
+     ],
+     "q": "What is your favourite thing about living on this planet?",
+     "c": "Look at the Moon tonight and remember that you are standing on a planet that is also floating in space."
+    },
+    "de": {
+     "t": "Die Erde, auch ein Planet",
+     "g": "Betrachte unsere Heimat als Planeten und erfahre, was sie für das Leben besonders macht.",
+     "p": [
+      "Die Erde ist die einzige bekannte Welt mit flüssigem Wasser an der Oberfläche; es bedeckt etwa 70 Prozent.",
+      "Unsere Luft liefert Sauerstoff zum Atmen und schützt uns vor schädlichen Teilchen und kleinen Meteoroiden.",
+      "Das Magnetfeld lenkt den Sonnenwind ab; Polarlichter leuchten nahe den Polen, wo Teilchen auf die obere Atmosphäre treffen."
+     ],
+     "q": "Was gefällt dir am besten am Leben auf diesem Planeten?",
+     "c": "Schau heute Abend zum Mond und denke daran, dass du auf einem Planeten stehst, der im Weltraum schwebt."
+    },
+    "es": {
+     "t": "La Tierra, también un planeta",
+     "g": "Mira nuestro hogar como un planeta y descubre qué lo hace especial para la vida.",
+     "p": [
+      "La Tierra es el único mundo conocido con agua líquida en su superficie, que cubre cerca del 70 por ciento.",
+      "Nuestro aire nos da oxígeno para respirar y nos protege de partículas dañinas y pequeños meteoroides.",
+      "El campo magnético desvía el viento solar y las auroras brillan cerca de los polos, donde las partículas llegan a la atmósfera alta."
+     ],
+     "q": "¿Qué es lo que más te gusta de vivir en este planeta?",
+     "c": "Mira la Luna esta noche y recuerda que estás sobre un planeta que flota en el espacio."
+    },
+    "fr": {
+     "t": "La Terre, une planète aussi",
+     "g": "Regarde notre maison comme une planète et découvre ce qui la rend spéciale pour la vie.",
+     "p": [
+      "La Terre est le seul monde connu avec de l'eau liquide en surface, qui en couvre environ 70 pour cent.",
+      "Notre air nous donne de l'oxygène et nous protège de particules nocives et de petits météoroïdes.",
+      "Le champ magnétique dévie le vent solaire ; les aurores brillent près des pôles, là où les particules touchent la haute atmosphère."
+     ],
+     "q": "Qu'est-ce que tu préfères dans la vie sur cette planète ?",
+     "c": "Regarde la Lune ce soir et rappelle-toi que tu es sur une planète qui flotte dans l'espace."
+    },
+    "it": {
+     "t": "La Terra, anche un pianeta",
+     "g": "Guarda la nostra casa come un pianeta e scopri cosa la rende speciale per la vita.",
+     "p": [
+      "La Terra è l'unico mondo noto con acqua liquida in superficie, che ne copre circa il 70 per cento.",
+      "La nostra aria ci dà ossigeno da respirare e ci protegge da particelle dannose e da piccoli meteoroidi.",
+      "Il campo magnetico devia il vento solare; le aurore brillano vicino ai poli, dove le particelle incontrano l'alta atmosfera."
+     ],
+     "q": "Cosa ti piace di più di vivere su questo pianeta?",
+     "c": "Guarda la Luna stasera e ricorda che sei su un pianeta che galleggia nello spazio."
+    },
+    "pt": {
+     "t": "A Terra, também um planeta",
+     "g": "Olha para a nossa casa como um planeta e descobre o que a torna especial para a vida.",
+     "p": [
+      "A Terra é o único mundo conhecido com água líquida à superfície, que cobre cerca de 70 por cento.",
+      "O nosso ar dá-nos oxigénio para respirar e protege-nos de partículas nocivas e de pequenos meteoroides.",
+      "O campo magnético desvia o vento solar e as auroras brilham perto dos polos, onde as partículas chegam à atmosfera alta."
+     ],
+     "q": "Do que mais gostas em viver neste planeta?",
+     "c": "Olha para a Lua esta noite e lembra-te de que estás num planeta que flutua no espaço."
+    },
+    "pt_BR": {
+     "t": "A Terra, também um planeta",
+     "g": "Veja nossa casa como um planeta e descubra o que a torna especial para a vida.",
+     "p": [
+      "A Terra é o único mundo conhecido com água líquida na superfície, que cobre cerca de 70 por cento dela.",
+      "Nosso ar dá oxigênio para respirar e nos protege de partículas nocivas e de pequenos meteoroides.",
+      "O campo magnético desvia o vento solar e as auroras brilham perto dos polos, onde as partículas chegam à atmosfera alta."
+     ],
+     "q": "Do que você mais gosta em viver neste planeta?",
+     "c": "Olhe para a Lua hoje à noite e lembre-se de que você está num planeta que flutua no espaço."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mars, the red planet",
+     "g": "Explore the rusty world with giant volcanoes and enormous canyons.",
+     "p": [
+      "Mars looks red because iron in its dust has rusted, and its sky is dusty and pinkish.",
+      "Olympus Mons is the tallest known volcano in the Solar System, about three times taller than Mount Everest.",
+      "The canyon Valles Marineris stretches roughly as far as the width of the United States, and Mars has two tiny moons."
+     ],
+     "q": "If you could visit one place on Mars, which would you choose?",
+     "c": "When Mars is up, look for a steady orange-red point and compare its colour with nearby stars."
+    },
+    "de": {
+     "t": "Mars, der rote Planet",
+     "g": "Erkunde die rostige Welt mit riesigen Vulkanen und gewaltigen Schluchten.",
+     "p": [
+      "Mars wirkt rot, weil das Eisen in seinem Staub gerostet ist; sein Himmel ist staubig und rosa getönt.",
+      "Olympus Mons ist der höchste bekannte Vulkan im Sonnensystem, etwa dreimal so hoch wie der Mount Everest.",
+      "Das Valles Marineris reicht etwa so weit wie die Breite der USA, und Mars hat zwei winzige Monde."
+     ],
+     "q": "Wenn du einen Ort auf dem Mars besuchen könntest, welchen würdest du wählen?",
+     "c": "Wenn der Mars am Himmel steht, such den ruhigen orangeroten Punkt und vergleiche seine Farbe mit nahen Sternen."
+    },
+    "es": {
+     "t": "Marte, el planeta rojo",
+     "g": "Explora el mundo oxidado de volcanes gigantes y enormes cañones.",
+     "p": [
+      "Marte parece rojo porque el hierro de su polvo se ha oxidado, y su cielo es polvoriento y rosado.",
+      "El Monte Olimpo es el volcán más alto conocido del Sistema Solar, unas tres veces más alto que el Everest.",
+      "El cañón Valles Marineris se extiende casi como la anchura de Estados Unidos, y Marte tiene dos lunas diminutas."
+     ],
+     "q": "Si pudieras visitar un lugar de Marte, ¿cuál elegirías?",
+     "c": "Cuando Marte esté en el cielo, busca un punto naranja rojizo fijo y compara su color con estrellas cercanas."
+    },
+    "fr": {
+     "t": "Mars, la planète rouge",
+     "g": "Explore le monde rouillé aux volcans géants et aux immenses canyons.",
+     "p": [
+      "Mars paraît rouge car le fer de sa poussière a rouillé ; son ciel est poussiéreux et rosé.",
+      "Olympus Mons est le plus haut volcan connu du Système solaire, environ trois fois plus haut que l'Everest.",
+      "Le canyon Valles Marineris s'étend à peu près sur la largeur des États-Unis, et Mars a deux minuscules lunes."
+     ],
+     "q": "Si tu pouvais visiter un endroit sur Mars, lequel choisirais-tu ?",
+     "c": "Quand Mars est visible, cherche un point orange-rouge fixe et compare sa couleur avec celle des étoiles voisines."
+    },
+    "it": {
+     "t": "Marte, il pianeta rosso",
+     "g": "Esplora il mondo arrugginito dai vulcani giganti e dagli enormi canyon.",
+     "p": [
+      "Marte appare rosso perché il ferro nella sua polvere si è arrugginito, e il suo cielo è polveroso e rosato.",
+      "L'Olympus Mons è il vulcano più alto noto del Sistema Solare, circa tre volte l'Everest.",
+      "Il canyon Valles Marineris si estende quasi quanto la larghezza degli Stati Uniti, e Marte ha due minuscole lune."
+     ],
+     "q": "Se potessi visitare un luogo su Marte, quale sceglieresti?",
+     "c": "Quando Marte è alto, cerca un punto arancio-rosso fermo e confronta il suo colore con le stelle vicine."
+    },
+    "pt": {
+     "t": "Marte, o planeta vermelho",
+     "g": "Explora o mundo enferrujado com vulcões gigantes e enormes desfiladeiros.",
+     "p": [
+      "Marte parece vermelho porque o ferro do seu pó enferrujou, e o seu céu é poeirento e rosado.",
+      "O Monte Olimpo é o maior vulcão conhecido do Sistema Solar, cerca de três vezes mais alto do que o Evereste.",
+      "O desfiladeiro Valles Marineris estende-se quase pela largura dos Estados Unidos, e Marte tem duas luas pequeninas."
+     ],
+     "q": "Se pudesses visitar um lugar em Marte, qual escolherias?",
+     "c": "Quando Marte estiver no céu, procura um ponto laranja-avermelhado fixo e compara a cor com as estrelas vizinhas."
+    },
+    "pt_BR": {
+     "t": "Marte, o planeta vermelho",
+     "g": "Explore o mundo enferrujado com vulcões gigantes e enormes cânions.",
+     "p": [
+      "Marte parece vermelho porque o ferro da sua poeira enferrujou, e o céu dele é empoeirado e rosado.",
+      "O Monte Olimpo é o maior vulcão conhecido do Sistema Solar, cerca de três vezes mais alto que o Everest.",
+      "O cânion Valles Marineris se estende quase pela largura dos Estados Unidos, e Marte tem duas luas pequeninas."
+     ],
+     "q": "Se você pudesse visitar um lugar em Marte, qual escolheria?",
+     "c": "Quando Marte estiver no céu, procure um ponto laranja-avermelhado fixo e compare a cor com as estrelas vizinhas."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Jupiter, king of planets",
+     "g": "Meet the giant planet with colourful cloud bands and a storm bigger than Earth.",
+     "p": [
+      "Jupiter is so large that more than 1,000 Earths could fit inside it, and it is made mostly of hydrogen and helium.",
+      "Its cloud bands come from fast winds; the Great Red Spot is a storm that has raged for centuries.",
+      "Even small binoculars can show its four big moons as tiny points in a line, found by Galileo in 1610."
+     ],
+     "q": "Would you rather watch Jupiter's moons or Saturn's rings through a telescope?",
+     "c": "When Jupiter is up, brace your binoculars on a wall and count the tiny dots beside it."
+    },
+    "de": {
+     "t": "Jupiter, der König der Planeten",
+     "g": "Lerne den Riesenplaneten mit bunten Wolkenbändern und einem Sturm größer als die Erde kennen.",
+     "p": [
+      "Jupiter ist so groß, dass über 1000 Erden hineinpassen, und besteht größtenteils aus Wasserstoff und Helium.",
+      "Seine Wolkenbänder entstehen durch schnelle Winde; der Große Rote Fleck ist ein Sturm, der seit Jahrhunderten tobt.",
+      "Schon kleine Ferngläser zeigen seine vier großen Monde als Pünktchen in einer Reihe, 1610 von Galilei entdeckt."
+     ],
+     "q": "Würdest du lieber Jupiters Monde oder Saturns Ringe im Teleskop ansehen?",
+     "c": "Wenn Jupiter am Himmel steht, stütze dein Fernglas an einer Mauer ab und zähle die Pünktchen neben ihm."
+    },
+    "es": {
+     "t": "Júpiter, el rey de los planetas",
+     "g": "Conoce al planeta gigante de bandas de nubes de colores y una tormenta mayor que la Tierra.",
+     "p": [
+      "Júpiter es tan grande que cabrían más de 1000 Tierras en su interior, y es sobre todo hidrógeno y helio.",
+      "Sus bandas de nubes nacen de vientos veloces; la Gran Mancha Roja es una tormenta que dura siglos.",
+      "Hasta unos prismáticos pequeños muestran sus cuatro grandes lunas como puntitos en fila, descubiertas por Galileo en 1610."
+     ],
+     "q": "¿Prefieres ver las lunas de Júpiter o los anillos de Saturno por un telescopio?",
+     "c": "Cuando Júpiter esté visible, apoya los prismáticos en una pared y cuenta los puntitos a su lado."
+    },
+    "fr": {
+     "t": "Jupiter, le roi des planètes",
+     "g": "Rencontre la planète géante aux bandes nuageuses colorées et à la tempête plus grande que la Terre.",
+     "p": [
+      "Jupiter est si grande que plus de 1000 Terres tiendraient dedans ; elle est faite surtout d'hydrogène et d'hélium.",
+      "Ses bandes nuageuses viennent de vents rapides ; la Grande Tache rouge est une tempête vieille de plusieurs siècles.",
+      "De petites jumelles montrent ses quatre grosses lunes comme des points alignés, découvertes par Galilée en 1610."
+     ],
+     "q": "Préférerais-tu observer les lunes de Jupiter ou les anneaux de Saturne au télescope ?",
+     "c": "Quand Jupiter est visible, appuie tes jumelles contre un mur et compte les petits points à côté."
+    },
+    "it": {
+     "t": "Giove, il re dei pianeti",
+     "g": "Incontra il pianeta gigante dalle fasce nuvolose colorate e da una tempesta più grande della Terra.",
+     "p": [
+      "Giove è così grande che dentro ci starebbero più di 1000 Terre, ed è fatto soprattutto di idrogeno ed elio.",
+      "Le sue fasce nuvolose nascono da venti veloci; la Grande Macchia Rossa è una tempesta che dura da secoli.",
+      "Anche un piccolo binocolo mostra le sue quattro grandi lune come puntini in fila, scoperte da Galileo nel 1610."
+     ],
+     "q": "Preferiresti osservare le lune di Giove o gli anelli di Saturno al telescopio?",
+     "c": "Quando Giove è visibile, appoggia il binocolo a un muro e conta i puntini accanto a lui."
+    },
+    "pt": {
+     "t": "Júpiter, o rei dos planetas",
+     "g": "Conhece o planeta gigante com faixas de nuvens coloridas e uma tempestade maior do que a Terra.",
+     "p": [
+      "Júpiter é tão grande que caberiam mais de 1000 Terras lá dentro, e é feito sobretudo de hidrogénio e hélio.",
+      "As faixas de nuvens nascem de ventos rápidos; a Grande Mancha Vermelha é uma tempestade com séculos.",
+      "Até uns binóculos pequenos mostram as suas quatro grandes luas como pontinhos em linha, descobertas por Galileu em 1610."
+     ],
+     "q": "Preferias ver as luas de Júpiter ou os anéis de Saturno ao telescópio?",
+     "c": "Quando Júpiter estiver visível, apoia os binóculos num muro e conta os pontinhos ao lado dele."
+    },
+    "pt_BR": {
+     "t": "Júpiter, o rei dos planetas",
+     "g": "Conheça o planeta gigante com faixas de nuvens coloridas e uma tempestade maior que a Terra.",
+     "p": [
+      "Júpiter é tão grande que caberiam mais de 1000 Terras dentro dele, e é feito sobretudo de hidrogênio e hélio.",
+      "As faixas de nuvens nascem de ventos rápidos; a Grande Mancha Vermelha é uma tempestade que dura séculos.",
+      "Até binóculos pequenos mostram suas quatro grandes luas como pontinhos em linha, descobertas por Galileu em 1610."
+     ],
+     "q": "Você preferiria ver as luas de Júpiter ou os anéis de Saturno no telescópio?",
+     "c": "Quando Júpiter estiver visível, apoie o binóculo num muro e conte os pontinhos ao lado dele."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month",
+     "g": "Recap what you learned about the sky, the Moon, the seasons and the first planets.",
+     "p": [
+      "Sky basics: find a dark place, let your eyes adapt, and remember that planets shine steadily while stars twinkle.",
+      "The Moon shows phases as it orbits Earth, and seasons come from Earth's tilt, not its distance from the Sun.",
+      "Planets follow the ecliptic: Mercury and Venus stay near the Sun, while Mars and Jupiter roam the wider sky."
+     ],
+     "q": "Which fact from this month surprised you the most?",
+     "c": "Go out tonight and teach one fact from this month to a friend or family member."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Monat",
+     "g": "Wiederhole, was du über Himmel, Mond, Jahreszeiten und die ersten Planeten gelernt hast.",
+     "p": [
+      "Grundlagen: dunkler Ort, Augen anpassen, und Planeten leuchten ruhig, während Sterne funkeln.",
+      "Der Mond zeigt Phasen, weil er die Erde umkreist, und die Jahreszeiten kommen von der Neigung der Erdachse, nicht vom Abstand zur Sonne.",
+      "Planeten folgen der Ekliptik: Merkur und Venus bleiben nahe der Sonne, Mars und Jupiter ziehen weiter über den Himmel."
+     ],
+     "q": "Welche Tatsache dieses Monats hat dich am meisten überrascht?",
+     "c": "Geh heute Abend hinaus und erkläre einer Freundin oder einem Familienmitglied eine Tatsache aus diesem Monat."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes",
+     "g": "Repasa lo que has aprendido sobre el cielo, la Luna, las estaciones y los primeros planetas.",
+     "p": [
+      "Lo básico: busca un lugar oscuro, deja que tus ojos se adapten y recuerda que los planetas brillan fijos y las estrellas titilan.",
+      "La Luna muestra fases al orbitar la Tierra, y las estaciones vienen de la inclinación terrestre, no de la distancia al Sol.",
+      "Los planetas siguen la eclíptica: Mercurio y Venus quedan cerca del Sol; Marte y Júpiter recorren más cielo."
+     ],
+     "q": "¿Qué dato de este mes te sorprendió más?",
+     "c": "Sal esta noche y cuéntale un dato de este mes a un amigo o familiar."
+    },
+    "fr": {
+     "t": "Révision : ton premier mois",
+     "g": "Reprends ce que tu as appris sur le ciel, la Lune, les saisons et les premières planètes.",
+     "p": [
+      "Les bases : un endroit sombre, des yeux adaptés, et des planètes qui brillent fixement alors que les étoiles scintillent.",
+      "La Lune montre des phases en tournant autour de la Terre, et les saisons viennent de l'inclinaison terrestre, pas de la distance au Soleil.",
+      "Les planètes suivent l'écliptique : Mercure et Vénus restent près du Soleil, Mars et Jupiter parcourent plus de ciel."
+     ],
+     "q": "Quel fait de ce mois t'a le plus surpris ?",
+     "c": "Sors ce soir et raconte un fait de ce mois à un ami ou à un membre de ta famille."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese",
+     "g": "Ripassa ciò che hai imparato su cielo, Luna, stagioni e primi pianeti.",
+     "p": [
+      "Le basi: un posto buio, occhi adattati, e pianeti che brillano fermi mentre le stelle scintillano.",
+      "La Luna mostra le fasi mentre orbita la Terra, e le stagioni vengono dall'inclinazione terrestre, non dalla distanza dal Sole.",
+      "I pianeti seguono l'eclittica: Mercurio e Venere restano vicini al Sole, Marte e Giove percorrono più cielo."
+     ],
+     "q": "Quale fatto di questo mese ti ha sorpreso di più?",
+     "c": "Esci stasera e racconta un fatto di questo mese a un amico o a un familiare."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês",
+     "g": "Revê o que aprendeste sobre o céu, a Lua, as estações e os primeiros planetas.",
+     "p": [
+      "O básico: um local escuro, olhos adaptados, e planetas que brilham fixos enquanto as estrelas cintilam.",
+      "A Lua mostra fases ao orbitar a Terra, e as estações vêm da inclinação da Terra, não da distância ao Sol.",
+      "Os planetas seguem a eclítica: Mercúrio e Vénus ficam perto do Sol; Marte e Júpiter percorrem mais céu."
+     ],
+     "q": "Que facto deste mês mais te surpreendeu?",
+     "c": "Sai esta noite e conta um facto deste mês a um amigo ou familiar."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês",
+     "g": "Revise o que você aprendeu sobre o céu, a Lua, as estações e os primeiros planetas.",
+     "p": [
+      "O básico: um lugar escuro, olhos adaptados, e planetas que brilham fixos enquanto as estrelas cintilam.",
+      "A Lua mostra fases ao orbitar a Terra, e as estações vêm da inclinação da Terra, não da distância até o Sol.",
+      "Os planetas seguem a eclíptica: Mercúrio e Vênus ficam perto do Sol; Marte e Júpiter percorrem mais céu."
+     ],
+     "q": "Qual fato deste mês mais surpreendeu você?",
+     "c": "Saia hoje à noite e conte um fato deste mês a um amigo ou familiar."
+    }
+   }
+  }
+ ]
+}

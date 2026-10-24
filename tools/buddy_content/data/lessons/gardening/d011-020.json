@@ -1,0 +1,835 @@
+{
+ "topic": "gardening",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pots and drainage",
+     "g": "Learn why drainage holes matter and how standing water harms roots.",
+     "p": [
+      "Roots need air as well as water, and soggy soil pushes the air out so roots start to rot.",
+      "A drainage hole lets extra water escape, which is the best protection against overwatering.",
+      "A decorative pot without holes works as a cover pot: keep the plant in a plastic pot inside and empty any water after watering."
+     ],
+     "q": "Do your pots at home have drainage holes? Which ones do not?",
+     "c": "Today, check each pot for holes and empty any water sitting in saucers or cover pots."
+    },
+    "de": {
+     "t": "Töpfe und Drainage",
+     "g": "Lerne, warum Abzugslöcher wichtig sind und wie Staunässe Wurzeln schadet.",
+     "p": [
+      "Wurzeln brauchen Luft und Wasser, nasse Erde verdrängt die Luft und die Wurzeln beginnen zu faulen.",
+      "Ein Abzugsloch lässt überschüssiges Wasser ab, der beste Schutz vor zu viel Gießen.",
+      "Ein Dekotopf ohne Löcher dient als Übertopf: Lass die Pflanze im Plastiktopf darin und leere nach dem Gießen das Wasser."
+     ],
+     "q": "Haben die Töpfe bei dir Abzugslöcher? Welche nicht?",
+     "c": "Prüfe heute jeden Topf auf Löcher und leere Wasser aus Untersetzern und Übertöpfen."
+    },
+    "es": {
+     "t": "Macetas y drenaje",
+     "g": "Aprende por qué importan los agujeros de drenaje y cómo el agua estancada daña las raíces.",
+     "p": [
+      "Las raíces necesitan aire además de agua, y el suelo encharcado expulsa el aire y las raíces se pudren.",
+      "Un agujero de drenaje deja salir el agua sobrante, la mejor protección contra el exceso de riego.",
+      "Una maceta decorativa sin agujeros sirve de cubremaceta: deja la planta en su maceta de plástico y vacía el agua tras regar."
+     ],
+     "q": "¿Tus macetas tienen agujeros de drenaje? ¿Cuáles no?",
+     "c": "Hoy revisa los agujeros de cada maceta y vacía el agua de platos y cubremacetas."
+    },
+    "fr": {
+     "t": "Pots et drainage",
+     "g": "Apprends pourquoi les trous de drainage comptent et comment l'eau stagnante abîme les racines.",
+     "p": [
+      "Les racines ont besoin d'air autant que d'eau : une terre détrempée chasse l'air et les racines pourrissent.",
+      "Un trou de drainage évacue l'excès d'eau, la meilleure protection contre l'arrosage excessif.",
+      "Un pot décoratif sans trou sert de cache-pot : garde la plante dans son pot en plastique et vide l'eau après l'arrosage."
+     ],
+     "q": "Tes pots ont-ils des trous de drainage ? Lesquels n'en ont pas ?",
+     "c": "Aujourd'hui, vérifie les trous de chaque pot et vide l'eau des soucoupes et cache-pots."
+    },
+    "it": {
+     "t": "Vasi e drenaggio",
+     "g": "Scopri perché i fori di drenaggio contano e come l'acqua stagnante danneggia le radici.",
+     "p": [
+      "Le radici hanno bisogno di aria oltre che di acqua: il terreno fradicio scaccia l'aria e le radici marciscono.",
+      "Un foro di drenaggio fa uscire l'acqua in eccesso, la migliore protezione contro le troppe annaffiature.",
+      "Un vaso decorativo senza fori fa da coprivaso: tieni la pianta nel vaso di plastica e svuota l'acqua dopo l'annaffiatura."
+     ],
+     "q": "I tuoi vasi hanno fori di drenaggio? Quali non li hanno?",
+     "c": "Oggi controlla i fori di ogni vaso e svuota l'acqua da sottovasi e coprivasi."
+    },
+    "pt": {
+     "t": "Vasos e drenagem",
+     "g": "Aprende por que os furos de drenagem importam e como a água parada prejudica as raízes.",
+     "p": [
+      "As raízes precisam de ar além de água, e o solo encharcado expulsa o ar e as raízes apodrecem.",
+      "Um furo de drenagem deixa sair a água a mais, a melhor proteção contra o excesso de rega.",
+      "Um vaso decorativo sem furos serve de cachepô: deixa a planta no vaso de plástico e esvazia a água depois de regar."
+     ],
+     "q": "Os teus vasos têm furos de drenagem? Quais não têm?",
+     "c": "Hoje verifica os furos de cada vaso e esvazia a água dos pratos e cachepôs."
+    },
+    "pt_BR": {
+     "t": "Vasos e drenagem",
+     "g": "Aprenda por que os furos de drenagem importam e como a água parada prejudica as raízes.",
+     "p": [
+      "As raízes precisam de ar além de água, e o solo encharcado expulsa o ar e as raízes apodrecem.",
+      "Um furo de drenagem deixa sair a água em excesso, a melhor proteção contra rega demais.",
+      "Um vaso decorativo sem furos serve de cachepô: deixe a planta no vaso de plástico e esvazie a água depois de regar."
+     ],
+     "q": "Seus vasos têm furos de drenagem? Quais não têm?",
+     "c": "Hoje confira os furos de cada vaso e esvazie a água de pratinhos e cachepôs."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing pot sizes",
+     "g": "Match the pot to the plant so roots have room without staying soggy.",
+     "p": [
+      "A pot only a little bigger than the root ball works best, about two to five centimetres wider.",
+      "A huge pot holds lots of wet soil around few roots, which stays damp too long and invites rot.",
+      "A plant that looks too big for its pot may simply need a bit more room, not a giant home."
+     ],
+     "q": "Is there a plant at home that looks too cramped, or one that sits in too big a pot?",
+     "c": "Today, compare one plant with its pot and judge if the size feels balanced."
+    },
+    "de": {
+     "t": "Die richtige Topfgröße",
+     "g": "Passe den Topf an die Pflanze an, damit die Wurzeln Platz haben, aber nicht nass stehen.",
+     "p": [
+      "Ein Topf nur etwas größer als der Wurzelballen ist ideal, etwa zwei bis fünf Zentimeter breiter.",
+      "Ein riesiger Topf hält viel nasse Erde um wenige Wurzeln, die zu lange feucht bleibt und Fäulnis begünstigt.",
+      "Eine Pflanze, die zu groß für den Topf wirkt, braucht oft nur etwas mehr Platz, kein Riesenhaus."
+     ],
+     "q": "Gibt es zu Hause eine Pflanze, die zu eng sitzt, oder eine in einem zu großen Topf?",
+     "c": "Vergleiche heute eine Pflanze mit ihrem Topf und beurteile, ob die Größe ausgewogen wirkt."
+    },
+    "es": {
+     "t": "Elegir el tamaño de maceta",
+     "g": "Ajusta la maceta a la planta para que las raíces tengan espacio sin quedar empapadas.",
+     "p": [
+      "Funciona mejor una maceta algo mayor que el cepellón, unos dos a cinco centímetros más ancha.",
+      "Una maceta enorme retiene mucha tierra mojada alrededor de pocas raíces, que tarda en secar y favorece la pudrición.",
+      "Una planta que parece grande para su maceta puede necesitar solo un poco más de espacio, no una casa gigante."
+     ],
+     "q": "¿Hay en casa una planta que se ve apretada o una en una maceta demasiado grande?",
+     "c": "Hoy compara una planta con su maceta y juzga si el tamaño está equilibrado."
+    },
+    "fr": {
+     "t": "Choisir la taille du pot",
+     "g": "Adapte le pot à la plante pour que les racines aient de la place sans rester détrempées.",
+     "p": [
+      "Un pot à peine plus grand que la motte convient le mieux, deux à cinq centimètres de plus en largeur.",
+      "Un pot énorme garde beaucoup de terre humide autour de peu de racines, qui sèche mal et favorise la pourriture.",
+      "Une plante qui semble trop grande pour son pot a parfois juste besoin d'un peu plus de place."
+     ],
+     "q": "As-tu une plante qui semble à l'étroit, ou une dans un pot trop grand ?",
+     "c": "Aujourd'hui, compare une plante à son pot et juge si la taille est équilibrée."
+    },
+    "it": {
+     "t": "Scegliere la misura del vaso",
+     "g": "Abbina il vaso alla pianta, così le radici hanno spazio senza restare fradice.",
+     "p": [
+      "Funziona meglio un vaso poco più grande del pane di radici, circa due-cinque centimetri più largo.",
+      "Un vaso enorme trattiene molto terriccio bagnato intorno a poche radici, che resta umido troppo a lungo e favorisce il marciume.",
+      "Una pianta che sembra troppo grande per il suo vaso può aver bisogno solo di un po' più di spazio."
+     ],
+     "q": "In casa hai una pianta che sembra stretta o una in un vaso troppo grande?",
+     "c": "Oggi confronta una pianta con il suo vaso e valuta se la misura è equilibrata."
+    },
+    "pt": {
+     "t": "Escolher o tamanho do vaso",
+     "g": "Ajusta o vaso à planta para que as raízes tenham espaço sem ficarem encharcadas.",
+     "p": [
+      "Funciona melhor um vaso um pouco maior que o torrão, cerca de dois a cinco centímetros mais largo.",
+      "Um vaso enorme retém muita terra molhada à volta de poucas raízes, que demora a secar e favorece o apodrecimento.",
+      "Uma planta que parece grande para o vaso pode precisar só de um pouco mais de espaço."
+     ],
+     "q": "Tens em casa uma planta que parece apertada ou uma num vaso demasiado grande?",
+     "c": "Hoje compara uma planta com o seu vaso e avalia se o tamanho está equilibrado."
+    },
+    "pt_BR": {
+     "t": "Escolhendo o tamanho do vaso",
+     "g": "Combine o vaso com a planta para as raízes terem espaço sem ficarem encharcadas.",
+     "p": [
+      "Funciona melhor um vaso um pouco maior que o torrão, cerca de dois a cinco centímetros mais largo.",
+      "Um vaso enorme retém muita terra molhada em volta de poucas raízes, que demora a secar e favorece o apodrecimento.",
+      "Uma planta que parece grande para o vaso pode precisar só de um pouco mais de espaço."
+     ],
+     "q": "Você tem em casa uma planta que parece apertada ou uma em vaso grande demais?",
+     "c": "Hoje compare uma planta com o seu vaso e avalie se o tamanho está equilibrado."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pot materials compared",
+     "g": "See how terracotta, plastic, ceramic and fabric pots affect watering.",
+     "p": [
+      "Terracotta is porous, so soil dries faster, which suits cacti and forgetful over-waterers.",
+      "Plastic and glazed ceramic hold moisture longer, which suits thirsty plants and busy people.",
+      "Fabric pots breathe through the walls, helping roots stay healthy, but they dry out quickly outdoors."
+     ],
+     "q": "Which pot material do you already own, and how does it change your watering?",
+     "c": "Today, lift two pots of different materials after watering and notice how their weight and dampness differ."
+    },
+    "de": {
+     "t": "Topfmaterialien im Vergleich",
+     "g": "Sieh, wie Terrakotta, Kunststoff, Keramik und Stofftöpfe das Gießen beeinflussen.",
+     "p": [
+      "Terrakotta ist porös, die Erde trocknet schneller, gut für Kakteen und Überwässerer.",
+      "Kunststoff und glasierte Keramik halten die Feuchte länger, passend für durstige Pflanzen und Vielbeschäftigte.",
+      "Stofftöpfe atmen durch die Wand und halten Wurzeln gesund, trocknen draußen aber schnell aus."
+     ],
+     "q": "Welches Topfmaterial besitzt du schon, und wie verändert es dein Gießen?",
+     "c": "Hebe heute nach dem Gießen zwei Töpfe aus verschiedenem Material an und spüre den Unterschied."
+    },
+    "es": {
+     "t": "Materiales de macetas comparados",
+     "g": "Mira cómo las macetas de terracota, plástico, cerámica y tela afectan al riego.",
+     "p": [
+      "La terracota es porosa y la tierra seca antes, ideal para cactus y para quien riega en exceso.",
+      "El plástico y la cerámica esmaltada retienen más humedad, ideal para plantas sedientas y gente ocupada.",
+      "Las macetas de tela respiran por las paredes y mantienen sanas las raíces, pero se secan rápido al aire libre."
+     ],
+     "q": "¿Qué material de maceta tienes ya y cómo cambia tu forma de regar?",
+     "c": "Hoy levanta dos macetas de distinto material tras regar y nota la diferencia de peso y humedad."
+    },
+    "fr": {
+     "t": "Les matériaux de pots comparés",
+     "g": "Vois comment terre cuite, plastique, céramique et tissu influencent l'arrosage.",
+     "p": [
+      "La terre cuite est poreuse : la terre sèche plus vite, idéal pour les cactus et ceux qui arrosent trop.",
+      "Le plastique et la céramique émaillée gardent l'humidité plus longtemps, bien pour les plantes assoiffées.",
+      "Les pots en tissu respirent par les parois et gardent des racines saines, mais sèchent vite dehors."
+     ],
+     "q": "Quel matériau de pot possèdes-tu déjà, et comment change-t-il ton arrosage ?",
+     "c": "Aujourd'hui, soulève deux pots de matériaux différents après arrosage et compare poids et humidité."
+    },
+    "it": {
+     "t": "Materiali dei vasi a confronto",
+     "g": "Osserva come vasi di terracotta, plastica, ceramica e tessuto influenzano l'annaffiatura.",
+     "p": [
+      "La terracotta è porosa e il terriccio asciuga prima, adatta a cactus e a chi annaffia troppo.",
+      "Plastica e ceramica smaltata trattengono più umidità, adatte a piante assetate e a chi ha poco tempo.",
+      "I vasi in tessuto respirano dalle pareti e mantengono sane le radici, ma all'aperto asciugano in fretta."
+     ],
+     "q": "Quale materiale di vaso hai già e come cambia il tuo modo di annaffiare?",
+     "c": "Oggi dopo l'annaffiatura solleva due vasi di materiale diverso e nota la differenza di peso e umidità."
+    },
+    "pt": {
+     "t": "Materiais de vasos comparados",
+     "g": "Vê como vasos de barro, plástico, cerâmica e tecido afetam a rega.",
+     "p": [
+      "O barro é poroso e a terra seca mais depressa, bom para catos e para quem rega demais.",
+      "O plástico e a cerâmica vidrada retêm mais humidade, bons para plantas sedentas e pessoas ocupadas.",
+      "Os vasos de tecido respiram pelas paredes e mantêm raízes saudáveis, mas secam depressa no exterior."
+     ],
+     "q": "Que material de vaso já tens e como muda a tua forma de regar?",
+     "c": "Hoje levanta dois vasos de materiais diferentes depois de regar e nota a diferença de peso e humidade."
+    },
+    "pt_BR": {
+     "t": "Materiais de vasos comparados",
+     "g": "Veja como vasos de barro, plástico, cerâmica e tecido afetam a rega.",
+     "p": [
+      "O barro é poroso e a terra seca mais rápido, bom para cactos e para quem rega demais.",
+      "O plástico e a cerâmica esmaltada retêm mais umidade, bons para plantas sedentas e pessoas ocupadas.",
+      "Vasos de tecido respiram pelas paredes e mantêm raízes saudáveis, mas secam rápido ao ar livre."
+     ],
+     "q": "Que material de vaso você já tem e como ele muda sua forma de regar?",
+     "c": "Hoje levante dois vasos de materiais diferentes depois de regar e note a diferença de peso e umidade."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What soil really is",
+     "g": "Explore minerals, organic matter, air and water, the living mix plants grow in.",
+     "p": [
+      "Soil is made of tiny mineral grains, rotted plant matter, air spaces and water.",
+      "Millions of tiny organisms such as bacteria, fungi and worms live in healthy soil and feed plants.",
+      "Sand drains fast, clay holds water, and a loamy mix of both is the gardener's favourite."
+     ],
+     "q": "Have you ever looked closely at a handful of soil? What did you notice?",
+     "c": "Today, take a small handful of soil, squeeze it and see if it crumbles, sticks or falls apart."
+    },
+    "de": {
+     "t": "Was Erde wirklich ist",
+     "g": "Entdecke Mineralien, organische Stoffe, Luft und Wasser, die lebendige Mischung für Pflanzen.",
+     "p": [
+      "Erde besteht aus winzigen Mineralkörnern, verrottetem Pflanzenmaterial, Luftporen und Wasser.",
+      "In gesunder Erde leben Millionen Kleinstlebewesen wie Bakterien, Pilze und Würmer, die Pflanzen nähren.",
+      "Sand lässt Wasser schnell durch, Ton hält es, und lehmige Mischungen aus beidem lieben Gärtner."
+     ],
+     "q": "Hast du schon einmal eine Handvoll Erde genau angesehen? Was ist dir aufgefallen?",
+     "c": "Nimm heute eine kleine Handvoll Erde, drücke sie zusammen und sieh, ob sie krümelt, klebt oder zerfällt."
+    },
+    "es": {
+     "t": "Qué es realmente el suelo",
+     "g": "Explora minerales, materia orgánica, aire y agua, la mezcla viva donde crecen las plantas.",
+     "p": [
+      "El suelo se compone de diminutos granos minerales, materia vegetal descompuesta, huecos de aire y agua.",
+      "En un suelo sano viven millones de organismos como bacterias, hongos y lombrices que alimentan a las plantas.",
+      "La arena drena rápido, la arcilla retiene agua y una mezcla franca de ambas es la favorita del jardinero."
+     ],
+     "q": "¿Has mirado alguna vez de cerca un puñado de tierra? ¿Qué notaste?",
+     "c": "Hoy toma un puñado pequeño de tierra, apriétalo y mira si se desmorona, se pega o se deshace."
+    },
+    "fr": {
+     "t": "Ce qu'est vraiment le sol",
+     "g": "Explore minéraux, matière organique, air et eau, le mélange vivant où poussent les plantes.",
+     "p": [
+      "Le sol se compose de minuscules grains minéraux, de matière végétale décomposée, d'air et d'eau.",
+      "Dans un sol sain vivent des millions d'organismes comme bactéries, champignons et vers qui nourrissent les plantes.",
+      "Le sable draine vite, l'argile retient l'eau, et un mélange limoneux des deux est le favori des jardiniers."
+     ],
+     "q": "As-tu déjà observé de près une poignée de terre ? Qu'as-tu remarqué ?",
+     "c": "Aujourd'hui, prends une petite poignée de terre, serre-la et vois si elle s'émiette, colle ou se défait."
+    },
+    "it": {
+     "t": "Cos'è davvero il suolo",
+     "g": "Esplora minerali, sostanza organica, aria e acqua, la miscela viva in cui crescono le piante.",
+     "p": [
+      "Il suolo è fatto di minuscoli granelli minerali, materia vegetale decomposta, spazi d'aria e acqua.",
+      "Nel suolo sano vivono milioni di organismi come batteri, funghi e lombrichi che nutrono le piante.",
+      "La sabbia drena in fretta, l'argilla trattiene l'acqua e un impasto medio dei due è il preferito dei giardinieri."
+     ],
+     "q": "Hai mai guardato da vicino una manciata di terra? Cosa hai notato?",
+     "c": "Oggi prendi una piccola manciata di terra, stringila e vedi se si sbriciola, si appiccica o si sfalda."
+    },
+    "pt": {
+     "t": "O que é realmente o solo",
+     "g": "Explora minerais, matéria orgânica, ar e água, a mistura viva onde as plantas crescem.",
+     "p": [
+      "O solo é feito de pequenos grãos minerais, matéria vegetal decomposta, espaços de ar e água.",
+      "No solo saudável vivem milhões de organismos como bactérias, fungos e minhocas que alimentam as plantas.",
+      "A areia drena depressa, a argila retém água e uma mistura franca de ambas é a favorita dos jardineiros."
+     ],
+     "q": "Já olhaste de perto para um punhado de terra? O que notaste?",
+     "c": "Hoje pega num pequeno punhado de terra, aperta-o e vê se esfarela, cola ou se desfaz."
+    },
+    "pt_BR": {
+     "t": "O que é realmente o solo",
+     "g": "Explore minerais, matéria orgânica, ar e água, a mistura viva onde as plantas crescem.",
+     "p": [
+      "O solo é feito de pequenos grãos minerais, matéria vegetal decomposta, espaços de ar e água.",
+      "No solo saudável vivem milhões de organismos como bactérias, fungos e minhocas que alimentam as plantas.",
+      "A areia drena rápido, a argila retém água e uma mistura franca das duas é a favorita dos jardineiros."
+     ],
+     "q": "Você já olhou de perto um punhado de terra? O que notou?",
+     "c": "Hoje pegue um pequeno punhado de terra, aperte e veja se esfarela, gruda ou se desfaz."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Potting mix versus garden soil",
+     "g": "Learn why containers need light, airy potting mix, not heavy garden earth.",
+     "p": [
+      "Garden soil packs down in a pot, squeezes out air and drains poorly, so roots suffocate.",
+      "Potting mix is lighter and has bark, coco fibre, perlite or similar parts to keep air around roots.",
+      "Use a mix made for the plant type: cactus mix for succulents, general mix for most houseplants."
+     ],
+     "q": "Do you know which kind of soil your plants live in right now?",
+     "c": "Today, feel the soil of one pot: is it light and crumbly, or dense and heavy?"
+    },
+    "de": {
+     "t": "Blumenerde statt Gartenerde",
+     "g": "Lerne, warum Töpfe lockere Blumenerde brauchen und keine schwere Gartenerde.",
+     "p": [
+      "Gartenerde verdichtet sich im Topf, drückt die Luft heraus und entwässert schlecht, die Wurzeln ersticken.",
+      "Blumenerde ist leichter und enthält Rinde, Kokosfaser, Perlit oder Ähnliches, damit Luft an die Wurzeln kommt.",
+      "Nimm eine Erde passend zur Pflanze: Kakteenerde für Sukkulenten, Universalerde für die meisten Zimmerpflanzen."
+     ],
+     "q": "Weißt du, in welcher Erde deine Pflanzen gerade stehen?",
+     "c": "Fühle heute die Erde eines Topfes: Ist sie locker und krümelig oder dicht und schwer?"
+    },
+    "es": {
+     "t": "Sustrato frente a tierra de jardín",
+     "g": "Aprende por qué las macetas necesitan sustrato ligero y aireado, no tierra pesada de jardín.",
+     "p": [
+      "La tierra de jardín se compacta en la maceta, expulsa el aire y drena mal, y las raíces se asfixian.",
+      "El sustrato es más ligero y lleva corteza, fibra de coco, perlita o similar para mantener aire junto a las raíces.",
+      "Usa una mezcla para cada tipo de planta: sustrato para cactus en suculentas y universal en la mayoría de plantas de interior."
+     ],
+     "q": "¿Sabes en qué tipo de tierra viven ahora tus plantas?",
+     "c": "Hoy toca la tierra de una maceta: ¿es ligera y suelta o densa y pesada?"
+    },
+    "fr": {
+     "t": "Terreau ou terre de jardin",
+     "g": "Apprends pourquoi les pots veulent un terreau léger et aéré, pas de la lourde terre de jardin.",
+     "p": [
+      "La terre de jardin se tasse en pot, chasse l'air et draine mal : les racines étouffent.",
+      "Le terreau est plus léger et contient écorce, fibre de coco, perlite ou équivalent pour garder de l'air aux racines.",
+      "Utilise un mélange adapté : terreau cactus pour les succulentes, terreau universel pour la plupart des plantes d'intérieur."
+     ],
+     "q": "Sais-tu dans quelle sorte de terre vivent tes plantes en ce moment ?",
+     "c": "Aujourd'hui, touche la terre d'un pot : est-elle légère et friable, ou dense et lourde ?"
+    },
+    "it": {
+     "t": "Terriccio o terra da giardino",
+     "g": "Scopri perché i vasi vogliono terriccio leggero e arioso, non pesante terra da giardino.",
+     "p": [
+      "La terra da giardino si compatta nel vaso, scaccia l'aria e drena male: le radici soffocano.",
+      "Il terriccio è più leggero e contiene corteccia, fibra di cocco, perlite o simili per tenere aria attorno alle radici.",
+      "Usa un mix adatto: terriccio per cactus per le succulente, universale per la maggior parte delle piante da appartamento."
+     ],
+     "q": "Sai in che tipo di terra vivono ora le tue piante?",
+     "c": "Oggi tocca il terriccio di un vaso: è leggero e friabile o denso e pesante?"
+    },
+    "pt": {
+     "t": "Substrato ou terra de jardim",
+     "g": "Aprende por que os vasos precisam de substrato leve e arejado, não de terra pesada de jardim.",
+     "p": [
+      "A terra de jardim compacta no vaso, expulsa o ar e drena mal, e as raízes sufocam.",
+      "O substrato é mais leve e leva casca, fibra de coco, perlite ou semelhante para manter ar junto às raízes.",
+      "Usa uma mistura adequada: substrato para catos nas suculentas e universal na maioria das plantas de interior."
+     ],
+     "q": "Sabes em que tipo de terra vivem agora as tuas plantas?",
+     "c": "Hoje toca na terra de um vaso: é leve e solta ou densa e pesada?"
+    },
+    "pt_BR": {
+     "t": "Substrato ou terra de jardim",
+     "g": "Aprenda por que os vasos precisam de substrato leve e arejado, não de terra pesada de jardim.",
+     "p": [
+      "A terra de jardim compacta no vaso, expulsa o ar e drena mal, e as raízes sufocam.",
+      "O substrato é mais leve e leva casca, fibra de coco, perlita ou semelhante para manter ar junto às raízes.",
+      "Use uma mistura adequada: substrato para cactos nas suculentas e universal na maioria das plantas de interior."
+     ],
+     "q": "Você sabe em que tipo de terra suas plantas vivem agora?",
+     "c": "Hoje toque na terra de um vaso: ela é leve e solta ou densa e pesada?"
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Watering basics",
+     "g": "Water deeply but less often, and check the soil before you pour.",
+     "p": [
+      "Water slowly until it runs out of the drainage holes, so the whole root ball gets wet.",
+      "Frequent small sips only wet the top and keep roots shallow, so deep and less often is better.",
+      "Let the saucer drain for a few minutes, then empty it so roots never sit in water."
+     ],
+     "q": "Do you water on a fixed schedule or when the plant seems to need it?",
+     "c": "Today, water one plant slowly and thoroughly, then empty its saucer after ten minutes."
+    },
+    "de": {
+     "t": "Gießen: die Grundlagen",
+     "g": "Gieße gründlich, aber seltener, und prüfe die Erde, bevor du gießt.",
+     "p": [
+      "Gieße langsam, bis Wasser aus den Abzugslöchern läuft, damit der ganze Wurzelballen nass wird.",
+      "Häufige kleine Schlucke befeuchten nur oben und halten die Wurzeln flach, besser ist selten und gründlich.",
+      "Lass den Untersetzer einige Minuten abtropfen und leere ihn, damit die Wurzeln nie im Wasser stehen."
+     ],
+     "q": "Gießt du nach festem Plan oder wenn die Pflanze es zu brauchen scheint?",
+     "c": "Gieße heute eine Pflanze langsam und gründlich und leere nach zehn Minuten den Untersetzer."
+    },
+    "es": {
+     "t": "Riego básico",
+     "g": "Riega a fondo pero con menos frecuencia, y comprueba la tierra antes de regar.",
+     "p": [
+      "Riega despacio hasta que salga agua por los agujeros, para que se moje todo el cepellón.",
+      "Los sorbitos frecuentes solo mojan la superficie y mantienen raíces superficiales, mejor a fondo y espaciado.",
+      "Deja escurrir el plato unos minutos y vacíalo para que las raíces nunca estén en agua."
+     ],
+     "q": "¿Riegas con un calendario fijo o cuando la planta parece necesitarlo?",
+     "c": "Hoy riega una planta despacio y a fondo, y vacía su plato pasados diez minutos."
+    },
+    "fr": {
+     "t": "Les bases de l'arrosage",
+     "g": "Arrose en profondeur mais moins souvent, et vérifie la terre avant de verser.",
+     "p": [
+      "Arrose lentement jusqu'à ce que l'eau sorte par les trous, pour mouiller toute la motte.",
+      "Les petits arrosages fréquents ne mouillent que le dessus et gardent des racines superficielles : mieux vaut profond et espacé.",
+      "Laisse la soucoupe s'égoutter quelques minutes puis vide-la, pour que les racines ne baignent jamais."
+     ],
+     "q": "Arroses-tu selon un calendrier fixe ou quand la plante semble en avoir besoin ?",
+     "c": "Aujourd'hui, arrose une plante lentement et à fond, puis vide sa soucoupe après dix minutes."
+    },
+    "it": {
+     "t": "Le basi dell'annaffiatura",
+     "g": "Annaffia in profondità ma meno spesso, e controlla il terriccio prima di versare.",
+     "p": [
+      "Annaffia lentamente finché l'acqua esce dai fori, così tutto il pane di radici si bagna.",
+      "Piccoli sorsi frequenti bagnano solo la superficie e tengono le radici superficiali: meglio a fondo e meno spesso.",
+      "Lascia sgocciolare il sottovaso per qualche minuto e poi svuotalo, perché le radici non stiano mai nell'acqua."
+     ],
+     "q": "Annaffi con un calendario fisso o quando la pianta sembra averne bisogno?",
+     "c": "Oggi annaffia una pianta lentamente e a fondo, poi svuota il sottovaso dopo dieci minuti."
+    },
+    "pt": {
+     "t": "Noções básicas de rega",
+     "g": "Rega bem mas com menos frequência, e verifica a terra antes de regar.",
+     "p": [
+      "Rega devagar até a água sair pelos furos, para molhar todo o torrão.",
+      "Pequenos golos frequentes só molham a superfície e mantêm raízes superficiais: melhor fundo e espaçado.",
+      "Deixa o prato escorrer uns minutos e esvazia-o, para as raízes nunca ficarem na água."
+     ],
+     "q": "Regas com horário fixo ou quando a planta parece precisar?",
+     "c": "Hoje rega uma planta devagar e bem, e esvazia o prato passados dez minutos."
+    },
+    "pt_BR": {
+     "t": "Noções básicas de rega",
+     "g": "Regue bem mas com menos frequência, e confira a terra antes de regar.",
+     "p": [
+      "Regue devagar até a água sair pelos furos, para molhar todo o torrão.",
+      "Golinhos frequentes só molham a superfície e mantêm raízes rasas: melhor regar fundo e espaçado.",
+      "Deixe o pratinho escorrer uns minutos e esvazie, para as raízes nunca ficarem na água."
+     ],
+     "q": "Você rega em horário fixo ou quando a planta parece precisar?",
+     "c": "Hoje regue uma planta devagar e bem, e esvazie o pratinho depois de dez minutos."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The finger test",
+     "g": "Push a finger into the soil to know when a plant is really thirsty.",
+     "p": [
+      "Push your finger about two to three centimetres into the soil, up to the first knuckle.",
+      "If it feels damp or cool, wait; if it is dry, it is usually time to water most houseplants.",
+      "Succulents and cacti want the soil dry deeper down, so for them wait longer."
+     ],
+     "q": "Does your finger test tell a different story than the soil surface looks like?",
+     "c": "Today, do the finger test on every plant you own and write down which ones are dry."
+    },
+    "de": {
+     "t": "Der Fingertest",
+     "g": "Stecke einen Finger in die Erde, um zu wissen, wann eine Pflanze wirklich durstig ist.",
+     "p": [
+      "Stecke den Finger etwa zwei bis drei Zentimeter tief in die Erde, bis zum ersten Gelenk.",
+      "Fühlt sie sich feucht oder kühl an, warte; ist sie trocken, ist bei den meisten Zimmerpflanzen Gießzeit.",
+      "Sukkulenten und Kakteen wollen tiefer trockene Erde, bei ihnen wartest du länger."
+     ],
+     "q": "Erzählt dir der Fingertest etwas anderes, als die Erdoberfläche zeigt?",
+     "c": "Mache heute bei jeder Pflanze den Fingertest und notiere, welche trocken sind."
+    },
+    "es": {
+     "t": "La prueba del dedo",
+     "g": "Mete un dedo en la tierra para saber cuándo una planta tiene sed de verdad.",
+     "p": [
+      "Introduce el dedo unos dos o tres centímetros en la tierra, hasta la primera falange.",
+      "Si se siente húmeda o fresca, espera; si está seca, suele ser hora de regar la mayoría de las plantas de interior.",
+      "Las suculentas y cactus quieren la tierra seca más abajo, así que con ellas espera más."
+     ],
+     "q": "¿La prueba del dedo te cuenta algo distinto de lo que parece la superficie?",
+     "c": "Hoy haz la prueba del dedo en todas tus plantas y anota cuáles están secas."
+    },
+    "fr": {
+     "t": "Le test du doigt",
+     "g": "Enfonce un doigt dans la terre pour savoir quand une plante a vraiment soif.",
+     "p": [
+      "Enfonce ton doigt de deux à trois centimètres dans la terre, jusqu'à la première phalange.",
+      "Si elle est humide ou fraîche, attends ; si elle est sèche, c'est souvent l'heure d'arroser la plupart des plantes d'intérieur.",
+      "Succulentes et cactus veulent une terre sèche plus en profondeur : attends plus longtemps."
+     ],
+     "q": "Le test du doigt te raconte-t-il autre chose que l'aspect de la surface ?",
+     "c": "Aujourd'hui, fais le test du doigt sur toutes tes plantes et note lesquelles sont sèches."
+    },
+    "it": {
+     "t": "Il test del dito",
+     "g": "Infila un dito nel terriccio per capire quando una pianta ha davvero sete.",
+     "p": [
+      "Infila il dito di due-tre centimetri nel terriccio, fino alla prima nocca.",
+      "Se è umido o fresco, aspetta; se è asciutto, di solito è ora di annaffiare la maggior parte delle piante da appartamento.",
+      "Succulente e cactus vogliono il terriccio asciutto più in profondità, quindi con loro aspetta di più."
+     ],
+     "q": "Il test del dito ti dice qualcosa di diverso da come appare la superficie?",
+     "c": "Oggi fai il test del dito su tutte le tue piante e annota quali sono asciutte."
+    },
+    "pt": {
+     "t": "O teste do dedo",
+     "g": "Enfia um dedo na terra para saber quando uma planta tem mesmo sede.",
+     "p": [
+      "Enfia o dedo cerca de dois a três centímetros na terra, até à primeira articulação.",
+      "Se estiver húmida ou fresca, espera; se estiver seca, costuma ser hora de regar a maioria das plantas de interior.",
+      "Suculentas e catos querem a terra seca mais fundo, por isso com elas espera mais."
+     ],
+     "q": "O teste do dedo diz-te algo diferente do que a superfície parece?",
+     "c": "Hoje faz o teste do dedo em todas as tuas plantas e anota quais estão secas."
+    },
+    "pt_BR": {
+     "t": "O teste do dedo",
+     "g": "Enfie um dedo na terra para saber quando uma planta tem mesmo sede.",
+     "p": [
+      "Enfie o dedo cerca de dois a três centímetros na terra, até a primeira articulação.",
+      "Se estiver úmida ou fresca, espere; se estiver seca, costuma ser hora de regar a maioria das plantas de interior.",
+      "Suculentas e cactos querem a terra seca mais fundo, então com elas espere mais."
+     ],
+     "q": "O teste do dedo diz algo diferente do que a superfície parece?",
+     "c": "Hoje faça o teste do dedo em todas as suas plantas e anote quais estão secas."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Signs of overwatering",
+     "g": "Spot yellow leaves, soft stems and soggy soil, the most common mistake.",
+     "p": [
+      "Yellowing lower leaves, soft or mushy stems and soil that stays wet for days point to too much water.",
+      "A musty smell and tiny flies around the soil are also clues that roots may be rotting.",
+      "Let the soil dry, empty any standing water and, if needed, repot into fresh, airy mix."
+     ],
+     "q": "Have you ever lost a plant to overwatering? What do you think happened?",
+     "c": "Today, check your plants for yellow lower leaves or wet soil and skip watering where needed."
+    },
+    "de": {
+     "t": "Zeichen von Übergießen",
+     "g": "Erkenne gelbe Blätter, weiche Stängel und nasse Erde, den häufigsten Fehler.",
+     "p": [
+      "Gelbe untere Blätter, weiche oder matschige Stängel und tagelang nasse Erde deuten auf zu viel Wasser hin.",
+      "Ein muffiger Geruch und winzige Fliegen an der Erde sind weitere Hinweise auf faulende Wurzeln.",
+      "Lass die Erde trocknen, leere stehendes Wasser aus und topfe bei Bedarf in frische, lockere Erde um."
+     ],
+     "q": "Hast du schon mal eine Pflanze durch zu viel Gießen verloren? Was ist wohl passiert?",
+     "c": "Prüfe heute deine Pflanzen auf gelbe untere Blätter oder nasse Erde und gieße dort nicht."
+    },
+    "es": {
+     "t": "Señales de exceso de riego",
+     "g": "Detecta hojas amarillas, tallos blandos y tierra empapada, el error más común.",
+     "p": [
+      "Hojas inferiores amarillas, tallos blandos o pastosos y tierra mojada durante días indican exceso de agua.",
+      "Un olor a humedad y mosquitas junto a la tierra son pistas de que las raíces pueden pudrirse.",
+      "Deja secar la tierra, vacía el agua acumulada y, si hace falta, trasplanta a sustrato fresco y aireado."
+     ],
+     "q": "¿Has perdido alguna vez una planta por exceso de riego? ¿Qué crees que pasó?",
+     "c": "Hoy revisa tus plantas por hojas inferiores amarillas o tierra mojada y no riegues donde la tierra siga mojada."
+    },
+    "fr": {
+     "t": "Signes d'arrosage excessif",
+     "g": "Repère feuilles jaunes, tiges molles et terre détrempée, l'erreur la plus courante.",
+     "p": [
+      "Des feuilles basses jaunes, des tiges molles et une terre humide pendant des jours indiquent trop d'eau.",
+      "Une odeur de moisi et de minuscules moucherons près de la terre suggèrent que les racines pourrissent.",
+      "Laisse sécher la terre, vide l'eau stagnante et, si besoin, rempote dans un terreau frais et aéré."
+     ],
+     "q": "As-tu déjà perdu une plante à cause d'un excès d'eau ? Que s'est-il passé selon toi ?",
+     "c": "Aujourd'hui, vérifie tes plantes : feuilles basses jaunes ou terre mouillée ? Saute l'arrosage si besoin."
+    },
+    "it": {
+     "t": "Segni di troppa acqua",
+     "g": "Riconosci foglie gialle, fusti molli e terra fradicia, l'errore più comune.",
+     "p": [
+      "Foglie basse gialle, fusti molli o mollicci e terra bagnata per giorni indicano troppa acqua.",
+      "Odore di muffa e moscerini attorno al terriccio sono altri indizi che le radici potrebbero marcire.",
+      "Lascia asciugare il terriccio, svuota l'acqua stagnante e, se serve, rinvasa in terriccio fresco e arioso."
+     ],
+     "q": "Hai mai perso una pianta per troppa acqua? Cosa pensi sia successo?",
+     "c": "Oggi controlla le tue piante: foglie basse gialle o terra bagnata? Salta l'annaffiatura dove la terra è ancora bagnata."
+    },
+    "pt": {
+     "t": "Sinais de excesso de rega",
+     "g": "Reconhece folhas amarelas, caules moles e terra encharcada, o erro mais comum.",
+     "p": [
+      "Folhas inferiores amarelas, caules moles ou papados e terra molhada durante dias indicam água a mais.",
+      "Cheiro a mofo e pequenas mosquinhas junto à terra são pistas de que as raízes podem estar a apodrecer.",
+      "Deixa a terra secar, esvazia a água acumulada e, se preciso, muda para substrato fresco e arejado."
+     ],
+     "q": "Já perdeste uma planta por excesso de rega? O que achas que aconteceu?",
+     "c": "Hoje verifica as tuas plantas: folhas inferiores amarelas ou terra molhada? Não regues onde a terra continue molhada."
+    },
+    "pt_BR": {
+     "t": "Sinais de excesso de rega",
+     "g": "Reconheça folhas amarelas, caules moles e terra encharcada, o erro mais comum.",
+     "p": [
+      "Folhas inferiores amarelas, caules moles ou empapados e terra molhada por dias indicam água demais.",
+      "Cheiro de mofo e mosquinhas junto à terra são pistas de que as raízes podem estar apodrecendo.",
+      "Deixe a terra secar, esvazie a água acumulada e, se preciso, troque por substrato fresco e arejado."
+     ],
+     "q": "Você já perdeu uma planta por excesso de rega? O que acha que aconteceu?",
+     "c": "Hoje confira suas plantas: folhas inferiores amarelas ou terra molhada? Não regue onde a terra continue molhada."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Signs of underwatering",
+     "g": "Recognise drooping, crispy edges and dry soil pulling away from the pot.",
+     "p": [
+      "Drooping leaves, dry crispy edges and light pots with hard dry soil mean a plant is too dry.",
+      "When soil shrinks from the pot wall, water runs straight down the gap and misses the roots.",
+      "Soak the pot in a basin of water for twenty minutes so the soil takes up water evenly again."
+     ],
+     "q": "Which of your plants would drop first if you forgot to water it?",
+     "c": "Today, lift your pots to feel their weight and learn how light a dry pot feels."
+    },
+    "de": {
+     "t": "Zeichen von Wassermangel",
+     "g": "Erkenne hängende Blätter, trockene Ränder und Erde, die sich vom Topf löst.",
+     "p": [
+      "Hängende Blätter, trockene braune Ränder und leichte Töpfe mit harter, trockener Erde zeigen Wassermangel.",
+      "Löst sich die Erde vom Topfrand, läuft Wasser durch den Spalt und erreicht die Wurzeln nicht.",
+      "Tauche den Topf zwanzig Minuten in ein Wasserbecken, damit die Erde wieder gleichmäßig Wasser aufnimmt."
+     ],
+     "q": "Welche deiner Pflanzen würde zuerst schlappmachen, wenn du das Gießen vergisst?",
+     "c": "Hebe heute deine Töpfe an und spüre, wie leicht ein trockener Topf ist."
+    },
+    "es": {
+     "t": "Señales de falta de riego",
+     "g": "Reconoce hojas caídas, bordes crujientes y tierra seca que se separa de la maceta.",
+     "p": [
+      "Hojas caídas, bordes secos y quebradizos y macetas ligeras con tierra dura y seca indican falta de agua.",
+      "Cuando la tierra se encoge de la pared, el agua baja por el hueco y no llega a las raíces.",
+      "Sumerge la maceta veinte minutos en una palangana con agua para que la tierra vuelva a absorber de forma uniforme."
+     ],
+     "q": "¿Cuál de tus plantas se marchitaría primero si olvidaras regarla?",
+     "c": "Hoy levanta tus macetas para notar el peso y aprender lo ligera que es una maceta seca."
+    },
+    "fr": {
+     "t": "Signes de manque d'eau",
+     "g": "Reconnais feuilles tombantes, bords secs et terre sèche qui se décolle du pot.",
+     "p": [
+      "Feuilles tombantes, bords secs et cassants, pot léger à la terre dure et sèche signalent un manque d'eau.",
+      "Quand la terre se rétracte du bord, l'eau file par l'interstice sans atteindre les racines.",
+      "Plonge le pot vingt minutes dans une bassine d'eau pour que la terre se réimbibe uniformément."
+     ],
+     "q": "Laquelle de tes plantes flétrirait la première si tu oubliais de l'arroser ?",
+     "c": "Aujourd'hui, soulève tes pots pour sentir leur poids et apprendre combien un pot sec est léger."
+    },
+    "it": {
+     "t": "Segni di poca acqua",
+     "g": "Riconosci foglie afflosciate, bordi secchi e terra asciutta che si stacca dal vaso.",
+     "p": [
+      "Foglie afflosciate, bordi secchi e croccanti e vasi leggeri con terra dura e asciutta indicano poca acqua.",
+      "Quando la terra si ritira dalla parete, l'acqua scende nella fessura e non raggiunge le radici.",
+      "Immergi il vaso per venti minuti in una bacinella d'acqua, così la terra riassorbe in modo uniforme."
+     ],
+     "q": "Quale delle tue piante cederebbe per prima se dimenticassi di annaffiarla?",
+     "c": "Oggi solleva i tuoi vasi per sentirne il peso e capire quanto è leggero un vaso asciutto."
+    },
+    "pt": {
+     "t": "Sinais de falta de rega",
+     "g": "Reconhece folhas caídas, pontas secas e terra seca que se descola do vaso.",
+     "p": [
+      "Folhas caídas, pontas secas e quebradiças e vasos leves com terra dura e seca indicam falta de água.",
+      "Quando a terra encolhe da parede, a água desce pela fenda e não chega às raízes.",
+      "Mergulha o vaso vinte minutos numa bacia com água para a terra voltar a absorver uniformemente."
+     ],
+     "q": "Qual das tuas plantas murcharia primeiro se te esquecesses de a regar?",
+     "c": "Hoje levanta os teus vasos para sentir o peso e aprender como é leve um vaso seco."
+    },
+    "pt_BR": {
+     "t": "Sinais de falta de rega",
+     "g": "Reconheça folhas caídas, pontas secas e terra seca que se descola do vaso.",
+     "p": [
+      "Folhas caídas, pontas secas e quebradiças e vasos leves com terra dura e seca indicam falta de água.",
+      "Quando a terra encolhe da parede, a água desce pela fresta e não chega às raízes.",
+      "Mergulhe o vaso vinte minutos numa bacia com água para a terra voltar a absorver por igual."
+     ],
+     "q": "Qual das suas plantas murcharia primeiro se você esquecesse de regar?",
+     "c": "Hoje levante seus vasos para sentir o peso e aprender como é leve um vaso seco."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The best time to water",
+     "g": "Learn why morning watering usually helps plants and reduces disease.",
+     "p": [
+      "Morning water is taken up before the heat of the day, so plants face the sun well hydrated.",
+      "Wet leaves overnight invite fungus, so water the soil rather than the leaves, especially in the evening.",
+      "In very hot spells, early morning or late evening reduces evaporation and wasted water."
+     ],
+     "q": "What time of day do you usually water, and does it suit you and your plants?",
+     "c": "Today, water at the base of one plant in the morning and keep its leaves dry."
+    },
+    "de": {
+     "t": "Die beste Zeit zum Gießen",
+     "g": "Lerne, warum Gießen am Morgen Pflanzen meist hilft und Krankheiten vorbeugt.",
+     "p": [
+      "Morgenwasser wird vor der Tageshitze aufgenommen, die Pflanzen stehen gut versorgt in der Sonne.",
+      "Nasse Blätter über Nacht fördern Pilze, gieße daher an die Erde statt auf die Blätter, besonders abends.",
+      "In Hitzeperioden verringern frühe Morgen- oder späte Abendstunden Verdunstung und Wasserverlust."
+     ],
+     "q": "Zu welcher Tageszeit gießt du meistens, und passt das zu dir und den Pflanzen?",
+     "c": "Gieße heute morgens eine Pflanze am Fuß und halte ihre Blätter trocken."
+    },
+    "es": {
+     "t": "La mejor hora para regar",
+     "g": "Aprende por qué regar por la mañana suele ayudar a las plantas y reduce enfermedades.",
+     "p": [
+      "El agua de la mañana se absorbe antes del calor del día y las plantas afrontan el sol bien hidratadas.",
+      "Las hojas mojadas por la noche favorecen los hongos, así que riega la tierra y no las hojas, sobre todo de tarde.",
+      "En olas de calor, regar muy temprano o muy tarde reduce la evaporación y el agua desperdiciada."
+     ],
+     "q": "¿A qué hora del día sueles regar y te va bien a ti y a tus plantas?",
+     "c": "Hoy riega por la mañana una planta por la base y mantén secas sus hojas."
+    },
+    "fr": {
+     "t": "Le meilleur moment pour arroser",
+     "g": "Apprends pourquoi arroser le matin aide souvent les plantes et réduit les maladies.",
+     "p": [
+      "L'eau du matin est absorbée avant la chaleur : les plantes affrontent le soleil bien hydratées.",
+      "Des feuilles mouillées la nuit favorisent les champignons : arrose la terre plutôt que le feuillage, surtout le soir.",
+      "Par forte chaleur, tôt le matin ou tard le soir limite l'évaporation et le gaspillage d'eau."
+     ],
+     "q": "À quelle heure arroses-tu d'habitude, et cela te convient-il, à toi et à tes plantes ?",
+     "c": "Aujourd'hui, arrose une plante au pied le matin et garde ses feuilles sèches."
+    },
+    "it": {
+     "t": "Il momento migliore per annaffiare",
+     "g": "Scopri perché annaffiare al mattino di solito aiuta le piante e riduce le malattie.",
+     "p": [
+      "L'acqua del mattino viene assorbita prima del caldo e le piante affrontano il sole ben idratate.",
+      "Foglie bagnate di notte favoriscono i funghi: bagna il terreno anziché le foglie, soprattutto la sera.",
+      "Nei periodi molto caldi, presto al mattino o tardi la sera riduce evaporazione e sprechi d'acqua."
+     ],
+     "q": "A che ora del giorno annaffi di solito, e va bene per te e per le piante?",
+     "c": "Oggi annaffia di mattina una pianta alla base e tieni asciutte le sue foglie."
+    },
+    "pt": {
+     "t": "A melhor hora para regar",
+     "g": "Aprende por que regar de manhã costuma ajudar as plantas e reduz doenças.",
+     "p": [
+      "A água da manhã é absorvida antes do calor, e as plantas enfrentam o sol bem hidratadas.",
+      "Folhas molhadas durante a noite favorecem fungos, por isso rega a terra e não as folhas, sobretudo à tarde.",
+      "Em períodos de calor, regar muito cedo ou muito tarde reduz a evaporação e o desperdício de água."
+     ],
+     "q": "A que hora do dia costumas regar, e isso serve-te a ti e às plantas?",
+     "c": "Hoje rega de manhã uma planta pela base e mantém as folhas secas."
+    },
+    "pt_BR": {
+     "t": "O melhor horário para regar",
+     "g": "Aprenda por que regar de manhã costuma ajudar as plantas e reduz doenças.",
+     "p": [
+      "A água da manhã é absorvida antes do calor, e as plantas enfrentam o sol bem hidratadas.",
+      "Folhas molhadas durante a noite favorecem fungos, então regue a terra e não as folhas, principalmente à noite.",
+      "Em períodos de calor, regar bem cedo ou bem tarde reduz a evaporação e o desperdício de água."
+     ],
+     "q": "Em que horário você costuma regar, e isso serve para você e para as plantas?",
+     "c": "Hoje regue de manhã uma planta pela base e mantenha as folhas secas."
+    }
+   }
+  }
+ ]
+}

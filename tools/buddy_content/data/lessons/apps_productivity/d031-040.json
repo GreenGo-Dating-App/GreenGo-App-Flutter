@@ -1,0 +1,835 @@
+{
+ "topic": "apps_productivity",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Digital wellbeing routines",
+     "g": "Build phone-free meals, calm mornings and evening wind-downs.",
+     "p": [
+      "Pick one daily moment to keep the phone away, like meals or the first hour.",
+      "Charge the phone outside the bedroom so evenings end more gently.",
+      "Small routines last longer than big rules, so start with just one."
+     ],
+     "q": "Which part of your day would feel better with less screen time?",
+     "c": "Choose one phone-free moment today and keep the phone in another room."
+    },
+    "de": {
+     "t": "Routinen für digitales Wohlbefinden",
+     "g": "Baue handyfreie Mahlzeiten, ruhige Morgen und entspannte Abende auf.",
+     "p": [
+      "Wähle einen Moment am Tag ohne Handy, etwa Mahlzeiten oder die erste Stunde.",
+      "Lade das Handy außerhalb des Schlafzimmers, damit Abende sanfter enden.",
+      "Kleine Routinen halten länger als große Regeln, starte also mit einer."
+     ],
+     "q": "Welcher Teil deines Tages würde mit weniger Bildschirmzeit besser sein?",
+     "c": "Wähle heute einen handyfreien Moment und lass das Handy in einem anderen Raum."
+    },
+    "es": {
+     "t": "Rutinas de bienestar digital",
+     "g": "Crea comidas sin móvil, mañanas tranquilas y noches de desconexión.",
+     "p": [
+      "Elige un momento diario sin móvil, como las comidas o la primera hora.",
+      "Carga el móvil fuera del dormitorio para que las noches acaben más suaves.",
+      "Las rutinas pequeñas duran más que las reglas grandes: empieza con una."
+     ],
+     "q": "¿Qué parte de tu día mejoraría con menos pantalla?",
+     "c": "Elige hoy un momento sin móvil y deja el teléfono en otra habitación."
+    },
+    "fr": {
+     "t": "Routines de bien-être numérique",
+     "g": "Crée des repas sans téléphone, des matins calmes et des soirées apaisées.",
+     "p": [
+      "Choisis un moment quotidien sans téléphone, comme les repas ou la première heure.",
+      "Recharge le téléphone hors de la chambre pour des soirées plus douces.",
+      "Les petites routines durent plus que les grandes règles : commence par une seule."
+     ],
+     "q": "Quelle partie de ta journée irait mieux avec moins d'écran ?",
+     "c": "Choisis un moment sans téléphone aujourd'hui et laisse-le dans une autre pièce."
+    },
+    "it": {
+     "t": "Routine di benessere digitale",
+     "g": "Crea pasti senza telefono, mattine calme e sere di relax.",
+     "p": [
+      "Scegli un momento al giorno senza telefono, come i pasti o la prima ora.",
+      "Ricarica il telefono fuori dalla camera così le sere finiscono più dolci.",
+      "Le piccole routine durano più delle grandi regole: parti da una sola."
+     ],
+     "q": "Quale parte della tua giornata andrebbe meglio con meno schermo?",
+     "c": "Scegli oggi un momento senza telefono e lascialo in un'altra stanza."
+    },
+    "pt": {
+     "t": "Rotinas de bem-estar digital",
+     "g": "Cria refeições sem telemóvel, manhãs calmas e noites de desaceleração.",
+     "p": [
+      "Escolhe um momento diário sem telemóvel, como as refeições ou a primeira hora.",
+      "Carrega o telemóvel fora do quarto para as noites terminarem mais suaves.",
+      "As rotinas pequenas duram mais do que as grandes regras: começa com uma."
+     ],
+     "q": "Que parte do teu dia melhoraria com menos ecrã?",
+     "c": "Escolhe hoje um momento sem telemóvel e deixa-o noutra divisão."
+    },
+    "pt_BR": {
+     "t": "Rotinas de bem-estar digital",
+     "g": "Crie refeições sem celular, manhãs calmas e noites de desaceleração.",
+     "p": [
+      "Escolha um momento diário sem celular, como as refeições ou a primeira hora.",
+      "Carregue o celular fora do quarto para as noites terminarem mais suaves.",
+      "Rotinas pequenas duram mais do que grandes regras: comece com uma."
+     ],
+     "q": "Que parte do seu dia melhoraria com menos tela?",
+     "c": "Escolha hoje um momento sem celular e deixe-o em outro cômodo."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: focus and attention",
+     "g": "Recap focus methods, blockers and screen time habits.",
+     "p": [
+      "Timed sprints like Pomodoro make starting and resting easier.",
+      "Blockers, limits and grayscale help when willpower runs out.",
+      "Screen time reports give awareness; routines turn it into change."
+     ],
+     "q": "Which focus tool or habit worked best for you in the last weeks?",
+     "c": "Keep the one habit that helped most and drop one that did not."
+    },
+    "de": {
+     "t": "Rückblick: Fokus und Aufmerksamkeit",
+     "g": "Wiederhole Fokusmethoden, Blocker und Bildschirmzeit-Gewohnheiten.",
+     "p": [
+      "Zeit-Sprints wie Pomodoro erleichtern Start und Pause.",
+      "Blocker, Limits und Graustufen helfen, wenn die Willenskraft nachlässt.",
+      "Berichte schaffen Bewusstsein; Routinen machen daraus Veränderung."
+     ],
+     "q": "Welches Fokus-Werkzeug oder welche Gewohnheit hat dir zuletzt am meisten gebracht?",
+     "c": "Behalte die hilfreichste Gewohnheit und lass eine unwirksame fallen."
+    },
+    "es": {
+     "t": "Repaso: concentración y atención",
+     "g": "Repasa métodos de foco, bloqueadores y hábitos de pantalla.",
+     "p": [
+      "Los sprints con tiempo, como Pomodoro, facilitan empezar y descansar.",
+      "Bloqueadores, límites y escala de grises ayudan cuando falla la fuerza de voluntad.",
+      "Los informes dan conciencia; las rutinas la convierten en cambio."
+     ],
+     "q": "¿Qué herramienta o hábito de foco te ha funcionado mejor estas semanas?",
+     "c": "Quédate con el hábito que más ayudó y deja uno que no sirvió."
+    },
+    "fr": {
+     "t": "Révision : concentration et attention",
+     "g": "Récapitule méthodes de concentration, bloqueurs et habitudes d'écran.",
+     "p": [
+      "Les sprints chronométrés comme Pomodoro facilitent le départ et la pause.",
+      "Bloqueurs, limites et niveaux de gris aident quand la volonté s'épuise.",
+      "Les rapports donnent la conscience; les routines en font un changement."
+     ],
+     "q": "Quel outil ou habitude de concentration a le mieux marché ces dernières semaines ?",
+     "c": "Garde l'habitude la plus utile et abandonne-en une qui n'a pas servi."
+    },
+    "it": {
+     "t": "Ripasso: concentrazione e attenzione",
+     "g": "Ripassa metodi di focus, blocchi e abitudini di schermo.",
+     "p": [
+      "Gli sprint a tempo come il Pomodoro facilitano inizio e pausa.",
+      "Blocchi, limiti e scala di grigi aiutano quando la volontà cala.",
+      "I rapporti danno consapevolezza; le routine la trasformano in cambiamento."
+     ],
+     "q": "Quale strumento o abitudine di focus ha funzionato meglio in queste settimane?",
+     "c": "Tieni l'abitudine più utile e lascia una che non ha funzionato."
+    },
+    "pt": {
+     "t": "Revisão: foco e atenção",
+     "g": "Revê métodos de foco, bloqueadores e hábitos de ecrã.",
+     "p": [
+      "Sprints cronometrados como o Pomodoro facilitam o início e a pausa.",
+      "Bloqueadores, limites e escala de cinzentos ajudam quando a vontade falha.",
+      "Os relatórios dão consciência; as rotinas transformam-na em mudança."
+     ],
+     "q": "Que ferramenta ou hábito de foco funcionou melhor nestas semanas?",
+     "c": "Mantém o hábito que mais ajudou e larga um que não serviu."
+    },
+    "pt_BR": {
+     "t": "Revisão: foco e atenção",
+     "g": "Revise métodos de foco, bloqueadores e hábitos de tela.",
+     "p": [
+      "Sprints cronometrados como o Pomodoro facilitam o começo e a pausa.",
+      "Bloqueadores, limites e escala de cinza ajudam quando a vontade falha.",
+      "Os relatórios dão consciência; as rotinas transformam isso em mudança."
+     ],
+     "q": "Que ferramenta ou hábito de foco funcionou melhor nestas semanas?",
+     "c": "Mantenha o hábito que mais ajudou e largue um que não serviu."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Password managers",
+     "g": "One strong master password unlocks a vault of unique passwords.",
+     "p": [
+      "A password manager creates and remembers a different password for every account.",
+      "You only memorise one strong master password.",
+      "It can also fill logins for you and warn about reused passwords."
+     ],
+     "q": "What do you do now to remember your many passwords?",
+     "c": "Look into one trusted password manager type and list your five most important accounts."
+    },
+    "de": {
+     "t": "Passwort-Manager",
+     "g": "Ein starkes Master-Passwort öffnet einen Tresor voller einmaliger Passwörter.",
+     "p": [
+      "Ein Passwort-Manager erstellt und merkt sich für jedes Konto ein anderes Passwort.",
+      "Du musst dir nur ein starkes Master-Passwort merken.",
+      "Er kann Logins ausfüllen und vor wiederverwendeten Passwörtern warnen."
+     ],
+     "q": "Wie merkst du dir heute deine vielen Passwörter?",
+     "c": "Informiere dich über einen vertrauenswürdigen Passwort-Manager und liste fünf wichtigste Konten."
+    },
+    "es": {
+     "t": "Gestores de contraseñas",
+     "g": "Una contraseña maestra fuerte abre una caja fuerte de claves únicas.",
+     "p": [
+      "Un gestor crea y recuerda una contraseña distinta para cada cuenta.",
+      "Solo memorizas una contraseña maestra fuerte.",
+      "También rellena inicios de sesión y avisa de contraseñas repetidas."
+     ],
+     "q": "¿Cómo recuerdas ahora tus muchas contraseñas?",
+     "c": "Infórmate sobre un gestor de confianza y lista tus cinco cuentas más importantes."
+    },
+    "fr": {
+     "t": "Gestionnaires de mots de passe",
+     "g": "Un mot de passe maître solide ouvre un coffre de mots de passe uniques.",
+     "p": [
+      "Un gestionnaire crée et mémorise un mot de passe différent pour chaque compte.",
+      "Tu ne retiens qu'un seul mot de passe maître solide.",
+      "Il remplit aussi les connexions et signale les mots de passe réutilisés."
+     ],
+     "q": "Comment retiens-tu tes nombreux mots de passe aujourd'hui ?",
+     "c": "Renseigne-toi sur un gestionnaire fiable et liste tes cinq comptes les plus importants."
+    },
+    "it": {
+     "t": "Gestori di password",
+     "g": "Una password principale forte apre un caveau di password uniche.",
+     "p": [
+      "Un gestore crea e ricorda una password diversa per ogni account.",
+      "Devi memorizzare solo una password principale forte.",
+      "Può anche compilare gli accessi e avvisare sulle password riutilizzate."
+     ],
+     "q": "Come ricordi oggi le tue tante password?",
+     "c": "Informati su un gestore affidabile ed elenca i tuoi cinque account più importanti."
+    },
+    "pt": {
+     "t": "Gestores de palavras-passe",
+     "g": "Uma palavra-passe mestra forte abre um cofre de palavras-passe únicas.",
+     "p": [
+      "Um gestor cria e lembra uma palavra-passe diferente para cada conta.",
+      "Só memorizas uma palavra-passe mestra forte.",
+      "Também preenche logins e avisa de palavras-passe repetidas."
+     ],
+     "q": "Como te lembras hoje das tuas muitas palavras-passe?",
+     "c": "Informa-te sobre um gestor de confiança e lista as tuas cinco contas mais importantes."
+    },
+    "pt_BR": {
+     "t": "Gerenciadores de senhas",
+     "g": "Uma senha mestra forte abre um cofre de senhas únicas.",
+     "p": [
+      "Um gerenciador cria e lembra uma senha diferente para cada conta.",
+      "Você só memoriza uma senha mestra forte.",
+      "Ele também preenche logins e avisa sobre senhas repetidas."
+     ],
+     "q": "Como você lembra hoje das suas muitas senhas?",
+     "c": "Conheça um gerenciador confiável e liste suas cinco contas mais importantes."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Creating strong passphrases",
+     "g": "Use several random words for passwords that are long and memorable.",
+     "p": [
+      "Length matters more than tricky symbols: longer is harder to crack.",
+      "Four or more random, unrelated words make a strong passphrase.",
+      "Never reuse it, and never build it from personal facts like birthdays."
+     ],
+     "q": "Can you invent a picture story to help you remember random words?",
+     "c": "Make up a four-word random passphrase as practice, but do not use it anywhere."
+    },
+    "de": {
+     "t": "Starke Passphrasen erstellen",
+     "g": "Nutze mehrere zufällige Wörter für lange, merkbare Passwörter.",
+     "p": [
+      "Länge zählt mehr als knifflige Sonderzeichen: länger ist schwerer zu knacken.",
+      "Vier oder mehr zufällige, unverbundene Wörter ergeben eine starke Passphrase.",
+      "Verwende sie nie doppelt und baue sie nicht aus persönlichen Daten wie Geburtstagen."
+     ],
+     "q": "Kannst du dir eine Bildgeschichte ausdenken, um dir zufällige Wörter zu merken?",
+     "c": "Bilde zur Übung eine zufällige Vier-Wort-Passphrase, aber nutze sie nirgends."
+    },
+    "es": {
+     "t": "Crear frases de contraseña fuertes",
+     "g": "Usa varias palabras al azar para claves largas y fáciles de recordar.",
+     "p": [
+      "La longitud importa más que los símbolos raros: más larga, más difícil de descifrar.",
+      "Cuatro o más palabras aleatorias sin relación forman una frase fuerte.",
+      "No la repitas nunca ni la construyas con datos personales como cumpleaños."
+     ],
+     "q": "¿Puedes inventar una historia con imágenes para recordar palabras al azar?",
+     "c": "Inventa como práctica una frase de cuatro palabras al azar, pero no la uses en ningún sitio."
+    },
+    "fr": {
+     "t": "Créer des phrases de passe solides",
+     "g": "Utilise plusieurs mots aléatoires pour des mots de passe longs et mémorisables.",
+     "p": [
+      "La longueur compte plus que les symboles compliqués : plus long, plus dur à casser.",
+      "Quatre mots aléatoires sans lien ou plus forment une phrase de passe solide.",
+      "Ne la réutilise jamais et ne la construis pas avec des données perso comme des dates de naissance."
+     ],
+     "q": "Peux-tu inventer une histoire en images pour retenir des mots aléatoires ?",
+     "c": "Invente pour t'entraîner une phrase de passe de quatre mots aléatoires, sans l'utiliser nulle part."
+    },
+    "it": {
+     "t": "Creare frasi di accesso robuste",
+     "g": "Usa più parole casuali per password lunghe e memorabili.",
+     "p": [
+      "La lunghezza conta più dei simboli strani: più lunga, più difficile da scoprire.",
+      "Quattro o più parole casuali e slegate formano una frase robusta.",
+      "Non riusarla mai e non costruirla con dati personali come i compleanni."
+     ],
+     "q": "Riesci a inventare una storia per immagini per ricordare parole casuali?",
+     "c": "Inventa per esercizio una frase di quattro parole casuali, ma non usarla da nessuna parte."
+    },
+    "pt": {
+     "t": "Criar frases-passe fortes",
+     "g": "Usa várias palavras aleatórias para palavras-passe longas e memoráveis.",
+     "p": [
+      "O comprimento importa mais do que símbolos complicados: mais longa, mais difícil de quebrar.",
+      "Quatro ou mais palavras aleatórias e sem relação formam uma frase-passe forte.",
+      "Nunca a reutilizes e não a construas com dados pessoais como aniversários."
+     ],
+     "q": "Consegues inventar uma história com imagens para decorar palavras aleatórias?",
+     "c": "Inventa como treino uma frase-passe de quatro palavras aleatórias, mas não a uses em lado nenhum."
+    },
+    "pt_BR": {
+     "t": "Criando frases-senha fortes",
+     "g": "Use várias palavras aleatórias para senhas longas e memoráveis.",
+     "p": [
+      "O tamanho importa mais do que símbolos complicados: mais longa, mais difícil de quebrar.",
+      "Quatro ou mais palavras aleatórias e sem relação formam uma frase-senha forte.",
+      "Nunca a reutilize e não a monte com dados pessoais como aniversários."
+     ],
+     "q": "Você consegue inventar uma história com imagens para decorar palavras aleatórias?",
+     "c": "Invente como treino uma frase-senha de quatro palavras aleatórias, mas não a use em lugar nenhum."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Two-factor authentication",
+     "g": "Add a second step so accounts stay safe even if a password leaks.",
+     "p": [
+      "Two-factor means something you know plus something you have.",
+      "The second step can be a code from an app or a physical security key.",
+      "Turn it on first for email, banking and your password manager."
+     ],
+     "q": "Which of your accounts would hurt most to lose?",
+     "c": "Switch on two-factor for one important account, starting with your email."
+    },
+    "de": {
+     "t": "Zwei-Faktor-Authentifizierung",
+     "g": "Füge einen zweiten Schritt hinzu, damit Konten auch bei einem Passwort-Leak sicher bleiben.",
+     "p": [
+      "Zwei Faktoren heißt: etwas, das du weißt, plus etwas, das du hast.",
+      "Der zweite Schritt kann ein Code aus einer App oder ein Sicherheitsschlüssel sein.",
+      "Aktiviere ihn zuerst für E-Mail, Bank und deinen Passwort-Manager."
+     ],
+     "q": "Bei welchem Konto wäre ein Verlust am schmerzhaftesten?",
+     "c": "Aktiviere Zwei-Faktor für ein wichtiges Konto, beginne mit deiner E-Mail."
+    },
+    "es": {
+     "t": "Autenticación en dos pasos",
+     "g": "Añade un segundo paso para que las cuentas sigan seguras aunque se filtre una clave.",
+     "p": [
+      "Dos pasos significa algo que sabes más algo que tienes.",
+      "El segundo paso puede ser un código de una app o una llave de seguridad física.",
+      "Actívalo primero en el correo, el banco y tu gestor de contraseñas."
+     ],
+     "q": "¿Qué cuenta te dolería más perder?",
+     "c": "Activa los dos pasos en una cuenta importante, empezando por tu correo."
+    },
+    "fr": {
+     "t": "Authentification à deux facteurs",
+     "g": "Ajoute une seconde étape pour protéger tes comptes même si un mot de passe fuit.",
+     "p": [
+      "Deux facteurs, c'est quelque chose que tu sais plus quelque chose que tu as.",
+      "La seconde étape peut être un code d'appli ou une clé de sécurité physique.",
+      "Active-la d'abord pour l'e-mail, la banque et ton gestionnaire de mots de passe."
+     ],
+     "q": "Quel compte te ferait le plus mal à perdre ?",
+     "c": "Active la double vérification sur un compte important, en commençant par ton e-mail."
+    },
+    "it": {
+     "t": "Autenticazione a due fattori",
+     "g": "Aggiungi un secondo passaggio così gli account restano sicuri anche se trapela una password.",
+     "p": [
+      "Due fattori significa qualcosa che sai più qualcosa che hai.",
+      "Il secondo passaggio può essere un codice da app o una chiave di sicurezza fisica.",
+      "Attivala prima per e-mail, banca e gestore di password."
+     ],
+     "q": "Quale account ti dispiacerebbe di più perdere?",
+     "c": "Attiva i due fattori su un account importante, partendo dalla tua e-mail."
+    },
+    "pt": {
+     "t": "Autenticação de dois fatores",
+     "g": "Junta um segundo passo para as contas ficarem seguras mesmo que uma palavra-passe vaze.",
+     "p": [
+      "Dois fatores significam algo que sabes mais algo que tens.",
+      "O segundo passo pode ser um código de uma app ou uma chave de segurança física.",
+      "Ativa-o primeiro no e-mail, no banco e no gestor de palavras-passe."
+     ],
+     "q": "Que conta te custaria mais perder?",
+     "c": "Ativa os dois fatores numa conta importante, começando pelo teu e-mail."
+    },
+    "pt_BR": {
+     "t": "Autenticação em dois fatores",
+     "g": "Adicione um segundo passo para as contas ficarem seguras mesmo se uma senha vazar.",
+     "p": [
+      "Dois fatores significam algo que você sabe mais algo que você tem.",
+      "O segundo passo pode ser um código de um app ou uma chave de segurança física.",
+      "Ative primeiro no e-mail, no banco e no gerenciador de senhas."
+     ],
+     "q": "Qual conta mais doeria perder?",
+     "c": "Ative dois fatores em uma conta importante, começando pelo seu e-mail."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Authenticator apps",
+     "g": "Prefer code apps over text messages for two-factor sign-in.",
+     "p": [
+      "Authenticator apps make a fresh short code every thirty seconds or so.",
+      "Codes live on your device, so they cannot be intercepted like texts.",
+      "Save the backup codes offline and know how to move the app to a new phone."
+     ],
+     "q": "Have you ever been locked out of an account? What helped?",
+     "c": "Store the backup codes of one account in a safe place, offline."
+    },
+    "de": {
+     "t": "Authenticator-Apps",
+     "g": "Bevorzuge Code-Apps statt SMS beim Zwei-Faktor-Login.",
+     "p": [
+      "Authenticator-Apps erzeugen etwa alle dreißig Sekunden einen neuen kurzen Code.",
+      "Die Codes liegen auf deinem Gerät und lassen sich nicht wie SMS abfangen.",
+      "Speichere die Backup-Codes offline und wisse, wie du die App aufs neue Handy bringst."
+     ],
+     "q": "Warst du schon mal aus einem Konto ausgesperrt? Was hat geholfen?",
+     "c": "Bewahre die Backup-Codes eines Kontos offline an einem sicheren Ort auf."
+    },
+    "es": {
+     "t": "Apps de autenticación",
+     "g": "Prefiere apps de códigos antes que SMS para el acceso en dos pasos.",
+     "p": [
+      "Estas apps generan un código corto nuevo más o menos cada treinta segundos.",
+      "Los códigos viven en tu dispositivo, así que no se interceptan como los SMS.",
+      "Guarda los códigos de respaldo sin conexión y sabe cómo pasar la app a otro móvil."
+     ],
+     "q": "¿Te han bloqueado alguna vez una cuenta? ¿Qué te ayudó?",
+     "c": "Guarda los códigos de respaldo de una cuenta en un lugar seguro, sin conexión."
+    },
+    "fr": {
+     "t": "Applis d'authentification",
+     "g": "Préfère les applis de codes aux SMS pour la double vérification.",
+     "p": [
+      "Ces applis créent un nouveau code court toutes les trente secondes environ.",
+      "Les codes restent sur ton appareil, donc impossibles à intercepter comme des SMS.",
+      "Garde les codes de secours hors ligne et sache transférer l'appli sur un nouveau téléphone."
+     ],
+     "q": "T'es-tu déjà retrouvé bloqué hors d'un compte ? Qu'est-ce qui t'a aidé ?",
+     "c": "Range les codes de secours d'un compte dans un endroit sûr, hors ligne."
+    },
+    "it": {
+     "t": "App di autenticazione",
+     "g": "Preferisci le app di codici agli SMS per l'accesso a due fattori.",
+     "p": [
+      "Queste app creano un nuovo codice breve circa ogni trenta secondi.",
+      "I codici restano sul dispositivo, quindi non si intercettano come gli SMS.",
+      "Salva i codici di backup offline e sappi come spostare l'app su un nuovo telefono."
+     ],
+     "q": "Ti è mai capitato di restare chiuso fuori da un account? Cosa ha aiutato?",
+     "c": "Conserva i codici di backup di un account in un posto sicuro, offline."
+    },
+    "pt": {
+     "t": "Apps de autenticação",
+     "g": "Prefere apps de códigos às mensagens de texto no acesso em dois fatores.",
+     "p": [
+      "Estas apps geram um código curto novo mais ou menos a cada trinta segundos.",
+      "Os códigos ficam no teu aparelho, por isso não são intercetados como as SMS.",
+      "Guarda os códigos de reserva offline e sabe passar a app para outro telemóvel."
+     ],
+     "q": "Já ficaste bloqueado fora de uma conta? O que ajudou?",
+     "c": "Guarda os códigos de reserva de uma conta num sítio seguro, offline."
+    },
+    "pt_BR": {
+     "t": "Apps autenticadores",
+     "g": "Prefira apps de códigos a mensagens de texto no acesso em dois fatores.",
+     "p": [
+      "Esses apps geram um código curto novo mais ou menos a cada trinta segundos.",
+      "Os códigos ficam no seu aparelho, por isso não são interceptados como SMS.",
+      "Guarde os códigos de backup offline e saiba passar o app para outro celular."
+     ],
+     "q": "Você já ficou trancado fora de uma conta? O que ajudou?",
+     "c": "Guarde os códigos de backup de uma conta em um lugar seguro, offline."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keeping apps and devices updated",
+     "g": "Updates fix security holes and bugs, so let them run automatically.",
+     "p": [
+      "Many updates close security gaps that attackers could use.",
+      "Automatic updates do the work while you sleep or charge your phone.",
+      "Old devices that no longer get updates deserve extra care or replacing."
+     ],
+     "q": "Do you update right away or postpone? What makes you wait?",
+     "c": "Turn on automatic updates for apps and system, then check for pending ones."
+    },
+    "de": {
+     "t": "Apps und Geräte aktuell halten",
+     "g": "Updates schließen Sicherheitslücken und Fehler, also lass sie automatisch laufen.",
+     "p": [
+      "Viele Updates schließen Sicherheitslücken, die Angreifer nutzen könnten.",
+      "Automatische Updates erledigen die Arbeit, während du schläfst oder lädst.",
+      "Alte Geräte ohne Updates brauchen besondere Vorsicht oder einen Ersatz."
+     ],
+     "q": "Aktualisierst du sofort oder schiebst du auf? Was lässt dich warten?",
+     "c": "Schalte automatische Updates für Apps und System ein und prüfe offene."
+    },
+    "es": {
+     "t": "Mantener apps y dispositivos actualizados",
+     "g": "Las actualizaciones corrigen fallos y brechas de seguridad: déjalas automáticas.",
+     "p": [
+      "Muchas actualizaciones cierran brechas que podrían aprovechar atacantes.",
+      "Las automáticas hacen el trabajo mientras duermes o cargas el móvil.",
+      "Los dispositivos viejos sin actualizaciones necesitan más cuidado o reemplazo."
+     ],
+     "q": "¿Actualizas enseguida o lo pospones? ¿Qué te hace esperar?",
+     "c": "Activa las actualizaciones automáticas de apps y sistema y revisa las pendientes."
+    },
+    "fr": {
+     "t": "Garder applis et appareils à jour",
+     "g": "Les mises à jour corrigent failles et bugs : laisse-les se faire automatiquement.",
+     "p": [
+      "De nombreuses mises à jour ferment des failles que des pirates pourraient exploiter.",
+      "Les mises à jour automatiques travaillent pendant que tu dors ou recharges.",
+      "Les vieux appareils sans mises à jour demandent plus de prudence ou un remplacement."
+     ],
+     "q": "Mets-tu à jour tout de suite ou plus tard ? Qu'est-ce qui te fait attendre ?",
+     "c": "Active les mises à jour automatiques des applis et du système, puis vérifie celles en attente."
+    },
+    "it": {
+     "t": "Tenere app e dispositivi aggiornati",
+     "g": "Gli aggiornamenti correggono falle e bug: lasciali andare in automatico.",
+     "p": [
+      "Molti aggiornamenti chiudono falle di sicurezza che potrebbero sfruttare gli aggressori.",
+      "Gli aggiornamenti automatici lavorano mentre dormi o carichi il telefono.",
+      "I dispositivi vecchi senza aggiornamenti richiedono più cautela o una sostituzione."
+     ],
+     "q": "Aggiorni subito o rimandi? Cosa ti fa aspettare?",
+     "c": "Attiva gli aggiornamenti automatici di app e sistema e controlla quelli in sospeso."
+    },
+    "pt": {
+     "t": "Manter apps e aparelhos atualizados",
+     "g": "As atualizações corrigem falhas e brechas: deixa-as correr sozinhas.",
+     "p": [
+      "Muitas atualizações fecham brechas de segurança que atacantes poderiam usar.",
+      "As atualizações automáticas fazem o trabalho enquanto dormes ou carregas o telemóvel.",
+      "Aparelhos antigos sem atualizações pedem mais cuidado ou substituição."
+     ],
+     "q": "Atualizas logo ou adias? O que te faz esperar?",
+     "c": "Ativa as atualizações automáticas de apps e sistema e verifica as pendentes."
+    },
+    "pt_BR": {
+     "t": "Mantendo apps e aparelhos atualizados",
+     "g": "Atualizações corrigem falhas e brechas: deixe-as rodar sozinhas.",
+     "p": [
+      "Muitas atualizações fecham brechas de segurança que atacantes poderiam usar.",
+      "As automáticas fazem o trabalho enquanto você dorme ou carrega o celular.",
+      "Aparelhos antigos sem atualizações pedem mais cuidado ou troca."
+     ],
+     "q": "Você atualiza logo ou adia? O que faz você esperar?",
+     "c": "Ative as atualizações automáticas de apps e sistema e verifique as pendentes."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spotting phishing messages",
+     "g": "Learn the classic signs of scam messages: urgency, odd links, code requests.",
+     "p": [
+      "Scammers pretend to be banks or delivery firms and create false urgency.",
+      "Check the sender address and hover over links before you tap anything.",
+      "No real service asks for your password or one-time codes by message."
+     ],
+     "q": "Have you ever received a message that felt off? What gave it away?",
+     "c": "Open your spam folder and find three signs of phishing, without clicking anything."
+    },
+    "de": {
+     "t": "Phishing-Nachrichten erkennen",
+     "g": "Lerne die klassischen Zeichen von Betrugsnachrichten: Eile, seltsame Links, Code-Fragen.",
+     "p": [
+      "Betrüger geben sich als Banken oder Paketdienste aus und machen falschen Zeitdruck.",
+      "Prüfe die Absenderadresse und die Links, bevor du irgendetwas antippst.",
+      "Kein echter Dienst fragt per Nachricht nach deinem Passwort oder Einmalcodes."
+     ],
+     "q": "Hast du schon mal eine Nachricht bekommen, die komisch wirkte? Woran lag es?",
+     "c": "Öffne deinen Spam-Ordner und finde drei Phishing-Zeichen, ohne etwas anzuklicken."
+    },
+    "es": {
+     "t": "Detectar mensajes de phishing",
+     "g": "Aprende las señales típicas de mensajes fraudulentos: urgencia, enlaces raros, petición de códigos.",
+     "p": [
+      "Los estafadores fingen ser bancos o mensajerías y crean urgencia falsa.",
+      "Revisa la dirección del remitente y los enlaces antes de tocar nada.",
+      "Ningún servicio real te pide por mensaje tu contraseña ni códigos de un solo uso."
+     ],
+     "q": "¿Has recibido algún mensaje que te sonó raro? ¿Qué lo delataba?",
+     "c": "Abre tu carpeta de spam y encuentra tres señales de phishing sin hacer clic."
+    },
+    "fr": {
+     "t": "Repérer les messages d'hameçonnage",
+     "g": "Apprends les signes classiques des arnaques : urgence, liens étranges, demandes de code.",
+     "p": [
+      "Les escrocs se font passer pour des banques ou des transporteurs et créent une fausse urgence.",
+      "Vérifie l'adresse de l'expéditeur et les liens avant de toucher quoi que ce soit.",
+      "Aucun vrai service ne demande ton mot de passe ou tes codes uniques par message."
+     ],
+     "q": "As-tu déjà reçu un message louche ? Qu'est-ce qui l'a trahi ?",
+     "c": "Ouvre ton dossier de spams et repère trois signes d'hameçonnage, sans rien cliquer."
+    },
+    "it": {
+     "t": "Riconoscere i messaggi di phishing",
+     "g": "Impara i segni classici delle truffe: urgenza, link strani, richieste di codici.",
+     "p": [
+      "I truffatori fingono di essere banche o corrieri e creano falsa urgenza.",
+      "Controlla l'indirizzo del mittente e i link prima di toccare qualsiasi cosa.",
+      "Nessun servizio vero chiede per messaggio la tua password o codici monouso."
+     ],
+     "q": "Hai mai ricevuto un messaggio sospetto? Cosa lo tradiva?",
+     "c": "Apri la cartella spam e trova tre segni di phishing, senza cliccare nulla."
+    },
+    "pt": {
+     "t": "Reconhecer mensagens de phishing",
+     "g": "Aprende os sinais clássicos de burlas: urgência, links estranhos, pedidos de códigos.",
+     "p": [
+      "Os burlões fingem ser bancos ou transportadoras e criam falsa urgência.",
+      "Verifica o endereço do remetente e os links antes de tocares em algo.",
+      "Nenhum serviço verdadeiro pede por mensagem a tua palavra-passe ou códigos de uso único."
+     ],
+     "q": "Já recebeste uma mensagem que parecia estranha? O que a denunciava?",
+     "c": "Abre a pasta de spam e encontra três sinais de phishing, sem clicar em nada."
+    },
+    "pt_BR": {
+     "t": "Reconhecendo mensagens de phishing",
+     "g": "Aprenda os sinais clássicos de golpes: urgência, links estranhos, pedidos de códigos.",
+     "p": [
+      "Golpistas fingem ser bancos ou transportadoras e criam falsa urgência.",
+      "Confira o endereço do remetente e os links antes de tocar em qualquer coisa.",
+      "Nenhum serviço de verdade pede por mensagem sua senha ou códigos de uso único."
+     ],
+     "q": "Você já recebeu uma mensagem que parecia estranha? O que a entregou?",
+     "c": "Abra a pasta de spam e encontre três sinais de phishing, sem clicar em nada."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Public Wi-Fi safety",
+     "g": "Prefer secure sites and trusted networks on open Wi-Fi.",
+     "p": [
+      "Open Wi-Fi in cafes or airports can be watched by others on the same network.",
+      "Secure sites, shown by the padlock, protect most of what you send.",
+      "Avoid banking and important logins on open networks; mobile data is safer."
+     ],
+     "q": "Where do you connect to public Wi-Fi most often?",
+     "c": "Check your phone's saved Wi-Fi list and forget networks you no longer use."
+    },
+    "de": {
+     "t": "Sicherheit im öffentlichen WLAN",
+     "g": "Bevorzuge sichere Seiten und vertrauenswürdige Netze im offenen WLAN.",
+     "p": [
+      "Offenes WLAN in Cafés oder Flughäfen kann von anderen im selben Netz beobachtet werden.",
+      "Sichere Seiten, erkennbar am Schloss, schützen das meiste, was du sendest.",
+      "Vermeide Banking und wichtige Logins in offenen Netzen; Mobilfunk ist sicherer."
+     ],
+     "q": "Wo nutzt du am häufigsten öffentliches WLAN?",
+     "c": "Prüfe die gespeicherten WLANs deines Handys und vergiss nicht mehr genutzte Netze."
+    },
+    "es": {
+     "t": "Seguridad en el wifi público",
+     "g": "Prefiere sitios seguros y redes de confianza en wifis abiertos.",
+     "p": [
+      "En un wifi abierto de cafetería o aeropuerto otros usuarios de la red pueden observar.",
+      "Los sitios seguros, con candado, protegen casi todo lo que envías.",
+      "Evita banca y accesos importantes en redes abiertas; los datos móviles son más seguros."
+     ],
+     "q": "¿Dónde usas más a menudo el wifi público?",
+     "c": "Revisa la lista de wifis guardados y olvida las redes que ya no uses."
+    },
+    "fr": {
+     "t": "Sécurité sur le Wi-Fi public",
+     "g": "Préfère les sites sécurisés et les réseaux de confiance sur un Wi-Fi ouvert.",
+     "p": [
+      "Un Wi-Fi ouvert de café ou d'aéroport peut être observé par d'autres sur le même réseau.",
+      "Les sites sécurisés, avec le cadenas, protègent l'essentiel de ce que tu envoies.",
+      "Évite banque et connexions importantes sur réseau ouvert; les données mobiles sont plus sûres."
+     ],
+     "q": "Où te connectes-tu le plus souvent à un Wi-Fi public ?",
+     "c": "Vérifie la liste de Wi-Fi enregistrés et oublie les réseaux que tu n'utilises plus."
+    },
+    "it": {
+     "t": "Sicurezza sul Wi-Fi pubblico",
+     "g": "Preferisci siti sicuri e reti fidate su Wi-Fi aperti.",
+     "p": [
+      "Un Wi-Fi aperto di bar o aeroporti può essere osservato da altri sulla stessa rete.",
+      "I siti sicuri, con il lucchetto, proteggono gran parte di ciò che invii.",
+      "Evita banca e accessi importanti su reti aperte; i dati mobili sono più sicuri."
+     ],
+     "q": "Dove ti colleghi più spesso a un Wi-Fi pubblico?",
+     "c": "Controlla l'elenco dei Wi-Fi salvati e dimentica le reti che non usi più."
+    },
+    "pt": {
+     "t": "Segurança no Wi-Fi público",
+     "g": "Prefere sites seguros e redes de confiança em Wi-Fi aberto.",
+     "p": [
+      "Um Wi-Fi aberto em cafés ou aeroportos pode ser observado por outros na mesma rede.",
+      "Os sites seguros, com o cadeado, protegem quase tudo o que envias.",
+      "Evita banca e acessos importantes em redes abertas; os dados móveis são mais seguros."
+     ],
+     "q": "Onde te ligas mais vezes a um Wi-Fi público?",
+     "c": "Verifica a lista de Wi-Fi guardados e esquece as redes que já não usas."
+    },
+    "pt_BR": {
+     "t": "Segurança no Wi-Fi público",
+     "g": "Prefira sites seguros e redes confiáveis em Wi-Fi aberto.",
+     "p": [
+      "Um Wi-Fi aberto em cafés ou aeroportos pode ser observado por outros na mesma rede.",
+      "Sites seguros, com o cadeado, protegem quase tudo o que você envia.",
+      "Evite banco e logins importantes em redes abertas; dados móveis são mais seguros."
+     ],
+     "q": "Onde você mais se conecta a um Wi-Fi público?",
+     "c": "Confira a lista de Wi-Fi salvos e esqueça as redes que não usa mais."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Device locks and find-my features",
+     "g": "Protect lost phones with screen locks, biometrics and location tools.",
+     "p": [
+      "A screen lock keeps strangers out of your messages, photos and accounts.",
+      "Fingerprint or face unlock is quick, backed by a strong PIN.",
+      "Find-my tools can locate, ring or lock a lost phone remotely."
+     ],
+     "q": "Would you know what to do within five minutes of losing your phone?",
+     "c": "Check that your lock is on and find-my is enabled on your phone."
+    },
+    "de": {
+     "t": "Gerätesperre und Geräte-orten-Funktionen",
+     "g": "Schütze verlorene Handys mit Bildschirmsperre, Biometrie und Ortungsfunktionen.",
+     "p": [
+      "Eine Bildschirmsperre hält Fremde aus Nachrichten, Fotos und Konten fern.",
+      "Fingerabdruck oder Gesichtsentsperrung ist schnell, mit einer starken PIN als Rückhalt.",
+      "Orten-Funktionen können ein verlorenes Handy finden, klingeln lassen oder sperren."
+     ],
+     "q": "Wüsstest du, was du in fünf Minuten nach dem Verlust deines Handys tun würdest?",
+     "c": "Prüfe, ob deine Sperre aktiv und Geräte orten eingeschaltet ist."
+    },
+    "es": {
+     "t": "Bloqueo del dispositivo y función de localizar",
+     "g": "Protege un móvil perdido con bloqueo, biometría y herramientas de ubicación.",
+     "p": [
+      "El bloqueo de pantalla aleja a extraños de tus mensajes, fotos y cuentas.",
+      "La huella o el rostro son rápidos, respaldados por un PIN fuerte.",
+      "Las herramientas de localizar pueden ubicar, hacer sonar o bloquear el móvil a distancia."
+     ],
+     "q": "¿Sabrías qué hacer en cinco minutos si perdieras tu móvil?",
+     "c": "Comprueba que el bloqueo está activo y que localizar está habilitado."
+    },
+    "fr": {
+     "t": "Verrouillage et localisation de l'appareil",
+     "g": "Protège un téléphone perdu avec verrouillage, biométrie et localisation.",
+     "p": [
+      "Le verrouillage d'écran tient les inconnus à l'écart de tes messages, photos et comptes.",
+      "Empreinte ou visage sont rapides, appuyés par un code solide.",
+      "Les outils de localisation peuvent retrouver, faire sonner ou verrouiller le téléphone à distance."
+     ],
+     "q": "Saurais-tu quoi faire dans les cinq minutes après avoir perdu ton téléphone ?",
+     "c": "Vérifie que ton verrouillage est actif et que la localisation est activée."
+    },
+    "it": {
+     "t": "Blocco del dispositivo e funzioni di localizzazione",
+     "g": "Proteggi un telefono smarrito con blocco, biometria e localizzazione.",
+     "p": [
+      "Il blocco schermo tiene gli estranei lontani da messaggi, foto e account.",
+      "Impronta o volto sono rapidi, sostenuti da un PIN forte.",
+      "Gli strumenti di localizzazione possono trovare, far squillare o bloccare il telefono da remoto."
+     ],
+     "q": "Sapresti cosa fare nei cinque minuti dopo aver perso il telefono?",
+     "c": "Controlla che il blocco sia attivo e che la localizzazione sia abilitata."
+    },
+    "pt": {
+     "t": "Bloqueio do aparelho e funções de localizar",
+     "g": "Protege um telemóvel perdido com bloqueio, biometria e localização.",
+     "p": [
+      "O bloqueio de ecrã mantém estranhos longe das mensagens, fotos e contas.",
+      "Impressão digital ou rosto são rápidos, apoiados por um PIN forte.",
+      "As ferramentas de localizar podem encontrar, tocar ou bloquear o telemóvel à distância."
+     ],
+     "q": "Saberias o que fazer nos cinco minutos a seguir a perder o telemóvel?",
+     "c": "Verifica que o bloqueio está ativo e que a localização está ligada."
+    },
+    "pt_BR": {
+     "t": "Bloqueio do aparelho e recursos de localizar",
+     "g": "Proteja um celular perdido com bloqueio, biometria e localização.",
+     "p": [
+      "O bloqueio de tela mantém estranhos longe das mensagens, fotos e contas.",
+      "Digital ou rosto são rápidos, apoiados por um PIN forte.",
+      "Os recursos de localizar podem achar, tocar ou bloquear o celular à distância."
+     ],
+     "q": "Você saberia o que fazer nos cinco minutos após perder o celular?",
+     "c": "Confira se o bloqueio está ativo e se o localizar está ligado."
+    }
+   }
+  }
+ ]
+}

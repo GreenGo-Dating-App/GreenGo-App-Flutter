@@ -1,0 +1,835 @@
+{
+ "topic": "science",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to science",
+     "g": "Discover that science is a way of asking questions and testing the answers with evidence.",
+     "p": [
+      "Science starts with a question about how the world works.",
+      "Scientists look for evidence: things we can observe, measure and check.",
+      "Anyone can think like a scientist, at any age and anywhere."
+     ],
+     "q": "What is something in nature or at home that you have always wondered about?",
+     "c": "Write down three questions about everyday things you would love to answer."
+    },
+    "de": {
+     "t": "Willkommen in der Wissenschaft",
+     "g": "Entdecke, dass Wissenschaft heißt, Fragen zu stellen und Antworten mit Belegen zu prüfen.",
+     "p": [
+      "Wissenschaft beginnt mit einer Frage darüber, wie die Welt funktioniert.",
+      "Forschende suchen Belege: Dinge, die man beobachten, messen und überprüfen kann.",
+      "Jeder kann wie ein Wissenschaftler denken, in jedem Alter und überall."
+     ],
+     "q": "Worüber in der Natur oder zu Hause hast du dich schon immer gewundert?",
+     "c": "Schreib drei Fragen zu Alltagsdingen auf, die du gern beantworten würdest."
+    },
+    "es": {
+     "t": "Bienvenido a la ciencia",
+     "g": "Descubre que la ciencia es una forma de hacer preguntas y comprobar las respuestas con pruebas.",
+     "p": [
+      "La ciencia empieza con una pregunta sobre cómo funciona el mundo.",
+      "Los científicos buscan pruebas: cosas que se pueden observar, medir y comprobar.",
+      "Cualquiera puede pensar como un científico, a cualquier edad y en cualquier lugar."
+     ],
+     "q": "¿Qué cosa de la naturaleza o de tu casa siempre te ha dado curiosidad?",
+     "c": "Escribe tres preguntas sobre cosas cotidianas que te encantaría responder."
+    },
+    "fr": {
+     "t": "Bienvenue dans la science",
+     "g": "Découvrir que la science consiste à poser des questions et à tester les réponses avec des preuves.",
+     "p": [
+      "La science commence par une question sur le fonctionnement du monde.",
+      "Les scientifiques cherchent des preuves : ce qu'on peut observer, mesurer et vérifier.",
+      "Tout le monde peut penser comme un scientifique, à tout âge et partout."
+     ],
+     "q": "Qu'est-ce qui, dans la nature ou chez toi, t'a toujours intrigué ?",
+     "c": "Note trois questions sur des choses du quotidien auxquelles tu aimerais répondre."
+    },
+    "it": {
+     "t": "Benvenuto nella scienza",
+     "g": "Scoprire che la scienza è un modo di fare domande e verificare le risposte con le prove.",
+     "p": [
+      "La scienza comincia con una domanda su come funziona il mondo.",
+      "Gli scienziati cercano prove: cose che si possono osservare, misurare e controllare.",
+      "Chiunque può pensare come uno scienziato, a qualsiasi età e ovunque."
+     ],
+     "q": "C'è qualcosa in natura o in casa su cui ti sei sempre fatto domande?",
+     "c": "Scrivi tre domande su cose di tutti i giorni a cui ti piacerebbe rispondere."
+    },
+    "pt": {
+     "t": "Bem-vindo à ciência",
+     "g": "Descobrir que a ciência é uma forma de fazer perguntas e testar as respostas com provas.",
+     "p": [
+      "A ciência começa com uma pergunta sobre como o mundo funciona.",
+      "Os cientistas procuram provas: coisas que se podem observar, medir e verificar.",
+      "Qualquer pessoa pode pensar como um cientista, em qualquer idade e lugar."
+     ],
+     "q": "Há alguma coisa na natureza ou em casa que sempre te deixou curioso?",
+     "c": "Escreve três perguntas sobre coisas do dia a dia a que gostavas de responder."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo à ciência",
+     "g": "Descobrir que a ciência é um jeito de fazer perguntas e testar as respostas com evidências.",
+     "p": [
+      "A ciência começa com uma pergunta sobre como o mundo funciona.",
+      "Os cientistas buscam evidências: coisas que dá para observar, medir e conferir.",
+      "Qualquer pessoa pode pensar como cientista, em qualquer idade e lugar."
+     ],
+     "q": "Tem alguma coisa na natureza ou em casa que sempre te deixou curioso?",
+     "c": "Anote três perguntas sobre coisas do dia a dia que você adoraria responder."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Curiosity is where it starts",
+     "g": "See how great discoveries begin with simple everyday questions.",
+     "p": [
+      "Questions like why the sky is blue led to real discoveries about light.",
+      "Asking why bread rises led people to study yeast, a tiny living fungus.",
+      "No question is too simple: simple questions often have deep answers."
+     ],
+     "q": "Which simple why question would you love a clear answer to?",
+     "c": "Spend five minutes noticing one ordinary thing and ask why it happens."
+    },
+    "de": {
+     "t": "Neugier ist der Anfang",
+     "g": "Sieh, wie große Entdeckungen mit einfachen Alltagsfragen beginnen.",
+     "p": [
+      "Fragen wie „Warum ist der Himmel blau?“ führten zu echten Erkenntnissen über Licht.",
+      "Die Frage, warum Brot aufgeht, führte zur Erforschung der Hefe, eines winzigen Pilzes.",
+      "Keine Frage ist zu einfach: Einfache Fragen haben oft tiefe Antworten."
+     ],
+     "q": "Auf welche einfache Warum-Frage hättest du gern eine klare Antwort?",
+     "c": "Beobachte fünf Minuten lang etwas Gewöhnliches und frag, warum es passiert."
+    },
+    "es": {
+     "t": "La curiosidad es el comienzo",
+     "g": "Ver cómo los grandes descubrimientos empiezan con preguntas sencillas de cada día.",
+     "p": [
+      "Preguntas como por qué el cielo es azul llevaron a descubrir cosas sobre la luz.",
+      "Preguntar por qué sube el pan llevó a estudiar la levadura, un hongo diminuto.",
+      "Ninguna pregunta es demasiado simple: las sencillas suelen tener respuestas profundas."
+     ],
+     "q": "¿Qué pregunta sencilla de por qué te gustaría responder con claridad?",
+     "c": "Observa algo cotidiano durante cinco minutos y pregúntate por qué ocurre."
+    },
+    "fr": {
+     "t": "Tout commence par la curiosité",
+     "g": "Voir comment les grandes découvertes naissent de questions simples du quotidien.",
+     "p": [
+      "Des questions comme pourquoi le ciel est bleu ont mené à des découvertes sur la lumière.",
+      "Se demander pourquoi le pain lève a conduit à étudier la levure, un minuscule champignon.",
+      "Aucune question n'est trop simple : les plus simples ont souvent des réponses profondes."
+     ],
+     "q": "À quelle question simple en pourquoi aimerais-tu une réponse claire ?",
+     "c": "Observe une chose banale pendant cinq minutes et demande-toi pourquoi elle se produit."
+    },
+    "it": {
+     "t": "Tutto parte dalla curiosità",
+     "g": "Vedere come le grandi scoperte nascono da semplici domande quotidiane.",
+     "p": [
+      "Domande come perché il cielo è blu hanno portato a scoperte sulla luce.",
+      "Chiedersi perché il pane lievita ha portato a studiare il lievito, un minuscolo fungo.",
+      "Nessuna domanda è troppo semplice: spesso le più semplici hanno risposte profonde."
+     ],
+     "q": "A quale semplice domanda sul perché vorresti una risposta chiara?",
+     "c": "Osserva una cosa comune per cinque minuti e chiediti perché succede."
+    },
+    "pt": {
+     "t": "A curiosidade é o começo",
+     "g": "Ver como as grandes descobertas começam com perguntas simples do dia a dia.",
+     "p": [
+      "Perguntas como porque é que o céu é azul levaram a descobertas sobre a luz.",
+      "Perguntar porque cresce o pão levou ao estudo da levedura, um fungo minúsculo.",
+      "Nenhuma pergunta é simples demais: as simples têm muitas vezes respostas profundas."
+     ],
+     "q": "A que pergunta simples sobre um porquê gostavas de ter uma resposta clara?",
+     "c": "Observa uma coisa banal durante cinco minutos e pergunta porque acontece."
+    },
+    "pt_BR": {
+     "t": "A curiosidade é o começo",
+     "g": "Ver como grandes descobertas começam com perguntas simples do dia a dia.",
+     "p": [
+      "Perguntas como por que o céu é azul levaram a descobertas sobre a luz.",
+      "Perguntar por que o pão cresce levou ao estudo do fermento, um fungo minúsculo.",
+      "Nenhuma pergunta é simples demais: as simples muitas vezes têm respostas profundas."
+     ],
+     "q": "Qual pergunta simples de por que você adoraria ver respondida com clareza?",
+     "c": "Observe uma coisa comum por cinco minutos e pergunte por que ela acontece."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The scientific method",
+     "g": "Learn the five steps scientists use to turn questions into reliable answers.",
+     "p": [
+      "Observe something and ask a clear question about it.",
+      "Make a hypothesis, a possible answer, then test it with an experiment.",
+      "Look at the results and draw a conclusion, even if it surprises you."
+     ],
+     "q": "Have you ever tested an idea at home, like a new recipe or a shortcut?",
+     "c": "Pick a tiny question, like which spot dries a towel faster, and plan a test."
+    },
+    "de": {
+     "t": "Die wissenschaftliche Methode",
+     "g": "Lerne die fünf Schritte, mit denen Forschende Fragen in verlässliche Antworten verwandeln.",
+     "p": [
+      "Beobachte etwas und stelle eine klare Frage dazu.",
+      "Stelle eine Hypothese auf, eine mögliche Antwort, und prüfe sie mit einem Experiment.",
+      "Werte die Ergebnisse aus und ziehe ein Fazit, auch wenn es dich überrascht."
+     ],
+     "q": "Hast du schon mal zu Hause eine Idee getestet, etwa ein Rezept oder eine Abkürzung?",
+     "c": "Wähle eine kleine Frage, etwa wo ein Handtuch schneller trocknet, und plane einen Test."
+    },
+    "es": {
+     "t": "El método científico",
+     "g": "Aprender los cinco pasos que usan los científicos para convertir preguntas en respuestas fiables.",
+     "p": [
+      "Observa algo y hazte una pregunta clara sobre ello.",
+      "Plantea una hipótesis, una posible respuesta, y ponla a prueba con un experimento.",
+      "Analiza los resultados y saca una conclusión, aunque te sorprenda."
+     ],
+     "q": "¿Alguna vez has puesto a prueba una idea en casa, como una receta o un atajo?",
+     "c": "Elige una pregunta pequeña, como dónde se seca antes una toalla, y planea una prueba."
+    },
+    "fr": {
+     "t": "La méthode scientifique",
+     "g": "Apprendre les cinq étapes qui transforment une question en réponse fiable.",
+     "p": [
+      "Observe quelque chose et pose une question claire à son sujet.",
+      "Formule une hypothèse, une réponse possible, puis teste-la par une expérience.",
+      "Analyse les résultats et tire une conclusion, même si elle te surprend."
+     ],
+     "q": "As-tu déjà testé une idée chez toi, comme une recette ou un raccourci ?",
+     "c": "Choisis une petite question, comme où une serviette sèche le plus vite, et prévois un test."
+    },
+    "it": {
+     "t": "Il metodo scientifico",
+     "g": "Imparare i cinque passi che trasformano una domanda in una risposta affidabile.",
+     "p": [
+      "Osserva qualcosa e fatti una domanda chiara.",
+      "Formula un'ipotesi, una possibile risposta, e mettila alla prova con un esperimento.",
+      "Analizza i risultati e trai una conclusione, anche se ti sorprende."
+     ],
+     "q": "Hai mai messo alla prova un'idea a casa, come una ricetta o una scorciatoia?",
+     "c": "Scegli una piccola domanda, ad esempio dove asciuga prima un asciugamano, e pianifica un test."
+    },
+    "pt": {
+     "t": "O método científico",
+     "g": "Aprender os cinco passos que transformam uma pergunta numa resposta fiável.",
+     "p": [
+      "Observa algo e faz uma pergunta clara sobre isso.",
+      "Formula uma hipótese, uma resposta possível, e testa-a com uma experiência.",
+      "Analisa os resultados e tira uma conclusão, mesmo que te surpreenda."
+     ],
+     "q": "Já alguma vez testaste uma ideia em casa, como uma receita ou um atalho?",
+     "c": "Escolhe uma pequena pergunta, como onde seca mais depressa uma toalha, e planeia um teste."
+    },
+    "pt_BR": {
+     "t": "O método científico",
+     "g": "Aprender os cinco passos que transformam uma pergunta em uma resposta confiável.",
+     "p": [
+      "Observe algo e faça uma pergunta clara sobre isso.",
+      "Formule uma hipótese, uma resposta possível, e teste com um experimento.",
+      "Analise os resultados e tire uma conclusão, mesmo que ela surpreenda você."
+     ],
+     "q": "Você já testou uma ideia em casa, como uma receita ou um atalho?",
+     "c": "Escolha uma pergunta pequena, como onde uma toalha seca mais rápido, e planeje um teste."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What makes a good hypothesis",
+     "g": "Learn why a good hypothesis is a testable guess that could be proven wrong.",
+     "p": [
+      "A hypothesis is a clear, specific guess you can test.",
+      "It must be possible to show it is wrong; that makes it useful.",
+      "A wrong hypothesis is not a failure: it tells you something new."
+     ],
+     "q": "What is one guess you have about the world that you could actually test?",
+     "c": "Turn a question into an if-then sentence, like: if I water it more, it will grow faster."
+    },
+    "de": {
+     "t": "Was macht eine gute Hypothese aus",
+     "g": "Lerne, warum eine gute Hypothese eine prüfbare Vermutung ist, die sich als falsch erweisen kann.",
+     "p": [
+      "Eine Hypothese ist eine klare, genaue Vermutung, die man testen kann.",
+      "Man muss zeigen können, dass sie falsch ist; genau das macht sie nützlich.",
+      "Eine falsche Hypothese ist kein Misserfolg: Sie verrät dir etwas Neues."
+     ],
+     "q": "Welche Vermutung über die Welt hast du, die du wirklich testen könntest?",
+     "c": "Mach aus einer Frage einen Wenn-dann-Satz: Wenn ich mehr gieße, wächst sie schneller."
+    },
+    "es": {
+     "t": "Qué hace buena una hipótesis",
+     "g": "Aprender por qué una buena hipótesis es una suposición comprobable que podría ser falsa.",
+     "p": [
+      "Una hipótesis es una suposición clara y concreta que se puede poner a prueba.",
+      "Debe ser posible demostrar que es falsa; eso es lo que la hace útil.",
+      "Una hipótesis equivocada no es un fracaso: te enseña algo nuevo."
+     ],
+     "q": "¿Qué suposición tienes sobre el mundo que de verdad podrías comprobar?",
+     "c": "Convierte una pregunta en una frase si-entonces: si la riego más, crecerá más rápido."
+    },
+    "fr": {
+     "t": "Une bonne hypothèse",
+     "g": "Comprendre pourquoi une bonne hypothèse est une supposition testable qui pourrait être fausse.",
+     "p": [
+      "Une hypothèse est une supposition claire et précise que l'on peut tester.",
+      "Il doit être possible de montrer qu'elle est fausse ; c'est ce qui la rend utile.",
+      "Une hypothèse fausse n'est pas un échec : elle t'apprend quelque chose."
+     ],
+     "q": "Quelle supposition sur le monde pourrais-tu vraiment tester ?",
+     "c": "Transforme une question en phrase si-alors : si je l'arrose plus, elle poussera plus vite."
+    },
+    "it": {
+     "t": "Cosa rende buona un'ipotesi",
+     "g": "Capire perché una buona ipotesi è un'idea verificabile che potrebbe rivelarsi sbagliata.",
+     "p": [
+      "Un'ipotesi è un'idea chiara e precisa che si può mettere alla prova.",
+      "Deve essere possibile dimostrare che è sbagliata: è questo che la rende utile.",
+      "Un'ipotesi sbagliata non è un fallimento: ti insegna qualcosa di nuovo."
+     ],
+     "q": "Quale idea che hai sul mondo potresti davvero mettere alla prova?",
+     "c": "Trasforma una domanda in una frase se-allora: se la innaffio di più, crescerà più in fretta."
+    },
+    "pt": {
+     "t": "O que faz uma boa hipótese",
+     "g": "Perceber porque uma boa hipótese é uma suposição testável que pode estar errada.",
+     "p": [
+      "Uma hipótese é uma suposição clara e concreta que se pode testar.",
+      "Tem de ser possível mostrar que está errada; é isso que a torna útil.",
+      "Uma hipótese errada não é um fracasso: ensina-te algo novo."
+     ],
+     "q": "Que suposição tens sobre o mundo que poderias mesmo testar?",
+     "c": "Transforma uma pergunta numa frase se-então: se a regar mais, vai crescer mais depressa."
+    },
+    "pt_BR": {
+     "t": "O que faz uma boa hipótese",
+     "g": "Entender por que uma boa hipótese é um palpite testável que pode estar errado.",
+     "p": [
+      "Uma hipótese é um palpite claro e específico que dá para testar.",
+      "Precisa ser possível mostrar que ela está errada; é isso que a torna útil.",
+      "Uma hipótese errada não é fracasso: ela ensina algo novo."
+     ],
+     "q": "Qual palpite você tem sobre o mundo que daria para testar de verdade?",
+     "c": "Transforme uma pergunta numa frase se-então: se eu regar mais, a planta vai crescer mais rápido."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fair tests and variables",
+     "g": "Learn to change one thing at a time so you know what caused a result.",
+     "p": [
+      "The thing you change on purpose is the independent variable.",
+      "The thing you measure is the dependent variable; everything else stays the same.",
+      "If you change two things at once, you cannot tell which one mattered."
+     ],
+     "q": "If you tested which plant food works best, what would you keep the same?",
+     "c": "Roll a ball down a book ramp at two heights, keeping the same ball and surface."
+    },
+    "de": {
+     "t": "Faire Tests und Variablen",
+     "g": "Lerne, immer nur eine Sache zu ändern, damit du weißt, was ein Ergebnis verursacht hat.",
+     "p": [
+      "Was du absichtlich veränderst, ist die unabhängige Variable.",
+      "Was du misst, ist die abhängige Variable; alles andere bleibt gleich.",
+      "Änderst du zwei Dinge auf einmal, weißt du nicht, welches wichtig war."
+     ],
+     "q": "Wenn du Pflanzendünger vergleichst, was würdest du gleich lassen?",
+     "c": "Lass einen Ball über eine Buchrampe in zwei Höhen rollen, mit gleichem Ball und Boden."
+    },
+    "es": {
+     "t": "Pruebas justas y variables",
+     "g": "Aprender a cambiar una sola cosa a la vez para saber qué causó un resultado.",
+     "p": [
+      "Lo que cambias a propósito es la variable independiente.",
+      "Lo que mides es la variable dependiente; todo lo demás se mantiene igual.",
+      "Si cambias dos cosas a la vez, no sabrás cuál influyó."
+     ],
+     "q": "Si probaras qué abono funciona mejor, ¿qué mantendrías igual?",
+     "c": "Haz rodar una pelota por una rampa de libros a dos alturas, con la misma pelota y superficie."
+    },
+    "fr": {
+     "t": "Tests équitables et variables",
+     "g": "Apprendre à ne changer qu'une chose à la fois pour savoir ce qui a causé un résultat.",
+     "p": [
+      "Ce que tu modifies exprès s'appelle la variable indépendante.",
+      "Ce que tu mesures est la variable dépendante ; tout le reste ne change pas.",
+      "Si tu changes deux choses à la fois, impossible de savoir laquelle a compté."
+     ],
+     "q": "Pour tester quel engrais marche le mieux, que garderais-tu identique ?",
+     "c": "Fais rouler une balle sur une pente de livres à deux hauteurs, même balle, même surface."
+    },
+    "it": {
+     "t": "Test equi e variabili",
+     "g": "Imparare a cambiare una cosa alla volta per sapere cosa ha causato un risultato.",
+     "p": [
+      "Ciò che cambi di proposito è la variabile indipendente.",
+      "Ciò che misuri è la variabile dipendente; tutto il resto resta uguale.",
+      "Se cambi due cose insieme, non puoi sapere quale ha contato."
+     ],
+     "q": "Se provassi quale concime funziona meglio, cosa terresti uguale?",
+     "c": "Fai rotolare una pallina su una rampa di libri a due altezze, stessa pallina e superficie."
+    },
+    "pt": {
+     "t": "Testes justos e variáveis",
+     "g": "Aprender a mudar só uma coisa de cada vez para saber o que causou um resultado.",
+     "p": [
+      "O que mudas de propósito é a variável independente.",
+      "O que medes é a variável dependente; tudo o resto fica igual.",
+      "Se mudares duas coisas ao mesmo tempo, não sabes qual teve efeito."
+     ],
+     "q": "Se testasses que adubo funciona melhor, o que manterias igual?",
+     "c": "Faz rolar uma bola numa rampa de livros a duas alturas, com a mesma bola e superfície."
+    },
+    "pt_BR": {
+     "t": "Testes justos e variáveis",
+     "g": "Aprender a mudar uma coisa por vez para saber o que causou um resultado.",
+     "p": [
+      "O que você muda de propósito é a variável independente.",
+      "O que você mede é a variável dependente; todo o resto fica igual.",
+      "Se você mudar duas coisas ao mesmo tempo, não dá para saber qual fez diferença."
+     ],
+     "q": "Se testasse qual adubo funciona melhor, o que você manteria igual?",
+     "c": "Role uma bola numa rampa de livros em duas alturas, com a mesma bola e superfície."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Measuring the world",
+     "g": "Understand why scientists measure carefully and repeat their measurements.",
+     "p": [
+      "Measuring turns vague words like big or fast into clear numbers.",
+      "Every measurement has a little error, so scientists repeat it several times.",
+      "Taking the average of repeated measurements gives a more trustworthy result."
+     ],
+     "q": "What do you measure in daily life, like time, steps or ingredients?",
+     "c": "Measure the length of your table three times and compare the results."
+    },
+    "de": {
+     "t": "Die Welt vermessen",
+     "g": "Verstehe, warum Forschende sorgfältig messen und ihre Messungen wiederholen.",
+     "p": [
+      "Messen macht aus vagen Wörtern wie groß oder schnell klare Zahlen.",
+      "Jede Messung hat einen kleinen Fehler, darum wird sie mehrmals wiederholt.",
+      "Der Durchschnitt mehrerer Messungen liefert ein verlässlicheres Ergebnis."
+     ],
+     "q": "Was misst du im Alltag, etwa Zeit, Schritte oder Zutaten?",
+     "c": "Miss die Länge deines Tisches dreimal und vergleiche die Ergebnisse."
+    },
+    "es": {
+     "t": "Medir el mundo",
+     "g": "Entender por qué los científicos miden con cuidado y repiten sus mediciones.",
+     "p": [
+      "Medir convierte palabras vagas como grande o rápido en números claros.",
+      "Toda medición tiene un pequeño error, por eso se repite varias veces.",
+      "La media de varias mediciones da un resultado más fiable."
+     ],
+     "q": "¿Qué mides en tu día a día, como tiempo, pasos o ingredientes?",
+     "c": "Mide el largo de tu mesa tres veces y compara los resultados."
+    },
+    "fr": {
+     "t": "Mesurer le monde",
+     "g": "Comprendre pourquoi les scientifiques mesurent avec soin et répètent leurs mesures.",
+     "p": [
+      "Mesurer transforme des mots flous comme grand ou rapide en nombres précis.",
+      "Toute mesure comporte une petite erreur, on la répète donc plusieurs fois.",
+      "La moyenne de plusieurs mesures donne un résultat plus fiable."
+     ],
+     "q": "Que mesures-tu au quotidien : le temps, tes pas, des ingrédients ?",
+     "c": "Mesure la longueur de ta table trois fois et compare les résultats."
+    },
+    "it": {
+     "t": "Misurare il mondo",
+     "g": "Capire perché gli scienziati misurano con cura e ripetono le misure.",
+     "p": [
+      "Misurare trasforma parole vaghe come grande o veloce in numeri chiari.",
+      "Ogni misura ha un piccolo errore, perciò si ripete più volte.",
+      "La media di più misure dà un risultato più affidabile."
+     ],
+     "q": "Cosa misuri nella vita di tutti i giorni, come tempo, passi o ingredienti?",
+     "c": "Misura la lunghezza del tuo tavolo tre volte e confronta i risultati."
+    },
+    "pt": {
+     "t": "Medir o mundo",
+     "g": "Perceber porque os cientistas medem com cuidado e repetem as medições.",
+     "p": [
+      "Medir transforma palavras vagas como grande ou rápido em números claros.",
+      "Toda a medição tem um pequeno erro, por isso repete-se várias vezes.",
+      "A média de várias medições dá um resultado mais fiável."
+     ],
+     "q": "O que medes no dia a dia, como tempo, passos ou ingredientes?",
+     "c": "Mede o comprimento da tua mesa três vezes e compara os resultados."
+    },
+    "pt_BR": {
+     "t": "Medindo o mundo",
+     "g": "Entender por que os cientistas medem com cuidado e repetem as medições.",
+     "p": [
+      "Medir transforma palavras vagas como grande ou rápido em números claros.",
+      "Toda medição tem um pequeno erro, por isso ela é repetida várias vezes.",
+      "A média de várias medições dá um resultado mais confiável."
+     ],
+     "q": "O que você mede no dia a dia, como tempo, passos ou ingredientes?",
+     "c": "Meça o comprimento da sua mesa três vezes e compare os resultados."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The metric system",
+     "g": "See how meters, grams and liters, built on tens, help scientists share results worldwide.",
+     "p": [
+      "The meter measures length, the gram mass and the liter volume.",
+      "Prefixes multiply by ten: a kilometer is 1000 meters, a centimeter is 1/100 of a meter.",
+      "One shared system means a result in Japan can be checked in Brazil."
+     ],
+     "q": "Which units do you use most where you live, and do you ever mix systems?",
+     "c": "Find three items at home labeled in grams, liters or meters."
+    },
+    "de": {
+     "t": "Das metrische System",
+     "g": "Sieh, wie Meter, Gramm und Liter auf Zehnern beruhen und den weltweiten Austausch erleichtern.",
+     "p": [
+      "Der Meter misst Länge, das Gramm Masse und der Liter Volumen.",
+      "Vorsilben arbeiten mit Zehnern: Ein Kilometer sind 1000 Meter, ein Zentimeter 1/100 Meter.",
+      "Ein gemeinsames System heißt: Ein Ergebnis aus Japan lässt sich in Brasilien prüfen."
+     ],
+     "q": "Welche Einheiten nutzt du am meisten, und mischst du manchmal Systeme?",
+     "c": "Finde zu Hause drei Dinge mit Angaben in Gramm, Liter oder Meter."
+    },
+    "es": {
+     "t": "El sistema métrico",
+     "g": "Ver cómo el metro, el gramo y el litro, basados en el diez, ayudan a compartir resultados.",
+     "p": [
+      "El metro mide longitud, el gramo masa y el litro volumen.",
+      "Los prefijos multiplican por diez: un kilómetro son 1000 metros, un centímetro 1/100 de metro.",
+      "Un sistema común permite que un resultado de Japón se compruebe en Brasil."
+     ],
+     "q": "¿Qué unidades usas más donde vives? ¿Mezclas sistemas alguna vez?",
+     "c": "Busca en casa tres objetos con etiquetas en gramos, litros o metros."
+    },
+    "fr": {
+     "t": "Le système métrique",
+     "g": "Voir comment le mètre, le gramme et le litre, fondés sur dix, facilitent le partage des résultats.",
+     "p": [
+      "Le mètre mesure la longueur, le gramme la masse et le litre le volume.",
+      "Les préfixes vont de dix en dix : un kilomètre fait 1000 mètres, un centimètre 1/100 de mètre.",
+      "Un système commun permet de vérifier au Brésil un résultat obtenu au Japon."
+     ],
+     "q": "Quelles unités utilises-tu le plus, et t'arrive-t-il de mélanger les systèmes ?",
+     "c": "Trouve chez toi trois objets étiquetés en grammes, litres ou mètres."
+    },
+    "it": {
+     "t": "Il sistema metrico",
+     "g": "Vedere come metro, grammo e litro, basati sul dieci, aiutano a condividere i risultati nel mondo.",
+     "p": [
+      "Il metro misura la lunghezza, il grammo la massa e il litro il volume.",
+      "I prefissi vanno per dieci: un chilometro è 1000 metri, un centimetro 1/100 di metro.",
+      "Un sistema comune permette di verificare in Brasile un risultato ottenuto in Giappone."
+     ],
+     "q": "Quali unità usi di più dove vivi? Ti capita di mescolare sistemi?",
+     "c": "Trova in casa tre oggetti con etichette in grammi, litri o metri."
+    },
+    "pt": {
+     "t": "O sistema métrico",
+     "g": "Ver como o metro, o grama e o litro, baseados no dez, ajudam a partilhar resultados.",
+     "p": [
+      "O metro mede comprimento, o grama massa e o litro volume.",
+      "Os prefixos vão de dez em dez: um quilómetro são 1000 metros, um centímetro 1/100 do metro.",
+      "Um sistema comum permite verificar no Brasil um resultado obtido no Japão."
+     ],
+     "q": "Que unidades usas mais onde vives? Alguma vez misturas sistemas?",
+     "c": "Encontra em casa três objetos com rótulos em gramas, litros ou metros."
+    },
+    "pt_BR": {
+     "t": "O sistema métrico",
+     "g": "Ver como metro, grama e litro, baseados no dez, ajudam a compartilhar resultados no mundo.",
+     "p": [
+      "O metro mede comprimento, o grama mede massa e o litro mede volume.",
+      "Os prefixos vão de dez em dez: um quilômetro tem 1000 metros, um centímetro é 1/100 do metro.",
+      "Um sistema comum permite conferir no Brasil um resultado obtido no Japão."
+     ],
+     "q": "Quais unidades você mais usa onde mora? Já misturou sistemas?",
+     "c": "Encontre em casa três objetos com rótulos em gramas, litros ou metros."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Units of time and temperature",
+     "g": "Learn the shared scales for time and temperature that scientists rely on.",
+     "p": [
+      "The second is the basic unit of time; 60 make a minute, 3600 an hour.",
+      "Water freezes at 0 °C and boils at 100 °C at sea level.",
+      "The Kelvin scale starts at absolute zero, the coldest possible temperature, -273.15 °C."
+     ],
+     "q": "Do you think in Celsius or Fahrenheit, and what feels like a perfect day to you?",
+     "c": "Check today's temperature and convert it to kelvin by adding 273."
+    },
+    "de": {
+     "t": "Einheiten für Zeit und Temperatur",
+     "g": "Lerne die gemeinsamen Skalen für Zeit und Temperatur kennen, auf die sich die Forschung stützt.",
+     "p": [
+      "Die Sekunde ist die Grundeinheit der Zeit; 60 ergeben eine Minute, 3600 eine Stunde.",
+      "Wasser gefriert bei 0 °C und siedet auf Meereshöhe bei 100 °C.",
+      "Die Kelvin-Skala beginnt beim absoluten Nullpunkt, der kältesten Temperatur, -273,15 °C."
+     ],
+     "q": "Denkst du in Celsius oder Fahrenheit, und wie warm ist für dich ein perfekter Tag?",
+     "c": "Schau dir die heutige Temperatur an und rechne sie in Kelvin um: einfach 273 addieren."
+    },
+    "es": {
+     "t": "Unidades de tiempo y temperatura",
+     "g": "Aprender las escalas comunes de tiempo y temperatura en las que confía la ciencia.",
+     "p": [
+      "El segundo es la unidad básica de tiempo; 60 forman un minuto y 3600 una hora.",
+      "El agua se congela a 0 °C y hierve a 100 °C al nivel del mar.",
+      "La escala Kelvin empieza en el cero absoluto, la temperatura más fría posible, -273,15 °C."
+     ],
+     "q": "¿Piensas en Celsius o en Fahrenheit? ¿Qué temperatura te parece un día perfecto?",
+     "c": "Mira la temperatura de hoy y pásala a kelvin sumando 273."
+    },
+    "fr": {
+     "t": "Unités de temps et de température",
+     "g": "Apprendre les échelles communes de temps et de température sur lesquelles repose la science.",
+     "p": [
+      "La seconde est l'unité de base du temps ; 60 font une minute, 3600 une heure.",
+      "L'eau gèle à 0 °C et bout à 100 °C au niveau de la mer.",
+      "L'échelle Kelvin part du zéro absolu, la température la plus froide possible, -273,15 °C."
+     ],
+     "q": "Penses-tu en Celsius ou en Fahrenheit, et quelle température fait une journée parfaite ?",
+     "c": "Regarde la température du jour et convertis-la en kelvins en ajoutant 273."
+    },
+    "it": {
+     "t": "Unità di tempo e temperatura",
+     "g": "Imparare le scale comuni di tempo e temperatura su cui si basa la scienza.",
+     "p": [
+      "Il secondo è l'unità base del tempo; 60 fanno un minuto, 3600 un'ora.",
+      "L'acqua gela a 0 °C e bolle a 100 °C al livello del mare.",
+      "La scala Kelvin parte dallo zero assoluto, la temperatura più fredda possibile, -273,15 °C."
+     ],
+     "q": "Ragioni in Celsius o in Fahrenheit? Quale temperatura rende perfetta una giornata?",
+     "c": "Guarda la temperatura di oggi e convertila in kelvin aggiungendo 273."
+    },
+    "pt": {
+     "t": "Unidades de tempo e temperatura",
+     "g": "Aprender as escalas comuns de tempo e temperatura em que a ciência se apoia.",
+     "p": [
+      "O segundo é a unidade básica do tempo; 60 fazem um minuto e 3600 uma hora.",
+      "A água congela a 0 °C e ferve a 100 °C ao nível do mar.",
+      "A escala Kelvin começa no zero absoluto, a temperatura mais fria possível, -273,15 °C."
+     ],
+     "q": "Pensas em Celsius ou em Fahrenheit? Que temperatura faz um dia perfeito para ti?",
+     "c": "Vê a temperatura de hoje e converte-a em kelvin somando 273."
+    },
+    "pt_BR": {
+     "t": "Unidades de tempo e temperatura",
+     "g": "Aprender as escalas comuns de tempo e temperatura em que a ciência se apoia.",
+     "p": [
+      "O segundo é a unidade básica do tempo; 60 formam um minuto e 3600 uma hora.",
+      "A água congela a 0 °C e ferve a 100 °C ao nível do mar.",
+      "A escala Kelvin começa no zero absoluto, a temperatura mais fria possível, -273,15 °C."
+     ],
+     "q": "Você pensa em Celsius ou Fahrenheit? Que temperatura faz um dia perfeito para você?",
+     "c": "Veja a temperatura de hoje e converta para kelvin somando 273."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Observation versus opinion",
+     "g": "Learn to tell apart what we actually see from what we think or feel about it.",
+     "p": [
+      "An observation describes what you notice with your senses or tools.",
+      "An opinion is a judgment, like saying a flower is pretty.",
+      "Good science starts from observations that others can check too."
+     ],
+     "q": "Can you describe your view right now using only observations?",
+     "c": "Describe a fruit in five observations only: color, size, smell, weight, texture."
+    },
+    "de": {
+     "t": "Beobachtung oder Meinung",
+     "g": "Lerne zu unterscheiden, was wir wirklich sehen und was wir darüber denken oder fühlen.",
+     "p": [
+      "Eine Beobachtung beschreibt, was du mit Sinnen oder Instrumenten wahrnimmst.",
+      "Eine Meinung ist ein Urteil, etwa dass eine Blume hübsch ist.",
+      "Gute Wissenschaft beginnt mit Beobachtungen, die auch andere prüfen können."
+     ],
+     "q": "Kannst du deine Umgebung gerade nur mit Beobachtungen beschreiben?",
+     "c": "Beschreibe ein Stück Obst mit genau fünf Beobachtungen: Farbe, Größe, Geruch, Gewicht, Oberfläche."
+    },
+    "es": {
+     "t": "Observación u opinión",
+     "g": "Aprender a distinguir lo que realmente vemos de lo que pensamos o sentimos sobre ello.",
+     "p": [
+      "Una observación describe lo que percibes con tus sentidos o instrumentos.",
+      "Una opinión es un juicio, como decir que una flor es bonita.",
+      "La buena ciencia parte de observaciones que otros también pueden comprobar."
+     ],
+     "q": "¿Puedes describir lo que ves ahora usando solo observaciones?",
+     "c": "Describe una fruta con solo cinco observaciones: color, tamaño, olor, peso y textura."
+    },
+    "fr": {
+     "t": "Observation ou opinion",
+     "g": "Apprendre à distinguer ce que l'on voit vraiment de ce que l'on en pense ou ressent.",
+     "p": [
+      "Une observation décrit ce que tu perçois avec tes sens ou des instruments.",
+      "Une opinion est un jugement, comme dire qu'une fleur est jolie.",
+      "La bonne science part d'observations que d'autres peuvent aussi vérifier."
+     ],
+     "q": "Peux-tu décrire ce qui t'entoure avec seulement des observations ?",
+     "c": "Décris un fruit en cinq observations seulement : couleur, taille, odeur, poids, texture."
+    },
+    "it": {
+     "t": "Osservazione o opinione",
+     "g": "Imparare a distinguere ciò che vediamo davvero da ciò che ne pensiamo o proviamo.",
+     "p": [
+      "Un'osservazione descrive ciò che noti con i sensi o con degli strumenti.",
+      "Un'opinione è un giudizio, come dire che un fiore è bello.",
+      "La buona scienza parte da osservazioni che anche altri possono verificare."
+     ],
+     "q": "Riesci a descrivere ciò che hai intorno usando solo osservazioni?",
+     "c": "Descrivi un frutto con sole cinque osservazioni: colore, misura, odore, peso, consistenza."
+    },
+    "pt": {
+     "t": "Observação ou opinião",
+     "g": "Aprender a distinguir o que realmente vemos do que pensamos ou sentimos sobre isso.",
+     "p": [
+      "Uma observação descreve o que notas com os sentidos ou com instrumentos.",
+      "Uma opinião é um juízo, como dizer que uma flor é bonita.",
+      "A boa ciência parte de observações que outros também podem verificar."
+     ],
+     "q": "Consegues descrever o que te rodeia agora usando só observações?",
+     "c": "Descreve uma fruta com apenas cinco observações: cor, tamanho, cheiro, peso e textura."
+    },
+    "pt_BR": {
+     "t": "Observação ou opinião",
+     "g": "Aprender a separar o que realmente vemos do que pensamos ou sentimos sobre isso.",
+     "p": [
+      "Uma observação descreve o que você percebe com os sentidos ou instrumentos.",
+      "Uma opinião é um julgamento, como dizer que uma flor é bonita.",
+      "A boa ciência parte de observações que outras pessoas também podem conferir."
+     ],
+     "q": "Você consegue descrever o que está ao seu redor só com observações?",
+     "c": "Descreva uma fruta com apenas cinco observações: cor, tamanho, cheiro, peso e textura."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Theory, law and fact",
+     "g": "Understand that in science a theory is a well-tested explanation, not just a guess.",
+     "p": [
+      "A fact is something observed again and again, like objects falling when dropped.",
+      "A law describes what happens, often with math, like how gravity pulls.",
+      "A theory explains why, backed by lots of evidence, like the theory of evolution."
+     ],
+     "q": "Had you heard someone say it is just a theory? How would you answer now?",
+     "c": "Explain to a friend the difference between a theory and a guess in one sentence."
+    },
+    "de": {
+     "t": "Theorie, Gesetz und Fakt",
+     "g": "Verstehe, dass eine Theorie in der Wissenschaft eine gut geprüfte Erklärung ist, keine bloße Vermutung.",
+     "p": [
+      "Ein Fakt wird immer wieder beobachtet, etwa dass fallengelassene Dinge fallen.",
+      "Ein Gesetz beschreibt, was passiert, oft mit Mathematik, etwa wie die Schwerkraft zieht.",
+      "Eine Theorie erklärt das Warum und stützt sich auf viele Belege, wie die Evolutionstheorie."
+     ],
+     "q": "Hast du schon gehört, etwas sei nur eine Theorie? Was würdest du jetzt antworten?",
+     "c": "Erkläre einer Freundin in einem Satz den Unterschied zwischen Theorie und Vermutung."
+    },
+    "es": {
+     "t": "Teoría, ley y hecho",
+     "g": "Entender que en ciencia una teoría es una explicación muy comprobada, no una simple suposición.",
+     "p": [
+      "Un hecho es algo observado una y otra vez, como que los objetos caen al soltarlos.",
+      "Una ley describe lo que pasa, a menudo con matemáticas, como la atracción de la gravedad.",
+      "Una teoría explica el porqué con muchas pruebas, como la teoría de la evolución."
+     ],
+     "q": "¿Has oído decir que algo es solo una teoría? ¿Qué responderías ahora?",
+     "c": "Explica a un amigo en una frase la diferencia entre una teoría y una suposición."
+    },
+    "fr": {
+     "t": "Théorie, loi et fait",
+     "g": "Comprendre qu'en science une théorie est une explication bien testée, pas une simple supposition.",
+     "p": [
+      "Un fait est observé encore et encore, comme un objet qui tombe quand on le lâche.",
+      "Une loi décrit ce qui se passe, souvent avec des maths, comme l'attraction de la gravité.",
+      "Une théorie explique le pourquoi grâce à de nombreuses preuves, comme la théorie de l'évolution."
+     ],
+     "q": "As-tu déjà entendu dire que ce n'est qu'une théorie ? Que répondrais-tu maintenant ?",
+     "c": "Explique à un ami en une phrase la différence entre une théorie et une supposition."
+    },
+    "it": {
+     "t": "Teoria, legge e fatto",
+     "g": "Capire che nella scienza una teoria è una spiegazione ben verificata, non una semplice ipotesi.",
+     "p": [
+      "Un fatto è qualcosa osservato più e più volte, come un oggetto che cade se lo lasci.",
+      "Una legge descrive cosa succede, spesso con la matematica, come l'attrazione della gravità.",
+      "Una teoria spiega il perché con molte prove, come la teoria dell'evoluzione."
+     ],
+     "q": "Hai mai sentito dire che è solo una teoria? Cosa risponderesti adesso?",
+     "c": "Spiega a un amico in una frase la differenza tra una teoria e un'ipotesi qualsiasi."
+    },
+    "pt": {
+     "t": "Teoria, lei e facto",
+     "g": "Perceber que em ciência uma teoria é uma explicação muito testada, não um mero palpite.",
+     "p": [
+      "Um facto é algo observado vezes sem conta, como um objeto cair quando o largamos.",
+      "Uma lei descreve o que acontece, muitas vezes com matemática, como a atração da gravidade.",
+      "Uma teoria explica o porquê com muitas provas, como a teoria da evolução."
+     ],
+     "q": "Já ouviste dizer que algo é só uma teoria? O que responderias agora?",
+     "c": "Explica a um amigo numa frase a diferença entre uma teoria e um palpite."
+    },
+    "pt_BR": {
+     "t": "Teoria, lei e fato",
+     "g": "Entender que na ciência uma teoria é uma explicação muito testada, não um simples palpite.",
+     "p": [
+      "Um fato é algo observado várias e várias vezes, como um objeto cair quando é solto.",
+      "Uma lei descreve o que acontece, muitas vezes com matemática, como a atração da gravidade.",
+      "Uma teoria explica o porquê com muitas evidências, como a teoria da evolução."
+     ],
+     "q": "Já ouviu alguém dizer que algo é só uma teoria? O que você responderia agora?",
+     "c": "Explique a um amigo numa frase a diferença entre uma teoria e um palpite."
+    }
+   }
+  }
+ ]
+}

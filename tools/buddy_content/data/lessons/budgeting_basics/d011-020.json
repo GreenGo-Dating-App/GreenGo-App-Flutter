@@ -1,0 +1,835 @@
+{
+ "topic": "budgeting_basics",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Knowing your take-home income",
+     "g": "Learn the difference between what you earn on paper and what actually arrives.",
+     "p": [
+      "Gross income is the number on paper; take-home income is what actually lands in your account.",
+      "Budget with the take-home number, because that is the money you can really use.",
+      "If your income changes month to month, start with your lowest typical month."
+     ],
+     "q": "Do you know roughly how much actually arrives in your account each month?",
+     "c": "Look at your last deposit and write down the amount that really arrived."
+    },
+    "de": {
+     "t": "Dein Nettoeinkommen kennen",
+     "g": "Den Unterschied zwischen Verdientem auf dem Papier und dem tatsächlich Ankommenden verstehen.",
+     "p": [
+      "Das Brutto steht auf dem Papier; das Netto ist das, was wirklich auf deinem Konto landet.",
+      "Plane mit der Nettozahl, denn das ist das Geld, das du wirklich nutzen kannst.",
+      "Schwankt dein Einkommen, starte mit deinem niedrigsten typischen Monat."
+     ],
+     "q": "Weißt du ungefähr, wie viel jeden Monat tatsächlich auf deinem Konto ankommt?",
+     "c": "Sieh dir deinen letzten Eingang an und notiere den Betrag, der wirklich ankam."
+    },
+    "es": {
+     "t": "Conocer tus ingresos netos",
+     "g": "Aprender la diferencia entre lo que ganas en papel y lo que realmente llega.",
+     "p": [
+      "El ingreso bruto es la cifra en papel; el neto es lo que realmente entra en tu cuenta.",
+      "Presupuesta con la cifra neta, porque ese es el dinero que de verdad puedes usar.",
+      "Si tus ingresos cambian cada mes, empieza por tu mes típico más bajo."
+     ],
+     "q": "¿Sabes más o menos cuánto llega realmente a tu cuenta cada mes?",
+     "c": "Mira tu último ingreso y anota la cantidad que realmente llegó."
+    },
+    "fr": {
+     "t": "Connaître ton revenu net",
+     "g": "Comprendre la différence entre ce que tu gagnes sur le papier et ce qui arrive vraiment.",
+     "p": [
+      "Le brut est le chiffre sur le papier ; le net est ce qui arrive réellement sur ton compte.",
+      "Fais ton budget avec le net, car c'est l'argent que tu peux vraiment utiliser.",
+      "Si tes revenus varient d'un mois à l'autre, pars de ton mois typique le plus bas."
+     ],
+     "q": "Sais-tu à peu près combien arrive réellement sur ton compte chaque mois ?",
+     "c": "Regarde ton dernier versement et note le montant qui est vraiment arrivé."
+    },
+    "it": {
+     "t": "Conoscere il tuo reddito netto",
+     "g": "Capire la differenza tra ciò che guadagni sulla carta e ciò che arriva davvero.",
+     "p": [
+      "Il lordo è la cifra sulla carta; il netto è ciò che arriva davvero sul tuo conto.",
+      "Fai il budget sul netto, perché è il denaro che puoi usare davvero.",
+      "Se il reddito cambia di mese in mese, parti dal tuo mese tipico più basso."
+     ],
+     "q": "Sai più o meno quanto arriva davvero sul tuo conto ogni mese?",
+     "c": "Guarda l'ultimo accredito e annota l'importo arrivato davvero."
+    },
+    "pt": {
+     "t": "Conhecer o teu rendimento líquido",
+     "g": "Perceber a diferença entre o que ganhas no papel e o que realmente chega.",
+     "p": [
+      "O bruto é o valor no papel; o líquido é o que realmente chega à tua conta.",
+      "Faz o orçamento com o valor líquido, porque é o dinheiro que podes mesmo usar.",
+      "Se o rendimento muda de mês para mês, começa pelo teu mês típico mais baixo."
+     ],
+     "q": "Sabes mais ou menos quanto chega realmente à tua conta todos os meses?",
+     "c": "Vê o teu último depósito e anota o valor que realmente chegou."
+    },
+    "pt_BR": {
+     "t": "Conhecer sua renda líquida",
+     "g": "Entender a diferença entre o que você ganha no papel e o que realmente chega.",
+     "p": [
+      "O bruto é o valor no papel; o líquido é o que realmente cai na sua conta.",
+      "Faça o orçamento com o valor líquido, porque é o dinheiro que você pode mesmo usar.",
+      "Se a renda muda de mês para mês, comece pelo seu mês típico mais baixo."
+     ],
+     "q": "Você sabe mais ou menos quanto cai de verdade na sua conta todo mês?",
+     "c": "Veja seu último depósito e anote o valor que realmente chegou."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fixed costs explained",
+     "g": "Recognise costs that stay roughly the same every month.",
+     "p": [
+      "Fixed costs are things like rent, insurance, phone and internet plans, and loan payments.",
+      "They are predictable, so they are the easiest part of a budget to plan.",
+      "Lowering a fixed cost, even a little, helps every single month afterwards."
+     ],
+     "q": "Which fixed cost in your life would you most like to understand better?",
+     "c": "List your fixed costs and mark the one you pay attention to least."
+    },
+    "de": {
+     "t": "Fixkosten erklärt",
+     "g": "Kosten erkennen, die jeden Monat ungefähr gleich bleiben.",
+     "p": [
+      "Fixkosten sind etwa Miete, Versicherung, Handy- und Internetverträge und Ratenzahlungen.",
+      "Sie sind vorhersehbar und damit der am leichtesten planbare Teil eines Budgets.",
+      "Eine gesenkte Fixkost, auch nur ein wenig, hilft danach jeden einzelnen Monat."
+     ],
+     "q": "Welche Fixkosten in deinem Leben möchtest du am liebsten besser verstehen?",
+     "c": "Liste deine Fixkosten auf und markiere die, der du am wenigsten Beachtung schenkst."
+    },
+    "es": {
+     "t": "Los gastos fijos explicados",
+     "g": "Reconocer los gastos que se mantienen más o menos iguales cada mes.",
+     "p": [
+      "Los gastos fijos son cosas como el alquiler, los seguros, el móvil, internet y las cuotas de préstamos.",
+      "Son predecibles, así que son la parte más fácil de planificar en un presupuesto.",
+      "Reducir un gasto fijo, aunque sea un poco, ayuda cada mes a partir de entonces."
+     ],
+     "q": "¿Qué gasto fijo de tu vida te gustaría entender mejor?",
+     "c": "Haz una lista de tus gastos fijos y marca el que menos atención le prestas."
+    },
+    "fr": {
+     "t": "Les charges fixes expliquées",
+     "g": "Reconnaître les coûts qui restent à peu près les mêmes chaque mois.",
+     "p": [
+      "Les charges fixes sont le loyer, les assurances, le forfait mobile, internet et les remboursements.",
+      "Elles sont prévisibles, donc c'est la partie la plus facile à planifier d'un budget.",
+      "Réduire une charge fixe, même un peu, aide chaque mois qui suit."
+     ],
+     "q": "Quelle charge fixe de ta vie aimerais-tu le mieux comprendre ?",
+     "c": "Liste tes charges fixes et marque celle à laquelle tu fais le moins attention."
+    },
+    "it": {
+     "t": "I costi fissi spiegati",
+     "g": "Riconoscere i costi che restano più o meno uguali ogni mese.",
+     "p": [
+      "I costi fissi sono affitto, assicurazioni, piani telefono e internet, rate di prestiti.",
+      "Sono prevedibili, quindi sono la parte più facile da pianificare di un budget.",
+      "Ridurre un costo fisso, anche di poco, aiuta ogni singolo mese successivo."
+     ],
+     "q": "Quale costo fisso della tua vita vorresti capire meglio?",
+     "c": "Elenca i tuoi costi fissi e segna quello a cui fai meno attenzione."
+    },
+    "pt": {
+     "t": "Os custos fixos explicados",
+     "g": "Reconhecer os custos que ficam mais ou menos iguais todos os meses.",
+     "p": [
+      "Os custos fixos são a renda, os seguros, o telemóvel, a internet e as prestações de empréstimos.",
+      "São previsíveis, por isso são a parte mais fácil de planear num orçamento.",
+      "Baixar um custo fixo, mesmo um pouco, ajuda todos os meses seguintes."
+     ],
+     "q": "Que custo fixo da tua vida gostarias de perceber melhor?",
+     "c": "Lista os teus custos fixos e marca aquele a que dás menos atenção."
+    },
+    "pt_BR": {
+     "t": "Os custos fixos explicados",
+     "g": "Reconhecer os custos que ficam mais ou menos iguais todo mês.",
+     "p": [
+      "Os custos fixos são aluguel, seguros, celular, internet e parcelas de empréstimos.",
+      "São previsíveis, por isso são a parte mais fácil de planejar num orçamento.",
+      "Reduzir um custo fixo, mesmo um pouco, ajuda todos os meses seguintes."
+     ],
+     "q": "Que custo fixo da sua vida você gostaria de entender melhor?",
+     "c": "Liste seus custos fixos e marque aquele a que você dá menos atenção."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Variable costs explained",
+     "g": "Understand the costs that change from month to month, like food and fun.",
+     "p": [
+      "Variable costs move around: groceries, transport, clothes, hobbies and eating out.",
+      "You control these more than fixed costs, which makes them the flexible part of a budget.",
+      "Use the average of a few months as your starting estimate, not a perfect guess."
+     ],
+     "q": "Which of your spending areas changes the most from one month to the next?",
+     "c": "List three variable costs and write a rough monthly average for each."
+    },
+    "de": {
+     "t": "Variable Kosten erklärt",
+     "g": "Kosten verstehen, die sich von Monat zu Monat ändern, wie Essen und Freizeit.",
+     "p": [
+      "Variable Kosten schwanken: Lebensmittel, Verkehr, Kleidung, Hobbys und Essengehen.",
+      "Du steuerst sie stärker als Fixkosten, deshalb sind sie der flexible Teil eines Budgets.",
+      "Nimm den Durchschnitt mehrerer Monate als Startschätzung, keine perfekte Vermutung."
+     ],
+     "q": "In welchem deiner Ausgabenbereiche ändert sich von Monat zu Monat am meisten?",
+     "c": "Liste drei variable Kosten auf und schreibe jeweils einen groben Monatsdurchschnitt dazu."
+    },
+    "es": {
+     "t": "Los gastos variables explicados",
+     "g": "Entender los gastos que cambian de un mes a otro, como comida y ocio.",
+     "p": [
+      "Los gastos variables se mueven: supermercado, transporte, ropa, aficiones y comer fuera.",
+      "Los controlas más que los fijos, y por eso son la parte flexible de un presupuesto.",
+      "Usa el promedio de unos meses como estimación inicial, no una cifra perfecta."
+     ],
+     "q": "¿En qué área de tus gastos cambia más la cifra de un mes a otro?",
+     "c": "Anota tres gastos variables y escribe un promedio mensual aproximado de cada uno."
+    },
+    "fr": {
+     "t": "Les charges variables expliquées",
+     "g": "Comprendre les coûts qui changent d'un mois à l'autre, comme la nourriture et les loisirs.",
+     "p": [
+      "Les charges variables bougent : courses, transport, vêtements, loisirs et restaurants.",
+      "Tu les contrôles plus que les charges fixes : c'est la partie souple d'un budget.",
+      "Prends la moyenne de quelques mois comme estimation de départ, pas un chiffre parfait."
+     ],
+     "q": "Quel poste de dépenses varie le plus d'un mois à l'autre pour toi ?",
+     "c": "Liste trois charges variables et note une moyenne mensuelle approximative pour chacune."
+    },
+    "it": {
+     "t": "I costi variabili spiegati",
+     "g": "Capire i costi che cambiano di mese in mese, come cibo e svago.",
+     "p": [
+      "I costi variabili si muovono: spesa, trasporti, vestiti, hobby e uscite a mangiare.",
+      "Li controlli più dei costi fissi, perciò sono la parte flessibile di un budget.",
+      "Usa la media di qualche mese come stima iniziale, non una cifra perfetta."
+     ],
+     "q": "Quale area delle tue spese cambia di più da un mese all'altro?",
+     "c": "Elenca tre costi variabili e scrivi una media mensile approssimativa per ciascuno."
+    },
+    "pt": {
+     "t": "Os custos variáveis explicados",
+     "g": "Perceber os custos que mudam de mês para mês, como comida e lazer.",
+     "p": [
+      "Os custos variáveis mexem-se: supermercado, transportes, roupa, passatempos e refeições fora.",
+      "Controlas estes mais do que os fixos, por isso são a parte flexível de um orçamento.",
+      "Usa a média de alguns meses como estimativa inicial, não um valor perfeito."
+     ],
+     "q": "Em que área dos teus gastos o valor muda mais de um mês para o outro?",
+     "c": "Anota três custos variáveis e escreve uma média mensal aproximada para cada."
+    },
+    "pt_BR": {
+     "t": "Os custos variáveis explicados",
+     "g": "Entender os custos que mudam de mês para mês, como comida e lazer.",
+     "p": [
+      "Os custos variáveis mudam: mercado, transporte, roupas, hobbies e comer fora.",
+      "Você controla esses mais do que os fixos, por isso são a parte flexível do orçamento.",
+      "Use a média de alguns meses como estimativa inicial, não um valor perfeito."
+     ],
+     "q": "Em que área dos seus gastos o valor muda mais de um mês para o outro?",
+     "c": "Anote três custos variáveis e escreva uma média mensal aproximada de cada um."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Irregular costs that surprise us",
+     "g": "Plan for yearly fees, repairs and gifts that do not appear every month.",
+     "p": [
+      "Irregular costs, like annual fees, repairs, birthdays and holidays, feel like surprises but are predictable.",
+      "Write down the ones you can foresee this year and when they usually arrive.",
+      "Dividing a yearly cost by twelve shows how much to set aside each month."
+     ],
+     "q": "What irregular cost caught you off guard in the past?",
+     "c": "List three irregular costs you expect this year and the month they usually come."
+    },
+    "de": {
+     "t": "Unregelmäßige Kosten, die uns überraschen",
+     "g": "Für Jahresgebühren, Reparaturen und Geschenke planen, die nicht jeden Monat anfallen.",
+     "p": [
+      "Unregelmäßige Kosten wie Jahresgebühren, Reparaturen, Geburtstage und Feiertage wirken überraschend, sind aber vorhersehbar.",
+      "Schreibe auf, welche du dieses Jahr absehen kannst und wann sie meist kommen.",
+      "Teilst du eine Jahreskost durch zwölf, siehst du, wie viel du monatlich zurücklegen kannst."
+     ],
+     "q": "Welche unregelmäßige Ausgabe hat dich früher kalt erwischt?",
+     "c": "Liste drei unregelmäßige Kosten für dieses Jahr auf und den Monat, in dem sie meist kommen."
+    },
+    "es": {
+     "t": "Gastos irregulares que nos sorprenden",
+     "g": "Planificar cuotas anuales, reparaciones y regalos que no aparecen cada mes.",
+     "p": [
+      "Los gastos irregulares, como cuotas anuales, reparaciones, cumpleaños y fiestas, parecen sorpresas pero son previsibles.",
+      "Anota los que puedes prever este año y cuándo suelen llegar.",
+      "Dividir un gasto anual entre doce muestra cuánto apartar cada mes."
+     ],
+     "q": "¿Qué gasto irregular te pilló desprevenido en el pasado?",
+     "c": "Anota tres gastos irregulares que esperas este año y el mes en que suelen llegar."
+    },
+    "fr": {
+     "t": "Les dépenses irrégulières qui nous surprennent",
+     "g": "Prévoir les frais annuels, réparations et cadeaux qui n'arrivent pas chaque mois.",
+     "p": [
+      "Les dépenses irrégulières, comme frais annuels, réparations, anniversaires et fêtes, surprennent mais sont prévisibles.",
+      "Note celles que tu peux prévoir cette année et le moment où elles arrivent d'habitude.",
+      "Diviser un coût annuel par douze montre combien mettre de côté chaque mois."
+     ],
+     "q": "Quelle dépense irrégulière t'a pris au dépourvu par le passé ?",
+     "c": "Liste trois dépenses irrégulières attendues cette année et le mois où elles tombent d'habitude."
+    },
+    "it": {
+     "t": "Costi irregolari che ci sorprendono",
+     "g": "Pianificare quote annuali, riparazioni e regali che non arrivano ogni mese.",
+     "p": [
+      "I costi irregolari, come quote annuali, riparazioni, compleanni e feste, sembrano sorprese ma sono prevedibili.",
+      "Scrivi quelli che puoi prevedere quest'anno e quando di solito arrivano.",
+      "Dividere un costo annuale per dodici mostra quanto mettere da parte ogni mese."
+     ],
+     "q": "Quale costo irregolare ti ha colto di sorpresa in passato?",
+     "c": "Elenca tre costi irregolari previsti quest'anno e il mese in cui di solito arrivano."
+    },
+    "pt": {
+     "t": "Custos irregulares que nos surpreendem",
+     "g": "Planear taxas anuais, reparações e prendas que não aparecem todos os meses.",
+     "p": [
+      "Os custos irregulares, como taxas anuais, reparações, aniversários e festas, parecem surpresas mas são previsíveis.",
+      "Anota os que consegues prever este ano e quando costumam chegar.",
+      "Dividir um custo anual por doze mostra quanto pôr de lado todos os meses."
+     ],
+     "q": "Que custo irregular te apanhou desprevenido no passado?",
+     "c": "Lista três custos irregulares que esperas este ano e o mês em que costumam chegar."
+    },
+    "pt_BR": {
+     "t": "Custos irregulares que nos surpreendem",
+     "g": "Planejar taxas anuais, consertos e presentes que não aparecem todo mês.",
+     "p": [
+      "Custos irregulares, como taxas anuais, consertos, aniversários e festas, parecem surpresas mas são previsíveis.",
+      "Anote os que você consegue prever este ano e quando costumam chegar.",
+      "Dividir um custo anual por doze mostra quanto separar todo mês."
+     ],
+     "q": "Que custo irregular pegou você de surpresa no passado?",
+     "c": "Liste três custos irregulares que você espera este ano e o mês em que costumam chegar."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Making a list of all your bills",
+     "g": "Write every bill, its amount and its due date in one place.",
+     "p": [
+      "One list of all bills means no more surprises from a forgotten payment.",
+      "For each bill note the name, roughly how much, the due date and how you pay it.",
+      "Check old statements to catch bills you might have forgotten."
+     ],
+     "q": "Is there a bill you sometimes forget or are unsure about?",
+     "c": "Start your bill list with at least five bills and their due dates."
+    },
+    "de": {
+     "t": "Eine Liste all deiner Rechnungen",
+     "g": "Jede Rechnung, ihren Betrag und ihr Fälligkeitsdatum an einem Ort festhalten.",
+     "p": [
+      "Eine Liste aller Rechnungen heißt: keine Überraschung durch eine vergessene Zahlung mehr.",
+      "Notiere je Rechnung Namen, ungefähren Betrag, Fälligkeitsdatum und Zahlungsweg.",
+      "Sieh in alte Auszüge, um Rechnungen zu finden, die du vergessen haben könntest."
+     ],
+     "q": "Gibt es eine Rechnung, die du manchmal vergisst oder bei der du unsicher bist?",
+     "c": "Starte deine Liste mit mindestens fünf Rechnungen und ihren Fälligkeitsdaten."
+    },
+    "es": {
+     "t": "Hacer una lista de todas tus facturas",
+     "g": "Anotar cada factura, su importe y su fecha de pago en un solo lugar.",
+     "p": [
+      "Una lista de todas las facturas evita sorpresas por un pago olvidado.",
+      "De cada una anota el nombre, el importe aproximado, la fecha de pago y cómo se paga.",
+      "Revisa extractos antiguos para encontrar facturas que quizá olvidaste."
+     ],
+     "q": "¿Hay alguna factura que a veces olvidas o de la que no estás seguro?",
+     "c": "Empieza tu lista con al menos cinco facturas y sus fechas de pago."
+    },
+    "fr": {
+     "t": "Dresser la liste de toutes tes factures",
+     "g": "Noter chaque facture, son montant et son échéance au même endroit.",
+     "p": [
+      "Une liste de toutes les factures évite les surprises dues à un paiement oublié.",
+      "Pour chacune, note le nom, le montant approximatif, l'échéance et le mode de paiement.",
+      "Parcours d'anciens relevés pour retrouver des factures que tu aurais oubliées."
+     ],
+     "q": "Y a-t-il une facture que tu oublies parfois ou dont tu n'es pas sûr ?",
+     "c": "Commence ta liste avec au moins cinq factures et leurs échéances."
+    },
+    "it": {
+     "t": "Fare la lista di tutte le bollette",
+     "g": "Scrivere ogni bolletta, il suo importo e la scadenza in un unico posto.",
+     "p": [
+      "Una lista di tutte le bollette evita sorprese per un pagamento dimenticato.",
+      "Per ognuna annota nome, importo approssimativo, scadenza e come la paghi.",
+      "Controlla vecchi estratti per trovare bollette che potresti aver dimenticato."
+     ],
+     "q": "C'è una bolletta che a volte dimentichi o di cui non sei sicuro?",
+     "c": "Inizia la lista con almeno cinque bollette e le loro scadenze."
+    },
+    "pt": {
+     "t": "Fazer uma lista de todas as contas",
+     "g": "Escrever cada conta, o seu valor e a data de vencimento num só lugar.",
+     "p": [
+      "Uma lista de todas as contas evita surpresas por um pagamento esquecido.",
+      "Para cada uma anota o nome, o valor aproximado, a data de vencimento e como se paga.",
+      "Vê extratos antigos para encontrar contas de que te possas ter esquecido."
+     ],
+     "q": "Há alguma conta que às vezes esqueces ou de que não tens certeza?",
+     "c": "Começa a lista com pelo menos cinco contas e as respetivas datas."
+    },
+    "pt_BR": {
+     "t": "Fazer uma lista de todas as contas",
+     "g": "Escrever cada conta, seu valor e a data de vencimento num só lugar.",
+     "p": [
+      "Uma lista de todas as contas evita surpresas por um pagamento esquecido.",
+      "Para cada uma anote o nome, o valor aproximado, o vencimento e como se paga.",
+      "Veja extratos antigos para encontrar contas que você possa ter esquecido."
+     ],
+     "q": "Tem alguma conta que você às vezes esquece ou sobre a qual não tem certeza?",
+     "c": "Comece a lista com pelo menos cinco contas e os respectivos vencimentos."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your monthly money calendar",
+     "g": "Place paydays and bill dates on a calendar to avoid tight weeks.",
+     "p": [
+      "A money calendar shows when income arrives and when bills leave, so tight weeks become visible.",
+      "Mark paydays in one colour and due dates in another, then look for crowded days.",
+      "If bills cluster before payday, ask providers whether the due date can move."
+     ],
+     "q": "Which week of your month usually feels the tightest?",
+     "c": "Mark all your paydays and bill dates on a calendar for this month."
+    },
+    "de": {
+     "t": "Dein monatlicher Geldkalender",
+     "g": "Zahltage und Fälligkeiten in einen Kalender eintragen, um knappe Wochen zu vermeiden.",
+     "p": [
+      "Ein Geldkalender zeigt, wann Einkommen kommt und Rechnungen gehen, so werden knappe Wochen sichtbar.",
+      "Markiere Zahltage in einer Farbe und Fälligkeiten in einer anderen und suche volle Tage.",
+      "Häufen sich Rechnungen vor dem Zahltag, frag Anbieter, ob sich das Datum verschieben lässt."
+     ],
+     "q": "Welche Woche deines Monats fühlt sich meistens am knappsten an?",
+     "c": "Trage alle Zahltage und Rechnungsdaten dieses Monats in einen Kalender ein."
+    },
+    "es": {
+     "t": "Tu calendario mensual del dinero",
+     "g": "Colocar días de cobro y fechas de pago en un calendario para evitar semanas apretadas.",
+     "p": [
+      "Un calendario del dinero muestra cuándo entra el ingreso y cuándo salen las facturas, y las semanas apretadas se ven.",
+      "Marca los días de cobro de un color y los vencimientos de otro, y busca los días saturados.",
+      "Si las facturas se juntan antes del cobro, pregunta si pueden cambiar la fecha."
+     ],
+     "q": "¿Qué semana de tu mes suele sentirse más apretada?",
+     "c": "Marca en un calendario todos los días de cobro y vencimientos de este mes."
+    },
+    "fr": {
+     "t": "Ton calendrier d'argent du mois",
+     "g": "Placer jours de paie et échéances sur un calendrier pour éviter les semaines serrées.",
+     "p": [
+      "Un calendrier d'argent montre quand l'argent arrive et quand les factures partent : les semaines serrées se voient.",
+      "Marque les jours de paie d'une couleur et les échéances d'une autre, puis repère les jours chargés.",
+      "Si les factures s'accumulent avant la paie, demande si la date peut être déplacée."
+     ],
+     "q": "Quelle semaine de ton mois est en général la plus serrée ?",
+     "c": "Marque sur un calendrier tous tes jours de paie et échéances de ce mois."
+    },
+    "it": {
+     "t": "Il tuo calendario mensile dei soldi",
+     "g": "Mettere giorni di paga e scadenze su un calendario per evitare settimane tirate.",
+     "p": [
+      "Un calendario dei soldi mostra quando arrivano le entrate e quando escono le bollette, e le settimane tirate si vedono.",
+      "Segna le paghe di un colore e le scadenze di un altro, poi cerca i giorni affollati.",
+      "Se le bollette si concentrano prima della paga, chiedi se la scadenza può spostarsi."
+     ],
+     "q": "Quale settimana del tuo mese di solito è la più tirata?",
+     "c": "Segna su un calendario tutti i giorni di paga e le scadenze di questo mese."
+    },
+    "pt": {
+     "t": "O teu calendário mensal do dinheiro",
+     "g": "Pôr dias de pagamento e vencimentos num calendário para evitar semanas apertadas.",
+     "p": [
+      "Um calendário do dinheiro mostra quando entra o rendimento e quando saem as contas, e as semanas apertadas tornam-se visíveis.",
+      "Marca os dias de pagamento de uma cor e os vencimentos de outra, e procura os dias cheios.",
+      "Se as contas se juntam antes do pagamento, pergunta se a data pode mudar."
+     ],
+     "q": "Que semana do teu mês costuma ser a mais apertada?",
+     "c": "Marca num calendário todos os dias de pagamento e vencimentos deste mês."
+    },
+    "pt_BR": {
+     "t": "Seu calendário mensal do dinheiro",
+     "g": "Colocar dias de pagamento e vencimentos num calendário para evitar semanas apertadas.",
+     "p": [
+      "Um calendário do dinheiro mostra quando a renda entra e quando as contas saem, e as semanas apertadas ficam visíveis.",
+      "Marque os dias de pagamento de uma cor e os vencimentos de outra, e procure os dias cheios.",
+      "Se as contas se juntam antes do pagamento, pergunte se a data pode mudar."
+     ],
+     "q": "Que semana do seu mês costuma ser a mais apertada?",
+     "c": "Marque num calendário todos os dias de pagamento e vencimentos deste mês."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cash, card or phone payments",
+     "g": "See how the way you pay can change how much you notice spending.",
+     "p": [
+      "Paying with cash can feel more real; tapping a card or phone can feel almost invisible.",
+      "Neither is better. What matters is that you still notice and record each payment.",
+      "Try an experiment: use a different payment method for one week and compare how it feels."
+     ],
+     "q": "Which way of paying makes you most aware of the money you spend?",
+     "c": "For one day, pay a different way than usual and note how it felt."
+    },
+    "de": {
+     "t": "Bargeld, Karte oder Handy bezahlen",
+     "g": "Sehen, wie die Zahlungsart beeinflusst, wie sehr du Ausgaben bemerkst.",
+     "p": [
+      "Mit Bargeld zahlen fühlt sich greifbarer an; Karte oder Handy antippen fühlt sich fast unsichtbar an.",
+      "Keins ist besser. Wichtig ist, dass du jede Zahlung trotzdem bemerkst und erfasst.",
+      "Mach ein Experiment: Nutze eine Woche lang eine andere Zahlungsart und vergleiche das Gefühl."
+     ],
+     "q": "Bei welcher Zahlungsart bist du dir deiner Ausgaben am meisten bewusst?",
+     "c": "Zahle einen Tag lang anders als sonst und notiere, wie es sich anfühlte."
+    },
+    "es": {
+     "t": "Efectivo, tarjeta o pago con el móvil",
+     "g": "Ver cómo tu forma de pagar cambia cuánto notas lo que gastas.",
+     "p": [
+      "Pagar en efectivo se siente más real; tocar la tarjeta o el móvil puede sentirse casi invisible.",
+      "Ninguno es mejor. Lo importante es que sigas notando y anotando cada pago.",
+      "Haz un experimento: usa otra forma de pago durante una semana y compara cómo se siente."
+     ],
+     "q": "¿Con qué forma de pagar eres más consciente del dinero que gastas?",
+     "c": "Durante un día, paga de otra manera y anota cómo te sentiste."
+    },
+    "fr": {
+     "t": "Espèces, carte ou paiement mobile",
+     "g": "Voir comment ta façon de payer change ce que tu perçois de tes dépenses.",
+     "p": [
+      "Payer en espèces semble plus réel ; passer la carte ou le téléphone paraît presque invisible.",
+      "Aucun n'est meilleur. L'important est de continuer à remarquer et noter chaque paiement.",
+      "Fais une expérience : utilise un autre moyen de paiement une semaine et compare le ressenti."
+     ],
+     "q": "Avec quel moyen de paiement es-tu le plus conscient de ce que tu dépenses ?",
+     "c": "Pendant un jour, paie autrement que d'habitude et note ce que tu ressens."
+    },
+    "it": {
+     "t": "Contanti, carta o pagamento col telefono",
+     "g": "Vedere come il modo in cui paghi cambia quanto noti ciò che spendi.",
+     "p": [
+      "Pagare in contanti sembra più reale; avvicinare carta o telefono può sembrare quasi invisibile.",
+      "Nessuno è migliore. Conta che tu noti e annoti comunque ogni pagamento.",
+      "Fai un esperimento: usa un altro metodo di pagamento per una settimana e confronta le sensazioni."
+     ],
+     "q": "Con quale modo di pagare sei più consapevole di quanto spendi?",
+     "c": "Per un giorno paga in modo diverso dal solito e annota come ti sei sentito."
+    },
+    "pt": {
+     "t": "Dinheiro, cartão ou pagamento no telemóvel",
+     "g": "Ver como a forma de pagar muda o quanto notas o que gastas.",
+     "p": [
+      "Pagar em dinheiro parece mais real; aproximar o cartão ou o telemóvel pode parecer quase invisível.",
+      "Nenhum é melhor. O importante é continuares a notar e a registar cada pagamento.",
+      "Faz uma experiência: usa outra forma de pagar durante uma semana e compara a sensação."
+     ],
+     "q": "Com que forma de pagar tens mais consciência do dinheiro que gastas?",
+     "c": "Durante um dia, paga de maneira diferente e anota como te sentiste."
+    },
+    "pt_BR": {
+     "t": "Dinheiro, cartão ou pagamento no celular",
+     "g": "Ver como sua forma de pagar muda o quanto você percebe o que gasta.",
+     "p": [
+      "Pagar em dinheiro parece mais real; aproximar o cartão ou o celular pode parecer quase invisível.",
+      "Nenhum é melhor. O importante é continuar percebendo e registrando cada pagamento.",
+      "Faça um experimento: use outra forma de pagar por uma semana e compare a sensação."
+     ],
+     "q": "Com que forma de pagar você fica mais consciente do dinheiro que gasta?",
+     "c": "Por um dia, pague de um jeito diferente e anote como você se sentiu."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Small subscriptions add up",
+     "g": "Find the small recurring payments hidden in your statements.",
+     "p": [
+      "Subscriptions are easy to forget because each one is small and renews quietly.",
+      "Scan two months of statements for repeating payments: apps, streaming, storage, memberships.",
+      "For each one ask: do I use it, do I enjoy it, would I sign up again today?"
+     ],
+     "q": "Which subscription do you use the most, and which one have you nearly forgotten?",
+     "c": "List every subscription you find and mark one to keep or review."
+    },
+    "de": {
+     "t": "Kleine Abos summieren sich",
+     "g": "Die kleinen wiederkehrenden Zahlungen in deinen Auszügen finden.",
+     "p": [
+      "Abos vergisst man leicht, weil jedes klein ist und sich leise verlängert.",
+      "Suche in zwei Monaten Auszügen nach wiederkehrenden Zahlungen: Apps, Streaming, Speicher, Mitgliedschaften.",
+      "Frage bei jedem: Nutze ich es, mag ich es, würde ich es heute wieder abschließen?"
+     ],
+     "q": "Welches Abo nutzt du am meisten und welches hast du fast vergessen?",
+     "c": "Liste alle gefundenen Abos auf und markiere eines zum Behalten oder Prüfen."
+    },
+    "es": {
+     "t": "Las pequeñas suscripciones se acumulan",
+     "g": "Encontrar los pequeños pagos recurrentes escondidos en tus extractos.",
+     "p": [
+      "Las suscripciones se olvidan fácil porque cada una es pequeña y se renueva en silencio.",
+      "Revisa dos meses de extractos buscando pagos repetidos: apps, series, nube, membresías.",
+      "De cada una pregunta: ¿la uso, la disfruto, me apuntaría de nuevo hoy?"
+     ],
+     "q": "¿Qué suscripción usas más y cuál casi has olvidado?",
+     "c": "Haz una lista de todas las suscripciones y marca una para conservar o revisar."
+    },
+    "fr": {
+     "t": "Les petits abonnements s'additionnent",
+     "g": "Retrouver les petits paiements récurrents cachés dans tes relevés.",
+     "p": [
+      "Les abonnements s'oublient facilement : chacun est petit et se renouvelle en silence.",
+      "Parcours deux mois de relevés pour repérer les paiements répétés : applis, streaming, stockage, adhésions.",
+      "Pour chacun, demande-toi : je l'utilise, je l'apprécie, je le reprendrais aujourd'hui ?"
+     ],
+     "q": "Quel abonnement utilises-tu le plus, et lequel as-tu presque oublié ?",
+     "c": "Liste tous les abonnements trouvés et marque-en un à garder ou à revoir."
+    },
+    "it": {
+     "t": "I piccoli abbonamenti si sommano",
+     "g": "Trovare i piccoli pagamenti ricorrenti nascosti negli estratti.",
+     "p": [
+      "Gli abbonamenti si dimenticano facilmente: ognuno è piccolo e si rinnova in silenzio.",
+      "Scorri due mesi di estratti per pagamenti ripetuti: app, streaming, spazio cloud, iscrizioni.",
+      "Per ognuno chiediti: lo uso, mi piace, lo sottoscriverei di nuovo oggi?"
+     ],
+     "q": "Quale abbonamento usi di più e quale hai quasi dimenticato?",
+     "c": "Elenca tutti gli abbonamenti trovati e segnane uno da tenere o rivedere."
+    },
+    "pt": {
+     "t": "As pequenas subscrições somam-se",
+     "g": "Encontrar os pequenos pagamentos recorrentes escondidos nos extratos.",
+     "p": [
+      "As subscrições esquecem-se facilmente porque cada uma é pequena e renova em silêncio.",
+      "Percorre dois meses de extratos à procura de pagamentos repetidos: apps, streaming, nuvem, quotas.",
+      "De cada uma pergunta: uso, gosto, voltaria a subscrever hoje?"
+     ],
+     "q": "Que subscrição usas mais e qual quase esqueceste?",
+     "c": "Lista todas as subscrições que encontrares e marca uma para manter ou rever."
+    },
+    "pt_BR": {
+     "t": "As pequenas assinaturas se acumulam",
+     "g": "Encontrar os pequenos pagamentos recorrentes escondidos nos extratos.",
+     "p": [
+      "Assinaturas são fáceis de esquecer porque cada uma é pequena e renova em silêncio.",
+      "Percorra dois meses de extratos atrás de pagamentos repetidos: apps, streaming, nuvem, mensalidades.",
+      "De cada uma pergunte: eu uso, eu curto, assinaria de novo hoje?"
+     ],
+     "q": "Qual assinatura você mais usa e qual você quase esqueceu?",
+     "c": "Liste todas as assinaturas que achar e marque uma para manter ou rever."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Money in, money out",
+     "g": "Compare total income and total spending to see where you stand.",
+     "p": [
+      "The simplest picture is money in minus money out for one month.",
+      "If more goes out than comes in, that is information, not failure; it shows where to look.",
+      "If more comes in than goes out, decide on purpose where the extra should go."
+     ],
+     "q": "Looking at your month, does money in or money out feel bigger to you?",
+     "c": "Add up one recent month of income and spending, then subtract the two."
+    },
+    "de": {
+     "t": "Geld rein, Geld raus",
+     "g": "Gesamteinkommen und Gesamtausgaben vergleichen, um deinen Stand zu sehen.",
+     "p": [
+      "Das einfachste Bild: Einnahmen minus Ausgaben für einen Monat.",
+      "Geht mehr raus als rein, ist das eine Information, kein Versagen; es zeigt, wo du hinsehen kannst.",
+      "Kommt mehr rein als raus, entscheide bewusst, wohin der Überschuss gehen soll."
+     ],
+     "q": "Wenn du auf deinen Monat schaust: Fühlt sich Einnahme oder Ausgabe größer an?",
+     "c": "Addiere Einnahmen und Ausgaben eines aktuellen Monats und ziehe die beiden voneinander ab."
+    },
+    "es": {
+     "t": "Dinero que entra, dinero que sale",
+     "g": "Comparar ingresos y gastos totales para ver dónde estás.",
+     "p": [
+      "La imagen más simple es lo que entra menos lo que sale en un mes.",
+      "Si sale más de lo que entra, es información, no un fracaso: muestra dónde mirar.",
+      "Si entra más de lo que sale, decide a propósito adónde va lo que sobra."
+     ],
+     "q": "Mirando tu mes, ¿te parece más grande lo que entra o lo que sale?",
+     "c": "Suma ingresos y gastos de un mes reciente y réstalos."
+    },
+    "fr": {
+     "t": "Argent qui entre, argent qui sort",
+     "g": "Comparer revenus et dépenses totaux pour voir où tu en es.",
+     "p": [
+      "L'image la plus simple : ce qui entre moins ce qui sort sur un mois.",
+      "Si plus sort que n'entre, c'est une information, pas un échec : elle montre où regarder.",
+      "Si plus entre que ne sort, décide volontairement où va le surplus."
+     ],
+     "q": "En regardant ton mois, qu'est-ce qui te paraît plus grand : ce qui entre ou ce qui sort ?",
+     "c": "Additionne revenus et dépenses d'un mois récent, puis fais la différence."
+    },
+    "it": {
+     "t": "Soldi in entrata, soldi in uscita",
+     "g": "Confrontare entrate e uscite totali per vedere a che punto sei.",
+     "p": [
+      "L'immagine più semplice è entrate meno uscite per un mese.",
+      "Se esce più di quanto entra, è un'informazione, non un fallimento: indica dove guardare.",
+      "Se entra più di quanto esce, decidi apposta dove deve andare il resto."
+     ],
+     "q": "Guardando il tuo mese, ti sembra più grande ciò che entra o ciò che esce?",
+     "c": "Somma entrate e uscite di un mese recente e fai la differenza."
+    },
+    "pt": {
+     "t": "Dinheiro que entra, dinheiro que sai",
+     "g": "Comparar rendimentos e gastos totais para ver onde estás.",
+     "p": [
+      "A imagem mais simples é o que entra menos o que sai num mês.",
+      "Se sai mais do que entra, é informação, não fracasso: mostra onde olhar.",
+      "Se entra mais do que sai, decide de propósito para onde vai o que sobra."
+     ],
+     "q": "Olhando para o teu mês, o que te parece maior: o que entra ou o que sai?",
+     "c": "Soma rendimentos e gastos de um mês recente e faz a diferença."
+    },
+    "pt_BR": {
+     "t": "Dinheiro que entra, dinheiro que sai",
+     "g": "Comparar renda e gastos totais para ver em que pé você está.",
+     "p": [
+      "A imagem mais simples é o que entra menos o que sai em um mês.",
+      "Se sai mais do que entra, é informação, não fracasso: mostra onde olhar.",
+      "Se entra mais do que sai, decida de propósito para onde vai o que sobra."
+     ],
+     "q": "Olhando seu mês, o que parece maior para você: o que entra ou o que sai?",
+     "c": "Some renda e gastos de um mês recente e faça a diferença."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Celebrating your first insights",
+     "g": "Recognise what you have learned and why awareness is a big win.",
+     "p": [
+      "Three weeks ago you had no tracking; now you know where your money goes. That is real progress.",
+      "Awareness comes before change. You do not have to fix anything yet to be doing well.",
+      "Celebrating small wins keeps habits alive, so give yourself credit today."
+     ],
+     "q": "What is the most useful thing you have learned about your money so far?",
+     "c": "Write down your top three insights and treat yourself to something free."
+    },
+    "de": {
+     "t": "Deine ersten Erkenntnisse feiern",
+     "g": "Erkennen, was du gelernt hast und warum Bewusstsein ein großer Gewinn ist.",
+     "p": [
+      "Vor drei Wochen gab es kein Tracking; jetzt weißt du, wohin dein Geld fließt. Das ist echter Fortschritt.",
+      "Bewusstsein kommt vor Veränderung. Du musst noch nichts ändern, um gut unterwegs zu sein.",
+      "Kleine Erfolge zu feiern hält Gewohnheiten am Leben, also gönn dir heute Anerkennung."
+     ],
+     "q": "Was ist das Nützlichste, das du bisher über dein Geld gelernt hast?",
+     "c": "Schreibe deine drei wichtigsten Erkenntnisse auf und gönn dir etwas Kostenloses."
+    },
+    "es": {
+     "t": "Celebrar tus primeras ideas clave",
+     "g": "Reconocer lo que has aprendido y por qué ser consciente es un gran logro.",
+     "p": [
+      "Hace tres semanas no registrabas nada; ahora sabes adónde va tu dinero. Eso es progreso real.",
+      "La conciencia llega antes del cambio. No hace falta arreglar nada aún para ir bien.",
+      "Celebrar pequeños logros mantiene vivos los hábitos, así que date crédito hoy."
+     ],
+     "q": "¿Qué es lo más útil que has aprendido hasta ahora sobre tu dinero?",
+     "c": "Anota tus tres ideas principales y date un capricho gratuito."
+    },
+    "fr": {
+     "t": "Célébrer tes premiers constats",
+     "g": "Reconnaître ce que tu as appris et pourquoi la prise de conscience est une grande victoire.",
+     "p": [
+      "Il y a trois semaines, tu ne suivais rien ; maintenant tu sais où va ton argent. C'est un vrai progrès.",
+      "La conscience précède le changement. Tu n'as encore rien à réparer pour bien faire.",
+      "Fêter les petites victoires entretient les habitudes : accorde-toi du crédit aujourd'hui."
+     ],
+     "q": "Quelle est la chose la plus utile apprise jusqu'ici sur ton argent ?",
+     "c": "Note tes trois constats principaux et offre-toi quelque chose de gratuit."
+    },
+    "it": {
+     "t": "Festeggiare le prime scoperte",
+     "g": "Riconoscere ciò che hai imparato e perché la consapevolezza è una grande vittoria.",
+     "p": [
+      "Tre settimane fa non tracciavi nulla; ora sai dove vanno i tuoi soldi. È un vero progresso.",
+      "La consapevolezza viene prima del cambiamento. Non devi ancora sistemare nulla per andare bene.",
+      "Festeggiare i piccoli successi tiene vive le abitudini, quindi riconosciti un merito oggi."
+     ],
+     "q": "Qual è la cosa più utile che hai imparato finora sui tuoi soldi?",
+     "c": "Scrivi le tue tre scoperte principali e concediti qualcosa di gratuito."
+    },
+    "pt": {
+     "t": "Celebrar as tuas primeiras descobertas",
+     "g": "Reconhecer o que aprendeste e porque a consciência é uma grande vitória.",
+     "p": [
+      "Há três semanas não registavas nada; agora sabes para onde vai o teu dinheiro. É progresso real.",
+      "A consciência vem antes da mudança. Ainda não precisas de corrigir nada para estares a ir bem.",
+      "Celebrar pequenas vitórias mantém os hábitos vivos, por isso dá-te crédito hoje."
+     ],
+     "q": "Qual é a coisa mais útil que aprendeste até agora sobre o teu dinheiro?",
+     "c": "Escreve as tuas três descobertas principais e oferece-te algo gratuito."
+    },
+    "pt_BR": {
+     "t": "Celebrar suas primeiras descobertas",
+     "g": "Reconhecer o que você aprendeu e por que a consciência é uma grande vitória.",
+     "p": [
+      "Há três semanas você não registrava nada; agora sabe para onde vai seu dinheiro. É progresso real.",
+      "A consciência vem antes da mudança. Você ainda não precisa corrigir nada para estar indo bem.",
+      "Celebrar pequenas vitórias mantém os hábitos vivos, então dê crédito a si mesmo hoje."
+     ],
+     "q": "Qual é a coisa mais útil que você aprendeu até agora sobre o seu dinheiro?",
+     "c": "Escreva suas três descobertas principais e se dê algo gratuito."
+    }
+   }
+  }
+ ]
+}

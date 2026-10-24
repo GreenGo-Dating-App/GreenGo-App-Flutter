@@ -1,0 +1,835 @@
+{
+ "topic": "environment",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The waste hierarchy",
+     "g": "Learn the order of waste actions, from most helpful to least.",
+     "p": [
+      "The ladder runs: refuse, reduce, reuse, recycle, then recover, with disposal last.",
+      "The best waste is the one never created, so the top steps help the most.",
+      "Recycling is great, but using less and reusing come even earlier."
+     ],
+     "q": "Which step on the ladder do you already use most in daily life?",
+     "c": "Today, before throwing anything away, ask: could I refuse, reduce or reuse this first?"
+    },
+    "de": {
+     "t": "Die Abfallhierarchie",
+     "g": "Die Reihenfolge der Abfall-Schritte kennenlernen, vom hilfreichsten zum letzten.",
+     "p": [
+      "Die Leiter lautet: vermeiden, verringern, wiederverwenden, recyceln, verwerten, zuletzt entsorgen.",
+      "Der beste Abfall ist der, der gar nicht entsteht, daher helfen die oberen Stufen am meisten.",
+      "Recycling ist toll, aber weniger nutzen und Wiederverwenden kommen noch davor."
+     ],
+     "q": "Welche Stufe der Leiter nutzt du im Alltag schon am meisten?",
+     "c": "Frag dich heute vor jedem Wegwerfen: Kann ich das vermeiden, verringern oder wiederverwenden?"
+    },
+    "es": {
+     "t": "La jerarquía de residuos",
+     "g": "Aprender el orden de las acciones con los residuos, de la más útil a la menos.",
+     "p": [
+      "La escalera es: rechazar, reducir, reutilizar, reciclar y recuperar, con la eliminación al final.",
+      "El mejor residuo es el que nunca se crea, así que los peldaños altos ayudan más.",
+      "Reciclar es genial, pero usar menos y reutilizar van incluso antes."
+     ],
+     "q": "¿Qué peldaño de la escalera usas más en tu día a día?",
+     "c": "Hoy, antes de tirar algo, pregúntate: ¿puedo rechazarlo, reducirlo o reutilizarlo primero?"
+    },
+    "fr": {
+     "t": "La hiérarchie des déchets",
+     "g": "Apprendre l'ordre des gestes sur les déchets, du plus utile au moins utile.",
+     "p": [
+      "L'échelle : refuser, réduire, réutiliser, recycler, puis valoriser, l'élimination venant en dernier.",
+      "Le meilleur déchet est celui qu'on ne crée pas : les premiers échelons aident le plus.",
+      "Recycler, c'est bien, mais consommer moins et réutiliser passent avant."
+     ],
+     "q": "Quel échelon de l'échelle utilises-tu déjà le plus au quotidien ?",
+     "c": "Aujourd'hui, avant de jeter, demande-toi : puis-je refuser, réduire ou réutiliser d'abord ?"
+    },
+    "it": {
+     "t": "La gerarchia dei rifiuti",
+     "g": "Imparare l'ordine delle azioni sui rifiuti, dalla più utile alla meno utile.",
+     "p": [
+      "La scala è: rifiutare, ridurre, riutilizzare, riciclare, poi recuperare, con lo smaltimento per ultimo.",
+      "Il rifiuto migliore è quello mai creato, quindi i gradini alti aiutano di più.",
+      "Riciclare è ottimo, ma usare meno e riutilizzare vengono ancora prima."
+     ],
+     "q": "Quale gradino della scala usi già di più nella vita quotidiana?",
+     "c": "Oggi, prima di buttare qualcosa, chiediti: posso rifiutarlo, ridurlo o riutilizzarlo prima?"
+    },
+    "pt": {
+     "t": "A hierarquia dos resíduos",
+     "g": "Aprender a ordem das ações com os resíduos, da mais útil à menos útil.",
+     "p": [
+      "A escada é: recusar, reduzir, reutilizar, reciclar e valorizar, com a eliminação em último.",
+      "O melhor resíduo é o que nunca se cria, por isso os degraus de cima ajudam mais.",
+      "Reciclar é ótimo, mas usar menos e reutilizar vêm ainda antes."
+     ],
+     "q": "Que degrau da escada já usas mais no dia a dia?",
+     "c": "Hoje, antes de deitares algo fora, pergunta: posso recusar, reduzir ou reutilizar primeiro?"
+    },
+    "pt_BR": {
+     "t": "A hierarquia dos resíduos",
+     "g": "Aprender a ordem das ações com os resíduos, da mais útil à menos útil.",
+     "p": [
+      "A escada é: recusar, reduzir, reutilizar, reciclar e recuperar, com o descarte por último.",
+      "O melhor resíduo é o que nunca se cria, então os degraus de cima ajudam mais.",
+      "Reciclar é ótimo, mas usar menos e reutilizar vêm ainda antes."
+     ],
+     "q": "Qual degrau da escada você já usa mais no dia a dia?",
+     "c": "Hoje, antes de jogar algo fora, pergunte: posso recusar, reduzir ou reutilizar primeiro?"
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Refuse what you do not need",
+     "g": "Practise politely saying no to freebies, extra packaging and unused things.",
+     "p": [
+      "Free pens, flyers and tiny sample bags often end up in the bin within days.",
+      "A friendly no thanks costs nothing and keeps clutter out of your home.",
+      "You can also refuse receipts, extra napkins and plastic cutlery with takeaway."
+     ],
+     "q": "What freebie or extra do you usually accept without really wanting it?",
+     "c": "Say no thanks once today to something unneeded, like a bag, napkin or flyer."
+    },
+    "de": {
+     "t": "Ablehnen, was du nicht brauchst",
+     "g": "Üben, Gratisgeschenke, Extra-Verpackung und Unnötiges freundlich abzulehnen.",
+     "p": [
+      "Gratis-Stifte, Flyer und Probiertütchen landen oft nach wenigen Tagen im Müll.",
+      "Ein freundliches Nein, danke kostet nichts und hält Krempel aus deinem Zuhause fern.",
+      "Du kannst auch Kassenbons, Servietten und Plastikbesteck beim Essen zum Mitnehmen ablehnen."
+     ],
+     "q": "Welches Gratis-Extra nimmst du meist an, ohne es wirklich zu wollen?",
+     "c": "Sag heute einmal Nein, danke zu etwas Unnötigem, etwa Tüte, Serviette oder Flyer."
+    },
+    "es": {
+     "t": "Rechaza lo que no necesitas",
+     "g": "Practicar cómo decir no, gracias a regalos, envoltorios extra y cosas que no usarás.",
+     "p": [
+      "Bolígrafos gratis, folletos y bolsitas de muestra suelen acabar en la basura en pocos días.",
+      "Un no, gracias amable no cuesta nada y mantiene el desorden fuera de casa.",
+      "También puedes rechazar tickets, servilletas extra y cubiertos de plástico en la comida para llevar."
+     ],
+     "q": "¿Qué regalito o extra sueles aceptar sin quererlo de verdad?",
+     "c": "Di no, gracias una vez hoy a algo innecesario, como una bolsa, una servilleta o un folleto."
+    },
+    "fr": {
+     "t": "Refuser ce dont on n'a pas besoin",
+     "g": "S'entraîner à dire poliment non merci aux gadgets, emballages en trop et objets inutiles.",
+     "p": [
+      "Stylos gratuits, prospectus et mini-échantillons finissent souvent à la poubelle en quelques jours.",
+      "Un non merci aimable ne coûte rien et garde l'encombrement hors de chez toi.",
+      "Tu peux aussi refuser tickets, serviettes en plus et couverts en plastique pour la vente à emporter."
+     ],
+     "q": "Quel cadeau ou extra acceptes-tu souvent sans vraiment en vouloir ?",
+     "c": "Dis non merci une fois aujourd'hui à quelque chose d'inutile : sac, serviette ou prospectus."
+    },
+    "it": {
+     "t": "Rifiuta ciò che non ti serve",
+     "g": "Esercitarsi a dire no grazie a omaggi, imballaggi extra e cose che non userai.",
+     "p": [
+      "Penne gratuite, volantini e bustine di campioni spesso finiscono nella spazzatura in pochi giorni.",
+      "Un no grazie gentile non costa nulla e tiene il disordine fuori casa.",
+      "Puoi rifiutare anche scontrini, tovaglioli extra e posate di plastica con l'asporto."
+     ],
+     "q": "Quale omaggio o extra accetti di solito senza volerlo davvero?",
+     "c": "Oggi di' no grazie una volta a qualcosa di inutile, come una busta, un tovagliolo o un volantino."
+    },
+    "pt": {
+     "t": "Recusar o que não precisas",
+     "g": "Praticar dizer não, obrigado a brindes, embalagens a mais e coisas que não vais usar.",
+     "p": [
+      "Canetas grátis, folhetos e saquinhos de amostras acabam muitas vezes no lixo em poucos dias.",
+      "Um não, obrigado simpático não custa nada e mantém a confusão fora de casa.",
+      "Também podes recusar talões, guardanapos a mais e talheres de plástico na comida para levar."
+     ],
+     "q": "Que brinde ou extra costumas aceitar sem o querer mesmo?",
+     "c": "Diz não, obrigado uma vez hoje a algo desnecessário, como um saco, um guardanapo ou um folheto."
+    },
+    "pt_BR": {
+     "t": "Recusar o que você não precisa",
+     "g": "Praticar dizer não, obrigado a brindes, embalagens extras e coisas que você não vai usar.",
+     "p": [
+      "Canetas grátis, panfletos e saquinhos de amostra muitas vezes vão para o lixo em poucos dias.",
+      "Um não, obrigado simpático não custa nada e mantém a bagunça fora de casa.",
+      "Você também pode recusar recibos, guardanapos extras e talheres de plástico no delivery."
+     ],
+     "q": "Que brinde ou extra você costuma aceitar sem querer de verdade?",
+     "c": "Diga não, obrigado uma vez hoje a algo desnecessário, como uma sacola, um guardanapo ou um panfleto."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reduce: using less, living well",
+     "g": "See how buying and owning less can save money, time and resources.",
+     "p": [
+      "Every object took materials, energy and water to make and carry to you.",
+      "Owning fewer, better things means less to clean, store, fix and replace.",
+      "Before buying, wait a day: many wants fade and you keep the money."
+     ],
+     "q": "What is one thing you own that you rarely use?",
+     "c": "Pause before one purchase today and ask: do I need it, or just want it right now?"
+    },
+    "de": {
+     "t": "Reduzieren: weniger nutzen, gut leben",
+     "g": "Sehen, wie weniger kaufen und besitzen Geld, Zeit und Ressourcen spart.",
+     "p": [
+      "Jedes Ding brauchte Material, Energie und Wasser, bis es bei dir war.",
+      "Weniger, dafür bessere Dinge bedeuten weniger putzen, lagern, reparieren und ersetzen.",
+      "Warte vor dem Kauf einen Tag: Viele Wünsche vergehen, und das Geld bleibt bei dir."
+     ],
+     "q": "Was besitzt du, das du kaum benutzt?",
+     "c": "Halte heute vor einem Kauf inne und frag dich: Brauche ich es oder will ich es nur gerade?"
+    },
+    "es": {
+     "t": "Reducir: usar menos y vivir bien",
+     "g": "Ver cómo comprar y tener menos ahorra dinero, tiempo y recursos.",
+     "p": [
+      "Cada objeto necesitó materiales, energía y agua para fabricarse y llegar a ti.",
+      "Tener menos cosas, pero mejores, significa menos que limpiar, guardar, arreglar y reponer.",
+      "Antes de comprar, espera un día: muchos antojos se pasan y te quedas con el dinero."
+     ],
+     "q": "¿Qué cosa tienes que casi nunca usas?",
+     "c": "Haz una pausa antes de una compra hoy y pregúntate: ¿lo necesito o solo lo quiero ahora?"
+    },
+    "fr": {
+     "t": "Réduire : consommer moins, vivre bien",
+     "g": "Voir comment acheter et posséder moins économise argent, temps et ressources.",
+     "p": [
+      "Chaque objet a demandé matières, énergie et eau pour être fabriqué et arriver jusqu'à toi.",
+      "Avoir moins d'objets, mais meilleurs, c'est moins à nettoyer, ranger, réparer et remplacer.",
+      "Avant d'acheter, attends un jour : bien des envies passent et tu gardes ton argent."
+     ],
+     "q": "Quel objet possèdes-tu que tu utilises rarement ?",
+     "c": "Fais une pause avant un achat aujourd'hui : en ai-je besoin, ou en ai-je juste envie maintenant ?"
+    },
+    "it": {
+     "t": "Ridurre: usare meno, vivere bene",
+     "g": "Vedere come comprare e possedere meno fa risparmiare soldi, tempo e risorse.",
+     "p": [
+      "Ogni oggetto ha richiesto materiali, energia e acqua per essere prodotto e arrivare a te.",
+      "Avere meno cose, ma migliori, significa meno da pulire, riporre, riparare e sostituire.",
+      "Prima di comprare aspetta un giorno: molti desideri passano e i soldi restano tuoi."
+     ],
+     "q": "Cosa possiedi che usi raramente?",
+     "c": "Fai una pausa prima di un acquisto oggi e chiediti: mi serve, o lo voglio solo adesso?"
+    },
+    "pt": {
+     "t": "Reduzir: usar menos e viver bem",
+     "g": "Ver como comprar e ter menos poupa dinheiro, tempo e recursos.",
+     "p": [
+      "Cada objeto precisou de materiais, energia e água para ser feito e chegar a ti.",
+      "Ter menos coisas, mas melhores, é menos para limpar, guardar, arranjar e substituir.",
+      "Antes de comprar, espera um dia: muitos desejos passam e ficas com o dinheiro."
+     ],
+     "q": "O que é que tens que quase nunca usas?",
+     "c": "Faz uma pausa antes de uma compra hoje e pergunta: preciso disto ou só o quero agora?"
+    },
+    "pt_BR": {
+     "t": "Reduzir: usar menos e viver bem",
+     "g": "Ver como comprar e ter menos economiza dinheiro, tempo e recursos.",
+     "p": [
+      "Cada objeto precisou de materiais, energia e água para ser feito e chegar até você.",
+      "Ter menos coisas, porém melhores, é menos para limpar, guardar, consertar e repor.",
+      "Antes de comprar, espere um dia: muitos desejos passam e você fica com o dinheiro."
+     ],
+     "q": "O que você tem que quase nunca usa?",
+     "c": "Faça uma pausa antes de uma compra hoje e pergunte: preciso disso ou só quero agora?"
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reuse: giving things a second life",
+     "g": "Find ways to use jars, bags, boxes and clothes again and again.",
+     "p": [
+      "Glass jars make great storage for food, pens, screws and leftovers.",
+      "Old T-shirts become cleaning cloths, and boxes become organisers or gift wrap.",
+      "Repairing, swapping and borrowing are all forms of reuse too."
+     ],
+     "q": "What everyday item at home could you give a second job to?",
+     "c": "Find one jar, box or bag you were about to discard and give it a new use today."
+    },
+    "de": {
+     "t": "Wiederverwenden: Dingen ein zweites Leben geben",
+     "g": "Wege finden, Gläser, Beutel, Kartons und Kleidung immer wieder zu nutzen.",
+     "p": [
+      "Gläser eignen sich prima für Essen, Stifte, Schrauben und Reste.",
+      "Alte T-Shirts werden Putzlappen, Kartons werden zu Ordnungsboxen oder Geschenkpapier.",
+      "Reparieren, Tauschen und Leihen zählen ebenfalls zum Wiederverwenden."
+     ],
+     "q": "Welchem Alltagsding bei dir könntest du eine neue Aufgabe geben?",
+     "c": "Finde ein Glas, einen Karton oder eine Tüte, die du wegwerfen wolltest, und gib sie heute eine neue Aufgabe."
+    },
+    "es": {
+     "t": "Reutilizar: dar una segunda vida a las cosas",
+     "g": "Encontrar formas de usar una y otra vez frascos, bolsas, cajas y ropa.",
+     "p": [
+      "Los frascos de vidrio sirven para guardar comida, bolígrafos, tornillos y sobras.",
+      "Camisetas viejas pasan a ser trapos y las cajas, organizadores o papel de regalo.",
+      "Reparar, intercambiar y pedir prestado también son formas de reutilizar."
+     ],
+     "q": "¿A qué objeto cotidiano de casa podrías darle un segundo trabajo?",
+     "c": "Encuentra un frasco, caja o bolsa que ibas a tirar y dale un nuevo uso hoy."
+    },
+    "fr": {
+     "t": "Réutiliser : donner une seconde vie aux objets",
+     "g": "Trouver comment réutiliser bocaux, sacs, cartons et vêtements encore et encore.",
+     "p": [
+      "Les bocaux en verre servent à ranger nourriture, stylos, vis et restes.",
+      "Les vieux T-shirts deviennent chiffons, les cartons des rangements ou du papier cadeau.",
+      "Réparer, échanger et emprunter sont aussi des façons de réutiliser."
+     ],
+     "q": "À quel objet du quotidien pourrais-tu donner un second emploi ?",
+     "c": "Trouve un bocal, un carton ou un sac que tu allais jeter et donne-lui une nouvelle fonction aujourd'hui."
+    },
+    "it": {
+     "t": "Riutilizzare: dare una seconda vita alle cose",
+     "g": "Trovare modi per usare vasetti, borse, scatole e vestiti ancora e ancora.",
+     "p": [
+      "I barattoli di vetro vanno bene per cibo, penne, viti e avanzi.",
+      "Le vecchie magliette diventano stracci e le scatole organizer o carta regalo.",
+      "Riparare, scambiare e prendere in prestito sono altre forme di riuso."
+     ],
+     "q": "A quale oggetto quotidiano di casa potresti dare un secondo lavoro?",
+     "c": "Trova un barattolo, una scatola o una borsa che stavi per buttare e dagli un nuovo uso oggi."
+    },
+    "pt": {
+     "t": "Reutilizar: dar uma segunda vida às coisas",
+     "g": "Encontrar formas de usar frascos, sacos, caixas e roupa uma e outra vez.",
+     "p": [
+      "Os frascos de vidro servem para guardar comida, canetas, parafusos e sobras.",
+      "As t-shirts velhas viram panos de limpeza e as caixas organizadores ou papel de embrulho.",
+      "Reparar, trocar e pedir emprestado também são formas de reutilizar."
+     ],
+     "q": "A que objeto do dia a dia lá de casa podias dar um segundo trabalho?",
+     "c": "Encontra um frasco, caixa ou saco que ias deitar fora e dá-lhe um novo uso hoje."
+    },
+    "pt_BR": {
+     "t": "Reutilizar: dar uma segunda vida às coisas",
+     "g": "Encontrar formas de usar potes, sacolas, caixas e roupas vez após vez.",
+     "p": [
+      "Potes de vidro servem para guardar comida, canetas, parafusos e sobras.",
+      "Camisetas velhas viram panos de limpeza e as caixas viram organizadores ou papel de presente.",
+      "Consertar, trocar e emprestar também são formas de reutilizar."
+     ],
+     "q": "A qual objeto do dia a dia aí de casa você poderia dar um segundo trabalho?",
+     "c": "Encontre um pote, caixa ou sacola que ia descartar e dê a ele um novo uso hoje."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Recycling basics",
+     "g": "Learn which common materials can be recycled and why clean, sorted items matter.",
+     "p": [
+      "Paper, cardboard, glass, metal and many plastics can be turned into new items.",
+      "Rules differ by town, so check your local guide for what goes in which bin.",
+      "Clean, dry, sorted items are far more likely to be truly recycled."
+     ],
+     "q": "Which materials do you already recycle at home?",
+     "c": "Check your local recycling guide today and note one item you were unsure about."
+    },
+    "de": {
+     "t": "Recycling-Grundlagen",
+     "g": "Lernen, welche gängigen Stoffe recycelt werden können und warum Sauberkeit und Trennung zählen.",
+     "p": [
+      "Papier, Karton, Glas, Metall und viele Kunststoffe können zu neuen Dingen werden.",
+      "Die Regeln unterscheiden sich je nach Gemeinde, schau im örtlichen Ratgeber nach.",
+      "Saubere, trockene, getrennte Stoffe werden viel eher wirklich recycelt."
+     ],
+     "q": "Welche Stoffe recycelst du zu Hause schon?",
+     "c": "Sieh heute in den örtlichen Recycling-Ratgeber und notiere ein Teil, bei dem du unsicher warst."
+    },
+    "es": {
+     "t": "Lo básico del reciclaje",
+     "g": "Aprender qué materiales comunes se reciclan y por qué importa que estén limpios y separados.",
+     "p": [
+      "Papel, cartón, vidrio, metal y muchos plásticos pueden convertirse en objetos nuevos.",
+      "Las normas varían según el municipio, así que consulta tu guía local sobre cada contenedor.",
+      "Los residuos limpios, secos y separados tienen muchas más opciones de reciclarse de verdad."
+     ],
+     "q": "¿Qué materiales ya reciclas en casa?",
+     "c": "Consulta hoy la guía local de reciclaje y anota un objeto del que dudabas."
+    },
+    "fr": {
+     "t": "Les bases du recyclage",
+     "g": "Apprendre quels matériaux courants se recyclent et pourquoi propre et trié compte.",
+     "p": [
+      "Papier, carton, verre, métal et beaucoup de plastiques peuvent devenir de nouveaux objets.",
+      "Les règles varient selon la commune : consulte ton guide local pour chaque bac.",
+      "Des déchets propres, secs et triés ont bien plus de chances d'être vraiment recyclés."
+     ],
+     "q": "Quels matériaux recycles-tu déjà chez toi ?",
+     "c": "Consulte aujourd'hui le guide de tri de ta commune et note un objet dont tu doutais."
+    },
+    "it": {
+     "t": "Le basi del riciclo",
+     "g": "Imparare quali materiali comuni si riciclano e perché pulito e separato conta.",
+     "p": [
+      "Carta, cartone, vetro, metallo e molte plastiche possono diventare nuovi oggetti.",
+      "Le regole cambiano da comune a comune, quindi controlla la guida locale per ogni contenitore.",
+      "Materiali puliti, asciutti e separati hanno molte più probabilità di essere davvero riciclati."
+     ],
+     "q": "Quali materiali ricicli già a casa?",
+     "c": "Consulta oggi la guida locale al riciclo e annota un oggetto di cui eri incerto."
+    },
+    "pt": {
+     "t": "Noções básicas de reciclagem",
+     "g": "Aprender que materiais comuns se reciclam e por que limpos e separados fazem diferença.",
+     "p": [
+      "Papel, cartão, vidro, metal e muitos plásticos podem tornar-se objetos novos.",
+      "As regras mudam de concelho para concelho, por isso consulta o guia local sobre cada contentor.",
+      "Resíduos limpos, secos e separados têm muito mais hipóteses de serem mesmo reciclados."
+     ],
+     "q": "Que materiais já reciclas em casa?",
+     "c": "Consulta hoje o guia local de reciclagem e anota um objeto sobre o qual tinhas dúvidas."
+    },
+    "pt_BR": {
+     "t": "Noções básicas de reciclagem",
+     "g": "Aprender quais materiais comuns são recicláveis e por que limpos e separados fazem diferença.",
+     "p": [
+      "Papel, papelão, vidro, metal e muitos plásticos podem virar objetos novos.",
+      "As regras mudam de cidade para cidade, então consulte o guia local sobre cada lixeira.",
+      "Resíduos limpos, secos e separados têm muito mais chance de serem realmente reciclados."
+     ],
+     "q": "Quais materiais você já recicla em casa?",
+     "c": "Consulte hoje o guia local de reciclagem e anote um item sobre o qual tinha dúvida."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sorting your recycling right",
+     "g": "Avoid common mistakes like greasy boxes and mixed materials.",
+     "p": [
+      "Food-soaked paper, such as a greasy pizza box base, usually cannot be recycled.",
+      "A quick rinse of jars and cans helps, since leftovers can spoil a whole batch.",
+      "When in doubt, check local rules: one wrong item can contaminate good material."
+     ],
+     "q": "What item do you find hardest to sort?",
+     "c": "Rinse and sort one container the right way today, then check the local rule for one doubtful item."
+    },
+    "de": {
+     "t": "Richtig trennen",
+     "g": "Typische Fehler wie fettige Kartons und gemischte Materialien vermeiden.",
+     "p": [
+      "Mit Essen getränktes Papier, etwa ein fettiger Pizzakarton, lässt sich meist nicht recyceln.",
+      "Gläser und Dosen kurz ausspülen hilft, denn Reste können eine ganze Ladung verderben.",
+      "Im Zweifel die örtlichen Regeln prüfen: Ein falsches Teil kann gutes Material verunreinigen."
+     ],
+     "q": "Welches Teil lässt sich bei dir am schwersten einsortieren?",
+     "c": "Spüle heute einen Behälter aus und sortiere ihn richtig, prüfe dann die Regel für ein unsicheres Teil."
+    },
+    "es": {
+     "t": "Separar bien el reciclaje",
+     "g": "Evitar errores comunes como cajas grasientas y materiales mezclados.",
+     "p": [
+      "El papel empapado de comida, como la base grasienta de una caja de pizza, normalmente no se recicla.",
+      "Enjuagar rápido frascos y latas ayuda, porque los restos pueden estropear todo un lote.",
+      "En caso de duda, mira las normas locales: un objeto equivocado puede contaminar buen material."
+     ],
+     "q": "¿Qué objeto te cuesta más separar?",
+     "c": "Enjuaga y separa hoy un envase como toca, y comprueba la norma local de un objeto dudoso."
+    },
+    "fr": {
+     "t": "Bien trier ses déchets",
+     "g": "Éviter les erreurs courantes comme les cartons gras et les matériaux mélangés.",
+     "p": [
+      "Le papier imbibé de nourriture, comme le fond gras d'un carton de pizza, ne se recycle généralement pas.",
+      "Rincer rapidement bocaux et boîtes aide, car les restes peuvent gâcher tout un lot.",
+      "Dans le doute, vérifie les règles locales : un seul mauvais objet peut contaminer de bons matériaux."
+     ],
+     "q": "Quel objet est le plus difficile à trier pour toi ?",
+     "c": "Rince et trie un contenant correctement aujourd'hui, puis vérifie la règle locale pour un objet douteux."
+    },
+    "it": {
+     "t": "Separare bene il riciclo",
+     "g": "Evitare errori comuni come scatole unte e materiali mischiati.",
+     "p": [
+      "La carta impregnata di cibo, come il fondo unto di una scatola di pizza, di solito non si ricicla.",
+      "Sciacquare in fretta barattoli e lattine aiuta, perché i residui possono rovinare un intero lotto.",
+      "Nel dubbio controlla le regole locali: un oggetto sbagliato può contaminare del buon materiale."
+     ],
+     "q": "Quale oggetto trovi più difficile da separare?",
+     "c": "Sciacqua e separa bene un contenitore oggi, poi controlla la regola locale per un oggetto dubbio."
+    },
+    "pt": {
+     "t": "Separar bem a reciclagem",
+     "g": "Evitar erros comuns como caixas gordurosas e materiais misturados.",
+     "p": [
+      "Papel encharcado de comida, como a base gordurosa de uma caixa de pizza, em geral não se recicla.",
+      "Passar frascos e latas por água ajuda, porque restos podem estragar um lote inteiro.",
+      "Em caso de dúvida, vê as regras locais: um objeto errado pode contaminar bom material."
+     ],
+     "q": "Que objeto é mais difícil de separar para ti?",
+     "c": "Enxagua e separa hoje uma embalagem como deve ser e confirma a regra local para um objeto duvidoso."
+    },
+    "pt_BR": {
+     "t": "Separar bem a reciclagem",
+     "g": "Evitar erros comuns como caixas engorduradas e materiais misturados.",
+     "p": [
+      "Papel encharcado de comida, como a base gordurosa de uma caixa de pizza, em geral não é reciclado.",
+      "Enxaguar potes e latas rapidamente ajuda, porque restos podem estragar um lote inteiro.",
+      "Na dúvida, veja as regras locais: um item errado pode contaminar material bom."
+     ],
+     "q": "Qual item é mais difícil de separar para você?",
+     "c": "Enxágue e separe hoje uma embalagem do jeito certo e confira a regra local de um item duvidoso."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Paper and cardboard",
+     "g": "See how paper is recycled and find simple ways to use less of it.",
+     "p": [
+      "Paper is made of plant fibres that can be pulped and reused several times.",
+      "Clean paper and cardboard recycle well, but wet or greasy paper does not.",
+      "Printing on both sides, going digital and using scrap paper for notes all help."
+     ],
+     "q": "How much paper do you think you use in a normal week?",
+     "c": "Use the back of a used sheet for a note or list today instead of fresh paper."
+    },
+    "de": {
+     "t": "Papier und Karton",
+     "g": "Sehen, wie Papier recycelt wird, und einfache Wege finden, weniger zu verbrauchen.",
+     "p": [
+      "Papier besteht aus Pflanzenfasern, die sich aufbereiten und mehrmals wiederverwenden lassen.",
+      "Sauberes Papier und Karton lassen sich gut recyceln, nasses oder fettiges nicht.",
+      "Beidseitig drucken, digital arbeiten und Notizen auf Schmierpapier helfen alle."
+     ],
+     "q": "Wie viel Papier verbrauchst du wohl in einer normalen Woche?",
+     "c": "Nutze heute für eine Notiz oder Liste die Rückseite eines gebrauchten Blatts statt neuem Papier."
+    },
+    "es": {
+     "t": "Papel y cartón",
+     "g": "Ver cómo se recicla el papel y encontrar formas sencillas de usar menos.",
+     "p": [
+      "El papel está hecho de fibras vegetales que pueden triturarse y reutilizarse varias veces.",
+      "El papel y cartón limpios se reciclan bien, pero el mojado o grasiento no.",
+      "Imprimir por ambas caras, pasarse a lo digital y usar papel usado para notas ayudan."
+     ],
+     "q": "¿Cuánto papel crees que usas en una semana normal?",
+     "c": "Usa hoy el reverso de una hoja usada para una nota o lista en vez de papel nuevo."
+    },
+    "fr": {
+     "t": "Papier et carton",
+     "g": "Voir comment le papier se recycle et trouver des moyens simples d'en utiliser moins.",
+     "p": [
+      "Le papier est fait de fibres végétales qui peuvent être broyées et réutilisées plusieurs fois.",
+      "Papier et carton propres se recyclent bien, mais pas le papier mouillé ou gras.",
+      "Imprimer recto verso, passer au numérique et noter sur du brouillon aident tous."
+     ],
+     "q": "Quelle quantité de papier utilises-tu dans une semaine normale, à ton avis ?",
+     "c": "Utilise aujourd'hui le dos d'une feuille déjà utilisée pour une note ou une liste au lieu d'une feuille neuve."
+    },
+    "it": {
+     "t": "Carta e cartone",
+     "g": "Vedere come si ricicla la carta e trovare modi semplici per usarne meno.",
+     "p": [
+      "La carta è fatta di fibre vegetali che si possono sminuzzare e riusare più volte.",
+      "Carta e cartone puliti si riciclano bene, quella bagnata o unta no.",
+      "Stampare fronte e retro, passare al digitale e usare fogli già usati per appunti aiutano."
+     ],
+     "q": "Quanta carta pensi di usare in una settimana normale?",
+     "c": "Usa oggi il retro di un foglio già usato per un appunto o una lista invece di carta nuova."
+    },
+    "pt": {
+     "t": "Papel e cartão",
+     "g": "Ver como o papel é reciclado e encontrar formas simples de usar menos.",
+     "p": [
+      "O papel é feito de fibras vegetais que podem ser trituradas e reutilizadas várias vezes.",
+      "Papel e cartão limpos reciclam-se bem, mas o molhado ou gorduroso não.",
+      "Imprimir frente e verso, passar ao digital e usar papel usado para notas ajudam."
+     ],
+     "q": "Quanto papel achas que usas numa semana normal?",
+     "c": "Usa hoje o verso de uma folha usada para uma nota ou lista em vez de papel novo."
+    },
+    "pt_BR": {
+     "t": "Papel e papelão",
+     "g": "Ver como o papel é reciclado e encontrar formas simples de usar menos.",
+     "p": [
+      "O papel é feito de fibras vegetais que podem ser trituradas e reaproveitadas várias vezes.",
+      "Papel e papelão limpos são bem reciclados, mas o molhado ou engordurado não.",
+      "Imprimir frente e verso, passar ao digital e usar papel usado para anotações ajudam."
+     ],
+     "q": "Quanto papel você acha que usa em uma semana normal?",
+     "c": "Use hoje o verso de uma folha usada para uma anotação ou lista em vez de papel novo."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Glass and metal",
+     "g": "Meet two materials that can be recycled many times without losing quality.",
+     "p": [
+      "Glass can be melted and reshaped again and again, with no loss of quality.",
+      "Steel and aluminium also recycle many times, using far less energy than making new.",
+      "Rinse them, keep them loose in the bin and avoid mixing in other materials."
+     ],
+     "q": "Which glass or metal items do you use most, jars, cans, bottles?",
+     "c": "Collect today's glass and metal items and put each in the right recycling spot."
+    },
+    "de": {
+     "t": "Glas und Metall",
+     "g": "Zwei Materialien kennenlernen, die sich oft ohne Qualitätsverlust recyceln lassen.",
+     "p": [
+      "Glas lässt sich immer wieder einschmelzen und neu formen, ohne an Qualität zu verlieren.",
+      "Stahl und Aluminium lassen sich ebenfalls oft recyceln und brauchen viel weniger Energie als Neues.",
+      "Spüle sie aus, gib sie lose in die Tonne und mische kein anderes Material dazu."
+     ],
+     "q": "Welche Glas- oder Metallsachen nutzt du am meisten: Gläser, Dosen, Flaschen?",
+     "c": "Sammle heute Glas- und Metallsachen und gib jedes in die richtige Sammlung."
+    },
+    "es": {
+     "t": "Vidrio y metal",
+     "g": "Conocer dos materiales que pueden reciclarse muchas veces sin perder calidad.",
+     "p": [
+      "El vidrio puede fundirse y moldearse una y otra vez sin perder calidad.",
+      "El acero y el aluminio también se reciclan muchas veces, con mucha menos energía que fabricar nuevo.",
+      "Enjuágalos, échalos sueltos al contenedor y evita mezclar otros materiales."
+     ],
+     "q": "¿Qué objetos de vidrio o metal usas más: frascos, latas, botellas?",
+     "c": "Reúne hoy tus objetos de vidrio y metal y llévalos cada uno al contenedor correcto."
+    },
+    "fr": {
+     "t": "Verre et métal",
+     "g": "Découvrir deux matériaux qui se recyclent de nombreuses fois sans perdre en qualité.",
+     "p": [
+      "Le verre peut être fondu et remodelé à l'infini, sans perte de qualité.",
+      "L'acier et l'aluminium se recyclent aussi de nombreuses fois, avec bien moins d'énergie que du neuf.",
+      "Rince-les, jette-les en vrac dans le bac et évite de mélanger d'autres matières."
+     ],
+     "q": "Quels objets en verre ou en métal utilises-tu le plus : bocaux, boîtes, bouteilles ?",
+     "c": "Rassemble aujourd'hui tes objets en verre et en métal et dépose chacun au bon endroit."
+    },
+    "it": {
+     "t": "Vetro e metallo",
+     "g": "Conoscere due materiali che si riciclano molte volte senza perdere qualità.",
+     "p": [
+      "Il vetro si può fondere e rimodellare all'infinito, senza perdere qualità.",
+      "Anche acciaio e alluminio si riciclano molte volte, con molta meno energia del nuovo.",
+      "Sciacquali, buttali sfusi nel contenitore ed evita di mescolare altri materiali."
+     ],
+     "q": "Quali oggetti di vetro o metallo usi di più: barattoli, lattine, bottiglie?",
+     "c": "Raccogli oggi gli oggetti di vetro e metallo e portali ciascuno nel contenitore giusto."
+    },
+    "pt": {
+     "t": "Vidro e metal",
+     "g": "Conhecer dois materiais que se reciclam muitas vezes sem perder qualidade.",
+     "p": [
+      "O vidro pode ser fundido e remodelado vezes sem conta, sem perder qualidade.",
+      "O aço e o alumínio também se reciclam muitas vezes, com muito menos energia do que fazer novo.",
+      "Enxagua-os, deita-os soltos no contentor e evita misturar outros materiais."
+     ],
+     "q": "Que objetos de vidro ou metal usas mais: frascos, latas, garrafas?",
+     "c": "Junta hoje os teus objetos de vidro e metal e leva cada um ao sítio certo de reciclagem."
+    },
+    "pt_BR": {
+     "t": "Vidro e metal",
+     "g": "Conhecer dois materiais que se reciclam muitas vezes sem perder qualidade.",
+     "p": [
+      "O vidro pode ser derretido e remodelado vezes sem conta, sem perder qualidade.",
+      "O aço e o alumínio também são reciclados muitas vezes, com muito menos energia do que fazer novo.",
+      "Enxágue, jogue soltos na lixeira e evite misturar outros materiais."
+     ],
+     "q": "Quais objetos de vidro ou metal você mais usa: potes, latas, garrafas?",
+     "c": "Junte hoje seus itens de vidro e metal e leve cada um ao lugar certo de reciclagem."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Understanding plastics",
+     "g": "Learn the main plastic types and what the numbers on packaging mean.",
+     "p": [
+      "Plastics come in different types, and the number in the triangle names the type.",
+      "It tells you what the plastic is made of, not that it is always recyclable locally.",
+      "Bottles and tubs are usually easier to recycle than thin films or mixed packs."
+     ],
+     "q": "Do you know which plastic items you throw away most often?",
+     "c": "Flip three plastic items today and find the number or symbol on each one."
+    },
+    "de": {
+     "t": "Kunststoffe verstehen",
+     "g": "Die wichtigsten Kunststoffarten und die Zahlen auf Verpackungen kennenlernen.",
+     "p": [
+      "Es gibt verschiedene Kunststoffarten, die Zahl im Dreieck nennt die Art.",
+      "Sie zeigt, woraus der Kunststoff besteht, nicht ob er vor Ort immer recycelbar ist.",
+      "Flaschen und Becher lassen sich meist leichter recyceln als dünne Folien oder Verbundpackungen."
+     ],
+     "q": "Weißt du, welche Plastikteile du am häufigsten wegwirfst?",
+     "c": "Dreh heute drei Plastikteile um und suche jeweils die Zahl oder das Symbol."
+    },
+    "es": {
+     "t": "Entender los plásticos",
+     "g": "Aprender los tipos principales de plástico y qué significan los números en los envases.",
+     "p": [
+      "Hay distintos tipos de plástico, y el número dentro del triángulo indica el tipo.",
+      "Dice de qué está hecho el plástico, no que siempre se pueda reciclar en tu zona.",
+      "Botellas y tarrinas suelen reciclarse mejor que las láminas finas o los envases mixtos."
+     ],
+     "q": "¿Sabes qué objetos de plástico tiras con más frecuencia?",
+     "c": "Da la vuelta hoy a tres objetos de plástico y busca el número o símbolo de cada uno."
+    },
+    "fr": {
+     "t": "Comprendre les plastiques",
+     "g": "Apprendre les principaux types de plastique et ce que signifient les numéros sur les emballages.",
+     "p": [
+      "Il existe plusieurs types de plastique, et le numéro dans le triangle indique lequel.",
+      "Il dit de quoi le plastique est fait, pas s'il est toujours recyclable localement.",
+      "Bouteilles et pots se recyclent généralement mieux que les films fins ou les emballages mixtes."
+     ],
+     "q": "Sais-tu quels objets en plastique tu jettes le plus souvent ?",
+     "c": "Retourne aujourd'hui trois objets en plastique et cherche le numéro ou le symbole de chacun."
+    },
+    "it": {
+     "t": "Capire le plastiche",
+     "g": "Imparare i principali tipi di plastica e cosa significano i numeri sugli imballaggi.",
+     "p": [
+      "Esistono diversi tipi di plastica, e il numero nel triangolo indica il tipo.",
+      "Dice di cosa è fatta la plastica, non che sia sempre riciclabile dove vivi.",
+      "Bottiglie e vaschette sono di solito più facili da riciclare di pellicole sottili o confezioni miste."
+     ],
+     "q": "Sai quali oggetti di plastica butti più spesso?",
+     "c": "Gira oggi tre oggetti di plastica e cerca il numero o il simbolo su ciascuno."
+    },
+    "pt": {
+     "t": "Perceber os plásticos",
+     "g": "Aprender os principais tipos de plástico e o que significam os números nas embalagens.",
+     "p": [
+      "Há vários tipos de plástico, e o número no triângulo indica o tipo.",
+      "Diz de que é feito o plástico, não que seja sempre reciclável na tua zona.",
+      "Garrafas e tinas costumam reciclar-se melhor do que películas finas ou embalagens mistas."
+     ],
+     "q": "Sabes que objetos de plástico deitas fora com mais frequência?",
+     "c": "Vira hoje três objetos de plástico e procura o número ou símbolo em cada um."
+    },
+    "pt_BR": {
+     "t": "Entendendo os plásticos",
+     "g": "Aprender os principais tipos de plástico e o que significam os números nas embalagens.",
+     "p": [
+      "Há vários tipos de plástico, e o número no triângulo indica o tipo.",
+      "Ele diz do que o plástico é feito, não que seja sempre reciclável na sua cidade.",
+      "Garrafas e potes costumam ser mais fáceis de reciclar do que filmes finos ou embalagens mistas."
+     ],
+     "q": "Você sabe quais itens de plástico joga fora com mais frequência?",
+     "c": "Vire hoje três itens de plástico e procure o número ou símbolo em cada um."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cutting single-use plastic",
+     "g": "Try easy swaps for bottles, cups, bags and straws.",
+     "p": [
+      "Single-use items are used for minutes but last a very long time as waste.",
+      "A bottle, a mug, a cloth bag and a metal straw cover most daily cases.",
+      "Start with the one item you throw away most, and replace just that."
+     ],
+     "q": "Which single-use plastic item shows up most in your week?",
+     "c": "Pick one single-use item to skip today and use a reusable alternative instead."
+    },
+    "de": {
+     "t": "Einwegplastik reduzieren",
+     "g": "Einfache Alternativen für Flaschen, Becher, Tüten und Strohhalme ausprobieren.",
+     "p": [
+      "Einwegartikel nutzt man Minuten, doch als Abfall bleiben sie sehr lange.",
+      "Flasche, Tasse, Stoffbeutel und Metallstrohhalm decken die meisten Alltagsfälle ab.",
+      "Starte mit dem Teil, das du am häufigsten wegwirfst, und ersetze nur das."
+     ],
+     "q": "Welches Einwegplastik begegnet dir in der Woche am häufigsten?",
+     "c": "Wähle heute ein Einwegteil zum Weglassen und nimm stattdessen eine Mehrwegvariante."
+    },
+    "es": {
+     "t": "Reducir el plástico de un solo uso",
+     "g": "Probar cambios fáciles para botellas, vasos, bolsas y pajitas.",
+     "p": [
+      "Los artículos de un solo uso se usan minutos, pero duran muchísimo como residuo.",
+      "Una botella, una taza, una bolsa de tela y una pajita metálica cubren casi todo el día a día.",
+      "Empieza por lo que más tiras y sustituye solo eso."
+     ],
+     "q": "¿Qué plástico de un solo uso aparece más en tu semana?",
+     "c": "Elige hoy un artículo de un solo uso para evitar y usa una alternativa reutilizable."
+    },
+    "fr": {
+     "t": "Réduire le plastique à usage unique",
+     "g": "Essayer des alternatives faciles pour bouteilles, gobelets, sacs et pailles.",
+     "p": [
+      "Les objets jetables servent quelques minutes mais durent très longtemps comme déchets.",
+      "Une gourde, une tasse, un sac en tissu et une paille en métal couvrent la plupart des cas.",
+      "Commence par l'objet que tu jettes le plus et remplace seulement celui-là."
+     ],
+     "q": "Quel plastique jetable revient le plus souvent dans ta semaine ?",
+     "c": "Choisis aujourd'hui un objet jetable à éviter et utilise une alternative réutilisable à la place."
+    },
+    "it": {
+     "t": "Ridurre la plastica monouso",
+     "g": "Provare sostituzioni facili per bottiglie, tazze, sacchetti e cannucce.",
+     "p": [
+      "Gli oggetti monouso si usano per minuti ma restano a lungo come rifiuto.",
+      "Una borraccia, una tazza, una borsa di stoffa e una cannuccia di metallo coprono quasi ogni caso.",
+      "Parti dall'oggetto che butti di più e sostituisci solo quello."
+     ],
+     "q": "Quale plastica monouso compare più spesso nella tua settimana?",
+     "c": "Scegli oggi un monouso da evitare e usa al suo posto un'alternativa riutilizzabile."
+    },
+    "pt": {
+     "t": "Reduzir o plástico de uso único",
+     "g": "Experimentar trocas fáceis para garrafas, copos, sacos e palhinhas.",
+     "p": [
+      "Os artigos de uso único usam-se minutos, mas duram muitíssimo como resíduo.",
+      "Uma garrafa, uma caneca, um saco de pano e uma palhinha de metal cobrem quase todo o dia a dia.",
+      "Começa pelo que mais deitas fora e substitui só isso."
+     ],
+     "q": "Que plástico de uso único aparece mais na tua semana?",
+     "c": "Escolhe hoje um artigo de uso único para evitar e usa uma alternativa reutilizável."
+    },
+    "pt_BR": {
+     "t": "Reduzindo o plástico descartável",
+     "g": "Experimentar trocas fáceis para garrafas, copos, sacolas e canudos.",
+     "p": [
+      "Itens descartáveis são usados por minutos, mas duram muitíssimo como resíduo.",
+      "Uma garrafa, uma caneca, uma sacola de pano e um canudo de metal cobrem quase todo o dia a dia.",
+      "Comece pelo que mais joga fora e troque só isso."
+     ],
+     "q": "Qual plástico descartável aparece mais na sua semana?",
+     "c": "Escolha hoje um item descartável para evitar e use uma alternativa reutilizável."
+    }
+   }
+  }
+ ]
+}

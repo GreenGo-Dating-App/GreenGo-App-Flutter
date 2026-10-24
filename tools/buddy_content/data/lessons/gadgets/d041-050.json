@@ -1,0 +1,835 @@
+{
+ "topic": "gadgets",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Screenshots and screen recording",
+     "g": "Capturing what is on your screen to save, share or explain something.",
+     "p": [
+      "A screenshot saves exactly what is on screen, usually with a button combination or gesture.",
+      "Screen recording films your screen with sound, perfect for showing someone how to do something.",
+      "Before sharing, check the capture for private details like names, numbers or messages."
+     ],
+     "q": "When did a screenshot last help you explain or remember something?",
+     "c": "Take a screenshot of something useful and crop out any private details."
+    },
+    "de": {
+     "t": "Screenshots und Bildschirmaufnahme",
+     "g": "Festhalten, was auf dem Bildschirm ist, zum Speichern, Teilen oder Erklären.",
+     "p": [
+      "Ein Screenshot speichert genau, was auf dem Bildschirm steht, meist per Tastenkombination oder Geste.",
+      "Bildschirmaufnahme filmt dein Display mit Ton, ideal um jemandem etwas zu zeigen.",
+      "Prüfe vor dem Teilen auf private Details wie Namen, Nummern oder Nachrichten."
+     ],
+     "q": "Wann hat dir zuletzt ein Screenshot beim Erklären oder Merken geholfen?",
+     "c": "Mache einen Screenshot von etwas Nützlichem und schneide private Details weg."
+    },
+    "es": {
+     "t": "Capturas y grabación de pantalla",
+     "g": "Guardar lo que ves en pantalla para conservarlo, compartirlo o explicar algo.",
+     "p": [
+      "Una captura guarda exactamente lo que hay en pantalla, normalmente con una combinación de botones o un gesto.",
+      "La grabación de pantalla filma tu pantalla con sonido, ideal para enseñar a alguien cómo hacer algo.",
+      "Antes de compartir, revisa que no haya datos privados como nombres, números o mensajes."
+     ],
+     "q": "¿Cuándo te ayudó por última vez una captura a explicar o recordar algo?",
+     "c": "Haz una captura de algo útil y recorta cualquier dato privado."
+    },
+    "fr": {
+     "t": "Captures et enregistrement d'écran",
+     "g": "Garder ce qui est à l'écran pour le conserver, le partager ou expliquer quelque chose.",
+     "p": [
+      "Une capture enregistre exactement ce qui est à l'écran, souvent par combinaison de boutons ou geste.",
+      "L'enregistrement d'écran filme ton écran avec le son, parfait pour montrer comment faire.",
+      "Avant de partager, vérifie qu'il n'y a pas de détails privés : noms, numéros, messages."
+     ],
+     "q": "Quand une capture t'a-t-elle aidé pour la dernière fois à expliquer ou retenir ?",
+     "c": "Fais une capture de quelque chose d'utile et recadre les détails privés."
+    },
+    "it": {
+     "t": "Screenshot e registrazione dello schermo",
+     "g": "Catturare ciò che è sullo schermo per salvarlo, condividerlo o spiegare qualcosa.",
+     "p": [
+      "Uno screenshot salva esattamente ciò che è sullo schermo, di solito con una combinazione di tasti o un gesto.",
+      "La registrazione dello schermo filma il display con l'audio, perfetta per mostrare come si fa qualcosa.",
+      "Prima di condividere, controlla che non ci siano dettagli privati come nomi, numeri o messaggi."
+     ],
+     "q": "Quando uno screenshot ti ha aiutato l'ultima volta a spiegare o ricordare?",
+     "c": "Fai uno screenshot di qualcosa di utile e ritaglia i dettagli privati."
+    },
+    "pt": {
+     "t": "Capturas e gravação de ecrã",
+     "g": "Guardar o que está no ecrã para conservar, partilhar ou explicar algo.",
+     "p": [
+      "Uma captura guarda exatamente o que está no ecrã, normalmente com uma combinação de botões ou gesto.",
+      "A gravação de ecrã filma o ecrã com som, ideal para mostrar a alguém como se faz algo.",
+      "Antes de partilhar, verifica se há dados privados como nomes, números ou mensagens."
+     ],
+     "q": "Quando foi a última vez que uma captura te ajudou a explicar ou lembrar algo?",
+     "c": "Faz uma captura de algo útil e corta quaisquer dados privados."
+    },
+    "pt_BR": {
+     "t": "Capturas e gravação de tela",
+     "g": "Guardar o que está na tela para conservar, compartilhar ou explicar algo.",
+     "p": [
+      "Uma captura guarda exatamente o que está na tela, normalmente com uma combinação de botões ou gesto.",
+      "A gravação de tela filma sua tela com som, ideal para mostrar a alguém como se faz algo.",
+      "Antes de compartilhar, confira se há dados privados como nomes, números ou mensagens."
+     ],
+     "q": "Quando foi a última vez que uma captura ajudou você a explicar ou lembrar algo?",
+     "c": "Faça uma captura de algo útil e corte quaisquer dados privados."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Organising your photos",
+     "g": "Albums, favourites and search help you find memories quickly.",
+     "p": [
+      "Albums group photos by trip, family or project so nothing gets lost in the stream.",
+      "Mark your best shots as favourites; they become a quick highlight reel.",
+      "Photo apps can search by person, place or object, so you rarely need to scroll."
+     ],
+     "q": "How many photos do you have, and could you find a specific one quickly?",
+     "c": "Create one album for a recent event and add its best five photos."
+    },
+    "de": {
+     "t": "Fotos ordnen",
+     "g": "Alben, Favoriten und Suche helfen dir, Erinnerungen schnell zu finden.",
+     "p": [
+      "Alben gruppieren Fotos nach Reise, Familie oder Projekt, damit nichts im Strom untergeht.",
+      "Markiere deine besten Bilder als Favoriten; sie werden zu einer schnellen Highlight-Sammlung.",
+      "Foto-Apps suchen nach Person, Ort oder Objekt, du musst selten scrollen."
+     ],
+     "q": "Wie viele Fotos hast du, und fändest du ein bestimmtes schnell?",
+     "c": "Lege ein Album für ein aktuelles Ereignis an und füge die besten fünf Fotos hinzu."
+    },
+    "es": {
+     "t": "Organizar tus fotos",
+     "g": "Álbumes, favoritas y búsqueda te ayudan a encontrar recuerdos al instante.",
+     "p": [
+      "Los álbumes agrupan fotos por viaje, familia o proyecto para que nada se pierda en el flujo.",
+      "Marca tus mejores fotos como favoritas; forman un resumen rápido.",
+      "Las apps de fotos buscan por persona, lugar u objeto, así casi nunca hay que desplazarse."
+     ],
+     "q": "¿Cuántas fotos tienes y podrías encontrar una concreta enseguida?",
+     "c": "Crea un álbum de un evento reciente y añade sus cinco mejores fotos."
+    },
+    "fr": {
+     "t": "Organiser tes photos",
+     "g": "Albums, favoris et recherche t'aident à retrouver tes souvenirs vite.",
+     "p": [
+      "Les albums regroupent les photos par voyage, famille ou projet pour que rien ne se perde.",
+      "Marque tes meilleures photos en favoris ; elles forment un résumé rapide.",
+      "Les applis photo cherchent par personne, lieu ou objet : on défile rarement."
+     ],
+     "q": "Combien de photos as-tu, et pourrais-tu en retrouver une précise vite ?",
+     "c": "Crée un album pour un événement récent et ajoute ses cinq meilleures photos."
+    },
+    "it": {
+     "t": "Organizzare le tue foto",
+     "g": "Album, preferiti e ricerca ti aiutano a ritrovare i ricordi in fretta.",
+     "p": [
+      "Gli album raggruppano le foto per viaggio, famiglia o progetto, così nulla si perde nel flusso.",
+      "Segna i tuoi scatti migliori come preferiti; diventano un riepilogo rapido.",
+      "Le app foto cercano per persona, luogo o oggetto, quindi si scorre raramente."
+     ],
+     "q": "Quante foto hai e potresti trovarne una precisa in fretta?",
+     "c": "Crea un album per un evento recente e aggiungi le sue cinque foto migliori."
+    },
+    "pt": {
+     "t": "Organizar as tuas fotos",
+     "g": "Álbuns, favoritas e pesquisa ajudam-te a encontrar memórias depressa.",
+     "p": [
+      "Os álbuns agrupam fotos por viagem, família ou projeto para nada se perder no fluxo.",
+      "Marca as melhores fotos como favoritas; ficam um resumo rápido.",
+      "As apps de fotos pesquisam por pessoa, lugar ou objeto, por isso raramente é preciso deslizar."
+     ],
+     "q": "Quantas fotos tens e conseguirias encontrar uma específica depressa?",
+     "c": "Cria um álbum de um evento recente e junta as cinco melhores fotos."
+    },
+    "pt_BR": {
+     "t": "Organizar suas fotos",
+     "g": "Álbuns, favoritas e busca ajudam você a encontrar memórias rápido.",
+     "p": [
+      "Os álbuns agrupam fotos por viagem, família ou projeto para nada se perder no fluxo.",
+      "Marque as melhores fotos como favoritas; elas viram um resumo rápido.",
+      "Os apps de fotos buscam por pessoa, lugar ou objeto, então raramente é preciso rolar."
+     ],
+     "q": "Quantas fotos você tem e conseguiria achar uma específica rápido?",
+     "c": "Crie um álbum de um evento recente e junte as cinco melhores fotos."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Backups: never lose your stuff",
+     "g": "Automatic backups to the cloud or a computer protect photos and contacts.",
+     "p": [
+      "A backup is a second copy of your data kept somewhere other than the device.",
+      "Automatic cloud backup works quietly when you are charging and on Wi-Fi.",
+      "A good rule is three copies: the device, one backup nearby and one elsewhere."
+     ],
+     "q": "What would hurt most to lose from your phone: photos, contacts or messages?",
+     "c": "Open your backup settings and check when the last backup happened."
+    },
+    "de": {
+     "t": "Backups: nie wieder alles verlieren",
+     "g": "Automatische Backups in der Cloud oder auf dem Computer schützen Fotos und Kontakte.",
+     "p": [
+      "Ein Backup ist eine zweite Kopie deiner Daten an einem anderen Ort als dem Gerät.",
+      "Automatisches Cloud-Backup läuft leise, wenn du lädst und im WLAN bist.",
+      "Gute Regel: drei Kopien, das Gerät, ein Backup in der Nähe und eines woanders."
+     ],
+     "q": "Was würde am meisten schmerzen zu verlieren: Fotos, Kontakte oder Nachrichten?",
+     "c": "Öffne die Backup-Einstellungen und prüfe, wann das letzte Backup lief."
+    },
+    "es": {
+     "t": "Copias de seguridad: no pierdas nada",
+     "g": "Las copias automáticas en la nube o en un ordenador protegen fotos y contactos.",
+     "p": [
+      "Una copia de seguridad es un duplicado de tus datos guardado fuera del aparato.",
+      "La copia automática en la nube funciona sola cuando cargas y estás con wifi.",
+      "Una buena regla son tres copias: el aparato, una cercana y otra en otro sitio."
+     ],
+     "q": "¿Qué te dolería más perder del móvil: fotos, contactos o mensajes?",
+     "c": "Abre los ajustes de copia y comprueba cuándo fue la última."
+    },
+    "fr": {
+     "t": "Sauvegardes : ne rien perdre",
+     "g": "Les sauvegardes automatiques dans le cloud ou sur un ordinateur protègent photos et contacts.",
+     "p": [
+      "Une sauvegarde est une seconde copie de tes données gardée ailleurs que sur l'appareil.",
+      "La sauvegarde cloud automatique se fait seule quand tu charges en wifi.",
+      "Bonne règle : trois copies, l'appareil, une sauvegarde proche et une ailleurs."
+     ],
+     "q": "Que serait le plus douloureux à perdre : photos, contacts ou messages ?",
+     "c": "Ouvre les réglages de sauvegarde et vérifie la date de la dernière."
+    },
+    "it": {
+     "t": "Backup: non perdere mai le tue cose",
+     "g": "I backup automatici nel cloud o su un computer proteggono foto e contatti.",
+     "p": [
+      "Un backup è una seconda copia dei tuoi dati tenuta altrove rispetto al dispositivo.",
+      "Il backup cloud automatico lavora in silenzio quando sei in carica e col wifi.",
+      "Una buona regola sono tre copie: il dispositivo, un backup vicino e uno altrove."
+     ],
+     "q": "Cosa ti dispiacerebbe di più perdere dal telefono: foto, contatti o messaggi?",
+     "c": "Apri le impostazioni di backup e controlla quando è stato fatto l'ultimo."
+    },
+    "pt": {
+     "t": "Cópias de segurança: não percas nada",
+     "g": "As cópias automáticas na nuvem ou no computador protegem fotos e contactos.",
+     "p": [
+      "Uma cópia de segurança é um duplicado dos teus dados guardado fora do aparelho.",
+      "A cópia automática na nuvem funciona sozinha quando carregas e tens wifi.",
+      "Uma boa regra são três cópias: o aparelho, uma próxima e outra noutro sítio."
+     ],
+     "q": "O que mais te custaria perder do telemóvel: fotos, contactos ou mensagens?",
+     "c": "Abre as definições de cópia e vê quando foi a última."
+    },
+    "pt_BR": {
+     "t": "Backups: nunca perca suas coisas",
+     "g": "Os backups automáticos na nuvem ou no computador protegem fotos e contatos.",
+     "p": [
+      "Um backup é uma segunda cópia dos seus dados guardada fora do aparelho.",
+      "O backup automático na nuvem funciona sozinho quando você carrega e tem wi-fi.",
+      "Uma boa regra são três cópias: o aparelho, uma por perto e outra em outro lugar."
+     ],
+     "q": "O que mais doeria perder do celular: fotos, contatos ou mensagens?",
+     "c": "Abra as configurações de backup e veja quando foi o último."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cloud storage basics",
+     "g": "Keeping files on internet servers so they sync across devices.",
+     "p": [
+      "The cloud means files stored on internet servers in data centres, not on your device.",
+      "Sync keeps the same files up to date on your phone, tablet and computer.",
+      "Free space is limited, so decide what really needs to live in the cloud."
+     ],
+     "q": "Which files would you love to reach from any device?",
+     "c": "Put one important document in cloud storage and open it from another device."
+    },
+    "de": {
+     "t": "Cloud-Speicher: die Grundlagen",
+     "g": "Dateien auf Internet-Servern halten, damit sie über Geräte hinweg synchron bleiben.",
+     "p": [
+      "Die Cloud sind Dateien auf Internet-Servern in Rechenzentren, nicht auf deinem Gerät.",
+      "Synchronisierung hält dieselben Dateien auf Handy, Tablet und Computer aktuell.",
+      "Freier Platz ist begrenzt, entscheide also, was wirklich in die Cloud gehört."
+     ],
+     "q": "Welche Dateien möchtest du von jedem Gerät aus erreichen?",
+     "c": "Lege ein wichtiges Dokument in die Cloud und öffne es auf einem anderen Gerät."
+    },
+    "es": {
+     "t": "Lo básico del almacenamiento en la nube",
+     "g": "Guardar archivos en servidores de internet para que se sincronicen entre aparatos.",
+     "p": [
+      "La nube son archivos guardados en servidores de internet en centros de datos, no en tu aparato.",
+      "La sincronización mantiene los mismos archivos al día en móvil, tableta y ordenador.",
+      "El espacio gratis es limitado, así que decide qué debe vivir de verdad en la nube."
+     ],
+     "q": "¿Qué archivos te gustaría alcanzar desde cualquier aparato?",
+     "c": "Sube un documento importante a la nube y ábrelo desde otro aparato."
+    },
+    "fr": {
+     "t": "Les bases du stockage cloud",
+     "g": "Garder des fichiers sur des serveurs internet pour les synchroniser entre appareils.",
+     "p": [
+      "Le cloud, ce sont des fichiers stockés sur des serveurs internet en centres de données, pas sur ton appareil.",
+      "La synchronisation garde les mêmes fichiers à jour sur téléphone, tablette et ordinateur.",
+      "L'espace gratuit est limité : décide ce qui doit vraiment vivre dans le cloud."
+     ],
+     "q": "Quels fichiers aimerais-tu atteindre depuis n'importe quel appareil ?",
+     "c": "Mets un document important dans le cloud et ouvre-le depuis un autre appareil."
+    },
+    "it": {
+     "t": "Le basi dell'archiviazione cloud",
+     "g": "Tenere i file su server internet per sincronizzarli tra dispositivi.",
+     "p": [
+      "Il cloud sono file salvati su server internet in centri dati, non sul tuo dispositivo.",
+      "La sincronizzazione tiene gli stessi file aggiornati su telefono, tablet e computer.",
+      "Lo spazio gratuito è limitato, quindi decidi cosa deve davvero stare nel cloud."
+     ],
+     "q": "Quali file ti piacerebbe raggiungere da qualsiasi dispositivo?",
+     "c": "Metti un documento importante nel cloud e aprilo da un altro dispositivo."
+    },
+    "pt": {
+     "t": "O básico do armazenamento na nuvem",
+     "g": "Guardar ficheiros em servidores da internet para sincronizar entre aparelhos.",
+     "p": [
+      "A nuvem são ficheiros guardados em servidores da internet em centros de dados, não no teu aparelho.",
+      "A sincronização mantém os mesmos ficheiros atualizados no telemóvel, tablet e computador.",
+      "O espaço grátis é limitado, por isso decide o que deve mesmo viver na nuvem."
+     ],
+     "q": "Que ficheiros gostarias de alcançar a partir de qualquer aparelho?",
+     "c": "Põe um documento importante na nuvem e abre-o noutro aparelho."
+    },
+    "pt_BR": {
+     "t": "O básico do armazenamento na nuvem",
+     "g": "Guardar arquivos em servidores da internet para sincronizar entre aparelhos.",
+     "p": [
+      "A nuvem são arquivos guardados em servidores da internet em data centers, não no seu aparelho.",
+      "A sincronização mantém os mesmos arquivos atualizados no celular, tablet e computador.",
+      "O espaço grátis é limitado, então decida o que deve mesmo ficar na nuvem."
+     ],
+     "q": "Que arquivos você gostaria de acessar de qualquer aparelho?",
+     "c": "Coloque um documento importante na nuvem e abra-o em outro aparelho."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Passwords and screen locks",
+     "g": "PINs, patterns, fingerprints and face unlock keep your phone private.",
+     "p": [
+      "A screen lock stops strangers from opening your phone if it is lost or borrowed.",
+      "Longer PINs and passwords are stronger than short, guessable ones like birthdays.",
+      "Fingerprint and face unlock are convenient; keep a strong PIN as the backup."
+     ],
+     "q": "How do you unlock your phone, and how guessable is it?",
+     "c": "Check your lock settings and upgrade to a longer PIN if it is short."
+    },
+    "de": {
+     "t": "Passwörter und Bildschirmsperre",
+     "g": "PIN, Muster, Fingerabdruck und Gesichtserkennung halten dein Handy privat.",
+     "p": [
+      "Eine Bildschirmsperre hindert Fremde daran, dein verlorenes oder geliehenes Handy zu öffnen.",
+      "Längere PINs und Passwörter sind stärker als kurze, erratbare wie Geburtstage.",
+      "Fingerabdruck und Gesicht sind bequem; behalte eine starke PIN als Rückfall."
+     ],
+     "q": "Wie entsperrst du dein Handy, und wie erratbar ist das?",
+     "c": "Prüfe deine Sperreinstellungen und nimm eine längere PIN, wenn sie kurz ist."
+    },
+    "es": {
+     "t": "Contraseñas y bloqueo de pantalla",
+     "g": "PIN, patrón, huella y desbloqueo facial mantienen tu móvil privado.",
+     "p": [
+      "Un bloqueo de pantalla impide que extraños abran tu móvil si se pierde o lo prestas.",
+      "Los PIN y contraseñas largos son más fuertes que los cortos y adivinables, como fechas de cumpleaños.",
+      "La huella y la cara son cómodas; deja un PIN fuerte como respaldo."
+     ],
+     "q": "¿Cómo desbloqueas tu móvil y qué tan fácil es de adivinar?",
+     "c": "Revisa tus ajustes de bloqueo y pasa a un PIN más largo si es corto."
+    },
+    "fr": {
+     "t": "Mots de passe et verrouillage d'écran",
+     "g": "Code PIN, schéma, empreinte et visage gardent ton téléphone privé.",
+     "p": [
+      "Un verrouillage d'écran empêche les inconnus d'ouvrir ton téléphone perdu ou prêté.",
+      "Les codes et mots de passe longs sont plus solides que les courts et devinables, comme les dates de naissance.",
+      "Empreinte et visage sont pratiques ; garde un code solide en secours."
+     ],
+     "q": "Comment déverrouilles-tu ton téléphone, et est-ce facile à deviner ?",
+     "c": "Vérifie tes réglages de verrouillage et passe à un code plus long s'il est court."
+    },
+    "it": {
+     "t": "Password e blocco schermo",
+     "g": "PIN, sequenza, impronta e volto mantengono privato il tuo telefono.",
+     "p": [
+      "Un blocco schermo impedisce agli estranei di aprire il tuo telefono perso o prestato.",
+      "PIN e password lunghi sono più forti di quelli corti e indovinabili, come le date di nascita.",
+      "Impronta e volto sono comodi; tieni un PIN forte come riserva."
+     ],
+     "q": "Come sblocchi il telefono e quanto è facile da indovinare?",
+     "c": "Controlla le impostazioni di blocco e passa a un PIN più lungo se è corto."
+    },
+    "pt": {
+     "t": "Palavras-passe e bloqueio de ecrã",
+     "g": "PIN, padrão, impressão digital e rosto mantêm o teu telemóvel privado.",
+     "p": [
+      "Um bloqueio de ecrã impede estranhos de abrirem o telemóvel perdido ou emprestado.",
+      "PIN e palavras-passe longos são mais fortes que os curtos e adivinháveis, como datas de nascimento.",
+      "Impressão digital e rosto são cómodos; mantém um PIN forte como reserva."
+     ],
+     "q": "Como desbloqueias o telemóvel e quão fácil é de adivinhar?",
+     "c": "Verifica as definições de bloqueio e passa a um PIN mais longo se for curto."
+    },
+    "pt_BR": {
+     "t": "Senhas e bloqueio de tela",
+     "g": "PIN, padrão, digital e rosto mantêm seu celular privado.",
+     "p": [
+      "Um bloqueio de tela impede estranhos de abrirem o celular perdido ou emprestado.",
+      "PINs e senhas longos são mais fortes que os curtos e adivinháveis, como datas de aniversário.",
+      "Digital e rosto são práticos; mantenha um PIN forte como reserva."
+     ],
+     "q": "Como você desbloqueia o celular e quão fácil é de adivinhar?",
+     "c": "Verifique as configurações de bloqueio e passe a um PIN mais longo se for curto."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Software updates matter",
+     "g": "Updates fix bugs, close security holes and sometimes add features.",
+     "p": [
+      "Updates repair bugs and close security holes that bad actors could use.",
+      "They can also improve battery life, speed and add new features.",
+      "Install updates on Wi-Fi with enough charge, and never switch off mid-update."
+     ],
+     "q": "Do you update your devices quickly or put it off?",
+     "c": "Check for a system update today and turn on automatic updates if you can."
+    },
+    "de": {
+     "t": "Software-Updates zählen",
+     "g": "Updates beheben Fehler, schließen Sicherheitslücken und bringen manchmal neue Funktionen.",
+     "p": [
+      "Updates reparieren Fehler und schließen Sicherheitslücken, die Angreifer nutzen könnten.",
+      "Sie können auch Akkulaufzeit, Tempo und neue Funktionen verbessern.",
+      "Installiere Updates im WLAN mit genug Akku und schalte nie mitten im Update aus."
+     ],
+     "q": "Aktualisierst du deine Geräte schnell oder schiebst du es auf?",
+     "c": "Suche heute nach einem Systemupdate und aktiviere automatische Updates, wenn möglich."
+    },
+    "es": {
+     "t": "Las actualizaciones importan",
+     "g": "Las actualizaciones corrigen errores, cierran brechas de seguridad y a veces añaden funciones.",
+     "p": [
+      "Las actualizaciones arreglan fallos y cierran brechas de seguridad que podrían aprovechar los malos.",
+      "También pueden mejorar batería, velocidad y añadir funciones nuevas.",
+      "Instala con wifi y batería suficiente, y nunca apagues a mitad de actualización."
+     ],
+     "q": "¿Actualizas tus aparatos enseguida o lo vas dejando?",
+     "c": "Busca hoy una actualización del sistema y activa las automáticas si puedes."
+    },
+    "fr": {
+     "t": "Les mises à jour comptent",
+     "g": "Les mises à jour corrigent des bogues, bouchent des failles et ajoutent parfois des fonctions.",
+     "p": [
+      "Elles réparent des bogues et ferment des failles de sécurité que des pirates pourraient exploiter.",
+      "Elles peuvent aussi améliorer l'autonomie, la vitesse et ajouter des fonctions.",
+      "Installe-les en wifi avec assez de batterie, sans jamais éteindre en plein milieu."
+     ],
+     "q": "Mets-tu tes appareils à jour vite ou repousses-tu ?",
+     "c": "Cherche une mise à jour du système aujourd'hui et active les automatiques si possible."
+    },
+    "it": {
+     "t": "Gli aggiornamenti contano",
+     "g": "Gli aggiornamenti correggono bug, chiudono falle e a volte aggiungono funzioni.",
+     "p": [
+      "Riparano bug e chiudono falle di sicurezza che malintenzionati potrebbero sfruttare.",
+      "Possono anche migliorare batteria e velocità e aggiungere funzioni nuove.",
+      "Installali con il wifi e abbastanza carica, e non spegnere mai a metà aggiornamento."
+     ],
+     "q": "Aggiorni i dispositivi subito o rimandi?",
+     "c": "Cerca oggi un aggiornamento di sistema e attiva quelli automatici se puoi."
+    },
+    "pt": {
+     "t": "As atualizações importam",
+     "g": "As atualizações corrigem erros, fecham falhas de segurança e às vezes juntam funções.",
+     "p": [
+      "Reparam falhas e fecham brechas de segurança que maus atores poderiam explorar.",
+      "Podem também melhorar bateria, velocidade e juntar funções novas.",
+      "Instala com wifi e bateria suficiente e nunca desligues a meio da atualização."
+     ],
+     "q": "Atualizas os teus aparelhos depressa ou vais adiando?",
+     "c": "Procura hoje uma atualização do sistema e ativa as automáticas se puderes."
+    },
+    "pt_BR": {
+     "t": "As atualizações importam",
+     "g": "As atualizações corrigem erros, fecham falhas de segurança e às vezes trazem recursos.",
+     "p": [
+      "Elas consertam falhas e fecham brechas de segurança que pessoas mal-intencionadas poderiam explorar.",
+      "Podem também melhorar bateria, velocidade e trazer recursos novos.",
+      "Instale com wi-fi e bateria suficiente e nunca desligue no meio da atualização."
+     ],
+     "q": "Você atualiza seus aparelhos rápido ou vai adiando?",
+     "c": "Procure hoje uma atualização do sistema e ative as automáticas se puder."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spotting fake apps and messages",
+     "g": "Signs of scams in texts, links and look-alike apps.",
+     "p": [
+      "Scam messages create urgency: act now, you won, your account is blocked.",
+      "Check the sender and hover on or long press a link before opening it.",
+      "Install apps only from official stores and check name, developer and reviews."
+     ],
+     "q": "Have you ever received a message that looked suspicious?",
+     "c": "Look at your latest suspicious message and list two warning signs."
+    },
+    "de": {
+     "t": "Gefälschte Apps und Nachrichten erkennen",
+     "g": "Anzeichen für Betrug in Nachrichten, Links und täuschend ähnlichen Apps.",
+     "p": [
+      "Betrugsnachrichten erzeugen Druck: sofort handeln, du hast gewonnen, dein Konto ist gesperrt.",
+      "Prüfe den Absender und halte einen Link gedrückt, bevor du ihn öffnest.",
+      "Installiere Apps nur aus offiziellen Stores und prüfe Name, Entwickler und Bewertungen."
+     ],
+     "q": "Hast du schon einmal eine verdächtige Nachricht bekommen?",
+     "c": "Sieh dir eine verdächtige Nachricht an und nenne zwei Warnzeichen."
+    },
+    "es": {
+     "t": "Detectar apps y mensajes falsos",
+     "g": "Señales de estafa en mensajes, enlaces y apps que imitan a otras.",
+     "p": [
+      "Los mensajes fraudulentos crean urgencia: actúa ya, has ganado, tu cuenta está bloqueada.",
+      "Comprueba el remitente y mantén pulsado un enlace antes de abrirlo.",
+      "Instala apps solo de tiendas oficiales y revisa nombre, desarrollador y opiniones."
+     ],
+     "q": "¿Has recibido alguna vez un mensaje que parecía sospechoso?",
+     "c": "Mira un mensaje sospechoso reciente y anota dos señales de alerta."
+    },
+    "fr": {
+     "t": "Repérer faux messages et fausses applis",
+     "g": "Signes d'arnaque dans les SMS, liens et applis imitées.",
+     "p": [
+      "Les messages frauduleux créent l'urgence : agis vite, tu as gagné, ton compte est bloqué.",
+      "Vérifie l'expéditeur et maintiens un appui sur un lien avant de l'ouvrir.",
+      "Installe des applis uniquement depuis les boutiques officielles et vérifie nom, éditeur et avis."
+     ],
+     "q": "As-tu déjà reçu un message qui semblait suspect ?",
+     "c": "Regarde un message suspect récent et note deux signes d'alerte."
+    },
+    "it": {
+     "t": "Riconoscere app e messaggi falsi",
+     "g": "Segnali di truffa in messaggi, link e app imitazione.",
+     "p": [
+      "I messaggi truffa creano urgenza: agisci subito, hai vinto, il tuo account è bloccato.",
+      "Controlla il mittente e tieni premuto un link prima di aprirlo.",
+      "Installa app solo dagli store ufficiali e controlla nome, sviluppatore e recensioni."
+     ],
+     "q": "Hai mai ricevuto un messaggio che sembrava sospetto?",
+     "c": "Guarda un messaggio sospetto recente e annota due segnali d'allarme."
+    },
+    "pt": {
+     "t": "Detetar apps e mensagens falsas",
+     "g": "Sinais de burla em mensagens, ligações e apps que imitam outras.",
+     "p": [
+      "As mensagens de burla criam urgência: age já, ganhaste, a tua conta está bloqueada.",
+      "Verifica o remetente e mantém premida uma ligação antes de a abrir.",
+      "Instala apps só de lojas oficiais e verifica nome, programador e opiniões."
+     ],
+     "q": "Já recebeste alguma mensagem que parecia suspeita?",
+     "c": "Olha para uma mensagem suspeita recente e anota dois sinais de alerta."
+    },
+    "pt_BR": {
+     "t": "Identificar apps e mensagens falsos",
+     "g": "Sinais de golpe em mensagens, links e apps que imitam outros.",
+     "p": [
+      "As mensagens de golpe criam urgência: aja já, você ganhou, sua conta foi bloqueada.",
+      "Confira o remetente e mantenha pressionado um link antes de abri-lo.",
+      "Instale apps só de lojas oficiais e confira nome, desenvolvedor e avaliações."
+     ],
+     "q": "Você já recebeu alguma mensagem que parecia suspeita?",
+     "c": "Olhe uma mensagem suspeita recente e anote dois sinais de alerta."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Two-step verification",
+     "g": "A second check like a code or app prompt keeps accounts safe even if a password leaks.",
+     "p": [
+      "Two-step verification asks for something you know plus something you have.",
+      "The second step can be a code from an app, a text message or a security key.",
+      "Even if someone learns your password, they still cannot get in without the second step."
+     ],
+     "q": "Which of your accounts matter most and should have two-step verification?",
+     "c": "Turn on two-step verification for your main email account today."
+    },
+    "de": {
+     "t": "Zwei-Schritt-Verifizierung",
+     "g": "Eine zweite Prüfung per Code oder App schützt Konten, selbst wenn ein Passwort bekannt wird.",
+     "p": [
+      "Die Zwei-Schritt-Verifizierung fragt etwas ab, das du weißt, plus etwas, das du hast.",
+      "Der zweite Schritt kann ein Code aus einer App, eine SMS oder ein Sicherheitsschlüssel sein.",
+      "Selbst wenn jemand dein Passwort kennt, kommt er ohne den zweiten Schritt nicht hinein."
+     ],
+     "q": "Welche deiner Konten sind am wichtigsten und brauchen Zwei-Schritt-Verifizierung?",
+     "c": "Aktiviere heute die Zwei-Schritt-Verifizierung für dein Haupt-E-Mail-Konto."
+    },
+    "es": {
+     "t": "Verificación en dos pasos",
+     "g": "Una segunda comprobación con código o aviso en app protege cuentas aunque se filtre la contraseña.",
+     "p": [
+      "La verificación en dos pasos pide algo que sabes más algo que tienes.",
+      "El segundo paso puede ser un código de una app, un SMS o una llave de seguridad.",
+      "Aunque alguien conozca tu contraseña, no entra sin el segundo paso."
+     ],
+     "q": "¿Qué cuentas son más importantes y deberían tener verificación en dos pasos?",
+     "c": "Activa hoy la verificación en dos pasos en tu cuenta de correo principal."
+    },
+    "fr": {
+     "t": "La validation en deux étapes",
+     "g": "Un second contrôle par code ou notification protège tes comptes même si le mot de passe fuite.",
+     "p": [
+      "La validation en deux étapes demande quelque chose que tu sais et quelque chose que tu possèdes.",
+      "La seconde étape peut être un code d'appli, un SMS ou une clé de sécurité.",
+      "Même si quelqu'un connaît ton mot de passe, il ne peut pas entrer sans la seconde étape."
+     ],
+     "q": "Quels comptes comptent le plus et devraient avoir la validation en deux étapes ?",
+     "c": "Active aujourd'hui la validation en deux étapes sur ta messagerie principale."
+    },
+    "it": {
+     "t": "La verifica in due passaggi",
+     "g": "Un secondo controllo con codice o notifica protegge gli account anche se la password trapela.",
+     "p": [
+      "La verifica in due passaggi chiede qualcosa che sai più qualcosa che hai.",
+      "Il secondo passaggio può essere un codice da un'app, un SMS o una chiave di sicurezza.",
+      "Anche se qualcuno scopre la password, non entra senza il secondo passaggio."
+     ],
+     "q": "Quali account contano di più e dovrebbero avere la verifica in due passaggi?",
+     "c": "Attiva oggi la verifica in due passaggi sulla tua email principale."
+    },
+    "pt": {
+     "t": "Verificação em dois passos",
+     "g": "Uma segunda verificação com código ou aviso protege contas mesmo que a palavra-passe vaze.",
+     "p": [
+      "A verificação em dois passos pede algo que sabes mais algo que tens.",
+      "O segundo passo pode ser um código de uma app, um SMS ou uma chave de segurança.",
+      "Mesmo que alguém saiba a tua palavra-passe, não entra sem o segundo passo."
+     ],
+     "q": "Que contas são mais importantes e deviam ter verificação em dois passos?",
+     "c": "Ativa hoje a verificação em dois passos no teu e-mail principal."
+    },
+    "pt_BR": {
+     "t": "Verificação em duas etapas",
+     "g": "Uma segunda checagem com código ou aviso protege contas mesmo se a senha vazar.",
+     "p": [
+      "A verificação em duas etapas pede algo que você sabe mais algo que você tem.",
+      "A segunda etapa pode ser um código de um app, um SMS ou uma chave de segurança.",
+      "Mesmo que alguém descubra sua senha, não entra sem a segunda etapa."
+     ],
+     "q": "Quais contas são mais importantes e deveriam ter verificação em duas etapas?",
+     "c": "Ative hoje a verificação em duas etapas no seu e-mail principal."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: everyday phone care",
+     "g": "Recap of charging, protection, photos, backups and safety.",
+     "p": [
+      "Care: charge on safe surfaces, avoid heat, clean gently and protect the screen.",
+      "Creativity: light and steady hands make better photos and videos.",
+      "Safety: backups, strong locks, updates, two-step verification and scam spotting."
+     ],
+     "q": "Which habit from this month will you keep for good?",
+     "c": "Pick the one habit that matters most and set a reminder to do it weekly."
+    },
+    "de": {
+     "t": "Rückblick: Handy-Alltagspflege",
+     "g": "Wiederholung von Laden, Schutz, Fotos, Backups und Sicherheit.",
+     "p": [
+      "Pflege: auf sicheren Flächen laden, Hitze meiden, sanft reinigen und den Bildschirm schützen.",
+      "Kreativität: Licht und ruhige Hände machen bessere Fotos und Videos.",
+      "Sicherheit: Backups, starke Sperren, Updates, Zwei-Schritt-Prüfung und Betrug erkennen."
+     ],
+     "q": "Welche Gewohnheit dieses Monats behältst du dauerhaft?",
+     "c": "Wähle die wichtigste Gewohnheit und stell dir eine wöchentliche Erinnerung."
+    },
+    "es": {
+     "t": "Repaso: cuidado diario del móvil",
+     "g": "Repaso de carga, protección, fotos, copias y seguridad.",
+     "p": [
+      "Cuidado: cargar en superficies seguras, evitar calor, limpiar con suavidad y proteger la pantalla.",
+      "Creatividad: la luz y el pulso firme mejoran fotos y vídeos.",
+      "Seguridad: copias, bloqueos fuertes, actualizaciones, verificación en dos pasos y detectar estafas."
+     ],
+     "q": "¿Qué hábito de este mes vas a mantener para siempre?",
+     "c": "Elige el hábito más importante y pon un recordatorio semanal."
+    },
+    "fr": {
+     "t": "Révision : soigner son téléphone au quotidien",
+     "g": "Récapitulatif de la charge, de la protection, des photos, sauvegardes et de la sécurité.",
+     "p": [
+      "Soin : charger sur des surfaces sûres, éviter la chaleur, nettoyer doucement, protéger l'écran.",
+      "Créativité : la lumière et des mains stables donnent de meilleures photos et vidéos.",
+      "Sécurité : sauvegardes, verrouillage solide, mises à jour, double étape et repérage des arnaques."
+     ],
+     "q": "Quelle habitude de ce mois vas-tu garder pour de bon ?",
+     "c": "Choisis l'habitude la plus importante et programme un rappel hebdomadaire."
+    },
+    "it": {
+     "t": "Ripasso: cura quotidiana del telefono",
+     "g": "Riepilogo di ricarica, protezione, foto, backup e sicurezza.",
+     "p": [
+      "Cura: ricaricare su superfici sicure, evitare il caldo, pulire con delicatezza e proteggere lo schermo.",
+      "Creatività: luce e mani ferme danno foto e video migliori.",
+      "Sicurezza: backup, blocchi forti, aggiornamenti, verifica in due passaggi e riconoscere le truffe."
+     ],
+     "q": "Quale abitudine di questo mese terrai per sempre?",
+     "c": "Scegli l'abitudine più importante e imposta un promemoria settimanale."
+    },
+    "pt": {
+     "t": "Revisão: cuidar do telemóvel no dia a dia",
+     "g": "Resumo de carga, proteção, fotos, cópias e segurança.",
+     "p": [
+      "Cuidado: carregar em superfícies seguras, evitar calor, limpar com suavidade e proteger o ecrã.",
+      "Criatividade: luz e mãos firmes dão melhores fotos e vídeos.",
+      "Segurança: cópias, bloqueios fortes, atualizações, verificação em dois passos e detetar burlas."
+     ],
+     "q": "Que hábito deste mês vais manter para sempre?",
+     "c": "Escolhe o hábito mais importante e põe um lembrete semanal."
+    },
+    "pt_BR": {
+     "t": "Revisão: cuidar do celular no dia a dia",
+     "g": "Resumo de carga, proteção, fotos, backups e segurança.",
+     "p": [
+      "Cuidado: carregar em superfícies seguras, evitar calor, limpar com suavidade e proteger a tela.",
+      "Criatividade: luz e mãos firmes dão fotos e vídeos melhores.",
+      "Segurança: backups, bloqueios fortes, atualizações, verificação em duas etapas e identificar golpes."
+     ],
+     "q": "Qual hábito deste mês você vai manter para sempre?",
+     "c": "Escolha o hábito mais importante e ponha um lembrete semanal."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is a laptop",
+     "g": "A portable computer with screen, keyboard, trackpad and battery in one.",
+     "p": [
+      "A laptop folds a screen, keyboard, trackpad, speakers and battery into one portable case.",
+      "It runs on a rechargeable battery but also plugs in for power and charging.",
+      "Compared with a phone, it is better for typing, big documents and multitasking."
+     ],
+     "q": "What do you mainly use a computer for: work, study, creativity or play?",
+     "c": "Open your laptop, if you have one, and name its main parts out loud."
+    },
+    "de": {
+     "t": "Was ist ein Laptop",
+     "g": "Ein tragbarer Computer mit Bildschirm, Tastatur, Touchpad und Akku in einem.",
+     "p": [
+      "Ein Laptop vereint Bildschirm, Tastatur, Touchpad, Lautsprecher und Akku in einem tragbaren Gehäuse.",
+      "Er läuft mit wiederaufladbarem Akku, wird aber auch am Netz betrieben und geladen.",
+      "Im Vergleich zum Handy ist er besser zum Tippen, für große Dokumente und Multitasking."
+     ],
+     "q": "Wofür nutzt du einen Computer hauptsächlich: Arbeit, Lernen, Kreativität oder Spiel?",
+     "c": "Öffne deinen Laptop, falls du einen hast, und nenne laut seine Hauptteile."
+    },
+    "es": {
+     "t": "Qué es un portátil",
+     "g": "Un ordenador portátil con pantalla, teclado, trackpad y batería en uno.",
+     "p": [
+      "Un portátil reúne pantalla, teclado, trackpad, altavoces y batería en una sola carcasa transportable.",
+      "Funciona con batería recargable, pero también se enchufa para alimentarse y cargar.",
+      "Frente al móvil, es mejor para escribir, documentos grandes y varias tareas a la vez."
+     ],
+     "q": "¿Para qué usas sobre todo un ordenador: trabajo, estudio, creatividad o juego?",
+     "c": "Abre tu portátil, si tienes uno, y nombra en voz alta sus piezas principales."
+    },
+    "fr": {
+     "t": "Qu'est-ce qu'un ordinateur portable",
+     "g": "Un ordinateur transportable avec écran, clavier, pavé tactile et batterie réunis.",
+     "p": [
+      "Un portable réunit écran, clavier, pavé tactile, haut-parleurs et batterie dans un seul boîtier.",
+      "Il fonctionne sur batterie rechargeable mais se branche aussi pour l'énergie et la charge.",
+      "Comparé au téléphone, il est meilleur pour taper, les gros documents et le multitâche."
+     ],
+     "q": "Pour quoi utilises-tu surtout un ordinateur : travail, études, création ou jeu ?",
+     "c": "Ouvre ton portable, si tu en as un, et nomme à voix haute ses principales parties."
+    },
+    "it": {
+     "t": "Cos'è un portatile",
+     "g": "Un computer portatile con schermo, tastiera, trackpad e batteria in uno.",
+     "p": [
+      "Un portatile riunisce schermo, tastiera, trackpad, altoparlanti e batteria in un solo corpo trasportabile.",
+      "Funziona a batteria ricaricabile ma si collega anche alla presa per alimentarsi e ricaricare.",
+      "Rispetto al telefono è meglio per scrivere, documenti grandi e multitasking."
+     ],
+     "q": "Per cosa usi soprattutto un computer: lavoro, studio, creatività o gioco?",
+     "c": "Apri il tuo portatile, se ne hai uno, e nomina a voce alta le sue parti principali."
+    },
+    "pt": {
+     "t": "O que é um portátil",
+     "g": "Um computador portátil com ecrã, teclado, trackpad e bateria num só.",
+     "p": [
+      "Um portátil junta ecrã, teclado, trackpad, colunas e bateria numa só caixa transportável.",
+      "Funciona com bateria recarregável, mas também se liga à corrente para alimentar e carregar.",
+      "Em comparação com o telemóvel, é melhor para escrever, documentos grandes e várias tarefas."
+     ],
+     "q": "Para que usas sobretudo um computador: trabalho, estudo, criatividade ou jogo?",
+     "c": "Abre o teu portátil, se tiveres um, e diz em voz alta as suas partes principais."
+    },
+    "pt_BR": {
+     "t": "O que é um notebook",
+     "g": "Um computador portátil com tela, teclado, trackpad e bateria em um só.",
+     "p": [
+      "Um notebook junta tela, teclado, trackpad, alto-falantes e bateria numa só caixa transportável.",
+      "Funciona com bateria recarregável, mas também liga na tomada para energia e carga.",
+      "Em comparação com o celular, é melhor para digitar, documentos grandes e várias tarefas."
+     ],
+     "q": "Para que você mais usa um computador: trabalho, estudo, criatividade ou jogo?",
+     "c": "Abra seu notebook, se tiver um, e diga em voz alta as partes principais."
+    }
+   }
+  }
+ ]
+}

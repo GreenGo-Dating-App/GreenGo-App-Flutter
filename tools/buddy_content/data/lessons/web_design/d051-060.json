@@ -1,0 +1,835 @@
+{
+ "topic": "web_design",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Colour theory for screens",
+     "g": "Understand hue, saturation and lightness on digital screens.",
+     "p": [
+      "Hue is the colour itself, saturation its intensity, lightness how light or dark.",
+      "Screens mix light, so colours look different from paint on paper.",
+      "Harmonies like analogous and complementary combine hues that fit together."
+     ],
+     "q": "Which colours make you feel calm, and which feel energetic?",
+     "c": "Pick one hue and make three versions with different lightness in hsl."
+    },
+    "de": {
+     "t": "Farbtheorie für Bildschirme",
+     "g": "Verstehe Farbton, Sättigung und Helligkeit auf digitalen Bildschirmen.",
+     "p": [
+      "Der Farbton ist die Farbe selbst, die Sättigung ihre Intensität, die Helligkeit hell oder dunkel.",
+      "Bildschirme mischen Licht, daher wirken Farben anders als Farbe auf Papier.",
+      "Harmonien wie analog und komplementär kombinieren Farbtöne, die zusammenpassen."
+     ],
+     "q": "Welche Farben wirken auf dich ruhig, welche energiegeladen?",
+     "c": "Wähle einen Farbton und erstelle drei Varianten mit unterschiedlicher Helligkeit in hsl."
+    },
+    "es": {
+     "t": "Teoría del color para pantallas",
+     "g": "Entiende matiz, saturación y luminosidad en pantallas digitales.",
+     "p": [
+      "El matiz es el color en sí, la saturación su intensidad y la luminosidad lo claro u oscuro.",
+      "Las pantallas mezclan luz, por eso los colores se ven distintos que la pintura en papel.",
+      "Armonías como análogas y complementarias combinan matices que encajan."
+     ],
+     "q": "¿Qué colores te transmiten calma y cuáles energía?",
+     "c": "Elige un matiz y crea tres versiones con distinta luminosidad en hsl."
+    },
+    "fr": {
+     "t": "Théorie des couleurs pour écrans",
+     "g": "Comprends teinte, saturation et luminosité sur les écrans numériques.",
+     "p": [
+      "La teinte est la couleur elle-même, la saturation son intensité, la luminosité son côté clair ou foncé.",
+      "Les écrans mélangent de la lumière, donc les couleurs diffèrent de la peinture sur papier.",
+      "Des harmonies comme analogue et complémentaire associent des teintes qui vont ensemble."
+     ],
+     "q": "Quelles couleurs te calment, lesquelles t'énergisent ?",
+     "c": "Choisis une teinte et crée trois versions de luminosité différente en hsl."
+    },
+    "it": {
+     "t": "Teoria del colore per gli schermi",
+     "g": "Capisci tinta, saturazione e luminosità sugli schermi digitali.",
+     "p": [
+      "La tinta è il colore stesso, la saturazione la sua intensità, la luminosità quanto è chiaro o scuro.",
+      "Gli schermi mescolano luce, quindi i colori appaiono diversi dalla pittura su carta.",
+      "Armonie come analoghe e complementari combinano tinte che stanno bene insieme."
+     ],
+     "q": "Quali colori ti danno calma e quali energia?",
+     "c": "Scegli una tinta e crea tre versioni con luminosità diversa in hsl."
+    },
+    "pt": {
+     "t": "Teoria da cor para ecrãs",
+     "g": "Percebe matiz, saturação e luminosidade em ecrãs digitais.",
+     "p": [
+      "O matiz é a cor em si, a saturação a sua intensidade e a luminosidade o quão clara ou escura é.",
+      "Os ecrãs misturam luz, por isso as cores parecem diferentes da tinta no papel.",
+      "Harmonias como análogas e complementares combinam matizes que condizem."
+     ],
+     "q": "Que cores te transmitem calma e quais energia?",
+     "c": "Escolhe um matiz e cria três versões com luminosidade diferente em hsl."
+    },
+    "pt_BR": {
+     "t": "Teoria das cores para telas",
+     "g": "Entenda matiz, saturação e luminosidade em telas digitais.",
+     "p": [
+      "O matiz é a cor em si, a saturação sua intensidade e a luminosidade o quanto é clara ou escura.",
+      "Telas misturam luz, então as cores parecem diferentes da tinta no papel.",
+      "Harmonias como análogas e complementares combinam matizes que combinam entre si."
+     ],
+     "q": "Que cores transmitem calma a você e quais transmitem energia?",
+     "c": "Escolha um matiz e crie três versões com luminosidade diferente em hsl."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Building a colour palette",
+     "g": "Create a calm, usable set of colours for a site.",
+     "p": [
+      "Start with one primary colour that carries your brand feeling.",
+      "Add neutrals for text and backgrounds, plus one or two accents.",
+      "Store colours as CSS variables like --primary so changes are easy."
+     ],
+     "q": "Which primary colour would you pick for your project?",
+     "c": "Define --primary, --text, --background and --accent on :root."
+    },
+    "de": {
+     "t": "Eine Farbpalette aufbauen",
+     "g": "Erstelle ein ruhiges, brauchbares Farbset für eine Seite.",
+     "p": [
+      "Beginne mit einer Primärfarbe, die dein Markengefühl trägt.",
+      "Ergänze Neutraltöne für Text und Hintergrund sowie ein bis zwei Akzente.",
+      "Speichere Farben als CSS-Variablen wie --primary, damit Änderungen leichtfallen."
+     ],
+     "q": "Welche Primärfarbe würdest du für dein Projekt wählen?",
+     "c": "Definiere --primary, --text, --background und --accent auf :root."
+    },
+    "es": {
+     "t": "Crear una paleta de colores",
+     "g": "Crea un conjunto de colores sereno y práctico para un sitio.",
+     "p": [
+      "Empieza con un color primario que transmita el carácter de tu marca.",
+      "Añade neutros para texto y fondos, más uno o dos acentos.",
+      "Guarda los colores como variables CSS como --primary para cambiar fácilmente."
+     ],
+     "q": "¿Qué color primario elegirías para tu proyecto?",
+     "c": "Define --primary, --text, --background y --accent en :root."
+    },
+    "fr": {
+     "t": "Construire une palette de couleurs",
+     "g": "Crée un jeu de couleurs calme et utilisable pour un site.",
+     "p": [
+      "Commence par une couleur primaire qui porte l'esprit de ta marque.",
+      "Ajoute des neutres pour le texte et les fonds, plus un ou deux accents.",
+      "Stocke les couleurs en variables CSS comme --primary pour changer facilement."
+     ],
+     "q": "Quelle couleur primaire choisirais-tu pour ton projet ?",
+     "c": "Définis --primary, --text, --background et --accent sur :root."
+    },
+    "it": {
+     "t": "Costruire una palette di colori",
+     "g": "Crea un set di colori calmo e utilizzabile per un sito.",
+     "p": [
+      "Parti da un colore primario che porti il carattere del tuo marchio.",
+      "Aggiungi neutri per testo e sfondi, più uno o due accenti.",
+      "Salva i colori come variabili CSS come --primary per cambiare facilmente."
+     ],
+     "q": "Quale colore primario sceglieresti per il tuo progetto?",
+     "c": "Definisci --primary, --text, --background e --accent su :root."
+    },
+    "pt": {
+     "t": "Construir uma paleta de cores",
+     "g": "Cria um conjunto de cores calmo e utilizável para um site.",
+     "p": [
+      "Começa com uma cor primária que transmita o espírito da tua marca.",
+      "Acrescenta neutros para texto e fundos, mais um ou dois acentos.",
+      "Guarda as cores como variáveis CSS como --primary para mudar com facilidade."
+     ],
+     "q": "Que cor primária escolherias para o teu projeto?",
+     "c": "Define --primary, --text, --background e --accent em :root."
+    },
+    "pt_BR": {
+     "t": "Montando uma paleta de cores",
+     "g": "Crie um conjunto de cores calmo e utilizável para um site.",
+     "p": [
+      "Comece com uma cor primária que transmita o espírito da sua marca.",
+      "Adicione neutros para texto e fundos, mais um ou dois acentos.",
+      "Guarde as cores como variáveis CSS como --primary para mudar com facilidade."
+     ],
+     "q": "Que cor primária você escolheria para o seu projeto?",
+     "c": "Defina --primary, --text, --background e --accent em :root."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Colour and meaning",
+     "g": "Use colour with care, since meanings differ between cultures.",
+     "p": [
+      "Red may mean luck in one culture and warning in another.",
+      "Never rely on colour alone; add icons, labels or patterns too.",
+      "Many people see colours differently, so a second cue helps everyone."
+     ],
+     "q": "What does your favourite colour mean to you?",
+     "c": "Take an error message and add an icon and text, not just red."
+    },
+    "de": {
+     "t": "Farbe und Bedeutung",
+     "g": "Setze Farbe mit Bedacht ein, denn Bedeutungen unterscheiden sich je nach Kultur.",
+     "p": [
+      "Rot kann in einer Kultur Glück bedeuten und in einer anderen Warnung.",
+      "Verlasse dich nie nur auf Farbe; ergänze Symbole, Beschriftungen oder Muster.",
+      "Viele Menschen sehen Farben anders, ein zweiter Hinweis hilft allen."
+     ],
+     "q": "Was bedeutet dir deine Lieblingsfarbe?",
+     "c": "Nimm eine Fehlermeldung und füge Symbol und Text hinzu, nicht nur Rot."
+    },
+    "es": {
+     "t": "Color y significado",
+     "g": "Usa el color con cuidado, porque los significados varían según la cultura.",
+     "p": [
+      "El rojo puede significar suerte en una cultura y advertencia en otra.",
+      "Nunca dependas solo del color; añade iconos, etiquetas o patrones.",
+      "Mucha gente ve los colores de otra manera, así que una segunda pista ayuda a todos."
+     ],
+     "q": "¿Qué significa para ti tu color favorito?",
+     "c": "Toma un mensaje de error y añade icono y texto, no solo rojo."
+    },
+    "fr": {
+     "t": "Couleur et signification",
+     "g": "Utilise la couleur avec soin, car les significations varient selon les cultures.",
+     "p": [
+      "Le rouge peut signifier chance dans une culture et avertissement dans une autre.",
+      "Ne te fie jamais à la couleur seule ; ajoute icônes, libellés ou motifs.",
+      "Beaucoup de personnes voient les couleurs autrement, un second indice aide tout le monde."
+     ],
+     "q": "Que signifie ta couleur préférée pour toi ?",
+     "c": "Prends un message d'erreur et ajoute une icône et du texte, pas seulement du rouge."
+    },
+    "it": {
+     "t": "Colore e significato",
+     "g": "Usa il colore con cura, perché i significati cambiano da cultura a cultura.",
+     "p": [
+      "Il rosso può significare fortuna in una cultura e avvertimento in un'altra.",
+      "Non affidarti mai al solo colore; aggiungi icone, etichette o motivi.",
+      "Molte persone vedono i colori in modo diverso, un secondo indizio aiuta tutti."
+     ],
+     "q": "Che cosa significa per te il tuo colore preferito?",
+     "c": "Prendi un messaggio di errore e aggiungi icona e testo, non solo rosso."
+    },
+    "pt": {
+     "t": "Cor e significado",
+     "g": "Usa a cor com cuidado, porque os significados variam entre culturas.",
+     "p": [
+      "O vermelho pode significar sorte numa cultura e aviso noutra.",
+      "Nunca dependas só da cor; acrescenta ícones, etiquetas ou padrões.",
+      "Muita gente vê as cores de forma diferente, por isso uma segunda pista ajuda todos."
+     ],
+     "q": "O que significa para ti a tua cor preferida?",
+     "c": "Pega numa mensagem de erro e acrescenta ícone e texto, não só vermelho."
+    },
+    "pt_BR": {
+     "t": "Cor e significado",
+     "g": "Use a cor com cuidado, porque os significados variam entre culturas.",
+     "p": [
+      "O vermelho pode significar sorte em uma cultura e aviso em outra.",
+      "Nunca dependa só da cor; adicione ícones, rótulos ou padrões.",
+      "Muita gente vê as cores de forma diferente, então uma segunda pista ajuda a todos."
+     ],
+     "q": "O que a sua cor favorita significa para você?",
+     "c": "Pegue uma mensagem de erro e adicione ícone e texto, não só vermelho."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Contrast for readability",
+     "g": "Make sure text stands out enough against its background.",
+     "p": [
+      "WCAG asks for a contrast ratio of at least 4.5 to 1 for normal text.",
+      "Large text can use 3 to 1, but higher is always kinder to eyes.",
+      "Light grey on white is a common trap; test before you commit."
+     ],
+     "q": "Have you struggled to read a page because the text was too pale?",
+     "c": "Check a text and background pair in a contrast checker."
+    },
+    "de": {
+     "t": "Kontrast für Lesbarkeit",
+     "g": "Sorge dafür, dass Text sich genug vom Hintergrund abhebt.",
+     "p": [
+      "WCAG verlangt für normalen Text ein Kontrastverhältnis von mindestens 4,5 zu 1.",
+      "Großer Text darf 3 zu 1 haben, doch mehr ist immer augenfreundlicher.",
+      "Hellgrau auf Weiß ist eine häufige Falle; teste, bevor du dich festlegst."
+     ],
+     "q": "Hattest du schon Mühe, eine Seite zu lesen, weil der Text zu blass war?",
+     "c": "Prüfe ein Paar aus Text- und Hintergrundfarbe in einem Kontrastprüfer."
+    },
+    "es": {
+     "t": "Contraste para la legibilidad",
+     "g": "Asegúrate de que el texto destaque lo suficiente sobre su fondo.",
+     "p": [
+      "WCAG pide una relación de contraste de al menos 4,5 a 1 para texto normal.",
+      "El texto grande puede usar 3 a 1, pero más siempre es más amable con la vista.",
+      "El gris claro sobre blanco es una trampa común; prueba antes de decidir."
+     ],
+     "q": "¿Te costó alguna vez leer una página porque el texto era muy pálido?",
+     "c": "Comprueba un par de color de texto y fondo en un verificador de contraste."
+    },
+    "fr": {
+     "t": "Contraste et lisibilité",
+     "g": "Assure-toi que le texte ressort assez sur son fond.",
+     "p": [
+      "Les WCAG demandent un rapport de contraste d'au moins 4,5 pour 1 pour le texte normal.",
+      "Le grand texte peut descendre à 3 pour 1, mais plus est toujours plus doux pour les yeux.",
+      "Le gris clair sur blanc est un piège courant ; teste avant de t'engager."
+     ],
+     "q": "As-tu déjà eu du mal à lire une page parce que le texte était trop pâle ?",
+     "c": "Vérifie une paire couleur de texte et de fond dans un vérificateur de contraste."
+    },
+    "it": {
+     "t": "Contrasto per la leggibilità",
+     "g": "Assicurati che il testo risalti abbastanza sullo sfondo.",
+     "p": [
+      "Le WCAG chiedono un rapporto di contrasto di almeno 4,5 a 1 per il testo normale.",
+      "Il testo grande può usare 3 a 1, ma di più è sempre più gentile con gli occhi.",
+      "Il grigio chiaro su bianco è una trappola comune; testa prima di decidere."
+     ],
+     "q": "Hai mai faticato a leggere una pagina perché il testo era troppo pallido?",
+     "c": "Controlla una coppia colore del testo e sfondo in un verificatore di contrasto."
+    },
+    "pt": {
+     "t": "Contraste para a legibilidade",
+     "g": "Garante que o texto se destaca o suficiente do fundo.",
+     "p": [
+      "As WCAG pedem uma razão de contraste de pelo menos 4,5 para 1 em texto normal.",
+      "O texto grande pode usar 3 para 1, mas mais é sempre mais suave para a vista.",
+      "Cinzento claro sobre branco é uma armadilha comum; testa antes de decidir."
+     ],
+     "q": "Já tiveste dificuldade em ler uma página porque o texto era demasiado pálido?",
+     "c": "Verifica um par de cor de texto e fundo num verificador de contraste."
+    },
+    "pt_BR": {
+     "t": "Contraste para a legibilidade",
+     "g": "Garanta que o texto se destaque o bastante do fundo.",
+     "p": [
+      "As WCAG pedem uma razão de contraste de pelo menos 4,5 para 1 em texto normal.",
+      "Texto grande pode usar 3 para 1, mas mais é sempre mais gentil com os olhos.",
+      "Cinza claro sobre branco é uma armadilha comum; teste antes de decidir."
+     ],
+     "q": "Você já teve dificuldade de ler uma página porque o texto estava pálido demais?",
+     "c": "Verifique um par de cor de texto e fundo em um verificador de contraste."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Light and dark themes",
+     "g": "Plan colours that work in both light and dark modes.",
+     "p": [
+      "The prefers-color-scheme media query detects the visitor's choice.",
+      "CSS variables let you swap a whole palette in one block.",
+      "Avoid pure black on pure white; slightly softer tones are easier to read."
+     ],
+     "q": "Do you prefer light or dark mode, and when?",
+     "c": "Define colours as variables and add a dark version in a media query."
+    },
+    "de": {
+     "t": "Helle und dunkle Themes",
+     "g": "Plane Farben, die im hellen und im dunklen Modus funktionieren.",
+     "p": [
+      "Die Media Query prefers-color-scheme erkennt die Wahl der Besucher.",
+      "Mit CSS-Variablen tauschst du eine ganze Palette in einem Block aus.",
+      "Vermeide reines Schwarz auf reinem Weiß; etwas weichere Töne lesen sich leichter."
+     ],
+     "q": "Magst du lieber den hellen oder dunklen Modus, und wann?",
+     "c": "Definiere Farben als Variablen und füge eine dunkle Version in einer Media Query hinzu."
+    },
+    "es": {
+     "t": "Temas claro y oscuro",
+     "g": "Planifica colores que funcionen en modo claro y oscuro.",
+     "p": [
+      "La media query prefers-color-scheme detecta la elección del visitante.",
+      "Las variables CSS permiten cambiar toda una paleta en un solo bloque.",
+      "Evita negro puro sobre blanco puro; tonos algo más suaves se leen mejor."
+     ],
+     "q": "¿Prefieres el modo claro o el oscuro, y cuándo?",
+     "c": "Define los colores como variables y añade una versión oscura en una media query."
+    },
+    "fr": {
+     "t": "Thèmes clair et sombre",
+     "g": "Prévois des couleurs qui fonctionnent en modes clair et sombre.",
+     "p": [
+      "La media query prefers-color-scheme détecte le choix du visiteur.",
+      "Les variables CSS permettent de changer toute une palette en un seul bloc.",
+      "Évite le noir pur sur blanc pur ; des tons un peu plus doux se lisent mieux."
+     ],
+     "q": "Préfères-tu le mode clair ou sombre, et quand ?",
+     "c": "Définis les couleurs en variables et ajoute une version sombre dans une media query."
+    },
+    "it": {
+     "t": "Temi chiaro e scuro",
+     "g": "Pianifica colori che funzionino in modalità chiara e scura.",
+     "p": [
+      "La media query prefers-color-scheme rileva la scelta del visitatore.",
+      "Le variabili CSS permettono di cambiare un'intera palette in un solo blocco.",
+      "Evita il nero puro su bianco puro; toni leggermente più morbidi si leggono meglio."
+     ],
+     "q": "Preferisci la modalità chiara o scura, e quando?",
+     "c": "Definisci i colori come variabili e aggiungi una versione scura in una media query."
+    },
+    "pt": {
+     "t": "Temas claro e escuro",
+     "g": "Planeia cores que funcionem nos modos claro e escuro.",
+     "p": [
+      "A media query prefers-color-scheme deteta a escolha do visitante.",
+      "As variáveis CSS permitem trocar uma paleta inteira num só bloco.",
+      "Evita preto puro sobre branco puro; tons um pouco mais suaves leem-se melhor."
+     ],
+     "q": "Preferes o modo claro ou escuro, e quando?",
+     "c": "Define as cores como variáveis e acrescenta uma versão escura numa media query."
+    },
+    "pt_BR": {
+     "t": "Temas claro e escuro",
+     "g": "Planeje cores que funcionem nos modos claro e escuro.",
+     "p": [
+      "A media query prefers-color-scheme detecta a escolha do visitante.",
+      "Variáveis CSS permitem trocar uma paleta inteira em um só bloco.",
+      "Evite preto puro sobre branco puro; tons um pouco mais suaves se leem melhor."
+     ],
+     "q": "Você prefere o modo claro ou escuro, e quando?",
+     "c": "Defina as cores como variáveis e adicione uma versão escura em uma media query."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "White space is not empty",
+     "g": "See space as a design tool that guides the eye.",
+     "p": [
+      "Space around elements separates ideas and lets each one breathe.",
+      "Generous margins make a page feel calm and confident.",
+      "Cramming everything in tires readers; removing clutter helps them focus."
+     ],
+     "q": "Which page feels calm to you, and what makes it so?",
+     "c": "Double the spacing between two sections and judge the difference."
+    },
+    "de": {
+     "t": "Weißraum ist nicht leer",
+     "g": "Sieh Leerraum als Gestaltungsmittel, das den Blick lenkt.",
+     "p": [
+      "Raum um Elemente trennt Ideen und lässt jede atmen.",
+      "Großzügige Ränder machen eine Seite ruhig und souverän.",
+      "Alles hineinzupressen ermüdet Leser; weniger Ballast hilft beim Fokus."
+     ],
+     "q": "Welche Seite wirkt auf dich ruhig, und woran liegt das?",
+     "c": "Verdopple den Abstand zwischen zwei Bereichen und beurteile den Unterschied."
+    },
+    "es": {
+     "t": "El espacio en blanco no está vacío",
+     "g": "Ve el espacio como una herramienta de diseño que guía la mirada.",
+     "p": [
+      "El espacio alrededor de los elementos separa ideas y deja respirar a cada una.",
+      "Márgenes generosos hacen que una página se sienta serena y segura.",
+      "Meterlo todo junto cansa al lector; quitar desorden ayuda a concentrarse."
+     ],
+     "q": "¿Qué página te parece serena y por qué?",
+     "c": "Duplica el espacio entre dos secciones y valora la diferencia."
+    },
+    "fr": {
+     "t": "L'espace blanc n'est pas vide",
+     "g": "Vois l'espace comme un outil de design qui guide le regard.",
+     "p": [
+      "L'espace autour des éléments sépare les idées et laisse chacune respirer.",
+      "Des marges généreuses rendent une page calme et assurée.",
+      "Tout entasser fatigue le lecteur ; retirer le superflu aide à se concentrer."
+     ],
+     "q": "Quelle page te paraît calme, et pourquoi ?",
+     "c": "Double l'espace entre deux sections et juge la différence."
+    },
+    "it": {
+     "t": "Lo spazio bianco non è vuoto",
+     "g": "Vedi lo spazio come uno strumento di design che guida lo sguardo.",
+     "p": [
+      "Lo spazio attorno agli elementi separa le idee e lascia respirare ognuna.",
+      "Margini generosi fanno sembrare una pagina calma e sicura.",
+      "Stipare tutto stanca il lettore; togliere il superfluo aiuta a concentrarsi."
+     ],
+     "q": "Quale pagina ti sembra calma e perché?",
+     "c": "Raddoppia lo spazio tra due sezioni e valuta la differenza."
+    },
+    "pt": {
+     "t": "O espaço em branco não é vazio",
+     "g": "Vê o espaço como uma ferramenta de design que guia o olhar.",
+     "p": [
+      "O espaço à volta dos elementos separa ideias e deixa cada uma respirar.",
+      "Margens generosas fazem a página parecer calma e segura.",
+      "Meter tudo junto cansa o leitor; tirar excesso ajuda a concentrar."
+     ],
+     "q": "Que página te parece calma e porquê?",
+     "c": "Duplica o espaço entre duas secções e avalia a diferença."
+    },
+    "pt_BR": {
+     "t": "O espaço em branco não é vazio",
+     "g": "Veja o espaço como uma ferramenta de design que guia o olhar.",
+     "p": [
+      "O espaço em volta dos elementos separa ideias e deixa cada uma respirar.",
+      "Margens generosas fazem a página parecer calma e segura.",
+      "Colocar tudo junto cansa o leitor; tirar o excesso ajuda a se concentrar."
+     ],
+     "q": "Que página parece calma para você e por quê?",
+     "c": "Dobre o espaço entre duas seções e avalie a diferença."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Alignment and grids on paper",
+     "g": "Line things up along invisible lines for a tidy look.",
+     "p": [
+      "Aligning edges makes a layout look planned instead of random.",
+      "A grid divides a page into columns that elements snap to.",
+      "Sketch on paper first: boxes and lines are enough to plan."
+     ],
+     "q": "Which site layout looks most orderly to you?",
+     "c": "Sketch a page with three columns and align a title and a button."
+    },
+    "de": {
+     "t": "Ausrichtung und Raster auf Papier",
+     "g": "Richte Dinge an unsichtbaren Linien aus für ein ordentliches Bild.",
+     "p": [
+      "Bündige Kanten lassen ein Layout geplant statt zufällig wirken.",
+      "Ein Raster teilt die Seite in Spalten, an denen Elemente einrasten.",
+      "Skizziere zuerst auf Papier: Kästen und Linien genügen zum Planen."
+     ],
+     "q": "Welches Seitenlayout wirkt für dich am geordnetsten?",
+     "c": "Skizziere eine Seite mit drei Spalten und richte Titel und Button aus."
+    },
+    "es": {
+     "t": "Alineación y cuadrículas en papel",
+     "g": "Alinea las cosas sobre líneas invisibles para un aspecto ordenado.",
+     "p": [
+      "Alinear los bordes hace que el diseño parezca planeado y no aleatorio.",
+      "Una cuadrícula divide la página en columnas a las que se ajustan los elementos.",
+      "Esboza primero en papel: cajas y líneas bastan para planificar."
+     ],
+     "q": "¿Qué diseño de sitio te parece más ordenado?",
+     "c": "Dibuja una página con tres columnas y alinea un título y un botón."
+    },
+    "fr": {
+     "t": "Alignement et grilles sur papier",
+     "g": "Aligne les éléments sur des lignes invisibles pour un rendu ordonné.",
+     "p": [
+      "Aligner les bords donne une mise en page pensée plutôt qu'aléatoire.",
+      "Une grille divise la page en colonnes auxquelles les éléments s'accrochent.",
+      "Esquisse d'abord sur papier : des boîtes et des lignes suffisent pour planifier."
+     ],
+     "q": "Quelle mise en page de site te semble la plus ordonnée ?",
+     "c": "Dessine une page à trois colonnes et aligne un titre et un bouton."
+    },
+    "it": {
+     "t": "Allineamento e griglie su carta",
+     "g": "Allinea le cose lungo linee invisibili per un aspetto ordinato.",
+     "p": [
+      "Allineare i bordi fa sembrare il layout pianificato anziché casuale.",
+      "Una griglia divide la pagina in colonne a cui gli elementi si agganciano.",
+      "Abbozza prima su carta: scatole e linee bastano per pianificare."
+     ],
+     "q": "Quale layout di sito ti sembra più ordinato?",
+     "c": "Disegna una pagina a tre colonne e allinea un titolo e un pulsante."
+    },
+    "pt": {
+     "t": "Alinhamento e grelhas em papel",
+     "g": "Alinha as coisas por linhas invisíveis para um aspeto arrumado.",
+     "p": [
+      "Alinhar as margens faz o layout parecer planeado e não aleatório.",
+      "Uma grelha divide a página em colunas às quais os elementos se ajustam.",
+      "Esboça primeiro em papel: caixas e linhas chegam para planear."
+     ],
+     "q": "Que layout de site te parece mais organizado?",
+     "c": "Desenha uma página com três colunas e alinha um título e um botão."
+    },
+    "pt_BR": {
+     "t": "Alinhamento e grades no papel",
+     "g": "Alinhe as coisas por linhas invisíveis para um visual organizado.",
+     "p": [
+      "Alinhar as bordas faz o layout parecer planejado e não aleatório.",
+      "Uma grade divide a página em colunas às quais os elementos se ajustam.",
+      "Esboce primeiro no papel: caixas e linhas bastam para planejar."
+     ],
+     "q": "Que layout de site parece mais organizado para você?",
+     "c": "Desenhe uma página com três colunas e alinhe um título e um botão."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Visual hierarchy",
+     "g": "Guide the eye with size, colour, weight and position.",
+     "p": [
+      "Bigger, bolder and higher elements are noticed first.",
+      "Use contrast sparingly; if everything shouts, nothing stands out.",
+      "Squint at a page: the shapes you still see are its hierarchy."
+     ],
+     "q": "What should visitors notice first on your page?",
+     "c": "Squint at your page and list what you notice first, second and third."
+    },
+    "de": {
+     "t": "Visuelle Hierarchie",
+     "g": "Lenke den Blick mit Größe, Farbe, Stärke und Position.",
+     "p": [
+      "Größere, kräftigere und höhere Elemente fallen zuerst auf.",
+      "Setze Kontrast sparsam ein; wenn alles schreit, fällt nichts auf.",
+      "Kneife die Augen zusammen: Was du noch siehst, ist die Hierarchie der Seite."
+     ],
+     "q": "Was sollen Besucher auf deiner Seite zuerst bemerken?",
+     "c": "Kneife die Augen bei deiner Seite zusammen und notiere, was zuerst, zweitens und drittens auffällt."
+    },
+    "es": {
+     "t": "Jerarquía visual",
+     "g": "Guía la mirada con tamaño, color, grosor y posición.",
+     "p": [
+      "Los elementos más grandes, gruesos y altos se notan primero.",
+      "Usa el contraste con moderación; si todo grita, nada destaca.",
+      "Entrecierra los ojos ante una página: las formas que aún ves son su jerarquía."
+     ],
+     "q": "¿Qué deberían notar primero los visitantes en tu página?",
+     "c": "Entrecierra los ojos ante tu página y anota qué notas primero, segundo y tercero."
+    },
+    "fr": {
+     "t": "Hiérarchie visuelle",
+     "g": "Guide le regard avec taille, couleur, graisse et position.",
+     "p": [
+      "Les éléments plus grands, plus gras et plus hauts se remarquent d'abord.",
+      "Utilise le contraste avec parcimonie ; si tout crie, rien ne ressort.",
+      "Plisse les yeux devant une page : les formes encore visibles forment sa hiérarchie."
+     ],
+     "q": "Que devraient remarquer en premier les visiteurs de ta page ?",
+     "c": "Plisse les yeux devant ta page et note ce que tu vois en premier, deuxième et troisième."
+    },
+    "it": {
+     "t": "Gerarchia visiva",
+     "g": "Guida lo sguardo con dimensione, colore, peso e posizione.",
+     "p": [
+      "Gli elementi più grandi, marcati e alti si notano per primi.",
+      "Usa il contrasto con parsimonia; se tutto grida, niente risalta.",
+      "Socchiudi gli occhi davanti a una pagina: le forme che vedi ancora sono la sua gerarchia."
+     ],
+     "q": "Cosa dovrebbero notare per prima i visitatori della tua pagina?",
+     "c": "Socchiudi gli occhi davanti alla pagina e annota cosa noti per primo, secondo e terzo."
+    },
+    "pt": {
+     "t": "Hierarquia visual",
+     "g": "Guia o olhar com tamanho, cor, espessura e posição.",
+     "p": [
+      "Os elementos maiores, mais fortes e mais altos são notados primeiro.",
+      "Usa o contraste com moderação; se tudo grita, nada se destaca.",
+      "Semicerra os olhos diante de uma página: as formas que ainda vês são a sua hierarquia."
+     ],
+     "q": "O que deviam os visitantes notar primeiro na tua página?",
+     "c": "Semicerra os olhos diante da tua página e anota o que notas primeiro, segundo e terceiro."
+    },
+    "pt_BR": {
+     "t": "Hierarquia visual",
+     "g": "Guie o olhar com tamanho, cor, espessura e posição.",
+     "p": [
+      "Elementos maiores, mais fortes e mais altos são notados primeiro.",
+      "Use o contraste com moderação; se tudo grita, nada se destaca.",
+      "Semicerre os olhos diante de uma página: as formas que ainda vê são a hierarquia dela."
+     ],
+     "q": "O que os visitantes devem notar primeiro na sua página?",
+     "c": "Semicerre os olhos diante da sua página e anote o que nota primeiro, segundo e terceiro."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Proximity and grouping",
+     "g": "Place related things close together to show they belong.",
+     "p": [
+      "Items placed near each other are read as one group.",
+      "More space between groups than inside them makes sections obvious.",
+      "A label should sit closer to its own field than to the next one."
+     ],
+     "q": "Where on your page could better grouping remove confusion?",
+     "c": "Adjust spacing so each form label sits nearer to its own input."
+    },
+    "de": {
+     "t": "Nähe und Gruppierung",
+     "g": "Platziere Zusammengehöriges nah beieinander, um die Verbindung zu zeigen.",
+     "p": [
+      "Nahe beieinander stehende Elemente werden als eine Gruppe gelesen.",
+      "Mehr Abstand zwischen Gruppen als innerhalb macht Abschnitte offensichtlich.",
+      "Ein Label sollte näher an seinem Feld stehen als am nächsten."
+     ],
+     "q": "Wo könnte auf deiner Seite bessere Gruppierung Verwirrung beseitigen?",
+     "c": "Passe die Abstände an, sodass jedes Label näher an seinem eigenen Eingabefeld sitzt."
+    },
+    "es": {
+     "t": "Proximidad y agrupación",
+     "g": "Coloca juntas las cosas relacionadas para mostrar que van unidas.",
+     "p": [
+      "Los elementos cercanos entre sí se leen como un grupo.",
+      "Más espacio entre grupos que dentro de ellos hace evidentes las secciones.",
+      "Una etiqueta debe estar más cerca de su campo que del siguiente."
+     ],
+     "q": "¿Dónde de tu página una mejor agrupación quitaría confusión?",
+     "c": "Ajusta los espacios para que cada label quede más cerca de su propio input."
+    },
+    "fr": {
+     "t": "Proximité et regroupement",
+     "g": "Place les éléments liés tout près pour montrer qu'ils vont ensemble.",
+     "p": [
+      "Des éléments proches sont lus comme un seul groupe.",
+      "Plus d'espace entre les groupes qu'à l'intérieur rend les sections évidentes.",
+      "Un label doit être plus près de son champ que du suivant."
+     ],
+     "q": "Où sur ta page un meilleur regroupement lèverait-il une confusion ?",
+     "c": "Ajuste les espaces pour que chaque label soit plus proche de son propre input."
+    },
+    "it": {
+     "t": "Prossimità e raggruppamento",
+     "g": "Metti vicino ciò che è collegato per mostrare che va insieme.",
+     "p": [
+      "Elementi vicini tra loro vengono letti come un unico gruppo.",
+      "Più spazio tra i gruppi che al loro interno rende evidenti le sezioni.",
+      "Un'etichetta deve stare più vicina al suo campo che al successivo."
+     ],
+     "q": "Dove nella tua pagina un raggruppamento migliore toglierebbe confusione?",
+     "c": "Regola gli spazi perché ogni label sia più vicino al proprio input."
+    },
+    "pt": {
+     "t": "Proximidade e agrupamento",
+     "g": "Coloca perto o que está relacionado para mostrar que pertence junto.",
+     "p": [
+      "Elementos próximos entre si são lidos como um só grupo.",
+      "Mais espaço entre grupos do que dentro deles torna as secções evidentes.",
+      "Uma etiqueta deve ficar mais perto do seu campo do que do seguinte."
+     ],
+     "q": "Onde na tua página um melhor agrupamento tiraria confusão?",
+     "c": "Ajusta os espaços para cada label ficar mais perto do seu próprio input."
+    },
+    "pt_BR": {
+     "t": "Proximidade e agrupamento",
+     "g": "Coloque perto o que é relacionado para mostrar que pertence junto.",
+     "p": [
+      "Elementos próximos entre si são lidos como um só grupo.",
+      "Mais espaço entre grupos do que dentro deles torna as seções evidentes.",
+      "Um rótulo deve ficar mais perto do seu campo do que do seguinte."
+     ],
+     "q": "Onde na sua página um melhor agrupamento tiraria a confusão?",
+     "c": "Ajuste os espaços para cada label ficar mais perto do seu próprio input."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Repetition and consistency",
+     "g": "Repeat styles for similar things so people learn quickly.",
+     "p": [
+      "Using the same button style everywhere teaches people what is clickable.",
+      "Consistent spacing, colours and fonts make a site feel professional.",
+      "Define styles once in classes or variables, then reuse them."
+     ],
+     "q": "Which parts of your page should always look the same?",
+     "c": "Create a .button class and use it on every button of your page."
+    },
+    "de": {
+     "t": "Wiederholung und Konsistenz",
+     "g": "Wiederhole Stile bei Ähnlichem, damit Menschen schnell lernen.",
+     "p": [
+      "Derselbe Button-Stil überall zeigt, was anklickbar ist.",
+      "Einheitliche Abstände, Farben und Schriften wirken professionell.",
+      "Definiere Stile einmal in Klassen oder Variablen und nutze sie erneut."
+     ],
+     "q": "Welche Teile deiner Seite sollten immer gleich aussehen?",
+     "c": "Erstelle eine Klasse .button und nutze sie für jeden Button deiner Seite."
+    },
+    "es": {
+     "t": "Repetición y coherencia",
+     "g": "Repite estilos para cosas similares y la gente aprenderá rápido.",
+     "p": [
+      "Usar el mismo estilo de botón en todas partes enseña qué se puede pulsar.",
+      "Espaciado, colores y fuentes coherentes hacen que un sitio parezca profesional.",
+      "Define los estilos una vez en clases o variables y reutilízalos."
+     ],
+     "q": "¿Qué partes de tu página deberían verse siempre igual?",
+     "c": "Crea una clase .button y úsala en todos los botones de tu página."
+    },
+    "fr": {
+     "t": "Répétition et cohérence",
+     "g": "Répète les styles pour les éléments similaires afin qu'on apprenne vite.",
+     "p": [
+      "Le même style de bouton partout apprend ce sur quoi on peut cliquer.",
+      "Espaces, couleurs et polices cohérents donnent un air professionnel.",
+      "Définis les styles une fois dans des classes ou variables, puis réutilise-les."
+     ],
+     "q": "Quelles parties de ta page devraient toujours avoir le même aspect ?",
+     "c": "Crée une classe .button et utilise-la sur chaque bouton de ta page."
+    },
+    "it": {
+     "t": "Ripetizione e coerenza",
+     "g": "Ripeti gli stili per cose simili così le persone imparano in fretta.",
+     "p": [
+      "Usare lo stesso stile di pulsante ovunque insegna cosa si può cliccare.",
+      "Spaziatura, colori e font coerenti fanno sembrare un sito professionale.",
+      "Definisci gli stili una volta in classi o variabili, poi riusali."
+     ],
+     "q": "Quali parti della tua pagina dovrebbero apparire sempre uguali?",
+     "c": "Crea una classe .button e usala su ogni pulsante della tua pagina."
+    },
+    "pt": {
+     "t": "Repetição e coerência",
+     "g": "Repete estilos em coisas semelhantes para as pessoas aprenderem depressa.",
+     "p": [
+      "Usar o mesmo estilo de botão em todo o lado ensina o que se pode clicar.",
+      "Espaçamento, cores e fontes coerentes fazem um site parecer profissional.",
+      "Define os estilos uma vez em classes ou variáveis e reutiliza-os."
+     ],
+     "q": "Que partes da tua página deviam parecer sempre iguais?",
+     "c": "Cria uma classe .button e usa-a em todos os botões da tua página."
+    },
+    "pt_BR": {
+     "t": "Repetição e consistência",
+     "g": "Repita estilos em coisas parecidas para as pessoas aprenderem rápido.",
+     "p": [
+      "Usar o mesmo estilo de botão em todo lugar ensina o que pode ser clicado.",
+      "Espaçamento, cores e fontes consistentes fazem um site parecer profissional.",
+      "Defina os estilos uma vez em classes ou variáveis e reutilize-os."
+     ],
+     "q": "Que partes da sua página deveriam parecer sempre iguais?",
+     "c": "Crie uma classe .button e use em todos os botões da sua página."
+    }
+   }
+  }
+ ]
+}

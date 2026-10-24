@@ -1,0 +1,835 @@
+{
+ "topic": "cybersecurity_basics",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Strong passwords made simple",
+     "g": "Build passwords that are long and unique instead of short and complicated.",
+     "p": [
+      "Length matters most: every extra character makes a password much harder to guess.",
+      "Unique means one password per account, so one leak never opens other doors.",
+      "Random beats clever: avoid patterns like Summer2024! that people commonly pick."
+     ],
+     "q": "What feels hardest about having long, different passwords for every account?",
+     "c": "Challenge: plan a new long password for one account, but do not type it anywhere yet."
+    },
+    "de": {
+     "t": "Starke Passwörter leicht gemacht",
+     "g": "Baue Passwörter, die lang und einzigartig statt kurz und kompliziert sind.",
+     "p": [
+      "Die Länge zählt am meisten: Jedes zusätzliche Zeichen macht das Erraten deutlich schwerer.",
+      "Einzigartig heißt: ein Passwort pro Konto, damit ein Leck keine anderen Türen öffnet.",
+      "Zufall schlägt Cleverness: Meide Muster wie Sommer2024!, die viele Menschen wählen."
+     ],
+     "q": "Was fällt dir am schwersten bei langen, verschiedenen Passwörtern für jedes Konto?",
+     "c": "Challenge: Plane ein neues langes Passwort für ein Konto, tippe es aber noch nirgends ein."
+    },
+    "es": {
+     "t": "Contraseñas fuertes, fácil",
+     "g": "Crea contraseñas largas y únicas en vez de cortas y complicadas.",
+     "p": [
+      "La longitud importa más: cada carácter extra hace mucho más difícil adivinar la clave.",
+      "Única significa una clave por cuenta, para que una filtración no abra otras puertas.",
+      "Lo aleatorio vence a lo ingenioso: evita patrones como Verano2024! que mucha gente elige."
+     ],
+     "q": "¿Qué te resulta más difícil de tener claves largas y distintas para cada cuenta?",
+     "c": "Reto: planea una clave larga nueva para una cuenta, pero aún no la escribas en ningún sitio."
+    },
+    "fr": {
+     "t": "Des mots de passe solides, simplement",
+     "g": "Crée des mots de passe longs et uniques plutôt que courts et compliqués.",
+     "p": [
+      "La longueur compte le plus : chaque caractère de plus rend la devinette bien plus difficile.",
+      "Unique veut dire un mot de passe par compte, pour qu'une fuite n'ouvre pas d'autres portes.",
+      "Le hasard bat l'astuce : évite les schémas comme Ete2024! que beaucoup de gens choisissent."
+     ],
+     "q": "Qu'est-ce qui te semble le plus difficile avec des mots de passe longs et différents partout ?",
+     "c": "Défi : prévois un nouveau mot de passe long pour un compte, sans le saisir nulle part encore."
+    },
+    "it": {
+     "t": "Password forti, in modo semplice",
+     "g": "Costruisci password lunghe e uniche invece di corte e complicate.",
+     "p": [
+      "La lunghezza conta di più: ogni carattere in più rende molto più difficile indovinarla.",
+      "Unica significa una password per account, così una fuga non apre altre porte.",
+      "Il caso batte l'astuzia: evita schemi come Estate2024! che molti scelgono."
+     ],
+     "q": "Cosa ti sembra più difficile nell'avere password lunghe e diverse per ogni account?",
+     "c": "Sfida: pianifica una nuova password lunga per un account, ma non scriverla ancora da nessuna parte."
+    },
+    "pt": {
+     "t": "Palavras-passe fortes, de forma simples",
+     "g": "Cria palavras-passe longas e únicas em vez de curtas e complicadas.",
+     "p": [
+      "O comprimento é o que mais conta: cada caráter extra torna muito mais difícil adivinhar.",
+      "Única significa uma palavra-passe por conta, para que uma fuga não abra outras portas.",
+      "O aleatório vence o esperto: evita padrões como Verao2024! que muita gente escolhe."
+     ],
+     "q": "O que te parece mais difícil em ter palavras-passe longas e diferentes para cada conta?",
+     "c": "Desafio: planeia uma palavra-passe longa nova para uma conta, mas ainda não a escrevas em lado nenhum."
+    },
+    "pt_BR": {
+     "t": "Senhas fortes, de forma simples",
+     "g": "Crie senhas longas e únicas em vez de curtas e complicadas.",
+     "p": [
+      "O tamanho é o que mais conta: cada caractere extra deixa a senha bem mais difícil de adivinhar.",
+      "Única significa uma senha por conta, para que um vazamento não abra outras portas.",
+      "O aleatório vence o esperto: evite padrões como Verao2024! que muita gente escolhe."
+     ],
+     "q": "O que parece mais difícil em ter senhas longas e diferentes para cada conta?",
+     "c": "Desafio: planeje uma senha longa nova para uma conta, mas ainda não digite em lugar nenhum."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Passphrases",
+     "g": "Combine several random words into a password that is strong and easy to remember.",
+     "p": [
+      "A passphrase is four or more unrelated words, like a tiny nonsense sentence.",
+      "Random words are long enough to be strong yet far easier to remember than symbols.",
+      "Do not use a famous quote or lyric; unrelated, random words are what make it strong."
+     ],
+     "q": "Can you invent a silly mental picture to help remember a few random words?",
+     "c": "Challenge: practise recalling a made-up four-word phrase tonight, without using it anywhere."
+    },
+    "de": {
+     "t": "Passphrasen",
+     "g": "Kombiniere mehrere zufällige Wörter zu einem starken, gut merkbaren Passwort.",
+     "p": [
+      "Eine Passphrase besteht aus vier oder mehr nicht zusammenhängenden Wörtern, wie ein kleiner Unsinnssatz.",
+      "Zufällige Wörter sind lang genug, um stark zu sein, und leichter zu merken als Symbole.",
+      "Nimm kein bekanntes Zitat oder Lied; unzusammenhängende, zufällige Wörter machen es stark."
+     ],
+     "q": "Kannst du dir ein lustiges Bild ausdenken, um dir ein paar Zufallswörter zu merken?",
+     "c": "Challenge: Übe heute Abend, dir einen ausgedachten Vier-Wort-Satz zu merken, ohne ihn irgendwo zu nutzen."
+    },
+    "es": {
+     "t": "Frases de contraseña",
+     "g": "Combina varias palabras al azar en una clave fuerte y fácil de recordar.",
+     "p": [
+      "Una frase de contraseña son cuatro o más palabras sin relación, como una mini frase sin sentido.",
+      "Las palabras al azar son lo bastante largas para ser fuertes y más fáciles de recordar que símbolos.",
+      "No uses una cita o letra famosa; las palabras al azar y sin relación la hacen fuerte."
+     ],
+     "q": "¿Puedes inventar una imagen mental absurda para recordar unas palabras al azar?",
+     "c": "Reto: practica esta noche recordar una frase inventada de cuatro palabras, sin usarla en ningún sitio."
+    },
+    "fr": {
+     "t": "Les phrases secrètes",
+     "g": "Combine plusieurs mots au hasard en un mot de passe solide et facile à retenir.",
+     "p": [
+      "Une phrase secrète, ce sont quatre mots sans lien ou plus, comme une petite phrase absurde.",
+      "Des mots au hasard sont assez longs pour être solides et bien plus faciles à retenir que des symboles.",
+      "N'utilise pas de citation ou de paroles célèbres ; des mots au hasard sans lien la rendent solide."
+     ],
+     "q": "Peux-tu inventer une image mentale rigolote pour retenir quelques mots au hasard ?",
+     "c": "Défi : entraîne-toi ce soir à retenir une phrase inventée de quatre mots, sans l'utiliser nulle part."
+    },
+    "it": {
+     "t": "Passphrase",
+     "g": "Combina diverse parole casuali in una password forte e facile da ricordare.",
+     "p": [
+      "Una passphrase è composta da quattro o più parole senza relazione, come una piccola frase senza senso.",
+      "Le parole casuali sono abbastanza lunghe da essere forti e più facili da ricordare dei simboli.",
+      "Non usare una citazione o un testo famoso: parole casuali e slegate la rendono forte."
+     ],
+     "q": "Riesci a inventare un'immagine buffa per ricordare alcune parole casuali?",
+     "c": "Sfida: stasera esercitati a ricordare una frase inventata di quattro parole, senza usarla da nessuna parte."
+    },
+    "pt": {
+     "t": "Frases-passe",
+     "g": "Combina várias palavras aleatórias numa palavra-passe forte e fácil de lembrar.",
+     "p": [
+      "Uma frase-passe são quatro ou mais palavras sem relação, como uma mini frase sem sentido.",
+      "Palavras aleatórias são longas o suficiente para serem fortes e mais fáceis de lembrar do que símbolos.",
+      "Não uses uma citação ou letra famosa; palavras aleatórias e sem relação é que a tornam forte."
+     ],
+     "q": "Consegues inventar uma imagem mental engraçada para lembrar algumas palavras aleatórias?",
+     "c": "Desafio: esta noite treina lembrar uma frase inventada de quatro palavras, sem a usar em lado nenhum."
+    },
+    "pt_BR": {
+     "t": "Frases-senha",
+     "g": "Combine várias palavras aleatórias em uma senha forte e fácil de lembrar.",
+     "p": [
+      "Uma frase-senha são quatro ou mais palavras sem relação, como uma mini frase sem sentido.",
+      "Palavras aleatórias são longas o bastante para serem fortes e mais fáceis de lembrar que símbolos.",
+      "Não use uma citação ou letra famosa; palavras aleatórias e sem relação é que a tornam forte."
+     ],
+     "q": "Você consegue inventar uma imagem mental engraçada para lembrar algumas palavras aleatórias?",
+     "c": "Desafio: hoje à noite treine lembrar uma frase inventada de quatro palavras, sem usá-la em lugar nenhum."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Avoiding personal details",
+     "g": "Keep birthdays, names and favourite teams out of your passwords.",
+     "p": [
+      "Details about you are often public on social media or easy for acquaintances to guess.",
+      "Adding a year or a pet name to a word barely slows down a guessing tool.",
+      "Let randomness do the work: details that matter to you should not be in the password."
+     ],
+     "q": "Do you share things like birthdays or pet names publicly on your profiles?",
+     "c": "Challenge: review one social profile and hide or remove a detail you use for memory aids."
+    },
+    "de": {
+     "t": "Persönliche Angaben meiden",
+     "g": "Halte Geburtstage, Namen und Lieblingsteams aus deinen Passwörtern heraus.",
+     "p": [
+      "Angaben über dich sind oft in sozialen Medien öffentlich oder für Bekannte leicht zu erraten.",
+      "Ein Jahr oder Haustiername an einem Wort bremst ein Rate-Programm kaum.",
+      "Überlass es dem Zufall: Dinge, die dir wichtig sind, gehören nicht ins Passwort."
+     ],
+     "q": "Teilst du Dinge wie Geburtstage oder Haustiernamen öffentlich auf deinen Profilen?",
+     "c": "Challenge: Sieh ein Profil durch und verstecke oder entferne eine Angabe, die du als Gedächtnisstütze nutzt."
+    },
+    "es": {
+     "t": "Evitar datos personales",
+     "g": "Mantén cumpleaños, nombres y equipos favoritos fuera de tus contraseñas.",
+     "p": [
+      "Los datos sobre ti suelen ser públicos en redes o fáciles de adivinar por conocidos.",
+      "Añadir un año o el nombre de una mascota a una palabra apenas frena a una herramienta de adivinación.",
+      "Deja que el azar trabaje: lo que te importa no debe estar en la clave."
+     ],
+     "q": "¿Compartes en público cosas como cumpleaños o nombres de mascotas en tus perfiles?",
+     "c": "Reto: revisa un perfil social y oculta o quita un dato que uses como ayuda de memoria."
+    },
+    "fr": {
+     "t": "Éviter les infos personnelles",
+     "g": "Garde dates de naissance, prénoms et équipes préférées hors de tes mots de passe.",
+     "p": [
+      "Les infos sur toi sont souvent publiques sur les réseaux ou faciles à deviner pour des connaissances.",
+      "Ajouter une année ou le nom d'un animal à un mot ralentit à peine un outil de devinette.",
+      "Laisse faire le hasard : ce qui compte pour toi ne doit pas figurer dans le mot de passe."
+     ],
+     "q": "Partages-tu en public des choses comme ta date de naissance ou le nom de ton animal ?",
+     "c": "Défi : passe en revue un profil social et masque ou retire une info qui te sert d'aide-mémoire."
+    },
+    "it": {
+     "t": "Evitare dati personali",
+     "g": "Tieni compleanni, nomi e squadre del cuore fuori dalle tue password.",
+     "p": [
+      "I dati su di te sono spesso pubblici sui social o facili da indovinare per i conoscenti.",
+      "Aggiungere un anno o il nome di un animale a una parola rallenta appena uno strumento di indovinello.",
+      "Lascia lavorare il caso: ciò che conta per te non deve stare nella password."
+     ],
+     "q": "Condividi in pubblico cose come compleanni o nomi di animali sui tuoi profili?",
+     "c": "Sfida: controlla un profilo social e nascondi o togli un dato che usi come promemoria."
+    },
+    "pt": {
+     "t": "Evitar dados pessoais",
+     "g": "Mantém aniversários, nomes e clubes favoritos fora das tuas palavras-passe.",
+     "p": [
+      "Os dados sobre ti são muitas vezes públicos nas redes ou fáceis de adivinhar por conhecidos.",
+      "Juntar um ano ou o nome de um animal a uma palavra mal trava uma ferramenta de adivinha.",
+      "Deixa o acaso trabalhar: o que importa para ti não deve estar na palavra-passe."
+     ],
+     "q": "Partilhas em público coisas como aniversários ou nomes de animais nos teus perfis?",
+     "c": "Desafio: revê um perfil social e esconde ou tira um dado que uses como ajuda de memória."
+    },
+    "pt_BR": {
+     "t": "Evitar dados pessoais",
+     "g": "Mantenha aniversários, nomes e times favoritos fora das suas senhas.",
+     "p": [
+      "Dados sobre você costumam ser públicos nas redes ou fáceis de adivinhar por conhecidos.",
+      "Juntar um ano ou o nome de um pet a uma palavra mal atrasa uma ferramenta de adivinhação.",
+      "Deixe o acaso trabalhar: o que importa para você não deve estar na senha."
+     ],
+     "q": "Você compartilha em público coisas como aniversários ou nomes de pets nos seus perfis?",
+     "c": "Desafio: revise um perfil social e esconda ou tire um dado que você usa como lembrete."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is a password manager?",
+     "g": "Meet the encrypted vault that creates and remembers unique passwords for you.",
+     "p": [
+      "A password manager stores all your passwords in one encrypted, locked vault.",
+      "It can generate long random passwords and fill them in so you never type them.",
+      "You only remember one strong master password instead of dozens of different ones."
+     ],
+     "q": "What worries you most about trusting one tool with all your passwords?",
+     "c": "Challenge: read the official description of one well-known password manager, and note a question."
+    },
+    "de": {
+     "t": "Was ist ein Passwortmanager?",
+     "g": "Lerne den verschlüsselten Tresor kennen, der einzigartige Passwörter erstellt und für dich merkt.",
+     "p": [
+      "Ein Passwortmanager speichert alle Passwörter in einem verschlüsselten, gesperrten Tresor.",
+      "Er kann lange Zufallspasswörter erzeugen und eintragen, sodass du sie nie tippst.",
+      "Du merkst dir nur ein starkes Master-Passwort statt Dutzender verschiedener."
+     ],
+     "q": "Was beunruhigt dich am meisten daran, einem Werkzeug alle Passwörter anzuvertrauen?",
+     "c": "Challenge: Lies die offizielle Beschreibung eines bekannten Passwortmanagers und notiere eine Frage."
+    },
+    "es": {
+     "t": "¿Qué es un gestor de contraseñas?",
+     "g": "Conoce la bóveda cifrada que crea y recuerda claves únicas por ti.",
+     "p": [
+      "Un gestor de contraseñas guarda todas tus claves en una bóveda cifrada y cerrada.",
+      "Puede generar claves largas al azar y rellenarlas, así que nunca las escribes.",
+      "Solo recuerdas una clave maestra fuerte en vez de decenas distintas."
+     ],
+     "q": "¿Qué te preocupa más de confiar todas tus claves a una sola herramienta?",
+     "c": "Reto: lee la descripción oficial de un gestor conocido y anota una pregunta."
+    },
+    "fr": {
+     "t": "Qu'est-ce qu'un gestionnaire de mots de passe ?",
+     "g": "Découvre le coffre chiffré qui crée et retient des mots de passe uniques pour toi.",
+     "p": [
+      "Un gestionnaire range tous tes mots de passe dans un coffre chiffré et verrouillé.",
+      "Il peut générer de longs mots de passe aléatoires et les saisir, tu ne les tapes jamais.",
+      "Tu ne retiens qu'un mot de passe maître solide au lieu de dizaines de différents."
+     ],
+     "q": "Qu'est-ce qui t'inquiète le plus à l'idée de confier tous tes mots de passe à un seul outil ?",
+     "c": "Défi : lis la description officielle d'un gestionnaire connu et note une question."
+    },
+    "it": {
+     "t": "Cos'è un gestore di password?",
+     "g": "Conosci la cassaforte cifrata che crea e ricorda password uniche per te.",
+     "p": [
+      "Un gestore di password conserva tutte le password in una cassaforte cifrata e chiusa.",
+      "Può generare password lunghe e casuali e inserirle, così non le digiti mai.",
+      "Ricordi una sola password principale forte invece di decine diverse."
+     ],
+     "q": "Cosa ti preoccupa di più nell'affidare tutte le password a un solo strumento?",
+     "c": "Sfida: leggi la descrizione ufficiale di un gestore noto e annota una domanda."
+    },
+    "pt": {
+     "t": "O que é um gestor de palavras-passe?",
+     "g": "Conhece o cofre cifrado que cria e lembra palavras-passe únicas por ti.",
+     "p": [
+      "Um gestor de palavras-passe guarda todas as tuas palavras-passe num cofre cifrado e trancado.",
+      "Pode gerar palavras-passe longas e aleatórias e preenchê-las, por isso nunca as escreves.",
+      "Só te lembras de uma palavra-passe mestra forte em vez de dezenas diferentes."
+     ],
+     "q": "O que mais te preocupa em confiar todas as palavras-passe a uma só ferramenta?",
+     "c": "Desafio: lê a descrição oficial de um gestor conhecido e anota uma pergunta."
+    },
+    "pt_BR": {
+     "t": "O que é um gerenciador de senhas?",
+     "g": "Conheça o cofre criptografado que cria e lembra senhas únicas por você.",
+     "p": [
+      "Um gerenciador de senhas guarda todas as suas senhas em um cofre criptografado e trancado.",
+      "Ele pode gerar senhas longas e aleatórias e preenchê-las, então você nunca as digita.",
+      "Você lembra de uma só senha mestra forte em vez de dezenas diferentes."
+     ],
+     "q": "O que mais preocupa você em confiar todas as senhas a uma só ferramenta?",
+     "c": "Desafio: leia a descrição oficial de um gerenciador conhecido e anote uma pergunta."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing a password manager",
+     "g": "Learn the features to look for, such as encryption, syncing and a good reputation.",
+     "p": [
+      "Look for strong encryption, regular updates and a long, positive track record.",
+      "Check that it works on all your devices and can sync between them safely.",
+      "Prefer clear company information and independent reviews over flashy ads."
+     ],
+     "q": "Which devices would you want a password manager to work on?",
+     "c": "Challenge: list the devices you would need it on and two features that matter to you."
+    },
+    "de": {
+     "t": "Einen Passwortmanager wählen",
+     "g": "Lerne die wichtigen Merkmale kennen, etwa Verschlüsselung, Synchronisierung und guten Ruf.",
+     "p": [
+      "Achte auf starke Verschlüsselung, regelmäßige Updates und eine lange, positive Bilanz.",
+      "Prüfe, ob er auf allen Geräten läuft und sicher synchronisiert.",
+      "Bevorzuge klare Firmenangaben und unabhängige Tests statt auffälliger Werbung."
+     ],
+     "q": "Auf welchen Geräten soll ein Passwortmanager bei dir laufen?",
+     "c": "Challenge: Liste die nötigen Geräte und zwei Merkmale auf, die dir wichtig sind."
+    },
+    "es": {
+     "t": "Elegir un gestor de contraseñas",
+     "g": "Aprende qué buscar: cifrado, sincronización y buena reputación.",
+     "p": [
+      "Busca cifrado fuerte, actualizaciones regulares y un historial largo y positivo.",
+      "Comprueba que funcione en todos tus dispositivos y sincronice entre ellos con seguridad.",
+      "Prefiere información clara de la empresa y reseñas independientes antes que anuncios llamativos."
+     ],
+     "q": "¿En qué dispositivos querrías que funcionara un gestor de contraseñas?",
+     "c": "Reto: anota los dispositivos donde lo necesitas y dos funciones que te importen."
+    },
+    "fr": {
+     "t": "Choisir un gestionnaire de mots de passe",
+     "g": "Apprends quels critères regarder : chiffrement, synchronisation et bonne réputation.",
+     "p": [
+      "Cherche un chiffrement solide, des mises à jour régulières et un long historique positif.",
+      "Vérifie qu'il fonctionne sur tous tes appareils et se synchronise en sécurité.",
+      "Préfère des infos claires sur l'entreprise et des avis indépendants aux pubs tape-à-l'œil."
+     ],
+     "q": "Sur quels appareils voudrais-tu utiliser un gestionnaire de mots de passe ?",
+     "c": "Défi : liste les appareils concernés et deux critères qui comptent pour toi."
+    },
+    "it": {
+     "t": "Scegliere un gestore di password",
+     "g": "Impara cosa cercare: cifratura, sincronizzazione e buona reputazione.",
+     "p": [
+      "Cerca cifratura forte, aggiornamenti regolari e uno storico lungo e positivo.",
+      "Verifica che funzioni su tutti i tuoi dispositivi e si sincronizzi in sicurezza.",
+      "Preferisci informazioni chiare sull'azienda e recensioni indipendenti alle pubblicità vistose."
+     ],
+     "q": "Su quali dispositivi vorresti che funzionasse un gestore di password?",
+     "c": "Sfida: elenca i dispositivi che ti servono e due funzioni importanti per te."
+    },
+    "pt": {
+     "t": "Escolher um gestor de palavras-passe",
+     "g": "Aprende o que procurar: cifragem, sincronização e boa reputação.",
+     "p": [
+      "Procura cifragem forte, atualizações regulares e um historial longo e positivo.",
+      "Verifica se funciona em todos os teus dispositivos e sincroniza entre eles com segurança.",
+      "Prefere informação clara sobre a empresa e análises independentes a anúncios vistosos."
+     ],
+     "q": "Em que dispositivos gostarias que um gestor de palavras-passe funcionasse?",
+     "c": "Desafio: lista os dispositivos de que precisas e duas funcionalidades que te importam."
+    },
+    "pt_BR": {
+     "t": "Escolher um gerenciador de senhas",
+     "g": "Aprenda o que procurar: criptografia, sincronização e boa reputação.",
+     "p": [
+      "Procure criptografia forte, atualizações regulares e um histórico longo e positivo.",
+      "Confira se funciona em todos os seus dispositivos e sincroniza entre eles com segurança.",
+      "Prefira informações claras da empresa e avaliações independentes a anúncios chamativos."
+     ],
+     "q": "Em quais dispositivos você gostaria que um gerenciador de senhas funcionasse?",
+     "c": "Desafio: liste os dispositivos de que precisa e duas funções que importam para você."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your master password",
+     "g": "Create one strong passphrase that protects your whole password vault.",
+     "p": [
+      "The master password is the one key to your vault, so make it long and truly yours.",
+      "Use a random passphrase you have never used anywhere else, and never share it.",
+      "Practise typing it a few times so you remember it before you rely on it."
+     ],
+     "q": "How could you make sure you never forget your master passphrase?",
+     "c": "Challenge: invent a four-word master passphrase in your head and rehearse it, without writing it online."
+    },
+    "de": {
+     "t": "Dein Master-Passwort",
+     "g": "Erstelle eine starke Passphrase, die deinen ganzen Passworttresor schützt.",
+     "p": [
+      "Das Master-Passwort ist der eine Schlüssel zum Tresor, also lang und wirklich einmalig.",
+      "Nimm eine zufällige Passphrase, die du nirgends sonst nutzt, und teile sie nie.",
+      "Übe das Tippen einige Male, damit du es dir merkst, bevor du dich darauf verlässt."
+     ],
+     "q": "Wie könntest du sicherstellen, dass du deine Master-Passphrase nie vergisst?",
+     "c": "Challenge: Erfinde im Kopf eine Master-Passphrase aus vier Wörtern und übe sie, ohne sie online zu schreiben."
+    },
+    "es": {
+     "t": "Tu contraseña maestra",
+     "g": "Crea una frase de contraseña fuerte que proteja toda tu bóveda.",
+     "p": [
+      "La clave maestra es la única llave de tu bóveda, así que hazla larga y realmente tuya.",
+      "Usa una frase al azar que no hayas usado en ningún otro sitio, y nunca la compartas.",
+      "Practica escribirla varias veces para recordarla antes de depender de ella."
+     ],
+     "q": "¿Cómo podrías asegurarte de no olvidar nunca tu frase maestra?",
+     "c": "Reto: inventa mentalmente una frase maestra de cuatro palabras y repásala, sin escribirla en línea."
+    },
+    "fr": {
+     "t": "Ton mot de passe maître",
+     "g": "Crée une phrase secrète solide qui protège tout ton coffre de mots de passe.",
+     "p": [
+      "Le mot de passe maître est l'unique clé du coffre : qu'il soit long et vraiment à toi.",
+      "Prends une phrase au hasard jamais utilisée ailleurs, et ne la partage jamais.",
+      "Entraîne-toi à la taper plusieurs fois pour la retenir avant de t'y fier."
+     ],
+     "q": "Comment pourrais-tu t'assurer de ne jamais oublier ta phrase maître ?",
+     "c": "Défi : invente dans ta tête une phrase maître de quatre mots et répète-la, sans l'écrire en ligne."
+    },
+    "it": {
+     "t": "La tua password principale",
+     "g": "Crea una passphrase forte che protegga l'intera cassaforte delle password.",
+     "p": [
+      "La password principale è l'unica chiave della cassaforte, quindi falla lunga e davvero tua.",
+      "Usa una passphrase casuale mai usata altrove e non condividerla mai.",
+      "Esercitati a digitarla alcune volte per ricordarla prima di farci affidamento."
+     ],
+     "q": "Come potresti assicurarti di non dimenticare mai la tua passphrase principale?",
+     "c": "Sfida: inventa a mente una passphrase principale di quattro parole e ripetila, senza scriverla online."
+    },
+    "pt": {
+     "t": "A tua palavra-passe mestra",
+     "g": "Cria uma frase-passe forte que proteja todo o teu cofre de palavras-passe.",
+     "p": [
+      "A palavra-passe mestra é a única chave do cofre, por isso faz-a longa e verdadeiramente tua.",
+      "Usa uma frase aleatória que nunca usaste noutro sítio e nunca a partilhes.",
+      "Pratica escrevê-la algumas vezes para a decorares antes de dependeres dela."
+     ],
+     "q": "Como poderias garantir que nunca esqueces a tua frase-passe mestra?",
+     "c": "Desafio: inventa de cabeça uma frase-passe mestra de quatro palavras e ensaia-a, sem a escrever online."
+    },
+    "pt_BR": {
+     "t": "Sua senha mestra",
+     "g": "Crie uma frase-senha forte que proteja todo o seu cofre de senhas.",
+     "p": [
+      "A senha mestra é a única chave do cofre, então faça-a longa e realmente sua.",
+      "Use uma frase aleatória que você nunca usou em outro lugar e nunca a compartilhe.",
+      "Pratique digitá-la algumas vezes para decorar antes de depender dela."
+     ],
+     "q": "Como você poderia garantir que nunca vai esquecer sua frase-senha mestra?",
+     "c": "Desafio: invente de cabeça uma frase-senha mestra de quatro palavras e ensaie, sem escrever online."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Moving accounts into a manager",
+     "g": "Add your most important accounts first, one step at a time.",
+     "p": [
+      "Start with email, banking and shopping, then add others as you log in.",
+      "Each time you log in, let the manager save the login and suggest a new password.",
+      "No rush: ten minutes a day is enough to move everything over within a few weeks."
+     ],
+     "q": "Which account would you move into a manager first, and why?",
+     "c": "Challenge: move one important account today, using a new generated password."
+    },
+    "de": {
+     "t": "Konten in den Manager übernehmen",
+     "g": "Füge zuerst deine wichtigsten Konten hinzu, Schritt für Schritt.",
+     "p": [
+      "Beginne mit E-Mail, Bank und Shopping und ergänze die übrigen beim Anmelden.",
+      "Lass den Manager bei jeder Anmeldung die Daten speichern und ein neues Passwort vorschlagen.",
+      "Keine Eile: Zehn Minuten am Tag reichen, um in wenigen Wochen alles zu übertragen."
+     ],
+     "q": "Welches Konto würdest du zuerst in einen Manager übernehmen, und warum?",
+     "c": "Challenge: Übertrage heute ein wichtiges Konto und nutze ein neu erzeugtes Passwort."
+    },
+    "es": {
+     "t": "Pasar cuentas a un gestor",
+     "g": "Añade primero tus cuentas más importantes, paso a paso.",
+     "p": [
+      "Empieza por el correo, el banco y las compras, y añade el resto al iniciar sesión.",
+      "Cada vez que entres, deja que el gestor guarde el acceso y proponga una clave nueva.",
+      "Sin prisa: diez minutos al día bastan para pasarlo todo en unas semanas."
+     ],
+     "q": "¿Qué cuenta pasarías primero a un gestor y por qué?",
+     "c": "Reto: pasa hoy una cuenta importante usando una clave nueva generada."
+    },
+    "fr": {
+     "t": "Passer tes comptes dans un gestionnaire",
+     "g": "Ajoute d'abord tes comptes les plus importants, une étape à la fois.",
+     "p": [
+      "Commence par l'e-mail, la banque et les achats, puis ajoute le reste au fil des connexions.",
+      "À chaque connexion, laisse le gestionnaire enregistrer l'accès et proposer un nouveau mot de passe.",
+      "Pas de précipitation : dix minutes par jour suffisent pour tout migrer en quelques semaines."
+     ],
+     "q": "Quel compte passerais-tu en premier dans un gestionnaire, et pourquoi ?",
+     "c": "Défi : migre un compte important aujourd'hui avec un nouveau mot de passe généré."
+    },
+    "it": {
+     "t": "Spostare gli account in un gestore",
+     "g": "Aggiungi per primi gli account più importanti, un passo alla volta.",
+     "p": [
+      "Parti da email, banca e acquisti, poi aggiungi gli altri quando accedi.",
+      "A ogni accesso, lascia che il gestore salvi le credenziali e proponga una nuova password.",
+      "Senza fretta: dieci minuti al giorno bastano per spostare tutto in poche settimane."
+     ],
+     "q": "Quale account sposteresti per primo in un gestore e perché?",
+     "c": "Sfida: sposta oggi un account importante usando una nuova password generata."
+    },
+    "pt": {
+     "t": "Passar contas para um gestor",
+     "g": "Adiciona primeiro as contas mais importantes, um passo de cada vez.",
+     "p": [
+      "Começa pelo email, banco e compras e vai juntando as outras ao iniciar sessão.",
+      "Sempre que entrares, deixa o gestor guardar o acesso e sugerir uma palavra-passe nova.",
+      "Sem pressa: dez minutos por dia chegam para passar tudo em poucas semanas."
+     ],
+     "q": "Que conta passarias primeiro para um gestor e porquê?",
+     "c": "Desafio: passa hoje uma conta importante usando uma palavra-passe nova gerada."
+    },
+    "pt_BR": {
+     "t": "Passar contas para um gerenciador",
+     "g": "Adicione primeiro as contas mais importantes, um passo de cada vez.",
+     "p": [
+      "Comece por e-mail, banco e compras e vá juntando as outras ao entrar.",
+      "Sempre que entrar, deixe o gerenciador salvar o acesso e sugerir uma senha nova.",
+      "Sem pressa: dez minutos por dia bastam para passar tudo em poucas semanas."
+     ],
+     "q": "Que conta você passaria primeiro para um gerenciador e por quê?",
+     "c": "Desafio: passe hoje uma conta importante usando uma senha nova gerada."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Built-in browser and phone managers",
+     "g": "Discover the password tools already included in browsers and phones.",
+     "p": [
+      "Browsers and phones can save and fill passwords for you, often for free.",
+      "They are protected by your device lock, so a strong screen lock matters.",
+      "They are a good start if a separate manager feels like too big a step."
+     ],
+     "q": "Do you let your browser or phone save passwords for you right now?",
+     "c": "Challenge: find the saved-passwords settings on your phone and note what is saved."
+    },
+    "de": {
+     "t": "Passwortfunktionen in Browser und Handy",
+     "g": "Entdecke die Passwortwerkzeuge, die in Browsern und Handys schon eingebaut sind.",
+     "p": [
+      "Browser und Handys können Passwörter speichern und eintragen, oft kostenlos.",
+      "Sie sind durch deine Gerätesperre geschützt, daher ist eine starke Bildschirmsperre wichtig.",
+      "Sie sind ein guter Start, wenn ein separater Manager zu groß wirkt."
+     ],
+     "q": "Lässt du deinen Browser oder dein Handy gerade Passwörter für dich speichern?",
+     "c": "Challenge: Finde die Einstellungen für gespeicherte Passwörter am Handy und sieh nach, was gespeichert ist."
+    },
+    "es": {
+     "t": "Gestores del navegador y del móvil",
+     "g": "Descubre las herramientas de contraseñas que ya incluyen navegadores y móviles.",
+     "p": [
+      "Los navegadores y móviles pueden guardar y rellenar claves, a menudo gratis.",
+      "Los protege el bloqueo de tu dispositivo, así que un bloqueo fuerte importa.",
+      "Son un buen comienzo si un gestor aparte te parece un paso demasiado grande."
+     ],
+     "q": "¿Dejas ahora que tu navegador o móvil guarde tus claves?",
+     "c": "Reto: busca los ajustes de contraseñas guardadas en tu móvil y revisa qué hay guardado."
+    },
+    "fr": {
+     "t": "Gestionnaires du navigateur et du téléphone",
+     "g": "Découvre les outils de mots de passe déjà intégrés aux navigateurs et aux téléphones.",
+     "p": [
+      "Navigateurs et téléphones peuvent enregistrer et remplir les mots de passe, souvent gratuitement.",
+      "Ils sont protégés par le verrouillage de l'appareil : un bon code d'écran compte.",
+      "C'est un bon début si un gestionnaire séparé te paraît une trop grande étape."
+     ],
+     "q": "Laisses-tu actuellement ton navigateur ou ton téléphone enregistrer tes mots de passe ?",
+     "c": "Défi : trouve les réglages des mots de passe enregistrés sur ton téléphone et regarde ce qui y est."
+    },
+    "it": {
+     "t": "Gestori integrati in browser e telefono",
+     "g": "Scopri gli strumenti per le password già inclusi in browser e telefoni.",
+     "p": [
+      "Browser e telefoni possono salvare e compilare le password, spesso gratis.",
+      "Sono protetti dal blocco del dispositivo, quindi un blocco schermo forte conta.",
+      "Sono un buon inizio se un gestore separato sembra un passo troppo grande."
+     ],
+     "q": "Lasci che il tuo browser o telefono salvi le password per te al momento?",
+     "c": "Sfida: trova le impostazioni delle password salvate sul telefono e guarda cosa c'è."
+    },
+    "pt": {
+     "t": "Gestores do navegador e do telemóvel",
+     "g": "Descobre as ferramentas de palavras-passe já incluídas em navegadores e telemóveis.",
+     "p": [
+      "Navegadores e telemóveis podem guardar e preencher palavras-passe, muitas vezes de graça.",
+      "São protegidos pelo bloqueio do dispositivo, por isso um bloqueio de ecrã forte importa.",
+      "São um bom início se um gestor à parte te parecer um passo demasiado grande."
+     ],
+     "q": "Neste momento deixas o navegador ou o telemóvel guardar as tuas palavras-passe?",
+     "c": "Desafio: encontra as definições de palavras-passe guardadas no telemóvel e vê o que lá está."
+    },
+    "pt_BR": {
+     "t": "Gerenciadores do navegador e do celular",
+     "g": "Descubra as ferramentas de senhas já incluídas em navegadores e celulares.",
+     "p": [
+      "Navegadores e celulares podem salvar e preencher senhas, muitas vezes de graça.",
+      "Eles são protegidos pelo bloqueio do aparelho, então um bloqueio de tela forte importa.",
+      "São um bom começo se um gerenciador separado parecer um passo grande demais."
+     ],
+     "q": "Hoje você deixa o navegador ou o celular salvar suas senhas?",
+     "c": "Desafio: ache as configurações de senhas salvas no celular e veja o que está lá."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Updating old passwords",
+     "g": "Prioritise which old or reused passwords to change first.",
+     "p": [
+      "Change email first, then banking, then shopping and social media accounts.",
+      "Passwords you reused or have not changed in years come before the rest.",
+      "Do a few each day instead of everything at once, so it stays manageable."
+     ],
+     "q": "Which three accounts will you update first, and why those?",
+     "c": "Challenge: change the password on your second most important account to a new, unique one."
+    },
+    "de": {
+     "t": "Alte Passwörter erneuern",
+     "g": "Lege fest, welche alten oder mehrfach genutzten Passwörter du zuerst änderst.",
+     "p": [
+      "Ändere zuerst die E-Mail, dann Bank, dann Shopping- und Social-Media-Konten.",
+      "Mehrfach genutzte oder jahrelang unveränderte Passwörter kommen vor dem Rest.",
+      "Mach täglich ein paar statt alles auf einmal, damit es machbar bleibt."
+     ],
+     "q": "Welche drei Konten aktualisierst du zuerst, und warum diese?",
+     "c": "Challenge: Ändere das Passwort deines zweitwichtigsten Kontos in ein neues, einzigartiges."
+    },
+    "es": {
+     "t": "Actualizar claves antiguas",
+     "g": "Decide qué claves antiguas o repetidas cambiar primero.",
+     "p": [
+      "Cambia primero el correo, luego la banca, y después compras y redes sociales.",
+      "Las claves repetidas o sin cambiar en años van antes que las demás.",
+      "Haz unas pocas al día en vez de todo de golpe, para que sea llevadero."
+     ],
+     "q": "¿Qué tres cuentas actualizarás primero y por qué esas?",
+     "c": "Reto: cambia la clave de tu segunda cuenta más importante por una nueva y única."
+    },
+    "fr": {
+     "t": "Mettre à jour les vieux mots de passe",
+     "g": "Décide quels vieux mots de passe ou mots de passe réutilisés changer en premier.",
+     "p": [
+      "Change d'abord l'e-mail, puis la banque, puis les comptes d'achats et de réseaux sociaux.",
+      "Ceux réutilisés ou inchangés depuis des années passent avant les autres.",
+      "Fais-en quelques-uns par jour plutôt que tout d'un coup, pour rester gérable."
+     ],
+     "q": "Quels trois comptes mettras-tu à jour en premier, et pourquoi ceux-là ?",
+     "c": "Défi : change le mot de passe de ton deuxième compte le plus important pour un nouveau, unique."
+    },
+    "it": {
+     "t": "Aggiornare le vecchie password",
+     "g": "Stabilisci quali password vecchie o riutilizzate cambiare per prime.",
+     "p": [
+      "Cambia prima l'email, poi la banca, poi gli account di acquisti e social.",
+      "Le password riutilizzate o mai cambiate da anni vengono prima delle altre.",
+      "Falle un po' al giorno invece che tutte insieme, così resta gestibile."
+     ],
+     "q": "Quali tre account aggiornerai per primi e perché proprio quelli?",
+     "c": "Sfida: cambia la password del tuo secondo account più importante con una nuova e unica."
+    },
+    "pt": {
+     "t": "Atualizar palavras-passe antigas",
+     "g": "Decide que palavras-passe antigas ou repetidas mudar primeiro.",
+     "p": [
+      "Muda primeiro o email, depois o banco e a seguir compras e redes sociais.",
+      "As repetidas ou sem mudança há anos vêm antes das restantes.",
+      "Faz algumas por dia em vez de tudo de uma vez, para ser viável."
+     ],
+     "q": "Que três contas vais atualizar primeiro e porquê essas?",
+     "c": "Desafio: muda a palavra-passe da tua segunda conta mais importante para uma nova e única."
+    },
+    "pt_BR": {
+     "t": "Atualizar senhas antigas",
+     "g": "Decida quais senhas antigas ou repetidas mudar primeiro.",
+     "p": [
+      "Mude primeiro o e-mail, depois o banco e em seguida compras e redes sociais.",
+      "As repetidas ou sem mudança há anos vêm antes das demais.",
+      "Faça algumas por dia em vez de tudo de uma vez, para ficar viável."
+     ],
+     "q": "Quais três contas você vai atualizar primeiro e por que essas?",
+     "c": "Desafio: mude a senha da sua segunda conta mais importante para uma nova e única."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Password day challenge",
+     "g": "Change one important reused password to a unique, strong one today.",
+     "p": [
+      "Pick one account whose password you have reused or kept for years.",
+      "Use a long passphrase or a generated password, and save it in your manager.",
+      "Afterwards, log out and back in once to confirm the new password works."
+     ],
+     "q": "How did it feel to change a password, and what would make the next one easier?",
+     "c": "Challenge: do it now: one reused password becomes one unique strong password."
+    },
+    "de": {
+     "t": "Passwort-Tag-Challenge",
+     "g": "Ändere heute ein wichtiges, mehrfach genutztes Passwort in ein einzigartiges, starkes.",
+     "p": [
+      "Wähle ein Konto, dessen Passwort du mehrfach genutzt oder jahrelang behalten hast.",
+      "Nimm eine lange Passphrase oder ein erzeugtes Passwort und speichere es im Manager.",
+      "Melde dich danach einmal ab und wieder an, um das neue Passwort zu testen."
+     ],
+     "q": "Wie fühlte sich die Änderung an, und was würde die nächste leichter machen?",
+     "c": "Challenge: Mach es jetzt: aus einem mehrfach genutzten Passwort wird ein einzigartiges starkes."
+    },
+    "es": {
+     "t": "Reto del día de la contraseña",
+     "g": "Cambia hoy una clave importante repetida por una única y fuerte.",
+     "p": [
+      "Elige una cuenta cuya clave hayas repetido o mantenido durante años.",
+      "Usa una frase larga o una clave generada, y guárdala en tu gestor.",
+      "Después, cierra sesión y entra una vez para confirmar que la nueva clave funciona."
+     ],
+     "q": "¿Cómo te sentiste al cambiar una clave y qué haría más fácil la siguiente?",
+     "c": "Reto: hazlo ahora: una clave repetida se convierte en una única y fuerte."
+    },
+    "fr": {
+     "t": "Défi du jour des mots de passe",
+     "g": "Change aujourd'hui un mot de passe important réutilisé en un mot de passe unique et solide.",
+     "p": [
+      "Choisis un compte dont tu as réutilisé ou gardé le mot de passe pendant des années.",
+      "Utilise une longue phrase secrète ou un mot de passe généré, enregistré dans ton gestionnaire.",
+      "Ensuite, déconnecte-toi puis reconnecte-toi une fois pour vérifier le nouveau mot de passe."
+     ],
+     "q": "Comment as-tu vécu ce changement, et qu'est-ce qui faciliterait le prochain ?",
+     "c": "Défi : fais-le maintenant : un mot de passe réutilisé devient un mot de passe unique et solide."
+    },
+    "it": {
+     "t": "Sfida del giorno delle password",
+     "g": "Cambia oggi una password importante riutilizzata con una unica e forte.",
+     "p": [
+      "Scegli un account la cui password hai riutilizzato o tenuto per anni.",
+      "Usa una passphrase lunga o una password generata e salvala nel gestore.",
+      "Poi esci e rientra una volta per verificare che la nuova password funzioni."
+     ],
+     "q": "Come ti sei sentito a cambiare una password e cosa renderebbe più facile la prossima?",
+     "c": "Sfida: fallo ora: una password riutilizzata diventa una password unica e forte."
+    },
+    "pt": {
+     "t": "Desafio do dia das palavras-passe",
+     "g": "Muda hoje uma palavra-passe importante repetida para uma única e forte.",
+     "p": [
+      "Escolhe uma conta cuja palavra-passe repetiste ou mantiveste durante anos.",
+      "Usa uma frase-passe longa ou uma palavra-passe gerada e guarda-a no teu gestor.",
+      "Depois, termina sessão e entra uma vez para confirmares que a nova funciona."
+     ],
+     "q": "Como foi mudar uma palavra-passe e o que tornaria a próxima mais fácil?",
+     "c": "Desafio: faz agora: uma palavra-passe repetida passa a ser única e forte."
+    },
+    "pt_BR": {
+     "t": "Desafio do dia das senhas",
+     "g": "Mude hoje uma senha importante repetida para uma única e forte.",
+     "p": [
+      "Escolha uma conta cuja senha você repetiu ou manteve por anos.",
+      "Use uma frase-senha longa ou uma senha gerada e salve no seu gerenciador.",
+      "Depois, saia e entre uma vez para confirmar que a nova senha funciona."
+     ],
+     "q": "Como foi mudar uma senha e o que deixaria a próxima mais fácil?",
+     "c": "Desafio: faça agora: uma senha repetida passa a ser única e forte."
+    }
+   }
+  }
+ ]
+}

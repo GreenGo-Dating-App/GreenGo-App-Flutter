@@ -1,0 +1,835 @@
+{
+ "topic": "budgeting_basics",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What a budget really is",
+     "g": "Understand a budget as a friendly plan for your money, not a punishment.",
+     "p": [
+      "A budget is a plan that tells your money where to go before it disappears.",
+      "It is a tool for freedom: you decide what matters, then spend with a clear mind.",
+      "It does not need to be perfect, strict or complicated to be useful."
+     ],
+     "q": "When you hear the word budget, what feeling or picture comes to mind first?",
+     "c": "Write one sentence that starts with: My money should help me to..."
+    },
+    "de": {
+     "t": "Was ein Budget wirklich ist",
+     "g": "Ein Budget als freundlichen Plan für dein Geld verstehen, nicht als Strafe.",
+     "p": [
+      "Ein Budget ist ein Plan, der deinem Geld sagt, wohin es soll, bevor es verschwindet.",
+      "Es schenkt Freiheit: Du entscheidest, was zählt, und gibst dann mit ruhigem Kopf aus.",
+      "Es muss nicht perfekt, streng oder kompliziert sein, um zu helfen."
+     ],
+     "q": "Welches Gefühl oder Bild kommt dir bei dem Wort Budget als Erstes in den Sinn?",
+     "c": "Schreibe einen Satz, der so beginnt: Mein Geld soll mir helfen, ..."
+    },
+    "es": {
+     "t": "Qué es realmente un presupuesto",
+     "g": "Entender el presupuesto como un plan amable para tu dinero, no como un castigo.",
+     "p": [
+      "Un presupuesto es un plan que le dice a tu dinero adónde ir antes de que desaparezca.",
+      "Es una herramienta de libertad: tú decides qué importa y luego gastas con la mente tranquila.",
+      "No tiene que ser perfecto, estricto ni complicado para servirte."
+     ],
+     "q": "Cuando oyes la palabra presupuesto, ¿qué sensación o imagen te viene primero a la mente?",
+     "c": "Escribe una frase que empiece así: Mi dinero debería ayudarme a..."
+    },
+    "fr": {
+     "t": "Ce qu'est vraiment un budget",
+     "g": "Comprendre le budget comme un plan bienveillant pour ton argent, pas comme une punition.",
+     "p": [
+      "Un budget est un plan qui dit à ton argent où aller avant qu'il ne disparaisse.",
+      "C'est un outil de liberté : tu décides ce qui compte, puis tu dépenses l'esprit tranquille.",
+      "Il n'a pas besoin d'être parfait, strict ou compliqué pour être utile."
+     ],
+     "q": "Quand tu entends le mot budget, quelle sensation ou quelle image te vient d'abord ?",
+     "c": "Écris une phrase qui commence par : Mon argent devrait m'aider à..."
+    },
+    "it": {
+     "t": "Cos'è davvero un budget",
+     "g": "Capire il budget come un piano gentile per i tuoi soldi, non come una punizione.",
+     "p": [
+      "Un budget è un piano che dice ai tuoi soldi dove andare prima che spariscano.",
+      "È uno strumento di libertà: decidi cosa conta e poi spendi con la mente serena.",
+      "Non deve essere perfetto, rigido o complicato per essere utile."
+     ],
+     "q": "Quando senti la parola budget, quale sensazione o immagine ti viene in mente per prima?",
+     "c": "Scrivi una frase che inizia così: I miei soldi dovrebbero aiutarmi a..."
+    },
+    "pt": {
+     "t": "O que é realmente um orçamento",
+     "g": "Perceber o orçamento como um plano amigo para o teu dinheiro, não como um castigo.",
+     "p": [
+      "Um orçamento é um plano que diz ao teu dinheiro para onde ir antes que desapareça.",
+      "É uma ferramenta de liberdade: decides o que importa e gastas com a cabeça tranquila.",
+      "Não precisa de ser perfeito, rígido nem complicado para ser útil."
+     ],
+     "q": "Quando ouves a palavra orçamento, que sensação ou imagem te vem primeiro à cabeça?",
+     "c": "Escreve uma frase que comece assim: O meu dinheiro devia ajudar-me a..."
+    },
+    "pt_BR": {
+     "t": "O que é realmente um orçamento",
+     "g": "Entender o orçamento como um plano amigo para o seu dinheiro, não como um castigo.",
+     "p": [
+      "Um orçamento é um plano que diz ao seu dinheiro para onde ir antes que ele suma.",
+      "É uma ferramenta de liberdade: você decide o que importa e gasta com a cabeça tranquila.",
+      "Não precisa ser perfeito, rígido nem complicado para ajudar."
+     ],
+     "q": "Quando você ouve a palavra orçamento, que sensação ou imagem vem primeiro à cabeça?",
+     "c": "Escreva uma frase que comece assim: Meu dinheiro deveria me ajudar a..."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your money story",
+     "g": "See how the money habits you grew up with shape your choices today.",
+     "p": [
+      "Many of our habits come from what we saw at home: saving, spending, worrying or sharing.",
+      "Neither a spender nor a saver is bad; each habit has strengths and blind spots.",
+      "Knowing your story helps you keep what works and gently change what does not."
+     ],
+     "q": "What is one thing about money you learned as a child that still affects you?",
+     "c": "Note one money habit you like and one you would like to adjust."
+    },
+    "de": {
+     "t": "Deine Geldgeschichte",
+     "g": "Erkennen, wie die Geldgewohnheiten deiner Kindheit deine Entscheidungen heute prägen.",
+     "p": [
+      "Viele Gewohnheiten stammen von zu Hause: sparen, ausgeben, sich sorgen oder teilen.",
+      "Weder Ausgeber noch Sparer sind schlecht; jede Gewohnheit hat Stärken und blinde Flecken.",
+      "Wer seine Geschichte kennt, behält, was funktioniert, und ändert sanft, was nicht passt."
+     ],
+     "q": "Was hast du als Kind über Geld gelernt, das dich heute noch beeinflusst?",
+     "c": "Notiere eine Geldgewohnheit, die du magst, und eine, die du anpassen möchtest."
+    },
+    "es": {
+     "t": "Tu historia con el dinero",
+     "g": "Ver cómo los hábitos de dinero de tu infancia influyen en tus decisiones de hoy.",
+     "p": [
+      "Muchos hábitos vienen de casa: ahorrar, gastar, preocuparse o compartir.",
+      "Ni el que gasta ni el que ahorra es malo; cada hábito tiene fortalezas y puntos ciegos.",
+      "Conocer tu historia te ayuda a conservar lo que funciona y cambiar con suavidad lo que no."
+     ],
+     "q": "¿Qué aprendiste sobre el dinero de niño que todavía te influye hoy?",
+     "c": "Anota un hábito de dinero que te gusta y uno que te gustaría ajustar."
+    },
+    "fr": {
+     "t": "Ton histoire avec l'argent",
+     "g": "Voir comment les habitudes d'argent de ton enfance influencent tes choix aujourd'hui.",
+     "p": [
+      "Beaucoup d'habitudes viennent de la maison : épargner, dépenser, s'inquiéter ou partager.",
+      "Ni le dépensier ni l'épargnant n'est mauvais ; chaque habitude a ses forces et ses angles morts.",
+      "Connaître ton histoire t'aide à garder ce qui marche et à changer doucement le reste."
+     ],
+     "q": "Qu'as-tu appris sur l'argent enfant et qui t'influence encore aujourd'hui ?",
+     "c": "Note une habitude d'argent que tu aimes et une que tu voudrais ajuster."
+    },
+    "it": {
+     "t": "La tua storia con i soldi",
+     "g": "Vedere come le abitudini di denaro dell'infanzia influenzano le tue scelte di oggi.",
+     "p": [
+      "Molte abitudini nascono in casa: risparmiare, spendere, preoccuparsi o condividere.",
+      "Né chi spende né chi risparmia è sbagliato; ogni abitudine ha punti di forza e punti ciechi.",
+      "Conoscere la tua storia ti aiuta a tenere ciò che funziona e a cambiare con dolcezza il resto."
+     ],
+     "q": "Cosa hai imparato sui soldi da bambino che ti influenza ancora oggi?",
+     "c": "Annota un'abitudine di denaro che ti piace e una che vorresti aggiustare."
+    },
+    "pt": {
+     "t": "A tua história com o dinheiro",
+     "g": "Ver como os hábitos de dinheiro da infância moldam as tuas escolhas de hoje.",
+     "p": [
+      "Muitos hábitos vêm de casa: poupar, gastar, preocupar-se ou partilhar.",
+      "Nem quem gasta nem quem poupa é mau; cada hábito tem forças e pontos cegos.",
+      "Conhecer a tua história ajuda-te a manter o que funciona e a mudar com calma o resto."
+     ],
+     "q": "O que aprendeste sobre dinheiro em criança que ainda te influencia hoje?",
+     "c": "Anota um hábito de dinheiro de que gostas e um que gostasses de ajustar."
+    },
+    "pt_BR": {
+     "t": "Sua história com o dinheiro",
+     "g": "Ver como os hábitos de dinheiro da infância moldam suas escolhas de hoje.",
+     "p": [
+      "Muitos hábitos vêm de casa: poupar, gastar, se preocupar ou compartilhar.",
+      "Nem quem gasta nem quem poupa é ruim; cada hábito tem pontos fortes e pontos cegos.",
+      "Conhecer sua história ajuda a manter o que funciona e mudar com calma o resto."
+     ],
+     "q": "O que você aprendeu sobre dinheiro quando criança que ainda influencia você hoje?",
+     "c": "Anote um hábito de dinheiro de que você gosta e um que gostaria de ajustar."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why small amounts matter",
+     "g": "See how tiny daily costs add up over a week, a month and a year.",
+     "p": [
+      "A small daily cost, repeated every day, becomes a surprisingly big number by the end of the year.",
+      "Multiply it: daily cost times seven for a week, times thirty for a month, times 365 for a year.",
+      "This is not about guilt; it is about choosing the small things you truly enjoy."
+     ],
+     "q": "Which small daily purchase gives you the most joy, and which one you barely notice?",
+     "c": "Pick one small daily cost and multiply it by 30 to see its monthly size."
+    },
+    "de": {
+     "t": "Warum kleine Beträge zählen",
+     "g": "Sehen, wie kleine tägliche Kosten sich über Woche, Monat und Jahr summieren.",
+     "p": [
+      "Eine kleine Ausgabe, jeden Tag wiederholt, wird bis Jahresende zu einer überraschend großen Zahl.",
+      "Rechne hoch: Tageskosten mal sieben für die Woche, mal 30 für den Monat, mal 365 fürs Jahr.",
+      "Es geht nicht um Schuldgefühle, sondern darum, die kleinen Dinge zu wählen, die dir wirklich gefallen."
+     ],
+     "q": "Welcher kleine tägliche Kauf macht dir am meisten Freude und welchen bemerkst du kaum?",
+     "c": "Wähle eine kleine tägliche Ausgabe und multipliziere sie mit 30 für den Monatswert."
+    },
+    "es": {
+     "t": "Por qué importan las cantidades pequeñas",
+     "g": "Ver cómo los gastos diarios pequeños se acumulan en una semana, un mes y un año.",
+     "p": [
+      "Un gasto pequeño repetido cada día se convierte al final del año en una cifra sorprendentemente grande.",
+      "Multiplícalo: gasto diario por siete para la semana, por 30 para el mes, por 365 para el año.",
+      "No se trata de culpa, sino de elegir las pequeñas cosas que de verdad disfrutas."
+     ],
+     "q": "¿Qué pequeña compra diaria te da más alegría y cuál casi ni notas?",
+     "c": "Elige un gasto diario pequeño y multiplícalo por 30 para ver su tamaño mensual."
+    },
+    "fr": {
+     "t": "Pourquoi les petits montants comptent",
+     "g": "Voir comment de petites dépenses quotidiennes s'additionnent sur une semaine, un mois, un an.",
+     "p": [
+      "Une petite dépense répétée chaque jour devient, en fin d'année, un chiffre étonnamment grand.",
+      "Multiplie : dépense du jour fois sept pour la semaine, fois 30 pour le mois, fois 365 pour l'année.",
+      "Il ne s'agit pas de culpabiliser, mais de choisir les petites choses qui te plaisent vraiment."
+     ],
+     "q": "Quel petit achat quotidien te fait le plus plaisir, et lequel remarques-tu à peine ?",
+     "c": "Choisis une petite dépense quotidienne et multiplie-la par 30 pour voir son poids mensuel."
+    },
+    "it": {
+     "t": "Perché le piccole cifre contano",
+     "g": "Vedere come i piccoli costi quotidiani si sommano in una settimana, un mese e un anno.",
+     "p": [
+      "Una piccola spesa ripetuta ogni giorno diventa a fine anno una cifra sorprendentemente grande.",
+      "Moltiplica: spesa giornaliera per sette per la settimana, per 30 per il mese, per 365 per l'anno.",
+      "Non si tratta di sensi di colpa, ma di scegliere le piccole cose che ti piacciono davvero."
+     ],
+     "q": "Quale piccolo acquisto quotidiano ti dà più gioia e quale noti appena?",
+     "c": "Scegli una piccola spesa quotidiana e moltiplicala per 30 per vederne il peso mensile."
+    },
+    "pt": {
+     "t": "Porque é que as pequenas quantias contam",
+     "g": "Ver como pequenos gastos diários se somam numa semana, num mês e num ano.",
+     "p": [
+      "Um pequeno gasto repetido todos os dias torna-se, no fim do ano, um número surpreendentemente grande.",
+      "Multiplica: gasto diário vezes sete para a semana, vezes 30 para o mês, vezes 365 para o ano.",
+      "Não se trata de culpa, mas de escolher as pequenas coisas de que realmente gostas."
+     ],
+     "q": "Que pequena compra diária te dá mais alegria e qual mal notas?",
+     "c": "Escolhe um pequeno gasto diário e multiplica-o por 30 para ver o tamanho mensal."
+    },
+    "pt_BR": {
+     "t": "Por que as pequenas quantias importam",
+     "g": "Ver como pequenos gastos diários se somam em uma semana, um mês e um ano.",
+     "p": [
+      "Um pequeno gasto repetido todo dia vira, no fim do ano, um número surpreendentemente grande.",
+      "Multiplique: gasto diário vezes sete para a semana, vezes 30 para o mês, vezes 365 para o ano.",
+      "Não é sobre culpa, e sim sobre escolher as pequenas coisas de que você realmente gosta."
+     ],
+     "q": "Que pequena compra diária mais alegra você e qual você mal percebe?",
+     "c": "Escolha um pequeno gasto diário e multiplique por 30 para ver o tamanho mensal."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Needs versus wants",
+     "g": "Sort everyday spending into things you need and things that are nice to have.",
+     "p": [
+      "Needs keep life running: housing, food, basic transport, essential bills.",
+      "Wants make life enjoyable: treats, extras, upgrades. They matter too, just in a different order.",
+      "Some items sit in between, like a phone plan; the useful question is how much is enough."
+     ],
+     "q": "Think of a recent purchase: was it a need, a want, or something in between?",
+     "c": "Sort five things you bought this week into need, want or in between."
+    },
+    "de": {
+     "t": "Bedürfnisse und Wünsche",
+     "g": "Alltägliche Ausgaben in Notwendiges und Nettes zum Haben einteilen.",
+     "p": [
+      "Bedürfnisse halten das Leben am Laufen: Wohnen, Essen, Grundmobilität, wichtige Rechnungen.",
+      "Wünsche machen das Leben schön: Leckereien, Extras, Upgrades. Sie zählen auch, nur in anderer Reihenfolge.",
+      "Manches liegt dazwischen, etwa ein Handytarif; die nützliche Frage ist, wie viel genug ist."
+     ],
+     "q": "Denk an einen aktuellen Kauf: War er ein Bedürfnis, ein Wunsch oder etwas dazwischen?",
+     "c": "Sortiere fünf Dinge, die du diese Woche gekauft hast, in Bedürfnis, Wunsch oder dazwischen."
+    },
+    "es": {
+     "t": "Necesidades y deseos",
+     "g": "Clasificar los gastos diarios entre lo que necesitas y lo que es agradable tener.",
+     "p": [
+      "Las necesidades sostienen la vida: vivienda, comida, transporte básico, facturas esenciales.",
+      "Los deseos hacen la vida agradable: caprichos, extras, mejoras. También importan, solo que en otro orden.",
+      "Algunas cosas quedan en medio, como el plan del móvil; la pregunta útil es cuánto es suficiente."
+     ],
+     "q": "Piensa en una compra reciente: ¿era una necesidad, un deseo o algo intermedio?",
+     "c": "Clasifica cinco cosas que compraste esta semana en necesidad, deseo o intermedio."
+    },
+    "fr": {
+     "t": "Besoins et envies",
+     "g": "Trier tes dépenses du quotidien entre ce dont tu as besoin et ce qui est agréable.",
+     "p": [
+      "Les besoins font tourner la vie : logement, nourriture, transport de base, factures essentielles.",
+      "Les envies rendent la vie agréable : douceurs, extras, mises à niveau. Elles comptent aussi, dans un autre ordre.",
+      "Certaines choses sont entre les deux, comme un forfait mobile ; la bonne question est : combien suffit ?"
+     ],
+     "q": "Pense à un achat récent : était-ce un besoin, une envie ou entre les deux ?",
+     "c": "Classe cinq choses achetées cette semaine en besoin, envie ou entre les deux."
+    },
+    "it": {
+     "t": "Bisogni e desideri",
+     "g": "Dividere le spese di ogni giorno tra ciò che serve e ciò che è bello avere.",
+     "p": [
+      "I bisogni sorreggono la vita: casa, cibo, trasporti di base, bollette essenziali.",
+      "I desideri rendono la vita piacevole: sfizi, extra, upgrade. Contano anche loro, ma in un altro ordine.",
+      "Alcune cose stanno nel mezzo, come il piano del telefono; la domanda utile è quanto basta."
+     ],
+     "q": "Pensa a un acquisto recente: era un bisogno, un desiderio o una via di mezzo?",
+     "c": "Dividi cinque cose comprate questa settimana in bisogno, desiderio o via di mezzo."
+    },
+    "pt": {
+     "t": "Necessidades e desejos",
+     "g": "Separar os gastos do dia a dia entre o que precisas e o que é bom ter.",
+     "p": [
+      "As necessidades mantêm a vida a andar: casa, comida, transporte básico, contas essenciais.",
+      "Os desejos tornam a vida agradável: miminhos, extras, melhorias. Também contam, mas noutra ordem.",
+      "Algumas coisas ficam no meio, como o plano do telemóvel; a pergunta útil é quanto é suficiente."
+     ],
+     "q": "Pensa numa compra recente: foi uma necessidade, um desejo ou algo entre os dois?",
+     "c": "Classifica cinco coisas que compraste esta semana em necessidade, desejo ou meio-termo."
+    },
+    "pt_BR": {
+     "t": "Necessidades e desejos",
+     "g": "Separar os gastos do dia a dia entre o que você precisa e o que é bom ter.",
+     "p": [
+      "As necessidades sustentam a vida: moradia, comida, transporte básico, contas essenciais.",
+      "Os desejos deixam a vida gostosa: mimos, extras, upgrades. Também importam, só que em outra ordem.",
+      "Algumas coisas ficam no meio, como o plano do celular; a pergunta útil é quanto é suficiente."
+     ],
+     "q": "Pense numa compra recente: foi uma necessidade, um desejo ou algo no meio?",
+     "c": "Classifique cinco coisas que você comprou esta semana em necessidade, desejo ou meio-termo."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting a friendly money goal",
+     "g": "Choose one small, clear goal that makes budgeting feel worth it.",
+     "p": [
+      "A good first goal is specific, small and meaningful to you, like a short trip or a safety cushion.",
+      "Give it a name and a rough time frame; a named goal is easier to protect.",
+      "Start small: a goal you can reach builds confidence for bigger ones."
+     ],
+     "q": "If your money could do one nice thing for you in six months, what would it be?",
+     "c": "Write your goal in one line and give it a friendly name."
+    },
+    "de": {
+     "t": "Ein freundliches Geldziel setzen",
+     "g": "Ein kleines, klares Ziel wählen, das sich fürs Budgetieren lohnt.",
+     "p": [
+      "Ein gutes erstes Ziel ist konkret, klein und für dich bedeutsam, etwa ein Kurztrip oder ein Sicherheitspolster.",
+      "Gib ihm einen Namen und einen groben Zeitrahmen; ein benanntes Ziel lässt sich leichter schützen.",
+      "Fang klein an: Ein erreichbares Ziel gibt Selbstvertrauen für größere."
+     ],
+     "q": "Wenn dein Geld in sechs Monaten etwas Schönes für dich tun könnte, was wäre es?",
+     "c": "Schreibe dein Ziel in einer Zeile auf und gib ihm einen freundlichen Namen."
+    },
+    "es": {
+     "t": "Fijar una meta de dinero amable",
+     "g": "Elegir una meta pequeña y clara que haga que presupuestar valga la pena.",
+     "p": [
+      "Una buena primera meta es concreta, pequeña y significativa para ti, como un viaje corto o un colchón de seguridad.",
+      "Dale un nombre y un plazo aproximado; una meta con nombre es más fácil de proteger.",
+      "Empieza pequeño: una meta alcanzable da confianza para otras mayores."
+     ],
+     "q": "Si tu dinero pudiera hacer algo bonito por ti en seis meses, ¿qué sería?",
+     "c": "Escribe tu meta en una línea y ponle un nombre amable."
+    },
+    "fr": {
+     "t": "Fixer un objectif d'argent bienveillant",
+     "g": "Choisir un objectif petit et clair qui donne du sens au budget.",
+     "p": [
+      "Un bon premier objectif est précis, petit et important pour toi, comme une escapade ou un coussin de sécurité.",
+      "Donne-lui un nom et un délai approximatif ; un objectif nommé se protège mieux.",
+      "Commence petit : un objectif atteignable donne confiance pour de plus grands."
+     ],
+     "q": "Si ton argent pouvait faire une belle chose pour toi dans six mois, ce serait quoi ?",
+     "c": "Écris ton objectif en une ligne et donne-lui un nom sympa."
+    },
+    "it": {
+     "t": "Fissare un obiettivo di denaro gentile",
+     "g": "Scegliere un obiettivo piccolo e chiaro che renda il budget significativo.",
+     "p": [
+      "Un buon primo obiettivo è preciso, piccolo e importante per te, come una gita o un cuscinetto di sicurezza.",
+      "Dagli un nome e un tempo approssimativo; un obiettivo con un nome è più facile da proteggere.",
+      "Parti piccolo: un obiettivo raggiungibile dà fiducia per quelli più grandi."
+     ],
+     "q": "Se i tuoi soldi potessero fare una cosa bella per te tra sei mesi, quale sarebbe?",
+     "c": "Scrivi il tuo obiettivo in una riga e dagli un nome simpatico."
+    },
+    "pt": {
+     "t": "Definir uma meta de dinheiro amiga",
+     "g": "Escolher uma meta pequena e clara que faça o orçamento valer a pena.",
+     "p": [
+      "Uma boa primeira meta é concreta, pequena e importante para ti, como uma escapadinha ou uma almofada de segurança.",
+      "Dá-lhe um nome e um prazo aproximado; uma meta com nome é mais fácil de proteger.",
+      "Começa pequeno: uma meta alcançável dá confiança para metas maiores."
+     ],
+     "q": "Se o teu dinheiro pudesse fazer algo bom por ti daqui a seis meses, o que seria?",
+     "c": "Escreve a tua meta numa linha e dá-lhe um nome simpático."
+    },
+    "pt_BR": {
+     "t": "Definir uma meta de dinheiro amiga",
+     "g": "Escolher uma meta pequena e clara que faça o orçamento valer a pena.",
+     "p": [
+      "Uma boa primeira meta é concreta, pequena e importante para você, como uma viagem curta ou uma reserva de segurança.",
+      "Dê a ela um nome e um prazo aproximado; uma meta com nome é mais fácil de proteger.",
+      "Comece pequeno: uma meta alcançável dá confiança para metas maiores."
+     ],
+     "q": "Se o seu dinheiro pudesse fazer algo bom por você daqui a seis meses, o que seria?",
+     "c": "Escreva sua meta numa linha e dê a ela um nome simpático."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tracking spending for one day",
+     "g": "Write down every purchase for a single day to see where money goes.",
+     "p": [
+      "Tracking just one day is easy and often more eye-opening than you expect.",
+      "Note each purchase right away: what it was, how much, and why you bought it.",
+      "No judging today. You are only collecting facts, like a curious detective."
+     ],
+     "q": "Do you think you can guess your spending for a normal day? What would you say?",
+     "c": "Today, write down every single purchase, even the tiny ones, until bedtime."
+    },
+    "de": {
+     "t": "Ausgaben einen Tag lang erfassen",
+     "g": "Jede Ausgabe eines einzigen Tages notieren, um zu sehen, wohin das Geld fließt.",
+     "p": [
+      "Nur einen Tag zu erfassen ist leicht und oft aufschlussreicher, als man denkt.",
+      "Notiere jeden Kauf sofort: was es war, wie viel und warum du es gekauft hast.",
+      "Heute wird nicht geurteilt. Du sammelst nur Fakten, wie ein neugieriger Detektiv."
+     ],
+     "q": "Glaubst du, du kannst deine Ausgaben an einem normalen Tag erraten? Was würdest du schätzen?",
+     "c": "Schreibe heute jeden einzelnen Kauf auf, auch winzige, bis zum Schlafengehen."
+    },
+    "es": {
+     "t": "Registrar gastos durante un día",
+     "g": "Anotar cada compra de un solo día para ver adónde va el dinero.",
+     "p": [
+      "Registrar solo un día es fácil y suele ser más revelador de lo que esperas.",
+      "Anota cada compra enseguida: qué fue, cuánto y por qué la hiciste.",
+      "Hoy no se juzga. Solo recoges datos, como un detective curioso."
+     ],
+     "q": "¿Crees que podrías adivinar tus gastos de un día normal? ¿Qué dirías?",
+     "c": "Hoy anota cada compra, incluso las diminutas, hasta la hora de dormir."
+    },
+    "fr": {
+     "t": "Suivre ses dépenses pendant un jour",
+     "g": "Noter chaque achat d'une seule journée pour voir où va l'argent.",
+     "p": [
+      "Suivre un seul jour est facile et souvent plus parlant qu'on ne le croit.",
+      "Note chaque achat tout de suite : ce que c'était, combien, et pourquoi tu l'as fait.",
+      "Pas de jugement aujourd'hui. Tu collectes des faits, comme un détective curieux."
+     ],
+     "q": "Penses-tu pouvoir deviner tes dépenses d'une journée normale ? Que dirais-tu ?",
+     "c": "Aujourd'hui, note chaque achat, même minuscule, jusqu'au coucher."
+    },
+    "it": {
+     "t": "Tracciare le spese per un giorno",
+     "g": "Annotare ogni acquisto di un solo giorno per vedere dove vanno i soldi.",
+     "p": [
+      "Tracciare un solo giorno è facile e spesso più rivelatore di quanto pensi.",
+      "Annota ogni acquisto subito: cos'era, quanto e perché l'hai fatto.",
+      "Oggi niente giudizi. Raccogli solo fatti, come un detective curioso."
+     ],
+     "q": "Pensi di indovinare le tue spese di una giornata normale? Cosa diresti?",
+     "c": "Oggi annota ogni acquisto, anche minuscolo, fino a sera."
+    },
+    "pt": {
+     "t": "Registar os gastos durante um dia",
+     "g": "Anotar cada compra de um só dia para ver para onde vai o dinheiro.",
+     "p": [
+      "Registar apenas um dia é fácil e muitas vezes mais revelador do que esperas.",
+      "Anota cada compra logo: o que foi, quanto custou e porque a fizeste.",
+      "Hoje não se julga. Estás só a recolher factos, como um detetive curioso."
+     ],
+     "q": "Achas que consegues adivinhar os gastos de um dia normal? Que valor dirias?",
+     "c": "Hoje anota todas as compras, até as mais pequenas, até ires dormir."
+    },
+    "pt_BR": {
+     "t": "Registrar gastos por um dia",
+     "g": "Anotar cada compra de um único dia para ver para onde vai o dinheiro.",
+     "p": [
+      "Registrar só um dia é fácil e muitas vezes mais revelador do que você espera.",
+      "Anote cada compra na hora: o que foi, quanto custou e por que você comprou.",
+      "Hoje não tem julgamento. Você só está coletando fatos, como um detetive curioso."
+     ],
+     "q": "Você acha que consegue adivinhar seus gastos de um dia normal? Qual seria o palpite?",
+     "c": "Hoje anote toda compra, até as pequenininhas, até a hora de dormir."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing your tracking tool",
+     "g": "Pick a simple tool for tracking money that you will actually use.",
+     "p": [
+      "A notebook, a spreadsheet and an app all work; the best tool is the one you open daily.",
+      "Think about where you are when you spend: a phone is always close, paper needs a pocket.",
+      "Start simple and change tools later if it feels clumsy. Switching is allowed."
+     ],
+     "q": "Which do you enjoy more: pen and paper, a spreadsheet or an app on your phone?",
+     "c": "Choose your tool today and record your first three entries in it."
+    },
+    "de": {
+     "t": "Dein Erfassungswerkzeug wählen",
+     "g": "Ein einfaches Werkzeug zur Geldverfolgung wählen, das du wirklich nutzt.",
+     "p": [
+      "Notizbuch, Tabelle und App funktionieren alle; das beste Werkzeug öffnest du täglich.",
+      "Denk daran, wo du bist, wenn du ausgibst: Das Handy ist immer nah, Papier braucht eine Tasche.",
+      "Fang einfach an und wechsle später, falls es sich sperrig anfühlt. Wechseln ist erlaubt."
+     ],
+     "q": "Was gefällt dir mehr: Stift und Papier, eine Tabelle oder eine App auf dem Handy?",
+     "c": "Wähle heute dein Werkzeug und trage die ersten drei Einträge ein."
+    },
+    "es": {
+     "t": "Elegir tu herramienta de registro",
+     "g": "Elegir una herramienta sencilla para seguir tu dinero que de verdad uses.",
+     "p": [
+      "Una libreta, una hoja de cálculo y una app sirven; la mejor es la que abres a diario.",
+      "Piensa dónde estás cuando gastas: el móvil siempre está a mano, el papel necesita bolsillo.",
+      "Empieza simple y cambia más adelante si te resulta torpe. Cambiar está permitido."
+     ],
+     "q": "¿Qué disfrutas más: papel y lápiz, una hoja de cálculo o una app en el móvil?",
+     "c": "Elige hoy tu herramienta y apunta en ella tus tres primeras entradas."
+    },
+    "fr": {
+     "t": "Choisir ton outil de suivi",
+     "g": "Choisir un outil simple de suivi de l'argent que tu utiliseras vraiment.",
+     "p": [
+      "Un carnet, un tableur et une appli fonctionnent ; le meilleur outil est celui que tu ouvres chaque jour.",
+      "Pense à l'endroit où tu dépenses : le téléphone est toujours là, le papier demande une poche.",
+      "Commence simple et change plus tard si c'est pesant. Changer d'outil est permis."
+     ],
+     "q": "Qu'aimes-tu le plus : papier et stylo, un tableur ou une appli sur ton téléphone ?",
+     "c": "Choisis ton outil aujourd'hui et saisis-y tes trois premières lignes."
+    },
+    "it": {
+     "t": "Scegliere lo strumento di tracciamento",
+     "g": "Scegliere un semplice strumento per seguire i soldi che userai davvero.",
+     "p": [
+      "Quaderno, foglio di calcolo e app funzionano tutti; il migliore è quello che apri ogni giorno.",
+      "Pensa a dove sei quando spendi: il telefono è sempre a portata, la carta vuole una tasca.",
+      "Parti semplice e cambia dopo se ti sembra scomodo. Cambiare è permesso."
+     ],
+     "q": "Cosa preferisci: carta e penna, un foglio di calcolo o un'app sul telefono?",
+     "c": "Scegli oggi il tuo strumento e inserisci le prime tre voci."
+    },
+    "pt": {
+     "t": "Escolher a tua ferramenta de registo",
+     "g": "Escolher uma ferramenta simples para seguir o dinheiro que realmente uses.",
+     "p": [
+      "Um caderno, uma folha de cálculo e uma app servem; a melhor é a que abres todos os dias.",
+      "Pensa onde estás quando gastas: o telemóvel está sempre à mão, o papel precisa de bolso.",
+      "Começa simples e muda mais tarde se for incómodo. Mudar é permitido."
+     ],
+     "q": "De que gostas mais: papel e caneta, uma folha de cálculo ou uma app no telemóvel?",
+     "c": "Escolhe hoje a tua ferramenta e regista nela as três primeiras entradas."
+    },
+    "pt_BR": {
+     "t": "Escolher sua ferramenta de registro",
+     "g": "Escolher uma ferramenta simples para acompanhar o dinheiro que você realmente use.",
+     "p": [
+      "Um caderno, uma planilha e um app servem; a melhor é a que você abre todo dia.",
+      "Pense onde você está quando gasta: o celular está sempre à mão, o papel precisa de bolso.",
+      "Comece simples e troque depois se ficar chato. Trocar é permitido."
+     ],
+     "q": "Do que você gosta mais: papel e caneta, uma planilha ou um app no celular?",
+     "c": "Escolha hoje sua ferramenta e registre nela as três primeiras entradas."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Receipts and bank statements",
+     "g": "Use receipts and statements to fill in gaps in your spending notes.",
+     "p": [
+      "Receipts and statements are free memory helpers for purchases you forgot to note.",
+      "Once a week, compare your notes with your statement and add what is missing.",
+      "Keep paper receipts in one spot, or snap a photo and delete it after you log it."
+     ],
+     "q": "Do you usually keep receipts, throw them away, or never take them?",
+     "c": "Find one statement or receipt and add one forgotten purchase to your notes."
+    },
+    "de": {
+     "t": "Belege und Kontoauszüge",
+     "g": "Belege und Auszüge nutzen, um Lücken in deinen Ausgabennotizen zu füllen.",
+     "p": [
+      "Belege und Auszüge sind kostenlose Gedächtnisstützen für vergessene Käufe.",
+      "Vergleiche einmal pro Woche deine Notizen mit dem Auszug und ergänze, was fehlt.",
+      "Bewahre Papierbelege an einem Ort auf oder fotografiere sie und lösche das Foto nach dem Eintragen."
+     ],
+     "q": "Hebst du Belege meistens auf, wirfst du sie weg oder nimmst du gar keine mit?",
+     "c": "Such einen Auszug oder Beleg und trage einen vergessenen Kauf in deine Notizen nach."
+    },
+    "es": {
+     "t": "Recibos y extractos bancarios",
+     "g": "Usar recibos y extractos para completar los huecos de tus notas de gastos.",
+     "p": [
+      "Los recibos y extractos son ayudas gratuitas para recordar compras que olvidaste anotar.",
+      "Una vez por semana, compara tus notas con el extracto y añade lo que falte.",
+      "Guarda los tickets en un solo sitio, o haz una foto y bórrala cuando lo hayas registrado."
+     ],
+     "q": "¿Sueles guardar los tickets, tirarlos o ni siquiera llevártelos?",
+     "c": "Busca un extracto o un ticket y añade a tus notas una compra olvidada."
+    },
+    "fr": {
+     "t": "Tickets de caisse et relevés",
+     "g": "Utiliser tickets et relevés pour combler les trous de tes notes de dépenses.",
+     "p": [
+      "Tickets et relevés sont des aide-mémoire gratuits pour les achats oubliés.",
+      "Une fois par semaine, compare tes notes au relevé et ajoute ce qui manque.",
+      "Garde les tickets au même endroit, ou photographie-les et supprime la photo après saisie."
+     ],
+     "q": "Gardes-tu d'habitude tes tickets, les jettes-tu, ou ne les prends-tu jamais ?",
+     "c": "Trouve un relevé ou un ticket et ajoute un achat oublié à tes notes."
+    },
+    "it": {
+     "t": "Scontrini ed estratti conto",
+     "g": "Usare scontrini ed estratti per colmare i vuoti nelle note delle spese.",
+     "p": [
+      "Scontrini ed estratti sono promemoria gratuiti per gli acquisti dimenticati.",
+      "Una volta a settimana confronta le note con l'estratto e aggiungi ciò che manca.",
+      "Tieni gli scontrini in un posto solo, o fotografali e cancella la foto dopo averli registrati."
+     ],
+     "q": "Di solito conservi gli scontrini, li butti o non li prendi proprio?",
+     "c": "Trova un estratto o uno scontrino e aggiungi alle note un acquisto dimenticato."
+    },
+    "pt": {
+     "t": "Recibos e extratos bancários",
+     "g": "Usar recibos e extratos para preencher lacunas nas tuas notas de gastos.",
+     "p": [
+      "Recibos e extratos são ajudas gratuitas de memória para compras que esqueceste de anotar.",
+      "Uma vez por semana, compara as notas com o extrato e acrescenta o que falta.",
+      "Guarda os talões num só sítio, ou fotografa-os e apaga a foto depois de registares."
+     ],
+     "q": "Costumas guardar os recibos, deitá-los fora ou nem os levas?",
+     "c": "Encontra um extrato ou recibo e acrescenta às notas uma compra esquecida."
+    },
+    "pt_BR": {
+     "t": "Recibos e extratos bancários",
+     "g": "Usar recibos e extratos para preencher lacunas nas suas anotações de gastos.",
+     "p": [
+      "Recibos e extratos são ajudas gratuitas de memória para compras que você esqueceu de anotar.",
+      "Uma vez por semana, compare as anotações com o extrato e acrescente o que falta.",
+      "Guarde os comprovantes num lugar só, ou tire foto e apague depois de registrar."
+     ],
+     "q": "Você costuma guardar os recibos, jogar fora ou nem pegar?",
+     "c": "Encontre um extrato ou recibo e acrescente às anotações uma compra esquecida."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spotting your spending triggers",
+     "g": "Notice the moods, places and times that make you spend more than planned.",
+     "p": [
+      "A trigger is a situation that pushes you to buy: boredom, stress, a sale sign, a late evening.",
+      "Look at your notes for patterns: which day, place or mood comes with extra spending?",
+      "Naming a trigger gives you a pause button, and a pause is often all you need."
+     ],
+     "q": "When do you most often buy something you did not plan to?",
+     "c": "Next to three notes, add the mood you felt: happy, tired, bored or busy."
+    },
+    "de": {
+     "t": "Deine Ausgabe-Auslöser erkennen",
+     "g": "Stimmungen, Orte und Zeiten bemerken, die dich mehr ausgeben lassen als geplant.",
+     "p": [
+      "Ein Auslöser ist eine Situation, die zum Kaufen drängt: Langeweile, Stress, ein Sale-Schild, ein später Abend.",
+      "Suche in deinen Notizen nach Mustern: Welcher Tag, Ort oder welche Stimmung bringt Mehrausgaben?",
+      "Einen Auslöser zu benennen gibt dir eine Pausentaste, und oft reicht schon die Pause."
+     ],
+     "q": "Wann kaufst du am häufigsten etwas, das du nicht geplant hattest?",
+     "c": "Schreibe zu drei Notizen deine Stimmung dazu: froh, müde, gelangweilt oder beschäftigt."
+    },
+    "es": {
+     "t": "Detectar tus detonantes de gasto",
+     "g": "Notar los estados de ánimo, lugares y momentos que te hacen gastar más de lo previsto.",
+     "p": [
+      "Un detonante es una situación que te empuja a comprar: aburrimiento, estrés, un cartel de rebajas, una noche tardía.",
+      "Mira tus notas en busca de patrones: ¿qué día, lugar o ánimo acompaña el gasto extra?",
+      "Ponerle nombre al detonante te da un botón de pausa, y a menudo la pausa basta."
+     ],
+     "q": "¿Cuándo sueles comprar algo que no tenías planeado?",
+     "c": "Junto a tres notas, añade cómo te sentías: contento, cansado, aburrido u ocupado."
+    },
+    "fr": {
+     "t": "Repérer tes déclencheurs de dépense",
+     "g": "Remarquer les humeurs, lieux et moments qui te font dépenser plus que prévu.",
+     "p": [
+      "Un déclencheur est une situation qui pousse à acheter : ennui, stress, affiche de soldes, soirée tardive.",
+      "Cherche des schémas dans tes notes : quel jour, lieu ou humeur accompagne les dépenses en plus ?",
+      "Nommer un déclencheur te donne un bouton pause, et souvent la pause suffit."
+     ],
+     "q": "Quand achètes-tu le plus souvent quelque chose que tu n'avais pas prévu ?",
+     "c": "À côté de trois notes, ajoute ton humeur : joyeux, fatigué, ennuyé ou occupé."
+    },
+    "it": {
+     "t": "Riconoscere i tuoi inneschi di spesa",
+     "g": "Notare umori, luoghi e momenti che ti fanno spendere più del previsto.",
+     "p": [
+      "Un innesco è una situazione che spinge a comprare: noia, stress, un cartello di saldi, una sera tarda.",
+      "Cerca schemi nelle note: quale giorno, luogo o umore accompagna la spesa in più?",
+      "Dare un nome all'innesco ti dà un tasto pausa, e spesso la pausa basta."
+     ],
+     "q": "Quando ti capita più spesso di comprare qualcosa che non avevi pianificato?",
+     "c": "Accanto a tre note aggiungi l'umore: felice, stanco, annoiato o impegnato."
+    },
+    "pt": {
+     "t": "Detetar os teus gatilhos de gasto",
+     "g": "Notar os estados de espírito, lugares e horas que te fazem gastar mais do que o previsto.",
+     "p": [
+      "Um gatilho é uma situação que te empurra a comprar: tédio, stress, um cartaz de saldos, uma noite tardia.",
+      "Procura padrões nas notas: que dia, lugar ou humor acompanha o gasto extra?",
+      "Dar nome ao gatilho dá-te um botão de pausa, e muitas vezes a pausa basta."
+     ],
+     "q": "Quando é que costumas comprar algo que não tinhas planeado?",
+     "c": "Junto a três notas, acrescenta como te sentias: contente, cansado, aborrecido ou ocupado."
+    },
+    "pt_BR": {
+     "t": "Perceber seus gatilhos de gasto",
+     "g": "Notar os humores, lugares e horários que fazem você gastar mais do que o planejado.",
+     "p": [
+      "Um gatilho é uma situação que empurra você a comprar: tédio, estresse, placa de promoção, noite tarde.",
+      "Procure padrões nas anotações: que dia, lugar ou humor vem com gasto extra?",
+      "Dar nome ao gatilho cria um botão de pausa, e muitas vezes a pausa basta."
+     ],
+     "q": "Quando você mais costuma comprar algo que não tinha planejado?",
+     "c": "Ao lado de três anotações, escreva como você se sentia: feliz, cansado, entediado ou ocupado."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first week of tracking",
+     "g": "Look back at seven days of notes and find one surprise.",
+     "p": [
+      "Seven days of notes is enough to see real patterns, even if some days are missing.",
+      "Add up the week and group items into simple piles like food, transport and fun.",
+      "Find one surprise, big or small. That surprise is your first real insight."
+     ],
+     "q": "What surprised you most when you looked at your week of spending?",
+     "c": "Add up your week and circle one number that you want to understand better."
+    },
+    "de": {
+     "t": "Deine erste Erfassungswoche",
+     "g": "Sieben Tage Notizen durchsehen und eine Überraschung finden.",
+     "p": [
+      "Sieben Tage Notizen reichen, um echte Muster zu sehen, auch wenn einzelne Tage fehlen.",
+      "Addiere die Woche und gruppiere in einfache Stapel wie Essen, Verkehr und Freizeit.",
+      "Finde eine Überraschung, groß oder klein. Sie ist deine erste echte Erkenntnis."
+     ],
+     "q": "Was hat dich am meisten überrascht, als du deine Ausgabenwoche angesehen hast?",
+     "c": "Addiere deine Woche und kreise eine Zahl ein, die du besser verstehen willst."
+    },
+    "es": {
+     "t": "Tu primera semana de registro",
+     "g": "Repasar siete días de notas y encontrar una sorpresa.",
+     "p": [
+      "Siete días de notas bastan para ver patrones reales, aunque falten algunos días.",
+      "Suma la semana y agrupa los gastos en montones sencillos como comida, transporte y ocio.",
+      "Encuentra una sorpresa, grande o pequeña. Esa sorpresa es tu primer hallazgo real."
+     ],
+     "q": "¿Qué te sorprendió más al mirar tu semana de gastos?",
+     "c": "Suma tu semana y rodea un número que quieras entender mejor."
+    },
+    "fr": {
+     "t": "Ta première semaine de suivi",
+     "g": "Relire sept jours de notes et trouver une surprise.",
+     "p": [
+      "Sept jours de notes suffisent pour voir de vrais schémas, même s'il manque quelques jours.",
+      "Additionne la semaine et groupe les dépenses en tas simples : repas, transport, loisirs.",
+      "Trouve une surprise, grande ou petite. C'est ta première vraie découverte."
+     ],
+     "q": "Qu'est-ce qui t'a le plus surpris en regardant ta semaine de dépenses ?",
+     "c": "Additionne ta semaine et entoure un chiffre que tu veux mieux comprendre."
+    },
+    "it": {
+     "t": "La tua prima settimana di tracciamento",
+     "g": "Rileggere sette giorni di note e trovare una sorpresa.",
+     "p": [
+      "Sette giorni di note bastano per vedere schemi reali, anche se qualche giorno manca.",
+      "Somma la settimana e raggruppa le voci in mucchi semplici: cibo, trasporti, svago.",
+      "Trova una sorpresa, grande o piccola. È la tua prima vera scoperta."
+     ],
+     "q": "Cosa ti ha sorpreso di più guardando la tua settimana di spese?",
+     "c": "Somma la tua settimana e cerchia un numero che vuoi capire meglio."
+    },
+    "pt": {
+     "t": "A tua primeira semana de registo",
+     "g": "Rever sete dias de notas e encontrar uma surpresa.",
+     "p": [
+      "Sete dias de notas chegam para ver padrões reais, mesmo que faltem alguns dias.",
+      "Soma a semana e agrupa os gastos em montes simples: comida, transportes e lazer.",
+      "Encontra uma surpresa, grande ou pequena. É a tua primeira descoberta real."
+     ],
+     "q": "O que mais te surpreendeu ao olhares para a tua semana de gastos?",
+     "c": "Soma a tua semana e rodeia um número que queiras perceber melhor."
+    },
+    "pt_BR": {
+     "t": "Sua primeira semana de registro",
+     "g": "Rever sete dias de anotações e encontrar uma surpresa.",
+     "p": [
+      "Sete dias de anotações bastam para ver padrões reais, mesmo que faltem alguns dias.",
+      "Some a semana e agrupe os gastos em montinhos simples: comida, transporte e lazer.",
+      "Encontre uma surpresa, grande ou pequena. Ela é sua primeira descoberta real."
+     ],
+     "q": "O que mais surpreendeu você ao olhar para sua semana de gastos?",
+     "c": "Some sua semana e circule um número que você quer entender melhor."
+    }
+   }
+  }
+ ]
+}

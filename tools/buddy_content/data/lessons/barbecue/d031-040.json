@@ -1,0 +1,835 @@
+{
+ "topic": "barbecue",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Understanding beef steak cuts",
+     "g": "Get to know popular steak cuts and how to cook each one at its best.",
+     "p": [
+      "Ribeye is well marbled and rich; sirloin and strip are leaner but still tender and great for quick grilling.",
+      "Flank and skirt are thin, flavourful and a bit chewier: grill them very hot and fast, then slice thinly.",
+      "In Brazil, picanha (top sirloin cap) is a churrasco favourite, grilled with its fat cap for extra flavour."
+     ],
+     "q": "Which steak cut have you tried, and which one would you like to taste next?",
+     "c": "Look at the steaks at a butcher or supermarket and identify two cuts, noting their marbling and thickness."
+    },
+    "de": {
+     "t": "Rindersteak-Zuschnitte verstehen",
+     "g": "Lerne beliebte Steak-Zuschnitte kennen und wie du jeden am besten zubereitest.",
+     "p": [
+      "Ribeye ist stark marmoriert und saftig; Hüfte und Strip sind magerer, aber zart und ideal zum schnellen Grillen.",
+      "Flank und Skirt sind dünn, aromatisch und etwas fester: sehr heiß und kurz grillen, dann dünn aufschneiden.",
+      "In Brasilien ist Picanha (Tafelspitz mit Fettdeckel) ein Churrasco-Liebling, mit Fettkappe gegrillt für mehr Aroma."
+     ],
+     "q": "Welchen Steak-Zuschnitt hast du schon probiert, und welchen möchtest du als Nächstes kosten?",
+     "c": "Schau dir Steaks beim Metzger oder im Supermarkt an, bestimme zwei Zuschnitte und notiere Marmorierung und Dicke."
+    },
+    "es": {
+     "t": "Conocer los cortes de ternera",
+     "g": "Conoce los cortes de filete más populares y cómo cocinar cada uno en su punto.",
+     "p": [
+      "El ribeye o lomo alto es muy marmolado y sabroso; el solomillo bajo y el lomo bajo son más magros pero tiernos.",
+      "La falda y la entraña son finas, sabrosas y algo más firmes: ásalas muy fuerte y rápido, y córtalas finas.",
+      "En Brasil, la picaña es la estrella del churrasco y se asa con su capa de grasa para dar más sabor."
+     ],
+     "q": "¿Qué corte de ternera has probado y cuál te gustaría probar después?",
+     "c": "Observa los filetes en una carnicería o supermercado, identifica dos cortes y anota su marmoleo y su grosor."
+    },
+    "fr": {
+     "t": "Comprendre les pièces de bœuf",
+     "g": "Découvre les pièces à griller les plus connues et la meilleure façon de cuire chacune.",
+     "p": [
+      "L'entrecôte est bien persillée et savoureuse ; le faux-filet et le rumsteck sont plus maigres mais tendres.",
+      "La bavette et l'onglet sont fins, goûteux et un peu plus fermes : grille-les très chaud et vite, puis tranche finement.",
+      "Au Brésil, la picanha (aiguillette de rumsteck) est la reine du churrasco, grillée avec son gras pour plus de goût."
+     ],
+     "q": "Quelle pièce de bœuf as-tu déjà goûtée, et laquelle aimerais-tu essayer ensuite ?",
+     "c": "Observe les steaks chez le boucher ou au supermarché, identifie deux pièces et note leur persillage et leur épaisseur."
+    },
+    "it": {
+     "t": "Conoscere i tagli di manzo",
+     "g": "Scopri i tagli da bistecca più popolari e come cuocere ciascuno al meglio.",
+     "p": [
+      "La costata o ribeye è ben marezzata e saporita; controfiletto e scamone sono più magri ma comunque teneri.",
+      "Il bavette e il diaframma sono sottili, saporiti e un po' più consistenti: grigliali caldissimi e in fretta, poi affettali sottili.",
+      "In Brasile la picanha (copertura dello scamone) è la regina del churrasco, grigliata con il suo grasso per più sapore."
+     ],
+     "q": "Quale taglio di manzo hai assaggiato, e quale vorresti provare la prossima volta?",
+     "c": "Guarda le bistecche in macelleria o al supermercato, riconosci due tagli e annota marezzatura e spessore."
+    },
+    "pt": {
+     "t": "Conhecer os cortes de bife",
+     "g": "Fica a conhecer os cortes de bife mais populares e como cozinhar cada um da melhor forma.",
+     "p": [
+      "O ribeye ou acém redondo é muito marmoreado e saboroso; o lombo e a vazia são mais magros mas tenros.",
+      "A fraldinha e a diafragma são finas, saborosas e um pouco mais firmes: grelha-as bem quentes e depressa, e corta-as finas.",
+      "No Brasil, a picanha é a estrela do churrasco e grelha-se com a capa de gordura para dar mais sabor."
+     ],
+     "q": "Que corte de vaca já provaste e qual gostavas de provar a seguir?",
+     "c": "Observa os bifes num talho ou supermercado, identifica dois cortes e anota o marmoreado e a espessura."
+    },
+    "pt_BR": {
+     "t": "Conhecendo os cortes bovinos",
+     "g": "Conheça os cortes bovinos mais populares e como preparar cada um no ponto certo.",
+     "p": [
+      "O ancho (ribeye) é bem marmorizado e suculento; o contrafilé e a alcatra são mais magros, mas macios.",
+      "Fraldinha e diafragma são finos, saborosos e um pouco mais firmes: grelhe bem quente e rápido, e fatie fino.",
+      "A picanha é a estrela do churrasco brasileiro e vai para a grelha com a capa de gordura para dar mais sabor."
+     ],
+     "q": "Qual corte bovino você já provou e qual gostaria de provar em seguida?",
+     "c": "Observe as carnes no açougue ou mercado, identifique dois cortes e anote o marmoreio e a espessura."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grilling a classic steak",
+     "g": "Grill a steak with a deep, even crust and a juicy centre.",
+     "p": [
+      "Take the steak out of the fridge 20 to 30 minutes before, pat it very dry and season generously with salt.",
+      "Sear over high direct heat; flipping every minute or so gives an even crust and helps it cook more evenly.",
+      "For thick steaks, sear first and then finish on the cool side, checking with a thermometer, and rest before slicing."
+     ],
+     "q": "How do you like your steak cooked, and has that changed over time?",
+     "c": "Grill a steak using a dry surface and high heat, or write your step-by-step plan for the perfect steak."
+    },
+    "de": {
+     "t": "Ein klassisches Steak grillen",
+     "g": "Grill ein Steak mit tiefer, gleichmäßiger Kruste und saftigem Kern.",
+     "p": [
+      "Nimm das Steak 20 bis 30 Minuten vorher aus dem Kühlschrank, tupf es sehr trocken und salze es kräftig.",
+      "Über starker direkter Hitze anbraten; etwa jede Minute wenden ergibt eine gleichmäßige Kruste und gleichmäßigeres Garen.",
+      "Dicke Steaks erst anbraten, dann auf der kühlen Seite fertiggaren, mit Thermometer prüfen und vor dem Schneiden ruhen lassen."
+     ],
+     "q": "Wie magst du dein Steak, und hat sich das mit der Zeit verändert?",
+     "c": "Grill ein Steak mit trockener Oberfläche und starker Hitze oder schreib deinen Schritt-für-Schritt-Plan fürs perfekte Steak."
+    },
+    "es": {
+     "t": "Asar un filete clásico",
+     "g": "Asa un filete con una costra profunda y pareja y el centro jugoso.",
+     "p": [
+      "Saca el filete de la nevera de 20 a 30 minutos antes, sécalo muy bien y sálalo con generosidad.",
+      "Séllalo a fuego directo fuerte; darle la vuelta cada minuto más o menos da una costra pareja y una cocción más uniforme.",
+      "Para filetes gruesos, sella primero y termina en el lado frío, comprobando con termómetro, y deja reposar antes de cortar."
+     ],
+     "q": "¿Cómo te gusta el punto del filete y ha cambiado con el tiempo?",
+     "c": "Asa un filete con la superficie seca y fuego fuerte, o escribe tu plan paso a paso para el filete perfecto."
+    },
+    "fr": {
+     "t": "Griller un steak classique",
+     "g": "Grille un steak avec une croûte profonde et régulière et un cœur juteux.",
+     "p": [
+      "Sors le steak du frigo 20 à 30 minutes avant, sèche-le bien et sale-le généreusement.",
+      "Saisis à feu direct vif ; le retourner environ chaque minute donne une croûte régulière et une cuisson plus homogène.",
+      "Pour un steak épais, saisis puis termine côté froid en vérifiant au thermomètre, et laisse reposer avant de trancher."
+     ],
+     "q": "Quelle cuisson préfères-tu pour un steak, et cela a-t-il changé avec le temps ?",
+     "c": "Grille un steak bien sec à feu vif, ou écris ton plan étape par étape pour le steak parfait."
+    },
+    "it": {
+     "t": "Grigliare una bistecca classica",
+     "g": "Griglia una bistecca con una crosta profonda e uniforme e il cuore succoso.",
+     "p": [
+      "Togli la bistecca dal frigo 20-30 minuti prima, asciugala molto bene e salala con generosità.",
+      "Scottala a calore diretto alto; girarla circa ogni minuto dà una crosta uniforme e una cottura più omogenea.",
+      "Per bistecche spesse, scotta prima e poi finisci sul lato freddo controllando col termometro, e fai riposare prima di tagliare."
+     ],
+     "q": "Come ti piace la cottura della bistecca, ed è cambiata nel tempo?",
+     "c": "Griglia una bistecca ben asciutta a fuoco alto, oppure scrivi il tuo piano passo passo per la bistecca perfetta."
+    },
+    "pt": {
+     "t": "Grelhar um bife clássico",
+     "g": "Grelha um bife com uma crosta profunda e uniforme e o centro suculento.",
+     "p": [
+      "Tira o bife do frigorífico 20 a 30 minutos antes, seca-o muito bem e tempera-o com sal sem medo.",
+      "Sela em calor direto forte; virar mais ou menos a cada minuto dá uma crosta uniforme e uma cozedura mais regular.",
+      "Nos bifes grossos, sela primeiro e acaba no lado frio, confirmando com o termómetro, e deixa repousar antes de cortar."
+     ],
+     "q": "Como gostas do bife, e isso mudou com o tempo?",
+     "c": "Grelha um bife bem seco em calor forte, ou escreve o teu plano passo a passo para o bife perfeito."
+    },
+    "pt_BR": {
+     "t": "Grelhando um bife clássico",
+     "g": "Grelhe um bife com crosta profunda e uniforme e o centro suculento.",
+     "p": [
+      "Tire a carne da geladeira 20 a 30 minutos antes, seque muito bem e salgue com generosidade.",
+      "Sele no calor direto forte; virar mais ou menos a cada minuto dá uma crosta uniforme e um cozimento mais regular.",
+      "Em cortes grossos, sele primeiro e termine no lado frio, conferindo com termômetro, e deixe descansar antes de fatiar."
+     ],
+     "q": "Qual é o seu ponto preferido de carne, e isso mudou com o tempo?",
+     "c": "Grelhe um bife bem seco em fogo forte, ou escreva seu plano passo a passo para o bife perfeito."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Judging steak doneness",
+     "g": "Recognise steak doneness by internal temperature, with the touch test as a backup.",
+     "p": [
+      "As a general guide: rare about 52 °C (125 °F), medium-rare about 57 °C (135 °F), medium about 63 °C (145 °F).",
+      "Well done is about 71 °C (160 °F) and above; food safety agencies recommend at least 63 °C for whole cuts.",
+      "The touch test compares the steak's firmness with your palm: soft is rare, springy is medium, firm is well done."
+     ],
+     "q": "Has anyone you cook for asked for a doneness you find hard to hit?",
+     "c": "Practise the touch test on your own palm, then check your next steak with a thermometer to compare."
+    },
+    "de": {
+     "t": "Den Garpunkt von Steaks erkennen",
+     "g": "Erkenne den Garpunkt an der Kerntemperatur und nutze den Drucktest als Ergänzung.",
+     "p": [
+      "Als grobe Richtwerte: rare etwa 52 °C, medium rare etwa 57 °C, medium etwa 63 °C.",
+      "Well done ist ab etwa 71 °C; Lebensmittelbehörden empfehlen für ganze Stücke mindestens 63 °C.",
+      "Beim Drucktest vergleichst du die Festigkeit mit deinem Handballen: weich ist rare, federnd medium, fest well done."
+     ],
+     "q": "Hat jemand, für den du kochst, schon einen Garpunkt gewünscht, der dir schwerfällt?",
+     "c": "Übe den Drucktest an deinem Handballen und prüf dann dein nächstes Steak zum Vergleich mit dem Thermometer."
+    },
+    "es": {
+     "t": "Saber el punto del filete",
+     "g": "Reconoce el punto del filete por la temperatura interna, con la prueba del tacto como apoyo.",
+     "p": [
+      "Como guía general: poco hecho unos 52 °C, al punto menos unos 57 °C, al punto unos 63 °C.",
+      "Muy hecho es desde unos 71 °C; las agencias de seguridad alimentaria recomiendan al menos 63 °C en piezas enteras.",
+      "La prueba del tacto compara la firmeza con la palma de tu mano: blando es poco hecho, elástico al punto y firme muy hecho."
+     ],
+     "q": "¿Alguien para quien cocinas te ha pedido un punto que te cuesta conseguir?",
+     "c": "Practica la prueba del tacto en tu palma y luego comprueba tu próximo filete con termómetro para comparar."
+    },
+    "fr": {
+     "t": "Juger la cuisson d'un steak",
+     "g": "Reconnais la cuisson d'un steak à sa température à cœur, avec le test du toucher en appoint.",
+     "p": [
+      "Repères généraux : saignant vers 52 °C, à point rosé vers 57 °C, à point vers 63 °C.",
+      "Bien cuit, c'est à partir de 71 °C environ ; les autorités sanitaires conseillent au moins 63 °C pour les pièces entières.",
+      "Le test du toucher compare la fermeté à ta paume : souple, c'est saignant ; élastique, à point ; ferme, bien cuit."
+     ],
+     "q": "Quelqu'un pour qui tu cuisines t'a-t-il déjà demandé une cuisson difficile à réussir ?",
+     "c": "Entraîne-toi au test du toucher sur ta paume, puis vérifie ton prochain steak au thermomètre pour comparer."
+    },
+    "it": {
+     "t": "Capire la cottura della bistecca",
+     "g": "Riconosci la cottura della bistecca dalla temperatura interna, con il test del tatto come aiuto.",
+     "p": [
+      "Come guida generale: al sangue circa 52 °C, media-al sangue circa 57 °C, media circa 63 °C.",
+      "Ben cotta è da circa 71 °C in su; le autorità per la sicurezza alimentare consigliano almeno 63 °C per i tagli interi.",
+      "Il test del tatto confronta la consistenza con il palmo: morbida è al sangue, elastica è media, soda è ben cotta."
+     ],
+     "q": "Qualcuno per cui cucini ti ha mai chiesto una cottura difficile da centrare?",
+     "c": "Esercitati con il test del tatto sul palmo, poi controlla la prossima bistecca col termometro per confrontare."
+    },
+    "pt": {
+     "t": "Avaliar o ponto do bife",
+     "g": "Reconhece o ponto do bife pela temperatura interna, com o teste do toque como apoio.",
+     "p": [
+      "Como guia geral: mal passado cerca de 52 °C, médio-mal cerca de 57 °C, médio cerca de 63 °C.",
+      "Bem passado é a partir de cerca de 71 °C; as autoridades de segurança alimentar recomendam pelo menos 63 °C em peças inteiras.",
+      "O teste do toque compara a firmeza com a palma da mão: mole é mal passado, elástico é médio e firme é bem passado."
+     ],
+     "q": "Alguém para quem cozinhas já te pediu um ponto difícil de acertar?",
+     "c": "Pratica o teste do toque na tua mão e depois confirma o próximo bife com o termómetro para comparar."
+    },
+    "pt_BR": {
+     "t": "Acertando o ponto da carne",
+     "g": "Reconheça o ponto da carne pela temperatura interna, com o teste do toque como apoio.",
+     "p": [
+      "Como guia geral: mal passado cerca de 52 °C, ao ponto para mal cerca de 57 °C, ao ponto cerca de 63 °C.",
+      "Bem passado é a partir de uns 71 °C; órgãos de segurança alimentar recomendam pelo menos 63 °C em cortes inteiros.",
+      "O teste do toque compara a firmeza com a palma da mão: mole é mal passado, elástico é ao ponto e firme é bem passado."
+     ],
+     "q": "Alguém para quem você cozinha já pediu um ponto difícil de acertar?",
+     "c": "Pratique o teste do toque na sua mão e depois confira a próxima carne com termômetro para comparar."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Slicing against the grain",
+     "g": "Find the muscle fibres in grilled meat and slice across them for tender bites.",
+     "p": [
+      "The grain is the direction of the long muscle fibres you can see as lines running along the meat.",
+      "Cutting across these lines makes the fibres short, so each bite feels much more tender.",
+      "This matters most for flank, skirt and brisket; use a sharp knife and slice thinly on a slight angle."
+     ],
+     "q": "Have you ever noticed meat feeling tougher depending on how it was sliced?",
+     "c": "Look closely at a piece of meat, find the direction of the grain and practise slicing across it."
+    },
+    "de": {
+     "t": "Gegen die Faser schneiden",
+     "g": "Finde die Muskelfasern im Grillfleisch und schneide quer dazu für zarte Bissen.",
+     "p": [
+      "Die Faser ist die Richtung der langen Muskelstränge, die du als Linien entlang des Fleisches siehst.",
+      "Quer zu diesen Linien geschnitten werden die Fasern kurz, und jeder Bissen fühlt sich viel zarter an.",
+      "Besonders wichtig bei Flank, Skirt und Brisket; nimm ein scharfes Messer und schneide dünn und leicht schräg."
+     ],
+     "q": "Ist dir schon aufgefallen, dass Fleisch je nach Schnitt zäher wirkt?",
+     "c": "Schau dir ein Stück Fleisch genau an, finde die Faserrichtung und übe, quer dazu zu schneiden."
+    },
+    "es": {
+     "t": "Cortar en contra de la fibra",
+     "g": "Encuentra las fibras musculares de la carne asada y córtala en sentido contrario para bocados tiernos.",
+     "p": [
+      "La fibra es la dirección de los largos haces musculares que ves como líneas a lo largo de la carne.",
+      "Cortar en sentido contrario a esas líneas deja las fibras cortas, y cada bocado resulta mucho más tierno.",
+      "Es clave en falda, entraña y brisket; usa un cuchillo afilado y corta en lonchas finas, algo en diagonal."
+     ],
+     "q": "¿Alguna vez notaste que la carne parecía más dura según cómo estaba cortada?",
+     "c": "Observa de cerca una pieza de carne, encuentra la dirección de la fibra y practica cortarla en contra."
+    },
+    "fr": {
+     "t": "Trancher contre le sens des fibres",
+     "g": "Repère les fibres de la viande grillée et tranche perpendiculairement pour des bouchées tendres.",
+     "p": [
+      "Le sens des fibres, ce sont les longs faisceaux musculaires visibles comme des lignes le long de la viande.",
+      "Couper en travers de ces lignes raccourcit les fibres, et chaque bouchée paraît bien plus tendre.",
+      "C'est essentiel pour la bavette, l'onglet et la poitrine ; prends un couteau bien aiguisé et tranche fin, en biais."
+     ],
+     "q": "As-tu déjà remarqué qu'une viande semblait plus dure selon la façon dont elle était coupée ?",
+     "c": "Observe de près un morceau de viande, trouve le sens des fibres et entraîne-toi à trancher en travers."
+    },
+    "it": {
+     "t": "Tagliare contro fibra",
+     "g": "Trova le fibre muscolari nella carne grigliata e tagliala di traverso per bocconi teneri.",
+     "p": [
+      "La fibra è la direzione dei lunghi fasci muscolari che vedi come linee lungo la carne.",
+      "Tagliare di traverso rispetto a queste linee accorcia le fibre e ogni boccone risulta molto più tenero.",
+      "Conta soprattutto per bavette, diaframma e brisket; usa un coltello affilato e taglia a fette sottili, un po' in diagonale."
+     ],
+     "q": "Hai mai notato che la carne sembrava più dura a seconda di come era tagliata?",
+     "c": "Osserva bene un pezzo di carne, trova la direzione della fibra ed esercitati a tagliarla di traverso."
+    },
+    "pt": {
+     "t": "Cortar contra a fibra",
+     "g": "Encontra as fibras musculares da carne grelhada e corta-a no sentido contrário para pedaços tenros.",
+     "p": [
+      "A fibra é a direção dos longos feixes musculares que vês como linhas ao longo da carne.",
+      "Cortar no sentido contrário a essas linhas deixa as fibras curtas e cada pedaço fica muito mais tenro.",
+      "É essencial na fraldinha, diafragma e peito de vaca; usa uma faca afiada e corta fatias finas, um pouco na diagonal."
+     ],
+     "q": "Já reparaste que a carne parecia mais dura conforme a forma como foi cortada?",
+     "c": "Observa bem um pedaço de carne, descobre a direção da fibra e pratica cortá-la no sentido contrário."
+    },
+    "pt_BR": {
+     "t": "Cortando contra a fibra",
+     "g": "Encontre as fibras da carne grelhada e corte no sentido contrário para pedaços macios.",
+     "p": [
+      "A fibra é a direção dos longos feixes musculares que você vê como linhas ao longo da carne.",
+      "Cortar no sentido contrário dessas linhas deixa as fibras curtas, e cada pedaço fica muito mais macio.",
+      "Isso é essencial em fraldinha, diafragma e brisket; use uma faca afiada e corte fatias finas, levemente na diagonal."
+     ],
+     "q": "Você já percebeu a carne mais dura dependendo de como foi cortada?",
+     "c": "Observe bem um pedaço de carne, descubra a direção da fibra e pratique cortar no sentido contrário."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pork chops on the grill",
+     "g": "Choose, brine and grill pork chops so they finish juicy instead of dry.",
+     "p": [
+      "Pick thick chops, about 2.5 cm or more, ideally bone-in: thin chops dry out before they brown.",
+      "A short brine of 30 to 60 minutes in salted water helps the meat hold moisture during grilling.",
+      "Sear over direct heat, finish on the cool side and take them off at about 63 °C (145 °F), then rest a few minutes."
+     ],
+     "q": "Have you ever cooked pork chops that turned out dry, and what do you think went wrong?",
+     "c": "Grill thick pork chops with a short brine, or plan a simple brine with salt, water and one herb you like."
+    },
+    "de": {
+     "t": "Schweinekoteletts vom Grill",
+     "g": "Wähle, lake und grill Schweinekoteletts so, dass sie saftig statt trocken werden.",
+     "p": [
+      "Nimm dicke Koteletts, etwa 2,5 cm oder mehr, am besten mit Knochen: dünne trocknen aus, bevor sie bräunen.",
+      "Eine kurze Salzlake von 30 bis 60 Minuten hilft dem Fleisch, beim Grillen Feuchtigkeit zu halten.",
+      "Direkt anbraten, auf der kühlen Seite fertiggaren, bei etwa 63 °C herunternehmen und ein paar Minuten ruhen lassen."
+     ],
+     "q": "Sind dir schon einmal Schweinekoteletts trocken geworden, und was ging deiner Meinung nach schief?",
+     "c": "Grill dicke Koteletts mit kurzer Lake oder plane eine einfache Lake aus Salz, Wasser und einem Kraut, das du magst."
+    },
+    "es": {
+     "t": "Chuletas de cerdo a la parrilla",
+     "g": "Elige, salmuera y asa chuletas de cerdo para que queden jugosas y no secas.",
+     "p": [
+      "Elige chuletas gruesas, de unos 2,5 cm o más, mejor con hueso: las finas se secan antes de dorarse.",
+      "Una salmuera corta de 30 a 60 minutos en agua con sal ayuda a la carne a retener la humedad.",
+      "Séllalas a fuego directo, termínalas en el lado frío, retíralas a unos 63 °C y déjalas reposar unos minutos."
+     ],
+     "q": "¿Alguna vez te han quedado secas las chuletas de cerdo? ¿Qué crees que falló?",
+     "c": "Asa chuletas gruesas con una salmuera corta, o planea una salmuera sencilla con sal, agua y una hierba que te guste."
+    },
+    "fr": {
+     "t": "Côtes de porc au barbecue",
+     "g": "Choisis, saumure et grille des côtes de porc pour qu'elles restent juteuses et non sèches.",
+     "p": [
+      "Prends des côtes épaisses, d'environ 2,5 cm ou plus, idéalement avec l'os : les fines sèchent avant de dorer.",
+      "Une courte saumure de 30 à 60 minutes dans de l'eau salée aide la viande à garder son humidité.",
+      "Saisis à feu direct, termine côté froid, retire vers 63 °C puis laisse reposer quelques minutes."
+     ],
+     "q": "As-tu déjà cuit des côtes de porc trop sèches ? Qu'est-ce qui n'a pas marché selon toi ?",
+     "c": "Grille des côtes épaisses après une courte saumure, ou prépare une saumure simple avec sel, eau et une herbe que tu aimes."
+    },
+    "it": {
+     "t": "Braciole di maiale alla griglia",
+     "g": "Scegli, metti in salamoia e griglia le braciole di maiale perché restino succose.",
+     "p": [
+      "Scegli braciole spesse, circa 2,5 cm o più, meglio con l'osso: quelle sottili si seccano prima di dorarsi.",
+      "Una breve salamoia di 30-60 minuti in acqua salata aiuta la carne a trattenere l'umidità sulla griglia.",
+      "Scottale a calore diretto, finisci sul lato freddo, toglile a circa 63 °C e lasciale riposare qualche minuto."
+     ],
+     "q": "Ti è mai capitato che le braciole di maiale venissero secche? Cosa pensi sia andato storto?",
+     "c": "Griglia braciole spesse con una breve salamoia, oppure prepara una salamoia semplice con sale, acqua e un'erba che ami."
+    },
+    "pt": {
+     "t": "Costeletas de porco grelhadas",
+     "g": "Escolhe, põe em salmoura e grelha costeletas de porco para ficarem suculentas e não secas.",
+     "p": [
+      "Escolhe costeletas grossas, com cerca de 2,5 cm ou mais, de preferência com osso: as finas secam antes de alourar.",
+      "Uma salmoura curta de 30 a 60 minutos em água com sal ajuda a carne a manter a humidade.",
+      "Sela em calor direto, acaba no lado frio, retira a cerca de 63 °C e deixa repousar alguns minutos."
+     ],
+     "q": "Já te ficaram costeletas de porco secas? O que achas que correu mal?",
+     "c": "Grelha costeletas grossas com uma salmoura curta, ou planeia uma salmoura simples com sal, água e uma erva de que gostes."
+    },
+    "pt_BR": {
+     "t": "Bisteca suína na grelha",
+     "g": "Escolha, faça salmoura e grelhe a bisteca suína para ela ficar suculenta e não seca.",
+     "p": [
+      "Escolha bistecas grossas, com uns 2,5 cm ou mais, de preferência com osso: as finas secam antes de dourar.",
+      "Uma salmoura rápida de 30 a 60 minutos em água com sal ajuda a carne a segurar a umidade.",
+      "Sele no calor direto, termine no lado frio, tire com uns 63 °C e deixe descansar alguns minutos."
+     ],
+     "q": "Já aconteceu de a sua bisteca suína ficar seca? O que você acha que deu errado?",
+     "c": "Grelhe bistecas grossas com uma salmoura rápida, ou planeje uma salmoura simples com sal, água e uma erva de que goste."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lamb chops and cutlets",
+     "g": "Grill lamb chops quickly over high heat with classic herbs for a juicy, pink centre.",
+     "p": [
+      "Lamb chops are small and tender, so they need only a few minutes per side over high direct heat.",
+      "Rosemary, garlic, lemon and mint are classic partners, from Mediterranean to British traditions.",
+      "Many people enjoy lamb pink at about 57 to 63 °C (135 to 145 °F); rest briefly before serving."
+     ],
+     "q": "Have you ever tasted grilled lamb, and what herbs would you pair it with?",
+     "c": "Grill lamb chops with rosemary and garlic, or pick a herb mix you would use and explain your choice."
+    },
+    "de": {
+     "t": "Lammkoteletts vom Grill",
+     "g": "Grill Lammkoteletts schnell bei starker Hitze mit klassischen Kräutern für einen saftig-rosa Kern.",
+     "p": [
+      "Lammkoteletts sind klein und zart, sie brauchen nur wenige Minuten pro Seite bei starker direkter Hitze.",
+      "Rosmarin, Knoblauch, Zitrone und Minze sind klassische Partner, vom Mittelmeer bis zur britischen Küche.",
+      "Viele mögen Lamm rosa bei etwa 57 bis 63 °C; vor dem Servieren kurz ruhen lassen."
+     ],
+     "q": "Hast du schon einmal gegrilltes Lamm probiert, und welche Kräuter würdest du dazu nehmen?",
+     "c": "Grill Lammkoteletts mit Rosmarin und Knoblauch oder wähle eine Kräutermischung und begründe deine Wahl."
+    },
+    "es": {
+     "t": "Chuletas y costillitas de cordero",
+     "g": "Asa chuletas de cordero rápido a fuego fuerte con hierbas clásicas para un centro rosado y jugoso.",
+     "p": [
+      "Las chuletas de cordero son pequeñas y tiernas, así que solo necesitan unos minutos por lado a fuego directo fuerte.",
+      "El romero, el ajo, el limón y la menta son compañeros clásicos, del Mediterráneo a la tradición británica.",
+      "Muchos disfrutan el cordero rosado, a unos 57 a 63 °C; déjalo reposar un poco antes de servir."
+     ],
+     "q": "¿Has probado el cordero a la parrilla? ¿Con qué hierbas lo acompañarías?",
+     "c": "Asa chuletas de cordero con romero y ajo, o elige una mezcla de hierbas que usarías y explica por qué."
+    },
+    "fr": {
+     "t": "Côtelettes d'agneau",
+     "g": "Grille des côtelettes d'agneau vite et fort avec des herbes classiques pour un cœur rosé et juteux.",
+     "p": [
+      "Les côtelettes d'agneau sont petites et tendres : quelques minutes par face à feu direct vif suffisent.",
+      "Romarin, ail, citron et menthe sont des partenaires classiques, de la Méditerranée à la tradition britannique.",
+      "Beaucoup aiment l'agneau rosé, vers 57 à 63 °C ; laisse reposer un peu avant de servir."
+     ],
+     "q": "As-tu déjà goûté de l'agneau grillé, et avec quelles herbes l'associerais-tu ?",
+     "c": "Grille des côtelettes d'agneau au romarin et à l'ail, ou choisis un mélange d'herbes et explique ton choix."
+    },
+    "it": {
+     "t": "Costolette di agnello",
+     "g": "Griglia le costolette di agnello in fretta a fuoco alto con erbe classiche per un cuore rosa e succoso.",
+     "p": [
+      "Le costolette di agnello sono piccole e tenere: bastano pochi minuti per lato a calore diretto alto.",
+      "Rosmarino, aglio, limone e menta sono compagni classici, dal Mediterraneo alla tradizione britannica.",
+      "Molti amano l'agnello rosa, a circa 57-63 °C; fallo riposare un attimo prima di servire."
+     ],
+     "q": "Hai mai assaggiato l'agnello alla griglia? Con quali erbe lo abbineresti?",
+     "c": "Griglia costolette di agnello con rosmarino e aglio, oppure scegli un mix di erbe e spiega perché."
+    },
+    "pt": {
+     "t": "Costeletas de borrego",
+     "g": "Grelha costeletas de borrego depressa em calor forte com ervas clássicas para um centro rosado e suculento.",
+     "p": [
+      "As costeletas de borrego são pequenas e tenras, por isso bastam poucos minutos de cada lado em calor direto forte.",
+      "Alecrim, alho, limão e hortelã são parceiros clássicos, do Mediterrâneo à tradição britânica.",
+      "Muitos gostam do borrego rosado, a cerca de 57 a 63 °C; deixa repousar um pouco antes de servir."
+     ],
+     "q": "Já provaste borrego grelhado? Com que ervas o combinarias?",
+     "c": "Grelha costeletas de borrego com alecrim e alho, ou escolhe uma mistura de ervas e explica porquê."
+    },
+    "pt_BR": {
+     "t": "Costeletas de cordeiro",
+     "g": "Grelhe costeletas de cordeiro rápido em fogo alto com ervas clássicas para um centro rosado e suculento.",
+     "p": [
+      "As costeletas de cordeiro são pequenas e macias, então bastam poucos minutos de cada lado no calor direto forte.",
+      "Alecrim, alho, limão e hortelã são parceiros clássicos, do Mediterrâneo à tradição britânica.",
+      "Muita gente gosta do cordeiro rosado, a uns 57 a 63 °C; deixe descansar um pouco antes de servir."
+     ],
+     "q": "Você já provou cordeiro grelhado? Com quais ervas combinaria?",
+     "c": "Grelhe costeletas de cordeiro com alecrim e alho, ou escolha uma mistura de ervas e explique por quê."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chicken breasts that stay juicy",
+     "g": "Grill chicken breasts that are juicy, not dry, by evening out their thickness.",
+     "p": [
+      "A breast is thick at one end and thin at the other, so the thin end dries out before the thick end is done.",
+      "Butterfly it or pound it gently between baking paper to an even thickness of about 2 cm.",
+      "Grill over medium-high heat and take it off at 74 °C (165 °F) in the thickest part; a quick brine helps too."
+     ],
+     "q": "What is your favourite way to season chicken breast?",
+     "c": "Pound or butterfly a chicken breast to even thickness before grilling, or plan the seasoning you would use."
+    },
+    "de": {
+     "t": "Saftige Hähnchenbrust",
+     "g": "Grill Hähnchenbrust saftig statt trocken, indem du ihre Dicke ausgleichst.",
+     "p": [
+      "Eine Brust ist an einem Ende dick und am anderen dünn: Das dünne Ende trocknet aus, bevor das dicke gar ist.",
+      "Schneide sie schmetterlingsartig auf oder klopf sie zwischen Backpapier sanft auf etwa 2 cm gleichmäßige Dicke.",
+      "Bei mittelhoher Hitze grillen und bei 74 °C an der dicksten Stelle herunternehmen; eine kurze Lake hilft zusätzlich."
+     ],
+     "q": "Wie würzt du Hähnchenbrust am liebsten?",
+     "c": "Klopf oder schneide eine Hähnchenbrust vor dem Grillen auf gleichmäßige Dicke, oder plane die Würzung."
+    },
+    "es": {
+     "t": "Pechugas de pollo que quedan jugosas",
+     "g": "Asa pechugas de pollo jugosas, no secas, igualando su grosor.",
+     "p": [
+      "La pechuga es gruesa por un extremo y fina por el otro, así que la parte fina se seca antes de que la gruesa esté lista.",
+      "Ábrela en mariposa o aplánala con suavidad entre papel de horno hasta un grosor parejo de unos 2 cm.",
+      "Ásala a fuego medio-alto y retírala a 74 °C en la parte más gruesa; una salmuera rápida también ayuda."
+     ],
+     "q": "¿Cuál es tu forma favorita de sazonar la pechuga de pollo?",
+     "c": "Aplana o abre en mariposa una pechuga antes de asarla, o planea el aliño que usarías."
+    },
+    "fr": {
+     "t": "Des blancs de poulet qui restent juteux",
+     "g": "Grille des blancs de poulet juteux, pas secs, en égalisant leur épaisseur.",
+     "p": [
+      "Un blanc est épais d'un côté et fin de l'autre : la partie fine sèche avant que la partie épaisse soit cuite.",
+      "Ouvre-le en portefeuille ou aplatis-le doucement entre deux papiers cuisson à environ 2 cm d'épaisseur.",
+      "Grille à feu moyen-vif et retire à 74 °C au cœur de la partie la plus épaisse ; une courte saumure aide aussi."
+     ],
+     "q": "Quelle est ta façon préférée d'assaisonner un blanc de poulet ?",
+     "c": "Aplatis ou ouvre un blanc de poulet en portefeuille avant de le griller, ou prévois son assaisonnement."
+    },
+    "it": {
+     "t": "Petti di pollo che restano succosi",
+     "g": "Griglia petti di pollo succosi, non secchi, rendendo uniforme il loro spessore.",
+     "p": [
+      "Il petto è spesso da un lato e sottile dall'altro: la parte sottile si secca prima che quella spessa sia cotta.",
+      "Aprilo a libro o battilo delicatamente tra due fogli di carta forno fino a uno spessore uniforme di circa 2 cm.",
+      "Griglia a fuoco medio-alto e toglilo a 74 °C nella parte più spessa; anche una breve salamoia aiuta."
+     ],
+     "q": "Qual è il tuo modo preferito di condire il petto di pollo?",
+     "c": "Batti o apri a libro un petto di pollo prima di grigliarlo, oppure pensa al condimento che useresti."
+    },
+    "pt": {
+     "t": "Peitos de frango que ficam suculentos",
+     "g": "Grelha peitos de frango suculentos, não secos, igualando a sua espessura.",
+     "p": [
+      "O peito é grosso numa ponta e fino na outra, por isso a parte fina seca antes de a grossa estar pronta.",
+      "Abre-o em borboleta ou bate-o com cuidado entre papel vegetal até ficar com cerca de 2 cm por igual.",
+      "Grelha em calor médio-alto e retira a 74 °C na parte mais grossa; uma salmoura rápida também ajuda."
+     ],
+     "q": "Qual é a tua forma preferida de temperar peito de frango?",
+     "c": "Bate ou abre em borboleta um peito de frango antes de grelhar, ou planeia o tempero que usarias."
+    },
+    "pt_BR": {
+     "t": "Peito de frango que fica suculento",
+     "g": "Grelhe peito de frango suculento, não seco, deixando a espessura por igual.",
+     "p": [
+      "O peito é grosso numa ponta e fino na outra, então a parte fina resseca antes de a grossa ficar pronta.",
+      "Abra em borboleta ou bata com cuidado entre papel-manteiga até ficar com uns 2 cm por igual.",
+      "Grelhe em fogo médio-alto e tire com 74 °C na parte mais grossa; uma salmoura rápida também ajuda."
+     ],
+     "q": "Qual é o seu jeito preferido de temperar peito de frango?",
+     "c": "Bata ou abra em borboleta um peito de frango antes de grelhar, ou planeje o tempero que usaria."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chicken wings on the grill",
+     "g": "Make crispy grilled wings with a two-zone fire, then finish with sauce or a dry seasoning.",
+     "p": [
+      "Pat wings very dry and season them; a little baking powder in the seasoning helps the skin crisp up.",
+      "Cook them on the cool side with the lid closed until the fat renders, turning now and then, about 30 to 40 minutes.",
+      "Crisp them briefly over direct heat, check for 74 °C (165 °F) or more, then toss in sauce or serve dry."
+     ],
+     "q": "Do you like wings saucy and sticky or dry and crispy?",
+     "c": "Grill wings with the two-zone method, or invent a wing flavour of your own using spices from your kitchen."
+    },
+    "de": {
+     "t": "Chicken Wings vom Grill",
+     "g": "Mach knusprige Grill-Wings mit Zwei-Zonen-Feuer und vollende sie mit Sauce oder Trockengewürz.",
+     "p": [
+      "Tupf die Wings sehr trocken und würze sie; etwas Backpulver in der Würzung macht die Haut knuspriger.",
+      "Gare sie auf der kühlen Seite mit geschlossenem Deckel, bis das Fett schmilzt, ab und zu wenden, etwa 30 bis 40 Minuten.",
+      "Kurz über direkter Hitze knusprig grillen, auf mindestens 74 °C prüfen, dann in Sauce schwenken oder trocken servieren."
+     ],
+     "q": "Magst du Wings lieber saucig und klebrig oder trocken und knusprig?",
+     "c": "Grill Wings nach der Zwei-Zonen-Methode oder erfinde eine eigene Geschmacksrichtung mit Gewürzen aus deiner Küche."
+    },
+    "es": {
+     "t": "Alitas de pollo a la parrilla",
+     "g": "Haz alitas crujientes a la parrilla con fuego de dos zonas y termínalas con salsa o especias secas.",
+     "p": [
+      "Seca muy bien las alitas y sazónalas; un poco de levadura química en el aliño ayuda a que la piel quede crujiente.",
+      "Cocínalas en el lado frío con la tapa cerrada hasta que suelten la grasa, girándolas de vez en cuando, unos 30 a 40 minutos.",
+      "Dóralas un momento a fuego directo, comprueba que lleguen a 74 °C o más y mézclalas con salsa o sírvelas secas."
+     ],
+     "q": "¿Te gustan las alitas con mucha salsa o secas y crujientes?",
+     "c": "Asa alitas con el método de dos zonas, o inventa un sabor propio con especias de tu cocina."
+    },
+    "fr": {
+     "t": "Ailes de poulet au barbecue",
+     "g": "Prépare des ailes croustillantes avec un feu à deux zones, puis finis avec une sauce ou des épices.",
+     "p": [
+      "Sèche bien les ailes et assaisonne-les ; un peu de levure chimique dans l'assaisonnement rend la peau plus croustillante.",
+      "Cuis-les côté froid, couvercle fermé, jusqu'à ce que le gras fonde, en les tournant parfois, environ 30 à 40 minutes.",
+      "Rends-les croustillantes brièvement en direct, vérifie 74 °C ou plus, puis enrobe de sauce ou sers-les nature."
+     ],
+     "q": "Tu préfères les ailes bien nappées de sauce ou sèches et croustillantes ?",
+     "c": "Grille des ailes avec la méthode à deux zones, ou invente ta propre saveur avec les épices de ta cuisine."
+    },
+    "it": {
+     "t": "Alette di pollo alla griglia",
+     "g": "Prepara alette croccanti con il fuoco a due zone, poi finiscile con salsa o spezie secche.",
+     "p": [
+      "Asciuga bene le alette e condiscile; un po' di lievito per dolci nel condimento rende la pelle più croccante.",
+      "Cuocile sul lato freddo a coperchio chiuso finché il grasso si scioglie, girandole ogni tanto, circa 30-40 minuti.",
+      "Rendile croccanti per poco a calore diretto, controlla 74 °C o più, poi passale nella salsa o servile asciutte."
+     ],
+     "q": "Ti piacciono le alette con tanta salsa o asciutte e croccanti?",
+     "c": "Griglia alette con il metodo a due zone, oppure inventa un tuo sapore usando le spezie della tua cucina."
+    },
+    "pt": {
+     "t": "Asas de frango grelhadas",
+     "g": "Faz asas estaladiças com fogo de duas zonas e termina-as com molho ou um tempero seco.",
+     "p": [
+      "Seca muito bem as asas e tempera-as; um pouco de fermento em pó no tempero ajuda a pele a ficar estaladiça.",
+      "Coze-as no lado frio, de tampa fechada, até a gordura derreter, virando de vez em quando, cerca de 30 a 40 minutos.",
+      "Tosta-as um pouco em calor direto, confirma 74 °C ou mais e depois envolve-as em molho ou serve-as secas."
+     ],
+     "q": "Gostas das asas com muito molho ou secas e estaladiças?",
+     "c": "Grelha asas com o método de duas zonas, ou inventa um sabor teu com as especiarias da tua cozinha."
+    },
+    "pt_BR": {
+     "t": "Asinhas de frango na grelha",
+     "g": "Faça asinhas crocantes com fogo de duas zonas e finalize com molho ou um tempero seco.",
+     "p": [
+      "Seque bem as asinhas e tempere; um pouco de fermento químico no tempero ajuda a pele a ficar crocante.",
+      "Cozinhe no lado frio, com a tampa fechada, até a gordura derreter, virando de vez em quando, uns 30 a 40 minutos.",
+      "Doure rapidamente no calor direto, confira 74 °C ou mais e depois envolva no molho ou sirva sequinhas."
+     ],
+     "q": "Você gosta de asinhas com bastante molho ou sequinhas e crocantes?",
+     "c": "Grelhe asinhas com o método de duas zonas, ou invente um sabor seu com as especiarias da sua cozinha."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is a dry rub",
+     "g": "Understand what a dry rub is and how it builds a tasty crust on grilled food.",
+     "p": [
+      "A dry rub is a mix of salt, often sugar, and spices and herbs that you rub onto food before cooking.",
+      "Salt seasons and draws flavour in, sugar helps browning, and spices give character and colour.",
+      "Rubs with lots of sugar can burn over high heat, so save them for medium or indirect cooking."
+     ],
+     "q": "Have you ever used a ready-made rub or spice blend, and did you like it?",
+     "c": "Read the ingredients of a spice blend in your kitchen or a shop and sort them into salt, sugar and spices."
+    },
+    "de": {
+     "t": "Was ist ein Dry Rub",
+     "g": "Verstehe, was ein Dry Rub ist und wie er eine leckere Kruste auf dem Grillgut bildet.",
+     "p": [
+      "Ein Dry Rub ist eine Mischung aus Salz, oft Zucker, Gewürzen und Kräutern, die du vor dem Garen einreibst.",
+      "Salz würzt und zieht Aroma hinein, Zucker fördert die Bräunung, Gewürze bringen Charakter und Farbe.",
+      "Rubs mit viel Zucker verbrennen bei starker Hitze leicht; nimm sie für mittlere oder indirekte Hitze."
+     ],
+     "q": "Hast du schon einmal einen fertigen Rub oder eine Gewürzmischung benutzt, und mochtest du sie?",
+     "c": "Lies die Zutaten einer Gewürzmischung in deiner Küche oder im Laden und sortiere sie nach Salz, Zucker und Gewürzen."
+    },
+    "es": {
+     "t": "Qué es un aliño seco o rub",
+     "g": "Entiende qué es un rub y cómo forma una costra sabrosa en la comida a la parrilla.",
+     "p": [
+      "Un rub es una mezcla de sal, a menudo azúcar, especias y hierbas que frotas sobre la comida antes de cocinarla.",
+      "La sal sazona y potencia el sabor, el azúcar ayuda a dorar y las especias aportan carácter y color.",
+      "Los rubs con mucho azúcar pueden quemarse a fuego fuerte; resérvalos para fuego medio o indirecto."
+     ],
+     "q": "¿Has usado alguna vez un rub o mezcla de especias ya hecha? ¿Te gustó?",
+     "c": "Lee los ingredientes de una mezcla de especias de tu cocina o de una tienda y clasifícalos en sal, azúcar y especias."
+    },
+    "fr": {
+     "t": "Qu'est-ce qu'un rub sec",
+     "g": "Comprends ce qu'est un rub et comment il forme une croûte savoureuse sur les grillades.",
+     "p": [
+      "Un rub est un mélange de sel, souvent de sucre, d'épices et d'herbes que l'on frotte sur l'aliment avant cuisson.",
+      "Le sel assaisonne et fait pénétrer les arômes, le sucre aide à dorer, les épices apportent caractère et couleur.",
+      "Les rubs très sucrés peuvent brûler à feu vif ; réserve-les à la cuisson moyenne ou indirecte."
+     ],
+     "q": "As-tu déjà utilisé un rub ou un mélange d'épices tout prêt, et l'as-tu aimé ?",
+     "c": "Lis les ingrédients d'un mélange d'épices chez toi ou en magasin et classe-les en sel, sucre et épices."
+    },
+    "it": {
+     "t": "Cos'è un dry rub",
+     "g": "Capisci cos'è un dry rub e come forma una crosticina gustosa sui cibi alla griglia.",
+     "p": [
+      "Un dry rub è un mix di sale, spesso zucchero, spezie ed erbe che massaggi sul cibo prima della cottura.",
+      "Il sale insaporisce e porta dentro gli aromi, lo zucchero aiuta la doratura e le spezie danno carattere e colore.",
+      "I rub con molto zucchero possono bruciare a fuoco alto; tienili per cotture a fuoco medio o indirette."
+     ],
+     "q": "Hai mai usato un rub o un mix di spezie già pronto? Ti è piaciuto?",
+     "c": "Leggi gli ingredienti di un mix di spezie in cucina o in negozio e dividili in sale, zucchero e spezie."
+    },
+    "pt": {
+     "t": "O que é um rub seco",
+     "g": "Percebe o que é um rub e como forma uma crosta saborosa nos grelhados.",
+     "p": [
+      "Um rub é uma mistura de sal, muitas vezes açúcar, especiarias e ervas que esfregas na comida antes de cozinhar.",
+      "O sal tempera e puxa o sabor para dentro, o açúcar ajuda a alourar e as especiarias dão carácter e cor.",
+      "Rubs com muito açúcar podem queimar em calor forte; guarda-os para calor médio ou indireto."
+     ],
+     "q": "Já usaste um rub ou uma mistura de especiarias pronta? Gostaste?",
+     "c": "Lê os ingredientes de uma mistura de especiarias da tua cozinha ou de uma loja e separa-os em sal, açúcar e especiarias."
+    },
+    "pt_BR": {
+     "t": "O que é um dry rub",
+     "g": "Entenda o que é um dry rub e como ele forma uma crosta saborosa no churrasco.",
+     "p": [
+      "Dry rub é uma mistura de sal, muitas vezes açúcar, especiarias e ervas que você esfrega na comida antes de cozinhar.",
+      "O sal tempera e leva o sabor para dentro, o açúcar ajuda a dourar e as especiarias dão personalidade e cor.",
+      "Rubs com muito açúcar podem queimar no fogo alto; deixe para preparos em fogo médio ou indireto."
+     ],
+     "q": "Você já usou um rub ou mistura de temperos pronta? Gostou?",
+     "c": "Leia os ingredientes de uma mistura de temperos da sua cozinha ou do mercado e separe em sal, açúcar e especiarias."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Making your first all-purpose rub",
+     "g": "Mix a balanced basic rub you can use on chicken, pork and vegetables.",
+     "p": [
+      "A simple starting ratio: 2 parts brown sugar, 2 parts paprika, 1 part salt, 1 part black pepper, plus garlic and onion powder.",
+      "Adjust to taste: add cumin for warmth, chilli for heat, or dried herbs like oregano or thyme for freshness.",
+      "Store it in a sealed jar away from heat and light; it keeps its flavour for a few months."
+     ],
+     "q": "What flavour would make a rub feel like yours: smoky, spicy, sweet or herby?",
+     "c": "Mix a small jar of your own all-purpose rub, give it a name and use it on your next grilled meal."
+    },
+    "de": {
+     "t": "Dein erster Allround-Rub",
+     "g": "Misch einen ausgewogenen Grund-Rub, den du für Hähnchen, Schwein und Gemüse nutzen kannst.",
+     "p": [
+      "Einfaches Startverhältnis: 2 Teile brauner Zucker, 2 Teile Paprika, 1 Teil Salz, 1 Teil Pfeffer, dazu Knoblauch- und Zwiebelpulver.",
+      "Nach Geschmack anpassen: Kreuzkümmel für Wärme, Chili für Schärfe oder getrocknete Kräuter wie Oregano oder Thymian.",
+      "Bewahre ihn in einem dichten Glas, kühl und dunkel auf; so hält er sein Aroma einige Monate."
+     ],
+     "q": "Welches Aroma würde einen Rub zu deinem machen: rauchig, scharf, süß oder kräuterig?",
+     "c": "Misch ein kleines Glas deines eigenen Allround-Rubs, gib ihm einen Namen und nutze ihn beim nächsten Grillen."
+    },
+    "es": {
+     "t": "Tu primer rub multiusos",
+     "g": "Mezcla un rub básico y equilibrado que sirva para pollo, cerdo y verduras.",
+     "p": [
+      "Proporción sencilla para empezar: 2 partes de azúcar moreno, 2 de pimentón, 1 de sal, 1 de pimienta, más ajo y cebolla en polvo.",
+      "Ajústalo a tu gusto: comino para dar calidez, chile para picante o hierbas secas como orégano o tomillo.",
+      "Guárdalo en un frasco cerrado, lejos del calor y la luz; conserva su sabor durante unos meses."
+     ],
+     "q": "¿Qué sabor haría que un rub fuera tuyo: ahumado, picante, dulce o herbal?",
+     "c": "Mezcla un frasquito de tu propio rub multiusos, ponle nombre y úsalo en tu próxima comida a la parrilla."
+    },
+    "fr": {
+     "t": "Ton premier rub tout usage",
+     "g": "Mélange un rub de base équilibré à utiliser sur le poulet, le porc et les légumes.",
+     "p": [
+      "Proportion simple pour débuter : 2 parts de sucre roux, 2 de paprika, 1 de sel, 1 de poivre, plus ail et oignon en poudre.",
+      "Ajuste à ton goût : cumin pour la chaleur, piment pour le piquant, herbes sèches comme origan ou thym pour la fraîcheur.",
+      "Conserve-le dans un bocal fermé, à l'abri de la chaleur et de la lumière ; il garde son goût quelques mois."
+     ],
+     "q": "Quelle saveur rendrait un rub vraiment à toi : fumée, piquante, sucrée ou herbacée ?",
+     "c": "Prépare un petit bocal de ton rub tout usage, donne-lui un nom et utilise-le pour ta prochaine grillade."
+    },
+    "it": {
+     "t": "Il tuo primo rub tuttofare",
+     "g": "Prepara un rub base equilibrato da usare su pollo, maiale e verdure.",
+     "p": [
+      "Proporzione semplice per iniziare: 2 parti di zucchero di canna, 2 di paprika, 1 di sale, 1 di pepe, più aglio e cipolla in polvere.",
+      "Regola a piacere: cumino per il calore, peperoncino per il piccante o erbe secche come origano o timo.",
+      "Conservalo in un barattolo chiuso, lontano da calore e luce; mantiene il sapore per qualche mese."
+     ],
+     "q": "Quale sapore renderebbe un rub davvero tuo: affumicato, piccante, dolce o alle erbe?",
+     "c": "Prepara un barattolino del tuo rub tuttofare, dagli un nome e usalo nella prossima grigliata."
+    },
+    "pt": {
+     "t": "O teu primeiro rub para tudo",
+     "g": "Mistura um rub básico e equilibrado que podes usar em frango, porco e legumes.",
+     "p": [
+      "Proporção simples para começar: 2 partes de açúcar mascavado, 2 de colorau, 1 de sal, 1 de pimenta, mais alho e cebola em pó.",
+      "Ajusta a teu gosto: cominho para aquecer, malagueta para picar ou ervas secas como orégãos ou tomilho.",
+      "Guarda-o num frasco fechado, longe do calor e da luz; mantém o sabor durante alguns meses."
+     ],
+     "q": "Que sabor faria um rub ser mesmo teu: fumado, picante, doce ou de ervas?",
+     "c": "Mistura um frasquinho do teu rub para tudo, dá-lhe um nome e usa-o no teu próximo grelhado."
+    },
+    "pt_BR": {
+     "t": "Seu primeiro rub coringa",
+     "g": "Misture um rub básico e equilibrado para usar em frango, porco e legumes.",
+     "p": [
+      "Proporção simples para começar: 2 partes de açúcar mascavo, 2 de páprica, 1 de sal, 1 de pimenta, mais alho e cebola em pó.",
+      "Ajuste ao seu gosto: cominho para aquecer, pimenta calabresa para ardência ou ervas secas como orégano ou tomilho.",
+      "Guarde num pote fechado, longe do calor e da luz; ele mantém o sabor por alguns meses."
+     ],
+     "q": "Que sabor faria um rub ser a sua cara: defumado, picante, doce ou de ervas?",
+     "c": "Misture um potinho do seu rub coringa, dê um nome a ele e use no seu próximo churrasco."
+    }
+   }
+  }
+ ]
+}

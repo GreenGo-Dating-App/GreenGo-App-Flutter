@@ -1,0 +1,835 @@
+{
+ "topic": "web_design",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Building a simple profile page",
+     "g": "Combine what you know into your first mini project.",
+     "p": [
+      "Plan the page first: a heading, a photo, a short bio and a few links.",
+      "Use semantic elements, alt text and a list of useful links.",
+      "Validate the page and open it on your phone if you can."
+     ],
+     "q": "What would you like visitors to learn about you in ten seconds?",
+     "c": "Build the profile page and send the file to a friend to open."
+    },
+    "de": {
+     "t": "Eine einfache Profilseite bauen",
+     "g": "Verbinde dein Wissen zu deinem ersten Mini-Projekt.",
+     "p": [
+      "Plane die Seite zuerst: Überschrift, Foto, Kurzvorstellung und ein paar Links.",
+      "Nutze semantische Elemente, Alt-Text und eine Liste nützlicher Links.",
+      "Validiere die Seite und öffne sie, wenn möglich, auf dem Handy."
+     ],
+     "q": "Was sollen Besucher in zehn Sekunden über dich erfahren?",
+     "c": "Baue die Profilseite und schicke die Datei einem Freund zum Öffnen."
+    },
+    "es": {
+     "t": "Crear una página de perfil sencilla",
+     "g": "Reúne lo que sabes en tu primer miniproyecto.",
+     "p": [
+      "Planifica primero la página: un título, una foto, una breve bio y algunos enlaces.",
+      "Usa elementos semánticos, texto alt y una lista de enlaces útiles.",
+      "Valida la página y ábrela en el móvil si puedes."
+     ],
+     "q": "¿Qué te gustaría que los visitantes supieran de ti en diez segundos?",
+     "c": "Crea la página de perfil y envía el archivo a un amigo para que la abra."
+    },
+    "fr": {
+     "t": "Créer une page de profil simple",
+     "g": "Réunis tes acquis dans ton premier mini-projet.",
+     "p": [
+      "Planifie d'abord la page : un titre, une photo, une courte bio et quelques liens.",
+      "Utilise des éléments sémantiques, un texte alt et une liste de liens utiles.",
+      "Valide la page et ouvre-la sur ton téléphone si possible."
+     ],
+     "q": "Que voudrais-tu que les visiteurs apprennent sur toi en dix secondes ?",
+     "c": "Crée la page de profil et envoie le fichier à un ami pour qu'il l'ouvre."
+    },
+    "it": {
+     "t": "Creare una semplice pagina profilo",
+     "g": "Riunisci ciò che sai nel tuo primo mini progetto.",
+     "p": [
+      "Pianifica prima la pagina: un titolo, una foto, una breve bio e qualche link.",
+      "Usa elementi semantici, testo alt e una lista di link utili.",
+      "Valida la pagina e aprila sul telefono, se puoi."
+     ],
+     "q": "Cosa vorresti che i visitatori scoprissero di te in dieci secondi?",
+     "c": "Crea la pagina profilo e invia il file a un amico perché la apra."
+    },
+    "pt": {
+     "t": "Criar uma página de perfil simples",
+     "g": "Junta o que sabes no teu primeiro miniprojeto.",
+     "p": [
+      "Planeia primeiro a página: um título, uma foto, uma breve bio e alguns links.",
+      "Usa elementos semânticos, texto alt e uma lista de links úteis.",
+      "Valida a página e abre-a no telemóvel, se puderes."
+     ],
+     "q": "O que gostarias que os visitantes soubessem de ti em dez segundos?",
+     "c": "Cria a página de perfil e envia o ficheiro a um amigo para a abrir."
+    },
+    "pt_BR": {
+     "t": "Criando uma página de perfil simples",
+     "g": "Junte o que você sabe no seu primeiro miniprojeto.",
+     "p": [
+      "Planeje primeiro a página: um título, uma foto, uma bio curta e alguns links.",
+      "Use elementos semânticos, texto alt e uma lista de links úteis.",
+      "Valide a página e abra no celular, se puder."
+     ],
+     "q": "O que você gostaria que os visitantes soubessem sobre você em dez segundos?",
+     "c": "Crie a página de perfil e envie o arquivo a um amigo para abrir."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Forms: a first look",
+     "g": "Let visitors type, choose and send information.",
+     "p": [
+      "The form element wraps controls like input, select, textarea and button.",
+      "Every input needs a label linked with for and id, so it is clear and clickable.",
+      "Types like email, number and date give helpful keyboards and checks."
+     ],
+     "q": "What simple form would be useful, such as contact or sign-up?",
+     "c": "Build a form with a labelled name field, an email field and a submit button."
+    },
+    "de": {
+     "t": "Formulare: ein erster Blick",
+     "g": "Lass Besucher tippen, wählen und Informationen senden.",
+     "p": [
+      "Das form-Element umschließt Steuerelemente wie input, select, textarea und button.",
+      "Jedes input braucht ein label, verbunden über for und id, für Klarheit und Klickbarkeit.",
+      "Typen wie email, number und date liefern passende Tastaturen und Prüfungen."
+     ],
+     "q": "Welches einfache Formular wäre nützlich, etwa Kontakt oder Anmeldung?",
+     "c": "Baue ein Formular mit beschriftetem Namensfeld, E-Mail-Feld und Senden-Button."
+    },
+    "es": {
+     "t": "Formularios: primer vistazo",
+     "g": "Deja que los visitantes escriban, elijan y envíen información.",
+     "p": [
+      "El elemento form envuelve controles como input, select, textarea y button.",
+      "Cada input necesita un label enlazado con for e id, para ser claro y clicable.",
+      "Tipos como email, number y date dan teclados y validaciones útiles."
+     ],
+     "q": "¿Qué formulario sencillo sería útil, como contacto o registro?",
+     "c": "Crea un formulario con campo de nombre con label, campo de email y botón de envío."
+    },
+    "fr": {
+     "t": "Les formulaires : premier aperçu",
+     "g": "Laisse les visiteurs écrire, choisir et envoyer des informations.",
+     "p": [
+      "L'élément form entoure des contrôles comme input, select, textarea et button.",
+      "Chaque input a besoin d'un label lié par for et id, pour être clair et cliquable.",
+      "Des types comme email, number et date offrent claviers et contrôles adaptés."
+     ],
+     "q": "Quel formulaire simple serait utile, comme contact ou inscription ?",
+     "c": "Construis un formulaire avec un champ nom étiqueté, un champ email et un bouton d'envoi."
+    },
+    "it": {
+     "t": "Moduli: una prima occhiata",
+     "g": "Lascia che i visitatori scrivano, scelgano e inviino informazioni.",
+     "p": [
+      "L'elemento form racchiude controlli come input, select, textarea e button.",
+      "Ogni input ha bisogno di un label collegato con for e id, per essere chiaro e cliccabile.",
+      "Tipi come email, number e date offrono tastiere e controlli utili."
+     ],
+     "q": "Quale modulo semplice sarebbe utile, come contatto o iscrizione?",
+     "c": "Crea un modulo con campo nome con label, campo email e pulsante di invio."
+    },
+    "pt": {
+     "t": "Formulários: um primeiro olhar",
+     "g": "Deixa os visitantes escrever, escolher e enviar informação.",
+     "p": [
+      "O elemento form envolve controlos como input, select, textarea e button.",
+      "Cada input precisa de um label ligado por for e id, para ser claro e clicável.",
+      "Tipos como email, number e date dão teclados e verificações úteis."
+     ],
+     "q": "Que formulário simples seria útil, como contacto ou inscrição?",
+     "c": "Cria um formulário com campo de nome com label, campo de email e botão de envio."
+    },
+    "pt_BR": {
+     "t": "Formulários: um primeiro olhar",
+     "g": "Deixe os visitantes digitar, escolher e enviar informações.",
+     "p": [
+      "O elemento form envolve controles como input, select, textarea e button.",
+      "Todo input precisa de um label ligado por for e id, para ser claro e clicável.",
+      "Tipos como email, number e date dão teclados e validações úteis."
+     ],
+     "q": "Que formulário simples seria útil, como contato ou cadastro?",
+     "c": "Crie um formulário com campo de nome com label, campo de email e botão de envio."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What CSS does",
+     "g": "Meet CSS, the language that styles your HTML.",
+     "p": [
+      "CSS controls colour, fonts, spacing and layout.",
+      "Keeping style apart from content means one change can restyle every page.",
+      "The same HTML can look completely different with different CSS."
+     ],
+     "q": "If you could restyle your page in one way, what would you change?",
+     "c": "Add a style block to your page and turn the h1 a new colour."
+    },
+    "de": {
+     "t": "Was CSS macht",
+     "g": "Lerne CSS kennen, die Sprache, die dein HTML gestaltet.",
+     "p": [
+      "CSS steuert Farben, Schriften, Abstände und Layout.",
+      "Wer Stil und Inhalt trennt, kann mit einer Änderung jede Seite neu gestalten.",
+      "Dasselbe HTML kann mit anderem CSS völlig anders aussehen."
+     ],
+     "q": "Wenn du deine Seite auf eine Weise umgestalten könntest, was würdest du ändern?",
+     "c": "Füge deiner Seite einen style-Block hinzu und gib dem h1 eine neue Farbe."
+    },
+    "es": {
+     "t": "Qué hace el CSS",
+     "g": "Conoce el CSS, el lenguaje que da estilo a tu HTML.",
+     "p": [
+      "El CSS controla el color, las fuentes, los espacios y el diseño.",
+      "Separar estilo y contenido permite rediseñar todas las páginas con un solo cambio.",
+      "El mismo HTML puede verse totalmente distinto con otro CSS."
+     ],
+     "q": "Si pudieras cambiar tu página en un aspecto, ¿cuál cambiarías?",
+     "c": "Añade un bloque style a tu página y pon el h1 de otro color."
+    },
+    "fr": {
+     "t": "Ce que fait le CSS",
+     "g": "Découvre le CSS, le langage qui habille ton HTML.",
+     "p": [
+      "Le CSS contrôle couleurs, polices, espaces et mise en page.",
+      "Séparer style et contenu permet de restyler toutes les pages d'un seul changement.",
+      "Le même HTML peut avoir un aspect totalement différent avec un autre CSS."
+     ],
+     "q": "Si tu pouvais changer un aspect de ta page, lequel choisirais-tu ?",
+     "c": "Ajoute un bloc style à ta page et donne au h1 une nouvelle couleur."
+    },
+    "it": {
+     "t": "Cosa fa il CSS",
+     "g": "Conosci il CSS, il linguaggio che dà stile al tuo HTML.",
+     "p": [
+      "Il CSS controlla colori, font, spazi e layout.",
+      "Separare stile e contenuto permette di cambiare l'aspetto di tutte le pagine con una modifica.",
+      "Lo stesso HTML può sembrare completamente diverso con un altro CSS."
+     ],
+     "q": "Se potessi cambiare un aspetto della tua pagina, quale sceglieresti?",
+     "c": "Aggiungi un blocco style alla pagina e dai al h1 un nuovo colore."
+    },
+    "pt": {
+     "t": "O que faz o CSS",
+     "g": "Conhece o CSS, a linguagem que dá estilo ao teu HTML.",
+     "p": [
+      "O CSS controla cor, fontes, espaços e disposição.",
+      "Separar estilo e conteúdo permite redesenhar todas as páginas com uma só alteração.",
+      "O mesmo HTML pode parecer totalmente diferente com outro CSS."
+     ],
+     "q": "Se pudesses mudar um aspeto da tua página, qual mudarias?",
+     "c": "Acrescenta um bloco style à tua página e dá ao h1 uma nova cor."
+    },
+    "pt_BR": {
+     "t": "O que o CSS faz",
+     "g": "Conheça o CSS, a linguagem que dá estilo ao seu HTML.",
+     "p": [
+      "O CSS controla cor, fontes, espaços e layout.",
+      "Separar estilo e conteúdo permite redesenhar todas as páginas com uma só mudança.",
+      "O mesmo HTML pode parecer totalmente diferente com outro CSS."
+     ],
+     "q": "Se pudesse mudar um aspecto da sua página, qual mudaria?",
+     "c": "Adicione um bloco style à sua página e dê ao h1 uma nova cor."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Selectors, properties and values",
+     "g": "Read and write a CSS rule from start to finish.",
+     "p": [
+      "A selector picks elements, such as p or h1.",
+      "Inside curly braces, each declaration is a property, a colon and a value.",
+      "End every declaration with a semicolon so rules do not break."
+     ],
+     "q": "Can you write a rule that makes all paragraphs dark grey?",
+     "c": "Write three rules: one for body, one for h1 and one for p."
+    },
+    "de": {
+     "t": "Selektoren, Eigenschaften und Werte",
+     "g": "Lies und schreibe eine CSS-Regel von Anfang bis Ende.",
+     "p": [
+      "Ein Selektor wählt Elemente aus, etwa p oder h1.",
+      "In den geschweiften Klammern steht jede Deklaration aus Eigenschaft, Doppelpunkt und Wert.",
+      "Beende jede Deklaration mit einem Semikolon, damit Regeln nicht brechen."
+     ],
+     "q": "Kannst du eine Regel schreiben, die alle Absätze dunkelgrau macht?",
+     "c": "Schreibe drei Regeln: eine für body, eine für h1 und eine für p."
+    },
+    "es": {
+     "t": "Selectores, propiedades y valores",
+     "g": "Lee y escribe una regla CSS de principio a fin.",
+     "p": [
+      "Un selector elige elementos, como p o h1.",
+      "Entre llaves, cada declaración es una propiedad, dos puntos y un valor.",
+      "Termina cada declaración con punto y coma para que las reglas no fallen."
+     ],
+     "q": "¿Puedes escribir una regla que ponga todos los párrafos en gris oscuro?",
+     "c": "Escribe tres reglas: una para body, una para h1 y una para p."
+    },
+    "fr": {
+     "t": "Sélecteurs, propriétés et valeurs",
+     "g": "Lis et écris une règle CSS du début à la fin.",
+     "p": [
+      "Un sélecteur choisit des éléments, comme p ou h1.",
+      "Entre accolades, chaque déclaration est une propriété, deux-points et une valeur.",
+      "Termine chaque déclaration par un point-virgule pour que les règles ne cassent pas."
+     ],
+     "q": "Sais-tu écrire une règle qui met tous les paragraphes en gris foncé ?",
+     "c": "Écris trois règles : une pour body, une pour h1 et une pour p."
+    },
+    "it": {
+     "t": "Selettori, proprietà e valori",
+     "g": "Leggi e scrivi una regola CSS dall'inizio alla fine.",
+     "p": [
+      "Un selettore sceglie elementi, come p o h1.",
+      "Tra le graffe, ogni dichiarazione è una proprietà, due punti e un valore.",
+      "Chiudi ogni dichiarazione con un punto e virgola perché le regole non si rompano."
+     ],
+     "q": "Sai scrivere una regola che rende tutti i paragrafi grigio scuro?",
+     "c": "Scrivi tre regole: una per body, una per h1 e una per p."
+    },
+    "pt": {
+     "t": "Seletores, propriedades e valores",
+     "g": "Lê e escreve uma regra CSS do princípio ao fim.",
+     "p": [
+      "Um seletor escolhe elementos, como p ou h1.",
+      "Entre chavetas, cada declaração é uma propriedade, dois pontos e um valor.",
+      "Termina cada declaração com ponto e vírgula para as regras não falharem."
+     ],
+     "q": "Sabes escrever uma regra que deixe todos os parágrafos cinzento-escuro?",
+     "c": "Escreve três regras: uma para body, uma para h1 e uma para p."
+    },
+    "pt_BR": {
+     "t": "Seletores, propriedades e valores",
+     "g": "Leia e escreva uma regra CSS do começo ao fim.",
+     "p": [
+      "Um seletor escolhe elementos, como p ou h1.",
+      "Entre chaves, cada declaração é uma propriedade, dois pontos e um valor.",
+      "Termine cada declaração com ponto e vírgula para as regras não quebrarem."
+     ],
+     "q": "Você sabe escrever uma regra que deixe todos os parágrafos cinza-escuro?",
+     "c": "Escreva três regras: uma para body, uma para h1 e uma para p."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Three ways to add CSS",
+     "g": "Choose the right way to attach styles to a page.",
+     "p": [
+      "Inline styles sit in a style attribute on one element.",
+      "A style block in the head styles a single page.",
+      "An external file linked with link rel stylesheet styles many pages at once."
+     ],
+     "q": "Why do you think one shared file is easier to maintain?",
+     "c": "Move your styles into style.css and link it from your page."
+    },
+    "de": {
+     "t": "Drei Wege, CSS einzubinden",
+     "g": "Wähle den passenden Weg, Stile an eine Seite zu binden.",
+     "p": [
+      "Inline-Stile stehen im style-Attribut eines einzelnen Elements.",
+      "Ein style-Block im head gestaltet eine einzelne Seite.",
+      "Eine externe Datei, per link rel stylesheet eingebunden, gestaltet viele Seiten zugleich."
+     ],
+     "q": "Warum ist eine gemeinsame Datei wohl leichter zu pflegen?",
+     "c": "Verschiebe deine Stile in style.css und binde sie in deine Seite ein."
+    },
+    "es": {
+     "t": "Tres formas de añadir CSS",
+     "g": "Elige la forma adecuada de aplicar estilos a una página.",
+     "p": [
+      "Los estilos en línea van en el atributo style de un solo elemento.",
+      "Un bloque style en el head da estilo a una sola página.",
+      "Un archivo externo enlazado con link rel stylesheet da estilo a muchas páginas a la vez."
+     ],
+     "q": "¿Por qué crees que un archivo compartido es más fácil de mantener?",
+     "c": "Mueve tus estilos a style.css y enlázalo desde tu página."
+    },
+    "fr": {
+     "t": "Trois façons d'ajouter du CSS",
+     "g": "Choisis la bonne façon d'appliquer des styles à une page.",
+     "p": [
+      "Les styles en ligne se placent dans l'attribut style d'un seul élément.",
+      "Un bloc style dans le head stylise une seule page.",
+      "Un fichier externe lié avec link rel stylesheet stylise plusieurs pages à la fois."
+     ],
+     "q": "Pourquoi un fichier partagé est-il plus facile à maintenir, selon toi ?",
+     "c": "Déplace tes styles dans style.css et lie-le depuis ta page."
+    },
+    "it": {
+     "t": "Tre modi per aggiungere CSS",
+     "g": "Scegli il modo giusto per collegare gli stili a una pagina.",
+     "p": [
+      "Gli stili inline stanno nell'attributo style di un solo elemento.",
+      "Un blocco style nel head dà stile a una sola pagina.",
+      "Un file esterno collegato con link rel stylesheet dà stile a molte pagine insieme."
+     ],
+     "q": "Perché secondo te un file condiviso è più facile da mantenere?",
+     "c": "Sposta i tuoi stili in style.css e collegalo dalla pagina."
+    },
+    "pt": {
+     "t": "Três formas de adicionar CSS",
+     "g": "Escolhe a forma certa de aplicar estilos a uma página.",
+     "p": [
+      "Os estilos em linha ficam no atributo style de um só elemento.",
+      "Um bloco style no head dá estilo a uma só página.",
+      "Um ficheiro externo ligado com link rel stylesheet dá estilo a muitas páginas de uma vez."
+     ],
+     "q": "Porque achas que um ficheiro partilhado é mais fácil de manter?",
+     "c": "Move os teus estilos para style.css e liga-o a partir da tua página."
+    },
+    "pt_BR": {
+     "t": "Três jeitos de adicionar CSS",
+     "g": "Escolha o jeito certo de aplicar estilos a uma página.",
+     "p": [
+      "Estilos inline ficam no atributo style de um só elemento.",
+      "Um bloco style no head dá estilo a uma só página.",
+      "Um arquivo externo ligado com link rel stylesheet dá estilo a muitas páginas de uma vez."
+     ],
+     "q": "Por que você acha que um arquivo compartilhado é mais fácil de manter?",
+     "c": "Mova seus estilos para style.css e ligue-o a partir da sua página."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Classes and IDs",
+     "g": "Target groups of elements, or one special element, precisely.",
+     "p": [
+      "A class is added with class and selected with a dot, like .card.",
+      "An id is unique on the page and selected with a hash, like #intro.",
+      "Prefer classes for styling; they can be reused as often as you like."
+     ],
+     "q": "Which parts of your page would share one class?",
+     "c": "Give two paragraphs the class note and style .note with a background."
+    },
+    "de": {
+     "t": "Klassen und IDs",
+     "g": "Wähle Gruppen von Elementen oder ein besonderes Element genau aus.",
+     "p": [
+      "Eine Klasse setzt du mit class und wählst sie mit Punkt, etwa .card.",
+      "Eine id ist auf der Seite einmalig und wird mit Raute gewählt, etwa #intro.",
+      "Nutze fürs Styling bevorzugt Klassen; sie sind beliebig oft wiederverwendbar."
+     ],
+     "q": "Welche Teile deiner Seite würden sich eine Klasse teilen?",
+     "c": "Gib zwei Absätzen die Klasse note und gestalte .note mit einem Hintergrund."
+    },
+    "es": {
+     "t": "Clases e IDs",
+     "g": "Selecciona con precisión grupos de elementos o un elemento especial.",
+     "p": [
+      "Una clase se añade con class y se selecciona con un punto, como .card.",
+      "Un id es único en la página y se selecciona con almohadilla, como #intro.",
+      "Prefiere clases para dar estilo; se reutilizan tantas veces como quieras."
+     ],
+     "q": "¿Qué partes de tu página compartirían una clase?",
+     "c": "Da a dos párrafos la clase note y da estilo a .note con un fondo."
+    },
+    "fr": {
+     "t": "Classes et ID",
+     "g": "Cible avec précision des groupes d'éléments, ou un élément particulier.",
+     "p": [
+      "Une classe s'ajoute avec class et se sélectionne avec un point, comme .card.",
+      "Un id est unique dans la page et se sélectionne avec un dièse, comme #intro.",
+      "Préfère les classes pour le style ; elles se réutilisent autant que tu veux."
+     ],
+     "q": "Quelles parties de ta page partageraient une même classe ?",
+     "c": "Donne la classe note à deux paragraphes et stylise .note avec un fond."
+    },
+    "it": {
+     "t": "Classi e ID",
+     "g": "Seleziona con precisione gruppi di elementi o un elemento speciale.",
+     "p": [
+      "Una classe si aggiunge con class e si seleziona con un punto, come .card.",
+      "Un id è unico nella pagina e si seleziona con il cancelletto, come #intro.",
+      "Preferisci le classi per lo stile; si riusano quanto vuoi."
+     ],
+     "q": "Quali parti della tua pagina condividerebbero una classe?",
+     "c": "Dai a due paragrafi la classe note e stilizza .note con uno sfondo."
+    },
+    "pt": {
+     "t": "Classes e IDs",
+     "g": "Seleciona com precisão grupos de elementos ou um elemento especial.",
+     "p": [
+      "Uma classe adiciona-se com class e seleciona-se com um ponto, como .card.",
+      "Um id é único na página e seleciona-se com cardinal, como #intro.",
+      "Prefere classes para dar estilo; reutilizam-se as vezes que quiseres."
+     ],
+     "q": "Que partes da tua página partilhariam uma classe?",
+     "c": "Dá a dois parágrafos a classe note e estiliza .note com um fundo."
+    },
+    "pt_BR": {
+     "t": "Classes e IDs",
+     "g": "Selecione com precisão grupos de elementos ou um elemento especial.",
+     "p": [
+      "Uma classe se adiciona com class e se seleciona com um ponto, como .card.",
+      "Um id é único na página e se seleciona com jogo da velha, como #intro.",
+      "Prefira classes para estilizar; elas se reutilizam quantas vezes quiser."
+     ],
+     "q": "Que partes da sua página compartilhariam uma classe?",
+     "c": "Dê a dois parágrafos a classe note e estilize .note com um fundo."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The cascade and specificity",
+     "g": "Predict which rule wins when two rules disagree.",
+     "p": [
+      "Later rules beat earlier ones when they are equally specific.",
+      "An id selector beats a class, and a class beats an element selector.",
+      "Avoid important; it makes later changes hard to manage."
+     ],
+     "q": "Have you ever changed a style that seemed to be ignored?",
+     "c": "Write two conflicting rules for a paragraph and see which one wins."
+    },
+    "de": {
+     "t": "Kaskade und Spezifität",
+     "g": "Sage voraus, welche Regel gewinnt, wenn zwei sich widersprechen.",
+     "p": [
+      "Spätere Regeln schlagen frühere, wenn sie gleich spezifisch sind.",
+      "Ein id-Selektor schlägt eine Klasse, und eine Klasse schlägt einen Elementselektor.",
+      "Vermeide important; es erschwert spätere Änderungen."
+     ],
+     "q": "Hast du schon mal einen Stil geändert, der scheinbar ignoriert wurde?",
+     "c": "Schreibe zwei widersprüchliche Regeln für einen Absatz und sieh, welche gewinnt."
+    },
+    "es": {
+     "t": "La cascada y la especificidad",
+     "g": "Predice qué regla gana cuando dos reglas se contradicen.",
+     "p": [
+      "Las reglas posteriores ganan a las anteriores si tienen igual especificidad.",
+      "Un selector de id gana a una clase, y una clase gana a un selector de elemento.",
+      "Evita important; complica los cambios posteriores."
+     ],
+     "q": "¿Alguna vez cambiaste un estilo que parecía ignorarse?",
+     "c": "Escribe dos reglas contradictorias para un párrafo y mira cuál gana."
+    },
+    "fr": {
+     "t": "La cascade et la spécificité",
+     "g": "Prévois quelle règle l'emporte quand deux règles se contredisent.",
+     "p": [
+      "Les règles plus tardives l'emportent sur les précédentes à spécificité égale.",
+      "Un sélecteur d'id bat une classe, et une classe bat un sélecteur d'élément.",
+      "Évite important ; il complique les changements ultérieurs."
+     ],
+     "q": "As-tu déjà modifié un style qui semblait ignoré ?",
+     "c": "Écris deux règles contradictoires pour un paragraphe et regarde laquelle gagne."
+    },
+    "it": {
+     "t": "La cascata e la specificità",
+     "g": "Prevedi quale regola vince quando due regole sono in conflitto.",
+     "p": [
+      "Le regole successive battono le precedenti a parità di specificità.",
+      "Un selettore id batte una classe, e una classe batte un selettore di elemento.",
+      "Evita important; rende difficili le modifiche successive."
+     ],
+     "q": "Ti è mai capitato di cambiare uno stile che sembrava ignorato?",
+     "c": "Scrivi due regole in conflitto per un paragrafo e guarda quale vince."
+    },
+    "pt": {
+     "t": "A cascata e a especificidade",
+     "g": "Prevê qual regra ganha quando duas regras se contradizem.",
+     "p": [
+      "As regras posteriores vencem as anteriores com a mesma especificidade.",
+      "Um seletor de id vence uma classe, e uma classe vence um seletor de elemento.",
+      "Evita important; torna as alterações futuras difíceis de gerir."
+     ],
+     "q": "Já alteraste um estilo que parecia ser ignorado?",
+     "c": "Escreve duas regras contraditórias para um parágrafo e vê qual ganha."
+    },
+    "pt_BR": {
+     "t": "A cascata e a especificidade",
+     "g": "Preveja qual regra vence quando duas regras se contradizem.",
+     "p": [
+      "Regras posteriores vencem as anteriores com a mesma especificidade.",
+      "Um seletor de id vence uma classe, e uma classe vence um seletor de elemento.",
+      "Evite important; ele dificulta mudanças futuras."
+     ],
+     "q": "Você já mudou um estilo que parecia ser ignorado?",
+     "c": "Escreva duas regras contraditórias para um parágrafo e veja qual vence."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Inheritance in CSS",
+     "g": "Use inheritance to style less and stay consistent.",
+     "p": [
+      "Properties like color and font-family pass from parent to children.",
+      "Box properties such as margin and border do not inherit.",
+      "Set base fonts and colours on body and let the rest follow."
+     ],
+     "q": "Which style would you set once on body for your whole page?",
+     "c": "Set font-family and color on body, then check nested elements."
+    },
+    "de": {
+     "t": "Vererbung in CSS",
+     "g": "Nutze Vererbung, um weniger zu gestalten und konsistent zu bleiben.",
+     "p": [
+      "Eigenschaften wie color und font-family gehen vom Elternelement auf Kinder über.",
+      "Box-Eigenschaften wie margin und border werden nicht vererbt.",
+      "Setze Grundschrift und -farbe auf body und lass den Rest folgen."
+     ],
+     "q": "Welchen Stil würdest du einmal auf body für die ganze Seite setzen?",
+     "c": "Setze font-family und color auf body und prüfe die verschachtelten Elemente."
+    },
+    "es": {
+     "t": "La herencia en CSS",
+     "g": "Usa la herencia para escribir menos estilos y ser coherente.",
+     "p": [
+      "Propiedades como color y font-family pasan del elemento padre a los hijos.",
+      "Propiedades de caja como margin y border no se heredan.",
+      "Define fuente y color base en body y deja que el resto los siga."
+     ],
+     "q": "¿Qué estilo fijarías una sola vez en body para toda tu página?",
+     "c": "Define font-family y color en body y revisa los elementos anidados."
+    },
+    "fr": {
+     "t": "L'héritage en CSS",
+     "g": "Utilise l'héritage pour écrire moins de styles et rester cohérent.",
+     "p": [
+      "Des propriétés comme color et font-family passent du parent aux enfants.",
+      "Les propriétés de boîte comme margin et border ne s'héritent pas.",
+      "Définis police et couleur de base sur body et laisse le reste suivre."
+     ],
+     "q": "Quel style définirais-tu une seule fois sur body pour toute ta page ?",
+     "c": "Définis font-family et color sur body, puis vérifie les éléments imbriqués."
+    },
+    "it": {
+     "t": "L'ereditarietà in CSS",
+     "g": "Usa l'ereditarietà per scrivere meno stili e restare coerente.",
+     "p": [
+      "Proprietà come color e font-family passano dal genitore ai figli.",
+      "Le proprietà del box come margin e border non si ereditano.",
+      "Imposta font e colore di base su body e lascia che il resto segua."
+     ],
+     "q": "Quale stile imposteresti una volta sola su body per tutta la pagina?",
+     "c": "Imposta font-family e color su body e controlla gli elementi annidati."
+    },
+    "pt": {
+     "t": "A herança em CSS",
+     "g": "Usa a herança para escrever menos estilos e manter a coerência.",
+     "p": [
+      "Propriedades como color e font-family passam do elemento pai para os filhos.",
+      "Propriedades de caixa como margin e border não são herdadas.",
+      "Define fonte e cor base no body e deixa o resto acompanhar."
+     ],
+     "q": "Que estilo definirias uma só vez no body para toda a página?",
+     "c": "Define font-family e color no body e verifica os elementos aninhados."
+    },
+    "pt_BR": {
+     "t": "Herança em CSS",
+     "g": "Use a herança para escrever menos estilos e manter a coerência.",
+     "p": [
+      "Propriedades como color e font-family passam do elemento pai para os filhos.",
+      "Propriedades de caixa como margin e border não são herdadas.",
+      "Defina fonte e cor base no body e deixe o resto acompanhar."
+     ],
+     "q": "Que estilo você definiria uma só vez no body para a página toda?",
+     "c": "Defina font-family e color no body e verifique os elementos aninhados."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Colours in CSS",
+     "g": "Describe the same colour in several ways and pick the handiest.",
+     "p": [
+      "Named colours like tomato are easy; hex codes like #1a7f64 are precise.",
+      "RGB mixes red, green and blue; HSL uses hue, saturation and lightness.",
+      "HSL is friendly for tweaking, such as making a colour lighter."
+     ],
+     "q": "Which colour would you choose as the main one for your site?",
+     "c": "Write one colour as a name, as hex and as hsl, and compare them."
+    },
+    "de": {
+     "t": "Farben in CSS",
+     "g": "Beschreibe dieselbe Farbe auf mehrere Arten und wähle die handlichste.",
+     "p": [
+      "Farbnamen wie tomato sind einfach; Hexcodes wie #1a7f64 sind präzise.",
+      "RGB mischt Rot, Grün und Blau; HSL nutzt Farbton, Sättigung und Helligkeit.",
+      "HSL eignet sich gut zum Feinjustieren, etwa um eine Farbe aufzuhellen."
+     ],
+     "q": "Welche Farbe würdest du als Hauptfarbe deiner Seite wählen?",
+     "c": "Schreibe eine Farbe als Name, als Hex und als hsl und vergleiche sie."
+    },
+    "es": {
+     "t": "Colores en CSS",
+     "g": "Describe el mismo color de varias formas y elige la más cómoda.",
+     "p": [
+      "Los nombres como tomato son fáciles; los códigos hex como #1a7f64 son precisos.",
+      "RGB mezcla rojo, verde y azul; HSL usa matiz, saturación y luminosidad.",
+      "HSL es cómodo para ajustar, por ejemplo aclarar un color."
+     ],
+     "q": "¿Qué color elegirías como principal para tu sitio?",
+     "c": "Escribe un color como nombre, como hex y como hsl y compáralos."
+    },
+    "fr": {
+     "t": "Les couleurs en CSS",
+     "g": "Décris la même couleur de plusieurs façons et choisis la plus pratique.",
+     "p": [
+      "Les noms comme tomato sont simples ; les codes hex comme #1a7f64 sont précis.",
+      "RGB mélange rouge, vert et bleu ; HSL utilise teinte, saturation et luminosité.",
+      "HSL est pratique pour ajuster, par exemple éclaircir une couleur."
+     ],
+     "q": "Quelle couleur choisirais-tu comme principale pour ton site ?",
+     "c": "Écris une couleur sous forme de nom, de hex et de hsl, puis compare."
+    },
+    "it": {
+     "t": "I colori in CSS",
+     "g": "Descrivi lo stesso colore in più modi e scegli il più comodo.",
+     "p": [
+      "I nomi come tomato sono facili; i codici hex come #1a7f64 sono precisi.",
+      "RGB mescola rosso, verde e blu; HSL usa tinta, saturazione e luminosità.",
+      "HSL è comodo per ritoccare, ad esempio schiarire un colore."
+     ],
+     "q": "Quale colore sceglieresti come principale per il tuo sito?",
+     "c": "Scrivi un colore come nome, come hex e come hsl e confrontali."
+    },
+    "pt": {
+     "t": "Cores em CSS",
+     "g": "Descreve a mesma cor de várias formas e escolhe a mais prática.",
+     "p": [
+      "Nomes como tomato são fáceis; códigos hex como #1a7f64 são precisos.",
+      "O RGB mistura vermelho, verde e azul; o HSL usa matiz, saturação e luminosidade.",
+      "O HSL é cómodo para ajustar, por exemplo para aclarar uma cor."
+     ],
+     "q": "Que cor escolherias como principal para o teu site?",
+     "c": "Escreve uma cor como nome, como hex e como hsl e compara-as."
+    },
+    "pt_BR": {
+     "t": "Cores em CSS",
+     "g": "Descreva a mesma cor de várias formas e escolha a mais prática.",
+     "p": [
+      "Nomes como tomato são fáceis; códigos hex como #1a7f64 são precisos.",
+      "O RGB mistura vermelho, verde e azul; o HSL usa matiz, saturação e luminosidade.",
+      "O HSL é prático para ajustar, por exemplo para clarear uma cor."
+     ],
+     "q": "Que cor você escolheria como principal do seu site?",
+     "c": "Escreva uma cor como nome, como hex e como hsl e compare."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: first steps on the web",
+     "g": "Recap how the web works plus the basics of HTML and CSS.",
+     "p": [
+      "Browsers request files from servers and turn HTML, CSS and JavaScript into pages.",
+      "HTML gives structure with elements and attributes; CSS styles them with rules.",
+      "Validating, tidy code and dev tools help you find and fix mistakes."
+     ],
+     "q": "Which of the last 29 days felt easiest, and which would you revisit?",
+     "c": "Without peeking, write a page with a heading, a link, an image and a CSS rule."
+    },
+    "de": {
+     "t": "Rückblick: erste Schritte im Web",
+     "g": "Wiederhole, wie das Web funktioniert, plus die Grundlagen von HTML und CSS.",
+     "p": [
+      "Browser fordern Dateien von Servern an und machen aus HTML, CSS und JavaScript Seiten.",
+      "HTML liefert Struktur mit Elementen und Attributen; CSS gestaltet sie mit Regeln.",
+      "Validieren, ordentlicher Code und Entwicklerwerkzeuge helfen beim Finden von Fehlern."
+     ],
+     "q": "Welcher der letzten 29 Tage fiel dir am leichtesten, welchen würdest du wiederholen?",
+     "c": "Schreibe ohne Spicken eine Seite mit Überschrift, Link, Bild und einer CSS-Regel."
+    },
+    "es": {
+     "t": "Repaso: primeros pasos en la web",
+     "g": "Repasa cómo funciona la web y las bases de HTML y CSS.",
+     "p": [
+      "Los navegadores piden archivos a servidores y convierten HTML, CSS y JavaScript en páginas.",
+      "HTML da estructura con elementos y atributos; CSS les da estilo con reglas.",
+      "Validar, ordenar el código y usar las herramientas de desarrollo ayuda a corregir errores."
+     ],
+     "q": "¿Cuál de los últimos 29 días te resultó más fácil y cuál repasarías?",
+     "c": "Sin mirar, escribe una página con un título, un enlace, una imagen y una regla CSS."
+    },
+    "fr": {
+     "t": "Révision : premiers pas sur le web",
+     "g": "Revois le fonctionnement du web et les bases de HTML et CSS.",
+     "p": [
+      "Les navigateurs demandent des fichiers aux serveurs et transforment HTML, CSS et JavaScript en pages.",
+      "Le HTML donne la structure avec éléments et attributs ; le CSS les stylise avec des règles.",
+      "Valider, ordonner le code et utiliser les outils de développement aide à corriger les erreurs."
+     ],
+     "q": "Lequel des 29 derniers jours t'a paru le plus facile, lequel revisiterais-tu ?",
+     "c": "Sans regarder, écris une page avec un titre, un lien, une image et une règle CSS."
+    },
+    "it": {
+     "t": "Ripasso: primi passi nel web",
+     "g": "Ripassa come funziona il web e le basi di HTML e CSS.",
+     "p": [
+      "I browser chiedono file ai server e trasformano HTML, CSS e JavaScript in pagine.",
+      "L'HTML dà struttura con elementi e attributi; il CSS li stilizza con regole.",
+      "Validare, ordinare il codice e usare gli strumenti di sviluppo aiuta a correggere gli errori."
+     ],
+     "q": "Quale degli ultimi 29 giorni ti è sembrato più facile e quale ripasseresti?",
+     "c": "Senza sbirciare, scrivi una pagina con titolo, link, immagine e una regola CSS."
+    },
+    "pt": {
+     "t": "Revisão: primeiros passos na web",
+     "g": "Revê como funciona a web e as bases de HTML e CSS.",
+     "p": [
+      "Os navegadores pedem ficheiros aos servidores e transformam HTML, CSS e JavaScript em páginas.",
+      "O HTML dá estrutura com elementos e atributos; o CSS estiliza-os com regras.",
+      "Validar, arrumar o código e usar as ferramentas de programador ajuda a corrigir erros."
+     ],
+     "q": "Qual dos últimos 29 dias achaste mais fácil e qual reverias?",
+     "c": "Sem espreitar, escreve uma página com título, ligação, imagem e uma regra CSS."
+    },
+    "pt_BR": {
+     "t": "Revisão: primeiros passos na web",
+     "g": "Revise como a web funciona e as bases de HTML e CSS.",
+     "p": [
+      "Navegadores pedem arquivos a servidores e transformam HTML, CSS e JavaScript em páginas.",
+      "O HTML dá estrutura com elementos e atributos; o CSS os estiliza com regras.",
+      "Validar, organizar o código e usar as ferramentas de desenvolvedor ajuda a corrigir erros."
+     ],
+     "q": "Qual dos últimos 29 dias você achou mais fácil e qual revisitaria?",
+     "c": "Sem espiar, escreva uma página com título, link, imagem e uma regra CSS."
+    }
+   }
+  }
+ ]
+}

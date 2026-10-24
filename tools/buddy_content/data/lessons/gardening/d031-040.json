@@ -1,0 +1,835 @@
+{
+ "topic": "gardening",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Houseplant care routine",
+     "g": "Build a simple weekly check: water, look at leaves, turn the pot, remove dust.",
+     "p": [
+      "Pick one day a week for a calm round: check soil, look at leaves and stems, and remove dead leaves.",
+      "Turn each pot a quarter turn and wipe a few dusty leaves while you are there.",
+      "A short routine beats occasional big efforts, and you spot pests and problems early."
+     ],
+     "q": "Which day and time of the week would suit a plant round for you?",
+     "c": "Today, do your first plant round and note it in your journal."
+    },
+    "de": {
+     "t": "Pflegeroutine für Zimmerpflanzen",
+     "g": "Baue einen einfachen Wochencheck auf: gießen, Blätter ansehen, Topf drehen, Staub wischen.",
+     "p": [
+      "Wähle einen Tag pro Woche für eine ruhige Runde: Erde prüfen, Blätter und Stängel ansehen, Welkes entfernen.",
+      "Drehe jeden Topf eine Vierteldrehung und wische dabei ein paar staubige Blätter ab.",
+      "Eine kurze Routine schlägt seltene Großaktionen, und du entdeckst Schädlinge und Probleme früh."
+     ],
+     "q": "Welcher Wochentag und welche Uhrzeit würde für deine Pflanzenrunde passen?",
+     "c": "Mache heute deine erste Pflanzenrunde und notiere sie im Tagebuch."
+    },
+    "es": {
+     "t": "Rutina de cuidado de plantas de interior",
+     "g": "Crea una revisión semanal sencilla: riego, hojas, girar la maceta y quitar polvo.",
+     "p": [
+      "Elige un día a la semana para una ronda tranquila: revisa la tierra, hojas y tallos, y quita lo seco.",
+      "Gira cada maceta un cuarto de vuelta y limpia unas hojas con polvo mientras estás ahí.",
+      "Una rutina corta vale más que esfuerzos grandes ocasionales, y detectas plagas y problemas a tiempo."
+     ],
+     "q": "¿Qué día y hora de la semana te vendría bien para una ronda de plantas?",
+     "c": "Hoy haz tu primera ronda de plantas y anótala en tu diario."
+    },
+    "fr": {
+     "t": "Routine d'entretien des plantes d'intérieur",
+     "g": "Crée un contrôle hebdomadaire simple : arrosage, feuilles, rotation du pot, dépoussiérage.",
+     "p": [
+      "Choisis un jour par semaine pour une ronde tranquille : terre, feuilles et tiges, et retire ce qui est sec.",
+      "Tourne chaque pot d'un quart de tour et essuie quelques feuilles poussiéreuses au passage.",
+      "Une courte routine vaut mieux que de gros efforts occasionnels, et tu repères tôt parasites et problèmes."
+     ],
+     "q": "Quel jour et quelle heure de la semaine te conviendraient pour une ronde des plantes ?",
+     "c": "Aujourd'hui, fais ta première ronde et note-la dans ton journal."
+    },
+    "it": {
+     "t": "Routine di cura delle piante da appartamento",
+     "g": "Crea un controllo settimanale semplice: acqua, foglie, rotazione del vaso, polvere.",
+     "p": [
+      "Scegli un giorno a settimana per un giro tranquillo: controlla terra, foglie e fusti e togli le parti secche.",
+      "Ruota ogni vaso di un quarto di giro e spolvera qualche foglia mentre ci sei.",
+      "Una routine breve vale più di rari grandi sforzi, e noti presto parassiti e problemi."
+     ],
+     "q": "Quale giorno e orario della settimana andrebbe bene per il tuo giro delle piante?",
+     "c": "Oggi fai il tuo primo giro delle piante e annotalo nel diario."
+    },
+    "pt": {
+     "t": "Rotina de cuidados das plantas de interior",
+     "g": "Cria uma verificação semanal simples: rega, folhas, rodar o vaso e limpar o pó.",
+     "p": [
+      "Escolhe um dia por semana para uma ronda calma: verifica a terra, folhas e caules e tira o que estiver seco.",
+      "Roda cada vaso um quarto de volta e limpa algumas folhas com pó enquanto lá estás.",
+      "Uma rotina curta vale mais do que grandes esforços ocasionais, e detetas pragas e problemas cedo."
+     ],
+     "q": "Que dia e hora da semana te serviriam para uma ronda das plantas?",
+     "c": "Hoje faz a tua primeira ronda das plantas e anota-a no diário."
+    },
+    "pt_BR": {
+     "t": "Rotina de cuidados das plantas de interior",
+     "g": "Crie uma checagem semanal simples: rega, folhas, girar o vaso e tirar o pó.",
+     "p": [
+      "Escolha um dia por semana para uma ronda tranquila: confira a terra, folhas e caules e tire o que estiver seco.",
+      "Gire cada vaso um quarto de volta e limpe algumas folhas empoeiradas enquanto está ali.",
+      "Uma rotina curta vale mais que grandes esforços ocasionais, e você percebe pragas e problemas cedo."
+     ],
+     "q": "Que dia e horário da semana serviriam para sua ronda das plantas?",
+     "c": "Hoje faça sua primeira ronda das plantas e anote no diário."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Humidity and houseplants",
+     "g": "Learn why tropical plants like moist air and how to raise humidity indoors.",
+     "p": [
+      "Many houseplants come from tropical forests, so they enjoy air around forty to sixty percent humidity.",
+      "Heating and air conditioning dry the air, and brown crispy leaf tips are a common sign.",
+      "Try a humidifier, a pebble tray with water beneath the pot, or simply grouping plants together."
+     ],
+     "q": "Is the air in your home dry, damp or somewhere in between?",
+     "c": "Today, notice which of your plants have brown tips and think about where the air is driest."
+    },
+    "de": {
+     "t": "Luftfeuchtigkeit und Zimmerpflanzen",
+     "g": "Lerne, warum tropische Pflanzen feuchte Luft mögen und wie du sie im Haus erhöhst.",
+     "p": [
+      "Viele Zimmerpflanzen stammen aus Tropenwäldern und mögen etwa vierzig bis sechzig Prozent Luftfeuchte.",
+      "Heizung und Klimaanlage trocknen die Luft, braune trockene Blattspitzen sind ein häufiges Zeichen.",
+      "Probiere einen Luftbefeuchter, eine Kiesschale mit Wasser unter dem Topf oder gruppiere Pflanzen einfach."
+     ],
+     "q": "Ist die Luft bei dir zu Hause trocken, feucht oder dazwischen?",
+     "c": "Achte heute darauf, welche Pflanzen braune Spitzen haben, und überlege, wo die Luft am trockensten ist."
+    },
+    "es": {
+     "t": "Humedad y plantas de interior",
+     "g": "Aprende por qué las plantas tropicales aman el aire húmedo y cómo subir la humedad en casa.",
+     "p": [
+      "Muchas plantas de interior vienen de selvas tropicales y disfrutan de una humedad del aire del cuarenta al sesenta por ciento.",
+      "La calefacción y el aire acondicionado secan el aire y las puntas marrones y quebradizas son una señal común.",
+      "Prueba un humidificador, una bandeja con piedras y agua bajo la maceta, o simplemente agrupa las plantas."
+     ],
+     "q": "¿El aire de tu casa es seco, húmedo o intermedio?",
+     "c": "Hoy fíjate qué plantas tienen puntas marrones y piensa dónde el aire es más seco."
+    },
+    "fr": {
+     "t": "Humidité et plantes d'intérieur",
+     "g": "Apprends pourquoi les plantes tropicales aiment l'air humide et comment l'augmenter chez toi.",
+     "p": [
+      "Beaucoup de plantes d'intérieur viennent de forêts tropicales et apprécient une humidité de quarante à soixante pour cent.",
+      "Chauffage et climatisation assèchent l'air : des pointes de feuilles brunes et sèches en sont un signe courant.",
+      "Essaie un humidificateur, un plateau de galets avec de l'eau sous le pot, ou simplement regroupe les plantes."
+     ],
+     "q": "L'air de ton logement est-il sec, humide ou entre les deux ?",
+     "c": "Aujourd'hui, repère les plantes aux pointes brunes et pense à l'endroit où l'air est le plus sec."
+    },
+    "it": {
+     "t": "Umidità e piante da appartamento",
+     "g": "Scopri perché le piante tropicali amano l'aria umida e come aumentarla in casa.",
+     "p": [
+      "Molte piante da appartamento vengono da foreste tropicali e gradiscono un'umidità dell'aria tra il quaranta e il sessanta per cento.",
+      "Riscaldamento e aria condizionata seccano l'aria, e punte marroni e secche sono un segno comune.",
+      "Prova un umidificatore, un vassoio di ciottoli con acqua sotto il vaso o semplicemente raggruppa le piante."
+     ],
+     "q": "L'aria di casa tua è secca, umida o via di mezzo?",
+     "c": "Oggi nota quali piante hanno punte marroni e pensa dove l'aria è più secca."
+    },
+    "pt": {
+     "t": "Humidade e plantas de interior",
+     "g": "Aprende por que as plantas tropicais gostam de ar húmido e como aumentar a humidade em casa.",
+     "p": [
+      "Muitas plantas de interior vêm de florestas tropicais e gostam de humidade do ar entre quarenta e sessenta por cento.",
+      "O aquecimento e o ar condicionado secam o ar, e pontas castanhas e quebradiças são um sinal comum.",
+      "Experimenta um humidificador, um tabuleiro com pedras e água sob o vaso, ou simplesmente agrupa as plantas."
+     ],
+     "q": "O ar da tua casa é seco, húmido ou intermédio?",
+     "c": "Hoje repara que plantas têm pontas castanhas e pensa onde o ar é mais seco."
+    },
+    "pt_BR": {
+     "t": "Umidade e plantas de interior",
+     "g": "Aprenda por que plantas tropicais gostam de ar úmido e como aumentar a umidade em casa.",
+     "p": [
+      "Muitas plantas de interior vêm de florestas tropicais e gostam de umidade do ar entre quarenta e sessenta por cento.",
+      "Aquecedor e ar-condicionado secam o ar, e pontas marrons e quebradiças são um sinal comum.",
+      "Experimente um umidificador, uma bandeja com pedras e água sob o vaso, ou simplesmente agrupe as plantas."
+     ],
+     "q": "O ar da sua casa é seco, úmido ou intermediário?",
+     "c": "Hoje repare quais plantas têm pontas marrons e pense onde o ar é mais seco."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Grouping plants together",
+     "g": "See how clustering plants creates a small humid microclimate.",
+     "p": [
+      "Plants release water vapour through their leaves, so a group raises the humidity around itself.",
+      "Put thirsty, humidity-loving plants together and leave a little space so air still circulates.",
+      "Crowding with no gaps invites fungus and pests, so leaves should touch lightly at most."
+     ],
+     "q": "Do your plants live apart or together? How would they look in a cluster?",
+     "c": "Today, move two or three plants with similar needs together and watch how they look in a week."
+    },
+    "de": {
+     "t": "Pflanzen gruppieren",
+     "g": "Sieh, wie eine Pflanzengruppe ein kleines feuchtes Mikroklima schafft.",
+     "p": [
+      "Pflanzen geben über die Blätter Wasserdampf ab, eine Gruppe erhöht so die Luftfeuchte um sich herum.",
+      "Stelle durstige, feuchteliebende Pflanzen zusammen und lass etwas Platz, damit Luft zirkuliert.",
+      "Zu dichtes Gedränge fördert Pilze und Schädlinge, Blätter sollten sich höchstens leicht berühren."
+     ],
+     "q": "Stehen deine Pflanzen einzeln oder zusammen? Wie sähen sie in einer Gruppe aus?",
+     "c": "Stelle heute zwei oder drei Pflanzen mit ähnlichen Ansprüchen zusammen und sieh nach einer Woche, wie sie wirken."
+    },
+    "es": {
+     "t": "Agrupar plantas",
+     "g": "Mira cómo agrupar plantas crea un pequeño microclima húmedo.",
+     "p": [
+      "Las plantas liberan vapor de agua por las hojas, así que un grupo sube la humedad a su alrededor.",
+      "Junta plantas sedientas que aman la humedad y deja algo de espacio para que circule el aire.",
+      "El amontonamiento sin huecos favorece hongos y plagas: las hojas deben rozarse apenas."
+     ],
+     "q": "¿Tus plantas viven separadas o juntas? ¿Cómo quedarían en grupo?",
+     "c": "Hoy junta dos o tres plantas con necesidades parecidas y mira cómo están en una semana."
+    },
+    "fr": {
+     "t": "Regrouper les plantes",
+     "g": "Vois comment un groupe de plantes crée un petit microclimat humide.",
+     "p": [
+      "Les plantes libèrent de la vapeur d'eau par les feuilles : un groupe augmente l'humidité autour de lui.",
+      "Rassemble des plantes assoiffées qui aiment l'humidité et laisse un peu d'espace pour que l'air circule.",
+      "Un entassement sans espace favorise champignons et parasites : les feuilles doivent se frôler au plus."
+     ],
+     "q": "Tes plantes vivent-elles séparées ou ensemble ? Comment seraient-elles en groupe ?",
+     "c": "Aujourd'hui, rapproche deux ou trois plantes aux besoins similaires et observe-les dans une semaine."
+    },
+    "it": {
+     "t": "Raggruppare le piante",
+     "g": "Scopri come un gruppo di piante crea un piccolo microclima umido.",
+     "p": [
+      "Le piante rilasciano vapore acqueo dalle foglie, quindi un gruppo aumenta l'umidità attorno a sé.",
+      "Metti insieme piante assetate che amano l'umidità e lascia un po' di spazio perché l'aria circoli.",
+      "L'affollamento senza spazi favorisce funghi e parassiti: le foglie devono sfiorarsi appena."
+     ],
+     "q": "Le tue piante vivono separate o insieme? Come starebbero in gruppo?",
+     "c": "Oggi avvicina due o tre piante con esigenze simili e osserva come stanno dopo una settimana."
+    },
+    "pt": {
+     "t": "Agrupar plantas",
+     "g": "Vê como agrupar plantas cria um pequeno microclima húmido.",
+     "p": [
+      "As plantas libertam vapor de água pelas folhas, por isso um grupo aumenta a humidade à sua volta.",
+      "Junta plantas sedentas que gostam de humidade e deixa algum espaço para o ar circular.",
+      "O aperto sem espaços favorece fungos e pragas: as folhas devem tocar-se apenas ao de leve."
+     ],
+     "q": "As tuas plantas vivem separadas ou juntas? Como ficariam em grupo?",
+     "c": "Hoje junta duas ou três plantas com necessidades parecidas e vê como estão numa semana."
+    },
+    "pt_BR": {
+     "t": "Agrupando plantas",
+     "g": "Veja como agrupar plantas cria um pequeno microclima úmido.",
+     "p": [
+      "As plantas liberam vapor de água pelas folhas, então um grupo aumenta a umidade ao redor.",
+      "Junte plantas sedentas que gostam de umidade e deixe algum espaço para o ar circular.",
+      "Aperto sem espaços favorece fungos e pragas: as folhas devem se tocar só de leve."
+     ],
+     "q": "Suas plantas vivem separadas ou juntas? Como ficariam em grupo?",
+     "c": "Hoje junte duas ou três plantas com necessidades parecidas e veja como estão em uma semana."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dusting and cleaning leaves",
+     "g": "Wipe leaves so they can breathe and catch more light.",
+     "p": [
+      "Dust blocks light and clogs the tiny pores leaves use to breathe, so clean leaves grow better.",
+      "Wipe each leaf gently with a soft damp cloth, supporting it from underneath with your other hand.",
+      "Small or fuzzy leaves, like African violets, are better brushed softly than wiped."
+     ],
+     "q": "When did you last clean your plants' leaves, if ever?",
+     "c": "Today, clean the leaves of one large plant with a damp cloth and notice how it looks."
+    },
+    "de": {
+     "t": "Blätter abstauben und reinigen",
+     "g": "Wische Blätter ab, damit sie atmen und mehr Licht aufnehmen können.",
+     "p": [
+      "Staub blockiert Licht und verstopft die winzigen Poren, durch die Blätter atmen, saubere Blätter wachsen besser.",
+      "Wische jedes Blatt sanft mit einem weichen feuchten Tuch ab und stütze es von unten mit der anderen Hand.",
+      "Kleine oder behaarte Blätter wie beim Usambaraveilchen bürstest du besser sanft ab, statt zu wischen."
+     ],
+     "q": "Wann hast du zuletzt die Blätter deiner Pflanzen gereinigt, falls überhaupt?",
+     "c": "Reinige heute die Blätter einer großen Pflanze mit einem feuchten Tuch und sieh, wie sie wirkt."
+    },
+    "es": {
+     "t": "Quitar el polvo de las hojas",
+     "g": "Limpia las hojas para que respiren y capten más luz.",
+     "p": [
+      "El polvo bloquea la luz y tapa los poros diminutos por los que respiran las hojas, y limpias crecen mejor.",
+      "Pasa con suavidad un paño húmedo y suave por cada hoja, sujetándola por debajo con la otra mano.",
+      "Las hojas pequeñas o con pelillos, como las violetas africanas, se cepillan suavemente en vez de frotarse."
+     ],
+     "q": "¿Cuándo limpiaste por última vez las hojas de tus plantas, si lo hiciste?",
+     "c": "Hoy limpia las hojas de una planta grande con un paño húmedo y mira cómo queda."
+    },
+    "fr": {
+     "t": "Dépoussiérer et nettoyer les feuilles",
+     "g": "Essuie les feuilles pour qu'elles respirent et captent plus de lumière.",
+     "p": [
+      "La poussière bloque la lumière et obstrue les minuscules pores de respiration : des feuilles propres poussent mieux.",
+      "Essuie chaque feuille doucement avec un chiffon doux et humide, en la soutenant par-dessous de l'autre main.",
+      "Les petites feuilles ou velues, comme celles des saintpaulias, se brossent doucement plutôt que de s'essuyer."
+     ],
+     "q": "Quand as-tu nettoyé pour la dernière fois les feuilles de tes plantes, si c'est déjà arrivé ?",
+     "c": "Aujourd'hui, nettoie les feuilles d'une grande plante avec un chiffon humide et observe le résultat."
+    },
+    "it": {
+     "t": "Spolverare e pulire le foglie",
+     "g": "Pulisci le foglie perché respirino e catturino più luce.",
+     "p": [
+      "La polvere blocca la luce e ostruisce i minuscoli pori con cui le foglie respirano: foglie pulite crescono meglio.",
+      "Pulisci ogni foglia con delicatezza con un panno morbido e umido, sostenendola da sotto con l'altra mano.",
+      "Le foglie piccole o pelose, come quelle delle violette africane, si spazzolano piano invece di strofinarle."
+     ],
+     "q": "Quando hai pulito l'ultima volta le foglie delle tue piante, se l'hai mai fatto?",
+     "c": "Oggi pulisci le foglie di una pianta grande con un panno umido e guarda come appare."
+    },
+    "pt": {
+     "t": "Tirar o pó das folhas",
+     "g": "Limpa as folhas para respirarem e captarem mais luz.",
+     "p": [
+      "O pó bloqueia a luz e entope os poros minúsculos por onde as folhas respiram, e folhas limpas crescem melhor.",
+      "Passa com suavidade um pano húmido e macio em cada folha, apoiando-a por baixo com a outra mão.",
+      "As folhas pequenas ou peludas, como as violetas-africanas, escovam-se suavemente em vez de se esfregarem."
+     ],
+     "q": "Quando limpaste pela última vez as folhas das tuas plantas, se é que o fizeste?",
+     "c": "Hoje limpa as folhas de uma planta grande com um pano húmido e vê como fica."
+    },
+    "pt_BR": {
+     "t": "Tirando o pó das folhas",
+     "g": "Limpe as folhas para respirarem e captarem mais luz.",
+     "p": [
+      "O pó bloqueia a luz e entope os poros minúsculos por onde as folhas respiram, e folhas limpas crescem melhor.",
+      "Passe com suavidade um pano úmido e macio em cada folha, apoiando-a por baixo com a outra mão.",
+      "Folhas pequenas ou peludas, como as das violetas-africanas, se escovam suavemente em vez de esfregar."
+     ],
+     "q": "Quando foi a última vez que limpou as folhas das suas plantas, se é que já fez?",
+     "c": "Hoje limpe as folhas de uma planta grande com um pano úmido e veja como fica."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rotating plants",
+     "g": "Turn pots regularly so plants grow evenly instead of leaning.",
+     "p": [
+      "Plants grow toward the light, so a pot left still will lean and grow lopsided.",
+      "A quarter turn once a week keeps growth balanced and the shape full on every side.",
+      "Make a mark on the pot rim so you remember which way you last turned it."
+     ],
+     "q": "Have you noticed any of your plants leaning toward a window?",
+     "c": "Today, give each plant a quarter turn and note which ones lean the most."
+    },
+    "de": {
+     "t": "Pflanzen drehen",
+     "g": "Drehe Töpfe regelmäßig, damit Pflanzen gleichmäßig wachsen statt sich zu neigen.",
+     "p": [
+      "Pflanzen wachsen zum Licht, ein stillstehender Topf neigt sich und wächst schief.",
+      "Eine Vierteldrehung pro Woche hält das Wachstum ausgewogen und die Form rundum voll.",
+      "Mache eine Markierung am Topfrand, damit du weißt, wohin du zuletzt gedreht hast."
+     ],
+     "q": "Hast du bemerkt, dass sich eine deiner Pflanzen zum Fenster neigt?",
+     "c": "Gib heute jeder Pflanze eine Vierteldrehung und notiere, welche sich am stärksten neigen."
+    },
+    "es": {
+     "t": "Girar las plantas",
+     "g": "Gira las macetas con regularidad para que crezcan parejas y no se inclinen.",
+     "p": [
+      "Las plantas crecen hacia la luz, así que una maceta quieta se inclina y crece torcida.",
+      "Un cuarto de vuelta a la semana mantiene el crecimiento equilibrado y la forma llena por todos lados.",
+      "Haz una marca en el borde de la maceta para recordar hacia dónde la giraste la última vez."
+     ],
+     "q": "¿Has notado alguna de tus plantas inclinada hacia la ventana?",
+     "c": "Hoy da un cuarto de vuelta a cada planta y anota cuáles se inclinan más."
+    },
+    "fr": {
+     "t": "Tourner ses plantes",
+     "g": "Tourne les pots régulièrement pour que les plantes poussent droit au lieu de pencher.",
+     "p": [
+      "Les plantes poussent vers la lumière : un pot immobile penche et pousse de travers.",
+      "Un quart de tour par semaine garde la croissance équilibrée et la forme pleine de tous les côtés.",
+      "Fais un repère sur le bord du pot pour te rappeler dans quel sens tu l'as tourné la dernière fois."
+     ],
+     "q": "As-tu remarqué une de tes plantes qui penche vers la fenêtre ?",
+     "c": "Aujourd'hui, donne un quart de tour à chaque plante et note celles qui penchent le plus."
+    },
+    "it": {
+     "t": "Ruotare le piante",
+     "g": "Ruota i vasi con regolarità perché le piante crescano dritte e non si pieghino.",
+     "p": [
+      "Le piante crescono verso la luce, quindi un vaso fermo si piega e cresce storto.",
+      "Un quarto di giro a settimana mantiene la crescita equilibrata e la forma piena da ogni lato.",
+      "Fai un segno sul bordo del vaso per ricordare in che direzione lo hai girato l'ultima volta."
+     ],
+     "q": "Hai notato qualche tua pianta inclinata verso la finestra?",
+     "c": "Oggi dai a ogni pianta un quarto di giro e annota quali si piegano di più."
+    },
+    "pt": {
+     "t": "Rodar as plantas",
+     "g": "Roda os vasos com regularidade para as plantas crescerem direitas e não se inclinarem.",
+     "p": [
+      "As plantas crescem para a luz, por isso um vaso parado inclina-se e cresce torto.",
+      "Um quarto de volta por semana mantém o crescimento equilibrado e a forma cheia de todos os lados.",
+      "Faz uma marca na borda do vaso para te lembrares para onde o rodaste da última vez."
+     ],
+     "q": "Reparaste em alguma planta tua inclinada para a janela?",
+     "c": "Hoje dá um quarto de volta a cada planta e anota quais se inclinam mais."
+    },
+    "pt_BR": {
+     "t": "Girando as plantas",
+     "g": "Gire os vasos com regularidade para as plantas crescerem retas e não se inclinarem.",
+     "p": [
+      "As plantas crescem em direção à luz, então um vaso parado se inclina e cresce torto.",
+      "Um quarto de volta por semana mantém o crescimento equilibrado e a forma cheia de todos os lados.",
+      "Faça uma marca na borda do vaso para lembrar para onde o girou da última vez."
+     ],
+     "q": "Você reparou em alguma planta sua inclinada para a janela?",
+     "c": "Hoje dê um quarto de volta em cada planta e anote quais se inclinam mais."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Feeding houseplants",
+     "g": "Learn when and how to use a diluted fertiliser during the growing season.",
+     "p": [
+      "Most houseplants feed during the growing season, from spring to early autumn in your hemisphere.",
+      "Use houseplant fertiliser at the strength on the label or weaker, since too much burns roots.",
+      "Water the soil first, apply the diluted feed, and store fertiliser out of reach of children and pets."
+     ],
+     "q": "Have you ever fed your plants, and did you see a difference?",
+     "c": "Today, read the label of a fertiliser (or look one up) and note its dilution and how often to use it."
+    },
+    "de": {
+     "t": "Zimmerpflanzen düngen",
+     "g": "Lerne, wann und wie du in der Wachstumszeit verdünnten Dünger einsetzt.",
+     "p": [
+      "Die meisten Zimmerpflanzen werden in der Wachstumszeit gedüngt, auf deiner Halbkugel von Frühling bis Frühherbst.",
+      "Nimm Zimmerpflanzendünger in der Stärke vom Etikett oder schwächer, denn zu viel verbrennt Wurzeln.",
+      "Gieße zuerst die Erde, gib dann den verdünnten Dünger und lagere ihn unerreichbar für Kinder und Haustiere."
+     ],
+     "q": "Hast du deine Pflanzen schon gedüngt, und sahst du einen Unterschied?",
+     "c": "Lies heute das Etikett eines Düngers (oder such eines) und notiere Verdünnung und Häufigkeit."
+    },
+    "es": {
+     "t": "Abonar plantas de interior",
+     "g": "Aprende cuándo y cómo usar un fertilizante diluido durante la temporada de crecimiento.",
+     "p": [
+      "La mayoría de las plantas de interior se abonan en la temporada de crecimiento, de primavera a principios de otoño en tu hemisferio.",
+      "Usa abono para plantas de interior a la dosis de la etiqueta o menor, porque demasiado quema las raíces.",
+      "Riega primero la tierra, aplica el abono diluido y guárdalo fuera del alcance de niños y mascotas."
+     ],
+     "q": "¿Has abonado alguna vez tus plantas y notaste diferencia?",
+     "c": "Hoy lee la etiqueta de un fertilizante (o búscala) y anota la dilución y la frecuencia."
+    },
+    "fr": {
+     "t": "Nourrir les plantes d'intérieur",
+     "g": "Apprends quand et comment utiliser un engrais dilué pendant la saison de croissance.",
+     "p": [
+      "La plupart des plantes d'intérieur se nourrissent en période de croissance, du printemps au début de l'automne dans ton hémisphère.",
+      "Utilise un engrais pour plantes d'intérieur à la dose de l'étiquette ou plus faible : trop brûle les racines.",
+      "Arrose d'abord la terre, ajoute l'engrais dilué et range-le hors de portée des enfants et des animaux."
+     ],
+     "q": "As-tu déjà nourri tes plantes, et as-tu vu une différence ?",
+     "c": "Aujourd'hui, lis l'étiquette d'un engrais (ou cherches-en un) et note la dilution et la fréquence."
+    },
+    "it": {
+     "t": "Concimare le piante da appartamento",
+     "g": "Scopri quando e come usare un concime diluito durante la stagione di crescita.",
+     "p": [
+      "La maggior parte delle piante da appartamento si concima nella stagione di crescita, da primavera a inizio autunno nel tuo emisfero.",
+      "Usa concime per piante da appartamento alla dose dell'etichetta o più bassa, perché troppo brucia le radici.",
+      "Bagna prima il terriccio, applica il concime diluito e tienilo fuori dalla portata di bambini e animali."
+     ],
+     "q": "Hai mai concimato le tue piante e hai visto una differenza?",
+     "c": "Oggi leggi l'etichetta di un concime (o cercane una) e annota diluizione e frequenza."
+    },
+    "pt": {
+     "t": "Adubar plantas de interior",
+     "g": "Aprende quando e como usar um adubo diluído na época de crescimento.",
+     "p": [
+      "A maioria das plantas de interior é adubada na época de crescimento, da primavera ao início do outono no teu hemisfério.",
+      "Usa adubo para plantas de interior na dose da etiqueta ou mais fraca, porque demasiado queima as raízes.",
+      "Rega primeiro a terra, aplica o adubo diluído e guarda-o fora do alcance de crianças e animais."
+     ],
+     "q": "Já adubaste as tuas plantas e notaste diferença?",
+     "c": "Hoje lê a etiqueta de um adubo (ou procura uma) e anota a diluição e a frequência."
+    },
+    "pt_BR": {
+     "t": "Adubando plantas de interior",
+     "g": "Aprenda quando e como usar um adubo diluído na época de crescimento.",
+     "p": [
+      "A maioria das plantas de interior é adubada na época de crescimento, da primavera ao início do outono no seu hemisfério.",
+      "Use adubo para plantas de interior na dose da etiqueta ou mais fraca, porque demais queima as raízes.",
+      "Regue primeiro a terra, aplique o adubo diluído e guarde-o fora do alcance de crianças e animais."
+     ],
+     "q": "Você já adubou suas plantas e notou diferença?",
+     "c": "Hoje leia o rótulo de um adubo (ou procure um) e anote a diluição e a frequência."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Understanding N-P-K",
+     "g": "See what nitrogen, phosphorus and potassium do for leaves, roots and flowers.",
+     "p": [
+      "Nitrogen (N) feeds green leafy growth, so leafy plants and lawns like plenty.",
+      "Phosphorus (P) supports roots and flowers, and potassium (K) strengthens the plant and fruit quality.",
+      "Three numbers on the bag, like 10-10-10, show the share of N, P and K in the fertiliser."
+     ],
+     "q": "Which of your plants do you grow for leaves, and which for flowers?",
+     "c": "Today, find the N-P-K numbers on a fertiliser pack and say what each letter helps with."
+    },
+    "de": {
+     "t": "N-P-K verstehen",
+     "g": "Sieh, was Stickstoff, Phosphor und Kalium für Blätter, Wurzeln und Blüten tun.",
+     "p": [
+      "Stickstoff (N) fördert grünes Blattwachstum, Blattpflanzen und Rasen mögen viel davon.",
+      "Phosphor (P) unterstützt Wurzeln und Blüten, Kalium (K) stärkt die Pflanze und die Fruchtqualität.",
+      "Drei Zahlen auf der Packung, etwa 10-10-10, zeigen den Anteil von N, P und K im Dünger."
+     ],
+     "q": "Welche deiner Pflanzen hältst du wegen der Blätter, welche wegen der Blüten?",
+     "c": "Suche heute die N-P-K-Zahlen auf einer Düngerpackung und sage, wofür jeder Buchstabe gut ist."
+    },
+    "es": {
+     "t": "Entender el N-P-K",
+     "g": "Mira qué hacen el nitrógeno, el fósforo y el potasio por hojas, raíces y flores.",
+     "p": [
+      "El nitrógeno (N) alimenta el crecimiento verde de las hojas, y las plantas foliares y el césped lo aprecian.",
+      "El fósforo (P) apoya raíces y flores, y el potasio (K) fortalece la planta y la calidad del fruto.",
+      "Tres números en el envase, como 10-10-10, muestran la proporción de N, P y K del abono."
+     ],
+     "q": "¿Cuáles de tus plantas cultivas por las hojas y cuáles por las flores?",
+     "c": "Hoy busca los números N-P-K en un envase de abono y di para qué sirve cada letra."
+    },
+    "fr": {
+     "t": "Comprendre le N-P-K",
+     "g": "Vois ce que l'azote, le phosphore et le potassium font pour feuilles, racines et fleurs.",
+     "p": [
+      "L'azote (N) nourrit la croissance verte du feuillage : plantes à feuilles et pelouses en raffolent.",
+      "Le phosphore (P) soutient racines et fleurs, et le potassium (K) renforce la plante et la qualité des fruits.",
+      "Trois chiffres sur l'emballage, comme 10-10-10, montrent la part de N, P et K dans l'engrais."
+     ],
+     "q": "Lesquelles de tes plantes cultives-tu pour le feuillage, lesquelles pour les fleurs ?",
+     "c": "Aujourd'hui, trouve les chiffres N-P-K sur un engrais et dis à quoi sert chaque lettre."
+    },
+    "it": {
+     "t": "Capire N-P-K",
+     "g": "Scopri cosa fanno azoto, fosforo e potassio per foglie, radici e fiori.",
+     "p": [
+      "L'azoto (N) nutre la crescita verde delle foglie: piante da fogliame e prato ne gradiscono molto.",
+      "Il fosforo (P) sostiene radici e fiori, e il potassio (K) rafforza la pianta e la qualità dei frutti.",
+      "Tre numeri sulla confezione, come 10-10-10, indicano la quota di N, P e K nel concime."
+     ],
+     "q": "Quali tue piante coltivi per le foglie e quali per i fiori?",
+     "c": "Oggi trova i numeri N-P-K su una confezione di concime e di' a cosa serve ogni lettera."
+    },
+    "pt": {
+     "t": "Compreender o N-P-K",
+     "g": "Vê o que o azoto, o fósforo e o potássio fazem por folhas, raízes e flores.",
+     "p": [
+      "O azoto (N) alimenta o crescimento verde das folhas, e plantas de folhagem e relvados apreciam-no.",
+      "O fósforo (P) apoia raízes e flores, e o potássio (K) fortalece a planta e a qualidade dos frutos.",
+      "Três números na embalagem, como 10-10-10, mostram a parte de N, P e K no adubo."
+     ],
+     "q": "Quais das tuas plantas cultivas pelas folhas e quais pelas flores?",
+     "c": "Hoje procura os números N-P-K numa embalagem de adubo e diz para que serve cada letra."
+    },
+    "pt_BR": {
+     "t": "Entendendo o N-P-K",
+     "g": "Veja o que nitrogênio, fósforo e potássio fazem por folhas, raízes e flores.",
+     "p": [
+      "O nitrogênio (N) alimenta o crescimento verde das folhas, e plantas de folhagem e gramados gostam dele.",
+      "O fósforo (P) apoia raízes e flores, e o potássio (K) fortalece a planta e a qualidade dos frutos.",
+      "Três números na embalagem, como 10-10-10, mostram a parte de N, P e K no adubo."
+     ],
+     "q": "Quais das suas plantas você cultiva pelas folhas e quais pelas flores?",
+     "c": "Hoje procure os números N-P-K numa embalagem de adubo e diga para que serve cada letra."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rest periods in winter",
+     "g": "Learn why many houseplants grow slowly in winter and need less water and food.",
+     "p": [
+      "In your winter, shorter days and lower light slow growth, so plants use less water.",
+      "Cut watering back, pause fertiliser and check the soil more carefully before each drink.",
+      "Keep plants away from cold drafts and hot radiators, which cause leaf drop and dry air."
+     ],
+     "q": "Do your plants look different in your darkest months? What changes?",
+     "c": "Today, think about your darkest months and note which plants will need less water then."
+    },
+    "de": {
+     "t": "Ruhezeit im Winter",
+     "g": "Lerne, warum viele Zimmerpflanzen im Winter langsamer wachsen und weniger Wasser und Dünger brauchen.",
+     "p": [
+      "In deinem Winter bremsen kürzere Tage und weniger Licht das Wachstum, die Pflanzen brauchen weniger Wasser.",
+      "Gieße weniger, pausiere den Dünger und prüfe die Erde vor jedem Gießen genauer.",
+      "Halte Pflanzen fern von kalter Zugluft und heißen Heizkörpern, sie verursachen Blattfall und trockene Luft."
+     ],
+     "q": "Sehen deine Pflanzen in den dunkelsten Monaten anders aus? Was ändert sich?",
+     "c": "Denke heute an deine dunkelsten Monate und notiere, welche Pflanzen dann weniger Wasser brauchen."
+    },
+    "es": {
+     "t": "Descanso invernal",
+     "g": "Aprende por qué muchas plantas de interior crecen lento en invierno y necesitan menos agua y abono.",
+     "p": [
+      "En tu invierno, los días cortos y la poca luz frenan el crecimiento, y las plantas usan menos agua.",
+      "Reduce el riego, pausa el abono y comprueba mejor la tierra antes de cada riego.",
+      "Aleja las plantas de corrientes frías y radiadores calientes, que causan caída de hojas y aire seco."
+     ],
+     "q": "¿Tus plantas se ven distintas en tus meses más oscuros? ¿Qué cambia?",
+     "c": "Hoy piensa en tus meses más oscuros y anota qué plantas necesitarán menos agua entonces."
+    },
+    "fr": {
+     "t": "La pause hivernale",
+     "g": "Apprends pourquoi beaucoup de plantes poussent lentement en hiver et ont besoin de moins d'eau et d'engrais.",
+     "p": [
+      "Pendant ton hiver, jours courts et faible lumière ralentissent la croissance : les plantes boivent moins.",
+      "Réduis l'arrosage, mets l'engrais en pause et vérifie la terre avec plus d'attention avant chaque arrosage.",
+      "Éloigne les plantes des courants d'air froid et des radiateurs brûlants, qui font tomber les feuilles et sèchent l'air."
+     ],
+     "q": "Tes plantes ont-elles un autre aspect pendant tes mois les plus sombres ? Qu'est-ce qui change ?",
+     "c": "Aujourd'hui, pense à tes mois les plus sombres et note quelles plantes auront alors besoin de moins d'eau."
+    },
+    "it": {
+     "t": "La pausa invernale",
+     "g": "Scopri perché molte piante crescono lentamente in inverno e hanno bisogno di meno acqua e concime.",
+     "p": [
+      "Nel tuo inverno giorni corti e poca luce rallentano la crescita e le piante usano meno acqua.",
+      "Riduci le annaffiature, sospendi il concime e controlla meglio il terriccio prima di ogni bevuta.",
+      "Tieni le piante lontane da correnti fredde e caloriferi caldi, che causano caduta di foglie e aria secca."
+     ],
+     "q": "Le tue piante sembrano diverse nei mesi più bui? Cosa cambia?",
+     "c": "Oggi pensa ai tuoi mesi più bui e annota quali piante avranno bisogno di meno acqua allora."
+    },
+    "pt": {
+     "t": "O descanso do inverno",
+     "g": "Aprende por que muitas plantas crescem devagar no inverno e precisam de menos água e adubo.",
+     "p": [
+      "No teu inverno, dias curtos e pouca luz abrandam o crescimento, e as plantas usam menos água.",
+      "Reduz a rega, pausa o adubo e verifica melhor a terra antes de cada rega.",
+      "Afasta as plantas de correntes de ar frio e radiadores quentes, que causam queda de folhas e ar seco."
+     ],
+     "q": "As tuas plantas parecem diferentes nos meses mais escuros? O que muda?",
+     "c": "Hoje pensa nos teus meses mais escuros e anota que plantas precisarão de menos água."
+    },
+    "pt_BR": {
+     "t": "O descanso do inverno",
+     "g": "Aprenda por que muitas plantas crescem devagar no inverno e precisam de menos água e adubo.",
+     "p": [
+      "No seu inverno, dias curtos e pouca luz diminuem o crescimento, e as plantas usam menos água.",
+      "Reduza a rega, pause o adubo e confira melhor a terra antes de cada rega.",
+      "Afaste as plantas de correntes de ar frio e aquecedores quentes, que causam queda de folhas e ar seco."
+     ],
+     "q": "Suas plantas parecem diferentes nos meses mais escuros? O que muda?",
+     "c": "Hoje pense nos seus meses mais escuros e anote quais plantas precisarão de menos água."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Repotting step by step",
+     "g": "Learn when roots outgrow the pot and how to move a plant to a slightly bigger one.",
+     "p": [
+      "Roots poking from the drainage holes or water running straight through show it may be time to repot.",
+      "Choose a pot one size up, add mix, ease the plant out, set it at the same depth and water well.",
+      "The best time is spring in your hemisphere, when the plant is starting to grow and recovers fast."
+     ],
+     "q": "Do you have a plant that might be ready for a bigger pot?",
+     "c": "Today, check one plant for roots at the drainage holes and gather a pot and mix if it needs moving."
+    },
+    "de": {
+     "t": "Umtopfen Schritt für Schritt",
+     "g": "Lerne, wann Wurzeln den Topf sprengen und wie du in einen etwas größeren umziehst.",
+     "p": [
+      "Wurzeln aus den Abzugslöchern oder Wasser, das sofort durchläuft, zeigen, dass Umtopfen anstehen kann.",
+      "Wähle einen Topf eine Größe höher, gib Erde ein, hebe die Pflanze heraus, setze sie gleich tief und gieße gut.",
+      "Die beste Zeit ist das Frühjahr deiner Halbkugel, wenn die Pflanze zu wachsen beginnt und sich schnell erholt."
+     ],
+     "q": "Hast du eine Pflanze, die reif für einen größeren Topf sein könnte?",
+     "c": "Prüfe heute eine Pflanze auf Wurzeln an den Abzugslöchern und halte Topf und Erde bereit, falls nötig."
+    },
+    "es": {
+     "t": "Trasplantar paso a paso",
+     "g": "Aprende cuándo las raíces desbordan la maceta y cómo pasar a una un poco mayor.",
+     "p": [
+      "Raíces que salen por los agujeros o agua que pasa directa indican que puede ser hora de trasplantar.",
+      "Elige una maceta una talla mayor, añade sustrato, saca la planta con cuidado, ponla a la misma altura y riega bien.",
+      "La mejor época es la primavera de tu hemisferio, cuando la planta empieza a crecer y se recupera rápido."
+     ],
+     "q": "¿Tienes una planta que podría estar lista para una maceta mayor?",
+     "c": "Hoy revisa una planta por raíces en los agujeros y prepara maceta y sustrato si hay que moverla."
+    },
+    "fr": {
+     "t": "Rempoter pas à pas",
+     "g": "Apprends quand les racines débordent du pot et comment passer à un pot un peu plus grand.",
+     "p": [
+      "Des racines qui sortent des trous ou de l'eau qui traverse d'un coup montrent qu'il est peut-être temps de rempoter.",
+      "Prends un pot une taille au-dessus, ajoute du terreau, sors la plante, remets-la à la même hauteur et arrose bien.",
+      "Le meilleur moment est le printemps de ton hémisphère, quand la plante redémarre et récupère vite."
+     ],
+     "q": "As-tu une plante qui serait prête pour un pot plus grand ?",
+     "c": "Aujourd'hui, vérifie une plante : racines aux trous ? Prépare pot et terreau si elle doit changer."
+    },
+    "it": {
+     "t": "Rinvasare passo dopo passo",
+     "g": "Scopri quando le radici superano il vaso e come passare a uno poco più grande.",
+     "p": [
+      "Radici che escono dai fori o acqua che passa subito indicano che può essere ora di rinvasare.",
+      "Scegli un vaso di una misura più grande, aggiungi terriccio, estrai la pianta, mettila alla stessa profondità e annaffia bene.",
+      "Il momento migliore è la primavera del tuo emisfero, quando la pianta riparte e si riprende in fretta."
+     ],
+     "q": "Hai una pianta che potrebbe essere pronta per un vaso più grande?",
+     "c": "Oggi controlla una pianta per radici ai fori e prepara vaso e terriccio se va spostata."
+    },
+    "pt": {
+     "t": "Mudar de vaso passo a passo",
+     "g": "Aprende quando as raízes ultrapassam o vaso e como passar para outro um pouco maior.",
+     "p": [
+      "Raízes a sair pelos furos ou água que passa logo indicam que pode ser hora de mudar de vaso.",
+      "Escolhe um vaso um tamanho acima, junta substrato, tira a planta, põe-na à mesma altura e rega bem.",
+      "A melhor altura é a primavera do teu hemisfério, quando a planta começa a crescer e recupera depressa."
+     ],
+     "q": "Tens uma planta que possa estar pronta para um vaso maior?",
+     "c": "Hoje verifica uma planta por raízes nos furos e prepara vaso e substrato se for preciso."
+    },
+    "pt_BR": {
+     "t": "Trocando de vaso passo a passo",
+     "g": "Aprenda quando as raízes ultrapassam o vaso e como passar para outro um pouco maior.",
+     "p": [
+      "Raízes saindo pelos furos ou água que passa direto indicam que pode ser hora de trocar de vaso.",
+      "Escolha um vaso um tamanho acima, junte substrato, tire a planta, ponha na mesma altura e regue bem.",
+      "A melhor época é a primavera do seu hemisfério, quando a planta começa a crescer e se recupera rápido."
+     ],
+     "q": "Você tem uma planta que pode estar pronta para um vaso maior?",
+     "c": "Hoje confira uma planta por raízes nos furos e prepare vaso e substrato se precisar."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Root-bound plants",
+     "g": "Recognise circling roots and gently loosen them when repotting.",
+     "p": [
+      "A root-bound plant has a dense mat of roots circling the pot, sometimes with little soil left.",
+      "Gently tease the outer roots apart with your fingers so they can grow outward into new mix.",
+      "If roots are very tight, you may snip a few with clean scissors, but be gentle and water well."
+     ],
+     "q": "Have you ever pulled a plant from its pot and seen how its roots looked?",
+     "c": "Today, find a plant that might be root-bound and look at its roots if it is time to repot."
+    },
+    "de": {
+     "t": "Durchwurzelte Pflanzen",
+     "g": "Erkenne kreisende Wurzeln und lockere sie beim Umtopfen vorsichtig.",
+     "p": [
+      "Eine durchwurzelte Pflanze hat einen dichten Wurzelfilz im Topf, manchmal bleibt kaum Erde übrig.",
+      "Lockere die äußeren Wurzeln vorsichtig mit den Fingern, damit sie in die neue Erde hinauswachsen.",
+      "Sind die Wurzeln sehr eng, kannst du einige mit sauberer Schere kappen, aber sei sanft und gieße gut."
+     ],
+     "q": "Hast du schon einmal eine Pflanze aus dem Topf gezogen und ihre Wurzeln gesehen?",
+     "c": "Finde heute eine Pflanze, die durchwurzelt sein könnte, und sieh dir die Wurzeln an, wenn Umtopfzeit ist."
+    },
+    "es": {
+     "t": "Plantas con raíces apretadas",
+     "g": "Reconoce raíces enroscadas y aflójalas con suavidad al trasplantar.",
+     "p": [
+      "Una planta con raíces apretadas tiene una masa densa de raíces enroscadas, a veces con poca tierra.",
+      "Separa con cuidado las raíces exteriores con los dedos para que crezcan hacia fuera en el sustrato nuevo.",
+      "Si las raíces están muy apretadas, puedes cortar unas pocas con tijeras limpias, pero con suavidad y riega bien."
+     ],
+     "q": "¿Has sacado alguna vez una planta de su maceta y visto cómo estaban sus raíces?",
+     "c": "Hoy busca una planta con raíces posiblemente apretadas y mira sus raíces si es hora de trasplantar."
+    },
+    "fr": {
+     "t": "Plantes à racines serrées",
+     "g": "Reconnais les racines qui tournent en rond et dénoue-les doucement au rempotage.",
+     "p": [
+      "Une plante à racines serrées a un feutrage dense de racines qui tournent dans le pot, parfois avec peu de terre.",
+      "Démêle doucement les racines extérieures avec les doigts pour qu'elles partent vers le nouveau terreau.",
+      "Si les racines sont très serrées, tu peux en couper quelques-unes avec des ciseaux propres, doucement, puis arrose bien."
+     ],
+     "q": "As-tu déjà sorti une plante de son pot pour voir ses racines ?",
+     "c": "Aujourd'hui, repère une plante à racines peut-être serrées et regarde-les si c'est l'heure de rempoter."
+    },
+    "it": {
+     "t": "Piante con radici costrette",
+     "g": "Riconosci radici che girano in tondo e allentale con delicatezza al rinvaso.",
+     "p": [
+      "Una pianta con radici costrette ha un fitto feltro di radici che gira nel vaso, a volte con poca terra.",
+      "Separa con delicatezza le radici esterne con le dita perché crescano verso il nuovo terriccio.",
+      "Se le radici sono molto strette, puoi tagliarne alcune con forbici pulite, ma con cautela, poi annaffia bene."
+     ],
+     "q": "Hai mai tolto una pianta dal vaso e visto com'erano le radici?",
+     "c": "Oggi trova una pianta con radici forse costrette e guardale se è ora di rinvasare."
+    },
+    "pt": {
+     "t": "Plantas com raízes apertadas",
+     "g": "Reconhece raízes enroladas e solta-as com suavidade ao mudar de vaso.",
+     "p": [
+      "Uma planta com raízes apertadas tem uma massa densa de raízes enroladas, às vezes com pouca terra.",
+      "Separa com cuidado as raízes exteriores com os dedos para crescerem para fora no substrato novo.",
+      "Se as raízes estiverem muito apertadas, podes cortar algumas com tesoura limpa, com suavidade, e rega bem."
+     ],
+     "q": "Já tiraste uma planta do vaso e viste como estavam as raízes?",
+     "c": "Hoje procura uma planta com raízes talvez apertadas e olha para elas se for hora de mudar de vaso."
+    },
+    "pt_BR": {
+     "t": "Plantas com raízes apertadas",
+     "g": "Reconheça raízes enroladas e solte-as com suavidade ao trocar de vaso.",
+     "p": [
+      "Uma planta com raízes apertadas tem uma massa densa de raízes enroladas, às vezes com pouca terra.",
+      "Separe com cuidado as raízes externas com os dedos para crescerem para fora no substrato novo.",
+      "Se as raízes estiverem muito apertadas, você pode cortar algumas com tesoura limpa, com suavidade, e regue bem."
+     ],
+     "q": "Você já tirou uma planta do vaso e viu como estavam as raízes?",
+     "c": "Hoje procure uma planta com raízes talvez apertadas e olhe para elas se for hora de trocar de vaso."
+    }
+   }
+  }
+ ]
+}

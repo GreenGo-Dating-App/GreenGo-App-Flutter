@@ -1,0 +1,835 @@
+{
+ "topic": "diy",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fitting blinds",
+     "g": "Decide inside or outside the recess, then measure and mount brackets.",
+     "p": [
+      "Inside fit looks neat; outside fit covers the frame and blocks more light.",
+      "Measure width and height in three places and use the smallest number.",
+      "Mark brackets level, fix them securely and clip the blind in."
+     ],
+     "q": "What kind of light do you want in each room?",
+     "c": "Measure one window in three places and note which fit you would choose."
+    },
+    "de": {
+     "t": "Jalousien und Rollos anbringen",
+     "g": "Entscheide zwischen Nischen- und Wandmontage, miss und befestige die Halter.",
+     "p": [
+      "Nischenmontage wirkt sauber; Wandmontage deckt den Rahmen ab und dunkelt besser ab.",
+      "Miss Breite und Höhe an drei Stellen und nimm das kleinste Maß.",
+      "Zeichne die Halter waagerecht an, befestige sie fest und klicke das Rollo ein."
+     ],
+     "q": "Welches Licht wünschst du dir in jedem Raum?",
+     "c": "Miss ein Fenster an drei Stellen und notiere, welche Montage du wählen würdest."
+    },
+    "es": {
+     "t": "Instalar persianas y estores",
+     "g": "Decide si va dentro o fuera del hueco y luego mide y monta los soportes.",
+     "p": [
+      "Dentro queda limpio; fuera cubre el marco y bloquea más luz.",
+      "Mide ancho y alto en tres puntos y usa la cifra más pequeña.",
+      "Marca los soportes a nivel, fíjalos bien y encaja el estor."
+     ],
+     "q": "¿Qué tipo de luz quieres en cada habitación?",
+     "c": "Mide una ventana en tres puntos y anota qué montaje elegirías."
+    },
+    "fr": {
+     "t": "Poser des stores",
+     "g": "Choisis entre pose dans l'embrasure ou à l'extérieur, puis mesure et fixe les supports.",
+     "p": [
+      "Dans l'embrasure, c'est net ; à l'extérieur, il couvre le cadre et bloque plus de lumière.",
+      "Mesure largeur et hauteur à trois endroits et garde la plus petite valeur.",
+      "Marque les supports de niveau, fixe-les solidement et clipse le store."
+     ],
+     "q": "Quelle lumière veux-tu dans chaque pièce ?",
+     "c": "Mesure une fenêtre à trois endroits et note la pose que tu choisirais."
+    },
+    "it": {
+     "t": "Montare tapparelle e tende a rullo",
+     "g": "Scegli tra montaggio dentro o fuori dal vano, poi misura e fissa i supporti.",
+     "p": [
+      "Dentro il vano è pulito; fuori copre il telaio e blocca più luce.",
+      "Misura larghezza e altezza in tre punti e usa il valore più piccolo.",
+      "Segna i supporti in piano, fissali bene e aggancia la tenda."
+     ],
+     "q": "Che tipo di luce vuoi in ogni stanza?",
+     "c": "Misura una finestra in tre punti e annota quale montaggio sceglieresti."
+    },
+    "pt": {
+     "t": "Montar estores",
+     "g": "Decide entre dentro ou fora do vão, depois mede e fixa os suportes.",
+     "p": [
+      "Dentro do vão fica limpo; por fora cobre a moldura e bloqueia mais luz.",
+      "Mede largura e altura em três pontos e usa o valor mais pequeno.",
+      "Marca os suportes a nível, fixa-os bem e encaixa o estore."
+     ],
+     "q": "Que tipo de luz queres em cada divisão?",
+     "c": "Mede uma janela em três pontos e anota que montagem escolherias."
+    },
+    "pt_BR": {
+     "t": "Instalando persianas",
+     "g": "Decida entre dentro ou fora do vão, depois meça e fixe os suportes.",
+     "p": [
+      "Dentro do vão fica limpo; por fora cobre a moldura e bloqueia mais luz.",
+      "Meça largura e altura em três pontos e use o menor valor.",
+      "Marque os suportes nivelados, fixe-os bem e encaixe a persiana."
+     ],
+     "q": "Que tipo de luz você quer em cada cômodo?",
+     "c": "Meça uma janela em três pontos e anote qual instalação escolheria."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Child safety: anchoring furniture",
+     "g": "Secure bookcases and dressers to walls with anti-tip kits.",
+     "p": [
+      "Tall furniture can tip when children climb or open drawers.",
+      "Anti-tip straps or brackets fix the top of the piece to a stud or solid anchor.",
+      "Check anchors again from time to time and keep heavy items low."
+     ],
+     "q": "Which tall furniture in your home could be anchored?",
+     "c": "Check one tall piece of furniture and plan where an anti-tip fixing would go."
+    },
+    "de": {
+     "t": "Kindersicherheit: Möbel sichern",
+     "g": "Sichere Regale und Kommoden mit Kippschutz an der Wand.",
+     "p": [
+      "Hohe Möbel können kippen, wenn Kinder klettern oder Schubladen öffnen.",
+      "Kippsicherungen befestigen das Möbelstück oben an einem Ständer oder festen Anker.",
+      "Prüfe Anker gelegentlich erneut und stelle Schweres nach unten."
+     ],
+     "q": "Welche hohen Möbel bei dir könnten gesichert werden?",
+     "c": "Prüfe ein hohes Möbelstück und plane, wo eine Kippsicherung hinkäme."
+    },
+    "es": {
+     "t": "Seguridad infantil: anclar muebles",
+     "g": "Asegura librerías y cómodas a la pared con kits antivuelco.",
+     "p": [
+      "Los muebles altos pueden volcar si los niños trepan o abren cajones.",
+      "Las correas o escuadras antivuelco fijan la parte alta a un montante o anclaje firme.",
+      "Revisa los anclajes de vez en cuando y deja lo pesado abajo."
+     ],
+     "q": "¿Qué muebles altos de tu casa podrías anclar?",
+     "c": "Revisa un mueble alto y planifica dónde iría una fijación antivuelco."
+    },
+    "fr": {
+     "t": "Sécurité enfants : fixer les meubles",
+     "g": "Fixe bibliothèques et commodes au mur avec des kits anti-basculement.",
+     "p": [
+      "Les meubles hauts peuvent basculer quand des enfants grimpent ou ouvrent les tiroirs.",
+      "Sangles ou équerres anti-basculement fixent le haut du meuble à un montant ou ancrage solide.",
+      "Revérifie les fixations de temps en temps et garde le lourd en bas."
+     ],
+     "q": "Quels meubles hauts chez toi pourraient être fixés ?",
+     "c": "Examine un meuble haut et prévois où irait une fixation anti-basculement."
+    },
+    "it": {
+     "t": "Sicurezza bambini: fissare i mobili",
+     "g": "Fissa librerie e cassettiere al muro con kit anti-ribaltamento.",
+     "p": [
+      "I mobili alti possono ribaltarsi se i bambini si arrampicano o aprono i cassetti.",
+      "Cinghie o staffe anti-ribaltamento fissano la parte alta a un montante o ancoraggio saldo.",
+      "Ricontrolla ogni tanto gli ancoraggi e tieni gli oggetti pesanti in basso."
+     ],
+     "q": "Quali mobili alti di casa potresti fissare?",
+     "c": "Controlla un mobile alto e pianifica dove andrebbe un fissaggio anti-ribaltamento."
+    },
+    "pt": {
+     "t": "Segurança infantil: fixar móveis",
+     "g": "Fixa estantes e cómodas à parede com kits antiqueda.",
+     "p": [
+      "Móveis altos podem tombar se as crianças trepam ou abrem gavetas.",
+      "Fitas ou cantoneiras antiqueda prendem o topo a um montante ou ancoragem firme.",
+      "Revê as fixações de vez em quando e mantém o pesado em baixo."
+     ],
+     "q": "Que móveis altos em casa poderias fixar?",
+     "c": "Examina um móvel alto e planeia onde iria uma fixação antiqueda."
+    },
+    "pt_BR": {
+     "t": "Segurança infantil: fixando móveis",
+     "g": "Prenda estantes e cômodas à parede com kits antitombamento.",
+     "p": [
+      "Móveis altos podem tombar se crianças sobem ou abrem gavetas.",
+      "Cintas ou cantoneiras antitombamento prendem o topo a um montante ou ancoragem firme.",
+      "Reveja as fixações de vez em quando e deixe o pesado embaixo."
+     ],
+     "q": "Que móveis altos da sua casa você poderia prender?",
+     "c": "Examine um móvel alto e planeje onde iria uma fixação antitombamento."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fixing a wobbly table",
+     "g": "Find the cause, tighten joints and level the feet.",
+     "p": [
+      "Check first whether the floor is uneven or the table itself is loose.",
+      "Tighten bolts and screws, and glue and clamp loose wooden joints.",
+      "Adjust or shim the feet until the table sits steady."
+     ],
+     "q": "Which piece of furniture at home wobbles?",
+     "c": "Press each corner of a table, find the loose spot and tighten it."
+    },
+    "de": {
+     "t": "Einen wackelnden Tisch reparieren",
+     "g": "Finde die Ursache, ziehe Verbindungen fest und gleiche die Füße aus.",
+     "p": [
+      "Prüfe zuerst, ob der Boden uneben ist oder der Tisch selbst locker.",
+      "Ziehe Schrauben fest und verleime lockere Holzverbindungen mit Zwingen.",
+      "Stelle die Füße ein oder unterlege sie, bis der Tisch fest steht."
+     ],
+     "q": "Welches Möbelstück bei dir wackelt?",
+     "c": "Drücke auf jede Tischecke, finde die lockere Stelle und ziehe sie fest."
+    },
+    "es": {
+     "t": "Arreglar una mesa que cojea",
+     "g": "Encuentra la causa, aprieta uniones y nivela las patas.",
+     "p": [
+      "Comprueba primero si el suelo es desigual o si la mesa está floja.",
+      "Aprieta tornillos y pernos, y pega y sujeta con mordazas las uniones de madera sueltas.",
+      "Ajusta o calza las patas hasta que la mesa quede firme."
+     ],
+     "q": "¿Qué mueble de tu casa cojea?",
+     "c": "Presiona cada esquina de una mesa, encuentra el punto flojo y apriétalo."
+    },
+    "fr": {
+     "t": "Réparer une table bancale",
+     "g": "Trouve la cause, serre les assemblages et règle les pieds.",
+     "p": [
+      "Vérifie d'abord si le sol est irrégulier ou si la table elle-même bouge.",
+      "Serre vis et boulons, et recolle en serrant les assemblages en bois desserrés.",
+      "Règle ou cale les pieds jusqu'à ce que la table soit stable."
+     ],
+     "q": "Quel meuble chez toi est bancal ?",
+     "c": "Appuie sur chaque coin d'une table, trouve le point lâche et serre-le."
+    },
+    "it": {
+     "t": "Riparare un tavolo che traballa",
+     "g": "Trova la causa, stringi i giunti e livella i piedi.",
+     "p": [
+      "Controlla prima se il pavimento è irregolare o se il tavolo è allentato.",
+      "Stringi viti e bulloni, e incolla e blocca con morsetti i giunti di legno allentati.",
+      "Regola o registra i piedi finché il tavolo è stabile."
+     ],
+     "q": "Quale mobile di casa traballa?",
+     "c": "Premi ogni angolo di un tavolo, trova il punto lento e stringilo."
+    },
+    "pt": {
+     "t": "Arranjar uma mesa que abana",
+     "g": "Encontra a causa, aperta as uniões e nivela os pés.",
+     "p": [
+      "Verifica primeiro se o chão é irregular ou se a mesa está solta.",
+      "Aperta parafusos e porcas, e cola e prende com grampos as uniões de madeira soltas.",
+      "Ajusta ou cala os pés até a mesa ficar firme."
+     ],
+     "q": "Que móvel em casa abana?",
+     "c": "Pressiona cada canto de uma mesa, encontra o ponto solto e aperta-o."
+    },
+    "pt_BR": {
+     "t": "Consertando uma mesa bamba",
+     "g": "Encontre a causa, aperte as uniões e nivele os pés.",
+     "p": [
+      "Veja primeiro se o piso é irregular ou se a mesa está solta.",
+      "Aperte parafusos e porcas, e cole e prenda com grampos as uniões de madeira soltas.",
+      "Ajuste ou calce os pés até a mesa ficar firme."
+     ],
+     "q": "Que móvel da sua casa balança?",
+     "c": "Pressione cada canto de uma mesa, ache o ponto solto e aperte."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tightening loose cabinet hinges",
+     "g": "Adjust and refit concealed hinges so doors close properly.",
+     "p": [
+      "Tighten the mounting screws first; loose screws cause most sagging.",
+      "Concealed hinges have adjustment screws for height, depth and side.",
+      "If a screw hole is stripped, repair it before refitting the hinge."
+     ],
+     "q": "Which cabinet door at home does not close well?",
+     "c": "Open a cabinet door and find the screws that adjust the hinge."
+    },
+    "de": {
+     "t": "Lockere Schrankscharniere nachziehen",
+     "g": "Stelle verdeckte Scharniere ein, damit Türen richtig schließen.",
+     "p": [
+      "Ziehe zuerst die Befestigungsschrauben fest; lockere Schrauben verursachen das meiste Durchhängen.",
+      "Topfscharniere haben Stellschrauben für Höhe, Tiefe und Seite.",
+      "Ist ein Schraubenloch ausgeleiert, repariere es vor dem Wiedereinbau."
+     ],
+     "q": "Welche Schranktür bei dir schließt nicht gut?",
+     "c": "Öffne eine Schranktür und finde die Schrauben, die das Scharnier einstellen."
+    },
+    "es": {
+     "t": "Apretar bisagras flojas de armario",
+     "g": "Ajusta y vuelve a fijar bisagras ocultas para que las puertas cierren bien.",
+     "p": [
+      "Aprieta primero los tornillos de montaje; los flojos causan la mayoría de caídas.",
+      "Las bisagras ocultas tienen tornillos para regular altura, profundidad y lado.",
+      "Si un agujero de tornillo está dañado, repáralo antes de volver a montar."
+     ],
+     "q": "¿Qué puerta de armario de tu casa no cierra bien?",
+     "c": "Abre una puerta de armario y busca los tornillos que ajustan la bisagra."
+    },
+    "fr": {
+     "t": "Resserrer les charnières de meuble",
+     "g": "Règle et refixe les charnières invisibles pour que les portes ferment bien.",
+     "p": [
+      "Resserre d'abord les vis de fixation ; des vis lâches causent la plupart des affaissements.",
+      "Les charnières invisibles ont des vis de réglage pour hauteur, profondeur et côté.",
+      "Si un trou de vis est abîmé, répare-le avant de remonter la charnière."
+     ],
+     "q": "Quelle porte de meuble chez toi ferme mal ?",
+     "c": "Ouvre une porte de meuble et trouve les vis qui règlent la charnière."
+    },
+    "it": {
+     "t": "Stringere le cerniere dei mobili",
+     "g": "Regola e rimonta cerniere a scomparsa perché le ante chiudano bene.",
+     "p": [
+      "Stringi prima le viti di fissaggio; quelle lente causano la maggior parte dei cedimenti.",
+      "Le cerniere a scomparsa hanno viti per regolare altezza, profondità e lato.",
+      "Se un foro di vite è rovinato, ripáralo prima di rimontare la cerniera."
+     ],
+     "q": "Quale anta di casa non chiude bene?",
+     "c": "Apri un'anta e trova le viti che regolano la cerniera."
+    },
+    "pt": {
+     "t": "Apertar dobradiças soltas de armário",
+     "g": "Ajusta e volta a fixar dobradiças ocultas para as portas fecharem bem.",
+     "p": [
+      "Aperta primeiro os parafusos de fixação; os soltos causam a maior parte das quedas.",
+      "As dobradiças ocultas têm parafusos para regular altura, profundidade e lado.",
+      "Se um furo estiver estragado, repara-o antes de voltar a montar."
+     ],
+     "q": "Que porta de armário em casa não fecha bem?",
+     "c": "Abre uma porta de armário e encontra os parafusos que ajustam a dobradiça."
+    },
+    "pt_BR": {
+     "t": "Apertando dobradiças soltas do armário",
+     "g": "Ajuste e refixe dobradiças ocultas para as portas fecharem bem.",
+     "p": [
+      "Aperte primeiro os parafusos de fixação; os soltos causam a maioria das quedas.",
+      "As dobradiças ocultas têm parafusos para regular altura, profundidade e lado.",
+      "Se um furo estiver espanado, repare-o antes de remontar."
+     ],
+     "q": "Que porta de armário da sua casa não fecha bem?",
+     "c": "Abra uma porta de armário e ache os parafusos que ajustam a dobradiça."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Replacing cabinet handles",
+     "g": "Measure hole spacing and fit new handles for a quick refresh.",
+     "p": [
+      "Measure the distance between screw holes, centre to centre.",
+      "Buy handles with the same spacing to avoid drilling new holes.",
+      "Use the right screw length and tighten gently so wood is not crushed."
+     ],
+     "q": "What colour or style of handles would refresh your kitchen or bedroom?",
+     "c": "Measure the hole spacing on one handle and note it down."
+    },
+    "de": {
+     "t": "Schrankgriffe austauschen",
+     "g": "Miss den Lochabstand und montiere neue Griffe für eine schnelle Auffrischung.",
+     "p": [
+      "Miss den Abstand zwischen den Schraublöchern von Mitte zu Mitte.",
+      "Kaufe Griffe mit gleichem Lochabstand, um keine neuen Löcher zu bohren.",
+      "Nutze die passende Schraubenlänge und ziehe sanft an, damit das Holz nicht gequetscht wird."
+     ],
+     "q": "Welche Farbe oder welcher Stil von Griffen würde deine Küche oder dein Schlafzimmer auffrischen?",
+     "c": "Miss den Lochabstand an einem Griff und notiere ihn."
+    },
+    "es": {
+     "t": "Cambiar tiradores de armario",
+     "g": "Mide la distancia entre agujeros y pon tiradores nuevos para renovar rápido.",
+     "p": [
+      "Mide la distancia entre los agujeros de los tornillos, de centro a centro.",
+      "Compra tiradores con la misma distancia para no taladrar agujeros nuevos.",
+      "Usa la longitud de tornillo correcta y aprieta suave para no aplastar la madera."
+     ],
+     "q": "¿Qué color o estilo de tiradores renovaría tu cocina o dormitorio?",
+     "c": "Mide la distancia entre agujeros de un tirador y anótala."
+    },
+    "fr": {
+     "t": "Remplacer des poignées de meuble",
+     "g": "Mesure l'entraxe et pose de nouvelles poignées pour un rafraîchissement rapide.",
+     "p": [
+      "Mesure la distance entre les trous de vis, de centre à centre.",
+      "Achète des poignées de même entraxe pour éviter de percer de nouveaux trous.",
+      "Utilise la bonne longueur de vis et serre doucement pour ne pas écraser le bois."
+     ],
+     "q": "Quelle couleur ou quel style de poignées rafraîchirait ta cuisine ou ta chambre ?",
+     "c": "Mesure l'entraxe d'une poignée et note-le."
+    },
+    "it": {
+     "t": "Sostituire le maniglie dei mobili",
+     "g": "Misura l'interasse e monta nuove maniglie per rinnovare in fretta.",
+     "p": [
+      "Misura la distanza tra i fori delle viti, da centro a centro.",
+      "Compra maniglie con lo stesso interasse per evitare di fare nuovi fori.",
+      "Usa la lunghezza di vite giusta e stringi piano per non schiacciare il legno."
+     ],
+     "q": "Quale colore o stile di maniglie rinnoverebbe la tua cucina o camera?",
+     "c": "Misura l'interasse di una maniglia e annotalo."
+    },
+    "pt": {
+     "t": "Substituir puxadores de armário",
+     "g": "Mede a distância entre furos e põe puxadores novos para renovar rápido.",
+     "p": [
+      "Mede a distância entre os furos dos parafusos, de centro a centro.",
+      "Compra puxadores com a mesma distância para não fazeres furos novos.",
+      "Usa o comprimento de parafuso certo e aperta com suavidade para não esmagar a madeira."
+     ],
+     "q": "Que cor ou estilo de puxadores renovaria a tua cozinha ou quarto?",
+     "c": "Mede a distância entre furos de um puxador e anota-a."
+    },
+    "pt_BR": {
+     "t": "Trocando puxadores de armário",
+     "g": "Meça a distância entre furos e instale puxadores novos para renovar rápido.",
+     "p": [
+      "Meça a distância entre os furos dos parafusos, de centro a centro.",
+      "Compre puxadores com a mesma distância para não fazer furos novos.",
+      "Use o comprimento de parafuso certo e aperte com suavidade para não esmagar a madeira."
+     ],
+     "q": "Que cor ou estilo de puxadores renovaria sua cozinha ou quarto?",
+     "c": "Meça a distância entre furos de um puxador e anote."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Adding hooks and racks",
+     "g": "Fit coat hooks, key racks and over-door storage.",
+     "p": [
+      "Choose hooks rated for the load, and fix into studs for heavy coats.",
+      "Over-door racks need no drilling and suit rented homes.",
+      "Space hooks evenly and at heights everyone in the home can reach."
+     ],
+     "q": "What always ends up on the floor in your home that needs a hook?",
+     "c": "Plan a hook rail: mark height, spacing and fixing points with tape."
+    },
+    "de": {
+     "t": "Haken und Garderoben anbringen",
+     "g": "Montiere Garderobenhaken, Schlüsselbretter und Türhänger.",
+     "p": [
+      "Wähle Haken passend zur Last und befestige schwere Mäntel in Ständern.",
+      "Türhänger brauchen kein Bohren und passen zu Mietwohnungen.",
+      "Verteile Haken gleichmäßig in Höhen, die alle im Haushalt erreichen."
+     ],
+     "q": "Was landet bei dir immer auf dem Boden und bräuchte einen Haken?",
+     "c": "Plane eine Hakenleiste: markiere Höhe, Abstand und Befestigungspunkte mit Klebeband."
+    },
+    "es": {
+     "t": "Añadir ganchos y percheros",
+     "g": "Instala colgadores de abrigos, llaveros de pared y organizadores de puerta.",
+     "p": [
+      "Elige ganchos con la carga adecuada y fija en montantes para abrigos pesados.",
+      "Los organizadores de puerta no necesitan taladrar y sirven en viviendas de alquiler.",
+      "Reparte ganchos con igual separación y a alturas que todos alcancen."
+     ],
+     "q": "¿Qué acaba siempre en el suelo de tu casa y necesitaría un gancho?",
+     "c": "Planifica un perchero: marca altura, separación y puntos de fijación con cinta."
+    },
+    "fr": {
+     "t": "Ajouter crochets et patères",
+     "g": "Pose patères, porte-clés muraux et rangements de porte.",
+     "p": [
+      "Choisis des crochets adaptés à la charge et fixe dans les montants pour les manteaux lourds.",
+      "Les rangements de porte ne demandent aucun perçage et conviennent aux logements loués.",
+      "Espace les crochets régulièrement à des hauteurs accessibles à tous."
+     ],
+     "q": "Qu'est-ce qui finit toujours par terre chez toi et aurait besoin d'un crochet ?",
+     "c": "Planifie une barre de patères : marque hauteur, espacement et fixations avec du ruban."
+    },
+    "it": {
+     "t": "Aggiungere ganci e appendiabiti",
+     "g": "Monta appendiabiti, portachiavi da parete e organizer da porta.",
+     "p": [
+      "Scegli ganci adatti al carico e fissa nei montanti per i cappotti pesanti.",
+      "Gli organizer da porta non richiedono fori e vanno bene per le case in affitto.",
+      "Distanzia i ganci in modo uniforme ad altezze raggiungibili da tutti."
+     ],
+     "q": "Cosa finisce sempre a terra in casa tua e avrebbe bisogno di un gancio?",
+     "c": "Pianifica una barra di ganci: segna altezza, distanza e punti di fissaggio con il nastro."
+    },
+    "pt": {
+     "t": "Adicionar ganchos e cabides",
+     "g": "Instala cabides, porta-chaves de parede e organizadores de porta.",
+     "p": [
+      "Escolhe ganchos para a carga certa e fixa em montantes para casacos pesados.",
+      "Os organizadores de porta não precisam de furos e servem em casas arrendadas.",
+      "Distribui os ganchos com espaços iguais a alturas que todos alcancem."
+     ],
+     "q": "O que acaba sempre no chão em tua casa e precisava de um gancho?",
+     "c": "Planeia uma régua de cabides: marca altura, espaçamento e fixações com fita."
+    },
+    "pt_BR": {
+     "t": "Instalando ganchos e cabideiros",
+     "g": "Instale cabides, porta-chaves de parede e organizadores de porta.",
+     "p": [
+      "Escolha ganchos para a carga certa e fixe em montantes para casacos pesados.",
+      "Organizadores de porta dispensam furos e servem em casas alugadas.",
+      "Distribua os ganchos com espaços iguais em alturas que todos alcancem."
+     ],
+     "q": "O que sempre acaba no chão da sua casa e precisava de um gancho?",
+     "c": "Planeje uma barra de cabides: marque altura, espaçamento e fixações com fita."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Flat-pack furniture success",
+     "g": "Sort parts, follow steps and avoid overtightening.",
+     "p": [
+      "Unpack on a soft surface and sort every part before step one.",
+      "Follow the instructions in order and hand-tighten first, then finish.",
+      "Do not overtighten; check the final fit and anchor tall pieces to the wall."
+     ],
+     "q": "Have you built flat-pack furniture? What was easy or tricky?",
+     "c": "Sort and count the parts of a flat-pack box before you start building."
+    },
+    "de": {
+     "t": "Möbelbausätze erfolgreich aufbauen",
+     "g": "Sortiere Teile, folge den Schritten und ziehe nicht zu fest an.",
+     "p": [
+      "Packe auf weichem Untergrund aus und sortiere jedes Teil vor Schritt eins.",
+      "Folge der Anleitung der Reihe nach, ziehe erst von Hand an und dann fest.",
+      "Nicht überdrehen; prüfe den Sitz am Ende und sichere hohe Möbel an der Wand."
+     ],
+     "q": "Hast du schon Möbel aus Bausätzen aufgebaut? Was war einfach oder knifflig?",
+     "c": "Sortiere und zähle die Teile eines Bausatzkartons, bevor du losbaust."
+    },
+    "es": {
+     "t": "Éxito con muebles por montar",
+     "g": "Clasifica piezas, sigue los pasos y evita apretar demasiado.",
+     "p": [
+      "Desembala sobre una superficie blanda y clasifica cada pieza antes del paso uno.",
+      "Sigue las instrucciones en orden y aprieta primero a mano, luego del todo.",
+      "No aprietes de más; revisa el ajuste final y ancla los muebles altos a la pared."
+     ],
+     "q": "¿Has montado muebles por piezas? ¿Qué fue fácil o difícil?",
+     "c": "Clasifica y cuenta las piezas de una caja de muebles antes de empezar a montar."
+    },
+    "fr": {
+     "t": "Réussir un meuble en kit",
+     "g": "Trie les pièces, suis les étapes et évite de trop serrer.",
+     "p": [
+      "Déballe sur une surface douce et trie chaque pièce avant l'étape un.",
+      "Suis la notice dans l'ordre, serre d'abord à la main, puis termine.",
+      "Ne serre pas trop ; vérifie l'ajustement final et fixe les meubles hauts au mur."
+     ],
+     "q": "As-tu déjà monté un meuble en kit ? Qu'est-ce qui était facile ou délicat ?",
+     "c": "Trie et compte les pièces d'un carton de meuble en kit avant de monter."
+    },
+    "it": {
+     "t": "Montare con successo i mobili da assemblare",
+     "g": "Smista i pezzi, segui i passaggi ed evita di stringere troppo.",
+     "p": [
+      "Disimballa su una superficie morbida e smista ogni pezzo prima del passo uno.",
+      "Segui le istruzioni in ordine, stringi prima a mano e poi a fondo.",
+      "Non stringere troppo; controlla l'incastro finale e fissa al muro i mobili alti."
+     ],
+     "q": "Hai già montato mobili da assemblare? Cosa è stato facile o difficile?",
+     "c": "Smista e conta i pezzi di una scatola di mobili prima di iniziare."
+    },
+    "pt": {
+     "t": "Sucesso com móveis para montar",
+     "g": "Separa as peças, segue os passos e evita apertar demais.",
+     "p": [
+      "Desembala sobre uma superfície macia e separa cada peça antes do passo um.",
+      "Segue as instruções por ordem, aperta primeiro à mão e depois a fundo.",
+      "Não aperte demais; confirma o encaixe final e fixa móveis altos à parede."
+     ],
+     "q": "Já montaste móveis em kit? O que foi fácil ou difícil?",
+     "c": "Separa e conta as peças de uma caixa de móvel antes de começar a montar."
+    },
+    "pt_BR": {
+     "t": "Sucesso com móveis para montar",
+     "g": "Separe as peças, siga os passos e evite apertar demais.",
+     "p": [
+      "Desembale sobre uma superfície macia e separe cada peça antes do passo um.",
+      "Siga as instruções na ordem, aperte primeiro à mão e depois a fundo.",
+      "Não aperte demais; confira o encaixe final e fixe móveis altos à parede."
+     ],
+     "q": "Você já montou móveis em kit? O que foi fácil ou difícil?",
+     "c": "Separe e conte as peças de uma caixa de móvel antes de começar a montar."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fixing stripped screw holes",
+     "g": "Restore grip with matchsticks, dowels and larger screws.",
+     "p": [
+      "A stripped hole has lost its wood fibres, so the screw spins freely.",
+      "Fill it with glue and wooden matchsticks or a small dowel, then trim flush.",
+      "Let it dry, drill a pilot hole and drive the screw gently."
+     ],
+     "q": "What loose screw at home keeps bothering you?",
+     "c": "Practise on scrap wood: strip a hole, repair it and test the grip."
+    },
+    "de": {
+     "t": "Ausgeleierte Schraublöcher reparieren",
+     "g": "Stelle den Halt mit Streichhölzern, Holzdübeln und größeren Schrauben wieder her.",
+     "p": [
+      "Ein ausgeleiertes Loch hat seine Holzfasern verloren, die Schraube dreht durch.",
+      "Fülle es mit Leim und Streichhölzern oder einem Holzdübel und schneide bündig ab.",
+      "Trocknen lassen, vorbohren und die Schraube sanft eindrehen."
+     ],
+     "q": "Welche lockere Schraube zu Hause stört dich dauernd?",
+     "c": "Übe an Restholz: Loch ausleiern, reparieren und den Halt testen."
+    },
+    "es": {
+     "t": "Arreglar agujeros de tornillo dañados",
+     "g": "Recupera el agarre con cerillas, tacos de madera y tornillos mayores.",
+     "p": [
+      "Un agujero dañado ha perdido sus fibras de madera y el tornillo gira en vacío.",
+      "Rellénalo con cola y cerillas de madera o un taco pequeño y corta a ras.",
+      "Deja secar, haz un agujero guía y atornilla con suavidad."
+     ],
+     "q": "¿Qué tornillo flojo de casa te molesta siempre?",
+     "c": "Practica en madera sobrante: daña un agujero, repáralo y prueba el agarre."
+    },
+    "fr": {
+     "t": "Réparer des trous de vis abîmés",
+     "g": "Rends de l'adhérence avec allumettes, tourillons et vis plus grosses.",
+     "p": [
+      "Un trou abîmé a perdu ses fibres de bois, et la vis tourne dans le vide.",
+      "Remplis-le de colle et d'allumettes en bois ou d'un petit tourillon, puis arase.",
+      "Laisse sécher, fais un avant-trou et visse doucement."
+     ],
+     "q": "Quelle vis desserrée chez toi te dérange toujours ?",
+     "c": "Entraîne-toi sur une chute de bois : abîme un trou, répare-le et teste la tenue."
+    },
+    "it": {
+     "t": "Riparare fori di viti rovinati",
+     "g": "Ripristina la tenuta con stuzzicadenti di legno, tasselli e viti più grandi.",
+     "p": [
+      "Un foro rovinato ha perso le fibre del legno e la vite gira a vuoto.",
+      "Riempilo con colla e fiammiferi di legno o un tassellino, poi taglia a filo.",
+      "Lascia asciugare, fai un preforo e avvita con delicatezza."
+     ],
+     "q": "Quale vite allentata in casa ti disturba sempre?",
+     "c": "Esercitati su legno di scarto: rovina un foro, riparalo e prova la tenuta."
+    },
+    "pt": {
+     "t": "Arranjar furos de parafuso estragados",
+     "g": "Recupera a fixação com fósforos, cavilhas e parafusos maiores.",
+     "p": [
+      "Um furo estragado perdeu as fibras da madeira e o parafuso gira em falso.",
+      "Enche-o com cola e fósforos de madeira ou uma cavilha pequena e corta rente.",
+      "Deixa secar, faz um pré-furo e aparafusa com suavidade."
+     ],
+     "q": "Que parafuso solto em casa te incomoda sempre?",
+     "c": "Pratica em madeira de sobra: estraga um furo, repara-o e testa a fixação."
+    },
+    "pt_BR": {
+     "t": "Consertando furos de parafuso espanados",
+     "g": "Recupere a fixação com palitos de fósforo, cavilhas e parafusos maiores.",
+     "p": [
+      "Um furo espanado perdeu as fibras da madeira e o parafuso gira em falso.",
+      "Encha-o com cola e palitos de madeira ou uma cavilha pequena e corte rente.",
+      "Deixe secar, faça um pré-furo e parafuse com suavidade."
+     ],
+     "q": "Que parafuso solto da sua casa sempre incomoda?",
+     "c": "Pratique em madeira sobrando: espane um furo, conserte e teste a fixação."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Filling small holes in walls",
+     "g": "Use filler, a putty knife and sanding for a smooth finish.",
+     "p": [
+      "Clean the hole and remove loose bits before filling.",
+      "Press filler in with a putty knife, slightly overfilling, and let it dry.",
+      "Sand smooth with fine paper and wear a dust mask."
+     ],
+     "q": "How many small nail holes do you think are hiding in your walls?",
+     "c": "Fill one small hole, let it dry and sand it flush with the wall."
+    },
+    "de": {
+     "t": "Kleine Löcher in der Wand füllen",
+     "g": "Nutze Spachtelmasse, Spachtel und Schleifen für eine glatte Fläche.",
+     "p": [
+      "Reinige das Loch und entferne lose Teile vor dem Füllen.",
+      "Drücke Spachtelmasse mit dem Spachtel ein, leicht überfüllt, und lass sie trocknen.",
+      "Schleife mit feinem Papier glatt und trage eine Staubmaske."
+     ],
+     "q": "Wie viele kleine Nagellöcher verstecken sich wohl in deinen Wänden?",
+     "c": "Fülle ein kleines Loch, lass es trocknen und schleife es bündig ab."
+    },
+    "es": {
+     "t": "Rellenar agujeros pequeños en la pared",
+     "g": "Usa masilla, espátula y lijado para un acabado liso.",
+     "p": [
+      "Limpia el agujero y quita lo suelto antes de rellenar.",
+      "Presiona la masilla con la espátula, rellenando un poco de más, y deja secar.",
+      "Lija liso con papel fino y usa mascarilla."
+     ],
+     "q": "¿Cuántos agujeros pequeños de clavos crees que esconden tus paredes?",
+     "c": "Rellena un agujero pequeño, deja secar y lija a ras de la pared."
+    },
+    "fr": {
+     "t": "Reboucher les petits trous dans un mur",
+     "g": "Utilise enduit, couteau à enduire et ponçage pour une finition lisse.",
+     "p": [
+      "Nettoie le trou et retire les morceaux friables avant de reboucher.",
+      "Presse l'enduit au couteau en rebouchant un peu en excès, puis laisse sécher.",
+      "Ponce lisse au papier fin et porte un masque anti-poussière."
+     ],
+     "q": "Combien de petits trous de clous se cachent selon toi dans tes murs ?",
+     "c": "Rebouche un petit trou, laisse sécher et ponce-le à ras du mur."
+    },
+    "it": {
+     "t": "Riempire i piccoli fori nel muro",
+     "g": "Usa stucco, spatola e carteggiatura per una finitura liscia.",
+     "p": [
+      "Pulisci il foro e togli le parti sciolte prima di riempire.",
+      "Premi lo stucco con la spatola, riempiendo un po' in eccesso, e lascia asciugare.",
+      "Carteggia liscio con carta fine e indossa la mascherina."
+     ],
+     "q": "Quanti piccoli buchi di chiodi pensi si nascondano nei tuoi muri?",
+     "c": "Riempi un piccolo foro, lascia asciugare e carteggialo a filo del muro."
+    },
+    "pt": {
+     "t": "Tapar pequenos buracos na parede",
+     "g": "Usa massa de barrar, espátula e lixa para um acabamento liso.",
+     "p": [
+      "Limpa o buraco e retira o solto antes de tapar.",
+      "Aplica a massa com a espátula, enchendo um pouco a mais, e deixa secar.",
+      "Lixa até ficar liso com lixa fina e usa máscara."
+     ],
+     "q": "Quantos pequenos buracos de pregos achas que se escondem nas tuas paredes?",
+     "c": "Tapa um pequeno buraco, deixa secar e lixa-o rente à parede."
+    },
+    "pt_BR": {
+     "t": "Tapando pequenos furos na parede",
+     "g": "Use massa corrida, espátula e lixa para um acabamento liso.",
+     "p": [
+      "Limpe o furo e retire o solto antes de tapar.",
+      "Aplique a massa com a espátula, enchendo um pouco a mais, e deixe secar.",
+      "Lixe até ficar liso com lixa fina e use máscara."
+     ],
+     "q": "Quantos furinhos de prego você acha que existem nas suas paredes?",
+     "c": "Tape um furo pequeno, deixe secar e lixe rente à parede."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Repairing larger wall dents",
+     "g": "Use mesh patches and layered filling for bigger damage.",
+     "p": [
+      "Cut away loose material and square off the damaged area.",
+      "Cover bigger holes with a self-adhesive mesh patch before filling.",
+      "Apply thin layers, letting each dry, and sand between coats."
+     ],
+     "q": "What wall damage at home would you like to repair?",
+     "c": "Practise on a spare board: patch, fill in two layers and sand smooth."
+    },
+    "de": {
+     "t": "Größere Wanddellen ausbessern",
+     "g": "Nutze Gewebepflaster und mehrere Schichten für größere Schäden.",
+     "p": [
+      "Entferne loses Material und mache die beschädigte Stelle rechteckig.",
+      "Decke größere Löcher vor dem Spachteln mit einem selbstklebenden Gewebepflaster ab.",
+      "Trage dünne Schichten auf, lass jede trocknen und schleife dazwischen."
+     ],
+     "q": "Welchen Wandschaden bei dir würdest du gern reparieren?",
+     "c": "Übe an einer Restplatte: flicken, in zwei Schichten spachteln und glatt schleifen."
+    },
+    "es": {
+     "t": "Reparar golpes grandes en la pared",
+     "g": "Usa parches de malla y rellenos en capas para daños mayores.",
+     "p": [
+      "Retira el material suelto y escuadra la zona dañada.",
+      "Cubre agujeros grandes con un parche de malla autoadhesivo antes de rellenar.",
+      "Aplica capas finas, deja secar cada una y lija entre manos."
+     ],
+     "q": "¿Qué daño de pared de tu casa te gustaría reparar?",
+     "c": "Practica en una placa sobrante: parchea, rellena en dos capas y lija liso."
+    },
+    "fr": {
+     "t": "Réparer de grosses bosses dans un mur",
+     "g": "Utilise des patchs en trame et un rebouchage en couches pour les gros dégâts.",
+     "p": [
+      "Retire la matière friable et équarris la zone abîmée.",
+      "Couvre les gros trous d'un patch de trame autocollant avant de reboucher.",
+      "Applique de fines couches, laisse sécher chacune et ponce entre elles."
+     ],
+     "q": "Quel dégât de mur chez toi aimerais-tu réparer ?",
+     "c": "Entraîne-toi sur une plaque de rechange : patch, deux couches d'enduit et ponçage lisse."
+    },
+    "it": {
+     "t": "Riparare ammaccature grandi nel muro",
+     "g": "Usa reti adesive e stuccatura a strati per danni più grandi.",
+     "p": [
+      "Rimuovi il materiale sciolto e squadra la zona danneggiata.",
+      "Copri i fori grandi con una rete autoadesiva prima di stuccare.",
+      "Applica strati sottili, lascia asciugare ciascuno e carteggia tra uno e l'altro."
+     ],
+     "q": "Quale danno al muro di casa vorresti riparare?",
+     "c": "Esercitati su una tavola di scarto: rete, stucco in due strati e carteggiatura liscia."
+    },
+    "pt": {
+     "t": "Reparar amolgadelas maiores na parede",
+     "g": "Usa remendos de rede e enchimento por camadas para danos maiores.",
+     "p": [
+      "Retira o material solto e esquadra a zona danificada.",
+      "Cobre buracos maiores com um remendo de rede autocolante antes de encher.",
+      "Aplica camadas finas, deixa secar cada uma e lixa entre demãos."
+     ],
+     "q": "Que dano na parede de casa gostarias de reparar?",
+     "c": "Pratica numa placa de sobra: remenda, enche em duas camadas e lixa até ficar liso."
+    },
+    "pt_BR": {
+     "t": "Consertando amassados maiores na parede",
+     "g": "Use telas adesivas e massa em camadas para danos maiores.",
+     "p": [
+      "Retire o material solto e deixe a área danificada em formato quadrado.",
+      "Cubra furos grandes com uma tela autoadesiva antes de aplicar a massa.",
+      "Aplique camadas finas, deixe secar cada uma e lixe entre as demãos."
+     ],
+     "q": "Que dano na parede da sua casa você gostaria de consertar?",
+     "c": "Pratique numa placa sobrando: tela, massa em duas camadas e lixa até alisar."
+    }
+   }
+  }
+ ]
+}

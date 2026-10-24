@@ -1,0 +1,835 @@
+{
+ "topic": "diy",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dealing with dust",
+     "g": "Keep dust under control with sheets, masks, vacuuming and fresh air.",
+     "p": [
+      "Cover floors and furniture with dust sheets before messy jobs.",
+      "Wear a dust mask and vacuum as you go instead of only at the end.",
+      "Ventilate, and close doors so dust stays in the work room."
+     ],
+     "q": "Which jobs at home make the most dust?",
+     "c": "Set up dust sheets and tape a door shut as if starting a dusty job."
+    },
+    "de": {
+     "t": "Mit Staub umgehen",
+     "g": "Halte Staub unter Kontrolle mit Abdeckung, Maske, Staubsauger und frischer Luft.",
+     "p": [
+      "Decke Boden und Möbel vor schmutzigen Arbeiten mit Planen ab.",
+      "Trage eine Staubmaske und sauge laufend, nicht erst am Ende.",
+      "Lüfte und schließe Türen, damit der Staub im Arbeitsraum bleibt."
+     ],
+     "q": "Welche Arbeiten zu Hause machen am meisten Staub?",
+     "c": "Lege Abdeckplanen aus und klebe eine Tür zu, als würdest du eine staubige Arbeit beginnen."
+    },
+    "es": {
+     "t": "Controlar el polvo",
+     "g": "Mantén el polvo a raya con lonas, mascarilla, aspirador y aire fresco.",
+     "p": [
+      "Cubre suelos y muebles con telas antes de trabajos sucios.",
+      "Usa mascarilla y aspira sobre la marcha, no solo al final.",
+      "Ventila y cierra puertas para que el polvo se quede en la sala de trabajo."
+     ],
+     "q": "¿Qué trabajos de casa levantan más polvo?",
+     "c": "Prepara las lonas y sella una puerta con cinta como si empezaras un trabajo con polvo."
+    },
+    "fr": {
+     "t": "Gérer la poussière",
+     "g": "Maîtrise la poussière avec bâches, masque, aspirateur et air frais.",
+     "p": [
+      "Couvre sols et meubles de bâches avant les travaux salissants.",
+      "Porte un masque et aspire au fur et à mesure, pas seulement à la fin.",
+      "Aère et ferme les portes pour que la poussière reste dans la pièce de travail."
+     ],
+     "q": "Quels travaux chez toi font le plus de poussière ?",
+     "c": "Installe des bâches et scotche une porte comme avant un chantier poussiéreux."
+    },
+    "it": {
+     "t": "Gestire la polvere",
+     "g": "Tieni la polvere sotto controllo con teli, mascherina, aspirapolvere e aria fresca.",
+     "p": [
+      "Copri pavimenti e mobili con teli prima dei lavori sporchi.",
+      "Indossa la mascherina e aspira man mano, non solo alla fine.",
+      "Aria la stanza e chiudi le porte perché la polvere resti dove lavori."
+     ],
+     "q": "Quali lavori di casa fanno più polvere?",
+     "c": "Stendi i teli e sigilla una porta con il nastro come per un lavoro polveroso."
+    },
+    "pt": {
+     "t": "Lidar com o pó",
+     "g": "Mantém o pó sob controlo com lonas, máscara, aspirador e ar fresco.",
+     "p": [
+      "Cobre chão e móveis com lonas antes de trabalhos sujos.",
+      "Usa máscara e aspira ao longo do trabalho, não só no fim.",
+      "Arejas e fechas portas para o pó ficar na divisão de trabalho."
+     ],
+     "q": "Que trabalhos em casa fazem mais pó?",
+     "c": "Estende as lonas e veda uma porta com fita como se começasses um trabalho com pó."
+    },
+    "pt_BR": {
+     "t": "Lidando com o pó",
+     "g": "Mantenha o pó sob controle com lonas, máscara, aspirador e ar fresco.",
+     "p": [
+      "Cubra piso e móveis com lonas antes de serviços sujos.",
+      "Use máscara e aspire durante o trabalho, não só no fim.",
+      "Ventile e feche as portas para o pó ficar no cômodo de trabalho."
+     ],
+     "q": "Que serviços da sua casa fazem mais pó?",
+     "c": "Estenda as lonas e vede uma porta com fita como se fosse começar um serviço com pó."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Working with adhesives",
+     "g": "Choose and use wood glue, construction adhesive and superglue safely.",
+     "p": [
+      "Wood glue bonds timber; clamp the joint while it dries.",
+      "Construction adhesive fills gaps and bonds heavy or mixed materials.",
+      "Superglue is fast and bonds skin too, so work carefully with ventilation."
+     ],
+     "q": "What have you glued back together at home?",
+     "c": "Glue two scrap wood pieces, clamp them and let them dry as directed."
+    },
+    "de": {
+     "t": "Mit Klebstoffen arbeiten",
+     "g": "Wähle und verwende Holzleim, Montagekleber und Sekundenkleber sicher.",
+     "p": [
+      "Holzleim verbindet Holz; spanne die Fuge, während er trocknet.",
+      "Montagekleber füllt Lücken und verbindet schwere oder gemischte Materialien.",
+      "Sekundenkleber ist schnell und klebt auch Haut, also vorsichtig und mit Lüftung arbeiten."
+     ],
+     "q": "Was hast du zu Hause schon mal wieder zusammengeklebt?",
+     "c": "Klebe zwei Reststücke Holz zusammen, spanne sie und lass sie nach Anleitung trocknen."
+    },
+    "es": {
+     "t": "Trabajar con adhesivos",
+     "g": "Elige y usa cola de carpintero, adhesivo de montaje y pegamento instantáneo con seguridad.",
+     "p": [
+      "La cola de carpintero une madera; sujeta la unión con presión mientras seca.",
+      "El adhesivo de montaje rellena huecos y une materiales pesados o mixtos.",
+      "El pegamento instantáneo es rápido y pega también la piel: trabaja con cuidado y ventilación."
+     ],
+     "q": "¿Qué has vuelto a pegar en casa?",
+     "c": "Pega dos trozos de madera sobrante, sujétalos y déjalos secar según las instrucciones."
+    },
+    "fr": {
+     "t": "Travailler avec les colles",
+     "g": "Choisis et utilise colle à bois, colle de montage et colle forte en sécurité.",
+     "p": [
+      "La colle à bois assemble le bois ; serre le joint pendant le séchage.",
+      "La colle de montage comble les vides et lie des matériaux lourds ou mixtes.",
+      "La colle forte est rapide et colle aussi la peau : travaille avec soin et aération."
+     ],
+     "q": "Qu'as-tu déjà recollé chez toi ?",
+     "c": "Colle deux chutes de bois, serre-les et laisse sécher selon la notice."
+    },
+    "it": {
+     "t": "Lavorare con gli adesivi",
+     "g": "Scegli e usa colla vinilica, adesivo da montaggio e colla istantanea in sicurezza.",
+     "p": [
+      "La colla per legno unisce il legno; stringi il giunto mentre asciuga.",
+      "L'adesivo da montaggio riempie le fessure e unisce materiali pesanti o diversi.",
+      "La colla istantanea è rapida e incolla anche la pelle: lavora con cura e aria."
+     ],
+     "q": "Cosa hai già rincollato in casa?",
+     "c": "Incolla due pezzi di legno di scarto, stringili e lasciali asciugare come indicato."
+    },
+    "pt": {
+     "t": "Trabalhar com adesivos",
+     "g": "Escolhe e usa cola de madeira, adesivo de montagem e cola instantânea em segurança.",
+     "p": [
+      "A cola de madeira une madeira; aperta a junta enquanto seca.",
+      "O adesivo de montagem preenche folgas e une materiais pesados ou mistos.",
+      "A cola instantânea é rápida e cola também a pele: trabalha com cuidado e ventilação."
+     ],
+     "q": "O que já voltaste a colar em casa?",
+     "c": "Cola dois pedaços de madeira de sobra, aperta-os e deixa secar conforme as instruções."
+    },
+    "pt_BR": {
+     "t": "Trabalhando com adesivos",
+     "g": "Escolha e use cola de madeira, adesivo de montagem e cola instantânea com segurança.",
+     "p": [
+      "A cola de madeira une madeira; prenda a junta enquanto seca.",
+      "O adesivo de montagem preenche frestas e une materiais pesados ou mistos.",
+      "A cola instantânea é rápida e cola a pele também: trabalhe com cuidado e ventilação."
+     ],
+     "q": "O que você já colou de novo em casa?",
+     "c": "Cole dois pedaços de madeira sobrando, prenda-os e deixe secar conforme o manual."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tape types explained",
+     "g": "Know masking, painter's, duct and double-sided tape and their best uses.",
+     "p": [
+      "Painter's tape peels off cleanly for paint lines and light holding.",
+      "Duct tape is strong and cloth-backed for quick repairs and bundling.",
+      "Double-sided tape mounts light items; check the weight limit on the pack."
+     ],
+     "q": "Which tape do you reach for most at home?",
+     "c": "Test two tapes on a hidden spot and note which peels off cleanly."
+    },
+    "de": {
+     "t": "Klebebänder erklärt",
+     "g": "Kenne Kreppband, Malerband, Gewebeband und doppelseitiges Band und ihre Einsatzzwecke.",
+     "p": [
+      "Malerband lässt sich sauber abziehen, für Farbkanten und leichtes Fixieren.",
+      "Gewebeband ist stark und stoffverstärkt für schnelle Reparaturen und Bündeln.",
+      "Doppelseitiges Band hält leichte Dinge; achte auf die Gewichtsangabe der Packung."
+     ],
+     "q": "Zu welchem Klebeband greifst du zu Hause am häufigsten?",
+     "c": "Teste zwei Klebebänder an einer versteckten Stelle und prüfe, welches sauber abgeht."
+    },
+    "es": {
+     "t": "Tipos de cinta explicados",
+     "g": "Conoce la cinta de carrocero, americana y de doble cara y sus mejores usos.",
+     "p": [
+      "La cinta de pintor se despega limpia, ideal para líneas de pintura y sujetar poco peso.",
+      "La cinta americana es fuerte y con tela, para arreglos rápidos y atar.",
+      "La cinta de doble cara fija objetos ligeros; mira el peso máximo del envase."
+     ],
+     "q": "¿Qué cinta usas más en casa?",
+     "c": "Prueba dos cintas en un lugar oculto y fíjate cuál se despega limpia."
+    },
+    "fr": {
+     "t": "Les types de ruban adhésif",
+     "g": "Connais le masquage, le ruban de peintre, le toile et le double face, et leurs usages.",
+     "p": [
+      "Le ruban de peintre se retire proprement, pour les lignes de peinture et les fixations légères.",
+      "Le ruban toilé est solide, pour réparations rapides et regroupements.",
+      "Le double face fixe les objets légers ; vérifie la charge maximale sur l'emballage."
+     ],
+     "q": "Quel ruban utilises-tu le plus chez toi ?",
+     "c": "Teste deux rubans à un endroit caché et vois lequel se retire proprement."
+    },
+    "it": {
+     "t": "I tipi di nastro adesivo",
+     "g": "Conosci nastro di carta, da pittore, americano e biadesivo e i loro usi migliori.",
+     "p": [
+      "Il nastro da pittore si stacca pulito, per bordi di vernice e fissaggi leggeri.",
+      "Il nastro americano è forte e telato, per riparazioni rapide e fascette.",
+      "Il biadesivo fissa oggetti leggeri; controlla il peso massimo sulla confezione."
+     ],
+     "q": "Quale nastro usi di più in casa?",
+     "c": "Prova due nastri in un punto nascosto e nota quale si stacca pulito."
+    },
+    "pt": {
+     "t": "Tipos de fita explicados",
+     "g": "Conhece a fita de pintor, a de pano e a de dupla face e os seus melhores usos.",
+     "p": [
+      "A fita de pintor descola limpa, ótima para linhas de tinta e prender pouco peso.",
+      "A fita de pano é forte, para arranjos rápidos e para atar.",
+      "A dupla face fixa objetos leves; vê o peso máximo na embalagem."
+     ],
+     "q": "Que fita usas mais em casa?",
+     "c": "Testa duas fitas num sítio escondido e vê qual descola limpa."
+    },
+    "pt_BR": {
+     "t": "Tipos de fita explicados",
+     "g": "Conheça a fita crepe, a de pintor, a silver tape e a dupla face e seus melhores usos.",
+     "p": [
+      "A fita de pintor sai limpa, ótima para linhas de tinta e prender pouco peso.",
+      "A silver tape é forte e com tecido, para consertos rápidos e amarrações.",
+      "A dupla face fixa objetos leves; veja o peso máximo na embalagem."
+     ],
+     "q": "Que fita você mais usa em casa?",
+     "c": "Teste duas fitas num lugar escondido e veja qual sai limpa."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Understanding materials: wood",
+     "g": "Know softwood, hardwood, plywood and MDF and where each works best.",
+     "p": [
+      "Softwood like pine is cheap, light and easy to cut.",
+      "Hardwood like oak is dense and durable for furniture and floors.",
+      "Plywood is strong in sheets; MDF is smooth but swells if it gets wet."
+     ],
+     "q": "Which wooden things at home do you admire, and why?",
+     "c": "Look at three wooden items at home and guess which type each is."
+    },
+    "de": {
+     "t": "Materialkunde: Holz",
+     "g": "Kenne Weichholz, Hartholz, Sperrholz und MDF und ihre besten Einsatzzwecke.",
+     "p": [
+      "Weichholz wie Kiefer ist günstig, leicht und einfach zu schneiden.",
+      "Hartholz wie Eiche ist dicht und haltbar für Möbel und Böden.",
+      "Sperrholz ist als Platte stabil; MDF ist glatt, quillt aber bei Nässe auf."
+     ],
+     "q": "Welche Holzdinge bei dir zu Hause gefallen dir, und warum?",
+     "c": "Sieh dir drei Holzgegenstände im Haus an und rate, welche Art es jeweils ist."
+    },
+    "es": {
+     "t": "Entender los materiales: la madera",
+     "g": "Conoce madera blanda, dura, contrachapado y DM y dónde funciona mejor cada una.",
+     "p": [
+      "La madera blanda, como el pino, es barata, ligera y fácil de cortar.",
+      "La madera dura, como el roble, es densa y duradera para muebles y suelos.",
+      "El contrachapado es resistente en tablero; el DM es liso pero se hincha con la humedad."
+     ],
+     "q": "¿Qué objetos de madera de casa te gustan y por qué?",
+     "c": "Mira tres objetos de madera de casa y adivina de qué tipo es cada uno."
+    },
+    "fr": {
+     "t": "Comprendre les matériaux : le bois",
+     "g": "Connais bois tendre, bois dur, contreplaqué et MDF et où chacun convient le mieux.",
+     "p": [
+      "Un bois tendre comme le pin est léger, économique et facile à couper.",
+      "Un bois dur comme le chêne est dense et durable pour meubles et sols.",
+      "Le contreplaqué est solide en panneau ; le MDF est lisse mais gonfle à l'humidité."
+     ],
+     "q": "Quels objets en bois chez toi te plaisent, et pourquoi ?",
+     "c": "Observe trois objets en bois chez toi et devine le type de chacun."
+    },
+    "it": {
+     "t": "Capire i materiali: il legno",
+     "g": "Conosci legno dolce, legno duro, compensato e MDF e dove funziona meglio ciascuno.",
+     "p": [
+      "Il legno dolce come il pino è economico, leggero e facile da tagliare.",
+      "Il legno duro come la quercia è denso e durevole per mobili e pavimenti.",
+      "Il compensato è robusto in pannelli; l'MDF è liscio ma si gonfia con l'umidità."
+     ],
+     "q": "Quali oggetti di legno di casa ti piacciono e perché?",
+     "c": "Guarda tre oggetti di legno in casa e indovina di che tipo sono."
+    },
+    "pt": {
+     "t": "Entender os materiais: a madeira",
+     "g": "Conhece madeira macia, dura, contraplacado e MDF e onde cada uma funciona melhor.",
+     "p": [
+      "A madeira macia, como o pinho, é leve e fácil de cortar.",
+      "A madeira dura, como o carvalho, é densa e durável para móveis e pavimentos.",
+      "O contraplacado é resistente em placas; o MDF é liso mas incha com humidade."
+     ],
+     "q": "Que objetos de madeira em casa te agradam e porquê?",
+     "c": "Olha para três objetos de madeira em casa e adivinha o tipo de cada um."
+    },
+    "pt_BR": {
+     "t": "Entendendo os materiais: a madeira",
+     "g": "Conheça madeira macia, madeira dura, compensado e MDF e onde cada uma funciona melhor.",
+     "p": [
+      "A madeira macia, como o pinus, é leve e fácil de cortar.",
+      "A madeira dura, como o carvalho, é densa e durável para móveis e pisos.",
+      "O compensado é resistente em chapas; o MDF é liso mas incha com umidade."
+     ],
+     "q": "Que objetos de madeira da sua casa você admira e por quê?",
+     "c": "Olhe três objetos de madeira em casa e adivinhe o tipo de cada um."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Understanding materials: metal and plastic",
+     "g": "Know common metals and plastics at home and how to work with them.",
+     "p": [
+      "Steel is strong but can rust; aluminium is light and resists rust.",
+      "Plastics vary: some bend, some crack, and some melt under heat.",
+      "Use the right bit, glue and speed for each material."
+     ],
+     "q": "Which metal or plastic things at home have you repaired?",
+     "c": "Find one steel, one aluminium and one plastic object and note how each feels."
+    },
+    "de": {
+     "t": "Materialkunde: Metall und Kunststoff",
+     "g": "Kenne gängige Metalle und Kunststoffe im Haus und wie man sie bearbeitet.",
+     "p": [
+      "Stahl ist fest, kann aber rosten; Aluminium ist leicht und rostet nicht.",
+      "Kunststoffe unterscheiden sich: Manche biegen, manche brechen, manche schmelzen bei Hitze.",
+      "Nutze für jedes Material den passenden Bohrer, Kleber und die passende Drehzahl."
+     ],
+     "q": "Welche Metall- oder Kunststoffteile hast du zu Hause schon repariert?",
+     "c": "Finde je einen Gegenstand aus Stahl, Aluminium und Kunststoff und beschreibe, wie sie sich anfühlen."
+    },
+    "es": {
+     "t": "Entender los materiales: metal y plástico",
+     "g": "Conoce metales y plásticos comunes del hogar y cómo trabajarlos.",
+     "p": [
+      "El acero es fuerte pero puede oxidarse; el aluminio es ligero y resiste el óxido.",
+      "Los plásticos varían: unos se doblan, otros se parten y otros se funden con calor.",
+      "Usa la broca, el pegamento y la velocidad adecuados para cada material."
+     ],
+     "q": "¿Qué cosas de metal o plástico has reparado en casa?",
+     "c": "Busca un objeto de acero, uno de aluminio y uno de plástico y anota cómo se sienten."
+    },
+    "fr": {
+     "t": "Comprendre les matériaux : métal et plastique",
+     "g": "Connais métaux et plastiques courants à la maison et comment les travailler.",
+     "p": [
+      "L'acier est solide mais peut rouiller ; l'aluminium est léger et résiste à la rouille.",
+      "Les plastiques varient : certains plient, d'autres cassent, d'autres fondent à la chaleur.",
+      "Utilise le bon foret, la bonne colle et la bonne vitesse pour chaque matériau."
+     ],
+     "q": "Quels objets en métal ou en plastique as-tu déjà réparés chez toi ?",
+     "c": "Trouve un objet en acier, un en aluminium et un en plastique et note leur toucher."
+    },
+    "it": {
+     "t": "Capire i materiali: metallo e plastica",
+     "g": "Conosci metalli e plastiche comuni in casa e come lavorarli.",
+     "p": [
+      "L'acciaio è forte ma può arrugginire; l'alluminio è leggero e resiste alla ruggine.",
+      "Le plastiche variano: alcune si piegano, altre si rompono, altre fondono col calore.",
+      "Usa la punta, la colla e la velocità giuste per ogni materiale."
+     ],
+     "q": "Quali oggetti di metallo o plastica hai riparato in casa?",
+     "c": "Trova un oggetto d'acciaio, uno d'alluminio e uno di plastica e nota come sono al tatto."
+    },
+    "pt": {
+     "t": "Entender os materiais: metal e plástico",
+     "g": "Conhece metais e plásticos comuns em casa e como os trabalhar.",
+     "p": [
+      "O aço é forte mas pode enferrujar; o alumínio é leve e resiste à ferrugem.",
+      "Os plásticos variam: uns dobram, outros racham, outros derretem com o calor.",
+      "Usa a broca, a cola e a velocidade certas para cada material."
+     ],
+     "q": "Que objetos de metal ou plástico já arranjaste em casa?",
+     "c": "Encontra um objeto de aço, um de alumínio e um de plástico e anota como se sentem."
+    },
+    "pt_BR": {
+     "t": "Entendendo os materiais: metal e plástico",
+     "g": "Conheça metais e plásticos comuns em casa e como trabalhá-los.",
+     "p": [
+      "O aço é forte mas pode enferrujar; o alumínio é leve e resiste à ferrugem.",
+      "Os plásticos variam: uns dobram, outros racham, outros derretem com o calor.",
+      "Use a broca, a cola e a velocidade certas para cada material."
+     ],
+     "q": "Que objetos de metal ou plástico você já consertou em casa?",
+     "c": "Ache um objeto de aço, um de alumínio e um de plástico e anote como são ao toque."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Planning a small project",
+     "g": "Write a plan, materials list and steps before you buy anything.",
+     "p": [
+      "Define the goal and measure the space before anything else.",
+      "List the materials and tools, then number the steps in order.",
+      "Add safety notes and check which parts, if any, need a professional."
+     ],
+     "q": "What small project would you like to plan first?",
+     "c": "Write a one-page plan for a simple project: goal, list, steps, risks."
+    },
+    "de": {
+     "t": "Ein kleines Projekt planen",
+     "g": "Schreibe Plan, Materialliste und Schritte, bevor du etwas kaufst.",
+     "p": [
+      "Lege zuerst das Ziel fest und miss den Platz aus.",
+      "Liste Material und Werkzeug auf und nummeriere die Schritte der Reihe nach.",
+      "Ergänze Sicherheitshinweise und prüfe, ob Teile einen Fachmann brauchen."
+     ],
+     "q": "Welches kleine Projekt möchtest du als Erstes planen?",
+     "c": "Schreibe einen einseitigen Plan für ein einfaches Projekt: Ziel, Liste, Schritte, Risiken."
+    },
+    "es": {
+     "t": "Planificar un proyecto pequeño",
+     "g": "Escribe un plan, la lista de materiales y los pasos antes de comprar nada.",
+     "p": [
+      "Define el objetivo y mide el espacio antes que nada.",
+      "Lista materiales y herramientas y numera los pasos en orden.",
+      "Añade notas de seguridad y comprueba qué partes necesitan un profesional."
+     ],
+     "q": "¿Qué proyecto pequeño te gustaría planificar primero?",
+     "c": "Escribe un plan de una página para un proyecto sencillo: meta, lista, pasos, riesgos."
+    },
+    "fr": {
+     "t": "Planifier un petit projet",
+     "g": "Écris un plan, une liste de matériaux et des étapes avant d'acheter quoi que ce soit.",
+     "p": [
+      "Définis l'objectif et mesure l'espace avant tout.",
+      "Liste matériaux et outils, puis numérote les étapes dans l'ordre.",
+      "Ajoute des notes de sécurité et vérifie si certaines parties demandent un professionnel."
+     ],
+     "q": "Quel petit projet aimerais-tu planifier en premier ?",
+     "c": "Rédige un plan d'une page pour un projet simple : objectif, liste, étapes, risques."
+    },
+    "it": {
+     "t": "Pianificare un piccolo progetto",
+     "g": "Scrivi un piano, la lista dei materiali e i passaggi prima di comprare qualsiasi cosa.",
+     "p": [
+      "Definisci l'obiettivo e misura lo spazio prima di tutto.",
+      "Elenca materiali e attrezzi, poi numera i passaggi in ordine.",
+      "Aggiungi note di sicurezza e verifica se qualche parte richiede un professionista."
+     ],
+     "q": "Quale piccolo progetto vorresti pianificare per primo?",
+     "c": "Scrivi un piano di una pagina per un progetto semplice: obiettivo, lista, passaggi, rischi."
+    },
+    "pt": {
+     "t": "Planear um pequeno projeto",
+     "g": "Escreve um plano, a lista de materiais e os passos antes de comprares seja o que for.",
+     "p": [
+      "Define o objetivo e mede o espaço antes de tudo.",
+      "Lista materiais e ferramentas e numera os passos por ordem.",
+      "Acrescenta notas de segurança e vê se alguma parte exige um profissional."
+     ],
+     "q": "Que pequeno projeto gostarias de planear primeiro?",
+     "c": "Escreve um plano de uma página para um projeto simples: objetivo, lista, passos, riscos."
+    },
+    "pt_BR": {
+     "t": "Planejando um pequeno projeto",
+     "g": "Escreva um plano, a lista de materiais e os passos antes de comprar qualquer coisa.",
+     "p": [
+      "Defina o objetivo e meça o espaço antes de tudo.",
+      "Liste materiais e ferramentas e numere os passos em ordem.",
+      "Acrescente notas de segurança e veja se alguma parte exige um profissional."
+     ],
+     "q": "Que pequeno projeto você gostaria de planejar primeiro?",
+     "c": "Escreva um plano de uma página para um projeto simples: objetivo, lista, passos, riscos."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Budgeting for DIY",
+     "g": "Estimate materials, add a margin for mistakes and avoid false economies.",
+     "p": [
+      "Measure carefully, then list exactly what each step will use.",
+      "Add a margin for waste and the odd mistake, often around ten percent.",
+      "Cheap tools or materials that fail can cost you more in the end."
+     ],
+     "q": "How do you decide when something is worth buying?",
+     "c": "Estimate the materials for a small project and add a safety margin."
+    },
+    "de": {
+     "t": "Heimwerken planen: Materialbedarf",
+     "g": "Schätze Material, plane Reserve für Fehler ein und meide falsche Sparsamkeit.",
+     "p": [
+      "Miss genau und liste auf, was jeder Schritt verbraucht.",
+      "Plane Verschnitt und kleine Fehler ein, oft rund zehn Prozent.",
+      "Billiges Werkzeug oder Material, das versagt, kostet am Ende oft mehr."
+     ],
+     "q": "Wie entscheidest du, ob sich eine Anschaffung lohnt?",
+     "c": "Schätze das Material für ein kleines Projekt und füge eine Reserve hinzu."
+    },
+    "es": {
+     "t": "Calcular materiales para bricolaje",
+     "g": "Estima materiales, añade margen para errores y evita falsos ahorros.",
+     "p": [
+      "Mide con cuidado y anota exactamente lo que usará cada paso.",
+      "Añade margen para desperdicio y algún error, a menudo un diez por ciento.",
+      "Herramientas o materiales baratos que fallan pueden salir más caros al final."
+     ],
+     "q": "¿Cómo decides si algo vale la pena comprarlo?",
+     "c": "Estima los materiales de un proyecto pequeño y añade un margen de seguridad."
+    },
+    "fr": {
+     "t": "Estimer les besoins d'un projet",
+     "g": "Estime les matériaux, prévois une marge d'erreur et évite les fausses économies.",
+     "p": [
+      "Mesure avec soin, puis liste précisément ce que chaque étape utilisera.",
+      "Ajoute une marge pour les chutes et les erreurs, souvent environ dix pour cent.",
+      "Des outils ou matériaux bon marché qui lâchent peuvent coûter plus cher au final."
+     ],
+     "q": "Comment décides-tu si un achat en vaut la peine ?",
+     "c": "Estime les matériaux d'un petit projet et ajoute une marge de sécurité."
+    },
+    "it": {
+     "t": "Stimare il materiale per un lavoro",
+     "g": "Stima i materiali, aggiungi un margine per gli errori ed evita i falsi risparmi.",
+     "p": [
+      "Misura con cura e scrivi esattamente cosa userà ogni passaggio.",
+      "Aggiungi un margine per scarti ed errori, spesso circa il dieci per cento.",
+      "Attrezzi o materiali scadenti che cedono possono costare di più alla fine."
+     ],
+     "q": "Come decidi se un acquisto vale la pena?",
+     "c": "Stima i materiali di un piccolo progetto e aggiungi un margine di sicurezza."
+    },
+    "pt": {
+     "t": "Estimar materiais para bricolage",
+     "g": "Estima materiais, acrescenta margem para erros e evita falsas economias.",
+     "p": [
+      "Mede com cuidado e anota exatamente o que cada passo vai usar.",
+      "Acrescenta margem para desperdício e algum erro, muitas vezes dez por cento.",
+      "Ferramentas ou materiais baratos que falham podem sair mais caros no fim."
+     ],
+     "q": "Como decides se vale a pena comprar algo?",
+     "c": "Estima os materiais de um pequeno projeto e acrescenta uma margem de segurança."
+    },
+    "pt_BR": {
+     "t": "Estimando materiais para o projeto",
+     "g": "Estime materiais, acrescente margem para erros e evite falsas economias.",
+     "p": [
+      "Meça com cuidado e anote exatamente o que cada passo vai usar.",
+      "Acrescente margem para desperdício e algum erro, muitas vezes dez por cento.",
+      "Ferramentas ou materiais baratos que falham podem sair mais caros no fim."
+     ],
+     "q": "Como você decide se algo vale a pena comprar?",
+     "c": "Estime os materiais de um pequeno projeto e acrescente uma margem de segurança."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shopping at a hardware store",
+     "g": "Navigate aisles, ask staff and buy the right quantities.",
+     "p": [
+      "Bring your list, measurements and a photo of what you are fixing.",
+      "Staff are happy to help; describe the problem, not just the product.",
+      "Check sizes, packs and labels so you buy enough and the right type."
+     ],
+     "q": "Do you enjoy browsing hardware stores, or find them overwhelming?",
+     "c": "Take your list and a photo, and ask one question to a staff member."
+    },
+    "de": {
+     "t": "Im Baumarkt einkaufen",
+     "g": "Finde dich in den Gängen zurecht, frage Personal und kaufe die richtige Menge.",
+     "p": [
+      "Bringe Liste, Maße und ein Foto vom Reparaturobjekt mit.",
+      "Das Personal hilft gern; beschreibe das Problem, nicht nur das Produkt.",
+      "Prüfe Größen, Packungen und Etiketten, damit Menge und Art stimmen."
+     ],
+     "q": "Stöberst du gern im Baumarkt oder erschlägt er dich?",
+     "c": "Nimm Liste und Foto mit und stelle einer Mitarbeiterin oder einem Mitarbeiter eine Frage."
+    },
+    "es": {
+     "t": "Comprar en la ferretería",
+     "g": "Muévete por los pasillos, pregunta al personal y compra las cantidades justas.",
+     "p": [
+      "Lleva tu lista, medidas y una foto de lo que arreglas.",
+      "El personal ayuda con gusto; describe el problema, no solo el producto.",
+      "Revisa tamaños, paquetes y etiquetas para comprar lo suficiente y del tipo correcto."
+     ],
+     "q": "¿Te gusta curiosear en ferreterías o te abruman?",
+     "c": "Lleva tu lista y una foto y hazle una pregunta a un dependiente."
+    },
+    "fr": {
+     "t": "Faire ses courses en magasin de bricolage",
+     "g": "Repère-toi dans les rayons, demande conseil et achète les bonnes quantités.",
+     "p": [
+      "Apporte ta liste, tes mesures et une photo de ce que tu répares.",
+      "Les vendeurs aident volontiers ; décris le problème, pas seulement le produit.",
+      "Vérifie tailles, conditionnements et étiquettes pour acheter assez et du bon type."
+     ],
+     "q": "Aimes-tu flâner dans les magasins de bricolage, ou te dépassent-ils ?",
+     "c": "Emporte ta liste et une photo, et pose une question à un vendeur."
+    },
+    "it": {
+     "t": "Fare acquisti in ferramenta",
+     "g": "Orientati tra gli scaffali, chiedi al personale e compra le quantità giuste.",
+     "p": [
+      "Porta la lista, le misure e una foto di ciò che ripari.",
+      "Il personale aiuta volentieri; descrivi il problema, non solo il prodotto.",
+      "Controlla misure, confezioni ed etichette per comprare abbastanza e del tipo giusto."
+     ],
+     "q": "Ti piace girare per le ferramenta o ti confondono?",
+     "c": "Porta la lista e una foto e fai una domanda a un commesso."
+    },
+    "pt": {
+     "t": "Fazer compras na loja de bricolage",
+     "g": "Orienta-te nos corredores, pergunta ao pessoal e compra as quantidades certas.",
+     "p": [
+      "Leva a lista, as medidas e uma foto do que estás a arranjar.",
+      "O pessoal ajuda com gosto; descreve o problema, não só o produto.",
+      "Confere tamanhos, embalagens e rótulos para comprar o suficiente e do tipo certo."
+     ],
+     "q": "Gostas de passear por lojas de bricolage ou intimidam-te?",
+     "c": "Leva a lista e uma foto e faz uma pergunta a um funcionário."
+    },
+    "pt_BR": {
+     "t": "Comprando na loja de ferragens",
+     "g": "Oriente-se pelos corredores, pergunte aos atendentes e compre as quantidades certas.",
+     "p": [
+      "Leve a lista, as medidas e uma foto do que está consertando.",
+      "Os atendentes ajudam com prazer; descreva o problema, não só o produto.",
+      "Confira tamanhos, embalagens e rótulos para comprar o suficiente e do tipo certo."
+     ],
+     "q": "Você gosta de passear em lojas de ferragens ou elas te intimidam?",
+     "c": "Leve a lista e uma foto e faça uma pergunta a um atendente."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Learning from mistakes",
+     "g": "Spot common beginner errors and see how every fix teaches something.",
+     "p": [
+      "Typical slips: rushing, skipping prep and using the wrong fixing.",
+      "Photograph your work as you go to see what went wrong and why.",
+      "A mistake fixed is a skill gained; stay curious, not discouraged."
+     ],
+     "q": "What is a DIY mistake you laughed about later?",
+     "c": "Pick one past mistake, write what caused it and how to avoid it next time."
+    },
+    "de": {
+     "t": "Aus Fehlern lernen",
+     "g": "Erkenne typische Anfängerfehler und sieh, wie jede Korrektur etwas lehrt.",
+     "p": [
+      "Typische Patzer: Hast, übersprungene Vorbereitung und falsches Befestigungsmaterial.",
+      "Fotografiere deine Arbeit zwischendurch, um zu sehen, was schiefging und warum.",
+      "Ein behobener Fehler ist ein gewonnenes Können; bleib neugierig, nicht entmutigt."
+     ],
+     "q": "Welcher Heimwerkerfehler bringt dich im Nachhinein zum Lachen?",
+     "c": "Wähle einen früheren Fehler, schreibe die Ursache auf und wie du ihn vermeidest."
+    },
+    "es": {
+     "t": "Aprender de los errores",
+     "g": "Reconoce errores típicos de principiante y descubre qué enseña cada arreglo.",
+     "p": [
+      "Fallos típicos: prisas, saltarse la preparación y usar la fijación equivocada.",
+      "Fotografía tu trabajo sobre la marcha para ver qué falló y por qué.",
+      "Un error arreglado es una habilidad ganada; sé curioso, no te desanimes."
+     ],
+     "q": "¿Qué error de bricolaje te hizo reír después?",
+     "c": "Elige un error pasado, anota su causa y cómo evitarlo la próxima vez."
+    },
+    "fr": {
+     "t": "Apprendre de ses erreurs",
+     "g": "Repère les erreurs classiques du débutant et vois ce que chaque réparation t'apprend.",
+     "p": [
+      "Erreurs typiques : précipitation, préparation négligée et mauvaise fixation.",
+      "Photographie ton travail en cours pour voir ce qui a mal tourné et pourquoi.",
+      "Une erreur corrigée est une compétence acquise ; reste curieux, pas découragé."
+     ],
+     "q": "Quelle erreur de bricolage t'a fait rire ensuite ?",
+     "c": "Choisis une erreur passée, note sa cause et comment l'éviter la prochaine fois."
+    },
+    "it": {
+     "t": "Imparare dagli errori",
+     "g": "Riconosci gli errori tipici da principiante e scopri cosa insegna ogni rimedio.",
+     "p": [
+      "Sbagli tipici: fretta, preparazione saltata e fissaggio sbagliato.",
+      "Fotografa il lavoro mentre procedi per capire cosa è andato storto e perché.",
+      "Un errore risolto è un'abilità guadagnata; resta curioso, non scoraggiato."
+     ],
+     "q": "Quale errore di fai da te ti ha fatto ridere dopo?",
+     "c": "Scegli un errore passato, scrivi la causa e come evitarlo la prossima volta."
+    },
+    "pt": {
+     "t": "Aprender com os erros",
+     "g": "Reconhece erros típicos de principiante e vê o que cada arranjo ensina.",
+     "p": [
+      "Falhas típicas: pressa, preparação saltada e fixação errada.",
+      "Fotografa o trabalho ao longo do caminho para ver o que correu mal e porquê.",
+      "Um erro corrigido é uma competência ganha; mantém a curiosidade, sem desanimar."
+     ],
+     "q": "Que erro de bricolage te fez rir depois?",
+     "c": "Escolhe um erro passado, anota a causa e como o evitar da próxima vez."
+    },
+    "pt_BR": {
+     "t": "Aprendendo com os erros",
+     "g": "Reconheça erros típicos de iniciante e veja o que cada conserto ensina.",
+     "p": [
+      "Escorregões típicos: pressa, preparo pulado e fixação errada.",
+      "Fotografe o trabalho durante o caminho para ver o que deu errado e por quê.",
+      "Um erro corrigido é uma habilidade ganha; mantenha a curiosidade, sem desanimar."
+     ],
+     "q": "Que erro de bricolagem fez você rir depois?",
+     "c": "Escolha um erro do passado, anote a causa e como evitá-lo da próxima vez."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: safety and tool foundations",
+     "g": "Recap safety gear, limits, basic tools and planning in a relaxed review.",
+     "p": [
+      "Protective gear and a tidy workspace come before every job.",
+      "Know your tools: hammer, screwdrivers, pliers, knife, level and drill.",
+      "Plan, measure twice, and leave electrical and gas work to professionals."
+     ],
+     "q": "Which lesson from the past month has been most useful to you?",
+     "c": "Write a short checklist of your top five safety rules and keep it by your tools."
+    },
+    "de": {
+     "t": "Wiederholung: Sicherheit und Werkzeug-Grundlagen",
+     "g": "Wiederhole Schutzausrüstung, Grenzen, Basiswerkzeug und Planung entspannt.",
+     "p": [
+      "Schutzausrüstung und ein aufgeräumter Arbeitsplatz kommen vor jeder Arbeit.",
+      "Kenne dein Werkzeug: Hammer, Schraubendreher, Zange, Messer, Wasserwaage und Bohrer.",
+      "Plane, miss zweimal und überlasse Strom- und Gasarbeiten Fachleuten."
+     ],
+     "q": "Welche Lektion des letzten Monats war für dich am nützlichsten?",
+     "c": "Schreibe eine kurze Checkliste mit deinen fünf wichtigsten Sicherheitsregeln und leg sie zum Werkzeug."
+    },
+    "es": {
+     "t": "Repaso: seguridad y herramientas básicas",
+     "g": "Repasa con calma equipo de protección, límites, herramientas básicas y planificación.",
+     "p": [
+      "El equipo de protección y un espacio ordenado van antes de cada trabajo.",
+      "Conoce tus herramientas: martillo, destornilladores, alicates, cúter, nivel y taladro.",
+      "Planifica, mide dos veces y deja la electricidad y el gas a profesionales."
+     ],
+     "q": "¿Qué lección del último mes te ha resultado más útil?",
+     "c": "Escribe una lista corta con tus cinco reglas de seguridad y guárdala junto a tus herramientas."
+    },
+    "fr": {
+     "t": "Révision : sécurité et bases des outils",
+     "g": "Reprends en douceur protections, limites, outils de base et planification.",
+     "p": [
+      "Équipement de protection et espace rangé passent avant chaque travail.",
+      "Connais tes outils : marteau, tournevis, pinces, cutter, niveau et perceuse.",
+      "Planifie, mesure deux fois et laisse électricité et gaz aux professionnels."
+     ],
+     "q": "Quelle leçon du dernier mois t'a été la plus utile ?",
+     "c": "Écris une courte liste de tes cinq règles de sécurité et garde-la près de tes outils."
+    },
+    "it": {
+     "t": "Ripasso: sicurezza e attrezzi di base",
+     "g": "Ripassa con calma protezioni, limiti, attrezzi base e pianificazione.",
+     "p": [
+      "Protezioni e uno spazio in ordine vengono prima di ogni lavoro.",
+      "Conosci i tuoi attrezzi: martello, cacciaviti, pinze, taglierino, livella e trapano.",
+      "Pianifica, misura due volte e lascia elettricità e gas ai professionisti."
+     ],
+     "q": "Quale lezione dell'ultimo mese ti è stata più utile?",
+     "c": "Scrivi una breve lista delle tue cinque regole di sicurezza e tienila vicino agli attrezzi."
+    },
+    "pt": {
+     "t": "Revisão: segurança e ferramentas básicas",
+     "g": "Revê com calma proteção, limites, ferramentas básicas e planeamento.",
+     "p": [
+      "Proteção e um espaço arrumado vêm antes de cada trabalho.",
+      "Conhece as tuas ferramentas: martelo, chaves, alicates, x-ato, nível e berbequim.",
+      "Planeia, mede duas vezes e deixa eletricidade e gás aos profissionais."
+     ],
+     "q": "Que lição do último mês te foi mais útil?",
+     "c": "Escreve uma lista curta com as tuas cinco regras de segurança e guarda-a junto às ferramentas."
+    },
+    "pt_BR": {
+     "t": "Revisão: segurança e ferramentas básicas",
+     "g": "Revise com calma proteção, limites, ferramentas básicas e planejamento.",
+     "p": [
+      "Proteção e um espaço organizado vêm antes de cada serviço.",
+      "Conheça suas ferramentas: martelo, chaves, alicates, estilete, nível e furadeira.",
+      "Planeje, meça duas vezes e deixe elétrica e gás para profissionais."
+     ],
+     "q": "Que lição do último mês foi mais útil para você?",
+     "c": "Escreva uma lista curta com suas cinco regras de segurança e guarde junto às ferramentas."
+    }
+   }
+  }
+ ]
+}

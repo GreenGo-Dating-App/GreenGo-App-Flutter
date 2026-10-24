@@ -1,0 +1,835 @@
+{
+ "topic": "gaming",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gaming culture: what is it?",
+     "g": "Discover the shared language, jokes, events and communities around games.",
+     "p": [
+      "Gaming culture is everything players create around games, from memes to music.",
+      "It includes shared words, inside jokes, events and fan traditions.",
+      "Anyone can join, whether they play daily or just love to watch."
+     ],
+     "q": "What part of gaming culture do you enjoy most?",
+     "c": "Share one gaming phrase or joke you like with a friend today."
+    },
+    "de": {
+     "t": "Spielekultur: was ist das?",
+     "g": "Gemeinsame Sprache, Witze, Events und Gemeinschaften rund um Spiele entdecken.",
+     "p": [
+      "Spielekultur ist alles, was Spieler rund um Spiele erschaffen, von Memes bis Musik.",
+      "Sie umfasst gemeinsame Wörter, Insiderwitze, Events und Fan-Traditionen.",
+      "Jeder kann mitmachen, ob er täglich spielt oder einfach gern zusieht."
+     ],
+     "q": "Welchen Teil der Spielekultur magst du am meisten?",
+     "c": "Teile heute einen Spruch oder Witz aus der Spielewelt mit einem Freund."
+    },
+    "es": {
+     "t": "Cultura gamer: ¿qué es?",
+     "g": "Descubrir el lenguaje, las bromas, los eventos y las comunidades en torno a los juegos.",
+     "p": [
+      "La cultura gamer es todo lo que los jugadores crean alrededor de los juegos, de memes a música.",
+      "Incluye palabras compartidas, bromas internas, eventos y tradiciones de fans.",
+      "Cualquiera puede unirse, juegue a diario o solo disfrute viendo."
+     ],
+     "q": "¿Qué parte de la cultura gamer disfrutas más?",
+     "c": "Comparte hoy con un amigo una frase o broma gamer que te guste."
+    },
+    "fr": {
+     "t": "La culture du jeu : c'est quoi ?",
+     "g": "Découvrir le langage, les blagues, les événements et les communautés autour des jeux.",
+     "p": [
+      "La culture du jeu, c'est tout ce que les joueurs créent autour des jeux, des mèmes à la musique.",
+      "Elle inclut mots partagés, blagues d'initiés, événements et traditions de fans.",
+      "Tout le monde peut s'y joindre, qu'on joue chaque jour ou qu'on aime juste regarder."
+     ],
+     "q": "Quelle part de la culture du jeu préfères-tu ?",
+     "c": "Partage aujourd'hui avec un ami une expression ou une blague de joueurs que tu aimes."
+    },
+    "it": {
+     "t": "Cultura videoludica: che cos'è?",
+     "g": "Scoprire linguaggio, battute, eventi e comunità attorno ai giochi.",
+     "p": [
+      "La cultura videoludica è tutto ciò che i giocatori creano attorno ai giochi, da meme a musica.",
+      "Comprende parole condivise, battute da insider, eventi e tradizioni dei fan.",
+      "Chiunque può unirsi, che giochi ogni giorno o ami solo guardare."
+     ],
+     "q": "Quale parte della cultura videoludica ti piace di più?",
+     "c": "Condividi oggi con un amico una frase o battuta da gamer che ti piace."
+    },
+    "pt": {
+     "t": "Cultura gamer: o que é?",
+     "g": "Descobrir a linguagem, as piadas, os eventos e as comunidades em torno dos jogos.",
+     "p": [
+      "A cultura gamer é tudo o que os jogadores criam à volta dos jogos, de memes a música.",
+      "Inclui palavras partilhadas, piadas internas, eventos e tradições de fãs.",
+      "Qualquer pessoa pode juntar-se, jogue todos os dias ou goste só de ver."
+     ],
+     "q": "Que parte da cultura gamer mais gostas?",
+     "c": "Partilha hoje com um amigo uma frase ou piada gamer de que gostes."
+    },
+    "pt_BR": {
+     "t": "Cultura gamer: o que é?",
+     "g": "Descobrir a linguagem, as piadas, os eventos e as comunidades em torno dos jogos.",
+     "p": [
+      "A cultura gamer é tudo o que os jogadores criam em volta dos jogos, de memes a música.",
+      "Inclui palavras compartilhadas, piadas internas, eventos e tradições de fãs.",
+      "Qualquer pessoa pode participar, jogue todo dia ou goste só de assistir."
+     ],
+     "q": "Que parte da cultura gamer você mais curte?",
+     "c": "Compartilhe hoje com um amigo uma frase ou piada gamer de que você goste."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gaming vocabulary",
+     "g": "Learn common words like level, boss, respawn, quest and grind.",
+     "p": [
+      "A level is a stage, and a boss is a tough challenge at its end.",
+      "To respawn means to come back after a setback, and a quest is a mission.",
+      "To grind means to repeat tasks to improve, which is also true in real life."
+     ],
+     "q": "Which gaming word do you use most often?",
+     "c": "Use three new gaming words in a sentence about your day."
+    },
+    "de": {
+     "t": "Spielewortschatz",
+     "g": "Gängige Wörter wie Level, Boss, Respawn, Quest und Grind lernen.",
+     "p": [
+      "Ein Level ist eine Stufe, und ein Boss ist eine harte Herausforderung an ihrem Ende.",
+      "Respawnen heißt nach einem Rückschlag zurückkehren, und eine Quest ist eine Mission.",
+      "Grinden heißt, Aufgaben zu wiederholen, um besser zu werden, was auch im Leben gilt."
+     ],
+     "q": "Welches Spielewort benutzt du am häufigsten?",
+     "c": "Benutze drei neue Spielewörter in einem Satz über deinen Tag."
+    },
+    "es": {
+     "t": "Vocabulario gamer",
+     "g": "Aprender palabras comunes como nivel, jefe, reaparecer, misión y farmeo.",
+     "p": [
+      "Un nivel es una etapa y un jefe es un reto duro al final.",
+      "Reaparecer es volver tras un revés y una misión es un encargo.",
+      "Farmear es repetir tareas para mejorar, algo que también sirve en la vida real."
+     ],
+     "q": "¿Qué palabra gamer usas más a menudo?",
+     "c": "Usa tres palabras gamer nuevas en una frase sobre tu día."
+    },
+    "fr": {
+     "t": "Vocabulaire du jeu",
+     "g": "Apprendre des mots courants comme niveau, boss, réapparition, quête et grind.",
+     "p": [
+      "Un niveau est une étape et un boss est un défi difficile à la fin.",
+      "Réapparaître, c'est revenir après un revers, et une quête est une mission.",
+      "Faire du grind, c'est répéter des tâches pour progresser, comme dans la vie."
+     ],
+     "q": "Quel mot de joueur utilises-tu le plus souvent ?",
+     "c": "Utilise trois nouveaux mots de joueur dans une phrase sur ta journée."
+    },
+    "it": {
+     "t": "Vocabolario dei giocatori",
+     "g": "Imparare parole comuni come livello, boss, respawn, missione e grind.",
+     "p": [
+      "Un livello è una tappa e un boss è una sfida dura alla sua fine.",
+      "Respawn significa tornare dopo un intoppo e una missione è un incarico.",
+      "Fare grind significa ripetere compiti per migliorare, vale anche nella vita."
+     ],
+     "q": "Quale parola da gamer usi più spesso?",
+     "c": "Usa tre nuove parole da gamer in una frase sulla tua giornata."
+    },
+    "pt": {
+     "t": "Vocabulário gamer",
+     "g": "Aprender palavras comuns como nível, chefe, renascer, missão e grind.",
+     "p": [
+      "Um nível é uma etapa e um chefe é um desafio duro no fim.",
+      "Renascer é voltar depois de um revés e uma missão é uma tarefa.",
+      "Fazer grind é repetir tarefas para melhorar, o que também vale na vida real."
+     ],
+     "q": "Que palavra gamer usas mais vezes?",
+     "c": "Usa três palavras gamer novas numa frase sobre o teu dia."
+    },
+    "pt_BR": {
+     "t": "Vocabulário gamer",
+     "g": "Aprender palavras comuns como fase, chefe, renascer, missão e grind.",
+     "p": [
+      "Uma fase é uma etapa e um chefe é um desafio duro no fim.",
+      "Renascer é voltar depois de um revés e uma missão é uma tarefa.",
+      "Fazer grind é repetir tarefas para melhorar, o que também vale na vida real."
+     ],
+     "q": "Que palavra gamer você mais usa?",
+     "c": "Use três palavras gamer novas numa frase sobre o seu dia."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Good sportsmanship online",
+     "g": "Learn to say good game, support teammates and lose gracefully.",
+     "p": [
+      "Writing gg or good game after a match is a friendly ritual.",
+      "Encourage teammates with specific praise, such as nice save.",
+      "After a loss, congratulate the winners and think about what you learned."
+     ],
+     "q": "What is the kindest thing a teammate ever said to you?",
+     "c": "In your next match, say one kind thing to a teammate or opponent."
+    },
+    "de": {
+     "t": "Fairplay online",
+     "g": "Lernen, gg zu sagen, Mitspieler zu unterstützen und anständig zu verlieren.",
+     "p": [
+      "gg oder good game nach einem Match zu schreiben ist ein freundliches Ritual.",
+      "Ermutige Mitspieler mit konkretem Lob, etwa schöne Rettung.",
+      "Gratuliere nach einer Niederlage den Siegern und überlege, was du gelernt hast."
+     ],
+     "q": "Was ist das Netteste, das dir je ein Mitspieler gesagt hat?",
+     "c": "Sage im nächsten Match einem Mitspieler oder Gegner etwas Freundliches."
+    },
+    "es": {
+     "t": "Deportividad en línea",
+     "g": "Aprender a decir buena partida, apoyar al equipo y perder con elegancia.",
+     "p": [
+      "Escribir gg o buena partida tras un encuentro es un ritual amable.",
+      "Anima a tus compañeros con elogios concretos, como buena parada.",
+      "Tras una derrota, felicita a los ganadores y piensa qué aprendiste."
+     ],
+     "q": "¿Qué es lo más amable que te dijo un compañero?",
+     "c": "En tu próxima partida, di algo amable a un compañero o rival."
+    },
+    "fr": {
+     "t": "Fair-play en ligne",
+     "g": "Apprendre à dire bien joué, soutenir ses coéquipiers et perdre avec grâce.",
+     "p": [
+      "Écrire gg ou bien joué après un match est un rituel amical.",
+      "Encourage tes coéquipiers avec des compliments précis, comme beau sauvetage.",
+      "Après une défaite, félicite les gagnants et pense à ce que tu as appris."
+     ],
+     "q": "Quelle est la chose la plus gentille qu'un coéquipier t'ait dite ?",
+     "c": "Au prochain match, dis un mot gentil à un coéquipier ou à un adversaire."
+    },
+    "it": {
+     "t": "Sportività online",
+     "g": "Imparare a dire bella partita, sostenere i compagni e perdere con stile.",
+     "p": [
+      "Scrivere gg o bella partita dopo un incontro è un rituale amichevole.",
+      "Incoraggia i compagni con elogi specifici, come bella parata.",
+      "Dopo una sconfitta, congratulati con i vincitori e pensa a cosa hai imparato."
+     ],
+     "q": "Qual è la cosa più gentile che un compagno ti ha detto?",
+     "c": "Nella prossima partita, di' una cosa gentile a un compagno o avversario."
+    },
+    "pt": {
+     "t": "Desportivismo online",
+     "g": "Aprender a dizer boa partida, apoiar colegas e perder com elegância.",
+     "p": [
+      "Escrever gg ou boa partida depois de um jogo é um ritual simpático.",
+      "Incentiva os colegas com elogios concretos, como boa defesa.",
+      "Depois de uma derrota, dá os parabéns aos vencedores e pensa no que aprendeste."
+     ],
+     "q": "Qual foi a coisa mais simpática que um colega te disse?",
+     "c": "No próximo jogo, diz uma coisa simpática a um colega ou adversário."
+    },
+    "pt_BR": {
+     "t": "Espírito esportivo online",
+     "g": "Aprender a dizer boa partida, apoiar colegas e perder com elegância.",
+     "p": [
+      "Escrever gg ou boa partida depois de um jogo é um ritual simpático.",
+      "Incentive os colegas com elogios concretos, como boa defesa.",
+      "Depois de uma derrota, parabenize os vencedores e pense no que aprendeu."
+     ],
+     "q": "Qual foi a coisa mais simpática que um colega já disse a você?",
+     "c": "Na próxima partida, diga uma coisa simpática a um colega ou adversário."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Making friends through games",
+     "g": "See how co-op games and communities connect people across countries.",
+     "p": [
+      "Working toward a shared goal builds trust quickly.",
+      "Voice or text chat lets you meet people from many countries.",
+      "Friendly habits, like listening and sharing, turn teammates into friends."
+     ],
+     "q": "Have you made a friend through a game?",
+     "c": "Invite one person to try a co-op or casual game with you this week."
+    },
+    "de": {
+     "t": "Freunde durch Spiele finden",
+     "g": "Sehen, wie Koop-Spiele und Gemeinschaften Menschen über Länder hinweg verbinden.",
+     "p": [
+      "Ein gemeinsames Ziel schafft schnell Vertrauen.",
+      "Sprach- oder Textchat lässt dich Menschen aus vielen Ländern treffen.",
+      "Freundliche Gewohnheiten wie Zuhören und Teilen machen Mitspieler zu Freunden."
+     ],
+     "q": "Hast du durch ein Spiel einen Freund gefunden?",
+     "c": "Lade diese Woche eine Person ein, ein Koop- oder Gelegenheitsspiel mit dir zu probieren."
+    },
+    "es": {
+     "t": "Hacer amigos con los juegos",
+     "g": "Ver cómo los juegos cooperativos y las comunidades conectan personas de distintos países.",
+     "p": [
+      "Trabajar por un objetivo común genera confianza rápido.",
+      "El chat de voz o texto te permite conocer gente de muchos países.",
+      "Hábitos amables, como escuchar y compartir, convierten compañeros en amigos."
+     ],
+     "q": "¿Has hecho algún amigo gracias a un juego?",
+     "c": "Invita esta semana a una persona a probar un juego cooperativo o casual contigo."
+    },
+    "fr": {
+     "t": "Se faire des amis grâce aux jeux",
+     "g": "Voir comment les jeux coopératifs et les communautés relient les gens entre pays.",
+     "p": [
+      "Viser un but commun crée vite la confiance.",
+      "Le chat vocal ou écrit permet de rencontrer des gens de nombreux pays.",
+      "Des habitudes aimables, écouter et partager, font des coéquipiers des amis."
+     ],
+     "q": "T'es-tu déjà fait un ami grâce à un jeu ?",
+     "c": "Invite cette semaine une personne à essayer un jeu coop ou décontracté avec toi."
+    },
+    "it": {
+     "t": "Fare amicizia con i giochi",
+     "g": "Vedere come i giochi cooperativi e le comunità uniscono persone di paesi diversi.",
+     "p": [
+      "Lavorare per un obiettivo comune crea fiducia in fretta.",
+      "La chat vocale o testuale permette di conoscere persone di molti paesi.",
+      "Abitudini gentili, come ascoltare e condividere, trasformano i compagni in amici."
+     ],
+     "q": "Hai mai fatto amicizia grazie a un gioco?",
+     "c": "Invita questa settimana una persona a provare con te un gioco cooperativo o casual."
+    },
+    "pt": {
+     "t": "Fazer amigos através dos jogos",
+     "g": "Ver como os jogos cooperativos e as comunidades ligam pessoas de vários países.",
+     "p": [
+      "Trabalhar por um objetivo comum cria confiança depressa.",
+      "O chat de voz ou texto permite conhecer pessoas de muitos países.",
+      "Hábitos simpáticos, como ouvir e partilhar, transformam colegas em amigos."
+     ],
+     "q": "Já fizeste algum amigo através de um jogo?",
+     "c": "Convida esta semana uma pessoa a experimentar contigo um jogo cooperativo ou casual."
+    },
+    "pt_BR": {
+     "t": "Fazer amigos através dos jogos",
+     "g": "Ver como os jogos cooperativos e as comunidades ligam pessoas de vários países.",
+     "p": [
+      "Trabalhar por um objetivo comum cria confiança rápido.",
+      "O chat de voz ou texto permite conhecer pessoas de muitos países.",
+      "Hábitos simpáticos, como ouvir e compartilhar, transformam colegas em amigos."
+     ],
+     "q": "Você já fez algum amigo por meio de um jogo?",
+     "c": "Convide esta semana uma pessoa para experimentar com você um jogo cooperativo ou casual."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gaming communities and forums",
+     "g": "Learn where players share tips and art, and how to find friendly spaces.",
+     "p": [
+      "Communities gather around a game, a genre or a hobby.",
+      "Friendly spaces have clear rules, helpful moderators and welcoming members.",
+      "Share your own tips and thank those who help you."
+     ],
+     "q": "What would you like to ask or share with other players?",
+     "c": "Look for one community around a favourite game and read its rules first."
+    },
+    "de": {
+     "t": "Spielegemeinschaften und Foren",
+     "g": "Lernen, wo Spieler Tipps und Kunst teilen und wie man freundliche Orte findet.",
+     "p": [
+      "Gemeinschaften bilden sich um ein Spiel, ein Genre oder ein Hobby.",
+      "Freundliche Orte haben klare Regeln, hilfsbereite Moderatoren und offene Mitglieder.",
+      "Teile eigene Tipps und danke denen, die dir helfen."
+     ],
+     "q": "Was möchtest du andere Spieler fragen oder mit ihnen teilen?",
+     "c": "Suche eine Gemeinschaft zu einem Lieblingsspiel und lies zuerst ihre Regeln."
+    },
+    "es": {
+     "t": "Comunidades y foros de jugadores",
+     "g": "Aprender dónde los jugadores comparten consejos y arte, y cómo hallar espacios amables.",
+     "p": [
+      "Las comunidades se reúnen en torno a un juego, un género o una afición.",
+      "Los espacios amables tienen reglas claras, moderadores útiles y miembros acogedores.",
+      "Comparte tus propios consejos y agradece a quien te ayuda."
+     ],
+     "q": "¿Qué te gustaría preguntar o compartir con otros jugadores?",
+     "c": "Busca una comunidad sobre un juego favorito y lee primero sus normas."
+    },
+    "fr": {
+     "t": "Communautés et forums de joueurs",
+     "g": "Savoir où les joueurs partagent astuces et créations et comment trouver des espaces sympas.",
+     "p": [
+      "Les communautés se forment autour d'un jeu, d'un genre ou d'un loisir.",
+      "Les espaces sympas ont des règles claires, des modérateurs serviables et des membres accueillants.",
+      "Partage tes astuces et remercie ceux qui t'aident."
+     ],
+     "q": "Que voudrais-tu demander ou partager avec d'autres joueurs ?",
+     "c": "Cherche une communauté autour d'un jeu préféré et lis d'abord ses règles."
+    },
+    "it": {
+     "t": "Comunità e forum di giocatori",
+     "g": "Scoprire dove i giocatori condividono consigli e arte e come trovare spazi amichevoli.",
+     "p": [
+      "Le comunità nascono attorno a un gioco, un genere o un hobby.",
+      "Gli spazi amichevoli hanno regole chiare, moderatori utili e membri accoglienti.",
+      "Condividi i tuoi consigli e ringrazia chi ti aiuta."
+     ],
+     "q": "Cosa vorresti chiedere o condividere con altri giocatori?",
+     "c": "Cerca una comunità su un gioco preferito e leggi prima le sue regole."
+    },
+    "pt": {
+     "t": "Comunidades e fóruns de jogadores",
+     "g": "Saber onde os jogadores partilham dicas e arte e como encontrar espaços simpáticos.",
+     "p": [
+      "As comunidades reúnem-se em torno de um jogo, um género ou um passatempo.",
+      "Os espaços simpáticos têm regras claras, moderadores prestáveis e membros acolhedores.",
+      "Partilha as tuas dicas e agradece a quem te ajuda."
+     ],
+     "q": "O que gostarias de perguntar ou partilhar com outros jogadores?",
+     "c": "Procura uma comunidade sobre um jogo favorito e lê primeiro as suas regras."
+    },
+    "pt_BR": {
+     "t": "Comunidades e fóruns de jogadores",
+     "g": "Saber onde os jogadores compartilham dicas e arte e como achar espaços simpáticos.",
+     "p": [
+      "As comunidades se reúnem em torno de um jogo, um gênero ou um hobby.",
+      "Os espaços simpáticos têm regras claras, moderadores prestativos e membros acolhedores.",
+      "Compartilhe suas dicas e agradeça a quem ajuda você."
+     ],
+     "q": "O que você gostaria de perguntar ou compartilhar com outros jogadores?",
+     "c": "Procure uma comunidade sobre um jogo favorito e leia primeiro as regras dela."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fan art and fan creativity",
+     "g": "Explore drawings, music, cosplay and stories made by players.",
+     "p": [
+      "Fans express love for a game through art, songs, videos and stories.",
+      "Fan creations keep communities lively long after a game is released.",
+      "Credit the original artist whenever you share someone's work."
+     ],
+     "q": "What would you create to celebrate a game you love?",
+     "c": "Make a quick doodle or write a four-line poem about a favourite game."
+    },
+    "de": {
+     "t": "Fan-Kunst und Fan-Kreativität",
+     "g": "Zeichnungen, Musik, Cosplay und Geschichten von Spielern erkunden.",
+     "p": [
+      "Fans drücken ihre Liebe zu einem Spiel durch Kunst, Lieder, Videos und Geschichten aus.",
+      "Fan-Werke halten Gemeinschaften lange nach dem Erscheinen eines Spiels lebendig.",
+      "Nenne immer den Urheber, wenn du fremde Werke teilst."
+     ],
+     "q": "Was würdest du erschaffen, um ein geliebtes Spiel zu feiern?",
+     "c": "Male eine schnelle Skizze oder schreibe ein vierzeiliges Gedicht über ein Lieblingsspiel."
+    },
+    "es": {
+     "t": "Fan art y creatividad de fans",
+     "g": "Explorar dibujos, música, cosplay e historias hechos por jugadores.",
+     "p": [
+      "Los fans expresan su cariño por un juego con arte, canciones, vídeos e historias.",
+      "Las creaciones de fans mantienen viva la comunidad mucho después del lanzamiento.",
+      "Da siempre crédito al artista original al compartir su obra."
+     ],
+     "q": "¿Qué crearías para celebrar un juego que amas?",
+     "c": "Haz un garabato rápido o escribe un poema de cuatro versos sobre un juego favorito."
+    },
+    "fr": {
+     "t": "Fan art et créativité des fans",
+     "g": "Explorer dessins, musiques, cosplay et histoires créés par des joueurs.",
+     "p": [
+      "Les fans expriment leur amour d'un jeu par l'art, les chansons, les vidéos et les histoires.",
+      "Les créations de fans gardent la communauté vivante longtemps après la sortie d'un jeu.",
+      "Cite toujours l'artiste d'origine quand tu partages son travail."
+     ],
+     "q": "Que créerais-tu pour célébrer un jeu que tu aimes ?",
+     "c": "Fais un petit croquis ou écris un poème de quatre vers sur un jeu préféré."
+    },
+    "it": {
+     "t": "Fan art e creatività dei fan",
+     "g": "Esplorare disegni, musica, cosplay e storie creati dai giocatori.",
+     "p": [
+      "I fan esprimono l'amore per un gioco con arte, canzoni, video e storie.",
+      "Le creazioni dei fan tengono viva la comunità a lungo dopo l'uscita di un gioco.",
+      "Cita sempre l'artista originale quando condividi il lavoro di qualcuno."
+     ],
+     "q": "Cosa creeresti per celebrare un gioco che ami?",
+     "c": "Fai uno scarabocchio veloce o scrivi una poesia di quattro versi su un gioco preferito."
+    },
+    "pt": {
+     "t": "Fan art e criatividade dos fãs",
+     "g": "Explorar desenhos, música, cosplay e histórias feitos por jogadores.",
+     "p": [
+      "Os fãs expressam o carinho por um jogo com arte, canções, vídeos e histórias.",
+      "As criações dos fãs mantêm a comunidade viva muito depois do lançamento.",
+      "Dá sempre crédito ao artista original quando partilhas o trabalho de alguém."
+     ],
+     "q": "O que criarias para celebrar um jogo de que gostas?",
+     "c": "Faz um rabisco rápido ou escreve um poema de quatro versos sobre um jogo favorito."
+    },
+    "pt_BR": {
+     "t": "Fan art e criatividade dos fãs",
+     "g": "Explorar desenhos, música, cosplay e histórias feitos por jogadores.",
+     "p": [
+      "Os fãs expressam o carinho por um jogo com arte, músicas, vídeos e histórias.",
+      "As criações dos fãs mantêm a comunidade viva muito depois do lançamento.",
+      "Dê sempre crédito ao artista original quando compartilhar o trabalho de alguém."
+     ],
+     "q": "O que você criaria para celebrar um jogo de que gosta?",
+     "c": "Faça um rabisco rápido ou escreva um poema de quatro versos sobre um jogo favorito."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cosplay as a hobby",
+     "g": "Learn about building costumes of game characters and the craft skills involved.",
+     "p": [
+      "Cosplay means dressing as a character, from simple outfits to elaborate builds.",
+      "Sewing, painting, foam crafting and makeup are all part of the craft.",
+      "Many cosplayers start small with clothes they already own."
+     ],
+     "q": "Which character would make a fun costume for you?",
+     "c": "Plan a mini costume from things at home, like one hat plus one accessory."
+    },
+    "de": {
+     "t": "Cosplay als Hobby",
+     "g": "Mehr über den Bau von Kostümen von Spielfiguren und die dafür nötigen Handwerke erfahren.",
+     "p": [
+      "Cosplay heißt, sich als Figur zu verkleiden, von einfachen Outfits bis zu aufwendigen Bauten.",
+      "Nähen, Malen, Schaumstoffbau und Schminken gehören zum Handwerk.",
+      "Viele Cosplayer beginnen klein mit Kleidung, die sie schon haben."
+     ],
+     "q": "Welche Figur wäre für dich ein lustiges Kostüm?",
+     "c": "Plane ein Mini-Kostüm aus Dingen von zu Hause, etwa ein Hut plus ein Accessoire."
+    },
+    "es": {
+     "t": "El cosplay como afición",
+     "g": "Conocer cómo se hacen disfraces de personajes de juegos y las habilidades artesanales que implica.",
+     "p": [
+      "Cosplay es vestirse como un personaje, de atuendos simples a construcciones elaboradas.",
+      "Coser, pintar, trabajar goma eva y maquillar forman parte del oficio.",
+      "Muchos cosplayers empiezan con poco, usando ropa que ya tienen."
+     ],
+     "q": "¿Qué personaje sería un disfraz divertido para ti?",
+     "c": "Planea un mini disfraz con cosas de casa, como un sombrero y un accesorio."
+    },
+    "fr": {
+     "t": "Le cosplay comme loisir",
+     "g": "Découvrir la fabrication de costumes de personnages de jeux et les savoir-faire utilisés.",
+     "p": [
+      "Le cosplay consiste à s'habiller en personnage, du costume simple à la création élaborée.",
+      "Couture, peinture, mousse et maquillage font partie de l'artisanat.",
+      "Beaucoup de cosplayers débutent avec des vêtements déjà possédés."
+     ],
+     "q": "Quel personnage ferait un costume amusant pour toi ?",
+     "c": "Prévois un mini costume avec des affaires de la maison, comme un chapeau et un accessoire."
+    },
+    "it": {
+     "t": "Il cosplay come hobby",
+     "g": "Scoprire come si costruiscono costumi di personaggi dei giochi e le abilità artigianali coinvolte.",
+     "p": [
+      "Cosplay significa vestirsi da personaggio, da semplici outfit a costruzioni elaborate.",
+      "Cucito, pittura, lavorazione della gommapiuma e trucco fanno parte dell'artigianato.",
+      "Molti cosplayer iniziano in piccolo con abiti che già possiedono."
+     ],
+     "q": "Quale personaggio sarebbe un costume divertente per te?",
+     "c": "Pianifica un mini costume con cose di casa, come un cappello e un accessorio."
+    },
+    "pt": {
+     "t": "Cosplay como passatempo",
+     "g": "Conhecer como se fazem fatos de personagens de jogos e as habilidades manuais envolvidas.",
+     "p": [
+      "Cosplay é vestir-se de personagem, de roupas simples a construções elaboradas.",
+      "Costura, pintura, trabalho com espuma e maquilhagem fazem parte do ofício.",
+      "Muitos cosplayers começam pequeno, com roupa que já têm."
+     ],
+     "q": "Que personagem seria um fato divertido para ti?",
+     "c": "Planeia um mini fato com coisas de casa, como um chapéu e um acessório."
+    },
+    "pt_BR": {
+     "t": "Cosplay como hobby",
+     "g": "Conhecer como se fazem fantasias de personagens de jogos e as habilidades manuais envolvidas.",
+     "p": [
+      "Cosplay é se vestir de personagem, de roupas simples a construções elaboradas.",
+      "Costura, pintura, trabalho com EVA e maquiagem fazem parte do ofício.",
+      "Muitos cosplayers começam pequeno, com roupas que já têm."
+     ],
+     "q": "Que personagem seria uma fantasia divertida para você?",
+     "c": "Planeje uma mini fantasia com coisas de casa, como um chapéu e um acessório."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Game conventions and fairs",
+     "g": "See what happens at gaming expos and fan conventions around the world.",
+     "p": [
+      "Conventions bring players, creators and fans together in one place.",
+      "You can try upcoming games, watch panels and meet other fans.",
+      "There are also tournaments, art shows and costume contests."
+     ],
+     "q": "Would you enjoy visiting a gaming convention?",
+     "c": "Imagine your dream convention and list three things you would do there."
+    },
+    "de": {
+     "t": "Spielemessen und Conventions",
+     "g": "Sehen, was auf Spielemessen und Fan-Conventions weltweit passiert.",
+     "p": [
+      "Conventions bringen Spieler, Entwickler und Fans an einem Ort zusammen.",
+      "Du kannst kommende Spiele testen, Panels ansehen und andere Fans treffen.",
+      "Es gibt auch Turniere, Kunstausstellungen und Kostümwettbewerbe."
+     ],
+     "q": "Würdest du gern eine Spielemesse besuchen?",
+     "c": "Stell dir deine Traum-Convention vor und nenne drei Dinge, die du dort tun würdest."
+    },
+    "es": {
+     "t": "Convenciones y ferias de juegos",
+     "g": "Ver qué ocurre en ferias de videojuegos y convenciones de fans por el mundo.",
+     "p": [
+      "Las convenciones reúnen a jugadores, creadores y fans en un mismo lugar.",
+      "Puedes probar juegos próximos, ver paneles y conocer a otros fans.",
+      "También hay torneos, exposiciones de arte y concursos de disfraces."
+     ],
+     "q": "¿Disfrutarías visitando una convención de juegos?",
+     "c": "Imagina tu convención soñada y enumera tres cosas que harías allí."
+    },
+    "fr": {
+     "t": "Conventions et salons du jeu",
+     "g": "Voir ce qui se passe dans les salons du jeu et conventions de fans dans le monde.",
+     "p": [
+      "Les conventions réunissent joueurs, créateurs et fans au même endroit.",
+      "On peut essayer des jeux à venir, suivre des conférences et rencontrer d'autres fans.",
+      "Il y a aussi des tournois, des expositions d'art et des concours de costumes."
+     ],
+     "q": "Aimerais-tu visiter une convention de jeux ?",
+     "c": "Imagine ta convention idéale et liste trois choses que tu y ferais."
+    },
+    "it": {
+     "t": "Convention e fiere del gioco",
+     "g": "Vedere cosa succede alle fiere videoludiche e alle convention di fan nel mondo.",
+     "p": [
+      "Le convention riuniscono giocatori, creatori e fan in un solo luogo.",
+      "Puoi provare giochi in arrivo, seguire panel e conoscere altri fan.",
+      "Ci sono anche tornei, mostre d'arte e gare di costumi."
+     ],
+     "q": "Ti piacerebbe visitare una convention di giochi?",
+     "c": "Immagina la tua convention ideale e elenca tre cose che faresti lì."
+    },
+    "pt": {
+     "t": "Convenções e feiras de jogos",
+     "g": "Ver o que acontece em feiras de videojogos e convenções de fãs pelo mundo.",
+     "p": [
+      "As convenções juntam jogadores, criadores e fãs no mesmo lugar.",
+      "Podes experimentar jogos futuros, ver painéis e conhecer outros fãs.",
+      "Há também torneios, exposições de arte e concursos de fatos."
+     ],
+     "q": "Gostarias de visitar uma convenção de jogos?",
+     "c": "Imagina a tua convenção de sonho e lista três coisas que farias lá."
+    },
+    "pt_BR": {
+     "t": "Convenções e feiras de jogos",
+     "g": "Ver o que acontece em feiras de videogames e convenções de fãs pelo mundo.",
+     "p": [
+      "As convenções reúnem jogadores, criadores e fãs no mesmo lugar.",
+      "Você pode experimentar jogos futuros, assistir a painéis e conhecer outros fãs.",
+      "Há também torneios, exposições de arte e concursos de fantasias."
+     ],
+     "q": "Você gostaria de visitar uma convenção de jogos?",
+     "c": "Imagine sua convenção dos sonhos e liste três coisas que você faria lá."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Safe and respectful play spaces",
+     "g": "Learn to use block, mute and report tools and protect personal information.",
+     "p": [
+      "Block and mute tools let you control who you hear and see.",
+      "Report unkind behaviour so moderators can keep spaces friendly.",
+      "Keep your real name, address and passwords private when playing online."
+     ],
+     "q": "Do you know where the mute and report buttons are in your favourite game?",
+     "c": "Find the block, mute and report settings in one game you play today."
+    },
+    "de": {
+     "t": "Sichere und respektvolle Spielräume",
+     "g": "Lernen, Blockieren, Stummschalten und Melden zu nutzen und persönliche Daten zu schützen.",
+     "p": [
+      "Mit Blockieren und Stummschalten steuerst du, wen du hörst und siehst.",
+      "Melde unfreundliches Verhalten, damit Moderatoren Räume freundlich halten.",
+      "Halte beim Online-Spielen Klarnamen, Adresse und Passwörter privat."
+     ],
+     "q": "Weißt du, wo in deinem Lieblingsspiel die Stumm- und Melde-Knöpfe sind?",
+     "c": "Finde heute in einem Spiel, das du spielst, die Einstellungen zum Blockieren, Stummschalten und Melden."
+    },
+    "es": {
+     "t": "Espacios de juego seguros y respetuosos",
+     "g": "Aprender a usar bloquear, silenciar y denunciar y a proteger tus datos personales.",
+     "p": [
+      "Bloquear y silenciar te permiten controlar a quién oyes y ves.",
+      "Denuncia el trato desagradable para que los moderadores mantengan espacios amables.",
+      "Mantén en privado tu nombre real, dirección y contraseñas al jugar en línea."
+     ],
+     "q": "¿Sabes dónde están los botones de silenciar y denunciar en tu juego favorito?",
+     "c": "Busca hoy los ajustes de bloquear, silenciar y denunciar en un juego que uses."
+    },
+    "fr": {
+     "t": "Espaces de jeu sûrs et respectueux",
+     "g": "Apprendre à utiliser bloquer, couper le son et signaler, et protéger ses informations personnelles.",
+     "p": [
+      "Bloquer et couper le son permettent de contrôler qui tu entends et vois.",
+      "Signale les comportements désagréables pour que les modérateurs gardent des espaces sympas.",
+      "Garde privés ton vrai nom, ton adresse et tes mots de passe en jouant en ligne."
+     ],
+     "q": "Sais-tu où sont les boutons muet et signalement dans ton jeu préféré ?",
+     "c": "Trouve aujourd'hui les réglages bloquer, muet et signaler dans un jeu auquel tu joues."
+    },
+    "it": {
+     "t": "Spazi di gioco sicuri e rispettosi",
+     "g": "Imparare a usare blocca, silenzia e segnala e a proteggere i dati personali.",
+     "p": [
+      "Bloccare e silenziare ti permette di controllare chi senti e vedi.",
+      "Segnala i comportamenti scortesi così i moderatori mantengono gli spazi amichevoli.",
+      "Tieni privati nome reale, indirizzo e password quando giochi online."
+     ],
+     "q": "Sai dove sono i pulsanti silenzia e segnala nel tuo gioco preferito?",
+     "c": "Trova oggi le impostazioni blocca, silenzia e segnala in un gioco che usi."
+    },
+    "pt": {
+     "t": "Espaços de jogo seguros e respeitadores",
+     "g": "Aprender a usar bloquear, silenciar e denunciar e a proteger os dados pessoais.",
+     "p": [
+      "Bloquear e silenciar permitem controlar quem ouves e vês.",
+      "Denuncia comportamentos antipáticos para os moderadores manterem espaços simpáticos.",
+      "Mantém privados o teu nome real, morada e palavras-passe ao jogar online."
+     ],
+     "q": "Sabes onde ficam os botões de silenciar e denunciar no teu jogo favorito?",
+     "c": "Encontra hoje as definições de bloquear, silenciar e denunciar num jogo que uses."
+    },
+    "pt_BR": {
+     "t": "Espaços de jogo seguros e respeitosos",
+     "g": "Aprender a usar bloquear, silenciar e denunciar e a proteger dados pessoais.",
+     "p": [
+      "Bloquear e silenciar permitem controlar quem você ouve e vê.",
+      "Denuncie comportamentos desagradáveis para os moderadores manterem espaços simpáticos.",
+      "Mantenha privados seu nome real, endereço e senhas ao jogar online."
+     ],
+     "q": "Você sabe onde ficam os botões de silenciar e denunciar no seu jogo favorito?",
+     "c": "Encontre hoje as configurações de bloquear, silenciar e denunciar num jogo que você usa."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: history and culture",
+     "g": "Take a playful look back at game history, healthy habits and community etiquette.",
+     "p": [
+      "We travelled from Spacewar! and Pong to Tetris and home computers.",
+      "We learned breaks, eye care, sleep and balance as healthy habits.",
+      "We practised kindness, safety and creativity in gaming communities."
+     ],
+     "q": "Which lesson from these 60 days has stayed with you most?",
+     "c": "Quiz yourself: name three milestones in game history and three healthy habits."
+    },
+    "de": {
+     "t": "Rückblick: Geschichte und Kultur",
+     "g": "Spielerisch auf Spielegeschichte, gesunde Gewohnheiten und Umgangsformen zurückblicken.",
+     "p": [
+      "Wir reisten von Spacewar! und Pong zu Tetris und Heimcomputern.",
+      "Wir lernten Pausen, Augenpflege, Schlaf und Balance als gesunde Gewohnheiten.",
+      "Wir übten Freundlichkeit, Sicherheit und Kreativität in Spielegemeinschaften."
+     ],
+     "q": "Welche Lektion dieser 60 Tage ist dir am meisten geblieben?",
+     "c": "Teste dich: Nenne drei Meilensteine der Spielegeschichte und drei gesunde Gewohnheiten."
+    },
+    "es": {
+     "t": "Repaso: historia y cultura",
+     "g": "Repasar con espíritu lúdico la historia de los juegos, hábitos sanos y etiqueta en comunidad.",
+     "p": [
+      "Viajamos de Spacewar! y Pong a Tetris y los ordenadores domésticos.",
+      "Aprendimos pausas, cuidado de los ojos, sueño y equilibrio como hábitos sanos.",
+      "Practicamos amabilidad, seguridad y creatividad en las comunidades de juego."
+     ],
+     "q": "¿Qué lección de estos 60 días te ha quedado más?",
+     "c": "Ponte a prueba: nombra tres hitos de la historia de los juegos y tres hábitos sanos."
+    },
+    "fr": {
+     "t": "Révision : histoire et culture",
+     "g": "Revenir avec humour sur l'histoire du jeu, les bonnes habitudes et la bienséance en communauté.",
+     "p": [
+      "Nous avons voyagé de Spacewar! et Pong à Tetris et aux ordinateurs familiaux.",
+      "Nous avons vu pauses, soin des yeux, sommeil et équilibre comme habitudes saines.",
+      "Nous avons pratiqué gentillesse, sécurité et créativité dans les communautés de joueurs."
+     ],
+     "q": "Quelle leçon de ces 60 jours t'est le plus restée ?",
+     "c": "Teste-toi : cite trois jalons de l'histoire du jeu et trois bonnes habitudes."
+    },
+    "it": {
+     "t": "Ripasso: storia e cultura",
+     "g": "Rivedere con leggerezza la storia dei giochi, le abitudini sane e l'etichetta nelle comunità.",
+     "p": [
+      "Abbiamo viaggiato da Spacewar! e Pong a Tetris e agli home computer.",
+      "Abbiamo imparato pause, cura degli occhi, sonno ed equilibrio come abitudini sane.",
+      "Abbiamo praticato gentilezza, sicurezza e creatività nelle comunità di gioco."
+     ],
+     "q": "Quale lezione di questi 60 giorni ti è rimasta di più?",
+     "c": "Mettiti alla prova: cita tre tappe della storia dei giochi e tre abitudini sane."
+    },
+    "pt": {
+     "t": "Revisão: história e cultura",
+     "g": "Rever com leveza a história dos jogos, hábitos saudáveis e etiqueta nas comunidades.",
+     "p": [
+      "Viajámos do Spacewar! e do Pong até ao Tetris e aos computadores domésticos.",
+      "Aprendemos pausas, cuidado com os olhos, sono e equilíbrio como hábitos saudáveis.",
+      "Praticámos simpatia, segurança e criatividade nas comunidades de jogo."
+     ],
+     "q": "Que lição destes 60 dias mais ficou contigo?",
+     "c": "Põe-te à prova: diz três marcos da história dos jogos e três hábitos saudáveis."
+    },
+    "pt_BR": {
+     "t": "Revisão: história e cultura",
+     "g": "Rever com leveza a história dos jogos, hábitos saudáveis e etiqueta nas comunidades.",
+     "p": [
+      "Viajamos do Spacewar! e do Pong até o Tetris e os computadores domésticos.",
+      "Aprendemos pausas, cuidado com os olhos, sono e equilíbrio como hábitos saudáveis.",
+      "Praticamos simpatia, segurança e criatividade nas comunidades de jogo."
+     ],
+     "q": "Que lição desses 60 dias mais ficou com você?",
+     "c": "Teste-se: diga três marcos da história dos jogos e três hábitos saudáveis."
+    }
+   }
+  }
+ ]
+}

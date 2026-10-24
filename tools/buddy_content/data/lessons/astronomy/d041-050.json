@@ -1,0 +1,835 @@
+{
+ "topic": "astronomy",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Solar eclipses",
+     "g": "Learn how the Moon can cover the Sun, and how to watch safely.",
+     "p": [
+      "In a solar eclipse the Moon passes between Earth and the Sun and blocks some or all of its light.",
+      "Eclipses can be partial, annular (a bright ring around the Moon) or total, when the Sun's glowing corona appears.",
+      "Except during the brief total phase, always use certified eclipse glasses or a pinhole projector; never look directly."
+     ],
+     "q": "Would you travel far to stand in the shadow of a total eclipse?",
+     "c": "Check that you know how to make a pinhole projector, so you are ready before any eclipse."
+    },
+    "de": {
+     "t": "Sonnenfinsternisse",
+     "g": "Lerne, wie der Mond die Sonne bedecken kann und wie man sicher zuschaut.",
+     "p": [
+      "Bei einer Sonnenfinsternis zieht der Mond zwischen Erde und Sonne und verdeckt einen Teil oder alles ihres Lichts.",
+      "Sie kann partiell, ringförmig (heller Ring um den Mond) oder total sein, wenn die leuchtende Korona sichtbar wird.",
+      "Außer in der kurzen Totalitätsphase immer zertifizierte Finsternisbrille oder Lochkamera nutzen; nie direkt hinsehen."
+     ],
+     "q": "Würdest du weit reisen, um im Schatten einer totalen Sonnenfinsternis zu stehen?",
+     "c": "Prüfe, ob du eine Lochkamera bauen kannst, damit du vor jeder Finsternis vorbereitet bist."
+    },
+    "es": {
+     "t": "Eclipses solares",
+     "g": "Aprende cómo la Luna puede tapar el Sol y cómo mirar con seguridad.",
+     "p": [
+      "En un eclipse solar la Luna pasa entre la Tierra y el Sol y bloquea parte o toda su luz.",
+      "Pueden ser parciales, anulares (un anillo brillante alrededor de la Luna) o totales, cuando aparece la corona solar.",
+      "Salvo en la breve fase total, usa siempre gafas de eclipse certificadas o un proyector estenopeico; nunca mires directamente."
+     ],
+     "q": "¿Viajarías lejos para estar bajo la sombra de un eclipse total?",
+     "c": "Comprueba que sabes hacer un proyector estenopeico para estar listo antes de cualquier eclipse."
+    },
+    "fr": {
+     "t": "Les éclipses de Soleil",
+     "g": "Apprends comment la Lune peut cacher le Soleil et comment l'observer en toute sécurité.",
+     "p": [
+      "Lors d'une éclipse solaire, la Lune passe entre la Terre et le Soleil et bloque une partie ou la totalité de sa lumière.",
+      "Elle peut être partielle, annulaire (un anneau brillant autour de la Lune) ou totale, quand la couronne solaire apparaît.",
+      "Sauf pendant la brève totalité, utilise toujours des lunettes d'éclipse certifiées ou un sténopé ; ne regarde jamais directement."
+     ],
+     "q": "Voyagerais-tu loin pour te tenir dans l'ombre d'une éclipse totale ?",
+     "c": "Vérifie que tu sais fabriquer un sténopé, pour être prêt avant n'importe quelle éclipse."
+    },
+    "it": {
+     "t": "Le eclissi di Sole",
+     "g": "Scopri come la Luna può coprire il Sole e come osservarlo in sicurezza.",
+     "p": [
+      "In un'eclissi solare la Luna passa tra la Terra e il Sole e blocca parte o tutta la sua luce.",
+      "Può essere parziale, anulare (un anello luminoso attorno alla Luna) o totale, quando appare la corona solare.",
+      "Tranne nella breve fase totale, usa sempre occhiali da eclissi certificati o un proiettore stenopeico; non guardare mai direttamente."
+     ],
+     "q": "Viaggeresti lontano per stare nell'ombra di un'eclissi totale?",
+     "c": "Verifica di saper costruire un proiettore stenopeico, per essere pronto prima di ogni eclissi."
+    },
+    "pt": {
+     "t": "Eclipses solares",
+     "g": "Aprende como a Lua pode tapar o Sol e como observar em segurança.",
+     "p": [
+      "Num eclipse solar a Lua passa entre a Terra e o Sol e bloqueia parte ou toda a sua luz.",
+      "Pode ser parcial, anular (um anel brilhante à volta da Lua) ou total, quando surge a coroa solar.",
+      "Exceto na breve fase total, usa sempre óculos de eclipse certificados ou um projetor de orifício; nunca olhes diretamente."
+     ],
+     "q": "Viajarias para longe para estar à sombra de um eclipse total?",
+     "c": "Confirma que sabes fazer um projetor de orifício, para estares preparado antes de qualquer eclipse."
+    },
+    "pt_BR": {
+     "t": "Eclipses solares",
+     "g": "Aprenda como a Lua pode tapar o Sol e como observar com segurança.",
+     "p": [
+      "Num eclipse solar a Lua passa entre a Terra e o Sol e bloqueia parte ou toda a luz dele.",
+      "Pode ser parcial, anular (um anel brilhante em volta da Lua) ou total, quando surge a coroa solar.",
+      "Exceto na breve fase total, use sempre óculos de eclipse certificados ou projetor de furo; nunca olhe diretamente."
+     ],
+     "q": "Você viajaria longe para ficar na sombra de um eclipse total?",
+     "c": "Confirme que você sabe fazer um projetor de furo, para estar pronto antes de qualquer eclipse."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lunar eclipses",
+     "g": "See how Earth's shadow falls on the Moon and why it often looks coppery red.",
+     "p": [
+      "A lunar eclipse happens at full Moon when Earth lies between the Sun and Moon, and its shadow falls on the Moon.",
+      "The Moon often glows coppery red because Earth's air bends red sunlight around the planet onto the Moon.",
+      "Unlike solar eclipses, lunar eclipses are safe to watch with your eyes, binoculars or a telescope, from anywhere on the night side."
+     ],
+     "q": "What colour do you think the Moon would be if Earth had no air?",
+     "c": "Shine a torch on a ball held in front of a wall to see how a round shadow edge looks."
+    },
+    "de": {
+     "t": "Mondfinsternisse",
+     "g": "Sieh, wie der Erdschatten auf den Mond fällt und warum er oft kupferrot aussieht.",
+     "p": [
+      "Eine Mondfinsternis geschieht bei Vollmond, wenn die Erde zwischen Sonne und Mond liegt und ihr Schatten auf den Mond fällt.",
+      "Der Mond leuchtet oft kupferrot, weil die Erdatmosphäre rotes Sonnenlicht um die Erde herum auf den Mond lenkt.",
+      "Anders als Sonnenfinsternisse sind Mondfinsternisse mit bloßem Auge, Fernglas oder Teleskop gefahrlos von der Nachtseite aus zu sehen."
+     ],
+     "q": "Welche Farbe hätte der Mond wohl, wenn die Erde keine Luft hätte?",
+     "c": "Leuchte mit einer Taschenlampe einen Ball vor einer Wand an und sieh, wie der runde Schattenrand aussieht."
+    },
+    "es": {
+     "t": "Eclipses lunares",
+     "g": "Mira cómo la sombra de la Tierra cae sobre la Luna y por qué suele verse cobriza.",
+     "p": [
+      "Un eclipse lunar ocurre en luna llena cuando la Tierra está entre el Sol y la Luna y su sombra cae sobre ella.",
+      "La Luna suele brillar rojiza porque el aire de la Tierra desvía la luz roja del Sol hacia ella.",
+      "A diferencia de los solares, los eclipses lunares se pueden mirar sin riesgo a simple vista, con prismáticos o telescopio."
+     ],
+     "q": "¿De qué color crees que sería la Luna si la Tierra no tuviese aire?",
+     "c": "Ilumina con una linterna una pelota delante de una pared y observa cómo es el borde redondo de la sombra."
+    },
+    "fr": {
+     "t": "Les éclipses de Lune",
+     "g": "Vois comment l'ombre de la Terre tombe sur la Lune et pourquoi elle devient souvent cuivrée.",
+     "p": [
+      "Une éclipse lunaire a lieu à la pleine Lune, quand la Terre est entre le Soleil et la Lune et projette son ombre sur elle.",
+      "La Lune devient souvent rouge cuivré car l'air terrestre courbe la lumière rouge du Soleil vers elle.",
+      "Contrairement aux éclipses solaires, on peut les regarder sans danger à l'œil nu, aux jumelles ou au télescope."
+     ],
+     "q": "De quelle couleur serait la Lune si la Terre n'avait pas d'air, à ton avis ?",
+     "c": "Éclaire une balle avec une lampe devant un mur et observe le bord arrondi de l'ombre."
+    },
+    "it": {
+     "t": "Le eclissi di Luna",
+     "g": "Scopri come l'ombra della Terra cade sulla Luna e perché spesso appare ramata.",
+     "p": [
+      "Un'eclissi lunare avviene a Luna piena, quando la Terra sta fra Sole e Luna e la sua ombra cade sulla Luna.",
+      "La Luna spesso brilla di rosso ramato perché l'aria terrestre piega la luce rossa del Sole verso di lei.",
+      "A differenza di quelle solari, le eclissi lunari si guardano senza rischi a occhio nudo, col binocolo o col telescopio."
+     ],
+     "q": "Di che colore pensi sarebbe la Luna se la Terra non avesse atmosfera?",
+     "c": "Illumina con una torcia una palla davanti a un muro e osserva il bordo rotondo dell'ombra."
+    },
+    "pt": {
+     "t": "Eclipses lunares",
+     "g": "Vê como a sombra da Terra cai sobre a Lua e porque muitas vezes parece acobreada.",
+     "p": [
+      "Um eclipse lunar acontece na Lua cheia, quando a Terra fica entre o Sol e a Lua e a sua sombra cai sobre ela.",
+      "A Lua brilha muitas vezes em vermelho acobreado porque o ar da Terra desvia a luz vermelha do Sol para ela.",
+      "Ao contrário dos solares, os eclipses lunares veem-se sem perigo a olho nu, com binóculos ou telescópio."
+     ],
+     "q": "De que cor achas que seria a Lua se a Terra não tivesse ar?",
+     "c": "Ilumina uma bola com uma lanterna diante de uma parede e observa o bordo redondo da sombra."
+    },
+    "pt_BR": {
+     "t": "Eclipses lunares",
+     "g": "Veja como a sombra da Terra cai sobre a Lua e por que ela costuma ficar acobreada.",
+     "p": [
+      "Um eclipse lunar acontece na Lua cheia, quando a Terra fica entre o Sol e a Lua e a sombra dela cai sobre a Lua.",
+      "A Lua costuma brilhar em vermelho acobreado porque o ar da Terra desvia a luz vermelha do Sol para ela.",
+      "Ao contrário dos solares, os eclipses lunares podem ser vistos sem perigo a olho nu, com binóculos ou telescópio."
+     ],
+     "q": "Que cor você acha que a Lua teria se a Terra não tivesse ar?",
+     "c": "Ilumine uma bola com uma lanterna diante de uma parede e observe a borda redonda da sombra."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why eclipses are rare",
+     "g": "Understand why we do not get an eclipse every month.",
+     "p": [
+      "The Moon's orbit is tilted about 5 degrees compared with Earth's orbit around the Sun.",
+      "Most months the Moon passes slightly above or below the line between Sun and Earth, so its shadow misses.",
+      "Eclipses only occur when a new or full Moon is near the crossing points of the two orbits, called nodes."
+     ],
+     "q": "Can you think of another everyday event that needs two things to line up exactly?",
+     "c": "Hold two hoops or rings tilted slightly apart and see that they only meet at two points."
+    },
+    "de": {
+     "t": "Warum Finsternisse selten sind",
+     "g": "Verstehe, warum es nicht jeden Monat eine Finsternis gibt.",
+     "p": [
+      "Die Mondbahn ist gegenüber der Bahn der Erde um die Sonne um etwa 5 Grad geneigt.",
+      "Meist zieht der Mond etwas über oder unter der Linie Sonne-Erde vorbei, sein Schatten verfehlt uns also.",
+      "Finsternisse gibt es nur, wenn Neu- oder Vollmond nahe den Kreuzungspunkten beider Bahnen, den Knoten, liegt."
+     ],
+     "q": "Fällt dir ein anderes Alltagsereignis ein, bei dem zwei Dinge genau passen müssen?",
+     "c": "Halte zwei leicht gegeneinander gekippte Ringe und sieh, dass sie sich nur an zwei Punkten treffen."
+    },
+    "es": {
+     "t": "Por qué los eclipses son raros",
+     "g": "Entiende por qué no hay un eclipse cada mes.",
+     "p": [
+      "La órbita de la Luna está inclinada unos 5 grados respecto a la órbita de la Tierra alrededor del Sol.",
+      "Casi todos los meses la Luna pasa algo por encima o por debajo de la línea Sol-Tierra y su sombra no nos alcanza.",
+      "Solo hay eclipse cuando una luna nueva o llena está cerca de los puntos de cruce de ambas órbitas, los nodos."
+     ],
+     "q": "¿Se te ocurre otro suceso cotidiano que necesite que dos cosas se alineen exactamente?",
+     "c": "Sostén dos aros ligeramente inclinados entre sí y comprueba que solo se tocan en dos puntos."
+    },
+    "fr": {
+     "t": "Pourquoi les éclipses sont rares",
+     "g": "Comprends pourquoi il n'y a pas d'éclipse chaque mois.",
+     "p": [
+      "L'orbite de la Lune est inclinée d'environ 5 degrés par rapport à l'orbite de la Terre autour du Soleil.",
+      "La plupart des mois, la Lune passe un peu au-dessus ou en dessous de la ligne Soleil-Terre et son ombre nous manque.",
+      "Il n'y a éclipse que si une nouvelle ou pleine Lune est près des points de croisement des deux orbites, les nœuds."
+     ],
+     "q": "Connais-tu un autre événement du quotidien qui exige que deux choses s'alignent exactement ?",
+     "c": "Tiens deux anneaux légèrement inclinés l'un par rapport à l'autre et vois qu'ils ne se touchent qu'en deux points."
+    },
+    "it": {
+     "t": "Perché le eclissi sono rare",
+     "g": "Capisci perché non c'è un'eclissi ogni mese.",
+     "p": [
+      "L'orbita della Luna è inclinata di circa 5 gradi rispetto all'orbita della Terra attorno al Sole.",
+      "Quasi ogni mese la Luna passa un po' sopra o sotto la linea Sole-Terra e la sua ombra non ci raggiunge.",
+      "Le eclissi avvengono solo quando una Luna nuova o piena è vicina ai punti di incrocio delle due orbite, i nodi."
+     ],
+     "q": "Ti viene in mente un altro evento quotidiano che richiede che due cose si allineino esattamente?",
+     "c": "Tieni due anelli leggermente inclinati fra loro e osserva che si incontrano solo in due punti."
+    },
+    "pt": {
+     "t": "Porque os eclipses são raros",
+     "g": "Percebe porque não há um eclipse todos os meses.",
+     "p": [
+      "A órbita da Lua está inclinada cerca de 5 graus em relação à órbita da Terra à volta do Sol.",
+      "Quase todos os meses a Lua passa um pouco acima ou abaixo da linha Sol-Terra e a sua sombra não nos atinge.",
+      "Só há eclipse quando uma Lua nova ou cheia está perto dos pontos de cruzamento das duas órbitas, os nodos."
+     ],
+     "q": "Lembras-te de outro acontecimento do dia a dia que precise de duas coisas alinhadas com exatidão?",
+     "c": "Segura dois aros ligeiramente inclinados entre si e vê que só se tocam em dois pontos."
+    },
+    "pt_BR": {
+     "t": "Por que eclipses são raros",
+     "g": "Entenda por que não há um eclipse todo mês.",
+     "p": [
+      "A órbita da Lua é inclinada cerca de 5 graus em relação à órbita da Terra em torno do Sol.",
+      "Quase todo mês a Lua passa um pouco acima ou abaixo da linha Sol-Terra e a sombra dela não nos atinge.",
+      "Só há eclipse quando uma Lua nova ou cheia está perto dos pontos de cruzamento das duas órbitas, os nodos."
+     ],
+     "q": "Você consegue pensar em outro evento do dia a dia que precise de duas coisas alinhadas com exatidão?",
+     "c": "Segure dois aros levemente inclinados entre si e veja que eles só se tocam em dois pontos."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tides and the Moon",
+     "g": "See how the gravity of the Moon and Sun raises the oceans twice a day.",
+     "p": [
+      "The Moon's gravity pulls on the oceans, creating bulges of water: one facing the Moon and one on the opposite side.",
+      "As Earth rotates through these two bulges, most coasts see two high tides and two low tides a day.",
+      "At new and full Moon, Sun and Moon line up and give bigger spring tides; at quarter Moon the tides are smaller, called neap tides."
+     ],
+     "q": "Have you ever watched the sea come in and go out at the same beach?",
+     "c": "Look up today's tide times for a coast near you, or imagine one, and link them to the Moon's position."
+    },
+    "de": {
+     "t": "Gezeiten und der Mond",
+     "g": "Sieh, wie die Schwerkraft von Mond und Sonne die Ozeane zweimal am Tag anhebt.",
+     "p": [
+      "Die Schwerkraft des Mondes zieht an den Ozeanen und erzeugt Wasserberge: einen zum Mond hin und einen auf der Gegenseite.",
+      "Dreht sich die Erde durch diese zwei Berge, gibt es an den meisten Küsten täglich zweimal Flut und zweimal Ebbe.",
+      "Bei Neu- und Vollmond stehen Sonne und Mond in einer Linie und bringen Springfluten; bei Halbmond gibt es schwächere Nipptiden."
+     ],
+     "q": "Hast du schon einmal beobachtet, wie das Meer am selben Strand kommt und geht?",
+     "c": "Sieh dir die Gezeiten einer Küste in deiner Nähe an oder stell sie dir vor und verbinde sie mit dem Mondstand."
+    },
+    "es": {
+     "t": "Mareas y Luna",
+     "g": "Mira cómo la gravedad de la Luna y el Sol eleva los océanos dos veces al día.",
+     "p": [
+      "La gravedad de la Luna tira de los océanos y crea abultamientos de agua: uno hacia la Luna y otro en el lado opuesto.",
+      "Al girar la Tierra por esos dos abultamientos, la mayoría de las costas tienen dos pleamares y dos bajamares al día.",
+      "En luna nueva y llena, Sol y Luna se alinean y dan mareas vivas; en cuarto, las mareas son menores, las mareas muertas."
+     ],
+     "q": "¿Has visto alguna vez cómo el mar sube y baja en una misma playa?",
+     "c": "Consulta las horas de marea de una costa cercana, o imagínala, y relaciónalas con la posición de la Luna."
+    },
+    "fr": {
+     "t": "Les marées et la Lune",
+     "g": "Vois comment la gravité de la Lune et du Soleil soulève les océans deux fois par jour.",
+     "p": [
+      "La gravité de la Lune attire les océans et forme des renflements d'eau : l'un face à la Lune, l'autre du côté opposé.",
+      "Quand la Terre tourne dans ces deux renflements, la plupart des côtes ont deux marées hautes et deux basses par jour.",
+      "À la nouvelle et à la pleine Lune, Soleil et Lune s'alignent : grandes marées ; aux quartiers, ce sont les marées de morte-eau."
+     ],
+     "q": "As-tu déjà regardé la mer monter et descendre sur la même plage ?",
+     "c": "Consulte les horaires de marée d'une côte proche, ou imagine-les, et relie-les à la position de la Lune."
+    },
+    "it": {
+     "t": "Maree e Luna",
+     "g": "Scopri come la gravità di Luna e Sole solleva gli oceani due volte al giorno.",
+     "p": [
+      "La gravità della Luna attira gli oceani e crea rigonfiamenti d'acqua: uno verso la Luna e uno sul lato opposto.",
+      "Mentre la Terra ruota in questi due rigonfiamenti, la maggior parte delle coste ha due alte e due basse maree al giorno.",
+      "A Luna nuova e piena Sole e Luna si allineano e danno maree vive; ai quarti le maree sono minori, le maree morte."
+     ],
+     "q": "Hai mai guardato il mare salire e scendere sulla stessa spiaggia?",
+     "c": "Cerca gli orari di marea di una costa vicina, o immaginali, e collegali alla posizione della Luna."
+    },
+    "pt": {
+     "t": "Marés e Lua",
+     "g": "Vê como a gravidade da Lua e do Sol eleva os oceanos duas vezes por dia.",
+     "p": [
+      "A gravidade da Lua puxa os oceanos e cria saliências de água: uma virada para a Lua e outra do lado oposto.",
+      "Ao rodar através dessas duas saliências, a maioria das costas tem duas preia-mares e duas baixa-mares por dia.",
+      "Na Lua nova e cheia, Sol e Lua alinham-se e dão marés vivas; nos quartos, as marés são menores, as marés mortas."
+     ],
+     "q": "Já viste o mar subir e descer na mesma praia?",
+     "c": "Consulta os horários de maré de uma costa perto de ti, ou imagina-os, e relaciona-os com a posição da Lua."
+    },
+    "pt_BR": {
+     "t": "Marés e Lua",
+     "g": "Veja como a gravidade da Lua e do Sol eleva os oceanos duas vezes por dia.",
+     "p": [
+      "A gravidade da Lua puxa os oceanos e cria saliências de água: uma voltada para a Lua e outra no lado oposto.",
+      "Ao girar por essas duas saliências, a maioria das costas tem duas marés altas e duas baixas por dia.",
+      "Na Lua nova e cheia, Sol e Lua se alinham e dão marés de sizígia; nos quartos, as marés são menores, as de quadratura."
+     ],
+     "q": "Você já viu o mar subir e descer na mesma praia?",
+     "c": "Consulte os horários de maré de uma costa perto de você, ou imagine-os, e relacione com a posição da Lua."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Moon craters and seas",
+     "g": "Tell apart the Moon's dark lava plains from its bright, cratered highlands.",
+     "p": [
+      "The dark patches, called maria or seas, are ancient lava plains; they hold no water.",
+      "The bright highlands are older and covered in craters made by impacts over billions of years.",
+      "With no air or weather to erase them, the Moon keeps its craters; large ones like Tycho have bright rays of splashed material."
+     ],
+     "q": "What shape do you see in the Moon's dark patches: a face, a rabbit or something else?",
+     "c": "Look at the full Moon and sketch the dark seas you recognise, then name one."
+    },
+    "de": {
+     "t": "Mondkrater und Meere",
+     "g": "Unterscheide die dunklen Lavaebenen des Mondes von den hellen, kraterreichen Hochländern.",
+     "p": [
+      "Die dunklen Flecken, Maria oder Meere genannt, sind uralte Lavaebenen; sie enthalten kein Wasser.",
+      "Die hellen Hochländer sind älter und von Kratern übersät, die über Milliarden Jahre durch Einschläge entstanden.",
+      "Ohne Luft und Wetter, die sie verwischen, behält der Mond seine Krater; große wie Tycho haben helle Strahlen aus Auswurfmaterial."
+     ],
+     "q": "Welche Gestalt siehst du in den dunklen Flecken: ein Gesicht, einen Hasen oder etwas anderes?",
+     "c": "Betrachte den Vollmond, skizziere die Meere, die du erkennst, und nenne eines davon."
+    },
+    "es": {
+     "t": "Cráteres y mares de la Luna",
+     "g": "Distingue las llanuras oscuras de lava de la Luna de sus tierras altas claras y con cráteres.",
+     "p": [
+      "Las manchas oscuras, llamadas maria o mares, son antiguas llanuras de lava; no tienen agua.",
+      "Las tierras altas claras son más antiguas y están cubiertas de cráteres de impactos de miles de millones de años.",
+      "Sin aire ni clima que los borren, la Luna conserva sus cráteres; los grandes, como Tycho, tienen rayos claros de material proyectado."
+     ],
+     "q": "¿Qué forma ves en las manchas oscuras de la Luna: una cara, un conejo u otra cosa?",
+     "c": "Mira la luna llena y dibuja los mares que reconozcas; luego ponle nombre a uno."
+    },
+    "fr": {
+     "t": "Cratères et mers de la Lune",
+     "g": "Distingue les plaines de lave sombres de la Lune de ses hautes terres claires et cratérisées.",
+     "p": [
+      "Les taches sombres, appelées mers ou maria, sont d'anciennes plaines de lave ; elles ne contiennent pas d'eau.",
+      "Les hautes terres claires sont plus anciennes et couvertes de cratères d'impacts datant de milliards d'années.",
+      "Sans air ni météo pour les effacer, la Lune garde ses cratères ; les grands, comme Tycho, ont des rayons clairs de matière éjectée."
+     ],
+     "q": "Quelle forme vois-tu dans les taches sombres de la Lune : un visage, un lapin, autre chose ?",
+     "c": "Regarde la pleine Lune et croque les mers que tu reconnais, puis nomme-en une."
+    },
+    "it": {
+     "t": "Crateri e mari della Luna",
+     "g": "Distingui le pianure di lava scure della Luna dagli altopiani chiari e craterizzati.",
+     "p": [
+      "Le macchie scure, chiamate mari o maria, sono antiche pianure di lava; non contengono acqua.",
+      "Gli altopiani chiari sono più antichi e coperti di crateri da impatti avvenuti in miliardi di anni.",
+      "Senza aria né meteo a cancellarli, la Luna conserva i suoi crateri; i grandi, come Tycho, hanno raggi chiari di materiale espulso."
+     ],
+     "q": "Che forma vedi nelle macchie scure della Luna: un volto, un coniglio o altro?",
+     "c": "Guarda la Luna piena e schizza i mari che riconosci, poi dai il nome a uno."
+    },
+    "pt": {
+     "t": "Crateras e mares da Lua",
+     "g": "Distingue as planícies escuras de lava da Lua dos seus planaltos claros e com crateras.",
+     "p": [
+      "As manchas escuras, chamadas maria ou mares, são antigas planícies de lava; não têm água.",
+      "Os planaltos claros são mais antigos e cobertos de crateras de impactos ao longo de milhares de milhões de anos.",
+      "Sem ar nem clima que as apaguem, a Lua guarda as suas crateras; as grandes, como Tycho, têm raios claros de material projetado."
+     ],
+     "q": "Que forma vês nas manchas escuras da Lua: um rosto, um coelho ou outra coisa?",
+     "c": "Olha para a Lua cheia e esboça os mares que reconheças; depois dá nome a um."
+    },
+    "pt_BR": {
+     "t": "Crateras e mares da Lua",
+     "g": "Distinga as planícies escuras de lava da Lua dos seus planaltos claros e com crateras.",
+     "p": [
+      "As manchas escuras, chamadas maria ou mares, são antigas planícies de lava; não têm água.",
+      "Os planaltos claros são mais antigos e cobertos de crateras de impactos ao longo de bilhões de anos.",
+      "Sem ar nem clima para apagá-las, a Lua guarda suas crateras; as grandes, como Tycho, têm raios claros de material lançado."
+     ],
+     "q": "Que forma você vê nas manchas escuras da Lua: um rosto, um coelho ou outra coisa?",
+     "c": "Olhe para a Lua cheia e esboce os mares que reconhecer; depois dê nome a um."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Observing the Moon with binoculars",
+     "g": "Learn why the line between lunar day and night shows the most detail.",
+     "p": [
+      "Binoculars reveal craters, mountains and seas on the Moon that your eyes cannot separate.",
+      "The best detail is along the terminator, the line between day and night, where low sunlight casts long shadows.",
+      "A full Moon looks flat and glaring; a crescent or quarter Moon shows far more relief."
+     ],
+     "q": "Which phase of the Moon do you find most beautiful?",
+     "c": "Rest your elbows on a table or wall to steady binoculars and look along the terminator tonight."
+    },
+    "de": {
+     "t": "Den Mond mit dem Fernglas beobachten",
+     "g": "Lerne, warum die Grenze zwischen Mondtag und Mondnacht die meisten Details zeigt.",
+     "p": [
+      "Ein Fernglas zeigt Krater, Berge und Meere auf dem Mond, die das bloße Auge nicht trennt.",
+      "Die meisten Details sieht man am Terminator, der Linie zwischen Tag und Nacht, wo tiefes Sonnenlicht lange Schatten wirft.",
+      "Vollmond wirkt flach und grell; Sichel oder Halbmond zeigen viel mehr Relief."
+     ],
+     "q": "Welche Mondphase findest du am schönsten?",
+     "c": "Stütze die Ellbogen auf Tisch oder Mauer, um das Fernglas ruhig zu halten, und sieh dir heute den Terminator an."
+    },
+    "es": {
+     "t": "Observar la Luna con prismáticos",
+     "g": "Aprende por qué la línea entre el día y la noche lunares muestra más detalle.",
+     "p": [
+      "Los prismáticos revelan cráteres, montañas y mares de la Luna que tus ojos no distinguen.",
+      "El mejor detalle está en el terminador, la línea entre día y noche, donde la luz baja proyecta sombras largas.",
+      "La luna llena se ve plana y deslumbrante; una creciente o un cuarto muestran mucho más relieve."
+     ],
+     "q": "¿Qué fase de la Luna te parece más bonita?",
+     "c": "Apoya los codos en una mesa o pared para estabilizar los prismáticos y mira esta noche a lo largo del terminador."
+    },
+    "fr": {
+     "t": "Observer la Lune aux jumelles",
+     "g": "Apprends pourquoi la ligne entre le jour et la nuit lunaires montre le plus de détails.",
+     "p": [
+      "Les jumelles révèlent cratères, montagnes et mers de la Lune que tes yeux ne distinguent pas.",
+      "Le plus de détails se voit au terminateur, la ligne jour-nuit, où la lumière rasante crée de longues ombres.",
+      "La pleine Lune paraît plate et éblouissante ; un croissant ou un quartier montrent bien plus de relief."
+     ],
+     "q": "Quelle phase de la Lune trouves-tu la plus belle ?",
+     "c": "Appuie tes coudes sur une table ou un mur pour stabiliser les jumelles et suis le terminateur ce soir."
+    },
+    "it": {
+     "t": "Osservare la Luna col binocolo",
+     "g": "Scopri perché la linea fra giorno e notte lunari mostra più dettagli.",
+     "p": [
+      "Il binocolo rivela crateri, montagne e mari della Luna che i tuoi occhi non distinguono.",
+      "I dettagli migliori sono al terminatore, la linea fra giorno e notte, dove la luce radente crea lunghe ombre.",
+      "La Luna piena appare piatta e abbagliante; una falce o un quarto mostrano molto più rilievo."
+     ],
+     "q": "Quale fase della Luna trovi più bella?",
+     "c": "Appoggia i gomiti su un tavolo o un muro per stabilizzare il binocolo e segui il terminatore stasera."
+    },
+    "pt": {
+     "t": "Observar a Lua com binóculos",
+     "g": "Aprende porque a linha entre o dia e a noite lunares mostra mais detalhe.",
+     "p": [
+      "Os binóculos revelam crateras, montanhas e mares da Lua que os teus olhos não distinguem.",
+      "O melhor detalhe está no terminador, a linha entre dia e noite, onde a luz rasante cria sombras longas.",
+      "A Lua cheia parece plana e ofuscante; um quarto crescente ou minguante mostra muito mais relevo."
+     ],
+     "q": "Que fase da Lua achas mais bonita?",
+     "c": "Apoia os cotovelos numa mesa ou muro para firmar os binóculos e segue o terminador esta noite."
+    },
+    "pt_BR": {
+     "t": "Observar a Lua com binóculos",
+     "g": "Aprenda por que a linha entre o dia e a noite lunares mostra mais detalhes.",
+     "p": [
+      "Os binóculos revelam crateras, montanhas e mares da Lua que seus olhos não distinguem.",
+      "Os melhores detalhes estão no terminador, a linha entre dia e noite, onde a luz rasante cria sombras longas.",
+      "A Lua cheia parece plana e ofuscante; um quarto crescente ou minguante mostra muito mais relevo."
+     ],
+     "q": "Qual fase da Lua você acha mais bonita?",
+     "c": "Apoie os cotovelos numa mesa ou muro para firmar os binóculos e siga o terminador hoje à noite."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing binoculars",
+     "g": "Understand binocular numbers like 10x50 and why they are a great first tool.",
+     "p": [
+      "In 10x50, the first number is magnification (10 times) and the second is the lens width in millimetres.",
+      "A bigger lens gathers more light, but heavier binoculars shake; 7x50 to 10x50 is a good balance for stargazing.",
+      "Binoculars show many more stars, star clusters, Jupiter's moons and the Milky Way's glow, with a wide, easy view."
+     ],
+     "q": "What would you most like to see up close with binoculars?",
+     "c": "If you have binoculars, check the numbers printed on them and note what they mean."
+    },
+    "de": {
+     "t": "Ein Fernglas auswählen",
+     "g": "Verstehe Fernglaszahlen wie 10x50 und warum es ein tolles erstes Werkzeug ist.",
+     "p": [
+      "Bei 10x50 ist die erste Zahl die Vergrößerung (10-fach), die zweite der Linsendurchmesser in Millimetern.",
+      "Eine größere Linse sammelt mehr Licht, doch schwere Ferngläser wackeln; 7x50 bis 10x50 passt gut zur Sternbeobachtung.",
+      "Ein Fernglas zeigt viel mehr Sterne, Sternhaufen, Jupitermonde und das Leuchten der Milchstraße, mit weitem, leichtem Blick."
+     ],
+     "q": "Was würdest du mit dem Fernglas am liebsten aus der Nähe sehen?",
+     "c": "Wenn du ein Fernglas hast, sieh dir die aufgedruckten Zahlen an und notiere, was sie bedeuten."
+    },
+    "es": {
+     "t": "Elegir unos prismáticos",
+     "g": "Entiende números como 10x50 y por qué son una gran primera herramienta.",
+     "p": [
+      "En 10x50, el primer número es el aumento (10 veces) y el segundo, el diámetro de la lente en milímetros.",
+      "Una lente mayor capta más luz, pero los prismáticos pesados tiemblan; de 7x50 a 10x50 es un buen equilibrio.",
+      "Muestran muchas más estrellas, cúmulos, lunas de Júpiter y el resplandor de la Vía Láctea, con un campo amplio y fácil."
+     ],
+     "q": "¿Qué te gustaría ver de cerca con unos prismáticos?",
+     "c": "Si tienes prismáticos, mira los números impresos y anota qué significan."
+    },
+    "fr": {
+     "t": "Choisir des jumelles",
+     "g": "Comprends les chiffres comme 10x50 et pourquoi les jumelles sont un excellent premier outil.",
+     "p": [
+      "Dans 10x50, le premier nombre est le grossissement (10 fois) et le second le diamètre de l'objectif en millimètres.",
+      "Un grand objectif capte plus de lumière, mais des jumelles lourdes tremblent ; de 7x50 à 10x50, c'est un bon compromis.",
+      "Elles montrent bien plus d'étoiles, d'amas, les lunes de Jupiter et la lueur de la Voie lactée, avec un champ large et simple."
+     ],
+     "q": "Qu'aimerais-tu le plus voir de près avec des jumelles ?",
+     "c": "Si tu as des jumelles, regarde les chiffres gravés dessus et note ce qu'ils signifient."
+    },
+    "it": {
+     "t": "Scegliere un binocolo",
+     "g": "Capisci numeri come 10x50 e perché il binocolo è un ottimo primo strumento.",
+     "p": [
+      "In 10x50 il primo numero è l'ingrandimento (10 volte) e il secondo il diametro dell'obiettivo in millimetri.",
+      "Un obiettivo grande raccoglie più luce, ma i binocoli pesanti tremano; da 7x50 a 10x50 è un buon compromesso.",
+      "Mostra molte più stelle, ammassi, le lune di Giove e il bagliore della Via Lattea, con un campo ampio e facile."
+     ],
+     "q": "Cosa ti piacerebbe vedere da vicino con un binocolo?",
+     "c": "Se hai un binocolo, guarda i numeri stampati e annota cosa significano."
+    },
+    "pt": {
+     "t": "Escolher binóculos",
+     "g": "Percebe números como 10x50 e porque são uma ótima primeira ferramenta.",
+     "p": [
+      "Em 10x50, o primeiro número é a ampliação (10 vezes) e o segundo o diâmetro da lente em milímetros.",
+      "Uma lente maior capta mais luz, mas binóculos pesados tremem; de 7x50 a 10x50 é um bom equilíbrio.",
+      "Mostram muito mais estrelas, enxames, luas de Júpiter e o brilho da Via Láctea, com um campo amplo e fácil."
+     ],
+     "q": "O que mais gostarias de ver de perto com binóculos?",
+     "c": "Se tiveres binóculos, vê os números impressos e anota o que significam."
+    },
+    "pt_BR": {
+     "t": "Escolhendo binóculos",
+     "g": "Entenda números como 10x50 e por que binóculos são uma ótima primeira ferramenta.",
+     "p": [
+      "Em 10x50, o primeiro número é o aumento (10 vezes) e o segundo o diâmetro da lente em milímetros.",
+      "Uma lente maior capta mais luz, mas binóculos pesados tremem; de 7x50 a 10x50 é um bom equilíbrio.",
+      "Mostram muito mais estrelas, aglomerados, luas de Júpiter e o brilho da Via Láctea, com um campo amplo e fácil."
+     ],
+     "q": "O que você mais gostaria de ver de perto com binóculos?",
+     "c": "Se você tiver binóculos, veja os números impressos e anote o que significam."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Star charts and planispheres",
+     "g": "Learn to read a rotating star map set for your date and time.",
+     "p": [
+      "A planisphere is a round star map with a turning disc: set the date against the time and the oval window shows your sky.",
+      "Printed charts show which stars are above the horizon, so you know where to look.",
+      "Hold the map overhead facing the way you look; the edge of the window is your horizon."
+     ],
+     "q": "Do you prefer paper maps or screens when finding your way?",
+     "c": "Download or draw a simple monthly star chart and find three bright stars on it tonight."
+    },
+    "de": {
+     "t": "Sternkarten und drehbare Sternkarten",
+     "g": "Lerne, eine drehbare Sternkarte für dein Datum und deine Uhrzeit zu lesen.",
+     "p": [
+      "Eine drehbare Sternkarte ist eine runde Karte mit Drehscheibe: Datum auf die Uhrzeit stellen, und das ovale Fenster zeigt deinen Himmel.",
+      "Gedruckte Karten zeigen, welche Sterne über dem Horizont stehen, du weißt also, wohin du schauen musst.",
+      "Halte die Karte über den Kopf, in Blickrichtung; der Fensterrand ist dein Horizont."
+     ],
+     "q": "Bevorzugst du Papierkarten oder Bildschirme, wenn du dich orientierst?",
+     "c": "Lade eine einfache monatliche Sternkarte herunter oder zeichne sie und finde heute Abend drei helle Sterne."
+    },
+    "es": {
+     "t": "Mapas estelares y planisferios",
+     "g": "Aprende a leer un mapa estelar giratorio ajustado a tu fecha y hora.",
+     "p": [
+      "Un planisferio es un mapa estelar redondo con un disco giratorio: pon la fecha frente a la hora y la ventana oval muestra tu cielo.",
+      "Los mapas impresos muestran qué estrellas están sobre el horizonte, así sabes dónde mirar.",
+      "Sostén el mapa sobre tu cabeza mirando hacia donde observas; el borde de la ventana es tu horizonte."
+     ],
+     "q": "¿Prefieres mapas de papel o pantallas para orientarte?",
+     "c": "Descarga o dibuja un mapa estelar mensual sencillo y encuentra tres estrellas brillantes esta noche."
+    },
+    "fr": {
+     "t": "Cartes du ciel et planisphères",
+     "g": "Apprends à lire une carte du ciel tournante réglée sur ta date et ton heure.",
+     "p": [
+      "Un planisphère est une carte ronde à disque tournant : mets la date face à l'heure et la fenêtre ovale montre ton ciel.",
+      "Les cartes imprimées montrent quelles étoiles sont au-dessus de l'horizon, tu sais donc où regarder.",
+      "Tiens la carte au-dessus de ta tête, face à ta direction ; le bord de la fenêtre est ton horizon."
+     ],
+     "q": "Préfères-tu les cartes en papier ou les écrans pour t'orienter ?",
+     "c": "Télécharge ou dessine une carte du ciel mensuelle simple et trouve trois étoiles brillantes ce soir."
+    },
+    "it": {
+     "t": "Mappe stellari e planisferi",
+     "g": "Impara a leggere una mappa stellare girevole regolata sulla tua data e ora.",
+     "p": [
+      "Un planisfero è una mappa stellare rotonda con disco girevole: metti la data sull'ora e la finestra ovale mostra il tuo cielo.",
+      "Le mappe stampate mostrano quali stelle sono sopra l'orizzonte, così sai dove guardare.",
+      "Tieni la mappa sopra la testa verso la direzione in cui guardi; il bordo della finestra è il tuo orizzonte."
+     ],
+     "q": "Preferisci le mappe di carta o gli schermi per orientarti?",
+     "c": "Scarica o disegna una semplice mappa stellare mensile e trova tre stelle luminose stasera."
+    },
+    "pt": {
+     "t": "Mapas estelares e planisférios",
+     "g": "Aprende a ler um mapa estelar giratório ajustado à tua data e hora.",
+     "p": [
+      "Um planisfério é um mapa estelar redondo com disco giratório: põe a data frente à hora e a janela oval mostra o teu céu.",
+      "Os mapas impressos mostram que estrelas estão acima do horizonte, por isso sabes para onde olhar.",
+      "Segura o mapa por cima da cabeça virado para onde olhas; o bordo da janela é o teu horizonte."
+     ],
+     "q": "Preferes mapas de papel ou ecrãs para te orientares?",
+     "c": "Descarrega ou desenha um mapa estelar mensal simples e encontra três estrelas brilhantes esta noite."
+    },
+    "pt_BR": {
+     "t": "Mapas estelares e planisférios",
+     "g": "Aprenda a ler um mapa estelar giratório ajustado à sua data e hora.",
+     "p": [
+      "Um planisfério é um mapa estelar redondo com disco giratório: ponha a data na frente da hora e a janela oval mostra o seu céu.",
+      "Os mapas impressos mostram quais estrelas estão acima do horizonte, então você sabe para onde olhar.",
+      "Segure o mapa acima da cabeça virado para onde você olha; a borda da janela é o seu horizonte."
+     ],
+     "q": "Você prefere mapas de papel ou telas para se orientar?",
+     "c": "Baixe ou desenhe um mapa estelar mensal simples e encontre três estrelas brilhantes hoje à noite."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Astronomy apps wisely",
+     "g": "Use sky apps to identify objects while protecting your night vision.",
+     "p": [
+      "Sky apps use your phone's sensors to name stars, planets and satellites you point at.",
+      "A bright white screen ruins dark adaptation, so switch on the app's red night mode and turn the brightness down.",
+      "Use the app to learn, then look up: the goal is to see the sky with your own eyes, not only on a screen."
+     ],
+     "q": "Which star or planet would you ask an app to identify first?",
+     "c": "Switch your sky app to red night mode and identify one bright object, then look at it for a full minute without the screen."
+    },
+    "de": {
+     "t": "Astronomie-Apps mit Köpfchen",
+     "g": "Nutze Himmels-Apps zum Erkennen von Objekten und schütze dabei deine Nachtsicht.",
+     "p": [
+      "Himmels-Apps nutzen die Sensoren deines Handys, um Sterne, Planeten und Satelliten zu benennen, auf die du zeigst.",
+      "Ein heller weißer Bildschirm zerstört die Dunkeladaption: Schalte den roten Nachtmodus ein und dimme die Helligkeit.",
+      "Nutze die App zum Lernen, dann schau hoch: Ziel ist, den Himmel mit eigenen Augen zu sehen, nicht nur am Bildschirm."
+     ],
+     "q": "Welchen Stern oder Planeten würdest du als Erstes von einer App bestimmen lassen?",
+     "c": "Schalte deine Himmels-App auf roten Nachtmodus, bestimme ein helles Objekt und betrachte es dann eine Minute ohne Bildschirm."
+    },
+    "es": {
+     "t": "Apps de astronomía con cabeza",
+     "g": "Usa apps del cielo para identificar objetos cuidando tu visión nocturna.",
+     "p": [
+      "Las apps del cielo usan los sensores del móvil para nombrar estrellas, planetas y satélites a los que apuntas.",
+      "Una pantalla blanca brillante arruina la adaptación a la oscuridad: activa el modo nocturno rojo y baja el brillo.",
+      "Usa la app para aprender y luego mira arriba: la meta es ver el cielo con tus propios ojos, no solo en pantalla."
+     ],
+     "q": "¿Qué estrella o planeta le pedirías primero a una app que identificara?",
+     "c": "Pon tu app en modo nocturno rojo e identifica un objeto brillante; luego míralo un minuto entero sin pantalla."
+    },
+    "fr": {
+     "t": "Utiliser les applis d'astronomie",
+     "g": "Utilise les applis du ciel pour identifier des objets tout en protégeant ta vision nocturne.",
+     "p": [
+      "Les applis du ciel utilisent les capteurs du téléphone pour nommer étoiles, planètes et satellites que tu pointes.",
+      "Un écran blanc lumineux ruine l'adaptation à l'obscurité : active le mode nuit rouge et baisse la luminosité.",
+      "Utilise l'appli pour apprendre, puis lève les yeux : le but est de voir le ciel de tes propres yeux, pas seulement sur un écran."
+     ],
+     "q": "Quelle étoile ou planète demanderais-tu d'abord à une appli d'identifier ?",
+     "c": "Passe ton appli en mode nuit rouge, identifie un objet brillant, puis regarde-le une minute entière sans écran."
+    },
+    "it": {
+     "t": "Usare bene le app di astronomia",
+     "g": "Usa le app del cielo per identificare oggetti proteggendo la tua vista notturna.",
+     "p": [
+      "Le app del cielo usano i sensori del telefono per nominare stelle, pianeti e satelliti che inquadri.",
+      "Uno schermo bianco luminoso rovina l'adattamento al buio: attiva la modalità notte rossa e abbassa la luminosità.",
+      "Usa l'app per imparare, poi alza lo sguardo: lo scopo è vedere il cielo con i tuoi occhi, non solo sullo schermo."
+     ],
+     "q": "Quale stella o pianeta chiederesti per prima cosa a un'app di identificare?",
+     "c": "Metti la tua app in modalità notte rossa, identifica un oggetto luminoso e poi guardalo un minuto intero senza schermo."
+    },
+    "pt": {
+     "t": "Usar bem as apps de astronomia",
+     "g": "Usa apps do céu para identificar objetos protegendo a tua visão noturna.",
+     "p": [
+      "As apps do céu usam os sensores do telemóvel para nomear estrelas, planetas e satélites para onde apontas.",
+      "Um ecrã branco brilhante arruína a adaptação ao escuro: ativa o modo noturno vermelho e baixa o brilho.",
+      "Usa a app para aprender e depois olha para cima: o objetivo é ver o céu com os teus olhos, não só no ecrã."
+     ],
+     "q": "Que estrela ou planeta pedirias primeiro a uma app para identificar?",
+     "c": "Põe a tua app em modo noturno vermelho, identifica um objeto brilhante e olha para ele um minuto inteiro sem ecrã."
+    },
+    "pt_BR": {
+     "t": "Usando bem os apps de astronomia",
+     "g": "Use apps do céu para identificar objetos protegendo a sua visão noturna.",
+     "p": [
+      "Os apps do céu usam os sensores do celular para nomear estrelas, planetas e satélites para onde você aponta.",
+      "Uma tela branca brilhante estraga a adaptação ao escuro: ative o modo noturno vermelho e diminua o brilho.",
+      "Use o app para aprender e depois olhe para cima: o objetivo é ver o céu com seus próprios olhos, não só na tela."
+     ],
+     "q": "Qual estrela ou planeta você pediria primeiro a um app para identificar?",
+     "c": "Coloque seu app em modo noturno vermelho, identifique um objeto brilhante e olhe para ele um minuto inteiro sem tela."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Planning an observing night",
+     "g": "Plan a successful night by checking weather, Moon phase and targets.",
+     "p": [
+      "Check the cloud forecast first: clear, steady air gives the best views, and a bright Moon washes out faint objects.",
+      "Choose two or three targets, such as the Moon, a planet and a star cluster, rather than trying to see everything.",
+      "Pack warm clothes, a red torch, a chair, a hot drink and tell someone where you are going."
+     ],
+     "q": "What would be on your checklist for a perfect night out under the stars?",
+     "c": "Write a short plan for your next observing night: place, time, three targets and what to bring."
+    },
+    "de": {
+     "t": "Eine Beobachtungsnacht planen",
+     "g": "Plane eine gelungene Nacht mit Blick auf Wetter, Mondphase und Ziele.",
+     "p": [
+      "Prüfe zuerst die Wolkenprognose: Klare, ruhige Luft gibt die besten Bilder, und heller Mond überstrahlt lichtschwache Objekte.",
+      "Wähle zwei oder drei Ziele, etwa Mond, einen Planeten und einen Sternhaufen, statt alles sehen zu wollen.",
+      "Pack warme Kleidung, eine Rotlichtlampe, einen Stuhl und ein heißes Getränk ein und sag jemandem, wohin du gehst."
+     ],
+     "q": "Was stünde auf deiner Checkliste für eine perfekte Nacht unter den Sternen?",
+     "c": "Schreibe einen kurzen Plan für deine nächste Beobachtungsnacht: Ort, Zeit, drei Ziele und was du mitnimmst."
+    },
+    "es": {
+     "t": "Planificar una noche de observación",
+     "g": "Planifica una noche exitosa revisando el tiempo, la fase lunar y los objetivos.",
+     "p": [
+      "Mira primero el pronóstico de nubes: el aire claro y estable da las mejores vistas y una Luna brillante borra los objetos débiles.",
+      "Elige dos o tres objetivos, como la Luna, un planeta y un cúmulo, en lugar de querer verlo todo.",
+      "Lleva ropa de abrigo, una linterna roja, una silla y una bebida caliente, y avisa a alguien de adónde vas."
+     ],
+     "q": "¿Qué habría en tu lista para una noche perfecta bajo las estrellas?",
+     "c": "Escribe un plan corto para tu próxima noche de observación: lugar, hora, tres objetivos y qué llevar."
+    },
+    "fr": {
+     "t": "Planifier une nuit d'observation",
+     "g": "Prépare une belle nuit en vérifiant la météo, la phase de la Lune et tes cibles.",
+     "p": [
+      "Vérifie d'abord les nuages : un air clair et calme donne les meilleures vues, et une Lune brillante noie les objets faibles.",
+      "Choisis deux ou trois cibles, comme la Lune, une planète et un amas, plutôt que de vouloir tout voir.",
+      "Emporte des vêtements chauds, une lampe rouge, une chaise et une boisson chaude, et dis à quelqu'un où tu vas."
+     ],
+     "q": "Qu'y aurait-il sur ta liste pour une nuit parfaite sous les étoiles ?",
+     "c": "Écris un court plan pour ta prochaine nuit d'observation : lieu, heure, trois cibles et quoi emporter."
+    },
+    "it": {
+     "t": "Pianificare una notte di osservazione",
+     "g": "Pianifica una notte riuscita controllando meteo, fase lunare e obiettivi.",
+     "p": [
+      "Controlla prima le nuvole: aria limpida e stabile dà le viste migliori, e una Luna brillante cancella gli oggetti deboli.",
+      "Scegli due o tre obiettivi, come la Luna, un pianeta e un ammasso, invece di voler vedere tutto.",
+      "Porta vestiti caldi, una torcia rossa, una sedia e una bevanda calda, e dì a qualcuno dove vai."
+     ],
+     "q": "Cosa ci sarebbe nella tua lista per una notte perfetta sotto le stelle?",
+     "c": "Scrivi un breve piano per la tua prossima notte di osservazione: luogo, ora, tre obiettivi e cosa portare."
+    },
+    "pt": {
+     "t": "Planear uma noite de observação",
+     "g": "Planeia uma noite de sucesso verificando o tempo, a fase da Lua e os alvos.",
+     "p": [
+      "Vê primeiro a previsão de nuvens: ar limpo e estável dá as melhores vistas e uma Lua brilhante apaga os objetos fracos.",
+      "Escolhe dois ou três alvos, como a Lua, um planeta e um enxame, em vez de quereres ver tudo.",
+      "Leva roupa quente, uma lanterna vermelha, uma cadeira e uma bebida quente, e diz a alguém para onde vais."
+     ],
+     "q": "O que estaria na tua lista para uma noite perfeita debaixo das estrelas?",
+     "c": "Escreve um plano curto para a tua próxima noite de observação: local, hora, três alvos e o que levar."
+    },
+    "pt_BR": {
+     "t": "Planejando uma noite de observação",
+     "g": "Planeje uma noite de sucesso verificando o tempo, a fase da Lua e os alvos.",
+     "p": [
+      "Veja primeiro a previsão de nuvens: ar limpo e estável dá as melhores vistas e uma Lua brilhante apaga os objetos fracos.",
+      "Escolha dois ou três alvos, como a Lua, um planeta e um aglomerado, em vez de querer ver tudo.",
+      "Leve roupa quente, uma lanterna vermelha, uma cadeira e uma bebida quente, e avise alguém para onde você vai."
+     ],
+     "q": "O que estaria na sua lista para uma noite perfeita debaixo das estrelas?",
+     "c": "Escreva um plano curto para sua próxima noite de observação: local, hora, três alvos e o que levar."
+    }
+   }
+  }
+ ]
+}

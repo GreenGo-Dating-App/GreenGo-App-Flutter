@@ -1,0 +1,835 @@
+{
+ "topic": "gaming",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Before screens: games through history",
+     "g": "Meet board games, card games and sports as the ancestors of video games.",
+     "p": [
+      "People have played board games for thousands of years, like Senet in ancient Egypt.",
+      "Chess, cards and sports taught rules, strategy and fair play long before screens.",
+      "Video games borrowed many of these ideas."
+     ],
+     "q": "What traditional game do you play with family or friends?",
+     "c": "Teach a classic game to someone this week, or play one you have not touched in years."
+    },
+    "de": {
+     "t": "Vor den Bildschirmen: Spiele in der Geschichte",
+     "g": "Brettspiele, Kartenspiele und Sport als Vorfahren der Videospiele kennenlernen.",
+     "p": [
+      "Menschen spielen seit Jahrtausenden Brettspiele, etwa Senet im alten Ägypten.",
+      "Schach, Karten und Sport lehrten Regeln, Strategie und Fairness lange vor Bildschirmen.",
+      "Videospiele haben viele dieser Ideen übernommen."
+     ],
+     "q": "Welches traditionelle Spiel spielst du mit Familie oder Freunden?",
+     "c": "Bring diese Woche jemandem ein Klassiker-Spiel bei oder spiele eines, das du lange nicht angefasst hast."
+    },
+    "es": {
+     "t": "Antes de las pantallas: juegos en la historia",
+     "g": "Conocer los juegos de mesa, de cartas y los deportes como antepasados de los videojuegos.",
+     "p": [
+      "La gente juega a juegos de mesa desde hace miles de años, como el Senet en el antiguo Egipto.",
+      "El ajedrez, las cartas y el deporte enseñaron reglas, estrategia y juego limpio mucho antes de las pantallas.",
+      "Los videojuegos tomaron muchas de estas ideas."
+     ],
+     "q": "¿Qué juego tradicional juegas con familia o amigos?",
+     "c": "Enseña un juego clásico a alguien esta semana, o juega uno que no tocas hace años."
+    },
+    "fr": {
+     "t": "Avant les écrans : les jeux dans l'histoire",
+     "g": "Découvrir jeux de société, jeux de cartes et sports, ancêtres des jeux vidéo.",
+     "p": [
+      "On joue à des jeux de plateau depuis des millénaires, comme le Senet dans l'Égypte antique.",
+      "Les échecs, les cartes et le sport ont enseigné règles, stratégie et fair-play bien avant les écrans.",
+      "Les jeux vidéo ont repris beaucoup de ces idées."
+     ],
+     "q": "À quel jeu traditionnel joues-tu en famille ou entre amis ?",
+     "c": "Apprends un jeu classique à quelqu'un cette semaine, ou rejoue à un jeu oublié depuis des années."
+    },
+    "it": {
+     "t": "Prima degli schermi: i giochi nella storia",
+     "g": "Conoscere giochi da tavolo, di carte e sport come antenati dei videogiochi.",
+     "p": [
+      "Si gioca a giochi da tavolo da millenni, come il Senet nell'antico Egitto.",
+      "Scacchi, carte e sport insegnavano regole, strategia e correttezza molto prima degli schermi.",
+      "I videogiochi hanno ripreso molte di queste idee."
+     ],
+     "q": "A quale gioco tradizionale giochi con famiglia o amici?",
+     "c": "Insegna un gioco classico a qualcuno questa settimana, o gioca a uno che non tocchi da anni."
+    },
+    "pt": {
+     "t": "Antes dos ecrãs: jogos na história",
+     "g": "Conhecer os jogos de tabuleiro, de cartas e o desporto como antepassados dos videojogos.",
+     "p": [
+      "Joga-se jogos de tabuleiro há milhares de anos, como o Senet no antigo Egito.",
+      "O xadrez, as cartas e o desporto ensinaram regras, estratégia e fair play muito antes dos ecrãs.",
+      "Os videojogos aproveitaram muitas destas ideias."
+     ],
+     "q": "Que jogo tradicional jogas com família ou amigos?",
+     "c": "Ensina um jogo clássico a alguém esta semana, ou joga um que não tocas há anos."
+    },
+    "pt_BR": {
+     "t": "Antes das telas: jogos na história",
+     "g": "Conhecer os jogos de tabuleiro, de cartas e o esporte como ancestrais dos videogames.",
+     "p": [
+      "As pessoas jogam jogos de tabuleiro há milhares de anos, como o Senet no antigo Egito.",
+      "O xadrez, as cartas e o esporte ensinaram regras, estratégia e jogo limpo muito antes das telas.",
+      "Os videogames aproveitaram muitas dessas ideias."
+     ],
+     "q": "Que jogo tradicional você joga com família ou amigos?",
+     "c": "Ensine um jogo clássico a alguém esta semana, ou jogue um que você não pega há anos."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The first experiments",
+     "g": "Discover early computer games like Tennis for Two and Spacewar!.",
+     "p": [
+      "In 1958, William Higinbotham built Tennis for Two on an oscilloscope.",
+      "In 1962, students at MIT created Spacewar! for a room-sized computer.",
+      "These were made out of curiosity, not to be sold."
+     ],
+     "q": "Which early idea in games surprises you most?",
+     "c": "Draw a simple two-dot tennis game on paper and play a round with a friend."
+    },
+    "de": {
+     "t": "Die ersten Experimente",
+     "g": "Frühe Computerspiele wie Tennis for Two und Spacewar! entdecken.",
+     "p": [
+      "1958 baute William Higinbotham Tennis for Two auf einem Oszilloskop.",
+      "1962 schufen Studenten am MIT Spacewar! für einen zimmergroßen Computer.",
+      "Sie entstanden aus Neugier, nicht zum Verkauf."
+     ],
+     "q": "Welche frühe Idee der Spielegeschichte überrascht dich am meisten?",
+     "c": "Zeichne ein einfaches Tennisspiel mit zwei Punkten auf Papier und spiele eine Runde mit einem Freund."
+    },
+    "es": {
+     "t": "Los primeros experimentos",
+     "g": "Descubrir juegos de ordenador pioneros como Tennis for Two y Spacewar!.",
+     "p": [
+      "En 1958, William Higinbotham creó Tennis for Two en un osciloscopio.",
+      "En 1962, estudiantes del MIT crearon Spacewar! para un ordenador del tamaño de una sala.",
+      "Se hicieron por curiosidad, no para venderse."
+     ],
+     "q": "¿Qué idea temprana de los juegos te sorprende más?",
+     "c": "Dibuja en papel un tenis simple de dos puntos y juega una ronda con un amigo."
+    },
+    "fr": {
+     "t": "Les premières expériences",
+     "g": "Découvrir les premiers jeux sur ordinateur comme Tennis for Two et Spacewar!.",
+     "p": [
+      "En 1958, William Higinbotham a conçu Tennis for Two sur un oscilloscope.",
+      "En 1962, des étudiants du MIT ont créé Spacewar! pour un ordinateur grand comme une pièce.",
+      "Ils sont nés de la curiosité, pas pour être vendus."
+     ],
+     "q": "Quelle idée ancienne du jeu te surprend le plus ?",
+     "c": "Dessine sur papier un tennis simple à deux points et fais une manche avec un ami."
+    },
+    "it": {
+     "t": "I primi esperimenti",
+     "g": "Scoprire i primi giochi per computer come Tennis for Two e Spacewar!.",
+     "p": [
+      "Nel 1958 William Higinbotham costruì Tennis for Two su un oscilloscopio.",
+      "Nel 1962 alcuni studenti del MIT crearono Spacewar! per un computer grande come una stanza.",
+      "Nacquero per curiosità, non per essere venduti."
+     ],
+     "q": "Quale idea antica dei giochi ti sorprende di più?",
+     "c": "Disegna su carta un semplice tennis a due punti e gioca un round con un amico."
+    },
+    "pt": {
+     "t": "As primeiras experiências",
+     "g": "Descobrir os primeiros jogos de computador como Tennis for Two e Spacewar!.",
+     "p": [
+      "Em 1958, William Higinbotham criou o Tennis for Two num osciloscópio.",
+      "Em 1962, estudantes do MIT criaram o Spacewar! para um computador do tamanho de uma sala.",
+      "Nasceram da curiosidade, não para serem vendidos."
+     ],
+     "q": "Que ideia antiga dos jogos mais te surpreende?",
+     "c": "Desenha em papel um ténis simples de dois pontos e joga uma ronda com um amigo."
+    },
+    "pt_BR": {
+     "t": "Os primeiros experimentos",
+     "g": "Descobrir os primeiros jogos de computador como Tennis for Two e Spacewar!.",
+     "p": [
+      "Em 1958, William Higinbotham criou o Tennis for Two num osciloscópio.",
+      "Em 1962, estudantes do MIT criaram o Spacewar! para um computador do tamanho de uma sala.",
+      "Nasceram da curiosidade, não para serem vendidos."
+     ],
+     "q": "Que ideia antiga dos jogos mais surpreende você?",
+     "c": "Desenhe no papel um tênis simples de dois pontos e jogue uma rodada com um amigo."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The arcade era begins",
+     "g": "See how coin-operated machines like Pong brought games to public spaces.",
+     "p": [
+      "Atari released Pong as an arcade game in 1972.",
+      "Its rules were so simple that anyone could understand them at once.",
+      "Arcades turned gaming into a social place to meet and compete."
+     ],
+     "q": "Would you have enjoyed hanging out in an arcade?",
+     "c": "Try a one-button reflex game today and see how long you can keep going."
+    },
+    "de": {
+     "t": "Die Arcade-Ära beginnt",
+     "g": "Sehen, wie Münzautomaten wie Pong Spiele in öffentliche Räume brachten.",
+     "p": [
+      "Atari brachte Pong 1972 als Spielautomaten heraus.",
+      "Die Regeln waren so einfach, dass jeder sie sofort verstand.",
+      "Spielhallen machten Spielen zu einem sozialen Treffpunkt zum Messen."
+     ],
+     "q": "Hättest du gern in einer Spielhalle abgehangen?",
+     "c": "Probiere heute ein Reaktionsspiel mit einer Taste und sieh, wie lange du durchhältst."
+    },
+    "es": {
+     "t": "Comienza la era de las recreativas",
+     "g": "Ver cómo las máquinas de monedas como Pong llevaron los juegos a los espacios públicos.",
+     "p": [
+      "Atari lanzó Pong como máquina recreativa en 1972.",
+      "Sus reglas eran tan simples que todos las entendían al instante.",
+      "Los salones recreativos hicieron del juego un lugar social para reunirse y competir."
+     ],
+     "q": "¿Te habría gustado pasar el rato en un salón recreativo?",
+     "c": "Prueba hoy un juego de reflejos de un solo botón y mira cuánto aguantas."
+    },
+    "fr": {
+     "t": "Les débuts de l'ère des arcades",
+     "g": "Voir comment les bornes à pièces comme Pong ont amené les jeux dans les lieux publics.",
+     "p": [
+      "Atari a sorti Pong en borne d'arcade en 1972.",
+      "Ses règles étaient si simples que chacun les comprenait aussitôt.",
+      "Les salles d'arcade ont fait du jeu un lieu social pour se retrouver et se défier."
+     ],
+     "q": "Aurais-tu aimé passer du temps dans une salle d'arcade ?",
+     "c": "Essaie aujourd'hui un jeu de réflexes à un seul bouton et vois combien de temps tu tiens."
+    },
+    "it": {
+     "t": "Inizia l'era delle sale giochi",
+     "g": "Vedere come le macchine a gettoni come Pong portarono i giochi negli spazi pubblici.",
+     "p": [
+      "Atari lanciò Pong come gioco da sala nel 1972.",
+      "Le sue regole erano così semplici che tutti le capivano subito.",
+      "Le sale giochi fecero del gioco un luogo sociale dove incontrarsi e sfidarsi."
+     ],
+     "q": "Ti sarebbe piaciuto passare il tempo in una sala giochi?",
+     "c": "Prova oggi un gioco di riflessi a un solo pulsante e vedi per quanto resisti."
+    },
+    "pt": {
+     "t": "Começa a era das arcades",
+     "g": "Ver como as máquinas de moedas como o Pong levaram os jogos aos espaços públicos.",
+     "p": [
+      "A Atari lançou o Pong como máquina de arcade em 1972.",
+      "As regras eram tão simples que todos as percebiam logo.",
+      "As salas de arcade fizeram do jogo um lugar social para encontrar e competir."
+     ],
+     "q": "Terias gostado de passar tempo numa sala de arcade?",
+     "c": "Experimenta hoje um jogo de reflexos de um só botão e vê quanto tempo aguentas."
+    },
+    "pt_BR": {
+     "t": "Começa a era dos fliperamas",
+     "g": "Ver como as máquinas de fichas como o Pong levaram os jogos aos espaços públicos.",
+     "p": [
+      "A Atari lançou o Pong como fliperama em 1972.",
+      "As regras eram tão simples que todos entendiam na hora.",
+      "Os fliperamas fizeram do jogo um lugar social para se encontrar e competir."
+     ],
+     "q": "Você teria gostado de passar tempo num fliperama?",
+     "c": "Experimente hoje um jogo de reflexo de um só botão e veja quanto tempo você aguenta."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The first home consoles",
+     "g": "Meet the Magnavox Odyssey and the Atari consoles that entered living rooms.",
+     "p": [
+      "The Magnavox Odyssey of 1972 is considered the first home game console.",
+      "Atari later brought Pong and the Atari 2600 into many homes.",
+      "Cartridges meant one machine could play many different games."
+     ],
+     "q": "What was the first console or device in your home?",
+     "c": "Ask an older relative what game or console they remember from home."
+    },
+    "de": {
+     "t": "Die ersten Heimkonsolen",
+     "g": "Die Magnavox Odyssey und die Atari-Konsolen kennenlernen, die ins Wohnzimmer kamen.",
+     "p": [
+      "Die Magnavox Odyssey von 1972 gilt als erste Heimspielkonsole.",
+      "Atari brachte später Pong und den Atari 2600 in viele Haushalte.",
+      "Steckmodule bedeuteten, dass ein Gerät viele verschiedene Spiele abspielen konnte."
+     ],
+     "q": "Was war die erste Konsole oder das erste Gerät bei dir zu Hause?",
+     "c": "Frag einen älteren Verwandten, an welches Spiel oder welche Konsole er sich erinnert."
+    },
+    "es": {
+     "t": "Las primeras consolas domésticas",
+     "g": "Conocer la Magnavox Odyssey y las consolas Atari que llegaron a los salones.",
+     "p": [
+      "La Magnavox Odyssey de 1972 se considera la primera consola doméstica.",
+      "Atari llevó después Pong y la Atari 2600 a muchos hogares.",
+      "Los cartuchos permitían que una máquina jugara muchos juegos distintos."
+     ],
+     "q": "¿Cuál fue la primera consola o dispositivo en tu casa?",
+     "c": "Pregunta a un familiar mayor qué juego o consola recuerda de casa."
+    },
+    "fr": {
+     "t": "Les premières consoles de salon",
+     "g": "Découvrir la Magnavox Odyssey et les consoles Atari entrées dans les salons.",
+     "p": [
+      "La Magnavox Odyssey de 1972 est considérée comme la première console de salon.",
+      "Atari a ensuite amené Pong et l'Atari 2600 dans de nombreux foyers.",
+      "Les cartouches permettaient à une machine de lancer de nombreux jeux."
+     ],
+     "q": "Quelle a été la première console ou le premier appareil chez toi ?",
+     "c": "Demande à un proche plus âgé quel jeu ou quelle console il se rappelle."
+    },
+    "it": {
+     "t": "Le prime console domestiche",
+     "g": "Conoscere la Magnavox Odyssey e le console Atari entrate nei salotti.",
+     "p": [
+      "La Magnavox Odyssey del 1972 è considerata la prima console domestica.",
+      "Atari portò poi Pong e l'Atari 2600 in molte case.",
+      "Le cartucce permettevano a una sola macchina di giocare a molti giochi diversi."
+     ],
+     "q": "Qual è stata la prima console o dispositivo a casa tua?",
+     "c": "Chiedi a un parente più grande quale gioco o console ricorda di casa."
+    },
+    "pt": {
+     "t": "As primeiras consolas domésticas",
+     "g": "Conhecer a Magnavox Odyssey e as consolas Atari que chegaram às salas.",
+     "p": [
+      "A Magnavox Odyssey de 1972 é considerada a primeira consola doméstica.",
+      "A Atari levou depois o Pong e a Atari 2600 a muitas casas.",
+      "Os cartuchos permitiam que uma máquina jogasse muitos jogos diferentes."
+     ],
+     "q": "Qual foi a primeira consola ou dispositivo lá em casa?",
+     "c": "Pergunta a um familiar mais velho que jogo ou consola recorda de casa."
+    },
+    "pt_BR": {
+     "t": "Os primeiros consoles domésticos",
+     "g": "Conhecer o Magnavox Odyssey e os consoles Atari que chegaram às salas.",
+     "p": [
+      "O Magnavox Odyssey de 1972 é considerado o primeiro console doméstico.",
+      "A Atari levou depois o Pong e o Atari 2600 a muitas casas.",
+      "Os cartuchos permitiam que uma máquina rodasse muitos jogos diferentes."
+     ],
+     "q": "Qual foi o primeiro console ou dispositivo na sua casa?",
+     "c": "Pergunte a um familiar mais velho que jogo ou console ele lembra de casa."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The golden age of arcades",
+     "g": "Explore Pac-Man, Space Invaders, Donkey Kong and arcade culture.",
+     "p": [
+      "Space Invaders arrived in 1978 and Pac-Man in 1980.",
+      "Donkey Kong in 1981 introduced Mario, then called Jumpman.",
+      "High-score boards let players leave their initials for others to beat."
+     ],
+     "q": "Which classic arcade character do you recognise best?",
+     "c": "Make up a three-letter arcade name for yourself and a score to beat."
+    },
+    "de": {
+     "t": "Das goldene Zeitalter der Spielhallen",
+     "g": "Pac-Man, Space Invaders, Donkey Kong und die Arcade-Kultur erkunden.",
+     "p": [
+      "Space Invaders erschien 1978 und Pac-Man 1980.",
+      "Donkey Kong führte 1981 Mario ein, damals noch Jumpman genannt.",
+      "Highscore-Tafeln ließen Spieler ihre Initialen für andere zum Überbieten hinterlassen."
+     ],
+     "q": "Welche klassische Arcade-Figur erkennst du am besten?",
+     "c": "Denke dir einen dreibuchstabigen Arcade-Namen für dich und einen Punktestand zum Übertreffen aus."
+    },
+    "es": {
+     "t": "La edad de oro de las recreativas",
+     "g": "Explorar Pac-Man, Space Invaders, Donkey Kong y la cultura arcade.",
+     "p": [
+      "Space Invaders llegó en 1978 y Pac-Man en 1980.",
+      "Donkey Kong, en 1981, presentó a Mario, entonces llamado Jumpman.",
+      "Los marcadores permitían dejar tus iniciales para que otros las superaran."
+     ],
+     "q": "¿Qué personaje clásico de las recreativas reconoces mejor?",
+     "c": "Inventa un nombre arcade de tres letras para ti y una puntuación a superar."
+    },
+    "fr": {
+     "t": "L'âge d'or des arcades",
+     "g": "Explorer Pac-Man, Space Invaders, Donkey Kong et la culture arcade.",
+     "p": [
+      "Space Invaders est sorti en 1978 et Pac-Man en 1980.",
+      "Donkey Kong a introduit en 1981 Mario, alors appelé Jumpman.",
+      "Les tableaux de scores permettaient de laisser ses initiales à battre pour les autres."
+     ],
+     "q": "Quel personnage d'arcade classique reconnais-tu le mieux ?",
+     "c": "Invente-toi un nom d'arcade de trois lettres et un score à battre."
+    },
+    "it": {
+     "t": "L'età d'oro delle sale giochi",
+     "g": "Esplorare Pac-Man, Space Invaders, Donkey Kong e la cultura arcade.",
+     "p": [
+      "Space Invaders uscì nel 1978 e Pac-Man nel 1980.",
+      "Donkey Kong nel 1981 presentò Mario, allora chiamato Jumpman.",
+      "Le classifiche permettevano di lasciare le iniziali da battere per gli altri."
+     ],
+     "q": "Quale personaggio arcade classico riconosci meglio?",
+     "c": "Inventa un nome arcade di tre lettere per te e un punteggio da battere."
+    },
+    "pt": {
+     "t": "A era de ouro das arcades",
+     "g": "Explorar o Pac-Man, o Space Invaders, o Donkey Kong e a cultura arcade.",
+     "p": [
+      "O Space Invaders chegou em 1978 e o Pac-Man em 1980.",
+      "O Donkey Kong, em 1981, apresentou o Mario, então chamado Jumpman.",
+      "Os quadros de pontuação deixavam pôr as iniciais para outros as superarem."
+     ],
+     "q": "Que personagem clássica das arcades reconheces melhor?",
+     "c": "Inventa um nome arcade de três letras para ti e uma pontuação a superar."
+    },
+    "pt_BR": {
+     "t": "A era de ouro dos fliperamas",
+     "g": "Explorar o Pac-Man, o Space Invaders, o Donkey Kong e a cultura dos fliperamas.",
+     "p": [
+      "O Space Invaders chegou em 1978 e o Pac-Man em 1980.",
+      "O Donkey Kong, em 1981, apresentou o Mario, então chamado Jumpman.",
+      "Os placares deixavam pôr as iniciais para outros superarem."
+     ],
+     "q": "Que personagem clássico dos fliperamas você reconhece melhor?",
+     "c": "Invente um nome de fliperama de três letras para você e uma pontuação a superar."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The 1983 market crash",
+     "g": "Learn why the North American game market collapsed and what was learned.",
+     "p": [
+      "Too many similar games and consoles flooded stores around 1983.",
+      "Quality dropped, shoppers lost trust and sales fell sharply.",
+      "The industry learned that quality control and trust matter."
+     ],
+     "q": "Why do you think trust matters so much for creators?",
+     "c": "Name one thing you check before choosing a new game, like reviews or demos."
+    },
+    "de": {
+     "t": "Der Marktcrash von 1983",
+     "g": "Lernen, warum der nordamerikanische Spielemarkt einbrach und was man daraus lernte.",
+     "p": [
+      "Um 1983 überschwemmten zu viele ähnliche Spiele und Konsolen die Läden.",
+      "Die Qualität sank, Käufer verloren Vertrauen und die Verkäufe brachen ein.",
+      "Die Branche lernte, dass Qualitätskontrolle und Vertrauen wichtig sind."
+     ],
+     "q": "Warum ist Vertrauen für Entwickler deiner Meinung nach so wichtig?",
+     "c": "Nenne eine Sache, die du vor der Wahl eines neuen Spiels prüfst, etwa Bewertungen oder Demos."
+    },
+    "es": {
+     "t": "La crisis del mercado de 1983",
+     "g": "Aprender por qué se hundió el mercado norteamericano y qué se aprendió.",
+     "p": [
+      "Hacia 1983 demasiados juegos y consolas parecidos inundaron las tiendas.",
+      "La calidad bajó, los compradores perdieron confianza y las ventas cayeron mucho.",
+      "La industria aprendió que el control de calidad y la confianza importan."
+     ],
+     "q": "¿Por qué crees que la confianza importa tanto a los creadores?",
+     "c": "Nombra algo que revisas antes de elegir un juego nuevo, como reseñas o demos."
+    },
+    "fr": {
+     "t": "Le krach de 1983",
+     "g": "Comprendre pourquoi le marché nord-américain s'est effondré et ce qu'on en a retenu.",
+     "p": [
+      "Vers 1983, trop de jeux et de consoles similaires ont inondé les magasins.",
+      "La qualité a baissé, les acheteurs ont perdu confiance et les ventes ont chuté.",
+      "L'industrie a compris que le contrôle qualité et la confiance comptent."
+     ],
+     "q": "Pourquoi la confiance compte-t-elle autant pour les créateurs, à ton avis ?",
+     "c": "Cite une chose que tu vérifies avant de choisir un nouveau jeu, comme les avis ou les démos."
+    },
+    "it": {
+     "t": "Il crollo del mercato del 1983",
+     "g": "Capire perché il mercato nordamericano crollò e cosa si imparò.",
+     "p": [
+      "Intorno al 1983 troppi giochi e console simili inondarono i negozi.",
+      "La qualità calò, gli acquirenti persero fiducia e le vendite crollarono.",
+      "L'industria imparò che controllo qualità e fiducia contano."
+     ],
+     "q": "Perché pensi che la fiducia sia così importante per i creatori?",
+     "c": "Indica una cosa che controlli prima di scegliere un nuovo gioco, come recensioni o demo."
+    },
+    "pt": {
+     "t": "A crise do mercado de 1983",
+     "g": "Perceber porque o mercado norte-americano colapsou e o que se aprendeu.",
+     "p": [
+      "Por volta de 1983, demasiados jogos e consolas parecidos inundaram as lojas.",
+      "A qualidade desceu, os compradores perderam confiança e as vendas caíram muito.",
+      "A indústria aprendeu que o controlo de qualidade e a confiança importam."
+     ],
+     "q": "Porque achas que a confiança importa tanto aos criadores?",
+     "c": "Diz uma coisa que verificas antes de escolher um jogo novo, como críticas ou demos."
+    },
+    "pt_BR": {
+     "t": "A crise do mercado de 1983",
+     "g": "Entender por que o mercado norte-americano colapsou e o que se aprendeu.",
+     "p": [
+      "Por volta de 1983, jogos e consoles parecidos demais inundaram as lojas.",
+      "A qualidade caiu, os compradores perderam a confiança e as vendas despencaram.",
+      "A indústria aprendeu que controle de qualidade e confiança importam."
+     ],
+     "q": "Por que você acha que a confiança importa tanto para os criadores?",
+     "c": "Diga uma coisa que você confere antes de escolher um jogo novo, como avaliações ou demos."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The 8-bit revival",
+     "g": "See how the Famicom and NES restored confidence in home gaming.",
+     "p": [
+      "Nintendo released the Famicom in Japan in 1983 and the NES abroad later.",
+      "Strict quality checks helped shoppers trust games again.",
+      "Super Mario Bros. and The Legend of Zelda became lasting favourites."
+     ],
+     "q": "Which 8-bit game would you like to try one day?",
+     "c": "Hum a short 8-bit style tune and see if a friend can guess it."
+    },
+    "de": {
+     "t": "Die 8-Bit-Wiederbelebung",
+     "g": "Sehen, wie Famicom und NES das Vertrauen in Heimspiele zurückbrachten.",
+     "p": [
+      "Nintendo brachte 1983 den Famicom in Japan und später das NES ins Ausland.",
+      "Strenge Qualitätsprüfungen ließen Käufer Spielen wieder vertrauen.",
+      "Super Mario Bros. und The Legend of Zelda wurden bleibende Lieblinge."
+     ],
+     "q": "Welches 8-Bit-Spiel würdest du gern einmal ausprobieren?",
+     "c": "Summe eine kurze Melodie im 8-Bit-Stil und lass einen Freund raten, was es ist."
+    },
+    "es": {
+     "t": "El renacer de los 8 bits",
+     "g": "Ver cómo Famicom y NES devolvieron la confianza en los juegos domésticos.",
+     "p": [
+      "Nintendo lanzó la Famicom en Japón en 1983 y la NES en el extranjero después.",
+      "Controles de calidad estrictos hicieron que la gente volviera a confiar.",
+      "Super Mario Bros. y The Legend of Zelda se volvieron favoritos duraderos."
+     ],
+     "q": "¿Qué juego de 8 bits te gustaría probar algún día?",
+     "c": "Tararea una melodía corta estilo 8 bits y mira si un amigo la adivina."
+    },
+    "fr": {
+     "t": "Le renouveau du 8 bits",
+     "g": "Voir comment la Famicom et la NES ont rétabli la confiance dans le jeu à la maison.",
+     "p": [
+      "Nintendo a sorti la Famicom au Japon en 1983 et la NES à l'étranger ensuite.",
+      "Des contrôles de qualité stricts ont rendu confiance aux acheteurs.",
+      "Super Mario Bros. et The Legend of Zelda sont devenus des favoris durables."
+     ],
+     "q": "Quel jeu 8 bits aimerais-tu essayer un jour ?",
+     "c": "Fredonne une courte mélodie façon 8 bits et vois si un ami la devine."
+    },
+    "it": {
+     "t": "La rinascita degli 8 bit",
+     "g": "Vedere come Famicom e NES restituirono fiducia nei giochi domestici.",
+     "p": [
+      "Nintendo lanciò il Famicom in Giappone nel 1983 e il NES all'estero poi.",
+      "Controlli di qualità rigorosi fecero tornare la fiducia degli acquirenti.",
+      "Super Mario Bros. e The Legend of Zelda divennero favoriti duraturi."
+     ],
+     "q": "Quale gioco a 8 bit ti piacerebbe provare un giorno?",
+     "c": "Canticchia una breve melodia in stile 8 bit e vedi se un amico la indovina."
+    },
+    "pt": {
+     "t": "O renascimento dos 8 bits",
+     "g": "Ver como a Famicom e a NES devolveram a confiança nos jogos caseiros.",
+     "p": [
+      "A Nintendo lançou a Famicom no Japão em 1983 e a NES no estrangeiro depois.",
+      "Controlos de qualidade rigorosos fizeram os compradores voltar a confiar.",
+      "Super Mario Bros. e The Legend of Zelda tornaram-se favoritos duradouros."
+     ],
+     "q": "Que jogo de 8 bits gostarias de experimentar um dia?",
+     "c": "Trauteia uma melodia curta ao estilo 8 bits e vê se um amigo adivinha."
+    },
+    "pt_BR": {
+     "t": "O renascimento dos 8 bits",
+     "g": "Ver como o Famicom e o NES devolveram a confiança nos jogos caseiros.",
+     "p": [
+      "A Nintendo lançou o Famicom no Japão em 1983 e o NES no exterior depois.",
+      "Controles de qualidade rigorosos fizeram os compradores voltarem a confiar.",
+      "Super Mario Bros. e The Legend of Zelda tornaram-se favoritos duradouros."
+     ],
+     "q": "Que jogo de 8 bits você gostaria de experimentar um dia?",
+     "c": "Cantarole uma melodia curta no estilo 8 bits e veja se um amigo adivinha."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tetris and its journey",
+     "g": "Learn how a puzzle by Alexey Pajitnov became a worldwide favourite.",
+     "p": [
+      "Alexey Pajitnov created Tetris in Moscow in 1984.",
+      "Falling blocks, simple rules and endless variety made it addictive.",
+      "The Game Boy version helped it spread to millions of players."
+     ],
+     "q": "Why do you think such simple games last so long?",
+     "c": "Try to design a puzzle with just one shape and one rule, on paper."
+    },
+    "de": {
+     "t": "Tetris und seine Reise",
+     "g": "Lernen, wie Alexey Pajitnovs Rätselspiel zum weltweiten Liebling wurde.",
+     "p": [
+      "Alexey Pajitnov schuf Tetris 1984 in Moskau.",
+      "Fallende Blöcke, einfache Regeln und endlose Abwechslung machten es fesselnd.",
+      "Die Game-Boy-Version brachte es zu Millionen Spielern."
+     ],
+     "q": "Warum halten sich so einfache Spiele deiner Meinung nach so lange?",
+     "c": "Versuche auf Papier ein Rätsel mit nur einer Form und einer Regel zu entwerfen."
+    },
+    "es": {
+     "t": "Tetris y su viaje",
+     "g": "Aprender cómo el puzle de Alexey Pajitnov se hizo favorito en todo el mundo.",
+     "p": [
+      "Alexey Pajitnov creó Tetris en Moscú en 1984.",
+      "Bloques que caen, reglas simples y variedad infinita lo hicieron adictivo.",
+      "La versión de Game Boy ayudó a llegar a millones de jugadores."
+     ],
+     "q": "¿Por qué crees que los juegos tan simples duran tanto?",
+     "c": "Intenta diseñar en papel un puzle con una sola forma y una sola regla."
+    },
+    "fr": {
+     "t": "Tetris et son voyage",
+     "g": "Découvrir comment le casse-tête d'Alexey Pajitnov est devenu un favori mondial.",
+     "p": [
+      "Alexey Pajitnov a créé Tetris à Moscou en 1984.",
+      "Des blocs qui tombent, des règles simples et une variété infinie l'ont rendu captivant.",
+      "La version Game Boy l'a fait connaître à des millions de joueurs."
+     ],
+     "q": "Pourquoi, selon toi, des jeux si simples durent-ils aussi longtemps ?",
+     "c": "Essaie de concevoir sur papier un casse-tête avec une seule forme et une seule règle."
+    },
+    "it": {
+     "t": "Tetris e il suo viaggio",
+     "g": "Scoprire come il rompicapo di Alexey Pajitnov è diventato un favorito mondiale.",
+     "p": [
+      "Alexey Pajitnov creò Tetris a Mosca nel 1984.",
+      "Blocchi che cadono, regole semplici e varietà infinita lo resero coinvolgente.",
+      "La versione per Game Boy lo fece arrivare a milioni di giocatori."
+     ],
+     "q": "Perché pensi che giochi così semplici durino tanto?",
+     "c": "Prova a progettare su carta un rompicapo con una sola forma e una sola regola."
+    },
+    "pt": {
+     "t": "O Tetris e a sua viagem",
+     "g": "Perceber como o puzzle de Alexey Pajitnov se tornou favorito em todo o mundo.",
+     "p": [
+      "Alexey Pajitnov criou o Tetris em Moscovo em 1984.",
+      "Blocos a cair, regras simples e variedade infinita tornaram-no viciante.",
+      "A versão para Game Boy ajudou a chegar a milhões de jogadores."
+     ],
+     "q": "Porque achas que jogos tão simples duram tanto?",
+     "c": "Tenta desenhar em papel um puzzle com uma só forma e uma só regra."
+    },
+    "pt_BR": {
+     "t": "O Tetris e sua jornada",
+     "g": "Entender como o quebra-cabeça de Alexey Pajitnov virou favorito no mundo todo.",
+     "p": [
+      "Alexey Pajitnov criou o Tetris em Moscou em 1984.",
+      "Blocos caindo, regras simples e variedade infinita o tornaram viciante.",
+      "A versão de Game Boy ajudou a chegar a milhões de jogadores."
+     ],
+     "q": "Por que você acha que jogos tão simples duram tanto?",
+     "c": "Tente desenhar no papel um quebra-cabeça com uma só forma e uma só regra."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Iconic characters",
+     "g": "Understand why mascots like Mario, Sonic and Pac-Man became famous.",
+     "p": [
+      "A simple, readable shape makes a character easy to remember.",
+      "Mascots gave consoles a friendly face and a personality.",
+      "Strong characters appear in cartoons, toys and music, not just games."
+     ],
+     "q": "Which game character would you pick as your personal mascot?",
+     "c": "Sketch a simple mascot using only three shapes and give it a name."
+    },
+    "de": {
+     "t": "Ikonische Figuren",
+     "g": "Verstehen, warum Maskottchen wie Mario, Sonic und Pac-Man berühmt wurden.",
+     "p": [
+      "Eine einfache, gut lesbare Form macht eine Figur leicht merkbar.",
+      "Maskottchen gaben Konsolen ein freundliches Gesicht und Persönlichkeit.",
+      "Starke Figuren tauchen in Zeichentrick, Spielzeug und Musik auf, nicht nur in Spielen."
+     ],
+     "q": "Welche Spielfigur würdest du als persönliches Maskottchen wählen?",
+     "c": "Skizziere ein Maskottchen aus nur drei Formen und gib ihm einen Namen."
+    },
+    "es": {
+     "t": "Personajes icónicos",
+     "g": "Entender por qué mascotas como Mario, Sonic y Pac-Man se hicieron famosas.",
+     "p": [
+      "Una forma simple y legible hace que un personaje sea fácil de recordar.",
+      "Las mascotas dieron a las consolas una cara amable y personalidad.",
+      "Los personajes fuertes aparecen en dibujos, juguetes y música, no solo en juegos."
+     ],
+     "q": "¿Qué personaje de juego elegirías como tu mascota personal?",
+     "c": "Dibuja una mascota simple usando solo tres formas y ponle nombre."
+    },
+    "fr": {
+     "t": "Personnages emblématiques",
+     "g": "Comprendre pourquoi des mascottes comme Mario, Sonic et Pac-Man sont devenues célèbres.",
+     "p": [
+      "Une forme simple et lisible rend un personnage facile à retenir.",
+      "Les mascottes ont donné aux consoles un visage sympathique et une personnalité.",
+      "Les personnages forts apparaissent dans les dessins animés, jouets et musiques, pas seulement les jeux."
+     ],
+     "q": "Quel personnage de jeu choisirais-tu comme mascotte personnelle ?",
+     "c": "Dessine une mascotte simple avec seulement trois formes et donne-lui un nom."
+    },
+    "it": {
+     "t": "Personaggi iconici",
+     "g": "Capire perché mascotte come Mario, Sonic e Pac-Man sono diventate famose.",
+     "p": [
+      "Una forma semplice e leggibile rende un personaggio facile da ricordare.",
+      "Le mascotte diedero alle console un volto amichevole e una personalità.",
+      "I personaggi forti compaiono in cartoni, giocattoli e musica, non solo nei giochi."
+     ],
+     "q": "Quale personaggio di un gioco sceglieresti come mascotte personale?",
+     "c": "Disegna una mascotte semplice usando solo tre forme e dalle un nome."
+    },
+    "pt": {
+     "t": "Personagens icónicas",
+     "g": "Perceber porque mascotes como o Mario, o Sonic e o Pac-Man ficaram famosas.",
+     "p": [
+      "Uma forma simples e legível torna uma personagem fácil de recordar.",
+      "As mascotes deram às consolas uma cara simpática e personalidade.",
+      "Personagens fortes aparecem em desenhos animados, brinquedos e música, não só em jogos."
+     ],
+     "q": "Que personagem de jogo escolherias como mascote pessoal?",
+     "c": "Desenha uma mascote simples usando só três formas e dá-lhe um nome."
+    },
+    "pt_BR": {
+     "t": "Personagens icônicos",
+     "g": "Entender por que mascotes como Mario, Sonic e Pac-Man ficaram famosos.",
+     "p": [
+      "Uma forma simples e legível torna um personagem fácil de lembrar.",
+      "Os mascotes deram aos consoles um rosto simpático e personalidade.",
+      "Personagens fortes aparecem em desenhos, brinquedos e música, não só em jogos."
+     ],
+     "q": "Que personagem de jogo você escolheria como mascote pessoal?",
+     "c": "Desenhe um mascote simples usando só três formas e dê um nome a ele."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Early home computers and games",
+     "g": "See how machines like the Commodore 64 and ZX Spectrum inspired bedroom coders.",
+     "p": [
+      "Home computers of the 1980s let people write their own games.",
+      "Magazines printed code that readers typed in line by line.",
+      "Young programmers made games in their bedrooms and some became professionals."
+     ],
+     "q": "Have you ever made something with code or a game editor?",
+     "c": "Write a tiny game idea in three lines, as if you were a 1980s bedroom coder."
+    },
+    "de": {
+     "t": "Frühe Heimcomputer und Spiele",
+     "g": "Sehen, wie Geräte wie Commodore 64 und ZX Spectrum Schlafzimmer-Programmierer inspirierten.",
+     "p": [
+      "Heimcomputer der 1980er ließen Menschen eigene Spiele schreiben.",
+      "Zeitschriften druckten Code, den Leser Zeile für Zeile abtippten.",
+      "Junge Programmierer bauten Spiele im Kinderzimmer, manche wurden Profis."
+     ],
+     "q": "Hast du je etwas mit Code oder einem Spiele-Editor gebaut?",
+     "c": "Schreibe eine winzige Spielidee in drei Zeilen, als wärst du ein Programmierer der 1980er."
+    },
+    "es": {
+     "t": "Los primeros ordenadores domésticos y sus juegos",
+     "g": "Ver cómo máquinas como el Commodore 64 y el ZX Spectrum inspiraron a programadores de dormitorio.",
+     "p": [
+      "Los ordenadores domésticos de los años 80 dejaban crear juegos propios.",
+      "Las revistas imprimían código que los lectores tecleaban línea a línea.",
+      "Jóvenes programadores hacían juegos en su cuarto y algunos se hicieron profesionales."
+     ],
+     "q": "¿Has hecho alguna vez algo con código o un editor de juegos?",
+     "c": "Escribe una mini idea de juego en tres líneas, como un programador de dormitorio de los 80."
+    },
+    "fr": {
+     "t": "Les premiers ordinateurs familiaux et leurs jeux",
+     "g": "Voir comment des machines comme le Commodore 64 et le ZX Spectrum ont inspiré les codeurs de chambre.",
+     "p": [
+      "Les ordinateurs familiaux des années 1980 permettaient d'écrire ses propres jeux.",
+      "Les magazines publiaient du code que les lecteurs tapaient ligne par ligne.",
+      "De jeunes programmeurs créaient des jeux dans leur chambre et certains sont devenus professionnels."
+     ],
+     "q": "As-tu déjà créé quelque chose avec du code ou un éditeur de jeu ?",
+     "c": "Écris une mini idée de jeu en trois lignes, comme un codeur de chambre des années 1980."
+    },
+    "it": {
+     "t": "I primi home computer e i loro giochi",
+     "g": "Vedere come macchine come il Commodore 64 e lo ZX Spectrum ispirarono i programmatori da cameretta.",
+     "p": [
+      "Gli home computer degli anni Ottanta permettevano di scrivere i propri giochi.",
+      "Le riviste stampavano codice che i lettori digitavano riga per riga.",
+      "Giovani programmatori facevano giochi in camera e alcuni diventarono professionisti."
+     ],
+     "q": "Hai mai creato qualcosa con il codice o un editor di giochi?",
+     "c": "Scrivi una mini idea di gioco in tre righe, come un programmatore da cameretta degli anni Ottanta."
+    },
+    "pt": {
+     "t": "Os primeiros computadores domésticos e os seus jogos",
+     "g": "Ver como máquinas como o Commodore 64 e o ZX Spectrum inspiraram programadores de quarto.",
+     "p": [
+      "Os computadores domésticos dos anos 80 deixavam criar jogos próprios.",
+      "As revistas imprimiam código que os leitores escreviam linha a linha.",
+      "Jovens programadores faziam jogos no quarto e alguns tornaram-se profissionais."
+     ],
+     "q": "Já fizeste alguma coisa com código ou um editor de jogos?",
+     "c": "Escreve uma mini ideia de jogo em três linhas, como um programador de quarto dos anos 80."
+    },
+    "pt_BR": {
+     "t": "Os primeiros computadores domésticos e seus jogos",
+     "g": "Ver como máquinas como o Commodore 64 e o ZX Spectrum inspiraram programadores de quarto.",
+     "p": [
+      "Os computadores domésticos dos anos 80 deixavam criar jogos próprios.",
+      "As revistas imprimiam código que os leitores digitavam linha a linha.",
+      "Jovens programadores faziam jogos no quarto e alguns viraram profissionais."
+     ],
+     "q": "Você já fez alguma coisa com código ou um editor de jogos?",
+     "c": "Escreva uma mini ideia de jogo em três linhas, como um programador de quarto dos anos 80."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "environment",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is the environment?",
+     "g": "Understand that the environment is the air, water, land and life all around us.",
+     "p": [
+      "The environment is everything around you: air, water, soil, plants, animals and people.",
+      "You are part of it, not apart from it: you breathe its air and drink its water.",
+      "Looking after it starts with noticing it, and noticing is free."
+     ],
+     "q": "What is your favourite place in nature, and what do you love about it?",
+     "c": "Step outside for two minutes today and name five living things you can see or hear."
+    },
+    "de": {
+     "t": "Was ist die Umwelt?",
+     "g": "Verstehen, dass die Umwelt Luft, Wasser, Boden und Leben um uns herum ist.",
+     "p": [
+      "Umwelt ist alles um dich herum: Luft, Wasser, Boden, Pflanzen, Tiere und Menschen.",
+      "Du bist ein Teil davon: Du atmest ihre Luft und trinkst ihr Wasser.",
+      "Schutz beginnt mit Aufmerksamkeit, und Hinschauen kostet nichts."
+     ],
+     "q": "Welcher Ort in der Natur gefällt dir am besten, und warum?",
+     "c": "Geh heute zwei Minuten vor die Tür und benenne fünf Lebewesen, die du siehst oder hörst."
+    },
+    "es": {
+     "t": "¿Qué es el medio ambiente?",
+     "g": "Entender que el medio ambiente es el aire, el agua, la tierra y la vida que nos rodea.",
+     "p": [
+      "El medio ambiente es todo lo que te rodea: aire, agua, suelo, plantas, animales y personas.",
+      "Formas parte de él: respiras su aire y bebes su agua.",
+      "Cuidarlo empieza por fijarse en él, y mirar es gratis."
+     ],
+     "q": "¿Cuál es tu lugar favorito de la naturaleza y qué es lo que más te gusta de él?",
+     "c": "Sal dos minutos hoy y nombra cinco seres vivos que veas o escuches."
+    },
+    "fr": {
+     "t": "Qu'est-ce que l'environnement ?",
+     "g": "Comprendre que l'environnement, c'est l'air, l'eau, la terre et le vivant autour de nous.",
+     "p": [
+      "L'environnement, c'est tout ce qui t'entoure : air, eau, sol, plantes, animaux et humains.",
+      "Tu en fais partie : tu respires son air et tu bois son eau.",
+      "En prendre soin commence par l'observer, et observer ne coûte rien."
+     ],
+     "q": "Quel est ton endroit préféré dans la nature, et qu'y aimes-tu ?",
+     "c": "Sors deux minutes aujourd'hui et nomme cinq êtres vivants que tu vois ou entends."
+    },
+    "it": {
+     "t": "Cos'è l'ambiente?",
+     "g": "Capire che l'ambiente è l'aria, l'acqua, la terra e la vita che ci circondano.",
+     "p": [
+      "L'ambiente è tutto ciò che ti circonda: aria, acqua, suolo, piante, animali e persone.",
+      "Ne fai parte: respiri la sua aria e bevi la sua acqua.",
+      "Prendersene cura comincia dall'osservarlo, e osservare è gratis."
+     ],
+     "q": "Qual è il tuo posto preferito nella natura e cosa ti piace di più?",
+     "c": "Esci due minuti oggi e nomina cinque esseri viventi che vedi o senti."
+    },
+    "pt": {
+     "t": "O que é o ambiente?",
+     "g": "Perceber que o ambiente é o ar, a água, a terra e a vida que nos rodeia.",
+     "p": [
+      "O ambiente é tudo à tua volta: ar, água, solo, plantas, animais e pessoas.",
+      "Fazes parte dele: respiras o seu ar e bebes a sua água.",
+      "Cuidar dele começa por reparar nele, e reparar não custa nada."
+     ],
+     "q": "Qual é o teu sítio preferido na natureza e o que mais gostas nele?",
+     "c": "Sai dois minutos hoje e diz o nome de cinco seres vivos que vês ou ouves."
+    },
+    "pt_BR": {
+     "t": "O que é o meio ambiente?",
+     "g": "Entender que o meio ambiente é o ar, a água, a terra e a vida ao nosso redor.",
+     "p": [
+      "O meio ambiente é tudo que está ao seu redor: ar, água, solo, plantas, animais e pessoas.",
+      "Você faz parte dele: respira o ar e bebe a água dele.",
+      "Cuidar dele começa por perceber que ele existe, e observar é de graça."
+     ],
+     "q": "Qual é o seu lugar favorito na natureza e o que você mais gosta nele?",
+     "c": "Saia por dois minutos hoje e diga o nome de cinco seres vivos que você vê ou ouve."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why small actions add up",
+     "g": "See how many everyday choices together create real, positive change.",
+     "p": [
+      "One person's choice is small, but millions of similar choices shape what shops sell.",
+      "Habits spread: friends and family often copy what they see you do.",
+      "Progress beats perfection: a few steady habits matter more than one grand gesture."
+     ],
+     "q": "Which small green habit do you already have without thinking about it?",
+     "c": "Pick one tiny habit, like turning off a light, and do it every time today."
+    },
+    "de": {
+     "t": "Warum kleine Taten zählen",
+     "g": "Erkennen, wie viele kleine Alltagsentscheidungen gemeinsam echten Wandel bewirken.",
+     "p": [
+      "Eine Entscheidung ist klein, aber Millionen gleiche Entscheidungen prägen, was Läden anbieten.",
+      "Gewohnheiten stecken an: Freunde und Familie schauen sich viel von dir ab.",
+      "Fortschritt schlägt Perfektion: wenige beständige Gewohnheiten wiegen mehr als eine große Geste."
+     ],
+     "q": "Welche kleine grüne Gewohnheit hast du schon, ohne darüber nachzudenken?",
+     "c": "Such dir eine winzige Gewohnheit aus, etwa das Licht ausschalten, und tu es heute jedes Mal."
+    },
+    "es": {
+     "t": "Por qué suman las pequeñas acciones",
+     "g": "Ver cómo muchas decisiones cotidianas crean juntas un cambio real y positivo.",
+     "p": [
+      "Una decisión es pequeña, pero millones de decisiones parecidas moldean lo que venden las tiendas.",
+      "Los hábitos se contagian: amigos y familia copian lo que te ven hacer.",
+      "El progreso gana a la perfección: unos pocos hábitos constantes valen más que un gran gesto."
+     ],
+     "q": "¿Qué pequeño hábito ecológico ya tienes sin pensarlo?",
+     "c": "Elige un hábito diminuto, como apagar la luz, y hazlo siempre que puedas hoy."
+    },
+    "fr": {
+     "t": "Pourquoi les petits gestes comptent",
+     "g": "Voir comment de nombreux choix quotidiens créent ensemble un vrai changement positif.",
+     "p": [
+      "Un choix est petit, mais des millions de choix semblables orientent ce que vendent les magasins.",
+      "Les habitudes se propagent : amis et famille imitent ce qu'ils te voient faire.",
+      "Le progrès vaut mieux que la perfection : quelques habitudes régulières pèsent plus qu'un grand geste."
+     ],
+     "q": "Quelle petite habitude écolo as-tu déjà sans y penser ?",
+     "c": "Choisis une toute petite habitude, comme éteindre la lumière, et applique-la à chaque fois aujourd'hui."
+    },
+    "it": {
+     "t": "Perché i piccoli gesti contano",
+     "g": "Vedere come tante scelte quotidiane creano insieme un cambiamento reale e positivo.",
+     "p": [
+      "Una scelta è piccola, ma milioni di scelte simili orientano ciò che vendono i negozi.",
+      "Le abitudini si diffondono: amici e famiglia copiano ciò che ti vedono fare.",
+      "Il progresso batte la perfezione: poche abitudini costanti valgono più di un gesto eclatante."
+     ],
+     "q": "Quale piccola abitudine green hai già senza pensarci?",
+     "c": "Scegli una micro-abitudine, come spegnere la luce, e ripetila ogni volta oggi."
+    },
+    "pt": {
+     "t": "Porque é que os pequenos gestos contam",
+     "g": "Ver como muitas escolhas do dia a dia criam, em conjunto, uma mudança real e positiva.",
+     "p": [
+      "Uma escolha é pequena, mas milhões de escolhas iguais moldam o que as lojas vendem.",
+      "Os hábitos espalham-se: amigos e família copiam o que te veem fazer.",
+      "O progresso vale mais do que a perfeição: poucos hábitos constantes pesam mais do que um grande gesto."
+     ],
+     "q": "Que pequeno hábito ecológico já tens sem pensar nisso?",
+     "c": "Escolhe um hábito minúsculo, como apagar a luz, e cumpre-o sempre que puderes hoje."
+    },
+    "pt_BR": {
+     "t": "Por que as pequenas ações somam",
+     "g": "Ver como muitas escolhas do dia a dia criam, juntas, uma mudança real e positiva.",
+     "p": [
+      "Uma escolha é pequena, mas milhões de escolhas iguais moldam o que as lojas vendem.",
+      "Hábitos se espalham: amigos e família copiam o que veem você fazer.",
+      "Progresso vale mais que perfeição: poucos hábitos constantes pesam mais que um grande gesto."
+     ],
+     "q": "Qual pequeno hábito sustentável você já tem sem nem pensar?",
+     "c": "Escolha um hábito minúsculo, como apagar a luz, e cumpra sempre que puder hoje."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Nature's systems at a glance",
+     "g": "Get a first picture of how air, water, soil and living things support each other.",
+     "p": [
+      "Plants use sunlight, air and water to grow, and animals eat plants or each other.",
+      "Fallen leaves and dead plants are broken down by tiny helpers and feed the soil.",
+      "Everything is linked: change one part, and the others respond."
+     ],
+     "q": "Can you think of one chain in nature, like bee, flower and fruit?",
+     "c": "Look at a plant or a tree today and spot one animal or insect that depends on it."
+    },
+    "de": {
+     "t": "Naturkreisläufe im Überblick",
+     "g": "Ein erstes Bild davon gewinnen, wie Luft, Wasser, Boden und Lebewesen einander tragen.",
+     "p": [
+      "Pflanzen nutzen Licht, Luft und Wasser zum Wachsen, Tiere fressen Pflanzen oder einander.",
+      "Laub und abgestorbene Pflanzen werden von winzigen Helfern zersetzt und nähren den Boden.",
+      "Alles hängt zusammen: Ändert sich ein Teil, reagieren die anderen."
+     ],
+     "q": "Fällt dir eine Kette in der Natur ein, etwa Biene, Blume und Frucht?",
+     "c": "Betrachte heute eine Pflanze oder einen Baum und entdecke ein Tier, das davon abhängt."
+    },
+    "es": {
+     "t": "Los sistemas de la naturaleza de un vistazo",
+     "g": "Hacerse una primera idea de cómo se apoyan el aire, el agua, el suelo y los seres vivos.",
+     "p": [
+      "Las plantas usan luz, aire y agua para crecer, y los animales comen plantas o a otros animales.",
+      "Hojas caídas y plantas muertas las descomponen pequeños ayudantes y alimentan el suelo.",
+      "Todo está conectado: si cambia una parte, las demás responden."
+     ],
+     "q": "¿Se te ocurre una cadena de la naturaleza, como abeja, flor y fruto?",
+     "c": "Mira hoy una planta o un árbol y encuentra un animal o insecto que dependa de él."
+    },
+    "fr": {
+     "t": "Les systèmes de la nature en un coup d'œil",
+     "g": "Se faire une première image de la façon dont air, eau, sol et vivants se soutiennent.",
+     "p": [
+      "Les plantes utilisent lumière, air et eau pour pousser, et les animaux mangent des plantes ou d'autres animaux.",
+      "Feuilles mortes et plantes fanées sont décomposées par de minuscules auxiliaires et nourrissent le sol.",
+      "Tout est lié : si une partie change, les autres réagissent."
+     ],
+     "q": "Peux-tu penser à une chaîne dans la nature, comme abeille, fleur et fruit ?",
+     "c": "Observe aujourd'hui une plante ou un arbre et repère un animal ou un insecte qui en dépend."
+    },
+    "it": {
+     "t": "I sistemi della natura in breve",
+     "g": "Farsi una prima idea di come aria, acqua, suolo ed esseri viventi si sostengono a vicenda.",
+     "p": [
+      "Le piante usano luce, aria e acqua per crescere, e gli animali mangiano piante o altri animali.",
+      "Foglie cadute e piante secche sono decomposte da minuscoli aiutanti e nutrono il suolo.",
+      "Tutto è collegato: se cambia una parte, le altre reagiscono."
+     ],
+     "q": "Ti viene in mente una catena nella natura, come ape, fiore e frutto?",
+     "c": "Osserva oggi una pianta o un albero e individua un animale o insetto che ne dipende."
+    },
+    "pt": {
+     "t": "Os sistemas da natureza num relance",
+     "g": "Ter uma primeira ideia de como o ar, a água, o solo e os seres vivos se apoiam.",
+     "p": [
+      "As plantas usam luz, ar e água para crescer, e os animais comem plantas ou outros animais.",
+      "Folhas caídas e plantas mortas são decompostas por pequenos ajudantes e alimentam o solo.",
+      "Tudo está ligado: se uma parte muda, as outras reagem."
+     ],
+     "q": "Lembras-te de uma cadeia na natureza, como abelha, flor e fruto?",
+     "c": "Olha hoje para uma planta ou árvore e descobre um animal ou inseto que dependa dela."
+    },
+    "pt_BR": {
+     "t": "Os sistemas da natureza num relance",
+     "g": "Ter uma primeira ideia de como ar, água, solo e seres vivos se apoiam.",
+     "p": [
+      "As plantas usam luz, ar e água para crescer, e os animais comem plantas ou outros animais.",
+      "Folhas caídas e plantas mortas são decompostas por pequenos ajudantes e alimentam o solo.",
+      "Tudo está ligado: se uma parte muda, as outras reagem."
+     ],
+     "q": "Você consegue pensar numa cadeia da natureza, como abelha, flor e fruto?",
+     "c": "Olhe hoje para uma planta ou árvore e descubra um animal ou inseto que dependa dela."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The water cycle",
+     "g": "Learn how the same water keeps moving between sea, sky and land.",
+     "p": [
+      "Sun warms water in seas, lakes and leaves, and it rises as invisible vapour.",
+      "High up it cools into clouds, then falls as rain or snow and flows back via rivers.",
+      "The water you drink has travelled this loop for a very long time."
+     ],
+     "q": "Where does the tap water in your home come from, as far as you know?",
+     "c": "Watch for water in any form today, like dew, steam or a puddle, and trace where it goes next."
+    },
+    "de": {
+     "t": "Der Wasserkreislauf",
+     "g": "Lernen, wie dasselbe Wasser ständig zwischen Meer, Himmel und Land wandert.",
+     "p": [
+      "Die Sonne erwärmt Wasser in Meeren, Seen und Blättern, es steigt als unsichtbarer Dampf auf.",
+      "Oben kühlt es zu Wolken ab, fällt als Regen oder Schnee und fließt über Flüsse zurück.",
+      "Das Wasser, das du trinkst, ist schon sehr lange in diesem Kreislauf unterwegs."
+     ],
+     "q": "Woher kommt das Leitungswasser bei dir zu Hause, soweit du weißt?",
+     "c": "Achte heute auf Wasser in jeder Form, etwa Tau, Dampf oder Pfütze, und verfolge, wohin es geht."
+    },
+    "es": {
+     "t": "El ciclo del agua",
+     "g": "Aprender cómo la misma agua se mueve sin parar entre el mar, el cielo y la tierra.",
+     "p": [
+      "El sol calienta el agua de mares, lagos y hojas, y sube como vapor invisible.",
+      "Arriba se enfría en nubes, cae como lluvia o nieve y vuelve por los ríos.",
+      "El agua que bebes lleva muchísimo tiempo recorriendo este ciclo."
+     ],
+     "q": "¿De dónde viene el agua del grifo de tu casa, que tú sepas?",
+     "c": "Fíjate hoy en el agua en cualquier forma, como rocío, vapor o un charco, y sigue su camino."
+    },
+    "fr": {
+     "t": "Le cycle de l'eau",
+     "g": "Apprendre comment la même eau circule sans cesse entre mer, ciel et terre.",
+     "p": [
+      "Le soleil réchauffe l'eau des mers, des lacs et des feuilles, qui monte en vapeur invisible.",
+      "En altitude elle refroidit en nuages, tombe en pluie ou neige et revient par les rivières.",
+      "L'eau que tu bois parcourt cette boucle depuis très longtemps."
+     ],
+     "q": "D'où vient l'eau du robinet chez toi, d'après ce que tu sais ?",
+     "c": "Repère aujourd'hui l'eau sous toutes ses formes, rosée, vapeur ou flaque, et imagine où elle va ensuite."
+    },
+    "it": {
+     "t": "Il ciclo dell'acqua",
+     "g": "Imparare come la stessa acqua si muove di continuo tra mare, cielo e terra.",
+     "p": [
+      "Il sole riscalda l'acqua di mari, laghi e foglie, che sale come vapore invisibile.",
+      "In alto si raffredda in nuvole, cade come pioggia o neve e torna attraverso i fiumi.",
+      "L'acqua che bevi percorre questo giro da moltissimo tempo."
+     ],
+     "q": "Da dove arriva l'acqua del rubinetto di casa tua, per quanto ne sai?",
+     "c": "Osserva oggi l'acqua in ogni forma, come rugiada, vapore o pozzanghera, e segui dove va dopo."
+    },
+    "pt": {
+     "t": "O ciclo da água",
+     "g": "Aprender como a mesma água circula sem parar entre o mar, o céu e a terra.",
+     "p": [
+      "O sol aquece a água dos mares, lagos e folhas, e ela sobe como vapor invisível.",
+      "Lá em cima arrefece em nuvens, cai como chuva ou neve e regressa pelos rios.",
+      "A água que bebes percorre este circuito há muitíssimo tempo."
+     ],
+     "q": "De onde vem a água da torneira da tua casa, que tu saibas?",
+     "c": "Repara hoje na água em qualquer forma, como orvalho, vapor ou poça, e segue o seu caminho."
+    },
+    "pt_BR": {
+     "t": "O ciclo da água",
+     "g": "Aprender como a mesma água circula sem parar entre o mar, o céu e a terra.",
+     "p": [
+      "O sol aquece a água de mares, lagos e folhas, e ela sobe como vapor invisível.",
+      "Lá no alto ela esfria em nuvens, cai como chuva ou neve e volta pelos rios.",
+      "A água que você bebe percorre esse circuito há muitíssimo tempo."
+     ],
+     "q": "De onde vem a água da torneira da sua casa, até onde você sabe?",
+     "c": "Repare hoje na água em qualquer forma, como orvalho, vapor ou poça, e acompanhe o caminho dela."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The carbon cycle made simple",
+     "g": "Understand how carbon travels between air, plants, oceans and soil.",
+     "p": [
+      "Plants take carbon dioxide from the air and turn it into leaves, wood and food.",
+      "Animals, plants and soil release carbon back as they breathe and decay.",
+      "Balance matters: nature recycles carbon well when we do not add too much extra."
+     ],
+     "q": "What do you think a growing tree does with the carbon it absorbs?",
+     "c": "Touch something made of wood or paper and remember it holds carbon a tree once took from the air."
+    },
+    "de": {
+     "t": "Der Kohlenstoffkreislauf einfach erklärt",
+     "g": "Verstehen, wie Kohlenstoff zwischen Luft, Pflanzen, Meeren und Boden wandert.",
+     "p": [
+      "Pflanzen nehmen Kohlendioxid aus der Luft auf und bauen daraus Blätter, Holz und Nahrung.",
+      "Tiere, Pflanzen und Boden geben Kohlenstoff beim Atmen und Verrotten wieder ab.",
+      "Das Gleichgewicht zählt: Die Natur recycelt Kohlenstoff gut, wenn wir nicht zu viel zusätzlich freisetzen."
+     ],
+     "q": "Was macht ein wachsender Baum wohl mit dem Kohlenstoff, den er aufnimmt?",
+     "c": "Berühre etwas aus Holz oder Papier und denke daran, dass darin Kohlenstoff aus der Luft steckt."
+    },
+    "es": {
+     "t": "El ciclo del carbono, fácil",
+     "g": "Entender cómo viaja el carbono entre el aire, las plantas, los océanos y el suelo.",
+     "p": [
+      "Las plantas toman dióxido de carbono del aire y lo convierten en hojas, madera y alimento.",
+      "Animales, plantas y suelo devuelven carbono al respirar y descomponerse.",
+      "El equilibrio importa: la naturaleza recicla bien el carbono si no le añadimos demasiado."
+     ],
+     "q": "¿Qué crees que hace un árbol en crecimiento con el carbono que absorbe?",
+     "c": "Toca algo de madera o papel y recuerda que guarda carbono que un árbol tomó del aire."
+    },
+    "fr": {
+     "t": "Le cycle du carbone en simple",
+     "g": "Comprendre comment le carbone voyage entre air, plantes, océans et sol.",
+     "p": [
+      "Les plantes captent le dioxyde de carbone de l'air et le transforment en feuilles, bois et nourriture.",
+      "Animaux, plantes et sol rendent du carbone en respirant et en se décomposant.",
+      "L'équilibre compte : la nature recycle bien le carbone si nous n'en ajoutons pas trop."
+     ],
+     "q": "Que fait selon toi un arbre qui grandit du carbone qu'il absorbe ?",
+     "c": "Touche un objet en bois ou en papier et rappelle-toi qu'il contient du carbone pris à l'air par un arbre."
+    },
+    "it": {
+     "t": "Il ciclo del carbonio in parole semplici",
+     "g": "Capire come il carbonio viaggia tra aria, piante, oceani e suolo.",
+     "p": [
+      "Le piante prelevano anidride carbonica dall'aria e la trasformano in foglie, legno e cibo.",
+      "Animali, piante e suolo restituiscono carbonio respirando e decomponendosi.",
+      "L'equilibrio conta: la natura ricicla bene il carbonio se non ne aggiungiamo troppo."
+     ],
+     "q": "Secondo te cosa fa un albero che cresce con il carbonio che assorbe?",
+     "c": "Tocca qualcosa di legno o carta e ricorda che contiene carbonio che un albero ha tolto all'aria."
+    },
+    "pt": {
+     "t": "O ciclo do carbono explicado de forma simples",
+     "g": "Perceber como o carbono viaja entre o ar, as plantas, os oceanos e o solo.",
+     "p": [
+      "As plantas retiram dióxido de carbono do ar e transformam-no em folhas, madeira e alimento.",
+      "Animais, plantas e solo devolvem carbono ao respirar e ao decompor-se.",
+      "O equilíbrio importa: a natureza recicla bem o carbono se não lhe juntarmos demais."
+     ],
+     "q": "O que achas que uma árvore em crescimento faz ao carbono que absorve?",
+     "c": "Toca em algo de madeira ou papel e lembra-te de que guarda carbono que uma árvore tirou do ar."
+    },
+    "pt_BR": {
+     "t": "O ciclo do carbono de forma simples",
+     "g": "Entender como o carbono viaja entre ar, plantas, oceanos e solo.",
+     "p": [
+      "As plantas tiram dióxido de carbono do ar e o transformam em folhas, madeira e alimento.",
+      "Animais, plantas e solo devolvem carbono ao respirar e se decompor.",
+      "O equilíbrio importa: a natureza recicla bem o carbono se não colocarmos demais."
+     ],
+     "q": "O que você acha que uma árvore em crescimento faz com o carbono que absorve?",
+     "c": "Toque em algo de madeira ou papel e lembre que ele guarda carbono que uma árvore tirou do ar."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why healthy soil matters",
+     "g": "Discover soil as a living layer that feeds us, stores water and holds carbon.",
+     "p": [
+      "A handful of healthy soil is home to countless tiny living things.",
+      "Good soil soaks up rain like a sponge, which helps plants and reduces runoff.",
+      "Covering soil with plants or mulch protects it from drying out and washing away."
+     ],
+     "q": "Have you ever dug in soil, in a garden or at the beach? What did you notice?",
+     "c": "Pick up a pinch of soil outdoors and look closely: can you see roots, crumbs or tiny creatures?"
+    },
+    "de": {
+     "t": "Warum gesunder Boden wichtig ist",
+     "g": "Boden als lebendige Schicht entdecken, die uns ernährt, Wasser speichert und Kohlenstoff bindet.",
+     "p": [
+      "Eine Handvoll gesunder Erde beherbergt unzählige winzige Lebewesen.",
+      "Guter Boden saugt Regen wie ein Schwamm auf, das hilft Pflanzen und bremst Abfluss.",
+      "Bedeckter Boden, durch Pflanzen oder Mulch, trocknet nicht aus und wird nicht weggespült."
+     ],
+     "q": "Hast du schon mal in Erde gegraben, im Garten oder am Strand? Was ist dir aufgefallen?",
+     "c": "Nimm draußen eine Prise Erde und schau genau hin: Siehst du Wurzeln, Krümel oder winzige Tiere?"
+    },
+    "es": {
+     "t": "Por qué importa un suelo sano",
+     "g": "Descubrir el suelo como una capa viva que nos alimenta, guarda agua y retiene carbono.",
+     "p": [
+      "Un puñado de suelo sano alberga incontables seres vivos diminutos.",
+      "El buen suelo absorbe la lluvia como una esponja, lo que ayuda a las plantas y reduce la escorrentía.",
+      "Cubrir el suelo con plantas o mantillo lo protege de secarse y de que se lo lleve el agua."
+     ],
+     "q": "¿Has cavado alguna vez en la tierra, en un jardín o en la playa? ¿Qué notaste?",
+     "c": "Toma un poco de tierra al aire libre y mírala de cerca: ¿ves raíces, migas o bichitos?"
+    },
+    "fr": {
+     "t": "Pourquoi un sol sain est essentiel",
+     "g": "Découvrir le sol comme une couche vivante qui nous nourrit, stocke l'eau et retient le carbone.",
+     "p": [
+      "Une poignée de sol sain abrite d'innombrables minuscules êtres vivants.",
+      "Un bon sol absorbe la pluie comme une éponge, ce qui aide les plantes et limite le ruissellement.",
+      "Couvrir le sol de plantes ou de paillis le protège du dessèchement et de l'érosion."
+     ],
+     "q": "As-tu déjà creusé la terre, au jardin ou à la plage ? Qu'as-tu remarqué ?",
+     "c": "Prends une pincée de terre dehors et observe : vois-tu des racines, des miettes ou de petites bêtes ?"
+    },
+    "it": {
+     "t": "Perché un suolo sano è importante",
+     "g": "Scoprire il suolo come strato vivo che ci nutre, trattiene l'acqua e immagazzina carbonio.",
+     "p": [
+      "Una manciata di suolo sano ospita innumerevoli minuscoli esseri viventi.",
+      "Un buon suolo assorbe la pioggia come una spugna, aiutando le piante e riducendo il ruscellamento.",
+      "Coprire il suolo con piante o pacciame lo protegge dal seccarsi e dall'essere dilavato."
+     ],
+     "q": "Hai mai scavato nella terra, in giardino o al mare? Cosa hai notato?",
+     "c": "Prendi un pizzico di terra all'aperto e guardalo da vicino: vedi radici, grumi o animaletti?"
+    },
+    "pt": {
+     "t": "Porque é que um solo saudável importa",
+     "g": "Descobrir o solo como uma camada viva que nos alimenta, guarda água e retém carbono.",
+     "p": [
+      "Um punhado de solo saudável abriga incontáveis seres vivos minúsculos.",
+      "Um bom solo absorve a chuva como uma esponja, o que ajuda as plantas e reduz a escorrência.",
+      "Cobrir o solo com plantas ou cobertura vegetal protege-o de secar e de ser levado pela água."
+     ],
+     "q": "Já alguma vez cavaste na terra, no jardim ou na praia? O que notaste?",
+     "c": "Pega numa pitada de terra ao ar livre e olha de perto: vês raízes, migalhas ou bichinhos?"
+    },
+    "pt_BR": {
+     "t": "Por que o solo saudável importa",
+     "g": "Descobrir o solo como uma camada viva que nos alimenta, guarda água e retém carbono.",
+     "p": [
+      "Um punhado de solo saudável abriga incontáveis seres vivos minúsculos.",
+      "Um bom solo absorve a chuva como uma esponja, o que ajuda as plantas e reduz a enxurrada.",
+      "Cobrir o solo com plantas ou cobertura vegetal o protege de secar e de ser levado pela água."
+     ],
+     "q": "Você já cavou na terra, no jardim ou na praia? O que notou?",
+     "c": "Pegue uma pitada de terra ao ar livre e olhe de perto: dá para ver raízes, farelos ou bichinhos?"
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Clean air basics",
+     "g": "Learn what keeps air fresh and how simple habits help protect it.",
+     "p": [
+      "Plants, trees and wind help refresh the air and carry pollution away.",
+      "Smoke from traffic, fires and heating are common sources of dirty air.",
+      "Walking, cycling and good ventilation all make the air around you better."
+     ],
+     "q": "How does the air feel where you live: fresh, busy, smoky, salty?",
+     "c": "Open a window for a few minutes today, or take a short walk, and notice how the air smells."
+    },
+    "de": {
+     "t": "Grundlagen sauberer Luft",
+     "g": "Lernen, was Luft frisch hält und wie einfache Gewohnheiten sie schützen.",
+     "p": [
+      "Pflanzen, Bäume und Wind erfrischen die Luft und tragen Schadstoffe fort.",
+      "Rauch aus Verkehr, Feuern und Heizungen sind häufige Quellen schlechter Luft.",
+      "Zu Fuß gehen, Radfahren und gutes Lüften verbessern die Luft um dich herum."
+     ],
+     "q": "Wie fühlt sich die Luft bei dir an: frisch, geschäftig, rauchig, salzig?",
+     "c": "Öffne heute ein paar Minuten das Fenster oder geh kurz spazieren und achte auf den Luftgeruch."
+    },
+    "es": {
+     "t": "Lo básico del aire limpio",
+     "g": "Aprender qué mantiene el aire fresco y cómo ayudan los hábitos sencillos.",
+     "p": [
+      "Plantas, árboles y viento refrescan el aire y se llevan la contaminación.",
+      "El humo del tráfico, de los fuegos y de la calefacción son fuentes habituales de aire sucio.",
+      "Caminar, ir en bici y ventilar bien mejoran el aire que te rodea."
+     ],
+     "q": "¿Cómo se siente el aire donde vives: fresco, cargado, con humo, salado?",
+     "c": "Abre la ventana unos minutos hoy, o da un paseo corto, y fíjate en cómo huele el aire."
+    },
+    "fr": {
+     "t": "Les bases de l'air pur",
+     "g": "Apprendre ce qui garde l'air frais et comment des habitudes simples le protègent.",
+     "p": [
+      "Plantes, arbres et vent rafraîchissent l'air et emportent la pollution.",
+      "Les fumées du trafic, des feux et du chauffage sont des sources courantes d'air pollué.",
+      "Marcher, pédaler et bien aérer améliorent l'air autour de toi."
+     ],
+     "q": "Comment est l'air là où tu vis : frais, animé, enfumé, salé ?",
+     "c": "Ouvre la fenêtre quelques minutes aujourd'hui, ou fais une courte marche, et sens l'air."
+    },
+    "it": {
+     "t": "Le basi dell'aria pulita",
+     "g": "Imparare cosa mantiene l'aria fresca e come lo proteggono le abitudini semplici.",
+     "p": [
+      "Piante, alberi e vento rinfrescano l'aria e portano via l'inquinamento.",
+      "Il fumo di traffico, fuochi e riscaldamento sono fonti comuni di aria sporca.",
+      "Camminare, pedalare e arieggiare bene migliorano l'aria intorno a te."
+     ],
+     "q": "Com'è l'aria dove vivi: fresca, trafficata, fumosa, salmastra?",
+     "c": "Apri la finestra per qualche minuto oggi, o fai una breve passeggiata, e annusa l'aria."
+    },
+    "pt": {
+     "t": "Noções básicas de ar limpo",
+     "g": "Aprender o que mantém o ar fresco e como os hábitos simples ajudam a protegê-lo.",
+     "p": [
+      "Plantas, árvores e vento refrescam o ar e levam a poluição embora.",
+      "O fumo do trânsito, de fogueiras e de aquecimentos são fontes comuns de ar sujo.",
+      "Andar a pé, de bicicleta e ventilar bem melhoram o ar à tua volta."
+     ],
+     "q": "Como é o ar onde vives: fresco, movimentado, com fumo, salgado?",
+     "c": "Abre a janela uns minutos hoje, ou dá um passeio curto, e repara no cheiro do ar."
+    },
+    "pt_BR": {
+     "t": "Noções básicas de ar limpo",
+     "g": "Aprender o que mantém o ar fresco e como hábitos simples ajudam a protegê-lo.",
+     "p": [
+      "Plantas, árvores e vento refrescam o ar e levam a poluição embora.",
+      "A fumaça do trânsito, de queimadas e de aquecedores são fontes comuns de ar sujo.",
+      "Andar a pé, de bicicleta e ventilar bem melhoram o ar ao seu redor."
+     ],
+     "q": "Como é o ar onde você mora: fresco, movimentado, com fumaça, salgado?",
+     "c": "Abra a janela por alguns minutos hoje, ou dê uma caminhada curta, e perceba o cheiro do ar."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Where our energy comes from",
+     "g": "Draw a first map of the energy sources behind lights, heat and transport.",
+     "p": [
+      "Sunlight, wind, flowing water, fuels and the heat of the earth can all be turned into energy.",
+      "Electricity is a carrier: it can be made from many sources and sent to your plug.",
+      "Knowing where your energy comes from helps you use it with care."
+     ],
+     "q": "Do you know how your home gets its electricity or heat?",
+     "c": "Check one of your bills or ask your supplier's website: what is the main source of your power?"
+    },
+    "de": {
+     "t": "Woher unsere Energie kommt",
+     "g": "Eine erste Karte der Energiequellen hinter Licht, Wärme und Verkehr zeichnen.",
+     "p": [
+      "Sonnenlicht, Wind, fließendes Wasser, Brennstoffe und Erdwärme lassen sich in Energie umwandeln.",
+      "Strom ist ein Überträger: Er kann aus vielen Quellen entstehen und bis zur Steckdose kommen.",
+      "Wer die Herkunft seiner Energie kennt, geht achtsamer damit um."
+     ],
+     "q": "Weißt du, wie dein Zuhause an Strom oder Wärme kommt?",
+     "c": "Schau auf eine Rechnung oder die Website deines Anbieters: Was ist die Hauptquelle deines Stroms?"
+    },
+    "es": {
+     "t": "De dónde viene nuestra energía",
+     "g": "Dibujar un primer mapa de las fuentes de energía tras la luz, el calor y el transporte.",
+     "p": [
+      "La luz del sol, el viento, el agua en movimiento, los combustibles y el calor de la tierra pueden convertirse en energía.",
+      "La electricidad es un transportador: puede producirse de muchas fuentes y llegar a tu enchufe.",
+      "Saber de dónde viene tu energía ayuda a usarla con cuidado."
+     ],
+     "q": "¿Sabes cómo recibe tu casa la electricidad o el calor?",
+     "c": "Mira una factura o la web de tu proveedor: ¿cuál es la fuente principal de tu electricidad?"
+    },
+    "fr": {
+     "t": "D'où vient notre énergie",
+     "g": "Dessiner une première carte des sources d'énergie derrière lumière, chaleur et transports.",
+     "p": [
+      "Soleil, vent, eau qui coule, combustibles et chaleur de la terre peuvent devenir de l'énergie.",
+      "L'électricité est un vecteur : elle peut venir de nombreuses sources jusqu'à ta prise.",
+      "Savoir d'où vient son énergie aide à l'utiliser avec soin."
+     ],
+     "q": "Sais-tu comment ton logement reçoit son électricité ou sa chaleur ?",
+     "c": "Regarde une facture ou le site de ton fournisseur : quelle est la source principale de ton électricité ?"
+    },
+    "it": {
+     "t": "Da dove viene la nostra energia",
+     "g": "Tracciare una prima mappa delle fonti di energia dietro luce, calore e trasporti.",
+     "p": [
+      "Luce del sole, vento, acqua che scorre, combustibili e calore della terra possono diventare energia.",
+      "L'elettricità è un vettore: può nascere da molte fonti e arrivare fino alla tua presa.",
+      "Sapere da dove viene la tua energia aiuta a usarla con cura."
+     ],
+     "q": "Sai come la tua casa riceve elettricità o calore?",
+     "c": "Guarda una bolletta o il sito del tuo fornitore: qual è la fonte principale della tua elettricità?"
+    },
+    "pt": {
+     "t": "De onde vem a nossa energia",
+     "g": "Desenhar um primeiro mapa das fontes de energia por trás da luz, do calor e dos transportes.",
+     "p": [
+      "A luz do sol, o vento, a água corrente, os combustíveis e o calor da terra podem virar energia.",
+      "A eletricidade é um transportador: pode vir de muitas fontes até à tua tomada.",
+      "Saber de onde vem a tua energia ajuda a usá-la com cuidado."
+     ],
+     "q": "Sabes como a tua casa recebe eletricidade ou calor?",
+     "c": "Vê uma fatura ou o site do teu fornecedor: qual é a principal fonte da tua eletricidade?"
+    },
+    "pt_BR": {
+     "t": "De onde vem a nossa energia",
+     "g": "Desenhar um primeiro mapa das fontes de energia por trás da luz, do calor e do transporte.",
+     "p": [
+      "A luz do sol, o vento, a água corrente, os combustíveis e o calor da terra podem virar energia.",
+      "A eletricidade é um transportador: pode vir de muitas fontes até a sua tomada.",
+      "Saber de onde vem a sua energia ajuda a usá-la com cuidado."
+     ],
+     "q": "Você sabe como sua casa recebe eletricidade ou calor?",
+     "c": "Veja uma conta ou o site da sua fornecedora: qual é a principal fonte da sua eletricidade?"
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Renewable versus non-renewable",
+     "g": "Tell apart energy sources that refill naturally from those that take ages to form.",
+     "p": [
+      "Sun, wind, water and heat from the earth are renewable: nature keeps supplying them.",
+      "Coal, oil and gas formed over millions of years, so we use them far faster than they form.",
+      "A growing mix of renewables is making clean power more available in many places."
+     ],
+     "q": "Have you seen solar panels or wind turbines near you? Where?",
+     "c": "Look around today and spot one thing powered by a renewable source, like a solar lamp."
+    },
+    "de": {
+     "t": "Erneuerbar und nicht erneuerbar",
+     "g": "Energiequellen, die sich natürlich erneuern, von solchen mit Jahrmillionen Bildungszeit unterscheiden.",
+     "p": [
+      "Sonne, Wind, Wasser und Erdwärme sind erneuerbar: Die Natur liefert sie immer wieder.",
+      "Kohle, Öl und Gas entstanden über Jahrmillionen, wir verbrauchen sie viel schneller.",
+      "Ein wachsender Anteil Erneuerbarer macht saubere Energie vielerorts besser verfügbar."
+     ],
+     "q": "Hast du in deiner Nähe Solaranlagen oder Windräder gesehen? Wo?",
+     "c": "Such heute etwas, das mit erneuerbarer Energie läuft, zum Beispiel eine Solarlampe."
+    },
+    "es": {
+     "t": "Renovables frente a no renovables",
+     "g": "Distinguir las fuentes de energía que se renuevan solas de las que tardan eras en formarse.",
+     "p": [
+      "Sol, viento, agua y calor de la tierra son renovables: la naturaleza los sigue aportando.",
+      "Carbón, petróleo y gas se formaron durante millones de años, y los usamos mucho más rápido.",
+      "Una mezcla creciente de renovables hace la energía limpia más accesible en muchos lugares."
+     ],
+     "q": "¿Has visto paneles solares o aerogeneradores cerca de ti? ¿Dónde?",
+     "c": "Mira a tu alrededor hoy y encuentra algo que funcione con energía renovable, como una lámpara solar."
+    },
+    "fr": {
+     "t": "Renouvelable ou non renouvelable",
+     "g": "Distinguer les énergies qui se renouvellent naturellement de celles qui mettent des ères à se former.",
+     "p": [
+      "Soleil, vent, eau et chaleur de la terre sont renouvelables : la nature les fournit sans cesse.",
+      "Charbon, pétrole et gaz se sont formés en millions d'années, on les consomme bien plus vite.",
+      "Un mix renouvelable croissant rend l'énergie propre plus accessible dans de nombreux endroits."
+     ],
+     "q": "As-tu déjà vu des panneaux solaires ou des éoliennes près de chez toi ? Où ?",
+     "c": "Cherche aujourd'hui un objet alimenté par une énergie renouvelable, comme une lampe solaire."
+    },
+    "it": {
+     "t": "Rinnovabili e non rinnovabili",
+     "g": "Distinguere le fonti che si rinnovano da sole da quelle che impiegano ere a formarsi.",
+     "p": [
+      "Sole, vento, acqua e calore della terra sono rinnovabili: la natura continua a fornirli.",
+      "Carbone, petrolio e gas si sono formati in milioni di anni, e li usiamo molto più in fretta.",
+      "Un mix crescente di rinnovabili rende l'energia pulita più disponibile in molti luoghi."
+     ],
+     "q": "Hai visto pannelli solari o pale eoliche vicino a te? Dove?",
+     "c": "Guardati intorno oggi e individua qualcosa che funziona con energia rinnovabile, come una lampada solare."
+    },
+    "pt": {
+     "t": "Renováveis versus não renováveis",
+     "g": "Distinguir as fontes de energia que se renovam sozinhas das que levam eras a formar-se.",
+     "p": [
+      "Sol, vento, água e calor da terra são renováveis: a natureza continua a fornecê-los.",
+      "Carvão, petróleo e gás formaram-se em milhões de anos, e gastamo-los muito mais depressa.",
+      "Uma mistura crescente de renováveis torna a energia limpa mais acessível em muitos lugares."
+     ],
+     "q": "Já viste painéis solares ou turbinas eólicas perto de ti? Onde?",
+     "c": "Olha à tua volta hoje e descobre algo movido a energia renovável, como um candeeiro solar."
+    },
+    "pt_BR": {
+     "t": "Renováveis versus não renováveis",
+     "g": "Distinguir as fontes de energia que se renovam sozinhas das que levam eras para se formar.",
+     "p": [
+      "Sol, vento, água e calor da terra são renováveis: a natureza continua fornecendo.",
+      "Carvão, petróleo e gás se formaram em milhões de anos, e gastamos muito mais rápido.",
+      "Uma mistura crescente de renováveis torna a energia limpa mais acessível em muitos lugares."
+     ],
+     "q": "Você já viu painéis solares ou turbinas eólicas perto de você? Onde?",
+     "c": "Olhe ao redor hoje e descubra algo movido a energia renovável, como uma luminária solar."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What happens to our rubbish?",
+     "g": "Follow waste on its journey from the bin to recycling, compost or landfill.",
+     "p": [
+      "Collected waste is sorted: some goes to recycling plants, some to compost, the rest to landfill.",
+      "Clean, well-sorted materials can become new products, which saves resources.",
+      "The less we throw away, the shorter and lighter the journey becomes."
+     ],
+     "q": "Do you know what happens to your rubbish after the truck takes it away?",
+     "c": "Look into your bin before emptying it and spot one item that could have gone somewhere better."
+    },
+    "de": {
+     "t": "Was passiert mit unserem Müll?",
+     "g": "Den Weg des Abfalls von der Tonne zu Recycling, Kompost oder Deponie verfolgen.",
+     "p": [
+      "Gesammelter Abfall wird sortiert: Manches geht ins Recycling, manches in den Kompost, der Rest auf die Deponie.",
+      "Saubere, gut getrennte Stoffe werden zu neuen Produkten und sparen Ressourcen.",
+      "Je weniger wir wegwerfen, desto kürzer und leichter wird die Reise."
+     ],
+     "q": "Weißt du, was nach der Müllabfuhr mit deinem Abfall geschieht?",
+     "c": "Wirf vor dem Leeren einen Blick in deine Tonne und finde ein Teil, das besser hätte landen können."
+    },
+    "es": {
+     "t": "¿Qué pasa con nuestra basura?",
+     "g": "Seguir el viaje de los residuos desde el cubo hasta el reciclaje, el compost o el vertedero.",
+     "p": [
+      "Los residuos recogidos se clasifican: unos van a reciclaje, otros a compost y el resto al vertedero.",
+      "Los materiales limpios y bien separados pueden ser productos nuevos y ahorran recursos.",
+      "Cuanto menos tiramos, más corto y ligero es el viaje."
+     ],
+     "q": "¿Sabes qué pasa con tu basura cuando se la lleva el camión?",
+     "c": "Mira en tu cubo antes de vaciarlo y encuentra algo que podría haber ido a un lugar mejor."
+    },
+    "fr": {
+     "t": "Que deviennent nos déchets ?",
+     "g": "Suivre le voyage des déchets de la poubelle au recyclage, au compost ou à la décharge.",
+     "p": [
+      "Les déchets collectés sont triés : certains vont au recyclage, d'autres au compost, le reste en décharge.",
+      "Des matériaux propres et bien triés deviennent de nouveaux produits et économisent des ressources.",
+      "Moins on jette, plus le voyage est court et léger."
+     ],
+     "q": "Sais-tu ce que deviennent tes déchets après le passage du camion ?",
+     "c": "Regarde dans ta poubelle avant de la vider et repère un objet qui aurait pu aller ailleurs."
+    },
+    "it": {
+     "t": "Che fine fanno i nostri rifiuti?",
+     "g": "Seguire il viaggio dei rifiuti dal bidone al riciclo, al compost o alla discarica.",
+     "p": [
+      "I rifiuti raccolti vengono selezionati: alcuni vanno al riciclo, altri al compost, il resto in discarica.",
+      "Materiali puliti e ben separati diventano nuovi prodotti e fanno risparmiare risorse.",
+      "Meno buttiamo, più il viaggio è breve e leggero."
+     ],
+     "q": "Sai cosa succede ai tuoi rifiuti dopo il passaggio del camion?",
+     "c": "Guarda nel tuo bidone prima di svuotarlo e individua un oggetto che poteva avere una destinazione migliore."
+    },
+    "pt": {
+     "t": "O que acontece ao nosso lixo?",
+     "g": "Seguir a viagem dos resíduos do caixote ao reciclador, à compostagem ou ao aterro.",
+     "p": [
+      "Os resíduos recolhidos são separados: uns vão para reciclagem, outros para compostagem, o resto para aterro.",
+      "Materiais limpos e bem separados tornam-se produtos novos e poupam recursos.",
+      "Quanto menos deitamos fora, mais curta e leve é a viagem."
+     ],
+     "q": "Sabes o que acontece ao teu lixo depois de o camião o levar?",
+     "c": "Olha para o teu caixote antes de o esvaziar e descobre algo que podia ter tido melhor destino."
+    },
+    "pt_BR": {
+     "t": "O que acontece com o nosso lixo?",
+     "g": "Acompanhar a viagem dos resíduos da lixeira até a reciclagem, a compostagem ou o aterro.",
+     "p": [
+      "Os resíduos coletados são separados: uns vão para reciclagem, outros para compostagem, o resto para o aterro.",
+      "Materiais limpos e bem separados viram produtos novos e poupam recursos.",
+      "Quanto menos jogamos fora, mais curta e leve é a viagem."
+     ],
+     "q": "Você sabe o que acontece com o seu lixo depois que o caminhão leva?",
+     "c": "Olhe a sua lixeira antes de esvaziar e descubra algo que poderia ter ido para um destino melhor."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "philosophy",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mencius and human goodness",
+     "g": "Meet Mencius, who believed people are born with small sprouts of goodness to nurture.",
+     "p": [
+      "Mencius lived in China in the 4th century BCE and followed the teachings of Confucius.",
+      "He saw four sprouts in us: compassion, shame at wrongdoing, courtesy and a sense of right and wrong.",
+      "Like seedlings, these sprouts need care: good surroundings, learning and practice help them grow."
+     ],
+     "q": "When did you last feel a quick wish to help someone before you even thought about it?",
+     "c": "Notice one small kind impulse today and follow it with a helpful action."
+    },
+    "de": {
+     "t": "Menzius und die Güte des Menschen",
+     "g": "Lerne Menzius kennen, der glaubte, dass jeder Mensch kleine Keime des Guten in sich trägt.",
+     "p": [
+      "Menzius lebte im 4. Jahrhundert v. Chr. in China und folgte den Lehren des Konfuzius.",
+      "Er sah vier Keime in uns: Mitgefühl, Scham vor Unrecht, Höflichkeit und ein Sinn für Recht und Unrecht.",
+      "Wie Setzlinge brauchen sie Pflege: gutes Umfeld, Lernen und Übung lassen sie wachsen."
+     ],
+     "q": "Wann hattest du zuletzt den spontanen Wunsch zu helfen, noch bevor du nachgedacht hast?",
+     "c": "Achte heute auf einen kleinen freundlichen Impuls und lass eine hilfreiche Tat folgen."
+    },
+    "es": {
+     "t": "Mencio y la bondad humana",
+     "g": "Conoce a Mencio, quien creía que nacemos con pequeños brotes de bondad que hay que cuidar.",
+     "p": [
+      "Mencio vivió en China en el siglo IV a. C. y siguió las enseñanzas de Confucio.",
+      "Veía en nosotros cuatro brotes: compasión, vergüenza ante lo injusto, cortesía y sentido de lo justo.",
+      "Como plantitas, necesitan cuidado: buen entorno, aprendizaje y práctica los hacen crecer."
+     ],
+     "q": "¿Cuándo sentiste por última vez un impulso de ayudar a alguien antes de pensarlo?",
+     "c": "Fíjate hoy en un pequeño impulso amable y síguelo con una acción que ayude."
+    },
+    "fr": {
+     "t": "Mencius et la bonté humaine",
+     "g": "Découvre Mencius, qui pensait que nous naissons avec de petites pousses de bonté à soigner.",
+     "p": [
+      "Mencius a vécu en Chine au IVe siècle av. J.-C. et suivait l'enseignement de Confucius.",
+      "Il voyait en nous quatre pousses : compassion, honte du mal, politesse et sens du juste.",
+      "Comme de jeunes plants, elles demandent des soins : bon entourage, étude et pratique."
+     ],
+     "q": "Quand as-tu ressenti pour la dernière fois l'envie d'aider quelqu'un avant même d'y penser ?",
+     "c": "Repère aujourd'hui un petit élan de gentillesse et prolonge-le par un geste utile."
+    },
+    "it": {
+     "t": "Mencio e la bontà umana",
+     "g": "Conosci Mencio, convinto che nasciamo con piccoli germogli di bontà da coltivare.",
+     "p": [
+      "Mencio visse in Cina nel IV secolo a.C. e seguì gli insegnamenti di Confucio.",
+      "Vedeva in noi quattro germogli: compassione, vergogna del male, cortesia e senso del giusto.",
+      "Come le piantine, hanno bisogno di cure: buon ambiente, studio ed esercizio li fanno crescere."
+     ],
+     "q": "Quando hai sentito l'ultima volta la voglia di aiutare qualcuno prima ancora di pensarci?",
+     "c": "Nota oggi un piccolo impulso gentile e seguilo con un'azione utile."
+    },
+    "pt": {
+     "t": "Mêncio e a bondade humana",
+     "g": "Conhece Mêncio, que acreditava que nascemos com pequenos rebentos de bondade para cuidar.",
+     "p": [
+      "Mêncio viveu na China no século IV a.C. e seguiu os ensinamentos de Confúcio.",
+      "Via em nós quatro rebentos: compaixão, vergonha do mal, cortesia e sentido do certo e errado.",
+      "Como plantinhas, precisam de cuidado: bom ambiente, estudo e prática fazem-nos crescer."
+     ],
+     "q": "Quando foi a última vez que sentiste vontade de ajudar alguém antes de pensares?",
+     "c": "Repara hoje num pequeno impulso simpático e segue-o com uma ação que ajude."
+    },
+    "pt_BR": {
+     "t": "Mêncio e a bondade humana",
+     "g": "Conheça Mêncio, que acreditava que nascemos com pequenos brotos de bondade para cultivar.",
+     "p": [
+      "Mêncio viveu na China no século IV a.C. e seguiu os ensinamentos de Confúcio.",
+      "Ele via em nós quatro brotos: compaixão, vergonha do mal, cortesia e senso de certo e errado.",
+      "Como mudinhas, precisam de cuidado: bom ambiente, estudo e prática ajudam a crescer."
+     ],
+     "q": "Quando foi a última vez que você teve vontade de ajudar alguém antes de pensar?",
+     "c": "Perceba hoje um pequeno impulso gentil e siga-o com uma ação que ajude."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Xunzi's different view",
+     "g": "Compare Xunzi with Mencius: for him, goodness grows from effort, learning and habits.",
+     "p": [
+      "Xunzi was a Confucian thinker of the 3rd century BCE who thought we are born with raw desires.",
+      "He taught that rituals, teachers and study shape those desires into good character.",
+      "Mencius and Xunzi disagree on the start, yet both say education and practice truly matter."
+     ],
+     "q": "Which seems truer to you: kindness comes naturally, or we learn it step by step?",
+     "c": "Pick one good habit and do it every day this week, like a small training exercise."
+    },
+    "de": {
+     "t": "Xunzis andere Sicht",
+     "g": "Vergleiche Xunzi mit Menzius: Für ihn wächst Güte aus Mühe, Lernen und Gewohnheiten.",
+     "p": [
+      "Xunzi war ein konfuzianischer Denker des 3. Jahrhunderts v. Chr. und sah uns mit rohen Wünschen geboren.",
+      "Er lehrte, dass Rituale, Lehrer und Studium diese Wünsche zu gutem Charakter formen.",
+      "Menzius und Xunzi streiten über den Anfang, doch beide sagen: Bildung und Übung zählen."
+     ],
+     "q": "Was scheint dir wahrer: Freundlichkeit liegt in uns, oder wir lernen sie Schritt für Schritt?",
+     "c": "Wähle eine gute Gewohnheit und übe sie diese Woche täglich wie ein kleines Training."
+    },
+    "es": {
+     "t": "La otra mirada de Xunzi",
+     "g": "Compara a Xunzi con Mencio: para él, la bondad nace del esfuerzo, el estudio y los hábitos.",
+     "p": [
+      "Xunzi fue un pensador confuciano del siglo III a. C. que creía que nacemos con deseos en bruto.",
+      "Enseñaba que los ritos, los maestros y el estudio moldean esos deseos hasta formar buen carácter.",
+      "Mencio y Xunzi discrepan en el origen, pero ambos dicen que educar y practicar importa."
+     ],
+     "q": "¿Qué te parece más cierto: la bondad es natural o se aprende paso a paso?",
+     "c": "Elige un buen hábito y practícalo cada día esta semana, como un pequeño entrenamiento."
+    },
+    "fr": {
+     "t": "Le point de vue différent de Xunzi",
+     "g": "Compare Xunzi et Mencius : pour lui, la bonté naît de l'effort, de l'étude et des habitudes.",
+     "p": [
+      "Xunzi, penseur confucéen du IIIe siècle av. J.-C., pensait que nous naissons avec des désirs bruts.",
+      "Il enseignait que rites, maîtres et études façonnent ces désirs en bon caractère.",
+      "Mencius et Xunzi divergent sur le départ, mais tous deux jugent l'éducation essentielle."
+     ],
+     "q": "Qu'est-ce qui te semble plus vrai : la gentillesse est naturelle, ou elle s'apprend pas à pas ?",
+     "c": "Choisis une bonne habitude et pratique-la chaque jour cette semaine, comme un petit entraînement."
+    },
+    "it": {
+     "t": "Un'altra visione: Xunzi",
+     "g": "Confronta Xunzi con Mencio: per lui la bontà nasce da impegno, studio e abitudini.",
+     "p": [
+      "Xunzi fu un pensatore confuciano del III secolo a.C. e pensava che nasciamo con desideri grezzi.",
+      "Insegnava che riti, maestri e studio plasmano quei desideri in un buon carattere.",
+      "Mencio e Xunzi divergono sull'inizio, ma entrambi dicono che educazione ed esercizio contano."
+     ],
+     "q": "Cosa ti sembra più vero: la gentilezza è naturale o si impara passo dopo passo?",
+     "c": "Scegli una buona abitudine e praticala ogni giorno questa settimana, come un piccolo allenamento."
+    },
+    "pt": {
+     "t": "A visão diferente de Xunzi",
+     "g": "Compara Xunzi com Mêncio: para ele, a bondade nasce do esforço, do estudo e dos hábitos.",
+     "p": [
+      "Xunzi foi um pensador confucionista do século III a.C. que achava que nascemos com desejos em bruto.",
+      "Ensinava que rituais, mestres e estudo moldam esses desejos num bom carácter.",
+      "Mêncio e Xunzi discordam quanto ao início, mas ambos dizem que educar e praticar importa."
+     ],
+     "q": "O que te parece mais verdadeiro: a bondade é natural ou aprende-se passo a passo?",
+     "c": "Escolhe um bom hábito e pratica-o todos os dias esta semana, como um pequeno treino."
+    },
+    "pt_BR": {
+     "t": "A visão diferente de Xunzi",
+     "g": "Compare Xunzi com Mêncio: para ele, a bondade nasce do esforço, do estudo e dos hábitos.",
+     "p": [
+      "Xunzi foi um pensador confucionista do século III a.C. que achava que nascemos com desejos brutos.",
+      "Ele ensinava que rituais, mestres e estudo moldam esses desejos em bom caráter.",
+      "Mêncio e Xunzi discordam sobre o começo, mas ambos dizem que educar e praticar importa."
+     ],
+     "q": "O que parece mais verdadeiro: a bondade é natural ou se aprende passo a passo?",
+     "c": "Escolha um bom hábito e pratique todo dia nesta semana, como um pequeno treino."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Zhuangzi's butterfly dream",
+     "g": "Explore Zhuangzi's playful tale of a man who dreamed he was a butterfly.",
+     "p": [
+      "Zhuangzi, a Chinese thinker of the 4th century BCE, told of dreaming he was a fluttering butterfly.",
+      "On waking, he wondered: am I a man who dreamed of a butterfly, or a butterfly dreaming of a man?",
+      "The story invites us to hold our certainties lightly and to enjoy change and wonder."
+     ],
+     "q": "Have you ever woken from a vivid dream and felt unsure for a moment what was real?",
+     "c": "Tell a friend one vivid dream and ask what they think it might say about you."
+    },
+    "de": {
+     "t": "Zhuangzis Schmetterlingstraum",
+     "g": "Entdecke Zhuangzis verspielte Geschichte vom Mann, der träumte, ein Schmetterling zu sein.",
+     "p": [
+      "Zhuangzi, ein chinesischer Denker des 4. Jahrhunderts v. Chr., erzählte, er habe geträumt, ein Schmetterling zu sein.",
+      "Beim Aufwachen fragte er sich: Bin ich ein Mensch, der träumte, oder ein Schmetterling, der träumt?",
+      "Die Geschichte lädt ein, Gewissheiten locker zu halten und Wandel und Staunen zu genießen."
+     ],
+     "q": "Bist du schon einmal aus einem lebhaften Traum erwacht und warst kurz unsicher, was echt war?",
+     "c": "Erzähl einer Freundin einen lebhaften Traum und frag, was er über dich verraten könnte."
+    },
+    "es": {
+     "t": "El sueño de la mariposa de Zhuangzi",
+     "g": "Explora el cuento juguetón de Zhuangzi sobre un hombre que soñó que era una mariposa.",
+     "p": [
+      "Zhuangzi, pensador chino del siglo IV a. C., contó que soñó que era una mariposa revoloteando.",
+      "Al despertar se preguntó: ¿soy un hombre que soñó con una mariposa o una mariposa que sueña con un hombre?",
+      "El relato nos invita a sostener las certezas con suavidad y a disfrutar del cambio y el asombro."
+     ],
+     "q": "¿Alguna vez despertaste de un sueño tan vivo que dudaste un instante de qué era real?",
+     "c": "Cuéntale a un amigo un sueño vivo y pregúntale qué crees que podría decir de ti."
+    },
+    "fr": {
+     "t": "Le rêve du papillon de Zhuangzi",
+     "g": "Explore le conte joueur de Zhuangzi : un homme rêve qu'il est un papillon.",
+     "p": [
+      "Zhuangzi, penseur chinois du IVe siècle av. J.-C., raconte qu'il rêva d'être un papillon voletant.",
+      "Au réveil, il se demanda : suis-je un homme qui rêvait d'un papillon, ou un papillon qui rêve d'un homme ?",
+      "Le récit invite à tenir ses certitudes avec légèreté et à goûter le changement et l'émerveillement."
+     ],
+     "q": "T'est-il déjà arrivé de te réveiller d'un rêve si vif que tu doutais un instant de ce qui était réel ?",
+     "c": "Raconte un rêve marquant à un ami et demande-lui ce qu'il pourrait dire de toi."
+    },
+    "it": {
+     "t": "Il sogno della farfalla di Zhuangzi",
+     "g": "Esplora il racconto giocoso di Zhuangzi: un uomo sogna di essere una farfalla.",
+     "p": [
+      "Zhuangzi, pensatore cinese del IV secolo a.C., raccontò di aver sognato di essere una farfalla svolazzante.",
+      "Al risveglio si chiese: sono un uomo che sognava una farfalla o una farfalla che sogna un uomo?",
+      "Il racconto invita a tenere le certezze con leggerezza e a godere del cambiamento e della meraviglia."
+     ],
+     "q": "Ti è mai capitato di svegliarti da un sogno così vivido da dubitare un attimo di cosa fosse reale?",
+     "c": "Racconta a un amico un sogno vivido e chiedigli cosa potrebbe dire di te."
+    },
+    "pt": {
+     "t": "O sonho da borboleta de Zhuangzi",
+     "g": "Explora o conto divertido de Zhuangzi sobre um homem que sonhou ser uma borboleta.",
+     "p": [
+      "Zhuangzi, pensador chinês do século IV a.C., contou que sonhou ser uma borboleta a esvoaçar.",
+      "Ao acordar, perguntou-se: sou um homem que sonhou com uma borboleta ou uma borboleta que sonha com um homem?",
+      "A história convida-nos a segurar as certezas com leveza e a gostar da mudança e do espanto."
+     ],
+     "q": "Alguma vez acordaste de um sonho tão vívido que duvidaste por um instante do que era real?",
+     "c": "Conta a um amigo um sonho vívido e pergunta o que ele acha que diz sobre ti."
+    },
+    "pt_BR": {
+     "t": "O sonho da borboleta de Zhuangzi",
+     "g": "Explore o conto divertido de Zhuangzi sobre um homem que sonhou ser uma borboleta.",
+     "p": [
+      "Zhuangzi, pensador chinês do século IV a.C., contou que sonhou ser uma borboleta esvoaçando.",
+      "Ao acordar, ele se perguntou: sou um homem que sonhou com uma borboleta ou uma borboleta sonhando com um homem?",
+      "A história nos convida a segurar as certezas com leveza e a curtir a mudança e o espanto."
+     ],
+     "q": "Você já acordou de um sonho tão vívido que duvidou por um instante do que era real?",
+     "c": "Conte a um amigo um sonho vívido e pergunte o que ele acha que isso diz sobre você."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Zhuangzi and the useless tree",
+     "g": "Learn why a giant crooked tree taught Zhuangzi that useless things can hold great value.",
+     "p": [
+      "In Zhuangzi's tale, carpenters ignore a huge gnarled tree because its wood is no good for planks.",
+      "Because it is useless to them, the tree is left alone and grows old, giving shade to all.",
+      "The story asks us not to judge people or things only by how practical they seem."
+     ],
+     "q": "What is something in your life that is not useful, yet you would never give it up?",
+     "c": "Spend ten minutes today on something purely for joy, with no goal or result."
+    },
+    "de": {
+     "t": "Zhuangzi und der nutzlose Baum",
+     "g": "Erfahre, warum ein riesiger krummer Baum Zhuangzi lehrte, dass Nutzloses wertvoll sein kann.",
+     "p": [
+      "In Zhuangzis Erzählung beachten Zimmerleute einen mächtigen knorrigen Baum nicht, denn sein Holz taugt nicht für Bretter.",
+      "Weil er für sie nutzlos ist, bleibt er unberührt, wird alt und spendet allen Schatten.",
+      "Die Geschichte bittet uns, Menschen und Dinge nicht nur nach ihrem Nutzen zu beurteilen."
+     ],
+     "q": "Was in deinem Leben ist nicht nützlich, und du würdest es trotzdem nie hergeben?",
+     "c": "Verbring heute zehn Minuten nur zur Freude mit etwas, ohne Ziel und Ergebnis."
+    },
+    "es": {
+     "t": "Zhuangzi y el árbol inútil",
+     "g": "Descubre por qué un enorme árbol torcido enseñó a Zhuangzi que lo inútil puede tener gran valor.",
+     "p": [
+      "En el cuento de Zhuangzi, los carpinteros ignoran un árbol enorme y nudoso porque su madera no sirve para tablas.",
+      "Como para ellos es inútil, nadie lo toca; envejece y da sombra a todos.",
+      "El relato nos pide no juzgar a personas o cosas solo por lo prácticas que parecen."
+     ],
+     "q": "¿Qué hay en tu vida que no sea útil y, aun así, nunca dejarías?",
+     "c": "Dedica hoy diez minutos a algo solo por placer, sin meta ni resultado."
+    },
+    "fr": {
+     "t": "Zhuangzi et l'arbre inutile",
+     "g": "Découvre pourquoi un immense arbre tordu a appris à Zhuangzi que l'inutile peut avoir de la valeur.",
+     "p": [
+      "Dans le conte de Zhuangzi, des charpentiers ignorent un arbre noueux et géant dont le bois est bon à rien.",
+      "Comme il leur est inutile, on le laisse en paix : il vieillit et donne de l'ombre à tous.",
+      "Le récit nous demande de ne pas juger gens et choses selon leur seule utilité apparente."
+     ],
+     "q": "Qu'y a-t-il dans ta vie qui ne sert à rien et que tu ne lâcherais pourtant jamais ?",
+     "c": "Offre-toi dix minutes aujourd'hui pour quelque chose fait par pur plaisir, sans but."
+    },
+    "it": {
+     "t": "Zhuangzi e l'albero inutile",
+     "g": "Scopri perché un enorme albero storto insegnò a Zhuangzi che l'inutile può valere molto.",
+     "p": [
+      "Nel racconto di Zhuangzi, i falegnami ignorano un albero gigante e nodoso perché il suo legno non serve per le assi.",
+      "Poiché per loro è inutile, nessuno lo tocca: invecchia e dà ombra a tutti.",
+      "La storia ci chiede di non giudicare persone e cose solo da quanto sembrano pratiche."
+     ],
+     "q": "C'è qualcosa nella tua vita che non serve a niente, ma a cui non rinunceresti mai?",
+     "c": "Dedica oggi dieci minuti a qualcosa fatto solo per gioia, senza scopo né risultato."
+    },
+    "pt": {
+     "t": "Zhuangzi e a árvore inútil",
+     "g": "Descobre porque é que uma árvore enorme e torta ensinou a Zhuangzi que o inútil pode ter grande valor.",
+     "p": [
+      "No conto de Zhuangzi, os carpinteiros ignoram uma árvore enorme e nodosa porque a madeira não serve para tábuas.",
+      "Como lhes é inútil, ninguém lhe toca: envelhece e dá sombra a todos.",
+      "A história pede-nos que não julguemos pessoas ou coisas só pelo quanto parecem práticas."
+     ],
+     "q": "O que há na tua vida que não é útil, mas a que nunca renunciarias?",
+     "c": "Dedica hoje dez minutos a algo só por prazer, sem objetivo nem resultado."
+    },
+    "pt_BR": {
+     "t": "Zhuangzi e a árvore inútil",
+     "g": "Descubra por que uma árvore enorme e torta ensinou a Zhuangzi que o inútil pode ter grande valor.",
+     "p": [
+      "No conto de Zhuangzi, os carpinteiros ignoram uma árvore enorme e nodosa porque a madeira não serve para tábuas.",
+      "Como ela é inútil para eles, ninguém mexe: ela envelhece e dá sombra a todos.",
+      "A história pede que não julguemos pessoas ou coisas só pelo quanto parecem práticas."
+     ],
+     "q": "O que existe na sua vida que não é útil, mas que você nunca deixaria de lado?",
+     "c": "Dedique hoje dez minutos a algo só por prazer, sem meta nem resultado."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Classical Indian thought",
+     "g": "Take a quick tour of the main schools of classical Indian philosophy.",
+     "p": [
+      "India has a very long tradition of asking how we know things and what reality is like.",
+      "Some schools, like Nyaya and Vaisheshika, study logic and the basic ingredients of the world.",
+      "Others, like Samkhya and Yoga, explore mind and experience; many schools debated one another openly."
+     ],
+     "q": "Which topic would you explore first: logic, the mind, or how the world is made?",
+     "c": "Learn one new name of an Indian school of thought and say what it studies."
+    },
+    "de": {
+     "t": "Klassisches indisches Denken",
+     "g": "Mach eine kurze Reise durch die wichtigsten Schulen der klassischen indischen Philosophie.",
+     "p": [
+      "Indien hat eine sehr lange Tradition der Fragen, wie wir etwas wissen und wie die Wirklichkeit beschaffen ist.",
+      "Schulen wie Nyaya und Vaisheshika erforschen Logik und die Grundbausteine der Welt.",
+      "Andere, wie Samkhya und Yoga, erkunden Geist und Erfahrung; viele Schulen stritten offen miteinander."
+     ],
+     "q": "Was würdest du zuerst erkunden: Logik, den Geist oder den Aufbau der Welt?",
+     "c": "Lerne den Namen einer indischen Denkschule und sag, was sie untersucht."
+    },
+    "es": {
+     "t": "Pensamiento clásico indio",
+     "g": "Haz un recorrido rápido por las principales escuelas de la filosofía india clásica.",
+     "p": [
+      "La India tiene una tradición muy antigua de preguntarse cómo conocemos y cómo es la realidad.",
+      "Escuelas como Nyaya y Vaisheshika estudian la lógica y los ingredientes básicos del mundo.",
+      "Otras, como Samkhya y Yoga, exploran la mente y la experiencia; muchas debatían abiertamente entre sí."
+     ],
+     "q": "¿Qué tema explorarías primero: la lógica, la mente o cómo está hecho el mundo?",
+     "c": "Aprende el nombre de una escuela india de pensamiento y di qué estudia."
+    },
+    "fr": {
+     "t": "La pensée indienne classique",
+     "g": "Fais un tour rapide des grandes écoles de la philosophie indienne classique.",
+     "p": [
+      "L'Inde a une très longue tradition de questions sur la connaissance et la nature de la réalité.",
+      "Des écoles comme Nyaya et Vaisheshika étudient la logique et les éléments de base du monde.",
+      "D'autres, comme Samkhya et Yoga, explorent l'esprit et l'expérience ; beaucoup débattaient ouvertement."
+     ],
+     "q": "Que voudrais-tu explorer d'abord : la logique, l'esprit ou la façon dont le monde est fait ?",
+     "c": "Apprends le nom d'une école de pensée indienne et dis ce qu'elle étudie."
+    },
+    "it": {
+     "t": "Il pensiero indiano classico",
+     "g": "Fai un rapido giro delle principali scuole della filosofia indiana classica.",
+     "p": [
+      "L'India ha una tradizione antichissima di domande su come conosciamo e su com'è fatta la realtà.",
+      "Scuole come Nyaya e Vaisheshika studiano la logica e gli ingredienti di base del mondo.",
+      "Altre, come Samkhya e Yoga, esplorano mente ed esperienza; molte scuole dibattevano apertamente."
+     ],
+     "q": "Quale tema esploreresti per primo: la logica, la mente o com'è fatto il mondo?",
+     "c": "Impara il nome di una scuola di pensiero indiana e di' cosa studia."
+    },
+    "pt": {
+     "t": "O pensamento indiano clássico",
+     "g": "Faz uma visita rápida às principais escolas da filosofia indiana clássica.",
+     "p": [
+      "A Índia tem uma tradição muito antiga de perguntar como conhecemos e como é a realidade.",
+      "Escolas como Nyaya e Vaisheshika estudam a lógica e os ingredientes básicos do mundo.",
+      "Outras, como Samkhya e Yoga, exploram a mente e a experiência; muitas debatiam abertamente entre si."
+     ],
+     "q": "Que tema explorarias primeiro: a lógica, a mente ou como o mundo é feito?",
+     "c": "Aprende o nome de uma escola de pensamento indiana e diz o que ela estuda."
+    },
+    "pt_BR": {
+     "t": "O pensamento indiano clássico",
+     "g": "Faça um passeio rápido pelas principais escolas da filosofia indiana clássica.",
+     "p": [
+      "A Índia tem uma tradição muito antiga de perguntar como conhecemos e como é a realidade.",
+      "Escolas como Nyaya e Vaisheshika estudam a lógica e os ingredientes básicos do mundo.",
+      "Outras, como Samkhya e Yoga, exploram a mente e a experiência; muitas debatiam abertamente entre si."
+     ],
+     "q": "Que tema você exploraria primeiro: a lógica, a mente ou como o mundo é feito?",
+     "c": "Aprenda o nome de uma escola de pensamento indiana e diga o que ela estuda."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Nyaya logic",
+     "g": "Meet Nyaya, the Indian school that studied carefully how we reach reliable knowledge.",
+     "p": [
+      "Nyaya means rules or method; its classic text, the Nyaya Sutras, is attributed to Gautama.",
+      "It asks how to tell good reasoning from weak reasoning and how to debate honestly.",
+      "A Nyaya argument has steps: a claim, a reason, an example, an application and a conclusion."
+     ],
+     "q": "Think of a claim you made recently: what reason and example did you have for it?",
+     "c": "Take one opinion of yours and give it a claim, a reason and an example."
+    },
+    "de": {
+     "t": "Nyaya-Logik",
+     "g": "Lerne Nyaya kennen, die indische Schule, die genau untersuchte, wie wir zu verlässlichem Wissen kommen.",
+     "p": [
+      "Nyaya bedeutet Regel oder Methode; ihr Grundtext, die Nyaya-Sutras, wird Gautama zugeschrieben.",
+      "Sie fragt, wie man gutes von schwachem Schlussfolgern unterscheidet und ehrlich debattiert.",
+      "Ein Nyaya-Argument hat Schritte: Behauptung, Grund, Beispiel, Anwendung und Schluss."
+     ],
+     "q": "Denk an eine Behauptung von dir: Welchen Grund und welches Beispiel hattest du dafür?",
+     "c": "Nimm eine Meinung von dir und gib ihr eine Behauptung, einen Grund und ein Beispiel."
+    },
+    "es": {
+     "t": "La lógica Nyaya",
+     "g": "Conoce Nyaya, la escuela india que estudió con cuidado cómo llegamos a un conocimiento fiable.",
+     "p": [
+      "Nyaya significa regla o método; su texto clásico, los Nyaya Sutras, se atribuye a Gautama.",
+      "Se pregunta cómo distinguir un buen razonamiento de uno débil y cómo debatir con honestidad.",
+      "Un argumento Nyaya tiene pasos: afirmación, razón, ejemplo, aplicación y conclusión."
+     ],
+     "q": "Piensa en algo que afirmaste hace poco: ¿qué razón y qué ejemplo tenías?",
+     "c": "Toma una opinión tuya y dale una afirmación, una razón y un ejemplo."
+    },
+    "fr": {
+     "t": "La logique Nyaya",
+     "g": "Découvre Nyaya, l'école indienne qui étudia avec soin comment atteindre un savoir fiable.",
+     "p": [
+      "Nyaya signifie règle ou méthode ; son texte classique, les Nyaya Sutras, est attribué à Gautama.",
+      "Elle cherche à distinguer un bon raisonnement d'un faible et à débattre honnêtement.",
+      "Un argument Nyaya a des étapes : affirmation, raison, exemple, application et conclusion."
+     ],
+     "q": "Pense à une affirmation récente : quelle raison et quel exemple avais-tu ?",
+     "c": "Prends une de tes opinions et donne-lui une affirmation, une raison et un exemple."
+    },
+    "it": {
+     "t": "La logica Nyaya",
+     "g": "Conosci Nyaya, la scuola indiana che studiò con cura come si arriva a una conoscenza affidabile.",
+     "p": [
+      "Nyaya significa regola o metodo; il suo testo classico, i Nyaya Sutra, è attribuito a Gautama.",
+      "Si chiede come distinguere un buon ragionamento da uno debole e come discutere onestamente.",
+      "Un argomento Nyaya ha dei passi: tesi, ragione, esempio, applicazione e conclusione."
+     ],
+     "q": "Pensa a qualcosa che hai affermato di recente: quale ragione ed esempio avevi?",
+     "c": "Prendi una tua opinione e dalle una tesi, una ragione e un esempio."
+    },
+    "pt": {
+     "t": "A lógica Nyaya",
+     "g": "Conhece Nyaya, a escola indiana que estudou com cuidado como chegamos a um conhecimento fiável.",
+     "p": [
+      "Nyaya significa regra ou método; o texto clássico, os Nyaya Sutras, é atribuído a Gautama.",
+      "Pergunta como distinguir um bom raciocínio de um fraco e como debater com honestidade.",
+      "Um argumento Nyaya tem passos: afirmação, razão, exemplo, aplicação e conclusão."
+     ],
+     "q": "Pensa numa coisa que afirmaste há pouco: que razão e que exemplo tinhas?",
+     "c": "Pega numa opinião tua e dá-lhe uma afirmação, uma razão e um exemplo."
+    },
+    "pt_BR": {
+     "t": "A lógica Nyaya",
+     "g": "Conheça Nyaya, a escola indiana que estudou com cuidado como chegamos a um conhecimento confiável.",
+     "p": [
+      "Nyaya significa regra ou método; o texto clássico, os Nyaya Sutras, é atribuído a Gautama.",
+      "Ela pergunta como distinguir um bom raciocínio de um fraco e como debater com honestidade.",
+      "Um argumento Nyaya tem passos: afirmação, razão, exemplo, aplicação e conclusão."
+     ],
+     "q": "Pense em algo que você afirmou há pouco: que razão e que exemplo você tinha?",
+     "c": "Pegue uma opinião sua e dê a ela uma afirmação, uma razão e um exemplo."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ways of knowing",
+     "g": "Learn the four sources of knowledge that Nyaya thinkers recognized.",
+     "p": [
+      "Perception: we know many things by seeing, hearing and touching them directly.",
+      "Inference: seeing smoke on a hill, we reason that there is a fire, even if we cannot see it.",
+      "Comparison and testimony round it out: learning from a likeness, and trusting reliable speakers."
+     ],
+     "q": "Which source of knowledge do you rely on most in daily life, and when does it fail you?",
+     "c": "Spot today one thing you know by perception and one you know by inference."
+    },
+    "de": {
+     "t": "Wege des Wissens",
+     "g": "Lerne die vier Wissensquellen kennen, die die Nyaya-Denker anerkannten.",
+     "p": [
+      "Wahrnehmung: Vieles wissen wir, weil wir es direkt sehen, hören und berühren.",
+      "Schlussfolgerung: Sehen wir Rauch auf einem Hügel, schließen wir auf Feuer, auch wenn wir es nicht sehen.",
+      "Vergleich und Zeugnis ergänzen das: Lernen durch Ähnlichkeit und Vertrauen in verlässliche Sprecher."
+     ],
+     "q": "Auf welche Wissensquelle verlässt du dich im Alltag am meisten, und wann täuscht sie dich?",
+     "c": "Finde heute eine Sache, die du durch Wahrnehmung weißt, und eine durch Schlussfolgerung."
+    },
+    "es": {
+     "t": "Formas de conocer",
+     "g": "Aprende las cuatro fuentes de conocimiento que reconocían los pensadores de Nyaya.",
+     "p": [
+      "Percepción: sabemos muchas cosas porque las vemos, oímos o tocamos directamente.",
+      "Inferencia: si vemos humo en una colina, deducimos que hay fuego, aunque no lo veamos.",
+      "La comparación y el testimonio completan: aprender por semejanza y confiar en quien habla con fiabilidad."
+     ],
+     "q": "¿En qué fuente de conocimiento confías más a diario y cuándo te falla?",
+     "c": "Encuentra hoy algo que sabes por percepción y algo que sabes por inferencia."
+    },
+    "fr": {
+     "t": "Les voies de la connaissance",
+     "g": "Apprends les quatre sources de connaissance reconnues par les penseurs de Nyaya.",
+     "p": [
+      "La perception : nous savons beaucoup de choses en les voyant, les entendant ou les touchant.",
+      "L'inférence : voyant de la fumée sur une colline, on conclut qu'il y a un feu, même invisible.",
+      "La comparaison et le témoignage complètent : apprendre par ressemblance et croire un locuteur fiable."
+     ],
+     "q": "Sur quelle source de savoir t'appuies-tu le plus au quotidien, et quand te trompe-t-elle ?",
+     "c": "Repère aujourd'hui une chose que tu sais par perception et une autre par inférence."
+    },
+    "it": {
+     "t": "Modi di conoscere",
+     "g": "Impara le quattro fonti di conoscenza riconosciute dai pensatori Nyaya.",
+     "p": [
+      "Percezione: sappiamo molte cose perché le vediamo, sentiamo o tocchiamo direttamente.",
+      "Inferenza: vedendo fumo su una collina, deduciamo che c'è un fuoco, anche se non lo vediamo.",
+      "Confronto e testimonianza completano: imparare per somiglianza e fidarsi di chi parla con affidabilità."
+     ],
+     "q": "Su quale fonte di conoscenza conti di più ogni giorno, e quando ti inganna?",
+     "c": "Trova oggi una cosa che sai per percezione e una che sai per inferenza."
+    },
+    "pt": {
+     "t": "Formas de conhecer",
+     "g": "Aprende as quatro fontes de conhecimento que os pensadores de Nyaya reconheciam.",
+     "p": [
+      "Perceção: sabemos muitas coisas porque as vemos, ouvimos ou tocamos diretamente.",
+      "Inferência: ao ver fumo numa colina, deduzimos que há fogo, mesmo sem o ver.",
+      "A comparação e o testemunho completam: aprender por semelhança e confiar em quem fala com fiabilidade."
+     ],
+     "q": "Em que fonte de conhecimento confias mais no dia a dia e quando é que ela falha?",
+     "c": "Encontra hoje algo que sabes por perceção e algo que sabes por inferência."
+    },
+    "pt_BR": {
+     "t": "Formas de conhecer",
+     "g": "Aprenda as quatro fontes de conhecimento que os pensadores de Nyaya reconheciam.",
+     "p": [
+      "Percepção: sabemos muitas coisas porque as vemos, ouvimos ou tocamos diretamente.",
+      "Inferência: ao ver fumaça num morro, deduzimos que há fogo, mesmo sem vê-lo.",
+      "A comparação e o testemunho completam: aprender por semelhança e confiar em quem fala com credibilidade."
+     ],
+     "q": "Em qual fonte de conhecimento você mais confia no dia a dia e quando ela falha?",
+     "c": "Encontre hoje algo que você sabe por percepção e algo que sabe por inferência."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The blind men and the elephant",
+     "g": "Explore the famous parable about partial views and the whole truth.",
+     "p": [
+      "Several blind men touch an elephant: one feels a leg and says pillar, another the trunk and says snake.",
+      "Each is right about his part and wrong about the whole; the tale appears in Indian traditions.",
+      "It reminds us to listen to other viewpoints because each one may hold a piece of the truth."
+     ],
+     "q": "Think of a disagreement you had: could both sides have been seeing only a part?",
+     "c": "In your next disagreement, ask the other person what part of the picture they can see."
+    },
+    "de": {
+     "t": "Die Blinden und der Elefant",
+     "g": "Entdecke das berühmte Gleichnis über Teilsichten und die ganze Wahrheit.",
+     "p": [
+      "Mehrere Blinde betasten einen Elefanten: Einer fühlt ein Bein und sagt Säule, ein anderer den Rüssel und sagt Schlange.",
+      "Jeder hat mit seinem Teil recht und mit dem Ganzen unrecht; die Fabel findet sich in indischen Überlieferungen.",
+      "Sie erinnert uns, andere Sichtweisen anzuhören, denn jede kann ein Stück Wahrheit enthalten."
+     ],
+     "q": "Denk an einen Streit von dir: Könnten beide Seiten nur einen Teil gesehen haben?",
+     "c": "Frag im nächsten Meinungsstreit dein Gegenüber, welchen Teil des Bildes es sieht."
+    },
+    "es": {
+     "t": "Los ciegos y el elefante",
+     "g": "Explora la famosa parábola sobre las visiones parciales y la verdad completa.",
+     "p": [
+      "Varios ciegos tocan un elefante: uno palpa una pata y dice columna, otro la trompa y dice serpiente.",
+      "Cada uno acierta en su parte y se equivoca en el todo; el relato aparece en tradiciones de la India.",
+      "Nos recuerda escuchar otros puntos de vista, porque cada uno puede guardar un trozo de verdad."
+     ],
+     "q": "Piensa en una discusión que tuviste: ¿ambos veían solo una parte?",
+     "c": "En tu próximo desacuerdo, pregunta qué parte del cuadro puede ver la otra persona."
+    },
+    "fr": {
+     "t": "Les aveugles et l'éléphant",
+     "g": "Explore la célèbre parabole sur les points de vue partiels et la vérité entière.",
+     "p": [
+      "Des aveugles touchent un éléphant : l'un sent une patte et dit pilier, l'autre la trompe et dit serpent.",
+      "Chacun a raison pour sa partie et tort pour le tout ; le récit vient de traditions indiennes.",
+      "Il nous rappelle d'écouter d'autres points de vue, car chacun peut détenir un morceau de vérité."
+     ],
+     "q": "Pense à un désaccord récent : les deux camps ne voyaient-ils qu'une partie ?",
+     "c": "Lors de ton prochain désaccord, demande quelle partie du tableau l'autre personne voit."
+    },
+    "it": {
+     "t": "I ciechi e l'elefante",
+     "g": "Esplora la famosa parabola sui punti di vista parziali e sulla verità intera.",
+     "p": [
+      "Alcuni ciechi toccano un elefante: uno sente una zampa e dice colonna, un altro la proboscide e dice serpente.",
+      "Ognuno ha ragione sulla sua parte e torto sul tutto; il racconto viene da tradizioni indiane.",
+      "Ci ricorda di ascoltare altri punti di vista, perché ognuno può custodire un pezzo di verità."
+     ],
+     "q": "Pensa a un disaccordo avuto: entrambi i lati vedevano solo una parte?",
+     "c": "Al prossimo disaccordo, chiedi all'altra persona quale parte del quadro riesce a vedere."
+    },
+    "pt": {
+     "t": "Os cegos e o elefante",
+     "g": "Explora a famosa parábola sobre visões parciais e a verdade inteira.",
+     "p": [
+      "Vários cegos tocam num elefante: um sente a pata e diz pilar, outro a tromba e diz serpente.",
+      "Cada um tem razão na sua parte e erra no todo; o conto surge em tradições indianas.",
+      "Lembra-nos de ouvir outros pontos de vista, pois cada um pode guardar um pedaço da verdade."
+     ],
+     "q": "Pensa numa discussão que tiveste: ambos viam apenas uma parte?",
+     "c": "No próximo desacordo, pergunta que parte do quadro a outra pessoa consegue ver."
+    },
+    "pt_BR": {
+     "t": "Os cegos e o elefante",
+     "g": "Explore a famosa parábola sobre visões parciais e a verdade inteira.",
+     "p": [
+      "Vários cegos tocam num elefante: um sente a pata e diz pilar, outro a tromba e diz cobra.",
+      "Cada um tem razão na sua parte e erra no todo; o conto aparece em tradições indianas.",
+      "Ela nos lembra de ouvir outros pontos de vista, pois cada um pode guardar um pedaço da verdade."
+     ],
+     "q": "Pense numa discussão que você teve: os dois lados viam só uma parte?",
+     "c": "No próximo desacordo, pergunte que parte do quadro a outra pessoa consegue ver."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ubuntu: I am because we are",
+     "g": "Discover the Southern African idea that we become persons through other people.",
+     "p": [
+      "Ubuntu comes from Nguni Bantu languages; a well-known saying is: a person is a person through other persons.",
+      "It says kindness, respect and sharing are not extras: they are how we grow into our full humanity.",
+      "My wellbeing is tied to yours, so caring for the community is also caring for myself."
+     ],
+     "q": "Who are the people that helped you become who you are today?",
+     "c": "Thank one person who helped shape you, and tell them what they gave you."
+    },
+    "de": {
+     "t": "Ubuntu: Ich bin, weil wir sind",
+     "g": "Entdecke die südafrikanische Idee, dass wir durch andere Menschen erst zu Personen werden.",
+     "p": [
+      "Ubuntu stammt aus Bantu-Sprachen der Nguni; ein bekanntes Sprichwort lautet: Ein Mensch ist Mensch durch andere Menschen.",
+      "Freundlichkeit, Respekt und Teilen sind demnach keine Extras, sondern der Weg zu voller Menschlichkeit.",
+      "Mein Wohl ist mit deinem verbunden; für die Gemeinschaft zu sorgen heißt auch für mich zu sorgen."
+     ],
+     "q": "Welche Menschen haben dir geholfen, der zu werden, der du heute bist?",
+     "c": "Danke einem Menschen, der dich geprägt hat, und sag, was er dir gegeben hat."
+    },
+    "es": {
+     "t": "Ubuntu: soy porque somos",
+     "g": "Descubre la idea del sur de África de que nos hacemos personas a través de los demás.",
+     "p": [
+      "Ubuntu viene de lenguas bantúes nguni; un dicho conocido es: una persona es persona a través de otras personas.",
+      "Dice que la amabilidad, el respeto y compartir no son extras: así crecemos hacia nuestra plena humanidad.",
+      "Mi bienestar está unido al tuyo, así que cuidar de la comunidad es también cuidarme."
+     ],
+     "q": "¿Quiénes son las personas que te ayudaron a ser quien eres hoy?",
+     "c": "Da las gracias a alguien que te formó y dile lo que te dio."
+    },
+    "fr": {
+     "t": "Ubuntu : je suis parce que nous sommes",
+     "g": "Découvre l'idée d'Afrique australe selon laquelle nous devenons des personnes grâce aux autres.",
+     "p": [
+      "Ubuntu vient de langues bantoues nguni ; un dicton connu dit : une personne est une personne par les autres personnes.",
+      "La gentillesse, le respect et le partage ne sont pas des options : c'est ainsi que nous grandissons en humanité.",
+      "Mon bien-être est lié au tien : prendre soin de la communauté, c'est aussi prendre soin de moi."
+     ],
+     "q": "Qui sont les personnes qui t'ont aidé à devenir ce que tu es aujourd'hui ?",
+     "c": "Remercie une personne qui t'a façonné et dis-lui ce qu'elle t'a apporté."
+    },
+    "it": {
+     "t": "Ubuntu: io sono perché noi siamo",
+     "g": "Scopri l'idea dell'Africa australe secondo cui diventiamo persone attraverso gli altri.",
+     "p": [
+      "Ubuntu viene da lingue bantu nguni; un detto noto dice: una persona è persona grazie alle altre persone.",
+      "Gentilezza, rispetto e condivisione non sono extra: sono il modo in cui cresciamo nella nostra umanità.",
+      "Il mio benessere è legato al tuo, quindi prendersi cura della comunità è prendersi cura di sé."
+     ],
+     "q": "Chi sono le persone che ti hanno aiutato a diventare quello che sei oggi?",
+     "c": "Ringrazia una persona che ti ha formato e dille cosa ti ha dato."
+    },
+    "pt": {
+     "t": "Ubuntu: eu sou porque nós somos",
+     "g": "Descobre a ideia da África Austral de que nos tornamos pessoas através dos outros.",
+     "p": [
+      "Ubuntu vem de línguas bantu nguni; um provérbio conhecido diz: uma pessoa é pessoa através das outras pessoas.",
+      "Diz que a gentileza, o respeito e a partilha não são extras: é assim que crescemos em humanidade.",
+      "O meu bem-estar está ligado ao teu, por isso cuidar da comunidade é também cuidar de mim."
+     ],
+     "q": "Quem são as pessoas que te ajudaram a ser quem és hoje?",
+     "c": "Agradece a alguém que te moldou e diz-lhe o que te deu."
+    },
+    "pt_BR": {
+     "t": "Ubuntu: eu sou porque nós somos",
+     "g": "Descubra a ideia da África Austral de que nos tornamos pessoas através dos outros.",
+     "p": [
+      "Ubuntu vem de línguas bantu nguni; um provérbio conhecido diz: uma pessoa é pessoa por meio das outras pessoas.",
+      "Ele diz que gentileza, respeito e partilha não são extras: é assim que crescemos em humanidade.",
+      "Meu bem-estar está ligado ao seu, então cuidar da comunidade é também cuidar de mim."
+     ],
+     "q": "Quem são as pessoas que ajudaram você a ser quem é hoje?",
+     "c": "Agradeça a alguém que moldou você e diga o que essa pessoa lhe deu."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Proverbs as philosophy",
+     "g": "See how proverbs from Africa and elsewhere pack wisdom about community and life.",
+     "p": [
+      "Proverbs are short sayings that carry lessons gathered over many generations.",
+      "An African proverb says: if you want to go fast, go alone; if you want to go far, go together.",
+      "Proverbs from every culture offer advice that we can test against our own experience."
+     ],
+     "q": "What is a proverb you grew up with, and what does it really teach?",
+     "c": "Share a proverb from your family or culture with a friend and explain why it matters."
+    },
+    "de": {
+     "t": "Sprichwörter als Philosophie",
+     "g": "Sieh, wie Sprichwörter aus Afrika und anderswo Weisheit über Gemeinschaft und Leben bündeln.",
+     "p": [
+      "Sprichwörter sind kurze Sätze, die Lehren aus vielen Generationen in sich tragen.",
+      "Ein afrikanisches Sprichwort sagt: Willst du schnell sein, geh allein; willst du weit kommen, geht gemeinsam.",
+      "Sprichwörter aus allen Kulturen geben Rat, den wir an der eigenen Erfahrung prüfen können."
+     ],
+     "q": "Welches Sprichwort kennst du aus deiner Kindheit, und was lehrt es wirklich?",
+     "c": "Teile ein Sprichwort aus deiner Familie oder Kultur mit einer Freundin und erkläre, warum es wichtig ist."
+    },
+    "es": {
+     "t": "Los refranes como filosofía",
+     "g": "Mira cómo los proverbios de África y de otros lugares guardan sabiduría sobre comunidad y vida.",
+     "p": [
+      "Los proverbios son frases breves que encierran lecciones reunidas durante muchas generaciones.",
+      "Un proverbio africano dice: si quieres ir rápido, ve solo; si quieres llegar lejos, ve acompañado.",
+      "Los refranes de cada cultura dan consejos que podemos contrastar con nuestra propia experiencia."
+     ],
+     "q": "¿Qué refrán te acompañó de niño y qué enseña de verdad?",
+     "c": "Comparte con un amigo un refrán de tu familia o cultura y explica por qué importa."
+    },
+    "fr": {
+     "t": "Les proverbes comme philosophie",
+     "g": "Vois comment les proverbes d'Afrique et d'ailleurs condensent une sagesse sur la communauté et la vie.",
+     "p": [
+      "Les proverbes sont de courtes phrases qui portent des leçons accumulées sur de nombreuses générations.",
+      "Un proverbe africain dit : si tu veux aller vite, marche seul ; si tu veux aller loin, marchons ensemble.",
+      "Les proverbes de chaque culture donnent des conseils à confronter à notre propre expérience."
+     ],
+     "q": "Quel proverbe a bercé ton enfance, et que t'enseigne-t-il vraiment ?",
+     "c": "Partage avec un ami un proverbe de ta famille ou culture et explique son importance."
+    },
+    "it": {
+     "t": "I proverbi come filosofia",
+     "g": "Scopri come i proverbi dell'Africa e di altri luoghi racchiudono saggezza su comunità e vita.",
+     "p": [
+      "I proverbi sono frasi brevi che portano lezioni raccolte nel corso di molte generazioni.",
+      "Un proverbio africano dice: se vuoi andare veloce, vai da solo; se vuoi andare lontano, andate insieme.",
+      "I proverbi di ogni cultura offrono consigli da mettere alla prova con la nostra esperienza."
+     ],
+     "q": "Quale proverbio hai sentito da bambino, e cosa insegna davvero?",
+     "c": "Condividi con un amico un proverbio della tua famiglia o cultura e spiega perché conta."
+    },
+    "pt": {
+     "t": "Provérbios como filosofia",
+     "g": "Vê como os provérbios de África e de outros lugares guardam sabedoria sobre comunidade e vida.",
+     "p": [
+      "Os provérbios são frases curtas que levam lições reunidas ao longo de muitas gerações.",
+      "Um provérbio africano diz: se queres ir depressa, vai sozinho; se queres ir longe, vai acompanhado.",
+      "Os provérbios de cada cultura dão conselhos que podemos testar com a nossa experiência."
+     ],
+     "q": "Que provérbio ouviste em criança e o que ensina realmente?",
+     "c": "Partilha com um amigo um provérbio da tua família ou cultura e explica porque importa."
+    },
+    "pt_BR": {
+     "t": "Provérbios como filosofia",
+     "g": "Veja como os provérbios da África e de outros lugares guardam sabedoria sobre comunidade e vida.",
+     "p": [
+      "Provérbios são frases curtas que carregam lições reunidas ao longo de muitas gerações.",
+      "Um provérbio africano diz: se quer ir rápido, vá sozinho; se quer ir longe, vá acompanhado.",
+      "Os provérbios de cada cultura dão conselhos que podemos testar com a nossa experiência."
+     ],
+     "q": "Que provérbio você ouviu na infância e o que ele ensina de verdade?",
+     "c": "Compartilhe com um amigo um provérbio da sua família ou cultura e explique por que importa."
+    }
+   }
+  }
+ ]
+}

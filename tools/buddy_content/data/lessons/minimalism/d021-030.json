@@ -1,0 +1,835 @@
+{
+ "topic": "minimalism",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Donating with care",
+     "g": "Choose where your items go so they are truly useful.",
+     "p": [
+      "Options include charity shops, friends, local groups and community swaps.",
+      "Donate items that are clean, working and in good condition.",
+      "Check what a place accepts so you do not create extra work for them."
+     ],
+     "q": "Who or what place could use the items you are ready to release?",
+     "c": "Take your donate box to a drop-off point or arrange a pick-up this week."
+    },
+    "de": {
+     "t": "Mit Sorgfalt spenden",
+     "g": "Wählen, wohin deine Dinge gehen, damit sie wirklich nützen.",
+     "p": [
+      "Möglich sind Sozialkaufhäuser, Freunde, lokale Gruppen und Tauschbörsen.",
+      "Spende saubere, funktionierende Dinge in gutem Zustand.",
+      "Frag nach, was angenommen wird, damit niemand unnötig Arbeit hat."
+     ],
+     "q": "Wer oder welcher Ort könnte die Dinge gebrauchen, die du abgeben willst?",
+     "c": "Bring deine Spendenkiste diese Woche weg oder vereinbare eine Abholung."
+    },
+    "es": {
+     "t": "Donar con cuidado",
+     "g": "Elegir adónde van tus cosas para que sean realmente útiles.",
+     "p": [
+      "Hay tiendas solidarias, amistades, grupos locales e intercambios comunitarios.",
+      "Dona cosas limpias, que funcionen y en buen estado.",
+      "Averigua qué aceptan para no crear trabajo extra a nadie."
+     ],
+     "q": "¿Quién o qué lugar podría aprovechar lo que estás listo para soltar?",
+     "c": "Lleva tu caja de donación a un punto de entrega o pide una recogida esta semana."
+    },
+    "fr": {
+     "t": "Donner avec soin",
+     "g": "Choisir où vont tes objets pour qu'ils soient vraiment utiles.",
+     "p": [
+      "Il y a les boutiques solidaires, les amis, les groupes locaux et les trocs.",
+      "Donne des objets propres, qui marchent et en bon état.",
+      "Vérifie ce qui est accepté pour ne pas créer de travail en plus."
+     ],
+     "q": "Qui ou quel lieu pourrait utiliser ce que tu es prêt à laisser partir ?",
+     "c": "Apporte ta boîte de dons à un point de dépôt ou organise un enlèvement cette semaine."
+    },
+    "it": {
+     "t": "Donare con cura",
+     "g": "Scegliere dove vanno le tue cose perché siano davvero utili.",
+     "p": [
+      "Ci sono negozi solidali, amici, gruppi locali e scambi di comunità.",
+      "Dona cose pulite, funzionanti e in buono stato.",
+      "Controlla cosa viene accettato per non creare lavoro in più."
+     ],
+     "q": "Chi o quale posto potrebbe usare ciò che sei pronto a lasciare andare?",
+     "c": "Porta la tua scatola delle donazioni a un punto di raccolta o organizza un ritiro questa settimana."
+    },
+    "pt": {
+     "t": "Doar com cuidado",
+     "g": "Escolher para onde vão as tuas coisas para serem realmente úteis.",
+     "p": [
+      "Há lojas solidárias, amigos, grupos locais e trocas comunitárias.",
+      "Doa coisas limpas, a funcionar e em bom estado.",
+      "Vê o que aceitam para não criares trabalho extra a ninguém."
+     ],
+     "q": "Quem ou que local poderia aproveitar o que estás pronto a largar?",
+     "c": "Leva a tua caixa de doação a um ponto de entrega ou combina uma recolha esta semana."
+    },
+    "pt_BR": {
+     "t": "Doar com cuidado",
+     "g": "Escolher para onde vão as suas coisas para serem realmente úteis.",
+     "p": [
+      "Há brechós solidários, amigos, grupos locais e trocas comunitárias.",
+      "Doe coisas limpas, funcionando e em bom estado.",
+      "Veja o que aceitam para não criar trabalho extra para ninguém."
+     ],
+     "q": "Quem ou que lugar poderia aproveitar o que você está pronto para soltar?",
+     "c": "Leve sua caixa de doação a um ponto de entrega ou combine uma retirada nesta semana."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Selling unwanted items",
+     "g": "Know when selling is worth the effort and when giving is easier.",
+     "p": [
+      "Selling takes photos, messages and meeting buyers, so count your time.",
+      "Items of real value may be worth selling; low-value ones are easier to give.",
+      "Set a deadline, for example two weeks, then donate what is left."
+     ],
+     "q": "Is there something valuable you could sell this month?",
+     "c": "Pick one item to sell or give away and take its photo today."
+    },
+    "de": {
+     "t": "Unerwünschtes verkaufen",
+     "g": "Wissen, wann sich Verkaufen lohnt und wann Verschenken einfacher ist.",
+     "p": [
+      "Verkaufen heißt Fotos, Nachrichten und Treffen, rechne also deine Zeit mit.",
+      "Wertvolle Dinge lohnen sich vielleicht; Billiges verschenkst du leichter.",
+      "Setz eine Frist, etwa zwei Wochen, und spende dann den Rest."
+     ],
+     "q": "Gibt es etwas Wertvolles, das du diesen Monat verkaufen könntest?",
+     "c": "Wähl einen Gegenstand zum Verkaufen oder Verschenken und fotografier ihn heute."
+    },
+    "es": {
+     "t": "Vender lo que no quieres",
+     "g": "Saber cuándo vender merece la pena y cuándo es más fácil regalar.",
+     "p": [
+      "Vender implica fotos, mensajes y quedar con compradores, así que cuenta tu tiempo.",
+      "Lo de valor real puede merecer la venta; lo barato es más fácil de regalar.",
+      "Pon un plazo, por ejemplo dos semanas, y dona lo que quede."
+     ],
+     "q": "¿Hay algo de valor que podrías vender este mes?",
+     "c": "Elige un objeto para vender o regalar y hazle la foto hoy."
+    },
+    "fr": {
+     "t": "Vendre ce dont tu ne veux plus",
+     "g": "Savoir quand vendre vaut l'effort et quand donner est plus simple.",
+     "p": [
+      "Vendre demande photos, messages et rencontres : compte ton temps.",
+      "Les objets de vraie valeur méritent peut-être d'être vendus ; le reste se donne plus facilement.",
+      "Fixe une date limite, par exemple deux semaines, puis donne ce qui reste."
+     ],
+     "q": "As-tu quelque chose de valeur que tu pourrais vendre ce mois-ci ?",
+     "c": "Choisis un objet à vendre ou à donner et photographie-le aujourd'hui."
+    },
+    "it": {
+     "t": "Vendere ciò che non vuoi più",
+     "g": "Sapere quando vendere vale la fatica e quando regalare è più facile.",
+     "p": [
+      "Vendere richiede foto, messaggi e incontri, quindi conta il tuo tempo.",
+      "Le cose di vero valore possono meritare la vendita; quelle economiche si regalano meglio.",
+      "Fissa una scadenza, per esempio due settimane, poi dona ciò che resta."
+     ],
+     "q": "C'è qualcosa di valore che potresti vendere questo mese?",
+     "c": "Scegli un oggetto da vendere o regalare e fotografalo oggi."
+    },
+    "pt": {
+     "t": "Vender o que já não queres",
+     "g": "Saber quando vender compensa o esforço e quando oferecer é mais fácil.",
+     "p": [
+      "Vender implica fotos, mensagens e encontros, por isso conta o teu tempo.",
+      "O que tem valor real pode compensar; o barato é mais fácil de oferecer.",
+      "Define um prazo, por exemplo duas semanas, e doa o que sobrar."
+     ],
+     "q": "Há algo de valor que poderias vender este mês?",
+     "c": "Escolhe um objeto para vender ou oferecer e tira-lhe a foto hoje."
+    },
+    "pt_BR": {
+     "t": "Vender o que você não quer mais",
+     "g": "Saber quando vender vale o esforço e quando doar é mais fácil.",
+     "p": [
+      "Vender exige fotos, mensagens e encontros, então conte o seu tempo.",
+      "O que tem valor real pode compensar; o barato é mais fácil de doar.",
+      "Defina um prazo, por exemplo duas semanas, e doe o que sobrar."
+     ],
+     "q": "Tem algo de valor que você poderia vender neste mês?",
+     "c": "Escolha um item para vender ou doar e tire a foto hoje."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Responsible recycling",
+     "g": "Handle electronics, batteries and textiles the right way.",
+     "p": [
+      "Batteries, old electronics and bulbs often need special collection points.",
+      "Worn textiles can often go to textile recycling, not the regular bin.",
+      "Check your local council or waste service for what goes where."
+     ],
+     "q": "Do you have old electronics or batteries waiting somewhere at home?",
+     "c": "Gather any dead batteries or old cables and find where to drop them."
+    },
+    "de": {
+     "t": "Verantwortungsvoll recyceln",
+     "g": "Elektronik, Batterien und Textilien richtig entsorgen.",
+     "p": [
+      "Batterien, alte Elektrogeräte und Lampen brauchen oft eigene Sammelstellen.",
+      "Abgetragene Textilien gehören oft in die Textilsammlung, nicht in den Restmüll.",
+      "Frag bei deiner Gemeinde oder dem Entsorger nach, was wohin gehört."
+     ],
+     "q": "Liegen bei dir zu Hause alte Elektrogeräte oder Batterien herum?",
+     "c": "Sammle leere Batterien oder alte Kabel und finde die passende Abgabestelle."
+    },
+    "es": {
+     "t": "Reciclar con responsabilidad",
+     "g": "Gestionar bien la electrónica, las pilas y los textiles.",
+     "p": [
+      "Pilas, aparatos viejos y bombillas suelen requerir puntos de recogida especiales.",
+      "Los textiles gastados suelen ir a reciclaje textil, no al contenedor normal.",
+      "Consulta a tu ayuntamiento o servicio de residuos qué va dónde."
+     ],
+     "q": "¿Tienes electrónica vieja o pilas esperando en algún rincón?",
+     "c": "Reúne pilas gastadas o cables viejos y averigua dónde llevarlos."
+    },
+    "fr": {
+     "t": "Recycler de façon responsable",
+     "g": "Gérer correctement l'électronique, les piles et les textiles.",
+     "p": [
+      "Piles, vieux appareils et ampoules ont souvent des points de collecte dédiés.",
+      "Les textiles usés peuvent souvent aller au recyclage textile, pas à la poubelle.",
+      "Renseigne-toi auprès de ta mairie ou du service des déchets."
+     ],
+     "q": "As-tu de vieux appareils ou des piles qui traînent chez toi ?",
+     "c": "Rassemble les piles usagées ou les vieux câbles et trouve où les déposer."
+    },
+    "it": {
+     "t": "Riciclare con responsabilità",
+     "g": "Gestire bene elettronica, batterie e tessili.",
+     "p": [
+      "Batterie, vecchi apparecchi e lampadine richiedono spesso punti di raccolta speciali.",
+      "I tessili consumati spesso vanno nella raccolta tessile, non nel bidone comune.",
+      "Chiedi al tuo comune o al servizio rifiuti cosa va dove."
+     ],
+     "q": "Hai vecchia elettronica o batterie che aspettano in qualche angolo?",
+     "c": "Raccogli batterie scariche o cavi vecchi e scopri dove portarli."
+    },
+    "pt": {
+     "t": "Reciclar com responsabilidade",
+     "g": "Tratar bem a eletrónica, as pilhas e os têxteis.",
+     "p": [
+      "Pilhas, aparelhos velhos e lâmpadas precisam muitas vezes de pontos de recolha especiais.",
+      "Têxteis gastos podem muitas vezes ir para reciclagem têxtil, não para o lixo comum.",
+      "Consulta a tua câmara municipal ou serviço de resíduos sobre o que vai onde."
+     ],
+     "q": "Tens eletrónica velha ou pilhas à espera nalgum canto?",
+     "c": "Junta pilhas gastas ou cabos velhos e descobre onde os entregar."
+    },
+    "pt_BR": {
+     "t": "Reciclagem responsável",
+     "g": "Cuidar bem de eletrônicos, pilhas e tecidos.",
+     "p": [
+      "Pilhas, aparelhos velhos e lâmpadas muitas vezes precisam de pontos de coleta especiais.",
+      "Tecidos gastos podem ir para reciclagem têxtil, não para o lixo comum.",
+      "Consulte a prefeitura ou o serviço de coleta sobre o que vai onde."
+     ],
+     "q": "Você tem eletrônicos velhos ou pilhas esperando em algum canto?",
+     "c": "Junte pilhas gastas ou cabos velhos e descubra onde entregar."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Celebrating small wins",
+     "g": "Notice progress and enjoy the space you created.",
+     "p": [
+      "Take before and after photos; they show what memory forgets.",
+      "Small steps count: one drawer, one shelf, one bag is real progress.",
+      "Enjoy the cleared space without rushing to fill it."
+     ],
+     "q": "What small win from the last few weeks makes you proudest?",
+     "c": "Take a photo of one finished spot and say well done to yourself."
+    },
+    "de": {
+     "t": "Kleine Erfolge feiern",
+     "g": "Fortschritte bemerken und den geschaffenen Raum genießen.",
+     "p": [
+      "Mach Vorher-nachher-Fotos; sie zeigen, was das Gedächtnis vergisst.",
+      "Kleine Schritte zählen: eine Schublade, ein Regal, eine Tüte ist echter Fortschritt.",
+      "Genieße den freien Platz, ohne ihn gleich wieder zu füllen."
+     ],
+     "q": "Auf welchen kleinen Erfolg der letzten Wochen bist du am stolzesten?",
+     "c": "Fotografier einen fertigen Platz und lobe dich selbst dafür."
+    },
+    "es": {
+     "t": "Celebrar las pequeñas victorias",
+     "g": "Notar el progreso y disfrutar del espacio que has creado.",
+     "p": [
+      "Haz fotos de antes y después; muestran lo que la memoria olvida.",
+      "Los pasos pequeños cuentan: un cajón, una balda, una bolsa es progreso real.",
+      "Disfruta del espacio libre sin correr a llenarlo."
+     ],
+     "q": "¿Qué pequeña victoria de las últimas semanas te enorgullece más?",
+     "c": "Haz una foto de un rincón terminado y felicítate."
+    },
+    "fr": {
+     "t": "Fêter les petites victoires",
+     "g": "Remarquer les progrès et savourer l'espace que tu as créé.",
+     "p": [
+      "Prends des photos avant et après ; elles montrent ce que la mémoire oublie.",
+      "Les petits pas comptent : un tiroir, une étagère, un sac, c'est un vrai progrès.",
+      "Profite de la place libérée sans te presser de la remplir."
+     ],
+     "q": "De quelle petite victoire des dernières semaines es-tu le plus fier ?",
+     "c": "Photographie un coin terminé et félicite-toi."
+    },
+    "it": {
+     "t": "Celebrare le piccole vittorie",
+     "g": "Notare i progressi e godersi lo spazio che hai creato.",
+     "p": [
+      "Fai foto prima e dopo; mostrano ciò che la memoria dimentica.",
+      "I piccoli passi contano: un cassetto, un ripiano, un sacco sono progressi veri.",
+      "Goditi lo spazio libero senza correre a riempirlo."
+     ],
+     "q": "Di quale piccola vittoria delle ultime settimane vai più fiero?",
+     "c": "Fotografa un angolo finito e fatti i complimenti."
+    },
+    "pt": {
+     "t": "Celebrar as pequenas vitórias",
+     "g": "Reparar no progresso e desfrutar do espaço que criaste.",
+     "p": [
+      "Tira fotos de antes e depois; mostram o que a memória esquece.",
+      "Os passos pequenos contam: uma gaveta, uma prateleira, um saco é progresso real.",
+      "Desfruta do espaço livre sem pressa de o encher."
+     ],
+     "q": "De que pequena vitória das últimas semanas mais te orgulhas?",
+     "c": "Tira uma foto de um canto terminado e dá-te os parabéns."
+    },
+    "pt_BR": {
+     "t": "Celebrando as pequenas vitórias",
+     "g": "Perceber o progresso e aproveitar o espaço que você criou.",
+     "p": [
+      "Tire fotos de antes e depois; elas mostram o que a memória esquece.",
+      "Passos pequenos contam: uma gaveta, uma prateleira, uma sacola é progresso real.",
+      "Aproveite o espaço livre sem pressa de preenchê-lo."
+     ],
+     "q": "De qual pequena vitória das últimas semanas você mais se orgulha?",
+     "c": "Tire uma foto de um canto pronto e se dê os parabéns."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Common beginner mistakes",
+     "g": "Avoid the usual traps that make decluttering harder.",
+     "p": [
+      "Buying storage boxes first often just hides the excess.",
+      "Decluttering other people's things creates tension; start with your own.",
+      "Trying to do everything in one day usually ends in tiredness."
+     ],
+     "q": "Which of these mistakes could you see yourself making?",
+     "c": "Choose one mistake to avoid this week and write it on a note."
+    },
+    "de": {
+     "t": "Typische Anfängerfehler",
+     "g": "Die üblichen Fallen vermeiden, die das Ausmisten erschweren.",
+     "p": [
+      "Zuerst Aufbewahrungsboxen zu kaufen versteckt meist nur das Zuviel.",
+      "Fremde Sachen auszumisten schafft Spannung; fang mit deinen eigenen an.",
+      "Alles an einem Tag zu wollen endet meist in Erschöpfung."
+     ],
+     "q": "Welchen dieser Fehler könntest du dir selbst vorstellen?",
+     "c": "Such dir einen Fehler aus, den du diese Woche vermeidest, und schreib ihn auf einen Zettel."
+    },
+    "es": {
+     "t": "Errores comunes de principiante",
+     "g": "Evitar las trampas habituales que complican el orden.",
+     "p": [
+      "Comprar cajas de almacenaje primero suele ocultar el exceso.",
+      "Ordenar las cosas de otros genera tensión; empieza por las tuyas.",
+      "Querer hacerlo todo en un día suele acabar en cansancio."
+     ],
+     "q": "¿Cuál de estos errores podrías cometer tú?",
+     "c": "Elige un error que evitar esta semana y anótalo en una nota."
+    },
+    "fr": {
+     "t": "Erreurs courantes des débutants",
+     "g": "Éviter les pièges habituels qui compliquent le désencombrement.",
+     "p": [
+      "Acheter d'abord des boîtes de rangement ne fait souvent que cacher l'excès.",
+      "Trier les affaires des autres crée des tensions ; commence par les tiennes.",
+      "Vouloir tout faire en un jour finit souvent en fatigue."
+     ],
+     "q": "Laquelle de ces erreurs pourrais-tu faire ?",
+     "c": "Choisis une erreur à éviter cette semaine et note-la sur un papier."
+    },
+    "it": {
+     "t": "Errori comuni dei principianti",
+     "g": "Evitare le solite trappole che rendono più difficile fare ordine.",
+     "p": [
+      "Comprare prima contenitori spesso nasconde solo l'eccesso.",
+      "Riordinare le cose degli altri crea tensione; inizia dalle tue.",
+      "Voler fare tutto in un giorno di solito finisce in stanchezza."
+     ],
+     "q": "Quale di questi errori potresti fare tu?",
+     "c": "Scegli un errore da evitare questa settimana e scrivilo su un biglietto."
+    },
+    "pt": {
+     "t": "Erros comuns de principiante",
+     "g": "Evitar as armadilhas habituais que dificultam arrumar.",
+     "p": [
+      "Comprar caixas de arrumação primeiro costuma só esconder o excesso.",
+      "Arrumar as coisas dos outros cria tensão; começa pelas tuas.",
+      "Querer fazer tudo num dia costuma acabar em cansaço."
+     ],
+     "q": "Qual destes erros te vês a cometer?",
+     "c": "Escolhe um erro a evitar esta semana e escreve-o num papel."
+    },
+    "pt_BR": {
+     "t": "Erros comuns de iniciante",
+     "g": "Evitar as armadilhas comuns que dificultam a organização.",
+     "p": [
+      "Comprar caixas organizadoras primeiro costuma só esconder o excesso.",
+      "Mexer nas coisas dos outros gera tensão; comece pelas suas.",
+      "Querer fazer tudo num dia costuma acabar em cansaço."
+     ],
+     "q": "Qual desses erros você se vê cometendo?",
+     "c": "Escolha um erro para evitar nesta semana e anote num papelzinho."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Minimalism with a small budget",
+     "g": "See that simplifying costs nothing.",
+     "p": [
+      "Minimalism is about using less, not buying minimalist products.",
+      "Use what you already have before buying anything new.",
+      "Pausing before a purchase is a free habit that adds up over time."
+     ],
+     "q": "What do you already own that could replace something you planned to buy?",
+     "c": "Delay one planned purchase by a week and see if you still want it."
+    },
+    "de": {
+     "t": "Minimalismus mit kleinem Budget",
+     "g": "Erkennen, dass Vereinfachen nichts kostet.",
+     "p": [
+      "Minimalismus heißt weniger nutzen, nicht minimalistische Produkte kaufen.",
+      "Nutze zuerst, was du schon hast, bevor du Neues kaufst.",
+      "Vor einem Kauf zu warten ist eine kostenlose Gewohnheit, die sich summiert."
+     ],
+     "q": "Was besitzt du schon, das etwas ersetzen könnte, das du kaufen wolltest?",
+     "c": "Verschieb einen geplanten Kauf um eine Woche und schau, ob du ihn noch willst."
+    },
+    "es": {
+     "t": "Minimalismo con poco presupuesto",
+     "g": "Ver que simplificar no cuesta nada.",
+     "p": [
+      "El minimalismo es usar menos, no comprar productos minimalistas.",
+      "Usa lo que ya tienes antes de comprar algo nuevo.",
+      "Esperar antes de comprar es un hábito gratuito que suma con el tiempo."
+     ],
+     "q": "¿Qué tienes ya que podría sustituir algo que pensabas comprar?",
+     "c": "Aplaza una compra prevista una semana y mira si aún la quieres."
+    },
+    "fr": {
+     "t": "Le minimalisme avec un petit budget",
+     "g": "Voir que simplifier ne coûte rien.",
+     "p": [
+      "Le minimalisme, c'est utiliser moins, pas acheter des produits minimalistes.",
+      "Utilise ce que tu as déjà avant d'acheter du neuf.",
+      "Attendre avant d'acheter est une habitude gratuite qui compte avec le temps."
+     ],
+     "q": "Que possèdes-tu déjà qui pourrait remplacer ce que tu comptais acheter ?",
+     "c": "Reporte un achat prévu d'une semaine et vois si tu en as encore envie."
+    },
+    "it": {
+     "t": "Minimalismo con poco budget",
+     "g": "Vedere che semplificare non costa nulla.",
+     "p": [
+      "Il minimalismo è usare meno, non comprare prodotti minimalisti.",
+      "Usa ciò che hai già prima di comprare qualcosa di nuovo.",
+      "Aspettare prima di comprare è un'abitudine gratuita che col tempo conta."
+     ],
+     "q": "Cosa possiedi già che potrebbe sostituire qualcosa che volevi comprare?",
+     "c": "Rimanda di una settimana un acquisto previsto e guarda se lo vuoi ancora."
+    },
+    "pt": {
+     "t": "Minimalismo com pouco orçamento",
+     "g": "Ver que simplificar não custa nada.",
+     "p": [
+      "O minimalismo é usar menos, não comprar produtos minimalistas.",
+      "Usa o que já tens antes de comprar algo novo.",
+      "Esperar antes de comprar é um hábito gratuito que se soma com o tempo."
+     ],
+     "q": "O que já tens que podia substituir algo que ias comprar?",
+     "c": "Adia uma compra prevista por uma semana e vê se ainda a queres."
+    },
+    "pt_BR": {
+     "t": "Minimalismo com pouco orçamento",
+     "g": "Ver que simplificar não custa nada.",
+     "p": [
+      "Minimalismo é usar menos, não comprar produtos minimalistas.",
+      "Use o que você já tem antes de comprar algo novo.",
+      "Esperar antes de comprar é um hábito gratuito que soma com o tempo."
+     ],
+     "q": "O que você já tem que poderia substituir algo que ia comprar?",
+     "c": "Adie uma compra planejada por uma semana e veja se ainda quer."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Minimalism around the world",
+     "g": "Borrow ideas from cultures that value simplicity.",
+     "p": [
+      "In Japan, ma means valuing empty space and pauses.",
+      "In Sweden, lagom means just the right amount, not too much or too little.",
+      "Many cultures share the idea that enough is a good feeling."
+     ],
+     "q": "Which of these ideas speaks to you most?",
+     "c": "Leave one small space in your home empty on purpose today and enjoy it."
+    },
+    "de": {
+     "t": "Minimalismus rund um die Welt",
+     "g": "Ideen aus Kulturen übernehmen, die Schlichtheit schätzen.",
+     "p": [
+      "In Japan bedeutet ma, leeren Raum und Pausen wertzuschätzen.",
+      "In Schweden bedeutet lagom genau das richtige Maß, nicht zu viel, nicht zu wenig.",
+      "Viele Kulturen teilen den Gedanken, dass genug ein gutes Gefühl ist."
+     ],
+     "q": "Welche dieser Ideen spricht dich am meisten an?",
+     "c": "Lass heute einen kleinen Platz in deinem Zuhause bewusst leer und genieß ihn."
+    },
+    "es": {
+     "t": "Minimalismo alrededor del mundo",
+     "g": "Tomar ideas de culturas que valoran la sencillez.",
+     "p": [
+      "En Japón, ma significa valorar el espacio vacío y las pausas.",
+      "En Suecia, lagom significa la medida justa, ni demasiado ni muy poco.",
+      "Muchas culturas comparten la idea de que lo suficiente se siente bien."
+     ],
+     "q": "¿Cuál de estas ideas te habla más?",
+     "c": "Deja hoy un pequeño espacio de tu casa vacío a propósito y disfrútalo."
+    },
+    "fr": {
+     "t": "Le minimalisme autour du monde",
+     "g": "T'inspirer de cultures qui valorisent la simplicité.",
+     "p": [
+      "Au Japon, ma désigne la valeur du vide et des pauses.",
+      "En Suède, lagom veut dire la juste mesure, ni trop ni trop peu.",
+      "Beaucoup de cultures partagent l'idée que le suffisant fait du bien."
+     ],
+     "q": "Laquelle de ces idées te parle le plus ?",
+     "c": "Laisse aujourd'hui un petit espace de ta maison vide exprès et savoure-le."
+    },
+    "it": {
+     "t": "Minimalismo nel mondo",
+     "g": "Prendere idee da culture che apprezzano la semplicità.",
+     "p": [
+      "In Giappone, ma significa dare valore allo spazio vuoto e alle pause.",
+      "In Svezia, lagom significa la giusta misura, né troppo né troppo poco.",
+      "Molte culture condividono l'idea che il giusto sia una bella sensazione."
+     ],
+     "q": "Quale di queste idee ti parla di più?",
+     "c": "Lascia oggi un piccolo spazio di casa vuoto di proposito e goditelo."
+    },
+    "pt": {
+     "t": "Minimalismo à volta do mundo",
+     "g": "Aproveitar ideias de culturas que valorizam a simplicidade.",
+     "p": [
+      "No Japão, ma significa valorizar o espaço vazio e as pausas.",
+      "Na Suécia, lagom significa a medida certa, nem demais nem de menos.",
+      "Muitas culturas partilham a ideia de que o suficiente sabe bem."
+     ],
+     "q": "Qual destas ideias mais te diz?",
+     "c": "Deixa hoje um pequeno espaço da tua casa vazio de propósito e desfruta."
+    },
+    "pt_BR": {
+     "t": "Minimalismo ao redor do mundo",
+     "g": "Pegar ideias de culturas que valorizam a simplicidade.",
+     "p": [
+      "No Japão, ma significa valorizar o espaço vazio e as pausas.",
+      "Na Suécia, lagom significa a medida certa, nem demais nem de menos.",
+      "Muitas culturas compartilham a ideia de que o suficiente faz bem."
+     ],
+     "q": "Qual dessas ideias mais fala com você?",
+     "c": "Deixe hoje um pequeno espaço da sua casa vazio de propósito e aproveite."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Habits over one-time purges",
+     "g": "See why lasting change comes from small daily routines.",
+     "p": [
+      "A big purge feels good, but without habits clutter returns.",
+      "Tiny routines, like a daily reset, keep the benefits.",
+      "Attach a new habit to something you already do, like making coffee."
+     ],
+     "q": "Which small daily habit could you keep for a month?",
+     "c": "Pick one tiny habit and link it to an existing routine today."
+    },
+    "de": {
+     "t": "Gewohnheiten statt Einmal-Aktionen",
+     "g": "Verstehen, warum dauerhafte Veränderung aus kleinen täglichen Routinen kommt.",
+     "p": [
+      "Eine große Aktion fühlt sich gut an, doch ohne Gewohnheiten kehrt das Chaos zurück.",
+      "Kleine Routinen wie ein täglicher Reset erhalten den Gewinn.",
+      "Verknüpfe eine neue Gewohnheit mit etwas, das du ohnehin tust, etwa Kaffeekochen."
+     ],
+     "q": "Welche kleine tägliche Gewohnheit könntest du einen Monat durchhalten?",
+     "c": "Such dir eine winzige Gewohnheit aus und koppel sie heute an eine bestehende Routine."
+    },
+    "es": {
+     "t": "Hábitos mejor que limpiezas puntuales",
+     "g": "Ver por qué el cambio duradero nace de pequeñas rutinas diarias.",
+     "p": [
+      "Una gran limpieza sienta bien, pero sin hábitos el desorden vuelve.",
+      "Rutinas diminutas, como un reinicio diario, mantienen los beneficios.",
+      "Une un hábito nuevo a algo que ya haces, como preparar el café."
+     ],
+     "q": "¿Qué pequeño hábito diario podrías mantener un mes?",
+     "c": "Elige un hábito diminuto y únelo hoy a una rutina que ya tengas."
+    },
+    "fr": {
+     "t": "Des habitudes plutôt que des grands tris",
+     "g": "Voir pourquoi le changement durable vient de petites routines quotidiennes.",
+     "p": [
+      "Un grand tri fait du bien, mais sans habitudes le désordre revient.",
+      "De minuscules routines, comme une remise en ordre quotidienne, gardent les bénéfices.",
+      "Associe une nouvelle habitude à un geste déjà acquis, comme préparer le café."
+     ],
+     "q": "Quelle petite habitude quotidienne pourrais-tu tenir un mois ?",
+     "c": "Choisis une minuscule habitude et associe-la aujourd'hui à une routine existante."
+    },
+    "it": {
+     "t": "Abitudini meglio dei grandi repulisti",
+     "g": "Capire perché il cambiamento duraturo nasce da piccole routine quotidiane.",
+     "p": [
+      "Un grande repulisti fa bene, ma senza abitudini il disordine torna.",
+      "Routine minuscole, come un riordino quotidiano, mantengono i benefici.",
+      "Collega una nuova abitudine a qualcosa che fai già, come preparare il caffè."
+     ],
+     "q": "Quale piccola abitudine quotidiana potresti mantenere per un mese?",
+     "c": "Scegli un'abitudine minuscola e collegala oggi a una routine esistente."
+    },
+    "pt": {
+     "t": "Hábitos em vez de limpezas únicas",
+     "g": "Perceber por que a mudança duradoura vem de pequenas rotinas diárias.",
+     "p": [
+      "Uma grande limpeza sabe bem, mas sem hábitos a desarrumação volta.",
+      "Rotinas pequenas, como um reinício diário, mantêm os benefícios.",
+      "Liga um hábito novo a algo que já fazes, como fazer o café."
+     ],
+     "q": "Que pequeno hábito diário poderias manter durante um mês?",
+     "c": "Escolhe um hábito minúsculo e liga-o hoje a uma rotina que já tenhas."
+    },
+    "pt_BR": {
+     "t": "Hábitos em vez de faxinas únicas",
+     "g": "Entender por que a mudança duradoura vem de pequenas rotinas diárias.",
+     "p": [
+      "Uma faxina grande é boa, mas sem hábitos a bagunça volta.",
+      "Rotinas pequenas, como um reset diário, mantêm os benefícios.",
+      "Una um hábito novo a algo que você já faz, como passar o café."
+     ],
+     "q": "Que pequeno hábito diário você poderia manter por um mês?",
+     "c": "Escolha um hábito minúsculo e ligue hoje a uma rotina que você já tem."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Visualising your ideal day",
+     "g": "Use a picture of how you want to live to guide what you keep.",
+     "p": [
+      "Imagine a good ordinary day at home, from morning to evening.",
+      "Notice which objects help that day and which just get in the way.",
+      "Let that picture guide your choices, not what others own."
+     ],
+     "q": "What does your ideal ordinary day look like at home?",
+     "c": "Write five lines about your ideal day and underline the objects in it."
+    },
+    "de": {
+     "t": "Deinen idealen Tag vorstellen",
+     "g": "Ein Bild davon, wie du leben willst, leitet, was du behältst.",
+     "p": [
+      "Stell dir einen guten gewöhnlichen Tag zu Hause vor, vom Morgen bis zum Abend.",
+      "Achte darauf, welche Dinge diesen Tag unterstützen und welche nur im Weg sind.",
+      "Lass dieses Bild deine Entscheidungen leiten, nicht den Besitz anderer."
+     ],
+     "q": "Wie sieht dein idealer normaler Tag zu Hause aus?",
+     "c": "Schreib fünf Zeilen über deinen idealen Tag und unterstreich die Gegenstände darin."
+    },
+    "es": {
+     "t": "Visualizar tu día ideal",
+     "g": "Usar una imagen de cómo quieres vivir para decidir qué conservas.",
+     "p": [
+      "Imagina un buen día normal en casa, de la mañana a la noche.",
+      "Fíjate en qué objetos ayudan a ese día y cuáles solo estorban.",
+      "Deja que esa imagen guíe tus decisiones, no lo que tienen otros."
+     ],
+     "q": "¿Cómo es tu día normal ideal en casa?",
+     "c": "Escribe cinco líneas sobre tu día ideal y subraya los objetos que aparecen."
+    },
+    "fr": {
+     "t": "Visualiser ta journée idéale",
+     "g": "Utiliser une image de la vie que tu veux pour décider ce que tu gardes.",
+     "p": [
+      "Imagine une bonne journée ordinaire chez toi, du matin au soir.",
+      "Repère quels objets aident cette journée et lesquels gênent seulement.",
+      "Laisse cette image guider tes choix, pas ce que les autres possèdent."
+     ],
+     "q": "À quoi ressemble ta journée ordinaire idéale chez toi ?",
+     "c": "Écris cinq lignes sur ta journée idéale et souligne les objets cités."
+    },
+    "it": {
+     "t": "Visualizzare la tua giornata ideale",
+     "g": "Usare un'immagine di come vuoi vivere per guidare ciò che tieni.",
+     "p": [
+      "Immagina una bella giornata normale a casa, dal mattino alla sera.",
+      "Nota quali oggetti aiutano quella giornata e quali sono solo d'intralcio.",
+      "Lascia che quell'immagine guidi le scelte, non ciò che hanno gli altri."
+     ],
+     "q": "Com'è la tua giornata normale ideale a casa?",
+     "c": "Scrivi cinque righe sulla tua giornata ideale e sottolinea gli oggetti citati."
+    },
+    "pt": {
+     "t": "Visualizar o teu dia ideal",
+     "g": "Usar uma imagem de como queres viver para decidir o que guardas.",
+     "p": [
+      "Imagina um bom dia normal em casa, da manhã à noite.",
+      "Repara em que objetos ajudam esse dia e quais só atrapalham.",
+      "Deixa essa imagem guiar as tuas escolhas, não o que os outros têm."
+     ],
+     "q": "Como é o teu dia normal ideal em casa?",
+     "c": "Escreve cinco linhas sobre o teu dia ideal e sublinha os objetos que aparecem."
+    },
+    "pt_BR": {
+     "t": "Visualizando o seu dia ideal",
+     "g": "Usar uma imagem de como você quer viver para decidir o que guardar.",
+     "p": [
+      "Imagine um bom dia comum em casa, da manhã até a noite.",
+      "Note quais objetos ajudam esse dia e quais só atrapalham.",
+      "Deixe essa imagem guiar suas escolhas, não o que os outros têm."
+     ],
+     "q": "Como é o seu dia comum ideal em casa?",
+     "c": "Escreva cinco linhas sobre o seu dia ideal e sublinhe os objetos que aparecem."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month",
+     "g": "Look back at what felt easy, what felt hard and what changed.",
+     "p": [
+      "Recall your first decisions and how you felt making them.",
+      "Notice which habits stuck, such as the reset or the one-in, one-out rule.",
+      "Hard moments are useful information about what to adjust next."
+     ],
+     "q": "What has been the biggest change in your home or mindset so far?",
+     "c": "Write down one thing that was easy, one that was hard and one to keep doing."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Monat",
+     "g": "Zurückschauen, was leicht war, was schwer war und was sich verändert hat.",
+     "p": [
+      "Erinnere dich an deine ersten Entscheidungen und wie sie sich anfühlten.",
+      "Sieh nach, welche Gewohnheiten geblieben sind, etwa der Reset oder Eins-rein-eins-raus.",
+      "Schwere Momente zeigen, was du als Nächstes anpassen kannst."
+     ],
+     "q": "Was war bisher die größte Veränderung in deinem Zuhause oder deiner Einstellung?",
+     "c": "Notier etwas Leichtes, etwas Schweres und etwas, das du beibehalten willst."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes",
+     "g": "Mirar atrás: qué fue fácil, qué difícil y qué cambió.",
+     "p": [
+      "Recuerda tus primeras decisiones y cómo te sentiste al tomarlas.",
+      "Fíjate en qué hábitos se quedaron, como el reinicio o uno entra, uno sale.",
+      "Los momentos difíciles dan información sobre qué ajustar después."
+     ],
+     "q": "¿Cuál ha sido el mayor cambio en tu casa o tu mentalidad hasta ahora?",
+     "c": "Anota algo que fue fácil, algo difícil y algo que quieres seguir haciendo."
+    },
+    "fr": {
+     "t": "Bilan : ton premier mois",
+     "g": "Regarder en arrière : ce qui fut facile, difficile et ce qui a changé.",
+     "p": [
+      "Rappelle-toi tes premières décisions et ce que tu as ressenti.",
+      "Repère les habitudes qui ont tenu, comme la remise en ordre ou un entre, un sort.",
+      "Les moments difficiles disent ce qu'il faut ajuster ensuite."
+     ],
+     "q": "Quel a été le plus grand changement chez toi ou dans ta façon de penser ?",
+     "c": "Note une chose facile, une difficile et une à continuer."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese",
+     "g": "Guardare indietro: cosa è stato facile, difficile e cosa è cambiato.",
+     "p": [
+      "Ricorda le tue prime decisioni e come ti sei sentito.",
+      "Nota quali abitudini sono rimaste, come il reset o uno entra, uno esce.",
+      "I momenti difficili dicono cosa regolare dopo."
+     ],
+     "q": "Qual è stato finora il cambiamento più grande in casa o nella mentalità?",
+     "c": "Annota una cosa facile, una difficile e una da continuare a fare."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês",
+     "g": "Olhar para trás: o que foi fácil, o que foi difícil e o que mudou.",
+     "p": [
+      "Lembra as tuas primeiras decisões e como te sentiste.",
+      "Repara nos hábitos que ficaram, como o reinício ou um entra, um sai.",
+      "Os momentos difíceis dizem o que ajustar a seguir."
+     ],
+     "q": "Qual foi até agora a maior mudança em tua casa ou na tua mentalidade?",
+     "c": "Anota uma coisa fácil, uma difícil e uma que queres continuar a fazer."
+    },
+    "pt_BR": {
+     "t": "Revisão: o seu primeiro mês",
+     "g": "Olhar para trás: o que foi fácil, o que foi difícil e o que mudou.",
+     "p": [
+      "Lembre das suas primeiras decisões e de como você se sentiu.",
+      "Veja quais hábitos ficaram, como o reset ou um entra, um sai.",
+      "Os momentos difíceis dizem o que ajustar a seguir."
+     ],
+     "q": "Qual foi até agora a maior mudança na sua casa ou na sua mentalidade?",
+     "c": "Anote uma coisa fácil, uma difícil e uma para continuar fazendo."
+    }
+   }
+  }
+ ]
+}

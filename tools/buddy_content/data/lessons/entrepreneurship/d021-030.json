@@ -1,0 +1,835 @@
+{
+"topic": "entrepreneurship",
+"lessons": [
+{
+"d": 21,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "What makes you different",
+"g": "Find a clear reason someone would choose you over the alternatives.",
+"p": [
+"Differences can be speed, price, care, style, convenience or a special focus.",
+"Pick one or two differences that matter to your customer, not ten.",
+"If you cannot say it simply, keep refining until a stranger could repeat it."
+],
+"q": "Why do you choose one shop over another near you?",
+"c": "Complete: People choose me because... and test it on one friend."
+},
+"de": {
+"t": "Was dich unterscheidet",
+"g": "Finde einen klaren Grund, warum jemand dich statt der Alternativen wählt.",
+"p": [
+"Unterschiede können Tempo, Preis, Sorgfalt, Stil, Bequemlichkeit oder ein Fokus sein.",
+"Wähle ein oder zwei Unterschiede, die dem Kunden wichtig sind, nicht zehn.",
+"Kannst du es nicht einfach sagen, verfeinere, bis ein Fremder es wiederholen kann."
+],
+"q": "Warum wählst du ein Geschäft statt eines anderen in deiner Nähe?",
+"c": "Vervollständige: Menschen wählen mich, weil... und teste es an einem Freund."
+},
+"es": {
+"t": "Qué te hace diferente",
+"g": "Encuentra una razón clara para que alguien te elija frente a las alternativas.",
+"p": [
+"La diferencia puede ser rapidez, precio, cuidado, estilo, comodidad o un enfoque especial.",
+"Elige una o dos diferencias que importen a tu cliente, no diez.",
+"Si no puedes decirlo con sencillez, afínalo hasta que un extraño pueda repetirlo."
+],
+"q": "¿Por qué eliges una tienda en lugar de otra cerca de ti?",
+"c": "Completa: La gente me elige porque... y pruébalo con un amigo."
+},
+"fr": {
+"t": "Ce qui te distingue",
+"g": "Trouve une raison claire de te choisir plutôt que les alternatives.",
+"p": [
+"La différence peut être la rapidité, le prix, le soin, le style, la praticité ou un créneau précis.",
+"Retiens une ou deux différences qui comptent pour le client, pas dix.",
+"Si tu ne peux pas le dire simplement, affine jusqu'à ce qu'un inconnu le répète."
+],
+"q": "Pourquoi choisis-tu un magasin plutôt qu'un autre près de chez toi ?",
+"c": "Complète : On me choisit parce que... et teste-le auprès d'un ami."
+},
+"it": {
+"t": "Cosa ti rende diverso",
+"g": "Trova una ragione chiara per cui qualcuno sceglierebbe te rispetto alle alternative.",
+"p": [
+"La differenza può essere velocità, prezzo, cura, stile, comodità o un focus speciale.",
+"Scegli una o due differenze che contano per il cliente, non dieci.",
+"Se non riesci a dirlo semplicemente, affinalo finché uno sconosciuto può ripeterlo."
+],
+"q": "Perché scegli un negozio invece di un altro vicino a te?",
+"c": "Completa: Le persone scelgono me perché... e provalo con un amico."
+},
+"pt": {
+"t": "O que te torna diferente",
+"g": "Encontra uma razão clara para alguém te escolher em vez das alternativas.",
+"p": [
+"A diferença pode ser rapidez, preço, cuidado, estilo, comodidade ou um foco especial.",
+"Escolhe uma ou duas diferenças que importem ao cliente, não dez.",
+"Se não consegues dizê-lo com simplicidade, afina até um estranho o repetir."
+],
+"q": "Porque escolhes uma loja em vez de outra perto de ti?",
+"c": "Completa: As pessoas escolhem-me porque... e testa com um amigo."
+},
+"pt_BR": {
+"t": "O que torna você diferente",
+"g": "Encontre uma razão clara para alguém escolher você em vez das alternativas.",
+"p": [
+"A diferença pode ser rapidez, preço, cuidado, estilo, comodidade ou um foco especial.",
+"Escolha uma ou duas diferenças que importem ao cliente, não dez.",
+"Se não consegue dizer com simplicidade, refine até um estranho conseguir repetir."
+],
+"q": "Por que você escolhe uma loja em vez de outra perto de você?",
+"c": "Complete: As pessoas me escolhem porque... e teste com um amigo."
+}
+}
+},
+{
+"d": 22,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Testing an idea cheaply",
+"g": "Learn small experiments that show whether people care before you invest much.",
+"p": [
+"An experiment is a quick, low-cost way to learn something specific.",
+"Decide what you want to learn and what result would count as a yes.",
+"Test with real people and real actions, not just kind words."
+],
+"q": "What is the cheapest way you could find out if your idea interests anyone?",
+"c": "Design one experiment that costs almost nothing and takes under a week."
+},
+"de": {
+"t": "Eine Idee günstig testen",
+"g": "Lerne kleine Experimente, die zeigen, ob Menschen interessiert sind, bevor du viel investierst.",
+"p": [
+"Ein Experiment ist ein schneller, günstiger Weg, etwas Bestimmtes zu lernen.",
+"Lege fest, was du lernen willst und welches Ergebnis ein Ja bedeutet.",
+"Teste mit echten Menschen und echten Handlungen, nicht nur freundlichen Worten."
+],
+"q": "Wie könntest du am billigsten herausfinden, ob sich jemand für deine Idee interessiert?",
+"c": "Entwirf ein Experiment, das fast nichts kostet und unter einer Woche dauert."
+},
+"es": {
+"t": "Probar una idea con poco gasto",
+"g": "Aprende experimentos pequeños que muestran si a la gente le importa antes de invertir mucho.",
+"p": [
+"Un experimento es una forma rápida y barata de aprender algo concreto.",
+"Decide qué quieres aprender y qué resultado contaría como un sí.",
+"Prueba con personas y acciones reales, no solo palabras amables."
+],
+"q": "¿Cuál es la forma más barata de saber si tu idea interesa a alguien?",
+"c": "Diseña un experimento que cueste casi nada y dure menos de una semana."
+},
+"fr": {
+"t": "Tester une idée à moindre coût",
+"g": "Découvre de petites expériences qui montrent si les gens s'y intéressent avant d'investir beaucoup.",
+"p": [
+"Une expérience est un moyen rapide et peu coûteux d'apprendre une chose précise.",
+"Décide ce que tu veux apprendre et quel résultat vaudrait un oui.",
+"Teste avec de vraies personnes et de vraies actions, pas seulement des mots gentils."
+],
+"q": "Quel est le moyen le moins cher de savoir si ton idée intéresse quelqu'un ?",
+"c": "Conçois une expérience qui ne coûte presque rien et dure moins d'une semaine."
+},
+"it": {
+"t": "Testare un'idea a basso costo",
+"g": "Impara piccoli esperimenti che mostrano se alle persone interessa prima di investire molto.",
+"p": [
+"Un esperimento è un modo rapido ed economico per imparare qualcosa di preciso.",
+"Decidi cosa vuoi imparare e quale risultato conterebbe come un sì.",
+"Testa con persone e azioni reali, non solo parole gentili."
+],
+"q": "Qual è il modo più economico per capire se la tua idea interessa a qualcuno?",
+"c": "Progetta un esperimento che costa quasi nulla e dura meno di una settimana."
+},
+"pt": {
+"t": "Testar uma ideia a baixo custo",
+"g": "Aprende pequenas experiências que mostram se as pessoas se interessam antes de investires muito.",
+"p": [
+"Uma experiência é um modo rápido e barato de aprender algo concreto.",
+"Decide o que queres aprender e que resultado contaria como um sim.",
+"Testa com pessoas e ações reais, não só palavras simpáticas."
+],
+"q": "Qual é a forma mais barata de saberes se a tua ideia interessa a alguém?",
+"c": "Desenha uma experiência que custe quase nada e dure menos de uma semana."
+},
+"pt_BR": {
+"t": "Testar uma ideia a baixo custo",
+"g": "Aprenda pequenos experimentos que mostram se as pessoas se interessam antes de investir muito.",
+"p": [
+"Um experimento é um jeito rápido e barato de aprender algo concreto.",
+"Decida o que quer aprender e que resultado contaria como um sim.",
+"Teste com pessoas e ações reais, não só palavras simpáticas."
+],
+"q": "Qual é o jeito mais barato de descobrir se sua ideia interessa a alguém?",
+"c": "Desenhe um experimento que custe quase nada e leve menos de uma semana."
+}
+}
+},
+{
+"d": 23,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "The simplest first version",
+"g": "Understand what a minimum viable product is and why simple beats perfect at the start.",
+"p": [
+"An MVP is the smallest version that lets you learn from real users.",
+"Cut every feature that is not needed to test your core promise.",
+"A rough first version that people use beats a perfect one nobody sees."
+],
+"q": "What is the smallest piece of your idea someone could try this week?",
+"c": "List the three features of your idea and keep only the one that matters most."
+},
+"de": {
+"t": "Die einfachste erste Version",
+"g": "Verstehe, was ein minimal funktionsfähiges Produkt ist und warum einfach am Anfang gewinnt.",
+"p": [
+"Ein MVP ist die kleinste Version, aus der du mit echten Nutzern lernen kannst.",
+"Streiche jede Funktion, die du nicht brauchst, um dein Kernversprechen zu testen.",
+"Eine grobe erste Version, die genutzt wird, schlägt eine perfekte, die niemand sieht."
+],
+"q": "Welches kleinste Stück deiner Idee könnte jemand diese Woche ausprobieren?",
+"c": "Liste drei Funktionen deiner Idee und behalte nur die wichtigste."
+},
+"es": {
+"t": "La primera versión más simple",
+"g": "Entiende qué es un producto mínimo viable y por qué lo simple vence a lo perfecto al inicio.",
+"p": [
+"Un MVP es la versión más pequeña con la que aprendes de usuarios reales.",
+"Elimina toda función que no haga falta para probar tu promesa central.",
+"Una primera versión tosca que la gente usa vence a una perfecta que nadie ve."
+],
+"q": "¿Cuál es la pieza más pequeña de tu idea que alguien podría probar esta semana?",
+"c": "Lista tres funciones de tu idea y quédate solo con la más importante."
+},
+"fr": {
+"t": "La version la plus simple",
+"g": "Comprends ce qu'est un produit minimum viable et pourquoi le simple bat le parfait au départ.",
+"p": [
+"Un MVP est la plus petite version qui permet d'apprendre auprès de vrais utilisateurs.",
+"Retire toute fonction inutile pour tester ta promesse centrale.",
+"Une première version rudimentaire utilisée vaut mieux qu'une parfaite que personne ne voit."
+],
+"q": "Quelle est la plus petite partie de ton idée que quelqu'un pourrait tester cette semaine ?",
+"c": "Liste trois fonctions de ton idée et ne garde que la plus importante."
+},
+"it": {
+"t": "La versione più semplice",
+"g": "Capisci cos'è un prodotto minimo funzionante e perché semplice batte perfetto all'inizio.",
+"p": [
+"Un MVP è la versione più piccola da cui imparare con utenti reali.",
+"Taglia ogni funzione non necessaria per testare la promessa centrale.",
+"Una prima versione grezza che la gente usa batte una perfetta che nessuno vede."
+],
+"q": "Qual è il pezzo più piccolo della tua idea che qualcuno potrebbe provare questa settimana?",
+"c": "Elenca tre funzioni della tua idea e tieni solo la più importante."
+},
+"pt": {
+"t": "A primeira versão mais simples",
+"g": "Percebe o que é um produto mínimo viável e porque o simples vence o perfeito no início.",
+"p": [
+"Um MVP é a menor versão com que podes aprender com utilizadores reais.",
+"Corta todas as funções desnecessárias para testar a promessa central.",
+"Uma primeira versão tosca que as pessoas usam vence uma perfeita que ninguém vê."
+],
+"q": "Qual é a menor parte da tua ideia que alguém podia experimentar esta semana?",
+"c": "Lista três funções da tua ideia e fica só com a mais importante."
+},
+"pt_BR": {
+"t": "A primeira versão mais simples",
+"g": "Entenda o que é um produto mínimo viável e por que o simples vence o perfeito no início.",
+"p": [
+"Um MVP é a menor versão com que você aprende com usuários reais.",
+"Corte todas as funções desnecessárias para testar a promessa central.",
+"Uma primeira versão tosca que as pessoas usam vence uma perfeita que ninguém vê."
+],
+"q": "Qual é a menor parte da sua ideia que alguém poderia experimentar esta semana?",
+"c": "Liste três funções da sua ideia e fique só com a mais importante."
+}
+}
+},
+{
+"d": 24,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "A landing page test",
+"g": "Describe an offer on a simple page to see whether people show interest.",
+"p": [
+"A landing page explains one offer clearly and invites one action.",
+"Include a headline, a few benefits and a button like Tell me more.",
+"Count how many visitors take the action; interest is measurable."
+],
+"q": "What one action would show you that a visitor is truly interested?",
+"c": "Draft the headline, three benefits and one call to action for your idea."
+},
+"de": {
+"t": "Ein Landingpage-Test",
+"g": "Beschreibe ein Angebot auf einer einfachen Seite und sieh, ob Interesse entsteht.",
+"p": [
+"Eine Landingpage erklärt ein Angebot klar und lädt zu einer Handlung ein.",
+"Nimm eine Überschrift, wenige Vorteile und einen Button wie Mehr erfahren.",
+"Zähle, wie viele Besucher handeln; Interesse lässt sich messen."
+],
+"q": "Welche eine Handlung würde dir echtes Interesse eines Besuchers zeigen?",
+"c": "Entwirf Überschrift, drei Vorteile und einen Handlungsaufruf für deine Idee."
+},
+"es": {
+"t": "Una prueba con página de destino",
+"g": "Describe una oferta en una página simple para ver si la gente muestra interés.",
+"p": [
+"Una página de destino explica una oferta con claridad e invita a una acción.",
+"Incluye un titular, unos beneficios y un botón como Quiero saber más.",
+"Cuenta cuántos visitantes hacen la acción; el interés se puede medir."
+],
+"q": "¿Qué única acción te mostraría que un visitante está de verdad interesado?",
+"c": "Redacta el titular, tres beneficios y una llamada a la acción para tu idea."
+},
+"fr": {
+"t": "Un test de page d'atterrissage",
+"g": "Décris une offre sur une page simple pour voir si les gens s'y intéressent.",
+"p": [
+"Une page d'atterrissage explique clairement une offre et invite à une seule action.",
+"Mets un titre, quelques bénéfices et un bouton du type En savoir plus.",
+"Compte les visiteurs qui agissent; l'intérêt se mesure."
+],
+"q": "Quelle action unique te montrerait qu'un visiteur est vraiment intéressé ?",
+"c": "Rédige le titre, trois bénéfices et un appel à l'action pour ton idée."
+},
+"it": {
+"t": "Un test con landing page",
+"g": "Descrivi un'offerta su una pagina semplice per vedere se c'è interesse.",
+"p": [
+"Una landing page spiega chiaramente un'offerta e invita a una sola azione.",
+"Includi un titolo, pochi vantaggi e un pulsante come Voglio saperne di più.",
+"Conta quanti visitatori compiono l'azione; l'interesse si può misurare."
+],
+"q": "Quale singola azione ti mostrerebbe che un visitatore è davvero interessato?",
+"c": "Scrivi titolo, tre vantaggi e un invito all'azione per la tua idea."
+},
+"pt": {
+"t": "Um teste com página de destino",
+"g": "Descreve uma oferta numa página simples para ver se as pessoas mostram interesse.",
+"p": [
+"Uma página de destino explica uma oferta com clareza e convida a uma ação.",
+"Inclui um título, alguns benefícios e um botão como Quero saber mais.",
+"Conta quantos visitantes agem; o interesse pode medir-se."
+],
+"q": "Que única ação te mostraria que um visitante está mesmo interessado?",
+"c": "Escreve o título, três benefícios e um apelo à ação para a tua ideia."
+},
+"pt_BR": {
+"t": "Um teste com página de destino",
+"g": "Descreva uma oferta numa página simples para ver se as pessoas mostram interesse.",
+"p": [
+"Uma página de destino explica uma oferta com clareza e convida a uma ação.",
+"Inclua um título, alguns benefícios e um botão como Quero saber mais.",
+"Conte quantos visitantes agem; o interesse pode ser medido."
+],
+"q": "Que única ação mostraria a você que um visitante está realmente interessado?",
+"c": "Escreva o título, três benefícios e um chamado à ação para a sua ideia."
+}
+}
+},
+{
+"d": 25,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Pre-orders and waiting lists",
+"g": "Learn how early sign-ups or commitments signal real demand.",
+"p": [
+"A waiting list shows who wants updates; a pre-order shows who commits.",
+"Real commitment, like time or a deposit, is a stronger signal than a like.",
+"Be honest and clear about what people are signing up for and when."
+],
+"q": "What is the difference between someone saying nice idea and signing up?",
+"c": "Write the one-line invitation you would use to start a waiting list."
+},
+"de": {
+"t": "Vorbestellungen und Wartelisten",
+"g": "Lerne, wie frühe Anmeldungen oder Zusagen echte Nachfrage zeigen.",
+"p": [
+"Eine Warteliste zeigt, wer Neuigkeiten will; eine Vorbestellung, wer sich festlegt.",
+"Echte Verbindlichkeit, etwa Zeit oder Anzahlung, ist stärker als ein Like.",
+"Sei ehrlich und klar, wofür sich Menschen anmelden und wann es losgeht."
+],
+"q": "Was unterscheidet ein Schöne Idee von einer echten Anmeldung?",
+"c": "Schreib die Einzeiler-Einladung, mit der du eine Warteliste starten würdest."
+},
+"es": {
+"t": "Preventas y listas de espera",
+"g": "Aprende cómo los registros o compromisos tempranos señalan demanda real.",
+"p": [
+"Una lista de espera muestra quién quiere novedades; una preventa, quién se compromete.",
+"Un compromiso real, como tiempo o un anticipo, pesa más que un me gusta.",
+"Sé honesto y claro sobre a qué se apuntan las personas y cuándo."
+],
+"q": "¿Qué diferencia hay entre decir qué buena idea y apuntarse?",
+"c": "Escribe la invitación de una línea con la que abrirías una lista de espera."
+},
+"fr": {
+"t": "Précommandes et listes d'attente",
+"g": "Apprends comment les inscriptions ou engagements précoces révèlent une vraie demande.",
+"p": [
+"Une liste d'attente montre qui veut des nouvelles; une précommande, qui s'engage.",
+"Un engagement réel, comme du temps ou un acompte, pèse plus qu'un j'aime.",
+"Sois honnête et clair sur ce à quoi les gens s'inscrivent et quand."
+],
+"q": "Quelle différence entre dire belle idée et s'inscrire ?",
+"c": "Écris l'invitation en une ligne pour lancer une liste d'attente."
+},
+"it": {
+"t": "Preordini e liste d'attesa",
+"g": "Scopri come iscrizioni o impegni precoci mostrano una domanda reale.",
+"p": [
+"Una lista d'attesa mostra chi vuole aggiornamenti; un preordine, chi si impegna.",
+"Un impegno reale, come tempo o una caparra, pesa più di un mi piace.",
+"Sii onesto e chiaro su a cosa si iscrivono le persone e quando."
+],
+"q": "Che differenza c'è tra dire bella idea e iscriversi?",
+"c": "Scrivi l'invito di una riga con cui apriresti una lista d'attesa."
+},
+"pt": {
+"t": "Pré-encomendas e listas de espera",
+"g": "Aprende como inscrições ou compromissos iniciais mostram procura real.",
+"p": [
+"Uma lista de espera mostra quem quer novidades; uma pré-encomenda, quem se compromete.",
+"Um compromisso real, como tempo ou um sinal, pesa mais do que um gosto.",
+"Sê honesto e claro sobre aquilo a que as pessoas se inscrevem e quando."
+],
+"q": "Qual é a diferença entre dizer boa ideia e inscrever-se?",
+"c": "Escreve o convite de uma linha com que abririas uma lista de espera."
+},
+"pt_BR": {
+"t": "Pré-vendas e listas de espera",
+"g": "Aprenda como inscrições ou compromissos iniciais mostram demanda real.",
+"p": [
+"Uma lista de espera mostra quem quer novidades; uma pré-venda, quem se compromete.",
+"Um compromisso real, como tempo ou um sinal, pesa mais do que uma curtida.",
+"Seja honesto e claro sobre aquilo em que as pessoas se inscrevem e quando."
+],
+"q": "Qual é a diferença entre dizer boa ideia e se inscrever?",
+"c": "Escreva o convite de uma linha com que você abriria uma lista de espera."
+}
+}
+},
+{
+"d": 26,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Learning from a no",
+"g": "Treat rejection as information that helps you improve the idea.",
+"p": [
+"A no is rarely about you; it tells you something about fit, timing or clarity.",
+"Ask politely: What would have made this a yes for you?",
+"Collect nos like data and look for patterns across several people."
+],
+"q": "How do you usually react when someone says no to you?",
+"c": "After your next no, write down the reason and one thing you could change."
+},
+"de": {
+"t": "Aus einem Nein lernen",
+"g": "Sieh Ablehnung als Information, die deine Idee verbessert.",
+"p": [
+"Ein Nein betrifft selten dich; es sagt etwas über Passung, Zeitpunkt oder Klarheit.",
+"Frag höflich: Was hätte es für dich zu einem Ja gemacht?",
+"Sammle Neins wie Daten und suche Muster über mehrere Personen."
+],
+"q": "Wie reagierst du meist, wenn jemand Nein zu dir sagt?",
+"c": "Schreib nach deinem nächsten Nein den Grund und eine mögliche Änderung auf."
+},
+"es": {
+"t": "Aprender de un no",
+"g": "Trata el rechazo como información que mejora tu idea.",
+"p": [
+"Un no rara vez trata de ti; indica algo sobre encaje, momento o claridad.",
+"Pregunta con cortesía: ¿Qué lo habría convertido en un sí para ti?",
+"Reúne los noes como datos y busca patrones entre varias personas."
+],
+"q": "¿Cómo sueles reaccionar cuando alguien te dice que no?",
+"c": "Tras tu próximo no, anota el motivo y una cosa que podrías cambiar."
+},
+"fr": {
+"t": "Apprendre d'un non",
+"g": "Considère le refus comme une information qui améliore ton idée.",
+"p": [
+"Un non parle rarement de toi; il renseigne sur l'adéquation, le moment ou la clarté.",
+"Demande poliment : Qu'est-ce qui aurait fait de ceci un oui pour toi ?",
+"Collecte les non comme des données et cherche des tendances chez plusieurs personnes."
+],
+"q": "Comment réagis-tu d'habitude quand on te dit non ?",
+"c": "Après ton prochain non, note la raison et une chose à changer."
+},
+"it": {
+"t": "Imparare da un no",
+"g": "Tratta il rifiuto come un'informazione che migliora la tua idea.",
+"p": [
+"Un no raramente riguarda te; dice qualcosa su adeguatezza, momento o chiarezza.",
+"Chiedi con gentilezza: Cosa lo avrebbe reso un sì per te?",
+"Raccogli i no come dati e cerca schemi tra più persone."
+],
+"q": "Come reagisci di solito quando qualcuno ti dice di no?",
+"c": "Dopo il prossimo no, annota il motivo e una cosa che potresti cambiare."
+},
+"pt": {
+"t": "Aprender com um não",
+"g": "Trata a rejeição como informação que melhora a tua ideia.",
+"p": [
+"Um não raramente é sobre ti; diz algo sobre adequação, momento ou clareza.",
+"Pergunta com simpatia: O que teria feito disto um sim para ti?",
+"Recolhe os nãos como dados e procura padrões entre várias pessoas."
+],
+"q": "Como costumas reagir quando alguém te diz que não?",
+"c": "Depois do teu próximo não, anota o motivo e uma coisa que podias mudar."
+},
+"pt_BR": {
+"t": "Aprender com um não",
+"g": "Trate a rejeição como informação que melhora a sua ideia.",
+"p": [
+"Um não raramente é sobre você; diz algo sobre adequação, momento ou clareza.",
+"Pergunte com educação: O que teria feito disto um sim para você?",
+"Colete os nãos como dados e procure padrões entre várias pessoas."
+],
+"q": "Como você costuma reagir quando alguém diz não?",
+"c": "Depois do seu próximo não, anote o motivo e uma coisa que poderia mudar."
+}
+}
+},
+{
+"d": 27,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Pivoting gracefully",
+"g": "Change direction based on what you learn without losing heart.",
+"p": [
+"A pivot keeps your learning but changes the customer, problem or solution.",
+"Review your evidence: which part works, which part is stuck?",
+"Pivoting is not failing; it is using what you learned wisely."
+],
+"q": "Has changing your plan ever led you somewhere better than expected?",
+"c": "Write one thing you learned so far and one possible change it suggests."
+},
+"de": {
+"t": "Elegant die Richtung wechseln",
+"g": "Ändere die Richtung anhand deiner Erkenntnisse, ohne den Mut zu verlieren.",
+"p": [
+"Ein Pivot behält dein Wissen, ändert aber Kunden, Problem oder Lösung.",
+"Prüfe deine Belege: Was funktioniert, wo hakt es?",
+"Ein Pivot ist kein Scheitern; du nutzt klug, was du gelernt hast."
+],
+"q": "Hat dich ein geänderter Plan schon mal weiter gebracht als erwartet?",
+"c": "Schreib auf, was du gelernt hast, und eine mögliche Änderung daraus."
+},
+"es": {
+"t": "Cambiar de rumbo con elegancia",
+"g": "Cambia de dirección según lo que aprendes sin perder el ánimo.",
+"p": [
+"Un giro conserva lo aprendido, pero cambia el cliente, el problema o la solución.",
+"Revisa tus pruebas: ¿qué funciona y qué está atascado?",
+"Girar no es fracasar; es usar con sabiduría lo que aprendiste."
+],
+"q": "¿Cambiar de plan te llevó alguna vez a algo mejor de lo esperado?",
+"c": "Escribe una cosa que hayas aprendido y un posible cambio que sugiere."
+},
+"fr": {
+"t": "Pivoter avec élégance",
+"g": "Change de cap selon ce que tu apprends, sans perdre courage.",
+"p": [
+"Un pivot garde ce que tu as appris mais change le client, le problème ou la solution.",
+"Passe en revue tes preuves : qu'est-ce qui marche, qu'est-ce qui bloque ?",
+"Pivoter n'est pas échouer; c'est bien utiliser ce que tu as appris."
+],
+"q": "Changer de plan t'a-t-il déjà mené plus loin que prévu ?",
+"c": "Écris une chose apprise jusqu'ici et un changement possible qu'elle suggère."
+},
+"it": {
+"t": "Cambiare rotta con grazia",
+"g": "Cambia direzione in base a ciò che impari senza perderti d'animo.",
+"p": [
+"Un pivot mantiene ciò che hai imparato ma cambia cliente, problema o soluzione.",
+"Rivedi le prove: cosa funziona e cosa è bloccato?",
+"Cambiare rotta non è fallire; è usare con saggezza ciò che hai imparato."
+],
+"q": "Cambiare piano ti ha mai portato più lontano del previsto?",
+"c": "Scrivi una cosa imparata finora e un possibile cambiamento che suggerisce."
+},
+"pt": {
+"t": "Mudar de rumo com elegância",
+"g": "Muda de direção com base no que aprendes sem perder o ânimo.",
+"p": [
+"Uma mudança mantém o que aprendeste, mas altera o cliente, o problema ou a solução.",
+"Revê as tuas provas: o que funciona e o que está encravado?",
+"Mudar de rumo não é falhar; é usar bem o que aprendeste."
+],
+"q": "Mudar de plano já te levou a algo melhor do que esperavas?",
+"c": "Escreve uma coisa que aprendeste e uma possível mudança que ela sugere."
+},
+"pt_BR": {
+"t": "Mudar de rumo com elegância",
+"g": "Mude de direção com base no que aprende sem perder o ânimo.",
+"p": [
+"Uma mudança mantém o que você aprendeu, mas altera o cliente, o problema ou a solução.",
+"Reveja suas provas: o que funciona e o que está travado?",
+"Mudar de rumo não é fracassar; é usar bem o que você aprendeu."
+],
+"q": "Mudar de plano já levou você a algo melhor do que esperava?",
+"c": "Escreva uma coisa que aprendeu e uma possível mudança que ela sugere."
+}
+}
+},
+{
+"d": 28,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Famous humble beginnings",
+"g": "See how well-known companies started in garages, kitchens and dorm rooms.",
+"p": [
+"Several famous companies began as small projects by a few people at home.",
+"They often started by solving a simple problem for a few early users.",
+"Growth came from learning, patience and many small improvements over time."
+],
+"q": "Which well-known company's origin story do you find most inspiring?",
+"c": "Look up one famous company's first year and note the very first thing they did."
+},
+"de": {
+"t": "Berühmte bescheidene Anfänge",
+"g": "Sieh, wie bekannte Firmen in Garagen, Küchen und Studentenzimmern begannen.",
+"p": [
+"Mehrere berühmte Firmen starteten als kleine Projekte weniger Leute zu Hause.",
+"Oft lösten sie zuerst ein einfaches Problem für wenige frühe Nutzer.",
+"Wachstum kam aus Lernen, Geduld und vielen kleinen Verbesserungen."
+],
+"q": "Welche Gründungsgeschichte eines bekannten Unternehmens inspiriert dich am meisten?",
+"c": "Recherchiere das erste Jahr einer berühmten Firma und notiere ihren allerersten Schritt."
+},
+"es": {
+"t": "Humildes comienzos famosos",
+"g": "Descubre cómo empresas conocidas nacieron en garajes, cocinas y habitaciones de estudiantes.",
+"p": [
+"Varias empresas famosas comenzaron como pequeños proyectos de unas pocas personas en casa.",
+"Solían empezar resolviendo un problema simple para unos pocos primeros usuarios.",
+"El crecimiento vino de aprender, paciencia y muchas pequeñas mejoras."
+],
+"q": "¿Qué historia de origen de una empresa conocida te inspira más?",
+"c": "Busca el primer año de una empresa famosa y anota lo primerísimo que hizo."
+},
+"fr": {
+"t": "Humbles débuts célèbres",
+"g": "Vois comment des entreprises connues ont démarré dans des garages, cuisines et chambres d'étudiant.",
+"p": [
+"Plusieurs entreprises célèbres sont nées de petits projets à quelques-uns, à la maison.",
+"Elles ont souvent commencé par résoudre un problème simple pour quelques premiers utilisateurs.",
+"La croissance est venue de l'apprentissage, de la patience et de petites améliorations."
+],
+"q": "Quelle histoire de fondation d'une entreprise connue t'inspire le plus ?",
+"c": "Cherche la première année d'une entreprise célèbre et note sa toute première action."
+},
+"it": {
+"t": "Umili inizi famosi",
+"g": "Scopri come aziende note sono nate in garage, cucine e camerette.",
+"p": [
+"Diverse aziende famose sono nate come piccoli progetti di poche persone in casa.",
+"Spesso hanno iniziato risolvendo un problema semplice per pochi primi utenti.",
+"La crescita è venuta da apprendimento, pazienza e tanti piccoli miglioramenti."
+],
+"q": "La storia di quale azienda nota ti ispira di più?",
+"c": "Cerca il primo anno di un'azienda famosa e annota la primissima cosa che fece."
+},
+"pt": {
+"t": "Humildes começos famosos",
+"g": "Vê como empresas conhecidas nasceram em garagens, cozinhas e quartos de estudante.",
+"p": [
+"Várias empresas famosas começaram como pequenos projetos de poucas pessoas em casa.",
+"Muitas vezes começaram por resolver um problema simples para poucos primeiros utilizadores.",
+"O crescimento veio de aprender, paciência e muitas pequenas melhorias."
+],
+"q": "A história de origem de que empresa conhecida mais te inspira?",
+"c": "Pesquisa o primeiro ano de uma empresa famosa e anota a primeira coisa que fez."
+},
+"pt_BR": {
+"t": "Humildes começos famosos",
+"g": "Veja como empresas conhecidas nasceram em garagens, cozinhas e quartos de estudante.",
+"p": [
+"Várias empresas famosas começaram como pequenos projetos de poucas pessoas em casa.",
+"Muitas vezes começaram resolvendo um problema simples para poucos primeiros usuários.",
+"O crescimento veio de aprender, paciência e muitas pequenas melhorias."
+],
+"q": "A história de origem de qual empresa conhecida mais inspira você?",
+"c": "Pesquise o primeiro ano de uma empresa famosa e anote a primeira coisa que ela fez."
+}
+}
+},
+{
+"d": 29,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Your first idea canvas",
+"g": "Put customer, problem, solution and value on one page.",
+"p": [
+"Draw four boxes: customer, problem, solution and value promise.",
+"Keep each box to one or two lines; clarity matters more than detail.",
+"Mark which boxes are facts you checked and which are still guesses."
+],
+"q": "Which box of your canvas feels weakest or most uncertain?",
+"c": "Fill the four boxes for your best idea and underline every guess."
+},
+"de": {
+"t": "Dein erstes Ideen-Canvas",
+"g": "Bringe Kunde, Problem, Lösung und Nutzen auf eine Seite.",
+"p": [
+"Zeichne vier Kästen: Kunde, Problem, Lösung und Nutzenversprechen.",
+"Halte jeden Kasten bei ein bis zwei Zeilen; Klarheit zählt mehr als Detail.",
+"Markiere, welche Kästen geprüfte Fakten und welche noch Vermutungen sind."
+],
+"q": "Welcher Kasten deines Canvas wirkt am schwächsten oder unsichersten?",
+"c": "Füll die vier Kästen für deine beste Idee und unterstreiche jede Vermutung."
+},
+"es": {
+"t": "Tu primer lienzo de ideas",
+"g": "Reúne cliente, problema, solución y valor en una sola página.",
+"p": [
+"Dibuja cuatro cajas: cliente, problema, solución y promesa de valor.",
+"Deja cada caja en una o dos líneas; la claridad importa más que el detalle.",
+"Marca cuáles son hechos comprobados y cuáles siguen siendo suposiciones."
+],
+"q": "¿Qué caja de tu lienzo te parece más débil o incierta?",
+"c": "Rellena las cuatro cajas con tu mejor idea y subraya cada suposición."
+},
+"fr": {
+"t": "Ton premier canevas d'idée",
+"g": "Réunis client, problème, solution et valeur sur une seule page.",
+"p": [
+"Dessine quatre cases : client, problème, solution et promesse de valeur.",
+"Une ou deux lignes par case; la clarté compte plus que le détail.",
+"Marque ce qui est vérifié et ce qui reste de l'hypothèse."
+],
+"q": "Quelle case de ton canevas te semble la plus faible ou incertaine ?",
+"c": "Remplis les quatre cases pour ta meilleure idée et souligne chaque hypothèse."
+},
+"it": {
+"t": "La tua prima tela di idea",
+"g": "Metti cliente, problema, soluzione e valore su una sola pagina.",
+"p": [
+"Disegna quattro riquadri: cliente, problema, soluzione e promessa di valore.",
+"Una o due righe per riquadro; la chiarezza conta più del dettaglio.",
+"Segna quali sono fatti verificati e quali ancora supposizioni."
+],
+"q": "Quale riquadro della tua tela ti sembra più debole o incerto?",
+"c": "Riempi i quattro riquadri per la tua idea migliore e sottolinea ogni supposizione."
+},
+"pt": {
+"t": "A tua primeira tela de ideia",
+"g": "Junta cliente, problema, solução e valor numa só página.",
+"p": [
+"Desenha quatro caixas: cliente, problema, solução e promessa de valor.",
+"Mantém cada caixa em uma ou duas linhas; a clareza importa mais do que o detalhe.",
+"Marca quais são factos verificados e quais ainda são suposições."
+],
+"q": "Que caixa da tua tela te parece mais fraca ou incerta?",
+"c": "Preenche as quatro caixas da tua melhor ideia e sublinha cada suposição."
+},
+"pt_BR": {
+"t": "Sua primeira tela de ideia",
+"g": "Reúna cliente, problema, solução e valor em uma só página.",
+"p": [
+"Desenhe quatro caixas: cliente, problema, solução e promessa de valor.",
+"Mantenha cada caixa em uma ou duas linhas; clareza importa mais do que detalhe.",
+"Marque quais são fatos verificados e quais ainda são suposições."
+],
+"q": "Qual caixa da sua tela parece a mais fraca ou incerta?",
+"c": "Preencha as quatro caixas da sua melhor ideia e sublinhe cada suposição."
+}
+}
+},
+{
+"d": 30,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Review: ideas and customers",
+"g": "Recap spotting problems, knowing customers and testing ideas.",
+"p": [
+"You noticed problems, kept an idea notebook and learned to brainstorm freely.",
+"You pictured a customer, asked good questions and observed real behaviour.",
+"You tested cheaply, listened to nos and learned that pivoting is progress."
+],
+"q": "Which lesson from this month changed how you see your idea?",
+"c": "Pick your strongest idea and write its customer, problem and next experiment."
+},
+"de": {
+"t": "Rückblick: Ideen und Kunden",
+"g": "Wiederhole Probleme erkennen, Kunden verstehen und Ideen testen.",
+"p": [
+"Du hast Probleme bemerkt, ein Ideenbuch geführt und frei gesammelt.",
+"Du hast dir einen Kunden vorgestellt, gut gefragt und echtes Verhalten beobachtet.",
+"Du hast günstig getestet, Neins zugehört und gelernt, dass ein Pivot Fortschritt ist."
+],
+"q": "Welche Lektion dieses Monats hat deinen Blick auf deine Idee verändert?",
+"c": "Wähle deine stärkste Idee und schreib Kunde, Problem und nächstes Experiment auf."
+},
+"es": {
+"t": "Repaso: ideas y clientes",
+"g": "Repasa cómo detectar problemas, conocer clientes y probar ideas.",
+"p": [
+"Notaste problemas, llevaste un cuaderno de ideas y aprendiste a generar sin freno.",
+"Imaginaste a un cliente, preguntaste bien y observaste el comportamiento real.",
+"Probaste con poco gasto, escuchaste noes y viste que girar es avanzar."
+],
+"q": "¿Qué lección de este mes cambió tu forma de ver tu idea?",
+"c": "Elige tu idea más fuerte y escribe su cliente, problema y próximo experimento."
+},
+"fr": {
+"t": "Révision : idées et clients",
+"g": "Récapitule repérer des problèmes, connaître les clients et tester des idées.",
+"p": [
+"Tu as repéré des problèmes, tenu un carnet d'idées et appris à brainstormer librement.",
+"Tu as imaginé un client, bien questionné et observé le comportement réel.",
+"Tu as testé à petit prix, écouté des non et compris que pivoter, c'est avancer."
+],
+"q": "Quelle leçon de ce mois a changé ta vision de ton idée ?",
+"c": "Choisis ta meilleure idée et note client, problème et prochaine expérience."
+},
+"it": {
+"t": "Ripasso: idee e clienti",
+"g": "Ripassa come notare problemi, conoscere i clienti e testare idee.",
+"p": [
+"Hai notato problemi, tenuto un quaderno di idee e imparato a generare liberamente.",
+"Hai immaginato un cliente, fatto buone domande e osservato il comportamento reale.",
+"Hai testato a basso costo, ascoltato dei no e capito che cambiare rotta è progresso."
+],
+"q": "Quale lezione di questo mese ha cambiato il tuo modo di vedere la tua idea?",
+"c": "Scegli la tua idea più forte e scrivi cliente, problema e prossimo esperimento."
+},
+"pt": {
+"t": "Revisão: ideias e clientes",
+"g": "Revê como notar problemas, conhecer clientes e testar ideias.",
+"p": [
+"Notaste problemas, mantiveste um caderno de ideias e aprendeste a gerar livremente.",
+"Imaginaste um cliente, perguntaste bem e observaste o comportamento real.",
+"Testaste a baixo custo, ouviste nãos e viste que mudar de rumo é progresso."
+],
+"q": "Que lição deste mês mudou a tua visão da tua ideia?",
+"c": "Escolhe a tua ideia mais forte e escreve o cliente, o problema e a próxima experiência."
+},
+"pt_BR": {
+"t": "Revisão: ideias e clientes",
+"g": "Revise como notar problemas, conhecer clientes e testar ideias.",
+"p": [
+"Você notou problemas, manteve um caderno de ideias e aprendeu a gerar livremente.",
+"Você imaginou um cliente, perguntou bem e observou o comportamento real.",
+"Você testou a baixo custo, ouviu nãos e viu que mudar de rumo é progresso."
+],
+"q": "Que lição deste mês mudou o seu olhar sobre a sua ideia?",
+"c": "Escolha sua ideia mais forte e escreva cliente, problema e próximo experimento."
+}
+}
+}
+]
+}

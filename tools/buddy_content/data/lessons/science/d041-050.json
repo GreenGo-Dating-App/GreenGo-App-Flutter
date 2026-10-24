@@ -1,0 +1,835 @@
+{
+ "topic": "science",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Air resistance",
+     "g": "Find out why a feather falls slower than a stone and how parachutes work.",
+     "p": [
+      "Air resistance is friction between a moving object and the air around it.",
+      "A wide, light shape catches more air, so it falls slower than a compact, heavy one.",
+      "A parachute is built to be wide so air pushes up strongly and slows the fall."
+     ],
+     "q": "Why do cyclists crouch low when they want to go faster?",
+     "c": "Drop a flat sheet of paper and a tightly crumpled one from the same height and compare."
+    },
+    "de": {
+     "t": "Luftwiderstand",
+     "g": "Finde heraus, warum eine Feder langsamer fällt als ein Stein und wie Fallschirme funktionieren.",
+     "p": [
+      "Luftwiderstand ist Reibung zwischen einem bewegten Objekt und der umgebenden Luft.",
+      "Eine breite, leichte Form fängt mehr Luft und fällt langsamer als eine kompakte, schwere.",
+      "Ein Fallschirm ist breit gebaut, damit die Luft kräftig nach oben drückt und den Fall bremst."
+     ],
+     "q": "Warum machen sich Radfahrer klein, wenn sie schneller fahren wollen?",
+     "c": "Lass ein flaches Blatt Papier und ein fest zerknülltes aus gleicher Höhe fallen und vergleiche."
+    },
+    "es": {
+     "t": "Resistencia del aire",
+     "g": "Descubrir por qué una pluma cae más despacio que una piedra y cómo funcionan los paracaídas.",
+     "p": [
+      "La resistencia del aire es la fricción entre un objeto en movimiento y el aire que lo rodea.",
+      "Una forma ancha y ligera atrapa más aire y cae más despacio que una compacta y pesada.",
+      "Un paracaídas es ancho para que el aire empuje hacia arriba con fuerza y frene la caída."
+     ],
+     "q": "¿Por qué se agachan los ciclistas cuando quieren ir más rápido?",
+     "c": "Suelta desde la misma altura una hoja de papel plana y otra muy arrugada y compara."
+    },
+    "fr": {
+     "t": "La résistance de l'air",
+     "g": "Comprendre pourquoi une plume tombe plus lentement qu'une pierre et comment fonctionne un parachute.",
+     "p": [
+      "La résistance de l'air est le frottement entre un objet en mouvement et l'air qui l'entoure.",
+      "Une forme large et légère prend plus d'air et tombe plus lentement qu'une forme compacte et lourde.",
+      "Un parachute est large pour que l'air pousse fort vers le haut et ralentisse la chute."
+     ],
+     "q": "Pourquoi les cyclistes se penchent-ils quand ils veulent aller plus vite ?",
+     "c": "Lâche de la même hauteur une feuille plate et une feuille bien froissée et compare."
+    },
+    "it": {
+     "t": "La resistenza dell'aria",
+     "g": "Scoprire perché una piuma cade più lentamente di un sasso e come funzionano i paracadute.",
+     "p": [
+      "La resistenza dell'aria è l'attrito tra un oggetto in movimento e l'aria che lo circonda.",
+      "Una forma larga e leggera prende più aria e cade più lentamente di una compatta e pesante.",
+      "Un paracadute è largo perché l'aria spinga forte verso l'alto e rallenti la caduta."
+     ],
+     "q": "Perché i ciclisti si abbassano quando vogliono andare più veloci?",
+     "c": "Lascia cadere dalla stessa altezza un foglio piatto e uno stretto in una palla e confronta."
+    },
+    "pt": {
+     "t": "A resistência do ar",
+     "g": "Descobrir porque uma pena cai mais devagar do que uma pedra e como funcionam os paraquedas.",
+     "p": [
+      "A resistência do ar é o atrito entre um objeto em movimento e o ar que o rodeia.",
+      "Uma forma larga e leve apanha mais ar e cai mais devagar do que uma compacta e pesada.",
+      "Um paraquedas é largo para o ar empurrar com força para cima e travar a queda."
+     ],
+     "q": "Porque se baixam os ciclistas quando querem ir mais depressa?",
+     "c": "Larga da mesma altura uma folha de papel plana e outra bem amachucada e compara."
+    },
+    "pt_BR": {
+     "t": "A resistência do ar",
+     "g": "Descobrir por que uma pena cai mais devagar do que uma pedra e como funcionam os paraquedas.",
+     "p": [
+      "A resistência do ar é o atrito entre um objeto em movimento e o ar que o rodeia.",
+      "Uma forma larga e leve pega mais ar e cai mais devagar do que uma compacta e pesada.",
+      "Um paraquedas é largo para o ar empurrar com força para cima e frear a queda."
+     ],
+     "q": "Por que os ciclistas se abaixam quando querem ir mais rápido?",
+     "c": "Solte da mesma altura uma folha de papel plana e outra bem amassada e compare."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Speed and velocity",
+     "g": "Learn how speed tells how fast, and velocity adds the direction.",
+     "p": [
+      "Speed is distance divided by time, such as kilometers per hour.",
+      "Velocity is speed with a direction, like 50 km/h heading north.",
+      "Two cars with the same speed on opposite roads have different velocities."
+     ],
+     "q": "How could you estimate your own walking speed using just a clock and a path?",
+     "c": "Walk 20 steps in a straight line, time yourself, and work out your steps per second."
+    },
+    "de": {
+     "t": "Geschwindigkeit und Richtung",
+     "g": "Lerne, dass Tempo sagt, wie schnell, und die Geschwindigkeit die Richtung dazunimmt.",
+     "p": [
+      "Das Tempo ist Strecke geteilt durch Zeit, zum Beispiel Kilometer pro Stunde.",
+      "Die Geschwindigkeit ist Tempo mit Richtung, etwa 50 km/h nach Norden.",
+      "Zwei Autos mit gleichem Tempo auf entgegengesetzten Straßen haben verschiedene Geschwindigkeiten."
+     ],
+     "q": "Wie könntest du dein Gehtempo nur mit einer Uhr und einem Weg schätzen?",
+     "c": "Geh 20 Schritte geradeaus, stopp die Zeit und berechne deine Schritte pro Sekunde."
+    },
+    "es": {
+     "t": "Rapidez y velocidad",
+     "g": "Aprender que la rapidez dice cuán rápido y la velocidad añade la dirección.",
+     "p": [
+      "La rapidez es la distancia dividida entre el tiempo, por ejemplo kilómetros por hora.",
+      "La velocidad es la rapidez con una dirección, como 50 km/h hacia el norte.",
+      "Dos coches con la misma rapidez en calles opuestas tienen distinta velocidad."
+     ],
+     "q": "¿Cómo podrías estimar tu rapidez al caminar solo con un reloj y un camino?",
+     "c": "Camina 20 pasos en línea recta, cronométrate y calcula tus pasos por segundo."
+    },
+    "fr": {
+     "t": "Vitesse et vélocité",
+     "g": "Comprendre que la vitesse dit à quelle allure, et que la vélocité ajoute la direction.",
+     "p": [
+      "La vitesse est la distance divisée par le temps, par exemple en kilomètres par heure.",
+      "La vélocité est la vitesse avec une direction, comme 50 km/h vers le nord.",
+      "Deux voitures de même vitesse sur des routes opposées ont des vélocités différentes."
+     ],
+     "q": "Comment estimer ta vitesse de marche avec seulement une montre et un chemin ?",
+     "c": "Fais 20 pas en ligne droite, chronomètre-toi et calcule tes pas par seconde."
+    },
+    "it": {
+     "t": "Rapidità e velocità",
+     "g": "Capire che la rapidità dice quanto si va forte e la velocità aggiunge la direzione.",
+     "p": [
+      "La rapidità è la distanza divisa per il tempo, per esempio chilometri all'ora.",
+      "La velocità è la rapidità con una direzione, come 50 km/h verso nord.",
+      "Due auto con la stessa rapidità su strade opposte hanno velocità diverse."
+     ],
+     "q": "Come potresti stimare la tua rapidità camminando con solo un orologio e un percorso?",
+     "c": "Fai 20 passi in linea retta, cronometrati e calcola i tuoi passi al secondo."
+    },
+    "pt": {
+     "t": "Rapidez e velocidade",
+     "g": "Perceber que a rapidez diz quão depressa e a velocidade acrescenta a direção.",
+     "p": [
+      "A rapidez é a distância dividida pelo tempo, por exemplo quilómetros por hora.",
+      "A velocidade é a rapidez com uma direção, como 50 km/h para norte.",
+      "Dois carros com a mesma rapidez em estradas opostas têm velocidades diferentes."
+     ],
+     "q": "Como poderias estimar a tua rapidez a andar só com um relógio e um caminho?",
+     "c": "Anda 20 passos em linha reta, cronometra-te e calcula os teus passos por segundo."
+    },
+    "pt_BR": {
+     "t": "Rapidez e velocidade",
+     "g": "Entender que a rapidez diz quão rápido e a velocidade acrescenta a direção.",
+     "p": [
+      "A rapidez é a distância dividida pelo tempo, por exemplo quilômetros por hora.",
+      "A velocidade é a rapidez com uma direção, como 50 km/h para o norte.",
+      "Dois carros com a mesma rapidez em ruas opostas têm velocidades diferentes."
+     ],
+     "q": "Como você poderia estimar a sua rapidez andando só com um relógio e um caminho?",
+     "c": "Ande 20 passos em linha reta, cronometre-se e calcule seus passos por segundo."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Acceleration",
+     "g": "See that speeding up, slowing down and turning are all kinds of acceleration.",
+     "p": [
+      "Acceleration is any change in speed or direction of motion.",
+      "A bike rolling at steady speed in a straight line is not accelerating.",
+      "Going around a bend at constant speed still counts, because the direction changes."
+     ],
+     "q": "Which part of a bus ride makes you feel acceleration the most?",
+     "c": "Notice your body lean when a vehicle starts, stops or turns, and name each acceleration."
+    },
+    "de": {
+     "t": "Beschleunigung",
+     "g": "Erkenne, dass Schnellerwerden, Bremsen und Kurvenfahren alles Beschleunigung ist.",
+     "p": [
+      "Beschleunigung ist jede Änderung von Tempo oder Bewegungsrichtung.",
+      "Ein Fahrrad, das gleichmäßig geradeaus rollt, beschleunigt nicht.",
+      "Auch eine Kurve mit gleichem Tempo zählt, denn die Richtung ändert sich."
+     ],
+     "q": "Welcher Teil einer Busfahrt lässt dich Beschleunigung am stärksten spüren?",
+     "c": "Achte darauf, wie dein Körper sich beim Anfahren, Bremsen oder Abbiegen neigt, und benenne jede Beschleunigung."
+    },
+    "es": {
+     "t": "Aceleración",
+     "g": "Ver que acelerar, frenar y girar son tipos de aceleración.",
+     "p": [
+      "La aceleración es cualquier cambio en la rapidez o en la dirección del movimiento.",
+      "Una bici que rueda a ritmo constante en línea recta no está acelerando.",
+      "Tomar una curva a rapidez constante también cuenta, porque cambia la dirección."
+     ],
+     "q": "¿Qué parte de un viaje en autobús te hace notar más la aceleración?",
+     "c": "Fíjate en cómo se inclina tu cuerpo cuando un vehículo arranca, frena o gira y nombra cada aceleración."
+    },
+    "fr": {
+     "t": "L'accélération",
+     "g": "Voir qu'accélérer, ralentir et tourner sont des formes d'accélération.",
+     "p": [
+      "L'accélération est tout changement de vitesse ou de direction du mouvement.",
+      "Un vélo qui roule à vitesse constante en ligne droite n'accélère pas.",
+      "Prendre un virage à vitesse constante compte aussi, car la direction change."
+     ],
+     "q": "Quel moment d'un trajet en bus te fait le plus sentir l'accélération ?",
+     "c": "Remarque comment ton corps penche quand un véhicule démarre, freine ou tourne, et nomme chaque accélération."
+    },
+    "it": {
+     "t": "L'accelerazione",
+     "g": "Vedere che accelerare, rallentare e girare sono tutte forme di accelerazione.",
+     "p": [
+      "L'accelerazione è ogni cambiamento di velocità o di direzione del movimento.",
+      "Una bici che rotola a ritmo costante in linea retta non accelera.",
+      "Anche una curva a velocità costante conta, perché la direzione cambia."
+     ],
+     "q": "Quale parte di un viaggio in autobus ti fa sentire di più l'accelerazione?",
+     "c": "Nota come il tuo corpo si inclina quando un veicolo parte, frena o gira e nomina ogni accelerazione."
+    },
+    "pt": {
+     "t": "A aceleração",
+     "g": "Ver que acelerar, travar e virar são formas de aceleração.",
+     "p": [
+      "A aceleração é qualquer mudança na rapidez ou na direção do movimento.",
+      "Uma bicicleta que rola a ritmo constante em linha reta não está a acelerar.",
+      "Fazer uma curva com rapidez constante também conta, porque a direção muda."
+     ],
+     "q": "Que parte de uma viagem de autocarro te faz sentir mais a aceleração?",
+     "c": "Repara como o teu corpo se inclina quando um veículo arranca, trava ou vira e nomeia cada aceleração."
+    },
+    "pt_BR": {
+     "t": "A aceleração",
+     "g": "Ver que acelerar, frear e virar são formas de aceleração.",
+     "p": [
+      "A aceleração é qualquer mudança na rapidez ou na direção do movimento.",
+      "Uma bicicleta que rola em ritmo constante em linha reta não está acelerando.",
+      "Fazer uma curva com rapidez constante também conta, porque a direção muda."
+     ],
+     "q": "Que parte de uma viagem de ônibus faz você sentir mais a aceleração?",
+     "c": "Note como seu corpo se inclina quando um veículo arranca, freia ou vira e nomeie cada aceleração."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Simple machines",
+     "g": "Meet the six simple machines that make work easier.",
+     "p": [
+      "The six are the lever, pulley, ramp, wheel and axle, wedge and screw.",
+      "They do not reduce the work needed, but they let you use a smaller force over a longer distance.",
+      "Scissors, ramps and jar lids are everyday machines you already use."
+     ],
+     "q": "Which simple machine would you pick to lift a heavy box onto a truck?",
+     "c": "Find one lever, one wedge and one screw in your home and say what each makes easier."
+    },
+    "de": {
+     "t": "Einfache Maschinen",
+     "g": "Lerne die sechs einfachen Maschinen kennen, die Arbeit erleichtern.",
+     "p": [
+      "Es sind Hebel, Rolle, schiefe Ebene, Rad und Achse, Keil und Schraube.",
+      "Sie verringern nicht die nötige Arbeit, erlauben aber eine kleinere Kraft über einen längeren Weg.",
+      "Scheren, Rampen und Gläserdeckel sind Alltagsmaschinen, die du längst benutzt."
+     ],
+     "q": "Welche einfache Maschine würdest du wählen, um eine schwere Kiste auf einen Lkw zu heben?",
+     "c": "Finde zu Hause einen Hebel, einen Keil und eine Schraube und sag, was jeder erleichtert."
+    },
+    "es": {
+     "t": "Máquinas simples",
+     "g": "Conocer las seis máquinas simples que facilitan el trabajo.",
+     "p": [
+      "Son la palanca, la polea, el plano inclinado, la rueda y el eje, la cuña y el tornillo.",
+      "No reducen el trabajo necesario, pero permiten usar menos fuerza durante más distancia.",
+      "Las tijeras, las rampas y las tapas de frascos son máquinas cotidianas que ya usas."
+     ],
+     "q": "¿Qué máquina simple elegirías para subir una caja pesada a un camión?",
+     "c": "Encuentra en casa una palanca, una cuña y un tornillo y di qué facilita cada uno."
+    },
+    "fr": {
+     "t": "Les machines simples",
+     "g": "Découvrir les six machines simples qui facilitent le travail.",
+     "p": [
+      "Ce sont le levier, la poulie, le plan incliné, la roue et l'essieu, le coin et la vis.",
+      "Elles ne réduisent pas le travail nécessaire, mais permettent d'utiliser moins de force sur une plus longue distance.",
+      "Les ciseaux, les rampes et les couvercles de bocaux sont des machines du quotidien."
+     ],
+     "q": "Quelle machine simple choisirais-tu pour charger une lourde caisse dans un camion ?",
+     "c": "Trouve chez toi un levier, un coin et une vis et dis ce que chacun facilite."
+    },
+    "it": {
+     "t": "Le macchine semplici",
+     "g": "Conoscere le sei macchine semplici che rendono il lavoro più facile.",
+     "p": [
+      "Sono la leva, la puleggia, il piano inclinato, la ruota con asse, il cuneo e la vite.",
+      "Non riducono il lavoro necessario, ma permettono di usare meno forza su una distanza maggiore.",
+      "Forbici, rampe e coperchi dei barattoli sono macchine quotidiane che già usi."
+     ],
+     "q": "Quale macchina semplice sceglieresti per caricare una cassa pesante su un camion?",
+     "c": "Trova in casa una leva, un cuneo e una vite e di' cosa facilita ciascuno."
+    },
+    "pt": {
+     "t": "As máquinas simples",
+     "g": "Conhecer as seis máquinas simples que facilitam o trabalho.",
+     "p": [
+      "São a alavanca, a roldana, o plano inclinado, a roda e o eixo, a cunha e o parafuso.",
+      "Não reduzem o trabalho necessário, mas permitem usar menos força ao longo de mais distância.",
+      "As tesouras, as rampas e as tampas de frascos são máquinas do dia a dia que já usas."
+     ],
+     "q": "Que máquina simples escolherias para subir uma caixa pesada para um camião?",
+     "c": "Encontra em casa uma alavanca, uma cunha e um parafuso e diz o que cada um facilita."
+    },
+    "pt_BR": {
+     "t": "As máquinas simples",
+     "g": "Conhecer as seis máquinas simples que facilitam o trabalho.",
+     "p": [
+      "São a alavanca, a roldana, o plano inclinado, a roda e o eixo, a cunha e o parafuso.",
+      "Elas não reduzem o trabalho necessário, mas permitem usar menos força ao longo de mais distância.",
+      "Tesouras, rampas e tampas de potes são máquinas do dia a dia que você já usa."
+     ],
+     "q": "Que máquina simples você escolheria para subir uma caixa pesada num caminhão?",
+     "c": "Encontre em casa uma alavanca, uma cunha e um parafuso e diga o que cada um facilita."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Floating and sinking",
+     "g": "Understand buoyancy and why boats float while some things sink.",
+     "p": [
+      "Water pushes up on anything placed in it, and this upward push is called buoyancy.",
+      "An object floats when the upward push equals its weight, which happens when it is less dense than water.",
+      "A steel ship floats because its hollow shape spreads its mass over a large volume."
+     ],
+     "q": "Why do you think it is easier to float in the sea than in a pool?",
+     "c": "Test five small objects in a bowl of water, first guess float or sink, then check."
+    },
+    "de": {
+     "t": "Schwimmen und Sinken",
+     "g": "Verstehe den Auftrieb und warum Boote schwimmen, während manches untergeht.",
+     "p": [
+      "Wasser drückt auf alles nach oben, was hineingelegt wird, und das nennt man Auftrieb.",
+      "Ein Gegenstand schwimmt, wenn der Auftrieb sein Gewicht ausgleicht, also wenn er weniger dicht ist als Wasser.",
+      "Ein Stahlschiff schwimmt, weil seine hohle Form die Masse auf ein großes Volumen verteilt."
+     ],
+     "q": "Warum ist es im Meer wohl leichter zu schwimmen als im Becken?",
+     "c": "Teste fünf kleine Gegenstände in einer Schüssel Wasser: erst raten, ob sie schwimmen oder sinken, dann prüfen."
+    },
+    "es": {
+     "t": "Flotar y hundirse",
+     "g": "Entender el empuje y por qué los barcos flotan mientras algunas cosas se hunden.",
+     "p": [
+      "El agua empuja hacia arriba todo lo que se mete en ella, y ese empuje se llama flotabilidad.",
+      "Un objeto flota si el empuje iguala su peso, algo que ocurre si es menos denso que el agua.",
+      "Un barco de acero flota porque su forma hueca reparte la masa en un gran volumen."
+     ],
+     "q": "¿Por qué crees que es más fácil flotar en el mar que en una piscina?",
+     "c": "Prueba cinco objetos pequeños en un bol con agua: primero adivina si flotan o se hunden y luego comprueba."
+    },
+    "fr": {
+     "t": "Flotter et couler",
+     "g": "Comprendre la poussée d'Archimède et pourquoi les bateaux flottent alors que certaines choses coulent.",
+     "p": [
+      "L'eau pousse vers le haut tout ce qu'on y plonge, et cette poussée s'appelle la flottabilité.",
+      "Un objet flotte quand la poussée égale son poids, ce qui arrive s'il est moins dense que l'eau.",
+      "Un navire en acier flotte parce que sa forme creuse répartit sa masse sur un grand volume."
+     ],
+     "q": "Pourquoi est-il plus facile de flotter en mer qu'en piscine, à ton avis ?",
+     "c": "Teste cinq petits objets dans un bol d'eau : devine d'abord flotte ou coule, puis vérifie."
+    },
+    "it": {
+     "t": "Galleggiare e affondare",
+     "g": "Capire la spinta di galleggiamento e perché le barche galleggiano mentre certe cose affondano.",
+     "p": [
+      "L'acqua spinge verso l'alto tutto ciò che vi si mette, e questa spinta si chiama galleggiamento.",
+      "Un oggetto galleggia se la spinta uguaglia il suo peso, cosa che accade se è meno denso dell'acqua.",
+      "Una nave d'acciaio galleggia perché la sua forma cava distribuisce la massa su un grande volume."
+     ],
+     "q": "Perché pensi sia più facile galleggiare in mare che in piscina?",
+     "c": "Prova cinque oggetti piccoli in una ciotola d'acqua: prima indovina se galleggiano o affondano, poi verifica."
+    },
+    "pt": {
+     "t": "Flutuar e afundar",
+     "g": "Perceber a flutuabilidade e porque os barcos flutuam enquanto algumas coisas afundam.",
+     "p": [
+      "A água empurra para cima tudo o que nela se põe, e esse empurrão chama-se flutuabilidade.",
+      "Um objeto flutua se o empurrão igualar o seu peso, o que acontece se for menos denso do que a água.",
+      "Um barco de aço flutua porque a sua forma oca distribui a massa por um grande volume."
+     ],
+     "q": "Porque achas que é mais fácil flutuar no mar do que numa piscina?",
+     "c": "Testa cinco objetos pequenos numa taça de água: primeiro adivinha se flutuam ou afundam, depois confirma."
+    },
+    "pt_BR": {
+     "t": "Flutuar e afundar",
+     "g": "Entender a flutuabilidade e por que os barcos flutuam enquanto algumas coisas afundam.",
+     "p": [
+      "A água empurra para cima tudo o que nela se coloca, e esse empurrão se chama flutuabilidade.",
+      "Um objeto flutua se o empurrão igualar o seu peso, o que acontece se ele for menos denso do que a água.",
+      "Um navio de aço flutua porque a sua forma oca distribui a massa por um grande volume."
+     ],
+     "q": "Por que você acha que é mais fácil flutuar no mar do que na piscina?",
+     "c": "Teste cinco objetos pequenos numa tigela de água: primeiro adivinhe se flutuam ou afundam, depois confira."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pressure",
+     "g": "Learn that pressure is force spread over an area.",
+     "p": [
+      "The same force on a smaller area makes more pressure, which is why a needle pierces easily.",
+      "Spreading a force over a large area lowers the pressure, like snowshoes on soft snow.",
+      "Knives are sharp so that all the force of your hand gathers on a tiny edge."
+     ],
+     "q": "Why do you think tractors have such wide tires?",
+     "c": "Press a finger on the flat and then on the point of a blunt pencil and compare the feeling."
+    },
+    "de": {
+     "t": "Druck",
+     "g": "Lerne, dass Druck eine auf eine Fläche verteilte Kraft ist.",
+     "p": [
+      "Dieselbe Kraft auf kleiner Fläche ergibt mehr Druck, deshalb sticht eine Nadel so leicht.",
+      "Verteilt man die Kraft auf eine große Fläche, sinkt der Druck, wie bei Schneeschuhen im weichen Schnee.",
+      "Messer sind scharf, damit sich die ganze Handkraft auf einer winzigen Schneide sammelt."
+     ],
+     "q": "Warum haben Traktoren wohl so breite Reifen?",
+     "c": "Drück den Finger auf die flache Seite und dann auf die Spitze eines stumpfen Stifts und vergleiche."
+    },
+    "es": {
+     "t": "Presión",
+     "g": "Aprender que la presión es una fuerza repartida sobre una superficie.",
+     "p": [
+      "La misma fuerza sobre una superficie menor da más presión, por eso una aguja perfora con facilidad.",
+      "Repartir la fuerza sobre una superficie grande baja la presión, como las raquetas en la nieve blanda.",
+      "Los cuchillos son afilados para que toda la fuerza de tu mano se concentre en un filo diminuto."
+     ],
+     "q": "¿Por qué crees que los tractores tienen neumáticos tan anchos?",
+     "c": "Presiona con un dedo la parte plana y luego la punta de un lápiz romo y compara la sensación."
+    },
+    "fr": {
+     "t": "La pression",
+     "g": "Comprendre que la pression est une force répartie sur une surface.",
+     "p": [
+      "La même force sur une petite surface donne plus de pression, d'où l'efficacité d'une aiguille.",
+      "Répartir la force sur une grande surface baisse la pression, comme avec des raquettes sur la neige molle.",
+      "Les couteaux sont aiguisés pour que toute la force de ta main se concentre sur un tout petit tranchant."
+     ],
+     "q": "Pourquoi les tracteurs ont-ils des pneus si larges, à ton avis ?",
+     "c": "Appuie un doigt sur le côté plat puis sur la pointe d'un crayon émoussé et compare la sensation."
+    },
+    "it": {
+     "t": "La pressione",
+     "g": "Capire che la pressione è una forza distribuita su una superficie.",
+     "p": [
+      "La stessa forza su una superficie piccola dà più pressione, per questo un ago buca facilmente.",
+      "Distribuire la forza su una superficie grande abbassa la pressione, come le racchette sulla neve molle.",
+      "I coltelli sono affilati perché tutta la forza della mano si concentri su un filo minuscolo."
+     ],
+     "q": "Perché pensi che i trattori abbiano pneumatici così larghi?",
+     "c": "Premi un dito sul lato piatto e poi sulla punta di una matita smussata e confronta la sensazione."
+    },
+    "pt": {
+     "t": "A pressão",
+     "g": "Perceber que a pressão é uma força distribuída por uma superfície.",
+     "p": [
+      "A mesma força numa superfície menor dá mais pressão, por isso uma agulha fura com facilidade.",
+      "Distribuir a força por uma superfície grande baixa a pressão, como as raquetes na neve fofa.",
+      "As facas são afiadas para que toda a força da tua mão se concentre num fio minúsculo."
+     ],
+     "q": "Porque achas que os tratores têm pneus tão largos?",
+     "c": "Pressiona com um dedo o lado plano e depois a ponta de um lápis rombo e compara a sensação."
+    },
+    "pt_BR": {
+     "t": "A pressão",
+     "g": "Entender que a pressão é uma força distribuída por uma superfície.",
+     "p": [
+      "A mesma força numa superfície menor dá mais pressão, por isso uma agulha fura com facilidade.",
+      "Distribuir a força por uma superfície grande diminui a pressão, como as raquetes na neve fofa.",
+      "As facas são afiadas para que toda a força da sua mão se concentre num fio minúsculo."
+     ],
+     "q": "Por que você acha que os tratores têm pneus tão largos?",
+     "c": "Pressione com um dedo o lado plano e depois a ponta de um lápis rombudo e compare a sensação."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Air pressure around us",
+     "g": "Discover that the air presses on us all the time and shapes our weather.",
+     "p": [
+      "Air has weight, and the layers of the atmosphere above us press on everything.",
+      "We do not feel it because the fluids in our bodies push back with equal pressure.",
+      "High pressure usually brings calm, clear weather, and low pressure often brings clouds and rain."
+     ],
+     "q": "Have your ears ever popped in a plane or on a mountain road? What was that?",
+     "c": "Look up today's weather and see whether the air pressure is described as high or low."
+    },
+    "de": {
+     "t": "Luftdruck um uns herum",
+     "g": "Entdecke, dass die Luft ständig auf uns drückt und unser Wetter prägt.",
+     "p": [
+      "Luft hat Gewicht, und die Schichten der Atmosphäre über uns drücken auf alles.",
+      "Wir spüren es nicht, weil die Flüssigkeiten in unserem Körper mit gleichem Druck dagegenhalten.",
+      "Hochdruck bringt meist ruhiges, klares Wetter, Tiefdruck oft Wolken und Regen."
+     ],
+     "q": "Hast du schon einmal Druck auf den Ohren im Flugzeug oder auf einer Bergstraße gespürt? Was war das?",
+     "c": "Sieh dir die Wetterkarte an und finde heraus, ob dort Hoch- oder Tiefdruck angegeben ist."
+    },
+    "es": {
+     "t": "La presión del aire a nuestro alrededor",
+     "g": "Descubrir que el aire presiona sobre nosotros sin parar y da forma al clima.",
+     "p": [
+      "El aire tiene peso, y las capas de la atmósfera sobre nosotros presionan sobre todo.",
+      "No lo sentimos porque los fluidos de nuestro cuerpo empujan con la misma presión.",
+      "La alta presión suele traer tiempo calmado y despejado, y la baja, nubes y lluvia."
+     ],
+     "q": "¿Se te han destapado alguna vez los oídos en un avión o en una carretera de montaña? ¿Qué era?",
+     "c": "Mira el pronóstico y fíjate si la presión del aire figura como alta o baja."
+    },
+    "fr": {
+     "t": "La pression de l'air autour de nous",
+     "g": "Découvrir que l'air nous presse en permanence et façonne la météo.",
+     "p": [
+      "L'air a un poids, et les couches de l'atmosphère au-dessus de nous appuient sur tout.",
+      "Nous ne le sentons pas, car les liquides de notre corps poussent avec la même pression.",
+      "Les hautes pressions apportent souvent un temps calme et clair, les basses pressions des nuages et de la pluie."
+     ],
+     "q": "T'est-il arrivé d'avoir les oreilles qui se débouchent en avion ou sur une route de montagne ? C'était quoi ?",
+     "c": "Regarde la météo et vois si la pression de l'air est indiquée haute ou basse."
+    },
+    "it": {
+     "t": "La pressione dell'aria intorno a noi",
+     "g": "Scoprire che l'aria ci preme sempre addosso e dà forma al tempo atmosferico.",
+     "p": [
+      "L'aria ha un peso, e gli strati dell'atmosfera sopra di noi premono su tutto.",
+      "Non lo sentiamo perché i liquidi del nostro corpo spingono con la stessa pressione.",
+      "L'alta pressione di solito porta tempo calmo e sereno, la bassa pressione spesso nuvole e pioggia."
+     ],
+     "q": "Ti si sono mai stappate le orecchie in aereo o su una strada di montagna? Cos'era?",
+     "c": "Guarda le previsioni e vedi se la pressione dell'aria è indicata come alta o bassa."
+    },
+    "pt": {
+     "t": "A pressão do ar à nossa volta",
+     "g": "Descobrir que o ar nos pressiona sem parar e dá forma ao tempo.",
+     "p": [
+      "O ar tem peso, e as camadas da atmosfera sobre nós pressionam tudo.",
+      "Não o sentimos porque os fluidos do nosso corpo empurram com a mesma pressão.",
+      "A alta pressão costuma trazer tempo calmo e limpo, e a baixa traz muitas vezes nuvens e chuva."
+     ],
+     "q": "Já te estalaram os ouvidos num avião ou numa estrada de montanha? O que era?",
+     "c": "Vê a previsão do tempo e repara se a pressão do ar aparece como alta ou baixa."
+    },
+    "pt_BR": {
+     "t": "A pressão do ar ao nosso redor",
+     "g": "Descobrir que o ar nos pressiona sem parar e dá forma ao tempo.",
+     "p": [
+      "O ar tem peso, e as camadas da atmosfera sobre nós pressionam tudo.",
+      "Não sentimos isso porque os fluidos do nosso corpo empurram com a mesma pressão.",
+      "A alta pressão costuma trazer tempo calmo e limpo, e a baixa traz muitas vezes nuvens e chuva."
+     ],
+     "q": "Seus ouvidos já estalaram num avião ou numa estrada de serra? O que era?",
+     "c": "Veja a previsão do tempo e note se a pressão do ar aparece como alta ou baixa."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is sound",
+     "g": "Learn that sound is a vibration traveling through air, water or solids.",
+     "p": [
+      "Sound starts when something vibrates, like a guitar string or your vocal cords.",
+      "The vibration passes along as a wave through air, water or solids, but not through empty space.",
+      "Our ears catch the wave and our brain turns it into what we hear."
+     ],
+     "q": "Which sound around you right now can you trace back to a vibrating object?",
+     "c": "Put a fingertip lightly on your throat while humming and feel the vibration."
+    },
+    "de": {
+     "t": "Was ist Schall",
+     "g": "Lerne, dass Schall eine Schwingung ist, die durch Luft, Wasser oder Festkörper wandert.",
+     "p": [
+      "Schall entsteht, wenn etwas schwingt, etwa eine Gitarrensaite oder deine Stimmbänder.",
+      "Die Schwingung wandert als Welle durch Luft, Wasser oder Festkörper, aber nicht durch leeren Raum.",
+      "Unsere Ohren fangen die Welle auf, und das Gehirn macht daraus, was wir hören."
+     ],
+     "q": "Welches Geräusch um dich herum kannst du auf einen schwingenden Gegenstand zurückführen?",
+     "c": "Leg beim Summen eine Fingerspitze leicht an den Hals und spüre die Schwingung."
+    },
+    "es": {
+     "t": "Qué es el sonido",
+     "g": "Aprender que el sonido es una vibración que viaja por el aire, el agua o los sólidos.",
+     "p": [
+      "El sonido nace cuando algo vibra, como una cuerda de guitarra o tus cuerdas vocales.",
+      "La vibración avanza como una onda por el aire, el agua o los sólidos, pero no por el espacio vacío.",
+      "Nuestros oídos captan la onda y el cerebro la convierte en lo que oímos."
+     ],
+     "q": "¿Qué sonido que oyes ahora puedes atribuir a un objeto que vibra?",
+     "c": "Apoya ligeramente una yema en la garganta mientras tarareas y siente la vibración."
+    },
+    "fr": {
+     "t": "Qu'est-ce que le son",
+     "g": "Comprendre que le son est une vibration qui se propage dans l'air, l'eau ou les solides.",
+     "p": [
+      "Le son naît quand quelque chose vibre, comme une corde de guitare ou tes cordes vocales.",
+      "La vibration avance en onde dans l'air, l'eau ou les solides, mais pas dans le vide.",
+      "Nos oreilles captent l'onde et notre cerveau la transforme en ce que nous entendons."
+     ],
+     "q": "Quel son autour de toi peux-tu relier à un objet qui vibre ?",
+     "c": "Pose légèrement le bout d'un doigt sur ta gorge en fredonnant et sens la vibration."
+    },
+    "it": {
+     "t": "Che cos'è il suono",
+     "g": "Capire che il suono è una vibrazione che viaggia nell'aria, nell'acqua o nei solidi.",
+     "p": [
+      "Il suono nasce quando qualcosa vibra, come una corda di chitarra o le tue corde vocali.",
+      "La vibrazione procede come onda nell'aria, nell'acqua o nei solidi, ma non nel vuoto.",
+      "Le nostre orecchie colgono l'onda e il cervello la trasforma in ciò che sentiamo."
+     ],
+     "q": "Quale suono intorno a te puoi ricondurre a un oggetto che vibra?",
+     "c": "Appoggia leggermente un polpastrello sulla gola mentre canticchi e senti la vibrazione."
+    },
+    "pt": {
+     "t": "O que é o som",
+     "g": "Perceber que o som é uma vibração que viaja pelo ar, pela água ou por sólidos.",
+     "p": [
+      "O som nasce quando algo vibra, como uma corda de guitarra ou as tuas cordas vocais.",
+      "A vibração avança como onda pelo ar, pela água ou por sólidos, mas não pelo vazio.",
+      "Os nossos ouvidos captam a onda e o cérebro transforma-a no que ouvimos."
+     ],
+     "q": "Que som à tua volta consegues ligar a um objeto que vibra?",
+     "c": "Apoia ao de leve a ponta do dedo na garganta enquanto trauteias e sente a vibração."
+    },
+    "pt_BR": {
+     "t": "O que é o som",
+     "g": "Entender que o som é uma vibração que viaja pelo ar, pela água ou por sólidos.",
+     "p": [
+      "O som nasce quando algo vibra, como uma corda de violão ou as suas cordas vocais.",
+      "A vibração avança como onda pelo ar, pela água ou por sólidos, mas não pelo vácuo.",
+      "Nossos ouvidos captam a onda e o cérebro a transforma no que ouvimos."
+     ],
+     "q": "Que som ao seu redor você consegue ligar a um objeto que vibra?",
+     "c": "Apoie de leve a ponta do dedo na garganta enquanto cantarola e sinta a vibração."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pitch and loudness",
+     "g": "See how fast vibrations make high notes and big vibrations make loud sounds.",
+     "p": [
+      "Pitch depends on frequency: more vibrations per second sound higher.",
+      "Loudness depends on amplitude: bigger vibrations carry more energy and sound louder.",
+      "Short, tight strings or pipes play high notes, while long, loose ones play low notes."
+     ],
+     "q": "Is a whisper low pitch or low loudness, or both?",
+     "c": "Hold a ruler over a table edge, flick it, and change its length to hear the pitch change."
+    },
+    "de": {
+     "t": "Tonhöhe und Lautstärke",
+     "g": "Sieh, wie schnelle Schwingungen hohe Töne und große Schwingungen laute Töne machen.",
+     "p": [
+      "Die Tonhöhe hängt von der Frequenz ab: Mehr Schwingungen pro Sekunde klingen höher.",
+      "Die Lautstärke hängt von der Amplitude ab: Größere Schwingungen tragen mehr Energie und klingen lauter.",
+      "Kurze, straffe Saiten oder Pfeifen klingen hoch, lange, lockere tief."
+     ],
+     "q": "Ist ein Flüstern tief oder leise, oder beides?",
+     "c": "Halte ein Lineal über eine Tischkante, schnipp es an und verändere die Länge, um die Tonhöhe zu hören."
+    },
+    "es": {
+     "t": "Tono y volumen",
+     "g": "Ver cómo las vibraciones rápidas dan notas agudas y las grandes dan sonidos fuertes.",
+     "p": [
+      "El tono depende de la frecuencia: más vibraciones por segundo suenan más agudo.",
+      "El volumen depende de la amplitud: vibraciones grandes llevan más energía y suenan más fuerte.",
+      "Las cuerdas o tubos cortos y tensos dan notas agudas; los largos y flojos, graves."
+     ],
+     "q": "¿Un susurro es de tono bajo o de volumen bajo, o ambas cosas?",
+     "c": "Sujeta una regla sobre el borde de una mesa, golpéala y cambia su largo para oír cambiar el tono."
+    },
+    "fr": {
+     "t": "Hauteur et intensité du son",
+     "g": "Voir comment les vibrations rapides font des notes aiguës et les grandes vibrations des sons forts.",
+     "p": [
+      "La hauteur dépend de la fréquence : plus de vibrations par seconde sonnent plus aigu.",
+      "L'intensité dépend de l'amplitude : de grandes vibrations portent plus d'énergie et sonnent plus fort.",
+      "Les cordes ou tuyaux courts et tendus donnent des notes aiguës, les longs et lâches des notes graves."
+     ],
+     "q": "Un murmure est-il grave ou faible, ou les deux ?",
+     "c": "Tiens une règle au bord d'une table, fais-la vibrer et change sa longueur pour entendre la hauteur changer."
+    },
+    "it": {
+     "t": "Altezza e intensità del suono",
+     "g": "Vedere come le vibrazioni veloci danno note acute e quelle ampie suoni forti.",
+     "p": [
+      "L'altezza dipende dalla frequenza: più vibrazioni al secondo suonano più acute.",
+      "L'intensità dipende dall'ampiezza: vibrazioni grandi portano più energia e suonano più forte.",
+      "Corde o tubi corti e tesi danno note acute, quelli lunghi e lenti note gravi."
+     ],
+     "q": "Un sussurro è grave o debole, o entrambe le cose?",
+     "c": "Tieni un righello sul bordo di un tavolo, fallo vibrare e cambia la lunghezza per sentire cambiare l'altezza."
+    },
+    "pt": {
+     "t": "Altura e intensidade do som",
+     "g": "Ver como as vibrações rápidas dão notas agudas e as grandes dão sons fortes.",
+     "p": [
+      "A altura depende da frequência: mais vibrações por segundo soam mais agudo.",
+      "A intensidade depende da amplitude: vibrações grandes levam mais energia e soam mais forte.",
+      "Cordas ou tubos curtos e tensos dão notas agudas, os longos e frouxos dão notas graves."
+     ],
+     "q": "Um sussurro é grave ou fraco, ou as duas coisas?",
+     "c": "Segura uma régua sobre a beira de uma mesa, faz vibrar e muda o comprimento para ouvir a altura mudar."
+    },
+    "pt_BR": {
+     "t": "Altura e intensidade do som",
+     "g": "Ver como as vibrações rápidas dão notas agudas e as grandes dão sons fortes.",
+     "p": [
+      "A altura depende da frequência: mais vibrações por segundo soam mais agudo.",
+      "A intensidade depende da amplitude: vibrações grandes levam mais energia e soam mais forte.",
+      "Cordas ou tubos curtos e tensos dão notas agudas, os longos e frouxos dão notas graves."
+     ],
+     "q": "Um sussurro é grave ou fraco, ou as duas coisas?",
+     "c": "Segure uma régua na beira de uma mesa, faça vibrar e mude o comprimento para ouvir a altura mudar."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Echoes and acoustics",
+     "g": "Learn how sound bounces off walls and how animals use echoes.",
+     "p": [
+      "An echo is sound that bounces off a hard surface and returns to your ears.",
+      "Soft materials like curtains and carpets absorb sound, which makes a room less echoey.",
+      "Bats and dolphins send out sounds and read the echoes to find food and obstacles."
+     ],
+     "q": "Where have you heard a big echo, and what made it so clear?",
+     "c": "Clap once in a bathroom and once in a bedroom and compare how long the sound lasts."
+    },
+    "de": {
+     "t": "Echos und Akustik",
+     "g": "Lerne, wie Schall von Wänden abprallt und wie Tiere Echos nutzen.",
+     "p": [
+      "Ein Echo ist Schall, der von einer harten Fläche abprallt und zu deinen Ohren zurückkehrt.",
+      "Weiche Materialien wie Vorhänge und Teppiche schlucken Schall, das macht einen Raum weniger hallig.",
+      "Fledermäuse und Delfine senden Laute aus und lesen die Echos, um Futter und Hindernisse zu finden."
+     ],
+     "q": "Wo hast du schon ein großes Echo gehört, und was machte es so deutlich?",
+     "c": "Klatsche einmal im Bad und einmal im Schlafzimmer und vergleiche, wie lange der Klang bleibt."
+    },
+    "es": {
+     "t": "Ecos y acústica",
+     "g": "Aprender cómo el sonido rebota en las paredes y cómo los animales usan los ecos.",
+     "p": [
+      "Un eco es sonido que rebota en una superficie dura y vuelve a tus oídos.",
+      "Los materiales blandos como cortinas y alfombras absorben el sonido y hacen una sala menos resonante.",
+      "Los murciélagos y los delfines emiten sonidos y leen los ecos para hallar comida y obstáculos."
+     ],
+     "q": "¿Dónde has oído un eco grande y qué lo hacía tan claro?",
+     "c": "Da una palmada en el baño y otra en el dormitorio y compara cuánto dura el sonido."
+    },
+    "fr": {
+     "t": "Échos et acoustique",
+     "g": "Apprendre comment le son rebondit sur les murs et comment les animaux utilisent les échos.",
+     "p": [
+      "Un écho est un son qui rebondit sur une surface dure et revient à tes oreilles.",
+      "Les matériaux mous comme les rideaux et les tapis absorbent le son et réduisent l'écho d'une pièce.",
+      "Les chauves-souris et les dauphins émettent des sons et lisent les échos pour trouver nourriture et obstacles."
+     ],
+     "q": "Où as-tu entendu un grand écho, et qu'est-ce qui le rendait si net ?",
+     "c": "Tape une fois dans tes mains dans la salle de bains et une fois dans la chambre et compare la durée du son."
+    },
+    "it": {
+     "t": "Echi e acustica",
+     "g": "Imparare come il suono rimbalza sulle pareti e come gli animali usano gli echi.",
+     "p": [
+      "Un'eco è un suono che rimbalza su una superficie dura e torna alle tue orecchie.",
+      "I materiali morbidi come tende e tappeti assorbono il suono e rendono una stanza meno rimbombante.",
+      "Pipistrelli e delfini emettono suoni e leggono gli echi per trovare cibo e ostacoli."
+     ],
+     "q": "Dove hai sentito un grande eco, e cosa lo rendeva così nitido?",
+     "c": "Batti le mani una volta in bagno e una in camera da letto e confronta quanto dura il suono."
+    },
+    "pt": {
+     "t": "Ecos e acústica",
+     "g": "Aprender como o som ressalta nas paredes e como os animais usam os ecos.",
+     "p": [
+      "Um eco é som que ressalta numa superfície dura e volta aos teus ouvidos.",
+      "Os materiais macios como cortinas e tapetes absorvem o som e tornam uma sala menos ressonante.",
+      "Os morcegos e os golfinhos emitem sons e leem os ecos para encontrar comida e obstáculos."
+     ],
+     "q": "Onde ouviste um grande eco, e o que o tornava tão nítido?",
+     "c": "Bate palmas uma vez na casa de banho e outra no quarto e compara quanto tempo o som dura."
+    },
+    "pt_BR": {
+     "t": "Ecos e acústica",
+     "g": "Aprender como o som ricocheteia nas paredes e como os animais usam os ecos.",
+     "p": [
+      "Um eco é som que ricocheteia numa superfície dura e volta aos seus ouvidos.",
+      "Os materiais macios como cortinas e tapetes absorvem o som e deixam uma sala menos ressonante.",
+      "Os morcegos e os golfinhos emitem sons e leem os ecos para achar comida e obstáculos."
+     ],
+     "q": "Onde você ouviu um grande eco, e o que o deixava tão nítido?",
+     "c": "Bata palmas uma vez no banheiro e outra no quarto e compare quanto tempo o som dura."
+    }
+   }
+  }
+ ]
+}

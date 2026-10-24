@@ -1,0 +1,835 @@
+{
+ "topic": "history",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Greek theatre",
+     "g": "Learn how tragedy and comedy began in Greece and why the old theatres still work.",
+     "p": [
+      "Greek drama grew out of festivals in Athens, where playwrights competed with tragedies and comedies.",
+      "Theatres were open-air and bowl-shaped, so even people in the back rows could hear the actors and the chorus.",
+      "The theatre at Epidaurus still holds thousands of people and hosts performances today."
+     ],
+     "q": "Do you prefer comedy or drama when you watch a story performed?",
+     "c": "Find one word we use today that comes from Greek theatre, like drama, chorus or scene."
+    },
+    "de": {
+     "t": "Das griechische Theater",
+     "g": "Erfahre, wie Tragödie und Komödie in Griechenland entstanden und warum die alten Theater noch funktionieren.",
+     "p": [
+      "Das griechische Drama entstand aus Festen in Athen, bei denen Dichter mit Tragödien und Komödien wetteiferten.",
+      "Die Theater lagen unter freiem Himmel und waren schalenförmig, sodass man Schauspieler und Chor bis hinten hörte.",
+      "Das Theater von Epidauros fasst noch heute Tausende Menschen und wird für Aufführungen genutzt."
+     ],
+     "q": "Siehst du lieber Komödien oder Dramen, wenn eine Geschichte aufgeführt wird?",
+     "c": "Finde ein heutiges Wort aus dem griechischen Theater, etwa Drama, Chor oder Szene."
+    },
+    "es": {
+     "t": "El teatro griego",
+     "g": "Descubre cómo nacieron la tragedia y la comedia en Grecia y por qué los teatros antiguos aún funcionan.",
+     "p": [
+      "El drama griego surgió de festivales en Atenas, donde los autores competían con tragedias y comedias.",
+      "Los teatros eran al aire libre y con forma de cuenco, así que hasta las últimas filas oían a actores y coro.",
+      "El teatro de Epidauro aún acoge a miles de personas y se usa para espectáculos hoy en día."
+     ],
+     "q": "¿Prefieres la comedia o el drama cuando ves una historia representada?",
+     "c": "Busca una palabra actual que venga del teatro griego, como drama, coro o escena."
+    },
+    "fr": {
+     "t": "Le théâtre grec",
+     "g": "Découvre comment la tragédie et la comédie sont nées en Grèce et pourquoi les théâtres antiques fonctionnent encore.",
+     "p": [
+      "Le théâtre grec est né de fêtes à Athènes, où les auteurs rivalisaient avec des tragédies et des comédies.",
+      "Les théâtres étaient en plein air, en forme de cuvette : même le dernier rang entendait acteurs et chœur.",
+      "Le théâtre d'Épidaure accueille encore des milliers de personnes et sert toujours pour des spectacles."
+     ],
+     "q": "Préfères-tu la comédie ou le drame quand tu regardes une histoire jouée ?",
+     "c": "Trouve un mot actuel venu du théâtre grec, comme drame, chœur ou scène."
+    },
+    "it": {
+     "t": "Il teatro greco",
+     "g": "Scopri come nacquero tragedia e commedia in Grecia e perché gli antichi teatri funzionano ancora.",
+     "p": [
+      "Il dramma greco nacque da feste ad Atene, dove gli autori gareggiavano con tragedie e commedie.",
+      "I teatri erano all'aperto e a forma di conca, così anche l'ultima fila sentiva attori e coro.",
+      "Il teatro di Epidauro accoglie ancora migliaia di persone e ospita spettacoli ai giorni nostri."
+     ],
+     "q": "Preferisci la commedia o il dramma quando guardi una storia recitata?",
+     "c": "Trova una parola di oggi che viene dal teatro greco, come dramma, coro o scena."
+    },
+    "pt": {
+     "t": "O teatro grego",
+     "g": "Descobre como nasceram a tragédia e a comédia na Grécia e porque é que os teatros antigos ainda funcionam.",
+     "p": [
+      "O drama grego nasceu de festivais em Atenas, onde os autores competiam com tragédias e comédias.",
+      "Os teatros eram ao ar livre e em forma de taça, por isso até as últimas filas ouviam atores e coro.",
+      "O teatro de Epidauro ainda acolhe milhares de pessoas e recebe espetáculos nos dias de hoje."
+     ],
+     "q": "Preferes comédia ou drama quando vês uma história representada?",
+     "c": "Procura uma palavra atual que venha do teatro grego, como drama, coro ou cena."
+    },
+    "pt_BR": {
+     "t": "O teatro grego",
+     "g": "Descubra como nasceram a tragédia e a comédia na Grécia e por que os teatros antigos ainda funcionam.",
+     "p": [
+      "O drama grego surgiu de festivais em Atenas, onde os autores competiam com tragédias e comédias.",
+      "Os teatros eram ao ar livre e em forma de tigela, então até as últimas fileiras ouviam atores e coro.",
+      "O teatro de Epidauro ainda recebe milhares de pessoas e abriga apresentações nos dias de hoje."
+     ],
+     "q": "Você prefere comédia ou drama quando assiste a uma história encenada?",
+     "c": "Procure uma palavra atual que vem do teatro grego, como drama, coro ou cena."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Greek science and maths",
+     "g": "Meet the Greek thinkers who turned measuring and reasoning into a science.",
+     "p": [
+      "Pythagoras is linked to the rule for right-angled triangles, and Euclid wrote Elements, a famous geometry textbook.",
+      "Archimedes studied levers and floating objects and made a very good estimate of the number pi.",
+      "Eratosthenes compared shadows in two Egyptian cities and calculated the size of the Earth, close to the real value."
+     ],
+     "q": "Which would you rather measure: the height of a building, the distance to a town or the size of the Earth?",
+     "c": "On a sunny day, measure a shadow and a stick's height, then compare them at two different times."
+    },
+    "de": {
+     "t": "Griechische Wissenschaft und Mathe",
+     "g": "Lerne griechische Denker kennen, die aus Messen und Denken eine Wissenschaft machten.",
+     "p": [
+      "Pythagoras wird mit der Regel für rechtwinklige Dreiecke verbunden, und Euklid schrieb die berühmten Elemente der Geometrie.",
+      "Archimedes erforschte Hebel und schwimmende Körper und schätzte die Zahl Pi sehr gut ab.",
+      "Eratosthenes verglich Schatten in zwei ägyptischen Städten und berechnete die Größe der Erde, nahe am echten Wert."
+     ],
+     "q": "Was würdest du lieber messen: die Höhe eines Hauses, die Entfernung zu einer Stadt oder die Größe der Erde?",
+     "c": "Miss an einem sonnigen Tag den Schatten und die Höhe eines Stabs zu zwei Uhrzeiten und vergleiche."
+    },
+    "es": {
+     "t": "Ciencia y matemáticas griegas",
+     "g": "Conoce a los pensadores griegos que convirtieron medir y razonar en una ciencia.",
+     "p": [
+      "A Pitágoras se le atribuye la regla de los triángulos rectángulos, y Euclides escribió los Elementos, un libro de geometría.",
+      "Arquímedes estudió las palancas y los cuerpos flotantes e hizo una muy buena estimación del número pi.",
+      "Eratóstenes comparó sombras en dos ciudades egipcias y calculó el tamaño de la Tierra, muy cerca del valor real."
+     ],
+     "q": "¿Qué preferirías medir: la altura de un edificio, la distancia a un pueblo o el tamaño de la Tierra?",
+     "c": "Un día de sol, mide la sombra y la altura de un palo a dos horas distintas y compáralas."
+    },
+    "fr": {
+     "t": "Sciences et maths grecques",
+     "g": "Rencontre les penseurs grecs qui ont fait de la mesure et du raisonnement une science.",
+     "p": [
+      "On associe Pythagore à la règle des triangles rectangles, et Euclide a écrit les Éléments, un célèbre manuel de géométrie.",
+      "Archimède a étudié les leviers et les corps flottants et a estimé très bien le nombre pi.",
+      "Ératosthène a comparé des ombres dans deux villes d'Égypte et calculé la taille de la Terre, proche de la vraie valeur."
+     ],
+     "q": "Que préférerais-tu mesurer : la hauteur d'un immeuble, la distance d'une ville ou la taille de la Terre ?",
+     "c": "Un jour de soleil, mesure l'ombre et la hauteur d'un bâton à deux heures différentes et compare."
+    },
+    "it": {
+     "t": "Scienza e matematica greche",
+     "g": "Incontra i pensatori greci che trasformarono misura e ragionamento in scienza.",
+     "p": [
+      "A Pitagora si lega la regola dei triangoli rettangoli, ed Euclide scrisse gli Elementi, un celebre testo di geometria.",
+      "Archimede studiò leve e corpi galleggianti e stimò molto bene il valore del pi greco.",
+      "Eratostene confrontò le ombre in due città egiziane e calcolò la dimensione della Terra, vicina al valore reale."
+     ],
+     "q": "Cosa preferiresti misurare: l'altezza di un palazzo, la distanza da un paese o la dimensione della Terra?",
+     "c": "In una giornata di sole misura l'ombra e l'altezza di un bastone a due ore diverse e confronta."
+    },
+    "pt": {
+     "t": "Ciência e matemática gregas",
+     "g": "Conhece os pensadores gregos que fizeram da medição e do raciocínio uma ciência.",
+     "p": [
+      "A Pitágoras associa-se a regra dos triângulos retângulos, e Euclides escreveu os Elementos, um famoso livro de geometria.",
+      "Arquimedes estudou alavancas e corpos flutuantes e fez uma ótima estimativa do número pi.",
+      "Eratóstenes comparou sombras em duas cidades egípcias e calculou o tamanho da Terra, perto do valor real."
+     ],
+     "q": "O que preferias medir: a altura de um prédio, a distância até uma vila ou o tamanho da Terra?",
+     "c": "Num dia de sol, mede a sombra e a altura de um pau a duas horas diferentes e compara."
+    },
+    "pt_BR": {
+     "t": "Ciência e matemática gregas",
+     "g": "Conheça os pensadores gregos que transformaram medir e raciocinar em uma ciência.",
+     "p": [
+      "A Pitágoras se associa a regra dos triângulos retângulos, e Euclides escreveu os Elementos, um famoso livro de geometria.",
+      "Arquimedes estudou alavancas e corpos flutuantes e fez uma ótima estimativa do número pi.",
+      "Eratóstenes comparou sombras em duas cidades egípcias e calculou o tamanho da Terra, perto do valor real."
+     ],
+     "q": "O que você preferiria medir: a altura de um prédio, a distância até uma cidade ou o tamanho da Terra?",
+     "c": "Em um dia de sol, meça a sombra e a altura de um graveto em dois horários e compare."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Alexander the Great's legacy",
+     "g": "See how one young king's journeys spread Greek culture across three continents.",
+     "p": [
+      "Alexander of Macedon led his army from Greece through Egypt and Persia as far as northwest India in about ten years.",
+      "He founded many new cities, several called Alexandria, and the best known still stands on the Egyptian coast.",
+      "Greek became a common language across the region, and Greek and local ideas mixed in art, science and trade."
+     ],
+     "q": "If you travelled that far, which place on his route would you most like to see?",
+     "c": "Find Alexandria on a map and note two other places Alexander reached."
+    },
+    "de": {
+     "t": "Das Erbe Alexanders des Großen",
+     "g": "Sieh, wie die Reisen eines jungen Königs die griechische Kultur über drei Kontinente verbreiteten.",
+     "p": [
+      "Alexander von Makedonien führte sein Heer in etwa zehn Jahren von Griechenland über Ägypten und Persien bis nach Nordwestindien.",
+      "Er gründete viele neue Städte, mehrere hießen Alexandria, und die bekannteste liegt noch heute an der ägyptischen Küste.",
+      "Griechisch wurde in der Region zur gemeinsamen Sprache, und griechische und lokale Ideen mischten sich in Kunst und Handel."
+     ],
+     "q": "Welchen Ort auf seiner Route würdest du am liebsten sehen, wenn du so weit reisen könntest?",
+     "c": "Suche Alexandria auf einer Karte und notiere zwei weitere Orte, die Alexander erreichte."
+    },
+    "es": {
+     "t": "El legado de Alejandro Magno",
+     "g": "Mira cómo los viajes de un joven rey difundieron la cultura griega por tres continentes.",
+     "p": [
+      "Alejandro de Macedonia llevó a su ejército desde Grecia por Egipto y Persia hasta el noroeste de la India en unos diez años.",
+      "Fundó muchas ciudades nuevas, varias llamadas Alejandría, y la más conocida sigue en la costa egipcia.",
+      "El griego se volvió lengua común en la región y las ideas griegas y locales se mezclaron en arte, ciencia y comercio."
+     ],
+     "q": "Si viajaras tan lejos, ¿qué lugar de su ruta te gustaría ver más?",
+     "c": "Localiza Alejandría en un mapa y anota otros dos lugares a los que llegó Alejandro."
+    },
+    "fr": {
+     "t": "L'héritage d'Alexandre le Grand",
+     "g": "Vois comment les voyages d'un jeune roi ont diffusé la culture grecque sur trois continents.",
+     "p": [
+      "Alexandre de Macédoine a mené son armée de la Grèce à l'Égypte, à la Perse et jusqu'au nord-ouest de l'Inde en dix ans environ.",
+      "Il a fondé de nombreuses villes, plusieurs nommées Alexandrie, et la plus célèbre existe toujours sur la côte égyptienne.",
+      "Le grec est devenu une langue commune dans la région, et les idées grecques et locales se sont mêlées en art et commerce."
+     ],
+     "q": "Si tu voyageais aussi loin, quel lieu de son parcours aimerais-tu voir le plus ?",
+     "c": "Repère Alexandrie sur une carte et note deux autres lieux atteints par Alexandre."
+    },
+    "it": {
+     "t": "L'eredità di Alessandro Magno",
+     "g": "Scopri come i viaggi di un giovane re diffusero la cultura greca su tre continenti.",
+     "p": [
+      "Alessandro di Macedonia guidò l'esercito dalla Grecia all'Egitto, alla Persia e fino all'India nordoccidentale in circa dieci anni.",
+      "Fondò molte città nuove, diverse chiamate Alessandria, e la più nota esiste ancora sulla costa egiziana.",
+      "Il greco divenne lingua comune nella regione e idee greche e locali si mescolarono in arte, scienza e commercio."
+     ],
+     "q": "Se viaggiassi così lontano, quale luogo del suo percorso vorresti vedere di più?",
+     "c": "Trova Alessandria su una mappa e annota altri due luoghi raggiunti da Alessandro."
+    },
+    "pt": {
+     "t": "O legado de Alexandre, o Grande",
+     "g": "Vê como as viagens de um jovem rei espalharam a cultura grega por três continentes.",
+     "p": [
+      "Alexandre da Macedónia levou o seu exército da Grécia ao Egito, à Pérsia e ao noroeste da Índia em cerca de dez anos.",
+      "Fundou muitas cidades novas, várias chamadas Alexandria, e a mais conhecida ainda existe na costa egípcia.",
+      "O grego tornou-se língua comum na região e as ideias gregas e locais misturaram-se na arte, na ciência e no comércio."
+     ],
+     "q": "Se viajasses tão longe, que lugar do seu percurso gostarias mais de ver?",
+     "c": "Localiza Alexandria num mapa e anota mais dois lugares a que Alexandre chegou."
+    },
+    "pt_BR": {
+     "t": "O legado de Alexandre, o Grande",
+     "g": "Veja como as viagens de um jovem rei espalharam a cultura grega por três continentes.",
+     "p": [
+      "Alexandre da Macedônia levou seu exército da Grécia ao Egito, à Pérsia e ao noroeste da Índia em cerca de dez anos.",
+      "Ele fundou muitas cidades novas, várias chamadas Alexandria, e a mais conhecida ainda existe na costa egípcia.",
+      "O grego virou língua comum na região, e as ideias gregas e locais se misturaram na arte, na ciência e no comércio."
+     ],
+     "q": "Se você viajasse tão longe, qual lugar da rota dele gostaria mais de ver?",
+     "c": "Localize Alexandria em um mapa e anote mais dois lugares que Alexandre alcançou."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Library of Alexandria",
+     "g": "Explore a great centre of learning where scholars gathered scrolls from across the known world.",
+     "p": [
+      "The library was part of the Museum in Alexandria, founded under the Ptolemies in the 3rd century BCE.",
+      "Ships arriving in port could have their books copied, so the collection grew to hold a huge number of scrolls.",
+      "Scholars such as Eratosthenes worked in Alexandria, and the library's catalogue helped organise knowledge by subject."
+     ],
+     "q": "If you could read one lost scroll, what would you want it to be about?",
+     "c": "Look at how your local library sorts books, and compare it to a catalogue by subject."
+    },
+    "de": {
+     "t": "Die Bibliothek von Alexandria",
+     "g": "Entdecke ein großes Zentrum des Lernens, in dem Gelehrte Schriftrollen aus der bekannten Welt sammelten.",
+     "p": [
+      "Die Bibliothek gehörte zum Museion in Alexandria, das im 3. Jahrhundert v. Chr. unter den Ptolemäern gegründet wurde.",
+      "Bücher von Schiffen im Hafen konnten kopiert werden, sodass die Sammlung auf eine riesige Zahl Schriftrollen anwuchs.",
+      "Gelehrte wie Eratosthenes arbeiteten in Alexandria, und ein Katalog half, Wissen nach Themen zu ordnen."
+     ],
+     "q": "Welche verlorene Schriftrolle würdest du gern lesen, und worum soll es darin gehen?",
+     "c": "Schau, wie deine Bibliothek Bücher sortiert, und vergleiche es mit einem Katalog nach Themen."
+    },
+    "es": {
+     "t": "La Biblioteca de Alejandría",
+     "g": "Explora un gran centro del saber donde los sabios reunían rollos de todo el mundo conocido.",
+     "p": [
+      "La biblioteca formaba parte del Museo de Alejandría, fundado bajo los Ptolomeos en el siglo III a. C.",
+      "A los barcos que llegaban al puerto se les podían copiar los libros, y la colección creció hasta reunir muchísimos rollos.",
+      "Sabios como Eratóstenes trabajaron en Alejandría, y un catálogo ayudó a ordenar el saber por materias."
+     ],
+     "q": "Si pudieras leer un rollo perdido, ¿de qué te gustaría que tratara?",
+     "c": "Mira cómo ordena los libros tu biblioteca y compáralo con un catálogo por materias."
+    },
+    "fr": {
+     "t": "La bibliothèque d'Alexandrie",
+     "g": "Explore un grand centre du savoir où les érudits réunissaient des rouleaux du monde connu.",
+     "p": [
+      "La bibliothèque faisait partie du Musée d'Alexandrie, fondé sous les Ptolémées au IIIe siècle av. J.-C.",
+      "Les livres des navires arrivant au port pouvaient être copiés, et la collection a atteint un nombre énorme de rouleaux.",
+      "Des savants comme Ératosthène ont travaillé à Alexandrie, et un catalogue aidait à classer le savoir par sujet."
+     ],
+     "q": "Si tu pouvais lire un rouleau perdu, de quoi voudrais-tu qu'il parle ?",
+     "c": "Regarde comment ta bibliothèque classe les livres et compare avec un catalogue par sujet."
+    },
+    "it": {
+     "t": "La Biblioteca di Alessandria",
+     "g": "Esplora un grande centro del sapere dove gli studiosi radunavano rotoli da tutto il mondo noto.",
+     "p": [
+      "La biblioteca faceva parte del Museo di Alessandria, fondato sotto i Tolomei nel III secolo a.C.",
+      "I libri delle navi in porto potevano essere copiati, così la raccolta crebbe fino a contenere moltissimi rotoli.",
+      "Studiosi come Eratostene lavorarono ad Alessandria, e un catalogo aiutava a ordinare il sapere per argomento."
+     ],
+     "q": "Se potessi leggere un rotolo perduto, di cosa vorresti che parlasse?",
+     "c": "Guarda come la tua biblioteca ordina i libri e confrontalo con un catalogo per argomento."
+    },
+    "pt": {
+     "t": "A Biblioteca de Alexandria",
+     "g": "Explora um grande centro do saber onde os sábios reuniam rolos de todo o mundo conhecido.",
+     "p": [
+      "A biblioteca fazia parte do Museu de Alexandria, fundado sob os Ptolomeus no século III a.C.",
+      "Os livros dos navios que chegavam ao porto podiam ser copiados, e a coleção cresceu até ter muitíssimos rolos.",
+      "Sábios como Eratóstenes trabalharam em Alexandria, e um catálogo ajudava a organizar o saber por assuntos."
+     ],
+     "q": "Se pudesses ler um rolo perdido, sobre o que gostarias que fosse?",
+     "c": "Vê como a tua biblioteca organiza os livros e compara com um catálogo por assuntos."
+    },
+    "pt_BR": {
+     "t": "A Biblioteca de Alexandria",
+     "g": "Explore um grande centro do saber onde os sábios reuniam rolos de todo o mundo conhecido.",
+     "p": [
+      "A biblioteca fazia parte do Museu de Alexandria, fundado sob os Ptolomeus no século III a.C.",
+      "Os livros de navios que chegavam ao porto podiam ser copiados, e a coleção cresceu até ter muitíssimos rolos.",
+      "Sábios como Eratóstenes trabalharam em Alexandria, e um catálogo ajudava a organizar o saber por assuntos."
+     ],
+     "q": "Se você pudesse ler um rolo perdido, sobre o que gostaria que fosse?",
+     "c": "Veja como a sua biblioteca organiza os livros e compare com um catálogo por assuntos."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Persian Empire",
+     "g": "Discover Cyrus the Great, the Royal Road and an empire of many peoples.",
+     "p": [
+      "Cyrus the Great founded the Persian, or Achaemenid, Empire around 550 BCE, and it grew to span three continents.",
+      "The Royal Road ran about 2,700 km from Sardis to Susa, with relay stations where messengers changed horses.",
+      "The empire was split into provinces and allowed many peoples to keep their own languages and customs."
+     ],
+     "q": "What would be the hardest part of running a country with many languages?",
+     "c": "Trace the Royal Road from Sardis to Susa on a map and guess how many days a rider took."
+    },
+    "de": {
+     "t": "Das Perserreich",
+     "g": "Entdecke Kyros den Großen, die Königsstraße und ein Reich vieler Völker.",
+     "p": [
+      "Kyros der Große gründete um 550 v. Chr. das Perserreich der Achämeniden, das sich über drei Kontinente erstreckte.",
+      "Die Königsstraße verlief etwa 2.700 km von Sardes nach Susa, mit Stationen, an denen Boten die Pferde wechselten.",
+      "Das Reich war in Provinzen gegliedert und ließ vielen Völkern ihre eigenen Sprachen und Bräuche."
+     ],
+     "q": "Was wäre das Schwierigste, wenn man ein Land mit vielen Sprachen leiten würde?",
+     "c": "Verfolge die Königsstraße von Sardes nach Susa auf einer Karte und schätze die Tage eines Reiters."
+    },
+    "es": {
+     "t": "El Imperio persa",
+     "g": "Descubre a Ciro el Grande, el Camino Real y un imperio de muchos pueblos.",
+     "p": [
+      "Ciro el Grande fundó hacia el 550 a. C. el Imperio persa, o aqueménida, que llegó a abarcar tres continentes.",
+      "El Camino Real medía unos 2700 km de Sardes a Susa, con postas donde los mensajeros cambiaban de caballo.",
+      "El imperio se dividía en provincias y permitía a muchos pueblos conservar su lengua y sus costumbres."
+     ],
+     "q": "¿Cuál sería lo más difícil de gobernar un país con muchas lenguas?",
+     "c": "Traza en un mapa el Camino Real de Sardes a Susa y calcula cuántos días tardaba un jinete."
+    },
+    "fr": {
+     "t": "L'Empire perse",
+     "g": "Découvre Cyrus le Grand, la Route royale et un empire de nombreux peuples.",
+     "p": [
+      "Cyrus le Grand a fondé vers 550 av. J.-C. l'Empire perse, ou achéménide, qui s'est étendu sur trois continents.",
+      "La Route royale faisait environ 2 700 km de Sardes à Suse, avec des relais où les messagers changeaient de cheval.",
+      "L'empire était divisé en provinces et laissait de nombreux peuples garder leur langue et leurs coutumes."
+     ],
+     "q": "Quelle serait la partie la plus difficile pour diriger un pays aux nombreuses langues ?",
+     "c": "Trace la Route royale de Sardes à Suse sur une carte et devine les jours d'un cavalier."
+    },
+    "it": {
+     "t": "L'Impero persiano",
+     "g": "Scopri Ciro il Grande, la Via Regia e un impero di molti popoli.",
+     "p": [
+      "Ciro il Grande fondò intorno al 550 a.C. l'Impero persiano, o achemenide, che arrivò a coprire tre continenti.",
+      "La Via Regia correva per circa 2.700 km da Sardi a Susa, con stazioni dove i messaggeri cambiavano cavallo.",
+      "L'impero era diviso in province e lasciava a molti popoli la propria lingua e le proprie usanze."
+     ],
+     "q": "Quale sarebbe la parte più difficile nel guidare un paese con molte lingue?",
+     "c": "Traccia la Via Regia da Sardi a Susa su una mappa e indovina i giorni di un cavaliere."
+    },
+    "pt": {
+     "t": "O Império Persa",
+     "g": "Descobre Ciro, o Grande, a Estrada Real e um império de muitos povos.",
+     "p": [
+      "Ciro, o Grande, fundou por volta de 550 a.C. o Império Persa, ou aquemênida, que chegou a abranger três continentes.",
+      "A Estrada Real tinha cerca de 2700 km de Sardes a Susa, com postos onde os mensageiros trocavam de cavalo.",
+      "O império estava dividido em províncias e deixava muitos povos manter as suas línguas e costumes."
+     ],
+     "q": "Qual seria a parte mais difícil de governar um país com muitas línguas?",
+     "c": "Traça no mapa a Estrada Real de Sardes a Susa e adivinha os dias de um cavaleiro."
+    },
+    "pt_BR": {
+     "t": "O Império Persa",
+     "g": "Descubra Ciro, o Grande, a Estrada Real e um império de muitos povos.",
+     "p": [
+      "Ciro, o Grande, fundou por volta de 550 a.C. o Império Persa, ou aquemênida, que chegou a abranger três continentes.",
+      "A Estrada Real tinha cerca de 2.700 km de Sardes a Susa, com postos onde os mensageiros trocavam de cavalo.",
+      "O império era dividido em províncias e deixava muitos povos manter suas línguas e costumes."
+     ],
+     "q": "Qual seria a parte mais difícil de governar um país com muitas línguas?",
+     "c": "Trace no mapa a Estrada Real de Sardes a Susa e adivinhe os dias de um cavaleiro."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ancient Rome's beginnings",
+     "g": "Follow Rome from a small city on the Tiber to a republic with senators and consuls.",
+     "p": [
+      "Tradition says Rome was founded in 753 BCE on hills beside the Tiber river, a handy spot for trade.",
+      "After the kings, Rome became a republic, traditionally in 509 BCE, ruled by elected officials instead of one monarch.",
+      "Two consuls were chosen each year, and the Senate, a council of leading citizens, gave advice and shaped decisions."
+     ],
+     "q": "Why do you think sharing power between two leaders might be useful?",
+     "c": "Find the Tiber and the seven hills of Rome on a map and name one hill."
+    },
+    "de": {
+     "t": "Die Anfänge des antiken Roms",
+     "g": "Verfolge, wie Rom von einer kleinen Stadt am Tiber zu einer Republik mit Senatoren und Konsuln wurde.",
+     "p": [
+      "Der Überlieferung nach wurde Rom 753 v. Chr. auf Hügeln am Tiber gegründet, einem günstigen Ort für den Handel.",
+      "Nach den Königen wurde Rom, der Tradition nach 509 v. Chr., eine Republik mit gewählten Amtsträgern statt eines Monarchen.",
+      "Jedes Jahr wurden zwei Konsuln gewählt, und der Senat, ein Rat führender Bürger, beriet und prägte Entscheidungen."
+     ],
+     "q": "Warum könnte es nützlich sein, wenn sich zwei Anführer die Macht teilen?",
+     "c": "Finde den Tiber und die sieben Hügel Roms auf einer Karte und nenne einen Hügel."
+    },
+    "es": {
+     "t": "Los comienzos de la antigua Roma",
+     "g": "Sigue a Roma desde una pequeña ciudad junto al Tíber hasta una república con senadores y cónsules.",
+     "p": [
+      "La tradición dice que Roma se fundó en el 753 a. C. sobre colinas junto al río Tíber, un buen lugar para comerciar.",
+      "Tras los reyes, Roma fue república, según la tradición desde el 509 a. C., gobernada por cargos electos y no por un monarca.",
+      "Cada año se elegían dos cónsules, y el Senado, un consejo de ciudadanos destacados, aconsejaba y guiaba las decisiones."
+     ],
+     "q": "¿Por qué crees que compartir el poder entre dos líderes puede ser útil?",
+     "c": "Busca en un mapa el Tíber y las siete colinas de Roma y nombra una de ellas."
+    },
+    "fr": {
+     "t": "Les débuts de la Rome antique",
+     "g": "Suis Rome, de petite ville sur le Tibre à république de sénateurs et de consuls.",
+     "p": [
+      "Selon la tradition, Rome a été fondée en 753 av. J.-C. sur des collines au bord du Tibre, bien placées pour le commerce.",
+      "Après les rois, Rome devint une république, traditionnellement en 509 av. J.-C., dirigée par des magistrats élus, non un monarque.",
+      "Deux consuls étaient choisis chaque année, et le Sénat, conseil de citoyens éminents, conseillait et orientait les décisions."
+     ],
+     "q": "Pourquoi partager le pouvoir entre deux dirigeants peut-il être utile, à ton avis ?",
+     "c": "Trouve le Tibre et les sept collines de Rome sur une carte et nomme une colline."
+    },
+    "it": {
+     "t": "Gli inizi dell'antica Roma",
+     "g": "Segui Roma da piccola città sul Tevere a repubblica con senatori e consoli.",
+     "p": [
+      "Secondo la tradizione Roma fu fondata nel 753 a.C. su colli lungo il Tevere, un buon punto per i commerci.",
+      "Dopo i re, Roma divenne repubblica, tradizionalmente nel 509 a.C., governata da magistrati eletti e non da un monarca.",
+      "Ogni anno si sceglievano due consoli, e il Senato, consiglio di cittadini illustri, consigliava e orientava le decisioni."
+     ],
+     "q": "Perché secondo te dividere il potere tra due capi può essere utile?",
+     "c": "Trova il Tevere e i sette colli di Roma su una mappa e nomina un colle."
+    },
+    "pt": {
+     "t": "Os primórdios da Roma antiga",
+     "g": "Acompanha Roma, de pequena cidade junto ao Tibre a república com senadores e cônsules.",
+     "p": [
+      "Diz a tradição que Roma foi fundada em 753 a.C. em colinas junto ao rio Tibre, um bom local para o comércio.",
+      "Depois dos reis, Roma foi república, tradicionalmente desde 509 a.C., governada por magistrados eleitos e não por um monarca.",
+      "Escolhiam-se dois cônsules por ano, e o Senado, conselho de cidadãos de destaque, aconselhava e orientava as decisões."
+     ],
+     "q": "Porque achas que partilhar o poder entre dois líderes pode ser útil?",
+     "c": "Encontra o Tibre e as sete colinas de Roma num mapa e diz o nome de uma colina."
+    },
+    "pt_BR": {
+     "t": "Os primórdios da Roma antiga",
+     "g": "Acompanhe Roma, de pequena cidade às margens do Tibre a república com senadores e cônsules.",
+     "p": [
+      "Diz a tradição que Roma foi fundada em 753 a.C. em colinas junto ao rio Tibre, um bom local para o comércio.",
+      "Depois dos reis, Roma virou república, tradicionalmente em 509 a.C., governada por magistrados eleitos e não por um monarca.",
+      "Dois cônsules eram escolhidos por ano, e o Senado, conselho de cidadãos de destaque, aconselhava e orientava as decisões."
+     ],
+     "q": "Por que você acha que dividir o poder entre dois líderes pode ser útil?",
+     "c": "Encontre o Tibre e as sete colinas de Roma em um mapa e diga o nome de uma colina."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Roman engineering",
+     "g": "See how roads, aqueducts, concrete and arches built things that still stand.",
+     "p": [
+      "Roman roads, like the Appian Way begun in 312 BCE, were built in layers and linked cities across the empire.",
+      "Aqueducts carried water over long distances using a gentle slope, and the Pont du Gard in France still stands.",
+      "Concrete and the arch let builders create huge domes, and the Pantheon's dome in Rome is still admired today."
+     ],
+     "q": "Which Roman structure would you most like to walk across or through?",
+     "c": "Spot an arch in your town, in a bridge or a doorway, and notice how its shape carries weight."
+    },
+    "de": {
+     "t": "Römische Ingenieurskunst",
+     "g": "Sieh, wie Straßen, Aquädukte, Beton und Bögen Bauwerke schufen, die noch stehen.",
+     "p": [
+      "Römische Straßen wie die 312 v. Chr. begonnene Via Appia wurden in Schichten gebaut und verbanden Städte im Reich.",
+      "Aquädukte leiteten Wasser über weite Strecken mit sanftem Gefälle, und der Pont du Gard in Frankreich steht noch.",
+      "Beton und Bogen ermöglichten riesige Kuppeln, und die Kuppel des Pantheons in Rom wird noch heute bewundert."
+     ],
+     "q": "Welches römische Bauwerk würdest du am liebsten überqueren oder durchschreiten?",
+     "c": "Entdecke einen Bogen in deiner Stadt, an einer Brücke oder Tür, und achte darauf, wie er Last trägt."
+    },
+    "es": {
+     "t": "Ingeniería romana",
+     "g": "Mira cómo caminos, acueductos, hormigón y arcos levantaron obras que siguen en pie.",
+     "p": [
+      "Las calzadas romanas, como la Vía Apia iniciada en el 312 a. C., se hacían por capas y unían ciudades del imperio.",
+      "Los acueductos llevaban agua lejos con una pendiente suave, y el Pont du Gard, en Francia, sigue en pie.",
+      "El hormigón y el arco permitieron grandes cúpulas, y la del Panteón de Roma aún se admira hoy."
+     ],
+     "q": "¿Qué obra romana te gustaría más recorrer o atravesar?",
+     "c": "Busca un arco en tu ciudad, en un puente o una puerta, y fíjate en cómo reparte el peso."
+    },
+    "fr": {
+     "t": "L'ingénierie romaine",
+     "g": "Vois comment routes, aqueducs, béton et arcs ont donné des ouvrages encore debout.",
+     "p": [
+      "Les routes romaines, comme la voie Appienne commencée en 312 av. J.-C., étaient bâties en couches et reliaient les villes.",
+      "Les aqueducs amenaient l'eau loin grâce à une pente douce, et le pont du Gard est toujours debout.",
+      "Le béton et l'arc permettaient de grandes coupoles, et celle du Panthéon à Rome est encore admirée aujourd'hui."
+     ],
+     "q": "Quel ouvrage romain aimerais-tu le plus traverser ou parcourir ?",
+     "c": "Repère un arc dans ta ville, sur un pont ou une porte, et observe comment sa forme porte le poids."
+    },
+    "it": {
+     "t": "L'ingegneria romana",
+     "g": "Scopri come strade, acquedotti, cemento e archi crearono opere ancora in piedi.",
+     "p": [
+      "Le strade romane, come la Via Appia iniziata nel 312 a.C., erano costruite a strati e collegavano le città dell'impero.",
+      "Gli acquedotti portavano l'acqua lontano grazie a una lieve pendenza, e il Pont du Gard in Francia è ancora in piedi.",
+      "Cemento e arco permisero grandi cupole, e quella del Pantheon a Roma è ammirata ancora oggi."
+     ],
+     "q": "Quale opera romana ti piacerebbe di più attraversare o percorrere?",
+     "c": "Cerca un arco nella tua città, in un ponte o in una porta, e osserva come porta il peso."
+    },
+    "pt": {
+     "t": "Engenharia romana",
+     "g": "Vê como estradas, aquedutos, betão e arcos criaram obras que ainda estão de pé.",
+     "p": [
+      "As estradas romanas, como a Via Ápia iniciada em 312 a.C., eram feitas em camadas e ligavam cidades do império.",
+      "Os aquedutos levavam água longe com uma ligeira inclinação, e o Pont du Gard, em França, ainda existe.",
+      "O betão e o arco permitiram grandes cúpulas, e a do Panteão de Roma ainda hoje é admirada."
+     ],
+     "q": "Que obra romana gostarias mais de atravessar ou percorrer?",
+     "c": "Procura um arco na tua cidade, numa ponte ou porta, e repara como reparte o peso."
+    },
+    "pt_BR": {
+     "t": "Engenharia romana",
+     "g": "Veja como estradas, aquedutos, concreto e arcos criaram obras que ainda estão de pé.",
+     "p": [
+      "As estradas romanas, como a Via Ápia iniciada em 312 a.C., eram feitas em camadas e ligavam cidades do império.",
+      "Os aquedutos levavam água longe com uma leve inclinação, e o Pont du Gard, na França, ainda existe.",
+      "O concreto e o arco permitiram grandes cúpulas, e a do Panteão de Roma ainda é admirada hoje."
+     ],
+     "q": "Qual obra romana você gostaria mais de atravessar ou percorrer?",
+     "c": "Procure um arco na sua cidade, em uma ponte ou porta, e repare como ele distribui o peso."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Daily life in Rome",
+     "g": "Step into a Roman city: baths, markets, apartment blocks and everyday food.",
+     "p": [
+      "Many Romans lived in apartment blocks called insulae, often with shops and food counters on the ground floor.",
+      "Public baths were places to wash, exercise, meet friends and relax, and many cities had several.",
+      "Common foods included bread, porridge, olives, cheese, vegetables, fish and wine mixed with water."
+     ],
+     "q": "Which would you visit first in a Roman city: the baths, the market or a food counter?",
+     "c": "Make a simple Roman-style snack today: bread with olive oil, cheese and olives."
+    },
+    "de": {
+     "t": "Alltag im alten Rom",
+     "g": "Betritt eine römische Stadt: Bäder, Märkte, Mietshäuser und das tägliche Essen.",
+     "p": [
+      "Viele Römer wohnten in Mietshäusern, den Insulae, oft mit Läden und Imbissständen im Erdgeschoss.",
+      "Öffentliche Bäder dienten zum Waschen, Sporttreiben, Freundetreffen und Entspannen, und viele Städte hatten mehrere.",
+      "Zu den üblichen Speisen zählten Brot, Brei, Oliven, Käse, Gemüse, Fisch und mit Wasser gemischter Wein."
+     ],
+     "q": "Was würdest du in einer römischen Stadt zuerst besuchen: die Bäder, den Markt oder einen Imbiss?",
+     "c": "Mach heute einen einfachen Snack nach römischer Art: Brot mit Olivenöl, Käse und Oliven."
+    },
+    "es": {
+     "t": "La vida diaria en Roma",
+     "g": "Entra en una ciudad romana: termas, mercados, bloques de viviendas y comida cotidiana.",
+     "p": [
+      "Muchos romanos vivían en bloques de viviendas llamados insulae, con tiendas y puestos de comida en la planta baja.",
+      "Las termas públicas servían para lavarse, hacer ejercicio, quedar con amigos y descansar, y había varias por ciudad.",
+      "Entre los alimentos comunes estaban el pan, las gachas, las aceitunas, el queso, las verduras, el pescado y el vino con agua."
+     ],
+     "q": "¿Qué visitarías primero en una ciudad romana: las termas, el mercado o un puesto de comida?",
+     "c": "Prepara hoy un tentempié al estilo romano: pan con aceite de oliva, queso y aceitunas."
+    },
+    "fr": {
+     "t": "La vie quotidienne à Rome",
+     "g": "Entre dans une ville romaine : thermes, marchés, immeubles et repas de tous les jours.",
+     "p": [
+      "Beaucoup de Romains vivaient dans des immeubles appelés insulae, souvent avec des boutiques au rez-de-chaussée.",
+      "Les thermes publics servaient à se laver, faire du sport, retrouver des amis et se détendre, et chaque ville en avait plusieurs.",
+      "On mangeait couramment du pain, de la bouillie, des olives, du fromage, des légumes, du poisson et du vin coupé d'eau."
+     ],
+     "q": "Que visiterais-tu en premier dans une ville romaine : les thermes, le marché ou un comptoir de nourriture ?",
+     "c": "Prépare aujourd'hui un en-cas à la romaine : pain, huile d'olive, fromage et olives."
+    },
+    "it": {
+     "t": "La vita quotidiana a Roma",
+     "g": "Entra in una città romana: terme, mercati, palazzi di appartamenti e cibo di ogni giorno.",
+     "p": [
+      "Molti romani vivevano in palazzi chiamati insulae, spesso con botteghe e banconi di cibo al pianoterra.",
+      "Le terme pubbliche servivano per lavarsi, fare esercizio, incontrare amici e rilassarsi, e ogni città ne aveva diverse.",
+      "Tra i cibi comuni c'erano pane, farinate, olive, formaggio, verdure, pesce e vino mescolato con acqua."
+     ],
+     "q": "Cosa visiteresti per prima in una città romana: le terme, il mercato o un banco di cibo?",
+     "c": "Prepara oggi uno spuntino alla romana: pane con olio d'oliva, formaggio e olive."
+    },
+    "pt": {
+     "t": "A vida diária em Roma",
+     "g": "Entra numa cidade romana: termas, mercados, blocos de apartamentos e comida do dia a dia.",
+     "p": [
+      "Muitos romanos viviam em blocos de apartamentos chamados insulae, com lojas e balcões de comida no rés do chão.",
+      "As termas públicas serviam para lavar, fazer exercício, encontrar amigos e descansar, e havia várias por cidade.",
+      "Entre os alimentos comuns havia pão, papas, azeitonas, queijo, legumes, peixe e vinho misturado com água."
+     ],
+     "q": "O que visitarias primeiro numa cidade romana: as termas, o mercado ou um balcão de comida?",
+     "c": "Faz hoje um lanche à romana: pão com azeite, queijo e azeitonas."
+    },
+    "pt_BR": {
+     "t": "A vida diária em Roma",
+     "g": "Entre em uma cidade romana: termas, mercados, prédios de apartamentos e comida do dia a dia.",
+     "p": [
+      "Muitos romanos moravam em prédios de apartamentos chamados insulae, com lojas e balcões de comida no térreo.",
+      "As termas públicas serviam para se lavar, se exercitar, encontrar amigos e relaxar, e havia várias por cidade.",
+      "Entre os alimentos comuns havia pão, mingau, azeitonas, queijo, legumes, peixe e vinho misturado com água."
+     ],
+     "q": "O que você visitaria primeiro em uma cidade romana: as termas, o mercado ou um balcão de comida?",
+     "c": "Faça hoje um lanche à moda romana: pão com azeite, queijo e azeitonas."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pompeii",
+     "g": "Visit a Roman town preserved by volcanic ash that became a window into daily life.",
+     "p": [
+      "In 79 CE Mount Vesuvius erupted and covered Pompeii in ash and stone, sealing the town for centuries.",
+      "Excavations have revealed streets, shops, bakeries, bright wall paintings and even scribbled graffiti.",
+      "Because so much was preserved, historians learn how ordinary Romans cooked, shopped, decorated and wrote."
+     ],
+     "q": "If you found one everyday object from Pompeii, what would you hope it was?",
+     "c": "Look up a Pompeii wall painting or mosaic and describe its colours and subject in one sentence."
+    },
+    "de": {
+     "t": "Pompeji",
+     "g": "Besuche eine römische Stadt, die unter Vulkanasche erhalten blieb und Einblick in den Alltag gibt.",
+     "p": [
+      "Im Jahr 79 n. Chr. brach der Vesuv aus und bedeckte Pompeji mit Asche und Gestein, das die Stadt jahrhundertelang versiegelte.",
+      "Ausgrabungen haben Straßen, Läden, Bäckereien, bunte Wandmalereien und sogar gekritzelte Wandsprüche freigelegt.",
+      "Weil so viel erhalten blieb, erfahren Historiker, wie gewöhnliche Römer kochten, einkauften, wohnten und schrieben."
+     ],
+     "q": "Welchen Alltagsgegenstand aus Pompeji würdest du am liebsten finden?",
+     "c": "Suche ein Wandgemälde oder Mosaik aus Pompeji und beschreibe Farben und Motiv in einem Satz."
+    },
+    "es": {
+     "t": "Pompeya",
+     "g": "Visita una ciudad romana conservada bajo la ceniza que se convirtió en una ventana a la vida diaria.",
+     "p": [
+      "En el 79 d. C. el Vesubio entró en erupción y cubrió Pompeya de ceniza y piedra, sellando la ciudad durante siglos.",
+      "Las excavaciones han sacado a la luz calles, tiendas, panaderías, pinturas murales llenas de color e incluso grafitis.",
+      "Como se conservó tanto, los historiadores saben cómo cocinaban, compraban, decoraban y escribían los romanos corrientes."
+     ],
+     "q": "Si encontraras un objeto cotidiano de Pompeya, ¿cuál te gustaría que fuera?",
+     "c": "Busca una pintura mural o un mosaico de Pompeya y describe sus colores y tema en una frase."
+    },
+    "fr": {
+     "t": "Pompéi",
+     "g": "Visite une ville romaine préservée sous les cendres, devenue une fenêtre sur la vie quotidienne.",
+     "p": [
+      "En 79 apr. J.-C., le Vésuve est entré en éruption et a recouvert Pompéi de cendres et de pierres pour des siècles.",
+      "Les fouilles ont révélé des rues, des boutiques, des boulangeries, de belles peintures murales et même des graffitis.",
+      "Grâce à cette conservation, les historiens savent comment les Romains ordinaires cuisinaient, achetaient et écrivaient."
+     ],
+     "q": "Si tu trouvais un objet du quotidien de Pompéi, lequel espérerais-tu que ce soit ?",
+     "c": "Cherche une peinture murale ou une mosaïque de Pompéi et décris ses couleurs et son sujet en une phrase."
+    },
+    "it": {
+     "t": "Pompei",
+     "g": "Visita una città romana conservata sotto la cenere che è diventata una finestra sulla vita quotidiana.",
+     "p": [
+      "Nel 79 d.C. il Vesuvio eruttò e coprì Pompei di cenere e pietre, sigillando la città per secoli.",
+      "Gli scavi hanno riportato alla luce strade, botteghe, panifici, vivaci pitture murali e persino graffiti.",
+      "Poiché si è conservato tanto, gli storici scoprono come i romani comuni cucinavano, compravano, decoravano e scrivevano."
+     ],
+     "q": "Se trovassi un oggetto quotidiano di Pompei, quale speri che sia?",
+     "c": "Cerca una pittura murale o un mosaico di Pompei e descrivi colori e soggetto in una frase."
+    },
+    "pt": {
+     "t": "Pompeia",
+     "g": "Visita uma cidade romana preservada sob as cinzas que se tornou uma janela para o dia a dia.",
+     "p": [
+      "Em 79 d.C. o Vesúvio entrou em erupção e cobriu Pompeia de cinzas e pedras, selando a cidade durante séculos.",
+      "As escavações revelaram ruas, lojas, padarias, pinturas murais coloridas e até grafites rabiscados.",
+      "Como tanto se preservou, os historiadores sabem como os romanos comuns cozinhavam, compravam, decoravam e escreviam."
+     ],
+     "q": "Se encontrasses um objeto do dia a dia de Pompeia, qual gostarias que fosse?",
+     "c": "Procura uma pintura mural ou um mosaico de Pompeia e descreve as cores e o tema numa frase."
+    },
+    "pt_BR": {
+     "t": "Pompeia",
+     "g": "Visite uma cidade romana preservada sob as cinzas que virou uma janela para o dia a dia.",
+     "p": [
+      "Em 79 d.C. o Vesúvio entrou em erupção e cobriu Pompeia de cinzas e pedras, selando a cidade por séculos.",
+      "As escavações revelaram ruas, lojas, padarias, pinturas murais coloridas e até grafites rabiscados.",
+      "Como tanta coisa se preservou, os historiadores sabem como os romanos comuns cozinhavam, compravam e escreviam."
+     ],
+     "q": "Se você encontrasse um objeto do dia a dia de Pompeia, qual gostaria que fosse?",
+     "c": "Procure uma pintura mural ou um mosaico de Pompeia e descreva as cores e o tema em uma frase."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Latin and its legacy",
+     "g": "See how the language of Rome grew into Spanish, French, Italian, Portuguese and Romanian.",
+     "p": [
+      "Latin spread with Roman roads, soldiers and traders, and local people slowly adopted it in everyday speech.",
+      "Over centuries, spoken Latin changed differently in each region and became the Romance languages.",
+      "Compare aqua with agua, água, acqua and eau: the family resemblance is easy to hear."
+     ],
+     "q": "Which Romance language word do you find easiest to guess, and why?",
+     "c": "Write three words in your language and check whether any come from Latin."
+    },
+    "de": {
+     "t": "Latein und sein Erbe",
+     "g": "Sieh, wie die Sprache Roms zu Spanisch, Französisch, Italienisch, Portugiesisch und Rumänisch wurde.",
+     "p": [
+      "Latein verbreitete sich mit römischen Straßen, Soldaten und Händlern, und die Menschen übernahmen es nach und nach im Alltag.",
+      "Über Jahrhunderte entwickelte sich gesprochenes Latein in jeder Region anders und wurde zu den romanischen Sprachen.",
+      "Vergleiche aqua mit agua, água, acqua und eau: Die Familienähnlichkeit ist gut zu hören."
+     ],
+     "q": "Welches romanische Wort kannst du am leichtesten erraten, und warum?",
+     "c": "Schreibe drei Wörter deiner Sprache auf und prüfe, ob eines aus dem Lateinischen stammt."
+    },
+    "es": {
+     "t": "El latín y su legado",
+     "g": "Mira cómo la lengua de Roma dio origen al español, francés, italiano, portugués y rumano.",
+     "p": [
+      "El latín se extendió con las calzadas, los soldados y los comerciantes, y la gente local lo adoptó poco a poco al hablar.",
+      "Con los siglos, el latín hablado cambió de forma distinta en cada región y dio origen a las lenguas romances.",
+      "Compara aqua con agua, água, acqua y eau: el aire de familia se oye fácilmente."
+     ],
+     "q": "¿Qué palabra de una lengua romance te resulta más fácil de adivinar, y por qué?",
+     "c": "Escribe tres palabras de tu lengua y comprueba si alguna viene del latín."
+    },
+    "fr": {
+     "t": "Le latin et son héritage",
+     "g": "Vois comment la langue de Rome est devenue espagnol, français, italien, portugais et roumain.",
+     "p": [
+      "Le latin s'est répandu avec les routes, les soldats et les marchands romains, et les habitants l'ont peu à peu adopté.",
+      "Au fil des siècles, le latin parlé a évolué différemment selon les régions et donné les langues romanes.",
+      "Compare aqua avec agua, água, acqua et eau : l'air de famille s'entend facilement."
+     ],
+     "q": "Quel mot d'une langue romane trouves-tu le plus facile à deviner, et pourquoi ?",
+     "c": "Écris trois mots de ta langue et vérifie si l'un vient du latin."
+    },
+    "it": {
+     "t": "Il latino e la sua eredità",
+     "g": "Scopri come la lingua di Roma è diventata spagnolo, francese, italiano, portoghese e rumeno.",
+     "p": [
+      "Il latino si diffuse con strade, soldati e mercanti romani, e la gente del posto lo adottò a poco a poco nel parlare.",
+      "Nei secoli il latino parlato cambiò in modo diverso in ogni regione e diede origine alle lingue romanze.",
+      "Confronta aqua con agua, água, acqua ed eau: l'aria di famiglia si sente subito."
+     ],
+     "q": "Quale parola di una lingua romanza ti sembra più facile da indovinare, e perché?",
+     "c": "Scrivi tre parole della tua lingua e controlla se qualcuna viene dal latino."
+    },
+    "pt": {
+     "t": "O latim e o seu legado",
+     "g": "Vê como a língua de Roma deu origem ao espanhol, francês, italiano, português e romeno.",
+     "p": [
+      "O latim espalhou-se com as estradas, os soldados e os comerciantes romanos, e a população foi-o adotando na fala.",
+      "Ao longo dos séculos, o latim falado mudou de forma diferente em cada região e deu origem às línguas românicas.",
+      "Compara aqua com agua, água, acqua e eau: a semelhança de família ouve-se facilmente."
+     ],
+     "q": "Que palavra de uma língua românica achas mais fácil de adivinhar, e porquê?",
+     "c": "Escreve três palavras da tua língua e verifica se alguma vem do latim."
+    },
+    "pt_BR": {
+     "t": "O latim e seu legado",
+     "g": "Veja como a língua de Roma deu origem ao espanhol, francês, italiano, português e romeno.",
+     "p": [
+      "O latim se espalhou com as estradas, os soldados e os comerciantes romanos, e a população foi adotando na fala.",
+      "Ao longo dos séculos, o latim falado mudou de forma diferente em cada região e deu origem às línguas românicas.",
+      "Compare aqua com agua, água, acqua e eau: a semelhança de família se ouve com facilidade."
+     ],
+     "q": "Qual palavra de uma língua românica você acha mais fácil de adivinhar, e por quê?",
+     "c": "Escreva três palavras da sua língua e verifique se alguma vem do latim."
+    }
+   }
+  }
+ ]
+}

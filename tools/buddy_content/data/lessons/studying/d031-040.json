@@ -1,0 +1,835 @@
+{
+ "topic": "studying",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Designing your study space",
+     "g": "Choose light, chair, desk height and tidy surfaces that make focus easier.",
+     "p": [
+      "Good light, ideally natural or a lamp aimed at your work, reduces eye strain.",
+      "Sit with feet flat, back supported and screen at eye level to avoid aches.",
+      "Keep only what you need for today's task on the desk."
+     ],
+     "q": "What is the best and the worst thing about where you study now?",
+     "c": "Improve one thing in your study space today: light, seat or clutter."
+    },
+    "de": {
+     "t": "Deinen Lernplatz gestalten",
+     "g": "Wähle Licht, Stuhl, Tischhöhe und aufgeräumte Flächen, die Konzentration erleichtern.",
+     "p": [
+      "Gutes Licht, am besten natürlich oder eine Lampe auf deine Arbeit gerichtet, schont die Augen.",
+      "Sitze mit flachen Füßen, gestütztem Rücken und Bildschirm auf Augenhöhe.",
+      "Lass nur das auf dem Tisch, was du für die heutige Aufgabe brauchst."
+     ],
+     "q": "Was ist das Beste und das Schlechteste an deinem jetzigen Lernplatz?",
+     "c": "Verbessere heute eine Sache an deinem Lernplatz: Licht, Sitz oder Kram."
+    },
+    "es": {
+     "t": "Diseñar tu espacio de estudio",
+     "g": "Elige luz, silla, altura de mesa y superficies ordenadas que faciliten la concentración.",
+     "p": [
+      "Una buena luz, natural o con una lámpara dirigida al trabajo, reduce la fatiga visual.",
+      "Siéntate con los pies planos, la espalda apoyada y la pantalla a la altura de los ojos.",
+      "Deja en la mesa solo lo que necesitas para la tarea de hoy."
+     ],
+     "q": "¿Qué es lo mejor y lo peor del lugar donde estudias ahora?",
+     "c": "Mejora hoy una cosa de tu espacio de estudio: luz, asiento o desorden."
+    },
+    "fr": {
+     "t": "Aménager ton espace d'étude",
+     "g": "Choisis lumière, chaise, hauteur de bureau et surfaces rangées pour faciliter la concentration.",
+     "p": [
+      "Une bonne lumière, naturelle ou une lampe orientée sur ton travail, réduit la fatigue des yeux.",
+      "Assieds-toi pieds à plat, dos soutenu et écran à hauteur des yeux.",
+      "Ne garde sur le bureau que ce qu'il faut pour la tâche du jour."
+     ],
+     "q": "Quel est le meilleur et le pire de l'endroit où tu étudies ?",
+     "c": "Améliore aujourd'hui un point de ton espace : lumière, siège ou désordre."
+    },
+    "it": {
+     "t": "Progettare il tuo spazio di studio",
+     "g": "Scegli luce, sedia, altezza della scrivania e superfici in ordine che facilitino la concentrazione.",
+     "p": [
+      "Una buona luce, naturale o una lampada rivolta al lavoro, riduce l'affaticamento degli occhi.",
+      "Siediti con i piedi appoggiati, la schiena sostenuta e lo schermo all'altezza degli occhi.",
+      "Tieni sulla scrivania solo ciò che serve per il compito di oggi."
+     ],
+     "q": "Qual è la cosa migliore e peggiore del posto dove studi ora?",
+     "c": "Migliora oggi una cosa del tuo spazio: luce, seduta o disordine."
+    },
+    "pt": {
+     "t": "Preparar o teu espaço de estudo",
+     "g": "Escolhe luz, cadeira, altura da secretária e superfícies arrumadas que facilitem o foco.",
+     "p": [
+      "Boa luz, natural ou um candeeiro virado para o trabalho, reduz o cansaço dos olhos.",
+      "Senta-te com os pés assentes, as costas apoiadas e o ecrã à altura dos olhos.",
+      "Deixa na secretária só o que precisas para a tarefa de hoje."
+     ],
+     "q": "Qual é a melhor e a pior coisa do sítio onde estudas agora?",
+     "c": "Hoje, melhora uma coisa no teu espaço: luz, cadeira ou desarrumação."
+    },
+    "pt_BR": {
+     "t": "Montar seu espaço de estudo",
+     "g": "Escolha luz, cadeira, altura da mesa e superfícies organizadas que facilitem o foco.",
+     "p": [
+      "Boa luz, natural ou uma luminária voltada para o trabalho, reduz o cansaço nos olhos.",
+      "Sente com os pés apoiados, as costas sustentadas e a tela na altura dos olhos.",
+      "Deixe na mesa só o que você precisa para a tarefa de hoje."
+     ],
+     "q": "Qual é a melhor e a pior coisa do lugar onde você estuda hoje?",
+     "c": "Hoje, melhore uma coisa no seu espaço: luz, cadeira ou bagunça."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "One place, one purpose",
+     "g": "Studying in the same spot can build a focus habit, and sometimes a change helps.",
+     "p": [
+      "A spot used only for studying becomes a cue that tells your mind to focus.",
+      "Avoid studying in bed: keep that place linked with sleep.",
+      "If you feel stuck, a change of room or a library can give fresh energy."
+     ],
+     "q": "Where do you study best, and what makes that place work?",
+     "c": "Pick a study spot and keep it for studying only for the next week."
+    },
+    "de": {
+     "t": "Ein Ort, ein Zweck",
+     "g": "Immer am selben Platz zu lernen kann Konzentration anlernen, und manchmal hilft ein Wechsel.",
+     "p": [
+      "Ein Platz nur zum Lernen wird zum Signal, das deinen Kopf auf Konzentration stellt.",
+      "Lerne nicht im Bett: Halte diesen Ort mit Schlaf verbunden.",
+      "Wenn es stockt, kann ein anderer Raum oder eine Bibliothek frische Energie geben."
+     ],
+     "q": "Wo lernst du am besten, und was macht den Ort gut?",
+     "c": "Wähle einen Lernplatz und nutze ihn die nächste Woche nur zum Lernen."
+    },
+    "es": {
+     "t": "Un lugar, un propósito",
+     "g": "Estudiar siempre en el mismo sitio puede crear hábito de enfoque, y a veces cambiar ayuda.",
+     "p": [
+      "Un sitio usado solo para estudiar se vuelve una señal que dice a tu mente que se concentre.",
+      "Evita estudiar en la cama: mantén ese lugar ligado al sueño.",
+      "Si te atascas, cambiar de cuarto o ir a una biblioteca da energía fresca."
+     ],
+     "q": "¿Dónde estudias mejor y qué hace que ese lugar funcione?",
+     "c": "Elige un sitio de estudio y úsalo solo para estudiar durante la próxima semana."
+    },
+    "fr": {
+     "t": "Un lieu, un but",
+     "g": "Étudier toujours au même endroit peut créer une habitude de concentration, et parfois changer aide.",
+     "p": [
+      "Un endroit réservé à l'étude devient un signal qui dit à ton esprit de se concentrer.",
+      "Évite d'étudier au lit : garde cet endroit associé au sommeil.",
+      "Si tu bloques, changer de pièce ou aller en bibliothèque donne une énergie neuve."
+     ],
+     "q": "Où étudies-tu le mieux, et qu'est-ce qui rend cet endroit efficace ?",
+     "c": "Choisis un lieu d'étude et réserve-le à l'étude pendant la semaine à venir."
+    },
+    "it": {
+     "t": "Un luogo, uno scopo",
+     "g": "Studiare sempre nello stesso posto può creare l'abitudine alla concentrazione, e a volte cambiare aiuta.",
+     "p": [
+      "Un posto usato solo per studiare diventa un segnale che dice alla mente di concentrarsi.",
+      "Evita di studiare a letto: tieni quel luogo legato al sonno.",
+      "Se ti blocchi, cambiare stanza o andare in biblioteca dà energia nuova."
+     ],
+     "q": "Dove studi meglio e cosa rende quel posto efficace?",
+     "c": "Scegli un posto di studio e usalo solo per studiare nella prossima settimana."
+    },
+    "pt": {
+     "t": "Um lugar, um propósito",
+     "g": "Estudar sempre no mesmo sítio pode criar hábito de foco, e por vezes mudar ajuda.",
+     "p": [
+      "Um sítio usado só para estudar torna-se um sinal que diz à mente para se concentrar.",
+      "Evita estudar na cama: mantém esse lugar ligado ao sono.",
+      "Se te sentires bloqueado, mudar de divisão ou ir a uma biblioteca dá energia nova."
+     ],
+     "q": "Onde estudas melhor e o que faz esse lugar funcionar?",
+     "c": "Escolhe um sítio de estudo e usa-o só para estudar durante a próxima semana."
+    },
+    "pt_BR": {
+     "t": "Um lugar, um propósito",
+     "g": "Estudar sempre no mesmo lugar pode criar hábito de foco, e às vezes mudar ajuda.",
+     "p": [
+      "Um lugar usado só para estudar vira um sinal que diz à mente para se concentrar.",
+      "Evite estudar na cama: mantenha esse lugar ligado ao sono.",
+      "Se travar, mudar de cômodo ou ir a uma biblioteca dá energia nova."
+     ],
+     "q": "Onde você estuda melhor e o que faz esse lugar funcionar?",
+     "c": "Escolha um lugar de estudo e use só para estudar na próxima semana."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Taming the phone",
+     "g": "Use practical ways to keep your phone from pulling your attention during study time.",
+     "p": [
+      "Even a silent phone on the desk can reduce focus, so put it out of sight.",
+      "Turn off non-essential notifications, or use a focus or do-not-disturb mode.",
+      "Tell friends your study hours so they know why you reply later."
+     ],
+     "q": "How many times do you think you check your phone in an hour of study?",
+     "c": "Study for 25 minutes with your phone in another room and note how it felt."
+    },
+    "de": {
+     "t": "Das Handy zähmen",
+     "g": "Nutze praktische Wege, damit dein Handy dich beim Lernen nicht ablenkt.",
+     "p": [
+      "Schon ein stummes Handy auf dem Tisch kann die Konzentration senken, leg es außer Sicht.",
+      "Schalte unwichtige Benachrichtigungen aus oder nutze einen Fokus- oder Nicht-stören-Modus.",
+      "Sag Freunden deine Lernzeiten, damit sie wissen, warum du später antwortest."
+     ],
+     "q": "Wie oft, glaubst du, schaust du in einer Lernstunde aufs Handy?",
+     "c": "Lerne 25 Minuten mit dem Handy in einem anderen Raum und notiere, wie es sich anfühlte."
+    },
+    "es": {
+     "t": "Domar el móvil",
+     "g": "Usa formas prácticas para que el móvil no te robe la atención al estudiar.",
+     "p": [
+      "Hasta un móvil en silencio sobre la mesa puede restar concentración: ponlo fuera de la vista.",
+      "Desactiva las notificaciones no esenciales o usa un modo de concentración o no molestar.",
+      "Cuenta a tus amigos tus horas de estudio para que sepan por qué respondes más tarde."
+     ],
+     "q": "¿Cuántas veces crees que miras el móvil en una hora de estudio?",
+     "c": "Estudia 25 minutos con el móvil en otra habitación y anota cómo te sentiste."
+    },
+    "fr": {
+     "t": "Apprivoiser le téléphone",
+     "g": "Utilise des moyens pratiques pour que ton téléphone ne vole pas ton attention pendant l'étude.",
+     "p": [
+      "Même un téléphone silencieux sur le bureau peut réduire la concentration, cache-le.",
+      "Coupe les notifications non essentielles ou utilise un mode concentration ou ne pas déranger.",
+      "Dis à tes amis tes heures d'étude pour qu'ils comprennent pourquoi tu réponds plus tard."
+     ],
+     "q": "Combien de fois crois-tu regarder ton téléphone en une heure d'étude ?",
+     "c": "Étudie 25 minutes avec le téléphone dans une autre pièce et note ton ressenti."
+    },
+    "it": {
+     "t": "Domare il telefono",
+     "g": "Usa metodi pratici perché il telefono non ti rubi l'attenzione mentre studi.",
+     "p": [
+      "Anche un telefono silenzioso sulla scrivania può ridurre la concentrazione, mettilo fuori vista.",
+      "Disattiva le notifiche non essenziali o usa una modalità concentrazione o non disturbare.",
+      "Di' agli amici i tuoi orari di studio così sanno perché rispondi più tardi."
+     ],
+     "q": "Quante volte pensi di controllare il telefono in un'ora di studio?",
+     "c": "Studia 25 minuti con il telefono in un'altra stanza e annota come ti sei sentito."
+    },
+    "pt": {
+     "t": "Domar o telemóvel",
+     "g": "Usa formas práticas para o telemóvel não te roubar a atenção durante o estudo.",
+     "p": [
+      "Mesmo um telemóvel em silêncio em cima da secretária pode reduzir o foco, esconde-o.",
+      "Desativa notificações não essenciais ou usa um modo de concentração ou não incomodar.",
+      "Diz aos amigos as tuas horas de estudo para saberem porque respondes mais tarde."
+     ],
+     "q": "Quantas vezes achas que olhas para o telemóvel numa hora de estudo?",
+     "c": "Estuda 25 minutos com o telemóvel noutra divisão e anota como te sentiste."
+    },
+    "pt_BR": {
+     "t": "Domar o celular",
+     "g": "Use formas práticas para o celular não roubar sua atenção durante o estudo.",
+     "p": [
+      "Até um celular no silencioso em cima da mesa pode reduzir o foco, deixe fora de vista.",
+      "Desative notificações não essenciais ou use um modo de foco ou não perturbe.",
+      "Avise os amigos dos seus horários de estudo para saberem por que você responde mais tarde."
+     ],
+     "q": "Quantas vezes você acha que olha o celular em uma hora de estudo?",
+     "c": "Estude 25 minutos com o celular em outro cômodo e anote como se sentiu."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Noise, music and silence",
+     "g": "Learn when background sound helps, when it hurts and how to test it on yourself.",
+     "p": [
+      "Music with lyrics usually hurts reading and writing tasks, because words compete with words.",
+      "Calm music without words, steady rain sounds or silence suit many people.",
+      "Test one sound setting per session and score your focus afterwards."
+     ],
+     "q": "What do you usually listen to while studying, and does it help?",
+     "c": "Study twice for 20 minutes, once in silence and once with soft sound, and compare."
+    },
+    "de": {
+     "t": "Lärm, Musik und Stille",
+     "g": "Erfahre, wann Hintergrundklang hilft, wann er schadet und wie du es an dir testest.",
+     "p": [
+      "Musik mit Text stört meist Lese- und Schreibaufgaben, weil Wörter mit Wörtern konkurrieren.",
+      "Ruhige Musik ohne Text, gleichmäßiges Regenrauschen oder Stille passen vielen.",
+      "Teste pro Einheit eine Klangeinstellung und bewerte danach deine Konzentration."
+     ],
+     "q": "Was hörst du meist beim Lernen, und hilft es dir?",
+     "c": "Lerne zweimal 20 Minuten, einmal in Stille und einmal mit leisem Klang, und vergleiche."
+    },
+    "es": {
+     "t": "Ruido, música y silencio",
+     "g": "Aprende cuándo ayuda el sonido de fondo, cuándo estorba y cómo probarlo contigo.",
+     "p": [
+      "La música con letra suele perjudicar leer y escribir, porque las palabras compiten con las palabras.",
+      "La música tranquila sin letra, el sonido constante de lluvia o el silencio sirven a muchos.",
+      "Prueba un ajuste de sonido por sesión y puntúa después tu concentración."
+     ],
+     "q": "¿Qué sueles escuchar al estudiar y te ayuda?",
+     "c": "Estudia dos veces 20 minutos, una en silencio y otra con sonido suave, y compara."
+    },
+    "fr": {
+     "t": "Bruit, musique et silence",
+     "g": "Découvre quand le son de fond aide, quand il gêne et comment le tester sur toi.",
+     "p": [
+      "La musique avec paroles gêne souvent la lecture et l'écriture, car des mots rivalisent avec des mots.",
+      "Une musique calme sans paroles, un bruit de pluie régulier ou le silence conviennent à beaucoup.",
+      "Teste un réglage sonore par séance et note ta concentration ensuite."
+     ],
+     "q": "Qu'écoutes-tu d'habitude en étudiant, et est-ce que ça t'aide ?",
+     "c": "Étudie deux fois 20 minutes, une dans le silence et une avec un son doux, et compare."
+    },
+    "it": {
+     "t": "Rumore, musica e silenzio",
+     "g": "Scopri quando il suono di fondo aiuta, quando disturba e come provarlo su di te.",
+     "p": [
+      "La musica con testo di solito disturba lettura e scrittura, perché parole competono con parole.",
+      "Musica calma senza testo, suono costante di pioggia o silenzio vanno bene a molti.",
+      "Prova un'impostazione sonora per sessione e dai un voto alla concentrazione dopo."
+     ],
+     "q": "Cosa ascolti di solito mentre studi e ti aiuta?",
+     "c": "Studia due volte 20 minuti, una in silenzio e una con suono lieve, e confronta."
+    },
+    "pt": {
+     "t": "Ruído, música e silêncio",
+     "g": "Aprende quando o som de fundo ajuda, quando atrapalha e como o testar em ti.",
+     "p": [
+      "Música com letra costuma prejudicar ler e escrever, porque palavras competem com palavras.",
+      "Música calma sem letra, som constante de chuva ou silêncio servem a muita gente.",
+      "Testa uma configuração de som por sessão e avalia depois a tua concentração."
+     ],
+     "q": "O que costumas ouvir ao estudar e ajuda-te?",
+     "c": "Estuda duas vezes 20 minutos, uma em silêncio e outra com som suave, e compara."
+    },
+    "pt_BR": {
+     "t": "Barulho, música e silêncio",
+     "g": "Aprenda quando o som de fundo ajuda, quando atrapalha e como testar em você.",
+     "p": [
+      "Música com letra costuma atrapalhar ler e escrever, porque palavras competem com palavras.",
+      "Música calma sem letra, som constante de chuva ou silêncio servem para muita gente.",
+      "Teste uma configuração de som por sessão e dê uma nota ao foco depois."
+     ],
+     "q": "O que você costuma ouvir ao estudar e isso ajuda?",
+     "c": "Estude duas vezes 20 minutos, uma no silêncio e outra com som suave, e compare."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The myth of multitasking",
+     "g": "Understand why switching between tasks costs time and accuracy, and single-task instead.",
+     "p": [
+      "The brain does not truly do two demanding tasks at once, it switches quickly.",
+      "Each switch costs a little time and attention, which adds up to mistakes.",
+      "Finish one block of work, then check messages in a planned break."
+     ],
+     "q": "When did switching between tasks last make your work slower?",
+     "c": "Do one 20-minute block today on one task only and see how much you finish."
+    },
+    "de": {
+     "t": "Der Mythos Multitasking",
+     "g": "Verstehe, warum Aufgabenwechsel Zeit und Genauigkeit kosten, und arbeite stattdessen einzeln.",
+     "p": [
+      "Das Gehirn erledigt nicht wirklich zwei anspruchsvolle Aufgaben zugleich, es wechselt schnell.",
+      "Jeder Wechsel kostet etwas Zeit und Aufmerksamkeit, was sich zu Fehlern summiert.",
+      "Beende einen Arbeitsblock und prüfe Nachrichten dann in einer geplanten Pause."
+     ],
+     "q": "Wann hat dich das Hin- und Herwechseln zuletzt langsamer gemacht?",
+     "c": "Arbeite heute einen 20-Minuten-Block nur an einer Aufgabe und sieh, wie viel fertig wird."
+    },
+    "es": {
+     "t": "El mito de la multitarea",
+     "g": "Entiende por qué cambiar de tarea cuesta tiempo y precisión, y haz una cosa a la vez.",
+     "p": [
+      "El cerebro no hace de verdad dos tareas exigentes a la vez, cambia rápidamente.",
+      "Cada cambio cuesta algo de tiempo y atención, y eso suma errores.",
+      "Termina un bloque de trabajo y revisa mensajes en un descanso planeado."
+     ],
+     "q": "¿Cuándo te hizo ir más lento por última vez cambiar de tarea?",
+     "c": "Haz hoy un bloque de 20 minutos en una sola tarea y mira cuánto terminas."
+    },
+    "fr": {
+     "t": "Le mythe du multitâche",
+     "g": "Comprends pourquoi changer de tâche coûte du temps et de la précision, et fais une chose à la fois.",
+     "p": [
+      "Le cerveau ne fait pas vraiment deux tâches exigeantes en même temps, il bascule vite.",
+      "Chaque bascule coûte un peu de temps et d'attention, ce qui s'additionne en erreurs.",
+      "Termine un bloc de travail, puis consulte tes messages pendant une pause prévue."
+     ],
+     "q": "Quand le fait de passer d'une tâche à l'autre t'a-t-il ralenti la dernière fois ?",
+     "c": "Fais aujourd'hui un bloc de 20 minutes sur une seule tâche et vois ce que tu finis."
+    },
+    "it": {
+     "t": "Il mito del multitasking",
+     "g": "Capisci perché passare da un compito all'altro costa tempo e precisione, e fai una cosa alla volta.",
+     "p": [
+      "Il cervello non fa davvero due compiti impegnativi insieme, cambia rapidamente.",
+      "Ogni cambio costa un po' di tempo e attenzione, e si sommano gli errori.",
+      "Finisci un blocco di lavoro e poi controlla i messaggi in una pausa pianificata."
+     ],
+     "q": "Quando passare da un compito all'altro ti ha rallentato l'ultima volta?",
+     "c": "Oggi fai un blocco di 20 minuti su un solo compito e guarda quanto finisci."
+    },
+    "pt": {
+     "t": "O mito da multitarefa",
+     "g": "Percebe porque mudar de tarefa custa tempo e precisão e faz uma coisa de cada vez.",
+     "p": [
+      "O cérebro não faz mesmo duas tarefas exigentes ao mesmo tempo, alterna depressa.",
+      "Cada troca custa algum tempo e atenção, o que se soma em erros.",
+      "Termina um bloco de trabalho e vê as mensagens numa pausa planeada."
+     ],
+     "q": "Quando é que alternar entre tarefas te tornou mais lento pela última vez?",
+     "c": "Hoje, faz um bloco de 20 minutos numa só tarefa e vê quanto acabas."
+    },
+    "pt_BR": {
+     "t": "O mito da multitarefa",
+     "g": "Entenda por que trocar de tarefa custa tempo e precisão e faça uma coisa de cada vez.",
+     "p": [
+      "O cérebro não faz mesmo duas tarefas exigentes ao mesmo tempo, ele alterna rápido.",
+      "Cada troca custa um pouco de tempo e atenção, e isso soma erros.",
+      "Termine um bloco de trabalho e veja as mensagens em uma pausa planejada."
+     ],
+     "q": "Quando alternar entre tarefas deixou você mais lento pela última vez?",
+     "c": "Hoje, faça um bloco de 20 minutos em uma só tarefa e veja quanto você termina."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Deep focus sessions",
+     "g": "Build longer stretches of concentration step by step, from 15 to 50 minutes.",
+     "p": [
+      "Focus is like a muscle: stretch it gradually instead of forcing a marathon.",
+      "Add about five minutes each week to your longest comfortable session.",
+      "End every long session with a proper break: walk, stretch, water, daylight."
+     ],
+     "q": "What is the longest you have focused on one task without drifting?",
+     "c": "Run one focus session a little longer than usual, then take a real break."
+    },
+    "de": {
+     "t": "Tiefe Konzentrationsphasen",
+     "g": "Baue Schritt für Schritt längere Konzentrationsphasen auf, von 15 bis 50 Minuten.",
+     "p": [
+      "Konzentration ist wie ein Muskel: Dehne sie langsam, statt einen Marathon zu erzwingen.",
+      "Füge jede Woche etwa fünf Minuten zu deiner längsten bequemen Einheit hinzu.",
+      "Beende jede lange Einheit mit einer echten Pause: Gehen, Dehnen, Wasser, Tageslicht."
+     ],
+     "q": "Wie lange hast du dich maximal auf eine Aufgabe konzentriert, ohne abzudriften?",
+     "c": "Mach eine Konzentrationsphase etwas länger als sonst und danach eine echte Pause."
+    },
+    "es": {
+     "t": "Sesiones de concentración profunda",
+     "g": "Aumenta paso a paso tus tramos de concentración, de 15 a 50 minutos.",
+     "p": [
+      "El foco es como un músculo: estíralo poco a poco en vez de forzar un maratón.",
+      "Suma unos cinco minutos cada semana a tu sesión cómoda más larga.",
+      "Termina cada sesión larga con un buen descanso: caminar, estirarte, agua, luz del día."
+     ],
+     "q": "¿Cuál es lo máximo que te has concentrado en una tarea sin distraerte?",
+     "c": "Haz una sesión de foco un poco más larga de lo normal y luego un descanso de verdad."
+    },
+    "fr": {
+     "t": "Séances de concentration profonde",
+     "g": "Allonge peu à peu tes plages de concentration, de 15 à 50 minutes.",
+     "p": [
+      "La concentration est comme un muscle : étire-la progressivement plutôt que de forcer un marathon.",
+      "Ajoute environ cinq minutes par semaine à ta plus longue séance confortable.",
+      "Termine chaque longue séance par une vraie pause : marche, étirements, eau, lumière du jour."
+     ],
+     "q": "Quelle est la plus longue durée où tu as gardé ta concentration sur une tâche ?",
+     "c": "Fais une séance un peu plus longue que d'habitude, puis une vraie pause."
+    },
+    "it": {
+     "t": "Sessioni di concentrazione profonda",
+     "g": "Allunga passo dopo passo i tuoi tratti di concentrazione, da 15 a 50 minuti.",
+     "p": [
+      "La concentrazione è come un muscolo: allungala gradualmente invece di forzare una maratona.",
+      "Aggiungi circa cinque minuti a settimana alla tua sessione comoda più lunga.",
+      "Chiudi ogni sessione lunga con una vera pausa: camminata, stretching, acqua, luce del giorno."
+     ],
+     "q": "Qual è il tempo più lungo in cui sei rimasto concentrato su un compito?",
+     "c": "Fai una sessione un po' più lunga del solito e poi una vera pausa."
+    },
+    "pt": {
+     "t": "Sessões de foco profundo",
+     "g": "Aumenta passo a passo os teus períodos de concentração, dos 15 aos 50 minutos.",
+     "p": [
+      "O foco é como um músculo: estica-o aos poucos em vez de forçar uma maratona.",
+      "Junta cerca de cinco minutos por semana à tua sessão confortável mais longa.",
+      "Termina cada sessão longa com uma pausa a sério: caminhar, alongar, água, luz do dia."
+     ],
+     "q": "Qual foi o máximo que já te concentraste numa tarefa sem divagar?",
+     "c": "Faz uma sessão de foco um pouco mais longa do que o normal e depois uma pausa a sério."
+    },
+    "pt_BR": {
+     "t": "Sessões de foco profundo",
+     "g": "Aumente passo a passo seus períodos de concentração, de 15 a 50 minutos.",
+     "p": [
+      "O foco é como um músculo: alongue aos poucos em vez de forçar uma maratona.",
+      "Some cerca de cinco minutos por semana à sua sessão confortável mais longa.",
+      "Termine cada sessão longa com uma pausa de verdade: caminhar, alongar, água, luz do dia."
+     ],
+     "q": "Qual foi o máximo que você já se concentrou em uma tarefa sem divagar?",
+     "c": "Faça uma sessão de foco um pouco mais longa que o normal e depois uma pausa de verdade."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Handling wandering thoughts",
+     "g": "Use a distraction notepad to park ideas and worries until your break.",
+     "p": [
+      "Wandering thoughts are normal, so the goal is to notice them and return, not to fight.",
+      "Keep a notepad beside you and jot the thought in a few words, then go back.",
+      "Look at the notes during your break and decide what needs action."
+     ],
+     "q": "What kinds of thoughts most often pull you away while studying?",
+     "c": "Keep a distraction notepad during one session and count how many thoughts you parked."
+    },
+    "de": {
+     "t": "Abschweifende Gedanken lenken",
+     "g": "Nutze einen Ablenkungszettel, um Ideen und Sorgen bis zur Pause zu parken.",
+     "p": [
+      "Abschweifende Gedanken sind normal, Ziel ist, sie zu bemerken und zurückzukehren, nicht zu kämpfen.",
+      "Leg einen Notizblock neben dich, notiere den Gedanken in wenigen Worten und mach weiter.",
+      "Sieh dir die Notizen in der Pause an und entscheide, was Handlung braucht."
+     ],
+     "q": "Welche Gedanken ziehen dich beim Lernen am häufigsten weg?",
+     "c": "Führe in einer Einheit einen Ablenkungszettel und zähle, wie viele Gedanken du geparkt hast."
+    },
+    "es": {
+     "t": "Manejar los pensamientos errantes",
+     "g": "Usa una libreta de distracciones para aparcar ideas y preocupaciones hasta tu descanso.",
+     "p": [
+      "Los pensamientos errantes son normales: el objetivo es notarlos y volver, no pelear.",
+      "Ten una libreta al lado, apunta el pensamiento en pocas palabras y vuelve.",
+      "Mira las notas en tu descanso y decide qué requiere acción."
+     ],
+     "q": "¿Qué tipo de pensamientos te sacan más a menudo del estudio?",
+     "c": "Lleva una libreta de distracciones en una sesión y cuenta cuántos pensamientos aparcaste."
+    },
+    "fr": {
+     "t": "Gérer les pensées qui vagabondent",
+     "g": "Utilise un bloc-notes à distractions pour garer idées et soucis jusqu'à ta pause.",
+     "p": [
+      "Les pensées vagabondes sont normales : le but est de les remarquer et de revenir, pas de lutter.",
+      "Garde un bloc-notes à côté, note la pensée en quelques mots, puis reprends.",
+      "Relis les notes pendant ta pause et décide ce qui demande une action."
+     ],
+     "q": "Quels types de pensées t'éloignent le plus souvent de l'étude ?",
+     "c": "Tiens un bloc-notes à distractions pendant une séance et compte les pensées garées."
+    },
+    "it": {
+     "t": "Gestire i pensieri vaganti",
+     "g": "Usa un blocchetto delle distrazioni per parcheggiare idee e preoccupazioni fino alla pausa.",
+     "p": [
+      "I pensieri vaganti sono normali: l'obiettivo è notarli e tornare, non combattere.",
+      "Tieni un blocchetto accanto, annota il pensiero in poche parole e riprendi.",
+      "Guarda le note durante la pausa e decidi cosa richiede un'azione."
+     ],
+     "q": "Quali tipi di pensieri ti portano più spesso lontano dallo studio?",
+     "c": "Tieni un blocchetto delle distrazioni in una sessione e conta i pensieri parcheggiati."
+    },
+    "pt": {
+     "t": "Lidar com pensamentos errantes",
+     "g": "Usa um bloco de distrações para arrumar ideias e preocupações até à pausa.",
+     "p": [
+      "Pensamentos errantes são normais: o objetivo é notá-los e voltar, não lutar.",
+      "Tem um bloco ao lado, anota o pensamento em poucas palavras e volta ao estudo.",
+      "Vê as notas na pausa e decide o que exige ação."
+     ],
+     "q": "Que tipo de pensamentos mais te afastam do estudo?",
+     "c": "Mantém um bloco de distrações numa sessão e conta quantos pensamentos arrumaste."
+    },
+    "pt_BR": {
+     "t": "Lidando com pensamentos errantes",
+     "g": "Use um bloquinho de distrações para guardar ideias e preocupações até a pausa.",
+     "p": [
+      "Pensamentos errantes são normais: o objetivo é notá-los e voltar, não lutar.",
+      "Deixe um bloquinho ao lado, anote o pensamento em poucas palavras e volte.",
+      "Veja as notas na pausa e decida o que exige ação."
+     ],
+     "q": "Que tipo de pensamento mais tira você do estudo?",
+     "c": "Mantenha um bloquinho de distrações em uma sessão e conte quantos pensamentos você guardou."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Starting when you do not feel like it",
+     "g": "Use the two-minute rule and other tricks to get past the hardest part: the start.",
+     "p": [
+      "Motivation often follows action, so begin first and the feeling comes later.",
+      "Promise yourself just two minutes, because starting is the real obstacle.",
+      "Lower the bar: open the book, write one line, solve one problem."
+     ],
+     "q": "What helps you most when you have to start something you do not enjoy?",
+     "c": "Use the two-minute rule on your least favourite task today."
+    },
+    "de": {
+     "t": "Anfangen, wenn die Lust fehlt",
+     "g": "Nutze die Zwei-Minuten-Regel und andere Tricks, um den schwersten Teil zu schaffen: den Start.",
+     "p": [
+      "Motivation folgt oft dem Handeln, also fang an, und das Gefühl kommt später.",
+      "Versprich dir nur zwei Minuten, denn der Beginn ist das eigentliche Hindernis.",
+      "Senk die Latte: Buch öffnen, eine Zeile schreiben, eine Aufgabe lösen."
+     ],
+     "q": "Was hilft dir am meisten, wenn du etwas Unliebsames beginnen musst?",
+     "c": "Wende heute die Zwei-Minuten-Regel auf deine unbeliebteste Aufgabe an."
+    },
+    "es": {
+     "t": "Empezar cuando no tienes ganas",
+     "g": "Usa la regla de los dos minutos y otros trucos para superar lo más difícil: el comienzo.",
+     "p": [
+      "La motivación suele llegar después de la acción, así que empieza y el ánimo vendrá.",
+      "Prométete solo dos minutos, porque empezar es el verdadero obstáculo.",
+      "Baja el listón: abre el libro, escribe una línea, resuelve un problema."
+     ],
+     "q": "¿Qué te ayuda más cuando tienes que empezar algo que no te gusta?",
+     "c": "Aplica hoy la regla de los dos minutos a tu tarea menos favorita."
+    },
+    "fr": {
+     "t": "Démarrer sans en avoir envie",
+     "g": "Utilise la règle des deux minutes et d'autres astuces pour franchir le plus dur : le début.",
+     "p": [
+      "La motivation suit souvent l'action : commence d'abord, l'envie vient après.",
+      "Promets-toi seulement deux minutes, car commencer est le vrai obstacle.",
+      "Baisse la barre : ouvre le livre, écris une ligne, résous un problème."
+     ],
+     "q": "Qu'est-ce qui t'aide le plus quand tu dois commencer quelque chose qui ne te plaît pas ?",
+     "c": "Applique aujourd'hui la règle des deux minutes à ta tâche la moins aimée."
+    },
+    "it": {
+     "t": "Iniziare quando non ne hai voglia",
+     "g": "Usa la regola dei due minuti e altri trucchi per superare la parte più dura: l'inizio.",
+     "p": [
+      "La motivazione spesso segue l'azione: comincia e la voglia arriva dopo.",
+      "Prometti a te stesso solo due minuti, perché iniziare è il vero ostacolo.",
+      "Abbassa l'asticella: apri il libro, scrivi una riga, risolvi un problema."
+     ],
+     "q": "Cosa ti aiuta di più quando devi iniziare qualcosa che non ti piace?",
+     "c": "Oggi applica la regola dei due minuti al compito che ti piace meno."
+    },
+    "pt": {
+     "t": "Começar quando não apetece",
+     "g": "Usa a regra dos dois minutos e outros truques para vencer a parte mais difícil: o início.",
+     "p": [
+      "A motivação costuma vir depois da ação, por isso começa e a vontade chega depois.",
+      "Promete a ti mesmo apenas dois minutos, porque começar é o verdadeiro obstáculo.",
+      "Baixa a fasquia: abre o livro, escreve uma linha, resolve um problema."
+     ],
+     "q": "O que mais te ajuda quando tens de começar algo de que não gostas?",
+     "c": "Hoje, aplica a regra dos dois minutos à tarefa de que gostas menos."
+    },
+    "pt_BR": {
+     "t": "Começar quando não está a fim",
+     "g": "Use a regra dos dois minutos e outros truques para vencer a parte mais difícil: o início.",
+     "p": [
+      "A motivação costuma vir depois da ação, então comece e a vontade vem depois.",
+      "Prometa a si mesmo só dois minutos, porque começar é o verdadeiro obstáculo.",
+      "Abaixe a barra: abra o livro, escreva uma linha, resolva um problema."
+     ],
+     "q": "O que mais ajuda você quando precisa começar algo de que não gosta?",
+     "c": "Hoje, aplique a regra dos dois minutos à tarefa de que menos gosta."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Energy peaks and dips",
+     "g": "Match hard tasks to your high-energy hours and easy tasks to your low ones.",
+     "p": [
+      "Most people have a daily rhythm, with sharper hours and sleepy ones.",
+      "Do demanding work, like new material, in your sharp hours when you can.",
+      "Keep low-energy hours for tidying notes, organising or light review."
+     ],
+     "q": "At what time of day do you feel most alert and clear-headed?",
+     "c": "For three days, rate your energy morning, afternoon and evening from 1 to 5."
+    },
+    "de": {
+     "t": "Energiehochs und -tiefs",
+     "g": "Lege schwere Aufgaben in deine energiereichen Stunden und leichte in die müden.",
+     "p": [
+      "Die meisten haben einen Tagesrhythmus mit wachen und müden Stunden.",
+      "Erledige anspruchsvolle Arbeit, etwa neuen Stoff, möglichst in deinen wachen Stunden.",
+      "Nutze müde Stunden fürs Ordnen von Notizen, Organisieren oder leichte Wiederholung."
+     ],
+     "q": "Zu welcher Tageszeit fühlst du dich am wachsten und klarsten?",
+     "c": "Bewerte drei Tage lang deine Energie morgens, nachmittags und abends von 1 bis 5."
+    },
+    "es": {
+     "t": "Picos y bajones de energía",
+     "g": "Asigna las tareas difíciles a tus horas de más energía y las fáciles a las de menos.",
+     "p": [
+      "La mayoría tiene un ritmo diario, con horas más lúcidas y otras más adormiladas.",
+      "Haz el trabajo exigente, como material nuevo, en tus horas lúcidas cuando puedas.",
+      "Deja las horas de poca energía para ordenar apuntes, organizar o repasar ligero."
+     ],
+     "q": "¿A qué hora del día te sientes más alerta y despejado?",
+     "c": "Durante tres días, puntúa tu energía de 1 a 5 por la mañana, tarde y noche."
+    },
+    "fr": {
+     "t": "Pics et creux d'énergie",
+     "g": "Associe les tâches difficiles à tes heures d'énergie et les faciles à tes heures creuses.",
+     "p": [
+      "La plupart des gens ont un rythme quotidien, avec des heures vives et des heures somnolentes.",
+      "Fais le travail exigeant, comme la matière nouvelle, pendant tes heures vives si possible.",
+      "Garde les heures creuses pour ranger les notes, organiser ou réviser légèrement."
+     ],
+     "q": "À quel moment de la journée te sens-tu le plus alerte et lucide ?",
+     "c": "Pendant trois jours, note ton énergie matin, après-midi et soir de 1 à 5."
+    },
+    "it": {
+     "t": "Picchi e cali di energia",
+     "g": "Abbina i compiti difficili alle ore di energia e quelli facili alle ore più basse.",
+     "p": [
+      "La maggior parte delle persone ha un ritmo giornaliero, con ore più lucide e ore sonnolente.",
+      "Fai il lavoro impegnativo, come materiale nuovo, nelle ore lucide quando puoi.",
+      "Tieni le ore di poca energia per sistemare appunti, organizzare o ripassare leggero."
+     ],
+     "q": "In quale momento della giornata ti senti più vigile e lucido?",
+     "c": "Per tre giorni dai un voto da 1 a 5 alla tua energia mattina, pomeriggio e sera."
+    },
+    "pt": {
+     "t": "Picos e quedas de energia",
+     "g": "Associa as tarefas difíceis às tuas horas de mais energia e as fáceis às de menos.",
+     "p": [
+      "A maioria das pessoas tem um ritmo diário, com horas mais lúcidas e outras sonolentas.",
+      "Faz o trabalho exigente, como matéria nova, nas horas lúcidas sempre que possível.",
+      "Guarda as horas de pouca energia para organizar apontamentos ou rever com leveza."
+     ],
+     "q": "A que hora do dia te sentes mais alerta e com a cabeça limpa?",
+     "c": "Durante três dias, avalia a tua energia de 1 a 5 de manhã, de tarde e à noite."
+    },
+    "pt_BR": {
+     "t": "Picos e quedas de energia",
+     "g": "Associe as tarefas difíceis às suas horas de mais energia e as fáceis às de menos.",
+     "p": [
+      "A maioria das pessoas tem um ritmo diário, com horas mais lúcidas e outras sonolentas.",
+      "Faça o trabalho exigente, como conteúdo novo, nas horas lúcidas quando puder.",
+      "Guarde as horas de pouca energia para organizar anotações ou revisar de leve."
+     ],
+     "q": "Em que hora do dia você se sente mais alerta e com a cabeça clara?",
+     "c": "Por três dias, dê uma nota de 1 a 5 à sua energia de manhã, à tarde e à noite."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Focus check-in",
+     "g": "Measure how your focus has changed and pick your best concentration strategies.",
+     "p": [
+      "Compare today's focus scores with your baseline from the first week.",
+      "Name the strategies that worked: phone away, Pomodoro, notepad, better space.",
+      "Pick two to keep as standard, and remember that sleep and breaks fuel focus."
+     ],
+     "q": "How has your concentration changed since you started this path?",
+     "c": "Write your top two focus strategies on a card and place it on your desk."
+    },
+    "de": {
+     "t": "Konzentrations-Check",
+     "g": "Miss, wie sich dein Fokus verändert hat, und wähle deine besten Strategien.",
+     "p": [
+      "Vergleiche deine heutigen Fokuswerte mit der Basiswoche vom Anfang.",
+      "Benenne, was geholfen hat: Handy weg, Pomodoro, Notizzettel, besserer Platz.",
+      "Wähle zwei als Standard und denk daran, dass Schlaf und Pausen den Fokus nähren."
+     ],
+     "q": "Wie hat sich deine Konzentration seit dem Start dieses Wegs verändert?",
+     "c": "Schreib deine zwei besten Fokusstrategien auf eine Karte und lege sie auf den Schreibtisch."
+    },
+    "es": {
+     "t": "Revisión del enfoque",
+     "g": "Mide cómo ha cambiado tu concentración y elige tus mejores estrategias.",
+     "p": [
+      "Compara tus puntuaciones de hoy con las de la semana de referencia.",
+      "Nombra las estrategias que funcionaron: móvil fuera, Pomodoro, libreta, mejor espacio.",
+      "Elige dos para dejarlas fijas y recuerda que el sueño y los descansos alimentan el foco."
+     ],
+     "q": "¿Cómo ha cambiado tu concentración desde que empezaste este camino?",
+     "c": "Escribe tus dos mejores estrategias de foco en una tarjeta y ponla en tu mesa."
+    },
+    "fr": {
+     "t": "Point sur la concentration",
+     "g": "Mesure l'évolution de ta concentration et choisis tes meilleures stratégies.",
+     "p": [
+      "Compare tes notes de concentration d'aujourd'hui avec celles de la semaine de référence.",
+      "Nomme ce qui a marché : téléphone loin, Pomodoro, bloc-notes, meilleur espace.",
+      "Garde-en deux comme standard et souviens-toi que sommeil et pauses nourrissent la concentration."
+     ],
+     "q": "Comment ta concentration a-t-elle évolué depuis le début de ce parcours ?",
+     "c": "Écris tes deux meilleures stratégies sur une carte et pose-la sur ton bureau."
+    },
+    "it": {
+     "t": "Controllo della concentrazione",
+     "g": "Misura come è cambiata la tua concentrazione e scegli le strategie migliori.",
+     "p": [
+      "Confronta i voti di concentrazione di oggi con quelli della settimana di riferimento.",
+      "Nomina le strategie che hanno funzionato: telefono lontano, Pomodoro, blocchetto, spazio migliore.",
+      "Scegline due da tenere come standard e ricorda che sonno e pause alimentano la concentrazione."
+     ],
+     "q": "Come è cambiata la tua concentrazione da quando hai iniziato questo percorso?",
+     "c": "Scrivi le tue due migliori strategie su un cartoncino e mettilo sulla scrivania."
+    },
+    "pt": {
+     "t": "Ponto de situação do foco",
+     "g": "Mede como a tua concentração mudou e escolhe as tuas melhores estratégias.",
+     "p": [
+      "Compara as tuas notas de foco de hoje com as da semana de referência.",
+      "Nomeia as estratégias que funcionaram: telemóvel longe, Pomodoro, bloco de notas, melhor espaço.",
+      "Escolhe duas para manter como padrão e lembra-te de que sono e pausas alimentam o foco."
+     ],
+     "q": "Como mudou a tua concentração desde que começaste este caminho?",
+     "c": "Escreve as tuas duas melhores estratégias de foco num cartão e põe-no na secretária."
+    },
+    "pt_BR": {
+     "t": "Balanço do foco",
+     "g": "Meça como sua concentração mudou e escolha suas melhores estratégias.",
+     "p": [
+      "Compare suas notas de foco de hoje com as da semana de referência.",
+      "Nomeie as estratégias que funcionaram: celular longe, Pomodoro, bloquinho, espaço melhor.",
+      "Escolha duas para manter como padrão e lembre que sono e pausas alimentam o foco."
+     ],
+     "q": "Como sua concentração mudou desde que você começou este caminho?",
+     "c": "Escreva suas duas melhores estratégias de foco em um cartão e ponha na mesa."
+    }
+   }
+  }
+ ]
+}

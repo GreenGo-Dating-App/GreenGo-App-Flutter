@@ -1,0 +1,835 @@
+{
+ "topic": "job_interviews",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What a job interview is for",
+     "g": "Understand that an interview is a conversation where both sides check the fit.",
+     "p": [
+      "The employer wants to learn whether you can do the job and work well with the team.",
+      "You also get to learn if the role, people and workplace suit you.",
+      "Seeing it as a two-way talk makes you calmer and more curious."
+     ],
+     "q": "What do you hope to find out about a job before saying yes?",
+     "c": "Write down three things you want to learn about a workplace."
+    },
+    "de": {
+     "t": "Wozu ein Vorstellungsgespräch dient",
+     "g": "Verstehen, dass ein Gespräch für beide Seiten zeigt, ob es passt.",
+     "p": [
+      "Das Unternehmen prüft, ob du die Aufgabe kannst und ins Team passt.",
+      "Du erfährst ebenfalls, ob Stelle, Menschen und Arbeitsumfeld zu dir passen.",
+      "Wer das Gespräch als Austausch sieht, wird ruhiger und neugieriger."
+     ],
+     "q": "Was möchtest du über einen Job wissen, bevor du Ja sagst?",
+     "c": "Schreibe drei Dinge auf, die du über einen Arbeitsplatz erfahren willst."
+    },
+    "es": {
+     "t": "Para qué sirve una entrevista de trabajo",
+     "g": "Entender que la entrevista es una conversación donde ambas partes comprueban si encajan.",
+     "p": [
+      "La empresa quiere saber si puedes hacer el trabajo y encajar en el equipo.",
+      "Tú también descubres si el puesto, la gente y el entorno te convienen.",
+      "Verla como un diálogo de dos sentidos te hace estar más tranquilo y curioso."
+     ],
+     "q": "¿Qué te gustaría averiguar de un trabajo antes de aceptarlo?",
+     "c": "Anota tres cosas que quieres saber sobre un lugar de trabajo."
+    },
+    "fr": {
+     "t": "À quoi sert un entretien d'embauche",
+     "g": "Comprendre que l'entretien est un échange où chacun vérifie si le courant passe.",
+     "p": [
+      "L'employeur cherche à savoir si vous pouvez faire le travail et vous intégrer à l'équipe.",
+      "Vous découvrez aussi si le poste, les personnes et le cadre vous conviennent.",
+      "Y voir un dialogue à double sens vous rend plus serein et plus curieux."
+     ],
+     "q": "Que voulez-vous savoir sur un poste avant de dire oui ?",
+     "c": "Notez trois choses que vous voulez apprendre sur un lieu de travail."
+    },
+    "it": {
+     "t": "A cosa serve un colloquio di lavoro",
+     "g": "Capire che il colloquio è un dialogo in cui entrambe le parti verificano se c'è sintonia.",
+     "p": [
+      "L'azienda vuole capire se sai svolgere il lavoro e se ti inserisci nel team.",
+      "Anche tu scopri se ruolo, persone e ambiente fanno per te.",
+      "Vederlo come uno scambio a due vie ti rende più sereno e curioso."
+     ],
+     "q": "Cosa vorresti scoprire di un lavoro prima di dire sì?",
+     "c": "Scrivi tre cose che vuoi sapere su un posto di lavoro."
+    },
+    "pt": {
+     "t": "Para que serve uma entrevista de emprego",
+     "g": "Perceber que a entrevista é uma conversa em que ambos verificam se há boa combinação.",
+     "p": [
+      "A empresa quer saber se consegues fazer o trabalho e integrar-te na equipa.",
+      "Tu também descobres se a função, as pessoas e o ambiente te servem.",
+      "Ver a conversa como uma troca de ideias deixa-te mais calmo e curioso."
+     ],
+     "q": "O que gostarias de descobrir sobre um emprego antes de dizer sim?",
+     "c": "Escreve três coisas que queres saber sobre um local de trabalho."
+    },
+    "pt_BR": {
+     "t": "Para que serve uma entrevista de emprego",
+     "g": "Entender que a entrevista é uma conversa em que os dois lados avaliam se combinam.",
+     "p": [
+      "A empresa quer saber se você consegue fazer o trabalho e se encaixa na equipe.",
+      "Você também descobre se a vaga, as pessoas e o ambiente combinam com você.",
+      "Ver a conversa como uma troca de mão dupla deixa você mais calmo e curioso."
+     ],
+     "q": "O que você gostaria de descobrir sobre um emprego antes de aceitar?",
+     "c": "Anote três coisas que você quer saber sobre um local de trabalho."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The interview from both sides",
+     "g": "See what interviewers hope to find and what worries them when they hire.",
+     "p": [
+      "Interviewers hope for skills, reliability, motivation and a pleasant way of working.",
+      "Their worries are real: a poor fit costs time, money and team energy.",
+      "When you show that you reduce those worries, you become an easy choice."
+     ],
+     "q": "If you were hiring, what would you most want to see in a candidate?",
+     "c": "List two worries an employer might have and how you could ease each."
+    },
+    "de": {
+     "t": "Das Gespräch aus beiden Perspektiven",
+     "g": "Erkennen, was Personalverantwortliche suchen und was sie bei Neueinstellungen sorgt.",
+     "p": [
+      "Gesucht werden Können, Verlässlichkeit, Motivation und eine angenehme Arbeitsweise.",
+      "Ihre Sorgen sind echt: Eine falsche Wahl kostet Zeit, Geld und Teamkraft.",
+      "Wer diese Sorgen entkräftet, wird zur leichten Entscheidung."
+     ],
+     "q": "Worauf würdest du achten, wenn du jemanden einstellen müsstest?",
+     "c": "Nenne zwei Sorgen eines Arbeitgebers und wie du jede entkräften könntest."
+    },
+    "es": {
+     "t": "La entrevista vista desde ambos lados",
+     "g": "Ver qué esperan encontrar los entrevistadores y qué les preocupa al contratar.",
+     "p": [
+      "Esperan habilidades, fiabilidad, motivación y una forma de trabajar agradable.",
+      "Sus preocupaciones son reales: una mala elección cuesta tiempo, dinero y energía.",
+      "Si demuestras que reduces esas dudas, te conviertes en una elección fácil."
+     ],
+     "q": "Si tú contrataras, ¿qué querrías ver sobre todo en un candidato?",
+     "c": "Anota dos preocupaciones de un empleador y cómo podrías aliviar cada una."
+    },
+    "fr": {
+     "t": "L'entretien vu des deux côtés",
+     "g": "Voir ce que les recruteurs espèrent trouver et ce qui les inquiète quand ils embauchent.",
+     "p": [
+      "Ils espèrent des compétences, de la fiabilité, de la motivation et un bon état d'esprit.",
+      "Leurs craintes sont réelles : un mauvais choix coûte du temps, de l'argent et de l'énergie.",
+      "Si vous montrez que vous dissipez ces doutes, vous devenez un choix évident."
+     ],
+     "q": "Si vous recrutiez, que voudriez-vous voir en priorité chez un candidat ?",
+     "c": "Notez deux craintes d'un employeur et comment vous pourriez les apaiser."
+    },
+    "it": {
+     "t": "Il colloquio visto da entrambi i lati",
+     "g": "Scoprire cosa sperano di trovare i selezionatori e cosa li preoccupa quando assumono.",
+     "p": [
+      "Sperano di trovare competenze, affidabilità, motivazione e un modo di lavorare piacevole.",
+      "Le loro preoccupazioni sono reali: una scelta sbagliata costa tempo, soldi ed energie.",
+      "Se mostri di ridurre quei dubbi, diventi una scelta facile."
+     ],
+     "q": "Se dovessi assumere tu, cosa vorresti vedere soprattutto in un candidato?",
+     "c": "Scrivi due preoccupazioni di un datore di lavoro e come potresti attenuarle."
+    },
+    "pt": {
+     "t": "A entrevista vista pelos dois lados",
+     "g": "Perceber o que os entrevistadores esperam encontrar e o que os preocupa ao contratar.",
+     "p": [
+      "Esperam competências, fiabilidade, motivação e uma forma de trabalhar agradável.",
+      "As preocupações são reais: uma má escolha custa tempo, dinheiro e energia à equipa.",
+      "Se mostrares que reduzes essas dúvidas, tornas-te uma escolha fácil."
+     ],
+     "q": "Se fosses tu a contratar, o que mais gostarias de ver num candidato?",
+     "c": "Anota duas preocupações de um empregador e como poderias atenuar cada uma."
+    },
+    "pt_BR": {
+     "t": "A entrevista vista pelos dois lados",
+     "g": "Entender o que os entrevistadores esperam encontrar e o que os preocupa ao contratar.",
+     "p": [
+      "Eles esperam habilidades, confiabilidade, motivação e um jeito agradável de trabalhar.",
+      "As preocupações são reais: uma escolha ruim custa tempo, dinheiro e energia da equipe.",
+      "Se você mostrar que reduz essas dúvidas, vira uma escolha fácil."
+     ],
+     "q": "Se fosse você contratando, o que mais gostaria de ver num candidato?",
+     "c": "Anote duas preocupações de um empregador e como você poderia aliviar cada uma."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Common interview formats",
+     "g": "Know the main interview formats and what to expect in each one.",
+     "p": [
+      "Phone and video interviews rely on your voice, a quiet space and working technology.",
+      "In-person interviews add body language, travel and meeting people face to face.",
+      "Panel and group formats mean several people at once, so include everyone."
+     ],
+     "q": "Which format feels hardest to you, and what could make it easier?",
+     "c": "Pick one format and write one preparation step that is unique to it."
+    },
+    "de": {
+     "t": "Gängige Gesprächsformate",
+     "g": "Die wichtigsten Formate kennen und wissen, was dich jeweils erwartet.",
+     "p": [
+      "Bei Telefon und Video zählen deine Stimme, ein ruhiger Ort und funktionierende Technik.",
+      "Vor Ort kommen Körpersprache, Anreise und der persönliche Kontakt dazu.",
+      "Bei Panel- und Gruppengesprächen sind mehrere Personen da, beziehe alle ein."
+     ],
+     "q": "Welches Format fällt dir am schwersten, und was würde helfen?",
+     "c": "Wähle ein Format und notiere einen Vorbereitungsschritt, der nur dafür gilt."
+    },
+    "es": {
+     "t": "Formatos habituales de entrevista",
+     "g": "Conocer los formatos principales y qué esperar de cada uno.",
+     "p": [
+      "En teléfono y vídeo importan tu voz, un lugar tranquilo y que la tecnología funcione.",
+      "En persona se suman el lenguaje corporal, el viaje y el trato cara a cara.",
+      "En paneles y grupos hay varias personas a la vez: incluye a todas."
+     ],
+     "q": "¿Qué formato te parece más difícil y qué podría facilitártelo?",
+     "c": "Elige un formato y anota un paso de preparación propio de ese formato."
+    },
+    "fr": {
+     "t": "Les formats d'entretien courants",
+     "g": "Connaître les principaux formats et savoir à quoi s'attendre dans chacun.",
+     "p": [
+      "Au téléphone ou en visio, tout repose sur la voix, un lieu calme et une technique fiable.",
+      "En présentiel s'ajoutent le langage corporel, le trajet et le contact direct.",
+      "En jury ou en groupe, plusieurs personnes sont là : adressez-vous à toutes."
+     ],
+     "q": "Quel format vous semble le plus difficile, et qu'est-ce qui aiderait ?",
+     "c": "Choisissez un format et notez une étape de préparation propre à celui-ci."
+    },
+    "it": {
+     "t": "I formati di colloquio più comuni",
+     "g": "Conoscere i formati principali e cosa aspettarsi da ciascuno.",
+     "p": [
+      "Al telefono e in video contano la voce, un posto tranquillo e una tecnologia che funzioni.",
+      "Di persona si aggiungono linguaggio del corpo, viaggio e contatto diretto.",
+      "Nei colloqui di gruppo o con più persone, coinvolgi tutti."
+     ],
+     "q": "Quale formato ti sembra più difficile e cosa potrebbe aiutarti?",
+     "c": "Scegli un formato e scrivi un passo di preparazione tipico di quel formato."
+    },
+    "pt": {
+     "t": "Formatos comuns de entrevista",
+     "g": "Conhecer os principais formatos e o que esperar de cada um.",
+     "p": [
+      "Em chamadas de voz e vídeo contam a voz, um espaço sossegado e tecnologia a funcionar.",
+      "Presencialmente somam-se a linguagem corporal, a viagem e o contacto direto.",
+      "Em painéis e grupos há várias pessoas ao mesmo tempo: inclui todas."
+     ],
+     "q": "Que formato te parece mais difícil e o que poderia ajudar?",
+     "c": "Escolhe um formato e anota um passo de preparação específico para ele."
+    },
+    "pt_BR": {
+     "t": "Formatos comuns de entrevista",
+     "g": "Conhecer os principais formatos e o que esperar de cada um.",
+     "p": [
+      "Em ligação e vídeo contam a voz, um lugar silencioso e tecnologia funcionando.",
+      "Presencialmente entram a linguagem corporal, o deslocamento e o contato direto.",
+      "Em painéis e dinâmicas de grupo há várias pessoas ao mesmo tempo: inclua todas."
+     ],
+     "q": "Qual formato parece mais difícil para você e o que poderia ajudar?",
+     "c": "Escolha um formato e anote um passo de preparação típico dele."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The hiring process step by step",
+     "g": "Follow the hiring process from application to offer so nothing surprises you.",
+     "p": [
+      "Typical steps are application, screening, one or more interviews and a decision.",
+      "Some companies add tasks, tests or meetings with future colleagues.",
+      "Knowing the path helps you pace your energy and ask good questions."
+     ],
+     "q": "Have you been through a hiring process before, and which step felt longest?",
+     "c": "Draw the steps of a hiring process you know on a small timeline."
+    },
+    "de": {
+     "t": "Der Bewerbungsprozess Schritt für Schritt",
+     "g": "Den Weg von der Bewerbung bis zum Angebot kennen, damit nichts überrascht.",
+     "p": [
+      "Typisch sind Bewerbung, Vorgespräch, ein oder mehrere Gespräche und eine Entscheidung.",
+      "Manche Firmen ergänzen Aufgaben, Tests oder Treffen mit künftigen Kollegen.",
+      "Wer den Ablauf kennt, teilt Kraft besser ein und stellt gute Fragen."
+     ],
+     "q": "Hast du schon einen Bewerbungsprozess erlebt, und welcher Schritt dauerte am längsten?",
+     "c": "Zeichne die Schritte eines dir bekannten Prozesses als kleine Zeitleiste."
+    },
+    "es": {
+     "t": "El proceso de selección paso a paso",
+     "g": "Seguir el proceso desde la candidatura hasta la oferta para que nada te sorprenda.",
+     "p": [
+      "Lo habitual: candidatura, primer filtro, una o más entrevistas y una decisión.",
+      "Algunas empresas añaden pruebas, tareas o encuentros con futuros compañeros.",
+      "Conocer el camino te ayuda a repartir tu energía y a hacer buenas preguntas."
+     ],
+     "q": "¿Has pasado ya por un proceso de selección? ¿Qué paso se te hizo más largo?",
+     "c": "Dibuja en una pequeña línea de tiempo los pasos de un proceso que conozcas."
+    },
+    "fr": {
+     "t": "Le processus de recrutement étape par étape",
+     "g": "Suivre le parcours de la candidature à l'offre pour ne pas être pris au dépourvu.",
+     "p": [
+      "Les étapes classiques : candidature, premier tri, un ou plusieurs entretiens, décision.",
+      "Certaines entreprises ajoutent des exercices, des tests ou des rencontres d'équipe.",
+      "Connaître le chemin aide à répartir son énergie et à poser de bonnes questions."
+     ],
+     "q": "Avez-vous déjà vécu un processus de recrutement ? Quelle étape fut la plus longue ?",
+     "c": "Dessinez sur une petite frise les étapes d'un processus que vous connaissez."
+    },
+    "it": {
+     "t": "Il processo di selezione passo dopo passo",
+     "g": "Seguire il percorso dalla candidatura all'offerta per non avere sorprese.",
+     "p": [
+      "I passaggi tipici sono candidatura, primo filtro, uno o più colloqui e decisione.",
+      "Alcune aziende aggiungono prove, test o incontri con i futuri colleghi.",
+      "Conoscere il percorso ti aiuta a dosare le energie e a fare buone domande."
+     ],
+     "q": "Hai già vissuto un processo di selezione? Quale fase ti è sembrata più lunga?",
+     "c": "Disegna su una piccola linea del tempo le fasi di un processo che conosci."
+    },
+    "pt": {
+     "t": "O processo de recrutamento passo a passo",
+     "g": "Seguir o caminho da candidatura à proposta para que nada te surpreenda.",
+     "p": [
+      "Os passos típicos: candidatura, triagem, uma ou mais entrevistas e decisão.",
+      "Algumas empresas juntam tarefas, testes ou encontros com futuros colegas.",
+      "Conhecer o percurso ajuda-te a gerir a energia e a fazer boas perguntas."
+     ],
+     "q": "Já passaste por um processo de recrutamento? Que fase te pareceu mais longa?",
+     "c": "Desenha numa pequena linha do tempo os passos de um processo que conheças."
+    },
+    "pt_BR": {
+     "t": "O processo seletivo passo a passo",
+     "g": "Acompanhar o caminho da candidatura até a proposta para nada te surpreender.",
+     "p": [
+      "Os passos típicos: candidatura, triagem, uma ou mais entrevistas e decisão.",
+      "Algumas empresas incluem testes, tarefas ou encontros com futuros colegas.",
+      "Conhecer o caminho ajuda a dosar a energia e a fazer boas perguntas."
+     ],
+     "q": "Você já passou por um processo seletivo? Que etapa pareceu mais longa?",
+     "c": "Desenhe numa linha do tempo simples as etapas de um processo que você conhece."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Screening calls",
+     "g": "Make a short first call with a recruiter count.",
+     "p": [
+      "Screening calls check basics: interest, availability, experience and fit.",
+      "Have your CV, the job ad and a short pitch in front of you.",
+      "Be warm and concise, and take the call somewhere quiet."
+     ],
+     "q": "How would you introduce yourself in the first 20 seconds of a call?",
+     "c": "Say your 20-second introduction out loud once and time it."
+    },
+    "de": {
+     "t": "Das erste kurze Telefonat",
+     "g": "Ein kurzes Erstgespräch mit der Recruiterin oder dem Recruiter gut nutzen.",
+     "p": [
+      "Beim Vorgespräch geht es um Interesse, Verfügbarkeit, Erfahrung und Passung.",
+      "Halte Lebenslauf, Stellenanzeige und einen kurzen Pitch griffbereit.",
+      "Sei freundlich und knapp und nimm den Anruf an einem ruhigen Ort an."
+     ],
+     "q": "Wie würdest du dich in den ersten 20 Sekunden vorstellen?",
+     "c": "Sprich deine 20-Sekunden-Vorstellung einmal laut und stoppe die Zeit."
+    },
+    "es": {
+     "t": "Llamadas de preselección",
+     "g": "Aprovechar bien la primera llamada breve con un reclutador.",
+     "p": [
+      "Estas llamadas comprueban lo básico: interés, disponibilidad, experiencia y encaje.",
+      "Ten a mano tu CV, el anuncio y una presentación corta.",
+      "Sé cálido y conciso, y contesta desde un lugar tranquilo."
+     ],
+     "q": "¿Cómo te presentarías en los primeros 20 segundos de una llamada?",
+     "c": "Di en voz alta tu presentación de 20 segundos y cronométrala."
+    },
+    "fr": {
+     "t": "Les appels de présélection",
+     "g": "Réussir le premier court appel avec un recruteur.",
+     "p": [
+      "Cet appel vérifie l'essentiel : intérêt, disponibilité, expérience et adéquation.",
+      "Gardez sous les yeux votre CV, l'annonce et une courte présentation.",
+      "Soyez chaleureux et concis, et répondez depuis un endroit calme."
+     ],
+     "q": "Comment vous présenteriez-vous dans les 20 premières secondes d'un appel ?",
+     "c": "Dites votre présentation de 20 secondes à voix haute et chronométrez-la."
+    },
+    "it": {
+     "t": "Le telefonate di screening",
+     "g": "Sfruttare bene la breve prima chiamata con un selezionatore.",
+     "p": [
+      "Queste chiamate verificano le basi: interesse, disponibilità, esperienza e affinità.",
+      "Tieni a portata di mano CV, annuncio e una breve presentazione.",
+      "Sii cordiale e sintetico e rispondi da un posto tranquillo."
+     ],
+     "q": "Come ti presenteresti nei primi 20 secondi di una chiamata?",
+     "c": "Pronuncia ad alta voce la tua presentazione di 20 secondi e cronometrala."
+    },
+    "pt": {
+     "t": "Chamadas de triagem",
+     "g": "Aproveitar bem a primeira chamada curta com um recrutador.",
+     "p": [
+      "Estas chamadas verificam o essencial: interesse, disponibilidade, experiência e ajuste.",
+      "Tem à mão o CV, o anúncio e uma apresentação curta.",
+      "Sê simpático e conciso e atende num local sossegado."
+     ],
+     "q": "Como te apresentarias nos primeiros 20 segundos de uma chamada?",
+     "c": "Diz em voz alta a tua apresentação de 20 segundos e cronometra-a."
+    },
+    "pt_BR": {
+     "t": "Ligações de triagem",
+     "g": "Aproveitar bem a primeira ligação curta com um recrutador.",
+     "p": [
+      "Essas ligações checam o básico: interesse, disponibilidade, experiência e fit.",
+      "Deixe à mão o currículo, o anúncio da vaga e uma apresentação curta.",
+      "Seja simpático e objetivo, e atenda em um lugar silencioso."
+     ],
+     "q": "Como você se apresentaria nos primeiros 20 segundos de uma ligação?",
+     "c": "Fale em voz alta sua apresentação de 20 segundos e cronometre."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading the job description",
+     "g": "Spot the key skills, duties and values in a job description.",
+     "p": [
+      "Read the whole ad slowly and underline repeated words and phrases.",
+      "Duties show what you will do, requirements show what you must bring.",
+      "Tone and wording hint at the company's values and working style."
+     ],
+     "q": "Which words in a job ad make you feel excited, and which make you hesitate?",
+     "c": "Take one job ad and underline the five most important words in it."
+    },
+    "de": {
+     "t": "Die Stellenanzeige lesen",
+     "g": "Wichtige Fähigkeiten, Aufgaben und Werte in einer Stellenanzeige erkennen.",
+     "p": [
+      "Lies die ganze Anzeige langsam und markiere wiederkehrende Begriffe.",
+      "Aufgaben zeigen, was du tun wirst, Anforderungen, was du mitbringen sollst.",
+      "Ton und Wortwahl verraten Werte und Arbeitsstil des Unternehmens."
+     ],
+     "q": "Welche Wörter in einer Anzeige begeistern dich, welche lassen dich zögern?",
+     "c": "Nimm eine Anzeige und markiere die fünf wichtigsten Wörter darin."
+    },
+    "es": {
+     "t": "Leer la oferta de empleo",
+     "g": "Detectar las habilidades, funciones y valores clave de una oferta.",
+     "p": [
+      "Lee todo el anuncio despacio y subraya las palabras que se repiten.",
+      "Las funciones muestran qué harás; los requisitos, qué debes aportar.",
+      "El tono y las palabras revelan los valores y el estilo de trabajo."
+     ],
+     "q": "¿Qué palabras de una oferta te ilusionan y cuáles te hacen dudar?",
+     "c": "Toma una oferta y subraya las cinco palabras más importantes."
+    },
+    "fr": {
+     "t": "Lire l'offre d'emploi",
+     "g": "Repérer les compétences, missions et valeurs essentielles d'une offre.",
+     "p": [
+      "Lisez toute l'annonce lentement et soulignez les mots qui reviennent.",
+      "Les missions montrent ce que vous ferez, les exigences ce que vous devez apporter.",
+      "Le ton et les mots choisis révèlent les valeurs et le style de travail."
+     ],
+     "q": "Quels mots d'une annonce vous enthousiasment, et lesquels vous font hésiter ?",
+     "c": "Prenez une annonce et soulignez les cinq mots les plus importants."
+    },
+    "it": {
+     "t": "Leggere l'annuncio di lavoro",
+     "g": "Individuare competenze, mansioni e valori chiave in un annuncio.",
+     "p": [
+      "Leggi tutto l'annuncio con calma e sottolinea le parole che si ripetono.",
+      "Le mansioni mostrano cosa farai, i requisiti cosa devi portare.",
+      "Tono e parole scelte lasciano intuire valori e stile di lavoro dell'azienda."
+     ],
+     "q": "Quali parole di un annuncio ti entusiasmano e quali ti fanno esitare?",
+     "c": "Prendi un annuncio e sottolinea le cinque parole più importanti."
+    },
+    "pt": {
+     "t": "Ler o anúncio de emprego",
+     "g": "Identificar as competências, funções e valores principais de um anúncio.",
+     "p": [
+      "Lê o anúncio todo com calma e sublinha as palavras que se repetem.",
+      "As funções mostram o que farás; os requisitos, o que deves trazer.",
+      "O tom e as palavras sugerem os valores e o estilo de trabalho da empresa."
+     ],
+     "q": "Que palavras de um anúncio te entusiasmam e quais te fazem hesitar?",
+     "c": "Pega num anúncio e sublinha as cinco palavras mais importantes."
+    },
+    "pt_BR": {
+     "t": "Lendo a descrição da vaga",
+     "g": "Identificar as habilidades, atividades e valores principais de uma vaga.",
+     "p": [
+      "Leia o anúncio inteiro com calma e sublinhe as palavras que se repetem.",
+      "As atividades mostram o que você fará; os requisitos, o que precisa trazer.",
+      "O tom e as palavras sugerem os valores e o estilo de trabalho da empresa."
+     ],
+     "q": "Que palavras de uma vaga empolgam você e quais fazem você hesitar?",
+     "c": "Pegue uma vaga e sublinhe as cinco palavras mais importantes."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Must-haves vs nice-to-haves",
+     "g": "Tell essential requirements from bonus ones so you prepare the right stories.",
+     "p": [
+      "Must-haves are the skills the job cannot work without.",
+      "Nice-to-haves are a bonus, and many hires lack a few of them.",
+      "Spend most prep time on must-haves, and be honest about the rest."
+     ],
+     "q": "Which requirement in a job ad do you feel strongest about?",
+     "c": "Mark one job ad: M for must-have, N for nice-to-have on each line."
+    },
+    "de": {
+     "t": "Pflicht und Kür unterscheiden",
+     "g": "Wesentliche Anforderungen von Zusatzwünschen trennen, um die richtigen Geschichten vorzubereiten.",
+     "p": [
+      "Muss-Kriterien sind Fähigkeiten, ohne die die Stelle nicht funktioniert.",
+      "Kann-Kriterien sind ein Plus, und vielen Eingestellten fehlen einige davon.",
+      "Investiere die meiste Vorbereitung in Muss-Punkte und sei bei dem Rest ehrlich."
+     ],
+     "q": "Bei welcher Anforderung einer Anzeige fühlst du dich am stärksten?",
+     "c": "Markiere in einer Anzeige jede Zeile mit M für Muss oder K für Kann."
+    },
+    "es": {
+     "t": "Imprescindible frente a deseable",
+     "g": "Distinguir los requisitos esenciales de los extras para preparar las historias adecuadas.",
+     "p": [
+      "Lo imprescindible son las habilidades sin las que el puesto no funciona.",
+      "Lo deseable es un plus, y a muchas personas contratadas les faltan algunos.",
+      "Dedica la mayor parte de la preparación a lo imprescindible y sé sincero con el resto."
+     ],
+     "q": "¿Qué requisito de una oferta sientes más tuyo?",
+     "c": "Marca una oferta: I para imprescindible y D para deseable en cada línea."
+    },
+    "fr": {
+     "t": "Indispensable ou souhaitable",
+     "g": "Distinguer les exigences essentielles des bonus pour préparer les bonnes histoires.",
+     "p": [
+      "Les indispensables sont les compétences sans lesquelles le poste ne fonctionne pas.",
+      "Les souhaitables sont un plus, et beaucoup de recrues en manquent quelques-uns.",
+      "Consacrez l'essentiel de la préparation aux indispensables et soyez honnête sur le reste."
+     ],
+     "q": "Quelle exigence d'une annonce maîtrisez-vous le mieux ?",
+     "c": "Annotez une annonce : I pour indispensable, S pour souhaitable à chaque ligne."
+    },
+    "it": {
+     "t": "Requisiti indispensabili e graditi",
+     "g": "Distinguere i requisiti essenziali da quelli extra per preparare le storie giuste.",
+     "p": [
+      "Gli indispensabili sono le competenze senza cui il ruolo non funziona.",
+      "I graditi sono un bonus, e a molti assunti ne mancano alcuni.",
+      "Dedica la maggior parte della preparazione agli indispensabili e sii onesto sul resto."
+     ],
+     "q": "Quale requisito di un annuncio senti più tuo?",
+     "c": "Segna un annuncio: I per indispensabile, G per gradito su ogni riga."
+    },
+    "pt": {
+     "t": "Essencial versus desejável",
+     "g": "Distinguir os requisitos essenciais dos extras para preparares as histórias certas.",
+     "p": [
+      "Os essenciais são as competências sem as quais a função não funciona.",
+      "Os desejáveis são um extra, e a muitos contratados faltam alguns.",
+      "Dedica a maior parte da preparação ao essencial e sê honesto quanto ao resto."
+     ],
+     "q": "Que requisito de um anúncio sentes mais teu?",
+     "c": "Marca um anúncio: E para essencial e D para desejável em cada linha."
+    },
+    "pt_BR": {
+     "t": "Essencial versus desejável",
+     "g": "Distinguir os requisitos essenciais dos extras para preparar as histórias certas.",
+     "p": [
+      "Os essenciais são as habilidades sem as quais a vaga não funciona.",
+      "Os desejáveis são um bônus, e muitos contratados não têm alguns deles.",
+      "Dedique a maior parte da preparação ao essencial e seja honesto com o resto."
+     ],
+     "q": "Qual requisito de uma vaga você sente mais seu?",
+     "c": "Marque uma vaga: E para essencial e D para desejável em cada linha."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your personal skills inventory",
+     "g": "List your skills, experiences and achievements to match against a role.",
+     "p": [
+      "Include hard skills like tools and languages, and soft skills like teamwork.",
+      "Add achievements from work, study, volunteering and hobbies.",
+      "A written inventory saves you from blanking in the interview."
+     ],
+     "q": "What is one thing you do well that others often thank you for?",
+     "c": "Write ten skills or achievements, each in one short line."
+    },
+    "de": {
+     "t": "Dein persönliches Kompetenzinventar",
+     "g": "Fähigkeiten, Erfahrungen und Erfolge auflisten, um sie mit einer Stelle abzugleichen.",
+     "p": [
+      "Nimm Fachkenntnisse wie Werkzeuge und Sprachen sowie Soft Skills wie Teamarbeit auf.",
+      "Ergänze Erfolge aus Beruf, Studium, Ehrenamt und Hobbys.",
+      "Eine schriftliche Liste bewahrt dich im Gespräch vor einem Blackout."
+     ],
+     "q": "Was machst du gut, wofür dir andere oft danken?",
+     "c": "Schreibe zehn Fähigkeiten oder Erfolge in je einer kurzen Zeile auf."
+    },
+    "es": {
+     "t": "Tu inventario personal de habilidades",
+     "g": "Listar tus habilidades, experiencias y logros para compararlos con un puesto.",
+     "p": [
+      "Incluye habilidades técnicas como herramientas e idiomas, y otras como el trabajo en equipo.",
+      "Suma logros del trabajo, los estudios, el voluntariado y las aficiones.",
+      "Un inventario escrito evita que te quedes en blanco en la entrevista."
+     ],
+     "q": "¿Qué haces bien y por lo que otros suelen darte las gracias?",
+     "c": "Escribe diez habilidades o logros, cada uno en una línea corta."
+    },
+    "fr": {
+     "t": "Votre inventaire de compétences",
+     "g": "Lister vos compétences, expériences et réussites pour les comparer à un poste.",
+     "p": [
+      "Incluez des compétences techniques comme outils et langues, et humaines comme le travail d'équipe.",
+      "Ajoutez des réussites du travail, des études, du bénévolat et des loisirs.",
+      "Un inventaire écrit vous évite le trou de mémoire en entretien."
+     ],
+     "q": "Qu'est-ce que vous faites bien et pour quoi on vous remercie souvent ?",
+     "c": "Écrivez dix compétences ou réussites, chacune en une courte ligne."
+    },
+    "it": {
+     "t": "Il tuo inventario di competenze",
+     "g": "Elencare competenze, esperienze e risultati per confrontarli con un ruolo.",
+     "p": [
+      "Includi competenze tecniche come strumenti e lingue, e trasversali come il lavoro di squadra.",
+      "Aggiungi risultati ottenuti nel lavoro, nello studio, nel volontariato e nei hobby.",
+      "Un inventario scritto ti evita il vuoto di memoria durante il colloquio."
+     ],
+     "q": "Cosa fai bene e per cui gli altri ti ringraziano spesso?",
+     "c": "Scrivi dieci competenze o risultati, ciascuno in una riga breve."
+    },
+    "pt": {
+     "t": "O teu inventário de competências",
+     "g": "Listar competências, experiências e conquistas para as comparar com uma função.",
+     "p": [
+      "Inclui competências técnicas, como ferramentas e línguas, e outras, como trabalho em equipa.",
+      "Junta conquistas do trabalho, estudos, voluntariado e passatempos.",
+      "Um inventário escrito evita que fiques em branco na entrevista."
+     ],
+     "q": "O que fazes bem e pelo que as pessoas costumam agradecer-te?",
+     "c": "Escreve dez competências ou conquistas, cada uma numa linha curta."
+    },
+    "pt_BR": {
+     "t": "Seu inventário pessoal de habilidades",
+     "g": "Listar habilidades, experiências e conquistas para compará-las com uma vaga.",
+     "p": [
+      "Inclua habilidades técnicas, como ferramentas e idiomas, e outras, como trabalho em equipe.",
+      "Some conquistas do trabalho, dos estudos, do voluntariado e dos hobbies.",
+      "Um inventário escrito evita que você dê um branco na entrevista."
+     ],
+     "q": "O que você faz bem e pelo que as pessoas costumam agradecer?",
+     "c": "Escreva dez habilidades ou conquistas, cada uma em uma linha curta."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Matching yourself to the role",
+     "g": "Link each key requirement to a real example from your life or work.",
+     "p": [
+      "Take the top requirements from the ad, one at a time.",
+      "For each one, find a real moment where you showed that skill.",
+      "A simple table of requirement and example becomes your prep sheet."
+     ],
+     "q": "Which requirement are you most proud to have an example for?",
+     "c": "Build a two-column table with three requirements and your examples."
+    },
+    "de": {
+     "t": "Dich der Stelle zuordnen",
+     "g": "Jede wichtige Anforderung mit einem echten Beispiel aus Leben oder Beruf verknüpfen.",
+     "p": [
+      "Nimm die wichtigsten Anforderungen der Anzeige nacheinander vor.",
+      "Suche zu jeder einen echten Moment, in dem du die Fähigkeit gezeigt hast.",
+      "Eine einfache Tabelle aus Anforderung und Beispiel wird dein Spickzettel."
+     ],
+     "q": "Wofür hast du das beste Beispiel, auf das du stolz bist?",
+     "c": "Erstelle eine Tabelle mit zwei Spalten, drei Anforderungen und deinen Beispielen."
+    },
+    "es": {
+     "t": "Conectarte con el puesto",
+     "g": "Vincular cada requisito clave con un ejemplo real de tu vida o trabajo.",
+     "p": [
+      "Toma los requisitos principales del anuncio, uno por uno.",
+      "Para cada uno busca un momento real en que mostraste esa habilidad.",
+      "Una tabla sencilla de requisito y ejemplo será tu hoja de preparación."
+     ],
+     "q": "¿De qué requisito te enorgullece más tener un ejemplo?",
+     "c": "Haz una tabla de dos columnas con tres requisitos y tus ejemplos."
+    },
+    "fr": {
+     "t": "Faire le lien avec le poste",
+     "g": "Relier chaque exigence clé à un exemple réel de votre vie ou de votre travail.",
+     "p": [
+      "Prenez les principales exigences de l'annonce, une par une.",
+      "Pour chacune, trouvez un moment réel où vous avez montré cette compétence.",
+      "Un simple tableau exigence-exemple devient votre fiche de préparation."
+     ],
+     "q": "Pour quelle exigence êtes-vous le plus fier d'avoir un exemple ?",
+     "c": "Faites un tableau à deux colonnes avec trois exigences et vos exemples."
+    },
+    "it": {
+     "t": "Collegare te stesso al ruolo",
+     "g": "Collegare ogni requisito chiave a un esempio reale della tua vita o del tuo lavoro.",
+     "p": [
+      "Prendi i requisiti principali dell'annuncio, uno alla volta.",
+      "Per ognuno cerca un momento reale in cui hai mostrato quella competenza.",
+      "Una semplice tabella requisito-esempio diventa la tua scheda di preparazione."
+     ],
+     "q": "Per quale requisito sei più orgoglioso di avere un esempio?",
+     "c": "Crea una tabella a due colonne con tre requisiti e i tuoi esempi."
+    },
+    "pt": {
+     "t": "Ligar-te à função",
+     "g": "Associar cada requisito-chave a um exemplo real da tua vida ou trabalho.",
+     "p": [
+      "Pega nos requisitos principais do anúncio, um de cada vez.",
+      "Para cada um, encontra um momento real em que mostraste essa competência.",
+      "Uma tabela simples de requisito e exemplo torna-se a tua folha de preparação."
+     ],
+     "q": "De que requisito te orgulhas mais de ter um exemplo?",
+     "c": "Faz uma tabela de duas colunas com três requisitos e os teus exemplos."
+    },
+    "pt_BR": {
+     "t": "Conectando você à vaga",
+     "g": "Ligar cada requisito-chave a um exemplo real da sua vida ou trabalho.",
+     "p": [
+      "Pegue os requisitos principais do anúncio, um de cada vez.",
+      "Para cada um, encontre um momento real em que você mostrou essa habilidade.",
+      "Uma tabela simples de requisito e exemplo vira sua folha de preparação."
+     ],
+     "q": "De qual requisito você mais se orgulha de ter um exemplo?",
+     "c": "Monte uma tabela de duas colunas com três requisitos e seus exemplos."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Researching the company",
+     "g": "Find out what an organisation does, who it serves and what it values.",
+     "p": [
+      "Start with the website: products, services, mission and recent news.",
+      "Learn who their customers or users are and what problem they solve.",
+      "Note two or three facts you can mention naturally in the interview."
+     ],
+     "q": "What would you most like to learn about a company before applying?",
+     "c": "Spend ten minutes on one company site and note three facts."
+    },
+    "de": {
+     "t": "Das Unternehmen recherchieren",
+     "g": "Herausfinden, was eine Organisation tut, wem sie dient und was ihr wichtig ist.",
+     "p": [
+      "Beginne mit der Website: Produkte, Leistungen, Leitbild und aktuelle Nachrichten.",
+      "Finde heraus, wer die Kundschaft ist und welches Problem gelöst wird.",
+      "Notiere zwei, drei Fakten, die du im Gespräch natürlich erwähnen kannst."
+     ],
+     "q": "Was möchtest du über eine Firma wissen, bevor du dich bewirbst?",
+     "c": "Verbringe zehn Minuten auf einer Firmenseite und notiere drei Fakten."
+    },
+    "es": {
+     "t": "Investigar la empresa",
+     "g": "Averiguar qué hace una organización, a quién sirve y qué valora.",
+     "p": [
+      "Empieza por la web: productos, servicios, misión y noticias recientes.",
+      "Descubre quiénes son sus clientes y qué problema resuelven.",
+      "Anota dos o tres datos que puedas mencionar con naturalidad en la entrevista."
+     ],
+     "q": "¿Qué te gustaría saber de una empresa antes de postularte?",
+     "c": "Dedica diez minutos a la web de una empresa y anota tres datos."
+    },
+    "fr": {
+     "t": "Se renseigner sur l'entreprise",
+     "g": "Découvrir ce que fait une organisation, qui elle sert et ce qu'elle valorise.",
+     "p": [
+      "Commencez par le site : produits, services, mission et actualités récentes.",
+      "Apprenez qui sont ses clients ou usagers et quel problème elle résout.",
+      "Notez deux ou trois faits à glisser naturellement dans l'entretien."
+     ],
+     "q": "Que voudriez-vous savoir d'une entreprise avant de postuler ?",
+     "c": "Passez dix minutes sur le site d'une entreprise et notez trois faits."
+    },
+    "it": {
+     "t": "Informarsi sull'azienda",
+     "g": "Scoprire cosa fa un'organizzazione, chi serve e cosa valorizza.",
+     "p": [
+      "Parti dal sito: prodotti, servizi, missione e notizie recenti.",
+      "Scopri chi sono i suoi clienti o utenti e quale problema risolve.",
+      "Annota due o tre fatti da citare con naturalezza durante il colloquio."
+     ],
+     "q": "Cosa vorresti sapere di un'azienda prima di candidarti?",
+     "c": "Dedica dieci minuti al sito di un'azienda e annota tre fatti."
+    },
+    "pt": {
+     "t": "Pesquisar a empresa",
+     "g": "Descobrir o que faz uma organização, quem serve e o que valoriza.",
+     "p": [
+      "Começa pelo site: produtos, serviços, missão e notícias recentes.",
+      "Descobre quem são os clientes ou utilizadores e que problema resolve.",
+      "Anota dois ou três factos que possas mencionar com naturalidade na entrevista."
+     ],
+     "q": "O que gostarias de saber sobre uma empresa antes de te candidatares?",
+     "c": "Dedica dez minutos ao site de uma empresa e anota três factos."
+    },
+    "pt_BR": {
+     "t": "Pesquisando a empresa",
+     "g": "Descobrir o que uma organização faz, quem ela atende e o que valoriza.",
+     "p": [
+      "Comece pelo site: produtos, serviços, missão e notícias recentes.",
+      "Descubra quem são os clientes ou usuários e qual problema ela resolve.",
+      "Anote dois ou três fatos que você possa citar com naturalidade na entrevista."
+     ],
+     "q": "O que você gostaria de saber sobre uma empresa antes de se candidatar?",
+     "c": "Dedique dez minutos ao site de uma empresa e anote três fatos."
+    }
+   }
+  }
+ ]
+}

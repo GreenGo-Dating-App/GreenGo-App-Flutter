@@ -1,0 +1,835 @@
+{
+ "topic": "robotics",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Serial monitor for debugging",
+     "g": "Use printed messages to see what your robot is thinking.",
+     "p": [
+      "The serial monitor shows text your board sends to the computer over USB.",
+      "Print sensor values and messages to check each step of your program.",
+      "Both sides must use the same speed, called the baud rate, or you see gibberish."
+     ],
+     "q": "What would you most like to see printed from your robot?",
+     "c": "Print a counter that goes up each second and watch it in the monitor."
+    },
+    "de": {
+     "t": "Serieller Monitor zum Debuggen",
+     "g": "Nutze ausgegebene Meldungen, um zu sehen, was dein Roboter denkt.",
+     "p": [
+      "Der serielle Monitor zeigt Text, den dein Board per USB an den Computer sendet.",
+      "Gib Sensorwerte und Meldungen aus, um jeden Schritt deines Programms zu prüfen.",
+      "Beide Seiten brauchen dieselbe Geschwindigkeit, die Baudrate, sonst erscheint Kauderwelsch."
+     ],
+     "q": "Was würdest du am liebsten von deinem Roboter ausgegeben sehen?",
+     "c": "Gib einen Zähler aus, der jede Sekunde steigt, und beobachte ihn im Monitor."
+    },
+    "es": {
+     "t": "Monitor serie para depurar",
+     "g": "Usa mensajes impresos para ver qué piensa tu robot.",
+     "p": [
+      "El monitor serie muestra el texto que tu placa envía al ordenador por USB.",
+      "Imprime valores de sensores y mensajes para comprobar cada paso de tu programa.",
+      "Ambos lados deben usar la misma velocidad, los baudios, o verás símbolos sin sentido."
+     ],
+     "q": "¿Qué te gustaría ver impreso desde tu robot?",
+     "c": "Imprime un contador que suba cada segundo y míralo en el monitor."
+    },
+    "fr": {
+     "t": "Moniteur série pour déboguer",
+     "g": "Utilise des messages affichés pour voir ce que pense ton robot.",
+     "p": [
+      "Le moniteur série affiche le texte que ta carte envoie à l'ordinateur par USB.",
+      "Affiche des valeurs de capteurs et des messages pour vérifier chaque étape du programme.",
+      "Les deux côtés doivent utiliser la même vitesse, les bauds, sinon tu vois du charabia."
+     ],
+     "q": "Qu'aimerais-tu le plus voir afficher par ton robot ?",
+     "c": "Affiche un compteur qui augmente chaque seconde et suis-le dans le moniteur."
+    },
+    "it": {
+     "t": "Monitor seriale per il debug",
+     "g": "Usa messaggi stampati per vedere cosa pensa il tuo robot.",
+     "p": [
+      "Il monitor seriale mostra il testo che la scheda invia al computer via USB.",
+      "Stampa valori dei sensori e messaggi per controllare ogni passaggio del programma.",
+      "Entrambi i lati devono usare la stessa velocità, il baud rate, altrimenti vedi simboli senza senso."
+     ],
+     "q": "Cosa ti piacerebbe vedere stampato dal tuo robot?",
+     "c": "Stampa un contatore che sale ogni secondo e osservalo nel monitor."
+    },
+    "pt": {
+     "t": "Monitor série para depurar",
+     "g": "Usa mensagens impressas para ver o que o teu robô pensa.",
+     "p": [
+      "O monitor série mostra o texto que a placa envia ao computador por USB.",
+      "Imprime valores de sensores e mensagens para verificar cada passo do programa.",
+      "Os dois lados têm de usar a mesma velocidade, os baud, ou vês símbolos sem sentido."
+     ],
+     "q": "O que gostarias mais de ver impresso pelo teu robô?",
+     "c": "Imprime um contador que sobe a cada segundo e acompanha-o no monitor."
+    },
+    "pt_BR": {
+     "t": "Monitor serial para depurar",
+     "g": "Use mensagens impressas para ver o que seu robô pensa.",
+     "p": [
+      "O monitor serial mostra o texto que a placa envia ao computador por USB.",
+      "Imprima valores de sensores e mensagens para conferir cada passo do programa.",
+      "Os dois lados precisam usar a mesma velocidade, o baud rate, ou você vê símbolos sem sentido."
+     ],
+     "q": "O que você mais gostaria de ver impresso pelo seu robô?",
+     "c": "Imprima um contador que sobe a cada segundo e acompanhe no monitor."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "PWM: faking analog with pulses",
+     "g": "Learn how fast switching can dim lights and set motor speed.",
+     "p": [
+      "PWM switches a pin on and off very fast, many times a second.",
+      "The duty cycle is the share of time the pin is on, from zero to a hundred percent.",
+      "A 50 percent duty cycle gives roughly half the average power to an LED or motor."
+     ],
+     "q": "Where would smooth control of power help your robot?",
+     "c": "Draw a PWM wave at 25, 50 and 75 percent duty cycle."
+    },
+    "de": {
+     "t": "PWM: Analog mit Impulsen nachbilden",
+     "g": "Lerne, wie schnelles Schalten Licht dimmt und Motordrehzahl einstellt.",
+     "p": [
+      "PWM schaltet einen Pin sehr schnell an und aus, viele Male pro Sekunde.",
+      "Das Tastverhältnis ist der Zeitanteil, in dem der Pin an ist, von null bis hundert Prozent.",
+      "Ein Tastverhältnis von 50 Prozent liefert LED oder Motor etwa die halbe mittlere Leistung."
+     ],
+     "q": "Wo würde dein Roboter von fein regelbarer Leistung profitieren?",
+     "c": "Zeichne ein PWM-Signal mit 25, 50 und 75 Prozent Tastverhältnis."
+    },
+    "es": {
+     "t": "PWM: simular analógico con pulsos",
+     "g": "Aprende cómo la conmutación rápida atenúa luces y fija la velocidad de motores.",
+     "p": [
+      "El PWM enciende y apaga un pin muy rápido, muchas veces por segundo.",
+      "El ciclo de trabajo es la parte del tiempo que el pin está activo, de cero a cien por ciento.",
+      "Un ciclo de trabajo del 50 por ciento da más o menos la mitad de la potencia media a un LED o motor."
+     ],
+     "q": "¿Dónde ayudaría a tu robot un control suave de la potencia?",
+     "c": "Dibuja una onda PWM con ciclo de trabajo de 25, 50 y 75 por ciento."
+    },
+    "fr": {
+     "t": "PWM : simuler l'analogique avec des impulsions",
+     "g": "Apprends comment une commutation rapide atténue la lumière et règle la vitesse d'un moteur.",
+     "p": [
+      "Le PWM allume et éteint une broche très vite, plusieurs fois par seconde.",
+      "Le rapport cyclique est la part du temps où la broche est active, de zéro à cent pour cent.",
+      "Un rapport cyclique de 50 pour cent donne à peu près la moitié de la puissance moyenne."
+     ],
+     "q": "Où un réglage fin de la puissance aiderait-il ton robot ?",
+     "c": "Dessine une onde PWM à 25, 50 et 75 pour cent de rapport cyclique."
+    },
+    "it": {
+     "t": "PWM: simulare l'analogico con impulsi",
+     "g": "Scopri come la commutazione veloce attenua le luci e regola la velocità dei motori.",
+     "p": [
+      "Il PWM accende e spegne un pin molto velocemente, tante volte al secondo.",
+      "Il duty cycle è la quota di tempo in cui il pin è attivo, da zero a cento per cento.",
+      "Un duty cycle del 50 per cento dà circa metà della potenza media a un LED o motore."
+     ],
+     "q": "Dove aiuterebbe il tuo robot un controllo graduale della potenza?",
+     "c": "Disegna un'onda PWM con duty cycle del 25, 50 e 75 per cento."
+    },
+    "pt": {
+     "t": "PWM: simular o analógico com pulsos",
+     "g": "Aprende como a comutação rápida regula a luz e a velocidade de motores.",
+     "p": [
+      "O PWM liga e desliga um pino muito depressa, muitas vezes por segundo.",
+      "O ciclo de trabalho é a parte do tempo em que o pino está ligado, de zero a cem por cento.",
+      "Um ciclo de trabalho de 50 por cento dá cerca de metade da potência média a um LED ou motor."
+     ],
+     "q": "Onde ajudaria o teu robô um controlo suave da potência?",
+     "c": "Desenha uma onda PWM com ciclo de trabalho de 25, 50 e 75 por cento."
+    },
+    "pt_BR": {
+     "t": "PWM: simulando o analógico com pulsos",
+     "g": "Aprenda como a comutação rápida regula a luz e a velocidade de motores.",
+     "p": [
+      "O PWM liga e desliga um pino muito rápido, muitas vezes por segundo.",
+      "O ciclo de trabalho é a parte do tempo em que o pino fica ligado, de zero a cem por cento.",
+      "Um ciclo de trabalho de 50 por cento dá cerca de metade da potência média a um LED ou motor."
+     ],
+     "q": "Onde um controle suave da potência ajudaria seu robô?",
+     "c": "Desenhe uma onda PWM com ciclo de trabalho de 25, 50 e 75 por cento."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fading LEDs smoothly",
+     "g": "Use PWM in a loop for a gentle breathing light.",
+     "p": [
+      "Write a PWM value from 0 to 255 and the LED goes from off to full brightness.",
+      "A loop that raises the value a little each step makes a smooth fade up.",
+      "Count back down to fade out, and the LED seems to breathe."
+     ],
+     "q": "What mood would you give a light, calm or lively?",
+     "c": "Make an LED fade in and out, then change the speed of the fade."
+    },
+    "de": {
+     "t": "LEDs weich überblenden",
+     "g": "Nutze PWM in einer Schleife für ein sanftes Atmungslicht.",
+     "p": [
+      "Schreibe einen PWM-Wert von 0 bis 255 und die LED geht von aus bis volle Helligkeit.",
+      "Eine Schleife, die den Wert pro Schritt etwas erhöht, ergibt ein weiches Aufblenden.",
+      "Zähle wieder herunter zum Abblenden, und die LED scheint zu atmen."
+     ],
+     "q": "Welche Stimmung würdest du einem Licht geben, ruhig oder lebhaft?",
+     "c": "Lass eine LED auf- und abblenden und ändere dann die Geschwindigkeit."
+    },
+    "es": {
+     "t": "Atenuar LED con suavidad",
+     "g": "Usa PWM en un bucle para una luz que parece respirar.",
+     "p": [
+      "Escribe un valor PWM de 0 a 255 y el LED pasa de apagado a brillo máximo.",
+      "Un bucle que sube un poco el valor en cada paso crea un aumento suave.",
+      "Cuenta hacia atrás para apagar y el LED parece respirar."
+     ],
+     "q": "¿Qué ambiente darías a una luz, tranquilo o animado?",
+     "c": "Haz que un LED suba y baje de brillo y luego cambia la velocidad."
+    },
+    "fr": {
+     "t": "Faire varier une LED en douceur",
+     "g": "Utilise le PWM dans une boucle pour une lumière qui semble respirer.",
+     "p": [
+      "Écris une valeur PWM de 0 à 255 et la LED passe d'éteinte à pleine luminosité.",
+      "Une boucle qui augmente un peu la valeur à chaque pas donne un fondu en douceur.",
+      "Redescends pour l'extinction et la LED semble respirer."
+     ],
+     "q": "Quelle ambiance donnerais-tu à une lumière, calme ou vive ?",
+     "c": "Fais monter et descendre la luminosité d'une LED, puis change la vitesse."
+    },
+    "it": {
+     "t": "Sfumare i LED con dolcezza",
+     "g": "Usa il PWM in un ciclo per una luce che sembra respirare.",
+     "p": [
+      "Scrivi un valore PWM da 0 a 255 e il LED passa da spento a luminosità piena.",
+      "Un ciclo che alza un po' il valore a ogni passo crea una salita graduale.",
+      "Conta all'indietro per spegnere e il LED sembra respirare."
+     ],
+     "q": "Che atmosfera daresti a una luce, calma o vivace?",
+     "c": "Fai salire e scendere la luminosità di un LED e poi cambia la velocità."
+    },
+    "pt": {
+     "t": "Esbater LEDs com suavidade",
+     "g": "Usa PWM num ciclo para uma luz que parece respirar.",
+     "p": [
+      "Escreve um valor PWM de 0 a 255 e o LED passa de apagado a brilho máximo.",
+      "Um ciclo que sobe um pouco o valor a cada passo cria uma subida suave.",
+      "Conta para trás para apagar e o LED parece respirar."
+     ],
+     "q": "Que ambiente darias a uma luz, calmo ou animado?",
+     "c": "Faz um LED subir e descer de brilho e depois muda a velocidade."
+    },
+    "pt_BR": {
+     "t": "Esmaecendo LEDs com suavidade",
+     "g": "Use PWM em um laço para uma luz que parece respirar.",
+     "p": [
+      "Escreva um valor PWM de 0 a 255 e o LED passa de apagado a brilho máximo.",
+      "Um laço que aumenta um pouco o valor a cada passo cria uma subida suave.",
+      "Conte para trás para apagar e o LED parece respirar."
+     ],
+     "q": "Que clima você daria a uma luz, calmo ou animado?",
+     "c": "Faça um LED subir e descer de brilho e depois mude a velocidade."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Analog inputs and readings",
+     "g": "Turn a voltage into a number your code can use.",
+     "p": [
+      "An analog pin measures a voltage and converts it into a number.",
+      "On many boards with ten-bit converters the range is 0 to 1023.",
+      "Zero means about zero volts, and the top number means the supply voltage."
+     ],
+     "q": "What would you like your robot to measure in the room?",
+     "c": "Read an analog pin and print the number while you touch the wire to ground and to the supply."
+    },
+    "de": {
+     "t": "Analoge Eingänge und Messwerte",
+     "g": "Verwandle eine Spannung in eine Zahl, die dein Code nutzen kann.",
+     "p": [
+      "Ein analoger Pin misst eine Spannung und wandelt sie in eine Zahl um.",
+      "Bei vielen Boards mit Zehn-Bit-Wandler reicht der Bereich von 0 bis 1023.",
+      "Null bedeutet etwa null Volt, die höchste Zahl die Versorgungsspannung."
+     ],
+     "q": "Was soll dein Roboter im Raum messen?",
+     "c": "Lies einen analogen Pin und gib die Zahl aus, während du den Draht an Masse und Versorgung hältst."
+    },
+    "es": {
+     "t": "Entradas analógicas y lecturas",
+     "g": "Convierte un voltaje en un número que tu código pueda usar.",
+     "p": [
+      "Un pin analógico mide un voltaje y lo convierte en un número.",
+      "En muchas placas con conversor de diez bits el rango es de 0 a 1023.",
+      "Cero significa casi cero voltios y el número más alto, el voltaje de alimentación."
+     ],
+     "q": "¿Qué te gustaría que midiera tu robot en la habitación?",
+     "c": "Lee un pin analógico e imprime el número mientras tocas el cable a masa y a la alimentación."
+    },
+    "fr": {
+     "t": "Entrées analogiques et mesures",
+     "g": "Transforme une tension en nombre utilisable dans ton code.",
+     "p": [
+      "Une broche analogique mesure une tension et la convertit en nombre.",
+      "Sur beaucoup de cartes à convertisseur dix bits, la plage va de 0 à 1023.",
+      "Zéro correspond à environ zéro volt, le nombre maximal à la tension d'alimentation."
+     ],
+     "q": "Que voudrais-tu que ton robot mesure dans la pièce ?",
+     "c": "Lis une broche analogique et affiche le nombre en touchant le fil à la masse puis à l'alimentation."
+    },
+    "it": {
+     "t": "Ingressi analogici e letture",
+     "g": "Trasforma una tensione in un numero utilizzabile nel codice.",
+     "p": [
+      "Un pin analogico misura una tensione e la converte in un numero.",
+      "In molte schede con convertitore a dieci bit l'intervallo va da 0 a 1023.",
+      "Zero significa circa zero volt, il numero massimo la tensione di alimentazione."
+     ],
+     "q": "Cosa vorresti che il tuo robot misurasse nella stanza?",
+     "c": "Leggi un pin analogico e stampa il numero mentre tocchi il filo a massa e all'alimentazione."
+    },
+    "pt": {
+     "t": "Entradas analógicas e leituras",
+     "g": "Transforma uma tensão num número que o teu código possa usar.",
+     "p": [
+      "Um pino analógico mede uma tensão e converte-a num número.",
+      "Em muitas placas com conversor de dez bits o intervalo vai de 0 a 1023.",
+      "Zero significa quase zero volts e o número máximo, a tensão de alimentação."
+     ],
+     "q": "O que gostarias que o teu robô medisse na sala?",
+     "c": "Lê um pino analógico e imprime o número enquanto encostas o fio à massa e à alimentação."
+    },
+    "pt_BR": {
+     "t": "Entradas analógicas e leituras",
+     "g": "Transforme uma tensão em um número que seu código possa usar.",
+     "p": [
+      "Um pino analógico mede uma tensão e a converte em um número.",
+      "Em muitas placas com conversor de dez bits o intervalo vai de 0 a 1023.",
+      "Zero significa quase zero volt e o número máximo, a tensão de alimentação."
+     ],
+     "q": "O que você gostaria que seu robô medisse no ambiente?",
+     "c": "Leia um pino analógico e imprima o número enquanto encosta o fio no terra e na alimentação."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Potentiometers as knobs",
+     "g": "Use a turnable resistor to set values by hand.",
+     "p": [
+      "A potentiometer has three pins: two ends and a sliding middle contact.",
+      "The middle pin gives a voltage that changes smoothly as you turn the knob.",
+      "Connect the ends to supply and ground, and read the middle with an analog pin."
+     ],
+     "q": "What would you control with a knob on your robot?",
+     "c": "Use a knob to change the blink speed of an LED live."
+    },
+    "de": {
+     "t": "Potentiometer als Drehregler",
+     "g": "Nutze einen drehbaren Widerstand, um Werte von Hand einzustellen.",
+     "p": [
+      "Ein Potentiometer hat drei Anschlüsse: zwei Enden und einen gleitenden Mittelkontakt.",
+      "Der mittlere Anschluss liefert eine Spannung, die sich beim Drehen stufenlos ändert.",
+      "Verbinde die Enden mit Versorgung und Masse und lies die Mitte mit einem analogen Pin."
+     ],
+     "q": "Was würdest du an deinem Roboter mit einem Regler steuern?",
+     "c": "Ändere mit einem Regler live die Blinkgeschwindigkeit einer LED."
+    },
+    "es": {
+     "t": "Potenciómetros como perillas",
+     "g": "Usa una resistencia giratoria para fijar valores a mano.",
+     "p": [
+      "Un potenciómetro tiene tres pines: dos extremos y un contacto central deslizante.",
+      "El pin central da un voltaje que cambia suavemente al girar la perilla.",
+      "Conecta los extremos a alimentación y masa y lee el centro con un pin analógico."
+     ],
+     "q": "¿Qué controlarías con una perilla en tu robot?",
+     "c": "Usa una perilla para cambiar en vivo la velocidad de parpadeo de un LED."
+    },
+    "fr": {
+     "t": "Potentiomètres comme boutons",
+     "g": "Utilise une résistance rotative pour régler des valeurs à la main.",
+     "p": [
+      "Un potentiomètre a trois broches : deux extrémités et un contact central glissant.",
+      "La broche centrale donne une tension qui varie en douceur quand on tourne le bouton.",
+      "Relie les extrémités à l'alimentation et à la masse et lis le centre avec une broche analogique."
+     ],
+     "q": "Que contrôlerais-tu avec un bouton sur ton robot ?",
+     "c": "Utilise un bouton pour changer en direct la vitesse de clignotement d'une LED."
+    },
+    "it": {
+     "t": "Potenziometri come manopole",
+     "g": "Usa un resistore girevole per impostare valori a mano.",
+     "p": [
+      "Un potenziometro ha tre pin: due estremi e un contatto centrale scorrevole.",
+      "Il pin centrale dà una tensione che cambia gradualmente girando la manopola.",
+      "Collega gli estremi ad alimentazione e massa e leggi il centro con un pin analogico."
+     ],
+     "q": "Cosa controlleresti con una manopola sul tuo robot?",
+     "c": "Usa una manopola per cambiare dal vivo la velocità di lampeggio di un LED."
+    },
+    "pt": {
+     "t": "Potenciómetros como botões rotativos",
+     "g": "Usa uma resistência rotativa para definir valores à mão.",
+     "p": [
+      "Um potenciómetro tem três pinos: dois extremos e um contacto central deslizante.",
+      "O pino do meio dá uma tensão que muda suavemente ao rodar o botão.",
+      "Liga os extremos à alimentação e à massa e lê o meio com um pino analógico."
+     ],
+     "q": "O que controlarias com um botão no teu robô?",
+     "c": "Usa um botão para mudar em direto a velocidade de piscar de um LED."
+    },
+    "pt_BR": {
+     "t": "Potenciômetros como botões giratórios",
+     "g": "Use um resistor giratório para definir valores à mão.",
+     "p": [
+      "Um potenciômetro tem três pinos: duas pontas e um contato central deslizante.",
+      "O pino do meio dá uma tensão que muda suavemente ao girar o botão.",
+      "Ligue as pontas à alimentação e ao terra e leia o meio com um pino analógico."
+     ],
+     "q": "O que você controlaria com um botão no seu robô?",
+     "c": "Use um botão para mudar ao vivo a velocidade de piscar de um LED."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mapping and scaling values",
+     "g": "Convert raw readings into units that make sense.",
+     "p": [
+      "Raw readings like 0 to 1023 rarely match the range you need.",
+      "A map function rescales one range into another, such as 0 to 1023 into 0 to 180 degrees.",
+      "Constrain the result so it never goes past the limits your motor can take."
+     ],
+     "q": "What range would you map from a knob to something useful?",
+     "c": "Map a knob reading to LED brightness from 0 to 255 and print both numbers."
+    },
+    "de": {
+     "t": "Werte abbilden und skalieren",
+     "g": "Wandle Rohwerte in sinnvolle Einheiten um.",
+     "p": [
+      "Rohwerte wie 0 bis 1023 passen selten zum benötigten Bereich.",
+      "Eine map-Funktion skaliert einen Bereich in einen anderen, etwa 0 bis 1023 auf 0 bis 180 Grad.",
+      "Begrenze das Ergebnis, damit es nie über die Grenzen deines Motors hinausgeht."
+     ],
+     "q": "Welchen Bereich würdest du von einem Regler auf etwas Nützliches abbilden?",
+     "c": "Bilde einen Reglerwert auf LED-Helligkeit 0 bis 255 ab und gib beide Zahlen aus."
+    },
+    "es": {
+     "t": "Mapear y escalar valores",
+     "g": "Convierte lecturas en bruto en unidades con sentido.",
+     "p": [
+      "Las lecturas en bruto, como de 0 a 1023, rara vez coinciden con el rango que necesitas.",
+      "Una función map reescala un rango en otro, como de 0 a 1023 a 0 a 180 grados.",
+      "Limita el resultado para que nunca pase de lo que tu motor aguanta."
+     ],
+     "q": "¿Qué rango mapearías de una perilla a algo útil?",
+     "c": "Mapea la lectura de una perilla al brillo de un LED de 0 a 255 e imprime ambos números."
+    },
+    "fr": {
+     "t": "Convertir et mettre à l'échelle des valeurs",
+     "g": "Transforme des mesures brutes en unités qui ont du sens.",
+     "p": [
+      "Des mesures brutes comme 0 à 1023 correspondent rarement à la plage voulue.",
+      "Une fonction map convertit une plage en une autre, par exemple 0 à 1023 en 0 à 180 degrés.",
+      "Limite le résultat pour ne jamais dépasser ce que ton moteur supporte."
+     ],
+     "q": "Quelle plage convertirais-tu d'un bouton vers quelque chose d'utile ?",
+     "c": "Convertis la mesure d'un bouton en luminosité de LED de 0 à 255 et affiche les deux nombres."
+    },
+    "it": {
+     "t": "Mappare e scalare i valori",
+     "g": "Converti letture grezze in unità sensate.",
+     "p": [
+      "Letture grezze come 0-1023 raramente coincidono con l'intervallo che serve.",
+      "Una funzione map riscala un intervallo in un altro, per esempio da 0-1023 a 0-180 gradi.",
+      "Limita il risultato perché non superi mai ciò che il motore sopporta."
+     ],
+     "q": "Quale intervallo mapperesti da una manopola a qualcosa di utile?",
+     "c": "Mappa la lettura di una manopola sulla luminosità di un LED da 0 a 255 e stampa i due numeri."
+    },
+    "pt": {
+     "t": "Mapear e escalar valores",
+     "g": "Converte leituras em bruto em unidades com sentido.",
+     "p": [
+      "Leituras em bruto, como de 0 a 1023, raramente coincidem com o intervalo de que precisas.",
+      "Uma função map reescala um intervalo noutro, como de 0 a 1023 para 0 a 180 graus.",
+      "Limita o resultado para nunca passar o que o motor aguenta."
+     ],
+     "q": "Que intervalo mapearias de um botão para algo útil?",
+     "c": "Mapeia a leitura de um botão para o brilho de um LED de 0 a 255 e imprime os dois números."
+    },
+    "pt_BR": {
+     "t": "Mapeando e escalando valores",
+     "g": "Converta leituras brutas em unidades que façam sentido.",
+     "p": [
+      "Leituras brutas, como de 0 a 1023, raramente coincidem com a faixa de que você precisa.",
+      "Uma função map reescala uma faixa em outra, como de 0 a 1023 para 0 a 180 graus.",
+      "Limite o resultado para nunca passar do que o motor aguenta."
+     ],
+     "q": "Que faixa você mapearia de um botão para algo útil?",
+     "c": "Mapeie a leitura de um botão para o brilho de um LED de 0 a 255 e imprima os dois números."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Voltage dividers",
+     "g": "Scale a voltage down with just two resistors.",
+     "p": [
+      "Two resistors in series split a voltage in proportion to their values.",
+      "The output is the input voltage times the lower resistor divided by the total of both.",
+      "Two equal resistors halve the voltage, so 5 volts becomes 2.5 volts."
+     ],
+     "q": "Where might your robot need a smaller voltage than it has?",
+     "c": "Build a divider with two equal resistors and measure the middle with a meter."
+    },
+    "de": {
+     "t": "Spannungsteiler",
+     "g": "Verkleinere eine Spannung mit nur zwei Widerständen.",
+     "p": [
+      "Zwei Widerstände in Reihe teilen eine Spannung im Verhältnis ihrer Werte.",
+      "Die Ausgangsspannung ist Eingangsspannung mal unterer Widerstand durch die Summe beider.",
+      "Zwei gleiche Widerstände halbieren die Spannung, aus 5 Volt werden 2,5 Volt."
+     ],
+     "q": "Wo könnte dein Roboter eine kleinere Spannung brauchen, als er hat?",
+     "c": "Baue einen Teiler mit zwei gleichen Widerständen und miss die Mitte mit dem Multimeter."
+    },
+    "es": {
+     "t": "Divisores de voltaje",
+     "g": "Reduce un voltaje con solo dos resistencias.",
+     "p": [
+      "Dos resistencias en serie reparten un voltaje en proporción a sus valores.",
+      "La salida es el voltaje de entrada por la resistencia inferior dividida entre la suma de ambas.",
+      "Dos resistencias iguales dividen el voltaje a la mitad: 5 voltios pasan a 2,5."
+     ],
+     "q": "¿Dónde podría necesitar tu robot un voltaje menor del que tiene?",
+     "c": "Monta un divisor con dos resistencias iguales y mide el punto medio con el multímetro."
+    },
+    "fr": {
+     "t": "Diviseurs de tension",
+     "g": "Réduis une tension avec seulement deux résistances.",
+     "p": [
+      "Deux résistances en série partagent une tension proportionnellement à leurs valeurs.",
+      "La sortie vaut la tension d'entrée fois la résistance du bas divisée par la somme des deux.",
+      "Deux résistances égales divisent la tension par deux : 5 volts deviennent 2,5 volts."
+     ],
+     "q": "Où ton robot pourrait-il avoir besoin d'une tension plus faible que celle disponible ?",
+     "c": "Monte un diviseur avec deux résistances égales et mesure le milieu au multimètre."
+    },
+    "it": {
+     "t": "Partitori di tensione",
+     "g": "Riduci una tensione con soli due resistori.",
+     "p": [
+      "Due resistori in serie dividono una tensione in proporzione ai loro valori.",
+      "L'uscita è la tensione d'ingresso per il resistore inferiore diviso la somma dei due.",
+      "Due resistori uguali dimezzano la tensione: 5 volt diventano 2,5 volt."
+     ],
+     "q": "Dove potrebbe servire al tuo robot una tensione minore di quella che ha?",
+     "c": "Costruisci un partitore con due resistori uguali e misura il punto centrale col multimetro."
+    },
+    "pt": {
+     "t": "Divisores de tensão",
+     "g": "Reduz uma tensão com apenas duas resistências.",
+     "p": [
+      "Duas resistências em série dividem uma tensão em proporção aos seus valores.",
+      "A saída é a tensão de entrada vezes a resistência de baixo a dividir pela soma das duas.",
+      "Duas resistências iguais dividem a tensão ao meio: 5 volts passam a 2,5 volts."
+     ],
+     "q": "Onde poderia o teu robô precisar de uma tensão menor do que a que tem?",
+     "c": "Monta um divisor com duas resistências iguais e mede o ponto médio com o multímetro."
+    },
+    "pt_BR": {
+     "t": "Divisores de tensão",
+     "g": "Reduza uma tensão com apenas dois resistores.",
+     "p": [
+      "Dois resistores em série dividem uma tensão em proporção aos seus valores.",
+      "A saída é a tensão de entrada vezes o resistor de baixo dividido pela soma dos dois.",
+      "Dois resistores iguais dividem a tensão ao meio: 5 volts passam a 2,5 volts."
+     ],
+     "q": "Onde seu robô poderia precisar de uma tensão menor do que a que tem?",
+     "c": "Monte um divisor com dois resistores iguais e meça o ponto médio com o multímetro."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Light sensors",
+     "g": "Let your robot notice brightness and follow light.",
+     "p": [
+      "A light-dependent resistor lowers its resistance as more light hits it.",
+      "A photodiode or phototransistor reacts faster and can be very precise.",
+      "Put the sensor in a voltage divider so its changes become a readable voltage."
+     ],
+     "q": "Where would a robot use a light sensor, such as a night light?",
+     "c": "Make an LED turn on when the room gets dark, using a light sensor."
+    },
+    "de": {
+     "t": "Lichtsensoren",
+     "g": "Lass deinen Roboter Helligkeit erkennen und Licht folgen.",
+     "p": [
+      "Ein Fotowiderstand senkt seinen Widerstand, je mehr Licht auf ihn fällt.",
+      "Eine Fotodiode oder ein Fototransistor reagiert schneller und kann sehr genau sein.",
+      "Setze den Sensor in einen Spannungsteiler, damit seine Änderung zur lesbaren Spannung wird."
+     ],
+     "q": "Wo würde ein Roboter einen Lichtsensor nutzen, etwa als Nachtlicht?",
+     "c": "Lass eine LED angehen, wenn der Raum dunkel wird, mit einem Lichtsensor."
+    },
+    "es": {
+     "t": "Sensores de luz",
+     "g": "Haz que tu robot note el brillo y siga la luz.",
+     "p": [
+      "Una fotorresistencia baja su resistencia cuanta más luz recibe.",
+      "Un fotodiodo o fototransistor reacciona más rápido y puede ser muy preciso.",
+      "Pon el sensor en un divisor de voltaje para que sus cambios sean un voltaje legible."
+     ],
+     "q": "¿Dónde usaría un robot un sensor de luz, por ejemplo en una luz nocturna?",
+     "c": "Haz que un LED se encienda cuando la habitación oscurezca, usando un sensor de luz."
+    },
+    "fr": {
+     "t": "Capteurs de lumière",
+     "g": "Fais en sorte que ton robot perçoive la luminosité et suive la lumière.",
+     "p": [
+      "Une photorésistance baisse sa résistance quand elle reçoit plus de lumière.",
+      "Une photodiode ou un phototransistor réagit plus vite et peut être très précis.",
+      "Place le capteur dans un diviseur de tension pour que ses variations deviennent une tension lisible."
+     ],
+     "q": "Où un robot utiliserait-il un capteur de lumière, par exemple une veilleuse ?",
+     "c": "Fais allumer une LED quand la pièce s'assombrit, avec un capteur de lumière."
+    },
+    "it": {
+     "t": "Sensori di luce",
+     "g": "Fai notare al tuo robot la luminosità e fagli seguire la luce.",
+     "p": [
+      "Una fotoresistenza abbassa la sua resistenza quando riceve più luce.",
+      "Un fotodiodo o fototransistor reagisce più in fretta e può essere molto preciso.",
+      "Metti il sensore in un partitore di tensione per rendere leggibili le sue variazioni."
+     ],
+     "q": "Dove userebbe un robot un sensore di luce, per esempio in una luce notturna?",
+     "c": "Fai accendere un LED quando la stanza si fa buia, usando un sensore di luce."
+    },
+    "pt": {
+     "t": "Sensores de luz",
+     "g": "Faz o teu robô notar o brilho e seguir a luz.",
+     "p": [
+      "Uma fotorresistência baixa a sua resistência quanto mais luz recebe.",
+      "Um fotodíodo ou fototransístor reage mais depressa e pode ser muito preciso.",
+      "Põe o sensor num divisor de tensão para que as variações sejam uma tensão legível."
+     ],
+     "q": "Onde usaria um robô um sensor de luz, por exemplo numa luz de presença?",
+     "c": "Faz um LED acender quando a sala escurece, usando um sensor de luz."
+    },
+    "pt_BR": {
+     "t": "Sensores de luz",
+     "g": "Faça seu robô notar o brilho e seguir a luz.",
+     "p": [
+      "Um fotorresistor (LDR) baixa a resistência quanto mais luz recebe.",
+      "Um fotodiodo ou fototransistor reage mais rápido e pode ser bem preciso.",
+      "Coloque o sensor em um divisor de tensão para que as variações virem uma tensão legível."
+     ],
+     "q": "Onde um robô usaria um sensor de luz, por exemplo em uma luz de presença?",
+     "c": "Faça um LED acender quando o ambiente escurece, usando um sensor de luz."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Temperature sensors",
+     "g": "Let your robot know whether it is hot or cold.",
+     "p": [
+      "A thermistor changes its resistance with temperature, and a divider turns that into voltage.",
+      "Digital temperature sensors send the value as numbers, already converted for you.",
+      "Keep sensors away from heat sources, or the reading will be wrong."
+     ],
+     "q": "What would your robot do if the room got too hot?",
+     "c": "Read a temperature sensor and print the value in degrees to the monitor."
+    },
+    "de": {
+     "t": "Temperatursensoren",
+     "g": "Lass deinen Roboter wissen, ob es heiß oder kalt ist.",
+     "p": [
+      "Ein Thermistor ändert seinen Widerstand mit der Temperatur, ein Teiler macht daraus Spannung.",
+      "Digitale Temperatursensoren senden den Wert als Zahlen, schon für dich umgerechnet.",
+      "Halte Sensoren fern von Wärmequellen, sonst stimmt die Messung nicht."
+     ],
+     "q": "Was würde dein Roboter tun, wenn der Raum zu heiß wird?",
+     "c": "Lies einen Temperatursensor und gib den Wert in Grad im Monitor aus."
+    },
+    "es": {
+     "t": "Sensores de temperatura",
+     "g": "Haz que tu robot sepa si hace calor o frío.",
+     "p": [
+      "Un termistor cambia su resistencia con la temperatura y un divisor lo convierte en voltaje.",
+      "Los sensores digitales de temperatura envían el valor como números, ya convertidos.",
+      "Mantén los sensores lejos de fuentes de calor o la lectura será errónea."
+     ],
+     "q": "¿Qué haría tu robot si la habitación se calentara demasiado?",
+     "c": "Lee un sensor de temperatura e imprime el valor en grados en el monitor."
+    },
+    "fr": {
+     "t": "Capteurs de température",
+     "g": "Fais savoir à ton robot s'il fait chaud ou froid.",
+     "p": [
+      "Une thermistance change de résistance avec la température et un diviseur la transforme en tension.",
+      "Les capteurs de température numériques envoient la valeur en nombres, déjà convertie.",
+      "Éloigne les capteurs des sources de chaleur, sinon la mesure sera fausse."
+     ],
+     "q": "Que ferait ton robot si la pièce devenait trop chaude ?",
+     "c": "Lis un capteur de température et affiche la valeur en degrés dans le moniteur."
+    },
+    "it": {
+     "t": "Sensori di temperatura",
+     "g": "Fai sapere al tuo robot se fa caldo o freddo.",
+     "p": [
+      "Un termistore cambia resistenza con la temperatura e un partitore la trasforma in tensione.",
+      "I sensori digitali di temperatura inviano il valore come numeri, già convertiti.",
+      "Tieni i sensori lontano da fonti di calore o la lettura sarà sbagliata."
+     ],
+     "q": "Cosa farebbe il tuo robot se la stanza diventasse troppo calda?",
+     "c": "Leggi un sensore di temperatura e stampa il valore in gradi nel monitor."
+    },
+    "pt": {
+     "t": "Sensores de temperatura",
+     "g": "Faz o teu robô saber se está calor ou frio.",
+     "p": [
+      "Um termístor muda a resistência com a temperatura e um divisor converte-a em tensão.",
+      "Os sensores digitais de temperatura enviam o valor em números, já convertidos.",
+      "Mantém os sensores longe de fontes de calor ou a leitura será errada."
+     ],
+     "q": "O que faria o teu robô se a sala ficasse demasiado quente?",
+     "c": "Lê um sensor de temperatura e imprime o valor em graus no monitor."
+    },
+    "pt_BR": {
+     "t": "Sensores de temperatura",
+     "g": "Faça seu robô saber se está quente ou frio.",
+     "p": [
+      "Um termistor muda a resistência com a temperatura e um divisor a converte em tensão.",
+      "Os sensores digitais de temperatura enviam o valor em números, já convertidos.",
+      "Mantenha os sensores longe de fontes de calor ou a leitura será errada."
+     ],
+     "q": "O que seu robô faria se o ambiente ficasse quente demais?",
+     "c": "Leia um sensor de temperatura e imprima o valor em graus no monitor."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Buzzers and sounds",
+     "g": "Give your robot a voice with beeps and little melodies.",
+     "p": [
+      "A piezo buzzer makes sound when it is driven with a fast on and off signal.",
+      "The pitch depends on the frequency: faster switching gives a higher note.",
+      "Tone commands let you play notes, lengths and short songs."
+     ],
+     "q": "What sound would you give your robot when it starts or finds something?",
+     "c": "Play a rising three-note beep when your program starts."
+    },
+    "de": {
+     "t": "Summer und Töne",
+     "g": "Gib deinem Roboter mit Pieptönen und kleinen Melodien eine Stimme.",
+     "p": [
+      "Ein Piezo-Summer klingt, wenn man ihn mit schnellem An-Aus-Signal ansteuert.",
+      "Die Tonhöhe hängt von der Frequenz ab: schnelleres Schalten ergibt einen höheren Ton.",
+      "Mit Tonbefehlen spielst du Noten, Längen und kurze Lieder."
+     ],
+     "q": "Welchen Klang würdest du deinem Roboter beim Start oder bei einem Fund geben?",
+     "c": "Spiele beim Programmstart einen aufsteigenden Dreiklang-Piepton."
+    },
+    "es": {
+     "t": "Zumbadores y sonidos",
+     "g": "Dale voz a tu robot con pitidos y pequeñas melodías.",
+     "p": [
+      "Un zumbador piezoeléctrico suena cuando se le aplica una señal rápida de encendido y apagado.",
+      "El tono depende de la frecuencia: conmutar más rápido da una nota más aguda.",
+      "Los comandos de tono te dejan tocar notas, duraciones y canciones cortas."
+     ],
+     "q": "¿Qué sonido le darías a tu robot al arrancar o al encontrar algo?",
+     "c": "Toca un pitido ascendente de tres notas cuando arranque tu programa."
+    },
+    "fr": {
+     "t": "Buzzers et sons",
+     "g": "Donne une voix à ton robot avec des bips et de petites mélodies.",
+     "p": [
+      "Un buzzer piézo sonne quand on lui applique un signal rapide d'allumage et d'extinction.",
+      "La hauteur dépend de la fréquence : une commutation plus rapide donne une note plus aiguë.",
+      "Les commandes de tonalité permettent de jouer notes, durées et courtes mélodies."
+     ],
+     "q": "Quel son donnerais-tu à ton robot au démarrage ou quand il trouve quelque chose ?",
+     "c": "Joue un bip montant de trois notes au démarrage de ton programme."
+    },
+    "it": {
+     "t": "Cicalini e suoni",
+     "g": "Dai una voce al tuo robot con bip e piccole melodie.",
+     "p": [
+      "Un cicalino piezo suona quando riceve un segnale rapido di accensione e spegnimento.",
+      "L'altezza dipende dalla frequenza: una commutazione più rapida dà una nota più acuta.",
+      "I comandi di tono permettono di suonare note, durate e brevi melodie."
+     ],
+     "q": "Che suono daresti al tuo robot all'avvio o quando trova qualcosa?",
+     "c": "Suona un bip ascendente di tre note quando parte il programma."
+    },
+    "pt": {
+     "t": "Buzzers e sons",
+     "g": "Dá voz ao teu robô com apitos e pequenas melodias.",
+     "p": [
+      "Um buzzer piezoelétrico soa quando recebe um sinal rápido de ligar e desligar.",
+      "O tom depende da frequência: comutar mais depressa dá uma nota mais aguda.",
+      "Os comandos de tom deixam-te tocar notas, durações e canções curtas."
+     ],
+     "q": "Que som darias ao teu robô ao arrancar ou ao encontrar algo?",
+     "c": "Toca um apito ascendente de três notas quando o programa arrancar."
+    },
+    "pt_BR": {
+     "t": "Buzzers e sons",
+     "g": "Dê voz ao seu robô com apitos e pequenas melodias.",
+     "p": [
+      "Um buzzer piezoelétrico soa quando recebe um sinal rápido de ligar e desligar.",
+      "O tom depende da frequência: comutar mais rápido dá uma nota mais aguda.",
+      "Os comandos de tom deixam você tocar notas, durações e músicas curtas."
+     ],
+     "q": "Que som você daria ao seu robô ao ligar ou ao encontrar algo?",
+     "c": "Toque um apito ascendente de três notas quando o programa iniciar."
+    }
+   }
+  }
+ ]
+}

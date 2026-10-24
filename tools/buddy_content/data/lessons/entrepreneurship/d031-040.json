@@ -1,0 +1,835 @@
+{
+"topic": "entrepreneurship",
+"lessons": [
+{
+"d": 31,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "The business model in a picture",
+"g": "See how a business creates, delivers and captures value, explained simply.",
+"p": [
+"Create: what you make or offer that helps someone.",
+"Deliver: how it reaches the customer, in person, by post or online.",
+"Capture: how the business earns enough to keep going and improve."
+],
+"q": "Think of a business you like: how does it create, deliver and capture value?",
+"c": "Draw a three-step picture of create, deliver and capture for a favourite business."
+},
+"de": {
+"t": "Das Geschäftsmodell im Bild",
+"g": "Sieh, wie ein Unternehmen Nutzen schafft, liefert und davon etwas zurückbekommt.",
+"p": [
+"Schaffen: was du machst oder anbietest, das jemandem hilft.",
+"Liefern: wie es beim Kunden ankommt, persönlich, per Post oder online.",
+"Erhalten: wie das Unternehmen genug verdient, um weiterzumachen und besser zu werden."
+],
+"q": "Denk an ein Unternehmen, das du magst: Wie schafft, liefert und erhält es Nutzen?",
+"c": "Zeichne drei Schritte Schaffen, Liefern, Erhalten für ein Lieblingsunternehmen."
+},
+"es": {
+"t": "El modelo de negocio en una imagen",
+"g": "Mira cómo un negocio crea, entrega y captura valor, explicado con sencillez.",
+"p": [
+"Crear: lo que haces u ofreces y que ayuda a alguien.",
+"Entregar: cómo llega al cliente, en persona, por correo o en línea.",
+"Capturar: cómo el negocio gana lo suficiente para seguir y mejorar."
+],
+"q": "Piensa en un negocio que te guste: ¿cómo crea, entrega y captura valor?",
+"c": "Dibuja tres pasos de crear, entregar y capturar para un negocio favorito."
+},
+"fr": {
+"t": "Le modèle d'affaires en image",
+"g": "Vois comment une entreprise crée, délivre et capte de la valeur, expliqué simplement.",
+"p": [
+"Créer : ce que tu fabriques ou proposes et qui aide quelqu'un.",
+"Délivrer : comment cela parvient au client, en personne, par la poste ou en ligne.",
+"Capter : comment l'entreprise gagne assez pour continuer et s'améliorer."
+],
+"q": "Pense à une entreprise que tu aimes : comment crée-t-elle, délivre-t-elle et capte-t-elle de la valeur ?",
+"c": "Dessine trois étapes créer, délivrer, capter pour une entreprise préférée."
+},
+"it": {
+"t": "Il modello di business in un disegno",
+"g": "Vedi come un'impresa crea, consegna e cattura valore, spiegato semplicemente.",
+"p": [
+"Creare: ciò che fai o offri e che aiuta qualcuno.",
+"Consegnare: come arriva al cliente, di persona, per posta o online.",
+"Catturare: come l'impresa guadagna abbastanza per continuare e migliorare."
+],
+"q": "Pensa a un'impresa che ti piace: come crea, consegna e cattura valore?",
+"c": "Disegna tre passi creare, consegnare, catturare per un'impresa preferita."
+},
+"pt": {
+"t": "O modelo de negócio numa imagem",
+"g": "Vê como um negócio cria, entrega e capta valor, explicado de forma simples.",
+"p": [
+"Criar: o que fazes ou ofereces e que ajuda alguém.",
+"Entregar: como chega ao cliente, em pessoa, pelo correio ou online.",
+"Captar: como o negócio ganha o suficiente para continuar e melhorar."
+],
+"q": "Pensa num negócio de que gostas: como cria, entrega e capta valor?",
+"c": "Desenha três passos de criar, entregar e captar para um negócio favorito."
+},
+"pt_BR": {
+"t": "O modelo de negócio em uma imagem",
+"g": "Veja como um negócio cria, entrega e captura valor, explicado de forma simples.",
+"p": [
+"Criar: o que você faz ou oferece e que ajuda alguém.",
+"Entregar: como chega ao cliente, pessoalmente, pelo correio ou online.",
+"Capturar: como o negócio ganha o suficiente para continuar e melhorar."
+],
+"q": "Pense num negócio de que você gosta: como ele cria, entrega e captura valor?",
+"c": "Desenhe três passos de criar, entregar e capturar para um negócio favorito."
+}
+}
+},
+{
+"d": 32,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "The Business Model Canvas",
+"g": "Meet nine building blocks that describe any business on a single page.",
+"p": [
+"The canvas covers customers, value, channels, relationships, revenue, resources, activities, partners and costs.",
+"It is a thinking tool, not a legal or financial document; sketch in pencil.",
+"Moving sticky notes around shows how one change affects the other boxes."
+],
+"q": "Which of the nine blocks do you already know most about for your idea?",
+"c": "Draw a nine-box grid and put one sticky note in each box for a business you know."
+},
+"de": {
+"t": "Das Business Model Canvas",
+"g": "Lerne neun Bausteine kennen, die jedes Unternehmen auf einer Seite beschreiben.",
+"p": [
+"Das Canvas deckt Kunden, Nutzen, Kanäle, Beziehungen, Einnahmen, Ressourcen, Aktivitäten, Partner und Kosten ab.",
+"Es ist ein Denkwerkzeug, kein rechtliches oder finanzielles Dokument; skizziere mit Bleistift.",
+"Mit Haftnotizen siehst du, wie eine Änderung die anderen Felder beeinflusst."
+],
+"q": "Über welchen der neun Bausteine weißt du bei deiner Idee schon am meisten?",
+"c": "Zeichne ein Neun-Felder-Raster und klebe für ein bekanntes Unternehmen je eine Notiz hinein."
+},
+"es": {
+"t": "El lienzo del modelo de negocio",
+"g": "Conoce nueve bloques que describen cualquier negocio en una sola página.",
+"p": [
+"Cubre clientes, valor, canales, relaciones, ingresos, recursos, actividades, socios y costes.",
+"Es una herramienta de reflexión, no un documento legal ni financiero; dibuja a lápiz.",
+"Mover notas adhesivas muestra cómo un cambio afecta a las otras cajas."
+],
+"q": "¿De cuál de los nueve bloques sabes más ya sobre tu idea?",
+"c": "Dibuja una cuadrícula de nueve cajas y pon una nota en cada una para un negocio conocido."
+},
+"fr": {
+"t": "Le Business Model Canvas",
+"g": "Découvre neuf blocs qui décrivent n'importe quelle entreprise sur une page.",
+"p": [
+"Il couvre clients, valeur, canaux, relations, revenus, ressources, activités, partenaires et coûts.",
+"C'est un outil de réflexion, pas un document juridique ou financier; esquisse au crayon.",
+"Déplacer des notes adhésives montre comment un changement affecte les autres cases."
+],
+"q": "Pour ton idée, de quel bloc sur les neuf sais-tu déjà le plus ?",
+"c": "Trace une grille de neuf cases et mets une note dans chacune pour une entreprise connue."
+},
+"it": {
+"t": "Il Business Model Canvas",
+"g": "Conosci nove blocchi che descrivono qualsiasi impresa su una pagina.",
+"p": [
+"Copre clienti, valore, canali, relazioni, ricavi, risorse, attività, partner e costi.",
+"È uno strumento di riflessione, non un documento legale o finanziario; disegna a matita.",
+"Spostare i post-it mostra come un cambiamento influenza le altre caselle."
+],
+"q": "Di quale dei nove blocchi sai già di più per la tua idea?",
+"c": "Disegna una griglia di nove caselle e metti un post-it in ognuna per un'impresa che conosci."
+},
+"pt": {
+"t": "O Business Model Canvas",
+"g": "Conhece nove blocos que descrevem qualquer negócio numa só página.",
+"p": [
+"Cobre clientes, valor, canais, relações, receitas, recursos, atividades, parceiros e custos.",
+"É uma ferramenta de reflexão, não um documento legal ou financeiro; esboça a lápis.",
+"Mover notas autocolantes mostra como uma mudança afeta as outras caixas."
+],
+"q": "De qual dos nove blocos já sabes mais para a tua ideia?",
+"c": "Desenha uma grelha de nove caixas e põe uma nota em cada uma para um negócio que conheças."
+},
+"pt_BR": {
+"t": "O Business Model Canvas",
+"g": "Conheça nove blocos que descrevem qualquer negócio em uma só página.",
+"p": [
+"Cobre clientes, valor, canais, relacionamentos, receitas, recursos, atividades, parceiros e custos.",
+"É uma ferramenta de reflexão, não um documento legal ou financeiro; esboce a lápis.",
+"Mover post-its mostra como uma mudança afeta as outras caixas."
+],
+"q": "De qual dos nove blocos você já sabe mais para a sua ideia?",
+"c": "Desenhe uma grade de nove caixas e ponha um post-it em cada uma para um negócio que você conhece."
+}
+}
+},
+{
+"d": 33,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Customer segments",
+"g": "Group customers by shared needs so you can serve them better.",
+"p": [
+"A segment is a group of people with similar needs, habits or goals.",
+"Different segments may want different features, messages and prices.",
+"Start with one segment you understand well before widening the circle."
+],
+"q": "Which two groups of people might want your idea for different reasons?",
+"c": "Name two possible segments for your idea and the main need of each."
+},
+"de": {
+"t": "Kundensegmente",
+"g": "Gruppiere Kunden nach gemeinsamen Bedürfnissen, um sie besser zu bedienen.",
+"p": [
+"Ein Segment ist eine Gruppe mit ähnlichen Bedürfnissen, Gewohnheiten oder Zielen.",
+"Verschiedene Segmente wollen vielleicht andere Funktionen, Botschaften und Preise.",
+"Beginne mit einem Segment, das du gut verstehst, bevor du den Kreis erweiterst."
+],
+"q": "Welche zwei Gruppen könnten deine Idee aus verschiedenen Gründen wollen?",
+"c": "Nenne zwei mögliche Segmente deiner Idee und das Hauptbedürfnis jedes einzelnen."
+},
+"es": {
+"t": "Segmentos de clientes",
+"g": "Agrupa a los clientes por necesidades compartidas para servirlos mejor.",
+"p": [
+"Un segmento es un grupo de personas con necesidades, hábitos u objetivos parecidos.",
+"Segmentos distintos pueden querer funciones, mensajes y precios diferentes.",
+"Empieza con un segmento que entiendas bien antes de ampliar el círculo."
+],
+"q": "¿Qué dos grupos podrían querer tu idea por motivos distintos?",
+"c": "Nombra dos posibles segmentos para tu idea y la necesidad principal de cada uno."
+},
+"fr": {
+"t": "Les segments de clientèle",
+"g": "Regroupe les clients par besoins communs pour mieux les servir.",
+"p": [
+"Un segment est un groupe de personnes aux besoins, habitudes ou objectifs proches.",
+"Des segments différents peuvent vouloir d'autres fonctions, messages et prix.",
+"Commence par un segment que tu comprends bien avant d'élargir le cercle."
+],
+"q": "Quels deux groupes pourraient vouloir ton idée pour des raisons différentes ?",
+"c": "Nomme deux segments possibles pour ton idée et le besoin principal de chacun."
+},
+"it": {
+"t": "I segmenti di clientela",
+"g": "Raggruppa i clienti per bisogni comuni per servirli meglio.",
+"p": [
+"Un segmento è un gruppo di persone con bisogni, abitudini o obiettivi simili.",
+"Segmenti diversi possono volere funzioni, messaggi e prezzi diversi.",
+"Parti da un segmento che capisci bene prima di allargare il cerchio."
+],
+"q": "Quali due gruppi potrebbero volere la tua idea per motivi diversi?",
+"c": "Nomina due possibili segmenti per la tua idea e il bisogno principale di ciascuno."
+},
+"pt": {
+"t": "Segmentos de clientes",
+"g": "Agrupa os clientes por necessidades partilhadas para os servires melhor.",
+"p": [
+"Um segmento é um grupo de pessoas com necessidades, hábitos ou objetivos parecidos.",
+"Segmentos diferentes podem querer funções, mensagens e preços diferentes.",
+"Começa por um segmento que entendas bem antes de alargar o círculo."
+],
+"q": "Que dois grupos poderiam querer a tua ideia por razões diferentes?",
+"c": "Nomeia dois possíveis segmentos para a tua ideia e a necessidade principal de cada um."
+},
+"pt_BR": {
+"t": "Segmentos de clientes",
+"g": "Agrupe os clientes por necessidades compartilhadas para atendê-los melhor.",
+"p": [
+"Um segmento é um grupo de pessoas com necessidades, hábitos ou objetivos parecidos.",
+"Segmentos diferentes podem querer funções, mensagens e preços diferentes.",
+"Comece por um segmento que você entenda bem antes de ampliar o círculo."
+],
+"q": "Que dois grupos poderiam querer a sua ideia por motivos diferentes?",
+"c": "Nomeie dois possíveis segmentos para a sua ideia e a necessidade principal de cada um."
+}
+}
+},
+{
+"d": 34,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Channels to reach customers",
+"g": "Explore the ways your offer reaches people, from shop counters to apps.",
+"p": [
+"Channels include shops, markets, websites, apps, word of mouth and partners.",
+"Customers must learn about you, choose you, receive the offer and get help later.",
+"Pick the channel where your customer already spends time."
+],
+"q": "Where do you usually discover new products or services?",
+"c": "List three channels where your ideal customer could discover you."
+},
+"de": {
+"t": "Kanäle zu den Kunden",
+"g": "Erkunde, wie dein Angebot Menschen erreicht, vom Ladentisch bis zur App.",
+"p": [
+"Kanäle sind Läden, Märkte, Websites, Apps, Mundpropaganda und Partner.",
+"Kunden müssen von dir erfahren, dich wählen, das Angebot erhalten und später Hilfe bekommen.",
+"Wähle den Kanal, auf dem dein Kunde schon Zeit verbringt."
+],
+"q": "Wo entdeckst du meistens neue Produkte oder Services?",
+"c": "Liste drei Kanäle, auf denen dein idealer Kunde dich entdecken könnte."
+},
+"es": {
+"t": "Canales para llegar a clientes",
+"g": "Explora las vías por las que tu oferta llega a la gente, del mostrador a las apps.",
+"p": [
+"Los canales incluyen tiendas, mercados, webs, apps, boca a boca y socios.",
+"El cliente debe conocerte, elegirte, recibir la oferta y obtener ayuda después.",
+"Elige el canal donde tu cliente ya pasa tiempo."
+],
+"q": "¿Dónde sueles descubrir productos o servicios nuevos?",
+"c": "Lista tres canales donde tu cliente ideal podría descubrirte."
+},
+"fr": {
+"t": "Canaux pour toucher les clients",
+"g": "Explore les voies par lesquelles ton offre atteint les gens, du comptoir à l'appli.",
+"p": [
+"Les canaux incluent boutiques, marchés, sites, applis, bouche-à-oreille et partenaires.",
+"Le client doit te connaître, te choisir, recevoir l'offre et obtenir de l'aide ensuite.",
+"Choisis le canal où ton client passe déjà du temps."
+],
+"q": "Où découvres-tu d'ordinaire de nouveaux produits ou services ?",
+"c": "Liste trois canaux où ton client idéal pourrait te découvrir."
+},
+"it": {
+"t": "Canali per raggiungere i clienti",
+"g": "Esplora i modi in cui la tua offerta raggiunge le persone, dal banco alle app.",
+"p": [
+"I canali includono negozi, mercati, siti, app, passaparola e partner.",
+"Il cliente deve conoscerti, sceglierti, ricevere l'offerta e avere assistenza dopo.",
+"Scegli il canale dove il tuo cliente passa già del tempo."
+],
+"q": "Dove scopri di solito nuovi prodotti o servizi?",
+"c": "Elenca tre canali in cui il tuo cliente ideale potrebbe scoprirti."
+},
+"pt": {
+"t": "Canais para chegar aos clientes",
+"g": "Explora os caminhos por onde a tua oferta chega às pessoas, do balcão às apps.",
+"p": [
+"Os canais incluem lojas, mercados, sites, apps, passa-palavra e parceiros.",
+"O cliente tem de te conhecer, escolher-te, receber a oferta e ter ajuda depois.",
+"Escolhe o canal onde o teu cliente já passa tempo."
+],
+"q": "Onde costumas descobrir produtos ou serviços novos?",
+"c": "Lista três canais onde o teu cliente ideal te poderia descobrir."
+},
+"pt_BR": {
+"t": "Canais para chegar aos clientes",
+"g": "Explore os caminhos por onde a sua oferta chega às pessoas, do balcão aos apps.",
+"p": [
+"Os canais incluem lojas, feiras, sites, apps, boca a boca e parceiros.",
+"O cliente precisa conhecer você, escolher você, receber a oferta e ter ajuda depois.",
+"Escolha o canal onde o seu cliente já passa tempo."
+],
+"q": "Onde você costuma descobrir produtos ou serviços novos?",
+"c": "Liste três canais onde o seu cliente ideal poderia descobrir você."
+}
+}
+},
+{
+"d": 35,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Customer relationships",
+"g": "Learn how you stay connected: self-service, personal help or community.",
+"p": [
+"Some businesses offer self-service, others personal attention, others a community.",
+"The kind of relationship should fit what your customer expects and values.",
+"Good relationships bring repeat customers and honest feedback."
+],
+"q": "Which business makes you feel like a valued customer, and how?",
+"c": "Write one way you would stay in touch with your first ten customers."
+},
+"de": {
+"t": "Kundenbeziehungen",
+"g": "Lerne, wie du in Kontakt bleibst: Selbstbedienung, persönliche Hilfe oder Gemeinschaft.",
+"p": [
+"Manche bieten Selbstbedienung, andere persönliche Betreuung, andere eine Community.",
+"Die Art der Beziehung sollte zu dem passen, was dein Kunde erwartet und schätzt.",
+"Gute Beziehungen bringen Stammkunden und ehrliches Feedback."
+],
+"q": "Welches Unternehmen gibt dir das Gefühl, ein geschätzter Kunde zu sein, und wie?",
+"c": "Schreib auf, wie du mit deinen ersten zehn Kunden in Kontakt bleiben würdest."
+},
+"es": {
+"t": "Relaciones con los clientes",
+"g": "Aprende a mantener el contacto: autoservicio, ayuda personal o comunidad.",
+"p": [
+"Unos negocios ofrecen autoservicio, otros atención personal, otros una comunidad.",
+"El tipo de relación debe encajar con lo que tu cliente espera y valora.",
+"Las buenas relaciones traen clientes que repiten y opiniones sinceras."
+],
+"q": "¿Qué negocio te hace sentir un cliente valorado y cómo?",
+"c": "Escribe una forma de mantener contacto con tus diez primeros clientes."
+},
+"fr": {
+"t": "Relations avec les clients",
+"g": "Apprends à rester en lien : libre-service, aide personnelle ou communauté.",
+"p": [
+"Certains proposent le libre-service, d'autres une attention personnelle, d'autres une communauté.",
+"Le type de relation doit correspondre à ce que ton client attend et apprécie.",
+"De bonnes relations apportent des clients fidèles et des retours honnêtes."
+],
+"q": "Quelle entreprise te fait sentir un client estimé, et comment ?",
+"c": "Écris une façon de rester en contact avec tes dix premiers clients."
+},
+"it": {
+"t": "Relazioni con i clienti",
+"g": "Impara a restare in contatto: autoservizio, aiuto personale o comunità.",
+"p": [
+"Alcune imprese offrono autoservizio, altre attenzione personale, altre una comunità.",
+"Il tipo di relazione deve adattarsi a ciò che il cliente si aspetta e apprezza.",
+"Buone relazioni portano clienti che tornano e feedback sinceri."
+],
+"q": "Quale attività ti fa sentire un cliente apprezzato, e come?",
+"c": "Scrivi un modo per restare in contatto con i tuoi primi dieci clienti."
+},
+"pt": {
+"t": "Relações com os clientes",
+"g": "Aprende a manter o contacto: autosserviço, ajuda pessoal ou comunidade.",
+"p": [
+"Alguns negócios oferecem autosserviço, outros atenção pessoal, outros uma comunidade.",
+"O tipo de relação deve combinar com o que o teu cliente espera e valoriza.",
+"Boas relações trazem clientes que repetem e opiniões sinceras."
+],
+"q": "Que negócio te faz sentir um cliente valorizado e como?",
+"c": "Escreve uma forma de manteres contacto com os teus dez primeiros clientes."
+},
+"pt_BR": {
+"t": "Relacionamento com os clientes",
+"g": "Aprenda a manter contato: autoatendimento, ajuda pessoal ou comunidade.",
+"p": [
+"Alguns negócios oferecem autoatendimento, outros atenção pessoal, outros uma comunidade.",
+"O tipo de relacionamento deve combinar com o que seu cliente espera e valoriza.",
+"Bons relacionamentos trazem clientes que voltam e opiniões sinceras."
+],
+"q": "Qual negócio faz você se sentir um cliente valorizado e como?",
+"c": "Escreva uma forma de manter contato com seus dez primeiros clientes."
+}
+}
+},
+{
+"d": 36,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Revenue streams in general",
+"g": "Meet common ways businesses earn money: selling, renting, subscribing, fees and more.",
+"p": [
+"Typical streams: one-time sales, rentals, subscriptions, fees, ads and licences.",
+"A business can mix streams; what matters is that customers happily pay.",
+"This is general education, not financial advice; real choices need real research."
+],
+"q": "Which payment style do you prefer as a customer: once, monthly or per use?",
+"c": "List three ways your idea could earn money and which feels most natural."
+},
+"de": {
+"t": "Einnahmequellen allgemein",
+"g": "Lerne übliche Wege kennen, wie Unternehmen Geld verdienen: Verkauf, Miete, Abo, Gebühren.",
+"p": [
+"Typische Quellen: Einmalverkauf, Miete, Abos, Gebühren, Werbung und Lizenzen.",
+"Ein Unternehmen kann Quellen mischen; wichtig ist, dass Kunden gern zahlen.",
+"Das ist allgemeine Bildung, keine Finanzberatung; echte Entscheidungen brauchen Recherche."
+],
+"q": "Welche Zahlweise magst du als Kunde: einmal, monatlich oder pro Nutzung?",
+"c": "Liste drei Wege, wie deine Idee Geld verdienen könnte, und welcher am natürlichsten wirkt."
+},
+"es": {
+"t": "Fuentes de ingresos en general",
+"g": "Conoce formas habituales de ganar dinero: vender, alquilar, suscripción, comisiones y más.",
+"p": [
+"Fuentes típicas: ventas únicas, alquileres, suscripciones, comisiones, publicidad y licencias.",
+"Un negocio puede combinar fuentes; lo importante es que el cliente pague a gusto.",
+"Es educación general, no asesoría financiera; las decisiones reales requieren investigar."
+],
+"q": "¿Qué forma de pago prefieres como cliente: una vez, mensual o por uso?",
+"c": "Lista tres formas en que tu idea podría ganar dinero y cuál te parece más natural."
+},
+"fr": {
+"t": "Les sources de revenus en général",
+"g": "Découvre des façons courantes de gagner de l'argent : vente, location, abonnement, frais.",
+"p": [
+"Sources typiques : ventes ponctuelles, locations, abonnements, frais, publicité et licences.",
+"Une entreprise peut combiner les sources; l'essentiel est que les clients paient volontiers.",
+"C'est de l'éducation générale, pas du conseil financier; les vrais choix demandent des recherches."
+],
+"q": "Quel mode de paiement préfères-tu en client : une fois, au mois ou à l'usage ?",
+"c": "Liste trois façons dont ton idée pourrait rapporter de l'argent et la plus naturelle."
+},
+"it": {
+"t": "Fonti di ricavo in generale",
+"g": "Scopri modi comuni in cui le imprese guadagnano: vendita, noleggio, abbonamento, commissioni.",
+"p": [
+"Fonti tipiche: vendite singole, noleggi, abbonamenti, commissioni, pubblicità e licenze.",
+"Un'impresa può combinare le fonti; conta che i clienti paghino volentieri.",
+"È formazione generale, non consulenza finanziaria; le scelte vere richiedono ricerca."
+],
+"q": "Quale modo di pagare preferisci da cliente: una volta, al mese o a uso?",
+"c": "Elenca tre modi in cui la tua idea potrebbe guadagnare e quale ti sembra più naturale."
+},
+"pt": {
+"t": "Fontes de receita em geral",
+"g": "Conhece formas comuns de ganhar dinheiro: vender, alugar, subscrever, taxas e mais.",
+"p": [
+"Fontes típicas: vendas únicas, alugueres, subscrições, taxas, publicidade e licenças.",
+"Um negócio pode combinar fontes; o importante é que o cliente pague de bom grado.",
+"É educação geral, não aconselhamento financeiro; decisões reais exigem pesquisa."
+],
+"q": "Que forma de pagar preferes como cliente: uma vez, ao mês ou por uso?",
+"c": "Lista três formas de a tua ideia ganhar dinheiro e qual parece mais natural."
+},
+"pt_BR": {
+"t": "Fontes de receita em geral",
+"g": "Conheça formas comuns de ganhar dinheiro: vender, alugar, assinar, taxas e mais.",
+"p": [
+"Fontes típicas: vendas únicas, aluguéis, assinaturas, taxas, publicidade e licenças.",
+"Um negócio pode combinar fontes; o importante é que o cliente pague de bom grado.",
+"É educação geral, não consultoria financeira; decisões reais exigem pesquisa."
+],
+"q": "Que forma de pagar você prefere como cliente: uma vez, por mês ou por uso?",
+"c": "Liste três formas de sua ideia ganhar dinheiro e qual parece mais natural."
+}
+}
+},
+{
+"d": 37,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Key activities",
+"g": "Spot the few things a business must do really well to deliver its promise.",
+"p": [
+"Key activities are the core actions: making, selling, serving, solving.",
+"A bakery must bake and sell; a platform must keep things running and matched.",
+"List the three activities your idea cannot live without."
+],
+"q": "If your idea were a bakery, what would be the baking part?",
+"c": "Write the three activities your idea needs most and who could do each."
+},
+"de": {
+"t": "Schlüsselaktivitäten",
+"g": "Erkenne die wenigen Dinge, die ein Unternehmen richtig gut tun muss.",
+"p": [
+"Schlüsselaktivitäten sind die Kernhandlungen: herstellen, verkaufen, betreuen, lösen.",
+"Eine Bäckerei muss backen und verkaufen; eine Plattform muss laufen und vermitteln.",
+"Liste die drei Aktivitäten auf, ohne die deine Idee nicht leben kann."
+],
+"q": "Was wäre bei deiner Idee das Backen, wenn sie eine Bäckerei wäre?",
+"c": "Schreib die drei wichtigsten Aktivitäten deiner Idee und wer sie übernehmen könnte."
+},
+"es": {
+"t": "Actividades clave",
+"g": "Detecta las pocas cosas que un negocio debe hacer muy bien para cumplir su promesa.",
+"p": [
+"Las actividades clave son las acciones centrales: producir, vender, atender, resolver.",
+"Una panadería debe hornear y vender; una plataforma debe funcionar y conectar.",
+"Lista las tres actividades sin las que tu idea no puede vivir."
+],
+"q": "Si tu idea fuera una panadería, ¿cuál sería la parte de hornear?",
+"c": "Escribe las tres actividades que más necesita tu idea y quién podría hacer cada una."
+},
+"fr": {
+"t": "Activités clés",
+"g": "Repère les quelques choses qu'une entreprise doit très bien faire pour tenir sa promesse.",
+"p": [
+"Les activités clés sont les actions centrales : produire, vendre, servir, résoudre.",
+"Une boulangerie doit cuire et vendre; une plateforme doit fonctionner et mettre en relation.",
+"Liste les trois activités sans lesquelles ton idée ne peut pas vivre."
+],
+"q": "Si ton idée était une boulangerie, quelle serait la partie cuisson ?",
+"c": "Écris les trois activités dont ton idée a le plus besoin et qui pourrait les faire."
+},
+"it": {
+"t": "Attività chiave",
+"g": "Individua le poche cose che un'impresa deve fare molto bene per mantenere la promessa.",
+"p": [
+"Le attività chiave sono le azioni centrali: produrre, vendere, servire, risolvere.",
+"Un forno deve cuocere e vendere; una piattaforma deve funzionare e mettere in contatto.",
+"Elenca le tre attività senza cui la tua idea non può vivere."
+],
+"q": "Se la tua idea fosse un forno, quale sarebbe la parte della cottura?",
+"c": "Scrivi le tre attività più necessarie alla tua idea e chi potrebbe svolgerle."
+},
+"pt": {
+"t": "Atividades-chave",
+"g": "Identifica as poucas coisas que um negócio deve fazer muito bem para cumprir a sua promessa.",
+"p": [
+"As atividades-chave são as ações centrais: produzir, vender, atender, resolver.",
+"Uma padaria tem de cozer e vender; uma plataforma tem de funcionar e ligar pessoas.",
+"Lista as três atividades sem as quais a tua ideia não vive."
+],
+"q": "Se a tua ideia fosse uma padaria, qual seria a parte de cozer?",
+"c": "Escreve as três atividades de que a tua ideia mais precisa e quem as poderia fazer."
+},
+"pt_BR": {
+"t": "Atividades-chave",
+"g": "Identifique as poucas coisas que um negócio deve fazer muito bem para cumprir sua promessa.",
+"p": [
+"As atividades-chave são as ações centrais: produzir, vender, atender, resolver.",
+"Uma padaria precisa assar e vender; uma plataforma precisa funcionar e conectar pessoas.",
+"Liste as três atividades sem as quais a sua ideia não vive."
+],
+"q": "Se a sua ideia fosse uma padaria, qual seria a parte de assar?",
+"c": "Escreva as três atividades de que a sua ideia mais precisa e quem poderia fazer cada uma."
+}
+}
+},
+{
+"d": 38,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Key resources",
+"g": "Identify the people, tools, knowledge and assets a business depends on.",
+"p": [
+"Resources can be physical, like a van, or intellectual, like a recipe or a skill.",
+"People and relationships are resources too: a trusted team is hard to copy.",
+"Separate what you must own from what you can borrow, share or rent."
+],
+"q": "What is the most important tool or skill behind a business you admire?",
+"c": "List the key resources your idea needs and mark which ones you already have."
+},
+"de": {
+"t": "Schlüsselressourcen",
+"g": "Erkenne die Menschen, Werkzeuge, das Wissen und die Werte, von denen ein Unternehmen abhängt.",
+"p": [
+"Ressourcen können physisch sein, wie ein Lieferwagen, oder geistig, wie Rezept oder Können.",
+"Menschen und Beziehungen sind auch Ressourcen: ein vertrautes Team lässt sich schwer kopieren.",
+"Trenne, was du besitzen musst, von dem, was du leihen, teilen oder mieten kannst."
+],
+"q": "Was ist das wichtigste Werkzeug oder Können hinter einem Unternehmen, das du bewunderst?",
+"c": "Liste die Schlüsselressourcen deiner Idee und markiere, welche du schon hast."
+},
+"es": {
+"t": "Recursos clave",
+"g": "Identifica las personas, herramientas, conocimientos y bienes de los que depende un negocio.",
+"p": [
+"Los recursos pueden ser físicos, como una furgoneta, o intelectuales, como una receta o una habilidad.",
+"Las personas y relaciones también son recursos: un equipo de confianza es difícil de copiar.",
+"Separa lo que debes poseer de lo que puedes pedir prestado, compartir o alquilar."
+],
+"q": "¿Cuál es la herramienta o habilidad más importante tras un negocio que admiras?",
+"c": "Lista los recursos clave que necesita tu idea y marca los que ya tienes."
+},
+"fr": {
+"t": "Ressources clés",
+"g": "Identifie les personnes, outils, savoirs et biens dont dépend une entreprise.",
+"p": [
+"Les ressources peuvent être physiques, comme une camionnette, ou intellectuelles, comme une recette.",
+"Les personnes et relations sont aussi des ressources : une équipe de confiance se copie mal.",
+"Distingue ce que tu dois posséder de ce que tu peux emprunter, partager ou louer."
+],
+"q": "Quel est l'outil ou la compétence clé derrière une entreprise que tu admires ?",
+"c": "Liste les ressources clés dont ton idée a besoin et marque celles que tu as déjà."
+},
+"it": {
+"t": "Risorse chiave",
+"g": "Individua le persone, gli strumenti, le conoscenze e i beni da cui dipende un'impresa.",
+"p": [
+"Le risorse possono essere fisiche, come un furgone, o intellettuali, come una ricetta.",
+"Anche persone e relazioni sono risorse: un team di fiducia è difficile da copiare.",
+"Distingui ciò che devi possedere da ciò che puoi prendere in prestito, condividere o noleggiare."
+],
+"q": "Qual è lo strumento o la competenza più importante dietro un'impresa che ammiri?",
+"c": "Elenca le risorse chiave della tua idea e segna quelle che hai già."
+},
+"pt": {
+"t": "Recursos-chave",
+"g": "Identifica as pessoas, ferramentas, conhecimentos e bens de que um negócio depende.",
+"p": [
+"Os recursos podem ser físicos, como uma carrinha, ou intelectuais, como uma receita.",
+"Pessoas e relações também são recursos: uma equipa de confiança é difícil de copiar.",
+"Separa o que tens de possuir do que podes pedir emprestado, partilhar ou alugar."
+],
+"q": "Qual é a ferramenta ou competência mais importante num negócio que admiras?",
+"c": "Lista os recursos-chave de que a tua ideia precisa e marca os que já tens."
+},
+"pt_BR": {
+"t": "Recursos-chave",
+"g": "Identifique as pessoas, ferramentas, conhecimentos e bens de que um negócio depende.",
+"p": [
+"Recursos podem ser físicos, como uma van, ou intelectuais, como uma receita.",
+"Pessoas e relações também são recursos: uma equipe de confiança é difícil de copiar.",
+"Separe o que você precisa possuir do que pode pegar emprestado, compartilhar ou alugar."
+],
+"q": "Qual é a ferramenta ou habilidade mais importante num negócio que você admira?",
+"c": "Liste os recursos-chave de que a sua ideia precisa e marque os que você já tem."
+}
+}
+},
+{
+"d": 39,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Key partners",
+"g": "Meet the suppliers and allies that help a business do what it cannot do alone.",
+"p": [
+"Partners can be suppliers, shops that sell for you, or friends with other skills.",
+"Partnering lets you focus on what you do best and borrow the rest.",
+"Choose partners you trust and agree clearly what each side does."
+],
+"q": "Who could help you with the parts of your idea you are less good at?",
+"c": "Name two possible partners for your idea and what each could contribute."
+},
+"de": {
+"t": "Schlüsselpartner",
+"g": "Lerne Lieferanten und Verbündete kennen, die tun, was ein Unternehmen allein nicht kann.",
+"p": [
+"Partner können Lieferanten sein, Läden, die für dich verkaufen, oder Freunde mit anderen Stärken.",
+"Partnerschaften lassen dich auf das Beste fokussieren und den Rest ergänzen.",
+"Wähle Partner, denen du vertraust, und klär klar, was jede Seite tut."
+],
+"q": "Wer könnte dir bei den Teilen deiner Idee helfen, die dir weniger liegen?",
+"c": "Nenne zwei mögliche Partner für deine Idee und was jeder beitragen könnte."
+},
+"es": {
+"t": "Socios clave",
+"g": "Conoce a los proveedores y aliados que ayudan a hacer lo que un negocio no puede solo.",
+"p": [
+"Los socios pueden ser proveedores, tiendas que venden por ti o amigos con otras habilidades.",
+"Aliarte te permite centrarte en lo que mejor haces y pedir prestado el resto.",
+"Elige socios de confianza y acuerda con claridad qué hace cada parte."
+],
+"q": "¿Quién podría ayudarte en las partes de tu idea en las que eres menos bueno?",
+"c": "Nombra dos posibles socios para tu idea y qué podría aportar cada uno."
+},
+"fr": {
+"t": "Partenaires clés",
+"g": "Découvre les fournisseurs et alliés qui aident une entreprise à faire ce qu'elle ne peut seule.",
+"p": [
+"Les partenaires peuvent être des fournisseurs, des boutiques qui vendent pour toi ou des amis aux autres talents.",
+"S'associer te laisse te concentrer sur ce que tu fais le mieux.",
+"Choisis des partenaires de confiance et convenez clairement du rôle de chacun."
+],
+"q": "Qui pourrait t'aider sur les parties de ton idée où tu es moins à l'aise ?",
+"c": "Nomme deux partenaires possibles pour ton idée et l'apport de chacun."
+},
+"it": {
+"t": "Partner chiave",
+"g": "Conosci fornitori e alleati che aiutano un'impresa a fare ciò che non può da sola.",
+"p": [
+"I partner possono essere fornitori, negozi che vendono per te o amici con altre capacità.",
+"Allearsi ti lascia concentrare su ciò che sai fare meglio e prendere il resto.",
+"Scegli partner di cui ti fidi e concorda chiaramente cosa fa ciascuno."
+],
+"q": "Chi potrebbe aiutarti nelle parti della tua idea in cui sei meno bravo?",
+"c": "Nomina due possibili partner per la tua idea e cosa potrebbe offrire ciascuno."
+},
+"pt": {
+"t": "Parceiros-chave",
+"g": "Conhece os fornecedores e aliados que ajudam um negócio a fazer o que não pode sozinho.",
+"p": [
+"Os parceiros podem ser fornecedores, lojas que vendem por ti ou amigos com outras competências.",
+"Aliares-te permite focar no que fazes melhor e pedir o resto emprestado.",
+"Escolhe parceiros de confiança e acorda com clareza o que cada lado faz."
+],
+"q": "Quem te podia ajudar nas partes da tua ideia em que és menos bom?",
+"c": "Nomeia dois possíveis parceiros para a tua ideia e o que cada um poderia dar."
+},
+"pt_BR": {
+"t": "Parceiros-chave",
+"g": "Conheça os fornecedores e aliados que ajudam um negócio a fazer o que não pode sozinho.",
+"p": [
+"Parceiros podem ser fornecedores, lojas que vendem por você ou amigos com outras habilidades.",
+"Fazer parcerias permite focar no que você faz melhor e buscar o resto fora.",
+"Escolha parceiros de confiança e combine com clareza o que cada lado faz."
+],
+"q": "Quem poderia ajudar você nas partes da sua ideia em que você é menos forte?",
+"c": "Nomeie dois possíveis parceiros para a sua ideia e o que cada um poderia dar."
+}
+}
+},
+{
+"d": 40,
+"lv": "beginner",
+"i18n": {
+"en": {
+"t": "Costs in general terms",
+"g": "Understand which activities and resources cost money in a business.",
+"p": [
+"Costs come from resources, activities and partners you listed on the canvas.",
+"Some costs are fixed, like rent; others grow with each sale, like materials.",
+"This is general education only; check details with a qualified professional."
+],
+"q": "Which cost would surprise a first-time business owner the most?",
+"c": "List the five biggest costs of your idea and mark each as fixed or variable."
+},
+"de": {
+"t": "Kosten in allgemeinen Worten",
+"g": "Verstehe, welche Aktivitäten und Ressourcen in einem Unternehmen Geld kosten.",
+"p": [
+"Kosten entstehen durch Ressourcen, Aktivitäten und Partner, die du im Canvas notiert hast.",
+"Manche Kosten sind fix, wie Miete; andere wachsen mit jedem Verkauf, wie Material.",
+"Das ist nur allgemeine Bildung; kläre Details mit einer qualifizierten Fachperson."
+],
+"q": "Welche Kosten würden Gründer beim ersten Mal am meisten überraschen?",
+"c": "Liste die fünf größten Kosten deiner Idee und markiere sie als fix oder variabel."
+},
+"es": {
+"t": "Costes en términos generales",
+"g": "Entiende qué actividades y recursos cuestan dinero en un negocio.",
+"p": [
+"Los costes salen de los recursos, actividades y socios que listaste en el lienzo.",
+"Unos costes son fijos, como el alquiler; otros crecen con cada venta, como los materiales.",
+"Es solo educación general; confirma los detalles con un profesional cualificado."
+],
+"q": "¿Qué coste sorprendería más a quien monta un negocio por primera vez?",
+"c": "Lista los cinco mayores costes de tu idea y marca cada uno como fijo o variable."
+},
+"fr": {
+"t": "Les coûts en termes généraux",
+"g": "Comprends quelles activités et ressources coûtent de l'argent dans une entreprise.",
+"p": [
+"Les coûts viennent des ressources, activités et partenaires listés sur le canevas.",
+"Certains coûts sont fixes, comme un loyer; d'autres croissent avec chaque vente, comme les matières.",
+"Ce n'est que de l'éducation générale; vérifie les détails avec un professionnel qualifié."
+],
+"q": "Quel coût surprendrait le plus un entrepreneur débutant ?",
+"c": "Liste les cinq plus gros coûts de ton idée et classe chacun en fixe ou variable."
+},
+"it": {
+"t": "I costi in termini generali",
+"g": "Capisci quali attività e risorse costano denaro in un'impresa.",
+"p": [
+"I costi nascono da risorse, attività e partner elencati nella tela.",
+"Alcuni costi sono fissi, come l'affitto; altri crescono con ogni vendita, come i materiali.",
+"È solo formazione generale; verifica i dettagli con un professionista qualificato."
+],
+"q": "Quale costo sorprenderebbe di più chi avvia un'attività per la prima volta?",
+"c": "Elenca i cinque costi maggiori della tua idea e segna ciascuno come fisso o variabile."
+},
+"pt": {
+"t": "Custos em termos gerais",
+"g": "Percebe que atividades e recursos custam dinheiro num negócio.",
+"p": [
+"Os custos vêm dos recursos, atividades e parceiros que listaste na tela.",
+"Alguns custos são fixos, como a renda; outros crescem com cada venda, como os materiais.",
+"É apenas educação geral; confirma os detalhes com um profissional qualificado."
+],
+"q": "Que custo mais surpreenderia quem abre um negócio pela primeira vez?",
+"c": "Lista os cinco maiores custos da tua ideia e marca cada um como fixo ou variável."
+},
+"pt_BR": {
+"t": "Custos em termos gerais",
+"g": "Entenda quais atividades e recursos custam dinheiro em um negócio.",
+"p": [
+"Os custos vêm dos recursos, atividades e parceiros que você listou na tela.",
+"Alguns custos são fixos, como o aluguel; outros crescem com cada venda, como os materiais.",
+"É apenas educação geral; confirme os detalhes com um profissional qualificado."
+],
+"q": "Que custo mais surpreenderia quem abre um negócio pela primeira vez?",
+"c": "Liste os cinco maiores custos da sua ideia e marque cada um como fixo ou variável."
+}
+}
+}
+]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "gadgets",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to the world of gadgets",
+     "g": "Meet gadgets: handy electronic tools that make daily life easier.",
+     "p": [
+      "A gadget is a small electronic device built to do a useful job well.",
+      "Phones, laptops, watches, earbuds and smart speakers are all gadgets.",
+      "Over 365 days we go from basics to smart homes, one small step daily."
+     ],
+     "q": "Which gadget do you use the most every day, and what do you use it for?",
+     "c": "Count the gadgets within reach right now and name the job of each."
+    },
+    "de": {
+     "t": "Willkommen in der Welt der Gadgets",
+     "g": "Lerne Gadgets kennen: handliche Elektronik, die den Alltag erleichtert.",
+     "p": [
+      "Ein Gadget ist ein kleines elektronisches Gerät, das eine nützliche Aufgabe gut erledigt.",
+      "Handys, Laptops, Uhren, Ohrhörer und smarte Lautsprecher sind alle Gadgets.",
+      "In 365 Tagen gehen wir von den Grundlagen bis zum Smart Home, täglich ein kleiner Schritt."
+     ],
+     "q": "Welches Gadget nutzt du am meisten und wofür?",
+     "c": "Zähle die Gadgets in deiner Reichweite und benenne ihre jeweilige Aufgabe."
+    },
+    "es": {
+     "t": "Bienvenido al mundo de los gadgets",
+     "g": "Conoce los gadgets: herramientas electrónicas prácticas que facilitan el día a día.",
+     "p": [
+      "Un gadget es un pequeño dispositivo electrónico creado para hacer bien una tarea útil.",
+      "Móviles, portátiles, relojes, auriculares y altavoces inteligentes son gadgets.",
+      "En 365 días iremos de lo básico a la casa inteligente, con un pequeño paso diario."
+     ],
+     "q": "¿Qué gadget usas más cada día y para qué lo usas?",
+     "c": "Cuenta los gadgets que tienes a mano ahora y di para qué sirve cada uno."
+    },
+    "fr": {
+     "t": "Bienvenue dans le monde des gadgets",
+     "g": "Découvre les gadgets : de petits outils électroniques qui simplifient le quotidien.",
+     "p": [
+      "Un gadget est un petit appareil électronique conçu pour bien accomplir une tâche utile.",
+      "Téléphones, ordinateurs portables, montres, écouteurs et enceintes connectées en sont.",
+      "En 365 jours, des bases jusqu'à la maison connectée, avec un petit pas par jour."
+     ],
+     "q": "Quel gadget utilises-tu le plus chaque jour, et pour quoi faire ?",
+     "c": "Compte les gadgets à portée de main et note le rôle de chacun."
+    },
+    "it": {
+     "t": "Benvenuto nel mondo dei gadget",
+     "g": "Scopri i gadget: pratici strumenti elettronici che semplificano la vita di ogni giorno.",
+     "p": [
+      "Un gadget è un piccolo dispositivo elettronico pensato per svolgere bene un compito utile.",
+      "Telefoni, portatili, orologi, auricolari e altoparlanti smart sono tutti gadget.",
+      "In 365 giorni andremo dalle basi alla casa smart, con un piccolo passo al giorno."
+     ],
+     "q": "Quale gadget usi di più ogni giorno e per cosa lo usi?",
+     "c": "Conta i gadget che hai a portata di mano e dì a cosa serve ciascuno."
+    },
+    "pt": {
+     "t": "Bem-vindo ao mundo dos gadgets",
+     "g": "Conhece os gadgets: ferramentas eletrónicas práticas que facilitam o dia a dia.",
+     "p": [
+      "Um gadget é um pequeno dispositivo eletrónico feito para cumprir bem uma tarefa útil.",
+      "Telemóveis, portáteis, relógios, auriculares e colunas inteligentes são gadgets.",
+      "Em 365 dias vamos do básico à casa inteligente, com um pequeno passo por dia."
+     ],
+     "q": "Que gadget usas mais todos os dias e para quê?",
+     "c": "Conta os gadgets ao teu alcance agora e diz para que serve cada um."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo ao mundo dos gadgets",
+     "g": "Conheça os gadgets: ferramentas eletrônicas práticas que facilitam o dia a dia.",
+     "p": [
+      "Um gadget é um pequeno dispositivo eletrônico feito para cumprir bem uma tarefa útil.",
+      "Celulares, notebooks, relógios, fones de ouvido e caixas de som inteligentes são gadgets.",
+      "Em 365 dias vamos do básico à casa inteligente, com um pequeno passo por dia."
+     ],
+     "q": "Qual gadget você mais usa todo dia e para quê?",
+     "c": "Conte os gadgets ao seu alcance agora e diga para que serve cada um."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your gadget inventory",
+     "g": "Take stock of the devices you own and how often you really use each one.",
+     "p": [
+      "List every device at home: phones, tablets, chargers, old gadgets in drawers.",
+      "Mark each one as daily, weekly or rarely used; honesty helps you decide what to keep.",
+      "Unused devices can be sold, gifted or recycled instead of gathering dust."
+     ],
+     "q": "Which device in your list do you use least, and why?",
+     "c": "Write a quick list of your devices and tag each daily, weekly or rarely."
+    },
+    "de": {
+     "t": "Dein Gadget-Inventar",
+     "g": "Verschaffe dir einen Überblick über deine Geräte und wie oft du sie wirklich nutzt.",
+     "p": [
+      "Liste alle Geräte zu Hause auf: Handys, Tablets, Ladegeräte, alte Gadgets in Schubladen.",
+      "Markiere jedes als täglich, wöchentlich oder selten genutzt; Ehrlichkeit hilft bei der Auswahl.",
+      "Ungenutzte Geräte kannst du verkaufen, verschenken oder recyceln statt sie einzustauben."
+     ],
+     "q": "Welches Gerät auf deiner Liste nutzt du am wenigsten, und warum?",
+     "c": "Schreib eine kurze Geräteliste und markiere jedes mit täglich, wöchentlich oder selten."
+    },
+    "es": {
+     "t": "Tu inventario de gadgets",
+     "g": "Haz un recuento de tus dispositivos y de lo mucho que usas cada uno.",
+     "p": [
+      "Anota todos los dispositivos de casa: móviles, tabletas, cargadores y gadgets viejos en cajones.",
+      "Márcalos como uso diario, semanal o raro; ser sincero ayuda a decidir qué conservar.",
+      "Lo que no usas se puede vender, regalar o reciclar en lugar de acumular polvo."
+     ],
+     "q": "¿Qué dispositivo de tu lista usas menos y por qué?",
+     "c": "Escribe una lista rápida de tus dispositivos y marca cada uno: diario, semanal o raro."
+    },
+    "fr": {
+     "t": "Ton inventaire de gadgets",
+     "g": "Fais le point sur tes appareils et sur la fréquence réelle d'utilisation de chacun.",
+     "p": [
+      "Liste tous les appareils de la maison : téléphones, tablettes, chargeurs, vieux gadgets au fond des tiroirs.",
+      "Note chacun : quotidien, hebdomadaire ou rare ; être honnête aide à choisir quoi garder.",
+      "Les appareils inutilisés peuvent être vendus, donnés ou recyclés plutôt que de prendre la poussière."
+     ],
+     "q": "Quel appareil de ta liste utilises-tu le moins, et pourquoi ?",
+     "c": "Écris une liste rapide de tes appareils et marque chacun : quotidien, hebdo ou rare."
+    },
+    "it": {
+     "t": "Il tuo inventario di gadget",
+     "g": "Fai il punto sui dispositivi che possiedi e su quanto usi davvero ciascuno.",
+     "p": [
+      "Elenca ogni dispositivo di casa: telefoni, tablet, caricabatterie, vecchi gadget nei cassetti.",
+      "Segna ognuno come uso quotidiano, settimanale o raro; essere onesti aiuta a scegliere cosa tenere.",
+      "I dispositivi inutilizzati si possono vendere, regalare o riciclare invece di fare polvere."
+     ],
+     "q": "Quale dispositivo della lista usi meno, e perché?",
+     "c": "Scrivi una lista veloce dei tuoi dispositivi e segna ognuno: quotidiano, settimanale o raro."
+    },
+    "pt": {
+     "t": "O teu inventário de gadgets",
+     "g": "Faz o balanço dos dispositivos que tens e da frequência com que usas cada um.",
+     "p": [
+      "Lista todos os dispositivos lá de casa: telemóveis, tablets, carregadores e gadgets velhos nas gavetas.",
+      "Marca cada um como uso diário, semanal ou raro; ser sincero ajuda a decidir o que manter.",
+      "Os dispositivos parados podem ser vendidos, oferecidos ou reciclados em vez de juntar pó."
+     ],
+     "q": "Que dispositivo da tua lista usas menos, e porquê?",
+     "c": "Escreve uma lista rápida dos teus dispositivos e marca cada um: diário, semanal ou raro."
+    },
+    "pt_BR": {
+     "t": "Seu inventário de gadgets",
+     "g": "Faça um balanço dos dispositivos que você tem e de quanto usa cada um.",
+     "p": [
+      "Liste todos os dispositivos de casa: celulares, tablets, carregadores e gadgets velhos nas gavetas.",
+      "Marque cada um como uso diário, semanal ou raro; ser sincero ajuda a decidir o que manter.",
+      "Dispositivos parados podem ser vendidos, doados ou reciclados em vez de juntar poeira."
+     ],
+     "q": "Qual dispositivo da sua lista você usa menos, e por quê?",
+     "c": "Escreva uma lista rápida dos seus dispositivos e marque cada um: diário, semanal ou raro."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "From telephone to smartphone",
+     "g": "A quick journey from Bell's 1876 telephone to the pocket computers we carry today.",
+     "p": [
+      "In 1876 Alexander Graham Bell patented the telephone, carrying voice over wires.",
+      "Mobile networks later cut the wire, and phones shrank from bulky bricks to pocket size.",
+      "Today's smartphone adds a camera, internet and apps to that first idea of talking from afar."
+     ],
+     "q": "What do you think the first telephone users would say about your phone?",
+     "c": "Look at your phone and name three jobs it does that old telephones never could."
+    },
+    "de": {
+     "t": "Vom Telefon zum Smartphone",
+     "g": "Eine kurze Reise von Bells Telefon 1876 bis zu den Taschencomputern von heute.",
+     "p": [
+      "1876 ließ sich Alexander Graham Bell das Telefon patentieren: Sprache über Drähte.",
+      "Mobilfunknetze kappten später das Kabel, und Telefone schrumpften vom Klotz zum Taschenformat.",
+      "Das Smartphone fügt Kamera, Internet und Apps zur ersten Idee hinzu, aus der Ferne zu sprechen."
+     ],
+     "q": "Was würden die ersten Telefonnutzer wohl zu deinem Handy sagen?",
+     "c": "Sieh dein Handy an und nenne drei Aufgaben, die alte Telefone nie konnten."
+    },
+    "es": {
+     "t": "Del teléfono al smartphone",
+     "g": "Un breve viaje desde el teléfono de Bell en 1876 hasta los ordenadores de bolsillo actuales.",
+     "p": [
+      "En 1876 Alexander Graham Bell patentó el teléfono, que llevaba la voz por cables.",
+      "Las redes móviles cortaron el cable y los teléfonos pasaron de ser ladrillos a caber en el bolsillo.",
+      "El smartphone suma cámara, internet y apps a aquella idea de hablar a distancia."
+     ],
+     "q": "¿Qué crees que diría un usuario de los primeros teléfonos de tu móvil?",
+     "c": "Mira tu móvil y nombra tres tareas que los teléfonos antiguos nunca hacían."
+    },
+    "fr": {
+     "t": "Du téléphone au smartphone",
+     "g": "Un voyage rapide du téléphone de Bell en 1876 aux ordinateurs de poche d'aujourd'hui.",
+     "p": [
+      "En 1876, Alexander Graham Bell a breveté le téléphone, qui transmet la voix par fil.",
+      "Les réseaux mobiles ont coupé le fil, et les téléphones sont passés de briques à la taille d'une poche.",
+      "Le smartphone ajoute photo, internet et applis à cette première idée de parler à distance."
+     ],
+     "q": "Que dirait selon toi un utilisateur des premiers téléphones de ton mobile ?",
+     "c": "Regarde ton téléphone et cite trois choses que les anciens téléphones ne savaient pas faire."
+    },
+    "it": {
+     "t": "Dal telefono allo smartphone",
+     "g": "Un breve viaggio dal telefono di Bell del 1876 ai computer da tasca di oggi.",
+     "p": [
+      "Nel 1876 Alexander Graham Bell brevettò il telefono, che portava la voce attraverso fili.",
+      "Le reti mobili tagliarono il filo e i telefoni passarono da mattoni a misura di tasca.",
+      "Lo smartphone aggiunge fotocamera, internet e app all'idea originale di parlare a distanza."
+     ],
+     "q": "Cosa direbbe secondo te un utente dei primi telefoni del tuo cellulare?",
+     "c": "Guarda il tuo telefono e nomina tre cose che i vecchi telefoni non facevano."
+    },
+    "pt": {
+     "t": "Do telefone ao smartphone",
+     "g": "Uma viagem rápida do telefone de Bell, em 1876, aos computadores de bolso de hoje.",
+     "p": [
+      "Em 1876, Alexander Graham Bell patenteou o telefone, que levava a voz por fios.",
+      "As redes móveis cortaram o fio e os telefones passaram de tijolos a tamanho de bolso.",
+      "O smartphone junta câmara, internet e apps àquela ideia de falar à distância."
+     ],
+     "q": "O que achas que um utilizador dos primeiros telefones diria do teu telemóvel?",
+     "c": "Olha para o teu telemóvel e nomeia três tarefas que os telefones antigos não faziam."
+    },
+    "pt_BR": {
+     "t": "Do telefone ao smartphone",
+     "g": "Uma viagem rápida do telefone de Bell, em 1876, aos computadores de bolso de hoje.",
+     "p": [
+      "Em 1876, Alexander Graham Bell patenteou o telefone, que levava a voz por fios.",
+      "As redes móveis cortaram o fio e os telefones passaram de tijolos a tamanho de bolso.",
+      "O smartphone junta câmera, internet e apps àquela ideia de falar à distância."
+     ],
+     "q": "O que você acha que um usuário dos primeiros telefones diria do seu celular?",
+     "c": "Olhe para o seu celular e cite três tarefas que os telefones antigos não faziam."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The transistor: a tiny revolution",
+     "g": "Invented at Bell Labs in 1947, the transistor is the switch inside every modern gadget.",
+     "p": [
+      "A transistor is a tiny switch that turns electric current on or off, or amplifies it.",
+      "It was invented in 1947 at Bell Labs and replaced bulky, hot glass vacuum tubes.",
+      "A modern chip packs billions of transistors, which is why gadgets keep shrinking."
+     ],
+     "q": "Why do you think smaller switches made devices cheaper and lighter?",
+     "c": "Find a very old radio or tube picture online and compare its size to your phone."
+    },
+    "de": {
+     "t": "Der Transistor: eine kleine Revolution",
+     "g": "1947 in den Bell Labs erfunden, ist der Transistor der Schalter in jedem modernen Gadget.",
+     "p": [
+      "Ein Transistor ist ein winziger Schalter, der Strom ein- oder ausschaltet oder verstärkt.",
+      "Er wurde 1947 in den Bell Labs erfunden und ersetzte sperrige, heiße Elektronenröhren.",
+      "Ein moderner Chip enthält Milliarden Transistoren, deshalb werden Geräte immer kleiner."
+     ],
+     "q": "Warum machten kleinere Schalter Geräte wohl billiger und leichter?",
+     "c": "Such online ein Bild eines alten Röhrenradios und vergleiche die Größe mit deinem Handy."
+    },
+    "es": {
+     "t": "El transistor: una pequeña revolución",
+     "g": "Inventado en Bell Labs en 1947, el transistor es el interruptor de todo gadget moderno.",
+     "p": [
+      "Un transistor es un diminuto interruptor que activa, corta o amplifica la corriente eléctrica.",
+      "Se inventó en 1947 en Bell Labs y sustituyó a las voluminosas y calientes válvulas de vacío.",
+      "Un chip actual reúne miles de millones de transistores, por eso los aparatos se reducen."
+     ],
+     "q": "¿Por qué crees que interruptores más pequeños abarataron y aligeraron los aparatos?",
+     "c": "Busca la foto de una radio antigua de válvulas y compara su tamaño con tu móvil."
+    },
+    "fr": {
+     "t": "Le transistor : une petite révolution",
+     "g": "Inventé aux Bell Labs en 1947, le transistor est l'interrupteur de tout gadget moderne.",
+     "p": [
+      "Un transistor est un minuscule interrupteur qui coupe, laisse passer ou amplifie le courant.",
+      "Inventé en 1947 aux Bell Labs, il a remplacé les encombrantes lampes à vide, qui chauffaient.",
+      "Une puce actuelle contient des milliards de transistors, d'où des appareils toujours plus petits."
+     ],
+     "q": "Pourquoi des interrupteurs plus petits ont-ils rendu les appareils moins chers et plus légers ?",
+     "c": "Cherche en ligne la photo d'une vieille radio à lampes et compare sa taille à ton téléphone."
+    },
+    "it": {
+     "t": "Il transistor: una piccola rivoluzione",
+     "g": "Inventato ai Bell Labs nel 1947, il transistor è l'interruttore di ogni gadget moderno.",
+     "p": [
+      "Un transistor è un minuscolo interruttore che accende, spegne o amplifica la corrente.",
+      "Fu inventato nel 1947 ai Bell Labs e sostituì le ingombranti e calde valvole termoioniche.",
+      "Un chip moderno contiene miliardi di transistor, ecco perché i gadget si rimpiccioliscono."
+     ],
+     "q": "Perché secondo te interruttori più piccoli hanno reso i dispositivi più leggeri ed economici?",
+     "c": "Cerca online la foto di una vecchia radio a valvole e confronta la sua misura col telefono."
+    },
+    "pt": {
+     "t": "O transístor: uma pequena revolução",
+     "g": "Inventado nos Bell Labs em 1947, o transístor é o interruptor de todo o gadget moderno.",
+     "p": [
+      "Um transístor é um minúsculo interruptor que liga, desliga ou amplifica a corrente elétrica.",
+      "Foi inventado em 1947 nos Bell Labs e substituiu as volumosas e quentes válvulas de vácuo.",
+      "Um chip atual reúne milhares de milhões de transístores, por isso os aparelhos encolhem."
+     ],
+     "q": "Porque achas que interruptores mais pequenos tornaram os aparelhos mais baratos e leves?",
+     "c": "Procura a foto de um rádio antigo de válvulas e compara o tamanho com o teu telemóvel."
+    },
+    "pt_BR": {
+     "t": "O transistor: uma pequena revolução",
+     "g": "Inventado nos Bell Labs em 1947, o transistor é o interruptor de todo gadget moderno.",
+     "p": [
+      "Um transistor é um minúsculo interruptor que liga, desliga ou amplifica a corrente elétrica.",
+      "Foi inventado em 1947 nos Bell Labs e substituiu as volumosas e quentes válvulas a vácuo.",
+      "Um chip atual reúne bilhões de transistores, por isso os aparelhos encolhem cada vez mais."
+     ],
+     "q": "Por que você acha que interruptores menores deixaram os aparelhos mais baratos e leves?",
+     "c": "Procure a foto de um rádio antigo de válvulas e compare o tamanho com o seu celular."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The first mobile phone call",
+     "g": "In 1973 Martin Cooper of Motorola made the first handheld mobile phone call.",
+     "p": [
+      "On 3 April 1973 Martin Cooper called a rival engineer from a New York street.",
+      "That prototype was heavy, about a kilogram, and had very short talk time.",
+      "Cell networks split areas into cells, so many callers can share radio waves."
+     ],
+     "q": "How would your day change if phones were still that heavy?",
+     "c": "Hold something weighing about one kilogram and imagine using it as your phone."
+    },
+    "de": {
+     "t": "Das erste Mobiltelefonat",
+     "g": "1973 führte Martin Cooper von Motorola das erste Gespräch mit einem Handtelefon.",
+     "p": [
+      "Am 3. April 1973 rief Martin Cooper von einer New Yorker Straße einen Konkurrenzingenieur an.",
+      "Der Prototyp war schwer, etwa ein Kilogramm, und die Gesprächszeit sehr kurz.",
+      "Zellnetze teilen Gebiete in Zellen, damit viele Anrufer sich die Funkwellen teilen."
+     ],
+     "q": "Wie würde sich dein Tag ändern, wenn Handys noch so schwer wären?",
+     "c": "Halte etwas von etwa einem Kilo in der Hand und stell dir vor, es wäre dein Handy."
+    },
+    "es": {
+     "t": "La primera llamada móvil",
+     "g": "En 1973 Martin Cooper, de Motorola, hizo la primera llamada con un teléfono de mano.",
+     "p": [
+      "El 3 de abril de 1973 Martin Cooper llamó a un ingeniero rival desde una calle de Nueva York.",
+      "Aquel prototipo pesaba cerca de un kilo y tenía muy poca autonomía de conversación.",
+      "Las redes celulares dividen el territorio en celdas para que muchos compartan las ondas."
+     ],
+     "q": "¿Cómo cambiaría tu día si los móviles aún pesaran tanto?",
+     "c": "Sostén algo de un kilo y imagina que es tu móvil."
+    },
+    "fr": {
+     "t": "Le premier appel mobile",
+     "g": "En 1973, Martin Cooper, de Motorola, passe le premier appel avec un téléphone portable.",
+     "p": [
+      "Le 3 avril 1973, Martin Cooper appelle un ingénieur rival depuis une rue de New York.",
+      "Ce prototype pesait environ un kilo et offrait très peu d'autonomie en communication.",
+      "Les réseaux cellulaires découpent le territoire en cellules pour partager les ondes."
+     ],
+     "q": "Comment ta journée changerait-elle si les téléphones étaient encore aussi lourds ?",
+     "c": "Tiens un objet d'environ un kilo et imagine que c'est ton téléphone."
+    },
+    "it": {
+     "t": "La prima chiamata da cellulare",
+     "g": "Nel 1973 Martin Cooper di Motorola fece la prima telefonata con un telefono portatile.",
+     "p": [
+      "Il 3 aprile 1973 Martin Cooper chiamò un ingegnere rivale da una strada di New York.",
+      "Quel prototipo pesava circa un chilo e aveva una durata di conversazione brevissima.",
+      "Le reti cellulari dividono il territorio in celle, così molti condividono le onde radio."
+     ],
+     "q": "Come cambierebbe la tua giornata se i telefoni pesassero ancora così tanto?",
+     "c": "Tieni in mano qualcosa di circa un chilo e immagina che sia il tuo telefono."
+    },
+    "pt": {
+     "t": "A primeira chamada móvel",
+     "g": "Em 1973, Martin Cooper, da Motorola, fez a primeira chamada com um telefone portátil.",
+     "p": [
+      "A 3 de abril de 1973, Martin Cooper ligou a um engenheiro rival numa rua de Nova Iorque.",
+      "Esse protótipo pesava cerca de um quilo e tinha uma autonomia de chamada muito curta.",
+      "As redes celulares dividem o território em células para muita gente partilhar as ondas."
+     ],
+     "q": "Como mudaria o teu dia se os telemóveis ainda pesassem tanto?",
+     "c": "Segura algo de cerca de um quilo e imagina que é o teu telemóvel."
+    },
+    "pt_BR": {
+     "t": "A primeira chamada de celular",
+     "g": "Em 1973, Martin Cooper, da Motorola, fez a primeira chamada com um telefone portátil.",
+     "p": [
+      "Em 3 de abril de 1973, Martin Cooper ligou para um engenheiro rival numa rua de Nova York.",
+      "Esse protótipo pesava cerca de um quilo e tinha pouquíssimo tempo de conversa.",
+      "As redes celulares dividem o território em células para muita gente dividir as ondas."
+     ],
+     "q": "Como seu dia mudaria se os celulares ainda pesassem tanto?",
+     "c": "Segure algo de cerca de um quilo e imagine que é o seu celular."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The personal computer arrives",
+     "g": "How home computers in the late 1970s and early 1980s brought computing to ordinary desks.",
+     "p": [
+      "Before the late 1970s, computers filled rooms and belonged to companies or universities.",
+      "Affordable home computers with keyboards and TV screens let ordinary people try programming.",
+      "Their success led to the desktop PC and laptop that fill offices and homes today."
+     ],
+     "q": "Did you ever use an early computer, or hear family stories about one?",
+     "c": "Ask an older relative or friend about the first computer they ever touched."
+    },
+    "de": {
+     "t": "Der Personal Computer kommt",
+     "g": "Wie Heimcomputer Ende der 1970er und Anfang der 80er Computer auf normale Schreibtische brachten.",
+     "p": [
+      "Vor den späten 1970ern füllten Computer ganze Räume und gehörten Firmen oder Universitäten.",
+      "Günstige Heimcomputer mit Tastatur und Fernseher ließen normale Leute programmieren.",
+      "Ihr Erfolg führte zu Desktop-PC und Laptop, die heute Büros und Wohnungen füllen."
+     ],
+     "q": "Hast du je einen frühen Computer benutzt oder Familiengeschichten darüber gehört?",
+     "c": "Frag jemanden Älteres nach dem ersten Computer, den er je angefasst hat."
+    },
+    "es": {
+     "t": "Llega el ordenador personal",
+     "g": "Cómo los ordenadores domésticos de finales de los 70 y principios de los 80 llegaron a cualquier mesa.",
+     "p": [
+      "Antes de finales de los 70, los ordenadores llenaban salas y eran de empresas o universidades.",
+      "Los ordenadores caseros asequibles, con teclado y televisor, permitieron programar a la gente.",
+      "Su éxito dio paso al PC de sobremesa y al portátil que hoy llenan oficinas y hogares."
+     ],
+     "q": "¿Usaste alguna vez un ordenador antiguo o has oído historias familiares sobre uno?",
+     "c": "Pregunta a algún familiar mayor por el primer ordenador que tocó."
+    },
+    "fr": {
+     "t": "L'arrivée de l'ordinateur personnel",
+     "g": "Comment les ordinateurs familiaux de la fin des années 70 ont envahi les bureaux ordinaires.",
+     "p": [
+      "Avant la fin des années 70, les ordinateurs remplissaient des salles et appartenaient aux entreprises.",
+      "Des ordinateurs abordables, avec clavier et écran de télé, ont permis à chacun de programmer.",
+      "Leur succès a mené au PC de bureau et au portable qui équipent aujourd'hui bureaux et foyers."
+     ],
+     "q": "As-tu déjà utilisé un ordinateur ancien ou entendu des histoires de famille à ce sujet ?",
+     "c": "Demande à un proche plus âgé quel a été le premier ordinateur qu'il a touché."
+    },
+    "it": {
+     "t": "Arriva il personal computer",
+     "g": "Come i computer domestici di fine anni Settanta e inizio Ottanta arrivarono sulle scrivanie di tutti.",
+     "p": [
+      "Prima della fine degli anni Settanta i computer riempivano stanze ed erano di aziende o università.",
+      "Computer domestici accessibili, con tastiera e schermo TV, fecero provare la programmazione a tutti.",
+      "Il loro successo portò al PC da scrivania e al portatile che oggi riempiono uffici e case."
+     ],
+     "q": "Hai mai usato un computer d'epoca o sentito storie di famiglia su uno?",
+     "c": "Chiedi a un parente o amico più grande qual è stato il primo computer che ha toccato."
+    },
+    "pt": {
+     "t": "Chega o computador pessoal",
+     "g": "Como os computadores domésticos do fim dos anos 70 e início dos 80 chegaram a qualquer secretária.",
+     "p": [
+      "Antes do fim dos anos 70, os computadores enchiam salas e pertenciam a empresas ou universidades.",
+      "Computadores caseiros acessíveis, com teclado e ecrã de televisão, deixaram qualquer um programar.",
+      "O seu sucesso levou ao PC de secretária e ao portátil que hoje enchem escritórios e casas."
+     ],
+     "q": "Já usaste um computador antigo ou ouviste histórias de família sobre algum?",
+     "c": "Pergunta a alguém mais velho qual foi o primeiro computador em que tocou."
+    },
+    "pt_BR": {
+     "t": "Chega o computador pessoal",
+     "g": "Como os computadores domésticos do fim dos anos 70 e início dos 80 chegaram a qualquer mesa.",
+     "p": [
+      "Antes do fim dos anos 70, os computadores enchiam salas e pertenciam a empresas ou universidades.",
+      "Computadores caseiros acessíveis, com teclado e tela de TV, deixaram qualquer um programar.",
+      "O sucesso deles levou ao PC de mesa e ao notebook que hoje enchem escritórios e casas."
+     ],
+     "q": "Você já usou um computador antigo ou ouviu histórias de família sobre algum?",
+     "c": "Pergunte a alguém mais velho qual foi o primeiro computador em que tocou."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Music on the move",
+     "g": "From the 1979 Walkman to MP3 players and streaming on phones.",
+     "p": [
+      "Sony's Walkman in 1979 made private music portable with cassette tapes and headphones.",
+      "Later, MP3 files shrank songs so thousands could fit in one pocket player.",
+      "Now phones stream music over the internet, so your library is almost unlimited."
+     ],
+     "q": "What is the first song you remember listening to on a portable device?",
+     "c": "Make a short playlist of three songs for your next walk and enjoy it."
+    },
+    "de": {
+     "t": "Musik für unterwegs",
+     "g": "Vom Walkman 1979 über MP3-Player bis zum Streaming auf dem Handy.",
+     "p": [
+      "Sonys Walkman machte 1979 private Musik mit Kassetten und Kopfhörern tragbar.",
+      "Später schrumpften MP3-Dateien die Songs, sodass Tausende in einen Taschenplayer passten.",
+      "Heute streamen Handys Musik über das Internet, die Bibliothek ist fast unbegrenzt."
+     ],
+     "q": "Welches ist der erste Song, an den du dich auf einem tragbaren Gerät erinnerst?",
+     "c": "Stell eine kleine Playlist mit drei Songs für deinen nächsten Spaziergang zusammen."
+    },
+    "es": {
+     "t": "Música en movimiento",
+     "g": "Del Walkman de 1979 a los reproductores MP3 y al streaming en el móvil.",
+     "p": [
+      "El Walkman de Sony en 1979 hizo portátil la música privada con casetes y auriculares.",
+      "Más tarde, los archivos MP3 redujeron las canciones y miles cabían en un reproductor de bolsillo.",
+      "Hoy los móviles reproducen música por internet y la biblioteca es casi ilimitada."
+     ],
+     "q": "¿Cuál es la primera canción que recuerdas haber oído en un aparato portátil?",
+     "c": "Prepara una lista corta de tres canciones para tu próximo paseo y disfrútala."
+    },
+    "fr": {
+     "t": "La musique en mouvement",
+     "g": "Du Walkman de 1979 aux lecteurs MP3, puis au streaming sur téléphone.",
+     "p": [
+      "Le Walkman de Sony, en 1979, a rendu la musique privée portable avec cassettes et casque.",
+      "Plus tard, les fichiers MP3 ont réduit les morceaux : des milliers tenaient dans une poche.",
+      "Aujourd'hui, les téléphones diffusent la musique par internet : la bibliothèque est presque illimitée."
+     ],
+     "q": "Quel est le premier morceau dont tu te souviens sur un appareil portable ?",
+     "c": "Crée une mini-playlist de trois titres pour ta prochaine balade et savoure-la."
+    },
+    "it": {
+     "t": "Musica in movimento",
+     "g": "Dal Walkman del 1979 ai lettori MP3 fino allo streaming sul telefono.",
+     "p": [
+      "Il Walkman di Sony nel 1979 rese portatile la musica privata con cassette e cuffie.",
+      "Poi i file MP3 rimpicciolirono le canzoni e migliaia entravano in un lettore da tasca.",
+      "Oggi i telefoni riproducono musica via internet e la libreria è quasi illimitata."
+     ],
+     "q": "Qual è la prima canzone che ricordi di aver ascoltato su un dispositivo portatile?",
+     "c": "Crea una breve playlist di tre brani per la tua prossima passeggiata e goditela."
+    },
+    "pt": {
+     "t": "Música em movimento",
+     "g": "Do Walkman de 1979 aos leitores MP3 e ao streaming no telemóvel.",
+     "p": [
+      "O Walkman da Sony, em 1979, tornou portátil a música privada com cassetes e auscultadores.",
+      "Mais tarde, os ficheiros MP3 encolheram as músicas e milhares cabiam num leitor de bolso.",
+      "Hoje os telemóveis transmitem música pela internet e a biblioteca é quase ilimitada."
+     ],
+     "q": "Qual é a primeira música de que te lembras de ouvir num aparelho portátil?",
+     "c": "Faz uma lista curta de três músicas para o teu próximo passeio e aproveita."
+    },
+    "pt_BR": {
+     "t": "Música em movimento",
+     "g": "Do Walkman de 1979 aos players MP3 e ao streaming no celular.",
+     "p": [
+      "O Walkman da Sony, em 1979, tornou portátil a música privada com fitas cassete e fones.",
+      "Depois, os arquivos MP3 encolheram as músicas e milhares cabiam num player de bolso.",
+      "Hoje os celulares tocam música pela internet e a biblioteca é quase ilimitada."
+     ],
+     "q": "Qual é a primeira música de que você lembra de ouvir num aparelho portátil?",
+     "c": "Monte uma playlist curta de três músicas para sua próxima caminhada e aproveite."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The smartphone era begins",
+     "g": "How touchscreen phones in the late 2000s merged phone, camera, music and internet.",
+     "p": [
+      "Before smartphones, you carried a phone, a camera and a music player separately.",
+      "In the late 2000s touchscreens and app stores merged them into one pocket device.",
+      "Big touch screens replaced most physical buttons and made phones easier to learn."
+     ],
+     "q": "Which of your old separate devices has your phone replaced?",
+     "c": "Count the single-purpose devices your phone replaced, like alarm clock or torch."
+    },
+    "de": {
+     "t": "Das Smartphone-Zeitalter beginnt",
+     "g": "Wie Touchscreen-Handys Ende der 2000er Telefon, Kamera, Musik und Internet vereinten.",
+     "p": [
+      "Vor Smartphones trug man Telefon, Kamera und Musikplayer getrennt mit sich.",
+      "Ende der 2000er verschmolzen Touchscreens und App-Stores sie zu einem Taschengerät.",
+      "Große Touchscreens ersetzten die meisten Tasten und machten Handys leichter erlernbar."
+     ],
+     "q": "Welches deiner früheren Einzelgeräte hat dein Handy ersetzt?",
+     "c": "Zähle die Einzweckgeräte, die dein Handy ersetzt hat, etwa Wecker oder Taschenlampe."
+    },
+    "es": {
+     "t": "Empieza la era del smartphone",
+     "g": "Cómo los móviles táctiles de finales de los 2000 unieron teléfono, cámara, música e internet.",
+     "p": [
+      "Antes de los smartphones llevabas por separado teléfono, cámara y reproductor de música.",
+      "A finales de los 2000, las pantallas táctiles y las tiendas de apps lo unieron todo.",
+      "Las grandes pantallas táctiles sustituyeron casi todos los botones y facilitaron el aprendizaje."
+     ],
+     "q": "¿Qué aparatos separados que tenías ha reemplazado tu móvil?",
+     "c": "Cuenta los aparatos de una sola función que tu móvil sustituyó, como el despertador o la linterna."
+    },
+    "fr": {
+     "t": "L'ère du smartphone commence",
+     "g": "Comment les téléphones tactiles de la fin des années 2000 ont fusionné téléphone, photo, musique et internet.",
+     "p": [
+      "Avant les smartphones, on portait séparément téléphone, appareil photo et lecteur de musique.",
+      "À la fin des années 2000, écrans tactiles et boutiques d'applis ont tout réuni dans un appareil.",
+      "De grands écrans tactiles ont remplacé la plupart des boutons et simplifié l'usage."
+     ],
+     "q": "Quels appareils séparés ton téléphone a-t-il remplacés ?",
+     "c": "Compte les appareils à usage unique remplacés par ton téléphone : réveil, lampe..."
+    },
+    "it": {
+     "t": "Inizia l'era dello smartphone",
+     "g": "Come i telefoni touch di fine anni 2000 unirono telefono, fotocamera, musica e internet.",
+     "p": [
+      "Prima degli smartphone portavi separati telefono, fotocamera e lettore musicale.",
+      "A fine anni 2000 touchscreen e negozi di app li fusero in un unico dispositivo da tasca.",
+      "Grandi schermi touch sostituirono la maggior parte dei pulsanti e resero i telefoni più facili."
+     ],
+     "q": "Quali tuoi vecchi dispositivi separati ha sostituito il telefono?",
+     "c": "Conta i dispositivi a funzione singola sostituiti dal telefono, come sveglia o torcia."
+    },
+    "pt": {
+     "t": "Começa a era do smartphone",
+     "g": "Como os telemóveis táteis do fim dos anos 2000 juntaram telefone, câmara, música e internet.",
+     "p": [
+      "Antes dos smartphones, levavas telefone, câmara e leitor de música em separado.",
+      "No fim dos anos 2000, ecrãs táteis e lojas de apps juntaram tudo num aparelho de bolso.",
+      "Grandes ecrãs táteis substituíram a maioria dos botões e facilitaram a aprendizagem."
+     ],
+     "q": "Que aparelhos separados que tinhas o teu telemóvel substituiu?",
+     "c": "Conta os aparelhos de função única que o telemóvel substituiu, como despertador ou lanterna."
+    },
+    "pt_BR": {
+     "t": "Começa a era do smartphone",
+     "g": "Como os celulares touch do fim dos anos 2000 juntaram telefone, câmera, música e internet.",
+     "p": [
+      "Antes dos smartphones, você levava telefone, câmera e player de música separados.",
+      "No fim dos anos 2000, telas sensíveis ao toque e lojas de apps juntaram tudo num aparelho de bolso.",
+      "Grandes telas touch substituíram a maioria dos botões e facilitaram o aprendizado."
+     ],
+     "q": "Quais aparelhos separados que você tinha o seu celular substituiu?",
+     "c": "Conte os aparelhos de função única que o celular substituiu, como despertador ou lanterna."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What makes a phone smart",
+     "g": "An operating system, apps, internet access and sensors turn a phone into a computer.",
+     "p": [
+      "A smart phone runs an operating system, software that manages everything inside.",
+      "Apps add abilities, and internet access keeps them updated and connected.",
+      "Sensors let it react to movement, light and location, like a tiny aware computer."
+     ],
+     "q": "Which smart feature of your phone would you miss most if it vanished?",
+     "c": "Open settings and spot one sensor-based feature, like auto-rotate or auto-brightness."
+    },
+    "de": {
+     "t": "Was ein Handy schlau macht",
+     "g": "Betriebssystem, Apps, Internet und Sensoren machen aus einem Handy einen Computer.",
+     "p": [
+      "Ein Smartphone führt ein Betriebssystem aus, die Software, die alles im Inneren steuert.",
+      "Apps erweitern die Fähigkeiten, und das Internet hält sie aktuell und vernetzt.",
+      "Sensoren lassen es auf Bewegung, Licht und Standort reagieren, wie ein winziger Computer."
+     ],
+     "q": "Welche smarte Funktion deines Handys würdest du am meisten vermissen?",
+     "c": "Öffne die Einstellungen und finde eine Sensorfunktion, etwa Auto-Drehen oder Auto-Helligkeit."
+    },
+    "es": {
+     "t": "Qué hace inteligente a un móvil",
+     "g": "Un sistema operativo, apps, internet y sensores convierten un móvil en un ordenador.",
+     "p": [
+      "Un smartphone ejecuta un sistema operativo, el software que gestiona todo lo interno.",
+      "Las apps añaden capacidades e internet las mantiene actualizadas y conectadas.",
+      "Los sensores le permiten reaccionar al movimiento, la luz y la ubicación."
+     ],
+     "q": "¿Qué función inteligente de tu móvil echarías más de menos?",
+     "c": "Abre ajustes y localiza una función con sensor, como giro automático o brillo automático."
+    },
+    "fr": {
+     "t": "Ce qui rend un téléphone intelligent",
+     "g": "Un système d'exploitation, des applis, internet et des capteurs transforment un téléphone en ordinateur.",
+     "p": [
+      "Un smartphone exécute un système d'exploitation, le logiciel qui gère tout à l'intérieur.",
+      "Les applis ajoutent des capacités et internet les tient à jour et connectées.",
+      "Les capteurs lui permettent de réagir au mouvement, à la lumière et à la position."
+     ],
+     "q": "Quelle fonction intelligente de ton téléphone te manquerait le plus ?",
+     "c": "Ouvre les réglages et repère une fonction à capteur : rotation ou luminosité automatique."
+    },
+    "it": {
+     "t": "Cosa rende intelligente un telefono",
+     "g": "Sistema operativo, app, internet e sensori trasformano un telefono in un computer.",
+     "p": [
+      "Uno smartphone esegue un sistema operativo, il software che gestisce tutto all'interno.",
+      "Le app aggiungono funzioni e internet le mantiene aggiornate e connesse.",
+      "I sensori gli permettono di reagire a movimento, luce e posizione."
+     ],
+     "q": "Quale funzione intelligente del tuo telefono ti mancherebbe di più?",
+     "c": "Apri le impostazioni e trova una funzione a sensore, come rotazione o luminosità automatica."
+    },
+    "pt": {
+     "t": "O que torna um telemóvel inteligente",
+     "g": "Sistema operativo, apps, internet e sensores fazem de um telemóvel um computador.",
+     "p": [
+      "Um smartphone corre um sistema operativo, o software que gere tudo lá dentro.",
+      "As apps acrescentam capacidades e a internet mantém-nas atualizadas e ligadas.",
+      "Os sensores deixam-no reagir ao movimento, à luz e à localização."
+     ],
+     "q": "Que função inteligente do teu telemóvel mais te faria falta?",
+     "c": "Abre as definições e encontra uma função com sensor, como rotação ou brilho automáticos."
+    },
+    "pt_BR": {
+     "t": "O que torna um celular inteligente",
+     "g": "Sistema operacional, apps, internet e sensores fazem de um celular um computador.",
+     "p": [
+      "Um smartphone roda um sistema operacional, o software que gerencia tudo lá dentro.",
+      "Os apps acrescentam recursos e a internet os mantém atualizados e conectados.",
+      "Os sensores deixam o aparelho reagir ao movimento, à luz e à localização."
+     ],
+     "q": "Qual recurso inteligente do seu celular mais faria falta?",
+     "c": "Abra as configurações e ache um recurso com sensor, como rotação ou brilho automáticos."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Inside a smartphone",
+     "g": "A tour of the screen, battery, processor, memory, cameras, antennas and sensors.",
+     "p": [
+      "The screen and battery take most of the space; the battery is often the biggest part.",
+      "A small main board holds the processor, memory and storage chips.",
+      "Antennas, cameras and sensors fit around the edges in a tight puzzle."
+     ],
+     "q": "Which part of your phone are you most curious to learn about?",
+     "c": "Look at a phone teardown picture online and spot the battery and main board."
+    },
+    "de": {
+     "t": "Im Inneren eines Smartphones",
+     "g": "Eine Tour durch Bildschirm, Akku, Prozessor, Speicher, Kameras, Antennen und Sensoren.",
+     "p": [
+      "Bildschirm und Akku brauchen den meisten Platz; der Akku ist oft das größte Teil.",
+      "Eine kleine Hauptplatine trägt Prozessor, Arbeitsspeicher und Speicherchips.",
+      "Antennen, Kameras und Sensoren sitzen wie ein enges Puzzle an den Rändern."
+     ],
+     "q": "Welchen Teil deines Handys möchtest du am liebsten besser kennenlernen?",
+     "c": "Sieh dir online ein Zerlegungsbild eines Handys an und finde Akku und Hauptplatine."
+    },
+    "es": {
+     "t": "Dentro de un smartphone",
+     "g": "Un recorrido por pantalla, batería, procesador, memoria, cámaras, antenas y sensores.",
+     "p": [
+      "La pantalla y la batería ocupan casi todo el espacio; la batería suele ser la pieza mayor.",
+      "Una pequeña placa base reúne procesador, memoria y chips de almacenamiento.",
+      "Antenas, cámaras y sensores encajan en los bordes como un puzle apretado."
+     ],
+     "q": "¿Qué parte de tu móvil te da más curiosidad?",
+     "c": "Mira online una foto de un móvil desmontado y localiza la batería y la placa base."
+    },
+    "fr": {
+     "t": "À l'intérieur d'un smartphone",
+     "g": "Visite de l'écran, de la batterie, du processeur, de la mémoire, des caméras, antennes et capteurs.",
+     "p": [
+      "L'écran et la batterie prennent la plus grande place ; la batterie est souvent la pièce la plus grosse.",
+      "Une petite carte mère porte le processeur, la mémoire et les puces de stockage.",
+      "Antennes, caméras et capteurs s'emboîtent sur les bords comme un puzzle serré."
+     ],
+     "q": "Quelle partie de ton téléphone te donne le plus envie d'en savoir plus ?",
+     "c": "Regarde en ligne une photo de téléphone démonté et repère la batterie et la carte mère."
+    },
+    "it": {
+     "t": "Dentro uno smartphone",
+     "g": "Un giro tra schermo, batteria, processore, memoria, fotocamere, antenne e sensori.",
+     "p": [
+      "Schermo e batteria occupano quasi tutto lo spazio; la batteria è spesso il pezzo più grande.",
+      "Una piccola scheda madre ospita processore, memoria e chip di archiviazione.",
+      "Antenne, fotocamere e sensori si incastrano ai bordi come un puzzle stretto."
+     ],
+     "q": "Di quale parte del tuo telefono sei più curioso?",
+     "c": "Guarda online la foto di uno smartphone smontato e individua batteria e scheda madre."
+    },
+    "pt": {
+     "t": "Dentro de um smartphone",
+     "g": "Um passeio pelo ecrã, bateria, processador, memória, câmaras, antenas e sensores.",
+     "p": [
+      "O ecrã e a bateria ocupam quase todo o espaço; a bateria costuma ser a maior peça.",
+      "Uma pequena placa principal reúne processador, memória e chips de armazenamento.",
+      "Antenas, câmaras e sensores encaixam nas margens como um puzzle apertado."
+     ],
+     "q": "Que parte do teu telemóvel mais curiosidade te desperta?",
+     "c": "Vê online a foto de um telemóvel desmontado e encontra a bateria e a placa principal."
+    },
+    "pt_BR": {
+     "t": "Dentro de um smartphone",
+     "g": "Um passeio pela tela, bateria, processador, memória, câmeras, antenas e sensores.",
+     "p": [
+      "A tela e a bateria ocupam quase todo o espaço; a bateria costuma ser a maior peça.",
+      "Uma pequena placa principal reúne processador, memória e chips de armazenamento.",
+      "Antenas, câmeras e sensores encaixam nas bordas como um quebra-cabeça apertado."
+     ],
+     "q": "Que parte do seu celular mais desperta sua curiosidade?",
+     "c": "Veja online a foto de um celular desmontado e ache a bateria e a placa principal."
+    }
+   }
+  }
+ ]
+}

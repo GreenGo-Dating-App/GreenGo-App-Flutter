@@ -1,0 +1,835 @@
+{
+ "topic": "remote_work",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your remote toolkit overview",
+     "g": "Get to know the main tool categories remote teams rely on.",
+     "p": [
+      "Typical categories: messaging, video, documents, tasks, storage and calendars.",
+      "Each category solves one job; the brand matters less than the habit.",
+      "Knowing the categories helps you learn any new tool faster."
+     ],
+     "q": "Which of these categories do you already use every day?",
+     "c": "List the tools you use and sort them into the six categories."
+    },
+    "de": {
+     "t": "Überblick über dein Remote-Toolkit",
+     "g": "Lerne die wichtigsten Werkzeugkategorien kennen, auf die Remote-Teams setzen.",
+     "p": [
+      "Typische Kategorien: Nachrichten, Video, Dokumente, Aufgaben, Speicher und Kalender.",
+      "Jede Kategorie löst eine Aufgabe; die Marke zählt weniger als die Gewohnheit.",
+      "Wer die Kategorien kennt, lernt jedes neue Tool schneller."
+     ],
+     "q": "Welche dieser Kategorien nutzt du schon täglich?",
+     "c": "Liste deine Tools auf und ordne sie den sechs Kategorien zu."
+    },
+    "es": {
+     "t": "Panorama de tu kit de trabajo remoto",
+     "g": "Conoce las categorías de herramientas en las que se apoyan los equipos remotos.",
+     "p": [
+      "Categorías típicas: mensajería, vídeo, documentos, tareas, almacenamiento y calendarios.",
+      "Cada categoría resuelve una tarea; importa más el hábito que la marca.",
+      "Conocer las categorías te ayuda a aprender más rápido cualquier herramienta nueva."
+     ],
+     "q": "¿Cuáles de estas categorías usas ya cada día?",
+     "c": "Haz una lista de tus herramientas y clasifícalas en las seis categorías."
+    },
+    "fr": {
+     "t": "Aperçu de ta boîte à outils à distance",
+     "g": "Découvre les grandes catégories d'outils sur lesquelles s'appuient les équipes à distance.",
+     "p": [
+      "Catégories typiques : messagerie, vidéo, documents, tâches, stockage et agendas.",
+      "Chaque catégorie répond à un besoin ; l'habitude compte plus que la marque.",
+      "Connaître les catégories t'aide à apprendre plus vite n'importe quel nouvel outil."
+     ],
+     "q": "Lesquelles de ces catégories utilises-tu déjà chaque jour ?",
+     "c": "Liste tes outils et classe-les dans les six catégories."
+    },
+    "it": {
+     "t": "Panoramica del tuo kit per il lavoro da remoto",
+     "g": "Conosci le categorie di strumenti su cui si basano i team da remoto.",
+     "p": [
+      "Categorie tipiche: messaggistica, video, documenti, attività, archiviazione e calendari.",
+      "Ogni categoria risolve un compito; conta più l'abitudine che la marca.",
+      "Conoscere le categorie ti aiuta a imparare più in fretta qualsiasi strumento nuovo."
+     ],
+     "q": "Quali di queste categorie usi già ogni giorno?",
+     "c": "Elenca i tuoi strumenti e classificali nelle sei categorie."
+    },
+    "pt": {
+     "t": "Panorama do teu kit de trabalho remoto",
+     "g": "Conhece as categorias de ferramentas em que as equipas remotas se apoiam.",
+     "p": [
+      "Categorias típicas: mensagens, vídeo, documentos, tarefas, armazenamento e calendários.",
+      "Cada categoria resolve uma tarefa; o hábito importa mais do que a marca.",
+      "Conhecer as categorias ajuda-te a aprender qualquer ferramenta nova mais depressa."
+     ],
+     "q": "Quais destas categorias já usas todos os dias?",
+     "c": "Lista as tuas ferramentas e classifica-as nas seis categorias."
+    },
+    "pt_BR": {
+     "t": "Panorama do seu kit de trabalho remoto",
+     "g": "Conheça as categorias de ferramentas em que os times remotos se apoiam.",
+     "p": [
+      "Categorias típicas: mensagens, vídeo, documentos, tarefas, armazenamento e agendas.",
+      "Cada categoria resolve uma tarefa; o hábito importa mais do que a marca.",
+      "Conhecer as categorias ajuda você a aprender qualquer ferramenta nova mais rápido."
+     ],
+     "q": "Quais dessas categorias você já usa todo dia?",
+     "c": "Liste suas ferramentas e classifique-as nas seis categorias."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Email that people actually read",
+     "g": "Write emails with clear subjects, short bodies and one clear request.",
+     "p": [
+      "A good subject line says what the email is and what you need.",
+      "Keep the body short: context in two or three lines, then the request.",
+      "One email, one main request; add a date if timing matters."
+     ],
+     "q": "What makes you open or ignore an email in your own inbox?",
+     "c": "Rewrite one recent email with a sharper subject and a single request."
+    },
+    "de": {
+     "t": "E-Mails, die wirklich gelesen werden",
+     "g": "Schreibe E-Mails mit klarem Betreff, kurzem Text und einer klaren Bitte.",
+     "p": [
+      "Ein guter Betreff sagt, worum es geht und was du brauchst.",
+      "Halte den Text kurz: Kontext in zwei, drei Zeilen, dann die Bitte.",
+      "Eine E-Mail, eine Hauptbitte; nenne ein Datum, wenn es eilt."
+     ],
+     "q": "Was lässt dich in deinem Postfach eine E-Mail öffnen oder ignorieren?",
+     "c": "Formuliere eine aktuelle E-Mail mit schärferem Betreff und einer einzigen Bitte um."
+    },
+    "es": {
+     "t": "Correos que la gente sí lee",
+     "g": "Escribe correos con asunto claro, cuerpo breve y una petición clara.",
+     "p": [
+      "Un buen asunto dice qué es el correo y qué necesitas.",
+      "Cuerpo breve: contexto en dos o tres líneas y luego la petición.",
+      "Un correo, una petición principal; añade una fecha si el plazo importa."
+     ],
+     "q": "¿Qué hace que abras o ignores un correo en tu bandeja?",
+     "c": "Reescribe un correo reciente con un asunto más claro y una sola petición."
+    },
+    "fr": {
+     "t": "Des e-mails que l'on lit vraiment",
+     "g": "Rédige des e-mails à l'objet clair, au corps court et à une seule demande.",
+     "p": [
+      "Un bon objet dit de quoi il s'agit et ce dont tu as besoin.",
+      "Corps court : contexte en deux ou trois lignes, puis la demande.",
+      "Un e-mail, une demande principale ; ajoute une date si le délai compte."
+     ],
+     "q": "Qu'est-ce qui te fait ouvrir ou ignorer un e-mail dans ta boîte ?",
+     "c": "Réécris un e-mail récent avec un objet plus net et une seule demande."
+    },
+    "it": {
+     "t": "Email che le persone leggono davvero",
+     "g": "Scrivi email con oggetto chiaro, corpo breve e una richiesta chiara.",
+     "p": [
+      "Un buon oggetto dice che cos'è l'email e di che cosa hai bisogno.",
+      "Corpo breve: contesto in due o tre righe, poi la richiesta.",
+      "Una email, una richiesta principale; aggiungi una data se i tempi contano."
+     ],
+     "q": "Che cosa ti fa aprire o ignorare un'email nella tua casella?",
+     "c": "Riscrivi una email recente con un oggetto più netto e una sola richiesta."
+    },
+    "pt": {
+     "t": "Emails que as pessoas leem mesmo",
+     "g": "Escreve emails com assunto claro, corpo curto e um pedido claro.",
+     "p": [
+      "Um bom assunto diz o que é o email e o que precisas.",
+      "Corpo curto: contexto em duas ou três linhas e depois o pedido.",
+      "Um email, um pedido principal; acrescenta uma data se o prazo importar."
+     ],
+     "q": "O que te faz abrir ou ignorar um email na tua caixa de entrada?",
+     "c": "Reescreve um email recente com um assunto mais claro e um único pedido."
+    },
+    "pt_BR": {
+     "t": "E-mails que as pessoas realmente leem",
+     "g": "Escreva e-mails com assunto claro, corpo curto e um pedido claro.",
+     "p": [
+      "Um bom assunto diz o que é o e-mail e o que você precisa.",
+      "Corpo curto: contexto em duas ou três linhas e depois o pedido.",
+      "Um e-mail, um pedido principal; coloque uma data se o prazo importar."
+     ],
+     "q": "O que faz você abrir ou ignorar um e-mail na sua caixa de entrada?",
+     "c": "Reescreva um e-mail recente com um assunto mais claro e um único pedido."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Team chat basics",
+     "g": "Learn how channels, threads, mentions and direct messages work.",
+     "p": [
+      "Channels hold topics; threads keep replies tidy under one message.",
+      "A mention pulls a person in; use it only when you need their attention.",
+      "Direct messages suit private matters, while open channels share knowledge."
+     ],
+     "q": "Which chat habits make a team space feel calm rather than noisy?",
+     "c": "Reply in a thread today instead of starting a new message."
+    },
+    "de": {
+     "t": "Grundlagen des Team-Chats",
+     "g": "Lerne, wie Kanäle, Threads, Erwähnungen und Direktnachrichten funktionieren.",
+     "p": [
+      "Kanäle bündeln Themen; Threads halten Antworten unter einer Nachricht ordentlich.",
+      "Eine Erwähnung holt jemanden dazu; nutze sie nur, wenn du seine Aufmerksamkeit brauchst.",
+      "Direktnachrichten eignen sich für Privates, offene Kanäle teilen Wissen."
+     ],
+     "q": "Welche Chat-Gewohnheiten machen einen Team-Raum ruhig statt laut?",
+     "c": "Antworte heute in einem Thread, statt eine neue Nachricht zu beginnen."
+    },
+    "es": {
+     "t": "Lo básico del chat de equipo",
+     "g": "Aprende cómo funcionan canales, hilos, menciones y mensajes directos.",
+     "p": [
+      "Los canales agrupan temas; los hilos mantienen las respuestas ordenadas bajo un mensaje.",
+      "Una mención llama a alguien; úsala solo cuando necesites su atención.",
+      "Los mensajes directos sirven para lo privado; los canales abiertos comparten conocimiento."
+     ],
+     "q": "¿Qué hábitos de chat hacen que un espacio de equipo sea tranquilo y no ruidoso?",
+     "c": "Hoy responde en un hilo en lugar de empezar un mensaje nuevo."
+    },
+    "fr": {
+     "t": "Les bases de la messagerie d'équipe",
+     "g": "Apprends comment fonctionnent canaux, fils, mentions et messages privés.",
+     "p": [
+      "Les canaux regroupent les sujets ; les fils gardent les réponses rangées sous un message.",
+      "Une mention fait venir quelqu'un ; utilise-la seulement si tu as besoin de son attention.",
+      "Les messages privés conviennent au privé, les canaux ouverts partagent le savoir."
+     ],
+     "q": "Quelles habitudes rendent un espace d'équipe calme plutôt que bruyant ?",
+     "c": "Réponds aujourd'hui dans un fil plutôt que de lancer un nouveau message."
+    },
+    "it": {
+     "t": "Le basi della chat di team",
+     "g": "Impara come funzionano canali, thread, menzioni e messaggi diretti.",
+     "p": [
+      "I canali raccolgono argomenti; i thread tengono ordinate le risposte sotto un messaggio.",
+      "Una menzione chiama una persona; usala solo quando serve la sua attenzione.",
+      "I messaggi diretti vanno bene per il privato, i canali aperti condividono conoscenza."
+     ],
+     "q": "Quali abitudini rendono lo spazio di team calmo anziché rumoroso?",
+     "c": "Oggi rispondi in un thread invece di iniziare un nuovo messaggio."
+    },
+    "pt": {
+     "t": "O básico do chat de equipa",
+     "g": "Aprende como funcionam canais, tópicos, menções e mensagens diretas.",
+     "p": [
+      "Os canais reúnem temas; os tópicos mantêm as respostas arrumadas debaixo de uma mensagem.",
+      "Uma menção chama alguém; usa-a só quando precisas da atenção da pessoa.",
+      "As mensagens diretas servem para o privado; os canais abertos partilham conhecimento."
+     ],
+     "q": "Que hábitos de chat tornam um espaço de equipa calmo em vez de ruidoso?",
+     "c": "Hoje responde num tópico em vez de começares uma mensagem nova."
+    },
+    "pt_BR": {
+     "t": "O básico do chat de equipe",
+     "g": "Aprenda como funcionam canais, tópicos, menções e mensagens diretas.",
+     "p": [
+      "Os canais reúnem assuntos; os tópicos mantêm as respostas organizadas sob uma mensagem.",
+      "Uma menção chama alguém; use-a só quando precisar da atenção da pessoa.",
+      "As mensagens diretas servem para o privado; os canais abertos compartilham conhecimento."
+     ],
+     "q": "Que hábitos de chat deixam um espaço de equipe calmo em vez de barulhento?",
+     "c": "Hoje responda num tópico em vez de começar uma mensagem nova."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Video call apps explained",
+     "g": "Meet the common features of video tools and how to use them.",
+     "p": [
+      "Screen sharing shows your display; chat lets you add links quietly.",
+      "Reactions and raised hands help without interrupting the speaker.",
+      "Recordings and breakout rooms help when people cannot attend or need small groups."
+     ],
+     "q": "Which video feature would help your meetings the most?",
+     "c": "Open a video app and find three features you have not used before."
+    },
+    "de": {
+     "t": "Videoanruf-Apps erklärt",
+     "g": "Lerne die üblichen Funktionen von Videotools kennen und wie du sie nutzt.",
+     "p": [
+      "Bildschirmfreigabe zeigt deinen Bildschirm; der Chat erlaubt stille Links.",
+      "Reaktionen und Handzeichen helfen, ohne den Sprechenden zu unterbrechen.",
+      "Aufzeichnungen und Gruppenräume helfen, wenn Leute fehlen oder kleine Gruppen brauchen."
+     ],
+     "q": "Welche Videofunktion würde deinen Meetings am meisten helfen?",
+     "c": "Öffne eine Video-App und finde drei Funktionen, die du noch nie genutzt hast."
+    },
+    "es": {
+     "t": "Apps de videollamada explicadas",
+     "g": "Conoce las funciones habituales de las herramientas de vídeo y cómo usarlas.",
+     "p": [
+      "Compartir pantalla muestra tu escritorio; el chat permite añadir enlaces sin interrumpir.",
+      "Las reacciones y la mano levantada ayudan sin cortar a quien habla.",
+      "Las grabaciones y las salas pequeñas ayudan si alguien no puede asistir o se necesitan grupos reducidos."
+     ],
+     "q": "¿Qué función de vídeo ayudaría más a tus reuniones?",
+     "c": "Abre una app de vídeo y encuentra tres funciones que no hayas usado."
+    },
+    "fr": {
+     "t": "Les applis de visio expliquées",
+     "g": "Découvre les fonctions courantes des outils vidéo et comment les utiliser.",
+     "p": [
+      "Le partage d'écran montre ton affichage ; le chat permet d'ajouter des liens discrètement.",
+      "Les réactions et la main levée aident sans interrompre la personne qui parle.",
+      "Enregistrements et sous-salles aident quand on ne peut pas venir ou qu'il faut de petits groupes."
+     ],
+     "q": "Quelle fonction vidéo aiderait le plus tes réunions ?",
+     "c": "Ouvre une appli de visio et trouve trois fonctions que tu n'as jamais utilisées."
+    },
+    "it": {
+     "t": "Le app di videochiamata spiegate",
+     "g": "Conosci le funzioni comuni degli strumenti video e come usarle.",
+     "p": [
+      "La condivisione schermo mostra il tuo display; la chat permette link senza interrompere.",
+      "Reazioni e mano alzata aiutano senza interrompere chi parla.",
+      "Registrazioni e sale separate aiutano quando qualcuno non può partecipare o servono piccoli gruppi."
+     ],
+     "q": "Quale funzione video aiuterebbe di più le tue riunioni?",
+     "c": "Apri un'app video e trova tre funzioni che non hai mai usato."
+    },
+    "pt": {
+     "t": "Apps de videochamada explicadas",
+     "g": "Conhece as funções comuns das ferramentas de vídeo e como as usar.",
+     "p": [
+      "Partilhar ecrã mostra o teu ecrã; o chat permite juntar links sem interromper.",
+      "Reações e mão levantada ajudam sem cortar quem fala.",
+      "Gravações e salas pequenas ajudam quando alguém não pode estar ou são precisos grupos reduzidos."
+     ],
+     "q": "Que função de vídeo ajudaria mais as tuas reuniões?",
+     "c": "Abre uma app de vídeo e encontra três funções que ainda não usaste."
+    },
+    "pt_BR": {
+     "t": "Apps de videochamada explicados",
+     "g": "Conheça as funções comuns das ferramentas de vídeo e como usá-las.",
+     "p": [
+      "Compartilhar tela mostra sua tela; o chat permite colocar links sem interromper.",
+      "Reações e mão levantada ajudam sem cortar quem fala.",
+      "Gravações e salas menores ajudam quando alguém não pode participar ou são necessários grupos pequenos."
+     ],
+     "q": "Qual função de vídeo ajudaria mais as suas reuniões?",
+     "c": "Abra um app de vídeo e encontre três funções que você ainda não usou."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shared documents and real-time editing",
+     "g": "Work together in one document with comments and version history.",
+     "p": [
+      "Comments let you discuss a line without changing it.",
+      "Suggestion mode shows edits that others can accept or reject.",
+      "Version history lets you go back, so experimenting is safe."
+     ],
+     "q": "What would you like to write or plan together with someone?",
+     "c": "Add one helpful comment in a shared document today."
+    },
+    "de": {
+     "t": "Gemeinsame Dokumente und Echtzeit-Bearbeitung",
+     "g": "Arbeite mit anderen in einem Dokument, mit Kommentaren und Versionsverlauf.",
+     "p": [
+      "Kommentare erlauben Diskussion über eine Zeile, ohne sie zu ändern.",
+      "Der Vorschlagsmodus zeigt Änderungen, die andere annehmen oder ablehnen können.",
+      "Der Versionsverlauf erlaubt den Schritt zurück, Ausprobieren ist also sicher."
+     ],
+     "q": "Was würdest du gern mit jemandem gemeinsam schreiben oder planen?",
+     "c": "Schreib heute einen hilfreichen Kommentar in einem gemeinsamen Dokument."
+    },
+    "es": {
+     "t": "Documentos compartidos y edición en tiempo real",
+     "g": "Trabaja con otros en un mismo documento con comentarios e historial de versiones.",
+     "p": [
+      "Los comentarios permiten debatir una línea sin cambiarla.",
+      "El modo sugerencia muestra cambios que otros pueden aceptar o rechazar.",
+      "El historial de versiones permite volver atrás, así que probar es seguro."
+     ],
+     "q": "¿Qué te gustaría escribir o planificar junto a alguien?",
+     "c": "Añade hoy un comentario útil en un documento compartido."
+    },
+    "fr": {
+     "t": "Documents partagés et édition en temps réel",
+     "g": "Travaille à plusieurs dans un même document avec commentaires et historique des versions.",
+     "p": [
+      "Les commentaires permettent de discuter d'une ligne sans la modifier.",
+      "Le mode suggestion montre des modifications que d'autres peuvent accepter ou refuser.",
+      "L'historique des versions permet de revenir en arrière : essayer est sans risque."
+     ],
+     "q": "Qu'aimerais-tu écrire ou planifier avec quelqu'un ?",
+     "c": "Ajoute aujourd'hui un commentaire utile dans un document partagé."
+    },
+    "it": {
+     "t": "Documenti condivisi e modifica in tempo reale",
+     "g": "Lavora con altri nello stesso documento, con commenti e cronologia versioni.",
+     "p": [
+      "I commenti permettono di discutere una riga senza cambiarla.",
+      "La modalità suggerimenti mostra modifiche che altri possono accettare o rifiutare.",
+      "La cronologia versioni permette di tornare indietro, quindi provare è sicuro."
+     ],
+     "q": "Che cosa ti piacerebbe scrivere o pianificare insieme a qualcuno?",
+     "c": "Oggi aggiungi un commento utile in un documento condiviso."
+    },
+    "pt": {
+     "t": "Documentos partilhados e edição em tempo real",
+     "g": "Trabalha com outros no mesmo documento, com comentários e histórico de versões.",
+     "p": [
+      "Os comentários permitem discutir uma linha sem a alterar.",
+      "O modo de sugestões mostra alterações que outros podem aceitar ou rejeitar.",
+      "O histórico de versões permite voltar atrás, por isso experimentar é seguro."
+     ],
+     "q": "O que gostavas de escrever ou planear com alguém?",
+     "c": "Acrescenta hoje um comentário útil num documento partilhado."
+    },
+    "pt_BR": {
+     "t": "Documentos compartilhados e edição em tempo real",
+     "g": "Trabalhe com outros no mesmo documento, com comentários e histórico de versões.",
+     "p": [
+      "Os comentários permitem discutir uma linha sem alterá-la.",
+      "O modo de sugestões mostra alterações que outros podem aceitar ou rejeitar.",
+      "O histórico de versões permite voltar atrás, então experimentar é seguro."
+     ],
+     "q": "O que você gostaria de escrever ou planejar com alguém?",
+     "c": "Adicione hoje um comentário útil num documento compartilhado."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cloud storage and file organisation",
+     "g": "Name files clearly and structure folders so anyone can find things.",
+     "p": [
+      "Use names with a topic, a date and a version, like project-notes-2025-03-v2.",
+      "Keep folder levels few; deep nesting makes files hard to find.",
+      "Share links with the right access instead of sending copies."
+     ],
+     "q": "How easily can a teammate find your most important file?",
+     "c": "Rename five files with a clear pattern and tidy one folder."
+    },
+    "de": {
+     "t": "Cloud-Speicher und Dateiordnung",
+     "g": "Benenne Dateien klar und gliedere Ordner so, dass jeder alles findet.",
+     "p": [
+      "Nutze Namen mit Thema, Datum und Version, etwa projekt-notizen-2025-03-v2.",
+      "Halte die Ordnerebenen gering; tiefe Verschachtelung erschwert das Finden.",
+      "Teile Links mit passenden Rechten, statt Kopien zu verschicken."
+     ],
+     "q": "Wie leicht findet ein Kollege deine wichtigste Datei?",
+     "c": "Benenne fünf Dateien nach einem klaren Muster um und räume einen Ordner auf."
+    },
+    "es": {
+     "t": "Almacenamiento en la nube y organización de archivos",
+     "g": "Nombra archivos con claridad y organiza carpetas para que todos encuentren todo.",
+     "p": [
+      "Usa nombres con tema, fecha y versión, como notas-proyecto-2025-03-v2.",
+      "Pocos niveles de carpetas; demasiado anidamiento dificulta encontrar archivos.",
+      "Comparte enlaces con el acceso adecuado en lugar de enviar copias."
+     ],
+     "q": "¿Con qué facilidad encuentra un compañero tu archivo más importante?",
+     "c": "Renombra cinco archivos con un patrón claro y ordena una carpeta."
+    },
+    "fr": {
+     "t": "Stockage cloud et organisation des fichiers",
+     "g": "Nomme clairement tes fichiers et structure tes dossiers pour que chacun s'y retrouve.",
+     "p": [
+      "Utilise des noms avec sujet, date et version, comme notes-projet-2025-03-v2.",
+      "Garde peu de niveaux de dossiers ; trop d'imbrication complique la recherche.",
+      "Partage des liens avec les bons accès plutôt que d'envoyer des copies."
+     ],
+     "q": "Un collègue trouve-t-il facilement ton fichier le plus important ?",
+     "c": "Renomme cinq fichiers selon un modèle clair et range un dossier."
+    },
+    "it": {
+     "t": "Archiviazione cloud e organizzazione dei file",
+     "g": "Dai nomi chiari ai file e struttura le cartelle in modo che tutti trovino tutto.",
+     "p": [
+      "Usa nomi con argomento, data e versione, come note-progetto-2025-03-v2.",
+      "Pochi livelli di cartelle; troppi annidamenti rendono difficile trovare i file.",
+      "Condividi link con l'accesso giusto invece di inviare copie."
+     ],
+     "q": "Quanto facilmente un collega trova il tuo file più importante?",
+     "c": "Rinomina cinque file con uno schema chiaro e riordina una cartella."
+    },
+    "pt": {
+     "t": "Armazenamento na nuvem e organização de ficheiros",
+     "g": "Dá nomes claros aos ficheiros e organiza as pastas para todos encontrarem tudo.",
+     "p": [
+      "Usa nomes com tema, data e versão, como notas-projeto-2025-03-v2.",
+      "Poucos níveis de pastas; demasiado aninhamento dificulta encontrar ficheiros.",
+      "Partilha links com o acesso certo em vez de enviar cópias."
+     ],
+     "q": "Com que facilidade um colega encontra o teu ficheiro mais importante?",
+     "c": "Renomeia cinco ficheiros com um padrão claro e arruma uma pasta."
+    },
+    "pt_BR": {
+     "t": "Armazenamento na nuvem e organização de arquivos",
+     "g": "Dê nomes claros aos arquivos e organize as pastas para todos encontrarem tudo.",
+     "p": [
+      "Use nomes com tema, data e versão, como notas-projeto-2025-03-v2.",
+      "Poucos níveis de pastas; muito aninhamento dificulta achar arquivos.",
+      "Compartilhe links com o acesso certo em vez de enviar cópias."
+     ],
+     "q": "Com que facilidade um colega acha o seu arquivo mais importante?",
+     "c": "Renomeie cinco arquivos com um padrão claro e arrume uma pasta."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your calendar as a work tool",
+     "g": "Use a shared calendar for meetings, focus time and availability.",
+     "p": [
+      "Block focus time so it is protected, just like a meeting.",
+      "Add time zone, location or call link to every invitation.",
+      "Mark lunch, breaks and end of day so others see your real availability."
+     ],
+     "q": "Does your calendar show your real week, or only the meetings?",
+     "c": "Add one focus block and one break to tomorrow's calendar."
+    },
+    "de": {
+     "t": "Dein Kalender als Arbeitswerkzeug",
+     "g": "Nutze einen gemeinsamen Kalender für Meetings, Fokuszeit und Erreichbarkeit.",
+     "p": [
+      "Blocke Fokuszeit, damit sie geschützt ist, genau wie ein Meeting.",
+      "Ergänze jede Einladung um Zeitzone, Ort oder Anruflink.",
+      "Markiere Mittag, Pausen und Feierabend, damit andere deine echte Verfügbarkeit sehen."
+     ],
+     "q": "Zeigt dein Kalender deine echte Woche oder nur die Meetings?",
+     "c": "Trage für morgen einen Fokusblock und eine Pause in deinen Kalender ein."
+    },
+    "es": {
+     "t": "Tu calendario como herramienta de trabajo",
+     "g": "Usa un calendario compartido para reuniones, concentración y disponibilidad.",
+     "p": [
+      "Reserva tiempo de concentración para protegerlo, igual que una reunión.",
+      "Añade zona horaria, lugar o enlace de llamada a cada invitación.",
+      "Marca comida, descansos y fin de jornada para que otros vean tu disponibilidad real."
+     ],
+     "q": "¿Tu calendario refleja tu semana real o solo las reuniones?",
+     "c": "Añade a mañana un bloque de concentración y un descanso en tu calendario."
+    },
+    "fr": {
+     "t": "Ton agenda comme outil de travail",
+     "g": "Utilise un agenda partagé pour réunions, concentration et disponibilité.",
+     "p": [
+      "Bloque du temps de concentration pour le protéger, comme une réunion.",
+      "Ajoute fuseau horaire, lieu ou lien d'appel à chaque invitation.",
+      "Marque déjeuner, pauses et fin de journée pour montrer ta vraie disponibilité."
+     ],
+     "q": "Ton agenda montre-t-il ta vraie semaine ou seulement les réunions ?",
+     "c": "Ajoute demain un bloc de concentration et une pause dans ton agenda."
+    },
+    "it": {
+     "t": "Il calendario come strumento di lavoro",
+     "g": "Usa un calendario condiviso per riunioni, tempo di concentrazione e disponibilità.",
+     "p": [
+      "Blocca il tempo di concentrazione per proteggerlo, come una riunione.",
+      "Aggiungi fuso orario, luogo o link della chiamata a ogni invito.",
+      "Segna pranzo, pause e fine giornata così gli altri vedono la tua vera disponibilità."
+     ],
+     "q": "Il tuo calendario mostra la tua settimana reale o solo le riunioni?",
+     "c": "Aggiungi a domani un blocco di concentrazione e una pausa nel calendario."
+    },
+    "pt": {
+     "t": "O teu calendário como ferramenta de trabalho",
+     "g": "Usa um calendário partilhado para reuniões, concentração e disponibilidade.",
+     "p": [
+      "Bloqueia tempo de concentração para o proteger, tal como uma reunião.",
+      "Acrescenta fuso horário, local ou link da chamada a cada convite.",
+      "Marca almoço, pausas e fim do dia para os outros verem a tua disponibilidade real."
+     ],
+     "q": "O teu calendário mostra a tua semana real ou só as reuniões?",
+     "c": "Adiciona a amanhã um bloco de concentração e uma pausa no calendário."
+    },
+    "pt_BR": {
+     "t": "Sua agenda como ferramenta de trabalho",
+     "g": "Use uma agenda compartilhada para reuniões, foco e disponibilidade.",
+     "p": [
+      "Bloqueie tempo de foco para protegê-lo, como uma reunião.",
+      "Coloque fuso horário, local ou link da chamada em cada convite.",
+      "Marque almoço, pausas e fim do dia para os outros verem sua disponibilidade real."
+     ],
+     "q": "Sua agenda mostra sua semana real ou só as reuniões?",
+     "c": "Adicione a amanhã um bloco de foco e uma pausa na agenda."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Status and presence indicators",
+     "g": "Use online, away and do-not-disturb statuses so people know when to reach you.",
+     "p": [
+      "A status is a small signal that saves many questions.",
+      "Do-not-disturb protects deep work; set it and tell the team when you will be back.",
+      "Add a custom message when you are at lunch or out for an appointment."
+     ],
+     "q": "When do you most need to be left alone to focus?",
+     "c": "Set a status today that matches what you are really doing."
+    },
+    "de": {
+     "t": "Status- und Präsenzanzeigen",
+     "g": "Nutze Online-, Abwesend- und Bitte-nicht-stören-Status, damit andere wissen, wann sie dich erreichen.",
+     "p": [
+      "Ein Status ist ein kleines Signal, das viele Fragen erspart.",
+      "Bitte nicht stören schützt konzentriertes Arbeiten; setze es und sag, wann du zurück bist.",
+      "Füge eine eigene Nachricht hinzu, wenn du beim Essen oder bei einem Termin bist."
+     ],
+     "q": "Wann brauchst du am meisten Ruhe zum Fokussieren?",
+     "c": "Setze heute einen Status, der zu dem passt, was du wirklich tust."
+    },
+    "es": {
+     "t": "Indicadores de estado y presencia",
+     "g": "Usa los estados conectado, ausente y no molestar para que sepan cuándo localizarte.",
+     "p": [
+      "Un estado es una pequeña señal que ahorra muchas preguntas.",
+      "No molestar protege el trabajo profundo; actívalo y avisa cuándo volverás.",
+      "Añade un mensaje personalizado si estás comiendo o en una cita."
+     ],
+     "q": "¿Cuándo necesitas más que te dejen en paz para concentrarte?",
+     "c": "Pon hoy un estado que coincida con lo que realmente estás haciendo."
+    },
+    "fr": {
+     "t": "Indicateurs de statut et de présence",
+     "g": "Utilise les statuts en ligne, absent et ne pas déranger pour montrer quand te joindre.",
+     "p": [
+      "Un statut est un petit signal qui évite beaucoup de questions.",
+      "Ne pas déranger protège le travail de fond ; active-le et dis quand tu reviens.",
+      "Ajoute un message personnalisé quand tu déjeunes ou as un rendez-vous."
+     ],
+     "q": "Quand as-tu le plus besoin d'être tranquille pour te concentrer ?",
+     "c": "Mets aujourd'hui un statut qui correspond à ce que tu fais vraiment."
+    },
+    "it": {
+     "t": "Indicatori di stato e presenza",
+     "g": "Usa gli stati online, assente e non disturbare per far sapere quando trovarti.",
+     "p": [
+      "Uno stato è un piccolo segnale che evita molte domande.",
+      "Non disturbare protegge il lavoro profondo; attivalo e dì quando torni.",
+      "Aggiungi un messaggio personalizzato quando sei a pranzo o a un appuntamento."
+     ],
+     "q": "Quando hai più bisogno di essere lasciato in pace per concentrarti?",
+     "c": "Imposta oggi uno stato che corrisponda a ciò che stai davvero facendo."
+    },
+    "pt": {
+     "t": "Indicadores de estado e presença",
+     "g": "Usa os estados online, ausente e não incomodar para saberem quando te contactar.",
+     "p": [
+      "Um estado é um pequeno sinal que poupa muitas perguntas.",
+      "Não incomodar protege o trabalho profundo; ativa-o e diz quando voltas.",
+      "Acrescenta uma mensagem personalizada quando estás a almoçar ou numa consulta."
+     ],
+     "q": "Quando precisas mais de que te deixem em paz para te concentrares?",
+     "c": "Define hoje um estado que corresponda ao que estás mesmo a fazer."
+    },
+    "pt_BR": {
+     "t": "Indicadores de status e presença",
+     "g": "Use os status online, ausente e não perturbe para saberem quando falar com você.",
+     "p": [
+      "Um status é um pequeno sinal que poupa muitas perguntas.",
+      "Não perturbe protege o trabalho profundo; ative e diga quando volta.",
+      "Coloque uma mensagem personalizada quando estiver almoçando ou num compromisso."
+     ],
+     "q": "Quando você mais precisa ser deixado em paz para se concentrar?",
+     "c": "Defina hoje um status que corresponda ao que você está realmente fazendo."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keyboard shortcuts that save time",
+     "g": "Learn a handful of universal shortcuts that speed up daily tasks.",
+     "p": [
+      "Copy, paste, undo, find and save are the classic time savers.",
+      "Switching windows and tabs by keyboard keeps your hands on the keys.",
+      "Learn one new shortcut at a time until it becomes automatic."
+     ],
+     "q": "Which task do you repeat most that a shortcut could speed up?",
+     "c": "Learn and use one new shortcut at least ten times today."
+    },
+    "de": {
+     "t": "Tastenkürzel, die Zeit sparen",
+     "g": "Lerne eine Handvoll universeller Kürzel, die den Alltag beschleunigen.",
+     "p": [
+      "Kopieren, Einfügen, Rückgängig, Suchen und Speichern sind die klassischen Zeitsparer.",
+      "Fenster und Tabs per Tastatur zu wechseln hält die Hände auf den Tasten.",
+      "Lerne jeweils ein neues Kürzel, bis es automatisch geht."
+     ],
+     "q": "Welche Aufgabe wiederholst du am häufigsten und könnte mit einem Kürzel schneller gehen?",
+     "c": "Lerne ein neues Kürzel und nutze es heute mindestens zehnmal."
+    },
+    "es": {
+     "t": "Atajos de teclado que ahorran tiempo",
+     "g": "Aprende unos cuantos atajos universales que aceleran las tareas diarias.",
+     "p": [
+      "Copiar, pegar, deshacer, buscar y guardar son los clásicos que ahorran tiempo.",
+      "Cambiar de ventana y pestaña con el teclado mantiene las manos en las teclas.",
+      "Aprende un atajo nuevo cada vez hasta que sea automático."
+     ],
+     "q": "¿Qué tarea repites más que un atajo podría acelerar?",
+     "c": "Aprende y usa hoy un atajo nuevo al menos diez veces."
+    },
+    "fr": {
+     "t": "Des raccourcis clavier qui font gagner du temps",
+     "g": "Apprends quelques raccourcis universels qui accélèrent les tâches quotidiennes.",
+     "p": [
+      "Copier, coller, annuler, rechercher et enregistrer sont les grands classiques.",
+      "Changer de fenêtre et d'onglet au clavier garde tes mains sur les touches.",
+      "Apprends un nouveau raccourci à la fois jusqu'à ce qu'il devienne automatique."
+     ],
+     "q": "Quelle tâche répètes-tu le plus et qu'un raccourci pourrait accélérer ?",
+     "c": "Apprends et utilise aujourd'hui un nouveau raccourci au moins dix fois."
+    },
+    "it": {
+     "t": "Scorciatoie da tastiera che fanno risparmiare tempo",
+     "g": "Impara una manciata di scorciatoie universali che velocizzano le attività quotidiane.",
+     "p": [
+      "Copia, incolla, annulla, trova e salva sono i classici risparmia-tempo.",
+      "Cambiare finestra e scheda da tastiera tiene le mani sui tasti.",
+      "Impara una nuova scorciatoia alla volta finché diventa automatica."
+     ],
+     "q": "Quale attività ripeti di più che una scorciatoia potrebbe velocizzare?",
+     "c": "Impara e usa oggi una nuova scorciatoia almeno dieci volte."
+    },
+    "pt": {
+     "t": "Atalhos de teclado que poupam tempo",
+     "g": "Aprende alguns atalhos universais que aceleram as tarefas diárias.",
+     "p": [
+      "Copiar, colar, anular, procurar e guardar são os clássicos que poupam tempo.",
+      "Mudar de janela e separador pelo teclado mantém as mãos nas teclas.",
+      "Aprende um atalho novo de cada vez até ficar automático."
+     ],
+     "q": "Que tarefa repetes mais e um atalho poderia acelerar?",
+     "c": "Aprende e usa hoje um atalho novo pelo menos dez vezes."
+    },
+    "pt_BR": {
+     "t": "Atalhos de teclado que poupam tempo",
+     "g": "Aprenda alguns atalhos universais que aceleram as tarefas diárias.",
+     "p": [
+      "Copiar, colar, desfazer, buscar e salvar são os clássicos que poupam tempo.",
+      "Trocar de janela e aba pelo teclado mantém as mãos nas teclas.",
+      "Aprenda um atalho novo por vez até ficar automático."
+     ],
+     "q": "Que tarefa você mais repete e um atalho poderia acelerar?",
+     "c": "Aprenda e use hoje um atalho novo pelo menos dez vezes."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing tools without overload",
+     "g": "Avoid tool fatigue by agreeing which tool is used for what.",
+     "p": [
+      "Too many apps scatter information and add constant pings.",
+      "A simple team rule helps: chat for quick talk, documents for decisions.",
+      "Review your tools now and then and drop what nobody needs."
+     ],
+     "q": "How many apps do you check every day, and are they all useful?",
+     "c": "Write a one-line rule for each tool you use and drop one you do not need."
+    },
+    "de": {
+     "t": "Tools wählen, ohne sich zu überladen",
+     "g": "Vermeide Tool-Müdigkeit, indem ihr festlegt, welches Werkzeug wofür dient.",
+     "p": [
+      "Zu viele Apps verstreuen Informationen und erzeugen ständige Signale.",
+      "Eine einfache Teamregel hilft: Chat für Schnelles, Dokumente für Entscheidungen.",
+      "Prüfe deine Tools hin und wieder und streiche, was niemand braucht."
+     ],
+     "q": "Wie viele Apps prüfst du täglich, und sind alle nützlich?",
+     "c": "Schreib zu jedem Tool eine Ein-Satz-Regel und streiche eines, das du nicht brauchst."
+    },
+    "es": {
+     "t": "Elegir herramientas sin sobrecarga",
+     "g": "Evita el cansancio de herramientas acordando qué se usa para qué.",
+     "p": [
+      "Demasiadas apps dispersan la información y añaden avisos constantes.",
+      "Una regla sencilla ayuda: chat para lo rápido, documentos para las decisiones.",
+      "Revisa tus herramientas de vez en cuando y descarta las que nadie necesita."
+     ],
+     "q": "¿Cuántas apps revisas cada día y son todas útiles?",
+     "c": "Escribe una regla de una línea para cada herramienta y descarta una que no necesites."
+    },
+    "fr": {
+     "t": "Choisir ses outils sans surcharge",
+     "g": "Évite la fatigue des outils en convenant de ce qui sert à quoi.",
+     "p": [
+      "Trop d'applis dispersent l'information et multiplient les notifications.",
+      "Une règle simple aide : chat pour le rapide, documents pour les décisions.",
+      "Fais le point sur tes outils de temps en temps et abandonne ce dont personne n'a besoin."
+     ],
+     "q": "Combien d'applis consultes-tu chaque jour, et sont-elles toutes utiles ?",
+     "c": "Écris une règle d'une ligne pour chaque outil et abandonne-en un inutile."
+    },
+    "it": {
+     "t": "Scegliere strumenti senza sovraccarico",
+     "g": "Evita la stanchezza da strumenti stabilendo cosa si usa per cosa.",
+     "p": [
+      "Troppe app disperdono le informazioni e aggiungono notifiche continue.",
+      "Una regola semplice aiuta: chat per il rapido, documenti per le decisioni.",
+      "Rivedi i tuoi strumenti ogni tanto e lascia ciò che nessuno usa."
+     ],
+     "q": "Quante app controlli ogni giorno e sono tutte utili?",
+     "c": "Scrivi una regola di una riga per ogni strumento e lasciane uno che non ti serve."
+    },
+    "pt": {
+     "t": "Escolher ferramentas sem sobrecarga",
+     "g": "Evita o cansaço de ferramentas combinando o que se usa para quê.",
+     "p": [
+      "Demasiadas apps dispersam a informação e acrescentam avisos constantes.",
+      "Uma regra simples ajuda: chat para o rápido, documentos para as decisões.",
+      "Revê as tuas ferramentas de vez em quando e larga as que ninguém usa."
+     ],
+     "q": "Quantas apps verificas por dia e são todas úteis?",
+     "c": "Escreve uma regra de uma linha para cada ferramenta e larga uma de que não precisas."
+    },
+    "pt_BR": {
+     "t": "Escolhendo ferramentas sem sobrecarga",
+     "g": "Evite o cansaço de ferramentas combinando o que se usa para quê.",
+     "p": [
+      "Apps demais dispersam a informação e acrescentam avisos constantes.",
+      "Uma regra simples ajuda: chat para o rápido, documentos para as decisões.",
+      "Revise suas ferramentas de vez em quando e largue as que ninguém usa."
+     ],
+     "q": "Quantos apps você confere por dia e todos são úteis?",
+     "c": "Escreva uma regra de uma linha para cada ferramenta e largue uma de que você não precisa."
+    }
+   }
+  }
+ ]
+}

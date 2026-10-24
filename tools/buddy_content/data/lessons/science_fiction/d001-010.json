@@ -1,0 +1,835 @@
+{
+ "topic": "science_fiction",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What science fiction is",
+     "g": "Understand science fiction as stories built on a what-if rooted in science or technology.",
+     "p": [
+      "Science fiction asks 'what if?' and follows the answer with logic and imagination.",
+      "The change can be a machine, a discovery, a new planet or a future society.",
+      "Good SF makes us curious about the real world as well as the imagined one."
+     ],
+     "q": "Which science fiction story first made you wonder about the future?",
+     "c": "Write one 'what if' sentence about technology, like 'What if houses could grow?'"
+    },
+    "de": {
+     "t": "Was Science-Fiction ist",
+     "g": "Science-Fiction als Geschichten verstehen, die auf einem Was-wäre-wenn mit Wissenschaft oder Technik beruhen.",
+     "p": [
+      "Science-Fiction fragt 'Was wäre, wenn?' und denkt die Antwort logisch und fantasievoll weiter.",
+      "Die Veränderung kann eine Maschine, eine Entdeckung, ein neuer Planet oder eine Zukunftsgesellschaft sein.",
+      "Gute SF macht neugierig auf die echte Welt genauso wie auf die erfundene."
+     ],
+     "q": "Welche Science-Fiction-Geschichte hat dich zuerst über die Zukunft staunen lassen?",
+     "c": "Schreibe einen Was-wäre-wenn-Satz zur Technik, z. B. 'Was wäre, wenn Häuser wachsen könnten?'"
+    },
+    "es": {
+     "t": "Qué es la ciencia ficción",
+     "g": "Entender la ciencia ficción como historias basadas en un qué pasaría si apoyado en ciencia o tecnología.",
+     "p": [
+      "La ciencia ficción pregunta '¿y si...?' y sigue la respuesta con lógica e imaginación.",
+      "El cambio puede ser una máquina, un descubrimiento, un planeta nuevo o una sociedad futura.",
+      "La buena CF despierta curiosidad por el mundo real y por el imaginado."
+     ],
+     "q": "¿Qué historia de ciencia ficción te hizo pensar por primera vez en el futuro?",
+     "c": "Escribe una frase de '¿y si...?' sobre tecnología, como '¿Y si las casas pudieran crecer?'"
+    },
+    "fr": {
+     "t": "Ce qu'est la science-fiction",
+     "g": "Comprendre la science-fiction comme des récits fondés sur un et si appuyé sur la science ou la technique.",
+     "p": [
+      "La science-fiction demande 'et si ?' et suit la réponse avec logique et imagination.",
+      "Le changement peut être une machine, une découverte, une nouvelle planète ou une société future.",
+      "La bonne SF rend curieux du monde réel autant que du monde imaginé."
+     ],
+     "q": "Quelle histoire de science-fiction t'a fait rêver du futur pour la première fois ?",
+     "c": "Écris une phrase en 'et si ?' sur la technologie, comme 'Et si les maisons pouvaient pousser ?'"
+    },
+    "it": {
+     "t": "Cos'è la fantascienza",
+     "g": "Capire la fantascienza come storie costruite su un e se basato su scienza o tecnologia.",
+     "p": [
+      "La fantascienza chiede 'e se?' e segue la risposta con logica e immaginazione.",
+      "Il cambiamento può essere una macchina, una scoperta, un nuovo pianeta o una società futura.",
+      "La buona fantascienza incuriosisce sul mondo reale quanto su quello immaginato."
+     ],
+     "q": "Quale storia di fantascienza ti ha fatto pensare per la prima volta al futuro?",
+     "c": "Scrivi una frase con 'e se?' sulla tecnologia, come 'E se le case potessero crescere?'"
+    },
+    "pt": {
+     "t": "O que é a ficção científica",
+     "g": "Perceber a ficção científica como histórias assentes num e se baseado em ciência ou tecnologia.",
+     "p": [
+      "A ficção científica pergunta 'e se?' e segue a resposta com lógica e imaginação.",
+      "A mudança pode ser uma máquina, uma descoberta, um novo planeta ou uma sociedade futura.",
+      "A boa FC desperta curiosidade pelo mundo real tal como pelo imaginado."
+     ],
+     "q": "Que história de ficção científica te fez pensar pela primeira vez no futuro?",
+     "c": "Escreve uma frase com 'e se?' sobre tecnologia, como 'E se as casas pudessem crescer?'"
+    },
+    "pt_BR": {
+     "t": "O que é a ficção científica",
+     "g": "Entender a ficção científica como histórias construídas sobre um e se baseado em ciência ou tecnologia.",
+     "p": [
+      "A ficção científica pergunta 'e se?' e segue a resposta com lógica e imaginação.",
+      "A mudança pode ser uma máquina, uma descoberta, um novo planeta ou uma sociedade futura.",
+      "A boa FC desperta curiosidade pelo mundo real e também pelo imaginado."
+     ],
+     "q": "Qual história de ficção científica te fez pensar no futuro pela primeira vez?",
+     "c": "Escreva uma frase com 'e se?' sobre tecnologia, como 'E se as casas pudessem crescer?'"
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Science fiction vs fantasy",
+     "g": "See how SF explains wonders with plausible science while fantasy relies on magic.",
+     "p": [
+      "SF explains its wonders with science, technology or natural law, even if invented.",
+      "Fantasy accepts magic as part of the world and does not need to explain it.",
+      "The line blurs: some stories, like space fantasy, mix both on purpose."
+     ],
+     "q": "Do you prefer wonders that are explained or wonders that stay mysterious?",
+     "c": "Pick a movie or book and decide: does it explain its wonders, or just accept them?"
+    },
+    "de": {
+     "t": "Science-Fiction und Fantasy",
+     "g": "Erkennen, wie SF Wunder mit plausibler Wissenschaft erklärt, während Fantasy auf Magie setzt.",
+     "p": [
+      "SF erklärt ihre Wunder mit Wissenschaft, Technik oder Naturgesetzen, auch erfundenen.",
+      "Fantasy nimmt Magie als Teil der Welt hin und muss sie nicht erklären.",
+      "Die Grenze verschwimmt: Manche Geschichten, etwa Space Fantasy, mischen beides bewusst."
+     ],
+     "q": "Magst du lieber erklärte Wunder oder Wunder, die ein Geheimnis bleiben?",
+     "c": "Wähle einen Film oder ein Buch: Erklärt es seine Wunder oder nimmt es sie einfach hin?"
+    },
+    "es": {
+     "t": "Ciencia ficción y fantasía",
+     "g": "Ver cómo la CF explica sus maravillas con ciencia plausible mientras la fantasía usa magia.",
+     "p": [
+      "La CF explica sus maravillas con ciencia, tecnología o leyes naturales, aunque sean inventadas.",
+      "La fantasía acepta la magia como parte del mundo y no necesita explicarla.",
+      "La frontera es difusa: algunas historias, como la fantasía espacial, mezclan ambas a propósito."
+     ],
+     "q": "¿Prefieres maravillas explicadas o maravillas que siguen siendo un misterio?",
+     "c": "Elige una película o libro y decide: ¿explica sus maravillas o simplemente las acepta?"
+    },
+    "fr": {
+     "t": "Science-fiction et fantasy",
+     "g": "Voir comment la SF explique ses merveilles par une science plausible, alors que la fantasy use de magie.",
+     "p": [
+      "La SF explique ses merveilles par la science, la technique ou des lois naturelles, même inventées.",
+      "La fantasy accepte la magie comme part du monde et n'a pas à l'expliquer.",
+      "La frontière est floue : certaines histoires, comme l'espace-fantasy, mêlent les deux exprès."
+     ],
+     "q": "Préfères-tu les merveilles expliquées ou celles qui restent un mystère ?",
+     "c": "Choisis un film ou un livre : explique-t-il ses merveilles, ou les accepte-t-il simplement ?"
+    },
+    "it": {
+     "t": "Fantascienza e fantasy",
+     "g": "Vedere come la fantascienza spiega le meraviglie con scienza plausibile mentre il fantasy usa la magia.",
+     "p": [
+      "La fantascienza spiega le sue meraviglie con scienza, tecnologia o leggi naturali, anche inventate.",
+      "Il fantasy accetta la magia come parte del mondo e non deve spiegarla.",
+      "Il confine è sfumato: alcune storie, come lo space fantasy, mescolano le due cose di proposito."
+     ],
+     "q": "Preferisci meraviglie spiegate o meraviglie che restano un mistero?",
+     "c": "Scegli un film o un libro e decidi: spiega le sue meraviglie o le accetta e basta?"
+    },
+    "pt": {
+     "t": "Ficção científica e fantasia",
+     "g": "Ver como a FC explica maravilhas com ciência plausível enquanto a fantasia usa magia.",
+     "p": [
+      "A FC explica as suas maravilhas com ciência, tecnologia ou leis naturais, mesmo inventadas.",
+      "A fantasia aceita a magia como parte do mundo e não precisa de a explicar.",
+      "A fronteira é difusa: algumas histórias, como a fantasia espacial, misturam ambas de propósito."
+     ],
+     "q": "Preferes maravilhas explicadas ou maravilhas que continuam um mistério?",
+     "c": "Escolhe um filme ou livro e decide: explica as suas maravilhas ou apenas as aceita?"
+    },
+    "pt_BR": {
+     "t": "Ficção científica e fantasia",
+     "g": "Ver como a FC explica maravilhas com ciência plausível enquanto a fantasia usa magia.",
+     "p": [
+      "A FC explica suas maravilhas com ciência, tecnologia ou leis naturais, mesmo inventadas.",
+      "A fantasia aceita a magia como parte do mundo e não precisa explicá-la.",
+      "A fronteira é difusa: algumas histórias, como a fantasia espacial, misturam as duas de propósito."
+     ],
+     "q": "Você prefere maravilhas explicadas ou maravilhas que continuam um mistério?",
+     "c": "Escolha um filme ou livro e decida: ele explica suas maravilhas ou só as aceita?"
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The power of 'what if'",
+     "g": "Learn how one changed idea can build an entire story world.",
+     "p": [
+      "Start with one change, like thinking machines, and ask what else would change because of it.",
+      "Jobs, homes, laws and friendships all shift when a single idea shifts.",
+      "The best worlds feel real because every consequence is followed with care."
+     ],
+     "q": "If one invention appeared tomorrow, which would reshape daily life most?",
+     "c": "Choose one invention and list three ways it would change a normal morning."
+    },
+    "de": {
+     "t": "Die Kraft des Was-wäre-wenn",
+     "g": "Lernen, wie eine einzige veränderte Idee eine ganze Geschichtenwelt tragen kann.",
+     "p": [
+      "Man beginnt mit einer Änderung, etwa denkenden Maschinen, und fragt, was sich dadurch noch ändert.",
+      "Berufe, Wohnungen, Gesetze und Freundschaften wandeln sich, wenn sich eine Idee wandelt.",
+      "Die besten Welten wirken echt, weil jede Folge sorgfältig weitergedacht wird."
+     ],
+     "q": "Welche Erfindung würde morgen dein Alltagsleben am meisten verändern?",
+     "c": "Wähle eine Erfindung und nenne drei Dinge, die sich an einem normalen Morgen ändern würden."
+    },
+    "es": {
+     "t": "El poder del ¿y si...?",
+     "g": "Aprender cómo una sola idea cambiada puede construir un mundo narrativo entero.",
+     "p": [
+      "Se parte de un cambio, como máquinas que piensan, y se pregunta qué más cambiaría por ello.",
+      "Empleos, casas, leyes y amistades se transforman cuando cambia una sola idea.",
+      "Los mejores mundos parecen reales porque cada consecuencia se sigue con cuidado."
+     ],
+     "q": "Si mañana apareciera un invento, ¿cuál cambiaría más tu vida diaria?",
+     "c": "Elige un invento y anota tres formas en que cambiaría una mañana normal."
+    },
+    "fr": {
+     "t": "Le pouvoir du « et si ? »",
+     "g": "Apprendre comment une seule idée modifiée peut bâtir tout un monde d'histoire.",
+     "p": [
+      "On part d'un changement, comme des machines pensantes, et on cherche ce qui changerait aussi.",
+      "Métiers, maisons, lois et amitiés évoluent quand une seule idée évolue.",
+      "Les meilleurs mondes semblent réels car chaque conséquence est suivie avec soin."
+     ],
+     "q": "Si une invention apparaissait demain, laquelle changerait le plus ton quotidien ?",
+     "c": "Choisis une invention et note trois façons dont elle changerait un matin ordinaire."
+    },
+    "it": {
+     "t": "Il potere dell'e se",
+     "g": "Imparare come una sola idea cambiata possa costruire un intero mondo narrativo.",
+     "p": [
+      "Si parte da un cambiamento, come le macchine pensanti, e ci si chiede cos'altro cambierebbe.",
+      "Lavori, case, leggi e amicizie mutano quando cambia una sola idea.",
+      "I mondi migliori sembrano reali perché ogni conseguenza è seguita con cura."
+     ],
+     "q": "Se domani comparisse un'invenzione, quale cambierebbe di più la tua vita quotidiana?",
+     "c": "Scegli un'invenzione ed elenca tre modi in cui cambierebbe una mattina normale."
+    },
+    "pt": {
+     "t": "O poder do e se",
+     "g": "Aprender como uma só ideia alterada pode construir um mundo narrativo inteiro.",
+     "p": [
+      "Parte-se de uma mudança, como máquinas que pensam, e pergunta-se o que mais mudaria.",
+      "Empregos, casas, leis e amizades transformam-se quando muda uma só ideia.",
+      "Os melhores mundos parecem reais porque cada consequência é seguida com cuidado."
+     ],
+     "q": "Se amanhã surgisse uma invenção, qual mudaria mais o teu dia a dia?",
+     "c": "Escolhe uma invenção e anota três formas como mudaria uma manhã normal."
+    },
+    "pt_BR": {
+     "t": "O poder do e se",
+     "g": "Aprender como uma só ideia alterada pode construir um mundo narrativo inteiro.",
+     "p": [
+      "Parte-se de uma mudança, como máquinas que pensam, e pergunta-se o que mais mudaria.",
+      "Empregos, casas, leis e amizades se transformam quando uma única ideia muda.",
+      "Os melhores mundos parecem reais porque cada consequência é seguida com cuidado."
+     ],
+     "q": "Se amanhã surgisse uma invenção, qual mudaria mais o seu dia a dia?",
+     "c": "Escolha uma invenção e anote três jeitos em que ela mudaria uma manhã comum."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hard and soft science fiction",
+     "g": "Tell stories that care about accurate physics from stories that focus on people and society.",
+     "p": [
+      "Hard SF sticks closely to known science, like orbits, gravity and chemistry.",
+      "Soft SF puts feelings, culture and society first and treats science more loosely.",
+      "Neither is better; many great books sit somewhere in the middle."
+     ],
+     "q": "Do you enjoy checking the science, or do you read mostly for the characters?",
+     "c": "Think of one SF story and place it on a line from hard to soft."
+    },
+    "de": {
+     "t": "Harte und weiche Science-Fiction",
+     "g": "Geschichten mit genauer Physik von solchen unterscheiden, die Menschen und Gesellschaft betonen.",
+     "p": [
+      "Harte SF hält sich eng an bekannte Wissenschaft, etwa Umlaufbahnen, Schwerkraft und Chemie.",
+      "Weiche SF stellt Gefühle, Kultur und Gesellschaft voran und nimmt es mit der Technik lockerer.",
+      "Keine ist besser; viele großartige Bücher liegen irgendwo dazwischen."
+     ],
+     "q": "Prüfst du gern die Wissenschaft nach oder liest du vor allem wegen der Figuren?",
+     "c": "Denk an eine SF-Geschichte und ordne sie auf einer Linie von hart bis weich ein."
+    },
+    "es": {
+     "t": "Ciencia ficción dura y blanda",
+     "g": "Distinguir las historias que cuidan la física exacta de las que se centran en personas y sociedad.",
+     "p": [
+      "La CF dura se ciñe a la ciencia conocida, como órbitas, gravedad y química.",
+      "La CF blanda prioriza emociones, cultura y sociedad y trata la ciencia con más libertad.",
+      "Ninguna es mejor; muchos grandes libros están en un punto intermedio."
+     ],
+     "q": "¿Disfrutas comprobando la ciencia o lees sobre todo por los personajes?",
+     "c": "Piensa en una historia de CF y colócala en una línea de dura a blanda."
+    },
+    "fr": {
+     "t": "SF dure et SF douce",
+     "g": "Distinguer les récits soucieux de physique exacte de ceux centrés sur les gens et la société.",
+     "p": [
+      "La SF dure reste proche de la science connue : orbites, gravité, chimie.",
+      "La SF douce met les émotions, la culture et la société d'abord et traite la science plus librement.",
+      "Aucune n'est meilleure ; beaucoup de grands livres se situent entre les deux."
+     ],
+     "q": "Aimes-tu vérifier la science, ou lis-tu surtout pour les personnages ?",
+     "c": "Pense à une histoire de SF et place-la sur une ligne de dure à douce."
+    },
+    "it": {
+     "t": "Fantascienza hard e soft",
+     "g": "Distinguere le storie attente alla fisica esatta da quelle centrate su persone e società.",
+     "p": [
+      "La fantascienza hard resta vicina alla scienza nota, come orbite, gravità e chimica.",
+      "Quella soft mette al primo posto emozioni, cultura e società e tratta la scienza più liberamente.",
+      "Nessuna è migliore; molti grandi libri stanno a metà strada."
+     ],
+     "q": "Ti piace verificare la scienza o leggi soprattutto per i personaggi?",
+     "c": "Pensa a una storia di fantascienza e collocala su una linea da hard a soft."
+    },
+    "pt": {
+     "t": "Ficção científica dura e mole",
+     "g": "Distinguir as histórias que cuidam da física exata das que se centram em pessoas e sociedade.",
+     "p": [
+      "A FC dura mantém-se próxima da ciência conhecida, como órbitas, gravidade e química.",
+      "A FC mole dá prioridade a emoções, cultura e sociedade e trata a ciência com mais liberdade.",
+      "Nenhuma é melhor; muitos grandes livros ficam num ponto intermédio."
+     ],
+     "q": "Gostas de verificar a ciência ou lês sobretudo pelas personagens?",
+     "c": "Pensa numa história de FC e coloca-a numa linha de dura a mole."
+    },
+    "pt_BR": {
+     "t": "Ficção científica hard e soft",
+     "g": "Distinguir as histórias que cuidam da física exata das que focam em pessoas e sociedade.",
+     "p": [
+      "A FC hard fica próxima da ciência conhecida, como órbitas, gravidade e química.",
+      "A FC soft prioriza emoções, cultura e sociedade e trata a ciência com mais liberdade.",
+      "Nenhuma é melhor; muitos grandes livros ficam num meio-termo."
+     ],
+     "q": "Você gosta de conferir a ciência ou lê mais pelos personagens?",
+     "c": "Pense numa história de FC e coloque-a numa linha de hard a soft."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A map of subgenres",
+     "g": "Take a quick tour of the main families of science fiction.",
+     "p": [
+      "Space opera: big adventures among the stars. Cyberpunk: networks, hackers and neon cities.",
+      "Time travel plays with past and future; first contact explores meeting other minds.",
+      "Many more exist, such as solarpunk, which imagines hopeful, green futures."
+     ],
+     "q": "Which subgenre sounds most like your kind of story?",
+     "c": "Invent a name and one-line pitch for a brand new subgenre."
+    },
+    "de": {
+     "t": "Eine Landkarte der Subgenres",
+     "g": "Eine kurze Tour durch die wichtigsten Familien der Science-Fiction.",
+     "p": [
+      "Space Opera: große Abenteuer zwischen den Sternen. Cyberpunk: Netze, Hacker und Neonstädte.",
+      "Zeitreisen spielen mit Vergangenheit und Zukunft; Erstkontakt erkundet die Begegnung mit fremden Geistern.",
+      "Es gibt viele weitere, etwa Solarpunk, das hoffnungsvolle, grüne Zukünfte entwirft."
+     ],
+     "q": "Welches Subgenre klingt am ehesten nach deiner Art von Geschichte?",
+     "c": "Erfinde einen Namen und einen Ein-Satz-Pitch für ein ganz neues Subgenre."
+    },
+    "es": {
+     "t": "Un mapa de subgéneros",
+     "g": "Hacer un recorrido rápido por las grandes familias de la ciencia ficción.",
+     "p": [
+      "Ópera espacial: grandes aventuras entre estrellas. Ciberpunk: redes, hackers y ciudades de neón.",
+      "Los viajes en el tiempo juegan con pasado y futuro; el primer contacto explora el encuentro con otras mentes.",
+      "Existen muchos más, como el solarpunk, que imagina futuros verdes y esperanzadores."
+     ],
+     "q": "¿Qué subgénero suena más a tu tipo de historia?",
+     "c": "Inventa un nombre y una frase de presentación para un subgénero totalmente nuevo."
+    },
+    "fr": {
+     "t": "Une carte des sous-genres",
+     "g": "Faire un tour rapide des grandes familles de la science-fiction.",
+     "p": [
+      "Space opera : grandes aventures parmi les étoiles. Cyberpunk : réseaux, hackers et villes néon.",
+      "Le voyage dans le temps joue avec passé et futur ; le premier contact explore la rencontre d'autres esprits.",
+      "Il en existe bien d'autres, comme le solarpunk, qui imagine des futurs verts et pleins d'espoir."
+     ],
+     "q": "Quel sous-genre ressemble le plus à ton type d'histoire ?",
+     "c": "Invente un nom et une phrase de présentation pour un tout nouveau sous-genre."
+    },
+    "it": {
+     "t": "Una mappa dei sottogeneri",
+     "g": "Fare un rapido giro delle grandi famiglie della fantascienza.",
+     "p": [
+      "Space opera: grandi avventure tra le stelle. Cyberpunk: reti, hacker e città al neon.",
+      "I viaggi nel tempo giocano con passato e futuro; il primo contatto esplora l'incontro con altre menti.",
+      "Ne esistono molti altri, come il solarpunk, che immagina futuri verdi e pieni di speranza."
+     ],
+     "q": "Quale sottogenere somiglia di più al tuo tipo di storia?",
+     "c": "Inventa un nome e una frase di presentazione per un sottogenere del tutto nuovo."
+    },
+    "pt": {
+     "t": "Um mapa de subgéneros",
+     "g": "Fazer uma viagem rápida pelas grandes famílias da ficção científica.",
+     "p": [
+      "Ópera espacial: grandes aventuras entre as estrelas. Ciberpunk: redes, hackers e cidades de néon.",
+      "As viagens no tempo brincam com passado e futuro; o primeiro contacto explora o encontro com outras mentes.",
+      "Há muitos mais, como o solarpunk, que imagina futuros verdes e esperançosos."
+     ],
+     "q": "Que subgénero soa mais ao teu tipo de história?",
+     "c": "Inventa um nome e uma frase de apresentação para um subgénero totalmente novo."
+    },
+    "pt_BR": {
+     "t": "Um mapa de subgêneros",
+     "g": "Fazer um passeio rápido pelas grandes famílias da ficção científica.",
+     "p": [
+      "Ópera espacial: grandes aventuras entre as estrelas. Cyberpunk: redes, hackers e cidades de neon.",
+      "As viagens no tempo brincam com passado e futuro; o primeiro contato explora o encontro com outras mentes.",
+      "Há muitos outros, como o solarpunk, que imagina futuros verdes e esperançosos."
+     ],
+     "q": "Qual subgênero soa mais como o seu tipo de história?",
+     "c": "Invente um nome e uma frase de apresentação para um subgênero totalmente novo."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mary Shelley's Frankenstein",
+     "g": "Learn why the 1818 novel is often called the first science fiction novel.",
+     "p": [
+      "Mary Shelley published Frankenstein in 1818, when she was only about twenty.",
+      "Its hero, Victor Frankenstein, uses science to create life and must face the results.",
+      "The book asks a lasting question: what do inventors owe to what they create?"
+     ],
+     "q": "What do you think creators of new technology should always consider?",
+     "c": "Write two sentences giving advice to a young inventor, as Shelley might have."
+    },
+    "de": {
+     "t": "Mary Shelleys Frankenstein",
+     "g": "Erfahren, warum der Roman von 1818 oft als erster Science-Fiction-Roman gilt.",
+     "p": [
+      "Mary Shelley veröffentlichte Frankenstein 1818, als sie erst etwa zwanzig war.",
+      "Ihr Held Victor Frankenstein erschafft mit Wissenschaft Leben und muss sich den Folgen stellen.",
+      "Das Buch stellt eine bleibende Frage: Was schulden Erfinder dem, was sie erschaffen?"
+     ],
+     "q": "Was sollten Schöpfer neuer Technik deiner Meinung nach immer bedenken?",
+     "c": "Schreibe zwei Sätze mit einem Rat an eine junge Erfinderin, wie Shelley sie geben könnte."
+    },
+    "es": {
+     "t": "El Frankenstein de Mary Shelley",
+     "g": "Conocer por qué la novela de 1818 se considera a menudo la primera de ciencia ficción.",
+     "p": [
+      "Mary Shelley publicó Frankenstein en 1818, cuando tenía unos veinte años.",
+      "Su protagonista, Victor Frankenstein, usa la ciencia para crear vida y debe afrontar las consecuencias.",
+      "El libro plantea una pregunta duradera: ¿qué deben los inventores a lo que crean?"
+     ],
+     "q": "¿Qué crees que quienes crean nueva tecnología deberían tener siempre presente?",
+     "c": "Escribe dos frases con un consejo para un joven inventor, como lo haría Shelley."
+    },
+    "fr": {
+     "t": "Frankenstein de Mary Shelley",
+     "g": "Comprendre pourquoi le roman de 1818 est souvent vu comme le premier roman de science-fiction.",
+     "p": [
+      "Mary Shelley publie Frankenstein en 1818, alors qu'elle a environ vingt ans.",
+      "Son héros, Victor Frankenstein, crée la vie grâce à la science et doit en affronter les conséquences.",
+      "Le livre pose une question durable : que doivent les inventeurs à ce qu'ils créent ?"
+     ],
+     "q": "Que devraient toujours garder en tête les créateurs de nouvelles technologies, selon toi ?",
+     "c": "Écris deux phrases de conseil à une jeune inventrice, comme Shelley aurait pu le faire."
+    },
+    "it": {
+     "t": "Il Frankenstein di Mary Shelley",
+     "g": "Scoprire perché il romanzo del 1818 è spesso detto il primo romanzo di fantascienza.",
+     "p": [
+      "Mary Shelley pubblicò Frankenstein nel 1818, quando aveva circa vent'anni.",
+      "Il protagonista, Victor Frankenstein, crea la vita con la scienza e ne affronta le conseguenze.",
+      "Il libro pone una domanda duratura: cosa devono gli inventori a ciò che creano?"
+     ],
+     "q": "Cosa pensi che chi crea nuova tecnologia dovrebbe sempre considerare?",
+     "c": "Scrivi due frasi di consiglio a una giovane inventrice, come avrebbe fatto Shelley."
+    },
+    "pt": {
+     "t": "O Frankenstein de Mary Shelley",
+     "g": "Perceber porque é que o romance de 1818 é muitas vezes chamado o primeiro de ficção científica.",
+     "p": [
+      "Mary Shelley publicou Frankenstein em 1818, quando tinha cerca de vinte anos.",
+      "O herói, Victor Frankenstein, usa a ciência para criar vida e tem de enfrentar as consequências.",
+      "O livro levanta uma pergunta duradoura: o que devem os inventores àquilo que criam?"
+     ],
+     "q": "O que achas que quem cria nova tecnologia deve ter sempre em conta?",
+     "c": "Escreve duas frases com um conselho a um jovem inventor, como Shelley faria."
+    },
+    "pt_BR": {
+     "t": "O Frankenstein de Mary Shelley",
+     "g": "Entender por que o romance de 1818 é muitas vezes chamado de primeiro de ficção científica.",
+     "p": [
+      "Mary Shelley publicou Frankenstein em 1818, quando tinha cerca de vinte anos.",
+      "O herói, Victor Frankenstein, usa a ciência para criar vida e precisa enfrentar as consequências.",
+      "O livro levanta uma pergunta duradoura: o que os inventores devem àquilo que criam?"
+     ],
+     "q": "O que você acha que quem cria nova tecnologia deve sempre considerar?",
+     "c": "Escreva duas frases com um conselho a um jovem inventor, como Shelley faria."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Jules Verne's voyages",
+     "g": "See how Verne mixed adventure with the real science of his time.",
+     "p": [
+      "Jules Verne, a French author, wrote Twenty Thousand Leagues Under the Seas in 1870.",
+      "In it, Captain Nemo explores the oceans aboard the submarine Nautilus.",
+      "Verne read widely about science and tried to keep his machines believable."
+     ],
+     "q": "Which Verne adventure, journey to the Moon or under the sea, tempts you more?",
+     "c": "Sketch or describe your own Verne-style vehicle and name where it would go."
+    },
+    "de": {
+     "t": "Jules Vernes Reisen",
+     "g": "Sehen, wie Verne Abenteuer mit der echten Wissenschaft seiner Zeit verband.",
+     "p": [
+      "Der Franzose Jules Verne schrieb 1870 Zwanzigtausend Meilen unter dem Meer.",
+      "Darin erkundet Kapitän Nemo mit dem U-Boot Nautilus die Ozeane.",
+      "Verne las viel über Wissenschaft und wollte seine Maschinen glaubhaft halten."
+     ],
+     "q": "Welches Verne-Abenteuer lockt dich mehr, die Reise zum Mond oder unter das Meer?",
+     "c": "Zeichne oder beschreibe dein eigenes Fahrzeug im Verne-Stil und nenne sein Ziel."
+    },
+    "es": {
+     "t": "Los viajes de Jules Verne",
+     "g": "Ver cómo Verne mezclaba la aventura con la ciencia real de su época.",
+     "p": [
+      "El francés Jules Verne escribió Veinte mil leguas de viaje submarino en 1870.",
+      "En ella, el capitán Nemo explora los océanos a bordo del submarino Nautilus.",
+      "Verne leía mucho sobre ciencia e intentaba que sus máquinas fueran creíbles."
+     ],
+     "q": "¿Qué aventura de Verne te tienta más, el viaje a la Luna o el fondo del mar?",
+     "c": "Dibuja o describe tu propio vehículo al estilo de Verne y di adónde iría."
+    },
+    "fr": {
+     "t": "Les voyages de Jules Verne",
+     "g": "Voir comment Verne mêlait l'aventure à la science réelle de son temps.",
+     "p": [
+      "Le Français Jules Verne publie Vingt mille lieues sous les mers en 1870.",
+      "Le capitaine Nemo y explore les océans à bord du sous-marin Nautilus.",
+      "Verne lisait beaucoup de science et voulait des machines crédibles."
+     ],
+     "q": "Quelle aventure de Verne te tente le plus, le voyage lunaire ou les fonds marins ?",
+     "c": "Dessine ou décris ton propre véhicule à la Verne et dis où il irait."
+    },
+    "it": {
+     "t": "I viaggi di Jules Verne",
+     "g": "Vedere come Verne univa l'avventura alla scienza reale del suo tempo.",
+     "p": [
+      "Il francese Jules Verne scrisse Ventimila leghe sotto i mari nel 1870.",
+      "Qui il capitano Nemo esplora gli oceani a bordo del sottomarino Nautilus.",
+      "Verne leggeva molto di scienza e cercava di rendere credibili le sue macchine."
+     ],
+     "q": "Quale avventura di Verne ti tenta di più, il viaggio sulla Luna o quello sotto il mare?",
+     "c": "Disegna o descrivi un tuo veicolo in stile Verne e di' dove andrebbe."
+    },
+    "pt": {
+     "t": "As viagens de Júlio Verne",
+     "g": "Ver como Verne misturava aventura com a ciência real do seu tempo.",
+     "p": [
+      "O francês Júlio Verne escreveu Vinte Mil Léguas Submarinas em 1870.",
+      "Nele, o capitão Nemo explora os oceanos a bordo do submarino Nautilus.",
+      "Verne lia muito sobre ciência e procurava que as suas máquinas fossem credíveis."
+     ],
+     "q": "Que aventura de Verne te tenta mais, a viagem à Lua ou o fundo do mar?",
+     "c": "Desenha ou descreve o teu veículo ao estilo de Verne e diz para onde iria."
+    },
+    "pt_BR": {
+     "t": "As viagens de Júlio Verne",
+     "g": "Ver como Verne misturava aventura com a ciência real da sua época.",
+     "p": [
+      "O francês Júlio Verne escreveu Vinte Mil Léguas Submarinas em 1870.",
+      "Nele, o capitão Nemo explora os oceanos a bordo do submarino Nautilus.",
+      "Verne lia muito sobre ciência e procurava deixar suas máquinas críveis."
+     ],
+     "q": "Qual aventura de Verne tenta mais você, a viagem à Lua ou o fundo do mar?",
+     "c": "Desenhe ou descreva seu próprio veículo no estilo de Verne e diga aonde iria."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "H. G. Wells and big ideas",
+     "g": "Meet the ideas Wells introduced that SF still uses today.",
+     "p": [
+      "The Time Machine (1895) sent a traveller far into the future of humanity.",
+      "The War of the Worlds (1898) imagined visitors from Mars and the first big alien story.",
+      "The Invisible Man (1897) asked how science could change a single life."
+     ],
+     "q": "Which Wells idea feels freshest to you today?",
+     "c": "Pick one Wells idea and imagine it in a modern city in two sentences."
+    },
+    "de": {
+     "t": "H. G. Wells und große Ideen",
+     "g": "Die Ideen kennenlernen, die Wells einführte und die SF bis heute nutzt.",
+     "p": [
+      "Die Zeitmaschine (1895) schickte einen Reisenden weit in die Zukunft der Menschheit.",
+      "Der Krieg der Welten (1898) erfand Besucher vom Mars und die erste große Alien-Geschichte.",
+      "Der Unsichtbare (1897) fragte, wie Wissenschaft ein einzelnes Leben verändern kann."
+     ],
+     "q": "Welche Wells-Idee wirkt auf dich heute am frischesten?",
+     "c": "Wähle eine Wells-Idee und stelle sie dir in zwei Sätzen in einer modernen Stadt vor."
+    },
+    "es": {
+     "t": "H. G. Wells y las grandes ideas",
+     "g": "Conocer las ideas que Wells introdujo y que la CF sigue usando hoy.",
+     "p": [
+      "La máquina del tiempo (1895) envió a un viajero muy lejos, al futuro de la humanidad.",
+      "La guerra de los mundos (1898) imaginó visitantes de Marte y la primera gran historia de alienígenas.",
+      "El hombre invisible (1897) preguntó cómo la ciencia puede cambiar una sola vida."
+     ],
+     "q": "¿Qué idea de Wells te parece más fresca hoy?",
+     "c": "Elige una idea de Wells e imagínala en una ciudad moderna en dos frases."
+    },
+    "fr": {
+     "t": "H. G. Wells et les grandes idées",
+     "g": "Découvrir les idées introduites par Wells que la SF utilise encore.",
+     "p": [
+      "La Machine à explorer le temps (1895) envoie un voyageur très loin dans l'avenir de l'humanité.",
+      "La Guerre des mondes (1898) imagine des visiteurs de Mars, première grande histoire d'extraterrestres.",
+      "L'Homme invisible (1897) demande comment la science peut changer une seule vie."
+     ],
+     "q": "Quelle idée de Wells te paraît la plus fraîche aujourd'hui ?",
+     "c": "Choisis une idée de Wells et imagine-la dans une ville moderne en deux phrases."
+    },
+    "it": {
+     "t": "H. G. Wells e le grandi idee",
+     "g": "Conoscere le idee introdotte da Wells che la fantascienza usa ancora oggi.",
+     "p": [
+      "La macchina del tempo (1895) mandò un viaggiatore lontano nel futuro dell'umanità.",
+      "La guerra dei mondi (1898) immaginò visitatori da Marte, la prima grande storia di alieni.",
+      "L'uomo invisibile (1897) chiese come la scienza possa cambiare una sola vita."
+     ],
+     "q": "Quale idea di Wells ti sembra più fresca oggi?",
+     "c": "Scegli un'idea di Wells e immaginala in una città moderna in due frasi."
+    },
+    "pt": {
+     "t": "H. G. Wells e as grandes ideias",
+     "g": "Conhecer as ideias que Wells introduziu e que a FC ainda usa hoje.",
+     "p": [
+      "A Máquina do Tempo (1895) enviou um viajante muito longe, para o futuro da humanidade.",
+      "A Guerra dos Mundos (1898) imaginou visitantes de Marte e a primeira grande história de alienígenas.",
+      "O Homem Invisível (1897) perguntou como a ciência pode mudar uma só vida."
+     ],
+     "q": "Que ideia de Wells te parece mais fresca hoje?",
+     "c": "Escolhe uma ideia de Wells e imagina-a numa cidade moderna em duas frases."
+    },
+    "pt_BR": {
+     "t": "H. G. Wells e as grandes ideias",
+     "g": "Conhecer as ideias que Wells introduziu e que a FC ainda usa hoje.",
+     "p": [
+      "A Máquina do Tempo (1895) enviou um viajante muito longe, ao futuro da humanidade.",
+      "A Guerra dos Mundos (1898) imaginou visitantes de Marte e a primeira grande história de alienígenas.",
+      "O Homem Invisível (1897) perguntou como a ciência pode mudar uma só vida."
+     ],
+     "q": "Qual ideia de Wells parece mais fresca para você hoje?",
+     "c": "Escolha uma ideia de Wells e imagine-a numa cidade moderna em duas frases."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hugo Gernsback and the pulps",
+     "g": "Learn how 1920s magazines helped name the genre and find its audience.",
+     "p": [
+      "Hugo Gernsback launched Amazing Stories in 1926, the first magazine just for SF.",
+      "He first called the genre scientifiction, a word later replaced by science fiction.",
+      "Cheap pulp magazines gave young writers a place to share bold ideas."
+     ],
+     "q": "Would you have liked to read a magazine like that in the 1920s?",
+     "c": "Write a catchy pulp-style magazine title and a one-line cover teaser."
+    },
+    "de": {
+     "t": "Hugo Gernsback und die Pulps",
+     "g": "Erfahren, wie Magazine der 1920er das Genre benannten und sein Publikum fanden.",
+     "p": [
+      "Hugo Gernsback gründete 1926 Amazing Stories, das erste Magazin nur für SF.",
+      "Er nannte das Genre zuerst Scientifiction, später setzte sich Science Fiction durch.",
+      "Billige Pulp-Hefte gaben jungen Autoren Raum für kühne Ideen."
+     ],
+     "q": "Hättest du in den 1920ern gern ein solches Magazin gelesen?",
+     "c": "Erfinde einen zugkräftigen Pulp-Magazintitel und einen Ein-Satz-Teaser fürs Cover."
+    },
+    "es": {
+     "t": "Hugo Gernsback y las revistas pulp",
+     "g": "Aprender cómo las revistas de los años veinte ayudaron a nombrar el género y a hallar su público.",
+     "p": [
+      "Hugo Gernsback lanzó Amazing Stories en 1926, la primera revista solo de CF.",
+      "Al principio llamó al género scientifiction, palabra que luego dio paso a ciencia ficción.",
+      "Las baratas revistas pulp daban a jóvenes autores un lugar para ideas audaces."
+     ],
+     "q": "¿Te habría gustado leer una revista así en los años veinte?",
+     "c": "Escribe un título llamativo de revista pulp y un lema de una línea para la portada."
+    },
+    "fr": {
+     "t": "Hugo Gernsback et les pulps",
+     "g": "Apprendre comment les magazines des années 1920 ont nommé le genre et trouvé son public.",
+     "p": [
+      "Hugo Gernsback lance Amazing Stories en 1926, premier magazine uniquement de SF.",
+      "Il appelle d'abord le genre scientifiction, mot remplacé ensuite par science-fiction.",
+      "Les magazines pulp bon marché offraient aux jeunes auteurs un lieu pour des idées audacieuses."
+     ],
+     "q": "Aurais-tu aimé lire un tel magazine dans les années 1920 ?",
+     "c": "Écris un titre accrocheur de magazine pulp et une phrase d'accroche pour la couverture."
+    },
+    "it": {
+     "t": "Hugo Gernsback e le riviste pulp",
+     "g": "Scoprire come le riviste degli anni Venti diedero un nome al genere e trovarono il pubblico.",
+     "p": [
+      "Hugo Gernsback lanciò Amazing Stories nel 1926, la prima rivista solo di fantascienza.",
+      "Chiamò prima il genere scientifiction, parola poi sostituita da science fiction.",
+      "Le economiche riviste pulp davano ai giovani autori un posto per idee audaci."
+     ],
+     "q": "Ti sarebbe piaciuto leggere una rivista così negli anni Venti?",
+     "c": "Scrivi un titolo accattivante di rivista pulp e uno slogan di una riga per la copertina."
+    },
+    "pt": {
+     "t": "Hugo Gernsback e as revistas pulp",
+     "g": "Saber como as revistas dos anos 1920 ajudaram a dar nome ao género e a encontrar público.",
+     "p": [
+      "Hugo Gernsback lançou a Amazing Stories em 1926, a primeira revista só de FC.",
+      "Chamou primeiro ao género scientifiction, palavra depois substituída por ficção científica.",
+      "As baratas revistas pulp davam a jovens autores um lugar para ideias ousadas."
+     ],
+     "q": "Gostarias de ter lido uma revista assim nos anos 1920?",
+     "c": "Escreve um título apelativo de revista pulp e uma frase de capa numa linha."
+    },
+    "pt_BR": {
+     "t": "Hugo Gernsback e as revistas pulp",
+     "g": "Saber como as revistas dos anos 1920 ajudaram a dar nome ao gênero e a achar público.",
+     "p": [
+      "Hugo Gernsback lançou a Amazing Stories em 1926, a primeira revista só de FC.",
+      "Ele chamou o gênero primeiro de scientifiction, palavra depois trocada por ficção científica.",
+      "As baratas revistas pulp davam a jovens autores um lugar para ideias ousadas."
+     ],
+     "q": "Você gostaria de ter lido uma revista assim nos anos 1920?",
+     "c": "Escreva um título atraente de revista pulp e uma frase de capa de uma linha."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Golden Age of SF",
+     "g": "Explore the 1940s and 50s era of rockets, robots and bold optimism.",
+     "p": [
+      "Writers like Asimov, Clarke and Heinlein shaped modern SF in these decades.",
+      "Editor John W. Campbell pushed authors toward sharper science and sharper ideas.",
+      "Stories of the era often trusted that curiosity and engineering could solve problems."
+     ],
+     "q": "What do you find most appealing about optimistic visions of the future?",
+     "c": "Imagine a golden-age cover with a rocket and a robot, and describe it in a sentence."
+    },
+    "de": {
+     "t": "Das Goldene Zeitalter der SF",
+     "g": "Die Ära der 1940er und 50er mit Raketen, Robotern und mutigem Optimismus erkunden.",
+     "p": [
+      "Autoren wie Asimov, Clarke und Heinlein prägten in diesen Jahrzehnten die moderne SF.",
+      "Der Herausgeber John W. Campbell drängte Autoren zu klarerer Wissenschaft und schärferen Ideen.",
+      "Geschichten jener Zeit vertrauten oft darauf, dass Neugier und Technik Probleme lösen."
+     ],
+     "q": "Was gefällt dir an optimistischen Zukunftsbildern am meisten?",
+     "c": "Stell dir ein Cover des Goldenen Zeitalters mit Rakete und Roboter vor und beschreibe es in einem Satz."
+    },
+    "es": {
+     "t": "La Edad de Oro de la CF",
+     "g": "Explorar la era de los años cuarenta y cincuenta, de cohetes, robots y optimismo audaz.",
+     "p": [
+      "Autores como Asimov, Clarke y Heinlein dieron forma a la CF moderna en esas décadas.",
+      "El editor John W. Campbell empujaba a los autores hacia ciencia e ideas más afiladas.",
+      "Las historias de la época solían confiar en que la curiosidad y la ingeniería resolverían problemas."
+     ],
+     "q": "¿Qué te resulta más atractivo de las visiones optimistas del futuro?",
+     "c": "Imagina una portada de la edad de oro con un cohete y un robot y descríbela en una frase."
+    },
+    "fr": {
+     "t": "L'âge d'or de la SF",
+     "g": "Explorer l'ère des années 1940 et 1950, faite de fusées, de robots et d'optimisme audacieux.",
+     "p": [
+      "Des auteurs comme Asimov, Clarke et Heinlein ont façonné la SF moderne durant ces décennies.",
+      "L'éditeur John W. Campbell poussait les auteurs vers une science et des idées plus nettes.",
+      "Les récits de l'époque croyaient souvent que curiosité et ingénierie résoudraient les problèmes."
+     ],
+     "q": "Qu'est-ce qui te plaît le plus dans les visions optimistes du futur ?",
+     "c": "Imagine une couverture de l'âge d'or avec une fusée et un robot et décris-la en une phrase."
+    },
+    "it": {
+     "t": "L'età d'oro della fantascienza",
+     "g": "Esplorare l'era degli anni Quaranta e Cinquanta, fatta di razzi, robot e ottimismo audace.",
+     "p": [
+      "Autori come Asimov, Clarke e Heinlein plasmarono la fantascienza moderna in quei decenni.",
+      "L'editor John W. Campbell spingeva gli autori verso scienza e idee più nitide.",
+      "Le storie dell'epoca spesso confidavano che curiosità e ingegneria risolvessero i problemi."
+     ],
+     "q": "Cosa trovi più attraente nelle visioni ottimistiche del futuro?",
+     "c": "Immagina una copertina dell'età d'oro con un razzo e un robot e descrivila in una frase."
+    },
+    "pt": {
+     "t": "A Idade de Ouro da FC",
+     "g": "Explorar a era dos anos 1940 e 50, de foguetões, robôs e otimismo ousado.",
+     "p": [
+      "Autores como Asimov, Clarke e Heinlein moldaram a FC moderna nessas décadas.",
+      "O editor John W. Campbell empurrava os autores para ciência e ideias mais afiadas.",
+      "As histórias da época confiavam muitas vezes que a curiosidade e a engenharia resolveriam problemas."
+     ],
+     "q": "O que te atrai mais nas visões otimistas do futuro?",
+     "c": "Imagina uma capa da idade de ouro com um foguetão e um robô e descreve-a numa frase."
+    },
+    "pt_BR": {
+     "t": "A Era de Ouro da FC",
+     "g": "Explorar a era dos anos 1940 e 50, de foguetes, robôs e otimismo ousado.",
+     "p": [
+      "Autores como Asimov, Clarke e Heinlein moldaram a FC moderna nessas décadas.",
+      "O editor John W. Campbell empurrava os autores para ciência e ideias mais afiadas.",
+      "As histórias da época muitas vezes confiavam que curiosidade e engenharia resolveriam problemas."
+     ],
+     "q": "O que mais atrai você nas visões otimistas do futuro?",
+     "c": "Imagine uma capa da era de ouro com um foguete e um robô e descreva-a numa frase."
+    }
+   }
+  }
+ ]
+}

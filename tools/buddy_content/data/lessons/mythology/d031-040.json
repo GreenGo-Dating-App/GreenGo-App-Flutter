@@ -1,0 +1,835 @@
+{
+ "topic": "mythology",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to Norse mythology",
+     "g": "Step into the Viking world of gods, giants and the great ash tree Yggdrasil.",
+     "p": [
+      "Norse myths come from Scandinavia and Iceland and were written down in books such as the Poetic Edda and Prose Edda.",
+      "They tell of gods called the Aesir, giants called the jotnar, and a world held together by the tree Yggdrasil.",
+      "Stories were shared by poets and storytellers, and many mix humour, adventure and clever wordplay."
+     ],
+     "q": "Have you ever been to a cold, wild place that felt like a story setting?",
+     "c": "Imagine a frosty fjord at dawn and describe it in two sentences like a Norse poet."
+    },
+    "de": {
+     "t": "Willkommen in der nordischen Mythologie",
+     "g": "Betritt die Welt der Wikinger voller Götter, Riesen und der großen Esche Yggdrasil.",
+     "p": [
+      "Nordische Mythen stammen aus Skandinavien und Island und wurden in Büchern wie der Lieder-Edda und der Snorra-Edda aufgeschrieben.",
+      "Sie erzählen von den Asen, den Riesen, den Jötnar, und einer Welt, die der Baum Yggdrasil zusammenhält.",
+      "Dichter und Erzähler gaben die Geschichten weiter, oft mit Humor, Abenteuer und klugem Wortwitz."
+     ],
+     "q": "Warst du schon an einem kalten, wilden Ort, der wie aus einer Geschichte wirkte?",
+     "c": "Stell dir einen frostigen Fjord im Morgengrauen vor und beschreibe ihn in zwei Sätzen wie ein Skalde."
+    },
+    "es": {
+     "t": "Bienvenido a la mitología nórdica",
+     "g": "Entra en el mundo vikingo de dioses, gigantes y el gran fresno Yggdrasil.",
+     "p": [
+      "Los mitos nórdicos vienen de Escandinavia e Islandia y se escribieron en libros como la Edda poética y la Edda prosaica.",
+      "Hablan de los dioses ases, de los gigantes jotnar y de un mundo sostenido por el árbol Yggdrasil.",
+      "Poetas y narradores compartían las historias, muchas con humor, aventura y juegos de palabras."
+     ],
+     "q": "¿Has estado en un lugar frío y salvaje que parecía de cuento?",
+     "c": "Imagina un fiordo helado al amanecer y descríbelo en dos frases como un poeta nórdico."
+    },
+    "fr": {
+     "t": "Bienvenue dans la mythologie nordique",
+     "g": "Entre dans le monde viking des dieux, des géants et du grand frêne Yggdrasil.",
+     "p": [
+      "Les mythes nordiques viennent de Scandinavie et d'Islande et furent consignés dans l'Edda poétique et l'Edda en prose.",
+      "Ils parlent des dieux Ases, des géants jotnar et d'un monde tenu par l'arbre Yggdrasil.",
+      "Poètes et conteurs partageaient ces récits, souvent mêlés d'humour, d'aventure et de jeux de mots."
+     ],
+     "q": "As-tu déjà vu un lieu froid et sauvage digne d'un conte ?",
+     "c": "Imagine un fjord glacé à l'aube et décris-le en deux phrases comme un poète nordique."
+    },
+    "it": {
+     "t": "Benvenuti nella mitologia norrena",
+     "g": "Entra nel mondo vichingo di dèi, giganti e del grande frassino Yggdrasil.",
+     "p": [
+      "I miti norreni vengono da Scandinavia e Islanda e furono scritti in libri come l'Edda poetica e l'Edda in prosa.",
+      "Parlano degli dèi Asi, dei giganti jotnar e di un mondo tenuto insieme dall'albero Yggdrasil.",
+      "Poeti e narratori condividevano le storie, spesso piene di umorismo, avventura e giochi di parole."
+     ],
+     "q": "Sei mai stato in un luogo freddo e selvaggio da racconto?",
+     "c": "Immagina un fiordo gelido all'alba e descrivilo in due frasi come un poeta norreno."
+    },
+    "pt": {
+     "t": "Bem-vindo à mitologia nórdica",
+     "g": "Entra no mundo viking de deuses, gigantes e do grande freixo Yggdrasil.",
+     "p": [
+      "Os mitos nórdicos vêm da Escandinávia e da Islândia e foram escritos em livros como a Edda Poética e a Edda em Prosa.",
+      "Falam dos deuses Aesir, dos gigantes jotnar e de um mundo sustentado pela árvore Yggdrasil.",
+      "Poetas e contadores partilhavam as histórias, muitas com humor, aventura e jogos de palavras."
+     ],
+     "q": "Já estiveste num sítio frio e selvagem que parecia de conto?",
+     "c": "Imagina um fiorde gelado ao amanhecer e descreve-o em duas frases como um poeta nórdico."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo à mitologia nórdica",
+     "g": "Entre no mundo viking de deuses, gigantes e do grande freixo Yggdrasil.",
+     "p": [
+      "Os mitos nórdicos vêm da Escandinávia e da Islândia e foram escritos em livros como a Edda Poética e a Edda em Prosa.",
+      "Falam dos deuses Aesir, dos gigantes jotnar e de um mundo sustentado pela árvore Yggdrasil.",
+      "Poetas e contadores compartilhavam as histórias, muitas com humor, aventura e jogos de palavras."
+     ],
+     "q": "Você já esteve num lugar frio e selvagem que parecia de conto?",
+     "c": "Imagine um fiorde gelado ao amanhecer e descreva em duas frases como um poeta nórdico."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The nine worlds",
+     "g": "Visit Asgard, Midgard, Jotunheim and the other realms linked by the world tree.",
+     "p": [
+      "Norse tales speak of nine worlds, including Asgard for the gods, Midgard for humans and Jotunheim for giants.",
+      "Others include Alfheim of the elves, Svartalfheim of the dwarves and Vanaheim of the Vanir gods.",
+      "Yggdrasil's branches and roots connect them, and a rainbow bridge called Bifrost links Asgard and Midgard."
+     ],
+     "q": "If you could visit one of the nine worlds, which would you choose?",
+     "c": "Sketch a simple map of three worlds with a name and one feature for each."
+    },
+    "de": {
+     "t": "Die neun Welten",
+     "g": "Besuche Asgard, Midgard, Jötunheim und die anderen Reiche, die der Weltenbaum verbindet.",
+     "p": [
+      "Nordische Sagen kennen neun Welten, darunter Asgard für die Götter, Midgard für Menschen und Jötunheim für Riesen.",
+      "Dazu kommen Alfheim der Elfen, Schwarzalbenheim der Zwerge und Vanaheim der Vanen.",
+      "Die Äste und Wurzeln Yggdrasils verbinden sie, und eine Regenbogenbrücke namens Bifröst verbindet Asgard und Midgard."
+     ],
+     "q": "Welche der neun Welten würdest du gern besuchen?",
+     "c": "Skizziere eine einfache Karte von drei Welten mit Namen und je einem Merkmal."
+    },
+    "es": {
+     "t": "Los nueve mundos",
+     "g": "Visita Asgard, Midgard, Jotunheim y los demás reinos unidos por el árbol del mundo.",
+     "p": [
+      "Los relatos nórdicos hablan de nueve mundos, entre ellos Asgard para los dioses, Midgard para los humanos y Jotunheim para los gigantes.",
+      "Otros son Alfheim de los elfos, Svartalfheim de los enanos y Vanaheim de los dioses vanir.",
+      "Las ramas y raíces de Yggdrasil los conectan, y un puente de arcoíris, Bifröst, une Asgard y Midgard."
+     ],
+     "q": "Si pudieras visitar uno de los nueve mundos, ¿cuál elegirías?",
+     "c": "Dibuja un mapa sencillo de tres mundos con un nombre y una característica para cada uno."
+    },
+    "fr": {
+     "t": "Les neuf mondes",
+     "g": "Visite Asgard, Midgard, Jotunheim et les autres royaumes reliés par l'arbre-monde.",
+     "p": [
+      "Les récits nordiques parlent de neuf mondes, dont Asgard pour les dieux, Midgard pour les humains et Jotunheim pour les géants.",
+      "Il y a aussi Alfheim des elfes, Svartalfheim des nains et Vanaheim des dieux Vanes.",
+      "Les branches et racines d'Yggdrasil les relient, et un pont arc-en-ciel, Bifröst, unit Asgard et Midgard."
+     ],
+     "q": "Si tu pouvais visiter l'un des neuf mondes, lequel choisirais-tu ?",
+     "c": "Esquisse une carte simple de trois mondes avec un nom et un trait distinctif chacun."
+    },
+    "it": {
+     "t": "I nove mondi",
+     "g": "Visita Asgard, Midgard, Jotunheim e gli altri regni uniti dall'albero del mondo.",
+     "p": [
+      "I racconti norreni parlano di nove mondi, tra cui Asgard per gli dèi, Midgard per gli uomini e Jotunheim per i giganti.",
+      "Altri sono Alfheim degli elfi, Svartalfheim dei nani e Vanaheim degli dèi Vani.",
+      "I rami e le radici di Yggdrasil li collegano e un ponte arcobaleno, Bifröst, unisce Asgard e Midgard."
+     ],
+     "q": "Se potessi visitare uno dei nove mondi, quale sceglieresti?",
+     "c": "Schizza una mappa semplice di tre mondi con un nome e una caratteristica per ciascuno."
+    },
+    "pt": {
+     "t": "Os nove mundos",
+     "g": "Visita Asgard, Midgard, Jotunheim e os outros reinos ligados pela árvore do mundo.",
+     "p": [
+      "Os relatos nórdicos falam de nove mundos, entre eles Asgard para os deuses, Midgard para os humanos e Jotunheim para os gigantes.",
+      "Outros são Alfheim dos elfos, Svartalfheim dos anões e Vanaheim dos deuses vanir.",
+      "Os ramos e raízes de Yggdrasil ligam-nos, e uma ponte de arco-íris, Bifröst, une Asgard e Midgard."
+     ],
+     "q": "Se pudesses visitar um dos nove mundos, qual escolherias?",
+     "c": "Esboça um mapa simples de três mundos com um nome e uma característica para cada."
+    },
+    "pt_BR": {
+     "t": "Os nove mundos",
+     "g": "Visite Asgard, Midgard, Jotunheim e os outros reinos ligados pela árvore do mundo.",
+     "p": [
+      "Os relatos nórdicos falam de nove mundos, entre eles Asgard para os deuses, Midgard para os humanos e Jotunheim para os gigantes.",
+      "Outros são Alfheim dos elfos, Svartalfheim dos anões e Vanaheim dos deuses vanir.",
+      "Os galhos e raízes de Yggdrasil ligam todos, e uma ponte de arco-íris, Bifröst, une Asgard e Midgard."
+     ],
+     "q": "Se você pudesse visitar um dos nove mundos, qual escolheria?",
+     "c": "Esboce um mapa simples de três mundos com um nome e uma característica para cada."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Odin the all-father",
+     "g": "Meet the wise one-eyed god, his ravens Huginn and Muninn and his thirst for knowledge.",
+     "p": [
+      "Odin was the chief of the Aesir, a wanderer in a cloak and hat who sought wisdom everywhere.",
+      "He gave up an eye at the well of Mimir to gain deep knowledge, and he also learned the secret of runes.",
+      "Two ravens, Huginn and Muninn, meaning thought and memory, flew each day and told him the news."
+     ],
+     "q": "What would you most like to learn, if you could ask a wise teacher anything?",
+     "c": "Name your own pair of helpers, like thought and memory, and say what each one does."
+    },
+    "de": {
+     "t": "Odin, der Allvater",
+     "g": "Lerne den weisen einäugigen Gott, seine Raben Hugin und Munin und seinen Wissensdurst kennen.",
+     "p": [
+      "Odin war das Oberhaupt der Asen, ein Wanderer in Mantel und Hut, der überall Weisheit suchte.",
+      "Er gab am Brunnen Mimirs ein Auge für tiefes Wissen her und lernte auch das Geheimnis der Runen.",
+      "Zwei Raben, Hugin und Munin, Gedanke und Gedächtnis, flogen täglich aus und brachten ihm Neuigkeiten."
+     ],
+     "q": "Was würdest du am liebsten lernen, wenn du einen weisen Lehrer alles fragen dürftest?",
+     "c": "Nenne dein eigenes Helferpaar wie Gedanke und Gedächtnis und sage, was jeder tut."
+    },
+    "es": {
+     "t": "Odín, el padre de todos",
+     "g": "Conoce al sabio dios tuerto, a sus cuervos Huginn y Muninn y a su sed de saber.",
+     "p": [
+      "Odín era el jefe de los ases, un caminante con capa y sombrero que buscaba sabiduría en todas partes.",
+      "Entregó un ojo en el pozo de Mimir para obtener un saber profundo y también aprendió el secreto de las runas.",
+      "Dos cuervos, Huginn y Muninn, pensamiento y memoria, volaban cada día y le contaban las noticias."
+     ],
+     "q": "¿Qué te gustaría aprender más, si pudieras preguntarle cualquier cosa a un maestro sabio?",
+     "c": "Pon nombre a tu propio par de ayudantes, como pensamiento y memoria, y di qué hace cada uno."
+    },
+    "fr": {
+     "t": "Odin, le père de tous",
+     "g": "Rencontre le sage dieu borgne, ses corbeaux Huginn et Muninn et sa soif de savoir.",
+     "p": [
+      "Odin était le chef des Ases, un voyageur à la cape et au chapeau qui cherchait la sagesse partout.",
+      "Il donna un œil à la source de Mimir pour un savoir profond et apprit aussi le secret des runes.",
+      "Deux corbeaux, Huginn et Muninn, pensée et mémoire, volaient chaque jour et lui rapportaient les nouvelles."
+     ],
+     "q": "Qu'aimerais-tu le plus apprendre si tu pouvais tout demander à un sage ?",
+     "c": "Donne un nom à ton propre duo d'assistants, comme pensée et mémoire, et dis ce que fait chacun."
+    },
+    "it": {
+     "t": "Odino, il padre di tutti",
+     "g": "Conosci il saggio dio con un occhio solo, i suoi corvi Huginn e Muninn e la sua sete di sapere.",
+     "p": [
+      "Odino era il capo degli Asi, un viandante con mantello e cappello che cercava saggezza ovunque.",
+      "Cedette un occhio alla fonte di Mimir per un sapere profondo e imparò anche il segreto delle rune.",
+      "Due corvi, Huginn e Muninn, pensiero e memoria, volavano ogni giorno e gli portavano le notizie."
+     ],
+     "q": "Cosa ti piacerebbe imparare di più, se potessi chiedere tutto a un maestro saggio?",
+     "c": "Dai un nome alla tua coppia di aiutanti, come pensiero e memoria, e di' cosa fa ciascuno."
+    },
+    "pt": {
+     "t": "Odin, o pai de todos",
+     "g": "Conhece o sábio deus de um só olho, os seus corvos Huginn e Muninn e a sua sede de saber.",
+     "p": [
+      "Odin era o chefe dos Aesir, um caminhante de capa e chapéu que procurava sabedoria por todo o lado.",
+      "Deu um olho no poço de Mimir para obter saber profundo e aprendeu também o segredo das runas.",
+      "Dois corvos, Huginn e Muninn, pensamento e memória, voavam todos os dias e traziam-lhe as notícias."
+     ],
+     "q": "O que gostarias mais de aprender, se pudesses perguntar tudo a um mestre sábio?",
+     "c": "Dá nome ao teu par de ajudantes, como pensamento e memória, e diz o que cada um faz."
+    },
+    "pt_BR": {
+     "t": "Odin, o pai de todos",
+     "g": "Conheça o sábio deus de um olho só, seus corvos Huginn e Muninn e sua sede de saber.",
+     "p": [
+      "Odin era o chefe dos Aesir, um andarilho de capa e chapéu que buscava sabedoria por toda parte.",
+      "Ele deu um olho no poço de Mimir para obter saber profundo e aprendeu também o segredo das runas.",
+      "Dois corvos, Huginn e Muninn, pensamento e memória, voavam todos os dias e traziam as notícias."
+     ],
+     "q": "O que você mais gostaria de aprender, se pudesse perguntar tudo a um mestre sábio?",
+     "c": "Dê nome ao seu par de ajudantes, como pensamento e memória, e diga o que cada um faz."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Thor and his hammer",
+     "g": "Meet Mjolnir, thunder and the god who protected Midgard from giants.",
+     "p": [
+      "Thor was the strong, red-bearded god of thunder who rode a chariot pulled by two goats.",
+      "His hammer Mjolnir always returned to his hand and was used to protect gods and humans from giants.",
+      "People wore small hammer pendants, and thunder was said to be the rumble of his chariot."
+     ],
+     "q": "Do you like thunderstorms, or do they make you want to stay inside?",
+     "c": "Make up a one-sentence Thor-style cheer for the next rumble of thunder you hear."
+    },
+    "de": {
+     "t": "Thor und sein Hammer",
+     "g": "Lerne Mjölnir, den Donner und den Gott kennen, der Midgard vor Riesen beschützte.",
+     "p": [
+      "Thor war der starke, rotbärtige Donnergott, der in einem von zwei Ziegenböcken gezogenen Wagen fuhr.",
+      "Sein Hammer Mjölnir kehrte stets in seine Hand zurück und schützte Götter und Menschen vor Riesen.",
+      "Menschen trugen kleine Hammeranhänger, und Donner galt als das Rollen seines Wagens."
+     ],
+     "q": "Magst du Gewitter, oder bleibst du lieber drinnen?",
+     "c": "Erfinde einen einsätzigen Thor-Jubelruf für den nächsten Donner, den du hörst."
+    },
+    "es": {
+     "t": "Thor y su martillo",
+     "g": "Conoce a Mjölnir, el trueno y el dios que protegía Midgard de los gigantes.",
+     "p": [
+      "Thor era el fuerte dios del trueno de barba roja que viajaba en un carro tirado por dos machos cabríos.",
+      "Su martillo Mjölnir siempre volvía a su mano y protegía a dioses y humanos de los gigantes.",
+      "La gente llevaba pequeños colgantes de martillo, y se decía que el trueno era el rodar de su carro."
+     ],
+     "q": "¿Te gustan las tormentas o prefieres quedarte dentro?",
+     "c": "Inventa un grito de ánimo al estilo de Thor, de una frase, para el próximo trueno que oigas."
+    },
+    "fr": {
+     "t": "Thor et son marteau",
+     "g": "Rencontre Mjöllnir, le tonnerre et le dieu qui protégeait Midgard des géants.",
+     "p": [
+      "Thor était le dieu du tonnerre, fort et barbu de roux, qui roulait dans un char tiré par deux boucs.",
+      "Son marteau Mjöllnir revenait toujours dans sa main et protégeait dieux et humains des géants.",
+      "On portait de petits pendentifs en marteau, et l'on disait que le tonnerre était le roulement de son char."
+     ],
+     "q": "Aimes-tu les orages ou préfères-tu rester à l'abri ?",
+     "c": "Invente un cri d'encouragement à la Thor, en une phrase, pour le prochain tonnerre."
+    },
+    "it": {
+     "t": "Thor e il suo martello",
+     "g": "Conosci Mjöllnir, il tuono e il dio che proteggeva Midgard dai giganti.",
+     "p": [
+      "Thor era il forte dio del tuono dalla barba rossa che viaggiava su un carro trainato da due caprai.",
+      "Il suo martello Mjöllnir tornava sempre nella sua mano e proteggeva dèi e uomini dai giganti.",
+      "La gente portava piccoli ciondoli a forma di martello e si diceva che il tuono fosse il rombo del suo carro."
+     ],
+     "q": "Ti piacciono i temporali o preferisci restare dentro?",
+     "c": "Inventa un grido d'incoraggiamento alla Thor, in una frase, per il prossimo tuono."
+    },
+    "pt": {
+     "t": "Thor e o seu martelo",
+     "g": "Conhece Mjölnir, o trovão e o deus que protegia Midgard dos gigantes.",
+     "p": [
+      "Thor era o forte deus do trovão, de barba ruiva, que viajava num carro puxado por dois bodes.",
+      "O seu martelo Mjölnir voltava sempre à sua mão e protegia deuses e humanos dos gigantes.",
+      "As pessoas usavam pequenos pendentes de martelo e dizia-se que o trovão era o rolar do seu carro."
+     ],
+     "q": "Gostas de trovoadas ou preferes ficar em casa?",
+     "c": "Inventa um grito de ânimo ao estilo de Thor, numa frase, para o próximo trovão que ouvires."
+    },
+    "pt_BR": {
+     "t": "Thor e seu martelo",
+     "g": "Conheça Mjölnir, o trovão e o deus que protegia Midgard dos gigantes.",
+     "p": [
+      "Thor era o forte deus do trovão, de barba ruiva, que viajava num carro puxado por dois bodes.",
+      "O martelo dele, Mjölnir, sempre voltava à sua mão e protegia deuses e humanos dos gigantes.",
+      "As pessoas usavam pequenos pingentes de martelo e se dizia que o trovão era o ronco do carro dele."
+     ],
+     "q": "Você gosta de tempestades ou prefere ficar em casa?",
+     "c": "Invente um grito de ânimo ao estilo de Thor, em uma frase, para o próximo trovão que ouvir."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Loki the shape-shifter",
+     "g": "Meet the trickster whose mischief causes trouble and then solves it too.",
+     "p": [
+      "Loki was a clever god who could change shape, becoming a fish, a bird or even a mare.",
+      "He often caused trouble with pranks, but his quick thinking also got the gods out of tight spots.",
+      "Tricksters appear in many cultures, reminding us that cleverness can help and harm."
+     ],
+     "q": "Do you know a playful person who is always up to something clever?",
+     "c": "Write a harmless trickster prank in two sentences, one that would make everyone laugh."
+    },
+    "de": {
+     "t": "Loki, der Gestaltwandler",
+     "g": "Lerne den Trickster kennen, dessen Streiche Ärger machen und ihn auch wieder lösen.",
+     "p": [
+      "Loki war ein schlauer Gott, der seine Gestalt wechseln konnte, etwa zu Fisch, Vogel oder sogar Stute.",
+      "Oft machte er mit Streichen Ärger, doch sein schneller Verstand half den Göttern auch aus der Klemme.",
+      "Trickster gibt es in vielen Kulturen und sie erinnern uns, dass Klugheit helfen und schaden kann."
+     ],
+     "q": "Kennst du jemanden, der verspielt ist und immer etwas Cleveres im Sinn hat?",
+     "c": "Schreibe in zwei Sätzen einen harmlosen Trickster-Streich, über den alle lachen würden."
+    },
+    "es": {
+     "t": "Loki, el cambiaformas",
+     "g": "Conoce al embaucador cuyas travesuras causan problemas y también los resuelven.",
+     "p": [
+      "Loki era un dios astuto que podía cambiar de forma y convertirse en pez, ave o incluso yegua.",
+      "A menudo causaba líos con bromas, pero su rapidez mental también sacaba a los dioses de apuros.",
+      "Los embaucadores aparecen en muchas culturas y nos recuerdan que la astucia puede ayudar y dañar."
+     ],
+     "q": "¿Conoces a alguien juguetón que siempre anda tramando algo ingenioso?",
+     "c": "Escribe en dos frases una broma inofensiva de embaucador que haría reír a todos."
+    },
+    "fr": {
+     "t": "Loki le métamorphe",
+     "g": "Rencontre le farceur dont les espiègleries créent des ennuis et les résolvent aussi.",
+     "p": [
+      "Loki était un dieu rusé capable de changer de forme : poisson, oiseau ou même jument.",
+      "Il causait souvent des ennuis par ses farces, mais sa vivacité tirait aussi les dieux d'affaire.",
+      "Les filous divins existent dans beaucoup de cultures et rappellent que la ruse peut aider ou nuire."
+     ],
+     "q": "Connais-tu une personne espiègle qui prépare toujours un tour malin ?",
+     "c": "Écris en deux phrases une farce inoffensive de filou qui ferait rire tout le monde."
+    },
+    "it": {
+     "t": "Loki il mutaforma",
+     "g": "Conosci il burlone le cui birbonate creano guai e li risolvono anche.",
+     "p": [
+      "Loki era un dio astuto capace di cambiare forma: pesce, uccello o perfino cavalla.",
+      "Spesso combinava guai con scherzi, ma la sua prontezza tirava anche gli dèi fuori dai pasticci.",
+      "I briganti divini compaiono in molte culture e ricordano che l'astuzia può aiutare o nuocere."
+     ],
+     "q": "Conosci una persona giocosa che ha sempre in mente qualcosa di astuto?",
+     "c": "Scrivi in due frasi uno scherzo innocuo da burlone che farebbe ridere tutti."
+    },
+    "pt": {
+     "t": "Loki, o metamorfo",
+     "g": "Conhece o brincalhão cujas travessuras causam problemas e também os resolvem.",
+     "p": [
+      "Loki era um deus astuto que mudava de forma, tornando-se peixe, ave ou até égua.",
+      "Muitas vezes causava sarilhos com partidas, mas a sua rapidez também tirava os deuses de apuros.",
+      "Os trapaceiros aparecem em muitas culturas e lembram que a esperteza pode ajudar e prejudicar."
+     ],
+     "q": "Conheces alguém brincalhão que anda sempre a tramar algo esperto?",
+     "c": "Escreve em duas frases uma partida inofensiva de trapaceiro que faria todos rir."
+    },
+    "pt_BR": {
+     "t": "Loki, o metamorfo",
+     "g": "Conheça o brincalhão cujas travessuras criam problemas e também os resolvem.",
+     "p": [
+      "Loki era um deus esperto que mudava de forma, virando peixe, ave ou até égua.",
+      "Muitas vezes ele aprontava com pegadinhas, mas a rapidez dele também tirava os deuses de apuros.",
+      "Os trapaceiros aparecem em muitas culturas e lembram que a esperteza pode ajudar e atrapalhar."
+     ],
+     "q": "Você conhece alguém brincalhão que está sempre tramando algo esperto?",
+     "c": "Escreva em duas frases uma pegadinha inofensiva de trapaceiro que faria todo mundo rir."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Freya and Frigg",
+     "g": "Meet two powerful goddesses of the Norse world, their magic and their famous belongings.",
+     "p": [
+      "Freya was a Vanir goddess of love, beauty and magic who rode a chariot pulled by cats.",
+      "She owned a famous necklace called Brisingamen and a cloak of falcon feathers that let her fly.",
+      "Frigg, Odin's wife, was the goddess of family and foresight who was said to know fates but keep silent."
+     ],
+     "q": "Which belonging would you want from a myth: a feather cloak or a cat chariot?",
+     "c": "Design a magical object of your own and describe its power in two sentences."
+    },
+    "de": {
+     "t": "Freya und Frigg",
+     "g": "Lerne zwei mächtige Göttinnen der nordischen Welt, ihre Magie und ihre berühmten Besitztümer kennen.",
+     "p": [
+      "Freya war eine Vanin, Göttin von Liebe, Schönheit und Magie, und fuhr in einem von Katzen gezogenen Wagen.",
+      "Sie besaß das berühmte Halsband Brisingamen und einen Falkenfedermantel, mit dem sie fliegen konnte.",
+      "Frigg, Odins Frau, war Göttin der Familie und Voraussicht und soll Schicksale gekannt, aber geschwiegen haben."
+     ],
+     "q": "Welches Besitztum aus einem Mythos hättest du gern: Federmantel oder Katzenwagen?",
+     "c": "Entwirf einen eigenen magischen Gegenstand und beschreibe seine Kraft in zwei Sätzen."
+    },
+    "es": {
+     "t": "Freya y Frigg",
+     "g": "Conoce a dos poderosas diosas del mundo nórdico, su magia y sus famosas pertenencias.",
+     "p": [
+      "Freya era una diosa vanir del amor, la belleza y la magia que viajaba en un carro tirado por gatos.",
+      "Poseía el famoso collar Brisingamen y una capa de plumas de halcón que le permitía volar.",
+      "Frigg, esposa de Odín, era la diosa de la familia y la previsión, que conocía los destinos pero callaba."
+     ],
+     "q": "¿Qué objeto de un mito querrías: la capa de plumas o el carro de gatos?",
+     "c": "Diseña un objeto mágico propio y describe su poder en dos frases."
+    },
+    "fr": {
+     "t": "Freyja et Frigg",
+     "g": "Rencontre deux puissantes déesses du monde nordique, leur magie et leurs objets célèbres.",
+     "p": [
+      "Freyja, déesse vane de l'amour, de la beauté et de la magie, voyageait dans un char tiré par des chats.",
+      "Elle possédait le célèbre collier Brísingamen et un manteau de plumes de faucon qui lui permettait de voler.",
+      "Frigg, épouse d'Odin, était la déesse de la famille et de la prévoyance, qui connaissait les destins mais se taisait."
+     ],
+     "q": "Quel objet de mythe voudrais-tu : le manteau de plumes ou le char de chats ?",
+     "c": "Invente ton propre objet magique et décris son pouvoir en deux phrases."
+    },
+    "it": {
+     "t": "Freya e Frigg",
+     "g": "Conosci due potenti dee del mondo norreno, la loro magia e i loro oggetti famosi.",
+     "p": [
+      "Freya era una dea vana dell'amore, della bellezza e della magia che viaggiava su un carro trainato da gatti.",
+      "Possedeva la famosa collana Brisingamen e un mantello di piume di falco che le permetteva di volare.",
+      "Frigg, moglie di Odino, era la dea della famiglia e della preveggenza, che conosceva i destini ma taceva."
+     ],
+     "q": "Quale oggetto da un mito vorresti: il mantello di piume o il carro dei gatti?",
+     "c": "Progetta un tuo oggetto magico e descrivine il potere in due frasi."
+    },
+    "pt": {
+     "t": "Freya e Frigg",
+     "g": "Conhece duas poderosas deusas do mundo nórdico, a sua magia e os seus famosos pertences.",
+     "p": [
+      "Freya era uma deusa vanir do amor, da beleza e da magia que viajava num carro puxado por gatos.",
+      "Possuía o famoso colar Brisingamen e uma capa de penas de falcão que lhe permitia voar.",
+      "Frigg, esposa de Odin, era a deusa da família e da previdência, que conhecia os destinos mas calava."
+     ],
+     "q": "Que objeto de um mito quererias: a capa de penas ou o carro de gatos?",
+     "c": "Cria um objeto mágico teu e descreve o seu poder em duas frases."
+    },
+    "pt_BR": {
+     "t": "Freya e Frigg",
+     "g": "Conheça duas poderosas deusas do mundo nórdico, sua magia e seus famosos pertences.",
+     "p": [
+      "Freya era uma deusa vanir do amor, da beleza e da magia que viajava num carro puxado por gatos.",
+      "Ela tinha o famoso colar Brisingamen e uma capa de penas de falcão que a deixava voar.",
+      "Frigg, esposa de Odin, era a deusa da família e da previdência, que conhecia os destinos mas ficava calada."
+     ],
+     "q": "Que objeto de um mito você gostaria: a capa de penas ou o carro de gatos?",
+     "c": "Crie um objeto mágico seu e descreva o poder dele em duas frases."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The theft of Thor's hammer",
+     "g": "Enjoy the comic tale in which Thor dresses up as a bride to get Mjolnir back.",
+     "p": [
+      "One morning Thor woke to find Mjolnir missing, and the giant Thrym said he would return it only for Freya's hand.",
+      "Freya refused, so the gods dressed Thor in a bridal veil and sent him, with Loki as his maid, to the giant's hall.",
+      "At the feast Thor ate far too much, and when the hammer was laid on his lap he took it back, to the giants' surprise."
+     ],
+     "q": "Have you ever worn a funny disguise? What was it?",
+     "c": "Retell the story as a tiny comedy sketch with two lines of dialogue."
+    },
+    "de": {
+     "t": "Der Diebstahl von Thors Hammer",
+     "g": "Genieße die komische Sage, in der Thor sich als Braut verkleidet, um Mjölnir zurückzuholen.",
+     "p": [
+      "Eines Morgens fehlte Mjölnir, und der Riese Thrym sagte, er gebe ihn nur gegen Freyas Hand zurück.",
+      "Freya lehnte ab, also steckten die Götter Thor in einen Brautschleier und schickten ihn mit Loki als Magd zum Riesen.",
+      "Beim Fest aß Thor viel zu viel, und als man ihm den Hammer in den Schoß legte, nahm er ihn zurück, zum Erstaunen der Riesen."
+     ],
+     "q": "Hast du dich schon einmal lustig verkleidet? Als was?",
+     "c": "Erzähle die Geschichte als winzigen Comedy-Sketch mit zwei Dialogzeilen."
+    },
+    "es": {
+     "t": "El robo del martillo de Thor",
+     "g": "Disfruta del cuento cómico en que Thor se disfraza de novia para recuperar Mjölnir.",
+     "p": [
+      "Una mañana Thor vio que faltaba Mjölnir, y el gigante Thrym dijo que solo lo devolvería a cambio de la mano de Freya.",
+      "Freya se negó, así que los dioses vistieron a Thor con velo de novia y lo enviaron con Loki de doncella.",
+      "En el banquete Thor comió demasiado, y cuando pusieron el martillo en su regazo lo recuperó, para sorpresa de los gigantes."
+     ],
+     "q": "¿Alguna vez te has puesto un disfraz gracioso? ¿Cuál?",
+     "c": "Cuenta la historia como un sketch cómico minúsculo con dos líneas de diálogo."
+    },
+    "fr": {
+     "t": "Le vol du marteau de Thor",
+     "g": "Savoure le conte comique où Thor se déguise en mariée pour récupérer Mjöllnir.",
+     "p": [
+      "Un matin, Mjöllnir avait disparu, et le géant Thrym dit qu'il ne le rendrait qu'en échange de Freyja.",
+      "Freyja refusa, alors les dieux habillèrent Thor d'un voile de mariée et l'envoyèrent avec Loki en servante.",
+      "Au festin, Thor mangea beaucoup trop, et quand on posa le marteau sur ses genoux, il le reprit, au grand étonnement des géants."
+     ],
+     "q": "T'es-tu déjà déguisé de façon drôle ? En quoi ?",
+     "c": "Raconte l'histoire comme un mini sketch comique avec deux répliques."
+    },
+    "it": {
+     "t": "Il furto del martello di Thor",
+     "g": "Goditi il racconto comico in cui Thor si veste da sposa per riavere Mjöllnir.",
+     "p": [
+      "Una mattina Mjöllnir era sparito e il gigante Thrym disse che lo avrebbe reso solo in cambio di Freya.",
+      "Freya rifiutò, così gli dèi vestirono Thor con un velo da sposa e lo mandarono con Loki come damigella.",
+      "Al banchetto Thor mangiò moltissimo, e quando posarono il martello sulle sue ginocchia lo riprese, tra lo stupore dei giganti."
+     ],
+     "q": "Ti sei mai travestito in modo buffo? Da cosa?",
+     "c": "Racconta la storia come un minuscolo sketch comico con due battute."
+    },
+    "pt": {
+     "t": "O roubo do martelo de Thor",
+     "g": "Diverte-te com o conto cómico em que Thor se veste de noiva para recuperar Mjölnir.",
+     "p": [
+      "Certa manhã faltava Mjölnir, e o gigante Thrym disse que só o devolvia em troca de Freya.",
+      "Freya recusou, por isso os deuses vestiram Thor com véu de noiva e enviaram-no com Loki como aia.",
+      "No banquete Thor comeu demais, e quando lhe puseram o martelo no colo, recuperou-o, para espanto dos gigantes."
+     ],
+     "q": "Já usaste um disfarce engraçado? Qual?",
+     "c": "Conta a história como um pequeno sketch cómico com duas falas."
+    },
+    "pt_BR": {
+     "t": "O roubo do martelo de Thor",
+     "g": "Divirta-se com o conto cômico em que Thor se veste de noiva para recuperar Mjölnir.",
+     "p": [
+      "Certa manhã o Mjölnir sumiu, e o gigante Thrym disse que só devolveria em troca de Freya.",
+      "Freya recusou, então os deuses vestiram Thor com véu de noiva e o mandaram com Loki como aia.",
+      "No banquete Thor comeu demais, e quando puseram o martelo no colo dele, ele o pegou de volta, para espanto dos gigantes."
+     ],
+     "q": "Você já usou uma fantasia engraçada? Qual?",
+     "c": "Conte a história como um pequeno esquete de comédia com duas falas."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sleipnir and other odd creatures",
+     "g": "Meet an eight-legged horse, a squirrel messenger and other surprising Norse beings.",
+     "p": [
+      "Sleipnir, Odin's grey horse with eight legs, could gallop faster than any other and carry him across worlds.",
+      "The squirrel Ratatoskr ran up and down Yggdrasil carrying messages, sometimes with a cheeky twist.",
+      "An eagle sat at the top of the tree and a stag munched leaves, so the tree was full of life."
+     ],
+     "q": "Which odd creature would you choose as your travel companion?",
+     "c": "Invent a new creature for Yggdrasil, with a name and one special skill."
+    },
+    "de": {
+     "t": "Sleipnir und andere seltsame Wesen",
+     "g": "Lerne ein achtbeiniges Pferd, ein Eichhörnchen als Bote und andere überraschende nordische Wesen kennen.",
+     "p": [
+      "Sleipnir, Odins graues Pferd mit acht Beinen, galoppierte schneller als alle anderen und trug ihn durch die Welten.",
+      "Das Eichhörnchen Ratatöskr lief Yggdrasil rauf und runter und trug Nachrichten, manchmal mit frechem Dreh.",
+      "Ein Adler saß oben im Baum und ein Hirsch knabberte Blätter, so war der Baum voller Leben."
+     ],
+     "q": "Welches seltsame Wesen würdest du als Reisebegleiter wählen?",
+     "c": "Erfinde ein neues Wesen für Yggdrasil mit Namen und einer besonderen Fähigkeit."
+    },
+    "es": {
+     "t": "Sleipnir y otras criaturas curiosas",
+     "g": "Conoce a un caballo de ocho patas, una ardilla mensajera y otros seres nórdicos sorprendentes.",
+     "p": [
+      "Sleipnir, el caballo gris de ocho patas de Odín, galopaba más rápido que ninguno y lo llevaba por los mundos.",
+      "La ardilla Ratatösk subía y bajaba por Yggdrasil llevando mensajes, a veces con un toque pícaro.",
+      "Un águila se posaba en la copa y un ciervo mordisqueaba hojas, así que el árbol estaba lleno de vida."
+     ],
+     "q": "¿Qué criatura curiosa elegirías como compañera de viaje?",
+     "c": "Inventa una criatura nueva para Yggdrasil, con nombre y una habilidad especial."
+    },
+    "fr": {
+     "t": "Sleipnir et autres créatures curieuses",
+     "g": "Rencontre un cheval à huit pattes, un écureuil messager et d'autres êtres nordiques surprenants.",
+     "p": [
+      "Sleipnir, le cheval gris à huit pattes d'Odin, galopait plus vite que tous et le portait d'un monde à l'autre.",
+      "L'écureuil Ratatosk montait et descendait Yggdrasil avec des messages, parfois avec une touche malicieuse.",
+      "Un aigle perchait en haut de l'arbre et un cerf grignotait les feuilles : l'arbre grouillait de vie."
+     ],
+     "q": "Quelle créature curieuse choisirais-tu comme compagnon de voyage ?",
+     "c": "Invente une nouvelle créature pour Yggdrasil, avec un nom et un talent spécial."
+    },
+    "it": {
+     "t": "Sleipnir e altre creature curiose",
+     "g": "Conosci un cavallo a otto zampe, uno scoiattolo messaggero e altri esseri norreni sorprendenti.",
+     "p": [
+      "Sleipnir, il cavallo grigio a otto zampe di Odino, galoppava più veloce di tutti e lo portava tra i mondi.",
+      "Lo scoiattolo Ratatoskr correva su e giù per Yggdrasil portando messaggi, a volte con una punta di malizia.",
+      "Un'aquila stava in cima all'albero e un cervo mordicchiava foglie, così l'albero era pieno di vita."
+     ],
+     "q": "Quale creatura curiosa sceglieresti come compagna di viaggio?",
+     "c": "Inventa una nuova creatura per Yggdrasil, con un nome e un'abilità speciale."
+    },
+    "pt": {
+     "t": "Sleipnir e outras criaturas curiosas",
+     "g": "Conhece um cavalo de oito patas, um esquilo mensageiro e outros seres nórdicos surpreendentes.",
+     "p": [
+      "Sleipnir, o cavalo cinzento de oito patas de Odin, galopava mais depressa que todos e levava-o pelos mundos.",
+      "O esquilo Ratatosk subia e descia Yggdrasil com mensagens, por vezes com um toque maroto.",
+      "Uma águia pousava no topo da árvore e um veado mordiscava folhas, por isso a árvore estava cheia de vida."
+     ],
+     "q": "Que criatura curiosa escolherias como companheira de viagem?",
+     "c": "Inventa uma criatura nova para Yggdrasil, com nome e uma habilidade especial."
+    },
+    "pt_BR": {
+     "t": "Sleipnir e outras criaturas curiosas",
+     "g": "Conheça um cavalo de oito patas, um esquilo mensageiro e outros seres nórdicos surpreendentes.",
+     "p": [
+      "Sleipnir, o cavalo cinzento de oito patas de Odin, galopava mais rápido que todos e o levava pelos mundos.",
+      "O esquilo Ratatosk subia e descia Yggdrasil com mensagens, às vezes com um toque travesso.",
+      "Uma águia ficava no topo da árvore e um cervo mordiscava folhas, então a árvore estava cheia de vida."
+     ],
+     "q": "Que criatura curiosa você escolheria como companheira de viagem?",
+     "c": "Invente uma criatura nova para Yggdrasil, com nome e uma habilidade especial."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Days of the week, Norse style",
+     "g": "See how Tyr, Odin, Thor and Frigg live on in Tuesday to Friday.",
+     "p": [
+      "Tuesday comes from Tyr, the brave god of law and fair dealing, and Wednesday from Woden, the English form of Odin.",
+      "Thursday means Thor's day, and Friday comes from Frigg or Freya, depending on the old explanation.",
+      "Saturday, Sunday and Monday come from Roman and Germanic ideas of Saturn, the Sun and the Moon."
+     ],
+     "q": "Which weekday would you rename after a myth figure, and why?",
+     "c": "Say the days of the week and give each a one-word myth nickname."
+    },
+    "de": {
+     "t": "Wochentage auf nordische Art",
+     "g": "Sieh, wie Tyr, Odin, Thor und Frigg in Dienstag bis Freitag weiterleben.",
+     "p": [
+      "Dienstag geht auf Tyr zurück, den mutigen Gott des Rechts, und Mittwoch ist ursprünglich Odins Tag, englisch Wednesday von Woden.",
+      "Donnerstag heißt Thors Tag, und Freitag kommt von Frigg oder Freya, je nach alter Deutung.",
+      "Samstag, Sonntag und Montag gehen auf römische und germanische Vorstellungen von Saturn, Sonne und Mond zurück."
+     ],
+     "q": "Welchen Wochentag würdest du nach einer Mythenfigur umbenennen, und warum?",
+     "c": "Sage die Wochentage auf und gib jedem einen Ein-Wort-Mythenspitznamen."
+    },
+    "es": {
+     "t": "Los días de la semana, al estilo nórdico",
+     "g": "Mira cómo Tyr, Odín, Thor y Frigg viven en los días de la semana ingleses.",
+     "p": [
+      "En inglés, Tuesday viene de Tyr, el valiente dios de la ley, y Wednesday de Woden, forma inglesa de Odín.",
+      "Thursday significa día de Thor, y Friday viene de Frigg o de Freya, según la explicación antigua.",
+      "En español, de martes a viernes vienen de Marte, Mercurio, Júpiter y Venus: el mismo juego con dioses romanos."
+     ],
+     "q": "¿Qué día renombrarías con un personaje de mito y por qué?",
+     "c": "Di los días de la semana y ponle a cada uno un apodo mítico de una palabra."
+    },
+    "fr": {
+     "t": "Les jours de la semaine, version nordique",
+     "g": "Vois comment Tyr, Odin, Thor et Frigg vivent encore dans les jours de la semaine anglais.",
+     "p": [
+      "En anglais, Tuesday vient de Tyr, le brave dieu de la loi, et Wednesday de Woden, forme anglaise d'Odin.",
+      "Thursday signifie le jour de Thor, et Friday vient de Frigg ou de Freyja selon l'explication ancienne.",
+      "En français, mardi à vendredi viennent de Mars, Mercure, Jupiter et Vénus : même jeu, dieux romains."
+     ],
+     "q": "Quel jour renommerais-tu d'après un personnage de mythe, et pourquoi ?",
+     "c": "Dis les jours de la semaine et donne à chacun un surnom mythique d'un mot."
+    },
+    "it": {
+     "t": "I giorni della settimana, versione norrena",
+     "g": "Guarda come Tyr, Odino, Thor e Frigg vivono ancora nei giorni della settimana inglesi.",
+     "p": [
+      "In inglese Tuesday viene da Tyr, il coraggioso dio della legge, e Wednesday da Woden, forma inglese di Odino.",
+      "Thursday significa giorno di Thor, e Friday viene da Frigg o da Freya, secondo la spiegazione antica.",
+      "In italiano martedì-venerdì vengono da Marte, Mercurio, Giove e Venere: stesso gioco, dèi romani."
+     ],
+     "q": "Quale giorno rinomineresti con un personaggio mitico, e perché?",
+     "c": "Di' i giorni della settimana e dai a ciascuno un soprannome mitico di una parola."
+    },
+    "pt": {
+     "t": "Os dias da semana, ao estilo nórdico",
+     "g": "Vê como Tyr, Odin, Thor e Frigg vivem nos dias da semana ingleses.",
+     "p": [
+      "Em inglês, Tuesday vem de Tyr, o corajoso deus da lei, e Wednesday de Woden, a forma inglesa de Odin.",
+      "Thursday significa dia de Thor, e Friday vem de Frigg ou de Freya, segundo a explicação antiga.",
+      "Em português, segunda a sexta-feira seguem a numeração da semana cristã, outra tradição de nomear dias."
+     ],
+     "q": "Que dia renomearias com uma figura de mito, e porquê?",
+     "c": "Diz os dias da semana e dá a cada um um apelido mítico de uma palavra."
+    },
+    "pt_BR": {
+     "t": "Os dias da semana, ao estilo nórdico",
+     "g": "Veja como Tyr, Odin, Thor e Frigg vivem nos dias da semana ingleses.",
+     "p": [
+      "Em inglês, Tuesday vem de Tyr, o corajoso deus da lei, e Wednesday de Woden, forma inglesa de Odin.",
+      "Thursday significa dia de Thor, e Friday vem de Frigg ou de Freya, segundo a explicação antiga.",
+      "Em português, segunda a sexta-feira seguem a numeração da semana cristã, outra tradição de nomear dias."
+     ],
+     "q": "Qual dia você renomearia com uma figura de mito, e por quê?",
+     "c": "Diga os dias da semana e dê a cada um um apelido mítico de uma palavra."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Thor's visit to Utgard",
+     "g": "Follow a giant's illusions, a drinking horn linked to the sea and a wrestling match with Old Age.",
+     "p": [
+      "Thor, Loki and their companions visited the giant king Utgard-Loki, who set them playful challenges.",
+      "Thor tried to drain a horn, lift a cat and wrestle an old woman, and he seemed to fail each time.",
+      "Later the giant revealed the tests were illusions: the horn touched the sea, the cat was the world serpent, the woman was Old Age."
+     ],
+     "q": "Have you ever done your best and then learned the real rules of the challenge?",
+     "c": "Create a three-part trick challenge with an illusion twist, and tell it to a friend."
+    },
+    "de": {
+     "t": "Thors Besuch in Utgard",
+     "g": "Folge den Täuschungen eines Riesen, einem Trinkhorn mit Meeresverbindung und einem Ringkampf mit dem Alter.",
+     "p": [
+      "Thor, Loki und ihre Begleiter besuchten den Riesenkönig Utgardaloki, der ihnen spielerische Aufgaben stellte.",
+      "Thor versuchte, ein Horn zu leeren, eine Katze zu heben und mit einer alten Frau zu ringen, und scheiterte scheinbar jedes Mal.",
+      "Später verriet der Riese, es seien Täuschungen gewesen: das Horn reichte ins Meer, die Katze war die Weltschlange, die Frau das Alter."
+     ],
+     "q": "Hast du schon einmal dein Bestes gegeben und dann die wahren Regeln der Aufgabe erfahren?",
+     "c": "Erfinde eine dreiteilige Trick-Herausforderung mit Täuschungswende und erzähle sie einem Freund."
+    },
+    "es": {
+     "t": "La visita de Thor a Utgard",
+     "g": "Sigue las ilusiones de un gigante, un cuerno de beber unido al mar y una lucha con la Vejez.",
+     "p": [
+      "Thor, Loki y sus compañeros visitaron al rey gigante Utgard-Loki, que les planteó retos juguetones.",
+      "Thor intentó vaciar un cuerno, levantar un gato y luchar con una anciana, y pareció fracasar cada vez.",
+      "Luego el gigante reveló que eran ilusiones: el cuerno tocaba el mar, el gato era la serpiente del mundo, la anciana era la Vejez."
+     ],
+     "q": "¿Alguna vez diste lo mejor de ti y luego supiste las reglas reales del reto?",
+     "c": "Crea un reto de tres pruebas con un giro ilusorio y cuéntaselo a un amigo."
+    },
+    "fr": {
+     "t": "La visite de Thor à Utgard",
+     "g": "Suis les illusions d'un géant, une corne reliée à la mer et un combat contre la Vieillesse.",
+     "p": [
+      "Thor, Loki et leurs compagnons rendirent visite au roi géant Útgarða-Loki, qui leur proposa des défis amusants.",
+      "Thor tenta de vider une corne, de soulever un chat et de lutter contre une vieille femme, et il sembla échouer à chaque fois.",
+      "Plus tard, le géant révéla des illusions : la corne touchait la mer, le chat était le serpent du monde, la femme était la Vieillesse."
+     ],
+     "q": "As-tu déjà donné le meilleur de toi avant de connaître les vraies règles du défi ?",
+     "c": "Crée un défi en trois épreuves avec un tour d'illusion et raconte-le à un ami."
+    },
+    "it": {
+     "t": "La visita di Thor a Utgard",
+     "g": "Segui le illusioni di un gigante, un corno collegato al mare e una lotta con la Vecchiaia.",
+     "p": [
+      "Thor, Loki e i loro compagni visitarono il re gigante Utgarda-Loki, che propose loro sfide giocose.",
+      "Thor provò a svuotare un corno, sollevare un gatto e lottare con una vecchia, e sembrò fallire ogni volta.",
+      "Poi il gigante rivelò che erano illusioni: il corno toccava il mare, il gatto era il serpente del mondo, la vecchia era la Vecchiaia."
+     ],
+     "q": "Hai mai dato il massimo e scoperto poi le vere regole della sfida?",
+     "c": "Crea una sfida in tre prove con una svolta illusoria e raccontala a un amico."
+    },
+    "pt": {
+     "t": "A visita de Thor a Utgard",
+     "g": "Segue as ilusões de um gigante, um corno ligado ao mar e uma luta com a Velhice.",
+     "p": [
+      "Thor, Loki e os companheiros visitaram o rei gigante Utgard-Loki, que lhes propôs desafios divertidos.",
+      "Thor tentou esvaziar um corno, levantar um gato e lutar com uma velha, e pareceu falhar de cada vez.",
+      "Depois o gigante revelou ilusões: o corno tocava o mar, o gato era a serpente do mundo, a velha era a Velhice."
+     ],
+     "q": "Já deste o teu melhor e só depois soubeste as regras reais do desafio?",
+     "c": "Cria um desafio de três provas com uma reviravolta de ilusão e conta-o a um amigo."
+    },
+    "pt_BR": {
+     "t": "A visita de Thor a Utgard",
+     "g": "Acompanhe as ilusões de um gigante, um chifre ligado ao mar e uma luta com a Velhice.",
+     "p": [
+      "Thor, Loki e os companheiros visitaram o rei gigante Utgard-Loki, que propôs desafios divertidos.",
+      "Thor tentou esvaziar um chifre, levantar um gato e lutar com uma velha, e pareceu falhar a cada vez.",
+      "Depois o gigante revelou ilusões: o chifre tocava o mar, o gato era a serpente do mundo, a velha era a Velhice."
+     ],
+     "q": "Você já deu o seu melhor e só depois soube as regras reais do desafio?",
+     "c": "Crie um desafio de três provas com uma reviravolta de ilusão e conte a um amigo."
+    }
+   }
+  }
+ ]
+}

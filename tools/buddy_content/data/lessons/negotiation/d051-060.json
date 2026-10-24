@@ -1,0 +1,835 @@
+{
+ "topic": "negotiation",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Negotiating with flatmates",
+     "g": "Agree on guests, noise, shared costs and cleaning without friction.",
+     "p": [
+      "Talk about house rules early, before problems build up.",
+      "Ask each person what matters most to them at home.",
+      "Write the agreements down and review them now and then."
+     ],
+     "q": "What house rule matters most to you in shared living?",
+     "c": "Suggest a short house meeting or chat about one shared topic."
+    },
+    "de": {
+     "t": "Verhandeln mit Mitbewohnern",
+     "g": "Einigt euch auf Gäste, Lärm, gemeinsame Kosten und Putzen ohne Reibung.",
+     "p": [
+      "Sprecht früh über Hausregeln, bevor sich Probleme aufstauen.",
+      "Frage jede Person, was ihr zu Hause am wichtigsten ist.",
+      "Haltet Vereinbarungen schriftlich fest und prüft sie ab und zu."
+     ],
+     "q": "Welche Hausregel ist dir beim Zusammenwohnen am wichtigsten?",
+     "c": "Schlage ein kurzes Hausgespräch zu einem gemeinsamen Thema vor."
+    },
+    "es": {
+     "t": "Negociar con compañeros de piso",
+     "g": "Acordad invitados, ruido, gastos compartidos y limpieza sin fricción.",
+     "p": [
+      "Hablad pronto de las normas de la casa, antes de que crezcan los problemas.",
+      "Pregunta a cada persona qué le importa más en casa.",
+      "Anotad los acuerdos y revisadlos de vez en cuando."
+     ],
+     "q": "¿Qué norma de la casa te importa más al compartir vivienda?",
+     "c": "Propón una charla breve en casa sobre un tema compartido."
+    },
+    "fr": {
+     "t": "Négocier avec des colocataires",
+     "g": "Accordez-vous sur invités, bruit, frais communs et ménage sans friction.",
+     "p": [
+      "Parlez tôt des règles de la maison, avant que les problèmes s'accumulent.",
+      "Demande à chacun ce qui compte le plus pour lui chez vous.",
+      "Notez les accords et relisez-les de temps en temps."
+     ],
+     "q": "Quelle règle compte le plus pour toi en colocation ?",
+     "c": "Propose une courte discussion de colocation sur un sujet commun."
+    },
+    "it": {
+     "t": "Negoziare con i coinquilini",
+     "g": "Accordatevi su ospiti, rumore, spese comuni e pulizie senza attriti.",
+     "p": [
+      "Parlate presto delle regole di casa, prima che i problemi si accumulino.",
+      "Chiedi a ciascuno cosa conta di più per lui in casa.",
+      "Mettete gli accordi per iscritto e rivedeteli ogni tanto."
+     ],
+     "q": "Quale regola di casa conta di più per te nella convivenza?",
+     "c": "Proponi una breve chiacchierata di casa su un tema comune."
+    },
+    "pt": {
+     "t": "Negociar com colegas de casa",
+     "g": "Combinem convidados, ruído, despesas partilhadas e limpeza sem atritos.",
+     "p": [
+      "Falem cedo das regras da casa, antes que os problemas se acumulem.",
+      "Pergunta a cada pessoa o que mais lhe importa em casa.",
+      "Escrevam os acordos e revejam-nos de vez em quando."
+     ],
+     "q": "Que regra da casa te importa mais numa casa partilhada?",
+     "c": "Propõe uma conversa breve em casa sobre um tema comum."
+    },
+    "pt_BR": {
+     "t": "Negociando com colegas de casa",
+     "g": "Combinem visitas, barulho, despesas divididas e limpeza sem atrito.",
+     "p": [
+      "Falem cedo das regras da casa, antes que os problemas se acumulem.",
+      "Pergunte a cada pessoa o que mais importa para ela em casa.",
+      "Anotem os acordos e revisem de vez em quando."
+     ],
+     "q": "Que regra da casa mais importa para você numa moradia compartilhada?",
+     "c": "Proponha uma conversa rápida em casa sobre um tema em comum."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Negotiating with family",
+     "g": "Use respectful ways to discuss plans, holidays and responsibilities with relatives.",
+     "p": [
+      "Family history adds feelings, so go slowly and kindly.",
+      "Listen for the need behind a request, like togetherness or rest.",
+      "Offer options and share the effort fairly."
+     ],
+     "q": "What family plan could use a calmer, fairer conversation?",
+     "c": "Ask a relative what matters most to them about one family plan."
+    },
+    "de": {
+     "t": "Verhandeln mit der Familie",
+     "g": "Besprich Pläne, Feiertage und Pflichten respektvoll mit Verwandten.",
+     "p": [
+      "Familiengeschichte bringt Gefühle mit, also geh langsam und freundlich vor.",
+      "Höre auf das Bedürfnis hinter einer Bitte, etwa Nähe oder Ruhe.",
+      "Biete Optionen an und teilt den Aufwand fair."
+     ],
+     "q": "Welcher Familienplan verdient ein ruhigeres, faireres Gespräch?",
+     "c": "Frage ein Familienmitglied, was ihm an einem Familienplan am wichtigsten ist."
+    },
+    "es": {
+     "t": "Negociar con la familia",
+     "g": "Habla con respeto de planes, vacaciones y responsabilidades con tus familiares.",
+     "p": [
+      "La historia familiar trae sentimientos, así que ve despacio y con cariño.",
+      "Escucha la necesidad detrás de una petición, como estar juntos o descansar.",
+      "Ofrece opciones y repartid el esfuerzo con justicia."
+     ],
+     "q": "¿Qué plan familiar necesitaría una conversación más serena y justa?",
+     "c": "Pregunta a un familiar qué le importa más de un plan familiar."
+    },
+    "fr": {
+     "t": "Négocier avec la famille",
+     "g": "Discute avec respect des projets, vacances et responsabilités avec tes proches.",
+     "p": [
+      "L'histoire familiale apporte des émotions : avance doucement et avec bienveillance.",
+      "Écoute le besoin derrière une demande, comme être ensemble ou se reposer.",
+      "Propose des options et partagez l'effort équitablement."
+     ],
+     "q": "Quel projet familial gagnerait à une conversation plus calme et plus juste ?",
+     "c": "Demande à un proche ce qui compte le plus pour lui dans un projet familial."
+    },
+    "it": {
+     "t": "Negoziare con la famiglia",
+     "g": "Discuti con rispetto di piani, vacanze e responsabilità con i parenti.",
+     "p": [
+      "La storia di famiglia porta emozioni, quindi vai piano e con gentilezza.",
+      "Ascolta il bisogno dietro una richiesta, come stare insieme o riposare.",
+      "Offri opzioni e dividete lo sforzo in modo equo."
+     ],
+     "q": "Quale piano familiare meriterebbe una conversazione più calma ed equa?",
+     "c": "Chiedi a un parente cosa conta di più per lui in un piano di famiglia."
+    },
+    "pt": {
+     "t": "Negociar com a família",
+     "g": "Fala com respeito de planos, férias e responsabilidades com os familiares.",
+     "p": [
+      "A história familiar traz sentimentos, por isso vai devagar e com carinho.",
+      "Ouve a necessidade por trás de um pedido, como estar junto ou descansar.",
+      "Oferece opções e dividam o esforço com justiça."
+     ],
+     "q": "Que plano familiar precisaria de uma conversa mais calma e justa?",
+     "c": "Pergunta a um familiar o que mais lhe importa num plano de família."
+    },
+    "pt_BR": {
+     "t": "Negociando com a família",
+     "g": "Converse com respeito sobre planos, férias e responsabilidades com seus parentes.",
+     "p": [
+      "A história da família traz sentimentos, então vá devagar e com carinho.",
+      "Escute a necessidade por trás de um pedido, como ficar junto ou descansar.",
+      "Ofereça opções e dividam o esforço com justiça."
+     ],
+     "q": "Que plano de família precisaria de uma conversa mais calma e justa?",
+     "c": "Pergunte a um parente o que mais importa para ele num plano de família."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kids and negotiation",
+     "g": "See how parents use choices and clear rules instead of endless bargaining.",
+     "p": [
+      "Offer two acceptable choices so a child feels some control.",
+      "Keep key rules clear and calm; not everything is open to trade.",
+      "Praise cooperation and explain reasons in simple words."
+     ],
+     "q": "What helped you cooperate when you were a child?",
+     "c": "If you spend time with kids, offer one either-or choice today."
+    },
+    "de": {
+     "t": "Kinder und Verhandeln",
+     "g": "Sieh, wie Eltern mit Wahlmöglichkeiten und klaren Regeln endloses Feilschen vermeiden.",
+     "p": [
+      "Biete zwei akzeptable Wahlmöglichkeiten, damit ein Kind etwas Kontrolle spürt.",
+      "Halte wichtige Regeln klar und ruhig; nicht alles ist verhandelbar.",
+      "Lobe Zusammenarbeit und erkläre Gründe in einfachen Worten."
+     ],
+     "q": "Was hat dir als Kind geholfen, mitzumachen?",
+     "c": "Wenn du Zeit mit Kindern verbringst, biete heute eine Entweder-oder-Wahl an."
+    },
+    "es": {
+     "t": "Niños y negociación",
+     "g": "Descubre cómo los padres usan opciones y reglas claras en lugar de regateo sin fin.",
+     "p": [
+      "Ofrece dos opciones aceptables para que el niño sienta algo de control.",
+      "Mantén claras y serenas las reglas clave; no todo se negocia.",
+      "Elogia la cooperación y explica las razones con palabras sencillas."
+     ],
+     "q": "¿Qué te ayudó a cooperar cuando eras niño?",
+     "c": "Si pasas tiempo con niños, ofrece hoy una opción entre dos."
+    },
+    "fr": {
+     "t": "Enfants et négociation",
+     "g": "Vois comment des parents utilisent choix et règles claires plutôt qu'un marchandage sans fin.",
+     "p": [
+      "Propose deux choix acceptables pour que l'enfant sente un peu de contrôle.",
+      "Garde les règles clés claires et calmes : tout n'est pas négociable.",
+      "Félicite la coopération et explique les raisons avec des mots simples."
+     ],
+     "q": "Qu'est-ce qui t'aidait à coopérer quand tu étais enfant ?",
+     "c": "Si tu côtoies des enfants, propose aujourd'hui un choix entre deux options."
+    },
+    "it": {
+     "t": "Bambini e negoziazione",
+     "g": "Scopri come i genitori usano scelte e regole chiare invece di contrattazioni infinite.",
+     "p": [
+      "Offri due scelte accettabili perché il bambino senta un po' di controllo.",
+      "Tieni chiare e calme le regole chiave: non tutto è trattabile.",
+      "Elogia la collaborazione e spiega i motivi con parole semplici."
+     ],
+     "q": "Cosa ti aiutava a collaborare quando eri bambino?",
+     "c": "Se stai con dei bambini, offri oggi una scelta tra due opzioni."
+    },
+    "pt": {
+     "t": "Crianças e negociação",
+     "g": "Vê como os pais usam escolhas e regras claras em vez de regateio sem fim.",
+     "p": [
+      "Oferece duas escolhas aceitáveis para a criança sentir algum controlo.",
+      "Mantém claras e calmas as regras essenciais; nem tudo é negociável.",
+      "Elogia a cooperação e explica as razões com palavras simples."
+     ],
+     "q": "O que te ajudava a colaborar quando eras criança?",
+     "c": "Se passas tempo com crianças, oferece hoje uma escolha entre duas opções."
+    },
+    "pt_BR": {
+     "t": "Crianças e negociação",
+     "g": "Veja como os pais usam escolhas e regras claras em vez de barganha sem fim.",
+     "p": [
+      "Ofereça duas escolhas aceitáveis para a criança sentir algum controle.",
+      "Mantenha claras e calmas as regras essenciais; nem tudo é negociável.",
+      "Elogie a cooperação e explique as razões com palavras simples."
+     ],
+     "q": "O que ajudava você a cooperar quando era criança?",
+     "c": "Se você convive com crianças, ofereça hoje uma escolha entre duas opções."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Persuasion versus manipulation",
+     "g": "Know the line between honest influence and pressure that harms trust.",
+     "p": [
+      "Honest persuasion shares true reasons and respects a free choice.",
+      "Manipulation hides facts, rushes people or plays on fear.",
+      "Test: would I be comfortable if they saw exactly how I did it?"
+     ],
+     "q": "Where have you felt pressure that crossed a line?",
+     "c": "Pick one request you plan to make and check it with the openness test."
+    },
+    "de": {
+     "t": "Überzeugen oder manipulieren",
+     "g": "Kenne die Grenze zwischen ehrlichem Einfluss und Druck, der Vertrauen zerstört.",
+     "p": [
+      "Ehrliches Überzeugen nennt wahre Gründe und achtet die freie Wahl.",
+      "Manipulation verschweigt Fakten, drängt oder spielt mit Angst.",
+      "Test: Wäre es mir recht, wenn sie genau sähen, wie ich es tat?"
+     ],
+     "q": "Wo hast du Druck erlebt, der eine Grenze überschritt?",
+     "c": "Wähle eine geplante Bitte und prüfe sie mit dem Offenheitstest."
+    },
+    "es": {
+     "t": "Persuasión frente a manipulación",
+     "g": "Conoce la línea entre la influencia honesta y la presión que daña la confianza.",
+     "p": [
+      "La persuasión honesta da razones verdaderas y respeta la libre elección.",
+      "La manipulación oculta datos, mete prisa o juega con el miedo.",
+      "Prueba: ¿me sentiría cómodo si vieran exactamente cómo lo hice?"
+     ],
+     "q": "¿Dónde has sentido una presión que cruzó la línea?",
+     "c": "Elige una petición que pienses hacer y revísala con la prueba de la transparencia."
+    },
+    "fr": {
+     "t": "Persuasion ou manipulation",
+     "g": "Connais la frontière entre l'influence honnête et la pression qui abîme la confiance.",
+     "p": [
+      "La persuasion honnête donne de vraies raisons et respecte le libre choix.",
+      "La manipulation cache des faits, presse ou joue sur la peur.",
+      "Test : serais-je à l'aise s'ils voyaient exactement comment j'ai procédé ?"
+     ],
+     "q": "Où as-tu ressenti une pression qui dépassait la limite ?",
+     "c": "Choisis une demande prévue et vérifie-la avec le test de transparence."
+    },
+    "it": {
+     "t": "Persuasione o manipolazione",
+     "g": "Conosci il confine tra influenza onesta e pressione che danneggia la fiducia.",
+     "p": [
+      "La persuasione onesta offre ragioni vere e rispetta la libera scelta.",
+      "La manipolazione nasconde fatti, mette fretta o gioca sulla paura.",
+      "Test: sarei a mio agio se vedessero esattamente come ho fatto?"
+     ],
+     "q": "Dove hai sentito una pressione che superava il limite?",
+     "c": "Scegli una richiesta che pensi di fare e verificala con il test della trasparenza."
+    },
+    "pt": {
+     "t": "Persuasão e manipulação",
+     "g": "Conhece a linha entre influência honesta e pressão que prejudica a confiança.",
+     "p": [
+      "A persuasão honesta dá razões verdadeiras e respeita a livre escolha.",
+      "A manipulação esconde factos, apressa ou joga com o medo.",
+      "Teste: sentir-me-ia à vontade se vissem exatamente como o fiz?"
+     ],
+     "q": "Onde sentiste uma pressão que passou dos limites?",
+     "c": "Escolhe um pedido que penses fazer e confirma-o com o teste da transparência."
+    },
+    "pt_BR": {
+     "t": "Persuasão e manipulação",
+     "g": "Conheça a linha entre influência honesta e pressão que prejudica a confiança.",
+     "p": [
+      "A persuasão honesta dá razões verdadeiras e respeita a livre escolha.",
+      "A manipulação esconde fatos, apressa ou joga com o medo.",
+      "Teste: eu me sentiria à vontade se vissem exatamente como fiz?"
+     ],
+     "q": "Onde você sentiu uma pressão que passou dos limites?",
+     "c": "Escolha um pedido que pretende fazer e confira com o teste da transparência."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reciprocity",
+     "g": "Learn why people tend to return favours and how to use this generously.",
+     "p": [
+      "Many people feel a pull to repay kindness.",
+      "Give first, without strings, and mean it.",
+      "Never use favours as a trap; genuine generosity builds trust."
+     ],
+     "q": "What small favour did someone do for you that you remember?",
+     "c": "Do one small, no-strings favour for someone today."
+    },
+    "de": {
+     "t": "Gegenseitigkeit",
+     "g": "Lerne, warum Menschen Gefallen gern erwidern und wie du das großzügig nutzt.",
+     "p": [
+      "Viele spüren den Drang, Freundlichkeit zu erwidern.",
+      "Gib zuerst, ohne Bedingungen, und meine es ernst.",
+      "Nutze Gefallen nie als Falle; echte Großzügigkeit schafft Vertrauen."
+     ],
+     "q": "Welchen kleinen Gefallen hat dir jemand getan, an den du dich erinnerst?",
+     "c": "Tu heute jemandem einen kleinen Gefallen ohne Bedingungen."
+    },
+    "es": {
+     "t": "Reciprocidad",
+     "g": "Aprende por qué la gente suele devolver favores y cómo usarlo con generosidad.",
+     "p": [
+      "Muchas personas sienten el impulso de devolver la amabilidad.",
+      "Da primero, sin condiciones, y hazlo de corazón.",
+      "Nunca uses favores como trampa; la generosidad genuina crea confianza."
+     ],
+     "q": "¿Qué pequeño favor te hizo alguien que recuerdes?",
+     "c": "Haz hoy un pequeño favor a alguien, sin condiciones."
+    },
+    "fr": {
+     "t": "La réciprocité",
+     "g": "Apprends pourquoi on rend volontiers les services et comment l'utiliser avec générosité.",
+     "p": [
+      "Beaucoup de gens ressentent l'envie de rendre la gentillesse.",
+      "Donne d'abord, sans condition, et pense-le vraiment.",
+      "N'utilise jamais un service comme un piège : la vraie générosité crée la confiance."
+     ],
+     "q": "Quel petit service quelqu'un t'a-t-il rendu dont tu te souviens ?",
+     "c": "Rends aujourd'hui un petit service à quelqu'un, sans condition."
+    },
+    "it": {
+     "t": "La reciprocità",
+     "g": "Scopri perché le persone tendono a ricambiare i favori e come usarlo con generosità.",
+     "p": [
+      "Molti sentono la spinta a ricambiare la gentilezza.",
+      "Dai per primo, senza condizioni, e fallo sul serio.",
+      "Non usare mai i favori come trappola: la vera generosità crea fiducia."
+     ],
+     "q": "Quale piccolo favore ti ha fatto qualcuno che ricordi?",
+     "c": "Oggi fai un piccolo favore a qualcuno, senza condizioni."
+    },
+    "pt": {
+     "t": "Reciprocidade",
+     "g": "Aprende porque as pessoas tendem a retribuir favores e como usar isso com generosidade.",
+     "p": [
+      "Muitas pessoas sentem vontade de retribuir a gentileza.",
+      "Dá primeiro, sem condições, e fá-lo a sério.",
+      "Nunca uses favores como armadilha; a generosidade genuína cria confiança."
+     ],
+     "q": "Que pequeno favor alguém te fez e recordas?",
+     "c": "Hoje faz um pequeno favor a alguém, sem condições."
+    },
+    "pt_BR": {
+     "t": "Reciprocidade",
+     "g": "Aprenda por que as pessoas tendem a retribuir favores e como usar isso com generosidade.",
+     "p": [
+      "Muita gente sente vontade de retribuir a gentileza.",
+      "Dê primeiro, sem condições, e faça isso de verdade.",
+      "Nunca use favores como armadilha; generosidade genuína cria confiança."
+     ],
+     "q": "Que pequeno favor alguém fez por você e você lembra?",
+     "c": "Hoje faça um pequeno favor a alguém, sem condições."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Social proof",
+     "g": "See how examples of what others do can make a proposal feel safer.",
+     "p": [
+      "People look to others to judge what is normal.",
+      "Share true examples: Many people in your situation choose this.",
+      "Only use real examples; invented ones destroy trust."
+     ],
+     "q": "When did you choose something because others did?",
+     "c": "Support one idea today with a true, relevant example."
+    },
+    "de": {
+     "t": "Soziale Bewährtheit",
+     "g": "Sieh, wie Beispiele dafür, was andere tun, einen Vorschlag sicherer wirken lassen.",
+     "p": [
+      "Menschen schauen auf andere, um Normales einzuschätzen.",
+      "Nenne wahre Beispiele: Viele in deiner Lage wählen das.",
+      "Nutze nur echte Beispiele; erfundene zerstören Vertrauen."
+     ],
+     "q": "Wann hast du etwas gewählt, weil andere es taten?",
+     "c": "Stütze heute eine Idee mit einem wahren, passenden Beispiel."
+    },
+    "es": {
+     "t": "Prueba social",
+     "g": "Descubre cómo los ejemplos de lo que hacen otros hacen que una propuesta parezca más segura.",
+     "p": [
+      "La gente mira a los demás para juzgar qué es normal.",
+      "Comparte ejemplos reales: Muchas personas en tu situación eligen esto.",
+      "Usa solo ejemplos reales; los inventados destruyen la confianza."
+     ],
+     "q": "¿Cuándo elegiste algo porque otros lo hacían?",
+     "c": "Apoya hoy una idea con un ejemplo real y relevante."
+    },
+    "fr": {
+     "t": "La preuve sociale",
+     "g": "Vois comment l'exemple de ce que font les autres rend une proposition plus rassurante.",
+     "p": [
+      "On regarde les autres pour juger ce qui est normal.",
+      "Donne de vrais exemples : Beaucoup de gens dans ta situation choisissent cela.",
+      "N'utilise que de vrais exemples : les inventés détruisent la confiance."
+     ],
+     "q": "Quand as-tu choisi quelque chose parce que d'autres le faisaient ?",
+     "c": "Appuie aujourd'hui une idée avec un exemple vrai et pertinent."
+    },
+    "it": {
+     "t": "La riprova sociale",
+     "g": "Scopri come gli esempi di ciò che fanno gli altri rendono una proposta più rassicurante.",
+     "p": [
+      "Le persone guardano gli altri per capire cosa è normale.",
+      "Porta esempi veri: Molti nella tua situazione scelgono questo.",
+      "Usa solo esempi reali: quelli inventati distruggono la fiducia."
+     ],
+     "q": "Quando hai scelto qualcosa perché lo facevano altri?",
+     "c": "Oggi sostieni un'idea con un esempio vero e pertinente."
+    },
+    "pt": {
+     "t": "Prova social",
+     "g": "Vê como exemplos do que os outros fazem tornam uma proposta mais segura.",
+     "p": [
+      "As pessoas olham para os outros para julgar o que é normal.",
+      "Partilha exemplos verdadeiros: Muitas pessoas na tua situação escolhem isto.",
+      "Usa só exemplos reais; os inventados destroem a confiança."
+     ],
+     "q": "Quando escolheste algo porque os outros o faziam?",
+     "c": "Hoje apoia uma ideia com um exemplo verdadeiro e relevante."
+    },
+    "pt_BR": {
+     "t": "Prova social",
+     "g": "Veja como exemplos do que os outros fazem deixam uma proposta mais segura.",
+     "p": [
+      "As pessoas olham para os outros para julgar o que é normal.",
+      "Compartilhe exemplos verdadeiros: Muita gente na sua situação escolhe isso.",
+      "Use só exemplos reais; os inventados destroem a confiança."
+     ],
+     "q": "Quando você escolheu algo porque os outros faziam?",
+     "c": "Hoje apoie uma ideia com um exemplo verdadeiro e relevante."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Authority and expertise",
+     "g": "Show relevant knowledge so people trust your suggestions.",
+     "p": [
+      "People trust those who know their subject.",
+      "Share experience or facts briefly, without boasting.",
+      "Credit your sources and admit what you do not know."
+     ],
+     "q": "In what area do others value your knowledge?",
+     "c": "Mention one relevant fact or experience in a conversation today."
+    },
+    "de": {
+     "t": "Autorität und Fachwissen",
+     "g": "Zeige relevantes Wissen, damit Menschen deinen Vorschlägen vertrauen.",
+     "p": [
+      "Menschen vertrauen denen, die ihr Thema kennen.",
+      "Teile Erfahrung oder Fakten kurz, ohne anzugeben.",
+      "Nenne deine Quellen und gib zu, was du nicht weißt."
+     ],
+     "q": "In welchem Bereich schätzen andere dein Wissen?",
+     "c": "Erwähne heute in einem Gespräch eine passende Tatsache oder Erfahrung."
+    },
+    "es": {
+     "t": "Autoridad y experiencia",
+     "g": "Muestra conocimiento relevante para que confíen en tus propuestas.",
+     "p": [
+      "La gente confía en quien conoce su materia.",
+      "Comparte experiencia o datos brevemente, sin presumir.",
+      "Cita tus fuentes y admite lo que no sabes."
+     ],
+     "q": "¿En qué área valoran otros tu conocimiento?",
+     "c": "Menciona hoy en una conversación un dato o experiencia relevante."
+    },
+    "fr": {
+     "t": "Autorité et expertise",
+     "g": "Montre des connaissances pertinentes pour que l'on se fie à tes suggestions.",
+     "p": [
+      "On fait confiance à ceux qui connaissent leur sujet.",
+      "Partage expérience ou faits brièvement, sans te vanter.",
+      "Cite tes sources et admets ce que tu ignores."
+     ],
+     "q": "Dans quel domaine les autres apprécient-ils tes connaissances ?",
+     "c": "Mentionne aujourd'hui dans une conversation un fait ou une expérience pertinents."
+    },
+    "it": {
+     "t": "Autorevolezza e competenza",
+     "g": "Mostra conoscenze pertinenti perché si fidino dei tuoi suggerimenti.",
+     "p": [
+      "Ci si fida di chi conosce la materia.",
+      "Condividi esperienza o fatti in breve, senza vantarti.",
+      "Cita le fonti e ammetti ciò che non sai."
+     ],
+     "q": "In quale ambito gli altri apprezzano le tue conoscenze?",
+     "c": "Oggi cita in una conversazione un fatto o un'esperienza pertinente."
+    },
+    "pt": {
+     "t": "Autoridade e conhecimento",
+     "g": "Mostra conhecimento relevante para que confiem nas tuas sugestões.",
+     "p": [
+      "As pessoas confiam em quem conhece o assunto.",
+      "Partilha experiência ou factos de forma breve, sem te gabares.",
+      "Cita as fontes e admite o que não sabes."
+     ],
+     "q": "Em que área os outros valorizam o teu conhecimento?",
+     "c": "Hoje menciona numa conversa um facto ou experiência relevante."
+    },
+    "pt_BR": {
+     "t": "Autoridade e conhecimento",
+     "g": "Mostre conhecimento relevante para que confiem nas suas sugestões.",
+     "p": [
+      "As pessoas confiam em quem conhece o assunto.",
+      "Compartilhe experiência ou fatos de forma breve, sem se gabar.",
+      "Cite as fontes e admita o que não sabe."
+     ],
+     "q": "Em que área os outros valorizam seu conhecimento?",
+     "c": "Hoje mencione numa conversa um fato ou experiência relevante."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Liking and similarity",
+     "g": "Learn why we say yes more easily to people we like and relate to.",
+     "p": [
+      "We cooperate more with people who feel friendly and familiar.",
+      "Honest compliments and shared interests build real liking.",
+      "Be sincere; flattery that rings false backfires."
+     ],
+     "q": "What makes you like someone quickly?",
+     "c": "Give one sincere compliment today and notice the response."
+    },
+    "de": {
+     "t": "Sympathie und Ähnlichkeit",
+     "g": "Lerne, warum wir zu Menschen, die wir mögen und mit denen wir uns verbunden fühlen, leichter ja sagen.",
+     "p": [
+      "Wir arbeiten mehr mit Menschen zusammen, die freundlich und vertraut wirken.",
+      "Ehrliche Komplimente und gemeinsame Interessen schaffen echte Sympathie.",
+      "Sei aufrichtig; unechte Schmeichelei geht nach hinten los."
+     ],
+     "q": "Was lässt dich jemanden schnell mögen?",
+     "c": "Mache heute ein aufrichtiges Kompliment und achte auf die Reaktion."
+    },
+    "es": {
+     "t": "Simpatía y semejanza",
+     "g": "Aprende por qué decimos que sí con más facilidad a quien nos cae bien y nos resulta cercano.",
+     "p": [
+      "Cooperamos más con personas que parecen amables y familiares.",
+      "Los cumplidos honestos y los intereses compartidos crean simpatía real.",
+      "Sé sincero; la adulación falsa sale mal."
+     ],
+     "q": "¿Qué hace que alguien te caiga bien rápido?",
+     "c": "Haz hoy un cumplido sincero y observa la respuesta."
+    },
+    "fr": {
+     "t": "Sympathie et ressemblance",
+     "g": "Apprends pourquoi on dit plus facilement oui à ceux qu'on apprécie et qui nous ressemblent.",
+     "p": [
+      "On coopère davantage avec ceux qui semblent aimables et familiers.",
+      "Des compliments honnêtes et des intérêts communs créent une vraie sympathie.",
+      "Sois sincère : la flatterie fausse se retourne contre toi."
+     ],
+     "q": "Qu'est-ce qui te fait apprécier quelqu'un rapidement ?",
+     "c": "Fais aujourd'hui un compliment sincère et observe la réaction."
+    },
+    "it": {
+     "t": "Simpatia e somiglianza",
+     "g": "Scopri perché diciamo sì più facilmente a chi ci piace e sentiamo vicino.",
+     "p": [
+      "Collaboriamo di più con chi sembra amichevole e familiare.",
+      "Complimenti onesti e interessi comuni creano vera simpatia.",
+      "Sii sincero: l'adulazione falsa si ritorce contro."
+     ],
+     "q": "Cosa ti fa piacere subito qualcuno?",
+     "c": "Oggi fai un complimento sincero e osserva la reazione."
+    },
+    "pt": {
+     "t": "Simpatia e semelhança",
+     "g": "Aprende porque dizemos sim mais facilmente a quem gostamos e sentimos próximo.",
+     "p": [
+      "Cooperamos mais com quem parece simpático e familiar.",
+      "Elogios honestos e interesses comuns criam simpatia real.",
+      "Sê sincero; a lisonja falsa sai-te cara."
+     ],
+     "q": "O que faz com que gostes depressa de alguém?",
+     "c": "Hoje faz um elogio sincero e repara na reação."
+    },
+    "pt_BR": {
+     "t": "Simpatia e semelhança",
+     "g": "Aprenda por que dizemos sim mais facilmente a quem gostamos e sentimos próximo.",
+     "p": [
+      "Cooperamos mais com quem parece simpático e familiar.",
+      "Elogios honestos e interesses em comum criam simpatia de verdade.",
+      "Seja sincero; bajulação falsa sai caro."
+     ],
+     "q": "O que faz você gostar rápido de alguém?",
+     "c": "Hoje faça um elogio sincero e observe a reação."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Consistency and small yeses",
+     "g": "See how small agreements can build toward bigger ones.",
+     "p": [
+      "People like to act in line with what they already said.",
+      "Start with an easy, honest request, then build gently.",
+      "Never trick people into commitments they would not choose."
+     ],
+     "q": "What small yes led you to a bigger one once?",
+     "c": "Ask for one small step toward a larger goal today."
+    },
+    "de": {
+     "t": "Beständigkeit und kleine Jas",
+     "g": "Sieh, wie kleine Zustimmungen zu größeren führen können.",
+     "p": [
+      "Menschen handeln gern im Einklang mit dem, was sie schon gesagt haben.",
+      "Beginne mit einer leichten, ehrlichen Bitte und baue behutsam auf.",
+      "Lock niemanden in Zusagen, die er sonst nicht wählen würde."
+     ],
+     "q": "Welches kleine Ja hat dich einmal zu einem größeren geführt?",
+     "c": "Bitte heute um einen kleinen Schritt zu einem größeren Ziel."
+    },
+    "es": {
+     "t": "Coherencia y pequeños síes",
+     "g": "Descubre cómo los pequeños acuerdos pueden llevar a otros mayores.",
+     "p": [
+      "A la gente le gusta actuar de acuerdo con lo que ya dijo.",
+      "Empieza con una petición fácil y honesta y avanza con suavidad.",
+      "Nunca engañes para lograr compromisos que no elegirían."
+     ],
+     "q": "¿Qué pequeño sí te llevó una vez a uno más grande?",
+     "c": "Pide hoy un pequeño paso hacia una meta mayor."
+    },
+    "fr": {
+     "t": "Cohérence et petits oui",
+     "g": "Vois comment de petits accords peuvent mener à de plus grands.",
+     "p": [
+      "On aime agir en accord avec ce qu'on a déjà dit.",
+      "Commence par une demande facile et honnête, puis avance doucement.",
+      "Ne piège jamais quelqu'un dans un engagement qu'il ne choisirait pas."
+     ],
+     "q": "Quel petit oui t'a un jour mené à un plus grand ?",
+     "c": "Demande aujourd'hui un petit pas vers un objectif plus grand."
+    },
+    "it": {
+     "t": "Coerenza e piccoli sì",
+     "g": "Scopri come piccoli accordi possono portare a accordi più grandi.",
+     "p": [
+      "Alle persone piace agire in linea con ciò che hanno già detto.",
+      "Inizia con una richiesta facile e onesta, poi procedi con gentilezza.",
+      "Non intrappolare mai nessuno in impegni che non sceglierebbe."
+     ],
+     "q": "Quale piccolo sì ti ha portato una volta a uno più grande?",
+     "c": "Oggi chiedi un piccolo passo verso un obiettivo più grande."
+    },
+    "pt": {
+     "t": "Coerência e pequenos sins",
+     "g": "Vê como pequenos acordos podem levar a outros maiores.",
+     "p": [
+      "As pessoas gostam de agir de acordo com o que já disseram.",
+      "Começa com um pedido fácil e honesto e avança com suavidade.",
+      "Nunca enganes alguém para compromissos que não escolheria."
+     ],
+     "q": "Que pequeno sim te levou uma vez a um maior?",
+     "c": "Hoje pede um pequeno passo rumo a um objetivo maior."
+    },
+    "pt_BR": {
+     "t": "Coerência e pequenos sins",
+     "g": "Veja como pequenos acordos podem levar a outros maiores.",
+     "p": [
+      "As pessoas gostam de agir de acordo com o que já disseram.",
+      "Comece com um pedido fácil e honesto e avance com suavidade.",
+      "Nunca engane alguém para compromissos que não escolheria."
+     ],
+     "q": "Que pequeno sim levou você uma vez a um maior?",
+     "c": "Hoje peça um pequeno passo rumo a um objetivo maior."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: anchors and persuasion",
+     "g": "A light recap of offers, concessions, trading and the principles of influence.",
+     "p": [
+      "The first number anchors; reasons and facts keep it fair.",
+      "Concede slowly and trade with if-then, aiming to grow the pie.",
+      "Reciprocity, proof, expertise, liking and consistency work best when honest."
+     ],
+     "q": "Which technique from the last month will you try next?",
+     "c": "Choose one technique and plan where you will use it this week."
+    },
+    "de": {
+     "t": "Rückblick: Anker und Überzeugung",
+     "g": "Ein leichter Überblick über Angebote, Zugeständnisse, Tausch und Einflussprinzipien.",
+     "p": [
+      "Die erste Zahl verankert; Gründe und Fakten halten es fair.",
+      "Gib langsam nach und tausche mit Wenn-dann, um den Kuchen zu vergrößern.",
+      "Gegenseitigkeit, Beleg, Fachwissen, Sympathie und Beständigkeit wirken ehrlich am besten."
+     ],
+     "q": "Welche Technik des letzten Monats probierst du als Nächstes?",
+     "c": "Wähle eine Technik und plane, wo du sie diese Woche einsetzt."
+    },
+    "es": {
+     "t": "Repaso: anclajes y persuasión",
+     "g": "Un repaso ligero de ofertas, concesiones, intercambios y principios de influencia.",
+     "p": [
+      "La primera cifra ancla; las razones y los hechos la mantienen justa.",
+      "Cede despacio e intercambia con si-entonces para agrandar el pastel.",
+      "Reciprocidad, prueba, experiencia, simpatía y coherencia funcionan mejor con honestidad."
+     ],
+     "q": "¿Qué técnica del último mes probarás ahora?",
+     "c": "Elige una técnica y planea dónde la usarás esta semana."
+    },
+    "fr": {
+     "t": "Bilan : ancres et persuasion",
+     "g": "Un récapitulatif léger des offres, concessions, échanges et principes d'influence.",
+     "p": [
+      "Le premier chiffre ancre ; raisons et faits le gardent juste.",
+      "Cède lentement et échange en si-alors pour agrandir le gâteau.",
+      "Réciprocité, preuve, expertise, sympathie et cohérence marchent mieux avec honnêteté."
+     ],
+     "q": "Quelle technique du dernier mois vas-tu essayer ensuite ?",
+     "c": "Choisis une technique et prévois où l'utiliser cette semaine."
+    },
+    "it": {
+     "t": "Ripasso: ancore e persuasione",
+     "g": "Un ripasso leggero di offerte, concessioni, scambi e principi di influenza.",
+     "p": [
+      "La prima cifra ancora; ragioni e fatti la mantengono equa.",
+      "Cedi lentamente e scambia con il se-allora per ingrandire la torta.",
+      "Reciprocità, riprova, competenza, simpatia e coerenza funzionano meglio con onestà."
+     ],
+     "q": "Quale tecnica dell'ultimo mese proverai ora?",
+     "c": "Scegli una tecnica e pianifica dove usarla questa settimana."
+    },
+    "pt": {
+     "t": "Revisão: âncoras e persuasão",
+     "g": "Uma revisão leve de ofertas, concessões, trocas e princípios de influência.",
+     "p": [
+      "O primeiro valor ancora; razões e factos mantêm-no justo.",
+      "Cede devagar e troca com se-então para aumentar o bolo.",
+      "Reciprocidade, prova, conhecimento, simpatia e coerência funcionam melhor com honestidade."
+     ],
+     "q": "Que técnica do último mês vais experimentar a seguir?",
+     "c": "Escolhe uma técnica e planeia onde a usarás esta semana."
+    },
+    "pt_BR": {
+     "t": "Revisão: âncoras e persuasão",
+     "g": "Uma revisão leve de ofertas, concessões, trocas e princípios de influência.",
+     "p": [
+      "O primeiro valor ancora; razões e fatos mantêm tudo justo.",
+      "Ceda devagar e troque com se-então para aumentar o bolo.",
+      "Reciprocidade, prova, conhecimento, simpatia e coerência funcionam melhor com honestidade."
+     ],
+     "q": "Que técnica do último mês você vai experimentar agora?",
+     "c": "Escolha uma técnica e planeje onde usá-la esta semana."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "public_speaking",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing a topic",
+     "g": "Pick subjects you know, care about and can explain clearly.",
+     "p": [
+      "Choose something you have experienced or studied, so you sound sure.",
+      "Your interest is contagious: care shows in your voice.",
+      "Ask whether the audience would find it useful or interesting."
+     ],
+     "q": "What are three subjects you could talk about for ten minutes?",
+     "c": "List five possible topics and circle the one you feel most excited about."
+    },
+    "de": {
+     "t": "Ein Thema wählen",
+     "g": "Wähle Themen, die du kennst, die dir wichtig sind und die du klar erklären kannst.",
+     "p": [
+      "Nimm etwas, das du erlebt oder gelernt hast, dann klingst du sicher.",
+      "Dein Interesse steckt an: Begeisterung hört man in der Stimme.",
+      "Frag dich, ob das Publikum es nützlich oder interessant fände."
+     ],
+     "q": "Über welche drei Themen könntest du zehn Minuten sprechen?",
+     "c": "Liste fünf mögliche Themen und kreise das ein, das dich am meisten begeistert."
+    },
+    "es": {
+     "t": "Elegir un tema",
+     "g": "Elige temas que conoces, te importan y puedes explicar con claridad.",
+     "p": [
+      "Escoge algo que hayas vivido o estudiado para sonar seguro.",
+      "Tu interés es contagioso: el cariño se nota en la voz.",
+      "Pregúntate si al público le resultaría útil o interesante."
+     ],
+     "q": "¿Cuáles son tres temas de los que podrías hablar diez minutos?",
+     "c": "Anota cinco temas posibles y rodea el que más te entusiasme."
+    },
+    "fr": {
+     "t": "Choisir un sujet",
+     "g": "Choisis des sujets que tu connais, qui te tiennent à cœur et que tu sais expliquer.",
+     "p": [
+      "Prends quelque chose que tu as vécu ou étudié pour paraître sûr.",
+      "Ton intérêt est contagieux : on l'entend dans ta voix.",
+      "Demande-toi si le public le trouverait utile ou intéressant."
+     ],
+     "q": "Quels sont trois sujets dont tu pourrais parler dix minutes ?",
+     "c": "Note cinq sujets possibles et entoure celui qui t'enthousiasme le plus."
+    },
+    "it": {
+     "t": "Scegliere un argomento",
+     "g": "Scegli temi che conosci, ti stanno a cuore e sai spiegare con chiarezza.",
+     "p": [
+      "Prendi qualcosa che hai vissuto o studiato, così suoni sicuro.",
+      "Il tuo interesse è contagioso: la passione si sente nella voce.",
+      "Chiediti se il pubblico lo troverebbe utile o interessante."
+     ],
+     "q": "Quali sono tre argomenti di cui potresti parlare dieci minuti?",
+     "c": "Elenca cinque argomenti possibili e cerchia quello che ti entusiasma di più."
+    },
+    "pt": {
+     "t": "Escolher um tema",
+     "g": "Escolhe temas que conheces, te interessam e consegues explicar com clareza.",
+     "p": [
+      "Escolhe algo que viveste ou estudaste para soar seguro.",
+      "O teu interesse é contagiante: nota-se na voz.",
+      "Pergunta se o público acharia útil ou interessante."
+     ],
+     "q": "Quais são três temas sobre os quais poderias falar dez minutos?",
+     "c": "Anota cinco temas possíveis e circunda o que mais te entusiasma."
+    },
+    "pt_BR": {
+     "t": "Escolher um tema",
+     "g": "Escolha temas que você conhece, que importam para você e que sabe explicar com clareza.",
+     "p": [
+      "Escolha algo que você viveu ou estudou para soar seguro.",
+      "O seu interesse é contagiante: a gente nota na voz.",
+      "Pergunte se o público acharia útil ou interessante."
+     ],
+     "q": "Quais são três temas sobre os quais você poderia falar dez minutos?",
+     "c": "Anote cinco temas possíveis e circule o que mais empolga você."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Narrowing your topic",
+     "g": "Turn a big subject into a focused talk that fits the time.",
+     "p": [
+      "A huge topic like 'travel' is too big for five minutes.",
+      "Narrow it: 'three tips for travelling light' is easier to deliver.",
+      "Ask: what can I explain well in the time I have?"
+     ],
+     "q": "How would you shrink a broad topic you love into one clear angle?",
+     "c": "Take one big topic and narrow it into a specific five-minute title."
+    },
+    "de": {
+     "t": "Das Thema eingrenzen",
+     "g": "Mach aus einem großen Thema einen fokussierten Vortrag, der in die Zeit passt.",
+     "p": [
+      "Ein riesiges Thema wie 'Reisen' ist für fünf Minuten zu groß.",
+      "Grenze ein: 'drei Tipps für leichtes Reisen' lässt sich leichter vortragen.",
+      "Frag dich: Was kann ich in der verfügbaren Zeit gut erklären?"
+     ],
+     "q": "Wie würdest du ein breites Lieblingsthema auf einen klaren Blickwinkel verkleinern?",
+     "c": "Nimm ein großes Thema und grenze es zu einem konkreten Fünfminutentitel ein."
+    },
+    "es": {
+     "t": "Acotar tu tema",
+     "g": "Convierte un tema grande en una charla enfocada que cabe en el tiempo.",
+     "p": [
+      "Un tema enorme como 'viajar' es demasiado grande para cinco minutos.",
+      "Acótalo: 'tres consejos para viajar ligero' es más fácil de dar.",
+      "Pregunta: ¿qué puedo explicar bien en el tiempo que tengo?"
+     ],
+     "q": "¿Cómo reducirías un tema amplio que amas a un enfoque claro?",
+     "c": "Toma un tema grande y acótalo a un título concreto de cinco minutos."
+    },
+    "fr": {
+     "t": "Cibler ton sujet",
+     "g": "Transforme un grand sujet en exposé ciblé qui tient dans le temps.",
+     "p": [
+      "Un sujet immense comme « voyager » est trop grand pour cinq minutes.",
+      "Resserre : « trois conseils pour voyager léger » se présente plus facilement.",
+      "Demande-toi : que puis-je bien expliquer dans le temps dont je dispose ?"
+     ],
+     "q": "Comment réduirais-tu un vaste sujet que tu aimes à un angle précis ?",
+     "c": "Prends un grand sujet et resserre-le en un titre précis de cinq minutes."
+    },
+    "it": {
+     "t": "Restringere l'argomento",
+     "g": "Trasforma un grande tema in un discorso mirato che stia nel tempo.",
+     "p": [
+      "Un tema enorme come 'viaggiare' è troppo grande per cinque minuti.",
+      "Restringilo: 'tre consigli per viaggiare leggeri' è più facile da presentare.",
+      "Chiediti: cosa posso spiegare bene nel tempo che ho?"
+     ],
+     "q": "Come ridurresti un tema ampio che ami a un'angolazione chiara?",
+     "c": "Prendi un tema grande e restringilo a un titolo preciso da cinque minuti."
+    },
+    "pt": {
+     "t": "Delimitar o tema",
+     "g": "Transforma um tema grande numa apresentação focada que cabe no tempo.",
+     "p": [
+      "Um tema enorme como 'viajar' é grande demais para cinco minutos.",
+      "Delimita: 'três dicas para viajar com pouca bagagem' é mais fácil de apresentar.",
+      "Pergunta: o que consigo explicar bem no tempo que tenho?"
+     ],
+     "q": "Como reduzirias um tema amplo de que gostas a um ângulo claro?",
+     "c": "Pega num tema grande e delimita-o num título concreto de cinco minutos."
+    },
+    "pt_BR": {
+     "t": "Delimitar o tema",
+     "g": "Transforme um tema grande em uma apresentação focada que cabe no tempo.",
+     "p": [
+      "Um tema enorme como 'viajar' é grande demais para cinco minutos.",
+      "Delimite: 'três dicas para viajar com pouca bagagem' é mais fácil de apresentar.",
+      "Pergunte: o que consigo explicar bem no tempo que tenho?"
+     ],
+     "q": "Como você reduziria um tema amplo de que gosta a um ângulo claro?",
+     "c": "Pegue um tema grande e delimite-o em um título concreto de cinco minutos."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Brainstorming ideas",
+     "g": "Collect everything you could say before deciding what to keep.",
+     "p": [
+      "Write every idea fast without judging; quantity comes first.",
+      "Include facts, stories, examples, questions and quotes.",
+      "Sort later: keep what serves your core message."
+     ],
+     "q": "How do you usually gather ideas: lists, walks or talking aloud?",
+     "c": "Set a timer for five minutes and write every idea about one topic."
+    },
+    "de": {
+     "t": "Ideen sammeln",
+     "g": "Sammle alles, was du sagen könntest, bevor du entscheidest, was bleibt.",
+     "p": [
+      "Schreib jede Idee schnell auf, ohne zu bewerten; Menge kommt zuerst.",
+      "Nimm Fakten, Geschichten, Beispiele, Fragen und Zitate auf.",
+      "Sortiere später: behalte, was deiner Kernbotschaft dient."
+     ],
+     "q": "Wie sammelst du Ideen meist: Listen, Spaziergänge oder lautes Reden?",
+     "c": "Stell einen Timer auf fünf Minuten und schreib alle Ideen zu einem Thema auf."
+    },
+    "es": {
+     "t": "Lluvia de ideas",
+     "g": "Reúne todo lo que podrías decir antes de decidir qué conservar.",
+     "p": [
+      "Anota cada idea rápido sin juzgar; primero la cantidad.",
+      "Incluye datos, historias, ejemplos, preguntas y citas.",
+      "Ordena después: conserva lo que sirve a tu mensaje central."
+     ],
+     "q": "¿Cómo sueles reunir ideas: listas, paseos o hablando en voz alta?",
+     "c": "Pon un temporizador de cinco minutos y anota todas las ideas de un tema."
+    },
+    "fr": {
+     "t": "Remue-méninges",
+     "g": "Rassemble tout ce que tu pourrais dire avant de décider quoi garder.",
+     "p": [
+      "Note chaque idée vite sans juger ; la quantité d'abord.",
+      "Inclus faits, histoires, exemples, questions et citations.",
+      "Trie ensuite : garde ce qui sert ton message central."
+     ],
+     "q": "Comment réunis-tu tes idées d'habitude : listes, promenades ou à voix haute ?",
+     "c": "Lance un minuteur de cinq minutes et note toutes les idées sur un sujet."
+    },
+    "it": {
+     "t": "Raccogliere idee",
+     "g": "Raccogli tutto ciò che potresti dire prima di decidere cosa tenere.",
+     "p": [
+      "Scrivi ogni idea in fretta senza giudicare; prima la quantità.",
+      "Includi fatti, storie, esempi, domande e citazioni.",
+      "Seleziona dopo: tieni ciò che serve al messaggio centrale."
+     ],
+     "q": "Come raccogli di solito le idee: elenchi, passeggiate o parlando ad alta voce?",
+     "c": "Imposta un timer di cinque minuti e scrivi tutte le idee su un tema."
+    },
+    "pt": {
+     "t": "Recolher ideias",
+     "g": "Reúne tudo o que poderias dizer antes de decidir o que manter.",
+     "p": [
+      "Escreve cada ideia depressa sem julgar; primeiro a quantidade.",
+      "Inclui factos, histórias, exemplos, perguntas e citações.",
+      "Escolhe depois: mantém o que serve a mensagem central."
+     ],
+     "q": "Como costumas reunir ideias: listas, passeios ou a falar em voz alta?",
+     "c": "Põe um temporizador de cinco minutos e anota todas as ideias sobre um tema."
+    },
+    "pt_BR": {
+     "t": "Reunir ideias",
+     "g": "Reúna tudo o que poderia dizer antes de decidir o que manter.",
+     "p": [
+      "Escreva cada ideia rápido sem julgar; primeiro a quantidade.",
+      "Inclua fatos, histórias, exemplos, perguntas e citações.",
+      "Escolha depois: mantenha o que serve à mensagem central."
+     ],
+     "q": "Como você costuma reunir ideias: listas, passeios ou falando em voz alta?",
+     "c": "Coloque um timer de cinco minutos e anote todas as ideias sobre um tema."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mind maps for talks",
+     "g": "Organise ideas visually to find the main branches of your talk.",
+     "p": [
+      "Write your topic in the centre of a page and draw branches outward.",
+      "Each branch is a main idea; small twigs hold details and examples.",
+      "Pick the three strongest branches to become your main points."
+     ],
+     "q": "Do you prefer planning with pictures and shapes or with lists?",
+     "c": "Draw a mind map for a topic and circle the three best branches."
+    },
+    "de": {
+     "t": "Mindmaps für Vorträge",
+     "g": "Ordne Ideen visuell und finde die Hauptäste deines Vortrags.",
+     "p": [
+      "Schreib dein Thema in die Seitenmitte und zeichne Äste nach außen.",
+      "Jeder Ast ist eine Hauptidee; kleine Zweige tragen Details und Beispiele.",
+      "Wähle die drei stärksten Äste als deine Hauptpunkte."
+     ],
+     "q": "Planst du lieber mit Bildern und Formen oder mit Listen?",
+     "c": "Zeichne eine Mindmap zu einem Thema und kreise die drei besten Äste ein."
+    },
+    "es": {
+     "t": "Mapas mentales para charlas",
+     "g": "Organiza ideas visualmente para hallar las ramas principales de tu charla.",
+     "p": [
+      "Escribe el tema en el centro de la hoja y dibuja ramas hacia fuera.",
+      "Cada rama es una idea principal; las ramitas guardan detalles y ejemplos.",
+      "Elige las tres ramas más fuertes como tus puntos principales."
+     ],
+     "q": "¿Prefieres planear con dibujos y formas o con listas?",
+     "c": "Dibuja un mapa mental de un tema y rodea las tres mejores ramas."
+    },
+    "fr": {
+     "t": "Cartes mentales pour exposés",
+     "g": "Organise tes idées visuellement pour trouver les branches principales.",
+     "p": [
+      "Écris ton sujet au centre de la page et trace des branches vers l'extérieur.",
+      "Chaque branche est une idée principale ; les rameaux portent détails et exemples.",
+      "Choisis les trois branches les plus fortes comme points principaux."
+     ],
+     "q": "Préfères-tu planifier avec des images et formes ou avec des listes ?",
+     "c": "Dessine une carte mentale sur un sujet et entoure les trois meilleures branches."
+    },
+    "it": {
+     "t": "Mappe mentali per i discorsi",
+     "g": "Organizza le idee in modo visivo per trovare i rami principali.",
+     "p": [
+      "Scrivi il tema al centro del foglio e disegna rami verso l'esterno.",
+      "Ogni ramo è un'idea principale; i rametti tengono dettagli ed esempi.",
+      "Scegli i tre rami più forti come punti principali."
+     ],
+     "q": "Preferisci pianificare con disegni e forme o con elenchi?",
+     "c": "Disegna una mappa mentale di un tema e cerchia i tre rami migliori."
+    },
+    "pt": {
+     "t": "Mapas mentais para apresentações",
+     "g": "Organiza as ideias visualmente para encontrar os ramos principais.",
+     "p": [
+      "Escreve o tema no centro da folha e desenha ramos para fora.",
+      "Cada ramo é uma ideia principal; os raminhos guardam detalhes e exemplos.",
+      "Escolhe os três ramos mais fortes como pontos principais."
+     ],
+     "q": "Preferes planear com desenhos e formas ou com listas?",
+     "c": "Desenha um mapa mental de um tema e circunda os três melhores ramos."
+    },
+    "pt_BR": {
+     "t": "Mapas mentais para apresentações",
+     "g": "Organize as ideias visualmente para achar os ramos principais.",
+     "p": [
+      "Escreva o tema no centro da folha e desenhe ramos para fora.",
+      "Cada ramo é uma ideia principal; os raminhos guardam detalhes e exemplos.",
+      "Escolha os três ramos mais fortes como pontos principais."
+     ],
+     "q": "Você prefere planejar com desenhos e formas ou com listas?",
+     "c": "Desenhe um mapa mental de um tema e circule os três melhores ramos."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing three main points",
+     "g": "See why the rule of three helps listeners follow and remember.",
+     "p": [
+      "Three points feel complete and are easy to hold in mind.",
+      "Too many points overload listeners; too few can feel thin.",
+      "Give each point a short label you can say in a few words."
+     ],
+     "q": "What three points would explain your favourite subject best?",
+     "c": "Write three main points for a talk and say each as a short label aloud."
+    },
+    "de": {
+     "t": "Drei Hauptpunkte wählen",
+     "g": "Sieh, warum die Dreierregel Zuhörern beim Folgen und Merken hilft.",
+     "p": [
+      "Drei Punkte wirken vollständig und lassen sich leicht merken.",
+      "Zu viele Punkte überladen; zu wenige wirken dünn.",
+      "Gib jedem Punkt ein kurzes Etikett in wenigen Worten."
+     ],
+     "q": "Welche drei Punkte würden dein Lieblingsthema am besten erklären?",
+     "c": "Schreib drei Hauptpunkte für einen Vortrag und sag jeden als kurzes Etikett laut."
+    },
+    "es": {
+     "t": "Elegir tres puntos principales",
+     "g": "Descubre por qué la regla de tres ayuda a seguir y recordar.",
+     "p": [
+      "Tres puntos se sienten completos y son fáciles de recordar.",
+      "Demasiados puntos saturan; muy pocos pueden parecer escasos.",
+      "Da a cada punto una etiqueta corta que puedas decir en pocas palabras."
+     ],
+     "q": "¿Qué tres puntos explicarían mejor tu tema favorito?",
+     "c": "Escribe tres puntos principales y di cada uno como etiqueta corta en voz alta."
+    },
+    "fr": {
+     "t": "Choisir trois points principaux",
+     "g": "Vois pourquoi la règle de trois aide à suivre et à retenir.",
+     "p": [
+      "Trois points paraissent complets et se retiennent facilement.",
+      "Trop de points surchargent ; trop peu peuvent sembler minces.",
+      "Donne à chaque point une courte étiquette en quelques mots."
+     ],
+     "q": "Quels trois points expliqueraient le mieux ton sujet préféré ?",
+     "c": "Écris trois points principaux et dis chacun comme courte étiquette à voix haute."
+    },
+    "it": {
+     "t": "Scegliere tre punti principali",
+     "g": "Scopri perché la regola del tre aiuta a seguire e ricordare.",
+     "p": [
+      "Tre punti sembrano completi e si ricordano facilmente.",
+      "Troppi punti sovraccaricano; troppo pochi possono sembrare scarni.",
+      "Dai a ogni punto una breve etichetta in poche parole."
+     ],
+     "q": "Quali tre punti spiegherebbero meglio il tuo argomento preferito?",
+     "c": "Scrivi tre punti principali e dì ciascuno come breve etichetta a voce alta."
+    },
+    "pt": {
+     "t": "Escolher três pontos principais",
+     "g": "Percebe porque a regra do três ajuda a seguir e a recordar.",
+     "p": [
+      "Três pontos parecem completos e são fáceis de reter.",
+      "Demasiados pontos sobrecarregam; poucos podem parecer fracos.",
+      "Dá a cada ponto uma etiqueta curta que digas em poucas palavras."
+     ],
+     "q": "Que três pontos explicariam melhor o teu tema preferido?",
+     "c": "Escreve três pontos principais e di cada um como etiqueta curta em voz alta."
+    },
+    "pt_BR": {
+     "t": "Escolher três pontos principais",
+     "g": "Entenda por que a regra do três ajuda a seguir e a lembrar.",
+     "p": [
+      "Três pontos parecem completos e são fáceis de guardar.",
+      "Pontos demais sobrecarregam; poucos podem parecer fracos.",
+      "Dê a cada ponto um rótulo curto que você diga em poucas palavras."
+     ],
+     "q": "Que três pontos explicariam melhor o seu tema preferido?",
+     "c": "Escreva três pontos principais e diga cada um como rótulo curto em voz alta."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ordering your points",
+     "g": "Try chronological, problem-solution and other simple structures.",
+     "p": [
+      "Chronological: tell it in time order, past, present, future.",
+      "Problem-solution: describe a challenge, then how to solve it.",
+      "Others: simple to complex, or most important first."
+     ],
+     "q": "Which structure would suit a talk about your favourite hobby?",
+     "c": "Order your three points in two different structures and pick the clearer one."
+    },
+    "de": {
+     "t": "Punkte ordnen",
+     "g": "Probiere zeitliche, Problem-Lösung- und andere einfache Strukturen aus.",
+     "p": [
+      "Zeitlich: in Zeitfolge erzählen, Vergangenheit, Gegenwart, Zukunft.",
+      "Problem-Lösung: eine Herausforderung beschreiben, dann den Lösungsweg.",
+      "Weitere: von einfach zu komplex oder das Wichtigste zuerst."
+     ],
+     "q": "Welche Struktur passt zu einem Vortrag über dein Lieblingshobby?",
+     "c": "Ordne deine drei Punkte in zwei Strukturen und wähle die klarere."
+    },
+    "es": {
+     "t": "Ordenar tus puntos",
+     "g": "Prueba estructuras sencillas: cronológica, problema-solución y otras.",
+     "p": [
+      "Cronológica: cuenta en orden de tiempo, pasado, presente, futuro.",
+      "Problema-solución: describe un reto y luego cómo resolverlo.",
+      "Otras: de simple a complejo, o lo más importante primero."
+     ],
+     "q": "¿Qué estructura iría bien en una charla sobre tu afición favorita?",
+     "c": "Ordena tus tres puntos de dos formas distintas y elige la más clara."
+    },
+    "fr": {
+     "t": "Ordonner tes points",
+     "g": "Essaie des structures simples : chronologique, problème-solution et d'autres.",
+     "p": [
+      "Chronologique : raconte dans l'ordre du temps, passé, présent, futur.",
+      "Problème-solution : décris un défi, puis comment le résoudre.",
+      "Autres : du simple au complexe, ou le plus important d'abord."
+     ],
+     "q": "Quelle structure irait bien à un exposé sur ton loisir préféré ?",
+     "c": "Ordonne tes trois points de deux façons et choisis la plus claire."
+    },
+    "it": {
+     "t": "Ordinare i punti",
+     "g": "Prova strutture semplici: cronologica, problema-soluzione e altre.",
+     "p": [
+      "Cronologica: racconta in ordine di tempo, passato, presente, futuro.",
+      "Problema-soluzione: descrivi una sfida, poi come risolverla.",
+      "Altre: dal semplice al complesso, o prima il più importante."
+     ],
+     "q": "Quale struttura si adatterebbe a un discorso sul tuo hobby preferito?",
+     "c": "Ordina i tuoi tre punti in due strutture e scegli la più chiara."
+    },
+    "pt": {
+     "t": "Ordenar os teus pontos",
+     "g": "Experimenta estruturas simples: cronológica, problema-solução e outras.",
+     "p": [
+      "Cronológica: conta por ordem do tempo, passado, presente, futuro.",
+      "Problema-solução: descreve um desafio e depois como resolvê-lo.",
+      "Outras: do simples ao complexo, ou o mais importante primeiro."
+     ],
+     "q": "Que estrutura combinaria com uma apresentação sobre o teu passatempo preferido?",
+     "c": "Ordena os teus três pontos de duas formas e escolhe a mais clara."
+    },
+    "pt_BR": {
+     "t": "Ordenar os seus pontos",
+     "g": "Experimente estruturas simples: cronológica, problema-solução e outras.",
+     "p": [
+      "Cronológica: conte em ordem de tempo, passado, presente, futuro.",
+      "Problema-solução: descreva um desafio e depois como resolvê-lo.",
+      "Outras: do simples ao complexo, ou o mais importante primeiro."
+     ],
+     "q": "Que estrutura combinaria com uma apresentação sobre o seu hobby preferido?",
+     "c": "Ordene seus três pontos de duas formas e escolha a mais clara."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Strong openings",
+     "g": "Learn ways to grab attention in the first thirty seconds of a talk.",
+     "p": [
+      "The first thirty seconds decide whether people lean in or drift off.",
+      "Good openers: a question, a story, a surprising fact or a bold statement.",
+      "Rehearse your opening most; a confident start calms you down."
+     ],
+     "q": "What opening has hooked you in a talk or video before?",
+     "c": "Write two possible openings for one topic and read both aloud."
+    },
+    "de": {
+     "t": "Starke Einstiege",
+     "g": "Lerne Wege, in den ersten dreißig Sekunden Aufmerksamkeit zu gewinnen.",
+     "p": [
+      "Die ersten dreißig Sekunden entscheiden, ob Leute zuhören oder abschweifen.",
+      "Gute Einstiege: eine Frage, eine Geschichte, ein überraschender Fakt oder eine mutige Aussage.",
+      "Übe den Einstieg am meisten; ein sicherer Start beruhigt dich."
+     ],
+     "q": "Welcher Einstieg hat dich in einem Vortrag oder Video schon gefesselt?",
+     "c": "Schreib zwei mögliche Einstiege zu einem Thema und lies beide laut."
+    },
+    "es": {
+     "t": "Aperturas potentes",
+     "g": "Aprende formas de captar la atención en los primeros treinta segundos.",
+     "p": [
+      "Los primeros treinta segundos deciden si la gente atiende o se distrae.",
+      "Buenas aperturas: una pregunta, una historia, un dato sorprendente o una afirmación audaz.",
+      "Ensaya más la apertura; un inicio seguro te calma."
+     ],
+     "q": "¿Qué apertura te ha enganchado en una charla o vídeo?",
+     "c": "Escribe dos posibles aperturas para un tema y léelas en voz alta."
+    },
+    "fr": {
+     "t": "Des ouvertures percutantes",
+     "g": "Découvre comment capter l'attention dans les trente premières secondes.",
+     "p": [
+      "Les trente premières secondes décident si l'on écoute ou si l'on décroche.",
+      "Bonnes accroches : une question, une histoire, un fait surprenant ou une affirmation audacieuse.",
+      "Répète surtout ton ouverture ; un début assuré te calme."
+     ],
+     "q": "Quelle ouverture t'a déjà accroché dans un exposé ou une vidéo ?",
+     "c": "Écris deux ouvertures possibles pour un sujet et lis-les à voix haute."
+    },
+    "it": {
+     "t": "Aperture efficaci",
+     "g": "Impara come catturare l'attenzione nei primi trenta secondi.",
+     "p": [
+      "I primi trenta secondi decidono se la gente ascolta o si distrae.",
+      "Buone aperture: una domanda, una storia, un fatto sorprendente o un'affermazione audace.",
+      "Prova di più l'apertura; un inizio sicuro ti calma."
+     ],
+     "q": "Quale apertura ti ha catturato in un discorso o video?",
+     "c": "Scrivi due possibili aperture per un tema e leggile a voce alta."
+    },
+    "pt": {
+     "t": "Aberturas fortes",
+     "g": "Aprende formas de captar a atenção nos primeiros trinta segundos.",
+     "p": [
+      "Os primeiros trinta segundos decidem se as pessoas ouvem ou se distraem.",
+      "Boas aberturas: uma pergunta, uma história, um facto surpreendente ou uma afirmação ousada.",
+      "Ensaia mais a abertura; um início seguro acalma-te."
+     ],
+     "q": "Que abertura te prendeu numa apresentação ou vídeo?",
+     "c": "Escreve duas aberturas possíveis para um tema e lê-as em voz alta."
+    },
+    "pt_BR": {
+     "t": "Aberturas fortes",
+     "g": "Aprenda formas de captar a atenção nos primeiros trinta segundos.",
+     "p": [
+      "Os primeiros trinta segundos decidem se as pessoas ouvem ou se distraem.",
+      "Boas aberturas: uma pergunta, uma história, um fato surpreendente ou uma afirmação ousada.",
+      "Ensaie mais a abertura; um início seguro acalma você."
+     ],
+     "q": "Que abertura prendeu você em uma apresentação ou vídeo?",
+     "c": "Escreva duas aberturas possíveis para um tema e leia-as em voz alta."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Opening with a question",
+     "g": "Use a question to get the audience thinking from the start.",
+     "p": [
+      "A question makes listeners answer in their heads right away.",
+      "Choose one that is easy, relevant and a little curious.",
+      "Pause for two seconds after asking so people can think."
+     ],
+     "q": "What question would make people curious about your favourite topic?",
+     "c": "Open a mini talk with a question, pause, then continue with your point."
+    },
+    "de": {
+     "t": "Mit einer Frage beginnen",
+     "g": "Nutze eine Frage, damit das Publikum von Anfang an mitdenkt.",
+     "p": [
+      "Eine Frage lässt Zuhörer sofort im Kopf antworten.",
+      "Wähle eine leichte, passende und leicht neugierig machende Frage.",
+      "Pausiere nach der Frage zwei Sekunden, damit man nachdenken kann."
+     ],
+     "q": "Welche Frage würde Leute auf dein Lieblingsthema neugierig machen?",
+     "c": "Beginne einen Minivortrag mit einer Frage, pausiere und mach dann mit deinem Punkt weiter."
+    },
+    "es": {
+     "t": "Abrir con una pregunta",
+     "g": "Usa una pregunta para que el público piense desde el principio.",
+     "p": [
+      "Una pregunta hace que los oyentes respondan en su cabeza al instante.",
+      "Elige una fácil, relevante y algo curiosa.",
+      "Haz una pausa de dos segundos para que la gente piense."
+     ],
+     "q": "¿Qué pregunta despertaría curiosidad sobre tu tema favorito?",
+     "c": "Abre una mini charla con una pregunta, haz una pausa y sigue con tu punto."
+    },
+    "fr": {
+     "t": "Ouvrir avec une question",
+     "g": "Utilise une question pour faire réfléchir le public dès le début.",
+     "p": [
+      "Une question pousse les auditeurs à répondre aussitôt dans leur tête.",
+      "Choisis-en une facile, pertinente et un peu curieuse.",
+      "Marque deux secondes de pause pour laisser penser."
+     ],
+     "q": "Quelle question rendrait les gens curieux de ton sujet préféré ?",
+     "c": "Ouvre un mini exposé par une question, marque une pause, puis poursuis ton point."
+    },
+    "it": {
+     "t": "Aprire con una domanda",
+     "g": "Usa una domanda per far pensare il pubblico fin dall'inizio.",
+     "p": [
+      "Una domanda fa rispondere subito chi ascolta nella propria testa.",
+      "Scegline una facile, pertinente e un po' curiosa.",
+      "Fai una pausa di due secondi dopo averla posta, per far pensare."
+     ],
+     "q": "Quale domanda renderebbe curiose le persone sul tuo tema preferito?",
+     "c": "Apri un mini discorso con una domanda, fai una pausa e continua con il tuo punto."
+    },
+    "pt": {
+     "t": "Abrir com uma pergunta",
+     "g": "Usa uma pergunta para que o público pense desde o início.",
+     "p": [
+      "Uma pergunta faz os ouvintes responderem logo na cabeça.",
+      "Escolhe uma fácil, relevante e um pouco curiosa.",
+      "Faz uma pausa de dois segundos para as pessoas pensarem."
+     ],
+     "q": "Que pergunta despertaria curiosidade sobre o teu tema preferido?",
+     "c": "Abre uma mini apresentação com uma pergunta, faz uma pausa e segue com o teu ponto."
+    },
+    "pt_BR": {
+     "t": "Abrir com uma pergunta",
+     "g": "Use uma pergunta para que o público pense desde o início.",
+     "p": [
+      "Uma pergunta faz os ouvintes responderem logo na cabeça.",
+      "Escolha uma fácil, relevante e um pouco curiosa.",
+      "Faça uma pausa de dois segundos para as pessoas pensarem."
+     ],
+     "q": "Que pergunta despertaria curiosidade sobre o seu tema preferido?",
+     "c": "Abra uma mini apresentação com uma pergunta, faça uma pausa e siga com o seu ponto."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Opening with a story",
+     "g": "Start with a short scene that draws people in.",
+     "p": [
+      "Begin in the middle of a moment: 'Last spring, I stood at a bus stop...'",
+      "Keep it to three or four sentences with one clear image.",
+      "Link the story to your message right after."
+     ],
+     "q": "What tiny story from your life could open a talk on your topic?",
+     "c": "Write and tell a 30-second story opening, then connect it to a point."
+    },
+    "de": {
+     "t": "Mit einer Geschichte beginnen",
+     "g": "Starte mit einer kurzen Szene, die Menschen hineinzieht.",
+     "p": [
+      "Beginne mitten im Moment: 'Letzten Frühling stand ich an einer Bushaltestelle...'",
+      "Halte sie auf drei bis vier Sätze mit einem klaren Bild.",
+      "Verbinde die Geschichte gleich danach mit deiner Botschaft."
+     ],
+     "q": "Welche kleine Geschichte aus deinem Leben könnte einen Vortrag zu deinem Thema eröffnen?",
+     "c": "Schreib und erzähl einen 30-Sekunden-Einstieg und verknüpfe ihn mit einem Punkt."
+    },
+    "es": {
+     "t": "Abrir con una historia",
+     "g": "Empieza con una escena corta que atrape a la gente.",
+     "p": [
+      "Empieza en medio del momento: 'La primavera pasada, estaba en una parada de bus...'",
+      "Limítala a tres o cuatro frases con una imagen clara.",
+      "Conecta la historia con tu mensaje justo después."
+     ],
+     "q": "¿Qué pequeña historia de tu vida podría abrir una charla sobre tu tema?",
+     "c": "Escribe y cuenta una apertura de 30 segundos y conéctala con un punto."
+    },
+    "fr": {
+     "t": "Ouvrir avec une histoire",
+     "g": "Commence par une courte scène qui attire les gens.",
+     "p": [
+      "Démarre au milieu du moment : « Au printemps dernier, j'attendais à un arrêt de bus... »",
+      "Limite-toi à trois ou quatre phrases avec une image nette.",
+      "Relie l'histoire à ton message juste après."
+     ],
+     "q": "Quelle petite histoire de ta vie pourrait ouvrir un exposé sur ton sujet ?",
+     "c": "Écris et raconte une ouverture de 30 secondes puis relie-la à un point."
+    },
+    "it": {
+     "t": "Aprire con una storia",
+     "g": "Inizia con una breve scena che coinvolga le persone.",
+     "p": [
+      "Parti nel mezzo del momento: 'La scorsa primavera ero a una fermata dell'autobus...'",
+      "Limitala a tre o quattro frasi con un'immagine chiara.",
+      "Collega la storia al tuo messaggio subito dopo."
+     ],
+     "q": "Quale piccola storia della tua vita potrebbe aprire un discorso sul tuo tema?",
+     "c": "Scrivi e racconta un'apertura di 30 secondi e collegala a un punto."
+    },
+    "pt": {
+     "t": "Abrir com uma história",
+     "g": "Começa com uma cena curta que prenda as pessoas.",
+     "p": [
+      "Começa no meio do momento: 'Na primavera passada, estava numa paragem de autocarro...'",
+      "Limita-a a três ou quatro frases com uma imagem clara.",
+      "Liga a história à tua mensagem logo a seguir."
+     ],
+     "q": "Que pequena história da tua vida poderia abrir uma apresentação sobre o teu tema?",
+     "c": "Escreve e conta uma abertura de 30 segundos e liga-a a um ponto."
+    },
+    "pt_BR": {
+     "t": "Abrir com uma história",
+     "g": "Comece com uma cena curta que prenda as pessoas.",
+     "p": [
+      "Comece no meio do momento: 'Na primavera passada, eu estava num ponto de ônibus...'",
+      "Limite a três ou quatro frases com uma imagem clara.",
+      "Ligue a história à sua mensagem logo em seguida."
+     ],
+     "q": "Que pequena história da sua vida poderia abrir uma apresentação sobre o seu tema?",
+     "c": "Escreva e conte uma abertura de 30 segundos e ligue-a a um ponto."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Opening with a surprising fact",
+     "g": "Use an interesting fact to spark curiosity right away.",
+     "p": [
+      "Pick a fact that is true, short and a little unexpected.",
+      "Say the number or detail slowly, then pause.",
+      "Explain why it matters to your listeners in the next sentence."
+     ],
+     "q": "What fact about your topic surprised you when you first learned it?",
+     "c": "Find one surprising true fact and open a 30-second talk with it."
+    },
+    "de": {
+     "t": "Mit einem überraschenden Fakt beginnen",
+     "g": "Nutze einen interessanten Fakt, um sofort Neugier zu wecken.",
+     "p": [
+      "Wähle einen Fakt, der wahr, kurz und etwas unerwartet ist.",
+      "Sag die Zahl oder das Detail langsam und pausiere dann.",
+      "Erkläre im nächsten Satz, warum er die Zuhörer betrifft."
+     ],
+     "q": "Welcher Fakt zu deinem Thema hat dich anfangs überrascht?",
+     "c": "Finde einen überraschenden wahren Fakt und eröffne damit 30 Sekunden Vortrag."
+    },
+    "es": {
+     "t": "Abrir con un dato sorprendente",
+     "g": "Usa un dato interesante para despertar curiosidad enseguida.",
+     "p": [
+      "Elige un dato cierto, corto y un poco inesperado.",
+      "Di la cifra o el detalle despacio y haz una pausa.",
+      "Explica en la frase siguiente por qué importa a tu público."
+     ],
+     "q": "¿Qué dato de tu tema te sorprendió al conocerlo?",
+     "c": "Busca un dato cierto y sorprendente y abre con él una charla de 30 segundos."
+    },
+    "fr": {
+     "t": "Ouvrir avec un fait surprenant",
+     "g": "Utilise un fait intéressant pour éveiller la curiosité tout de suite.",
+     "p": [
+      "Choisis un fait vrai, court et un peu inattendu.",
+      "Dis le chiffre ou le détail lentement, puis marque une pause.",
+      "Explique dans la phrase suivante pourquoi cela concerne ton public."
+     ],
+     "q": "Quel fait sur ton sujet t'a surpris en le découvrant ?",
+     "c": "Trouve un fait vrai et surprenant et ouvre avec lui 30 secondes d'exposé."
+    },
+    "it": {
+     "t": "Aprire con un fatto sorprendente",
+     "g": "Usa un fatto interessante per accendere subito la curiosità.",
+     "p": [
+      "Scegli un fatto vero, breve e un po' inatteso.",
+      "Di' il numero o il dettaglio lentamente, poi fai una pausa.",
+      "Spiega nella frase successiva perché interessa a chi ascolta."
+     ],
+     "q": "Quale fatto sul tuo tema ti ha sorpreso quando l'hai scoperto?",
+     "c": "Trova un fatto vero e sorprendente e apri con esso 30 secondi di discorso."
+    },
+    "pt": {
+     "t": "Abrir com um facto surpreendente",
+     "g": "Usa um facto interessante para despertar a curiosidade de imediato.",
+     "p": [
+      "Escolhe um facto verdadeiro, curto e um pouco inesperado.",
+      "Diz o número ou o detalhe devagar e faz uma pausa.",
+      "Explica na frase seguinte porque interessa ao público."
+     ],
+     "q": "Que facto sobre o teu tema te surpreendeu quando o conheceste?",
+     "c": "Encontra um facto verdadeiro e surpreendente e abre com ele 30 segundos de apresentação."
+    },
+    "pt_BR": {
+     "t": "Abrir com um fato surpreendente",
+     "g": "Use um fato interessante para despertar a curiosidade na hora.",
+     "p": [
+      "Escolha um fato verdadeiro, curto e um pouco inesperado.",
+      "Diga o número ou o detalhe devagar e faça uma pausa.",
+      "Explique na frase seguinte por que isso importa ao público."
+     ],
+     "q": "Que fato sobre o seu tema surpreendeu você quando conheceu?",
+     "c": "Encontre um fato verdadeiro e surpreendente e abra com ele 30 segundos de apresentação."
+    }
+   }
+  }
+ ]
+}

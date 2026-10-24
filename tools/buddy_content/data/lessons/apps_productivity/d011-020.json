@@ -1,0 +1,835 @@
+{
+ "topic": "apps_productivity",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Alarms, timers and stopwatches",
+     "g": "Use simple time tools for cooking, workouts, breaks and mornings.",
+     "p": [
+      "Alarms wake you or mark a moment; label them so you know why they ring.",
+      "Timers count down for cooking, study blocks and short breaks.",
+      "Stopwatches measure how long a task really takes, which helps planning."
+     ],
+     "q": "What do you use a timer for most, and what could you start timing?",
+     "c": "Time one everyday task, like washing up, and note how long it truly takes."
+    },
+    "de": {
+     "t": "Wecker, Timer und Stoppuhren",
+     "g": "Nutze einfache Zeitwerkzeuge für Kochen, Sport, Pausen und Morgen.",
+     "p": [
+      "Wecker wecken dich oder markieren einen Moment; benenne sie, damit du weißt warum.",
+      "Timer zählen für Kochen, Lernblöcke und kurze Pausen herunter.",
+      "Stoppuhren zeigen, wie lange eine Aufgabe wirklich dauert, das hilft beim Planen."
+     ],
+     "q": "Wofür nutzt du Timer am meisten, und was könntest du neu zeitlich messen?",
+     "c": "Miss eine Alltagsaufgabe, etwa Abwaschen, und notiere die echte Dauer."
+    },
+    "es": {
+     "t": "Alarmas, temporizadores y cronómetros",
+     "g": "Usa herramientas de tiempo sencillas para cocinar, entrenar, descansar y madrugar.",
+     "p": [
+      "Las alarmas te despiertan o marcan un momento; ponles nombre para saber por qué suenan.",
+      "Los temporizadores cuentan atrás para cocinar, estudiar o hacer pausas cortas.",
+      "Los cronómetros miden cuánto tarda de verdad una tarea, lo que ayuda a planificar."
+     ],
+     "q": "¿Para qué usas más el temporizador y qué podrías empezar a medir?",
+     "c": "Cronometra una tarea cotidiana, como fregar, y anota cuánto tarda de verdad."
+    },
+    "fr": {
+     "t": "Alarmes, minuteurs et chronomètres",
+     "g": "Utilise des outils de temps simples pour cuisiner, t'entraîner, souffler et te lever.",
+     "p": [
+      "Les alarmes te réveillent ou marquent un moment; nomme-les pour savoir pourquoi elles sonnent.",
+      "Les minuteurs décomptent pour la cuisine, les séances d'étude et les courtes pauses.",
+      "Les chronomètres mesurent le temps réel d'une tâche, ce qui aide à planifier."
+     ],
+     "q": "Pour quoi utilises-tu le plus le minuteur, et que pourrais-tu chronométrer ?",
+     "c": "Chronomètre une tâche quotidienne, comme la vaisselle, et note sa vraie durée."
+    },
+    "it": {
+     "t": "Sveglie, timer e cronometri",
+     "g": "Usa strumenti di tempo semplici per cucinare, allenarti, fare pause e svegliarti.",
+     "p": [
+      "Le sveglie ti svegliano o segnano un momento; dai loro un nome per ricordarne il motivo.",
+      "I timer fanno il conto alla rovescia per cucina, studio e brevi pause.",
+      "I cronometri misurano quanto dura davvero un compito, utile per pianificare."
+     ],
+     "q": "Per cosa usi di più il timer e cosa potresti iniziare a cronometrare?",
+     "c": "Cronometra un'attività quotidiana, come lavare i piatti, e annota la durata reale."
+    },
+    "pt": {
+     "t": "Alarmes, temporizadores e cronómetros",
+     "g": "Usa ferramentas de tempo simples para cozinhar, treinar, descansar e acordar.",
+     "p": [
+      "Os alarmes acordam-te ou marcam um momento; dá-lhes nome para saberes porque tocam.",
+      "Os temporizadores contam em contagem decrescente para cozinhar, estudar e pausas curtas.",
+      "Os cronómetros medem quanto tempo uma tarefa leva mesmo, o que ajuda a planear."
+     ],
+     "q": "Para que usas mais o temporizador e o que podias começar a medir?",
+     "c": "Cronometra uma tarefa diária, como lavar a loiça, e anota o tempo real."
+    },
+    "pt_BR": {
+     "t": "Alarmes, timers e cronômetros",
+     "g": "Use ferramentas de tempo simples para cozinhar, treinar, descansar e acordar.",
+     "p": [
+      "Alarmes acordam você ou marcam um momento; dê nomes para saber por que tocam.",
+      "Timers fazem contagem regressiva para cozinhar, estudar e fazer pausas curtas.",
+      "Cronômetros medem quanto tempo uma tarefa leva de verdade, o que ajuda a planejar."
+     ],
+     "q": "Para que você mais usa o timer e o que poderia começar a cronometrar?",
+     "c": "Cronometre uma tarefa diária, como lavar a louça, e anote o tempo real."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Calendar basics",
+     "g": "Add events, set reminders and pick views for day, week and month.",
+     "p": [
+      "An event has a title, a date, a time and optionally a place.",
+      "Reminders pop up before the event, for example ten minutes or one day ahead.",
+      "Day, week and month views show different levels of detail; use the one that fits."
+     ],
+     "q": "What is the next thing in your life that deserves a calendar entry?",
+     "c": "Add one real event for this week with a reminder and a place."
+    },
+    "de": {
+     "t": "Kalender-Grundlagen",
+     "g": "Lege Termine an, setze Erinnerungen und wähle Tages-, Wochen- und Monatsansicht.",
+     "p": [
+      "Ein Termin hat Titel, Datum, Uhrzeit und optional einen Ort.",
+      "Erinnerungen erscheinen vor dem Termin, zum Beispiel zehn Minuten oder einen Tag vorher.",
+      "Tages-, Wochen- und Monatsansicht zeigen unterschiedlich viel Detail; nimm die passende."
+     ],
+     "q": "Was steht als Nächstes in deinem Leben, das einen Kalendereintrag verdient?",
+     "c": "Trage einen echten Termin dieser Woche mit Erinnerung und Ort ein."
+    },
+    "es": {
+     "t": "Conceptos básicos del calendario",
+     "g": "Añade eventos, programa avisos y elige vistas de día, semana y mes.",
+     "p": [
+      "Un evento tiene título, fecha, hora y, si quieres, un lugar.",
+      "Los avisos saltan antes del evento, por ejemplo diez minutos o un día antes.",
+      "Las vistas de día, semana y mes muestran distinto detalle; usa la que te convenga."
+     ],
+     "q": "¿Qué es lo próximo en tu vida que merece una entrada en el calendario?",
+     "c": "Añade un evento real de esta semana con aviso y lugar."
+    },
+    "fr": {
+     "t": "Les bases du calendrier",
+     "g": "Ajoute des événements, des rappels et choisis les vues jour, semaine et mois.",
+     "p": [
+      "Un événement a un titre, une date, une heure et éventuellement un lieu.",
+      "Les rappels s'affichent avant l'événement, par exemple dix minutes ou un jour avant.",
+      "Les vues jour, semaine et mois montrent plus ou moins de détails; choisis la bonne."
+     ],
+     "q": "Quelle est la prochaine chose de ta vie qui mérite une entrée au calendrier ?",
+     "c": "Ajoute un vrai événement de cette semaine avec un rappel et un lieu."
+    },
+    "it": {
+     "t": "Le basi del calendario",
+     "g": "Aggiungi eventi, imposta promemoria e scegli le viste giorno, settimana e mese.",
+     "p": [
+      "Un evento ha titolo, data, ora e, se vuoi, un luogo.",
+      "I promemoria compaiono prima dell'evento, per esempio dieci minuti o un giorno prima.",
+      "Le viste giorno, settimana e mese mostrano più o meno dettagli; usa quella giusta."
+     ],
+     "q": "Qual è la prossima cosa della tua vita che merita una voce in calendario?",
+     "c": "Aggiungi un evento reale di questa settimana con promemoria e luogo."
+    },
+    "pt": {
+     "t": "O básico do calendário",
+     "g": "Adiciona eventos, define lembretes e escolhe vistas de dia, semana e mês.",
+     "p": [
+      "Um evento tem título, data, hora e, se quiseres, um local.",
+      "Os lembretes aparecem antes do evento, por exemplo dez minutos ou um dia antes.",
+      "As vistas de dia, semana e mês mostram níveis de detalhe diferentes; usa a que convém."
+     ],
+     "q": "Qual é a próxima coisa na tua vida que merece uma entrada no calendário?",
+     "c": "Adiciona um evento real desta semana com lembrete e local."
+    },
+    "pt_BR": {
+     "t": "Noções básicas de calendário",
+     "g": "Adicione eventos, defina lembretes e escolha as visões de dia, semana e mês.",
+     "p": [
+      "Um evento tem título, data, hora e, se quiser, um local.",
+      "Os lembretes aparecem antes do evento, por exemplo dez minutos ou um dia antes.",
+      "As visões de dia, semana e mês mostram níveis de detalhe diferentes; use a que convém."
+     ],
+     "q": "Qual é a próxima coisa na sua vida que merece uma entrada no calendário?",
+     "c": "Adicione um evento real desta semana com lembrete e local."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Calendar invitations",
+     "g": "Send, accept and decline invites to keep schedules in sync.",
+     "p": [
+      "An invitation puts the event into other people's calendars too.",
+      "Replying yes, no or maybe lets the organiser plan without chasing you.",
+      "If plans change, update the event so everyone sees the new time."
+     ],
+     "q": "How do you usually plan a get-together with friends or colleagues?",
+     "c": "Send an invitation for a small real plan, such as coffee, with a clear title."
+    },
+    "de": {
+     "t": "Kalendereinladungen",
+     "g": "Sende, nimm an und lehne Einladungen ab, damit alle im Takt bleiben.",
+     "p": [
+      "Eine Einladung legt den Termin auch in den Kalender der anderen.",
+      "Mit Ja, Nein oder Vielleicht kann der Organisator planen, ohne nachzufragen.",
+      "Ändern sich Pläne, aktualisiere den Termin, damit alle die neue Zeit sehen."
+     ],
+     "q": "Wie planst du normalerweise ein Treffen mit Freunden oder Kollegen?",
+     "c": "Schicke eine Einladung für einen kleinen echten Plan, etwa Kaffee, mit klarem Titel."
+    },
+    "es": {
+     "t": "Invitaciones de calendario",
+     "g": "Envía, acepta y rechaza invitaciones para mantener las agendas sincronizadas.",
+     "p": [
+      "Una invitación pone el evento también en el calendario de los demás.",
+      "Responder sí, no o quizá permite al organizador planificar sin perseguirte.",
+      "Si los planes cambian, actualiza el evento para que todos vean la nueva hora."
+     ],
+     "q": "¿Cómo sueles organizar una quedada con amigos o compañeros?",
+     "c": "Envía una invitación para un plan pequeño y real, como un café, con título claro."
+    },
+    "fr": {
+     "t": "Invitations de calendrier",
+     "g": "Envoie, accepte et décline des invitations pour synchroniser les agendas.",
+     "p": [
+      "Une invitation place l'événement aussi dans le calendrier des autres.",
+      "Répondre oui, non ou peut-être permet à l'organisateur de planifier sans te relancer.",
+      "Si les plans changent, mets l'événement à jour pour que tous voient la nouvelle heure."
+     ],
+     "q": "Comment organises-tu d'habitude une rencontre entre amis ou collègues ?",
+     "c": "Envoie une invitation pour un petit projet réel, comme un café, avec un titre clair."
+    },
+    "it": {
+     "t": "Inviti del calendario",
+     "g": "Invia, accetta e declina inviti per tenere sincronizzate le agende.",
+     "p": [
+      "Un invito mette l'evento anche nel calendario degli altri.",
+      "Rispondere sì, no o forse permette all'organizzatore di pianificare senza rincorrerti.",
+      "Se i piani cambiano, aggiorna l'evento così tutti vedono il nuovo orario."
+     ],
+     "q": "Come organizzi di solito un ritrovo con amici o colleghi?",
+     "c": "Invia un invito per un piccolo piano reale, come un caffè, con titolo chiaro."
+    },
+    "pt": {
+     "t": "Convites de calendário",
+     "g": "Envia, aceita e recusa convites para manter as agendas em sintonia.",
+     "p": [
+      "Um convite coloca o evento também no calendário das outras pessoas.",
+      "Responder sim, não ou talvez permite ao organizador planear sem andar atrás de ti.",
+      "Se os planos mudarem, atualiza o evento para todos verem a nova hora."
+     ],
+     "q": "Como costumas organizar um encontro com amigos ou colegas?",
+     "c": "Envia um convite para um pequeno plano real, como um café, com título claro."
+    },
+    "pt_BR": {
+     "t": "Convites de calendário",
+     "g": "Envie, aceite e recuse convites para manter as agendas em sintonia.",
+     "p": [
+      "Um convite coloca o evento também no calendário das outras pessoas.",
+      "Responder sim, não ou talvez permite ao organizador planejar sem correr atrás de você.",
+      "Se os planos mudarem, atualize o evento para todos verem o novo horário."
+     ],
+     "q": "Como você costuma organizar um encontro com amigos ou colegas?",
+     "c": "Envie um convite para um pequeno plano real, como um café, com título claro."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Recurring events and reminders",
+     "g": "Repeat entries for birthdays, bills and routines.",
+     "p": [
+      "Recurring events repeat daily, weekly, monthly or yearly without retyping.",
+      "Birthdays and bill due dates are perfect for yearly and monthly repeats.",
+      "You can end a repeat on a date or change only one occurrence."
+     ],
+     "q": "What do you tend to forget that could repeat automatically?",
+     "c": "Create one yearly birthday event and one weekly routine with a repeat."
+    },
+    "de": {
+     "t": "Wiederkehrende Termine und Erinnerungen",
+     "g": "Lass Einträge für Geburtstage, Rechnungen und Routinen sich wiederholen.",
+     "p": [
+      "Wiederkehrende Termine laufen täglich, wöchentlich, monatlich oder jährlich ohne Neutippen.",
+      "Geburtstage und Zahlungsfristen passen perfekt zu jährlichen und monatlichen Wiederholungen.",
+      "Du kannst eine Wiederholung zu einem Datum beenden oder nur einen Termin ändern."
+     ],
+     "q": "Was vergisst du leicht, das sich automatisch wiederholen könnte?",
+     "c": "Lege einen jährlichen Geburtstag und eine wöchentliche Routine mit Wiederholung an."
+    },
+    "es": {
+     "t": "Eventos y avisos recurrentes",
+     "g": "Repite entradas para cumpleaños, facturas y rutinas.",
+     "p": [
+      "Los eventos recurrentes se repiten a diario, cada semana, mes o año sin reescribirlos.",
+      "Cumpleaños y vencimientos de facturas encajan con repeticiones anuales y mensuales.",
+      "Puedes terminar una repetición en una fecha o cambiar solo una ocurrencia."
+     ],
+     "q": "¿Qué sueles olvidar que podría repetirse solo?",
+     "c": "Crea un cumpleaños anual y una rutina semanal con repetición."
+    },
+    "fr": {
+     "t": "Événements et rappels récurrents",
+     "g": "Répète des entrées pour anniversaires, factures et routines.",
+     "p": [
+      "Les événements récurrents se répètent chaque jour, semaine, mois ou an sans ressaisie.",
+      "Anniversaires et échéances de factures vont très bien avec des répétitions annuelles et mensuelles.",
+      "Tu peux arrêter une répétition à une date ou modifier une seule occurrence."
+     ],
+     "q": "Qu'as-tu tendance à oublier et qui pourrait se répéter automatiquement ?",
+     "c": "Crée un anniversaire annuel et une routine hebdomadaire avec répétition."
+    },
+    "it": {
+     "t": "Eventi e promemoria ricorrenti",
+     "g": "Ripeti voci per compleanni, bollette e routine.",
+     "p": [
+      "Gli eventi ricorrenti si ripetono ogni giorno, settimana, mese o anno senza riscriverli.",
+      "Compleanni e scadenze di bollette vanno bene con ripetizioni annuali e mensili.",
+      "Puoi chiudere una ripetizione a una data o cambiare una sola occorrenza."
+     ],
+     "q": "Cosa tendi a dimenticare che potrebbe ripetersi da solo?",
+     "c": "Crea un compleanno annuale e una routine settimanale con ripetizione."
+    },
+    "pt": {
+     "t": "Eventos e lembretes recorrentes",
+     "g": "Repete entradas para aniversários, contas e rotinas.",
+     "p": [
+      "Os eventos recorrentes repetem-se diária, semanal, mensal ou anualmente sem voltar a escrever.",
+      "Aniversários e prazos de contas combinam com repetições anuais e mensais.",
+      "Podes terminar uma repetição numa data ou mudar só uma ocorrência."
+     ],
+     "q": "Do que te esqueces com facilidade e podia repetir-se sozinho?",
+     "c": "Cria um aniversário anual e uma rotina semanal com repetição."
+    },
+    "pt_BR": {
+     "t": "Eventos e lembretes recorrentes",
+     "g": "Repita entradas para aniversários, contas e rotinas.",
+     "p": [
+      "Eventos recorrentes se repetem diária, semanal, mensal ou anualmente sem digitar de novo.",
+      "Aniversários e vencimentos de contas combinam com repetições anuais e mensais.",
+      "Você pode encerrar uma repetição numa data ou mudar só uma ocorrência."
+     ],
+     "q": "Do que você costuma esquecer e poderia se repetir sozinho?",
+     "c": "Crie um aniversário anual e uma rotina semanal com repetição."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Colour coding your calendar",
+     "g": "Use colours to see work, study, family and fun at a glance.",
+     "p": [
+      "Give each area of life its own colour or separate calendar.",
+      "A quick look shows if the week is balanced or too crowded with one colour.",
+      "Keep it to four or five colours so the system stays easy to read."
+     ],
+     "q": "Which areas of your life would you give their own colour?",
+     "c": "Assign colours to your categories and recolour this week's events."
+    },
+    "de": {
+     "t": "Deinen Kalender farblich ordnen",
+     "g": "Erkenne mit Farben auf einen Blick Arbeit, Lernen, Familie und Spaß.",
+     "p": [
+      "Gib jedem Lebensbereich eine eigene Farbe oder einen eigenen Kalender.",
+      "Ein kurzer Blick zeigt, ob die Woche ausgewogen oder von einer Farbe überladen ist.",
+      "Beschränke dich auf vier oder fünf Farben, damit das System lesbar bleibt."
+     ],
+     "q": "Welchen Lebensbereichen würdest du eine eigene Farbe geben?",
+     "c": "Weise deinen Kategorien Farben zu und färbe die Termine dieser Woche um."
+    },
+    "es": {
+     "t": "Calendario con códigos de color",
+     "g": "Usa colores para ver trabajo, estudio, familia y ocio de un vistazo.",
+     "p": [
+      "Da a cada área de tu vida su propio color o calendario.",
+      "Un vistazo muestra si la semana está equilibrada o saturada de un solo color.",
+      "Limítate a cuatro o cinco colores para que el sistema sea fácil de leer."
+     ],
+     "q": "¿A qué áreas de tu vida darías un color propio?",
+     "c": "Asigna colores a tus categorías y recolorea los eventos de esta semana."
+    },
+    "fr": {
+     "t": "Coder ton calendrier par couleurs",
+     "g": "Utilise des couleurs pour voir travail, études, famille et loisirs d'un coup d'œil.",
+     "p": [
+      "Donne à chaque domaine de vie sa couleur ou son calendrier.",
+      "Un coup d'œil montre si la semaine est équilibrée ou saturée d'une seule couleur.",
+      "Limite-toi à quatre ou cinq couleurs pour que le système reste lisible."
+     ],
+     "q": "À quels domaines de ta vie donnerais-tu une couleur propre ?",
+     "c": "Attribue des couleurs à tes catégories et recolore les événements de la semaine."
+    },
+    "it": {
+     "t": "Calendario a colori",
+     "g": "Usa i colori per vedere lavoro, studio, famiglia e svago a colpo d'occhio.",
+     "p": [
+      "Dai a ogni area della vita il suo colore o il suo calendario.",
+      "Uno sguardo mostra se la settimana è equilibrata o piena di un solo colore.",
+      "Limitati a quattro o cinque colori così il sistema resta leggibile."
+     ],
+     "q": "A quali aree della tua vita daresti un colore tutto loro?",
+     "c": "Assegna colori alle categorie e ricolora gli eventi di questa settimana."
+    },
+    "pt": {
+     "t": "Calendário com códigos de cor",
+     "g": "Usa cores para ver trabalho, estudo, família e lazer de relance.",
+     "p": [
+      "Dá a cada área da vida a sua cor ou o seu calendário.",
+      "Um olhar mostra se a semana está equilibrada ou cheia de uma só cor.",
+      "Fica-te por quatro ou cinco cores para o sistema continuar fácil de ler."
+     ],
+     "q": "A que áreas da tua vida darias uma cor própria?",
+     "c": "Atribui cores às tuas categorias e repinta os eventos desta semana."
+    },
+    "pt_BR": {
+     "t": "Calendário com códigos de cor",
+     "g": "Use cores para ver trabalho, estudo, família e lazer num relance.",
+     "p": [
+      "Dê a cada área da vida sua própria cor ou seu próprio calendário.",
+      "Um olhar mostra se a semana está equilibrada ou cheia de uma cor só.",
+      "Fique em quatro ou cinco cores para o sistema continuar fácil de ler."
+     ],
+     "q": "A que áreas da sua vida você daria uma cor própria?",
+     "c": "Atribua cores às suas categorias e recolora os eventos desta semana."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "To-do list apps",
+     "g": "Capture tasks in one trusted list to free your mind.",
+     "p": [
+      "Your brain is for having ideas, not for storing reminders.",
+      "One trusted list beats sticky notes, chats and memory scattered everywhere.",
+      "Seeing tasks tick off makes progress visible and motivating."
+     ],
+     "q": "Where do your tasks live right now: head, paper, phone or all of them?",
+     "c": "Write down every open task you can think of in one list, without sorting."
+    },
+    "de": {
+     "t": "To-do-Listen-Apps",
+     "g": "Sammle Aufgaben in einer verlässlichen Liste und entlaste deinen Kopf.",
+     "p": [
+      "Dein Gehirn ist zum Ideenhaben da, nicht zum Speichern von Erinnerungen.",
+      "Eine verlässliche Liste schlägt verstreute Zettel, Chats und Gedächtnis.",
+      "Erledigte Aufgaben abzuhaken macht Fortschritt sichtbar und motiviert."
+     ],
+     "q": "Wo leben deine Aufgaben gerade: im Kopf, auf Papier, im Handy oder überall?",
+     "c": "Schreibe alle offenen Aufgaben, die dir einfallen, in eine Liste, ohne zu sortieren."
+    },
+    "es": {
+     "t": "Apps de listas de tareas",
+     "g": "Reúne tus tareas en una lista de confianza y libera tu mente.",
+     "p": [
+      "Tu cerebro es para tener ideas, no para guardar recordatorios.",
+      "Una lista de confianza vale más que notas sueltas, chats y memoria dispersos.",
+      "Ver tareas tachadas hace visible el progreso y motiva."
+     ],
+     "q": "¿Dónde viven ahora tus tareas: cabeza, papel, móvil o todo a la vez?",
+     "c": "Escribe en una sola lista todas las tareas pendientes que se te ocurran, sin ordenar."
+    },
+    "fr": {
+     "t": "Les applis de listes de tâches",
+     "g": "Rassemble tes tâches dans une liste de confiance pour libérer ton esprit.",
+     "p": [
+      "Ton cerveau sert à avoir des idées, pas à stocker des rappels.",
+      "Une liste unique vaut mieux que des post-it, des chats et une mémoire éparpillés.",
+      "Voir les tâches cochées rend le progrès visible et motivant."
+     ],
+     "q": "Où vivent tes tâches maintenant : tête, papier, téléphone ou tout à la fois ?",
+     "c": "Note dans une seule liste toutes les tâches en cours qui te viennent, sans trier."
+    },
+    "it": {
+     "t": "App per liste di cose da fare",
+     "g": "Raccogli i compiti in un'unica lista fidata e libera la mente.",
+     "p": [
+      "Il cervello serve a fare idee, non a conservare promemoria.",
+      "Una lista fidata batte biglietti, chat e memoria sparsi ovunque.",
+      "Vedere i compiti spuntati rende il progresso visibile e motivante."
+     ],
+     "q": "Dove vivono ora i tuoi compiti: testa, carta, telefono o tutto insieme?",
+     "c": "Scrivi in un'unica lista ogni compito aperto che ti viene in mente, senza ordinare."
+    },
+    "pt": {
+     "t": "Apps de listas de tarefas",
+     "g": "Reúne as tarefas numa lista de confiança e liberta a cabeça.",
+     "p": [
+      "O cérebro serve para ter ideias, não para guardar lembretes.",
+      "Uma lista de confiança vale mais do que papelinhos, chats e memória espalhados.",
+      "Ver tarefas riscadas torna o progresso visível e motivador."
+     ],
+     "q": "Onde vivem agora as tuas tarefas: cabeça, papel, telemóvel ou tudo?",
+     "c": "Escreve numa só lista todas as tarefas em aberto que te ocorram, sem ordenar."
+    },
+    "pt_BR": {
+     "t": "Apps de listas de tarefas",
+     "g": "Reúna as tarefas numa lista de confiança e libere a cabeça.",
+     "p": [
+      "O cérebro serve para ter ideias, não para guardar lembretes.",
+      "Uma lista de confiança vale mais do que papeizinhos, chats e memória espalhados.",
+      "Ver tarefas riscadas torna o progresso visível e motivador."
+     ],
+     "q": "Onde moram suas tarefas agora: cabeça, papel, celular ou tudo?",
+     "c": "Escreva numa lista só todas as tarefas em aberto que lembrar, sem ordenar."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing tasks that get done",
+     "g": "Phrase tasks as small, concrete actions starting with a verb.",
+     "p": [
+      "Call the dentist beats dentist; a verb tells you what to do.",
+      "Break big tasks into steps you can finish in one sitting.",
+      "If a task feels heavy, find the very first physical action."
+     ],
+     "q": "Which task on your list keeps getting pushed back, and why?",
+     "c": "Rewrite three vague tasks as small steps that start with a verb."
+    },
+    "de": {
+     "t": "Aufgaben schreiben, die erledigt werden",
+     "g": "Formuliere Aufgaben als kleine, konkrete Handlungen mit einem Verb.",
+     "p": [
+      "Zahnarzt anrufen schlägt Zahnarzt; ein Verb sagt dir, was zu tun ist.",
+      "Zerlege große Aufgaben in Schritte, die du in einer Sitzung schaffst.",
+      "Wirkt eine Aufgabe schwer, such die allererste greifbare Handlung."
+     ],
+     "q": "Welche Aufgabe auf deiner Liste wird ständig verschoben, und warum?",
+     "c": "Schreibe drei vage Aufgaben als kleine Schritte mit einem Verb um."
+    },
+    "es": {
+     "t": "Escribir tareas que se hacen",
+     "g": "Formula las tareas como acciones pequeñas y concretas que empiecen con un verbo.",
+     "p": [
+      "Llamar al dentista funciona mejor que dentista; el verbo dice qué hacer.",
+      "Divide las tareas grandes en pasos que puedas terminar de una sentada.",
+      "Si una tarea pesa, busca la primera acción física concreta."
+     ],
+     "q": "¿Qué tarea de tu lista se aplaza siempre y por qué?",
+     "c": "Reescribe tres tareas vagas como pasos pequeños que empiecen con un verbo."
+    },
+    "fr": {
+     "t": "Écrire des tâches qui se font",
+     "g": "Formule les tâches en petites actions concrètes qui commencent par un verbe.",
+     "p": [
+      "Appeler le dentiste vaut mieux que dentiste; le verbe dit quoi faire.",
+      "Découpe les grosses tâches en étapes faisables en une séance.",
+      "Si une tâche pèse, cherche la toute première action physique."
+     ],
+     "q": "Quelle tâche de ta liste est sans cesse repoussée, et pourquoi ?",
+     "c": "Réécris trois tâches vagues en petites étapes commençant par un verbe."
+    },
+    "it": {
+     "t": "Scrivere compiti che si fanno",
+     "g": "Formula i compiti come piccole azioni concrete che iniziano con un verbo.",
+     "p": [
+      "Chiamare il dentista funziona meglio di dentista; il verbo dice cosa fare.",
+      "Dividi i compiti grandi in passi che finisci in una sola seduta.",
+      "Se un compito pesa, cerca la primissima azione fisica."
+     ],
+     "q": "Quale compito della lista rimandi sempre e perché?",
+     "c": "Riscrivi tre compiti vaghi come piccoli passi che iniziano con un verbo."
+    },
+    "pt": {
+     "t": "Escrever tarefas que se cumprem",
+     "g": "Formula as tarefas como ações pequenas e concretas que começam por um verbo.",
+     "p": [
+      "Ligar ao dentista funciona melhor do que dentista; o verbo diz o que fazer.",
+      "Divide as tarefas grandes em passos que consigas acabar de uma vez.",
+      "Se uma tarefa pesa, procura a primeira ação física concreta."
+     ],
+     "q": "Que tarefa da tua lista é sempre adiada e porquê?",
+     "c": "Reescreve três tarefas vagas como passos pequenos que comecem por um verbo."
+    },
+    "pt_BR": {
+     "t": "Escrevendo tarefas que se cumprem",
+     "g": "Formule as tarefas como ações pequenas e concretas que começam com um verbo.",
+     "p": [
+      "Ligar para o dentista funciona melhor do que dentista; o verbo diz o que fazer.",
+      "Divida as tarefas grandes em passos que você consiga terminar de uma vez.",
+      "Se uma tarefa pesa, procure a primeira ação física concreta."
+     ],
+     "q": "Qual tarefa da sua lista é sempre adiada e por quê?",
+     "c": "Reescreva três tarefas vagas como passos pequenos que começam com um verbo."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Due dates and priorities",
+     "g": "Use dates sparingly and flags to show what truly matters.",
+     "p": [
+      "Give a due date only when the day really matters; otherwise it is noise.",
+      "Flags or priorities mark the few tasks that deserve attention first.",
+      "A short today list is more useful than a long overdue one."
+     ],
+     "q": "What is the one thing that would make today a good day if done?",
+     "c": "Pick today's top three tasks and flag only those."
+    },
+    "de": {
+     "t": "Fälligkeiten und Prioritäten",
+     "g": "Setze Termine sparsam ein und markiere, was wirklich zählt.",
+     "p": [
+      "Gib ein Fälligkeitsdatum nur, wenn der Tag wirklich zählt; sonst ist es Rauschen.",
+      "Markierungen oder Prioritäten zeigen die wenigen Aufgaben, die zuerst dran sind.",
+      "Eine kurze Heute-Liste ist nützlicher als eine lange überfällige."
+     ],
+     "q": "Was ist das Eine, das den heutigen Tag gut macht, wenn es erledigt ist?",
+     "c": "Wähle die drei wichtigsten Aufgaben für heute und markiere nur diese."
+    },
+    "es": {
+     "t": "Fechas límite y prioridades",
+     "g": "Usa las fechas con moderación y marca lo que de verdad importa.",
+     "p": [
+      "Pon fecha límite solo si el día importa de verdad; si no, es ruido.",
+      "Las marcas o prioridades señalan las pocas tareas que merecen atención primero.",
+      "Una lista corta para hoy sirve más que una larga de vencidas."
+     ],
+     "q": "¿Qué cosa haría que hoy fuera un buen día si la hicieras?",
+     "c": "Elige las tres tareas clave de hoy y marca solo esas."
+    },
+    "fr": {
+     "t": "Échéances et priorités",
+     "g": "Utilise les dates avec parcimonie et marque ce qui compte vraiment.",
+     "p": [
+      "Mets une échéance seulement si le jour compte vraiment; sinon c'est du bruit.",
+      "Drapeaux ou priorités signalent les rares tâches qui méritent l'attention d'abord.",
+      "Une courte liste du jour sert plus qu'une longue liste en retard."
+     ],
+     "q": "Quelle chose, une fois faite, rendrait ta journée réussie ?",
+     "c": "Choisis les trois tâches clés d'aujourd'hui et marque seulement celles-là."
+    },
+    "it": {
+     "t": "Scadenze e priorità",
+     "g": "Usa le date con parsimonia e segna ciò che conta davvero.",
+     "p": [
+      "Metti una scadenza solo se il giorno conta davvero; altrimenti è rumore.",
+      "Bandierine o priorità indicano i pochi compiti che meritano attenzione per primi.",
+      "Una breve lista per oggi serve più di una lunga di arretrati."
+     ],
+     "q": "Quale cosa, se fatta, renderebbe buona la tua giornata?",
+     "c": "Scegli i tre compiti chiave di oggi e segna solo quelli."
+    },
+    "pt": {
+     "t": "Prazos e prioridades",
+     "g": "Usa datas com moderação e marca o que realmente importa.",
+     "p": [
+      "Põe prazo só quando o dia importa mesmo; senão é ruído.",
+      "Bandeiras ou prioridades assinalam as poucas tarefas que merecem atenção primeiro.",
+      "Uma lista curta para hoje serve mais do que uma longa de atrasadas."
+     ],
+     "q": "Que coisa, se feita, tornaria o teu dia bom?",
+     "c": "Escolhe as três tarefas principais de hoje e marca só essas."
+    },
+    "pt_BR": {
+     "t": "Prazos e prioridades",
+     "g": "Use datas com moderação e marque o que realmente importa.",
+     "p": [
+      "Coloque prazo só quando o dia importa de verdade; senão é ruído.",
+      "Bandeiras ou prioridades indicam as poucas tarefas que merecem atenção primeiro.",
+      "Uma lista curta para hoje serve mais do que uma longa de atrasadas."
+     ],
+     "q": "Que coisa, se feita, tornaria seu dia bom?",
+     "c": "Escolha as três tarefas principais de hoje e marque só essas."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reminder apps and location alerts",
+     "g": "Trigger reminders by time or by arriving somewhere.",
+     "p": [
+      "Time reminders ping you at a chosen moment, once or repeating.",
+      "Location reminders fire when you arrive or leave, like at the supermarket.",
+      "Name reminders clearly so one glance tells you what to do."
+     ],
+     "q": "What is something you often remember too late, like at the wrong place?",
+     "c": "Create one time reminder and one location reminder for a real errand."
+    },
+    "de": {
+     "t": "Erinnerungs-Apps und Ortserinnerungen",
+     "g": "Löse Erinnerungen per Uhrzeit oder bei Ankunft an einem Ort aus.",
+     "p": [
+      "Zeiterinnerungen melden sich zum gewählten Moment, einmal oder wiederholt.",
+      "Ortserinnerungen starten bei Ankunft oder Abfahrt, etwa im Supermarkt.",
+      "Benenne Erinnerungen klar, damit ein Blick zeigt, was zu tun ist."
+     ],
+     "q": "Woran denkst du oft zu spät, etwa am falschen Ort?",
+     "c": "Lege eine Zeiterinnerung und eine Ortserinnerung für eine echte Besorgung an."
+    },
+    "es": {
+     "t": "Apps de recordatorios y avisos por lugar",
+     "g": "Activa recordatorios por hora o al llegar a un sitio.",
+     "p": [
+      "Los recordatorios por hora suenan en el momento elegido, una vez o repetidos.",
+      "Los de ubicación saltan al llegar o salir, por ejemplo en el supermercado.",
+      "Pon nombres claros para que de un vistazo sepas qué hacer."
+     ],
+     "q": "¿Qué sueles recordar demasiado tarde, por ejemplo en el sitio equivocado?",
+     "c": "Crea un recordatorio por hora y otro por lugar para un recado real."
+    },
+    "fr": {
+     "t": "Applis de rappels et alertes de lieu",
+     "g": "Déclenche des rappels à une heure précise ou en arrivant quelque part.",
+     "p": [
+      "Les rappels horaires sonnent au moment choisi, une fois ou en répétition.",
+      "Les rappels de lieu se déclenchent à l'arrivée ou au départ, comme au supermarché.",
+      "Nomme-les clairement pour qu'un coup d'œil dise quoi faire."
+     ],
+     "q": "De quoi te souviens-tu souvent trop tard, au mauvais endroit par exemple ?",
+     "c": "Crée un rappel horaire et un rappel de lieu pour une vraie course."
+    },
+    "it": {
+     "t": "App di promemoria e avvisi di luogo",
+     "g": "Attiva promemoria a un'ora precisa o quando arrivi in un posto.",
+     "p": [
+      "I promemoria a orario suonano al momento scelto, una volta o ripetuti.",
+      "Quelli di luogo scattano all'arrivo o alla partenza, come al supermercato.",
+      "Dai nomi chiari così a colpo d'occhio sai cosa fare."
+     ],
+     "q": "Cosa ricordi spesso troppo tardi, magari nel posto sbagliato?",
+     "c": "Crea un promemoria a orario e uno di luogo per una commissione reale."
+    },
+    "pt": {
+     "t": "Apps de lembretes e avisos por local",
+     "g": "Ativa lembretes por hora ou à chegada a um sítio.",
+     "p": [
+      "Os lembretes por hora tocam no momento escolhido, uma vez ou repetidos.",
+      "Os de localização disparam à chegada ou saída, por exemplo no supermercado.",
+      "Dá nomes claros para um olhar dizer o que fazer."
+     ],
+     "q": "De que te lembras muitas vezes tarde demais, talvez no sítio errado?",
+     "c": "Cria um lembrete por hora e um por local para um recado real."
+    },
+    "pt_BR": {
+     "t": "Apps de lembretes e avisos por local",
+     "g": "Ative lembretes por hora ou ao chegar a um lugar.",
+     "p": [
+      "Lembretes por hora tocam no momento escolhido, uma vez ou repetidos.",
+      "Os de localização disparam na chegada ou saída, por exemplo no supermercado.",
+      "Dê nomes claros para um olhar dizer o que fazer."
+     ],
+     "q": "Do que você costuma lembrar tarde demais, talvez no lugar errado?",
+     "c": "Crie um lembrete por hora e um por local para um recado real."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Notes apps for everyday life",
+     "g": "Capture ideas, lists, recipes and receipts in searchable notes.",
+     "p": [
+      "A notes app is a digital pocket for things you want to keep.",
+      "Short titles and first lines make notes easy to find later.",
+      "Photos and scans can live inside notes next to your text."
+     ],
+     "q": "What do you jot down most often, and where does it end up today?",
+     "c": "Create a note with a title and save one list you often need, such as groceries."
+    },
+    "de": {
+     "t": "Notiz-Apps für den Alltag",
+     "g": "Halte Ideen, Listen, Rezepte und Belege in durchsuchbaren Notizen fest.",
+     "p": [
+      "Eine Notiz-App ist eine digitale Tasche für alles, was du behalten willst.",
+      "Kurze Titel und erste Zeilen machen Notizen später leicht auffindbar.",
+      "Fotos und Scans können neben deinem Text in Notizen liegen."
+     ],
+     "q": "Was schreibst du am häufigsten auf, und wo landet es heute?",
+     "c": "Lege eine Notiz mit Titel an und speichere eine oft gebrauchte Liste, etwa Einkäufe."
+    },
+    "es": {
+     "t": "Apps de notas para el día a día",
+     "g": "Guarda ideas, listas, recetas y recibos en notas con búsqueda.",
+     "p": [
+      "Una app de notas es un bolsillo digital para lo que quieres conservar.",
+      "Títulos cortos y primeras líneas claras facilitan encontrar las notas luego.",
+      "Fotos y escaneos pueden convivir en la nota junto al texto."
+     ],
+     "q": "¿Qué apuntas con más frecuencia y dónde acaba hoy?",
+     "c": "Crea una nota con título y guarda una lista que uses a menudo, como la compra."
+    },
+    "fr": {
+     "t": "Applis de notes du quotidien",
+     "g": "Garde idées, listes, recettes et reçus dans des notes consultables.",
+     "p": [
+      "Une appli de notes est une poche numérique pour ce que tu veux garder.",
+      "Des titres courts et de bonnes premières lignes facilitent la recherche.",
+      "Photos et scans peuvent vivre dans la note à côté du texte."
+     ],
+     "q": "Que notes-tu le plus souvent, et où cela finit-il aujourd'hui ?",
+     "c": "Crée une note avec un titre et enregistre une liste souvent utile, comme les courses."
+    },
+    "it": {
+     "t": "App di note per la vita quotidiana",
+     "g": "Conserva idee, liste, ricette e scontrini in note ricercabili.",
+     "p": [
+      "Un'app di note è una tasca digitale per ciò che vuoi tenere.",
+      "Titoli brevi e prime righe chiare rendono le note facili da ritrovare.",
+      "Foto e scansioni possono stare nella nota accanto al testo."
+     ],
+     "q": "Cosa annoti più spesso e dove finisce oggi?",
+     "c": "Crea una nota con titolo e salva una lista che usi spesso, come la spesa."
+    },
+    "pt": {
+     "t": "Apps de notas para o dia a dia",
+     "g": "Guarda ideias, listas, receitas e recibos em notas pesquisáveis.",
+     "p": [
+      "Uma app de notas é um bolso digital para o que queres guardar.",
+      "Títulos curtos e boas primeiras linhas tornam as notas fáceis de encontrar.",
+      "Fotos e digitalizações podem viver na nota ao lado do texto."
+     ],
+     "q": "O que anotas com mais frequência e onde acaba hoje?",
+     "c": "Cria uma nota com título e guarda uma lista que uses muito, como as compras."
+    },
+    "pt_BR": {
+     "t": "Apps de notas para o dia a dia",
+     "g": "Guarde ideias, listas, receitas e recibos em notas pesquisáveis.",
+     "p": [
+      "Um app de notas é um bolso digital para o que você quer guardar.",
+      "Títulos curtos e boas primeiras linhas deixam as notas fáceis de achar.",
+      "Fotos e digitalizações podem ficar na nota ao lado do texto."
+     ],
+     "q": "O que você anota com mais frequência e onde acaba hoje?",
+     "c": "Crie uma nota com título e guarde uma lista que você usa muito, como as compras do mercado."
+    }
+   }
+  }
+ ]
+}

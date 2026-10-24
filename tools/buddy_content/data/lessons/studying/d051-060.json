@@ -1,0 +1,835 @@
+{
+ "topic": "studying",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading with a purpose",
+     "g": "Decide what you want from a text before you begin so reading stays focused.",
+     "p": [
+      "Ask first: do I need the main idea, a detail, or a deep understanding?",
+      "A clear purpose tells you what to slow down for and what to skim.",
+      "Write your purpose as one question at the top of the page."
+     ],
+     "q": "What are you reading right now, and what do you want from it?",
+     "c": "Before your next reading, write one purpose question and answer it afterwards."
+    },
+    "de": {
+     "t": "Mit Ziel lesen",
+     "g": "Entscheide vor dem Lesen, was du von einem Text willst, damit du konzentriert bleibst.",
+     "p": [
+      "Frag zuerst: Brauche ich die Hauptidee, ein Detail oder tiefes Verständnis?",
+      "Ein klares Ziel zeigt dir, wo du langsamer wirst und was du überfliegst.",
+      "Schreib dein Ziel als eine Frage oben auf die Seite."
+     ],
+     "q": "Was liest du gerade, und was willst du daraus mitnehmen?",
+     "c": "Schreib vor dem nächsten Lesen eine Zielfrage auf und beantworte sie danach."
+    },
+    "es": {
+     "t": "Leer con propósito",
+     "g": "Decide qué quieres de un texto antes de empezar para mantener el foco al leer.",
+     "p": [
+      "Pregunta primero: ¿necesito la idea principal, un detalle o una comprensión profunda?",
+      "Un propósito claro te dice dónde frenar y qué leer por encima.",
+      "Escribe tu propósito como una pregunta al principio de la página."
+     ],
+     "q": "¿Qué estás leyendo ahora y qué quieres sacar de ello?",
+     "c": "Antes de tu próxima lectura, escribe una pregunta de propósito y respóndela después."
+    },
+    "fr": {
+     "t": "Lire avec un but",
+     "g": "Décide ce que tu veux d'un texte avant de commencer pour rester concentré.",
+     "p": [
+      "Demande-toi d'abord : ai-je besoin de l'idée principale, d'un détail ou d'une compréhension profonde ?",
+      "Un but clair indique où ralentir et ce qu'on peut parcourir.",
+      "Écris ton but sous forme de question en haut de la page."
+     ],
+     "q": "Que lis-tu en ce moment, et qu'en attends-tu ?",
+     "c": "Avant ta prochaine lecture, écris une question de but et réponds-y ensuite."
+    },
+    "it": {
+     "t": "Leggere con uno scopo",
+     "g": "Decidi cosa vuoi da un testo prima di iniziare per restare concentrato.",
+     "p": [
+      "Chiediti prima: mi serve l'idea principale, un dettaglio o una comprensione profonda?",
+      "Uno scopo chiaro ti dice dove rallentare e cosa scorrere.",
+      "Scrivi il tuo scopo come domanda in cima alla pagina."
+     ],
+     "q": "Cosa stai leggendo ora e cosa vuoi ricavarne?",
+     "c": "Prima della prossima lettura scrivi una domanda-scopo e rispondi dopo."
+    },
+    "pt": {
+     "t": "Ler com um propósito",
+     "g": "Decide o que queres de um texto antes de começar para manteres o foco.",
+     "p": [
+      "Pergunta primeiro: preciso da ideia principal, de um detalhe ou de compreensão profunda?",
+      "Um propósito claro diz-te onde abrandar e o que ler na diagonal.",
+      "Escreve o teu propósito como uma pergunta no topo da página."
+     ],
+     "q": "O que estás a ler agora e o que queres tirar daí?",
+     "c": "Antes da próxima leitura, escreve uma pergunta-propósito e responde-lhe depois."
+    },
+    "pt_BR": {
+     "t": "Ler com um propósito",
+     "g": "Decida o que você quer de um texto antes de começar para manter o foco.",
+     "p": [
+      "Pergunte primeiro: preciso da ideia principal, de um detalhe ou de compreensão profunda?",
+      "Um propósito claro diz onde desacelerar e o que ler na diagonal.",
+      "Escreva seu propósito como uma pergunta no topo da página."
+     ],
+     "q": "O que você está lendo agora e o que quer tirar disso?",
+     "c": "Antes da próxima leitura, escreva uma pergunta-propósito e responda depois."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Previewing a chapter",
+     "g": "Skim titles, images, summaries and questions before reading in detail.",
+     "p": [
+      "A two-minute preview gives your brain a map before the journey.",
+      "Look at headings, bold terms, figures, the intro and the end-of-chapter summary.",
+      "Predict what the chapter will say, then read to check your guess."
+     ],
+     "q": "How do you usually start a new chapter?",
+     "c": "Preview one chapter for two minutes and write three things you expect to learn."
+    },
+    "de": {
+     "t": "Ein Kapitel vorab überblicken",
+     "g": "Überfliege Titel, Bilder, Zusammenfassungen und Fragen, bevor du genau liest.",
+     "p": [
+      "Eine Zwei-Minuten-Vorschau gibt deinem Gehirn eine Karte vor der Reise.",
+      "Sieh dir Überschriften, fette Begriffe, Abbildungen, Einleitung und Kapitelzusammenfassung an.",
+      "Sage voraus, was im Kapitel steht, und lies dann, um deine Vermutung zu prüfen."
+     ],
+     "q": "Wie beginnst du normalerweise ein neues Kapitel?",
+     "c": "Überblicke ein Kapitel zwei Minuten lang und schreib drei Dinge auf, die du erwartest."
+    },
+    "es": {
+     "t": "Ojear un capítulo antes de leerlo",
+     "g": "Echa un vistazo a títulos, imágenes, resúmenes y preguntas antes de leer a fondo.",
+     "p": [
+      "Una vista previa de dos minutos da a tu cerebro un mapa antes del viaje.",
+      "Mira los títulos, términos en negrita, figuras, la introducción y el resumen final.",
+      "Predice lo que dirá el capítulo y luego lee para comprobar tu hipótesis."
+     ],
+     "q": "¿Cómo sueles empezar un capítulo nuevo?",
+     "c": "Ojea un capítulo dos minutos y escribe tres cosas que esperas aprender."
+    },
+    "fr": {
+     "t": "Survoler un chapitre",
+     "g": "Parcours titres, images, résumés et questions avant de lire en détail.",
+     "p": [
+      "Un aperçu de deux minutes donne à ton cerveau une carte avant le voyage.",
+      "Regarde les titres, les termes en gras, les figures, l'introduction et le résumé de fin.",
+      "Prédis ce que dira le chapitre, puis lis pour vérifier ton hypothèse."
+     ],
+     "q": "Comment commences-tu d'habitude un nouveau chapitre ?",
+     "c": "Survole un chapitre deux minutes et écris trois choses que tu t'attends à apprendre."
+    },
+    "it": {
+     "t": "Dare un'occhiata a un capitolo",
+     "g": "Scorri titoli, immagini, riassunti e domande prima di leggere in dettaglio.",
+     "p": [
+      "Un'anteprima di due minuti dà al cervello una mappa prima del viaggio.",
+      "Guarda titoli, termini in grassetto, figure, introduzione e riassunto finale.",
+      "Prevedi cosa dirà il capitolo, poi leggi per verificare la tua ipotesi."
+     ],
+     "q": "Come inizi di solito un nuovo capitolo?",
+     "c": "Sfoglia un capitolo per due minuti e scrivi tre cose che ti aspetti di imparare."
+    },
+    "pt": {
+     "t": "Folhear um capítulo antes de ler",
+     "g": "Passa os olhos por títulos, imagens, resumos e perguntas antes de leres em detalhe.",
+     "p": [
+      "Uma pré-visualização de dois minutos dá ao teu cérebro um mapa antes da viagem.",
+      "Vê títulos, termos a negrito, figuras, a introdução e o resumo final.",
+      "Prevê o que o capítulo vai dizer e depois lê para confirmar o palpite."
+     ],
+     "q": "Como costumas começar um capítulo novo?",
+     "c": "Folheia um capítulo durante dois minutos e escreve três coisas que esperas aprender."
+    },
+    "pt_BR": {
+     "t": "Folhear um capítulo antes de ler",
+     "g": "Passe os olhos por títulos, imagens, resumos e perguntas antes de ler em detalhe.",
+     "p": [
+      "Uma pré-visualização de dois minutos dá ao seu cérebro um mapa antes da viagem.",
+      "Veja títulos, termos em negrito, figuras, a introdução e o resumo final.",
+      "Preveja o que o capítulo vai dizer e depois leia para conferir seu palpite."
+     ],
+     "q": "Como você costuma começar um capítulo novo?",
+     "c": "Folheie um capítulo por dois minutos e escreva três coisas que espera aprender."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The SQ3R method",
+     "g": "Survey, question, read, recite and review: a classic system for textbook study.",
+     "p": [
+      "Survey the chapter, turn headings into questions, then read to answer them.",
+      "Recite: close the book and say the answers aloud or write them from memory.",
+      "Review at the end and again a day later to keep what you learned."
+     ],
+     "q": "Which of the five steps do you already do without noticing?",
+     "c": "Apply SQ3R to one short section, going through all five steps in order."
+    },
+    "de": {
+     "t": "Die SQ3R-Methode",
+     "g": "Überblick, Fragen, Lesen, Wiedergeben, Wiederholen: ein Klassiker fürs Lehrbuchlernen.",
+     "p": [
+      "Überblicke das Kapitel, mach Überschriften zu Fragen und lies, um sie zu beantworten.",
+      "Wiedergeben: Buch zu, Antworten laut sagen oder aus dem Gedächtnis aufschreiben.",
+      "Wiederhole am Ende und noch einmal einen Tag später, um das Gelernte zu behalten."
+     ],
+     "q": "Welchen der fünf Schritte machst du schon, ohne es zu merken?",
+     "c": "Wende SQ3R auf einen kurzen Abschnitt an und geh alle fünf Schritte der Reihe nach durch."
+    },
+    "es": {
+     "t": "El método SQ3R",
+     "g": "Explorar, preguntar, leer, recitar y repasar: un sistema clásico para estudiar libros de texto.",
+     "p": [
+      "Explora el capítulo, convierte los títulos en preguntas y lee para responderlas.",
+      "Recita: cierra el libro y di las respuestas en voz alta o escríbelas de memoria.",
+      "Repasa al final y de nuevo un día después para conservar lo aprendido."
+     ],
+     "q": "¿Cuál de los cinco pasos ya haces sin darte cuenta?",
+     "c": "Aplica SQ3R a una sección corta, pasando por los cinco pasos en orden."
+    },
+    "fr": {
+     "t": "La méthode SQ3R",
+     "g": "Survoler, questionner, lire, réciter et réviser : un système classique pour étudier un manuel.",
+     "p": [
+      "Survole le chapitre, transforme les titres en questions, puis lis pour y répondre.",
+      "Réciter : ferme le livre et dis les réponses à voix haute ou écris-les de mémoire.",
+      "Révise à la fin et encore un jour plus tard pour garder ce que tu as appris."
+     ],
+     "q": "Lequel des cinq pas fais-tu déjà sans t'en rendre compte ?",
+     "c": "Applique SQ3R à une courte section en suivant les cinq étapes dans l'ordre."
+    },
+    "it": {
+     "t": "Il metodo SQ3R",
+     "g": "Esplora, domanda, leggi, ripeti e ripassa: un sistema classico per studiare sui libri di testo.",
+     "p": [
+      "Esplora il capitolo, trasforma i titoli in domande e leggi per rispondere.",
+      "Ripeti: chiudi il libro e di' le risposte a voce alta o scrivile a memoria.",
+      "Ripassa alla fine e di nuovo il giorno dopo per conservare ciò che hai imparato."
+     ],
+     "q": "Quale dei cinque passi fai già senza accorgertene?",
+     "c": "Applica SQ3R a una breve sezione, seguendo i cinque passi in ordine."
+    },
+    "pt": {
+     "t": "O método SQ3R",
+     "g": "Explorar, perguntar, ler, recitar e rever: um sistema clássico para estudar manuais.",
+     "p": [
+      "Explora o capítulo, transforma os títulos em perguntas e lê para lhes responder.",
+      "Recitar: fecha o livro e diz as respostas em voz alta ou escreve-as de memória.",
+      "Revê no fim e outra vez no dia seguinte para guardares o que aprendeste."
+     ],
+     "q": "Qual dos cinco passos já fazes sem dares por isso?",
+     "c": "Aplica o SQ3R a uma secção curta, seguindo os cinco passos por ordem."
+    },
+    "pt_BR": {
+     "t": "O método SQ3R",
+     "g": "Explorar, perguntar, ler, recitar e revisar: um sistema clássico para estudar livros didáticos.",
+     "p": [
+      "Explore o capítulo, transforme os títulos em perguntas e leia para respondê-las.",
+      "Recitar: feche o livro e diga as respostas em voz alta ou escreva de memória.",
+      "Revise no fim e de novo um dia depois para manter o que aprendeu."
+     ],
+     "q": "Qual dos cinco passos você já faz sem perceber?",
+     "c": "Aplique o SQ3R a uma seção curta, seguindo os cinco passos em ordem."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Highlighting wisely",
+     "g": "See why heavy highlighting fools you and how to mark only what truly matters.",
+     "p": [
+      "A page full of yellow feels productive but often teaches little.",
+      "Read a whole paragraph first, then highlight only a few key words or one sentence.",
+      "Better still, write a short note or question in the margin beside it."
+     ],
+     "q": "How much of a typical page do you tend to highlight?",
+     "c": "On one page, highlight no more than two lines and add one margin question."
+    },
+    "de": {
+     "t": "Klug markieren",
+     "g": "Erfahre, warum starkes Markieren täuscht und wie du nur das wirklich Wichtige markierst.",
+     "p": [
+      "Eine gelbe Seite fühlt sich produktiv an, bringt aber oft wenig.",
+      "Lies zuerst den ganzen Absatz und markiere dann nur wenige Schlüsselwörter oder einen Satz.",
+      "Noch besser: Schreib eine kurze Notiz oder Frage an den Rand."
+     ],
+     "q": "Wie viel einer typischen Seite markierst du meist?",
+     "c": "Markiere auf einer Seite höchstens zwei Zeilen und ergänze eine Randfrage."
+    },
+    "es": {
+     "t": "Subrayar con criterio",
+     "g": "Descubre por qué subrayar mucho engaña y cómo marcar solo lo realmente importante.",
+     "p": [
+      "Una página llena de amarillo parece productiva pero suele enseñar poco.",
+      "Lee primero el párrafo entero y subraya solo unas palabras clave o una frase.",
+      "Mejor aún, escribe una nota corta o una pregunta al margen."
+     ],
+     "q": "¿Cuánto de una página típica sueles subrayar?",
+     "c": "En una página, subraya como máximo dos líneas y añade una pregunta al margen."
+    },
+    "fr": {
+     "t": "Surligner avec discernement",
+     "g": "Vois pourquoi surligner beaucoup trompe et comment ne marquer que l'essentiel.",
+     "p": [
+      "Une page toute jaune semble productive mais enseigne souvent peu.",
+      "Lis d'abord le paragraphe entier, puis surligne seulement quelques mots clés ou une phrase.",
+      "Mieux encore, écris une courte note ou une question en marge."
+     ],
+     "q": "Quelle part d'une page typique as-tu tendance à surligner ?",
+     "c": "Sur une page, surligne au plus deux lignes et ajoute une question en marge."
+    },
+    "it": {
+     "t": "Evidenziare con giudizio",
+     "g": "Scopri perché evidenziare molto inganna e come segnare solo ciò che conta davvero.",
+     "p": [
+      "Una pagina piena di giallo sembra produttiva ma spesso insegna poco.",
+      "Leggi prima l'intero paragrafo, poi evidenzia solo poche parole chiave o una frase.",
+      "Meglio ancora, scrivi una breve nota o domanda a margine."
+     ],
+     "q": "Quanto di una pagina tipica tendi a evidenziare?",
+     "c": "Su una pagina evidenzia al massimo due righe e aggiungi una domanda a margine."
+    },
+    "pt": {
+     "t": "Sublinhar com critério",
+     "g": "Percebe porque sublinhar muito engana e como marcar só o que realmente importa.",
+     "p": [
+      "Uma página toda amarela parece produtiva, mas costuma ensinar pouco.",
+      "Lê primeiro o parágrafo inteiro e sublinha só algumas palavras-chave ou uma frase.",
+      "Melhor ainda, escreve uma nota curta ou uma pergunta na margem."
+     ],
+     "q": "Quanto de uma página típica costumas sublinhar?",
+     "c": "Numa página, sublinha no máximo duas linhas e junta uma pergunta na margem."
+    },
+    "pt_BR": {
+     "t": "Grifar com critério",
+     "g": "Entenda por que grifar muito engana e como marcar só o que realmente importa.",
+     "p": [
+      "Uma página toda amarela parece produtiva, mas costuma ensinar pouco.",
+      "Leia primeiro o parágrafo inteiro e grife só algumas palavras-chave ou uma frase.",
+      "Melhor ainda, escreva uma nota curta ou uma pergunta na margem."
+     ],
+     "q": "Quanto de uma página típica você costuma grifar?",
+     "c": "Em uma página, grife no máximo duas linhas e acrescente uma pergunta na margem."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading difficult texts",
+     "g": "Slow down, reread key sentences and look up terms without losing the thread.",
+     "p": [
+      "Difficult texts need a slower speed, and that is normal, not a sign of weakness.",
+      "Reread hard sentences, and look up key words only when they block meaning.",
+      "Pause after each paragraph and say its point in one short sentence."
+     ],
+     "q": "What is the hardest text you have had to read lately?",
+     "c": "Read one hard paragraph slowly, then summarise it in one sentence."
+    },
+    "de": {
+     "t": "Schwierige Texte lesen",
+     "g": "Werde langsamer, lies Schlüsselsätze erneut und schlag Begriffe nach, ohne den Faden zu verlieren.",
+     "p": [
+      "Schwierige Texte brauchen ein langsameres Tempo, das ist normal und keine Schwäche.",
+      "Lies harte Sätze erneut und schlag Schlüsselwörter nur nach, wenn sie den Sinn blockieren.",
+      "Halte nach jedem Absatz inne und sag seinen Kern in einem kurzen Satz."
+     ],
+     "q": "Was war der schwierigste Text, den du zuletzt lesen musstest?",
+     "c": "Lies einen schweren Absatz langsam und fasse ihn dann in einem Satz zusammen."
+    },
+    "es": {
+     "t": "Leer textos difíciles",
+     "g": "Ve más despacio, relee frases clave y busca términos sin perder el hilo.",
+     "p": [
+      "Los textos difíciles piden un ritmo más lento, y es normal, no una debilidad.",
+      "Relee las frases duras y busca palabras clave solo cuando bloqueen el sentido.",
+      "Haz una pausa tras cada párrafo y di su idea en una frase corta."
+     ],
+     "q": "¿Cuál es el texto más difícil que has tenido que leer últimamente?",
+     "c": "Lee despacio un párrafo difícil y luego resúmelo en una frase."
+    },
+    "fr": {
+     "t": "Lire des textes difficiles",
+     "g": "Ralentis, relis les phrases clés et cherche les termes sans perdre le fil.",
+     "p": [
+      "Les textes difficiles demandent un rythme plus lent, c'est normal et pas une faiblesse.",
+      "Relis les phrases dures et cherche les mots clés seulement quand ils bloquent le sens.",
+      "Fais une pause après chaque paragraphe et dis son idée en une courte phrase."
+     ],
+     "q": "Quel est le texte le plus difficile que tu as dû lire récemment ?",
+     "c": "Lis lentement un paragraphe difficile, puis résume-le en une phrase."
+    },
+    "it": {
+     "t": "Leggere testi difficili",
+     "g": "Rallenta, rileggi le frasi chiave e cerca i termini senza perdere il filo.",
+     "p": [
+      "I testi difficili richiedono un ritmo più lento, ed è normale, non una debolezza.",
+      "Rileggi le frasi dure e cerca le parole chiave solo quando bloccano il senso.",
+      "Fai una pausa dopo ogni paragrafo e dì il suo punto in una breve frase."
+     ],
+     "q": "Qual è il testo più difficile che hai dovuto leggere di recente?",
+     "c": "Leggi lentamente un paragrafo difficile, poi riassumilo in una frase."
+    },
+    "pt": {
+     "t": "Ler textos difíceis",
+     "g": "Abranda, relê frases-chave e procura termos sem perder o fio.",
+     "p": [
+      "Textos difíceis pedem um ritmo mais lento, e isso é normal e não fraqueza.",
+      "Relê as frases duras e procura palavras-chave só quando bloqueiam o sentido.",
+      "Faz uma pausa após cada parágrafo e diz o seu ponto numa frase curta."
+     ],
+     "q": "Qual é o texto mais difícil que tiveste de ler ultimamente?",
+     "c": "Lê devagar um parágrafo difícil e depois resume-o numa frase."
+    },
+    "pt_BR": {
+     "t": "Ler textos difíceis",
+     "g": "Desacelere, releia frases-chave e procure termos sem perder o fio.",
+     "p": [
+      "Textos difíceis pedem um ritmo mais lento, e isso é normal e não fraqueza.",
+      "Releia as frases duras e procure palavras-chave só quando bloquearem o sentido.",
+      "Faça uma pausa após cada parágrafo e diga o ponto dele em uma frase curta."
+     ],
+     "q": "Qual é o texto mais difícil que você teve de ler ultimamente?",
+     "c": "Leia devagar um parágrafo difícil e depois resuma em uma frase."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Summarising in three sentences",
+     "g": "Capture the main idea, the support and the meaning of a text very briefly.",
+     "p": [
+      "Sentence one: the main idea. Sentence two: the best support. Sentence three: why it matters.",
+      "Writing short forces you to decide what is essential, which is real learning.",
+      "Compare your summary with the text afterwards to check for gaps."
+     ],
+     "q": "What article or chapter could you summarise in three sentences today?",
+     "c": "Summarise one page in exactly three sentences from memory, then compare."
+    },
+    "de": {
+     "t": "Zusammenfassen in drei Sätzen",
+     "g": "Fasse Hauptidee, Beleg und Bedeutung eines Textes ganz kurz zusammen.",
+     "p": [
+      "Satz eins: die Hauptidee. Satz zwei: die beste Stütze. Satz drei: warum es wichtig ist.",
+      "Kurz zu schreiben zwingt dich zu entscheiden, was wesentlich ist, und das ist echtes Lernen.",
+      "Vergleiche deine Zusammenfassung danach mit dem Text, um Lücken zu finden."
+     ],
+     "q": "Welchen Artikel oder welches Kapitel könntest du heute in drei Sätzen zusammenfassen?",
+     "c": "Fasse eine Seite aus dem Gedächtnis in genau drei Sätzen zusammen und vergleiche dann."
+    },
+    "es": {
+     "t": "Resumir en tres frases",
+     "g": "Capta la idea principal, el apoyo y el sentido de un texto de forma muy breve.",
+     "p": [
+      "Frase uno: la idea principal. Frase dos: el mejor apoyo. Frase tres: por qué importa.",
+      "Escribir corto te obliga a decidir qué es esencial, y eso es aprender de verdad.",
+      "Compara luego tu resumen con el texto para detectar lagunas."
+     ],
+     "q": "¿Qué artículo o capítulo podrías resumir hoy en tres frases?",
+     "c": "Resume una página en exactamente tres frases de memoria y luego compara."
+    },
+    "fr": {
+     "t": "Résumer en trois phrases",
+     "g": "Capte l'idée principale, l'appui et le sens d'un texte de façon très brève.",
+     "p": [
+      "Phrase un : l'idée principale. Phrase deux : le meilleur appui. Phrase trois : pourquoi c'est important.",
+      "Écrire court oblige à décider ce qui est essentiel, et c'est un vrai apprentissage.",
+      "Compare ensuite ton résumé au texte pour repérer les lacunes."
+     ],
+     "q": "Quel article ou chapitre pourrais-tu résumer aujourd'hui en trois phrases ?",
+     "c": "Résume une page en exactement trois phrases de mémoire, puis compare."
+    },
+    "it": {
+     "t": "Riassumere in tre frasi",
+     "g": "Cogli l'idea principale, il supporto e il significato di un testo in modo brevissimo.",
+     "p": [
+      "Frase uno: l'idea principale. Frase due: il supporto migliore. Frase tre: perché conta.",
+      "Scrivere breve ti obbliga a decidere cosa è essenziale, ed è vero apprendimento.",
+      "Confronta poi il riassunto con il testo per trovare lacune."
+     ],
+     "q": "Quale articolo o capitolo potresti riassumere oggi in tre frasi?",
+     "c": "Riassumi a memoria una pagina in esattamente tre frasi, poi confronta."
+    },
+    "pt": {
+     "t": "Resumir em três frases",
+     "g": "Capta a ideia principal, o apoio e o sentido de um texto de forma muito breve.",
+     "p": [
+      "Frase um: a ideia principal. Frase dois: o melhor apoio. Frase três: porque importa.",
+      "Escrever curto obriga-te a decidir o que é essencial, e isso é aprender a sério.",
+      "Compara depois o teu resumo com o texto para encontrares lacunas."
+     ],
+     "q": "Que artigo ou capítulo poderias resumir hoje em três frases?",
+     "c": "Resume uma página de memória em exatamente três frases e depois compara."
+    },
+    "pt_BR": {
+     "t": "Resumir em três frases",
+     "g": "Capte a ideia principal, o apoio e o sentido de um texto de forma bem breve.",
+     "p": [
+      "Frase um: a ideia principal. Frase dois: o melhor apoio. Frase três: por que importa.",
+      "Escrever curto obriga você a decidir o que é essencial, e isso é aprender de verdade.",
+      "Compare depois seu resumo com o texto para achar lacunas."
+     ],
+     "q": "Que artigo ou capítulo você poderia resumir hoje em três frases?",
+     "c": "Resuma uma página de memória em exatamente três frases e depois compare."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading graphs and tables",
+     "g": "Understand axes, units and trends so visual data makes sense quickly.",
+     "p": [
+      "Start with the title, then read what each axis and each column measures.",
+      "Check the units and the scale: the same data can look dramatic or calm.",
+      "Say the main trend in one sentence: what goes up, down or stays the same."
+     ],
+     "q": "Which graph in your studies confuses you most?",
+     "c": "Find one graph or table and describe its main message in one sentence."
+    },
+    "de": {
+     "t": "Diagramme und Tabellen lesen",
+     "g": "Verstehe Achsen, Einheiten und Trends, damit Daten schnell Sinn ergeben.",
+     "p": [
+      "Beginne mit dem Titel, dann lies, was jede Achse und jede Spalte misst.",
+      "Prüfe Einheiten und Skala: Dieselben Daten können dramatisch oder ruhig wirken.",
+      "Sag den Haupttrend in einem Satz: was steigt, fällt oder gleich bleibt."
+     ],
+     "q": "Welches Diagramm in deinem Fach verwirrt dich am meisten?",
+     "c": "Such ein Diagramm oder eine Tabelle und beschreibe die Kernaussage in einem Satz."
+    },
+    "es": {
+     "t": "Leer gráficos y tablas",
+     "g": "Entiende ejes, unidades y tendencias para que los datos visuales cobren sentido rápido.",
+     "p": [
+      "Empieza por el título y lee qué mide cada eje y cada columna.",
+      "Revisa unidades y escala: los mismos datos pueden parecer dramáticos o tranquilos.",
+      "Di la tendencia principal en una frase: qué sube, qué baja o qué sigue igual."
+     ],
+     "q": "¿Qué gráfico de tus estudios te confunde más?",
+     "c": "Busca un gráfico o tabla y describe su mensaje principal en una frase."
+    },
+    "fr": {
+     "t": "Lire graphiques et tableaux",
+     "g": "Comprends axes, unités et tendances pour que les données visuelles aient vite du sens.",
+     "p": [
+      "Commence par le titre, puis lis ce que mesure chaque axe et chaque colonne.",
+      "Vérifie les unités et l'échelle : les mêmes données peuvent sembler dramatiques ou calmes.",
+      "Dis la tendance principale en une phrase : ce qui monte, baisse ou reste stable."
+     ],
+     "q": "Quel graphique de tes études te trouble le plus ?",
+     "c": "Trouve un graphique ou un tableau et décris son message principal en une phrase."
+    },
+    "it": {
+     "t": "Leggere grafici e tabelle",
+     "g": "Capisci assi, unità e tendenze perché i dati visivi abbiano subito senso.",
+     "p": [
+      "Parti dal titolo, poi leggi cosa misura ogni asse e ogni colonna.",
+      "Controlla unità e scala: gli stessi dati possono sembrare drammatici o calmi.",
+      "Di' la tendenza principale in una frase: cosa sale, scende o resta uguale."
+     ],
+     "q": "Quale grafico dei tuoi studi ti confonde di più?",
+     "c": "Trova un grafico o una tabella e descrivi il suo messaggio principale in una frase."
+    },
+    "pt": {
+     "t": "Ler gráficos e tabelas",
+     "g": "Percebe eixos, unidades e tendências para os dados visuais fazerem sentido depressa.",
+     "p": [
+      "Começa pelo título e lê o que mede cada eixo e cada coluna.",
+      "Confirma unidades e escala: os mesmos dados podem parecer dramáticos ou calmos.",
+      "Diz a tendência principal numa frase: o que sobe, desce ou fica igual."
+     ],
+     "q": "Que gráfico dos teus estudos mais te confunde?",
+     "c": "Encontra um gráfico ou tabela e descreve a sua mensagem principal numa frase."
+    },
+    "pt_BR": {
+     "t": "Ler gráficos e tabelas",
+     "g": "Entenda eixos, unidades e tendências para os dados visuais fazerem sentido rápido.",
+     "p": [
+      "Comece pelo título e leia o que cada eixo e cada coluna medem.",
+      "Confira unidades e escala: os mesmos dados podem parecer dramáticos ou calmos.",
+      "Diga a tendência principal em uma frase: o que sobe, desce ou fica igual."
+     ],
+     "q": "Que gráfico dos seus estudos mais confunde você?",
+     "c": "Encontre um gráfico ou tabela e descreva a mensagem principal em uma frase."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Vocabulary of a subject",
+     "g": "Build a personal glossary of key terms for every course you take.",
+     "p": [
+      "Every subject has its own language, and knowing the terms makes reading easier.",
+      "Write each term with a simple definition in your words and one example.",
+      "Add a few new terms after each study session and review the list weekly."
+     ],
+     "q": "Which terms in your subject do you keep mixing up?",
+     "c": "Start a glossary and add five key terms with definitions and examples."
+    },
+    "de": {
+     "t": "Fachvokabular aufbauen",
+     "g": "Baue für jedes Fach ein persönliches Glossar mit Schlüsselbegriffen auf.",
+     "p": [
+      "Jedes Fach hat seine eigene Sprache, und Begriffe zu kennen erleichtert das Lesen.",
+      "Schreib jeden Begriff mit einer einfachen Definition in eigenen Worten und einem Beispiel.",
+      "Ergänze nach jeder Lerneinheit ein paar Begriffe und geh die Liste wöchentlich durch."
+     ],
+     "q": "Welche Begriffe in deinem Fach verwechselst du immer wieder?",
+     "c": "Starte ein Glossar und trag fünf Schlüsselbegriffe mit Definitionen und Beispielen ein."
+    },
+    "es": {
+     "t": "El vocabulario de una materia",
+     "g": "Crea un glosario personal de términos clave para cada asignatura.",
+     "p": [
+      "Cada materia tiene su propio idioma, y conocer los términos facilita la lectura.",
+      "Anota cada término con una definición sencilla con tus palabras y un ejemplo.",
+      "Añade algunos términos tras cada sesión y repasa la lista cada semana."
+     ],
+     "q": "¿Qué términos de tu materia confundes una y otra vez?",
+     "c": "Empieza un glosario y añade cinco términos clave con definiciones y ejemplos."
+    },
+    "fr": {
+     "t": "Le vocabulaire d'une matière",
+     "g": "Construis un glossaire personnel des termes clés pour chaque cours que tu suis.",
+     "p": [
+      "Chaque matière a sa propre langue, et connaître les termes facilite la lecture.",
+      "Écris chaque terme avec une définition simple de ta main et un exemple.",
+      "Ajoute quelques termes après chaque séance et relis la liste chaque semaine."
+     ],
+     "q": "Quels termes de ta matière confonds-tu sans cesse ?",
+     "c": "Commence un glossaire et ajoute cinq termes clés avec définitions et exemples."
+    },
+    "it": {
+     "t": "Il lessico di una materia",
+     "g": "Costruisci un glossario personale dei termini chiave per ogni corso che segui.",
+     "p": [
+      "Ogni materia ha la sua lingua, e conoscere i termini rende la lettura più facile.",
+      "Scrivi ogni termine con una definizione semplice a parole tue e un esempio.",
+      "Aggiungi qualche termine dopo ogni sessione e ripassa l'elenco ogni settimana."
+     ],
+     "q": "Quali termini della tua materia continui a confondere?",
+     "c": "Inizia un glossario e aggiungi cinque termini chiave con definizioni ed esempi."
+    },
+    "pt": {
+     "t": "O vocabulário de uma disciplina",
+     "g": "Constrói um glossário pessoal de termos-chave para cada disciplina que tens.",
+     "p": [
+      "Cada disciplina tem a sua própria linguagem, e conhecer os termos facilita a leitura.",
+      "Escreve cada termo com uma definição simples nas tuas palavras e um exemplo.",
+      "Junta alguns termos após cada sessão e revê a lista todas as semanas."
+     ],
+     "q": "Que termos da tua disciplina trocas sempre?",
+     "c": "Começa um glossário e junta cinco termos-chave com definições e exemplos."
+    },
+    "pt_BR": {
+     "t": "O vocabulário de uma matéria",
+     "g": "Monte um glossário pessoal de termos-chave para cada matéria que você cursa.",
+     "p": [
+      "Cada matéria tem sua própria linguagem, e conhecer os termos facilita a leitura.",
+      "Escreva cada termo com uma definição simples com suas palavras e um exemplo.",
+      "Acrescente alguns termos após cada sessão e revise a lista toda semana."
+     ],
+     "q": "Que termos da sua matéria você vive trocando?",
+     "c": "Comece um glossário e acrescente cinco termos-chave com definições e exemplos."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading on screens",
+     "g": "Stay focused on digital texts and avoid endless scrolling and skimming.",
+     "p": [
+      "Screens invite skimming, so decide to read slowly and deliberately.",
+      "Close other tabs, turn on a reading mode and raise the text size if needed.",
+      "Rest your eyes: every 20 minutes look at something far away for 20 seconds."
+     ],
+     "q": "Do you remember more from paper or from a screen, in your experience?",
+     "c": "Read one article on screen with no other tabs open and note three key points."
+    },
+    "de": {
+     "t": "Auf Bildschirmen lesen",
+     "g": "Bleib bei digitalen Texten konzentriert und vermeide endloses Scrollen und Überfliegen.",
+     "p": [
+      "Bildschirme laden zum Überfliegen ein, also entscheide dich bewusst für langsames Lesen.",
+      "Schließe andere Tabs, nutze einen Lesemodus und vergrößere bei Bedarf die Schrift.",
+      "Gönn den Augen Ruhe: Schau alle 20 Minuten 20 Sekunden lang in die Ferne."
+     ],
+     "q": "Merkst du dir mehr von Papier oder vom Bildschirm, nach deiner Erfahrung?",
+     "c": "Lies einen Artikel am Bildschirm ohne weitere Tabs und notiere drei Kernpunkte."
+    },
+    "es": {
+     "t": "Leer en pantallas",
+     "g": "Mantén el foco en textos digitales y evita el scroll infinito y la lectura en diagonal.",
+     "p": [
+      "Las pantallas invitan a leer en diagonal, así que decide leer despacio y con intención.",
+      "Cierra otras pestañas, activa un modo lectura y aumenta el tamaño del texto si hace falta.",
+      "Descansa la vista: cada 20 minutos mira algo lejano durante 20 segundos."
+     ],
+     "q": "¿Recuerdas más de papel o de pantalla, según tu experiencia?",
+     "c": "Lee un artículo en pantalla sin otras pestañas y anota tres puntos clave."
+    },
+    "fr": {
+     "t": "Lire sur écran",
+     "g": "Reste concentré sur les textes numériques et évite le défilement sans fin et la lecture en diagonale.",
+     "p": [
+      "Les écrans invitent à survoler, alors décide de lire lentement et volontairement.",
+      "Ferme les autres onglets, active un mode lecture et agrandis le texte si besoin.",
+      "Repose tes yeux : toutes les 20 minutes, regarde au loin pendant 20 secondes."
+     ],
+     "q": "Retiens-tu davantage sur papier ou sur écran, selon ton expérience ?",
+     "c": "Lis un article à l'écran sans autres onglets et note trois points clés."
+    },
+    "it": {
+     "t": "Leggere sugli schermi",
+     "g": "Resta concentrato sui testi digitali ed evita scorrimento infinito e lettura in diagonale.",
+     "p": [
+      "Gli schermi invitano a scorrere veloci, quindi decidi di leggere piano e con intenzione.",
+      "Chiudi le altre schede, attiva una modalità lettura e ingrandisci il testo se serve.",
+      "Riposa gli occhi: ogni 20 minuti guarda lontano per 20 secondi."
+     ],
+     "q": "Ricordi di più da carta o da schermo, per la tua esperienza?",
+     "c": "Leggi un articolo sullo schermo senza altre schede aperte e annota tre punti chiave."
+    },
+    "pt": {
+     "t": "Ler em ecrãs",
+     "g": "Mantém o foco em textos digitais e evita o scroll infinito e a leitura na diagonal.",
+     "p": [
+      "Os ecrãs convidam a ler na diagonal, por isso decide ler devagar e com intenção.",
+      "Fecha outros separadores, ativa um modo de leitura e aumenta o texto se for preciso.",
+      "Descansa a vista: de 20 em 20 minutos olha ao longe durante 20 segundos."
+     ],
+     "q": "Na tua experiência, lembras-te de mais do papel ou do ecrã?",
+     "c": "Lê um artigo no ecrã sem outros separadores e anota três pontos-chave."
+    },
+    "pt_BR": {
+     "t": "Ler em telas",
+     "g": "Mantenha o foco em textos digitais e evite a rolagem infinita e a leitura na diagonal.",
+     "p": [
+      "Telas convidam a ler na diagonal, então decida ler devagar e com intenção.",
+      "Feche outras abas, ative um modo leitura e aumente o texto se precisar.",
+      "Descanse a vista: a cada 20 minutos olhe ao longe por 20 segundos."
+     ],
+     "q": "Na sua experiência, você lembra mais do papel ou da tela?",
+     "c": "Leia um artigo na tela sem outras abas e anote três pontos-chave."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Two-month review",
+     "g": "Revisit focus, notes and reading skills, and test one of each on new material.",
+     "p": [
+      "Look back over the last 30 days: focus tools, note methods and reading steps.",
+      "Pick the best focus tool, note method and reading technique for you.",
+      "Use all three on a brand new topic and see how smooth it feels."
+     ],
+     "q": "Which skill has improved the most since you began?",
+     "c": "Study one new page using your best focus, note and reading methods together."
+    },
+    "de": {
+     "t": "Rückblick nach zwei Monaten",
+     "g": "Prüfe Fokus-, Notiz- und Lesefähigkeiten erneut und teste je eine an neuem Stoff.",
+     "p": [
+      "Blick auf die letzten 30 Tage: Fokuswerkzeuge, Notizmethoden und Leseschritte.",
+      "Wähle das beste Fokuswerkzeug, die beste Notizmethode und Lesetechnik für dich.",
+      "Nutze alle drei an einem ganz neuen Thema und schau, wie rund es läuft."
+     ],
+     "q": "Welche Fähigkeit hat sich seit dem Start am meisten verbessert?",
+     "c": "Lerne eine neue Seite mit deinen besten Fokus-, Notiz- und Lesemethoden zusammen."
+    },
+    "es": {
+     "t": "Repaso de dos meses",
+     "g": "Revisa foco, apuntes y lectura y prueba uno de cada con material nuevo.",
+     "p": [
+      "Mira los últimos 30 días: herramientas de foco, métodos de apuntes y pasos de lectura.",
+      "Elige la mejor herramienta de foco, método de apuntes y técnica de lectura para ti.",
+      "Usa las tres en un tema totalmente nuevo y mira qué tal fluye."
+     ],
+     "q": "¿Qué habilidad ha mejorado más desde que empezaste?",
+     "c": "Estudia una página nueva usando juntos tus mejores métodos de foco, apuntes y lectura."
+    },
+    "fr": {
+     "t": "Bilan de deux mois",
+     "g": "Reviens sur concentration, notes et lecture, et teste chacune sur du nouveau contenu.",
+     "p": [
+      "Regarde les 30 derniers jours : outils de concentration, méthodes de notes et étapes de lecture.",
+      "Choisis le meilleur outil de concentration, la meilleure méthode de notes et technique de lecture pour toi.",
+      "Utilise les trois sur un sujet tout neuf et vois si ça roule bien."
+     ],
+     "q": "Quelle compétence a le plus progressé depuis ton début ?",
+     "c": "Étudie une page nouvelle en combinant tes meilleures méthodes de concentration, notes et lecture."
+    },
+    "it": {
+     "t": "Bilancio di due mesi",
+     "g": "Rivedi concentrazione, appunti e lettura e prova uno di ciascuno su materiale nuovo.",
+     "p": [
+      "Guarda gli ultimi 30 giorni: strumenti di concentrazione, metodi di appunti e passi di lettura.",
+      "Scegli il miglior strumento di concentrazione, metodo di appunti e tecnica di lettura per te.",
+      "Usa tutti e tre su un argomento del tutto nuovo e vedi come scorre."
+     ],
+     "q": "Quale abilità è migliorata di più da quando hai iniziato?",
+     "c": "Studia una pagina nuova usando insieme i tuoi migliori metodi di concentrazione, appunti e lettura."
+    },
+    "pt": {
+     "t": "Balanço de dois meses",
+     "g": "Revê foco, apontamentos e leitura e testa um de cada com matéria nova.",
+     "p": [
+      "Olha para os últimos 30 dias: ferramentas de foco, métodos de apontamentos e passos de leitura.",
+      "Escolhe a melhor ferramenta de foco, método de apontamentos e técnica de leitura para ti.",
+      "Usa as três num tema totalmente novo e vê se flui bem."
+     ],
+     "q": "Que competência melhorou mais desde que começaste?",
+     "c": "Estuda uma página nova usando em conjunto os teus melhores métodos de foco, apontamentos e leitura."
+    },
+    "pt_BR": {
+     "t": "Balanço de dois meses",
+     "g": "Revise foco, anotações e leitura e teste um de cada com conteúdo novo.",
+     "p": [
+      "Olhe os últimos 30 dias: ferramentas de foco, métodos de anotação e passos de leitura.",
+      "Escolha a melhor ferramenta de foco, método de anotação e técnica de leitura para você.",
+      "Use as três em um tema totalmente novo e veja se flui bem."
+     ],
+     "q": "Que habilidade melhorou mais desde que você começou?",
+     "c": "Estude uma página nova usando juntos seus melhores métodos de foco, anotação e leitura."
+    }
+   }
+  }
+ ]
+}

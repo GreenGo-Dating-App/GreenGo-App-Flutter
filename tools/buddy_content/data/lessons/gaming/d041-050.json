@@ -1,0 +1,835 @@
+{
+ "topic": "gaming",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is healthy gaming?",
+     "g": "Learn to enjoy games as part of a balanced life.",
+     "p": [
+      "Healthy gaming means games sit alongside sleep, movement and people.",
+      "You choose when to play, rather than the game choosing for you.",
+      "Feeling good after playing is a simple sign of balance."
+     ],
+     "q": "How do you feel after a typical play session?",
+     "c": "Rate your mood from 1 to 5 after your next session and write it down."
+    },
+    "de": {
+     "t": "Was ist gesundes Spielen?",
+     "g": "Lernen, Spiele als Teil eines ausgewogenen Lebens zu genießen.",
+     "p": [
+      "Gesundes Spielen heißt, dass Spiele neben Schlaf, Bewegung und Menschen Platz haben.",
+      "Du entscheidest, wann du spielst, nicht das Spiel für dich.",
+      "Sich nach dem Spielen gut zu fühlen, ist ein einfaches Zeichen für Balance."
+     ],
+     "q": "Wie fühlst du dich nach einer typischen Spielsitzung?",
+     "c": "Bewerte deine Stimmung nach der nächsten Sitzung von 1 bis 5 und schreibe sie auf."
+    },
+    "es": {
+     "t": "¿Qué es jugar de forma saludable?",
+     "g": "Aprender a disfrutar de los juegos dentro de una vida equilibrada.",
+     "p": [
+      "Jugar sano significa que los juegos conviven con el sueño, el movimiento y las personas.",
+      "Tú eliges cuándo jugar, en lugar de que el juego elija por ti.",
+      "Sentirte bien tras jugar es una señal simple de equilibrio."
+     ],
+     "q": "¿Cómo te sientes tras una sesión de juego típica?",
+     "c": "Puntúa tu ánimo de 1 a 5 tras tu próxima sesión y anótalo."
+    },
+    "fr": {
+     "t": "Qu'est-ce que jouer sainement ?",
+     "g": "Apprendre à apprécier les jeux dans une vie équilibrée.",
+     "p": [
+      "Jouer sainement, c'est faire de la place au sommeil, au mouvement et aux gens.",
+      "C'est toi qui choisis quand jouer, pas le jeu qui choisit pour toi.",
+      "Se sentir bien après avoir joué est un signe simple d'équilibre."
+     ],
+     "q": "Comment te sens-tu après une session de jeu habituelle ?",
+     "c": "Note ton humeur de 1 à 5 après ta prochaine session et écris-la."
+    },
+    "it": {
+     "t": "Cos'è il gioco sano?",
+     "g": "Imparare a godersi i giochi dentro una vita equilibrata.",
+     "p": [
+      "Giocare sano significa che i giochi convivono con sonno, movimento e persone.",
+      "Sei tu a scegliere quando giocare, non il gioco a scegliere per te.",
+      "Sentirti bene dopo aver giocato è un semplice segno di equilibrio."
+     ],
+     "q": "Come ti senti dopo una tipica sessione di gioco?",
+     "c": "Dai un voto da 1 a 5 al tuo umore dopo la prossima sessione e annotalo."
+    },
+    "pt": {
+     "t": "O que é jogar de forma saudável?",
+     "g": "Aprender a gostar de jogos dentro de uma vida equilibrada.",
+     "p": [
+      "Jogar de forma saudável é ter jogos ao lado do sono, do movimento e das pessoas.",
+      "Tu escolhes quando jogar, em vez de o jogo escolher por ti.",
+      "Sentires-te bem depois de jogar é um sinal simples de equilíbrio."
+     ],
+     "q": "Como te sentes depois de uma sessão de jogo típica?",
+     "c": "Avalia o teu humor de 1 a 5 depois da próxima sessão e escreve."
+    },
+    "pt_BR": {
+     "t": "O que é jogar de forma saudável?",
+     "g": "Aprender a curtir os jogos dentro de uma vida equilibrada.",
+     "p": [
+      "Jogar de forma saudável é ter os jogos ao lado do sono, do movimento e das pessoas.",
+      "Você escolhe quando jogar, em vez de o jogo escolher por você.",
+      "Se sentir bem depois de jogar é um sinal simples de equilíbrio."
+     ],
+     "q": "Como você se sente depois de uma sessão de jogo típica?",
+     "c": "Avalie seu humor de 1 a 5 depois da próxima sessão e anote."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Planning your play time",
+     "g": "Find simple ways to decide how long to play and stick to it.",
+     "p": [
+      "Choose a start and end time before you press play.",
+      "A timer or alarm on your phone makes stopping easier.",
+      "Ending at a natural pause, like a level end, feels better than stopping mid-moment."
+     ],
+     "q": "How long is a good session for you?",
+     "c": "Set a timer for your next session and stop when it rings."
+    },
+    "de": {
+     "t": "Spielzeit planen",
+     "g": "Einfache Wege finden, die Spieldauer festzulegen und einzuhalten.",
+     "p": [
+      "Wähle Start- und Endzeit, bevor du auf Start drückst.",
+      "Ein Timer oder Wecker am Handy macht das Aufhören leichter.",
+      "An einer natürlichen Pause zu enden, etwa am Levelende, fühlt sich besser an als mittendrin."
+     ],
+     "q": "Wie lang ist eine gute Sitzung für dich?",
+     "c": "Stelle für deine nächste Sitzung einen Timer und höre auf, wenn er klingelt."
+    },
+    "es": {
+     "t": "Planificar tu tiempo de juego",
+     "g": "Encontrar formas simples de decidir cuánto jugar y cumplirlo.",
+     "p": [
+      "Elige una hora de inicio y de fin antes de pulsar jugar.",
+      "Un temporizador o alarma en el móvil facilita parar.",
+      "Terminar en una pausa natural, como el final de un nivel, sienta mejor que parar a medias."
+     ],
+     "q": "¿Cuánto dura una buena sesión para ti?",
+     "c": "Pon un temporizador en tu próxima sesión y para cuando suene."
+    },
+    "fr": {
+     "t": "Planifier son temps de jeu",
+     "g": "Trouver des moyens simples de décider combien de temps jouer et de s'y tenir.",
+     "p": [
+      "Choisis une heure de début et de fin avant d'appuyer sur jouer.",
+      "Un minuteur ou une alarme sur le téléphone aide à s'arrêter.",
+      "S'arrêter à une pause naturelle, comme la fin d'un niveau, est plus agréable qu'en plein milieu."
+     ],
+     "q": "Quelle durée te convient pour une bonne session ?",
+     "c": "Règle un minuteur pour ta prochaine session et arrête-toi quand il sonne."
+    },
+    "it": {
+     "t": "Pianificare il tempo di gioco",
+     "g": "Trovare modi semplici per decidere quanto giocare e rispettarlo.",
+     "p": [
+      "Scegli un orario di inizio e di fine prima di premere play.",
+      "Un timer o una sveglia sul telefono rende più facile fermarsi.",
+      "Fermarsi a una pausa naturale, come la fine di un livello, è meglio che a metà."
+     ],
+     "q": "Quanto dura una buona sessione per te?",
+     "c": "Imposta un timer per la prossima sessione e fermati quando suona."
+    },
+    "pt": {
+     "t": "Planear o tempo de jogo",
+     "g": "Encontrar formas simples de decidir quanto jogar e cumprir.",
+     "p": [
+      "Escolhe uma hora de início e de fim antes de carregar em jogar.",
+      "Um temporizador ou alarme no telemóvel facilita parar.",
+      "Terminar numa pausa natural, como o fim de um nível, sabe melhor do que parar a meio."
+     ],
+     "q": "Quanto dura uma boa sessão para ti?",
+     "c": "Põe um temporizador na tua próxima sessão e pára quando tocar."
+    },
+    "pt_BR": {
+     "t": "Planejar o tempo de jogo",
+     "g": "Encontrar formas simples de decidir quanto jogar e cumprir.",
+     "p": [
+      "Escolha uma hora de início e de fim antes de apertar jogar.",
+      "Um timer ou alarme no celular facilita parar.",
+      "Terminar numa pausa natural, como o fim de uma fase, é melhor do que parar no meio."
+     ],
+     "q": "Quanto dura uma boa sessão para você?",
+     "c": "Coloque um timer na sua próxima sessão e pare quando tocar."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Taking breaks",
+     "g": "Learn why short breaks help your eyes, back and mood.",
+     "p": [
+      "A short break every 30 to 60 minutes lets your body reset.",
+      "Stand up, drink water, look out of a window and move a little.",
+      "You often return to the game with better focus."
+     ],
+     "q": "What would you like to do during a break?",
+     "c": "Take a two-minute break in your next session and walk to another room."
+    },
+    "de": {
+     "t": "Pausen machen",
+     "g": "Lernen, warum kurze Pausen Augen, Rücken und Stimmung guttun.",
+     "p": [
+      "Eine kurze Pause alle 30 bis 60 Minuten lässt deinen Körper zurücksetzen.",
+      "Steh auf, trink Wasser, schau aus dem Fenster und beweg dich ein wenig.",
+      "Oft kehrst du mit besserer Konzentration zum Spiel zurück."
+     ],
+     "q": "Was möchtest du in einer Pause tun?",
+     "c": "Mache in deiner nächsten Sitzung zwei Minuten Pause und geh in einen anderen Raum."
+    },
+    "es": {
+     "t": "Hacer pausas",
+     "g": "Aprender por qué las pausas cortas ayudan a tus ojos, espalda y ánimo.",
+     "p": [
+      "Una pausa breve cada 30 a 60 minutos deja que tu cuerpo se reinicie.",
+      "Levántate, bebe agua, mira por la ventana y muévete un poco.",
+      "A menudo vuelves al juego con mejor concentración."
+     ],
+     "q": "¿Qué te gustaría hacer durante una pausa?",
+     "c": "Haz una pausa de dos minutos en tu próxima sesión y camina a otra habitación."
+    },
+    "fr": {
+     "t": "Faire des pauses",
+     "g": "Comprendre pourquoi de courtes pauses font du bien aux yeux, au dos et à l'humeur.",
+     "p": [
+      "Une courte pause toutes les 30 à 60 minutes laisse le corps se réinitialiser.",
+      "Lève-toi, bois de l'eau, regarde par la fenêtre et bouge un peu.",
+      "Tu reviens souvent au jeu avec une meilleure concentration."
+     ],
+     "q": "Que voudrais-tu faire pendant une pause ?",
+     "c": "Fais une pause de deux minutes à ta prochaine session et marche jusqu'à une autre pièce."
+    },
+    "it": {
+     "t": "Fare pause",
+     "g": "Capire perché le pause brevi fanno bene a occhi, schiena e umore.",
+     "p": [
+      "Una breve pausa ogni 30-60 minuti permette al corpo di ripartire.",
+      "Alzati, bevi acqua, guarda fuori dalla finestra e muoviti un po'.",
+      "Spesso torni al gioco con una concentrazione migliore."
+     ],
+     "q": "Cosa ti piacerebbe fare durante una pausa?",
+     "c": "Fai una pausa di due minuti nella prossima sessione e vai in un'altra stanza."
+    },
+    "pt": {
+     "t": "Fazer pausas",
+     "g": "Perceber porque as pausas curtas fazem bem aos olhos, às costas e ao humor.",
+     "p": [
+      "Uma pausa curta a cada 30 a 60 minutos deixa o corpo reiniciar.",
+      "Levanta-te, bebe água, olha pela janela e mexe-te um pouco.",
+      "Muitas vezes voltas ao jogo com melhor concentração."
+     ],
+     "q": "O que gostarias de fazer durante uma pausa?",
+     "c": "Faz uma pausa de dois minutos na próxima sessão e vai a outra divisão."
+    },
+    "pt_BR": {
+     "t": "Fazer pausas",
+     "g": "Entender por que as pausas curtas fazem bem aos olhos, às costas e ao humor.",
+     "p": [
+      "Uma pausa curta a cada 30 a 60 minutos deixa o corpo reiniciar.",
+      "Levante, beba água, olhe pela janela e se mexa um pouco.",
+      "Muitas vezes você volta ao jogo com mais concentração."
+     ],
+     "q": "O que você gostaria de fazer durante uma pausa?",
+     "c": "Faça uma pausa de dois minutos na próxima sessão e vá a outro cômodo."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eye care for gamers",
+     "g": "Learn blinking, distance, brightness and the 20-20-20 habit.",
+     "p": [
+      "We blink less when we stare at screens, which can dry our eyes.",
+      "The 20-20-20 habit: every 20 minutes, look 20 feet or 6 metres away for 20 seconds.",
+      "Match screen brightness to the room so it is not too bright or too dark."
+     ],
+     "q": "Do your eyes ever feel tired after playing?",
+     "c": "Try the 20-20-20 habit once today and blink slowly ten times."
+    },
+    "de": {
+     "t": "Augenpflege für Spieler",
+     "g": "Blinzeln, Abstand, Helligkeit und die 20-20-20-Regel kennenlernen.",
+     "p": [
+      "Wir blinzeln vor Bildschirmen weniger, was die Augen austrocknen kann.",
+      "Die 20-20-20-Regel: Schau alle 20 Minuten 20 Sekunden lang 6 Meter weit weg.",
+      "Passe die Bildschirmhelligkeit an den Raum an, nicht zu hell und nicht zu dunkel."
+     ],
+     "q": "Fühlen sich deine Augen nach dem Spielen manchmal müde an?",
+     "c": "Probiere die 20-20-20-Regel heute einmal und blinzle zehnmal langsam."
+    },
+    "es": {
+     "t": "Cuidado de los ojos para jugadores",
+     "g": "Aprender sobre parpadeo, distancia, brillo y el hábito 20-20-20.",
+     "p": [
+      "Parpadeamos menos ante las pantallas, lo que puede resecar los ojos.",
+      "El hábito 20-20-20: cada 20 minutos, mira a 6 metros durante 20 segundos.",
+      "Ajusta el brillo de la pantalla a la habitación, ni muy brillante ni muy oscuro."
+     ],
+     "q": "¿Se te cansan alguna vez los ojos tras jugar?",
+     "c": "Prueba hoy una vez el hábito 20-20-20 y parpadea despacio diez veces."
+    },
+    "fr": {
+     "t": "Soin des yeux pour joueurs",
+     "g": "Découvrir clignement, distance, luminosité et la règle des 20-20-20.",
+     "p": [
+      "On cligne moins des yeux devant un écran, ce qui peut les assécher.",
+      "La règle 20-20-20 : toutes les 20 minutes, regarde à 6 mètres pendant 20 secondes.",
+      "Adapte la luminosité de l'écran à la pièce, ni trop vive ni trop sombre."
+     ],
+     "q": "Tes yeux se fatiguent-ils parfois après avoir joué ?",
+     "c": "Essaie la règle 20-20-20 une fois aujourd'hui et cligne lentement dix fois."
+    },
+    "it": {
+     "t": "Cura degli occhi per i giocatori",
+     "g": "Conoscere battito di ciglia, distanza, luminosità e la regola 20-20-20.",
+     "p": [
+      "Davanti agli schermi sbattiamo meno le palpebre, e gli occhi possono seccarsi.",
+      "La regola 20-20-20: ogni 20 minuti guarda a 6 metri per 20 secondi.",
+      "Adatta la luminosità dello schermo alla stanza, né troppo forte né troppo scura."
+     ],
+     "q": "I tuoi occhi si stancano a volte dopo aver giocato?",
+     "c": "Prova oggi una volta la regola 20-20-20 e sbatti lentamente le palpebre dieci volte."
+    },
+    "pt": {
+     "t": "Cuidar dos olhos para jogadores",
+     "g": "Conhecer o pestanejar, a distância, o brilho e o hábito 20-20-20.",
+     "p": [
+      "Pestanejamos menos diante dos ecrãs, o que pode secar os olhos.",
+      "O hábito 20-20-20: a cada 20 minutos, olha a 6 metros durante 20 segundos.",
+      "Ajusta o brilho do ecrã à sala, nem demasiado forte nem demasiado escuro."
+     ],
+     "q": "Os teus olhos cansam-se por vezes depois de jogar?",
+     "c": "Experimenta hoje uma vez o hábito 20-20-20 e pestaneja devagar dez vezes."
+    },
+    "pt_BR": {
+     "t": "Cuidados com os olhos para jogadores",
+     "g": "Conhecer o piscar, a distância, o brilho e o hábito 20-20-20.",
+     "p": [
+      "Piscamos menos diante das telas, o que pode ressecar os olhos.",
+      "O hábito 20-20-20: a cada 20 minutos, olhe a 6 metros por 20 segundos.",
+      "Ajuste o brilho da tela ao ambiente, nem forte demais nem escuro demais."
+     ],
+     "q": "Seus olhos cansam às vezes depois de jogar?",
+     "c": "Experimente hoje uma vez o hábito 20-20-20 e pisque devagar dez vezes."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Posture and stretching",
+     "g": "Learn easy stretches for hands, wrists, neck and shoulders.",
+     "p": [
+      "Roll your shoulders back and gently tilt your head side to side.",
+      "Open and close your hands, and stretch your wrists in both directions.",
+      "Stand tall and reach up for a few slow breaths between games."
+     ],
+     "q": "Which part of your body feels tight after long sessions?",
+     "c": "Do a one-minute stretch routine right now, then repeat it after your next game."
+    },
+    "de": {
+     "t": "Haltung und Dehnen",
+     "g": "Einfache Dehnübungen für Hände, Handgelenke, Nacken und Schultern lernen.",
+     "p": [
+      "Rolle die Schultern nach hinten und neige den Kopf sanft zur Seite.",
+      "Öffne und schließe die Hände und dehne die Handgelenke in beide Richtungen.",
+      "Steh aufrecht und strecke dich zwischen Spielen für ein paar langsame Atemzüge."
+     ],
+     "q": "Welcher Körperteil fühlt sich nach langen Sitzungen verspannt an?",
+     "c": "Mache jetzt eine einminütige Dehnroutine und wiederhole sie nach deinem nächsten Spiel."
+    },
+    "es": {
+     "t": "Postura y estiramientos",
+     "g": "Aprender estiramientos fáciles para manos, muñecas, cuello y hombros.",
+     "p": [
+      "Gira los hombros hacia atrás e inclina la cabeza suavemente a los lados.",
+      "Abre y cierra las manos y estira las muñecas en ambas direcciones.",
+      "Ponte de pie, estírate hacia arriba y respira despacio entre partidas."
+     ],
+     "q": "¿Qué parte del cuerpo se siente tensa tras sesiones largas?",
+     "c": "Haz ahora una rutina de estiramientos de un minuto y repítela tras tu próxima partida."
+    },
+    "fr": {
+     "t": "Posture et étirements",
+     "g": "Apprendre des étirements faciles pour les mains, poignets, nuque et épaules.",
+     "p": [
+      "Roule les épaules vers l'arrière et incline doucement la tête de côté.",
+      "Ouvre et ferme les mains et étire les poignets dans les deux sens.",
+      "Tiens-toi droit et étire-toi vers le haut en respirant lentement entre deux parties."
+     ],
+     "q": "Quelle partie du corps est tendue après de longues sessions ?",
+     "c": "Fais maintenant une routine d'étirements d'une minute et refais-la après ta prochaine partie."
+    },
+    "it": {
+     "t": "Postura e stretching",
+     "g": "Imparare semplici esercizi di stretching per mani, polsi, collo e spalle.",
+     "p": [
+      "Ruota le spalle all'indietro e inclina piano la testa da un lato all'altro.",
+      "Apri e chiudi le mani e allunga i polsi in entrambe le direzioni.",
+      "Stai in piedi, allungati verso l'alto e respira lentamente tra una partita e l'altra."
+     ],
+     "q": "Quale parte del corpo si sente rigida dopo sessioni lunghe?",
+     "c": "Fai ora una routine di stretching di un minuto e ripetila dopo la prossima partita."
+    },
+    "pt": {
+     "t": "Postura e alongamentos",
+     "g": "Aprender alongamentos fáceis para mãos, pulsos, pescoço e ombros.",
+     "p": [
+      "Roda os ombros para trás e inclina a cabeça suavemente para os lados.",
+      "Abre e fecha as mãos e alonga os pulsos nos dois sentidos.",
+      "Fica de pé, estica-te para cima e respira devagar entre partidas."
+     ],
+     "q": "Que parte do corpo fica tensa depois de sessões longas?",
+     "c": "Faz agora uma rotina de alongamentos de um minuto e repete depois da próxima partida."
+    },
+    "pt_BR": {
+     "t": "Postura e alongamentos",
+     "g": "Aprender alongamentos fáceis para mãos, punhos, pescoço e ombros.",
+     "p": [
+      "Gire os ombros para trás e incline a cabeça suavemente para os lados.",
+      "Abra e feche as mãos e alongue os punhos nos dois sentidos.",
+      "Fique em pé, estique-se para cima e respire devagar entre partidas."
+     ],
+     "q": "Que parte do corpo fica tensa depois de sessões longas?",
+     "c": "Faça agora uma rotina de alongamentos de um minuto e repita depois da próxima partida."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sleep and late-night gaming",
+     "g": "Learn how screens and excitement affect sleep and how to wind down.",
+     "p": [
+      "Bright screens and exciting games can keep your mind awake.",
+      "Stopping 30 to 60 minutes before bed helps your body prepare for sleep.",
+      "Dim lights, a calm song or a book make a gentle wind-down."
+     ],
+     "q": "What helps you relax before bed?",
+     "c": "Pick a calm routine for tonight and stop gaming a little earlier than usual."
+    },
+    "de": {
+     "t": "Schlaf und nächtliches Spielen",
+     "g": "Lernen, wie Bildschirme und Aufregung den Schlaf beeinflussen und wie man herunterfährt.",
+     "p": [
+      "Helle Bildschirme und aufregende Spiele können den Geist wachhalten.",
+      "30 bis 60 Minuten vor dem Schlafen aufzuhören hilft dem Körper, sich vorzubereiten.",
+      "Gedimmtes Licht, ein ruhiges Lied oder ein Buch sorgen für sanftes Abschalten."
+     ],
+     "q": "Was hilft dir, vor dem Schlafen zu entspannen?",
+     "c": "Wähle für heute Abend eine ruhige Routine und höre etwas früher als sonst auf zu spielen."
+    },
+    "es": {
+     "t": "Sueño y juego nocturno",
+     "g": "Aprender cómo las pantallas y la emoción afectan al sueño y cómo relajarse.",
+     "p": [
+      "Las pantallas brillantes y los juegos emocionantes pueden mantener la mente despierta.",
+      "Parar 30 a 60 minutos antes de dormir ayuda al cuerpo a prepararse.",
+      "Luces tenues, una canción tranquila o un libro hacen una calma suave."
+     ],
+     "q": "¿Qué te ayuda a relajarte antes de dormir?",
+     "c": "Elige una rutina tranquila para esta noche y deja de jugar un poco antes de lo habitual."
+    },
+    "fr": {
+     "t": "Sommeil et jeu tardif",
+     "g": "Comprendre comment écrans et excitation influencent le sommeil et comment décompresser.",
+     "p": [
+      "Les écrans lumineux et les jeux intenses peuvent garder l'esprit éveillé.",
+      "S'arrêter 30 à 60 minutes avant le coucher aide le corps à se préparer.",
+      "Lumière tamisée, chanson calme ou livre aident à se détendre en douceur."
+     ],
+     "q": "Qu'est-ce qui t'aide à te détendre avant de dormir ?",
+     "c": "Choisis une routine calme pour ce soir et arrête de jouer un peu plus tôt que d'habitude."
+    },
+    "it": {
+     "t": "Sonno e giochi a tarda notte",
+     "g": "Capire come schermi ed eccitazione influenzano il sonno e come rilassarsi.",
+     "p": [
+      "Schermi luminosi e giochi emozionanti possono tenere la mente sveglia.",
+      "Fermarsi 30-60 minuti prima di dormire aiuta il corpo a prepararsi.",
+      "Luci soffuse, una canzone calma o un libro aiutano a rilassarsi."
+     ],
+     "q": "Cosa ti aiuta a rilassarti prima di dormire?",
+     "c": "Scegli una routine calma per stasera e smetti di giocare un po' prima del solito."
+    },
+    "pt": {
+     "t": "Sono e jogar até tarde",
+     "g": "Perceber como os ecrãs e a excitação afetam o sono e como relaxar.",
+     "p": [
+      "Ecrãs brilhantes e jogos emocionantes podem manter a mente acordada.",
+      "Parar 30 a 60 minutos antes de dormir ajuda o corpo a preparar-se.",
+      "Luzes suaves, uma canção calma ou um livro fazem um relaxamento gentil."
+     ],
+     "q": "O que te ajuda a relaxar antes de dormir?",
+     "c": "Escolhe uma rotina calma para esta noite e pára de jogar um pouco mais cedo do que o normal."
+    },
+    "pt_BR": {
+     "t": "Sono e jogar até tarde",
+     "g": "Entender como as telas e a empolgação afetam o sono e como relaxar.",
+     "p": [
+      "Telas brilhantes e jogos empolgantes podem manter a mente acordada.",
+      "Parar 30 a 60 minutos antes de dormir ajuda o corpo a se preparar.",
+      "Luzes suaves, uma música calma ou um livro fazem um relaxamento gentil."
+     ],
+     "q": "O que ajuda você a relaxar antes de dormir?",
+     "c": "Escolha uma rotina calma para esta noite e pare de jogar um pouco mais cedo que o normal."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Snacks, water and energy",
+     "g": "Learn how to stay hydrated and choose snacks that keep you feeling good.",
+     "p": [
+      "Keep a glass of water next to you and sip regularly.",
+      "Fruit, nuts or yoghurt give steady energy compared with sugary snacks.",
+      "Eat real meals so you do not play on an empty stomach."
+     ],
+     "q": "What is your favourite game-time snack?",
+     "c": "Put a glass of water by your play spot today and finish it during the session."
+    },
+    "de": {
+     "t": "Snacks, Wasser und Energie",
+     "g": "Lernen, wie du hydriert bleibst und Snacks wählst, die dich gut fühlen lassen.",
+     "p": [
+      "Stelle ein Glas Wasser neben dich und trinke regelmäßig.",
+      "Obst, Nüsse oder Joghurt geben gleichmäßige Energie, anders als Zuckersnacks.",
+      "Iss richtige Mahlzeiten, damit du nicht mit leerem Magen spielst."
+     ],
+     "q": "Was ist dein liebster Snack beim Spielen?",
+     "c": "Stelle heute ein Glas Wasser an deinen Spielplatz und trinke es während der Sitzung aus."
+    },
+    "es": {
+     "t": "Snacks, agua y energía",
+     "g": "Aprender a mantenerte hidratado y elegir snacks que te sienten bien.",
+     "p": [
+      "Ten un vaso de agua a mano y bebe a sorbos con regularidad.",
+      "Fruta, frutos secos o yogur dan energía estable frente a los snacks azucarados.",
+      "Haz comidas de verdad para no jugar con el estómago vacío."
+     ],
+     "q": "¿Cuál es tu snack favorito para jugar?",
+     "c": "Pon hoy un vaso de agua junto a tu sitio de juego y termínalo durante la sesión."
+    },
+    "fr": {
+     "t": "Collations, eau et énergie",
+     "g": "Apprendre à rester hydraté et à choisir des collations qui font du bien.",
+     "p": [
+      "Garde un verre d'eau à portée de main et bois régulièrement.",
+      "Fruits, noix ou yaourt donnent une énergie stable, contrairement aux collations sucrées.",
+      "Prends de vrais repas pour ne pas jouer le ventre vide."
+     ],
+     "q": "Quelle est ta collation préférée pendant le jeu ?",
+     "c": "Pose aujourd'hui un verre d'eau près de ton coin de jeu et finis-le pendant la session."
+    },
+    "it": {
+     "t": "Spuntini, acqua ed energia",
+     "g": "Imparare a restare idratato e a scegliere spuntini che fanno stare bene.",
+     "p": [
+      "Tieni un bicchiere d'acqua accanto a te e bevi regolarmente.",
+      "Frutta, noci o yogurt danno energia costante rispetto agli snack zuccherati.",
+      "Fai pasti veri per non giocare a stomaco vuoto."
+     ],
+     "q": "Qual è il tuo spuntino preferito mentre giochi?",
+     "c": "Metti oggi un bicchiere d'acqua accanto alla tua postazione e finiscilo durante la sessione."
+    },
+    "pt": {
+     "t": "Lanches, água e energia",
+     "g": "Aprender a manter-te hidratado e a escolher lanches que te façam sentir bem.",
+     "p": [
+      "Tem um copo de água ao lado e bebe com regularidade.",
+      "Fruta, frutos secos ou iogurte dão energia estável, ao contrário dos lanches açucarados.",
+      "Faz refeições a sério para não jogares de estômago vazio."
+     ],
+     "q": "Qual é o teu lanche favorito para jogar?",
+     "c": "Põe hoje um copo de água junto ao teu sítio de jogo e acaba-o durante a sessão."
+    },
+    "pt_BR": {
+     "t": "Lanches, água e energia",
+     "g": "Aprender a se manter hidratado e a escolher lanches que façam você se sentir bem.",
+     "p": [
+      "Tenha um copo de água ao lado e beba com regularidade.",
+      "Fruta, castanhas ou iogurte dão energia estável, ao contrário dos lanches açucarados.",
+      "Faça refeições de verdade para não jogar de estômago vazio."
+     ],
+     "q": "Qual é o seu lanche favorito para jogar?",
+     "c": "Coloque hoje um copo de água perto do seu lugar de jogo e termine durante a sessão."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Handling frustration",
+     "g": "Learn what to do when a level feels impossible.",
+     "p": [
+      "Frustration is normal, and every player meets it sooner or later.",
+      "Pause, breathe slowly, and ask what you could try differently.",
+      "Coming back after a walk often solves what stubborn retrying could not."
+     ],
+     "q": "What helps you cool down when a game is hard?",
+     "c": "Next time you feel stuck, take five slow breaths before the next try."
+    },
+    "de": {
+     "t": "Mit Frust umgehen",
+     "g": "Lernen, was man tut, wenn ein Level unmöglich scheint.",
+     "p": [
+      "Frust ist normal, und jeder Spieler erlebt ihn früher oder später.",
+      "Pausiere, atme langsam und frage dich, was du anders versuchen könntest.",
+      "Nach einem Spaziergang gelingt oft, was sturer Neuversuch nicht schaffte."
+     ],
+     "q": "Was hilft dir, dich zu beruhigen, wenn ein Spiel schwer ist?",
+     "c": "Atme das nächste Mal, wenn du feststeckst, fünfmal langsam durch, bevor du es erneut versuchst."
+    },
+    "es": {
+     "t": "Gestionar la frustración",
+     "g": "Aprender qué hacer cuando un nivel parece imposible.",
+     "p": [
+      "La frustración es normal y todo jugador la vive tarde o temprano.",
+      "Haz una pausa, respira despacio y pregunta qué podrías probar distinto.",
+      "Volver tras un paseo suele resolver lo que el reintento obstinado no pudo."
+     ],
+     "q": "¿Qué te ayuda a calmarte cuando un juego es difícil?",
+     "c": "La próxima vez que te atasques, respira lento cinco veces antes de reintentar."
+    },
+    "fr": {
+     "t": "Gérer la frustration",
+     "g": "Apprendre quoi faire quand un niveau semble impossible.",
+     "p": [
+      "La frustration est normale, tous les joueurs la rencontrent un jour.",
+      "Fais une pause, respire lentement et demande-toi ce que tu pourrais essayer autrement.",
+      "Revenir après une promenade résout souvent ce que l'entêtement n'a pas réglé."
+     ],
+     "q": "Qu'est-ce qui t'aide à te calmer quand un jeu est difficile ?",
+     "c": "La prochaine fois que tu bloques, respire lentement cinq fois avant de réessayer."
+    },
+    "it": {
+     "t": "Gestire la frustrazione",
+     "g": "Imparare cosa fare quando un livello sembra impossibile.",
+     "p": [
+      "La frustrazione è normale e ogni giocatore la incontra prima o poi.",
+      "Fai una pausa, respira lentamente e chiediti cosa potresti provare di diverso.",
+      "Tornare dopo una passeggiata risolve spesso ciò che l'ostinazione non risolveva."
+     ],
+     "q": "Cosa ti aiuta a calmarti quando un gioco è difficile?",
+     "c": "La prossima volta che ti blocchi, fai cinque respiri lenti prima di riprovare."
+    },
+    "pt": {
+     "t": "Lidar com a frustração",
+     "g": "Aprender o que fazer quando um nível parece impossível.",
+     "p": [
+      "A frustração é normal e todo jogador a sente mais cedo ou mais tarde.",
+      "Faz uma pausa, respira devagar e pergunta o que poderias tentar de forma diferente.",
+      "Voltar depois de um passeio resolve muitas vezes o que a teimosia não resolveu."
+     ],
+     "q": "O que te ajuda a acalmar quando um jogo é difícil?",
+     "c": "Da próxima vez que ficares preso, respira devagar cinco vezes antes de tentar de novo."
+    },
+    "pt_BR": {
+     "t": "Lidar com a frustração",
+     "g": "Aprender o que fazer quando uma fase parece impossível.",
+     "p": [
+      "A frustração é normal e todo jogador sente isso mais cedo ou mais tarde.",
+      "Faça uma pausa, respire devagar e pergunte o que poderia tentar de forma diferente.",
+      "Voltar depois de uma caminhada costuma resolver o que a teimosia não resolveu."
+     ],
+     "q": "O que ajuda você a se acalmar quando um jogo é difícil?",
+     "c": "Da próxima vez que travar, respire devagar cinco vezes antes de tentar de novo."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gaming and mood",
+     "g": "Notice how different games make you feel and pick ones that lift you up.",
+     "p": [
+      "Fast games can feel thrilling, while gentle ones feel calming.",
+      "Choose games to match your mood: energy, focus or rest.",
+      "If a game leaves you tense most of the time, try something lighter."
+     ],
+     "q": "Which game reliably puts you in a good mood?",
+     "c": "Write a small mood menu: one game for energy, one for calm and one for friends."
+    },
+    "de": {
+     "t": "Spielen und Stimmung",
+     "g": "Bemerken, wie verschiedene Spiele dich fühlen lassen, und aufbauende wählen.",
+     "p": [
+      "Schnelle Spiele können aufregend wirken, sanfte beruhigend.",
+      "Wähle Spiele passend zur Stimmung: Energie, Fokus oder Ruhe.",
+      "Wenn ein Spiel dich meist angespannt zurücklässt, probiere etwas Leichteres."
+     ],
+     "q": "Welches Spiel versetzt dich zuverlässig in gute Laune?",
+     "c": "Schreibe ein kleines Stimmungsmenü: ein Spiel für Energie, eines für Ruhe, eines für Freunde."
+    },
+    "es": {
+     "t": "Juego y estado de ánimo",
+     "g": "Notar cómo te hacen sentir distintos juegos y elegir los que te animan.",
+     "p": [
+      "Los juegos rápidos pueden emocionar y los suaves calmar.",
+      "Elige juegos según tu ánimo: energía, concentración o descanso.",
+      "Si un juego te deja tenso casi siempre, prueba algo más ligero."
+     ],
+     "q": "¿Qué juego te pone siempre de buen humor?",
+     "c": "Escribe un mini menú de ánimo: un juego para energía, uno para calma y uno para amigos."
+    },
+    "fr": {
+     "t": "Jeu et humeur",
+     "g": "Remarquer comment les jeux te font sentir et choisir ceux qui te font du bien.",
+     "p": [
+      "Les jeux rapides peuvent être excitants, les doux plus apaisants.",
+      "Choisis tes jeux selon ton humeur : énergie, concentration ou repos.",
+      "Si un jeu te laisse tendu la plupart du temps, essaie quelque chose de plus léger."
+     ],
+     "q": "Quel jeu te met toujours de bonne humeur ?",
+     "c": "Écris un mini menu d'humeur : un jeu pour l'énergie, un pour le calme, un pour les amis."
+    },
+    "it": {
+     "t": "Gioco e umore",
+     "g": "Notare come ti fanno sentire i vari giochi e scegliere quelli che ti sollevano.",
+     "p": [
+      "I giochi veloci possono emozionare, quelli dolci calmare.",
+      "Scegli i giochi in base all'umore: energia, concentrazione o riposo.",
+      "Se un gioco ti lascia teso quasi sempre, prova qualcosa di più leggero."
+     ],
+     "q": "Quale gioco ti mette sempre di buon umore?",
+     "c": "Scrivi un mini menu d'umore: un gioco per l'energia, uno per la calma e uno per gli amici."
+    },
+    "pt": {
+     "t": "Jogo e humor",
+     "g": "Notar como os jogos te fazem sentir e escolher os que te animam.",
+     "p": [
+      "Jogos rápidos podem entusiasmar e os suaves acalmar.",
+      "Escolhe jogos conforme o humor: energia, concentração ou descanso.",
+      "Se um jogo te deixa tenso quase sempre, experimenta algo mais leve."
+     ],
+     "q": "Que jogo te põe sempre bem-disposto?",
+     "c": "Escreve um mini menu de humor: um jogo para energia, um para calma e um para amigos."
+    },
+    "pt_BR": {
+     "t": "Jogo e humor",
+     "g": "Notar como os jogos fazem você se sentir e escolher os que animam.",
+     "p": [
+      "Jogos rápidos podem empolgar e os suaves acalmar.",
+      "Escolha jogos conforme o humor: energia, concentração ou descanso.",
+      "Se um jogo deixa você tenso quase sempre, experimente algo mais leve."
+     ],
+     "q": "Que jogo sempre deixa você de bom humor?",
+     "c": "Escreva um mini cardápio de humor: um jogo para energia, um para calma e um para amigos."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Balancing games with other hobbies",
+     "g": "Make room for sports, reading, friends and games in the same week.",
+     "p": [
+      "A weekly plan helps every activity get its place.",
+      "Mix screen time with movement, creativity and time outdoors.",
+      "Hobbies can feed each other, such as a sport inspiring a game or a book inspiring a story."
+     ],
+     "q": "Which hobby besides gaming would you like more time for?",
+     "c": "Sketch a simple week plan with one slot each for play, movement and a friend."
+    },
+    "de": {
+     "t": "Spiele und andere Hobbys ausbalancieren",
+     "g": "Platz für Sport, Lesen, Freunde und Spiele in derselben Woche schaffen.",
+     "p": [
+      "Ein Wochenplan hilft, dass jede Aktivität ihren Platz bekommt.",
+      "Mische Bildschirmzeit mit Bewegung, Kreativität und Zeit draußen.",
+      "Hobbys können sich gegenseitig nähren, etwa Sport als Spielidee oder ein Buch als Geschichtenquelle."
+     ],
+     "q": "Für welches Hobby außer Spielen hättest du gern mehr Zeit?",
+     "c": "Skizziere einen einfachen Wochenplan mit je einem Platz für Spiel, Bewegung und einen Freund."
+    },
+    "es": {
+     "t": "Equilibrar juegos y otras aficiones",
+     "g": "Hacer sitio a deporte, lectura, amigos y juegos en la misma semana.",
+     "p": [
+      "Un plan semanal ayuda a que cada actividad tenga su lugar.",
+      "Mezcla tiempo de pantalla con movimiento, creatividad y aire libre.",
+      "Las aficiones pueden alimentarse entre sí, como un deporte que inspira un juego o un libro una historia."
+     ],
+     "q": "¿Qué afición aparte de los juegos te gustaría disfrutar más?",
+     "c": "Esboza un plan semanal simple con un hueco para jugar, moverte y ver a un amigo."
+    },
+    "fr": {
+     "t": "Équilibrer jeux et autres loisirs",
+     "g": "Faire de la place au sport, à la lecture, aux amis et aux jeux dans la même semaine.",
+     "p": [
+      "Un planning hebdomadaire aide chaque activité à trouver sa place.",
+      "Mélange temps d'écran, mouvement, créativité et plein air.",
+      "Les loisirs se nourrissent entre eux : un sport inspire un jeu, un livre une histoire."
+     ],
+     "q": "À quel loisir autre que le jeu aimerais-tu consacrer plus de temps ?",
+     "c": "Esquisse une semaine simple avec un créneau pour jouer, bouger et voir un ami."
+    },
+    "it": {
+     "t": "Bilanciare giochi e altri hobby",
+     "g": "Fare spazio a sport, lettura, amici e giochi nella stessa settimana.",
+     "p": [
+      "Un piano settimanale aiuta ogni attività ad avere il suo posto.",
+      "Alterna tempo davanti allo schermo con movimento, creatività e aria aperta.",
+      "Gli hobby si alimentano a vicenda: uno sport ispira un gioco, un libro una storia."
+     ],
+     "q": "A quale hobby oltre ai giochi vorresti dedicare più tempo?",
+     "c": "Abbozza una settimana semplice con uno spazio per giocare, muoverti e vedere un amico."
+    },
+    "pt": {
+     "t": "Equilibrar jogos e outros passatempos",
+     "g": "Dar lugar a desporto, leitura, amigos e jogos na mesma semana.",
+     "p": [
+      "Um plano semanal ajuda cada atividade a ter o seu lugar.",
+      "Mistura tempo de ecrã com movimento, criatividade e ar livre.",
+      "Os passatempos alimentam-se uns aos outros, como um desporto que inspira um jogo ou um livro uma história."
+     ],
+     "q": "Que passatempo além dos jogos gostarias de ter mais tempo para fazer?",
+     "c": "Esboça um plano semanal simples com um espaço para jogar, mexer-te e ver um amigo."
+    },
+    "pt_BR": {
+     "t": "Equilibrar jogos e outros hobbies",
+     "g": "Dar espaço a esporte, leitura, amigos e jogos na mesma semana.",
+     "p": [
+      "Um plano semanal ajuda cada atividade a ter seu lugar.",
+      "Misture tempo de tela com movimento, criatividade e ar livre.",
+      "Os hobbies se alimentam entre si, como um esporte que inspira um jogo ou um livro uma história."
+     ],
+     "q": "Que hobby além dos jogos você gostaria de ter mais tempo para fazer?",
+     "c": "Esboce um plano semanal simples com um espaço para jogar, se mexer e ver um amigo."
+    }
+   }
+  }
+ ]
+}

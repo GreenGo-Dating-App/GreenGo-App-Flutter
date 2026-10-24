@@ -1,0 +1,835 @@
+{
+ "topic": "pets",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Come when called",
+     "g": "Build a recall with great rewards and safe practice.",
+     "p": [
+      "Use your tastiest treats and a happy voice every time your dog comes.",
+      "Start indoors or in a secure garden, on a long lead if needed.",
+      "Never call your dog to end the fun or to scold; make coming back wonderful."
+     ],
+     "q": "How well does your dog come when called today?",
+     "c": "Practise three recalls at home and reward each with a jackpot of treats."
+    },
+    "de": {
+     "t": "Rückruf: Komm, wenn ich rufe",
+     "g": "Baue einen Rückruf mit tollen Belohnungen und sicherem Üben auf.",
+     "p": [
+      "Nimm die leckersten Leckerli und eine fröhliche Stimme bei jedem Kommen.",
+      "Beginne drinnen oder im gesicherten Garten, bei Bedarf an der langen Leine.",
+      "Ruf deinen Hund nie, um den Spaß zu beenden oder zu schimpfen; Zurückkommen soll toll sein."
+     ],
+     "q": "Wie gut kommt dein Hund heute auf Ruf?",
+     "c": "Übe drei Rückrufe zu Hause und belohne jeden mit einem Leckerli-Jackpot."
+    },
+    "es": {
+     "t": "Ven cuando te llamen",
+     "g": "Construye una llamada fiable con grandes premios y práctica segura.",
+     "p": [
+      "Usa tus premios más ricos y una voz alegre cada vez que venga.",
+      "Empieza en casa o en un jardín cerrado, con correa larga si hace falta.",
+      "Nunca lo llames para acabar con la diversión o regañar; volver debe ser genial."
+     ],
+     "q": "¿Qué tal acude hoy tu perro cuando lo llamas?",
+     "c": "Practica tres llamadas en casa y premia cada una con un montón de premios."
+    },
+    "fr": {
+     "t": "Rappel : viens quand on t'appelle",
+     "g": "Construis un rappel fiable avec de super récompenses et un entraînement sûr.",
+     "p": [
+      "Utilise tes friandises les plus délicieuses et une voix joyeuse à chaque retour.",
+      "Commence à l'intérieur ou dans un jardin clos, avec une longe si besoin.",
+      "N'appelle jamais ton chien pour arrêter le jeu ou gronder; revenir doit être génial."
+     ],
+     "q": "Comment ton chien revient-il aujourd'hui quand tu l'appelles ?",
+     "c": "Entraîne trois rappels à la maison et offre une pluie de friandises à chacun."
+    },
+    "it": {
+     "t": "Richiamo: vieni quando ti chiamo",
+     "g": "Costruisci un richiamo affidabile con ottimi premi e pratica sicura.",
+     "p": [
+      "Usa i premietti più buoni e una voce allegra ogni volta che viene.",
+      "Inizia in casa o in un giardino recintato, con lunghina se serve.",
+      "Non chiamare mai il cane per finire il gioco o sgridarlo; tornare deve essere bellissimo."
+     ],
+     "q": "Quanto bene viene oggi il tuo cane quando lo chiami?",
+     "c": "Esercita tre richiami in casa e premia ciascuno con una pioggia di premietti."
+    },
+    "pt": {
+     "t": "Vem quando te chamam",
+     "g": "Constrói um chamamento fiável com ótimas recompensas e prática segura.",
+     "p": [
+      "Usa os petiscos mais saborosos e uma voz alegre sempre que ele vier.",
+      "Começa em casa ou num jardim vedado, com trela longa se necessário.",
+      "Nunca chames o cão para acabar a diversão ou ralhar; voltar deve ser ótimo."
+     ],
+     "q": "Como responde hoje o teu cão quando o chamas?",
+     "c": "Pratica três chamamentos em casa e recompensa cada um com muitos petiscos."
+    },
+    "pt_BR": {
+     "t": "Vem quando chamar",
+     "g": "Construa um chamado confiável com ótimas recompensas e prática segura.",
+     "p": [
+      "Use os petiscos mais gostosos e uma voz alegre sempre que ele vier.",
+      "Comece em casa ou em um quintal cercado, com guia longa se precisar.",
+      "Nunca chame o cão para acabar a diversão ou brigar; voltar deve ser ótimo."
+     ],
+     "q": "Como o seu cão responde hoje quando você chama?",
+     "c": "Pratique três chamados em casa e recompense cada um com vários petiscos."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Loose-lead walking basics",
+     "g": "Reward a slack lead and walk together calmly.",
+     "p": [
+      "Reward your dog whenever the lead hangs loose beside you.",
+      "If the lead goes tight, stop calmly and wait, then move on when it loosens.",
+      "Short, patient sessions work better than long frustrating ones."
+     ],
+     "q": "Does your dog pull on walks, and when most?",
+     "c": "Practise ten steps of loose-lead walking with a treat for each good stretch."
+    },
+    "de": {
+     "t": "Lockere Leine: die Grundlagen",
+     "g": "Belohne die lockere Leine und geht ruhig gemeinsam.",
+     "p": [
+      "Belohne deinen Hund, wann immer die Leine locker neben dir hängt.",
+      "Wird die Leine straff, bleib ruhig stehen und geh weiter, sobald sie locker wird.",
+      "Kurze, geduldige Einheiten wirken besser als lange frustrierende."
+     ],
+     "q": "Zieht dein Hund an der Leine, und wann am meisten?",
+     "c": "Übe zehn Schritte an lockerer Leine mit einem Leckerli für jedes gute Stück."
+    },
+    "es": {
+     "t": "Pasear con correa floja",
+     "g": "Premia la correa floja y paseen juntos con calma.",
+     "p": [
+      "Premia a tu perro cada vez que la correa cuelgue floja a tu lado.",
+      "Si se tensa, párate con calma y espera; sigue cuando se afloje.",
+      "Sesiones cortas y pacientes funcionan mejor que largas y frustrantes."
+     ],
+     "q": "¿Tira tu perro en los paseos y cuándo más?",
+     "c": "Practica diez pasos con correa floja y un premio por cada buen tramo."
+    },
+    "fr": {
+     "t": "Marcher en laisse relâchée",
+     "g": "Récompense la laisse détendue et marchez ensemble calmement.",
+     "p": [
+      "Récompense ton chien chaque fois que la laisse pend souplement à tes côtés.",
+      "Si elle se tend, arrête-toi calmement et repars quand elle se détend.",
+      "Des séances courtes et patientes marchent mieux que de longues et frustrantes."
+     ],
+     "q": "Ton chien tire-t-il en balade, et surtout quand ?",
+     "c": "Entraîne dix pas en laisse relâchée avec une friandise pour chaque bon passage."
+    },
+    "it": {
+     "t": "Camminare al guinzaglio morbido",
+     "g": "Premia il guinzaglio morbido e camminate insieme con calma.",
+     "p": [
+      "Premia il cane ogni volta che il guinzaglio pende morbido accanto a te.",
+      "Se si tende, fermati con calma e riparti quando si allenta.",
+      "Sessioni brevi e pazienti funzionano meglio di lunghe e frustranti."
+     ],
+     "q": "Il tuo cane tira in passeggiata, e quando di più?",
+     "c": "Esercita dieci passi con guinzaglio morbido e un premietto per ogni buon tratto."
+    },
+    "pt": {
+     "t": "Caminhar com a trela solta",
+     "g": "Recompensa a trela solta e caminhem juntos com calma.",
+     "p": [
+      "Recompensa o teu cão sempre que a trela fica solta a teu lado.",
+      "Se esticar, para com calma e espera; segue quando afrouxar.",
+      "Sessões curtas e pacientes funcionam melhor do que longas e frustrantes."
+     ],
+     "q": "O teu cão puxa nos passeios, e quando mais?",
+     "c": "Pratica dez passos com a trela solta e um petisco por cada bom troço."
+    },
+    "pt_BR": {
+     "t": "Caminhar com a guia solta",
+     "g": "Recompense a guia solta e caminhem juntos com calma.",
+     "p": [
+      "Recompense o seu cão sempre que a guia fica solta ao seu lado.",
+      "Se esticar, pare com calma e espere; siga quando afrouxar.",
+      "Sessões curtas e pacientes funcionam melhor que longas e frustrantes."
+     ],
+     "q": "O seu cão puxa nos passeios, e quando mais?",
+     "c": "Pratique dez passos com a guia solta e um petisco por cada bom trecho."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Puppy socialisation",
+     "g": "Introduce the world gently and positively.",
+     "p": [
+      "In the early months, let puppies meet friendly people, sounds and places at their own pace.",
+      "Pair new things with treats so they link them to good feelings.",
+      "Never force a frightened puppy; ask your vet about safe timing with vaccines."
+     ],
+     "q": "What new things could you introduce slowly?",
+     "c": "List five new sounds or places and pick one to show gently this week."
+    },
+    "de": {
+     "t": "Welpensozialisierung",
+     "g": "Zeige die Welt sanft und positiv.",
+     "p": [
+      "In den ersten Monaten lernen Welpen freundliche Menschen, Geräusche und Orte in eigenem Tempo kennen.",
+      "Verbinde Neues mit Leckerli, damit es mit guten Gefühlen verknüpft wird.",
+      "Dränge einen ängstlichen Welpen nie; frag den Tierarzt nach dem sicheren Zeitpunkt wegen der Impfungen."
+     ],
+     "q": "Welche neuen Dinge könntest du langsam vorstellen?",
+     "c": "Liste fünf neue Geräusche oder Orte und wähle einen, den du diese Woche sanft zeigst."
+    },
+    "es": {
+     "t": "Socialización del cachorro",
+     "g": "Presenta el mundo con suavidad y de forma positiva.",
+     "p": [
+      "En los primeros meses, deja que el cachorro conozca personas amables, sonidos y lugares a su ritmo.",
+      "Une lo nuevo con premios para que lo asocie a buenas sensaciones.",
+      "Nunca fuerces a un cachorro asustado; consulta al veterinario el momento seguro por las vacunas."
+     ],
+     "q": "¿Qué cosas nuevas podrías presentar poco a poco?",
+     "c": "Anota cinco sonidos o lugares nuevos y elige uno para mostrar con calma esta semana."
+    },
+    "fr": {
+     "t": "Socialisation du chiot",
+     "g": "Présente le monde en douceur et de façon positive.",
+     "p": [
+      "Les premiers mois, laisse le chiot découvrir personnes aimables, bruits et lieux à son rythme.",
+      "Associe les nouveautés à des friandises pour créer de bonnes émotions.",
+      "Ne force jamais un chiot effrayé; demande au vétérinaire le bon moment selon les vaccins."
+     ],
+     "q": "Quelles nouveautés pourrais-tu présenter lentement ?",
+     "c": "Liste cinq nouveaux bruits ou lieux et choisis-en un à montrer doucement cette semaine."
+    },
+    "it": {
+     "t": "Socializzazione del cucciolo",
+     "g": "Presenta il mondo con dolcezza e in modo positivo.",
+     "p": [
+      "Nei primi mesi lascia che il cucciolo conosca persone gentili, suoni e luoghi coi suoi tempi.",
+      "Abbina le novità a premietti perché le colleghi a belle sensazioni.",
+      "Non forzare mai un cucciolo spaventato; chiedi al veterinario i tempi sicuri per i vaccini."
+     ],
+     "q": "Quali novità potresti presentare piano piano?",
+     "c": "Elenca cinque nuovi suoni o luoghi e scegline uno da mostrare con calma questa settimana."
+    },
+    "pt": {
+     "t": "Socialização do cachorro",
+     "g": "Apresenta o mundo com suavidade e de forma positiva.",
+     "p": [
+      "Nos primeiros meses, deixa o cachorro conhecer pessoas simpáticas, sons e locais ao seu ritmo.",
+      "Junta o que é novo a petiscos para o associar a boas sensações.",
+      "Nunca forces um cachorro assustado; pergunta ao veterinário o momento seguro por causa das vacinas."
+     ],
+     "q": "Que coisas novas poderias apresentar devagar?",
+     "c": "Anota cinco sons ou locais novos e escolhe um para mostrar com calma esta semana."
+    },
+    "pt_BR": {
+     "t": "Socialização do filhote",
+     "g": "Apresente o mundo com suavidade e de forma positiva.",
+     "p": [
+      "Nos primeiros meses, deixe o filhote conhecer pessoas simpáticas, sons e lugares no ritmo dele.",
+      "Una o que é novo a petiscos para ele associar a boas sensações.",
+      "Nunca force um filhote assustado; pergunte ao veterinário o momento seguro por causa das vacinas."
+     ],
+     "q": "Que coisas novas você poderia apresentar devagar?",
+     "c": "Anote cinco sons ou lugares novos e escolha um para mostrar com calma esta semana."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dog-to-dog greetings",
+     "g": "Learn polite introductions and when to give space.",
+     "p": [
+      "Greet on a loose lead, side by side, rather than head-on, and keep it brief.",
+      "Loose, bouncy bodies and play bows mean friendly play.",
+      "Stiff bodies, staring or growling mean give the dogs space calmly."
+     ],
+     "q": "How does your dog usually greet other dogs?",
+     "c": "Watch two dogs meet from a distance and note the friendly signals."
+    },
+    "de": {
+     "t": "Hundebegegnungen",
+     "g": "Lerne höfliche Begrüßungen und wann Abstand gut ist.",
+     "p": [
+      "Begrüßt euch an lockerer Leine, nebeneinander statt frontal, und halte es kurz.",
+      "Lockere, hüpfende Körper und Spielverbeugungen bedeuten freundliches Spiel.",
+      "Steife Körper, Anstarren oder Knurren heißen: ruhig Abstand schaffen."
+     ],
+     "q": "Wie begrüßt dein Hund meist andere Hunde?",
+     "c": "Beobachte aus der Ferne zwei Hunde beim Treffen und notiere die freundlichen Signale."
+    },
+    "es": {
+     "t": "Saludos entre perros",
+     "g": "Aprende presentaciones educadas y cuándo dar espacio.",
+     "p": [
+      "Salúdense con correa floja, lado a lado y no de frente, y que sea breve.",
+      "Cuerpos sueltos y saltarines y reverencias de juego indican juego amistoso.",
+      "Cuerpos rígidos, miradas fijas o gruñidos piden dar espacio con calma."
+     ],
+     "q": "¿Cómo suele saludar tu perro a otros perros?",
+     "c": "Observa desde lejos a dos perros al encontrarse y anota las señales amistosas."
+    },
+    "fr": {
+     "t": "Salutations entre chiens",
+     "g": "Apprends les présentations polies et quand laisser de l'espace.",
+     "p": [
+      "Saluez-vous en laisse détendue, côte à côte plutôt que face à face, et reste bref.",
+      "Des corps souples et sautillants et des courbettes de jeu annoncent un jeu amical.",
+      "Corps raides, regard fixe ou grognements : donne de l'espace calmement."
+     ],
+     "q": "Comment ton chien salue-t-il d'habitude les autres chiens ?",
+     "c": "Observe de loin deux chiens qui se rencontrent et note les signaux amicaux."
+    },
+    "it": {
+     "t": "Saluti tra cani",
+     "g": "Impara presentazioni educate e quando dare spazio.",
+     "p": [
+      "Salutatevi al guinzaglio morbido, fianco a fianco e non di fronte, e resta breve.",
+      "Corpi sciolti e saltellanti e inchini di gioco indicano gioco amichevole.",
+      "Corpi rigidi, sguardi fissi o ringhi chiedono di dare spazio con calma."
+     ],
+     "q": "Come saluta di solito il tuo cane gli altri cani?",
+     "c": "Osserva da lontano due cani che si incontrano e annota i segnali amichevoli."
+    },
+    "pt": {
+     "t": "Cumprimentos entre cães",
+     "g": "Aprende apresentações educadas e quando dar espaço.",
+     "p": [
+      "Cumprimentem-se com a trela solta, lado a lado e não de frente, e sê breve.",
+      "Corpos soltos e saltitantes e vénias de brincadeira indicam jogo amigável.",
+      "Corpos rígidos, olhar fixo ou rosnar pedem espaço com calma."
+     ],
+     "q": "Como cumprimenta o teu cão normalmente outros cães?",
+     "c": "Observa de longe dois cães a encontrarem-se e anota os sinais amigáveis."
+    },
+    "pt_BR": {
+     "t": "Cumprimentos entre cães",
+     "g": "Aprenda apresentações educadas e quando dar espaço.",
+     "p": [
+      "Cumprimentem-se com a guia solta, lado a lado e não de frente, e seja breve.",
+      "Corpos soltos e saltitantes e reverências de brincadeira indicam jogo amigável.",
+      "Corpos rígidos, olhar fixo ou rosnado pedem espaço com calma."
+     ],
+     "q": "Como o seu cão costuma cumprimentar outros cães?",
+     "c": "Observe de longe dois cães se encontrando e anote os sinais amigáveis."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dog grooming at home",
+     "g": "Keep grooming short, gentle and pleasant.",
+     "p": [
+      "Brush, then check ears and paws for anything unusual.",
+      "Keep sessions to a few minutes and add treats and praise.",
+      "If you notice redness, smell, lumps or sore spots, tell your vet."
+     ],
+     "q": "What part of grooming does your dog like best?",
+     "c": "Brush your dog for three minutes and check the paws gently."
+    },
+    "de": {
+     "t": "Hundepflege zu Hause",
+     "g": "Halte die Pflege kurz, sanft und angenehm.",
+     "p": [
+      "Bürste und prüfe dann Ohren und Pfoten auf Auffälliges.",
+      "Beschränke Einheiten auf wenige Minuten und gib Leckerli und Lob.",
+      "Bei Rötung, Geruch, Knoten oder wunden Stellen sag es deinem Tierarzt."
+     ],
+     "q": "Welchen Teil der Pflege mag dein Hund am liebsten?",
+     "c": "Bürste deinen Hund drei Minuten und prüfe sanft die Pfoten."
+    },
+    "es": {
+     "t": "Aseo del perro en casa",
+     "g": "Haz que el aseo sea corto, suave y agradable.",
+     "p": [
+      "Cepilla y revisa orejas y patas por si hay algo raro.",
+      "Haz sesiones de pocos minutos y añade premios y elogios.",
+      "Si notas rojez, olor, bultos o zonas doloridas, díselo a tu veterinario."
+     ],
+     "q": "¿Qué parte del aseo le gusta más a tu perro?",
+     "c": "Cepilla a tu perro tres minutos y revisa con suavidad las patas."
+    },
+    "fr": {
+     "t": "Toilettage du chien à la maison",
+     "g": "Garde le toilettage court, doux et agréable.",
+     "p": [
+      "Brosse, puis vérifie oreilles et pattes à la recherche d'anomalies.",
+      "Fais des séances de quelques minutes, avec friandises et compliments.",
+      "En cas de rougeur, d'odeur, de boule ou de zone douloureuse, préviens ton vétérinaire."
+     ],
+     "q": "Quelle partie du toilettage ton chien préfère-t-il ?",
+     "c": "Brosse ton chien trois minutes et vérifie doucement les pattes."
+    },
+    "it": {
+     "t": "Toelettatura del cane a casa",
+     "g": "Mantieni la toelettatura breve, dolce e piacevole.",
+     "p": [
+      "Spazzola, poi controlla orecchie e zampe in cerca di anomalie.",
+      "Fai sessioni di pochi minuti con premietti e lodi.",
+      "Se noti arrossamenti, odore, noduli o zone dolenti, dillo al veterinario."
+     ],
+     "q": "Quale parte della toelettatura piace di più al tuo cane?",
+     "c": "Spazzola il cane per tre minuti e controlla con dolcezza le zampe."
+    },
+    "pt": {
+     "t": "Cuidados de higiene do cão em casa",
+     "g": "Mantém os cuidados curtos, suaves e agradáveis.",
+     "p": [
+      "Escova e depois verifica orelhas e patas por algo estranho.",
+      "Faz sessões de poucos minutos com petiscos e elogios.",
+      "Se notares vermelhidão, cheiro, caroços ou zonas doridas, diz ao veterinário."
+     ],
+     "q": "Que parte dos cuidados o teu cão prefere?",
+     "c": "Escova o teu cão três minutos e verifica com suavidade as patas."
+    },
+    "pt_BR": {
+     "t": "Cuidados e escovação do cão em casa",
+     "g": "Mantenha os cuidados curtos, suaves e agradáveis.",
+     "p": [
+      "Escove e depois confira orelhas e patas por algo estranho.",
+      "Faça sessões de poucos minutos com petiscos e elogios.",
+      "Se notar vermelhidão, cheiro, caroços ou áreas doloridas, avise o veterinário."
+     ],
+     "q": "Que parte dos cuidados o seu cão prefere?",
+     "c": "Escove seu cão por três minutos e confira com suavidade as patas."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bath time for dogs",
+     "g": "Make baths calm and not too frequent.",
+     "p": [
+      "Most dogs need a bath only now and then, depending on coat and lifestyle.",
+      "Use lukewarm water and a shampoo made for dogs.",
+      "Rinse thoroughly, dry gently and offer treats to keep it positive."
+     ],
+     "q": "How does your dog react to water?",
+     "c": "Practise calm paw-dipping or a damp cloth rub with treats."
+    },
+    "de": {
+     "t": "Badezeit für Hunde",
+     "g": "Gestalte Bäder ruhig und nicht zu häufig.",
+     "p": [
+      "Die meisten Hunde brauchen nur ab und zu ein Bad, je nach Fell und Alltag.",
+      "Nimm lauwarmes Wasser und ein Shampoo für Hunde.",
+      "Spül gründlich, trockne sanft und gib Leckerli, damit es positiv bleibt."
+     ],
+     "q": "Wie reagiert dein Hund auf Wasser?",
+     "c": "Übe ruhig das Pfoteneintauchen oder Abreiben mit feuchtem Tuch mit Leckerli."
+    },
+    "es": {
+     "t": "La hora del baño del perro",
+     "g": "Haz que el baño sea tranquilo y no demasiado frecuente.",
+     "p": [
+      "La mayoría de los perros solo necesita un baño de vez en cuando, según pelo y estilo de vida.",
+      "Usa agua tibia y un champú específico para perros.",
+      "Aclara bien, seca con suavidad y ofrece premios para que sea positivo."
+     ],
+     "q": "¿Cómo reacciona tu perro al agua?",
+     "c": "Practica con calma mojar las patas o frotar con un paño húmedo y premios."
+    },
+    "fr": {
+     "t": "L'heure du bain pour les chiens",
+     "g": "Fais des bains calmes et pas trop fréquents.",
+     "p": [
+      "La plupart des chiens n'ont besoin d'un bain que de temps en temps, selon poil et mode de vie.",
+      "Utilise de l'eau tiède et un shampooing pour chiens.",
+      "Rince bien, sèche doucement et offre des friandises pour rester positif."
+     ],
+     "q": "Comment ton chien réagit-il à l'eau ?",
+     "c": "Entraîne calmement le trempage des pattes ou un passage de chiffon humide avec friandises."
+    },
+    "it": {
+     "t": "L'ora del bagno per i cani",
+     "g": "Rendi i bagni tranquilli e non troppo frequenti.",
+     "p": [
+      "La maggior parte dei cani ha bisogno del bagno solo ogni tanto, secondo pelo e stile di vita.",
+      "Usa acqua tiepida e uno shampoo per cani.",
+      "Risciacqua bene, asciuga con dolcezza e offri premietti per restare positivi."
+     ],
+     "q": "Come reagisce il tuo cane all'acqua?",
+     "c": "Esercitati con calma a bagnare le zampe o a passare un panno umido con premietti."
+    },
+    "pt": {
+     "t": "A hora do banho dos cães",
+     "g": "Faz banhos calmos e não demasiado frequentes.",
+     "p": [
+      "A maioria dos cães só precisa de banho de vez em quando, conforme o pelo e o estilo de vida.",
+      "Usa água morna e um champô próprio para cães.",
+      "Enxagua bem, seca com suavidade e oferece petiscos para ser positivo."
+     ],
+     "q": "Como reage o teu cão à água?",
+     "c": "Pratica com calma molhar as patas ou passar um pano húmido, com petiscos."
+    },
+    "pt_BR": {
+     "t": "A hora do banho dos cães",
+     "g": "Faça banhos calmos e não muito frequentes.",
+     "p": [
+      "A maioria dos cães só precisa de banho de vez em quando, conforme o pelo e o estilo de vida.",
+      "Use água morna e um xampu próprio para cães.",
+      "Enxágue bem, seque com suavidade e ofereça petiscos para ser positivo."
+     ],
+     "q": "Como o seu cão reage à água?",
+     "c": "Pratique com calma molhar as patas ou passar um pano úmido, com petiscos."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Trimming nails safely",
+     "g": "Learn why nails matter and how to get your dog used to paw care.",
+     "p": [
+      "Overlong nails can make walking uncomfortable, so they need regular care.",
+      "Start by gently touching paws and rewarding calm, before any clipping.",
+      "If you feel unsure, ask a groomer or vet to show you or do it."
+     ],
+     "q": "How does your dog feel about having paws touched?",
+     "c": "Handle each paw gently for a second and reward calm behaviour."
+    },
+    "de": {
+     "t": "Krallen sicher kürzen",
+     "g": "Lerne, warum Krallen wichtig sind und wie sich dein Hund an Pfotenpflege gewöhnt.",
+     "p": [
+      "Zu lange Krallen können das Laufen unangenehm machen und brauchen Pflege.",
+      "Beginne mit sanftem Pfotenberühren und belohne Ruhe, bevor du schneidest.",
+      "Bist du unsicher, lass dir von Hundefriseur oder Tierarzt helfen oder zeigen."
+     ],
+     "q": "Wie findet dein Hund es, wenn man seine Pfoten anfasst?",
+     "c": "Berühre jede Pfote kurz und sanft und belohne ruhiges Verhalten."
+    },
+    "es": {
+     "t": "Recortar las uñas con seguridad",
+     "g": "Aprende por qué importan las uñas y cómo acostumbrar a tu perro al cuidado de las patas.",
+     "p": [
+      "Las uñas demasiado largas pueden hacer incómodo andar, así que necesitan cuidado regular.",
+      "Empieza tocando las patas con suavidad y premiando la calma, antes de cortar.",
+      "Si no estás seguro, pide a un peluquero o veterinario que te enseñe o lo haga."
+     ],
+     "q": "¿Cómo le sienta a tu perro que le toquen las patas?",
+     "c": "Toca cada pata con suavidad un segundo y premia la calma."
+    },
+    "fr": {
+     "t": "Couper les griffes en sécurité",
+     "g": "Apprends pourquoi les griffes comptent et comment habituer ton chien aux soins des pattes.",
+     "p": [
+      "Des griffes trop longues peuvent gêner la marche et demandent un entretien régulier.",
+      "Commence par toucher doucement les pattes et récompenser le calme, avant toute coupe.",
+      "En cas de doute, demande à un toiletteur ou à un vétérinaire de te montrer ou de le faire."
+     ],
+     "q": "Que pense ton chien qu'on lui touche les pattes ?",
+     "c": "Touche chaque patte doucement une seconde et récompense le calme."
+    },
+    "it": {
+     "t": "Tagliare le unghie in sicurezza",
+     "g": "Impara perché le unghie contano e come abituare il cane alla cura delle zampe.",
+     "p": [
+      "Unghie troppo lunghe possono rendere scomodo camminare, quindi vanno curate con regolarità.",
+      "Inizia toccando dolcemente le zampe e premiando la calma, prima di tagliare.",
+      "Se non sei sicuro, chiedi a un toelettatore o veterinario di mostrartelo o farlo."
+     ],
+     "q": "Come sta il tuo cane quando gli tocchi le zampe?",
+     "c": "Tocca ogni zampa con dolcezza per un secondo e premia la calma."
+    },
+    "pt": {
+     "t": "Cortar as unhas em segurança",
+     "g": "Aprende porque as unhas importam e como habituar o teu cão aos cuidados das patas.",
+     "p": [
+      "Unhas demasiado compridas podem tornar o andar desconfortável, por isso precisam de cuidados regulares.",
+      "Começa tocando nas patas com suavidade e recompensando a calma, antes de cortar.",
+      "Se não tiveres segurança, pede a um tosquiador ou veterinário que te mostre ou faça."
+     ],
+     "q": "Como se sente o teu cão quando lhe tocam nas patas?",
+     "c": "Toca em cada pata com suavidade um segundo e recompensa a calma."
+    },
+    "pt_BR": {
+     "t": "Cortar as unhas com segurança",
+     "g": "Aprenda por que as unhas importam e como acostumar seu cão aos cuidados das patas.",
+     "p": [
+      "Unhas muito compridas podem deixar o andar desconfortável, por isso precisam de cuidados regulares.",
+      "Comece tocando as patas com suavidade e recompensando a calma, antes de cortar.",
+      "Se não tiver segurança, peça a um tosador ou veterinário que mostre ou faça."
+     ],
+     "q": "Como o seu cão se sente quando mexem nas patas dele?",
+     "c": "Toque em cada pata com suavidade por um segundo e recompense a calma."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dental care for dogs",
+     "g": "Keep teeth healthy with brushing and checks.",
+     "p": [
+      "Brush with a dog toothpaste and a soft brush; human toothpaste is not suitable.",
+      "Dental chews can help, but they are not a replacement for brushing.",
+      "Ask your vet to check your dog's teeth at regular visits."
+     ],
+     "q": "Has your dog had a tooth check recently?",
+     "c": "Let your dog lick dog toothpaste from your finger to start getting used to it."
+    },
+    "de": {
+     "t": "Zahnpflege für Hunde",
+     "g": "Halte die Zähne mit Putzen und Kontrollen gesund.",
+     "p": [
+      "Putze mit Hundezahnpasta und weicher Bürste; Menschenzahnpasta ist ungeeignet.",
+      "Kauartikel für die Zähne können helfen, ersetzen aber das Putzen nicht.",
+      "Lass den Tierarzt bei regelmäßigen Besuchen die Zähne prüfen."
+     ],
+     "q": "Wurden die Zähne deines Hundes kürzlich kontrolliert?",
+     "c": "Lass deinen Hund Hundezahnpasta von deinem Finger lecken, um sich zu gewöhnen."
+    },
+    "es": {
+     "t": "Cuidado dental para perros",
+     "g": "Mantén los dientes sanos con cepillado y revisiones.",
+     "p": [
+      "Cepilla con pasta dental para perros y cepillo suave; la pasta humana no sirve.",
+      "Los premios dentales pueden ayudar, pero no sustituyen el cepillado.",
+      "Pide al veterinario que revise los dientes en las visitas regulares."
+     ],
+     "q": "¿Le han revisado los dientes a tu perro hace poco?",
+     "c": "Deja que tu perro lama pasta dental canina de tu dedo para ir acostumbrándose."
+    },
+    "fr": {
+     "t": "Soins dentaires pour chiens",
+     "g": "Garde des dents saines avec brossage et contrôles.",
+     "p": [
+      "Brosse avec un dentifrice pour chiens et une brosse souple; le dentifrice humain ne convient pas.",
+      "Les friandises dentaires peuvent aider mais ne remplacent pas le brossage.",
+      "Demande à ton vétérinaire de contrôler les dents lors des visites régulières."
+     ],
+     "q": "Les dents de ton chien ont-elles été contrôlées récemment ?",
+     "c": "Laisse ton chien lécher du dentifrice canin sur ton doigt pour s'habituer."
+    },
+    "it": {
+     "t": "Cura dei denti del cane",
+     "g": "Mantieni i denti sani con spazzolino e controlli.",
+     "p": [
+      "Spazzola con dentifricio per cani e spazzolino morbido; quello umano non va bene.",
+      "I masticabili dentali possono aiutare ma non sostituiscono lo spazzolino.",
+      "Chiedi al veterinario di controllare i denti nelle visite regolari."
+     ],
+     "q": "I denti del tuo cane sono stati controllati di recente?",
+     "c": "Lascia che il cane lecchi dentifricio canino dal tuo dito per abituarsi."
+    },
+    "pt": {
+     "t": "Cuidados dentários para cães",
+     "g": "Mantém os dentes saudáveis com escovagem e verificações.",
+     "p": [
+      "Escova com pasta de dentes para cães e escova macia; a pasta humana não serve.",
+      "Os petiscos dentários podem ajudar, mas não substituem a escovagem.",
+      "Pede ao veterinário que verifique os dentes nas consultas regulares."
+     ],
+     "q": "O teu cão fez uma verificação dos dentes recentemente?",
+     "c": "Deixa o teu cão lamber pasta de dentes canina do teu dedo para se ir habituando."
+    },
+    "pt_BR": {
+     "t": "Cuidados com os dentes dos cães",
+     "g": "Mantenha os dentes saudáveis com escovação e avaliações.",
+     "p": [
+      "Escove com pasta de dente para cães e escova macia; a pasta humana não serve.",
+      "Os petiscos dentais podem ajudar, mas não substituem a escovação.",
+      "Peça ao veterinário que avalie os dentes nas consultas regulares."
+     ],
+     "q": "Os dentes do seu cão foram avaliados recentemente?",
+     "c": "Deixe seu cão lamber pasta de dente canina do seu dedo para ir se acostumando."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dog nutrition basics",
+     "g": "Understand life-stage foods and gentle diet changes.",
+     "p": [
+      "Puppies, adults and seniors have different needs, so food is made for each stage.",
+      "Wet and dry foods both can be complete; ask your vet what suits your dog.",
+      "Change food gradually over about a week to avoid upset tummies."
+     ],
+     "q": "What does your dog eat now, and does it suit their age?",
+     "c": "Read the life-stage label on your dog's food and note the stage."
+    },
+    "de": {
+     "t": "Hundeernährung: die Basics",
+     "g": "Verstehe Futter für Lebensphasen und behutsame Futterwechsel.",
+     "p": [
+      "Welpen, erwachsene und Senior-Hunde haben unterschiedliche Bedürfnisse, daher gibt es Futter je Phase.",
+      "Nass- und Trockenfutter können beide vollwertig sein; frag den Tierarzt, was passt.",
+      "Stelle das Futter über etwa eine Woche langsam um, um Bauchprobleme zu vermeiden."
+     ],
+     "q": "Was frisst dein Hund jetzt, und passt es zu seinem Alter?",
+     "c": "Lies die Lebensphasen-Angabe auf dem Hundefutter und notiere die Phase."
+    },
+    "es": {
+     "t": "Nociones de nutrición canina",
+     "g": "Entiende los alimentos por etapa de vida y los cambios suaves de dieta.",
+     "p": [
+      "Cachorros, adultos y mayores tienen necesidades distintas, por eso hay comida para cada etapa.",
+      "El húmedo y el seco pueden ser completos; pregunta al veterinario qué le conviene.",
+      "Cambia de comida poco a poco durante una semana para evitar molestias de barriga."
+     ],
+     "q": "¿Qué come ahora tu perro y se ajusta a su edad?",
+     "c": "Lee la etapa de vida en el alimento de tu perro y anótala."
+    },
+    "fr": {
+     "t": "Bases de l'alimentation du chien",
+     "g": "Comprends les aliments par âge et les changements progressifs.",
+     "p": [
+      "Chiots, adultes et seniors ont des besoins différents, d'où des aliments par étape.",
+      "Humide et sec peuvent tous deux être complets; demande à ton vétérinaire ce qui convient.",
+      "Change d'aliment progressivement sur environ une semaine pour éviter les maux de ventre."
+     ],
+     "q": "Que mange ton chien et est-ce adapté à son âge ?",
+     "c": "Lis l'étape de vie sur l'aliment de ton chien et note-la."
+    },
+    "it": {
+     "t": "Basi dell'alimentazione del cane",
+     "g": "Capisci gli alimenti per fase di vita e i cambi graduali.",
+     "p": [
+      "Cuccioli, adulti e anziani hanno esigenze diverse, per questo il cibo è fatto per ogni fase.",
+      "Umido e secco possono essere entrambi completi; chiedi al veterinario cosa va bene.",
+      "Cambia cibo gradualmente in circa una settimana per evitare problemi di pancia."
+     ],
+     "q": "Cosa mangia ora il tuo cane e va bene per la sua età?",
+     "c": "Leggi la fase di vita sul cibo del tuo cane e annotala."
+    },
+    "pt": {
+     "t": "Noções de nutrição canina",
+     "g": "Percebe os alimentos por fase da vida e as mudanças graduais.",
+     "p": [
+      "Cachorros, adultos e idosos têm necessidades diferentes, por isso há comida para cada fase.",
+      "O húmido e o seco podem ser ambos completos; pergunta ao veterinário o que serve.",
+      "Muda de comida aos poucos durante cerca de uma semana para evitar problemas de barriga."
+     ],
+     "q": "O que come agora o teu cão e adequa-se à idade?",
+     "c": "Lê a fase de vida na comida do teu cão e anota-a."
+    },
+    "pt_BR": {
+     "t": "Noções de nutrição canina",
+     "g": "Entenda os alimentos por fase da vida e as mudanças graduais.",
+     "p": [
+      "Filhotes, adultos e idosos têm necessidades diferentes, por isso há comida para cada fase.",
+      "O úmido e o seco podem ser ambos completos; pergunte ao veterinário o que serve.",
+      "Troque a comida aos poucos durante cerca de uma semana para evitar problemas de barriga."
+     ],
+     "q": "O que o seu cão come agora e combina com a idade?",
+     "c": "Leia a fase de vida na comida do seu cão e anote."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keeping dogs cool in summer",
+     "g": "Protect your dog from heat with simple habits.",
+     "p": [
+      "Offer shade and plenty of fresh water, and walk in cooler hours.",
+      "Pavements get hot: test with the back of your hand for five seconds.",
+      "Never leave a dog in a parked car; call a vet at once if a dog seems overheated."
+     ],
+     "q": "How do you keep your dog comfortable in hot weather?",
+     "c": "Plan a walk for the coolest time of day and pack water."
+    },
+    "de": {
+     "t": "Hunde im Sommer kühl halten",
+     "g": "Schütze deinen Hund mit einfachen Gewohnheiten vor Hitze.",
+     "p": [
+      "Biete Schatten und reichlich frisches Wasser und geh in kühleren Stunden raus.",
+      "Asphalt wird heiß: Teste fünf Sekunden mit dem Handrücken.",
+      "Lass nie einen Hund im geparkten Auto; ruf bei Überhitzungsverdacht sofort den Tierarzt."
+     ],
+     "q": "Wie hältst du deinen Hund bei Hitze wohl?",
+     "c": "Plane einen Spaziergang zur kühlsten Tageszeit und pack Wasser ein."
+    },
+    "es": {
+     "t": "Mantener fresco al perro en verano",
+     "g": "Protege a tu perro del calor con hábitos sencillos.",
+     "p": [
+      "Ofrece sombra y mucha agua fresca y pasea en las horas más frescas.",
+      "El pavimento se calienta: prueba con el dorso de la mano cinco segundos.",
+      "Nunca dejes a un perro en un coche aparcado; llama al veterinario si parece sobrecalentado."
+     ],
+     "q": "¿Cómo mantienes cómodo a tu perro con calor?",
+     "c": "Planea un paseo a la hora más fresca y lleva agua."
+    },
+    "fr": {
+     "t": "Garder les chiens au frais en été",
+     "g": "Protège ton chien de la chaleur avec des gestes simples.",
+     "p": [
+      "Offre de l'ombre et beaucoup d'eau fraîche, et sors aux heures fraîches.",
+      "Le bitume chauffe : teste cinq secondes avec le dos de la main.",
+      "Ne laisse jamais un chien dans une voiture garée; appelle vite un vétérinaire en cas de surchauffe."
+     ],
+     "q": "Comment gardes-tu ton chien à l'aise par temps chaud ?",
+     "c": "Prévois une balade à l'heure la plus fraîche et emporte de l'eau."
+    },
+    "it": {
+     "t": "Tenere il cane fresco d'estate",
+     "g": "Proteggi il tuo cane dal caldo con abitudini semplici.",
+     "p": [
+      "Offri ombra e molta acqua fresca e passeggia nelle ore più fresche.",
+      "L'asfalto scotta: prova cinque secondi con il dorso della mano.",
+      "Non lasciare mai un cane in auto parcheggiata; chiama subito il veterinario se sembra surriscaldato."
+     ],
+     "q": "Come tieni a suo agio il tuo cane col caldo?",
+     "c": "Pianifica una passeggiata all'ora più fresca e porta acqua."
+    },
+    "pt": {
+     "t": "Manter os cães frescos no verão",
+     "g": "Protege o teu cão do calor com hábitos simples.",
+     "p": [
+      "Oferece sombra e muita água fresca e passeia nas horas mais frescas.",
+      "O pavimento aquece: testa cinco segundos com as costas da mão.",
+      "Nunca deixes um cão num carro estacionado; liga ao veterinário se parecer sobreaquecido."
+     ],
+     "q": "Como manténs o teu cão confortável com calor?",
+     "c": "Planeia um passeio na hora mais fresca do dia e leva água."
+    },
+    "pt_BR": {
+     "t": "Manter os cães frescos no verão",
+     "g": "Proteja seu cão do calor com hábitos simples.",
+     "p": [
+      "Ofereça sombra e muita água fresca e passeie nos horários mais frescos.",
+      "O asfalto esquenta: teste cinco segundos com as costas da mão.",
+      "Nunca deixe um cão em carro estacionado; ligue para o veterinário se parecer superaquecido."
+     ],
+     "q": "Como você mantém o seu cão confortável no calor?",
+     "c": "Planeje um passeio no horário mais fresco do dia e leve água."
+    }
+   }
+  }
+ ]
+}

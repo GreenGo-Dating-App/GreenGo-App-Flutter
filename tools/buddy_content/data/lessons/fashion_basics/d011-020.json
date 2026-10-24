@@ -1,0 +1,835 @@
+{
+ "topic": "fashion_basics",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sizes are just numbers",
+     "g": "Learn why sizes vary between brands and countries, and why fit matters more than the label.",
+     "p": [
+      "There is no universal size: the same number can fit differently.",
+      "A size is a guide, not a judgement about you.",
+      "Choose the size that fits today and cut out labels if they bother you."
+     ],
+     "q": "Have you noticed the same size fitting differently in different shops?",
+     "c": "Try two sizes of one item if you can, and keep whichever feels right."
+    },
+    "de": {
+     "t": "Größen sind nur Zahlen",
+     "g": "Lernen, warum Größen je nach Marke und Land schwanken und die Passform wichtiger ist als das Etikett.",
+     "p": [
+      "Es gibt keine einheitliche Größe: Dieselbe Zahl kann unterschiedlich sitzen.",
+      "Eine Größe ist ein Anhaltspunkt, kein Urteil über dich.",
+      "Wähle die Größe, die heute passt, und schneide störende Etiketten heraus."
+     ],
+     "q": "Ist dir aufgefallen, dass dieselbe Größe in verschiedenen Läden unterschiedlich sitzt?",
+     "c": "Probiere wenn möglich zwei Größen eines Teils an und behalte die passende."
+    },
+    "es": {
+     "t": "Las tallas son solo números",
+     "g": "Aprender por qué las tallas varían entre marcas y países y por qué el ajuste importa más que la etiqueta.",
+     "p": [
+      "No hay una talla universal: el mismo número puede quedar distinto.",
+      "Una talla es una guía, no un juicio sobre ti.",
+      "Elige la talla que te quede bien hoy y corta las etiquetas si molestan."
+     ],
+     "q": "¿Has notado que la misma talla queda distinta en tiendas diferentes?",
+     "c": "Si puedes, pruébate dos tallas de una prenda y quédate con la que se sienta bien."
+    },
+    "fr": {
+     "t": "Les tailles ne sont que des chiffres",
+     "g": "Comprendre pourquoi les tailles varient selon les marques et les pays, et pourquoi la coupe prime.",
+     "p": [
+      "Il n'existe pas de taille universelle: le même chiffre peut tomber différemment.",
+      "Une taille est un repère, pas un jugement sur toi.",
+      "Choisis la taille qui te va aujourd'hui et coupe les étiquettes qui gênent."
+     ],
+     "q": "As-tu remarqué que la même taille va différemment selon les magasins ?",
+     "c": "Si possible, essaie deux tailles d'une pièce et garde celle qui te convient."
+    },
+    "it": {
+     "t": "Le taglie sono solo numeri",
+     "g": "Capire perché le taglie variano tra marchi e paesi e perché la vestibilità conta più dell'etichetta.",
+     "p": [
+      "Non esiste una taglia universale: lo stesso numero può calzare in modo diverso.",
+      "Una taglia è una guida, non un giudizio su di te.",
+      "Scegli la taglia che ti sta bene oggi e taglia le etichette che danno fastidio."
+     ],
+     "q": "Hai notato che la stessa taglia calza diversamente in negozi diversi?",
+     "c": "Se puoi, prova due taglie dello stesso capo e tieni quella giusta."
+    },
+    "pt": {
+     "t": "Os tamanhos são só números",
+     "g": "Perceber porque é que os tamanhos variam entre marcas e países e porque o corte importa mais que a etiqueta.",
+     "p": [
+      "Não há um tamanho universal: o mesmo número pode servir de forma diferente.",
+      "Um tamanho é uma referência, não um juízo sobre ti.",
+      "Escolhe o tamanho que te serve hoje e corta as etiquetas que incomodem."
+     ],
+     "q": "Já reparaste que o mesmo tamanho serve de forma diferente em lojas diferentes?",
+     "c": "Se puderes, experimenta dois tamanhos da mesma peça e fica com o que assenta bem."
+    },
+    "pt_BR": {
+     "t": "Os tamanhos são só números",
+     "g": "Entender por que os tamanhos variam entre marcas e países e por que o caimento importa mais que a etiqueta.",
+     "p": [
+      "Não existe tamanho universal: o mesmo número pode vestir de formas diferentes.",
+      "Tamanho é uma referência, não um julgamento sobre você.",
+      "Escolha o tamanho que veste bem hoje e corte etiquetas que incomodem."
+     ],
+     "q": "Você já reparou que o mesmo tamanho veste diferente em lojas diferentes?",
+     "c": "Se puder, experimente dois tamanhos da mesma peça e fique com o que vestir bem."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Taking your measurements",
+     "g": "Learn how to measure chest, waist, hips and inside leg to shop with confidence.",
+     "p": [
+      "Use a soft tape measure held snug but not tight, over thin clothing.",
+      "Measure chest, waist, hips and inside leg and write them down.",
+      "Measurements help you compare with size charts, and they can change over time."
+     ],
+     "q": "Have you ever measured yourself for clothes? What did you learn?",
+     "c": "Measure yourself today and save the numbers in your phone notes for shopping."
+    },
+    "de": {
+     "t": "Maße nehmen",
+     "g": "Lernen, wie du Brust, Taille, Hüfte und Beininnenlänge misst, um sicherer einzukaufen.",
+     "p": [
+      "Nimm ein weiches Maßband, locker anliegend, über dünner Kleidung.",
+      "Miss Brust, Taille, Hüfte und Innenbeinlänge und notiere sie.",
+      "Maße helfen beim Vergleich mit Größentabellen und können sich mit der Zeit ändern."
+     ],
+     "q": "Hast du dich schon einmal für Kleidung vermessen? Was hast du gelernt?",
+     "c": "Miss dich heute und speichere die Zahlen in deinen Notizen zum Einkaufen."
+    },
+    "es": {
+     "t": "Tomar tus medidas",
+     "g": "Aprender a medir pecho, cintura, cadera y entrepierna para comprar con seguridad.",
+     "p": [
+      "Usa una cinta métrica blanda, ajustada pero sin apretar, sobre ropa fina.",
+      "Mide pecho, cintura, cadera y largo interior de pierna y apúntalo.",
+      "Las medidas ayudan a comparar con tablas de tallas y pueden cambiar con el tiempo."
+     ],
+     "q": "¿Alguna vez te has medido para comprar ropa? ¿Qué aprendiste?",
+     "c": "Mídete hoy y guarda los números en las notas del móvil para ir de compras."
+    },
+    "fr": {
+     "t": "Prendre tes mesures",
+     "g": "Apprendre à mesurer poitrine, taille, hanches et entrejambe pour acheter avec assurance.",
+     "p": [
+      "Utilise un mètre ruban souple, ajusté sans serrer, sur des vêtements fins.",
+      "Mesure poitrine, taille, hanches et longueur intérieure de jambe, puis note-les.",
+      "Les mesures aident à comparer avec les guides des tailles et peuvent évoluer avec le temps."
+     ],
+     "q": "T'es-tu déjà mesuré pour acheter des vêtements ? Qu'as-tu appris ?",
+     "c": "Mesure-toi aujourd'hui et garde les chiffres dans les notes de ton téléphone."
+    },
+    "it": {
+     "t": "Prendere le tue misure",
+     "g": "Imparare a misurare torace, vita, fianchi e interno gamba per acquistare con sicurezza.",
+     "p": [
+      "Usa un metro morbido, aderente ma non stretto, sopra abiti sottili.",
+      "Misura torace, vita, fianchi e interno gamba e scrivi i numeri.",
+      "Le misure aiutano a confrontarsi con le tabelle taglie e possono cambiare nel tempo."
+     ],
+     "q": "Ti sei mai misurato per comprare dei vestiti? Cosa hai imparato?",
+     "c": "Misurati oggi e salva i numeri nelle note del telefono per gli acquisti."
+    },
+    "pt": {
+     "t": "Tirar as tuas medidas",
+     "g": "Aprender a medir peito, cintura, anca e entrepernas para comprar com confiança.",
+     "p": [
+      "Usa uma fita métrica macia, justa mas sem apertar, sobre roupa fina.",
+      "Mede peito, cintura, anca e comprimento interior da perna e anota.",
+      "As medidas ajudam a comparar com tabelas de tamanhos e podem mudar com o tempo."
+     ],
+     "q": "Já te mediste alguma vez para comprar roupa? O que aprendeste?",
+     "c": "Mede-te hoje e guarda os números nas notas do telemóvel para as compras."
+    },
+    "pt_BR": {
+     "t": "Tirando suas medidas",
+     "g": "Aprender a medir peito, cintura, quadril e entrepernas para comprar com confiança.",
+     "p": [
+      "Use uma fita métrica macia, justa mas sem apertar, sobre roupa fina.",
+      "Meça peito, cintura, quadril e entrepernas e anote.",
+      "As medidas ajudam a comparar com tabelas de tamanhos e podem mudar com o tempo."
+     ],
+     "q": "Você já se mediu para comprar roupa? O que aprendeu?",
+     "c": "Meça-se hoje e salve os números nas notas do celular para as compras."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cotton: the everyday fabric",
+     "g": "Learn why cotton is breathable and comfortable and how it behaves in the wash.",
+     "p": [
+      "Cotton is a natural fibre that is soft and lets air through.",
+      "It can shrink or crease, so check the care label before washing.",
+      "Cotton suits many climates and is easy to wear every day."
+     ],
+     "q": "Which cotton items in your wardrobe do you love most?",
+     "c": "Check the labels of five tops today and count how many are cotton."
+    },
+    "de": {
+     "t": "Baumwolle: der Alltagsstoff",
+     "g": "Lernen, warum Baumwolle atmungsaktiv und bequem ist und wie sie sich beim Waschen verhält.",
+     "p": [
+      "Baumwolle ist eine Naturfaser, die weich ist und Luft durchlässt.",
+      "Sie kann einlaufen oder knittern, also lies vorm Waschen das Pflegeetikett.",
+      "Baumwolle passt zu vielen Klimazonen und ist leicht für jeden Tag."
+     ],
+     "q": "Welche Baumwollteile in deinem Schrank liebst du am meisten?",
+     "c": "Prüfe heute die Etiketten von fünf Oberteilen und zähle, wie viele aus Baumwolle sind."
+    },
+    "es": {
+     "t": "Algodón: el tejido de cada día",
+     "g": "Aprender por qué el algodón es transpirable y cómodo y cómo se comporta al lavarlo.",
+     "p": [
+      "El algodón es una fibra natural, suave y que deja pasar el aire.",
+      "Puede encoger o arrugarse, así que mira la etiqueta antes de lavar.",
+      "El algodón va bien en muchos climas y es fácil de llevar a diario."
+     ],
+     "q": "¿Qué prendas de algodón de tu armario quieres más?",
+     "c": "Revisa hoy las etiquetas de cinco camisetas y cuenta cuántas son de algodón."
+    },
+    "fr": {
+     "t": "Le coton, tissu du quotidien",
+     "g": "Comprendre pourquoi le coton est respirant et confortable et comment il réagit au lavage.",
+     "p": [
+      "Le coton est une fibre naturelle, douce, qui laisse passer l'air.",
+      "Il peut rétrécir ou se froisser: lis l'étiquette d'entretien avant de laver.",
+      "Le coton convient à de nombreux climats et se porte facilement tous les jours."
+     ],
+     "q": "Quelles pièces en coton de ta garde-robe préfères-tu ?",
+     "c": "Regarde aujourd'hui les étiquettes de cinq hauts et compte ceux en coton."
+    },
+    "it": {
+     "t": "Il cotone: il tessuto di ogni giorno",
+     "g": "Capire perché il cotone è traspirante e comodo e come si comporta al lavaggio.",
+     "p": [
+      "Il cotone è una fibra naturale, morbida, che lascia passare l'aria.",
+      "Può restringersi o sgualcirsi: leggi l'etichetta prima di lavare.",
+      "Il cotone va bene in molti climi ed è facile da indossare ogni giorno."
+     ],
+     "q": "Quali capi di cotone del tuo armadio ami di più?",
+     "c": "Controlla oggi le etichette di cinque top e conta quanti sono di cotone."
+    },
+    "pt": {
+     "t": "O algodão: o tecido do dia a dia",
+     "g": "Perceber porque é que o algodão é respirável e confortável e como se comporta na lavagem.",
+     "p": [
+      "O algodão é uma fibra natural, macia e que deixa o ar passar.",
+      "Pode encolher ou amarrotar, por isso lê a etiqueta antes de lavar.",
+      "O algodão serve em muitos climas e é fácil de usar todos os dias."
+     ],
+     "q": "Que peças de algodão do teu guarda-roupa mais adoras?",
+     "c": "Verifica hoje as etiquetas de cinco tops e conta quantos são de algodão."
+    },
+    "pt_BR": {
+     "t": "O algodão: o tecido do dia a dia",
+     "g": "Entender por que o algodão é respirável e confortável e como se comporta na lavagem.",
+     "p": [
+      "O algodão é uma fibra natural, macia e que deixa o ar passar.",
+      "Pode encolher ou amassar, então leia a etiqueta antes de lavar.",
+      "O algodão serve em muitos climas e é fácil de usar todo dia."
+     ],
+     "q": "Quais peças de algodão do seu guarda-roupa você mais ama?",
+     "c": "Confira hoje as etiquetas de cinco blusas e conte quantas são de algodão."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Linen for warm days",
+     "g": "Discover linen's lightness, its natural creases and why hot climates love it.",
+     "p": [
+      "Linen is made from the flax plant and feels light and airy.",
+      "It dries fast and keeps you cool, which helps in the heat.",
+      "Creases are part of its charm; a quick steam can soften them."
+     ],
+     "q": "Would you wear linen on a hot day? What would you pair it with?",
+     "c": "If you own linen, wear it today; if not, touch some in a shop and feel it."
+    },
+    "de": {
+     "t": "Leinen für warme Tage",
+     "g": "Die Leichtigkeit von Leinen, seine natürlichen Knitter und seine Beliebtheit in heißen Regionen entdecken.",
+     "p": [
+      "Leinen wird aus der Flachspflanze gemacht und fühlt sich leicht und luftig an.",
+      "Es trocknet schnell und hält kühl, was bei Hitze hilft.",
+      "Knitter gehören zum Charme; kurzes Dämpfen mildert sie."
+     ],
+     "q": "Würdest du an einem heißen Tag Leinen tragen? Womit kombinierst du es?",
+     "c": "Trage heute Leinen, falls vorhanden; sonst fühle im Laden einmal welches."
+    },
+    "es": {
+     "t": "Lino para los días cálidos",
+     "g": "Descubrir la ligereza del lino, sus arrugas naturales y por qué gusta en climas cálidos.",
+     "p": [
+      "El lino se hace con la planta del lino y es ligero y fresco.",
+      "Se seca rápido y refresca, lo que ayuda con el calor.",
+      "Las arrugas son parte de su encanto; un poco de vapor las suaviza."
+     ],
+     "q": "¿Llevarías lino un día de calor? ¿Con qué lo combinarías?",
+     "c": "Si tienes lino, póntelo hoy; si no, tócalo en una tienda y siente el tejido."
+    },
+    "fr": {
+     "t": "Le lin pour les jours chauds",
+     "g": "Découvrir la légèreté du lin, ses plis naturels et pourquoi les climats chauds l'adorent.",
+     "p": [
+      "Le lin vient de la plante de lin et paraît léger et aéré.",
+      "Il sèche vite et garde au frais, ce qui aide quand il fait chaud.",
+      "Les plis font partie de son charme; un peu de vapeur les adoucit."
+     ],
+     "q": "Porterais-tu du lin par temps chaud ? Avec quoi l'associerais-tu ?",
+     "c": "Si tu as du lin, porte-le aujourd'hui; sinon, touche-en en magasin."
+    },
+    "it": {
+     "t": "Il lino per i giorni caldi",
+     "g": "Scoprire la leggerezza del lino, le sue pieghe naturali e perché i climi caldi lo amano.",
+     "p": [
+      "Il lino si ricava dalla pianta del lino ed è leggero e fresco.",
+      "Asciuga in fretta e mantiene freschi, utile quando fa caldo.",
+      "Le pieghe fanno parte del suo fascino; un po' di vapore le ammorbidisce."
+     ],
+     "q": "Indosseresti il lino in una giornata calda? Con cosa lo abbineresti?",
+     "c": "Se hai del lino, indossalo oggi; altrimenti toccane uno in negozio."
+    },
+    "pt": {
+     "t": "O linho para dias quentes",
+     "g": "Descobrir a leveza do linho, os seus vincos naturais e porque os climas quentes o adoram.",
+     "p": [
+      "O linho vem da planta do linho e é leve e arejado.",
+      "Seca depressa e mantém-te fresco, o que ajuda no calor.",
+      "Os vincos fazem parte do charme; um pouco de vapor suaviza-os."
+     ],
+     "q": "Usarias linho num dia quente? Com que o combinarias?",
+     "c": "Se tiveres linho, veste-o hoje; se não, toca em linho numa loja."
+    },
+    "pt_BR": {
+     "t": "O linho para dias quentes",
+     "g": "Descobrir a leveza do linho, seus amassados naturais e por que os climas quentes o adoram.",
+     "p": [
+      "O linho vem da planta do linho e é leve e arejado.",
+      "Seca rápido e mantém você fresco, o que ajuda no calor.",
+      "Os amassados fazem parte do charme; um pouco de vapor suaviza."
+     ],
+     "q": "Você usaria linho num dia quente? Com o que combinaria?",
+     "c": "Se tiver linho, use hoje; se não, toque em linho numa loja."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wool and warmth",
+     "g": "See how wool keeps you warm, handles moisture and needs gentle care.",
+     "p": [
+      "Wool traps air in its fibres, which keeps warmth close.",
+      "It can absorb moisture without feeling damp, so it suits cold days.",
+      "Wash wool gently and dry it flat to protect its shape."
+     ],
+     "q": "What is your warmest wool piece, and when do you wear it?",
+     "c": "Find the wool items you own and read their care labels carefully."
+    },
+    "de": {
+     "t": "Wolle und Wärme",
+     "g": "Sehen, wie Wolle warm hält, Feuchtigkeit aufnimmt und sanfte Pflege braucht.",
+     "p": [
+      "Wolle schließt Luft in ihren Fasern ein und hält so die Wärme.",
+      "Sie nimmt Feuchtigkeit auf, ohne sich nass anzufühlen, ideal für kalte Tage.",
+      "Wasche Wolle schonend und trockne sie liegend, damit sie ihre Form behält."
+     ],
+     "q": "Was ist dein wärmstes Wollteil, und wann trägst du es?",
+     "c": "Finde deine Wollteile und lies aufmerksam die Pflegeetiketten."
+    },
+    "es": {
+     "t": "La lana y el calor",
+     "g": "Ver cómo la lana abriga, gestiona la humedad y necesita un cuidado delicado.",
+     "p": [
+      "La lana atrapa aire en sus fibras y conserva el calor.",
+      "Absorbe humedad sin sentirse mojada, ideal para días fríos.",
+      "Lava la lana con suavidad y sécala en plano para proteger su forma."
+     ],
+     "q": "¿Cuál es tu prenda de lana más abrigada y cuándo la usas?",
+     "c": "Busca tus prendas de lana y lee con atención sus etiquetas de cuidado."
+    },
+    "fr": {
+     "t": "La laine et la chaleur",
+     "g": "Voir comment la laine garde au chaud, gère l'humidité et demande un entretien doux.",
+     "p": [
+      "La laine emprisonne l'air dans ses fibres et garde la chaleur.",
+      "Elle absorbe l'humidité sans paraître mouillée, idéale par temps froid.",
+      "Lave la laine délicatement et fais-la sécher à plat pour garder sa forme."
+     ],
+     "q": "Quelle est ta pièce en laine la plus chaude, et quand la portes-tu ?",
+     "c": "Repère tes pièces en laine et lis attentivement leurs étiquettes d'entretien."
+    },
+    "it": {
+     "t": "La lana e il calore",
+     "g": "Vedere come la lana tiene caldo, gestisce l'umidità e richiede cure delicate.",
+     "p": [
+      "La lana trattiene l'aria tra le fibre e conserva il calore.",
+      "Assorbe l'umidità senza sembrare bagnata, ideale nei giorni freddi.",
+      "Lava la lana con delicatezza e falla asciugare in piano per mantenerne la forma."
+     ],
+     "q": "Qual è il tuo capo di lana più caldo e quando lo indossi?",
+     "c": "Trova i tuoi capi di lana e leggi con attenzione le etichette di lavaggio."
+    },
+    "pt": {
+     "t": "A lã e o calor",
+     "g": "Ver como a lã aquece, lida com a humidade e precisa de cuidados suaves.",
+     "p": [
+      "A lã retém ar nas fibras e conserva o calor.",
+      "Absorve humidade sem parecer molhada, ideal para dias frios.",
+      "Lava a lã com suavidade e seca-a na horizontal para proteger a forma."
+     ],
+     "q": "Qual é a tua peça de lã mais quente e quando a usas?",
+     "c": "Procura as tuas peças de lã e lê com atenção as etiquetas de cuidados."
+    },
+    "pt_BR": {
+     "t": "A lã e o calor",
+     "g": "Ver como a lã aquece, lida com a umidade e precisa de cuidados suaves.",
+     "p": [
+      "A lã retém ar nas fibras e conserva o calor.",
+      "Absorve umidade sem parecer molhada, ideal para dias frios.",
+      "Lave a lã com delicadeza e seque na horizontal para proteger o formato."
+     ],
+     "q": "Qual é a sua peça de lã mais quente e quando você usa?",
+     "c": "Encontre suas peças de lã e leia com atenção as etiquetas de cuidados."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Denim basics",
+     "g": "Learn what denim is, how it ages with wear, and common washes and cuts.",
+     "p": [
+      "Denim is a sturdy cotton twill, often dyed blue with indigo.",
+      "Jeans soften and fade with wear, which gives each pair character.",
+      "Washes range from dark to light, and cuts from slim to wide."
+     ],
+     "q": "Which jeans do you reach for most, and what do you like about them?",
+     "c": "Look at your favourite jeans and describe their wash and cut in your own words."
+    },
+    "de": {
+     "t": "Denim-Grundlagen",
+     "g": "Lernen, was Denim ist, wie er mit dem Tragen altert und welche Waschungen und Schnitte es gibt.",
+     "p": [
+      "Denim ist ein robuster Baumwoll-Köper, oft mit Indigo blau gefärbt.",
+      "Jeans werden weicher und bleichen aus, was jedem Paar Charakter gibt.",
+      "Waschungen reichen von dunkel bis hell, Schnitte von schmal bis weit."
+     ],
+     "q": "Welche Jeans trägst du am liebsten, und was gefällt dir an ihnen?",
+     "c": "Betrachte deine Lieblingsjeans und beschreibe Waschung und Schnitt mit eigenen Worten."
+    },
+    "es": {
+     "t": "Lo básico del denim",
+     "g": "Aprender qué es el denim, cómo envejece con el uso y qué lavados y cortes existen.",
+     "p": [
+      "El denim es una sarga de algodón resistente, a menudo teñida de azul con índigo.",
+      "Los vaqueros se suavizan y se destiñen con el uso, y eso les da carácter.",
+      "Los lavados van de oscuros a claros y los cortes, de ajustados a anchos."
+     ],
+     "q": "¿Qué vaqueros eliges más y qué te gusta de ellos?",
+     "c": "Mira tus vaqueros favoritos y describe su lavado y corte con tus palabras."
+    },
+    "fr": {
+     "t": "Les bases du denim",
+     "g": "Apprendre ce qu'est le denim, comment il vieillit avec le temps, et les délavages et coupes courants.",
+     "p": [
+      "Le denim est un sergé de coton solide, souvent teint en bleu à l'indigo.",
+      "Les jeans s'assouplissent et pâlissent avec l'usage, ce qui leur donne du caractère.",
+      "Les délavages vont du foncé au clair, les coupes du slim au large."
+     ],
+     "q": "Quel jean choisis-tu le plus souvent, et qu'est-ce que tu aimes en lui ?",
+     "c": "Regarde ton jean préféré et décris son délavage et sa coupe avec tes mots."
+    },
+    "it": {
+     "t": "Le basi del denim",
+     "g": "Imparare cos'è il denim, come invecchia con l'uso e quali lavaggi e tagli esistono.",
+     "p": [
+      "Il denim è un tessuto di cotone robusto, spesso tinto di blu con l'indaco.",
+      "I jeans si ammorbidiscono e sbiadiscono con l'uso, e questo dà carattere.",
+      "I lavaggi vanno dallo scuro al chiaro, i tagli dall'aderente al largo."
+     ],
+     "q": "Quali jeans scegli più spesso e cosa ti piace di loro?",
+     "c": "Guarda i tuoi jeans preferiti e descrivi lavaggio e taglio con parole tue."
+    },
+    "pt": {
+     "t": "O básico do ganga",
+     "g": "Aprender o que é o ganga, como envelhece com o uso e que lavagens e cortes existem.",
+     "p": [
+      "O ganga é uma sarja de algodão resistente, muitas vezes tingida de azul com índigo.",
+      "As jeans amaciam e desbotam com o uso, o que lhes dá caráter.",
+      "As lavagens vão do escuro ao claro e os cortes do justo ao largo."
+     ],
+     "q": "Que jeans escolhes mais vezes e o que gostas nelas?",
+     "c": "Olha para as tuas jeans favoritas e descreve a lavagem e o corte por palavras tuas."
+    },
+    "pt_BR": {
+     "t": "O básico do jeans",
+     "g": "Aprender o que é o jeans, como envelhece com o uso e quais lavagens e modelagens existem.",
+     "p": [
+      "O jeans é uma sarja de algodão resistente, muitas vezes tingida de azul com índigo.",
+      "A calça jeans amacia e desbota com o uso, o que dá caráter a cada uma.",
+      "As lavagens vão do escuro ao claro e as modelagens do justo ao largo."
+     ],
+     "q": "Qual jeans você mais escolhe e o que gosta nele?",
+     "c": "Olhe seu jeans favorito e descreva a lavagem e a modelagem com suas palavras."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Silk and smooth fabrics",
+     "g": "Explore the feel, drape and care of silk and silky alternatives.",
+     "p": [
+      "Silk is a natural fibre that is smooth, light and drapes softly.",
+      "Silky alternatives like satin-finish fabrics offer a similar look.",
+      "Many smooth fabrics need gentle washing or careful handling."
+     ],
+     "q": "Do you enjoy smooth, flowing fabrics, or do you prefer more texture?",
+     "c": "Touch two smooth fabrics today and describe how each one feels and moves."
+    },
+    "de": {
+     "t": "Seide und glatte Stoffe",
+     "g": "Gefühl, Fall und Pflege von Seide und seidigen Alternativen erkunden.",
+     "p": [
+      "Seide ist eine Naturfaser, die glatt und leicht ist und weich fällt.",
+      "Seidige Alternativen wie Stoffe mit Satinoptik bieten einen ähnlichen Look.",
+      "Viele glatte Stoffe brauchen schonendes Waschen oder vorsichtige Behandlung."
+     ],
+     "q": "Magst du glatte, fließende Stoffe oder lieber mehr Struktur?",
+     "c": "Berühre heute zwei glatte Stoffe und beschreibe, wie sie sich anfühlen und fallen."
+    },
+    "es": {
+     "t": "Seda y tejidos suaves",
+     "g": "Explorar el tacto, la caída y el cuidado de la seda y sus alternativas sedosas.",
+     "p": [
+      "La seda es una fibra natural suave, ligera y de caída delicada.",
+      "Alternativas sedosas como los tejidos satinados dan un aspecto parecido.",
+      "Muchos tejidos suaves necesitan lavado delicado o manejo cuidadoso."
+     ],
+     "q": "¿Disfrutas de los tejidos suaves y fluidos o prefieres más textura?",
+     "c": "Toca hoy dos tejidos suaves y describe cómo se sienten y se mueven."
+    },
+    "fr": {
+     "t": "La soie et les tissus lisses",
+     "g": "Explorer le toucher, le tombé et l'entretien de la soie et de ses alternatives soyeuses.",
+     "p": [
+      "La soie est une fibre naturelle lisse, légère, au tombé doux.",
+      "Des alternatives soyeuses, comme les tissus satinés, donnent un air proche.",
+      "Beaucoup de tissus lisses demandent un lavage délicat ou des soins attentifs."
+     ],
+     "q": "Aimes-tu les tissus lisses et fluides, ou préfères-tu plus de texture ?",
+     "c": "Touche aujourd'hui deux tissus lisses et décris leur toucher et leur mouvement."
+    },
+    "it": {
+     "t": "La seta e i tessuti lisci",
+     "g": "Esplorare tatto, caduta e cura della seta e delle alternative setose.",
+     "p": [
+      "La seta è una fibra naturale liscia, leggera e dalla caduta morbida.",
+      "Alternative setose, come i tessuti satinati, offrono un aspetto simile.",
+      "Molti tessuti lisci richiedono lavaggi delicati o una gestione attenta."
+     ],
+     "q": "Ti piacciono i tessuti lisci e fluidi o preferisci più texture?",
+     "c": "Tocca oggi due tessuti lisci e descrivi come si sentono e si muovono."
+    },
+    "pt": {
+     "t": "A seda e os tecidos suaves",
+     "g": "Explorar o toque, a queda e os cuidados da seda e das alternativas sedosas.",
+     "p": [
+      "A seda é uma fibra natural suave, leve e de queda delicada.",
+      "Alternativas sedosas, como os tecidos acetinados, dão um aspeto parecido.",
+      "Muitos tecidos suaves pedem lavagem delicada ou manuseamento cuidadoso."
+     ],
+     "q": "Gostas de tecidos suaves e fluidos ou preferes mais textura?",
+     "c": "Toca hoje em dois tecidos suaves e descreve como se sentem e se movem."
+    },
+    "pt_BR": {
+     "t": "A seda e os tecidos macios",
+     "g": "Explorar o toque, a caída e os cuidados da seda e das alternativas sedosas.",
+     "p": [
+      "A seda é uma fibra natural macia, leve e de caimento delicado.",
+      "Alternativas sedosas, como os tecidos acetinados, dão um aspecto parecido.",
+      "Muitos tecidos lisos pedem lavagem delicada ou manuseio cuidadoso."
+     ],
+     "q": "Você gosta de tecidos macios e fluidos ou prefere mais textura?",
+     "c": "Toque hoje em dois tecidos lisos e descreva como parecem e se movem."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Synthetic fabrics",
+     "g": "See the strengths of polyester, nylon and elastane for stretch, durability and sport.",
+     "p": [
+      "Synthetic fibres are made by people and are strong and quick to dry.",
+      "Elastane adds stretch, which makes clothes comfortable to move in.",
+      "Wash synthetics at low temperatures; they can shed tiny fibres, so wash less."
+     ],
+     "q": "Which of your clothes have stretch, and how does it help you?",
+     "c": "Check how many labels in your wardrobe mention polyester, nylon or elastane."
+    },
+    "de": {
+     "t": "Synthetische Stoffe",
+     "g": "Die Stärken von Polyester, Nylon und Elastan bei Dehnbarkeit, Haltbarkeit und Sport kennenlernen.",
+     "p": [
+      "Synthetikfasern sind von Menschen gemacht, stark und trocknen schnell.",
+      "Elastan sorgt für Dehnung, wodurch Kleidung beweglich und bequem ist.",
+      "Wasche Synthetik kühl; sie kann winzige Fasern lösen, also lieber seltener waschen."
+     ],
+     "q": "Welche deiner Kleider haben Stretch, und wie hilft er dir?",
+     "c": "Prüfe, wie viele Etiketten in deinem Schrank Polyester, Nylon oder Elastan nennen."
+    },
+    "es": {
+     "t": "Tejidos sintéticos",
+     "g": "Ver las ventajas del poliéster, el nailon y el elastano en elasticidad, durabilidad y deporte.",
+     "p": [
+      "Las fibras sintéticas son hechas por el ser humano, resistentes y de secado rápido.",
+      "El elastano aporta elasticidad y hace la ropa cómoda al moverse.",
+      "Lava lo sintético a baja temperatura; suelta fibras diminutas, así que lava menos."
+     ],
+     "q": "¿Qué prendas tuyas tienen elasticidad y cómo te ayuda?",
+     "c": "Mira cuántas etiquetas de tu armario mencionan poliéster, nailon o elastano."
+    },
+    "fr": {
+     "t": "Les tissus synthétiques",
+     "g": "Voir les atouts du polyester, du nylon et de l'élasthanne pour l'élasticité, la durabilité et le sport.",
+     "p": [
+      "Les fibres synthétiques sont fabriquées par l'humain, solides et à séchage rapide.",
+      "L'élasthanne apporte de l'élasticité et rend les vêtements confortables.",
+      "Lave le synthétique à basse température; il perd de fines fibres, lave donc moins."
+     ],
+     "q": "Quels vêtements ont de l'élasticité chez toi, et en quoi t'aide-t-elle ?",
+     "c": "Regarde combien d'étiquettes citent polyester, nylon ou élasthanne dans ta garde-robe."
+    },
+    "it": {
+     "t": "I tessuti sintetici",
+     "g": "Vedere i punti di forza di poliestere, nylon ed elastan per elasticità, durata e sport.",
+     "p": [
+      "Le fibre sintetiche sono prodotte dall'uomo, resistenti e ad asciugatura rapida.",
+      "L'elastan aggiunge elasticità e rende i vestiti comodi nei movimenti.",
+      "Lava i sintetici a bassa temperatura; rilasciano micro fibre, quindi lava meno."
+     ],
+     "q": "Quali tuoi capi hanno elasticità e come ti aiuta?",
+     "c": "Controlla quante etichette nel tuo armadio citano poliestere, nylon o elastan."
+    },
+    "pt": {
+     "t": "Os tecidos sintéticos",
+     "g": "Ver os pontos fortes do poliéster, do nylon e do elastano em elasticidade, durabilidade e desporto.",
+     "p": [
+      "As fibras sintéticas são feitas pelo ser humano, resistentes e de secagem rápida.",
+      "O elastano dá elasticidade e torna a roupa confortável ao mover.",
+      "Lava os sintéticos a baixa temperatura; soltam fibras minúsculas, por isso lava menos."
+     ],
+     "q": "Que peças tuas têm elasticidade e como te ajuda?",
+     "c": "Vê quantas etiquetas do teu guarda-roupa referem poliéster, nylon ou elastano."
+    },
+    "pt_BR": {
+     "t": "Os tecidos sintéticos",
+     "g": "Ver os pontos fortes do poliéster, do náilon e do elastano em elasticidade, durabilidade e esporte.",
+     "p": [
+      "As fibras sintéticas são feitas pelo ser humano, resistentes e de secagem rápida.",
+      "O elastano dá elasticidade e deixa a roupa confortável ao se mexer.",
+      "Lave sintéticos em baixa temperatura; soltam fibras minúsculas, então lave menos."
+     ],
+     "q": "Quais roupas suas têm elasticidade e como isso ajuda?",
+     "c": "Veja quantas etiquetas do seu guarda-roupa citam poliéster, náilon ou elastano."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fabric blends",
+     "g": "Understand why many clothes mix fibres and what each fibre adds.",
+     "p": [
+      "A blend mixes fibres to combine their strengths.",
+      "A little elastane adds stretch; polyester can add strength to cotton.",
+      "Blends often follow the care label of their most delicate fibre."
+     ],
+     "q": "Do you prefer pure natural fabrics or blends? Why?",
+     "c": "Find a blended garment today and note what each fibre might be doing."
+    },
+    "de": {
+     "t": "Stoffmischungen",
+     "g": "Verstehen, warum viele Kleidungsstücke Fasern mischen und was jede Faser beiträgt.",
+     "p": [
+      "Eine Mischung verbindet Fasern, um ihre Stärken zu kombinieren.",
+      "Etwas Elastan bringt Dehnung; Polyester kann Baumwolle robuster machen.",
+      "Bei Mischungen richtet man sich oft nach der empfindlichsten Faser."
+     ],
+     "q": "Magst du reine Naturstoffe lieber oder Mischungen? Warum?",
+     "c": "Finde heute ein Mischgewebe-Teil und überlege, was jede Faser darin leistet."
+    },
+    "es": {
+     "t": "Mezclas de tejidos",
+     "g": "Entender por qué mucha ropa mezcla fibras y qué aporta cada una.",
+     "p": [
+      "Una mezcla combina fibras para sumar sus ventajas.",
+      "Un poco de elastano da elasticidad; el poliéster puede dar resistencia al algodón.",
+      "En las mezclas suele seguirse el cuidado de la fibra más delicada."
+     ],
+     "q": "¿Prefieres tejidos naturales puros o mezclas? ¿Por qué?",
+     "c": "Busca hoy una prenda de mezcla y anota qué aporta cada fibra."
+    },
+    "fr": {
+     "t": "Les mélanges de fibres",
+     "g": "Comprendre pourquoi beaucoup de vêtements mélangent des fibres et ce que chacune apporte.",
+     "p": [
+      "Un mélange combine des fibres pour additionner leurs qualités.",
+      "Un peu d'élasthanne apporte de l'élasticité; le polyester renforce le coton.",
+      "Pour un mélange, on suit souvent l'entretien de la fibre la plus délicate."
+     ],
+     "q": "Préfères-tu les matières naturelles pures ou les mélanges ? Pourquoi ?",
+     "c": "Trouve aujourd'hui un vêtement en mélange et note ce que chaque fibre lui apporte."
+    },
+    "it": {
+     "t": "Le fibre miste",
+     "g": "Capire perché molti capi mescolano le fibre e cosa aggiunge ciascuna.",
+     "p": [
+      "Un misto combina le fibre per unirne i punti di forza.",
+      "Un po' di elastan dà elasticità; il poliestere può rendere il cotone più resistente.",
+      "Nei misti si segue spesso la cura della fibra più delicata."
+     ],
+     "q": "Preferisci i tessuti naturali puri o i misti? Perché?",
+     "c": "Trova oggi un capo in misto e annota cosa fa ciascuna fibra."
+    },
+    "pt": {
+     "t": "As misturas de fibras",
+     "g": "Perceber porque é que muita roupa mistura fibras e o que cada uma acrescenta.",
+     "p": [
+      "Uma mistura combina fibras para juntar os seus pontos fortes.",
+      "Um pouco de elastano dá elasticidade; o poliéster pode dar resistência ao algodão.",
+      "Nas misturas segue-se muitas vezes o cuidado da fibra mais delicada."
+     ],
+     "q": "Preferes tecidos naturais puros ou misturas? Porquê?",
+     "c": "Encontra hoje uma peça de mistura e anota o que cada fibra faz."
+    },
+    "pt_BR": {
+     "t": "As misturas de fibras",
+     "g": "Entender por que muita roupa mistura fibras e o que cada uma acrescenta.",
+     "p": [
+      "Uma mistura combina fibras para juntar seus pontos fortes.",
+      "Um pouco de elastano dá elasticidade; o poliéster pode dar resistência ao algodão.",
+      "Nas misturas, costuma-se seguir o cuidado da fibra mais delicada."
+     ],
+     "q": "Você prefere tecidos naturais puros ou misturas? Por quê?",
+     "c": "Encontre hoje uma peça de mistura e anote o que cada fibra faz."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading care labels",
+     "g": "Understand washing, drying and ironing symbols so clothes last longer.",
+     "p": [
+      "A wash tub symbol shows how to wash; a number is the maximum temperature.",
+      "A triangle is about bleach, a square about drying, an iron about ironing.",
+      "Following the label keeps colours, shape and fabric in good condition."
+     ],
+     "q": "Which care symbol have you always wondered about?",
+     "c": "Read the care labels of three garments today and note what each one asks for."
+    },
+    "de": {
+     "t": "Pflegeetiketten lesen",
+     "g": "Wasch-, Trocken- und Bügelsymbole verstehen, damit Kleidung länger hält.",
+     "p": [
+      "Ein Waschbottich-Symbol zeigt das Waschen; die Zahl ist die Höchsttemperatur.",
+      "Ein Dreieck steht für Bleichen, ein Quadrat fürs Trocknen, ein Bügeleisen fürs Bügeln.",
+      "Wer dem Etikett folgt, schont Farben, Form und Stoff."
+     ],
+     "q": "Über welches Pflegesymbol hast du dich schon immer gewundert?",
+     "c": "Lies heute die Pflegeetiketten von drei Teilen und notiere, was sie verlangen."
+    },
+    "es": {
+     "t": "Leer las etiquetas de cuidado",
+     "g": "Entender los símbolos de lavado, secado y planchado para que la ropa dure más.",
+     "p": [
+      "El símbolo de la tina indica el lavado; el número es la temperatura máxima.",
+      "Un triángulo habla de lejía, un cuadrado de secado y una plancha del planchado.",
+      "Seguir la etiqueta conserva colores, forma y tejido en buen estado."
+     ],
+     "q": "¿Qué símbolo de cuidado siempre te ha dado curiosidad?",
+     "c": "Lee hoy las etiquetas de tres prendas y anota qué pide cada una."
+    },
+    "fr": {
+     "t": "Lire les étiquettes d'entretien",
+     "g": "Comprendre les symboles de lavage, de séchage et de repassage pour que les vêtements durent.",
+     "p": [
+      "Le symbole du bac indique le lavage; le chiffre est la température maximale.",
+      "Un triangle concerne l'eau de Javel, un carré le séchage, un fer le repassage.",
+      "Suivre l'étiquette préserve couleurs, forme et tissu."
+     ],
+     "q": "Quel symbole d'entretien t'a toujours intrigué ?",
+     "c": "Lis aujourd'hui les étiquettes de trois vêtements et note ce que chacune demande."
+    },
+    "it": {
+     "t": "Leggere le etichette di lavaggio",
+     "g": "Capire i simboli di lavaggio, asciugatura e stiratura perché i vestiti durino di più.",
+     "p": [
+      "Il simbolo della bacinella indica il lavaggio; il numero è la temperatura massima.",
+      "Un triangolo riguarda la candeggina, un quadrato l'asciugatura, un ferro la stiratura.",
+      "Seguire l'etichetta mantiene colori, forma e tessuto in buono stato."
+     ],
+     "q": "Quale simbolo di lavaggio ti ha sempre incuriosito?",
+     "c": "Leggi oggi le etichette di tre capi e annota cosa chiede ciascuna."
+    },
+    "pt": {
+     "t": "Ler as etiquetas de cuidados",
+     "g": "Perceber os símbolos de lavagem, secagem e engomar para a roupa durar mais.",
+     "p": [
+      "O símbolo da selha indica a lavagem; o número é a temperatura máxima.",
+      "Um triângulo refere-se à lixívia, um quadrado à secagem, um ferro ao engomar.",
+      "Seguir a etiqueta mantém cores, forma e tecido em bom estado."
+     ],
+     "q": "Que símbolo de cuidados sempre te intrigou?",
+     "c": "Lê hoje as etiquetas de três peças e anota o que cada uma pede."
+    },
+    "pt_BR": {
+     "t": "Lendo as etiquetas de cuidados",
+     "g": "Entender os símbolos de lavagem, secagem e passar para a roupa durar mais.",
+     "p": [
+      "O símbolo da bacia indica a lavagem; o número é a temperatura máxima.",
+      "Um triângulo trata de alvejante, um quadrado de secagem, um ferro de passar.",
+      "Seguir a etiqueta mantém cores, forma e tecido em bom estado."
+     ],
+     "q": "Qual símbolo de cuidados sempre deixou você curioso?",
+     "c": "Leia hoje as etiquetas de três peças e anote o que cada uma pede."
+    }
+   }
+  }
+ ]
+}

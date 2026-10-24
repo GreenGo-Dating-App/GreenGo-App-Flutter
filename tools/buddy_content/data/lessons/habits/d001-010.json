@@ -1,0 +1,835 @@
+{
+ "topic": "habits",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to your habits journey",
+     "g": "Understand what a habit is and what we will build together.",
+     "p": [
+      "A habit is an action you repeat until it feels almost automatic.",
+      "Small daily actions add up to big changes over time.",
+      "Each day you get one short lesson and one tiny challenge."
+     ],
+     "q": "Which part of your daily life would you love to make easier?",
+     "c": "Today, notice one thing you do on autopilot, like brushing your teeth."
+    },
+    "de": {
+     "t": "Willkommen auf deiner Gewohnheitsreise",
+     "g": "Verstehen, was eine Gewohnheit ist und was wir gemeinsam aufbauen.",
+     "p": [
+      "Eine Gewohnheit ist eine Handlung, die du so oft wiederholst, dass sie fast von selbst läuft.",
+      "Kleine tägliche Schritte summieren sich mit der Zeit zu großen Veränderungen.",
+      "Jeden Tag gibt es eine kurze Lektion und eine winzige Aufgabe."
+     ],
+     "q": "Welchen Teil deines Alltags würdest du gern leichter machen?",
+     "c": "Achte heute auf eine Sache, die du automatisch tust, etwa Zähneputzen."
+    },
+    "es": {
+     "t": "Bienvenido a tu viaje de hábitos",
+     "g": "Entender qué es un hábito y qué vamos a construir juntos.",
+     "p": [
+      "Un hábito es una acción que repites hasta que casi sale sola.",
+      "Las pequeñas acciones diarias se suman y cambian mucho con el tiempo.",
+      "Cada día tendrás una lección corta y un mini reto."
+     ],
+     "q": "¿Qué parte de tu día a día te gustaría hacer más fácil?",
+     "c": "Hoy fíjate en algo que haces en piloto automático, como lavarte los dientes."
+    },
+    "fr": {
+     "t": "Bienvenue dans ton voyage des habitudes",
+     "g": "Comprendre ce qu'est une habitude et ce que nous allons construire ensemble.",
+     "p": [
+      "Une habitude est une action répétée jusqu'à devenir presque automatique.",
+      "Les petites actions quotidiennes s'additionnent et changent beaucoup avec le temps.",
+      "Chaque jour, une courte leçon et un mini défi t'attendent."
+     ],
+     "q": "Quelle partie de ton quotidien aimerais-tu rendre plus simple ?",
+     "c": "Aujourd'hui, repère une chose que tu fais en pilote automatique, comme te brosser les dents."
+    },
+    "it": {
+     "t": "Benvenuto nel tuo viaggio delle abitudini",
+     "g": "Capire cos'è un'abitudine e cosa costruiremo insieme.",
+     "p": [
+      "Un'abitudine è un gesto che ripeti finché diventa quasi automatico.",
+      "Le piccole azioni quotidiane si sommano e col tempo cambiano molto.",
+      "Ogni giorno avrai una breve lezione e una piccola sfida."
+     ],
+     "q": "Quale parte della tua giornata vorresti rendere più facile?",
+     "c": "Oggi nota una cosa che fai col pilota automatico, come lavarti i denti."
+    },
+    "pt": {
+     "t": "Bem-vindo à tua viagem dos hábitos",
+     "g": "Perceber o que é um hábito e o que vamos construir juntos.",
+     "p": [
+      "Um hábito é uma ação que repetes até quase sair sozinha.",
+      "As pequenas ações diárias somam-se e mudam muito com o tempo.",
+      "Todos os dias tens uma lição curta e um mini desafio."
+     ],
+     "q": "Que parte do teu dia a dia gostarias de tornar mais fácil?",
+     "c": "Hoje repara numa coisa que fazes em piloto automático, como lavar os dentes."
+    },
+    "pt_BR": {
+     "t": "Boas-vindas à sua jornada de hábitos",
+     "g": "Entender o que é um hábito e o que vamos construir juntos.",
+     "p": [
+      "Um hábito é uma ação que você repete até quase sair sozinha.",
+      "Pequenas ações diárias se somam e mudam muito com o tempo.",
+      "Todo dia você recebe uma lição curta e um mini desafio."
+     ],
+     "q": "Que parte da sua rotina você gostaria de deixar mais fácil?",
+     "c": "Hoje observe algo que você faz no piloto automático, como escovar os dentes."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your habits snapshot",
+     "g": "Take a friendly look at the habits you have today.",
+     "p": [
+      "List habits you already have, good and not so good, without judging.",
+      "Write down two or three habits you would like to add.",
+      "Note one habit you would like to reduce, just to be aware."
+     ],
+     "q": "Which of your current habits are you most proud of?",
+     "c": "Write a short list of three habits you have, three you want, one to drop."
+    },
+    "de": {
+     "t": "Dein Gewohnheits-Überblick",
+     "g": "Einen freundlichen Blick auf deine heutigen Gewohnheiten werfen.",
+     "p": [
+      "Liste deine jetzigen Gewohnheiten auf, gute wie weniger gute, ohne zu urteilen.",
+      "Schreibe zwei oder drei Gewohnheiten auf, die du gern ergänzen würdest.",
+      "Notiere eine Gewohnheit, die du verringern möchtest, nur zur Bewusstheit."
+     ],
+     "q": "Auf welche deiner Gewohnheiten bist du am meisten stolz?",
+     "c": "Schreibe drei Gewohnheiten auf, die du hast, drei, die du willst, und eine zum Loslassen."
+    },
+    "es": {
+     "t": "Tu foto de hábitos",
+     "g": "Mirar con cariño los hábitos que tienes hoy.",
+     "p": [
+      "Anota los hábitos que ya tienes, buenos y no tan buenos, sin juzgar.",
+      "Escribe dos o tres hábitos que te gustaría añadir.",
+      "Apunta un hábito que quieras reducir, solo para ser consciente."
+     ],
+     "q": "¿De cuál de tus hábitos actuales te sientes más orgulloso?",
+     "c": "Escribe una lista corta: tres hábitos que tienes, tres que quieres y uno a soltar."
+    },
+    "fr": {
+     "t": "Ton état des lieux",
+     "g": "Jeter un regard bienveillant sur tes habitudes actuelles.",
+     "p": [
+      "Note les habitudes que tu as déjà, bonnes ou moins bonnes, sans te juger.",
+      "Écris deux ou trois habitudes que tu aimerais ajouter.",
+      "Repère une habitude à réduire, simplement pour en prendre conscience."
+     ],
+     "q": "De laquelle de tes habitudes es-tu le plus fier ?",
+     "c": "Écris trois habitudes que tu as, trois que tu veux et une à laisser."
+    },
+    "it": {
+     "t": "La tua fotografia delle abitudini",
+     "g": "Dare uno sguardo gentile alle abitudini che hai oggi.",
+     "p": [
+      "Elenca le abitudini che hai già, buone e meno buone, senza giudicare.",
+      "Scrivi due o tre abitudini che vorresti aggiungere.",
+      "Segna un'abitudine che vorresti ridurre, solo per esserne consapevole."
+     ],
+     "q": "Di quale tua abitudine attuale sei più orgoglioso?",
+     "c": "Scrivi tre abitudini che hai, tre che vuoi e una da lasciare."
+    },
+    "pt": {
+     "t": "O retrato dos teus hábitos",
+     "g": "Olhar com carinho para os hábitos que tens hoje.",
+     "p": [
+      "Anota os hábitos que já tens, bons e menos bons, sem julgar.",
+      "Escreve dois ou três hábitos que gostarias de acrescentar.",
+      "Regista um hábito que queiras reduzir, só para teres consciência."
+     ],
+     "q": "De qual dos teus hábitos atuais tens mais orgulho?",
+     "c": "Escreve uma lista curta: três hábitos que tens, três que queres e um a largar."
+    },
+    "pt_BR": {
+     "t": "Seu retrato de hábitos",
+     "g": "Olhar com carinho para os hábitos que você tem hoje.",
+     "p": [
+      "Anote os hábitos que você já tem, bons e nem tanto, sem julgar.",
+      "Escreva dois ou três hábitos que você gostaria de adicionar.",
+      "Marque um hábito que queira reduzir, só para ter consciência."
+     ],
+     "q": "De qual dos seus hábitos atuais você mais se orgulha?",
+     "c": "Escreva uma lista curta: três hábitos que tem, três que quer e um para largar."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why habits matter",
+     "g": "See how routines save energy and shape your days.",
+     "p": [
+      "Your brain loves shortcuts, so repeated actions become automatic.",
+      "Automatic routines free up energy for things that need thought.",
+      "Many daily choices are habits, so small tweaks shape a lot."
+     ],
+     "q": "What is one routine you do so automatically you barely notice it?",
+     "c": "Pick one routine today and notice how little effort it takes."
+    },
+    "de": {
+     "t": "Warum Gewohnheiten zählen",
+     "g": "Sehen, wie Routinen Energie sparen und deine Tage prägen.",
+     "p": [
+      "Dein Gehirn liebt Abkürzungen, darum werden Wiederholungen automatisch.",
+      "Automatische Abläufe geben dir Energie für Dinge, die Nachdenken brauchen.",
+      "Viele Alltagsentscheidungen sind Gewohnheiten, kleine Anpassungen wirken also stark."
+     ],
+     "q": "Welche Routine machst du so automatisch, dass du sie kaum bemerkst?",
+     "c": "Wähle heute eine Routine und achte darauf, wie wenig Mühe sie kostet."
+    },
+    "es": {
+     "t": "Por qué importan los hábitos",
+     "g": "Ver cómo las rutinas ahorran energía y moldean tus días.",
+     "p": [
+      "Tu cerebro ama los atajos, por eso lo repetido se vuelve automático.",
+      "Las rutinas automáticas liberan energía para lo que requiere pensar.",
+      "Muchas decisiones diarias son hábitos, así que pequeños ajustes pesan mucho."
+     ],
+     "q": "¿Qué rutina haces tan automáticamente que casi no la notas?",
+     "c": "Elige hoy una rutina y fíjate en lo poco esfuerzo que te cuesta."
+    },
+    "fr": {
+     "t": "Pourquoi les habitudes comptent",
+     "g": "Voir comment les routines économisent de l'énergie et façonnent tes journées.",
+     "p": [
+      "Ton cerveau adore les raccourcis : ce qui se répète devient automatique.",
+      "Les routines automatiques libèrent de l'énergie pour ce qui demande réflexion.",
+      "Beaucoup de choix quotidiens sont des habitudes : de petits ajustements pèsent lourd."
+     ],
+     "q": "Quelle routine fais-tu si automatiquement que tu la remarques à peine ?",
+     "c": "Choisis une routine aujourd'hui et vois combien elle demande peu d'effort."
+    },
+    "it": {
+     "t": "Perché le abitudini contano",
+     "g": "Vedere come le routine risparmiano energia e plasmano le giornate.",
+     "p": [
+      "Il cervello ama le scorciatoie, così ciò che ripeti diventa automatico.",
+      "Le routine automatiche liberano energia per ciò che richiede riflessione.",
+      "Molte scelte quotidiane sono abitudini, quindi piccoli ritocchi contano molto."
+     ],
+     "q": "Quale routine fai in modo così automatico che quasi non la noti?",
+     "c": "Scegli oggi una routine e nota quanto poco sforzo richiede."
+    },
+    "pt": {
+     "t": "Porque importam os hábitos",
+     "g": "Ver como as rotinas poupam energia e moldam os teus dias.",
+     "p": [
+      "O cérebro adora atalhos, por isso o que se repete torna-se automático.",
+      "As rotinas automáticas libertam energia para o que exige pensar.",
+      "Muitas escolhas diárias são hábitos, por isso pequenos ajustes pesam muito."
+     ],
+     "q": "Que rotina fazes de forma tão automática que quase nem notas?",
+     "c": "Escolhe hoje uma rotina e repara em como custa pouco esforço."
+    },
+    "pt_BR": {
+     "t": "Por que os hábitos importam",
+     "g": "Ver como as rotinas poupam energia e moldam seus dias.",
+     "p": [
+      "O cérebro adora atalhos, por isso o que se repete vira automático.",
+      "Rotinas automáticas liberam energia para o que exige pensar.",
+      "Muitas escolhas diárias são hábitos, então pequenos ajustes pesam muito."
+     ],
+     "q": "Que rotina você faz tão automaticamente que quase nem percebe?",
+     "c": "Escolha hoje uma rotina e note como ela custa pouco esforço."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The habit loop",
+     "g": "Learn the simple cue, routine, reward pattern.",
+     "p": [
+      "A cue is the trigger that tells you it is time to act.",
+      "The routine is the action itself, what you actually do.",
+      "The reward is the good feeling that makes you want to repeat it."
+     ],
+     "q": "Can you describe the cue, routine and reward of your morning coffee or tea?",
+     "c": "Pick one habit and write its cue, routine and reward in three short lines."
+    },
+    "de": {
+     "t": "Die Gewohnheitsschleife",
+     "g": "Das einfache Muster aus Auslöser, Routine und Belohnung kennenlernen.",
+     "p": [
+      "Der Auslöser ist das Signal, dass es Zeit zum Handeln ist.",
+      "Die Routine ist die Handlung selbst, das, was du tatsächlich tust.",
+      "Die Belohnung ist das gute Gefühl, das dich zur Wiederholung bewegt."
+     ],
+     "q": "Kannst du Auslöser, Routine und Belohnung deines Morgenkaffees oder -tees beschreiben?",
+     "c": "Wähle eine Gewohnheit und schreibe Auslöser, Routine und Belohnung in drei Zeilen auf."
+    },
+    "es": {
+     "t": "El bucle del hábito",
+     "g": "Conocer el sencillo patrón de señal, rutina y recompensa.",
+     "p": [
+      "La señal es el detonante que te dice que es hora de actuar.",
+      "La rutina es la acción en sí, lo que realmente haces.",
+      "La recompensa es la sensación agradable que te hace repetir."
+     ],
+     "q": "¿Puedes describir la señal, la rutina y la recompensa de tu café o té matinal?",
+     "c": "Elige un hábito y escribe su señal, rutina y recompensa en tres líneas."
+    },
+    "fr": {
+     "t": "La boucle de l'habitude",
+     "g": "Découvrir le schéma simple signal, routine, récompense.",
+     "p": [
+      "Le signal est le déclencheur qui t'indique qu'il est temps d'agir.",
+      "La routine est l'action elle-même, ce que tu fais réellement.",
+      "La récompense est la sensation agréable qui donne envie de recommencer."
+     ],
+     "q": "Peux-tu décrire le signal, la routine et la récompense de ton café ou thé du matin ?",
+     "c": "Choisis une habitude et note son signal, sa routine et sa récompense en trois lignes."
+    },
+    "it": {
+     "t": "Il ciclo dell'abitudine",
+     "g": "Imparare il semplice schema segnale, routine, ricompensa.",
+     "p": [
+      "Il segnale è lo stimolo che ti dice che è ora di agire.",
+      "La routine è l'azione vera e propria, quello che fai davvero.",
+      "La ricompensa è la sensazione piacevole che ti fa ripetere."
+     ],
+     "q": "Sai descrivere segnale, routine e ricompensa del tuo caffè o tè mattutino?",
+     "c": "Scegli un'abitudine e scrivi segnale, routine e ricompensa in tre righe."
+    },
+    "pt": {
+     "t": "O ciclo do hábito",
+     "g": "Aprender o padrão simples de sinal, rotina e recompensa.",
+     "p": [
+      "O sinal é o gatilho que te diz que é hora de agir.",
+      "A rotina é a ação em si, aquilo que realmente fazes.",
+      "A recompensa é a sensação boa que te leva a repetir."
+     ],
+     "q": "Consegues descrever o sinal, a rotina e a recompensa do teu café ou chá da manhã?",
+     "c": "Escolhe um hábito e escreve o sinal, a rotina e a recompensa em três linhas."
+    },
+    "pt_BR": {
+     "t": "O ciclo do hábito",
+     "g": "Aprender o padrão simples de gatilho, rotina e recompensa.",
+     "p": [
+      "O gatilho é o sinal que diz que é hora de agir.",
+      "A rotina é a ação em si, aquilo que você realmente faz.",
+      "A recompensa é a sensação boa que faz você repetir."
+     ],
+     "q": "Você consegue descrever o gatilho, a rotina e a recompensa do seu café ou chá da manhã?",
+     "c": "Escolha um hábito e escreva o gatilho, a rotina e a recompensa em três linhas."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spotting your cues",
+     "g": "Notice what triggers your routines.",
+     "p": [
+      "Cues often come from a time, a place, a person or a feeling.",
+      "Ask what happened right before you started a habit.",
+      "Noticing without judging is the first step to changing anything."
+     ],
+     "q": "What usually happens right before you reach for your phone?",
+     "c": "Today, note the cue behind three of your small routines."
+    },
+    "de": {
+     "t": "Deine Auslöser erkennen",
+     "g": "Bemerken, was deine Routinen auslöst.",
+     "p": [
+      "Auslöser kommen oft von einer Uhrzeit, einem Ort, einer Person oder einem Gefühl.",
+      "Frage dich, was direkt vor einer Gewohnheit passiert ist.",
+      "Beobachten ohne zu urteilen ist der erste Schritt zu jeder Veränderung."
+     ],
+     "q": "Was passiert meist kurz bevor du zum Handy greifst?",
+     "c": "Notiere heute den Auslöser hinter drei deiner kleinen Routinen."
+    },
+    "es": {
+     "t": "Detecta tus señales",
+     "g": "Notar qué dispara tus rutinas.",
+     "p": [
+      "Las señales suelen venir de una hora, un lugar, una persona o una emoción.",
+      "Pregúntate qué pasó justo antes de empezar un hábito.",
+      "Observar sin juzgar es el primer paso para cambiar cualquier cosa."
+     ],
+     "q": "¿Qué suele pasar justo antes de que cojas el móvil?",
+     "c": "Hoy anota la señal detrás de tres de tus pequeñas rutinas."
+    },
+    "fr": {
+     "t": "Repérer tes signaux",
+     "g": "Remarquer ce qui déclenche tes routines.",
+     "p": [
+      "Les signaux viennent souvent d'une heure, d'un lieu, d'une personne ou d'une émotion.",
+      "Demande-toi ce qui s'est passé juste avant le début d'une habitude.",
+      "Observer sans juger est la première étape pour tout changer."
+     ],
+     "q": "Que se passe-t-il d'habitude juste avant que tu prennes ton téléphone ?",
+     "c": "Aujourd'hui, note le signal derrière trois de tes petites routines."
+    },
+    "it": {
+     "t": "Riconosci i tuoi segnali",
+     "g": "Notare cosa fa partire le tue routine.",
+     "p": [
+      "I segnali nascono spesso da un orario, un luogo, una persona o un'emozione.",
+      "Chiediti cosa è successo subito prima di iniziare un'abitudine.",
+      "Osservare senza giudicare è il primo passo per cambiare qualsiasi cosa."
+     ],
+     "q": "Cosa succede di solito subito prima che tu prenda il telefono?",
+     "c": "Oggi annota il segnale dietro tre tue piccole routine."
+    },
+    "pt": {
+     "t": "Descobre os teus sinais",
+     "g": "Reparar no que dispara as tuas rotinas.",
+     "p": [
+      "Os sinais vêm muitas vezes de uma hora, um lugar, uma pessoa ou uma emoção.",
+      "Pergunta o que aconteceu mesmo antes de começares um hábito.",
+      "Observar sem julgar é o primeiro passo para mudar seja o que for."
+     ],
+     "q": "O que costuma acontecer mesmo antes de pegares no telemóvel?",
+     "c": "Hoje anota o sinal por trás de três das tuas pequenas rotinas."
+    },
+    "pt_BR": {
+     "t": "Descubra seus gatilhos",
+     "g": "Perceber o que dispara suas rotinas.",
+     "p": [
+      "Gatilhos vêm muitas vezes de um horário, um lugar, uma pessoa ou uma emoção.",
+      "Pergunte o que aconteceu logo antes de começar um hábito.",
+      "Observar sem julgar é o primeiro passo para mudar qualquer coisa."
+     ],
+     "q": "O que costuma acontecer logo antes de você pegar o celular?",
+     "c": "Hoje anote o gatilho por trás de três das suas pequenas rotinas."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rewards that stick",
+     "g": "Learn why an instant good feeling makes habits repeat.",
+     "p": [
+      "The brain repeats what feels good, and feels it soon.",
+      "Long-term benefits are too far away to drive daily action.",
+      "Add a small, healthy, immediate reward to your habit."
+     ],
+     "q": "What small treat or good feeling would motivate you right after a task?",
+     "c": "After one habit today, pause and enjoy a quick reward, like a stretch or a smile."
+    },
+    "de": {
+     "t": "Belohnungen, die wirken",
+     "g": "Lernen, warum ein sofortiges gutes Gefühl Gewohnheiten festigt.",
+     "p": [
+      "Das Gehirn wiederholt, was sich gut anfühlt, und zwar zeitnah.",
+      "Langfristige Vorteile liegen zu weit weg, um tägliches Handeln zu tragen.",
+      "Füge deiner Gewohnheit eine kleine, gesunde, sofortige Belohnung hinzu."
+     ],
+     "q": "Welche kleine Freude würde dich direkt nach einer Aufgabe motivieren?",
+     "c": "Gönne dir heute nach einer Gewohnheit kurz eine Belohnung, etwa Dehnen oder ein Lächeln."
+    },
+    "es": {
+     "t": "Recompensas que enganchan",
+     "g": "Aprender por qué una sensación agradable inmediata repite el hábito.",
+     "p": [
+      "El cerebro repite lo que se siente bien, y pronto.",
+      "Los beneficios a largo plazo quedan muy lejos para mover la acción diaria.",
+      "Añade a tu hábito una recompensa pequeña, sana e inmediata."
+     ],
+     "q": "¿Qué pequeño gusto o sensación te motivaría justo después de una tarea?",
+     "c": "Tras un hábito hoy, haz una pausa y disfruta una recompensa breve, como estirarte o sonreír."
+    },
+    "fr": {
+     "t": "Des récompenses qui durent",
+     "g": "Comprendre pourquoi un plaisir immédiat fait répéter les habitudes.",
+     "p": [
+      "Le cerveau répète ce qui fait du bien, et vite.",
+      "Les bénéfices à long terme sont trop lointains pour guider l'action quotidienne.",
+      "Ajoute à ton habitude une petite récompense saine et immédiate."
+     ],
+     "q": "Quelle petite gâterie ou sensation te motiverait juste après une tâche ?",
+     "c": "Après une habitude aujourd'hui, savoure une petite récompense, comme t'étirer ou sourire."
+    },
+    "it": {
+     "t": "Ricompense che funzionano",
+     "g": "Capire perché un piacere immediato fa ripetere le abitudini.",
+     "p": [
+      "Il cervello ripete ciò che dà piacere, e lo fa presto.",
+      "I benefici a lungo termine sono troppo lontani per guidare l'azione quotidiana.",
+      "Aggiungi alla tua abitudine una piccola ricompensa sana e immediata."
+     ],
+     "q": "Quale piccola gratificazione ti motiverebbe subito dopo un compito?",
+     "c": "Dopo un'abitudine oggi, fermati e goditi una ricompensa breve, come stirarti o sorridere."
+    },
+    "pt": {
+     "t": "Recompensas que ficam",
+     "g": "Perceber porque é que uma sensação boa imediata repete o hábito.",
+     "p": [
+      "O cérebro repete o que sabe bem, e cedo.",
+      "Os benefícios a longo prazo estão longe demais para mover a ação diária.",
+      "Junta ao teu hábito uma recompensa pequena, saudável e imediata."
+     ],
+     "q": "Que pequeno mimo ou sensação te motivaria logo a seguir a uma tarefa?",
+     "c": "Depois de um hábito hoje, faz uma pausa e goza uma recompensa breve, como espreguiçar ou sorrir."
+    },
+    "pt_BR": {
+     "t": "Recompensas que pegam",
+     "g": "Entender por que uma sensação boa imediata faz o hábito se repetir.",
+     "p": [
+      "O cérebro repete o que dá prazer, e logo.",
+      "Benefícios de longo prazo estão longe demais para mover a ação diária.",
+      "Junte ao seu hábito uma recompensa pequena, saudável e imediata."
+     ],
+     "q": "Que pequeno mimo ou sensação motivaria você logo depois de uma tarefa?",
+     "c": "Depois de um hábito hoje, faça uma pausa e curta uma recompensa breve, como se alongar ou sorrir."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cravings and anticipation",
+     "g": "See how expecting a reward builds the urge to start.",
+     "p": [
+      "A craving is the wish for the feeling a habit brings, not the habit itself.",
+      "Looking forward to a reward makes starting easier.",
+      "Pair a task you avoid with something you enjoy, like a favourite podcast."
+     ],
+     "q": "What do you look forward to most during a normal day?",
+     "c": "Pair one chore today with something enjoyable, such as music or a nice drink."
+    },
+    "de": {
+     "t": "Verlangen und Vorfreude",
+     "g": "Sehen, wie die Erwartung einer Belohnung den Antrieb zum Start weckt.",
+     "p": [
+      "Verlangen ist der Wunsch nach dem Gefühl, das eine Gewohnheit bringt, nicht nach ihr selbst.",
+      "Vorfreude auf eine Belohnung macht das Anfangen leichter.",
+      "Koppel eine ungeliebte Aufgabe mit etwas Schönem, etwa deinem Lieblingspodcast."
+     ],
+     "q": "Worauf freust du dich an einem normalen Tag am meisten?",
+     "c": "Verbinde heute eine Pflicht mit etwas Angenehmem, etwa Musik oder einem guten Getränk."
+    },
+    "es": {
+     "t": "Antojos y expectativa",
+     "g": "Ver cómo esperar una recompensa crea las ganas de empezar.",
+     "p": [
+      "El antojo es el deseo de la sensación que da un hábito, no del hábito en sí.",
+      "Esperar con ilusión una recompensa facilita empezar.",
+      "Une una tarea que evitas con algo que disfrutes, como tu pódcast favorito."
+     ],
+     "q": "¿Qué es lo que más esperas con ganas en un día normal?",
+     "c": "Hoy combina una tarea pesada con algo agradable, como música o una bebida rica."
+    },
+    "fr": {
+     "t": "Envies et anticipation",
+     "g": "Voir comment l'attente d'une récompense donne envie de commencer.",
+     "p": [
+      "L'envie est le désir de la sensation qu'apporte l'habitude, pas de l'habitude elle-même.",
+      "Se réjouir d'une récompense facilite le démarrage.",
+      "Associe une tâche que tu évites à quelque chose que tu aimes, comme ton podcast préféré."
+     ],
+     "q": "Qu'attends-tu avec le plus d'impatience dans une journée ordinaire ?",
+     "c": "Aujourd'hui, associe une corvée à un plaisir, comme de la musique ou une bonne boisson."
+    },
+    "it": {
+     "t": "Desiderio e attesa",
+     "g": "Vedere come attendere una ricompensa crea la voglia di iniziare.",
+     "p": [
+      "Il desiderio è la voglia della sensazione che l'abitudine dà, non dell'abitudine in sé.",
+      "Pregustare una ricompensa rende più facile iniziare.",
+      "Abbina un compito che eviti a qualcosa che ti piace, come il tuo podcast preferito."
+     ],
+     "q": "Cosa non vedi l'ora di fare in una giornata normale?",
+     "c": "Oggi abbina una faccenda a qualcosa di piacevole, come musica o una bella bevanda."
+    },
+    "pt": {
+     "t": "Desejo e expectativa",
+     "g": "Ver como esperar uma recompensa cria a vontade de começar.",
+     "p": [
+      "O desejo é a vontade da sensação que o hábito dá, não do hábito em si.",
+      "Estar ansioso por uma recompensa facilita o início.",
+      "Junta uma tarefa que evitas a algo de que gostas, como o teu podcast favorito."
+     ],
+     "q": "O que mais esperas com entusiasmo num dia normal?",
+     "c": "Hoje junta uma tarefa chata a algo agradável, como música ou uma bebida boa."
+    },
+    "pt_BR": {
+     "t": "Vontade e expectativa",
+     "g": "Ver como esperar uma recompensa cria a vontade de começar.",
+     "p": [
+      "A vontade é o desejo da sensação que o hábito traz, não do hábito em si.",
+      "Ficar ansioso por uma recompensa facilita o começo.",
+      "Junte uma tarefa que você evita a algo de que gosta, como seu podcast favorito."
+     ],
+     "q": "O que você mais espera com ansiedade boa num dia normal?",
+     "c": "Hoje combine uma tarefa chata com algo agradável, como música ou uma bebida gostosa."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Habits versus goals",
+     "g": "Understand why daily systems matter more than goals alone.",
+     "p": [
+      "A goal is the destination, and a habit is the road you walk daily.",
+      "Two people with the same goal can get different results from different routines.",
+      "Focus on what you do today, and the goal takes care of itself more often."
+     ],
+     "q": "What goal do you have, and what daily action could support it?",
+     "c": "Write one goal and one tiny daily action that moves you toward it."
+    },
+    "de": {
+     "t": "Gewohnheiten und Ziele",
+     "g": "Verstehen, warum tägliche Systeme mehr zählen als Ziele allein.",
+     "p": [
+      "Ein Ziel ist das Ziel der Reise, eine Gewohnheit der Weg, den du täglich gehst.",
+      "Zwei Menschen mit gleichem Ziel erreichen mit anderen Routinen unterschiedliche Ergebnisse.",
+      "Konzentriere dich auf das Heute, dann kommt das Ziel oft von allein näher."
+     ],
+     "q": "Welches Ziel hast du, und welche tägliche Handlung könnte es unterstützen?",
+     "c": "Schreibe ein Ziel und eine winzige tägliche Handlung auf, die dich ihm näherbringt."
+    },
+    "es": {
+     "t": "Hábitos frente a metas",
+     "g": "Entender por qué los sistemas diarios importan más que las metas solas.",
+     "p": [
+      "Una meta es el destino y el hábito es el camino que recorres cada día.",
+      "Dos personas con la misma meta logran resultados distintos con rutinas distintas.",
+      "Céntrate en lo que haces hoy y la meta suele ir llegando sola."
+     ],
+     "q": "¿Qué meta tienes y qué acción diaria podría apoyarla?",
+     "c": "Escribe una meta y una acción diaria minúscula que te acerque a ella."
+    },
+    "fr": {
+     "t": "Habitudes ou objectifs",
+     "g": "Comprendre pourquoi les routines quotidiennes comptent plus que les objectifs seuls.",
+     "p": [
+      "Un objectif est la destination, une habitude est la route que tu parcours chaque jour.",
+      "Deux personnes au même objectif obtiennent des résultats différents selon leurs routines.",
+      "Concentre-toi sur ce que tu fais aujourd'hui, l'objectif suit souvent de lui-même."
+     ],
+     "q": "Quel objectif as-tu, et quelle action quotidienne pourrait le soutenir ?",
+     "c": "Écris un objectif et une toute petite action quotidienne qui t'en rapproche."
+    },
+    "it": {
+     "t": "Abitudini e obiettivi",
+     "g": "Capire perché i sistemi quotidiani contano più dei soli obiettivi.",
+     "p": [
+      "L'obiettivo è la meta, l'abitudine è la strada che percorri ogni giorno.",
+      "Due persone con lo stesso obiettivo ottengono risultati diversi con routine diverse.",
+      "Concentrati su ciò che fai oggi, e l'obiettivo spesso si avvicina da solo."
+     ],
+     "q": "Che obiettivo hai e quale azione quotidiana potrebbe sostenerlo?",
+     "c": "Scrivi un obiettivo e una minuscola azione quotidiana che ti avvicini a esso."
+    },
+    "pt": {
+     "t": "Hábitos e metas",
+     "g": "Perceber porque é que os sistemas diários contam mais do que as metas sozinhas.",
+     "p": [
+      "Uma meta é o destino e o hábito é o caminho que percorres todos os dias.",
+      "Duas pessoas com a mesma meta têm resultados diferentes com rotinas diferentes.",
+      "Foca-te no que fazes hoje e a meta tende a chegar por si."
+     ],
+     "q": "Que meta tens e que ação diária a poderia apoiar?",
+     "c": "Escreve uma meta e uma ação diária minúscula que te aproxime dela."
+    },
+    "pt_BR": {
+     "t": "Hábitos versus metas",
+     "g": "Entender por que sistemas diários importam mais do que metas sozinhas.",
+     "p": [
+      "Uma meta é o destino e o hábito é o caminho que você percorre todo dia.",
+      "Duas pessoas com a mesma meta têm resultados diferentes com rotinas diferentes.",
+      "Foque no que você faz hoje e a meta tende a chegar sozinha."
+     ],
+     "q": "Que meta você tem e que ação diária poderia apoiá-la?",
+     "c": "Escreva uma meta e uma ação diária minúscula que aproxime você dela."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing your first habit",
+     "g": "Pick one small, positive habit that matters to you.",
+     "p": [
+      "Choose something you truly want, not what others expect of you.",
+      "Start with one habit only, so your energy stays focused.",
+      "Make it easy enough that you could do it on a tired day."
+     ],
+     "q": "Which one habit would make you smile if it became natural?",
+     "c": "Decide on your first habit and write it in one clear sentence."
+    },
+    "de": {
+     "t": "Deine erste Gewohnheit wählen",
+     "g": "Eine kleine, positive Gewohnheit wählen, die dir wichtig ist.",
+     "p": [
+      "Wähle etwas, das du wirklich willst, nicht was andere erwarten.",
+      "Starte nur mit einer Gewohnheit, damit deine Energie gebündelt bleibt.",
+      "Mach sie so leicht, dass du sie auch an einem müden Tag schaffst."
+     ],
+     "q": "Welche eine Gewohnheit würde dich freuen, wenn sie selbstverständlich würde?",
+     "c": "Entscheide dich für deine erste Gewohnheit und schreibe sie in einem klaren Satz auf."
+    },
+    "es": {
+     "t": "Elige tu primer hábito",
+     "g": "Escoger un hábito pequeño y positivo que te importe.",
+     "p": [
+      "Elige algo que de verdad quieras, no lo que otros esperan de ti.",
+      "Empieza con un solo hábito para mantener la energía enfocada.",
+      "Hazlo tan fácil que puedas cumplirlo en un día cansado."
+     ],
+     "q": "¿Qué hábito te haría sonreír si se volviera natural?",
+     "c": "Decide tu primer hábito y escríbelo en una frase clara."
+    },
+    "fr": {
+     "t": "Choisir ta première habitude",
+     "g": "Choisir une petite habitude positive qui compte pour toi.",
+     "p": [
+      "Choisis ce que tu veux vraiment, pas ce que les autres attendent.",
+      "Commence par une seule habitude pour garder ton énergie concentrée.",
+      "Rends-la assez facile pour la faire même un jour de fatigue."
+     ],
+     "q": "Quelle habitude te ferait sourire si elle devenait naturelle ?",
+     "c": "Décide de ta première habitude et écris-la en une phrase claire."
+    },
+    "it": {
+     "t": "Scegli la tua prima abitudine",
+     "g": "Scegliere una piccola abitudine positiva che ti sta a cuore.",
+     "p": [
+      "Scegli qualcosa che desideri davvero, non ciò che gli altri si aspettano.",
+      "Parti con una sola abitudine, così l'energia resta concentrata.",
+      "Rendila abbastanza facile da farla anche in un giorno stanco."
+     ],
+     "q": "Quale abitudine ti farebbe sorridere se diventasse naturale?",
+     "c": "Decidi la tua prima abitudine e scrivila in una frase chiara."
+    },
+    "pt": {
+     "t": "Escolhe o teu primeiro hábito",
+     "g": "Escolher um hábito pequeno e positivo que te importe.",
+     "p": [
+      "Escolhe algo que realmente queiras, não o que os outros esperam.",
+      "Começa com um só hábito para manteres a energia focada.",
+      "Torna-o tão fácil que o consigas fazer num dia cansado."
+     ],
+     "q": "Que hábito te faria sorrir se se tornasse natural?",
+     "c": "Decide o teu primeiro hábito e escreve-o numa frase clara."
+    },
+    "pt_BR": {
+     "t": "Escolha seu primeiro hábito",
+     "g": "Escolher um hábito pequeno e positivo que importe para você.",
+     "p": [
+      "Escolha algo que você realmente quer, não o que os outros esperam.",
+      "Comece com um só hábito para manter a energia focada.",
+      "Deixe tão fácil que dê para fazer num dia cansado."
+     ],
+     "q": "Que hábito faria você sorrir se virasse algo natural?",
+     "c": "Decida seu primeiro hábito e escreva em uma frase clara."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "First week reflection",
+     "g": "Look back at your first days and adjust one thing.",
+     "p": [
+      "Notice what you learned about your cues and rewards this week.",
+      "Celebrate what you noticed, even if nothing is perfect yet.",
+      "Choose one small adjustment instead of a total overhaul."
+     ],
+     "q": "What surprised you most about your habits this week?",
+     "c": "Write one thing you noticed and one small tweak for next week."
+    },
+    "de": {
+     "t": "Rückblick auf die erste Woche",
+     "g": "Auf die ersten Tage zurückschauen und eine Sache anpassen.",
+     "p": [
+      "Überlege, was du diese Woche über deine Auslöser und Belohnungen gelernt hast.",
+      "Feiere, was dir aufgefallen ist, auch wenn noch nicht alles perfekt ist.",
+      "Wähle eine kleine Anpassung statt eines kompletten Umbaus."
+     ],
+     "q": "Was hat dich diese Woche an deinen Gewohnheiten am meisten überrascht?",
+     "c": "Schreibe eine Beobachtung und eine kleine Änderung für nächste Woche auf."
+    },
+    "es": {
+     "t": "Reflexión de la primera semana",
+     "g": "Mirar atrás tus primeros días y ajustar una cosa.",
+     "p": [
+      "Repasa lo que aprendiste esta semana sobre tus señales y recompensas.",
+      "Celebra lo que notaste, aunque aún nada sea perfecto.",
+      "Elige un pequeño ajuste en lugar de cambiarlo todo."
+     ],
+     "q": "¿Qué te sorprendió más de tus hábitos esta semana?",
+     "c": "Escribe algo que notaste y un pequeño ajuste para la próxima semana."
+    },
+    "fr": {
+     "t": "Bilan de la première semaine",
+     "g": "Regarder tes premiers jours et ajuster une chose.",
+     "p": [
+      "Repense à ce que tu as appris sur tes signaux et tes récompenses cette semaine.",
+      "Fête ce que tu as remarqué, même si rien n'est encore parfait.",
+      "Choisis un petit ajustement plutôt qu'un bouleversement total."
+     ],
+     "q": "Qu'est-ce qui t'a le plus surpris dans tes habitudes cette semaine ?",
+     "c": "Écris une observation et un petit ajustement pour la semaine prochaine."
+    },
+    "it": {
+     "t": "Riflessione sulla prima settimana",
+     "g": "Guardare indietro ai primi giorni e correggere una cosa.",
+     "p": [
+      "Rifletti su cosa hai imparato questa settimana su segnali e ricompense.",
+      "Festeggia ciò che hai notato, anche se non è ancora tutto perfetto.",
+      "Scegli un piccolo aggiustamento invece di rivoluzionare tutto."
+     ],
+     "q": "Cosa ti ha sorpreso di più delle tue abitudini questa settimana?",
+     "c": "Scrivi una cosa che hai notato e un piccolo ritocco per la prossima settimana."
+    },
+    "pt": {
+     "t": "Reflexão da primeira semana",
+     "g": "Olhar para trás nos primeiros dias e ajustar uma coisa.",
+     "p": [
+      "Repara no que aprendeste esta semana sobre os teus sinais e recompensas.",
+      "Celebra o que notaste, mesmo que ainda nada seja perfeito.",
+      "Escolhe um pequeno ajuste em vez de mudares tudo."
+     ],
+     "q": "O que mais te surpreendeu nos teus hábitos esta semana?",
+     "c": "Escreve uma coisa que notaste e um pequeno ajuste para a próxima semana."
+    },
+    "pt_BR": {
+     "t": "Reflexão da primeira semana",
+     "g": "Olhar para trás nos primeiros dias e ajustar uma coisa.",
+     "p": [
+      "Reflita sobre o que você aprendeu esta semana sobre seus gatilhos e recompensas.",
+      "Comemore o que você percebeu, mesmo que nada esteja perfeito ainda.",
+      "Escolha um pequeno ajuste em vez de mudar tudo."
+     ],
+     "q": "O que mais surpreendeu você nos seus hábitos esta semana?",
+     "c": "Escreva algo que percebeu e um pequeno ajuste para a próxima semana."
+    }
+   }
+  }
+ ]
+}

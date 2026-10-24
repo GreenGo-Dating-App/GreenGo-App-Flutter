@@ -1,0 +1,835 @@
+{
+ "topic": "ai",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spam filters up close",
+     "g": "See how email filters learn what usually means junk.",
+     "p": [
+      "Filters learn from messages people marked as spam.",
+      "Certain words, senders and links raise the spam score.",
+      "Sometimes real mail lands in spam, so check the folder now and then."
+     ],
+     "q": "Has a real email ever ended up in your spam folder?",
+     "c": "Look in your spam folder and spot why three messages were flagged."
+    },
+    "de": {
+     "t": "Spamfilter aus der Nähe",
+     "g": "Sieh, wie E-Mail-Filter lernen, was meist Junk bedeutet.",
+     "p": [
+      "Filter lernen aus Nachrichten, die Menschen als Spam markierten.",
+      "Bestimmte Wörter, Absender und Links erhöhen den Spam-Wert.",
+      "Manchmal landet echte Post im Spam, schau also ab und zu hinein."
+     ],
+     "q": "Ist schon mal eine echte Mail in deinem Spam-Ordner gelandet?",
+     "c": "Sieh in deinen Spam-Ordner und finde heraus, warum drei Mails markiert wurden."
+    },
+    "es": {
+     "t": "Los filtros de spam de cerca",
+     "g": "Mira cómo los filtros de correo aprenden qué suele ser basura.",
+     "p": [
+      "Los filtros aprenden de mensajes que la gente marcó como spam.",
+      "Ciertas palabras, remitentes y enlaces suben la puntuación de spam.",
+      "A veces el correo bueno cae en spam, así que revisa esa carpeta."
+     ],
+     "q": "¿Alguna vez un correo real acabó en tu carpeta de spam?",
+     "c": "Mira tu carpeta de spam y descubre por qué se marcaron tres mensajes."
+    },
+    "fr": {
+     "t": "Les filtres anti-spam de près",
+     "g": "Voir comment les filtres de courrier apprennent ce qui est du courrier indésirable.",
+     "p": [
+      "Les filtres apprennent des messages que des gens ont signalés comme spam.",
+      "Certains mots, expéditeurs et liens font monter le score de spam.",
+      "Un vrai message finit parfois en spam : jette un oeil au dossier."
+     ],
+     "q": "Un vrai e-mail a-t-il déjà fini dans tes indésirables ?",
+     "c": "Ouvre tes indésirables et devine pourquoi trois messages y sont."
+    },
+    "it": {
+     "t": "I filtri antispam da vicino",
+     "g": "Vedi come i filtri della posta imparano cosa di solito è spazzatura.",
+     "p": [
+      "I filtri imparano dai messaggi che le persone hanno segnato come spam.",
+      "Certe parole, mittenti e link alzano il punteggio di spam.",
+      "A volte la posta vera finisce nello spam, quindi controlla la cartella."
+     ],
+     "q": "Una mail vera è mai finita nella tua cartella spam?",
+     "c": "Guarda la cartella spam e capisci perché tre messaggi sono stati segnalati."
+    },
+    "pt": {
+     "t": "Os filtros de spam de perto",
+     "g": "Ver como os filtros de correio aprendem o que costuma ser lixo.",
+     "p": [
+      "Os filtros aprendem com mensagens que as pessoas marcaram como spam.",
+      "Certas palavras, remetentes e ligações aumentam a pontuação de spam.",
+      "Por vezes o correio verdadeiro cai no spam, por isso vê a pasta."
+     ],
+     "q": "Já alguma vez um email verdadeiro foi parar ao teu spam?",
+     "c": "Abre a pasta de spam e descobre porque três mensagens foram marcadas."
+    },
+    "pt_BR": {
+     "t": "Os filtros de spam de perto",
+     "g": "Ver como os filtros de e-mail aprendem o que costuma ser lixo.",
+     "p": [
+      "Os filtros aprendem com mensagens que as pessoas marcaram como spam.",
+      "Certas palavras, remetentes e links aumentam a pontuação de spam.",
+      "Às vezes o e-mail verdadeiro cai no spam, então confira a pasta."
+     ],
+     "q": "Algum e-mail de verdade já foi parar no seu spam?",
+     "c": "Abra a pasta de spam e descubra por que três mensagens foram marcadas."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Recommendation systems",
+     "g": "Learn how apps suggest what you might like next.",
+     "p": [
+      "They compare your choices with people who have similar tastes.",
+      "They also look at features of items, like genre or length.",
+      "Suggestions can narrow your view, so explore beyond them."
+     ],
+     "q": "Has a recommendation ever introduced you to something great?",
+     "c": "Search for something outside your usual taste and see what changes."
+    },
+    "de": {
+     "t": "Empfehlungssysteme",
+     "g": "Lerne, wie Apps vorschlagen, was dir als Nächstes gefallen könnte.",
+     "p": [
+      "Sie vergleichen deine Wahl mit Menschen mit ähnlichem Geschmack.",
+      "Sie betrachten auch Merkmale der Inhalte, etwa Genre oder Länge.",
+      "Vorschläge können deinen Blick verengen, entdecke also auch darüber hinaus."
+     ],
+     "q": "Hat dich eine Empfehlung schon mal auf etwas Tolles gebracht?",
+     "c": "Suche etwas außerhalb deines Geschmacks und sieh, was sich ändert."
+    },
+    "es": {
+     "t": "Sistemas de recomendación",
+     "g": "Aprende cómo las apps sugieren lo que podría gustarte después.",
+     "p": [
+      "Comparan tus elecciones con personas de gustos parecidos.",
+      "También miran rasgos de los contenidos, como género o duración.",
+      "Las sugerencias pueden estrechar tu visión, así que explora más allá."
+     ],
+     "q": "¿Alguna recomendación te descubrió algo genial?",
+     "c": "Busca algo fuera de tu gusto habitual y mira qué cambia."
+    },
+    "fr": {
+     "t": "Les systèmes de recommandation",
+     "g": "Apprendre comment les applis suggèrent ce qui pourrait te plaire.",
+     "p": [
+      "Ils comparent tes choix à ceux de personnes aux goûts proches.",
+      "Ils regardent aussi les traits du contenu, comme genre ou durée.",
+      "Les suggestions peuvent réduire ton horizon : explore au-delà."
+     ],
+     "q": "Une recommandation t'a-t-elle déjà fait découvrir quelque chose de super ?",
+     "c": "Cherche quelque chose hors de tes goûts habituels et vois ce qui change."
+    },
+    "it": {
+     "t": "I sistemi di raccomandazione",
+     "g": "Scopri come le app suggeriscono ciò che potrebbe piacerti dopo.",
+     "p": [
+      "Confrontano le tue scelte con quelle di persone dai gusti simili.",
+      "Guardano anche le caratteristiche dei contenuti, come genere o durata.",
+      "I consigli possono restringere la tua visuale, quindi esplora oltre."
+     ],
+     "q": "Un consiglio ti ha mai fatto scoprire qualcosa di bello?",
+     "c": "Cerca qualcosa fuori dai tuoi gusti abituali e guarda cosa cambia."
+    },
+    "pt": {
+     "t": "Sistemas de recomendação",
+     "g": "Aprender como as aplicações sugerem o que te pode agradar a seguir.",
+     "p": [
+      "Comparam as tuas escolhas com as de pessoas de gostos parecidos.",
+      "Também olham para traços dos conteúdos, como género ou duração.",
+      "As sugestões podem estreitar a tua visão, por isso explora além delas."
+     ],
+     "q": "Alguma recomendação já te fez descobrir algo ótimo?",
+     "c": "Pesquisa algo fora do teu gosto habitual e vê o que muda."
+    },
+    "pt_BR": {
+     "t": "Sistemas de recomendação",
+     "g": "Aprender como os apps sugerem o que pode agradar você a seguir.",
+     "p": [
+      "Comparam suas escolhas com as de pessoas de gostos parecidos.",
+      "Também olham para traços dos conteúdos, como gênero ou duração.",
+      "As sugestões podem estreitar sua visão, então explore além delas."
+     ],
+     "q": "Alguma recomendação já fez você descobrir algo ótimo?",
+     "c": "Busque algo fora do seu gosto habitual e veja o que muda."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How your feed is ranked",
+     "g": "Understand why social feeds show posts in a certain order.",
+     "p": [
+      "A feed predicts which posts will keep you interested.",
+      "Likes, watch time and replies are signals it learns from.",
+      "You can steer it by choosing what you engage with."
+     ],
+     "q": "How do you feel after a long time scrolling a feed?",
+     "c": "Spend a day noticing which posts make you stop, and why."
+    },
+    "de": {
+     "t": "Wie dein Feed sortiert wird",
+     "g": "Verstehe, warum soziale Feeds Beiträge in einer bestimmten Reihenfolge zeigen.",
+     "p": [
+      "Ein Feed sagt voraus, welche Beiträge dich bei der Stange halten.",
+      "Likes, Sehdauer und Antworten sind Signale, aus denen er lernt.",
+      "Du kannst ihn lenken, indem du wählst, womit du dich beschäftigst."
+     ],
+     "q": "Wie fühlst du dich nach langem Scrollen im Feed?",
+     "c": "Achte einen Tag lang darauf, welche Beiträge dich stoppen, und warum."
+    },
+    "es": {
+     "t": "Cómo se ordena tu feed",
+     "g": "Entiende por qué los feeds sociales muestran las publicaciones en cierto orden.",
+     "p": [
+      "Un feed predice qué publicaciones te mantendrán interesado.",
+      "Los me gusta, el tiempo de visionado y las respuestas son señales de las que aprende.",
+      "Puedes guiarlo eligiendo con qué interactúas."
+     ],
+     "q": "¿Cómo te sientes tras mucho rato haciendo scroll en un feed?",
+     "c": "Durante un día fíjate en qué publicaciones te detienen y por qué."
+    },
+    "fr": {
+     "t": "Comment ton fil est classé",
+     "g": "Comprendre pourquoi les fils sociaux montrent les posts dans un certain ordre.",
+     "p": [
+      "Un fil prédit quels posts vont te garder intéressé.",
+      "Les mentions j'aime, le temps de vue et les réponses sont des signaux.",
+      "Tu peux l'orienter en choisissant à quoi tu réagis."
+     ],
+     "q": "Comment te sens-tu après un long moment à faire défiler ton fil ?",
+     "c": "Pendant un jour, remarque quels posts t'arrêtent et pourquoi."
+    },
+    "it": {
+     "t": "Come viene ordinato il tuo feed",
+     "g": "Capisci perché i feed social mostrano i post in un certo ordine.",
+     "p": [
+      "Un feed prevede quali post ti terranno interessato.",
+      "Mi piace, tempo di visione e risposte sono segnali da cui impara.",
+      "Puoi guidarlo scegliendo con cosa interagisci."
+     ],
+     "q": "Come ti senti dopo molto tempo a scorrere un feed?",
+     "c": "Per un giorno nota quali post ti fermano e perché."
+    },
+    "pt": {
+     "t": "Como o teu feed é ordenado",
+     "g": "Perceber porque os feeds sociais mostram as publicações numa certa ordem.",
+     "p": [
+      "Um feed prevê que publicações te vão manter interessado.",
+      "Gostos, tempo de visualização e respostas são sinais de que aprende.",
+      "Podes orientá-lo escolhendo com o que interages."
+     ],
+     "q": "Como te sentes depois de muito tempo a deslizar num feed?",
+     "c": "Durante um dia repara que publicações te param e porquê."
+    },
+    "pt_BR": {
+     "t": "Como o seu feed é ordenado",
+     "g": "Entender por que os feeds sociais mostram as publicações numa certa ordem.",
+     "p": [
+      "Um feed prevê que publicações vão manter você interessado.",
+      "Curtidas, tempo de visualização e respostas são sinais de que ele aprende.",
+      "Você pode orientá-lo escolhendo com o que interage."
+     ],
+     "q": "Como você se sente depois de muito tempo rolando um feed?",
+     "c": "Durante um dia, repare que publicações param você e por quê."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Search engines and AI",
+     "g": "See how search understands your question and ranks pages.",
+     "p": [
+      "Search matches the meaning of your words to pages, not just spelling.",
+      "It ranks pages using many signals, such as relevance and quality.",
+      "A top result is not automatically true, so compare sources."
+     ],
+     "q": "How do you decide which search result to trust?",
+     "c": "Search one question and compare what three different sources say."
+    },
+    "de": {
+     "t": "Suchmaschinen und KI",
+     "g": "Sieh, wie Suche deine Frage versteht und Seiten sortiert.",
+     "p": [
+      "Suche gleicht die Bedeutung deiner Wörter mit Seiten ab, nicht nur die Schreibweise.",
+      "Sie sortiert Seiten mit vielen Signalen, etwa Relevanz und Qualität.",
+      "Ein Spitzenergebnis ist nicht automatisch wahr, vergleiche also Quellen."
+     ],
+     "q": "Wie entscheidest du, welchem Suchergebnis du traust?",
+     "c": "Suche eine Frage und vergleiche, was drei Quellen dazu sagen."
+    },
+    "es": {
+     "t": "Buscadores e IA",
+     "g": "Mira cómo la búsqueda entiende tu pregunta y ordena páginas.",
+     "p": [
+      "La búsqueda conecta el significado de tus palabras con páginas, no solo la ortografía.",
+      "Ordena páginas con muchas señales, como relevancia y calidad.",
+      "Un primer resultado no es verdad por sí solo, así que compara fuentes."
+     ],
+     "q": "¿Cómo decides en qué resultado de búsqueda confiar?",
+     "c": "Busca una pregunta y compara lo que dicen tres fuentes distintas."
+    },
+    "fr": {
+     "t": "Moteurs de recherche et IA",
+     "g": "Voir comment la recherche comprend ta question et classe les pages.",
+     "p": [
+      "La recherche relie le sens de tes mots aux pages, pas seulement l'orthographe.",
+      "Elle classe les pages avec de nombreux signaux, comme pertinence et qualité.",
+      "Un premier résultat n'est pas forcément vrai : compare les sources."
+     ],
+     "q": "Comment décides-tu à quel résultat de recherche te fier ?",
+     "c": "Cherche une question et compare ce que disent trois sources."
+    },
+    "it": {
+     "t": "Motori di ricerca e IA",
+     "g": "Vedi come la ricerca capisce la tua domanda e ordina le pagine.",
+     "p": [
+      "La ricerca collega il significato delle parole alle pagine, non solo l'ortografia.",
+      "Ordina le pagine con molti segnali, come pertinenza e qualità.",
+      "Il primo risultato non è automaticamente vero, quindi confronta le fonti."
+     ],
+     "q": "Come decidi di quale risultato di ricerca fidarti?",
+     "c": "Cerca una domanda e confronta cosa dicono tre fonti diverse."
+    },
+    "pt": {
+     "t": "Motores de pesquisa e IA",
+     "g": "Ver como a pesquisa entende a tua pergunta e ordena páginas.",
+     "p": [
+      "A pesquisa liga o significado das palavras às páginas, não só a ortografia.",
+      "Ordena páginas com muitos sinais, como relevância e qualidade.",
+      "Um primeiro resultado não é verdadeiro por si, por isso compara fontes."
+     ],
+     "q": "Como decides em que resultado de pesquisa confiar?",
+     "c": "Pesquisa uma pergunta e compara o que dizem três fontes diferentes."
+    },
+    "pt_BR": {
+     "t": "Mecanismos de busca e IA",
+     "g": "Ver como a busca entende sua pergunta e ordena páginas.",
+     "p": [
+      "A busca liga o significado das palavras às páginas, não só a ortografia.",
+      "Ela ordena páginas com muitos sinais, como relevância e qualidade.",
+      "Um primeiro resultado não é verdadeiro por si só, então compare fontes."
+     ],
+     "q": "Como você decide em que resultado de busca confiar?",
+     "c": "Pesquise uma pergunta e compare o que dizem três fontes diferentes."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Maps and route planning",
+     "g": "Learn how navigation apps predict traffic and pick routes.",
+     "p": [
+      "Apps combine maps with live movement data from many phones.",
+      "Models predict how long each road will take.",
+      "Predictions can be wrong, so stay alert and use your own eyes."
+     ],
+     "q": "Would you trust the app or a local on a surprising route?",
+     "c": "Plan a short trip and compare two route options by time and effort."
+    },
+    "de": {
+     "t": "Karten und Routenplanung",
+     "g": "Lerne, wie Navi-Apps Verkehr vorhersagen und Routen wählen.",
+     "p": [
+      "Apps verbinden Karten mit Live-Bewegungsdaten vieler Handys.",
+      "Modelle schätzen, wie lange jede Straße dauert.",
+      "Vorhersagen können irren, bleib also aufmerksam und nutze deine Augen."
+     ],
+     "q": "Würdest du bei einer überraschenden Route der App oder Ortskundigen trauen?",
+     "c": "Plane eine kurze Fahrt und vergleiche zwei Routen nach Zeit und Aufwand."
+    },
+    "es": {
+     "t": "Mapas y planificación de rutas",
+     "g": "Aprende cómo las apps de navegación predicen el tráfico y eligen rutas.",
+     "p": [
+      "Las apps combinan mapas con datos de movimiento en vivo de muchos móviles.",
+      "Los modelos estiman cuánto tardará cada vía.",
+      "Las predicciones pueden fallar, así que mantente atento y usa tus ojos."
+     ],
+     "q": "¿Confiarías en la app o en un vecino ante una ruta sorprendente?",
+     "c": "Planifica un trayecto corto y compara dos rutas por tiempo y esfuerzo."
+    },
+    "fr": {
+     "t": "Cartes et calcul d'itinéraire",
+     "g": "Apprendre comment les applis de navigation prédisent le trafic et choisissent.",
+     "p": [
+      "Les applis combinent cartes et données de déplacement de nombreux téléphones.",
+      "Des modèles estiment le temps de chaque route.",
+      "Les prédictions peuvent se tromper : reste attentif et fie-toi à tes yeux."
+     ],
+     "q": "Ferais-tu confiance à l'appli ou à un habitant pour un trajet surprenant ?",
+     "c": "Prépare un court trajet et compare deux itinéraires en temps et effort."
+    },
+    "it": {
+     "t": "Mappe e pianificazione dei percorsi",
+     "g": "Scopri come le app di navigazione prevedono il traffico e scelgono i percorsi.",
+     "p": [
+      "Le app uniscono mappe e dati di movimento dal vivo di molti telefoni.",
+      "I modelli stimano quanto richiederà ogni strada.",
+      "Le previsioni possono sbagliare, quindi resta attento e usa gli occhi."
+     ],
+     "q": "Ti fideresti dell'app o di un locale per un percorso strano?",
+     "c": "Pianifica un breve viaggio e confronta due percorsi per tempo e fatica."
+    },
+    "pt": {
+     "t": "Mapas e planeamento de rotas",
+     "g": "Aprender como as apps de navegação preveem o trânsito e escolhem rotas.",
+     "p": [
+      "As apps juntam mapas com dados de movimento em direto de muitos telemóveis.",
+      "Os modelos estimam quanto demora cada via.",
+      "As previsões podem falhar, por isso fica atento e usa os teus olhos."
+     ],
+     "q": "Confiarias na app ou num local perante uma rota estranha?",
+     "c": "Planeia uma viagem curta e compara duas rotas por tempo e esforço."
+    },
+    "pt_BR": {
+     "t": "Mapas e planejamento de rotas",
+     "g": "Aprender como os apps de navegação preveem o trânsito e escolhem rotas.",
+     "p": [
+      "Os apps juntam mapas com dados de movimento ao vivo de muitos celulares.",
+      "Os modelos estimam quanto demora cada via.",
+      "As previsões podem falhar, então fique atento e use seus olhos."
+     ],
+     "q": "Você confiaria no app ou num morador diante de uma rota estranha?",
+     "c": "Planeje uma viagem curta e compare duas rotas por tempo e esforço."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Voice assistants",
+     "g": "Follow how a smart assistant hears, understands and answers.",
+     "p": [
+      "Speech is turned into text, then the meaning is worked out.",
+      "The assistant picks an action or an answer and speaks it back.",
+      "Think about privacy: know when and what your device listens to."
+     ],
+     "q": "What would you most like a voice assistant to do for you?",
+     "c": "Give a voice command in two different phrasings and compare results."
+    },
+    "de": {
+     "t": "Sprachassistenten",
+     "g": "Verfolge, wie ein smarter Assistent hört, versteht und antwortet.",
+     "p": [
+      "Sprache wird in Text umgewandelt, dann wird die Bedeutung erschlossen.",
+      "Der Assistent wählt eine Aktion oder Antwort und spricht sie aus.",
+      "Denk an Privatsphäre: Wisse, wann und was dein Gerät hört."
+     ],
+     "q": "Was soll ein Sprachassistent am liebsten für dich tun?",
+     "c": "Gib einen Sprachbefehl in zwei Formulierungen und vergleiche die Ergebnisse."
+    },
+    "es": {
+     "t": "Asistentes de voz",
+     "g": "Sigue cómo un asistente inteligente oye, entiende y responde.",
+     "p": [
+      "El habla se convierte en texto y luego se deduce el significado.",
+      "El asistente elige una acción o respuesta y la dice en voz alta.",
+      "Piensa en la privacidad: sabe cuándo y qué escucha tu dispositivo."
+     ],
+     "q": "¿Qué te gustaría más que hiciera un asistente de voz por ti?",
+     "c": "Da una orden de voz con dos formulaciones y compara los resultados."
+    },
+    "fr": {
+     "t": "Les assistants vocaux",
+     "g": "Suivre comment un assistant intelligent écoute, comprend et répond.",
+     "p": [
+      "La parole devient du texte, puis le sens est déduit.",
+      "L'assistant choisit une action ou une réponse et la dit à voix haute.",
+      "Pense à la vie privée : sache quand et quoi ton appareil écoute."
+     ],
+     "q": "Que voudrais-tu surtout qu'un assistant vocal fasse pour toi ?",
+     "c": "Donne une commande vocale de deux façons et compare les résultats."
+    },
+    "it": {
+     "t": "Gli assistenti vocali",
+     "g": "Segui come un assistente intelligente ascolta, capisce e risponde.",
+     "p": [
+      "Il parlato diventa testo, poi se ne ricava il significato.",
+      "L'assistente sceglie un'azione o una risposta e la pronuncia.",
+      "Pensa alla privacy: sappi quando e cosa ascolta il tuo dispositivo."
+     ],
+     "q": "Cosa vorresti più di tutto che un assistente vocale facesse per te?",
+     "c": "Dai un comando vocale in due formulazioni e confronta i risultati."
+    },
+    "pt": {
+     "t": "Assistentes de voz",
+     "g": "Seguir como um assistente inteligente ouve, entende e responde.",
+     "p": [
+      "A fala é convertida em texto e depois deduz-se o significado.",
+      "O assistente escolhe uma ação ou resposta e diz em voz alta.",
+      "Pensa na privacidade: sabe quando e o que o teu aparelho ouve."
+     ],
+     "q": "O que mais gostarias que um assistente de voz fizesse por ti?",
+     "c": "Dá uma ordem de voz de duas formas e compara os resultados."
+    },
+    "pt_BR": {
+     "t": "Assistentes de voz",
+     "g": "Seguir como um assistente inteligente ouve, entende e responde.",
+     "p": [
+      "A fala é convertida em texto e depois se deduz o significado.",
+      "O assistente escolhe uma ação ou resposta e diz em voz alta.",
+      "Pense na privacidade: saiba quando e o que seu aparelho escuta."
+     ],
+     "q": "O que você mais gostaria que um assistente de voz fizesse por você?",
+     "c": "Dê um comando de voz de duas formas e compare os resultados."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Speech recognition",
+     "g": "Learn how sound waves become written words.",
+     "p": [
+      "A model maps sound patterns to letters and words.",
+      "Accents, noise and fast talking make the job harder.",
+      "Models improve when trained on many voices and styles."
+     ],
+     "q": "When has speech-to-text misheard you in a funny way?",
+     "c": "Dictate one sentence in a quiet room and then with background noise."
+    },
+    "de": {
+     "t": "Spracherkennung",
+     "g": "Lerne, wie Schallwellen zu geschriebenen Wörtern werden.",
+     "p": [
+      "Ein Modell ordnet Klangmuster Buchstaben und Wörtern zu.",
+      "Akzente, Lärm und schnelles Sprechen erschweren die Aufgabe.",
+      "Modelle werden besser, wenn sie mit vielen Stimmen trainiert sind."
+     ],
+     "q": "Wann hat dich Sprache-zu-Text mal lustig falsch verstanden?",
+     "c": "Diktiere einen Satz in ruhiger Umgebung und dann mit Hintergrundlärm."
+    },
+    "es": {
+     "t": "Reconocimiento de voz",
+     "g": "Aprende cómo las ondas de sonido se convierten en palabras escritas.",
+     "p": [
+      "Un modelo asocia patrones de sonido con letras y palabras.",
+      "Los acentos, el ruido y hablar rápido lo dificultan.",
+      "Los modelos mejoran si se entrenan con muchas voces y estilos."
+     ],
+     "q": "¿Cuándo te malinterpretó el dictado de forma graciosa?",
+     "c": "Dicta una frase en un lugar tranquilo y luego con ruido de fondo."
+    },
+    "fr": {
+     "t": "Reconnaissance vocale",
+     "g": "Apprendre comment les ondes sonores deviennent des mots écrits.",
+     "p": [
+      "Un modèle associe des motifs sonores à des lettres et des mots.",
+      "Accents, bruit et débit rapide compliquent la tâche.",
+      "Les modèles progressent s'ils sont entraînés sur de nombreuses voix."
+     ],
+     "q": "Quand la dictée vocale t'a-t-elle mal compris de façon drôle ?",
+     "c": "Dicte une phrase au calme puis avec du bruit de fond."
+    },
+    "it": {
+     "t": "Riconoscimento vocale",
+     "g": "Scopri come le onde sonore diventano parole scritte.",
+     "p": [
+      "Un modello associa schemi sonori a lettere e parole.",
+      "Accenti, rumore e parlato veloce rendono il lavoro più difficile.",
+      "I modelli migliorano se addestrati su tante voci e stili."
+     ],
+     "q": "Quando la dettatura ti ha frainteso in modo buffo?",
+     "c": "Detta una frase in una stanza silenziosa e poi con rumore di fondo."
+    },
+    "pt": {
+     "t": "Reconhecimento de fala",
+     "g": "Aprender como as ondas sonoras se tornam palavras escritas.",
+     "p": [
+      "Um modelo associa padrões de som a letras e palavras.",
+      "Sotaques, ruído e fala rápida dificultam a tarefa.",
+      "Os modelos melhoram quando treinados com muitas vozes e estilos."
+     ],
+     "q": "Quando é que o ditado te percebeu mal de forma engraçada?",
+     "c": "Dita uma frase num sítio sossegado e depois com ruído de fundo."
+    },
+    "pt_BR": {
+     "t": "Reconhecimento de fala",
+     "g": "Aprender como as ondas sonoras viram palavras escritas.",
+     "p": [
+      "Um modelo associa padrões de som a letras e palavras.",
+      "Sotaques, ruído e fala rápida dificultam a tarefa.",
+      "Os modelos melhoram quando treinados com muitas vozes e estilos."
+     ],
+     "q": "Quando o ditado entendeu você errado de forma engraçada?",
+     "c": "Dite uma frase num lugar silencioso e depois com ruído de fundo."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Text to speech",
+     "g": "Discover how computers read text aloud with natural voices.",
+     "p": [
+      "Text is converted into sounds by a model that learned from voices.",
+      "Newer voices pause and stress words much like people do.",
+      "Voices can be copied, so be careful with anyone's voice."
+     ],
+     "q": "Where would a read-aloud voice help you most in daily life?",
+     "c": "Have a device read a short text aloud and judge how natural it sounds."
+    },
+    "de": {
+     "t": "Text-zu-Sprache",
+     "g": "Entdecke, wie Computer Text mit natürlichen Stimmen vorlesen.",
+     "p": [
+      "Ein Modell, das von Stimmen gelernt hat, wandelt Text in Klang um.",
+      "Neuere Stimmen setzen Pausen und Betonungen fast wie Menschen.",
+      "Stimmen lassen sich nachahmen, sei also vorsichtig mit fremden Stimmen."
+     ],
+     "q": "Wo würde dir eine Vorlesestimme im Alltag am meisten helfen?",
+     "c": "Lass ein Gerät einen kurzen Text vorlesen und beurteile, wie natürlich er klingt."
+    },
+    "es": {
+     "t": "Texto a voz",
+     "g": "Descubre cómo los ordenadores leen texto en voz alta con voces naturales.",
+     "p": [
+      "Un modelo que aprendió de voces convierte el texto en sonidos.",
+      "Las voces nuevas hacen pausas y acentos casi como las personas.",
+      "Las voces se pueden copiar, así que cuidado con la voz de cualquiera."
+     ],
+     "q": "¿Dónde te ayudaría más una voz que lea en alto?",
+     "c": "Haz que un dispositivo lea un texto corto y juzga qué tan natural suena."
+    },
+    "fr": {
+     "t": "Synthèse vocale",
+     "g": "Découvrir comment les ordinateurs lisent un texte avec des voix naturelles.",
+     "p": [
+      "Un modèle qui a appris à partir de voix transforme le texte en sons.",
+      "Les voix récentes font pauses et accents presque comme les humains.",
+      "Les voix peuvent être copiées : sois prudent avec la voix de quelqu'un."
+     ],
+     "q": "Où une voix de lecture t'aiderait-elle le plus au quotidien ?",
+     "c": "Fais lire un court texte à un appareil et juge son naturel."
+    },
+    "it": {
+     "t": "Sintesi vocale",
+     "g": "Scopri come i computer leggono ad alta voce con voci naturali.",
+     "p": [
+      "Un modello che ha imparato dalle voci trasforma il testo in suoni.",
+      "Le voci più recenti fanno pause e accenti quasi come le persone.",
+      "Le voci si possono copiare, quindi attenzione alla voce di chiunque."
+     ],
+     "q": "Dove ti aiuterebbe di più una voce che legge ad alta voce?",
+     "c": "Fai leggere un breve testo a un dispositivo e giudica quanto è naturale."
+    },
+    "pt": {
+     "t": "Texto para voz",
+     "g": "Descobrir como os computadores leem texto em voz alta com vozes naturais.",
+     "p": [
+      "Um modelo que aprendeu com vozes converte o texto em sons.",
+      "As vozes novas fazem pausas e acentos quase como as pessoas.",
+      "As vozes podem ser copiadas, por isso cuidado com a voz de qualquer pessoa."
+     ],
+     "q": "Onde te ajudaria mais uma voz que lê em voz alta?",
+     "c": "Faz um aparelho ler um texto curto e avalia quão natural soa."
+    },
+    "pt_BR": {
+     "t": "Texto para voz",
+     "g": "Descobrir como os computadores leem texto em voz alta com vozes naturais.",
+     "p": [
+      "Um modelo que aprendeu com vozes converte o texto em sons.",
+      "As vozes novas fazem pausas e acentos quase como as pessoas.",
+      "As vozes podem ser copiadas, então cuidado com a voz de qualquer pessoa."
+     ],
+     "q": "Onde uma voz que lê em voz alta ajudaria mais você?",
+     "c": "Faça um aparelho ler um texto curto e avalie quão natural soa."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Machine translation",
+     "g": "See how tools learned to translate whole sentences.",
+     "p": [
+      "Early tools swapped words; modern ones weigh the whole sentence.",
+      "They learn from huge collections of texts in many languages.",
+      "Idioms, jokes and rare languages are still tricky."
+     ],
+     "q": "Which phrase in your language would be hardest to translate?",
+     "c": "Translate a short idiom and see if the meaning survives."
+    },
+    "de": {
+     "t": "Maschinelle Übersetzung",
+     "g": "Sieh, wie Werkzeuge lernten, ganze Sätze zu übersetzen.",
+     "p": [
+      "Frühe Werkzeuge tauschten Wörter, moderne betrachten den ganzen Satz.",
+      "Sie lernen aus riesigen Textsammlungen in vielen Sprachen.",
+      "Redewendungen, Witze und seltene Sprachen sind noch knifflig."
+     ],
+     "q": "Welche Wendung deiner Sprache wäre am schwersten zu übersetzen?",
+     "c": "Übersetze eine kurze Redewendung und prüfe, ob der Sinn bleibt."
+    },
+    "es": {
+     "t": "Traducción automática",
+     "g": "Mira cómo las herramientas aprendieron a traducir frases enteras.",
+     "p": [
+      "Las primeras cambiaban palabras; las modernas pesan toda la frase.",
+      "Aprenden de enormes colecciones de textos en muchos idiomas.",
+      "Los modismos, los chistes y los idiomas poco comunes siguen siendo difíciles."
+     ],
+     "q": "¿Qué expresión de tu idioma sería la más difícil de traducir?",
+     "c": "Traduce un refrán corto y comprueba si sobrevive el sentido."
+    },
+    "fr": {
+     "t": "Traduction automatique",
+     "g": "Voir comment les outils ont appris à traduire des phrases entières.",
+     "p": [
+      "Les premiers échangeaient des mots ; les modernes pèsent toute la phrase.",
+      "Ils apprennent à partir d'immenses collections de textes en plusieurs langues.",
+      "Expressions, blagues et langues rares restent délicates."
+     ],
+     "q": "Quelle expression de ta langue serait la plus difficile à traduire ?",
+     "c": "Traduis une courte expression et vérifie si le sens survit."
+    },
+    "it": {
+     "t": "Traduzione automatica",
+     "g": "Vedi come gli strumenti hanno imparato a tradurre frasi intere.",
+     "p": [
+      "I primi scambiavano parole; i moderni pesano tutta la frase.",
+      "Imparano da enormi raccolte di testi in molte lingue.",
+      "Modi di dire, battute e lingue rare restano difficili."
+     ],
+     "q": "Quale espressione della tua lingua sarebbe la più difficile da tradurre?",
+     "c": "Traduci un breve modo di dire e verifica se il senso resiste."
+    },
+    "pt": {
+     "t": "Tradução automática",
+     "g": "Ver como as ferramentas aprenderam a traduzir frases inteiras.",
+     "p": [
+      "As primeiras trocavam palavras; as modernas pesam a frase toda.",
+      "Aprendem com enormes coleções de textos em muitas línguas.",
+      "Expressões idiomáticas, piadas e línguas raras ainda são difíceis."
+     ],
+     "q": "Que expressão da tua língua seria a mais difícil de traduzir?",
+     "c": "Traduz um provérbio curto e confirma se o sentido sobrevive."
+    },
+    "pt_BR": {
+     "t": "Tradução automática",
+     "g": "Ver como as ferramentas aprenderam a traduzir frases inteiras.",
+     "p": [
+      "As primeiras trocavam palavras; as modernas pesam a frase toda.",
+      "Aprendem com enormes coleções de textos em muitas línguas.",
+      "Expressões idiomáticas, piadas e línguas raras ainda são difíceis."
+     ],
+     "q": "Que expressão da sua língua seria a mais difícil de traduzir?",
+     "c": "Traduza um ditado curto e confira se o sentido sobrevive."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Translation tips for travellers",
+     "g": "Use translation tools well while travelling.",
+     "p": [
+      "Use short, simple sentences for better results.",
+      "Translate back to check the meaning, and stay polite.",
+      "For important matters, ask a person or use official help."
+     ],
+     "q": "Which phrase would you most need while travelling?",
+     "c": "Translate three travel phrases and translate them back to check."
+    },
+    "de": {
+     "t": "Übersetzungstipps für Reisende",
+     "g": "Nutze Übersetzungswerkzeuge unterwegs richtig.",
+     "p": [
+      "Kurze, einfache Sätze geben bessere Ergebnisse.",
+      "Übersetze zurück, um den Sinn zu prüfen, und bleib höflich.",
+      "Bei wichtigen Dingen frage eine Person oder nutze offizielle Hilfe."
+     ],
+     "q": "Welchen Satz würdest du auf Reisen am meisten brauchen?",
+     "c": "Übersetze drei Reisesätze und übersetze sie zur Kontrolle zurück."
+    },
+    "es": {
+     "t": "Consejos de traducción para viajeros",
+     "g": "Usa bien las herramientas de traducción al viajar.",
+     "p": [
+      "Usa frases cortas y simples para mejores resultados.",
+      "Traduce de vuelta para comprobar el sentido y sé cortés.",
+      "Para asuntos importantes, pregunta a una persona o busca ayuda oficial."
+     ],
+     "q": "¿Qué frase necesitarías más al viajar?",
+     "c": "Traduce tres frases de viaje y tradúcelas de vuelta para comprobar."
+    },
+    "fr": {
+     "t": "Conseils de traduction pour voyageurs",
+     "g": "Bien utiliser les outils de traduction en voyage.",
+     "p": [
+      "Utilise des phrases courtes et simples pour de meilleurs résultats.",
+      "Retraduis pour vérifier le sens, et reste poli.",
+      "Pour les choses importantes, demande à une personne ou à une aide officielle."
+     ],
+     "q": "Quelle phrase te serait la plus utile en voyage ?",
+     "c": "Traduis trois phrases de voyage puis retraduis-les pour vérifier."
+    },
+    "it": {
+     "t": "Consigli di traduzione per viaggiatori",
+     "g": "Usa bene gli strumenti di traduzione in viaggio.",
+     "p": [
+      "Usa frasi brevi e semplici per risultati migliori.",
+      "Ritraduci per controllare il senso e resta cortese.",
+      "Per cose importanti chiedi a una persona o a un aiuto ufficiale."
+     ],
+     "q": "Quale frase ti servirebbe di più in viaggio?",
+     "c": "Traduci tre frasi da viaggio e ritraducile per controllare."
+    },
+    "pt": {
+     "t": "Dicas de tradução para viajantes",
+     "g": "Usar bem as ferramentas de tradução em viagem.",
+     "p": [
+      "Usa frases curtas e simples para melhores resultados.",
+      "Traduz de volta para confirmar o sentido e sê cortês.",
+      "Em assuntos importantes, pergunta a uma pessoa ou usa ajuda oficial."
+     ],
+     "q": "Que frase mais precisarias em viagem?",
+     "c": "Traduz três frases de viagem e traduz de volta para confirmar."
+    },
+    "pt_BR": {
+     "t": "Dicas de tradução para viajantes",
+     "g": "Usar bem as ferramentas de tradução em viagem.",
+     "p": [
+      "Use frases curtas e simples para melhores resultados.",
+      "Traduza de volta para confirmar o sentido e seja cortês.",
+      "Em assuntos importantes, pergunte a uma pessoa ou use ajuda oficial."
+     ],
+     "q": "Que frase você mais precisaria em viagem?",
+     "c": "Traduza três frases de viagem e traduza de volta para confirmar."
+    }
+   }
+  }
+ ]
+}

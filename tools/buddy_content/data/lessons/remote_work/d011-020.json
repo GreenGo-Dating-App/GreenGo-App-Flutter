@@ -1,0 +1,835 @@
+{
+ "topic": "remote_work",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing a spot for your workspace",
+     "g": "Pick a place at home that supports focus and keeps work apart from rest.",
+     "p": [
+      "Look for good light, low noise and a spot you can leave behind at day's end.",
+      "Avoid the bed or sofa as your main desk; your brain links them with rest.",
+      "Even a corner works if it is used only for work."
+     ],
+     "q": "Where in your home could a dedicated work spot go?",
+     "c": "Walk around your home and test two possible spots for ten minutes each."
+    },
+    "de": {
+     "t": "Den richtigen Platz für deinen Arbeitsplatz wählen",
+     "g": "Wähle einen Ort zu Hause, der Fokus fördert und Arbeit von Erholung trennt.",
+     "p": [
+      "Achte auf gutes Licht, wenig Lärm und einen Platz, den du abends hinter dir lassen kannst.",
+      "Vermeide Bett oder Sofa als Hauptschreibtisch; das Gehirn verbindet sie mit Ruhe.",
+      "Schon eine Ecke reicht, wenn sie nur der Arbeit dient."
+     ],
+     "q": "Wo in deinem Zuhause könnte ein fester Arbeitsplatz entstehen?",
+     "c": "Teste heute zwei mögliche Plätze für je zehn Minuten."
+    },
+    "es": {
+     "t": "Elegir un lugar para tu espacio de trabajo",
+     "g": "Escoge un sitio en casa que favorezca la concentración y separe trabajo y descanso.",
+     "p": [
+      "Busca buena luz, poco ruido y un lugar que puedas dejar atrás al terminar el día.",
+      "Evita la cama o el sofá como escritorio; tu cerebro los asocia con descanso.",
+      "Hasta un rincón sirve si lo usas solo para trabajar."
+     ],
+     "q": "¿Dónde de tu casa podría ir un sitio fijo de trabajo?",
+     "c": "Recorre tu casa y prueba dos posibles sitios durante diez minutos cada uno."
+    },
+    "fr": {
+     "t": "Choisir l'emplacement de ton espace de travail",
+     "g": "Choisis un endroit chez toi qui aide à se concentrer et sépare travail et repos.",
+     "p": [
+      "Cherche une bonne lumière, peu de bruit et un coin que tu peux quitter le soir.",
+      "Évite le lit ou le canapé comme bureau ; ton cerveau les associe au repos.",
+      "Même un coin suffit s'il ne sert qu'au travail."
+     ],
+     "q": "Où chez toi pourrais-tu installer un espace de travail dédié ?",
+     "c": "Fais le tour de chez toi et teste deux emplacements pendant dix minutes chacun."
+    },
+    "it": {
+     "t": "Scegliere un posto per la tua postazione",
+     "g": "Scegli un punto in casa che aiuti la concentrazione e separi lavoro e riposo.",
+     "p": [
+      "Cerca buona luce, poco rumore e un angolo che puoi lasciare a fine giornata.",
+      "Evita letto o divano come scrivania; il cervello li associa al riposo.",
+      "Anche un angolo va bene se lo usi solo per lavorare."
+     ],
+     "q": "Dove in casa tua potrebbe stare una postazione dedicata?",
+     "c": "Gira per casa e prova due possibili posti per dieci minuti ciascuno."
+    },
+    "pt": {
+     "t": "Escolher um sítio para o teu espaço de trabalho",
+     "g": "Escolhe um lugar em casa que ajude à concentração e separe trabalho de descanso.",
+     "p": [
+      "Procura boa luz, pouco ruído e um canto que possas deixar no fim do dia.",
+      "Evita a cama ou o sofá como secretária; o cérebro associa-os ao descanso.",
+      "Até um canto serve, se for usado só para trabalhar."
+     ],
+     "q": "Onde em tua casa poderia ficar um espaço de trabalho fixo?",
+     "c": "Percorre a casa e testa dois possíveis sítios durante dez minutos cada."
+    },
+    "pt_BR": {
+     "t": "Escolhendo um lugar para o seu espaço de trabalho",
+     "g": "Escolha um lugar em casa que ajude no foco e separe trabalho de descanso.",
+     "p": [
+      "Procure boa luz, pouco barulho e um canto que você possa deixar no fim do dia.",
+      "Evite a cama ou o sofá como mesa; o cérebro os associa ao descanso.",
+      "Até um cantinho serve, se for usado só para trabalhar."
+     ],
+     "q": "Onde na sua casa poderia ficar um espaço de trabalho fixo?",
+     "c": "Percorra a casa e teste dois lugares possíveis por dez minutos cada."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The desk and chair basics",
+     "g": "Set up a desk and chair that support a comfortable, healthy posture.",
+     "p": [
+      "Feet flat on the floor, knees near a right angle, back supported.",
+      "Forearms rest level on the desk with relaxed shoulders.",
+      "If your desk is too high, a footrest or cushion can help."
+     ],
+     "q": "How does your body feel after a few hours at your current desk?",
+     "c": "Check your posture now and adjust one thing: seat height, back or feet."
+    },
+    "de": {
+     "t": "Grundlagen zu Schreibtisch und Stuhl",
+     "g": "Richte Tisch und Stuhl so ein, dass du bequem und gesund sitzt.",
+     "p": [
+      "Füße flach auf dem Boden, Knie etwa im rechten Winkel, Rücken gestützt.",
+      "Unterarme liegen waagerecht auf dem Tisch, die Schultern bleiben entspannt.",
+      "Ist der Tisch zu hoch, helfen Fußstütze oder Kissen."
+     ],
+     "q": "Wie fühlt sich dein Körper nach ein paar Stunden am aktuellen Schreibtisch an?",
+     "c": "Prüfe jetzt deine Haltung und ändere eine Sache: Sitzhöhe, Rücken oder Füße."
+    },
+    "es": {
+     "t": "Lo básico del escritorio y la silla",
+     "g": "Prepara un escritorio y una silla que cuiden tu postura y tu comodidad.",
+     "p": [
+      "Pies planos en el suelo, rodillas casi en ángulo recto y espalda apoyada.",
+      "Antebrazos apoyados a nivel en la mesa y hombros relajados.",
+      "Si el escritorio es muy alto, un reposapiés o un cojín pueden ayudar."
+     ],
+     "q": "¿Cómo se siente tu cuerpo tras unas horas en tu escritorio actual?",
+     "c": "Revisa ahora tu postura y ajusta una cosa: altura del asiento, espalda o pies."
+    },
+    "fr": {
+     "t": "Les bases du bureau et de la chaise",
+     "g": "Installe un bureau et une chaise qui soutiennent une posture confortable et saine.",
+     "p": [
+      "Pieds à plat, genoux à angle droit environ, dos soutenu.",
+      "Avant-bras à l'horizontale sur le bureau, épaules détendues.",
+      "Si le bureau est trop haut, un repose-pieds ou un coussin peut aider."
+     ],
+     "q": "Comment ton corps se sent-il après quelques heures à ton bureau actuel ?",
+     "c": "Vérifie ta posture maintenant et ajuste une chose : hauteur du siège, dos ou pieds."
+    },
+    "it": {
+     "t": "Le basi di scrivania e sedia",
+     "g": "Imposta scrivania e sedia per una postura comoda e sana.",
+     "p": [
+      "Piedi appoggiati a terra, ginocchia circa ad angolo retto, schiena sostenuta.",
+      "Avambracci appoggiati in piano sulla scrivania e spalle rilassate.",
+      "Se la scrivania è troppo alta, un poggiapiedi o un cuscino possono aiutare."
+     ],
+     "q": "Come si sente il tuo corpo dopo qualche ora alla scrivania di oggi?",
+     "c": "Controlla ora la postura e regola una cosa: altezza del sedile, schiena o piedi."
+    },
+    "pt": {
+     "t": "O básico da secretária e da cadeira",
+     "g": "Prepara uma secretária e uma cadeira que apoiem uma postura confortável e saudável.",
+     "p": [
+      "Pés assentes no chão, joelhos quase em ângulo reto e costas apoiadas.",
+      "Antebraços pousados na horizontal na secretária, com ombros relaxados.",
+      "Se a secretária for alta demais, um apoio para os pés ou uma almofada ajuda."
+     ],
+     "q": "Como se sente o teu corpo depois de umas horas na secretária atual?",
+     "c": "Verifica agora a postura e ajusta uma coisa: altura do assento, costas ou pés."
+    },
+    "pt_BR": {
+     "t": "O básico da mesa e da cadeira",
+     "g": "Monte uma mesa e uma cadeira que apoiem uma postura confortável e saudável.",
+     "p": [
+      "Pés apoiados no chão, joelhos quase em ângulo reto e costas apoiadas.",
+      "Antebraços apoiados na horizontal na mesa, com ombros relaxados.",
+      "Se a mesa for alta demais, um apoio para os pés ou uma almofada ajuda."
+     ],
+     "q": "Como o seu corpo se sente depois de algumas horas na mesa atual?",
+     "c": "Confira agora a postura e ajuste uma coisa: altura do assento, costas ou pés."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Screen position and ergonomics",
+     "g": "Place your screen to protect your neck and eyes.",
+     "p": [
+      "The top of the screen should sit at or just below eye level.",
+      "Keep it about an arm's length away and straight in front of you.",
+      "With a laptop, a stand plus a separate keyboard lifts the screen."
+     ],
+     "q": "Do you ever feel neck or eye tiredness while working?",
+     "c": "Raise your screen with books or a stand and notice the difference."
+    },
+    "de": {
+     "t": "Bildschirmposition und Ergonomie",
+     "g": "Stelle deinen Bildschirm so auf, dass Nacken und Augen geschont werden.",
+     "p": [
+      "Die Oberkante des Bildschirms liegt auf Augenhöhe oder etwas darunter.",
+      "Halte etwa eine Armlänge Abstand und sitze genau davor.",
+      "Beim Laptop hebt ein Ständer mit separater Tastatur den Bildschirm an."
+     ],
+     "q": "Spürst du manchmal Nacken- oder Augenmüdigkeit bei der Arbeit?",
+     "c": "Erhöhe deinen Bildschirm mit Büchern oder einem Ständer und spüre den Unterschied."
+    },
+    "es": {
+     "t": "Posición de la pantalla y ergonomía",
+     "g": "Coloca la pantalla de modo que cuides tu cuello y tus ojos.",
+     "p": [
+      "El borde superior de la pantalla debe quedar a la altura de los ojos o algo por debajo.",
+      "Mantenla a un brazo de distancia y justo frente a ti.",
+      "Con portátil, un soporte y un teclado aparte elevan la pantalla."
+     ],
+     "q": "¿Sientes a veces cansancio en el cuello o en los ojos al trabajar?",
+     "c": "Eleva tu pantalla con libros o un soporte y nota la diferencia."
+    },
+    "fr": {
+     "t": "Position de l'écran et ergonomie",
+     "g": "Place ton écran pour ménager ta nuque et tes yeux.",
+     "p": [
+      "Le haut de l'écran se situe au niveau des yeux ou un peu en dessous.",
+      "Garde-le à longueur de bras environ, bien en face de toi.",
+      "Avec un portable, un support et un clavier séparé surélèvent l'écran."
+     ],
+     "q": "Ressens-tu parfois de la fatigue à la nuque ou aux yeux en travaillant ?",
+     "c": "Surélève ton écran avec des livres ou un support et note la différence."
+    },
+    "it": {
+     "t": "Posizione dello schermo ed ergonomia",
+     "g": "Posiziona lo schermo per proteggere collo e occhi.",
+     "p": [
+      "Il bordo superiore dello schermo sta all'altezza degli occhi o poco sotto.",
+      "Tienilo a circa un braccio di distanza e proprio davanti a te.",
+      "Con il portatile, un supporto più una tastiera esterna alzano lo schermo."
+     ],
+     "q": "Senti mai stanchezza al collo o agli occhi mentre lavori?",
+     "c": "Alza lo schermo con dei libri o un supporto e nota la differenza."
+    },
+    "pt": {
+     "t": "Posição do ecrã e ergonomia",
+     "g": "Coloca o ecrã de forma a proteger o pescoço e os olhos.",
+     "p": [
+      "O topo do ecrã fica à altura dos olhos ou um pouco abaixo.",
+      "Mantém-no a cerca de um braço de distância e mesmo à tua frente.",
+      "Com um portátil, um suporte e um teclado separado elevam o ecrã."
+     ],
+     "q": "Sentes por vezes cansaço no pescoço ou nos olhos quando trabalhas?",
+     "c": "Eleva o ecrã com livros ou um suporte e repara na diferença."
+    },
+    "pt_BR": {
+     "t": "Posição da tela e ergonomia",
+     "g": "Posicione a tela de modo a proteger o pescoço e os olhos.",
+     "p": [
+      "O topo da tela fica na altura dos olhos ou um pouco abaixo.",
+      "Mantenha cerca de um braço de distância e bem à sua frente.",
+      "Com notebook, um suporte e um teclado separado elevam a tela."
+     ],
+     "q": "Você sente às vezes cansaço no pescoço ou nos olhos ao trabalhar?",
+     "c": "Eleve a tela com livros ou um suporte e perceba a diferença."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lighting your workspace well",
+     "g": "Use daylight and lamps to reduce eye strain and look good on camera.",
+     "p": [
+      "Daylight from the side is gentle; avoid a bright window right behind the screen.",
+      "A desk lamp adds even light when evenings get dark.",
+      "Match screen brightness to the room so it is neither glaring nor dim."
+     ],
+     "q": "Where does light come from at your desk right now?",
+     "c": "Move your desk or lamp slightly and compare how your eyes feel."
+    },
+    "de": {
+     "t": "Den Arbeitsplatz gut beleuchten",
+     "g": "Nutze Tageslicht und Lampen, um die Augen zu schonen und auf Video gut auszusehen.",
+     "p": [
+      "Seitliches Tageslicht ist angenehm; vermeide ein helles Fenster direkt hinter dem Bildschirm.",
+      "Eine Schreibtischlampe sorgt abends für gleichmäßiges Licht.",
+      "Passe die Bildschirmhelligkeit an den Raum an, weder grell noch zu dunkel."
+     ],
+     "q": "Woher kommt gerade das Licht an deinem Schreibtisch?",
+     "c": "Verschiebe Tisch oder Lampe leicht und vergleiche, wie sich deine Augen fühlen."
+    },
+    "es": {
+     "t": "Iluminar bien tu espacio de trabajo",
+     "g": "Usa luz natural y lámparas para cansar menos la vista y verte bien en cámara.",
+     "p": [
+      "La luz natural lateral es suave; evita una ventana muy brillante justo detrás de la pantalla.",
+      "Una lámpara de escritorio aporta luz uniforme cuando oscurece.",
+      "Ajusta el brillo de la pantalla al ambiente: ni deslumbrante ni apagado."
+     ],
+     "q": "¿De dónde viene la luz en tu escritorio ahora mismo?",
+     "c": "Mueve un poco el escritorio o la lámpara y compara cómo sienten tus ojos."
+    },
+    "fr": {
+     "t": "Bien éclairer ton espace de travail",
+     "g": "Utilise lumière du jour et lampes pour fatiguer moins les yeux et être bien en visio.",
+     "p": [
+      "La lumière du jour sur le côté est douce ; évite une fenêtre éclatante juste derrière l'écran.",
+      "Une lampe de bureau apporte une lumière régulière quand le soir tombe.",
+      "Règle la luminosité de l'écran selon la pièce : ni éblouissante ni terne."
+     ],
+     "q": "D'où vient la lumière à ton bureau en ce moment ?",
+     "c": "Déplace un peu ton bureau ou ta lampe et compare le confort de tes yeux."
+    },
+    "it": {
+     "t": "Illuminare bene la tua postazione",
+     "g": "Usa luce naturale e lampade per affaticare meno gli occhi e vederti bene in video.",
+     "p": [
+      "La luce naturale laterale è morbida; evita una finestra luminosa proprio dietro lo schermo.",
+      "Una lampada da scrivania dà luce uniforme quando fa buio.",
+      "Regola la luminosità dello schermo sull'ambiente: né abbagliante né spenta."
+     ],
+     "q": "Da dove arriva la luce alla tua scrivania in questo momento?",
+     "c": "Sposta un po' scrivania o lampada e confronta come stanno i tuoi occhi."
+    },
+    "pt": {
+     "t": "Iluminar bem o teu espaço de trabalho",
+     "g": "Usa luz natural e candeeiros para cansar menos a vista e ficares bem em vídeo.",
+     "p": [
+      "A luz natural lateral é suave; evita uma janela forte mesmo atrás do ecrã.",
+      "Um candeeiro de secretária dá luz uniforme quando escurece.",
+      "Ajusta o brilho do ecrã à divisão: nem ofuscante nem fraco."
+     ],
+     "q": "De onde vem a luz na tua secretária neste momento?",
+     "c": "Move um pouco a secretária ou o candeeiro e compara como se sentem os olhos."
+    },
+    "pt_BR": {
+     "t": "Iluminando bem o seu espaço de trabalho",
+     "g": "Use luz natural e luminárias para cansar menos a vista e ficar bem em vídeo.",
+     "p": [
+      "A luz natural lateral é suave; evite uma janela forte bem atrás da tela.",
+      "Uma luminária de mesa dá luz uniforme quando escurece.",
+      "Ajuste o brilho da tela ao ambiente: nem ofuscante nem fraco."
+     ],
+     "q": "De onde vem a luz na sua mesa agora?",
+     "c": "Mexa um pouco a mesa ou a luminária e compare como os olhos se sentem."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Taming noise at home",
+     "g": "Reduce background noise with simple, low-cost habits.",
+     "p": [
+      "Headphones, even basic ones, create a private bubble for focus.",
+      "Rugs, curtains and bookshelves soften echoes and outside sound.",
+      "Tell housemates your focus hours so noise can be planned together."
+     ],
+     "q": "What is the most distracting sound where you work?",
+     "c": "Agree on one quiet hour with the people you live with this week."
+    },
+    "de": {
+     "t": "Lärm zu Hause zähmen",
+     "g": "Verringere Hintergrundgeräusche mit einfachen, günstigen Gewohnheiten.",
+     "p": [
+      "Kopfhörer, auch einfache, schaffen eine private Fokus-Blase.",
+      "Teppiche, Vorhänge und Regale dämpfen Hall und Außengeräusche.",
+      "Sag Mitbewohnern deine Fokuszeiten, damit Lärm gemeinsam geplant werden kann."
+     ],
+     "q": "Welches Geräusch lenkt dich bei der Arbeit am meisten ab?",
+     "c": "Vereinbare diese Woche mit den Menschen bei dir zu Hause eine ruhige Stunde."
+    },
+    "es": {
+     "t": "Domar el ruido en casa",
+     "g": "Reduce el ruido de fondo con hábitos sencillos y baratos.",
+     "p": [
+      "Los auriculares, aunque sean básicos, crean una burbuja privada para concentrarte.",
+      "Alfombras, cortinas y estanterías suavizan el eco y el sonido de fuera.",
+      "Cuenta a quien convive contigo tus horas de concentración para planear juntos el ruido."
+     ],
+     "q": "¿Cuál es el sonido que más te distrae donde trabajas?",
+     "c": "Acuerda esta semana una hora de silencio con las personas con quien vives."
+    },
+    "fr": {
+     "t": "Apprivoiser le bruit à la maison",
+     "g": "Réduis le bruit de fond avec des habitudes simples et peu coûteuses.",
+     "p": [
+      "Un casque, même basique, crée une bulle privée pour te concentrer.",
+      "Tapis, rideaux et étagères adoucissent l'écho et les bruits extérieurs.",
+      "Dis à tes proches tes heures de concentration pour organiser le bruit ensemble."
+     ],
+     "q": "Quel est le bruit qui te distrait le plus là où tu travailles ?",
+     "c": "Convenez cette semaine d'une heure calme avec les personnes qui vivent avec toi."
+    },
+    "it": {
+     "t": "Domare il rumore a casa",
+     "g": "Riduci il rumore di fondo con abitudini semplici ed economiche.",
+     "p": [
+      "Le cuffie, anche semplici, creano una bolla privata per concentrarti.",
+      "Tappeti, tende e librerie attenuano l'eco e i suoni esterni.",
+      "Comunica a chi vive con te le tue ore di concentrazione per gestire insieme il rumore."
+     ],
+     "q": "Qual è il suono che ti distrae di più dove lavori?",
+     "c": "Accordati questa settimana per un'ora di silenzio con chi vive con te."
+    },
+    "pt": {
+     "t": "Domar o ruído em casa",
+     "g": "Reduz o ruído de fundo com hábitos simples e baratos.",
+     "p": [
+      "Os auscultadores, mesmo simples, criam uma bolha privada para te concentrares.",
+      "Tapetes, cortinas e estantes suavizam o eco e os sons de fora.",
+      "Diz a quem vive contigo as tuas horas de concentração para planearem o ruído em conjunto."
+     ],
+     "q": "Qual é o som que mais te distrai onde trabalhas?",
+     "c": "Combina esta semana uma hora de silêncio com quem vive contigo."
+    },
+    "pt_BR": {
+     "t": "Domando o barulho em casa",
+     "g": "Reduza o barulho de fundo com hábitos simples e baratos.",
+     "p": [
+      "Fones de ouvido, mesmo simples, criam uma bolha privada para você se concentrar.",
+      "Tapetes, cortinas e estantes suavizam o eco e os sons de fora.",
+      "Diga a quem mora com você seus horários de foco para combinarem o barulho juntos."
+     ],
+     "q": "Qual é o som que mais distrai você onde trabalha?",
+     "c": "Combine nesta semana uma hora de silêncio com quem mora com você."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Internet connection essentials",
+     "g": "Check your connection so calls and uploads run smoothly.",
+     "p": [
+      "Stability often matters more than raw speed for video calls.",
+      "Place the router in the open, and use a cable for important calls if you can.",
+      "Keep a backup plan, such as a phone hotspot, for emergencies."
+     ],
+     "q": "How reliable is your internet on a typical work day?",
+     "c": "Test your connection near your desk and write down your backup plan."
+    },
+    "de": {
+     "t": "Grundlagen der Internetverbindung",
+     "g": "Prüfe deine Verbindung, damit Anrufe und Uploads reibungslos laufen.",
+     "p": [
+      "Für Videoanrufe zählt Stabilität oft mehr als reine Geschwindigkeit.",
+      "Stelle den Router frei auf und nutze für wichtige Anrufe wenn möglich ein Kabel.",
+      "Halte einen Notfallplan bereit, etwa einen Handy-Hotspot."
+     ],
+     "q": "Wie zuverlässig ist dein Internet an einem normalen Arbeitstag?",
+     "c": "Teste die Verbindung an deinem Platz und schreib deinen Notfallplan auf."
+    },
+    "es": {
+     "t": "Lo esencial de la conexión a internet",
+     "g": "Revisa tu conexión para que llamadas y subidas vayan fluidas.",
+     "p": [
+      "En las videollamadas, la estabilidad suele importar más que la velocidad pura.",
+      "Coloca el router a la vista y usa cable en llamadas importantes si puedes.",
+      "Ten un plan de respaldo, como el punto de acceso del móvil, para emergencias."
+     ],
+     "q": "¿Qué tan fiable es tu internet en un día normal de trabajo?",
+     "c": "Prueba la conexión junto a tu escritorio y anota tu plan de respaldo."
+    },
+    "fr": {
+     "t": "L'essentiel de la connexion internet",
+     "g": "Vérifie ta connexion pour que appels et envois se passent bien.",
+     "p": [
+      "Pour la visio, la stabilité compte souvent plus que la vitesse brute.",
+      "Place le routeur dégagé et utilise un câble pour les appels importants si possible.",
+      "Prévois une solution de secours, comme le partage de connexion du téléphone."
+     ],
+     "q": "Ta connexion est-elle fiable lors d'une journée de travail typique ?",
+     "c": "Teste la connexion près de ton bureau et note ta solution de secours."
+    },
+    "it": {
+     "t": "L'essenziale sulla connessione internet",
+     "g": "Controlla la connessione perché chiamate e caricamenti vadano lisci.",
+     "p": [
+      "Per le videochiamate la stabilità conta spesso più della velocità pura.",
+      "Metti il router in un punto aperto e usa un cavo per le chiamate importanti, se puoi.",
+      "Prepara un piano di riserva, come l'hotspot del telefono, per le emergenze."
+     ],
+     "q": "Quanto è affidabile la tua connessione in una giornata di lavoro tipica?",
+     "c": "Prova la connessione vicino alla scrivania e scrivi il tuo piano di riserva."
+    },
+    "pt": {
+     "t": "O essencial da ligação à internet",
+     "g": "Verifica a tua ligação para que chamadas e envios corram bem.",
+     "p": [
+      "Nas videochamadas, a estabilidade conta muitas vezes mais do que a velocidade pura.",
+      "Põe o router em local aberto e usa cabo nas chamadas importantes, se possível.",
+      "Tem um plano de reserva, como a partilha de internet do telemóvel."
+     ],
+     "q": "Quão fiável é a tua internet num dia normal de trabalho?",
+     "c": "Testa a ligação junto à secretária e anota o teu plano de reserva."
+    },
+    "pt_BR": {
+     "t": "O essencial da conexão com a internet",
+     "g": "Verifique sua conexão para que chamadas e envios corram bem.",
+     "p": [
+      "Em videochamadas, a estabilidade costuma importar mais que a velocidade pura.",
+      "Deixe o roteador em local aberto e use cabo nas chamadas importantes, se puder.",
+      "Tenha um plano reserva, como o roteamento de internet do celular."
+     ],
+     "q": "Quão confiável é a sua internet num dia comum de trabalho?",
+     "c": "Teste a conexão perto da mesa e anote seu plano reserva."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Small spaces, smart setups",
+     "g": "Make a workable office in a tiny flat, shared room or kitchen.",
+     "p": [
+      "Foldable desks, wall shelves and trolleys let you pack work away.",
+      "A tray or box can hold your work things so the table is free after hours.",
+      "A simple screen or plant can mark a visual border for your work area."
+     ],
+     "q": "What is the biggest space limit you have at home?",
+     "c": "Sketch a pack-away setup using things you already own."
+    },
+    "de": {
+     "t": "Kleine Räume, clevere Lösungen",
+     "g": "Schaffe in kleiner Wohnung, geteiltem Zimmer oder Küche einen brauchbaren Arbeitsplatz.",
+     "p": [
+      "Klapptische, Wandregale und Rollwagen lassen die Arbeit wegräumen.",
+      "Ein Tablett oder eine Kiste bündelt Arbeitssachen, sodass der Tisch abends frei ist.",
+      "Ein Paravent oder eine Pflanze kann den Arbeitsbereich optisch abgrenzen."
+     ],
+     "q": "Was ist deine größte Platzgrenze zu Hause?",
+     "c": "Skizziere ein Wegräum-Setup mit Dingen, die du schon hast."
+    },
+    "es": {
+     "t": "Espacios pequeños, montajes inteligentes",
+     "g": "Crea una oficina funcional en un piso pequeño, una habitación compartida o la cocina.",
+     "p": [
+      "Escritorios plegables, estantes de pared y carritos permiten recoger el trabajo.",
+      "Una bandeja o caja guarda tus cosas de trabajo y deja la mesa libre al acabar.",
+      "Un biombo o una planta pueden marcar un límite visual de tu zona de trabajo."
+     ],
+     "q": "¿Cuál es tu mayor límite de espacio en casa?",
+     "c": "Dibuja un montaje recogible con cosas que ya tienes."
+    },
+    "fr": {
+     "t": "Petits espaces, installations malignes",
+     "g": "Crée un coin de travail utile dans un petit logement, une pièce partagée ou la cuisine.",
+     "p": [
+      "Bureaux pliables, étagères murales et chariots permettent de ranger le travail.",
+      "Un plateau ou une boîte regroupe tes affaires de travail et libère la table après les heures.",
+      "Un paravent ou une plante peut marquer visuellement ta zone de travail."
+     ],
+     "q": "Quelle est ta plus grande contrainte d'espace chez toi ?",
+     "c": "Dessine une installation rangeable avec des choses que tu possèdes déjà."
+    },
+    "it": {
+     "t": "Spazi piccoli, soluzioni furbe",
+     "g": "Crea una postazione funzionale in un piccolo appartamento, una stanza condivisa o la cucina.",
+     "p": [
+      "Scrivanie pieghevoli, mensole a muro e carrelli permettono di mettere via il lavoro.",
+      "Un vassoio o una scatola raccoglie le cose di lavoro e libera il tavolo dopo l'orario.",
+      "Un paravento o una pianta può segnare un confine visivo della zona di lavoro."
+     ],
+     "q": "Qual è il tuo limite di spazio più grande a casa?",
+     "c": "Disegna una postazione richiudibile usando cose che hai già."
+    },
+    "pt": {
+     "t": "Espaços pequenos, soluções inteligentes",
+     "g": "Cria um espaço de trabalho funcional num apartamento pequeno, quarto partilhado ou cozinha.",
+     "p": [
+      "Secretárias dobráveis, prateleiras de parede e carrinhos permitem arrumar o trabalho.",
+      "Um tabuleiro ou caixa guarda as coisas de trabalho e deixa a mesa livre depois do horário.",
+      "Um biombo ou uma planta pode marcar uma fronteira visual da zona de trabalho."
+     ],
+     "q": "Qual é o teu maior limite de espaço em casa?",
+     "c": "Desenha uma montagem arrumável com coisas que já tens."
+    },
+    "pt_BR": {
+     "t": "Espaços pequenos, arranjos inteligentes",
+     "g": "Crie um espaço de trabalho funcional num apartamento pequeno, quarto compartilhado ou cozinha.",
+     "p": [
+      "Mesas dobráveis, prateleiras de parede e carrinhos permitem guardar o trabalho.",
+      "Uma bandeja ou caixa guarda suas coisas de trabalho e deixa a mesa livre depois do expediente.",
+      "Um biombo ou uma planta pode marcar uma fronteira visual da área de trabalho."
+     ],
+     "q": "Qual é o seu maior limite de espaço em casa?",
+     "c": "Desenhe um arranjo guardável usando coisas que você já tem."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keeping your desk tidy and inspiring",
+     "g": "Build simple habits for a clear desk and a mood-lifting touch.",
+     "p": [
+      "Keep only today's essentials within reach; store the rest.",
+      "A two-minute tidy at day's end makes tomorrow's start easier.",
+      "One personal item, like a plant or photo, makes the space yours."
+     ],
+     "q": "What is on your desk that you do not actually need?",
+     "c": "Clear your desk of three things and add one item you love."
+    },
+    "de": {
+     "t": "Den Schreibtisch aufgeräumt und inspirierend halten",
+     "g": "Entwickle einfache Gewohnheiten für einen freien Tisch und einen Stimmungsmacher.",
+     "p": [
+      "Halte nur das Wichtigste für heute in Reichweite; verstaue den Rest.",
+      "Zwei Minuten Aufräumen am Tagesende erleichtern den Start am nächsten Morgen.",
+      "Ein persönlicher Gegenstand, etwa Pflanze oder Foto, macht den Platz zu deinem."
+     ],
+     "q": "Was liegt auf deinem Schreibtisch, das du gar nicht brauchst?",
+     "c": "Räume drei Dinge vom Tisch und stelle einen Gegenstand hin, den du magst."
+    },
+    "es": {
+     "t": "Mantener tu escritorio ordenado e inspirador",
+     "g": "Crea hábitos sencillos para una mesa despejada y un toque que levante el ánimo.",
+     "p": [
+      "Ten a mano solo lo esencial de hoy; guarda el resto.",
+      "Ordenar dos minutos al final del día facilita el comienzo de mañana.",
+      "Un objeto personal, como una planta o una foto, hace tuyo el espacio."
+     ],
+     "q": "¿Qué hay en tu escritorio que en realidad no necesitas?",
+     "c": "Quita tres cosas de tu escritorio y añade un objeto que te guste."
+    },
+    "fr": {
+     "t": "Garder un bureau net et inspirant",
+     "g": "Adopte des habitudes simples pour un bureau dégagé et une touche qui donne le moral.",
+     "p": [
+      "Garde à portée de main seulement l'essentiel du jour ; range le reste.",
+      "Deux minutes de rangement en fin de journée facilitent le début du lendemain.",
+      "Un objet personnel, comme une plante ou une photo, rend l'espace à toi."
+     ],
+     "q": "Qu'y a-t-il sur ton bureau dont tu n'as pas vraiment besoin ?",
+     "c": "Retire trois choses de ton bureau et ajoute un objet que tu aimes."
+    },
+    "it": {
+     "t": "Tenere la scrivania in ordine e ispirante",
+     "g": "Crea abitudini semplici per una scrivania libera e un tocco che alza l'umore.",
+     "p": [
+      "Tieni a portata solo l'essenziale di oggi; metti via il resto.",
+      "Due minuti di riordino a fine giornata rendono più facile l'inizio di domani.",
+      "Un oggetto personale, come una pianta o una foto, rende lo spazio tuo."
+     ],
+     "q": "Che cosa c'è sulla tua scrivania che in realtà non ti serve?",
+     "c": "Togli tre cose dalla scrivania e aggiungi un oggetto che ami."
+    },
+    "pt": {
+     "t": "Manter a secretária arrumada e inspiradora",
+     "g": "Cria hábitos simples para uma secretária livre e um toque que anima.",
+     "p": [
+      "Mantém à mão só o essencial de hoje; guarda o resto.",
+      "Dois minutos a arrumar no fim do dia facilitam o início de amanhã.",
+      "Um objeto pessoal, como uma planta ou uma foto, torna o espaço teu."
+     ],
+     "q": "O que há na tua secretária de que na verdade não precisas?",
+     "c": "Tira três coisas da secretária e acrescenta um objeto de que gostes."
+    },
+    "pt_BR": {
+     "t": "Mantendo a mesa organizada e inspiradora",
+     "g": "Crie hábitos simples para uma mesa livre e um toque que levanta o astral.",
+     "p": [
+      "Deixe à mão só o essencial do dia; guarde o resto.",
+      "Dois minutos arrumando no fim do dia facilitam o começo de amanhã.",
+      "Um objeto pessoal, como uma planta ou uma foto, deixa o espaço com a sua cara."
+     ],
+     "q": "O que há na sua mesa de que você na verdade não precisa?",
+     "c": "Tire três coisas da mesa e acrescente um objeto de que você goste."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Standing, moving and switching positions",
+     "g": "Add movement so sitting all day does not wear you down.",
+     "p": [
+      "The best posture is the next one: change position every so often.",
+      "Try standing for calls or a short stretch, even without a special desk.",
+      "Short walks and shoulder rolls keep blood flowing and the mind fresh."
+     ],
+     "q": "How long do you usually sit without moving?",
+     "c": "Set a timer for every hour and stand up for one minute each time."
+    },
+    "de": {
+     "t": "Stehen, Bewegen und Position wechseln",
+     "g": "Bring Bewegung in den Tag, damit langes Sitzen dich nicht auslaugt.",
+     "p": [
+      "Die beste Haltung ist die nächste: wechsle regelmäßig die Position.",
+      "Probiere Stehen bei Anrufen oder kurze Dehnpausen, auch ohne Spezialtisch.",
+      "Kurze Spaziergänge und Schulterkreisen halten den Kreislauf und den Kopf frisch."
+     ],
+     "q": "Wie lange sitzt du meist, ohne dich zu bewegen?",
+     "c": "Stelle einen Stundentimer und steh jedes Mal eine Minute auf."
+    },
+    "es": {
+     "t": "De pie, en movimiento y con cambios de postura",
+     "g": "Añade movimiento para que estar sentado todo el día no te agote.",
+     "p": [
+      "La mejor postura es la siguiente: cambia de posición cada cierto tiempo.",
+      "Prueba a levantarte en llamadas o a estirarte un poco, aunque no tengas escritorio especial.",
+      "Paseos cortos y rotar los hombros mantienen la circulación y la mente fresca."
+     ],
+     "q": "¿Cuánto tiempo sueles estar sentado sin moverte?",
+     "c": "Pon una alarma cada hora y levántate un minuto cada vez."
+    },
+    "fr": {
+     "t": "Se lever, bouger et changer de position",
+     "g": "Ajoute du mouvement pour que rester assis toute la journée ne t'épuise pas.",
+     "p": [
+      "La meilleure posture est la prochaine : change de position régulièrement.",
+      "Essaie de te lever pendant les appels ou de t'étirer, même sans bureau spécial.",
+      "De courtes marches et des rotations d'épaules gardent la circulation et l'esprit frais."
+     ],
+     "q": "Combien de temps restes-tu assis sans bouger d'habitude ?",
+     "c": "Mets un minuteur chaque heure et lève-toi une minute à chaque fois."
+    },
+    "it": {
+     "t": "In piedi, in movimento e cambi di posizione",
+     "g": "Aggiungi movimento perché stare seduti tutto il giorno non ti consumi.",
+     "p": [
+      "La postura migliore è la prossima: cambia posizione ogni tanto.",
+      "Prova a stare in piedi durante le chiamate o a fare stretching, anche senza scrivania speciale.",
+      "Brevi passeggiate e rotazioni delle spalle mantengono la circolazione e la mente fresca."
+     ],
+     "q": "Quanto resti di solito seduto senza muoverti?",
+     "c": "Imposta un timer ogni ora e alzati per un minuto ogni volta."
+    },
+    "pt": {
+     "t": "De pé, em movimento e a mudar de posição",
+     "g": "Acrescenta movimento para que estar sentado o dia todo não te desgaste.",
+     "p": [
+      "A melhor postura é a seguinte: muda de posição com regularidade.",
+      "Experimenta ficar de pé nas chamadas ou fazer alongamentos, mesmo sem secretária especial.",
+      "Pequenas caminhadas e rodar os ombros mantêm a circulação e a mente frescas."
+     ],
+     "q": "Quanto tempo costumas estar sentado sem te mexer?",
+     "c": "Define um alarme a cada hora e levanta-te um minuto de cada vez."
+    },
+    "pt_BR": {
+     "t": "Em pé, em movimento e mudando de posição",
+     "g": "Inclua movimento para que ficar sentado o dia todo não desgaste você.",
+     "p": [
+      "A melhor postura é a próxima: mude de posição com regularidade.",
+      "Experimente ficar em pé nas chamadas ou se alongar, mesmo sem mesa especial.",
+      "Pequenas caminhadas e girar os ombros mantêm a circulação e a mente fresca."
+     ],
+     "q": "Quanto tempo você costuma ficar sentado sem se mexer?",
+     "c": "Programe um alarme a cada hora e levante por um minuto toda vez."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A workspace on a budget",
+     "g": "Improve comfort and function with low-cost tweaks.",
+     "p": [
+      "Use what you have: books as a monitor stand, a cushion for the back.",
+      "Spend first on what touches your body most, like a good chair.",
+      "Second-hand furniture and swaps with friends can stretch a budget."
+     ],
+     "q": "What one change would improve your workspace the most?",
+     "c": "Make one free or nearly free upgrade to your workspace today."
+    },
+    "de": {
+     "t": "Ein Arbeitsplatz mit kleinem Budget",
+     "g": "Verbessere Komfort und Funktion mit günstigen Kniffen.",
+     "p": [
+      "Nutze, was du hast: Bücher als Monitorständer, ein Kissen für den Rücken.",
+      "Gib zuerst Geld für das aus, was deinen Körper am meisten berührt, etwa einen guten Stuhl.",
+      "Gebrauchte Möbel und Tauschen mit Freunden dehnen das Budget."
+     ],
+     "q": "Welche eine Änderung würde deinen Arbeitsplatz am meisten verbessern?",
+     "c": "Mach heute ein kostenloses oder fast kostenloses Upgrade für deinen Arbeitsplatz."
+    },
+    "es": {
+     "t": "Un espacio de trabajo con poco presupuesto",
+     "g": "Mejora comodidad y funcionalidad con retoques baratos.",
+     "p": [
+      "Aprovecha lo que tienes: libros como soporte de pantalla, un cojín para la espalda.",
+      "Gasta primero en lo que más toca tu cuerpo, como una buena silla.",
+      "Muebles de segunda mano e intercambios con amigos estiran el presupuesto."
+     ],
+     "q": "¿Qué único cambio mejoraría más tu espacio de trabajo?",
+     "c": "Haz hoy una mejora gratuita o casi gratuita en tu espacio de trabajo."
+    },
+    "fr": {
+     "t": "Un espace de travail à petit budget",
+     "g": "Améliore confort et fonctionnalité avec des astuces peu coûteuses.",
+     "p": [
+      "Utilise ce que tu as : des livres comme support d'écran, un coussin pour le dos.",
+      "Dépense d'abord pour ce qui touche le plus ton corps, comme une bonne chaise.",
+      "Meubles d'occasion et échanges entre amis font durer le budget."
+     ],
+     "q": "Quel changement améliorerait le plus ton espace de travail ?",
+     "c": "Fais aujourd'hui une amélioration gratuite ou presque pour ton espace de travail."
+    },
+    "it": {
+     "t": "Una postazione con poco budget",
+     "g": "Migliora comfort e funzionalità con piccoli ritocchi economici.",
+     "p": [
+      "Usa ciò che hai: libri come supporto per lo schermo, un cuscino per la schiena.",
+      "Spendi prima per ciò che tocca di più il tuo corpo, come una buona sedia.",
+      "Mobili usati e scambi con amici allungano il budget."
+     ],
+     "q": "Quale singolo cambiamento migliorerebbe di più la tua postazione?",
+     "c": "Fai oggi un miglioramento gratuito o quasi alla tua postazione."
+    },
+    "pt": {
+     "t": "Um espaço de trabalho com orçamento reduzido",
+     "g": "Melhora o conforto e a função com retoques baratos.",
+     "p": [
+      "Aproveita o que tens: livros como suporte do ecrã, uma almofada para as costas.",
+      "Gasta primeiro no que mais toca o teu corpo, como uma boa cadeira.",
+      "Móveis em segunda mão e trocas com amigos esticam o orçamento."
+     ],
+     "q": "Que única mudança melhoraria mais o teu espaço de trabalho?",
+     "c": "Faz hoje uma melhoria gratuita ou quase gratuita no teu espaço de trabalho."
+    },
+    "pt_BR": {
+     "t": "Um espaço de trabalho com orçamento enxuto",
+     "g": "Melhore conforto e função com ajustes baratos.",
+     "p": [
+      "Aproveite o que você tem: livros como suporte da tela, uma almofada para as costas.",
+      "Gaste primeiro no que mais toca o seu corpo, como uma boa cadeira.",
+      "Móveis usados e trocas com amigos esticam o orçamento."
+     ],
+     "q": "Qual única mudança melhoraria mais o seu espaço de trabalho?",
+     "c": "Faça hoje uma melhoria gratuita ou quase gratuita no seu espaço de trabalho."
+    }
+   }
+  }
+ ]
+}

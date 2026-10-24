@@ -1,0 +1,835 @@
+{
+ "topic": "habits",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tracking check-in",
+     "g": "Review your tracker and simplify it if it feels like a chore.",
+     "p": [
+      "Ask: does this tracker still help me or just take time?",
+      "Remove columns, shorten lists, keep only what matters.",
+      "A simpler tracker is easier to keep for months."
+     ],
+     "q": "What would you change to make your tracker lighter?",
+     "c": "Trim your tracker by one item today and keep the rest."
+    },
+    "de": {
+     "t": "Tracking-Check-in",
+     "g": "Deinen Tracker prüfen und vereinfachen, wenn er zur Pflicht wird.",
+     "p": [
+      "Frage: Hilft mir dieser Tracker noch oder kostet er nur Zeit?",
+      "Streiche Spalten, kürze Listen, behalte nur das Wichtige.",
+      "Ein einfacherer Tracker hält sich leichter über Monate."
+     ],
+     "q": "Was würdest du ändern, damit dein Tracker leichter wird?",
+     "c": "Kürze deinen Tracker heute um einen Punkt und behalte den Rest."
+    },
+    "es": {
+     "t": "Revisión del registro",
+     "g": "Revisar tu registro y simplificarlo si se siente como una carga.",
+     "p": [
+      "Pregúntate: ¿este registro aún me ayuda o solo me quita tiempo?",
+      "Quita columnas, acorta listas, deja solo lo que importa.",
+      "Un registro más simple es más fácil de mantener durante meses."
+     ],
+     "q": "¿Qué cambiarías para que tu registro sea más ligero?",
+     "c": "Recorta hoy un elemento de tu registro y deja el resto."
+    },
+    "fr": {
+     "t": "Point sur ton suivi",
+     "g": "Revoir ton suivi et le simplifier s'il devient une corvée.",
+     "p": [
+      "Demande-toi : ce suivi m'aide-t-il encore ou prend-il juste du temps ?",
+      "Retire des colonnes, raccourcis les listes, garde l'essentiel.",
+      "Un suivi plus simple se garde plus facilement pendant des mois."
+     ],
+     "q": "Que changerais-tu pour alléger ton suivi ?",
+     "c": "Supprime aujourd'hui un élément de ton suivi et garde le reste."
+    },
+    "it": {
+     "t": "Controllo del tracker",
+     "g": "Rivedere il tracker e semplificarlo se pesa come un compito.",
+     "p": [
+      "Chiediti: questo tracker mi aiuta ancora o mi fa solo perdere tempo?",
+      "Togli colonne, accorcia le liste, tieni solo ciò che conta.",
+      "Un tracker più semplice si mantiene più facilmente per mesi."
+     ],
+     "q": "Cosa cambieresti per alleggerire il tuo tracker?",
+     "c": "Elimina oggi una voce dal tracker e tieni il resto."
+    },
+    "pt": {
+     "t": "Ponto de situação do registo",
+     "g": "Rever o registo e simplificá-lo se parecer uma maçada.",
+     "p": [
+      "Pergunta: este registo ainda me ajuda ou só me tira tempo?",
+      "Tira colunas, encurta listas, fica só com o que importa.",
+      "Um registo mais simples mantém-se mais facilmente durante meses."
+     ],
+     "q": "O que mudarias para o teu registo ficar mais leve?",
+     "c": "Corta hoje um item do teu registo e mantém o resto."
+    },
+    "pt_BR": {
+     "t": "Check-in do registro",
+     "g": "Rever o registro e simplificá-lo se parecer uma chatice.",
+     "p": [
+      "Pergunte: esse registro ainda ajuda ou só toma tempo?",
+      "Tire colunas, encurte listas, fique só com o que importa.",
+      "Um registro mais simples se mantém mais fácil por meses."
+     ],
+     "q": "O que você mudaria para deixar seu registro mais leve?",
+     "c": "Corte hoje um item do seu registro e mantenha o resto."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why mornings matter",
+     "g": "See how a calm start can set the tone for your day.",
+     "p": [
+      "The first hour often shapes your mood and focus.",
+      "A calm start does not need to be long or fancy.",
+      "Small morning choices give you a sense of control."
+     ],
+     "q": "How do you feel in the first ten minutes after waking up?",
+     "c": "Tomorrow, add one calm action in your first ten minutes, like a deep breath."
+    },
+    "de": {
+     "t": "Warum Morgen zählen",
+     "g": "Sehen, wie ein ruhiger Start den Ton für deinen Tag setzt.",
+     "p": [
+      "Die erste Stunde prägt oft Stimmung und Konzentration.",
+      "Ein ruhiger Start muss weder lang noch aufwendig sein.",
+      "Kleine Morgenentscheidungen geben dir ein Gefühl von Kontrolle."
+     ],
+     "q": "Wie fühlst du dich in den ersten zehn Minuten nach dem Aufwachen?",
+     "c": "Füge morgen in den ersten zehn Minuten eine ruhige Handlung hinzu, etwa einen tiefen Atemzug."
+    },
+    "es": {
+     "t": "Por qué importan las mañanas",
+     "g": "Ver cómo un inicio tranquilo marca el tono de tu día.",
+     "p": [
+      "La primera hora suele moldear tu ánimo y tu concentración.",
+      "Un inicio tranquilo no tiene que ser largo ni sofisticado.",
+      "Pequeñas decisiones matinales te dan sensación de control."
+     ],
+     "q": "¿Cómo te sientes en los primeros diez minutos tras despertar?",
+     "c": "Mañana añade una acción tranquila en tus primeros diez minutos, como respirar hondo."
+    },
+    "fr": {
+     "t": "Pourquoi les matins comptent",
+     "g": "Voir comment un début calme donne le ton de ta journée.",
+     "p": [
+      "La première heure façonne souvent l'humeur et la concentration.",
+      "Un début calme n'a pas besoin d'être long ni sophistiqué.",
+      "De petits choix le matin donnent un sentiment de maîtrise."
+     ],
+     "q": "Comment te sens-tu dans les dix premières minutes après le réveil ?",
+     "c": "Demain, ajoute une action calme dans tes dix premières minutes, comme une grande respiration."
+    },
+    "it": {
+     "t": "Perché le mattine contano",
+     "g": "Vedere come un inizio calmo dà il tono alla giornata.",
+     "p": [
+      "La prima ora spesso plasma umore e concentrazione.",
+      "Un inizio calmo non deve essere lungo né elaborato.",
+      "Piccole scelte mattutine danno un senso di controllo."
+     ],
+     "q": "Come ti senti nei primi dieci minuti dopo il risveglio?",
+     "c": "Domani aggiungi un gesto calmo nei primi dieci minuti, come un respiro profondo."
+    },
+    "pt": {
+     "t": "Porque importam as manhãs",
+     "g": "Ver como um começo calmo dá o tom ao teu dia.",
+     "p": [
+      "A primeira hora costuma moldar o humor e a concentração.",
+      "Um começo calmo não precisa de ser longo nem sofisticado.",
+      "Pequenas escolhas matinais dão-te sensação de controlo."
+     ],
+     "q": "Como te sentes nos primeiros dez minutos depois de acordares?",
+     "c": "Amanhã junta uma ação calma nos teus primeiros dez minutos, como respirar fundo."
+    },
+    "pt_BR": {
+     "t": "Por que as manhãs importam",
+     "g": "Ver como um começo calmo dá o tom do seu dia.",
+     "p": [
+      "A primeira hora costuma moldar humor e concentração.",
+      "Um começo calmo não precisa ser longo nem sofisticado.",
+      "Pequenas escolhas matinais dão sensação de controle."
+     ],
+     "q": "Como você se sente nos primeiros dez minutos depois de acordar?",
+     "c": "Amanhã acrescente uma ação calma nos seus primeiros dez minutos, como respirar fundo."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Waking up at a steady time",
+     "g": "Build a consistent wake-up time, even on weekends if possible.",
+     "p": [
+      "A steady wake time helps your body find its rhythm.",
+      "Shift your alarm by small steps, like fifteen minutes.",
+      "If sleep is a constant problem, a doctor can help."
+     ],
+     "q": "What wake-up time feels realistic for most of your days?",
+     "c": "Choose a realistic wake-up time and set your alarm for it tomorrow."
+    },
+    "de": {
+     "t": "Zu festen Zeiten aufstehen",
+     "g": "Eine gleichmäßige Aufstehzeit aufbauen, wenn möglich auch am Wochenende.",
+     "p": [
+      "Eine feste Aufstehzeit hilft deinem Körper, seinen Rhythmus zu finden.",
+      "Verschiebe den Wecker in kleinen Schritten, etwa um fünfzehn Minuten.",
+      "Bei dauerhaften Schlafproblemen kann ein Arzt helfen."
+     ],
+     "q": "Welche Aufstehzeit passt realistisch zu den meisten deiner Tage?",
+     "c": "Wähle eine realistische Aufstehzeit und stell morgen den Wecker darauf."
+    },
+    "es": {
+     "t": "Despertar a una hora estable",
+     "g": "Crear una hora de levantarse constante, también en fin de semana si es posible.",
+     "p": [
+      "Una hora fija de despertar ayuda a tu cuerpo a hallar su ritmo.",
+      "Mueve la alarma en pasos pequeños, como quince minutos.",
+      "Si dormir es un problema constante, un médico puede ayudarte."
+     ],
+     "q": "¿Qué hora de levantarte es realista para la mayoría de tus días?",
+     "c": "Elige una hora realista de levantarte y pon la alarma para mañana."
+    },
+    "fr": {
+     "t": "Se lever à heure régulière",
+     "g": "Instaurer une heure de réveil régulière, même le week-end si possible.",
+     "p": [
+      "Un réveil régulier aide ton corps à trouver son rythme.",
+      "Décale ton alarme par petits pas, comme quinze minutes.",
+      "Si le sommeil pose un problème constant, un médecin peut aider."
+     ],
+     "q": "Quelle heure de réveil te semble réaliste pour la plupart de tes jours ?",
+     "c": "Choisis une heure de réveil réaliste et règle ton alarme dessus demain."
+    },
+    "it": {
+     "t": "Svegliarsi a orari regolari",
+     "g": "Costruire un orario di sveglia costante, anche nel weekend se possibile.",
+     "p": [
+      "Un orario di sveglia fisso aiuta il corpo a trovare il suo ritmo.",
+      "Sposta la sveglia a piccoli passi, come quindici minuti.",
+      "Se dormire è un problema costante, un medico può aiutare."
+     ],
+     "q": "Quale orario di sveglia è realistico per la maggior parte dei tuoi giorni?",
+     "c": "Scegli un orario di sveglia realistico e imposta la sveglia domani."
+    },
+    "pt": {
+     "t": "Acordar a horas certas",
+     "g": "Criar uma hora de acordar constante, também ao fim de semana se possível.",
+     "p": [
+      "Uma hora fixa de acordar ajuda o corpo a encontrar o seu ritmo.",
+      "Muda o alarme em passos pequenos, como quinze minutos.",
+      "Se dormir for um problema constante, um médico pode ajudar."
+     ],
+     "q": "Que hora de acordar é realista para a maioria dos teus dias?",
+     "c": "Escolhe uma hora de acordar realista e põe o alarme para amanhã."
+    },
+    "pt_BR": {
+     "t": "Acordar em horário regular",
+     "g": "Criar um horário de acordar constante, também no fim de semana se possível.",
+     "p": [
+      "Um horário fixo de acordar ajuda o corpo a achar seu ritmo.",
+      "Mude o alarme em passos pequenos, como quinze minutos.",
+      "Se dormir for um problema constante, um médico pode ajudar."
+     ],
+     "q": "Que horário de acordar é realista para a maioria dos seus dias?",
+     "c": "Escolha um horário de acordar realista e programe o alarme para amanhã."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A simple morning routine",
+     "g": "Choose three to five short actions to start your day well.",
+     "p": [
+      "Keep it short: water, stretch, a few breaths, a quick plan.",
+      "The order should flow so each step cues the next.",
+      "Your routine is yours, so copy no one else's."
+     ],
+     "q": "Which three small actions would make your morning feel good?",
+     "c": "Write your three-to-five step morning routine and try it tomorrow."
+    },
+    "de": {
+     "t": "Eine einfache Morgenroutine",
+     "g": "Drei bis fünf kurze Handlungen für einen guten Start wählen.",
+     "p": [
+      "Halte sie kurz: Wasser, Dehnen, ein paar Atemzüge, ein kurzer Plan.",
+      "Die Reihenfolge sollte fließen, sodass jeder Schritt den nächsten auslöst.",
+      "Deine Routine gehört dir, kopiere niemand anderen."
+     ],
+     "q": "Welche drei kleinen Handlungen würden deinen Morgen gut anfühlen lassen?",
+     "c": "Schreibe deine Morgenroutine mit drei bis fünf Schritten auf und probiere sie morgen."
+    },
+    "es": {
+     "t": "Una rutina matinal sencilla",
+     "g": "Elegir de tres a cinco acciones cortas para empezar bien el día.",
+     "p": [
+      "Que sea corta: agua, estirar, unas respiraciones, un plan rápido.",
+      "El orden debe fluir para que cada paso lleve al siguiente.",
+      "Tu rutina es tuya, no copies la de nadie."
+     ],
+     "q": "¿Qué tres pequeñas acciones harían que tu mañana se sienta bien?",
+     "c": "Escribe tu rutina de tres a cinco pasos y pruébala mañana."
+    },
+    "fr": {
+     "t": "Une routine matinale simple",
+     "g": "Choisir trois à cinq petites actions pour bien commencer la journée.",
+     "p": [
+      "Reste court : eau, étirements, quelques respirations, un petit plan.",
+      "L'ordre doit couler pour que chaque étape déclenche la suivante.",
+      "Ta routine est la tienne, ne copie personne."
+     ],
+     "q": "Quelles trois petites actions rendraient ton matin agréable ?",
+     "c": "Écris ta routine de trois à cinq étapes et essaie-la demain."
+    },
+    "it": {
+     "t": "Una semplice routine mattutina",
+     "g": "Scegliere da tre a cinque azioni brevi per iniziare bene la giornata.",
+     "p": [
+      "Tienila breve: acqua, stretching, qualche respiro, un piano veloce.",
+      "L'ordine deve scorrere, così ogni passo avvia il successivo.",
+      "La routine è tua, non copiare quella di nessun altro."
+     ],
+     "q": "Quali tre piccole azioni renderebbero piacevole la tua mattina?",
+     "c": "Scrivi la tua routine di tre-cinque passi e provala domani."
+    },
+    "pt": {
+     "t": "Uma rotina matinal simples",
+     "g": "Escolher três a cinco ações curtas para começar bem o dia.",
+     "p": [
+      "Mantém curta: água, alongar, umas respirações, um plano rápido.",
+      "A ordem deve fluir para cada passo levar ao seguinte.",
+      "A rotina é tua, não copies a de ninguém."
+     ],
+     "q": "Que três pequenas ações fariam a tua manhã saber bem?",
+     "c": "Escreve a tua rotina de três a cinco passos e experimenta amanhã."
+    },
+    "pt_BR": {
+     "t": "Uma rotina matinal simples",
+     "g": "Escolher de três a cinco ações curtas para começar bem o dia.",
+     "p": [
+      "Mantenha curta: água, alongar, algumas respirações, um plano rápido.",
+      "A ordem deve fluir para cada passo levar ao seguinte.",
+      "A rotina é sua, não copie a de ninguém."
+     ],
+     "q": "Que três pequenas ações deixariam sua manhã gostosa?",
+     "c": "Escreva sua rotina de três a cinco passos e experimente amanhã."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Morning light and fresh air",
+     "g": "Open the curtains or step outside early to feel more awake.",
+     "p": [
+      "Daylight helps your body know it is time to be awake.",
+      "Even two minutes by an open window can lift your mood.",
+      "On dark mornings, turn on a bright lamp."
+     ],
+     "q": "Where could you enjoy a minute of morning light?",
+     "c": "Tomorrow, open the curtains or step outside for one minute right after waking."
+    },
+    "de": {
+     "t": "Morgenlicht und frische Luft",
+     "g": "Vorhänge öffnen oder früh nach draußen gehen, um wacher zu werden.",
+     "p": [
+      "Tageslicht zeigt deinem Körper, dass es Zeit zum Wachsein ist.",
+      "Schon zwei Minuten am offenen Fenster können die Stimmung heben.",
+      "An dunklen Morgenden hilft eine helle Lampe."
+     ],
+     "q": "Wo könntest du eine Minute Morgenlicht genießen?",
+     "c": "Öffne morgen direkt nach dem Aufwachen die Vorhänge oder geh eine Minute nach draußen."
+    },
+    "es": {
+     "t": "Luz de la mañana y aire fresco",
+     "g": "Abrir las cortinas o salir pronto para sentirte más despierto.",
+     "p": [
+      "La luz del día ayuda a tu cuerpo a saber que es hora de estar activo.",
+      "Dos minutos junto a una ventana abierta pueden mejorar tu ánimo.",
+      "En mañanas oscuras, enciende una lámpara brillante."
+     ],
+     "q": "¿Dónde podrías disfrutar un minuto de luz matinal?",
+     "c": "Mañana abre las cortinas o sal un minuto nada más despertar."
+    },
+    "fr": {
+     "t": "Lumière du matin et air frais",
+     "g": "Ouvrir les rideaux ou sortir tôt pour se sentir plus éveillé.",
+     "p": [
+      "La lumière du jour aide ton corps à comprendre qu'il est temps d'être éveillé.",
+      "Deux minutes près d'une fenêtre ouverte peuvent remonter le moral.",
+      "Les matins sombres, allume une lampe lumineuse."
+     ],
+     "q": "Où pourrais-tu savourer une minute de lumière matinale ?",
+     "c": "Demain, ouvre les rideaux ou sors une minute dès le réveil."
+    },
+    "it": {
+     "t": "Luce del mattino e aria fresca",
+     "g": "Aprire le tende o uscire presto per sentirsi più svegli.",
+     "p": [
+      "La luce del giorno aiuta il corpo a capire che è ora di essere svegli.",
+      "Anche due minuti vicino a una finestra aperta possono sollevare l'umore.",
+      "Nelle mattine buie, accendi una lampada luminosa."
+     ],
+     "q": "Dove potresti goderti un minuto di luce mattutina?",
+     "c": "Domani apri le tende o esci un minuto appena sveglio."
+    },
+    "pt": {
+     "t": "Luz da manhã e ar fresco",
+     "g": "Abrir as cortinas ou sair cedo para te sentires mais desperto.",
+     "p": [
+      "A luz do dia ajuda o corpo a saber que é hora de estar acordado.",
+      "Dois minutos junto a uma janela aberta podem animar-te.",
+      "Em manhãs escuras, acende um candeeiro forte."
+     ],
+     "q": "Onde poderias gozar um minuto de luz matinal?",
+     "c": "Amanhã abre as cortinas ou sai um minuto logo ao acordar."
+    },
+    "pt_BR": {
+     "t": "Luz da manhã e ar fresco",
+     "g": "Abrir as cortinas ou sair cedo para se sentir mais desperto.",
+     "p": [
+      "A luz do dia ajuda o corpo a saber que é hora de estar acordado.",
+      "Dois minutos perto de uma janela aberta podem levantar o humor.",
+      "Em manhãs escuras, acenda uma luz forte."
+     ],
+     "q": "Onde você poderia curtir um minuto de luz da manhã?",
+     "c": "Amanhã abra as cortinas ou saia um minuto logo ao acordar."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Making your bed",
+     "g": "A tiny first win that creates order and momentum.",
+     "p": [
+      "It takes about one minute and gives an instant sense of done.",
+      "A tidy bed makes the whole room feel calmer.",
+      "It is a small proof that you can finish things."
+     ],
+     "q": "How does a tidy space change your mood?",
+     "c": "Make your bed tomorrow morning and enjoy the small win."
+    },
+    "de": {
+     "t": "Das Bett machen",
+     "g": "Ein winziger erster Erfolg, der Ordnung und Schwung bringt.",
+     "p": [
+      "Es dauert etwa eine Minute und gibt sofort das Gefühl, etwas geschafft zu haben.",
+      "Ein ordentliches Bett lässt den ganzen Raum ruhiger wirken.",
+      "Es ist ein kleiner Beweis, dass du Dinge zu Ende bringst."
+     ],
+     "q": "Wie verändert ein aufgeräumter Raum deine Stimmung?",
+     "c": "Mach morgen früh dein Bett und genieße den kleinen Erfolg."
+    },
+    "es": {
+     "t": "Hacer la cama",
+     "g": "Una pequeña primera victoria que crea orden e impulso.",
+     "p": [
+      "Lleva un minuto y da una sensación inmediata de tarea hecha.",
+      "Una cama ordenada hace que toda la habitación se sienta más tranquila.",
+      "Es una pequeña prueba de que sabes terminar las cosas."
+     ],
+     "q": "¿Cómo cambia tu ánimo un espacio ordenado?",
+     "c": "Haz mañana la cama por la mañana y disfruta de la pequeña victoria."
+    },
+    "fr": {
+     "t": "Faire son lit",
+     "g": "Une toute petite première victoire qui apporte ordre et élan.",
+     "p": [
+      "Cela prend environ une minute et donne tout de suite le sentiment d'avoir fini.",
+      "Un lit bien fait rend toute la pièce plus apaisante.",
+      "C'est une petite preuve que tu sais mener les choses à terme."
+     ],
+     "q": "Comment un espace rangé change-t-il ton humeur ?",
+     "c": "Fais ton lit demain matin et savoure la petite victoire."
+    },
+    "it": {
+     "t": "Rifare il letto",
+     "g": "Una piccola prima vittoria che crea ordine e slancio.",
+     "p": [
+      "Richiede circa un minuto e dà subito la sensazione di aver concluso.",
+      "Un letto in ordine rende tutta la stanza più serena.",
+      "È una piccola prova che sai portare a termine le cose."
+     ],
+     "q": "Come cambia il tuo umore uno spazio in ordine?",
+     "c": "Rifai il letto domani mattina e goditi la piccola vittoria."
+    },
+    "pt": {
+     "t": "Fazer a cama",
+     "g": "Uma pequena primeira vitória que cria ordem e impulso.",
+     "p": [
+      "Leva cerca de um minuto e dá logo a sensação de tarefa feita.",
+      "Uma cama arrumada deixa o quarto todo mais calmo.",
+      "É uma pequena prova de que consegues acabar o que começas."
+     ],
+     "q": "Como muda o teu humor um espaço arrumado?",
+     "c": "Faz a cama amanhã de manhã e goza a pequena vitória."
+    },
+    "pt_BR": {
+     "t": "Arrumar a cama",
+     "g": "Uma pequena primeira vitória que cria ordem e impulso.",
+     "p": [
+      "Leva cerca de um minuto e dá logo a sensação de tarefa cumprida.",
+      "Uma cama arrumada deixa o quarto todo mais calmo.",
+      "É uma pequena prova de que você consegue terminar o que começa."
+     ],
+     "q": "Como um espaço arrumado muda o seu humor?",
+     "c": "Arrume a cama amanhã de manhã e curta a pequena vitória."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A mindful morning drink",
+     "g": "Turn your first glass of water, tea or coffee into a calm moment.",
+     "p": [
+      "Sip slowly and notice warmth, taste and smell.",
+      "A glass of water after waking is a simple, kind start.",
+      "Give the drink a minute with no screens."
+     ],
+     "q": "How could your first drink become a little ritual?",
+     "c": "Tomorrow, enjoy your first drink for two minutes without checking your phone."
+    },
+    "de": {
+     "t": "Ein achtsames Morgengetränk",
+     "g": "Dein erstes Glas Wasser, Tee oder Kaffee zu einem ruhigen Moment machen.",
+     "p": [
+      "Trinke langsam und bemerke Wärme, Geschmack und Duft.",
+      "Ein Glas Wasser nach dem Aufwachen ist ein einfacher, freundlicher Start.",
+      "Gönne dem Getränk eine Minute ohne Bildschirm."
+     ],
+     "q": "Wie könnte dein erstes Getränk zu einem kleinen Ritual werden?",
+     "c": "Genieße morgen dein erstes Getränk zwei Minuten lang, ohne aufs Handy zu schauen."
+    },
+    "es": {
+     "t": "Una bebida matinal consciente",
+     "g": "Convertir tu primer vaso de agua, té o café en un momento tranquilo.",
+     "p": [
+      "Bebe despacio y nota el calor, el sabor y el aroma.",
+      "Un vaso de agua al despertar es un comienzo sencillo y amable.",
+      "Dale un minuto a la bebida sin pantallas."
+     ],
+     "q": "¿Cómo podría tu primera bebida convertirse en un pequeño ritual?",
+     "c": "Mañana disfruta tu primera bebida dos minutos sin mirar el móvil."
+    },
+    "fr": {
+     "t": "Une boisson matinale en pleine conscience",
+     "g": "Faire de ton premier verre d'eau, thé ou café un moment calme.",
+     "p": [
+      "Bois lentement en remarquant la chaleur, le goût et l'odeur.",
+      "Un verre d'eau au réveil est un départ simple et doux.",
+      "Offre une minute à ta boisson, sans écran."
+     ],
+     "q": "Comment ta première boisson pourrait-elle devenir un petit rituel ?",
+     "c": "Demain, savoure ta première boisson deux minutes sans regarder ton téléphone."
+    },
+    "it": {
+     "t": "Una bevanda mattutina consapevole",
+     "g": "Trasformare il primo bicchiere d'acqua, tè o caffè in un momento calmo.",
+     "p": [
+      "Sorseggia piano notando calore, sapore e profumo.",
+      "Un bicchiere d'acqua al risveglio è un inizio semplice e gentile.",
+      "Dedica un minuto alla bevanda senza schermi."
+     ],
+     "q": "Come potrebbe la tua prima bevanda diventare un piccolo rito?",
+     "c": "Domani goditi la prima bevanda per due minuti senza guardare il telefono."
+    },
+    "pt": {
+     "t": "Uma bebida matinal com atenção",
+     "g": "Fazer do teu primeiro copo de água, chá ou café um momento calmo.",
+     "p": [
+      "Bebe devagar e repara no calor, no sabor e no aroma.",
+      "Um copo de água ao acordar é um começo simples e gentil.",
+      "Dá um minuto à bebida, sem ecrãs."
+     ],
+     "q": "Como poderia a tua primeira bebida tornar-se um pequeno ritual?",
+     "c": "Amanhã goza a tua primeira bebida durante dois minutos sem ver o telemóvel."
+    },
+    "pt_BR": {
+     "t": "Uma bebida matinal com atenção",
+     "g": "Fazer do seu primeiro copo d'água, chá ou café um momento calmo.",
+     "p": [
+      "Beba devagar e perceba o calor, o sabor e o aroma.",
+      "Um copo d'água ao acordar é um começo simples e gentil.",
+      "Dê um minuto à bebida, sem telas."
+     ],
+     "q": "Como sua primeira bebida poderia virar um pequeno ritual?",
+     "c": "Amanhã curta sua primeira bebida por dois minutos sem olhar o celular."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Planning your day in five minutes",
+     "g": "Pick your top three tasks each morning.",
+     "p": [
+      "Three priorities are enough for a focused day.",
+      "Write them down where you will see them.",
+      "Do the most important one first if you can."
+     ],
+     "q": "What are the three things that would make today a good day?",
+     "c": "Tomorrow morning, write three priorities in five minutes or less."
+    },
+    "de": {
+     "t": "Den Tag in fünf Minuten planen",
+     "g": "Jeden Morgen die drei wichtigsten Aufgaben wählen.",
+     "p": [
+      "Drei Prioritäten genügen für einen fokussierten Tag.",
+      "Schreibe sie dorthin, wo du sie siehst.",
+      "Erledige die wichtigste zuerst, wenn es geht."
+     ],
+     "q": "Welche drei Dinge würden den heutigen Tag zu einem guten machen?",
+     "c": "Schreibe morgen früh in höchstens fünf Minuten drei Prioritäten auf."
+    },
+    "es": {
+     "t": "Planifica tu día en cinco minutos",
+     "g": "Elegir tus tres tareas principales cada mañana.",
+     "p": [
+      "Tres prioridades bastan para un día enfocado.",
+      "Anótalas donde las veas.",
+      "Haz primero la más importante si puedes."
+     ],
+     "q": "¿Cuáles son las tres cosas que harían de hoy un buen día?",
+     "c": "Mañana por la mañana escribe tres prioridades en cinco minutos o menos."
+    },
+    "fr": {
+     "t": "Planifier ta journée en cinq minutes",
+     "g": "Choisir chaque matin tes trois tâches principales.",
+     "p": [
+      "Trois priorités suffisent pour une journée concentrée.",
+      "Note-les là où tu les verras.",
+      "Fais la plus importante en premier si tu peux."
+     ],
+     "q": "Quelles sont les trois choses qui feraient de ce jour une bonne journée ?",
+     "c": "Demain matin, écris trois priorités en cinq minutes ou moins."
+    },
+    "it": {
+     "t": "Pianifica la giornata in cinque minuti",
+     "g": "Scegliere ogni mattina le tre attività principali.",
+     "p": [
+      "Tre priorità bastano per una giornata concentrata.",
+      "Scrivile dove le vedrai.",
+      "Fai prima la più importante, se puoi."
+     ],
+     "q": "Quali sono le tre cose che renderebbero oggi una buona giornata?",
+     "c": "Domani mattina scrivi tre priorità in cinque minuti o meno."
+    },
+    "pt": {
+     "t": "Planeia o dia em cinco minutos",
+     "g": "Escolher todas as manhãs as três tarefas principais.",
+     "p": [
+      "Três prioridades chegam para um dia focado.",
+      "Escreve-as onde as vejas.",
+      "Faz primeiro a mais importante, se puderes."
+     ],
+     "q": "Quais são as três coisas que fariam de hoje um bom dia?",
+     "c": "Amanhã de manhã escreve três prioridades em cinco minutos ou menos."
+    },
+    "pt_BR": {
+     "t": "Planeje o dia em cinco minutos",
+     "g": "Escolher toda manhã as três tarefas principais.",
+     "p": [
+      "Três prioridades bastam para um dia focado.",
+      "Escreva onde você veja.",
+      "Faça primeiro a mais importante, se puder."
+     ],
+     "q": "Quais são as três coisas que fariam de hoje um bom dia?",
+     "c": "Amanhã de manhã escreva três prioridades em cinco minutos ou menos."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mornings when time is short",
+     "g": "Create a shorter backup version of your routine.",
+     "p": [
+      "A mini routine of two minutes beats skipping everything.",
+      "Keep the one or two actions that matter most.",
+      "Having a backup removes guilt on rushed days."
+     ],
+     "q": "Which two actions would stay in your express morning?",
+     "c": "Write your express morning routine and try it on a busy day."
+    },
+    "de": {
+     "t": "Morgen mit wenig Zeit",
+     "g": "Eine kürzere Notfall-Version deiner Routine entwickeln.",
+     "p": [
+      "Eine Mini-Routine von zwei Minuten schlägt das Auslassen von allem.",
+      "Behalte die ein oder zwei Handlungen, die am meisten zählen.",
+      "Eine Ersatzversion nimmt an hektischen Tagen die Schuldgefühle."
+     ],
+     "q": "Welche zwei Handlungen blieben in deinem Express-Morgen?",
+     "c": "Schreibe deine Express-Morgenroutine auf und probiere sie an einem vollen Tag."
+    },
+    "es": {
+     "t": "Mañanas con poco tiempo",
+     "g": "Crear una versión corta de respaldo de tu rutina.",
+     "p": [
+      "Una mini rutina de dos minutos supera saltarse todo.",
+      "Conserva la o las dos acciones que más importan.",
+      "Tener un plan B quita la culpa en días de prisa."
+     ],
+     "q": "¿Qué dos acciones quedarían en tu mañana exprés?",
+     "c": "Escribe tu rutina matinal exprés y pruébala en un día ocupado."
+    },
+    "fr": {
+     "t": "Matins pressés",
+     "g": "Créer une version courte de secours de ta routine.",
+     "p": [
+      "Une mini-routine de deux minutes vaut mieux que tout sauter.",
+      "Garde l'action ou les deux actions qui comptent le plus.",
+      "Avoir une version de secours enlève la culpabilité les jours pressés."
+     ],
+     "q": "Quelles deux actions resteraient dans ton matin express ?",
+     "c": "Écris ta routine matinale express et essaie-la un jour chargé."
+    },
+    "it": {
+     "t": "Mattine con poco tempo",
+     "g": "Creare una versione breve di riserva della routine.",
+     "p": [
+      "Una mini routine di due minuti vale più che saltare tutto.",
+      "Tieni l'azione o le due azioni che contano di più.",
+      "Avere un piano B toglie i sensi di colpa nei giorni di fretta."
+     ],
+     "q": "Quali due azioni resterebbero nella tua mattina express?",
+     "c": "Scrivi la tua routine mattutina express e provala in un giorno impegnato."
+    },
+    "pt": {
+     "t": "Manhãs com pouco tempo",
+     "g": "Criar uma versão curta de reserva da tua rotina.",
+     "p": [
+      "Uma mini rotina de dois minutos vale mais do que saltar tudo.",
+      "Mantém a ação ou as duas ações que mais contam.",
+      "Ter um plano B tira a culpa nos dias com pressa."
+     ],
+     "q": "Que duas ações ficariam na tua manhã expresso?",
+     "c": "Escreve a tua rotina matinal expresso e experimenta num dia cheio."
+    },
+    "pt_BR": {
+     "t": "Manhãs com pouco tempo",
+     "g": "Criar uma versão curta de reserva da sua rotina.",
+     "p": [
+      "Uma mini rotina de dois minutos vale mais que pular tudo.",
+      "Mantenha a ação ou as duas ações que mais contam.",
+      "Ter um plano B tira a culpa nos dias corridos."
+     ],
+     "q": "Que duas ações ficariam na sua manhã expressa?",
+     "c": "Escreva sua rotina matinal expressa e teste num dia cheio."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Avoiding the phone first thing",
+     "g": "Delay messages and news to start the day on your own terms.",
+     "p": [
+      "The first minutes are yours before the world's demands arrive.",
+      "Charge your phone across the room or use a real alarm clock.",
+      "Even a ten-minute delay can feel calming."
+     ],
+     "q": "How do you feel after checking your phone right at wake-up?",
+     "c": "Tomorrow, wait ten minutes after waking before checking your phone."
+    },
+    "de": {
+     "t": "Morgens nicht sofort aufs Handy",
+     "g": "Nachrichten und News verschieben, um den Tag nach eigenen Regeln zu beginnen.",
+     "p": [
+      "Die ersten Minuten gehören dir, bevor die Forderungen der Welt eintreffen.",
+      "Lade das Handy am anderen Ende des Raums oder nutze einen echten Wecker.",
+      "Schon zehn Minuten Verzögerung können beruhigen."
+     ],
+     "q": "Wie fühlst du dich, wenn du gleich nach dem Aufwachen aufs Handy schaust?",
+     "c": "Warte morgen nach dem Aufwachen zehn Minuten, bevor du aufs Handy schaust."
+    },
+    "es": {
+     "t": "Evitar el móvil nada más despertar",
+     "g": "Retrasar mensajes y noticias para empezar el día a tu manera.",
+     "p": [
+      "Los primeros minutos son tuyos antes de que lleguen las demandas del mundo.",
+      "Carga el móvil al otro lado de la habitación o usa un despertador real.",
+      "Incluso diez minutos de retraso pueden calmar."
+     ],
+     "q": "¿Cómo te sientes tras mirar el móvil nada más despertar?",
+     "c": "Mañana espera diez minutos tras despertar antes de mirar el móvil."
+    },
+    "fr": {
+     "t": "Éviter le téléphone dès le réveil",
+     "g": "Retarder messages et actualités pour commencer la journée à ta façon.",
+     "p": [
+      "Les premières minutes t'appartiennent avant les demandes du monde.",
+      "Charge ton téléphone à l'autre bout de la pièce ou prends un vrai réveil.",
+      "Même dix minutes de délai peuvent apaiser."
+     ],
+     "q": "Comment te sens-tu après avoir regardé ton téléphone dès le réveil ?",
+     "c": "Demain, attends dix minutes après le réveil avant de regarder ton téléphone."
+    },
+    "it": {
+     "t": "Evitare il telefono appena sveglio",
+     "g": "Ritardare messaggi e notizie per iniziare la giornata a modo tuo.",
+     "p": [
+      "I primi minuti sono tuoi prima che arrivino le richieste del mondo.",
+      "Carica il telefono dall'altra parte della stanza o usa una vera sveglia.",
+      "Anche dieci minuti di ritardo possono calmare."
+     ],
+     "q": "Come ti senti dopo aver guardato il telefono appena sveglio?",
+     "c": "Domani aspetta dieci minuti dopo il risveglio prima di guardare il telefono."
+    },
+    "pt": {
+     "t": "Evitar o telemóvel logo ao acordar",
+     "g": "Adiar mensagens e notícias para começar o dia à tua maneira.",
+     "p": [
+      "Os primeiros minutos são teus antes de chegarem as exigências do mundo.",
+      "Carrega o telemóvel do outro lado do quarto ou usa um despertador a sério.",
+      "Mesmo dez minutos de atraso podem acalmar."
+     ],
+     "q": "Como te sentes depois de veres o telemóvel logo ao acordar?",
+     "c": "Amanhã espera dez minutos depois de acordar antes de ver o telemóvel."
+    },
+    "pt_BR": {
+     "t": "Evitar o celular logo ao acordar",
+     "g": "Adiar mensagens e notícias para começar o dia do seu jeito.",
+     "p": [
+      "Os primeiros minutos são seus antes de chegarem as exigências do mundo.",
+      "Carregue o celular do outro lado do quarto ou use um despertador de verdade.",
+      "Até dez minutos de atraso podem acalmar."
+     ],
+     "q": "Como você se sente depois de olhar o celular logo ao acordar?",
+     "c": "Amanhã espere dez minutos depois de acordar antes de olhar o celular."
+    }
+   }
+  }
+ ]
+}

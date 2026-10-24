@@ -1,0 +1,835 @@
+{
+ "topic": "cybersecurity_basics",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to everyday online safety",
+     "g": "Learn why a few simple habits protect your accounts, money and memories.",
+     "p": [
+      "Most online problems are stopped by small, steady habits, not by expert tricks.",
+      "This path covers passwords, two-step login, scams, updates, privacy and backups.",
+      "One short lesson a day, from beginner basics to confident everyday habits."
+     ],
+     "q": "What do you mostly do online that you would hate to lose or have stolen?",
+     "c": "Challenge: name one account or file you most want to keep safe."
+    },
+    "de": {
+     "t": "Willkommen zur Sicherheit im Alltag",
+     "g": "Du lernst, warum wenige einfache Gewohnheiten Konten, Geld und Erinnerungen schützen.",
+     "p": [
+      "Die meisten Online-Probleme verhindern kleine, regelmäßige Gewohnheiten, keine Expertentricks.",
+      "Unser Weg behandelt Passwörter, Zwei-Schritt-Login, Betrug, Updates, Datenschutz und Backups.",
+      "Jeden Tag eine kurze Lektion, vom Einstieg bis zu sicheren Alltagsgewohnheiten."
+     ],
+     "q": "Was machst du online am meisten, das du ungern verlieren oder gestohlen sehen würdest?",
+     "c": "Challenge: Nenne ein Konto oder eine Datei, die du am meisten schützen willst."
+    },
+    "es": {
+     "t": "Bienvenido a la seguridad en línea diaria",
+     "g": "Descubre por qué unos pocos hábitos sencillos protegen tus cuentas, tu dinero y tus recuerdos.",
+     "p": [
+      "La mayoría de los problemas en línea se evitan con hábitos pequeños y constantes, no con trucos de expertos.",
+      "Este camino cubre contraseñas, verificación en dos pasos, estafas, actualizaciones, privacidad y copias.",
+      "Una lección corta al día, desde lo básico hasta hábitos seguros y cotidianos."
+     ],
+     "q": "¿Qué haces más en línea que odiarías perder o que te robaran?",
+     "c": "Reto: elige una cuenta o archivo que quieras proteger más que nada."
+    },
+    "fr": {
+     "t": "Bienvenue dans la sécurité en ligne au quotidien",
+     "g": "Découvre pourquoi quelques habitudes simples protègent tes comptes, ton argent et tes souvenirs.",
+     "p": [
+      "La plupart des problèmes en ligne se règlent avec de petites habitudes régulières, pas des astuces d'expert.",
+      "Ce parcours couvre mots de passe, double authentification, arnaques, mises à jour, vie privée et sauvegardes.",
+      "Une courte leçon par jour, des bases jusqu'à des réflexes sûrs et confiants."
+     ],
+     "q": "Qu'est-ce que tu fais le plus en ligne et que tu détesterais perdre ou te faire voler ?",
+     "c": "Défi : nomme un compte ou un fichier que tu veux protéger avant tout."
+    },
+    "it": {
+     "t": "Benvenuto nella sicurezza online di ogni giorno",
+     "g": "Scopri perché poche abitudini semplici proteggono account, denaro e ricordi.",
+     "p": [
+      "La maggior parte dei problemi online si evita con piccole abitudini costanti, non con trucchi da esperti.",
+      "Il percorso copre password, verifica in due passaggi, truffe, aggiornamenti, privacy e backup.",
+      "Una breve lezione al giorno, dalle basi ad abitudini sicure e sicure di sé."
+     ],
+     "q": "Cosa fai di più online che odieresti perdere o vederti rubare?",
+     "c": "Sfida: scegli un account o un file che vuoi proteggere più di tutti."
+    },
+    "pt": {
+     "t": "Bem-vindo à segurança online do dia a dia",
+     "g": "Descobre porque é que poucos hábitos simples protegem as tuas contas, o teu dinheiro e as tuas memórias.",
+     "p": [
+      "A maioria dos problemas online evita-se com pequenos hábitos constantes, não com truques de especialistas.",
+      "Este percurso cobre palavras-passe, verificação em dois passos, burlas, atualizações, privacidade e cópias.",
+      "Uma lição curta por dia, do básico até hábitos seguros e confiantes."
+     ],
+     "q": "O que fazes mais online que odiarias perder ou que te roubassem?",
+     "c": "Desafio: escolhe uma conta ou um ficheiro que queres proteger acima de tudo."
+    },
+    "pt_BR": {
+     "t": "Boas-vindas à segurança online do dia a dia",
+     "g": "Descubra por que poucos hábitos simples protegem suas contas, seu dinheiro e suas memórias.",
+     "p": [
+      "A maioria dos problemas online é evitada com pequenos hábitos constantes, não com truques de especialistas.",
+      "Esta trilha cobre senhas, verificação em duas etapas, golpes, atualizações, privacidade e backups.",
+      "Uma lição curta por dia, do básico até hábitos seguros e confiantes."
+     ],
+     "q": "O que você mais faz online que odiaria perder ou ter roubado?",
+     "c": "Desafio: escolha uma conta ou um arquivo que você quer proteger acima de tudo."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your digital life at a glance",
+     "g": "Make a simple list of the devices, accounts and apps you use, so you know what to protect.",
+     "p": [
+      "Devices include phones, computers, tablets, smart TVs and even game consoles.",
+      "Accounts include email, banking, shopping, social media and cloud storage.",
+      "You cannot protect what you forgot about, so old unused accounts count too."
+     ],
+     "q": "Which three accounts or apps would cause you the most trouble if someone else got in?",
+     "c": "Challenge: write a short list of your devices and your top five accounts."
+    },
+    "de": {
+     "t": "Dein digitales Leben im Überblick",
+     "g": "Erstelle eine einfache Liste deiner Geräte, Konten und Apps, damit du weißt, was zu schützen ist.",
+     "p": [
+      "Zu den Geräten zählen Handy, Computer, Tablet, Smart-TV und sogar Spielekonsolen.",
+      "Konten sind zum Beispiel E-Mail, Bank, Shopping, soziale Medien und Cloud-Speicher.",
+      "Was du vergessen hast, kannst du nicht schützen, also zählen auch alte Konten."
+     ],
+     "q": "Welche drei Konten oder Apps würden dir am meisten Ärger machen, wenn jemand Fremdes hineinkäme?",
+     "c": "Challenge: Schreibe eine kurze Liste deiner Geräte und deiner fünf wichtigsten Konten."
+    },
+    "es": {
+     "t": "Tu vida digital de un vistazo",
+     "g": "Haz una lista sencilla de tus dispositivos, cuentas y apps para saber qué proteger.",
+     "p": [
+      "Los dispositivos incluyen móviles, ordenadores, tabletas, televisores inteligentes y consolas.",
+      "Las cuentas incluyen correo, banca, compras, redes sociales y almacenamiento en la nube.",
+      "No puedes proteger lo que olvidaste, así que las cuentas viejas sin uso también cuentan."
+     ],
+     "q": "¿Qué tres cuentas o apps te causarían más problemas si alguien entrara en ellas?",
+     "c": "Reto: escribe una lista breve de tus dispositivos y tus cinco cuentas principales."
+    },
+    "fr": {
+     "t": "Ta vie numérique en un coup d'œil",
+     "g": "Dresse une liste simple de tes appareils, comptes et applis pour savoir quoi protéger.",
+     "p": [
+      "Les appareils incluent téléphones, ordinateurs, tablettes, télés connectées et même consoles.",
+      "Les comptes incluent e-mail, banque, achats, réseaux sociaux et stockage en ligne.",
+      "On ne protège pas ce qu'on a oublié : les vieux comptes inutilisés comptent aussi."
+     ],
+     "q": "Quels trois comptes ou applis te poseraient le plus de problèmes si quelqu'un y entrait ?",
+     "c": "Défi : écris une courte liste de tes appareils et de tes cinq comptes principaux."
+    },
+    "it": {
+     "t": "La tua vita digitale a colpo d'occhio",
+     "g": "Fai una lista semplice di dispositivi, account e app che usi, per sapere cosa proteggere.",
+     "p": [
+      "I dispositivi includono telefoni, computer, tablet, smart TV e perfino console di gioco.",
+      "Gli account includono email, banca, acquisti, social e archiviazione online.",
+      "Non puoi proteggere ciò che hai dimenticato, quindi contano anche i vecchi account inutilizzati."
+     ],
+     "q": "Quali tre account o app ti darebbero più problemi se qualcun altro vi entrasse?",
+     "c": "Sfida: scrivi una breve lista dei tuoi dispositivi e dei cinque account principali."
+    },
+    "pt": {
+     "t": "A tua vida digital num relance",
+     "g": "Faz uma lista simples dos dispositivos, contas e aplicações que usas, para saberes o que proteger.",
+     "p": [
+      "Os dispositivos incluem telemóveis, computadores, tablets, televisores inteligentes e consolas.",
+      "As contas incluem email, banco, compras, redes sociais e armazenamento na nuvem.",
+      "Não podes proteger o que esqueceste, por isso as contas antigas sem uso também contam."
+     ],
+     "q": "Que três contas ou aplicações te dariam mais problemas se alguém entrasse nelas?",
+     "c": "Desafio: escreve uma lista curta dos teus dispositivos e das tuas cinco contas principais."
+    },
+    "pt_BR": {
+     "t": "Sua vida digital num relance",
+     "g": "Faça uma lista simples dos dispositivos, contas e apps que você usa, para saber o que proteger.",
+     "p": [
+      "Os dispositivos incluem celulares, computadores, tablets, TVs inteligentes e consoles.",
+      "As contas incluem e-mail, banco, compras, redes sociais e armazenamento na nuvem.",
+      "Não dá para proteger o que foi esquecido, então contas antigas sem uso também contam."
+     ],
+     "q": "Quais três contas ou apps dariam mais dor de cabeça se alguém entrasse neles?",
+     "c": "Desafio: escreva uma lista curta dos seus dispositivos e das suas cinco contas principais."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What attackers usually want",
+     "g": "Understand the goals behind most online scams so you can spot them sooner.",
+     "p": [
+      "Most scammers want money, access to accounts, or personal data they can sell or misuse.",
+      "They rarely target you personally; they send the same trick to thousands of people.",
+      "Knowing the goal helps: any message pushing for money or codes deserves a pause."
+     ],
+     "q": "Have you ever received a message that felt off? What made you doubt it?",
+     "c": "Challenge: next odd message you get, ask yourself what the sender wants from you."
+    },
+    "de": {
+     "t": "Was Betrüger meistens wollen",
+     "g": "Verstehe die Ziele hinter den meisten Online-Betrügereien, um sie früher zu erkennen.",
+     "p": [
+      "Meist geht es um Geld, Zugang zu Konten oder persönliche Daten, die man verkaufen oder missbrauchen kann.",
+      "Sie zielen selten auf dich persönlich; derselbe Trick geht an Tausende Menschen.",
+      "Das Ziel zu kennen hilft: Jede Nachricht, die Geld oder Codes will, verdient eine Pause."
+     ],
+     "q": "Hast du schon mal eine Nachricht bekommen, die komisch wirkte? Woran hast du gezweifelt?",
+     "c": "Challenge: Frage dich bei der nächsten seltsamen Nachricht, was der Absender von dir will."
+    },
+    "es": {
+     "t": "Qué suelen querer los estafadores",
+     "g": "Entiende los objetivos detrás de la mayoría de las estafas para detectarlas antes.",
+     "p": [
+      "La mayoría quiere dinero, acceso a cuentas o datos personales que puedan vender o usar mal.",
+      "Rara vez van contra ti en persona; envían el mismo truco a miles de personas.",
+      "Conocer el objetivo ayuda: todo mensaje que pida dinero o códigos merece una pausa."
+     ],
+     "q": "¿Has recibido alguna vez un mensaje que te sonó raro? ¿Qué te hizo dudar?",
+     "c": "Reto: con el próximo mensaje raro, pregúntate qué quiere de ti quien lo envía."
+    },
+    "fr": {
+     "t": "Ce que veulent le plus souvent les escrocs",
+     "g": "Comprends les buts derrière la plupart des arnaques pour les repérer plus vite.",
+     "p": [
+      "Ils veulent surtout de l'argent, l'accès à des comptes ou des données personnelles à revendre ou détourner.",
+      "Ils te visent rarement toi en particulier ; la même ruse part vers des milliers de personnes.",
+      "Connaître le but aide : tout message qui réclame argent ou codes mérite une pause."
+     ],
+     "q": "As-tu déjà reçu un message louche ? Qu'est-ce qui t'a fait douter ?",
+     "c": "Défi : au prochain message étrange, demande-toi ce que l'expéditeur attend de toi."
+    },
+    "it": {
+     "t": "Cosa vogliono di solito i truffatori",
+     "g": "Capisci gli obiettivi dietro la maggior parte delle truffe per riconoscerle prima.",
+     "p": [
+      "Di solito vogliono denaro, accesso agli account o dati personali da vendere o usare male.",
+      "Raramente prendono di mira te in persona: mandano lo stesso trucco a migliaia di persone.",
+      "Conoscere l'obiettivo aiuta: ogni messaggio che spinge per soldi o codici merita una pausa."
+     ],
+     "q": "Hai mai ricevuto un messaggio strano? Cosa ti ha fatto dubitare?",
+     "c": "Sfida: al prossimo messaggio strano, chiediti cosa vuole da te chi lo manda."
+    },
+    "pt": {
+     "t": "O que os burlões costumam querer",
+     "g": "Percebe os objetivos por trás da maioria das burlas para as detetares mais cedo.",
+     "p": [
+      "Querem sobretudo dinheiro, acesso a contas ou dados pessoais que possam vender ou usar mal.",
+      "Raramente visam-te a ti em particular; enviam o mesmo truque a milhares de pessoas.",
+      "Conhecer o objetivo ajuda: qualquer mensagem que peça dinheiro ou códigos merece uma pausa."
+     ],
+     "q": "Já recebeste alguma mensagem que parecia estranha? O que te fez duvidar?",
+     "c": "Desafio: na próxima mensagem estranha, pergunta-te o que quer de ti quem a enviou."
+    },
+    "pt_BR": {
+     "t": "O que os golpistas costumam querer",
+     "g": "Entenda os objetivos por trás da maioria dos golpes para percebê-los mais cedo.",
+     "p": [
+      "Eles querem principalmente dinheiro, acesso a contas ou dados pessoais para vender ou usar mal.",
+      "Raramente miram em você em particular; mandam o mesmo truque para milhares de pessoas.",
+      "Conhecer o objetivo ajuda: toda mensagem que pede dinheiro ou códigos merece uma pausa."
+     ],
+     "q": "Você já recebeu alguma mensagem que pareceu estranha? O que fez você duvidar?",
+     "c": "Desafio: na próxima mensagem estranha, pergunte-se o que quem enviou quer de você."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Small habits, big protection",
+     "g": "See why a few steady routines stop most everyday problems before they start.",
+     "p": [
+      "Good security is mostly routine: strong passwords, updates, backups and a healthy pause.",
+      "Habits beat willpower, because you do them without thinking about it each time.",
+      "Start tiny: one new habit a week is better than ten you drop after three days."
+     ],
+     "q": "Which good habit do you already have, like locking your phone, that you are proud of?",
+     "c": "Challenge: check that your phone has a screen lock turned on right now."
+    },
+    "de": {
+     "t": "Kleine Gewohnheiten, großer Schutz",
+     "g": "Sieh, warum wenige feste Routinen die meisten Alltagsprobleme schon im Keim stoppen.",
+     "p": [
+      "Gute Sicherheit ist meist Routine: starke Passwörter, Updates, Backups und eine gesunde Pause.",
+      "Gewohnheiten schlagen Willenskraft, weil du sie ohne jedes Nachdenken ausführst.",
+      "Fang klein an: eine neue Gewohnheit pro Woche ist besser als zehn, die du bald aufgibst."
+     ],
+     "q": "Welche gute Gewohnheit hast du schon, zum Beispiel das Handy zu sperren, und worauf bist du stolz?",
+     "c": "Challenge: Prüfe jetzt, ob dein Handy eine Bildschirmsperre hat."
+    },
+    "es": {
+     "t": "Pequeños hábitos, gran protección",
+     "g": "Descubre cómo unas rutinas constantes evitan la mayoría de los problemas cotidianos.",
+     "p": [
+      "La buena seguridad es sobre todo rutina: contraseñas fuertes, actualizaciones, copias y una pausa sana.",
+      "Los hábitos vencen a la fuerza de voluntad porque los haces sin pensarlo cada vez.",
+      "Empieza pequeño: un hábito nuevo por semana es mejor que diez que abandonas a los tres días."
+     ],
+     "q": "¿Qué buen hábito ya tienes, como bloquear el móvil, y te enorgullece?",
+     "c": "Reto: comprueba ahora mismo que tu móvil tiene el bloqueo de pantalla activado."
+    },
+    "fr": {
+     "t": "Petites habitudes, grande protection",
+     "g": "Vois comment quelques routines régulières évitent la plupart des soucis du quotidien.",
+     "p": [
+      "La bonne sécurité, c'est surtout de la routine : mots de passe solides, mises à jour, sauvegardes et une pause.",
+      "Les habitudes battent la volonté, car tu les fais sans y penser à chaque fois.",
+      "Commence petit : une habitude par semaine vaut mieux que dix abandonnées après trois jours."
+     ],
+     "q": "Quelle bonne habitude as-tu déjà, comme verrouiller ton téléphone, et dont tu es fier ?",
+     "c": "Défi : vérifie maintenant que ton téléphone a un verrouillage d'écran activé."
+    },
+    "it": {
+     "t": "Piccole abitudini, grande protezione",
+     "g": "Scopri come poche routine costanti evitano la maggior parte dei problemi quotidiani.",
+     "p": [
+      "La buona sicurezza è soprattutto routine: password forti, aggiornamenti, backup e una pausa sana.",
+      "Le abitudini battono la forza di volontà, perché le fai senza pensarci ogni volta.",
+      "Parti in piccolo: una nuova abitudine a settimana vale più di dieci abbandonate dopo tre giorni."
+     ],
+     "q": "Quale buona abitudine hai già, come bloccare il telefono, e ti rende orgoglioso?",
+     "c": "Sfida: controlla ora che il tuo telefono abbia il blocco schermo attivo."
+    },
+    "pt": {
+     "t": "Pequenos hábitos, grande proteção",
+     "g": "Vê como algumas rotinas constantes evitam a maioria dos problemas do dia a dia.",
+     "p": [
+      "A boa segurança é sobretudo rotina: palavras-passe fortes, atualizações, cópias e uma pausa saudável.",
+      "Os hábitos vencem a força de vontade, porque os fazes sem pensar de cada vez.",
+      "Começa pequeno: um hábito novo por semana vale mais do que dez que abandonas ao fim de três dias."
+     ],
+     "q": "Que bom hábito já tens, como bloquear o telemóvel, e te dá orgulho?",
+     "c": "Desafio: confirma agora que o teu telemóvel tem o bloqueio de ecrã ativado."
+    },
+    "pt_BR": {
+     "t": "Pequenos hábitos, grande proteção",
+     "g": "Veja como algumas rotinas constantes evitam a maioria dos problemas do dia a dia.",
+     "p": [
+      "A boa segurança é principalmente rotina: senhas fortes, atualizações, backups e uma pausa saudável.",
+      "Hábitos vencem a força de vontade, porque você os faz sem pensar a cada vez.",
+      "Comece pequeno: um hábito novo por semana vale mais que dez abandonados em três dias."
+     ],
+     "q": "Que bom hábito você já tem, como bloquear o celular, e tem orgulho dele?",
+     "c": "Desafio: confirme agora que o seu celular tem o bloqueio de tela ativado."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Accounts and identities",
+     "g": "See how usernames, emails and phone numbers link your online accounts together.",
+     "p": [
+      "Your email or phone number is often your username on many different services.",
+      "Accounts are connected: a reset link sent to your email can open another account.",
+      "Fewer accounts means fewer doors to guard, so close the ones you no longer use."
+     ],
+     "q": "Do you use one email address for everything, or several for different purposes?",
+     "c": "Challenge: find one old account you no longer use and note it for closing later."
+    },
+    "de": {
+     "t": "Konten und Identitäten",
+     "g": "Sieh, wie Benutzernamen, E-Mail-Adressen und Telefonnummern deine Konten miteinander verbinden.",
+     "p": [
+      "Deine E-Mail oder Telefonnummer ist oft der Benutzername bei vielen Diensten.",
+      "Konten hängen zusammen: Ein Reset-Link per E-Mail kann ein anderes Konto öffnen.",
+      "Weniger Konten bedeuten weniger Türen, die du bewachen musst, also schließe ungenutzte."
+     ],
+     "q": "Nutzt du eine E-Mail-Adresse für alles oder mehrere für verschiedene Zwecke?",
+     "c": "Challenge: Finde ein altes Konto, das du nicht mehr nutzt, und notiere es zum späteren Schließen."
+    },
+    "es": {
+     "t": "Cuentas e identidades",
+     "g": "Descubre cómo los nombres de usuario, correos y teléfonos enlazan tus cuentas entre sí.",
+     "p": [
+      "Tu correo o teléfono suele ser tu nombre de usuario en muchos servicios distintos.",
+      "Las cuentas están conectadas: un enlace de restablecimiento enviado al correo puede abrir otra cuenta.",
+      "Menos cuentas son menos puertas que vigilar, así que cierra las que ya no uses."
+     ],
+     "q": "¿Usas un solo correo para todo o varios para distintos fines?",
+     "c": "Reto: encuentra una cuenta vieja que ya no uses y anótala para cerrarla después."
+    },
+    "fr": {
+     "t": "Comptes et identités",
+     "g": "Vois comment identifiants, e-mails et numéros de téléphone relient tes comptes entre eux.",
+     "p": [
+      "Ton e-mail ou ton numéro sert souvent d'identifiant sur de nombreux services.",
+      "Les comptes sont liés : un lien de réinitialisation envoyé par e-mail peut ouvrir un autre compte.",
+      "Moins de comptes, c'est moins de portes à surveiller : ferme ceux que tu n'utilises plus."
+     ],
+     "q": "Utilises-tu une seule adresse e-mail pour tout, ou plusieurs selon les usages ?",
+     "c": "Défi : repère un vieux compte inutilisé et note-le pour le fermer plus tard."
+    },
+    "it": {
+     "t": "Account e identità",
+     "g": "Scopri come nomi utente, email e numeri di telefono collegano i tuoi account tra loro.",
+     "p": [
+      "La tua email o il tuo numero è spesso il nome utente su molti servizi diversi.",
+      "Gli account sono collegati: un link di reimpostazione inviato all'email può aprirne un altro.",
+      "Meno account significa meno porte da sorvegliare, quindi chiudi quelli che non usi più."
+     ],
+     "q": "Usi un solo indirizzo email per tutto o più indirizzi per scopi diversi?",
+     "c": "Sfida: trova un vecchio account che non usi più e annotalo per chiuderlo dopo."
+    },
+    "pt": {
+     "t": "Contas e identidades",
+     "g": "Vê como nomes de utilizador, emails e números de telefone ligam as tuas contas entre si.",
+     "p": [
+      "O teu email ou número de telefone é muitas vezes o nome de utilizador em vários serviços.",
+      "As contas estão ligadas: um link de recuperação enviado para o email pode abrir outra conta.",
+      "Menos contas são menos portas para vigiar, por isso fecha as que já não usas."
+     ],
+     "q": "Usas um só endereço de email para tudo ou vários para fins diferentes?",
+     "c": "Desafio: encontra uma conta antiga que já não uses e anota-a para fechar mais tarde."
+    },
+    "pt_BR": {
+     "t": "Contas e identidades",
+     "g": "Veja como nomes de usuário, e-mails e telefones ligam suas contas entre si.",
+     "p": [
+      "Seu e-mail ou telefone costuma ser o nome de usuário em vários serviços diferentes.",
+      "As contas estão conectadas: um link de recuperação enviado ao e-mail pode abrir outra conta.",
+      "Menos contas são menos portas para vigiar, então feche as que você não usa mais."
+     ],
+     "q": "Você usa um só endereço de e-mail para tudo ou vários para fins diferentes?",
+     "c": "Desafio: encontre uma conta antiga que você não usa mais e anote para fechar depois."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your most important account",
+     "g": "Understand why your main email is the master key to many other accounts.",
+     "p": [
+      "Password reset links usually go to your email, so whoever controls it can reach much more.",
+      "Treat your main email like the key to your home: unique password and extra protection.",
+      "Keep it separate from throwaway sign-ups if you can, such as newsletters and shops."
+     ],
+     "q": "Do you know which email address receives the reset links for your bank and shops?",
+     "c": "Challenge: identify your main email and confirm you still have access to it."
+    },
+    "de": {
+     "t": "Dein wichtigstes Konto",
+     "g": "Verstehe, warum deine Haupt-E-Mail der Generalschlüssel für viele andere Konten ist.",
+     "p": [
+      "Reset-Links gehen meist an deine E-Mail, wer sie kontrolliert, erreicht also viel mehr.",
+      "Behandle deine Haupt-E-Mail wie den Hausschlüssel: einzigartiges Passwort und Zusatzschutz.",
+      "Trenne sie wenn möglich von Wegwerf-Anmeldungen wie Newslettern und Shops."
+     ],
+     "q": "Weißt du, welche E-Mail-Adresse die Reset-Links für deine Bank und Shops erhält?",
+     "c": "Challenge: Finde deine Haupt-E-Mail heraus und prüfe, dass du noch Zugriff darauf hast."
+    },
+    "es": {
+     "t": "Tu cuenta más importante",
+     "g": "Entiende por qué tu correo principal es la llave maestra de muchas otras cuentas.",
+     "p": [
+      "Los enlaces de restablecimiento suelen ir a tu correo, así que quien lo controla llega a mucho más.",
+      "Trata tu correo principal como la llave de tu casa: contraseña única y protección extra.",
+      "Sepáralo, si puedes, de registros desechables como boletines y tiendas."
+     ],
+     "q": "¿Sabes qué correo recibe los enlaces de restablecimiento de tu banco y tus tiendas?",
+     "c": "Reto: identifica tu correo principal y confirma que aún tienes acceso a él."
+    },
+    "fr": {
+     "t": "Ton compte le plus important",
+     "g": "Comprends pourquoi ton e-mail principal est la clé maîtresse de beaucoup d'autres comptes.",
+     "p": [
+      "Les liens de réinitialisation arrivent souvent par e-mail : qui le contrôle accède à bien plus.",
+      "Traite ton e-mail principal comme la clé de ta maison : mot de passe unique et protection en plus.",
+      "Sépare-le si possible des inscriptions jetables comme newsletters et boutiques."
+     ],
+     "q": "Sais-tu quelle adresse reçoit les liens de réinitialisation de ta banque et de tes boutiques ?",
+     "c": "Défi : identifie ton e-mail principal et vérifie que tu y as toujours accès."
+    },
+    "it": {
+     "t": "Il tuo account più importante",
+     "g": "Capisci perché la tua email principale è la chiave maestra di molti altri account.",
+     "p": [
+      "I link di reimpostazione di solito arrivano alla tua email, quindi chi la controlla arriva a molto di più.",
+      "Tratta l'email principale come la chiave di casa: password unica e protezione extra.",
+      "Se puoi, tienila separata dalle iscrizioni usa e getta, come newsletter e negozi."
+     ],
+     "q": "Sai quale indirizzo riceve i link di reimpostazione di banca e negozi?",
+     "c": "Sfida: individua la tua email principale e verifica di avere ancora accesso."
+    },
+    "pt": {
+     "t": "A tua conta mais importante",
+     "g": "Percebe porque é que o teu email principal é a chave mestra de muitas outras contas.",
+     "p": [
+      "Os links de recuperação costumam ir para o email, por isso quem o controla chega a muito mais.",
+      "Trata o email principal como a chave de casa: palavra-passe única e proteção extra.",
+      "Se puderes, separa-o de registos descartáveis como newsletters e lojas."
+     ],
+     "q": "Sabes que email recebe os links de recuperação do teu banco e das tuas lojas?",
+     "c": "Desafio: identifica o teu email principal e confirma que ainda tens acesso a ele."
+    },
+    "pt_BR": {
+     "t": "Sua conta mais importante",
+     "g": "Entenda por que seu e-mail principal é a chave mestra de muitas outras contas.",
+     "p": [
+      "Os links de recuperação costumam ir para o e-mail, então quem o controla alcança muito mais.",
+      "Trate o e-mail principal como a chave de casa: senha única e proteção extra.",
+      "Se puder, separe-o de cadastros descartáveis como newsletters e lojas."
+     ],
+     "q": "Você sabe qual e-mail recebe os links de recuperação do seu banco e das lojas?",
+     "c": "Desafio: identifique seu e-mail principal e confirme que ainda tem acesso a ele."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What makes a password weak",
+     "g": "Learn why short, common, reused or personal passwords are easy to guess.",
+     "p": [
+      "Short passwords and common ones like 123456 are tried first by automated guessing tools.",
+      "Passwords built from names, birthdays or pets are easy for people who know you.",
+      "A password that looks clever but is short is still weaker than a long, plain one."
+     ],
+     "q": "Without telling me any real password, what habits do you think make passwords weak?",
+     "c": "Challenge: think of one habit in your own passwords you could improve, without writing it down."
+    },
+    "de": {
+     "t": "Was ein Passwort schwach macht",
+     "g": "Lerne, warum kurze, häufige, wiederverwendete oder persönliche Passwörter leicht zu erraten sind.",
+     "p": [
+      "Kurze und häufige Passwörter wie 123456 probieren automatische Rate-Programme zuerst aus.",
+      "Passwörter aus Namen, Geburtstagen oder Haustieren errät jeder, der dich kennt, leicht.",
+      "Ein schlau aussehendes, aber kurzes Passwort ist schwächer als ein langes, schlichtes."
+     ],
+     "q": "Welche Gewohnheiten machen Passwörter deiner Meinung nach schwach? Nenne kein echtes Passwort.",
+     "c": "Challenge: Überlege, welche Gewohnheit bei deinen Passwörtern besser werden könnte, ohne sie aufzuschreiben."
+    },
+    "es": {
+     "t": "Qué hace débil una contraseña",
+     "g": "Aprende por qué las contraseñas cortas, comunes, repetidas o personales se adivinan fácil.",
+     "p": [
+      "Las contraseñas cortas y comunes como 123456 son lo primero que prueban las herramientas automáticas.",
+      "Las claves hechas con nombres, cumpleaños o mascotas las adivina fácil quien te conoce.",
+      "Una clave que parece ingeniosa pero es corta es más débil que una larga y sencilla."
+     ],
+     "q": "Sin decirme ninguna contraseña real, ¿qué hábitos crees que debilitan las contraseñas?",
+     "c": "Reto: piensa en un hábito de tus contraseñas que podrías mejorar, sin anotarlo."
+    },
+    "fr": {
+     "t": "Ce qui rend un mot de passe faible",
+     "g": "Apprends pourquoi les mots de passe courts, courants, réutilisés ou personnels se devinent facilement.",
+     "p": [
+      "Les mots de passe courts et courants, comme 123456, sont testés en premier par les outils automatiques.",
+      "Ceux faits de prénoms, dates de naissance ou animaux se devinent vite par tes proches.",
+      "Un mot de passe malin mais court reste plus faible qu'un long et simple."
+     ],
+     "q": "Sans me donner de vrai mot de passe, quelles habitudes affaiblissent selon toi un mot de passe ?",
+     "c": "Défi : pense à une habitude de tes mots de passe à améliorer, sans l'écrire."
+    },
+    "it": {
+     "t": "Cosa rende debole una password",
+     "g": "Impara perché password corte, comuni, riutilizzate o personali sono facili da indovinare.",
+     "p": [
+      "Le password corte e comuni, come 123456, sono le prime provate dagli strumenti automatici.",
+      "Quelle fatte con nomi, compleanni o animali domestici le indovina chi ti conosce.",
+      "Una password che sembra astuta ma è corta è più debole di una lunga e semplice."
+     ],
+     "q": "Senza dirmi nessuna password reale, quali abitudini pensi indeboliscano le password?",
+     "c": "Sfida: pensa a un'abitudine delle tue password da migliorare, senza scriverla."
+    },
+    "pt": {
+     "t": "O que torna uma palavra-passe fraca",
+     "g": "Aprende porque é que palavras-passe curtas, comuns, repetidas ou pessoais se adivinham facilmente.",
+     "p": [
+      "As palavras-passe curtas e comuns, como 123456, são as primeiras que as ferramentas automáticas testam.",
+      "As feitas com nomes, aniversários ou animais adivinha-as facilmente quem te conhece.",
+      "Uma palavra-passe que parece esperta mas é curta é mais fraca do que uma longa e simples."
+     ],
+     "q": "Sem me dizeres nenhuma palavra-passe real, que hábitos achas que as enfraquecem?",
+     "c": "Desafio: pensa num hábito das tuas palavras-passe que podes melhorar, sem o escrever."
+    },
+    "pt_BR": {
+     "t": "O que torna uma senha fraca",
+     "g": "Aprenda por que senhas curtas, comuns, repetidas ou pessoais são fáceis de adivinhar.",
+     "p": [
+      "Senhas curtas e comuns, como 123456, são as primeiras que as ferramentas automáticas testam.",
+      "As feitas com nomes, aniversários ou pets são fáceis de adivinhar por quem conhece você.",
+      "Uma senha que parece esperta mas é curta é mais fraca que uma longa e simples."
+     ],
+     "q": "Sem me dizer nenhuma senha real, que hábitos você acha que enfraquecem as senhas?",
+     "c": "Desafio: pense em um hábito das suas senhas que dá para melhorar, sem anotar."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Password reuse: the domino effect",
+     "g": "See how one leaked password can unlock many accounts when it is reused.",
+     "p": [
+      "Websites sometimes get breached, and the leaked passwords get tried on other sites.",
+      "If you reuse one password, a single leak can topple many accounts like dominoes.",
+      "A unique password per account keeps a leak contained to just that one site."
+     ],
+     "q": "How many of your accounts do you think share a similar password? Just a rough guess.",
+     "c": "Challenge: pick your three most important accounts and plan to give each its own password."
+    },
+    "de": {
+     "t": "Passwort-Wiederverwendung: der Dominoeffekt",
+     "g": "Sieh, wie ein geleaktes Passwort viele Konten öffnet, wenn es mehrfach genutzt wird.",
+     "p": [
+      "Webseiten werden manchmal gehackt, und die geleakten Passwörter probiert man auf anderen Seiten aus.",
+      "Wer ein Passwort wiederverwendet, riskiert, dass ein Leck viele Konten wie Dominosteine kippt.",
+      "Ein eigenes Passwort pro Konto hält ein Leck auf genau diese eine Seite begrenzt."
+     ],
+     "q": "Wie viele deiner Konten teilen wohl ein ähnliches Passwort? Nur grob geschätzt.",
+     "c": "Challenge: Wähle deine drei wichtigsten Konten und plane für jedes ein eigenes Passwort."
+    },
+    "es": {
+     "t": "Reutilizar contraseñas: el efecto dominó",
+     "g": "Descubre cómo una contraseña filtrada abre muchas cuentas si la repites.",
+     "p": [
+      "A veces se vulneran sitios web y las claves filtradas se prueban en otros sitios.",
+      "Si repites una clave, una sola filtración puede tumbar muchas cuentas como fichas de dominó.",
+      "Una clave única por cuenta limita la filtración a ese único sitio."
+     ],
+     "q": "¿Cuántas de tus cuentas crees que comparten una clave parecida? Solo una idea aproximada.",
+     "c": "Reto: elige tus tres cuentas más importantes y planea una clave propia para cada una."
+    },
+    "fr": {
+     "t": "Réutiliser ses mots de passe : l'effet domino",
+     "g": "Vois comment un mot de passe fuité ouvre plusieurs comptes quand on le réutilise.",
+     "p": [
+      "Des sites se font parfois pirater, et les mots de passe fuités sont testés ailleurs.",
+      "Si tu réutilises un mot de passe, une seule fuite peut faire tomber plusieurs comptes comme des dominos.",
+      "Un mot de passe unique par compte limite la fuite à ce seul site."
+     ],
+     "q": "Combien de tes comptes partagent-ils un mot de passe proche, à ton avis ? Une idée approximative.",
+     "c": "Défi : choisis tes trois comptes les plus importants et prévois un mot de passe distinct pour chacun."
+    },
+    "it": {
+     "t": "Riuso delle password: l'effetto domino",
+     "g": "Scopri come una password trapelata apre molti account se la riutilizzi.",
+     "p": [
+      "A volte i siti web subiscono violazioni e le password trapelate vengono provate altrove.",
+      "Se riusi una password, una sola fuga può far cadere molti account come tessere del domino.",
+      "Una password unica per account limita la fuga a quel solo sito."
+     ],
+     "q": "Quanti dei tuoi account pensi condividano una password simile? Solo una stima approssimativa.",
+     "c": "Sfida: scegli i tre account più importanti e pianifica una password diversa per ciascuno."
+    },
+    "pt": {
+     "t": "Reutilizar palavras-passe: o efeito dominó",
+     "g": "Vê como uma palavra-passe divulgada abre muitas contas quando a repetes.",
+     "p": [
+      "Por vezes há sites que são violados e as palavras-passe divulgadas são testadas noutros sites.",
+      "Se repetires uma palavra-passe, uma só fuga pode derrubar várias contas como peças de dominó.",
+      "Uma palavra-passe única por conta limita a fuga a esse único site."
+     ],
+     "q": "Quantas das tuas contas achas que partilham uma palavra-passe parecida? Só uma ideia aproximada.",
+     "c": "Desafio: escolhe as três contas mais importantes e planeia uma palavra-passe própria para cada uma."
+    },
+    "pt_BR": {
+     "t": "Reutilizar senhas: o efeito dominó",
+     "g": "Veja como uma senha vazada abre muitas contas quando você a repete.",
+     "p": [
+      "Às vezes sites são invadidos e as senhas vazadas são testadas em outros sites.",
+      "Se você repete uma senha, um único vazamento pode derrubar várias contas como peças de dominó.",
+      "Uma senha única por conta limita o vazamento àquele único site."
+     ],
+     "q": "Quantas das suas contas você acha que compartilham uma senha parecida? Só um palpite.",
+     "c": "Desafio: escolha suas três contas mais importantes e planeje uma senha própria para cada."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Security questions",
+     "g": "Learn why answers like a pet's name are guessable and how to make them safer.",
+     "p": [
+      "Answers such as first pet or birth town can often be found on social media or guessed.",
+      "You do not have to answer truthfully; a random phrase works better than the real answer.",
+      "Store those made-up answers in a safe place, like a password manager, so you can recall them."
+     ],
+     "q": "Do you remember any account that asked you a security question like that?",
+     "c": "Challenge: when you next see a security question, plan a made-up answer instead of the true one."
+    },
+    "de": {
+     "t": "Sicherheitsfragen",
+     "g": "Lerne, warum Antworten wie der Name eines Haustiers erratbar sind und wie du sie sicherer machst.",
+     "p": [
+      "Antworten wie erstes Haustier oder Geburtsort stehen oft in sozialen Medien oder sind erratbar.",
+      "Du musst nicht wahrheitsgemäß antworten; ein zufälliger Satz ist besser als die echte Antwort.",
+      "Bewahre diese ausgedachten Antworten sicher auf, etwa in einem Passwortmanager."
+     ],
+     "q": "Erinnerst du dich an ein Konto, das dich nach so einer Sicherheitsfrage gefragt hat?",
+     "c": "Challenge: Plane bei der nächsten Sicherheitsfrage eine ausgedachte statt der wahren Antwort."
+    },
+    "es": {
+     "t": "Preguntas de seguridad",
+     "g": "Aprende por qué respuestas como el nombre de una mascota se adivinan y cómo hacerlas más seguras.",
+     "p": [
+      "Respuestas como la primera mascota o la ciudad natal suelen estar en redes sociales o se adivinan.",
+      "No tienes que responder con la verdad; una frase al azar funciona mejor que la respuesta real.",
+      "Guarda esas respuestas inventadas en un lugar seguro, como un gestor de contraseñas."
+     ],
+     "q": "¿Recuerdas alguna cuenta que te pidiera una pregunta de seguridad así?",
+     "c": "Reto: la próxima vez que veas una pregunta de seguridad, planea una respuesta inventada."
+    },
+    "fr": {
+     "t": "Questions de sécurité",
+     "g": "Apprends pourquoi des réponses comme le nom d'un animal se devinent et comment les rendre plus sûres.",
+     "p": [
+      "Le premier animal ou la ville natale se trouvent souvent sur les réseaux sociaux ou se devinent.",
+      "Tu n'es pas obligé de répondre la vérité : une phrase au hasard vaut mieux que la vraie réponse.",
+      "Garde ces réponses inventées en lieu sûr, par exemple dans un gestionnaire de mots de passe."
+     ],
+     "q": "Te souviens-tu d'un compte qui t'a posé une question de sécurité de ce genre ?",
+     "c": "Défi : à la prochaine question de sécurité, prévois une réponse inventée plutôt que la vraie."
+    },
+    "it": {
+     "t": "Domande di sicurezza",
+     "g": "Scopri perché risposte come il nome di un animale si indovinano e come renderle più sicure.",
+     "p": [
+      "Risposte come primo animale o città natale si trovano spesso sui social o si indovinano.",
+      "Non devi rispondere il vero: una frase casuale funziona meglio della risposta reale.",
+      "Conserva queste risposte inventate in un posto sicuro, come un gestore di password."
+     ],
+     "q": "Ricordi un account che ti ha fatto una domanda di sicurezza così?",
+     "c": "Sfida: alla prossima domanda di sicurezza, pianifica una risposta inventata invece di quella vera."
+    },
+    "pt": {
+     "t": "Perguntas de segurança",
+     "g": "Aprende porque respostas como o nome de um animal se adivinham e como as tornar mais seguras.",
+     "p": [
+      "Respostas como o primeiro animal ou a terra natal encontram-se muitas vezes nas redes sociais ou adivinham-se.",
+      "Não tens de responder com a verdade; uma frase aleatória funciona melhor do que a resposta real.",
+      "Guarda essas respostas inventadas num local seguro, como um gestor de palavras-passe."
+     ],
+     "q": "Lembras-te de alguma conta que te pediu uma pergunta de segurança assim?",
+     "c": "Desafio: da próxima vez que vires uma pergunta de segurança, planeia uma resposta inventada."
+    },
+    "pt_BR": {
+     "t": "Perguntas de segurança",
+     "g": "Aprenda por que respostas como o nome de um pet são adivinháveis e como torná-las mais seguras.",
+     "p": [
+      "Respostas como o primeiro pet ou a cidade natal costumam estar nas redes sociais ou ser adivinhadas.",
+      "Você não precisa responder a verdade; uma frase aleatória funciona melhor que a resposta real.",
+      "Guarde essas respostas inventadas em um lugar seguro, como um gerenciador de senhas."
+     ],
+     "q": "Você lembra de alguma conta que pediu uma pergunta de segurança assim?",
+     "c": "Desafio: na próxima pergunta de segurança, planeje uma resposta inventada."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your safety baseline",
+     "g": "Do a quick self-check of your current habits so you can see progress over the year.",
+     "p": [
+      "A baseline is a starting snapshot: note what you do well and what needs work.",
+      "Check five basics: screen lock, unique passwords, updates, backups and careful clicking.",
+      "Be kind to yourself; every habit you improve counts, and we build step by step."
+     ],
+     "q": "Which of those five basics feels strongest for you, and which the weakest?",
+     "c": "Challenge: score yourself 1 to 5 on each basic and keep the notes for later."
+    },
+    "de": {
+     "t": "Dein Sicherheits-Ausgangspunkt",
+     "g": "Mache einen kurzen Selbstcheck deiner Gewohnheiten, um den Fortschritt im Jahr zu sehen.",
+     "p": [
+      "Ein Ausgangspunkt ist eine Momentaufnahme: Was machst du gut, was braucht Arbeit?",
+      "Prüfe fünf Grundlagen: Bildschirmsperre, eigene Passwörter, Updates, Backups und vorsichtiges Klicken.",
+      "Sei nett zu dir; jede verbesserte Gewohnheit zählt, wir gehen Schritt für Schritt."
+     ],
+     "q": "Welche dieser fünf Grundlagen ist bei dir am stärksten, welche am schwächsten?",
+     "c": "Challenge: Bewerte dich bei jeder Grundlage von 1 bis 5 und behalte die Notizen für später."
+    },
+    "es": {
+     "t": "Tu punto de partida en seguridad",
+     "g": "Haz un chequeo rápido de tus hábitos para ver tu progreso durante el año.",
+     "p": [
+      "Un punto de partida es una foto inicial: anota lo que haces bien y lo que hay que mejorar.",
+      "Revisa cinco básicos: bloqueo de pantalla, claves únicas, actualizaciones, copias y clics prudentes.",
+      "Sé amable contigo; cada hábito que mejoras cuenta, y avanzamos paso a paso."
+     ],
+     "q": "¿Cuál de esos cinco básicos te sale mejor y cuál peor?",
+     "c": "Reto: puntúate de 1 a 5 en cada básico y guarda las notas para más adelante."
+    },
+    "fr": {
+     "t": "Ton point de départ en sécurité",
+     "g": "Fais un rapide bilan de tes habitudes pour mesurer tes progrès au fil de l'année.",
+     "p": [
+      "Un point de départ est un instantané : note ce qui va bien et ce qui demande du travail.",
+      "Vérifie cinq bases : verrouillage d'écran, mots de passe uniques, mises à jour, sauvegardes, clics prudents.",
+      "Sois indulgent avec toi ; chaque habitude améliorée compte, et on avance pas à pas."
+     ],
+     "q": "Laquelle de ces cinq bases est ta plus solide, et laquelle ta plus faible ?",
+     "c": "Défi : note-toi de 1 à 5 sur chaque base et garde ces notes pour plus tard."
+    },
+    "it": {
+     "t": "Il tuo punto di partenza sulla sicurezza",
+     "g": "Fai un rapido controllo delle tue abitudini per vedere i progressi durante l'anno.",
+     "p": [
+      "Un punto di partenza è un'istantanea: annota cosa fai bene e cosa va migliorato.",
+      "Controlla cinque basi: blocco schermo, password uniche, aggiornamenti, backup e clic prudenti.",
+      "Sii gentile con te stesso; ogni abitudine migliorata conta e andiamo passo dopo passo."
+     ],
+     "q": "Quale di queste cinque basi è la tua più forte e quale la più debole?",
+     "c": "Sfida: dai un voto da 1 a 5 a ogni base e conserva gli appunti per dopo."
+    },
+    "pt": {
+     "t": "O teu ponto de partida na segurança",
+     "g": "Faz uma verificação rápida dos teus hábitos para veres o progresso ao longo do ano.",
+     "p": [
+      "Um ponto de partida é uma fotografia inicial: anota o que fazes bem e o que precisa de melhorar.",
+      "Verifica cinco bases: bloqueio de ecrã, palavras-passe únicas, atualizações, cópias e cliques prudentes.",
+      "Sê simpático contigo; cada hábito melhorado conta, e avançamos passo a passo."
+     ],
+     "q": "Qual destas cinco bases é a tua mais forte e qual a mais fraca?",
+     "c": "Desafio: dá-te uma nota de 1 a 5 em cada base e guarda as notas para mais tarde."
+    },
+    "pt_BR": {
+     "t": "Seu ponto de partida em segurança",
+     "g": "Faça uma checagem rápida dos seus hábitos para ver o progresso ao longo do ano.",
+     "p": [
+      "Um ponto de partida é uma foto inicial: anote o que você faz bem e o que precisa melhorar.",
+      "Verifique cinco bases: bloqueio de tela, senhas únicas, atualizações, backups e cliques prudentes.",
+      "Seja gentil consigo; cada hábito melhorado conta, e avançamos passo a passo."
+     ],
+     "q": "Qual dessas cinco bases é a sua mais forte e qual a mais fraca?",
+     "c": "Desafio: dê a si mesmo nota de 1 a 5 em cada base e guarde as anotações para depois."
+    }
+   }
+  }
+ ]
+}

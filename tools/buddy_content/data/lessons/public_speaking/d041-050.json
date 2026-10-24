@@ -1,0 +1,835 @@
+{
+ "topic": "public_speaking",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Openings to avoid",
+     "g": "Spot apologies, long thank-yous and other weak ways to start.",
+     "p": [
+      "Avoid 'Sorry, I am not very good at this'; it lowers trust in you.",
+      "Skip long thank-yous and 'I will just talk about...' warm-ups.",
+      "Start with your strongest, clearest line instead."
+     ],
+     "q": "Which weak opening do you hear most often in talks?",
+     "c": "Rewrite a weak opening like 'Um, so, today I will talk about...' into a strong one."
+    },
+    "de": {
+     "t": "Einstiege, die du meiden solltest",
+     "g": "Erkenne Entschuldigungen, lange Danksagungen und andere schwache Anfänge.",
+     "p": [
+      "Vermeide 'Entschuldigung, ich bin darin nicht gut'; es senkt das Vertrauen.",
+      "Lass lange Danksagungen und 'Ich rede jetzt kurz über...' weg.",
+      "Beginne stattdessen mit deinem stärksten, klarsten Satz."
+     ],
+     "q": "Welchen schwachen Einstieg hörst du in Vorträgen am häufigsten?",
+     "c": "Schreib einen schwachen Einstieg wie 'Äh, also heute rede ich über...' zu einem starken um."
+    },
+    "es": {
+     "t": "Aperturas que conviene evitar",
+     "g": "Detecta disculpas, agradecimientos largos y otras formas débiles de empezar.",
+     "p": [
+      "Evita 'Perdón, no soy bueno en esto'; baja la confianza en ti.",
+      "Omite agradecimientos largos y 'Voy a hablar de...' de calentamiento.",
+      "Empieza en su lugar con tu frase más fuerte y clara."
+     ],
+     "q": "¿Qué apertura débil oyes más a menudo en las charlas?",
+     "c": "Reescribe una apertura débil como 'Eh, bueno, hoy voy a hablar de...' en una fuerte."
+    },
+    "fr": {
+     "t": "Ouvertures à éviter",
+     "g": "Repère les excuses, les longs remerciements et autres débuts faibles.",
+     "p": [
+      "Évite « Désolé, je ne suis pas doué pour ça » ; cela baisse la confiance.",
+      "Saute les longs remerciements et les « Je vais juste parler de... ».",
+      "Commence plutôt par ta phrase la plus forte et la plus claire."
+     ],
+     "q": "Quelle ouverture faible entends-tu le plus souvent dans les exposés ?",
+     "c": "Réécris une ouverture faible comme « Euh, alors aujourd'hui je vais parler de... » en une forte."
+    },
+    "it": {
+     "t": "Aperture da evitare",
+     "g": "Riconosci scuse, lunghi ringraziamenti e altri inizi deboli.",
+     "p": [
+      "Evita 'Scusate, non sono bravo in questo'; abbassa la fiducia in te.",
+      "Salta i lunghi ringraziamenti e i 'Parlerò solo di...' di riscaldamento.",
+      "Inizia invece con la tua frase più forte e chiara."
+     ],
+     "q": "Quale apertura debole senti più spesso nei discorsi?",
+     "c": "Riscrivi un'apertura debole come 'Ehm, allora oggi parlerò di...' in una forte."
+    },
+    "pt": {
+     "t": "Aberturas a evitar",
+     "g": "Reconhece desculpas, agradecimentos longos e outros inícios fracos.",
+     "p": [
+      "Evita 'Desculpem, não sou bom nisto'; baixa a confiança em ti.",
+      "Salta agradecimentos longos e 'Vou só falar de...' como aquecimento.",
+      "Começa antes com a tua frase mais forte e clara."
+     ],
+     "q": "Que abertura fraca ouves mais vezes em apresentações?",
+     "c": "Reescreve uma abertura fraca como 'Hum, então hoje vou falar de...' numa forte."
+    },
+    "pt_BR": {
+     "t": "Aberturas a evitar",
+     "g": "Reconheça desculpas, agradecimentos longos e outros começos fracos.",
+     "p": [
+      "Evite 'Desculpem, não sou bom nisso'; isso diminui a confiança em você.",
+      "Pule agradecimentos longos e 'Vou só falar sobre...' como aquecimento.",
+      "Comece com a sua frase mais forte e clara."
+     ],
+     "q": "Que abertura fraca você mais ouve em apresentações?",
+     "c": "Reescreva uma abertura fraca como 'É... então hoje vou falar sobre...' em uma forte."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Signposting",
+     "g": "Tell listeners where you are going so they never get lost.",
+     "p": [
+      "Preview your route: 'Today I will share three tips.'",
+      "Mark each step: 'First...', 'Second...', 'Finally...'.",
+      "Signposts are like road signs: small words that guide the journey."
+     ],
+     "q": "Have you ever felt lost in a talk because you did not know the structure?",
+     "c": "Give a 45-second talk with a preview and the words first, second, finally."
+    },
+    "de": {
+     "t": "Wegweiser im Vortrag",
+     "g": "Sag den Zuhörern, wohin es geht, damit sie nie verloren gehen.",
+     "p": [
+      "Gib eine Vorschau: 'Heute teile ich drei Tipps.'",
+      "Markiere jeden Schritt: 'Erstens...', 'Zweitens...', 'Schließlich...'.",
+      "Wegweiser sind wie Verkehrsschilder: kleine Wörter, die führen."
+     ],
+     "q": "Hast du dich schon einmal verloren gefühlt, weil du die Struktur nicht kanntest?",
+     "c": "Halte 45 Sekunden Vortrag mit Vorschau und den Wörtern erstens, zweitens, schließlich."
+    },
+    "es": {
+     "t": "Señalizar tu charla",
+     "g": "Cuenta al público hacia dónde vas para que nunca se pierda.",
+     "p": [
+      "Anticipa la ruta: 'Hoy compartiré tres consejos.'",
+      "Marca cada paso: 'Primero...', 'Segundo...', 'Por último...'.",
+      "Las señales son como carteles de carretera: palabras pequeñas que guían."
+     ],
+     "q": "¿Te has perdido alguna vez en una charla por no conocer su estructura?",
+     "c": "Da una charla de 45 segundos con avance y las palabras primero, segundo, por último."
+    },
+    "fr": {
+     "t": "Jalonner ton exposé",
+     "g": "Dis aux auditeurs où tu vas pour qu'ils ne se perdent jamais.",
+     "p": [
+      "Annonce le parcours : « Aujourd'hui, je partage trois conseils. »",
+      "Marque chaque étape : « D'abord... », « Ensuite... », « Enfin... ».",
+      "Les jalons sont comme des panneaux routiers : de petits mots qui guident."
+     ],
+     "q": "T'es-tu déjà senti perdu dans un exposé faute de connaître sa structure ?",
+     "c": "Fais 45 secondes d'exposé avec annonce du plan et les mots d'abord, ensuite, enfin."
+    },
+    "it": {
+     "t": "Segnaletica del discorso",
+     "g": "Di' a chi ascolta dove stai andando perché non si perda mai.",
+     "p": [
+      "Anticipa il percorso: 'Oggi condividerò tre consigli.'",
+      "Segna ogni passo: 'Primo...', 'Secondo...', 'Infine...'.",
+      "I segnali sono come cartelli stradali: piccole parole che guidano."
+     ],
+     "q": "Ti sei mai perso in un discorso perché non conoscevi la struttura?",
+     "c": "Fai un discorso di 45 secondi con anticipazione e le parole primo, secondo, infine."
+    },
+    "pt": {
+     "t": "Sinalizar a apresentação",
+     "g": "Diz aos ouvintes para onde vais para que nunca se percam.",
+     "p": [
+      "Antecipa o percurso: 'Hoje vou partilhar três dicas.'",
+      "Marca cada passo: 'Primeiro...', 'Segundo...', 'Por fim...'.",
+      "Os sinais são como placas de estrada: pequenas palavras que guiam."
+     ],
+     "q": "Já te perdeste numa apresentação por não conheceres a estrutura?",
+     "c": "Faz 45 segundos de apresentação com antevisão e as palavras primeiro, segundo, por fim."
+    },
+    "pt_BR": {
+     "t": "Sinalizar a apresentação",
+     "g": "Diga aos ouvintes para onde você vai para que nunca se percam.",
+     "p": [
+      "Antecipe o percurso: 'Hoje vou compartilhar três dicas.'",
+      "Marque cada passo: 'Primeiro...', 'Segundo...', 'Por fim...'.",
+      "Os sinais são como placas de estrada: pequenas palavras que guiam."
+     ],
+     "q": "Você já se perdeu numa apresentação por não conhecer a estrutura?",
+     "c": "Faça 45 segundos de apresentação com prévia e as palavras primeiro, segundo, por fim."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Transitions between points",
+     "g": "Build smooth bridges that link one idea to the next.",
+     "p": [
+      "A transition closes one idea and opens the next in one sentence.",
+      "Examples: 'Now that we have seen why, let us look at how.'",
+      "Pause briefly before the bridge so the change is clear."
+     ],
+     "q": "Which transition phrases do you already use in everyday talk?",
+     "c": "Link your three points aloud with two bridge sentences between them."
+    },
+    "de": {
+     "t": "Übergänge zwischen Punkten",
+     "g": "Baue sanfte Brücken, die eine Idee mit der nächsten verbinden.",
+     "p": [
+      "Ein Übergang schließt eine Idee ab und öffnet die nächste in einem Satz.",
+      "Beispiele: 'Nachdem wir das Warum gesehen haben, schauen wir auf das Wie.'",
+      "Pausiere kurz vor der Brücke, damit der Wechsel klar wird."
+     ],
+     "q": "Welche Übergangsphrasen nutzt du schon im Alltag?",
+     "c": "Verbinde deine drei Punkte laut mit zwei Brückensätzen dazwischen."
+    },
+    "es": {
+     "t": "Transiciones entre puntos",
+     "g": "Construye puentes suaves que unan una idea con la siguiente.",
+     "p": [
+      "Una transición cierra una idea y abre la siguiente en una frase.",
+      "Ejemplos: 'Ya vimos el porqué; veamos ahora el cómo.'",
+      "Haz una pausa breve antes del puente para marcar el cambio."
+     ],
+     "q": "¿Qué frases de transición usas ya en el día a día?",
+     "c": "Une tus tres puntos en voz alta con dos frases puente entre ellos."
+    },
+    "fr": {
+     "t": "Transitions entre les points",
+     "g": "Construis de souples passerelles qui relient une idée à la suivante.",
+     "p": [
+      "Une transition clôt une idée et ouvre la suivante en une phrase.",
+      "Exemples : « Maintenant que nous savons pourquoi, voyons comment. »",
+      "Marque une brève pause avant la passerelle pour souligner le changement."
+     ],
+     "q": "Quelles phrases de transition utilises-tu déjà au quotidien ?",
+     "c": "Relie tes trois points à voix haute avec deux phrases passerelles."
+    },
+    "it": {
+     "t": "Transizioni tra i punti",
+     "g": "Costruisci ponti fluidi che colleghino un'idea alla successiva.",
+     "p": [
+      "Una transizione chiude un'idea e apre la successiva in una frase.",
+      "Esempi: 'Ora che abbiamo visto il perché, vediamo il come.'",
+      "Fai una breve pausa prima del ponte per rendere chiaro il cambio."
+     ],
+     "q": "Quali frasi di transizione usi già nel parlare quotidiano?",
+     "c": "Collega i tuoi tre punti a voce alta con due frasi ponte."
+    },
+    "pt": {
+     "t": "Transições entre pontos",
+     "g": "Constrói pontes suaves que liguem uma ideia à seguinte.",
+     "p": [
+      "Uma transição fecha uma ideia e abre a seguinte numa frase.",
+      "Exemplos: 'Agora que vimos o porquê, vamos ver o como.'",
+      "Faz uma pausa breve antes da ponte para marcar a mudança."
+     ],
+     "q": "Que frases de transição já usas no dia a dia?",
+     "c": "Liga os teus três pontos em voz alta com duas frases-ponte."
+    },
+    "pt_BR": {
+     "t": "Transições entre pontos",
+     "g": "Construa pontes suaves que liguem uma ideia à seguinte.",
+     "p": [
+      "Uma transição fecha uma ideia e abre a seguinte em uma frase.",
+      "Exemplos: 'Agora que vimos o porquê, vamos ver o como.'",
+      "Faça uma pausa breve antes da ponte para marcar a mudança."
+     ],
+     "q": "Que frases de transição você já usa no dia a dia?",
+     "c": "Ligue seus três pontos em voz alta com duas frases-ponte."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Supporting your points",
+     "g": "Use examples, facts and stories to make your ideas believable.",
+     "p": [
+      "A claim alone is weak; a claim plus proof is strong.",
+      "Mix types of support: a fact, an example, a short story.",
+      "One strong piece of support per point beats five weak ones."
+     ],
+     "q": "What kind of proof convinces you most: facts, stories or examples?",
+     "c": "Take one claim and back it up aloud with a fact and an example."
+    },
+    "de": {
+     "t": "Punkte stützen",
+     "g": "Nutze Beispiele, Fakten und Geschichten, damit deine Ideen glaubwürdig wirken.",
+     "p": [
+      "Eine Behauptung allein ist schwach; Behauptung plus Beleg ist stark.",
+      "Mische die Stützen: ein Fakt, ein Beispiel, eine kurze Geschichte.",
+      "Eine starke Stütze pro Punkt schlägt fünf schwache."
+     ],
+     "q": "Welche Art Beleg überzeugt dich am meisten: Fakten, Geschichten oder Beispiele?",
+     "c": "Nimm eine Behauptung und stütze sie laut mit einem Fakt und einem Beispiel."
+    },
+    "es": {
+     "t": "Respaldar tus puntos",
+     "g": "Usa ejemplos, datos e historias para que tus ideas resulten creíbles.",
+     "p": [
+      "Una afirmación sola es débil; con prueba, es fuerte.",
+      "Mezcla tipos de apoyo: un dato, un ejemplo, una historia corta.",
+      "Un apoyo fuerte por punto vale más que cinco débiles."
+     ],
+     "q": "¿Qué tipo de prueba te convence más: datos, historias o ejemplos?",
+     "c": "Toma una afirmación y respáldala en voz alta con un dato y un ejemplo."
+    },
+    "fr": {
+     "t": "Étayer tes points",
+     "g": "Utilise exemples, faits et histoires pour rendre tes idées crédibles.",
+     "p": [
+      "Une affirmation seule est faible ; avec une preuve, elle est forte.",
+      "Mélange les appuis : un fait, un exemple, une courte histoire.",
+      "Un appui solide par point vaut mieux que cinq faibles."
+     ],
+     "q": "Quelle preuve te convainc le plus : faits, histoires ou exemples ?",
+     "c": "Prends une affirmation et étaye-la à voix haute avec un fait et un exemple."
+    },
+    "it": {
+     "t": "Sostenere i tuoi punti",
+     "g": "Usa esempi, fatti e storie per rendere credibili le tue idee.",
+     "p": [
+      "Un'affermazione da sola è debole; con una prova è forte.",
+      "Mescola i tipi di sostegno: un fatto, un esempio, una breve storia.",
+      "Un sostegno forte per punto vale più di cinque deboli."
+     ],
+     "q": "Quale tipo di prova ti convince di più: fatti, storie o esempi?",
+     "c": "Prendi un'affermazione e sostienila a voce alta con un fatto e un esempio."
+    },
+    "pt": {
+     "t": "Sustentar os teus pontos",
+     "g": "Usa exemplos, factos e histórias para tornar as tuas ideias credíveis.",
+     "p": [
+      "Uma afirmação sozinha é fraca; com prova torna-se forte.",
+      "Mistura os tipos de apoio: um facto, um exemplo, uma história curta.",
+      "Um apoio forte por ponto vale mais do que cinco fracos."
+     ],
+     "q": "Que tipo de prova te convence mais: factos, histórias ou exemplos?",
+     "c": "Pega numa afirmação e sustenta-a em voz alta com um facto e um exemplo."
+    },
+    "pt_BR": {
+     "t": "Sustentar os seus pontos",
+     "g": "Use exemplos, fatos e histórias para tornar as suas ideias críveis.",
+     "p": [
+      "Uma afirmação sozinha é fraca; com prova, fica forte.",
+      "Misture os tipos de apoio: um fato, um exemplo, uma história curta.",
+      "Um apoio forte por ponto vale mais do que cinco fracos."
+     ],
+     "q": "Que tipo de prova convence você mais: fatos, histórias ou exemplos?",
+     "c": "Pegue uma afirmação e sustente-a em voz alta com um fato e um exemplo."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Using examples",
+     "g": "Turn abstract ideas into clear pictures with concrete examples.",
+     "p": [
+      "An example makes an idea visible: not 'be kind' but 'hold the door for someone'.",
+      "Use real, specific details: names, places, small numbers.",
+      "Choose examples your audience knows from daily life."
+     ],
+     "q": "What example helped you finally understand a hard idea?",
+     "c": "Explain one abstract word, like patience, using one concrete everyday example."
+    },
+    "de": {
+     "t": "Beispiele nutzen",
+     "g": "Mach abstrakte Ideen mit konkreten Beispielen zu klaren Bildern.",
+     "p": [
+      "Ein Beispiel macht eine Idee sichtbar: nicht 'sei freundlich', sondern 'halte jemandem die Tür auf'.",
+      "Nutze echte, konkrete Details: Namen, Orte, kleine Zahlen.",
+      "Wähle Beispiele, die dein Publikum aus dem Alltag kennt."
+     ],
+     "q": "Welches Beispiel hat dir eine schwere Idee endlich verständlich gemacht?",
+     "c": "Erkläre ein abstraktes Wort wie Geduld mit einem konkreten Alltagsbeispiel."
+    },
+    "es": {
+     "t": "Usar ejemplos",
+     "g": "Convierte ideas abstractas en imágenes claras con ejemplos concretos.",
+     "p": [
+      "Un ejemplo hace visible una idea: no 'sé amable', sino 'sujeta la puerta a alguien'.",
+      "Usa detalles reales y concretos: nombres, lugares, cifras pequeñas.",
+      "Elige ejemplos que tu público conozca de la vida diaria."
+     ],
+     "q": "¿Qué ejemplo te ayudó por fin a entender una idea difícil?",
+     "c": "Explica una palabra abstracta, como paciencia, con un ejemplo cotidiano concreto."
+    },
+    "fr": {
+     "t": "Utiliser des exemples",
+     "g": "Transforme des idées abstraites en images claires grâce à des exemples concrets.",
+     "p": [
+      "Un exemple rend l'idée visible : pas « sois gentil » mais « tiens la porte à quelqu'un ».",
+      "Utilise des détails réels et précis : noms, lieux, petits chiffres.",
+      "Choisis des exemples que ton public connaît du quotidien."
+     ],
+     "q": "Quel exemple t'a enfin fait comprendre une idée difficile ?",
+     "c": "Explique un mot abstrait, comme patience, avec un exemple quotidien concret."
+    },
+    "it": {
+     "t": "Usare esempi",
+     "g": "Trasforma idee astratte in immagini chiare con esempi concreti.",
+     "p": [
+      "Un esempio rende visibile un'idea: non 'sii gentile' ma 'tieni la porta a qualcuno'.",
+      "Usa dettagli reali e specifici: nomi, luoghi, piccoli numeri.",
+      "Scegli esempi che il pubblico conosce dalla vita quotidiana."
+     ],
+     "q": "Quale esempio ti ha fatto finalmente capire un'idea difficile?",
+     "c": "Spiega una parola astratta, come pazienza, con un esempio quotidiano concreto."
+    },
+    "pt": {
+     "t": "Usar exemplos",
+     "g": "Transforma ideias abstratas em imagens claras com exemplos concretos.",
+     "p": [
+      "Um exemplo torna a ideia visível: não 'sê simpático', mas 'segura a porta a alguém'.",
+      "Usa detalhes reais e concretos: nomes, lugares, pequenos números.",
+      "Escolhe exemplos que o teu público conhece do dia a dia."
+     ],
+     "q": "Que exemplo te fez finalmente perceber uma ideia difícil?",
+     "c": "Explica uma palavra abstrata, como paciência, com um exemplo concreto do dia a dia."
+    },
+    "pt_BR": {
+     "t": "Usar exemplos",
+     "g": "Transforme ideias abstratas em imagens claras com exemplos concretos.",
+     "p": [
+      "Um exemplo torna a ideia visível: não 'seja gentil', mas 'segure a porta para alguém'.",
+      "Use detalhes reais e concretos: nomes, lugares, pequenos números.",
+      "Escolha exemplos que o seu público conhece do dia a dia."
+     ],
+     "q": "Que exemplo fez você finalmente entender uma ideia difícil?",
+     "c": "Explique uma palavra abstrata, como paciência, com um exemplo concreto do dia a dia."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Simple statistics",
+     "g": "Present numbers in a way people can understand and remember.",
+     "p": [
+      "Round numbers: say 'about one in three' instead of 33.4 percent.",
+      "Give only the most important numbers, one at a time.",
+      "Compare to something familiar to make the size feel real."
+     ],
+     "q": "Which number or fact have you remembered from a talk or article?",
+     "c": "Turn one number into a friendly phrase, like 'about one in four people'."
+    },
+    "de": {
+     "t": "Einfache Statistiken",
+     "g": "Präsentiere Zahlen so, dass Menschen sie verstehen und behalten.",
+     "p": [
+      "Runde Zahlen: sag 'etwa jeder Dritte' statt 33,4 Prozent.",
+      "Nenne nur die wichtigsten Zahlen, eine nach der anderen.",
+      "Vergleiche mit Vertrautem, damit die Größe greifbar wird."
+     ],
+     "q": "Welche Zahl oder welchen Fakt aus einem Vortrag oder Artikel hast du behalten?",
+     "c": "Verwandle eine Zahl in eine freundliche Wendung wie 'etwa jeder Vierte'."
+    },
+    "es": {
+     "t": "Estadísticas sencillas",
+     "g": "Presenta cifras de forma que la gente las entienda y recuerde.",
+     "p": [
+      "Redondea: di 'casi uno de cada tres' en vez de 33,4 por ciento.",
+      "Da solo las cifras más importantes, una a una.",
+      "Compara con algo familiar para que el tamaño se sienta real."
+     ],
+     "q": "¿Qué cifra o dato recuerdas de una charla o artículo?",
+     "c": "Convierte una cifra en una frase amable, como 'una de cada cuatro personas'."
+    },
+    "fr": {
+     "t": "Statistiques simples",
+     "g": "Présente les chiffres de façon à ce qu'on les comprenne et les retienne.",
+     "p": [
+      "Arrondis : dis « environ un sur trois » plutôt que 33,4 pour cent.",
+      "Ne donne que les chiffres essentiels, un à la fois.",
+      "Compare avec du familier pour que l'ordre de grandeur parle."
+     ],
+     "q": "Quel chiffre ou fait retiens-tu d'un exposé ou d'un article ?",
+     "c": "Transforme un chiffre en phrase simple, comme « environ une personne sur quatre »."
+    },
+    "it": {
+     "t": "Statistiche semplici",
+     "g": "Presenta i numeri in modo che si capiscano e si ricordino.",
+     "p": [
+      "Arrotonda: di' 'circa uno su tre' invece di 33,4 per cento.",
+      "Dai solo i numeri più importanti, uno alla volta.",
+      "Confronta con qualcosa di familiare perché la dimensione sia concreta."
+     ],
+     "q": "Quale numero o fatto ricordi da un discorso o articolo?",
+     "c": "Trasforma un numero in una frase semplice, come 'circa una persona su quattro'."
+    },
+    "pt": {
+     "t": "Estatísticas simples",
+     "g": "Apresenta números de forma que as pessoas os entendam e recordem.",
+     "p": [
+      "Arredonda: diz 'cerca de um em cada três' em vez de 33,4 por cento.",
+      "Dá só os números mais importantes, um de cada vez.",
+      "Compara com algo familiar para o tamanho parecer real."
+     ],
+     "q": "Que número ou facto recordas de uma apresentação ou artigo?",
+     "c": "Transforma um número numa frase simples, como 'cerca de uma em cada quatro pessoas'."
+    },
+    "pt_BR": {
+     "t": "Estatísticas simples",
+     "g": "Apresente números de forma que as pessoas entendam e lembrem.",
+     "p": [
+      "Arredonde: diga 'cerca de um em cada três' em vez de 33,4 por cento.",
+      "Dê só os números mais importantes, um de cada vez.",
+      "Compare com algo familiar para o tamanho parecer real."
+     ],
+     "q": "Que número ou fato você lembra de uma apresentação ou artigo?",
+     "c": "Transforme um número em uma frase simples, como 'cerca de uma em cada quatro pessoas'."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Comparisons and analogies",
+     "g": "Explain something new by comparing it with something familiar.",
+     "p": [
+      "An analogy says 'X is like Y' to make a new idea easy to grasp.",
+      "Example: a talk's outline is like a map for a trip.",
+      "Pick a comparison your audience knows and keep it simple."
+     ],
+     "q": "What comparison could you use to explain your favourite hobby?",
+     "c": "Explain one idea using the pattern 'It is like...' and say it aloud."
+    },
+    "de": {
+     "t": "Vergleiche und Analogien",
+     "g": "Erkläre Neues, indem du es mit Bekanntem vergleichst.",
+     "p": [
+      "Eine Analogie sagt 'X ist wie Y', damit eine neue Idee leicht fassbar wird.",
+      "Beispiel: Die Gliederung eines Vortrags ist wie eine Landkarte für eine Reise.",
+      "Wähle einen Vergleich, den dein Publikum kennt, und halte ihn einfach."
+     ],
+     "q": "Mit welchem Vergleich könntest du dein Lieblingshobby erklären?",
+     "c": "Erkläre eine Idee mit dem Muster 'Es ist wie...' und sag es laut."
+    },
+    "es": {
+     "t": "Comparaciones y analogías",
+     "g": "Explica algo nuevo comparándolo con algo familiar.",
+     "p": [
+      "Una analogía dice 'X es como Y' para entender fácil una idea nueva.",
+      "Ejemplo: el guion de una charla es como un mapa para un viaje.",
+      "Elige una comparación que tu público conozca y hazla simple."
+     ],
+     "q": "¿Qué comparación usarías para explicar tu afición favorita?",
+     "c": "Explica una idea con el patrón 'Es como...' y dilo en voz alta."
+    },
+    "fr": {
+     "t": "Comparaisons et analogies",
+     "g": "Explique quelque chose de nouveau en le comparant à du familier.",
+     "p": [
+      "Une analogie dit « X, c'est comme Y » pour saisir facilement une idée nouvelle.",
+      "Exemple : le plan d'un exposé est comme une carte pour un voyage.",
+      "Choisis une comparaison que ton public connaît et reste simple."
+     ],
+     "q": "Quelle comparaison utiliserais-tu pour expliquer ton loisir préféré ?",
+     "c": "Explique une idée avec le schéma « C'est comme... » et dis-le à voix haute."
+    },
+    "it": {
+     "t": "Confronti e analogie",
+     "g": "Spiega qualcosa di nuovo confrontandolo con qualcosa di familiare.",
+     "p": [
+      "Un'analogia dice 'X è come Y' per far capire facilmente un'idea nuova.",
+      "Esempio: la scaletta di un discorso è come una mappa per un viaggio.",
+      "Scegli un confronto che il pubblico conosce e tienilo semplice."
+     ],
+     "q": "Quale confronto useresti per spiegare il tuo hobby preferito?",
+     "c": "Spiega un'idea con lo schema 'È come...' e dillo a voce alta."
+    },
+    "pt": {
+     "t": "Comparações e analogias",
+     "g": "Explica algo novo comparando-o com algo familiar.",
+     "p": [
+      "Uma analogia diz 'X é como Y' para entender facilmente uma ideia nova.",
+      "Exemplo: o guião de uma apresentação é como um mapa para uma viagem.",
+      "Escolhe uma comparação que o público conheça e mantém-na simples."
+     ],
+     "q": "Que comparação usarias para explicar o teu passatempo preferido?",
+     "c": "Explica uma ideia com o padrão 'É como...' e di-lo em voz alta."
+    },
+    "pt_BR": {
+     "t": "Comparações e analogias",
+     "g": "Explique algo novo comparando com algo familiar.",
+     "p": [
+      "Uma analogia diz 'X é como Y' para entender fácil uma ideia nova.",
+      "Exemplo: o roteiro de uma apresentação é como um mapa para uma viagem.",
+      "Escolha uma comparação que o público conheça e mantenha simples."
+     ],
+     "q": "Que comparação você usaria para explicar o seu hobby preferido?",
+     "c": "Explique uma ideia com o padrão 'É como...' e diga em voz alta."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Memorable closings",
+     "g": "Craft endings that leave a clear message and a lasting impression.",
+     "p": [
+      "Do not trail off with 'So, yeah, that is it'; end on purpose.",
+      "Restate your core message in one short, strong sentence.",
+      "Slow down, pause, then say a final line and stop."
+     ],
+     "q": "Which talk ending do you still remember, and why?",
+     "c": "Write a closing of two sentences, say it aloud, and end with a clear pause."
+    },
+    "de": {
+     "t": "Einprägsame Schlüsse",
+     "g": "Gestalte Enden, die eine klare Botschaft und bleibenden Eindruck hinterlassen.",
+     "p": [
+      "Lass nicht ausklingen mit 'Tja, das war's'; beende bewusst.",
+      "Wiederhole die Kernbotschaft in einem kurzen, starken Satz.",
+      "Werde langsamer, pausiere, sag den letzten Satz und hör auf."
+     ],
+     "q": "Welches Vortragsende ist dir im Gedächtnis geblieben, und warum?",
+     "c": "Schreib einen Schluss mit zwei Sätzen, sag ihn laut und beende mit klarer Pause."
+    },
+    "es": {
+     "t": "Cierres memorables",
+     "g": "Crea finales que dejen un mensaje claro y una impresión duradera.",
+     "p": [
+      "No te apagues con 'Bueno, eso es todo'; termina con intención.",
+      "Repite tu mensaje central en una frase corta y fuerte.",
+      "Ve más despacio, haz una pausa, di la frase final y detente."
+     ],
+     "q": "¿Qué final de charla recuerdas todavía y por qué?",
+     "c": "Escribe un cierre de dos frases, dilo en voz alta y termina con una pausa clara."
+    },
+    "fr": {
+     "t": "Des conclusions mémorables",
+     "g": "Compose des fins qui laissent un message clair et une impression durable.",
+     "p": [
+      "Ne t'éteins pas avec « Voilà, c'est tout » ; termine avec intention.",
+      "Reprends ton message central en une phrase courte et forte.",
+      "Ralentis, marque une pause, dis ta dernière phrase et arrête-toi."
+     ],
+     "q": "Quelle fin d'exposé te reste en mémoire, et pourquoi ?",
+     "c": "Écris une conclusion de deux phrases, dis-la à voix haute et finis par une pause nette."
+    },
+    "it": {
+     "t": "Chiusure memorabili",
+     "g": "Crea finali che lasciano un messaggio chiaro e un ricordo duraturo.",
+     "p": [
+      "Non spegnerti con 'Beh, è tutto'; chiudi con intenzione.",
+      "Ripeti il messaggio centrale in una frase breve e forte.",
+      "Rallenta, fai una pausa, di' l'ultima frase e fermati."
+     ],
+     "q": "Quale finale di un discorso ricordi ancora, e perché?",
+     "c": "Scrivi una chiusura di due frasi, dilla a voce alta e finisci con una pausa netta."
+    },
+    "pt": {
+     "t": "Fechos memoráveis",
+     "g": "Cria finais que deixem uma mensagem clara e uma impressão duradoura.",
+     "p": [
+      "Não te apagues com 'Pronto, é isso'; termina com intenção.",
+      "Repete a tua mensagem central numa frase curta e forte.",
+      "Abranda, faz uma pausa, di a frase final e pára."
+     ],
+     "q": "Que final de apresentação ainda recordas, e porquê?",
+     "c": "Escreve um fecho de duas frases, di-o em voz alta e termina com uma pausa clara."
+    },
+    "pt_BR": {
+     "t": "Fechamentos memoráveis",
+     "g": "Crie finais que deixem uma mensagem clara e uma impressão duradoura.",
+     "p": [
+      "Não se apague com 'Então, é isso'; termine com intenção.",
+      "Repita a sua mensagem central em uma frase curta e forte.",
+      "Desacelere, faça uma pausa, diga a frase final e pare."
+     ],
+     "q": "Que final de apresentação você ainda lembra, e por quê?",
+     "c": "Escreva um fechamento de duas frases, diga em voz alta e termine com uma pausa clara."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ending with a call to action",
+     "g": "Invite the audience to do one specific thing after your talk.",
+     "p": [
+      "A call to action is one simple next step: try, share, sign up, join.",
+      "Make it specific and easy: 'Tonight, write down one idea.'",
+      "Say it with warmth, not pressure, and then stop."
+     ],
+     "q": "What small action would you like listeners to take after your talk?",
+     "c": "Close a mini talk with one clear, friendly call to action."
+    },
+    "de": {
+     "t": "Mit einem Handlungsaufruf enden",
+     "g": "Lade das Publikum ein, nach dem Vortrag eine konkrete Sache zu tun.",
+     "p": [
+      "Ein Handlungsaufruf ist ein einfacher nächster Schritt: ausprobieren, teilen, mitmachen.",
+      "Mach ihn konkret und leicht: 'Schreib heute Abend eine Idee auf.'",
+      "Sag ihn herzlich, ohne Druck, und höre dann auf."
+     ],
+     "q": "Welche kleine Handlung sollen Zuhörer nach deinem Vortrag tun?",
+     "c": "Beende einen Minivortrag mit einem klaren, freundlichen Handlungsaufruf."
+    },
+    "es": {
+     "t": "Terminar con una llamada a la acción",
+     "g": "Invita al público a hacer una cosa concreta después de tu charla.",
+     "p": [
+      "Una llamada a la acción es un paso sencillo: probar, compartir, apuntarse, unirse.",
+      "Hazla concreta y fácil: 'Esta noche, anota una idea.'",
+      "Dila con calidez, sin presión, y luego detente."
+     ],
+     "q": "¿Qué pequeña acción te gustaría que hicieran tras tu charla?",
+     "c": "Cierra una mini charla con una llamada a la acción clara y amable."
+    },
+    "fr": {
+     "t": "Finir par un appel à l'action",
+     "g": "Invite le public à faire une chose précise après ton exposé.",
+     "p": [
+      "Un appel à l'action est un pas simple : essayer, partager, s'inscrire, rejoindre.",
+      "Rends-le précis et facile : « Ce soir, note une idée. »",
+      "Dis-le avec chaleur, sans pression, puis arrête-toi."
+     ],
+     "q": "Quelle petite action aimerais-tu que ton public fasse après ton exposé ?",
+     "c": "Termine un mini exposé par un appel à l'action clair et aimable."
+    },
+    "it": {
+     "t": "Chiudere con un invito all'azione",
+     "g": "Invita il pubblico a fare una cosa concreta dopo il tuo discorso.",
+     "p": [
+      "Un invito all'azione è un passo semplice: provare, condividere, iscriversi, unirsi.",
+      "Rendilo concreto e facile: 'Stasera, scrivi un'idea.'",
+      "Dillo con calore, senza pressione, e poi fermati."
+     ],
+     "q": "Quale piccola azione vorresti che il pubblico facesse dopo il tuo discorso?",
+     "c": "Chiudi un mini discorso con un invito all'azione chiaro e gentile."
+    },
+    "pt": {
+     "t": "Terminar com um apelo à ação",
+     "g": "Convida o público a fazer uma coisa concreta depois da apresentação.",
+     "p": [
+      "Um apelo à ação é um passo simples: experimentar, partilhar, inscrever-se, juntar-se.",
+      "Torna-o concreto e fácil: 'Esta noite, anota uma ideia.'",
+      "Di-o com simpatia, sem pressão, e depois pára."
+     ],
+     "q": "Que pequena ação gostarias que o público fizesse depois da apresentação?",
+     "c": "Fecha uma mini apresentação com um apelo à ação claro e simpático."
+    },
+    "pt_BR": {
+     "t": "Terminar com um chamado à ação",
+     "g": "Convide o público a fazer uma coisa concreta depois da apresentação.",
+     "p": [
+      "Um chamado à ação é um passo simples: experimentar, compartilhar, se inscrever, participar.",
+      "Deixe concreto e fácil: 'Hoje à noite, anote uma ideia.'",
+      "Diga com simpatia, sem pressão, e depois pare."
+     ],
+     "q": "Que pequena ação você gostaria que o público fizesse depois da apresentação?",
+     "c": "Feche uma mini apresentação com um chamado à ação claro e simpático."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Callbacks to the opening",
+     "g": "Bring your opening idea back at the end to close the circle.",
+     "p": [
+      "If you opened with a story or question, return to it in your closing.",
+      "The callback shows your talk was planned and gives a sense of completion.",
+      "Add a small twist: the story now means something new."
+     ],
+     "q": "What opening line could you echo at the end of a talk?",
+     "c": "Open with a question, then answer it in your closing line, aloud."
+    },
+    "de": {
+     "t": "Rückgriffe auf den Einstieg",
+     "g": "Hole deine Eingangsidee am Ende zurück, um den Kreis zu schließen.",
+     "p": [
+      "Hast du mit Geschichte oder Frage begonnen, kehre im Schluss dahin zurück.",
+      "Der Rückgriff zeigt Planung und gibt ein Gefühl von Abschluss.",
+      "Füge eine kleine Wendung hinzu: Die Geschichte bedeutet nun etwas Neues."
+     ],
+     "q": "Welchen Einstiegssatz könntest du am Ende eines Vortrags wieder aufgreifen?",
+     "c": "Beginne mit einer Frage und beantworte sie laut in deinem Schlusssatz."
+    },
+    "es": {
+     "t": "Retomar la apertura",
+     "g": "Recupera tu idea de apertura al final para cerrar el círculo.",
+     "p": [
+      "Si abriste con una historia o pregunta, vuelve a ella en el cierre.",
+      "El eco muestra que tu charla estaba pensada y da sensación de cierre.",
+      "Añade un pequeño giro: la historia ahora significa algo nuevo."
+     ],
+     "q": "¿Qué frase de apertura podrías repetir al final de una charla?",
+     "c": "Abre con una pregunta y respóndela en tu frase final, en voz alta."
+    },
+    "fr": {
+     "t": "Reprendre l'ouverture",
+     "g": "Reprends ton idée d'ouverture à la fin pour boucler la boucle.",
+     "p": [
+      "Si tu as ouvert par une histoire ou une question, reviens-y en conclusion.",
+      "Ce rappel montre que l'exposé était pensé et donne une impression d'achèvement.",
+      "Ajoute une petite touche : l'histoire prend maintenant un sens nouveau."
+     ],
+     "q": "Quelle phrase d'ouverture pourrais-tu reprendre à la fin d'un exposé ?",
+     "c": "Ouvre par une question, puis réponds-y dans ta phrase finale, à voix haute."
+    },
+    "it": {
+     "t": "Richiamare l'apertura",
+     "g": "Riporta l'idea iniziale alla fine per chiudere il cerchio.",
+     "p": [
+      "Se hai aperto con una storia o domanda, torna lì nella chiusura.",
+      "Il richiamo mostra che il discorso era pensato e dà senso di compiutezza.",
+      "Aggiungi una piccola svolta: la storia ora significa qualcosa di nuovo."
+     ],
+     "q": "Quale frase di apertura potresti richiamare alla fine di un discorso?",
+     "c": "Apri con una domanda e rispondi nella frase finale, a voce alta."
+    },
+    "pt": {
+     "t": "Retomar a abertura",
+     "g": "Retoma a tua ideia inicial no fim para fechar o círculo.",
+     "p": [
+      "Se abriste com uma história ou pergunta, volta a ela no fecho.",
+      "O eco mostra que a apresentação foi pensada e dá sensação de conclusão.",
+      "Junta uma pequena reviravolta: a história agora significa algo novo."
+     ],
+     "q": "Que frase de abertura poderias repetir no fim de uma apresentação?",
+     "c": "Abre com uma pergunta e responde-lhe na frase final, em voz alta."
+    },
+    "pt_BR": {
+     "t": "Retomar a abertura",
+     "g": "Retome a sua ideia inicial no fim para fechar o círculo.",
+     "p": [
+      "Se você abriu com uma história ou pergunta, volte a ela no fechamento.",
+      "O eco mostra que a apresentação foi pensada e dá sensação de conclusão.",
+      "Acrescente uma pequena reviravolta: a história agora significa algo novo."
+     ],
+     "q": "Que frase de abertura você poderia repetir no fim de uma apresentação?",
+     "c": "Abra com uma pergunta e responda a ela na frase final, em voz alta."
+    }
+   }
+  }
+ ]
+}

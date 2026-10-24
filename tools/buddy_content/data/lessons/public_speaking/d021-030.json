@@ -1,0 +1,835 @@
+{
+ "topic": "public_speaking",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Moving with purpose",
+     "g": "Learn when to walk, when to stand still and how to avoid nervous pacing.",
+     "p": [
+      "Move to mark a new point, then stand still while you speak it.",
+      "Walk slowly and finish the thought before you take the next step.",
+      "Constant pacing or swaying distracts; stillness shows calm."
+     ],
+     "q": "Do you tend to pace, sway or stay frozen when you speak?",
+     "c": "Practise a 1-minute talk: take one step at each new point, then pause there."
+    },
+    "de": {
+     "t": "Sich mit Absicht bewegen",
+     "g": "Lerne, wann du gehst, wann du stehst und wie du nervöses Hin- und Herlaufen vermeidest.",
+     "p": [
+      "Bewege dich für einen neuen Punkt und steh still, während du ihn sagst.",
+      "Geh langsam und beende den Gedanken, bevor du den nächsten Schritt machst.",
+      "Dauerndes Laufen oder Wiegen lenkt ab; Ruhe zeigt Gelassenheit."
+     ],
+     "q": "Läufst du beim Sprechen herum, wiegst du dich oder erstarrst du?",
+     "c": "Übe eine Minute: Mach bei jedem neuen Punkt einen Schritt und bleib dort kurz stehen."
+    },
+    "es": {
+     "t": "Moverte con intención",
+     "g": "Aprende cuándo caminar, cuándo quedarte quieto y cómo evitar el vaivén nervioso.",
+     "p": [
+      "Muévete para marcar un punto nuevo y quédate quieto mientras lo dices.",
+      "Camina despacio y termina la idea antes del siguiente paso.",
+      "Pasear sin parar o balancearte distrae; la quietud muestra calma."
+     ],
+     "q": "¿Sueles pasear, balancearte o quedarte rígido al hablar?",
+     "c": "Practica un minuto: da un paso en cada punto nuevo y haz una pausa allí."
+    },
+    "fr": {
+     "t": "Bouger avec intention",
+     "g": "Apprends quand marcher, quand rester immobile et comment éviter les va-et-vient nerveux.",
+     "p": [
+      "Bouge pour marquer un nouveau point, puis reste immobile en le disant.",
+      "Marche lentement et termine l'idée avant le pas suivant.",
+      "Faire les cent pas ou se balancer distrait ; l'immobilité montre le calme."
+     ],
+     "q": "As-tu tendance à marcher, te balancer ou rester figé en parlant ?",
+     "c": "Entraîne-toi une minute : un pas à chaque nouveau point, puis une pause sur place."
+    },
+    "it": {
+     "t": "Muoversi con uno scopo",
+     "g": "Impara quando camminare, quando stare fermo e come evitare il passeggiare nervoso.",
+     "p": [
+      "Muoviti per segnare un nuovo punto, poi stai fermo mentre lo dici.",
+      "Cammina piano e finisci il pensiero prima del passo successivo.",
+      "Camminare sempre o dondolare distrae; la fermezza mostra calma."
+     ],
+     "q": "Tendi a camminare, dondolare o restare immobile quando parli?",
+     "c": "Esercitati un minuto: un passo a ogni nuovo punto, poi una pausa lì."
+    },
+    "pt": {
+     "t": "Mover-te com intenção",
+     "g": "Aprende quando andar, quando ficar parado e como evitar o vaivém nervoso.",
+     "p": [
+      "Move-te para marcar um novo ponto e fica parado enquanto o dizes.",
+      "Anda devagar e termina a ideia antes do passo seguinte.",
+      "Andar sem parar ou balançar distrai; a calma mostra serenidade."
+     ],
+     "q": "Costumas andar, balançar ou ficar rígido quando falas?",
+     "c": "Pratica um minuto: dá um passo em cada novo ponto e faz uma pausa aí."
+    },
+    "pt_BR": {
+     "t": "Mover-se com intenção",
+     "g": "Aprenda quando andar, quando ficar parado e como evitar o vaivém nervoso.",
+     "p": [
+      "Mova-se para marcar um novo ponto e fique parado enquanto o diz.",
+      "Ande devagar e termine a ideia antes do próximo passo.",
+      "Andar sem parar ou balançar distrai; a calma mostra serenidade."
+     ],
+     "q": "Você costuma andar, balançar ou ficar rígido quando fala?",
+     "c": "Pratique um minuto: dê um passo em cada novo ponto e faça uma pausa ali."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Facial expression",
+     "g": "Let your face match the feeling of your message.",
+     "p": [
+      "Your face tells listeners how to feel before your words arrive.",
+      "Cheerful news, serious facts and sad moments each deserve a fitting face.",
+      "A neutral, frozen face can look cold even when you are friendly."
+     ],
+     "q": "Which emotion is easiest for your face to show, and which is hardest?",
+     "c": "Say 'That is wonderful news' and 'That is a serious problem' with matching faces."
+    },
+    "de": {
+     "t": "Mimik",
+     "g": "Lass dein Gesicht zum Gefühl deiner Botschaft passen.",
+     "p": [
+      "Dein Gesicht zeigt den Zuhörern, wie sie fühlen sollen, noch vor den Worten.",
+      "Frohe Nachrichten, ernste Fakten und traurige Momente verdienen jeweils eine passende Miene.",
+      "Ein starres Gesicht kann kühl wirken, auch wenn du freundlich bist."
+     ],
+     "q": "Welches Gefühl zeigt dein Gesicht leicht, welches schwer?",
+     "c": "Sag 'Das sind wunderbare Neuigkeiten' und 'Das ist ein ernstes Problem' mit passender Miene."
+    },
+    "es": {
+     "t": "Expresión facial",
+     "g": "Deja que tu cara coincida con el sentimiento de tu mensaje.",
+     "p": [
+      "Tu cara dice al público cómo sentir antes de que lleguen tus palabras.",
+      "Las buenas noticias, los datos serios y los momentos tristes piden su cara.",
+      "Una cara neutra y rígida puede parecer fría aunque seas amable."
+     ],
+     "q": "¿Qué emoción muestra mejor tu cara y cuál le cuesta más?",
+     "c": "Di 'Es una noticia estupenda' y 'Es un problema serio' con la cara adecuada."
+    },
+    "fr": {
+     "t": "L'expression du visage",
+     "g": "Laisse ton visage accompagner le sentiment de ton message.",
+     "p": [
+      "Ton visage dit au public quoi ressentir avant même tes mots.",
+      "Une bonne nouvelle, un fait grave ou un moment triste méritent chacun une mine adaptée.",
+      "Un visage neutre et figé peut paraître froid même si tu es aimable."
+     ],
+     "q": "Quelle émotion ton visage montre-t-il le mieux, et laquelle le moins ?",
+     "c": "Dis « C'est une excellente nouvelle » et « C'est un vrai problème » avec le visage qui va avec."
+    },
+    "it": {
+     "t": "L'espressione del viso",
+     "g": "Fai combaciare il tuo viso con il sentimento del messaggio.",
+     "p": [
+      "Il tuo viso dice al pubblico cosa sentire prima delle parole.",
+      "Buone notizie, fatti seri e momenti tristi meritano ciascuno un'espressione adatta.",
+      "Un viso neutro e rigido può sembrare freddo anche se sei gentile."
+     ],
+     "q": "Quale emozione mostra meglio il tuo viso e quale meno?",
+     "c": "Di' 'È una notizia splendida' e 'È un problema serio' con l'espressione giusta."
+    },
+    "pt": {
+     "t": "Expressão facial",
+     "g": "Deixa o teu rosto combinar com o sentimento da mensagem.",
+     "p": [
+      "O teu rosto diz ao público o que sentir antes de as palavras chegarem.",
+      "Boas notícias, factos sérios e momentos tristes merecem cada um a sua expressão.",
+      "Um rosto neutro e parado pode parecer frio mesmo que sejas simpático."
+     ],
+     "q": "Que emoção o teu rosto mostra melhor e qual lhe custa mais?",
+     "c": "Diz 'É uma notícia ótima' e 'É um problema sério' com a expressão certa."
+    },
+    "pt_BR": {
+     "t": "Expressão facial",
+     "g": "Deixe o seu rosto combinar com o sentimento da mensagem.",
+     "p": [
+      "O seu rosto diz ao público o que sentir antes de as palavras chegarem.",
+      "Boas notícias, fatos sérios e momentos tristes merecem cada um a sua expressão.",
+      "Um rosto neutro e parado pode parecer frio mesmo que você seja simpático."
+     ],
+     "q": "Que emoção o seu rosto mostra melhor e qual custa mais?",
+     "c": "Diga 'É uma notícia ótima' e 'É um problema sério' com a expressão certa."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Recording yourself",
+     "g": "Use your phone to watch and learn from your own practice.",
+     "p": [
+      "Prop your phone at chest height and record a one-minute talk.",
+      "Record once without stopping; do not redo it ten times.",
+      "Watching yourself is the fastest way to notice habits."
+     ],
+     "q": "How do you feel about seeing or hearing yourself on video?",
+     "c": "Record a 60-second talk about your weekend and save it for tomorrow."
+    },
+    "de": {
+     "t": "Dich selbst aufnehmen",
+     "g": "Nutze dein Handy, um dein eigenes Üben zu sehen und daraus zu lernen.",
+     "p": [
+      "Stell das Handy auf Brusthöhe und nimm einen Einminutenvortrag auf.",
+      "Nimm einmal ohne Unterbrechung auf; wiederhole nicht zehnmal.",
+      "Sich selbst zu sehen ist der schnellste Weg, Gewohnheiten zu bemerken."
+     ],
+     "q": "Wie fühlst du dich, wenn du dich auf Video siehst oder hörst?",
+     "c": "Nimm 60 Sekunden über dein Wochenende auf und heb es für morgen auf."
+    },
+    "es": {
+     "t": "Grabarte",
+     "g": "Usa tu móvil para verte y aprender de tu propia práctica.",
+     "p": [
+      "Apoya el móvil a la altura del pecho y graba una charla de un minuto.",
+      "Graba una vez sin parar; no la repitas diez veces.",
+      "Verte es la forma más rápida de notar tus hábitos."
+     ],
+     "q": "¿Cómo te sientes al verte o escucharte en vídeo?",
+     "c": "Graba 60 segundos sobre tu fin de semana y guárdalo para mañana."
+    },
+    "fr": {
+     "t": "T'enregistrer",
+     "g": "Utilise ton téléphone pour te voir et apprendre de ta propre pratique.",
+     "p": [
+      "Cale ton téléphone à hauteur de poitrine et filme une minute de présentation.",
+      "Enregistre une seule fois sans t'arrêter ; ne recommence pas dix fois.",
+      "Se regarder est le moyen le plus rapide de repérer ses habitudes."
+     ],
+     "q": "Que ressens-tu à te voir ou t'entendre en vidéo ?",
+     "c": "Enregistre 60 secondes sur ton week-end et garde-les pour demain."
+    },
+    "it": {
+     "t": "Registrarti",
+     "g": "Usa il telefono per guardarti e imparare dalla tua pratica.",
+     "p": [
+      "Appoggia il telefono all'altezza del petto e registra un minuto di discorso.",
+      "Registra una volta sola senza fermarti; non rifarlo dieci volte.",
+      "Guardarsi è il modo più rapido per notare le abitudini."
+     ],
+     "q": "Come ti senti a vederti o sentirti in video?",
+     "c": "Registra 60 secondi sul tuo weekend e conservali per domani."
+    },
+    "pt": {
+     "t": "Gravares-te",
+     "g": "Usa o telemóvel para te veres e aprenderes com a tua prática.",
+     "p": [
+      "Apoia o telemóvel à altura do peito e grava um minuto de apresentação.",
+      "Grava uma só vez sem parar; não repitas dez vezes.",
+      "Ver-te é a forma mais rápida de notares os teus hábitos."
+     ],
+     "q": "Como te sentes ao ver-te ou ouvir-te em vídeo?",
+     "c": "Grava 60 segundos sobre o teu fim de semana e guarda para amanhã."
+    },
+    "pt_BR": {
+     "t": "Gravar a si mesmo",
+     "g": "Use o celular para se ver e aprender com a sua própria prática.",
+     "p": [
+      "Apoie o celular na altura do peito e grave um minuto de apresentação.",
+      "Grave uma vez só, sem parar; não repita dez vezes.",
+      "Se ver é a forma mais rápida de notar seus hábitos."
+     ],
+     "q": "Como você se sente ao se ver ou se ouvir em vídeo?",
+     "c": "Grave 60 segundos sobre o seu fim de semana e guarde para amanhã."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Watching without judging",
+     "g": "Review recordings kindly and spot one thing to improve.",
+     "p": [
+      "First list three things you did well, however small.",
+      "Then choose just one thing to improve next time.",
+      "Speak to yourself like you would to a friend who is learning."
+     ],
+     "q": "What is one thing you liked in your recording?",
+     "c": "Watch yesterday's video and write down three good things and one goal."
+    },
+    "de": {
+     "t": "Ansehen ohne zu urteilen",
+     "g": "Sieh Aufnahmen freundlich an und finde eine Sache zum Verbessern.",
+     "p": [
+      "Nenne zuerst drei Dinge, die gut waren, egal wie klein.",
+      "Wähle dann nur eine Sache, die du nächstes Mal verbessern willst.",
+      "Sprich mit dir wie mit einem Freund, der gerade lernt."
+     ],
+     "q": "Was hat dir an deiner Aufnahme gefallen?",
+     "c": "Sieh das gestrige Video an und notiere drei gute Dinge und ein Ziel."
+    },
+    "es": {
+     "t": "Mirar sin juzgar",
+     "g": "Revisa tus grabaciones con amabilidad y encuentra una cosa por mejorar.",
+     "p": [
+      "Primero enumera tres cosas que hiciste bien, por pequeñas que sean.",
+      "Luego elige solo una cosa para mejorar la próxima vez.",
+      "Háblate como a un amigo que está aprendiendo."
+     ],
+     "q": "¿Qué te gustó de tu grabación?",
+     "c": "Mira el vídeo de ayer y anota tres cosas buenas y una meta."
+    },
+    "fr": {
+     "t": "Regarder sans juger",
+     "g": "Revois tes enregistrements avec bienveillance et trouve un point à améliorer.",
+     "p": [
+      "Note d'abord trois choses réussies, aussi petites soient-elles.",
+      "Choisis ensuite un seul point à améliorer la prochaine fois.",
+      "Parle-toi comme à un ami qui apprend."
+     ],
+     "q": "Qu'as-tu aimé dans ton enregistrement ?",
+     "c": "Regarde la vidéo d'hier et note trois points positifs et un objectif."
+    },
+    "it": {
+     "t": "Guardare senza giudicare",
+     "g": "Rivedi le registrazioni con gentilezza e trova una cosa da migliorare.",
+     "p": [
+      "Prima elenca tre cose fatte bene, anche piccole.",
+      "Poi scegli una sola cosa da migliorare la prossima volta.",
+      "Parlati come a un amico che sta imparando."
+     ],
+     "q": "Cosa ti è piaciuto della tua registrazione?",
+     "c": "Guarda il video di ieri e annota tre cose buone e un obiettivo."
+    },
+    "pt": {
+     "t": "Ver sem julgar",
+     "g": "Revê as gravações com gentileza e encontra uma coisa a melhorar.",
+     "p": [
+      "Primeiro lista três coisas que fizeste bem, por pequenas que sejam.",
+      "Depois escolhe só uma coisa para melhorar da próxima vez.",
+      "Fala contigo como falarias a um amigo que está a aprender."
+     ],
+     "q": "O que gostaste na tua gravação?",
+     "c": "Vê o vídeo de ontem e anota três coisas boas e uma meta."
+    },
+    "pt_BR": {
+     "t": "Assistir sem julgar",
+     "g": "Reveja as gravações com gentileza e encontre uma coisa a melhorar.",
+     "p": [
+      "Primeiro liste três coisas que você fez bem, por menores que sejam.",
+      "Depois escolha só uma coisa para melhorar da próxima vez.",
+      "Fale consigo como falaria com um amigo que está aprendendo."
+     ],
+     "q": "O que você gostou na sua gravação?",
+     "c": "Assista ao vídeo de ontem e anote três coisas boas e uma meta."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Practising in front of a mirror",
+     "g": "See the pros and limits of mirror practice for body language.",
+     "p": [
+      "A mirror shows posture, gestures and facial expression right away.",
+      "It can also make you self-conscious and distract from your message.",
+      "Use it for short body-language checks, then switch to recording."
+     ],
+     "q": "Have you ever practised a talk in front of a mirror?",
+     "c": "Do a 30-second talk in a mirror and fix one posture or gesture detail."
+    },
+    "de": {
+     "t": "Üben vor dem Spiegel",
+     "g": "Lerne Vor- und Nachteile des Spiegels fürs Üben der Körpersprache.",
+     "p": [
+      "Ein Spiegel zeigt Haltung, Gesten und Mimik sofort.",
+      "Er kann dich aber befangen machen und von der Botschaft ablenken.",
+      "Nutze ihn für kurze Körpersprache-Checks, dann wechsle zur Aufnahme."
+     ],
+     "q": "Hast du je einen Vortrag vor dem Spiegel geübt?",
+     "c": "Halte 30 Sekunden vor dem Spiegel und verbessere ein Detail bei Haltung oder Gestik."
+    },
+    "es": {
+     "t": "Practicar frente al espejo",
+     "g": "Conoce las ventajas y límites del espejo para el lenguaje corporal.",
+     "p": [
+      "Un espejo muestra al instante postura, gestos y expresión.",
+      "También puede cohibirte y distraerte del mensaje.",
+      "Úsalo para revisiones cortas de cuerpo y luego pasa a grabarte."
+     ],
+     "q": "¿Alguna vez has practicado una charla frente al espejo?",
+     "c": "Haz 30 segundos frente al espejo y corrige un detalle de postura o gesto."
+    },
+    "fr": {
+     "t": "T'exercer devant un miroir",
+     "g": "Découvre les atouts et les limites du miroir pour le langage corporel.",
+     "p": [
+      "Un miroir montre tout de suite posture, gestes et expression.",
+      "Il peut aussi te rendre gêné et te distraire du message.",
+      "Utilise-le pour de courts contrôles corporels, puis passe à l'enregistrement."
+     ],
+     "q": "As-tu déjà répété un exposé devant un miroir ?",
+     "c": "Fais 30 secondes devant le miroir et corrige un détail de posture ou de geste."
+    },
+    "it": {
+     "t": "Esercitarsi davanti allo specchio",
+     "g": "Scopri pregi e limiti dello specchio per il linguaggio del corpo.",
+     "p": [
+      "Lo specchio mostra subito postura, gesti ed espressione.",
+      "Può anche renderti insicuro e distrarti dal messaggio.",
+      "Usalo per brevi controlli del corpo, poi passa alla registrazione."
+     ],
+     "q": "Ti sei mai esercitato in un discorso davanti allo specchio?",
+     "c": "Fai 30 secondi allo specchio e correggi un dettaglio di postura o gesto."
+    },
+    "pt": {
+     "t": "Praticar diante do espelho",
+     "g": "Conhece as vantagens e os limites do espelho para a linguagem corporal.",
+     "p": [
+      "O espelho mostra de imediato postura, gestos e expressão.",
+      "Também pode deixar-te inibido e distrair-te da mensagem.",
+      "Usa-o para verificações curtas do corpo e depois passa à gravação."
+     ],
+     "q": "Já alguma vez praticaste uma apresentação diante do espelho?",
+     "c": "Faz 30 segundos diante do espelho e corrige um detalhe de postura ou gesto."
+    },
+    "pt_BR": {
+     "t": "Praticar diante do espelho",
+     "g": "Conheça as vantagens e os limites do espelho para a linguagem corporal.",
+     "p": [
+      "O espelho mostra na hora postura, gestos e expressão.",
+      "Também pode deixar você inibido e distrair da mensagem.",
+      "Use para checagens curtas do corpo e depois passe para a gravação."
+     ],
+     "q": "Você já praticou uma apresentação diante do espelho?",
+     "c": "Faça 30 segundos diante do espelho e corrija um detalhe de postura ou gesto."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Practising with a friend",
+     "g": "Ask a friend to listen and share one helpful tip.",
+     "p": [
+      "Choose a kind friend and tell them what kind of feedback you want.",
+      "Ask for one thing that worked and one thing to try.",
+      "Thank them and apply the tip right away in a second run."
+     ],
+     "q": "Who in your life would be a supportive practice listener?",
+     "c": "Give a one-minute talk to a friend or family member and ask for one tip."
+    },
+    "de": {
+     "t": "Mit einem Freund üben",
+     "g": "Bitte einen Freund zuzuhören und einen hilfreichen Tipp zu geben.",
+     "p": [
+      "Wähle einen freundlichen Menschen und sag, welches Feedback du möchtest.",
+      "Frag nach einer Sache, die gut war, und einer, die du probieren kannst.",
+      "Bedanke dich und setze den Tipp gleich im zweiten Durchgang um."
+     ],
+     "q": "Wer in deinem Umfeld wäre ein unterstützender Zuhörer zum Üben?",
+     "c": "Halte eine Minute lang einen Vortrag vor Freund oder Familie und bitte um einen Tipp."
+    },
+    "es": {
+     "t": "Practicar con un amigo",
+     "g": "Pide a un amigo que escuche y te dé un consejo útil.",
+     "p": [
+      "Elige a un amigo amable y dile qué tipo de opinión quieres.",
+      "Pide una cosa que funcionó y una cosa para probar.",
+      "Dale las gracias y aplica el consejo en una segunda ronda."
+     ],
+     "q": "¿Quién en tu vida sería un buen oyente para practicar?",
+     "c": "Da una charla de un minuto a un amigo o familiar y pide un consejo."
+    },
+    "fr": {
+     "t": "T'entraîner avec un ami",
+     "g": "Demande à un ami d'écouter et de te donner un conseil utile.",
+     "p": [
+      "Choisis un ami bienveillant et dis-lui quel genre d'avis tu veux.",
+      "Demande une chose qui a marché et une chose à essayer.",
+      "Remercie-le et applique le conseil dans un second essai."
+     ],
+     "q": "Qui, dans ton entourage, serait un bon auditeur pour t'entraîner ?",
+     "c": "Fais un exposé d'une minute devant un proche et demande un conseil."
+    },
+    "it": {
+     "t": "Esercitarsi con un amico",
+     "g": "Chiedi a un amico di ascoltare e darti un consiglio utile.",
+     "p": [
+      "Scegli un amico gentile e di' che tipo di feedback vuoi.",
+      "Chiedi una cosa che ha funzionato e una da provare.",
+      "Ringrazia e applica subito il consiglio in un secondo tentativo."
+     ],
+     "q": "Chi nella tua vita sarebbe un buon ascoltatore per esercitarti?",
+     "c": "Fai un discorso di un minuto a un amico o familiare e chiedi un consiglio."
+    },
+    "pt": {
+     "t": "Praticar com um amigo",
+     "g": "Pede a um amigo que ouça e te dê uma dica útil.",
+     "p": [
+      "Escolhe um amigo simpático e diz que tipo de opinião queres.",
+      "Pede uma coisa que funcionou e uma coisa para experimentar.",
+      "Agradece e aplica a dica logo numa segunda tentativa."
+     ],
+     "q": "Quem na tua vida seria um bom ouvinte para praticar?",
+     "c": "Faz uma apresentação de um minuto a um amigo ou familiar e pede uma dica."
+    },
+    "pt_BR": {
+     "t": "Praticar com um amigo",
+     "g": "Peça a um amigo que escute e dê uma dica útil.",
+     "p": [
+      "Escolha um amigo simpático e diga que tipo de opinião você quer.",
+      "Peça uma coisa que funcionou e uma coisa para experimentar.",
+      "Agradeça e aplique a dica logo numa segunda tentativa."
+     ],
+     "q": "Quem na sua vida seria um bom ouvinte para praticar?",
+     "c": "Faça uma apresentação de um minuto para um amigo ou familiar e peça uma dica."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Short self-introductions",
+     "g": "Introduce yourself in thirty seconds with ease and warmth.",
+     "p": [
+      "Use a simple formula: name, what you do, one interesting detail.",
+      "Add a hook about why you are here or what you enjoy.",
+      "Smile, look at people and end with a clear last word."
+     ],
+     "q": "How do you usually introduce yourself to a new group?",
+     "c": "Practise a 30-second self-introduction and say it to someone today."
+    },
+    "de": {
+     "t": "Kurze Selbstvorstellung",
+     "g": "Stell dich in dreißig Sekunden locker und herzlich vor.",
+     "p": [
+      "Nutze eine einfache Formel: Name, Tätigkeit, ein interessantes Detail.",
+      "Füge einen Anknüpfungspunkt hinzu: warum du hier bist oder was du gern machst.",
+      "Lächle, sieh die Leute an und schließe mit einem klaren letzten Wort."
+     ],
+     "q": "Wie stellst du dich meist einer neuen Gruppe vor?",
+     "c": "Übe eine 30-Sekunden-Vorstellung und sag sie heute jemandem."
+    },
+    "es": {
+     "t": "Presentaciones personales breves",
+     "g": "Preséntate en treinta segundos con soltura y calidez.",
+     "p": [
+      "Usa una fórmula sencilla: nombre, a qué te dedicas, un detalle interesante.",
+      "Añade un gancho sobre por qué estás aquí o qué disfrutas.",
+      "Sonríe, mira a la gente y termina con una última palabra clara."
+     ],
+     "q": "¿Cómo sueles presentarte ante un grupo nuevo?",
+     "c": "Practica una presentación de 30 segundos y díselo a alguien hoy."
+    },
+    "fr": {
+     "t": "Brèves présentations de soi",
+     "g": "Présente-toi en trente secondes avec aisance et chaleur.",
+     "p": [
+      "Utilise une formule simple : nom, activité, un détail intéressant.",
+      "Ajoute une accroche sur ta présence ici ou ce que tu aimes.",
+      "Souris, regarde les gens et termine par un dernier mot net."
+     ],
+     "q": "Comment te présentes-tu d'habitude devant un nouveau groupe ?",
+     "c": "Prépare une présentation de 30 secondes et dis-la à quelqu'un aujourd'hui."
+    },
+    "it": {
+     "t": "Brevi presentazioni di sé",
+     "g": "Presentati in trenta secondi con naturalezza e calore.",
+     "p": [
+      "Usa una formula semplice: nome, cosa fai, un dettaglio interessante.",
+      "Aggiungi un aggancio su perché sei qui o cosa ti piace.",
+      "Sorridi, guarda le persone e chiudi con un'ultima parola chiara."
+     ],
+     "q": "Come ti presenti di solito a un gruppo nuovo?",
+     "c": "Prepara una presentazione di 30 secondi e dilla a qualcuno oggi."
+    },
+    "pt": {
+     "t": "Apresentações pessoais curtas",
+     "g": "Apresenta-te em trinta segundos com à-vontade e simpatia.",
+     "p": [
+      "Usa uma fórmula simples: nome, o que fazes, um detalhe interessante.",
+      "Junta um gancho sobre porque estás aqui ou o que gostas de fazer.",
+      "Sorri, olha para as pessoas e termina com uma última palavra clara."
+     ],
+     "q": "Como costumas apresentar-te a um grupo novo?",
+     "c": "Prepara uma apresentação de 30 segundos e di-la a alguém hoje."
+    },
+    "pt_BR": {
+     "t": "Apresentações pessoais curtas",
+     "g": "Apresente-se em trinta segundos com naturalidade e simpatia.",
+     "p": [
+      "Use uma fórmula simples: nome, o que você faz, um detalhe interessante.",
+      "Acrescente um gancho sobre por que está aqui ou o que gosta de fazer.",
+      "Sorria, olhe para as pessoas e termine com uma última palavra clara."
+     ],
+     "q": "Como você costuma se apresentar a um grupo novo?",
+     "c": "Prepare uma apresentação de 30 segundos e diga a alguém hoje."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Telling a short anecdote",
+     "g": "Share a small personal moment in under two minutes.",
+     "p": [
+      "Pick one small moment: a funny mishap, a surprise or a kind act.",
+      "Set the scene quickly, then say what happened and how it ended.",
+      "End with a line about what it meant or what you learned."
+     ],
+     "q": "What small real-life moment always makes people smile when you tell it?",
+     "c": "Tell a 90-second story from your life with a clear start, middle and end."
+    },
+    "de": {
+     "t": "Eine kurze Anekdote erzählen",
+     "g": "Teile einen kleinen persönlichen Moment in unter zwei Minuten.",
+     "p": [
+      "Wähle einen kleinen Moment: ein Missgeschick, eine Überraschung oder eine Freundlichkeit.",
+      "Beschreibe schnell die Szene, dann was geschah und wie es endete.",
+      "Schließe mit einem Satz darüber, was es bedeutete oder was du lerntest."
+     ],
+     "q": "Welche kleine Alltagsgeschichte bringt Leute immer zum Lächeln?",
+     "c": "Erzähle eine 90-Sekunden-Geschichte mit klarem Anfang, Mitte und Schluss."
+    },
+    "es": {
+     "t": "Contar una anécdota breve",
+     "g": "Comparte un pequeño momento personal en menos de dos minutos.",
+     "p": [
+      "Elige un momento pequeño: un percance gracioso, una sorpresa o un gesto amable.",
+      "Sitúa la escena rápido y cuenta qué pasó y cómo terminó.",
+      "Cierra con una frase sobre lo que significó o aprendiste."
+     ],
+     "q": "¿Qué momento real y pequeño hace sonreír siempre a la gente?",
+     "c": "Cuenta una historia de 90 segundos con inicio, desarrollo y final claros."
+    },
+    "fr": {
+     "t": "Raconter une courte anecdote",
+     "g": "Partage un petit moment personnel en moins de deux minutes.",
+     "p": [
+      "Choisis un petit moment : une mésaventure drôle, une surprise ou un geste gentil.",
+      "Plante vite le décor, puis dis ce qui s'est passé et comment ça a fini.",
+      "Termine par une phrase sur ce que ça signifiait ou t'a appris."
+     ],
+     "q": "Quel petit moment de vie fait toujours sourire quand tu le racontes ?",
+     "c": "Raconte une histoire de 90 secondes avec un début, un milieu et une fin clairs."
+    },
+    "it": {
+     "t": "Raccontare un breve aneddoto",
+     "g": "Condividi un piccolo momento personale in meno di due minuti.",
+     "p": [
+      "Scegli un momento piccolo: un imprevisto buffo, una sorpresa o un gesto gentile.",
+      "Descrivi in fretta la scena, poi cosa è successo e come è finita.",
+      "Chiudi con una frase su cosa significava o cosa hai imparato."
+     ],
+     "q": "Quale piccolo momento di vita fa sempre sorridere quando lo racconti?",
+     "c": "Racconta una storia di 90 secondi con inizio, sviluppo e fine chiari."
+    },
+    "pt": {
+     "t": "Contar uma pequena anedota",
+     "g": "Partilha um pequeno momento pessoal em menos de dois minutos.",
+     "p": [
+      "Escolhe um momento pequeno: um percalço engraçado, uma surpresa ou um gesto simpático.",
+      "Situa a cena depressa e conta o que aconteceu e como acabou.",
+      "Fecha com uma frase sobre o que significou ou o que aprendeste."
+     ],
+     "q": "Que pequeno momento real faz sempre as pessoas sorrir quando o contas?",
+     "c": "Conta uma história de 90 segundos com início, meio e fim claros."
+    },
+    "pt_BR": {
+     "t": "Contar uma pequena anedota",
+     "g": "Compartilhe um pequeno momento pessoal em menos de dois minutos.",
+     "p": [
+      "Escolha um momento pequeno: um contratempo engraçado, uma surpresa ou um gesto gentil.",
+      "Situe a cena rápido e conte o que aconteceu e como terminou.",
+      "Feche com uma frase sobre o que significou ou o que você aprendeu."
+     ],
+     "q": "Que pequeno momento real sempre faz as pessoas sorrirem quando você conta?",
+     "c": "Conte uma história de 90 segundos com começo, meio e fim claros."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mini talk: my favourite place",
+     "g": "Give a two-minute talk describing a place you love.",
+     "p": [
+      "Open with the place name and one vivid detail.",
+      "Use the senses: what you see, hear and smell there.",
+      "Close by saying why it matters to you and invite others to visit."
+     ],
+     "q": "What place feels most like home or happiness to you?",
+     "c": "Give a 2-minute talk about your favourite place, ideally recording it."
+    },
+    "de": {
+     "t": "Mini-Vortrag: mein Lieblingsort",
+     "g": "Halte einen Zweiminutenvortrag über einen Ort, den du liebst.",
+     "p": [
+      "Beginne mit dem Ortsnamen und einem lebendigen Detail.",
+      "Nutze die Sinne: was du dort siehst, hörst und riechst.",
+      "Schließe damit, warum er dir wichtig ist, und lade andere ein."
+     ],
+     "q": "Welcher Ort fühlt sich für dich am meisten nach Zuhause oder Glück an?",
+     "c": "Halte zwei Minuten lang einen Vortrag über deinen Lieblingsort, am besten mit Aufnahme."
+    },
+    "es": {
+     "t": "Mini charla: mi lugar favorito",
+     "g": "Da una charla de dos minutos describiendo un lugar que amas.",
+     "p": [
+      "Abre con el nombre del lugar y un detalle vívido.",
+      "Usa los sentidos: qué ves, oyes y hueles allí.",
+      "Cierra diciendo por qué te importa e invita a otros a visitarlo."
+     ],
+     "q": "¿Qué lugar te hace sentir más en casa o más feliz?",
+     "c": "Da una charla de 2 minutos sobre tu lugar favorito, a ser posible grabada."
+    },
+    "fr": {
+     "t": "Mini exposé : mon lieu préféré",
+     "g": "Fais un exposé de deux minutes pour décrire un lieu que tu aimes.",
+     "p": [
+      "Ouvre avec le nom du lieu et un détail vivant.",
+      "Utilise les sens : ce que tu y vois, entends et sens.",
+      "Termine en disant pourquoi il compte et invite les autres à y aller."
+     ],
+     "q": "Quel lieu te donne le plus l'impression d'être chez toi ou heureux ?",
+     "c": "Fais un exposé de 2 minutes sur ton lieu préféré, si possible enregistré."
+    },
+    "it": {
+     "t": "Mini discorso: il mio posto preferito",
+     "g": "Fai un discorso di due minuti per descrivere un luogo che ami.",
+     "p": [
+      "Apri con il nome del luogo e un dettaglio vivido.",
+      "Usa i sensi: cosa vedi, senti e annusi lì.",
+      "Chiudi dicendo perché conta per te e invita gli altri a visitarlo."
+     ],
+     "q": "Quale luogo ti fa sentire più a casa o felice?",
+     "c": "Fai un discorso di 2 minuti sul tuo luogo preferito, meglio se registrato."
+    },
+    "pt": {
+     "t": "Mini apresentação: o meu lugar favorito",
+     "g": "Faz uma apresentação de dois minutos a descrever um lugar que adoras.",
+     "p": [
+      "Abre com o nome do lugar e um detalhe vivo.",
+      "Usa os sentidos: o que vês, ouves e cheiras lá.",
+      "Fecha a dizer porque é importante para ti e convida os outros a visitar."
+     ],
+     "q": "Que lugar te faz sentir mais em casa ou mais feliz?",
+     "c": "Faz uma apresentação de 2 minutos sobre o teu lugar favorito, de preferência gravada."
+    },
+    "pt_BR": {
+     "t": "Mini apresentação: meu lugar favorito",
+     "g": "Faça uma apresentação de dois minutos descrevendo um lugar que você ama.",
+     "p": [
+      "Abra com o nome do lugar e um detalhe vivo.",
+      "Use os sentidos: o que você vê, ouve e cheira lá.",
+      "Feche dizendo por que importa para você e convide os outros a visitar."
+     ],
+     "q": "Que lugar faz você se sentir mais em casa ou mais feliz?",
+     "c": "Faça uma apresentação de 2 minutos sobre o seu lugar favorito, de preferência gravada."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: first month",
+     "g": "Look back at nerves, voice and body language basics.",
+     "p": [
+      "Recap: nerves are normal, breathing and grounding calm the body.",
+      "Recap: pace, pauses, volume and clear words shape your voice.",
+      "Recap: eyes, hands, posture and a smile make you look at ease."
+     ],
+     "q": "Which skill from this month helped you most so far?",
+     "c": "Pick your best tip from the month and use it in a talk today."
+    },
+    "de": {
+     "t": "Rückblick: erster Monat",
+     "g": "Blick zurück auf Nervosität, Stimme und Körpersprache.",
+     "p": [
+      "Rückblick: Nervosität ist normal, Atmen und Erden beruhigen den Körper.",
+      "Rückblick: Tempo, Pausen, Lautstärke und klare Worte formen deine Stimme.",
+      "Rückblick: Augen, Hände, Haltung und Lächeln wirken entspannt."
+     ],
+     "q": "Welche Fähigkeit dieses Monats hat dir bisher am meisten geholfen?",
+     "c": "Wähle deinen besten Tipp des Monats und nutze ihn heute beim Sprechen."
+    },
+    "es": {
+     "t": "Repaso: primer mes",
+     "g": "Mira atrás los nervios, la voz y el lenguaje corporal básico.",
+     "p": [
+      "Repaso: los nervios son normales; respirar y afianzarte calma el cuerpo.",
+      "Repaso: ritmo, pausas, volumen y palabras claras dan forma a tu voz.",
+      "Repaso: ojos, manos, postura y sonrisa te hacen ver relajado."
+     ],
+     "q": "¿Qué habilidad de este mes te ha ayudado más hasta ahora?",
+     "c": "Elige tu mejor consejo del mes y úsalo hoy al hablar."
+    },
+    "fr": {
+     "t": "Bilan : premier mois",
+     "g": "Reviens sur le trac, la voix et les bases du langage corporel.",
+     "p": [
+      "Bilan : le trac est normal ; respirer et s'ancrer calme le corps.",
+      "Bilan : rythme, pauses, volume et mots clairs façonnent ta voix.",
+      "Bilan : regard, mains, posture et sourire donnent de l'aisance."
+     ],
+     "q": "Quelle compétence de ce mois t'a le plus aidé jusqu'ici ?",
+     "c": "Choisis ton meilleur conseil du mois et utilise-le aujourd'hui en parlant."
+    },
+    "it": {
+     "t": "Ripasso: primo mese",
+     "g": "Rivedi agitazione, voce e basi del linguaggio del corpo.",
+     "p": [
+      "Ripasso: l'agitazione è normale; respirare e radicarsi calma il corpo.",
+      "Ripasso: ritmo, pause, volume e parole chiare danno forma alla voce.",
+      "Ripasso: occhi, mani, postura e sorriso ti fanno apparire a tuo agio."
+     ],
+     "q": "Quale abilità di questo mese ti ha aiutato di più finora?",
+     "c": "Scegli il tuo consiglio migliore del mese e usalo oggi mentre parli."
+    },
+    "pt": {
+     "t": "Revisão: primeiro mês",
+     "g": "Revê o nervosismo, a voz e as noções básicas de linguagem corporal.",
+     "p": [
+      "Revisão: o nervosismo é normal; respirar e firmar o corpo acalma.",
+      "Revisão: ritmo, pausas, volume e palavras claras moldam a voz.",
+      "Revisão: olhar, mãos, postura e sorriso dão à-vontade."
+     ],
+     "q": "Que competência deste mês te ajudou mais até agora?",
+     "c": "Escolhe a tua melhor dica do mês e usa-a hoje ao falar."
+    },
+    "pt_BR": {
+     "t": "Revisão: primeiro mês",
+     "g": "Reveja o nervosismo, a voz e as noções básicas de linguagem corporal.",
+     "p": [
+      "Revisão: o nervosismo é normal; respirar e firmar o corpo acalma.",
+      "Revisão: ritmo, pausas, volume e palavras claras moldam a voz.",
+      "Revisão: olhar, mãos, postura e sorriso dão naturalidade."
+     ],
+     "q": "Que habilidade deste mês mais ajudou você até agora?",
+     "c": "Escolha a sua melhor dica do mês e use-a hoje ao falar."
+    }
+   }
+  }
+ ]
+}

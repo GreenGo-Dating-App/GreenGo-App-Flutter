@@ -1,0 +1,835 @@
+{
+ "topic": "studying",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why we take notes",
+     "g": "See how note-taking helps understanding when you process ideas instead of copying.",
+     "p": [
+      "Notes help twice: while you write them, and when you review them later.",
+      "Copying word for word is weak, while choosing what matters makes you think.",
+      "Good notes are short, clear and written so that future you can understand them."
+     ],
+     "q": "How do you usually take notes in class or when reading?",
+     "c": "Take notes on one short video or page, writing only the key ideas."
+    },
+    "de": {
+     "t": "Warum wir Notizen machen",
+     "g": "Du siehst, wie Mitschreiben das Verstehen fördert, wenn du Ideen verarbeitest statt abzuschreiben.",
+     "p": [
+      "Notizen helfen doppelt: beim Schreiben und beim späteren Wiederholen.",
+      "Wörtliches Abschreiben ist schwach, das Auswählen des Wichtigen lässt dich denken.",
+      "Gute Notizen sind kurz, klar und so geschrieben, dass dein späteres Ich sie versteht."
+     ],
+     "q": "Wie machst du normalerweise Notizen im Unterricht oder beim Lesen?",
+     "c": "Mach Notizen zu einem kurzen Video oder einer Seite und schreib nur die Kernideen auf."
+    },
+    "es": {
+     "t": "Por qué tomamos apuntes",
+     "g": "Verás cómo tomar apuntes ayuda a entender cuando procesas ideas en vez de copiar.",
+     "p": [
+      "Los apuntes ayudan dos veces: al escribirlos y al repasarlos después.",
+      "Copiar palabra por palabra es débil; elegir lo importante te hace pensar.",
+      "Unos buenos apuntes son breves, claros y escritos para que tu yo futuro los entienda."
+     ],
+     "q": "¿Cómo sueles tomar apuntes en clase o al leer?",
+     "c": "Toma apuntes de un vídeo o página corta y escribe solo las ideas clave."
+    },
+    "fr": {
+     "t": "Pourquoi prendre des notes",
+     "g": "Vois comment la prise de notes aide à comprendre quand tu traites les idées au lieu de copier.",
+     "p": [
+      "Les notes aident deux fois : quand tu les écris et quand tu les relis plus tard.",
+      "Copier mot à mot est faible, alors que choisir l'essentiel te fait réfléchir.",
+      "De bonnes notes sont courtes, claires et écrites pour que ton futur toi les comprenne."
+     ],
+     "q": "Comment prends-tu d'habitude des notes en cours ou en lisant ?",
+     "c": "Prends des notes sur une courte vidéo ou une page, en n'écrivant que les idées clés."
+    },
+    "it": {
+     "t": "Perché prendiamo appunti",
+     "g": "Scopri come prendere appunti aiuta a capire quando elabori le idee invece di copiare.",
+     "p": [
+      "Gli appunti aiutano due volte: mentre li scrivi e quando li ripassi dopo.",
+      "Copiare parola per parola è debole, scegliere ciò che conta ti fa pensare.",
+      "Buoni appunti sono brevi, chiari e scritti perché il te futuro li capisca."
+     ],
+     "q": "Come prendi di solito appunti a lezione o leggendo?",
+     "c": "Prendi appunti su un breve video o una pagina, scrivendo solo le idee chiave."
+    },
+    "pt": {
+     "t": "Porque tomamos apontamentos",
+     "g": "Vê como tomar apontamentos ajuda a perceber quando processas as ideias em vez de copiar.",
+     "p": [
+      "Os apontamentos ajudam duas vezes: quando os escreves e quando os revês depois.",
+      "Copiar palavra por palavra é fraco; escolher o que importa faz-te pensar.",
+      "Bons apontamentos são curtos, claros e escritos para o teu eu futuro os entender."
+     ],
+     "q": "Como costumas tomar apontamentos nas aulas ou ao ler?",
+     "c": "Toma apontamentos de um vídeo ou página curta e escreve só as ideias-chave."
+    },
+    "pt_BR": {
+     "t": "Por que fazemos anotações",
+     "g": "Veja como anotar ajuda a entender quando você processa as ideias em vez de copiar.",
+     "p": [
+      "As anotações ajudam duas vezes: quando você escreve e quando revisa depois.",
+      "Copiar palavra por palavra é fraco; escolher o que importa faz você pensar.",
+      "Boas anotações são curtas, claras e escritas para o seu eu futuro entender."
+     ],
+     "q": "Como você costuma anotar nas aulas ou ao ler?",
+     "c": "Anote um vídeo ou página curta, escrevendo só as ideias-chave."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Notes in your own words",
+     "g": "Paraphrase what you hear or read so you understand it rather than just record it.",
+     "p": [
+      "If you cannot say it in your own words, you probably do not understand it yet.",
+      "Listen or read a small part, pause, then write it as you would tell a friend.",
+      "Keep the exact wording only for formulas, definitions and quotations."
+     ],
+     "q": "Which idea from your studies could you explain to a friend right now?",
+     "c": "Read one paragraph, cover it, and write its meaning in your own words."
+    },
+    "de": {
+     "t": "Notizen in eigenen Worten",
+     "g": "Umschreibe, was du hörst oder liest, damit du es verstehst statt nur festzuhalten.",
+     "p": [
+      "Wenn du es nicht mit eigenen Worten sagen kannst, hast du es wohl noch nicht verstanden.",
+      "Höre oder lies einen kleinen Teil, halte an und schreib es so, wie du es einem Freund erzählen würdest.",
+      "Behalte den genauen Wortlaut nur für Formeln, Definitionen und Zitate."
+     ],
+     "q": "Welche Idee aus deinem Fach könntest du jetzt einem Freund erklären?",
+     "c": "Lies einen Absatz, deck ihn ab und schreib seine Bedeutung in eigenen Worten."
+    },
+    "es": {
+     "t": "Apuntes con tus propias palabras",
+     "g": "Parafrasea lo que oyes o lees para entenderlo y no solo registrarlo.",
+     "p": [
+      "Si no puedes decirlo con tus palabras, probablemente aún no lo entiendes.",
+      "Escucha o lee una parte pequeña, pausa y escríbela como se lo contarías a un amigo.",
+      "Conserva la redacción exacta solo para fórmulas, definiciones y citas."
+     ],
+     "q": "¿Qué idea de tus estudios podrías explicar ahora a un amigo?",
+     "c": "Lee un párrafo, tápalo y escribe su significado con tus propias palabras."
+    },
+    "fr": {
+     "t": "Des notes avec tes propres mots",
+     "g": "Reformule ce que tu entends ou lis pour le comprendre et pas seulement l'enregistrer.",
+     "p": [
+      "Si tu ne peux pas le dire avec tes mots, tu ne l'as sans doute pas encore compris.",
+      "Écoute ou lis un petit passage, fais une pause, puis écris-le comme tu le dirais à un ami.",
+      "Garde la formulation exacte seulement pour les formules, définitions et citations."
+     ],
+     "q": "Quelle idée de tes études pourrais-tu expliquer à un ami maintenant ?",
+     "c": "Lis un paragraphe, cache-le et écris son sens avec tes propres mots."
+    },
+    "it": {
+     "t": "Appunti con parole tue",
+     "g": "Riformula ciò che ascolti o leggi per capirlo e non solo registrarlo.",
+     "p": [
+      "Se non riesci a dirlo con parole tue, probabilmente non l'hai ancora capito.",
+      "Ascolta o leggi una piccola parte, fai una pausa e scrivila come la racconteresti a un amico.",
+      "Tieni la formulazione esatta solo per formule, definizioni e citazioni."
+     ],
+     "q": "Quale idea dei tuoi studi potresti spiegare ora a un amico?",
+     "c": "Leggi un paragrafo, coprilo e scrivi il suo significato con parole tue."
+    },
+    "pt": {
+     "t": "Apontamentos com as tuas palavras",
+     "g": "Reformula o que ouves ou lês para o perceberes e não apenas registares.",
+     "p": [
+      "Se não consegues dizê-lo com as tuas palavras, provavelmente ainda não o percebeste.",
+      "Ouve ou lê uma parte pequena, faz uma pausa e escreve-a como a contarias a um amigo.",
+      "Guarda a formulação exata só para fórmulas, definições e citações."
+     ],
+     "q": "Que ideia dos teus estudos poderias explicar agora a um amigo?",
+     "c": "Lê um parágrafo, tapa-o e escreve o seu significado com as tuas palavras."
+    },
+    "pt_BR": {
+     "t": "Anotações com suas palavras",
+     "g": "Reformule o que você ouve ou lê para entender e não apenas registrar.",
+     "p": [
+      "Se você não consegue dizer com suas palavras, provavelmente ainda não entendeu.",
+      "Ouça ou leia uma parte pequena, pause e escreva como contaria a um amigo.",
+      "Guarde a redação exata só para fórmulas, definições e citações."
+     ],
+     "q": "Que ideia dos seus estudos você poderia explicar agora a um amigo?",
+     "c": "Leia um parágrafo, cubra e escreva o significado com suas palavras."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Cornell method",
+     "g": "Split the page into notes, cues and summary to make review built in.",
+     "p": [
+      "Draw a narrow left column for cues, a wide right one for notes and a bottom strip for a summary.",
+      "Take notes on the right, then add keywords or questions in the left column afterwards.",
+      "Cover the notes and use the cues to quiz yourself: that is review built in."
+     ],
+     "q": "Does a page layout like this sound useful for your classes?",
+     "c": "Set up one Cornell page, take notes, then write cue questions and a two-line summary."
+    },
+    "de": {
+     "t": "Die Cornell-Methode",
+     "g": "Teile die Seite in Notizen, Stichworte und Zusammenfassung, damit Wiederholung eingebaut ist.",
+     "p": [
+      "Zeichne links eine schmale Spalte für Stichworte, rechts eine breite für Notizen und unten einen Streifen für die Zusammenfassung.",
+      "Notiere rechts, ergänze danach links Schlüsselwörter oder Fragen.",
+      "Deck die Notizen ab und teste dich mit den Stichworten: Das ist eingebaute Wiederholung."
+     ],
+     "q": "Klingt so ein Seitenlayout für deinen Unterricht nützlich?",
+     "c": "Richte eine Cornell-Seite ein, notiere, und schreib dann Fragen und zwei Zeilen Zusammenfassung."
+    },
+    "es": {
+     "t": "El método Cornell",
+     "g": "Divide la página en apuntes, pistas y resumen para que el repaso quede incluido.",
+     "p": [
+      "Dibuja una columna estrecha a la izquierda para pistas, una ancha a la derecha para apuntes y una franja abajo para el resumen.",
+      "Toma apuntes a la derecha y luego añade palabras clave o preguntas a la izquierda.",
+      "Tapa los apuntes y usa las pistas para autoevaluarte: ese es el repaso incluido."
+     ],
+     "q": "¿Te parece útil una página con este formato para tus clases?",
+     "c": "Prepara una página Cornell, toma apuntes y escribe preguntas clave y un resumen de dos líneas."
+    },
+    "fr": {
+     "t": "La méthode Cornell",
+     "g": "Divise la page en notes, indices et résumé pour intégrer la révision.",
+     "p": [
+      "Trace une colonne étroite à gauche pour les indices, une large à droite pour les notes et une bande en bas pour le résumé.",
+      "Prends des notes à droite, puis ajoute mots-clés ou questions à gauche.",
+      "Cache les notes et sers-toi des indices pour t'interroger : c'est la révision intégrée."
+     ],
+     "q": "Une page ainsi organisée te semble-t-elle utile pour tes cours ?",
+     "c": "Prépare une page Cornell, prends des notes, puis écris des questions et un résumé de deux lignes."
+    },
+    "it": {
+     "t": "Il metodo Cornell",
+     "g": "Dividi la pagina in appunti, indizi e riassunto per avere il ripasso incorporato.",
+     "p": [
+      "Disegna una colonna stretta a sinistra per gli indizi, una larga a destra per gli appunti e una striscia in basso per il riassunto.",
+      "Prendi appunti a destra, poi aggiungi parole chiave o domande a sinistra.",
+      "Copri gli appunti e usa gli indizi per interrogarti: è il ripasso incorporato."
+     ],
+     "q": "Ti sembra utile una pagina organizzata così per le tue lezioni?",
+     "c": "Prepara una pagina Cornell, prendi appunti, poi scrivi domande-indizio e un riassunto di due righe."
+    },
+    "pt": {
+     "t": "O método Cornell",
+     "g": "Divide a página em apontamentos, pistas e resumo para a revisão ficar incluída.",
+     "p": [
+      "Desenha uma coluna estreita à esquerda para pistas, uma larga à direita para apontamentos e uma faixa em baixo para o resumo.",
+      "Toma apontamentos à direita e depois junta palavras-chave ou perguntas à esquerda.",
+      "Tapa os apontamentos e usa as pistas para te testares: é a revisão incluída."
+     ],
+     "q": "Achas útil uma página com este formato para as tuas aulas?",
+     "c": "Prepara uma página Cornell, toma apontamentos e escreve perguntas-pista e um resumo de duas linhas."
+    },
+    "pt_BR": {
+     "t": "O método Cornell",
+     "g": "Divida a página em anotações, pistas e resumo para a revisão já vir incluída.",
+     "p": [
+      "Desenhe uma coluna estreita à esquerda para pistas, uma larga à direita para anotações e uma faixa embaixo para o resumo.",
+      "Anote à direita e depois acrescente palavras-chave ou perguntas à esquerda.",
+      "Cubra as anotações e use as pistas para se testar: é a revisão incluída."
+     ],
+     "q": "Uma página com esse formato parece útil para as suas aulas?",
+     "c": "Monte uma página Cornell, anote e escreva perguntas-pista e um resumo de duas linhas."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Outline notes",
+     "g": "Use headings and indents to show how ideas relate in a clear structure.",
+     "p": [
+      "An outline puts main ideas at the left and details indented beneath them.",
+      "Numbers or dashes help you see order, while indentation shows what belongs to what.",
+      "Outlines work well when the teacher or book is already well organised."
+     ],
+     "q": "What subject in your studies has a clear structure of headings and subtopics?",
+     "c": "Outline one chapter with three main headings and two details under each."
+    },
+    "de": {
+     "t": "Gliederungsnotizen",
+     "g": "Nutze Überschriften und Einrückungen, um das Verhältnis der Ideen klar zu zeigen.",
+     "p": [
+      "Eine Gliederung setzt Hauptideen links und Details eingerückt darunter.",
+      "Nummern oder Striche zeigen die Reihenfolge, Einrückung zeigt, was wozu gehört.",
+      "Gliederungen eignen sich, wenn Lehrkraft oder Buch schon gut geordnet sind."
+     ],
+     "q": "Welches Fach hat bei dir eine klare Struktur aus Überschriften und Unterthemen?",
+     "c": "Gliedere ein Kapitel mit drei Hauptüberschriften und je zwei Details darunter."
+    },
+    "es": {
+     "t": "Apuntes en esquema",
+     "g": "Usa títulos y sangrías para mostrar con claridad cómo se relacionan las ideas.",
+     "p": [
+      "Un esquema pone las ideas principales a la izquierda y los detalles sangrados debajo.",
+      "Números o guiones muestran el orden y la sangría muestra qué pertenece a qué.",
+      "Los esquemas funcionan bien cuando el profesor o el libro ya está bien organizado."
+     ],
+     "q": "¿Qué materia tuya tiene una estructura clara de títulos y subtemas?",
+     "c": "Esquematiza un capítulo con tres títulos principales y dos detalles bajo cada uno."
+    },
+    "fr": {
+     "t": "Les notes en plan",
+     "g": "Utilise titres et retraits pour montrer clairement comment les idées se relient.",
+     "p": [
+      "Un plan met les idées principales à gauche et les détails en retrait dessous.",
+      "Chiffres ou tirets montrent l'ordre, le retrait montre ce qui appartient à quoi.",
+      "Les plans marchent bien quand l'enseignant ou le livre est déjà bien organisé."
+     ],
+     "q": "Quelle matière a une structure claire de titres et de sous-thèmes ?",
+     "c": "Fais le plan d'un chapitre avec trois titres principaux et deux détails sous chacun."
+    },
+    "it": {
+     "t": "Appunti a scaletta",
+     "g": "Usa titoli e rientri per mostrare chiaramente come si collegano le idee.",
+     "p": [
+      "Una scaletta mette le idee principali a sinistra e i dettagli rientrati sotto.",
+      "Numeri o trattini mostrano l'ordine, il rientro mostra cosa appartiene a cosa.",
+      "Le scalette funzionano bene quando docente o libro sono già ben organizzati."
+     ],
+     "q": "Quale tua materia ha una struttura chiara di titoli e sottotemi?",
+     "c": "Fai la scaletta di un capitolo con tre titoli principali e due dettagli sotto ciascuno."
+    },
+    "pt": {
+     "t": "Apontamentos em tópicos",
+     "g": "Usa títulos e avanços para mostrar com clareza como as ideias se relacionam.",
+     "p": [
+      "Um esquema põe as ideias principais à esquerda e os detalhes com avanço por baixo.",
+      "Números ou traços mostram a ordem, o avanço mostra o que pertence a quê.",
+      "Os esquemas funcionam bem quando o professor ou o livro já está bem organizado."
+     ],
+     "q": "Que disciplina tua tem uma estrutura clara de títulos e subtemas?",
+     "c": "Faz o esquema de um capítulo com três títulos principais e dois detalhes sob cada um."
+    },
+    "pt_BR": {
+     "t": "Anotações em tópicos",
+     "g": "Use títulos e recuos para mostrar com clareza como as ideias se relacionam.",
+     "p": [
+      "Um esquema põe as ideias principais à esquerda e os detalhes recuados embaixo.",
+      "Números ou traços mostram a ordem, o recuo mostra o que pertence a quê.",
+      "Esquemas funcionam bem quando o professor ou o livro já está bem organizado."
+     ],
+     "q": "Que matéria sua tem uma estrutura clara de títulos e subtemas?",
+     "c": "Faça o esquema de um capítulo com três títulos principais e dois detalhes sob cada um."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mind maps",
+     "g": "Draw a central idea with branches to see connections and the big picture.",
+     "p": [
+      "Put the main topic in the centre and draw a branch for each main idea.",
+      "Use single keywords, colours and small symbols instead of full sentences.",
+      "Mind maps shine for brainstorming, planning essays and reviewing a whole topic."
+     ],
+     "q": "What topic could you map out right now from memory?",
+     "c": "Draw a mind map of a topic from memory, then check your notes for gaps."
+    },
+    "de": {
+     "t": "Mindmaps",
+     "g": "Zeichne eine zentrale Idee mit Ästen, um Zusammenhänge und das große Ganze zu sehen.",
+     "p": [
+      "Setze das Hauptthema in die Mitte und zeichne für jede Hauptidee einen Ast.",
+      "Nutze einzelne Stichwörter, Farben und kleine Symbole statt ganzer Sätze.",
+      "Mindmaps glänzen beim Ideensammeln, Aufsatzplanen und Wiederholen eines ganzen Themas."
+     ],
+     "q": "Welches Thema könntest du jetzt aus dem Gedächtnis als Karte zeichnen?",
+     "c": "Zeichne ein Thema aus dem Gedächtnis als Mindmap und such dann in den Notizen nach Lücken."
+    },
+    "es": {
+     "t": "Mapas mentales",
+     "g": "Dibuja una idea central con ramas para ver las conexiones y el panorama general.",
+     "p": [
+      "Pon el tema principal en el centro y dibuja una rama para cada idea principal.",
+      "Usa palabras clave sueltas, colores y pequeños símbolos en vez de frases completas.",
+      "Los mapas mentales brillan para lluvias de ideas, planear ensayos y repasar un tema entero."
+     ],
+     "q": "¿Qué tema podrías mapear ahora de memoria?",
+     "c": "Dibuja un mapa mental de un tema de memoria y luego busca lagunas en tus apuntes."
+    },
+    "fr": {
+     "t": "Les cartes mentales",
+     "g": "Dessine une idée centrale avec des branches pour voir les liens et la vue d'ensemble.",
+     "p": [
+      "Mets le sujet principal au centre et dessine une branche par idée principale.",
+      "Utilise des mots-clés isolés, des couleurs et de petits symboles plutôt que des phrases.",
+      "Les cartes mentales brillent pour le remue-méninges, planifier une dissertation et réviser un thème entier."
+     ],
+     "q": "Quel sujet pourrais-tu cartographier maintenant de mémoire ?",
+     "c": "Dessine de mémoire une carte mentale d'un sujet, puis cherche les lacunes dans tes notes."
+    },
+    "it": {
+     "t": "Mappe mentali",
+     "g": "Disegna un'idea centrale con dei rami per vedere i collegamenti e il quadro generale.",
+     "p": [
+      "Metti l'argomento principale al centro e disegna un ramo per ogni idea principale.",
+      "Usa singole parole chiave, colori e piccoli simboli invece di frasi intere.",
+      "Le mappe mentali brillano per brainstorming, pianificare temi e ripassare un argomento intero."
+     ],
+     "q": "Quale argomento potresti mappare ora a memoria?",
+     "c": "Disegna a memoria una mappa mentale di un argomento, poi cerca lacune negli appunti."
+    },
+    "pt": {
+     "t": "Mapas mentais",
+     "g": "Desenha uma ideia central com ramos para veres as ligações e o panorama geral.",
+     "p": [
+      "Põe o tema principal ao centro e desenha um ramo para cada ideia principal.",
+      "Usa palavras-chave soltas, cores e pequenos símbolos em vez de frases completas.",
+      "Os mapas mentais brilham em tempestades de ideias, planear textos e rever um tema inteiro."
+     ],
+     "q": "Que tema poderias mapear agora de memória?",
+     "c": "Desenha de memória um mapa mental de um tema e depois procura lacunas nos apontamentos."
+    },
+    "pt_BR": {
+     "t": "Mapas mentais",
+     "g": "Desenhe uma ideia central com ramos para ver as conexões e o panorama geral.",
+     "p": [
+      "Ponha o tema principal no centro e desenhe um ramo para cada ideia principal.",
+      "Use palavras-chave soltas, cores e pequenos símbolos em vez de frases completas.",
+      "Mapas mentais brilham em brainstorming, planejar redações e revisar um tema inteiro."
+     ],
+     "q": "Que tema você poderia mapear agora de memória?",
+     "c": "Desenhe de memória um mapa mental de um tema e depois procure lacunas nas anotações."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Handwriting or typing",
+     "g": "Learn what research suggests about each and how to choose for different situations.",
+     "p": [
+      "Some studies suggest handwriting helps understanding because it forces you to summarise.",
+      "Typing is faster, so it tempts you to copy word for word, which learns less.",
+      "Choose by situation: handwrite for concepts, type for speed or searchable notes."
+     ],
+     "q": "Which do you prefer, and have you compared how well you remember?",
+     "c": "Take notes on one topic by hand and another by keyboard and compare recall tomorrow."
+    },
+    "de": {
+     "t": "Handschrift oder Tippen",
+     "g": "Erfahre, was die Forschung zu beidem nahelegt und wie du je nach Lage wählst.",
+     "p": [
+      "Manche Studien deuten an, dass Handschrift das Verstehen fördert, weil sie zum Zusammenfassen zwingt.",
+      "Tippen ist schneller und verleitet zum wörtlichen Abschreiben, das weniger bringt.",
+      "Wähle nach Lage: handschriftlich für Konzepte, Tippen für Tempo oder durchsuchbare Notizen."
+     ],
+     "q": "Was bevorzugst du, und hast du verglichen, wie gut du dich erinnerst?",
+     "c": "Notiere ein Thema von Hand und ein anderes per Tastatur und vergleiche morgen die Erinnerung."
+    },
+    "es": {
+     "t": "A mano o a teclado",
+     "g": "Aprende qué sugiere la investigación sobre cada uno y cómo elegir según la situación.",
+     "p": [
+      "Algunos estudios sugieren que escribir a mano ayuda a entender porque obliga a resumir.",
+      "Teclear es más rápido y tienta a copiar palabra por palabra, lo que enseña menos.",
+      "Elige según el caso: a mano para conceptos, teclado para rapidez o apuntes con búsqueda."
+     ],
+     "q": "¿Cuál prefieres y has comparado cuánto recuerdas con cada uno?",
+     "c": "Toma apuntes de un tema a mano y de otro con teclado, y compara mañana qué recuerdas."
+    },
+    "fr": {
+     "t": "À la main ou au clavier",
+     "g": "Découvre ce que suggère la recherche sur chacun et comment choisir selon la situation.",
+     "p": [
+      "Certaines études suggèrent que l'écriture manuelle aide à comprendre car elle oblige à résumer.",
+      "Taper est plus rapide et pousse à copier mot à mot, ce qui apprend moins.",
+      "Choisis selon le cas : à la main pour les concepts, au clavier pour la vitesse ou la recherche."
+     ],
+     "q": "Lequel préfères-tu, et as-tu comparé ce que tu retiens avec chacun ?",
+     "c": "Prends un sujet en notes manuscrites et un autre au clavier, et compare ta mémoire demain."
+    },
+    "it": {
+     "t": "A mano o a tastiera",
+     "g": "Scopri cosa suggerisce la ricerca su ciascuno e come scegliere secondo la situazione.",
+     "p": [
+      "Alcuni studi suggeriscono che scrivere a mano aiuti a capire perché costringe a riassumere.",
+      "Digitare è più veloce e spinge a copiare parola per parola, il che insegna meno.",
+      "Scegli secondo il caso: a mano per i concetti, tastiera per velocità o appunti ricercabili."
+     ],
+     "q": "Quale preferisci e hai confrontato quanto ricordi con ciascuno?",
+     "c": "Prendi appunti di un argomento a mano e di un altro a tastiera e confronta domani il ricordo."
+    },
+    "pt": {
+     "t": "À mão ou no teclado",
+     "g": "Descobre o que a investigação sugere sobre cada um e como escolher conforme a situação.",
+     "p": [
+      "Alguns estudos sugerem que escrever à mão ajuda a perceber porque obriga a resumir.",
+      "Escrever no teclado é mais rápido e tenta a copiar palavra por palavra, o que ensina menos.",
+      "Escolhe conforme o caso: à mão para conceitos, teclado para rapidez ou apontamentos pesquisáveis."
+     ],
+     "q": "Qual preferes e já comparaste o quanto recordas com cada um?",
+     "c": "Toma apontamentos de um tema à mão e de outro no teclado e compara amanhã a memória."
+    },
+    "pt_BR": {
+     "t": "À mão ou no teclado",
+     "g": "Descubra o que a pesquisa sugere sobre cada um e como escolher conforme a situação.",
+     "p": [
+      "Alguns estudos sugerem que escrever à mão ajuda a entender porque obriga a resumir.",
+      "Digitar é mais rápido e tenta a copiar palavra por palavra, o que ensina menos.",
+      "Escolha conforme o caso: à mão para conceitos, teclado para rapidez ou notas pesquisáveis."
+     ],
+     "q": "Qual você prefere e já comparou quanto lembra com cada um?",
+     "c": "Anote um tema à mão e outro no teclado e compare amanhã o que você lembra."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Notes from videos and lectures",
+     "g": "Pause, listen for signposts and catch key points rather than every word.",
+     "p": [
+      "Phrases like 'the main reason' or 'in summary' signal what matters most.",
+      "Pause the video often and write a short note in your own words.",
+      "Leave blank space to fill in gaps later from the slides or a classmate."
+     ],
+     "q": "Do you find it easier to take notes from live classes or from videos?",
+     "c": "Watch five minutes of a lecture and write only the three most important points."
+    },
+    "de": {
+     "t": "Notizen aus Videos und Vorlesungen",
+     "g": "Halte an, achte auf Signalwörter und erfasse Kernpunkte statt jedes Wortes.",
+     "p": [
+      "Wendungen wie 'der Hauptgrund' oder 'zusammengefasst' zeigen, was am wichtigsten ist.",
+      "Pausiere das Video oft und schreib eine kurze Notiz in eigenen Worten.",
+      "Lass Platz für Lücken, die du später aus Folien oder von Mitlernenden füllst."
+     ],
+     "q": "Fällt dir Mitschreiben im Live-Unterricht oder in Videos leichter?",
+     "c": "Sieh fünf Minuten einer Vorlesung und schreib nur die drei wichtigsten Punkte auf."
+    },
+    "es": {
+     "t": "Apuntes de vídeos y clases",
+     "g": "Pausa, escucha las señales y capta los puntos clave en vez de cada palabra.",
+     "p": [
+      "Frases como 'la razón principal' o 'en resumen' indican lo más importante.",
+      "Pausa el vídeo a menudo y escribe una nota corta con tus palabras.",
+      "Deja espacio en blanco para completar huecos luego con las diapositivas o un compañero."
+     ],
+     "q": "¿Te resulta más fácil tomar apuntes en clase en vivo o en vídeos?",
+     "c": "Mira cinco minutos de una clase y escribe solo los tres puntos más importantes."
+    },
+    "fr": {
+     "t": "Notes de vidéos et de cours",
+     "g": "Fais des pauses, repère les indices et capte les points clés plutôt que chaque mot.",
+     "p": [
+      "Des phrases comme 'la raison principale' ou 'en résumé' signalent l'essentiel.",
+      "Mets souvent la vidéo en pause et écris une courte note avec tes mots.",
+      "Laisse des blancs pour combler les trous plus tard avec les diapositives ou un camarade."
+     ],
+     "q": "Trouves-tu plus facile de prendre des notes en cours en direct ou en vidéo ?",
+     "c": "Regarde cinq minutes d'un cours et écris seulement les trois points les plus importants."
+    },
+    "it": {
+     "t": "Appunti da video e lezioni",
+     "g": "Fai pause, ascolta i segnali e cogli i punti chiave invece di ogni parola.",
+     "p": [
+      "Frasi come 'il motivo principale' o 'in sintesi' segnalano ciò che conta di più.",
+      "Metti spesso in pausa il video e scrivi una breve nota con parole tue.",
+      "Lascia spazio bianco per colmare le lacune dopo con le slide o un compagno."
+     ],
+     "q": "Ti è più facile prendere appunti a lezioni dal vivo o da video?",
+     "c": "Guarda cinque minuti di una lezione e scrivi solo i tre punti più importanti."
+    },
+    "pt": {
+     "t": "Apontamentos de vídeos e aulas",
+     "g": "Faz pausas, ouve os sinais e capta os pontos-chave em vez de cada palavra.",
+     "p": [
+      "Frases como 'a razão principal' ou 'em resumo' indicam o que mais importa.",
+      "Pausa o vídeo muitas vezes e escreve uma nota curta com as tuas palavras.",
+      "Deixa espaço em branco para completar lacunas depois com os diapositivos ou um colega."
+     ],
+     "q": "É mais fácil para ti tomar apontamentos em aulas ao vivo ou em vídeos?",
+     "c": "Vê cinco minutos de uma aula e escreve apenas os três pontos mais importantes."
+    },
+    "pt_BR": {
+     "t": "Anotações de vídeos e aulas",
+     "g": "Faça pausas, ouça os sinais e capte os pontos-chave em vez de cada palavra.",
+     "p": [
+      "Frases como 'a razão principal' ou 'em resumo' indicam o que mais importa.",
+      "Pause o vídeo muitas vezes e escreva uma nota curta com suas palavras.",
+      "Deixe espaço em branco para completar lacunas depois com os slides ou um colega."
+     ],
+     "q": "É mais fácil para você anotar em aulas ao vivo ou em vídeos?",
+     "c": "Assista a cinco minutos de uma aula e escreva só os três pontos mais importantes."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Abbreviations and symbols",
+     "g": "Create your own shorthand to write faster without losing meaning.",
+     "p": [
+      "Shorten common words: w/ for with, b/c for because, an arrow for leads to.",
+      "Use a few symbols consistently, like a star for important and a question mark for unclear.",
+      "Write a small key to your shorthand so you can still read it in months."
+     ],
+     "q": "Which words do you write most often in your notes?",
+     "c": "Invent ten abbreviations or symbols, write a key and use them in your next notes."
+    },
+    "de": {
+     "t": "Abkürzungen und Symbole",
+     "g": "Erfinde deine eigene Kurzschrift, um schneller zu schreiben, ohne Sinn zu verlieren.",
+     "p": [
+      "Kürze häufige Wörter ab: z. B., u. a., ein Pfeil für führt zu.",
+      "Nutze wenige Symbole konsequent, etwa einen Stern für wichtig und ein Fragezeichen für unklar.",
+      "Schreib einen kleinen Schlüssel zu deiner Kurzschrift, damit du sie noch in Monaten liest."
+     ],
+     "q": "Welche Wörter schreibst du in Notizen am häufigsten?",
+     "c": "Erfinde zehn Abkürzungen oder Symbole, schreib einen Schlüssel und nutze sie in deinen nächsten Notizen."
+    },
+    "es": {
+     "t": "Abreviaturas y símbolos",
+     "g": "Crea tu propia taquigrafía para escribir más rápido sin perder el sentido.",
+     "p": [
+      "Acorta palabras comunes: q para que, xq para porque, una flecha para lleva a.",
+      "Usa pocos símbolos con constancia, como una estrella para importante y un signo de interrogación para dudoso.",
+      "Escribe una pequeña clave de tu taquigrafía para poder leerla dentro de meses."
+     ],
+     "q": "¿Qué palabras escribes más a menudo en tus apuntes?",
+     "c": "Inventa diez abreviaturas o símbolos, escribe una clave y úsalos en tus próximos apuntes."
+    },
+    "fr": {
+     "t": "Abréviations et symboles",
+     "g": "Crée ta propre sténo pour écrire plus vite sans perdre le sens.",
+     "p": [
+      "Abrège les mots courants : qqch pour quelque chose, pcq pour parce que, une flèche pour mène à.",
+      "Utilise quelques symboles avec constance, comme une étoile pour important et un point d'interrogation pour flou.",
+      "Écris une petite légende de ta sténo pour pouvoir la relire dans des mois."
+     ],
+     "q": "Quels mots écris-tu le plus souvent dans tes notes ?",
+     "c": "Invente dix abréviations ou symboles, écris une légende et utilise-les dans tes prochaines notes."
+    },
+    "it": {
+     "t": "Abbreviazioni e simboli",
+     "g": "Crea la tua stenografia per scrivere più veloce senza perdere il senso.",
+     "p": [
+      "Abbrevia le parole comuni: xché per perché, cmq per comunque, una freccia per porta a.",
+      "Usa pochi simboli con coerenza, come una stella per importante e un punto interrogativo per poco chiaro.",
+      "Scrivi una piccola legenda della tua stenografia per poterla leggere anche tra mesi."
+     ],
+     "q": "Quali parole scrivi più spesso nei tuoi appunti?",
+     "c": "Inventa dieci abbreviazioni o simboli, scrivi una legenda e usali nei prossimi appunti."
+    },
+    "pt": {
+     "t": "Abreviaturas e símbolos",
+     "g": "Cria a tua própria taquigrafia para escreveres mais depressa sem perder o sentido.",
+     "p": [
+      "Encurta palavras comuns: q para que, pq para porque, uma seta para leva a.",
+      "Usa poucos símbolos com consistência, como uma estrela para importante e um ponto de interrogação para duvidoso.",
+      "Escreve uma pequena legenda da tua taquigrafia para a conseguires ler daqui a meses."
+     ],
+     "q": "Que palavras escreves mais vezes nos teus apontamentos?",
+     "c": "Inventa dez abreviaturas ou símbolos, escreve uma legenda e usa-os nos próximos apontamentos."
+    },
+    "pt_BR": {
+     "t": "Abreviaturas e símbolos",
+     "g": "Crie sua própria taquigrafia para escrever mais rápido sem perder o sentido.",
+     "p": [
+      "Encurte palavras comuns: q para que, pq para porque, uma seta para leva a.",
+      "Use poucos símbolos com consistência, como uma estrela para importante e um ponto de interrogação para duvidoso.",
+      "Escreva uma pequena legenda da sua taquigrafia para conseguir ler daqui a meses."
+     ],
+     "q": "Que palavras você mais escreve nas suas anotações?",
+     "c": "Invente dez abreviaturas ou símbolos, escreva uma legenda e use nas próximas anotações."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reviewing notes within a day",
+     "g": "A quick review soon after class locks in much more than a long review later.",
+     "p": [
+      "Reading your notes within 24 hours slows forgetting dramatically.",
+      "Spend ten minutes: fix unclear parts, add missing words and write a summary.",
+      "Quiz yourself on the key points before moving on to the next task."
+     ],
+     "q": "When do you usually look at your notes again after a class?",
+     "c": "Review today's notes in ten minutes, highlight one unclear point and fix it."
+    },
+    "de": {
+     "t": "Notizen binnen eines Tages wiederholen",
+     "g": "Eine kurze Wiederholung bald nach dem Unterricht festigt viel mehr als eine lange später.",
+     "p": [
+      "Das Lesen deiner Notizen binnen 24 Stunden bremst das Vergessen deutlich.",
+      "Nimm dir zehn Minuten: Unklares klären, Fehlendes ergänzen, eine Zusammenfassung schreiben.",
+      "Teste dich zu den Kernpunkten, bevor du zur nächsten Aufgabe gehst."
+     ],
+     "q": "Wann schaust du nach dem Unterricht normalerweise wieder in deine Notizen?",
+     "c": "Wiederhole heute deine Notizen in zehn Minuten, markiere einen unklaren Punkt und kläre ihn."
+    },
+    "es": {
+     "t": "Repasar los apuntes en un día",
+     "g": "Un repaso rápido poco después de clase fija mucho más que uno largo más tarde.",
+     "p": [
+      "Leer tus apuntes en 24 horas frena mucho el olvido.",
+      "Dedica diez minutos: aclara partes confusas, añade lo que falta y escribe un resumen.",
+      "Hazte preguntas sobre los puntos clave antes de pasar a la siguiente tarea."
+     ],
+     "q": "¿Cuándo sueles volver a mirar tus apuntes después de una clase?",
+     "c": "Repasa hoy tus apuntes en diez minutos, marca un punto confuso y aclara."
+    },
+    "fr": {
+     "t": "Relire ses notes dans la journée",
+     "g": "Une courte révision juste après le cours fixe bien plus qu'une longue révision plus tard.",
+     "p": [
+      "Relire tes notes dans les 24 heures ralentit fortement l'oubli.",
+      "Prends dix minutes : corrige les passages flous, ajoute ce qui manque, écris un résumé.",
+      "Interroge-toi sur les points clés avant de passer à la tâche suivante."
+     ],
+     "q": "Quand relis-tu d'habitude tes notes après un cours ?",
+     "c": "Révise aujourd'hui tes notes en dix minutes, marque un point flou et clarifie-le."
+    },
+    "it": {
+     "t": "Rivedere gli appunti entro un giorno",
+     "g": "Un ripasso rapido subito dopo la lezione fissa molto più di uno lungo dopo.",
+     "p": [
+      "Rileggere gli appunti entro 24 ore rallenta molto l'oblio.",
+      "Dedica dieci minuti: chiarisci le parti confuse, aggiungi ciò che manca e scrivi un riassunto.",
+      "Interrogati sui punti chiave prima di passare al compito successivo."
+     ],
+     "q": "Quando riguardi di solito i tuoi appunti dopo una lezione?",
+     "c": "Ripassa oggi gli appunti in dieci minuti, segna un punto poco chiaro e chiariscilo."
+    },
+    "pt": {
+     "t": "Rever os apontamentos no próprio dia",
+     "g": "Uma revisão rápida logo após a aula fixa muito mais do que uma longa mais tarde.",
+     "p": [
+      "Ler os apontamentos nas primeiras 24 horas trava bastante o esquecimento.",
+      "Dedica dez minutos: esclarece partes confusas, junta o que falta e escreve um resumo.",
+      "Testa-te sobre os pontos-chave antes de passares à tarefa seguinte."
+     ],
+     "q": "Quando costumas voltar a ver os apontamentos depois de uma aula?",
+     "c": "Hoje, revê os apontamentos em dez minutos, marca um ponto confuso e esclarece-o."
+    },
+    "pt_BR": {
+     "t": "Revisar as anotações no mesmo dia",
+     "g": "Uma revisão rápida logo após a aula fixa muito mais que uma longa mais tarde.",
+     "p": [
+      "Ler as anotações em 24 horas freia bastante o esquecimento.",
+      "Dedique dez minutos: esclareça partes confusas, acrescente o que falta e escreva um resumo.",
+      "Teste-se sobre os pontos-chave antes de passar para a próxima tarefa."
+     ],
+     "q": "Quando você costuma voltar às anotações depois de uma aula?",
+     "c": "Hoje, revise as anotações em dez minutos, marque um ponto confuso e esclareça."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Note-taking showcase",
+     "g": "Choose your favourite method and rewrite one old set of notes with it.",
+     "p": [
+      "Compare what you tried: Cornell, outline, mind map, your own shorthand.",
+      "Pick one old page and rebuild it in the format you liked most.",
+      "Rewriting is itself active study, so you learn the content again as you go."
+     ],
+     "q": "Which note-taking method felt most natural to you, and why?",
+     "c": "Rewrite one old page of notes in your favourite method and keep both versions."
+    },
+    "de": {
+     "t": "Notizen-Schaufenster",
+     "g": "Wähle deine Lieblingsmethode und schreib einen alten Notizenstapel damit neu.",
+     "p": [
+      "Vergleiche, was du probiert hast: Cornell, Gliederung, Mindmap, eigene Kurzschrift.",
+      "Nimm eine alte Seite und baue sie im Format um, das dir am besten gefiel.",
+      "Neuschreiben ist selbst aktives Lernen, du lernst den Inhalt beim Umarbeiten erneut."
+     ],
+     "q": "Welche Notizmethode fühlte sich für dich am natürlichsten an, und warum?",
+     "c": "Schreib eine alte Notizseite in deiner Lieblingsmethode neu und behalte beide Versionen."
+    },
+    "es": {
+     "t": "Muestrario de apuntes",
+     "g": "Elige tu método favorito y reescribe con él un juego de apuntes antiguos.",
+     "p": [
+      "Compara lo que probaste: Cornell, esquema, mapa mental, tu propia taquigrafía.",
+      "Toma una página antigua y reconstrúyela en el formato que más te gustó.",
+      "Reescribir es en sí estudio activo, así que repasas el contenido mientras lo haces."
+     ],
+     "q": "¿Qué método de apuntes te resultó más natural y por qué?",
+     "c": "Reescribe una página antigua de apuntes con tu método favorito y guarda ambas versiones."
+    },
+    "fr": {
+     "t": "Vitrine de la prise de notes",
+     "g": "Choisis ta méthode préférée et réécris un ancien lot de notes avec elle.",
+     "p": [
+      "Compare ce que tu as essayé : Cornell, plan, carte mentale, ta sténo.",
+      "Prends une ancienne page et reconstruis-la dans le format que tu as préféré.",
+      "Réécrire est déjà de l'étude active, tu réapprends donc le contenu en route."
+     ],
+     "q": "Quelle méthode de prise de notes t'a paru la plus naturelle, et pourquoi ?",
+     "c": "Réécris une ancienne page de notes avec ta méthode préférée et garde les deux versions."
+    },
+    "it": {
+     "t": "Vetrina degli appunti",
+     "g": "Scegli il tuo metodo preferito e riscrivi con esso un vecchio set di appunti.",
+     "p": [
+      "Confronta ciò che hai provato: Cornell, scaletta, mappa mentale, la tua stenografia.",
+      "Prendi una vecchia pagina e ricostruiscila nel formato che ti è piaciuto di più.",
+      "Riscrivere è già studio attivo, quindi impari di nuovo il contenuto strada facendo."
+     ],
+     "q": "Quale metodo di appunti ti è sembrato più naturale e perché?",
+     "c": "Riscrivi una vecchia pagina di appunti con il tuo metodo preferito e tieni entrambe le versioni."
+    },
+    "pt": {
+     "t": "Montra de apontamentos",
+     "g": "Escolhe o teu método favorito e reescreve com ele um conjunto de apontamentos antigos.",
+     "p": [
+      "Compara o que experimentaste: Cornell, esquema, mapa mental, a tua taquigrafia.",
+      "Pega numa página antiga e reconstrói-a no formato de que mais gostaste.",
+      "Reescrever é já estudo ativo, por isso voltas a aprender o conteúdo pelo caminho."
+     ],
+     "q": "Que método de apontamentos te pareceu mais natural e porquê?",
+     "c": "Reescreve uma página antiga de apontamentos com o teu método favorito e guarda as duas versões."
+    },
+    "pt_BR": {
+     "t": "Vitrine de anotações",
+     "g": "Escolha seu método favorito e reescreva com ele um conjunto de anotações antigas.",
+     "p": [
+      "Compare o que você testou: Cornell, esquema, mapa mental, sua taquigrafia.",
+      "Pegue uma página antiga e reconstrua no formato de que mais gostou.",
+      "Reescrever já é estudo ativo, então você aprende o conteúdo de novo pelo caminho."
+     ],
+     "q": "Que método de anotação pareceu mais natural para você e por quê?",
+     "c": "Reescreva uma página antiga de anotações com seu método favorito e guarde as duas versões."
+    }
+   }
+  }
+ ]
+}

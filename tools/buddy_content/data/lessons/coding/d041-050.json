@@ -1,0 +1,835 @@
+{
+ "topic": "coding",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Looping over lists",
+     "g": "Visit every item of a list with a for loop.",
+     "p": [
+      "for fruit in fruits: gives you each item in turn.",
+      "Use it to print, count or change things for every item.",
+      "You can combine it with if to pick only some items."
+     ],
+     "q": "Which list would you love a program to go through for you?",
+     "c": "Make a list of 5 numbers and print only those greater than 10 with a loop and if."
+    },
+    "de": {
+     "t": "Über Listen laufen",
+     "g": "Besuche jedes Element einer Liste mit einer for-Schleife.",
+     "p": [
+      "for fruit in fruits: liefert dir nacheinander jedes Element.",
+      "Nutze es, um für jedes Element zu drucken, zu zählen oder etwas zu ändern.",
+      "Kombiniere es mit if, um nur manche Elemente auszuwählen."
+     ],
+     "q": "Welche Liste sollte ein Programm für dich durchgehen?",
+     "c": "Lege eine Liste mit 5 Zahlen an und gib nur die über 10 mit Schleife und if aus."
+    },
+    "es": {
+     "t": "Recorrer listas",
+     "g": "Visita cada elemento de una lista con un bucle for.",
+     "p": [
+      "for fruit in fruits: te da cada elemento por turno.",
+      "Úsalo para imprimir, contar o cambiar cosas en cada elemento.",
+      "Puedes combinarlo con if para elegir solo algunos elementos."
+     ],
+     "q": "¿Qué lista te encantaría que un programa recorriera por ti?",
+     "c": "Haz una lista de 5 números e imprime solo los mayores de 10 con bucle e if."
+    },
+    "fr": {
+     "t": "Parcourir les listes",
+     "g": "Visite chaque élément d'une liste avec une boucle for.",
+     "p": [
+      "for fruit in fruits: te donne chaque élément à tour de rôle.",
+      "Utilise-le pour afficher, compter ou modifier pour chaque élément.",
+      "Combine-le avec if pour ne choisir que certains éléments."
+     ],
+     "q": "Quelle liste aimerais-tu qu'un programme parcoure pour toi ?",
+     "c": "Fais une liste de 5 nombres et affiche seulement ceux au-dessus de 10 avec boucle et if."
+    },
+    "it": {
+     "t": "Scorrere le liste",
+     "g": "Visita ogni elemento di una lista con un ciclo for.",
+     "p": [
+      "for fruit in fruits: ti dà ogni elemento a turno.",
+      "Usalo per stampare, contare o cambiare qualcosa per ogni elemento.",
+      "Puoi combinarlo con if per scegliere solo alcuni elementi."
+     ],
+     "q": "Quale lista ti piacerebbe che un programma scorresse per te?",
+     "c": "Crea una lista di 5 numeri e stampa solo quelli sopra 10 con ciclo e if."
+    },
+    "pt": {
+     "t": "Percorrer listas",
+     "g": "Visita cada elemento de uma lista com um ciclo for.",
+     "p": [
+      "for fruit in fruits: dá-te cada elemento à vez.",
+      "Usa-o para imprimir, contar ou alterar algo em cada elemento.",
+      "Podes combiná-lo com if para escolher só alguns elementos."
+     ],
+     "q": "Que lista gostarias que um programa percorresse por ti?",
+     "c": "Faz uma lista de 5 números e imprime só os maiores que 10 com ciclo e if."
+    },
+    "pt_BR": {
+     "t": "Percorrendo listas",
+     "g": "Visite cada elemento de uma lista com um laço for.",
+     "p": [
+      "for fruit in fruits: dá cada elemento por vez.",
+      "Use para imprimir, contar ou alterar algo em cada elemento.",
+      "Você pode combinar com if para escolher só alguns elementos."
+     ],
+     "q": "Que lista você gostaria que um programa percorresse por você?",
+     "c": "Faça uma lista de 5 números e imprima só os maiores que 10 com laço e if."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Slicing",
+     "g": "Take parts of a list or string using start and end positions.",
+     "p": [
+      "text[0:3] takes positions 0, 1 and 2; the end position is not included.",
+      "Leave a side empty: text[:3] starts at the beginning, text[3:] goes to the end.",
+      "Slicing works the same on lists and on strings."
+     ],
+     "q": "Which part of your name would you slice out, the first three letters?",
+     "c": "Take word = 'programming' and print the first 4 letters and the last 4 letters."
+    },
+    "de": {
+     "t": "Slicing",
+     "g": "Schneide mit Start- und Endposition Teile aus Liste oder String.",
+     "p": [
+      "text[0:3] nimmt die Positionen 0, 1 und 2; die Endposition zählt nicht mit.",
+      "Lass eine Seite leer: text[:3] startet am Anfang, text[3:] geht bis zum Ende.",
+      "Slicing funktioniert bei Listen und Strings gleich."
+     ],
+     "q": "Welchen Teil deines Namens würdest du herausschneiden, etwa die ersten drei Buchstaben?",
+     "c": "Nimm word = 'programming' und gib die ersten 4 und die letzten 4 Buchstaben aus."
+    },
+    "es": {
+     "t": "Rebanado (slicing)",
+     "g": "Toma partes de una lista o cadena con posiciones de inicio y fin.",
+     "p": [
+      "text[0:3] toma las posiciones 0, 1 y 2; la posición final no se incluye.",
+      "Deja un lado vacío: text[:3] empieza al principio, text[3:] va hasta el final.",
+      "El slicing funciona igual en listas y en cadenas."
+     ],
+     "q": "¿Qué parte de tu nombre recortarías, por ejemplo las tres primeras letras?",
+     "c": "Toma word = 'programming' e imprime las primeras 4 letras y las últimas 4."
+    },
+    "fr": {
+     "t": "Le slicing",
+     "g": "Prends des parties d'une liste ou d'une chaîne avec des positions de début et de fin.",
+     "p": [
+      "text[0:3] prend les positions 0, 1 et 2 ; la position de fin n'est pas incluse.",
+      "Laisse un côté vide : text[:3] part du début, text[3:] va jusqu'à la fin.",
+      "Le slicing fonctionne pareil sur les listes et les chaînes."
+     ],
+     "q": "Quelle partie de ton prénom découperais-tu, par exemple les trois premières lettres ?",
+     "c": "Prends word = 'programming' et affiche les 4 premières et les 4 dernières lettres."
+    },
+    "it": {
+     "t": "Lo slicing",
+     "g": "Prendi parti di una lista o stringa con posizioni di inizio e fine.",
+     "p": [
+      "text[0:3] prende le posizioni 0, 1 e 2; la posizione finale non è inclusa.",
+      "Lascia un lato vuoto: text[:3] parte dall'inizio, text[3:] va fino alla fine.",
+      "Lo slicing funziona uguale su liste e stringhe."
+     ],
+     "q": "Quale parte del tuo nome ritaglieresti, ad esempio le prime tre lettere?",
+     "c": "Prendi word = 'programming' e stampa le prime 4 e le ultime 4 lettere."
+    },
+    "pt": {
+     "t": "Slicing (fatiar)",
+     "g": "Tira partes de uma lista ou string com posições de início e fim.",
+     "p": [
+      "text[0:3] toma as posições 0, 1 e 2; a posição final não entra.",
+      "Deixa um lado vazio: text[:3] começa no início, text[3:] vai até ao fim.",
+      "O slicing funciona igual em listas e em strings."
+     ],
+     "q": "Que parte do teu nome recortarias, por exemplo as três primeiras letras?",
+     "c": "Pega em word = 'programming' e imprime as primeiras 4 letras e as últimas 4."
+    },
+    "pt_BR": {
+     "t": "Slicing (fatiamento)",
+     "g": "Pegue partes de uma lista ou string com posições de início e fim.",
+     "p": [
+      "text[0:3] pega as posições 0, 1 e 2; a posição final não entra.",
+      "Deixe um lado vazio: text[:3] começa no início, text[3:] vai até o fim.",
+      "O slicing funciona igual em listas e em strings."
+     ],
+     "q": "Que parte do seu nome você recortaria, por exemplo as três primeiras letras?",
+     "c": "Pegue word = 'programming' e imprima as primeiras 4 letras e as últimas 4."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Useful list functions",
+     "g": "Use len, sum, min, max and sorted to work with lists fast.",
+     "p": [
+      "len(list) counts items; sum(list) adds numbers together.",
+      "min and max find the smallest and largest value.",
+      "sorted(list) returns a new ordered list and leaves the original alone."
+     ],
+     "q": "If you tracked your steps for a week, which numbers would you check?",
+     "c": "With scores = [8, 3, 9, 5] print the count, total, smallest, largest and sorted list."
+    },
+    "de": {
+     "t": "Nützliche Listenfunktionen",
+     "g": "Nutze len, sum, min, max und sorted, um schnell mit Listen zu arbeiten.",
+     "p": [
+      "len(list) zählt Elemente; sum(list) addiert Zahlen.",
+      "min und max finden den kleinsten und größten Wert.",
+      "sorted(list) liefert eine neue sortierte Liste und lässt das Original unverändert."
+     ],
+     "q": "Wenn du eine Woche lang deine Schritte zählst, welche Zahlen würdest du prüfen?",
+     "c": "Gib mit scores = [8, 3, 9, 5] Anzahl, Summe, kleinsten, größten Wert und sortierte Liste aus."
+    },
+    "es": {
+     "t": "Funciones útiles de listas",
+     "g": "Usa len, sum, min, max y sorted para trabajar rápido con listas.",
+     "p": [
+      "len(list) cuenta elementos; sum(list) suma números.",
+      "min y max encuentran el valor menor y el mayor.",
+      "sorted(list) devuelve una lista nueva ordenada y no toca la original."
+     ],
+     "q": "Si anotaras tus pasos durante una semana, ¿qué números mirarías?",
+     "c": "Con scores = [8, 3, 9, 5] imprime cantidad, total, menor, mayor y la lista ordenada."
+    },
+    "fr": {
+     "t": "Fonctions utiles pour les listes",
+     "g": "Utilise len, sum, min, max et sorted pour travailler vite avec les listes.",
+     "p": [
+      "len(list) compte les éléments ; sum(list) additionne les nombres.",
+      "min et max trouvent la plus petite et la plus grande valeur.",
+      "sorted(list) renvoie une nouvelle liste triée et laisse l'originale intacte."
+     ],
+     "q": "Si tu notais tes pas pendant une semaine, quels chiffres regarderais-tu ?",
+     "c": "Avec scores = [8, 3, 9, 5] affiche le nombre, le total, le min, le max et la liste triée."
+    },
+    "it": {
+     "t": "Funzioni utili per le liste",
+     "g": "Usa len, sum, min, max e sorted per lavorare in fretta con le liste.",
+     "p": [
+      "len(list) conta gli elementi; sum(list) somma i numeri.",
+      "min e max trovano il valore più piccolo e più grande.",
+      "sorted(list) restituisce una nuova lista ordinata e lascia intatta l'originale."
+     ],
+     "q": "Se registrassi i tuoi passi per una settimana, quali numeri controlleresti?",
+     "c": "Con scores = [8, 3, 9, 5] stampa quantità, totale, minimo, massimo e lista ordinata."
+    },
+    "pt": {
+     "t": "Funções úteis de listas",
+     "g": "Usa len, sum, min, max e sorted para trabalhar depressa com listas.",
+     "p": [
+      "len(list) conta elementos; sum(list) soma números.",
+      "min e max encontram o valor menor e o maior.",
+      "sorted(list) devolve uma lista nova ordenada e não mexe na original."
+     ],
+     "q": "Se registasses os teus passos durante uma semana, que números verias?",
+     "c": "Com scores = [8, 3, 9, 5] imprime quantidade, total, menor, maior e a lista ordenada."
+    },
+    "pt_BR": {
+     "t": "Funções úteis de listas",
+     "g": "Use len, sum, min, max e sorted para trabalhar rápido com listas.",
+     "p": [
+      "len(list) conta elementos; sum(list) soma números.",
+      "min e max encontram o menor e o maior valor.",
+      "sorted(list) devolve uma lista nova ordenada e não mexe na original."
+     ],
+     "q": "Se você anotasse seus passos por uma semana, que números olharia?",
+     "c": "Com scores = [8, 3, 9, 5] imprima quantidade, total, menor, maior e a lista ordenada."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Searching in lists",
+     "g": "Check if an item exists with in, and find its position.",
+     "p": [
+      "'pear' in fruits is True when pear is in the list.",
+      "fruits.index('pear') gives its position, but errors if missing.",
+      "Check with in first, then call index, to stay safe."
+     ],
+     "q": "If you were hunting for one item in a long list, how would you do it?",
+     "c": "Ask the user for a fruit and say whether it is in your list and at which position."
+    },
+    "de": {
+     "t": "In Listen suchen",
+     "g": "Prüfe mit in, ob ein Element existiert, und finde seine Position.",
+     "p": [
+      "'pear' in fruits ist True, wenn pear in der Liste steht.",
+      "fruits.index('pear') liefert die Position, gibt aber einen Fehler, wenn es fehlt.",
+      "Prüfe zuerst mit in, dann rufe index auf, dann bist du sicher."
+     ],
+     "q": "Wie würdest du ein Element in einer langen Liste suchen?",
+     "c": "Frage nach einer Frucht und sage, ob sie in deiner Liste ist und an welcher Position."
+    },
+    "es": {
+     "t": "Buscar en listas",
+     "g": "Comprueba si un elemento existe con in y encuentra su posición.",
+     "p": [
+      "'pear' in fruits es True si pear está en la lista.",
+      "fruits.index('pear') da su posición, pero falla si no está.",
+      "Comprueba primero con in y luego llama a index, así estás seguro."
+     ],
+     "q": "Si buscaras un elemento en una lista larga, ¿cómo lo harías?",
+     "c": "Pide una fruta al usuario y di si está en tu lista y en qué posición."
+    },
+    "fr": {
+     "t": "Chercher dans les listes",
+     "g": "Vérifie si un élément existe avec in et trouve sa position.",
+     "p": [
+      "'pear' in fruits vaut True si pear est dans la liste.",
+      "fruits.index('pear') donne sa position, mais plante s'il est absent.",
+      "Vérifie d'abord avec in, puis appelle index, pour être tranquille."
+     ],
+     "q": "Si tu cherchais un élément dans une longue liste, comment ferais-tu ?",
+     "c": "Demande un fruit à l'utilisateur et dis s'il est dans ta liste et à quelle position."
+    },
+    "it": {
+     "t": "Cercare nelle liste",
+     "g": "Controlla se un elemento esiste con in e trova la sua posizione.",
+     "p": [
+      "'pear' in fruits è True se pear è nella lista.",
+      "fruits.index('pear') dà la posizione, ma dà errore se manca.",
+      "Controlla prima con in, poi chiama index, così sei al sicuro."
+     ],
+     "q": "Se cercassi un elemento in una lista lunga, come faresti?",
+     "c": "Chiedi un frutto all'utente e di' se è nella tua lista e in quale posizione."
+    },
+    "pt": {
+     "t": "Procurar em listas",
+     "g": "Verifica se um elemento existe com in e descobre a sua posição.",
+     "p": [
+      "'pear' in fruits é True se pear estiver na lista.",
+      "fruits.index('pear') dá a posição, mas dá erro se não existir.",
+      "Verifica primeiro com in e depois chama index, para ficares seguro."
+     ],
+     "q": "Se procurasses um elemento numa lista longa, como farias?",
+     "c": "Pede uma fruta ao utilizador e diz se está na lista e em que posição."
+    },
+    "pt_BR": {
+     "t": "Procurando em listas",
+     "g": "Verifique se um elemento existe com in e descubra sua posição.",
+     "p": [
+      "'pear' in fruits é True se pear estiver na lista.",
+      "fruits.index('pear') dá a posição, mas dá erro se não existir.",
+      "Verifique primeiro com in e depois chame index, para ficar seguro."
+     ],
+     "q": "Se você procurasse um elemento numa lista longa, como faria?",
+     "c": "Peça uma fruta ao usuário e diga se está na lista e em que posição."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mini project: shopping list",
+     "g": "Build a program that adds, shows and removes items.",
+     "p": [
+      "Keep a list and loop with while True, asking what to do each round.",
+      "Use if and elif for the commands add, show, remove and quit.",
+      "break leaves the loop when the user types quit."
+     ],
+     "q": "What is the one thing you always forget to buy?",
+     "c": "Build the shopping list with add, show and quit commands, then add remove if you can."
+    },
+    "de": {
+     "t": "Mini-Projekt: Einkaufsliste",
+     "g": "Baue ein Programm, das Einträge hinzufügt, zeigt und entfernt.",
+     "p": [
+      "Halte eine Liste und wiederhole mit while True, frage in jeder Runde nach der Aktion.",
+      "Nutze if und elif für die Befehle add, show, remove und quit.",
+      "break verlässt die Schleife, wenn der Nutzer quit eingibt."
+     ],
+     "q": "Was vergisst du beim Einkaufen immer?",
+     "c": "Baue die Einkaufsliste mit den Befehlen add, show und quit und ergänze remove, wenn du kannst."
+    },
+    "es": {
+     "t": "Miniproyecto: lista de la compra",
+     "g": "Crea un programa que añade, muestra y quita elementos.",
+     "p": [
+      "Mantén una lista y recorre con while True, preguntando qué hacer en cada vuelta.",
+      "Usa if y elif para los comandos add, show, remove y quit.",
+      "break sale del bucle cuando el usuario escribe quit."
+     ],
+     "q": "¿Qué es lo que siempre olvidas comprar?",
+     "c": "Crea la lista con los comandos add, show y quit, y añade remove si puedes."
+    },
+    "fr": {
+     "t": "Mini-projet : liste de courses",
+     "g": "Crée un programme qui ajoute, affiche et retire des articles.",
+     "p": [
+      "Garde une liste et boucle avec while True, en demandant l'action à chaque tour.",
+      "Utilise if et elif pour les commandes add, show, remove et quit.",
+      "break quitte la boucle quand l'utilisateur tape quit."
+     ],
+     "q": "Quelle est la chose que tu oublies toujours d'acheter ?",
+     "c": "Crée la liste avec les commandes add, show et quit, puis ajoute remove si tu peux."
+    },
+    "it": {
+     "t": "Mini progetto: lista della spesa",
+     "g": "Crea un programma che aggiunge, mostra e rimuove elementi.",
+     "p": [
+      "Tieni una lista e cicla con while True, chiedendo cosa fare a ogni giro.",
+      "Usa if ed elif per i comandi add, show, remove e quit.",
+      "break esce dal ciclo quando l'utente scrive quit."
+     ],
+     "q": "Qual è la cosa che dimentichi sempre di comprare?",
+     "c": "Crea la lista con i comandi add, show e quit, poi aggiungi remove se riesci."
+    },
+    "pt": {
+     "t": "Mini projeto: lista de compras",
+     "g": "Cria um programa que acrescenta, mostra e remove itens.",
+     "p": [
+      "Mantém uma lista e repete com while True, perguntando a ação em cada volta.",
+      "Usa if e elif para os comandos add, show, remove e quit.",
+      "break sai do ciclo quando o utilizador escreve quit."
+     ],
+     "q": "Qual é a coisa que te esqueces sempre de comprar?",
+     "c": "Cria a lista com os comandos add, show e quit e junta remove se conseguires."
+    },
+    "pt_BR": {
+     "t": "Mini projeto: lista de compras",
+     "g": "Crie um programa que adiciona, mostra e remove itens.",
+     "p": [
+      "Mantenha uma lista e repita com while True, perguntando a ação a cada volta.",
+      "Use if e elif para os comandos add, show, remove e quit.",
+      "break sai do laço quando o usuário digita quit."
+     ],
+     "q": "Qual é a coisa que você sempre esquece de comprar?",
+     "c": "Crie a lista com os comandos add, show e quit e acrescente remove se conseguir."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tuples",
+     "g": "Meet ordered collections that cannot change.",
+     "p": [
+      "A tuple uses round brackets: point = (3, 5).",
+      "You can read items by index, but cannot add or replace them.",
+      "Choose a tuple for data that should stay fixed, like coordinates."
+     ],
+     "q": "What facts about you would never change, like a birthday?",
+     "c": "Create a tuple with a day and month of birth and print each part by index."
+    },
+    "de": {
+     "t": "Tupel",
+     "g": "Lerne geordnete Sammlungen kennen, die sich nicht ändern.",
+     "p": [
+      "Ein Tupel nutzt runde Klammern: point = (3, 5).",
+      "Du kannst Elemente über den Index lesen, aber nicht hinzufügen oder ersetzen.",
+      "Wähle ein Tupel für feste Daten, etwa Koordinaten."
+     ],
+     "q": "Welche Fakten über dich ändern sich nie, etwa ein Geburtstag?",
+     "c": "Erstelle ein Tupel mit Geburtstag und -monat und gib jeden Teil über den Index aus."
+    },
+    "es": {
+     "t": "Tuplas",
+     "g": "Conoce las colecciones ordenadas que no pueden cambiar.",
+     "p": [
+      "Una tupla usa paréntesis: point = (3, 5).",
+      "Puedes leer elementos por índice, pero no añadirlos ni reemplazarlos.",
+      "Elige una tupla para datos que deben quedar fijos, como coordenadas."
+     ],
+     "q": "¿Qué datos tuyos nunca cambiarían, como un cumpleaños?",
+     "c": "Crea una tupla con día y mes de nacimiento e imprime cada parte por índice."
+    },
+    "fr": {
+     "t": "Les tuples",
+     "g": "Découvre les collections ordonnées qui ne peuvent pas changer.",
+     "p": [
+      "Un tuple utilise des parenthèses : point = (3, 5).",
+      "Tu peux lire les éléments par indice, mais pas en ajouter ni en remplacer.",
+      "Choisis un tuple pour des données fixes, comme des coordonnées."
+     ],
+     "q": "Quelles infos sur toi ne changeraient jamais, comme une date d'anniversaire ?",
+     "c": "Crée un tuple avec jour et mois de naissance et affiche chaque partie par indice."
+    },
+    "it": {
+     "t": "Le tuple",
+     "g": "Conosci le collezioni ordinate che non possono cambiare.",
+     "p": [
+      "Una tupla usa le parentesi tonde: point = (3, 5).",
+      "Puoi leggere gli elementi per indice, ma non aggiungerli né sostituirli.",
+      "Scegli una tupla per dati fissi, come le coordinate."
+     ],
+     "q": "Quali dati su di te non cambierebbero mai, come un compleanno?",
+     "c": "Crea una tupla con giorno e mese di nascita e stampa ogni parte per indice."
+    },
+    "pt": {
+     "t": "Tuplos",
+     "g": "Conhece as coleções ordenadas que não podem mudar.",
+     "p": [
+      "Um tuplo usa parênteses: point = (3, 5).",
+      "Podes ler elementos pelo índice, mas não os acrescentar nem substituir.",
+      "Escolhe um tuplo para dados fixos, como coordenadas."
+     ],
+     "q": "Que dados teus nunca mudariam, como um aniversário?",
+     "c": "Cria um tuplo com dia e mês de nascimento e imprime cada parte pelo índice."
+    },
+    "pt_BR": {
+     "t": "Tuplas",
+     "g": "Conheça as coleções ordenadas que não podem mudar.",
+     "p": [
+      "Uma tupla usa parênteses: point = (3, 5).",
+      "Você pode ler elementos pelo índice, mas não acrescentar nem substituir.",
+      "Escolha uma tupla para dados fixos, como coordenadas."
+     ],
+     "q": "Que dados seus nunca mudariam, como um aniversário?",
+     "c": "Crie uma tupla com dia e mês de nascimento e imprima cada parte pelo índice."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dictionaries",
+     "g": "Store pairs of keys and values, like a word and its meaning.",
+     "p": [
+      "A dictionary uses curly brackets: pet = {'name': 'Rex', 'age': 3}.",
+      "You look up a value by its key: pet['name'] gives 'Rex'.",
+      "Keys label the data, so it is easier to understand than a list."
+     ],
+     "q": "What would a dictionary about your favourite film look like?",
+     "c": "Create a dictionary about yourself with name, city and age, then print the city."
+    },
+    "de": {
+     "t": "Dictionaries",
+     "g": "Speichere Paare aus Schlüssel und Wert, wie ein Wort und seine Bedeutung.",
+     "p": [
+      "Ein Dictionary nutzt geschweifte Klammern: pet = {'name': 'Rex', 'age': 3}.",
+      "Du suchst einen Wert über seinen Schlüssel: pet['name'] liefert 'Rex'.",
+      "Schlüssel beschriften die Daten, das ist verständlicher als eine Liste."
+     ],
+     "q": "Wie sähe ein Dictionary über deinen Lieblingsfilm aus?",
+     "c": "Erstelle ein Dictionary über dich mit name, city und age und gib die Stadt aus."
+    },
+    "es": {
+     "t": "Diccionarios",
+     "g": "Guarda pares de clave y valor, como una palabra y su significado.",
+     "p": [
+      "Un diccionario usa llaves: pet = {'name': 'Rex', 'age': 3}.",
+      "Buscas un valor por su clave: pet['name'] da 'Rex'.",
+      "Las claves etiquetan los datos, así se entiende mejor que una lista."
+     ],
+     "q": "¿Cómo sería un diccionario sobre tu película favorita?",
+     "c": "Crea un diccionario sobre ti con name, city y age e imprime la ciudad."
+    },
+    "fr": {
+     "t": "Les dictionnaires",
+     "g": "Stocke des paires clé et valeur, comme un mot et sa signification.",
+     "p": [
+      "Un dictionnaire utilise des accolades : pet = {'name': 'Rex', 'age': 3}.",
+      "Tu cherches une valeur par sa clé : pet['name'] donne 'Rex'.",
+      "Les clés étiquettent les données, c'est plus clair qu'une liste."
+     ],
+     "q": "À quoi ressemblerait un dictionnaire sur ton film préféré ?",
+     "c": "Crée un dictionnaire sur toi avec name, city et age puis affiche la ville."
+    },
+    "it": {
+     "t": "I dizionari",
+     "g": "Salva coppie chiave e valore, come una parola e il suo significato.",
+     "p": [
+      "Un dizionario usa le graffe: pet = {'name': 'Rex', 'age': 3}.",
+      "Cerchi un valore tramite la chiave: pet['name'] dà 'Rex'.",
+      "Le chiavi etichettano i dati, quindi è più chiaro di una lista."
+     ],
+     "q": "Come sarebbe un dizionario sul tuo film preferito?",
+     "c": "Crea un dizionario su di te con name, city e age e stampa la città."
+    },
+    "pt": {
+     "t": "Dicionários",
+     "g": "Guarda pares de chave e valor, como uma palavra e o seu significado.",
+     "p": [
+      "Um dicionário usa chavetas: pet = {'name': 'Rex', 'age': 3}.",
+      "Procuras um valor pela chave: pet['name'] dá 'Rex'.",
+      "As chaves etiquetam os dados, por isso é mais claro do que uma lista."
+     ],
+     "q": "Como seria um dicionário sobre o teu filme favorito?",
+     "c": "Cria um dicionário sobre ti com name, city e age e imprime a cidade."
+    },
+    "pt_BR": {
+     "t": "Dicionários",
+     "g": "Guarde pares de chave e valor, como uma palavra e seu significado.",
+     "p": [
+      "Um dicionário usa chaves: pet = {'name': 'Rex', 'age': 3}.",
+      "Você busca um valor pela chave: pet['name'] dá 'Rex'.",
+      "As chaves etiquetam os dados, então é mais claro do que uma lista."
+     ],
+     "q": "Como seria um dicionário sobre o seu filme favorito?",
+     "c": "Crie um dicionário sobre você com name, city e age e imprima a cidade."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Working with dictionaries",
+     "g": "Add, update and safely read values with get.",
+     "p": [
+      "pet['color'] = 'brown' adds a new key or updates an existing one.",
+      "pet.get('color') returns None instead of an error if the key is missing.",
+      "del pet['age'] removes a pair completely."
+     ],
+     "q": "Which new detail would you add to your own dictionary?",
+     "c": "Add a hobby to your dictionary, update your age, and read a missing key with get."
+    },
+    "de": {
+     "t": "Mit Dictionaries arbeiten",
+     "g": "Füge Werte hinzu, aktualisiere sie und lies sie sicher mit get.",
+     "p": [
+      "pet['color'] = 'brown' fügt einen neuen Schlüssel hinzu oder aktualisiert einen vorhandenen.",
+      "pet.get('color') liefert None statt eines Fehlers, wenn der Schlüssel fehlt.",
+      "del pet['age'] entfernt ein Paar vollständig."
+     ],
+     "q": "Welches neue Detail würdest du deinem Dictionary hinzufügen?",
+     "c": "Füge ein Hobby hinzu, aktualisiere dein Alter und lies einen fehlenden Schlüssel mit get."
+    },
+    "es": {
+     "t": "Trabajar con diccionarios",
+     "g": "Añade, actualiza y lee valores con seguridad usando get.",
+     "p": [
+      "pet['color'] = 'brown' añade una clave nueva o actualiza una existente.",
+      "pet.get('color') devuelve None en vez de un error si falta la clave.",
+      "del pet['age'] elimina un par por completo."
+     ],
+     "q": "¿Qué detalle nuevo añadirías a tu propio diccionario?",
+     "c": "Añade un hobby a tu diccionario, actualiza tu edad y lee una clave inexistente con get."
+    },
+    "fr": {
+     "t": "Travailler avec les dictionnaires",
+     "g": "Ajoute, mets à jour et lis des valeurs en sécurité avec get.",
+     "p": [
+      "pet['color'] = 'brown' ajoute une nouvelle clé ou met à jour une clé existante.",
+      "pet.get('color') renvoie None au lieu d'une erreur si la clé manque.",
+      "del pet['age'] supprime complètement une paire."
+     ],
+     "q": "Quel nouveau détail ajouterais-tu à ton propre dictionnaire ?",
+     "c": "Ajoute un loisir à ton dictionnaire, mets ton âge à jour et lis une clé absente avec get."
+    },
+    "it": {
+     "t": "Lavorare con i dizionari",
+     "g": "Aggiungi, aggiorna e leggi valori in sicurezza con get.",
+     "p": [
+      "pet['color'] = 'brown' aggiunge una chiave nuova o aggiorna una esistente.",
+      "pet.get('color') restituisce None invece di un errore se la chiave manca.",
+      "del pet['age'] rimuove del tutto una coppia."
+     ],
+     "q": "Quale nuovo dettaglio aggiungeresti al tuo dizionario?",
+     "c": "Aggiungi un hobby al tuo dizionario, aggiorna l'età e leggi una chiave mancante con get."
+    },
+    "pt": {
+     "t": "Trabalhar com dicionários",
+     "g": "Acrescenta, atualiza e lê valores em segurança com get.",
+     "p": [
+      "pet['color'] = 'brown' acrescenta uma chave nova ou atualiza uma existente.",
+      "pet.get('color') devolve None em vez de erro se a chave não existir.",
+      "del pet['age'] remove um par por completo."
+     ],
+     "q": "Que detalhe novo acrescentarias ao teu dicionário?",
+     "c": "Acrescenta um passatempo, atualiza a idade e lê uma chave inexistente com get."
+    },
+    "pt_BR": {
+     "t": "Trabalhando com dicionários",
+     "g": "Acrescente, atualize e leia valores com segurança usando get.",
+     "p": [
+      "pet['color'] = 'brown' acrescenta uma chave nova ou atualiza uma existente.",
+      "pet.get('color') devolve None em vez de erro se a chave não existir.",
+      "del pet['age'] remove um par por completo."
+     ],
+     "q": "Que detalhe novo você acrescentaria ao seu dicionário?",
+     "c": "Acrescente um hobby, atualize a idade e leia uma chave inexistente com get."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Looping over dictionaries",
+     "g": "Go through keys, values or both at once.",
+     "p": [
+      "for key in pet: loops over the keys.",
+      "pet.values() gives the values; pet.items() gives key and value pairs.",
+      "for k, v in pet.items(): is the handy way to see everything."
+     ],
+     "q": "Which dictionary would you love to print neatly, like a menu?",
+     "c": "Loop over your dictionary with items() and print lines like city: Rome."
+    },
+    "de": {
+     "t": "Über Dictionaries laufen",
+     "g": "Gehe Schlüssel, Werte oder beides zugleich durch.",
+     "p": [
+      "for key in pet: läuft über die Schlüssel.",
+      "pet.values() liefert die Werte; pet.items() liefert Paare aus Schlüssel und Wert.",
+      "for k, v in pet.items(): ist der praktische Weg, alles zu sehen."
+     ],
+     "q": "Welches Dictionary würdest du gern hübsch ausgeben, etwa eine Speisekarte?",
+     "c": "Laufe mit items() über dein Dictionary und gib Zeilen wie city: Rome aus."
+    },
+    "es": {
+     "t": "Recorrer diccionarios",
+     "g": "Recorre claves, valores o ambos a la vez.",
+     "p": [
+      "for key in pet: recorre las claves.",
+      "pet.values() da los valores; pet.items() da pares de clave y valor.",
+      "for k, v in pet.items(): es la forma práctica de verlo todo."
+     ],
+     "q": "¿Qué diccionario te encantaría imprimir bien, como un menú?",
+     "c": "Recorre tu diccionario con items() e imprime líneas como city: Rome."
+    },
+    "fr": {
+     "t": "Parcourir les dictionnaires",
+     "g": "Parcours les clés, les valeurs ou les deux à la fois.",
+     "p": [
+      "for key in pet: parcourt les clés.",
+      "pet.values() donne les valeurs ; pet.items() donne les paires clé et valeur.",
+      "for k, v in pet.items(): est la façon pratique de tout voir."
+     ],
+     "q": "Quel dictionnaire aimerais-tu afficher joliment, comme un menu ?",
+     "c": "Parcours ton dictionnaire avec items() et affiche des lignes comme city: Rome."
+    },
+    "it": {
+     "t": "Scorrere i dizionari",
+     "g": "Scorri chiavi, valori o entrambi insieme.",
+     "p": [
+      "for key in pet: scorre le chiavi.",
+      "pet.values() dà i valori; pet.items() dà coppie chiave e valore.",
+      "for k, v in pet.items(): è il modo pratico per vedere tutto."
+     ],
+     "q": "Quale dizionario ti piacerebbe stampare bene, come un menu?",
+     "c": "Scorri il tuo dizionario con items() e stampa righe come city: Rome."
+    },
+    "pt": {
+     "t": "Percorrer dicionários",
+     "g": "Percorre chaves, valores ou ambos ao mesmo tempo.",
+     "p": [
+      "for key in pet: percorre as chaves.",
+      "pet.values() dá os valores; pet.items() dá pares de chave e valor.",
+      "for k, v in pet.items(): é a forma prática de ver tudo."
+     ],
+     "q": "Que dicionário gostarias de imprimir bem, como uma ementa?",
+     "c": "Percorre o teu dicionário com items() e imprime linhas como city: Rome."
+    },
+    "pt_BR": {
+     "t": "Percorrendo dicionários",
+     "g": "Percorra chaves, valores ou ambos ao mesmo tempo.",
+     "p": [
+      "for key in pet: percorre as chaves.",
+      "pet.values() dá os valores; pet.items() dá pares de chave e valor.",
+      "for k, v in pet.items(): é a forma prática de ver tudo."
+     ],
+     "q": "Que dicionário você gostaria de imprimir bem, como um cardápio?",
+     "c": "Percorra seu dicionário com items() e imprima linhas como city: Rome."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sets",
+     "g": "Meet collections without duplicates, perfect for unique items.",
+     "p": [
+      "A set uses curly brackets with no keys: colors = {'red', 'blue'}.",
+      "Repeated items are dropped automatically: set([1, 1, 2]) is {1, 2}.",
+      "Sets have no order, so you cannot use an index."
+     ],
+     "q": "Where would removing duplicates help you, like a guest list?",
+     "c": "Turn the list [1, 2, 2, 3, 3, 3] into a set and print how many unique numbers it has."
+    },
+    "de": {
+     "t": "Mengen (Sets)",
+     "g": "Lerne Sammlungen ohne Duplikate kennen, ideal für einmalige Elemente.",
+     "p": [
+      "Ein Set nutzt geschweifte Klammern ohne Schlüssel: colors = {'red', 'blue'}.",
+      "Doppelte Elemente fallen automatisch weg: set([1, 1, 2]) ergibt {1, 2}.",
+      "Sets haben keine Reihenfolge, daher gibt es keinen Index."
+     ],
+     "q": "Wo würde dir das Entfernen von Duplikaten helfen, etwa bei einer Gästeliste?",
+     "c": "Mache aus der Liste [1, 2, 2, 3, 3, 3] ein Set und gib aus, wie viele einmalige Zahlen es hat."
+    },
+    "es": {
+     "t": "Conjuntos (sets)",
+     "g": "Conoce las colecciones sin duplicados, perfectas para elementos únicos.",
+     "p": [
+      "Un set usa llaves sin claves: colors = {'red', 'blue'}.",
+      "Los elementos repetidos se descartan solos: set([1, 1, 2]) es {1, 2}.",
+      "Los sets no tienen orden, así que no puedes usar un índice."
+     ],
+     "q": "¿Dónde te ayudaría quitar duplicados, como en una lista de invitados?",
+     "c": "Convierte la lista [1, 2, 2, 3, 3, 3] en un set e imprime cuántos números únicos tiene."
+    },
+    "fr": {
+     "t": "Les ensembles (sets)",
+     "g": "Découvre les collections sans doublons, idéales pour des éléments uniques.",
+     "p": [
+      "Un set utilise des accolades sans clés : colors = {'red', 'blue'}.",
+      "Les doublons disparaissent seuls : set([1, 1, 2]) donne {1, 2}.",
+      "Les sets n'ont pas d'ordre, donc pas d'indice."
+     ],
+     "q": "Où supprimer les doublons t'aiderait-il, comme pour une liste d'invités ?",
+     "c": "Transforme la liste [1, 2, 2, 3, 3, 3] en set et affiche combien de nombres uniques elle contient."
+    },
+    "it": {
+     "t": "Gli insiemi (set)",
+     "g": "Conosci le collezioni senza duplicati, perfette per elementi unici.",
+     "p": [
+      "Un set usa le graffe senza chiavi: colors = {'red', 'blue'}.",
+      "Gli elementi ripetuti spariscono da soli: set([1, 1, 2]) è {1, 2}.",
+      "I set non hanno ordine, quindi non c'è un indice."
+     ],
+     "q": "Dove ti aiuterebbe eliminare i duplicati, come in una lista di invitati?",
+     "c": "Trasforma la lista [1, 2, 2, 3, 3, 3] in un set e stampa quanti numeri unici contiene."
+    },
+    "pt": {
+     "t": "Conjuntos (sets)",
+     "g": "Conhece as coleções sem duplicados, perfeitas para elementos únicos.",
+     "p": [
+      "Um set usa chavetas sem chaves: colors = {'red', 'blue'}.",
+      "Os elementos repetidos desaparecem sozinhos: set([1, 1, 2]) é {1, 2}.",
+      "Os sets não têm ordem, por isso não há índice."
+     ],
+     "q": "Onde te ajudaria remover duplicados, como numa lista de convidados?",
+     "c": "Transforma a lista [1, 2, 2, 3, 3, 3] num set e imprime quantos números únicos tem."
+    },
+    "pt_BR": {
+     "t": "Conjuntos (sets)",
+     "g": "Conheça as coleções sem duplicados, perfeitas para elementos únicos.",
+     "p": [
+      "Um set usa chaves sem pares: colors = {'red', 'blue'}.",
+      "Os elementos repetidos somem sozinhos: set([1, 1, 2]) é {1, 2}.",
+      "Sets não têm ordem, então não há índice."
+     ],
+     "q": "Onde remover duplicados ajudaria você, como numa lista de convidados?",
+     "c": "Transforme a lista [1, 2, 2, 3, 3, 3] em um set e imprima quantos números únicos tem."
+    }
+   }
+  }
+ ]
+}

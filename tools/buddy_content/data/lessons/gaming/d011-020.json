@@ -1,0 +1,835 @@
+{
+ "topic": "gaming",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Genres: a map of game types",
+     "g": "Learn why genres exist and how they help you find games you will enjoy.",
+     "p": [
+      "A genre groups games that share similar goals and ways of playing.",
+      "Genres work like shelves in a shop, helping you browse.",
+      "Many games belong to more than one genre."
+     ],
+     "q": "Which genre do you reach for most often?",
+     "c": "Name one game for each of three different genres you know."
+    },
+    "de": {
+     "t": "Genres: eine Landkarte der Spieltypen",
+     "g": "Lernen, warum es Genres gibt und wie sie dir helfen, passende Spiele zu finden.",
+     "p": [
+      "Ein Genre fasst Spiele mit ähnlichen Zielen und Spielweisen zusammen.",
+      "Genres sind wie Regale im Laden und erleichtern das Stöbern.",
+      "Viele Spiele gehören zu mehr als einem Genre."
+     ],
+     "q": "Zu welchem Genre greifst du am häufigsten?",
+     "c": "Nenne je ein Spiel aus drei verschiedenen Genres, die du kennst."
+    },
+    "es": {
+     "t": "Géneros: un mapa de tipos de juego",
+     "g": "Aprender por qué existen los géneros y cómo ayudan a encontrar juegos que te gusten.",
+     "p": [
+      "Un género agrupa juegos con metas y formas de jugar parecidas.",
+      "Los géneros son como estantes de una tienda y ayudan a explorar.",
+      "Muchos juegos pertenecen a más de un género."
+     ],
+     "q": "¿A qué género recurres más a menudo?",
+     "c": "Nombra un juego de cada uno de tres géneros distintos que conozcas."
+    },
+    "fr": {
+     "t": "Genres : une carte des types de jeux",
+     "g": "Comprendre pourquoi les genres existent et comment ils aident à trouver des jeux qui plaisent.",
+     "p": [
+      "Un genre regroupe des jeux aux buts et à la manière de jouer proches.",
+      "Les genres sont comme les rayons d'un magasin et aident à fouiller.",
+      "Beaucoup de jeux appartiennent à plusieurs genres."
+     ],
+     "q": "Vers quel genre te tournes-tu le plus souvent ?",
+     "c": "Cite un jeu pour chacun de trois genres différents que tu connais."
+    },
+    "it": {
+     "t": "Generi: una mappa dei tipi di gioco",
+     "g": "Capire perché esistono i generi e come aiutano a trovare giochi che ti piacciono.",
+     "p": [
+      "Un genere raggruppa giochi con obiettivi e modi di giocare simili.",
+      "I generi sono come gli scaffali di un negozio e aiutano a cercare.",
+      "Molti giochi appartengono a più di un genere."
+     ],
+     "q": "A quale genere ricorri più spesso?",
+     "c": "Cita un gioco per ciascuno di tre generi diversi che conosci."
+    },
+    "pt": {
+     "t": "Géneros: um mapa dos tipos de jogo",
+     "g": "Perceber porque existem géneros e como ajudam a encontrar jogos de que gostes.",
+     "p": [
+      "Um género agrupa jogos com objetivos e formas de jogar parecidas.",
+      "Os géneros são como prateleiras de uma loja e ajudam a explorar.",
+      "Muitos jogos pertencem a mais do que um género."
+     ],
+     "q": "A que género recorres mais vezes?",
+     "c": "Diz um jogo de cada um de três géneros diferentes que conheças."
+    },
+    "pt_BR": {
+     "t": "Gêneros: um mapa dos tipos de jogo",
+     "g": "Entender por que existem gêneros e como eles ajudam a achar jogos de que você goste.",
+     "p": [
+      "Um gênero agrupa jogos com objetivos e formas de jogar parecidas.",
+      "Os gêneros são como prateleiras de uma loja e ajudam a explorar.",
+      "Muitos jogos pertencem a mais de um gênero."
+     ],
+     "q": "A qual gênero você recorre mais vezes?",
+     "c": "Diga um jogo de cada um de três gêneros diferentes que você conhece."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Platform games",
+     "g": "Explore games about running and jumping across levels.",
+     "p": [
+      "The hero runs, jumps and climbs between platforms and obstacles.",
+      "Classic side-scrollers move left to right, while modern ones use 3D worlds.",
+      "Timing and precision matter more than reading long text."
+     ],
+     "q": "Which platform game has the best jumping feel in your opinion?",
+     "c": "Describe in one sentence what a perfect jump in a platformer feels like."
+    },
+    "de": {
+     "t": "Jump-and-Run-Spiele",
+     "g": "Spiele erkunden, in denen man durch Level rennt und springt.",
+     "p": [
+      "Die Hauptfigur rennt, springt und klettert zwischen Plattformen und Hindernissen.",
+      "Klassische Side-Scroller laufen von links nach rechts, moderne nutzen 3D-Welten.",
+      "Timing und Präzision zählen mehr als langer Text."
+     ],
+     "q": "Welches Jump-and-Run fühlt sich deiner Meinung nach beim Springen am besten an?",
+     "c": "Beschreibe in einem Satz, wie sich ein perfekter Sprung anfühlt."
+    },
+    "es": {
+     "t": "Juegos de plataformas",
+     "g": "Explorar juegos de correr y saltar a través de niveles.",
+     "p": [
+      "El héroe corre, salta y trepa entre plataformas y obstáculos.",
+      "Los clásicos de desplazamiento lateral avanzan de izquierda a derecha y los modernos usan mundos 3D.",
+      "Importan más el ritmo y la precisión que leer textos largos."
+     ],
+     "q": "¿Qué juego de plataformas tiene, en tu opinión, el mejor salto?",
+     "c": "Describe en una frase cómo se siente un salto perfecto en un plataformas."
+    },
+    "fr": {
+     "t": "Jeux de plateformes",
+     "g": "Explorer les jeux où l'on court et saute à travers des niveaux.",
+     "p": [
+      "Le héros court, saute et grimpe entre plateformes et obstacles.",
+      "Les classiques défilent de gauche à droite, les modernes utilisent des mondes en 3D.",
+      "Le timing et la précision comptent plus que de longs textes."
+     ],
+     "q": "Quel jeu de plateformes a, selon toi, la meilleure sensation de saut ?",
+     "c": "Décris en une phrase l'effet d'un saut parfait dans un jeu de plateformes."
+    },
+    "it": {
+     "t": "Giochi di piattaforme",
+     "g": "Esplorare i giochi in cui si corre e si salta attraverso i livelli.",
+     "p": [
+      "L'eroe corre, salta e si arrampica tra piattaforme e ostacoli.",
+      "I classici a scorrimento laterale vanno da sinistra a destra, quelli moderni usano mondi 3D.",
+      "Contano più tempismo e precisione che leggere testi lunghi."
+     ],
+     "q": "Quale gioco di piattaforme ha secondo te il salto più bello?",
+     "c": "Descrivi in una frase come si sente un salto perfetto in un platform."
+    },
+    "pt": {
+     "t": "Jogos de plataformas",
+     "g": "Explorar jogos de correr e saltar ao longo de níveis.",
+     "p": [
+      "O herói corre, salta e trepa entre plataformas e obstáculos.",
+      "Os clássicos de deslocamento lateral avançam da esquerda para a direita e os modernos usam mundos 3D.",
+      "O tempo e a precisão contam mais do que ler textos longos."
+     ],
+     "q": "Que jogo de plataformas tem, na tua opinião, o melhor salto?",
+     "c": "Descreve numa frase como é um salto perfeito num jogo de plataformas."
+    },
+    "pt_BR": {
+     "t": "Jogos de plataforma",
+     "g": "Explorar jogos de correr e pular ao longo de fases.",
+     "p": [
+      "O herói corre, pula e escala entre plataformas e obstáculos.",
+      "Os clássicos de rolagem lateral avançam da esquerda para a direita e os modernos usam mundos 3D.",
+      "O tempo e a precisão contam mais do que ler textos longos."
+     ],
+     "q": "Que jogo de plataforma tem, na sua opinião, o melhor pulo?",
+     "c": "Descreva numa frase como é um pulo perfeito num jogo de plataforma."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Puzzle games",
+     "g": "Discover games built on logic, patterns and aha moments.",
+     "p": [
+      "Puzzle games ask you to spot patterns, plan moves and test ideas.",
+      "Some are quick, like matching tiles, and others are slow, like logic mazes.",
+      "The reward is the satisfying click of figuring it out."
+     ],
+     "q": "What kind of puzzle do you enjoy most?",
+     "c": "Solve one small puzzle today, such as a sudoku or a riddle, and notice how it feels."
+    },
+    "de": {
+     "t": "Rätselspiele",
+     "g": "Spiele entdecken, die auf Logik, Mustern und Aha-Momenten beruhen.",
+     "p": [
+      "Rätselspiele verlangen, Muster zu erkennen, Züge zu planen und Ideen zu testen.",
+      "Manche sind schnell, wie Steine kombinieren, andere langsam, wie Logiklabyrinthe.",
+      "Die Belohnung ist das gute Gefühl, wenn es klick macht."
+     ],
+     "q": "Welche Art von Rätsel magst du am liebsten?",
+     "c": "Löse heute ein kleines Rätsel, etwa ein Sudoku, und achte darauf, wie es sich anfühlt."
+    },
+    "es": {
+     "t": "Juegos de puzles",
+     "g": "Descubrir juegos basados en lógica, patrones y momentos de ¡ajá!",
+     "p": [
+      "Los puzles piden detectar patrones, planear movimientos y probar ideas.",
+      "Unos son rápidos, como combinar fichas, y otros lentos, como laberintos de lógica.",
+      "La recompensa es el clic satisfactorio de resolverlo."
+     ],
+     "q": "¿Qué tipo de puzle disfrutas más?",
+     "c": "Resuelve hoy un puzle pequeño, como un sudoku o un acertijo, y nota cómo se siente."
+    },
+    "fr": {
+     "t": "Jeux de réflexion",
+     "g": "Découvrir des jeux fondés sur la logique, les motifs et les moments eurêka.",
+     "p": [
+      "Les jeux de réflexion demandent de repérer des motifs, planifier et tester des idées.",
+      "Certains sont rapides, comme assembler des tuiles, d'autres lents, comme les labyrinthes logiques.",
+      "La récompense, c'est le déclic satisfaisant quand on trouve."
+     ],
+     "q": "Quel type de casse-tête préfères-tu ?",
+     "c": "Résous aujourd'hui un petit casse-tête, comme un sudoku ou une devinette, et note ton ressenti."
+    },
+    "it": {
+     "t": "Giochi di logica",
+     "g": "Scoprire giochi basati su logica, schemi e momenti di illuminazione.",
+     "p": [
+      "I giochi di logica chiedono di individuare schemi, pianificare mosse e provare idee.",
+      "Alcuni sono rapidi, come abbinare tessere, altri lenti, come i labirinti logici.",
+      "La ricompensa è il clic soddisfacente di averlo risolto."
+     ],
+     "q": "Che tipo di rompicapo ti piace di più?",
+     "c": "Risolvi oggi un piccolo rompicapo, come un sudoku o un indovinello, e nota come ti senti."
+    },
+    "pt": {
+     "t": "Jogos de puzzles",
+     "g": "Descobrir jogos baseados em lógica, padrões e momentos de eureka.",
+     "p": [
+      "Os puzzles pedem para detetar padrões, planear jogadas e testar ideias.",
+      "Uns são rápidos, como combinar peças, e outros lentos, como labirintos de lógica.",
+      "A recompensa é o clique satisfatório de o resolver."
+     ],
+     "q": "Que tipo de puzzle mais gostas?",
+     "c": "Resolve hoje um pequeno puzzle, como um sudoku ou uma adivinha, e repara no que sentes."
+    },
+    "pt_BR": {
+     "t": "Jogos de quebra-cabeça",
+     "g": "Descobrir jogos baseados em lógica, padrões e momentos de eureca.",
+     "p": [
+      "Os quebra-cabeças pedem para detectar padrões, planejar jogadas e testar ideias.",
+      "Uns são rápidos, como combinar peças, e outros lentos, como labirintos de lógica.",
+      "A recompensa é o clique satisfatório de resolver."
+     ],
+     "q": "Que tipo de quebra-cabeça você mais curte?",
+     "c": "Resolva hoje um pequeno quebra-cabeça, como um sudoku ou uma charada, e note o que sente."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Adventure games",
+     "g": "Explore games about places, riddles and talking to characters.",
+     "p": [
+      "Adventure games move a story forward through exploring and solving problems.",
+      "You collect objects, combine them and talk to characters to find clues.",
+      "They reward curiosity and patience more than quick reflexes."
+     ],
+     "q": "What kind of story would you like to explore in a game?",
+     "c": "Invent a three-line adventure start: a place, a mystery and a helpful character."
+    },
+    "de": {
+     "t": "Abenteuerspiele",
+     "g": "Spiele über Orte, Rätsel und Gespräche mit Figuren erkunden.",
+     "p": [
+      "Abenteuerspiele bringen die Geschichte durch Erkunden und Problemlösen voran.",
+      "Du sammelst Gegenstände, kombinierst sie und sprichst mit Figuren, um Hinweise zu finden.",
+      "Sie belohnen Neugier und Geduld mehr als schnelle Reflexe."
+     ],
+     "q": "Welche Geschichte würdest du gern in einem Spiel erkunden?",
+     "c": "Erfinde einen Abenteuerbeginn in drei Zeilen: ein Ort, ein Geheimnis, eine hilfreiche Figur."
+    },
+    "es": {
+     "t": "Juegos de aventura",
+     "g": "Explorar juegos de lugares, acertijos y charlas con personajes.",
+     "p": [
+      "Los juegos de aventura avanzan la historia explorando y resolviendo problemas.",
+      "Recoges objetos, los combinas y hablas con personajes para hallar pistas.",
+      "Premian la curiosidad y la paciencia más que los reflejos rápidos."
+     ],
+     "q": "¿Qué tipo de historia te gustaría explorar en un juego?",
+     "c": "Inventa el inicio de una aventura en tres líneas: un lugar, un misterio y un personaje amable."
+    },
+    "fr": {
+     "t": "Jeux d'aventure",
+     "g": "Explorer les jeux de lieux, d'énigmes et de dialogues avec des personnages.",
+     "p": [
+      "Les jeux d'aventure font avancer l'histoire en explorant et en résolvant des problèmes.",
+      "Tu ramasses des objets, les combines et parles aux personnages pour trouver des indices.",
+      "Ils récompensent la curiosité et la patience plus que les réflexes."
+     ],
+     "q": "Quelle sorte d'histoire aimerais-tu explorer dans un jeu ?",
+     "c": "Invente le début d'une aventure en trois lignes : un lieu, un mystère, un personnage aidant."
+    },
+    "it": {
+     "t": "Giochi d'avventura",
+     "g": "Esplorare giochi di luoghi, enigmi e dialoghi con i personaggi.",
+     "p": [
+      "I giochi d'avventura fanno avanzare la storia esplorando e risolvendo problemi.",
+      "Raccogli oggetti, li combini e parli con i personaggi per trovare indizi.",
+      "Premiano curiosità e pazienza più dei riflessi rapidi."
+     ],
+     "q": "Che tipo di storia ti piacerebbe esplorare in un gioco?",
+     "c": "Inventa l'inizio di un'avventura in tre righe: un luogo, un mistero e un personaggio amico."
+    },
+    "pt": {
+     "t": "Jogos de aventura",
+     "g": "Explorar jogos de lugares, enigmas e conversas com personagens.",
+     "p": [
+      "Os jogos de aventura avançam a história explorando e resolvendo problemas.",
+      "Apanhas objetos, combinas e falas com personagens para achar pistas.",
+      "Premeiam a curiosidade e a paciência mais do que os reflexos rápidos."
+     ],
+     "q": "Que tipo de história gostarias de explorar num jogo?",
+     "c": "Inventa o início de uma aventura em três linhas: um lugar, um mistério e uma personagem simpática."
+    },
+    "pt_BR": {
+     "t": "Jogos de aventura",
+     "g": "Explorar jogos de lugares, enigmas e conversas com personagens.",
+     "p": [
+      "Os jogos de aventura avançam a história explorando e resolvendo problemas.",
+      "Você coleta objetos, combina e fala com personagens para achar pistas.",
+      "Premiam a curiosidade e a paciência mais do que os reflexos rápidos."
+     ],
+     "q": "Que tipo de história você gostaria de explorar num jogo?",
+     "c": "Invente o início de uma aventura em três linhas: um lugar, um mistério e um personagem simpático."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Role-playing games",
+     "g": "Learn how RPGs let you grow a character and make story choices.",
+     "p": [
+      "In an RPG you play a character who gains skills and gear over time.",
+      "Your choices can change the story, allies and endings.",
+      "RPGs often run long, so they suit players who like deep worlds."
+     ],
+     "q": "Which kind of hero would you create: wise, brave or clever?",
+     "c": "Design a character in three lines: name, one strength and one funny flaw."
+    },
+    "de": {
+     "t": "Rollenspiele",
+     "g": "Lernen, wie Rollenspiele dich eine Figur entwickeln und Geschichten lenken lassen.",
+     "p": [
+      "Im Rollenspiel spielst du eine Figur, die mit der Zeit Fähigkeiten und Ausrüstung gewinnt.",
+      "Deine Entscheidungen können Geschichte, Verbündete und Enden verändern.",
+      "Rollenspiele sind oft lang und passen zu Spielern, die tiefe Welten mögen."
+     ],
+     "q": "Welche Art Held würdest du erschaffen: weise, mutig oder schlau?",
+     "c": "Entwirf eine Figur in drei Zeilen: Name, eine Stärke und eine lustige Schwäche."
+    },
+    "es": {
+     "t": "Juegos de rol",
+     "g": "Aprender cómo los RPG te dejan hacer crecer a un personaje y elegir en la historia.",
+     "p": [
+      "En un RPG juegas con un personaje que gana habilidades y equipo con el tiempo.",
+      "Tus decisiones pueden cambiar la historia, los aliados y los finales.",
+      "Los RPG suelen ser largos, ideales para quien disfruta de mundos profundos."
+     ],
+     "q": "¿Qué tipo de héroe crearías: sabio, valiente o astuto?",
+     "c": "Diseña un personaje en tres líneas: nombre, una fortaleza y un defecto divertido."
+    },
+    "fr": {
+     "t": "Jeux de rôle",
+     "g": "Comprendre comment les RPG font évoluer un personnage et laissent choisir l'histoire.",
+     "p": [
+      "Dans un RPG, tu joues un personnage qui gagne compétences et équipement au fil du temps.",
+      "Tes choix peuvent changer l'histoire, les alliés et les fins.",
+      "Les RPG sont souvent longs, parfaits pour qui aime les mondes riches."
+     ],
+     "q": "Quel type de héros créerais-tu : sage, courageux ou malin ?",
+     "c": "Conçois un personnage en trois lignes : nom, une force et un défaut amusant."
+    },
+    "it": {
+     "t": "Giochi di ruolo",
+     "g": "Capire come i GDR ti fanno crescere un personaggio e scegliere la storia.",
+     "p": [
+      "In un GDR interpreti un personaggio che ottiene abilità ed equipaggiamento col tempo.",
+      "Le tue scelte possono cambiare la storia, gli alleati e i finali.",
+      "I GDR sono spesso lunghi e piacciono a chi ama i mondi profondi."
+     ],
+     "q": "Che tipo di eroe creeresti: saggio, coraggioso o astuto?",
+     "c": "Progetta un personaggio in tre righe: nome, un punto di forza e un difetto buffo."
+    },
+    "pt": {
+     "t": "Jogos de rol",
+     "g": "Perceber como os RPG te deixam fazer crescer uma personagem e escolher na história.",
+     "p": [
+      "Num RPG controlas uma personagem que ganha habilidades e equipamento com o tempo.",
+      "As tuas escolhas podem mudar a história, os aliados e os finais.",
+      "Os RPG costumam ser longos, ideais para quem gosta de mundos profundos."
+     ],
+     "q": "Que tipo de herói criarias: sábio, corajoso ou esperto?",
+     "c": "Cria uma personagem em três linhas: nome, uma força e um defeito engraçado."
+    },
+    "pt_BR": {
+     "t": "Jogos de RPG",
+     "g": "Entender como os RPGs deixam você fazer um personagem crescer e escolher na história.",
+     "p": [
+      "Num RPG você controla um personagem que ganha habilidades e equipamento com o tempo.",
+      "Suas escolhas podem mudar a história, os aliados e os finais.",
+      "Os RPGs costumam ser longos, ideais para quem curte mundos profundos."
+     ],
+     "q": "Que tipo de herói você criaria: sábio, corajoso ou esperto?",
+     "c": "Crie um personagem em três linhas: nome, uma força e um defeito engraçado."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Strategy games",
+     "g": "Explore games about planning, resources and outthinking opponents.",
+     "p": [
+      "Strategy games reward planning ahead more than fast reflexes.",
+      "You manage resources like food, wood or time to grow your side.",
+      "Real-time games keep moving, while turn-based ones let you think calmly."
+     ],
+     "q": "Do you prefer thinking slowly or deciding quickly?",
+     "c": "Plan a small goal for tomorrow in three steps, like a mini strategy."
+    },
+    "de": {
+     "t": "Strategiespiele",
+     "g": "Spiele über Planung, Ressourcen und das Überlisten von Gegnern erkunden.",
+     "p": [
+      "Strategiespiele belohnen vorausschauende Planung mehr als schnelle Reflexe.",
+      "Du verwaltest Ressourcen wie Nahrung, Holz oder Zeit, um zu wachsen.",
+      "Echtzeitspiele laufen weiter, rundenbasierte lassen dich in Ruhe überlegen."
+     ],
+     "q": "Denkst du lieber langsam oder entscheidest du schnell?",
+     "c": "Plane ein kleines Ziel für morgen in drei Schritten, als Mini-Strategie."
+    },
+    "es": {
+     "t": "Juegos de estrategia",
+     "g": "Explorar juegos de planificar, gestionar recursos y superar en ingenio al rival.",
+     "p": [
+      "Los juegos de estrategia premian planear con antelación más que los reflejos.",
+      "Gestionas recursos como comida, madera o tiempo para hacer crecer tu bando.",
+      "Los de tiempo real no se detienen y los por turnos permiten pensar con calma."
+     ],
+     "q": "¿Prefieres pensar despacio o decidir rápido?",
+     "c": "Planea una meta pequeña para mañana en tres pasos, como una mini estrategia."
+    },
+    "fr": {
+     "t": "Jeux de stratégie",
+     "g": "Explorer les jeux de planification, de ressources et de ruse face aux adversaires.",
+     "p": [
+      "Les jeux de stratégie récompensent l'anticipation plus que les réflexes.",
+      "Tu gères des ressources comme la nourriture, le bois ou le temps pour faire grandir ton camp.",
+      "Le temps réel ne s'arrête pas, le tour par tour laisse réfléchir au calme."
+     ],
+     "q": "Préfères-tu réfléchir lentement ou décider vite ?",
+     "c": "Planifie un petit objectif pour demain en trois étapes, comme une mini-stratégie."
+    },
+    "it": {
+     "t": "Giochi di strategia",
+     "g": "Esplorare giochi di pianificazione, risorse e di astuzia contro gli avversari.",
+     "p": [
+      "I giochi di strategia premiano la pianificazione più dei riflessi rapidi.",
+      "Gestisci risorse come cibo, legno o tempo per far crescere la tua parte.",
+      "Quelli in tempo reale non si fermano, quelli a turni lasciano pensare con calma."
+     ],
+     "q": "Preferisci pensare lentamente o decidere in fretta?",
+     "c": "Pianifica un piccolo obiettivo per domani in tre passi, come una mini strategia."
+    },
+    "pt": {
+     "t": "Jogos de estratégia",
+     "g": "Explorar jogos de planear, gerir recursos e superar os adversários em astúcia.",
+     "p": [
+      "Os jogos de estratégia premeiam o planeamento mais do que os reflexos rápidos.",
+      "Geres recursos como comida, madeira ou tempo para fazer crescer o teu lado.",
+      "Os de tempo real não param e os por turnos deixam pensar com calma."
+     ],
+     "q": "Preferes pensar devagar ou decidir depressa?",
+     "c": "Planeia um pequeno objetivo para amanhã em três passos, como uma mini estratégia."
+    },
+    "pt_BR": {
+     "t": "Jogos de estratégia",
+     "g": "Explorar jogos de planejar, gerenciar recursos e superar adversários em astúcia.",
+     "p": [
+      "Os jogos de estratégia premiam o planejamento mais do que os reflexos rápidos.",
+      "Você gerencia recursos como comida, madeira ou tempo para fazer seu lado crescer.",
+      "Os de tempo real não param e os por turnos deixam pensar com calma."
+     ],
+     "q": "Você prefere pensar devagar ou decidir rápido?",
+     "c": "Planeje um pequeno objetivo para amanhã em três passos, como uma mini estratégia."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Simulation games",
+     "g": "Learn how simulation games let you run farms, cities or trains.",
+     "p": [
+      "Simulations model real activities so you can try them in a safe way.",
+      "You learn how systems connect, like traffic, crops or customers.",
+      "Many are relaxing, with no fixed ending and no hurry."
+     ],
+     "q": "What would you love to run in a simulation: a farm, a city or a cafe?",
+     "c": "Imagine your dream simulation and name its two most important systems."
+    },
+    "de": {
+     "t": "Simulationsspiele",
+     "g": "Lernen, wie du in Simulationen Farmen, Städte oder Züge führen kannst.",
+     "p": [
+      "Simulationen bilden echte Tätigkeiten nach, damit du sie gefahrlos ausprobierst.",
+      "Du lernst, wie Systeme zusammenhängen, etwa Verkehr, Ernte oder Kundschaft.",
+      "Viele sind entspannend, ohne festes Ende und ohne Eile."
+     ],
+     "q": "Was würdest du gern in einer Simulation leiten: Farm, Stadt oder Café?",
+     "c": "Stell dir deine Traumsimulation vor und nenne ihre zwei wichtigsten Systeme."
+    },
+    "es": {
+     "t": "Juegos de simulación",
+     "g": "Aprender cómo las simulaciones te dejan dirigir granjas, ciudades o trenes.",
+     "p": [
+      "Las simulaciones imitan actividades reales para probarlas sin riesgo.",
+      "Aprendes cómo se conectan los sistemas, como el tráfico, las cosechas o los clientes.",
+      "Muchas son relajantes, sin final fijo y sin prisa."
+     ],
+     "q": "¿Qué te encantaría dirigir en una simulación: una granja, una ciudad o un café?",
+     "c": "Imagina tu simulación soñada y nombra sus dos sistemas más importantes."
+    },
+    "fr": {
+     "t": "Jeux de simulation",
+     "g": "Découvrir comment les simulations te laissent gérer fermes, villes ou trains.",
+     "p": [
+      "Les simulations modélisent des activités réelles pour les essayer sans risque.",
+      "Tu apprends comment les systèmes s'enchaînent, comme le trafic, les récoltes ou les clients.",
+      "Beaucoup sont reposantes, sans fin fixe et sans pression."
+     ],
+     "q": "Que rêverais-tu de gérer dans une simulation : une ferme, une ville ou un café ?",
+     "c": "Imagine ta simulation idéale et nomme ses deux systèmes les plus importants."
+    },
+    "it": {
+     "t": "Giochi di simulazione",
+     "g": "Scoprire come le simulazioni ti fanno gestire fattorie, città o treni.",
+     "p": [
+      "Le simulazioni riproducono attività reali per provarle in sicurezza.",
+      "Impari come i sistemi si collegano, come traffico, raccolti o clienti.",
+      "Molte sono rilassanti, senza finale fisso e senza fretta."
+     ],
+     "q": "Cosa ameresti gestire in una simulazione: una fattoria, una città o un caffè?",
+     "c": "Immagina la tua simulazione ideale e indica i suoi due sistemi più importanti."
+    },
+    "pt": {
+     "t": "Jogos de simulação",
+     "g": "Aprender como as simulações te deixam gerir quintas, cidades ou comboios.",
+     "p": [
+      "As simulações imitam atividades reais para as experimentares sem risco.",
+      "Aprendes como os sistemas se ligam, como o trânsito, as colheitas ou os clientes.",
+      "Muitas são relaxantes, sem final fixo e sem pressa."
+     ],
+     "q": "O que gostarias de gerir numa simulação: uma quinta, uma cidade ou um café?",
+     "c": "Imagina a tua simulação de sonho e diz os seus dois sistemas mais importantes."
+    },
+    "pt_BR": {
+     "t": "Jogos de simulação",
+     "g": "Aprender como as simulações deixam você gerenciar fazendas, cidades ou trens.",
+     "p": [
+      "As simulações imitam atividades reais para você experimentá-las sem risco.",
+      "Você aprende como os sistemas se ligam, como trânsito, colheitas ou clientes.",
+      "Muitas são relaxantes, sem final fixo e sem pressa."
+     ],
+     "q": "O que você adoraria gerenciar numa simulação: uma fazenda, uma cidade ou um café?",
+     "c": "Imagine sua simulação dos sonhos e diga seus dois sistemas mais importantes."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sports and racing games",
+     "g": "See how real sports and driving come to the screen.",
+     "p": [
+      "Some sports games aim for realism, with real teams and rules.",
+      "Arcade versions favour speed and fun over accuracy.",
+      "They are great for playing together, even for beginners."
+     ],
+     "q": "Which sport or race would you love to play on screen?",
+     "c": "Invent a silly new sport in two lines and give it a name."
+    },
+    "de": {
+     "t": "Sport- und Rennspiele",
+     "g": "Sehen, wie echter Sport und Autofahren auf den Bildschirm kommen.",
+     "p": [
+      "Manche Sportspiele streben Realismus an, mit echten Teams und Regeln.",
+      "Arcade-Varianten setzen auf Tempo und Spaß statt Genauigkeit.",
+      "Sie eignen sich gut zum gemeinsamen Spielen, auch für Anfänger."
+     ],
+     "q": "Welchen Sport oder welches Rennen würdest du gern am Bildschirm spielen?",
+     "c": "Erfinde in zwei Zeilen eine verrückte neue Sportart und gib ihr einen Namen."
+    },
+    "es": {
+     "t": "Juegos de deportes y carreras",
+     "g": "Ver cómo el deporte real y la conducción llegan a la pantalla.",
+     "p": [
+      "Algunos juegos deportivos buscan el realismo, con equipos y reglas reales.",
+      "Las versiones arcade priorizan velocidad y diversión sobre exactitud.",
+      "Son ideales para jugar juntos, incluso para principiantes."
+     ],
+     "q": "¿Qué deporte o carrera te encantaría jugar en pantalla?",
+     "c": "Inventa un deporte nuevo y disparatado en dos líneas y ponle nombre."
+    },
+    "fr": {
+     "t": "Jeux de sport et de course",
+     "g": "Voir comment le sport réel et la conduite arrivent à l'écran.",
+     "p": [
+      "Certains jeux de sport visent le réalisme, avec de vraies équipes et règles.",
+      "Les versions arcade privilégient vitesse et plaisir plutôt que précision.",
+      "Ils sont parfaits à plusieurs, même pour les débutants."
+     ],
+     "q": "Quel sport ou quelle course aimerais-tu jouer à l'écran ?",
+     "c": "Invente un nouveau sport farfelu en deux lignes et donne-lui un nom."
+    },
+    "it": {
+     "t": "Giochi di sport e corse",
+     "g": "Vedere come lo sport reale e la guida arrivano sullo schermo.",
+     "p": [
+      "Alcuni giochi sportivi puntano al realismo, con squadre e regole vere.",
+      "Le versioni arcade privilegiano velocità e divertimento rispetto alla precisione.",
+      "Sono ottimi da giocare insieme, anche per i principianti."
+     ],
+     "q": "Quale sport o corsa ameresti giocare sullo schermo?",
+     "c": "Inventa un nuovo sport buffo in due righe e dagli un nome."
+    },
+    "pt": {
+     "t": "Jogos de desporto e corridas",
+     "g": "Ver como o desporto real e a condução chegam ao ecrã.",
+     "p": [
+      "Alguns jogos de desporto procuram o realismo, com equipas e regras reais.",
+      "As versões arcade privilegiam velocidade e diversão em vez de exatidão.",
+      "São ótimos para jogar em conjunto, mesmo para principiantes."
+     ],
+     "q": "Que desporto ou corrida gostarias de jogar no ecrã?",
+     "c": "Inventa um desporto novo e maluco em duas linhas e dá-lhe um nome."
+    },
+    "pt_BR": {
+     "t": "Jogos de esporte e corrida",
+     "g": "Ver como o esporte real e a direção chegam à tela.",
+     "p": [
+      "Alguns jogos de esporte buscam o realismo, com times e regras reais.",
+      "As versões arcade priorizam velocidade e diversão em vez de exatidão.",
+      "São ótimos para jogar junto, até para iniciantes."
+     ],
+     "q": "Que esporte ou corrida você gostaria de jogar na tela?",
+     "c": "Invente um esporte novo e maluco em duas linhas e dê um nome a ele."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rhythm and music games",
+     "g": "Discover games where you press, dance or sing in time with the beat.",
+     "p": [
+      "Rhythm games turn music into a challenge of timing.",
+      "You follow cues on screen and match them with buttons, steps or your voice.",
+      "They train your sense of beat and are great fun at parties."
+     ],
+     "q": "What song would make a great rhythm game level?",
+     "c": "Clap along to a favourite song for 30 seconds and keep the beat steady."
+    },
+    "de": {
+     "t": "Rhythmus- und Musikspiele",
+     "g": "Spiele entdecken, in denen du im Takt drückst, tanzt oder singst.",
+     "p": [
+      "Rhythmusspiele machen Musik zu einer Timing-Herausforderung.",
+      "Du folgst Hinweisen auf dem Bildschirm und antwortest mit Tasten, Schritten oder Stimme.",
+      "Sie schulen dein Taktgefühl und machen auf Partys viel Spaß."
+     ],
+     "q": "Welcher Song wäre ein tolles Rhythmusspiel-Level?",
+     "c": "Klatsche 30 Sekunden zu einem Lieblingslied und halte den Takt gleichmäßig."
+    },
+    "es": {
+     "t": "Juegos de ritmo y música",
+     "g": "Descubrir juegos donde pulsas, bailas o cantas al compás.",
+     "p": [
+      "Los juegos de ritmo convierten la música en un reto de sincronía.",
+      "Sigues las señales en pantalla y las igualas con botones, pasos o tu voz.",
+      "Entrenan tu sentido del ritmo y son muy divertidos en fiestas."
+     ],
+     "q": "¿Qué canción sería un gran nivel de un juego de ritmo?",
+     "c": "Aplaude 30 segundos al ritmo de una canción favorita sin perder el compás."
+    },
+    "fr": {
+     "t": "Jeux de rythme et de musique",
+     "g": "Découvrir les jeux où l'on appuie, danse ou chante en rythme.",
+     "p": [
+      "Les jeux de rythme font de la musique un défi de timing.",
+      "Tu suis les indications à l'écran avec des boutons, des pas ou ta voix.",
+      "Ils entraînent le sens du rythme et sont très drôles en soirée."
+     ],
+     "q": "Quelle chanson ferait un super niveau de jeu de rythme ?",
+     "c": "Tape dans tes mains 30 secondes sur une chanson préférée en gardant le tempo."
+    },
+    "it": {
+     "t": "Giochi di ritmo e musica",
+     "g": "Scoprire giochi in cui premi, balli o canti a tempo.",
+     "p": [
+      "I giochi di ritmo trasformano la musica in una sfida di tempismo.",
+      "Segui i segnali sullo schermo e li abbini a pulsanti, passi o alla voce.",
+      "Allenano il senso del ritmo e sono divertentissimi alle feste."
+     ],
+     "q": "Quale canzone sarebbe un ottimo livello di un gioco di ritmo?",
+     "c": "Batti le mani per 30 secondi su una canzone preferita mantenendo il tempo."
+    },
+    "pt": {
+     "t": "Jogos de ritmo e música",
+     "g": "Descobrir jogos em que carregas, danças ou cantas ao compasso.",
+     "p": [
+      "Os jogos de ritmo transformam a música num desafio de sincronia.",
+      "Segues as indicações no ecrã e acompanhas com botões, passos ou a voz.",
+      "Treinam o sentido de ritmo e são muito divertidos em festas."
+     ],
+     "q": "Que canção daria um ótimo nível de um jogo de ritmo?",
+     "c": "Bate palmas 30 segundos a uma canção favorita mantendo o compasso."
+    },
+    "pt_BR": {
+     "t": "Jogos de ritmo e música",
+     "g": "Descobrir jogos em que você aperta, dança ou canta no compasso.",
+     "p": [
+      "Os jogos de ritmo transformam a música num desafio de sincronia.",
+      "Você segue as dicas na tela e acompanha com botões, passos ou a voz.",
+      "Treinam o senso de ritmo e são muito divertidos em festas."
+     ],
+     "q": "Que música daria uma ótima fase de um jogo de ritmo?",
+     "c": "Bata palmas por 30 segundos numa música favorita mantendo o compasso."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sandbox and creative games",
+     "g": "Explore open worlds where building matters more than winning.",
+     "p": [
+      "Sandbox games give you tools and let you set your own goals.",
+      "You can build houses, machines or whole cities from simple blocks.",
+      "Creativity and experimenting are the real rewards."
+     ],
+     "q": "What would you build first in a world with no limits?",
+     "c": "Sketch or describe a small build you would make, with a name for it."
+    },
+    "de": {
+     "t": "Sandbox- und Kreativspiele",
+     "g": "Offene Welten erkunden, in denen Bauen wichtiger ist als Gewinnen.",
+     "p": [
+      "Sandbox-Spiele geben dir Werkzeuge und lassen dich eigene Ziele setzen.",
+      "Aus einfachen Blöcken baust du Häuser, Maschinen oder ganze Städte.",
+      "Kreativität und Ausprobieren sind die eigentliche Belohnung."
+     ],
+     "q": "Was würdest du in einer Welt ohne Grenzen zuerst bauen?",
+     "c": "Skizziere oder beschreibe ein kleines Bauwerk und gib ihm einen Namen."
+    },
+    "es": {
+     "t": "Juegos sandbox y creativos",
+     "g": "Explorar mundos abiertos donde construir importa más que ganar.",
+     "p": [
+      "Los juegos sandbox te dan herramientas y te dejan fijar tus propias metas.",
+      "Puedes construir casas, máquinas o ciudades enteras con bloques simples.",
+      "La creatividad y experimentar son la verdadera recompensa."
+     ],
+     "q": "¿Qué construirías primero en un mundo sin límites?",
+     "c": "Dibuja o describe una construcción pequeña que harías y ponle nombre."
+    },
+    "fr": {
+     "t": "Jeux bac à sable et créatifs",
+     "g": "Explorer des mondes ouverts où construire compte plus que gagner.",
+     "p": [
+      "Les jeux bac à sable donnent des outils et laissent fixer ses propres buts.",
+      "Avec de simples blocs, tu bâtis maisons, machines ou villes entières.",
+      "La créativité et l'expérimentation sont la vraie récompense."
+     ],
+     "q": "Que construirais-tu en premier dans un monde sans limites ?",
+     "c": "Dessine ou décris une petite construction que tu ferais et donne-lui un nom."
+    },
+    "it": {
+     "t": "Giochi sandbox e creativi",
+     "g": "Esplorare mondi aperti dove costruire conta più che vincere.",
+     "p": [
+      "I giochi sandbox ti danno strumenti e ti lasciano fissare i tuoi obiettivi.",
+      "Con semplici blocchi puoi costruire case, macchine o intere città.",
+      "Creatività e sperimentazione sono la vera ricompensa."
+     ],
+     "q": "Cosa costruiresti per primo in un mondo senza limiti?",
+     "c": "Disegna o descrivi una piccola costruzione che faresti e dalle un nome."
+    },
+    "pt": {
+     "t": "Jogos sandbox e criativos",
+     "g": "Explorar mundos abertos onde construir importa mais do que ganhar.",
+     "p": [
+      "Os jogos sandbox dão ferramentas e deixam definir os teus objetivos.",
+      "Podes construir casas, máquinas ou cidades inteiras com blocos simples.",
+      "A criatividade e a experimentação são a verdadeira recompensa."
+     ],
+     "q": "O que construirias primeiro num mundo sem limites?",
+     "c": "Desenha ou descreve uma pequena construção que farias e dá-lhe um nome."
+    },
+    "pt_BR": {
+     "t": "Jogos sandbox e criativos",
+     "g": "Explorar mundos abertos onde construir importa mais do que ganhar.",
+     "p": [
+      "Os jogos sandbox dão ferramentas e deixam você definir seus objetivos.",
+      "Você pode construir casas, máquinas ou cidades inteiras com blocos simples.",
+      "A criatividade e a experimentação são a verdadeira recompensa."
+     ],
+     "q": "O que você construiria primeiro num mundo sem limites?",
+     "c": "Desenhe ou descreva uma pequena construção que você faria e dê um nome."
+    }
+   }
+  }
+ ]
+}

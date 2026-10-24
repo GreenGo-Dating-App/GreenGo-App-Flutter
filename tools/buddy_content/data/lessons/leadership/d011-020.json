@@ -1,0 +1,835 @@
+{
+ "topic": "leadership",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why self-awareness comes first",
+     "g": "See how knowing yourself makes you a calmer, fairer leader.",
+     "p": [
+      "Self-awareness means noticing your thoughts, feelings and habits.",
+      "Leaders who know themselves react less and choose more.",
+      "It also helps you understand how others experience you."
+     ],
+     "q": "When did understanding yourself help you handle a tough moment?",
+     "c": "Pause three times today and name what you feel and why."
+    },
+    "de": {
+     "t": "Warum Selbstkenntnis zuerst kommt",
+     "g": "Erkennen, wie Selbstkenntnis dich ruhiger und fairer führen lässt.",
+     "p": [
+      "Selbstwahrnehmung heißt, Gedanken, Gefühle und Gewohnheiten zu bemerken.",
+      "Wer sich kennt, reagiert weniger und entscheidet bewusster.",
+      "Sie hilft auch zu verstehen, wie andere dich erleben."
+     ],
+     "q": "Wann hat dir Selbstkenntnis in einem schwierigen Moment geholfen?",
+     "c": "Halte heute dreimal inne und benenne, was du fühlst und warum."
+    },
+    "es": {
+     "t": "Por qué primero va el autoconocimiento",
+     "g": "Ver cómo conocerte te hace un líder más sereno y justo.",
+     "p": [
+      "Autoconocimiento es notar tus pensamientos, emociones y hábitos.",
+      "Quien se conoce reacciona menos y elige más.",
+      "También ayuda a entender cómo te perciben los demás."
+     ],
+     "q": "¿Cuándo te ayudó conocerte mejor en un momento difícil?",
+     "c": "Haz hoy tres pausas y nombra qué sientes y por qué."
+    },
+    "fr": {
+     "t": "Pourquoi se connaître d'abord",
+     "g": "Voir comment te connaître fait de toi un leader plus calme et plus juste.",
+     "p": [
+      "La conscience de soi, c'est remarquer ses pensées, émotions et habitudes.",
+      "Un leader qui se connaît réagit moins et choisit davantage.",
+      "Elle aide aussi à comprendre comment les autres te perçoivent."
+     ],
+     "q": "Quand t'être connu t'a-t-il aidé dans un moment difficile ?",
+     "c": "Fais trois pauses aujourd'hui et nomme ce que tu ressens et pourquoi."
+    },
+    "it": {
+     "t": "Perché prima viene la consapevolezza di sé",
+     "g": "Vedere come conoscerti ti rende un leader più calmo e giusto.",
+     "p": [
+      "Consapevolezza di sé è notare pensieri, emozioni e abitudini.",
+      "Chi si conosce reagisce meno e sceglie di più.",
+      "Aiuta anche a capire come ti vivono gli altri."
+     ],
+     "q": "Quando conoscerti ti ha aiutato in un momento difficile?",
+     "c": "Fai oggi tre pause e nomina cosa senti e perché."
+    },
+    "pt": {
+     "t": "Porque a autoconsciência vem primeiro",
+     "g": "Ver como te conheceres faz de ti um líder mais calmo e justo.",
+     "p": [
+      "Autoconsciência é notar os teus pensamentos, emoções e hábitos.",
+      "Quem se conhece reage menos e escolhe mais.",
+      "Também ajuda a perceber como os outros te veem."
+     ],
+     "q": "Quando é que te conheceres melhor ajudou num momento difícil?",
+     "c": "Faz hoje três pausas e nomeia o que sentes e porquê."
+    },
+    "pt_BR": {
+     "t": "Por que a autoconsciência vem primeiro",
+     "g": "Ver como se conhecer faz de você um líder mais calmo e justo.",
+     "p": [
+      "Autoconsciência é notar seus pensamentos, emoções e hábitos.",
+      "Quem se conhece reage menos e escolhe mais.",
+      "Também ajuda a entender como os outros enxergam você."
+     ],
+     "q": "Quando se conhecer melhor ajudou você num momento difícil?",
+     "c": "Faça hoje três pausas e diga o que sente e por quê."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Discovering your core values",
+     "g": "Name the values that guide your choices as a leader.",
+     "p": [
+      "Values are what matter most to you, like honesty, growth or respect.",
+      "When you act against a value, you feel uneasy.",
+      "Naming three core values makes decisions clearer."
+     ],
+     "q": "Which three values would you want your team to feel from you?",
+     "c": "Pick three values and write one action that shows each."
+    },
+    "de": {
+     "t": "Deine Grundwerte entdecken",
+     "g": "Die Werte benennen, die deine Entscheidungen als Führungskraft leiten.",
+     "p": [
+      "Werte sind das, was dir am wichtigsten ist, etwa Ehrlichkeit, Wachstum oder Respekt.",
+      "Handelst du gegen einen Wert, fühlst du Unbehagen.",
+      "Drei Kernwerte zu benennen macht Entscheidungen klarer."
+     ],
+     "q": "Welche drei Werte soll dein Team bei dir spüren?",
+     "c": "Wähle drei Werte und schreibe zu jedem eine Handlung, die ihn zeigt."
+    },
+    "es": {
+     "t": "Descubrir tus valores esenciales",
+     "g": "Nombrar los valores que guían tus decisiones como líder.",
+     "p": [
+      "Los valores son lo que más te importa: honestidad, crecimiento, respeto.",
+      "Cuando actúas contra un valor, sientes inquietud.",
+      "Nombrar tres valores clave aclara las decisiones."
+     ],
+     "q": "¿Qué tres valores querrías que tu equipo sintiera en ti?",
+     "c": "Elige tres valores y escribe una acción que muestre cada uno."
+    },
+    "fr": {
+     "t": "Découvrir tes valeurs essentielles",
+     "g": "Nommer les valeurs qui guident tes choix de leader.",
+     "p": [
+      "Les valeurs sont ce qui compte le plus : honnêteté, progrès, respect.",
+      "Agir contre une valeur crée un malaise.",
+      "Nommer trois valeurs clés rend les décisions plus claires."
+     ],
+     "q": "Quelles trois valeurs ton équipe devrait-elle sentir chez toi ?",
+     "c": "Choisis trois valeurs et écris une action qui illustre chacune."
+    },
+    "it": {
+     "t": "Scoprire i tuoi valori fondamentali",
+     "g": "Dare un nome ai valori che guidano le tue scelte da leader.",
+     "p": [
+      "I valori sono ciò che conta di più: onestà, crescita, rispetto.",
+      "Quando agisci contro un valore, senti disagio.",
+      "Nominare tre valori chiave rende le decisioni più chiare."
+     ],
+     "q": "Quali tre valori vorresti che il tuo team sentisse in te?",
+     "c": "Scegli tre valori e scrivi un'azione che mostri ciascuno."
+    },
+    "pt": {
+     "t": "Descobrir os teus valores essenciais",
+     "g": "Nomear os valores que guiam as tuas escolhas como líder.",
+     "p": [
+      "Os valores são o que mais importa: honestidade, crescimento, respeito.",
+      "Quando agis contra um valor, sentes mal-estar.",
+      "Nomear três valores essenciais clarifica as decisões."
+     ],
+     "q": "Que três valores gostarias que a tua equipa sentisse em ti?",
+     "c": "Escolhe três valores e escreve uma ação que mostre cada um."
+    },
+    "pt_BR": {
+     "t": "Descobrindo seus valores essenciais",
+     "g": "Nomear os valores que guiam suas escolhas como líder.",
+     "p": [
+      "Valores são o que mais importa: honestidade, crescimento, respeito.",
+      "Quando você age contra um valor, sente desconforto.",
+      "Nomear três valores essenciais deixa as decisões mais claras."
+     ],
+     "q": "Que três valores você gostaria que seu time sentisse em você?",
+     "c": "Escolha três valores e escreva uma ação que mostre cada um."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your strengths as a leader",
+     "g": "Identify natural strengths and use them well with a team.",
+     "p": [
+      "A strength is something you do well and enjoy doing.",
+      "Ask what people thank you for, since it often points to a strength.",
+      "Use strengths on purpose, and let others cover your gaps."
+     ],
+     "q": "What do people usually come to you for help with?",
+     "c": "Write three strengths and one way to use each at work or home."
+    },
+    "de": {
+     "t": "Deine Stärken als Führungskraft",
+     "g": "Natürliche Stärken erkennen und im Team gut einsetzen.",
+     "p": [
+      "Eine Stärke ist etwas, das du gut kannst und gern tust.",
+      "Frage, wofür Menschen dir danken, das zeigt oft eine Stärke.",
+      "Setze Stärken bewusst ein und lass andere deine Lücken füllen."
+     ],
+     "q": "Wobei kommen andere meist zu dir um Hilfe?",
+     "c": "Schreibe drei Stärken auf und je eine Einsatzidee für Arbeit oder Zuhause."
+    },
+    "es": {
+     "t": "Tus fortalezas como líder",
+     "g": "Identificar fortalezas naturales y usarlas bien con el equipo.",
+     "p": [
+      "Una fortaleza es algo que haces bien y disfrutas hacer.",
+      "Pregunta por qué te dan las gracias; suele señalar una fortaleza.",
+      "Usa tus fortalezas a propósito y deja que otros cubran tus huecos."
+     ],
+     "q": "¿Para qué suelen venir a pedirte ayuda?",
+     "c": "Escribe tres fortalezas y una forma de usar cada una en el trabajo o en casa."
+    },
+    "fr": {
+     "t": "Tes forces de leader",
+     "g": "Repérer tes forces naturelles et bien les utiliser avec une équipe.",
+     "p": [
+      "Une force, c'est ce que tu fais bien et avec plaisir.",
+      "Demande pourquoi on te remercie : cela indique souvent une force.",
+      "Utilise tes forces volontairement et laisse d'autres combler tes limites."
+     ],
+     "q": "Pour quoi les gens viennent-ils habituellement te demander de l'aide ?",
+     "c": "Écris trois forces et une façon d'utiliser chacune au travail ou chez toi."
+    },
+    "it": {
+     "t": "I tuoi punti di forza da leader",
+     "g": "Individuare i punti di forza naturali e usarli bene con il team.",
+     "p": [
+      "Un punto di forza è ciò che fai bene e ti piace fare.",
+      "Chiedi per cosa ti ringraziano: spesso indica un punto di forza.",
+      "Usa i punti di forza di proposito e lascia che altri coprano le tue lacune."
+     ],
+     "q": "Per cosa le persone vengono di solito a chiederti aiuto?",
+     "c": "Scrivi tre punti di forza e un modo per usarli al lavoro o a casa."
+    },
+    "pt": {
+     "t": "As tuas forças como líder",
+     "g": "Identificar forças naturais e usá-las bem com a equipa.",
+     "p": [
+      "Uma força é algo que fazes bem e gostas de fazer.",
+      "Pergunta pelo que te agradecem; muitas vezes aponta uma força.",
+      "Usa as forças de propósito e deixa outros cobrir as tuas lacunas."
+     ],
+     "q": "Para que é que as pessoas costumam pedir a tua ajuda?",
+     "c": "Escreve três forças e uma forma de usar cada uma no trabalho ou em casa."
+    },
+    "pt_BR": {
+     "t": "Suas forças como líder",
+     "g": "Identificar forças naturais e usá-las bem com o time.",
+     "p": [
+      "Uma força é algo que você faz bem e gosta de fazer.",
+      "Pergunte pelo que agradecem a você; muitas vezes aponta uma força.",
+      "Use as forças de propósito e deixe outros cobrirem suas lacunas."
+     ],
+     "q": "Para que as pessoas costumam pedir sua ajuda?",
+     "c": "Escreva três forças e uma forma de usar cada uma no trabalho ou em casa."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Knowing your blind spots",
+     "g": "Discover habits you cannot see yourself by asking trusted people.",
+     "p": [
+      "A blind spot is a habit others notice but you do not.",
+      "Everyone has them, so there is no shame in looking.",
+      "Ask one trusted person what you could do more or less of."
+     ],
+     "q": "What habit might others notice in you that you miss?",
+     "c": "Ask one trusted person for one honest observation and just say thanks."
+    },
+    "de": {
+     "t": "Deine blinden Flecken kennen",
+     "g": "Gewohnheiten entdecken, die du selbst nicht siehst, indem du Vertraute fragst.",
+     "p": [
+      "Ein blinder Fleck ist eine Gewohnheit, die andere sehen, du aber nicht.",
+      "Jeder hat welche, es ist keine Schande, sie zu suchen.",
+      "Frage eine vertraute Person, was du mehr oder weniger tun könntest."
+     ],
+     "q": "Welche Gewohnheit bemerken andere vielleicht an dir, du aber nicht?",
+     "c": "Bitte eine vertraute Person um eine ehrliche Beobachtung und sag nur danke."
+    },
+    "es": {
+     "t": "Conocer tus puntos ciegos",
+     "g": "Descubrir hábitos que no ves en ti preguntando a personas de confianza.",
+     "p": [
+      "Un punto ciego es un hábito que otros notan y tú no.",
+      "Todos tenemos alguno, no hay vergüenza en buscarlos.",
+      "Pregunta a alguien de confianza qué podrías hacer más o menos."
+     ],
+     "q": "¿Qué hábito podrían notar otros en ti sin que tú lo veas?",
+     "c": "Pide a alguien de confianza una observación sincera y solo da las gracias."
+    },
+    "fr": {
+     "t": "Connaître tes angles morts",
+     "g": "Découvrir des habitudes invisibles pour toi en interrogeant des proches de confiance.",
+     "p": [
+      "Un angle mort est une habitude que les autres voient et pas toi.",
+      "Tout le monde en a, et il n'y a pas de honte à les chercher.",
+      "Demande à une personne de confiance ce que tu pourrais faire plus ou moins."
+     ],
+     "q": "Quelle habitude les autres remarquent-ils peut-être chez toi sans que tu le voies ?",
+     "c": "Demande à quelqu'un de confiance une remarque honnête et dis simplement merci."
+    },
+    "it": {
+     "t": "Conoscere i tuoi punti ciechi",
+     "g": "Scoprire abitudini che non vedi da solo chiedendo a persone di fiducia.",
+     "p": [
+      "Un punto cieco è un'abitudine che gli altri notano e tu no.",
+      "Tutti ne abbiamo, e cercarli non è una vergogna.",
+      "Chiedi a una persona fidata cosa potresti fare di più o di meno."
+     ],
+     "q": "Quale abitudine gli altri potrebbero notare in te senza che tu la veda?",
+     "c": "Chiedi a una persona fidata un'osservazione onesta e di' solo grazie."
+    },
+    "pt": {
+     "t": "Conhecer os teus pontos cegos",
+     "g": "Descobrir hábitos que não vês em ti, perguntando a pessoas de confiança.",
+     "p": [
+      "Um ponto cego é um hábito que os outros notam e tu não.",
+      "Todos temos alguns, e não há vergonha em procurá-los.",
+      "Pergunta a alguém de confiança o que poderias fazer mais ou menos."
+     ],
+     "q": "Que hábito poderão os outros notar em ti sem tu veres?",
+     "c": "Pede a alguém de confiança uma observação sincera e diz apenas obrigado."
+    },
+    "pt_BR": {
+     "t": "Conhecendo seus pontos cegos",
+     "g": "Descobrir hábitos que você não vê em si perguntando a pessoas de confiança.",
+     "p": [
+      "Um ponto cego é um hábito que os outros notam e você não.",
+      "Todo mundo tem alguns, e não há vergonha em procurá-los.",
+      "Pergunte a alguém de confiança o que você poderia fazer mais ou menos."
+     ],
+     "q": "Que hábito os outros podem notar em você sem que você perceba?",
+     "c": "Peça a alguém de confiança uma observação sincera e apenas agradeça."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Emotions at work",
+     "g": "Recognise your emotions and how they shape decisions and team mood.",
+     "p": [
+      "Emotions are signals, not enemies; they carry useful information.",
+      "Strong feelings can bend decisions if we do not notice them.",
+      "Naming a feeling in words often makes it easier to handle."
+     ],
+     "q": "Which emotion shows up most often when you lead or help others?",
+     "c": "Three times today, finish the sentence: right now I feel..."
+    },
+    "de": {
+     "t": "Gefühle bei der Arbeit",
+     "g": "Eigene Gefühle erkennen und wie sie Entscheidungen und Stimmung im Team prägen.",
+     "p": [
+      "Gefühle sind Signale, keine Feinde; sie tragen nützliche Informationen.",
+      "Starke Gefühle können Entscheidungen verzerren, wenn wir sie übersehen.",
+      "Ein Gefühl in Worte zu fassen macht es oft leichter handhabbar."
+     ],
+     "q": "Welches Gefühl taucht beim Führen oder Helfen am häufigsten auf?",
+     "c": "Vervollständige heute dreimal den Satz: Gerade fühle ich..."
+    },
+    "es": {
+     "t": "Emociones en el trabajo",
+     "g": "Reconocer tus emociones y cómo influyen en decisiones y clima del equipo.",
+     "p": [
+      "Las emociones son señales, no enemigas; dan información útil.",
+      "Los sentimientos fuertes pueden torcer decisiones si no los notamos.",
+      "Ponerle nombre a una emoción suele hacerla más manejable."
+     ],
+     "q": "¿Qué emoción aparece más al liderar o ayudar a otros?",
+     "c": "Tres veces hoy, completa la frase: ahora mismo siento..."
+    },
+    "fr": {
+     "t": "Les émotions au travail",
+     "g": "Reconnaître tes émotions et leur effet sur les décisions et l'ambiance.",
+     "p": [
+      "Les émotions sont des signaux, pas des ennemies ; elles informent.",
+      "Les émotions fortes peuvent fausser nos décisions si on les ignore.",
+      "Mettre un mot sur une émotion la rend souvent plus facile à gérer."
+     ],
+     "q": "Quelle émotion revient le plus quand tu guides ou aides les autres ?",
+     "c": "Trois fois aujourd'hui, complète la phrase : en ce moment, je ressens..."
+    },
+    "it": {
+     "t": "Le emozioni al lavoro",
+     "g": "Riconoscere le tue emozioni e come influenzano decisioni e clima del team.",
+     "p": [
+      "Le emozioni sono segnali, non nemiche; portano informazioni utili.",
+      "Emozioni forti possono piegare le decisioni se non le notiamo.",
+      "Dare un nome a un'emozione spesso la rende più gestibile."
+     ],
+     "q": "Quale emozione compare più spesso quando guidi o aiuti gli altri?",
+     "c": "Tre volte oggi completa la frase: in questo momento sento..."
+    },
+    "pt": {
+     "t": "Emoções no trabalho",
+     "g": "Reconhecer as tuas emoções e como influenciam decisões e o ambiente da equipa.",
+     "p": [
+      "As emoções são sinais, não inimigas; trazem informação útil.",
+      "Emoções fortes podem torcer decisões se não as notarmos.",
+      "Dar nome a uma emoção costuma torná-la mais fácil de gerir."
+     ],
+     "q": "Que emoção surge mais ao liderar ou ajudar os outros?",
+     "c": "Três vezes hoje, completa a frase: neste momento sinto..."
+    },
+    "pt_BR": {
+     "t": "Emoções no trabalho",
+     "g": "Reconhecer suas emoções e como elas influenciam decisões e o clima do time.",
+     "p": [
+      "Emoções são sinais, não inimigas; trazem informação útil.",
+      "Emoções fortes podem entortar decisões se não as notarmos.",
+      "Dar nome a uma emoção costuma torná-la mais fácil de lidar."
+     ],
+     "q": "Que emoção aparece mais quando você lidera ou ajuda os outros?",
+     "c": "Três vezes hoje, complete a frase: neste momento eu sinto..."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Staying calm under pressure",
+     "g": "Use simple techniques to pause, breathe and respond, not react.",
+     "p": [
+      "Pause before answering: even three seconds changes the reply.",
+      "Breathe slowly, longer out than in, to settle your body.",
+      "Ask yourself: what outcome do I want from this moment?"
+     ],
+     "q": "When have you stayed calm in a tense situation, and how?",
+     "c": "Next time you feel tense, take one slow breath before you speak."
+    },
+    "de": {
+     "t": "Ruhe unter Druck",
+     "g": "Mit einfachen Techniken innehalten, atmen und überlegt antworten statt reagieren.",
+     "p": [
+      "Halte vor der Antwort inne: schon drei Sekunden verändern sie.",
+      "Atme langsam, länger aus als ein, um den Körper zu beruhigen.",
+      "Frage dich: Welches Ergebnis will ich in diesem Moment?"
+     ],
+     "q": "Wann bist du in einer angespannten Lage ruhig geblieben, und wie?",
+     "c": "Atme bei Anspannung einmal langsam durch, bevor du sprichst."
+    },
+    "es": {
+     "t": "Mantener la calma bajo presión",
+     "g": "Usar técnicas sencillas para pausar, respirar y responder en vez de reaccionar.",
+     "p": [
+      "Haz una pausa antes de responder: tres segundos cambian la respuesta.",
+      "Respira despacio, soltando más largo que al inhalar, para calmar el cuerpo.",
+      "Pregúntate: ¿qué resultado quiero de este momento?"
+     ],
+     "q": "¿Cuándo mantuviste la calma en una situación tensa y cómo?",
+     "c": "La próxima vez que sientas tensión, respira hondo una vez antes de hablar."
+    },
+    "fr": {
+     "t": "Rester calme sous pression",
+     "g": "Utiliser des techniques simples pour faire une pause, respirer et répondre sans réagir.",
+     "p": [
+      "Marque une pause avant de répondre : trois secondes changent la réponse.",
+      "Respire lentement, en expirant plus longtemps qu'en inspirant.",
+      "Demande-toi : quel résultat est-ce que je veux à cet instant ?"
+     ],
+     "q": "Quand es-tu resté calme dans une situation tendue, et comment ?",
+     "c": "La prochaine fois que tu es tendu, respire lentement une fois avant de parler."
+    },
+    "it": {
+     "t": "Restare calmi sotto pressione",
+     "g": "Usare tecniche semplici per fermarti, respirare e rispondere invece di reagire.",
+     "p": [
+      "Fai una pausa prima di rispondere: tre secondi cambiano la risposta.",
+      "Respira lentamente, espirando più a lungo di quanto inspiri.",
+      "Chiediti: quale risultato voglio da questo momento?"
+     ],
+     "q": "Quando sei rimasto calmo in una situazione tesa e come?",
+     "c": "La prossima volta che senti tensione, fai un respiro lento prima di parlare."
+    },
+    "pt": {
+     "t": "Manter a calma sob pressão",
+     "g": "Usar técnicas simples para pausar, respirar e responder em vez de reagir.",
+     "p": [
+      "Faz uma pausa antes de responder: três segundos mudam a resposta.",
+      "Respira devagar, expirando mais tempo do que inspiras.",
+      "Pergunta-te: que resultado quero deste momento?"
+     ],
+     "q": "Quando mantiveste a calma numa situação tensa e como?",
+     "c": "Da próxima vez que sentires tensão, respira devagar uma vez antes de falar."
+    },
+    "pt_BR": {
+     "t": "Mantendo a calma sob pressão",
+     "g": "Usar técnicas simples para pausar, respirar e responder em vez de reagir.",
+     "p": [
+      "Faça uma pausa antes de responder: três segundos mudam a resposta.",
+      "Respire devagar, soltando o ar por mais tempo do que puxa.",
+      "Pergunte-se: que resultado eu quero desse momento?"
+     ],
+     "q": "Quando você manteve a calma numa situação tensa e como?",
+     "c": "Na próxima vez que sentir tensão, respire devagar uma vez antes de falar."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your energy and moods as a leader",
+     "g": "See how a leader's mood spreads and how to manage it kindly.",
+     "p": [
+      "Moods are contagious: a tense leader makes a tense room.",
+      "You do not need to fake joy, just be steady and honest.",
+      "Small resets help: a walk, water, a stretch, a short break."
+     ],
+     "q": "How does your mood change the people around you?",
+     "c": "Before your next meeting or chat, take one minute to reset your mood."
+    },
+    "de": {
+     "t": "Deine Energie und Stimmung als Führungskraft",
+     "g": "Sehen, wie sich die Stimmung der Führung überträgt und wie du sie freundlich lenkst.",
+     "p": [
+      "Stimmungen sind ansteckend: Anspannung an der Spitze erfasst den Raum.",
+      "Du musst keine Freude vortäuschen, nur stabil und ehrlich sein.",
+      "Kleine Resets helfen: Spaziergang, Wasser, Dehnen, kurze Pause."
+     ],
+     "q": "Wie verändert deine Stimmung die Menschen um dich?",
+     "c": "Nimm dir vor dem nächsten Treffen eine Minute, um deine Stimmung zu ordnen."
+    },
+    "es": {
+     "t": "Tu energía y ánimo como líder",
+     "g": "Ver cómo se contagia el ánimo del líder y cómo manejarlo con cuidado.",
+     "p": [
+      "El ánimo se contagia: un líder tenso tensa a todo el grupo.",
+      "No necesitas fingir alegría, basta con ser estable y honesto.",
+      "Pequeños reinicios ayudan: un paseo, agua, estirarte, una pausa."
+     ],
+     "q": "¿Cómo cambia tu ánimo a las personas a tu alrededor?",
+     "c": "Antes de tu próxima reunión o charla, dedica un minuto a reajustar tu ánimo."
+    },
+    "fr": {
+     "t": "Ton énergie et ton humeur de leader",
+     "g": "Voir comment l'humeur d'un leader se propage et la gérer avec douceur.",
+     "p": [
+      "L'humeur est contagieuse : un leader tendu tend toute la pièce.",
+      "Pas besoin de feindre la joie, juste d'être stable et honnête.",
+      "De petits resets aident : marcher, boire, s'étirer, faire une pause."
+     ],
+     "q": "Comment ton humeur change-t-elle les gens autour de toi ?",
+     "c": "Avant ta prochaine réunion ou discussion, prends une minute pour te recentrer."
+    },
+    "it": {
+     "t": "La tua energia e il tuo umore da leader",
+     "g": "Vedere come si diffonde l'umore del leader e gestirlo con gentilezza.",
+     "p": [
+      "L'umore è contagioso: un leader teso rende teso tutto il gruppo.",
+      "Non devi fingere gioia, basta essere stabile e onesto.",
+      "Piccoli reset aiutano: una passeggiata, acqua, stretching, una pausa."
+     ],
+     "q": "Come cambia il tuo umore le persone intorno a te?",
+     "c": "Prima della prossima riunione o chiacchierata, dedica un minuto a riequilibrarti."
+    },
+    "pt": {
+     "t": "A tua energia e humor como líder",
+     "g": "Ver como o humor do líder se espalha e geri-lo com cuidado.",
+     "p": [
+      "O humor é contagioso: um líder tenso deixa a sala tensa.",
+      "Não precisas de fingir alegria, basta seres estável e honesto.",
+      "Pequenos reinícios ajudam: um passeio, água, alongar, uma pausa."
+     ],
+     "q": "Como é que o teu humor muda as pessoas à tua volta?",
+     "c": "Antes da próxima reunião ou conversa, dedica um minuto a reequilibrar o teu humor."
+    },
+    "pt_BR": {
+     "t": "Sua energia e humor como líder",
+     "g": "Ver como o humor do líder se espalha e cuidar dele com gentileza.",
+     "p": [
+      "O humor é contagioso: um líder tenso deixa a sala tensa.",
+      "Você não precisa fingir alegria, basta ser estável e honesto.",
+      "Pequenos reinícios ajudam: uma caminhada, água, alongar, uma pausa."
+     ],
+     "q": "Como o seu humor muda as pessoas ao seu redor?",
+     "c": "Antes da próxima reunião ou conversa, dedique um minuto a reequilibrar seu humor."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Personality and work preferences",
+     "g": "Understand introvert, extrovert and other preferences without labels.",
+     "p": [
+      "Some people recharge alone, others with people; both can lead well.",
+      "Preferences are tendencies, not boxes, and they can flex.",
+      "Ask people how they like to work, then adapt where you can."
+     ],
+     "q": "Do you recharge alone or with others, and how does it show at work?",
+     "c": "Ask one person how they prefer to get information and honour it."
+    },
+    "de": {
+     "t": "Persönlichkeit und Arbeitsvorlieben",
+     "g": "Introvertiert, extrovertiert und andere Vorlieben ohne Schubladen verstehen.",
+     "p": [
+      "Manche laden allein auf, andere unter Menschen; beide können gut führen.",
+      "Vorlieben sind Tendenzen, keine Schubladen, und sie sind flexibel.",
+      "Frage Menschen, wie sie gern arbeiten, und passe dich wo möglich an."
+     ],
+     "q": "Lädst du allein oder mit anderen auf, und wie zeigt sich das im Alltag?",
+     "c": "Frage eine Person, wie sie Informationen am liebsten bekommt, und beachte es."
+    },
+    "es": {
+     "t": "Personalidad y preferencias de trabajo",
+     "g": "Entender introversión, extroversión y otras preferencias sin etiquetas.",
+     "p": [
+      "Unos recargan energía a solas, otros con gente; ambos pueden liderar bien.",
+      "Las preferencias son tendencias, no cajas, y pueden flexibilizarse.",
+      "Pregunta cómo prefieren trabajar y adáptate cuando puedas."
+     ],
+     "q": "¿Recargas energía a solas o con otros y cómo se nota en el trabajo?",
+     "c": "Pregunta a una persona cómo prefiere recibir información y respétalo."
+    },
+    "fr": {
+     "t": "Personnalité et préférences de travail",
+     "g": "Comprendre introversion, extraversion et autres préférences sans étiquettes.",
+     "p": [
+      "Certains se ressourcent seuls, d'autres entourés ; les deux peuvent guider.",
+      "Les préférences sont des tendances, pas des cases, et elles évoluent.",
+      "Demande comment chacun aime travailler et adapte-toi quand tu peux."
+     ],
+     "q": "Te ressources-tu seul ou avec d'autres, et comment cela se voit-il au travail ?",
+     "c": "Demande à une personne comment elle préfère recevoir l'information, et respecte-le."
+    },
+    "it": {
+     "t": "Personalità e preferenze di lavoro",
+     "g": "Capire introversione, estroversione e altre preferenze senza etichette.",
+     "p": [
+      "Alcuni si ricaricano da soli, altri con la gente; entrambi possono guidare bene.",
+      "Le preferenze sono tendenze, non scatole, e possono flettersi.",
+      "Chiedi come preferiscono lavorare e adattati dove puoi."
+     ],
+     "q": "Ti ricarichi da solo o con gli altri, e come si vede al lavoro?",
+     "c": "Chiedi a una persona come preferisce ricevere le informazioni e rispettalo."
+    },
+    "pt": {
+     "t": "Personalidade e preferências de trabalho",
+     "g": "Perceber introversão, extroversão e outras preferências sem rótulos.",
+     "p": [
+      "Uns recarregam sozinhos, outros com pessoas; ambos podem liderar bem.",
+      "As preferências são tendências, não caixas, e podem ser flexíveis.",
+      "Pergunta como gostam de trabalhar e adapta-te quando puderes."
+     ],
+     "q": "Recarregas sozinho ou com outros, e como se nota no trabalho?",
+     "c": "Pergunta a uma pessoa como prefere receber informação e respeita isso."
+    },
+    "pt_BR": {
+     "t": "Personalidade e preferências de trabalho",
+     "g": "Entender introversão, extroversão e outras preferências sem rótulos.",
+     "p": [
+      "Uns recarregam sozinhos, outros com gente; ambos podem liderar bem.",
+      "Preferências são tendências, não caixas, e podem ser flexíveis.",
+      "Pergunte como gostam de trabalhar e adapte-se quando puder."
+     ],
+     "q": "Você recarrega sozinho ou com outros, e como isso aparece no trabalho?",
+     "c": "Pergunte a uma pessoa como prefere receber informação e respeite isso."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing your leadership purpose",
+     "g": "Write a short statement of why you want to lead and whom you serve.",
+     "p": [
+      "A purpose statement is one or two honest sentences.",
+      "Include whom you want to help and what difference you want to make.",
+      "Keep it simple enough to remember when things get busy."
+     ],
+     "q": "Why do you want to lead, and who benefits when you do it well?",
+     "c": "Draft your purpose in two sentences and read it aloud once."
+    },
+    "de": {
+     "t": "Deinen Führungssinn formulieren",
+     "g": "Kurz aufschreiben, warum du führen willst und wem du dienst.",
+     "p": [
+      "Ein Leitsatz besteht aus ein oder zwei ehrlichen Sätzen.",
+      "Nenne, wem du helfen und welchen Unterschied du machen willst.",
+      "Halte ihn so einfach, dass du ihn auch im Trubel behältst."
+     ],
+     "q": "Warum willst du führen, und wer profitiert, wenn du es gut machst?",
+     "c": "Entwirf deinen Leitsatz in zwei Sätzen und lies ihn einmal laut vor."
+    },
+    "es": {
+     "t": "Escribir tu propósito como líder",
+     "g": "Redactar una frase breve sobre por qué quieres liderar y a quién sirves.",
+     "p": [
+      "Un propósito son una o dos frases honestas.",
+      "Incluye a quién quieres ayudar y qué diferencia quieres hacer.",
+      "Hazlo lo bastante simple para recordarlo cuando haya mucho ajetreo."
+     ],
+     "q": "¿Por qué quieres liderar y quién se beneficia si lo haces bien?",
+     "c": "Redacta tu propósito en dos frases y léelo una vez en voz alta."
+    },
+    "fr": {
+     "t": "Écrire ta raison de guider",
+     "g": "Rédiger une courte phrase sur pourquoi tu veux guider et qui tu sers.",
+     "p": [
+      "Une raison d'être tient en une ou deux phrases honnêtes.",
+      "Précise qui tu veux aider et quelle différence tu veux faire.",
+      "Garde-la assez simple pour t'en souvenir quand tout s'agite."
+     ],
+     "q": "Pourquoi veux-tu guider, et qui en profite si tu le fais bien ?",
+     "c": "Rédige ta raison d'être en deux phrases et lis-la une fois à voix haute."
+    },
+    "it": {
+     "t": "Scrivere il tuo scopo da leader",
+     "g": "Scrivere una breve frase su perché vuoi guidare e chi servi.",
+     "p": [
+      "Uno scopo sono una o due frasi oneste.",
+      "Includi chi vuoi aiutare e quale differenza vuoi fare.",
+      "Tienilo abbastanza semplice da ricordarlo quando c'è caos."
+     ],
+     "q": "Perché vuoi guidare e chi ne beneficia se lo fai bene?",
+     "c": "Scrivi il tuo scopo in due frasi e leggilo una volta ad alta voce."
+    },
+    "pt": {
+     "t": "Escrever o teu propósito de liderança",
+     "g": "Escrever uma frase curta sobre porque queres liderar e a quem serves.",
+     "p": [
+      "Um propósito são uma ou duas frases honestas.",
+      "Inclui quem queres ajudar e que diferença queres fazer.",
+      "Mantém-no simples para o lembrares quando houver muito corrupio."
+     ],
+     "q": "Porque queres liderar e quem beneficia se o fizeres bem?",
+     "c": "Escreve o teu propósito em duas frases e lê-o uma vez em voz alta."
+    },
+    "pt_BR": {
+     "t": "Escrevendo seu propósito de liderança",
+     "g": "Escrever uma frase curta sobre por que você quer liderar e a quem serve.",
+     "p": [
+      "Um propósito são uma ou duas frases honestas.",
+      "Inclua quem você quer ajudar e que diferença quer fazer.",
+      "Mantenha simples para lembrar quando tudo estiver corrido."
+     ],
+     "q": "Por que você quer liderar e quem se beneficia se você fizer bem?",
+     "c": "Escreva seu propósito em duas frases e leia uma vez em voz alta."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keeping a leadership journal",
+     "g": "Build a daily reflection habit to learn from your leadership moments.",
+     "p": [
+      "Five minutes a day is enough to notice patterns.",
+      "Write what happened, what you did, and what you would repeat.",
+      "Reviewing entries weekly shows real growth over time."
+     ],
+     "q": "What moment from this week would be worth writing about?",
+     "c": "Tonight write three lines: what went well, what to try, what I learned."
+    },
+    "de": {
+     "t": "Ein Führungstagebuch führen",
+     "g": "Eine tägliche Reflexionsgewohnheit aufbauen, um aus Führungsmomenten zu lernen.",
+     "p": [
+      "Fünf Minuten täglich genügen, um Muster zu erkennen.",
+      "Schreibe, was geschah, was du tatest und was du wiederholen würdest.",
+      "Wöchentliches Durchlesen zeigt echtes Wachstum."
+     ],
+     "q": "Welcher Moment dieser Woche wäre eine Notiz wert?",
+     "c": "Schreibe heute Abend drei Zeilen: Was lief gut, was probiere ich, was lernte ich."
+    },
+    "es": {
+     "t": "Llevar un diario de liderazgo",
+     "g": "Crear un hábito diario de reflexión para aprender de tus momentos de liderazgo.",
+     "p": [
+      "Cinco minutos al día bastan para notar patrones.",
+      "Escribe qué pasó, qué hiciste y qué repetirías.",
+      "Repasar las notas cada semana muestra un crecimiento real."
+     ],
+     "q": "¿Qué momento de esta semana valdría la pena anotar?",
+     "c": "Esta noche escribe tres líneas: qué salió bien, qué probar, qué aprendí."
+    },
+    "fr": {
+     "t": "Tenir un journal de leadership",
+     "g": "Prendre l'habitude de réfléchir chaque jour pour apprendre de tes moments de leader.",
+     "p": [
+      "Cinq minutes par jour suffisent pour repérer des schémas.",
+      "Note ce qui s'est passé, ce que tu as fait et ce que tu referais.",
+      "Relire chaque semaine montre une vraie progression."
+     ],
+     "q": "Quel moment de cette semaine mérite d'être noté ?",
+     "c": "Ce soir, écris trois lignes : ce qui a marché, à essayer, ce que j'ai appris."
+    },
+    "it": {
+     "t": "Tenere un diario di leadership",
+     "g": "Costruire un'abitudine quotidiana di riflessione per imparare dai tuoi momenti da leader.",
+     "p": [
+      "Cinque minuti al giorno bastano per notare degli schemi.",
+      "Scrivi cosa è successo, cosa hai fatto e cosa ripeteresti.",
+      "Rileggere ogni settimana mostra una crescita reale."
+     ],
+     "q": "Quale momento di questa settimana varrebbe la pena annotare?",
+     "c": "Stasera scrivi tre righe: cosa è andato bene, cosa provare, cosa ho imparato."
+    },
+    "pt": {
+     "t": "Manter um diário de liderança",
+     "g": "Criar um hábito diário de reflexão para aprender com os teus momentos de líder.",
+     "p": [
+      "Cinco minutos por dia bastam para notar padrões.",
+      "Escreve o que aconteceu, o que fizeste e o que repetirias.",
+      "Rever as notas todas as semanas mostra crescimento real."
+     ],
+     "q": "Que momento desta semana valeria a pena registar?",
+     "c": "Esta noite escreve três linhas: o que correu bem, o que testar, o que aprendi."
+    },
+    "pt_BR": {
+     "t": "Mantendo um diário de liderança",
+     "g": "Criar um hábito diário de reflexão para aprender com seus momentos de líder.",
+     "p": [
+      "Cinco minutos por dia bastam para notar padrões.",
+      "Escreva o que aconteceu, o que você fez e o que repetiria.",
+      "Rever as notas toda semana mostra crescimento real."
+     ],
+     "q": "Que momento desta semana valeria a pena registrar?",
+     "c": "Hoje à noite escreva três linhas: o que foi bem, o que testar, o que aprendi."
+    }
+   }
+  }
+ ]
+}

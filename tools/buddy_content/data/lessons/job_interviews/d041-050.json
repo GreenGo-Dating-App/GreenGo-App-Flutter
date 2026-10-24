@@ -1,0 +1,835 @@
+{
+ "topic": "job_interviews",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What to wear",
+     "g": "Match your outfit to the company's style while feeling comfortable.",
+     "p": [
+      "Look at the company's photos and website to see the usual dress style.",
+      "When unsure, dress one step smarter than the daily style there.",
+      "Choose clean, ironed clothes you can sit and move in comfortably."
+     ],
+     "q": "Which outfit makes you feel most confident and like yourself?",
+     "c": "Pick a full outfit for an interview and try it on today."
+    },
+    "de": {
+     "t": "Was ziehe ich an?",
+     "g": "Die Kleidung dem Stil der Firma anpassen und dich dabei wohlfühlen.",
+     "p": [
+      "Schau dir Fotos und Website der Firma an, um den üblichen Stil zu sehen.",
+      "Im Zweifel kleide dich eine Stufe schicker als der Alltag dort.",
+      "Wähle saubere, gebügelte Kleidung, in der du bequem sitzen und dich bewegen kannst."
+     ],
+     "q": "In welchem Outfit fühlst du dich am sichersten und ganz du selbst?",
+     "c": "Wähle ein komplettes Outfit für ein Gespräch und probiere es heute an."
+    },
+    "es": {
+     "t": "Qué ponerte",
+     "g": "Adaptar tu atuendo al estilo de la empresa sintiéndote cómodo.",
+     "p": [
+      "Mira las fotos y la web de la empresa para ver el estilo habitual.",
+      "Si dudas, vístete un paso más formal que el día a día de allí.",
+      "Elige ropa limpia y planchada en la que puedas sentarte y moverte con comodidad."
+     ],
+     "q": "¿Qué conjunto te hace sentir más seguro y tú mismo?",
+     "c": "Elige un conjunto completo para una entrevista y pruébatelo hoy."
+    },
+    "fr": {
+     "t": "Quoi porter",
+     "g": "Adapter votre tenue au style de l'entreprise tout en restant à l'aise.",
+     "p": [
+      "Regardez les photos et le site de l'entreprise pour voir le style habituel.",
+      "En cas de doute, habillez-vous un cran au-dessus du quotidien sur place.",
+      "Choisissez des vêtements propres et repassés dans lesquels vous bougez à l'aise."
+     ],
+     "q": "Quelle tenue vous donne le plus de confiance et vous ressemble le plus ?",
+     "c": "Choisissez une tenue complète pour un entretien et essayez-la aujourd'hui."
+    },
+    "it": {
+     "t": "Cosa indossare",
+     "g": "Adattare il tuo abbigliamento allo stile dell'azienda restando a tuo agio.",
+     "p": [
+      "Guarda le foto e il sito dell'azienda per vedere lo stile abituale.",
+      "Nel dubbio, vestiti un gradino più elegante rispetto al quotidiano lì.",
+      "Scegli abiti puliti e stirati in cui puoi sederti e muoverti comodamente."
+     ],
+     "q": "Quale outfit ti fa sentire più sicuro e te stesso?",
+     "c": "Scegli un outfit completo per un colloquio e provalo oggi."
+    },
+    "pt": {
+     "t": "O que vestir",
+     "g": "Adaptar a roupa ao estilo da empresa, sentindo-te confortável.",
+     "p": [
+      "Vê as fotografias e o site da empresa para perceber o estilo habitual.",
+      "Em caso de dúvida, veste-te um degrau acima do dia a dia de lá.",
+      "Escolhe roupa limpa e engomada em que consigas sentar-te e mover-te à vontade."
+     ],
+     "q": "Que conjunto te faz sentir mais confiante e tu próprio?",
+     "c": "Escolhe um conjunto completo para uma entrevista e experimenta-o hoje."
+    },
+    "pt_BR": {
+     "t": "O que vestir",
+     "g": "Adaptar a roupa ao estilo da empresa, sentindo-se confortável.",
+     "p": [
+      "Veja as fotos e o site da empresa para perceber o estilo habitual.",
+      "Na dúvida, vista-se um degrau acima do dia a dia de lá.",
+      "Escolha roupas limpas e passadas em que você consiga sentar e se mover à vontade."
+     ],
+     "q": "Que roupa faz você se sentir mais confiante e você mesmo?",
+     "c": "Escolha um look completo para uma entrevista e experimente hoje."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Planning the journey",
+     "g": "Plan timing, route and a backup plan so you arrive calm and on time.",
+     "p": [
+      "Check the route and travel time before the day, ideally at a similar hour.",
+      "Add extra minutes for delays, parking, security or finding the room.",
+      "Keep the contact number handy in case something goes wrong."
+     ],
+     "q": "How do you usually plan a trip to somewhere new?",
+     "c": "Map your route to an interview place and add a backup option."
+    },
+    "de": {
+     "t": "Die Anreise planen",
+     "g": "Zeit, Route und einen Plan B vorbereiten, damit du ruhig und pünktlich ankommst.",
+     "p": [
+      "Prüfe Route und Reisezeit vorab, am besten zur ähnlichen Tageszeit.",
+      "Plane Puffer ein für Verspätungen, Parkplatzsuche, Sicherheitskontrolle oder den Raum.",
+      "Halte die Kontaktnummer bereit, falls etwas schiefgeht."
+     ],
+     "q": "Wie planst du üblicherweise eine Fahrt zu einem neuen Ort?",
+     "c": "Plane die Route zu einem Gesprächsort und füge eine Ausweichmöglichkeit hinzu."
+    },
+    "es": {
+     "t": "Planificar el trayecto",
+     "g": "Planificar horarios, ruta y un plan B para llegar tranquilo y a tiempo.",
+     "p": [
+      "Revisa la ruta y el tiempo de viaje antes del día, a ser posible a una hora parecida.",
+      "Añade minutos extra por retrasos, aparcamiento, seguridad o para encontrar la sala.",
+      "Ten a mano el teléfono de contacto por si surge algún problema."
+     ],
+     "q": "¿Cómo sueles planificar un viaje a un lugar nuevo?",
+     "c": "Traza la ruta a un lugar de entrevista y añade una opción de respaldo."
+    },
+    "fr": {
+     "t": "Préparer le trajet",
+     "g": "Prévoir horaires, itinéraire et plan de secours pour arriver calme et à l'heure.",
+     "p": [
+      "Vérifiez l'itinéraire et le temps de trajet avant le jour J, idéalement à une heure similaire.",
+      "Ajoutez du temps pour les retards, le stationnement, la sécurité ou trouver la salle.",
+      "Gardez le numéro de contact à portée de main en cas de souci."
+     ],
+     "q": "Comment préparez-vous d'habitude un trajet vers un lieu nouveau ?",
+     "c": "Tracez l'itinéraire vers un lieu d'entretien et ajoutez une solution de secours."
+    },
+    "it": {
+     "t": "Pianificare il tragitto",
+     "g": "Pianificare tempi, percorso e un piano di riserva per arrivare calmo e puntuale.",
+     "p": [
+      "Controlla percorso e tempo di viaggio prima del giorno, possibilmente a un orario simile.",
+      "Aggiungi minuti extra per ritardi, parcheggio, controlli o per trovare la sala.",
+      "Tieni a portata di mano il numero di contatto in caso di imprevisti."
+     ],
+     "q": "Come pianifichi di solito un viaggio verso un posto nuovo?",
+     "c": "Traccia il percorso verso un luogo di colloquio e aggiungi un'alternativa di riserva."
+    },
+    "pt": {
+     "t": "Planear a viagem",
+     "g": "Planear horários, trajeto e um plano B para chegares calmo e a horas.",
+     "p": [
+      "Verifica o trajeto e o tempo de viagem antes do dia, de preferência a uma hora semelhante.",
+      "Junta minutos extra para atrasos, estacionamento, segurança ou para encontrar a sala.",
+      "Tem à mão o contacto telefónico caso algo corra mal."
+     ],
+     "q": "Como costumas planear uma viagem para um sítio novo?",
+     "c": "Traça o trajeto até um local de entrevista e junta uma opção de reserva."
+    },
+    "pt_BR": {
+     "t": "Planejando o trajeto",
+     "g": "Planejar horários, trajeto e um plano B para chegar calmo e no horário.",
+     "p": [
+      "Confira o trajeto e o tempo de viagem antes do dia, de preferência em horário parecido.",
+      "Some minutos extras para atrasos, estacionamento, segurança ou para achar a sala.",
+      "Deixe o telefone de contato à mão caso algo dê errado."
+     ],
+     "q": "Como você costuma planejar uma viagem para um lugar novo?",
+     "c": "Trace o trajeto até um local de entrevista e acrescente uma opção reserva."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Arriving at the right time",
+     "g": "Arrive about ten minutes early and use waiting time well.",
+     "p": [
+      "Arriving very early can pressure the host, and late adds stress.",
+      "Use spare minutes to breathe, review notes and switch off your phone.",
+      "Be pleasant to anyone you meet while waiting."
+     ],
+     "q": "What helps you feel calm while you wait for something important?",
+     "c": "Plan how you would use ten minutes of waiting time before an interview."
+    },
+    "de": {
+     "t": "Zum richtigen Zeitpunkt ankommen",
+     "g": "Etwa zehn Minuten früher da sein und die Wartezeit gut nutzen.",
+     "p": [
+      "Zu frühes Erscheinen kann die Gastgeber unter Druck setzen, Verspätung erzeugt Stress.",
+      "Nutze die Minuten zum Atmen, zum Durchsehen der Notizen und um das Handy auszuschalten.",
+      "Sei freundlich zu allen, denen du beim Warten begegnest."
+     ],
+     "q": "Was hilft dir, ruhig zu bleiben, während du auf etwas Wichtiges wartest?",
+     "c": "Plane, wie du zehn Minuten Wartezeit vor einem Gespräch nutzen würdest."
+    },
+    "es": {
+     "t": "Llegar a la hora justa",
+     "g": "Llegar unos diez minutos antes y aprovechar bien la espera.",
+     "p": [
+      "Llegar demasiado pronto puede presionar a quien recibe, y tarde añade estrés.",
+      "Usa los minutos libres para respirar, repasar notas y apagar el móvil.",
+      "Sé amable con cualquiera que encuentres mientras esperas."
+     ],
+     "q": "¿Qué te ayuda a estar tranquilo mientras esperas algo importante?",
+     "c": "Planifica cómo aprovecharías diez minutos de espera antes de una entrevista."
+    },
+    "fr": {
+     "t": "Arriver au bon moment",
+     "g": "Arriver environ dix minutes en avance et bien utiliser l'attente.",
+     "p": [
+      "Arriver trop tôt peut mettre la pression à l'hôte, et en retard cela ajoute du stress.",
+      "Profitez de ces minutes pour respirer, relire vos notes et éteindre votre téléphone.",
+      "Soyez aimable avec toute personne croisée pendant l'attente."
+     ],
+     "q": "Qu'est-ce qui vous aide à rester calme en attendant quelque chose d'important ?",
+     "c": "Prévoyez comment vous utiliseriez dix minutes d'attente avant un entretien."
+    },
+    "it": {
+     "t": "Arrivare al momento giusto",
+     "g": "Arrivare circa dieci minuti prima e usare bene l'attesa.",
+     "p": [
+      "Arrivare troppo presto può mettere pressione a chi ospita, e in ritardo aggiunge stress.",
+      "Usa i minuti liberi per respirare, rivedere gli appunti e spegnere il telefono.",
+      "Sii gentile con chiunque incontri mentre aspetti."
+     ],
+     "q": "Cosa ti aiuta a restare calmo mentre aspetti qualcosa di importante?",
+     "c": "Pianifica come useresti dieci minuti di attesa prima di un colloquio."
+    },
+    "pt": {
+     "t": "Chegar à hora certa",
+     "g": "Chegar cerca de dez minutos antes e aproveitar bem a espera.",
+     "p": [
+      "Chegar demasiado cedo pode pressionar quem recebe, e chegar tarde traz stress.",
+      "Usa os minutos livres para respirar, rever notas e desligar o telemóvel.",
+      "Sê simpático com quem encontrares enquanto esperas."
+     ],
+     "q": "O que te ajuda a manter a calma enquanto esperas algo importante?",
+     "c": "Planeia como usarias dez minutos de espera antes de uma entrevista."
+    },
+    "pt_BR": {
+     "t": "Chegando na hora certa",
+     "g": "Chegar cerca de dez minutos antes e aproveitar bem a espera.",
+     "p": [
+      "Chegar cedo demais pode pressionar quem recebe, e chegar tarde causa estresse.",
+      "Use os minutos livres para respirar, rever as anotações e silenciar o celular.",
+      "Seja simpático com quem encontrar enquanto espera."
+     ],
+     "q": "O que ajuda você a manter a calma enquanto espera algo importante?",
+     "c": "Planeje como você usaria dez minutos de espera antes de uma entrevista."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What to bring",
+     "g": "Bring copies of your CV, notes, a pen, your questions and anything requested.",
+     "p": [
+      "A few printed CVs, a notebook and a pen are classic essentials.",
+      "Bring any documents, samples or ID the employer asked for.",
+      "Keep everything tidy in one bag or folder you can open easily."
+     ],
+     "q": "What would you put in your interview bag?",
+     "c": "Pack your interview bag today and check it against a short list."
+    },
+    "de": {
+     "t": "Was du mitbringen solltest",
+     "g": "Lebenslauf-Kopien, Notizen, Stift, deine Fragen und alles Angeforderte mitbringen.",
+     "p": [
+      "Ein paar gedruckte Lebensläufe, ein Notizbuch und ein Stift sind Klassiker.",
+      "Bring Unterlagen, Arbeitsproben oder Ausweise mit, um die gebeten wurde.",
+      "Halte alles ordentlich in einer Tasche oder Mappe, die du leicht öffnen kannst."
+     ],
+     "q": "Was würdest du in deine Gesprächstasche packen?",
+     "c": "Packe heute deine Gesprächstasche und gleiche sie mit einer kurzen Liste ab."
+    },
+    "es": {
+     "t": "Qué llevar",
+     "g": "Llevar copias de tu CV, notas, un bolígrafo, tus preguntas y lo que te hayan pedido.",
+     "p": [
+      "Unos cuantos CV impresos, una libreta y un bolígrafo son los clásicos.",
+      "Lleva los documentos, muestras o identificación que haya pedido la empresa.",
+      "Mantén todo ordenado en un bolso o carpeta que abras con facilidad."
+     ],
+     "q": "¿Qué meterías en tu bolsa de entrevista?",
+     "c": "Prepara hoy tu bolsa de entrevista y compárala con una lista corta."
+    },
+    "fr": {
+     "t": "Quoi apporter",
+     "g": "Apporter des copies de votre CV, des notes, un stylo, vos questions et ce qui a été demandé.",
+     "p": [
+      "Quelques CV imprimés, un carnet et un stylo sont des classiques.",
+      "Apportez les documents, échantillons ou pièces d'identité demandés par l'employeur.",
+      "Gardez tout bien rangé dans un sac ou une pochette faciles à ouvrir."
+     ],
+     "q": "Que mettriez-vous dans votre sac d'entretien ?",
+     "c": "Préparez votre sac d'entretien aujourd'hui et comparez-le à une courte liste."
+    },
+    "it": {
+     "t": "Cosa portare",
+     "g": "Portare copie del CV, appunti, una penna, le tue domande e tutto ciò che è stato richiesto.",
+     "p": [
+      "Qualche CV stampato, un taccuino e una penna sono i classici.",
+      "Porta documenti, campioni o identificazione richiesti dall'azienda.",
+      "Tieni tutto in ordine in una borsa o cartellina facile da aprire."
+     ],
+     "q": "Cosa metteresti nella tua borsa da colloquio?",
+     "c": "Prepara oggi la tua borsa da colloquio e confrontala con una breve lista."
+    },
+    "pt": {
+     "t": "O que levar",
+     "g": "Levar cópias do CV, notas, uma caneta, as tuas perguntas e o que tiver sido pedido.",
+     "p": [
+      "Alguns CV impressos, um caderno e uma caneta são os clássicos.",
+      "Leva os documentos, amostras ou identificação que a empresa pediu.",
+      "Mantém tudo arrumado numa mala ou pasta que abras com facilidade."
+     ],
+     "q": "O que meterias na tua mala de entrevista?",
+     "c": "Prepara hoje a tua mala de entrevista e compara-a com uma lista curta."
+    },
+    "pt_BR": {
+     "t": "O que levar",
+     "g": "Levar cópias do currículo, anotações, uma caneta, suas perguntas e o que tiver sido pedido.",
+     "p": [
+      "Alguns currículos impressos, um caderno e uma caneta são os clássicos.",
+      "Leve os documentos, amostras ou identificação que a empresa pediu.",
+      "Mantenha tudo organizado em uma bolsa ou pasta fácil de abrir."
+     ],
+     "q": "O que você colocaria na sua bolsa de entrevista?",
+     "c": "Prepare hoje a sua bolsa de entrevista e confira com uma lista curta."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Being kind to everyone",
+     "g": "The receptionist and every person you meet are part of the impression.",
+     "p": [
+      "Treat everyone from the front desk to the lift kindly.",
+      "Say thank you, learn names and be patient with everyone.",
+      "Respectful habits are noticed and often mentioned later."
+     ],
+     "q": "How do you want people to feel after a short meeting with you?",
+     "c": "Greet three people today with eye contact, a smile and a kind word."
+    },
+    "de": {
+     "t": "Zu allen freundlich sein",
+     "g": "Warum Empfang und jede Person, der du begegnest, Teil des Eindrucks sind.",
+     "p": [
+      "Behandle alle freundlich, vom Empfang bis zum Aufzug.",
+      "Sage danke, merke dir Namen und sei mit allen geduldig.",
+      "Respektvolle Gewohnheiten fallen auf und werden oft später erwähnt."
+     ],
+     "q": "Wie sollen sich Menschen nach einer kurzen Begegnung mit dir fühlen?",
+     "c": "Grüße heute drei Menschen mit Blickkontakt, Lächeln und einem freundlichen Wort."
+    },
+    "es": {
+     "t": "Ser amable con todos",
+     "g": "La recepcionista y cada persona que conoces forman parte de la impresión.",
+     "p": [
+      "Trata con amabilidad a todos, desde la recepción hasta el ascensor.",
+      "Da las gracias, aprende nombres y ten paciencia con todos.",
+      "Los hábitos respetuosos se notan y a menudo se comentan después."
+     ],
+     "q": "¿Cómo quieres que se sienta la gente tras un encuentro breve contigo?",
+     "c": "Saluda hoy a tres personas con contacto visual, una sonrisa y una palabra amable."
+    },
+    "fr": {
+     "t": "Être aimable avec tout le monde",
+     "g": "L'accueil et chaque personne rencontrée font partie de l'impression laissée.",
+     "p": [
+      "Traitez chacun avec gentillesse, de l'accueil à l'ascenseur.",
+      "Dites merci, retenez les prénoms et soyez patient avec tous.",
+      "Les habitudes respectueuses se remarquent et sont souvent évoquées ensuite."
+     ],
+     "q": "Comment voulez-vous que les gens se sentent après une courte rencontre avec vous ?",
+     "c": "Saluez trois personnes aujourd'hui avec regard, sourire et un mot aimable."
+    },
+    "it": {
+     "t": "Essere gentili con tutti",
+     "g": "La receptionist e ogni persona che incontri fanno parte dell'impressione.",
+     "p": [
+      "Tratta tutti con gentilezza, dalla reception all'ascensore.",
+      "Di' grazie, impara i nomi e sii paziente con tutti.",
+      "Le abitudini rispettose si notano e spesso vengono ricordate dopo."
+     ],
+     "q": "Come vuoi che si sentano le persone dopo un breve incontro con te?",
+     "c": "Oggi saluta tre persone con contatto visivo, un sorriso e una parola gentile."
+    },
+    "pt": {
+     "t": "Ser simpático com todos",
+     "g": "A rececionista e cada pessoa que encontras fazem parte da impressão.",
+     "p": [
+      "Trata todos com simpatia, da receção ao elevador.",
+      "Diz obrigado, aprende nomes e tem paciência com todos.",
+      "Hábitos respeitosos notam-se e muitas vezes são comentados depois."
+     ],
+     "q": "Como queres que as pessoas se sintam depois de um encontro breve contigo?",
+     "c": "Cumprimenta hoje três pessoas com contacto visual, um sorriso e uma palavra simpática."
+    },
+    "pt_BR": {
+     "t": "Sendo gentil com todos",
+     "g": "A recepcionista e cada pessoa que você encontra fazem parte da impressão.",
+     "p": [
+      "Trate todos com gentileza, da recepção ao elevador.",
+      "Diga obrigado, aprenda nomes e tenha paciência com todos.",
+      "Hábitos respeitosos são notados e muitas vezes comentados depois."
+     ],
+     "q": "Como você quer que as pessoas se sintam depois de um encontro breve com você?",
+     "c": "Cumprimente hoje três pessoas com contato visual, um sorriso e uma palavra gentil."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Managing interview nerves",
+     "g": "Use simple breathing and mindset tips to turn nerves into useful energy.",
+     "p": [
+      "Nerves are normal and show that you care about the result.",
+      "Try slow breathing: in for four counts, out for six.",
+      "Tell yourself I am prepared and curious, and focus on the conversation."
+     ],
+     "q": "What calms you down when you feel nervous before something important?",
+     "c": "Try the four-in six-out breathing for one minute and notice how you feel."
+    },
+    "de": {
+     "t": "Nervosität im Griff",
+     "g": "Mit einfachen Atem- und Denktipps Nervosität in nützliche Energie verwandeln.",
+     "p": [
+      "Nervosität ist normal und zeigt, dass dir das Ergebnis wichtig ist.",
+      "Probiere langsames Atmen: vier Zähler ein, sechs Zähler aus.",
+      "Sage dir, ich bin vorbereitet und neugierig, und konzentriere dich auf das Gespräch."
+     ],
+     "q": "Was beruhigt dich, wenn du vor etwas Wichtigem nervös bist?",
+     "c": "Probiere eine Minute lang das Atmen vier ein, sechs aus und spüre den Unterschied."
+    },
+    "es": {
+     "t": "Gestionar los nervios",
+     "g": "Usar respiración y mentalidad sencillas para convertir los nervios en energía útil.",
+     "p": [
+      "Los nervios son normales y muestran que te importa el resultado.",
+      "Prueba la respiración lenta: inspira cuatro tiempos y espira seis.",
+      "Dite estoy preparado y con curiosidad, y céntrate en la conversación."
+     ],
+     "q": "¿Qué te calma cuando estás nervioso antes de algo importante?",
+     "c": "Prueba la respiración de cuatro y seis durante un minuto y observa cómo te sientes."
+    },
+    "fr": {
+     "t": "Gérer le trac",
+     "g": "Utiliser respiration et état d'esprit simples pour transformer le trac en énergie utile.",
+     "p": [
+      "Le trac est normal et montre que le résultat compte pour vous.",
+      "Essayez la respiration lente : inspirez sur quatre temps, expirez sur six.",
+      "Dites-vous je suis préparé et curieux, et concentrez-vous sur la conversation."
+     ],
+     "q": "Qu'est-ce qui vous calme quand vous avez le trac avant un moment important ?",
+     "c": "Essayez la respiration quatre-six pendant une minute et notez ce que vous ressentez."
+    },
+    "it": {
+     "t": "Gestire l'ansia da colloquio",
+     "g": "Usare respirazione e mentalità semplici per trasformare l'agitazione in energia utile.",
+     "p": [
+      "L'agitazione è normale e mostra che ci tieni al risultato.",
+      "Prova la respirazione lenta: inspira per quattro tempi, espira per sei.",
+      "Dì a te stesso sono preparato e curioso, e concentrati sulla conversazione."
+     ],
+     "q": "Cosa ti calma quando sei agitato prima di qualcosa di importante?",
+     "c": "Prova la respirazione quattro-sei per un minuto e nota come ti senti."
+    },
+    "pt": {
+     "t": "Gerir os nervos",
+     "g": "Usar respiração e mentalidade simples para transformar os nervos em energia útil.",
+     "p": [
+      "Os nervos são normais e mostram que te importas com o resultado.",
+      "Experimenta a respiração lenta: inspira em quatro tempos e expira em seis.",
+      "Diz a ti próprio estou preparado e curioso, e foca-te na conversa."
+     ],
+     "q": "O que te acalma quando estás nervoso antes de algo importante?",
+     "c": "Experimenta a respiração quatro-seis durante um minuto e repara como te sentes."
+    },
+    "pt_BR": {
+     "t": "Lidando com o nervosismo",
+     "g": "Usar respiração e mentalidade simples para transformar o nervosismo em energia útil.",
+     "p": [
+      "O nervosismo é normal e mostra que você se importa com o resultado.",
+      "Experimente a respiração lenta: inspire em quatro tempos e expire em seis.",
+      "Diga a si mesmo estou preparado e curioso, e foque na conversa."
+     ],
+     "q": "O que acalma você quando está nervoso antes de algo importante?",
+     "c": "Experimente a respiração quatro-seis por um minuto e perceba como você se sente."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The night before",
+     "g": "A calm checklist: clothes, documents, route and a good night's sleep.",
+     "p": [
+      "Lay out your outfit, bag, documents and notes in advance.",
+      "Check the route, time and contact details one final time.",
+      "Stop practising early and rest, because sleep helps memory and mood."
+     ],
+     "q": "What helps you wind down and sleep well before a big day?",
+     "c": "Write your night-before checklist with five items."
+    },
+    "de": {
+     "t": "Der Abend davor",
+     "g": "Eine ruhige Checkliste: Kleidung, Unterlagen, Route und guter Schlaf.",
+     "p": [
+      "Lege Outfit, Tasche, Unterlagen und Notizen schon bereit.",
+      "Prüfe Route, Zeit und Kontaktdaten ein letztes Mal.",
+      "Höre früh mit dem Üben auf und ruh dich aus, denn Schlaf hilft Gedächtnis und Stimmung."
+     ],
+     "q": "Was hilft dir, vor einem großen Tag zur Ruhe zu kommen und gut zu schlafen?",
+     "c": "Schreibe deine Checkliste für den Vorabend mit fünf Punkten auf."
+    },
+    "es": {
+     "t": "La noche anterior",
+     "g": "Una lista tranquila: ropa, documentos, ruta y una buena noche de sueño.",
+     "p": [
+      "Deja preparados con antelación el atuendo, la bolsa, los documentos y las notas.",
+      "Revisa por última vez la ruta, la hora y los datos de contacto.",
+      "Deja de practicar temprano y descansa, porque dormir ayuda a la memoria y al ánimo."
+     ],
+     "q": "¿Qué te ayuda a relajarte y dormir bien antes de un gran día?",
+     "c": "Escribe tu lista de la noche anterior con cinco puntos."
+    },
+    "fr": {
+     "t": "La veille",
+     "g": "Une liste calme : vêtements, documents, trajet et une bonne nuit de sommeil.",
+     "p": [
+      "Préparez à l'avance tenue, sac, documents et notes.",
+      "Vérifiez une dernière fois l'itinéraire, l'heure et les coordonnées.",
+      "Arrêtez de vous entraîner tôt et reposez-vous, car le sommeil aide mémoire et humeur."
+     ],
+     "q": "Qu'est-ce qui vous aide à vous détendre et bien dormir avant un grand jour ?",
+     "c": "Écrivez votre liste de la veille en cinq points."
+    },
+    "it": {
+     "t": "La sera prima",
+     "g": "Una lista tranquilla: vestiti, documenti, percorso e una buona notte di sonno.",
+     "p": [
+      "Prepara in anticipo outfit, borsa, documenti e appunti.",
+      "Controlla un'ultima volta percorso, orario e recapiti.",
+      "Smetti presto di esercitarti e riposa, perché il sonno aiuta memoria e umore."
+     ],
+     "q": "Cosa ti aiuta a rilassarti e dormire bene prima di un grande giorno?",
+     "c": "Scrivi la tua lista della sera prima con cinque punti."
+    },
+    "pt": {
+     "t": "A noite anterior",
+     "g": "Uma lista calma: roupa, documentos, trajeto e uma boa noite de sono.",
+     "p": [
+      "Deixa preparados com antecedência o conjunto, a mala, os documentos e as notas.",
+      "Verifica pela última vez o trajeto, a hora e os contactos.",
+      "Pára de praticar cedo e descansa, porque o sono ajuda a memória e a disposição."
+     ],
+     "q": "O que te ajuda a relaxar e dormir bem antes de um grande dia?",
+     "c": "Escreve a tua lista da noite anterior com cinco pontos."
+    },
+    "pt_BR": {
+     "t": "A noite anterior",
+     "g": "Uma lista tranquila: roupa, documentos, trajeto e uma boa noite de sono.",
+     "p": [
+      "Deixe preparados com antecedência o look, a bolsa, os documentos e as anotações.",
+      "Confira pela última vez o trajeto, o horário e os contatos.",
+      "Pare de praticar cedo e descanse, porque o sono ajuda a memória e o humor."
+     ],
+     "q": "O que ajuda você a relaxar e dormir bem antes de um grande dia?",
+     "c": "Escreva sua lista da noite anterior com cinco itens."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The morning of the interview",
+     "g": "A routine to feel focused, confident and ready to talk.",
+     "p": [
+      "Wake with time to spare and eat something light and nourishing.",
+      "Skim your key stories and the job ad, but do not cram.",
+      "Warm up your voice by saying your pitch aloud once."
+     ],
+     "q": "What morning habit puts you in a good mood?",
+     "c": "Design a calm 20-minute morning routine for interview day."
+    },
+    "de": {
+     "t": "Der Morgen des Gesprächs",
+     "g": "Eine Routine, um fokussiert, selbstsicher und gesprächsbereit zu sein.",
+     "p": [
+      "Stehe mit Zeitpuffer auf und iss etwas Leichtes und Nahrhaftes.",
+      "Überfliege deine Kerngeschichten und die Anzeige, aber büffle nicht.",
+      "Wärme deine Stimme auf, indem du deinen Pitch einmal laut sprichst."
+     ],
+     "q": "Welche Morgengewohnheit versetzt dich in gute Stimmung?",
+     "c": "Entwirf eine ruhige 20-Minuten-Morgenroutine für den Gesprächstag."
+    },
+    "es": {
+     "t": "La mañana de la entrevista",
+     "g": "Una rutina para sentirte concentrado, seguro y listo para hablar.",
+     "p": [
+      "Despiértate con tiempo de sobra y desayuna algo ligero y nutritivo.",
+      "Repasa por encima tus historias clave y la oferta, pero sin empollar.",
+      "Calienta la voz diciendo tu pitch en voz alta una vez."
+     ],
+     "q": "¿Qué hábito de la mañana te pone de buen humor?",
+     "c": "Diseña una rutina matinal tranquila de 20 minutos para el día de la entrevista."
+    },
+    "fr": {
+     "t": "Le matin de l'entretien",
+     "g": "Une routine pour être concentré, confiant et prêt à parler.",
+     "p": [
+      "Levez-vous avec de la marge et mangez quelque chose de léger et nourrissant.",
+      "Parcourez vos histoires clés et l'annonce, sans bachoter.",
+      "Échauffez votre voix en disant votre pitch une fois à voix haute."
+     ],
+     "q": "Quelle habitude du matin vous met de bonne humeur ?",
+     "c": "Concevez une routine matinale calme de 20 minutes pour le jour de l'entretien."
+    },
+    "it": {
+     "t": "La mattina del colloquio",
+     "g": "Una routine per sentirti concentrato, sicuro e pronto a parlare.",
+     "p": [
+      "Svegliati con tempo a disposizione e mangia qualcosa di leggero e nutriente.",
+      "Dai un'occhiata alle tue storie chiave e all'annuncio, senza studiare a tappe forzate.",
+      "Scalda la voce dicendo il tuo pitch ad alta voce una volta."
+     ],
+     "q": "Quale abitudine mattutina ti mette di buon umore?",
+     "c": "Progetta una routine mattutina calma di 20 minuti per il giorno del colloquio."
+    },
+    "pt": {
+     "t": "A manhã da entrevista",
+     "g": "Uma rotina para te sentires concentrado, confiante e pronto para falar.",
+     "p": [
+      "Acorda com tempo de sobra e come algo leve e nutritivo.",
+      "Revê por alto as tuas histórias-chave e o anúncio, sem marrar.",
+      "Aquece a voz dizendo o teu pitch em voz alta uma vez."
+     ],
+     "q": "Que hábito da manhã te põe de bom humor?",
+     "c": "Desenha uma rotina matinal calma de 20 minutos para o dia da entrevista."
+    },
+    "pt_BR": {
+     "t": "A manhã da entrevista",
+     "g": "Uma rotina para se sentir focado, confiante e pronto para falar.",
+     "p": [
+      "Acorde com tempo de sobra e coma algo leve e nutritivo.",
+      "Releia por cima suas histórias-chave e a vaga, sem decorar tudo.",
+      "Aqueça a voz dizendo seu pitch em voz alta uma vez."
+     ],
+     "q": "Que hábito da manhã deixa você de bom humor?",
+     "c": "Desenhe uma rotina matinal calma de 20 minutos para o dia da entrevista."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Positive framing",
+     "g": "Turn setbacks into learning stories without sounding negative.",
+     "p": [
+      "Describe a challenge briefly, then focus on what you did and learned.",
+      "Use neutral words and avoid blaming people or situations.",
+      "End with how you apply that lesson today."
+     ],
+     "q": "What is a difficult moment that taught you something valuable?",
+     "c": "Reframe one past setback into a three-sentence learning story."
+    },
+    "de": {
+     "t": "Positiv formulieren",
+     "g": "Rückschläge in Lerngeschichten verwandeln, ohne negativ zu klingen.",
+     "p": [
+      "Beschreibe eine Herausforderung kurz und konzentriere dich auf Handeln und Lernen.",
+      "Nutze neutrale Worte und gib weder Menschen noch Umständen die Schuld.",
+      "Schließe damit, wie du die Erkenntnis heute anwendest."
+     ],
+     "q": "Welcher schwierige Moment hat dir etwas Wertvolles beigebracht?",
+     "c": "Forme einen früheren Rückschlag in eine Lerngeschichte in drei Sätzen um."
+    },
+    "es": {
+     "t": "Formular en positivo",
+     "g": "Convertir los contratiempos en historias de aprendizaje sin sonar negativo.",
+     "p": [
+      "Describe un reto brevemente y céntrate en lo que hiciste y aprendiste.",
+      "Usa palabras neutras y evita culpar a personas o situaciones.",
+      "Termina con cómo aplicas hoy esa lección."
+     ],
+     "q": "¿Qué momento difícil te enseñó algo valioso?",
+     "c": "Reformula un contratiempo pasado como historia de aprendizaje en tres frases."
+    },
+    "fr": {
+     "t": "Le cadrage positif",
+     "g": "Transformer les revers en histoires d'apprentissage sans paraître négatif.",
+     "p": [
+      "Décrivez un défi brièvement, puis concentrez-vous sur ce que vous avez fait et appris.",
+      "Employez des mots neutres et évitez de blâmer des personnes ou des situations.",
+      "Terminez par la façon dont vous appliquez cette leçon aujourd'hui."
+     ],
+     "q": "Quel moment difficile vous a appris quelque chose de précieux ?",
+     "c": "Reformulez un revers passé en histoire d'apprentissage en trois phrases."
+    },
+    "it": {
+     "t": "Il racconto positivo",
+     "g": "Trasformare le battute d'arresto in storie di apprendimento senza sembrare negativo.",
+     "p": [
+      "Descrivi brevemente una sfida, poi concentrati su ciò che hai fatto e imparato.",
+      "Usa parole neutre ed evita di dare la colpa a persone o situazioni.",
+      "Concludi con come applichi oggi quella lezione."
+     ],
+     "q": "Quale momento difficile ti ha insegnato qualcosa di prezioso?",
+     "c": "Riformula una battuta d'arresto passata come storia di apprendimento in tre frasi."
+    },
+    "pt": {
+     "t": "Formular em positivo",
+     "g": "Transformar contratempos em histórias de aprendizagem sem soar negativo.",
+     "p": [
+      "Descreve um desafio brevemente e foca-te no que fizeste e aprendeste.",
+      "Usa palavras neutras e evita culpar pessoas ou situações.",
+      "Termina com a forma como aplicas hoje essa lição."
+     ],
+     "q": "Que momento difícil te ensinou algo valioso?",
+     "c": "Reformula um contratempo passado como história de aprendizagem em três frases."
+    },
+    "pt_BR": {
+     "t": "Enquadrando de forma positiva",
+     "g": "Transformar contratempos em histórias de aprendizado sem soar negativo.",
+     "p": [
+      "Descreva um desafio brevemente e foque no que você fez e aprendeu.",
+      "Use palavras neutras e evite culpar pessoas ou situações.",
+      "Termine com como você aplica hoje essa lição."
+     ],
+     "q": "Que momento difícil ensinou algo valioso a você?",
+     "c": "Reformule um contratempo do passado como história de aprendizado em três frases."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Honesty in interviews",
+     "g": "Truthful answers build trust, and you can present facts positively.",
+     "p": [
+      "Never invent skills or achievements, because follow-up questions reveal gaps.",
+      "It is fine to say I have not done that yet, but I would learn it.",
+      "Choose positive true wording rather than stretching the facts."
+     ],
+     "q": "Why do you think honesty matters so much in building trust?",
+     "c": "Write one honest answer about a skill you lack that stays positive."
+    },
+    "de": {
+     "t": "Ehrlichkeit im Gespräch",
+     "g": "Wahre Antworten schaffen Vertrauen, und du kannst Fakten positiv darstellen.",
+     "p": [
+      "Erfinde keine Fähigkeiten oder Erfolge, denn Nachfragen decken Lücken auf.",
+      "Es ist in Ordnung zu sagen, das habe ich noch nicht gemacht, würde es aber lernen.",
+      "Wähle positive, wahre Worte statt die Fakten zu dehnen."
+     ],
+     "q": "Warum ist Ehrlichkeit deiner Meinung nach so wichtig für Vertrauen?",
+     "c": "Schreibe eine ehrliche und trotzdem positive Antwort zu einer Fähigkeit, die dir fehlt."
+    },
+    "es": {
+     "t": "La honestidad en la entrevista",
+     "g": "Las respuestas sinceras generan confianza y puedes presentar los hechos en positivo.",
+     "p": [
+      "Nunca inventes habilidades o logros, porque las preguntas siguientes revelan los vacíos.",
+      "Está bien decir eso aún no lo he hecho, pero lo aprendería.",
+      "Elige palabras positivas y verdaderas en lugar de estirar los hechos."
+     ],
+     "q": "¿Por qué crees que la honestidad importa tanto para generar confianza?",
+     "c": "Escribe una respuesta honesta y positiva sobre una habilidad que te falta."
+    },
+    "fr": {
+     "t": "L'honnêteté en entretien",
+     "g": "Des réponses sincères créent la confiance, et vous pouvez présenter les faits positivement.",
+     "p": [
+      "N'inventez jamais de compétences ou de réussites, car les questions suivantes révèlent les lacunes.",
+      "Vous pouvez dire je n'ai pas encore fait cela, mais je l'apprendrais.",
+      "Choisissez des mots positifs et vrais plutôt que d'enjoliver les faits."
+     ],
+     "q": "Pourquoi l'honnêteté compte-t-elle autant pour bâtir la confiance, selon vous ?",
+     "c": "Rédigez une réponse honnête mais positive sur une compétence qui vous manque."
+    },
+    "it": {
+     "t": "L'onestà nel colloquio",
+     "g": "Le risposte sincere creano fiducia e puoi presentare i fatti in modo positivo.",
+     "p": [
+      "Non inventare mai competenze o risultati, perché le domande successive svelano le lacune.",
+      "Va bene dire questo non l'ho ancora fatto, ma lo imparerei.",
+      "Scegli parole positive e vere invece di forzare i fatti."
+     ],
+     "q": "Perché pensi che l'onestà conti tanto per creare fiducia?",
+     "c": "Scrivi una risposta onesta ma positiva su una competenza che ti manca."
+    },
+    "pt": {
+     "t": "A honestidade na entrevista",
+     "g": "As respostas sinceras criam confiança e podes apresentar os factos de forma positiva.",
+     "p": [
+      "Nunca inventes competências ou conquistas, porque as perguntas seguintes revelam as lacunas.",
+      "Não faz mal dizer isso ainda não fiz, mas aprenderia.",
+      "Escolhe palavras positivas e verdadeiras em vez de esticar os factos."
+     ],
+     "q": "Porque achas que a honestidade importa tanto para criar confiança?",
+     "c": "Escreve uma resposta honesta e positiva sobre uma competência que te falta."
+    },
+    "pt_BR": {
+     "t": "A honestidade na entrevista",
+     "g": "Respostas sinceras geram confiança e você pode apresentar os fatos de forma positiva.",
+     "p": [
+      "Nunca invente habilidades ou conquistas, porque as perguntas seguintes revelam as lacunas.",
+      "Tudo bem dizer isso eu ainda não fiz, mas aprenderia.",
+      "Escolha palavras positivas e verdadeiras em vez de esticar os fatos."
+     ],
+     "q": "Por que você acha que a honestidade importa tanto para gerar confiança?",
+     "c": "Escreva uma resposta honesta e positiva sobre uma habilidade que você não tem."
+    }
+   }
+  }
+ ]
+}

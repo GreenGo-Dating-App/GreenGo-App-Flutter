@@ -1,0 +1,835 @@
+{
+ "topic": "astronomy",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Never look at the Sun",
+     "g": "Learn the golden safety rule of astronomy and two safe ways to observe the Sun.",
+     "p": [
+      "Looking at the Sun, even briefly or through sunglasses, can permanently damage your eyes.",
+      "Only certified solar viewers (ISO 12312-2) or proper solar filters on the front of a telescope are safe.",
+      "A pinhole in a card projects a small image of the Sun onto paper: you look at the paper, never at the Sun."
+     ],
+     "q": "Have you ever seen the Sun projected through tiny gaps, like leaves in a tree?",
+     "c": "Make a pinhole projector with two cards and watch the Sun’s image with your back to the Sun."
+    },
+    "de": {
+     "t": "Nie in die Sonne schauen",
+     "g": "Lerne die goldene Sicherheitsregel der Astronomie und zwei sichere Wege, die Sonne zu beobachten.",
+     "p": [
+      "Ein Blick in die Sonne, auch kurz oder mit Sonnenbrille, kann die Augen dauerhaft schädigen.",
+      "Sicher sind nur zertifizierte Sonnensichtbrillen (ISO 12312-2) oder richtige Sonnenfilter vor dem Teleskop.",
+      "Ein Loch in einer Karte projiziert ein Sonnenbild auf Papier: Du schaust aufs Papier, nie in die Sonne."
+     ],
+     "q": "Hast du schon einmal Sonnenbildchen gesehen, die durch Lücken im Laub fielen?",
+     "c": "Bau aus zwei Karten eine Lochkamera und betrachte das Sonnenbild mit dem Rücken zur Sonne."
+    },
+    "es": {
+     "t": "Nunca mires al Sol",
+     "g": "Aprende la regla de oro de la astronomía y dos formas seguras de observar el Sol.",
+     "p": [
+      "Mirar al Sol, aunque sea un momento o con gafas de sol, puede dañar tus ojos para siempre.",
+      "Solo son seguros los visores solares certificados (ISO 12312-2) o filtros solares adecuados delante del telescopio.",
+      "Un agujerito en una cartulina proyecta una imagen del Sol sobre papel: miras el papel, nunca al Sol."
+     ],
+     "q": "¿Has visto alguna vez imágenes del Sol proyectadas entre las hojas de un árbol?",
+     "c": "Haz un proyector estenopeico con dos cartulinas y mira la imagen del Sol de espaldas a él."
+    },
+    "fr": {
+     "t": "Ne jamais regarder le Soleil",
+     "g": "Apprends la règle d’or de l’astronomie et deux façons sûres d’observer le Soleil.",
+     "p": [
+      "Regarder le Soleil, même un instant ou avec des lunettes de soleil, peut abîmer tes yeux pour toujours.",
+      "Seuls les filtres certifiés (ISO 12312-2) ou de vrais filtres solaires devant le télescope sont sûrs.",
+      "Un petit trou dans un carton projette l’image du Soleil sur une feuille : tu regardes la feuille, jamais le Soleil."
+     ],
+     "q": "As-tu déjà vu de petites images du Soleil projetées entre les feuilles d’un arbre ?",
+     "c": "Fabrique un sténopé avec deux cartons et regarde l’image du Soleil en lui tournant le dos."
+    },
+    "it": {
+     "t": "Mai guardare il Sole",
+     "g": "Impara la regola d’oro dell’astronomia e due modi sicuri per osservare il Sole.",
+     "p": [
+      "Guardare il Sole, anche per un attimo o con gli occhiali da sole, può danneggiare gli occhi per sempre.",
+      "Sono sicuri solo i filtri certificati (ISO 12312-2) o veri filtri solari montati davanti al telescopio.",
+      "Un forellino in un cartoncino proietta l’immagine del Sole su un foglio: guardi il foglio, mai il Sole."
+     ],
+     "q": "Hai mai visto piccole immagini del Sole proiettate tra le foglie di un albero?",
+     "c": "Costruisci un proiettore stenopeico con due cartoncini e guarda l’immagine del Sole dandogli le spalle."
+    },
+    "pt": {
+     "t": "Nunca olhes para o Sol",
+     "g": "Aprende a regra de ouro da astronomia e duas formas seguras de observar o Sol.",
+     "p": [
+      "Olhar para o Sol, mesmo por instantes ou com óculos de sol, pode danificar os olhos para sempre.",
+      "Só são seguros os filtros certificados (ISO 12312-2) ou filtros solares próprios na frente do telescópio.",
+      "Um furinho num cartão projeta uma imagem do Sol numa folha: olhas para a folha, nunca para o Sol."
+     ],
+     "q": "Já viste pequenas imagens do Sol projetadas por entre as folhas de uma árvore?",
+     "c": "Faz um projetor de orifício com dois cartões e observa a imagem do Sol de costas para ele."
+    },
+    "pt_BR": {
+     "t": "Nunca olhe para o Sol",
+     "g": "Aprenda a regra de ouro da astronomia e duas formas seguras de observar o Sol.",
+     "p": [
+      "Olhar para o Sol, mesmo por um instante ou com óculos escuros, pode danificar os olhos para sempre.",
+      "Só são seguros os filtros certificados (ISO 12312-2) ou filtros solares próprios na frente do telescópio.",
+      "Um furinho num cartão projeta uma imagem do Sol numa folha: você olha para a folha, nunca para o Sol."
+     ],
+     "q": "Você já viu pequenas imagens do Sol projetadas entre as folhas de uma árvore?",
+     "c": "Faça um projetor de furo com dois cartões e observe a imagem do Sol de costas para ele."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why we have seasons",
+     "g": "Understand that Earth’s tilt, not its distance from the Sun, creates the seasons.",
+     "p": [
+      "Earth’s axis is tilted about 23.4 degrees, so each hemisphere leans toward the Sun for part of the year.",
+      "When your hemisphere leans toward the Sun, sunlight is higher and days are longer: that is summer.",
+      "Earth is actually closest to the Sun in early January, during northern winter, so distance is not the cause."
+     ],
+     "q": "Which season do you enjoy most for watching the sky?",
+     "c": "At midday this week, notice how long your shadow is; in summer it is shorter than in winter."
+    },
+    "de": {
+     "t": "Warum es Jahreszeiten gibt",
+     "g": "Verstehe, dass die Neigung der Erdachse, nicht der Abstand zur Sonne, die Jahreszeiten macht.",
+     "p": [
+      "Die Erdachse ist um etwa 23,4 Grad geneigt, deshalb neigt sich jede Halbkugel zeitweise zur Sonne.",
+      "Neigt sich deine Halbkugel zur Sonne, steht sie höher und die Tage sind länger: Es ist Sommer.",
+      "Am nächsten ist die Erde der Sonne Anfang Januar, im Nordwinter: Der Abstand ist also nicht der Grund."
+     ],
+     "q": "In welcher Jahreszeit beobachtest du den Himmel am liebsten?",
+     "c": "Achte diese Woche mittags auf deine Schattenlänge: Im Sommer ist er kürzer als im Winter."
+    },
+    "es": {
+     "t": "Por qué hay estaciones",
+     "g": "Entiende que la inclinación de la Tierra, y no su distancia al Sol, crea las estaciones.",
+     "p": [
+      "El eje terrestre está inclinado unos 23,4 grados, así que cada hemisferio se inclina hacia el Sol parte del año.",
+      "Cuando tu hemisferio mira hacia el Sol, este sube más alto y los días son más largos: es verano.",
+      "La Tierra está más cerca del Sol a principios de enero, en el invierno del norte: la distancia no es la causa."
+     ],
+     "q": "¿En qué estación prefieres mirar el cielo?",
+     "c": "Esta semana, a mediodía, fíjate en tu sombra: en verano es más corta que en invierno."
+    },
+    "fr": {
+     "t": "Pourquoi il y a des saisons",
+     "g": "Comprends que l’inclinaison de la Terre, et non sa distance au Soleil, crée les saisons.",
+     "p": [
+      "L’axe terrestre est incliné d’environ 23,4 degrés : chaque hémisphère penche vers le Soleil une partie de l’année.",
+      "Quand ton hémisphère penche vers le Soleil, celui-ci monte plus haut et les jours rallongent : c’est l’été.",
+      "La Terre est au plus près du Soleil début janvier, en plein hiver boréal : la distance n’est donc pas la cause."
+     ],
+     "q": "En quelle saison préfères-tu observer le ciel ?",
+     "c": "Cette semaine, à midi, regarde la longueur de ton ombre : en été elle est plus courte qu’en hiver."
+    },
+    "it": {
+     "t": "Perché ci sono le stagioni",
+     "g": "Capisci che l’inclinazione della Terra, non la distanza dal Sole, crea le stagioni.",
+     "p": [
+      "L’asse terrestre è inclinato di circa 23,4 gradi, così ogni emisfero si inclina verso il Sole per parte dell’anno.",
+      "Quando il tuo emisfero è inclinato verso il Sole, questo sale più in alto e le giornate si allungano: è estate.",
+      "La Terra è più vicina al Sole all’inizio di gennaio, nell’inverno boreale: la distanza non è la causa."
+     ],
+     "q": "In quale stagione preferisci osservare il cielo?",
+     "c": "Questa settimana, a mezzogiorno, nota la lunghezza della tua ombra: d’estate è più corta che d’inverno."
+    },
+    "pt": {
+     "t": "Porque há estações do ano",
+     "g": "Percebe que a inclinação da Terra, e não a distância ao Sol, cria as estações.",
+     "p": [
+      "O eixo da Terra está inclinado cerca de 23,4 graus, por isso cada hemisfério se inclina para o Sol parte do ano.",
+      "Quando o teu hemisfério se inclina para o Sol, este sobe mais alto e os dias são mais longos: é verão.",
+      "A Terra está mais perto do Sol no início de janeiro, no inverno do norte: a distância não é a causa."
+     ],
+     "q": "Em que estação gostas mais de observar o céu?",
+     "c": "Esta semana, ao meio-dia, repara no comprimento da tua sombra: no verão é mais curta do que no inverno."
+    },
+    "pt_BR": {
+     "t": "Por que existem estações",
+     "g": "Entenda que a inclinação da Terra, e não a distância do Sol, cria as estações do ano.",
+     "p": [
+      "O eixo da Terra é inclinado cerca de 23,4 graus, então cada hemisfério se inclina para o Sol parte do ano.",
+      "Quando o seu hemisfério se inclina para o Sol, ele sobe mais alto e os dias ficam mais longos: é verão.",
+      "A Terra fica mais perto do Sol no início de janeiro, no inverno do norte: a distância não é a causa."
+     ],
+     "q": "Em qual estação você mais gosta de observar o céu?",
+     "c": "Nesta semana, ao meio-dia, repare no tamanho da sua sombra: no verão ela é mais curta que no inverno."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Solstices and equinoxes",
+     "g": "Learn the four key moments of Earth’s yearly journey around the Sun.",
+     "p": [
+      "Solstices, around 21 June and 21 December, bring the longest and shortest days of the year.",
+      "Equinoxes, around 20 March and 22 September, give day and night of nearly equal length everywhere.",
+      "On the equinoxes the Sun rises almost exactly due east and sets almost exactly due west."
+     ],
+     "q": "Which of these four days would you like to celebrate under the sky?",
+     "c": "Find out which solstice or equinox comes next and mark it in your calendar."
+    },
+    "de": {
+     "t": "Sonnenwenden und Tagundnachtgleichen",
+     "g": "Lerne die vier Schlüsselmomente der jährlichen Reise der Erde um die Sonne kennen.",
+     "p": [
+      "Die Sonnenwenden um den 21. Juni und 21. Dezember bringen den längsten und den kürzesten Tag des Jahres.",
+      "Die Tagundnachtgleichen um den 20. März und 22. September machen Tag und Nacht überall fast gleich lang.",
+      "An den Tagundnachtgleichen geht die Sonne fast genau im Osten auf und fast genau im Westen unter."
+     ],
+     "q": "Welchen dieser vier Tage würdest du gern unter dem Himmel feiern?",
+     "c": "Finde heraus, welche Sonnenwende oder Tagundnachtgleiche als Nächstes kommt, und trag sie ein."
+    },
+    "es": {
+     "t": "Solsticios y equinoccios",
+     "g": "Conoce los cuatro momentos clave del viaje anual de la Tierra alrededor del Sol.",
+     "p": [
+      "Los solsticios, hacia el 21 de junio y el 21 de diciembre, traen el día más largo y el más corto del año.",
+      "Los equinoccios, hacia el 20 de marzo y el 22 de septiembre, igualan casi el día y la noche en todo el mundo.",
+      "En los equinoccios el Sol sale casi exactamente por el este y se pone casi exactamente por el oeste."
+     ],
+     "q": "¿Cuál de estos cuatro días te gustaría celebrar bajo el cielo?",
+     "c": "Averigua qué solsticio o equinoccio llega primero y márcalo en tu calendario."
+    },
+    "fr": {
+     "t": "Solstices et équinoxes",
+     "g": "Découvre les quatre moments clés du voyage annuel de la Terre autour du Soleil.",
+     "p": [
+      "Les solstices, vers le 21 juin et le 21 décembre, apportent le jour le plus long et le plus court de l’année.",
+      "Les équinoxes, vers le 20 mars et le 22 septembre, donnent partout un jour et une nuit presque égaux.",
+      "Aux équinoxes, le Soleil se lève presque exactement à l’est et se couche presque exactement à l’ouest."
+     ],
+     "q": "Lequel de ces quatre jours aimerais-tu fêter sous le ciel ?",
+     "c": "Cherche quel solstice ou équinoxe arrive en premier et note-le dans ton calendrier."
+    },
+    "it": {
+     "t": "Solstizi ed equinozi",
+     "g": "Scopri i quattro momenti chiave del viaggio annuale della Terra attorno al Sole.",
+     "p": [
+      "I solstizi, intorno al 21 giugno e al 21 dicembre, portano il giorno più lungo e quello più corto dell’anno.",
+      "Gli equinozi, intorno al 20 marzo e al 22 settembre, rendono giorno e notte quasi uguali ovunque.",
+      "Agli equinozi il Sole sorge quasi esattamente a est e tramonta quasi esattamente a ovest."
+     ],
+     "q": "Quale di questi quattro giorni ti piacerebbe festeggiare sotto il cielo?",
+     "c": "Scopri quale solstizio o equinozio arriva per primo e segnalo sul calendario."
+    },
+    "pt": {
+     "t": "Solstícios e equinócios",
+     "g": "Conhece os quatro momentos-chave da viagem anual da Terra à volta do Sol.",
+     "p": [
+      "Os solstícios, por volta de 21 de junho e 21 de dezembro, trazem o dia mais longo e o mais curto do ano.",
+      "Os equinócios, por volta de 20 de março e 22 de setembro, tornam o dia e a noite quase iguais em todo o lado.",
+      "Nos equinócios o Sol nasce quase exatamente a este e põe-se quase exatamente a oeste."
+     ],
+     "q": "Qual destes quatro dias gostavas de celebrar debaixo do céu?",
+     "c": "Descobre qual é o próximo solstício ou equinócio e marca-o no teu calendário."
+    },
+    "pt_BR": {
+     "t": "Solstícios e equinócios",
+     "g": "Conheça os quatro momentos-chave da viagem anual da Terra ao redor do Sol.",
+     "p": [
+      "Os solstícios, por volta de 21 de junho e 21 de dezembro, trazem o dia mais longo e o mais curto do ano.",
+      "Os equinócios, por volta de 20 de março e 22 de setembro, deixam o dia e a noite quase iguais no mundo todo.",
+      "Nos equinócios o Sol nasce quase exatamente no leste e se põe quase exatamente no oeste."
+     ],
+     "q": "Qual desses quatro dias você gostaria de celebrar sob o céu?",
+     "c": "Descubra qual é o próximo solstício ou equinócio e marque no seu calendário."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is a constellation",
+     "g": "Learn what constellations are and how astronomers use them as a map of the sky.",
+     "p": [
+      "Constellations are patterns people imagined among the stars, linked to myths and stories of many cultures.",
+      "Today astronomers recognise 88 official constellations that divide the whole sky like countries on a map.",
+      "Stars in a constellation usually lie at very different distances; they only look close from Earth."
+     ],
+     "q": "Do you know a constellation from a story told in your culture?",
+     "c": "Pick a group of stars tonight and invent your own constellation with a name and a short story."
+    },
+    "de": {
+     "t": "Was ist ein Sternbild",
+     "g": "Erfahre, was Sternbilder sind und wie Astronomen sie als Himmelskarte nutzen.",
+     "p": [
+      "Sternbilder sind Muster, die Menschen zwischen den Sternen sahen, verbunden mit Mythen vieler Kulturen.",
+      "Heute gibt es 88 offizielle Sternbilder, die den ganzen Himmel wie Länder auf einer Karte aufteilen.",
+      "Die Sterne eines Sternbilds sind meist sehr unterschiedlich weit entfernt; nur von der Erde wirken sie nah."
+     ],
+     "q": "Kennst du ein Sternbild aus einer Geschichte deiner Kultur?",
+     "c": "Wähle heute eine Sterngruppe und erfinde dein eigenes Sternbild mit Namen und kurzer Geschichte."
+    },
+    "es": {
+     "t": "Qué es una constelación",
+     "g": "Aprende qué son las constelaciones y cómo las usan los astrónomos como mapa del cielo.",
+     "p": [
+      "Las constelaciones son figuras imaginadas entre las estrellas, unidas a mitos e historias de muchas culturas.",
+      "Hoy los astrónomos reconocen 88 constelaciones oficiales que dividen el cielo como países en un mapa.",
+      "Las estrellas de una constelación suelen estar a distancias muy distintas; solo parecen juntas desde la Tierra."
+     ],
+     "q": "¿Conoces alguna constelación por una historia de tu cultura?",
+     "c": "Elige esta noche un grupo de estrellas e inventa tu propia constelación con nombre y una breve historia."
+    },
+    "fr": {
+     "t": "Qu’est-ce qu’une constellation",
+     "g": "Découvre ce que sont les constellations et comment les astronomes s’en servent comme carte du ciel.",
+     "p": [
+      "Les constellations sont des figures imaginées entre les étoiles, liées aux mythes de nombreuses cultures.",
+      "Aujourd’hui, 88 constellations officielles découpent tout le ciel, comme des pays sur une carte.",
+      "Les étoiles d’une constellation sont souvent à des distances très différentes ; elles semblent proches vues d’ici."
+     ],
+     "q": "Connais-tu une constellation grâce à une histoire de ta culture ?",
+     "c": "Choisis ce soir un groupe d’étoiles et invente ta propre constellation avec un nom et une petite histoire."
+    },
+    "it": {
+     "t": "Che cos’è una costellazione",
+     "g": "Scopri cosa sono le costellazioni e come gli astronomi le usano come mappa del cielo.",
+     "p": [
+      "Le costellazioni sono figure immaginate tra le stelle, legate a miti e racconti di molte culture.",
+      "Oggi gli astronomi riconoscono 88 costellazioni ufficiali che dividono il cielo come paesi su una mappa.",
+      "Le stelle di una costellazione di solito sono a distanze molto diverse; sembrano vicine solo dalla Terra."
+     ],
+     "q": "Conosci una costellazione grazie a un racconto della tua cultura?",
+     "c": "Scegli stasera un gruppo di stelle e inventa la tua costellazione, con un nome e una breve storia."
+    },
+    "pt": {
+     "t": "O que é uma constelação",
+     "g": "Aprende o que são as constelações e como os astrónomos as usam como mapa do céu.",
+     "p": [
+      "As constelações são figuras imaginadas entre as estrelas, ligadas a mitos e histórias de muitas culturas.",
+      "Hoje os astrónomos reconhecem 88 constelações oficiais que dividem o céu como países num mapa.",
+      "As estrelas de uma constelação estão muitas vezes a distâncias muito diferentes; só parecem juntas vistas daqui."
+     ],
+     "q": "Conheces alguma constelação por uma história da tua cultura?",
+     "c": "Escolhe esta noite um grupo de estrelas e inventa a tua própria constelação, com nome e uma pequena história."
+    },
+    "pt_BR": {
+     "t": "O que é uma constelação",
+     "g": "Aprenda o que são as constelações e como os astrônomos as usam como mapa do céu.",
+     "p": [
+      "As constelações são figuras imaginadas entre as estrelas, ligadas a mitos e histórias de muitas culturas.",
+      "Hoje os astrônomos reconhecem 88 constelações oficiais que dividem o céu como países num mapa.",
+      "As estrelas de uma constelação costumam estar a distâncias bem diferentes; só parecem juntas vistas daqui."
+     ],
+     "q": "Você conhece alguma constelação por uma história da sua cultura?",
+     "c": "Escolha hoje à noite um grupo de estrelas e invente sua própria constelação, com nome e uma pequena história."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asterisms like the Big Dipper",
+     "g": "Discover asterisms, the famous star patterns that are not official constellations.",
+     "p": [
+      "An asterism is a recognisable star pattern that is part of a constellation, or spans several.",
+      "The Big Dipper, also called the Plough, is formed by seven bright stars of the constellation Ursa Major.",
+      "The Summer Triangle links three bright stars from three different constellations: Vega, Deneb and Altair."
+     ],
+     "q": "Which shape in the sky would you recognise most easily?",
+     "c": "Try to spot a simple asterism tonight, like the Big Dipper or Orion’s Belt, and trace it with your finger."
+    },
+    "de": {
+     "t": "Asterismen wie der Große Wagen",
+     "g": "Entdecke Asterismen, berühmte Sternmuster, die keine offiziellen Sternbilder sind.",
+     "p": [
+      "Ein Asterismus ist ein auffälliges Sternmuster, das zu einem Sternbild gehört oder mehrere überspannt.",
+      "Der Große Wagen besteht aus sieben hellen Sternen des Sternbilds Großer Bär.",
+      "Das Sommerdreieck verbindet drei helle Sterne aus drei Sternbildern: Wega, Deneb und Atair."
+     ],
+     "q": "Welche Form am Himmel würdest du am leichtesten erkennen?",
+     "c": "Such heute einen einfachen Asterismus, etwa den Großen Wagen oder den Oriongürtel, und fahre ihn mit dem Finger nach."
+    },
+    "es": {
+     "t": "Asterismos como el Carro",
+     "g": "Descubre los asterismos, famosas figuras de estrellas que no son constelaciones oficiales.",
+     "p": [
+      "Un asterismo es una figura de estrellas reconocible que forma parte de una constelación o abarca varias.",
+      "El Carro, o Cazo, está formado por siete estrellas brillantes de la constelación de la Osa Mayor.",
+      "El Triángulo de Verano une tres estrellas brillantes de tres constelaciones: Vega, Deneb y Altair."
+     ],
+     "q": "¿Qué forma del cielo reconocerías con más facilidad?",
+     "c": "Intenta encontrar esta noche un asterismo sencillo, como el Carro o el Cinturón de Orión, y traza su forma con el dedo."
+    },
+    "fr": {
+     "t": "Les astérismes comme la Grande Ourse",
+     "g": "Découvre les astérismes, ces célèbres figures d’étoiles qui ne sont pas des constellations officielles.",
+     "p": [
+      "Un astérisme est une figure d’étoiles reconnaissable, qui fait partie d’une constellation ou en couvre plusieurs.",
+      "La Grande Casserole, ou Chariot, est formée de sept étoiles brillantes de la constellation de la Grande Ourse.",
+      "Le Triangle d’été relie trois étoiles brillantes de trois constellations : Véga, Deneb et Altaïr."
+     ],
+     "q": "Quelle forme du ciel reconnaîtrais-tu le plus facilement ?",
+     "c": "Essaie de repérer ce soir un astérisme simple, comme la Casserole ou la ceinture d’Orion, et suis-le du doigt."
+    },
+    "it": {
+     "t": "Asterismi come il Grande Carro",
+     "g": "Scopri gli asterismi, famose figure di stelle che non sono costellazioni ufficiali.",
+     "p": [
+      "Un asterismo è una figura di stelle riconoscibile che fa parte di una costellazione o ne attraversa diverse.",
+      "Il Grande Carro è formato da sette stelle brillanti della costellazione dell’Orsa Maggiore.",
+      "Il Triangolo estivo unisce tre stelle brillanti di tre costellazioni diverse: Vega, Deneb e Altair."
+     ],
+     "q": "Quale forma nel cielo riconosceresti più facilmente?",
+     "c": "Prova a trovare stasera un asterismo semplice, come il Grande Carro o la Cintura di Orione, e seguilo con il dito."
+    },
+    "pt": {
+     "t": "Asterismos como a Ursa Maior",
+     "g": "Descobre os asterismos, famosas figuras de estrelas que não são constelações oficiais.",
+     "p": [
+      "Um asterismo é uma figura de estrelas fácil de reconhecer, que faz parte de uma constelação ou abrange várias.",
+      "A Caçarola, ou Grande Carro, é formada por sete estrelas brilhantes da constelação da Ursa Maior.",
+      "O Triângulo de Verão liga três estrelas brilhantes de três constelações: Vega, Deneb e Altair."
+     ],
+     "q": "Que forma do céu reconhecerias com mais facilidade?",
+     "c": "Tenta encontrar esta noite um asterismo simples, como a Caçarola ou o Cinturão de Orionte, e segue-o com o dedo."
+    },
+    "pt_BR": {
+     "t": "Asterismos como o Grande Carro",
+     "g": "Descubra os asterismos, famosas figuras de estrelas que não são constelações oficiais.",
+     "p": [
+      "Um asterismo é uma figura de estrelas fácil de reconhecer, que faz parte de uma constelação ou abrange várias.",
+      "O Grande Carro, ou Caçarola, é formado por sete estrelas brilhantes da constelação da Ursa Maior.",
+      "O Triângulo de Verão liga três estrelas brilhantes de três constelações: Vega, Deneb e Altair."
+     ],
+     "q": "Qual forma do céu você reconheceria com mais facilidade?",
+     "c": "Tente achar hoje à noite um asterismo simples, como as Três Marias ou o Grande Carro, e siga a forma com o dedo."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finding the North Star",
+     "g": "Learn to find Polaris using the two pointer stars of the Big Dipper.",
+     "p": [
+      "The two stars at the end of the Big Dipper’s bowl point to Polaris, about five times their separation away.",
+      "Polaris sits almost exactly above Earth’s north pole, so it barely moves while the sky turns around it.",
+      "It is not the brightest star, but its height above the horizon roughly equals your latitude in the north."
+     ],
+     "q": "Why do you think travellers valued a star that never moves?",
+     "c": "If you live in the northern hemisphere, find the Big Dipper and follow its pointers to Polaris."
+    },
+    "de": {
+     "t": "Den Polarstern finden",
+     "g": "Lerne, den Polarstern mithilfe der zwei Zeigersterne des Großen Wagens zu finden.",
+     "p": [
+      "Die zwei hinteren Kastensterne des Großen Wagens zeigen auf den Polarstern, etwa fünfmal ihren Abstand entfernt.",
+      "Der Polarstern steht fast genau über dem Nordpol der Erde, daher bewegt er sich kaum, während der Himmel kreist.",
+      "Er ist nicht der hellste Stern, aber seine Höhe über dem Horizont entspricht etwa deiner nördlichen Breite."
+     ],
+     "q": "Warum war ein Stern, der sich nicht bewegt, für Reisende wohl so wertvoll?",
+     "c": "Wenn du auf der Nordhalbkugel lebst, such den Großen Wagen und folge den Zeigersternen zum Polarstern."
+    },
+    "es": {
+     "t": "Encontrar la Estrella Polar",
+     "g": "Aprende a encontrar la Polar usando las dos estrellas guía del Carro.",
+     "p": [
+      "Las dos estrellas del extremo del Carro apuntan a la Polar, a unas cinco veces la distancia entre ellas.",
+      "La Polar está casi justo sobre el polo norte terrestre, por eso apenas se mueve mientras el cielo gira.",
+      "No es la estrella más brillante, pero su altura sobre el horizonte es casi igual a tu latitud norte."
+     ],
+     "q": "¿Por qué crees que los viajeros valoraban una estrella que no se mueve?",
+     "c": "Si vives en el hemisferio norte, busca el Carro y sigue sus estrellas guía hasta la Polar."
+    },
+    "fr": {
+     "t": "Trouver l’étoile Polaire",
+     "g": "Apprends à trouver la Polaire grâce aux deux étoiles indicatrices de la Grande Casserole.",
+     "p": [
+      "Les deux étoiles du bout de la casserole pointent vers la Polaire, à environ cinq fois leur écart.",
+      "La Polaire se trouve presque au-dessus du pôle Nord terrestre : elle bouge à peine pendant que le ciel tourne.",
+      "Ce n’est pas l’étoile la plus brillante, mais sa hauteur au-dessus de l’horizon vaut à peu près ta latitude nord."
+     ],
+     "q": "Pourquoi une étoile immobile était-elle si précieuse pour les voyageurs, selon toi ?",
+     "c": "Si tu vis dans l’hémisphère Nord, trouve la Grande Casserole et suis ses deux étoiles jusqu’à la Polaire."
+    },
+    "it": {
+     "t": "Trovare la Stella Polare",
+     "g": "Impara a trovare la Polare usando le due stelle puntatrici del Grande Carro.",
+     "p": [
+      "Le due stelle in fondo al Grande Carro puntano verso la Polare, a circa cinque volte la loro distanza.",
+      "La Polare si trova quasi sopra il polo nord terrestre, quindi si muove appena mentre il cielo ruota.",
+      "Non è la stella più brillante, ma la sua altezza sull’orizzonte è circa uguale alla tua latitudine nord."
+     ],
+     "q": "Perché secondo te i viaggiatori apprezzavano tanto una stella che non si muove?",
+     "c": "Se vivi nell’emisfero nord, trova il Grande Carro e segui le due puntatrici fino alla Polare."
+    },
+    "pt": {
+     "t": "Encontrar a Estrela Polar",
+     "g": "Aprende a encontrar a Polar usando as duas estrelas guia da Caçarola.",
+     "p": [
+      "As duas estrelas da ponta da Caçarola apontam para a Polar, a cerca de cinco vezes a distância entre elas.",
+      "A Polar está quase por cima do polo norte da Terra, por isso quase não se mexe enquanto o céu gira.",
+      "Não é a estrela mais brilhante, mas a sua altura acima do horizonte é quase igual à tua latitude norte."
+     ],
+     "q": "Porque achas que os viajantes davam tanto valor a uma estrela que não se mexe?",
+     "c": "Se vives no hemisfério norte, encontra a Caçarola e segue as estrelas guia até à Polar."
+    },
+    "pt_BR": {
+     "t": "Encontrando a Estrela Polar",
+     "g": "Aprenda a achar a Polar usando as duas estrelas guia do Grande Carro.",
+     "p": [
+      "As duas estrelas da ponta do Grande Carro apontam para a Polar, a cerca de cinco vezes a distância entre elas.",
+      "A Polar fica quase em cima do polo norte da Terra, por isso quase não se move enquanto o céu gira.",
+      "Não é a estrela mais brilhante, mas sua altura acima do horizonte é quase igual à latitude no hemisfério norte."
+     ],
+     "q": "Por que você acha que os viajantes valorizavam uma estrela que não se move?",
+     "c": "Se você estiver no hemisfério norte, ache o Grande Carro e siga as estrelas guia até a Polar."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Southern Cross",
+     "g": "Learn to find Crux and use it to locate the south celestial pole.",
+     "p": [
+      "Crux, the Southern Cross, is the smallest of the 88 constellations, yet one of the most famous.",
+      "Extend its long axis about four and a half times to reach the south celestial pole, which has no bright star.",
+      "Two bright pointer stars, Alpha and Beta Centauri, help you pick the real cross from a fainter false cross."
+     ],
+     "q": "Have you ever seen the Southern Cross, maybe on a flag?",
+     "c": "From the southern hemisphere, find Crux and its two pointers, then estimate where due south lies."
+    },
+    "de": {
+     "t": "Das Kreuz des Südens",
+     "g": "Lerne, das Kreuz des Südens zu finden und damit den südlichen Himmelspol zu bestimmen.",
+     "p": [
+      "Das Kreuz des Südens ist das kleinste der 88 Sternbilder und doch eines der berühmtesten.",
+      "Verlängere die lange Achse etwa viereinhalbmal: So erreichst du den Südpol des Himmels, der keinen hellen Stern hat.",
+      "Zwei helle Zeigersterne, Alpha und Beta Centauri, helfen, das echte vom blasseren falschen Kreuz zu unterscheiden."
+     ],
+     "q": "Hast du das Kreuz des Südens schon einmal gesehen, vielleicht auf einer Flagge?",
+     "c": "Such auf der Südhalbkugel das Kreuz und seine zwei Zeigersterne und schätze, wo Süden liegt."
+    },
+    "es": {
+     "t": "La Cruz del Sur",
+     "g": "Aprende a encontrar la Cruz del Sur y a usarla para localizar el polo sur celeste.",
+     "p": [
+      "La Cruz del Sur es la más pequeña de las 88 constelaciones y, aun así, una de las más famosas.",
+      "Prolonga su eje largo unas cuatro veces y media para llegar al polo sur celeste, que no tiene estrella brillante.",
+      "Dos estrellas guía, Alfa y Beta Centauri, ayudan a distinguir la cruz verdadera de una falsa cruz más débil."
+     ],
+     "q": "¿Has visto alguna vez la Cruz del Sur, quizá en una bandera?",
+     "c": "Desde el hemisferio sur, busca la Cruz y sus dos estrellas guía y estima dónde queda el sur."
+    },
+    "fr": {
+     "t": "La Croix du Sud",
+     "g": "Apprends à trouver la Croix du Sud et à t’en servir pour repérer le pôle céleste sud.",
+     "p": [
+      "La Croix du Sud est la plus petite des 88 constellations, et pourtant l’une des plus célèbres.",
+      "Prolonge son grand axe environ quatre fois et demie pour atteindre le pôle céleste sud, sans étoile brillante.",
+      "Deux étoiles indicatrices, Alpha et Bêta du Centaure, distinguent la vraie croix d’une fausse croix plus pâle."
+     ],
+     "q": "As-tu déjà vu la Croix du Sud, peut-être sur un drapeau ?",
+     "c": "Depuis l’hémisphère Sud, trouve la Croix et ses deux indicatrices, puis estime où se trouve le sud."
+    },
+    "it": {
+     "t": "La Croce del Sud",
+     "g": "Impara a trovare la Croce del Sud e a usarla per individuare il polo sud celeste.",
+     "p": [
+      "La Croce del Sud è la più piccola delle 88 costellazioni, eppure una delle più famose.",
+      "Prolunga il suo asse lungo circa quattro volte e mezzo per arrivare al polo sud celeste, privo di stelle brillanti.",
+      "Due stelle puntatrici, Alfa e Beta Centauri, aiutano a distinguere la vera croce da una falsa croce più debole."
+     ],
+     "q": "Hai mai visto la Croce del Sud, magari su una bandiera?",
+     "c": "Dall’emisfero sud, trova la Croce e le sue due puntatrici, poi stima dove si trova il sud."
+    },
+    "pt": {
+     "t": "O Cruzeiro do Sul",
+     "g": "Aprende a encontrar o Cruzeiro do Sul e a usá-lo para localizar o polo sul celeste.",
+     "p": [
+      "O Cruzeiro do Sul é a mais pequena das 88 constelações e, ainda assim, uma das mais famosas.",
+      "Prolonga o seu eixo maior cerca de quatro vezes e meia para chegar ao polo sul celeste, sem estrela brilhante.",
+      "Duas estrelas guia, Alfa e Beta do Centauro, ajudam a distinguir a cruz verdadeira de uma falsa cruz mais fraca."
+     ],
+     "q": "Já viste o Cruzeiro do Sul, talvez numa bandeira?",
+     "c": "A partir do hemisfério sul, encontra o Cruzeiro e as suas guias e estima onde fica o sul."
+    },
+    "pt_BR": {
+     "t": "O Cruzeiro do Sul",
+     "g": "Aprenda a encontrar o Cruzeiro do Sul e a usá-lo para localizar o polo sul celeste.",
+     "p": [
+      "O Cruzeiro do Sul é a menor das 88 constelações e, mesmo assim, uma das mais famosas.",
+      "Prolongue o eixo maior cerca de quatro vezes e meia para chegar ao polo sul celeste, que não tem estrela brilhante.",
+      "Duas estrelas guia, Alfa e Beta do Centauro, ajudam a diferenciar a cruz verdadeira de uma falsa cruz mais fraca."
+     ],
+     "q": "Você já viu o Cruzeiro do Sul, talvez na bandeira do Brasil?",
+     "c": "No hemisfério sul, ache o Cruzeiro e suas duas guias e estime onde fica o sul."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Orion the Hunter",
+     "g": "Meet Orion, a bright star pattern you can see from both hemispheres.",
+     "p": [
+      "Orion lies on the celestial equator, so it can be seen from almost everywhere on Earth.",
+      "Look for three stars in a row: Orion’s Belt, with red Betelgeuse above and blue-white Rigel below.",
+      "Below the belt hangs the sword, where the Orion Nebula glows as a soft misty patch, a place where stars are born."
+     ],
+     "q": "Have you ever noticed three bright stars in a neat line?",
+     "c": "When Orion is up, find the belt and follow it to locate Betelgeuse and Rigel."
+    },
+    "de": {
+     "t": "Orion, der Jäger",
+     "g": "Lerne Orion kennen, ein helles Sternmuster, das von beiden Halbkugeln aus sichtbar ist.",
+     "p": [
+      "Orion liegt auf dem Himmelsäquator und ist daher fast überall auf der Erde zu sehen.",
+      "Achte auf drei Sterne in einer Reihe: den Oriongürtel, darüber die rote Beteigeuze, darunter der blauweiße Rigel.",
+      "Unter dem Gürtel hängt das Schwert mit dem Orionnebel, einem zarten Nebelfleck, in dem Sterne entstehen."
+     ],
+     "q": "Hast du schon einmal drei helle Sterne in einer ordentlichen Reihe bemerkt?",
+     "c": "Wenn Orion am Himmel steht, finde den Gürtel und von dort aus Beteigeuze und Rigel."
+    },
+    "es": {
+     "t": "Orión el Cazador",
+     "g": "Conoce Orión, una figura brillante que se ve desde ambos hemisferios.",
+     "p": [
+      "Orión está sobre el ecuador celeste, así que se puede ver desde casi cualquier lugar de la Tierra.",
+      "Busca tres estrellas en fila: el Cinturón de Orión, con la roja Betelgeuse arriba y la blanco azulada Rigel abajo.",
+      "Bajo el cinturón cuelga la espada, donde la Nebulosa de Orión brilla como una mancha suave: allí nacen estrellas."
+     ],
+     "q": "¿Has visto alguna vez tres estrellas brillantes en una línea perfecta?",
+     "c": "Cuando Orión esté visible, encuentra el cinturón y úsalo para localizar Betelgeuse y Rigel."
+    },
+    "fr": {
+     "t": "Orion le Chasseur",
+     "g": "Fais connaissance avec Orion, une figure brillante visible depuis les deux hémisphères.",
+     "p": [
+      "Orion se trouve sur l’équateur céleste : on peut donc la voir depuis presque toute la Terre.",
+      "Cherche trois étoiles alignées, la ceinture d’Orion, avec la rouge Bételgeuse au-dessus et la bleutée Rigel dessous.",
+      "Sous la ceinture pend l’épée, où la nébuleuse d’Orion forme une tache laiteuse : une pouponnière d’étoiles."
+     ],
+     "q": "As-tu déjà remarqué trois étoiles brillantes parfaitement alignées ?",
+     "c": "Quand Orion est visible, trouve la ceinture et sers-t’en pour repérer Bételgeuse et Rigel."
+    },
+    "it": {
+     "t": "Orione il Cacciatore",
+     "g": "Conosci Orione, una figura luminosa visibile da entrambi gli emisferi.",
+     "p": [
+      "Orione si trova sull’equatore celeste, quindi è visibile da quasi ogni luogo della Terra.",
+      "Cerca tre stelle in fila: la Cintura di Orione, con la rossa Betelgeuse sopra e la bianco-azzurra Rigel sotto.",
+      "Sotto la cintura pende la spada, dove la Nebulosa di Orione appare come una macchia tenue: lì nascono stelle."
+     ],
+     "q": "Hai mai notato tre stelle luminose perfettamente allineate?",
+     "c": "Quando Orione è in cielo, trova la cintura e usala per individuare Betelgeuse e Rigel."
+    },
+    "pt": {
+     "t": "Orionte, o Caçador",
+     "g": "Conhece Orionte, uma figura brilhante que se vê dos dois hemisférios.",
+     "p": [
+      "Orionte está sobre o equador celeste, por isso pode ser vista de quase todo o planeta.",
+      "Procura três estrelas em fila: o Cinturão de Orionte, com a vermelha Betelgeuse em cima e a branco-azulada Rigel em baixo.",
+      "Sob o cinturão fica a espada, onde a Nebulosa de Orionte brilha como uma mancha suave: ali nascem estrelas."
+     ],
+     "q": "Já reparaste em três estrelas brilhantes perfeitamente alinhadas?",
+     "c": "Quando Orionte estiver visível, encontra o cinturão e usa-o para localizar Betelgeuse e Rigel."
+    },
+    "pt_BR": {
+     "t": "Órion, o Caçador",
+     "g": "Conheça Órion, uma figura brilhante que pode ser vista dos dois hemisférios.",
+     "p": [
+      "Órion fica sobre o equador celeste, por isso pode ser vista de quase todo o planeta.",
+      "Procure três estrelas em fila, as Três Marias, com a vermelha Betelgeuse de um lado e a branco-azulada Rigel do outro.",
+      "Perto das Três Marias fica a espada, onde a Nebulosa de Órion brilha como uma mancha suave: ali nascem estrelas."
+     ],
+     "q": "Você já reparou nas Três Marias, três estrelas brilhantes em linha?",
+     "c": "Quando Órion estiver visível, ache as Três Marias e use-as para localizar Betelgeuse e Rigel."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Star colours tell temperature",
+     "g": "Learn how a star’s colour reveals how hot its surface is.",
+     "p": [
+      "Stars glow like hot metal: red stars are the coolest, yellow ones medium and blue-white ones the hottest.",
+      "Betelgeuse in Orion is a red supergiant around 3,500 °C, while Rigel is blue-white and far hotter.",
+      "Our yellow-white Sun has a surface of about 5,500 °C, right in the middle of the range."
+     ],
+     "q": "Which colour of star would you most like to visit in a dream?",
+     "c": "Compare Betelgeuse and Rigel, or any two bright stars, and note which looks redder."
+    },
+    "de": {
+     "t": "Sternfarben verraten Temperatur",
+     "g": "Erfahre, wie die Farbe eines Sterns verrät, wie heiß seine Oberfläche ist.",
+     "p": [
+      "Sterne glühen wie heißes Metall: Rote Sterne sind am kühlsten, gelbe mittel und blauweiße am heißesten.",
+      "Beteigeuze im Orion ist ein roter Überriese mit etwa 3500 °C, Rigel dagegen ist blauweiß und viel heißer.",
+      "Unsere gelblich-weiße Sonne hat eine Oberfläche von etwa 5500 °C, genau in der Mitte der Skala."
+     ],
+     "q": "Welche Sternfarbe würdest du im Traum am liebsten besuchen?",
+     "c": "Vergleiche Beteigeuze und Rigel oder zwei andere helle Sterne und notiere, welcher röter wirkt."
+    },
+    "es": {
+     "t": "Los colores de las estrellas",
+     "g": "Aprende cómo el color de una estrella revela lo caliente que está su superficie.",
+     "p": [
+      "Las estrellas brillan como metal caliente: las rojas son las más frías, las amarillas medias y las blanco azuladas las más calientes.",
+      "Betelgeuse, en Orión, es una supergigante roja de unos 3500 °C; Rigel es blanco azulada y mucho más caliente.",
+      "Nuestro Sol, blanco amarillento, tiene una superficie de unos 5500 °C, justo en el medio de la escala."
+     ],
+     "q": "¿Qué color de estrella te gustaría visitar en un sueño?",
+     "c": "Compara Betelgeuse y Rigel, u otras dos estrellas brillantes, y anota cuál se ve más roja."
+    },
+    "fr": {
+     "t": "La couleur des étoiles",
+     "g": "Découvre comment la couleur d’une étoile révèle la température de sa surface.",
+     "p": [
+      "Les étoiles brillent comme du métal chauffé : rouges les plus froides, jaunes moyennes, bleu-blanc les plus chaudes.",
+      "Bételgeuse, dans Orion, est une supergéante rouge d’environ 3500 °C ; Rigel, bleu-blanc, est bien plus chaude.",
+      "Notre Soleil blanc-jaune a une surface d’environ 5500 °C, en plein milieu de l’échelle."
+     ],
+     "q": "Quelle couleur d’étoile aimerais-tu visiter en rêve ?",
+     "c": "Compare Bételgeuse et Rigel, ou deux autres étoiles brillantes, et note laquelle paraît la plus rouge."
+    },
+    "it": {
+     "t": "I colori delle stelle",
+     "g": "Scopri come il colore di una stella rivela quanto è calda la sua superficie.",
+     "p": [
+      "Le stelle brillano come metallo caldo: le rosse sono le più fredde, le gialle medie, le bianco-azzurre le più calde.",
+      "Betelgeuse, in Orione, è una supergigante rossa di circa 3500 °C; Rigel è bianco-azzurra e molto più calda.",
+      "Il nostro Sole, bianco-giallo, ha una superficie di circa 5500 °C, proprio a metà della scala."
+     ],
+     "q": "Quale colore di stella ti piacerebbe visitare in sogno?",
+     "c": "Confronta Betelgeuse e Rigel, o altre due stelle brillanti, e annota quale sembra più rossa."
+    },
+    "pt": {
+     "t": "As cores das estrelas",
+     "g": "Aprende como a cor de uma estrela revela a temperatura da sua superfície.",
+     "p": [
+      "As estrelas brilham como metal quente: as vermelhas são as mais frias, as amarelas médias e as branco-azuladas as mais quentes.",
+      "Betelgeuse, em Orionte, é uma supergigante vermelha com cerca de 3500 °C; Rigel é branco-azulada e muito mais quente.",
+      "O nosso Sol, branco-amarelado, tem uma superfície de cerca de 5500 °C, mesmo a meio da escala."
+     ],
+     "q": "Que cor de estrela gostavas de visitar num sonho?",
+     "c": "Compara Betelgeuse e Rigel, ou outras duas estrelas brilhantes, e anota qual parece mais vermelha."
+    },
+    "pt_BR": {
+     "t": "As cores das estrelas",
+     "g": "Aprenda como a cor de uma estrela revela a temperatura da sua superfície.",
+     "p": [
+      "As estrelas brilham como metal quente: as vermelhas são as mais frias, as amarelas médias e as branco-azuladas as mais quentes.",
+      "Betelgeuse, em Órion, é uma supergigante vermelha de cerca de 3.500 °C; Rigel é branco-azulada e bem mais quente.",
+      "O nosso Sol, branco-amarelado, tem uma superfície de cerca de 5.500 °C, bem no meio da escala."
+     ],
+     "q": "Que cor de estrela você gostaria de visitar num sonho?",
+     "c": "Compare Betelgeuse e Rigel, ou outras duas estrelas brilhantes, e anote qual parece mais vermelha."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Measuring the sky with your hand",
+     "g": "Use your hand at arm’s length as a simple ruler for angles in the sky.",
+     "p": [
+      "Astronomers measure sky distances in degrees: from horizon to the point overhead is 90 degrees.",
+      "At arm’s length, a little finger covers about 1 degree and a closed fist about 10 degrees.",
+      "The full Moon is only about half a degree wide, so your little finger can easily hide it."
+     ],
+     "q": "How many fists do you think separate the horizon from the point overhead?",
+     "c": "Measure in fists how high the Moon or a bright star is above your horizon tonight."
+    },
+    "de": {
+     "t": "Den Himmel mit der Hand messen",
+     "g": "Nutze deine Hand am ausgestreckten Arm als einfaches Lineal für Winkel am Himmel.",
+     "p": [
+      "Astronomen messen Abstände am Himmel in Grad: Vom Horizont bis zum Punkt über dir sind es 90 Grad.",
+      "Am ausgestreckten Arm bedeckt der kleine Finger etwa 1 Grad, eine geballte Faust etwa 10 Grad.",
+      "Der Vollmond ist nur etwa ein halbes Grad breit, dein kleiner Finger kann ihn leicht verdecken."
+     ],
+     "q": "Wie viele Fäuste liegen wohl zwischen Horizont und dem Punkt über dir?",
+     "c": "Miss heute Abend in Fäusten, wie hoch der Mond oder ein heller Stern über dem Horizont steht."
+    },
+    "es": {
+     "t": "Medir el cielo con la mano",
+     "g": "Usa tu mano con el brazo estirado como una regla sencilla para medir ángulos en el cielo.",
+     "p": [
+      "Los astrónomos miden distancias en el cielo en grados: del horizonte al punto sobre tu cabeza hay 90 grados.",
+      "Con el brazo estirado, el meñique cubre cerca de 1 grado y el puño cerrado unos 10 grados.",
+      "La Luna llena mide solo medio grado, así que tu meñique la tapa con facilidad."
+     ],
+     "q": "¿Cuántos puños crees que hay entre el horizonte y el punto sobre tu cabeza?",
+     "c": "Mide esta noche en puños a qué altura sobre el horizonte está la Luna o una estrella brillante."
+    },
+    "fr": {
+     "t": "Mesurer le ciel avec la main",
+     "g": "Utilise ta main, bras tendu, comme une règle simple pour mesurer les angles dans le ciel.",
+     "p": [
+      "Les astronomes mesurent les distances dans le ciel en degrés : de l’horizon au zénith, il y a 90 degrés.",
+      "Bras tendu, le petit doigt couvre environ 1 degré et le poing fermé environ 10 degrés.",
+      "La pleine Lune ne mesure qu’un demi-degré : ton petit doigt peut facilement la cacher."
+     ],
+     "q": "Combien de poings, selon toi, séparent l’horizon du point au-dessus de ta tête ?",
+     "c": "Mesure ce soir en poings la hauteur de la Lune ou d’une étoile brillante au-dessus de l’horizon."
+    },
+    "it": {
+     "t": "Misurare il cielo con la mano",
+     "g": "Usa la mano a braccio teso come un semplice righello per gli angoli nel cielo.",
+     "p": [
+      "Gli astronomi misurano le distanze in cielo in gradi: dall’orizzonte al punto sopra la testa ci sono 90 gradi.",
+      "A braccio teso, il mignolo copre circa 1 grado e il pugno chiuso circa 10 gradi.",
+      "La Luna piena è larga solo mezzo grado: il tuo mignolo può coprirla facilmente."
+     ],
+     "q": "Quanti pugni pensi che separino l’orizzonte dal punto sopra la tua testa?",
+     "c": "Misura stasera in pugni quanto in alto sull’orizzonte si trova la Luna o una stella brillante."
+    },
+    "pt": {
+     "t": "Medir o céu com a mão",
+     "g": "Usa a mão com o braço esticado como uma régua simples para medir ângulos no céu.",
+     "p": [
+      "Os astrónomos medem distâncias no céu em graus: do horizonte ao ponto por cima da cabeça são 90 graus.",
+      "Com o braço esticado, o dedo mindinho cobre cerca de 1 grau e o punho fechado cerca de 10 graus.",
+      "A Lua cheia tem apenas meio grau de largura, por isso o teu mindinho tapa-a facilmente."
+     ],
+     "q": "Quantos punhos achas que separam o horizonte do ponto por cima da tua cabeça?",
+     "c": "Mede esta noite em punhos a altura da Lua ou de uma estrela brilhante acima do horizonte."
+    },
+    "pt_BR": {
+     "t": "Medindo o céu com a mão",
+     "g": "Use a mão com o braço esticado como uma régua simples para medir ângulos no céu.",
+     "p": [
+      "Os astrônomos medem distâncias no céu em graus: do horizonte ao ponto acima da cabeça são 90 graus.",
+      "Com o braço esticado, o dedo mindinho cobre cerca de 1 grau e o punho fechado cerca de 10 graus.",
+      "A Lua cheia tem só meio grau de largura, então seu mindinho consegue cobri-la facilmente."
+     ],
+     "q": "Quantos punhos você acha que separam o horizonte do ponto acima da sua cabeça?",
+     "c": "Meça hoje à noite em punhos a altura da Lua ou de uma estrela brilhante acima do horizonte."
+    }
+   }
+  }
+ ]
+}

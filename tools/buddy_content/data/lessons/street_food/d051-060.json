@@ -1,0 +1,835 @@
+{
+ "topic": "street_food",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Baozi",
+     "g": "Meet fluffy steamed buns with savoury and sweet fillings.",
+     "p": [
+      "Baozi are yeast-dough buns steamed in bamboo baskets, filled with pork, vegetables or sweet red bean paste.",
+      "They are a common breakfast and snack across China, often sold from steaming stacks at street stalls.",
+      "Choose buns straight from the steamer so they are hot; a hot, steamy bun is the safest and the softest."
+     ],
+     "q": "Would you pick a savoury or a sweet bun first?",
+     "c": "Steam or microwave a soft bun today and fill it with a savoury or sweet filling."
+    },
+    "de": {
+     "t": "Baozi",
+     "g": "Fluffige gedämpfte Teigtaschen mit herzhaften und süßen Füllungen kennenlernen.",
+     "p": [
+      "Baozi sind Hefeteigbrötchen, in Bambuskörben gedämpft und mit Schwein, Gemüse oder süßer roter Bohnenpaste gefüllt.",
+      "Sie sind in ganz China ein verbreitetes Frühstück und ein Snack, oft aus dampfenden Stapeln an Straßenständen.",
+      "Nimm Baozi direkt aus dem Dämpfer, damit sie heiß sind; heiß und dampfend sind sie am sichersten und weichsten."
+     ],
+     "q": "Würdest du zuerst ein herzhaftes oder ein süßes Baozi probieren?",
+     "c": "Dämpfe oder erwärme heute ein weiches Brötchen und fülle es herzhaft oder süß."
+    },
+    "es": {
+     "t": "Baozi",
+     "g": "Conocer los esponjosos panecillos al vapor con rellenos salados y dulces.",
+     "p": [
+      "Los baozi son panecillos de masa con levadura cocidos al vapor en cestas de bambú, rellenos de cerdo, verduras o pasta dulce de judía roja.",
+      "Son un desayuno y un tentempié habituales en toda China, a menudo en pilas humeantes en los puestos callejeros.",
+      "Elige los que salen directos de la vaporera para que estén calientes; calientes y humeantes son más seguros y más suaves."
+     ],
+     "q": "¿Elegirías primero un baozi salado o uno dulce?",
+     "c": "Cuece hoy al vapor un panecillo blando y rellénalo con algo salado o dulce."
+    },
+    "fr": {
+     "t": "Les baozi",
+     "g": "Découvrir les petits pains moelleux cuits à la vapeur, salés ou sucrés.",
+     "p": [
+      "Les baozi sont des pains levés cuits à la vapeur en paniers de bambou, garnis de porc, de légumes ou de pâte de haricot rouge sucrée.",
+      "C'est un petit-déjeuner et un en-cas courants en Chine, souvent vendus en piles fumantes sur les stands.",
+      "Choisis ceux qui sortent du panier vapeur pour qu'ils soient chauds ; chauds et fumants, ils sont plus sûrs et plus moelleux."
+     ],
+     "q": "Choisirais-tu d'abord un baozi salé ou sucré ?",
+     "c": "Cuis aujourd'hui à la vapeur un petit pain moelleux et garnis-le de salé ou de sucré."
+    },
+    "it": {
+     "t": "Baozi",
+     "g": "Conoscere i soffici panini al vapore con ripieni salati e dolci.",
+     "p": [
+      "I baozi sono panini di pasta lievitata cotti al vapore in cestini di bambù, ripieni di maiale, verdure o pasta dolce di fagioli rossi.",
+      "Sono una colazione e uno spuntino comuni in tutta la Cina, spesso in pile fumanti sulle bancarelle.",
+      "Scegli quelli appena usciti dalla vaporiera, così sono caldi; caldi e fumanti sono più sicuri e più morbidi."
+     ],
+     "q": "Sceglieresti prima un baozi salato o dolce?",
+     "c": "Cuoci oggi al vapore un panino morbido e riempilo con qualcosa di salato o dolce."
+    },
+    "pt": {
+     "t": "Baozi",
+     "g": "Conhecer os fofos pãezinhos a vapor com recheios salgados e doces.",
+     "p": [
+      "Os baozi são pãezinhos de massa levedada cozidos a vapor em cestos de bambu, com recheio de porco, legumes ou pasta doce de feijão vermelho.",
+      "São um pequeno-almoço e um petisco comuns em toda a China, muitas vezes em pilhas fumegantes nas bancas de rua.",
+      "Escolhe os que saem diretos da vaporeira para estarem quentes; quentes e a fumegar são mais seguros e mais macios."
+     ],
+     "q": "Escolhias primeiro um baozi salgado ou doce?",
+     "c": "Coze hoje a vapor um pãozinho macio e recheia-o com algo salgado ou doce."
+    },
+    "pt_BR": {
+     "t": "Baozi",
+     "g": "Conhecer os fofinhos pãezinhos no vapor com recheios salgados e doces.",
+     "p": [
+      "Os baozi são pãezinhos de massa fermentada no vapor em cestas de bambu, com recheio de porco, legumes ou pasta doce de feijão vermelho.",
+      "São café da manhã e lanche comuns em toda a China, muitas vezes em pilhas fumegantes nas barracas de rua.",
+      "Escolha os que saem direto da vaporeira para estarem quentes; quentes e fumegantes são mais seguros e mais macios."
+     ],
+     "q": "Você escolheria primeiro um baozi salgado ou doce?",
+     "c": "Cozinhe hoje no vapor um pãozinho macio e recheie com algo salgado ou doce."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Xiaolongbao",
+     "g": "Learn how soup dumplings hold hot broth inside.",
+     "p": [
+      "Xiaolongbao are small dumplings from the Shanghai area, with a thin wrapper holding meat filling and a spoonful of broth.",
+      "The broth starts as a firm jelly mixed into the filling; steaming melts it into soup inside the dumpling.",
+      "Let one cool on a spoon, bite a small hole, sip the soup carefully and then eat the dumpling, because the broth is very hot."
+     ],
+     "q": "Have you ever eaten a dumpling with soup inside?",
+     "c": "Practise the slow way today: let any hot dumpling cool on a spoon before the first bite."
+    },
+    "de": {
+     "t": "Xiaolongbao",
+     "g": "Lernen, wie Suppenteigtaschen heiße Brühe in sich tragen.",
+     "p": [
+      "Xiaolongbao sind kleine Teigtaschen aus der Region Shanghai, mit dünner Hülle, Fleischfüllung und einem Löffel Brühe.",
+      "Die Brühe ist zunächst eine feste Gelee-Masse in der Füllung; beim Dämpfen schmilzt sie zur Suppe im Inneren.",
+      "Lass sie auf dem Löffel abkühlen, beiß ein Loch hinein, schlürfe vorsichtig die Suppe und iss dann die Tasche: Die Brühe ist sehr heiß."
+     ],
+     "q": "Hast du schon einmal eine Teigtasche mit Suppe gegessen?",
+     "c": "Übe heute das langsame Essen: Lass eine heiße Teigtasche vor dem ersten Biss auf einem Löffel abkühlen."
+    },
+    "es": {
+     "t": "Xiaolongbao",
+     "g": "Aprender cómo los dumplings de sopa guardan caldo caliente dentro.",
+     "p": [
+      "Los xiaolongbao son pequeños dumplings de la zona de Shanghái, con una masa fina que envuelve carne y una cucharada de caldo.",
+      "El caldo empieza como una gelatina firme mezclada con el relleno; al cocer al vapor se derrite y se hace sopa dentro.",
+      "Déjalo enfriar en una cuchara, muerde un agujerito, sorbe la sopa con cuidado y luego come el dumpling: el caldo quema mucho."
+     ],
+     "q": "¿Has comido alguna vez un dumpling con sopa dentro?",
+     "c": "Practica hoy el modo lento: deja que cualquier dumpling caliente se enfríe en una cuchara antes de morder."
+    },
+    "fr": {
+     "t": "Les xiaolongbao",
+     "g": "Apprendre comment les raviolis soupe gardent un bouillon chaud à l'intérieur.",
+     "p": [
+      "Les xiaolongbao sont de petits raviolis de la région de Shanghai, à la pâte fine, garnis de viande et d'une cuillerée de bouillon.",
+      "Le bouillon commence en gelée ferme mêlée à la farce ; la cuisson vapeur la fait fondre en soupe à l'intérieur.",
+      "Laisse-le refroidir sur une cuillère, croque un petit trou, sirote la soupe avec précaution puis mange le ravioli : le bouillon brûle."
+     ],
+     "q": "As-tu déjà mangé un ravioli avec de la soupe dedans ?",
+     "c": "Entraîne-toi aujourd'hui à manger lentement : laisse un ravioli chaud refroidir sur une cuillère avant de croquer."
+    },
+    "it": {
+     "t": "Xiaolongbao",
+     "g": "Imparare come i ravioli in brodo tengono dentro il brodo caldo.",
+     "p": [
+      "Gli xiaolongbao sono piccoli ravioli della zona di Shanghai, con pasta sottile che avvolge carne e un cucchiaio di brodo.",
+      "Il brodo parte come gelatina soda mescolata al ripieno; la cottura a vapore la scioglie in zuppa dentro il raviolo.",
+      "Lascialo raffreddare su un cucchiaio, mordi un forellino, sorseggia il brodo con cautela e poi mangia il raviolo: il brodo scotta molto."
+     ],
+     "q": "Hai mai mangiato un raviolo con la zuppa dentro?",
+     "c": "Esercitati oggi a mangiare piano: lascia raffreddare un raviolo caldo su un cucchiaio prima del primo morso."
+    },
+    "pt": {
+     "t": "Xiaolongbao",
+     "g": "Aprender como os dumplings de sopa guardam caldo quente no interior.",
+     "p": [
+      "Os xiaolongbao são pequenos dumplings da zona de Xangai, com massa fina a envolver carne e uma colher de caldo.",
+      "O caldo começa como uma gelatina firme misturada no recheio; ao cozer a vapor derrete e vira sopa lá dentro.",
+      "Deixa arrefecer numa colher, morde um buraquinho, bebe a sopa com cuidado e depois come o dumpling: o caldo está muito quente."
+     ],
+     "q": "Já comeste um dumpling com sopa lá dentro?",
+     "c": "Pratica hoje o modo lento: deixa um dumpling quente arrefecer numa colher antes da primeira dentada."
+    },
+    "pt_BR": {
+     "t": "Xiaolongbao",
+     "g": "Aprender como os pasteizinhos de sopa guardam caldo quente por dentro.",
+     "p": [
+      "Os xiaolongbao são pequenos bolinhos da região de Xangai, com massa fina envolvendo carne e uma colher de caldo.",
+      "O caldo começa como uma gelatina firme misturada ao recheio; o cozimento no vapor derrete e vira sopa lá dentro.",
+      "Deixe esfriar numa colher, morda um furinho, tome a sopa com cuidado e depois coma o bolinho: o caldo está muito quente."
+     ],
+     "q": "Você já comeu um bolinho com sopa dentro?",
+     "c": "Pratique hoje o modo lento: deixe um bolinho quente esfriar numa colher antes da primeira mordida."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chuan'r skewers",
+     "g": "Explore cumin-spiced grilled skewers linked to Xinjiang.",
+     "p": [
+      "Chuan'r are small skewers of meat, often lamb, grilled over charcoal and dusted with cumin, chilli and salt.",
+      "The style is strongly linked to the Uyghur food of Xinjiang and is loved at night stalls across China.",
+      "Pick skewers grilled in front of you over hot coals and cooked through, and ask for mild spice if you prefer."
+     ],
+     "q": "Do you enjoy foods cooked on skewers over fire?",
+     "c": "Season small pieces of meat or vegetables with cumin and salt today and cook them on skewers."
+    },
+    "de": {
+     "t": "Chuan'r-Spieße",
+     "g": "Gewürzte Grillspieße mit Kreuzkümmel und ihre Verbindung zu Xinjiang entdecken.",
+     "p": [
+      "Chuan'r sind kleine Spieße mit Fleisch, oft Lamm, über Holzkohle gegrillt und mit Kreuzkümmel, Chili und Salz bestäubt.",
+      "Der Stil ist eng mit der uigurischen Küche Xinjiangs verbunden und wird an Nachtständen in ganz China geliebt.",
+      "Wähle Spieße, die vor deinen Augen über heißer Glut gegrillt und durchgegart sind, und bitte nach Wunsch um milde Schärfe."
+     ],
+     "q": "Magst du Essen vom Spieß über dem Feuer?",
+     "c": "Würze heute kleine Fleisch- oder Gemüsestücke mit Kreuzkümmel und Salz und grille sie am Spieß."
+    },
+    "es": {
+     "t": "Brochetas chuan'r",
+     "g": "Explorar las brochetas a la parrilla con comino ligadas a Xinjiang.",
+     "p": [
+      "Los chuan'r son pequeñas brochetas de carne, a menudo cordero, asadas al carbón y espolvoreadas con comino, chile y sal.",
+      "El estilo está muy ligado a la cocina uigur de Xinjiang y se disfruta en puestos nocturnos de toda China.",
+      "Elige brochetas hechas delante de ti sobre brasas calientes y bien cocinadas, y pide poco picante si lo prefieres."
+     ],
+     "q": "¿Te gustan los alimentos en brocheta hechos al fuego?",
+     "c": "Sazona hoy trocitos de carne o verdura con comino y sal y cocínalos en brochetas."
+    },
+    "fr": {
+     "t": "Les brochettes chuan'r",
+     "g": "Explorer les brochettes grillées au cumin liées au Xinjiang.",
+     "p": [
+      "Les chuan'r sont de petites brochettes de viande, souvent d'agneau, grillées au charbon et saupoudrées de cumin, piment et sel.",
+      "Ce style est étroitement lié à la cuisine ouïghoure du Xinjiang et très apprécié aux stands de nuit dans toute la Chine.",
+      "Choisis des brochettes grillées devant toi sur des braises chaudes et bien cuites, et demande peu de piment si tu préfères."
+     ],
+     "q": "Aimes-tu les aliments grillés en brochette sur le feu ?",
+     "c": "Assaisonne aujourd'hui de petits morceaux de viande ou de légumes au cumin et au sel et fais-les cuire en brochettes."
+    },
+    "it": {
+     "t": "Spiedini chuan'r",
+     "g": "Esplorare gli spiedini grigliati al cumino legati allo Xinjiang.",
+     "p": [
+      "I chuan'r sono piccoli spiedini di carne, spesso agnello, grigliati sulla brace e cosparsi di cumino, peperoncino e sale.",
+      "Lo stile è legato alla cucina uigura dello Xinjiang ed è amato nelle bancarelle notturne di tutta la Cina.",
+      "Scegli spiedini grigliati davanti a te su braci calde e ben cotti, e chiedi poco piccante se preferisci."
+     ],
+     "q": "Ti piacciono i cibi cotti allo spiedo sul fuoco?",
+     "c": "Condisci oggi piccoli pezzi di carne o verdure con cumino e sale e cuocili su spiedini."
+    },
+    "pt": {
+     "t": "Espetadas chuan'r",
+     "g": "Explorar as espetadas grelhadas com cominhos ligadas a Xinjiang.",
+     "p": [
+      "Os chuan'r são pequenas espetadas de carne, muitas vezes de borrego, grelhadas em carvão e polvilhadas com cominhos, piri-piri e sal.",
+      "O estilo está muito ligado à cozinha uigur de Xinjiang e é adorado nas bancas noturnas por toda a China.",
+      "Escolhe espetadas grelhadas à tua frente sobre brasas quentes e bem passadas, e pede pouco picante se preferires."
+     ],
+     "q": "Gostas de comida em espetada feita ao lume?",
+     "c": "Tempera hoje pedaços de carne ou legumes com cominhos e sal e cozinha-os em espetadas."
+    },
+    "pt_BR": {
+     "t": "Espetinhos chuan'r",
+     "g": "Explorar os espetinhos grelhados com cominho ligados a Xinjiang.",
+     "p": [
+      "Os chuan'r são pequenos espetinhos de carne, geralmente de cordeiro, grelhados na brasa e polvilhados com cominho, pimenta e sal.",
+      "O estilo está muito ligado à culinária uigur de Xinjiang e é adorado nas barracas noturnas de toda a China.",
+      "Escolha espetinhos grelhados na sua frente sobre brasas quentes e bem passados, e peça pouca pimenta se preferir."
+     ],
+     "q": "Você gosta de comida no espeto feita na brasa?",
+     "c": "Tempere hoje pedaços de carne ou legumes com cominho e sal e asse em espetinhos."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Stinky tofu",
+     "g": "Learn why this fermented tofu smells strong but tastes mild.",
+     "p": [
+      "Stinky tofu is tofu soaked in a fermented brine, then fried or stewed; the smell is strong while the taste is gentle.",
+      "It is a classic of Taiwan's night markets and also loved in parts of mainland China.",
+      "Fried versions are often served with pickled cabbage and chilli sauce; choose a busy stall so it is freshly cooked."
+     ],
+     "q": "Have you ever tried a food with a very strong smell?",
+     "c": "Try a new strongly scented food today, like a ripe cheese, and describe it in three words."
+    },
+    "de": {
+     "t": "Stinktofu",
+     "g": "Verstehen, warum dieser fermentierte Tofu stark riecht, aber mild schmeckt.",
+     "p": [
+      "Stinktofu ist Tofu, der in fermentierter Lake liegt und dann frittiert oder geschmort wird; der Geruch ist stark, der Geschmack sanft.",
+      "Er ist ein Klassiker der Nachtmärkte Taiwans und wird auch in Teilen Festlandchinas geliebt.",
+      "Frittierte Varianten gibt es oft mit eingelegtem Kohl und Chilisoße; wähle einen gut besuchten Stand, dann ist er frisch gegart."
+     ],
+     "q": "Hast du schon einmal etwas mit sehr starkem Geruch probiert?",
+     "c": "Probiere heute ein neues, stark riechendes Essen, etwa einen reifen Käse, und beschreibe es mit drei Wörtern."
+    },
+    "es": {
+     "t": "Tofu apestoso",
+     "g": "Entender por qué este tofu fermentado huele fuerte pero sabe suave.",
+     "p": [
+      "El tofu apestoso es tofu remojado en una salmuera fermentada y luego frito o guisado; el olor es fuerte, pero el sabor es suave.",
+      "Es un clásico de los mercados nocturnos de Taiwán y también gusta en zonas de la China continental.",
+      "Las versiones fritas suelen llevar col encurtida y salsa picante; elige un puesto concurrido para que esté recién hecho."
+     ],
+     "q": "¿Has probado alguna vez un alimento con un olor muy fuerte?",
+     "c": "Prueba hoy un alimento nuevo de olor intenso, como un queso curado, y descríbelo en tres palabras."
+    },
+    "fr": {
+     "t": "Le tofu puant",
+     "g": "Comprendre pourquoi ce tofu fermenté sent fort mais a un goût doux.",
+     "p": [
+      "Le tofu puant est du tofu trempé dans une saumure fermentée puis frit ou mijoté ; l'odeur est forte, le goût est doux.",
+      "C'est un classique des marchés de nuit de Taïwan, aussi apprécié dans certaines régions de Chine continentale.",
+      "Les versions frites viennent souvent avec du chou mariné et de la sauce pimentée ; choisis un stand fréquenté pour un tofu fraîchement cuit."
+     ],
+     "q": "As-tu déjà goûté un aliment à l'odeur très forte ?",
+     "c": "Goûte aujourd'hui un nouvel aliment très odorant, comme un fromage affiné, et décris-le en trois mots."
+    },
+    "it": {
+     "t": "Tofu puzzolente",
+     "g": "Capire perché questo tofu fermentato ha un odore forte ma un gusto delicato.",
+     "p": [
+      "Il tofu puzzolente è tofu immerso in una salamoia fermentata, poi fritto o stufato; l'odore è forte, il sapore è delicato.",
+      "È un classico dei mercati notturni di Taiwan ed è amato anche in alcune zone della Cina continentale.",
+      "Le versioni fritte si servono spesso con cavolo in agrodolce e salsa piccante; scegli una bancarella affollata, così è appena cotto."
+     ],
+     "q": "Hai mai provato un cibo con un odore molto forte?",
+     "c": "Assaggia oggi un nuovo cibo dall'odore intenso, come un formaggio stagionato, e descrivilo in tre parole."
+    },
+    "pt": {
+     "t": "Tofu fedorento",
+     "g": "Perceber porque este tofu fermentado cheira forte mas sabe suave.",
+     "p": [
+      "O tofu fedorento é tofu mergulhado numa salmoura fermentada e depois frito ou estufado; o cheiro é forte, mas o sabor é suave.",
+      "É um clássico dos mercados noturnos de Taiwan e também apreciado em zonas da China continental.",
+      "As versões fritas costumam vir com couve em conserva e molho picante; escolhe uma banca concorrida para estar acabado de fazer."
+     ],
+     "q": "Já provaste um alimento com um cheiro muito forte?",
+     "c": "Prova hoje um alimento novo de cheiro intenso, como um queijo curado, e descreve-o em três palavras."
+    },
+    "pt_BR": {
+     "t": "Tofu fedido",
+     "g": "Entender por que este tofu fermentado tem cheiro forte mas sabor suave.",
+     "p": [
+      "O tofu fedido é tofu mergulhado numa salmoura fermentada e depois frito ou cozido; o cheiro é forte, mas o sabor é suave.",
+      "É um clássico dos mercados noturnos de Taiwan e também apreciado em partes da China continental.",
+      "As versões fritas costumam vir com repolho em conserva e molho de pimenta; escolha uma barraca movimentada para estar fresquinho."
+     ],
+     "q": "Você já provou uma comida com cheiro muito forte?",
+     "c": "Experimente hoje uma comida nova de cheiro intenso, como um queijo curado, e descreva em três palavras."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Takoyaki",
+     "g": "Meet Osaka's octopus balls cooked in round molds.",
+     "p": [
+      "Takoyaki are round balls of wheat batter with a piece of octopus inside, cooked in a special pan with half-spherical molds.",
+      "They are topped with a sweet-savoury sauce, mayonnaise, seaweed and dancing bonito flakes, and are an Osaka symbol.",
+      "They are filled with very hot batter: let them cool a minute and bite in halves to avoid burning your mouth."
+     ],
+     "q": "Would you try octopus in a snack ball?",
+     "c": "Make small round pancakes or dumplings today and top them with sauce and a sprinkle of seaweed."
+    },
+    "de": {
+     "t": "Takoyaki",
+     "g": "Osakas Oktopusbällchen aus runden Formen kennenlernen.",
+     "p": [
+      "Takoyaki sind runde Bällchen aus Weizenteig mit einem Stück Oktopus, in einer Spezialpfanne mit halbkugelförmigen Mulden gebacken.",
+      "Sie werden mit süßlich-herzhafter Soße, Mayonnaise, Algen und tanzenden Bonitoflocken garniert und sind ein Symbol Osakas.",
+      "Sie sind innen mit sehr heißem Teig gefüllt: Lass sie eine Minute abkühlen und beiß sie halbiert, um den Mund nicht zu verbrennen."
+     ],
+     "q": "Würdest du Oktopus in einem Snack-Bällchen probieren?",
+     "c": "Back heute kleine runde Pfannkuchen oder Klöße und gib Soße und etwas Algenflocken darauf."
+    },
+    "es": {
+     "t": "Takoyaki",
+     "g": "Conocer las bolitas de pulpo de Osaka cocinadas en moldes redondos.",
+     "p": [
+      "Los takoyaki son bolitas de masa de trigo con un trozo de pulpo dentro, cocinadas en una plancha con moldes semiesféricos.",
+      "Se cubren con salsa agridulce, mayonesa, algas y virutas de bonito que parecen bailar, y son un símbolo de Osaka.",
+      "Por dentro la masa está muy caliente: déjalas enfriar un minuto y muérdelas por la mitad para no quemarte la boca."
+     ],
+     "q": "¿Probarías pulpo en una bolita de merienda?",
+     "c": "Haz hoy pequeñas tortitas o bolitas redondas y cúbrelas con salsa y un poco de alga."
+    },
+    "fr": {
+     "t": "Les takoyaki",
+     "g": "Découvrir les boulettes de poulpe d'Osaka cuites en moules ronds.",
+     "p": [
+      "Les takoyaki sont des boules de pâte de blé avec un morceau de poulpe, cuites dans une poêle spéciale à alvéoles demi-sphériques.",
+      "Elles sont nappées de sauce douce-salée, de mayonnaise, d'algues et de flocons de bonite qui semblent danser ; c'est un symbole d'Osaka.",
+      "La pâte est brûlante à l'intérieur : laisse-les refroidir une minute et croque-les en deux pour ne pas te brûler."
+     ],
+     "q": "Goûterais-tu du poulpe dans une boulette ?",
+     "c": "Fais aujourd'hui de petites crêpes ou boulettes rondes et nappe-les de sauce et d'un peu d'algue."
+    },
+    "it": {
+     "t": "Takoyaki",
+     "g": "Conoscere le palline di polpo di Osaka cotte in stampi rotondi.",
+     "p": [
+      "I takoyaki sono palline di pastella di grano con un pezzetto di polpo dentro, cotte in una piastra speciale con stampi semisferici.",
+      "Si coprono con salsa dolce-salata, maionese, alghe e scaglie di tonnetto che sembrano ballare; sono un simbolo di Osaka.",
+      "Dentro la pastella è bollente: lasciale raffreddare un minuto e mordile a metà per non scottarti la bocca."
+     ],
+     "q": "Proveresti il polpo in una pallina da spuntino?",
+     "c": "Prepara oggi piccole frittelle o palline rotonde e coprile con salsa e un po' di alga."
+    },
+    "pt": {
+     "t": "Takoyaki",
+     "g": "Conhecer as bolinhas de polvo de Osaka cozinhadas em moldes redondos.",
+     "p": [
+      "Os takoyaki são bolinhas de massa de trigo com um pedaço de polvo dentro, cozinhadas numa chapa com moldes semiesféricos.",
+      "Cobrem-se com molho agridoce, maionese, algas e lascas de bonito que parecem dançar; são um símbolo de Osaka.",
+      "A massa por dentro está muito quente: deixa arrefecer um minuto e morde-as ao meio para não queimar a boca."
+     ],
+     "q": "Provarias polvo numa bolinha de petisco?",
+     "c": "Faz hoje pequenas panquecas ou bolinhas redondas e cobre-as com molho e um pouco de alga."
+    },
+    "pt_BR": {
+     "t": "Takoyaki",
+     "g": "Conhecer os bolinhos de polvo de Osaka feitos em moldes redondos.",
+     "p": [
+      "Os takoyaki são bolinhas de massa de trigo com um pedaço de polvo dentro, feitas numa chapa com moldes semiesféricos.",
+      "São cobertos com molho agridoce, maionese, alga e lascas de bonito que parecem dançar; são um símbolo de Osaka.",
+      "A massa por dentro está muito quente: deixe esfriar um minuto e morda ao meio para não queimar a boca."
+     ],
+     "q": "Você provaria polvo num bolinho de lanche?",
+     "c": "Faça hoje mini panquecas ou bolinhas redondas e cubra com molho e um pouco de alga."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Yakitori",
+     "g": "Learn the art of Japanese grilled chicken skewers.",
+     "p": [
+      "Yakitori are bite-sized pieces of chicken threaded on skewers and grilled over charcoal, often thigh meat with spring onion.",
+      "They are seasoned with salt (shio) or brushed with a sweet soy-based tare sauce (tare), and many parts of the bird are used.",
+      "Eat from grills where you see the chicken cooked through and served hot, and remove the meat from the skewer carefully."
+     ],
+     "q": "Would you choose salt or tare on your skewers?",
+     "c": "Cook chicken or vegetable skewers today and try one with salt and one with a sweet soy glaze."
+    },
+    "de": {
+     "t": "Yakitori",
+     "g": "Die Kunst der japanischen Hähnchenspieße kennenlernen.",
+     "p": [
+      "Yakitori sind mundgerechte Hähnchenstücke am Spieß, über Holzkohle gegrillt, oft Keulenfleisch mit Frühlingszwiebel.",
+      "Sie werden mit Salz (Shio) gewürzt oder mit süßer Sojasoße (Tare) bestrichen; vom Huhn werden viele Teile verwendet.",
+      "Iss an Grills, wo du siehst, dass das Hähnchen durchgegart und heiß serviert wird, und zieh das Fleisch vorsichtig vom Spieß."
+     ],
+     "q": "Würdest du Salz oder Tare auf deinen Spießen wählen?",
+     "c": "Grille heute Hähnchen- oder Gemüsespieße und probiere einen mit Salz und einen mit süßer Sojaglasur."
+    },
+    "es": {
+     "t": "Yakitori",
+     "g": "Aprender el arte de las brochetas de pollo japonesas a la parrilla.",
+     "p": [
+      "Los yakitori son bocados de pollo en brocheta asados al carbón, a menudo muslo con cebolleta.",
+      "Se sazonan con sal (shio) o se pintan con una salsa dulce a base de soja (tare), y se aprovechan muchas partes del ave.",
+      "Come donde veas que el pollo se cocina del todo y se sirve caliente, y retira la carne de la brocheta con cuidado."
+     ],
+     "q": "¿Elegirías sal o tare para tus brochetas?",
+     "c": "Cocina hoy brochetas de pollo o verduras y prueba una con sal y otra con un glaseado dulce de soja."
+    },
+    "fr": {
+     "t": "Les yakitori",
+     "g": "Apprendre l'art des brochettes de poulet grillées japonaises.",
+     "p": [
+      "Les yakitori sont des bouchées de poulet enfilées sur des brochettes et grillées au charbon, souvent de la cuisse avec de l'oignon nouveau.",
+      "Elles sont assaisonnées au sel (shio) ou badigeonnées d'une sauce sucrée au soja (tare), et on utilise de nombreuses parties de la volaille.",
+      "Mange là où tu vois le poulet cuit à cœur et servi chaud, et retire la viande de la brochette avec précaution."
+     ],
+     "q": "Choisirais-tu le sel ou le tare sur tes brochettes ?",
+     "c": "Fais cuire aujourd'hui des brochettes de poulet ou de légumes et goûte-en une au sel et une au glaçage sucré de soja."
+    },
+    "it": {
+     "t": "Yakitori",
+     "g": "Imparare l'arte degli spiedini di pollo giapponesi alla griglia.",
+     "p": [
+      "Gli yakitori sono bocconcini di pollo infilati su spiedini e grigliati sulla brace, spesso coscia con cipollotto.",
+      "Si condiscono con sale (shio) o si spennellano con una salsa dolce a base di soia (tare), e si usano molte parti del pollo.",
+      "Mangia dove vedi il pollo cotto bene e servito caldo, e sfila la carne dallo spiedino con attenzione."
+     ],
+     "q": "Sceglieresti sale o tare sui tuoi spiedini?",
+     "c": "Cuoci oggi spiedini di pollo o di verdure e provane uno con sale e uno con una glassa dolce di soia."
+    },
+    "pt": {
+     "t": "Yakitori",
+     "g": "Aprender a arte das espetadas de frango japonesas na grelha.",
+     "p": [
+      "Os yakitori são pedaços de frango em espetada grelhados em carvão, muitas vezes coxa com cebolinho.",
+      "Temperam-se com sal (shio) ou pincelam-se com um molho doce à base de soja (tare), e aproveitam-se muitas partes da ave.",
+      "Come onde vejas o frango bem cozinhado e servido quente, e tira a carne da espetada com cuidado."
+     ],
+     "q": "Escolhias sal ou tare nas tuas espetadas?",
+     "c": "Cozinha hoje espetadas de frango ou legumes e prova uma com sal e outra com um glacé doce de soja."
+    },
+    "pt_BR": {
+     "t": "Yakitori",
+     "g": "Aprender a arte dos espetinhos de frango japoneses na grelha.",
+     "p": [
+      "Os yakitori são pedaços de frango em espetinhos grelhados na brasa, geralmente coxa com cebolinha.",
+      "São temperados com sal (shio) ou pincelados com um molho doce à base de soja (tare), e muitas partes da ave são aproveitadas.",
+      "Coma onde você vê o frango bem passado e servido quente, e tire a carne do espeto com cuidado."
+     ],
+     "q": "Você escolheria sal ou tare nos seus espetinhos?",
+     "c": "Asse hoje espetinhos de frango ou legumes e experimente um com sal e outro com glacê doce de soja."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Taiyaki",
+     "g": "Discover the fish-shaped cakes filled with sweet red bean paste.",
+     "p": [
+      "Taiyaki are waffle-like cakes baked in a fish-shaped mold, usually filled with sweet red bean paste called anko.",
+      "The fish is the tai, a sea bream seen as a lucky fish in Japan; modern fillings include custard, chocolate or cheese.",
+      "Eat taiyaki warm from the mold, starting from the head or tail as you like; the filling stays hot inside."
+     ],
+     "q": "Do you start eating a taiyaki from the head or from the tail?",
+     "c": "Make a mini pancake sandwich today with a sweet filling like jam or custard and shape it as you like."
+    },
+    "de": {
+     "t": "Taiyaki",
+     "g": "Die fischförmigen Kuchen mit süßer roter Bohnenpaste entdecken.",
+     "p": [
+      "Taiyaki sind waffelähnliche Kuchen aus einer fischförmigen Backform, meist mit süßer roter Bohnenpaste namens Anko gefüllt.",
+      "Der Fisch ist der Tai, eine Meerbrasse, die in Japan als Glücksfisch gilt; moderne Füllungen sind Vanillecreme, Schokolade oder Käse.",
+      "Iss Taiyaki warm aus der Form, ob du bei Kopf oder Schwanz anfängst; die Füllung bleibt innen heiß."
+     ],
+     "q": "Fängst du ein Taiyaki beim Kopf oder beim Schwanz an?",
+     "c": "Mach heute ein Mini-Pfannkuchen-Sandwich mit süßer Füllung wie Marmelade oder Vanillecreme und forme es, wie du magst."
+    },
+    "es": {
+     "t": "Taiyaki",
+     "g": "Descubrir los pasteles con forma de pez rellenos de pasta dulce de judía roja.",
+     "p": [
+      "Los taiyaki son pasteles parecidos a un gofre, cocidos en un molde con forma de pez y rellenos casi siempre de anko, dulce de judía roja.",
+      "El pez es el tai, un besugo que en Japón se ve como pez de la suerte; hoy hay rellenos de crema, chocolate o queso.",
+      "Come el taiyaki caliente, recién salido del molde, empezando por la cabeza o por la cola; el relleno sigue caliente."
+     ],
+     "q": "¿Empiezas a comer el taiyaki por la cabeza o por la cola?",
+     "c": "Haz hoy un mini sándwich de tortita con relleno dulce, como mermelada o crema, y dale la forma que quieras."
+    },
+    "fr": {
+     "t": "Le taiyaki",
+     "g": "Découvrir les gâteaux en forme de poisson fourrés à la pâte de haricot rouge.",
+     "p": [
+      "Les taiyaki sont des gâteaux proches de la gaufre, cuits dans un moule en forme de poisson et fourrés surtout d'anko, pâte de haricot rouge.",
+      "Le poisson est le tai, une daurade considérée comme porte-bonheur au Japon ; aujourd'hui, on trouve aussi crème, chocolat ou fromage.",
+      "Mange le taiyaki tiède, sorti du moule, en commençant par la tête ou la queue ; la garniture reste chaude à l'intérieur."
+     ],
+     "q": "Commences-tu un taiyaki par la tête ou par la queue ?",
+     "c": "Fais aujourd'hui un mini sandwich de crêpe garni de confiture ou de crème et donne-lui la forme que tu veux."
+    },
+    "it": {
+     "t": "Taiyaki",
+     "g": "Scoprire i dolci a forma di pesce ripieni di pasta dolce di fagioli rossi.",
+     "p": [
+      "I taiyaki sono dolci simili a cialde, cotti in uno stampo a forma di pesce e ripieni quasi sempre di anko, pasta dolce di fagioli rossi.",
+      "Il pesce è il tai, un'orata considerata in Giappone un pesce fortunato; oggi ci sono anche ripieni di crema, cioccolato o formaggio.",
+      "Mangia il taiyaki tiepido, appena sformato, iniziando dalla testa o dalla coda; il ripieno resta caldo dentro."
+     ],
+     "q": "Inizi a mangiare un taiyaki dalla testa o dalla coda?",
+     "c": "Prepara oggi un mini panino di frittella con ripieno dolce, come marmellata o crema, e dagli la forma che vuoi."
+    },
+    "pt": {
+     "t": "Taiyaki",
+     "g": "Descobrir os bolos em forma de peixe com pasta doce de feijão vermelho.",
+     "p": [
+      "Os taiyaki são bolos parecidos com waffles, cozidos num molde em forma de peixe e quase sempre recheados com anko, pasta doce de feijão.",
+      "O peixe é o tai, um pargo visto no Japão como peixe da sorte; hoje há recheios de creme, chocolate ou queijo.",
+      "Come o taiyaki morno, saído do molde, começando pela cabeça ou pela cauda; o recheio fica quente por dentro."
+     ],
+     "q": "Começas a comer o taiyaki pela cabeça ou pela cauda?",
+     "c": "Faz hoje uma mini sanduíche de panqueca com recheio doce, como doce ou creme, e dá-lhe a forma que quiseres."
+    },
+    "pt_BR": {
+     "t": "Taiyaki",
+     "g": "Descobrir os bolinhos em forma de peixe com pasta doce de feijão vermelho.",
+     "p": [
+      "Os taiyaki são bolinhos parecidos com waffles, assados num molde em forma de peixe e quase sempre recheados com anko, doce de feijão.",
+      "O peixe é o tai, um pargo visto no Japão como peixe da sorte; hoje há recheios de creme, chocolate ou queijo.",
+      "Coma o taiyaki morno, recém-saído do molde, começando pela cabeça ou pela cauda; o recheio continua quente por dentro."
+     ],
+     "q": "Você começa a comer o taiyaki pela cabeça ou pela cauda?",
+     "c": "Faça hoje um mini sanduíche de panqueca com recheio doce, como geleia ou creme, e dê a forma que quiser."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Yatai of Fukuoka",
+     "g": "Visit Fukuoka's small open-air food stalls.",
+     "p": [
+      "Yatai are small open-air food stalls in Fukuoka, set up in the evening along rivers and streets, seating only a few guests.",
+      "They are famous for tonkotsu ramen, a rich pork-bone broth, plus skewers, oden and gyoza.",
+      "Sit at the counter, chat with the cook and neighbours, and check that dishes arrive hot; wash or sanitise hands before eating."
+     ],
+     "q": "Would you enjoy eating shoulder to shoulder at a tiny stall?",
+     "c": "Make a simple noodle soup today and eat it slowly, as if sitting at a tiny counter."
+    },
+    "de": {
+     "t": "Yatai in Fukuoka",
+     "g": "Die kleinen Open-Air-Essstände von Fukuoka besuchen.",
+     "p": [
+      "Yatai sind kleine Essstände unter freiem Himmel in Fukuoka, die abends an Flüssen und Straßen aufgebaut werden und nur wenige Gäste fassen.",
+      "Sie sind berühmt für Tonkotsu-Ramen mit kräftiger Schweineknochenbrühe, dazu gibt es Spieße, Oden und Gyoza.",
+      "Setz dich an die Theke, plaudere mit Koch und Nachbarn und achte auf heiße Gerichte; wasche oder desinfiziere vor dem Essen die Hände."
+     ],
+     "q": "Würdest du gern Schulter an Schulter an einem winzigen Stand essen?",
+     "c": "Koche heute eine einfache Nudelsuppe und iss sie langsam, als säßest du an einer winzigen Theke."
+    },
+    "es": {
+     "t": "Yatai de Fukuoka",
+     "g": "Visitar los pequeños puestos de comida al aire libre de Fukuoka.",
+     "p": [
+      "Los yatai son pequeños puestos de comida al aire libre de Fukuoka, que se montan al atardecer junto a ríos y calles, con pocos asientos.",
+      "Son famosos por el ramen tonkotsu, de caldo denso de huesos de cerdo, y también por brochetas, oden y gyoza.",
+      "Siéntate en la barra, charla con el cocinero y los vecinos, y comprueba que los platos llegan calientes; lávate las manos antes de comer."
+     ],
+     "q": "¿Disfrutarías comiendo codo con codo en un puesto diminuto?",
+     "c": "Prepara hoy una sopa de fideos sencilla y tómala despacio, como si estuvieras en una barra diminuta."
+    },
+    "fr": {
+     "t": "Les yatai de Fukuoka",
+     "g": "Visiter les petits stands de cuisine en plein air de Fukuoka.",
+     "p": [
+      "Les yatai sont de petits stands de cuisine en plein air à Fukuoka, installés le soir au bord des rivières et des rues, avec peu de places.",
+      "Ils sont célèbres pour le ramen tonkotsu, au bouillon riche d'os de porc, mais aussi pour les brochettes, l'oden et les gyoza.",
+      "Assieds-toi au comptoir, discute avec le cuisinier et tes voisins, vérifie que les plats sont chauds ; lave-toi les mains avant de manger."
+     ],
+     "q": "Aimerais-tu manger coude à coude dans un minuscule stand ?",
+     "c": "Prépare aujourd'hui une soupe de nouilles simple et mange-la lentement, comme assis à un minuscule comptoir."
+    },
+    "it": {
+     "t": "Gli yatai di Fukuoka",
+     "g": "Visitare le piccole bancarelle di cibo all'aperto di Fukuoka.",
+     "p": [
+      "Gli yatai sono piccole bancarelle di cibo all'aperto a Fukuoka, montate la sera lungo fiumi e strade, con posto solo per pochi clienti.",
+      "Sono famosi per il ramen tonkotsu, dal ricco brodo di ossa di maiale, e anche per spiedini, oden e gyoza.",
+      "Siediti al bancone, chiacchiera con il cuoco e i vicini, e controlla che i piatti siano caldi; lava le mani prima di mangiare."
+     ],
+     "q": "Ti piacerebbe mangiare gomito a gomito in una bancarella minuscola?",
+     "c": "Prepara oggi una semplice zuppa di noodle e mangiala piano, come seduto a un minuscolo bancone."
+    },
+    "pt": {
+     "t": "Yatai de Fukuoka",
+     "g": "Visitar as pequenas bancas de comida ao ar livre de Fukuoka.",
+     "p": [
+      "Os yatai são pequenas bancas de comida ao ar livre em Fukuoka, montadas ao fim do dia junto a rios e ruas, com lugar para poucos clientes.",
+      "São famosos pelo ramen tonkotsu, de caldo denso de ossos de porco, e também por espetadas, oden e gyoza.",
+      "Senta-te ao balcão, conversa com o cozinheiro e os vizinhos, e confirma que os pratos chegam quentes; lava as mãos antes de comer."
+     ],
+     "q": "Gostarias de comer lado a lado numa banca minúscula?",
+     "c": "Prepara hoje uma sopa de noodles simples e come-a devagar, como se estivesses num balcão minúsculo."
+    },
+    "pt_BR": {
+     "t": "Yatai de Fukuoka",
+     "g": "Visitar as pequenas barracas de comida ao ar livre de Fukuoka.",
+     "p": [
+      "Os yatai são pequenas barracas de comida ao ar livre em Fukuoka, montadas à noite perto de rios e ruas, com lugar para poucos clientes.",
+      "São famosos pelo ramen tonkotsu, de caldo denso de ossos de porco, e também por espetinhos, oden e gyoza.",
+      "Sente no balcão, converse com o cozinheiro e os vizinhos, e confira se os pratos chegam quentes; lave ou higienize as mãos antes de comer."
+     ],
+     "q": "Você gostaria de comer lado a lado numa barraca minúscula?",
+     "c": "Prepare hoje uma sopa de macarrão simples e coma devagar, como se estivesse num balcão minúsculo."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tteokbokki",
+     "g": "Meet Korea's chewy rice cakes in sweet and spicy sauce.",
+     "p": [
+      "Tteokbokki are cylinder-shaped rice cakes simmered in a sauce of gochujang, a fermented red chilli paste, with fish cakes.",
+      "It is a favourite in Korean street stalls and pojangmacha tents, often shared with a cup of broth on the side.",
+      "The sauce can be quite spicy; ask for a milder version, eat while hot, and keep water or milk nearby."
+     ],
+     "q": "How spicy do you like your food on a scale of one to five?",
+     "c": "Rate your spice level today and try a mild chilli sauce on a favourite dish."
+    },
+    "de": {
+     "t": "Tteokbokki",
+     "g": "Koreas zähe Reiskuchen in süß-scharfer Soße kennenlernen.",
+     "p": [
+      "Tteokbokki sind zylinderförmige Reiskuchen, die mit Fischkuchen in einer Soße aus Gochujang, einer fermentierten roten Chilipaste, köcheln.",
+      "Sie sind ein Liebling an koreanischen Straßenständen und in Pojangmacha-Zelten, oft mit einer Tasse Brühe daneben geteilt.",
+      "Die Soße kann ziemlich scharf sein; bitte um eine mildere Variante, iss es heiß und halte Wasser oder Milch bereit."
+     ],
+     "q": "Wie scharf magst du dein Essen auf einer Skala von eins bis fünf?",
+     "c": "Bewerte heute deine Schärfestufe und probiere eine milde Chilisoße zu einem Lieblingsgericht."
+    },
+    "es": {
+     "t": "Tteokbokki",
+     "g": "Conocer los masticables pasteles de arroz de Corea en salsa agridulce y picante.",
+     "p": [
+      "Los tteokbokki son pasteles de arroz cilíndricos cocidos a fuego lento en salsa de gochujang, pasta fermentada de chile, con pescado.",
+      "Son un favorito en los puestos callejeros y las carpas pojangmacha de Corea, a menudo con una taza de caldo para compartir.",
+      "La salsa puede picar bastante; pide una versión más suave, cómelo caliente y ten agua o leche a mano."
+     ],
+     "q": "¿Cuánto te gusta el picante, del uno al cinco?",
+     "c": "Valora hoy tu nivel de picante y prueba una salsa de chile suave en tu plato favorito."
+    },
+    "fr": {
+     "t": "Le tteokbokki",
+     "g": "Découvrir les gâteaux de riz moelleux de Corée en sauce douce et pimentée.",
+     "p": [
+      "Les tteokbokki sont des gâteaux de riz cylindriques mijotés dans une sauce au gochujang, pâte de piment fermentée, avec gâteau de poisson.",
+      "C'est un favori des stands de rue et des tentes pojangmacha en Corée, souvent partagé avec une tasse de bouillon.",
+      "La sauce peut être assez piquante ; demande une version plus douce, mange chaud et garde de l'eau ou du lait à portée."
+     ],
+     "q": "À quel point aimes-tu le piquant, de un à cinq ?",
+     "c": "Note aujourd'hui ton niveau de piquant et essaie une sauce pimentée douce sur un plat préféré."
+    },
+    "it": {
+     "t": "Tteokbokki",
+     "g": "Conoscere i gnocchetti di riso coreani in salsa dolce e piccante.",
+     "p": [
+      "I tteokbokki sono bastoncini di riso cotti a fuoco lento in una salsa di gochujang, pasta fermentata di peperoncino, con tortini di pesce.",
+      "Sono un classico delle bancarelle di strada e delle tende pojangmacha della Corea, spesso condivisi con una tazza di brodo.",
+      "La salsa può essere piuttosto piccante; chiedi una versione più dolce, mangia caldo e tieni acqua o latte a portata."
+     ],
+     "q": "Quanto ti piace il piccante, da uno a cinque?",
+     "c": "Valuta oggi il tuo livello di piccante e prova una salsa di peperoncino dolce su un piatto preferito."
+    },
+    "pt": {
+     "t": "Tteokbokki",
+     "g": "Conhecer os bolos de arroz coreanos em molho agridoce e picante.",
+     "p": [
+      "Os tteokbokki são bolos de arroz cozinhados em lume brando num molho de gochujang, pasta fermentada de piri-piri, com bolo de peixe.",
+      "São um favorito nas bancas de rua e nas tendas pojangmacha da Coreia, muitas vezes partilhados com uma chávena de caldo.",
+      "O molho pode ser bastante picante; pede uma versão mais suave, come quente e tem água ou leite à mão."
+     ],
+     "q": "Quanto gostas de picante, de um a cinco?",
+     "c": "Avalia hoje o teu nível de picante e prova um molho de piri-piri suave num prato preferido."
+    },
+    "pt_BR": {
+     "t": "Tteokbokki",
+     "g": "Conhecer os bolinhos de arroz coreanos em molho agridoce e picante.",
+     "p": [
+      "Os tteokbokki são bolinhos de arroz cozidos em fogo baixo num molho de gochujang, pasta fermentada de pimenta, com bolinho de peixe.",
+      "São um favorito nas barracas de rua e nas tendas pojangmacha da Coreia, muitas vezes divididos com uma xícara de caldo.",
+      "O molho pode ser bem picante; peça uma versão mais suave, coma quente e deixe água ou leite por perto."
+     ],
+     "q": "Quanto você gosta de picante, de um a cinco?",
+     "c": "Avalie hoje seu nível de picante e experimente um molho de pimenta suave num prato favorito."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: around the world",
+     "g": "Recap the street foods of days 31-59 and place them on a map.",
+     "p": [
+      "Europe so far: Belgian fries, currywurst, fish and chips, churros, pastel de nata, bifana and pretzels, plus crepes from France.",
+      "North America and its trucks: hot dogs in New York and Chicago, and the creative food truck scene in many cities.",
+      "Asia so far: jianbing, baozi, xiaolongbao, chuan'r, stinky tofu, takoyaki, yakitori, taiyaki, yatai and tteokbokki."
+     ],
+     "q": "Which dish from this stretch would you most like to taste on location?",
+     "c": "Draw a quick world map and mark each dish with its country, then circle your top three."
+    },
+    "de": {
+     "t": "Wiederholung: rund um die Welt",
+     "g": "Die Streetfoods der Tage 31-59 wiederholen und auf der Karte einordnen.",
+     "p": [
+      "Bisher in Europa: belgische Pommes, Currywurst, Fish and Chips, Churros, Pastel de nata, Bifana und Brezeln, dazu Crêpes aus Frankreich.",
+      "Nordamerika und seine Trucks: Hot Dogs in New York und Chicago und die kreative Foodtruck-Szene in vielen Städten.",
+      "Bisher in Asien: Jianbing, Baozi, Xiaolongbao, Chuan'r, Stinktofu, Takoyaki, Yakitori, Taiyaki, Yatai und Tteokbokki."
+     ],
+     "q": "Welches Gericht dieser Etappe würdest du am liebsten vor Ort probieren?",
+     "c": "Zeichne heute eine schnelle Weltkarte, trage jedes Gericht mit seinem Land ein und kreise deine Top drei ein."
+    },
+    "es": {
+     "t": "Repaso: vuelta al mundo",
+     "g": "Repasar la comida callejera de los días 31-59 y situarla en el mapa.",
+     "p": [
+      "Europa hasta ahora: patatas belgas, currywurst, fish and chips, churros, pastel de nata, bifana y pretzels, además de las crepes de Francia.",
+      "Norteamérica y sus camiones: perritos calientes en Nueva York y Chicago, y la creativa escena de los food trucks en muchas ciudades.",
+      "Asia hasta ahora: jianbing, baozi, xiaolongbao, chuan'r, tofu apestoso, takoyaki, yakitori, taiyaki, yatai y tteokbokki."
+     ],
+     "q": "¿Qué plato de este tramo te gustaría probar más en su lugar de origen?",
+     "c": "Dibuja hoy un mapamundi rápido, marca cada plato con su país y rodea tus tres favoritos."
+    },
+    "fr": {
+     "t": "Révision : tour du monde",
+     "g": "Réviser la street food des jours 31 à 59 et la placer sur une carte.",
+     "p": [
+      "L'Europe jusqu'ici : frites belges, currywurst, fish and chips, churros, pastel de nata, bifana et bretzels, plus les crêpes de France.",
+      "L'Amérique du Nord et ses camions : hot-dogs à New York et à Chicago, et la scène créative des food trucks dans beaucoup de villes.",
+      "L'Asie jusqu'ici : jianbing, baozi, xiaolongbao, chuan'r, tofu puant, takoyaki, yakitori, taiyaki, yatai et tteokbokki."
+     ],
+     "q": "Quel plat de cette étape aimerais-tu le plus goûter sur place ?",
+     "c": "Dessine aujourd'hui une carte du monde rapide, place chaque plat dans son pays et entoure tes trois préférés."
+    },
+    "it": {
+     "t": "Ripasso: giro del mondo",
+     "g": "Ripassare lo street food dei giorni 31-59 e collocarlo sulla mappa.",
+     "p": [
+      "L'Europa finora: patatine belghe, currywurst, fish and chips, churros, pastel de nata, bifana e pretzel, più le crêpes dalla Francia.",
+      "Il Nord America e i suoi furgoni: hot dog a New York e Chicago, e la creativa scena dei food truck in molte città.",
+      "L'Asia finora: jianbing, baozi, xiaolongbao, chuan'r, tofu puzzolente, takoyaki, yakitori, taiyaki, yatai e tteokbokki."
+     ],
+     "q": "Quale piatto di questo tratto vorresti assaggiare di più sul posto?",
+     "c": "Disegna oggi una mappa del mondo veloce, segna ogni piatto con il suo paese e cerchia i tuoi tre preferiti."
+    },
+    "pt": {
+     "t": "Revisão: volta ao mundo",
+     "g": "Rever a comida de rua dos dias 31-59 e situá-la no mapa.",
+     "p": [
+      "A Europa até agora: batatas belgas, currywurst, fish and chips, churros, pastel de nata, bifana e pretzels, mais as crepes de França.",
+      "A América do Norte e os seus camiões: cachorros-quentes em Nova Iorque e Chicago, e a criativa cena dos food trucks em muitas cidades.",
+      "A Ásia até agora: jianbing, baozi, xiaolongbao, chuan'r, tofu fedorento, takoyaki, yakitori, taiyaki, yatai e tteokbokki."
+     ],
+     "q": "Que prato deste percurso gostarias mais de provar no local?",
+     "c": "Desenha hoje um mapa-mundo rápido, marca cada prato com o seu país e assinala os teus três favoritos."
+    },
+    "pt_BR": {
+     "t": "Revisão: volta ao mundo",
+     "g": "Rever a comida de rua dos dias 31-59 e localizá-la no mapa.",
+     "p": [
+      "A Europa até agora: batata belga, currywurst, fish and chips, churros, pastel de nata, bifana e pretzels, mais as crepes da França.",
+      "A América do Norte e seus caminhões: cachorro-quente em Nova York e Chicago, e a criativa cena dos food trucks em várias cidades.",
+      "A Ásia até agora: jianbing, baozi, xiaolongbao, chuan'r, tofu fedido, takoyaki, yakitori, taiyaki, yatai e tteokbokki."
+     ],
+     "q": "Qual prato deste trecho você mais gostaria de provar no local?",
+     "c": "Desenhe hoje um mapa-múndi rápido, marque cada prato com seu país e circule seus três favoritos."
+    }
+   }
+  }
+ ]
+}

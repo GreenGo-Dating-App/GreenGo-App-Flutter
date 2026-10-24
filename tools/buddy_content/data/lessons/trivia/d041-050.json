@@ -1,0 +1,835 @@
+{
+ "topic": "trivia",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sports basics",
+     "g": "Answer classic questions about team sizes and sports rules.",
+     "p": [
+      "A football (soccer) team has eleven players on the pitch, and so does a cricket side.",
+      "A basketball team has five players on court, and a volleyball team has six.",
+      "Rugby union has fifteen players per side, and ice hockey has six on the ice."
+     ],
+     "q": "What sport do you enjoy most, either playing or watching?",
+     "c": "Name the number of players for three sports and test someone else."
+    },
+    "de": {
+     "t": "Sport-Grundlagen",
+     "g": "Beantworte klassische Fragen zu Mannschaftsgrößen und Sportregeln.",
+     "p": [
+      "Eine Fußballmannschaft hat elf Spieler auf dem Platz, ebenso eine Cricket-Mannschaft.",
+      "Ein Basketballteam hat fünf Spieler auf dem Feld, ein Volleyballteam sechs.",
+      "Rugby Union hat fünfzehn Spieler pro Seite, Eishockey sechs auf dem Eis."
+     ],
+     "q": "Welchen Sport magst du am liebsten, beim Spielen oder Zuschauen?",
+     "c": "Nenne die Spielerzahl von drei Sportarten und teste jemand anderen."
+    },
+    "es": {
+     "t": "Fundamentos del deporte",
+     "g": "Responde preguntas clásicas sobre tamaños de equipo y reglas deportivas.",
+     "p": [
+      "Un equipo de fútbol tiene once jugadores en el campo, igual que un equipo de críquet.",
+      "Un equipo de baloncesto tiene cinco jugadores en pista y uno de voleibol tiene seis.",
+      "El rugby union tiene quince jugadores por lado y el hockey sobre hielo seis en la pista."
+     ],
+     "q": "¿Qué deporte disfrutas más, jugando o viendo?",
+     "c": "Di el número de jugadores de tres deportes y pon a prueba a otra persona."
+    },
+    "fr": {
+     "t": "Bases du sport",
+     "g": "Réponds à des questions classiques sur la taille des équipes et les règles.",
+     "p": [
+      "Une équipe de football a onze joueurs sur le terrain, tout comme une équipe de cricket.",
+      "Une équipe de basket a cinq joueurs sur le terrain et une équipe de volley en a six.",
+      "Le rugby à quinze compte quinze joueurs par équipe, le hockey sur glace six sur la glace."
+     ],
+     "q": "Quel sport préfères-tu, en pratiquant ou en regardant ?",
+     "c": "Donne le nombre de joueurs de trois sports et teste quelqu'un d'autre."
+    },
+    "it": {
+     "t": "Basi dello sport",
+     "g": "Rispondi a domande classiche su dimensioni delle squadre e regole sportive.",
+     "p": [
+      "Una squadra di calcio ha undici giocatori in campo, come una squadra di cricket.",
+      "Una squadra di basket ha cinque giocatori in campo e una di pallavolo ne ha sei.",
+      "Il rugby a quindici ha quindici giocatori per squadra, l'hockey su ghiaccio sei sul ghiaccio."
+     ],
+     "q": "Quale sport ti piace di più, giocando o guardando?",
+     "c": "Dì il numero di giocatori di tre sport e metti alla prova un'altra persona."
+    },
+    "pt": {
+     "t": "Noções básicas de desporto",
+     "g": "Responde a perguntas clássicas sobre o tamanho das equipas e as regras.",
+     "p": [
+      "Uma equipa de futebol tem onze jogadores em campo, tal como uma equipa de críquete.",
+      "Uma equipa de basquetebol tem cinco jogadores em campo e uma de voleibol tem seis.",
+      "O râguebi de quinze tem quinze jogadores por equipa e o hóquei no gelo seis no gelo."
+     ],
+     "q": "Que desporto gostas mais de praticar ou ver?",
+     "c": "Diz o número de jogadores de três desportos e testa outra pessoa."
+    },
+    "pt_BR": {
+     "t": "Noções básicas de esporte",
+     "g": "Responda a perguntas clássicas sobre o tamanho das equipes e as regras.",
+     "p": [
+      "Uma equipe de futebol tem onze jogadores em campo, assim como uma equipe de críquete.",
+      "Uma equipe de basquete tem cinco jogadores em quadra e uma de vôlei tem seis.",
+      "O rúgbi de quinze tem quinze jogadores por lado e o hóquei no gelo seis no gelo."
+     ],
+     "q": "Qual esporte você mais gosta de praticar ou assistir?",
+     "c": "Diga o número de jogadores de três esportes e teste outra pessoa."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Olympic Games",
+     "g": "Understand the symbols and structure of the Olympics.",
+     "p": [
+      "The five interlocking rings stand for the five inhabited continents joined together.",
+      "The Olympic flame is lit in Olympia, Greece, and carried by torch to the host city.",
+      "The Summer and Winter Games each happen every four years, with the Winter ones on snow and ice."
+     ],
+     "q": "Which Olympic sport would you most enjoy trying, even as a beginner?",
+     "c": "Draw the five rings from memory and recall their colours: blue, yellow, black, green, red."
+    },
+    "de": {
+     "t": "Die Olympischen Spiele",
+     "g": "Verstehe die Symbole und den Aufbau der Olympischen Spiele.",
+     "p": [
+      "Die fünf verschlungenen Ringe stehen für die fünf bewohnten Kontinente, die verbunden sind.",
+      "Das Olympische Feuer wird in Olympia in Griechenland entzündet und per Fackel zur Gastgeberstadt getragen.",
+      "Sommer- und Winterspiele finden jeweils alle vier Jahre statt, die Winterspiele auf Schnee und Eis."
+     ],
+     "q": "Welche olympische Sportart würdest du gern ausprobieren, auch als Anfänger?",
+     "c": "Zeichne die fünf Ringe aus dem Gedächtnis: Blau, Gelb, Schwarz, Grün, Rot."
+    },
+    "es": {
+     "t": "Los Juegos Olímpicos",
+     "g": "Comprende los símbolos y la estructura de los Juegos Olímpicos.",
+     "p": [
+      "Los cinco anillos entrelazados representan los cinco continentes habitados unidos.",
+      "La llama olímpica se enciende en Olimpia, Grecia, y se lleva en antorcha a la ciudad anfitriona.",
+      "Los Juegos de Verano y de Invierno se celebran cada cuatro años, los de Invierno sobre nieve y hielo."
+     ],
+     "q": "¿Qué deporte olímpico te gustaría probar más, aunque seas principiante?",
+     "c": "Dibuja los cinco anillos de memoria: azul, amarillo, negro, verde, rojo."
+    },
+    "fr": {
+     "t": "Les Jeux olympiques",
+     "g": "Comprends les symboles et la structure des Jeux olympiques.",
+     "p": [
+      "Les cinq anneaux entrelacés représentent les cinq continents habités unis.",
+      "La flamme olympique est allumée à Olympie, en Grèce, et portée en torche jusqu'à la ville hôte.",
+      "Les Jeux d'été et d'hiver ont lieu tous les quatre ans, ceux d'hiver sur la neige et la glace."
+     ],
+     "q": "Quel sport olympique aimerais-tu essayer, même en débutant ?",
+     "c": "Dessine les cinq anneaux de mémoire : bleu, jaune, noir, vert, rouge."
+    },
+    "it": {
+     "t": "I Giochi Olimpici",
+     "g": "Comprendi i simboli e la struttura dei Giochi Olimpici.",
+     "p": [
+      "I cinque anelli intrecciati rappresentano i cinque continenti abitati uniti.",
+      "La fiamma olimpica si accende a Olimpia, in Grecia, e viene portata con la torcia alla città ospitante.",
+      "I Giochi estivi e invernali si tengono ciascuno ogni quattro anni, quelli invernali su neve e ghiaccio."
+     ],
+     "q": "Quale sport olimpico ti piacerebbe provare di più, anche da principiante?",
+     "c": "Disegna i cinque anelli a memoria: blu, giallo, nero, verde, rosso."
+    },
+    "pt": {
+     "t": "Os Jogos Olímpicos",
+     "g": "Compreende os símbolos e a estrutura dos Jogos Olímpicos.",
+     "p": [
+      "Os cinco anéis entrelaçados representam os cinco continentes habitados unidos.",
+      "A chama olímpica acende-se em Olímpia, na Grécia, e é levada em tocha até à cidade anfitriã.",
+      "Os Jogos de Verão e de Inverno realizam-se cada quatro anos, os de Inverno na neve e no gelo."
+     ],
+     "q": "Que modalidade olímpica gostarias mais de experimentar, mesmo como principiante?",
+     "c": "Desenha os cinco anéis de memória: azul, amarelo, preto, verde, vermelho."
+    },
+    "pt_BR": {
+     "t": "Os Jogos Olímpicos",
+     "g": "Entenda os símbolos e a estrutura dos Jogos Olímpicos.",
+     "p": [
+      "Os cinco anéis entrelaçados representam os cinco continentes habitados unidos.",
+      "A chama olímpica é acesa em Olímpia, na Grécia, e levada em tocha até a cidade-sede.",
+      "Os Jogos de Verão e de Inverno acontecem cada um a cada quatro anos, os de Inverno na neve e no gelo."
+     ],
+     "q": "Qual modalidade olímpica você mais gostaria de experimentar, mesmo como iniciante?",
+     "c": "Desenhe os cinco anéis de memória: azul, amarelo, preto, verde, vermelho."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Football trivia",
+     "g": "Learn how the world's most popular sport got its names and its big tournament.",
+     "p": [
+      "The men's World Cup began in 1930 in Uruguay and takes place every four years.",
+      "Pelé from Brazil and Diego Maradona from Argentina are legends known across the world.",
+      "The word soccer is a shortened form of association football, and it is used in a few countries."
+     ],
+     "q": "Which team or player have you enjoyed watching most, and why?",
+     "c": "Tell someone why football is called soccer in some countries."
+    },
+    "de": {
+     "t": "Fußball-Quiz",
+     "g": "Erfahre, wie der beliebteste Sport der Welt zu seinen Namen und seinem großen Turnier kam.",
+     "p": [
+      "Die Männer-Weltmeisterschaft begann 1930 in Uruguay und findet alle vier Jahre statt.",
+      "Pelé aus Brasilien und Diego Maradona aus Argentinien sind weltweit bekannte Legenden.",
+      "Das englische Wort soccer ist eine Kurzform von association football und wird in einigen Ländern genutzt."
+     ],
+     "q": "Welches Team oder welchen Spieler schaust du am liebsten an, und warum?",
+     "c": "Erkläre jemandem, warum Fußball in manchen Ländern soccer heißt."
+    },
+    "es": {
+     "t": "Trivia de fútbol",
+     "g": "Aprende cómo el deporte más popular del mundo obtuvo sus nombres y su gran torneo.",
+     "p": [
+      "El Mundial masculino empezó en 1930 en Uruguay y se celebra cada cuatro años.",
+      "Pelé de Brasil y Diego Maradona de Argentina son leyendas conocidas en todo el mundo.",
+      "La palabra inglesa soccer es una forma abreviada de association football y se usa en unos pocos países."
+     ],
+     "q": "¿Qué equipo o jugador has disfrutado más viendo y por qué?",
+     "c": "Explica a alguien por qué el fútbol se llama soccer en algunos países."
+    },
+    "fr": {
+     "t": "Quiz de football",
+     "g": "Découvre comment le sport le plus populaire du monde a eu ses noms et son grand tournoi.",
+     "p": [
+      "La Coupe du monde masculine a débuté en 1930 en Uruguay et a lieu tous les quatre ans.",
+      "Pelé du Brésil et Diego Maradona d'Argentine sont des légendes connues dans le monde entier.",
+      "Le mot anglais soccer est une forme abrégée de association football, utilisée dans quelques pays."
+     ],
+     "q": "Quelle équipe ou quel joueur as-tu le plus aimé regarder, et pourquoi ?",
+     "c": "Explique à quelqu'un pourquoi le football s'appelle soccer dans certains pays."
+    },
+    "it": {
+     "t": "Curiosità sul calcio",
+     "g": "Scopri come lo sport più popolare del mondo ha avuto i suoi nomi e il suo grande torneo.",
+     "p": [
+      "I Mondiali maschili iniziarono nel 1930 in Uruguay e si tengono ogni quattro anni.",
+      "Pelé del Brasile e Diego Maradona dell'Argentina sono leggende conosciute in tutto il mondo.",
+      "La parola inglese soccer è una forma abbreviata di association football e si usa in pochi paesi."
+     ],
+     "q": "Quale squadra o giocatore hai amato di più guardare e perché?",
+     "c": "Spiega a qualcuno perché il calcio in alcuni paesi si chiama soccer."
+    },
+    "pt": {
+     "t": "Curiosidades sobre futebol",
+     "g": "Descobre como o desporto mais popular do mundo ganhou os seus nomes e o seu grande torneio.",
+     "p": [
+      "O Mundial masculino começou em 1930 no Uruguai e realiza-se de quatro em quatro anos.",
+      "Pelé, do Brasil, e Diego Maradona, da Argentina, são lendas conhecidas em todo o mundo.",
+      "A palavra inglesa soccer é uma forma abreviada de association football e usa-se em poucos países."
+     ],
+     "q": "Que equipa ou jogador mais gostaste de ver e porquê?",
+     "c": "Explica a alguém porque é que o futebol se chama soccer em alguns países."
+    },
+    "pt_BR": {
+     "t": "Curiosidades sobre futebol",
+     "g": "Descubra como o esporte mais popular do mundo ganhou seus nomes e seu grande torneio.",
+     "p": [
+      "A Copa do Mundo masculina começou em 1930 no Uruguai e acontece a cada quatro anos.",
+      "Pelé, do Brasil, e Diego Maradona, da Argentina, são lendas conhecidas no mundo todo.",
+      "A palavra inglesa soccer é uma forma abreviada de association football e é usada em poucos países."
+     ],
+     "q": "Qual time ou jogador você mais gostou de assistir e por quê?",
+     "c": "Explique a alguém por que o futebol se chama soccer em alguns países."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Board games and puzzles",
+     "g": "Meet classic games and the stories behind them.",
+     "p": [
+      "Chess and Go are very old strategy games, with chess from India and Go from China.",
+      "Monopoly became a hit in the 1930s, and the Rubik's Cube was invented in 1974 by Ernő Rubik.",
+      "A standard cube has 43 quintillion possible positions, yet one solution."
+     ],
+     "q": "Which game did you play most as a child, and who played it with you?",
+     "c": "Play a short round of any board game or puzzle today, even alone."
+    },
+    "de": {
+     "t": "Brettspiele und Rätsel",
+     "g": "Lerne klassische Spiele und ihre Geschichten kennen.",
+     "p": [
+      "Schach und Go sind sehr alte Strategiespiele, Schach stammt aus Indien und Go aus China.",
+      "Monopoly wurde in den 1930ern ein Hit, und der Zauberwürfel wurde 1974 von Ernő Rubik erfunden.",
+      "Ein normaler Würfel hat 43 Trillionen mögliche Stellungen, aber nur eine Lösung."
+     ],
+     "q": "Welches Spiel hast du als Kind am meisten gespielt, und wer spielte mit?",
+     "c": "Spiele heute eine kurze Runde eines Brettspiels oder Rätsels, auch allein."
+    },
+    "es": {
+     "t": "Juegos de mesa y puzles",
+     "g": "Conoce juegos clásicos y las historias detrás de ellos.",
+     "p": [
+      "El ajedrez y el go son juegos de estrategia muy antiguos: el ajedrez de la India y el go de China.",
+      "El Monopoly fue un éxito en los años treinta y el cubo de Rubik lo inventó Ernő Rubik en 1974.",
+      "Un cubo estándar tiene 43 trillones de posiciones posibles, pero una sola solución."
+     ],
+     "q": "¿Qué juego jugabas más de niño y quién jugaba contigo?",
+     "c": "Juega hoy una ronda corta de un juego de mesa o puzle, incluso solo."
+    },
+    "fr": {
+     "t": "Jeux de société et casse-têtes",
+     "g": "Découvre des jeux classiques et les histoires qui les entourent.",
+     "p": [
+      "Les échecs et le go sont de très anciens jeux de stratégie, les échecs venus d'Inde et le go de Chine.",
+      "Le Monopoly a fait un tabac dans les années 1930, et le Rubik's Cube fut inventé en 1974 par Ernő Rubik.",
+      "Un cube standard a 43 trillions de positions possibles, mais une seule solution."
+     ],
+     "q": "À quel jeu jouais-tu le plus enfant, et qui jouait avec toi ?",
+     "c": "Joue aujourd'hui une courte partie d'un jeu de société ou d'un casse-tête, même seul."
+    },
+    "it": {
+     "t": "Giochi da tavolo e rompicapi",
+     "g": "Scopri giochi classici e le storie dietro di essi.",
+     "p": [
+      "Scacchi e Go sono giochi di strategia molto antichi: gli scacchi dall'India e il Go dalla Cina.",
+      "Il Monopoly divenne un successo negli anni Trenta e il cubo di Rubik fu inventato nel 1974 da Ernő Rubik.",
+      "Un cubo standard ha 43 trilioni di posizioni possibili, ma una sola soluzione."
+     ],
+     "q": "A quale gioco giocavi di più da bambino e chi giocava con te?",
+     "c": "Gioca oggi una breve partita a un gioco da tavolo o a un rompicapo, anche da solo."
+    },
+    "pt": {
+     "t": "Jogos de tabuleiro e quebra-cabeças",
+     "g": "Conhece jogos clássicos e as histórias por trás deles.",
+     "p": [
+      "O xadrez e o go são jogos de estratégia muito antigos: o xadrez da Índia e o go da China.",
+      "O Monopólio foi um sucesso nos anos 30 e o cubo de Rubik foi inventado em 1974 por Ernő Rubik.",
+      "Um cubo padrão tem 43 triliões de posições possíveis, mas uma só solução."
+     ],
+     "q": "A que jogo jogavas mais em criança e quem jogava contigo?",
+     "c": "Joga hoje uma ronda curta de um jogo de tabuleiro ou quebra-cabeças, mesmo sozinho."
+    },
+    "pt_BR": {
+     "t": "Jogos de tabuleiro e quebra-cabeças",
+     "g": "Conheça jogos clássicos e as histórias por trás deles.",
+     "p": [
+      "O xadrez e o go são jogos de estratégia muito antigos: o xadrez da Índia e o go da China.",
+      "O Banco Imobiliário nasceu do Monopoly, sucesso dos anos 1930, e o cubo mágico foi inventado em 1974 por Ernő Rubik.",
+      "Um cubo padrão tem 43 quintilhões de posições possíveis, mas uma só solução."
+     ],
+     "q": "Qual jogo você mais jogava na infância e quem jogava com você?",
+     "c": "Jogue hoje uma rodada curta de um jogo de tabuleiro ou quebra-cabeça, mesmo sozinho."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Music around the world",
+     "g": "Match traditional instruments with the places they come from.",
+     "p": [
+      "The sitar comes from India, the didgeridoo from Aboriginal Australia and bagpipes from Scotland and other regions.",
+      "The steelpan, made from oil drums, was born in Trinidad and Tobago.",
+      "Instruments are made from local materials, which gives each region a unique sound."
+     ],
+     "q": "Which instrument do you love the sound of, and have you ever tried to play it?",
+     "c": "Listen to the sound of one of these instruments today and describe it in three words."
+    },
+    "de": {
+     "t": "Musik aus aller Welt",
+     "g": "Ordne traditionelle Instrumente den Orten zu, aus denen sie kommen.",
+     "p": [
+      "Die Sitar stammt aus Indien, das Didgeridoo von den Aborigines Australiens, der Dudelsack aus Schottland und anderen Regionen.",
+      "Die Steelpan, aus Ölfässern gebaut, entstand in Trinidad und Tobago.",
+      "Instrumente bestehen aus lokalen Materialien, was jeder Region einen eigenen Klang gibt."
+     ],
+     "q": "Welches Instrument klingt für dich schön, und hast du je versucht, es zu spielen?",
+     "c": "Hör dir heute den Klang eines dieser Instrumente an und beschreibe ihn mit drei Wörtern."
+    },
+    "es": {
+     "t": "Música del mundo",
+     "g": "Une instrumentos tradicionales con los lugares de donde vienen.",
+     "p": [
+      "El sitar viene de la India, el didgeridoo de los aborígenes de Australia y la gaita de Escocia y otras regiones.",
+      "El steelpan, hecho con barriles de petróleo, nació en Trinidad y Tobago.",
+      "Los instrumentos se hacen con materiales locales, lo que da a cada región un sonido único."
+     ],
+     "q": "¿El sonido de qué instrumento te encanta y has intentado tocarlo?",
+     "c": "Escucha hoy el sonido de uno de estos instrumentos y descríbelo en tres palabras."
+    },
+    "fr": {
+     "t": "Musique du monde",
+     "g": "Associe des instruments traditionnels aux lieux dont ils viennent.",
+     "p": [
+      "Le sitar vient d'Inde, le didgeridoo des Aborigènes d'Australie et la cornemuse d'Écosse et d'autres régions.",
+      "Le steelpan, fabriqué à partir de barils de pétrole, est né à Trinité-et-Tobago.",
+      "Les instruments sont faits de matériaux locaux, ce qui donne à chaque région un son unique."
+     ],
+     "q": "Quel instrument aimes-tu entendre, et as-tu déjà essayé d'en jouer ?",
+     "c": "Écoute aujourd'hui le son d'un de ces instruments et décris-le en trois mots."
+    },
+    "it": {
+     "t": "Musica dal mondo",
+     "g": "Abbina strumenti tradizionali ai luoghi da cui provengono.",
+     "p": [
+      "Il sitar viene dall'India, il didgeridoo dagli aborigeni australiani e la cornamusa dalla Scozia e da altre regioni.",
+      "Lo steelpan, fatto con barili di petrolio, nacque a Trinidad e Tobago.",
+      "Gli strumenti sono fatti di materiali locali, il che dà a ogni regione un suono unico."
+     ],
+     "q": "Di quale strumento ami il suono e hai mai provato a suonarlo?",
+     "c": "Ascolta oggi il suono di uno di questi strumenti e descrivilo in tre parole."
+    },
+    "pt": {
+     "t": "Música pelo mundo",
+     "g": "Associa instrumentos tradicionais aos lugares de onde vêm.",
+     "p": [
+      "O sitar vem da Índia, o didgeridoo dos aborígenes australianos e a gaita de foles da Escócia e de outras regiões.",
+      "O steelpan, feito de barris de petróleo, nasceu em Trindade e Tobago.",
+      "Os instrumentos são feitos de materiais locais, o que dá a cada região um som único."
+     ],
+     "q": "De que instrumento adoras o som e já tentaste tocá-lo?",
+     "c": "Ouve hoje o som de um destes instrumentos e descreve-o em três palavras."
+    },
+    "pt_BR": {
+     "t": "Música pelo mundo",
+     "g": "Associe instrumentos tradicionais aos lugares de onde vêm.",
+     "p": [
+      "O sitar vem da Índia, o didgeridoo dos aborígenes australianos e a gaita de foles da Escócia e de outras regiões.",
+      "O steelpan, feito de barris de petróleo, nasceu em Trinidad e Tobago.",
+      "Os instrumentos são feitos de materiais locais, o que dá a cada região um som único."
+     ],
+     "q": "De qual instrumento você adora o som e já tentou tocá-lo?",
+     "c": "Ouça hoje o som de um desses instrumentos e descreva-o em três palavras."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Famous composers",
+     "g": "Meet great composers and pieces almost everyone has heard.",
+     "p": [
+      "Mozart, a child prodigy from Salzburg, wrote more than 600 works, including The Magic Flute.",
+      "Beethoven wrote nine symphonies, and the Ninth includes the famous Ode to Joy.",
+      "Bach and Vivaldi were Baroque masters, and Vivaldi's The Four Seasons is a favourite."
+     ],
+     "q": "Which piece of classical music do you recognise, and where did you first hear it?",
+     "c": "Listen to a few minutes of one of these composers and note how it makes you feel."
+    },
+    "de": {
+     "t": "Berühmte Komponisten",
+     "g": "Lerne große Komponisten und Stücke kennen, die fast jeder gehört hat.",
+     "p": [
+      "Mozart, ein Wunderkind aus Salzburg, schrieb über 600 Werke, darunter die Zauberflöte.",
+      "Beethoven schrieb neun Sinfonien, und die Neunte enthält die berühmte Ode an die Freude.",
+      "Bach und Vivaldi waren Meister des Barock, und Vivaldis Vier Jahreszeiten sind ein Liebling."
+     ],
+     "q": "Welches klassische Stück erkennst du, und wo hast du es zuerst gehört?",
+     "c": "Hör ein paar Minuten einen dieser Komponisten und notiere, wie es auf dich wirkt."
+    },
+    "es": {
+     "t": "Compositores famosos",
+     "g": "Conoce a grandes compositores y obras que casi todos han oído.",
+     "p": [
+      "Mozart, niño prodigio de Salzburgo, escribió más de 600 obras, entre ellas La flauta mágica.",
+      "Beethoven escribió nueve sinfonías, y la Novena incluye la famosa Oda a la alegría.",
+      "Bach y Vivaldi fueron maestros del Barroco, y Las cuatro estaciones de Vivaldi es una favorita."
+     ],
+     "q": "¿Qué pieza de música clásica reconoces y dónde la oíste por primera vez?",
+     "c": "Escucha unos minutos de uno de estos compositores y anota qué sientes."
+    },
+    "fr": {
+     "t": "Compositeurs célèbres",
+     "g": "Rencontre de grands compositeurs et des œuvres que presque tout le monde a entendues.",
+     "p": [
+      "Mozart, enfant prodige de Salzbourg, a écrit plus de 600 œuvres, dont La Flûte enchantée.",
+      "Beethoven a écrit neuf symphonies, et la Neuvième contient la célèbre Ode à la joie.",
+      "Bach et Vivaldi furent des maîtres du baroque, et Les Quatre Saisons de Vivaldi sont un favori."
+     ],
+     "q": "Quel morceau de musique classique reconnais-tu, et où l'as-tu entendu la première fois ?",
+     "c": "Écoute quelques minutes de l'un de ces compositeurs et note ce que tu ressens."
+    },
+    "it": {
+     "t": "Compositori famosi",
+     "g": "Incontra grandi compositori e brani che quasi tutti hanno sentito.",
+     "p": [
+      "Mozart, bambino prodigio di Salisburgo, scrisse oltre 600 opere, tra cui Il flauto magico.",
+      "Beethoven scrisse nove sinfonie e la Nona contiene il celebre Inno alla gioia.",
+      "Bach e Vivaldi furono maestri del Barocco e Le quattro stagioni di Vivaldi è un favorito."
+     ],
+     "q": "Quale brano di musica classica riconosci e dove l'hai sentito per la prima volta?",
+     "c": "Ascolta qualche minuto di uno di questi compositori e annota cosa provi."
+    },
+    "pt": {
+     "t": "Compositores famosos",
+     "g": "Conhece grandes compositores e peças que quase todos já ouviram.",
+     "p": [
+      "Mozart, criança prodígio de Salzburgo, escreveu mais de 600 obras, entre elas A Flauta Mágica.",
+      "Beethoven escreveu nove sinfonias, e a Nona inclui a famosa Ode à Alegria.",
+      "Bach e Vivaldi foram mestres do Barroco, e As Quatro Estações de Vivaldi são uma favorita."
+     ],
+     "q": "Que peça de música clássica reconheces e onde a ouviste pela primeira vez?",
+     "c": "Ouve uns minutos de um destes compositores e anota o que sentes."
+    },
+    "pt_BR": {
+     "t": "Compositores famosos",
+     "g": "Conheça grandes compositores e peças que quase todos já ouviram.",
+     "p": [
+      "Mozart, criança prodígio de Salzburgo, escreveu mais de 600 obras, entre elas A Flauta Mágica.",
+      "Beethoven escreveu nove sinfonias, e a Nona inclui a famosa Ode à Alegria.",
+      "Bach e Vivaldi foram mestres do Barroco, e As Quatro Estações de Vivaldi são uma favorita."
+     ],
+     "q": "Qual peça de música clássica você reconhece e onde a ouviu pela primeira vez?",
+     "c": "Ouça uns minutos de um desses compositores e anote o que sente."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Painters you should know",
+     "g": "Learn four artists and one famous work by each.",
+     "p": [
+      "Leonardo da Vinci painted the Mona Lisa and The Last Supper in Renaissance Italy.",
+      "Vincent van Gogh painted The Starry Night, and Frida Kahlo is known for vivid self-portraits.",
+      "Pablo Picasso co-founded Cubism and painted Guernica."
+     ],
+     "q": "Which painting do you love, and what do you notice first when you look at it?",
+     "c": "Look up one painting by these artists and describe what you see in two sentences."
+    },
+    "de": {
+     "t": "Maler, die du kennen solltest",
+     "g": "Lerne vier Künstler und je ein berühmtes Werk kennen.",
+     "p": [
+      "Leonardo da Vinci malte die Mona Lisa und das Abendmahl im Italien der Renaissance.",
+      "Vincent van Gogh malte die Sternennacht, und Frida Kahlo ist für leuchtende Selbstporträts bekannt.",
+      "Pablo Picasso begründete den Kubismus mit und malte Guernica."
+     ],
+     "q": "Welches Gemälde liebst du, und was fällt dir beim Anschauen zuerst auf?",
+     "c": "Such ein Gemälde dieser Künstler und beschreibe in zwei Sätzen, was du siehst."
+    },
+    "es": {
+     "t": "Pintores que debes conocer",
+     "g": "Aprende cuatro artistas y una obra famosa de cada uno.",
+     "p": [
+      "Leonardo da Vinci pintó la Mona Lisa y La última cena en la Italia del Renacimiento.",
+      "Vincent van Gogh pintó La noche estrellada, y Frida Kahlo es famosa por sus vivos autorretratos.",
+      "Pablo Picasso cofundó el cubismo y pintó el Guernica."
+     ],
+     "q": "¿Qué pintura te encanta y qué notas primero al mirarla?",
+     "c": "Busca una pintura de estos artistas y describe lo que ves en dos frases."
+    },
+    "fr": {
+     "t": "Peintres à connaître",
+     "g": "Apprends quatre artistes et une œuvre célèbre de chacun.",
+     "p": [
+      "Léonard de Vinci a peint la Joconde et La Cène dans l'Italie de la Renaissance.",
+      "Vincent van Gogh a peint La Nuit étoilée, et Frida Kahlo est connue pour ses autoportraits vifs.",
+      "Pablo Picasso a cofondé le cubisme et peint Guernica."
+     ],
+     "q": "Quel tableau aimes-tu, et que remarques-tu d'abord en le regardant ?",
+     "c": "Cherche un tableau de ces artistes et décris ce que tu vois en deux phrases."
+    },
+    "it": {
+     "t": "Pittori da conoscere",
+     "g": "Impara quattro artisti e un'opera famosa di ciascuno.",
+     "p": [
+      "Leonardo da Vinci dipinse la Gioconda e l'Ultima Cena nell'Italia del Rinascimento.",
+      "Vincent van Gogh dipinse Notte stellata e Frida Kahlo è nota per i vivaci autoritratti.",
+      "Pablo Picasso cofondò il cubismo e dipinse Guernica."
+     ],
+     "q": "Quale dipinto ami e cosa noti per primo guardandolo?",
+     "c": "Cerca un dipinto di questi artisti e descrivi ciò che vedi in due frasi."
+    },
+    "pt": {
+     "t": "Pintores que deves conhecer",
+     "g": "Aprende quatro artistas e uma obra famosa de cada um.",
+     "p": [
+      "Leonardo da Vinci pintou a Mona Lisa e A Última Ceia na Itália do Renascimento.",
+      "Vincent van Gogh pintou A Noite Estrelada, e Frida Kahlo é conhecida pelos vivos autorretratos.",
+      "Pablo Picasso cofundou o cubismo e pintou Guernica."
+     ],
+     "q": "Que pintura adoras e o que reparas primeiro ao vê-la?",
+     "c": "Procura uma pintura destes artistas e descreve o que vês em duas frases."
+    },
+    "pt_BR": {
+     "t": "Pintores que você deve conhecer",
+     "g": "Aprenda quatro artistas e uma obra famosa de cada um.",
+     "p": [
+      "Leonardo da Vinci pintou a Mona Lisa e A Última Ceia na Itália do Renascimento.",
+      "Vincent van Gogh pintou A Noite Estrelada, e Frida Kahlo é conhecida pelos vívidos autorretratos.",
+      "Pablo Picasso cofundou o cubismo e pintou Guernica."
+     ],
+     "q": "Qual pintura você adora e o que percebe primeiro ao vê-la?",
+     "c": "Procure uma pintura desses artistas e descreva o que vê em duas frases."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Mona Lisa",
+     "g": "Find out why this small portrait became the most famous painting in the world.",
+     "p": [
+      "Leonardo da Vinci painted it in the early 1500s, and it hangs in the Louvre in Paris.",
+      "The painting is small, only about 77 by 53 centimetres, and is painted on a wooden panel.",
+      "Its soft shading and mysterious smile have fascinated visitors for centuries."
+     ],
+     "q": "What makes a work of art feel famous to you: beauty, mystery or story?",
+     "c": "Look at a copy of the Mona Lisa and notice where her eyes and smile seem to look."
+    },
+    "de": {
+     "t": "Die Mona Lisa",
+     "g": "Erfahre, warum dieses kleine Porträt das berühmteste Gemälde der Welt wurde.",
+     "p": [
+      "Leonardo da Vinci malte es Anfang des 16. Jahrhunderts, und es hängt im Louvre in Paris.",
+      "Das Bild ist klein, nur etwa 77 mal 53 Zentimeter, und auf Holz gemalt.",
+      "Die weiche Schattierung und das geheimnisvolle Lächeln faszinieren Besucher seit Jahrhunderten."
+     ],
+     "q": "Was macht ein Kunstwerk für dich berühmt: Schönheit, Geheimnis oder Geschichte?",
+     "c": "Betrachte eine Kopie der Mona Lisa und achte darauf, wohin Augen und Lächeln zu blicken scheinen."
+    },
+    "es": {
+     "t": "La Mona Lisa",
+     "g": "Descubre por qué este pequeño retrato se volvió la pintura más famosa del mundo.",
+     "p": [
+      "Leonardo da Vinci la pintó a principios del siglo XVI y está en el Louvre de París.",
+      "El cuadro es pequeño, de unos 77 por 53 centímetros, y está pintado sobre tabla de madera.",
+      "Su sombreado suave y su sonrisa misteriosa fascinan a los visitantes desde hace siglos."
+     ],
+     "q": "¿Qué hace famosa una obra de arte para ti: belleza, misterio o historia?",
+     "c": "Mira una copia de la Mona Lisa y fíjate hacia dónde parecen mirar sus ojos y su sonrisa."
+    },
+    "fr": {
+     "t": "La Joconde",
+     "g": "Découvre pourquoi ce petit portrait est devenu le tableau le plus célèbre du monde.",
+     "p": [
+      "Léonard de Vinci l'a peinte au début du XVIe siècle, et elle est exposée au Louvre à Paris.",
+      "Le tableau est petit, environ 77 sur 53 centimètres, et peint sur un panneau de bois.",
+      "Son ombrage doux et son sourire mystérieux fascinent les visiteurs depuis des siècles."
+     ],
+     "q": "Qu'est-ce qui rend une œuvre célèbre pour toi : beauté, mystère ou histoire ?",
+     "c": "Regarde une copie de la Joconde et remarque où semblent se diriger ses yeux et son sourire."
+    },
+    "it": {
+     "t": "La Gioconda",
+     "g": "Scopri perché questo piccolo ritratto è diventato il dipinto più famoso del mondo.",
+     "p": [
+      "Leonardo da Vinci la dipinse all'inizio del Cinquecento ed è esposta al Louvre di Parigi.",
+      "Il dipinto è piccolo, circa 77 per 53 centimetri, su tavola di legno.",
+      "La sfumatura morbida e il sorriso misterioso affascinano i visitatori da secoli."
+     ],
+     "q": "Cosa rende famosa per te un'opera d'arte: bellezza, mistero o storia?",
+     "c": "Guarda una copia della Gioconda e nota dove sembrano guardare gli occhi e il sorriso."
+    },
+    "pt": {
+     "t": "A Mona Lisa",
+     "g": "Descobre porque é que este pequeno retrato se tornou a pintura mais famosa do mundo.",
+     "p": [
+      "Leonardo da Vinci pintou-a no início do século XVI e está no Louvre, em Paris.",
+      "O quadro é pequeno, cerca de 77 por 53 centímetros, e pintado sobre madeira.",
+      "O seu sombreado suave e o sorriso misterioso fascinam os visitantes há séculos."
+     ],
+     "q": "O que torna uma obra de arte famosa para ti: beleza, mistério ou história?",
+     "c": "Olha para uma cópia da Mona Lisa e repara para onde parecem olhar os olhos e o sorriso."
+    },
+    "pt_BR": {
+     "t": "A Mona Lisa",
+     "g": "Descubra por que esse pequeno retrato se tornou a pintura mais famosa do mundo.",
+     "p": [
+      "Leonardo da Vinci a pintou no início do século XVI e ela está no Louvre, em Paris.",
+      "O quadro é pequeno, cerca de 77 por 53 centímetros, e pintado sobre madeira.",
+      "O sombreado suave e o sorriso misterioso fascinam os visitantes há séculos."
+     ],
+     "q": "O que torna uma obra de arte famosa para você: beleza, mistério ou história?",
+     "c": "Olhe para uma cópia da Mona Lisa e perceba para onde parecem olhar os olhos e o sorriso."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Children's stories worldwide",
+     "g": "Explore fairy tales and where the best-loved stories began.",
+     "p": [
+      "The Brothers Grimm collected German folk tales such as Hansel and Gretel and Cinderella.",
+      "Hans Christian Andersen of Denmark wrote The Little Mermaid and The Ugly Duckling.",
+      "Stories like Cinderella appear in many cultures, with local twists."
+     ],
+     "q": "Which childhood story do you remember best, and what did you love in it?",
+     "c": "Tell a childhood story to someone in under one minute, with a happy ending."
+    },
+    "de": {
+     "t": "Kindergeschichten weltweit",
+     "g": "Erkunde Märchen und woher beliebte Geschichten stammen.",
+     "p": [
+      "Die Brüder Grimm sammelten deutsche Volksmärchen wie Hänsel und Gretel und Aschenputtel.",
+      "Hans Christian Andersen aus Dänemark schrieb Die kleine Meerjungfrau und Das hässliche Entlein.",
+      "Geschichten wie Aschenputtel gibt es in vielen Kulturen, mit eigenen Wendungen."
+     ],
+     "q": "Welche Kindergeschichte erinnerst du am besten, und was liebtest du daran?",
+     "c": "Erzähle jemandem in unter einer Minute eine Kindergeschichte mit gutem Ende."
+    },
+    "es": {
+     "t": "Cuentos infantiles del mundo",
+     "g": "Explora cuentos de hadas y dónde empezaron las historias más queridas.",
+     "p": [
+      "Los hermanos Grimm recopilaron cuentos populares alemanes como Hansel y Gretel y La Cenicienta.",
+      "Hans Christian Andersen, de Dinamarca, escribió La sirenita y El patito feo.",
+      "Historias como la de Cenicienta aparecen en muchas culturas, con giros locales."
+     ],
+     "q": "¿Qué cuento infantil recuerdas mejor y qué te encantaba de él?",
+     "c": "Cuenta a alguien un cuento infantil en menos de un minuto, con final feliz."
+    },
+    "fr": {
+     "t": "Contes pour enfants du monde",
+     "g": "Explore les contes de fées et l'origine des histoires les plus aimées.",
+     "p": [
+      "Les frères Grimm ont recueilli des contes populaires allemands comme Hansel et Gretel et Cendrillon.",
+      "Hans Christian Andersen, du Danemark, a écrit La Petite Sirène et Le Vilain Petit Canard.",
+      "Des histoires comme Cendrillon existent dans de nombreuses cultures, avec des variantes locales."
+     ],
+     "q": "Quelle histoire d'enfance retiens-tu le mieux, et qu'y aimais-tu ?",
+     "c": "Raconte une histoire d'enfance à quelqu'un en moins d'une minute, avec une fin heureuse."
+    },
+    "it": {
+     "t": "Storie per bambini nel mondo",
+     "g": "Esplora le fiabe e dove nacquero le storie più amate.",
+     "p": [
+      "I fratelli Grimm raccolsero fiabe popolari tedesche come Hansel e Gretel e Cenerentola.",
+      "Hans Christian Andersen, danese, scrisse La sirenetta e Il brutto anatroccolo.",
+      "Storie come Cenerentola compaiono in molte culture, con varianti locali."
+     ],
+     "q": "Quale storia dell'infanzia ricordi meglio e cosa ti piaceva?",
+     "c": "Racconta a qualcuno una storia dell'infanzia in meno di un minuto, con lieto fine."
+    },
+    "pt": {
+     "t": "Histórias infantis pelo mundo",
+     "g": "Explora contos de fadas e onde começaram as histórias mais queridas.",
+     "p": [
+      "Os irmãos Grimm reuniram contos populares alemães como João e Maria e a Gata Borralheira.",
+      "Hans Christian Andersen, da Dinamarca, escreveu A Pequena Sereia e O Patinho Feio.",
+      "Histórias como a da Gata Borralheira surgem em muitas culturas, com variações locais."
+     ],
+     "q": "Que história da infância recordas melhor e o que adoravas nela?",
+     "c": "Conta a alguém uma história da infância em menos de um minuto, com final feliz."
+    },
+    "pt_BR": {
+     "t": "Histórias infantis pelo mundo",
+     "g": "Explore contos de fadas e onde começaram as histórias mais queridas.",
+     "p": [
+      "Os irmãos Grimm reuniram contos populares alemães como João e Maria e Cinderela.",
+      "Hans Christian Andersen, da Dinamarca, escreveu A Pequena Sereia e O Patinho Feio.",
+      "Histórias como a de Cinderela aparecem em muitas culturas, com variações locais."
+     ],
+     "q": "Qual história da infância você lembra melhor e o que amava nela?",
+     "c": "Conte a alguém uma história da infância em menos de um minuto, com final feliz."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Famous books and authors",
+     "g": "Meet classic books and the writers behind them.",
+     "p": [
+      "Miguel de Cervantes of Spain wrote Don Quixote, often called the first modern novel.",
+      "William Shakespeare wrote Romeo and Juliet and many other plays around 1600.",
+      "Jane Austen wrote Pride and Prejudice, published in 1813."
+     ],
+     "q": "Which book changed the way you think or feel, and why?",
+     "c": "Share a favourite line or idea from a book you love with someone."
+    },
+    "de": {
+     "t": "Berühmte Bücher und Autoren",
+     "g": "Lerne klassische Bücher und ihre Autoren kennen.",
+     "p": [
+      "Miguel de Cervantes aus Spanien schrieb Don Quijote, oft der erste moderne Roman genannt.",
+      "William Shakespeare schrieb um 1600 Romeo und Julia und viele andere Stücke.",
+      "Jane Austen schrieb Stolz und Vorurteil, erschienen 1813."
+     ],
+     "q": "Welches Buch hat deine Sicht oder dein Fühlen verändert, und warum?",
+     "c": "Teile eine Lieblingszeile oder Idee aus einem geliebten Buch mit jemandem."
+    },
+    "es": {
+     "t": "Libros y autores famosos",
+     "g": "Conoce libros clásicos y a los escritores que los crearon.",
+     "p": [
+      "Miguel de Cervantes, de España, escribió Don Quijote, a menudo llamada la primera novela moderna.",
+      "William Shakespeare escribió Romeo y Julieta y muchas otras obras hacia 1600.",
+      "Jane Austen escribió Orgullo y prejuicio, publicada en 1813."
+     ],
+     "q": "¿Qué libro cambió tu forma de pensar o sentir y por qué?",
+     "c": "Comparte con alguien una frase o idea favorita de un libro que ames."
+    },
+    "fr": {
+     "t": "Livres et auteurs célèbres",
+     "g": "Rencontre des livres classiques et les écrivains qui les ont créés.",
+     "p": [
+      "Miguel de Cervantes, d'Espagne, a écrit Don Quichotte, souvent appelé le premier roman moderne.",
+      "William Shakespeare a écrit Roméo et Juliette et bien d'autres pièces vers 1600.",
+      "Jane Austen a écrit Orgueil et Préjugés, publié en 1813."
+     ],
+     "q": "Quel livre a changé ta façon de penser ou de ressentir, et pourquoi ?",
+     "c": "Partage avec quelqu'un une phrase ou une idée préférée d'un livre que tu aimes."
+    },
+    "it": {
+     "t": "Libri e autori famosi",
+     "g": "Incontra libri classici e gli scrittori che li crearono.",
+     "p": [
+      "Miguel de Cervantes, spagnolo, scrisse Don Chisciotte, spesso detto il primo romanzo moderno.",
+      "William Shakespeare scrisse Romeo e Giulietta e molte altre opere intorno al 1600.",
+      "Jane Austen scrisse Orgoglio e pregiudizio, pubblicato nel 1813."
+     ],
+     "q": "Quale libro ha cambiato il tuo modo di pensare o sentire e perché?",
+     "c": "Condividi con qualcuno una frase o un'idea preferita di un libro che ami."
+    },
+    "pt": {
+     "t": "Livros e autores famosos",
+     "g": "Conhece livros clássicos e os escritores que os criaram.",
+     "p": [
+      "Miguel de Cervantes, de Espanha, escreveu Dom Quixote, muitas vezes chamado o primeiro romance moderno.",
+      "William Shakespeare escreveu Romeu e Julieta e muitas outras peças por volta de 1600.",
+      "Jane Austen escreveu Orgulho e Preconceito, publicado em 1813."
+     ],
+     "q": "Que livro mudou a tua forma de pensar ou sentir e porquê?",
+     "c": "Partilha com alguém uma frase ou ideia favorita de um livro que ames."
+    },
+    "pt_BR": {
+     "t": "Livros e autores famosos",
+     "g": "Conheça livros clássicos e os escritores que os criaram.",
+     "p": [
+      "Miguel de Cervantes, da Espanha, escreveu Dom Quixote, muitas vezes chamado de primeiro romance moderno.",
+      "William Shakespeare escreveu Romeu e Julieta e muitas outras peças por volta de 1600.",
+      "Jane Austen escreveu Orgulho e Preconceito, publicado em 1813."
+     ],
+     "q": "Qual livro mudou seu jeito de pensar ou sentir e por quê?",
+     "c": "Compartilhe com alguém uma frase ou ideia favorita de um livro que você ama."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "gaming",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to the world of games",
+     "g": "Understand what makes something a game and what we will explore together.",
+     "p": [
+      "A game is play with a goal, rules and choices that you make.",
+      "We will cover genres, history, culture and healthy habits.",
+      "One small lesson a day is enough to learn a lot over time."
+     ],
+     "q": "What is the first game you remember playing?",
+     "c": "Name one game you enjoyed as a kid and say why in one sentence."
+    },
+    "de": {
+     "t": "Willkommen in der Welt der Spiele",
+     "g": "Verstehen, was ein Spiel ausmacht und was wir gemeinsam entdecken.",
+     "p": [
+      "Ein Spiel ist Spielen mit einem Ziel, Regeln und eigenen Entscheidungen.",
+      "Wir behandeln Genres, Geschichte, Kultur und gesunde Gewohnheiten.",
+      "Eine kleine Lektion pro Tag reicht, um mit der Zeit viel zu lernen."
+     ],
+     "q": "An welches Spiel erinnerst du dich zuerst?",
+     "c": "Nenne ein Spiel aus deiner Kindheit und sag in einem Satz, warum du es mochtest."
+    },
+    "es": {
+     "t": "Bienvenido al mundo de los juegos",
+     "g": "Entender qué hace que algo sea un juego y qué exploraremos juntos.",
+     "p": [
+      "Un juego es jugar con una meta, reglas y decisiones propias.",
+      "Veremos géneros, historia, cultura y hábitos saludables.",
+      "Una lección pequeña al día basta para aprender mucho con el tiempo."
+     ],
+     "q": "¿Cuál es el primer juego que recuerdas haber jugado?",
+     "c": "Nombra un juego que disfrutabas de niño y di por qué en una frase."
+    },
+    "fr": {
+     "t": "Bienvenue dans le monde des jeux",
+     "g": "Comprendre ce qui fait un jeu et ce que nous allons explorer ensemble.",
+     "p": [
+      "Un jeu, c'est jouer avec un but, des règles et des choix personnels.",
+      "Nous verrons les genres, l'histoire, la culture et les bonnes habitudes.",
+      "Une petite leçon par jour suffit pour beaucoup apprendre avec le temps."
+     ],
+     "q": "Quel est le premier jeu dont tu te souviens ?",
+     "c": "Cite un jeu que tu aimais enfant et dis pourquoi en une phrase."
+    },
+    "it": {
+     "t": "Benvenuto nel mondo dei giochi",
+     "g": "Capire cosa rende un gioco tale e cosa esploreremo insieme.",
+     "p": [
+      "Un gioco è giocare con un obiettivo, regole e scelte tue.",
+      "Parleremo di generi, storia, cultura e abitudini sane.",
+      "Una piccola lezione al giorno basta per imparare molto nel tempo."
+     ],
+     "q": "Qual è il primo gioco che ricordi di aver giocato?",
+     "c": "Cita un gioco che ti piaceva da bambino e spiega perché in una frase."
+    },
+    "pt": {
+     "t": "Bem-vindo ao mundo dos jogos",
+     "g": "Perceber o que faz de algo um jogo e o que vamos explorar juntos.",
+     "p": [
+      "Um jogo é brincar com um objetivo, regras e escolhas tuas.",
+      "Vamos ver géneros, história, cultura e hábitos saudáveis.",
+      "Uma pequena lição por dia chega para aprender muito com o tempo."
+     ],
+     "q": "Qual é o primeiro jogo de que te lembras?",
+     "c": "Diz um jogo de que gostavas em criança e porquê, numa frase."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo ao mundo dos jogos",
+     "g": "Entender o que faz de algo um jogo e o que vamos explorar juntos.",
+     "p": [
+      "Um jogo é brincar com um objetivo, regras e escolhas suas.",
+      "Vamos ver gêneros, história, cultura e hábitos saudáveis.",
+      "Uma pequena lição por dia basta para aprender muito com o tempo."
+     ],
+     "q": "Qual é o primeiro jogo de que você se lembra?",
+     "c": "Diga um jogo de que você gostava quando criança e por quê, em uma frase."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is a video game?",
+     "g": "Learn the four ingredients found in almost every video game.",
+     "p": [
+      "Rules tell you what is allowed, and goals tell you what to aim for.",
+      "Feedback shows the result of your action, like a sound or a score.",
+      "Interaction means the game reacts to what you do."
+     ],
+     "q": "Which game can you describe using these four ingredients?",
+     "c": "Pick any game and write its rule, goal, feedback and interaction in four short lines."
+    },
+    "de": {
+     "t": "Was ist ein Videospiel?",
+     "g": "Die vier Zutaten kennenlernen, die fast jedes Videospiel hat.",
+     "p": [
+      "Regeln sagen, was erlaubt ist, und Ziele zeigen, worauf du hinarbeitest.",
+      "Rückmeldung zeigt das Ergebnis deiner Aktion, etwa als Ton oder Punktestand.",
+      "Interaktion heißt, dass das Spiel auf dein Handeln reagiert."
+     ],
+     "q": "Welches Spiel kannst du mit diesen vier Zutaten beschreiben?",
+     "c": "Wähle ein Spiel und schreibe Regel, Ziel, Rückmeldung und Interaktion in vier kurzen Zeilen auf."
+    },
+    "es": {
+     "t": "¿Qué es un videojuego?",
+     "g": "Conocer los cuatro ingredientes que tiene casi todo videojuego.",
+     "p": [
+      "Las reglas dicen qué se puede hacer y la meta, hacia dónde ir.",
+      "La retroalimentación muestra el resultado de tu acción, como un sonido o puntos.",
+      "La interacción significa que el juego reacciona a lo que haces."
+     ],
+     "q": "¿Qué juego puedes describir con estos cuatro ingredientes?",
+     "c": "Elige un juego y escribe su regla, meta, retroalimentación e interacción en cuatro líneas."
+    },
+    "fr": {
+     "t": "Qu'est-ce qu'un jeu vidéo ?",
+     "g": "Découvrir les quatre ingrédients présents dans presque tous les jeux vidéo.",
+     "p": [
+      "Les règles disent ce qui est permis, et le but indique ce qu'il faut viser.",
+      "Le retour d'information montre le résultat de ton action, par un son ou un score.",
+      "L'interaction, c'est le jeu qui réagit à ce que tu fais."
+     ],
+     "q": "Quel jeu peux-tu décrire avec ces quatre ingrédients ?",
+     "c": "Choisis un jeu et note sa règle, son but, son retour et son interaction en quatre lignes."
+    },
+    "it": {
+     "t": "Che cos'è un videogioco?",
+     "g": "Conoscere i quattro ingredienti presenti in quasi ogni videogioco.",
+     "p": [
+      "Le regole dicono cosa è permesso, l'obiettivo dove puntare.",
+      "Il feedback mostra il risultato della tua azione, come un suono o un punteggio.",
+      "L'interazione significa che il gioco reagisce a ciò che fai."
+     ],
+     "q": "Quale gioco sapresti descrivere con questi quattro ingredienti?",
+     "c": "Scegli un gioco e scrivi regola, obiettivo, feedback e interazione in quattro righe."
+    },
+    "pt": {
+     "t": "O que é um videojogo?",
+     "g": "Conhecer os quatro ingredientes presentes em quase todos os videojogos.",
+     "p": [
+      "As regras dizem o que é permitido e o objetivo diz para onde ir.",
+      "O feedback mostra o resultado da tua ação, como um som ou pontos.",
+      "A interação significa que o jogo reage ao que fazes."
+     ],
+     "q": "Que jogo consegues descrever com estes quatro ingredientes?",
+     "c": "Escolhe um jogo e escreve a regra, o objetivo, o feedback e a interação em quatro linhas."
+    },
+    "pt_BR": {
+     "t": "O que é um videogame?",
+     "g": "Conhecer os quatro ingredientes presentes em quase todo videogame.",
+     "p": [
+      "As regras dizem o que é permitido e o objetivo mostra para onde ir.",
+      "O feedback mostra o resultado da sua ação, como um som ou pontos.",
+      "A interação significa que o jogo reage ao que você faz."
+     ],
+     "q": "Que jogo você consegue descrever com esses quatro ingredientes?",
+     "c": "Escolha um jogo e escreva regra, objetivo, feedback e interação em quatro linhas."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why people play",
+     "g": "Discover the many reasons people pick up a controller.",
+     "p": [
+      "Some play for challenge, others for story, creativity or relaxing.",
+      "Many play to spend time with friends or family.",
+      "There is no wrong reason to enjoy games."
+     ],
+     "q": "What do you enjoy most when you play?",
+     "c": "Write your top two reasons for playing and guess a friend's top reason."
+    },
+    "de": {
+     "t": "Warum Menschen spielen",
+     "g": "Die vielen Gründe entdecken, warum Menschen zum Controller greifen.",
+     "p": [
+      "Manche spielen für die Herausforderung, andere für Geschichte, Kreativität oder Entspannung.",
+      "Viele spielen, um Zeit mit Freunden oder Familie zu verbringen.",
+      "Es gibt keinen falschen Grund, Spiele zu mögen."
+     ],
+     "q": "Was gefällt dir am meisten, wenn du spielst?",
+     "c": "Schreibe deine zwei wichtigsten Gründe zum Spielen auf und rate den Grund eines Freundes."
+    },
+    "es": {
+     "t": "Por qué juega la gente",
+     "g": "Descubrir los muchos motivos por los que la gente toma un mando.",
+     "p": [
+      "Unos juegan por el reto, otros por la historia, la creatividad o para relajarse.",
+      "Muchos juegan para pasar tiempo con amigos o familia.",
+      "No hay un motivo equivocado para disfrutar de los juegos."
+     ],
+     "q": "¿Qué es lo que más disfrutas cuando juegas?",
+     "c": "Escribe tus dos motivos principales para jugar y adivina el de un amigo."
+    },
+    "fr": {
+     "t": "Pourquoi on joue",
+     "g": "Découvrir les nombreuses raisons qui poussent à prendre une manette.",
+     "p": [
+      "Certains jouent pour le défi, d'autres pour l'histoire, la créativité ou la détente.",
+      "Beaucoup jouent pour passer du temps avec leurs amis ou leur famille.",
+      "Il n'y a pas de mauvaise raison d'aimer les jeux."
+     ],
+     "q": "Qu'est-ce que tu préfères quand tu joues ?",
+     "c": "Écris tes deux raisons principales de jouer et devine celle d'un ami."
+    },
+    "it": {
+     "t": "Perché si gioca",
+     "g": "Scoprire i tanti motivi per cui si prende in mano un controller.",
+     "p": [
+      "C'è chi gioca per la sfida, chi per la storia, la creatività o il relax.",
+      "Molti giocano per passare del tempo con amici o famiglia.",
+      "Non esiste un motivo sbagliato per divertirsi con i giochi."
+     ],
+     "q": "Cosa ti piace di più quando giochi?",
+     "c": "Scrivi i tuoi due motivi principali per giocare e indovina quello di un amico."
+    },
+    "pt": {
+     "t": "Porque é que as pessoas jogam",
+     "g": "Descobrir os muitos motivos pelos quais as pessoas pegam num comando.",
+     "p": [
+      "Uns jogam pelo desafio, outros pela história, criatividade ou relaxamento.",
+      "Muitos jogam para passar tempo com amigos ou família.",
+      "Não há motivo errado para gostar de jogos."
+     ],
+     "q": "O que mais gostas quando jogas?",
+     "c": "Escreve as tuas duas razões principais para jogar e adivinha a de um amigo."
+    },
+    "pt_BR": {
+     "t": "Por que as pessoas jogam",
+     "g": "Descobrir os muitos motivos pelos quais as pessoas pegam um controle.",
+     "p": [
+      "Uns jogam pelo desafio, outros pela história, criatividade ou relaxamento.",
+      "Muitos jogam para passar tempo com amigos ou família.",
+      "Não existe motivo errado para curtir jogos."
+     ],
+     "q": "O que você mais curte quando joga?",
+     "c": "Escreva seus dois principais motivos para jogar e adivinhe o de um amigo."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your gamer profile",
+     "g": "Reflect on the games you have loved and what that says about your taste.",
+     "p": [
+      "Look at your favourites and find what they share, like puzzles or stories.",
+      "Games you never tried may hold pleasant surprises.",
+      "Your taste can change over time, and that is fine."
+     ],
+     "q": "Which three games would you put in your personal hall of fame?",
+     "c": "List three favourite games and write one word that describes each."
+    },
+    "de": {
+     "t": "Dein Spielerprofil",
+     "g": "Über Lieblingsspiele nachdenken und was sie über deinen Geschmack verraten.",
+     "p": [
+      "Schau dir deine Favoriten an und finde Gemeinsamkeiten, etwa Rätsel oder Geschichten.",
+      "Spiele, die du nie probiert hast, können schöne Überraschungen bieten.",
+      "Dein Geschmack kann sich mit der Zeit ändern, und das ist völlig in Ordnung."
+     ],
+     "q": "Welche drei Spiele kämen in deine persönliche Ruhmeshalle?",
+     "c": "Liste drei Lieblingsspiele auf und schreibe zu jedem ein beschreibendes Wort."
+    },
+    "es": {
+     "t": "Tu perfil de jugador",
+     "g": "Reflexionar sobre los juegos que amas y lo que dicen de tu gusto.",
+     "p": [
+      "Mira tus favoritos y busca lo que comparten, como acertijos o historias.",
+      "Los juegos que nunca probaste pueden darte buenas sorpresas.",
+      "Tu gusto puede cambiar con el tiempo, y está bien."
+     ],
+     "q": "¿Qué tres juegos pondrías en tu salón de la fama personal?",
+     "c": "Haz una lista de tres juegos favoritos y escribe una palabra que describa cada uno."
+    },
+    "fr": {
+     "t": "Ton profil de joueur",
+     "g": "Réfléchir aux jeux que tu aimes et à ce qu'ils disent de tes goûts.",
+     "p": [
+      "Observe tes favoris et cherche ce qu'ils ont en commun, énigmes ou histoires.",
+      "Les jeux jamais essayés peuvent réserver de belles surprises.",
+      "Tes goûts peuvent changer avec le temps, et c'est très bien."
+     ],
+     "q": "Quels trois jeux mettrais-tu dans ton panthéon personnel ?",
+     "c": "Liste trois jeux préférés et note un mot qui décrit chacun."
+    },
+    "it": {
+     "t": "Il tuo profilo da giocatore",
+     "g": "Riflettere sui giochi che ami e su cosa dicono dei tuoi gusti.",
+     "p": [
+      "Guarda i tuoi preferiti e cerca cosa hanno in comune, come enigmi o storie.",
+      "I giochi mai provati possono riservare belle sorprese.",
+      "I tuoi gusti possono cambiare col tempo, ed è normale."
+     ],
+     "q": "Quali tre giochi metteresti nella tua personale hall of fame?",
+     "c": "Elenca tre giochi preferiti e scrivi una parola che descrive ciascuno."
+    },
+    "pt": {
+     "t": "O teu perfil de jogador",
+     "g": "Refletir sobre os jogos de que gostas e o que dizem do teu gosto.",
+     "p": [
+      "Olha para os teus favoritos e procura o que partilham, como puzzles ou histórias.",
+      "Jogos que nunca experimentaste podem trazer boas surpresas.",
+      "O teu gosto pode mudar com o tempo, e está tudo bem."
+     ],
+     "q": "Que três jogos porias no teu salão da fama pessoal?",
+     "c": "Faz uma lista de três jogos favoritos e escreve uma palavra que descreva cada um."
+    },
+    "pt_BR": {
+     "t": "Seu perfil de jogador",
+     "g": "Refletir sobre os jogos de que você gosta e o que eles dizem do seu gosto.",
+     "p": [
+      "Olhe seus favoritos e procure o que eles têm em comum, como quebra-cabeças ou histórias.",
+      "Jogos que você nunca experimentou podem trazer boas surpresas.",
+      "Seu gosto pode mudar com o tempo, e tudo bem."
+     ],
+     "q": "Quais três jogos você colocaria no seu hall da fama pessoal?",
+     "c": "Liste três jogos favoritos e escreva uma palavra que descreva cada um."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Goals and rules",
+     "g": "See how clear goals and fair rules turn simple actions into play.",
+     "p": [
+      "A goal gives direction, like reaching the exit or collecting items.",
+      "Rules create limits, and limits make clever choices matter.",
+      "Fair rules feel the same for every player."
+     ],
+     "q": "What rule in a favourite game do you find most clever?",
+     "c": "Invent one silly rule for a simple game like tag and test it with someone."
+    },
+    "de": {
+     "t": "Ziele und Regeln",
+     "g": "Sehen, wie klare Ziele und faire Regeln einfache Handlungen zum Spiel machen.",
+     "p": [
+      "Ein Ziel gibt Richtung, etwa den Ausgang erreichen oder Dinge sammeln.",
+      "Regeln setzen Grenzen, und Grenzen machen kluge Entscheidungen wertvoll.",
+      "Faire Regeln gelten für alle Spieler gleich."
+     ],
+     "q": "Welche Regel in einem Lieblingsspiel findest du besonders clever?",
+     "c": "Erfinde eine alberne Regel für ein einfaches Spiel wie Fangen und probiere sie aus."
+    },
+    "es": {
+     "t": "Metas y reglas",
+     "g": "Ver cómo metas claras y reglas justas convierten acciones simples en juego.",
+     "p": [
+      "Una meta da dirección, como llegar a la salida o recoger objetos.",
+      "Las reglas ponen límites, y los límites hacen valiosas las decisiones astutas.",
+      "Las reglas justas valen igual para todos los jugadores."
+     ],
+     "q": "¿Qué regla de un juego favorito te parece más ingeniosa?",
+     "c": "Inventa una regla tonta para un juego simple como el pilla-pilla y pruébala."
+    },
+    "fr": {
+     "t": "Buts et règles",
+     "g": "Voir comment des buts clairs et des règles justes transforment des gestes simples en jeu.",
+     "p": [
+      "Un but donne une direction, comme atteindre la sortie ou ramasser des objets.",
+      "Les règles posent des limites, et les limites donnent du prix aux choix malins.",
+      "Des règles justes valent pareil pour tous les joueurs."
+     ],
+     "q": "Quelle règle d'un jeu préféré trouves-tu la plus astucieuse ?",
+     "c": "Invente une règle rigolote pour un jeu simple comme chat et teste-la."
+    },
+    "it": {
+     "t": "Obiettivi e regole",
+     "g": "Vedere come obiettivi chiari e regole eque trasformano azioni semplici in gioco.",
+     "p": [
+      "Un obiettivo dà direzione, come raggiungere l'uscita o raccogliere oggetti.",
+      "Le regole pongono limiti, e i limiti danno valore alle scelte intelligenti.",
+      "Regole eque valgono allo stesso modo per tutti i giocatori."
+     ],
+     "q": "Quale regola di un tuo gioco preferito trovi più geniale?",
+     "c": "Inventa una regola buffa per un gioco semplice come acchiapparella e provala."
+    },
+    "pt": {
+     "t": "Objetivos e regras",
+     "g": "Ver como objetivos claros e regras justas transformam ações simples em jogo.",
+     "p": [
+      "Um objetivo dá direção, como chegar à saída ou apanhar objetos.",
+      "As regras criam limites, e os limites dão valor às escolhas inteligentes.",
+      "Regras justas valem da mesma forma para todos os jogadores."
+     ],
+     "q": "Que regra de um jogo favorito achas mais engenhosa?",
+     "c": "Inventa uma regra tola para um jogo simples como o apanhado e experimenta-a."
+    },
+    "pt_BR": {
+     "t": "Objetivos e regras",
+     "g": "Ver como objetivos claros e regras justas transformam ações simples em jogo.",
+     "p": [
+      "Um objetivo dá direção, como chegar à saída ou coletar itens.",
+      "As regras criam limites, e os limites dão valor às escolhas inteligentes.",
+      "Regras justas valem do mesmo jeito para todos os jogadores."
+     ],
+     "q": "Que regra de um jogo favorito você acha mais engenhosa?",
+     "c": "Invente uma regra boba para um jogo simples como pega-pega e teste."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Feedback: sounds, lights and scores",
+     "g": "Learn how games tell you moment by moment whether you did well.",
+     "p": [
+      "A coin chime or a bright flash says that something good happened.",
+      "A buzzer or a shake of the screen says to try something else.",
+      "Good feedback is clear and quick, so you learn without reading a manual."
+     ],
+     "q": "Which game sound do you remember best?",
+     "c": "Play any game for five minutes and note three feedback signals you notice."
+    },
+    "de": {
+     "t": "Rückmeldung: Klänge, Lichter und Punkte",
+     "g": "Lernen, wie Spiele dir Augenblick für Augenblick zeigen, ob du es gut gemacht hast.",
+     "p": [
+      "Ein Münzklang oder ein heller Blitz sagt, dass etwas Gutes passiert ist.",
+      "Ein Summer oder ein wackelnder Bildschirm sagt, dass du etwas anderes versuchen sollst.",
+      "Gute Rückmeldung ist klar und schnell, sodass du ohne Anleitung lernst."
+     ],
+     "q": "An welchen Spielklang erinnerst du dich am besten?",
+     "c": "Spiele fünf Minuten ein Spiel und notiere drei Rückmeldungen, die dir auffallen."
+    },
+    "es": {
+     "t": "Retroalimentación: sonidos, luces y puntos",
+     "g": "Aprender cómo los juegos te dicen al instante si lo hiciste bien.",
+     "p": [
+      "El tintineo de una moneda o un destello dice que pasó algo bueno.",
+      "Un zumbido o una pantalla que tiembla dice que pruebes otra cosa.",
+      "Una buena retroalimentación es clara y rápida, y aprendes sin manual."
+     ],
+     "q": "¿Qué sonido de un juego recuerdas mejor?",
+     "c": "Juega cinco minutos a cualquier juego y anota tres señales de retroalimentación."
+    },
+    "fr": {
+     "t": "Le retour : sons, lumières et scores",
+     "g": "Apprendre comment les jeux te disent à chaque instant si tu as bien fait.",
+     "p": [
+      "Un tintement de pièce ou un éclair lumineux annonce que c'est réussi.",
+      "Un buzzer ou un écran qui tremble invite à essayer autre chose.",
+      "Un bon retour est clair et rapide, on apprend sans lire de notice."
+     ],
+     "q": "Quel son de jeu te reste le mieux en mémoire ?",
+     "c": "Joue cinq minutes à un jeu et note trois signaux de retour que tu remarques."
+    },
+    "it": {
+     "t": "Feedback: suoni, luci e punteggi",
+     "g": "Imparare come i giochi ti dicono momento per momento se hai fatto bene.",
+     "p": [
+      "Un tintinnio di moneta o un lampo luminoso dice che è andata bene.",
+      "Un cicalino o uno schermo che trema dice di provare altro.",
+      "Un buon feedback è chiaro e rapido, così impari senza manuale."
+     ],
+     "q": "Quale suono di un gioco ricordi meglio?",
+     "c": "Gioca cinque minuti a un gioco e annota tre segnali di feedback che noti."
+    },
+    "pt": {
+     "t": "Feedback: sons, luzes e pontos",
+     "g": "Aprender como os jogos te dizem a cada momento se fizeste bem.",
+     "p": [
+      "O tilintar de uma moeda ou um clarão diz que algo correu bem.",
+      "Um zumbido ou um ecrã a tremer diz para tentares outra coisa.",
+      "Um bom feedback é claro e rápido, e aprendes sem manual."
+     ],
+     "q": "Que som de um jogo recordas melhor?",
+     "c": "Joga cinco minutos a um jogo e anota três sinais de feedback que notes."
+    },
+    "pt_BR": {
+     "t": "Feedback: sons, luzes e pontos",
+     "g": "Aprender como os jogos dizem a cada momento se você foi bem.",
+     "p": [
+      "O tilintar de uma moeda ou um clarão diz que algo deu certo.",
+      "Um zumbido ou uma tela tremendo diz para tentar outra coisa.",
+      "Um bom feedback é claro e rápido, e você aprende sem manual."
+     ],
+     "q": "Que som de um jogo você lembra melhor?",
+     "c": "Jogue cinco minutos um jogo e anote três sinais de feedback que você notar."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Challenge and flow",
+     "g": "Find the sweet spot between too easy and too hard where time flies.",
+     "p": [
+      "Flow is deep focus when a task matches your skill level.",
+      "Too easy feels boring, and too hard feels stressful.",
+      "Many games adjust difficulty to keep you in that sweet spot."
+     ],
+     "q": "When did a game last make you lose track of time?",
+     "c": "Try a game level and rate it from boring to stressful; aim for the middle."
+    },
+    "de": {
+     "t": "Herausforderung und Flow",
+     "g": "Den Punkt zwischen zu leicht und zu schwer finden, an dem die Zeit verfliegt.",
+     "p": [
+      "Flow ist tiefe Konzentration, wenn eine Aufgabe zu deinem Können passt.",
+      "Zu leicht langweilt, zu schwer stresst.",
+      "Viele Spiele passen den Schwierigkeitsgrad an, damit du im idealen Bereich bleibst."
+     ],
+     "q": "Wann hat dich ein Spiel zuletzt die Zeit vergessen lassen?",
+     "c": "Spiele ein Level und bewerte es von langweilig bis stressig; ziele auf die Mitte."
+    },
+    "es": {
+     "t": "Reto y flujo",
+     "g": "Encontrar el punto entre demasiado fácil y demasiado difícil donde el tiempo vuela.",
+     "p": [
+      "El flujo es una concentración profunda cuando la tarea encaja con tu nivel.",
+      "Demasiado fácil aburre y demasiado difícil estresa.",
+      "Muchos juegos ajustan la dificultad para mantenerte en ese punto ideal."
+     ],
+     "q": "¿Cuándo fue la última vez que un juego te hizo perder la noción del tiempo?",
+     "c": "Prueba un nivel y valóralo de aburrido a estresante; busca el punto medio."
+    },
+    "fr": {
+     "t": "Défi et état de flow",
+     "g": "Trouver le point idéal entre trop facile et trop difficile où le temps file.",
+     "p": [
+      "Le flow est une concentration profonde quand la tâche correspond à ton niveau.",
+      "Trop facile ennuie, trop difficile stresse.",
+      "Beaucoup de jeux ajustent la difficulté pour te garder dans cette zone idéale."
+     ],
+     "q": "Quand un jeu t'a-t-il fait perdre la notion du temps pour la dernière fois ?",
+     "c": "Essaie un niveau et note-le de ennuyeux à stressant ; vise le milieu."
+    },
+    "it": {
+     "t": "Sfida e flow",
+     "g": "Trovare il punto ideale tra troppo facile e troppo difficile in cui il tempo vola.",
+     "p": [
+      "Il flow è una concentrazione profonda quando il compito è adatto alla tua abilità.",
+      "Troppo facile annoia, troppo difficile stressa.",
+      "Molti giochi regolano la difficoltà per tenerti in quel punto ideale."
+     ],
+     "q": "Quando un gioco ti ha fatto perdere la cognizione del tempo l'ultima volta?",
+     "c": "Prova un livello e valutalo da noioso a stressante; punta al centro."
+    },
+    "pt": {
+     "t": "Desafio e fluxo",
+     "g": "Encontrar o ponto ideal entre demasiado fácil e demasiado difícil, onde o tempo voa.",
+     "p": [
+      "O fluxo é uma concentração profunda quando a tarefa combina com a tua habilidade.",
+      "Demasiado fácil aborrece e demasiado difícil stressa.",
+      "Muitos jogos ajustam a dificuldade para te manter nesse ponto ideal."
+     ],
+     "q": "Quando foi a última vez que um jogo te fez perder a noção do tempo?",
+     "c": "Experimenta um nível e avalia-o de aborrecido a stressante; procura o meio."
+    },
+    "pt_BR": {
+     "t": "Desafio e fluxo",
+     "g": "Encontrar o ponto ideal entre fácil demais e difícil demais, onde o tempo voa.",
+     "p": [
+      "O fluxo é uma concentração profunda quando a tarefa combina com sua habilidade.",
+      "Fácil demais entedia e difícil demais estressa.",
+      "Muitos jogos ajustam a dificuldade para manter você nesse ponto ideal."
+     ],
+     "q": "Quando foi a última vez que um jogo fez você perder a noção do tempo?",
+     "c": "Experimente uma fase e avalie de entediante a estressante; busque o meio."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Winning, losing and trying again",
+     "g": "See why failing in games is safe and how retrying builds skill.",
+     "p": [
+      "In games, a mistake costs only a few seconds, so it is safe to learn.",
+      "Each retry teaches you something about timing, patterns or tactics.",
+      "Patience grows when you treat a loss as information."
+     ],
+     "q": "What did you last learn from losing in a game?",
+     "c": "After your next loss, name one thing you will change on the next try."
+    },
+    "de": {
+     "t": "Gewinnen, verlieren und neu versuchen",
+     "g": "Sehen, warum Scheitern im Spiel sicher ist und wie Wiederholen Können aufbaut.",
+     "p": [
+      "Im Spiel kostet ein Fehler nur Sekunden, also lernt es sich sicher.",
+      "Jeder neue Versuch lehrt dich etwas über Timing, Muster oder Taktik.",
+      "Geduld wächst, wenn du eine Niederlage als Information siehst."
+     ],
+     "q": "Was hast du zuletzt aus einer Niederlage im Spiel gelernt?",
+     "c": "Nenne nach deiner nächsten Niederlage eine Sache, die du beim nächsten Versuch änderst."
+    },
+    "es": {
+     "t": "Ganar, perder y volver a intentar",
+     "g": "Ver por qué fallar en un juego es seguro y cómo reintentar mejora tu habilidad.",
+     "p": [
+      "En los juegos un error cuesta solo unos segundos, así que aprender es seguro.",
+      "Cada intento te enseña algo sobre el ritmo, los patrones o la táctica.",
+      "La paciencia crece cuando ves una derrota como información."
+     ],
+     "q": "¿Qué aprendiste la última vez que perdiste en un juego?",
+     "c": "Tras tu próxima derrota, nombra una cosa que cambiarás en el siguiente intento."
+    },
+    "fr": {
+     "t": "Gagner, perdre et réessayer",
+     "g": "Voir pourquoi échouer en jeu est sans risque et comment réessayer fait progresser.",
+     "p": [
+      "Dans un jeu, une erreur coûte quelques secondes, on apprend donc sans danger.",
+      "Chaque essai t'apprend quelque chose sur le rythme, les schémas ou la tactique.",
+      "La patience grandit quand on voit une défaite comme une information."
+     ],
+     "q": "Qu'as-tu appris la dernière fois que tu as perdu dans un jeu ?",
+     "c": "Après ta prochaine défaite, nomme une chose que tu changeras au prochain essai."
+    },
+    "it": {
+     "t": "Vincere, perdere e riprovare",
+     "g": "Vedere perché fallire nei giochi è sicuro e come riprovare fa crescere.",
+     "p": [
+      "Nei giochi un errore costa pochi secondi, quindi imparare è sicuro.",
+      "Ogni tentativo insegna qualcosa su tempismo, schemi o tattica.",
+      "La pazienza cresce quando vedi una sconfitta come un'informazione."
+     ],
+     "q": "Cosa hai imparato l'ultima volta che hai perso in un gioco?",
+     "c": "Dopo la prossima sconfitta, indica una cosa che cambierai al tentativo successivo."
+    },
+    "pt": {
+     "t": "Ganhar, perder e tentar de novo",
+     "g": "Ver porque falhar num jogo é seguro e como repetir melhora a habilidade.",
+     "p": [
+      "Num jogo, um erro custa só segundos, por isso aprender é seguro.",
+      "Cada tentativa ensina algo sobre o tempo, os padrões ou a tática.",
+      "A paciência cresce quando vês uma derrota como informação."
+     ],
+     "q": "O que aprendeste da última vez que perdeste num jogo?",
+     "c": "Depois da tua próxima derrota, diz uma coisa que vais mudar na tentativa seguinte."
+    },
+    "pt_BR": {
+     "t": "Ganhar, perder e tentar de novo",
+     "g": "Ver por que falhar num jogo é seguro e como repetir melhora a habilidade.",
+     "p": [
+      "Num jogo, um erro custa só segundos, então aprender é seguro.",
+      "Cada tentativa ensina algo sobre o tempo, os padrões ou a tática.",
+      "A paciência cresce quando você vê uma derrota como informação."
+     ],
+     "q": "O que você aprendeu da última vez que perdeu num jogo?",
+     "c": "Depois da sua próxima derrota, diga uma coisa que vai mudar na tentativa seguinte."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Single-player and multiplayer",
+     "g": "Compare playing alone with playing together and how each feels.",
+     "p": [
+      "Single-player lets you set your own pace and follow a story.",
+      "Multiplayer adds teamwork, rivalry and surprise from real people.",
+      "Co-op means working together, and versus means competing."
+     ],
+     "q": "Do you prefer playing alone, with friends or both?",
+     "c": "Think of one game that would be better in the other mode and say why."
+    },
+    "de": {
+     "t": "Einzelspieler und Mehrspieler",
+     "g": "Allein spielen und gemeinsam spielen vergleichen und wie sich beides anfühlt.",
+     "p": [
+      "Allein bestimmst du dein Tempo und folgst einer Geschichte.",
+      "Mehrspieler bringt Teamarbeit, Wettstreit und Überraschungen durch echte Menschen.",
+      "Koop heißt zusammenarbeiten, Versus heißt gegeneinander antreten."
+     ],
+     "q": "Spielst du lieber allein, mit Freunden oder beides?",
+     "c": "Überlege dir ein Spiel, das im anderen Modus besser wäre, und begründe es."
+    },
+    "es": {
+     "t": "Un jugador y multijugador",
+     "g": "Comparar jugar solo con jugar en compañía y cómo se siente cada uno.",
+     "p": [
+      "Jugar solo te deja marcar tu ritmo y seguir una historia.",
+      "El multijugador añade trabajo en equipo, rivalidad y sorpresas de personas reales.",
+      "Cooperativo es colaborar y versus es competir."
+     ],
+     "q": "¿Prefieres jugar solo, con amigos o ambas cosas?",
+     "c": "Piensa en un juego que sería mejor en el otro modo y di por qué."
+    },
+    "fr": {
+     "t": "Solo et multijoueur",
+     "g": "Comparer jouer seul et jouer ensemble, et ce que chacun fait ressentir.",
+     "p": [
+      "En solo, tu fixes ton rythme et suis une histoire.",
+      "Le multijoueur apporte esprit d'équipe, rivalité et surprises avec de vraies personnes.",
+      "Le coop, c'est collaborer, et le versus, c'est s'affronter."
+     ],
+     "q": "Tu préfères jouer seul, entre amis ou les deux ?",
+     "c": "Pense à un jeu qui serait meilleur dans l'autre mode et dis pourquoi."
+    },
+    "it": {
+     "t": "Giocatore singolo e multigiocatore",
+     "g": "Confrontare giocare da soli e in compagnia e come si vive ciascuno.",
+     "p": [
+      "Da solo decidi il tuo ritmo e segui una storia.",
+      "Il multigiocatore aggiunge squadra, rivalità e sorprese da persone reali.",
+      "Co-op significa collaborare, versus significa competere."
+     ],
+     "q": "Preferisci giocare da solo, con amici o entrambi?",
+     "c": "Pensa a un gioco che sarebbe meglio nell'altra modalità e spiega perché."
+    },
+    "pt": {
+     "t": "Um jogador e multijogador",
+     "g": "Comparar jogar sozinho com jogar em conjunto e como cada um se sente.",
+     "p": [
+      "A solo defines o teu ritmo e segues uma história.",
+      "O multijogador traz trabalho de equipa, rivalidade e surpresas de pessoas reais.",
+      "Cooperativo é colaborar e versus é competir."
+     ],
+     "q": "Preferes jogar sozinho, com amigos ou ambos?",
+     "c": "Pensa num jogo que seria melhor no outro modo e diz porquê."
+    },
+    "pt_BR": {
+     "t": "Um jogador e multijogador",
+     "g": "Comparar jogar sozinho com jogar junto e como cada um é sentido.",
+     "p": [
+      "Sozinho você define seu ritmo e segue uma história.",
+      "O multijogador traz trabalho em equipe, rivalidade e surpresas de pessoas reais.",
+      "Cooperativo é colaborar e versus é competir."
+     ],
+     "q": "Você prefere jogar sozinho, com amigos ou os dois?",
+     "c": "Pense num jogo que seria melhor no outro modo e diga por quê."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first gaming journal",
+     "g": "Start a simple journal of games played, feelings and ideas.",
+     "p": [
+      "Note the game, how long you played and how you felt afterwards.",
+      "Add one thing you learned or one idea you want to try.",
+      "A few lines a day are plenty, and a phone note works too."
+     ],
+     "q": "What would you like to track in your journal?",
+     "c": "Write your first entry today: game, mood and one thing you noticed."
+    },
+    "de": {
+     "t": "Dein erstes Spieltagebuch",
+     "g": "Ein einfaches Tagebuch über gespielte Spiele, Gefühle und Ideen beginnen.",
+     "p": [
+      "Notiere das Spiel, die Spieldauer und wie du dich danach gefühlt hast.",
+      "Füge etwas hinzu, das du gelernt hast oder ausprobieren willst.",
+      "Ein paar Zeilen am Tag genügen, und eine Handynotiz geht auch."
+     ],
+     "q": "Was möchtest du in deinem Tagebuch festhalten?",
+     "c": "Schreibe heute deinen ersten Eintrag: Spiel, Stimmung und eine Beobachtung."
+    },
+    "es": {
+     "t": "Tu primer diario de juegos",
+     "g": "Empezar un diario sencillo de juegos, sensaciones e ideas.",
+     "p": [
+      "Anota el juego, cuánto jugaste y cómo te sentiste después.",
+      "Añade algo que aprendiste o una idea que quieras probar.",
+      "Unas líneas al día bastan, y una nota del móvil también sirve."
+     ],
+     "q": "¿Qué te gustaría registrar en tu diario?",
+     "c": "Escribe hoy tu primera entrada: juego, ánimo y algo que notaste."
+    },
+    "fr": {
+     "t": "Ton premier carnet de jeu",
+     "g": "Commencer un carnet simple de jeux joués, de ressentis et d'idées.",
+     "p": [
+      "Note le jeu, la durée de jeu et ton humeur ensuite.",
+      "Ajoute une chose apprise ou une idée à essayer.",
+      "Quelques lignes par jour suffisent, et une note sur le téléphone aussi."
+     ],
+     "q": "Que voudrais-tu suivre dans ton carnet ?",
+     "c": "Écris aujourd'hui ta première entrée : jeu, humeur et une observation."
+    },
+    "it": {
+     "t": "Il tuo primo diario di gioco",
+     "g": "Iniziare un semplice diario di giochi, emozioni e idee.",
+     "p": [
+      "Annota il gioco, quanto hai giocato e come ti sei sentito dopo.",
+      "Aggiungi una cosa imparata o un'idea da provare.",
+      "Bastano poche righe al giorno, e va bene anche una nota sul telefono."
+     ],
+     "q": "Cosa vorresti tenere traccia nel tuo diario?",
+     "c": "Scrivi oggi la tua prima voce: gioco, umore e una cosa che hai notato."
+    },
+    "pt": {
+     "t": "O teu primeiro diário de jogo",
+     "g": "Começar um diário simples de jogos, sensações e ideias.",
+     "p": [
+      "Anota o jogo, quanto tempo jogaste e como te sentiste depois.",
+      "Acrescenta algo que aprendeste ou uma ideia que queiras experimentar.",
+      "Poucas linhas por dia chegam, e uma nota no telemóvel também serve."
+     ],
+     "q": "O que gostarias de registar no teu diário?",
+     "c": "Escreve hoje a tua primeira entrada: jogo, humor e algo que notaste."
+    },
+    "pt_BR": {
+     "t": "Seu primeiro diário de jogo",
+     "g": "Começar um diário simples de jogos, sensações e ideias.",
+     "p": [
+      "Anote o jogo, quanto tempo você jogou e como se sentiu depois.",
+      "Acrescente algo que aprendeu ou uma ideia que queira experimentar.",
+      "Poucas linhas por dia bastam, e uma nota no celular também serve."
+     ],
+     "q": "O que você gostaria de registrar no seu diário?",
+     "c": "Escreva hoje sua primeira entrada: jogo, humor e algo que notou."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "coding",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "More maths operators",
+     "g": "Use integer division, remainder and powers.",
+     "p": [
+      "// gives a whole-number division: 7 // 2 is 3.",
+      "% gives the remainder: 7 % 2 is 1, handy to test even or odd.",
+      "** is a power: 2 ** 3 is 8."
+     ],
+     "q": "Where could a remainder help, like splitting items into groups?",
+     "c": "Print 17 // 5 and 17 % 5, then check if 10 is even using % 2."
+    },
+    "de": {
+     "t": "Weitere Rechenoperatoren",
+     "g": "Nutze ganzzahlige Division, Rest und Potenzen.",
+     "p": [
+      "// teilt ganzzahlig: 7 // 2 ergibt 3.",
+      "% liefert den Rest: 7 % 2 ist 1, praktisch für gerade oder ungerade.",
+      "** ist die Potenz: 2 ** 3 ergibt 8."
+     ],
+     "q": "Wo könnte ein Rest helfen, etwa beim Aufteilen in Gruppen?",
+     "c": "Gib 17 // 5 und 17 % 5 aus und prüfe mit % 2, ob 10 gerade ist."
+    },
+    "es": {
+     "t": "Más operadores matemáticos",
+     "g": "Usa división entera, resto y potencias.",
+     "p": [
+      "// da una división entera: 7 // 2 es 3.",
+      "% da el resto: 7 % 2 es 1, útil para saber si es par o impar.",
+      "** es una potencia: 2 ** 3 es 8."
+     ],
+     "q": "¿Dónde te ayudaría un resto, por ejemplo al repartir en grupos?",
+     "c": "Imprime 17 // 5 y 17 % 5, y comprueba si 10 es par usando % 2."
+    },
+    "fr": {
+     "t": "Plus d'opérateurs mathématiques",
+     "g": "Utilise la division entière, le reste et les puissances.",
+     "p": [
+      "// donne une division entière : 7 // 2 vaut 3.",
+      "% donne le reste : 7 % 2 vaut 1, pratique pour tester pair ou impair.",
+      "** est la puissance : 2 ** 3 vaut 8."
+     ],
+     "q": "Où un reste pourrait-il t'aider, par exemple pour répartir en groupes ?",
+     "c": "Affiche 17 // 5 et 17 % 5, puis vérifie que 10 est pair avec % 2."
+    },
+    "it": {
+     "t": "Altri operatori matematici",
+     "g": "Usa divisione intera, resto e potenze.",
+     "p": [
+      "// dà una divisione intera: 7 // 2 fa 3.",
+      "% dà il resto: 7 % 2 fa 1, utile per capire se è pari o dispari.",
+      "** è la potenza: 2 ** 3 fa 8."
+     ],
+     "q": "Dove ti aiuterebbe un resto, ad esempio per dividere in gruppi?",
+     "c": "Stampa 17 // 5 e 17 % 5, poi verifica che 10 sia pari con % 2."
+    },
+    "pt": {
+     "t": "Mais operadores matemáticos",
+     "g": "Usa a divisão inteira, o resto e as potências.",
+     "p": [
+      "// dá uma divisão inteira: 7 // 2 é 3.",
+      "% dá o resto: 7 % 2 é 1, útil para saber se é par ou ímpar.",
+      "** é a potência: 2 ** 3 é 8."
+     ],
+     "q": "Onde te ajudaria um resto, por exemplo ao dividir em grupos?",
+     "c": "Imprime 17 // 5 e 17 % 5 e verifica se 10 é par com % 2."
+    },
+    "pt_BR": {
+     "t": "Mais operadores matemáticos",
+     "g": "Use a divisão inteira, o resto e as potências.",
+     "p": [
+      "// dá uma divisão inteira: 7 // 2 é 3.",
+      "% dá o resto: 7 % 2 é 1, útil para saber se é par ou ímpar.",
+      "** é a potência: 2 ** 3 é 8."
+     ],
+     "q": "Onde um resto te ajudaria, por exemplo ao dividir em grupos?",
+     "c": "Imprima 17 // 5 e 17 % 5 e verifique se 10 é par com % 2."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Strings",
+     "g": "Learn how text is written and joined in code.",
+     "p": [
+      "Text in code is a string, written between quotes: 'hello'.",
+      "Single or double quotes both work, just stay consistent.",
+      "Use + to join strings: 'Good ' + 'day' makes 'Good day'."
+     ],
+     "q": "What short phrase would you like your program to say to you?",
+     "c": "Join first and last name variables with a space between and print the full name."
+    },
+    "de": {
+     "t": "Strings",
+     "g": "Lerne, wie Text im Code geschrieben und verbunden wird.",
+     "p": [
+      "Text im Code heißt String und steht in Anführungszeichen: 'hello'.",
+      "Einfache oder doppelte Anführungszeichen gehen, bleibe nur konsequent.",
+      "Mit + verbindest du Strings: 'Good ' + 'day' ergibt 'Good day'."
+     ],
+     "q": "Welchen kurzen Satz soll dein Programm zu dir sagen?",
+     "c": "Verbinde Vor- und Nachname in Variablen mit einem Leerzeichen und gib den vollen Namen aus."
+    },
+    "es": {
+     "t": "Cadenas de texto",
+     "g": "Aprende cómo se escribe y se une el texto en el código.",
+     "p": [
+      "El texto en el código es una cadena (string), entre comillas: 'hello'.",
+      "Valen comillas simples o dobles, solo sé consistente.",
+      "Usa + para unir cadenas: 'Good ' + 'day' da 'Good day'."
+     ],
+     "q": "¿Qué frase corta te gustaría que tu programa te dijera?",
+     "c": "Une las variables de nombre y apellido con un espacio y imprime el nombre completo."
+    },
+    "fr": {
+     "t": "Les chaînes de caractères",
+     "g": "Apprends comment le texte s'écrit et se joint dans le code.",
+     "p": [
+      "Le texte dans le code est une chaîne (string), entre guillemets : 'hello'.",
+      "Guillemets simples ou doubles fonctionnent, sois simplement cohérent.",
+      "Utilise + pour joindre : 'Good ' + 'day' donne 'Good day'."
+     ],
+     "q": "Quelle courte phrase aimerais-tu que ton programme te dise ?",
+     "c": "Joins les variables prénom et nom avec une espace et affiche le nom complet."
+    },
+    "it": {
+     "t": "Le stringhe",
+     "g": "Impara come si scrive e si unisce il testo nel codice.",
+     "p": [
+      "Il testo nel codice è una stringa, tra apici: 'hello'.",
+      "Vanno bene apici singoli o doppi, basta essere coerenti.",
+      "Usa + per unire: 'Good ' + 'day' dà 'Good day'."
+     ],
+     "q": "Quale breve frase vorresti che il tuo programma ti dicesse?",
+     "c": "Unisci le variabili nome e cognome con uno spazio e stampa il nome completo."
+    },
+    "pt": {
+     "t": "Strings",
+     "g": "Aprende como se escreve e se junta texto no código.",
+     "p": [
+      "O texto no código é uma string, entre aspas: 'hello'.",
+      "Aspas simples ou duplas funcionam, só tens de ser consistente.",
+      "Usa + para juntar: 'Good ' + 'day' dá 'Good day'."
+     ],
+     "q": "Que frase curta gostarias que o teu programa te dissesse?",
+     "c": "Junta as variáveis de nome e apelido com um espaço e imprime o nome completo."
+    },
+    "pt_BR": {
+     "t": "Strings",
+     "g": "Aprenda como o texto é escrito e juntado no código.",
+     "p": [
+      "Texto no código é uma string, entre aspas: 'hello'.",
+      "Aspas simples ou duplas funcionam, só seja consistente.",
+      "Use + para juntar: 'Good ' + 'day' dá 'Good day'."
+     ],
+     "q": "Que frase curta você gostaria que seu programa te dissesse?",
+     "c": "Junte as variáveis de nome e sobrenome com um espaço e imprima o nome completo."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "String tricks",
+     "g": "Change case, measure length and find words in text.",
+     "p": [
+      "len(text) counts characters; text.upper() makes capitals.",
+      "text.lower() makes lowercase, and text.title() capitalises each word.",
+      "'cat' in 'concatenate' checks if a word hides inside another."
+     ],
+     "q": "Which word do you think hides the most smaller words inside it?",
+     "c": "Take the text 'python is fun', print it in capitals and print its length."
+    },
+    "de": {
+     "t": "String-Tricks",
+     "g": "Ändere Groß-/Kleinschreibung, miss Länge und suche Wörter im Text.",
+     "p": [
+      "len(text) zählt Zeichen; text.upper() macht Großbuchstaben.",
+      "text.lower() macht klein, text.title() schreibt jedes Wort groß.",
+      "'cat' in 'concatenate' prüft, ob ein Wort in einem anderen steckt."
+     ],
+     "q": "Welches Wort versteckt wohl die meisten kleineren Wörter?",
+     "c": "Nimm den Text 'python is fun', gib ihn in Großbuchstaben und seine Länge aus."
+    },
+    "es": {
+     "t": "Trucos con cadenas",
+     "g": "Cambia mayúsculas, mide la longitud y busca palabras en un texto.",
+     "p": [
+      "len(text) cuenta caracteres; text.upper() pasa a mayúsculas.",
+      "text.lower() pasa a minúsculas y text.title() capitaliza cada palabra.",
+      "'cat' in 'concatenate' comprueba si una palabra está dentro de otra."
+     ],
+     "q": "¿Qué palabra crees que esconde más palabras pequeñas dentro?",
+     "c": "Toma el texto 'python is fun', imprímelo en mayúsculas y su longitud."
+    },
+    "fr": {
+     "t": "Astuces avec les chaînes",
+     "g": "Change la casse, mesure la longueur et cherche des mots dans un texte.",
+     "p": [
+      "len(text) compte les caractères ; text.upper() met en majuscules.",
+      "text.lower() met en minuscules, text.title() met une majuscule à chaque mot.",
+      "'cat' in 'concatenate' vérifie si un mot se cache dans un autre."
+     ],
+     "q": "Quel mot cache selon toi le plus de petits mots ?",
+     "c": "Prends le texte 'python is fun', affiche-le en majuscules ainsi que sa longueur."
+    },
+    "it": {
+     "t": "Trucchi con le stringhe",
+     "g": "Cambia maiuscole, misura la lunghezza e cerca parole nel testo.",
+     "p": [
+      "len(text) conta i caratteri; text.upper() mette le maiuscole.",
+      "text.lower() mette le minuscole, text.title() capitalizza ogni parola.",
+      "'cat' in 'concatenate' controlla se una parola si nasconde in un'altra."
+     ],
+     "q": "Quale parola pensi nasconda più parole piccole al suo interno?",
+     "c": "Prendi il testo 'python is fun', stampalo in maiuscolo e stampa la sua lunghezza."
+    },
+    "pt": {
+     "t": "Truques com strings",
+     "g": "Muda maiúsculas, mede o tamanho e procura palavras num texto.",
+     "p": [
+      "len(text) conta caracteres; text.upper() passa a maiúsculas.",
+      "text.lower() passa a minúsculas e text.title() capitaliza cada palavra.",
+      "'cat' in 'concatenate' verifica se uma palavra está dentro de outra."
+     ],
+     "q": "Que palavra achas que esconde mais palavras pequenas?",
+     "c": "Pega no texto 'python is fun', imprime-o em maiúsculas e o seu tamanho."
+    },
+    "pt_BR": {
+     "t": "Truques com strings",
+     "g": "Mude maiúsculas, meça o tamanho e procure palavras num texto.",
+     "p": [
+      "len(text) conta caracteres; text.upper() passa para maiúsculas.",
+      "text.lower() passa para minúsculas e text.title() capitaliza cada palavra.",
+      "'cat' in 'concatenate' verifica se uma palavra está dentro de outra."
+     ],
+     "q": "Que palavra você acha que esconde mais palavras pequenas?",
+     "c": "Pegue o texto 'python is fun', imprima em maiúsculas e o seu tamanho."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Formatting output",
+     "g": "Put variables inside text neatly with f-strings.",
+     "p": [
+      "Write f before the quotes: f'Hi {name}' fills in the variable.",
+      "Anything inside curly brackets is calculated: f'{2 + 3}' shows 5.",
+      "F-strings are easier to read than joining many pieces with +."
+     ],
+     "q": "What sentence about you could a program build from variables?",
+     "c": "Make name and age variables and print: My name is ... and I am ... years old."
+    },
+    "de": {
+     "t": "Ausgabe formatieren",
+     "g": "Setze Variablen mit f-Strings sauber in Text ein.",
+     "p": [
+      "Schreibe f vor die Anführungszeichen: f'Hi {name}' setzt die Variable ein.",
+      "Alles in geschweiften Klammern wird berechnet: f'{2 + 3}' zeigt 5.",
+      "F-Strings sind lesbarer, als viele Teile mit + zu verbinden."
+     ],
+     "q": "Welchen Satz über dich könnte ein Programm aus Variablen bauen?",
+     "c": "Lege name und age an und gib aus: My name is ... and I am ... years old."
+    },
+    "es": {
+     "t": "Dar formato a la salida",
+     "g": "Inserta variables en el texto con f-strings.",
+     "p": [
+      "Escribe f antes de las comillas: f'Hi {name}' rellena la variable.",
+      "Lo que va entre llaves se calcula: f'{2 + 3}' muestra 5.",
+      "Los f-strings se leen mejor que unir muchas piezas con +."
+     ],
+     "q": "¿Qué frase sobre ti podría construir un programa con variables?",
+     "c": "Crea name y age e imprime: My name is ... and I am ... years old."
+    },
+    "fr": {
+     "t": "Mettre en forme l'affichage",
+     "g": "Insère des variables dans du texte avec les f-strings.",
+     "p": [
+      "Écris f avant les guillemets : f'Hi {name}' insère la variable.",
+      "Ce qui est entre accolades est calculé : f'{2 + 3}' affiche 5.",
+      "Les f-strings sont plus lisibles que de joindre plein de morceaux avec +."
+     ],
+     "q": "Quelle phrase sur toi un programme pourrait-il construire avec des variables ?",
+     "c": "Crée name et age puis affiche : My name is ... and I am ... years old."
+    },
+    "it": {
+     "t": "Formattare l'output",
+     "g": "Inserisci variabili nel testo con le f-string.",
+     "p": [
+      "Scrivi f prima degli apici: f'Hi {name}' inserisce la variabile.",
+      "Ciò che sta tra graffe viene calcolato: f'{2 + 3}' mostra 5.",
+      "Le f-string sono più leggibili che unire tanti pezzi con +."
+     ],
+     "q": "Quale frase su di te potrebbe costruire un programma con variabili?",
+     "c": "Crea name e age e stampa: My name is ... and I am ... years old."
+    },
+    "pt": {
+     "t": "Formatar a saída",
+     "g": "Mete variáveis no texto com f-strings.",
+     "p": [
+      "Escreve f antes das aspas: f'Hi {name}' preenche a variável.",
+      "O que está entre chavetas é calculado: f'{2 + 3}' mostra 5.",
+      "As f-strings leem-se melhor do que juntar muitas peças com +."
+     ],
+     "q": "Que frase sobre ti podia um programa construir com variáveis?",
+     "c": "Cria name e age e imprime: My name is ... and I am ... years old."
+    },
+    "pt_BR": {
+     "t": "Formatando a saída",
+     "g": "Coloque variáveis no texto com f-strings.",
+     "p": [
+      "Escreva f antes das aspas: f'Hi {name}' preenche a variável.",
+      "O que está entre chaves é calculado: f'{2 + 3}' mostra 5.",
+      "F-strings são mais legíveis do que juntar várias peças com +."
+     ],
+     "q": "Que frase sobre você um programa poderia montar com variáveis?",
+     "c": "Crie name e age e imprima: My name is ... and I am ... years old."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Getting user input",
+     "g": "Ask the user a question and keep the answer.",
+     "p": [
+      "input('Your name? ') pauses and waits for the user to type.",
+      "Store the answer: name = input('Your name? ')",
+      "Whatever is typed always arrives as text, even digits."
+     ],
+     "q": "What question would make your program feel friendly?",
+     "c": "Ask for a name and a favourite colour, then print a sentence using both."
+    },
+    "de": {
+     "t": "Eingaben vom Nutzer",
+     "g": "Stelle dem Nutzer eine Frage und merke dir die Antwort.",
+     "p": [
+      "input('Your name? ') hält an und wartet auf die Eingabe.",
+      "Speichere die Antwort: name = input('Your name? ')",
+      "Alles Eingegebene kommt als Text an, auch Ziffern."
+     ],
+     "q": "Welche Frage würde dein Programm freundlich wirken lassen?",
+     "c": "Frage nach Namen und Lieblingsfarbe und gib einen Satz mit beidem aus."
+    },
+    "es": {
+     "t": "Recibir datos del usuario",
+     "g": "Haz una pregunta al usuario y guarda la respuesta.",
+     "p": [
+      "input('Your name? ') se pausa y espera a que el usuario escriba.",
+      "Guarda la respuesta: name = input('Your name? ')",
+      "Lo que se escribe llega siempre como texto, incluso los dígitos."
+     ],
+     "q": "¿Qué pregunta haría tu programa más amable?",
+     "c": "Pide un nombre y un color favorito e imprime una frase con ambos."
+    },
+    "fr": {
+     "t": "Récupérer la saisie",
+     "g": "Pose une question à l'utilisateur et garde sa réponse.",
+     "p": [
+      "input('Your name? ') s'arrête et attend que l'utilisateur écrive.",
+      "Garde la réponse : name = input('Your name? ')",
+      "Tout ce qui est saisi arrive comme du texte, même les chiffres."
+     ],
+     "q": "Quelle question rendrait ton programme sympathique ?",
+     "c": "Demande un prénom et une couleur préférée, puis affiche une phrase avec les deux."
+    },
+    "it": {
+     "t": "Ricevere dati dall'utente",
+     "g": "Fai una domanda all'utente e conserva la risposta.",
+     "p": [
+      "input('Your name? ') si ferma e aspetta che l'utente scriva.",
+      "Salva la risposta: name = input('Your name? ')",
+      "Ciò che si scrive arriva sempre come testo, anche le cifre."
+     ],
+     "q": "Quale domanda renderebbe amichevole il tuo programma?",
+     "c": "Chiedi un nome e un colore preferito, poi stampa una frase con entrambi."
+    },
+    "pt": {
+     "t": "Receber dados do utilizador",
+     "g": "Faz uma pergunta ao utilizador e guarda a resposta.",
+     "p": [
+      "input('Your name? ') pára e espera que o utilizador escreva.",
+      "Guarda a resposta: name = input('Your name? ')",
+      "O que se escreve chega sempre como texto, mesmo os dígitos."
+     ],
+     "q": "Que pergunta tornaria o teu programa simpático?",
+     "c": "Pede um nome e uma cor favorita e imprime uma frase com ambos."
+    },
+    "pt_BR": {
+     "t": "Recebendo dados do usuário",
+     "g": "Faça uma pergunta ao usuário e guarde a resposta.",
+     "p": [
+      "input('Your name? ') pausa e espera o usuário digitar.",
+      "Guarde a resposta: name = input('Your name? ')",
+      "O que é digitado sempre chega como texto, até os dígitos."
+     ],
+     "q": "Que pergunta deixaria seu programa simpático?",
+     "c": "Peça um nome e uma cor favorita e imprima uma frase com os dois."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Converting types",
+     "g": "Turn text into numbers and back without errors.",
+     "p": [
+      "int('5') turns text into a whole number; float('2.5') into a decimal.",
+      "str(5) turns a number into text so it can join other text.",
+      "'5' + 3 causes an error because text and numbers do not mix."
+     ],
+     "q": "Have you ever mixed up two things that looked the same but were not?",
+     "c": "Ask for two numbers with input, convert them with int and print their sum."
+    },
+    "de": {
+     "t": "Typen umwandeln",
+     "g": "Wandle Text in Zahlen um und zurück, ohne Fehler.",
+     "p": [
+      "int('5') macht aus Text eine ganze Zahl; float('2.5') eine Dezimalzahl.",
+      "str(5) macht aus einer Zahl Text, damit sie sich mit Text verbinden lässt.",
+      "'5' + 3 erzeugt einen Fehler, weil Text und Zahlen sich nicht mischen."
+     ],
+     "q": "Hast du schon mal zwei ähnlich aussehende Dinge verwechselt?",
+     "c": "Frage mit input nach zwei Zahlen, wandle sie mit int um und gib die Summe aus."
+    },
+    "es": {
+     "t": "Convertir tipos",
+     "g": "Convierte texto en números y al revés sin errores.",
+     "p": [
+      "int('5') convierte texto en entero; float('2.5') en decimal.",
+      "str(5) convierte un número en texto para unirlo con otro texto.",
+      "'5' + 3 da error porque texto y números no se mezclan."
+     ],
+     "q": "¿Alguna vez confundiste dos cosas que se veían iguales pero no lo eran?",
+     "c": "Pide dos números con input, conviértelos con int e imprime su suma."
+    },
+    "fr": {
+     "t": "Convertir les types",
+     "g": "Transforme du texte en nombres et inversement sans erreur.",
+     "p": [
+      "int('5') transforme du texte en entier ; float('2.5') en décimal.",
+      "str(5) transforme un nombre en texte pour le joindre à un autre texte.",
+      "'5' + 3 provoque une erreur, car texte et nombres ne se mélangent pas."
+     ],
+     "q": "As-tu déjà confondu deux choses qui se ressemblaient mais étaient différentes ?",
+     "c": "Demande deux nombres avec input, convertis-les avec int et affiche leur somme."
+    },
+    "it": {
+     "t": "Convertire i tipi",
+     "g": "Trasforma testo in numeri e viceversa senza errori.",
+     "p": [
+      "int('5') trasforma il testo in intero; float('2.5') in decimale.",
+      "str(5) trasforma un numero in testo per unirlo ad altro testo.",
+      "'5' + 3 dà errore perché testo e numeri non si mescolano."
+     ],
+     "q": "Ti è mai capitato di confondere due cose uguali all'apparenza ma diverse?",
+     "c": "Chiedi due numeri con input, convertili con int e stampa la somma."
+    },
+    "pt": {
+     "t": "Converter tipos",
+     "g": "Transforma texto em números e vice-versa sem erros.",
+     "p": [
+      "int('5') transforma texto em inteiro; float('2.5') em decimal.",
+      "str(5) transforma um número em texto para o juntar a outro texto.",
+      "'5' + 3 dá erro porque texto e números não se misturam."
+     ],
+     "q": "Já confundiste duas coisas que pareciam iguais mas não eram?",
+     "c": "Pede dois números com input, converte-os com int e imprime a soma."
+    },
+    "pt_BR": {
+     "t": "Convertendo tipos",
+     "g": "Transforme texto em números e vice-versa sem erros.",
+     "p": [
+      "int('5') transforma texto em inteiro; float('2.5') em decimal.",
+      "str(5) transforma um número em texto para juntá-lo a outro texto.",
+      "'5' + 3 dá erro porque texto e números não se misturam."
+     ],
+     "q": "Você já confundiu duas coisas que pareciam iguais mas não eram?",
+     "c": "Peça dois números com input, converta-os com int e imprima a soma."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Booleans",
+     "g": "Meet True and False, the values behind every decision.",
+     "p": [
+      "A boolean has only two values: True or False, with capital letters.",
+      "Programs use booleans to decide what to do next.",
+      "You can store one: is_sunny = True, then use it later."
+     ],
+     "q": "What is one yes-or-no fact about your day today?",
+     "c": "Create two boolean variables about yourself, like likes_pizza, and print them."
+    },
+    "de": {
+     "t": "Wahrheitswerte",
+     "g": "Lerne True und False kennen, die Werte hinter jeder Entscheidung.",
+     "p": [
+      "Ein Boolean hat nur zwei Werte: True oder False, groß geschrieben.",
+      "Programme nutzen Booleans, um zu entscheiden, was als Nächstes passiert.",
+      "Du kannst einen speichern: is_sunny = True und später verwenden."
+     ],
+     "q": "Welche Ja-Nein-Tatsache gilt heute für deinen Tag?",
+     "c": "Erstelle zwei Boolean-Variablen über dich, etwa likes_pizza, und gib sie aus."
+    },
+    "es": {
+     "t": "Booleanos",
+     "g": "Conoce True y False, los valores detrás de cada decisión.",
+     "p": [
+      "Un booleano solo tiene dos valores: True o False, con mayúscula.",
+      "Los programas usan booleanos para decidir qué hacer después.",
+      "Puedes guardar uno: is_sunny = True y usarlo luego."
+     ],
+     "q": "¿Qué dato de sí o no describe tu día de hoy?",
+     "c": "Crea dos variables booleanas sobre ti, como likes_pizza, e imprímelas."
+    },
+    "fr": {
+     "t": "Les booléens",
+     "g": "Découvre True et False, les valeurs derrière chaque décision.",
+     "p": [
+      "Un booléen n'a que deux valeurs : True ou False, avec majuscule.",
+      "Les programmes utilisent les booléens pour décider quoi faire ensuite.",
+      "Tu peux en stocker un : is_sunny = True, puis l'utiliser."
+     ],
+     "q": "Quel fait en oui ou non décrit ta journée aujourd'hui ?",
+     "c": "Crée deux variables booléennes sur toi, comme likes_pizza, et affiche-les."
+    },
+    "it": {
+     "t": "I booleani",
+     "g": "Conosci True e False, i valori dietro ogni decisione.",
+     "p": [
+      "Un booleano ha solo due valori: True o False, con la maiuscola.",
+      "I programmi usano i booleani per decidere cosa fare dopo.",
+      "Puoi salvarne uno: is_sunny = True e usarlo più tardi."
+     ],
+     "q": "Quale fatto da sì o no descrive la tua giornata oggi?",
+     "c": "Crea due variabili booleane su di te, come likes_pizza, e stampale."
+    },
+    "pt": {
+     "t": "Booleanos",
+     "g": "Conhece True e False, os valores por trás de cada decisão.",
+     "p": [
+      "Um booleano só tem dois valores: True ou False, com maiúscula.",
+      "Os programas usam booleanos para decidir o que fazer a seguir.",
+      "Podes guardar um: is_sunny = True e usá-lo mais tarde."
+     ],
+     "q": "Que facto de sim ou não descreve o teu dia de hoje?",
+     "c": "Cria duas variáveis booleanas sobre ti, como likes_pizza, e imprime-as."
+    },
+    "pt_BR": {
+     "t": "Booleanos",
+     "g": "Conheça True e False, os valores por trás de cada decisão.",
+     "p": [
+      "Um booleano só tem dois valores: True ou False, com maiúscula.",
+      "Os programas usam booleanos para decidir o que fazer em seguida.",
+      "Você pode guardar um: is_sunny = True e usar depois."
+     ],
+     "q": "Que fato de sim ou não descreve o seu dia de hoje?",
+     "c": "Crie duas variáveis booleanas sobre você, como likes_pizza, e imprima."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Comparisons",
+     "g": "Ask yes-or-no questions with comparison operators.",
+     "p": [
+      "== asks if two values are equal; != asks if they differ.",
+      "> and < compare size; >= and <= include equal values.",
+      "The result of a comparison is always True or False."
+     ],
+     "q": "Which comparison would you make about your age, like older than 18?",
+     "c": "Print the results of 5 > 3, 2 == 2.0 and 'a' != 'b' and check each guess."
+    },
+    "de": {
+     "t": "Vergleiche",
+     "g": "Stelle Ja-Nein-Fragen mit Vergleichsoperatoren.",
+     "p": [
+      "== fragt, ob zwei Werte gleich sind; != fragt, ob sie verschieden sind.",
+      "> und < vergleichen die Größe; >= und <= schließen Gleichheit ein.",
+      "Das Ergebnis eines Vergleichs ist immer True oder False."
+     ],
+     "q": "Welchen Vergleich würdest du mit deinem Alter machen, etwa älter als 18?",
+     "c": "Gib die Ergebnisse von 5 > 3, 2 == 2.0 und 'a' != 'b' aus und prüfe deine Tipps."
+    },
+    "es": {
+     "t": "Comparaciones",
+     "g": "Haz preguntas de sí o no con operadores de comparación.",
+     "p": [
+      "== pregunta si dos valores son iguales; != si son distintos.",
+      "> y < comparan tamaño; >= y <= incluyen la igualdad.",
+      "El resultado de una comparación es siempre True o False."
+     ],
+     "q": "¿Qué comparación harías con tu edad, como ser mayor de 18?",
+     "c": "Imprime los resultados de 5 > 3, 2 == 2.0 y 'a' != 'b' y comprueba tus apuestas."
+    },
+    "fr": {
+     "t": "Les comparaisons",
+     "g": "Pose des questions oui ou non avec les opérateurs de comparaison.",
+     "p": [
+      "== demande si deux valeurs sont égales ; != si elles sont différentes.",
+      "> et < comparent la taille ; >= et <= incluent l'égalité.",
+      "Le résultat d'une comparaison est toujours True ou False."
+     ],
+     "q": "Quelle comparaison ferais-tu avec ton âge, comme être majeur ?",
+     "c": "Affiche les résultats de 5 > 3, 2 == 2.0 et 'a' != 'b' et vérifie tes prévisions."
+    },
+    "it": {
+     "t": "I confronti",
+     "g": "Fai domande da sì o no con gli operatori di confronto.",
+     "p": [
+      "== chiede se due valori sono uguali; != se sono diversi.",
+      "> e < confrontano la grandezza; >= e <= includono l'uguaglianza.",
+      "Il risultato di un confronto è sempre True o False."
+     ],
+     "q": "Quale confronto faresti con la tua età, ad esempio essere maggiorenne?",
+     "c": "Stampa i risultati di 5 > 3, 2 == 2.0 e 'a' != 'b' e verifica le tue previsioni."
+    },
+    "pt": {
+     "t": "Comparações",
+     "g": "Faz perguntas de sim ou não com operadores de comparação.",
+     "p": [
+      "== pergunta se dois valores são iguais; != se são diferentes.",
+      "> e < comparam o tamanho; >= e <= incluem a igualdade.",
+      "O resultado de uma comparação é sempre True ou False."
+     ],
+     "q": "Que comparação farias com a tua idade, como ser maior de 18?",
+     "c": "Imprime os resultados de 5 > 3, 2 == 2.0 e 'a' != 'b' e confirma os teus palpites."
+    },
+    "pt_BR": {
+     "t": "Comparações",
+     "g": "Faça perguntas de sim ou não com operadores de comparação.",
+     "p": [
+      "== pergunta se dois valores são iguais; != se são diferentes.",
+      "> e < comparam o tamanho; >= e <= incluem a igualdade.",
+      "O resultado de uma comparação é sempre True ou False."
+     ],
+     "q": "Que comparação você faria com sua idade, como ser maior de 18?",
+     "c": "Imprima os resultados de 5 > 3, 2 == 2.0 e 'a' != 'b' e confira seus palpites."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "If statements",
+     "g": "Make your program choose what to do.",
+     "p": [
+      "if runs its block only when the condition is True.",
+      "The line ends with a colon, and the block below is indented.",
+      "Example: if age >= 18: print('Adult')"
+     ],
+     "q": "What decision do you make every morning that a program could copy?",
+     "c": "Ask for a temperature number and print 'Take a coat' if it is below 15."
+    },
+    "de": {
+     "t": "If-Anweisungen",
+     "g": "Lass dein Programm entscheiden, was es tut.",
+     "p": [
+      "if führt seinen Block nur aus, wenn die Bedingung True ist.",
+      "Die Zeile endet mit Doppelpunkt, der Block darunter ist eingerückt.",
+      "Beispiel: if age >= 18: print('Adult')"
+     ],
+     "q": "Welche Entscheidung triffst du jeden Morgen, die ein Programm nachahmen könnte?",
+     "c": "Frage nach einer Temperatur und gib 'Take a coat' aus, wenn sie unter 15 liegt."
+    },
+    "es": {
+     "t": "Sentencias if",
+     "g": "Haz que tu programa elija qué hacer.",
+     "p": [
+      "if ejecuta su bloque solo si la condición es True.",
+      "La línea termina con dos puntos y el bloque de abajo va con sangría.",
+      "Ejemplo: if age >= 18: print('Adult')"
+     ],
+     "q": "¿Qué decisión tomas cada mañana que un programa podría copiar?",
+     "c": "Pide una temperatura e imprime 'Take a coat' si es menor de 15."
+    },
+    "fr": {
+     "t": "Les instructions if",
+     "g": "Fais choisir ton programme selon la situation.",
+     "p": [
+      "if n'exécute son bloc que si la condition est True.",
+      "La ligne finit par deux-points et le bloc dessous est indenté.",
+      "Exemple : if age >= 18: print('Adult')"
+     ],
+     "q": "Quelle décision prends-tu chaque matin qu'un programme pourrait copier ?",
+     "c": "Demande une température et affiche 'Take a coat' si elle est sous 15."
+    },
+    "it": {
+     "t": "Le istruzioni if",
+     "g": "Fai scegliere al programma cosa fare.",
+     "p": [
+      "if esegue il suo blocco solo se la condizione è True.",
+      "La riga finisce con i due punti e il blocco sotto è indentato.",
+      "Esempio: if age >= 18: print('Adult')"
+     ],
+     "q": "Quale decisione prendi ogni mattina che un programma potrebbe copiare?",
+     "c": "Chiedi una temperatura e stampa 'Take a coat' se è sotto 15."
+    },
+    "pt": {
+     "t": "Instruções if",
+     "g": "Faz o programa escolher o que fazer.",
+     "p": [
+      "if só executa o seu bloco quando a condição é True.",
+      "A linha termina com dois pontos e o bloco abaixo fica indentado.",
+      "Exemplo: if age >= 18: print('Adult')"
+     ],
+     "q": "Que decisão tomas todas as manhãs que um programa podia copiar?",
+     "c": "Pede uma temperatura e imprime 'Take a coat' se for inferior a 15."
+    },
+    "pt_BR": {
+     "t": "Instruções if",
+     "g": "Faça o programa escolher o que fazer.",
+     "p": [
+      "if só executa seu bloco quando a condição é True.",
+      "A linha termina com dois-pontos e o bloco abaixo fica indentado.",
+      "Exemplo: if age >= 18: print('Adult')"
+     ],
+     "q": "Que decisão você toma toda manhã que um programa poderia copiar?",
+     "c": "Peça uma temperatura e imprima 'Take a coat' se for menor que 15."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Else and elif",
+     "g": "Handle several cases with a clear chain of choices.",
+     "p": [
+      "else runs when the if condition was False.",
+      "elif adds extra checks, tested in order from top to bottom.",
+      "Only the first matching block runs, then Python skips the rest."
+     ],
+     "q": "How would you grade a score: what ranges would you pick?",
+     "c": "Write a grade program: 90 or more prints A, 70 or more B, otherwise C."
+    },
+    "de": {
+     "t": "Else und elif",
+     "g": "Behandle mehrere Fälle mit einer klaren Kette von Entscheidungen.",
+     "p": [
+      "else läuft, wenn die if-Bedingung False war.",
+      "elif fügt weitere Prüfungen hinzu, die von oben nach unten getestet werden.",
+      "Nur der erste passende Block läuft, den Rest überspringt Python."
+     ],
+     "q": "Wie würdest du Punkte benoten: welche Bereiche wählst du?",
+     "c": "Schreibe ein Notenprogramm: ab 90 A, ab 70 B, sonst C."
+    },
+    "es": {
+     "t": "Else y elif",
+     "g": "Gestiona varios casos con una cadena clara de decisiones.",
+     "p": [
+      "else se ejecuta cuando la condición del if fue False.",
+      "elif añade comprobaciones extra, probadas de arriba abajo.",
+      "Solo se ejecuta el primer bloque que cumple; Python salta el resto."
+     ],
+     "q": "¿Cómo calificarías una puntuación: qué rangos elegirías?",
+     "c": "Escribe un programa de notas: 90 o más imprime A, 70 o más B, si no C."
+    },
+    "fr": {
+     "t": "Else et elif",
+     "g": "Gère plusieurs cas avec une chaîne claire de choix.",
+     "p": [
+      "else s'exécute quand la condition du if était False.",
+      "elif ajoute d'autres tests, vérifiés de haut en bas.",
+      "Seul le premier bloc valide s'exécute, Python saute le reste."
+     ],
+     "q": "Comment noterais-tu un score : quelles tranches choisirais-tu ?",
+     "c": "Écris un programme de notes : 90 ou plus affiche A, 70 ou plus B, sinon C."
+    },
+    "it": {
+     "t": "Else ed elif",
+     "g": "Gestisci più casi con una catena chiara di scelte.",
+     "p": [
+      "else si esegue quando la condizione dell'if era False.",
+      "elif aggiunge altri controlli, verificati dall'alto in basso.",
+      "Si esegue solo il primo blocco valido, Python salta il resto."
+     ],
+     "q": "Come valuteresti un punteggio: quali fasce sceglieresti?",
+     "c": "Scrivi un programma di voti: 90 o più stampa A, 70 o più B, altrimenti C."
+    },
+    "pt": {
+     "t": "Else e elif",
+     "g": "Trata vários casos com uma cadeia clara de escolhas.",
+     "p": [
+      "else corre quando a condição do if foi False.",
+      "elif acrescenta mais verificações, testadas de cima para baixo.",
+      "Só corre o primeiro bloco válido; o Python salta o resto."
+     ],
+     "q": "Como classificarias uma pontuação: que intervalos escolherias?",
+     "c": "Escreve um programa de notas: 90 ou mais imprime A, 70 ou mais B, senão C."
+    },
+    "pt_BR": {
+     "t": "Else e elif",
+     "g": "Trate vários casos com uma cadeia clara de escolhas.",
+     "p": [
+      "else roda quando a condição do if foi False.",
+      "elif acrescenta mais verificações, testadas de cima para baixo.",
+      "Só roda o primeiro bloco válido; o Python pula o resto."
+     ],
+     "q": "Como você classificaria uma pontuação: que faixas escolheria?",
+     "c": "Escreva um programa de notas: 90 ou mais imprime A, 70 ou mais B, senão C."
+    }
+   }
+  }
+ ]
+}

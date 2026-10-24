@@ -1,0 +1,835 @@
+{
+ "topic": "robotics",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your electronics toolkit",
+     "g": "Look back at what you know before meeting microcontrollers.",
+     "p": [
+      "You can describe voltage, current and resistance, and link them with Ohm's law.",
+      "You know common parts: resistors, LEDs, capacitors, diodes and transistors.",
+      "You know your tools, the breadboard, the multimeter and safe soldering habits."
+     ],
+     "q": "Which topic so far felt easiest, and which would you like to revisit?",
+     "c": "Build the LED circuit again from memory, then check it with a multimeter."
+    },
+    "de": {
+     "t": "Rückblick: dein Elektronik-Werkzeugkasten",
+     "g": "Blicke zurück auf dein Wissen, bevor du Mikrocontroller kennenlernst.",
+     "p": [
+      "Du kannst Spannung, Strom und Widerstand beschreiben und mit dem Ohmschen Gesetz verbinden.",
+      "Du kennst gängige Teile: Widerstände, LEDs, Kondensatoren, Dioden und Transistoren.",
+      "Du kennst Werkzeuge, Steckbrett, Multimeter und sichere Lötgewohnheiten."
+     ],
+     "q": "Welches Thema fiel dir bisher am leichtesten, welches möchtest du wiederholen?",
+     "c": "Baue die LED-Schaltung aus dem Gedächtnis nach und prüfe sie mit dem Multimeter."
+    },
+    "es": {
+     "t": "Repaso: tu caja de herramientas de electrónica",
+     "g": "Mira atrás lo que sabes antes de conocer los microcontroladores.",
+     "p": [
+      "Sabes describir voltaje, corriente y resistencia y unirlos con la ley de Ohm.",
+      "Conoces piezas comunes: resistencias, LED, condensadores, diodos y transistores.",
+      "Conoces las herramientas, la placa de pruebas, el multímetro y hábitos seguros de soldadura."
+     ],
+     "q": "¿Qué tema te resultó más fácil hasta ahora y cuál te gustaría repasar?",
+     "c": "Monta de nuevo el circuito LED de memoria y compruébalo con el multímetro."
+    },
+    "fr": {
+     "t": "Révision : ta boîte à outils d'électronique",
+     "g": "Regarde ce que tu sais avant de découvrir les microcontrôleurs.",
+     "p": [
+      "Tu sais décrire tension, courant et résistance et les relier par la loi d'Ohm.",
+      "Tu connais les composants courants : résistances, LED, condensateurs, diodes et transistors.",
+      "Tu connais les outils, la platine d'essai, le multimètre et les bons réflexes de soudure."
+     ],
+     "q": "Quel sujet t'a paru le plus facile jusqu'ici, et lequel veux-tu revoir ?",
+     "c": "Remonte le circuit LED de mémoire, puis vérifie-le au multimètre."
+    },
+    "it": {
+     "t": "Ripasso: la tua cassetta degli attrezzi elettronica",
+     "g": "Guarda cosa sai prima di conoscere i microcontrollori.",
+     "p": [
+      "Sai descrivere tensione, corrente e resistenza e collegarle con la legge di Ohm.",
+      "Conosci i componenti comuni: resistori, LED, condensatori, diodi e transistor.",
+      "Conosci gli attrezzi, la breadboard, il multimetro e le buone abitudini di saldatura."
+     ],
+     "q": "Quale argomento ti è sembrato più facile finora e quale vorresti rivedere?",
+     "c": "Rimonta il circuito LED a memoria e controllalo con il multimetro."
+    },
+    "pt": {
+     "t": "Revisão: a tua caixa de ferramentas de eletrónica",
+     "g": "Olha para trás e vê o que sabes antes de conhecer os microcontroladores.",
+     "p": [
+      "Sabes descrever tensão, corrente e resistência e ligá-las com a lei de Ohm.",
+      "Conheces peças comuns: resistências, LEDs, condensadores, díodos e transístores.",
+      "Conheces as ferramentas, a placa de ensaio, o multímetro e hábitos seguros de soldadura."
+     ],
+     "q": "Que tema te pareceu mais fácil até agora e qual gostarias de rever?",
+     "c": "Monta de novo o circuito LED de memória e confirma-o com o multímetro."
+    },
+    "pt_BR": {
+     "t": "Revisão: sua caixa de ferramentas de eletrônica",
+     "g": "Olhe para trás e veja o que você sabe antes de conhecer os microcontroladores.",
+     "p": [
+      "Você sabe descrever tensão, corrente e resistência e ligá-las com a lei de Ohm.",
+      "Você conhece peças comuns: resistores, LEDs, capacitores, diodos e transistores.",
+      "Você conhece as ferramentas, a protoboard, o multímetro e hábitos seguros de solda."
+     ],
+     "q": "Que tema pareceu mais fácil até agora e qual você gostaria de rever?",
+     "c": "Monte de novo o circuito LED de memória e confira com o multímetro."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is a microcontroller",
+     "g": "Meet the tiny computer that acts as a robot's brain.",
+     "p": [
+      "A microcontroller is a whole small computer on a single chip.",
+      "It has memory to store your program and pins that read or control the outside world.",
+      "It runs one program over and over, using very little power."
+     ],
+     "q": "What would you want a tiny computer to do in your home?",
+     "c": "Look at a board photo and point out the chip and the rows of pins."
+    },
+    "de": {
+     "t": "Was ist ein Mikrocontroller",
+     "g": "Lerne den winzigen Computer kennen, der als Gehirn eines Roboters dient.",
+     "p": [
+      "Ein Mikrocontroller ist ein kompletter kleiner Computer auf einem einzigen Chip.",
+      "Er hat Speicher für dein Programm und Pins, die die Außenwelt lesen oder steuern.",
+      "Er führt ein Programm immer wieder aus und braucht sehr wenig Strom."
+     ],
+     "q": "Was sollte ein winziger Computer bei dir zu Hause erledigen?",
+     "c": "Sieh dir ein Platinenfoto an und zeige den Chip und die Pinreihen."
+    },
+    "es": {
+     "t": "Qué es un microcontrolador",
+     "g": "Conoce el diminuto ordenador que hace de cerebro de un robot.",
+     "p": [
+      "Un microcontrolador es un pequeño ordenador completo en un solo chip.",
+      "Tiene memoria para guardar tu programa y pines que leen o controlan el mundo exterior.",
+      "Ejecuta un programa una y otra vez y gasta muy poca energía."
+     ],
+     "q": "¿Qué te gustaría que hiciera un ordenador diminuto en tu casa?",
+     "c": "Mira la foto de una placa y señala el chip y las filas de pines."
+    },
+    "fr": {
+     "t": "Qu'est-ce qu'un microcontrôleur",
+     "g": "Découvre le minuscule ordinateur qui sert de cerveau à un robot.",
+     "p": [
+      "Un microcontrôleur est un petit ordinateur complet sur une seule puce.",
+      "Il a de la mémoire pour ton programme et des broches qui lisent ou pilotent le monde extérieur.",
+      "Il exécute un programme en boucle et consomme très peu d'énergie."
+     ],
+     "q": "Que voudrais-tu qu'un minuscule ordinateur fasse chez toi ?",
+     "c": "Regarde la photo d'une carte et montre la puce et les rangées de broches."
+    },
+    "it": {
+     "t": "Cos'è un microcontrollore",
+     "g": "Conosci il minuscolo computer che fa da cervello a un robot.",
+     "p": [
+      "Un microcontrollore è un piccolo computer completo su un solo chip.",
+      "Ha memoria per il tuo programma e pin che leggono o controllano il mondo esterno.",
+      "Esegue un programma di continuo e consuma pochissima energia."
+     ],
+     "q": "Cosa vorresti che facesse in casa tua un minuscolo computer?",
+     "c": "Guarda la foto di una scheda e indica il chip e le file di pin."
+    },
+    "pt": {
+     "t": "O que é um microcontrolador",
+     "g": "Conhece o minúsculo computador que serve de cérebro a um robô.",
+     "p": [
+      "Um microcontrolador é um pequeno computador completo num só chip.",
+      "Tem memória para guardar o programa e pinos que leem ou controlam o mundo exterior.",
+      "Executa um programa vezes sem conta e gasta muito pouca energia."
+     ],
+     "q": "O que gostarias que um computador minúsculo fizesse em tua casa?",
+     "c": "Vê a fotografia de uma placa e aponta o chip e as filas de pinos."
+    },
+    "pt_BR": {
+     "t": "O que é um microcontrolador",
+     "g": "Conheça o minúsculo computador que serve de cérebro a um robô.",
+     "p": [
+      "Um microcontrolador é um pequeno computador completo em um único chip.",
+      "Tem memória para guardar o programa e pinos que leem ou controlam o mundo externo.",
+      "Executa um programa sem parar e gasta pouquíssima energia."
+     ],
+     "q": "O que você gostaria que um computador minúsculo fizesse na sua casa?",
+     "c": "Veja a foto de uma placa e aponte o chip e as fileiras de pinos."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Popular hobby boards",
+     "g": "Compare the friendly boards that hobbyists commonly use.",
+     "p": [
+      "Arduino-style boards are simple and have huge communities, ideal for learning basics.",
+      "ESP32-type boards add built-in Wi-Fi and Bluetooth for connected robots.",
+      "The micro:bit has a display and sensors built in, so you can start without any wiring."
+     ],
+     "q": "Which board would you try first, and what would you build?",
+     "c": "Pick one board, list two things it is good at and one limit."
+    },
+    "de": {
+     "t": "Beliebte Hobby-Boards",
+     "g": "Vergleiche die freundlichen Boards, die Bastler häufig nutzen.",
+     "p": [
+      "Boards im Arduino-Stil sind einfach und haben große Communities, ideal zum Lernen.",
+      "ESP32-artige Boards bringen WLAN und Bluetooth für vernetzte Roboter mit.",
+      "Der micro:bit hat Display und Sensoren eingebaut, du startest ganz ohne Verdrahtung."
+     ],
+     "q": "Welches Board würdest du zuerst ausprobieren und was bauen?",
+     "c": "Wähle ein Board, nenne zwei Stärken und eine Grenze."
+    },
+    "es": {
+     "t": "Placas populares para aficionados",
+     "g": "Compara las placas amigables que usan los aficionados.",
+     "p": [
+      "Las placas tipo Arduino son sencillas y tienen enormes comunidades, ideales para aprender.",
+      "Las tipo ESP32 añaden Wi-Fi y Bluetooth integrados para robots conectados.",
+      "La micro:bit trae pantalla y sensores incluidos, así que puedes empezar sin cables."
+     ],
+     "q": "¿Qué placa probarías primero y qué construirías?",
+     "c": "Elige una placa, anota dos cosas en las que destaca y un límite."
+    },
+    "fr": {
+     "t": "Cartes populaires pour débuter",
+     "g": "Compare les cartes accessibles que les amateurs utilisent souvent.",
+     "p": [
+      "Les cartes de type Arduino sont simples, avec de grandes communautés, idéales pour apprendre.",
+      "Les cartes de type ESP32 ajoutent Wi-Fi et Bluetooth pour des robots connectés.",
+      "La micro:bit a un écran et des capteurs intégrés, tu peux commencer sans câblage."
+     ],
+     "q": "Quelle carte essaierais-tu d'abord et que construirais-tu ?",
+     "c": "Choisis une carte, note deux points forts et une limite."
+    },
+    "it": {
+     "t": "Schede hobby più diffuse",
+     "g": "Confronta le schede accessibili che gli appassionati usano spesso.",
+     "p": [
+      "Le schede in stile Arduino sono semplici e hanno grandi comunità, ideali per imparare.",
+      "Le schede tipo ESP32 aggiungono Wi-Fi e Bluetooth per robot connessi.",
+      "La micro:bit ha display e sensori integrati, quindi si parte senza cablaggi."
+     ],
+     "q": "Quale scheda proveresti per prima e cosa costruiresti?",
+     "c": "Scegli una scheda, elenca due suoi punti di forza e un limite."
+    },
+    "pt": {
+     "t": "Placas populares para entusiastas",
+     "g": "Compara as placas acessíveis que os entusiastas usam com frequência.",
+     "p": [
+      "As placas tipo Arduino são simples e têm grandes comunidades, ideais para aprender.",
+      "As tipo ESP32 trazem Wi-Fi e Bluetooth integrados para robôs ligados.",
+      "A micro:bit tem ecrã e sensores incluídos, por isso começas sem cablagem."
+     ],
+     "q": "Que placa experimentarias primeiro e o que construirias?",
+     "c": "Escolhe uma placa, anota duas coisas em que é boa e um limite."
+    },
+    "pt_BR": {
+     "t": "Placas populares para entusiastas",
+     "g": "Compare as placas acessíveis que os entusiastas costumam usar.",
+     "p": [
+      "As placas estilo Arduino são simples e têm grandes comunidades, ideais para aprender.",
+      "As do tipo ESP32 trazem Wi-Fi e Bluetooth integrados para robôs conectados.",
+      "A micro:bit tem tela e sensores embutidos, então você começa sem fiação."
+     ],
+     "q": "Que placa você experimentaria primeiro e o que construiria?",
+     "c": "Escolha uma placa, anote duas coisas em que ela é boa e um limite."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Installing a coding environment",
+     "g": "Prepare your computer to send programs to a board.",
+     "p": [
+      "You need an editor, a USB cable that carries data, and board support files.",
+      "Some boards also need a driver so your computer recognises them.",
+      "Pick the board type and port in the editor, then test that it connects."
+     ],
+     "q": "Did anything surprise you while setting up your tools?",
+     "c": "Connect your board, select its port and confirm the editor sees it."
+    },
+    "de": {
+     "t": "Eine Programmierumgebung einrichten",
+     "g": "Bereite deinen Computer darauf vor, Programme an ein Board zu senden.",
+     "p": [
+      "Du brauchst einen Editor, ein USB-Kabel mit Datenleitungen und Board-Unterstützungsdateien.",
+      "Manche Boards brauchen auch einen Treiber, damit dein Computer sie erkennt.",
+      "Wähle im Editor Boardtyp und Port und teste die Verbindung."
+     ],
+     "q": "Hat dich beim Einrichten etwas überrascht?",
+     "c": "Schließe dein Board an, wähle den Port und prüfe, ob der Editor es erkennt."
+    },
+    "es": {
+     "t": "Instalar un entorno de programación",
+     "g": "Prepara tu ordenador para enviar programas a una placa.",
+     "p": [
+      "Necesitas un editor, un cable USB que lleve datos y archivos de soporte de la placa.",
+      "Algunas placas también necesitan un controlador para que tu ordenador las reconozca.",
+      "Elige el tipo de placa y el puerto en el editor y prueba que conecta."
+     ],
+     "q": "¿Te sorprendió algo al preparar tus herramientas?",
+     "c": "Conecta tu placa, elige su puerto y comprueba que el editor la ve."
+    },
+    "fr": {
+     "t": "Installer un environnement de programmation",
+     "g": "Prépare ton ordinateur à envoyer des programmes vers une carte.",
+     "p": [
+      "Il te faut un éditeur, un câble USB qui transmet les données et les fichiers de support de la carte.",
+      "Certaines cartes demandent aussi un pilote pour être reconnues par l'ordinateur.",
+      "Choisis le type de carte et le port dans l'éditeur, puis teste la connexion."
+     ],
+     "q": "Quelque chose t'a-t-il surpris pendant l'installation ?",
+     "c": "Branche ta carte, choisis son port et vérifie que l'éditeur la voit."
+    },
+    "it": {
+     "t": "Installare un ambiente di programmazione",
+     "g": "Prepara il computer a inviare programmi a una scheda.",
+     "p": [
+      "Servono un editor, un cavo USB che trasporti dati e i file di supporto della scheda.",
+      "Alcune schede richiedono anche un driver perché il computer le riconosca.",
+      "Scegli tipo di scheda e porta nell'editor, poi verifica la connessione."
+     ],
+     "q": "Qualcosa ti ha sorpreso durante la configurazione?",
+     "c": "Collega la scheda, scegli la porta e controlla che l'editor la veda."
+    },
+    "pt": {
+     "t": "Instalar um ambiente de programação",
+     "g": "Prepara o computador para enviar programas para uma placa.",
+     "p": [
+      "Precisas de um editor, de um cabo USB que transporte dados e dos ficheiros de suporte da placa.",
+      "Algumas placas precisam também de um driver para o computador as reconhecer.",
+      "Escolhe o tipo de placa e a porta no editor e testa se liga."
+     ],
+     "q": "Algo te surpreendeu ao preparar as ferramentas?",
+     "c": "Liga a placa, escolhe a porta e confirma que o editor a vê."
+    },
+    "pt_BR": {
+     "t": "Instalando um ambiente de programação",
+     "g": "Prepare o computador para enviar programas a uma placa.",
+     "p": [
+      "Você precisa de um editor, de um cabo USB que transmita dados e dos arquivos de suporte da placa.",
+      "Algumas placas precisam também de um driver para o computador reconhecê-las.",
+      "Escolha o tipo de placa e a porta no editor e teste se conecta."
+     ],
+     "q": "Algo surpreendeu você ao preparar as ferramentas?",
+     "c": "Conecte a placa, escolha a porta e confirme que o editor a enxerga."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your first program: blink",
+     "g": "Make an LED blink, the hello world of robotics.",
+     "p": [
+      "Set a pin as an output, switch it high, wait, switch it low, wait.",
+      "Delays are in milliseconds, so 1000 means one second.",
+      "If the LED blinks, your cable, board, tools and code all work."
+     ],
+     "q": "How fast do you think your LED should blink?",
+     "c": "Make the LED blink twice per second, then try a slow and a very fast rate."
+    },
+    "de": {
+     "t": "Dein erstes Programm: Blinken",
+     "g": "Lass eine LED blinken, das Hallo Welt der Robotik.",
+     "p": [
+      "Setze einen Pin als Ausgang, schalte ihn auf high, warte, schalte ihn auf low, warte.",
+      "Wartezeiten sind in Millisekunden, 1000 bedeutet eine Sekunde.",
+      "Wenn die LED blinkt, funktionieren Kabel, Board, Werkzeuge und Code."
+     ],
+     "q": "Wie schnell sollte deine LED deiner Meinung nach blinken?",
+     "c": "Lass die LED zweimal pro Sekunde blinken, probiere dann langsam und sehr schnell."
+    },
+    "es": {
+     "t": "Tu primer programa: parpadeo",
+     "g": "Haz parpadear un LED, el hola mundo de la robótica.",
+     "p": [
+      "Configura un pin como salida, ponlo en alto, espera, ponlo en bajo y espera.",
+      "Las esperas se miden en milisegundos, así que 1000 es un segundo.",
+      "Si el LED parpadea, funcionan tu cable, tu placa, tus herramientas y tu código."
+     ],
+     "q": "¿Qué tan rápido crees que debería parpadear tu LED?",
+     "c": "Haz que el LED parpadee dos veces por segundo y prueba uno lento y uno muy rápido."
+    },
+    "fr": {
+     "t": "Ton premier programme : le clignotement",
+     "g": "Fais clignoter une LED, le bonjour monde de la robotique.",
+     "p": [
+      "Configure une broche en sortie, mets-la à l'état haut, attends, mets-la à l'état bas, attends.",
+      "Les attentes sont en millisecondes : 1000 vaut une seconde.",
+      "Si la LED clignote, ton câble, ta carte, tes outils et ton code fonctionnent."
+     ],
+     "q": "À quelle vitesse ta LED devrait-elle clignoter, selon toi ?",
+     "c": "Fais clignoter la LED deux fois par seconde, puis essaie lentement et très vite."
+    },
+    "it": {
+     "t": "Il tuo primo programma: blink",
+     "g": "Fai lampeggiare un LED, l'hello world della robotica.",
+     "p": [
+      "Imposta un pin come uscita, portalo alto, attendi, portalo basso, attendi.",
+      "Le pause sono in millisecondi, quindi 1000 vale un secondo.",
+      "Se il LED lampeggia, funzionano cavo, scheda, strumenti e codice."
+     ],
+     "q": "Quanto velocemente pensi che dovrebbe lampeggiare il tuo LED?",
+     "c": "Fai lampeggiare il LED due volte al secondo, poi prova lento e velocissimo."
+    },
+    "pt": {
+     "t": "O teu primeiro programa: piscar",
+     "g": "Faz piscar um LED, o olá mundo da robótica.",
+     "p": [
+      "Define um pino como saída, põe-no em alto, espera, põe-no em baixo e espera.",
+      "As esperas são em milissegundos, por isso 1000 é um segundo.",
+      "Se o LED piscar, funcionam o cabo, a placa, as ferramentas e o código."
+     ],
+     "q": "A que velocidade achas que o teu LED devia piscar?",
+     "c": "Faz o LED piscar duas vezes por segundo e experimenta um lento e um muito rápido."
+    },
+    "pt_BR": {
+     "t": "Seu primeiro programa: piscar",
+     "g": "Faça um LED piscar, o olá mundo da robótica.",
+     "p": [
+      "Defina um pino como saída, ponha em alto, espere, ponha em baixo e espere.",
+      "As esperas são em milissegundos, então 1000 é um segundo.",
+      "Se o LED piscar, o cabo, a placa, as ferramentas e o código funcionam."
+     ],
+     "q": "Com que velocidade você acha que seu LED deveria piscar?",
+     "c": "Faça o LED piscar duas vezes por segundo e teste um lento e um bem rápido."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Digital pins: on and off",
+     "g": "Learn how pins read and write only two states.",
+     "p": [
+      "A digital pin is either high, near the supply voltage, or low, near zero volts.",
+      "As an output it can drive a small LED through a resistor.",
+      "As an input it senses whether a voltage is high or low."
+     ],
+     "q": "What on or off signals could your future robot use?",
+     "c": "Make two LEDs alternate, one on while the other is off."
+    },
+    "de": {
+     "t": "Digitale Pins: an und aus",
+     "g": "Lerne, wie Pins nur zwei Zustände lesen und schreiben.",
+     "p": [
+      "Ein digitaler Pin ist entweder high, nahe der Versorgungsspannung, oder low, nahe null Volt.",
+      "Als Ausgang kann er über einen Widerstand eine kleine LED treiben.",
+      "Als Eingang erkennt er, ob eine Spannung hoch oder niedrig ist."
+     ],
+     "q": "Welche An-Aus-Signale könnte dein künftiger Roboter nutzen?",
+     "c": "Lass zwei LEDs abwechselnd leuchten, eine an, während die andere aus ist."
+    },
+    "es": {
+     "t": "Pines digitales: encendido y apagado",
+     "g": "Aprende cómo los pines leen y escriben solo dos estados.",
+     "p": [
+      "Un pin digital está en alto, cerca del voltaje de alimentación, o en bajo, cerca de cero voltios.",
+      "Como salida puede mover un LED pequeño a través de una resistencia.",
+      "Como entrada detecta si un voltaje es alto o bajo."
+     ],
+     "q": "¿Qué señales de encendido y apagado podría usar tu futuro robot?",
+     "c": "Haz que dos LED se alternen, uno encendido mientras el otro está apagado."
+    },
+    "fr": {
+     "t": "Broches numériques : marche et arrêt",
+     "g": "Apprends comment les broches ne lisent et n'écrivent que deux états.",
+     "p": [
+      "Une broche numérique est à l'état haut, près de la tension d'alimentation, ou bas, près de zéro volt.",
+      "En sortie, elle peut piloter une petite LED via une résistance.",
+      "En entrée, elle détecte si une tension est haute ou basse."
+     ],
+     "q": "Quels signaux tout ou rien ton futur robot pourrait-il utiliser ?",
+     "c": "Fais alterner deux LED, l'une allumée pendant que l'autre est éteinte."
+    },
+    "it": {
+     "t": "Pin digitali: acceso e spento",
+     "g": "Scopri come i pin leggono e scrivono solo due stati.",
+     "p": [
+      "Un pin digitale è alto, vicino alla tensione di alimentazione, o basso, vicino a zero volt.",
+      "Come uscita può pilotare un piccolo LED tramite un resistore.",
+      "Come ingresso rileva se una tensione è alta o bassa."
+     ],
+     "q": "Quali segnali acceso-spento potrebbe usare il tuo futuro robot?",
+     "c": "Fai alternare due LED, uno acceso mentre l'altro è spento."
+    },
+    "pt": {
+     "t": "Pinos digitais: ligado e desligado",
+     "g": "Aprende como os pinos leem e escrevem apenas dois estados.",
+     "p": [
+      "Um pino digital está em alto, perto da tensão de alimentação, ou em baixo, perto de zero volts.",
+      "Como saída pode acionar um LED pequeno através de uma resistência.",
+      "Como entrada deteta se uma tensão é alta ou baixa."
+     ],
+     "q": "Que sinais de ligado e desligado poderia usar o teu futuro robô?",
+     "c": "Faz dois LEDs alternarem, um aceso enquanto o outro está apagado."
+    },
+    "pt_BR": {
+     "t": "Pinos digitais: ligado e desligado",
+     "g": "Aprenda como os pinos leem e escrevem apenas dois estados.",
+     "p": [
+      "Um pino digital está em alto, perto da tensão de alimentação, ou em baixo, perto de zero volt.",
+      "Como saída pode acionar um LED pequeno por meio de um resistor.",
+      "Como entrada detecta se uma tensão é alta ou baixa."
+     ],
+     "q": "Que sinais de liga e desliga seu futuro robô poderia usar?",
+     "c": "Faça dois LEDs alternarem, um aceso enquanto o outro está apagado."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading a button in code",
+     "g": "Detect a button press and make the robot react.",
+     "p": [
+      "Connect the button between an input pin and ground, and read the pin in code.",
+      "A floating input picks up noise, so a pull-up resistor holds it high until pressed.",
+      "Many boards have an internal pull-up, which you can switch on in code."
+     ],
+     "q": "What should your robot do when something presses its button?",
+     "c": "Turn an LED on only while the button is held down."
+    },
+    "de": {
+     "t": "Einen Taster im Code lesen",
+     "g": "Erkenne einen Tastendruck und lass den Roboter reagieren.",
+     "p": [
+      "Schließe den Taster zwischen Eingangspin und Masse an und lies den Pin im Code.",
+      "Ein offener Eingang fängt Rauschen ein, ein Pull-up-Widerstand hält ihn bis zum Druck auf high.",
+      "Viele Boards haben einen internen Pull-up, den du im Code einschalten kannst."
+     ],
+     "q": "Was soll dein Roboter tun, wenn etwas seinen Taster drückt?",
+     "c": "Schalte eine LED nur an, solange der Taster gedrückt ist."
+    },
+    "es": {
+     "t": "Leer un pulsador en el código",
+     "g": "Detecta una pulsación y haz que el robot reaccione.",
+     "p": [
+      "Conecta el pulsador entre un pin de entrada y masa y lee el pin en el código.",
+      "Una entrada flotante capta ruido, así que una resistencia pull-up la mantiene alta hasta pulsar.",
+      "Muchas placas tienen pull-up interna que puedes activar en el código."
+     ],
+     "q": "¿Qué debería hacer tu robot cuando algo pulse su botón?",
+     "c": "Enciende un LED solo mientras mantengas pulsado el botón."
+    },
+    "fr": {
+     "t": "Lire un bouton dans le code",
+     "g": "Détecte l'appui sur un bouton et fais réagir le robot.",
+     "p": [
+      "Branche le bouton entre une broche d'entrée et la masse, puis lis la broche dans le code.",
+      "Une entrée flottante capte du bruit : une résistance de rappel la maintient haute jusqu'à l'appui.",
+      "Beaucoup de cartes ont un rappel interne que tu peux activer dans le code."
+     ],
+     "q": "Que devrait faire ton robot quand quelque chose appuie sur son bouton ?",
+     "c": "Allume une LED seulement tant que le bouton reste enfoncé."
+    },
+    "it": {
+     "t": "Leggere un pulsante nel codice",
+     "g": "Rileva la pressione di un pulsante e fai reagire il robot.",
+     "p": [
+      "Collega il pulsante tra un pin di ingresso e massa e leggi il pin nel codice.",
+      "Un ingresso flottante capta rumore, così un resistore pull-up lo tiene alto fino alla pressione.",
+      "Molte schede hanno un pull-up interno che puoi attivare nel codice."
+     ],
+     "q": "Cosa dovrebbe fare il tuo robot quando qualcosa preme il suo pulsante?",
+     "c": "Accendi un LED solo finché il pulsante resta premuto."
+    },
+    "pt": {
+     "t": "Ler um botão no código",
+     "g": "Deteta o premir de um botão e faz o robô reagir.",
+     "p": [
+      "Liga o botão entre um pino de entrada e a massa e lê o pino no código.",
+      "Uma entrada flutuante capta ruído, por isso uma resistência pull-up mantém-na alta até premir.",
+      "Muitas placas têm pull-up interna que podes ativar no código."
+     ],
+     "q": "O que deve fazer o teu robô quando algo premir o seu botão?",
+     "c": "Acende um LED apenas enquanto o botão estiver premido."
+    },
+    "pt_BR": {
+     "t": "Lendo um botão no código",
+     "g": "Detecte o aperto de um botão e faça o robô reagir.",
+     "p": [
+      "Ligue o botão entre um pino de entrada e o terra e leia o pino no código.",
+      "Uma entrada flutuante capta ruído, então um resistor pull-up a mantém alta até apertar.",
+      "Muitas placas têm pull-up interno que você pode ativar no código."
+     ],
+     "q": "O que seu robô deve fazer quando algo apertar o botão dele?",
+     "c": "Acenda um LED somente enquanto o botão estiver apertado."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Debouncing buttons",
+     "g": "Stop false presses caused by bouncing metal contacts.",
+     "p": [
+      "Inside a button, metal contacts bounce for a few milliseconds when pressed.",
+      "The board reads these bounces as many quick presses, so counts go wrong.",
+      "A short delay or checking time since the last change filters them out."
+     ],
+     "q": "Have you seen a device react twice to one press?",
+     "c": "Count button presses with and without a debounce delay and compare."
+    },
+    "de": {
+     "t": "Taster entprellen",
+     "g": "Stoppe falsche Tastendrücke durch springende Metallkontakte.",
+     "p": [
+      "Im Taster prellen die Metallkontakte beim Drücken einige Millisekunden lang.",
+      "Das Board liest das Prellen als viele schnelle Drücke, die Zählung stimmt nicht.",
+      "Eine kurze Pause oder der Zeitabstand zur letzten Änderung filtert sie heraus."
+     ],
+     "q": "Hast du schon erlebt, dass ein Gerät auf einen Druck doppelt reagiert?",
+     "c": "Zähle Tastendrücke mit und ohne Entprellpause und vergleiche."
+    },
+    "es": {
+     "t": "Eliminar el rebote de los pulsadores",
+     "g": "Evita las falsas pulsaciones causadas por contactos metálicos que rebotan.",
+     "p": [
+      "Dentro del pulsador, los contactos metálicos rebotan unos milisegundos al pulsar.",
+      "La placa lee esos rebotes como muchas pulsaciones rápidas y las cuentas fallan.",
+      "Una pausa corta o comprobar el tiempo desde el último cambio las filtra."
+     ],
+     "q": "¿Has visto un aparato reaccionar dos veces a una sola pulsación?",
+     "c": "Cuenta pulsaciones con y sin pausa antirrebote y compara."
+    },
+    "fr": {
+     "t": "Éliminer les rebonds des boutons",
+     "g": "Évite les faux appuis causés par des contacts métalliques qui rebondissent.",
+     "p": [
+      "Dans un bouton, les contacts métalliques rebondissent quelques millisecondes à l'appui.",
+      "La carte lit ces rebonds comme de nombreux appuis rapides et les comptes sont faux.",
+      "Une courte attente ou le test du temps écoulé depuis le dernier changement les filtre."
+     ],
+     "q": "As-tu déjà vu un appareil réagir deux fois à un seul appui ?",
+     "c": "Compte les appuis avec et sans délai anti-rebond et compare."
+    },
+    "it": {
+     "t": "Eliminare il rimbalzo dei pulsanti",
+     "g": "Evita i falsi tocchi causati da contatti metallici che rimbalzano.",
+     "p": [
+      "Dentro un pulsante i contatti metallici rimbalzano per qualche millisecondo alla pressione.",
+      "La scheda legge i rimbalzi come molte pressioni rapide e i conteggi sbagliano.",
+      "Una breve pausa o il controllo del tempo dall'ultimo cambio li filtra."
+     ],
+     "q": "Hai mai visto un dispositivo reagire due volte a una sola pressione?",
+     "c": "Conta le pressioni con e senza pausa antirimbalzo e confronta."
+    },
+    "pt": {
+     "t": "Eliminar o ressalto dos botões",
+     "g": "Evita falsos toques causados por contactos metálicos que ressaltam.",
+     "p": [
+      "Dentro de um botão, os contactos metálicos ressaltam alguns milissegundos ao premir.",
+      "A placa lê esses ressaltos como muitos toques rápidos e as contagens falham.",
+      "Uma pausa curta ou verificar o tempo desde a última mudança filtra-os."
+     ],
+     "q": "Já viste um aparelho reagir duas vezes a um só toque?",
+     "c": "Conta toques com e sem pausa anti-ressalto e compara."
+    },
+    "pt_BR": {
+     "t": "Eliminando o repique dos botões",
+     "g": "Evite falsos toques causados por contatos metálicos que repicam.",
+     "p": [
+      "Dentro de um botão, os contatos metálicos repicam por alguns milissegundos ao apertar.",
+      "A placa lê esses repiques como muitos toques rápidos e as contagens falham.",
+      "Uma pausa curta ou checar o tempo desde a última mudança os filtra."
+     ],
+     "q": "Você já viu um aparelho reagir duas vezes a um só toque?",
+     "c": "Conte toques com e sem pausa antirrepique e compare."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Variables and logic in robot code",
+     "g": "Give your robot memory and its first simple decisions.",
+     "p": [
+      "A variable is a named box that stores a number, such as a counter or a speed.",
+      "An if statement runs code only when a condition is true, and else covers the rest.",
+      "Comparisons like greater than or equal to let the robot choose between actions."
+     ],
+     "q": "What first decision would you teach your robot to make?",
+     "c": "Write if-else code: LED on when a counter is above five, off otherwise."
+    },
+    "de": {
+     "t": "Variablen und Logik im Robotercode",
+     "g": "Gib deinem Roboter ein Gedächtnis und erste einfache Entscheidungen.",
+     "p": [
+      "Eine Variable ist ein benannter Behälter für eine Zahl, etwa einen Zähler oder eine Geschwindigkeit.",
+      "Eine if-Anweisung führt Code nur aus, wenn eine Bedingung stimmt, else deckt den Rest ab.",
+      "Vergleiche wie größer als oder gleich lassen den Roboter zwischen Aktionen wählen."
+     ],
+     "q": "Welche erste Entscheidung würdest du deinem Roboter beibringen?",
+     "c": "Schreibe if-else-Code: LED an, wenn ein Zähler über fünf ist, sonst aus."
+    },
+    "es": {
+     "t": "Variables y lógica en el código del robot",
+     "g": "Dale a tu robot memoria y sus primeras decisiones sencillas.",
+     "p": [
+      "Una variable es una caja con nombre que guarda un número, como un contador o una velocidad.",
+      "Un if ejecuta código solo si una condición es verdadera, y else cubre el resto.",
+      "Comparaciones como mayor que o igual a dejan al robot elegir entre acciones."
+     ],
+     "q": "¿Qué primera decisión le enseñarías a tomar a tu robot?",
+     "c": "Escribe un if-else: LED encendido si un contador pasa de cinco, apagado si no."
+    },
+    "fr": {
+     "t": "Variables et logique dans le code du robot",
+     "g": "Donne à ton robot une mémoire et ses premières décisions simples.",
+     "p": [
+      "Une variable est une boîte nommée qui stocke un nombre, comme un compteur ou une vitesse.",
+      "Un if exécute du code seulement si une condition est vraie, et else couvre le reste.",
+      "Des comparaisons comme plus grand que ou égal à laissent le robot choisir entre des actions."
+     ],
+     "q": "Quelle première décision apprendrais-tu à ton robot ?",
+     "c": "Écris un if-else : LED allumée si un compteur dépasse cinq, éteinte sinon."
+    },
+    "it": {
+     "t": "Variabili e logica nel codice del robot",
+     "g": "Dai al tuo robot una memoria e le sue prime semplici decisioni.",
+     "p": [
+      "Una variabile è una scatola con nome che conserva un numero, come un contatore o una velocità.",
+      "Un if esegue codice solo se una condizione è vera, ed else copre il resto.",
+      "Confronti come maggiore di o uguale a lasciano il robot scegliere tra azioni."
+     ],
+     "q": "Quale prima decisione insegneresti a prendere al tuo robot?",
+     "c": "Scrivi un if-else: LED acceso se un contatore supera cinque, spento altrimenti."
+    },
+    "pt": {
+     "t": "Variáveis e lógica no código do robô",
+     "g": "Dá ao teu robô memória e as suas primeiras decisões simples.",
+     "p": [
+      "Uma variável é uma caixa com nome que guarda um número, como um contador ou uma velocidade.",
+      "Um if executa código só quando uma condição é verdadeira, e o else cobre o resto.",
+      "Comparações como maior que ou igual a deixam o robô escolher entre ações."
+     ],
+     "q": "Que primeira decisão ensinarias o teu robô a tomar?",
+     "c": "Escreve um if-else: LED aceso se um contador passar de cinco, apagado caso contrário."
+    },
+    "pt_BR": {
+     "t": "Variáveis e lógica no código do robô",
+     "g": "Dê ao seu robô memória e as primeiras decisões simples.",
+     "p": [
+      "Uma variável é uma caixa com nome que guarda um número, como um contador ou uma velocidade.",
+      "Um if executa código só quando uma condição é verdadeira, e o else cobre o resto.",
+      "Comparações como maior que ou igual a deixam o robô escolher entre ações."
+     ],
+     "q": "Que primeira decisão você ensinaria seu robô a tomar?",
+     "c": "Escreva um if-else: LED aceso se um contador passar de cinco, apagado caso contrário."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Loops that run forever",
+     "g": "See why robot programs repeat endlessly and how to use that.",
+     "p": [
+      "Robot code usually has a setup part that runs once and a loop that repeats.",
+      "Each pass of the loop reads sensors, decides and updates outputs.",
+      "A for loop repeats a set number of times, handy for patterns like three beeps."
+     ],
+     "q": "What would your robot do on every pass of its loop?",
+     "c": "Write a loop that blinks an LED three times, then pauses two seconds."
+    },
+    "de": {
+     "t": "Schleifen, die ewig laufen",
+     "g": "Sieh, warum Roboterprogramme endlos wiederholen und wie du das nutzt.",
+     "p": [
+      "Robotercode hat meist einen Setup-Teil, der einmal läuft, und eine Schleife, die wiederholt.",
+      "Jeder Durchlauf liest Sensoren, entscheidet und aktualisiert Ausgänge.",
+      "Eine for-Schleife wiederholt eine feste Anzahl, praktisch für Muster wie drei Pieptöne."
+     ],
+     "q": "Was würde dein Roboter bei jedem Durchlauf seiner Schleife tun?",
+     "c": "Schreibe eine Schleife, die eine LED dreimal blinken lässt und dann zwei Sekunden pausiert."
+    },
+    "es": {
+     "t": "Bucles que funcionan para siempre",
+     "g": "Descubre por qué los programas de robots se repiten sin fin y cómo aprovecharlo.",
+     "p": [
+      "El código de un robot suele tener una parte de preparación que corre una vez y un bucle que se repite.",
+      "Cada vuelta del bucle lee sensores, decide y actualiza las salidas.",
+      "Un bucle for se repite un número fijo de veces, útil para patrones como tres pitidos."
+     ],
+     "q": "¿Qué haría tu robot en cada vuelta de su bucle?",
+     "c": "Escribe un bucle que haga parpadear un LED tres veces y espere dos segundos."
+    },
+    "fr": {
+     "t": "Des boucles qui tournent sans fin",
+     "g": "Vois pourquoi les programmes de robots se répètent sans fin et comment en profiter.",
+     "p": [
+      "Le code d'un robot a souvent une partie de préparation exécutée une fois et une boucle qui se répète.",
+      "Chaque tour de boucle lit les capteurs, décide et met à jour les sorties.",
+      "Une boucle for répète un nombre fixe de fois, pratique pour trois bips par exemple."
+     ],
+     "q": "Que ferait ton robot à chaque tour de sa boucle ?",
+     "c": "Écris une boucle qui fait clignoter une LED trois fois puis attend deux secondes."
+    },
+    "it": {
+     "t": "Cicli che girano all'infinito",
+     "g": "Scopri perché i programmi dei robot si ripetono senza fine e come sfruttarlo.",
+     "p": [
+      "Il codice di un robot ha di solito una parte di impostazione eseguita una volta e un ciclo che si ripete.",
+      "Ogni giro del ciclo legge i sensori, decide e aggiorna le uscite.",
+      "Un ciclo for ripete un numero fisso di volte, utile per schemi come tre bip."
+     ],
+     "q": "Cosa farebbe il tuo robot a ogni giro del suo ciclo?",
+     "c": "Scrivi un ciclo che fa lampeggiare un LED tre volte e poi attende due secondi."
+    },
+    "pt": {
+     "t": "Ciclos que correm para sempre",
+     "g": "Descobre porque os programas de robôs se repetem sem fim e como tirar partido disso.",
+     "p": [
+      "O código de um robô costuma ter uma parte de preparação que corre uma vez e um ciclo que se repete.",
+      "Cada volta do ciclo lê sensores, decide e atualiza as saídas.",
+      "Um ciclo for repete um número fixo de vezes, útil para padrões como três apitos."
+     ],
+     "q": "O que faria o teu robô em cada volta do seu ciclo?",
+     "c": "Escreve um ciclo que faça um LED piscar três vezes e espere dois segundos."
+    },
+    "pt_BR": {
+     "t": "Laços que rodam para sempre",
+     "g": "Descubra por que os programas de robôs se repetem sem fim e como aproveitar isso.",
+     "p": [
+      "O código de um robô costuma ter uma parte de preparação que roda uma vez e um laço que se repete.",
+      "Cada volta do laço lê sensores, decide e atualiza as saídas.",
+      "Um laço for repete um número fixo de vezes, útil para padrões como três apitos."
+     ],
+     "q": "O que seu robô faria em cada volta do laço?",
+     "c": "Escreva um laço que faça um LED piscar três vezes e espere dois segundos."
+    }
+   }
+  }
+ ]
+}

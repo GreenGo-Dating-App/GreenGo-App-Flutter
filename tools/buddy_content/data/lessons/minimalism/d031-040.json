@@ -1,0 +1,835 @@
+{
+ "topic": "minimalism",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wardrobe: the big picture",
+     "g": "See everything you own in one place to understand what you wear.",
+     "p": [
+      "Gather all clothes on the bed so you can see the real amount.",
+      "Seeing everything together makes patterns obvious, like many similar tops.",
+      "Just look today; there is no need to decide yet."
+     ],
+     "q": "What surprised you most when you saw all your clothes together?",
+     "c": "Gather one type of clothing, such as all T-shirts, in one pile and look."
+    },
+    "de": {
+     "t": "Kleiderschrank: das große Bild",
+     "g": "Alles an einem Ort sehen, um zu verstehen, was du wirklich trägst.",
+     "p": [
+      "Leg alle Kleidung aufs Bett, damit du die echte Menge siehst.",
+      "Alles zusammen zeigt Muster, etwa viele ähnliche Oberteile.",
+      "Heute nur ansehen; entscheiden musst du noch nichts."
+     ],
+     "q": "Was hat dich am meisten überrascht, als du alle Kleider zusammen gesehen hast?",
+     "c": "Leg eine Kleidungsart, etwa alle T-Shirts, auf einen Haufen und schau hin."
+    },
+    "es": {
+     "t": "Armario: la visión general",
+     "g": "Ver todo lo que tienes en un lugar para entender lo que realmente usas.",
+     "p": [
+      "Reúne toda la ropa sobre la cama para ver la cantidad real.",
+      "Verlo todo junto muestra patrones, como muchas camisetas parecidas.",
+      "Hoy solo mira; no hace falta decidir todavía."
+     ],
+     "q": "¿Qué fue lo que más te sorprendió al ver toda tu ropa junta?",
+     "c": "Reúne un tipo de prenda, como todas las camisetas, en un montón y obsérvalo."
+    },
+    "fr": {
+     "t": "Garde-robe : la vue d'ensemble",
+     "g": "Voir tout ce que tu possèdes au même endroit pour comprendre ce que tu portes.",
+     "p": [
+      "Rassemble tous les vêtements sur le lit pour voir la quantité réelle.",
+      "Tout voir ensemble révèle des schémas, comme beaucoup de hauts similaires.",
+      "Aujourd'hui, regarde seulement ; inutile de décider déjà."
+     ],
+     "q": "Qu'est-ce qui t'a le plus surpris en voyant tous tes vêtements ensemble ?",
+     "c": "Rassemble un type de vêtement, par exemple tous les T-shirts, et observe."
+    },
+    "it": {
+     "t": "Guardaroba: il quadro generale",
+     "g": "Vedere tutto ciò che hai in un posto per capire cosa indossi davvero.",
+     "p": [
+      "Metti tutti i vestiti sul letto per vedere la quantità reale.",
+      "Vedere tutto insieme mostra schemi, come tante magliette simili.",
+      "Oggi guarda soltanto; non serve ancora decidere."
+     ],
+     "q": "Cosa ti ha sorpreso di più vedendo tutti i vestiti insieme?",
+     "c": "Riunisci un tipo di capo, come tutte le magliette, in un mucchio e osserva."
+    },
+    "pt": {
+     "t": "Guarda-roupa: a visão geral",
+     "g": "Ver tudo o que tens num só lugar para perceber o que realmente vestes.",
+     "p": [
+      "Junta toda a roupa em cima da cama para veres a quantidade real.",
+      "Ver tudo junto mostra padrões, como muitas camisolas parecidas.",
+      "Hoje só olha; ainda não é preciso decidir."
+     ],
+     "q": "O que mais te surpreendeu ao ver toda a roupa junta?",
+     "c": "Junta um tipo de peça, como todas as t-shirts, numa pilha e observa."
+    },
+    "pt_BR": {
+     "t": "Guarda-roupa: a visão geral",
+     "g": "Ver tudo o que você tem num só lugar para entender o que realmente usa.",
+     "p": [
+      "Junte toda a roupa em cima da cama para ver a quantidade real.",
+      "Ver tudo junto mostra padrões, como muitas camisetas parecidas.",
+      "Hoje só olhe; ainda não precisa decidir."
+     ],
+     "q": "O que mais surpreendeu você ao ver toda a roupa junta?",
+     "c": "Junte um tipo de peça, como todas as camisetas, numa pilha e observe."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Clothes you never wear",
+     "g": "Find out why some pieces stay unworn.",
+     "p": [
+      "Common reasons: poor fit, discomfort, a style you outgrew, or no occasion.",
+      "Knowing the reason helps you avoid buying the same mistake again.",
+      "Clothes that do not fit today can leave without guilt."
+     ],
+     "q": "Which piece in your wardrobe have you not worn in a year, and why?",
+     "c": "Pick three unworn pieces, name the reason for each and decide."
+    },
+    "de": {
+     "t": "Kleidung, die du nie trägst",
+     "g": "Herausfinden, warum manche Teile ungetragen bleiben.",
+     "p": [
+      "Häufige Gründe: schlechte Passform, Unbequemlichkeit, ein entwachsener Stil oder kein Anlass.",
+      "Den Grund zu kennen hilft, den gleichen Fehlkauf nicht zu wiederholen.",
+      "Was heute nicht passt, darf ohne Schuldgefühl gehen."
+     ],
+     "q": "Welches Teil hast du seit einem Jahr nicht getragen, und warum?",
+     "c": "Wähl drei ungetragene Teile, nenne je den Grund und entscheide."
+    },
+    "es": {
+     "t": "Ropa que nunca te pones",
+     "g": "Descubrir por qué algunas prendas se quedan sin usar.",
+     "p": [
+      "Razones comunes: mala talla, incomodidad, un estilo superado o falta de ocasión.",
+      "Conocer el motivo ayuda a no repetir la misma compra equivocada.",
+      "La ropa que hoy no te queda puede irse sin culpa."
+     ],
+     "q": "¿Qué prenda no te has puesto en un año y por qué?",
+     "c": "Elige tres prendas sin usar, nombra el motivo de cada una y decide."
+    },
+    "fr": {
+     "t": "Les vêtements que tu ne portes jamais",
+     "g": "Comprendre pourquoi certaines pièces restent sur le cintre.",
+     "p": [
+      "Raisons courantes : mauvaise coupe, inconfort, un style dépassé ou pas d'occasion.",
+      "Connaître la raison évite de refaire le même achat raté.",
+      "Les vêtements qui ne vont plus peuvent partir sans culpabilité."
+     ],
+     "q": "Quelle pièce n'as-tu pas portée depuis un an, et pourquoi ?",
+     "c": "Choisis trois pièces jamais portées, nomme la raison de chacune et décide."
+    },
+    "it": {
+     "t": "I vestiti che non indossi mai",
+     "g": "Scoprire perché alcuni capi restano inutilizzati.",
+     "p": [
+      "Motivi comuni: vestibilità sbagliata, scomodità, uno stile superato o nessuna occasione.",
+      "Conoscere il motivo aiuta a non ripetere lo stesso acquisto sbagliato.",
+      "I vestiti che oggi non vanno bene possono andarsene senza colpa."
+     ],
+     "q": "Quale capo non indossi da un anno, e perché?",
+     "c": "Scegli tre capi mai indossati, nomina il motivo di ciascuno e decidi."
+    },
+    "pt": {
+     "t": "A roupa que nunca vestes",
+     "g": "Descobrir por que algumas peças ficam por usar.",
+     "p": [
+      "Razões comuns: mau corte, desconforto, um estilo ultrapassado ou falta de ocasião.",
+      "Saber a razão ajuda a não repetir a mesma compra errada.",
+      "A roupa que hoje não serve pode sair sem culpa."
+     ],
+     "q": "Que peça não vestes há um ano, e porquê?",
+     "c": "Escolhe três peças por usar, diz a razão de cada uma e decide."
+    },
+    "pt_BR": {
+     "t": "Roupas que você nunca usa",
+     "g": "Descobrir por que algumas peças ficam sem uso.",
+     "p": [
+      "Razões comuns: caimento ruim, desconforto, um estilo superado ou falta de ocasião.",
+      "Saber o motivo ajuda a não repetir a mesma compra errada.",
+      "Roupas que hoje não servem podem sair sem culpa."
+     ],
+     "q": "Que peça você não veste há um ano, e por quê?",
+     "c": "Escolha três peças sem uso, diga o motivo de cada uma e decida."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The hanger trick",
+     "g": "Turn hangers around to see which clothes you really use.",
+     "p": [
+      "Hang all clothes with hangers facing backwards.",
+      "After you wear something, hang it back facing forwards.",
+      "After a few months, the backward ones show what you rarely wear."
+     ],
+     "q": "Which clothes do you expect to still be backwards in three months?",
+     "c": "Turn all your hangers backwards today and start the experiment."
+    },
+    "de": {
+     "t": "Der Kleiderbügel-Trick",
+     "g": "Kleiderbügel umdrehen, um zu sehen, was du wirklich nutzt.",
+     "p": [
+      "Häng alle Kleidung mit nach hinten gedrehten Bügeln auf.",
+      "Nach dem Tragen hängst du das Teil mit dem Bügel nach vorn zurück.",
+      "Nach einigen Monaten zeigen die rückwärtigen Bügel, was du selten trägst."
+     ],
+     "q": "Welche Kleidung hängt in drei Monaten wohl noch verkehrt herum?",
+     "c": "Dreh heute alle Bügel nach hinten und starte das Experiment."
+    },
+    "es": {
+     "t": "El truco de las perchas",
+     "g": "Girar las perchas para ver qué ropa usas de verdad.",
+     "p": [
+      "Cuelga toda la ropa con las perchas hacia atrás.",
+      "Tras usar una prenda, vuelve a colgarla con la percha hacia delante.",
+      "Pasados unos meses, las que sigan hacia atrás muestran lo que casi no usas."
+     ],
+     "q": "¿Qué ropa crees que seguirá al revés dentro de tres meses?",
+     "c": "Gira hoy todas tus perchas hacia atrás y empieza el experimento."
+    },
+    "fr": {
+     "t": "L'astuce des cintres",
+     "g": "Retourner les cintres pour voir quels vêtements tu portes vraiment.",
+     "p": [
+      "Accroche tous les vêtements avec les cintres tournés vers l'arrière.",
+      "Après avoir porté une pièce, remets-la avec le cintre vers l'avant.",
+      "Après quelques mois, les cintres restés à l'envers montrent ce que tu portes rarement."
+     ],
+     "q": "Quels vêtements seront encore à l'envers dans trois mois, selon toi ?",
+     "c": "Retourne tous tes cintres aujourd'hui et lance l'expérience."
+    },
+    "it": {
+     "t": "Il trucco delle grucce",
+     "g": "Girare le grucce per vedere quali vestiti usi davvero.",
+     "p": [
+      "Appendi tutti i vestiti con le grucce rivolte all'indietro.",
+      "Dopo aver indossato un capo, riappendilo con la gruccia in avanti.",
+      "Dopo qualche mese, le grucce rimaste girate mostrano ciò che metti di rado."
+     ],
+     "q": "Quali vestiti pensi saranno ancora al contrario tra tre mesi?",
+     "c": "Gira oggi tutte le grucce all'indietro e comincia l'esperimento."
+    },
+    "pt": {
+     "t": "O truque dos cabides",
+     "g": "Virar os cabides para ver que roupa usas mesmo.",
+     "p": [
+      "Pendura toda a roupa com os cabides virados para trás.",
+      "Depois de vestires uma peça, pendura-a com o cabide virado para a frente.",
+      "Passados uns meses, os que ficarem virados para trás mostram o que quase não usas."
+     ],
+     "q": "Que roupa achas que continuará ao contrário daqui a três meses?",
+     "c": "Vira hoje todos os cabides para trás e começa a experiência."
+    },
+    "pt_BR": {
+     "t": "O truque dos cabides",
+     "g": "Virar os cabides para ver quais roupas você usa de verdade.",
+     "p": [
+      "Pendure todas as roupas com os cabides virados para trás.",
+      "Depois de usar uma peça, pendure de volta com o cabide para a frente.",
+      "Depois de alguns meses, os que ficarem virados para trás mostram o que você quase não usa."
+     ],
+     "q": "Que roupas você acha que continuarão ao contrário daqui a três meses?",
+     "c": "Vire hoje todos os cabides para trás e comece o experimento."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shoes and accessories",
+     "g": "Simplify bags, belts, scarves, jewellery and shoes and keep your style.",
+     "p": [
+      "Group each type together and look at what you actually wear.",
+      "Keep favourites that go with many outfits.",
+      "Broken or single items can be repaired, passed on or let go."
+     ],
+     "q": "Which accessory or pair of shoes is your most reliable favourite?",
+     "c": "Sort one category, like shoes, and keep only pairs you wear and enjoy."
+    },
+    "de": {
+     "t": "Schuhe und Accessoires",
+     "g": "Taschen, Gürtel, Tücher, Schmuck und Schuhe vereinfachen und deinen Stil behalten.",
+     "p": [
+      "Gruppiere jede Art zusammen und sieh, was du wirklich trägst.",
+      "Behalte Lieblingsstücke, die zu vielen Outfits passen.",
+      "Kaputtes oder Einzelstücke kannst du reparieren, weitergeben oder gehen lassen."
+     ],
+     "q": "Welches Accessoire oder welches Paar Schuhe ist dein zuverlässigster Liebling?",
+     "c": "Sortiere eine Kategorie, etwa Schuhe, und behalte nur Paare, die du gern trägst."
+    },
+    "es": {
+     "t": "Zapatos y accesorios",
+     "g": "Simplificar bolsos, cinturones, bufandas, joyas y zapatos sin perder tu estilo.",
+     "p": [
+      "Agrupa cada tipo y mira lo que realmente usas.",
+      "Quédate con los favoritos que combinan con muchos looks.",
+      "Lo roto o suelto se puede arreglar, regalar o dejar ir."
+     ],
+     "q": "¿Qué accesorio o par de zapatos es tu favorito más fiable?",
+     "c": "Ordena una categoría, como los zapatos, y conserva solo los pares que usas y disfrutas."
+    },
+    "fr": {
+     "t": "Chaussures et accessoires",
+     "g": "Simplifier sacs, ceintures, foulards, bijoux et chaussures sans perdre ton style.",
+     "p": [
+      "Regroupe chaque type et regarde ce que tu portes vraiment.",
+      "Garde les favoris qui vont avec beaucoup de tenues.",
+      "Ce qui est cassé ou dépareillé peut être réparé, donné ou laissé partir."
+     ],
+     "q": "Quel accessoire ou quelle paire de chaussures est ton favori le plus fiable ?",
+     "c": "Trie une catégorie, comme les chaussures, et garde seulement les paires que tu portes avec plaisir."
+    },
+    "it": {
+     "t": "Scarpe e accessori",
+     "g": "Semplificare borse, cinture, sciarpe, gioielli e scarpe mantenendo il tuo stile.",
+     "p": [
+      "Raggruppa ogni tipo e guarda cosa indossi davvero.",
+      "Tieni i preferiti che stanno con molti outfit.",
+      "Ciò che è rotto o spaiato si può riparare, regalare o lasciare andare."
+     ],
+     "q": "Quale accessorio o paio di scarpe è il tuo preferito più affidabile?",
+     "c": "Sistema una categoria, come le scarpe, e tieni solo i paia che indossi con piacere."
+    },
+    "pt": {
+     "t": "Sapatos e acessórios",
+     "g": "Simplificar malas, cintos, lenços, joias e sapatos sem perder o teu estilo.",
+     "p": [
+      "Agrupa cada tipo e olha para o que realmente usas.",
+      "Fica com os favoritos que combinam com muitos looks.",
+      "O que está partido ou desemparelhado pode ser arranjado, oferecido ou largado."
+     ],
+     "q": "Que acessório ou par de sapatos é o teu favorito mais fiável?",
+     "c": "Arruma uma categoria, como os sapatos, e guarda só os pares que usas e de que gostas."
+    },
+    "pt_BR": {
+     "t": "Sapatos e acessórios",
+     "g": "Simplificar bolsas, cintos, lenços, joias e sapatos sem perder o seu estilo.",
+     "p": [
+      "Agrupe cada tipo e olhe o que você realmente usa.",
+      "Fique com os favoritos que combinam com muitos looks.",
+      "O que está quebrado ou sem par pode ser consertado, doado ou deixado ir."
+     ],
+     "q": "Que acessório ou par de sapatos é o seu favorito mais confiável?",
+     "c": "Organize uma categoria, como os sapatos, e fique só com os pares que usa e curte."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kitchen countertops",
+     "g": "Keep only daily-use items out and make space to cook.",
+     "p": [
+      "Appliances you use daily can stay out; the rest can go in a cupboard.",
+      "Clear counters make cooking and cleaning easier and more pleasant.",
+      "Ask of each item: when did I last use this?"
+     ],
+     "q": "Which appliance on your counter do you use every day?",
+     "c": "Clear your counter, return only what you use daily and store the rest."
+    },
+    "de": {
+     "t": "Küchenarbeitsplatten",
+     "g": "Nur täglich Genutztes draußen lassen und Platz zum Kochen schaffen.",
+     "p": [
+      "Täglich genutzte Geräte dürfen stehen bleiben; der Rest kommt in den Schrank.",
+      "Freie Flächen erleichtern und verschönern Kochen und Putzen.",
+      "Frag bei jedem Teil: Wann habe ich das zuletzt benutzt?"
+     ],
+     "q": "Welches Gerät auf deiner Arbeitsplatte nutzt du jeden Tag?",
+     "c": "Räum die Arbeitsplatte frei, stell nur Tägliches zurück und verstau den Rest."
+    },
+    "es": {
+     "t": "Encimeras de cocina",
+     "g": "Dejar fuera solo lo de uso diario y crear espacio para cocinar.",
+     "p": [
+      "Los aparatos de uso diario pueden quedarse; el resto, al armario.",
+      "Las encimeras despejadas hacen cocinar y limpiar más fácil y agradable.",
+      "Pregunta de cada cosa: ¿cuándo la usé por última vez?"
+     ],
+     "q": "¿Qué aparato de tu encimera usas todos los días?",
+     "c": "Despeja la encimera, devuelve solo lo diario y guarda el resto."
+    },
+    "fr": {
+     "t": "Plans de travail de cuisine",
+     "g": "Ne laisser dehors que l'usage quotidien et faire de la place pour cuisiner.",
+     "p": [
+      "Les appareils utilisés chaque jour peuvent rester ; le reste va dans un placard.",
+      "Des plans dégagés rendent cuisiner et nettoyer plus simple et plus agréable.",
+      "Demande pour chaque objet : quand l'ai-je utilisé pour la dernière fois ?"
+     ],
+     "q": "Quel appareil de ton plan de travail utilises-tu chaque jour ?",
+     "c": "Dégage ton plan de travail, remets seulement le quotidien et range le reste."
+    },
+    "it": {
+     "t": "I piani della cucina",
+     "g": "Lasciare fuori solo l'uso quotidiano e fare spazio per cucinare.",
+     "p": [
+      "Gli elettrodomestici usati ogni giorno possono restare; il resto va nell'armadio.",
+      "Piani liberi rendono cucinare e pulire più facile e piacevole.",
+      "Chiediti per ogni oggetto: quando l'ho usato l'ultima volta?"
+     ],
+     "q": "Quale elettrodomestico sul tuo piano usi ogni giorno?",
+     "c": "Libera il piano, rimetti solo ciò che usi ogni giorno e riponi il resto."
+    },
+    "pt": {
+     "t": "Bancadas da cozinha",
+     "g": "Deixar de fora só o uso diário e abrir espaço para cozinhar.",
+     "p": [
+      "Os aparelhos usados todos os dias podem ficar; o resto vai para o armário.",
+      "Bancadas livres tornam cozinhar e limpar mais fácil e agradável.",
+      "Pergunta de cada coisa: quando a usei pela última vez?"
+     ],
+     "q": "Que aparelho da tua bancada usas todos os dias?",
+     "c": "Liberta a bancada, volta a pôr só o diário e guarda o resto."
+    },
+    "pt_BR": {
+     "t": "Bancadas da cozinha",
+     "g": "Deixar de fora só o uso diário e abrir espaço para cozinhar.",
+     "p": [
+      "Os aparelhos usados todo dia podem ficar; o resto vai para o armário.",
+      "Bancadas livres deixam cozinhar e limpar mais fácil e agradável.",
+      "Pergunte de cada coisa: quando usei pela última vez?"
+     ],
+     "q": "Que aparelho da sua bancada você usa todos os dias?",
+     "c": "Libere a bancada, devolva só o diário e guarde o resto."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kitchen gadgets",
+     "g": "Decide what a home cook really needs.",
+     "p": [
+      "Single-use tools, duplicates and unopened gifts fill drawers fast.",
+      "A good knife, spoon and pan do most of the work.",
+      "Keep a gadget only if you used it recently and enjoy it."
+     ],
+     "q": "Which kitchen gadget do you reach for most often?",
+     "c": "Take out every gadget from one drawer and remove three you never use."
+    },
+    "de": {
+     "t": "Küchengeräte und Helfer",
+     "g": "Entscheiden, was ein Hobbykoch wirklich braucht.",
+     "p": [
+      "Einzweck-Werkzeuge, Doppeltes und ungeöffnete Geschenke füllen Schubladen schnell.",
+      "Ein gutes Messer, ein Löffel und eine Pfanne erledigen das meiste.",
+      "Behalte ein Gerät nur, wenn du es kürzlich genutzt hast und magst."
+     ],
+     "q": "Zu welchem Küchenhelfer greifst du am häufigsten?",
+     "c": "Nimm alle Helfer aus einer Schublade und sortiere drei aus, die du nie brauchst."
+    },
+    "es": {
+     "t": "Utensilios de cocina",
+     "g": "Decidir qué necesita realmente quien cocina en casa.",
+     "p": [
+      "Los utensilios de un solo uso, los duplicados y los regalos sin abrir llenan cajones rápido.",
+      "Un buen cuchillo, una cuchara y una sartén hacen casi todo.",
+      "Conserva un utensilio solo si lo usaste hace poco y te gusta."
+     ],
+     "q": "¿Qué utensilio de cocina usas con más frecuencia?",
+     "c": "Saca todos los utensilios de un cajón y aparta tres que nunca uses."
+    },
+    "fr": {
+     "t": "Les gadgets de cuisine",
+     "g": "Décider ce dont un cuisinier amateur a vraiment besoin.",
+     "p": [
+      "Les ustensiles à usage unique, les doublons et les cadeaux jamais ouverts remplissent vite les tiroirs.",
+      "Un bon couteau, une cuillère et une poêle font presque tout.",
+      "Garde un gadget seulement s'il a servi récemment et si tu l'aimes."
+     ],
+     "q": "Quel ustensile de cuisine prends-tu le plus souvent ?",
+     "c": "Sors tous les gadgets d'un tiroir et retire-en trois que tu n'utilises jamais."
+    },
+    "it": {
+     "t": "Gli utensili da cucina",
+     "g": "Decidere di cosa ha davvero bisogno chi cucina a casa.",
+     "p": [
+      "Utensili monouso, doppioni e regali mai aperti riempiono presto i cassetti.",
+      "Un buon coltello, un cucchiaio e una padella fanno quasi tutto.",
+      "Tieni un utensile solo se l'hai usato di recente e ti piace."
+     ],
+     "q": "Quale utensile da cucina prendi più spesso?",
+     "c": "Tira fuori tutti gli utensili da un cassetto e togline tre che non usi mai."
+    },
+    "pt": {
+     "t": "Utensílios de cozinha",
+     "g": "Decidir de que precisa realmente quem cozinha em casa.",
+     "p": [
+      "Utensílios de uso único, repetidos e prendas por abrir enchem gavetas depressa.",
+      "Uma boa faca, uma colher e uma frigideira fazem quase tudo.",
+      "Guarda um utensílio só se o usaste há pouco e gostas dele."
+     ],
+     "q": "Que utensílio de cozinha usas com mais frequência?",
+     "c": "Tira todos os utensílios de uma gaveta e põe de lado três que nunca usas."
+    },
+    "pt_BR": {
+     "t": "Utensílios de cozinha",
+     "g": "Decidir do que quem cozinha em casa realmente precisa.",
+     "p": [
+      "Utensílios de uso único, repetidos e presentes fechados enchem gavetas rápido.",
+      "Uma boa faca, uma colher e uma frigideira fazem quase tudo.",
+      "Guarde um utensílio só se usou recentemente e gosta dele."
+     ],
+     "q": "Que utensílio de cozinha você usa com mais frequência?",
+     "c": "Tire todos os utensílios de uma gaveta e separe três que você nunca usa."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pots, pans and dishes",
+     "g": "Choose versatile cookware that fits how many people you feed.",
+     "p": [
+      "Most meals need only a few pots, pans and one good set of dishes.",
+      "Match the amount to your household, plus a few spares for guests.",
+      "Chipped or warped items can be recycled or replaced by one good piece."
+     ],
+     "q": "How many people do you usually cook for, and what pots do you use most?",
+     "c": "Count your mugs, plates and bowls and set aside the extras."
+    },
+    "de": {
+     "t": "Töpfe, Pfannen und Geschirr",
+     "g": "Vielseitiges Kochgeschirr wählen, das zur Zahl der Esser passt.",
+     "p": [
+      "Die meisten Mahlzeiten brauchen nur wenige Töpfe, Pfannen und ein gutes Geschirrset.",
+      "Richte die Menge nach deinem Haushalt plus ein paar Reserven für Gäste.",
+      "Angeschlagenes oder verzogenes Geschirr kannst du recyceln oder durch ein gutes Stück ersetzen."
+     ],
+     "q": "Für wie viele Personen kochst du meist, und welche Töpfe nutzt du am meisten?",
+     "c": "Zähl deine Tassen, Teller und Schalen und leg Überzähliges beiseite."
+    },
+    "es": {
+     "t": "Ollas, sartenes y vajilla",
+     "g": "Elegir utensilios versátiles según para cuántas personas cocinas.",
+     "p": [
+      "La mayoría de comidas necesita pocas ollas, sartenes y una buena vajilla.",
+      "Ajusta la cantidad a tu hogar, más unas pocas de reserva para invitados.",
+      "Lo desportillado o deformado se recicla o se cambia por una pieza buena."
+     ],
+     "q": "¿Para cuántas personas sueles cocinar y qué ollas usas más?",
+     "c": "Cuenta tus tazas, platos y cuencos y aparta los sobrantes."
+    },
+    "fr": {
+     "t": "Casseroles, poêles et vaisselle",
+     "g": "Choisir une batterie polyvalente adaptée au nombre de personnes.",
+     "p": [
+      "La plupart des repas demandent peu de casseroles, de poêles et un bon service.",
+      "Adapte la quantité à ton foyer, plus quelques extras pour les invités.",
+      "Ce qui est ébréché ou déformé peut être recyclé ou remplacé par une bonne pièce."
+     ],
+     "q": "Pour combien de personnes cuisines-tu d'habitude, et quelles casseroles utilises-tu le plus ?",
+     "c": "Compte tes tasses, assiettes et bols et mets de côté les surplus."
+    },
+    "it": {
+     "t": "Pentole, padelle e stoviglie",
+     "g": "Scegliere pentole versatili adatte a quante persone nutri.",
+     "p": [
+      "La maggior parte dei pasti richiede poche pentole, padelle e un buon servizio.",
+      "Adatta la quantità alla tua famiglia, più qualche extra per gli ospiti.",
+      "Ciò che è scheggiato o deformato si ricicla o si sostituisce con un buon pezzo."
+     ],
+     "q": "Per quante persone cucini di solito e quali pentole usi di più?",
+     "c": "Conta tazze, piatti e ciotole e metti da parte quelli in più."
+    },
+    "pt": {
+     "t": "Tachos, panelas e loiça",
+     "g": "Escolher utensílios versáteis conforme as pessoas para quem cozinhas.",
+     "p": [
+      "A maioria das refeições precisa de poucos tachos, panelas e uma boa loiça.",
+      "Ajusta a quantidade à tua casa, mais algumas de reserva para convidados.",
+      "O que está lascado ou empenado pode ser reciclado ou trocado por uma boa peça."
+     ],
+     "q": "Para quantas pessoas costumas cozinhar e que panelas mais usas?",
+     "c": "Conta as tuas canecas, pratos e taças e põe de lado as a mais."
+    },
+    "pt_BR": {
+     "t": "Panelas e louças",
+     "g": "Escolher utensílios versáteis conforme as pessoas para quem você cozinha.",
+     "p": [
+      "A maioria das refeições precisa de poucas panelas, frigideiras e uma boa louça.",
+      "Ajuste a quantidade à sua casa, mais algumas de reserva para visitas.",
+      "O que está lascado ou empenado pode ser reciclado ou trocado por uma boa peça."
+     ],
+     "q": "Para quantas pessoas você costuma cozinhar e que panelas mais usa?",
+     "c": "Conte suas canecas, pratos e tigelas e separe as que sobram."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The pantry and fridge",
+     "g": "Use what you have, check dates and shop with a list.",
+     "p": [
+      "Look through the pantry and fridge before buying more food.",
+      "Move items close to their date to the front so they get eaten.",
+      "A simple shopping list helps avoid food waste and duplicates."
+     ],
+     "q": "What food do you often buy but end up throwing away?",
+     "c": "Plan one meal using only what is already in your pantry and fridge."
+    },
+    "de": {
+     "t": "Vorratsschrank und Kühlschrank",
+     "g": "Aufbrauchen, was da ist, Daten prüfen und mit Liste einkaufen.",
+     "p": [
+      "Schau in Vorrat und Kühlschrank, bevor du neue Lebensmittel kaufst.",
+      "Stell Dinge mit nahem Datum nach vorn, damit sie gegessen werden.",
+      "Ein einfacher Einkaufszettel verhindert Verschwendung und Doppelkäufe."
+     ],
+     "q": "Welche Lebensmittel kaufst du oft, wirfst sie aber am Ende weg?",
+     "c": "Plane eine Mahlzeit nur mit dem, was schon in Vorrat und Kühlschrank ist."
+    },
+    "es": {
+     "t": "La despensa y la nevera",
+     "g": "Usar lo que tienes, mirar las fechas y comprar con lista.",
+     "p": [
+      "Mira la despensa y la nevera antes de comprar más comida.",
+      "Pon delante lo que caduca pronto para que se consuma.",
+      "Una lista de la compra sencilla evita desperdicio y duplicados."
+     ],
+     "q": "¿Qué comida compras a menudo pero acabas tirando?",
+     "c": "Planifica una comida usando solo lo que ya tienes en la despensa y la nevera."
+    },
+    "fr": {
+     "t": "Le garde-manger et le frigo",
+     "g": "Utiliser ce que tu as, vérifier les dates et faire les courses avec une liste.",
+     "p": [
+      "Regarde le garde-manger et le frigo avant d'acheter plus de nourriture.",
+      "Mets devant ce dont la date approche pour qu'on le mange.",
+      "Une simple liste de courses évite le gaspillage et les doublons."
+     ],
+     "q": "Quel aliment achètes-tu souvent mais finis par jeter ?",
+     "c": "Prévois un repas avec uniquement ce qui est déjà dans ton garde-manger et ton frigo."
+    },
+    "it": {
+     "t": "La dispensa e il frigo",
+     "g": "Usare ciò che hai, controllare le date e fare la spesa con una lista.",
+     "p": [
+      "Guarda dispensa e frigo prima di comprare altro cibo.",
+      "Metti davanti ciò che sta per scadere così viene mangiato.",
+      "Una semplice lista della spesa evita sprechi e doppioni."
+     ],
+     "q": "Quale cibo compri spesso ma finisci per buttare?",
+     "c": "Pianifica un pasto usando solo ciò che è già in dispensa e nel frigo."
+    },
+    "pt": {
+     "t": "A despensa e o frigorífico",
+     "g": "Usar o que tens, ver as datas e fazer compras com lista.",
+     "p": [
+      "Olha para a despensa e o frigorífico antes de comprar mais comida.",
+      "Põe à frente o que está perto da data para ser consumido.",
+      "Uma lista de compras simples evita desperdício e repetidos."
+     ],
+     "q": "Que comida costumas comprar mas acabas por deitar fora?",
+     "c": "Planeia uma refeição usando só o que já tens na despensa e no frigorífico."
+    },
+    "pt_BR": {
+     "t": "A despensa e a geladeira",
+     "g": "Usar o que você tem, ver as datas e fazer compras com lista.",
+     "p": [
+      "Olhe a despensa e a geladeira antes de comprar mais comida.",
+      "Coloque na frente o que está perto da validade para ser consumido.",
+      "Uma lista de compras simples evita desperdício e repetidos."
+     ],
+     "q": "Que comida você costuma comprar mas acaba jogando fora?",
+     "c": "Planeje uma refeição usando só o que já tem na despensa e na geladeira."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food storage containers",
+     "g": "Match lids, keep a sensible number and choose durable options.",
+     "p": [
+      "Test every container with its lid and recycle the orphans.",
+      "Keep a number that fits your fridge and cupboard, not a mountain.",
+      "A few sturdy matching containers stack and store better."
+     ],
+     "q": "Do your containers and lids usually find each other?",
+     "c": "Match every container to a lid and let go of unmatched pieces."
+    },
+    "de": {
+     "t": "Frischhaltedosen",
+     "g": "Deckel zuordnen, eine sinnvolle Anzahl behalten und haltbare Dosen wählen.",
+     "p": [
+      "Teste jede Dose mit ihrem Deckel und recycle die Einzelgänger.",
+      "Behalte so viele, wie in Kühlschrank und Schrank passen, keinen Berg.",
+      "Wenige stabile, passende Dosen stapeln und lagern sich besser."
+     ],
+     "q": "Finden deine Dosen und Deckel meistens zueinander?",
+     "c": "Ordne jeder Dose einen Deckel zu und gib Übriges weg."
+    },
+    "es": {
+     "t": "Recipientes de comida",
+     "g": "Emparejar tapas, tener una cantidad sensata y elegir los duraderos.",
+     "p": [
+      "Prueba cada recipiente con su tapa y recicla los huérfanos.",
+      "Quédate con un número que quepa en tu nevera y armario, no una montaña.",
+      "Pocos recipientes resistentes que combinan se apilan y guardan mejor."
+     ],
+     "q": "¿Tus recipientes y tapas suelen encontrarse?",
+     "c": "Empareja cada recipiente con una tapa y suelta las piezas sin pareja."
+    },
+    "fr": {
+     "t": "Boîtes de conservation",
+     "g": "Associer les couvercles, garder un nombre raisonnable et choisir du durable.",
+     "p": [
+      "Teste chaque boîte avec son couvercle et recycle les orphelines.",
+      "Garde un nombre adapté à ton frigo et à ton placard, pas une montagne.",
+      "Quelques boîtes solides assorties s'empilent et se rangent mieux."
+     ],
+     "q": "Tes boîtes et tes couvercles se retrouvent-ils d'habitude ?",
+     "c": "Associe chaque boîte à un couvercle et laisse partir les pièces sans partenaire."
+    },
+    "it": {
+     "t": "Contenitori per alimenti",
+     "g": "Abbinare i coperchi, tenere un numero sensato e scegliere quelli durevoli.",
+     "p": [
+      "Prova ogni contenitore col suo coperchio e ricicla gli orfani.",
+      "Tieni un numero adatto a frigo e dispensa, non una montagna.",
+      "Pochi contenitori robusti e abbinati si impilano e si conservano meglio."
+     ],
+     "q": "I tuoi contenitori e coperchi di solito si ritrovano?",
+     "c": "Abbina ogni contenitore a un coperchio e lascia andare i pezzi senza coppia."
+    },
+    "pt": {
+     "t": "Caixas de conservação de alimentos",
+     "g": "Combinar tampas, ter um número sensato e escolher as duráveis.",
+     "p": [
+      "Testa cada caixa com a sua tampa e recicla as órfãs.",
+      "Fica com um número que caiba no frigorífico e no armário, não uma montanha.",
+      "Poucas caixas robustas e combinadas empilham e guardam-se melhor."
+     ],
+     "q": "As tuas caixas e tampas costumam encontrar-se?",
+     "c": "Combina cada caixa com uma tampa e larga as peças sem par."
+    },
+    "pt_BR": {
+     "t": "Potes de armazenar comida",
+     "g": "Combinar tampas, ter um número sensato e escolher os duráveis.",
+     "p": [
+      "Teste cada pote com a sua tampa e recicle os órfãos.",
+      "Fique com um número que caiba na geladeira e no armário, não uma montanha.",
+      "Poucos potes resistentes e combinando empilham e guardam melhor."
+     ],
+     "q": "Seus potes e tampas costumam se encontrar?",
+     "c": "Combine cada pote com uma tampa e solte as peças sem par."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Living room comfort",
+     "g": "Create a relaxing space with fewer objects and meaningful decor.",
+     "p": [
+      "Choose a few pieces you love rather than filling every shelf.",
+      "Open surfaces let the eye rest and make the room feel larger.",
+      "Keep the things you use there: a throw, a book, a lamp."
+     ],
+     "q": "What makes your living room feel most comfortable?",
+     "c": "Remove five items from the living room that you neither use nor love."
+    },
+    "de": {
+     "t": "Wohnzimmer-Wohlgefühl",
+     "g": "Mit weniger Dingen und bedeutungsvoller Deko einen entspannten Raum schaffen.",
+     "p": [
+      "Wähl wenige geliebte Stücke, statt jedes Regal zu füllen.",
+      "Freie Flächen lassen das Auge ruhen und lassen den Raum größer wirken.",
+      "Behalte, was du dort nutzt: eine Decke, ein Buch, eine Lampe."
+     ],
+     "q": "Was macht dein Wohnzimmer am gemütlichsten?",
+     "c": "Räum fünf Dinge aus dem Wohnzimmer, die du weder nutzt noch liebst."
+    },
+    "es": {
+     "t": "Comodidad en el salón",
+     "g": "Crear un espacio relajante con menos objetos y decoración con sentido.",
+     "p": [
+      "Elige unas pocas piezas que ames en lugar de llenar cada estante.",
+      "Las superficies libres descansan la vista y hacen la sala más amplia.",
+      "Conserva lo que usas allí: una manta, un libro, una lámpara."
+     ],
+     "q": "¿Qué hace que tu salón sea más cómodo?",
+     "c": "Saca del salón cinco objetos que ni usas ni te gustan."
+    },
+    "fr": {
+     "t": "Le confort du salon",
+     "g": "Créer un espace relaxant avec moins d'objets et une déco qui a du sens.",
+     "p": [
+      "Choisis quelques pièces que tu aimes plutôt que de remplir chaque étagère.",
+      "Les surfaces libres reposent l'oeil et agrandissent la pièce.",
+      "Garde ce que tu y utilises : un plaid, un livre, une lampe."
+     ],
+     "q": "Qu'est-ce qui rend ton salon le plus confortable ?",
+     "c": "Retire du salon cinq objets que tu n'utilises ni n'aimes."
+    },
+    "it": {
+     "t": "Il comfort del soggiorno",
+     "g": "Creare uno spazio rilassante con meno oggetti e arredi significativi.",
+     "p": [
+      "Scegli pochi pezzi che ami invece di riempire ogni mensola.",
+      "Le superfici libere riposano l'occhio e fanno sembrare la stanza più grande.",
+      "Tieni ciò che usi lì: un plaid, un libro, una lampada."
+     ],
+     "q": "Cosa rende il tuo soggiorno più confortevole?",
+     "c": "Porta via dal soggiorno cinque oggetti che non usi né ami."
+    },
+    "pt": {
+     "t": "O conforto da sala",
+     "g": "Criar um espaço relaxante com menos objetos e decoração com significado.",
+     "p": [
+      "Escolhe poucas peças de que gostes em vez de encher cada prateleira.",
+      "Superfícies livres descansam a vista e fazem a sala parecer maior.",
+      "Guarda o que usas lá: uma manta, um livro, um candeeiro."
+     ],
+     "q": "O que torna a tua sala mais confortável?",
+     "c": "Tira da sala cinco objetos que nem usas nem adoras."
+    },
+    "pt_BR": {
+     "t": "O conforto da sala",
+     "g": "Criar um espaço relaxante com menos objetos e decoração com significado.",
+     "p": [
+      "Escolha poucas peças que você ame em vez de encher cada prateleira.",
+      "Superfícies livres descansam a vista e fazem a sala parecer maior.",
+      "Fique com o que você usa ali: uma manta, um livro, um abajur."
+     ],
+     "q": "O que deixa a sua sala mais confortável?",
+     "c": "Tire da sala cinco itens que você nem usa nem ama."
+    }
+   }
+  }
+ ]
+}

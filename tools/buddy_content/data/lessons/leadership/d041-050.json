@@ -1,0 +1,835 @@
+{
+ "topic": "leadership",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why feedback matters",
+     "g": "See feedback as a gift that helps people grow and teams improve.",
+     "p": [
+      "Without feedback, people guess how they are doing.",
+      "Good feedback shows what to keep doing and what to adjust.",
+      "Teams that share feedback often learn faster together."
+     ],
+     "q": "What feedback once helped you grow the most?",
+     "c": "Give one person a short, honest, kind piece of feedback today."
+    },
+    "de": {
+     "t": "Warum Feedback wichtig ist",
+     "g": "Feedback als Geschenk sehen, das Menschen wachsen und Teams besser werden lässt.",
+     "p": [
+      "Ohne Feedback raten Menschen, wie sie dastehen.",
+      "Gutes Feedback zeigt, was bleiben und was sich ändern darf.",
+      "Teams, die oft Feedback teilen, lernen gemeinsam schneller."
+     ],
+     "q": "Welches Feedback hat dich einmal am meisten weitergebracht?",
+     "c": "Gib heute einer Person ein kurzes, ehrliches, freundliches Feedback."
+    },
+    "es": {
+     "t": "Por qué importa la retroalimentación",
+     "g": "Ver el feedback como un regalo que ayuda a crecer y mejora a los equipos.",
+     "p": [
+      "Sin feedback, la gente adivina cómo lo está haciendo.",
+      "Un buen feedback muestra qué mantener y qué ajustar.",
+      "Los equipos que comparten feedback aprenden más rápido juntos."
+     ],
+     "q": "¿Qué feedback te ayudó a crecer más alguna vez?",
+     "c": "Da hoy a una persona un feedback breve, honesto y amable."
+    },
+    "fr": {
+     "t": "Pourquoi le feedback compte",
+     "g": "Voir le feedback comme un cadeau qui fait grandir et améliore les équipes.",
+     "p": [
+      "Sans feedback, on devine comment on s'en sort.",
+      "Un bon feedback montre quoi garder et quoi ajuster.",
+      "Les équipes qui échangent souvent apprennent plus vite ensemble."
+     ],
+     "q": "Quel feedback t'a le plus fait progresser un jour ?",
+     "c": "Donne aujourd'hui à une personne un feedback bref, honnête et bienveillant."
+    },
+    "it": {
+     "t": "Perché il feedback conta",
+     "g": "Vedere il feedback come un dono che fa crescere le persone e migliora i team.",
+     "p": [
+      "Senza feedback, le persone tirano a indovinare come stanno andando.",
+      "Un buon feedback mostra cosa mantenere e cosa aggiustare.",
+      "I team che condividono spesso feedback imparano più in fretta insieme."
+     ],
+     "q": "Quale feedback ti ha fatto crescere di più una volta?",
+     "c": "Dai oggi a una persona un feedback breve, onesto e gentile."
+    },
+    "pt": {
+     "t": "Porque o feedback importa",
+     "g": "Ver o feedback como uma dádiva que faz crescer pessoas e melhora equipas.",
+     "p": [
+      "Sem feedback, as pessoas adivinham como estão a ir.",
+      "Bom feedback mostra o que manter e o que ajustar.",
+      "Equipas que partilham feedback aprendem mais depressa em conjunto."
+     ],
+     "q": "Que feedback te ajudou a crescer mais, um dia?",
+     "c": "Dá hoje a uma pessoa um feedback curto, honesto e simpático."
+    },
+    "pt_BR": {
+     "t": "Por que o feedback importa",
+     "g": "Ver o feedback como um presente que faz as pessoas crescerem e melhora times.",
+     "p": [
+      "Sem feedback, as pessoas adivinham como estão indo.",
+      "Bom feedback mostra o que manter e o que ajustar.",
+      "Times que compartilham feedback aprendem mais rápido juntos."
+     ],
+     "q": "Que feedback ajudou você a crescer mais, um dia?",
+     "c": "Dê hoje a uma pessoa um feedback curto, honesto e gentil."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Positive feedback that motivates",
+     "g": "Make praise specific, sincere and timely.",
+     "p": [
+      "Be specific: say exactly what the person did and why it helped.",
+      "Be timely: praise soon after the good moment, not weeks later.",
+      "Be sincere: only say what you truly mean."
+     ],
+     "q": "What praise have you received that you still remember?",
+     "c": "Give two specific compliments today, naming the action and its effect."
+    },
+    "de": {
+     "t": "Positives Feedback, das motiviert",
+     "g": "Lob konkret, aufrichtig und zeitnah geben.",
+     "p": [
+      "Sei konkret: Sage genau, was die Person tat und warum es half.",
+      "Sei zeitnah: Lobe bald nach dem guten Moment, nicht Wochen später.",
+      "Sei aufrichtig: Sage nur, was du wirklich meinst."
+     ],
+     "q": "Welches Lob hast du bekommen, an das du dich noch erinnerst?",
+     "c": "Gib heute zwei konkrete Komplimente mit Tat und Wirkung."
+    },
+    "es": {
+     "t": "Feedback positivo que motiva",
+     "g": "Hacer que el elogio sea concreto, sincero y oportuno.",
+     "p": [
+      "Sé concreto: di exactamente qué hizo la persona y por qué ayudó.",
+      "Sé oportuno: elogia poco después del buen momento, no semanas más tarde.",
+      "Sé sincero: di solo lo que de verdad piensas."
+     ],
+     "q": "¿Qué elogio recibiste que aún recuerdas?",
+     "c": "Haz hoy dos elogios concretos, nombrando la acción y su efecto."
+    },
+    "fr": {
+     "t": "Un feedback positif qui motive",
+     "g": "Rendre les compliments précis, sincères et rapides.",
+     "p": [
+      "Sois précis : dis exactement ce que la personne a fait et pourquoi cela a aidé.",
+      "Sois rapide : félicite peu après le bon moment, pas des semaines plus tard.",
+      "Sois sincère : ne dis que ce que tu penses vraiment."
+     ],
+     "q": "Quel compliment as-tu reçu dont tu te souviens encore ?",
+     "c": "Fais aujourd'hui deux compliments précis, en citant l'action et son effet."
+    },
+    "it": {
+     "t": "Feedback positivo che motiva",
+     "g": "Rendere gli elogi specifici, sinceri e tempestivi.",
+     "p": [
+      "Sii specifico: di' esattamente cosa ha fatto la persona e perché ha aiutato.",
+      "Sii tempestivo: elogia subito dopo il bel momento, non settimane dopo.",
+      "Sii sincero: di' solo ciò che pensi davvero."
+     ],
+     "q": "Quale elogio hai ricevuto che ricordi ancora?",
+     "c": "Fai oggi due complimenti specifici, nominando l'azione e il suo effetto."
+    },
+    "pt": {
+     "t": "Feedback positivo que motiva",
+     "g": "Tornar o elogio específico, sincero e oportuno.",
+     "p": [
+      "Sê específico: diz exatamente o que a pessoa fez e porque ajudou.",
+      "Sê oportuno: elogia pouco depois do bom momento, não semanas mais tarde.",
+      "Sê sincero: diz apenas o que realmente pensas."
+     ],
+     "q": "Que elogio recebeste de que ainda te lembras?",
+     "c": "Faz hoje dois elogios específicos, nomeando a ação e o seu efeito."
+    },
+    "pt_BR": {
+     "t": "Feedback positivo que motiva",
+     "g": "Tornar o elogio específico, sincero e oportuno.",
+     "p": [
+      "Seja específico: diga exatamente o que a pessoa fez e por que ajudou.",
+      "Seja oportuno: elogie logo após o bom momento, não semanas depois.",
+      "Seja sincero: diga apenas o que você realmente pensa."
+     ],
+     "q": "Que elogio você recebeu e ainda lembra?",
+     "c": "Faça hoje dois elogios específicos, citando a ação e o efeito dela."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The SBI feedback model",
+     "g": "Describe situation, behaviour and impact to keep feedback clear and fair.",
+     "p": [
+      "Situation: when and where it happened, for example in Monday's meeting.",
+      "Behaviour: what you saw or heard, without guessing motives.",
+      "Impact: the effect it had on you, the team or the result."
+     ],
+     "q": "Which part of SBI would be hardest for you to say clearly?",
+     "c": "Write one feedback in the form: situation, behaviour, impact."
+    },
+    "de": {
+     "t": "Das SBI-Feedbackmodell",
+     "g": "Situation, Verhalten und Wirkung beschreiben, damit Feedback klar und fair bleibt.",
+     "p": [
+      "Situation: wann und wo es geschah, etwa im Montagsmeeting.",
+      "Verhalten: was du sahst oder hörtest, ohne Motive zu raten.",
+      "Wirkung: welchen Effekt es auf dich, das Team oder das Ergebnis hatte."
+     ],
+     "q": "Welcher SBI-Teil fiele dir am schwersten klar zu sagen?",
+     "c": "Schreibe ein Feedback nach dem Muster Situation, Verhalten, Wirkung."
+    },
+    "es": {
+     "t": "El modelo de feedback SBI",
+     "g": "Describir situación, conducta e impacto para que el feedback sea claro y justo.",
+     "p": [
+      "Situación: cuándo y dónde ocurrió, por ejemplo en la reunión del lunes.",
+      "Conducta: lo que viste u oíste, sin suponer motivos.",
+      "Impacto: el efecto que tuvo en ti, el equipo o el resultado."
+     ],
+     "q": "¿Qué parte de SBI te costaría más decir con claridad?",
+     "c": "Escribe un feedback con la forma: situación, conducta, impacto."
+    },
+    "fr": {
+     "t": "Le modèle de feedback SBI",
+     "g": "Décrire situation, comportement et impact pour un feedback clair et juste.",
+     "p": [
+      "Situation : quand et où c'est arrivé, par exemple à la réunion de lundi.",
+      "Comportement : ce que tu as vu ou entendu, sans deviner les intentions.",
+      "Impact : l'effet sur toi, l'équipe ou le résultat."
+     ],
+     "q": "Quelle partie du SBI serait la plus difficile à dire clairement ?",
+     "c": "Écris un feedback sous la forme : situation, comportement, impact."
+    },
+    "it": {
+     "t": "Il modello di feedback SBI",
+     "g": "Descrivere situazione, comportamento e impatto per un feedback chiaro ed equo.",
+     "p": [
+      "Situazione: quando e dove è successo, ad esempio nella riunione di lunedì.",
+      "Comportamento: ciò che hai visto o sentito, senza indovinare i motivi.",
+      "Impatto: l'effetto su di te, sul team o sul risultato."
+     ],
+     "q": "Quale parte dell'SBI ti sarebbe più difficile dire con chiarezza?",
+     "c": "Scrivi un feedback nella forma: situazione, comportamento, impatto."
+    },
+    "pt": {
+     "t": "O modelo de feedback SBI",
+     "g": "Descrever situação, comportamento e impacto para um feedback claro e justo.",
+     "p": [
+      "Situação: quando e onde aconteceu, por exemplo na reunião de segunda.",
+      "Comportamento: o que viste ou ouviste, sem adivinhar motivos.",
+      "Impacto: o efeito em ti, na equipa ou no resultado."
+     ],
+     "q": "Que parte do SBI te seria mais difícil de dizer com clareza?",
+     "c": "Escreve um feedback na forma: situação, comportamento, impacto."
+    },
+    "pt_BR": {
+     "t": "O modelo de feedback SBI",
+     "g": "Descrever situação, comportamento e impacto para um feedback claro e justo.",
+     "p": [
+      "Situação: quando e onde aconteceu, por exemplo na reunião de segunda.",
+      "Comportamento: o que você viu ou ouviu, sem adivinhar motivos.",
+      "Impacto: o efeito em você, no time ou no resultado."
+     ],
+     "q": "Que parte do SBI seria mais difícil de dizer com clareza para você?",
+     "c": "Escreva um feedback na forma: situação, comportamento, impacto."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Constructive feedback with kindness",
+     "g": "Point out improvements while respecting the person.",
+     "p": [
+      "Start by saying you want to help them succeed.",
+      "Describe the behaviour, not the character: not you are careless.",
+      "Offer a next step or ask what support they need."
+     ],
+     "q": "How do you prefer to hear that something needs to change?",
+     "c": "Plan one kind improvement message using what you saw and what could help."
+    },
+    "de": {
+     "t": "Konstruktives Feedback mit Freundlichkeit",
+     "g": "Verbesserungen ansprechen und dabei die Person respektieren.",
+     "p": [
+      "Beginne mit dem Hinweis, dass du ihren Erfolg unterstützen willst.",
+      "Beschreibe das Verhalten, nicht den Charakter: nicht du bist nachlässig.",
+      "Biete einen nächsten Schritt an oder frage nach nötiger Unterstützung."
+     ],
+     "q": "Wie möchtest du hören, dass sich etwas ändern sollte?",
+     "c": "Plane eine freundliche Verbesserungsnachricht mit Beobachtung und Hilfsidee."
+    },
+    "es": {
+     "t": "Feedback constructivo con amabilidad",
+     "g": "Señalar mejoras respetando a la persona.",
+     "p": [
+      "Empieza diciendo que quieres ayudarle a tener éxito.",
+      "Describe la conducta, no el carácter: no eres descuidado.",
+      "Ofrece un siguiente paso o pregunta qué apoyo necesita."
+     ],
+     "q": "¿Cómo prefieres oír que algo debe cambiar?",
+     "c": "Planifica un mensaje amable de mejora con lo que viste y lo que podría ayudar."
+    },
+    "fr": {
+     "t": "Un feedback constructif et bienveillant",
+     "g": "Signaler des améliorations en respectant la personne.",
+     "p": [
+      "Commence en disant que tu veux l'aider à réussir.",
+      "Décris le comportement, pas le caractère : pas tu es négligent.",
+      "Propose une prochaine étape ou demande quel soutien lui faut."
+     ],
+     "q": "Comment préfères-tu entendre que quelque chose doit changer ?",
+     "c": "Prépare un message d'amélioration bienveillant : ce que tu as vu et ce qui pourrait aider."
+    },
+    "it": {
+     "t": "Feedback costruttivo con gentilezza",
+     "g": "Indicare miglioramenti rispettando la persona.",
+     "p": [
+      "Comincia dicendo che vuoi aiutarla ad avere successo.",
+      "Descrivi il comportamento, non il carattere: non sei trascurato.",
+      "Offri un passo successivo o chiedi di quale supporto ha bisogno."
+     ],
+     "q": "Come preferisci sentirti dire che qualcosa deve cambiare?",
+     "c": "Pianifica un messaggio gentile di miglioramento con ciò che hai visto e ciò che potrebbe aiutare."
+    },
+    "pt": {
+     "t": "Feedback construtivo com simpatia",
+     "g": "Apontar melhorias respeitando a pessoa.",
+     "p": [
+      "Começa por dizer que queres ajudá-la a ter sucesso.",
+      "Descreve o comportamento, não o carácter: não és descuidado.",
+      "Oferece um próximo passo ou pergunta de que apoio precisa."
+     ],
+     "q": "Como preferes ouvir que algo precisa de mudar?",
+     "c": "Planeia uma mensagem simpática de melhoria com o que viste e o que poderia ajudar."
+    },
+    "pt_BR": {
+     "t": "Feedback construtivo com gentileza",
+     "g": "Apontar melhorias respeitando a pessoa.",
+     "p": [
+      "Comece dizendo que quer ajudá-la a ter sucesso.",
+      "Descreva o comportamento, não o caráter: não diga você é descuidado.",
+      "Ofereça um próximo passo ou pergunte de que apoio ela precisa."
+     ],
+     "q": "Como você prefere ouvir que algo precisa mudar?",
+     "c": "Planeje uma mensagem gentil de melhoria com o que viu e o que poderia ajudar."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Feedback in the moment",
+     "g": "Give small, quick feedback often instead of saving it for reviews.",
+     "p": [
+      "Small and soon beats big and late.",
+      "A ten-second comment right after an action is easiest to use.",
+      "Ask first: can I share a quick thought on that?"
+     ],
+     "q": "Would you rather get feedback right away or later, and why?",
+     "c": "Give one quick, kind piece of feedback today, within minutes of the moment."
+    },
+    "de": {
+     "t": "Feedback im Moment",
+     "g": "Kleines, schnelles Feedback oft geben, statt alles für Gespräche aufzusparen.",
+     "p": [
+      "Klein und früh schlägt groß und spät.",
+      "Ein zehnsekündiger Kommentar direkt nach einer Handlung ist am nützlichsten.",
+      "Frage zuerst: Darf ich dazu kurz etwas sagen?"
+     ],
+     "q": "Möchtest du Feedback lieber sofort oder später, und warum?",
+     "c": "Gib heute ein kurzes freundliches Feedback innerhalb von Minuten nach dem Moment."
+    },
+    "es": {
+     "t": "Feedback en el momento",
+     "g": "Dar feedback pequeño y rápido a menudo, en vez de guardarlo para evaluaciones.",
+     "p": [
+      "Pequeño y pronto vale más que grande y tarde.",
+      "Un comentario de diez segundos justo después de una acción es lo más útil.",
+      "Pregunta primero: ¿puedo comentarte algo rápido sobre eso?"
+     ],
+     "q": "¿Prefieres recibir feedback enseguida o más tarde, y por qué?",
+     "c": "Da hoy un feedback breve y amable, a los pocos minutos del momento."
+    },
+    "fr": {
+     "t": "Le feedback sur le moment",
+     "g": "Donner souvent de petits feedbacks rapides plutôt que d'attendre les bilans.",
+     "p": [
+      "Petit et tôt vaut mieux que gros et tard.",
+      "Un commentaire de dix secondes juste après l'action est le plus utile.",
+      "Demande d'abord : puis-je te dire une petite chose à ce sujet ?"
+     ],
+     "q": "Préfères-tu un feedback tout de suite ou plus tard, et pourquoi ?",
+     "c": "Donne aujourd'hui un petit feedback bienveillant, quelques minutes après le moment."
+    },
+    "it": {
+     "t": "Feedback sul momento",
+     "g": "Dare spesso feedback piccoli e rapidi invece di tenerli per le valutazioni.",
+     "p": [
+      "Piccolo e presto vale più di grande e tardi.",
+      "Un commento di dieci secondi subito dopo un'azione è il più utile.",
+      "Chiedi prima: posso dirti un pensiero veloce su questo?"
+     ],
+     "q": "Preferisci ricevere feedback subito o più tardi, e perché?",
+     "c": "Dai oggi un breve feedback gentile, entro pochi minuti dal momento."
+    },
+    "pt": {
+     "t": "Feedback no momento",
+     "g": "Dar feedback pequeno e rápido com frequência, em vez de o guardar para avaliações.",
+     "p": [
+      "Pequeno e cedo vale mais do que grande e tarde.",
+      "Um comentário de dez segundos logo após uma ação é o mais útil.",
+      "Pergunta primeiro: posso dizer-te uma coisa rápida sobre isso?"
+     ],
+     "q": "Preferes receber feedback logo ou mais tarde, e porquê?",
+     "c": "Dá hoje um feedback curto e simpático, poucos minutos depois do momento."
+    },
+    "pt_BR": {
+     "t": "Feedback no momento",
+     "g": "Dar feedback pequeno e rápido com frequência, em vez de guardar para avaliações.",
+     "p": [
+      "Pequeno e cedo vale mais do que grande e tarde.",
+      "Um comentário de dez segundos logo após uma ação é o mais útil.",
+      "Pergunte primeiro: posso falar uma coisa rápida sobre isso?"
+     ],
+     "q": "Você prefere receber feedback na hora ou depois, e por quê?",
+     "c": "Dê hoje um feedback curto e gentil, poucos minutos depois do momento."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Avoiding feedback mistakes",
+     "g": "Spot common traps like vague comments, sandwiches and judging the person.",
+     "p": [
+      "Vague comments like be better give people nothing to act on.",
+      "The praise sandwich can hide the real message; be clear and kind.",
+      "Judging the person instead of the action puts people on guard."
+     ],
+     "q": "Which feedback mistake have you made or received?",
+     "c": "Rewrite one vague comment into a clear, specific one."
+    },
+    "de": {
+     "t": "Feedback-Fehler vermeiden",
+     "g": "Häufige Fallen erkennen: vage Aussagen, Sandwich und Urteile über die Person.",
+     "p": [
+      "Vage Sätze wie sei besser geben nichts, woran man arbeiten kann.",
+      "Das Lob-Sandwich kann die Botschaft verstecken; sei klar und freundlich.",
+      "Urteile über die Person statt die Handlung machen defensiv."
+     ],
+     "q": "Welchen Feedback-Fehler hast du gemacht oder erlebt?",
+     "c": "Formuliere einen vagen Kommentar in einen klaren, konkreten um."
+    },
+    "es": {
+     "t": "Evitar errores de feedback",
+     "g": "Detectar trampas comunes: comentarios vagos, sándwich y juzgar a la persona.",
+     "p": [
+      "Comentarios vagos como mejora no dan nada con lo que actuar.",
+      "El sándwich de elogios puede esconder el mensaje; sé claro y amable.",
+      "Juzgar a la persona en vez de la acción pone a la defensiva."
+     ],
+     "q": "¿Qué error de feedback has cometido o recibido?",
+     "c": "Reescribe un comentario vago como uno claro y concreto."
+    },
+    "fr": {
+     "t": "Éviter les erreurs de feedback",
+     "g": "Repérer les pièges : remarques vagues, sandwich et jugement de la personne.",
+     "p": [
+      "Des remarques vagues comme fais mieux ne donnent rien à appliquer.",
+      "Le sandwich de compliments peut cacher le message ; sois clair et bienveillant.",
+      "Juger la personne plutôt que l'action la met sur la défensive."
+     ],
+     "q": "Quelle erreur de feedback as-tu faite ou reçue ?",
+     "c": "Réécris une remarque vague en une remarque claire et précise."
+    },
+    "it": {
+     "t": "Evitare errori nel feedback",
+     "g": "Riconoscere trappole comuni: commenti vaghi, sandwich e giudizi sulla persona.",
+     "p": [
+      "Commenti vaghi come migliora non danno nulla su cui agire.",
+      "Il sandwich di elogi può nascondere il messaggio; sii chiaro e gentile.",
+      "Giudicare la persona invece dell'azione mette sulla difensiva."
+     ],
+     "q": "Quale errore di feedback hai fatto o ricevuto?",
+     "c": "Riscrivi un commento vago in uno chiaro e specifico."
+    },
+    "pt": {
+     "t": "Evitar erros de feedback",
+     "g": "Detetar armadilhas comuns: comentários vagos, sanduíche e julgar a pessoa.",
+     "p": [
+      "Comentários vagos como melhora não dão nada em que agir.",
+      "A sanduíche de elogios pode esconder a mensagem; sê claro e simpático.",
+      "Julgar a pessoa em vez da ação põe-na na defensiva."
+     ],
+     "q": "Que erro de feedback já cometeste ou recebeste?",
+     "c": "Reescreve um comentário vago como um claro e específico."
+    },
+    "pt_BR": {
+     "t": "Evitando erros de feedback",
+     "g": "Identificar armadilhas comuns: comentários vagos, sanduíche e julgar a pessoa.",
+     "p": [
+      "Comentários vagos como melhore não dão nada em que agir.",
+      "O sanduíche de elogios pode esconder a mensagem; seja claro e gentil.",
+      "Julgar a pessoa em vez da ação a deixa na defensiva."
+     ],
+     "q": "Que erro de feedback você já cometeu ou recebeu?",
+     "c": "Reescreva um comentário vago como um claro e específico."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Feedback in writing",
+     "g": "Know when written feedback works and how to keep it warm and clear.",
+     "p": [
+      "Writing suits facts, thanks and follow-ups; talk live for sensitive topics.",
+      "Keep it short, specific and kind, and read it twice before sending.",
+      "Tone is easy to misread, so add a human line, like thank you for your effort."
+     ],
+     "q": "Do written messages ever land differently than you meant?",
+     "c": "Write one thank-you note with a specific detail and send it."
+    },
+    "de": {
+     "t": "Feedback schriftlich geben",
+     "g": "Wissen, wann schriftliches Feedback passt und wie es warm und klar bleibt.",
+     "p": [
+      "Schriftlich passt für Fakten, Dank und Nachfassen; heikles besprichst du persönlich.",
+      "Halte es kurz, konkret und freundlich und lies es vor dem Senden zweimal.",
+      "Ton wird leicht missverstanden, also füge eine menschliche Zeile hinzu."
+     ],
+     "q": "Kommen schriftliche Nachrichten manchmal anders an, als du meintest?",
+     "c": "Schreibe eine Dankesnachricht mit konkretem Detail und sende sie."
+    },
+    "es": {
+     "t": "Feedback por escrito",
+     "g": "Saber cuándo funciona el feedback escrito y cómo mantenerlo cálido y claro.",
+     "p": [
+      "Escribir sirve para datos, gracias y seguimiento; lo delicado, mejor en persona.",
+      "Hazlo breve, concreto y amable, y léelo dos veces antes de enviar.",
+      "El tono se malinterpreta fácil, así que añade una línea humana."
+     ],
+     "q": "¿Alguna vez un mensaje escrito llegó distinto a lo que querías?",
+     "c": "Escribe una nota de agradecimiento con un detalle concreto y envíala."
+    },
+    "fr": {
+     "t": "Le feedback écrit",
+     "g": "Savoir quand l'écrit fonctionne et comment le garder chaleureux et clair.",
+     "p": [
+      "L'écrit convient aux faits, aux remerciements et aux relances ; le délicat se dit en direct.",
+      "Reste bref, précis et bienveillant, et relis deux fois avant d'envoyer.",
+      "Le ton se comprend mal facilement : ajoute une ligne humaine."
+     ],
+     "q": "Un message écrit est-il déjà arrivé autrement que prévu ?",
+     "c": "Écris un mot de remerciement avec un détail précis et envoie-le."
+    },
+    "it": {
+     "t": "Feedback scritto",
+     "g": "Sapere quando il feedback scritto funziona e come mantenerlo caldo e chiaro.",
+     "p": [
+      "Lo scritto va bene per fatti, ringraziamenti e solleciti; il delicato a voce.",
+      "Sii breve, specifico e gentile e rileggi due volte prima di inviare.",
+      "Il tono si fraintende facilmente, quindi aggiungi una riga umana."
+     ],
+     "q": "Un messaggio scritto è mai arrivato diverso da come volevi?",
+     "c": "Scrivi un biglietto di ringraziamento con un dettaglio specifico e invialo."
+    },
+    "pt": {
+     "t": "Feedback por escrito",
+     "g": "Saber quando o feedback escrito funciona e como mantê-lo caloroso e claro.",
+     "p": [
+      "Escrever serve para factos, agradecimentos e seguimentos; o delicado, a falar.",
+      "Sê breve, específico e simpático e lê duas vezes antes de enviar.",
+      "O tom interpreta-se mal com facilidade, por isso junta uma linha humana."
+     ],
+     "q": "Alguma mensagem escrita chegou diferente do que querias?",
+     "c": "Escreve uma nota de agradecimento com um detalhe específico e envia-a."
+    },
+    "pt_BR": {
+     "t": "Feedback por escrito",
+     "g": "Saber quando o feedback escrito funciona e como mantê-lo caloroso e claro.",
+     "p": [
+      "Escrever serve para fatos, agradecimentos e acompanhamentos; o delicado, ao vivo.",
+      "Seja breve, específico e gentil e leia duas vezes antes de enviar.",
+      "O tom se interpreta mal com facilidade, então acrescente uma linha humana."
+     ],
+     "q": "Alguma mensagem escrita chegou diferente do que você queria?",
+     "c": "Escreva um bilhete de agradecimento com um detalhe específico e envie."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking questions instead of telling",
+     "g": "Help people find improvements themselves through good questions.",
+     "p": [
+      "People remember solutions they find themselves.",
+      "Try: how do you think that went? What would you do differently?",
+      "Listen to the answer, then add your view only if needed."
+     ],
+     "q": "Think of a time a question helped you see something new.",
+     "c": "Use one coaching question today instead of giving advice."
+    },
+    "de": {
+     "t": "Fragen statt Sagen",
+     "g": "Menschen durch gute Fragen helfen, Verbesserungen selbst zu finden.",
+     "p": [
+      "Lösungen, die man selbst findet, merkt man sich besser.",
+      "Probiere: Wie lief es deiner Meinung nach? Was würdest du anders machen?",
+      "Höre zu und ergänze deine Sicht nur, wenn nötig."
+     ],
+     "q": "Denke an eine Frage, die dir etwas Neues gezeigt hat.",
+     "c": "Stelle heute eine Coaching-Frage, statt einen Rat zu geben."
+    },
+    "es": {
+     "t": "Preguntar en lugar de decir",
+     "g": "Ayudar a las personas a descubrir mejoras por sí mismas con buenas preguntas.",
+     "p": [
+      "La gente recuerda las soluciones que encuentra por sí misma.",
+      "Prueba: ¿cómo crees que fue? ¿Qué harías distinto?",
+      "Escucha la respuesta y añade tu punto de vista solo si hace falta."
+     ],
+     "q": "Piensa en una vez que una pregunta te hizo ver algo nuevo.",
+     "c": "Usa hoy una pregunta de coaching en vez de dar un consejo."
+    },
+    "fr": {
+     "t": "Questionner plutôt que dire",
+     "g": "Aider chacun à trouver lui-même des améliorations grâce à de bonnes questions.",
+     "p": [
+      "On retient mieux les solutions que l'on trouve soi-même.",
+      "Essaie : comment penses-tu que cela s'est passé ? Que ferais-tu autrement ?",
+      "Écoute la réponse, puis ajoute ton avis seulement si besoin."
+     ],
+     "q": "Pense à un moment où une question t'a fait voir autre chose.",
+     "c": "Utilise aujourd'hui une question de coaching au lieu de donner un conseil."
+    },
+    "it": {
+     "t": "Domandare invece di dire",
+     "g": "Aiutare le persone a trovare miglioramenti da sole con buone domande.",
+     "p": [
+      "Le persone ricordano le soluzioni che trovano da sole.",
+      "Prova: come pensi sia andata? Cosa faresti di diverso?",
+      "Ascolta la risposta e aggiungi il tuo parere solo se serve."
+     ],
+     "q": "Pensa a una volta in cui una domanda ti ha fatto vedere qualcosa di nuovo.",
+     "c": "Usa oggi una domanda di coaching invece di dare un consiglio."
+    },
+    "pt": {
+     "t": "Perguntar em vez de dizer",
+     "g": "Ajudar as pessoas a descobrir melhorias por si com boas perguntas.",
+     "p": [
+      "As pessoas lembram-se das soluções que encontram sozinhas.",
+      "Experimenta: como achas que correu? O que farias de diferente?",
+      "Ouve a resposta e acrescenta a tua opinião só se for preciso."
+     ],
+     "q": "Pensa numa vez em que uma pergunta te fez ver algo novo.",
+     "c": "Usa hoje uma pergunta de coaching em vez de dar um conselho."
+    },
+    "pt_BR": {
+     "t": "Perguntar em vez de dizer",
+     "g": "Ajudar as pessoas a descobrir melhorias por conta própria com boas perguntas.",
+     "p": [
+      "As pessoas lembram das soluções que encontram sozinhas.",
+      "Experimente: como você acha que foi? O que faria diferente?",
+      "Ouça a resposta e acrescente sua opinião só se precisar."
+     ],
+     "q": "Pense numa vez em que uma pergunta fez você ver algo novo.",
+     "c": "Use hoje uma pergunta de coaching em vez de dar um conselho."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Following up after feedback",
+     "g": "Check progress and recognise change after a conversation.",
+     "p": [
+      "Feedback without follow-up feels like it did not matter.",
+      "Set a small check-in date during the conversation itself.",
+      "When you see improvement, name it, even if it is small."
+     ],
+     "q": "Has anyone ever noticed your progress after feedback?",
+     "c": "Pick one past feedback and check in or celebrate the progress today."
+    },
+    "de": {
+     "t": "Nachfassen nach dem Feedback",
+     "g": "Fortschritt prüfen und Veränderung nach einem Gespräch würdigen.",
+     "p": [
+      "Feedback ohne Nachfassen wirkt, als wäre es egal gewesen.",
+      "Vereinbare schon im Gespräch einen kleinen Termin zum Nachfragen.",
+      "Siehst du Verbesserung, benenne sie, auch wenn sie klein ist."
+     ],
+     "q": "Hat jemand deinen Fortschritt nach Feedback bemerkt?",
+     "c": "Wähle ein früheres Feedback und frage nach oder würdige den Fortschritt heute."
+    },
+    "es": {
+     "t": "Dar seguimiento tras el feedback",
+     "g": "Revisar el progreso y reconocer el cambio después de una conversación.",
+     "p": [
+      "El feedback sin seguimiento parece que no importó.",
+      "Fija una pequeña fecha de revisión en la propia conversación.",
+      "Cuando veas mejoría, nómbrala, aunque sea pequeña."
+     ],
+     "q": "¿Alguien notó alguna vez tu progreso tras un feedback?",
+     "c": "Elige un feedback pasado y haz seguimiento o celebra el progreso hoy."
+    },
+    "fr": {
+     "t": "Faire le suivi après un feedback",
+     "g": "Vérifier les progrès et reconnaître le changement après un échange.",
+     "p": [
+      "Un feedback sans suivi donne l'impression de n'avoir servi à rien.",
+      "Fixe un petit point de suivi pendant l'échange lui-même.",
+      "Quand tu vois une amélioration, nomme-la, même petite."
+     ],
+     "q": "Quelqu'un a-t-il déjà remarqué tes progrès après un feedback ?",
+     "c": "Choisis un ancien feedback et fais un suivi ou célèbre le progrès aujourd'hui."
+    },
+    "it": {
+     "t": "Fare seguito dopo il feedback",
+     "g": "Verificare i progressi e riconoscere il cambiamento dopo una conversazione.",
+     "p": [
+      "Un feedback senza seguito sembra non essere servito.",
+      "Fissa una piccola data di verifica durante la conversazione stessa.",
+      "Quando vedi un miglioramento, nominalo, anche se piccolo."
+     ],
+     "q": "Qualcuno ha mai notato i tuoi progressi dopo un feedback?",
+     "c": "Scegli un feedback passato e fai seguito o celebra il progresso oggi."
+    },
+    "pt": {
+     "t": "Fazer seguimento após o feedback",
+     "g": "Verificar o progresso e reconhecer a mudança depois de uma conversa.",
+     "p": [
+      "Feedback sem seguimento parece que não importou.",
+      "Marca uma pequena data de verificação na própria conversa.",
+      "Quando vires melhoria, nomeia-a, mesmo que pequena."
+     ],
+     "q": "Alguém já reparou no teu progresso depois de um feedback?",
+     "c": "Escolhe um feedback passado e faz seguimento ou celebra o progresso hoje."
+    },
+    "pt_BR": {
+     "t": "Acompanhar depois do feedback",
+     "g": "Verificar o progresso e reconhecer a mudança depois de uma conversa.",
+     "p": [
+      "Feedback sem acompanhamento parece que não importou.",
+      "Marque uma pequena data de verificação na própria conversa.",
+      "Quando vir melhoria, nomeie, mesmo que pequena."
+     ],
+     "q": "Alguém já notou seu progresso depois de um feedback?",
+     "c": "Escolha um feedback passado e acompanhe ou comemore o progresso hoje."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Creating a feedback habit in your team",
+     "g": "Use rituals that make feedback normal and safe for everyone.",
+     "p": [
+      "Try a regular question, like what went well and what could be better?",
+      "Keep a steady rhythm: a weekly check-in or short end-of-project talk.",
+      "Model it: give and ask for feedback yourself so others follow."
+     ],
+     "q": "What small ritual could make feedback feel normal in your group?",
+     "c": "Propose one tiny feedback ritual to your team or group and test it."
+    },
+    "de": {
+     "t": "Eine Feedbackkultur im Team schaffen",
+     "g": "Rituale nutzen, die Feedback normal und sicher für alle machen.",
+     "p": [
+      "Probiere eine feste Frage: Was lief gut, was könnte besser sein?",
+      "Halte einen festen Rhythmus: wöchentlicher Check-in oder kurzes Projektende-Gespräch.",
+      "Gehe voran: gib und erbitte selbst Feedback, damit andere folgen."
+     ],
+     "q": "Welches kleine Ritual würde Feedback in deiner Gruppe normal machen?",
+     "c": "Schlage deinem Team ein winziges Feedback-Ritual vor und teste es."
+    },
+    "es": {
+     "t": "Crear un hábito de feedback en tu equipo",
+     "g": "Usar rituales que hagan el feedback normal y seguro para todos.",
+     "p": [
+      "Prueba una pregunta regular: ¿qué fue bien y qué podría mejorar?",
+      "Mantén un ritmo estable: seguimiento semanal o charla breve al cerrar un proyecto.",
+      "Da ejemplo: da y pide feedback tú mismo para que otros te sigan."
+     ],
+     "q": "¿Qué pequeño ritual haría normal el feedback en tu grupo?",
+     "c": "Propón a tu equipo un ritual mínimo de feedback y pruébalo."
+    },
+    "fr": {
+     "t": "Créer une habitude de feedback dans ton équipe",
+     "g": "Utiliser des rituels qui rendent le feedback normal et sûr pour tous.",
+     "p": [
+      "Essaie une question régulière : qu'est-ce qui a marché, que améliorer ?",
+      "Garde un rythme stable : point hebdomadaire ou court bilan de fin de projet.",
+      "Montre l'exemple : donne et demande du feedback pour que d'autres suivent."
+     ],
+     "q": "Quel petit rituel rendrait le feedback naturel dans ton groupe ?",
+     "c": "Propose à ton équipe un mini-rituel de feedback et teste-le."
+    },
+    "it": {
+     "t": "Creare un'abitudine di feedback nel team",
+     "g": "Usare rituali che rendano il feedback normale e sicuro per tutti.",
+     "p": [
+      "Prova una domanda regolare: cosa è andato bene e cosa si può migliorare?",
+      "Mantieni un ritmo costante: check-in settimanale o breve chiacchierata a fine progetto.",
+      "Dai l'esempio: dai e chiedi feedback tu stesso perché gli altri ti seguano."
+     ],
+     "q": "Quale piccolo rituale renderebbe normale il feedback nel tuo gruppo?",
+     "c": "Proponi al team un piccolissimo rituale di feedback e provalo."
+    },
+    "pt": {
+     "t": "Criar o hábito de feedback na equipa",
+     "g": "Usar rituais que tornem o feedback normal e seguro para todos.",
+     "p": [
+      "Experimenta uma pergunta regular: o que correu bem e o que pode melhorar?",
+      "Mantém um ritmo estável: ponto semanal ou conversa curta no fim do projeto.",
+      "Dá o exemplo: dá e pede feedback para que os outros te sigam."
+     ],
+     "q": "Que pequeno ritual tornaria o feedback normal no teu grupo?",
+     "c": "Propõe à equipa um ritual mínimo de feedback e experimenta-o."
+    },
+    "pt_BR": {
+     "t": "Criando o hábito de feedback no time",
+     "g": "Usar rituais que tornem o feedback normal e seguro para todos.",
+     "p": [
+      "Experimente uma pergunta regular: o que foi bem e o que pode melhorar?",
+      "Mantenha um ritmo estável: ponto semanal ou conversa curta no fim do projeto.",
+      "Dê o exemplo: dê e peça feedback para os outros seguirem você."
+     ],
+     "q": "Que pequeno ritual tornaria o feedback normal no seu grupo?",
+     "c": "Proponha ao time um ritual mínimo de feedback e teste."
+    }
+   }
+  }
+ ]
+}

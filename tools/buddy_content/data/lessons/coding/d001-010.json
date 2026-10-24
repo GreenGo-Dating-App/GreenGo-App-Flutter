@@ -1,0 +1,835 @@
+{
+ "topic": "coding",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to coding",
+     "g": "Learn what code is and why anyone can learn it step by step.",
+     "p": [
+      "Code is a list of precise instructions that a computer follows.",
+      "You do not need to be a math genius, just curious and patient.",
+      "Every expert started with tiny programs, just like you today."
+     ],
+     "q": "What would you love to build or automate one day?",
+     "c": "Write down one boring task you do often that a program could do for you."
+    },
+    "de": {
+     "t": "Willkommen beim Programmieren",
+     "g": "Lerne, was Code ist und warum jeder ihn Schritt für Schritt lernen kann.",
+     "p": [
+      "Code ist eine Liste genauer Anweisungen, die ein Computer befolgt.",
+      "Du musst kein Mathe-Genie sein, nur neugierig und geduldig.",
+      "Jeder Profi hat mit winzigen Programmen angefangen, genau wie du heute."
+     ],
+     "q": "Was würdest du gern einmal bauen oder automatisieren?",
+     "c": "Notiere eine lästige Aufgabe, die du oft erledigst und die ein Programm übernehmen könnte."
+    },
+    "es": {
+     "t": "Bienvenido a la programación",
+     "g": "Descubre qué es el código y por qué cualquiera puede aprenderlo paso a paso.",
+     "p": [
+      "El código es una lista de instrucciones precisas que un ordenador sigue.",
+      "No hace falta ser un genio de las mates, solo curiosidad y paciencia.",
+      "Todo experto empezó con programas diminutos, igual que tú hoy."
+     ],
+     "q": "¿Qué te gustaría construir o automatizar algún día?",
+     "c": "Anota una tarea aburrida que haces a menudo y que un programa podría hacer por ti."
+    },
+    "fr": {
+     "t": "Bienvenue dans le code",
+     "g": "Découvre ce qu'est le code et pourquoi chacun peut l'apprendre pas à pas.",
+     "p": [
+      "Le code est une liste d'instructions précises qu'un ordinateur suit.",
+      "Pas besoin d'être un génie des maths, juste curieux et patient.",
+      "Chaque expert a commencé par de minuscules programmes, comme toi aujourd'hui."
+     ],
+     "q": "Qu'aimerais-tu construire ou automatiser un jour ?",
+     "c": "Note une tâche ennuyeuse que tu fais souvent et qu'un programme pourrait faire pour toi."
+    },
+    "it": {
+     "t": "Benvenuto nella programmazione",
+     "g": "Scopri cos'è il codice e perché chiunque può impararlo passo dopo passo.",
+     "p": [
+      "Il codice è un elenco di istruzioni precise che un computer segue.",
+      "Non serve essere un genio della matematica, bastano curiosità e pazienza.",
+      "Ogni esperto è partito da programmi minuscoli, proprio come te oggi."
+     ],
+     "q": "Cosa ti piacerebbe costruire o automatizzare un giorno?",
+     "c": "Scrivi un compito noioso che fai spesso e che un programma potrebbe fare per te."
+    },
+    "pt": {
+     "t": "Bem-vindo à programação",
+     "g": "Descobre o que é o código e porque qualquer pessoa o pode aprender passo a passo.",
+     "p": [
+      "O código é uma lista de instruções precisas que um computador segue.",
+      "Não precisas de ser génio da matemática, só curiosidade e paciência.",
+      "Todos os especialistas começaram com programas minúsculos, como tu hoje."
+     ],
+     "q": "O que gostarias de construir ou automatizar um dia?",
+     "c": "Escreve uma tarefa aborrecida que fazes muitas vezes e que um programa podia fazer por ti."
+    },
+    "pt_BR": {
+     "t": "Boas-vindas à programação",
+     "g": "Descubra o que é código e por que qualquer pessoa pode aprender passo a passo.",
+     "p": [
+      "Código é uma lista de instruções precisas que o computador segue.",
+      "Você não precisa ser gênio da matemática, só curioso e paciente.",
+      "Todo especialista começou com programas minúsculos, como você hoje."
+     ],
+     "q": "O que você gostaria de construir ou automatizar um dia?",
+     "c": "Anote uma tarefa chata que você faz sempre e que um programa poderia fazer por você."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How computers follow instructions",
+     "g": "See why computers need exact, ordered instructions to do anything.",
+     "p": [
+      "A computer runs your instructions one by one, from top to bottom.",
+      "It is very fast but takes everything literally and cannot guess.",
+      "One small typo can change the result, so precision matters."
+     ],
+     "q": "If you had to explain making tea to a robot, where would you start?",
+     "c": "Write the exact steps for making a sandwich, so precise a robot could follow them."
+    },
+    "de": {
+     "t": "Wie Computer Anweisungen befolgen",
+     "g": "Verstehe, warum Computer genaue, geordnete Anweisungen brauchen.",
+     "p": [
+      "Ein Computer führt deine Anweisungen nacheinander von oben nach unten aus.",
+      "Er ist sehr schnell, nimmt aber alles wörtlich und kann nicht raten.",
+      "Ein kleiner Tippfehler kann das Ergebnis ändern, deshalb zählt Genauigkeit."
+     ],
+     "q": "Wie würdest du einem Roboter erklären, Tee zu kochen? Wo fängst du an?",
+     "c": "Schreibe die genauen Schritte für ein Sandwich so präzise auf, dass ein Roboter sie befolgen könnte."
+    },
+    "es": {
+     "t": "Cómo siguen instrucciones los ordenadores",
+     "g": "Entiende por qué un ordenador necesita instrucciones exactas y ordenadas.",
+     "p": [
+      "Un ordenador ejecuta tus instrucciones una a una, de arriba abajo.",
+      "Es muy rápido, pero lo toma todo al pie de la letra y no adivina.",
+      "Un pequeño error de escritura puede cambiar el resultado: la precisión importa."
+     ],
+     "q": "Si tuvieras que explicarle a un robot cómo hacer té, ¿por dónde empezarías?",
+     "c": "Escribe los pasos exactos para hacer un bocadillo, tan precisos que un robot pueda seguirlos."
+    },
+    "fr": {
+     "t": "Comment les ordinateurs suivent les instructions",
+     "g": "Comprends pourquoi un ordinateur a besoin d'instructions exactes et ordonnées.",
+     "p": [
+      "Un ordinateur exécute tes instructions une par une, de haut en bas.",
+      "Il est très rapide, mais prend tout au pied de la lettre et ne devine pas.",
+      "Une petite faute de frappe peut changer le résultat : la précision compte."
+     ],
+     "q": "Si tu devais expliquer à un robot comment faire du thé, par où commencerais-tu ?",
+     "c": "Écris les étapes exactes pour faire un sandwich, assez précises pour qu'un robot les suive."
+    },
+    "it": {
+     "t": "Come i computer seguono le istruzioni",
+     "g": "Capisci perché il computer ha bisogno di istruzioni esatte e in ordine.",
+     "p": [
+      "Un computer esegue le tue istruzioni una alla volta, dall'alto in basso.",
+      "È velocissimo, ma prende tutto alla lettera e non indovina.",
+      "Un piccolo errore di battitura può cambiare il risultato: la precisione conta."
+     ],
+     "q": "Se dovessi spiegare a un robot come fare il tè, da dove inizieresti?",
+     "c": "Scrivi i passaggi esatti per fare un panino, così precisi che un robot possa seguirli."
+    },
+    "pt": {
+     "t": "Como os computadores seguem instruções",
+     "g": "Percebe porque o computador precisa de instruções exatas e ordenadas.",
+     "p": [
+      "Um computador executa as tuas instruções uma a uma, de cima para baixo.",
+      "É muito rápido, mas leva tudo à letra e não adivinha.",
+      "Um pequeno erro de escrita pode mudar o resultado: a precisão importa."
+     ],
+     "q": "Se tivesses de explicar a um robô como fazer chá, por onde começavas?",
+     "c": "Escreve os passos exatos para fazer uma sandes, tão precisos que um robô os possa seguir."
+    },
+    "pt_BR": {
+     "t": "Como os computadores seguem instruções",
+     "g": "Entenda por que o computador precisa de instruções exatas e em ordem.",
+     "p": [
+      "O computador executa suas instruções uma a uma, de cima para baixo.",
+      "Ele é muito rápido, mas leva tudo ao pé da letra e não adivinha.",
+      "Um errinho de digitação pode mudar o resultado: precisão importa."
+     ],
+     "q": "Se você tivesse que explicar a um robô como fazer chá, por onde começaria?",
+     "c": "Escreva os passos exatos para fazer um sanduíche, tão precisos que um robô consiga seguir."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Programming languages",
+     "g": "Meet a few popular languages and what each one is good at.",
+     "p": [
+      "Python is friendly and popular for data, automation and AI.",
+      "JavaScript makes websites interactive; Java and Swift power many apps.",
+      "All languages share the same core ideas, so learning one helps with the next."
+     ],
+     "q": "Which kind of project excites you most: websites, apps, games or data?",
+     "c": "Pick one app you use daily and guess which language might be behind it, then check online."
+    },
+    "de": {
+     "t": "Programmiersprachen",
+     "g": "Lerne einige beliebte Sprachen kennen und wofür sie gut sind.",
+     "p": [
+      "Python ist freundlich und beliebt für Daten, Automatisierung und KI.",
+      "JavaScript macht Websites interaktiv; Java und Swift treiben viele Apps an.",
+      "Alle Sprachen teilen dieselben Grundideen, das Lernen einer hilft bei der nächsten."
+     ],
+     "q": "Welches Projekt reizt dich am meisten: Websites, Apps, Spiele oder Daten?",
+     "c": "Wähle eine App, die du täglich nutzt, rate die Sprache dahinter und prüfe es online."
+    },
+    "es": {
+     "t": "Lenguajes de programación",
+     "g": "Conoce algunos lenguajes populares y para qué sirve cada uno.",
+     "p": [
+      "Python es amigable y popular para datos, automatización e IA.",
+      "JavaScript hace interactivas las webs; Java y Swift mueven muchas apps.",
+      "Todos comparten las mismas ideas básicas: aprender uno ayuda con el siguiente."
+     ],
+     "q": "¿Qué proyecto te emociona más: webs, apps, juegos o datos?",
+     "c": "Elige una app que uses a diario, adivina qué lenguaje hay detrás y compruébalo en internet."
+    },
+    "fr": {
+     "t": "Les langages de programmation",
+     "g": "Découvre quelques langages populaires et à quoi chacun sert.",
+     "p": [
+      "Python est accessible et très utilisé pour les données, l'automatisation et l'IA.",
+      "JavaScript rend les sites interactifs ; Java et Swift animent beaucoup d'applis.",
+      "Tous partagent les mêmes idées de base : en apprendre un aide pour le suivant."
+     ],
+     "q": "Quel projet t'enthousiasme le plus : sites, applis, jeux ou données ?",
+     "c": "Choisis une appli que tu utilises chaque jour, devine son langage, puis vérifie en ligne."
+    },
+    "it": {
+     "t": "Linguaggi di programmazione",
+     "g": "Conosci alcuni linguaggi popolari e a cosa serve ciascuno.",
+     "p": [
+      "Python è amichevole e diffuso per dati, automazione e IA.",
+      "JavaScript rende interattivi i siti; Java e Swift muovono molte app.",
+      "Tutti condividono le stesse idee di base: impararne uno aiuta con il successivo."
+     ],
+     "q": "Quale progetto ti entusiasma di più: siti, app, giochi o dati?",
+     "c": "Scegli un'app che usi ogni giorno, indovina il linguaggio dietro e verifica online."
+    },
+    "pt": {
+     "t": "Linguagens de programação",
+     "g": "Conhece algumas linguagens populares e para que serve cada uma.",
+     "p": [
+      "Python é simpático e popular em dados, automação e IA.",
+      "JavaScript torna os sites interativos; Java e Swift movem muitas apps.",
+      "Todas partilham as mesmas ideias base, por isso aprender uma ajuda na seguinte."
+     ],
+     "q": "Que projeto te entusiasma mais: sites, apps, jogos ou dados?",
+     "c": "Escolhe uma app que uses todos os dias, adivinha a linguagem por trás e confirma online."
+    },
+    "pt_BR": {
+     "t": "Linguagens de programação",
+     "g": "Conheça algumas linguagens populares e para que serve cada uma.",
+     "p": [
+      "Python é amigável e popular em dados, automação e IA.",
+      "JavaScript deixa os sites interativos; Java e Swift movem muitos apps.",
+      "Todas compartilham as mesmas ideias básicas, então aprender uma ajuda na próxima."
+     ],
+     "q": "Que projeto mais te empolga: sites, apps, jogos ou dados?",
+     "c": "Escolha um app que você usa todo dia, adivinhe a linguagem por trás e confira online."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why we start with Python",
+     "g": "Understand why Python is a great first language.",
+     "p": [
+      "Python code is short and reads almost like plain English.",
+      "Less punctuation means more focus on ideas, not on strict symbols.",
+      "Real companies use Python for websites, science, automation and AI."
+     ],
+     "q": "Does reading code feel scary or exciting to you right now?",
+     "c": "Read this line and guess what it does: print('I love learning') then say it out loud."
+    },
+    "de": {
+     "t": "Warum wir mit Python starten",
+     "g": "Verstehe, warum Python eine tolle erste Sprache ist.",
+     "p": [
+      "Python-Code ist kurz und liest sich fast wie normales Englisch.",
+      "Weniger Satzzeichen heißt mehr Fokus auf Ideen statt auf strenge Symbole.",
+      "Echte Firmen nutzen Python für Websites, Wissenschaft, Automatisierung und KI."
+     ],
+     "q": "Wirkt Code lesen für dich gerade beängstigend oder spannend?",
+     "c": "Lies diese Zeile und rate, was sie tut: print('I love learning'). Sag es laut."
+    },
+    "es": {
+     "t": "Por qué empezamos con Python",
+     "g": "Entiende por qué Python es un gran primer lenguaje.",
+     "p": [
+      "El código Python es corto y se lee casi como inglés normal.",
+      "Menos signos de puntuación significa más foco en las ideas.",
+      "Empresas reales usan Python para webs, ciencia, automatización e IA."
+     ],
+     "q": "¿Leer código te da miedo o te emociona ahora mismo?",
+     "c": "Lee esta línea y adivina qué hace: print('I love learning'). Dilo en voz alta."
+    },
+    "fr": {
+     "t": "Pourquoi commencer par Python",
+     "g": "Comprends pourquoi Python est un excellent premier langage.",
+     "p": [
+      "Le code Python est court et se lit presque comme de l'anglais courant.",
+      "Moins de ponctuation, c'est plus d'attention aux idées qu'aux symboles.",
+      "De vraies entreprises utilisent Python pour le web, la science, l'automatisation et l'IA."
+     ],
+     "q": "Lire du code te fait-il peur ou t'enthousiasme-t-il en ce moment ?",
+     "c": "Lis cette ligne et devine ce qu'elle fait : print('I love learning'). Dis-le à voix haute."
+    },
+    "it": {
+     "t": "Perché iniziamo da Python",
+     "g": "Capisci perché Python è un ottimo primo linguaggio.",
+     "p": [
+      "Il codice Python è breve e si legge quasi come inglese normale.",
+      "Meno punteggiatura significa più attenzione alle idee che ai simboli.",
+      "Aziende vere usano Python per siti, scienza, automazione e IA."
+     ],
+     "q": "Leggere codice ti spaventa o ti entusiasma in questo momento?",
+     "c": "Leggi questa riga e indovina cosa fa: print('I love learning'). Dillo ad alta voce."
+    },
+    "pt": {
+     "t": "Porque começamos por Python",
+     "g": "Percebe porque o Python é uma ótima primeira linguagem.",
+     "p": [
+      "O código Python é curto e lê-se quase como inglês normal.",
+      "Menos pontuação significa mais foco nas ideias do que nos símbolos.",
+      "Empresas reais usam Python em sites, ciência, automação e IA."
+     ],
+     "q": "Ler código assusta-te ou entusiasma-te neste momento?",
+     "c": "Lê esta linha e adivinha o que faz: print('I love learning'). Diz em voz alta."
+    },
+    "pt_BR": {
+     "t": "Por que começamos com Python",
+     "g": "Entenda por que Python é uma ótima primeira linguagem.",
+     "p": [
+      "O código Python é curto e se lê quase como inglês normal.",
+      "Menos pontuação significa mais foco nas ideias do que nos símbolos.",
+      "Empresas de verdade usam Python em sites, ciência, automação e IA."
+     ],
+     "q": "Ler código te assusta ou te empolga agora?",
+     "c": "Leia esta linha e adivinhe o que faz: print('I love learning'). Diga em voz alta."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting up to code",
+     "g": "Get a place to write and run Python, installed or online.",
+     "p": [
+      "You can install Python on your computer or use a free online editor.",
+      "An editor is where you type code; running it shows the result.",
+      "Online editors need no install, so they are perfect to start today."
+     ],
+     "q": "Do you prefer installing things or trying them in the browser first?",
+     "c": "Open a free online Python editor, type print(2 + 3) and run it. Did you get 5?"
+    },
+    "de": {
+     "t": "Die Programmierumgebung einrichten",
+     "g": "Besorge dir einen Ort zum Schreiben und Ausführen von Python.",
+     "p": [
+      "Du kannst Python installieren oder einen kostenlosen Online-Editor nutzen.",
+      "Im Editor tippst du Code; beim Ausführen siehst du das Ergebnis.",
+      "Online-Editoren brauchen keine Installation und eignen sich zum Start heute."
+     ],
+     "q": "Installierst du lieber Programme oder probierst du erst im Browser?",
+     "c": "Öffne einen kostenlosen Online-Python-Editor, tippe print(2 + 3) und führe aus. Kam 5 heraus?"
+    },
+    "es": {
+     "t": "Preparar tu entorno para programar",
+     "g": "Consigue un lugar donde escribir y ejecutar Python.",
+     "p": [
+      "Puedes instalar Python en tu equipo o usar un editor online gratuito.",
+      "En el editor escribes el código; al ejecutarlo ves el resultado.",
+      "Los editores online no necesitan instalación: ideales para empezar hoy."
+     ],
+     "q": "¿Prefieres instalar cosas o probarlas primero en el navegador?",
+     "c": "Abre un editor de Python online, escribe print(2 + 3) y ejecútalo. ¿Te salió 5?"
+    },
+    "fr": {
+     "t": "Préparer son environnement",
+     "g": "Procure-toi un endroit pour écrire et lancer du Python.",
+     "p": [
+      "Tu peux installer Python sur ton ordinateur ou utiliser un éditeur en ligne gratuit.",
+      "L'éditeur sert à taper le code ; l'exécuter affiche le résultat.",
+      "Les éditeurs en ligne n'exigent aucune installation : parfaits pour débuter aujourd'hui."
+     ],
+     "q": "Préfères-tu installer des outils ou les essayer d'abord dans le navigateur ?",
+     "c": "Ouvre un éditeur Python en ligne, tape print(2 + 3) et lance. As-tu obtenu 5 ?"
+    },
+    "it": {
+     "t": "Preparare l'ambiente di lavoro",
+     "g": "Trova un posto dove scrivere ed eseguire Python.",
+     "p": [
+      "Puoi installare Python sul computer o usare un editor online gratuito.",
+      "Nell'editor scrivi il codice; eseguendolo vedi il risultato.",
+      "Gli editor online non richiedono installazione: ideali per iniziare oggi."
+     ],
+     "q": "Preferisci installare programmi o provarli prima nel browser?",
+     "c": "Apri un editor Python online, scrivi print(2 + 3) ed eseguilo. Hai ottenuto 5?"
+    },
+    "pt": {
+     "t": "Preparar o ambiente para programar",
+     "g": "Arranja um sítio para escrever e executar Python.",
+     "p": [
+      "Podes instalar o Python no computador ou usar um editor online gratuito.",
+      "No editor escreves o código; ao executar vês o resultado.",
+      "Os editores online não precisam de instalação: perfeitos para começar hoje."
+     ],
+     "q": "Preferes instalar programas ou experimentá-los primeiro no navegador?",
+     "c": "Abre um editor de Python online, escreve print(2 + 3) e executa. Deu 5?"
+    },
+    "pt_BR": {
+     "t": "Preparando o ambiente para programar",
+     "g": "Arranje um lugar para escrever e executar Python.",
+     "p": [
+      "Você pode instalar o Python no computador ou usar um editor online gratuito.",
+      "No editor você digita o código; ao executar, vê o resultado.",
+      "Editores online não precisam de instalação: perfeitos para começar hoje."
+     ],
+     "q": "Você prefere instalar programas ou testar primeiro no navegador?",
+     "c": "Abra um editor de Python online, digite print(2 + 3) e execute. Deu 5?"
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hello, world",
+     "g": "Write and run the classic first program that prints a message.",
+     "p": [
+      "print() shows whatever you put inside the brackets on the screen.",
+      "Text goes between quotes: print('Hello, world')",
+      "Running it is your first real program, and a real milestone."
+     ],
+     "q": "How did it feel to see your own message on screen?",
+     "c": "Change the message to print your name and a short greeting, then run it."
+    },
+    "de": {
+     "t": "Hallo, Welt",
+     "g": "Schreibe und starte das klassische erste Programm, das eine Nachricht ausgibt.",
+     "p": [
+      "print() zeigt alles, was in den Klammern steht, auf dem Bildschirm an.",
+      "Text steht zwischen Anführungszeichen: print('Hello, world')",
+      "Das Ausführen ist dein erstes echtes Programm und ein echter Meilenstein."
+     ],
+     "q": "Wie hat es sich angefühlt, deine eigene Nachricht zu sehen?",
+     "c": "Ändere den Text so, dass dein Name und ein kurzer Gruß erscheinen, und führe aus."
+    },
+    "es": {
+     "t": "Hola, mundo",
+     "g": "Escribe y ejecuta el clásico primer programa que muestra un mensaje.",
+     "p": [
+      "print() muestra en pantalla lo que pongas entre paréntesis.",
+      "El texto va entre comillas: print('Hello, world')",
+      "Ejecutarlo es tu primer programa real y un gran hito."
+     ],
+     "q": "¿Qué sentiste al ver tu propio mensaje en pantalla?",
+     "c": "Cambia el mensaje para mostrar tu nombre y un saludo corto, y ejecútalo."
+    },
+    "fr": {
+     "t": "Bonjour, le monde",
+     "g": "Écris et lance le premier programme classique qui affiche un message.",
+     "p": [
+      "print() affiche à l'écran ce que tu mets entre les parenthèses.",
+      "Le texte va entre guillemets : print('Hello, world')",
+      "L'exécuter, c'est ton premier vrai programme et une vraie étape."
+     ],
+     "q": "Qu'as-tu ressenti en voyant ton propre message à l'écran ?",
+     "c": "Modifie le message pour afficher ton prénom et un court salut, puis lance-le."
+    },
+    "it": {
+     "t": "Ciao, mondo",
+     "g": "Scrivi ed esegui il classico primo programma che stampa un messaggio.",
+     "p": [
+      "print() mostra sullo schermo ciò che metti tra parentesi.",
+      "Il testo va tra apici: print('Hello, world')",
+      "Eseguirlo è il tuo primo vero programma e un bel traguardo."
+     ],
+     "q": "Cosa hai provato vedendo il tuo messaggio sullo schermo?",
+     "c": "Cambia il messaggio per mostrare il tuo nome e un breve saluto, poi eseguilo."
+    },
+    "pt": {
+     "t": "Olá, mundo",
+     "g": "Escreve e executa o clássico primeiro programa que mostra uma mensagem.",
+     "p": [
+      "print() mostra no ecrã o que puseres entre parênteses.",
+      "O texto vai entre aspas: print('Hello, world')",
+      "Executá-lo é o teu primeiro programa a sério e um grande marco."
+     ],
+     "q": "Como te sentiste ao ver a tua própria mensagem no ecrã?",
+     "c": "Muda a mensagem para mostrar o teu nome e um cumprimento curto e executa."
+    },
+    "pt_BR": {
+     "t": "Olá, mundo",
+     "g": "Escreva e execute o clássico primeiro programa que mostra uma mensagem.",
+     "p": [
+      "print() mostra na tela o que você colocar entre parênteses.",
+      "O texto vai entre aspas: print('Hello, world')",
+      "Executá-lo é seu primeiro programa de verdade e um grande marco."
+     ],
+     "q": "Como foi ver sua própria mensagem na tela?",
+     "c": "Mude a mensagem para mostrar seu nome e um cumprimento curto e execute."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Comments in code",
+     "g": "Use comments to explain your code to humans.",
+     "p": [
+      "A comment starts with # and Python ignores the rest of that line.",
+      "Good comments explain why you did something, not just what.",
+      "You can also comment out a line to switch it off while testing."
+     ],
+     "q": "Have you ever left yourself a note that later saved you?",
+     "c": "Add a # comment above your print line, then comment the print out and see what happens."
+    },
+    "de": {
+     "t": "Kommentare im Code",
+     "g": "Nutze Kommentare, um deinen Code für Menschen zu erklären.",
+     "p": [
+      "Ein Kommentar beginnt mit #, Python ignoriert den Rest dieser Zeile.",
+      "Gute Kommentare erklären das Warum, nicht nur das Was.",
+      "Du kannst eine Zeile auch auskommentieren, um sie beim Testen auszuschalten."
+     ],
+     "q": "Hast du dir schon mal eine Notiz geschrieben, die dir später geholfen hat?",
+     "c": "Füge über deiner print-Zeile einen #-Kommentar ein, kommentiere dann print aus und schau, was passiert."
+    },
+    "es": {
+     "t": "Comentarios en el código",
+     "g": "Usa comentarios para explicar tu código a las personas.",
+     "p": [
+      "Un comentario empieza con # y Python ignora el resto de esa línea.",
+      "Un buen comentario explica por qué hiciste algo, no solo qué.",
+      "También puedes comentar una línea para desactivarla mientras pruebas."
+     ],
+     "q": "¿Alguna vez te dejaste una nota que luego te salvó?",
+     "c": "Añade un comentario # sobre tu línea print, luego comenta el print y mira qué pasa."
+    },
+    "fr": {
+     "t": "Les commentaires dans le code",
+     "g": "Utilise des commentaires pour expliquer ton code aux humains.",
+     "p": [
+      "Un commentaire commence par # et Python ignore le reste de la ligne.",
+      "Un bon commentaire explique pourquoi, pas seulement quoi.",
+      "Tu peux aussi commenter une ligne pour la désactiver pendant tes tests."
+     ],
+     "q": "T'est-il déjà arrivé de te laisser une note qui t'a sauvé plus tard ?",
+     "c": "Ajoute un commentaire # au-dessus de ton print, puis commente le print et observe."
+    },
+    "it": {
+     "t": "Commenti nel codice",
+     "g": "Usa i commenti per spiegare il codice alle persone.",
+     "p": [
+      "Un commento inizia con # e Python ignora il resto della riga.",
+      "Un buon commento spiega perché hai fatto qualcosa, non solo cosa.",
+      "Puoi anche commentare una riga per disattivarla durante i test."
+     ],
+     "q": "Ti è mai capitato di lasciarti una nota che poi ti ha salvato?",
+     "c": "Aggiungi un commento # sopra la riga print, poi commenta il print e osserva cosa succede."
+    },
+    "pt": {
+     "t": "Comentários no código",
+     "g": "Usa comentários para explicar o código às pessoas.",
+     "p": [
+      "Um comentário começa com # e o Python ignora o resto dessa linha.",
+      "Um bom comentário explica porquê, não apenas o quê.",
+      "Também podes comentar uma linha para a desligar enquanto testas."
+     ],
+     "q": "Já te deixaste alguma nota que mais tarde te safou?",
+     "c": "Acrescenta um comentário # acima do print, depois comenta o print e vê o que acontece."
+    },
+    "pt_BR": {
+     "t": "Comentários no código",
+     "g": "Use comentários para explicar o código para as pessoas.",
+     "p": [
+      "Um comentário começa com # e o Python ignora o resto da linha.",
+      "Um bom comentário explica por que você fez algo, não só o quê.",
+      "Você também pode comentar uma linha para desligá-la enquanto testa."
+     ],
+     "q": "Você já deixou uma nota para si mesmo que depois te salvou?",
+     "c": "Adicione um comentário # acima do print, depois comente o print e veja o que acontece."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Variables",
+     "g": "Store a value under a name so you can reuse it.",
+     "p": [
+      "A variable is a named box: age = 25 puts 25 in a box called age.",
+      "The = sign means store, not equal, in most languages.",
+      "You can change a variable later: age = 26 replaces the old value."
+     ],
+     "q": "What is one thing about you that could be a variable, like age or city?",
+     "c": "Create name and city variables with your own values and print each one."
+    },
+    "de": {
+     "t": "Variablen",
+     "g": "Speichere einen Wert unter einem Namen, um ihn wiederzuverwenden.",
+     "p": [
+      "Eine Variable ist eine benannte Box: age = 25 legt 25 in die Box age.",
+      "Das Zeichen = bedeutet speichern, nicht gleich.",
+      "Du kannst sie später ändern: age = 26 ersetzt den alten Wert."
+     ],
+     "q": "Was an dir könnte eine Variable sein, etwa Alter oder Stadt?",
+     "c": "Erstelle Variablen name und city mit eigenen Werten und gib beide mit print aus."
+    },
+    "es": {
+     "t": "Variables",
+     "g": "Guarda un valor con un nombre para reutilizarlo.",
+     "p": [
+      "Una variable es una caja con nombre: age = 25 guarda 25 en la caja age.",
+      "El signo = significa guardar, no igual.",
+      "Puedes cambiarla después: age = 26 reemplaza el valor anterior."
+     ],
+     "q": "¿Qué dato tuyo podría ser una variable, como la edad o la ciudad?",
+     "c": "Crea las variables name y city con tus datos e imprime cada una."
+    },
+    "fr": {
+     "t": "Les variables",
+     "g": "Range une valeur sous un nom pour la réutiliser.",
+     "p": [
+      "Une variable est une boîte nommée : age = 25 met 25 dans la boîte age.",
+      "Le signe = veut dire ranger, pas égal.",
+      "Tu peux la changer plus tard : age = 26 remplace l'ancienne valeur."
+     ],
+     "q": "Quelle info sur toi pourrait être une variable, comme l'âge ou la ville ?",
+     "c": "Crée les variables name et city avec tes données et affiche chacune."
+    },
+    "it": {
+     "t": "Variabili",
+     "g": "Salva un valore sotto un nome per riutilizzarlo.",
+     "p": [
+      "Una variabile è una scatola con nome: age = 25 mette 25 nella scatola age.",
+      "Il segno = significa salvare, non uguale.",
+      "Puoi cambiarla dopo: age = 26 sostituisce il vecchio valore."
+     ],
+     "q": "Quale dato su di te potrebbe essere una variabile, come età o città?",
+     "c": "Crea le variabili name e city con i tuoi dati e stampa ciascuna."
+    },
+    "pt": {
+     "t": "Variáveis",
+     "g": "Guarda um valor com um nome para o reutilizares.",
+     "p": [
+      "Uma variável é uma caixa com nome: age = 25 guarda 25 na caixa age.",
+      "O sinal = significa guardar, não igual.",
+      "Podes mudá-la depois: age = 26 substitui o valor antigo."
+     ],
+     "q": "Que dado teu podia ser uma variável, como a idade ou a cidade?",
+     "c": "Cria as variáveis name e city com os teus dados e imprime cada uma."
+    },
+    "pt_BR": {
+     "t": "Variáveis",
+     "g": "Guarde um valor com um nome para reutilizá-lo.",
+     "p": [
+      "Uma variável é uma caixa com nome: age = 25 guarda 25 na caixa age.",
+      "O sinal = significa guardar, não igual.",
+      "Você pode mudá-la depois: age = 26 substitui o valor antigo."
+     ],
+     "q": "Que dado seu poderia ser uma variável, como idade ou cidade?",
+     "c": "Crie as variáveis name e city com seus dados e imprima cada uma."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Naming things well",
+     "g": "Choose clear variable names that make code easy to read.",
+     "p": [
+      "Use lowercase words joined by underscores: total_price.",
+      "Names cannot start with a digit or contain spaces.",
+      "A name like total_price tells the story; x tells nothing."
+     ],
+     "q": "What is the clearest name you could give a variable holding your age?",
+     "c": "Rename x = 5 and y = 3 into meaningful names for a pizza order and print them."
+    },
+    "de": {
+     "t": "Gute Namen wählen",
+     "g": "Wähle klare Variablennamen, die Code leicht lesbar machen.",
+     "p": [
+      "Nutze Kleinbuchstaben mit Unterstrichen: total_price.",
+      "Namen dürfen nicht mit einer Ziffer beginnen und keine Leerzeichen enthalten.",
+      "total_price erzählt eine Geschichte, x sagt nichts."
+     ],
+     "q": "Welcher Name wäre für eine Variable mit deinem Alter am klarsten?",
+     "c": "Benenne x = 5 und y = 3 in sinnvolle Namen für eine Pizzabestellung um und gib sie aus."
+    },
+    "es": {
+     "t": "Nombrar bien las cosas",
+     "g": "Elige nombres de variables claros que hagan el código fácil de leer.",
+     "p": [
+      "Usa palabras en minúsculas unidas por guiones bajos: total_price.",
+      "Los nombres no pueden empezar por un dígito ni llevar espacios.",
+      "total_price cuenta una historia; x no dice nada."
+     ],
+     "q": "¿Cuál sería el nombre más claro para una variable con tu edad?",
+     "c": "Renombra x = 5 e y = 3 con nombres con sentido para un pedido de pizza e imprímelos."
+    },
+    "fr": {
+     "t": "Bien nommer les choses",
+     "g": "Choisis des noms de variables clairs qui rendent le code lisible.",
+     "p": [
+      "Utilise des mots en minuscules reliés par des tirets bas : total_price.",
+      "Un nom ne peut pas commencer par un chiffre ni contenir d'espaces.",
+      "total_price raconte une histoire ; x ne dit rien."
+     ],
+     "q": "Quel serait le nom le plus clair pour une variable contenant ton âge ?",
+     "c": "Renomme x = 5 et y = 3 avec des noms parlants pour une commande de pizza et affiche-les."
+    },
+    "it": {
+     "t": "Dare nomi chiari",
+     "g": "Scegli nomi di variabili chiari che rendano il codice leggibile.",
+     "p": [
+      "Usa parole minuscole unite da trattini bassi: total_price.",
+      "I nomi non possono iniziare con una cifra né contenere spazi.",
+      "total_price racconta una storia; x non dice nulla."
+     ],
+     "q": "Quale sarebbe il nome più chiaro per una variabile con la tua età?",
+     "c": "Rinomina x = 5 e y = 3 con nomi sensati per un ordine di pizza e stampali."
+    },
+    "pt": {
+     "t": "Dar bons nomes às coisas",
+     "g": "Escolhe nomes de variáveis claros que tornem o código fácil de ler.",
+     "p": [
+      "Usa palavras minúsculas unidas por sublinhados: total_price.",
+      "Os nomes não podem começar por um dígito nem ter espaços.",
+      "total_price conta uma história; x não diz nada."
+     ],
+     "q": "Qual seria o nome mais claro para uma variável com a tua idade?",
+     "c": "Renomeia x = 5 e y = 3 com nomes com sentido para um pedido de pizza e imprime-os."
+    },
+    "pt_BR": {
+     "t": "Dando bons nomes às coisas",
+     "g": "Escolha nomes de variáveis claros que deixem o código fácil de ler.",
+     "p": [
+      "Use palavras minúsculas unidas por sublinhados: total_price.",
+      "Nomes não podem começar com dígito nem ter espaços.",
+      "total_price conta uma história; x não diz nada."
+     ],
+     "q": "Qual seria o nome mais claro para uma variável com a sua idade?",
+     "c": "Renomeie x = 5 e y = 3 com nomes que façam sentido para um pedido de pizza e imprima."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Numbers in code",
+     "g": "Do basic maths with whole numbers and decimals.",
+     "p": [
+      "Whole numbers are int, decimals are float: 7 and 7.5.",
+      "Use + - * / for add, subtract, multiply and divide.",
+      "Python follows normal maths order: multiplication before addition."
+     ],
+     "q": "Where do you use maths in daily life, like bills or recipes?",
+     "c": "Compute the total of 3 coffees at 2.5 each plus a 1.2 cake, and print it."
+    },
+    "de": {
+     "t": "Zahlen im Code",
+     "g": "Rechne mit ganzen Zahlen und Dezimalzahlen.",
+     "p": [
+      "Ganze Zahlen sind int, Dezimalzahlen float: 7 und 7.5.",
+      "Nutze + - * / für Addieren, Subtrahieren, Multiplizieren und Dividieren.",
+      "Python folgt der normalen Rechenreihenfolge: Punkt vor Strich."
+     ],
+     "q": "Wo nutzt du im Alltag Mathe, etwa bei Rechnungen oder Rezepten?",
+     "c": "Berechne 3 Kaffee zu je 2.5 plus einen Kuchen für 1.2 und gib die Summe aus."
+    },
+    "es": {
+     "t": "Números en el código",
+     "g": "Haz cálculos básicos con enteros y decimales.",
+     "p": [
+      "Los enteros son int y los decimales float: 7 y 7.5.",
+      "Usa + - * / para sumar, restar, multiplicar y dividir.",
+      "Python sigue el orden matemático normal: multiplicar antes que sumar."
+     ],
+     "q": "¿Dónde usas matemáticas a diario, como en facturas o recetas?",
+     "c": "Calcula el total de 3 cafés a 2.5 más un pastel de 1.2 e imprímelo."
+    },
+    "fr": {
+     "t": "Les nombres dans le code",
+     "g": "Fais des calculs de base avec des entiers et des décimaux.",
+     "p": [
+      "Les entiers sont de type int, les décimaux float : 7 et 7.5.",
+      "Utilise + - * / pour additionner, soustraire, multiplier et diviser.",
+      "Python suit l'ordre habituel : la multiplication avant l'addition."
+     ],
+     "q": "Où utilises-tu les maths au quotidien, comme pour les factures ou les recettes ?",
+     "c": "Calcule le total de 3 cafés à 2.5 plus un gâteau à 1.2 et affiche-le."
+    },
+    "it": {
+     "t": "I numeri nel codice",
+     "g": "Fai calcoli di base con interi e decimali.",
+     "p": [
+      "Gli interi sono int, i decimali float: 7 e 7.5.",
+      "Usa + - * / per sommare, sottrarre, moltiplicare e dividere.",
+      "Python segue l'ordine matematico normale: prima la moltiplicazione."
+     ],
+     "q": "Dove usi la matematica ogni giorno, come nei conti o nelle ricette?",
+     "c": "Calcola il totale di 3 caffè a 2.5 più una torta da 1.2 e stampalo."
+    },
+    "pt": {
+     "t": "Números no código",
+     "g": "Faz cálculos básicos com inteiros e decimais.",
+     "p": [
+      "Os inteiros são int e os decimais float: 7 e 7.5.",
+      "Usa + - * / para somar, subtrair, multiplicar e dividir.",
+      "O Python segue a ordem matemática normal: multiplicar antes de somar."
+     ],
+     "q": "Onde usas matemática no dia a dia, como em contas ou receitas?",
+     "c": "Calcula o total de 3 cafés a 2.5 mais um bolo de 1.2 e imprime."
+    },
+    "pt_BR": {
+     "t": "Números no código",
+     "g": "Faça cálculos básicos com inteiros e decimais.",
+     "p": [
+      "Inteiros são int e decimais são float: 7 e 7.5.",
+      "Use + - * / para somar, subtrair, multiplicar e dividir.",
+      "O Python segue a ordem matemática normal: multiplicação antes da soma."
+     ],
+     "q": "Onde você usa matemática no dia a dia, como em contas ou receitas?",
+     "c": "Calcule o total de 3 cafés a 2.5 mais um bolo de 1.2 e imprima."
+    }
+   }
+  }
+ ]
+}

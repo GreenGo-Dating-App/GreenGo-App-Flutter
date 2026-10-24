@@ -1,0 +1,835 @@
+{
+ "topic": "negotiation",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Low-cost, high-value trades",
+     "g": "Find things that are cheap for you to give but valuable to them.",
+     "p": [
+      "Different people value different things.",
+      "A small favour for you can be a big gain for them.",
+      "Ask what matters to them, then see what you can offer easily."
+     ],
+     "q": "What is something cheap for you that others would value?",
+     "c": "List two low-cost things you could offer in a future talk."
+    },
+    "de": {
+     "t": "Günstig für dich, wertvoll für sie",
+     "g": "Finde Dinge, die dich wenig kosten, aber für die andere Seite viel wert sind.",
+     "p": [
+      "Verschiedene Menschen schätzen Verschiedenes.",
+      "Eine Kleinigkeit für dich kann für sie ein großer Gewinn sein.",
+      "Frage, was ihr wichtig ist, und sieh, was du leicht bieten kannst."
+     ],
+     "q": "Was ist für dich billig, würde aber von anderen geschätzt?",
+     "c": "Liste zwei günstige Dinge, die du in einem künftigen Gespräch anbieten könntest."
+    },
+    "es": {
+     "t": "Intercambios baratos y valiosos",
+     "g": "Encuentra cosas baratas para ti pero valiosas para la otra parte.",
+     "p": [
+      "Personas distintas valoran cosas distintas.",
+      "Un pequeño favor para ti puede ser una gran ganancia para ellos.",
+      "Pregunta qué les importa y mira qué puedes ofrecer con facilidad."
+     ],
+     "q": "¿Qué te cuesta poco a ti y otros valorarían?",
+     "c": "Anota dos cosas de bajo coste que podrías ofrecer en una charla futura."
+    },
+    "fr": {
+     "t": "Échanges peu coûteux, très précieux",
+     "g": "Trouve ce qui te coûte peu mais compte beaucoup pour l'autre.",
+     "p": [
+      "Chacun valorise des choses différentes.",
+      "Un petit service pour toi peut être un grand gain pour lui.",
+      "Demande ce qui compte pour l'autre, puis vois ce que tu peux offrir facilement."
+     ],
+     "q": "Qu'est-ce qui te coûte peu mais que d'autres apprécieraient ?",
+     "c": "Liste deux choses peu coûteuses à proposer lors d'une future discussion."
+    },
+    "it": {
+     "t": "Scambi economici e di valore",
+     "g": "Trova cose che a te costano poco ma per l'altro valgono molto.",
+     "p": [
+      "Persone diverse apprezzano cose diverse.",
+      "Un piccolo favore per te può essere un grande vantaggio per loro.",
+      "Chiedi cosa conta per loro, poi vedi cosa puoi offrire facilmente."
+     ],
+     "q": "Cosa ti costa poco ma altri apprezzerebbero?",
+     "c": "Elenca due cose a basso costo da offrire in una futura conversazione."
+    },
+    "pt": {
+     "t": "Trocas baratas e valiosas",
+     "g": "Encontra coisas baratas para ti mas valiosas para o outro lado.",
+     "p": [
+      "Pessoas diferentes valorizam coisas diferentes.",
+      "Um pequeno favor para ti pode ser um grande ganho para eles.",
+      "Pergunta o que lhes importa e vê o que podes oferecer com facilidade."
+     ],
+     "q": "O que te custa pouco a ti e outros valorizariam?",
+     "c": "Anota duas coisas de baixo custo que poderias oferecer numa conversa futura."
+    },
+    "pt_BR": {
+     "t": "Trocas baratas e valiosas",
+     "g": "Encontre coisas baratas para você mas valiosas para o outro lado.",
+     "p": [
+      "Pessoas diferentes valorizam coisas diferentes.",
+      "Um pequeno favor para você pode ser um grande ganho para elas.",
+      "Pergunte o que importa para elas e veja o que você pode oferecer com facilidade."
+     ],
+     "q": "O que custa pouco para você e outros valorizariam?",
+     "c": "Anote duas coisas de baixo custo que você poderia oferecer numa conversa futura."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Objective criteria",
+     "g": "Use market prices, standards or expert opinions to settle disagreements fairly.",
+     "p": [
+      "Fair standards take the contest of wills out of the talk.",
+      "Examples: market price, past practice, an expert's view.",
+      "Ask: What standard should we both use to decide?"
+     ],
+     "q": "What neutral standard could settle a disagreement you know?",
+     "c": "Name one objective standard for a price or rule you care about."
+    },
+    "de": {
+     "t": "Objektive Kriterien",
+     "g": "Nutze Marktpreise, Standards oder Expertenmeinungen, um fair zu entscheiden.",
+     "p": [
+      "Faire Maßstäbe nehmen den Willenskampf aus dem Gespräch.",
+      "Beispiele: Marktpreis, bisherige Praxis, Expertenurteil.",
+      "Frage: Welchen Maßstab nehmen wir beide, um zu entscheiden?"
+     ],
+     "q": "Welcher neutrale Maßstab könnte einen dir bekannten Streit lösen?",
+     "c": "Nenne einen objektiven Maßstab für einen Preis oder eine Regel, die dir wichtig ist."
+    },
+    "es": {
+     "t": "Criterios objetivos",
+     "g": "Usa precios de mercado, estándares u opiniones expertas para resolver con justicia.",
+     "p": [
+      "Los estándares justos sacan el pulso de voluntades de la conversación.",
+      "Ejemplos: precio de mercado, práctica habitual, opinión de un experto.",
+      "Pregunta: ¿Qué estándar usamos los dos para decidir?"
+     ],
+     "q": "¿Qué criterio neutral podría resolver un desacuerdo que conoces?",
+     "c": "Nombra un criterio objetivo para un precio o norma que te importe."
+    },
+    "fr": {
+     "t": "Critères objectifs",
+     "g": "Utilise prix du marché, normes ou avis d'experts pour trancher équitablement.",
+     "p": [
+      "Des normes équitables retirent le bras de fer de la discussion.",
+      "Exemples : prix du marché, usage habituel, avis d'un expert.",
+      "Demande : Quelle norme utilisons-nous tous deux pour décider ?"
+     ],
+     "q": "Quel critère neutre pourrait régler un désaccord que tu connais ?",
+     "c": "Nomme un critère objectif pour un prix ou une règle qui te tient à cœur."
+    },
+    "it": {
+     "t": "Criteri oggettivi",
+     "g": "Usa prezzi di mercato, standard o pareri di esperti per decidere con equità.",
+     "p": [
+      "Standard equi tolgono il braccio di ferro dalla conversazione.",
+      "Esempi: prezzo di mercato, prassi abituale, parere di un esperto.",
+      "Chiedi: Quale standard usiamo entrambi per decidere?"
+     ],
+     "q": "Quale criterio neutro potrebbe risolvere un disaccordo che conosci?",
+     "c": "Nomina un criterio oggettivo per un prezzo o una regola che ti sta a cuore."
+    },
+    "pt": {
+     "t": "Critérios objetivos",
+     "g": "Usa preços de mercado, padrões ou opiniões de especialistas para decidir com justiça.",
+     "p": [
+      "Padrões justos tiram o braço de ferro da conversa.",
+      "Exemplos: preço de mercado, prática habitual, opinião de um especialista.",
+      "Pergunta: Que padrão usamos os dois para decidir?"
+     ],
+     "q": "Que critério neutro poderia resolver um desacordo que conheces?",
+     "c": "Nomeia um critério objetivo para um preço ou regra que te importe."
+    },
+    "pt_BR": {
+     "t": "Critérios objetivos",
+     "g": "Use preços de mercado, padrões ou opiniões de especialistas para decidir com justiça.",
+     "p": [
+      "Padrões justos tiram o cabo de guerra da conversa.",
+      "Exemplos: preço de mercado, prática habitual, opinião de um especialista.",
+      "Pergunte: Que padrão nós dois usamos para decidir?"
+     ],
+     "q": "Que critério neutro poderia resolver uma discordância que você conhece?",
+     "c": "Nomeie um critério objetivo para um preço ou regra que importe para você."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Doing your research",
+     "g": "Gather facts about prices, norms and options before you negotiate.",
+     "p": [
+      "Facts give you confidence and credibility.",
+      "Check typical prices, similar cases and what others accept.",
+      "Ask people with experience; most are happy to share."
+     ],
+     "q": "What would you like to research before your next negotiation?",
+     "c": "Spend ten minutes gathering three facts for one upcoming talk."
+    },
+    "de": {
+     "t": "Gründlich recherchieren",
+     "g": "Sammle vor dem Verhandeln Fakten zu Preisen, Normen und Optionen.",
+     "p": [
+      "Fakten geben dir Sicherheit und Glaubwürdigkeit.",
+      "Prüfe übliche Preise, ähnliche Fälle und was andere akzeptieren.",
+      "Frage erfahrene Menschen; die meisten teilen gern."
+     ],
+     "q": "Was möchtest du vor deiner nächsten Verhandlung recherchieren?",
+     "c": "Sammle zehn Minuten lang drei Fakten für ein anstehendes Gespräch."
+    },
+    "es": {
+     "t": "Investigar antes de negociar",
+     "g": "Reúne datos sobre precios, normas y opciones antes de negociar.",
+     "p": [
+      "Los datos te dan seguridad y credibilidad.",
+      "Revisa precios típicos, casos parecidos y lo que otros aceptan.",
+      "Pregunta a gente con experiencia; la mayoría comparte con gusto."
+     ],
+     "q": "¿Qué te gustaría investigar antes de tu próxima negociación?",
+     "c": "Dedica diez minutos a reunir tres datos para una charla próxima."
+    },
+    "fr": {
+     "t": "Faire tes recherches",
+     "g": "Rassemble des faits sur les prix, usages et options avant de négocier.",
+     "p": [
+      "Les faits te donnent assurance et crédibilité.",
+      "Vérifie les prix habituels, des cas similaires et ce que d'autres acceptent.",
+      "Interroge des gens expérimentés ; la plupart partagent volontiers."
+     ],
+     "q": "Que voudrais-tu rechercher avant ta prochaine négociation ?",
+     "c": "Passe dix minutes à réunir trois faits pour une discussion à venir."
+    },
+    "it": {
+     "t": "Fare le tue ricerche",
+     "g": "Raccogli fatti su prezzi, usi e opzioni prima di negoziare.",
+     "p": [
+      "I fatti ti danno sicurezza e credibilità.",
+      "Controlla prezzi tipici, casi simili e ciò che altri accettano.",
+      "Chiedi a persone esperte; la maggior parte condivide volentieri."
+     ],
+     "q": "Cosa vorresti ricercare prima della prossima negoziazione?",
+     "c": "Dedica dieci minuti a raccogliere tre fatti per una conversazione imminente."
+    },
+    "pt": {
+     "t": "Fazer a tua pesquisa",
+     "g": "Reúne factos sobre preços, normas e opções antes de negociares.",
+     "p": [
+      "Os factos dão-te confiança e credibilidade.",
+      "Verifica preços típicos, casos semelhantes e o que outros aceitam.",
+      "Pergunta a pessoas com experiência; a maioria partilha com gosto."
+     ],
+     "q": "O que gostarias de pesquisar antes da tua próxima negociação?",
+     "c": "Dedica dez minutos a reunir três factos para uma conversa próxima."
+    },
+    "pt_BR": {
+     "t": "Fazendo sua pesquisa",
+     "g": "Reúna fatos sobre preços, normas e opções antes de negociar.",
+     "p": [
+      "Fatos dão confiança e credibilidade.",
+      "Confira preços típicos, casos parecidos e o que outros aceitam.",
+      "Pergunte a pessoas com experiência; a maioria compartilha com gosto."
+     ],
+     "q": "O que você gostaria de pesquisar antes da sua próxima negociação?",
+     "c": "Dedique dez minutos a reunir três fatos para uma conversa próxima."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing a short script",
+     "g": "Plan your opening lines and key questions without sounding rehearsed.",
+     "p": [
+      "Write an opening, two questions and a closing line.",
+      "Use your own words so it sounds natural.",
+      "A script is a map, not a cage; stay ready to listen."
+     ],
+     "q": "What opening line feels natural to you?",
+     "c": "Write your first two sentences for one real conversation."
+    },
+    "de": {
+     "t": "Ein kurzes Skript schreiben",
+     "g": "Plane Eröffnung und Schlüsselfragen, ohne einstudiert zu klingen.",
+     "p": [
+      "Schreibe einen Einstieg, zwei Fragen und einen Schlusssatz.",
+      "Nutze eigene Worte, damit es natürlich klingt.",
+      "Ein Skript ist eine Landkarte, kein Käfig; bleib zum Zuhören bereit."
+     ],
+     "q": "Welcher Einstiegssatz fühlt sich für dich natürlich an?",
+     "c": "Schreibe deine ersten zwei Sätze für ein echtes Gespräch auf."
+    },
+    "es": {
+     "t": "Escribir un guion breve",
+     "g": "Planifica tus frases iniciales y preguntas clave sin sonar ensayado.",
+     "p": [
+      "Escribe una apertura, dos preguntas y una frase de cierre.",
+      "Usa tus propias palabras para que suene natural.",
+      "Un guion es un mapa, no una jaula; sigue dispuesto a escuchar."
+     ],
+     "q": "¿Qué frase de apertura te resulta natural?",
+     "c": "Escribe tus dos primeras frases para una conversación real."
+    },
+    "fr": {
+     "t": "Écrire un court scénario",
+     "g": "Prépare tes phrases d'ouverture et questions clés sans paraître récité.",
+     "p": [
+      "Écris une ouverture, deux questions et une phrase de clôture.",
+      "Utilise tes propres mots pour rester naturel.",
+      "Un scénario est une carte, pas une cage : reste prêt à écouter."
+     ],
+     "q": "Quelle phrase d'ouverture te semble naturelle ?",
+     "c": "Écris tes deux premières phrases pour une vraie conversation."
+    },
+    "it": {
+     "t": "Scrivere un breve copione",
+     "g": "Pianifica frasi iniziali e domande chiave senza sembrare recitato.",
+     "p": [
+      "Scrivi un'apertura, due domande e una frase di chiusura.",
+      "Usa parole tue perché suoni naturale.",
+      "Un copione è una mappa, non una gabbia: resta pronto ad ascoltare."
+     ],
+     "q": "Quale frase d'apertura ti sembra naturale?",
+     "c": "Scrivi le prime due frasi per una conversazione reale."
+    },
+    "pt": {
+     "t": "Escrever um guião curto",
+     "g": "Planeia as frases iniciais e perguntas-chave sem parecer ensaiado.",
+     "p": [
+      "Escreve uma abertura, duas perguntas e uma frase final.",
+      "Usa palavras tuas para soar natural.",
+      "Um guião é um mapa, não uma jaula; continua pronto para ouvir."
+     ],
+     "q": "Que frase de abertura te parece natural?",
+     "c": "Escreve as tuas duas primeiras frases para uma conversa real."
+    },
+    "pt_BR": {
+     "t": "Escrevendo um roteiro curto",
+     "g": "Planeje as frases iniciais e perguntas-chave sem parecer ensaiado.",
+     "p": [
+      "Escreva uma abertura, duas perguntas e uma frase final.",
+      "Use palavras suas para soar natural.",
+      "Um roteiro é um mapa, não uma jaula; continue pronto para ouvir."
+     ],
+     "q": "Que frase de abertura soa natural para você?",
+     "c": "Escreva suas duas primeiras frases para uma conversa real."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Role-play with a friend",
+     "g": "Practise a negotiation out loud with someone playing the other side.",
+     "p": [
+      "Speaking aloud reveals what silent planning hides.",
+      "Swap roles so you feel their point of view.",
+      "Ask your partner for friendly feedback on tone and clarity."
+     ],
+     "q": "Which situation would you like to rehearse with a friend?",
+     "c": "Do a three-minute role-play with someone, then swap roles."
+    },
+    "de": {
+     "t": "Rollenspiel mit einem Freund",
+     "g": "Übe eine Verhandlung laut mit jemandem, der die andere Seite spielt.",
+     "p": [
+      "Lautes Sprechen zeigt, was stilles Planen verbirgt.",
+      "Tauscht die Rollen, um ihre Sicht zu spüren.",
+      "Bitte deinen Partner um freundliches Feedback zu Ton und Klarheit."
+     ],
+     "q": "Welche Situation würdest du gern mit einem Freund proben?",
+     "c": "Mache mit jemandem ein dreiminütiges Rollenspiel und tauscht dann die Rollen."
+    },
+    "es": {
+     "t": "Juego de rol con un amigo",
+     "g": "Practica una negociación en voz alta con alguien que haga de la otra parte.",
+     "p": [
+      "Hablar en voz alta revela lo que la planificación silenciosa oculta.",
+      "Intercambiad papeles para sentir su punto de vista.",
+      "Pide a tu pareja de práctica una opinión amable sobre tono y claridad."
+     ],
+     "q": "¿Qué situación te gustaría ensayar con un amigo?",
+     "c": "Haz un juego de rol de tres minutos con alguien y luego cambiad de papel."
+    },
+    "fr": {
+     "t": "Jeu de rôle avec un ami",
+     "g": "Entraîne-toi à négocier à voix haute avec quelqu'un qui joue l'autre côté.",
+     "p": [
+      "Parler à voix haute révèle ce que la préparation silencieuse cache.",
+      "Échangez les rôles pour sentir son point de vue.",
+      "Demande à ton partenaire un retour aimable sur le ton et la clarté."
+     ],
+     "q": "Quelle situation aimerais-tu répéter avec un ami ?",
+     "c": "Fais un jeu de rôle de trois minutes avec quelqu'un, puis échangez les rôles."
+    },
+    "it": {
+     "t": "Gioco di ruolo con un amico",
+     "g": "Esercitati a negoziare ad alta voce con qualcuno che fa l'altra parte.",
+     "p": [
+      "Parlare ad alta voce rivela ciò che la preparazione silenziosa nasconde.",
+      "Scambiatevi i ruoli per sentire il suo punto di vista.",
+      "Chiedi al tuo partner un parere gentile su tono e chiarezza."
+     ],
+     "q": "Quale situazione ti piacerebbe provare con un amico?",
+     "c": "Fai un gioco di ruolo di tre minuti con qualcuno, poi scambiatevi i ruoli."
+    },
+    "pt": {
+     "t": "Jogo de papéis com um amigo",
+     "g": "Pratica uma negociação em voz alta com alguém que faça o outro lado.",
+     "p": [
+      "Falar em voz alta revela o que o planeamento silencioso esconde.",
+      "Troquem de papéis para sentires o ponto de vista dele.",
+      "Pede ao teu parceiro um comentário simpático sobre tom e clareza."
+     ],
+     "q": "Que situação gostarias de ensaiar com um amigo?",
+     "c": "Faz um jogo de papéis de três minutos com alguém e depois troquem."
+    },
+    "pt_BR": {
+     "t": "Encenação com um amigo",
+     "g": "Pratique uma negociação em voz alta com alguém fazendo o outro lado.",
+     "p": [
+      "Falar em voz alta revela o que o planejamento silencioso esconde.",
+      "Troquem de papéis para sentir o ponto de vista dele.",
+      "Peça ao seu parceiro um comentário gentil sobre tom e clareza."
+     ],
+     "q": "Que situação você gostaria de ensaiar com um amigo?",
+     "c": "Faça uma encenação de três minutos com alguém e depois troquem de papéis."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Returning a product politely",
+     "g": "Ask for a refund or exchange with calm facts and a clear request.",
+     "p": [
+      "State what you bought, what is wrong and what you would like.",
+      "Keep receipts or details ready and stay friendly.",
+      "Staff are more helpful when you treat them as partners."
+     ],
+     "q": "Have you ever returned something? How did it go?",
+     "c": "Write a three-sentence return request: item, problem, wish."
+    },
+    "de": {
+     "t": "Höflich etwas zurückgeben",
+     "g": "Bitte mit ruhigen Fakten und klarem Wunsch um Erstattung oder Umtausch.",
+     "p": [
+      "Sag, was du gekauft hast, was nicht stimmt und was du dir wünschst.",
+      "Halte Beleg oder Angaben bereit und bleib freundlich.",
+      "Mitarbeitende helfen eher, wenn du sie als Partner behandelst."
+     ],
+     "q": "Hast du schon einmal etwas zurückgegeben? Wie lief es?",
+     "c": "Schreibe eine Rückgabebitte in drei Sätzen: Artikel, Problem, Wunsch."
+    },
+    "es": {
+     "t": "Devolver un producto con cortesía",
+     "g": "Pide un reembolso o cambio con hechos tranquilos y una petición clara.",
+     "p": [
+      "Di qué compraste, qué falla y qué te gustaría.",
+      "Ten a mano el recibo o los datos y sé amable.",
+      "El personal ayuda más cuando lo tratas como aliado."
+     ],
+     "q": "¿Has devuelto algo alguna vez? ¿Cómo fue?",
+     "c": "Escribe una petición de devolución en tres frases: artículo, problema, deseo."
+    },
+    "fr": {
+     "t": "Retourner un produit poliment",
+     "g": "Demande un remboursement ou échange avec des faits calmes et une demande claire.",
+     "p": [
+      "Dis ce que tu as acheté, ce qui ne va pas et ce que tu souhaites.",
+      "Garde le ticket ou les détails sous la main et reste aimable.",
+      "Le personnel aide davantage quand tu le traites en partenaire."
+     ],
+     "q": "As-tu déjà rapporté un article ? Comment cela s'est-il passé ?",
+     "c": "Écris une demande de retour en trois phrases : article, problème, souhait."
+    },
+    "it": {
+     "t": "Restituire un prodotto con garbo",
+     "g": "Chiedi un rimborso o un cambio con fatti calmi e una richiesta chiara.",
+     "p": [
+      "Di' cosa hai comprato, cosa non va e cosa desideri.",
+      "Tieni pronti scontrino o dettagli e resta gentile.",
+      "Il personale aiuta di più quando lo tratti da partner."
+     ],
+     "q": "Hai mai restituito qualcosa? Com'è andata?",
+     "c": "Scrivi una richiesta di reso in tre frasi: articolo, problema, desiderio."
+    },
+    "pt": {
+     "t": "Devolver um produto com educação",
+     "g": "Pede um reembolso ou troca com factos calmos e um pedido claro.",
+     "p": [
+      "Diz o que compraste, o que está mal e o que gostarias.",
+      "Tem o talão ou os dados à mão e sê simpático.",
+      "O pessoal ajuda mais quando o tratas como parceiro."
+     ],
+     "q": "Já devolveste alguma coisa? Como correu?",
+     "c": "Escreve um pedido de devolução em três frases: artigo, problema, desejo."
+    },
+    "pt_BR": {
+     "t": "Devolvendo um produto com educação",
+     "g": "Peça reembolso ou troca com fatos calmos e um pedido claro.",
+     "p": [
+      "Diga o que comprou, o que está errado e o que você gostaria.",
+      "Tenha a nota ou os dados à mão e seja simpático.",
+      "A equipe ajuda mais quando você a trata como parceira."
+     ],
+     "q": "Você já devolveu alguma coisa? Como foi?",
+     "c": "Escreva um pedido de devolução em três frases: item, problema, desejo."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Talking to customer service",
+     "g": "Stay friendly and specific to get help with a bill or service problem.",
+     "p": [
+      "Start with your goal: what outcome would solve this?",
+      "Give dates and details, and note the helper's name.",
+      "Kindness gets more help than anger ever does."
+     ],
+     "q": "What helps you stay patient when a call is slow?",
+     "c": "Prepare three bullet points before your next service call."
+    },
+    "de": {
+     "t": "Mit dem Kundenservice sprechen",
+     "g": "Bleib freundlich und konkret, um bei Rechnung oder Servicefehler Hilfe zu bekommen.",
+     "p": [
+      "Beginne mit deinem Ziel: Welches Ergebnis würde es lösen?",
+      "Nenne Daten und Details und notiere den Namen der Person.",
+      "Freundlichkeit bringt mehr Hilfe als Ärger je könnte."
+     ],
+     "q": "Was hilft dir, geduldig zu bleiben, wenn ein Anruf lange dauert?",
+     "c": "Bereite vor dem nächsten Serviceanruf drei Stichpunkte vor."
+    },
+    "es": {
+     "t": "Hablar con atención al cliente",
+     "g": "Mantente amable y concreto para recibir ayuda con una factura o un problema.",
+     "p": [
+      "Empieza con tu meta: ¿qué resultado lo resolvería?",
+      "Da fechas y detalles y anota el nombre de quien te atiende.",
+      "La amabilidad consigue más ayuda que el enfado."
+     ],
+     "q": "¿Qué te ayuda a tener paciencia cuando una llamada se alarga?",
+     "c": "Prepara tres puntos antes de tu próxima llamada de servicio."
+    },
+    "fr": {
+     "t": "Parler au service client",
+     "g": "Reste aimable et précis pour obtenir de l'aide sur une facture ou un problème.",
+     "p": [
+      "Commence par ton objectif : quel résultat réglerait cela ?",
+      "Donne dates et détails, et note le nom de l'interlocuteur.",
+      "La gentillesse obtient plus d'aide que la colère."
+     ],
+     "q": "Qu'est-ce qui t'aide à rester patient quand un appel traîne ?",
+     "c": "Prépare trois points avant ton prochain appel au service client."
+    },
+    "it": {
+     "t": "Parlare con il servizio clienti",
+     "g": "Resta gentile e preciso per ottenere aiuto con una bolletta o un problema.",
+     "p": [
+      "Parti dal tuo obiettivo: quale risultato risolverebbe la cosa?",
+      "Dai date e dettagli e annota il nome di chi ti assiste.",
+      "La gentilezza ottiene più aiuto della rabbia."
+     ],
+     "q": "Cosa ti aiuta a restare paziente quando una chiamata è lenta?",
+     "c": "Prepara tre punti prima della prossima chiamata al servizio clienti."
+    },
+    "pt": {
+     "t": "Falar com o apoio ao cliente",
+     "g": "Mantém-te simpático e concreto para obteres ajuda com uma fatura ou problema.",
+     "p": [
+      "Começa pelo teu objetivo: que resultado resolveria isto?",
+      "Dá datas e detalhes e anota o nome de quem te atende.",
+      "A simpatia consegue mais ajuda do que a zanga."
+     ],
+     "q": "O que te ajuda a manter a paciência quando uma chamada demora?",
+     "c": "Prepara três pontos antes da tua próxima chamada de apoio."
+    },
+    "pt_BR": {
+     "t": "Falando com o atendimento ao cliente",
+     "g": "Mantenha-se simpático e objetivo para obter ajuda com uma conta ou problema.",
+     "p": [
+      "Comece pelo seu objetivo: que resultado resolveria isso?",
+      "Dê datas e detalhes e anote o nome de quem atende.",
+      "Simpatia consegue mais ajuda do que raiva."
+     ],
+     "q": "O que ajuda você a ter paciência quando uma ligação demora?",
+     "c": "Prepare três tópicos antes da sua próxima ligação ao atendimento."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking for a better deal on a plan",
+     "g": "Politely ask a provider whether a better offer or package exists.",
+     "p": [
+      "Loyal customers can simply ask what options are available.",
+      "Compare other providers first so you know what is typical.",
+      "Ask: Is there a plan that fits my needs better?"
+     ],
+     "q": "Which of your subscriptions might be worth a friendly question?",
+     "c": "Ask one provider today whether a better-fitting plan exists."
+    },
+    "de": {
+     "t": "Nach einem besseren Tarif fragen",
+     "g": "Frage einen Anbieter höflich, ob es ein besseres Angebot oder Paket gibt.",
+     "p": [
+      "Treue Kunden können einfach nach den Optionen fragen.",
+      "Vergleiche zuerst andere Anbieter, um das Übliche zu kennen.",
+      "Frage: Gibt es einen Tarif, der besser zu mir passt?"
+     ],
+     "q": "Bei welchem deiner Abos lohnt sich eine freundliche Nachfrage?",
+     "c": "Frage heute einen Anbieter, ob es einen besser passenden Tarif gibt."
+    },
+    "es": {
+     "t": "Pedir una mejor tarifa",
+     "g": "Pregunta con educación a un proveedor si existe una oferta o paquete mejor.",
+     "p": [
+      "Un cliente fiel puede simplemente preguntar qué opciones hay.",
+      "Compara antes otros proveedores para saber qué es habitual.",
+      "Pregunta: ¿Hay un plan que se ajuste mejor a mis necesidades?"
+     ],
+     "q": "¿Qué suscripción tuya merece una pregunta amable?",
+     "c": "Pregunta hoy a un proveedor si existe un plan que te encaje mejor."
+    },
+    "fr": {
+     "t": "Demander une meilleure offre",
+     "g": "Demande poliment à un fournisseur s'il existe une meilleure offre ou formule.",
+     "p": [
+      "Un client fidèle peut simplement demander quelles options existent.",
+      "Compare d'abord d'autres fournisseurs pour connaître l'usage.",
+      "Demande : Existe-t-il une formule qui correspond mieux à mes besoins ?"
+     ],
+     "q": "Quel abonnement mérite une question aimable de ta part ?",
+     "c": "Demande aujourd'hui à un fournisseur s'il existe une formule mieux adaptée."
+    },
+    "it": {
+     "t": "Chiedere un'offerta migliore",
+     "g": "Chiedi con cortesia a un fornitore se esiste un'offerta o pacchetto migliore.",
+     "p": [
+      "Un cliente fedele può semplicemente chiedere quali opzioni ci sono.",
+      "Confronta prima altri fornitori per sapere cosa è normale.",
+      "Chiedi: Esiste un piano più adatto alle mie esigenze?"
+     ],
+     "q": "Quale tuo abbonamento merita una domanda gentile?",
+     "c": "Oggi chiedi a un fornitore se esiste un piano più adatto."
+    },
+    "pt": {
+     "t": "Pedir uma oferta melhor",
+     "g": "Pergunta com educação a um fornecedor se existe uma oferta ou pacote melhor.",
+     "p": [
+      "Um cliente fiel pode simplesmente perguntar que opções existem.",
+      "Compara antes outros fornecedores para saberes o que é habitual.",
+      "Pergunta: Existe um plano que sirva melhor as minhas necessidades?"
+     ],
+     "q": "Que subscrição tua merece uma pergunta simpática?",
+     "c": "Hoje pergunta a um fornecedor se existe um plano mais adequado."
+    },
+    "pt_BR": {
+     "t": "Pedindo uma oferta melhor",
+     "g": "Pergunte com educação a um fornecedor se existe uma oferta ou pacote melhor.",
+     "p": [
+      "Um cliente fiel pode simplesmente perguntar quais opções existem.",
+      "Compare antes outros fornecedores para saber o que é habitual.",
+      "Pergunte: Existe um plano que atenda melhor às minhas necessidades?"
+     ],
+     "q": "Qual assinatura sua merece uma pergunta simpática?",
+     "c": "Hoje pergunte a um fornecedor se existe um plano mais adequado."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Buying second-hand items",
+     "g": "Check condition, ask questions and make a fair offer for used goods.",
+     "p": [
+      "Ask why it is being sold and how it was used.",
+      "Inspect the item and point out real flaws politely.",
+      "Offer a fair price with a reason, then listen."
+     ],
+     "q": "What is the best second-hand find you ever made?",
+     "c": "Before your next used purchase, write three questions to ask."
+    },
+    "de": {
+     "t": "Gebrauchtes kaufen",
+     "g": "Prüfe den Zustand, stelle Fragen und mache ein faires Angebot für Gebrauchtes.",
+     "p": [
+      "Frage, warum es verkauft wird und wie es benutzt wurde.",
+      "Prüfe die Sache und nenne echte Mängel höflich.",
+      "Biete einen fairen Preis mit Grund an und höre dann zu."
+     ],
+     "q": "Was war dein bester Gebrauchtfund?",
+     "c": "Schreibe vor dem nächsten Gebrauchtkauf drei Fragen auf."
+    },
+    "es": {
+     "t": "Comprar artículos de segunda mano",
+     "g": "Revisa el estado, haz preguntas y ofrece un precio justo por lo usado.",
+     "p": [
+      "Pregunta por qué se vende y cómo se usó.",
+      "Inspecciona el artículo y señala con educación los defectos reales.",
+      "Ofrece un precio justo con una razón y luego escucha."
+     ],
+     "q": "¿Cuál fue tu mejor hallazgo de segunda mano?",
+     "c": "Antes de tu próxima compra usada, anota tres preguntas para hacer."
+    },
+    "fr": {
+     "t": "Acheter d'occasion",
+     "g": "Vérifie l'état, pose des questions et propose un prix juste pour un objet d'occasion.",
+     "p": [
+      "Demande pourquoi on le vend et comment il a été utilisé.",
+      "Inspecte l'objet et signale poliment les vrais défauts.",
+      "Propose un prix juste avec une raison, puis écoute."
+     ],
+     "q": "Quelle a été ta meilleure trouvaille d'occasion ?",
+     "c": "Avant ton prochain achat d'occasion, écris trois questions à poser."
+    },
+    "it": {
+     "t": "Comprare oggetti di seconda mano",
+     "g": "Controlla le condizioni, fai domande e proponi un prezzo equo per l'usato.",
+     "p": [
+      "Chiedi perché lo vendono e come è stato usato.",
+      "Ispeziona l'oggetto e segnala con garbo i difetti reali.",
+      "Offri un prezzo equo con un motivo, poi ascolta."
+     ],
+     "q": "Qual è stato il tuo miglior affare di seconda mano?",
+     "c": "Prima del prossimo acquisto usato, scrivi tre domande da fare."
+    },
+    "pt": {
+     "t": "Comprar artigos em segunda mão",
+     "g": "Verifica o estado, faz perguntas e propõe um preço justo pelo usado.",
+     "p": [
+      "Pergunta porque é que se vende e como foi usado.",
+      "Inspeciona o artigo e aponta com educação os defeitos reais.",
+      "Propõe um preço justo com uma razão e depois ouve."
+     ],
+     "q": "Qual foi o teu melhor achado em segunda mão?",
+     "c": "Antes da próxima compra usada, escreve três perguntas a fazer."
+    },
+    "pt_BR": {
+     "t": "Comprando itens de segunda mão",
+     "g": "Confira o estado, faça perguntas e proponha um preço justo pelo usado.",
+     "p": [
+      "Pergunte por que está vendendo e como foi usado.",
+      "Inspecione o item e aponte com educação os defeitos reais.",
+      "Proponha um preço justo com um motivo e depois ouça."
+     ],
+     "q": "Qual foi o seu melhor achado de segunda mão?",
+     "c": "Antes da próxima compra usada, anote três perguntas para fazer."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Selling your old things",
+     "g": "Price items, describe them honestly and handle buyer offers.",
+     "p": [
+      "Check similar listings to set a fair price.",
+      "Describe flaws honestly; it builds trust and avoids disputes.",
+      "Leave a little room for friendly counteroffers."
+     ],
+     "q": "What item at home could you sell or give away?",
+     "c": "Pick one item and write an honest two-line description with a price."
+    },
+    "de": {
+     "t": "Deine alten Sachen verkaufen",
+     "g": "Bepreise Dinge, beschreibe sie ehrlich und geh mit Angeboten um.",
+     "p": [
+      "Prüfe ähnliche Anzeigen, um einen fairen Preis zu setzen.",
+      "Nenne Mängel ehrlich; das schafft Vertrauen und vermeidet Streit.",
+      "Lass etwas Spielraum für freundliche Gegenangebote."
+     ],
+     "q": "Welche Sache zu Hause könntest du verkaufen oder verschenken?",
+     "c": "Wähle einen Gegenstand und schreibe eine ehrliche Zweizeiler-Beschreibung mit Preis."
+    },
+    "es": {
+     "t": "Vender tus cosas viejas",
+     "g": "Pon precio, describe con honestidad y gestiona las ofertas de compradores.",
+     "p": [
+      "Mira anuncios similares para fijar un precio justo.",
+      "Describe los defectos con honestidad; da confianza y evita disputas.",
+      "Deja un pequeño margen para contraofertas amables."
+     ],
+     "q": "¿Qué objeto de casa podrías vender o regalar?",
+     "c": "Elige un objeto y escribe una descripción honesta de dos líneas con precio."
+    },
+    "fr": {
+     "t": "Vendre tes vieilles affaires",
+     "g": "Fixe un prix, décris honnêtement et gère les offres des acheteurs.",
+     "p": [
+      "Regarde des annonces similaires pour fixer un prix juste.",
+      "Décris honnêtement les défauts : cela crée la confiance et évite les litiges.",
+      "Laisse un peu de marge pour des contre-offres amicales."
+     ],
+     "q": "Quel objet chez toi pourrais-tu vendre ou donner ?",
+     "c": "Choisis un objet et écris une description honnête en deux lignes avec un prix."
+    },
+    "it": {
+     "t": "Vendere le tue vecchie cose",
+     "g": "Dai un prezzo, descrivi con onestà e gestisci le offerte dei compratori.",
+     "p": [
+      "Guarda annunci simili per fissare un prezzo equo.",
+      "Descrivi i difetti con onestà: crea fiducia ed evita dispute.",
+      "Lascia un po' di margine per controfferte amichevoli."
+     ],
+     "q": "Quale oggetto di casa potresti vendere o regalare?",
+     "c": "Scegli un oggetto e scrivi una descrizione onesta di due righe con il prezzo."
+    },
+    "pt": {
+     "t": "Vender as tuas coisas velhas",
+     "g": "Define o preço, descreve com honestidade e gere as ofertas dos compradores.",
+     "p": [
+      "Vê anúncios semelhantes para fixares um preço justo.",
+      "Descreve os defeitos com honestidade; dá confiança e evita disputas.",
+      "Deixa uma pequena margem para contrapropostas simpáticas."
+     ],
+     "q": "Que objeto em casa poderias vender ou oferecer?",
+     "c": "Escolhe um objeto e escreve uma descrição honesta de duas linhas com preço."
+    },
+    "pt_BR": {
+     "t": "Vendendo suas coisas velhas",
+     "g": "Defina o preço, descreva com honestidade e lide com as ofertas dos compradores.",
+     "p": [
+      "Veja anúncios parecidos para fixar um preço justo.",
+      "Descreva os defeitos com honestidade; dá confiança e evita disputas.",
+      "Deixe uma pequena margem para contrapropostas simpáticas."
+     ],
+     "q": "Que item em casa você poderia vender ou doar?",
+     "c": "Escolha um item e escreva uma descrição honesta de duas linhas com preço."
+    }
+   }
+  }
+ ]
+}

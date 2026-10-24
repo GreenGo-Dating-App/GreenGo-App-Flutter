@@ -1,0 +1,835 @@
+{
+ "topic": "cv",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Quantifying your impact",
+     "g": "Add numbers such as percentages, time saved, people served or volumes.",
+     "p": [
+      "Numbers make results concrete and easy to remember.",
+      "Look for money, time, people, quantity, speed or quality scores.",
+      "Place the number early in the bullet so the eye catches it."
+     ],
+     "q": "What numbers are hiding in your daily work?",
+     "c": "Add a number to three bullets in your experience section."
+    },
+    "de": {
+     "t": "Wirkung beziffern",
+     "g": "Ergänze Zahlen wie Prozente, gesparte Zeit, betreute Personen oder Mengen.",
+     "p": [
+      "Zahlen machen Ergebnisse greifbar und einprägsam.",
+      "Suche nach Geld, Zeit, Personen, Mengen, Tempo oder Qualitätswerten.",
+      "Setze die Zahl früh in den Punkt, damit das Auge sie erfasst."
+     ],
+     "q": "Welche Zahlen verstecken sich in deiner täglichen Arbeit?",
+     "c": "Ergänze in drei Punkten deiner Berufserfahrung eine Zahl."
+    },
+    "es": {
+     "t": "Cuantificar tu impacto",
+     "g": "Añade cifras como porcentajes, tiempo ahorrado, personas atendidas o volúmenes.",
+     "p": [
+      "Los números vuelven concretos y memorables los resultados.",
+      "Busca dinero, tiempo, personas, cantidad, rapidez o puntuaciones de calidad.",
+      "Pon la cifra al principio de la viñeta para que se vea."
+     ],
+     "q": "¿Qué números se esconden en tu trabajo diario?",
+     "c": "Añade una cifra a tres viñetas de tu experiencia."
+    },
+    "fr": {
+     "t": "Chiffrer ton impact",
+     "g": "Ajoute des chiffres : pourcentages, temps gagné, personnes servies, volumes.",
+     "p": [
+      "Les chiffres rendent les résultats concrets et mémorables.",
+      "Cherche argent, temps, personnes, quantités, rapidité ou notes de qualité.",
+      "Place le chiffre tôt dans la puce pour qu'il saute aux yeux."
+     ],
+     "q": "Quels chiffres se cachent dans ton travail quotidien ?",
+     "c": "Ajoute un chiffre à trois puces de ta rubrique expérience."
+    },
+    "it": {
+     "t": "Quantificare il tuo impatto",
+     "g": "Aggiungi numeri come percentuali, tempo risparmiato, persone servite o volumi.",
+     "p": [
+      "I numeri rendono i risultati concreti e memorabili.",
+      "Cerca denaro, tempo, persone, quantità, rapidità o punteggi di qualità.",
+      "Metti il numero all'inizio del punto così l'occhio lo coglie."
+     ],
+     "q": "Quali numeri si nascondono nel tuo lavoro quotidiano?",
+     "c": "Aggiungi un numero a tre punti della sezione esperienza."
+    },
+    "pt": {
+     "t": "Quantificar o teu impacto",
+     "g": "Acrescenta números como percentagens, tempo poupado, pessoas atendidas ou volumes.",
+     "p": [
+      "Os números tornam os resultados concretos e memoráveis.",
+      "Procura dinheiro, tempo, pessoas, quantidade, rapidez ou notas de qualidade.",
+      "Põe o número cedo no tópico para o olhar o apanhar."
+     ],
+     "q": "Que números se escondem no teu trabalho diário?",
+     "c": "Acrescenta um número a três tópicos da tua experiência."
+    },
+    "pt_BR": {
+     "t": "Quantificar seu impacto",
+     "g": "Acrescente números como porcentagens, tempo poupado, pessoas atendidas ou volumes.",
+     "p": [
+      "Números tornam os resultados concretos e memoráveis.",
+      "Procure dinheiro, tempo, pessoas, quantidade, rapidez ou notas de qualidade.",
+      "Coloque o número cedo no tópico para o olhar pegar."
+     ],
+     "q": "Que números se escondem no seu trabalho diário?",
+     "c": "Acrescente um número a três tópicos da sua experiência."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Numbers when you lack data",
+     "g": "Estimate honestly with ranges and approximate figures you can explain.",
+     "p": [
+      "No exact data? Use ranges or words like about, over or up to.",
+      "Estimate from what you know: daily customers times days worked.",
+      "Only use figures you could explain calmly in an interview."
+     ],
+     "q": "What could you estimate about your work, such as customers per day?",
+     "c": "Write two honest estimates and note how you worked them out."
+    },
+    "de": {
+     "t": "Zahlen ohne harte Daten",
+     "g": "Schätze ehrlich mit Spannen und ungefähren Werten, die du erklären kannst.",
+     "p": [
+      "Keine genauen Daten? Nutze Spannen oder Wörter wie etwa, über oder bis zu.",
+      "Schätze aus Bekanntem: tägliche Kunden mal Arbeitstage.",
+      "Nenne nur Zahlen, die du im Gespräch ruhig erklären kannst."
+     ],
+     "q": "Was könntest du an deiner Arbeit schätzen, etwa Kunden pro Tag?",
+     "c": "Schreibe zwei ehrliche Schätzungen und notiere den Rechenweg."
+    },
+    "es": {
+     "t": "Cifras cuando faltan datos",
+     "g": "Estima con honestidad usando rangos y cifras aproximadas que puedas explicar.",
+     "p": [
+      "¿Sin datos exactos? Usa rangos o palabras como unos, más de o hasta.",
+      "Estima a partir de lo que sabes: clientes al día por días trabajados.",
+      "Usa solo cifras que podrías explicar con calma en una entrevista."
+     ],
+     "q": "¿Qué podrías estimar de tu trabajo, como clientes por día?",
+     "c": "Escribe dos estimaciones honestas y anota cómo las calculaste."
+    },
+    "fr": {
+     "t": "Des chiffres sans données précises",
+     "g": "Estime honnêtement avec des fourchettes et des ordres de grandeur explicables.",
+     "p": [
+      "Pas de données exactes ? Utilise des fourchettes ou des mots comme environ, plus de, jusqu'à.",
+      "Estime à partir de ce que tu sais : clients par jour fois jours travaillés.",
+      "N'emploie que des chiffres que tu pourrais expliquer calmement en entretien."
+     ],
+     "q": "Que pourrais-tu estimer dans ton travail, comme les clients par jour ?",
+     "c": "Écris deux estimations honnêtes et note comment tu les as calculées."
+    },
+    "it": {
+     "t": "Numeri quando mancano i dati",
+     "g": "Stima con onestà usando intervalli e cifre approssimative che sai spiegare.",
+     "p": [
+      "Niente dati esatti? Usa intervalli o parole come circa, oltre, fino a.",
+      "Stima da ciò che sai: clienti al giorno per giorni lavorati.",
+      "Usa solo cifre che sapresti spiegare con calma in un colloquio."
+     ],
+     "q": "Cosa potresti stimare del tuo lavoro, come i clienti al giorno?",
+     "c": "Scrivi due stime oneste e annota come le hai calcolate."
+    },
+    "pt": {
+     "t": "Números quando faltam dados",
+     "g": "Estima com honestidade usando intervalos e valores aproximados que consigas explicar.",
+     "p": [
+      "Sem dados exatos? Usa intervalos ou palavras como cerca de, mais de ou até.",
+      "Estima a partir do que sabes: clientes por dia vezes dias trabalhados.",
+      "Usa só números que conseguirias explicar com calma numa entrevista."
+     ],
+     "q": "O que poderias estimar do teu trabalho, como clientes por dia?",
+     "c": "Escreve duas estimativas honestas e anota como as calculaste."
+    },
+    "pt_BR": {
+     "t": "Números quando faltam dados",
+     "g": "Estime com honestidade usando intervalos e valores aproximados que você consiga explicar.",
+     "p": [
+      "Sem dados exatos? Use intervalos ou palavras como cerca de, mais de ou até.",
+      "Estime a partir do que você sabe: clientes por dia vezes dias trabalhados.",
+      "Use só números que você conseguiria explicar com calma numa entrevista."
+     ],
+     "q": "O que você poderia estimar do seu trabalho, como clientes por dia?",
+     "c": "Escreva duas estimativas honestas e anote como você as calculou."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Showing scale and scope",
+     "g": "Use team size, number of clients or reach to show responsibility.",
+     "p": [
+      "Scale answers how big: how many people, clients, sites or items.",
+      "Scope answers how wide: which areas or processes you covered.",
+      "These details help readers picture your level of responsibility."
+     ],
+     "q": "How big was the biggest team, budget area or workload you handled?",
+     "c": "Add one scale detail to the top bullet of your latest job."
+    },
+    "de": {
+     "t": "Umfang und Reichweite zeigen",
+     "g": "Nutze Teamgröße, Kundenzahl oder Reichweite, um Verantwortung zu zeigen.",
+     "p": [
+      "Umfang beantwortet, wie groß: wie viele Personen, Kunden, Standorte, Stücke.",
+      "Reichweite beantwortet, wie breit: welche Bereiche oder Abläufe du abdecktest.",
+      "Diese Angaben helfen Lesern, dein Verantwortungsniveau einzuschätzen."
+     ],
+     "q": "Wie groß war das größte Team oder die größte Aufgabe, die du hattest?",
+     "c": "Ergänze die erste Zeile deines letzten Jobs um eine Umfangsangabe."
+    },
+    "es": {
+     "t": "Mostrar escala y alcance",
+     "g": "Usa tamaño de equipo, número de clientes o alcance para mostrar responsabilidad.",
+     "p": [
+      "La escala responde a cuán grande: cuántas personas, clientes, sedes o piezas.",
+      "El alcance responde a cuán amplio: qué áreas o procesos cubrías.",
+      "Estos detalles ayudan a imaginar tu nivel de responsabilidad."
+     ],
+     "q": "¿Cuál fue el equipo o la carga de trabajo más grande que manejaste?",
+     "c": "Añade un dato de escala a la primera viñeta de tu último empleo."
+    },
+    "fr": {
+     "t": "Montrer l'ampleur et le périmètre",
+     "g": "Utilise taille d'équipe, nombre de clients ou portée pour montrer tes responsabilités.",
+     "p": [
+      "L'ampleur répond à combien : personnes, clients, sites ou pièces.",
+      "Le périmètre répond à jusqu'où : quels domaines ou processus tu couvrais.",
+      "Ces détails aident à visualiser ton niveau de responsabilité."
+     ],
+     "q": "Quelle est la plus grande équipe ou charge de travail que tu as gérée ?",
+     "c": "Ajoute un élément d'ampleur à la première puce de ton dernier poste."
+    },
+    "it": {
+     "t": "Mostrare scala e portata",
+     "g": "Usa dimensione del team, numero di clienti o portata per mostrare responsabilità.",
+     "p": [
+      "La scala risponde a quanto grande: quante persone, clienti, sedi o pezzi.",
+      "La portata risponde a quanto ampio: quali aree o processi coprivi.",
+      "Questi dettagli aiutano a immaginare il tuo livello di responsabilità."
+     ],
+     "q": "Qual è stato il team o il carico di lavoro più grande che hai gestito?",
+     "c": "Aggiungi un dato di scala al primo punto del tuo ultimo lavoro."
+    },
+    "pt": {
+     "t": "Mostrar escala e alcance",
+     "g": "Usa tamanho da equipa, número de clientes ou alcance para mostrar responsabilidade.",
+     "p": [
+      "A escala responde a quão grande: quantas pessoas, clientes, locais ou peças.",
+      "O alcance responde a quão amplo: que áreas ou processos cobrias.",
+      "Estes detalhes ajudam a imaginar o teu nível de responsabilidade."
+     ],
+     "q": "Qual foi a maior equipa ou carga de trabalho que geriste?",
+     "c": "Acrescenta um dado de escala ao primeiro tópico do teu último emprego."
+    },
+    "pt_BR": {
+     "t": "Mostrar escala e alcance",
+     "g": "Use tamanho da equipe, número de clientes ou alcance para mostrar responsabilidade.",
+     "p": [
+      "A escala responde a quão grande: quantas pessoas, clientes, locais ou peças.",
+      "O alcance responde a quão amplo: que áreas ou processos você cobria.",
+      "Esses detalhes ajudam a imaginar seu nível de responsabilidade."
+     ],
+     "q": "Qual foi a maior equipe ou carga de trabalho que você gerenciou?",
+     "c": "Acrescente um dado de escala ao primeiro tópico do seu último emprego."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bullet points that breathe",
+     "g": "Keep bullets to one or two lines and about three to six per role.",
+     "p": [
+      "One or two lines per bullet is easy to scan.",
+      "Three to six bullets per role is usually enough.",
+      "Cut filler words; every word should add information."
+     ],
+     "q": "Which of your bullets is the longest, and can it be split or trimmed?",
+     "c": "Trim your three longest bullets by a third."
+    },
+    "de": {
+     "t": "Stichpunkte mit Luft",
+     "g": "Halte Punkte bei ein bis zwei Zeilen und etwa drei bis sechs pro Stelle.",
+     "p": [
+      "Ein bis zwei Zeilen pro Punkt lassen sich leicht überfliegen.",
+      "Drei bis sechs Punkte pro Stelle reichen meist.",
+      "Streiche Füllwörter; jedes Wort soll Information liefern."
+     ],
+     "q": "Welcher deiner Punkte ist am längsten, und lässt er sich teilen oder kürzen?",
+     "c": "Kürze deine drei längsten Punkte um ein Drittel."
+    },
+    "es": {
+     "t": "Viñetas que respiran",
+     "g": "Mantén las viñetas en una o dos líneas y unas tres a seis por puesto.",
+     "p": [
+      "Una o dos líneas por viñeta se escanean con facilidad.",
+      "De tres a seis viñetas por puesto suele bastar.",
+      "Quita palabras de relleno; cada palabra debe aportar información."
+     ],
+     "q": "¿Cuál de tus viñetas es la más larga y podrías dividirla o acortarla?",
+     "c": "Recorta un tercio tus tres viñetas más largas."
+    },
+    "fr": {
+     "t": "Des puces qui respirent",
+     "g": "Garde les puces à une ou deux lignes, environ trois à six par poste.",
+     "p": [
+      "Une ou deux lignes par puce se parcourent facilement.",
+      "Trois à six puces par poste suffisent généralement.",
+      "Supprime les mots de remplissage ; chaque mot doit apporter de l'information."
+     ],
+     "q": "Quelle est ta puce la plus longue et peux-tu la scinder ou la raccourcir ?",
+     "c": "Raccourcis d'un tiers tes trois puces les plus longues."
+    },
+    "it": {
+     "t": "Punti elenco che respirano",
+     "g": "Tieni i punti a una o due righe e circa da tre a sei per ruolo.",
+     "p": [
+      "Una o due righe per punto si scorrono facilmente.",
+      "Da tre a sei punti per ruolo di solito bastano.",
+      "Taglia le parole di riempimento: ogni parola deve dare informazione."
+     ],
+     "q": "Qual è il tuo punto più lungo e puoi dividerlo o accorciarlo?",
+     "c": "Accorcia di un terzo i tuoi tre punti più lunghi."
+    },
+    "pt": {
+     "t": "Tópicos que respiram",
+     "g": "Mantém os tópicos em uma ou duas linhas e cerca de três a seis por função.",
+     "p": [
+      "Uma ou duas linhas por tópico leem-se com facilidade.",
+      "Três a seis tópicos por função costumam bastar.",
+      "Corta palavras de enchimento; cada palavra deve dar informação."
+     ],
+     "q": "Qual é o teu tópico mais longo e podes dividi-lo ou encurtá-lo?",
+     "c": "Encurta um terço os teus três tópicos mais longos."
+    },
+    "pt_BR": {
+     "t": "Tópicos que respiram",
+     "g": "Mantenha os tópicos em uma ou duas linhas e cerca de três a seis por função.",
+     "p": [
+      "Uma ou duas linhas por tópico são fáceis de ler.",
+      "Três a seis tópicos por função costumam bastar.",
+      "Corte palavras de enchimento; cada palavra deve dar informação."
+     ],
+     "q": "Qual é o seu tópico mais longo e você pode dividi-lo ou encurtá-lo?",
+     "c": "Encurte em um terço os seus três tópicos mais longos."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ordering your bullets",
+     "g": "Put the most relevant and impressive achievement first in every role.",
+     "p": [
+      "Readers often read only the first bullet or two of each job.",
+      "Lead with what matches the job you are applying for.",
+      "Reorder bullets for each application if it helps."
+     ],
+     "q": "Which achievement would you most want a reader to see first?",
+     "c": "Reorder the bullets in your latest role, strongest first."
+    },
+    "de": {
+     "t": "Punkte sinnvoll ordnen",
+     "g": "Setze in jeder Stelle den relevantesten und stärksten Erfolg an den Anfang.",
+     "p": [
+      "Leser lesen oft nur den ersten oder zweiten Punkt jeder Stelle.",
+      "Beginne mit dem, was zur Zielstelle passt.",
+      "Ordne die Punkte bei Bedarf für jede Bewerbung neu."
+     ],
+     "q": "Welchen Erfolg soll ein Leser am liebsten zuerst sehen?",
+     "c": "Ordne die Punkte deiner letzten Stelle neu, den stärksten zuerst."
+    },
+    "es": {
+     "t": "Ordenar tus viñetas",
+     "g": "Pon primero el logro más relevante e impresionante en cada puesto.",
+     "p": [
+      "Los lectores a menudo solo leen la primera o segunda viñeta de cada empleo.",
+      "Empieza por lo que encaja con el puesto al que te postulas.",
+      "Reordena las viñetas en cada candidatura si ayuda."
+     ],
+     "q": "¿Qué logro querrías que viera primero un lector?",
+     "c": "Reordena las viñetas de tu último puesto, la más fuerte primero."
+    },
+    "fr": {
+     "t": "Ordonner tes puces",
+     "g": "Place d'abord la réalisation la plus pertinente et impressionnante pour chaque poste.",
+     "p": [
+      "Les lecteurs ne lisent souvent que la première ou deuxième puce de chaque emploi.",
+      "Commence par ce qui correspond au poste visé.",
+      "Réorganise les puces pour chaque candidature si besoin."
+     ],
+     "q": "Quelle réalisation voudrais-tu qu'un lecteur voie en premier ?",
+     "c": "Réordonne les puces de ton dernier poste, la plus forte en premier."
+    },
+    "it": {
+     "t": "Ordinare i tuoi punti",
+     "g": "Metti per primo il risultato più rilevante e notevole in ogni ruolo.",
+     "p": [
+      "Spesso chi legge guarda solo il primo o secondo punto di ogni lavoro.",
+      "Inizia da ciò che corrisponde al lavoro per cui ti candidi.",
+      "Riordina i punti per ogni candidatura se serve."
+     ],
+     "q": "Quale risultato vorresti che un lettore vedesse per primo?",
+     "c": "Riordina i punti del tuo ultimo ruolo, il più forte per primo."
+    },
+    "pt": {
+     "t": "Ordenar os teus tópicos",
+     "g": "Põe primeiro a conquista mais relevante e impressionante em cada função.",
+     "p": [
+      "Os leitores muitas vezes só leem o primeiro ou segundo tópico de cada emprego.",
+      "Começa pelo que combina com a vaga a que te candidatas.",
+      "Reordena os tópicos em cada candidatura, se ajudar."
+     ],
+     "q": "Que conquista gostavas que um leitor visse primeiro?",
+     "c": "Reordena os tópicos da tua última função, o mais forte primeiro."
+    },
+    "pt_BR": {
+     "t": "Ordenar seus tópicos",
+     "g": "Coloque primeiro a conquista mais relevante e impressionante em cada função.",
+     "p": [
+      "Os leitores muitas vezes só leem o primeiro ou segundo tópico de cada emprego.",
+      "Comece pelo que combina com a vaga a que você se candidata.",
+      "Reordene os tópicos em cada candidatura, se ajudar."
+     ],
+     "q": "Que conquista você gostaria que um leitor visse primeiro?",
+     "c": "Reordene os tópicos da sua última função, o mais forte primeiro."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Describing your employer",
+     "g": "Add a short line that explains a little-known company or organisation.",
+     "p": [
+      "Not every reader knows your employer; one line can set the scene.",
+      "Mention the sector, size or what the organisation does.",
+      "Keep it to one short line in italics or smaller text under the job title."
+     ],
+     "q": "How would you explain your employer to a friend in one sentence?",
+     "c": "Add a one-line description for any unfamiliar employer."
+    },
+    "de": {
+     "t": "Den Arbeitgeber beschreiben",
+     "g": "Ergänze eine kurze Zeile, die ein wenig bekanntes Unternehmen erklärt.",
+     "p": [
+      "Nicht jeder Leser kennt deinen Arbeitgeber; eine Zeile schafft Kontext.",
+      "Nenne Branche, Größe oder was die Organisation tut.",
+      "Halte es bei einer kurzen Zeile, kursiv oder kleiner, unter der Berufsbezeichnung."
+     ],
+     "q": "Wie würdest du deinen Arbeitgeber einer Freundin in einem Satz erklären?",
+     "c": "Ergänze für jeden unbekannten Arbeitgeber eine Ein-Zeilen-Beschreibung."
+    },
+    "es": {
+     "t": "Describir a tu empleador",
+     "g": "Añade una línea breve que explique una empresa u organización poco conocida.",
+     "p": [
+      "No todos conocen a tu empleador; una línea sitúa al lector.",
+      "Menciona el sector, el tamaño o a qué se dedica la organización.",
+      "Una sola línea corta, en cursiva o más pequeña, bajo el cargo."
+     ],
+     "q": "¿Cómo explicarías tu empleador a un amigo en una frase?",
+     "c": "Añade una descripción de una línea a cualquier empleador desconocido."
+    },
+    "fr": {
+     "t": "Décrire ton employeur",
+     "g": "Ajoute une courte ligne qui présente une entreprise ou organisation peu connue.",
+     "p": [
+      "Tous les lecteurs ne connaissent pas ton employeur ; une ligne pose le décor.",
+      "Mentionne le secteur, la taille ou l'activité de l'organisation.",
+      "Une seule ligne courte, en italique ou plus petite, sous l'intitulé."
+     ],
+     "q": "Comment expliquerais-tu ton employeur à un ami en une phrase ?",
+     "c": "Ajoute une description d'une ligne pour tout employeur méconnu."
+    },
+    "it": {
+     "t": "Descrivere il tuo datore di lavoro",
+     "g": "Aggiungi una breve riga che spieghi un'azienda o organizzazione poco nota.",
+     "p": [
+      "Non tutti conoscono la tua azienda: una riga inquadra il contesto.",
+      "Indica il settore, la dimensione o cosa fa l'organizzazione.",
+      "Una sola riga breve, in corsivo o più piccola, sotto il ruolo."
+     ],
+     "q": "Come spiegheresti la tua azienda a un amico in una frase?",
+     "c": "Aggiungi una descrizione di una riga per ogni azienda sconosciuta."
+    },
+    "pt": {
+     "t": "Descrever a tua entidade empregadora",
+     "g": "Acrescenta uma linha curta que explique uma empresa ou organização pouco conhecida.",
+     "p": [
+      "Nem todos conhecem a tua empresa; uma linha situa o leitor.",
+      "Menciona o setor, o tamanho ou o que a organização faz.",
+      "Uma só linha curta, em itálico ou mais pequena, sob o cargo."
+     ],
+     "q": "Como explicarias a tua empresa a um amigo numa frase?",
+     "c": "Acrescenta uma descrição de uma linha a qualquer empresa desconhecida."
+    },
+    "pt_BR": {
+     "t": "Descrever sua empresa",
+     "g": "Acrescente uma linha curta que explique uma empresa ou organização pouco conhecida.",
+     "p": [
+      "Nem todos conhecem a sua empresa; uma linha situa o leitor.",
+      "Mencione o setor, o tamanho ou o que a organização faz.",
+      "Uma só linha curta, em itálico ou menor, sob o cargo."
+     ],
+     "q": "Como você explicaria sua empresa a um amigo em uma frase?",
+     "c": "Acrescente uma descrição de uma linha a qualquer empresa desconhecida."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Several roles, one employer",
+     "g": "Show promotions and internal moves under the same company name.",
+     "p": [
+      "List the employer once, then each role with its own dates.",
+      "This makes growth visible at a glance.",
+      "Give each role its own bullets, focused on what changed in each."
+     ],
+     "q": "Have you moved up or sideways inside one organisation?",
+     "c": "Group your roles at one employer under a single heading."
+    },
+    "de": {
+     "t": "Mehrere Rollen, ein Arbeitgeber",
+     "g": "Zeige Beförderungen und interne Wechsel unter demselben Firmennamen.",
+     "p": [
+      "Nenne den Arbeitgeber einmal, dann jede Rolle mit eigenem Zeitraum.",
+      "So wird Entwicklung auf einen Blick sichtbar.",
+      "Gib jeder Rolle eigene Punkte, die zeigen, was sich jeweils änderte."
+     ],
+     "q": "Bist du in einer Organisation aufgestiegen oder seitwärts gewechselt?",
+     "c": "Fasse deine Rollen bei einem Arbeitgeber unter einer Überschrift zusammen."
+    },
+    "es": {
+     "t": "Varios puestos, una empresa",
+     "g": "Muestra ascensos y cambios internos bajo el mismo nombre de empresa.",
+     "p": [
+      "Nombra a la empresa una vez y luego cada puesto con sus fechas.",
+      "Así el crecimiento se ve de un vistazo.",
+      "Da a cada puesto sus viñetas, centradas en lo que cambió en cada uno."
+     ],
+     "q": "¿Has subido o cambiado de área dentro de una misma organización?",
+     "c": "Agrupa tus puestos en una empresa bajo un solo encabezado."
+    },
+    "fr": {
+     "t": "Plusieurs postes, un employeur",
+     "g": "Montre promotions et mobilités internes sous le même nom d'entreprise.",
+     "p": [
+      "Cite l'employeur une fois, puis chaque poste avec ses dates.",
+      "La progression se voit ainsi d'un coup d'oeil.",
+      "Donne à chaque poste ses puces, centrées sur ce qui a changé."
+     ],
+     "q": "As-tu évolué ou changé de service au sein d'une même organisation ?",
+     "c": "Regroupe tes postes chez un employeur sous un seul titre."
+    },
+    "it": {
+     "t": "Più ruoli, un solo datore di lavoro",
+     "g": "Mostra promozioni e spostamenti interni sotto lo stesso nome aziendale.",
+     "p": [
+      "Indica l'azienda una volta, poi ogni ruolo con le sue date.",
+      "Così la crescita si vede a colpo d'occhio.",
+      "Dai a ogni ruolo i suoi punti, centrati su ciò che è cambiato."
+     ],
+     "q": "Sei cresciuto o hai cambiato area dentro la stessa organizzazione?",
+     "c": "Raggruppa i tuoi ruoli presso un'azienda sotto un unico titolo."
+    },
+    "pt": {
+     "t": "Várias funções, uma empresa",
+     "g": "Mostra promoções e mudanças internas sob o mesmo nome de empresa.",
+     "p": [
+      "Indica a empresa uma vez e depois cada função com as suas datas.",
+      "Assim a evolução vê-se num relance.",
+      "Dá a cada função os seus tópicos, centrados no que mudou em cada uma."
+     ],
+     "q": "Subiste ou mudaste de área dentro da mesma organização?",
+     "c": "Agrupa as tuas funções numa empresa sob um só título."
+    },
+    "pt_BR": {
+     "t": "Várias funções, uma empresa",
+     "g": "Mostre promoções e mudanças internas sob o mesmo nome de empresa.",
+     "p": [
+      "Indique a empresa uma vez e depois cada função com suas datas.",
+      "Assim a evolução aparece num relance.",
+      "Dê a cada função os seus tópicos, focados no que mudou em cada uma."
+     ],
+     "q": "Você cresceu ou mudou de área dentro da mesma organização?",
+     "c": "Agrupe suas funções numa empresa sob um só título."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Part-time and temporary work",
+     "g": "Present shifts, seasonal jobs and side work in a positive light.",
+     "p": [
+      "Part-time and seasonal jobs show reliability and initiative.",
+      "Label them clearly, such as Seasonal or Part-time, with dates.",
+      "Focus on skills gained: service, speed, teamwork, responsibility."
+     ],
+     "q": "Which short or part-time job taught you the most?",
+     "c": "Add or improve one part-time job entry with two achievement bullets."
+    },
+    "de": {
+     "t": "Teilzeit und befristete Jobs",
+     "g": "Stelle Schichtarbeit, Saisonjobs und Nebentätigkeiten positiv dar.",
+     "p": [
+      "Teilzeit- und Saisonjobs zeigen Zuverlässigkeit und Initiative.",
+      "Kennzeichne sie klar, etwa Saisonarbeit oder Teilzeit, mit Zeitraum.",
+      "Betone gewonnene Fähigkeiten: Service, Tempo, Teamarbeit, Verantwortung."
+     ],
+     "q": "Welcher kurze oder Teilzeitjob hat dir am meisten beigebracht?",
+     "c": "Ergänze oder verbessere einen Teilzeit-Eintrag mit zwei Erfolgspunkten."
+    },
+    "es": {
+     "t": "Trabajo a tiempo parcial y temporal",
+     "g": "Presenta turnos, empleos de temporada y trabajos extra de forma positiva.",
+     "p": [
+      "Los empleos parciales y de temporada muestran fiabilidad e iniciativa.",
+      "Etiquétalos con claridad, como Temporada o Media jornada, con fechas.",
+      "Céntrate en lo aprendido: servicio, rapidez, equipo, responsabilidad."
+     ],
+     "q": "¿Qué trabajo corto o de media jornada te enseñó más?",
+     "c": "Añade o mejora una entrada parcial con dos viñetas de logros."
+    },
+    "fr": {
+     "t": "Temps partiel et missions temporaires",
+     "g": "Présente jobs saisonniers, petits boulots et temps partiel sous un jour positif.",
+     "p": [
+      "Les emplois à temps partiel et saisonniers montrent fiabilité et initiative.",
+      "Indique-les clairement, par exemple Saisonnier ou Temps partiel, avec dates.",
+      "Insiste sur les compétences acquises : service, rapidité, équipe, responsabilité."
+     ],
+     "q": "Quel emploi court ou à temps partiel t'a le plus appris ?",
+     "c": "Ajoute ou améliore une entrée à temps partiel avec deux puces de réalisations."
+    },
+    "it": {
+     "t": "Lavoro part-time e temporaneo",
+     "g": "Presenta turni, lavori stagionali e lavoretti in una luce positiva.",
+     "p": [
+      "Lavori part-time e stagionali mostrano affidabilità e iniziativa.",
+      "Indicali chiaramente, come Stagionale o Part-time, con le date.",
+      "Punta sulle competenze acquisite: servizio, rapidità, squadra, responsabilità."
+     ],
+     "q": "Quale lavoro breve o part-time ti ha insegnato di più?",
+     "c": "Aggiungi o migliora una voce part-time con due punti di risultati."
+    },
+    "pt": {
+     "t": "Trabalho a tempo parcial e temporário",
+     "g": "Apresenta turnos, empregos sazonais e biscates de forma positiva.",
+     "p": [
+      "Empregos a tempo parcial e sazonais mostram fiabilidade e iniciativa.",
+      "Identifica-os com clareza, como Sazonal ou Part-time, com datas.",
+      "Foca nas competências ganhas: serviço, rapidez, equipa, responsabilidade."
+     ],
+     "q": "Que trabalho curto ou a tempo parcial mais te ensinou?",
+     "c": "Acrescenta ou melhora uma entrada parcial com dois tópicos de conquistas."
+    },
+    "pt_BR": {
+     "t": "Trabalho meio período e temporário",
+     "g": "Apresente turnos, empregos sazonais e bicos de forma positiva.",
+     "p": [
+      "Empregos de meio período e sazonais mostram confiabilidade e iniciativa.",
+      "Identifique com clareza, como Sazonal ou Meio período, com datas.",
+      "Foque nas habilidades ganhas: atendimento, rapidez, equipe, responsabilidade."
+     ],
+     "q": "Que trabalho curto ou de meio período mais te ensinou?",
+     "c": "Acrescente ou melhore uma entrada parcial com dois tópicos de conquistas."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Freelance and self-employed",
+     "g": "List clients, projects and results from times you worked for yourself.",
+     "p": [
+      "Self-employment is real work: show it with a title like Freelance Designer.",
+      "Group small projects into a few lines with clients and outcomes.",
+      "Mention client types, not confidential names, if privacy matters."
+     ],
+     "q": "What did running your own work teach you about responsibility?",
+     "c": "Write a freelance entry with a title, dates and two results."
+    },
+    "de": {
+     "t": "Freiberuflich und selbstständig",
+     "g": "Liste Kunden, Projekte und Ergebnisse aus Zeiten eigener Tätigkeit auf.",
+     "p": [
+      "Selbstständigkeit ist echte Arbeit: zeige sie mit einem Titel wie Freiberuflicher Designer.",
+      "Fasse kleine Projekte in wenigen Zeilen mit Kunden und Ergebnissen zusammen.",
+      "Nenne Kundenarten statt vertraulicher Namen, wenn Diskretion zählt."
+     ],
+     "q": "Was hat dich das Führen der eigenen Arbeit über Verantwortung gelehrt?",
+     "c": "Schreibe einen freiberuflichen Eintrag mit Titel, Zeitraum und zwei Ergebnissen."
+    },
+    "es": {
+     "t": "Autónomo y freelance",
+     "g": "Lista clientes, proyectos y resultados de cuando trabajaste por tu cuenta.",
+     "p": [
+      "Trabajar por cuenta propia es trabajo real: muéstralo con un título como Diseñador Freelance.",
+      "Agrupa proyectos pequeños en pocas líneas con clientes y resultados.",
+      "Menciona tipos de cliente, no nombres confidenciales, si importa la privacidad."
+     ],
+     "q": "¿Qué te enseñó trabajar por tu cuenta sobre la responsabilidad?",
+     "c": "Escribe una entrada freelance con título, fechas y dos resultados."
+    },
+    "fr": {
+     "t": "Freelance et indépendant",
+     "g": "Liste clients, projets et résultats des périodes où tu travaillais à ton compte.",
+     "p": [
+      "Le travail indépendant est un vrai travail : donne-lui un titre comme Designer freelance.",
+      "Regroupe les petits projets en quelques lignes avec clients et résultats.",
+      "Cite des types de clients, pas de noms confidentiels, si la discrétion compte."
+     ],
+     "q": "Qu'a appris de toi la gestion de ton propre travail sur la responsabilité ?",
+     "c": "Écris une entrée freelance avec titre, dates et deux résultats."
+    },
+    "it": {
+     "t": "Freelance e autonomi",
+     "g": "Elenca clienti, progetti e risultati dei periodi in cui hai lavorato in proprio.",
+     "p": [
+      "Lavorare in proprio è lavoro vero: mostralo con un titolo come Designer freelance.",
+      "Raggruppa i piccoli progetti in poche righe con clienti e risultati.",
+      "Indica tipi di cliente, non nomi riservati, se la riservatezza conta."
+     ],
+     "q": "Cosa ti ha insegnato la gestione del tuo lavoro sulla responsabilità?",
+     "c": "Scrivi una voce freelance con titolo, date e due risultati."
+    },
+    "pt": {
+     "t": "Freelancer e trabalho por conta própria",
+     "g": "Lista clientes, projetos e resultados de quando trabalhaste por conta própria.",
+     "p": [
+      "Trabalhar por conta própria é trabalho real: mostra-o com um título como Designer Freelancer.",
+      "Agrupa projetos pequenos em poucas linhas com clientes e resultados.",
+      "Menciona tipos de cliente, não nomes confidenciais, se a privacidade importar."
+     ],
+     "q": "O que te ensinou gerir o teu próprio trabalho sobre responsabilidade?",
+     "c": "Escreve uma entrada freelancer com título, datas e dois resultados."
+    },
+    "pt_BR": {
+     "t": "Freelancer e autônomo",
+     "g": "Liste clientes, projetos e resultados de quando você trabalhou por conta própria.",
+     "p": [
+      "Trabalhar por conta própria é trabalho real: mostre com um título como Designer Freelancer.",
+      "Agrupe projetos pequenos em poucas linhas com clientes e resultados.",
+      "Mencione tipos de cliente, não nomes confidenciais, se a privacidade importar."
+     ],
+     "q": "O que gerir seu próprio trabalho te ensinou sobre responsabilidade?",
+     "c": "Escreva uma entrada freelancer com título, datas e dois resultados."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Internships that count",
+     "g": "Turn internships into real achievements rather than lists of chores.",
+     "p": [
+      "An internship is experience: describe what you contributed.",
+      "Replace lines like made coffee or helped with tasks by real outputs.",
+      "Mention tools learned, projects supported and feedback received."
+     ],
+     "q": "What was the proudest moment of your internship or trial period?",
+     "c": "Rewrite internship bullets to show outputs, not chores."
+    },
+    "de": {
+     "t": "Praktika, die zählen",
+     "g": "Mache aus Praktika echte Erfolge statt Aufgabenlisten.",
+     "p": [
+      "Ein Praktikum ist Erfahrung: beschreibe, was du beigetragen hast.",
+      "Ersetze Zeilen wie unterstützte bei Aufgaben durch echte Ergebnisse.",
+      "Nenne erlernte Werkzeuge, unterstützte Projekte und erhaltenes Feedback."
+     ],
+     "q": "Was war dein stolzester Moment im Praktikum oder in der Probezeit?",
+     "c": "Formuliere Praktikumspunkte so um, dass sie Ergebnisse statt Hilfsarbeiten zeigen."
+    },
+    "es": {
+     "t": "Prácticas que cuentan",
+     "g": "Convierte las prácticas en logros reales en vez de listas de tareas.",
+     "p": [
+      "Unas prácticas son experiencia: describe qué aportaste.",
+      "Cambia líneas como ayudé con tareas por resultados reales.",
+      "Menciona herramientas aprendidas, proyectos apoyados y comentarios recibidos."
+     ],
+     "q": "¿Cuál fue el momento más orgulloso de tus prácticas?",
+     "c": "Reescribe las viñetas de prácticas para mostrar resultados, no tareas."
+    },
+    "fr": {
+     "t": "Des stages qui comptent",
+     "g": "Transforme tes stages en vraies réalisations plutôt qu'en listes de corvées.",
+     "p": [
+      "Un stage est une expérience : décris ce que tu as apporté.",
+      "Remplace des lignes comme aidé aux tâches par des productions réelles.",
+      "Mentionne les outils appris, projets soutenus et retours reçus."
+     ],
+     "q": "Quel a été ton moment le plus fier pendant ton stage ?",
+     "c": "Réécris les puces de stage pour montrer des résultats, pas des corvées."
+    },
+    "it": {
+     "t": "Tirocini che contano",
+     "g": "Trasforma i tirocini in risultati reali invece che in elenchi di faccende.",
+     "p": [
+      "Un tirocinio è esperienza: descrivi cosa hai portato.",
+      "Sostituisci righe come ho aiutato con compiti con risultati concreti.",
+      "Cita strumenti imparati, progetti supportati e feedback ricevuti."
+     ],
+     "q": "Qual è stato il tuo momento più fiero durante il tirocinio?",
+     "c": "Riscrivi i punti del tirocinio per mostrare risultati, non faccende."
+    },
+    "pt": {
+     "t": "Estágios que contam",
+     "g": "Transforma os estágios em conquistas reais em vez de listas de tarefas.",
+     "p": [
+      "Um estágio é experiência: descreve o que contribuíste.",
+      "Troca linhas como ajudei em tarefas por resultados reais.",
+      "Menciona ferramentas aprendidas, projetos apoiados e feedback recebido."
+     ],
+     "q": "Qual foi o teu momento mais orgulhoso no estágio?",
+     "c": "Reescreve os tópicos do estágio para mostrar resultados, não tarefas."
+    },
+    "pt_BR": {
+     "t": "Estágios que contam",
+     "g": "Transforme os estágios em conquistas reais em vez de listas de tarefas.",
+     "p": [
+      "Um estágio é experiência: descreva o que você contribuiu.",
+      "Troque linhas como ajudei em tarefas por resultados reais.",
+      "Mencione ferramentas aprendidas, projetos apoiados e feedback recebido."
+     ],
+     "q": "Qual foi o seu momento mais orgulhoso no estágio?",
+     "c": "Reescreva os tópicos do estágio para mostrar resultados, não tarefas."
+    }
+   }
+  }
+ ]
+}

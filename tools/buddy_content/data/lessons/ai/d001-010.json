@@ -1,0 +1,835 @@
+{
+ "topic": "ai",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to the world of AI",
+     "g": "Understand what artificial intelligence means in plain words.",
+     "p": [
+      "AI means computers doing tasks that usually need human thinking.",
+      "Examples are seeing, talking, translating and deciding.",
+      "AI is a tool made by people, not a magic brain."
+     ],
+     "q": "Where do you think you already meet AI in a normal day?",
+     "c": "Write down one thing your phone does that feels smart."
+    },
+    "de": {
+     "t": "Willkommen in der Welt der KI",
+     "g": "Verstehe in einfachen Worten, was künstliche Intelligenz bedeutet.",
+     "p": [
+      "KI heißt: Computer erledigen Aufgaben, die sonst menschliches Denken brauchen.",
+      "Beispiele sind Sehen, Sprechen, Übersetzen und Entscheiden.",
+      "KI ist ein Werkzeug von Menschen, kein magisches Gehirn."
+     ],
+     "q": "Wo begegnet dir KI wohl schon im ganz normalen Alltag?",
+     "c": "Notiere eine Sache, die dein Handy macht und die dir schlau vorkommt."
+    },
+    "es": {
+     "t": "Bienvenido al mundo de la IA",
+     "g": "Entiende con palabras sencillas qué es la inteligencia artificial.",
+     "p": [
+      "La IA son ordenadores que hacen tareas que suelen requerir pensar como una persona.",
+      "Ejemplos: ver, hablar, traducir y decidir.",
+      "La IA es una herramienta creada por personas, no un cerebro mágico."
+     ],
+     "q": "¿Dónde crees que ya te encuentras con la IA en un día normal?",
+     "c": "Anota algo que tu móvil hace y que te parezca inteligente."
+    },
+    "fr": {
+     "t": "Bienvenue dans le monde de l'IA",
+     "g": "Comprendre simplement ce que veut dire intelligence artificielle.",
+     "p": [
+      "L'IA, c'est un ordinateur qui fait des tâches demandant d'habitude de la réflexion humaine.",
+      "Par exemple voir, parler, traduire et décider.",
+      "L'IA est un outil créé par des humains, pas un cerveau magique."
+     ],
+     "q": "Où penses-tu déjà croiser l'IA dans une journée ordinaire ?",
+     "c": "Note une chose que ton téléphone fait et qui te semble intelligente."
+    },
+    "it": {
+     "t": "Benvenuto nel mondo dell'IA",
+     "g": "Capire con parole semplici cosa significa intelligenza artificiale.",
+     "p": [
+      "L'IA è un computer che svolge compiti che di solito richiedono il pensiero umano.",
+      "Esempi: vedere, parlare, tradurre e decidere.",
+      "L'IA è uno strumento creato dalle persone, non un cervello magico."
+     ],
+     "q": "Dove pensi di incontrare già l'IA in una giornata normale?",
+     "c": "Scrivi una cosa che il tuo telefono fa e che ti sembra intelligente."
+    },
+    "pt": {
+     "t": "Bem-vindo ao mundo da IA",
+     "g": "Perceber em palavras simples o que é a inteligência artificial.",
+     "p": [
+      "A IA são computadores a fazer tarefas que normalmente exigem pensamento humano.",
+      "Exemplos: ver, falar, traduzir e decidir.",
+      "A IA é uma ferramenta feita por pessoas, não um cérebro mágico."
+     ],
+     "q": "Onde achas que já encontras a IA num dia normal?",
+     "c": "Anota uma coisa que o teu telemóvel faz e que te parece inteligente."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo ao mundo da IA",
+     "g": "Entender em palavras simples o que é inteligência artificial.",
+     "p": [
+      "IA são computadores fazendo tarefas que normalmente exigem pensamento humano.",
+      "Exemplos: ver, falar, traduzir e decidir.",
+      "A IA é uma ferramenta feita por pessoas, não um cérebro mágico."
+     ],
+     "q": "Onde você acha que já encontra a IA num dia normal?",
+     "c": "Anote uma coisa que seu celular faz e que parece inteligente."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "AI is already in your pocket",
+     "g": "Spot the AI that you use every single day.",
+     "p": [
+      "Autocorrect, photo search, maps and spam filters all use AI.",
+      "Video and music suggestions are AI guessing your taste.",
+      "Much AI works quietly in the background, unnoticed."
+     ],
+     "q": "Which app on your phone do you think uses the most AI?",
+     "c": "Check your phone and list three features that use AI."
+    },
+    "de": {
+     "t": "KI steckt schon in deiner Tasche",
+     "g": "Erkenne die KI, die du jeden Tag nutzt.",
+     "p": [
+      "Autokorrektur, Fotosuche, Karten und Spamfilter nutzen KI.",
+      "Video- und Musikvorschläge sind KI, die deinen Geschmack errät.",
+      "Viel KI arbeitet leise im Hintergrund, ohne dass man sie bemerkt."
+     ],
+     "q": "Welche App auf deinem Handy nutzt wohl am meisten KI?",
+     "c": "Sieh in dein Handy und liste drei Funktionen mit KI auf."
+    },
+    "es": {
+     "t": "La IA ya está en tu bolsillo",
+     "g": "Descubre la IA que usas todos los días.",
+     "p": [
+      "El autocorrector, la búsqueda de fotos, los mapas y el filtro de spam usan IA.",
+      "Las sugerencias de vídeos y música son IA adivinando tus gustos.",
+      "Mucha IA trabaja en silencio y pasa desapercibida."
+     ],
+     "q": "¿Qué aplicación de tu móvil crees que usa más IA?",
+     "c": "Revisa tu móvil y apunta tres funciones que usen IA."
+    },
+    "fr": {
+     "t": "L'IA est déjà dans ta poche",
+     "g": "Repère l'IA que tu utilises chaque jour.",
+     "p": [
+      "Correcteur, recherche de photos, cartes et filtre anti-spam utilisent l'IA.",
+      "Les suggestions de vidéos et de musique, c'est l'IA qui devine tes goûts.",
+      "Beaucoup d'IA travaille en silence, sans qu'on la remarque."
+     ],
+     "q": "Quelle appli de ton téléphone utilise le plus d'IA, selon toi ?",
+     "c": "Regarde ton téléphone et liste trois fonctions qui utilisent l'IA."
+    },
+    "it": {
+     "t": "L'IA è già nella tua tasca",
+     "g": "Scopri l'IA che usi ogni giorno.",
+     "p": [
+      "Correttore, ricerca di foto, mappe e filtro antispam usano l'IA.",
+      "I consigli di video e musica sono IA che indovina i tuoi gusti.",
+      "Molta IA lavora in silenzio, senza farsi notare."
+     ],
+     "q": "Quale app del tuo telefono pensi usi più IA?",
+     "c": "Controlla il telefono ed elenca tre funzioni che usano l'IA."
+    },
+    "pt": {
+     "t": "A IA já está no teu bolso",
+     "g": "Descobrir a IA que usas todos os dias.",
+     "p": [
+      "O corretor, a pesquisa de fotos, os mapas e o filtro de spam usam IA.",
+      "As sugestões de vídeos e música são a IA a adivinhar o teu gosto.",
+      "Muita IA trabalha em silêncio, sem se notar."
+     ],
+     "q": "Que aplicação do teu telemóvel achas que usa mais IA?",
+     "c": "Vê o telemóvel e lista três funções que usam IA."
+    },
+    "pt_BR": {
+     "t": "A IA já está no seu bolso",
+     "g": "Descobrir a IA que você usa todos os dias.",
+     "p": [
+      "O corretor, a busca de fotos, os mapas e o filtro de spam usam IA.",
+      "As sugestões de vídeos e música são a IA adivinhando seu gosto.",
+      "Muita IA trabalha em silêncio, sem ser notada."
+     ],
+     "q": "Qual app do seu celular você acha que usa mais IA?",
+     "c": "Olhe seu celular e liste três funções que usam IA."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Intelligence: human versus machine",
+     "g": "Compare how people and machines learn and think.",
+     "p": [
+      "People learn from few examples and use common sense.",
+      "Machines usually need huge amounts of data.",
+      "AI is strong at one narrow goal, people are flexible."
+     ],
+     "q": "What is something you learned fast that a machine would find hard?",
+     "c": "Teach a child or friend a new thing with only one example."
+    },
+    "de": {
+     "t": "Intelligenz: Mensch gegen Maschine",
+     "g": "Vergleiche, wie Menschen und Maschinen lernen und denken.",
+     "p": [
+      "Menschen lernen aus wenigen Beispielen und nutzen gesunden Menschenverstand.",
+      "Maschinen brauchen meist riesige Datenmengen.",
+      "KI ist stark bei einem engen Ziel, Menschen sind flexibel."
+     ],
+     "q": "Was hast du schnell gelernt, das eine Maschine schwer fände?",
+     "c": "Zeige jemandem etwas Neues mit nur einem einzigen Beispiel."
+    },
+    "es": {
+     "t": "Inteligencia: humana frente a máquina",
+     "g": "Compara cómo aprenden y piensan las personas y las máquinas.",
+     "p": [
+      "Las personas aprenden con pocos ejemplos y usan el sentido común.",
+      "Las máquinas suelen necesitar enormes cantidades de datos.",
+      "La IA es fuerte en un objetivo concreto; las personas son flexibles."
+     ],
+     "q": "¿Qué aprendiste rápido que a una máquina le costaría mucho?",
+     "c": "Enseña algo nuevo a alguien con un solo ejemplo."
+    },
+    "fr": {
+     "t": "Intelligence : humaine ou machine",
+     "g": "Comparer comment les humains et les machines apprennent.",
+     "p": [
+      "Les humains apprennent avec peu d'exemples et ont du bon sens.",
+      "Les machines ont souvent besoin de quantités énormes de données.",
+      "L'IA est forte sur un objectif précis, les humains sont flexibles."
+     ],
+     "q": "Qu'as-tu appris vite, alors qu'une machine aurait du mal ?",
+     "c": "Montre quelque chose de nouveau à quelqu'un avec un seul exemple."
+    },
+    "it": {
+     "t": "Intelligenza: umana contro macchina",
+     "g": "Confronta come imparano e pensano persone e macchine.",
+     "p": [
+      "Le persone imparano da pochi esempi e usano il buon senso.",
+      "Le macchine di solito hanno bisogno di moltissimi dati.",
+      "L'IA è forte su un obiettivo preciso, le persone sono flessibili."
+     ],
+     "q": "Cosa hai imparato in fretta che a una macchina riuscirebbe difficile?",
+     "c": "Insegna una cosa nuova a qualcuno con un solo esempio."
+    },
+    "pt": {
+     "t": "Inteligência: humana contra máquina",
+     "g": "Comparar como aprendem e pensam as pessoas e as máquinas.",
+     "p": [
+      "As pessoas aprendem com poucos exemplos e usam o bom senso.",
+      "As máquinas costumam precisar de enormes quantidades de dados.",
+      "A IA é forte num objetivo concreto; as pessoas são flexíveis."
+     ],
+     "q": "O que aprendeste depressa que seria difícil para uma máquina?",
+     "c": "Ensina algo novo a alguém com um único exemplo."
+    },
+    "pt_BR": {
+     "t": "Inteligência: humana versus máquina",
+     "g": "Comparar como pessoas e máquinas aprendem e pensam.",
+     "p": [
+      "As pessoas aprendem com poucos exemplos e usam o bom senso.",
+      "As máquinas costumam precisar de enormes quantidades de dados.",
+      "A IA é forte num objetivo específico; as pessoas são flexíveis."
+     ],
+     "q": "O que você aprendeu rápido que seria difícil para uma máquina?",
+     "c": "Ensine algo novo a alguém com um único exemplo."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A very short history of AI",
+     "g": "See how AI grew in waves over about seventy years.",
+     "p": [
+      "The field was named at a Dartmouth workshop in 1956.",
+      "Progress came in waves of excitement and quiet periods.",
+      "Faster computers and more data drive today's boom."
+     ],
+     "q": "Why do you think AI ideas are older than most people expect?",
+     "c": "Find out in which decade your favourite gadget first used AI."
+    },
+    "de": {
+     "t": "Eine ganz kurze Geschichte der KI",
+     "g": "Sieh, wie KI in Wellen über etwa siebzig Jahre wuchs.",
+     "p": [
+      "Der Begriff entstand 1956 bei einem Workshop in Dartmouth.",
+      "Es gab Phasen großer Begeisterung und ruhige Zeiten.",
+      "Schnellere Computer und mehr Daten treiben den heutigen Boom."
+     ],
+     "q": "Warum sind KI-Ideen wohl älter, als die meisten denken?",
+     "c": "Finde heraus, in welchem Jahrzehnt dein Lieblingsgerät erstmals KI nutzte."
+    },
+    "es": {
+     "t": "Una historia muy breve de la IA",
+     "g": "Mira cómo creció la IA en oleadas durante unos setenta años.",
+     "p": [
+      "El campo recibió su nombre en un taller en Dartmouth en 1956.",
+      "El progreso llegó en oleadas de entusiasmo y épocas tranquilas.",
+      "Ordenadores más rápidos y más datos impulsan el auge actual."
+     ],
+     "q": "¿Por qué crees que las ideas de IA son más antiguas de lo que se piensa?",
+     "c": "Averigua en qué década tu gadget favorito usó IA por primera vez."
+    },
+    "fr": {
+     "t": "Une très courte histoire de l'IA",
+     "g": "Voir comment l'IA a progressé par vagues en soixante-dix ans.",
+     "p": [
+      "Le domaine a reçu son nom lors d'un atelier à Dartmouth en 1956.",
+      "Les progrès sont venus par vagues d'enthousiasme et de calme.",
+      "Des ordinateurs plus rapides et plus de données portent l'essor actuel."
+     ],
+     "q": "Pourquoi les idées d'IA sont-elles plus anciennes qu'on ne le croit ?",
+     "c": "Cherche à quelle décennie ton gadget préféré a utilisé l'IA pour la première fois."
+    },
+    "it": {
+     "t": "Una brevissima storia dell'IA",
+     "g": "Vedi come l'IA è cresciuta a ondate in circa settant'anni.",
+     "p": [
+      "Il campo ebbe il suo nome in un seminario a Dartmouth nel 1956.",
+      "I progressi sono arrivati a ondate di entusiasmo e periodi calmi.",
+      "Computer più veloci e più dati spingono il boom di oggi."
+     ],
+     "q": "Perché secondo te le idee di IA sono più vecchie di quanto si pensi?",
+     "c": "Scopri in quale decennio il tuo gadget preferito ha usato l'IA per la prima volta."
+    },
+    "pt": {
+     "t": "Uma história muito breve da IA",
+     "g": "Ver como a IA cresceu em ondas ao longo de uns setenta anos.",
+     "p": [
+      "A área ganhou nome num seminário em Dartmouth, em 1956.",
+      "O progresso veio em ondas de entusiasmo e períodos calmos.",
+      "Computadores mais rápidos e mais dados impulsionam o boom atual."
+     ],
+     "q": "Porque achas que as ideias de IA são mais antigas do que se pensa?",
+     "c": "Descobre em que década o teu aparelho favorito usou IA pela primeira vez."
+    },
+    "pt_BR": {
+     "t": "Uma história bem curta da IA",
+     "g": "Ver como a IA cresceu em ondas ao longo de uns setenta anos.",
+     "p": [
+      "A área ganhou nome num workshop em Dartmouth, em 1956.",
+      "O progresso veio em ondas de entusiasmo e períodos calmos.",
+      "Computadores mais rápidos e mais dados impulsionam o boom atual."
+     ],
+     "q": "Por que você acha que as ideias de IA são mais antigas do que se pensa?",
+     "c": "Descubra em que década seu aparelho favorito usou IA pela primeira vez."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Alan Turing and thinking machines",
+     "g": "Meet the man who asked whether machines can think.",
+     "p": [
+      "Alan Turing was a British mathematician and early computer thinker.",
+      "In 1950 he asked: can machines think?",
+      "He suggested testing behaviour instead of arguing about definitions."
+     ],
+     "q": "Would you call a machine that talks well intelligent? Why?",
+     "c": "Write one question you would ask to test if something thinks."
+    },
+    "de": {
+     "t": "Alan Turing und denkende Maschinen",
+     "g": "Lerne den Mann kennen, der fragte, ob Maschinen denken können.",
+     "p": [
+      "Alan Turing war ein britischer Mathematiker und früher Computerdenker.",
+      "1950 fragte er: Können Maschinen denken?",
+      "Er schlug vor, Verhalten zu testen, statt über Definitionen zu streiten."
+     ],
+     "q": "Würdest du eine Maschine, die gut spricht, intelligent nennen? Warum?",
+     "c": "Schreibe eine Frage auf, mit der du testen würdest, ob etwas denkt."
+    },
+    "es": {
+     "t": "Alan Turing y las máquinas que piensan",
+     "g": "Conoce al hombre que preguntó si las máquinas pueden pensar.",
+     "p": [
+      "Alan Turing fue un matemático británico y pionero de la informática.",
+      "En 1950 preguntó: ¿pueden pensar las máquinas?",
+      "Propuso probar el comportamiento en vez de discutir definiciones."
+     ],
+     "q": "¿Llamarías inteligente a una máquina que habla bien? ¿Por qué?",
+     "c": "Escribe una pregunta que harías para probar si algo piensa."
+    },
+    "fr": {
+     "t": "Alan Turing et les machines pensantes",
+     "g": "Faire connaissance avec celui qui demandait si les machines pensent.",
+     "p": [
+      "Alan Turing était un mathématicien britannique, pionnier de l'informatique.",
+      "En 1950, il demande : les machines peuvent-elles penser ?",
+      "Il propose de tester le comportement plutôt que de débattre des définitions."
+     ],
+     "q": "Dirais-tu qu'une machine qui parle bien est intelligente ? Pourquoi ?",
+     "c": "Écris une question que tu poserais pour tester si quelque chose pense."
+    },
+    "it": {
+     "t": "Alan Turing e le macchine pensanti",
+     "g": "Conosci l'uomo che si chiese se le macchine possano pensare.",
+     "p": [
+      "Alan Turing era un matematico britannico e pioniere dell'informatica.",
+      "Nel 1950 si chiese: le macchine possono pensare?",
+      "Propose di testare il comportamento invece di discutere sulle definizioni."
+     ],
+     "q": "Una macchina che parla bene la diresti intelligente? Perché?",
+     "c": "Scrivi una domanda che faresti per capire se qualcosa pensa."
+    },
+    "pt": {
+     "t": "Alan Turing e as máquinas pensantes",
+     "g": "Conhecer o homem que perguntou se as máquinas podem pensar.",
+     "p": [
+      "Alan Turing foi um matemático britânico e pioneiro da informática.",
+      "Em 1950 perguntou: podem as máquinas pensar?",
+      "Propôs testar o comportamento em vez de discutir definições."
+     ],
+     "q": "Chamarias inteligente a uma máquina que fala bem? Porquê?",
+     "c": "Escreve uma pergunta que farias para testar se algo pensa."
+    },
+    "pt_BR": {
+     "t": "Alan Turing e as máquinas pensantes",
+     "g": "Conhecer o homem que perguntou se as máquinas podem pensar.",
+     "p": [
+      "Alan Turing foi um matemático britânico e pioneiro da computação.",
+      "Em 1950 ele perguntou: máquinas podem pensar?",
+      "Ele propôs testar o comportamento em vez de discutir definições."
+     ],
+     "q": "Você chamaria de inteligente uma máquina que fala bem? Por quê?",
+     "c": "Escreva uma pergunta que você faria para testar se algo pensa."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Turing test explained",
+     "g": "Learn how the imitation game works and what it shows.",
+     "p": [
+      "A judge chats with a hidden human and a hidden machine.",
+      "If the judge cannot tell them apart, the machine passes.",
+      "Sounding human is not the same as understanding."
+     ],
+     "q": "Does sounding human prove real understanding? What do you think?",
+     "c": "Chat with a friend and guess what a judge would look for."
+    },
+    "de": {
+     "t": "Der Turing-Test erklärt",
+     "g": "Lerne, wie das Imitationsspiel funktioniert und was es zeigt.",
+     "p": [
+      "Ein Prüfer chattet mit einem versteckten Menschen und einer Maschine.",
+      "Kann er sie nicht unterscheiden, besteht die Maschine.",
+      "Menschlich klingen heißt nicht automatisch verstehen."
+     ],
+     "q": "Beweist menschliches Klingen echtes Verstehen? Was meinst du?",
+     "c": "Chatte mit einem Freund und überlege, worauf ein Prüfer achten würde."
+    },
+    "es": {
+     "t": "El test de Turing explicado",
+     "g": "Aprende cómo funciona el juego de imitación y qué muestra.",
+     "p": [
+      "Un juez conversa con un humano y una máquina ocultos.",
+      "Si no puede distinguirlos, la máquina lo supera.",
+      "Sonar humano no es lo mismo que comprender."
+     ],
+     "q": "¿Sonar humano demuestra comprensión real? ¿Qué opinas?",
+     "c": "Charla con un amigo y piensa qué buscaría un juez."
+    },
+    "fr": {
+     "t": "Le test de Turing expliqué",
+     "g": "Comprendre le jeu de l'imitation et ce qu'il montre.",
+     "p": [
+      "Un juge discute avec un humain et une machine cachés.",
+      "S'il ne les distingue pas, la machine réussit le test.",
+      "Parler comme un humain n'est pas comprendre."
+     ],
+     "q": "Parler comme un humain prouve-t-il une vraie compréhension ?",
+     "c": "Discute avec un ami et devine ce qu'un juge chercherait."
+    },
+    "it": {
+     "t": "Il test di Turing spiegato",
+     "g": "Scopri come funziona il gioco dell'imitazione e cosa mostra.",
+     "p": [
+      "Un giudice chatta con un umano e una macchina nascosti.",
+      "Se non riesce a distinguerli, la macchina supera il test.",
+      "Sembrare umani non equivale a capire."
+     ],
+     "q": "Sembrare umani dimostra una vera comprensione? Tu che dici?",
+     "c": "Chatta con un amico e pensa a cosa cercherebbe un giudice."
+    },
+    "pt": {
+     "t": "O teste de Turing explicado",
+     "g": "Perceber como funciona o jogo da imitação e o que mostra.",
+     "p": [
+      "Um juiz conversa com um humano e uma máquina escondidos.",
+      "Se não os distinguir, a máquina passa no teste.",
+      "Soar humano não é o mesmo que compreender."
+     ],
+     "q": "Soar humano prova compreensão real? O que achas?",
+     "c": "Conversa com um amigo e pensa no que um juiz procuraria."
+    },
+    "pt_BR": {
+     "t": "O teste de Turing explicado",
+     "g": "Entender como funciona o jogo da imitação e o que ele mostra.",
+     "p": [
+      "Um juiz conversa com um humano e uma máquina escondidos.",
+      "Se não conseguir distinguir, a máquina passa no teste.",
+      "Soar humano não é o mesmo que compreender."
+     ],
+     "q": "Soar humano prova compreensão real? O que você acha?",
+     "c": "Converse com um amigo e pense no que um juiz procuraria."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "AI winters and comebacks",
+     "g": "Understand why AI hope faded twice and then returned.",
+     "p": [
+      "Early promises were bigger than what computers could deliver.",
+      "Funding dried up, creating quiet periods called AI winters.",
+      "More data and faster chips later revived the field."
+     ],
+     "q": "Why is it wise to be careful with big technology promises?",
+     "c": "Name one tech hype you saw fade and one that lasted."
+    },
+    "de": {
+     "t": "KI-Winter und Comebacks",
+     "g": "Verstehe, warum die Hoffnung auf KI zweimal schwand und zurückkam.",
+     "p": [
+      "Frühe Versprechen waren größer als das, was Computer leisten konnten.",
+      "Das Geld blieb aus, es entstanden ruhige Phasen: die KI-Winter.",
+      "Mehr Daten und schnellere Chips belebten das Feld später neu."
+     ],
+     "q": "Warum ist es klug, bei großen Technikversprechen vorsichtig zu sein?",
+     "c": "Nenne einen Technik-Hype, der verblasste, und einen, der blieb."
+    },
+    "es": {
+     "t": "Inviernos de la IA y regresos",
+     "g": "Entiende por qué la esperanza en la IA decayó dos veces y volvió.",
+     "p": [
+      "Las primeras promesas superaban lo que los ordenadores podían hacer.",
+      "La financiación se secó y llegaron épocas llamadas inviernos de la IA.",
+      "Más datos y chips más rápidos reavivaron el campo."
+     ],
+     "q": "¿Por qué conviene ser prudente con las grandes promesas tecnológicas?",
+     "c": "Nombra una moda tecnológica que se apagó y otra que perduró."
+    },
+    "fr": {
+     "t": "Hivers de l'IA et retours",
+     "g": "Comprendre pourquoi l'espoir en l'IA a faibli deux fois puis est revenu.",
+     "p": [
+      "Les premières promesses dépassaient ce que les ordinateurs pouvaient faire.",
+      "Les financements ont disparu : ce sont les hivers de l'IA.",
+      "Plus de données et des puces plus rapides ont relancé le domaine."
+     ],
+     "q": "Pourquoi est-il sage de rester prudent face aux grandes promesses ?",
+     "c": "Cite un engouement technologique qui s'est éteint et un qui a duré."
+    },
+    "it": {
+     "t": "Inverni dell'IA e ritorni",
+     "g": "Capisci perché la speranza nell'IA calò due volte e poi tornò.",
+     "p": [
+      "Le prime promesse erano più grandi di ciò che i computer sapevano fare.",
+      "I fondi finirono e arrivarono periodi chiamati inverni dell'IA.",
+      "Più dati e chip più veloci hanno poi rilanciato il campo."
+     ],
+     "q": "Perché è saggio essere prudenti davanti alle grandi promesse tecnologiche?",
+     "c": "Nomina una moda tecnologica svanita e una che è durata."
+    },
+    "pt": {
+     "t": "Invernos da IA e regressos",
+     "g": "Perceber porque a esperança na IA diminuiu duas vezes e voltou.",
+     "p": [
+      "As primeiras promessas eram maiores do que os computadores podiam cumprir.",
+      "O financiamento secou e surgiram períodos chamados invernos da IA.",
+      "Mais dados e chips mais rápidos reanimaram a área."
+     ],
+     "q": "Porque é sensato ter cautela com grandes promessas tecnológicas?",
+     "c": "Diz uma moda tecnológica que passou e outra que ficou."
+    },
+    "pt_BR": {
+     "t": "Invernos da IA e retornos",
+     "g": "Entender por que a esperança na IA diminuiu duas vezes e voltou.",
+     "p": [
+      "As primeiras promessas eram maiores do que os computadores podiam cumprir.",
+      "O financiamento secou e surgiram períodos chamados invernos da IA.",
+      "Mais dados e chips mais rápidos reanimaram a área."
+     ],
+     "q": "Por que é sensato ter cautela com grandes promessas tecnológicas?",
+     "c": "Diga uma moda tecnológica que passou e outra que ficou."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Narrow AI versus general AI",
+     "g": "Tell apart AI built for one task from general intelligence.",
+     "p": [
+      "Today's systems excel at specific kinds of tasks.",
+      "General intelligence means flexible skill across everything.",
+      "General AI is still a research goal, not an everyday reality."
+     ],
+     "q": "Which single task would you most like an AI to master for you?",
+     "c": "List two tasks a chess program cannot do at all."
+    },
+    "de": {
+     "t": "Enge KI gegen allgemeine KI",
+     "g": "Unterscheide KI für eine Aufgabe von allgemeiner Intelligenz.",
+     "p": [
+      "Heutige Systeme sind bei bestimmten Aufgaben sehr gut.",
+      "Allgemeine Intelligenz meint flexibles Können in allen Bereichen.",
+      "Allgemeine KI ist noch ein Forschungsziel, kein Alltag."
+     ],
+     "q": "Welche eine Aufgabe sollte eine KI für dich am besten meistern?",
+     "c": "Nenne zwei Aufgaben, die ein Schachprogramm gar nicht kann."
+    },
+    "es": {
+     "t": "IA estrecha frente a IA general",
+     "g": "Distingue la IA hecha para una tarea de la inteligencia general.",
+     "p": [
+      "Los sistemas actuales destacan en tipos concretos de tareas.",
+      "La inteligencia general sería habilidad flexible en todo.",
+      "La IA general sigue siendo una meta de investigación, no algo cotidiano."
+     ],
+     "q": "¿Qué tarea te gustaría que una IA dominara por ti?",
+     "c": "Anota dos cosas que un programa de ajedrez no puede hacer."
+    },
+    "fr": {
+     "t": "IA étroite et IA générale",
+     "g": "Distinguer l'IA conçue pour une tâche de l'intelligence générale.",
+     "p": [
+      "Les systèmes actuels excellent dans des types de tâches précis.",
+      "L'intelligence générale serait un savoir-faire souple en tout.",
+      "L'IA générale reste un objectif de recherche, pas une réalité courante."
+     ],
+     "q": "Quelle tâche aimerais-tu qu'une IA maîtrise pour toi ?",
+     "c": "Cite deux choses qu'un programme d'échecs ne sait pas faire."
+    },
+    "it": {
+     "t": "IA ristretta e IA generale",
+     "g": "Distingui l'IA fatta per un compito dall'intelligenza generale.",
+     "p": [
+      "I sistemi di oggi eccellono in tipi di compiti specifici.",
+      "L'intelligenza generale sarebbe abilità flessibile in tutto.",
+      "L'IA generale è ancora un obiettivo di ricerca, non realtà quotidiana."
+     ],
+     "q": "Quale compito vorresti che un'IA padroneggiasse per te?",
+     "c": "Elenca due cose che un programma di scacchi non sa fare."
+    },
+    "pt": {
+     "t": "IA restrita contra IA geral",
+     "g": "Distinguir a IA feita para uma tarefa da inteligência geral.",
+     "p": [
+      "Os sistemas atuais destacam-se em tipos de tarefas específicos.",
+      "A inteligência geral seria capacidade flexível em tudo.",
+      "A IA geral ainda é um objetivo de investigação, não o dia a dia."
+     ],
+     "q": "Que tarefa gostarias que uma IA dominasse por ti?",
+     "c": "Indica duas coisas que um programa de xadrez não consegue fazer."
+    },
+    "pt_BR": {
+     "t": "IA restrita versus IA geral",
+     "g": "Distinguir a IA feita para uma tarefa da inteligência geral.",
+     "p": [
+      "Os sistemas atuais se destacam em tipos de tarefas específicos.",
+      "A inteligência geral seria habilidade flexível em tudo.",
+      "A IA geral ainda é um objetivo de pesquisa, não o dia a dia."
+     ],
+     "q": "Que tarefa você gostaria que uma IA dominasse por você?",
+     "c": "Cite duas coisas que um programa de xadrez não consegue fazer."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is an algorithm",
+     "g": "Learn that an algorithm is simply a clear recipe of steps.",
+     "p": [
+      "An algorithm turns an input into an output step by step.",
+      "A cooking recipe is an everyday algorithm.",
+      "Computers follow algorithms exactly, with no guessing."
+     ],
+     "q": "Can you describe your morning routine as clear numbered steps?",
+     "c": "Write a five-step algorithm for making tea or coffee."
+    },
+    "de": {
+     "t": "Was ist ein Algorithmus",
+     "g": "Lerne, dass ein Algorithmus einfach ein klares Rezept aus Schritten ist.",
+     "p": [
+      "Ein Algorithmus macht aus einer Eingabe Schritt für Schritt eine Ausgabe.",
+      "Ein Kochrezept ist ein Alltagsalgorithmus.",
+      "Computer folgen Algorithmen genau, ohne zu raten."
+     ],
+     "q": "Kannst du deine Morgenroutine als klare nummerierte Schritte beschreiben?",
+     "c": "Schreibe einen Algorithmus mit fünf Schritten für Tee oder Kaffee."
+    },
+    "es": {
+     "t": "Qué es un algoritmo",
+     "g": "Aprende que un algoritmo es una receta clara de pasos.",
+     "p": [
+      "Un algoritmo convierte una entrada en una salida paso a paso.",
+      "Una receta de cocina es un algoritmo cotidiano.",
+      "Los ordenadores siguen los algoritmos al pie de la letra, sin adivinar."
+     ],
+     "q": "¿Puedes describir tu rutina de la mañana en pasos numerados?",
+     "c": "Escribe un algoritmo de cinco pasos para preparar té o café."
+    },
+    "fr": {
+     "t": "Qu'est-ce qu'un algorithme",
+     "g": "Comprendre qu'un algorithme est une recette claire d'étapes.",
+     "p": [
+      "Un algorithme transforme une entrée en sortie, étape par étape.",
+      "Une recette de cuisine est un algorithme du quotidien.",
+      "Les ordinateurs suivent les algorithmes à la lettre, sans deviner."
+     ],
+     "q": "Peux-tu décrire ta routine du matin en étapes numérotées ?",
+     "c": "Écris un algorithme en cinq étapes pour préparer un thé ou un café."
+    },
+    "it": {
+     "t": "Cos'è un algoritmo",
+     "g": "Scopri che un algoritmo è una ricetta chiara di passaggi.",
+     "p": [
+      "Un algoritmo trasforma un input in un output passo dopo passo.",
+      "Una ricetta di cucina è un algoritmo quotidiano.",
+      "I computer seguono gli algoritmi alla lettera, senza indovinare."
+     ],
+     "q": "Sai descrivere la tua routine del mattino in passaggi numerati?",
+     "c": "Scrivi un algoritmo in cinque passaggi per fare tè o caffè."
+    },
+    "pt": {
+     "t": "O que é um algoritmo",
+     "g": "Aprender que um algoritmo é uma receita clara de passos.",
+     "p": [
+      "Um algoritmo transforma uma entrada numa saída passo a passo.",
+      "Uma receita de cozinha é um algoritmo do dia a dia.",
+      "Os computadores seguem os algoritmos à letra, sem adivinhar."
+     ],
+     "q": "Consegues descrever a tua rotina da manhã em passos numerados?",
+     "c": "Escreve um algoritmo de cinco passos para fazer chá ou café."
+    },
+    "pt_BR": {
+     "t": "O que é um algoritmo",
+     "g": "Aprender que um algoritmo é uma receita clara de passos.",
+     "p": [
+      "Um algoritmo transforma uma entrada numa saída passo a passo.",
+      "Uma receita de cozinha é um algoritmo do dia a dia.",
+      "Os computadores seguem os algoritmos à risca, sem adivinhar."
+     ],
+     "q": "Você consegue descrever sua rotina da manhã em passos numerados?",
+     "c": "Escreva um algoritmo de cinco passos para fazer chá ou café."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rules versus learning",
+     "g": "See how hand-written rules differ from learning from examples.",
+     "p": [
+      "Old AI followed rules that people wrote by hand.",
+      "Modern AI learns patterns from many examples instead.",
+      "Rules are predictable; learning handles messy real life better."
+     ],
+     "q": "When would you prefer strict rules over a system that learns?",
+     "c": "Write one rule that tells a cat photo from a dog photo, then see it fail."
+    },
+    "de": {
+     "t": "Regeln gegen Lernen",
+     "g": "Sieh, wie handgeschriebene Regeln sich vom Lernen aus Beispielen unterscheiden.",
+     "p": [
+      "Alte KI folgte Regeln, die Menschen von Hand schrieben.",
+      "Moderne KI lernt stattdessen Muster aus vielen Beispielen.",
+      "Regeln sind berechenbar, Lernen kommt besser mit dem chaotischen Leben klar."
+     ],
+     "q": "Wann würdest du strenge Regeln einem lernenden System vorziehen?",
+     "c": "Schreibe eine Regel, die Katzen- von Hundefotos trennt, und sieh sie scheitern."
+    },
+    "es": {
+     "t": "Reglas frente a aprendizaje",
+     "g": "Mira en qué se diferencian las reglas escritas a mano y aprender de ejemplos.",
+     "p": [
+      "La IA antigua seguía reglas escritas a mano por personas.",
+      "La IA moderna aprende patrones a partir de muchos ejemplos.",
+      "Las reglas son predecibles; aprender maneja mejor la vida real desordenada."
+     ],
+     "q": "¿Cuándo preferirías reglas estrictas a un sistema que aprende?",
+     "c": "Escribe una regla para distinguir gatos de perros y comprueba que falla."
+    },
+    "fr": {
+     "t": "Règles ou apprentissage",
+     "g": "Voir la différence entre règles écrites à la main et apprentissage par exemples.",
+     "p": [
+      "L'ancienne IA suivait des règles écrites à la main.",
+      "L'IA moderne apprend des motifs à partir de nombreux exemples.",
+      "Les règles sont prévisibles ; l'apprentissage gère mieux la vie réelle."
+     ],
+     "q": "Quand préférerais-tu des règles strictes à un système qui apprend ?",
+     "c": "Écris une règle pour distinguer chat et chien, puis constate qu'elle échoue."
+    },
+    "it": {
+     "t": "Regole contro apprendimento",
+     "g": "Vedi la differenza tra regole scritte a mano e imparare dagli esempi.",
+     "p": [
+      "La vecchia IA seguiva regole scritte a mano dalle persone.",
+      "L'IA moderna impara schemi da tanti esempi.",
+      "Le regole sono prevedibili; imparare gestisce meglio la vita reale disordinata."
+     ],
+     "q": "Quando preferiresti regole rigide a un sistema che impara?",
+     "c": "Scrivi una regola per distinguere gatti e cani e vedi che fallisce."
+    },
+    "pt": {
+     "t": "Regras contra aprendizagem",
+     "g": "Ver a diferença entre regras escritas à mão e aprender com exemplos.",
+     "p": [
+      "A IA antiga seguia regras escritas à mão por pessoas.",
+      "A IA moderna aprende padrões a partir de muitos exemplos.",
+      "As regras são previsíveis; aprender lida melhor com a vida real desarrumada."
+     ],
+     "q": "Quando preferirias regras rígidas a um sistema que aprende?",
+     "c": "Escreve uma regra para distinguir gatos de cães e vê-a falhar."
+    },
+    "pt_BR": {
+     "t": "Regras versus aprendizado",
+     "g": "Ver a diferença entre regras escritas à mão e aprender com exemplos.",
+     "p": [
+      "A IA antiga seguia regras escritas à mão por pessoas.",
+      "A IA moderna aprende padrões a partir de muitos exemplos.",
+      "As regras são previsíveis; aprender lida melhor com a vida real bagunçada."
+     ],
+     "q": "Quando você preferiria regras rígidas a um sistema que aprende?",
+     "c": "Escreva uma regra para distinguir gatos de cães e veja ela falhar."
+    }
+   }
+  }
+ ]
+}

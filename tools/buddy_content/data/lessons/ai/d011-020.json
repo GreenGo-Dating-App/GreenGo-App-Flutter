@@ -1,0 +1,835 @@
+{
+ "topic": "ai",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is data",
+     "g": "Learn that data is the raw material AI learns from.",
+     "p": [
+      "Numbers, words, images and sounds are all forms of data.",
+      "AI cannot learn without examples, and examples are data.",
+      "Data about people deserves care and respect."
+     ],
+     "q": "What data do you think your phone collects in one day?",
+     "c": "List five kinds of data you created today, such as photos or messages."
+    },
+    "de": {
+     "t": "Was sind Daten",
+     "g": "Lerne, dass Daten der Rohstoff sind, aus dem KI lernt.",
+     "p": [
+      "Zahlen, Wörter, Bilder und Töne sind alle Daten.",
+      "Ohne Beispiele kann KI nicht lernen, und Beispiele sind Daten.",
+      "Daten über Menschen verdienen Sorgfalt und Respekt."
+     ],
+     "q": "Welche Daten sammelt dein Handy wohl an einem Tag?",
+     "c": "Liste fünf Arten von Daten auf, die du heute erzeugt hast, etwa Fotos."
+    },
+    "es": {
+     "t": "Qué son los datos",
+     "g": "Aprende que los datos son la materia prima de la que aprende la IA.",
+     "p": [
+      "Números, palabras, imágenes y sonidos son datos.",
+      "La IA no aprende sin ejemplos, y los ejemplos son datos.",
+      "Los datos sobre personas merecen cuidado y respeto."
+     ],
+     "q": "¿Qué datos crees que recoge tu móvil en un día?",
+     "c": "Anota cinco tipos de datos que creaste hoy, como fotos o mensajes."
+    },
+    "fr": {
+     "t": "Qu'est-ce que les données",
+     "g": "Comprendre que les données sont la matière première de l'IA.",
+     "p": [
+      "Chiffres, mots, images et sons sont tous des données.",
+      "L'IA n'apprend pas sans exemples, et les exemples sont des données.",
+      "Les données sur les personnes méritent soin et respect."
+     ],
+     "q": "Quelles données ton téléphone collecte-t-il en une journée, selon toi ?",
+     "c": "Liste cinq types de données créées aujourd'hui, comme photos ou messages."
+    },
+    "it": {
+     "t": "Cosa sono i dati",
+     "g": "Scopri che i dati sono la materia prima da cui impara l'IA.",
+     "p": [
+      "Numeri, parole, immagini e suoni sono tutti dati.",
+      "L'IA non impara senza esempi, e gli esempi sono dati.",
+      "I dati sulle persone meritano cura e rispetto."
+     ],
+     "q": "Quali dati pensi raccolga il tuo telefono in un giorno?",
+     "c": "Elenca cinque tipi di dati creati oggi, come foto o messaggi."
+    },
+    "pt": {
+     "t": "O que são dados",
+     "g": "Perceber que os dados são a matéria-prima de que a IA aprende.",
+     "p": [
+      "Números, palavras, imagens e sons são todos dados.",
+      "A IA não aprende sem exemplos, e os exemplos são dados.",
+      "Os dados sobre pessoas merecem cuidado e respeito."
+     ],
+     "q": "Que dados achas que o teu telemóvel recolhe num dia?",
+     "c": "Lista cinco tipos de dados que criaste hoje, como fotos ou mensagens."
+    },
+    "pt_BR": {
+     "t": "O que são dados",
+     "g": "Entender que os dados são a matéria-prima de que a IA aprende.",
+     "p": [
+      "Números, palavras, imagens e sons são todos dados.",
+      "A IA não aprende sem exemplos, e os exemplos são dados.",
+      "Os dados sobre pessoas merecem cuidado e respeito."
+     ],
+     "q": "Que dados você acha que seu celular coleta em um dia?",
+     "c": "Liste cinco tipos de dados que você criou hoje, como fotos ou mensagens."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Where data comes from",
+     "g": "Discover the sources that feed AI systems.",
+     "p": [
+      "Sensors, apps, websites, surveys and archives all produce data.",
+      "Some data is collected on purpose, some as a side effect.",
+      "Knowing the source helps you judge how reliable it is."
+     ],
+     "q": "Which source of data do you trust most, and why?",
+     "c": "Pick one app and guess what data it gathers and why."
+    },
+    "de": {
+     "t": "Woher Daten kommen",
+     "g": "Entdecke die Quellen, die KI-Systeme füttern.",
+     "p": [
+      "Sensoren, Apps, Webseiten, Umfragen und Archive erzeugen Daten.",
+      "Manche Daten werden gezielt gesammelt, andere nebenbei.",
+      "Wer die Quelle kennt, kann die Verlässlichkeit besser beurteilen."
+     ],
+     "q": "Welcher Datenquelle vertraust du am meisten und warum?",
+     "c": "Wähle eine App und rate, welche Daten sie sammelt und warum."
+    },
+    "es": {
+     "t": "De dónde vienen los datos",
+     "g": "Descubre las fuentes que alimentan a los sistemas de IA.",
+     "p": [
+      "Sensores, apps, webs, encuestas y archivos producen datos.",
+      "Algunos datos se recogen a propósito y otros como efecto secundario.",
+      "Conocer la fuente ayuda a juzgar su fiabilidad."
+     ],
+     "q": "¿En qué fuente de datos confías más y por qué?",
+     "c": "Elige una app e imagina qué datos reúne y para qué."
+    },
+    "fr": {
+     "t": "D'où viennent les données",
+     "g": "Découvrir les sources qui nourrissent les systèmes d'IA.",
+     "p": [
+      "Capteurs, applis, sites, sondages et archives produisent des données.",
+      "Certaines données sont collectées exprès, d'autres par ricochet.",
+      "Connaître la source aide à juger la fiabilité."
+     ],
+     "q": "À quelle source de données fais-tu le plus confiance, et pourquoi ?",
+     "c": "Choisis une appli et devine quelles données elle recueille et pourquoi."
+    },
+    "it": {
+     "t": "Da dove arrivano i dati",
+     "g": "Scopri le fonti che alimentano i sistemi di IA.",
+     "p": [
+      "Sensori, app, siti, sondaggi e archivi producono dati.",
+      "Alcuni dati si raccolgono apposta, altri come effetto collaterale.",
+      "Conoscere la fonte aiuta a giudicarne l'affidabilità."
+     ],
+     "q": "Di quale fonte di dati ti fidi di più e perché?",
+     "c": "Scegli un'app e immagina quali dati raccoglie e perché."
+    },
+    "pt": {
+     "t": "De onde vêm os dados",
+     "g": "Descobrir as fontes que alimentam os sistemas de IA.",
+     "p": [
+      "Sensores, aplicações, sites, inquéritos e arquivos produzem dados.",
+      "Alguns dados são recolhidos de propósito, outros por arrasto.",
+      "Conhecer a fonte ajuda a avaliar a fiabilidade."
+     ],
+     "q": "Em que fonte de dados confias mais e porquê?",
+     "c": "Escolhe uma aplicação e adivinha que dados reúne e para quê."
+    },
+    "pt_BR": {
+     "t": "De onde vêm os dados",
+     "g": "Descobrir as fontes que alimentam os sistemas de IA.",
+     "p": [
+      "Sensores, aplicativos, sites, pesquisas e arquivos produzem dados.",
+      "Alguns dados são coletados de propósito, outros por tabela.",
+      "Conhecer a fonte ajuda a avaliar a confiabilidade."
+     ],
+     "q": "Em qual fonte de dados você mais confia e por quê?",
+     "c": "Escolha um app e adivinhe que dados ele coleta e para quê."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Patterns everywhere",
+     "g": "See that AI is a pattern finder at heart.",
+     "p": [
+      "AI spots regularities in data, like words that often appear together.",
+      "It uses those patterns to make good guesses.",
+      "Patterns are hints, not guarantees."
+     ],
+     "q": "What pattern do you notice in your own weekly routine?",
+     "c": "Find a pattern in your last ten photos or messages."
+    },
+    "de": {
+     "t": "Muster überall",
+     "g": "Sieh, dass KI im Kern ein Mustererkenner ist.",
+     "p": [
+      "KI findet Regelmäßigkeiten in Daten, etwa Wörter, die oft zusammen stehen.",
+      "Mit diesen Mustern macht sie gute Vermutungen.",
+      "Muster sind Hinweise, keine Garantien."
+     ],
+     "q": "Welches Muster erkennst du in deiner eigenen Woche?",
+     "c": "Finde ein Muster in deinen letzten zehn Fotos oder Nachrichten."
+    },
+    "es": {
+     "t": "Patrones por todas partes",
+     "g": "Mira que la IA es, en el fondo, una buscadora de patrones.",
+     "p": [
+      "La IA detecta regularidades en los datos, como palabras que suelen ir juntas.",
+      "Usa esos patrones para hacer buenas conjeturas.",
+      "Los patrones son pistas, no garantías."
+     ],
+     "q": "¿Qué patrón notas en tu propia semana?",
+     "c": "Busca un patrón en tus últimas diez fotos o mensajes."
+    },
+    "fr": {
+     "t": "Des motifs partout",
+     "g": "Voir que l'IA est avant tout une chercheuse de motifs.",
+     "p": [
+      "L'IA repère des régularités, comme des mots qui vont souvent ensemble.",
+      "Elle s'en sert pour faire de bonnes hypothèses.",
+      "Les motifs sont des indices, pas des garanties."
+     ],
+     "q": "Quel motif remarques-tu dans ta propre semaine ?",
+     "c": "Trouve un motif dans tes dix dernières photos ou messages."
+    },
+    "it": {
+     "t": "Schemi ovunque",
+     "g": "Vedi che l'IA è, in fondo, una cercatrice di schemi.",
+     "p": [
+      "L'IA individua regolarità nei dati, come parole che compaiono spesso insieme.",
+      "Usa quegli schemi per fare buone ipotesi.",
+      "Gli schemi sono indizi, non garanzie."
+     ],
+     "q": "Quale schema noti nella tua settimana?",
+     "c": "Cerca uno schema nelle tue ultime dieci foto o nei messaggi."
+    },
+    "pt": {
+     "t": "Padrões por todo o lado",
+     "g": "Ver que a IA é, no fundo, uma caçadora de padrões.",
+     "p": [
+      "A IA deteta regularidades nos dados, como palavras que aparecem juntas.",
+      "Usa esses padrões para fazer boas suposições.",
+      "Os padrões são pistas, não garantias."
+     ],
+     "q": "Que padrão notas na tua própria semana?",
+     "c": "Procura um padrão nas tuas últimas dez fotos ou mensagens."
+    },
+    "pt_BR": {
+     "t": "Padrões por toda parte",
+     "g": "Ver que a IA é, no fundo, uma caçadora de padrões.",
+     "p": [
+      "A IA detecta regularidades nos dados, como palavras que aparecem juntas.",
+      "Ela usa esses padrões para fazer bons palpites.",
+      "Os padrões são pistas, não garantias."
+     ],
+     "q": "Que padrão você nota na sua própria semana?",
+     "c": "Procure um padrão nas suas últimas dez fotos ou mensagens."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is machine learning",
+     "g": "Understand how computers improve by studying examples.",
+     "p": [
+      "Machine learning lets a computer improve at a task from examples.",
+      "Nobody writes every rule; the computer finds them itself.",
+      "More good examples usually mean better results."
+     ],
+     "q": "What would you like a computer to learn to do for you?",
+     "c": "Think of a skill you learned by practice and compare it to ML."
+    },
+    "de": {
+     "t": "Was ist maschinelles Lernen",
+     "g": "Verstehe, wie Computer durch Beispiele besser werden.",
+     "p": [
+      "Maschinelles Lernen lässt einen Computer anhand von Beispielen besser werden.",
+      "Niemand schreibt jede Regel, der Computer findet sie selbst.",
+      "Mehr gute Beispiele bedeuten meist bessere Ergebnisse."
+     ],
+     "q": "Was soll ein Computer für dich lernen?",
+     "c": "Denk an eine Fähigkeit, die du durch Üben gelernt hast, und vergleiche sie."
+    },
+    "es": {
+     "t": "Qué es el aprendizaje automático",
+     "g": "Entiende cómo los ordenadores mejoran estudiando ejemplos.",
+     "p": [
+      "El aprendizaje automático permite mejorar en una tarea a partir de ejemplos.",
+      "Nadie escribe cada regla; el ordenador las encuentra solo.",
+      "Más ejemplos buenos suelen dar mejores resultados."
+     ],
+     "q": "¿Qué te gustaría que un ordenador aprendiera a hacer por ti?",
+     "c": "Piensa en una habilidad que aprendiste practicando y compárala."
+    },
+    "fr": {
+     "t": "Qu'est-ce que l'apprentissage automatique",
+     "g": "Comprendre comment les ordinateurs progressent grâce aux exemples.",
+     "p": [
+      "L'apprentissage automatique permet de progresser sur une tâche grâce aux exemples.",
+      "Personne n'écrit chaque règle : l'ordinateur les trouve seul.",
+      "Plus de bons exemples donnent en général de meilleurs résultats."
+     ],
+     "q": "Que voudrais-tu qu'un ordinateur apprenne à faire pour toi ?",
+     "c": "Pense à une compétence apprise en pratiquant et compare-la."
+    },
+    "it": {
+     "t": "Cos'è l'apprendimento automatico",
+     "g": "Capisci come i computer migliorano studiando esempi.",
+     "p": [
+      "L'apprendimento automatico permette di migliorare in un compito dagli esempi.",
+      "Nessuno scrive ogni regola: il computer le trova da solo.",
+      "Più esempi buoni di solito significano risultati migliori."
+     ],
+     "q": "Cosa vorresti che un computer imparasse a fare per te?",
+     "c": "Pensa a un'abilità imparata esercitandoti e confrontala."
+    },
+    "pt": {
+     "t": "O que é aprendizagem automática",
+     "g": "Perceber como os computadores melhoram a estudar exemplos.",
+     "p": [
+      "A aprendizagem automática permite melhorar numa tarefa a partir de exemplos.",
+      "Ninguém escreve todas as regras; o computador encontra-as sozinho.",
+      "Mais bons exemplos costumam dar melhores resultados."
+     ],
+     "q": "O que gostarias que um computador aprendesse a fazer por ti?",
+     "c": "Pensa numa competência que aprendeste a praticar e compara."
+    },
+    "pt_BR": {
+     "t": "O que é aprendizado de máquina",
+     "g": "Entender como os computadores melhoram estudando exemplos.",
+     "p": [
+      "O aprendizado de máquina permite melhorar numa tarefa a partir de exemplos.",
+      "Ninguém escreve todas as regras; o computador as encontra sozinho.",
+      "Mais bons exemplos costumam dar melhores resultados."
+     ],
+     "q": "O que você gostaria que um computador aprendesse a fazer por você?",
+     "c": "Pense numa habilidade que você aprendeu praticando e compare."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Training and using a model",
+     "g": "Separate the learning phase from the answering phase.",
+     "p": [
+      "During training, a model studies many examples.",
+      "During use, it answers new questions with what it learned.",
+      "Training is slow and costly; using the model is quick."
+     ],
+     "q": "Which is harder for you: learning a skill or using it? Why?",
+     "c": "Describe learning to ride a bike as training and riding as use."
+    },
+    "de": {
+     "t": "Ein Modell trainieren und nutzen",
+     "g": "Trenne die Lernphase von der Antwortphase.",
+     "p": [
+      "Beim Training studiert ein Modell viele Beispiele.",
+      "Bei der Nutzung beantwortet es neue Fragen mit dem Gelernten.",
+      "Training ist langsam und teuer, die Nutzung geht schnell."
+     ],
+     "q": "Was fällt dir schwerer: eine Fähigkeit lernen oder anwenden? Warum?",
+     "c": "Beschreibe Radfahren lernen als Training und Fahren als Nutzung."
+    },
+    "es": {
+     "t": "Entrenar y usar un modelo",
+     "g": "Separa la fase de aprender de la fase de responder.",
+     "p": [
+      "En el entrenamiento, un modelo estudia muchos ejemplos.",
+      "En el uso, responde a preguntas nuevas con lo aprendido.",
+      "Entrenar es lento y caro; usar el modelo es rápido."
+     ],
+     "q": "¿Qué te cuesta más: aprender una habilidad o usarla? ¿Por qué?",
+     "c": "Describe aprender a ir en bici como entrenamiento y pedalear como uso."
+    },
+    "fr": {
+     "t": "Entraîner et utiliser un modèle",
+     "g": "Distinguer la phase d'apprentissage de la phase de réponse.",
+     "p": [
+      "Pendant l'entraînement, un modèle étudie de nombreux exemples.",
+      "À l'usage, il répond à de nouvelles questions avec ce qu'il a appris.",
+      "L'entraînement est lent et coûteux ; l'usage est rapide."
+     ],
+     "q": "Qu'est-ce qui est plus dur : apprendre une compétence ou l'utiliser ?",
+     "c": "Décris l'apprentissage du vélo comme entraînement et rouler comme usage."
+    },
+    "it": {
+     "t": "Addestrare e usare un modello",
+     "g": "Distingui la fase di apprendimento da quella di risposta.",
+     "p": [
+      "Durante l'addestramento un modello studia molti esempi.",
+      "Nell'uso risponde a domande nuove con ciò che ha imparato.",
+      "L'addestramento è lento e costoso; l'uso è veloce."
+     ],
+     "q": "Cosa ti costa di più: imparare un'abilità o usarla? Perché?",
+     "c": "Descrivi imparare ad andare in bici come addestramento e pedalare come uso."
+    },
+    "pt": {
+     "t": "Treinar e usar um modelo",
+     "g": "Separar a fase de aprender da fase de responder.",
+     "p": [
+      "No treino, um modelo estuda muitos exemplos.",
+      "Na utilização, responde a perguntas novas com o que aprendeu.",
+      "Treinar é lento e caro; usar o modelo é rápido."
+     ],
+     "q": "O que te custa mais: aprender uma competência ou usá-la? Porquê?",
+     "c": "Descreve aprender a andar de bicicleta como treino e pedalar como uso."
+    },
+    "pt_BR": {
+     "t": "Treinar e usar um modelo",
+     "g": "Separar a fase de aprender da fase de responder.",
+     "p": [
+      "No treino, um modelo estuda muitos exemplos.",
+      "No uso, ele responde a perguntas novas com o que aprendeu.",
+      "Treinar é lento e caro; usar o modelo é rápido."
+     ],
+     "q": "O que custa mais para você: aprender uma habilidade ou usá-la? Por quê?",
+     "c": "Descreva aprender a andar de bicicleta como treino e pedalar como uso."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is a model",
+     "g": "Understand a model as a compact summary of patterns.",
+     "p": [
+      "A model is a mathematical summary of patterns found in data.",
+      "Like a map, it simplifies reality to be useful.",
+      "Every model leaves details out, so it can be wrong."
+     ],
+     "q": "What does a subway map leave out, and why is that helpful?",
+     "c": "Draw a quick map of your street and note what you skipped."
+    },
+    "de": {
+     "t": "Was ist ein Modell",
+     "g": "Verstehe ein Modell als kompakte Zusammenfassung von Mustern.",
+     "p": [
+      "Ein Modell ist eine mathematische Zusammenfassung von Mustern in Daten.",
+      "Wie eine Karte vereinfacht es die Wirklichkeit, um nützlich zu sein.",
+      "Jedes Modell lässt Details weg, darum kann es irren."
+     ],
+     "q": "Was lässt ein U-Bahn-Plan weg, und warum hilft das?",
+     "c": "Zeichne schnell eine Karte deiner Straße und notiere, was du ausgelassen hast."
+    },
+    "es": {
+     "t": "Qué es un modelo",
+     "g": "Entiende un modelo como un resumen compacto de patrones.",
+     "p": [
+      "Un modelo es un resumen matemático de patrones hallados en los datos.",
+      "Como un mapa, simplifica la realidad para ser útil.",
+      "Todo modelo omite detalles, así que puede equivocarse."
+     ],
+     "q": "¿Qué omite un plano del metro y por qué ayuda?",
+     "c": "Dibuja un mapa rápido de tu calle y anota lo que omitiste."
+    },
+    "fr": {
+     "t": "Qu'est-ce qu'un modèle",
+     "g": "Comprendre un modèle comme un résumé compact de motifs.",
+     "p": [
+      "Un modèle est un résumé mathématique de motifs trouvés dans les données.",
+      "Comme une carte, il simplifie la réalité pour être utile.",
+      "Tout modèle omet des détails, donc il peut se tromper."
+     ],
+     "q": "Que omet un plan de métro, et pourquoi cela aide-t-il ?",
+     "c": "Dessine vite une carte de ta rue et note ce que tu as omis."
+    },
+    "it": {
+     "t": "Cos'è un modello",
+     "g": "Capisci un modello come riassunto compatto di schemi.",
+     "p": [
+      "Un modello è un riassunto matematico di schemi trovati nei dati.",
+      "Come una mappa, semplifica la realtà per essere utile.",
+      "Ogni modello omette dettagli, quindi può sbagliare."
+     ],
+     "q": "Cosa omette la mappa della metro e perché è utile?",
+     "c": "Disegna una mappa veloce della tua via e annota cosa hai omesso."
+    },
+    "pt": {
+     "t": "O que é um modelo",
+     "g": "Perceber um modelo como um resumo compacto de padrões.",
+     "p": [
+      "Um modelo é um resumo matemático de padrões encontrados nos dados.",
+      "Como um mapa, simplifica a realidade para ser útil.",
+      "Todo o modelo omite detalhes, por isso pode errar."
+     ],
+     "q": "O que omite um mapa do metro e porque é que isso ajuda?",
+     "c": "Desenha um mapa rápido da tua rua e anota o que omitiste."
+    },
+    "pt_BR": {
+     "t": "O que é um modelo",
+     "g": "Entender um modelo como um resumo compacto de padrões.",
+     "p": [
+      "Um modelo é um resumo matemático de padrões encontrados nos dados.",
+      "Como um mapa, ele simplifica a realidade para ser útil.",
+      "Todo modelo omite detalhes, por isso pode errar."
+     ],
+     "q": "O que um mapa do metrô omite e por que isso ajuda?",
+     "c": "Desenhe um mapa rápido da sua rua e anote o que você omitiu."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Examples, labels and answers",
+     "g": "Learn why labelled examples teach a model so well.",
+     "p": [
+      "Each example can come with the right answer, called a label.",
+      "A photo labelled cat teaches what cats look like.",
+      "Someone has to label the data, which takes real effort."
+     ],
+     "q": "If you labelled photos for a model, which would be easiest?",
+     "c": "Label ten items in your kitchen by category, like fruit or tool."
+    },
+    "de": {
+     "t": "Beispiele, Labels und Antworten",
+     "g": "Lerne, warum beschriftete Beispiele ein Modell so gut lehren.",
+     "p": [
+      "Jedes Beispiel kann die richtige Antwort haben, das Label.",
+      "Ein Foto mit dem Label Katze zeigt, wie Katzen aussehen.",
+      "Jemand muss die Daten beschriften, das ist echte Arbeit."
+     ],
+     "q": "Wenn du Fotos für ein Modell beschriften würdest, welche wären am leichtesten?",
+     "c": "Beschrifte zehn Dinge in deiner Küche nach Kategorie, etwa Obst."
+    },
+    "es": {
+     "t": "Ejemplos, etiquetas y respuestas",
+     "g": "Aprende por qué los ejemplos etiquetados enseñan tan bien a un modelo.",
+     "p": [
+      "Cada ejemplo puede traer la respuesta correcta, llamada etiqueta.",
+      "Una foto etiquetada como gato enseña cómo son los gatos.",
+      "Alguien tiene que etiquetar los datos, y eso cuesta trabajo."
+     ],
+     "q": "Si etiquetaras fotos para un modelo, ¿cuáles serían más fáciles?",
+     "c": "Etiqueta diez objetos de tu cocina por categoría, como fruta."
+    },
+    "fr": {
+     "t": "Exemples, étiquettes et réponses",
+     "g": "Comprendre pourquoi les exemples étiquetés enseignent si bien un modèle.",
+     "p": [
+      "Chaque exemple peut venir avec la bonne réponse, l'étiquette.",
+      "Une photo étiquetée chat montre à quoi ressemblent les chats.",
+      "Quelqu'un doit étiqueter les données, ce qui demande un vrai effort."
+     ],
+     "q": "Si tu étiquetais des photos, lesquelles seraient les plus faciles ?",
+     "c": "Étiquette dix objets de ta cuisine par catégorie, comme fruit."
+    },
+    "it": {
+     "t": "Esempi, etichette e risposte",
+     "g": "Scopri perché gli esempi etichettati insegnano così bene a un modello.",
+     "p": [
+      "Ogni esempio può avere la risposta giusta, detta etichetta.",
+      "Una foto etichettata gatto insegna com'è fatto un gatto.",
+      "Qualcuno deve etichettare i dati, e richiede impegno vero."
+     ],
+     "q": "Se etichettassi foto per un modello, quali sarebbero più facili?",
+     "c": "Etichetta dieci oggetti della tua cucina per categoria, come frutta."
+    },
+    "pt": {
+     "t": "Exemplos, etiquetas e respostas",
+     "g": "Perceber porque os exemplos etiquetados ensinam tão bem um modelo.",
+     "p": [
+      "Cada exemplo pode trazer a resposta certa, chamada etiqueta.",
+      "Uma foto etiquetada gato ensina como são os gatos.",
+      "Alguém tem de etiquetar os dados, e isso dá trabalho a sério."
+     ],
+     "q": "Se etiquetasses fotos para um modelo, quais seriam mais fáceis?",
+     "c": "Etiqueta dez objetos da tua cozinha por categoria, como fruta."
+    },
+    "pt_BR": {
+     "t": "Exemplos, rótulos e respostas",
+     "g": "Entender por que exemplos rotulados ensinam tão bem um modelo.",
+     "p": [
+      "Cada exemplo pode vir com a resposta certa, chamada rótulo.",
+      "Uma foto rotulada gato ensina como são os gatos.",
+      "Alguém precisa rotular os dados, e isso dá trabalho de verdade."
+     ],
+     "q": "Se você rotulasse fotos para um modelo, quais seriam mais fáceis?",
+     "c": "Rotule dez objetos da sua cozinha por categoria, como fruta."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Supervised learning",
+     "g": "Meet learning from labelled examples.",
+     "p": [
+      "Supervised learning is like flashcards with the answer on the back.",
+      "The model guesses, checks the label and adjusts.",
+      "It works well when you have many correct examples."
+     ],
+     "q": "What could you teach a model if you had lots of labelled examples?",
+     "c": "Make five flashcards of a topic and quiz someone with them."
+    },
+    "de": {
+     "t": "Überwachtes Lernen",
+     "g": "Lerne das Lernen mit beschrifteten Beispielen kennen.",
+     "p": [
+      "Überwachtes Lernen ist wie Karteikarten mit der Antwort auf der Rückseite.",
+      "Das Modell rät, prüft das Label und passt sich an.",
+      "Es klappt gut, wenn es viele richtige Beispiele gibt."
+     ],
+     "q": "Was könntest du einem Modell mit vielen beschrifteten Beispielen beibringen?",
+     "c": "Mach fünf Karteikarten zu einem Thema und frage jemanden damit ab."
+    },
+    "es": {
+     "t": "Aprendizaje supervisado",
+     "g": "Conoce el aprendizaje con ejemplos etiquetados.",
+     "p": [
+      "El aprendizaje supervisado es como tarjetas con la respuesta detrás.",
+      "El modelo adivina, comprueba la etiqueta y se ajusta.",
+      "Funciona bien cuando hay muchos ejemplos correctos."
+     ],
+     "q": "¿Qué enseñarías a un modelo con muchos ejemplos etiquetados?",
+     "c": "Haz cinco tarjetas de un tema y pregunta a alguien con ellas."
+    },
+    "fr": {
+     "t": "L'apprentissage supervisé",
+     "g": "Découvrir l'apprentissage par exemples étiquetés.",
+     "p": [
+      "L'apprentissage supervisé ressemble à des fiches avec la réponse au dos.",
+      "Le modèle devine, vérifie l'étiquette et s'ajuste.",
+      "Cela marche bien quand on a beaucoup d'exemples corrects."
+     ],
+     "q": "Que pourrais-tu enseigner à un modèle avec beaucoup d'exemples étiquetés ?",
+     "c": "Fais cinq fiches sur un sujet et interroge quelqu'un avec."
+    },
+    "it": {
+     "t": "Apprendimento supervisionato",
+     "g": "Conosci l'apprendimento da esempi etichettati.",
+     "p": [
+      "L'apprendimento supervisionato è come schede con la risposta sul retro.",
+      "Il modello indovina, controlla l'etichetta e si corregge.",
+      "Funziona bene quando ci sono molti esempi corretti."
+     ],
+     "q": "Cosa insegneresti a un modello con tanti esempi etichettati?",
+     "c": "Fai cinque schede su un tema e interroga qualcuno con quelle."
+    },
+    "pt": {
+     "t": "Aprendizagem supervisionada",
+     "g": "Conhecer a aprendizagem com exemplos etiquetados.",
+     "p": [
+      "A aprendizagem supervisionada é como cartões com a resposta no verso.",
+      "O modelo adivinha, confere a etiqueta e ajusta-se.",
+      "Funciona bem quando há muitos exemplos corretos."
+     ],
+     "q": "O que ensinarias a um modelo com muitos exemplos etiquetados?",
+     "c": "Faz cinco cartões de um tema e questiona alguém com eles."
+    },
+    "pt_BR": {
+     "t": "Aprendizado supervisionado",
+     "g": "Conhecer o aprendizado com exemplos rotulados.",
+     "p": [
+      "O aprendizado supervisionado é como cartões com a resposta no verso.",
+      "O modelo adivinha, confere o rótulo e se ajusta.",
+      "Funciona bem quando há muitos exemplos corretos."
+     ],
+     "q": "O que você ensinaria a um modelo com muitos exemplos rotulados?",
+     "c": "Faça cinco cartões de um tema e teste alguém com eles."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Unsupervised learning",
+     "g": "See how a model finds structure with no answers given.",
+     "p": [
+      "Unsupervised learning has no labels, only raw examples.",
+      "The model looks for groups and similarities by itself.",
+      "It is like sorting a mixed box of buttons."
+     ],
+     "q": "How would you sort a mixed pile of buttons without any rules?",
+     "c": "Sort ten random objects into groups and name your own groups."
+    },
+    "de": {
+     "t": "Unüberwachtes Lernen",
+     "g": "Sieh, wie ein Modell ohne Antworten Struktur findet.",
+     "p": [
+      "Beim unüberwachten Lernen gibt es keine Labels, nur rohe Beispiele.",
+      "Das Modell sucht selbst nach Gruppen und Ähnlichkeiten.",
+      "Es ist wie das Sortieren einer Kiste gemischter Knöpfe."
+     ],
+     "q": "Wie würdest du einen Haufen Knöpfe ohne Regeln sortieren?",
+     "c": "Sortiere zehn beliebige Dinge in Gruppen und benenne sie selbst."
+    },
+    "es": {
+     "t": "Aprendizaje no supervisado",
+     "g": "Mira cómo un modelo halla estructura sin respuestas dadas.",
+     "p": [
+      "El aprendizaje no supervisado no tiene etiquetas, solo ejemplos en bruto.",
+      "El modelo busca grupos y parecidos por sí mismo.",
+      "Es como ordenar una caja de botones mezclados."
+     ],
+     "q": "¿Cómo ordenarías un montón de botones sin ninguna regla?",
+     "c": "Ordena diez objetos al azar en grupos y ponles tu propio nombre."
+    },
+    "fr": {
+     "t": "L'apprentissage non supervisé",
+     "g": "Voir comment un modèle trouve une structure sans réponses données.",
+     "p": [
+      "L'apprentissage non supervisé n'a pas d'étiquettes, seulement des exemples bruts.",
+      "Le modèle cherche seul des groupes et des ressemblances.",
+      "C'est comme trier une boîte de boutons mélangés."
+     ],
+     "q": "Comment trierais-tu un tas de boutons sans aucune règle ?",
+     "c": "Trie dix objets au hasard en groupes et nomme-les toi-même."
+    },
+    "it": {
+     "t": "Apprendimento non supervisionato",
+     "g": "Vedi come un modello trova struttura senza risposte date.",
+     "p": [
+      "L'apprendimento non supervisionato non ha etichette, solo esempi grezzi.",
+      "Il modello cerca da solo gruppi e somiglianze.",
+      "È come ordinare una scatola di bottoni mescolati."
+     ],
+     "q": "Come ordineresti un mucchio di bottoni senza regole?",
+     "c": "Dividi dieci oggetti a caso in gruppi e dai tu i nomi."
+    },
+    "pt": {
+     "t": "Aprendizagem não supervisionada",
+     "g": "Ver como um modelo encontra estrutura sem respostas dadas.",
+     "p": [
+      "A aprendizagem não supervisionada não tem etiquetas, só exemplos em bruto.",
+      "O modelo procura sozinho grupos e semelhanças.",
+      "É como separar uma caixa de botões misturados."
+     ],
+     "q": "Como separarias um monte de botões sem regras nenhumas?",
+     "c": "Separa dez objetos ao acaso em grupos e dá-lhes os teus nomes."
+    },
+    "pt_BR": {
+     "t": "Aprendizado não supervisionado",
+     "g": "Ver como um modelo encontra estrutura sem respostas dadas.",
+     "p": [
+      "O aprendizado não supervisionado não tem rótulos, só exemplos brutos.",
+      "O modelo procura sozinho grupos e semelhanças.",
+      "É como separar uma caixa de botões misturados."
+     ],
+     "q": "Como você separaria um monte de botões sem regra nenhuma?",
+     "c": "Separe dez objetos aleatórios em grupos e dê seus próprios nomes."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reinforcement learning basics",
+     "g": "Understand learning by trial, error and reward.",
+     "p": [
+      "An agent tries actions and receives rewards or penalties.",
+      "Over time it favours actions that earn more reward.",
+      "It is like training a puppy with treats, only much faster."
+     ],
+     "q": "What goal would you give a game-playing agent as its reward?",
+     "c": "Practice a small skill and note what feedback helped you improve."
+    },
+    "de": {
+     "t": "Grundlagen des bestärkenden Lernens",
+     "g": "Verstehe Lernen durch Versuch, Irrtum und Belohnung.",
+     "p": [
+      "Ein Agent probiert Handlungen aus und bekommt Belohnung oder Abzug.",
+      "Mit der Zeit bevorzugt er Handlungen mit mehr Belohnung.",
+      "Es ist wie einen Welpen mit Leckerli trainieren, nur viel schneller."
+     ],
+     "q": "Welches Ziel würdest du einem spielenden Agenten als Belohnung geben?",
+     "c": "Übe eine kleine Fähigkeit und notiere, welches Feedback dir half."
+    },
+    "es": {
+     "t": "Aprendizaje por refuerzo: lo básico",
+     "g": "Entiende el aprendizaje por ensayo, error y recompensa.",
+     "p": [
+      "Un agente prueba acciones y recibe premios o penalizaciones.",
+      "Con el tiempo prefiere las acciones que dan más recompensa.",
+      "Es como adiestrar a un cachorro con premios, pero mucho más rápido."
+     ],
+     "q": "¿Qué objetivo darías como recompensa a un agente que juega?",
+     "c": "Practica una habilidad pequeña y anota qué feedback te ayudó."
+    },
+    "fr": {
+     "t": "Bases de l'apprentissage par renforcement",
+     "g": "Comprendre l'apprentissage par essais, erreurs et récompenses.",
+     "p": [
+      "Un agent essaie des actions et reçoit des récompenses ou des pénalités.",
+      "Avec le temps, il préfère les actions qui rapportent plus.",
+      "C'est comme dresser un chiot avec des friandises, en bien plus rapide."
+     ],
+     "q": "Quel objectif donnerais-tu comme récompense à un agent qui joue ?",
+     "c": "Pratique une petite compétence et note quel retour t'a aidé."
+    },
+    "it": {
+     "t": "Apprendimento per rinforzo: le basi",
+     "g": "Capisci l'apprendimento per tentativi, errori e premi.",
+     "p": [
+      "Un agente prova azioni e riceve premi o penalità.",
+      "Col tempo preferisce le azioni che fruttano più premio.",
+      "È come addestrare un cucciolo con i biscottini, ma molto più veloce."
+     ],
+     "q": "Quale obiettivo daresti come premio a un agente che gioca?",
+     "c": "Esercita una piccola abilità e annota quale feedback ti ha aiutato."
+    },
+    "pt": {
+     "t": "Aprendizagem por reforço: o essencial",
+     "g": "Perceber a aprendizagem por tentativa, erro e recompensa.",
+     "p": [
+      "Um agente experimenta ações e recebe recompensas ou penalizações.",
+      "Com o tempo prefere as ações que dão mais recompensa.",
+      "É como treinar um cachorro com petiscos, mas muito mais depressa."
+     ],
+     "q": "Que objetivo darias como recompensa a um agente que joga?",
+     "c": "Pratica uma competência pequena e anota que feedback te ajudou."
+    },
+    "pt_BR": {
+     "t": "Aprendizado por reforço: o básico",
+     "g": "Entender o aprendizado por tentativa, erro e recompensa.",
+     "p": [
+      "Um agente testa ações e recebe recompensas ou penalidades.",
+      "Com o tempo ele prefere as ações que dão mais recompensa.",
+      "É como treinar um cachorro com petiscos, mas muito mais rápido."
+     ],
+     "q": "Que objetivo você daria como recompensa a um agente que joga?",
+     "c": "Pratique uma habilidade pequena e anote que feedback ajudou você."
+    }
+   }
+  }
+ ]
+}

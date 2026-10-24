@@ -1,0 +1,835 @@
+{
+ "topic": "negotiation",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your bottom line",
+     "g": "Set a reservation point: the least you would accept before walking away.",
+     "p": [
+      "Your bottom line is decided calmly before the talk, not during it.",
+      "Base it on your alternative, not on pressure or emotion.",
+      "Keep it private and be ready to leave politely if it is not met."
+     ],
+     "q": "What is the lowest result you would accept in a situation you face soon?",
+     "c": "Write one bottom line and the alternative that supports it."
+    },
+    "de": {
+     "t": "Deine Untergrenze",
+     "g": "Lege einen Grenzwert fest: das Mindeste, das du annimmst, bevor du gehst.",
+     "p": [
+      "Deine Untergrenze entsteht ruhig vor dem Gespräch, nicht währenddessen.",
+      "Stütze sie auf deine Alternative, nicht auf Druck oder Gefühle.",
+      "Behalte sie für dich und geh höflich, wenn sie nicht erreicht wird."
+     ],
+     "q": "Was wäre das Mindeste, das du in einer anstehenden Situation akzeptierst?",
+     "c": "Schreibe eine Untergrenze auf und die Alternative, die sie trägt."
+    },
+    "es": {
+     "t": "Tu límite mínimo",
+     "g": "Fija un punto de reserva: lo mínimo que aceptarías antes de irte.",
+     "p": [
+      "Tu límite se decide con calma antes de hablar, no durante la charla.",
+      "Basa el límite en tu alternativa, no en la presión ni en la emoción.",
+      "Mantenlo en privado y prepárate para irte con educación si no se cumple."
+     ],
+     "q": "¿Cuál es el mínimo que aceptarías en una situación próxima?",
+     "c": "Escribe un límite mínimo y la alternativa que lo respalda."
+    },
+    "fr": {
+     "t": "Ta limite basse",
+     "g": "Fixe un point de réserve : le minimum que tu accepterais avant de partir.",
+     "p": [
+      "Ta limite se décide calmement avant la discussion, pas pendant.",
+      "Base-la sur ton alternative, pas sur la pression ou l'émotion.",
+      "Garde-la pour toi et sois prêt à partir poliment si elle n'est pas atteinte."
+     ],
+     "q": "Quel est le minimum que tu accepterais dans une situation à venir ?",
+     "c": "Écris une limite basse et l'alternative qui la soutient."
+    },
+    "it": {
+     "t": "Il tuo limite minimo",
+     "g": "Fissa un punto di riserva: il minimo che accetteresti prima di andartene.",
+     "p": [
+      "Il limite si decide con calma prima del confronto, non durante.",
+      "Basalo sulla tua alternativa, non su pressione o emozione.",
+      "Tienilo per te e sii pronto a congedarti con garbo se non viene raggiunto."
+     ],
+     "q": "Qual è il minimo che accetteresti in una situazione imminente?",
+     "c": "Scrivi un limite minimo e l'alternativa che lo sostiene."
+    },
+    "pt": {
+     "t": "O teu limite mínimo",
+     "g": "Define um ponto de reserva: o mínimo que aceitarias antes de saíres.",
+     "p": [
+      "O limite decide-se com calma antes da conversa, não durante.",
+      "Baseia-o na tua alternativa, não na pressão nem na emoção.",
+      "Mantém-no privado e prepara-te para sair com educação se não for cumprido."
+     ],
+     "q": "Qual é o mínimo que aceitarias numa situação próxima?",
+     "c": "Escreve um limite mínimo e a alternativa que o sustenta."
+    },
+    "pt_BR": {
+     "t": "Seu limite mínimo",
+     "g": "Defina um ponto de reserva: o mínimo que você aceitaria antes de ir embora.",
+     "p": [
+      "O limite se decide com calma antes da conversa, não durante.",
+      "Baseie-o na sua alternativa, não em pressão ou emoção.",
+      "Mantenha-o privado e esteja pronto para sair com educação se não for atendido."
+     ],
+     "q": "Qual é o mínimo que você aceitaria numa situação próxima?",
+     "c": "Escreva um limite mínimo e a alternativa que o sustenta."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Aiming high but realistic",
+     "g": "See how ambitious, well-reasoned targets lead to better results.",
+     "p": [
+      "People who aim higher usually end up with more.",
+      "Your target should still be defensible with honest reasons.",
+      "An absurd target ruins trust; a stretching one opens options."
+     ],
+     "q": "What target would stretch you without being unreasonable?",
+     "c": "Set one slightly higher target for a talk and write a reason for it."
+    },
+    "de": {
+     "t": "Hoch zielen, aber realistisch",
+     "g": "Sieh, wie ehrgeizige, gut begründete Ziele zu besseren Ergebnissen führen.",
+     "p": [
+      "Wer höher zielt, bekommt meist mehr.",
+      "Dein Ziel sollte mit ehrlichen Gründen vertretbar bleiben.",
+      "Ein absurdes Ziel zerstört Vertrauen; ein ambitioniertes öffnet Spielraum."
+     ],
+     "q": "Welches Ziel würde dich fordern, ohne unvernünftig zu sein?",
+     "c": "Setze für ein Gespräch ein etwas höheres Ziel und schreibe einen Grund dazu."
+    },
+    "es": {
+     "t": "Apuntar alto, pero con realismo",
+     "g": "Descubre cómo los objetivos ambiciosos y razonados dan mejores resultados.",
+     "p": [
+      "Quien apunta más alto suele conseguir más.",
+      "Tu objetivo debe poder defenderse con razones honestas.",
+      "Un objetivo absurdo rompe la confianza; uno exigente abre opciones."
+     ],
+     "q": "¿Qué objetivo te exigiría sin ser poco razonable?",
+     "c": "Fija un objetivo algo más alto para una charla y anota su razón."
+    },
+    "fr": {
+     "t": "Viser haut, mais réaliste",
+     "g": "Vois comment des objectifs ambitieux et argumentés mènent à de meilleurs résultats.",
+     "p": [
+      "Ceux qui visent plus haut obtiennent généralement plus.",
+      "Ton objectif doit rester défendable avec des raisons honnêtes.",
+      "Un objectif absurde ruine la confiance ; un objectif ambitieux ouvre des options."
+     ],
+     "q": "Quel objectif te pousserait sans être déraisonnable ?",
+     "c": "Fixe un objectif un peu plus haut pour une discussion et note sa raison."
+    },
+    "it": {
+     "t": "Puntare in alto, ma con realismo",
+     "g": "Scopri come obiettivi ambiziosi e motivati portano a risultati migliori.",
+     "p": [
+      "Chi punta più in alto di solito ottiene di più.",
+      "L'obiettivo deve restare difendibile con ragioni oneste.",
+      "Un obiettivo assurdo rovina la fiducia; uno ambizioso apre opzioni."
+     ],
+     "q": "Quale obiettivo ti stimolerebbe senza essere irragionevole?",
+     "c": "Fissa un obiettivo un po' più alto per una conversazione e scrivi il motivo."
+    },
+    "pt": {
+     "t": "Apontar alto, mas com realismo",
+     "g": "Vê como objetivos ambiciosos e fundamentados dão melhores resultados.",
+     "p": [
+      "Quem aponta mais alto costuma conseguir mais.",
+      "O teu objetivo deve poder defender-se com razões honestas.",
+      "Um objetivo absurdo destrói a confiança; um exigente abre opções."
+     ],
+     "q": "Que objetivo te desafiaria sem ser pouco razoável?",
+     "c": "Define um objetivo um pouco mais alto para uma conversa e escreve o motivo."
+    },
+    "pt_BR": {
+     "t": "Mirar alto, mas com realismo",
+     "g": "Veja como metas ambiciosas e bem fundamentadas geram melhores resultados.",
+     "p": [
+      "Quem mira mais alto costuma conseguir mais.",
+      "Sua meta deve poder ser defendida com razões honestas.",
+      "Uma meta absurda destrói a confiança; uma desafiadora abre opções."
+     ],
+     "q": "Que meta desafiaria você sem ser irracional?",
+     "c": "Defina uma meta um pouco mais alta para uma conversa e escreva o motivo."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A simple preparation sheet",
+     "g": "Build a one-page plan before any important conversation.",
+     "p": [
+      "Include goal, interests, alternative, bottom line and questions.",
+      "Add what you guess the other side wants and needs.",
+      "One page is enough; the habit matters more than the length."
+     ],
+     "q": "Which upcoming talk deserves a preparation sheet?",
+     "c": "Fill in a five-line preparation sheet for one real situation."
+    },
+    "de": {
+     "t": "Ein einfaches Vorbereitungsblatt",
+     "g": "Erstelle vor wichtigen Gesprächen einen Plan auf einer Seite.",
+     "p": [
+      "Nimm Ziel, Interessen, Alternative, Untergrenze und Fragen auf.",
+      "Ergänze, was die andere Seite vermutlich will und braucht.",
+      "Eine Seite reicht; die Gewohnheit zählt mehr als die Länge."
+     ],
+     "q": "Welches anstehende Gespräch verdient ein Vorbereitungsblatt?",
+     "c": "Fülle ein Blatt mit fünf Zeilen für eine echte Situation aus."
+    },
+    "es": {
+     "t": "Una hoja de preparación sencilla",
+     "g": "Crea un plan de una página antes de cualquier conversación importante.",
+     "p": [
+      "Incluye objetivo, intereses, alternativa, límite y preguntas.",
+      "Añade lo que supones que quiere y necesita la otra parte.",
+      "Una página basta; importa más el hábito que la extensión."
+     ],
+     "q": "¿Qué conversación próxima merece una hoja de preparación?",
+     "c": "Rellena una hoja de cinco líneas para una situación real."
+    },
+    "fr": {
+     "t": "Une fiche de préparation simple",
+     "g": "Construis un plan d'une page avant toute conversation importante.",
+     "p": [
+      "Inclus objectif, intérêts, alternative, limite et questions.",
+      "Ajoute ce que tu devines des envies et besoins de l'autre.",
+      "Une page suffit ; l'habitude compte plus que la longueur."
+     ],
+     "q": "Quelle prochaine discussion mérite une fiche de préparation ?",
+     "c": "Remplis une fiche de cinq lignes pour une situation réelle."
+    },
+    "it": {
+     "t": "Una semplice scheda di preparazione",
+     "g": "Costruisci un piano di una pagina prima di ogni conversazione importante.",
+     "p": [
+      "Includi obiettivo, interessi, alternativa, limite e domande.",
+      "Aggiungi ciò che immagini voglia e serva all'altra parte.",
+      "Una pagina basta; conta più l'abitudine che la lunghezza."
+     ],
+     "q": "Quale conversazione imminente merita una scheda di preparazione?",
+     "c": "Compila una scheda di cinque righe per una situazione reale."
+    },
+    "pt": {
+     "t": "Uma folha de preparação simples",
+     "g": "Cria um plano de uma página antes de qualquer conversa importante.",
+     "p": [
+      "Inclui objetivo, interesses, alternativa, limite e perguntas.",
+      "Acrescenta o que supões que o outro lado quer e precisa.",
+      "Uma página chega; o hábito importa mais do que o tamanho."
+     ],
+     "q": "Que conversa próxima merece uma folha de preparação?",
+     "c": "Preenche uma folha de cinco linhas para uma situação real."
+    },
+    "pt_BR": {
+     "t": "Uma folha de preparação simples",
+     "g": "Monte um plano de uma página antes de qualquer conversa importante.",
+     "p": [
+      "Inclua objetivo, interesses, alternativa, limite e perguntas.",
+      "Acrescente o que você imagina que o outro lado quer e precisa.",
+      "Uma página basta; o hábito importa mais que o tamanho."
+     ],
+     "q": "Qual conversa próxima merece uma folha de preparação?",
+     "c": "Preencha uma folha de cinco linhas para uma situação real."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The power of listening",
+     "g": "Learn why listening closely often gives you more leverage than talking.",
+     "p": [
+      "Listening shows you what the other person truly needs.",
+      "People who feel heard become more open and flexible.",
+      "Talking too much can give away more than you meant to."
+     ],
+     "q": "Who listens well to you, and how does it feel?",
+     "c": "In one conversation today, speak less than the other person."
+    },
+    "de": {
+     "t": "Die Kraft des Zuhörens",
+     "g": "Lerne, warum genaues Zuhören oft mehr Einfluss gibt als Reden.",
+     "p": [
+      "Zuhören zeigt dir, was die andere Person wirklich braucht.",
+      "Wer sich gehört fühlt, wird offener und flexibler.",
+      "Zu viel Reden verrät oft mehr, als du wolltest."
+     ],
+     "q": "Wer hört dir gut zu, und wie fühlt sich das an?",
+     "c": "Sprich heute in einem Gespräch weniger als dein Gegenüber."
+    },
+    "es": {
+     "t": "El poder de escuchar",
+     "g": "Aprende por qué escuchar con atención suele darte más influencia que hablar.",
+     "p": [
+      "Escuchar te muestra lo que la otra persona necesita de verdad.",
+      "Quien se siente escuchado se vuelve más abierto y flexible.",
+      "Hablar de más puede revelar más de lo que querías."
+     ],
+     "q": "¿Quién te escucha bien y cómo se siente?",
+     "c": "En una conversación de hoy, habla menos que la otra persona."
+    },
+    "fr": {
+     "t": "Le pouvoir de l'écoute",
+     "g": "Apprends pourquoi bien écouter donne souvent plus d'influence que parler.",
+     "p": [
+      "Écouter te montre ce dont l'autre a vraiment besoin.",
+      "Une personne qui se sent entendue devient plus ouverte et souple.",
+      "Trop parler peut en révéler plus que prévu."
+     ],
+     "q": "Qui t'écoute bien, et qu'est-ce que ça fait ?",
+     "c": "Dans une conversation aujourd'hui, parle moins que ton interlocuteur."
+    },
+    "it": {
+     "t": "Il potere dell'ascolto",
+     "g": "Scopri perché ascoltare con attenzione spesso dà più influenza che parlare.",
+     "p": [
+      "Ascoltare ti mostra di cosa ha davvero bisogno l'altra persona.",
+      "Chi si sente ascoltato diventa più aperto e flessibile.",
+      "Parlare troppo può rivelare più di quanto volevi."
+     ],
+     "q": "Chi ti ascolta bene e come ti senti?",
+     "c": "In una conversazione di oggi, parla meno dell'altra persona."
+    },
+    "pt": {
+     "t": "O poder de ouvir",
+     "g": "Aprende porque ouvir com atenção costuma dar mais influência do que falar.",
+     "p": [
+      "Ouvir mostra-te o que a outra pessoa realmente precisa.",
+      "Quem se sente ouvido torna-se mais aberto e flexível.",
+      "Falar demais pode revelar mais do que querias."
+     ],
+     "q": "Quem te ouve bem e como te sentes?",
+     "c": "Numa conversa de hoje, fala menos do que a outra pessoa."
+    },
+    "pt_BR": {
+     "t": "O poder de ouvir",
+     "g": "Aprenda por que ouvir com atenção costuma dar mais influência do que falar.",
+     "p": [
+      "Ouvir mostra o que a outra pessoa realmente precisa.",
+      "Quem se sente ouvido fica mais aberto e flexível.",
+      "Falar demais pode revelar mais do que você queria."
+     ],
+     "q": "Quem escuta você bem e como você se sente?",
+     "c": "Numa conversa de hoje, fale menos que a outra pessoa."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Active listening basics",
+     "g": "Practise paraphrasing and summarising before you respond.",
+     "p": [
+      "Paraphrase: So what you are saying is...",
+      "Summarise the main points and ask if you got them right.",
+      "Understanding is not agreeing; it simply builds trust."
+     ],
+     "q": "How do you feel when someone repeats your point accurately?",
+     "c": "Paraphrase one thing a person says today before answering."
+    },
+    "de": {
+     "t": "Grundlagen des aktiven Zuhörens",
+     "g": "Übe Umschreiben und Zusammenfassen, bevor du antwortest.",
+     "p": [
+      "Umschreiben: Du meinst also, dass...",
+      "Fasse die Hauptpunkte zusammen und frage, ob du sie richtig hast.",
+      "Verstehen heißt nicht zustimmen; es schafft einfach Vertrauen."
+     ],
+     "q": "Wie fühlt es sich an, wenn jemand deinen Punkt genau wiedergibt?",
+     "c": "Gib heute einmal wieder, was jemand sagt, bevor du antwortest."
+    },
+    "es": {
+     "t": "Bases de la escucha activa",
+     "g": "Practica parafrasear y resumir antes de responder.",
+     "p": [
+      "Parafrasea: O sea, lo que dices es que...",
+      "Resume los puntos principales y pregunta si los captaste bien.",
+      "Entender no es estar de acuerdo; solo genera confianza."
+     ],
+     "q": "¿Cómo te sientes cuando alguien repite tu idea con exactitud?",
+     "c": "Parafrasea hoy algo que diga una persona antes de contestar."
+    },
+    "fr": {
+     "t": "Bases de l'écoute active",
+     "g": "Entraîne-toi à reformuler et résumer avant de répondre.",
+     "p": [
+      "Reformule : Si je comprends bien, tu dis que...",
+      "Résume les points principaux et demande si tu as bien compris.",
+      "Comprendre n'est pas approuver ; cela crée simplement la confiance."
+     ],
+     "q": "Que ressens-tu quand quelqu'un reprend ton idée avec exactitude ?",
+     "c": "Reformule aujourd'hui une phrase de quelqu'un avant de répondre."
+    },
+    "it": {
+     "t": "Basi dell'ascolto attivo",
+     "g": "Esercitati a parafrasare e riassumere prima di rispondere.",
+     "p": [
+      "Parafrasa: Quindi quello che dici è che...",
+      "Riassumi i punti principali e chiedi se hai capito bene.",
+      "Capire non è essere d'accordo; crea solo fiducia."
+     ],
+     "q": "Come ti senti quando qualcuno ripete esattamente il tuo punto?",
+     "c": "Oggi parafrasa una frase di qualcuno prima di rispondere."
+    },
+    "pt": {
+     "t": "Bases da escuta ativa",
+     "g": "Pratica parafrasear e resumir antes de responder.",
+     "p": [
+      "Parafraseia: Então o que dizes é que...",
+      "Resume os pontos principais e pergunta se percebeste bem.",
+      "Compreender não é concordar; apenas cria confiança."
+     ],
+     "q": "Como te sentes quando alguém repete exatamente o teu ponto?",
+     "c": "Hoje parafraseia algo que alguém diga antes de responder."
+    },
+    "pt_BR": {
+     "t": "Noções de escuta ativa",
+     "g": "Pratique parafrasear e resumir antes de responder.",
+     "p": [
+      "Parafraseie: Então o que você está dizendo é que...",
+      "Resuma os pontos principais e pergunte se entendeu direito.",
+      "Entender não é concordar; só cria confiança."
+     ],
+     "q": "Como você se sente quando alguém repete exatamente o seu ponto?",
+     "c": "Hoje parafraseie algo que alguém disser antes de responder."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Open questions",
+     "g": "Ask questions starting with what and how to get people talking.",
+     "p": [
+      "Open questions cannot be answered with just yes or no.",
+      "Try: What matters most to you here? How would that work?",
+      "Avoid leading questions that push people toward your answer."
+     ],
+     "q": "What open question could you ask in your next conversation?",
+     "c": "Turn two yes-or-no questions into open ones today."
+    },
+    "de": {
+     "t": "Offene Fragen",
+     "g": "Stelle Fragen mit Was und Wie, damit Menschen erzählen.",
+     "p": [
+      "Offene Fragen lassen sich nicht nur mit Ja oder Nein beantworten.",
+      "Probiere: Was ist dir hier am wichtigsten? Wie würde das gehen?",
+      "Vermeide Suggestivfragen, die zu deiner Antwort drängen."
+     ],
+     "q": "Welche offene Frage könntest du im nächsten Gespräch stellen?",
+     "c": "Wandle heute zwei Ja-Nein-Fragen in offene um."
+    },
+    "es": {
+     "t": "Preguntas abiertas",
+     "g": "Haz preguntas con qué y cómo para que la gente hable.",
+     "p": [
+      "Las preguntas abiertas no se responden solo con sí o no.",
+      "Prueba: ¿Qué es lo más importante para ti aquí? ¿Cómo funcionaría?",
+      "Evita preguntas capciosas que empujan hacia tu respuesta."
+     ],
+     "q": "¿Qué pregunta abierta podrías hacer en tu próxima conversación?",
+     "c": "Hoy convierte dos preguntas de sí o no en abiertas."
+    },
+    "fr": {
+     "t": "Questions ouvertes",
+     "g": "Pose des questions commençant par quoi et comment pour faire parler.",
+     "p": [
+      "Les questions ouvertes ne se règlent pas par oui ou non.",
+      "Essaie : Qu'est-ce qui compte le plus pour toi ici ? Comment ça marcherait ?",
+      "Évite les questions orientées qui poussent vers ta réponse."
+     ],
+     "q": "Quelle question ouverte pourrais-tu poser lors de ta prochaine conversation ?",
+     "c": "Aujourd'hui, transforme deux questions fermées en questions ouvertes."
+    },
+    "it": {
+     "t": "Domande aperte",
+     "g": "Fai domande con cosa e come per far parlare le persone.",
+     "p": [
+      "Le domande aperte non si risolvono con un semplice sì o no.",
+      "Prova: Cosa conta di più per te qui? Come funzionerebbe?",
+      "Evita le domande tendenziose che spingono verso la tua risposta."
+     ],
+     "q": "Quale domanda aperta potresti fare nella prossima conversazione?",
+     "c": "Oggi trasforma due domande da sì o no in domande aperte."
+    },
+    "pt": {
+     "t": "Perguntas abertas",
+     "g": "Faz perguntas com o quê e como para que as pessoas falem.",
+     "p": [
+      "As perguntas abertas não se respondem só com sim ou não.",
+      "Experimenta: O que é mais importante para ti aqui? Como funcionaria?",
+      "Evita perguntas sugestivas que empurram para a tua resposta."
+     ],
+     "q": "Que pergunta aberta poderias fazer na próxima conversa?",
+     "c": "Hoje transforma duas perguntas de sim ou não em abertas."
+    },
+    "pt_BR": {
+     "t": "Perguntas abertas",
+     "g": "Faça perguntas com o que e como para as pessoas falarem.",
+     "p": [
+      "Perguntas abertas não se respondem só com sim ou não.",
+      "Experimente: O que é mais importante para você aqui? Como funcionaria?",
+      "Evite perguntas sugestivas que empurram para a sua resposta."
+     ],
+     "q": "Que pergunta aberta você poderia fazer na próxima conversa?",
+     "c": "Hoje transforme duas perguntas de sim ou não em abertas."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Comfortable with silence",
+     "g": "Let pauses work for you instead of rushing to fill them.",
+     "p": [
+      "A pause gives both sides time to think.",
+      "After a question or offer, wait a few calm seconds.",
+      "People often add useful information to fill a quiet moment."
+     ],
+     "q": "How do you usually react when a conversation goes quiet?",
+     "c": "After your next question today, count to four before speaking."
+    },
+    "de": {
+     "t": "Mit Stille zurechtkommen",
+     "g": "Lass Pausen für dich arbeiten, statt sie schnell zu füllen.",
+     "p": [
+      "Eine Pause gibt beiden Seiten Zeit zum Nachdenken.",
+      "Warte nach einer Frage oder einem Angebot ein paar ruhige Sekunden.",
+      "Menschen ergänzen in einer stillen Pause oft nützliche Informationen."
+     ],
+     "q": "Wie reagierst du meistens, wenn ein Gespräch still wird?",
+     "c": "Zähle heute nach der nächsten Frage bis vier, bevor du sprichst."
+    },
+    "es": {
+     "t": "Cómodo con el silencio",
+     "g": "Deja que las pausas trabajen para ti en lugar de llenarlas con prisa.",
+     "p": [
+      "Una pausa da tiempo a ambas partes para pensar.",
+      "Tras una pregunta u oferta, espera unos segundos con calma.",
+      "La gente suele añadir información útil para llenar un silencio."
+     ],
+     "q": "¿Cómo sueles reaccionar cuando una conversación se queda en silencio?",
+     "c": "Tras tu próxima pregunta de hoy, cuenta hasta cuatro antes de hablar."
+    },
+    "fr": {
+     "t": "À l'aise avec le silence",
+     "g": "Laisse les pauses travailler pour toi au lieu de les combler vite.",
+     "p": [
+      "Une pause laisse aux deux côtés le temps de réfléchir.",
+      "Après une question ou une offre, attends quelques secondes calmement.",
+      "On ajoute souvent une information utile pour combler un silence."
+     ],
+     "q": "Comment réagis-tu d'habitude quand la conversation devient silencieuse ?",
+     "c": "Après ta prochaine question aujourd'hui, compte jusqu'à quatre avant de parler."
+    },
+    "it": {
+     "t": "A tuo agio con il silenzio",
+     "g": "Lascia che le pause lavorino per te invece di riempirle in fretta.",
+     "p": [
+      "Una pausa dà a entrambi il tempo di pensare.",
+      "Dopo una domanda o un'offerta, aspetta qualche secondo con calma.",
+      "Spesso si aggiungono informazioni utili per riempire un silenzio."
+     ],
+     "q": "Come reagisci di solito quando una conversazione si fa silenziosa?",
+     "c": "Dopo la prossima domanda di oggi, conta fino a quattro prima di parlare."
+    },
+    "pt": {
+     "t": "À vontade com o silêncio",
+     "g": "Deixa as pausas trabalhar por ti em vez de as encheres à pressa.",
+     "p": [
+      "Uma pausa dá tempo a ambos para pensar.",
+      "Depois de uma pergunta ou oferta, espera uns segundos com calma.",
+      "As pessoas costumam acrescentar informação útil para preencher o silêncio."
+     ],
+     "q": "Como costumas reagir quando uma conversa fica em silêncio?",
+     "c": "Depois da tua próxima pergunta de hoje, conta até quatro antes de falares."
+    },
+    "pt_BR": {
+     "t": "À vontade com o silêncio",
+     "g": "Deixe as pausas trabalharem por você em vez de preenchê-las com pressa.",
+     "p": [
+      "Uma pausa dá tempo para os dois pensarem.",
+      "Depois de uma pergunta ou oferta, espere alguns segundos com calma.",
+      "As pessoas costumam acrescentar informação útil para preencher o silêncio."
+     ],
+     "q": "Como você costuma reagir quando a conversa fica em silêncio?",
+     "c": "Depois da sua próxima pergunta hoje, conte até quatro antes de falar."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Building rapport quickly",
+     "g": "Start with friendly small talk, common ground and real curiosity.",
+     "p": [
+      "A few warm minutes make the hard part easier.",
+      "Look for something you share: a place, a hobby, a view.",
+      "Curiosity works; faking interest does not."
+     ],
+     "q": "What is a friendly opener you like to use with new people?",
+     "c": "Find one thing in common with someone you meet today."
+    },
+    "de": {
+     "t": "Schnell Vertrauen aufbauen",
+     "g": "Beginne mit freundlichem Smalltalk, Gemeinsamkeiten und echter Neugier.",
+     "p": [
+      "Ein paar herzliche Minuten machen den schweren Teil leichter.",
+      "Suche etwas Gemeinsames: einen Ort, ein Hobby, eine Aussicht.",
+      "Neugier wirkt; gespieltes Interesse nicht."
+     ],
+     "q": "Welchen freundlichen Einstieg nutzt du gern bei neuen Menschen?",
+     "c": "Finde heute bei jemandem, den du triffst, eine Gemeinsamkeit."
+    },
+    "es": {
+     "t": "Crear conexión rápido",
+     "g": "Empieza con charla amable, puntos en común y curiosidad real.",
+     "p": [
+      "Unos minutos cálidos hacen más fácil la parte difícil.",
+      "Busca algo en común: un lugar, una afición, una opinión.",
+      "La curiosidad funciona; fingir interés no."
+     ],
+     "q": "¿Qué frase amable te gusta usar para empezar con gente nueva?",
+     "c": "Encuentra algo en común con alguien que conozcas hoy."
+    },
+    "fr": {
+     "t": "Créer vite du lien",
+     "g": "Commence par une conversation aimable, des points communs et une vraie curiosité.",
+     "p": [
+      "Quelques minutes chaleureuses facilitent la partie difficile.",
+      "Cherche un point commun : un lieu, un loisir, une opinion.",
+      "La curiosité fonctionne ; feindre l'intérêt, non."
+     ],
+     "q": "Quelle phrase amicale aimes-tu utiliser pour aborder de nouvelles personnes ?",
+     "c": "Trouve un point commun avec quelqu'un que tu rencontres aujourd'hui."
+    },
+    "it": {
+     "t": "Creare subito sintonia",
+     "g": "Inizia con chiacchiere cordiali, punti in comune e vera curiosità.",
+     "p": [
+      "Qualche minuto di calore rende più facile la parte difficile.",
+      "Cerca qualcosa in comune: un luogo, un hobby, un'opinione.",
+      "La curiosità funziona; fingere interesse no."
+     ],
+     "q": "Quale apertura amichevole ti piace usare con persone nuove?",
+     "c": "Trova un punto in comune con qualcuno che incontri oggi."
+    },
+    "pt": {
+     "t": "Criar empatia depressa",
+     "g": "Começa com conversa simpática, pontos em comum e curiosidade real.",
+     "p": [
+      "Uns minutos calorosos tornam a parte difícil mais fácil.",
+      "Procura algo em comum: um lugar, um passatempo, uma opinião.",
+      "A curiosidade funciona; fingir interesse não."
+     ],
+     "q": "Que frase simpática gostas de usar com pessoas novas?",
+     "c": "Encontra algo em comum com alguém que conheças hoje."
+    },
+    "pt_BR": {
+     "t": "Criando conexão rápido",
+     "g": "Comece com papo amigável, pontos em comum e curiosidade de verdade.",
+     "p": [
+      "Alguns minutos calorosos facilitam a parte difícil.",
+      "Procure algo em comum: um lugar, um hobby, uma opinião.",
+      "Curiosidade funciona; fingir interesse não."
+     ],
+     "q": "Que frase simpática você gosta de usar com pessoas novas?",
+     "c": "Encontre algo em comum com alguém que você conhecer hoje."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Separating people from problems",
+     "g": "Be kind to the person while staying firm on the issue.",
+     "p": [
+      "Attack the problem together, not each other.",
+      "Say: We both want this solved. What can we do?",
+      "You can be soft on people and hard on the issue at once."
+     ],
+     "q": "When did someone stay kind but firm with you? How did it feel?",
+     "c": "Rephrase one complaint today so it targets the problem, not the person."
+    },
+    "de": {
+     "t": "Mensch und Problem trennen",
+     "g": "Sei freundlich zur Person und bleib bei der Sache fest.",
+     "p": [
+      "Packt das Problem gemeinsam an, nicht einander.",
+      "Sag: Wir wollen beide eine Lösung. Was können wir tun?",
+      "Du kannst weich zu Menschen und klar in der Sache sein."
+     ],
+     "q": "Wann blieb jemand bei dir freundlich, aber bestimmt? Wie war das?",
+     "c": "Formuliere heute eine Beschwerde so um, dass sie das Problem trifft, nicht die Person."
+    },
+    "es": {
+     "t": "Separar a la persona del problema",
+     "g": "Sé amable con la persona y firme con el asunto.",
+     "p": [
+      "Ataca el problema juntos, no os ataquéis entre vosotros.",
+      "Di: Los dos queremos resolver esto. ¿Qué podemos hacer?",
+      "Puedes ser suave con las personas y firme con el tema a la vez."
+     ],
+     "q": "¿Cuándo alguien fue amable pero firme contigo? ¿Cómo se sintió?",
+     "c": "Reformula hoy una queja para que apunte al problema, no a la persona."
+    },
+    "fr": {
+     "t": "Séparer la personne du problème",
+     "g": "Sois aimable avec la personne et ferme sur le sujet.",
+     "p": [
+      "Attaquez le problème ensemble, pas l'un l'autre.",
+      "Dis : Nous voulons tous deux régler cela. Que pouvons-nous faire ?",
+      "Tu peux être doux avec les gens et ferme sur le fond à la fois."
+     ],
+     "q": "Quand quelqu'un a-t-il été aimable mais ferme avec toi ? Qu'as-tu ressenti ?",
+     "c": "Reformule aujourd'hui une plainte pour viser le problème, pas la personne."
+    },
+    "it": {
+     "t": "Separare la persona dal problema",
+     "g": "Sii gentile con la persona e fermo sulla questione.",
+     "p": [
+      "Affrontate il problema insieme, non l'uno contro l'altro.",
+      "Di': Vogliamo entrambi risolvere. Cosa possiamo fare?",
+      "Puoi essere morbido con le persone e deciso sul tema insieme."
+     ],
+     "q": "Quando qualcuno è stato gentile ma fermo con te? Come ti sei sentito?",
+     "c": "Oggi riformula una lamentela perché colpisca il problema, non la persona."
+    },
+    "pt": {
+     "t": "Separar a pessoa do problema",
+     "g": "Sê gentil com a pessoa e firme na questão.",
+     "p": [
+      "Ataquem o problema juntos, não um ao outro.",
+      "Diz: Os dois queremos resolver isto. O que podemos fazer?",
+      "Podes ser suave com as pessoas e firme no assunto ao mesmo tempo."
+     ],
+     "q": "Quando alguém foi gentil mas firme contigo? Como te sentiste?",
+     "c": "Hoje reformula uma queixa para visar o problema, não a pessoa."
+    },
+    "pt_BR": {
+     "t": "Separando a pessoa do problema",
+     "g": "Seja gentil com a pessoa e firme na questão.",
+     "p": [
+      "Ataquem o problema juntos, não um ao outro.",
+      "Diga: Nós dois queremos resolver isso. O que podemos fazer?",
+      "Você pode ser suave com as pessoas e firme no assunto ao mesmo tempo."
+     ],
+     "q": "Quando alguém foi gentil mas firme com você? Como foi?",
+     "c": "Hoje reformule uma reclamação para focar no problema, não na pessoa."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tone of voice matters",
+     "g": "See how calm, warm and steady speech changes how words land.",
+     "p": [
+      "The same sentence can sound kind or sharp depending on tone.",
+      "A slower, lower pace usually sounds more confident.",
+      "A smile can be heard, even on the phone."
+     ],
+     "q": "Which tone of voice makes you relax in a conversation?",
+     "c": "Say one request out loud three ways and pick the warmest."
+    },
+    "de": {
+     "t": "Der Tonfall zählt",
+     "g": "Sieh, wie ruhiges, warmes, gleichmäßiges Sprechen die Wirkung verändert.",
+     "p": [
+      "Derselbe Satz klingt je nach Ton freundlich oder scharf.",
+      "Ein langsameres, tieferes Tempo wirkt meist sicherer.",
+      "Ein Lächeln hört man, sogar am Telefon."
+     ],
+     "q": "Welcher Tonfall entspannt dich in einem Gespräch?",
+     "c": "Sprich eine Bitte laut auf drei Arten und wähle die wärmste."
+    },
+    "es": {
+     "t": "El tono de voz importa",
+     "g": "Descubre cómo un habla calmada, cálida y firme cambia cómo llegan tus palabras.",
+     "p": [
+      "La misma frase puede sonar amable o cortante según el tono.",
+      "Un ritmo más lento y grave suele sonar más seguro.",
+      "Una sonrisa se oye, incluso por teléfono."
+     ],
+     "q": "¿Qué tono de voz te relaja en una conversación?",
+     "c": "Di una petición en voz alta de tres maneras y elige la más cálida."
+    },
+    "fr": {
+     "t": "Le ton de la voix compte",
+     "g": "Vois comment une parole calme, chaleureuse et posée change la réception des mots.",
+     "p": [
+      "La même phrase peut sembler aimable ou sèche selon le ton.",
+      "Un rythme plus lent et plus grave semble souvent plus assuré.",
+      "Un sourire s'entend, même au téléphone."
+     ],
+     "q": "Quel ton de voix te détend dans une conversation ?",
+     "c": "Dis une demande à voix haute de trois façons et choisis la plus chaleureuse."
+    },
+    "it": {
+     "t": "Il tono di voce conta",
+     "g": "Scopri come un parlare calmo, caldo e fermo cambia come arrivano le parole.",
+     "p": [
+      "La stessa frase può suonare gentile o tagliente secondo il tono.",
+      "Un ritmo più lento e basso di solito suona più sicuro.",
+      "Un sorriso si sente, anche al telefono."
+     ],
+     "q": "Quale tono di voce ti rilassa in una conversazione?",
+     "c": "Di' una richiesta ad alta voce in tre modi e scegli il più caldo."
+    },
+    "pt": {
+     "t": "O tom de voz importa",
+     "g": "Vê como uma fala calma, calorosa e firme muda o modo como as palavras chegam.",
+     "p": [
+      "A mesma frase pode soar simpática ou cortante conforme o tom.",
+      "Um ritmo mais lento e grave costuma soar mais seguro.",
+      "Um sorriso ouve-se, até ao telefone."
+     ],
+     "q": "Que tom de voz te descontrai numa conversa?",
+     "c": "Diz um pedido em voz alta de três maneiras e escolhe a mais calorosa."
+    },
+    "pt_BR": {
+     "t": "O tom de voz importa",
+     "g": "Veja como uma fala calma, calorosa e firme muda o jeito que as palavras chegam.",
+     "p": [
+      "A mesma frase pode soar gentil ou seca conforme o tom.",
+      "Um ritmo mais lento e grave costuma soar mais seguro.",
+      "Um sorriso dá para ouvir, até no telefone."
+     ],
+     "q": "Que tom de voz deixa você à vontade numa conversa?",
+     "c": "Diga um pedido em voz alta de três jeitos e escolha o mais caloroso."
+    }
+   }
+  }
+ ]
+}

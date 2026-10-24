@@ -1,0 +1,835 @@
+{
+ "topic": "philosophy",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wu wei, effortless action",
+     "g": "Learn the Daoist art of acting smoothly without forcing things.",
+     "p": [
+      "Wu wei literally means non-action, but it is closer to acting without strain.",
+      "Think of a skilled cook or dancer: they move with the situation, not against it.",
+      "Building on the Dao, it invites us to notice when pushing harder only makes things worse."
+     ],
+     "q": "When did something go well precisely because you stopped forcing it?",
+     "c": "Pick one task today and try doing it more slowly and smoothly, without rushing."
+    },
+    "de": {
+     "t": "Wu wei, müheloses Handeln",
+     "g": "Lerne die daoistische Kunst, geschmeidig zu handeln, ohne etwas zu erzwingen.",
+     "p": [
+      "Wu wei heißt wörtlich Nicht-Handeln, gemeint ist eher Handeln ohne Verkrampfung.",
+      "Denk an eine geübte Köchin oder einen Tänzer: Sie gehen mit der Situation, nicht gegen sie.",
+      "Im Sinne des Dao lädt es ein zu bemerken, wann mehr Druck alles nur schlimmer macht."
+     ],
+     "q": "Wann lief etwas gerade deshalb gut, weil du aufgehört hast, es zu erzwingen?",
+     "c": "Erledige heute eine Aufgabe bewusst langsamer und ruhiger, ohne Hast."
+    },
+    "es": {
+     "t": "Wu wei, la acción sin esfuerzo",
+     "g": "Aprende el arte taoísta de actuar con fluidez sin forzar las cosas.",
+     "p": [
+      "Wu wei significa literalmente no acción, pero se parece más a actuar sin tensión.",
+      "Piensa en un buen cocinero o bailarín: se mueven con la situación, no contra ella.",
+      "Siguiendo el Dao, nos invita a notar cuándo empujar más solo empeora las cosas."
+     ],
+     "q": "¿Cuándo salió algo bien justo porque dejaste de forzarlo?",
+     "c": "Elige una tarea hoy y hazla con más calma y fluidez, sin prisa."
+    },
+    "fr": {
+     "t": "Le wu wei, l'action sans effort",
+     "g": "Découvrir l'art taoïste d'agir avec fluidité sans forcer les choses.",
+     "p": [
+      "Wu wei veut dire non-agir, mais c'est plutôt agir sans crispation.",
+      "Pense à un bon cuisinier ou à une danseuse : ils suivent la situation au lieu de la contrer.",
+      "Dans l'esprit du Dao, il invite à voir quand pousser plus fort aggrave les choses."
+     ],
+     "q": "Quand une chose a-t-elle réussi justement parce que tu as cessé de forcer ?",
+     "c": "Choisis une tâche aujourd'hui et fais-la plus lentement, avec fluidité."
+    },
+    "it": {
+     "t": "Wu wei, l'azione senza sforzo",
+     "g": "Imparare l'arte taoista di agire con fluidità senza forzare le cose.",
+     "p": [
+      "Wu wei significa letteralmente non agire, ma è più un agire senza tensione.",
+      "Pensa a un bravo cuoco o a una ballerina: si muovono con la situazione, non contro.",
+      "Sulla scia del Dao, ci invita a notare quando spingere di più peggiora le cose."
+     ],
+     "q": "Quando qualcosa è andato bene proprio perché hai smesso di forzarlo?",
+     "c": "Scegli un compito oggi e fallo con più calma e fluidità, senza fretta."
+    },
+    "pt": {
+     "t": "Wu wei, a ação sem esforço",
+     "g": "Aprender a arte taoista de agir com fluidez sem forçar as coisas.",
+     "p": [
+      "Wu wei significa literalmente não ação, mas aproxima-se mais de agir sem tensão.",
+      "Pensa num bom cozinheiro ou numa bailarina: movem-se com a situação, não contra ela.",
+      "Seguindo o Dao, convida-nos a notar quando empurrar mais só piora tudo."
+     ],
+     "q": "Quando é que algo correu bem precisamente porque deixaste de forçar?",
+     "c": "Escolhe uma tarefa hoje e fá-la com mais calma e fluidez, sem pressa."
+    },
+    "pt_BR": {
+     "t": "Wu wei, a ação sem esforço",
+     "g": "Aprender a arte taoista de agir com fluidez sem forçar as coisas.",
+     "p": [
+      "Wu wei significa literalmente não ação, mas se parece mais com agir sem tensão.",
+      "Pense em um bom cozinheiro ou numa dançarina: eles se movem com a situação, não contra ela.",
+      "Seguindo o Dao, nos convida a notar quando empurrar mais só piora tudo."
+     ],
+     "q": "Quando algo deu certo justamente porque você parou de forçar?",
+     "c": "Escolha uma tarefa hoje e faça com mais calma e fluidez, sem pressa."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Opinions versus arguments",
+     "g": "Tell the difference between stating a feeling and giving reasons for a claim.",
+     "p": [
+      "An opinion says what you think; an argument also says why.",
+      "Arguments can be checked, discussed and improved by others.",
+      "Socrates' questions were a way of turning opinions into arguments."
+     ],
+     "q": "Pick a food you love: can you give two reasons someone else could check?",
+     "c": "Notice one opinion you hear today and quietly ask: what reasons support it?"
+    },
+    "de": {
+     "t": "Meinung oder Argument",
+     "g": "Unterscheide zwischen einem Gefühl äußern und Gründe für eine Behauptung geben.",
+     "p": [
+      "Eine Meinung sagt, was du denkst, ein Argument sagt auch, warum.",
+      "Argumente können andere prüfen, besprechen und verbessern.",
+      "Sokrates' Fragen verwandelten Meinungen in Argumente."
+     ],
+     "q": "Nenn ein Lieblingsessen: Kannst du zwei Gründe nennen, die andere prüfen können?",
+     "c": "Achte heute auf eine Meinung und frag dich leise: Welche Gründe stützen sie?"
+    },
+    "es": {
+     "t": "Opiniones frente a argumentos",
+     "g": "Distingue entre expresar un sentimiento y dar razones para una afirmación.",
+     "p": [
+      "Una opinión dice lo que piensas; un argumento dice también por qué.",
+      "Los argumentos pueden ser revisados, discutidos y mejorados por otros.",
+      "Las preguntas de Sócrates convertían opiniones en argumentos."
+     ],
+     "q": "Elige una comida que te encante: ¿puedes dar dos razones que otro pueda comprobar?",
+     "c": "Fíjate hoy en una opinión y pregúntate en silencio: ¿qué razones la apoyan?"
+    },
+    "fr": {
+     "t": "Opinions et arguments",
+     "g": "Distinguer exprimer un ressenti et donner des raisons pour une affirmation.",
+     "p": [
+      "Une opinion dit ce que tu penses ; un argument dit aussi pourquoi.",
+      "Les arguments peuvent être vérifiés, discutés et améliorés par d'autres.",
+      "Les questions de Socrate transformaient les opinions en arguments."
+     ],
+     "q": "Choisis un plat que tu adores : peux-tu donner deux raisons vérifiables ?",
+     "c": "Repère une opinion aujourd'hui et demande-toi : quelles raisons la soutiennent ?"
+    },
+    "it": {
+     "t": "Opinioni e argomenti",
+     "g": "Distinguere tra esprimere una sensazione e dare ragioni per un'affermazione.",
+     "p": [
+      "Un'opinione dice cosa pensi; un argomento dice anche perché.",
+      "Gli argomenti possono essere verificati, discussi e migliorati da altri.",
+      "Le domande di Socrate trasformavano le opinioni in argomenti."
+     ],
+     "q": "Scegli un cibo che ami: sai dare due ragioni che altri possano verificare?",
+     "c": "Nota un'opinione oggi e chiediti in silenzio: quali ragioni la sostengono?"
+    },
+    "pt": {
+     "t": "Opiniões e argumentos",
+     "g": "Distinguir entre exprimir um sentimento e dar razões para uma afirmação.",
+     "p": [
+      "Uma opinião diz o que pensas; um argumento diz também porquê.",
+      "Os argumentos podem ser verificados, discutidos e melhorados por outros.",
+      "As perguntas de Sócrates transformavam opiniões em argumentos."
+     ],
+     "q": "Escolhe uma comida de que gostas: consegues dar duas razões que outros possam verificar?",
+     "c": "Repara hoje numa opinião e pergunta-te em silêncio: que razões a apoiam?"
+    },
+    "pt_BR": {
+     "t": "Opiniões versus argumentos",
+     "g": "Distinguir entre expressar um sentimento e dar razões para uma afirmação.",
+     "p": [
+      "Uma opinião diz o que você pensa; um argumento diz também por quê.",
+      "Argumentos podem ser checados, discutidos e melhorados por outras pessoas.",
+      "As perguntas de Sócrates transformavam opiniões em argumentos."
+     ],
+     "q": "Escolha uma comida que você ama: consegue dar duas razões que outros possam checar?",
+     "c": "Repare hoje em uma opinião e pergunte em silêncio: que razões a sustentam?"
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Premises and conclusions",
+     "g": "Spot the parts of an argument in everyday conversations.",
+     "p": [
+      "Premises are the reasons; the conclusion is what they are meant to support.",
+      "Words like because and since often signal premises; so and therefore signal conclusions.",
+      "Example: it is raining and I have no umbrella, so I will get wet."
+     ],
+     "q": "Can you build a short argument for why weekends matter, with two premises?",
+     "c": "Find one sentence today with so or therefore and name its premises."
+    },
+    "de": {
+     "t": "Prämissen und Schluss",
+     "g": "Erkenne die Teile eines Arguments in Alltagsgesprächen.",
+     "p": [
+      "Prämissen sind die Gründe, der Schluss ist das, was sie stützen sollen.",
+      "Wörter wie weil und da zeigen oft Prämissen, also und daher den Schluss.",
+      "Beispiel: Es regnet und ich habe keinen Schirm, also werde ich nass."
+     ],
+     "q": "Kannst du ein kurzes Argument mit zwei Prämissen bauen, warum Wochenenden wichtig sind?",
+     "c": "Finde heute einen Satz mit also oder daher und benenne seine Prämissen."
+    },
+    "es": {
+     "t": "Premisas y conclusiones",
+     "g": "Identifica las partes de un argumento en conversaciones cotidianas.",
+     "p": [
+      "Las premisas son las razones; la conclusión es lo que pretenden apoyar.",
+      "Palabras como porque y ya que suelen marcar premisas; así que y por tanto, conclusiones.",
+      "Ejemplo: llueve y no tengo paraguas, así que me voy a mojar."
+     ],
+     "q": "¿Puedes armar un argumento corto con dos premisas sobre por qué importan los fines de semana?",
+     "c": "Busca hoy una frase con así que o por tanto e identifica sus premisas."
+    },
+    "fr": {
+     "t": "Prémisses et conclusions",
+     "g": "Repérer les parties d'un argument dans les conversations de tous les jours.",
+     "p": [
+      "Les prémisses sont les raisons ; la conclusion est ce qu'elles doivent soutenir.",
+      "Parce que et puisque annoncent souvent des prémisses ; donc et alors, une conclusion.",
+      "Exemple : il pleut et je n'ai pas de parapluie, donc je vais être mouillé."
+     ],
+     "q": "Peux-tu construire un petit argument à deux prémisses sur l'importance du week-end ?",
+     "c": "Trouve aujourd'hui une phrase avec donc et nomme ses prémisses."
+    },
+    "it": {
+     "t": "Premesse e conclusioni",
+     "g": "Riconoscere le parti di un argomento nelle conversazioni di tutti i giorni.",
+     "p": [
+      "Le premesse sono le ragioni; la conclusione è ciò che devono sostenere.",
+      "Parole come perché e poiché segnalano premesse; quindi e dunque, conclusioni.",
+      "Esempio: piove e non ho l'ombrello, quindi mi bagnerò."
+     ],
+     "q": "Sai costruire un breve argomento con due premesse sul perché i weekend contano?",
+     "c": "Trova oggi una frase con quindi o dunque e individua le sue premesse."
+    },
+    "pt": {
+     "t": "Premissas e conclusões",
+     "g": "Identificar as partes de um argumento nas conversas do dia a dia.",
+     "p": [
+      "As premissas são as razões; a conclusão é o que elas pretendem apoiar.",
+      "Palavras como porque e visto que marcam premissas; logo e portanto, conclusões.",
+      "Exemplo: está a chover e não tenho guarda-chuva, logo vou ficar molhado."
+     ],
+     "q": "Consegues construir um argumento curto com duas premissas sobre porque importam os fins de semana?",
+     "c": "Encontra hoje uma frase com logo ou portanto e identifica as suas premissas."
+    },
+    "pt_BR": {
+     "t": "Premissas e conclusões",
+     "g": "Identificar as partes de um argumento nas conversas do dia a dia.",
+     "p": [
+      "Premissas são as razões; a conclusão é o que elas querem sustentar.",
+      "Palavras como porque e já que marcam premissas; então e portanto, conclusões.",
+      "Exemplo: está chovendo e estou sem guarda-chuva, então vou me molhar."
+     ],
+     "q": "Consegue montar um argumento curto com duas premissas sobre por que fins de semana importam?",
+     "c": "Encontre hoje uma frase com então ou portanto e identifique as premissas."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Good reasons, bad reasons",
+     "g": "Learn to tell relevant evidence apart from noise and distraction.",
+     "p": [
+      "A good reason is relevant, true and actually supports the conclusion.",
+      "Popularity, loudness or who says it are not proof on their own.",
+      "Ask: if this reason were false, would the conclusion still stand?"
+     ],
+     "q": "What is a bad reason you have heard for buying something?",
+     "c": "When you read a claim today, sort its reasons into relevant and just noise."
+    },
+    "de": {
+     "t": "Gute Gründe, schlechte Gründe",
+     "g": "Lerne, relevante Belege von Rauschen und Ablenkung zu unterscheiden.",
+     "p": [
+      "Ein guter Grund ist relevant, wahr und stützt den Schluss tatsächlich.",
+      "Beliebtheit, Lautstärke oder wer es sagt, sind allein kein Beweis.",
+      "Frag: Wenn dieser Grund falsch wäre, stünde der Schluss dann noch?"
+     ],
+     "q": "Welchen schlechten Grund für einen Kauf hast du schon gehört?",
+     "c": "Sortiere heute bei einer Behauptung die Gründe in relevant und bloßes Rauschen."
+    },
+    "es": {
+     "t": "Buenas razones, malas razones",
+     "g": "Aprende a distinguir la evidencia relevante del ruido y la distracción.",
+     "p": [
+      "Una buena razón es relevante, verdadera y realmente apoya la conclusión.",
+      "La popularidad, el volumen o quién lo dice no son prueba por sí solos.",
+      "Pregunta: si esta razón fuera falsa, ¿seguiría en pie la conclusión?"
+     ],
+     "q": "¿Qué mala razón para comprar algo has escuchado alguna vez?",
+     "c": "Cuando leas una afirmación hoy, separa sus razones en relevantes y puro ruido."
+    },
+    "fr": {
+     "t": "Bonnes et mauvaises raisons",
+     "g": "Apprendre à distinguer les preuves pertinentes du bruit et des distractions.",
+     "p": [
+      "Une bonne raison est pertinente, vraie et soutient vraiment la conclusion.",
+      "La popularité, le ton ou l'identité de l'orateur ne prouvent rien à eux seuls.",
+      "Demande-toi : si cette raison était fausse, la conclusion tiendrait-elle encore ?"
+     ],
+     "q": "Quelle mauvaise raison d'acheter quelque chose as-tu déjà entendue ?",
+     "c": "Face à une affirmation aujourd'hui, trie ses raisons : pertinentes ou simple bruit."
+    },
+    "it": {
+     "t": "Buone ragioni, cattive ragioni",
+     "g": "Imparare a distinguere le prove pertinenti dal rumore e dalle distrazioni.",
+     "p": [
+      "Una buona ragione è pertinente, vera e sostiene davvero la conclusione.",
+      "Popolarità, tono alto o chi lo dice non sono prove da soli.",
+      "Chiediti: se questa ragione fosse falsa, la conclusione reggerebbe ancora?"
+     ],
+     "q": "Qual è una cattiva ragione per comprare qualcosa che hai sentito?",
+     "c": "Quando leggi un'affermazione oggi, dividi le ragioni in pertinenti e semplice rumore."
+    },
+    "pt": {
+     "t": "Boas razões, más razões",
+     "g": "Aprender a distinguir provas relevantes de ruído e distração.",
+     "p": [
+      "Uma boa razão é relevante, verdadeira e apoia mesmo a conclusão.",
+      "A popularidade, o tom alto ou quem o diz não são prova por si só.",
+      "Pergunta: se esta razão fosse falsa, a conclusão ainda se mantinha?"
+     ],
+     "q": "Que má razão para comprar alguma coisa já ouviste?",
+     "c": "Quando leres uma afirmação hoje, separa as razões em relevantes e simples ruído."
+    },
+    "pt_BR": {
+     "t": "Boas razões, más razões",
+     "g": "Aprender a separar evidências relevantes de ruído e distração.",
+     "p": [
+      "Uma boa razão é relevante, verdadeira e sustenta de fato a conclusão.",
+      "Popularidade, falar alto ou quem diz não são prova sozinhos.",
+      "Pergunte: se essa razão fosse falsa, a conclusão ainda ficaria de pé?"
+     ],
+     "q": "Que razão ruim para comprar alguma coisa você já ouviu?",
+     "c": "Quando ler uma afirmação hoje, separe as razões em relevantes e puro ruído."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Listening charitably",
+     "g": "Practise understanding the strongest version of a view before judging it.",
+     "p": [
+      "The principle of charity means reading others in their most reasonable light.",
+      "Restate their view in your own words until they say yes, that is what I mean.",
+      "Disagreeing with a strong version teaches you far more than beating a weak one."
+     ],
+     "q": "Whose view do you find hard to understand, and what might its best version be?",
+     "c": "In one chat today, summarise the other person's point before you add yours."
+    },
+    "de": {
+     "t": "Wohlwollend zuhören",
+     "g": "Übe, die stärkste Version einer Ansicht zu verstehen, bevor du urteilst.",
+     "p": [
+      "Das Prinzip des Wohlwollens heißt, andere so vernünftig wie möglich zu deuten.",
+      "Gib ihre Sicht in eigenen Worten wieder, bis sie sagen: Ja, genau das meine ich.",
+      "Mit einer starken Version zu ringen lehrt mehr, als eine schwache zu besiegen."
+     ],
+     "q": "Wessen Ansicht verstehst du schwer, und wie sähe ihre beste Version aus?",
+     "c": "Fasse heute in einem Gespräch erst den Punkt des anderen zusammen, dann deinen."
+    },
+    "es": {
+     "t": "Escuchar con caridad",
+     "g": "Practica entender la versión más fuerte de una idea antes de juzgarla.",
+     "p": [
+      "El principio de caridad es interpretar a los demás de la forma más razonable.",
+      "Reformula su idea con tus palabras hasta que te digan sí, eso quiero decir.",
+      "Discutir con una versión fuerte enseña mucho más que vencer a una débil."
+     ],
+     "q": "¿Qué punto de vista te cuesta entender y cuál podría ser su mejor versión?",
+     "c": "En una charla de hoy, resume la idea del otro antes de dar la tuya."
+    },
+    "fr": {
+     "t": "Écouter avec bienveillance",
+     "g": "S'exercer à comprendre la meilleure version d'un avis avant de le juger.",
+     "p": [
+      "Le principe de charité consiste à lire les autres sous leur jour le plus raisonnable.",
+      "Reformule leur idée avec tes mots jusqu'à ce qu'ils disent : oui, c'est ça.",
+      "Discuter une version forte apprend bien plus que battre une version faible."
+     ],
+     "q": "Quel point de vue as-tu du mal à comprendre, et quelle serait sa meilleure version ?",
+     "c": "Dans une discussion aujourd'hui, résume l'idée de l'autre avant d'ajouter la tienne."
+    },
+    "it": {
+     "t": "Ascoltare con carità",
+     "g": "Esercitarsi a capire la versione più forte di un'idea prima di giudicarla.",
+     "p": [
+      "Il principio di carità significa interpretare gli altri nel modo più ragionevole.",
+      "Riformula la loro idea con parole tue finché ti dicono sì, intendo proprio questo.",
+      "Confrontarsi con una versione forte insegna molto più che battere una debole."
+     ],
+     "q": "Quale punto di vista fai fatica a capire, e quale sarebbe la sua versione migliore?",
+     "c": "In una conversazione oggi, riassumi l'idea dell'altro prima di dire la tua."
+    },
+    "pt": {
+     "t": "Ouvir com caridade",
+     "g": "Praticar compreender a versão mais forte de uma ideia antes de a julgar.",
+     "p": [
+      "O princípio da caridade é interpretar os outros da forma mais razoável.",
+      "Reformula a ideia deles por palavras tuas até dizerem sim, é isso mesmo.",
+      "Discutir com uma versão forte ensina muito mais do que vencer uma fraca."
+     ],
+     "q": "Que ponto de vista tens dificuldade em compreender e qual seria a sua melhor versão?",
+     "c": "Numa conversa hoje, resume a ideia do outro antes de dares a tua."
+    },
+    "pt_BR": {
+     "t": "Ouvir com caridade",
+     "g": "Praticar entender a versão mais forte de uma ideia antes de julgá-la.",
+     "p": [
+      "O princípio da caridade é interpretar os outros do jeito mais razoável possível.",
+      "Reformule a ideia da pessoa com suas palavras até ela dizer sim, é isso mesmo.",
+      "Discutir com uma versão forte ensina muito mais do que vencer uma fraca."
+     ],
+     "q": "Que ponto de vista você tem dificuldade de entender e qual seria a melhor versão dele?",
+     "c": "Em uma conversa hoje, resuma a ideia do outro antes de dar a sua."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Plato's cave",
+     "g": "Explore Plato's allegory of shadows and light about seeing reality more clearly.",
+     "p": [
+      "Prisoners in a cave see only shadows on a wall and think they are real.",
+      "One is freed, sees the fire and then the sunlit world outside.",
+      "For Plato, learning is this slow journey from shadows towards a clearer view."
+     ],
+     "q": "What is a shadow you once mistook for the full picture?",
+     "c": "Check one thing you assume today by looking at a second source or viewpoint."
+    },
+    "de": {
+     "t": "Platons Höhle",
+     "g": "Entdecke Platons Gleichnis von Schatten und Licht über klareres Sehen der Wirklichkeit.",
+     "p": [
+      "Gefangene in einer Höhle sehen nur Schatten an der Wand und halten sie für wirklich.",
+      "Einer wird befreit, sieht das Feuer und dann die sonnige Welt draußen.",
+      "Für Platon ist Lernen diese langsame Reise von den Schatten zu klarerer Sicht."
+     ],
+     "q": "Welchen Schatten hast du einmal für das ganze Bild gehalten?",
+     "c": "Prüfe heute eine Annahme mit einer zweiten Quelle oder Sichtweise."
+    },
+    "es": {
+     "t": "La caverna de Platón",
+     "g": "Explora la alegoría de Platón sobre sombras y luz para ver la realidad con más claridad.",
+     "p": [
+      "Unos prisioneros en una cueva solo ven sombras en la pared y creen que son reales.",
+      "Uno es liberado, ve el fuego y luego el mundo soleado de fuera.",
+      "Para Platón, aprender es ese lento viaje de las sombras hacia una visión más clara."
+     ],
+     "q": "¿Qué sombra tomaste alguna vez por la imagen completa?",
+     "c": "Comprueba hoy algo que das por hecho con una segunda fuente o punto de vista."
+    },
+    "fr": {
+     "t": "La caverne de Platon",
+     "g": "Explorer l'allégorie de Platon, entre ombres et lumière, pour mieux voir la réalité.",
+     "p": [
+      "Des prisonniers dans une caverne ne voient que des ombres et les croient réelles.",
+      "L'un d'eux est libéré, voit le feu, puis le monde ensoleillé au-dehors.",
+      "Pour Platon, apprendre est ce lent voyage des ombres vers une vue plus claire."
+     ],
+     "q": "Quelle ombre as-tu un jour prise pour l'image complète ?",
+     "c": "Vérifie aujourd'hui une de tes certitudes avec une seconde source ou un autre regard."
+    },
+    "it": {
+     "t": "La caverna di Platone",
+     "g": "Esplorare l'allegoria di Platone su ombre e luce per vedere la realtà più chiaramente.",
+     "p": [
+      "Dei prigionieri in una caverna vedono solo ombre sul muro e le credono reali.",
+      "Uno viene liberato, vede il fuoco e poi il mondo illuminato dal sole.",
+      "Per Platone imparare è questo lento viaggio dalle ombre a una visione più chiara."
+     ],
+     "q": "Quale ombra hai scambiato una volta per il quadro completo?",
+     "c": "Verifica oggi una tua convinzione con una seconda fonte o un altro punto di vista."
+    },
+    "pt": {
+     "t": "A caverna de Platão",
+     "g": "Explorar a alegoria de Platão sobre sombras e luz para ver a realidade com mais clareza.",
+     "p": [
+      "Prisioneiros numa caverna só veem sombras na parede e julgam que são reais.",
+      "Um é libertado, vê o fogo e depois o mundo cheio de sol lá fora.",
+      "Para Platão, aprender é essa lenta viagem das sombras para uma visão mais clara."
+     ],
+     "q": "Que sombra já tomaste pela imagem completa?",
+     "c": "Verifica hoje algo que dás por certo com uma segunda fonte ou outro ponto de vista."
+    },
+    "pt_BR": {
+     "t": "A caverna de Platão",
+     "g": "Explorar a alegoria de Platão sobre sombras e luz para ver a realidade com mais clareza.",
+     "p": [
+      "Prisioneiros numa caverna só veem sombras na parede e acham que são reais.",
+      "Um deles é libertado, vê o fogo e depois o mundo ensolarado lá fora.",
+      "Para Platão, aprender é essa viagem lenta das sombras para uma visão mais clara."
+     ],
+     "q": "Que sombra você já confundiu com a imagem completa?",
+     "c": "Confira hoje algo que você dá como certo com uma segunda fonte ou outro ponto de vista."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Plato's world of forms",
+     "g": "Meet Plato's idea of perfect forms like justice and beauty behind everyday things.",
+     "p": [
+      "No drawn circle is perfect, yet we all understand the idea of a perfect circle.",
+      "Plato called these perfect ideas forms and thought they were more real than copies.",
+      "In the cave story, the forms are like the sunlit world outside."
+     ],
+     "q": "Is there an idea, like fairness, you understand even without a perfect example?",
+     "c": "Find three different chairs today and name what makes all of them chairs."
+    },
+    "de": {
+     "t": "Platons Welt der Ideen",
+     "g": "Lerne Platons Gedanken vollkommener Ideen wie Gerechtigkeit und Schönheit kennen.",
+     "p": [
+      "Kein gezeichneter Kreis ist perfekt, doch alle verstehen die Idee des perfekten Kreises.",
+      "Platon nannte solche vollkommenen Urbilder Ideen und hielt sie für wirklicher als Abbilder.",
+      "Im Höhlengleichnis entsprechen die Ideen der sonnigen Welt draußen."
+     ],
+     "q": "Gibt es eine Idee wie Fairness, die du ohne perfektes Beispiel verstehst?",
+     "c": "Such heute drei verschiedene Stühle und benenne, was sie alle zu Stühlen macht."
+    },
+    "es": {
+     "t": "El mundo de las ideas de Platón",
+     "g": "Conoce la idea platónica de formas perfectas, como la justicia o la belleza, tras las cosas.",
+     "p": [
+      "Ningún círculo dibujado es perfecto, pero todos entendemos la idea de círculo perfecto.",
+      "Platón llamó formas o ideas a estos modelos perfectos y los creía más reales que las copias.",
+      "En el relato de la caverna, las ideas son como el mundo soleado de fuera."
+     ],
+     "q": "¿Hay una idea, como la justicia, que entiendes sin un ejemplo perfecto?",
+     "c": "Busca hoy tres sillas distintas y di qué hace que todas sean sillas."
+    },
+    "fr": {
+     "t": "Le monde des Idées de Platon",
+     "g": "Découvrir l'idée platonicienne de formes parfaites, comme la justice ou la beauté.",
+     "p": [
+      "Aucun cercle dessiné n'est parfait, et pourtant nous comprenons l'idée du cercle parfait.",
+      "Platon appelait ces modèles parfaits Idées ou Formes, plus réelles selon lui que les copies.",
+      "Dans l'allégorie de la caverne, les Idées sont comme le monde ensoleillé."
+     ],
+     "q": "Y a-t-il une idée, comme l'équité, que tu comprends sans exemple parfait ?",
+     "c": "Trouve aujourd'hui trois chaises différentes et dis ce qui en fait des chaises."
+    },
+    "it": {
+     "t": "Il mondo delle idee di Platone",
+     "g": "Conoscere l'idea platonica di forme perfette, come giustizia e bellezza, dietro le cose.",
+     "p": [
+      "Nessun cerchio disegnato è perfetto, eppure capiamo l'idea di cerchio perfetto.",
+      "Platone chiamò idee questi modelli perfetti e li riteneva più reali delle copie.",
+      "Nel mito della caverna, le idee sono come il mondo illuminato dal sole."
+     ],
+     "q": "C'è un'idea, come l'equità, che capisci anche senza un esempio perfetto?",
+     "c": "Trova oggi tre sedie diverse e di' cosa le rende tutte sedie."
+    },
+    "pt": {
+     "t": "O mundo das ideias de Platão",
+     "g": "Conhecer a ideia platónica de formas perfeitas, como a justiça e a beleza, por trás das coisas.",
+     "p": [
+      "Nenhum círculo desenhado é perfeito, mas todos percebemos a ideia de círculo perfeito.",
+      "Platão chamou ideias ou formas a estes modelos perfeitos e achava-os mais reais que as cópias.",
+      "Na alegoria da caverna, as ideias são como o mundo cheio de sol lá fora."
+     ],
+     "q": "Há alguma ideia, como a justiça, que compreendes sem um exemplo perfeito?",
+     "c": "Encontra hoje três cadeiras diferentes e diz o que faz delas cadeiras."
+    },
+    "pt_BR": {
+     "t": "O mundo das ideias de Platão",
+     "g": "Conhecer a ideia platônica de formas perfeitas, como justiça e beleza, por trás das coisas.",
+     "p": [
+      "Nenhum círculo desenhado é perfeito, mas todos entendemos a ideia de círculo perfeito.",
+      "Platão chamou de ideias ou formas esses modelos perfeitos e os achava mais reais que as cópias.",
+      "Na alegoria da caverna, as ideias são como o mundo ensolarado lá fora."
+     ],
+     "q": "Existe uma ideia, como justiça, que você entende sem um exemplo perfeito?",
+     "c": "Encontre hoje três cadeiras diferentes e diga o que faz de todas elas cadeiras."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Aristotle the observer",
+     "g": "Meet Aristotle, who studied everything from logic and ethics to plants and animals.",
+     "p": [
+      "Aristotle was Plato's student but looked for truth in the things around us.",
+      "He wrote on logic, ethics, poetry and biology, and studied many sea creatures closely.",
+      "His motto in practice: observe carefully, sort what you see, then reason."
+     ],
+     "q": "What would you love to observe closely for a week, like birds or the sky?",
+     "c": "Observe one living thing for three minutes and note five details you never noticed."
+    },
+    "de": {
+     "t": "Aristoteles, der Beobachter",
+     "g": "Lerne Aristoteles kennen, der von Logik und Ethik bis zu Pflanzen und Tieren alles erforschte.",
+     "p": [
+      "Aristoteles war Platons Schüler, suchte die Wahrheit aber in den Dingen um uns.",
+      "Er schrieb über Logik, Ethik, Dichtung und Biologie und untersuchte viele Meerestiere.",
+      "Sein Vorgehen: genau beobachten, ordnen, dann nachdenken."
+     ],
+     "q": "Was würdest du gern eine Woche lang genau beobachten, etwa Vögel oder den Himmel?",
+     "c": "Beobachte drei Minuten ein Lebewesen und notiere fünf Details, die dir neu sind."
+    },
+    "es": {
+     "t": "Aristóteles, el observador",
+     "g": "Conoce a Aristóteles, que estudió de todo, de la lógica y la ética a plantas y animales.",
+     "p": [
+      "Aristóteles fue alumno de Platón, pero buscó la verdad en las cosas que nos rodean.",
+      "Escribió sobre lógica, ética, poesía y biología, y estudió de cerca muchos animales marinos.",
+      "Su método en la práctica: observar con cuidado, clasificar y luego razonar."
+     ],
+     "q": "¿Qué te encantaría observar de cerca durante una semana, como aves o el cielo?",
+     "c": "Observa un ser vivo tres minutos y anota cinco detalles que nunca habías notado."
+    },
+    "fr": {
+     "t": "Aristote l'observateur",
+     "g": "Rencontrer Aristote, qui a tout étudié, de la logique et l'éthique aux plantes et animaux.",
+     "p": [
+      "Élève de Platon, Aristote cherchait pourtant la vérité dans les choses qui nous entourent.",
+      "Il a écrit sur la logique, l'éthique, la poésie et la biologie, observant de nombreux animaux marins.",
+      "Sa méthode : observer avec soin, classer ce qu'on voit, puis raisonner."
+     ],
+     "q": "Qu'aimerais-tu observer de près pendant une semaine, les oiseaux ou le ciel ?",
+     "c": "Observe un être vivant trois minutes et note cinq détails jamais remarqués."
+    },
+    "it": {
+     "t": "Aristotele l'osservatore",
+     "g": "Conoscere Aristotele, che studiò di tutto, dalla logica e l'etica a piante e animali.",
+     "p": [
+      "Aristotele fu allievo di Platone, ma cercò la verità nelle cose intorno a noi.",
+      "Scrisse di logica, etica, poesia e biologia e studiò da vicino molti animali marini.",
+      "Il suo metodo: osservare con cura, classificare ciò che si vede, poi ragionare."
+     ],
+     "q": "Cosa ti piacerebbe osservare da vicino per una settimana, come uccelli o cielo?",
+     "c": "Osserva un essere vivente per tre minuti e annota cinque dettagli mai notati."
+    },
+    "pt": {
+     "t": "Aristóteles, o observador",
+     "g": "Conhecer Aristóteles, que estudou tudo, da lógica e da ética às plantas e animais.",
+     "p": [
+      "Aristóteles foi aluno de Platão, mas procurou a verdade nas coisas à nossa volta.",
+      "Escreveu sobre lógica, ética, poesia e biologia e estudou de perto muitos animais marinhos.",
+      "O seu método: observar com cuidado, classificar o que se vê e depois raciocinar."
+     ],
+     "q": "O que gostarias de observar de perto durante uma semana, como aves ou o céu?",
+     "c": "Observa um ser vivo durante três minutos e anota cinco detalhes que nunca notaste."
+    },
+    "pt_BR": {
+     "t": "Aristóteles, o observador",
+     "g": "Conhecer Aristóteles, que estudou de tudo, da lógica e da ética a plantas e animais.",
+     "p": [
+      "Aristóteles foi aluno de Platão, mas buscou a verdade nas coisas ao nosso redor.",
+      "Escreveu sobre lógica, ética, poesia e biologia e estudou de perto muitos animais marinhos.",
+      "O método dele: observar com cuidado, classificar o que vê e depois raciocinar."
+     ],
+     "q": "O que você adoraria observar de perto por uma semana, como pássaros ou o céu?",
+     "c": "Observe um ser vivo por três minutos e anote cinco detalhes que nunca tinha notado."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Aristotle's golden mean",
+     "g": "Understand virtue as a balance between too much and too little.",
+     "p": [
+      "Courage sits between cowardice, too little, and recklessness, too much.",
+      "The mean is not always the exact middle; it depends on the person and the situation.",
+      "Aristotle compared it to finding the right amount of food for a healthy body."
+     ],
+     "q": "Which quality of yours sometimes goes too far, and what would the balance look like?",
+     "c": "Pick one trait, like honesty, and write what too little, too much and just right look like."
+    },
+    "de": {
+     "t": "Aristoteles' goldene Mitte",
+     "g": "Verstehe Tugend als Gleichgewicht zwischen zu viel und zu wenig.",
+     "p": [
+      "Mut liegt zwischen Feigheit, zu wenig, und Tollkühnheit, zu viel.",
+      "Die Mitte ist nicht immer die genaue Hälfte, sie hängt von Person und Lage ab.",
+      "Aristoteles verglich sie mit der richtigen Menge Essen für einen gesunden Körper."
+     ],
+     "q": "Welche deiner Eigenschaften geht manchmal zu weit, und wie sähe die Balance aus?",
+     "c": "Nimm eine Eigenschaft wie Ehrlichkeit und notiere zu wenig, zu viel und genau richtig."
+    },
+    "es": {
+     "t": "El justo medio de Aristóteles",
+     "g": "Entiende la virtud como un equilibrio entre el exceso y el defecto.",
+     "p": [
+      "La valentía está entre la cobardía, el defecto, y la temeridad, el exceso.",
+      "El término medio no siempre es la mitad exacta; depende de la persona y la situación.",
+      "Aristóteles lo comparaba con la cantidad justa de comida para un cuerpo sano."
+     ],
+     "q": "¿Qué cualidad tuya a veces se pasa de la raya y cómo sería el equilibrio?",
+     "c": "Elige un rasgo, como la sinceridad, y escribe cómo sería el defecto, el exceso y el punto justo."
+    },
+    "fr": {
+     "t": "Le juste milieu d'Aristote",
+     "g": "Comprendre la vertu comme un équilibre entre le trop et le trop peu.",
+     "p": [
+      "Le courage se situe entre la lâcheté, trop peu, et la témérité, trop.",
+      "Le juste milieu n'est pas toujours le centre exact ; il dépend de la personne et de la situation.",
+      "Aristote le comparait à la bonne quantité de nourriture pour un corps en forme."
+     ],
+     "q": "Quelle qualité chez toi va parfois trop loin, et à quoi ressemblerait l'équilibre ?",
+     "c": "Choisis un trait, comme l'honnêteté, et décris le trop peu, le trop et le juste."
+    },
+    "it": {
+     "t": "Il giusto mezzo di Aristotele",
+     "g": "Capire la virtù come equilibrio tra il troppo e il troppo poco.",
+     "p": [
+      "Il coraggio sta tra la viltà, troppo poco, e la temerarietà, troppo.",
+      "Il giusto mezzo non è sempre la metà esatta; dipende dalla persona e dalla situazione.",
+      "Aristotele lo paragonava alla giusta quantità di cibo per un corpo sano."
+     ],
+     "q": "Quale tua qualità a volte esagera, e come sarebbe l'equilibrio?",
+     "c": "Scegli un tratto, come la sincerità, e scrivi il troppo poco, il troppo e il giusto."
+    },
+    "pt": {
+     "t": "O justo meio de Aristóteles",
+     "g": "Compreender a virtude como um equilíbrio entre o excesso e a falta.",
+     "p": [
+      "A coragem fica entre a cobardia, a falta, e a temeridade, o excesso.",
+      "O meio-termo nem sempre é o centro exato; depende da pessoa e da situação.",
+      "Aristóteles comparava-o à quantidade certa de comida para um corpo saudável."
+     ],
+     "q": "Que qualidade tua às vezes vai longe demais e como seria o equilíbrio?",
+     "c": "Escolhe um traço, como a honestidade, e escreve a falta, o excesso e a medida certa."
+    },
+    "pt_BR": {
+     "t": "O justo meio de Aristóteles",
+     "g": "Entender a virtude como um equilíbrio entre o excesso e a falta.",
+     "p": [
+      "A coragem fica entre a covardia, a falta, e a imprudência, o excesso.",
+      "O meio-termo nem sempre é o centro exato; depende da pessoa e da situação.",
+      "Aristóteles comparava com a quantidade certa de comida para um corpo saudável."
+     ],
+     "q": "Que qualidade sua às vezes passa do ponto e como seria o equilíbrio?",
+     "c": "Escolha um traço, como a honestidade, e escreva a falta, o excesso e a medida certa."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Virtues in daily life",
+     "g": "See how courage, honesty and generosity show up in ordinary situations.",
+     "p": [
+      "Courage can be speaking up in a meeting or trying something new.",
+      "Honesty can be admitting a small mistake before anyone notices.",
+      "Aristotle said we become virtuous by practice, like learning an instrument."
+     ],
+     "q": "Which everyday virtue would you most like to practise this month?",
+     "c": "Do one small brave, honest or generous thing today and notice how it feels."
+    },
+    "de": {
+     "t": "Tugenden im Alltag",
+     "g": "Sieh, wie Mut, Ehrlichkeit und Großzügigkeit in gewöhnlichen Situationen auftauchen.",
+     "p": [
+      "Mut kann heißen, im Meeting etwas zu sagen oder etwas Neues zu probieren.",
+      "Ehrlichkeit kann heißen, einen kleinen Fehler zuzugeben, bevor ihn jemand merkt.",
+      "Aristoteles sagte, wir werden tugendhaft durch Übung, wie beim Erlernen eines Instruments."
+     ],
+     "q": "Welche Alltagstugend möchtest du diesen Monat am liebsten üben?",
+     "c": "Tu heute eine kleine mutige, ehrliche oder großzügige Sache und spür nach."
+    },
+    "es": {
+     "t": "Virtudes en la vida diaria",
+     "g": "Descubre cómo la valentía, la honestidad y la generosidad aparecen en lo cotidiano.",
+     "p": [
+      "La valentía puede ser hablar en una reunión o probar algo nuevo.",
+      "La honestidad puede ser admitir un pequeño error antes de que nadie lo note.",
+      "Aristóteles decía que nos volvemos virtuosos practicando, como al aprender un instrumento."
+     ],
+     "q": "¿Qué virtud cotidiana te gustaría practicar más este mes?",
+     "c": "Haz hoy algo pequeño valiente, honesto o generoso y observa cómo te sientes."
+    },
+    "fr": {
+     "t": "Les vertus au quotidien",
+     "g": "Voir comment le courage, l'honnêteté et la générosité se montrent au quotidien.",
+     "p": [
+      "Le courage, c'est parfois prendre la parole en réunion ou essayer du nouveau.",
+      "L'honnêteté, c'est parfois avouer une petite erreur avant qu'on la remarque.",
+      "Aristote disait qu'on devient vertueux par la pratique, comme on apprend un instrument."
+     ],
+     "q": "Quelle vertu du quotidien aimerais-tu le plus pratiquer ce mois-ci ?",
+     "c": "Fais aujourd'hui un petit geste courageux, honnête ou généreux et observe ce que tu ressens."
+    },
+    "it": {
+     "t": "Le virtù nella vita quotidiana",
+     "g": "Vedere come coraggio, onestà e generosità compaiono nelle situazioni di ogni giorno.",
+     "p": [
+      "Il coraggio può essere parlare in una riunione o provare qualcosa di nuovo.",
+      "L'onestà può essere ammettere un piccolo errore prima che qualcuno se ne accorga.",
+      "Aristotele diceva che diventiamo virtuosi con la pratica, come imparando uno strumento."
+     ],
+     "q": "Quale virtù quotidiana vorresti allenare di più questo mese?",
+     "c": "Fai oggi una piccola cosa coraggiosa, onesta o generosa e nota come ti senti."
+    },
+    "pt": {
+     "t": "Virtudes no dia a dia",
+     "g": "Ver como a coragem, a honestidade e a generosidade aparecem em situações comuns.",
+     "p": [
+      "Coragem pode ser falar numa reunião ou experimentar algo novo.",
+      "Honestidade pode ser admitir um pequeno erro antes que alguém repare.",
+      "Aristóteles dizia que nos tornamos virtuosos pela prática, como ao aprender um instrumento."
+     ],
+     "q": "Que virtude do dia a dia gostarias mais de praticar este mês?",
+     "c": "Faz hoje uma pequena coisa corajosa, honesta ou generosa e repara como te sentes."
+    },
+    "pt_BR": {
+     "t": "Virtudes no dia a dia",
+     "g": "Ver como coragem, honestidade e generosidade aparecem em situações comuns.",
+     "p": [
+      "Coragem pode ser falar numa reunião ou experimentar algo novo.",
+      "Honestidade pode ser admitir um pequeno erro antes que alguém perceba.",
+      "Aristóteles dizia que nos tornamos virtuosos pela prática, como ao aprender um instrumento."
+     ],
+     "q": "Que virtude do dia a dia você mais gostaria de praticar este mês?",
+     "c": "Faça hoje uma pequena coisa corajosa, honesta ou generosa e repare como se sente."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "apps_productivity",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Email basics done well",
+     "g": "Write clear subject lines and short messages, one topic per email.",
+     "p": [
+      "A good subject line says what the email is about and what you need.",
+      "Keep messages short: greeting, the point, the request, a thanks.",
+      "One topic per email makes replies and searching much easier."
+     ],
+     "q": "What makes an email easy or hard for you to answer?",
+     "c": "Rewrite the subject line of one email you plan to send so it is clearer."
+    },
+    "de": {
+     "t": "E-Mail-Grundlagen richtig gemacht",
+     "g": "Schreibe klare Betreffzeilen und kurze Nachrichten, ein Thema pro Mail.",
+     "p": [
+      "Eine gute Betreffzeile sagt, worum es geht und was du brauchst.",
+      "Halte Nachrichten kurz: Gruß, Kernpunkt, Bitte, Dank.",
+      "Ein Thema pro Mail erleichtert Antworten und Suchen enorm."
+     ],
+     "q": "Was macht eine Mail für dich leicht oder schwer zu beantworten?",
+     "c": "Schreibe die Betreffzeile einer geplanten Mail so um, dass sie klarer ist."
+    },
+    "es": {
+     "t": "Lo básico del correo bien hecho",
+     "g": "Escribe asuntos claros y mensajes breves, un tema por correo.",
+     "p": [
+      "Un buen asunto dice de qué trata el correo y qué necesitas.",
+      "Mensajes cortos: saludo, el punto, la petición y un gracias.",
+      "Un tema por correo facilita responder y buscar."
+     ],
+     "q": "¿Qué hace que un correo te resulte fácil o difícil de contestar?",
+     "c": "Reescribe el asunto de un correo que vayas a enviar para que sea más claro."
+    },
+    "fr": {
+     "t": "Les bases de l'e-mail bien faites",
+     "g": "Rédige des objets clairs et des messages courts, un sujet par e-mail.",
+     "p": [
+      "Un bon objet dit de quoi parle le message et ce dont tu as besoin.",
+      "Messages courts : salutation, l'essentiel, la demande, un merci.",
+      "Un sujet par e-mail facilite les réponses et la recherche."
+     ],
+     "q": "Qu'est-ce qui rend un e-mail facile ou difficile à traiter pour toi ?",
+     "c": "Réécris l'objet d'un e-mail à envoyer pour le rendre plus clair."
+    },
+    "it": {
+     "t": "Le basi dell'e-mail fatte bene",
+     "g": "Scrivi oggetti chiari e messaggi brevi, un tema per e-mail.",
+     "p": [
+      "Un buon oggetto dice di cosa parla l'e-mail e cosa ti serve.",
+      "Messaggi brevi: saluto, il punto, la richiesta, un grazie.",
+      "Un tema per e-mail rende più facili risposte e ricerca."
+     ],
+     "q": "Cosa rende un'e-mail facile o difficile da rispondere per te?",
+     "c": "Riscrivi l'oggetto di un'e-mail da inviare per renderlo più chiaro."
+    },
+    "pt": {
+     "t": "O básico do e-mail bem feito",
+     "g": "Escreve assuntos claros e mensagens curtas, um tema por e-mail.",
+     "p": [
+      "Um bom assunto diz do que trata o e-mail e o que precisas.",
+      "Mensagens curtas: saudação, o ponto, o pedido e um obrigado.",
+      "Um tema por e-mail facilita as respostas e a pesquisa."
+     ],
+     "q": "O que torna um e-mail fácil ou difícil de responder para ti?",
+     "c": "Reescreve o assunto de um e-mail que vás enviar para ficar mais claro."
+    },
+    "pt_BR": {
+     "t": "O básico do e-mail bem feito",
+     "g": "Escreva assuntos claros e mensagens curtas, um tema por e-mail.",
+     "p": [
+      "Um bom assunto diz do que trata o e-mail e o que você precisa.",
+      "Mensagens curtas: saudação, o ponto, o pedido e um obrigado.",
+      "Um tema por e-mail facilita as respostas e a busca."
+     ],
+     "q": "O que torna um e-mail fácil ou difícil de responder para você?",
+     "c": "Reescreva o assunto de um e-mail que vai enviar para ficar mais claro."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Inbox zero as a habit",
+     "g": "Process mail into reply, do, delegate, archive or delete.",
+     "p": [
+      "Inbox zero means an empty inbox as a place to decide, not a storage room.",
+      "For each email choose: reply now, schedule it, pass it on, archive or delete.",
+      "If it takes two minutes, do it right away."
+     ],
+     "q": "How many emails sit in your inbox, and how do you feel about that?",
+     "c": "Process twenty emails using reply, do, delegate, archive or delete."
+    },
+    "de": {
+     "t": "Inbox Zero als Gewohnheit",
+     "g": "Bearbeite Mails per Antworten, Erledigen, Delegieren, Archivieren oder Löschen.",
+     "p": [
+      "Inbox Zero heißt: Der Posteingang ist ein Ort zum Entscheiden, kein Lager.",
+      "Wähle pro Mail: jetzt antworten, einplanen, weitergeben, archivieren oder löschen.",
+      "Dauert es zwei Minuten, erledige es sofort."
+     ],
+     "q": "Wie viele Mails liegen in deinem Posteingang, und wie fühlt sich das an?",
+     "c": "Bearbeite zwanzig Mails nach Antworten, Erledigen, Delegieren, Archivieren oder Löschen."
+    },
+    "es": {
+     "t": "Bandeja a cero como hábito",
+     "g": "Procesa el correo: responder, hacer, delegar, archivar o borrar.",
+     "p": [
+      "Bandeja a cero significa usarla para decidir, no como trastero.",
+      "Para cada correo elige: responder ya, programar, pasar, archivar o borrar.",
+      "Si lleva dos minutos, hazlo al momento."
+     ],
+     "q": "¿Cuántos correos hay en tu bandeja y cómo te sientes con eso?",
+     "c": "Procesa veinte correos con responder, hacer, delegar, archivar o borrar."
+    },
+    "fr": {
+     "t": "Boîte de réception à zéro en habitude",
+     "g": "Traite le courrier : répondre, faire, déléguer, archiver ou supprimer.",
+     "p": [
+      "Boîte à zéro veut dire un lieu pour décider, pas un débarras.",
+      "Pour chaque e-mail, choisis : répondre, planifier, transmettre, archiver ou supprimer.",
+      "Si cela prend deux minutes, fais-le tout de suite."
+     ],
+     "q": "Combien d'e-mails dorment dans ta boîte, et qu'en ressens-tu ?",
+     "c": "Traite vingt e-mails avec répondre, faire, déléguer, archiver ou supprimer."
+    },
+    "it": {
+     "t": "Posta in arrivo a zero come abitudine",
+     "g": "Gestisci la posta: rispondere, fare, delegare, archiviare o eliminare.",
+     "p": [
+      "Posta a zero significa usarla per decidere, non come ripostiglio.",
+      "Per ogni e-mail scegli: rispondere subito, pianificare, passare, archiviare o eliminare.",
+      "Se richiede due minuti, fallo subito."
+     ],
+     "q": "Quante e-mail ci sono nella tua posta e come ti senti?",
+     "c": "Gestisci venti e-mail con rispondere, fare, delegare, archiviare o eliminare."
+    },
+    "pt": {
+     "t": "Caixa de entrada a zero como hábito",
+     "g": "Processa o correio: responder, fazer, delegar, arquivar ou apagar.",
+     "p": [
+      "Caixa a zero significa usá-la para decidir, não como arrecadação.",
+      "Em cada e-mail escolhe: responder já, agendar, passar, arquivar ou apagar.",
+      "Se demorar dois minutos, faz logo."
+     ],
+     "q": "Quantos e-mails há na tua caixa e como te sentes com isso?",
+     "c": "Processa vinte e-mails com responder, fazer, delegar, arquivar ou apagar."
+    },
+    "pt_BR": {
+     "t": "Caixa de entrada zerada como hábito",
+     "g": "Processe o correio: responder, fazer, delegar, arquivar ou apagar.",
+     "p": [
+      "Caixa zerada significa usá-la para decidir, não como depósito.",
+      "Em cada e-mail escolha: responder já, agendar, passar adiante, arquivar ou apagar.",
+      "Se levar dois minutos, faça logo."
+     ],
+     "q": "Quantos e-mails há na sua caixa e como você se sente com isso?",
+     "c": "Processe vinte e-mails com responder, fazer, delegar, arquivar ou apagar."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Folders, labels and archiving",
+     "g": "Archive generously and rely on search instead of deep folder trees.",
+     "p": [
+      "Archiving removes mail from the inbox but keeps it searchable.",
+      "A few labels or folders, like Bills or Travel, are plenty.",
+      "Modern search finds a sender or word faster than browsing folders."
+     ],
+     "q": "Do you file emails in folders or just search when you need them?",
+     "c": "Create two labels and archive ten emails you have already dealt with."
+    },
+    "de": {
+     "t": "Ordner, Labels und Archivieren",
+     "g": "Archiviere großzügig und verlass dich auf die Suche statt auf tiefe Ordnerbäume.",
+     "p": [
+      "Archivieren nimmt Mails aus dem Posteingang, lässt sie aber durchsuchbar.",
+      "Wenige Labels oder Ordner wie Rechnungen oder Reisen reichen völlig.",
+      "Moderne Suche findet Absender oder Wort schneller als Blättern in Ordnern."
+     ],
+     "q": "Sortierst du Mails in Ordner oder suchst du einfach, wenn du sie brauchst?",
+     "c": "Lege zwei Labels an und archiviere zehn bereits erledigte Mails."
+    },
+    "es": {
+     "t": "Carpetas, etiquetas y archivo",
+     "g": "Archiva con generosidad y confía en la búsqueda en vez de árboles de carpetas.",
+     "p": [
+      "Archivar saca el correo de la bandeja pero lo deja buscable.",
+      "Unas pocas etiquetas o carpetas, como Facturas o Viajes, bastan.",
+      "La búsqueda actual halla un remitente o palabra antes que navegar carpetas."
+     ],
+     "q": "¿Clasificas el correo en carpetas o solo buscas cuando lo necesitas?",
+     "c": "Crea dos etiquetas y archiva diez correos que ya hayas resuelto."
+    },
+    "fr": {
+     "t": "Dossiers, libellés et archivage",
+     "g": "Archive sans compter et fie-toi à la recherche plutôt qu'à des arborescences profondes.",
+     "p": [
+      "Archiver retire le courrier de la boîte mais le garde consultable.",
+      "Quelques libellés ou dossiers, comme Factures ou Voyages, suffisent.",
+      "La recherche moderne trouve un expéditeur ou un mot plus vite que les dossiers."
+     ],
+     "q": "Classes-tu tes e-mails en dossiers ou cherches-tu au besoin ?",
+     "c": "Crée deux libellés et archive dix e-mails déjà traités."
+    },
+    "it": {
+     "t": "Cartelle, etichette e archiviazione",
+     "g": "Archivia con generosità e affidati alla ricerca invece di alberi profondi di cartelle.",
+     "p": [
+      "Archiviare toglie la posta dalla casella ma la lascia ricercabile.",
+      "Poche etichette o cartelle, come Bollette o Viaggi, bastano.",
+      "La ricerca moderna trova un mittente o una parola prima di sfogliare cartelle."
+     ],
+     "q": "Sistemi le e-mail in cartelle o cerchi solo quando servono?",
+     "c": "Crea due etichette e archivia dieci e-mail già gestite."
+    },
+    "pt": {
+     "t": "Pastas, etiquetas e arquivo",
+     "g": "Arquiva à vontade e confia na pesquisa em vez de árvores de pastas profundas.",
+     "p": [
+      "Arquivar tira o e-mail da caixa mas deixa-o pesquisável.",
+      "Poucas etiquetas ou pastas, como Contas ou Viagens, chegam.",
+      "A pesquisa moderna acha um remetente ou palavra mais depressa do que as pastas."
+     ],
+     "q": "Arrumas os e-mails em pastas ou só pesquisas quando precisas?",
+     "c": "Cria duas etiquetas e arquiva dez e-mails já tratados."
+    },
+    "pt_BR": {
+     "t": "Pastas, etiquetas e arquivamento",
+     "g": "Arquive à vontade e confie na busca em vez de árvores de pastas profundas.",
+     "p": [
+      "Arquivar tira o e-mail da caixa de entrada mas deixa-o pesquisável.",
+      "Poucas etiquetas ou pastas, como Contas ou Viagens, bastam.",
+      "A busca moderna acha um remetente ou palavra mais rápido do que as pastas."
+     ],
+     "q": "Você organiza os e-mails em pastas ou só busca quando precisa?",
+     "c": "Crie duas etiquetas e arquive dez e-mails já resolvidos."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Unsubscribing and filtering",
+     "g": "Unsubscribe from newsletters and filter promotions to protect your inbox.",
+     "p": [
+      "Look for the unsubscribe link in newsletters you never read.",
+      "Filters can move promotions or receipts into their own place automatically.",
+      "Use unsubscribe only on senders you trust; for unknown spam, just report it."
+     ],
+     "q": "How many newsletters do you actually read, and which are worth keeping?",
+     "c": "Unsubscribe from five senders and create one filter for promotions."
+    },
+    "de": {
+     "t": "Abbestellen und Filtern",
+     "g": "Bestelle Newsletter ab und filtere Werbung, um deinen Posteingang zu schützen.",
+     "p": [
+      "Suche in nie gelesenen Newslettern den Abmeldelink.",
+      "Filter können Werbung oder Belege automatisch in einen eigenen Bereich schieben.",
+      "Melde dich nur bei vertrauten Absendern ab; unbekannten Spam melde nur."
+     ],
+     "q": "Wie viele Newsletter liest du wirklich, und welche lohnen sich?",
+     "c": "Bestelle fünf Absender ab und lege einen Filter für Werbung an."
+    },
+    "es": {
+     "t": "Darse de baja y filtrar",
+     "g": "Date de baja de boletines y filtra promociones para proteger tu bandeja.",
+     "p": [
+      "Busca el enlace de baja en boletines que nunca lees.",
+      "Los filtros pueden mover promociones o recibos a su propio sitio solos.",
+      "Usa la baja solo con remitentes de confianza; el spam desconocido, solo denúncialo."
+     ],
+     "q": "¿Cuántos boletines lees de verdad y cuáles merece la pena conservar?",
+     "c": "Date de baja de cinco remitentes y crea un filtro para promociones."
+    },
+    "fr": {
+     "t": "Se désabonner et filtrer",
+     "g": "Désabonne-toi des newsletters et filtre les promotions pour protéger ta boîte.",
+     "p": [
+      "Cherche le lien de désabonnement dans les newsletters jamais lues.",
+      "Les filtres peuvent ranger automatiquement promotions ou reçus à part.",
+      "Ne te désabonne que d'expéditeurs fiables; pour le spam inconnu, signale-le simplement."
+     ],
+     "q": "Combien de newsletters lis-tu vraiment, et lesquelles valent la peine ?",
+     "c": "Désabonne-toi de cinq expéditeurs et crée un filtre pour les promotions."
+    },
+    "it": {
+     "t": "Disiscriversi e filtrare",
+     "g": "Disiscriviti dalle newsletter e filtra le promozioni per proteggere la posta.",
+     "p": [
+      "Cerca il link di disiscrizione nelle newsletter che non leggi mai.",
+      "I filtri possono spostare promozioni o ricevute in un posto a parte da soli.",
+      "Disiscriviti solo da mittenti fidati; per lo spam sconosciuto, segnalalo e basta."
+     ],
+     "q": "Quante newsletter leggi davvero e quali vale la pena tenere?",
+     "c": "Disiscriviti da cinque mittenti e crea un filtro per le promozioni."
+    },
+    "pt": {
+     "t": "Cancelar subscrições e filtrar",
+     "g": "Cancela newsletters e filtra promoções para proteger a tua caixa.",
+     "p": [
+      "Procura o link de cancelamento nas newsletters que nunca lês.",
+      "Os filtros podem mover promoções ou recibos para um sítio próprio sozinhos.",
+      "Cancela só em remetentes de confiança; o spam desconhecido, apenas denuncia."
+     ],
+     "q": "Quantas newsletters lês mesmo e quais vale a pena manter?",
+     "c": "Cancela cinco remetentes e cria um filtro para promoções."
+    },
+    "pt_BR": {
+     "t": "Cancelando inscrições e filtrando",
+     "g": "Cancele newsletters e filtre promoções para proteger sua caixa.",
+     "p": [
+      "Procure o link de cancelamento nas newsletters que você nunca lê.",
+      "Filtros podem mover promoções ou recibos para um lugar próprio sozinhos.",
+      "Cancele só em remetentes confiáveis; spam desconhecido, apenas denuncie."
+     ],
+     "q": "Quantas newsletters você lê de verdade e quais valem a pena manter?",
+     "c": "Cancele cinco remetentes e crie um filtro para promoções."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Email templates and signatures",
+     "g": "Use saved replies and signatures for messages you write often.",
+     "p": [
+      "Templates or saved replies hold text you repeat, like directions or thanks.",
+      "A signature adds your name and contact details automatically.",
+      "Edit the template each time so it never feels cold or copied."
+     ],
+     "q": "Which message do you write again and again?",
+     "c": "Create one saved reply and a short signature for your email."
+    },
+    "de": {
+     "t": "E-Mail-Vorlagen und Signaturen",
+     "g": "Nutze gespeicherte Antworten und Signaturen für oft geschriebene Nachrichten.",
+     "p": [
+      "Vorlagen oder gespeicherte Antworten enthalten Wiederholtes, etwa Wegbeschreibung oder Dank.",
+      "Eine Signatur ergänzt automatisch deinen Namen und Kontaktdaten.",
+      "Passe die Vorlage jedes Mal an, damit sie nie kalt oder kopiert wirkt."
+     ],
+     "q": "Welche Nachricht schreibst du immer wieder?",
+     "c": "Erstelle eine gespeicherte Antwort und eine kurze Signatur für deine Mails."
+    },
+    "es": {
+     "t": "Plantillas y firmas de correo",
+     "g": "Usa respuestas guardadas y firmas para mensajes que escribes a menudo.",
+     "p": [
+      "Las plantillas guardan texto repetido, como indicaciones o agradecimientos.",
+      "La firma añade tu nombre y datos de contacto automáticamente.",
+      "Edita la plantilla cada vez para que nunca suene fría ni copiada."
+     ],
+     "q": "¿Qué mensaje escribes una y otra vez?",
+     "c": "Crea una respuesta guardada y una firma corta para tu correo."
+    },
+    "fr": {
+     "t": "Modèles et signatures d'e-mail",
+     "g": "Utilise réponses enregistrées et signatures pour les messages fréquents.",
+     "p": [
+      "Les modèles gardent un texte répété, comme un itinéraire ou un merci.",
+      "Une signature ajoute automatiquement ton nom et tes coordonnées.",
+      "Adapte le modèle à chaque fois pour qu'il ne paraisse jamais froid ou copié."
+     ],
+     "q": "Quel message écris-tu encore et encore ?",
+     "c": "Crée une réponse enregistrée et une courte signature pour ton e-mail."
+    },
+    "it": {
+     "t": "Modelli e firme e-mail",
+     "g": "Usa risposte salvate e firme per i messaggi che scrivi spesso.",
+     "p": [
+      "I modelli contengono testo ripetuto, come indicazioni o ringraziamenti.",
+      "Una firma aggiunge in automatico nome e contatti.",
+      "Modifica il modello ogni volta così non sembra mai freddo o copiato."
+     ],
+     "q": "Quale messaggio scrivi ancora e ancora?",
+     "c": "Crea una risposta salvata e una breve firma per la tua e-mail."
+    },
+    "pt": {
+     "t": "Modelos e assinaturas de e-mail",
+     "g": "Usa respostas guardadas e assinaturas para mensagens que escreves muitas vezes.",
+     "p": [
+      "Os modelos guardam texto repetido, como indicações ou agradecimentos.",
+      "A assinatura junta automaticamente o teu nome e contactos.",
+      "Edita o modelo de cada vez para nunca parecer frio ou copiado."
+     ],
+     "q": "Que mensagem escreves vezes sem conta?",
+     "c": "Cria uma resposta guardada e uma assinatura curta para o teu e-mail."
+    },
+    "pt_BR": {
+     "t": "Modelos e assinaturas de e-mail",
+     "g": "Use respostas salvas e assinaturas para mensagens que você escreve muito.",
+     "p": [
+      "Modelos guardam texto repetido, como indicações ou agradecimentos.",
+      "A assinatura adiciona automaticamente seu nome e contatos.",
+      "Edite o modelo a cada vez para nunca parecer frio ou copiado."
+     ],
+     "q": "Que mensagem você escreve vezes sem conta?",
+     "c": "Crie uma resposta salva e uma assinatura curta para seu e-mail."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Scheduling emails",
+     "g": "Write anytime but deliver at a respectful hour with send-later.",
+     "p": [
+      "Send-later holds your email and delivers it at the time you pick.",
+      "It respects others' evenings and weekends, and your own thoughts too.",
+      "Schedule follow-ups for the start of the working day."
+     ],
+     "q": "Do you send messages at odd hours? How might the other person feel?",
+     "c": "Schedule one email to go out tomorrow morning."
+    },
+    "de": {
+     "t": "E-Mails zeitlich planen",
+     "g": "Schreibe jederzeit, aber sende zu einer rücksichtsvollen Stunde mit Später-senden.",
+     "p": [
+      "Später senden hält deine Mail zurück und liefert sie zur gewählten Zeit.",
+      "Es respektiert Abende und Wochenenden anderer und auch deine eigenen Gedanken.",
+      "Plane Nachfassmails für den Beginn des Arbeitstags."
+     ],
+     "q": "Sendest du Nachrichten zu ungewöhnlichen Zeiten? Wie könnte sich der andere fühlen?",
+     "c": "Plane eine Mail, die morgen früh rausgeht."
+    },
+    "es": {
+     "t": "Programar correos",
+     "g": "Escribe a cualquier hora pero entrega en un momento respetuoso con enviar más tarde.",
+     "p": [
+      "Enviar más tarde retiene el correo y lo entrega a la hora que elijas.",
+      "Respeta las tardes y fines de semana de otros, y también tu tiempo.",
+      "Programa seguimientos para el inicio de la jornada."
+     ],
+     "q": "¿Envías mensajes a horas raras? ¿Cómo podría sentirse la otra persona?",
+     "c": "Programa un correo para que salga mañana por la mañana."
+    },
+    "fr": {
+     "t": "Programmer des e-mails",
+     "g": "Écris à toute heure mais envoie à une heure respectueuse avec l'envoi différé.",
+     "p": [
+      "L'envoi différé retient ton e-mail et le livre à l'heure choisie.",
+      "Il respecte les soirs et week-ends des autres, et aussi ton propre rythme.",
+      "Programme les relances pour le début de la journée de travail."
+     ],
+     "q": "Envoies-tu des messages à des heures bizarres ? Comment l'autre pourrait-il le vivre ?",
+     "c": "Programme un e-mail pour qu'il parte demain matin."
+    },
+    "it": {
+     "t": "Programmare le e-mail",
+     "g": "Scrivi quando vuoi ma consegna a un'ora rispettosa con invio programmato.",
+     "p": [
+      "L'invio programmato trattiene l'e-mail e la consegna all'ora scelta.",
+      "Rispetta sere e weekend degli altri, e anche i tuoi.",
+      "Programma i solleciti per l'inizio della giornata lavorativa."
+     ],
+     "q": "Mandi messaggi a orari strani? Come potrebbe sentirsi l'altro?",
+     "c": "Programma un'e-mail perché parta domani mattina."
+    },
+    "pt": {
+     "t": "Agendar e-mails",
+     "g": "Escreve a qualquer hora mas entrega numa hora respeitosa com o envio agendado.",
+     "p": [
+      "O envio agendado retém o e-mail e entrega-o à hora que escolheres.",
+      "Respeita as noites e fins de semana dos outros, e também os teus.",
+      "Agenda os acompanhamentos para o início do dia de trabalho."
+     ],
+     "q": "Envias mensagens a horas estranhas? Como se poderá sentir o outro?",
+     "c": "Agenda um e-mail para sair amanhã de manhã."
+    },
+    "pt_BR": {
+     "t": "Agendando e-mails",
+     "g": "Escreva a qualquer hora mas entregue num horário respeitoso com o envio agendado.",
+     "p": [
+      "O envio agendado retém o e-mail e o entrega no horário que você escolher.",
+      "Respeita as noites e fins de semana dos outros, e os seus também.",
+      "Agende acompanhamentos para o início do dia de trabalho."
+     ],
+     "q": "Você envia mensagens em horários estranhos? Como o outro pode se sentir?",
+     "c": "Agende um e-mail para sair amanhã de manhã."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Messaging apps etiquette",
+     "g": "Clear messages, sensible hours and mute options keep chats helpful.",
+     "p": [
+      "Put the full point in one message instead of many tiny ones.",
+      "Not everyone replies instantly; respect sleep, work and focus time.",
+      "Use mute, voice notes and reactions wisely to keep chats calm."
+     ],
+     "q": "How do you feel when someone sends a long run of tiny messages?",
+     "c": "Rewrite one message you plan to send into a clear, complete sentence."
+    },
+    "de": {
+     "t": "Etikette in Messaging-Apps",
+     "g": "Klare Nachrichten, sinnvolle Uhrzeiten und Stummschaltung halten Chats hilfreich.",
+     "p": [
+      "Bring den ganzen Punkt in eine Nachricht statt in viele winzige.",
+      "Nicht jeder antwortet sofort; respektiere Schlaf-, Arbeits- und Fokuszeit.",
+      "Nutze Stummschaltung, Sprachnachrichten und Reaktionen mit Bedacht."
+     ],
+     "q": "Wie fühlst du dich, wenn jemand viele winzige Nachrichten hintereinander schickt?",
+     "c": "Formuliere eine geplante Nachricht als klaren, vollständigen Satz um."
+    },
+    "es": {
+     "t": "Etiqueta en apps de mensajería",
+     "g": "Mensajes claros, horas razonables y silenciar mantienen los chats útiles.",
+     "p": [
+      "Pon todo el punto en un mensaje en vez de muchos minúsculos.",
+      "No todos responden al instante; respeta el sueño, el trabajo y la concentración.",
+      "Usa silenciar, notas de voz y reacciones con cabeza."
+     ],
+     "q": "¿Cómo te sientes cuando alguien manda una ráfaga de mensajes diminutos?",
+     "c": "Reescribe un mensaje que vayas a enviar como una frase clara y completa."
+    },
+    "fr": {
+     "t": "Étiquette des messageries",
+     "g": "Messages clairs, horaires raisonnables et sourdine gardent les chats utiles.",
+     "p": [
+      "Mets tout le propos dans un message plutôt que dans plein de petits.",
+      "Tout le monde ne répond pas aussitôt; respecte sommeil, travail et concentration.",
+      "Utilise sourdine, vocaux et réactions avec discernement."
+     ],
+     "q": "Que ressens-tu quand quelqu'un envoie une rafale de tout petits messages ?",
+     "c": "Réécris un message à envoyer en une phrase claire et complète."
+    },
+    "it": {
+     "t": "Etichetta nelle app di messaggistica",
+     "g": "Messaggi chiari, orari ragionevoli e silenziamento tengono utili le chat.",
+     "p": [
+      "Metti tutto il punto in un messaggio invece di tanti minuscoli.",
+      "Non tutti rispondono subito; rispetta sonno, lavoro e concentrazione.",
+      "Usa silenzia, note vocali e reazioni con giudizio."
+     ],
+     "q": "Come ti senti quando qualcuno manda una raffica di messaggini?",
+     "c": "Riscrivi un messaggio da inviare come frase chiara e completa."
+    },
+    "pt": {
+     "t": "Etiqueta nas apps de mensagens",
+     "g": "Mensagens claras, horas razoáveis e silenciar mantêm os chats úteis.",
+     "p": [
+      "Põe o ponto todo numa mensagem em vez de muitas minúsculas.",
+      "Nem todos respondem logo; respeita o sono, o trabalho e a concentração.",
+      "Usa silenciar, mensagens de voz e reações com bom senso."
+     ],
+     "q": "Como te sentes quando alguém manda uma rajada de mensagens pequenas?",
+     "c": "Reescreve uma mensagem que vás enviar numa frase clara e completa."
+    },
+    "pt_BR": {
+     "t": "Etiqueta em apps de mensagens",
+     "g": "Mensagens claras, horários razoáveis e silenciar mantêm os chats úteis.",
+     "p": [
+      "Ponha o ponto todo numa mensagem em vez de muitas minúsculas.",
+      "Nem todos respondem logo; respeite sono, trabalho e concentração.",
+      "Use silenciar, áudios e reações com bom senso."
+     ],
+     "q": "Como você se sente quando alguém manda uma rajada de mensagens pequenas?",
+     "c": "Reescreva uma mensagem que vai enviar numa frase clara e completa."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Managing group chats",
+     "g": "Mute, pin and archive groups so important talks stay visible.",
+     "p": [
+      "Muting a group stops alerts but keeps you part of the conversation.",
+      "Pin the few chats you need most to the top of your list.",
+      "Archive finished groups, like past trips, instead of deleting them."
+     ],
+     "q": "Which group chat takes the most of your attention, and is it worth it?",
+     "c": "Mute one busy group and pin one important chat."
+    },
+    "de": {
+     "t": "Gruppenchats verwalten",
+     "g": "Stummschalten, anheften und archivieren, damit Wichtiges sichtbar bleibt.",
+     "p": [
+      "Stummschalten stoppt Hinweise, lässt dich aber im Gespräch.",
+      "Hefte die wenigen wichtigsten Chats oben in deiner Liste an.",
+      "Archiviere beendete Gruppen, etwa vergangene Reisen, statt sie zu löschen."
+     ],
+     "q": "Welcher Gruppenchat beansprucht am meisten Aufmerksamkeit, und lohnt sich das?",
+     "c": "Schalte eine lebhafte Gruppe stumm und hefte einen wichtigen Chat an."
+    },
+    "es": {
+     "t": "Gestionar chats de grupo",
+     "g": "Silencia, fija y archiva grupos para que lo importante siga visible.",
+     "p": [
+      "Silenciar un grupo detiene avisos pero te mantiene en la conversación.",
+      "Fija arriba los pocos chats que más necesitas.",
+      "Archiva grupos terminados, como viajes pasados, en vez de borrarlos."
+     ],
+     "q": "¿Qué chat de grupo te quita más atención y merece la pena?",
+     "c": "Silencia un grupo muy activo y fija un chat importante."
+    },
+    "fr": {
+     "t": "Gérer les discussions de groupe",
+     "g": "Mets en sourdine, épingle et archive pour garder l'important visible.",
+     "p": [
+      "La sourdine coupe les alertes mais te garde dans la conversation.",
+      "Épingle en haut les rares discussions dont tu as le plus besoin.",
+      "Archive les groupes terminés, comme d'anciens voyages, plutôt que les supprimer."
+     ],
+     "q": "Quelle discussion de groupe accapare le plus ton attention, et en vaut-elle la peine ?",
+     "c": "Mets en sourdine un groupe très actif et épingle une discussion importante."
+    },
+    "it": {
+     "t": "Gestire le chat di gruppo",
+     "g": "Silenzia, fissa e archivia i gruppi per tenere visibile l'importante.",
+     "p": [
+      "Silenziare un gruppo ferma gli avvisi ma ti tiene nella conversazione.",
+      "Fissa in alto le poche chat che ti servono di più.",
+      "Archivia i gruppi conclusi, come viaggi passati, invece di eliminarli."
+     ],
+     "q": "Quale chat di gruppo ti prende più attenzione e ne vale la pena?",
+     "c": "Silenzia un gruppo molto attivo e fissa una chat importante."
+    },
+    "pt": {
+     "t": "Gerir chats de grupo",
+     "g": "Silencia, fixa e arquiva grupos para o importante ficar visível.",
+     "p": [
+      "Silenciar um grupo pára os avisos mas mantém-te na conversa.",
+      "Fixa no topo os poucos chats de que mais precisas.",
+      "Arquiva grupos terminados, como viagens passadas, em vez de os apagar."
+     ],
+     "q": "Que chat de grupo te ocupa mais atenção e vale a pena?",
+     "c": "Silencia um grupo muito ativo e fixa um chat importante."
+    },
+    "pt_BR": {
+     "t": "Gerenciando chats de grupo",
+     "g": "Silencie, fixe e arquive grupos para o importante ficar visível.",
+     "p": [
+      "Silenciar um grupo para os avisos mas mantém você na conversa.",
+      "Fixe no topo os poucos chats de que você mais precisa.",
+      "Arquive grupos encerrados, como viagens passadas, em vez de apagá-los."
+     ],
+     "q": "Qual chat de grupo ocupa mais sua atenção e vale a pena?",
+     "c": "Silencie um grupo muito ativo e fixe um chat importante."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: communication tools",
+     "g": "Recap email habits, templates, filters and messaging etiquette.",
+     "p": [
+      "Clear subjects, short messages and inbox processing save everyone time.",
+      "Archive, search, filters and unsubscribing keep the inbox light.",
+      "Templates, scheduling and calm chat habits make communication kinder."
+     ],
+     "q": "Which communication habit gives you the biggest relief?",
+     "c": "Clear ten emails and mute one chat to put the habits into practice."
+    },
+    "de": {
+     "t": "Rückblick: Kommunikationswerkzeuge",
+     "g": "Wiederhole E-Mail-Gewohnheiten, Vorlagen, Filter und Messaging-Etikette.",
+     "p": [
+      "Klare Betreffs, kurze Nachrichten und Posteingang-Routine sparen allen Zeit.",
+      "Archivieren, Suchen, Filter und Abbestellen halten den Posteingang leicht.",
+      "Vorlagen, Zeitplanung und ruhige Chat-Gewohnheiten machen Kommunikation freundlicher."
+     ],
+     "q": "Welche Kommunikationsgewohnheit entlastet dich am meisten?",
+     "c": "Erledige zehn Mails und schalte einen Chat stumm, um die Gewohnheiten zu üben."
+    },
+    "es": {
+     "t": "Repaso: herramientas de comunicación",
+     "g": "Repasa hábitos de correo, plantillas, filtros y etiqueta en mensajería.",
+     "p": [
+      "Asuntos claros, mensajes breves y procesar la bandeja ahorran tiempo a todos.",
+      "Archivar, buscar, filtros y darse de baja mantienen la bandeja ligera.",
+      "Plantillas, programación y hábitos de chat calmados hacen la comunicación más amable."
+     ],
+     "q": "¿Qué hábito de comunicación te da más alivio?",
+     "c": "Despeja diez correos y silencia un chat para poner los hábitos en práctica."
+    },
+    "fr": {
+     "t": "Révision : outils de communication",
+     "g": "Récapitule habitudes d'e-mail, modèles, filtres et étiquette de messagerie.",
+     "p": [
+      "Objets clairs, messages courts et traitement de la boîte font gagner du temps à tous.",
+      "Archivage, recherche, filtres et désabonnement gardent la boîte légère.",
+      "Modèles, programmation et habitudes de chat calmes rendent la communication plus aimable."
+     ],
+     "q": "Quelle habitude de communication te soulage le plus ?",
+     "c": "Traite dix e-mails et mets un chat en sourdine pour mettre les habitudes en pratique."
+    },
+    "it": {
+     "t": "Ripasso: strumenti di comunicazione",
+     "g": "Ripassa abitudini e-mail, modelli, filtri ed etichetta nei messaggi.",
+     "p": [
+      "Oggetti chiari, messaggi brevi e gestione della posta fanno risparmiare tempo a tutti.",
+      "Archivio, ricerca, filtri e disiscrizioni tengono leggera la casella.",
+      "Modelli, programmazione e chat tranquille rendono la comunicazione più gentile."
+     ],
+     "q": "Quale abitudine di comunicazione ti dà più sollievo?",
+     "c": "Smaltisci dieci e-mail e silenzia una chat per mettere in pratica le abitudini."
+    },
+    "pt": {
+     "t": "Revisão: ferramentas de comunicação",
+     "g": "Revê hábitos de e-mail, modelos, filtros e etiqueta nas mensagens.",
+     "p": [
+      "Assuntos claros, mensagens curtas e tratamento da caixa poupam tempo a todos.",
+      "Arquivo, pesquisa, filtros e cancelamentos mantêm a caixa leve.",
+      "Modelos, agendamento e hábitos de chat calmos tornam a comunicação mais simpática."
+     ],
+     "q": "Que hábito de comunicação te dá mais alívio?",
+     "c": "Despacha dez e-mails e silencia um chat para pôr os hábitos em prática."
+    },
+    "pt_BR": {
+     "t": "Revisão: ferramentas de comunicação",
+     "g": "Revise hábitos de e-mail, modelos, filtros e etiqueta nas mensagens.",
+     "p": [
+      "Assuntos claros, mensagens curtas e tratamento da caixa poupam tempo de todos.",
+      "Arquivo, busca, filtros e cancelamentos mantêm a caixa leve.",
+      "Modelos, agendamento e hábitos de chat calmos tornam a comunicação mais gentil."
+     ],
+     "q": "Qual hábito de comunicação dá mais alívio a você?",
+     "c": "Despache dez e-mails e silencie um chat para pôr os hábitos em prática."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Maps and navigation apps",
+     "g": "Use offline maps, saved places and route options to get around.",
+     "p": [
+      "Offline maps let you navigate with little or no signal.",
+      "Saved places and lists keep your favourite spots a tap away.",
+      "Compare route options, such as walking, transit, cycling or driving."
+     ],
+     "q": "What is the most useful place you have ever found with a map app?",
+     "c": "Download an offline map of your area and save three favourite places."
+    },
+    "de": {
+     "t": "Karten- und Navigations-Apps",
+     "g": "Nutze Offline-Karten, gespeicherte Orte und Routenoptionen zum Zurechtfinden.",
+     "p": [
+      "Offline-Karten erlauben Navigation mit wenig oder gar keinem Empfang.",
+      "Gespeicherte Orte und Listen halten deine Lieblingsorte einen Tipp entfernt.",
+      "Vergleiche Routenoptionen wie zu Fuß, Nahverkehr, Rad oder Auto."
+     ],
+     "q": "Was ist der nützlichste Ort, den du je mit einer Karten-App gefunden hast?",
+     "c": "Lade eine Offline-Karte deiner Gegend herunter und speichere drei Lieblingsorte."
+    },
+    "es": {
+     "t": "Apps de mapas y navegación",
+     "g": "Usa mapas sin conexión, lugares guardados y opciones de ruta para moverte.",
+     "p": [
+      "Los mapas sin conexión permiten navegar con poca o ninguna señal.",
+      "Los lugares y listas guardados dejan tus sitios favoritos a un toque.",
+      "Compara opciones de ruta: a pie, transporte, bici o coche."
+     ],
+     "q": "¿Cuál es el lugar más útil que has encontrado con una app de mapas?",
+     "c": "Descarga un mapa sin conexión de tu zona y guarda tres lugares favoritos."
+    },
+    "fr": {
+     "t": "Applis de cartes et de navigation",
+     "g": "Utilise cartes hors ligne, lieux enregistrés et options d'itinéraire pour te déplacer.",
+     "p": [
+      "Les cartes hors ligne permettent de naviguer avec peu ou pas de réseau.",
+      "Lieux et listes enregistrés gardent tes endroits préférés à portée de doigt.",
+      "Compare les itinéraires : à pied, transports, vélo ou voiture."
+     ],
+     "q": "Quel est le lieu le plus utile que tu aies trouvé avec une appli de cartes ?",
+     "c": "Télécharge une carte hors ligne de ta région et enregistre trois lieux préférés."
+    },
+    "it": {
+     "t": "App di mappe e navigazione",
+     "g": "Usa mappe offline, luoghi salvati e opzioni di percorso per orientarti.",
+     "p": [
+      "Le mappe offline permettono di navigare con poco o nessun segnale.",
+      "Luoghi e liste salvati tengono i tuoi posti preferiti a un tocco.",
+      "Confronta le opzioni di percorso: a piedi, mezzi, bici o auto."
+     ],
+     "q": "Qual è il posto più utile che hai trovato con un'app di mappe?",
+     "c": "Scarica una mappa offline della tua zona e salva tre luoghi preferiti."
+    },
+    "pt": {
+     "t": "Apps de mapas e navegação",
+     "g": "Usa mapas offline, locais guardados e opções de rota para te deslocares.",
+     "p": [
+      "Os mapas offline permitem navegar com pouco ou nenhum sinal.",
+      "Locais e listas guardados deixam os teus sítios favoritos a um toque.",
+      "Compara opções de rota: a pé, transportes, bicicleta ou carro."
+     ],
+     "q": "Qual é o local mais útil que já encontraste com uma app de mapas?",
+     "c": "Descarrega um mapa offline da tua zona e guarda três locais favoritos."
+    },
+    "pt_BR": {
+     "t": "Apps de mapas e navegação",
+     "g": "Use mapas offline, lugares salvos e opções de rota para se locomover.",
+     "p": [
+      "Mapas offline permitem navegar com pouco ou nenhum sinal.",
+      "Lugares e listas salvos deixam seus cantos favoritos a um toque.",
+      "Compare opções de rota: a pé, transporte, bicicleta ou carro."
+     ],
+     "q": "Qual é o lugar mais útil que você já achou com um app de mapas?",
+     "c": "Baixe um mapa offline da sua região e salve três lugares favoritos."
+    }
+   }
+  }
+ ]
+}

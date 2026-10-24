@@ -1,0 +1,835 @@
+{
+ "topic": "productivity_work",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What productivity really means",
+     "g": "Understand productivity as doing the right things calmly, not doing more.",
+     "p": [
+      "Productivity means making progress on what matters to you.",
+      "Less stress and good rest are part of it, not the enemy of it.",
+      "Doing fewer things well often beats doing everything badly."
+     ],
+     "q": "What would make your work day feel truly well spent?",
+     "c": "Write one sentence: what does a good work day look like for you?"
+    },
+    "de": {
+     "t": "Was Produktivität wirklich bedeutet",
+     "g": "Produktivität heißt, die richtigen Dinge ruhig zu tun, nicht mehr Dinge.",
+     "p": [
+      "Produktiv sein heißt, bei dem voranzukommen, was dir wichtig ist.",
+      "Weniger Stress und echte Erholung gehören dazu, sie sind kein Gegner.",
+      "Weniger Dinge gut zu machen schlägt oft, alles halbherzig zu erledigen."
+     ],
+     "q": "Wann fühlt sich dein Arbeitstag wirklich gut genutzt an?",
+     "c": "Schreib einen Satz: Wie sieht für dich ein guter Arbeitstag aus?"
+    },
+    "es": {
+     "t": "Qué significa de verdad ser productivo",
+     "g": "Entender la productividad como hacer lo importante con calma, no hacer más.",
+     "p": [
+      "Ser productivo es avanzar en lo que de verdad te importa.",
+      "Menos estrés y buen descanso forman parte de ello, no lo estorban.",
+      "Hacer pocas cosas bien suele ser mejor que hacerlo todo mal."
+     ],
+     "q": "¿Qué haría que tu jornada de trabajo se sintiera bien aprovechada?",
+     "c": "Escribe una frase: ¿cómo es para ti un buen día de trabajo?"
+    },
+    "fr": {
+     "t": "Ce que la productivité signifie vraiment",
+     "g": "Voir la productivité comme faire les bonnes choses sereinement, pas en faire plus.",
+     "p": [
+      "Être productif, c'est avancer sur ce qui compte pour vous.",
+      "Moins de stress et du vrai repos en font partie, ils ne s'y opposent pas.",
+      "Faire peu de choses bien vaut souvent mieux que tout faire mal."
+     ],
+     "q": "Qu'est-ce qui rendrait votre journée de travail vraiment bien employée ?",
+     "c": "Écrivez une phrase : à quoi ressemble pour vous une bonne journée de travail ?"
+    },
+    "it": {
+     "t": "Cosa significa davvero produttività",
+     "g": "Capire la produttività come fare le cose giuste con calma, non farne di più.",
+     "p": [
+      "Essere produttivi significa avanzare su ciò che conta per te.",
+      "Meno stress e buon riposo ne fanno parte, non sono nemici.",
+      "Fare poche cose bene spesso vale più che fare tutto male."
+     ],
+     "q": "Cosa renderebbe la tua giornata di lavoro davvero ben spesa?",
+     "c": "Scrivi una frase: come appare per te una buona giornata di lavoro?"
+    },
+    "pt": {
+     "t": "O que é realmente produtividade",
+     "g": "Perceber a produtividade como fazer o essencial com calma, não fazer mais.",
+     "p": [
+      "Ser produtivo é avançar no que realmente te importa.",
+      "Menos stresse e bom descanso fazem parte disto, não atrapalham.",
+      "Fazer poucas coisas bem vale muitas vezes mais do que tudo mal."
+     ],
+     "q": "O que faria o teu dia de trabalho parecer bem aproveitado?",
+     "c": "Escreve uma frase: como é para ti um bom dia de trabalho?"
+    },
+    "pt_BR": {
+     "t": "O que realmente é produtividade",
+     "g": "Entender produtividade como fazer o que importa com calma, e não fazer mais.",
+     "p": [
+      "Ser produtivo é avançar no que realmente importa para você.",
+      "Menos estresse e bom descanso fazem parte disso, não atrapalham.",
+      "Fazer poucas coisas bem feitas costuma valer mais que tudo mal feito."
+     ],
+     "q": "O que faria seu dia de trabalho parecer bem aproveitado?",
+     "c": "Escreva uma frase: como é, para você, um bom dia de trabalho?"
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Busy versus productive",
+     "g": "See why a full schedule is not the same as meaningful progress.",
+     "p": [
+      "Being busy is about activity; being productive is about results.",
+      "Answering messages all day can feel busy yet move nothing forward.",
+      "Ask: if I stopped now, what would actually be finished?"
+     ],
+     "q": "When did you last feel busy but not really productive?",
+     "c": "Look at today and circle one task that truly moves something forward."
+    },
+    "de": {
+     "t": "Beschäftigt oder produktiv",
+     "g": "Erkennen, dass ein voller Terminkalender noch kein echter Fortschritt ist.",
+     "p": [
+      "Beschäftigt sein ist Aktivität, produktiv sein sind Ergebnisse.",
+      "Den ganzen Tag Nachrichten zu beantworten fühlt sich geschäftig an, bringt aber wenig.",
+      "Frag dich: Was wäre fertig, wenn ich jetzt aufhörte?"
+     ],
+     "q": "Wann warst du zuletzt beschäftigt, aber nicht wirklich produktiv?",
+     "c": "Sieh auf heute und markiere eine Aufgabe, die wirklich etwas voranbringt."
+    },
+    "es": {
+     "t": "Ocupado frente a productivo",
+     "g": "Ver por qué una agenda llena no equivale a un progreso real.",
+     "p": [
+      "Estar ocupado es actividad; ser productivo es lograr resultados.",
+      "Contestar mensajes todo el día parece trabajo, pero puede no avanzar nada.",
+      "Pregúntate: si parara ahora, ¿qué habría quedado terminado?"
+     ],
+     "q": "¿Cuándo te sentiste ocupado pero no realmente productivo?",
+     "c": "Mira tu día y marca una tarea que de verdad haga avanzar algo."
+    },
+    "fr": {
+     "t": "Occupé ou productif",
+     "g": "Comprendre qu'un agenda plein n'est pas un vrai progrès.",
+     "p": [
+      "Être occupé, c'est de l'activité ; être productif, ce sont des résultats.",
+      "Répondre aux messages toute la journée donne l'impression d'agir sans avancer.",
+      "Demandez-vous : si j'arrêtais maintenant, qu'est-ce qui serait terminé ?"
+     ],
+     "q": "Quand vous êtes-vous senti occupé sans être vraiment productif ?",
+     "c": "Regardez aujourd'hui et entourez une tâche qui fait vraiment avancer."
+    },
+    "it": {
+     "t": "Occupato o produttivo",
+     "g": "Capire perché un'agenda piena non equivale a un progresso reale.",
+     "p": [
+      "Essere occupati è attività; essere produttivi significa ottenere risultati.",
+      "Rispondere ai messaggi tutto il giorno sembra lavoro ma può non portare avanti nulla.",
+      "Chiediti: se mi fermassi ora, cosa sarebbe davvero finito?"
+     ],
+     "q": "Quando ti sei sentito occupato ma non davvero produttivo?",
+     "c": "Guarda oggi e cerchia un compito che fa davvero avanzare qualcosa."
+    },
+    "pt": {
+     "t": "Ocupado ou produtivo",
+     "g": "Ver porque uma agenda cheia não é o mesmo que progresso real.",
+     "p": [
+      "Estar ocupado é atividade; ser produtivo é obter resultados.",
+      "Responder a mensagens o dia todo parece trabalho, mas pode não avançar nada.",
+      "Pergunta-te: se parasse agora, o que ficaria mesmo concluído?"
+     ],
+     "q": "Quando foi a última vez que te sentiste ocupado mas pouco produtivo?",
+     "c": "Olha para o dia de hoje e destaca uma tarefa que faça mesmo avançar algo."
+    },
+    "pt_BR": {
+     "t": "Ocupado ou produtivo",
+     "g": "Ver por que uma agenda cheia não é o mesmo que progresso de verdade.",
+     "p": [
+      "Estar ocupado é atividade; ser produtivo é gerar resultados.",
+      "Responder mensagens o dia todo parece trabalho, mas pode não avançar nada.",
+      "Pergunte-se: se eu parasse agora, o que estaria realmente concluído?"
+     ],
+     "q": "Quando foi a última vez que você se sentiu ocupado, mas pouco produtivo?",
+     "c": "Olhe seu dia de hoje e destaque uma tarefa que realmente faça algo avançar."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your current work day",
+     "g": "Observe how you really spend your working hours for one day.",
+     "p": [
+      "Before changing anything, look at what already happens.",
+      "Jot short notes at natural pauses: what did I just do, and for how long?",
+      "No judgment here; you are just collecting honest information."
+     ],
+     "q": "What surprised you most when you thought about your usual day?",
+     "c": "Keep a small note open today and write what you do at each break."
+    },
+    "de": {
+     "t": "Dein aktueller Arbeitstag",
+     "g": "Einen Tag lang beobachten, wie du deine Arbeitszeit wirklich verbringst.",
+     "p": [
+      "Bevor du etwas änderst, schau, was schon passiert.",
+      "Notiere kurz in natürlichen Pausen: Was habe ich getan, und wie lange?",
+      "Ohne Urteil: Du sammelst nur ehrliche Informationen."
+     ],
+     "q": "Was hat dich an deinem gewohnten Tag am meisten überrascht?",
+     "c": "Lass heute eine kleine Notiz offen und schreib bei jeder Pause auf, was du tust."
+    },
+    "es": {
+     "t": "Tu jornada actual",
+     "g": "Observar cómo empleas realmente tus horas de trabajo durante un día.",
+     "p": [
+      "Antes de cambiar nada, mira lo que ya ocurre.",
+      "Anota brevemente en las pausas: ¿qué hice y cuánto tiempo?",
+      "Sin juzgarte: solo reúnes información honesta."
+     ],
+     "q": "¿Qué te sorprendió más al pensar en tu día habitual?",
+     "c": "Ten hoy una nota abierta y apunta lo que haces en cada pausa."
+    },
+    "fr": {
+     "t": "Votre journée de travail actuelle",
+     "g": "Observer comment vous passez vraiment vos heures de travail pendant un jour.",
+     "p": [
+      "Avant de changer quoi que ce soit, regardez ce qui se passe déjà.",
+      "Notez brièvement à chaque pause : qu'ai-je fait, et combien de temps ?",
+      "Sans jugement : vous collectez simplement des informations honnêtes."
+     ],
+     "q": "Qu'est-ce qui vous a le plus surpris dans votre journée habituelle ?",
+     "c": "Gardez une petite note ouverte et écrivez ce que vous faites à chaque pause."
+    },
+    "it": {
+     "t": "La tua giornata di lavoro attuale",
+     "g": "Osservare per un giorno come usi davvero le tue ore di lavoro.",
+     "p": [
+      "Prima di cambiare qualcosa, guarda cosa succede già.",
+      "Annota brevemente nelle pause: cosa ho fatto e per quanto tempo?",
+      "Nessun giudizio: stai solo raccogliendo informazioni oneste."
+     ],
+     "q": "Cosa ti ha sorpreso di più pensando alla tua giornata tipo?",
+     "c": "Tieni oggi una nota aperta e scrivi cosa fai a ogni pausa."
+    },
+    "pt": {
+     "t": "O teu dia de trabalho atual",
+     "g": "Observar durante um dia como gastas realmente as horas de trabalho.",
+     "p": [
+      "Antes de mudar seja o que for, vê o que já acontece.",
+      "Anota brevemente nas pausas: o que fiz e durante quanto tempo?",
+      "Sem julgamentos: estás só a recolher informação honesta."
+     ],
+     "q": "O que mais te surpreendeu ao pensar no teu dia habitual?",
+     "c": "Mantém hoje uma nota aberta e escreve o que fazes em cada pausa."
+    },
+    "pt_BR": {
+     "t": "Seu dia de trabalho atual",
+     "g": "Observar por um dia como você realmente gasta suas horas de trabalho.",
+     "p": [
+      "Antes de mudar qualquer coisa, veja o que já acontece.",
+      "Anote rapidamente nas pausas: o que fiz e por quanto tempo?",
+      "Sem julgamento: você só está reunindo informação honesta."
+     ],
+     "q": "O que mais te surpreendeu ao pensar no seu dia habitual?",
+     "c": "Deixe hoje uma nota aberta e escreva o que faz a cada pausa."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Time tracking basics",
+     "g": "Learn simple ways to log your time and see where it goes.",
+     "p": [
+      "Pen and paper, a note or a simple timer app all work fine.",
+      "Track in chunks of 30 or 60 minutes; precision is not the goal.",
+      "After a few days, patterns appear that you can actually act on."
+     ],
+     "q": "Which part of your day do you suspect eats the most time?",
+     "c": "Track your time today in half-hour blocks and review it tonight."
+    },
+    "de": {
+     "t": "Grundlagen der Zeiterfassung",
+     "g": "Einfache Wege lernen, deine Zeit zu notieren und zu sehen, wohin sie geht.",
+     "p": [
+      "Stift und Papier, eine Notiz oder eine einfache Timer-App genügen.",
+      "Erfasse in 30- oder 60-Minuten-Blöcken; Genauigkeit ist nicht das Ziel.",
+      "Nach ein paar Tagen zeigen sich Muster, mit denen du arbeiten kannst."
+     ],
+     "q": "Welcher Teil deines Tages frisst deiner Vermutung nach die meiste Zeit?",
+     "c": "Erfasse heute deine Zeit in Halbstundenblöcken und schau abends drüber."
+    },
+    "es": {
+     "t": "Bases del registro del tiempo",
+     "g": "Aprender formas sencillas de anotar tu tiempo y ver adónde se va.",
+     "p": [
+      "Papel y lápiz, una nota o una app de temporizador sencilla bastan.",
+      "Registra en bloques de 30 o 60 minutos; la precisión no es el objetivo.",
+      "Tras unos días aparecen patrones con los que puedes actuar."
+     ],
+     "q": "¿Qué parte de tu día sospechas que consume más tiempo?",
+     "c": "Registra hoy tu tiempo en bloques de media hora y revísalo por la noche."
+    },
+    "fr": {
+     "t": "Les bases du suivi du temps",
+     "g": "Apprendre des moyens simples de noter votre temps et voir où il passe.",
+     "p": [
+      "Papier-crayon, une note ou une simple appli de minuterie suffisent.",
+      "Notez par blocs de 30 ou 60 minutes ; la précision n'est pas le but.",
+      "Après quelques jours, des schémas apparaissent et vous pouvez agir dessus."
+     ],
+     "q": "Quelle partie de votre journée prend selon vous le plus de temps ?",
+     "c": "Suivez votre temps par demi-heures aujourd'hui et relisez-le ce soir."
+    },
+    "it": {
+     "t": "Basi del monitoraggio del tempo",
+     "g": "Imparare modi semplici per annotare il tempo e vedere dove va.",
+     "p": [
+      "Carta e penna, una nota o una semplice app timer vanno benissimo.",
+      "Segna a blocchi di 30 o 60 minuti; la precisione non è l'obiettivo.",
+      "Dopo qualche giorno emergono schemi su cui puoi agire."
+     ],
+     "q": "Quale parte della tua giornata sospetti che consumi più tempo?",
+     "c": "Oggi traccia il tempo a blocchi di mezz'ora e rivedilo stasera."
+    },
+    "pt": {
+     "t": "Noções de registo do tempo",
+     "g": "Aprender formas simples de registar o tempo e ver para onde vai.",
+     "p": [
+      "Papel e caneta, uma nota ou uma app de cronómetro simples chegam.",
+      "Regista em blocos de 30 ou 60 minutos; a precisão não é o objetivo.",
+      "Após alguns dias surgem padrões sobre os quais podes agir."
+     ],
+     "q": "Que parte do teu dia suspeitas que consome mais tempo?",
+     "c": "Hoje regista o tempo em blocos de meia hora e revê à noite."
+    },
+    "pt_BR": {
+     "t": "Noções de registro do tempo",
+     "g": "Aprender formas simples de registrar o tempo e ver para onde ele vai.",
+     "p": [
+      "Papel e caneta, uma nota ou um app de cronômetro simples bastam.",
+      "Registre em blocos de 30 ou 60 minutos; precisão não é o objetivo.",
+      "Depois de alguns dias surgem padrões sobre os quais você pode agir."
+     ],
+     "q": "Que parte do seu dia você suspeita que consome mais tempo?",
+     "c": "Hoje registre seu tempo em blocos de meia hora e revise à noite."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Energy, not just time",
+     "g": "Notice when your focus and energy are highest during the day.",
+     "p": [
+      "Hours are equal, but your energy is not the same at every hour.",
+      "Rate your energy from 1 to 5 a few times today.",
+      "Sleep, food, movement and mood all shape the curve."
+     ],
+     "q": "When in the day do you usually feel sharpest?",
+     "c": "Rate your energy 1 to 5 at three moments today and note the numbers."
+    },
+    "de": {
+     "t": "Energie, nicht nur Zeit",
+     "g": "Bemerken, wann Fokus und Energie im Tagesverlauf am höchsten sind.",
+     "p": [
+      "Stunden sind gleich lang, deine Energie ist es nicht.",
+      "Bewerte deine Energie heute mehrmals von 1 bis 5.",
+      "Schlaf, Essen, Bewegung und Stimmung formen die Kurve."
+     ],
+     "q": "Wann am Tag fühlst du dich meist am klarsten?",
+     "c": "Bewerte deine Energie heute zu drei Zeitpunkten von 1 bis 5 und notiere sie."
+    },
+    "es": {
+     "t": "Energía, no solo tiempo",
+     "g": "Notar cuándo tu concentración y tu energía son más altas durante el día.",
+     "p": [
+      "Las horas son iguales, pero tu energía no lo es en cada una.",
+      "Puntúa tu energía de 1 a 5 varias veces hoy.",
+      "Sueño, comida, movimiento y ánimo moldean esa curva."
+     ],
+     "q": "¿En qué momento del día sueles sentirte más lúcido?",
+     "c": "Puntúa tu energía de 1 a 5 en tres momentos de hoy y anota los números."
+    },
+    "fr": {
+     "t": "L'énergie, pas seulement le temps",
+     "g": "Repérer quand votre concentration et votre énergie sont au plus haut dans la journée.",
+     "p": [
+      "Les heures sont égales, mais votre énergie ne l'est pas à chaque heure.",
+      "Notez votre énergie de 1 à 5 plusieurs fois aujourd'hui.",
+      "Sommeil, repas, mouvement et humeur façonnent cette courbe."
+     ],
+     "q": "À quel moment de la journée vous sentez-vous le plus alerte ?",
+     "c": "Notez votre énergie de 1 à 5 à trois moments aujourd'hui."
+    },
+    "it": {
+     "t": "Energia, non solo tempo",
+     "g": "Notare quando concentrazione ed energia sono più alte durante il giorno.",
+     "p": [
+      "Le ore sono uguali, ma la tua energia non lo è in ogni ora.",
+      "Valuta la tua energia da 1 a 5 più volte oggi.",
+      "Sonno, cibo, movimento e umore modellano la curva."
+     ],
+     "q": "In quale momento della giornata ti senti di solito più lucido?",
+     "c": "Valuta l'energia da 1 a 5 in tre momenti di oggi e annota i numeri."
+    },
+    "pt": {
+     "t": "Energia, não só tempo",
+     "g": "Notar quando a tua concentração e energia estão mais altas ao longo do dia.",
+     "p": [
+      "As horas são iguais, mas a tua energia não é a mesma em todas.",
+      "Avalia a tua energia de 1 a 5 várias vezes hoje.",
+      "Sono, comida, movimento e humor moldam essa curva."
+     ],
+     "q": "Em que altura do dia costumas sentir-te mais lúcido?",
+     "c": "Avalia a energia de 1 a 5 em três momentos de hoje e anota os números."
+    },
+    "pt_BR": {
+     "t": "Energia, não só tempo",
+     "g": "Notar quando seu foco e sua energia estão mais altos ao longo do dia.",
+     "p": [
+      "As horas são iguais, mas sua energia não é a mesma em todas.",
+      "Avalie sua energia de 1 a 5 várias vezes hoje.",
+      "Sono, comida, movimento e humor moldam essa curva."
+     ],
+     "q": "Em que horário do dia você costuma se sentir mais lúcido?",
+     "c": "Avalie sua energia de 1 a 5 em três momentos de hoje e anote os números."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your peak hours",
+     "g": "Schedule demanding tasks for the times you think most clearly.",
+     "p": [
+      "Use your high-energy window for work that needs deep thinking.",
+      "Save routine tasks like admin or filing for your lower-energy hours.",
+      "You cannot always choose, but even one protected hour helps."
+     ],
+     "q": "What is your best thinking hour, and how do you usually spend it?",
+     "c": "Move one demanding task into your sharpest hour tomorrow."
+    },
+    "de": {
+     "t": "Deine Spitzenzeiten",
+     "g": "Anspruchsvolle Aufgaben in die Zeiten legen, in denen du am klarsten denkst.",
+     "p": [
+      "Nutze dein Energiehoch für Arbeit, die tiefes Denken braucht.",
+      "Heb Routine wie Verwaltung oder Ablage für energieärmere Stunden auf.",
+      "Du kannst nicht immer wählen, aber schon eine geschützte Stunde hilft."
+     ],
+     "q": "Welche Stunde ist deine beste zum Denken, und wie nutzt du sie sonst?",
+     "c": "Verschiebe morgen eine anspruchsvolle Aufgabe in deine klarste Stunde."
+    },
+    "es": {
+     "t": "Tus horas pico",
+     "g": "Programar las tareas exigentes en los momentos en que piensas con más claridad.",
+     "p": [
+      "Usa tu ventana de más energía para el trabajo que requiere pensar a fondo.",
+      "Deja lo rutinario, como papeleo u orden, para las horas de menos energía.",
+      "No siempre puedes elegir, pero una sola hora protegida ayuda."
+     ],
+     "q": "¿Cuál es tu mejor hora para pensar y cómo la sueles usar?",
+     "c": "Mañana mueve una tarea exigente a tu hora más lúcida."
+    },
+    "fr": {
+     "t": "Vos heures de pointe",
+     "g": "Planifier les tâches exigeantes aux moments où vous pensez le plus clairement.",
+     "p": [
+      "Utilisez votre pic d'énergie pour le travail qui demande de la réflexion.",
+      "Gardez les tâches de routine, comme l'administratif, pour les heures plus calmes.",
+      "Vous ne choisissez pas toujours, mais une heure protégée aide déjà."
+     ],
+     "q": "Quelle est votre meilleure heure pour réfléchir, et comment l'utilisez-vous ?",
+     "c": "Demain, déplacez une tâche exigeante dans votre heure la plus claire."
+    },
+    "it": {
+     "t": "Le tue ore di picco",
+     "g": "Programmare i compiti impegnativi quando pensi con più chiarezza.",
+     "p": [
+      "Usa la tua finestra di massima energia per il lavoro che richiede riflessione.",
+      "Lascia le attività di routine, come burocrazia o archivio, alle ore più calme.",
+      "Non sempre puoi scegliere, ma anche un'ora protetta aiuta."
+     ],
+     "q": "Qual è la tua ora migliore per pensare e come la usi di solito?",
+     "c": "Domani sposta un compito impegnativo nella tua ora più lucida."
+    },
+    "pt": {
+     "t": "As tuas horas de pico",
+     "g": "Marcar as tarefas exigentes para quando pensas com mais clareza.",
+     "p": [
+      "Usa a tua janela de maior energia para trabalho que exige pensar a fundo.",
+      "Deixa o rotineiro, como burocracia ou arquivo, para as horas de menos energia.",
+      "Nem sempre podes escolher, mas uma hora protegida já ajuda."
+     ],
+     "q": "Qual é a tua melhor hora para pensar e como a costumas usar?",
+     "c": "Amanhã passa uma tarefa exigente para a tua hora mais lúcida."
+    },
+    "pt_BR": {
+     "t": "Seus horários de pico",
+     "g": "Programar tarefas exigentes para quando você pensa com mais clareza.",
+     "p": [
+      "Use sua janela de maior energia para o trabalho que exige pensar fundo.",
+      "Deixe o rotineiro, como burocracia ou arquivo, para as horas de menos energia.",
+      "Nem sempre dá para escolher, mas uma hora protegida já ajuda."
+     ],
+     "q": "Qual é sua melhor hora para pensar e como você costuma usá-la?",
+     "c": "Amanhã passe uma tarefa exigente para sua hora mais lúcida."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The humble to-do list",
+     "g": "Write tasks down so your mind is free to focus.",
+     "p": [
+      "The brain is for having ideas, not for storing reminders.",
+      "One trusted place beats notes scattered everywhere.",
+      "Paper or app does not matter; the habit of writing things down does."
+     ],
+     "q": "Where do your tasks live right now, in your head or on a list?",
+     "c": "Empty your head: write every open task you can think of in one list."
+    },
+    "de": {
+     "t": "Die bescheidene To-do-Liste",
+     "g": "Aufgaben aufschreiben, damit dein Kopf frei zum Fokussieren ist.",
+     "p": [
+      "Das Gehirn ist zum Ideenhaben da, nicht zum Erinnerungenspeichern.",
+      "Ein vertrauenswürdiger Ort schlägt verstreute Zettel.",
+      "Papier oder App ist egal; die Gewohnheit des Aufschreibens zählt."
+     ],
+     "q": "Wo leben deine Aufgaben gerade, im Kopf oder auf einer Liste?",
+     "c": "Kopf leeren: Schreib alle offenen Aufgaben, die dir einfallen, in eine Liste."
+    },
+    "es": {
+     "t": "La humilde lista de tareas",
+     "g": "Anotar las tareas para que tu mente quede libre para concentrarse.",
+     "p": [
+      "El cerebro sirve para tener ideas, no para guardar recordatorios.",
+      "Un solo lugar de confianza vale más que notas dispersas.",
+      "Da igual papel o app; lo que cuenta es el hábito de anotar."
+     ],
+     "q": "¿Dónde viven ahora tus tareas, en tu cabeza o en una lista?",
+     "c": "Vacía tu cabeza: escribe en una lista todas las tareas pendientes que recuerdes."
+    },
+    "fr": {
+     "t": "L'humble liste de tâches",
+     "g": "Écrire vos tâches pour libérer votre esprit et vous concentrer.",
+     "p": [
+      "Le cerveau sert à avoir des idées, pas à stocker des rappels.",
+      "Un seul endroit de confiance vaut mieux que des notes éparpillées.",
+      "Papier ou appli, peu importe ; l'habitude d'écrire compte."
+     ],
+     "q": "Où vivent vos tâches en ce moment, dans votre tête ou sur une liste ?",
+     "c": "Videz votre tête : notez toutes les tâches en cours dont vous vous souvenez."
+    },
+    "it": {
+     "t": "L'umile lista di cose da fare",
+     "g": "Scrivere i compiti per liberare la mente e concentrarti.",
+     "p": [
+      "Il cervello serve per avere idee, non per conservare promemoria.",
+      "Un solo posto fidato vale più di appunti sparsi ovunque.",
+      "Carta o app non importa; conta l'abitudine di scrivere."
+     ],
+     "q": "Dove vivono ora i tuoi compiti, nella testa o su una lista?",
+     "c": "Svuota la testa: scrivi in un'unica lista tutti i compiti aperti che ricordi."
+    },
+    "pt": {
+     "t": "A humilde lista de tarefas",
+     "g": "Escrever as tarefas para libertar a mente e conseguir concentrar-te.",
+     "p": [
+      "O cérebro serve para ter ideias, não para guardar lembretes.",
+      "Um só sítio de confiança vale mais do que notas espalhadas.",
+      "Papel ou app é indiferente; conta o hábito de escrever."
+     ],
+     "q": "Onde vivem agora as tuas tarefas, na cabeça ou numa lista?",
+     "c": "Esvazia a cabeça: escreve numa lista todas as tarefas em aberto de que te lembrares."
+    },
+    "pt_BR": {
+     "t": "A humilde lista de tarefas",
+     "g": "Anotar as tarefas para liberar a mente e conseguir se concentrar.",
+     "p": [
+      "O cérebro serve para ter ideias, não para guardar lembretes.",
+      "Um único lugar de confiança vale mais que anotações espalhadas.",
+      "Papel ou app tanto faz; o que conta é o hábito de anotar."
+     ],
+     "q": "Onde suas tarefas vivem agora, na cabeça ou em uma lista?",
+     "c": "Esvazie a cabeça: escreva numa lista todas as tarefas em aberto de que lembrar."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Writing better tasks",
+     "g": "Turn vague items into clear actions that start with a verb.",
+     "p": [
+      "Compare Taxes with Sort the tax receipts into one folder.",
+      "A verb at the start tells you exactly what to do.",
+      "Clear tasks need less willpower because there is nothing to figure out."
+     ],
+     "q": "Which task on your list is the vaguest one?",
+     "c": "Rewrite three vague tasks so each starts with an action verb."
+    },
+    "de": {
+     "t": "Bessere Aufgaben formulieren",
+     "g": "Vage Punkte in klare Handlungen verwandeln, die mit einem Verb beginnen.",
+     "p": [
+      "Vergleiche Steuer mit Steuerbelege in einen Ordner sortieren.",
+      "Ein Verb am Anfang sagt dir genau, was zu tun ist.",
+      "Klare Aufgaben brauchen weniger Willenskraft, weil nichts zu klären ist."
+     ],
+     "q": "Welche Aufgabe auf deiner Liste ist die vageste?",
+     "c": "Formuliere drei vage Aufgaben so um, dass jede mit einem Tatverb beginnt."
+    },
+    "es": {
+     "t": "Escribir mejores tareas",
+     "g": "Convertir ideas vagas en acciones claras que empiecen con un verbo.",
+     "p": [
+      "Compara Impuestos con Ordenar los recibos fiscales en una carpeta.",
+      "Un verbo al principio te dice exactamente qué hacer.",
+      "Las tareas claras piden menos fuerza de voluntad: no hay nada que descifrar."
+     ],
+     "q": "¿Cuál es la tarea más vaga de tu lista?",
+     "c": "Reescribe tres tareas vagas para que cada una empiece con un verbo de acción."
+    },
+    "fr": {
+     "t": "Mieux écrire ses tâches",
+     "g": "Transformer les éléments vagues en actions claires commençant par un verbe.",
+     "p": [
+      "Comparez Impôts et Trier les justificatifs fiscaux dans un classeur.",
+      "Un verbe au début dit exactement quoi faire.",
+      "Une tâche claire demande moins de volonté : rien à deviner."
+     ],
+     "q": "Quelle tâche de votre liste est la plus floue ?",
+     "c": "Réécrivez trois tâches floues pour que chacune commence par un verbe d'action."
+    },
+    "it": {
+     "t": "Scrivere compiti migliori",
+     "g": "Trasformare voci vaghe in azioni chiare che iniziano con un verbo.",
+     "p": [
+      "Confronta Tasse con Ordinare le ricevute fiscali in una cartella.",
+      "Un verbo all'inizio ti dice esattamente cosa fare.",
+      "I compiti chiari richiedono meno forza di volontà: non c'è nulla da decifrare."
+     ],
+     "q": "Qual è il compito più vago della tua lista?",
+     "c": "Riscrivi tre compiti vaghi così che ognuno inizi con un verbo d'azione."
+    },
+    "pt": {
+     "t": "Escrever melhores tarefas",
+     "g": "Transformar itens vagos em ações claras que começam com um verbo.",
+     "p": [
+      "Compara Impostos com Organizar os recibos fiscais numa pasta.",
+      "Um verbo no início diz-te exatamente o que fazer.",
+      "Tarefas claras pedem menos força de vontade: não há nada a decifrar."
+     ],
+     "q": "Qual é a tarefa mais vaga da tua lista?",
+     "c": "Reescreve três tarefas vagas para que cada uma comece com um verbo de ação."
+    },
+    "pt_BR": {
+     "t": "Escrever tarefas melhores",
+     "g": "Transformar itens vagos em ações claras que começam com um verbo.",
+     "p": [
+      "Compare Impostos com Organizar os recibos fiscais em uma pasta.",
+      "Um verbo no início diz exatamente o que fazer.",
+      "Tarefas claras pedem menos força de vontade: não há nada a decifrar."
+     ],
+     "q": "Qual é a tarefa mais vaga da sua lista?",
+     "c": "Reescreva três tarefas vagas para que cada uma comece com um verbo de ação."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breaking big tasks down",
+     "g": "Split large projects into small, doable steps.",
+     "p": [
+      "A big task feels heavy because you cannot see its first step.",
+      "Break it into pieces you could finish in under an hour.",
+      "Small steps give you visible progress, which keeps you going."
+     ],
+     "q": "Which big project are you quietly avoiding right now?",
+     "c": "Pick one big task and split it into five small steps today."
+    },
+    "de": {
+     "t": "Große Aufgaben zerlegen",
+     "g": "Große Projekte in kleine, machbare Schritte aufteilen.",
+     "p": [
+      "Eine große Aufgabe wirkt schwer, weil man den ersten Schritt nicht sieht.",
+      "Teile sie in Stücke, die du in unter einer Stunde schaffst.",
+      "Kleine Schritte zeigen sichtbaren Fortschritt und halten dich in Bewegung."
+     ],
+     "q": "Welches große Projekt schiebst du gerade leise vor dir her?",
+     "c": "Wähle eine große Aufgabe und teile sie heute in fünf kleine Schritte."
+    },
+    "es": {
+     "t": "Dividir las tareas grandes",
+     "g": "Partir los proyectos grandes en pasos pequeños y posibles.",
+     "p": [
+      "Una tarea grande pesa porque no ves su primer paso.",
+      "Divídela en partes que puedas terminar en menos de una hora.",
+      "Los pasos pequeños dan progreso visible, y eso te mantiene en marcha."
+     ],
+     "q": "¿Qué proyecto grande estás evitando en silencio ahora mismo?",
+     "c": "Elige una tarea grande y divídela hoy en cinco pasos pequeños."
+    },
+    "fr": {
+     "t": "Découper les grandes tâches",
+     "g": "Diviser les grands projets en petites étapes faisables.",
+     "p": [
+      "Une grande tâche pèse car on ne voit pas sa première étape.",
+      "Découpez-la en morceaux réalisables en moins d'une heure.",
+      "Les petites étapes montrent un progrès visible qui motive."
+     ],
+     "q": "Quel gros projet évitez-vous discrètement en ce moment ?",
+     "c": "Choisissez une grande tâche et découpez-la aujourd'hui en cinq petites étapes."
+    },
+    "it": {
+     "t": "Spezzare i grandi compiti",
+     "g": "Dividere i grandi progetti in piccoli passi fattibili.",
+     "p": [
+      "Un compito grande pesa perché non vedi il primo passo.",
+      "Dividilo in parti che puoi finire in meno di un'ora.",
+      "I piccoli passi danno un progresso visibile che ti tiene in moto."
+     ],
+     "q": "Quale grande progetto stai evitando in silenzio ora?",
+     "c": "Scegli un compito grande e dividilo oggi in cinque piccoli passi."
+    },
+    "pt": {
+     "t": "Dividir tarefas grandes",
+     "g": "Partir projetos grandes em passos pequenos e possíveis.",
+     "p": [
+      "Uma tarefa grande pesa porque não vês o primeiro passo.",
+      "Divide-a em partes que consigas acabar em menos de uma hora.",
+      "Passos pequenos mostram progresso visível, o que te mantém em andamento."
+     ],
+     "q": "Que projeto grande estás a evitar em silêncio neste momento?",
+     "c": "Escolhe uma tarefa grande e divide-a hoje em cinco passos pequenos."
+    },
+    "pt_BR": {
+     "t": "Dividir tarefas grandes",
+     "g": "Partir projetos grandes em passos pequenos e possíveis.",
+     "p": [
+      "Uma tarefa grande pesa porque você não vê o primeiro passo.",
+      "Divida em partes que dê para terminar em menos de uma hora.",
+      "Passos pequenos mostram progresso visível, o que mantém você em movimento."
+     ],
+     "q": "Que projeto grande você está evitando em silêncio agora?",
+     "c": "Escolha uma tarefa grande e divida-a hoje em cinco passos pequenos."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The next physical action",
+     "g": "Find the very first concrete step that moves a task forward.",
+     "p": [
+      "The next action is something you could do right now, like open the file.",
+      "It is visible and so small that starting feels easy.",
+      "Always knowing the next step removes the fog around a task."
+     ],
+     "q": "What is the next physical action for your most stalled task?",
+     "c": "Write the next physical action beside three tasks, then do one of them."
+    },
+    "de": {
+     "t": "Die nächste konkrete Handlung",
+     "g": "Den allerersten konkreten Schritt finden, der eine Aufgabe voranbringt.",
+     "p": [
+      "Die nächste Handlung kannst du sofort tun, etwa die Datei öffnen.",
+      "Sie ist sichtbar und so klein, dass der Start leichtfällt.",
+      "Den nächsten Schritt zu kennen, lichtet den Nebel um eine Aufgabe."
+     ],
+     "q": "Was ist die nächste konkrete Handlung für deine festgefahrenste Aufgabe?",
+     "c": "Schreib bei drei Aufgaben die nächste konkrete Handlung dazu und erledige eine."
+    },
+    "es": {
+     "t": "La siguiente acción física",
+     "g": "Encontrar el primer paso concreto que hace avanzar una tarea.",
+     "p": [
+      "La siguiente acción es algo que podrías hacer ya, como abrir el archivo.",
+      "Es visible y tan pequeña que empezar resulta fácil.",
+      "Conocer siempre el siguiente paso disipa la niebla de una tarea."
+     ],
+     "q": "¿Cuál es la siguiente acción física de tu tarea más estancada?",
+     "c": "Escribe la siguiente acción junto a tres tareas y haz una de ellas."
+    },
+    "fr": {
+     "t": "La prochaine action concrète",
+     "g": "Trouver la toute première étape concrète qui fait avancer une tâche.",
+     "p": [
+      "La prochaine action, vous pouvez la faire tout de suite, comme ouvrir le fichier.",
+      "Elle est visible et si petite que commencer devient facile.",
+      "Connaître la prochaine étape dissipe le brouillard autour d'une tâche."
+     ],
+     "q": "Quelle est la prochaine action concrète de votre tâche la plus bloquée ?",
+     "c": "Notez la prochaine action à côté de trois tâches, puis faites-en une."
+    },
+    "it": {
+     "t": "La prossima azione concreta",
+     "g": "Trovare il primissimo passo concreto che fa avanzare un compito.",
+     "p": [
+      "La prossima azione puoi farla subito, come aprire il file.",
+      "È visibile e così piccola che iniziare diventa facile.",
+      "Conoscere sempre il prossimo passo dissolve la nebbia attorno a un compito."
+     ],
+     "q": "Qual è la prossima azione concreta del tuo compito più fermo?",
+     "c": "Scrivi la prossima azione accanto a tre compiti e falla per uno di essi."
+    },
+    "pt": {
+     "t": "A próxima ação concreta",
+     "g": "Encontrar o primeiríssimo passo concreto que faz uma tarefa avançar.",
+     "p": [
+      "A próxima ação é algo que podes fazer já, como abrir o ficheiro.",
+      "É visível e tão pequena que começar se torna fácil.",
+      "Saber sempre o próximo passo dissipa o nevoeiro em torno de uma tarefa."
+     ],
+     "q": "Qual é a próxima ação concreta da tua tarefa mais parada?",
+     "c": "Escreve a próxima ação junto a três tarefas e faz uma delas."
+    },
+    "pt_BR": {
+     "t": "A próxima ação concreta",
+     "g": "Encontrar o primeiríssimo passo concreto que faz uma tarefa avançar.",
+     "p": [
+      "A próxima ação é algo que você pode fazer já, como abrir o arquivo.",
+      "É visível e tão pequena que começar fica fácil.",
+      "Saber sempre o próximo passo dissipa a névoa em volta de uma tarefa."
+     ],
+     "q": "Qual é a próxima ação concreta da sua tarefa mais parada?",
+     "c": "Escreva a próxima ação ao lado de três tarefas e faça uma delas."
+    }
+   }
+  }
+ ]
+}

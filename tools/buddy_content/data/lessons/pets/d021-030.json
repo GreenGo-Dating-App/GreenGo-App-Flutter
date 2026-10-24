@@ -1,0 +1,835 @@
+{
+ "topic": "pets",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gentle handling basics",
+     "g": "Learn how to hold and touch pets so they feel secure.",
+     "p": [
+      "Support the chest and hindquarters when lifting small animals.",
+      "Let pets come to you, and stroke where they enjoy it.",
+      "Stop if a pet wriggles, stiffens or pulls away; they are asking for a break."
+     ],
+     "q": "How does your pet like to be touched?",
+     "c": "Practise a calm, gentle stroke for one minute and watch the response."
+    },
+    "de": {
+     "t": "Sanfter Umgang und Handling",
+     "g": "Lerne, Tiere so zu halten und zu berühren, dass sie sich sicher fühlen.",
+     "p": [
+      "Stütze beim Hochheben kleiner Tiere Brust und Hinterteil.",
+      "Lass Tiere zu dir kommen und streichle, wo es ihnen gefällt.",
+      "Hör auf, wenn ein Tier zappelt, erstarrt oder sich wegzieht; es braucht eine Pause."
+     ],
+     "q": "Wie wird dein Tier gern berührt?",
+     "c": "Übe eine Minute ruhiges, sanftes Streicheln und beobachte die Reaktion."
+    },
+    "es": {
+     "t": "Nociones de manejo suave",
+     "g": "Aprende a sostener y tocar a los animales para que se sientan seguros.",
+     "p": [
+      "Sujeta el pecho y los cuartos traseros al levantar animales pequeños.",
+      "Deja que se acerquen a ti y acaricia donde les guste.",
+      "Para si se retuerce, se tensa o se aparta; está pidiendo un descanso."
+     ],
+     "q": "¿Cómo le gusta a tu mascota que la toquen?",
+     "c": "Practica una caricia suave durante un minuto y observa la respuesta."
+    },
+    "fr": {
+     "t": "Les bases d'une manipulation douce",
+     "g": "Apprends à porter et caresser les animaux pour qu'ils se sentent en sécurité.",
+     "p": [
+      "Soutiens la poitrine et l'arrière-train pour soulever un petit animal.",
+      "Laisse l'animal venir à toi et caresse là où il aime.",
+      "Arrête s'il se tortille, se raidit ou s'écarte; il demande une pause."
+     ],
+     "q": "Comment ton animal aime-t-il être touché ?",
+     "c": "Entraîne-toi à une caresse douce pendant une minute et observe sa réaction."
+    },
+    "it": {
+     "t": "Le basi della manipolazione gentile",
+     "g": "Impara a tenere e toccare gli animali perché si sentano al sicuro.",
+     "p": [
+      "Sostieni petto e posteriore quando sollevi animali piccoli.",
+      "Lascia che ti vengano incontro e accarezza dove gli piace.",
+      "Fermati se si divincola, si irrigidisce o si ritrae; chiede una pausa."
+     ],
+     "q": "Come piace al tuo animale essere toccato?",
+     "c": "Prova una carezza dolce per un minuto e osserva la reazione."
+    },
+    "pt": {
+     "t": "Noções de manuseamento suave",
+     "g": "Aprende a pegar e tocar nos animais para que se sintam seguros.",
+     "p": [
+      "Apoia o peito e o traseiro ao levantar animais pequenos.",
+      "Deixa que se aproximem de ti e faz festas onde gostam.",
+      "Para se se debater, ficar tenso ou afastar-se; está a pedir uma pausa."
+     ],
+     "q": "Como é que o teu animal gosta de ser tocado?",
+     "c": "Pratica uma festa suave durante um minuto e observa a reação."
+    },
+    "pt_BR": {
+     "t": "Noções de manuseio gentil",
+     "g": "Aprenda a segurar e tocar os pets para que se sintam seguros.",
+     "p": [
+      "Apoie o peito e o traseiro ao levantar animais pequenos.",
+      "Deixe que se aproximem de você e faça carinho onde gostam.",
+      "Pare se ele se debater, ficar tenso ou se afastar; está pedindo uma pausa."
+     ],
+     "q": "Como o seu pet gosta de ser tocado?",
+     "c": "Pratique um carinho suave por um minuto e observe a resposta."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kids and pets together",
+     "g": "Help children build kind, calm habits around animals.",
+     "p": [
+      "Teach children to pet gently, stay calm and never grab tails or ears.",
+      "Always supervise young children with any animal.",
+      "Give pets a safe space where children are not allowed to follow."
+     ],
+     "q": "How could a child you know learn to treat pets kindly?",
+     "c": "Show a child one gentle way to greet a pet, or practise it yourself."
+    },
+    "de": {
+     "t": "Kinder und Tiere gemeinsam",
+     "g": "Hilf Kindern, freundliche, ruhige Gewohnheiten im Umgang mit Tieren zu lernen.",
+     "p": [
+      "Bring Kindern bei, sanft zu streicheln, ruhig zu bleiben und nie an Schwanz oder Ohren zu ziehen.",
+      "Beaufsichtige kleine Kinder immer im Umgang mit jedem Tier.",
+      "Gib Tieren einen sicheren Rückzugsort, dem Kinder nicht folgen dürfen."
+     ],
+     "q": "Wie könnte ein Kind, das du kennst, den freundlichen Umgang lernen?",
+     "c": "Zeig einem Kind eine sanfte Begrüßung für Tiere oder übe sie selbst."
+    },
+    "es": {
+     "t": "Niños y mascotas juntos",
+     "g": "Ayuda a los niños a tener hábitos amables y tranquilos con los animales.",
+     "p": [
+      "Enseña a los niños a acariciar con suavidad, mantener la calma y no tirar de colas ni orejas.",
+      "Supervisa siempre a los niños pequeños con cualquier animal.",
+      "Dale a la mascota un lugar seguro al que los niños no puedan seguirla."
+     ],
+     "q": "¿Cómo podría aprender a tratar bien a los animales un niño que conozcas?",
+     "c": "Enseña a un niño una forma suave de saludar a un animal, o practícala tú."
+    },
+    "fr": {
+     "t": "Enfants et animaux ensemble",
+     "g": "Aide les enfants à adopter des habitudes douces et calmes avec les animaux.",
+     "p": [
+      "Apprends aux enfants à caresser doucement, rester calmes et ne jamais tirer queue ou oreilles.",
+      "Surveille toujours les jeunes enfants avec n'importe quel animal.",
+      "Donne à l'animal un refuge où les enfants n'ont pas le droit de le suivre."
+     ],
+     "q": "Comment un enfant que tu connais pourrait-il apprendre à bien traiter les animaux ?",
+     "c": "Montre à un enfant une façon douce de saluer un animal, ou entraîne-toi toi-même."
+    },
+    "it": {
+     "t": "Bambini e animali insieme",
+     "g": "Aiuta i bambini ad avere abitudini gentili e calme con gli animali.",
+     "p": [
+      "Insegna ai bambini ad accarezzare piano, restare calmi e non tirare code o orecchie.",
+      "Sorveglia sempre i bambini piccoli con qualsiasi animale.",
+      "Dai all'animale un posto sicuro dove i bambini non possono seguirlo."
+     ],
+     "q": "Come potrebbe imparare a trattare bene gli animali un bambino che conosci?",
+     "c": "Mostra a un bambino un modo gentile di salutare un animale, o provalo tu."
+    },
+    "pt": {
+     "t": "Crianças e animais juntos",
+     "g": "Ajuda as crianças a terem hábitos gentis e calmos com os animais.",
+     "p": [
+      "Ensina as crianças a fazer festas com suavidade, manter a calma e nunca puxar caudas ou orelhas.",
+      "Supervisiona sempre as crianças pequenas com qualquer animal.",
+      "Dá ao animal um espaço seguro onde as crianças não o possam seguir."
+     ],
+     "q": "Como poderia uma criança que conheças aprender a tratar bem os animais?",
+     "c": "Mostra a uma criança uma forma suave de cumprimentar um animal, ou pratica tu."
+    },
+    "pt_BR": {
+     "t": "Crianças e pets juntos",
+     "g": "Ajude as crianças a terem hábitos gentis e calmos com os pets.",
+     "p": [
+      "Ensine as crianças a fazer carinho com suavidade, manter a calma e nunca puxar rabos ou orelhas.",
+      "Supervisione sempre as crianças pequenas com qualquer animal.",
+      "Dê ao pet um espaço seguro onde as crianças não possam segui-lo."
+     ],
+     "q": "Como uma criança que você conhece poderia aprender a tratar bem os pets?",
+     "c": "Mostre a uma criança uma forma suave de cumprimentar um pet, ou pratique você."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pet-friendly cleaning",
+     "g": "Handle accidents and keep things hygienic.",
+     "p": [
+      "Clean accidents quickly with a pet-safe or enzyme cleaner to remove odour.",
+      "Avoid strong products with phenols or heavy fragrance near pets.",
+      "Wash bedding and bowls regularly and keep floors tidy."
+     ],
+     "q": "What is your usual way to tidy up after a pet?",
+     "c": "Wash one pet bed or blanket today with mild detergent."
+    },
+    "de": {
+     "t": "Tierfreundlich putzen",
+     "g": "Meistere Missgeschicke und halte alles hygienisch.",
+     "p": [
+      "Beseitige Missgeschicke schnell mit tierfreundlichem oder Enzymreiniger gegen Gerüche.",
+      "Vermeide scharfe Mittel mit Phenolen oder starkem Duft in Tiernähe.",
+      "Wasche Decken und Näpfe regelmäßig und halte den Boden sauber."
+     ],
+     "q": "Wie räumst du meist nach deinem Tier auf?",
+     "c": "Wasche heute ein Tierbett oder eine Decke mit mildem Waschmittel."
+    },
+    "es": {
+     "t": "Limpieza amiga de las mascotas",
+     "g": "Gestiona los accidentes y mantén todo higiénico.",
+     "p": [
+      "Limpia los accidentes pronto con un limpiador seguro o enzimático para quitar el olor.",
+      "Evita productos fuertes con fenoles o mucha fragancia cerca de ellas.",
+      "Lava con regularidad camas y cuencos y mantén los suelos limpios."
+     ],
+     "q": "¿Cómo sueles limpiar tras tu mascota?",
+     "c": "Lava hoy una cama o manta de tu mascota con detergente suave."
+    },
+    "fr": {
+     "t": "Un ménage adapté aux animaux",
+     "g": "Gère les accidents et garde tout hygiénique.",
+     "p": [
+      "Nettoie vite les accidents avec un produit sûr ou enzymatique pour supprimer l'odeur.",
+      "Évite les produits forts aux phénols ou très parfumés près des animaux.",
+      "Lave régulièrement paniers et gamelles et garde le sol propre."
+     ],
+     "q": "Comment nettoies-tu d'habitude après ton animal ?",
+     "c": "Lave aujourd'hui un panier ou un plaid avec une lessive douce."
+    },
+    "it": {
+     "t": "Pulizie a misura di animale",
+     "g": "Gestisci gli incidenti e mantieni tutto igienico.",
+     "p": [
+      "Pulisci in fretta gli incidenti con un detergente sicuro o enzimatico per togliere l'odore.",
+      "Evita prodotti forti con fenoli o profumi intensi vicino agli animali.",
+      "Lava spesso cucce e ciotole e tieni pulito il pavimento."
+     ],
+     "q": "Come ripulisci di solito dopo il tuo animale?",
+     "c": "Lava oggi una cuccia o coperta con detersivo delicato."
+    },
+    "pt": {
+     "t": "Limpeza amiga dos animais",
+     "g": "Lida com acidentes e mantém tudo higiénico.",
+     "p": [
+      "Limpa rapidamente os acidentes com um produto seguro ou enzimático para tirar o cheiro.",
+      "Evita produtos fortes com fenóis ou muito perfumados perto dos animais.",
+      "Lava com regularidade camas e taças e mantém o chão limpo."
+     ],
+     "q": "Como costumas limpar depois do teu animal?",
+     "c": "Lava hoje uma cama ou manta do teu animal com detergente suave."
+    },
+    "pt_BR": {
+     "t": "Limpeza amiga dos pets",
+     "g": "Lide com acidentes e mantenha tudo higiênico.",
+     "p": [
+      "Limpe rápido os acidentes com um produto seguro ou enzimático para tirar o cheiro.",
+      "Evite produtos fortes com fenóis ou muito perfumados perto dos pets.",
+      "Lave com regularidade caminhas e potes e mantenha o chão limpo."
+     ],
+     "q": "Como você costuma limpar depois do seu pet?",
+     "c": "Lave hoje uma caminha ou manta do seu pet com sabão neutro."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shedding and brushing basics",
+     "g": "Understand why pets shed and how to brush well.",
+     "p": [
+      "Shedding is natural, and coats change with seasons and age.",
+      "Short, gentle brushing a few times a week keeps coats healthy and reduces loose hair.",
+      "Choose a brush to match the coat: slicker, bristle or rubber."
+     ],
+     "q": "How often do you brush your pet?",
+     "c": "Brush a pet for a few calm minutes and reward with a treat."
+    },
+    "de": {
+     "t": "Haaren und Bürsten: die Basics",
+     "g": "Verstehe, warum Tiere haaren und wie du richtig bürstest.",
+     "p": [
+      "Haaren ist natürlich, das Fell wechselt mit Jahreszeit und Alter.",
+      "Kurzes, sanftes Bürsten mehrmals pro Woche hält das Fell gesund und mindert lose Haare.",
+      "Wähle die Bürste passend zum Fell: Zupfbürste, Naturborsten oder Gummi."
+     ],
+     "q": "Wie oft bürstest du dein Tier?",
+     "c": "Bürste ein Tier ein paar ruhige Minuten und belohne es mit einem Leckerli."
+    },
+    "es": {
+     "t": "Muda de pelo y cepillado básico",
+     "g": "Entiende por qué mudan el pelo y cómo cepillar bien.",
+     "p": [
+      "La muda es natural y el pelaje cambia con las estaciones y la edad.",
+      "Un cepillado corto y suave varias veces por semana mantiene el pelo sano y reduce el pelo suelto.",
+      "Elige un cepillo según el pelo: de púas, de cerdas o de goma."
+     ],
+     "q": "¿Cada cuánto cepillas a tu mascota?",
+     "c": "Cepilla a un animal unos minutos tranquilos y prémialo con un snack."
+    },
+    "fr": {
+     "t": "Mue et brossage : les bases",
+     "g": "Comprends pourquoi les animaux muent et comment bien brosser.",
+     "p": [
+      "La mue est naturelle, le pelage change avec les saisons et l'âge.",
+      "Un brossage court et doux plusieurs fois par semaine garde le poil sain et limite les poils morts.",
+      "Choisis la brosse selon le poil : carde, soies ou caoutchouc."
+     ],
+     "q": "À quelle fréquence brosses-tu ton animal ?",
+     "c": "Brosse un animal quelques minutes au calme et récompense-le d'une friandise."
+    },
+    "it": {
+     "t": "Muta e spazzolatura: le basi",
+     "g": "Capisci perché gli animali perdono il pelo e come spazzolare bene.",
+     "p": [
+      "La muta è naturale e il pelo cambia con le stagioni e l'età.",
+      "Una spazzolata breve e dolce più volte a settimana mantiene il pelo sano e riduce quello sciolto.",
+      "Scegli la spazzola in base al pelo: cardatore, setole o gomma."
+     ],
+     "q": "Ogni quanto spazzoli il tuo animale?",
+     "c": "Spazzola un animale per qualche minuto tranquillo e premialo con un bocconcino."
+    },
+    "pt": {
+     "t": "Muda de pelo e escovagem básica",
+     "g": "Percebe porque os animais mudam o pelo e como escovar bem.",
+     "p": [
+      "A muda é natural e o pelo muda com as estações e a idade.",
+      "Uma escovagem curta e suave várias vezes por semana mantém o pelo saudável e reduz o pelo solto.",
+      "Escolhe a escova conforme o pelo: de arames, de cerdas ou de borracha."
+     ],
+     "q": "Com que frequência escovas o teu animal?",
+     "c": "Escova um animal uns minutos calmos e recompensa-o com um petisco."
+    },
+    "pt_BR": {
+     "t": "Troca de pelo e escovação básica",
+     "g": "Entenda por que os pets trocam o pelo e como escovar bem.",
+     "p": [
+      "A troca é natural e o pelo muda com as estações e a idade.",
+      "Uma escovação curta e suave várias vezes por semana mantém o pelo saudável e reduz o pelo solto.",
+      "Escolha a escova conforme o pelo: slicker, de cerdas ou de borracha."
+     ],
+     "q": "Com que frequência você escova seu pet?",
+     "c": "Escove um pet por uns minutos calmos e recompense com um petisco."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sleep and rest needs",
+     "g": "Learn how much pets sleep and how to make a cosy spot.",
+     "p": [
+      "Many pets sleep far more than people: adult dogs often 12 hours or more, cats longer.",
+      "Offer a quiet, draught-free bed away from busy walkways.",
+      "Good rest helps behaviour, learning and mood."
+     ],
+     "q": "Where does your pet like to nap?",
+     "c": "Set up or improve one cosy resting spot with soft bedding."
+    },
+    "de": {
+     "t": "Schlaf- und Ruhebedürfnis",
+     "g": "Erfahre, wie viel Tiere schlafen und wie du einen gemütlichen Platz schaffst.",
+     "p": [
+      "Viele Tiere schlafen weit mehr als Menschen: erwachsene Hunde oft 12 Stunden oder mehr, Katzen länger.",
+      "Biete ein ruhiges, zugfreies Bett abseits belebter Wege an.",
+      "Gute Erholung hilft bei Verhalten, Lernen und Stimmung."
+     ],
+     "q": "Wo macht dein Tier gern ein Nickerchen?",
+     "c": "Richte einen gemütlichen Ruheplatz mit weicher Unterlage ein oder verbessere ihn."
+    },
+    "es": {
+     "t": "Necesidades de sueño y descanso",
+     "g": "Aprende cuánto duermen y cómo hacerles un rincón acogedor.",
+     "p": [
+      "Muchos animales duermen mucho más que las personas: los perros adultos suelen 12 horas o más, los gatos aún más.",
+      "Ofrece una cama tranquila, sin corrientes y lejos de zonas de paso.",
+      "Un buen descanso ayuda al comportamiento, al aprendizaje y al ánimo."
+     ],
+     "q": "¿Dónde le gusta echar la siesta a tu mascota?",
+     "c": "Prepara o mejora un rincón de descanso con ropa de cama suave."
+    },
+    "fr": {
+     "t": "Besoins de sommeil et de repos",
+     "g": "Apprends combien dorment les animaux et comment leur créer un coin douillet.",
+     "p": [
+      "Beaucoup d'animaux dorment bien plus que nous : chiens adultes souvent 12 heures ou plus, chats davantage.",
+      "Propose un panier calme, sans courant d'air, loin des passages.",
+      "Un bon repos aide le comportement, l'apprentissage et l'humeur."
+     ],
+     "q": "Où ton animal aime-t-il faire la sieste ?",
+     "c": "Installe ou améliore un coin repos avec une literie douce."
+    },
+    "it": {
+     "t": "Bisogni di sonno e riposo",
+     "g": "Scopri quanto dormono gli animali e come fare loro un angolo accogliente.",
+     "p": [
+      "Molti animali dormono molto più di noi: i cani adulti spesso 12 ore o più, i gatti ancora di più.",
+      "Offri una cuccia tranquilla, senza correnti d'aria e lontana dai passaggi.",
+      "Un buon riposo aiuta comportamento, apprendimento e umore."
+     ],
+     "q": "Dove ama fare il pisolino il tuo animale?",
+     "c": "Prepara o migliora un angolo di riposo con un morbido giaciglio."
+    },
+    "pt": {
+     "t": "Necessidades de sono e descanso",
+     "g": "Descobre quanto dormem os animais e como lhes fazer um cantinho acolhedor.",
+     "p": [
+      "Muitos animais dormem bem mais do que as pessoas: cães adultos muitas vezes 12 horas ou mais, gatos ainda mais.",
+      "Oferece uma cama sossegada, sem correntes de ar e longe das zonas de passagem.",
+      "Um bom descanso ajuda o comportamento, a aprendizagem e o humor."
+     ],
+     "q": "Onde gosta o teu animal de fazer a sesta?",
+     "c": "Prepara ou melhora um canto de descanso com roupa de cama macia."
+    },
+    "pt_BR": {
+     "t": "Necessidades de sono e descanso",
+     "g": "Descubra quanto os pets dormem e como fazer um cantinho aconchegante.",
+     "p": [
+      "Muitos pets dormem bem mais que as pessoas: cães adultos muitas vezes 12 horas ou mais, gatos ainda mais.",
+      "Ofereça uma caminha sossegada, sem correntes de ar e longe de áreas de passagem.",
+      "Um bom descanso ajuda o comportamento, o aprendizado e o humor."
+     ],
+     "q": "Onde o seu pet gosta de tirar uma soneca?",
+     "c": "Prepare ou melhore um cantinho de descanso com forração macia."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Recognising a happy pet",
+     "g": "Spot the signs of a content, thriving animal.",
+     "p": [
+      "Happy pets show relaxed posture, curiosity, good appetite and playfulness.",
+      "Soft eyes, gentle breathing and easy movement are good signs.",
+      "Knowing your pet's normal makes it easier to spot changes."
+     ],
+     "q": "What makes your pet look most content?",
+     "c": "Note three signs that tell you your pet is feeling good today."
+    },
+    "de": {
+     "t": "Ein glückliches Tier erkennen",
+     "g": "Erkenne die Zeichen eines zufriedenen, gesunden Tieres.",
+     "p": [
+      "Glückliche Tiere zeigen entspannte Haltung, Neugier, guten Appetit und Spielfreude.",
+      "Weiche Augen, ruhiges Atmen und leichte Bewegungen sind gute Zeichen.",
+      "Wer das Normale seines Tieres kennt, bemerkt Veränderungen leichter."
+     ],
+     "q": "Woran erkennst du, dass dein Tier zufrieden ist?",
+     "c": "Notiere drei Zeichen, dass es deinem Tier heute gut geht."
+    },
+    "es": {
+     "t": "Reconocer a una mascota feliz",
+     "g": "Detecta las señales de un animal contento y sano.",
+     "p": [
+      "Las mascotas felices muestran postura relajada, curiosidad, buen apetito y ganas de jugar.",
+      "Ojos suaves, respiración tranquila y movimientos fluidos son buenas señales.",
+      "Conocer lo normal en tu mascota facilita notar cambios."
+     ],
+     "q": "¿Qué hace que tu mascota parezca más contenta?",
+     "c": "Anota tres señales de que tu mascota se siente bien hoy."
+    },
+    "fr": {
+     "t": "Reconnaître un animal heureux",
+     "g": "Repère les signes d'un animal serein et en forme.",
+     "p": [
+      "Un animal heureux montre une posture détendue, de la curiosité, un bon appétit et l'envie de jouer.",
+      "Regard doux, respiration calme et mouvements aisés sont de bons signes.",
+      "Connaître le normal de ton animal aide à repérer les changements."
+     ],
+     "q": "Qu'est-ce qui rend ton animal le plus serein ?",
+     "c": "Note trois signes qui montrent que ton animal va bien aujourd'hui."
+    },
+    "it": {
+     "t": "Riconoscere un animale felice",
+     "g": "Individua i segni di un animale sereno e in forma.",
+     "p": [
+      "Gli animali felici mostrano postura rilassata, curiosità, buon appetito e voglia di giocare.",
+      "Occhi dolci, respiro calmo e movimenti sciolti sono buoni segni.",
+      "Conoscere la normalità del tuo animale aiuta a notare i cambiamenti."
+     ],
+     "q": "Cosa fa apparire il tuo animale più sereno?",
+     "c": "Annota tre segni che mostrano che il tuo animale sta bene oggi."
+    },
+    "pt": {
+     "t": "Reconhecer um animal feliz",
+     "g": "Deteta os sinais de um animal contente e saudável.",
+     "p": [
+      "Os animais felizes mostram postura relaxada, curiosidade, bom apetite e vontade de brincar.",
+      "Olhos suaves, respiração calma e movimentos fluidos são bons sinais.",
+      "Conhecer o normal do teu animal ajuda a notar mudanças."
+     ],
+     "q": "O que deixa o teu animal mais contente?",
+     "c": "Anota três sinais de que o teu animal está bem hoje."
+    },
+    "pt_BR": {
+     "t": "Reconhecer um pet feliz",
+     "g": "Perceba os sinais de um animal contente e saudável.",
+     "p": [
+      "Pets felizes mostram postura relaxada, curiosidade, bom apetite e vontade de brincar.",
+      "Olhos suaves, respiração calma e movimentos fluidos são bons sinais.",
+      "Conhecer o normal do seu pet ajuda a notar mudanças."
+     ],
+     "q": "O que deixa o seu pet mais contente?",
+     "c": "Anote três sinais de que o seu pet está bem hoje."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "When to call the vet",
+     "g": "Learn general signs that mean a professional should check your pet.",
+     "p": [
+      "Not eating, ongoing vomiting, trouble breathing or sudden changes in behaviour need a vet.",
+      "Limping, heavy scratching or a pet hiding more than usual are also worth a call.",
+      "When in doubt, call: a vet can advise and you cannot be wrong for asking."
+     ],
+     "q": "What would you do if your pet seemed unwell?",
+     "c": "Save your vet's number and the emergency vet's number in your phone."
+    },
+    "de": {
+     "t": "Wann zum Tierarzt?",
+     "g": "Lerne allgemeine Zeichen kennen, bei denen ein Profi nachsehen sollte.",
+     "p": [
+      "Futterverweigerung, anhaltendes Erbrechen, Atemnot oder plötzliche Verhaltensänderungen gehören zum Tierarzt.",
+      "Hinken, starkes Kratzen oder ungewöhnlich viel Verstecken sind ebenfalls einen Anruf wert.",
+      "Im Zweifel anrufen: Der Tierarzt berät, und Nachfragen ist nie falsch."
+     ],
+     "q": "Was würdest du tun, wenn dein Tier krank wirkt?",
+     "c": "Speichere die Nummer deines Tierarztes und des Notdienstes im Handy."
+    },
+    "es": {
+     "t": "Cuándo llamar al veterinario",
+     "g": "Conoce señales generales que piden la revisión de un profesional.",
+     "p": [
+      "No comer, vómitos continuos, dificultad para respirar o cambios bruscos de conducta requieren veterinario.",
+      "Cojera, rascado intenso o esconderse más de lo normal también merecen una llamada.",
+      "Ante la duda, llama: el veterinario te aconseja y preguntar nunca es un error."
+     ],
+     "q": "¿Qué harías si tu mascota pareciera estar mal?",
+     "c": "Guarda en tu móvil el número de tu veterinario y el de urgencias."
+    },
+    "fr": {
+     "t": "Quand appeler le vétérinaire",
+     "g": "Apprends les signes généraux qui demandent l'avis d'un professionnel.",
+     "p": [
+      "Refus de manger, vomissements persistants, gêne respiratoire ou changement brutal de comportement : vétérinaire.",
+      "Boiterie, grattage intense ou besoin de se cacher inhabituel méritent aussi un appel.",
+      "Dans le doute, appelle : le vétérinaire te conseille et demander n'est jamais une erreur."
+     ],
+     "q": "Que ferais-tu si ton animal semblait malade ?",
+     "c": "Enregistre dans ton téléphone le numéro de ton vétérinaire et celui des urgences."
+    },
+    "it": {
+     "t": "Quando chiamare il veterinario",
+     "g": "Impara i segni generali per cui un professionista deve controllare.",
+     "p": [
+      "Rifiuto del cibo, vomito continuo, difficoltà respiratorie o cambi bruschi di comportamento richiedono il veterinario.",
+      "Zoppia, grattamento intenso o nascondersi più del solito meritano una telefonata.",
+      "Nel dubbio, chiama: il veterinario ti consiglia e chiedere non è mai sbagliato."
+     ],
+     "q": "Cosa faresti se il tuo animale sembrasse stare male?",
+     "c": "Salva sul telefono il numero del tuo veterinario e quello delle urgenze."
+    },
+    "pt": {
+     "t": "Quando ligar ao veterinário",
+     "g": "Conhece sinais gerais que pedem a observação de um profissional.",
+     "p": [
+      "Não comer, vómitos persistentes, dificuldade em respirar ou mudanças súbitas de comportamento pedem veterinário.",
+      "Coxear, coçar muito ou esconder-se mais do que o normal também merecem um telefonema.",
+      "Na dúvida, liga: o veterinário aconselha e perguntar nunca é um erro."
+     ],
+     "q": "O que farias se o teu animal parecesse doente?",
+     "c": "Guarda no telemóvel o número do teu veterinário e o das urgências."
+    },
+    "pt_BR": {
+     "t": "Quando ligar para o veterinário",
+     "g": "Conheça sinais gerais que pedem a avaliação de um profissional.",
+     "p": [
+      "Não comer, vômitos persistentes, dificuldade para respirar ou mudanças bruscas de comportamento pedem veterinário.",
+      "Mancar, coçar muito ou se esconder mais que o normal também merecem uma ligação.",
+      "Na dúvida, ligue: o veterinário orienta e perguntar nunca é erro."
+     ],
+     "q": "O que você faria se seu pet parecesse mal?",
+     "c": "Salve no celular o número do seu veterinário e o do pronto-socorro veterinário."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keeping a pet care diary",
+     "g": "Track the small things so changes stand out.",
+     "p": [
+      "Write down meals, weight, walks, vet visits and any odd moments.",
+      "Notes help you notice slow changes that daily life can hide.",
+      "A diary is also handy to show your vet at appointments."
+     ],
+     "q": "What would you most like to track about your pet?",
+     "c": "Start a simple diary with today's meals and activities."
+    },
+    "de": {
+     "t": "Ein Pflegetagebuch führen",
+     "g": "Halte Kleinigkeiten fest, damit Veränderungen auffallen.",
+     "p": [
+      "Notiere Mahlzeiten, Gewicht, Spaziergänge, Tierarztbesuche und Auffälliges.",
+      "Notizen zeigen schleichende Veränderungen, die der Alltag verdeckt.",
+      "Ein Tagebuch ist auch praktisch für Termine beim Tierarzt."
+     ],
+     "q": "Was würdest du bei deinem Tier am liebsten festhalten?",
+     "c": "Beginne ein einfaches Tagebuch mit den heutigen Mahlzeiten und Aktivitäten."
+    },
+    "es": {
+     "t": "Llevar un diario de cuidados",
+     "g": "Anota lo pequeño para que los cambios destaquen.",
+     "p": [
+      "Apunta comidas, peso, paseos, visitas al veterinario y momentos raros.",
+      "Las notas ayudan a ver cambios lentos que el día a día esconde.",
+      "Un diario también es útil para enseñárselo al veterinario en las citas."
+     ],
+     "q": "¿Qué te gustaría registrar más de tu mascota?",
+     "c": "Empieza un diario sencillo con las comidas y actividades de hoy."
+    },
+    "fr": {
+     "t": "Tenir un carnet de soins",
+     "g": "Note les petits détails pour que les changements se voient.",
+     "p": [
+      "Écris repas, poids, balades, visites vétérinaires et moments inhabituels.",
+      "Les notes révèlent les changements lents que le quotidien cache.",
+      "Un carnet est aussi pratique à montrer au vétérinaire."
+     ],
+     "q": "Que voudrais-tu suivre le plus chez ton animal ?",
+     "c": "Commence un carnet simple avec les repas et activités du jour."
+    },
+    "it": {
+     "t": "Tenere un diario di cura",
+     "g": "Annota i piccoli dettagli perché i cambiamenti emergano.",
+     "p": [
+      "Scrivi pasti, peso, passeggiate, visite veterinarie e momenti strani.",
+      "Gli appunti mostrano i cambiamenti lenti che la quotidianità nasconde.",
+      "Un diario è utile anche da mostrare al veterinario alle visite."
+     ],
+     "q": "Cosa vorresti tenere sotto controllo del tuo animale?",
+     "c": "Inizia un diario semplice con i pasti e le attività di oggi."
+    },
+    "pt": {
+     "t": "Manter um diário de cuidados",
+     "g": "Regista as pequenas coisas para que as mudanças se notem.",
+     "p": [
+      "Escreve refeições, peso, passeios, visitas ao veterinário e momentos estranhos.",
+      "As notas ajudam a ver mudanças lentas que o dia a dia esconde.",
+      "Um diário também é útil para mostrar ao veterinário nas consultas."
+     ],
+     "q": "O que gostarias mais de registar sobre o teu animal?",
+     "c": "Começa um diário simples com as refeições e atividades de hoje."
+    },
+    "pt_BR": {
+     "t": "Manter um diário de cuidados",
+     "g": "Registre as pequenas coisas para que as mudanças apareçam.",
+     "p": [
+      "Escreva refeições, peso, passeios, visitas ao veterinário e momentos estranhos.",
+      "As anotações ajudam a ver mudanças lentas que o dia a dia esconde.",
+      "Um diário também é útil para mostrar ao veterinário nas consultas."
+     ],
+     "q": "O que você mais gostaria de registrar sobre o seu pet?",
+     "c": "Comece um diário simples com as refeições e atividades de hoje."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pets in different cultures",
+     "g": "Explore how people around the world live with animals.",
+     "p": [
+      "Village cats keep barns tidy, while city dogs join cafés in some countries.",
+      "Traditions differ: some families see pets as members, others as helpers.",
+      "Kindness to animals is a value found in cultures everywhere."
+     ],
+     "q": "How do people in your culture live with animals?",
+     "c": "Ask someone from another country how pets are treated there."
+    },
+    "de": {
+     "t": "Haustiere in verschiedenen Kulturen",
+     "g": "Entdecke, wie Menschen weltweit mit Tieren leben.",
+     "p": [
+      "Dorfkatzen halten Scheunen mäusefrei, Stadthunde begleiten ihre Menschen in manchen Ländern ins Café.",
+      "Traditionen unterscheiden sich: Manche sehen Tiere als Familienmitglieder, andere als Helfer.",
+      "Freundlichkeit zu Tieren ist ein Wert, den es in allen Kulturen gibt."
+     ],
+     "q": "Wie leben Menschen in deiner Kultur mit Tieren?",
+     "c": "Frag jemanden aus einem anderen Land, wie dort mit Haustieren umgegangen wird."
+    },
+    "es": {
+     "t": "Mascotas en diferentes culturas",
+     "g": "Explora cómo viven con los animales personas de todo el mundo.",
+     "p": [
+      "Los gatos de pueblo cuidan los graneros y en algunos países los perros de ciudad van a los cafés.",
+      "Las tradiciones varían: unos ven a los animales como familia, otros como ayudantes.",
+      "La bondad hacia los animales es un valor presente en todas las culturas."
+     ],
+     "q": "¿Cómo conviven las personas con los animales en tu cultura?",
+     "c": "Pregunta a alguien de otro país cómo tratan allí a las mascotas."
+    },
+    "fr": {
+     "t": "Les animaux dans différentes cultures",
+     "g": "Explore comment les gens vivent avec les animaux dans le monde.",
+     "p": [
+      "Les chats de village gardent les granges et, dans certains pays, les chiens de ville vont au café.",
+      "Les traditions varient : pour certains l'animal est de la famille, pour d'autres un auxiliaire.",
+      "La bienveillance envers les animaux est une valeur présente dans toutes les cultures."
+     ],
+     "q": "Comment les gens vivent-ils avec les animaux dans ta culture ?",
+     "c": "Demande à quelqu'un d'un autre pays comment on traite les animaux là-bas."
+    },
+    "it": {
+     "t": "Gli animali in culture diverse",
+     "g": "Esplora come vivono con gli animali le persone nel mondo.",
+     "p": [
+      "I gatti di paese sorvegliano i granai e in alcuni paesi i cani di città vanno al bar.",
+      "Le tradizioni variano: per alcuni gli animali sono famiglia, per altri aiutanti.",
+      "La gentilezza verso gli animali è un valore presente in ogni cultura."
+     ],
+     "q": "Come vivono con gli animali le persone nella tua cultura?",
+     "c": "Chiedi a qualcuno di un altro paese come si trattano gli animali lì."
+    },
+    "pt": {
+     "t": "Animais em diferentes culturas",
+     "g": "Explora como vivem com animais as pessoas de todo o mundo.",
+     "p": [
+      "Os gatos de aldeia guardam os celeiros e em alguns países os cães da cidade vão aos cafés.",
+      "As tradições variam: uns veem os animais como família, outros como ajudantes.",
+      "A bondade para com os animais é um valor presente em todas as culturas."
+     ],
+     "q": "Como vivem as pessoas com os animais na tua cultura?",
+     "c": "Pergunta a alguém de outro país como tratam lá os animais."
+    },
+    "pt_BR": {
+     "t": "Pets em diferentes culturas",
+     "g": "Explore como as pessoas do mundo todo vivem com animais.",
+     "p": [
+      "Gatos de vila cuidam dos celeiros e em alguns países cães da cidade vão a cafés.",
+      "As tradições variam: uns veem os pets como família, outros como ajudantes.",
+      "A gentileza com os animais é um valor presente em todas as culturas."
+     ],
+     "q": "Como as pessoas convivem com animais na sua cultura?",
+     "c": "Pergunte a alguém de outro país como os pets são tratados lá."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: your pet care foundations",
+     "g": "Recap the first month of pet care basics.",
+     "p": [
+      "You have covered choosing a pet, home safety, food, routines and body language.",
+      "You also learned when to call the vet and why a diary helps.",
+      "Small daily habits are what make a pet feel loved and safe."
+     ],
+     "q": "Which lesson from this month helped you most?",
+     "c": "Pick your favourite tip and share it with a fellow animal lover."
+    },
+    "de": {
+     "t": "Rückblick: deine Grundlagen der Tierpflege",
+     "g": "Wiederhole den ersten Monat der Tierpflege-Basics.",
+     "p": [
+      "Du hast Tierwahl, Sicherheit zu Hause, Futter, Routinen und Körpersprache behandelt.",
+      "Außerdem weißt du, wann der Tierarzt gefragt ist und warum ein Tagebuch hilft.",
+      "Kleine tägliche Gewohnheiten lassen ein Tier sich geliebt und sicher fühlen."
+     ],
+     "q": "Welche Lektion dieses Monats hat dir am meisten geholfen?",
+     "c": "Such deinen liebsten Tipp aus und teile ihn mit einem Tierfreund."
+    },
+    "es": {
+     "t": "Repaso: tus bases del cuidado de mascotas",
+     "g": "Repasa el primer mes de nociones básicas de cuidado.",
+     "p": [
+      "Has visto cómo elegir mascota, seguridad en casa, comida, rutinas y lenguaje corporal.",
+      "También aprendiste cuándo llamar al veterinario y por qué ayuda un diario.",
+      "Los pequeños hábitos diarios hacen que una mascota se sienta querida y segura."
+     ],
+     "q": "¿Qué lección de este mes te ha ayudado más?",
+     "c": "Elige tu consejo favorito y compártelo con otro amante de los animales."
+    },
+    "fr": {
+     "t": "Révision : les bases des soins aux animaux",
+     "g": "Reprends le premier mois des bases des soins.",
+     "p": [
+      "Tu as vu le choix d'un animal, la sécurité à la maison, l'alimentation, les routines et le langage corporel.",
+      "Tu sais aussi quand appeler le vétérinaire et pourquoi un carnet aide.",
+      "Ce sont les petites habitudes quotidiennes qui font qu'un animal se sent aimé et en sécurité."
+     ],
+     "q": "Quelle leçon de ce mois t'a le plus aidé ?",
+     "c": "Choisis ton conseil préféré et partage-le avec un autre amoureux des animaux."
+    },
+    "it": {
+     "t": "Ripasso: le basi della cura degli animali",
+     "g": "Ripassa il primo mese di basi sulla cura.",
+     "p": [
+      "Hai visto scelta dell'animale, sicurezza in casa, cibo, routine e linguaggio del corpo.",
+      "Hai anche imparato quando chiamare il veterinario e perché aiuta un diario.",
+      "Sono le piccole abitudini quotidiane a far sentire un animale amato e al sicuro."
+     ],
+     "q": "Quale lezione di questo mese ti è servita di più?",
+     "c": "Scegli il tuo consiglio preferito e condividilo con un altro amante degli animali."
+    },
+    "pt": {
+     "t": "Revisão: as bases dos cuidados com animais",
+     "g": "Recorda o primeiro mês de noções básicas de cuidados.",
+     "p": [
+      "Viste a escolha do animal, segurança em casa, alimentação, rotinas e linguagem corporal.",
+      "Aprendeste também quando ligar ao veterinário e porque ajuda um diário.",
+      "São os pequenos hábitos diários que fazem um animal sentir-se amado e seguro."
+     ],
+     "q": "Que lição deste mês te ajudou mais?",
+     "c": "Escolhe a tua dica preferida e partilha-a com outro amante de animais."
+    },
+    "pt_BR": {
+     "t": "Revisão: as bases dos cuidados com pets",
+     "g": "Relembre o primeiro mês de noções básicas de cuidados.",
+     "p": [
+      "Você viu a escolha do pet, segurança em casa, alimentação, rotinas e linguagem corporal.",
+      "Também aprendeu quando ligar para o veterinário e por que um diário ajuda.",
+      "São os pequenos hábitos diários que fazem um pet se sentir amado e seguro."
+     ],
+     "q": "Qual lição deste mês mais ajudou você?",
+     "c": "Escolha sua dica favorita e compartilhe com outro amante de animais."
+    }
+   }
+  }
+ ]
+}

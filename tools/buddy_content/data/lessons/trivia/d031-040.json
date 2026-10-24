@@ -1,0 +1,835 @@
+{
+ "topic": "trivia",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wonders of the Ancient World",
+     "g": "Meet the famous list of seven marvels made by ancient peoples.",
+     "p": [
+      "The list includes the Great Pyramid, the Hanging Gardens, the Statue of Zeus and the Temple of Artemis.",
+      "It also names the Mausoleum at Halicarnassus, the Colossus of Rhodes and the Lighthouse of Alexandria.",
+      "Only the Great Pyramid of Giza still stands today."
+     ],
+     "q": "Which ancient wonder would you most like to have seen in its prime?",
+     "c": "Name as many of the seven ancient wonders as you can, starting with the one that survives."
+    },
+    "de": {
+     "t": "Wunder der antiken Welt",
+     "g": "Lerne die berühmte Liste der sieben Weltwunder antiker Völker kennen.",
+     "p": [
+      "Auf der Liste stehen die Große Pyramide, die Hängenden Gärten, die Zeusstatue und der Artemistempel.",
+      "Dazu kommen das Mausoleum von Halikarnassos, der Koloss von Rhodos und der Leuchtturm von Alexandria.",
+      "Nur die Große Pyramide von Gizeh steht heute noch."
+     ],
+     "q": "Welches antike Weltwunder hättest du am liebsten in seiner Blütezeit gesehen?",
+     "c": "Nenne so viele der sieben antiken Wunder wie möglich, beginnend mit dem erhaltenen."
+    },
+    "es": {
+     "t": "Maravillas del Mundo Antiguo",
+     "g": "Conoce la famosa lista de siete maravillas creadas por pueblos antiguos.",
+     "p": [
+      "La lista incluye la Gran Pirámide, los Jardines Colgantes, la estatua de Zeus y el templo de Artemisa.",
+      "También figuran el Mausoleo de Halicarnaso, el Coloso de Rodas y el Faro de Alejandría.",
+      "Solo la Gran Pirámide de Guiza sigue en pie hoy."
+     ],
+     "q": "¿Qué maravilla antigua te habría gustado ver en su esplendor?",
+     "c": "Nombra cuantas maravillas antiguas puedas, empezando por la que sobrevive."
+    },
+    "fr": {
+     "t": "Merveilles du monde antique",
+     "g": "Découvre la célèbre liste de sept merveilles créées par les peuples anciens.",
+     "p": [
+      "La liste comprend la Grande Pyramide, les Jardins suspendus, la statue de Zeus et le temple d'Artémis.",
+      "Elle nomme aussi le Mausolée d'Halicarnasse, le Colosse de Rhodes et le phare d'Alexandrie.",
+      "Seule la Grande Pyramide de Gizeh est encore debout aujourd'hui."
+     ],
+     "q": "Quelle merveille antique aimerais-tu avoir vue à son apogée ?",
+     "c": "Cite autant de merveilles antiques que possible, en commençant par celle qui subsiste."
+    },
+    "it": {
+     "t": "Le meraviglie del mondo antico",
+     "g": "Conosci la famosa lista di sette meraviglie create dai popoli antichi.",
+     "p": [
+      "La lista comprende la Grande Piramide, i Giardini Pensili, la statua di Zeus e il tempio di Artemide.",
+      "Include anche il Mausoleo di Alicarnasso, il Colosso di Rodi e il Faro di Alessandria.",
+      "Solo la Grande Piramide di Giza è ancora in piedi oggi."
+     ],
+     "q": "Quale meraviglia antica vorresti aver visto al suo splendore?",
+     "c": "Nomina quante più meraviglie antiche puoi, partendo da quella che sopravvive."
+    },
+    "pt": {
+     "t": "Maravilhas do Mundo Antigo",
+     "g": "Conhece a famosa lista de sete maravilhas criadas por povos antigos.",
+     "p": [
+      "A lista inclui a Grande Pirâmide, os Jardins Suspensos, a estátua de Zeus e o templo de Ártemis.",
+      "Inclui também o Mausoléu de Halicarnasso, o Colosso de Rodes e o Farol de Alexandria.",
+      "Só a Grande Pirâmide de Gizé continua de pé hoje."
+     ],
+     "q": "Que maravilha antiga gostarias de ter visto no seu esplendor?",
+     "c": "Diz o maior número possível de maravilhas antigas, começando pela que sobrevive."
+    },
+    "pt_BR": {
+     "t": "Maravilhas do Mundo Antigo",
+     "g": "Conheça a famosa lista de sete maravilhas criadas por povos antigos.",
+     "p": [
+      "A lista inclui a Grande Pirâmide, os Jardins Suspensos, a estátua de Zeus e o templo de Ártemis.",
+      "Inclui também o Mausoléu de Halicarnasso, o Colosso de Rodes e o Farol de Alexandria.",
+      "Só a Grande Pirâmide de Gizé continua de pé hoje."
+     ],
+     "q": "Qual maravilha antiga você gostaria de ter visto no auge?",
+     "c": "Diga o maior número possível de maravilhas antigas, começando pela que sobrevive."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "New Seven Wonders",
+     "g": "Learn the modern list of wonders chosen by a worldwide public vote.",
+     "p": [
+      "The new seven are the Great Wall of China, Petra, Machu Picchu and Christ the Redeemer.",
+      "They also include Chichén Itzá, the Colosseum in Rome and the Taj Mahal.",
+      "The vote took place in 2007, and the Giza pyramids joined as an honorary candidate."
+     ],
+     "q": "Which of these places have you seen, or which would you visit first?",
+     "c": "Match each of the seven with its country: for example, Petra is in Jordan."
+    },
+    "de": {
+     "t": "Die neuen sieben Weltwunder",
+     "g": "Lerne die moderne Liste der Wunder kennen, die per weltweiter Abstimmung gewählt wurden.",
+     "p": [
+      "Die neuen sieben sind die Chinesische Mauer, Petra, Machu Picchu und die Christusstatue von Rio.",
+      "Dazu kommen Chichén Itzá, das Kolosseum in Rom und das Taj Mahal.",
+      "Die Abstimmung fand 2007 statt, und die Pyramiden von Gizeh waren Ehrenkandidat."
+     ],
+     "q": "Welche dieser Orte hast du gesehen, oder welchen würdest du zuerst besuchen?",
+     "c": "Ordne jedes der sieben seinem Land zu: Petra liegt zum Beispiel in Jordanien."
+    },
+    "es": {
+     "t": "Las nuevas siete maravillas",
+     "g": "Aprende la lista moderna de maravillas elegidas por voto público mundial.",
+     "p": [
+      "Las nuevas siete son la Gran Muralla china, Petra, Machu Picchu y el Cristo Redentor.",
+      "También incluyen Chichén Itzá, el Coliseo de Roma y el Taj Mahal.",
+      "La votación fue en 2007 y las pirámides de Guiza se unieron como candidata honoraria."
+     ],
+     "q": "¿Cuáles de estos lugares has visto o cuál visitarías primero?",
+     "c": "Une cada una de las siete con su país: por ejemplo, Petra está en Jordania."
+    },
+    "fr": {
+     "t": "Les nouvelles sept merveilles",
+     "g": "Apprends la liste moderne de merveilles choisies par un vote public mondial.",
+     "p": [
+      "Les sept nouvelles sont la Grande Muraille de Chine, Pétra, le Machu Picchu et le Christ Rédempteur.",
+      "Il y a aussi Chichén Itzá, le Colisée de Rome et le Taj Mahal.",
+      "Le vote a eu lieu en 2007, et les pyramides de Gizeh y figuraient en candidate d'honneur."
+     ],
+     "q": "Parmi ces lieux, lesquels as-tu vus, ou lequel visiterais-tu d'abord ?",
+     "c": "Associe chacune des sept à son pays : par exemple, Pétra est en Jordanie."
+    },
+    "it": {
+     "t": "Le nuove sette meraviglie",
+     "g": "Impara la lista moderna di meraviglie scelte da un voto pubblico mondiale.",
+     "p": [
+      "Le nuove sette sono la Grande Muraglia cinese, Petra, Machu Picchu e il Cristo Redentore.",
+      "Includono anche Chichén Itzá, il Colosseo di Roma e il Taj Mahal.",
+      "Il voto si tenne nel 2007 e le piramidi di Giza furono candidate onorarie."
+     ],
+     "q": "Quali di questi luoghi hai visto o quale visiteresti per primo?",
+     "c": "Abbina ciascuna delle sette al suo paese: per esempio Petra è in Giordania."
+    },
+    "pt": {
+     "t": "As novas sete maravilhas",
+     "g": "Aprende a lista moderna de maravilhas escolhidas por voto público mundial.",
+     "p": [
+      "As novas sete são a Grande Muralha da China, Petra, Machu Picchu e o Cristo Redentor.",
+      "Incluem também Chichén Itzá, o Coliseu de Roma e o Taj Mahal.",
+      "A votação foi em 2007 e as pirâmides de Gizé juntaram-se como candidata honorária."
+     ],
+     "q": "Quais destes lugares já viste ou qual visitarias primeiro?",
+     "c": "Associa cada uma das sete ao seu país: por exemplo, Petra fica na Jordânia."
+    },
+    "pt_BR": {
+     "t": "As novas sete maravilhas",
+     "g": "Aprenda a lista moderna de maravilhas escolhidas por voto público mundial.",
+     "p": [
+      "As novas sete são a Grande Muralha da China, Petra, Machu Picchu e o Cristo Redentor.",
+      "Incluem também Chichén Itzá, o Coliseu de Roma e o Taj Mahal.",
+      "A votação foi em 2007 e as pirâmides de Gizé entraram como candidata honorária."
+     ],
+     "q": "Quais desses lugares você já viu ou qual visitaria primeiro?",
+     "c": "Associe cada uma das sete ao seu país: por exemplo, Petra fica na Jordânia."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Famous landmarks",
+     "g": "Learn a fun fact about three world-famous landmarks.",
+     "p": [
+      "The Eiffel Tower in Paris was finished in 1889 and was meant to stand only temporarily.",
+      "The Statue of Liberty was a gift from France to the United States, dedicated in 1886.",
+      "The Sydney Opera House is known for its sail-shaped roofs and opened in 1973."
+     ],
+     "q": "Which landmark is closest to where you live, and what is its story?",
+     "c": "Pick a landmark in your region and find one fact most people do not know."
+    },
+    "de": {
+     "t": "Berühmte Wahrzeichen",
+     "g": "Lerne je einen Fun Fact zu drei weltberühmten Wahrzeichen.",
+     "p": [
+      "Der Eiffelturm in Paris wurde 1889 fertig und sollte eigentlich nur vorübergehend stehen.",
+      "Die Freiheitsstatue war ein Geschenk Frankreichs an die USA und wurde 1886 eingeweiht.",
+      "Das Opernhaus von Sydney ist für seine segelförmigen Dächer bekannt und wurde 1973 eröffnet."
+     ],
+     "q": "Welches Wahrzeichen ist dir am nächsten, und was ist seine Geschichte?",
+     "c": "Wähle ein Wahrzeichen deiner Region und finde einen Fakt, den die meisten nicht kennen."
+    },
+    "es": {
+     "t": "Monumentos famosos",
+     "g": "Aprende un dato curioso de tres monumentos famosos en todo el mundo.",
+     "p": [
+      "La Torre Eiffel de París se terminó en 1889 y debía ser solo temporal.",
+      "La Estatua de la Libertad fue un regalo de Francia a Estados Unidos, inaugurada en 1886.",
+      "La Ópera de Sídney es famosa por sus techos en forma de vela y abrió en 1973."
+     ],
+     "q": "¿Qué monumento está más cerca de donde vives y cuál es su historia?",
+     "c": "Elige un monumento de tu región y busca un dato que casi nadie conozca."
+    },
+    "fr": {
+     "t": "Monuments célèbres",
+     "g": "Apprends un fait amusant sur trois monuments mondialement connus.",
+     "p": [
+      "La tour Eiffel à Paris fut achevée en 1889 et ne devait être que temporaire.",
+      "La statue de la Liberté fut un cadeau de la France aux États-Unis, inaugurée en 1886.",
+      "L'opéra de Sydney est connu pour ses toits en forme de voiles et a ouvert en 1973."
+     ],
+     "q": "Quel monument est le plus proche de chez toi, et quelle est son histoire ?",
+     "c": "Choisis un monument de ta région et trouve un fait que peu de gens connaissent."
+    },
+    "it": {
+     "t": "Monumenti famosi",
+     "g": "Impara una curiosità su tre monumenti famosi in tutto il mondo.",
+     "p": [
+      "La Torre Eiffel di Parigi fu terminata nel 1889 e doveva essere solo temporanea.",
+      "La Statua della Libertà fu un dono della Francia agli Stati Uniti, inaugurata nel 1886.",
+      "L'Opera House di Sydney è nota per i tetti a forma di vela e aprì nel 1973."
+     ],
+     "q": "Quale monumento è più vicino a casa tua e qual è la sua storia?",
+     "c": "Scegli un monumento della tua zona e trova una curiosità che pochi conoscono."
+    },
+    "pt": {
+     "t": "Monumentos famosos",
+     "g": "Aprende uma curiosidade sobre três monumentos conhecidos em todo o mundo.",
+     "p": [
+      "A Torre Eiffel, em Paris, ficou pronta em 1889 e devia ser apenas temporária.",
+      "A Estátua da Liberdade foi uma oferta da França aos Estados Unidos, inaugurada em 1886.",
+      "A Ópera de Sydney é conhecida pelos telhados em forma de vela e abriu em 1973."
+     ],
+     "q": "Que monumento fica mais perto de ti e qual é a sua história?",
+     "c": "Escolhe um monumento da tua região e descobre um facto que poucos conhecem."
+    },
+    "pt_BR": {
+     "t": "Monumentos famosos",
+     "g": "Aprenda uma curiosidade sobre três monumentos conhecidos no mundo todo.",
+     "p": [
+      "A Torre Eiffel, em Paris, ficou pronta em 1889 e deveria ser apenas temporária.",
+      "A Estátua da Liberdade foi um presente da França aos Estados Unidos, inaugurada em 1886.",
+      "A Ópera de Sydney é conhecida pelos telhados em forma de vela e abriu em 1973."
+     ],
+     "q": "Qual monumento fica mais perto de você e qual é a história dele?",
+     "c": "Escolha um monumento da sua região e descubra um fato que poucos conhecem."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ancient Egypt",
+     "g": "Explore pyramids, hieroglyphs and the stone that unlocked a lost writing.",
+     "p": [
+      "The pyramids of Giza were built as royal tombs more than four thousand years ago.",
+      "Hieroglyphs are picture-based symbols that ancient Egyptians used for sacred and royal writing.",
+      "The Rosetta Stone, found in 1799, carried the same text in three scripts and helped scholars read hieroglyphs again."
+     ],
+     "q": "If you could ask an ancient Egyptian one question, what would it be?",
+     "c": "Write your first name in hieroglyph style by drawing a small picture for each sound."
+    },
+    "de": {
+     "t": "Das alte Ägypten",
+     "g": "Erkunde Pyramiden, Hieroglyphen und den Stein, der eine verlorene Schrift entschlüsselte.",
+     "p": [
+      "Die Pyramiden von Gizeh wurden vor über viertausend Jahren als Königsgräber gebaut.",
+      "Hieroglyphen sind bildhafte Zeichen, die die alten Ägypter für heilige und königliche Texte nutzten.",
+      "Der 1799 gefundene Stein von Rosette trug denselben Text in drei Schriften und half beim Lesen der Hieroglyphen."
+     ],
+     "q": "Welche Frage würdest du einem alten Ägypter stellen, wenn du könntest?",
+     "c": "Schreibe deinen Vornamen im Hieroglyphenstil, mit einem Bildchen pro Laut."
+    },
+    "es": {
+     "t": "El Antiguo Egipto",
+     "g": "Explora pirámides, jeroglíficos y la piedra que descifró una escritura perdida.",
+     "p": [
+      "Las pirámides de Guiza se construyeron como tumbas reales hace más de cuatro mil años.",
+      "Los jeroglíficos son símbolos con dibujos que los egipcios usaban en escritura sagrada y real.",
+      "La piedra de Rosetta, hallada en 1799, tenía el mismo texto en tres escrituras y ayudó a leer los jeroglíficos."
+     ],
+     "q": "Si pudieras hacer una pregunta a un antiguo egipcio, ¿cuál sería?",
+     "c": "Escribe tu nombre al estilo jeroglífico dibujando una imagen pequeña por cada sonido."
+    },
+    "fr": {
+     "t": "L'Égypte ancienne",
+     "g": "Explore pyramides, hiéroglyphes et la pierre qui a rouvert une écriture perdue.",
+     "p": [
+      "Les pyramides de Gizeh furent construites comme tombeaux royaux il y a plus de quatre mille ans.",
+      "Les hiéroglyphes sont des signes en images que les Égyptiens employaient pour l'écriture sacrée et royale.",
+      "La pierre de Rosette, trouvée en 1799, portait le même texte en trois écritures et a aidé à relire les hiéroglyphes."
+     ],
+     "q": "Si tu pouvais poser une question à un Égyptien antique, laquelle serait-ce ?",
+     "c": "Écris ton prénom en style hiéroglyphe en dessinant une petite image par son."
+    },
+    "it": {
+     "t": "L'antico Egitto",
+     "g": "Esplora piramidi, geroglifici e la pietra che ha riaperto una scrittura perduta.",
+     "p": [
+      "Le piramidi di Giza furono costruite come tombe reali più di quattromila anni fa.",
+      "I geroglifici sono simboli a immagini che gli egizi usavano per scritti sacri e regali.",
+      "La stele di Rosetta, trovata nel 1799, portava lo stesso testo in tre scritture e aiutò a rileggere i geroglifici."
+     ],
+     "q": "Se potessi fare una domanda a un antico egizio, quale sarebbe?",
+     "c": "Scrivi il tuo nome in stile geroglifico disegnando una piccola immagine per ogni suono."
+    },
+    "pt": {
+     "t": "O Antigo Egito",
+     "g": "Explora pirâmides, hieróglifos e a pedra que reabriu uma escrita perdida.",
+     "p": [
+      "As pirâmides de Gizé foram construídas como túmulos reais há mais de quatro mil anos.",
+      "Os hieróglifos são símbolos em imagens que os egípcios usavam na escrita sagrada e real.",
+      "A Pedra de Roseta, encontrada em 1799, trazia o mesmo texto em três escritas e ajudou a ler de novo os hieróglifos."
+     ],
+     "q": "Se pudesses fazer uma pergunta a um antigo egípcio, qual seria?",
+     "c": "Escreve o teu nome ao estilo dos hieróglifos, desenhando uma pequena imagem por som."
+    },
+    "pt_BR": {
+     "t": "O Antigo Egito",
+     "g": "Explore pirâmides, hieróglifos e a pedra que reabriu uma escrita perdida.",
+     "p": [
+      "As pirâmides de Gizé foram construídas como túmulos reais há mais de quatro mil anos.",
+      "Os hieróglifos são símbolos em imagens que os egípcios usavam na escrita sagrada e real.",
+      "A Pedra de Roseta, encontrada em 1799, trazia o mesmo texto em três escritas e ajudou a ler de novo os hieróglifos."
+     ],
+     "q": "Se você pudesse fazer uma pergunta a um antigo egípcio, qual seria?",
+     "c": "Escreva seu nome no estilo dos hieróglifos, desenhando uma pequena imagem por som."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ancient Greece",
+     "g": "Visit the land of the first Olympics, great thinkers and mythical gods.",
+     "p": [
+      "The first ancient Olympic Games were held in Olympia, Greece, traditionally in 776 BCE.",
+      "Thinkers such as Socrates, Plato and Aristotle shaped how we ask questions about the world.",
+      "In myths, the gods lived on Mount Olympus, with Zeus as their king."
+     ],
+     "q": "Which Greek myth or story do you remember, and what did it teach?",
+     "c": "Tell a short Greek myth you know, or look one up and retell it in three sentences."
+    },
+    "de": {
+     "t": "Das alte Griechenland",
+     "g": "Besuche das Land der ersten Olympischen Spiele, großer Denker und mythischer Götter.",
+     "p": [
+      "Die ersten antiken Olympischen Spiele fanden in Olympia statt, der Überlieferung nach 776 v. Chr.",
+      "Denker wie Sokrates, Platon und Aristoteles prägten, wie wir Fragen an die Welt stellen.",
+      "In den Mythen lebten die Götter auf dem Olymp, mit Zeus als König."
+     ],
+     "q": "Welchen griechischen Mythos kennst du noch, und was lehrte er?",
+     "c": "Erzähle einen kurzen griechischen Mythos oder such einen und gib ihn in drei Sätzen wieder."
+    },
+    "es": {
+     "t": "La antigua Grecia",
+     "g": "Visita la tierra de los primeros Juegos Olímpicos, grandes pensadores y dioses míticos.",
+     "p": [
+      "Los primeros Juegos Olímpicos antiguos se celebraron en Olimpia, Grecia, tradicionalmente en 776 a. C.",
+      "Pensadores como Sócrates, Platón y Aristóteles marcaron cómo preguntamos sobre el mundo.",
+      "En los mitos, los dioses vivían en el monte Olimpo, con Zeus como rey."
+     ],
+     "q": "¿Qué mito griego recuerdas y qué enseñaba?",
+     "c": "Cuenta un mito griego breve que conozcas, o busca uno y relátalo en tres frases."
+    },
+    "fr": {
+     "t": "La Grèce antique",
+     "g": "Visite le pays des premiers Jeux olympiques, des grands penseurs et des dieux mythiques.",
+     "p": [
+      "Les premiers Jeux olympiques antiques eurent lieu à Olympie, en Grèce, traditionnellement en 776 av. J.-C.",
+      "Des penseurs comme Socrate, Platon et Aristote ont façonné notre façon d'interroger le monde.",
+      "Dans les mythes, les dieux vivaient sur le mont Olympe, avec Zeus pour roi."
+     ],
+     "q": "Quel mythe grec te reste en mémoire, et que t'a-t-il appris ?",
+     "c": "Raconte un court mythe grec que tu connais, ou cherches-en un et résume-le en trois phrases."
+    },
+    "it": {
+     "t": "L'antica Grecia",
+     "g": "Visita la terra dei primi Giochi Olimpici, dei grandi pensatori e degli dèi mitici.",
+     "p": [
+      "I primi Giochi Olimpici antichi si tennero a Olimpia, in Grecia, tradizionalmente nel 776 a.C.",
+      "Pensatori come Socrate, Platone e Aristotele hanno plasmato il modo in cui interroghiamo il mondo.",
+      "Nei miti gli dèi vivevano sul monte Olimpo, con Zeus come re."
+     ],
+     "q": "Quale mito greco ricordi e cosa insegnava?",
+     "c": "Racconta un breve mito greco che conosci, o cercane uno e riassumilo in tre frasi."
+    },
+    "pt": {
+     "t": "A Grécia Antiga",
+     "g": "Visita a terra dos primeiros Jogos Olímpicos, de grandes pensadores e deuses míticos.",
+     "p": [
+      "Os primeiros Jogos Olímpicos antigos realizaram-se em Olímpia, na Grécia, tradicionalmente em 776 a.C.",
+      "Pensadores como Sócrates, Platão e Aristóteles marcaram a forma como fazemos perguntas ao mundo.",
+      "Nos mitos, os deuses viviam no monte Olimpo, com Zeus como rei."
+     ],
+     "q": "Que mito grego recordas e o que ensinava?",
+     "c": "Conta um mito grego curto que conheças, ou procura um e resume-o em três frases."
+    },
+    "pt_BR": {
+     "t": "A Grécia Antiga",
+     "g": "Visite a terra dos primeiros Jogos Olímpicos, de grandes pensadores e deuses míticos.",
+     "p": [
+      "Os primeiros Jogos Olímpicos antigos aconteceram em Olímpia, na Grécia, tradicionalmente em 776 a.C.",
+      "Pensadores como Sócrates, Platão e Aristóteles marcaram a forma como perguntamos sobre o mundo.",
+      "Nos mitos, os deuses viviam no monte Olimpo, com Zeus como rei."
+     ],
+     "q": "Qual mito grego você lembra e o que ele ensinava?",
+     "c": "Conte um mito grego curto que conheça, ou procure um e resuma em três frases."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ancient Rome",
+     "g": "See how Roman roads, aqueducts and Latin still shape our world.",
+     "p": [
+      "Roman roads linked a huge empire, and the saying goes that all roads lead to Rome.",
+      "Aqueducts were stone channels that carried fresh water into cities, often across arches.",
+      "Latin gave birth to Italian, Spanish, French, Portuguese and Romanian, and many English words."
+     ],
+     "q": "Which Roman idea or building do you find most impressive?",
+     "c": "Find a Latin word hiding in your own language, such as aqua or via."
+    },
+    "de": {
+     "t": "Das alte Rom",
+     "g": "Sieh, wie römische Straßen, Aquädukte und Latein unsere Welt noch prägen.",
+     "p": [
+      "Römische Straßen verbanden ein riesiges Reich, und es heißt, alle Wege führen nach Rom.",
+      "Aquädukte waren Steinkanäle, die Frischwasser in die Städte brachten, oft über Bögen.",
+      "Aus Latein entstanden Italienisch, Spanisch, Französisch, Portugiesisch, Rumänisch und viele deutsche und englische Wörter."
+     ],
+     "q": "Welche römische Idee oder welches Bauwerk findest du am beeindruckendsten?",
+     "c": "Finde ein lateinisches Wort in deiner Sprache, etwa aqua oder via."
+    },
+    "es": {
+     "t": "La antigua Roma",
+     "g": "Mira cómo las calzadas, acueductos y el latín aún moldean nuestro mundo.",
+     "p": [
+      "Las calzadas romanas unían un imperio enorme, y se dice que todos los caminos llevan a Roma.",
+      "Los acueductos eran canales de piedra que llevaban agua dulce a las ciudades, a menudo sobre arcos.",
+      "El latín dio origen al italiano, español, francés, portugués y rumano, y a muchas palabras del inglés."
+     ],
+     "q": "¿Qué idea o edificio romano te parece más impresionante?",
+     "c": "Encuentra una palabra latina escondida en tu idioma, como aqua o via."
+    },
+    "fr": {
+     "t": "La Rome antique",
+     "g": "Vois comment les routes, aqueducs et le latin romains façonnent encore notre monde.",
+     "p": [
+      "Les routes romaines reliaient un immense empire, et l'on dit que tous les chemins mènent à Rome.",
+      "Les aqueducs étaient des canaux de pierre amenant l'eau douce dans les villes, souvent sur des arches.",
+      "Le latin a donné naissance à l'italien, l'espagnol, le français, le portugais et le roumain."
+     ],
+     "q": "Quelle idée ou quel monument romain trouves-tu le plus impressionnant ?",
+     "c": "Trouve un mot latin caché dans ta langue, comme aqua ou via."
+    },
+    "it": {
+     "t": "L'antica Roma",
+     "g": "Guarda come strade, acquedotti e latino romani plasmano ancora il nostro mondo.",
+     "p": [
+      "Le strade romane univano un immenso impero e si dice che tutte le strade portino a Roma.",
+      "Gli acquedotti erano canali di pietra che portavano acqua dolce nelle città, spesso su archi.",
+      "Il latino diede origine a italiano, spagnolo, francese, portoghese e rumeno."
+     ],
+     "q": "Quale idea o edificio romano trovi più impressionante?",
+     "c": "Trova una parola latina nascosta nella tua lingua, come aqua o via."
+    },
+    "pt": {
+     "t": "A Roma Antiga",
+     "g": "Vê como as estradas, aquedutos e o latim romanos ainda moldam o nosso mundo.",
+     "p": [
+      "As estradas romanas ligavam um império enorme, e diz-se que todos os caminhos vão dar a Roma.",
+      "Os aquedutos eram canais de pedra que levavam água doce às cidades, muitas vezes sobre arcos.",
+      "O latim deu origem ao italiano, espanhol, francês, português e romeno."
+     ],
+     "q": "Que ideia ou edifício romano achas mais impressionante?",
+     "c": "Encontra uma palavra latina escondida na tua língua, como aqua ou via."
+    },
+    "pt_BR": {
+     "t": "A Roma Antiga",
+     "g": "Veja como as estradas, aquedutos e o latim romanos ainda moldam o nosso mundo.",
+     "p": [
+      "As estradas romanas ligavam um império enorme, e dizem que todos os caminhos levam a Roma.",
+      "Os aquedutos eram canais de pedra que levavam água doce às cidades, muitas vezes sobre arcos.",
+      "O latim deu origem ao italiano, espanhol, francês, português e romeno."
+     ],
+     "q": "Qual ideia ou edifício romano você acha mais impressionante?",
+     "c": "Encontre uma palavra latina escondida no seu idioma, como aqua ou via."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Roman numerals",
+     "g": "Learn to read the letters Romans used for numbers.",
+     "p": [
+      "I is 1, V is 5, X is 10, L is 50, C is 100, D is 500 and M is 1000.",
+      "A smaller letter before a larger one is subtracted: IV is 4 and IX is 9.",
+      "You still see these numerals on clock faces, book chapters and film sequels."
+     ],
+     "q": "Where have you recently noticed Roman numerals?",
+     "c": "Write today's year in Roman numerals, using M for the thousand."
+    },
+    "de": {
+     "t": "Römische Zahlen",
+     "g": "Lerne die Buchstaben zu lesen, die die Römer als Zahlen nutzten.",
+     "p": [
+      "I ist 1, V ist 5, X ist 10, L ist 50, C ist 100, D ist 500 und M ist 1000.",
+      "Ein kleinerer Buchstabe vor einem größeren wird abgezogen: IV ist 4 und IX ist 9.",
+      "Du siehst diese Zahlen noch auf Zifferblättern, bei Buchkapiteln und Film-Fortsetzungen."
+     ],
+     "q": "Wo sind dir kürzlich römische Zahlen aufgefallen?",
+     "c": "Schreibe das heutige Jahr in römischen Zahlen, mit M für das Tausend."
+    },
+    "es": {
+     "t": "Números romanos",
+     "g": "Aprende a leer las letras que los romanos usaban como números.",
+     "p": [
+      "I es 1, V es 5, X es 10, L es 50, C es 100, D es 500 y M es 1000.",
+      "Una letra menor antes de una mayor se resta: IV es 4 y IX es 9.",
+      "Aún ves estos números en relojes, capítulos de libros y secuelas de películas."
+     ],
+     "q": "¿Dónde has notado números romanos recientemente?",
+     "c": "Escribe el año de hoy en números romanos, usando M para el millar."
+    },
+    "fr": {
+     "t": "Les chiffres romains",
+     "g": "Apprends à lire les lettres que les Romains utilisaient comme chiffres.",
+     "p": [
+      "I vaut 1, V vaut 5, X vaut 10, L vaut 50, C vaut 100, D vaut 500 et M vaut 1000.",
+      "Une lettre plus petite avant une plus grande se soustrait : IV vaut 4 et IX vaut 9.",
+      "On les voit encore sur les cadrans, les chapitres de livres et les suites de films."
+     ],
+     "q": "Où as-tu remarqué récemment des chiffres romains ?",
+     "c": "Écris l'année d'aujourd'hui en chiffres romains, avec M pour le millier."
+    },
+    "it": {
+     "t": "I numeri romani",
+     "g": "Impara a leggere le lettere che i romani usavano come numeri.",
+     "p": [
+      "I vale 1, V vale 5, X vale 10, L vale 50, C vale 100, D vale 500 e M vale 1000.",
+      "Una lettera minore prima di una maggiore si sottrae: IV è 4 e IX è 9.",
+      "Vedi ancora questi numeri su quadranti, capitoli di libri e sequel di film."
+     ],
+     "q": "Dove hai notato di recente numeri romani?",
+     "c": "Scrivi l'anno di oggi in numeri romani, usando M per il migliaio."
+    },
+    "pt": {
+     "t": "Números romanos",
+     "g": "Aprende a ler as letras que os romanos usavam como números.",
+     "p": [
+      "I vale 1, V vale 5, X vale 10, L vale 50, C vale 100, D vale 500 e M vale 1000.",
+      "Uma letra menor antes de uma maior subtrai-se: IV é 4 e IX é 9.",
+      "Ainda vês estes números em mostradores de relógio, capítulos de livros e sequelas de filmes."
+     ],
+     "q": "Onde reparaste recentemente em números romanos?",
+     "c": "Escreve o ano de hoje em números romanos, usando M para o milhar."
+    },
+    "pt_BR": {
+     "t": "Números romanos",
+     "g": "Aprenda a ler as letras que os romanos usavam como números.",
+     "p": [
+      "I vale 1, V vale 5, X vale 10, L vale 50, C vale 100, D vale 500 e M vale 1000.",
+      "Uma letra menor antes de uma maior se subtrai: IV é 4 e IX é 9.",
+      "Você ainda vê esses números em mostradores de relógio, capítulos de livros e sequências de filmes."
+     ],
+     "q": "Onde você reparou recentemente em números romanos?",
+     "c": "Escreva o ano de hoje em números romanos, usando M para o milhar."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Great explorers",
+     "g": "Meet travellers who crossed the known world and opened new routes.",
+     "p": [
+      "Marco Polo travelled from Venice to China and wrote about what he saw.",
+      "Ibn Battuta, from Morocco, journeyed across Africa and Asia for nearly thirty years.",
+      "Zheng He led great Chinese fleets, and Magellan's crew became the first to sail around the world."
+     ],
+     "q": "If you could join one explorer's journey, which one and why?",
+     "c": "Trace one explorer's route on a map and tell where it started."
+    },
+    "de": {
+     "t": "Große Entdecker",
+     "g": "Lerne Reisende kennen, die die bekannte Welt durchquerten und neue Wege öffneten.",
+     "p": [
+      "Marco Polo reiste von Venedig nach China und schrieb auf, was er sah.",
+      "Ibn Battuta aus Marokko bereiste fast dreißig Jahre lang Afrika und Asien.",
+      "Zheng He führte große chinesische Flotten, und Magellans Mannschaft umsegelte als erste die Welt."
+     ],
+     "q": "Bei welcher Entdeckerreise wärst du gern dabei, und warum?",
+     "c": "Zeichne die Route eines Entdeckers auf einer Karte nach und sage, wo sie begann."
+    },
+    "es": {
+     "t": "Grandes exploradores",
+     "g": "Conoce a viajeros que cruzaron el mundo conocido y abrieron nuevas rutas.",
+     "p": [
+      "Marco Polo viajó de Venecia a China y escribió lo que vio.",
+      "Ibn Battuta, de Marruecos, recorrió África y Asia durante casi treinta años.",
+      "Zheng He dirigió grandes flotas chinas y la tripulación de Magallanes fue la primera en dar la vuelta al mundo."
+     ],
+     "q": "Si pudieras unirte al viaje de un explorador, ¿a cuál y por qué?",
+     "c": "Sigue en un mapa la ruta de un explorador y di dónde empezó."
+    },
+    "fr": {
+     "t": "Grands explorateurs",
+     "g": "Rencontre des voyageurs qui ont traversé le monde connu et ouvert de nouvelles routes.",
+     "p": [
+      "Marco Polo a voyagé de Venise à la Chine et a écrit ce qu'il a vu.",
+      "Ibn Battuta, venu du Maroc, a parcouru l'Afrique et l'Asie pendant près de trente ans.",
+      "Zheng He dirigea de grandes flottes chinoises, et l'équipage de Magellan fut le premier à faire le tour du monde."
+     ],
+     "q": "Si tu pouvais rejoindre le voyage d'un explorateur, lequel et pourquoi ?",
+     "c": "Suis sur une carte la route d'un explorateur et dis où elle a commencé."
+    },
+    "it": {
+     "t": "Grandi esploratori",
+     "g": "Incontra viaggiatori che attraversarono il mondo conosciuto e aprirono nuove rotte.",
+     "p": [
+      "Marco Polo viaggiò da Venezia alla Cina e scrisse ciò che vide.",
+      "Ibn Battuta, marocchino, viaggiò in Africa e Asia per quasi trent'anni.",
+      "Zheng He guidò grandi flotte cinesi e l'equipaggio di Magellano fu il primo a circumnavigare il globo."
+     ],
+     "q": "Se potessi unirti al viaggio di un esploratore, quale e perché?",
+     "c": "Segui su una mappa la rotta di un esploratore e dì dove cominciò."
+    },
+    "pt": {
+     "t": "Grandes exploradores",
+     "g": "Conhece viajantes que atravessaram o mundo conhecido e abriram novas rotas.",
+     "p": [
+      "Marco Polo viajou de Veneza à China e escreveu o que viu.",
+      "Ibn Battuta, de Marrocos, percorreu África e Ásia durante quase trinta anos.",
+      "Zheng He comandou grandes frotas chinesas e a tripulação de Magalhães foi a primeira a dar a volta ao mundo."
+     ],
+     "q": "Se pudesses juntar-te à viagem de um explorador, qual e porquê?",
+     "c": "Segue num mapa a rota de um explorador e diz onde começou."
+    },
+    "pt_BR": {
+     "t": "Grandes exploradores",
+     "g": "Conheça viajantes que atravessaram o mundo conhecido e abriram novas rotas.",
+     "p": [
+      "Marco Polo viajou de Veneza à China e escreveu o que viu.",
+      "Ibn Battuta, do Marrocos, percorreu a África e a Ásia por quase trinta anos.",
+      "Zheng He comandou grandes frotas chinesas e a tripulação de Magalhães foi a primeira a dar a volta ao mundo."
+     ],
+     "q": "Se você pudesse participar da viagem de um explorador, de qual e por quê?",
+     "c": "Siga num mapa a rota de um explorador e diga onde ela começou."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Famous firsts",
+     "g": "Learn about milestones when people did something for the very first time.",
+     "p": [
+      "In 1903 the Wright brothers made the first powered, controlled airplane flight in North Carolina.",
+      "In 1961 Yuri Gagarin became the first person in space, orbiting Earth once.",
+      "In 1911 a team led by Roald Amundsen was the first to reach the South Pole."
+     ],
+     "q": "Which first in history do you admire most, and what made it possible?",
+     "c": "Think of a first in your own life that you are proud of and tell the story."
+    },
+    "de": {
+     "t": "Berühmte Premieren",
+     "g": "Erfahre von Meilensteinen, bei denen Menschen etwas zum allerersten Mal taten.",
+     "p": [
+      "1903 gelang den Brüdern Wright der erste motorisierte, kontrollierte Flug in North Carolina.",
+      "1961 wurde Juri Gagarin der erste Mensch im Weltraum und umkreiste die Erde einmal.",
+      "1911 erreichte ein Team unter Roald Amundsen als erstes den Südpol."
+     ],
+     "q": "Welche Premiere der Geschichte bewunderst du am meisten, und was machte sie möglich?",
+     "c": "Denk an eine eigene Premiere, auf die du stolz bist, und erzähle die Geschichte."
+    },
+    "es": {
+     "t": "Primicias famosas",
+     "g": "Conoce hitos en los que alguien hizo algo por primera vez.",
+     "p": [
+      "En 1903 los hermanos Wright hicieron el primer vuelo motorizado y controlado en Carolina del Norte.",
+      "En 1961 Yuri Gagarin fue la primera persona en el espacio y orbitó la Tierra una vez.",
+      "En 1911 un equipo dirigido por Roald Amundsen fue el primero en llegar al Polo Sur."
+     ],
+     "q": "¿Qué primicia de la historia admiras más y qué la hizo posible?",
+     "c": "Piensa en una primera vez de tu vida de la que estés orgulloso y cuéntala."
+    },
+    "fr": {
+     "t": "Premières célèbres",
+     "g": "Découvre des jalons où des gens ont fait quelque chose pour la toute première fois.",
+     "p": [
+      "En 1903, les frères Wright réalisèrent le premier vol motorisé et contrôlé en Caroline du Nord.",
+      "En 1961, Youri Gagarine devint le premier humain dans l'espace et fit un tour de la Terre.",
+      "En 1911, une équipe menée par Roald Amundsen fut la première à atteindre le pôle Sud."
+     ],
+     "q": "Quelle première de l'histoire admires-tu le plus, et qu'est-ce qui l'a rendue possible ?",
+     "c": "Pense à une première dans ta vie dont tu es fier et raconte l'histoire."
+    },
+    "it": {
+     "t": "Primati famosi",
+     "g": "Scopri tappe in cui qualcuno fece qualcosa per la prima volta.",
+     "p": [
+      "Nel 1903 i fratelli Wright compirono il primo volo a motore controllato in North Carolina.",
+      "Nel 1961 Jurij Gagarin fu il primo uomo nello spazio e orbitò attorno alla Terra una volta.",
+      "Nel 1911 una squadra guidata da Roald Amundsen fu la prima a raggiungere il Polo Sud."
+     ],
+     "q": "Quale primato della storia ammiri di più e cosa lo ha reso possibile?",
+     "c": "Pensa a una prima volta nella tua vita di cui sei orgoglioso e raccontala."
+    },
+    "pt": {
+     "t": "Estreias famosas",
+     "g": "Conhece marcos em que alguém fez algo pela primeira vez.",
+     "p": [
+      "Em 1903, os irmãos Wright fizeram o primeiro voo motorizado e controlado, na Carolina do Norte.",
+      "Em 1961, Yuri Gagarin foi a primeira pessoa no espaço e deu uma volta à Terra.",
+      "Em 1911, uma equipa liderada por Roald Amundsen foi a primeira a chegar ao Polo Sul."
+     ],
+     "q": "Que estreia da história admiras mais e o que a tornou possível?",
+     "c": "Pensa numa primeira vez da tua vida de que te orgulhes e conta a história."
+    },
+    "pt_BR": {
+     "t": "Primeiras vezes famosas",
+     "g": "Conheça marcos em que alguém fez algo pela primeira vez.",
+     "p": [
+      "Em 1903, os irmãos Wright fizeram o primeiro voo motorizado e controlado, na Carolina do Norte.",
+      "Em 1961, Yuri Gagarin foi a primeira pessoa no espaço e deu uma volta na Terra.",
+      "Em 1911, uma equipe liderada por Roald Amundsen foi a primeira a chegar ao Polo Sul."
+     ],
+     "q": "Qual primeira vez da história você mais admira e o que a tornou possível?",
+     "c": "Pense numa primeira vez da sua vida da qual se orgulha e conte a história."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Inventions that changed travel",
+     "g": "Follow the story of machines that made the world feel smaller.",
+     "p": [
+      "The wheel is thousands of years old and is at the root of nearly all land transport.",
+      "The steam engine powered the first railways, and the bicycle gave people cheap personal travel.",
+      "The car and the aeroplane in the 1900s made long journeys faster than ever."
+     ],
+     "q": "What was the most memorable trip you took, and how did you travel?",
+     "c": "Think of a journey you make often and imagine it without cars or trains."
+    },
+    "de": {
+     "t": "Erfindungen, die das Reisen veränderten",
+     "g": "Folge der Geschichte von Maschinen, die die Welt kleiner wirken ließen.",
+     "p": [
+      "Das Rad ist Jahrtausende alt und liegt fast allem Landverkehr zugrunde.",
+      "Die Dampfmaschine trieb die ersten Eisenbahnen an, das Fahrrad brachte günstiges persönliches Reisen.",
+      "Auto und Flugzeug machten im 20. Jahrhundert lange Reisen schneller denn je."
+     ],
+     "q": "Was war deine unvergesslichste Reise, und wie bist du gereist?",
+     "c": "Denk an eine Strecke, die du oft fährst, und stell sie dir ohne Autos oder Züge vor."
+    },
+    "es": {
+     "t": "Inventos que cambiaron el viaje",
+     "g": "Sigue la historia de máquinas que hicieron el mundo más pequeño.",
+     "p": [
+      "La rueda tiene miles de años y es la base de casi todo el transporte terrestre.",
+      "La máquina de vapor impulsó los primeros ferrocarriles y la bicicleta dio viajes personales baratos.",
+      "El coche y el avión en el siglo XX hicieron los viajes largos más rápidos que nunca."
+     ],
+     "q": "¿Cuál fue el viaje más memorable que hiciste y cómo viajaste?",
+     "c": "Piensa en un trayecto que haces a menudo e imagínalo sin coches ni trenes."
+    },
+    "fr": {
+     "t": "Inventions qui ont changé le voyage",
+     "g": "Suis l'histoire des machines qui ont rendu le monde plus petit.",
+     "p": [
+      "La roue a des milliers d'années et est à la base de presque tout transport terrestre.",
+      "La machine à vapeur a propulsé les premiers chemins de fer, et le vélo a offert un voyage personnel bon marché.",
+      "L'automobile et l'avion du XXe siècle ont rendu les longs voyages plus rapides que jamais."
+     ],
+     "q": "Quel a été le voyage le plus mémorable que tu aies fait, et comment as-tu voyagé ?",
+     "c": "Pense à un trajet que tu fais souvent et imagine-le sans voitures ni trains."
+    },
+    "it": {
+     "t": "Invenzioni che hanno cambiato il viaggio",
+     "g": "Segui la storia di macchine che hanno reso il mondo più piccolo.",
+     "p": [
+      "La ruota ha migliaia di anni ed è alla base di quasi tutto il trasporto terrestre.",
+      "La macchina a vapore alimentò le prime ferrovie e la bicicletta diede viaggi personali economici.",
+      "L'automobile e l'aeroplano nel Novecento resero i lunghi viaggi più veloci che mai."
+     ],
+     "q": "Qual è stato il viaggio più memorabile che hai fatto e come hai viaggiato?",
+     "c": "Pensa a un tragitto che fai spesso e immaginalo senza auto né treni."
+    },
+    "pt": {
+     "t": "Invenções que mudaram as viagens",
+     "g": "Segue a história de máquinas que tornaram o mundo mais pequeno.",
+     "p": [
+      "A roda tem milhares de anos e está na base de quase todo o transporte terrestre.",
+      "A máquina a vapor impulsionou os primeiros caminhos de ferro e a bicicleta deu viagens pessoais baratas.",
+      "O automóvel e o avião no século XX tornaram as longas viagens mais rápidas do que nunca."
+     ],
+     "q": "Qual foi a viagem mais memorável que fizeste e como viajaste?",
+     "c": "Pensa num trajeto que fazes muitas vezes e imagina-o sem carros nem comboios."
+    },
+    "pt_BR": {
+     "t": "Invenções que mudaram as viagens",
+     "g": "Siga a história de máquinas que tornaram o mundo menor.",
+     "p": [
+      "A roda tem milhares de anos e está na base de quase todo o transporte terrestre.",
+      "A máquina a vapor impulsionou as primeiras ferrovias e a bicicleta deu viagens pessoais baratas.",
+      "O automóvel e o avião no século XX tornaram as longas viagens mais rápidas do que nunca."
+     ],
+     "q": "Qual foi a viagem mais memorável que você fez e como viajou?",
+     "c": "Pense num trajeto que você faz muitas vezes e imagine-o sem carros nem trens."
+    }
+   }
+  }
+ ]
+}

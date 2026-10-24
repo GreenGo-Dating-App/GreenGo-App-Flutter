@@ -1,0 +1,835 @@
+{
+ "topic": "job_interviews",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Understanding company culture",
+     "g": "Read the clues that show how people really work at a company.",
+     "p": [
+      "Look at the website tone, photos, job ads and employee stories.",
+      "Notice words like teamwork, speed, autonomy, learning or customer focus.",
+      "Ask yourself honestly whether that style would help you do your best work."
+     ],
+     "q": "What kind of work environment helps you feel at your best?",
+     "c": "Write three culture words you look for and test them on one company."
+    },
+    "de": {
+     "t": "Unternehmenskultur verstehen",
+     "g": "Hinweise erkennen, wie die Menschen in einer Firma wirklich arbeiten.",
+     "p": [
+      "Achte auf Ton der Website, Fotos, Anzeigen und Erfahrungsberichte von Mitarbeitenden.",
+      "Wörter wie Teamarbeit, Tempo, Eigenständigkeit, Lernen oder Kundennähe sind Hinweise.",
+      "Frage dich ehrlich, ob dieser Stil dir hilft, dein Bestes zu geben."
+     ],
+     "q": "In welchem Arbeitsumfeld fühlst du dich am wohlsten?",
+     "c": "Schreibe drei Kulturwörter auf, die dir wichtig sind, und prüfe sie an einer Firma."
+    },
+    "es": {
+     "t": "Entender la cultura de empresa",
+     "g": "Leer las pistas que muestran cómo trabaja de verdad la gente en una empresa.",
+     "p": [
+      "Fíjate en el tono de la web, las fotos, las ofertas y los testimonios de empleados.",
+      "Observa palabras como equipo, rapidez, autonomía, aprendizaje u orientación al cliente.",
+      "Pregúntate con sinceridad si ese estilo te ayudaría a dar lo mejor de ti."
+     ],
+     "q": "¿Qué tipo de entorno de trabajo te ayuda a rendir mejor?",
+     "c": "Anota tres palabras de cultura que buscas y compruébalas en una empresa."
+    },
+    "fr": {
+     "t": "Comprendre la culture d'entreprise",
+     "g": "Lire les indices qui montrent comment les gens travaillent vraiment dans une entreprise.",
+     "p": [
+      "Observez le ton du site, les photos, les annonces et les témoignages de salariés.",
+      "Repérez des mots comme équipe, rapidité, autonomie, apprentissage ou orientation client.",
+      "Demandez-vous honnêtement si ce style vous aiderait à donner le meilleur de vous."
+     ],
+     "q": "Quel environnement de travail vous aide à être au meilleur de vous-même ?",
+     "c": "Notez trois mots de culture que vous recherchez et testez-les sur une entreprise."
+    },
+    "it": {
+     "t": "Capire la cultura aziendale",
+     "g": "Leggere gli indizi che mostrano come lavorano davvero le persone in un'azienda.",
+     "p": [
+      "Osserva il tono del sito, le foto, gli annunci e le testimonianze dei dipendenti.",
+      "Nota parole come squadra, velocità, autonomia, apprendimento o attenzione al cliente.",
+      "Chiediti sinceramente se quello stile ti aiuterebbe a dare il meglio."
+     ],
+     "q": "Quale ambiente di lavoro ti aiuta a dare il meglio di te?",
+     "c": "Scrivi tre parole di cultura che cerchi e verificale su un'azienda."
+    },
+    "pt": {
+     "t": "Perceber a cultura da empresa",
+     "g": "Ler as pistas que mostram como as pessoas trabalham mesmo numa empresa.",
+     "p": [
+      "Repara no tom do site, nas fotografias, nos anúncios e nos testemunhos de colaboradores.",
+      "Nota palavras como equipa, rapidez, autonomia, aprendizagem ou foco no cliente.",
+      "Pergunta-te com honestidade se esse estilo te ajudaria a dar o melhor."
+     ],
+     "q": "Que tipo de ambiente de trabalho te ajuda a render mais?",
+     "c": "Anota três palavras de cultura que procuras e testa-as numa empresa."
+    },
+    "pt_BR": {
+     "t": "Entendendo a cultura da empresa",
+     "g": "Ler os sinais que mostram como as pessoas realmente trabalham numa empresa.",
+     "p": [
+      "Observe o tom do site, as fotos, as vagas e os depoimentos de funcionários.",
+      "Note palavras como equipe, agilidade, autonomia, aprendizado ou foco no cliente.",
+      "Pergunte-se com sinceridade se esse estilo ajudaria você a dar o seu melhor."
+     ],
+     "q": "Que tipo de ambiente de trabalho ajuda você a render mais?",
+     "c": "Anote três palavras de cultura que você procura e teste em uma empresa."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Researching your interviewers",
+     "g": "Learn about the people you will meet so the conversation feels natural.",
+     "p": [
+      "Check names and roles you were given and their public professional profiles.",
+      "Look for shared interests, projects or backgrounds you can mention kindly.",
+      "Keep it professional and light, and never overshare what you found."
+     ],
+     "q": "Why can knowing a little about someone make a conversation easier?",
+     "c": "Pick a public professional bio and note one genuine question for that person."
+    },
+    "de": {
+     "t": "Die Gesprächspartner recherchieren",
+     "g": "Die Menschen kennenlernen, die du triffst, damit das Gespräch natürlich wird.",
+     "p": [
+      "Prüfe die genannten Namen und Rollen und ihre öffentlichen Berufsprofile.",
+      "Suche gemeinsame Interessen, Projekte oder Wege, die du freundlich erwähnen kannst.",
+      "Bleib professionell und locker und breite nicht alles aus, was du gefunden hast."
+     ],
+     "q": "Warum macht ein bisschen Vorwissen ein Gespräch leichter?",
+     "c": "Wähle ein öffentliches Berufsprofil und notiere eine ehrliche Frage an die Person."
+    },
+    "es": {
+     "t": "Investigar a tus entrevistadores",
+     "g": "Conocer a las personas que verás para que la conversación sea natural.",
+     "p": [
+      "Revisa los nombres y cargos que te dieron y sus perfiles profesionales públicos.",
+      "Busca intereses, proyectos o trayectorias en común que puedas mencionar con amabilidad.",
+      "Mantén un tono profesional y ligero, y no exhibas todo lo que encontraste."
+     ],
+     "q": "¿Por qué saber un poco de alguien facilita la conversación?",
+     "c": "Elige una biografía profesional pública y anota una pregunta sincera para esa persona."
+    },
+    "fr": {
+     "t": "Se renseigner sur ses interlocuteurs",
+     "g": "Connaître les personnes que vous rencontrerez pour que l'échange soit naturel.",
+     "p": [
+      "Vérifiez les noms et fonctions communiqués et leurs profils professionnels publics.",
+      "Cherchez des centres d'intérêt, projets ou parcours communs à évoquer avec tact.",
+      "Restez professionnel et léger, sans étaler tout ce que vous avez trouvé."
+     ],
+     "q": "Pourquoi en savoir un peu sur quelqu'un facilite-t-il la conversation ?",
+     "c": "Choisissez une biographie professionnelle publique et notez une vraie question pour cette personne."
+    },
+    "it": {
+     "t": "Informarsi sugli intervistatori",
+     "g": "Conoscere le persone che incontrerai per rendere la conversazione naturale.",
+     "p": [
+      "Controlla nomi e ruoli che ti hanno dato e i loro profili professionali pubblici.",
+      "Cerca interessi, progetti o percorsi in comune da citare con garbo.",
+      "Resta professionale e leggero e non mostrare tutto ciò che hai scoperto."
+     ],
+     "q": "Perché sapere qualcosa di una persona rende più facile la conversazione?",
+     "c": "Scegli una biografia professionale pubblica e annota una domanda sincera per quella persona."
+    },
+    "pt": {
+     "t": "Pesquisar os teus entrevistadores",
+     "g": "Conhecer as pessoas que vais encontrar para que a conversa seja natural.",
+     "p": [
+      "Verifica os nomes e funções que te deram e os seus perfis profissionais públicos.",
+      "Procura interesses, projetos ou percursos em comum que possas mencionar com simpatia.",
+      "Mantém um tom profissional e leve, sem exibir tudo o que descobriste."
+     ],
+     "q": "Porque é que saber um pouco sobre alguém facilita a conversa?",
+     "c": "Escolhe uma biografia profissional pública e anota uma pergunta sincera para essa pessoa."
+    },
+    "pt_BR": {
+     "t": "Pesquisando seus entrevistadores",
+     "g": "Conhecer as pessoas que você vai encontrar para a conversa fluir naturalmente.",
+     "p": [
+      "Confira os nomes e cargos informados e os perfis profissionais públicos delas.",
+      "Procure interesses, projetos ou trajetórias em comum que você possa citar com gentileza.",
+      "Mantenha o tom profissional e leve, sem exibir tudo o que descobriu."
+     ],
+     "q": "Por que saber um pouco sobre alguém facilita a conversa?",
+     "c": "Escolha uma biografia profissional pública e anote uma pergunta sincera para essa pessoa."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Knowing the industry basics",
+     "g": "Learn key trends, competitors and vocabulary of the field you are applying to.",
+     "p": [
+      "Read a couple of recent articles or newsletters from the industry.",
+      "Learn five common terms so you can follow and join the conversation.",
+      "Know who the main players are and what makes your target company different."
+     ],
+     "q": "What do you find most interesting about the industry you are aiming for?",
+     "c": "Write five industry terms with a one-line meaning each, in your own words."
+    },
+    "de": {
+     "t": "Branchenwissen für den Einstieg",
+     "g": "Wichtige Trends, Mitbewerber und Fachbegriffe deiner Zielbranche kennenlernen.",
+     "p": [
+      "Lies ein paar aktuelle Artikel oder Newsletter aus der Branche.",
+      "Lerne fünf gängige Begriffe, damit du folgen und mitreden kannst.",
+      "Wisse, wer die großen Akteure sind und was dein Zielunternehmen besonders macht."
+     ],
+     "q": "Was findest du an deiner Zielbranche am spannendsten?",
+     "c": "Schreibe fünf Fachbegriffe mit je einer Erklärung in eigenen Worten auf."
+    },
+    "es": {
+     "t": "Nociones básicas del sector",
+     "g": "Conocer las tendencias, competidores y vocabulario del campo al que te postulas.",
+     "p": [
+      "Lee un par de artículos o boletines recientes del sector.",
+      "Aprende cinco términos habituales para seguir la conversación y participar.",
+      "Sabe quiénes son los principales actores y qué distingue a tu empresa objetivo."
+     ],
+     "q": "¿Qué te parece más interesante del sector al que aspiras?",
+     "c": "Escribe cinco términos del sector con su significado en una línea, con tus palabras."
+    },
+    "fr": {
+     "t": "Les bases du secteur",
+     "g": "Connaître les tendances, concurrents et le vocabulaire du domaine visé.",
+     "p": [
+      "Lisez quelques articles ou lettres d'information récents du secteur.",
+      "Apprenez cinq termes courants pour suivre la conversation et y participer.",
+      "Sachez qui sont les principaux acteurs et ce qui distingue l'entreprise visée."
+     ],
+     "q": "Qu'est-ce qui vous intéresse le plus dans le secteur que vous visez ?",
+     "c": "Écrivez cinq termes du secteur avec leur sens en une ligne, avec vos mots."
+    },
+    "it": {
+     "t": "Le basi del settore",
+     "g": "Conoscere tendenze, concorrenti e vocabolario del campo a cui ti candidi.",
+     "p": [
+      "Leggi un paio di articoli o newsletter recenti del settore.",
+      "Impara cinque termini comuni per seguire la conversazione e partecipare.",
+      "Sappi chi sono i principali attori e cosa rende diversa l'azienda che ti interessa."
+     ],
+     "q": "Cosa trovi più interessante del settore a cui punti?",
+     "c": "Scrivi cinque termini del settore con il significato in una riga, con parole tue."
+    },
+    "pt": {
+     "t": "Noções básicas do setor",
+     "g": "Conhecer as tendências, concorrentes e vocabulário da área a que te candidatas.",
+     "p": [
+      "Lê alguns artigos ou newsletters recentes do setor.",
+      "Aprende cinco termos comuns para acompanhares e participares na conversa.",
+      "Sabe quem são os principais intervenientes e o que distingue a empresa que te interessa."
+     ],
+     "q": "O que achas mais interessante no setor a que aspiras?",
+     "c": "Escreve cinco termos do setor com o significado numa linha, por palavras tuas."
+    },
+    "pt_BR": {
+     "t": "Noções básicas do setor",
+     "g": "Conhecer as tendências, concorrentes e o vocabulário da área em que você quer entrar.",
+     "p": [
+      "Leia alguns artigos ou newsletters recentes do setor.",
+      "Aprenda cinco termos comuns para acompanhar e participar da conversa.",
+      "Saiba quem são os principais players e o que diferencia a empresa que te interessa."
+     ],
+     "q": "O que você acha mais interessante no setor que busca?",
+     "c": "Escreva cinco termos do setor com o significado em uma linha, com suas palavras."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your elevator pitch",
+     "g": "Build a clear 30-second summary of who you are and what you offer.",
+     "p": [
+      "Say who you are, what you do well and what you are looking for.",
+      "Keep it to two or three short sentences without jargon.",
+      "End with a hook that invites the other person to ask more."
+     ],
+     "q": "If a stranger asked what you do, what would you say in one breath?",
+     "c": "Write a three-sentence pitch and say it aloud in under 30 seconds."
+    },
+    "de": {
+     "t": "Dein Elevator Pitch",
+     "g": "Eine klare 30-Sekunden-Zusammenfassung davon, wer du bist und was du bietest.",
+     "p": [
+      "Sage, wer du bist, was du gut kannst und was du suchst.",
+      "Halte es bei zwei, drei kurzen Sätzen ohne Fachchinesisch.",
+      "Schließe mit einem Satz, der zum Nachfragen einlädt."
+     ],
+     "q": "Wenn dich jemand fragt, was du machst: Was sagst du in einem Atemzug?",
+     "c": "Schreibe einen Pitch in drei Sätzen und sprich ihn in unter 30 Sekunden."
+    },
+    "es": {
+     "t": "Tu discurso de ascensor",
+     "g": "Crear un resumen claro de 30 segundos sobre quién eres y qué ofreces.",
+     "p": [
+      "Di quién eres, qué haces bien y qué estás buscando.",
+      "Mantenlo en dos o tres frases cortas y sin jerga.",
+      "Termina con un gancho que invite a la otra persona a preguntar más."
+     ],
+     "q": "Si un desconocido te preguntara a qué te dedicas, ¿qué dirías de un tirón?",
+     "c": "Escribe un pitch de tres frases y dilo en voz alta en menos de 30 segundos."
+    },
+    "fr": {
+     "t": "Votre pitch de 30 secondes",
+     "g": "Construire un résumé clair de 30 secondes sur qui vous êtes et ce que vous apportez.",
+     "p": [
+      "Dites qui vous êtes, ce que vous faites bien et ce que vous cherchez.",
+      "Restez sur deux ou trois phrases courtes, sans jargon.",
+      "Terminez par une accroche qui donne envie de poser des questions."
+     ],
+     "q": "Si un inconnu vous demandait ce que vous faites, que diriez-vous d'un trait ?",
+     "c": "Rédigez un pitch de trois phrases et dites-le à voix haute en moins de 30 secondes."
+    },
+    "it": {
+     "t": "Il tuo elevator pitch",
+     "g": "Costruire un riassunto chiaro di 30 secondi su chi sei e cosa offri.",
+     "p": [
+      "Di' chi sei, cosa fai bene e cosa cerchi.",
+      "Resta su due o tre frasi brevi senza gergo.",
+      "Chiudi con uno spunto che inviti l'altra persona a chiedere di più."
+     ],
+     "q": "Se uno sconosciuto ti chiedesse cosa fai, cosa diresti in un respiro?",
+     "c": "Scrivi un pitch di tre frasi e dillo ad alta voce in meno di 30 secondi."
+    },
+    "pt": {
+     "t": "O teu discurso de elevador",
+     "g": "Criar um resumo claro de 30 segundos sobre quem és e o que ofereces.",
+     "p": [
+      "Diz quem és, o que fazes bem e o que procuras.",
+      "Mantém duas ou três frases curtas e sem jargão.",
+      "Termina com um gancho que convide a outra pessoa a perguntar mais."
+     ],
+     "q": "Se um desconhecido te perguntasse o que fazes, o que dirias de seguida?",
+     "c": "Escreve um pitch de três frases e di-lo em voz alta em menos de 30 segundos."
+    },
+    "pt_BR": {
+     "t": "Seu pitch de elevador",
+     "g": "Criar um resumo claro de 30 segundos sobre quem você é e o que oferece.",
+     "p": [
+      "Diga quem você é, o que faz bem e o que está buscando.",
+      "Mantenha em duas ou três frases curtas e sem jargão.",
+      "Termine com um gancho que convide a outra pessoa a perguntar mais."
+     ],
+     "q": "Se um desconhecido perguntasse o que você faz, o que diria de uma vez?",
+     "c": "Escreva um pitch de três frases e fale em voz alta em menos de 30 segundos."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tell me about yourself",
+     "g": "Structure this classic opener: present, past and why you are here.",
+     "p": [
+      "Start with your present role or situation in one sentence.",
+      "Add one or two past highlights that relate to the job.",
+      "Finish with why you are excited about this opportunity today."
+     ],
+     "q": "What is the one thing you most want an interviewer to remember about you?",
+     "c": "Draft your answer in three lines: present, past, future, and say it aloud."
+    },
+    "de": {
+     "t": "Erzähl mir etwas über dich",
+     "g": "Diesen klassischen Einstieg gliedern: Gegenwart, Vergangenheit und warum du hier bist.",
+     "p": [
+      "Beginne mit deiner aktuellen Rolle oder Situation in einem Satz.",
+      "Ergänze ein, zwei Stationen der Vergangenheit, die zur Stelle passen.",
+      "Schließe damit, warum dich diese Chance heute begeistert."
+     ],
+     "q": "Was soll sich die Person im Gespräch unbedingt über dich merken?",
+     "c": "Entwirf die Antwort in drei Zeilen: Gegenwart, Vergangenheit, Zukunft, und sprich sie laut."
+    },
+    "es": {
+     "t": "Cuéntame sobre ti",
+     "g": "Estructurar esta pregunta clásica: presente, pasado y por qué estás aquí.",
+     "p": [
+      "Empieza con tu puesto o situación actual en una frase.",
+      "Añade uno o dos hitos del pasado relacionados con el trabajo.",
+      "Termina con por qué te ilusiona esta oportunidad hoy."
+     ],
+     "q": "¿Qué es lo que más quieres que el entrevistador recuerde de ti?",
+     "c": "Redacta tu respuesta en tres líneas: presente, pasado, futuro, y dila en voz alta."
+    },
+    "fr": {
+     "t": "Parlez-moi de vous",
+     "g": "Structurer cette question classique : présent, passé et pourquoi vous êtes là.",
+     "p": [
+      "Commencez par votre poste ou situation actuelle en une phrase.",
+      "Ajoutez un ou deux faits marquants du passé liés au poste.",
+      "Terminez par ce qui vous enthousiasme dans cette opportunité aujourd'hui."
+     ],
+     "q": "Quelle est la chose que vous voulez le plus qu'on retienne de vous ?",
+     "c": "Rédigez votre réponse en trois lignes : présent, passé, avenir, et dites-la à voix haute."
+    },
+    "it": {
+     "t": "Parlami di te",
+     "g": "Strutturare questa domanda classica: presente, passato e perché sei qui.",
+     "p": [
+      "Inizia con il tuo ruolo o la tua situazione attuale in una frase.",
+      "Aggiungi uno o due momenti del passato legati al lavoro.",
+      "Concludi spiegando perché oggi questa opportunità ti entusiasma."
+     ],
+     "q": "Qual è la cosa che vuoi più di tutte che l'intervistatore ricordi di te?",
+     "c": "Scrivi la risposta in tre righe: presente, passato, futuro, e dilla ad alta voce."
+    },
+    "pt": {
+     "t": "Fala-me de ti",
+     "g": "Estruturar esta pergunta clássica: presente, passado e porque estás aqui.",
+     "p": [
+      "Começa pela tua função ou situação atual numa frase.",
+      "Junta um ou dois marcos do passado relacionados com a função.",
+      "Termina com o motivo por que esta oportunidade te entusiasma hoje."
+     ],
+     "q": "O que mais queres que o entrevistador recorde sobre ti?",
+     "c": "Escreve a resposta em três linhas: presente, passado, futuro, e di-la em voz alta."
+    },
+    "pt_BR": {
+     "t": "Fale sobre você",
+     "g": "Estruturar essa pergunta clássica: presente, passado e por que você está aqui.",
+     "p": [
+      "Comece com seu cargo ou situação atual em uma frase.",
+      "Acrescente um ou dois marcos do passado ligados à vaga.",
+      "Termine dizendo por que essa oportunidade empolga você hoje."
+     ],
+     "q": "O que você mais quer que o entrevistador lembre sobre você?",
+     "c": "Escreva sua resposta em três linhas: presente, passado, futuro, e fale em voz alta."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why do you want this job?",
+     "g": "Show genuine interest by linking the role to your skills and goals.",
+     "p": [
+      "Name what attracts you in the work itself, not only the benefits.",
+      "Connect two of your strengths to what the job needs.",
+      "Mention how the role fits where you want to grow."
+     ],
+     "q": "What part of this kind of work gives you real energy?",
+     "c": "Write two sentences: what draws you to the work and how you fit it."
+    },
+    "de": {
+     "t": "Warum willst du diesen Job?",
+     "g": "Echtes Interesse zeigen, indem du die Stelle mit Stärken und Zielen verbindest.",
+     "p": [
+      "Nenne, was dich an der Arbeit selbst reizt, nicht nur an den Vorteilen.",
+      "Verknüpfe zwei deiner Stärken mit dem, was die Stelle braucht.",
+      "Erwähne, wie die Rolle zu deinem Wunsch passt, dich weiterzuentwickeln."
+     ],
+     "q": "Welcher Teil dieser Arbeit gibt dir echte Energie?",
+     "c": "Schreibe zwei Sätze: was dich an der Arbeit anzieht und wie du dazu passt."
+    },
+    "es": {
+     "t": "¿Por qué quieres este trabajo?",
+     "g": "Mostrar interés genuino uniendo el puesto con tus habilidades y metas.",
+     "p": [
+      "Nombra lo que te atrae del trabajo en sí, no solo de las ventajas.",
+      "Conecta dos de tus fortalezas con lo que necesita el puesto.",
+      "Menciona cómo encaja el rol con lo que quieres desarrollar."
+     ],
+     "q": "¿Qué parte de este tipo de trabajo te da energía de verdad?",
+     "c": "Escribe dos frases: qué te atrae del trabajo y cómo encajas."
+    },
+    "fr": {
+     "t": "Pourquoi voulez-vous ce poste ?",
+     "g": "Montrer un intérêt sincère en reliant le poste à vos compétences et objectifs.",
+     "p": [
+      "Dites ce qui vous attire dans le travail lui-même, pas seulement les avantages.",
+      "Reliez deux de vos points forts à ce dont le poste a besoin.",
+      "Mentionnez en quoi le rôle correspond à votre envie de progresser."
+     ],
+     "q": "Quelle partie de ce type de travail vous donne vraiment de l'énergie ?",
+     "c": "Écrivez deux phrases : ce qui vous attire dans le travail et en quoi vous y correspondez."
+    },
+    "it": {
+     "t": "Perché vuoi questo lavoro?",
+     "g": "Mostrare interesse sincero collegando il ruolo alle tue competenze e ai tuoi obiettivi.",
+     "p": [
+      "Di' cosa ti attira del lavoro in sé, non solo dei vantaggi.",
+      "Collega due tuoi punti di forza a ciò di cui il ruolo ha bisogno.",
+      "Accenna a come il ruolo si adatta a dove vuoi crescere."
+     ],
+     "q": "Quale parte di questo tipo di lavoro ti dà davvero energia?",
+     "c": "Scrivi due frasi: cosa ti attira del lavoro e perché fai al caso."
+    },
+    "pt": {
+     "t": "Porque queres este emprego?",
+     "g": "Mostrar interesse genuíno ligando a função às tuas competências e objetivos.",
+     "p": [
+      "Diz o que te atrai no trabalho em si, não só nas vantagens.",
+      "Liga duas das tuas forças ao que a função precisa.",
+      "Menciona como a função se encaixa no que queres desenvolver."
+     ],
+     "q": "Que parte deste tipo de trabalho te dá energia a sério?",
+     "c": "Escreve duas frases: o que te atrai no trabalho e como te ajustas."
+    },
+    "pt_BR": {
+     "t": "Por que você quer essa vaga?",
+     "g": "Mostrar interesse genuíno ligando a vaga às suas habilidades e objetivos.",
+     "p": [
+      "Diga o que atrai você no trabalho em si, não só nos benefícios.",
+      "Conecte dois pontos fortes seus ao que a vaga precisa.",
+      "Mencione como o cargo se encaixa no que você quer desenvolver."
+     ],
+     "q": "Que parte desse tipo de trabalho dá energia de verdade para você?",
+     "c": "Escreva duas frases: o que atrai você no trabalho e como você se encaixa."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why this company?",
+     "g": "Answer with specific reasons that prove you did your research.",
+     "p": [
+      "Mention a product, project, value or story that you truly like.",
+      "Say why it matters to you personally, in one honest sentence.",
+      "Avoid flattery and generic lines that fit any company."
+     ],
+     "q": "What is one detail about a company that made you smile or think?",
+     "c": "Write two specific reasons you like one company, using facts you found."
+    },
+    "de": {
+     "t": "Warum dieses Unternehmen?",
+     "g": "Mit konkreten Gründen antworten, die zeigen, dass du dich informiert hast.",
+     "p": [
+      "Nenne ein Produkt, Projekt, einen Wert oder eine Geschichte, die dir gefällt.",
+      "Sage in einem ehrlichen Satz, warum dir das persönlich wichtig ist.",
+      "Vermeide Schmeicheleien und Floskeln, die zu jeder Firma passen."
+     ],
+     "q": "Welches Detail einer Firma hat dich zum Lächeln oder Nachdenken gebracht?",
+     "c": "Schreibe zwei konkrete Gründe für eine Firma, mit Fakten, die du gefunden hast."
+    },
+    "es": {
+     "t": "¿Por qué esta empresa?",
+     "g": "Responder con motivos concretos que demuestren que investigaste.",
+     "p": [
+      "Menciona un producto, proyecto, valor o historia que de verdad te guste.",
+      "Di en una frase sincera por qué te importa personalmente.",
+      "Evita los halagos y las frases genéricas que valdrían para cualquier empresa."
+     ],
+     "q": "¿Qué detalle de una empresa te hizo sonreír o pensar?",
+     "c": "Escribe dos motivos concretos por los que te gusta una empresa, con datos reales."
+    },
+    "fr": {
+     "t": "Pourquoi cette entreprise ?",
+     "g": "Répondre avec des raisons précises qui prouvent que vous vous êtes renseigné.",
+     "p": [
+      "Citez un produit, un projet, une valeur ou une histoire qui vous plaît vraiment.",
+      "Dites en une phrase sincère pourquoi cela compte pour vous.",
+      "Évitez les flatteries et les phrases creuses valables pour n'importe quelle entreprise."
+     ],
+     "q": "Quel détail d'une entreprise vous a fait sourire ou réfléchir ?",
+     "c": "Écrivez deux raisons précises d'aimer une entreprise, avec des faits trouvés."
+    },
+    "it": {
+     "t": "Perché questa azienda?",
+     "g": "Rispondere con motivi concreti che dimostrino che ti sei informato.",
+     "p": [
+      "Cita un prodotto, un progetto, un valore o una storia che ti piace davvero.",
+      "Di' in una frase sincera perché ti sta a cuore.",
+      "Evita i complimenti di rito e le frasi generiche valide per qualsiasi azienda."
+     ],
+     "q": "Quale dettaglio di un'azienda ti ha fatto sorridere o riflettere?",
+     "c": "Scrivi due motivi concreti per cui ti piace un'azienda, con fatti reali."
+    },
+    "pt": {
+     "t": "Porque esta empresa?",
+     "g": "Responder com motivos concretos que provem que pesquisaste.",
+     "p": [
+      "Menciona um produto, projeto, valor ou história de que gostes a sério.",
+      "Diz numa frase sincera porque isso te importa pessoalmente.",
+      "Evita elogios e frases genéricas que serviriam a qualquer empresa."
+     ],
+     "q": "Que pormenor de uma empresa te fez sorrir ou pensar?",
+     "c": "Escreve dois motivos concretos por que gostas de uma empresa, com factos reais."
+    },
+    "pt_BR": {
+     "t": "Por que esta empresa?",
+     "g": "Responder com motivos concretos que provem que você pesquisou.",
+     "p": [
+      "Mencione um produto, projeto, valor ou história de que você realmente goste.",
+      "Diga em uma frase sincera por que isso importa para você.",
+      "Evite elogios e frases genéricas que serviriam para qualquer empresa."
+     ],
+     "q": "Que detalhe de uma empresa fez você sorrir ou refletir?",
+     "c": "Escreva dois motivos concretos pelos quais você gosta de uma empresa, com fatos reais."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What are your strengths?",
+     "g": "Choose relevant strengths and back each one with a real example.",
+     "p": [
+      "Pick two or three strengths that match the job's must-haves.",
+      "Name the strength, then give a short true example of it in action.",
+      "Stay confident and warm, never boastful."
+     ],
+     "q": "Which strength do colleagues, friends or teachers most often notice in you?",
+     "c": "Choose one strength and write a two-sentence example that proves it."
+    },
+    "de": {
+     "t": "Was sind deine Stärken?",
+     "g": "Passende Stärken wählen und jede mit einem echten Beispiel belegen.",
+     "p": [
+      "Wähle zwei, drei Stärken, die zu den Muss-Anforderungen der Stelle passen.",
+      "Nenne die Stärke und gib ein kurzes, wahres Beispiel dazu.",
+      "Bleib selbstsicher und freundlich, ohne anzugeben."
+     ],
+     "q": "Welche Stärke bemerken Kollegen, Freunde oder Lehrkräfte am häufigsten an dir?",
+     "c": "Wähle eine Stärke und schreibe ein Beispiel in zwei Sätzen, das sie belegt."
+    },
+    "es": {
+     "t": "¿Cuáles son tus fortalezas?",
+     "g": "Elegir fortalezas relevantes y respaldar cada una con un ejemplo real.",
+     "p": [
+      "Elige dos o tres fortalezas que coincidan con lo imprescindible del puesto.",
+      "Nombra la fortaleza y da un ejemplo breve y verdadero de ella en acción.",
+      "Mantente seguro y cercano, sin presumir."
+     ],
+     "q": "¿Qué fortaleza notan más en ti compañeros, amigos o profesores?",
+     "c": "Elige una fortaleza y escribe un ejemplo de dos frases que la demuestre."
+    },
+    "fr": {
+     "t": "Quels sont vos points forts ?",
+     "g": "Choisir des atouts pertinents et appuyer chacun par un exemple réel.",
+     "p": [
+      "Choisissez deux ou trois atouts qui correspondent aux indispensables du poste.",
+      "Nommez l'atout, puis donnez un court exemple vrai de sa mise en action.",
+      "Restez confiant et chaleureux, sans vantardise."
+     ],
+     "q": "Quel point fort remarquent le plus souvent vos collègues, amis ou professeurs ?",
+     "c": "Choisissez un atout et écrivez un exemple de deux phrases qui le prouve."
+    },
+    "it": {
+     "t": "Quali sono i tuoi punti di forza?",
+     "g": "Scegliere punti di forza rilevanti e sostenere ciascuno con un esempio reale.",
+     "p": [
+      "Scegli due o tre punti di forza in linea con i requisiti indispensabili del ruolo.",
+      "Nomina il punto di forza e poi dai un breve esempio vero in azione.",
+      "Resta sicuro e cordiale, mai presuntuoso."
+     ],
+     "q": "Quale punto di forza notano più spesso in te colleghi, amici o insegnanti?",
+     "c": "Scegli un punto di forza e scrivi un esempio di due frasi che lo dimostri."
+    },
+    "pt": {
+     "t": "Quais são os teus pontos fortes?",
+     "g": "Escolher pontos fortes relevantes e apoiar cada um com um exemplo real.",
+     "p": [
+      "Escolhe dois ou três pontos fortes que coincidam com o essencial da função.",
+      "Nomeia o ponto forte e dá um exemplo breve e verdadeiro dele em ação.",
+      "Mantém-te confiante e simpático, sem gabar-te."
+     ],
+     "q": "Que ponto forte é que colegas, amigos ou professores mais notam em ti?",
+     "c": "Escolhe um ponto forte e escreve um exemplo de duas frases que o prove."
+    },
+    "pt_BR": {
+     "t": "Quais são seus pontos fortes?",
+     "g": "Escolher pontos fortes relevantes e sustentar cada um com um exemplo real.",
+     "p": [
+      "Escolha dois ou três pontos fortes que combinem com o essencial da vaga.",
+      "Nomeie o ponto forte e dê um exemplo curto e verdadeiro dele em ação.",
+      "Mantenha-se confiante e simpático, sem se gabar."
+     ],
+     "q": "Que ponto forte colegas, amigos ou professores mais percebem em você?",
+     "c": "Escolha um ponto forte e escreva um exemplo de duas frases que o comprove."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The weakness question",
+     "g": "Answer honestly with a real area for growth and what you do about it.",
+     "p": [
+      "Choose a real, non-critical weakness, not a fake one like working too hard.",
+      "Explain the steps you are taking to improve.",
+      "End on progress, so the answer shows self-awareness and growth."
+     ],
+     "q": "What is something you are still learning to do better at work?",
+     "c": "Write a weakness answer in three lines: the area, the action, the progress."
+    },
+    "de": {
+     "t": "Die Schwächen-Frage",
+     "g": "Ehrlich antworten mit einem echten Entwicklungsfeld und dem, was du dagegen tust.",
+     "p": [
+      "Wähle eine echte, unkritische Schwäche, keine falsche wie zu viel Fleiß.",
+      "Erkläre, welche Schritte du zur Verbesserung gehst.",
+      "Schließe mit dem Fortschritt, damit die Antwort Selbstreflexion und Wachstum zeigt."
+     ],
+     "q": "Was lernst du gerade noch, im Job besser zu machen?",
+     "c": "Schreibe die Antwort in drei Zeilen: Bereich, Maßnahme, Fortschritt."
+    },
+    "es": {
+     "t": "La pregunta de las debilidades",
+     "g": "Responder con sinceridad con un área real de mejora y lo que haces al respecto.",
+     "p": [
+      "Elige una debilidad real y no crítica, no una falsa como trabajar demasiado.",
+      "Explica los pasos que das para mejorar.",
+      "Termina con el progreso, para mostrar autoconocimiento y crecimiento."
+     ],
+     "q": "¿Qué estás aprendiendo todavía a hacer mejor en el trabajo?",
+     "c": "Escribe una respuesta en tres líneas: el área, la acción y el progreso."
+    },
+    "fr": {
+     "t": "La question sur les faiblesses",
+     "g": "Répondre honnêtement avec un vrai axe de progrès et ce que vous faites pour l'améliorer.",
+     "p": [
+      "Choisissez une vraie faiblesse non critique, pas une fausse comme travailler trop.",
+      "Expliquez les démarches que vous suivez pour progresser.",
+      "Terminez sur les progrès, pour montrer lucidité et évolution."
+     ],
+     "q": "Qu'êtes-vous encore en train d'apprendre à mieux faire au travail ?",
+     "c": "Écrivez une réponse en trois lignes : le domaine, l'action, le progrès."
+    },
+    "it": {
+     "t": "La domanda sui punti deboli",
+     "g": "Rispondere con onestà indicando un vero ambito di crescita e cosa fai per migliorarlo.",
+     "p": [
+      "Scegli un limite reale e non critico, non uno finto come lavorare troppo.",
+      "Spiega i passi che stai facendo per migliorare.",
+      "Chiudi con i progressi, così la risposta mostra consapevolezza e crescita."
+     ],
+     "q": "Cosa stai ancora imparando a fare meglio sul lavoro?",
+     "c": "Scrivi una risposta in tre righe: l'area, l'azione, il progresso."
+    },
+    "pt": {
+     "t": "A pergunta sobre os pontos fracos",
+     "g": "Responder com honestidade, com uma área real a melhorar e o que fazes quanto a isso.",
+     "p": [
+      "Escolhe uma fraqueza real e não crítica, não uma falsa como trabalhar demais.",
+      "Explica os passos que estás a dar para melhorar.",
+      "Termina com o progresso, para mostrares autoconhecimento e evolução."
+     ],
+     "q": "O que ainda estás a aprender a fazer melhor no trabalho?",
+     "c": "Escreve uma resposta em três linhas: a área, a ação e o progresso."
+    },
+    "pt_BR": {
+     "t": "A pergunta sobre pontos fracos",
+     "g": "Responder com honestidade, com uma área real a melhorar e o que você faz a respeito.",
+     "p": [
+      "Escolha uma fraqueza real e não crítica, não uma falsa como trabalhar demais.",
+      "Explique os passos que você está dando para melhorar.",
+      "Termine com o progresso, para mostrar autoconhecimento e evolução."
+     ],
+     "q": "O que você ainda está aprendendo a fazer melhor no trabalho?",
+     "c": "Escreva uma resposta em três linhas: a área, a ação e o progresso."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Where do you see yourself?",
+     "g": "Talk about future goals in a way that fits the role and the company.",
+     "p": [
+      "Describe growth in skills and responsibility rather than exact job titles.",
+      "Show that you want to learn and contribute here.",
+      "Be honest, but keep your goals connected to this kind of work."
+     ],
+     "q": "What would you like to be better at one year from now?",
+     "c": "Write a two-sentence answer about your growth that links to this role."
+    },
+    "de": {
+     "t": "Wo siehst du dich in einigen Jahren?",
+     "g": "Über Zukunftsziele so sprechen, dass sie zu Stelle und Unternehmen passen.",
+     "p": [
+      "Beschreibe Wachstum bei Können und Verantwortung statt genauer Jobtitel.",
+      "Zeige, dass du hier lernen und etwas beitragen möchtest.",
+      "Sei ehrlich, aber verbinde deine Ziele mit dieser Art von Arbeit."
+     ],
+     "q": "Worin möchtest du in einem Jahr besser sein?",
+     "c": "Schreibe in zwei Sätzen, wie du wachsen willst, und knüpfe an diese Stelle an."
+    },
+    "es": {
+     "t": "¿Dónde te ves en el futuro?",
+     "g": "Hablar de metas futuras de forma que encajen con el puesto y la empresa.",
+     "p": [
+      "Describe crecimiento en habilidades y responsabilidad, más que cargos exactos.",
+      "Muestra que quieres aprender y aportar aquí.",
+      "Sé sincero, pero mantén tus metas ligadas a este tipo de trabajo."
+     ],
+     "q": "¿En qué te gustaría ser mejor dentro de un año?",
+     "c": "Escribe una respuesta de dos frases sobre tu crecimiento que conecte con este puesto."
+    },
+    "fr": {
+     "t": "Où vous voyez-vous dans quelques années ?",
+     "g": "Parler de vos objectifs futurs d'une façon qui convienne au poste et à l'entreprise.",
+     "p": [
+      "Décrivez une progression en compétences et responsabilités plutôt que des intitulés exacts.",
+      "Montrez que vous voulez apprendre et contribuer ici.",
+      "Soyez honnête, mais gardez vos objectifs liés à ce type de métier."
+     ],
+     "q": "Dans quoi aimeriez-vous être meilleur d'ici un an ?",
+     "c": "Rédigez en deux phrases votre évolution souhaitée, en lien avec ce poste."
+    },
+    "it": {
+     "t": "Dove ti vedi in futuro?",
+     "g": "Parlare degli obiettivi futuri in modo coerente con il ruolo e l'azienda.",
+     "p": [
+      "Descrivi la crescita in competenze e responsabilità più che in titoli precisi.",
+      "Mostra che vuoi imparare e contribuire qui.",
+      "Sii sincero, ma tieni i tuoi obiettivi legati a questo tipo di lavoro."
+     ],
+     "q": "In cosa vorresti essere più bravo tra un anno?",
+     "c": "Scrivi una risposta di due frasi sulla tua crescita che si colleghi a questo ruolo."
+    },
+    "pt": {
+     "t": "Onde te vês no futuro?",
+     "g": "Falar de objetivos futuros de forma que condiga com a função e a empresa.",
+     "p": [
+      "Descreve crescimento em competências e responsabilidade, mais do que cargos exatos.",
+      "Mostra que queres aprender e contribuir aqui.",
+      "Sê sincero, mas mantém os teus objetivos ligados a este tipo de trabalho."
+     ],
+     "q": "Em que gostarias de ser melhor daqui a um ano?",
+     "c": "Escreve uma resposta de duas frases sobre o teu crescimento ligada a esta função."
+    },
+    "pt_BR": {
+     "t": "Onde você se vê no futuro?",
+     "g": "Falar dos objetivos futuros de um jeito que combine com a vaga e a empresa.",
+     "p": [
+      "Descreva crescimento em habilidades e responsabilidade, mais que cargos exatos.",
+      "Mostre que você quer aprender e contribuir aqui.",
+      "Seja sincero, mas mantenha seus objetivos ligados a esse tipo de trabalho."
+     ],
+     "q": "Em que você gostaria de ser melhor daqui a um ano?",
+     "c": "Escreva uma resposta de duas frases sobre seu crescimento ligada a esta vaga."
+    }
+   }
+  }
+ ]
+}

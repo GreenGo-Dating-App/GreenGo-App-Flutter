@@ -1,0 +1,835 @@
+{
+ "topic": "cv",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The experience section",
+     "g": "Learn how each job entry is built: title, employer, place, dates and bullets.",
+     "p": [
+      "Each entry starts with the job title, employer, place and dates.",
+      "Under it, add a few bullets about results, not a long paragraph.",
+      "Order entries from newest to oldest unless you use another format."
+     ],
+     "q": "Which job entry on your CV needs the most work?",
+     "c": "Format one job entry with a clear header line and three bullets."
+    },
+    "de": {
+     "t": "Der Abschnitt Berufserfahrung",
+     "g": "Lerne den Aufbau eines Eintrags: Titel, Arbeitgeber, Ort, Zeitraum und Stichpunkte.",
+     "p": [
+      "Jeder Eintrag beginnt mit Berufsbezeichnung, Arbeitgeber, Ort und Zeitraum.",
+      "Darunter folgen wenige Stichpunkte zu Ergebnissen, kein langer Absatz.",
+      "Ordne Einträge von neu nach alt, sofern du kein anderes Format nutzt."
+     ],
+     "q": "Welcher Eintrag in deinem Lebenslauf braucht die meiste Arbeit?",
+     "c": "Formatiere einen Eintrag mit klarer Kopfzeile und drei Stichpunkten."
+    },
+    "es": {
+     "t": "La sección de experiencia",
+     "g": "Aprende cómo se construye cada puesto: cargo, empresa, lugar, fechas y viñetas.",
+     "p": [
+      "Cada entrada empieza con cargo, empresa, lugar y fechas.",
+      "Debajo, pon pocas viñetas sobre resultados, no un párrafo largo.",
+      "Ordena de más reciente a más antiguo salvo que uses otro formato."
+     ],
+     "q": "¿Qué puesto de tu CV necesita más trabajo?",
+     "c": "Da formato a un puesto con línea de cabecera clara y tres viñetas."
+    },
+    "fr": {
+     "t": "La rubrique expérience",
+     "g": "Apprends comment se construit chaque poste : intitulé, employeur, lieu, dates et puces.",
+     "p": [
+      "Chaque entrée commence par l'intitulé, l'employeur, le lieu et les dates.",
+      "Dessous, quelques puces sur les résultats, pas un long paragraphe.",
+      "Classe du plus récent au plus ancien, sauf autre format choisi."
+     ],
+     "q": "Quelle expérience de ton CV demande le plus de travail ?",
+     "c": "Mets en forme une expérience avec un en-tête clair et trois puces."
+    },
+    "it": {
+     "t": "La sezione esperienza",
+     "g": "Impara come si costruisce ogni voce: ruolo, azienda, luogo, date e punti elenco.",
+     "p": [
+      "Ogni voce inizia con ruolo, azienda, luogo e date.",
+      "Sotto, aggiungi pochi punti sui risultati, non un lungo paragrafo.",
+      "Ordina dal più recente al più vecchio, salvo altro formato."
+     ],
+     "q": "Quale voce del tuo CV richiede più lavoro?",
+     "c": "Imposta una voce con riga d'intestazione chiara e tre punti."
+    },
+    "pt": {
+     "t": "A secção de experiência",
+     "g": "Aprende como se constrói cada entrada: cargo, empresa, local, datas e tópicos.",
+     "p": [
+      "Cada entrada começa com cargo, empresa, local e datas.",
+      "Por baixo, poucos tópicos sobre resultados, não um parágrafo longo.",
+      "Ordena do mais recente para o mais antigo, salvo outro formato."
+     ],
+     "q": "Que entrada do teu CV precisa de mais trabalho?",
+     "c": "Formata uma entrada com linha de cabeçalho clara e três tópicos."
+    },
+    "pt_BR": {
+     "t": "A seção de experiência",
+     "g": "Aprenda como se constrói cada entrada: cargo, empresa, local, datas e tópicos.",
+     "p": [
+      "Cada entrada começa com cargo, empresa, local e datas.",
+      "Abaixo, poucos tópicos sobre resultados, não um parágrafo longo.",
+      "Ordene do mais recente para o mais antigo, salvo outro formato."
+     ],
+     "q": "Que entrada do seu currículo precisa de mais trabalho?",
+     "c": "Formate uma entrada com linha de cabeçalho clara e três tópicos."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Job titles that make sense",
+     "g": "Clarify unusual internal job titles so outside readers understand them.",
+     "p": [
+      "Internal titles can sound odd to people outside the company.",
+      "Add a plain equivalent in brackets, such as Customer Care Lead (Team Leader).",
+      "Stay truthful: clarify the role, never inflate it."
+     ],
+     "q": "Is any of your job titles unusual or confusing?",
+     "c": "Check each title and add a clear equivalent where needed."
+    },
+    "de": {
+     "t": "Verständliche Berufsbezeichnungen",
+     "g": "Kläre ungewöhnliche interne Titel, damit Außenstehende sie verstehen.",
+     "p": [
+      "Interne Titel klingen für Außenstehende oft seltsam.",
+      "Ergänze eine gängige Entsprechung in Klammern, etwa Kundenbetreuer (Teamleiter).",
+      "Bleibe ehrlich: Rolle klären, nie aufblasen."
+     ],
+     "q": "Ist eine deiner Berufsbezeichnungen ungewöhnlich oder verwirrend?",
+     "c": "Prüfe jeden Titel und ergänze bei Bedarf eine klare Entsprechung."
+    },
+    "es": {
+     "t": "Cargos que se entiendan",
+     "g": "Aclara cargos internos poco habituales para que los entienda cualquiera.",
+     "p": [
+      "Los cargos internos pueden sonar raros fuera de la empresa.",
+      "Añade un equivalente claro entre paréntesis, como Atención al Cliente (Jefe de equipo).",
+      "Sé veraz: aclara el puesto, nunca lo infles."
+     ],
+     "q": "¿Alguno de tus cargos es raro o confuso?",
+     "c": "Revisa cada cargo y añade un equivalente claro si hace falta."
+    },
+    "fr": {
+     "t": "Des intitulés de poste compréhensibles",
+     "g": "Clarifie les intitulés internes inhabituels pour que tout lecteur les comprenne.",
+     "p": [
+      "Les intitulés internes peuvent sembler étranges à l'extérieur.",
+      "Ajoute un équivalent courant entre parenthèses, par exemple Chargé clientèle (chef d'équipe).",
+      "Reste honnête : clarifie le rôle, ne le gonfle jamais."
+     ],
+     "q": "Un de tes intitulés est-il inhabituel ou confus ?",
+     "c": "Vérifie chaque intitulé et ajoute un équivalent clair si besoin."
+    },
+    "it": {
+     "t": "Titoli di lavoro comprensibili",
+     "g": "Chiarisci i titoli interni insoliti perché chi legge li capisca.",
+     "p": [
+      "I titoli interni possono suonare strani fuori dall'azienda.",
+      "Aggiungi un equivalente comune tra parentesi, come Customer Care (caposquadra).",
+      "Resta sincero: chiarisci il ruolo, non gonfiarlo mai."
+     ],
+     "q": "Qualcuno dei tuoi titoli è insolito o poco chiaro?",
+     "c": "Controlla ogni titolo e aggiungi un equivalente chiaro se serve."
+    },
+    "pt": {
+     "t": "Cargos que se percebam",
+     "g": "Clarifica cargos internos pouco comuns para que qualquer leitor os entenda.",
+     "p": [
+      "Os cargos internos podem soar estranhos fora da empresa.",
+      "Acrescenta um equivalente comum entre parênteses, como Apoio ao Cliente (chefe de equipa).",
+      "Sê verdadeiro: clarifica a função, nunca a exageres."
+     ],
+     "q": "Algum dos teus cargos é invulgar ou confuso?",
+     "c": "Verifica cada cargo e acrescenta um equivalente claro se preciso."
+    },
+    "pt_BR": {
+     "t": "Cargos que se entendam",
+     "g": "Esclareça cargos internos pouco comuns para qualquer leitor entender.",
+     "p": [
+      "Cargos internos podem soar estranhos fora da empresa.",
+      "Acrescente um equivalente comum entre parênteses, como Atendimento (líder de equipe).",
+      "Seja verdadeiro: esclareça a função, nunca a infle."
+     ],
+     "q": "Algum dos seus cargos é incomum ou confuso?",
+     "c": "Confira cada cargo e acrescente um equivalente claro se precisar."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dates and formats",
+     "g": "Show months and years consistently and handle short jobs honestly.",
+     "p": [
+      "Pick one date style, such as Mar 2021 - Aug 2023, and use it everywhere.",
+      "Years only is fine if you prefer, but stay consistent.",
+      "Short jobs can be shown plainly; honesty beats stretching dates."
+     ],
+     "q": "Do all the dates on your CV follow the same style?",
+     "c": "Standardise every date in your CV to one format."
+    },
+    "de": {
+     "t": "Datumsangaben und Formate",
+     "g": "Zeige Monate und Jahre einheitlich und gehe ehrlich mit kurzen Stationen um.",
+     "p": [
+      "Wähle einen Datumsstil, etwa 03/2021 - 08/2023, und nutze ihn überall.",
+      "Nur Jahre sind auch in Ordnung, aber bleibe konsequent.",
+      "Kurze Stationen darfst du schlicht zeigen; Ehrlichkeit schlägt gedehnte Daten."
+     ],
+     "q": "Folgen alle Daten in deinem Lebenslauf demselben Stil?",
+     "c": "Vereinheitliche jedes Datum in deinem Lebenslauf."
+    },
+    "es": {
+     "t": "Fechas y formatos",
+     "g": "Muestra meses y años de forma coherente y trata con honestidad los empleos cortos.",
+     "p": [
+      "Elige un estilo de fecha, como 03/2021 - 08/2023, y úsalo en todo el CV.",
+      "Solo años también vale, pero mantén la coherencia.",
+      "Los empleos cortos pueden mostrarse sin más; la honestidad vale más que estirar fechas."
+     ],
+     "q": "¿Todas las fechas de tu CV siguen el mismo estilo?",
+     "c": "Unifica todas las fechas de tu CV en un solo formato."
+    },
+    "fr": {
+     "t": "Dates et formats",
+     "g": "Présente mois et années de façon cohérente et traite honnêtement les emplois courts.",
+     "p": [
+      "Choisis un style de date, comme 03/2021 - 08/2023, et garde-le partout.",
+      "Les années seules conviennent aussi, mais reste cohérent.",
+      "Les emplois courts peuvent figurer simplement ; l'honnêteté vaut mieux que des dates étirées."
+     ],
+     "q": "Toutes les dates de ton CV suivent-elles le même style ?",
+     "c": "Uniformise toutes les dates de ton CV dans un seul format."
+    },
+    "it": {
+     "t": "Date e formati",
+     "g": "Mostra mesi e anni in modo coerente e tratta con onestà i lavori brevi.",
+     "p": [
+      "Scegli uno stile di data, come 03/2021 - 08/2023, e usalo ovunque.",
+      "Vanno bene anche solo gli anni, ma sii coerente.",
+      "I lavori brevi si possono mostrare semplicemente; l'onestà batte le date allungate."
+     ],
+     "q": "Tutte le date del tuo CV seguono lo stesso stile?",
+     "c": "Uniforma ogni data del tuo CV a un solo formato."
+    },
+    "pt": {
+     "t": "Datas e formatos",
+     "g": "Mostra meses e anos de forma coerente e trata com honestidade os empregos curtos.",
+     "p": [
+      "Escolhe um estilo de data, como 03/2021 - 08/2023, e usa-o em todo o lado.",
+      "Só anos também serve, mas mantém a coerência.",
+      "Os empregos curtos podem aparecer sem rodeios; honestidade vale mais do que esticar datas."
+     ],
+     "q": "Todas as datas do teu CV seguem o mesmo estilo?",
+     "c": "Uniformiza todas as datas do teu CV num só formato."
+    },
+    "pt_BR": {
+     "t": "Datas e formatos",
+     "g": "Mostre meses e anos de forma coerente e trate com honestidade os empregos curtos.",
+     "p": [
+      "Escolha um estilo de data, como 03/2021 - 08/2023, e use em todo lugar.",
+      "Só anos também serve, mas mantenha a coerência.",
+      "Empregos curtos podem aparecer sem rodeios; honestidade vale mais do que esticar datas."
+     ],
+     "q": "Todas as datas do seu currículo seguem o mesmo estilo?",
+     "c": "Padronize todas as datas do seu currículo em um só formato."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Duties versus achievements",
+     "g": "See why showing results beats copying tasks from a job description.",
+     "p": [
+      "A duty says what you were supposed to do; an achievement says what you did well.",
+      "Readers already know typical duties of your job title.",
+      "Ask: what changed because of my work?"
+     ],
+     "q": "What is one thing at work that went better because of you?",
+     "c": "Turn two duty bullets into achievement bullets."
+    },
+    "de": {
+     "t": "Aufgaben versus Erfolge",
+     "g": "Sieh, warum Ergebnisse stärker wirken als abgeschriebene Aufgaben.",
+     "p": [
+      "Eine Aufgabe sagt, was du tun solltest; ein Erfolg, was du gut gemacht hast.",
+      "Leser kennen die üblichen Aufgaben deiner Berufsbezeichnung bereits.",
+      "Frage dich: Was hat sich durch meine Arbeit verändert?"
+     ],
+     "q": "Was lief bei der Arbeit durch dich besser?",
+     "c": "Verwandle zwei Aufgabenpunkte in Erfolgspunkte."
+    },
+    "es": {
+     "t": "Funciones frente a logros",
+     "g": "Descubre por qué mostrar resultados supera copiar tareas de la descripción del puesto.",
+     "p": [
+      "Una función dice lo que debías hacer; un logro, lo que hiciste bien.",
+      "El lector ya conoce las funciones típicas de tu cargo.",
+      "Pregúntate: ¿qué cambió gracias a mi trabajo?"
+     ],
+     "q": "¿Qué cosa en el trabajo salió mejor gracias a ti?",
+     "c": "Convierte dos viñetas de funciones en viñetas de logros."
+    },
+    "fr": {
+     "t": "Missions ou réalisations",
+     "g": "Vois pourquoi montrer des résultats vaut mieux que recopier des tâches.",
+     "p": [
+      "Une mission dit ce que tu devais faire ; une réalisation, ce que tu as bien fait.",
+      "Le lecteur connaît déjà les missions habituelles de ton intitulé.",
+      "Demande-toi : qu'est-ce qui a changé grâce à mon travail ?"
+     ],
+     "q": "Qu'est-ce qui s'est mieux passé au travail grâce à toi ?",
+     "c": "Transforme deux puces de missions en puces de réalisations."
+    },
+    "it": {
+     "t": "Mansioni o risultati",
+     "g": "Scopri perché mostrare risultati batte copiare i compiti della descrizione del ruolo.",
+     "p": [
+      "Una mansione dice cosa dovevi fare; un risultato cosa hai fatto bene.",
+      "Chi legge conosce già le mansioni tipiche del tuo ruolo.",
+      "Chiediti: cosa è cambiato grazie al mio lavoro?"
+     ],
+     "q": "Cosa è andato meglio al lavoro grazie a te?",
+     "c": "Trasforma due punti di mansioni in punti di risultati."
+    },
+    "pt": {
+     "t": "Funções versus conquistas",
+     "g": "Percebe porque mostrar resultados vence copiar tarefas da descrição da função.",
+     "p": [
+      "Uma função diz o que devias fazer; uma conquista, o que fizeste bem.",
+      "O leitor já conhece as funções típicas do teu cargo.",
+      "Pergunta-te: o que mudou graças ao meu trabalho?"
+     ],
+     "q": "O que correu melhor no trabalho graças a ti?",
+     "c": "Transforma dois tópicos de funções em tópicos de conquistas."
+    },
+    "pt_BR": {
+     "t": "Funções versus conquistas",
+     "g": "Entenda por que mostrar resultados vence copiar tarefas da descrição da vaga.",
+     "p": [
+      "Uma função diz o que você devia fazer; uma conquista, o que fez bem.",
+      "O leitor já conhece as funções típicas do seu cargo.",
+      "Pergunte: o que mudou graças ao meu trabalho?"
+     ],
+     "q": "O que deu mais certo no trabalho graças a você?",
+     "c": "Transforme dois tópicos de funções em tópicos de conquistas."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Strong action verbs",
+     "g": "Start each bullet with a lively verb like led, built, improved or solved.",
+     "p": [
+      "A strong first word makes a bullet feel active and clear.",
+      "Avoid weak openers like responsible for or helped with.",
+      "Vary your verbs so bullets do not all sound the same."
+     ],
+     "q": "Which verbs describe the way you work best?",
+     "c": "Rewrite five bullets to start with a fresh action verb."
+    },
+    "de": {
+     "t": "Starke Tätigkeitsverben",
+     "g": "Beginne jeden Punkt mit einem lebendigen Verb wie leitete, baute, verbesserte, löste.",
+     "p": [
+      "Ein starkes erstes Wort macht einen Punkt aktiv und klar.",
+      "Meide schwache Einstiege wie zuständig für oder half bei.",
+      "Variiere die Verben, damit nicht alle Punkte gleich klingen."
+     ],
+     "q": "Welche Verben beschreiben deine Arbeitsweise am besten?",
+     "c": "Formuliere fünf Punkte mit einem frischen Verb am Anfang um."
+    },
+    "es": {
+     "t": "Verbos de acción potentes",
+     "g": "Empieza cada viñeta con un verbo vivo como dirigí, construí, mejoré o resolví.",
+     "p": [
+      "Una primera palabra fuerte hace la viñeta activa y clara.",
+      "Evita arranques débiles como encargado de o ayudé con.",
+      "Varía los verbos para que las viñetas no suenen todas igual."
+     ],
+     "q": "¿Qué verbos describen mejor tu manera de trabajar?",
+     "c": "Reescribe cinco viñetas empezando con un verbo de acción nuevo."
+    },
+    "fr": {
+     "t": "Des verbes d'action percutants",
+     "g": "Commence chaque puce par un verbe vivant : dirigé, créé, amélioré, résolu.",
+     "p": [
+      "Un premier mot fort rend la ligne active et claire.",
+      "Évite les débuts faibles comme responsable de ou aidé à.",
+      "Varie les verbes pour que les puces ne se ressemblent pas toutes."
+     ],
+     "q": "Quels verbes décrivent le mieux ta façon de travailler ?",
+     "c": "Réécris cinq puces avec un nouveau verbe d'action au début."
+    },
+    "it": {
+     "t": "Verbi d'azione efficaci",
+     "g": "Inizia ogni punto con un verbo vivace come guidato, creato, migliorato, risolto.",
+     "p": [
+      "Una prima parola forte rende il punto attivo e chiaro.",
+      "Evita attacchi deboli come responsabile di o aiutato con.",
+      "Varia i verbi perché i punti non suonino tutti uguali."
+     ],
+     "q": "Quali verbi descrivono meglio il tuo modo di lavorare?",
+     "c": "Riscrivi cinque punti iniziando con un nuovo verbo d'azione."
+    },
+    "pt": {
+     "t": "Verbos de ação fortes",
+     "g": "Começa cada tópico com um verbo vivo como liderei, construí, melhorei ou resolvi.",
+     "p": [
+      "Uma primeira palavra forte torna o tópico ativo e claro.",
+      "Evita inícios fracos como responsável por ou ajudei com.",
+      "Varia os verbos para os tópicos não soarem todos iguais."
+     ],
+     "q": "Que verbos descrevem melhor a tua maneira de trabalhar?",
+     "c": "Reescreve cinco tópicos começando com um novo verbo de ação."
+    },
+    "pt_BR": {
+     "t": "Verbos de ação fortes",
+     "g": "Comece cada tópico com um verbo vivo como liderei, construí, melhorei ou resolvi.",
+     "p": [
+      "Uma primeira palavra forte torna o tópico ativo e claro.",
+      "Evite inícios fracos como responsável por ou ajudei com.",
+      "Varie os verbos para os tópicos não soarem todos iguais."
+     ],
+     "q": "Que verbos descrevem melhor o seu jeito de trabalhar?",
+     "c": "Reescreva cinco tópicos começando com um novo verbo de ação."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Verbs for teamwork",
+     "g": "Use words that show collaboration, such as coordinated, supported and partnered.",
+     "p": [
+      "Teamwork verbs show how you work with others: coordinated, supported, partnered.",
+      "Name who you worked with: colleagues, clients, other departments.",
+      "Show what the team achieved and your own part in it."
+     ],
+     "q": "What was your best team experience at work or study?",
+     "c": "Write two bullets using teamwork verbs and a team result."
+    },
+    "de": {
+     "t": "Verben für Teamarbeit",
+     "g": "Nutze Wörter, die Zusammenarbeit zeigen, etwa koordinierte, unterstützte, arbeitete zusammen.",
+     "p": [
+      "Teamverben zeigen, wie du mit anderen arbeitest: koordinierte, unterstützte, kooperierte.",
+      "Nenne, mit wem du gearbeitet hast: Kollegen, Kunden, andere Abteilungen.",
+      "Zeige, was das Team erreichte und welchen Anteil du hattest."
+     ],
+     "q": "Was war deine beste Teamerfahrung bei Arbeit oder Studium?",
+     "c": "Schreibe zwei Punkte mit Teamverben und einem Teamergebnis."
+    },
+    "es": {
+     "t": "Verbos para el trabajo en equipo",
+     "g": "Usa palabras que muestren colaboración, como coordiné, apoyé y colaboré.",
+     "p": [
+      "Los verbos de equipo muestran cómo trabajas con otros: coordiné, apoyé, colaboré.",
+      "Nombra con quién trabajaste: compañeros, clientes, otros departamentos.",
+      "Muestra lo que logró el equipo y tu parte en ello."
+     ],
+     "q": "¿Cuál fue tu mejor experiencia en equipo en el trabajo o estudios?",
+     "c": "Escribe dos viñetas con verbos de equipo y un resultado conjunto."
+    },
+    "fr": {
+     "t": "Des verbes pour le travail d'équipe",
+     "g": "Utilise des mots qui montrent la collaboration : coordonné, soutenu, collaboré.",
+     "p": [
+      "Les verbes d'équipe montrent comment tu travailles avec les autres : coordonné, soutenu, collaboré.",
+      "Nomme tes partenaires : collègues, clients, autres services.",
+      "Montre ce que l'équipe a obtenu et ta part dans ce résultat."
+     ],
+     "q": "Quelle a été ta meilleure expérience d'équipe au travail ou en études ?",
+     "c": "Écris deux puces avec des verbes d'équipe et un résultat collectif."
+    },
+    "it": {
+     "t": "Verbi per il lavoro di squadra",
+     "g": "Usa parole che mostrano collaborazione, come coordinato, supportato e collaborato.",
+     "p": [
+      "I verbi di squadra mostrano come lavori con gli altri: coordinato, supportato, collaborato.",
+      "Nomina con chi hai lavorato: colleghi, clienti, altri reparti.",
+      "Mostra cosa ha ottenuto la squadra e la tua parte."
+     ],
+     "q": "Qual è stata la tua migliore esperienza di squadra al lavoro o studio?",
+     "c": "Scrivi due punti con verbi di squadra e un risultato condiviso."
+    },
+    "pt": {
+     "t": "Verbos para o trabalho em equipa",
+     "g": "Usa palavras que mostrem colaboração, como coordenei, apoiei e colaborei.",
+     "p": [
+      "Os verbos de equipa mostram como trabalhas com outros: coordenei, apoiei, colaborei.",
+      "Diz com quem trabalhaste: colegas, clientes, outros departamentos.",
+      "Mostra o que a equipa alcançou e a tua parte nisso."
+     ],
+     "q": "Qual foi a tua melhor experiência de equipa no trabalho ou estudos?",
+     "c": "Escreve dois tópicos com verbos de equipa e um resultado conjunto."
+    },
+    "pt_BR": {
+     "t": "Verbos para o trabalho em equipe",
+     "g": "Use palavras que mostrem colaboração, como coordenei, apoiei e colaborei.",
+     "p": [
+      "Verbos de equipe mostram como você trabalha com outros: coordenei, apoiei, colaborei.",
+      "Diga com quem trabalhou: colegas, clientes, outros departamentos.",
+      "Mostre o que a equipe alcançou e a sua parte nisso."
+     ],
+     "q": "Qual foi sua melhor experiência em equipe no trabalho ou estudos?",
+     "c": "Escreva dois tópicos com verbos de equipe e um resultado conjunto."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Verbs for leadership",
+     "g": "Use words like guided, mentored and organised for times you took the lead.",
+     "p": [
+      "Leadership is not only a title; it is guiding people or projects.",
+      "Verbs like guided, mentored, organised and delegated show it.",
+      "Mention the size of the group or project to give scale."
+     ],
+     "q": "When did you last help others find their way at work or study?",
+     "c": "Write one bullet showing a moment you led, even informally."
+    },
+    "de": {
+     "t": "Verben für Führung",
+     "g": "Nutze Wörter wie leitete, begleitete, organisierte, wenn du die Führung übernommen hast.",
+     "p": [
+      "Führung ist nicht nur ein Titel; es heißt, Menschen oder Projekte zu leiten.",
+      "Verben wie leitete, betreute, organisierte und delegierte zeigen es.",
+      "Nenne die Größe der Gruppe oder des Projekts für den Maßstab."
+     ],
+     "q": "Wann hast du zuletzt anderen bei Arbeit oder Studium den Weg gezeigt?",
+     "c": "Schreibe einen Punkt über einen Moment, in dem du führtest, auch informell."
+    },
+    "es": {
+     "t": "Verbos para el liderazgo",
+     "g": "Usa palabras como guié, mentoricé y organicé cuando tomaste la iniciativa.",
+     "p": [
+      "El liderazgo no es solo un cargo; es guiar a personas o proyectos.",
+      "Verbos como guié, mentoricé, organicé y delegué lo muestran.",
+      "Menciona el tamaño del grupo o proyecto para dar escala."
+     ],
+     "q": "¿Cuándo ayudaste por última vez a otros a orientarse en el trabajo o estudios?",
+     "c": "Escribe una viñeta sobre un momento en que lideraste, aunque sea informal."
+    },
+    "fr": {
+     "t": "Des verbes pour le leadership",
+     "g": "Utilise des mots comme guidé, accompagné et organisé quand tu as pris la tête.",
+     "p": [
+      "Le leadership n'est pas qu'un titre ; c'est guider des personnes ou des projets.",
+      "Des verbes comme guidé, accompagné, organisé et délégué le montrent.",
+      "Indique la taille du groupe ou du projet pour donner l'échelle."
+     ],
+     "q": "Quand as-tu aidé d'autres à trouver leur voie au travail ou en études ?",
+     "c": "Écris une puce sur un moment où tu as mené, même de façon informelle."
+    },
+    "it": {
+     "t": "Verbi per la leadership",
+     "g": "Usa parole come guidato, affiancato e organizzato quando hai preso l'iniziativa.",
+     "p": [
+      "La leadership non è solo un titolo: è guidare persone o progetti.",
+      "Verbi come guidato, affiancato, organizzato e delegato la mostrano.",
+      "Indica la dimensione del gruppo o progetto per dare la scala."
+     ],
+     "q": "Quando hai aiutato altri a orientarsi al lavoro o nello studio?",
+     "c": "Scrivi un punto su un momento in cui hai guidato, anche informalmente."
+    },
+    "pt": {
+     "t": "Verbos para a liderança",
+     "g": "Usa palavras como guiei, acompanhei e organizei quando tomaste a iniciativa.",
+     "p": [
+      "Liderança não é só um cargo; é guiar pessoas ou projetos.",
+      "Verbos como guiei, acompanhei, organizei e deleguei mostram isso.",
+      "Indica o tamanho do grupo ou projeto para dar escala."
+     ],
+     "q": "Quando ajudaste outros a orientarem-se no trabalho ou estudos?",
+     "c": "Escreve um tópico sobre um momento em que lideraste, mesmo informal."
+    },
+    "pt_BR": {
+     "t": "Verbos para a liderança",
+     "g": "Use palavras como guiei, acompanhei e organizei quando você tomou a iniciativa.",
+     "p": [
+      "Liderança não é só um cargo; é guiar pessoas ou projetos.",
+      "Verbos como guiei, acompanhei, organizei e deleguei mostram isso.",
+      "Informe o tamanho do grupo ou projeto para dar escala."
+     ],
+     "q": "Quando você ajudou outros a se orientarem no trabalho ou estudos?",
+     "c": "Escreva um tópico sobre um momento em que você liderou, mesmo informal."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Verbs for creativity",
+     "g": "Use words like designed, launched and introduced for new ideas you brought.",
+     "p": [
+      "Creative verbs show initiative: designed, launched, introduced, invented.",
+      "Describe the idea and what happened after you tried it.",
+      "Even small improvements to a routine count as creative work."
+     ],
+     "q": "What new idea or small change did you introduce somewhere?",
+     "c": "Write one bullet about an idea you introduced and its effect."
+    },
+    "de": {
+     "t": "Verben für Kreativität",
+     "g": "Nutze Wörter wie entwarf, startete, führte ein für neue Ideen, die du eingebracht hast.",
+     "p": [
+      "Kreative Verben zeigen Initiative: entwarf, startete, führte ein, entwickelte.",
+      "Beschreibe die Idee und was nach dem Ausprobieren geschah.",
+      "Schon kleine Verbesserungen eines Ablaufs zählen als kreative Arbeit."
+     ],
+     "q": "Welche neue Idee oder kleine Änderung hast du irgendwo eingeführt?",
+     "c": "Schreibe einen Punkt über eine eingeführte Idee und ihre Wirkung."
+    },
+    "es": {
+     "t": "Verbos para la creatividad",
+     "g": "Usa palabras como diseñé, lancé e introduje para ideas nuevas que aportaste.",
+     "p": [
+      "Los verbos creativos muestran iniciativa: diseñé, lancé, introduje, inventé.",
+      "Describe la idea y lo que pasó tras probarla.",
+      "Incluso pequeñas mejoras en una rutina cuentan como trabajo creativo."
+     ],
+     "q": "¿Qué idea nueva o pequeño cambio introdujiste en algún sitio?",
+     "c": "Escribe una viñeta sobre una idea que introdujiste y su efecto."
+    },
+    "fr": {
+     "t": "Des verbes pour la créativité",
+     "g": "Utilise des mots comme conçu, lancé et introduit pour tes idées nouvelles.",
+     "p": [
+      "Les verbes créatifs montrent l'initiative : conçu, lancé, introduit, inventé.",
+      "Décris l'idée et ce qui s'est passé après l'essai.",
+      "Même de petites améliorations d'une routine comptent comme travail créatif."
+     ],
+     "q": "Quelle idée nouvelle ou petit changement as-tu introduit quelque part ?",
+     "c": "Écris une puce sur une idée introduite et son effet."
+    },
+    "it": {
+     "t": "Verbi per la creatività",
+     "g": "Usa parole come ideato, lanciato e introdotto per le idee nuove che hai portato.",
+     "p": [
+      "I verbi creativi mostrano iniziativa: ideato, lanciato, introdotto, inventato.",
+      "Descrivi l'idea e cosa è successo dopo averla provata.",
+      "Anche piccoli miglioramenti a una routine contano come lavoro creativo."
+     ],
+     "q": "Quale idea nuova o piccola modifica hai introdotto da qualche parte?",
+     "c": "Scrivi un punto su un'idea introdotta e il suo effetto."
+    },
+    "pt": {
+     "t": "Verbos para a criatividade",
+     "g": "Usa palavras como desenhei, lancei e introduzi para ideias novas que trouxeste.",
+     "p": [
+      "Os verbos criativos mostram iniciativa: desenhei, lancei, introduzi, inventei.",
+      "Descreve a ideia e o que aconteceu depois de a experimentares.",
+      "Até pequenas melhorias numa rotina contam como trabalho criativo."
+     ],
+     "q": "Que ideia nova ou pequena mudança introduziste nalgum lado?",
+     "c": "Escreve um tópico sobre uma ideia que introduziste e o seu efeito."
+    },
+    "pt_BR": {
+     "t": "Verbos para a criatividade",
+     "g": "Use palavras como desenhei, lancei e introduzi para ideias novas que você trouxe.",
+     "p": [
+      "Verbos criativos mostram iniciativa: desenhei, lancei, introduzi, inventei.",
+      "Descreva a ideia e o que aconteceu depois de testar.",
+      "Até pequenas melhorias numa rotina contam como trabalho criativo."
+     ],
+     "q": "Que ideia nova ou pequena mudança você introduziu em algum lugar?",
+     "c": "Escreva um tópico sobre uma ideia que você introduziu e o efeito dela."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The CAR method",
+     "g": "Turn a task into an achievement with Challenge, Action, Result.",
+     "p": [
+      "Challenge: what problem or goal did you face?",
+      "Action: what exactly did you do about it?",
+      "Result: what improved, ideally with a number?"
+     ],
+     "q": "What challenge at work are you secretly proud of solving?",
+     "c": "Write one CAR note, then squeeze it into a single bullet."
+    },
+    "de": {
+     "t": "Die CAR-Methode",
+     "g": "Mache aus einer Aufgabe einen Erfolg mit Herausforderung, Aktion, Ergebnis.",
+     "p": [
+      "Herausforderung: Vor welchem Problem oder Ziel standest du?",
+      "Aktion: Was genau hast du dagegen getan?",
+      "Ergebnis: Was wurde besser, am besten mit einer Zahl?"
+     ],
+     "q": "Welche Herausforderung hast du gelöst und bist insgeheim stolz darauf?",
+     "c": "Schreibe eine CAR-Notiz und presse sie in einen einzigen Punkt."
+    },
+    "es": {
+     "t": "El método CAR",
+     "g": "Convierte una tarea en un logro con Reto, Acción y Resultado.",
+     "p": [
+      "Reto: ¿a qué problema u objetivo te enfrentabas?",
+      "Acción: ¿qué hiciste exactamente al respecto?",
+      "Resultado: ¿qué mejoró, a ser posible con un número?"
+     ],
+     "q": "¿Qué reto laboral resolviste y te enorgullece en secreto?",
+     "c": "Escribe una nota CAR y condénsala en una sola viñeta."
+    },
+    "fr": {
+     "t": "La méthode CAR",
+     "g": "Transforme une tâche en réalisation avec Défi, Action, Résultat.",
+     "p": [
+      "Défi : à quel problème ou objectif étais-tu confronté ?",
+      "Action : qu'as-tu fait exactement ?",
+      "Résultat : qu'est-ce qui s'est amélioré, idéalement chiffré ?"
+     ],
+     "q": "Quel défi professionnel as-tu relevé et t'enorgueillit en secret ?",
+     "c": "Écris une note CAR, puis condense-la en une seule puce."
+    },
+    "it": {
+     "t": "Il metodo CAR",
+     "g": "Trasforma un compito in un risultato con Sfida, Azione, Risultato.",
+     "p": [
+      "Sfida: quale problema o obiettivo dovevi affrontare?",
+      "Azione: cosa hai fatto esattamente?",
+      "Risultato: cosa è migliorato, possibilmente con un numero?"
+     ],
+     "q": "Quale sfida di lavoro hai risolto e ti rende fiero in segreto?",
+     "c": "Scrivi una nota CAR e condensala in un solo punto."
+    },
+    "pt": {
+     "t": "O método CAR",
+     "g": "Transforma uma tarefa numa conquista com Desafio, Ação e Resultado.",
+     "p": [
+      "Desafio: que problema ou objetivo enfrentavas?",
+      "Ação: o que fizeste exatamente a esse respeito?",
+      "Resultado: o que melhorou, de preferência com um número?"
+     ],
+     "q": "Que desafio de trabalho resolveste e te orgulha em segredo?",
+     "c": "Escreve uma nota CAR e condensa-a num único tópico."
+    },
+    "pt_BR": {
+     "t": "O método CAR",
+     "g": "Transforme uma tarefa em conquista com Desafio, Ação e Resultado.",
+     "p": [
+      "Desafio: que problema ou objetivo você enfrentava?",
+      "Ação: o que exatamente você fez a respeito?",
+      "Resultado: o que melhorou, de preferência com um número?"
+     ],
+     "q": "Que desafio de trabalho você resolveu e te orgulha em segredo?",
+     "c": "Escreva uma nota CAR e condense-a em um único tópico."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The STAR method on paper",
+     "g": "Compress Situation, Task, Action and Result into one strong bullet.",
+     "p": [
+      "STAR adds the Situation and Task before the Action and Result.",
+      "On a CV, you rarely have space: compress it to one line.",
+      "Keep the full STAR story ready for interviews."
+     ],
+     "q": "Which achievement would make the best STAR story?",
+     "c": "Write the four STAR parts, then merge them into one bullet."
+    },
+    "de": {
+     "t": "Die STAR-Methode auf Papier",
+     "g": "Presse Situation, Aufgabe, Aktion und Ergebnis in einen starken Punkt.",
+     "p": [
+      "STAR ergänzt Situation und Aufgabe vor Aktion und Ergebnis.",
+      "Im Lebenslauf fehlt der Platz: verdichte alles auf eine Zeile.",
+      "Halte die volle STAR-Geschichte für Gespräche bereit."
+     ],
+     "q": "Welcher Erfolg ergäbe die beste STAR-Geschichte?",
+     "c": "Schreibe die vier STAR-Teile und verschmelze sie zu einem Punkt."
+    },
+    "es": {
+     "t": "El método STAR en papel",
+     "g": "Comprime Situación, Tarea, Acción y Resultado en una viñeta potente.",
+     "p": [
+      "STAR añade la Situación y la Tarea antes de la Acción y el Resultado.",
+      "En un CV casi no hay espacio: comprímelo en una línea.",
+      "Ten lista la historia STAR completa para las entrevistas."
+     ],
+     "q": "¿Qué logro daría la mejor historia STAR?",
+     "c": "Escribe las cuatro partes de STAR y únelas en una viñeta."
+    },
+    "fr": {
+     "t": "La méthode STAR sur papier",
+     "g": "Condense Situation, Tâche, Action et Résultat en une puce percutante.",
+     "p": [
+      "STAR ajoute la Situation et la Tâche avant l'Action et le Résultat.",
+      "Sur un CV, la place manque : condense en une ligne.",
+      "Garde l'histoire STAR complète pour les entretiens."
+     ],
+     "q": "Quelle réalisation ferait la meilleure histoire STAR ?",
+     "c": "Écris les quatre parties de STAR, puis fusionne-les en une puce."
+    },
+    "it": {
+     "t": "Il metodo STAR su carta",
+     "g": "Condensa Situazione, Compito, Azione e Risultato in un punto efficace.",
+     "p": [
+      "STAR aggiunge Situazione e Compito prima di Azione e Risultato.",
+      "In un CV c'è poco spazio: condensa tutto in una riga.",
+      "Tieni pronta la storia STAR completa per i colloqui."
+     ],
+     "q": "Quale risultato darebbe la migliore storia STAR?",
+     "c": "Scrivi le quattro parti di STAR e uniscile in un solo punto."
+    },
+    "pt": {
+     "t": "O método STAR no papel",
+     "g": "Condensa Situação, Tarefa, Ação e Resultado num tópico forte.",
+     "p": [
+      "O STAR acrescenta Situação e Tarefa antes da Ação e do Resultado.",
+      "No CV quase não há espaço: condensa tudo numa linha.",
+      "Tem a história STAR completa pronta para as entrevistas."
+     ],
+     "q": "Que conquista daria a melhor história STAR?",
+     "c": "Escreve as quatro partes do STAR e junta-as num só tópico."
+    },
+    "pt_BR": {
+     "t": "O método STAR no papel",
+     "g": "Condense Situação, Tarefa, Ação e Resultado em um tópico forte.",
+     "p": [
+      "O STAR acrescenta Situação e Tarefa antes da Ação e do Resultado.",
+      "No currículo quase não há espaço: condense tudo em uma linha.",
+      "Deixe a história STAR completa pronta para as entrevistas."
+     ],
+     "q": "Que conquista daria a melhor história STAR?",
+     "c": "Escreva as quatro partes do STAR e junte-as em um só tópico."
+    }
+   }
+  }
+ ]
+}

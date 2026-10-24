@@ -1,0 +1,835 @@
+{
+ "topic": "philosophy",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Methodical doubt",
+     "g": "Use doubt as a tool to build knowledge on firm ground, as Descartes did.",
+     "p": [
+      "Descartes did not doubt for fun: he compared it to checking a basket of apples and removing any that are rotten.",
+      "Method means steps: question each belief, keep what survives, and build only on that.",
+      "Healthy doubt differs from cynicism: it is careful, temporary and aimed at finding better answers."
+     ],
+     "q": "Which belief of yours could you check more carefully by looking for evidence?",
+     "c": "Choose one belief, list how you could test it, and try one of those tests today."
+    },
+    "de": {
+     "t": "Methodischer Zweifel",
+     "g": "Nutze Zweifel als Werkzeug, um Wissen auf festen Grund zu stellen, wie Descartes.",
+     "p": [
+      "Descartes zweifelte nicht zum Spaß: Er verglich es mit dem Durchsehen eines Apfelkorbs, um faule Äpfel auszusortieren.",
+      "Methode heißt Schritte: jede Überzeugung hinterfragen, behalten, was standhält, und nur darauf bauen.",
+      "Gesunder Zweifel ist nicht Zynismus: Er ist sorgfältig, zeitweilig und sucht bessere Antworten."
+     ],
+     "q": "Welche deiner Überzeugungen könntest du genauer prüfen, indem du nach Belegen suchst?",
+     "c": "Wähle eine Überzeugung, überlege, wie du sie testen könntest, und probiere heute einen Test."
+    },
+    "es": {
+     "t": "La duda metódica",
+     "g": "Usa la duda como herramienta para construir conocimiento sobre suelo firme, como hizo Descartes.",
+     "p": [
+      "Descartes no dudaba por diversión: lo comparaba con revisar una cesta de manzanas y quitar las podridas.",
+      "Método significa pasos: cuestionar cada creencia, conservar lo que resiste y construir solo sobre eso.",
+      "La duda sana no es cinismo: es cuidadosa, temporal y busca mejores respuestas."
+     ],
+     "q": "¿Qué creencia tuya podrías comprobar mejor buscando pruebas?",
+     "c": "Elige una creencia, enumera cómo podrías ponerla a prueba y haz hoy una de esas pruebas."
+    },
+    "fr": {
+     "t": "Le doute méthodique",
+     "g": "Utilise le doute comme outil pour bâtir le savoir sur un sol ferme, comme Descartes.",
+     "p": [
+      "Descartes ne doutait pas par jeu : il comparait cela à trier un panier de pommes en écartant les pourries.",
+      "Méthode veut dire étapes : questionner chaque croyance, garder ce qui tient, ne bâtir que dessus.",
+      "Le doute sain n'est pas du cynisme : il est soigneux, temporaire et vise de meilleures réponses."
+     ],
+     "q": "Quelle conviction pourrais-tu vérifier plus soigneusement en cherchant des preuves ?",
+     "c": "Choisis une conviction, liste comment la tester et essaie un de ces tests aujourd'hui."
+    },
+    "it": {
+     "t": "Il dubbio metodico",
+     "g": "Usa il dubbio come strumento per costruire conoscenza su terreno solido, come Descartes.",
+     "p": [
+      "Descartes non dubitava per gioco: lo paragonava a controllare un cesto di mele togliendo quelle marce.",
+      "Metodo significa passi: mettere in questione ogni credenza, tenere ciò che resiste e costruire solo su quello.",
+      "Il dubbio sano non è cinismo: è attento, temporaneo e cerca risposte migliori."
+     ],
+     "q": "Quale tua convinzione potresti controllare meglio cercando delle prove?",
+     "c": "Scegli una convinzione, elenca come metterla alla prova e prova oggi uno di quei test."
+    },
+    "pt": {
+     "t": "A dúvida metódica",
+     "g": "Usa a dúvida como ferramenta para construir conhecimento em terreno firme, como Descartes.",
+     "p": [
+      "Descartes não duvidava por diversão: comparava isso a examinar um cesto de maçãs e tirar as podres.",
+      "Método significa passos: questionar cada crença, guardar o que resiste e construir só sobre isso.",
+      "A dúvida saudável não é cinismo: é cuidadosa, temporária e procura melhores respostas."
+     ],
+     "q": "Que crença tua poderias verificar melhor procurando provas?",
+     "c": "Escolhe uma crença, lista como a testar e experimenta hoje um desses testes."
+    },
+    "pt_BR": {
+     "t": "A dúvida metódica",
+     "g": "Use a dúvida como ferramenta para construir conhecimento em terreno firme, como Descartes.",
+     "p": [
+      "Descartes não duvidava por diversão: comparava isso a examinar uma cesta de maçãs e tirar as podres.",
+      "Método significa passos: questionar cada crença, guardar o que resiste e construir só sobre isso.",
+      "A dúvida saudável não é cinismo: é cuidadosa, temporária e busca respostas melhores."
+     ],
+     "q": "Que crença sua você poderia verificar melhor buscando provas?",
+     "c": "Escolha uma crença, liste como testá-la e tente hoje um desses testes."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The dream argument",
+     "g": "Ask how you can be sure you are not dreaming right now.",
+     "p": [
+      "Descartes noticed that dreams can feel completely real, so feeling awake is not proof of being awake.",
+      "The idea is older: Zhuangzi's butterfly asked a similar question long before.",
+      "Most thinkers do not conclude that life is a dream, but the puzzle shows how knowledge needs reasons."
+     ],
+     "q": "What clues do you use to tell that you are awake rather than dreaming?",
+     "c": "List three clues that tell you reality is real, and test how strong each one is."
+    },
+    "de": {
+     "t": "Das Traumargument",
+     "g": "Frage dich, wie du sicher sein kannst, dass du gerade nicht träumst.",
+     "p": [
+      "Descartes bemerkte, dass Träume sich völlig echt anfühlen können; Wachgefühl beweist also nicht, wach zu sein.",
+      "Die Idee ist älter: Zhuangzis Schmetterling stellte eine ähnliche Frage lange zuvor.",
+      "Die meisten Denker schließen nicht, das Leben sei ein Traum, doch das Rätsel zeigt, dass Wissen Gründe braucht."
+     ],
+     "q": "Welche Hinweise nutzt du, um zu erkennen, dass du wach bist und nicht träumst?",
+     "c": "Nenne drei Hinweise, dass die Wirklichkeit echt ist, und prüfe, wie stark jeder ist."
+    },
+    "es": {
+     "t": "El argumento del sueño",
+     "g": "Pregúntate cómo puedes estar seguro de que no estás soñando ahora mismo.",
+     "p": [
+      "Descartes notó que los sueños pueden parecer totalmente reales, así que sentirse despierto no prueba estarlo.",
+      "La idea es más antigua: la mariposa de Zhuangzi planteó una pregunta parecida mucho antes.",
+      "La mayoría no concluye que la vida sea un sueño, pero el enigma muestra que el conocimiento necesita razones."
+     ],
+     "q": "¿Qué pistas usas para saber que estás despierto y no soñando?",
+     "c": "Anota tres pistas de que la realidad es real y prueba cuán fuerte es cada una."
+    },
+    "fr": {
+     "t": "L'argument du rêve",
+     "g": "Demande-toi comment être sûr de ne pas rêver en ce moment.",
+     "p": [
+      "Descartes remarqua que les rêves peuvent sembler tout à fait réels : se sentir éveillé ne prouve pas l'être.",
+      "L'idée est plus ancienne : le papillon de Zhuangzi posait une question semblable bien avant.",
+      "La plupart ne concluent pas que la vie est un rêve, mais l'énigme montre que le savoir demande des raisons."
+     ],
+     "q": "Quels indices utilises-tu pour savoir que tu es éveillé et non en train de rêver ?",
+     "c": "Note trois indices que la réalité est réelle et teste la solidité de chacun."
+    },
+    "it": {
+     "t": "L'argomento del sogno",
+     "g": "Chiediti come puoi essere sicuro di non star sognando in questo momento.",
+     "p": [
+      "Descartes notò che i sogni possono sembrare del tutto reali, quindi sentirsi svegli non prova di esserlo.",
+      "L'idea è più antica: la farfalla di Zhuangzi poneva una domanda simile molto prima.",
+      "La maggior parte non conclude che la vita sia un sogno, ma l'enigma mostra che la conoscenza richiede ragioni."
+     ],
+     "q": "Quali indizi usi per capire di essere sveglio e non di sognare?",
+     "c": "Scrivi tre indizi che la realtà è reale e verifica quanto è forte ciascuno."
+    },
+    "pt": {
+     "t": "O argumento do sonho",
+     "g": "Pergunta-te como podes ter a certeza de que não estás a sonhar agora.",
+     "p": [
+      "Descartes reparou que os sonhos podem parecer totalmente reais; sentir-se acordado não prova estar acordado.",
+      "A ideia é mais antiga: a borboleta de Zhuangzi colocou uma pergunta parecida muito antes.",
+      "A maioria não conclui que a vida é um sonho, mas o enigma mostra que o conhecimento precisa de razões."
+     ],
+     "q": "Que pistas usas para saber que estás acordado e não a sonhar?",
+     "c": "Escreve três pistas de que a realidade é real e testa a força de cada uma."
+    },
+    "pt_BR": {
+     "t": "O argumento do sonho",
+     "g": "Pergunte-se como você pode ter certeza de que não está sonhando agora.",
+     "p": [
+      "Descartes percebeu que os sonhos podem parecer totalmente reais; sentir-se acordado não prova estar acordado.",
+      "A ideia é mais antiga: a borboleta de Zhuangzi fez uma pergunta parecida muito antes.",
+      "A maioria não conclui que a vida é um sonho, mas o enigma mostra que o conhecimento precisa de razões."
+     ],
+     "q": "Que pistas você usa para saber que está acordado e não sonhando?",
+     "c": "Anote três pistas de que a realidade é real e teste a força de cada uma."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is knowledge?",
+     "g": "Learn the classic idea of knowledge as justified true belief.",
+     "p": [
+      "To know something, you must believe it, it must be true, and you need good reasons for believing it.",
+      "A lucky guess can be true and believed, yet it is not knowledge, because the reasons are missing.",
+      "This three-part recipe goes back to Plato and is a useful tool for checking our own claims."
+     ],
+     "q": "Is there something you believe but could not yet fully justify?",
+     "c": "Take one thing you say you know and check it against belief, truth and good reasons."
+    },
+    "de": {
+     "t": "Was ist Wissen?",
+     "g": "Lerne die klassische Idee von Wissen als wahre, gerechtfertigte Überzeugung kennen.",
+     "p": [
+      "Um etwas zu wissen, musst du es glauben, es muss wahr sein, und du brauchst gute Gründe dafür.",
+      "Ein Glückstreffer kann wahr und geglaubt sein, ist aber kein Wissen, weil die Gründe fehlen.",
+      "Dieses dreiteilige Rezept geht auf Platon zurück und hilft, eigene Behauptungen zu prüfen."
+     ],
+     "q": "Gibt es etwas, das du glaubst, aber noch nicht ganz begründen könntest?",
+     "c": "Nimm etwas, von dem du sagst, du wüsstest es, und prüfe Glauben, Wahrheit und gute Gründe."
+    },
+    "es": {
+     "t": "¿Qué es el conocimiento?",
+     "g": "Aprende la idea clásica del conocimiento como creencia verdadera justificada.",
+     "p": [
+      "Para saber algo debes creerlo, debe ser verdad y necesitas buenas razones para creerlo.",
+      "Una conjetura afortunada puede ser verdadera y creída, pero no es conocimiento, porque faltan las razones.",
+      "Esta receta de tres partes viene de Platón y sirve para revisar nuestras propias afirmaciones."
+     ],
+     "q": "¿Hay algo que creas pero que aún no podrías justificar del todo?",
+     "c": "Toma algo que dices saber y compruébalo con creencia, verdad y buenas razones."
+    },
+    "fr": {
+     "t": "Qu'est-ce que la connaissance ?",
+     "g": "Apprends l'idée classique de la connaissance comme croyance vraie justifiée.",
+     "p": [
+      "Pour savoir quelque chose, il faut le croire, que ce soit vrai et avoir de bonnes raisons de le croire.",
+      "Une devinette chanceuse peut être vraie et crue, mais ce n'est pas un savoir : les raisons manquent.",
+      "Cette recette en trois parties remonte à Platon et sert à vérifier nos propres affirmations."
+     ],
+     "q": "Y a-t-il quelque chose que tu crois sans pouvoir encore pleinement le justifier ?",
+     "c": "Prends une chose que tu dis savoir et vérifie croyance, vérité et bonnes raisons."
+    },
+    "it": {
+     "t": "Cos'è la conoscenza?",
+     "g": "Impara l'idea classica della conoscenza come credenza vera giustificata.",
+     "p": [
+      "Per sapere qualcosa devi crederci, dev'essere vero e servono buone ragioni per crederci.",
+      "Un'ipotesi fortunata può essere vera e creduta, ma non è conoscenza, perché mancano le ragioni.",
+      "Questa ricetta in tre parti risale a Platone ed è utile per controllare le nostre affermazioni."
+     ],
+     "q": "C'è qualcosa che credi ma non sapresti ancora giustificare del tutto?",
+     "c": "Prendi qualcosa che dici di sapere e verificalo con credenza, verità e buone ragioni."
+    },
+    "pt": {
+     "t": "O que é o conhecimento?",
+     "g": "Aprende a ideia clássica de conhecimento como crença verdadeira justificada.",
+     "p": [
+      "Para saber algo tens de acreditar, tem de ser verdade e precisas de boas razões para acreditar.",
+      "Um palpite com sorte pode ser verdadeiro e acreditado, mas não é conhecimento, pois faltam as razões.",
+      "Esta receita de três partes vem de Platão e é útil para verificar as nossas afirmações."
+     ],
+     "q": "Há algo em que acreditas mas que ainda não saberias justificar bem?",
+     "c": "Pega numa coisa que dizes saber e verifica crença, verdade e boas razões."
+    },
+    "pt_BR": {
+     "t": "O que é o conhecimento?",
+     "g": "Aprenda a ideia clássica de conhecimento como crença verdadeira justificada.",
+     "p": [
+      "Para saber algo você precisa acreditar, tem de ser verdade e precisa de boas razões para acreditar.",
+      "Um palpite de sorte pode ser verdadeiro e acreditado, mas não é conhecimento, pois faltam as razões.",
+      "Essa receita de três partes vem de Platão e é útil para verificar nossas afirmações."
+     ],
+     "q": "Há algo em que você acredita mas ainda não saberia justificar bem?",
+     "c": "Pegue uma coisa que você diz saber e verifique crença, verdade e boas razões."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gettier puzzles",
+     "g": "See cases where a justified true belief still seems not to be knowledge.",
+     "p": [
+      "In 1963 Edmund Gettier published a short paper with cases that troubled the classic definition.",
+      "Example: you glance at a clock that stopped exactly 24 hours ago and, by luck, read the right time.",
+      "Your belief is true and seems justified, yet it feels like luck, not knowledge; thinkers still debate fixes."
+     ],
+     "q": "Can you recall a time when you were right, but only by luck?",
+     "c": "Spot a belief that was right for the wrong reasons and note what better reasons would be."
+    },
+    "de": {
+     "t": "Gettier-Rätsel",
+     "g": "Sieh Fälle, in denen eine wahre, gerechtfertigte Überzeugung dennoch kein Wissen zu sein scheint.",
+     "p": [
+      "1963 veröffentlichte Edmund Gettier einen kurzen Aufsatz mit Fällen, die die klassische Definition ins Wanken brachten.",
+      "Beispiel: Du schaust auf eine Uhr, die genau vor 24 Stunden stehen blieb, und liest zufällig die richtige Zeit ab.",
+      "Deine Überzeugung ist wahr und scheint begründet, wirkt aber wie Glück, nicht Wissen; man streitet noch über Lösungen."
+     ],
+     "q": "Fällt dir eine Situation ein, in der du recht hattest, aber nur durch Zufall?",
+     "c": "Finde eine Überzeugung, die aus falschen Gründen stimmte, und überlege, was bessere Gründe wären."
+    },
+    "es": {
+     "t": "Los enigmas de Gettier",
+     "g": "Mira casos en que una creencia verdadera justificada parece no ser conocimiento.",
+     "p": [
+      "En 1963 Edmund Gettier publicó un breve artículo con casos que inquietaron la definición clásica.",
+      "Ejemplo: miras un reloj parado desde hace justo 24 horas y, por suerte, lees la hora correcta.",
+      "Tu creencia es verdadera y parece justificada, pero parece suerte y no conocimiento; se sigue debatiendo."
+     ],
+     "q": "¿Recuerdas alguna vez en que acertaste, pero solo por suerte?",
+     "c": "Detecta una creencia acertada por malas razones y anota cuáles serían mejores razones."
+    },
+    "fr": {
+     "t": "Les énigmes de Gettier",
+     "g": "Vois des cas où une croyance vraie justifiée ne semble pourtant pas être un savoir.",
+     "p": [
+      "En 1963, Edmund Gettier publia un court article de cas qui ébranlèrent la définition classique.",
+      "Exemple : tu regardes une horloge arrêtée depuis exactement 24 heures et, par chance, lis la bonne heure.",
+      "Ta croyance est vraie et semble justifiée, mais c'est de la chance, pas du savoir ; on débat encore."
+     ],
+     "q": "Te souviens-tu d'une fois où tu avais raison, mais seulement par chance ?",
+     "c": "Repère une croyance juste pour de mauvaises raisons et note de meilleures raisons."
+    },
+    "it": {
+     "t": "I rompicapi di Gettier",
+     "g": "Guarda casi in cui una credenza vera giustificata sembra comunque non essere conoscenza.",
+     "p": [
+      "Nel 1963 Edmund Gettier pubblicò un breve articolo con casi che misero in crisi la definizione classica.",
+      "Esempio: guardi un orologio fermo da esattamente 24 ore e, per caso, leggi l'ora giusta.",
+      "La tua credenza è vera e sembra giustificata, ma pare fortuna e non conoscenza; si discute ancora."
+     ],
+     "q": "Ricordi una volta in cui avevi ragione, ma solo per fortuna?",
+     "c": "Individua una credenza giusta per ragioni sbagliate e annota quali sarebbero ragioni migliori."
+    },
+    "pt": {
+     "t": "Os enigmas de Gettier",
+     "g": "Vê casos em que uma crença verdadeira justificada parece não ser conhecimento.",
+     "p": [
+      "Em 1963 Edmund Gettier publicou um artigo curto com casos que abalaram a definição clássica.",
+      "Exemplo: olhas para um relógio parado há exatamente 24 horas e, por sorte, lês a hora certa.",
+      "A tua crença é verdadeira e parece justificada, mas parece sorte e não conhecimento; ainda se debate."
+     ],
+     "q": "Lembras-te de uma vez em que acertaste, mas só por sorte?",
+     "c": "Identifica uma crença certa por razões erradas e anota que razões seriam melhores."
+    },
+    "pt_BR": {
+     "t": "Os enigmas de Gettier",
+     "g": "Veja casos em que uma crença verdadeira justificada parece não ser conhecimento.",
+     "p": [
+      "Em 1963 Edmund Gettier publicou um artigo curto com casos que abalaram a definição clássica.",
+      "Exemplo: você olha um relógio parado há exatamente 24 horas e, por sorte, lê a hora certa.",
+      "Sua crença é verdadeira e parece justificada, mas parece sorte e não conhecimento; ainda se debate."
+     ],
+     "q": "Você se lembra de uma vez em que acertou, mas só por sorte?",
+     "c": "Identifique uma crença certa por razões erradas e anote que razões seriam melhores."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Empiricism",
+     "g": "Learn the view that knowledge comes from experience, held by thinkers like Locke and Hume.",
+     "p": [
+      "Empiricists say the mind starts like a blank page and experience writes on it through the senses.",
+      "John Locke and David Hume argued that ideas come from what we see, hear, touch and feel.",
+      "This view values observation and experiments, which helped shape modern science."
+     ],
+     "q": "What is something you learned only by trying it yourself?",
+     "c": "Test a small everyday claim today by observing it yourself instead of trusting it."
+    },
+    "de": {
+     "t": "Empirismus",
+     "g": "Lerne die Ansicht kennen, dass Wissen aus Erfahrung kommt, vertreten von Locke und Hume.",
+     "p": [
+      "Empiristen sagen, der Geist beginne wie ein leeres Blatt, auf das die Erfahrung durch die Sinne schreibt.",
+      "John Locke und David Hume meinten, Ideen stammen aus dem, was wir sehen, hören, tasten und fühlen.",
+      "Diese Sicht schätzt Beobachtung und Experimente, die die moderne Wissenschaft mitprägten."
+     ],
+     "q": "Was hast du nur dadurch gelernt, dass du es selbst ausprobiert hast?",
+     "c": "Teste heute eine kleine Alltagsbehauptung durch eigene Beobachtung, statt ihr nur zu vertrauen."
+    },
+    "es": {
+     "t": "Empirismo",
+     "g": "Aprende la visión de que el conocimiento viene de la experiencia, defendida por Locke y Hume.",
+     "p": [
+      "Los empiristas dicen que la mente empieza como una página en blanco en la que escribe la experiencia por los sentidos.",
+      "John Locke y David Hume sostuvieron que las ideas vienen de lo que vemos, oímos, tocamos y sentimos.",
+      "Esta visión valora la observación y los experimentos, que ayudaron a formar la ciencia moderna."
+     ],
+     "q": "¿Qué aprendiste solo por probarlo tú mismo?",
+     "c": "Pon a prueba hoy una pequeña afirmación cotidiana observándola tú mismo."
+    },
+    "fr": {
+     "t": "L'empirisme",
+     "g": "Apprends la thèse selon laquelle le savoir vient de l'expérience, défendue par Locke et Hume.",
+     "p": [
+      "Les empiristes disent que l'esprit commence comme une page blanche où l'expérience écrit par les sens.",
+      "John Locke et David Hume soutenaient que les idées viennent de ce que nous voyons, entendons, touchons.",
+      "Cette vue valorise l'observation et l'expérimentation, qui ont contribué à la science moderne."
+     ],
+     "q": "Qu'as-tu appris uniquement en l'essayant toi-même ?",
+     "c": "Teste aujourd'hui une petite affirmation courante en l'observant toi-même."
+    },
+    "it": {
+     "t": "Empirismo",
+     "g": "Impara la tesi che la conoscenza viene dall'esperienza, sostenuta da Locke e Hume.",
+     "p": [
+      "Gli empiristi dicono che la mente inizia come un foglio bianco su cui l'esperienza scrive attraverso i sensi.",
+      "John Locke e David Hume sostenevano che le idee vengono da ciò che vediamo, sentiamo, tocchiamo.",
+      "Questa visione valorizza osservazione ed esperimenti, che hanno contribuito alla scienza moderna."
+     ],
+     "q": "Cosa hai imparato solo provandolo di persona?",
+     "c": "Metti alla prova oggi una piccola affermazione quotidiana osservandola di persona."
+    },
+    "pt": {
+     "t": "Empirismo",
+     "g": "Aprende a ideia de que o conhecimento vem da experiência, defendida por Locke e Hume.",
+     "p": [
+      "Os empiristas dizem que a mente começa como uma folha em branco onde a experiência escreve pelos sentidos.",
+      "John Locke e David Hume defenderam que as ideias vêm do que vemos, ouvimos, tocamos e sentimos.",
+      "Esta visão valoriza a observação e as experiências, que ajudaram a formar a ciência moderna."
+     ],
+     "q": "O que aprendeste apenas por experimentares tu próprio?",
+     "c": "Testa hoje uma pequena afirmação do dia a dia observando-a tu mesmo."
+    },
+    "pt_BR": {
+     "t": "Empirismo",
+     "g": "Aprenda a ideia de que o conhecimento vem da experiência, defendida por Locke e Hume.",
+     "p": [
+      "Os empiristas dizem que a mente começa como uma folha em branco onde a experiência escreve pelos sentidos.",
+      "John Locke e David Hume defenderam que as ideias vêm do que vemos, ouvimos, tocamos e sentimos.",
+      "Essa visão valoriza a observação e os experimentos, que ajudaram a formar a ciência moderna."
+     ],
+     "q": "O que você aprendeu apenas por experimentar você mesmo?",
+     "c": "Teste hoje uma pequena afirmação do dia a dia observando-a você mesmo."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rationalism",
+     "g": "Learn the view that some knowledge comes from reason alone, as Descartes and Leibniz held.",
+     "p": [
+      "Rationalists say that reasoning can reach truths without needing a new experience each time.",
+      "Mathematics is their favorite example: you can know that two plus three is five by thinking alone.",
+      "Descartes and Gottfried Leibniz believed the mind has built-in ideas and powers of reasoning."
+     ],
+     "q": "What is something you are sure of by pure thinking, not by looking?",
+     "c": "Work out a simple logic or math puzzle today and notice how you reach the answer."
+    },
+    "de": {
+     "t": "Rationalismus",
+     "g": "Lerne die Ansicht kennen, dass manches Wissen allein aus der Vernunft stammt, wie Descartes und Leibniz meinten.",
+     "p": [
+      "Rationalisten sagen, Denken könne Wahrheiten erreichen, ohne jedes Mal neue Erfahrung zu brauchen.",
+      "Mathematik ist ihr Lieblingsbeispiel: Dass zwei plus drei fünf ist, weißt du durch bloßes Denken.",
+      "Descartes und Gottfried Leibniz glaubten, der Geist habe eingebaute Ideen und Denkkräfte."
+     ],
+     "q": "Wessen bist du dir durch reines Denken sicher, nicht durch Hinsehen?",
+     "c": "Löse heute ein einfaches Logik- oder Matherätsel und achte darauf, wie du zur Antwort kommst."
+    },
+    "es": {
+     "t": "Racionalismo",
+     "g": "Aprende la visión de que parte del conocimiento viene solo de la razón, como sostenían Descartes y Leibniz.",
+     "p": [
+      "Los racionalistas dicen que el razonamiento puede alcanzar verdades sin necesitar una experiencia nueva cada vez.",
+      "Las matemáticas son su ejemplo favorito: puedes saber que dos más tres son cinco solo pensando.",
+      "Descartes y Gottfried Leibniz creían que la mente tiene ideas innatas y poderes de razonar."
+     ],
+     "q": "¿De qué estás seguro solo por pensarlo, sin mirar?",
+     "c": "Resuelve hoy un acertijo simple de lógica o matemáticas y observa cómo llegas a la respuesta."
+    },
+    "fr": {
+     "t": "Le rationalisme",
+     "g": "Apprends la thèse selon laquelle une part du savoir vient de la seule raison, avec Descartes et Leibniz.",
+     "p": [
+      "Les rationalistes disent que le raisonnement peut atteindre des vérités sans nouvelle expérience à chaque fois.",
+      "Les mathématiques sont leur exemple favori : on sait que deux plus trois font cinq en pensant seulement.",
+      "Descartes et Gottfried Leibniz croyaient que l'esprit possède des idées innées et des pouvoirs de raisonner."
+     ],
+     "q": "De quoi es-tu sûr par la seule pensée, sans regarder ?",
+     "c": "Résous aujourd'hui une petite énigme de logique ou de maths et observe ta démarche."
+    },
+    "it": {
+     "t": "Razionalismo",
+     "g": "Impara la tesi che parte della conoscenza viene dalla sola ragione, come sostenevano Descartes e Leibniz.",
+     "p": [
+      "I razionalisti dicono che il ragionamento può raggiungere verità senza bisogno di una nuova esperienza ogni volta.",
+      "La matematica è il loro esempio preferito: sai che due più tre fa cinque solo pensando.",
+      "Descartes e Gottfried Leibniz credevano che la mente avesse idee innate e capacità di ragionare."
+     ],
+     "q": "Di cosa sei sicuro solo pensandoci, senza guardare?",
+     "c": "Risolvi oggi un semplice indovinello di logica o matematica e osserva come arrivi alla risposta."
+    },
+    "pt": {
+     "t": "Racionalismo",
+     "g": "Aprende a ideia de que parte do conhecimento vem só da razão, como defendiam Descartes e Leibniz.",
+     "p": [
+      "Os racionalistas dizem que o raciocínio alcança verdades sem precisar de nova experiência de cada vez.",
+      "A matemática é o seu exemplo favorito: sabes que dois mais três são cinco só a pensar.",
+      "Descartes e Gottfried Leibniz acreditavam que a mente tem ideias inatas e poderes de raciocinar."
+     ],
+     "q": "De que tens certeza só por pensar, sem olhar?",
+     "c": "Resolve hoje um enigma simples de lógica ou matemática e repara como chegas à resposta."
+    },
+    "pt_BR": {
+     "t": "Racionalismo",
+     "g": "Aprenda a ideia de que parte do conhecimento vem só da razão, como defendiam Descartes e Leibniz.",
+     "p": [
+      "Os racionalistas dizem que o raciocínio alcança verdades sem precisar de nova experiência a cada vez.",
+      "A matemática é o exemplo favorito deles: você sabe que dois mais três são cinco só pensando.",
+      "Descartes e Gottfried Leibniz acreditavam que a mente tem ideias inatas e poderes de raciocinar."
+     ],
+     "q": "De que você tem certeza só por pensar, sem olhar?",
+     "c": "Resolva hoje um enigma simples de lógica ou matemática e perceba como chega à resposta."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hume on cause and effect",
+     "g": "Ask whether we ever see causes, or only one thing following another.",
+     "p": [
+      "David Hume was a Scottish philosopher of the 18th century who looked closely at what we really observe.",
+      "When one billiard ball hits another, we see motion and then motion, but we do not see a force called cause.",
+      "We come to expect causes through habit, and Hume asks us to be honest about this."
+     ],
+     "q": "What everyday event do you take for granted as having a cause, and how do you know?",
+     "c": "Watch one simple chain of events today and describe only what you actually observe."
+    },
+    "de": {
+     "t": "Hume über Ursache und Wirkung",
+     "g": "Frage dich, ob wir je Ursachen sehen oder nur, dass eins auf das andere folgt.",
+     "p": [
+      "David Hume war ein schottischer Philosoph des 18. Jahrhunderts, der genau hinsah, was wir wirklich beobachten.",
+      "Stößt eine Billardkugel eine andere an, sehen wir Bewegung und dann Bewegung, aber keine Kraft namens Ursache.",
+      "Wir erwarten Ursachen aus Gewohnheit, und Hume bittet uns, dabei ehrlich zu sein."
+     ],
+     "q": "Welches Alltagsereignis hältst du selbstverständlich für verursacht, und woher weißt du es?",
+     "c": "Beobachte heute eine einfache Ereigniskette und beschreibe nur, was du wirklich siehst."
+    },
+    "es": {
+     "t": "Hume y la causa y el efecto",
+     "g": "Pregúntate si alguna vez vemos causas o solo una cosa que sigue a otra.",
+     "p": [
+      "David Hume fue un filósofo escocés del siglo XVIII que miró con cuidado lo que realmente observamos.",
+      "Cuando una bola de billar golpea otra, vemos movimiento y luego movimiento, pero no una fuerza llamada causa.",
+      "Llegamos a esperar causas por costumbre, y Hume nos pide ser honestos con eso."
+     ],
+     "q": "¿Qué suceso cotidiano das por hecho que tiene una causa y cómo lo sabes?",
+     "c": "Observa hoy una cadena simple de sucesos y describe solo lo que realmente ves."
+    },
+    "fr": {
+     "t": "Hume, cause et effet",
+     "g": "Demande-toi si nous voyons jamais des causes, ou seulement une chose suivie d'une autre.",
+     "p": [
+      "David Hume, philosophe écossais du XVIIIe siècle, regardait de près ce que nous observons vraiment.",
+      "Quand une boule de billard en heurte une autre, on voit du mouvement puis du mouvement, mais pas une force nommée cause.",
+      "Nous attendons des causes par habitude, et Hume nous invite à être honnêtes là-dessus."
+     ],
+     "q": "Quel événement quotidien crois-tu avoir une cause, et comment le sais-tu ?",
+     "c": "Observe aujourd'hui un enchaînement simple et décris seulement ce que tu vois vraiment."
+    },
+    "it": {
+     "t": "Hume su causa ed effetto",
+     "g": "Chiediti se vediamo mai le cause, o solo una cosa che segue un'altra.",
+     "p": [
+      "David Hume fu un filosofo scozzese del Settecento che guardò con attenzione ciò che osserviamo davvero.",
+      "Quando una palla da biliardo ne colpisce un'altra, vediamo moto e poi moto, ma non una forza chiamata causa.",
+      "Ci aspettiamo cause per abitudine, e Hume ci chiede di essere onesti su questo."
+     ],
+     "q": "Quale evento quotidiano dai per scontato che abbia una causa, e come lo sai?",
+     "c": "Osserva oggi una semplice catena di eventi e descrivi solo ciò che vedi davvero."
+    },
+    "pt": {
+     "t": "Hume e a causa e o efeito",
+     "g": "Pergunta-te se alguma vez vemos causas ou apenas uma coisa a seguir-se a outra.",
+     "p": [
+      "David Hume foi um filósofo escocês do século XVIII que olhou com cuidado para o que realmente observamos.",
+      "Quando uma bola de bilhar bate noutra, vemos movimento e depois movimento, mas não uma força chamada causa.",
+      "Passamos a esperar causas por hábito, e Hume pede-nos honestidade quanto a isso."
+     ],
+     "q": "Que acontecimento do dia a dia assumes ter uma causa e como o sabes?",
+     "c": "Observa hoje uma cadeia simples de acontecimentos e descreve só o que realmente vês."
+    },
+    "pt_BR": {
+     "t": "Hume e a causa e o efeito",
+     "g": "Pergunte-se se alguma vez vemos causas ou apenas uma coisa seguindo outra.",
+     "p": [
+      "David Hume foi um filósofo escocês do século XVIII que olhou com cuidado para o que realmente observamos.",
+      "Quando uma bola de bilhar bate em outra, vemos movimento e depois movimento, mas não uma força chamada causa.",
+      "Passamos a esperar causas por hábito, e Hume nos pede honestidade quanto a isso."
+     ],
+     "q": "Que acontecimento do dia a dia você supõe ter uma causa e como sabe?",
+     "c": "Observe hoje uma cadeia simples de acontecimentos e descreva só o que realmente vê."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The problem of induction",
+     "g": "Wonder why the past should help us predict the future.",
+     "p": [
+      "Induction means reasoning from past cases to a general rule, like expecting the sun to rise tomorrow.",
+      "Hume asked: what justifies this? Saying it has worked so far uses the very reasoning in question.",
+      "We keep using induction because it works well in practice, and the puzzle teaches humility about certainty."
+     ],
+     "q": "What prediction do you make every day based only on past experience?",
+     "c": "Name one habit or expectation of yours and ask what past evidence supports it."
+    },
+    "de": {
+     "t": "Das Induktionsproblem",
+     "g": "Frage dich, warum die Vergangenheit uns helfen sollte, die Zukunft vorherzusagen.",
+     "p": [
+      "Induktion heißt, von vergangenen Fällen auf eine allgemeine Regel zu schließen, etwa dass morgen die Sonne aufgeht.",
+      "Hume fragte: Was rechtfertigt das? Zu sagen, es hat bisher geklappt, nutzt genau das fragliche Schließen.",
+      "Wir nutzen Induktion weiter, weil sie praktisch gut funktioniert, und das Rätsel lehrt Demut bei Gewissheit."
+     ],
+     "q": "Welche Vorhersage machst du täglich allein aufgrund vergangener Erfahrung?",
+     "c": "Nenne eine Gewohnheit oder Erwartung von dir und frag, welche früheren Belege sie stützen."
+    },
+    "es": {
+     "t": "El problema de la inducción",
+     "g": "Pregúntate por qué el pasado debería ayudarnos a predecir el futuro.",
+     "p": [
+      "Inducción es razonar desde casos pasados hasta una regla general, como esperar que mañana salga el sol.",
+      "Hume preguntó: ¿qué lo justifica? Decir que funcionó hasta ahora usa justo el razonamiento en duda.",
+      "Seguimos usando la inducción porque funciona bien en la práctica, y el enigma enseña humildad ante la certeza."
+     ],
+     "q": "¿Qué predicción haces cada día basándote solo en la experiencia pasada?",
+     "c": "Nombra un hábito o expectativa tuya y pregunta qué pruebas pasadas la apoyan."
+    },
+    "fr": {
+     "t": "Le problème de l'induction",
+     "g": "Demande-toi pourquoi le passé devrait nous aider à prévoir l'avenir.",
+     "p": [
+      "L'induction consiste à raisonner de cas passés à une règle générale, comme attendre le lever du soleil demain.",
+      "Hume demanda : qu'est-ce qui la justifie ? Dire que cela a marché jusqu'ici utilise le raisonnement en question.",
+      "Nous gardons l'induction car elle marche bien en pratique, et l'énigme enseigne l'humilité face à la certitude."
+     ],
+     "q": "Quelle prévision fais-tu chaque jour en te fondant seulement sur le passé ?",
+     "c": "Cite une habitude ou une attente et demande-toi quelles preuves passées la soutiennent."
+    },
+    "it": {
+     "t": "Il problema dell'induzione",
+     "g": "Chiediti perché il passato dovrebbe aiutarci a prevedere il futuro.",
+     "p": [
+      "Induzione significa ragionare da casi passati a una regola generale, come aspettarsi che domani sorga il sole.",
+      "Hume chiese: cosa lo giustifica? Dire che finora ha funzionato usa proprio il ragionamento in dubbio.",
+      "Continuiamo a usare l'induzione perché funziona bene nella pratica, e l'enigma insegna umiltà sulla certezza."
+     ],
+     "q": "Quale previsione fai ogni giorno basandoti solo sull'esperienza passata?",
+     "c": "Nomina un'abitudine o un'aspettativa tua e chiedi quali prove passate la sostengono."
+    },
+    "pt": {
+     "t": "O problema da indução",
+     "g": "Pergunta-te porque é que o passado nos deveria ajudar a prever o futuro.",
+     "p": [
+      "Indução é raciocinar de casos passados para uma regra geral, como esperar que amanhã o sol nasça.",
+      "Hume perguntou: o que o justifica? Dizer que funcionou até agora usa o próprio raciocínio em questão.",
+      "Continuamos a usar a indução porque funciona bem na prática, e o enigma ensina humildade perante a certeza."
+     ],
+     "q": "Que previsão fazes todos os dias baseada só na experiência passada?",
+     "c": "Nomeia um hábito ou expectativa tua e pergunta que provas passadas o apoiam."
+    },
+    "pt_BR": {
+     "t": "O problema da indução",
+     "g": "Pergunte-se por que o passado deveria nos ajudar a prever o futuro.",
+     "p": [
+      "Indução é raciocinar de casos passados para uma regra geral, como esperar que amanhã o sol nasça.",
+      "Hume perguntou: o que justifica isso? Dizer que funcionou até agora usa o próprio raciocínio em questão.",
+      "Continuamos usando a indução porque funciona bem na prática, e o enigma ensina humildade diante da certeza."
+     ],
+     "q": "Que previsão você faz todo dia baseada só na experiência passada?",
+     "c": "Nomeie um hábito ou expectativa sua e pergunte que provas passadas o apoiam."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kant's bridge",
+     "g": "See how Kant combined experience and reason: the mind shapes what we perceive.",
+     "p": [
+      "Immanuel Kant, a German philosopher of the 18th century, said Hume woke him from a dogmatic sleep.",
+      "He proposed that experience gives the raw material, while the mind supplies structure such as space, time and cause.",
+      "So experience and reason work together, like a pair of glasses that shape how everything looks."
+     ],
+     "q": "When has your own point of view changed how you saw the same situation?",
+     "c": "Look at one familiar scene today and imagine how someone else's eyes might see it."
+    },
+    "de": {
+     "t": "Kants Brücke",
+     "g": "Sieh, wie Kant Erfahrung und Vernunft verband: Der Geist formt, was wir wahrnehmen.",
+     "p": [
+      "Immanuel Kant, ein deutscher Philosoph des 18. Jahrhunderts, sagte, Hume habe ihn aus dem dogmatischen Schlummer geweckt.",
+      "Er meinte, Erfahrung liefere den Rohstoff, der Geist die Struktur wie Raum, Zeit und Ursache.",
+      "Erfahrung und Vernunft arbeiten also zusammen, wie eine Brille, die formt, wie alles aussieht."
+     ],
+     "q": "Wann hat dein Blickwinkel verändert, wie du dieselbe Situation sahst?",
+     "c": "Betrachte heute eine vertraute Szene und stell dir vor, wie andere Augen sie sehen."
+    },
+    "es": {
+     "t": "El puente de Kant",
+     "g": "Mira cómo Kant unió experiencia y razón: la mente da forma a lo que percibimos.",
+     "p": [
+      "Immanuel Kant, filósofo alemán del siglo XVIII, dijo que Hume lo despertó de su sueño dogmático.",
+      "Propuso que la experiencia da la materia prima y la mente aporta la estructura, como espacio, tiempo y causa.",
+      "Así experiencia y razón trabajan juntas, como unas gafas que dan forma a cómo se ve todo."
+     ],
+     "q": "¿Cuándo tu punto de vista cambió cómo veías la misma situación?",
+     "c": "Mira hoy una escena familiar e imagina cómo la verían otros ojos."
+    },
+    "fr": {
+     "t": "Le pont de Kant",
+     "g": "Vois comment Kant a uni expérience et raison : l'esprit façonne ce que nous percevons.",
+     "p": [
+      "Emmanuel Kant, philosophe allemand du XVIIIe siècle, disait que Hume l'avait tiré de son sommeil dogmatique.",
+      "Il proposa que l'expérience fournisse la matière brute, et l'esprit la structure : espace, temps, cause.",
+      "Expérience et raison collaborent donc, comme des lunettes qui façonnent l'apparence de tout."
+     ],
+     "q": "Quand ton point de vue a-t-il changé ta façon de voir une même situation ?",
+     "c": "Observe aujourd'hui une scène familière et imagine comment d'autres yeux la verraient."
+    },
+    "it": {
+     "t": "Il ponte di Kant",
+     "g": "Scopri come Kant unì esperienza e ragione: la mente dà forma a ciò che percepiamo.",
+     "p": [
+      "Immanuel Kant, filosofo tedesco del Settecento, disse che Hume lo svegliò dal sonno dogmatico.",
+      "Propose che l'esperienza dia la materia prima e la mente la struttura, come spazio, tempo e causa.",
+      "Così esperienza e ragione lavorano insieme, come occhiali che danno forma a come appare tutto."
+     ],
+     "q": "Quando il tuo punto di vista ha cambiato il modo in cui vedevi la stessa situazione?",
+     "c": "Guarda oggi una scena familiare e immagina come la vedrebbero altri occhi."
+    },
+    "pt": {
+     "t": "A ponte de Kant",
+     "g": "Vê como Kant uniu experiência e razão: a mente dá forma ao que percebemos.",
+     "p": [
+      "Immanuel Kant, filósofo alemão do século XVIII, disse que Hume o acordou do sono dogmático.",
+      "Propôs que a experiência dá a matéria-prima e a mente a estrutura, como espaço, tempo e causa.",
+      "Assim experiência e razão trabalham juntas, como óculos que dão forma ao aspeto de tudo."
+     ],
+     "q": "Quando é que o teu ponto de vista mudou o modo como viste a mesma situação?",
+     "c": "Olha hoje para uma cena familiar e imagina como a veriam outros olhos."
+    },
+    "pt_BR": {
+     "t": "A ponte de Kant",
+     "g": "Veja como Kant uniu experiência e razão: a mente dá forma ao que percebemos.",
+     "p": [
+      "Immanuel Kant, filósofo alemão do século XVIII, disse que Hume o acordou do sono dogmático.",
+      "Ele propôs que a experiência dá a matéria-prima e a mente a estrutura, como espaço, tempo e causa.",
+      "Assim experiência e razão trabalham juntas, como óculos que dão forma ao aspecto de tudo."
+     ],
+     "q": "Quando seu ponto de vista mudou o modo como você via a mesma situação?",
+     "c": "Olhe hoje uma cena familiar e imagine como a veriam outros olhos."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: self and knowledge",
+     "g": "Recap what we met: world traditions, identity, doubt and theories of knowledge.",
+     "p": [
+      "We traveled from Mencius and Xunzi, Zhuangzi, Nyaya, Ubuntu and Ibn Sina to Descartes, Locke, Hume and Kant.",
+      "Big questions: what makes you the same person, what can you be certain of, and how do we know?",
+      "Different traditions often ask similar questions, and comparing their answers sharpens our own thinking."
+     ],
+     "q": "Which thinker or idea of these weeks changed how you see things the most?",
+     "c": "Explain your favorite idea of this review to a friend in your own words."
+    },
+    "de": {
+     "t": "Rückblick: Selbst und Wissen",
+     "g": "Wiederhole, was wir kennenlernten: Weltdenktraditionen, Identität, Zweifel und Wissenstheorien.",
+     "p": [
+      "Wir reisten von Menzius und Xunzi, Zhuangzi, Nyaya, Ubuntu und Ibn Sina zu Descartes, Locke, Hume und Kant.",
+      "Große Fragen: Was macht dich zur selben Person, wessen kannst du sicher sein, und woher wissen wir?",
+      "Verschiedene Traditionen stellen oft ähnliche Fragen, und ihr Vergleich schärft das eigene Denken."
+     ],
+     "q": "Welcher Denker oder welche Idee dieser Wochen hat deinen Blick am meisten verändert?",
+     "c": "Erkläre einer Freundin deine Lieblingsidee dieses Rückblicks mit eigenen Worten."
+    },
+    "es": {
+     "t": "Repaso: yo y el conocimiento",
+     "g": "Repasa lo que vimos: tradiciones del mundo, identidad, duda y teorías del conocimiento.",
+     "p": [
+      "Viajamos de Mencio y Xunzi, Zhuangzi, Nyaya, Ubuntu y Avicena hasta Descartes, Locke, Hume y Kant.",
+      "Grandes preguntas: qué te hace la misma persona, de qué puedes estar seguro y cómo sabemos.",
+      "Distintas tradiciones suelen hacer preguntas parecidas, y comparar sus respuestas afina nuestro pensar."
+     ],
+     "q": "¿Qué pensador o idea de estas semanas cambió más tu forma de ver las cosas?",
+     "c": "Explica a un amigo con tus palabras tu idea favorita de este repaso."
+    },
+    "fr": {
+     "t": "Révision : soi et connaissance",
+     "g": "Récapitule ce que nous avons vu : traditions du monde, identité, doute et théories de la connaissance.",
+     "p": [
+      "Nous avons voyagé de Mencius, Xunzi, Zhuangzi, Nyaya, Ubuntu et Avicenne à Descartes, Locke, Hume et Kant.",
+      "Grandes questions : qu'est-ce qui te rend le même, de quoi es-tu certain, et comment savons-nous ?",
+      "Des traditions différentes posent souvent des questions semblables, et les comparer aiguise la pensée."
+     ],
+     "q": "Quel penseur ou quelle idée de ces semaines a le plus changé ton regard ?",
+     "c": "Explique à un ami ton idée préférée de cette révision avec tes mots."
+    },
+    "it": {
+     "t": "Ripasso: sé e conoscenza",
+     "g": "Ripassa ciò che abbiamo visto: tradizioni del mondo, identità, dubbio e teorie della conoscenza.",
+     "p": [
+      "Abbiamo viaggiato da Mencio e Xunzi, Zhuangzi, Nyaya, Ubuntu e Avicenna a Descartes, Locke, Hume e Kant.",
+      "Grandi domande: cosa ti rende la stessa persona, di cosa sei certo e come sappiamo?",
+      "Tradizioni diverse pongono spesso domande simili, e confrontarne le risposte affina il pensiero."
+     ],
+     "q": "Quale pensatore o idea di queste settimane ha cambiato di più il tuo sguardo?",
+     "c": "Spiega a un amico con parole tue la tua idea preferita di questo ripasso."
+    },
+    "pt": {
+     "t": "Revisão: o eu e o conhecimento",
+     "g": "Recapitula o que vimos: tradições do mundo, identidade, dúvida e teorias do conhecimento.",
+     "p": [
+      "Viajámos de Mêncio e Xunzi, Zhuangzi, Nyaya, Ubuntu e Avicena até Descartes, Locke, Hume e Kant.",
+      "Grandes perguntas: o que faz de ti a mesma pessoa, de que podes ter certeza e como sabemos?",
+      "Tradições diferentes fazem muitas vezes perguntas parecidas, e comparar respostas afina o nosso pensar."
+     ],
+     "q": "Que pensador ou ideia destas semanas mais mudou o teu olhar?",
+     "c": "Explica a um amigo, com palavras tuas, a tua ideia favorita desta revisão."
+    },
+    "pt_BR": {
+     "t": "Revisão: o eu e o conhecimento",
+     "g": "Recapitule o que vimos: tradições do mundo, identidade, dúvida e teorias do conhecimento.",
+     "p": [
+      "Viajamos de Mêncio e Xunzi, Zhuangzi, Nyaya, Ubuntu e Avicena até Descartes, Locke, Hume e Kant.",
+      "Grandes perguntas: o que faz de você a mesma pessoa, de que você pode ter certeza e como sabemos?",
+      "Tradições diferentes costumam fazer perguntas parecidas, e comparar respostas afina nosso pensar."
+     ],
+     "q": "Que pensador ou ideia dessas semanas mais mudou seu olhar?",
+     "c": "Explique a um amigo, com suas palavras, sua ideia favorita desta revisão."
+    }
+   }
+  }
+ ]
+}

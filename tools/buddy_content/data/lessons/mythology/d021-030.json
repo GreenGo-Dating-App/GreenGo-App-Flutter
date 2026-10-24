@@ -1,0 +1,835 @@
+{
+ "topic": "mythology",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Narcissus and Echo",
+     "g": "Meet a nymph who could only repeat others and a youth enchanted by his own reflection.",
+     "p": [
+      "Echo was a mountain nymph who could only repeat the last words she heard.",
+      "Narcissus, a handsome youth, saw his reflection in a pool and became so fascinated that he stayed there.",
+      "The tale gave us the word narcissism and the word echo, both still used today."
+     ],
+     "q": "Do you know a place where you can hear a good echo?",
+     "c": "Say a short phrase out loud somewhere with an echo and listen to how it returns."
+    },
+    "de": {
+     "t": "Narziss und Echo",
+     "g": "Lerne eine Nymphe kennen, die nur nachsprechen konnte, und einen Jüngling, der von seinem Spiegelbild verzaubert war.",
+     "p": [
+      "Echo war eine Bergnymphe, die nur die letzten Worte wiederholen konnte, die sie hörte.",
+      "Narziss, ein schöner Jüngling, sah sein Spiegelbild im Wasser und war so fasziniert, dass er dort blieb.",
+      "Die Sage schenkte uns die Wörter Narzissmus und Echo, die wir bis heute nutzen."
+     ],
+     "q": "Kennst du einen Ort, an dem man ein schönes Echo hört?",
+     "c": "Sprich an einem Ort mit Echo einen kurzen Satz laut und lausche, wie er zurückkommt."
+    },
+    "es": {
+     "t": "Narciso y Eco",
+     "g": "Conoce a una ninfa que solo podía repetir lo que oía y a un joven hechizado por su reflejo.",
+     "p": [
+      "Eco era una ninfa de la montaña que solo podía repetir las últimas palabras que escuchaba.",
+      "Narciso, un joven apuesto, vio su reflejo en un estanque y quedó tan fascinado que se quedó allí.",
+      "El mito nos dejó las palabras narcisismo y eco, que seguimos usando hoy."
+     ],
+     "q": "¿Conoces algún lugar donde se oiga un buen eco?",
+     "c": "Di una frase corta en voz alta donde haya eco y escucha cómo regresa."
+    },
+    "fr": {
+     "t": "Narcisse et Écho",
+     "g": "Rencontre une nymphe qui ne pouvait que répéter et un jeune homme fasciné par son reflet.",
+     "p": [
+      "Écho était une nymphe de la montagne qui ne pouvait répéter que les derniers mots entendus.",
+      "Narcisse, un beau jeune homme, vit son reflet dans une source et en fut si fasciné qu'il y resta.",
+      "Le mythe nous a donné les mots narcissisme et écho, toujours employés aujourd'hui."
+     ],
+     "q": "Connais-tu un endroit où l'on entend un bel écho ?",
+     "c": "Dis une courte phrase à voix haute là où il y a de l'écho et écoute-la revenir."
+    },
+    "it": {
+     "t": "Narciso ed Eco",
+     "g": "Conosci una ninfa che sapeva solo ripetere e un giovane incantato dal proprio riflesso.",
+     "p": [
+      "Eco era una ninfa dei monti che poteva ripetere solo le ultime parole che sentiva.",
+      "Narciso, un bel giovane, vide il suo riflesso in una pozza e ne fu così affascinato da restare lì.",
+      "Il mito ci ha dato le parole narcisismo ed eco, ancora oggi in uso."
+     ],
+     "q": "Conosci un posto dove si sente un bell'eco?",
+     "c": "Di' a voce alta una breve frase dove c'è eco e ascolta come ritorna."
+    },
+    "pt": {
+     "t": "Narciso e Eco",
+     "g": "Conhece uma ninfa que só sabia repetir e um jovem enfeitiçado pelo seu reflexo.",
+     "p": [
+      "Eco era uma ninfa da montanha que só podia repetir as últimas palavras que ouvia.",
+      "Narciso, um jovem belo, viu o seu reflexo numa poça e ficou tão fascinado que ali ficou.",
+      "O mito deixou-nos as palavras narcisismo e eco, que ainda usamos hoje."
+     ],
+     "q": "Conheces algum sítio onde se ouve um bom eco?",
+     "c": "Diz uma frase curta em voz alta onde haja eco e escuta como ela volta."
+    },
+    "pt_BR": {
+     "t": "Narciso e Eco",
+     "g": "Conheça uma ninfa que só sabia repetir e um jovem encantado pelo próprio reflexo.",
+     "p": [
+      "Eco era uma ninfa da montanha que só podia repetir as últimas palavras que ouvia.",
+      "Narciso, um jovem bonito, viu seu reflexo numa poça e ficou tão fascinado que ali ficou.",
+      "O mito nos deixou as palavras narcisismo e eco, que usamos até hoje."
+     ],
+     "q": "Você conhece algum lugar onde dá para ouvir um bom eco?",
+     "c": "Diga uma frase curta em voz alta onde tenha eco e ouça como ela volta."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "King Midas and the golden touch",
+     "g": "Explore a wish that went wrong and what it teaches about greed.",
+     "p": [
+      "King Midas helped a friend of the god Dionysus, who offered to grant him one wish.",
+      "Midas wished that everything he touched would turn to gold, and at first he was thrilled.",
+      "Soon even his food and his loved ones became gold, and he learned that some things are worth more."
+     ],
+     "q": "If you had one wish, what would you ask for, and what could go wrong?",
+     "c": "Write a two-line warning label for a magic wish that sounds too good to be true."
+    },
+    "de": {
+     "t": "König Midas und die goldene Berührung",
+     "g": "Erforsche einen Wunsch, der schiefging, und was er über Gier lehrt.",
+     "p": [
+      "König Midas half einem Freund des Gottes Dionysos, der ihm dafür einen Wunsch erfüllen wollte.",
+      "Midas wünschte sich, dass alles, was er berührt, zu Gold würde, und freute sich zuerst riesig.",
+      "Bald wurden sogar Essen und Liebste zu Gold, und er lernte, dass manches mehr wert ist."
+     ],
+     "q": "Was würdest du dir mit einem Wunsch wünschen, und was könnte schiefgehen?",
+     "c": "Schreibe einen Warnhinweis in zwei Zeilen für einen Zauberwunsch, der zu schön klingt."
+    },
+    "es": {
+     "t": "El rey Midas y el toque de oro",
+     "g": "Explora un deseo que salió mal y lo que enseña sobre la codicia.",
+     "p": [
+      "El rey Midas ayudó a un amigo del dios Dioniso, que le ofreció cumplir un deseo.",
+      "Midas pidió que todo lo que tocara se volviera oro y al principio estaba encantado.",
+      "Pronto hasta la comida y sus seres queridos se volvieron oro, y aprendió que hay cosas que valen más."
+     ],
+     "q": "Si tuvieras un deseo, ¿qué pedirías y qué podría salir mal?",
+     "c": "Escribe una advertencia de dos líneas para un deseo mágico que parece demasiado bueno."
+    },
+    "fr": {
+     "t": "Le roi Midas et le toucher d'or",
+     "g": "Explore un vœu qui tourne mal et ce qu'il enseigne sur la cupidité.",
+     "p": [
+      "Le roi Midas aida un ami du dieu Dionysos, qui lui proposa d'exaucer un vœu.",
+      "Midas souhaita que tout ce qu'il touchait devienne or et fut d'abord ravi.",
+      "Bientôt, même la nourriture et ses proches devinrent or : il comprit que certaines choses valent plus."
+     ],
+     "q": "Si tu avais un seul vœu, que demanderais-tu et qu'est-ce qui pourrait mal tourner ?",
+     "c": "Écris un avertissement de deux lignes pour un vœu magique trop beau pour être vrai."
+    },
+    "it": {
+     "t": "Re Mida e il tocco d'oro",
+     "g": "Esplora un desiderio andato storto e ciò che insegna sull'avidità.",
+     "p": [
+      "Re Mida aiutò un amico del dio Dioniso, che gli offrì di esaudire un desiderio.",
+      "Mida chiese che tutto ciò che toccava diventasse oro e all'inizio fu entusiasta.",
+      "Presto anche il cibo e i suoi cari divennero oro, e capì che certe cose valgono di più."
+     ],
+     "q": "Se avessi un desiderio, cosa chiederesti e cosa potrebbe andare storto?",
+     "c": "Scrivi un'avvertenza di due righe per un desiderio magico troppo bello per essere vero."
+    },
+    "pt": {
+     "t": "O rei Midas e o toque de ouro",
+     "g": "Explora um desejo que correu mal e o que ensina sobre a ganância.",
+     "p": [
+      "O rei Midas ajudou um amigo do deus Dioniso, que lhe ofereceu realizar um desejo.",
+      "Midas pediu que tudo o que tocasse se tornasse ouro e a princípio ficou encantado.",
+      "Depressa até a comida e os entes queridos viraram ouro, e aprendeu que certas coisas valem mais."
+     ],
+     "q": "Se tivesses um desejo, o que pedirias e o que poderia correr mal?",
+     "c": "Escreve um aviso de duas linhas para um desejo mágico bom demais para ser verdade."
+    },
+    "pt_BR": {
+     "t": "O rei Midas e o toque de ouro",
+     "g": "Explore um desejo que deu errado e o que ele ensina sobre a ganância.",
+     "p": [
+      "O rei Midas ajudou um amigo do deus Dioniso, que ofereceu realizar um desejo.",
+      "Midas pediu que tudo o que tocasse virasse ouro e no começo ficou encantado.",
+      "Logo até a comida e as pessoas queridas viraram ouro, e ele aprendeu que certas coisas valem mais."
+     ],
+     "q": "Se você tivesse um desejo, o que pediria e o que poderia dar errado?",
+     "c": "Escreva um aviso de duas linhas para um desejo mágico bom demais para ser verdade."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Arachne the weaver",
+     "g": "Discover a weaving contest with Athena and the legendary origin of spiders.",
+     "p": [
+      "Arachne was a mortal weaver so skilled that people said even Athena could not do better.",
+      "She challenged the goddess to a contest, and both cloths were wonderful, but Arachne lacked humility.",
+      "In the legend, Athena turned her into a spider, which is why spiders weave and the class is called arachnids."
+     ],
+     "q": "What craft or skill are you proud of, even if you are still learning?",
+     "c": "Look for a spider web or a woven pattern today and describe its design in two sentences."
+    },
+    "de": {
+     "t": "Arachne, die Weberin",
+     "g": "Entdecke einen Webwettstreit mit Athene und die sagenhafte Herkunft der Spinnen.",
+     "p": [
+      "Arachne war eine sterbliche Weberin, so geschickt, dass man sagte, selbst Athene könne es nicht besser.",
+      "Sie forderte die Göttin zum Wettstreit heraus; beide Tücher waren wundervoll, doch Arachne fehlte Bescheidenheit.",
+      "Der Sage nach verwandelte Athene sie in eine Spinne, darum weben Spinnen und heißen Arachniden."
+     ],
+     "q": "Auf welches Handwerk oder Können bist du stolz, auch wenn du noch lernst?",
+     "c": "Suche heute ein Spinnennetz oder ein Webmuster und beschreibe das Muster in zwei Sätzen."
+    },
+    "es": {
+     "t": "Aracne la tejedora",
+     "g": "Descubre un concurso de tejido con Atenea y el origen legendario de las arañas.",
+     "p": [
+      "Aracne era una tejedora mortal tan hábil que decían que ni Atenea lo haría mejor.",
+      "Retó a la diosa a un concurso; ambos tejidos eran maravillosos, pero a Aracne le faltó humildad.",
+      "Según la leyenda, Atenea la convirtió en araña, por eso las arañas tejen y se llaman arácnidos."
+     ],
+     "q": "¿De qué habilidad o arte estás orgulloso, aunque aún estés aprendiendo?",
+     "c": "Busca hoy una telaraña o un tejido con dibujo y describe su diseño en dos frases."
+    },
+    "fr": {
+     "t": "Arachné la tisseuse",
+     "g": "Découvre un concours de tissage avec Athéna et l'origine légendaire des araignées.",
+     "p": [
+      "Arachné était une tisseuse mortelle si habile qu'on disait qu'Athéna elle-même ne ferait pas mieux.",
+      "Elle défia la déesse ; les deux tissus étaient magnifiques, mais Arachné manquait d'humilité.",
+      "Selon la légende, Athéna la changea en araignée : d'où les araignées tisseuses et le mot arachnides."
+     ],
+     "q": "De quel savoir-faire es-tu fier, même si tu apprends encore ?",
+     "c": "Cherche aujourd'hui une toile d'araignée ou un tissage à motifs et décris-le en deux phrases."
+    },
+    "it": {
+     "t": "Aracne la tessitrice",
+     "g": "Scopri una gara di tessitura con Atena e l'origine leggendaria dei ragni.",
+     "p": [
+      "Aracne era una tessitrice mortale così abile che si diceva che nemmeno Atena potesse fare meglio.",
+      "Sfidò la dea in una gara; entrambe le tele erano meravigliose, ma ad Aracne mancava umiltà.",
+      "Secondo la leggenda Atena la trasformò in ragno: per questo i ragni tessono e si chiamano aracnidi."
+     ],
+     "q": "Di quale abilità vai fiero, anche se stai ancora imparando?",
+     "c": "Cerca oggi una ragnatela o un tessuto a disegni e descrivilo in due frasi."
+    },
+    "pt": {
+     "t": "Aracne, a tecedeira",
+     "g": "Descobre um concurso de tecelagem com Atena e a origem lendária das aranhas.",
+     "p": [
+      "Aracne era uma tecedeira mortal tão hábil que diziam que nem Atena faria melhor.",
+      "Desafiou a deusa para um concurso; os dois tecidos eram maravilhosos, mas a Aracne faltou humildade.",
+      "Segundo a lenda, Atena transformou-a em aranha: por isso as aranhas tecem e se chamam aracnídeos."
+     ],
+     "q": "De que habilidade te orgulhas, mesmo que ainda estejas a aprender?",
+     "c": "Procura hoje uma teia de aranha ou um tecido com padrões e descreve-o em duas frases."
+    },
+    "pt_BR": {
+     "t": "Aracne, a tecelã",
+     "g": "Descubra um concurso de tecelagem com Atena e a origem lendária das aranhas.",
+     "p": [
+      "Aracne era uma tecelã mortal tão hábil que diziam que nem Atena faria melhor.",
+      "Ela desafiou a deusa para um concurso; os dois tecidos eram maravilhosos, mas faltou humildade a Aracne.",
+      "Segundo a lenda, Atena a transformou em aranha: por isso aranhas tecem e se chamam aracnídeos."
+     ],
+     "q": "De que habilidade você se orgulha, mesmo que ainda esteja aprendendo?",
+     "c": "Procure hoje uma teia de aranha ou um tecido estampado e descreva o desenho em duas frases."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pegasus the winged horse",
+     "g": "Meet Bellerophon's flying companion who ended up as a constellation.",
+     "p": [
+      "Pegasus was a magnificent white horse with wings, said to have sprung from the earth near Medusa's story.",
+      "The hero Bellerophon tamed him with a golden bridle given by Athena and rode him on great adventures.",
+      "Pegasus later took his place among the stars, and you can still find the constellation Pegasus in the night sky."
+     ],
+     "q": "If you had a winged horse for a day, where would you fly first?",
+     "c": "Draw or describe your own winged animal and give it a name from a myth."
+    },
+    "de": {
+     "t": "Pegasus, das geflügelte Pferd",
+     "g": "Lerne den fliegenden Gefährten Bellerophons kennen, der als Sternbild endete.",
+     "p": [
+      "Pegasus war ein prächtiges weißes Pferd mit Flügeln, das der Sage nach in Medusas Geschichte entsprang.",
+      "Der Held Bellerophon zähmte ihn mit einem goldenen Zaum von Athene und ritt auf ihm zu großen Abenteuern.",
+      "Pegasus bekam später einen Platz unter den Sternen, und das Sternbild Pegasus ist noch am Nachthimmel zu finden."
+     ],
+     "q": "Wohin würdest du an einem Tag mit einem geflügelten Pferd zuerst fliegen?",
+     "c": "Zeichne oder beschreibe dein eigenes Flügeltier und gib ihm einen Namen aus einem Mythos."
+    },
+    "es": {
+     "t": "Pegaso, el caballo alado",
+     "g": "Conoce al compañero volador de Belerofonte que acabó convertido en constelación.",
+     "p": [
+      "Pegaso era un magnífico caballo blanco con alas, nacido según el mito junto a la historia de Medusa.",
+      "El héroe Belerofonte lo domó con una brida de oro regalada por Atenea y cabalgó con él grandes aventuras.",
+      "Pegaso ocupó después su lugar entre las estrellas y aún puedes encontrar la constelación de Pegaso."
+     ],
+     "q": "Si tuvieras un caballo alado por un día, ¿adónde volarías primero?",
+     "c": "Dibuja o describe tu propio animal alado y ponle un nombre sacado de un mito."
+    },
+    "fr": {
+     "t": "Pégase, le cheval ailé",
+     "g": "Rencontre le compagnon volant de Bellérophon, devenu constellation.",
+     "p": [
+      "Pégase était un magnifique cheval blanc ailé, né selon le mythe dans l'histoire de Méduse.",
+      "Le héros Bellérophon le dompta avec un mors d'or offert par Athéna et vécut avec lui de grandes aventures.",
+      "Pégase prit ensuite place parmi les étoiles : la constellation de Pégase brille encore dans le ciel."
+     ],
+     "q": "Si tu avais un cheval ailé pour un jour, où volerais-tu en premier ?",
+     "c": "Dessine ou décris ton propre animal ailé et donne-lui un nom tiré d'un mythe."
+    },
+    "it": {
+     "t": "Pegaso, il cavallo alato",
+     "g": "Conosci il compagno volante di Bellerofonte, finito come costellazione.",
+     "p": [
+      "Pegaso era un magnifico cavallo bianco alato, nato secondo il mito nella storia di Medusa.",
+      "L'eroe Bellerofonte lo domò con un morso d'oro donato da Atena e visse con lui grandi avventure.",
+      "Pegaso prese poi posto tra le stelle e puoi ancora trovare la costellazione di Pegaso nel cielo."
+     ],
+     "q": "Se avessi un cavallo alato per un giorno, dove voleresti per prima cosa?",
+     "c": "Disegna o descrivi il tuo animale alato e dagli un nome preso da un mito."
+    },
+    "pt": {
+     "t": "Pégaso, o cavalo alado",
+     "g": "Conhece o companheiro voador de Belerofonte, que acabou como constelação.",
+     "p": [
+      "Pégaso era um magnífico cavalo branco com asas, nascido segundo o mito na história de Medusa.",
+      "O herói Belerofonte domou-o com um freio de ouro oferecido por Atena e viveu com ele grandes aventuras.",
+      "Pégaso ocupou depois o seu lugar entre as estrelas e ainda podes encontrar a constelação de Pégaso."
+     ],
+     "q": "Se tivesses um cavalo alado por um dia, para onde voarias primeiro?",
+     "c": "Desenha ou descreve o teu próprio animal alado e dá-lhe um nome tirado de um mito."
+    },
+    "pt_BR": {
+     "t": "Pégaso, o cavalo alado",
+     "g": "Conheça o companheiro voador de Belerofonte, que acabou virando constelação.",
+     "p": [
+      "Pégaso era um magnífico cavalo branco com asas, nascido segundo o mito na história de Medusa.",
+      "O herói Belerofonte o domou com um freio de ouro dado por Atena e viveu com ele grandes aventuras.",
+      "Pégaso depois ocupou seu lugar entre as estrelas e você ainda pode achar a constelação de Pégaso."
+     ],
+     "q": "Se você tivesse um cavalo alado por um dia, para onde voaria primeiro?",
+     "c": "Desenhe ou descreva seu próprio animal alado e dê a ele um nome tirado de um mito."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Greek myths in everyday words",
+     "g": "Spot panic, echo, atlas, music and other words born from Greek myths.",
+     "p": [
+      "Panic comes from Pan, the nature god whose sudden noises startled travellers in the hills.",
+      "Atlas, the Titan who held up the sky, gave his name to books of maps, and music comes from the Muses.",
+      "Cereal comes from Ceres, the Roman Demeter, and a herculean task is a very hard one."
+     ],
+     "q": "Which everyday word can you now trace back to a myth?",
+     "c": "Use three myth-born words in one short story and read it aloud."
+    },
+    "de": {
+     "t": "Griechische Mythen in Alltagswörtern",
+     "g": "Entdecke Panik, Echo, Atlas, Musik und andere Wörter aus griechischen Mythen.",
+     "p": [
+      "Panik kommt von Pan, dem Naturgott, dessen plötzliche Geräusche Wanderer in den Bergen erschreckten.",
+      "Atlas, der Titan, der den Himmel trug, gab Kartenbüchern den Namen, und Musik kommt von den Musen.",
+      "Zerealien kommen von Ceres, der römischen Demeter, und eine Herkulesaufgabe ist eine sehr schwere."
+     ],
+     "q": "Welches Alltagswort kannst du jetzt auf einen Mythos zurückführen?",
+     "c": "Benutze drei Mythenwörter in einer kurzen Geschichte und lies sie laut vor."
+    },
+    "es": {
+     "t": "Mitos griegos en palabras cotidianas",
+     "g": "Descubre pánico, eco, atlas, música y otras palabras nacidas de mitos griegos.",
+     "p": [
+      "Pánico viene de Pan, el dios de la naturaleza cuyos ruidos repentinos asustaban a los viajeros en los montes.",
+      "Atlas, el titán que sostenía el cielo, dio nombre a los libros de mapas, y música viene de las Musas.",
+      "Cereal viene de Ceres, la Deméter romana, y una tarea hercúlea es una muy difícil."
+     ],
+     "q": "¿Qué palabra cotidiana puedes ya rastrear hasta un mito?",
+     "c": "Usa tres palabras de origen mítico en un cuento breve y léelo en voz alta."
+    },
+    "fr": {
+     "t": "Les mythes grecs dans nos mots",
+     "g": "Repère panique, écho, atlas, musique et d'autres mots nés des mythes grecs.",
+     "p": [
+      "Panique vient de Pan, le dieu de la nature dont les bruits soudains effrayaient les voyageurs en montagne.",
+      "Atlas, le Titan qui portait le ciel, a donné son nom aux recueils de cartes, et musique vient des Muses.",
+      "Céréale vient de Cérès, la Déméter romaine, et un travail herculéen est très difficile."
+     ],
+     "q": "Quel mot courant peux-tu maintenant relier à un mythe ?",
+     "c": "Emploie trois mots issus de mythes dans une courte histoire et lis-la à voix haute."
+    },
+    "it": {
+     "t": "I miti greci nelle parole di ogni giorno",
+     "g": "Scova panico, eco, atlante, musica e altre parole nate dai miti greci.",
+     "p": [
+      "Panico viene da Pan, il dio della natura i cui rumori improvvisi spaventavano i viandanti sui monti.",
+      "Atlante, il Titano che reggeva il cielo, ha dato nome ai libri di mappe, e musica viene dalle Muse.",
+      "Cereale viene da Cerere, la Demetra romana, e una fatica erculea è molto difficile."
+     ],
+     "q": "Quale parola di tutti i giorni sai ora ricondurre a un mito?",
+     "c": "Usa tre parole nate dai miti in una breve storia e leggila ad alta voce."
+    },
+    "pt": {
+     "t": "Mitos gregos nas palavras do dia a dia",
+     "g": "Descobre pânico, eco, atlas, música e outras palavras nascidas de mitos gregos.",
+     "p": [
+      "Pânico vem de Pã, o deus da natureza cujos ruídos súbitos assustavam os viajantes nos montes.",
+      "Atlas, o Titã que sustinha o céu, deu nome aos livros de mapas, e música vem das Musas.",
+      "Cereal vem de Ceres, a Deméter romana, e uma tarefa hercúlea é muito difícil."
+     ],
+     "q": "Que palavra do dia a dia consegues agora ligar a um mito?",
+     "c": "Usa três palavras de origem mítica numa história curta e lê-a em voz alta."
+    },
+    "pt_BR": {
+     "t": "Mitos gregos nas palavras do dia a dia",
+     "g": "Descubra pânico, eco, atlas, música e outras palavras nascidas de mitos gregos.",
+     "p": [
+      "Pânico vem de Pã, o deus da natureza cujos ruídos repentinos assustavam os viajantes nos montes.",
+      "Atlas, o Titã que sustentava o céu, deu nome aos livros de mapas, e música vem das Musas.",
+      "Cereal vem de Ceres, a Deméter romana, e uma tarefa hercúlea é muito difícil."
+     ],
+     "q": "Que palavra do dia a dia você consegue ligar a um mito agora?",
+     "c": "Use três palavras de origem mítica numa história curta e leia em voz alta."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rome borrows the gods",
+     "g": "See how Zeus became Jupiter, Aphrodite became Venus and Hermes became Mercury.",
+     "p": [
+      "The Romans admired Greek stories and matched their own gods with the Greek ones.",
+      "Zeus became Jupiter, Hera became Juno, Athena became Minerva and Hermes became Mercury.",
+      "Many planets still carry these Roman names, such as Jupiter, Venus, Mars and Mercury."
+     ],
+     "q": "Which Roman or planet name do you like best, and why?",
+     "c": "Match three Greek gods from earlier days to their Roman names without peeking."
+    },
+    "de": {
+     "t": "Rom leiht sich die Götter",
+     "g": "Sieh, wie Zeus zu Jupiter, Aphrodite zu Venus und Hermes zu Merkur wurde.",
+     "p": [
+      "Die Römer bewunderten griechische Geschichten und verbanden ihre eigenen Götter mit den griechischen.",
+      "Zeus wurde Jupiter, Hera wurde Juno, Athene wurde Minerva und Hermes wurde Merkur.",
+      "Viele Planeten tragen noch diese römischen Namen, etwa Jupiter, Venus, Mars und Merkur."
+     ],
+     "q": "Welcher römische oder Planetenname gefällt dir am besten und warum?",
+     "c": "Ordne drei griechische Götter von früheren Tagen ohne Spicken ihren römischen Namen zu."
+    },
+    "es": {
+     "t": "Roma toma prestados a los dioses",
+     "g": "Mira cómo Zeus se volvió Júpiter, Afrodita se volvió Venus y Hermes se volvió Mercurio.",
+     "p": [
+      "Los romanos admiraban los relatos griegos y emparejaron a sus dioses con los griegos.",
+      "Zeus fue Júpiter, Hera fue Juno, Atenea fue Minerva y Hermes fue Mercurio.",
+      "Muchos planetas aún llevan esos nombres romanos, como Júpiter, Venus, Marte y Mercurio."
+     ],
+     "q": "¿Qué nombre romano o de planeta te gusta más y por qué?",
+     "c": "Empareja sin mirar tres dioses griegos de días anteriores con sus nombres romanos."
+    },
+    "fr": {
+     "t": "Rome emprunte les dieux",
+     "g": "Vois comment Zeus devint Jupiter, Aphrodite devint Vénus et Hermès devint Mercure.",
+     "p": [
+      "Les Romains admiraient les récits grecs et associèrent leurs propres dieux aux dieux grecs.",
+      "Zeus devint Jupiter, Héra devint Junon, Athéna devint Minerve et Hermès devint Mercure.",
+      "Beaucoup de planètes portent encore ces noms romains : Jupiter, Vénus, Mars et Mercure."
+     ],
+     "q": "Quel nom romain ou de planète préfères-tu, et pourquoi ?",
+     "c": "Associe sans tricher trois dieux grecs des jours précédents à leur nom romain."
+    },
+    "it": {
+     "t": "Roma prende in prestito gli dèi",
+     "g": "Guarda come Zeus divenne Giove, Afrodite divenne Venere ed Ermes divenne Mercurio.",
+     "p": [
+      "I Romani ammiravano i racconti greci e abbinarono i propri dèi a quelli greci.",
+      "Zeus divenne Giove, Era divenne Giunone, Atena divenne Minerva ed Ermes divenne Mercurio.",
+      "Molti pianeti portano ancora questi nomi romani, come Giove, Venere, Marte e Mercurio."
+     ],
+     "q": "Quale nome romano o di pianeta preferisci, e perché?",
+     "c": "Abbina senza sbirciare tre dèi greci dei giorni scorsi ai loro nomi romani."
+    },
+    "pt": {
+     "t": "Roma pede emprestados os deuses",
+     "g": "Vê como Zeus se tornou Júpiter, Afrodite se tornou Vénus e Hermes se tornou Mercúrio.",
+     "p": [
+      "Os romanos admiravam as histórias gregas e associaram os seus deuses aos gregos.",
+      "Zeus foi Júpiter, Hera foi Juno, Atena foi Minerva e Hermes foi Mercúrio.",
+      "Muitos planetas ainda têm estes nomes romanos, como Júpiter, Vénus, Marte e Mercúrio."
+     ],
+     "q": "Que nome romano ou de planeta preferes, e porquê?",
+     "c": "Associa, sem espreitar, três deuses gregos de dias anteriores aos nomes romanos."
+    },
+    "pt_BR": {
+     "t": "Roma pega os deuses emprestados",
+     "g": "Veja como Zeus virou Júpiter, Afrodite virou Vênus e Hermes virou Mercúrio.",
+     "p": [
+      "Os romanos admiravam as histórias gregas e associaram seus deuses aos gregos.",
+      "Zeus virou Júpiter, Hera virou Juno, Atena virou Minerva e Hermes virou Mercúrio.",
+      "Vários planetas ainda têm esses nomes romanos, como Júpiter, Vênus, Marte e Mercúrio."
+     ],
+     "q": "Qual nome romano ou de planeta você prefere, e por quê?",
+     "c": "Associe, sem espiar, três deuses gregos de dias anteriores aos nomes romanos."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Romulus and Remus",
+     "g": "Hear about twins raised by a she-wolf and the legendary founding of Rome.",
+     "p": [
+      "According to legend, twin brothers Romulus and Remus were left by a river as babies and found by a she-wolf.",
+      "A shepherd family later raised them, and when grown they decided to build a city near the same hills.",
+      "Romulus gave the city his name, Rome, and the she-wolf became a beloved symbol you can see on statues."
+     ],
+     "q": "What would you name a city that you founded?",
+     "c": "Imagine a city of your own and tell its founding legend in three sentences."
+    },
+    "de": {
+     "t": "Romulus und Remus",
+     "g": "Höre von Zwillingen, die von einer Wölfin aufgezogen wurden, und von der sagenhaften Gründung Roms.",
+     "p": [
+      "Der Legende nach wurden die Zwillingsbrüder Romulus und Remus als Babys am Fluss gefunden und von einer Wölfin versorgt.",
+      "Später zog sie eine Hirtenfamilie auf, und als Erwachsene gründeten sie eine Stadt bei denselben Hügeln.",
+      "Romulus gab der Stadt seinen Namen, Rom, und die Wölfin wurde zum beliebten Symbol auf Statuen."
+     ],
+     "q": "Wie würdest du eine Stadt nennen, die du gründest?",
+     "c": "Erfinde deine eigene Stadt und erzähle ihre Gründungssage in drei Sätzen."
+    },
+    "es": {
+     "t": "Rómulo y Remo",
+     "g": "Escucha la historia de unos gemelos criados por una loba y la fundación legendaria de Roma.",
+     "p": [
+      "Según la leyenda, los gemelos Rómulo y Remo fueron dejados de bebés junto a un río y los encontró una loba.",
+      "Luego los crio una familia de pastores y, ya mayores, decidieron construir una ciudad junto a las mismas colinas.",
+      "Rómulo dio su nombre a la ciudad, Roma, y la loba se volvió un símbolo querido que ves en estatuas."
+     ],
+     "q": "¿Qué nombre le pondrías a una ciudad que tú fundaras?",
+     "c": "Imagina tu propia ciudad y cuenta su leyenda de fundación en tres frases."
+    },
+    "fr": {
+     "t": "Romulus et Remus",
+     "g": "Découvre des jumeaux élevés par une louve et la fondation légendaire de Rome.",
+     "p": [
+      "Selon la légende, les jumeaux Romulus et Remus furent laissés bébés près d'un fleuve et trouvés par une louve.",
+      "Une famille de bergers les éleva ensuite, et devenus grands, ils décidèrent de bâtir une cité près des mêmes collines.",
+      "Romulus donna son nom à la ville, Rome, et la louve devint un symbole aimé que l'on voit sur des statues."
+     ],
+     "q": "Quel nom donnerais-tu à une ville que tu fonderais ?",
+     "c": "Imagine ta propre ville et raconte sa légende de fondation en trois phrases."
+    },
+    "it": {
+     "t": "Romolo e Remo",
+     "g": "Scopri i gemelli allevati da una lupa e la fondazione leggendaria di Roma.",
+     "p": [
+      "Secondo la leggenda, i gemelli Romolo e Remo furono lasciati neonati presso un fiume e trovati da una lupa.",
+      "Poi li crebbe una famiglia di pastori e, da grandi, decisero di costruire una città presso gli stessi colli.",
+      "Romolo diede alla città il suo nome, Roma, e la lupa divenne un simbolo amato che vedi nelle statue."
+     ],
+     "q": "Che nome daresti a una città da te fondata?",
+     "c": "Immagina una tua città e racconta la sua leggenda di fondazione in tre frasi."
+    },
+    "pt": {
+     "t": "Rómulo e Remo",
+     "g": "Conhece os gémeos criados por uma loba e a fundação lendária de Roma.",
+     "p": [
+      "Segundo a lenda, os gémeos Rómulo e Remo foram deixados bebés junto a um rio e encontrados por uma loba.",
+      "Uma família de pastores criou-os depois e, já crescidos, decidiram fundar uma cidade junto às mesmas colinas.",
+      "Rómulo deu o seu nome à cidade, Roma, e a loba tornou-se um símbolo querido que vês em estátuas."
+     ],
+     "q": "Que nome darias a uma cidade fundada por ti?",
+     "c": "Imagina a tua própria cidade e conta a sua lenda de fundação em três frases."
+    },
+    "pt_BR": {
+     "t": "Rômulo e Remo",
+     "g": "Conheça os gêmeos criados por uma loba e a fundação lendária de Roma.",
+     "p": [
+      "Segundo a lenda, os gêmeos Rômulo e Remo foram deixados bebês perto de um rio e achados por uma loba.",
+      "Uma família de pastores os criou depois e, já grandes, eles decidiram fundar uma cidade junto às mesmas colinas.",
+      "Rômulo deu seu nome à cidade, Roma, e a loba virou um símbolo querido que você vê em estátuas."
+     ],
+     "q": "Que nome você daria a uma cidade fundada por você?",
+     "c": "Imagine sua própria cidade e conte a lenda de fundação dela em três frases."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Aeneas the wanderer",
+     "g": "Follow the Trojan hero whose long journey Virgil linked to the origins of Rome.",
+     "p": [
+      "Aeneas was a Trojan prince who left his city carrying his father and leading his young son by the hand.",
+      "The Roman poet Virgil told his travels across the sea in the epic called the Aeneid.",
+      "After many adventures he reached Italy, and the Romans saw him as an ancestor of their story."
+     ],
+     "q": "Which journey in your life took you somewhere new and unexpected?",
+     "c": "Pack an imaginary travel bag for a long journey and name three things you would carry."
+    },
+    "de": {
+     "t": "Äneas, der Wanderer",
+     "g": "Folge dem trojanischen Helden, dessen lange Reise Vergil mit den Ursprüngen Roms verband.",
+     "p": [
+      "Äneas war ein trojanischer Prinz, der seine Stadt verließ, den Vater tragend und den kleinen Sohn an der Hand.",
+      "Der römische Dichter Vergil erzählte seine Seefahrten im Epos, das Äneis heißt.",
+      "Nach vielen Abenteuern erreichte er Italien, und die Römer sahen in ihm einen Vorfahren ihrer Geschichte."
+     ],
+     "q": "Welche Reise in deinem Leben führte dich an einen neuen, unerwarteten Ort?",
+     "c": "Packe in Gedanken eine Reisetasche für eine lange Reise und nenne drei Dinge, die du mitnimmst."
+    },
+    "es": {
+     "t": "Eneas, el caminante",
+     "g": "Sigue al héroe troyano cuyo largo viaje Virgilio unió a los orígenes de Roma.",
+     "p": [
+      "Eneas era un príncipe troyano que dejó su ciudad cargando a su padre y llevando de la mano a su hijo pequeño.",
+      "El poeta romano Virgilio contó sus viajes por el mar en la epopeya llamada Eneida.",
+      "Tras muchas aventuras llegó a Italia, y los romanos lo veían como un antepasado de su historia."
+     ],
+     "q": "¿Qué viaje de tu vida te llevó a un lugar nuevo e inesperado?",
+     "c": "Prepara una maleta imaginaria para un viaje largo y nombra tres cosas que llevarías."
+    },
+    "fr": {
+     "t": "Énée le voyageur",
+     "g": "Suis le héros troyen dont le long voyage fut relié par Virgile aux origines de Rome.",
+     "p": [
+      "Énée était un prince troyen qui quitta sa ville en portant son père et en tenant son jeune fils par la main.",
+      "Le poète romain Virgile raconta ses voyages en mer dans l'épopée appelée l'Énéide.",
+      "Après bien des aventures, il atteignit l'Italie, et les Romains y virent un ancêtre de leur histoire."
+     ],
+     "q": "Quel voyage de ta vie t'a mené vers un lieu nouveau et inattendu ?",
+     "c": "Prépare un sac de voyage imaginaire pour un long périple et cite trois choses que tu emporterais."
+    },
+    "it": {
+     "t": "Enea il viandante",
+     "g": "Segui l'eroe troiano il cui lungo viaggio Virgilio legò alle origini di Roma.",
+     "p": [
+      "Enea era un principe troiano che lasciò la sua città portando il padre e tenendo per mano il figlio piccolo.",
+      "Il poeta romano Virgilio raccontò i suoi viaggi per mare nell'epopea chiamata Eneide.",
+      "Dopo molte avventure raggiunse l'Italia, e i Romani lo videro come un antenato della loro storia."
+     ],
+     "q": "Quale viaggio della tua vita ti ha portato in un posto nuovo e inatteso?",
+     "c": "Prepara una valigia immaginaria per un lungo viaggio e nomina tre cose che porteresti."
+    },
+    "pt": {
+     "t": "Eneias, o caminhante",
+     "g": "Acompanha o herói troiano cuja longa viagem Virgílio ligou às origens de Roma.",
+     "p": [
+      "Eneias era um príncipe troiano que deixou a cidade a levar o pai e a segurar o filho pequeno pela mão.",
+      "O poeta romano Virgílio contou as suas viagens por mar na epopeia chamada Eneida.",
+      "Depois de muitas aventuras chegou a Itália, e os romanos viram nele um antepassado da sua história."
+     ],
+     "q": "Que viagem da tua vida te levou a um lugar novo e inesperado?",
+     "c": "Faz uma mala imaginária para uma longa viagem e diz três coisas que levarias."
+    },
+    "pt_BR": {
+     "t": "Eneias, o caminhante",
+     "g": "Acompanhe o herói troiano cuja longa viagem Virgílio ligou às origens de Roma.",
+     "p": [
+      "Eneias era um príncipe troiano que deixou a cidade carregando o pai e levando o filho pequeno pela mão.",
+      "O poeta romano Virgílio contou as viagens dele pelo mar na epopeia chamada Eneida.",
+      "Depois de muitas aventuras ele chegou à Itália, e os romanos viram nele um ancestral da sua história."
+     ],
+     "q": "Qual viagem da sua vida levou você a um lugar novo e inesperado?",
+     "c": "Monte uma mala imaginária para uma longa viagem e diga três coisas que levaria."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Janus, the two-faced god",
+     "g": "Meet the Roman god of doors and beginnings who gave January its name.",
+     "p": [
+      "Janus had two faces, one looking back to the past and one looking forward to the future.",
+      "He watched over doors, gates and new starts, and temples to him opened in times of change.",
+      "The month of January is named after him, which is why the new year begins under his gaze."
+     ],
+     "q": "What new beginning are you looking forward to, big or small?",
+     "c": "Stand at a doorway, look back and forward like Janus, and name one thing for each side."
+    },
+    "de": {
+     "t": "Janus, der zweigesichtige Gott",
+     "g": "Lerne den römischen Gott der Türen und Anfänge kennen, der dem Januar seinen Namen gab.",
+     "p": [
+      "Janus hatte zwei Gesichter, eines blickte zurück in die Vergangenheit, das andere voraus in die Zukunft.",
+      "Er wachte über Türen, Tore und Neuanfänge, und seine Tempel standen in Zeiten des Wandels offen.",
+      "Der Monat Januar ist nach ihm benannt, darum beginnt das neue Jahr unter seinem Blick."
+     ],
+     "q": "Auf welchen Neuanfang freust du dich, groß oder klein?",
+     "c": "Stell dich in eine Tür, schau zurück und voraus wie Janus und nenne je eine Sache."
+    },
+    "es": {
+     "t": "Jano, el dios de dos caras",
+     "g": "Conoce al dios romano de las puertas y los comienzos que dio nombre a enero.",
+     "p": [
+      "Jano tenía dos caras, una miraba al pasado y otra al futuro.",
+      "Cuidaba puertas, entradas y nuevos comienzos, y sus templos se abrían en tiempos de cambio.",
+      "El mes de enero lleva su nombre, por eso el año nuevo empieza bajo su mirada."
+     ],
+     "q": "¿Qué nuevo comienzo esperas con ilusión, grande o pequeño?",
+     "c": "Ponte en una puerta, mira atrás y adelante como Jano y nombra una cosa de cada lado."
+    },
+    "fr": {
+     "t": "Janus, le dieu aux deux visages",
+     "g": "Rencontre le dieu romain des portes et des commencements qui a donné son nom à janvier.",
+     "p": [
+      "Janus avait deux visages, l'un tourné vers le passé et l'autre vers l'avenir.",
+      "Il veillait sur les portes, les passages et les nouveaux départs, et ses temples s'ouvraient en temps de changement.",
+      "Le mois de janvier porte son nom : l'année nouvelle commence donc sous son regard."
+     ],
+     "q": "Quel nouveau départ attends-tu avec impatience, grand ou petit ?",
+     "c": "Place-toi dans une porte, regarde derrière et devant comme Janus et nomme une chose de chaque côté."
+    },
+    "it": {
+     "t": "Giano, il dio dalle due facce",
+     "g": "Conosci il dio romano delle porte e degli inizi che diede il nome a gennaio.",
+     "p": [
+      "Giano aveva due facce, una rivolta al passato e una al futuro.",
+      "Vegliava su porte, passaggi e nuovi inizi, e i suoi templi si aprivano nei tempi di cambiamento.",
+      "Il mese di gennaio porta il suo nome, per questo l'anno nuovo comincia sotto il suo sguardo."
+     ],
+     "q": "Quale nuovo inizio aspetti con piacere, grande o piccolo?",
+     "c": "Mettiti su una porta, guarda indietro e avanti come Giano e nomina una cosa per lato."
+    },
+    "pt": {
+     "t": "Jano, o deus de duas faces",
+     "g": "Conhece o deus romano das portas e dos começos que deu nome a janeiro.",
+     "p": [
+      "Jano tinha duas faces, uma a olhar para o passado e outra para o futuro.",
+      "Guardava portas, entradas e novos começos, e os seus templos abriam-se em tempos de mudança.",
+      "O mês de janeiro tem o seu nome, por isso o ano novo começa sob o seu olhar."
+     ],
+     "q": "Que novo começo esperas com expectativa, grande ou pequeno?",
+     "c": "Põe-te à porta, olha para trás e para a frente como Jano e diz uma coisa de cada lado."
+    },
+    "pt_BR": {
+     "t": "Jano, o deus de duas faces",
+     "g": "Conheça o deus romano das portas e dos começos que deu nome a janeiro.",
+     "p": [
+      "Jano tinha duas faces, uma olhando para o passado e outra para o futuro.",
+      "Ele protegia portas, entradas e novos começos, e seus templos abriam em tempos de mudança.",
+      "O mês de janeiro leva o nome dele, por isso o ano novo começa sob seu olhar."
+     ],
+     "q": "Que novo começo você espera com ansiedade, grande ou pequeno?",
+     "c": "Fique numa porta, olhe para trás e para a frente como Jano e diga uma coisa de cada lado."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: Greece and Rome",
+     "g": "Play a playful recap of the gods, heroes and stories from the first month.",
+     "p": [
+      "You met the Olympians, heroes like Heracles, Theseus, Perseus and Odysseus, and tales of Midas, Arachne and Pegasus.",
+      "Rome borrowed Greek gods under new names and added its own tales, such as Romulus and Remus, Aeneas and Janus.",
+      "Many stories live on in our words and in the stars, from panic and echo to the constellation Pegasus."
+     ],
+     "q": "Which story from this month would you retell first, and to whom?",
+     "c": "Pick your favourite tale and tell it in five sentences, with one clever twist of your own."
+    },
+    "de": {
+     "t": "Rückblick: Griechenland und Rom",
+     "g": "Spiele eine lockere Wiederholung der Götter, Helden und Geschichten des ersten Monats.",
+     "p": [
+      "Du hast die Olympier getroffen, Helden wie Herakles, Theseus, Perseus und Odysseus und Sagen um Midas, Arachne und Pegasus.",
+      "Rom übernahm griechische Götter unter neuen Namen und ergänzte eigene Sagen wie Romulus und Remus, Äneas und Janus.",
+      "Viele Geschichten leben in unseren Wörtern und in den Sternen weiter, von Panik und Echo bis zum Sternbild Pegasus."
+     ],
+     "q": "Welche Geschichte dieses Monats würdest du zuerst weitererzählen, und wem?",
+     "c": "Wähle deine Lieblingssage und erzähle sie in fünf Sätzen, mit einer eigenen cleveren Wendung."
+    },
+    "es": {
+     "t": "Repaso: Grecia y Roma",
+     "g": "Juega a un repaso divertido de los dioses, héroes e historias del primer mes.",
+     "p": [
+      "Conociste a los olímpicos, héroes como Heracles, Teseo, Perseo y Odiseo, y relatos de Midas, Aracne y Pegaso.",
+      "Roma tomó dioses griegos con nombres nuevos y añadió relatos propios, como Rómulo y Remo, Eneas y Jano.",
+      "Muchas historias viven en nuestras palabras y en las estrellas, de pánico y eco a la constelación de Pegaso."
+     ],
+     "q": "¿Qué historia de este mes contarías primero y a quién?",
+     "c": "Elige tu relato favorito y cuéntalo en cinco frases, con un giro ingenioso tuyo."
+    },
+    "fr": {
+     "t": "Révision : Grèce et Rome",
+     "g": "Joue à un récapitulatif amusant des dieux, héros et histoires du premier mois.",
+     "p": [
+      "Tu as rencontré les Olympiens, des héros comme Héraclès, Thésée, Persée et Ulysse, et les récits de Midas, Arachné et Pégase.",
+      "Rome emprunta des dieux grecs sous de nouveaux noms et ajouta ses récits, comme Romulus et Remus, Énée et Janus.",
+      "Beaucoup d'histoires vivent dans nos mots et dans les étoiles, de panique et écho à la constellation de Pégase."
+     ],
+     "q": "Quelle histoire de ce mois raconterais-tu en premier, et à qui ?",
+     "c": "Choisis ton récit préféré et raconte-le en cinq phrases, avec un rebondissement astucieux de ton cru."
+    },
+    "it": {
+     "t": "Ripasso: Grecia e Roma",
+     "g": "Gioca a un ripasso divertente di dèi, eroi e storie del primo mese.",
+     "p": [
+      "Hai incontrato gli Olimpi, eroi come Eracle, Teseo, Perseo e Ulisse, e racconti su Mida, Aracne e Pegaso.",
+      "Roma prese dèi greci con nomi nuovi e aggiunse storie proprie, come Romolo e Remo, Enea e Giano.",
+      "Molte storie vivono nelle nostre parole e nelle stelle, da panico ed eco alla costellazione di Pegaso."
+     ],
+     "q": "Quale storia di questo mese racconteresti per prima, e a chi?",
+     "c": "Scegli il tuo racconto preferito e raccontalo in cinque frasi, con una tua svolta astuta."
+    },
+    "pt": {
+     "t": "Revisão: Grécia e Roma",
+     "g": "Joga uma revisão divertida dos deuses, heróis e histórias do primeiro mês.",
+     "p": [
+      "Conheceste os olímpicos, heróis como Héracles, Teseu, Perseu e Ulisses, e contos de Midas, Aracne e Pégaso.",
+      "Roma tomou deuses gregos com nomes novos e juntou histórias próprias, como Rómulo e Remo, Eneias e Jano.",
+      "Muitas histórias vivem nas nossas palavras e nas estrelas, de pânico e eco à constelação de Pégaso."
+     ],
+     "q": "Que história deste mês contarias primeiro, e a quem?",
+     "c": "Escolhe o teu conto preferido e conta-o em cinco frases, com uma reviravolta astuta tua."
+    },
+    "pt_BR": {
+     "t": "Revisão: Grécia e Roma",
+     "g": "Jogue uma revisão divertida dos deuses, heróis e histórias do primeiro mês.",
+     "p": [
+      "Você conheceu os olímpicos, heróis como Héracles, Teseu, Perseu e Ulisses, e contos de Midas, Aracne e Pégaso.",
+      "Roma tomou deuses gregos com nomes novos e juntou histórias próprias, como Rômulo e Remo, Eneias e Jano.",
+      "Muitas histórias vivem nas nossas palavras e nas estrelas, de pânico e eco à constelação de Pégaso."
+     ],
+     "q": "Qual história deste mês você contaria primeiro, e para quem?",
+     "c": "Escolha seu conto preferido e conte em cinco frases, com uma reviravolta esperta sua."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "gadgets",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Home screen organisation",
+     "g": "Folders, widgets and smart layouts that make your phone faster to use.",
+     "p": [
+      "Put your most-used apps on the first screen, within easy thumb reach.",
+      "Folders group similar apps, and widgets show live info without opening anything.",
+      "A tidy home screen saves seconds that add up to minutes every day."
+     ],
+     "q": "Which three apps deserve the best spot on your home screen?",
+     "c": "Move your top three apps to the bottom row and group the rest in one folder."
+    },
+    "de": {
+     "t": "Den Startbildschirm ordnen",
+     "g": "Ordner, Widgets und clevere Layouts machen dein Handy schneller bedienbar.",
+     "p": [
+      "Lege die meistgenutzten Apps auf die erste Seite, gut mit dem Daumen erreichbar.",
+      "Ordner gruppieren ähnliche Apps, Widgets zeigen Live-Infos ohne Öffnen.",
+      "Ein aufgeräumter Startbildschirm spart Sekunden, die sich täglich zu Minuten summieren."
+     ],
+     "q": "Welche drei Apps verdienen den besten Platz auf deinem Startbildschirm?",
+     "c": "Schiebe deine Top-3-Apps in die untere Reihe und sammle den Rest in einem Ordner."
+    },
+    "es": {
+     "t": "Organizar la pantalla de inicio",
+     "g": "Carpetas, widgets y diseños inteligentes para usar tu móvil más rápido.",
+     "p": [
+      "Pon las apps más usadas en la primera pantalla, al alcance del pulgar.",
+      "Las carpetas agrupan apps parecidas y los widgets muestran datos al instante sin abrir nada.",
+      "Una pantalla ordenada ahorra segundos que suman minutos cada día."
+     ],
+     "q": "¿Qué tres apps merecen el mejor sitio de tu pantalla de inicio?",
+     "c": "Pon tus tres apps principales en la fila inferior y agrupa el resto en una carpeta."
+    },
+    "fr": {
+     "t": "Organiser l'écran d'accueil",
+     "g": "Dossiers, widgets et dispositions malignes pour utiliser ton téléphone plus vite.",
+     "p": [
+      "Place les applis les plus utilisées sur le premier écran, à portée de pouce.",
+      "Les dossiers regroupent les applis proches et les widgets affichent l'info sans rien ouvrir.",
+      "Un écran rangé fait gagner des secondes qui se transforment en minutes chaque jour."
+     ],
+     "q": "Quelles trois applis méritent la meilleure place sur ton écran d'accueil ?",
+     "c": "Mets tes trois applis favorites sur la rangée du bas et range le reste dans un dossier."
+    },
+    "it": {
+     "t": "Organizzare la schermata iniziale",
+     "g": "Cartelle, widget e layout intelligenti per usare il telefono più in fretta.",
+     "p": [
+      "Metti le app più usate sulla prima schermata, a portata di pollice.",
+      "Le cartelle raggruppano app simili e i widget mostrano info in diretta senza aprire nulla.",
+      "Una schermata in ordine fa risparmiare secondi che diventano minuti ogni giorno."
+     ],
+     "q": "Quali tre app meritano il posto migliore nella tua schermata iniziale?",
+     "c": "Sposta le tre app principali nella riga in basso e raggruppa il resto in una cartella."
+    },
+    "pt": {
+     "t": "Organizar o ecrã inicial",
+     "g": "Pastas, widgets e disposições inteligentes para usar o telemóvel mais depressa.",
+     "p": [
+      "Põe as apps mais usadas no primeiro ecrã, ao alcance do polegar.",
+      "As pastas agrupam apps parecidas e os widgets mostram dados ao vivo sem abrir nada.",
+      "Um ecrã arrumado poupa segundos que somam minutos todos os dias."
+     ],
+     "q": "Que três apps merecem o melhor lugar do teu ecrã inicial?",
+     "c": "Põe as tuas três apps principais na linha de baixo e junta o resto numa pasta."
+    },
+    "pt_BR": {
+     "t": "Organizar a tela inicial",
+     "g": "Pastas, widgets e layouts inteligentes para usar o celular mais rápido.",
+     "p": [
+      "Coloque os apps mais usados na primeira tela, ao alcance do polegar.",
+      "As pastas agrupam apps parecidos e os widgets mostram dados ao vivo sem abrir nada.",
+      "Uma tela organizada poupa segundos que somam minutos todo dia."
+     ],
+     "q": "Quais três apps merecem o melhor lugar da sua tela inicial?",
+     "c": "Ponha seus três apps principais na linha de baixo e junte o resto numa pasta."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Notifications under control",
+     "g": "Choosing which apps may interrupt you and when.",
+     "p": [
+      "Notifications are alerts from apps; useful ones help, noisy ones steal your focus.",
+      "In settings you can allow, silence or block alerts for each app.",
+      "Focus or do-not-disturb modes pause alerts during work, meals and sleep."
+     ],
+     "q": "Which app interrupts you the most, and is it worth it?",
+     "c": "Turn off notifications for the two noisiest apps and see how the day feels."
+    },
+    "de": {
+     "t": "Benachrichtigungen im Griff",
+     "g": "Entscheide, welche Apps dich wann unterbrechen dürfen.",
+     "p": [
+      "Benachrichtigungen sind Hinweise von Apps; nützliche helfen, laute stehlen Fokus.",
+      "In den Einstellungen kannst du Hinweise je App erlauben, stummschalten oder sperren.",
+      "Fokus- oder Nicht-stören-Modi pausieren Hinweise bei Arbeit, Essen und Schlaf."
+     ],
+     "q": "Welche App unterbricht dich am meisten, und lohnt sich das?",
+     "c": "Schalte die Hinweise der zwei lautesten Apps aus und spüre, wie sich der Tag anfühlt."
+    },
+    "es": {
+     "t": "Notificaciones bajo control",
+     "g": "Elige qué apps pueden interrumpirte y cuándo.",
+     "p": [
+      "Las notificaciones son avisos de apps; las útiles ayudan y las pesadas roban concentración.",
+      "En ajustes puedes permitir, silenciar o bloquear los avisos de cada app.",
+      "Los modos de concentración o no molestar pausan avisos al trabajar, comer y dormir."
+     ],
+     "q": "¿Qué app te interrumpe más y merece la pena?",
+     "c": "Desactiva las notificaciones de las dos apps más pesadas y mira cómo va el día."
+    },
+    "fr": {
+     "t": "Maîtriser les notifications",
+     "g": "Choisis quelles applis peuvent t'interrompre, et quand.",
+     "p": [
+      "Les notifications sont des alertes d'applis ; les utiles aident, les bruyantes volent ta concentration.",
+      "Dans les réglages, tu peux autoriser, couper ou bloquer les alertes de chaque appli.",
+      "Les modes concentration ou ne pas déranger suspendent les alertes au travail, au repas, la nuit."
+     ],
+     "q": "Quelle appli t'interrompt le plus, et est-ce justifié ?",
+     "c": "Coupe les notifications des deux applis les plus bavardes et vois ta journée."
+    },
+    "it": {
+     "t": "Notifiche sotto controllo",
+     "g": "Scegli quali app possono interromperti e quando.",
+     "p": [
+      "Le notifiche sono avvisi delle app; quelle utili aiutano, quelle rumorose rubano concentrazione.",
+      "Nelle impostazioni puoi consentire, silenziare o bloccare gli avvisi di ogni app.",
+      "Le modalità concentrazione o non disturbare sospendono gli avvisi a lavoro, a tavola e di notte."
+     ],
+     "q": "Quale app ti interrompe di più, e ne vale la pena?",
+     "c": "Disattiva le notifiche delle due app più rumorose e guarda com'è la giornata."
+    },
+    "pt": {
+     "t": "Notificações sob controlo",
+     "g": "Escolhe que apps te podem interromper e quando.",
+     "p": [
+      "As notificações são avisos das apps; as úteis ajudam e as barulhentas roubam concentração.",
+      "Nas definições podes permitir, silenciar ou bloquear os avisos de cada app.",
+      "Os modos de concentração ou não incomodar pausam avisos no trabalho, nas refeições e a dormir."
+     ],
+     "q": "Que app mais te interrompe e vale a pena?",
+     "c": "Desativa as notificações das duas apps mais barulhentas e vê como corre o dia."
+    },
+    "pt_BR": {
+     "t": "Notificações sob controle",
+     "g": "Escolha quais apps podem te interromper e quando.",
+     "p": [
+      "As notificações são avisos dos apps; as úteis ajudam e as barulhentas roubam concentração.",
+      "Nas configurações você pode permitir, silenciar ou bloquear os avisos de cada app.",
+      "Os modos de foco ou não perturbe pausam avisos no trabalho, nas refeições e ao dormir."
+     ],
+     "q": "Qual app mais te interrompe e vale a pena?",
+     "c": "Desative as notificações dos dois apps mais barulhentos e veja como o dia fica."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Settings worth knowing",
+     "g": "Brightness, sounds, display size, language and other everyday settings.",
+     "p": [
+      "Display size and text size settings make reading easier without squinting.",
+      "Sound settings split ringtone, media and alarm volumes so nothing surprises you.",
+      "Language, time zone and auto-update settings keep everything correct on its own."
+     ],
+     "q": "Which setting did you change that made your phone feel more yours?",
+     "c": "Increase your text size one step if you ever squint, or lower it for more content."
+    },
+    "de": {
+     "t": "Einstellungen, die man kennen sollte",
+     "g": "Helligkeit, Töne, Anzeigegröße, Sprache und weitere Alltagseinstellungen.",
+     "p": [
+      "Anzeige- und Schriftgröße erleichtern das Lesen ohne Zusammenkneifen der Augen.",
+      "Toneinstellungen trennen Klingelton-, Medien- und Weckerlautstärke, damit nichts überrascht.",
+      "Sprache, Zeitzone und Auto-Updates halten alles von selbst korrekt."
+     ],
+     "q": "Welche Einstellung hat dein Handy für dich persönlicher gemacht?",
+     "c": "Vergrößere die Schrift eine Stufe, falls du blinzelst, oder verkleinere sie für mehr Inhalt."
+    },
+    "es": {
+     "t": "Ajustes que conviene conocer",
+     "g": "Brillo, sonidos, tamaño de pantalla, idioma y otros ajustes de cada día.",
+     "p": [
+      "Los ajustes de tamaño de pantalla y texto facilitan la lectura sin entrecerrar los ojos.",
+      "Los ajustes de sonido separan volumen de tono, multimedia y alarma para evitar sustos.",
+      "Idioma, zona horaria y actualización automática mantienen todo correcto solos."
+     ],
+     "q": "¿Qué ajuste cambiaste que hizo tu móvil más tuyo?",
+     "c": "Sube el tamaño del texto un nivel si entrecierras los ojos, o bájalo para ver más."
+    },
+    "fr": {
+     "t": "Réglages à connaître",
+     "g": "Luminosité, sons, taille d'affichage, langue et autres réglages du quotidien.",
+     "p": [
+      "Les réglages de taille d'affichage et de texte facilitent la lecture sans plisser les yeux.",
+      "Les réglages de son séparent sonnerie, médias et alarme pour éviter les surprises.",
+      "Langue, fuseau horaire et mises à jour automatiques gardent tout juste sans effort."
+     ],
+     "q": "Quel réglage as-tu changé qui a rendu ton téléphone plus à toi ?",
+     "c": "Augmente la taille du texte d'un cran si tu plisses les yeux, ou baisse-la pour voir plus."
+    },
+    "it": {
+     "t": "Impostazioni da conoscere",
+     "g": "Luminosità, suoni, dimensione dello schermo, lingua e altre impostazioni quotidiane.",
+     "p": [
+      "Le impostazioni di dimensione dello schermo e del testo facilitano la lettura senza strizzare gli occhi.",
+      "Le impostazioni audio separano volume di suoneria, media e sveglia, senza sorprese.",
+      "Lingua, fuso orario e aggiornamenti automatici mantengono tutto corretto da soli."
+     ],
+     "q": "Quale impostazione hai cambiato che ha reso il telefono più tuo?",
+     "c": "Aumenta il testo di un livello se strizzi gli occhi, o riducilo per vedere di più."
+    },
+    "pt": {
+     "t": "Definições que vale a pena conhecer",
+     "g": "Brilho, sons, tamanho do ecrã, idioma e outras definições do dia a dia.",
+     "p": [
+      "As definições de tamanho do ecrã e do texto facilitam a leitura sem apertar os olhos.",
+      "As definições de som separam volume de toque, multimédia e alarme, sem sustos.",
+      "Idioma, fuso horário e atualizações automáticas mantêm tudo certo sozinhos."
+     ],
+     "q": "Que definição mudaste que tornou o teu telemóvel mais teu?",
+     "c": "Aumenta o texto um nível se apertas os olhos, ou diminui-o para ver mais conteúdo."
+    },
+    "pt_BR": {
+     "t": "Configurações que vale conhecer",
+     "g": "Brilho, sons, tamanho da tela, idioma e outras configurações do dia a dia.",
+     "p": [
+      "As configurações de tamanho da tela e do texto facilitam a leitura sem apertar os olhos.",
+      "As configurações de som separam volume de toque, mídia e alarme, sem sustos.",
+      "Idioma, fuso horário e atualizações automáticas mantêm tudo certo sozinhos."
+     ],
+     "q": "Que configuração você mudou que deixou o celular mais a sua cara?",
+     "c": "Aumente o texto um nível se aperta os olhos, ou diminua para ver mais conteúdo."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gestures and shortcuts",
+     "g": "Swipes, long presses and quick toggles that save time every day.",
+     "p": [
+      "Swiping from the screen edge usually goes back, home or switches apps.",
+      "A long press on an icon or key often reveals hidden extra options.",
+      "Quick-settings toggles turn Wi-Fi, torch or silent mode on with one swipe."
+     ],
+     "q": "Which gesture saves you the most time on your phone?",
+     "c": "Learn one new gesture today and use it five times so it sticks."
+    },
+    "de": {
+     "t": "Gesten und Kurzbefehle",
+     "g": "Wischen, langes Drücken und Schnelleinstellungen sparen täglich Zeit.",
+     "p": [
+      "Wischen vom Bildschirmrand geht meist zurück, nach Hause oder wechselt Apps.",
+      "Langes Drücken auf Symbole oder Tasten zeigt oft versteckte Zusatzoptionen.",
+      "Schnelleinstellungen schalten WLAN, Taschenlampe oder Lautlos mit einem Wisch um."
+     ],
+     "q": "Welche Geste spart dir am Handy die meiste Zeit?",
+     "c": "Lerne heute eine neue Geste und nutze sie fünfmal, damit sie sitzt."
+    },
+    "es": {
+     "t": "Gestos y atajos",
+     "g": "Deslizamientos, pulsaciones largas y ajustes rápidos que ahorran tiempo cada día.",
+     "p": [
+      "Deslizar desde el borde suele servir para volver, ir al inicio o cambiar de app.",
+      "Una pulsación larga en un icono o tecla suele mostrar opciones ocultas.",
+      "Los ajustes rápidos activan wifi, linterna o silencio con un solo deslizamiento."
+     ],
+     "q": "¿Qué gesto te ahorra más tiempo en el móvil?",
+     "c": "Aprende hoy un gesto nuevo y úsalo cinco veces para que se te quede."
+    },
+    "fr": {
+     "t": "Gestes et raccourcis",
+     "g": "Balayages, appuis longs et réglages rapides qui font gagner du temps chaque jour.",
+     "p": [
+      "Balayer depuis le bord de l'écran sert souvent à revenir, aller à l'accueil ou changer d'appli.",
+      "Un appui long sur une icône ou une touche révèle souvent des options cachées.",
+      "Les réglages rapides activent wifi, lampe ou silence en un seul balayage."
+     ],
+     "q": "Quel geste te fait gagner le plus de temps sur ton téléphone ?",
+     "c": "Apprends un nouveau geste aujourd'hui et utilise-le cinq fois pour l'ancrer."
+    },
+    "it": {
+     "t": "Gesti e scorciatoie",
+     "g": "Scorrimenti, pressioni lunghe e impostazioni rapide che fanno risparmiare tempo ogni giorno.",
+     "p": [
+      "Scorrere dal bordo dello schermo di solito serve a tornare indietro, alla home o a cambiare app.",
+      "Una pressione lunga su icona o tasto spesso rivela opzioni extra nascoste.",
+      "Le impostazioni rapide attivano wifi, torcia o silenzioso con un solo scorrimento."
+     ],
+     "q": "Quale gesto ti fa risparmiare più tempo sul telefono?",
+     "c": "Impara oggi un gesto nuovo e usalo cinque volte perché ti resti in mente."
+    },
+    "pt": {
+     "t": "Gestos e atalhos",
+     "g": "Deslizamentos, toques longos e definições rápidas que poupam tempo todos os dias.",
+     "p": [
+      "Deslizar a partir da borda serve normalmente para voltar, ir ao início ou trocar de app.",
+      "Um toque longo num ícone ou tecla costuma revelar opções extra escondidas.",
+      "As definições rápidas ativam wifi, lanterna ou silêncio com um só deslize."
+     ],
+     "q": "Que gesto te poupa mais tempo no telemóvel?",
+     "c": "Aprende hoje um gesto novo e usa-o cinco vezes para ficar na memória."
+    },
+    "pt_BR": {
+     "t": "Gestos e atalhos",
+     "g": "Deslizes, toques longos e configurações rápidas que poupam tempo todo dia.",
+     "p": [
+      "Deslizar a partir da borda serve normalmente para voltar, ir ao início ou trocar de app.",
+      "Um toque longo num ícone ou tecla costuma revelar opções extras escondidas.",
+      "As configurações rápidas ativam wi-fi, lanterna ou silencioso com um só deslize."
+     ],
+     "q": "Qual gesto poupa mais tempo no seu celular?",
+     "c": "Aprenda hoje um gesto novo e use cinco vezes para fixar na memória."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wi-Fi basics",
+     "g": "How wireless internet works at home, at work and in cafés.",
+     "p": [
+      "A router turns your wired internet connection into radio waves around the building.",
+      "Your device joins the network with a name and password; strong signal means faster use.",
+      "Public Wi-Fi is convenient but open to snoops, so avoid sensitive logins on it."
+     ],
+     "q": "Where in your home is your Wi-Fi signal weakest?",
+     "c": "Walk around your home with a speed or signal check and find the weak spots."
+    },
+    "de": {
+     "t": "WLAN-Grundlagen",
+     "g": "Wie drahtloses Internet zu Hause, im Büro und im Café funktioniert.",
+     "p": [
+      "Ein Router verwandelt den Kabelanschluss in Funkwellen rund um das Gebäude.",
+      "Dein Gerät tritt mit Name und Passwort bei; starkes Signal bedeutet schnellere Nutzung.",
+      "Öffentliches WLAN ist bequem, aber offen für Mitleser, daher keine sensiblen Logins."
+     ],
+     "q": "Wo in deiner Wohnung ist das WLAN-Signal am schwächsten?",
+     "c": "Geh mit einem Speed- oder Signaltest durch die Wohnung und finde die Funklöcher."
+    },
+    "es": {
+     "t": "Lo básico del wifi",
+     "g": "Cómo funciona internet inalámbrico en casa, en el trabajo y en las cafeterías.",
+     "p": [
+      "Un router convierte tu conexión por cable en ondas de radio por todo el edificio.",
+      "Tu aparato entra con nombre y contraseña; más señal significa uso más rápido.",
+      "El wifi público es cómodo pero queda expuesto a curiosos: evita accesos delicados."
+     ],
+     "q": "¿En qué zona de tu casa es más débil la señal wifi?",
+     "c": "Recorre tu casa con una prueba de velocidad o señal y localiza las zonas flojas."
+    },
+    "fr": {
+     "t": "Les bases du wifi",
+     "g": "Comment fonctionne internet sans fil à la maison, au travail et dans les cafés.",
+     "p": [
+      "Un routeur transforme ta connexion filaire en ondes radio autour du bâtiment.",
+      "Ton appareil se connecte avec un nom et un mot de passe ; un bon signal accélère l'usage.",
+      "Le wifi public est pratique mais exposé aux curieux : évite les connexions sensibles."
+     ],
+     "q": "Où le signal wifi est-il le plus faible chez toi ?",
+     "c": "Parcours ta maison avec un test de débit ou de signal et repère les zones faibles."
+    },
+    "it": {
+     "t": "Le basi del wifi",
+     "g": "Come funziona internet senza fili a casa, al lavoro e nei bar.",
+     "p": [
+      "Un router trasforma la connessione via cavo in onde radio nell'edificio.",
+      "Il dispositivo si collega con nome e password; segnale forte significa uso più veloce.",
+      "Il wifi pubblico è comodo ma esposto a curiosi: evita accessi delicati."
+     ],
+     "q": "In quale punto di casa il segnale wifi è più debole?",
+     "c": "Gira per casa con un test di velocità o segnale e individua i punti deboli."
+    },
+    "pt": {
+     "t": "O básico do wifi",
+     "g": "Como funciona a internet sem fios em casa, no trabalho e nos cafés.",
+     "p": [
+      "Um router transforma a ligação por cabo em ondas de rádio pelo edifício.",
+      "O aparelho entra com nome e palavra-passe; sinal forte significa uso mais rápido.",
+      "O wifi público é cómodo mas exposto a curiosos: evita acessos sensíveis."
+     ],
+     "q": "Em que zona da tua casa o sinal wifi é mais fraco?",
+     "c": "Percorre a casa com um teste de velocidade ou sinal e localiza as zonas fracas."
+    },
+    "pt_BR": {
+     "t": "O básico do wi-fi",
+     "g": "Como funciona a internet sem fio em casa, no trabalho e nos cafés.",
+     "p": [
+      "Um roteador transforma a conexão por cabo em ondas de rádio pelo prédio.",
+      "O aparelho entra com nome e senha; sinal forte significa uso mais rápido.",
+      "O wi-fi público é prático mas exposto a curiosos: evite acessos sensíveis."
+     ],
+     "q": "Em que cômodo da sua casa o sinal de wi-fi é mais fraco?",
+     "c": "Percorra a casa com um teste de velocidade ou sinal e ache as zonas fracas."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mobile data",
+     "g": "How phones connect to the internet through cell towers and how to watch data use.",
+     "p": [
+      "Your phone talks by radio to the nearest cell tower, which links to the internet.",
+      "A data plan has an allowance; streaming video eats it far faster than text.",
+      "Phone settings show data use per app and let you set warnings or limits."
+     ],
+     "q": "Which app uses the most mobile data on your phone?",
+     "c": "Open your data usage screen and name the top three apps."
+    },
+    "de": {
+     "t": "Mobile Daten",
+     "g": "Wie Handys über Funkmasten ins Internet kommen und wie man den Verbrauch im Blick behält.",
+     "p": [
+      "Dein Handy funkt zum nächsten Mast, der mit dem Internet verbunden ist.",
+      "Ein Datentarif hat ein Volumen; Videostreaming verbraucht es weit schneller als Text.",
+      "Handy-Einstellungen zeigen den Verbrauch je App und erlauben Warnungen oder Limits."
+     ],
+     "q": "Welche App verbraucht auf deinem Handy die meisten mobilen Daten?",
+     "c": "Öffne die Datenverbrauchsanzeige und nenne die Top-3-Apps."
+    },
+    "es": {
+     "t": "Datos móviles",
+     "g": "Cómo se conectan los móviles a internet por torres y cómo vigilar el consumo.",
+     "p": [
+      "Tu móvil habla por radio con la torre más cercana, que conecta con internet.",
+      "Una tarifa de datos tiene un límite; el vídeo en streaming lo gasta mucho más que el texto.",
+      "Los ajustes muestran el consumo por app y permiten poner avisos o límites."
+     ],
+     "q": "¿Qué app gasta más datos móviles en tu teléfono?",
+     "c": "Abre la pantalla de consumo de datos y nombra las tres apps principales."
+    },
+    "fr": {
+     "t": "Les données mobiles",
+     "g": "Comment les téléphones se connectent à internet via les antennes et comment suivre la conso.",
+     "p": [
+      "Ton téléphone parle par radio à l'antenne la plus proche, reliée à internet.",
+      "Un forfait data a une enveloppe ; la vidéo en streaming la consomme bien plus vite que le texte.",
+      "Les réglages montrent la consommation par appli et permettent alertes ou limites."
+     ],
+     "q": "Quelle appli consomme le plus de données mobiles sur ton téléphone ?",
+     "c": "Ouvre l'écran de consommation de données et cite les trois premières applis."
+    },
+    "it": {
+     "t": "I dati mobili",
+     "g": "Come i telefoni si collegano a internet tramite le celle e come controllare i consumi.",
+     "p": [
+      "Il telefono parla via radio con la cella più vicina, collegata a internet.",
+      "Un piano dati ha un limite; il video in streaming lo consuma molto più del testo.",
+      "Le impostazioni mostrano il consumo per app e permettono avvisi o limiti."
+     ],
+     "q": "Quale app consuma più dati mobili sul tuo telefono?",
+     "c": "Apri la schermata del consumo dati e nomina le prime tre app."
+    },
+    "pt": {
+     "t": "Dados móveis",
+     "g": "Como os telemóveis se ligam à internet por torres e como vigiar o consumo.",
+     "p": [
+      "O telemóvel fala por rádio com a torre mais próxima, ligada à internet.",
+      "Um plano de dados tem limite; o vídeo em streaming gasta-o muito mais depressa que o texto.",
+      "As definições mostram o consumo por app e permitem avisos ou limites."
+     ],
+     "q": "Que app gasta mais dados móveis no teu telemóvel?",
+     "c": "Abre o ecrã de consumo de dados e nomeia as três apps principais."
+    },
+    "pt_BR": {
+     "t": "Dados móveis",
+     "g": "Como os celulares se conectam à internet por torres e como acompanhar o consumo.",
+     "p": [
+      "O celular fala por rádio com a torre mais próxima, ligada à internet.",
+      "Um plano de dados tem limite; o vídeo em streaming gasta muito mais rápido que o texto.",
+      "As configurações mostram o consumo por app e permitem avisos ou limites."
+     ],
+     "q": "Qual app gasta mais dados móveis no seu celular?",
+     "c": "Abra a tela de consumo de dados e cite os três principais apps."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bluetooth explained",
+     "g": "Short-range wireless for earbuds, speakers and watches, named after a Danish king.",
+     "p": [
+      "Bluetooth links nearby devices by radio, usually within about ten metres.",
+      "It is named after Harald Bluetooth, a Danish king who united tribes, as the tech unites devices.",
+      "Pairing means two devices agree once to trust each other; then they reconnect by themselves."
+     ],
+     "q": "Which of your devices connect through Bluetooth?",
+     "c": "Check your Bluetooth list and remove old devices you no longer use."
+    },
+    "de": {
+     "t": "Bluetooth erklärt",
+     "g": "Kurzstreckenfunk für Ohrhörer, Lautsprecher und Uhren, benannt nach einem dänischen König.",
+     "p": [
+      "Bluetooth verbindet nahe Geräte per Funk, meist auf etwa zehn Meter.",
+      "Es ist nach Harald Blauzahn benannt, einem dänischen König, der Stämme einte, wie die Technik Geräte.",
+      "Koppeln heißt, zwei Geräte vertrauen sich einmal; danach verbinden sie sich selbst."
+     ],
+     "q": "Welche deiner Geräte verbinden sich per Bluetooth?",
+     "c": "Sieh deine Bluetooth-Liste durch und entferne alte Geräte, die du nicht mehr nutzt."
+    },
+    "es": {
+     "t": "Bluetooth explicado",
+     "g": "Conexión inalámbrica de corto alcance para auriculares, altavoces y relojes, con nombre de rey danés.",
+     "p": [
+      "Bluetooth une dispositivos cercanos por radio, normalmente a unos diez metros.",
+      "Se llama así por Harald Diente Azul, rey danés que unió tribus, como la tecnología une aparatos.",
+      "Emparejar es que dos aparatos se acepten una vez; luego se reconectan solos."
+     ],
+     "q": "¿Cuáles de tus aparatos se conectan por Bluetooth?",
+     "c": "Revisa tu lista de Bluetooth y borra los aparatos viejos que ya no uses."
+    },
+    "fr": {
+     "t": "Le Bluetooth expliqué",
+     "g": "Sans-fil à courte portée pour écouteurs, enceintes et montres, nommé d'après un roi danois.",
+     "p": [
+      "Le Bluetooth relie des appareils proches par radio, en général sur une dizaine de mètres.",
+      "Il porte le nom de Harald à la dent bleue, roi danois qui unit des tribus, comme la techno unit les appareils.",
+      "Appairer, c'est que deux appareils se font confiance une fois ; ensuite ils se reconnectent seuls."
+     ],
+     "q": "Lesquels de tes appareils se connectent en Bluetooth ?",
+     "c": "Parcours ta liste Bluetooth et supprime les vieux appareils que tu n'utilises plus."
+    },
+    "it": {
+     "t": "Il Bluetooth spiegato",
+     "g": "Connessione senza fili a corto raggio per auricolari, casse e orologi, col nome di un re danese.",
+     "p": [
+      "Il Bluetooth collega dispositivi vicini via radio, di solito entro una decina di metri.",
+      "Prende il nome da Harald Dente Azzurro, re danese che unì le tribù, come la tecnologia unisce i dispositivi.",
+      "Associare significa che due dispositivi si fidano una volta; poi si ricollegano da soli."
+     ],
+     "q": "Quali dei tuoi dispositivi si collegano via Bluetooth?",
+     "c": "Controlla l'elenco Bluetooth e rimuovi i vecchi dispositivi che non usi più."
+    },
+    "pt": {
+     "t": "Bluetooth explicado",
+     "g": "Ligação sem fios de curto alcance para auriculares, colunas e relógios, com nome de rei dinamarquês.",
+     "p": [
+      "O Bluetooth liga aparelhos próximos por rádio, normalmente a uns dez metros.",
+      "Chama-se assim por Harald Dente Azul, rei dinamarquês que uniu tribos, como a tecnologia une aparelhos.",
+      "Emparelhar é dois aparelhos confiarem um no outro uma vez; depois ligam-se sozinhos."
+     ],
+     "q": "Quais dos teus aparelhos se ligam por Bluetooth?",
+     "c": "Vê a lista de Bluetooth e remove os aparelhos velhos que já não usas."
+    },
+    "pt_BR": {
+     "t": "Bluetooth explicado",
+     "g": "Conexão sem fio de curto alcance para fones, caixas de som e relógios, com nome de rei dinamarquês.",
+     "p": [
+      "O Bluetooth liga aparelhos próximos por rádio, normalmente a uns dez metros.",
+      "Leva o nome de Harald Dente Azul, rei dinamarquês que uniu tribos, como a tecnologia une aparelhos.",
+      "Parear é dois aparelhos confiarem um no outro uma vez; depois se conectam sozinhos."
+     ],
+     "q": "Quais dos seus aparelhos se conectam por Bluetooth?",
+     "c": "Veja a lista de Bluetooth e remova os aparelhos velhos que não usa mais."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "GPS and location",
+     "g": "How satellites help your phone find where you are.",
+     "p": [
+      "Satellites orbiting Earth send timed signals; your phone compares them to work out its position.",
+      "Phones also use Wi-Fi and cell towers to find you faster, especially indoors.",
+      "Apps ask permission for location; choose while using the app unless always is needed."
+     ],
+     "q": "Which app really needs your location, and which one does not?",
+     "c": "Review location permissions in settings and switch off access for one app that does not need it."
+    },
+    "de": {
+     "t": "GPS und Standort",
+     "g": "Wie Satelliten deinem Handy helfen, zu wissen, wo du bist.",
+     "p": [
+      "Satelliten im Orbit senden Zeitsignale; dein Handy vergleicht sie und berechnet die Position.",
+      "Handys nutzen auch WLAN und Funkmasten, um dich schneller zu finden, besonders drinnen.",
+      "Apps fragen nach dem Standort; wähle meist nur während der Nutzung, nicht immer."
+     ],
+     "q": "Welche App braucht wirklich deinen Standort, und welche nicht?",
+     "c": "Prüfe in den Einstellungen die Standortrechte und sperre sie bei einer App, die sie nicht braucht."
+    },
+    "es": {
+     "t": "GPS y ubicación",
+     "g": "Cómo los satélites ayudan a tu móvil a saber dónde estás.",
+     "p": [
+      "Satélites en órbita envían señales con la hora; tu móvil las compara y calcula su posición.",
+      "Los móviles usan también wifi y torres para ubicarte antes, sobre todo en interiores.",
+      "Las apps piden permiso de ubicación; elige solo mientras se usa, salvo que haga falta siempre."
+     ],
+     "q": "¿Qué app necesita de verdad tu ubicación y cuál no?",
+     "c": "Revisa los permisos de ubicación y quita el acceso a una app que no lo necesite."
+    },
+    "fr": {
+     "t": "GPS et localisation",
+     "g": "Comment les satellites aident ton téléphone à savoir où tu es.",
+     "p": [
+      "Des satellites en orbite envoient des signaux horodatés ; ton téléphone les compare et calcule sa position.",
+      "Les téléphones utilisent aussi wifi et antennes pour te situer plus vite, surtout à l'intérieur.",
+      "Les applis demandent l'accès à la position ; choisis pendant l'utilisation, sauf besoin permanent."
+     ],
+     "q": "Quelle appli a vraiment besoin de ta position, et laquelle non ?",
+     "c": "Passe en revue les autorisations de localisation et retire l'accès à une appli qui n'en a pas besoin."
+    },
+    "it": {
+     "t": "GPS e posizione",
+     "g": "Come i satelliti aiutano il telefono a sapere dove ti trovi.",
+     "p": [
+      "Satelliti in orbita inviano segnali con l'ora; il telefono li confronta e calcola la posizione.",
+      "I telefoni usano anche wifi e celle per trovarti prima, soprattutto al chiuso.",
+      "Le app chiedono il permesso di posizione; scegli solo durante l'uso, salvo necessità."
+     ],
+     "q": "Quale app ha davvero bisogno della tua posizione e quale no?",
+     "c": "Controlla i permessi di posizione e togli l'accesso a un'app che non ne ha bisogno."
+    },
+    "pt": {
+     "t": "GPS e localização",
+     "g": "Como os satélites ajudam o telemóvel a saber onde estás.",
+     "p": [
+      "Satélites em órbita enviam sinais com a hora; o telemóvel compara-os e calcula a posição.",
+      "Os telemóveis usam também wifi e torres para te localizar mais depressa, sobretudo dentro de casa.",
+      "As apps pedem permissão de localização; escolhe só durante o uso, salvo necessidade."
+     ],
+     "q": "Que app precisa mesmo da tua localização e qual não precisa?",
+     "c": "Revê as permissões de localização e retira o acesso a uma app que não precise."
+    },
+    "pt_BR": {
+     "t": "GPS e localização",
+     "g": "Como os satélites ajudam o celular a saber onde você está.",
+     "p": [
+      "Satélites em órbita enviam sinais com a hora; o celular os compara e calcula a posição.",
+      "Os celulares usam também wi-fi e torres para te localizar mais rápido, sobretudo em ambientes fechados.",
+      "Os apps pedem permissão de localização; escolha só durante o uso, salvo necessidade."
+     ],
+     "q": "Qual app precisa mesmo da sua localização e qual não precisa?",
+     "c": "Reveja as permissões de localização e tire o acesso de um app que não precise."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "NFC and tap to pay",
+     "g": "Near field communication lets phones talk over a few centimetres for payments and pairing.",
+     "p": [
+      "NFC is a very short-range radio link, working only within a few centimetres.",
+      "It powers tap-to-pay, transit passes, door keys and quick pairing with gadgets.",
+      "The short range is a safety feature: the phone must be right next to the reader."
+     ],
+     "q": "Where could tapping instead of typing or swiping save you time?",
+     "c": "Find the NFC setting on your phone, if it has one, and check it is on."
+    },
+    "de": {
+     "t": "NFC und kontaktloses Bezahlen",
+     "g": "Near Field Communication lässt Handys über wenige Zentimeter für Zahlung und Kopplung sprechen.",
+     "p": [
+      "NFC ist eine Funkverbindung mit sehr kurzer Reichweite von wenigen Zentimetern.",
+      "Sie ermöglicht kontaktloses Bezahlen, Fahrkarten, Türschlüssel und schnelles Koppeln.",
+      "Die kurze Reichweite schützt: das Handy muss direkt am Lesegerät sein."
+     ],
+     "q": "Wo könnte Tippen statt Eingeben oder Wischen dir Zeit sparen?",
+     "c": "Finde die NFC-Einstellung deines Handys, falls vorhanden, und prüfe, ob sie an ist."
+    },
+    "es": {
+     "t": "NFC y pago con el móvil",
+     "g": "La comunicación de campo cercano permite hablar a pocos centímetros para pagar y emparejar.",
+     "p": [
+      "NFC es un enlace de radio de muy corto alcance, solo a unos centímetros.",
+      "Permite pagar acercando el móvil, billetes de transporte, llaves de puerta y emparejar rápido.",
+      "El corto alcance es una protección: el móvil debe estar justo junto al lector."
+     ],
+     "q": "¿Dónde te ahorraría tiempo acercar el móvil en vez de teclear o deslizar?",
+     "c": "Busca el ajuste NFC de tu móvil, si lo tiene, y comprueba que esté activado."
+    },
+    "fr": {
+     "t": "NFC et paiement sans contact",
+     "g": "La communication en champ proche permet aux téléphones de dialoguer à quelques centimètres.",
+     "p": [
+      "Le NFC est une liaison radio à très courte portée, de quelques centimètres seulement.",
+      "Il sert au paiement sans contact, aux titres de transport, aux clés de porte et à l'appairage rapide.",
+      "La courte portée protège : le téléphone doit être tout contre le lecteur."
+     ],
+     "q": "Où approcher le téléphone te ferait-il gagner du temps plutôt que taper ou balayer ?",
+     "c": "Trouve le réglage NFC de ton téléphone, s'il en a un, et vérifie qu'il est activé."
+    },
+    "it": {
+     "t": "NFC e pagamento con il telefono",
+     "g": "La comunicazione a campo vicino fa dialogare i telefoni a pochi centimetri.",
+     "p": [
+      "L'NFC è un collegamento radio a cortissimo raggio, solo pochi centimetri.",
+      "Serve per pagare, biglietti del trasporto, chiavi di porte e associazione rapida.",
+      "Il corto raggio protegge: il telefono deve stare proprio accanto al lettore."
+     ],
+     "q": "Dove avvicinare il telefono ti farebbe risparmiare tempo rispetto a digitare o scorrere?",
+     "c": "Trova l'impostazione NFC del telefono, se c'è, e controlla che sia attiva."
+    },
+    "pt": {
+     "t": "NFC e pagamento por aproximação",
+     "g": "A comunicação de campo próximo deixa os telemóveis falar a poucos centímetros.",
+     "p": [
+      "O NFC é uma ligação de rádio de curtíssimo alcance, só a uns centímetros.",
+      "Serve para pagar, bilhetes de transporte, chaves de porta e emparelhar depressa.",
+      "O curto alcance protege: o telemóvel tem de estar mesmo junto ao leitor."
+     ],
+     "q": "Onde aproximar o telemóvel te pouparia tempo em vez de digitar ou deslizar?",
+     "c": "Encontra a definição NFC do telemóvel, se existir, e vê se está ativa."
+    },
+    "pt_BR": {
+     "t": "NFC e pagamento por aproximação",
+     "g": "A comunicação por campo próximo deixa os celulares conversar a poucos centímetros.",
+     "p": [
+      "O NFC é uma ligação de rádio de curtíssimo alcance, só a uns centímetros.",
+      "Serve para pagar, bilhetes de transporte, chaves de porta e parear rápido.",
+      "O curto alcance protege: o celular precisa estar bem junto do leitor."
+     ],
+     "q": "Onde aproximar o celular pouparia tempo em vez de digitar ou deslizar?",
+     "c": "Ache a configuração NFC do celular, se existir, e veja se está ativa."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: phone fundamentals",
+     "g": "A light recap of the first month: history, parts, settings and connections.",
+     "p": [
+      "History: telephone, transistor, first mobile call and the smartphone era.",
+      "Parts: processor, RAM, storage, battery, screen, cameras and sensors.",
+      "Connections: Wi-Fi, mobile data, Bluetooth, GPS and NFC, each with its own job."
+     ],
+     "q": "Which topic from this month was your favourite or most surprising?",
+     "c": "Pick one fact from this month and teach it to a friend in two sentences."
+    },
+    "de": {
+     "t": "Rückblick: Handy-Grundlagen",
+     "g": "Eine lockere Wiederholung des ersten Monats: Geschichte, Teile, Einstellungen und Verbindungen.",
+     "p": [
+      "Geschichte: Telefon, Transistor, erster Mobilanruf und die Smartphone-Ära.",
+      "Teile: Prozessor, RAM, Speicher, Akku, Bildschirm, Kameras und Sensoren.",
+      "Verbindungen: WLAN, mobile Daten, Bluetooth, GPS und NFC, jede mit eigener Aufgabe."
+     ],
+     "q": "Welches Thema dieses Monats war dein liebstes oder überraschendstes?",
+     "c": "Such dir einen Fakt aus und erkläre ihn einem Freund in zwei Sätzen."
+    },
+    "es": {
+     "t": "Repaso: fundamentos del móvil",
+     "g": "Un repaso ligero del primer mes: historia, piezas, ajustes y conexiones.",
+     "p": [
+      "Historia: teléfono, transistor, primera llamada móvil y la era del smartphone.",
+      "Piezas: procesador, RAM, almacenamiento, batería, pantalla, cámaras y sensores.",
+      "Conexiones: wifi, datos móviles, Bluetooth, GPS y NFC, cada una con su tarea."
+     ],
+     "q": "¿Qué tema de este mes fue tu favorito o más sorprendente?",
+     "c": "Elige un dato de este mes y explícaselo a un amigo en dos frases."
+    },
+    "fr": {
+     "t": "Révision : les bases du téléphone",
+     "g": "Un récapitulatif léger du premier mois : histoire, pièces, réglages et connexions.",
+     "p": [
+      "Histoire : téléphone, transistor, premier appel mobile et ère du smartphone.",
+      "Pièces : processeur, RAM, stockage, batterie, écran, caméras et capteurs.",
+      "Connexions : wifi, données mobiles, Bluetooth, GPS et NFC, chacune avec son rôle."
+     ],
+     "q": "Quel sujet de ce mois t'a le plus plu ou surpris ?",
+     "c": "Choisis un fait de ce mois et explique-le à un ami en deux phrases."
+    },
+    "it": {
+     "t": "Ripasso: le basi del telefono",
+     "g": "Un ripasso leggero del primo mese: storia, componenti, impostazioni e connessioni.",
+     "p": [
+      "Storia: telefono, transistor, prima chiamata mobile ed era dello smartphone.",
+      "Componenti: processore, RAM, archiviazione, batteria, schermo, fotocamere e sensori.",
+      "Connessioni: wifi, dati mobili, Bluetooth, GPS e NFC, ognuna con il suo compito."
+     ],
+     "q": "Quale argomento di questo mese ti è piaciuto o ti ha sorpreso di più?",
+     "c": "Scegli un fatto di questo mese e spiegalo a un amico in due frasi."
+    },
+    "pt": {
+     "t": "Revisão: o básico do telemóvel",
+     "g": "Uma revisão leve do primeiro mês: história, peças, definições e ligações.",
+     "p": [
+      "História: telefone, transístor, primeira chamada móvel e a era do smartphone.",
+      "Peças: processador, RAM, armazenamento, bateria, ecrã, câmaras e sensores.",
+      "Ligações: wifi, dados móveis, Bluetooth, GPS e NFC, cada uma com a sua tarefa."
+     ],
+     "q": "Que tema deste mês foi o teu preferido ou o mais surpreendente?",
+     "c": "Escolhe um facto deste mês e explica-o a um amigo em duas frases."
+    },
+    "pt_BR": {
+     "t": "Revisão: o básico do celular",
+     "g": "Uma revisão leve do primeiro mês: história, peças, configurações e conexões.",
+     "p": [
+      "História: telefone, transistor, primeira chamada de celular e a era do smartphone.",
+      "Peças: processador, RAM, armazenamento, bateria, tela, câmeras e sensores.",
+      "Conexões: wi-fi, dados móveis, Bluetooth, GPS e NFC, cada uma com sua tarefa."
+     ],
+     "q": "Qual tema deste mês foi o seu favorito ou o mais surpreendente?",
+     "c": "Escolha um fato deste mês e explique para um amigo em duas frases."
+    }
+   }
+  }
+ ]
+}

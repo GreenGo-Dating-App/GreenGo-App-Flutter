@@ -1,0 +1,835 @@
+{
+ "topic": "mythology",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ancient Egyptian myths",
+     "g": "Explore the Nile, the sun and a rich family of gods with animal features.",
+     "p": [
+      "Ancient Egyptians lived along the Nile and told stories to explain the river, the sun and the cycle of the seasons.",
+      "Their gods often had animal heads, such as the falcon, the ibis or the cat, each showing a quality.",
+      "Temples, paintings and papyri kept these stories alive for thousands of years."
+     ],
+     "q": "What do you think a river means to the people living beside it?",
+     "c": "Draw a god with an animal head and name one quality it would represent."
+    },
+    "de": {
+     "t": "Mythen des alten Ägypten",
+     "g": "Erkunde den Nil, die Sonne und eine bunte Götterfamilie mit Tiermerkmalen.",
+     "p": [
+      "Die alten Ägypter lebten am Nil und erzählten Geschichten über den Fluss, die Sonne und den Kreislauf der Jahreszeiten.",
+      "Ihre Götter hatten oft Tierköpfe, etwa von Falke, Ibis oder Katze, und jedes zeigte eine Eigenschaft.",
+      "Tempel, Wandbilder und Papyri bewahrten diese Geschichten Jahrtausende lang."
+     ],
+     "q": "Was bedeutet ein Fluss wohl für die Menschen, die an ihm leben?",
+     "c": "Zeichne einen Gott mit Tierkopf und nenne eine Eigenschaft, die er verkörpert."
+    },
+    "es": {
+     "t": "Mitos del Antiguo Egipto",
+     "g": "Explora el Nilo, el sol y una rica familia de dioses con rasgos animales.",
+     "p": [
+      "Los antiguos egipcios vivían junto al Nilo y contaban historias para explicar el río, el sol y el ciclo de las estaciones.",
+      "Sus dioses solían tener cabeza de animal, como halcón, ibis o gato, y cada uno mostraba una cualidad.",
+      "Templos, pinturas y papiros mantuvieron vivas estas historias durante miles de años."
+     ],
+     "q": "¿Qué crees que significa un río para la gente que vive a su lado?",
+     "c": "Dibuja un dios con cabeza de animal y nombra una cualidad que representaría."
+    },
+    "fr": {
+     "t": "Mythes de l'Égypte ancienne",
+     "g": "Explore le Nil, le soleil et une riche famille de dieux aux traits d'animaux.",
+     "p": [
+      "Les anciens Égyptiens vivaient le long du Nil et racontaient des histoires pour expliquer le fleuve, le soleil et le cycle des saisons.",
+      "Leurs dieux avaient souvent une tête d'animal, faucon, ibis ou chat, chacun symbolisant une qualité.",
+      "Temples, peintures et papyrus ont gardé ces récits vivants pendant des milliers d'années."
+     ],
+     "q": "Que représente selon toi un fleuve pour ceux qui vivent à ses côtés ?",
+     "c": "Dessine un dieu à tête d'animal et nomme une qualité qu'il représenterait."
+    },
+    "it": {
+     "t": "Miti dell'antico Egitto",
+     "g": "Esplora il Nilo, il sole e una ricca famiglia di dèi dai tratti animali.",
+     "p": [
+      "Gli antichi Egizi vivevano lungo il Nilo e raccontavano storie per spiegare il fiume, il sole e il ciclo delle stagioni.",
+      "I loro dèi avevano spesso testa di animale, come falco, ibis o gatto, e ognuno mostrava una qualità.",
+      "Templi, dipinti e papiri hanno tenuto vive queste storie per migliaia di anni."
+     ],
+     "q": "Cosa pensi significhi un fiume per chi vive sulle sue rive?",
+     "c": "Disegna un dio con testa di animale e nomina una qualità che rappresenterebbe."
+    },
+    "pt": {
+     "t": "Mitos do Antigo Egito",
+     "g": "Explora o Nilo, o sol e uma rica família de deuses com traços de animais.",
+     "p": [
+      "Os antigos egípcios viviam junto ao Nilo e contavam histórias para explicar o rio, o sol e o ciclo das estações.",
+      "Os seus deuses tinham muitas vezes cabeça de animal, como falcão, íbis ou gato, e cada um mostrava uma qualidade.",
+      "Templos, pinturas e papiros mantiveram estas histórias vivas durante milhares de anos."
+     ],
+     "q": "O que achas que um rio significa para quem vive junto dele?",
+     "c": "Desenha um deus com cabeça de animal e diz uma qualidade que representaria."
+    },
+    "pt_BR": {
+     "t": "Mitos do Antigo Egito",
+     "g": "Explore o Nilo, o sol e uma rica família de deuses com traços de animais.",
+     "p": [
+      "Os antigos egípcios viviam junto ao Nilo e contavam histórias para explicar o rio, o sol e o ciclo das estações.",
+      "Os deuses deles tinham muitas vezes cabeça de animal, como falcão, íbis ou gato, e cada um mostrava uma qualidade.",
+      "Templos, pinturas e papiros mantiveram essas histórias vivas por milhares de anos."
+     ],
+     "q": "O que você acha que um rio significa para quem vive ao lado dele?",
+     "c": "Desenhe um deus com cabeça de animal e diga uma qualidade que ele representaria."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ra and the sun boat",
+     "g": "Watch the sun god sail across the sky by day and through the hidden realm by night.",
+     "p": [
+      "Ra was the Egyptian sun god, shown with a falcon head and a sun disc on top.",
+      "Every day he sailed across the sky in a boat, bringing light and warmth to the land.",
+      "At night the boat travelled through the hidden Duat, and each dawn the sun rose again."
+     ],
+     "q": "Do you like watching sunrises or sunsets more? Why?",
+     "c": "Watch the sky at sunrise or sunset today and describe one colour like a poet."
+    },
+    "de": {
+     "t": "Ra und die Sonnenbarke",
+     "g": "Sieh den Sonnengott tagsüber über den Himmel und nachts durch das verborgene Reich fahren.",
+     "p": [
+      "Ra war der ägyptische Sonnengott, dargestellt mit Falkenkopf und einer Sonnenscheibe darüber.",
+      "Jeden Tag fuhr er in einer Barke über den Himmel und brachte dem Land Licht und Wärme.",
+      "Nachts durchquerte die Barke die verborgene Duat, und jeden Morgen ging die Sonne neu auf."
+     ],
+     "q": "Magst du Sonnenaufgänge oder Sonnenuntergänge lieber? Warum?",
+     "c": "Schau heute den Himmel bei Sonnenauf- oder -untergang an und beschreibe eine Farbe wie ein Dichter."
+    },
+    "es": {
+     "t": "Ra y la barca solar",
+     "g": "Mira al dios del sol navegar por el cielo de día y por el reino oculto de noche.",
+     "p": [
+      "Ra era el dios solar egipcio, representado con cabeza de halcón y un disco solar encima.",
+      "Cada día navegaba por el cielo en una barca y llevaba luz y calor a la tierra.",
+      "De noche la barca recorría la Duat oculta, y cada amanecer el sol volvía a salir."
+     ],
+     "q": "¿Qué te gusta más, ver amaneceres o atardeceres? ¿Por qué?",
+     "c": "Mira hoy el cielo al amanecer o al atardecer y describe un color como un poeta."
+    },
+    "fr": {
+     "t": "Rê et la barque solaire",
+     "g": "Regarde le dieu-soleil naviguer dans le ciel le jour et dans le royaume caché la nuit.",
+     "p": [
+      "Rê était le dieu soleil égyptien, représenté avec une tête de faucon surmontée d'un disque solaire.",
+      "Chaque jour, il traversait le ciel en barque, apportant lumière et chaleur au pays.",
+      "La nuit, la barque parcourait la Douât cachée, et chaque aube le soleil se levait de nouveau."
+     ],
+     "q": "Préfères-tu les levers ou les couchers de soleil ? Pourquoi ?",
+     "c": "Observe le ciel au lever ou au coucher du soleil et décris une couleur comme un poète."
+    },
+    "it": {
+     "t": "Ra e la barca solare",
+     "g": "Guarda il dio del sole navigare nel cielo di giorno e nel regno nascosto di notte.",
+     "p": [
+      "Ra era il dio solare egizio, raffigurato con testa di falco e un disco solare sopra.",
+      "Ogni giorno navigava nel cielo su una barca, portando luce e calore alla terra.",
+      "Di notte la barca attraversava la Duat nascosta, e a ogni alba il sole risorgeva."
+     ],
+     "q": "Preferisci le albe o i tramonti? Perché?",
+     "c": "Osserva oggi il cielo all'alba o al tramonto e descrivi un colore come un poeta."
+    },
+    "pt": {
+     "t": "Rá e a barca solar",
+     "g": "Vê o deus do sol navegar pelo céu de dia e pelo reino oculto de noite.",
+     "p": [
+      "Rá era o deus solar egípcio, representado com cabeça de falcão e um disco solar por cima.",
+      "Todos os dias navegava pelo céu numa barca, levando luz e calor à terra.",
+      "De noite a barca percorria a Duat oculta, e a cada amanhecer o sol voltava a nascer."
+     ],
+     "q": "Preferes ver nasceres ou pores do sol? Porquê?",
+     "c": "Observa hoje o céu ao nascer ou pôr do sol e descreve uma cor como um poeta."
+    },
+    "pt_BR": {
+     "t": "Rá e a barca solar",
+     "g": "Veja o deus do sol navegar pelo céu de dia e pelo reino oculto à noite.",
+     "p": [
+      "Rá era o deus solar egípcio, representado com cabeça de falcão e um disco solar em cima.",
+      "Todos os dias ele navegava pelo céu numa barca, levando luz e calor à terra.",
+      "À noite a barca percorria a Duat oculta, e a cada amanhecer o sol nascia de novo."
+     ],
+     "q": "Você prefere ver nascer ou pôr do sol? Por quê?",
+     "c": "Observe hoje o céu no nascer ou pôr do sol e descreva uma cor como um poeta."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Isis the clever",
+     "g": "Learn how Isis discovered Ra's secret name and became the greatest of magicians.",
+     "p": [
+      "Isis was a goddess of magic, motherhood and healing, loved across Egypt for her kindness.",
+      "The story says she gained magical power by learning Ra's secret name, using patience and cleverness.",
+      "She used her power to protect and heal, and later temples to Isis were honoured far beyond Egypt."
+     ],
+     "q": "Which would you rather have: great knowledge or great power? Why?",
+     "c": "Choose a secret name for yourself and explain what it says about you."
+    },
+    "de": {
+     "t": "Isis, die Kluge",
+     "g": "Erfahre, wie Isis Ras geheimen Namen entdeckte und zur größten Zauberin wurde.",
+     "p": [
+      "Isis war eine Göttin der Magie, Mutterschaft und Heilung, in ganz Ägypten wegen ihrer Güte geliebt.",
+      "Die Sage erzählt, sie erlangte magische Kraft, indem sie mit Geduld und Klugheit Ras geheimen Namen erfuhr.",
+      "Sie nutzte ihre Kraft zum Schützen und Heilen, und Isis-Tempel wurden weit über Ägypten hinaus verehrt."
+     ],
+     "q": "Was hättest du lieber: großes Wissen oder große Macht? Warum?",
+     "c": "Wähle einen geheimen Namen für dich und erkläre, was er über dich verrät."
+    },
+    "es": {
+     "t": "Isis la ingeniosa",
+     "g": "Descubre cómo Isis averiguó el nombre secreto de Ra y se hizo la mayor de las magas.",
+     "p": [
+      "Isis era una diosa de la magia, la maternidad y la curación, querida en todo Egipto por su bondad.",
+      "El relato dice que ganó poder mágico al conocer el nombre secreto de Ra, con paciencia y astucia.",
+      "Usó su poder para proteger y sanar, y sus templos fueron honrados mucho más allá de Egipto."
+     ],
+     "q": "¿Qué preferirías: gran conocimiento o gran poder? ¿Por qué?",
+     "c": "Elige un nombre secreto para ti y explica qué dice de ti."
+    },
+    "fr": {
+     "t": "Isis l'ingénieuse",
+     "g": "Découvre comment Isis apprit le nom secret de Rê et devint la plus grande des magiciennes.",
+     "p": [
+      "Isis était une déesse de la magie, de la maternité et de la guérison, aimée dans toute l'Égypte pour sa bonté.",
+      "Le récit dit qu'elle gagna un pouvoir magique en apprenant le nom secret de Rê, avec patience et ruse.",
+      "Elle usa de son pouvoir pour protéger et soigner, et ses temples furent honorés bien au-delà de l'Égypte."
+     ],
+     "q": "Que préférerais-tu : un grand savoir ou un grand pouvoir ? Pourquoi ?",
+     "c": "Choisis un nom secret pour toi et explique ce qu'il dit de toi."
+    },
+    "it": {
+     "t": "Iside l'ingegnosa",
+     "g": "Scopri come Iside apprese il nome segreto di Ra e divenne la più grande delle maghe.",
+     "p": [
+      "Iside era una dea della magia, della maternità e della guarigione, amata in tutto l'Egitto per la sua bontà.",
+      "Il racconto dice che ottenne potere magico scoprendo il nome segreto di Ra, con pazienza e astuzia.",
+      "Usò il potere per proteggere e guarire, e i suoi templi furono onorati ben oltre l'Egitto."
+     ],
+     "q": "Cosa preferiresti: grande conoscenza o grande potere? Perché?",
+     "c": "Scegli un nome segreto per te e spiega cosa dice di te."
+    },
+    "pt": {
+     "t": "Ísis, a engenhosa",
+     "g": "Descobre como Ísis soube o nome secreto de Rá e se tornou a maior das magas.",
+     "p": [
+      "Ísis era uma deusa da magia, da maternidade e da cura, amada em todo o Egito pela sua bondade.",
+      "O relato diz que ganhou poder mágico ao conhecer o nome secreto de Rá, com paciência e astúcia.",
+      "Usou o poder para proteger e curar, e os seus templos foram honrados muito para além do Egito."
+     ],
+     "q": "O que preferias: grande saber ou grande poder? Porquê?",
+     "c": "Escolhe um nome secreto para ti e explica o que diz sobre ti."
+    },
+    "pt_BR": {
+     "t": "Ísis, a engenhosa",
+     "g": "Descubra como Ísis soube o nome secreto de Rá e virou a maior das magas.",
+     "p": [
+      "Ísis era uma deusa da magia, da maternidade e da cura, amada em todo o Egito pela sua bondade.",
+      "O relato diz que ela ganhou poder mágico ao conhecer o nome secreto de Rá, com paciência e astúcia.",
+      "Ela usou o poder para proteger e curar, e seus templos foram honrados muito além do Egito."
+     ],
+     "q": "O que você preferiria: grande saber ou grande poder? Por quê?",
+     "c": "Escolha um nome secreto para você e explique o que ele diz sobre você."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Horus the falcon",
+     "g": "Meet the sky god whose eye became a symbol of protection and healing.",
+     "p": [
+      "Horus was a falcon-headed sky god, son of Isis, and the ancient Egyptians saw him as protector of kings.",
+      "His eyes were said to be the sun and the moon, watching over the land from above.",
+      "Pharaohs were seen as living images of Horus, and falcon figures appear on many temples."
+     ],
+     "q": "If you had a falcon's eyes, what would you look for first?",
+     "c": "Spot a bird outside or in a picture and describe how it moves in three words."
+    },
+    "de": {
+     "t": "Horus, der Falke",
+     "g": "Lerne den Himmelsgott kennen, dessen Auge zum Symbol für Schutz und Heilung wurde.",
+     "p": [
+      "Horus war ein falkenköpfiger Himmelsgott, Sohn der Isis, und die alten Ägypter sahen in ihm den Beschützer der Könige.",
+      "Seine Augen galten als Sonne und Mond, die von oben über das Land wachten.",
+      "Pharaonen galten als lebende Abbilder des Horus, und Falkenfiguren zieren viele Tempel."
+     ],
+     "q": "Wenn du Falkenaugen hättest, wonach würdest du zuerst Ausschau halten?",
+     "c": "Entdecke draußen oder auf einem Bild einen Vogel und beschreibe seine Bewegung in drei Wörtern."
+    },
+    "es": {
+     "t": "Horus el halcón",
+     "g": "Conoce al dios del cielo cuyo ojo se volvió símbolo de protección y sanación.",
+     "p": [
+      "Horus era un dios del cielo con cabeza de halcón, hijo de Isis, y los egipcios lo veían como protector de los reyes.",
+      "Se decía que sus ojos eran el sol y la luna, que velaban por la tierra desde arriba.",
+      "Los faraones eran vistos como imágenes vivas de Horus, y hay halcones en muchos templos."
+     ],
+     "q": "Si tuvieras ojos de halcón, ¿qué buscarías primero?",
+     "c": "Localiza un ave fuera o en una imagen y describe cómo se mueve en tres palabras."
+    },
+    "fr": {
+     "t": "Horus le faucon",
+     "g": "Rencontre le dieu du ciel dont l'œil devint un symbole de protection et de guérison.",
+     "p": [
+      "Horus était un dieu du ciel à tête de faucon, fils d'Isis, que les Égyptiens voyaient comme protecteur des rois.",
+      "On disait que ses yeux étaient le soleil et la lune, veillant sur le pays d'en haut.",
+      "Les pharaons étaient vus comme des images vivantes d'Horus, et des faucons ornent bien des temples."
+     ],
+     "q": "Si tu avais des yeux de faucon, que chercherais-tu d'abord ?",
+     "c": "Repère un oiseau dehors ou en image et décris sa façon de bouger en trois mots."
+    },
+    "it": {
+     "t": "Horus il falco",
+     "g": "Conosci il dio del cielo il cui occhio divenne simbolo di protezione e guarigione.",
+     "p": [
+      "Horus era un dio del cielo con testa di falco, figlio di Iside, visto dagli Egizi come protettore dei re.",
+      "Si diceva che i suoi occhi fossero il sole e la luna, che vegliavano sulla terra dall'alto.",
+      "I faraoni erano visti come immagini viventi di Horus, e figure di falco ornano molti templi."
+     ],
+     "q": "Se avessi occhi di falco, cosa cercheresti per prima cosa?",
+     "c": "Individua un uccello fuori o in una foto e descrivi come si muove in tre parole."
+    },
+    "pt": {
+     "t": "Hórus, o falcão",
+     "g": "Conhece o deus do céu cujo olho se tornou símbolo de proteção e cura.",
+     "p": [
+      "Hórus era um deus do céu com cabeça de falcão, filho de Ísis, visto pelos egípcios como protetor dos reis.",
+      "Dizia-se que os seus olhos eram o sol e a lua, que velavam pela terra do alto.",
+      "Os faraós eram vistos como imagens vivas de Hórus, e há falcões em muitos templos."
+     ],
+     "q": "Se tivesses olhos de falcão, o que procurarias primeiro?",
+     "c": "Repara numa ave lá fora ou numa imagem e descreve o seu movimento em três palavras."
+    },
+    "pt_BR": {
+     "t": "Hórus, o falcão",
+     "g": "Conheça o deus do céu cujo olho virou símbolo de proteção e cura.",
+     "p": [
+      "Hórus era um deus do céu com cabeça de falcão, filho de Ísis, visto pelos egípcios como protetor dos reis.",
+      "Dizia-se que os olhos dele eram o sol e a lua, que cuidavam da terra lá do alto.",
+      "Os faraós eram vistos como imagens vivas de Hórus, e há falcões em muitos templos."
+     ],
+     "q": "Se você tivesse olhos de falcão, o que procuraria primeiro?",
+     "c": "Repare numa ave lá fora ou numa imagem e descreva o movimento dela em três palavras."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Thoth and writing",
+     "g": "Meet the ibis-headed god of wisdom, writing, measurement and the moon.",
+     "p": [
+      "Thoth had the head of an ibis, a wading bird, and was honoured as the god of writing and wisdom.",
+      "Scribes, who were respected in Egypt, looked to Thoth for help with letters, numbers and calendars.",
+      "He was also linked to the moon, which was used to mark time and months."
+     ],
+     "q": "What do you enjoy writing, whether notes, lists, stories or messages?",
+     "c": "Write a three-line note in your best handwriting as if you were a royal scribe."
+    },
+    "de": {
+     "t": "Thot und die Schrift",
+     "g": "Lerne den ibisköpfigen Gott der Weisheit, Schrift, Messkunst und des Mondes kennen.",
+     "p": [
+      "Thot hatte den Kopf eines Ibisses, eines Watvogels, und wurde als Gott der Schrift und Weisheit verehrt.",
+      "Schreiber, die in Ägypten angesehen waren, baten Thot um Hilfe bei Buchstaben, Zahlen und Kalendern.",
+      "Er war auch mit dem Mond verbunden, der zum Messen von Zeit und Monaten diente."
+     ],
+     "q": "Was schreibst du gern, ob Notizen, Listen, Geschichten oder Nachrichten?",
+     "c": "Schreibe eine Notiz in drei Zeilen in deiner schönsten Handschrift wie ein königlicher Schreiber."
+    },
+    "es": {
+     "t": "Tot y la escritura",
+     "g": "Conoce al dios con cabeza de ibis de la sabiduría, la escritura, la medida y la luna.",
+     "p": [
+      "Tot tenía cabeza de ibis, un ave zancuda, y era honrado como dios de la escritura y la sabiduría.",
+      "Los escribas, respetados en Egipto, pedían ayuda a Tot con las letras, los números y los calendarios.",
+      "También se lo vinculaba con la luna, que servía para marcar el tiempo y los meses."
+     ],
+     "q": "¿Qué te gusta escribir: notas, listas, cuentos o mensajes?",
+     "c": "Escribe una nota de tres líneas con tu mejor letra como un escriba real."
+    },
+    "fr": {
+     "t": "Thot et l'écriture",
+     "g": "Rencontre le dieu à tête d'ibis de la sagesse, de l'écriture, de la mesure et de la lune.",
+     "p": [
+      "Thot avait une tête d'ibis, un oiseau échassier, et était honoré comme dieu de l'écriture et de la sagesse.",
+      "Les scribes, respectés en Égypte, demandaient son aide pour les lettres, les chiffres et les calendriers.",
+      "Il était aussi lié à la lune, qui servait à marquer le temps et les mois."
+     ],
+     "q": "Qu'aimes-tu écrire : notes, listes, histoires ou messages ?",
+     "c": "Écris une note de trois lignes de ta plus belle écriture comme un scribe royal."
+    },
+    "it": {
+     "t": "Thot e la scrittura",
+     "g": "Conosci il dio dalla testa di ibis della saggezza, della scrittura, della misura e della luna.",
+     "p": [
+      "Thot aveva la testa di ibis, un uccello trampoliere, ed era onorato come dio della scrittura e della saggezza.",
+      "Gli scribi, rispettati in Egitto, chiedevano aiuto a Thot per lettere, numeri e calendari.",
+      "Era anche legato alla luna, che serviva a segnare il tempo e i mesi."
+     ],
+     "q": "Cosa ti piace scrivere: appunti, liste, storie o messaggi?",
+     "c": "Scrivi un biglietto di tre righe con la tua calligrafia migliore come uno scriba reale."
+    },
+    "pt": {
+     "t": "Tot e a escrita",
+     "g": "Conhece o deus de cabeça de íbis da sabedoria, da escrita, da medida e da lua.",
+     "p": [
+      "Tot tinha cabeça de íbis, uma ave pernalta, e era honrado como deus da escrita e da sabedoria.",
+      "Os escribas, respeitados no Egito, pediam ajuda a Tot com letras, números e calendários.",
+      "Era também ligado à lua, que servia para marcar o tempo e os meses."
+     ],
+     "q": "O que gostas de escrever: notas, listas, histórias ou mensagens?",
+     "c": "Escreve uma nota de três linhas com a tua melhor letra, como um escriba real."
+    },
+    "pt_BR": {
+     "t": "Tot e a escrita",
+     "g": "Conheça o deus de cabeça de íbis da sabedoria, da escrita, da medida e da lua.",
+     "p": [
+      "Tot tinha cabeça de íbis, uma ave pernalta, e era honrado como deus da escrita e da sabedoria.",
+      "Os escribas, respeitados no Egito, pediam ajuda a Tot com letras, números e calendários.",
+      "Ele também era ligado à lua, que servia para marcar o tempo e os meses."
+     ],
+     "q": "O que você gosta de escrever: notas, listas, histórias ou mensagens?",
+     "c": "Escreva uma nota de três linhas com sua melhor letra, como um escriba real."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bastet and sacred cats",
+     "g": "Find out why cats were so loved and honoured in ancient Egypt.",
+     "p": [
+      "Bastet was a goddess of home, joy and protection, shown as a cat or a woman with a cat's head.",
+      "Cats guarded grain stores from mice, so Egyptians valued them and often kept them as family pets.",
+      "Many cat statues and cat mummies have been found, showing how much they were loved."
+     ],
+     "q": "Do you have a pet or a favourite animal, and what makes it special?",
+     "c": "Describe a cat you know, real or imagined, as if it were a tiny goddess."
+    },
+    "de": {
+     "t": "Bastet und die heiligen Katzen",
+     "g": "Finde heraus, warum Katzen im alten Ägypten so geliebt und geehrt wurden.",
+     "p": [
+      "Bastet war eine Göttin von Heim, Freude und Schutz, dargestellt als Katze oder Frau mit Katzenkopf.",
+      "Katzen schützten Kornspeicher vor Mäusen, darum schätzten die Ägypter sie und hielten sie oft als Haustiere.",
+      "Man fand viele Katzenstatuen und Katzenmumien, die zeigen, wie sehr man sie liebte."
+     ],
+     "q": "Hast du ein Haustier oder ein Lieblingstier, und was macht es besonders?",
+     "c": "Beschreibe eine Katze, echt oder erfunden, als wäre sie eine kleine Göttin."
+    },
+    "es": {
+     "t": "Bastet y los gatos sagrados",
+     "g": "Descubre por qué los gatos eran tan queridos y honrados en el Antiguo Egipto.",
+     "p": [
+      "Bastet era una diosa del hogar, la alegría y la protección, representada como gato o mujer con cabeza de gata.",
+      "Los gatos protegían los graneros de los ratones, así que los egipcios los valoraban y los tenían de mascota.",
+      "Se han hallado muchas estatuas y momias de gato, muestra de cuánto se los quería."
+     ],
+     "q": "¿Tienes una mascota o un animal favorito y qué lo hace especial?",
+     "c": "Describe a un gato, real o imaginado, como si fuera una pequeña diosa."
+    },
+    "fr": {
+     "t": "Bastet et les chats sacrés",
+     "g": "Découvre pourquoi les chats étaient tant aimés et honorés dans l'Égypte ancienne.",
+     "p": [
+      "Bastet était une déesse du foyer, de la joie et de la protection, représentée en chat ou en femme à tête de chat.",
+      "Les chats protégeaient les greniers des souris : les Égyptiens les appréciaient et les gardaient volontiers chez eux.",
+      "On a trouvé beaucoup de statues et de momies de chats, preuve de l'affection qu'on leur portait."
+     ],
+     "q": "As-tu un animal de compagnie ou un animal préféré, et qu'a-t-il de spécial ?",
+     "c": "Décris un chat, réel ou imaginaire, comme s'il était une petite déesse."
+    },
+    "it": {
+     "t": "Bastet e i gatti sacri",
+     "g": "Scopri perché i gatti erano così amati e onorati nell'antico Egitto.",
+     "p": [
+      "Bastet era una dea della casa, della gioia e della protezione, raffigurata come gatto o donna con testa di gatta.",
+      "I gatti proteggevano i granai dai topi, perciò gli Egizi li apprezzavano e li tenevano spesso in casa.",
+      "Sono state trovate molte statue e mummie di gatti, segno di quanto fossero amati."
+     ],
+     "q": "Hai un animale domestico o un animale preferito, e cosa lo rende speciale?",
+     "c": "Descrivi un gatto, vero o immaginario, come se fosse una piccola dea."
+    },
+    "pt": {
+     "t": "Bastet e os gatos sagrados",
+     "g": "Descobre porque os gatos eram tão amados e honrados no Antigo Egito.",
+     "p": [
+      "Bastet era uma deusa do lar, da alegria e da proteção, representada como gata ou mulher de cabeça de gata.",
+      "Os gatos protegiam os celeiros dos ratos, por isso os egípcios valorizavam-nos e tinham-nos em casa.",
+      "Foram encontradas muitas estátuas e múmias de gatos, sinal do quanto eram amados."
+     ],
+     "q": "Tens um animal de estimação ou um animal favorito e o que o torna especial?",
+     "c": "Descreve um gato, real ou imaginado, como se fosse uma pequena deusa."
+    },
+    "pt_BR": {
+     "t": "Bastet e os gatos sagrados",
+     "g": "Descubra por que os gatos eram tão amados e honrados no Antigo Egito.",
+     "p": [
+      "Bastet era uma deusa do lar, da alegria e da proteção, representada como gata ou mulher de cabeça de gata.",
+      "Os gatos protegiam os celeiros dos ratos, por isso os egípcios os valorizavam e os criavam em casa.",
+      "Foram encontradas muitas estátuas e múmias de gatos, sinal do quanto eram amados."
+     ],
+     "q": "Você tem um bichinho de estimação ou um animal favorito e o que o torna especial?",
+     "c": "Descreva um gato, real ou imaginado, como se fosse uma pequena deusa."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Creation from the waters",
+     "g": "Learn about Nun, the first mound of earth and the Egyptian story of the first sunrise.",
+     "p": [
+      "In one Egyptian tale, before anything existed there was only Nun, a still, dark ocean.",
+      "From it rose the first mound of earth, much like the land that appeared after each Nile flood.",
+      "On the mound the first sun rose, and light, life and order began, so every sunrise echoes that first morning."
+     ],
+     "q": "What does a fresh start feel like to you, like a new day or a new year?",
+     "c": "Describe the very first sunrise in the world in three simple sentences."
+    },
+    "de": {
+     "t": "Schöpfung aus den Wassern",
+     "g": "Erfahre von Nun, dem ersten Erdhügel und der ägyptischen Geschichte vom ersten Sonnenaufgang.",
+     "p": [
+      "In einer ägyptischen Erzählung gab es zuerst nur Nun, einen stillen, dunklen Urozean.",
+      "Daraus erhob sich der erste Erdhügel, wie das Land, das nach jeder Nilflut auftauchte.",
+      "Auf dem Hügel ging die erste Sonne auf, und Licht, Leben und Ordnung begannen; jeder Morgen erinnert daran."
+     ],
+     "q": "Wie fühlt sich für dich ein Neuanfang an, etwa ein neuer Tag oder ein neues Jahr?",
+     "c": "Beschreibe den allerersten Sonnenaufgang der Welt in drei einfachen Sätzen."
+    },
+    "es": {
+     "t": "La creación desde las aguas",
+     "g": "Conoce a Nun, el primer montículo de tierra y el relato egipcio del primer amanecer.",
+     "p": [
+      "En un relato egipcio, antes de todo solo existía Nun, un océano quieto y oscuro.",
+      "De él surgió el primer montículo de tierra, parecido a la tierra que aparecía tras cada crecida del Nilo.",
+      "Sobre el montículo salió el primer sol y empezaron la luz, la vida y el orden: cada amanecer lo recuerda."
+     ],
+     "q": "¿Qué sientes con un nuevo comienzo, como un día o un año nuevos?",
+     "c": "Describe el primer amanecer del mundo en tres frases sencillas."
+    },
+    "fr": {
+     "t": "La création née des eaux",
+     "g": "Découvre Noun, la première butte de terre et le récit égyptien du premier lever de soleil.",
+     "p": [
+      "Dans un récit égyptien, avant toute chose, il n'y avait que Noun, un océan sombre et immobile.",
+      "De lui surgit la première butte de terre, comme la terre qui réapparaissait après chaque crue du Nil.",
+      "Sur la butte se leva le premier soleil, et la lumière, la vie et l'ordre commencèrent : chaque aube le rappelle."
+     ],
+     "q": "Que ressens-tu devant un nouveau départ, comme un nouveau jour ou une nouvelle année ?",
+     "c": "Décris le tout premier lever de soleil du monde en trois phrases simples."
+    },
+    "it": {
+     "t": "La creazione dalle acque",
+     "g": "Scopri Nun, la prima collina di terra e il racconto egizio della prima alba.",
+     "p": [
+      "In un racconto egizio, prima di ogni cosa c'era solo Nun, un oceano immobile e scuro.",
+      "Da esso emerse la prima collina di terra, simile alla terra che riappariva dopo ogni piena del Nilo.",
+      "Sulla collina sorse il primo sole e cominciarono luce, vita e ordine: ogni alba lo ricorda."
+     ],
+     "q": "Cosa senti davanti a un nuovo inizio, come un giorno o un anno nuovo?",
+     "c": "Descrivi la primissima alba del mondo in tre frasi semplici."
+    },
+    "pt": {
+     "t": "A criação nascida das águas",
+     "g": "Conhece Nun, o primeiro montículo de terra e o relato egípcio do primeiro nascer do sol.",
+     "p": [
+      "Num relato egípcio, antes de tudo só existia Nun, um oceano escuro e parado.",
+      "Dele surgiu o primeiro montículo de terra, como a terra que reaparecia após cada cheia do Nilo.",
+      "No montículo nasceu o primeiro sol e começaram a luz, a vida e a ordem: cada amanhecer o recorda."
+     ],
+     "q": "O que sentes perante um novo começo, como um novo dia ou ano?",
+     "c": "Descreve o primeiríssimo nascer do sol do mundo em três frases simples."
+    },
+    "pt_BR": {
+     "t": "A criação nascida das águas",
+     "g": "Conheça Nun, o primeiro montículo de terra e o relato egípcio do primeiro nascer do sol.",
+     "p": [
+      "Num relato egípcio, antes de tudo só existia Nun, um oceano escuro e parado.",
+      "Dele surgiu o primeiro montículo de terra, como a terra que reaparecia após cada cheia do Nilo.",
+      "No montículo nasceu o primeiro sol e começaram a luz, a vida e a ordem: cada amanhecer lembra isso."
+     ],
+     "q": "O que você sente diante de um novo começo, como um novo dia ou ano?",
+     "c": "Descreva o primeiríssimo nascer do sol do mundo em três frases simples."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Eye of Horus",
+     "g": "Explore a famous symbol, its legend and its use in art and jewellery.",
+     "p": [
+      "The Eye of Horus, or wedjat, is a stylised eye with markings like a falcon's face, a symbol of protection and health.",
+      "In legend, Horus's eye was hurt in a struggle and then restored by Thoth, so it came to mean healing.",
+      "Egyptians wore it as an amulet and painted it on boats and tombs to keep good luck close."
+     ],
+     "q": "Do you have a lucky charm or a symbol that makes you feel safe?",
+     "c": "Draw your own protective eye symbol and explain what each line means."
+    },
+    "de": {
+     "t": "Das Horusauge",
+     "g": "Erkunde ein berühmtes Symbol, seine Legende und seinen Einsatz in Kunst und Schmuck.",
+     "p": [
+      "Das Horusauge, auch Udjat, ist ein stilisiertes Auge mit Zeichen wie im Falkengesicht, ein Symbol für Schutz und Gesundheit.",
+      "Der Legende nach wurde Horus' Auge im Kampf verletzt und von Thot geheilt, daher steht es für Heilung.",
+      "Die Ägypter trugen es als Amulett und malten es auf Boote und Gräber, um Glück nah zu halten."
+     ],
+     "q": "Hast du einen Glücksbringer oder ein Symbol, das dir Sicherheit gibt?",
+     "c": "Zeichne dein eigenes Schutzauge und erkläre, was jede Linie bedeutet."
+    },
+    "es": {
+     "t": "El Ojo de Horus",
+     "g": "Explora un símbolo famoso, su leyenda y su uso en el arte y la joyería.",
+     "p": [
+      "El Ojo de Horus, o udyat, es un ojo estilizado con marcas como las de la cara de un halcón: símbolo de protección y salud.",
+      "Según la leyenda, el ojo de Horus se dañó en una disputa y Tot lo restauró, por eso significa curación.",
+      "Los egipcios lo llevaban como amuleto y lo pintaban en barcos y tumbas para atraer la buena suerte."
+     ],
+     "q": "¿Tienes un amuleto o un símbolo que te haga sentir seguro?",
+     "c": "Dibuja tu propio símbolo de ojo protector y explica qué significa cada línea."
+    },
+    "fr": {
+     "t": "L'œil d'Horus",
+     "g": "Explore un symbole célèbre, sa légende et son usage dans l'art et la bijouterie.",
+     "p": [
+      "L'œil d'Horus, ou oudjat, est un œil stylisé aux marques de visage de faucon, symbole de protection et de santé.",
+      "Selon la légende, l'œil d'Horus fut blessé lors d'une lutte puis restauré par Thot : il signifie donc guérison.",
+      "Les Égyptiens le portaient en amulette et le peignaient sur bateaux et tombes pour garder la chance près d'eux."
+     ],
+     "q": "As-tu un porte-bonheur ou un symbole qui te rassure ?",
+     "c": "Dessine ton propre œil protecteur et explique ce que signifie chaque trait."
+    },
+    "it": {
+     "t": "L'occhio di Horus",
+     "g": "Esplora un simbolo famoso, la sua leggenda e il suo uso nell'arte e nei gioielli.",
+     "p": [
+      "L'occhio di Horus, o udjat, è un occhio stilizzato con segni da volto di falco, simbolo di protezione e salute.",
+      "Secondo la leggenda, l'occhio di Horus fu ferito in una lotta e poi restaurato da Thot, quindi significa guarigione.",
+      "Gli Egizi lo portavano come amuleto e lo dipingevano su barche e tombe per tenere vicina la fortuna."
+     ],
+     "q": "Hai un portafortuna o un simbolo che ti fa sentire al sicuro?",
+     "c": "Disegna il tuo occhio protettivo e spiega cosa significa ogni linea."
+    },
+    "pt": {
+     "t": "O Olho de Hórus",
+     "g": "Explora um símbolo famoso, a sua lenda e o seu uso na arte e na joalharia.",
+     "p": [
+      "O Olho de Hórus, ou udjat, é um olho estilizado com marcas de cara de falcão, símbolo de proteção e saúde.",
+      "Segundo a lenda, o olho de Hórus foi ferido numa luta e Tot restaurou-o, por isso significa cura.",
+      "Os egípcios usavam-no como amuleto e pintavam-no em barcos e túmulos para manter a sorte por perto."
+     ],
+     "q": "Tens um amuleto ou um símbolo que te faça sentir seguro?",
+     "c": "Desenha o teu próprio olho protetor e explica o que significa cada linha."
+    },
+    "pt_BR": {
+     "t": "O Olho de Hórus",
+     "g": "Explore um símbolo famoso, sua lenda e seu uso na arte e na joalheria.",
+     "p": [
+      "O Olho de Hórus, ou udjat, é um olho estilizado com marcas de cara de falcão, símbolo de proteção e saúde.",
+      "Segundo a lenda, o olho de Hórus foi ferido numa luta e Tot o restaurou, por isso significa cura.",
+      "Os egípcios usavam como amuleto e pintavam em barcos e túmulos para manter a sorte por perto."
+     ],
+     "q": "Você tem um amuleto ou um símbolo que faz você se sentir seguro?",
+     "c": "Desenhe seu próprio olho protetor e explique o que cada linha significa."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hieroglyphs and myth",
+     "g": "See how pictures on temple walls and papyrus preserved Egypt's stories.",
+     "p": [
+      "Hieroglyphs were picture signs for sounds and ideas, carved on walls and written on papyrus.",
+      "Many myths survive because scribes painted gods and spells on tombs, temples and scrolls.",
+      "The Rosetta Stone, with the same text in three scripts, helped scholars read hieroglyphs again."
+     ],
+     "q": "If you wrote your name in pictures, which symbols would you pick?",
+     "c": "Write your first name using small pictures or emoji, then ask someone to decode it."
+    },
+    "de": {
+     "t": "Hieroglyphen und Mythos",
+     "g": "Sieh, wie Bilder an Tempelwänden und auf Papyrus Ägyptens Geschichten bewahrten.",
+     "p": [
+      "Hieroglyphen waren Bildzeichen für Laute und Ideen, in Wände geritzt und auf Papyrus geschrieben.",
+      "Viele Mythen sind erhalten, weil Schreiber Götter und Sprüche auf Gräber, Tempel und Schriftrollen malten.",
+      "Der Stein von Rosette mit demselben Text in drei Schriften half der Forschung, Hieroglyphen wieder zu lesen."
+     ],
+     "q": "Welche Symbole würdest du wählen, um deinen Namen in Bildern zu schreiben?",
+     "c": "Schreibe deinen Vornamen mit kleinen Bildern oder Emojis und lass jemanden ihn entschlüsseln."
+    },
+    "es": {
+     "t": "Jeroglíficos y mito",
+     "g": "Mira cómo las imágenes en muros de templos y papiros conservaron las historias de Egipto.",
+     "p": [
+      "Los jeroglíficos eran signos con imágenes para sonidos e ideas, tallados en muros y escritos en papiro.",
+      "Muchos mitos se conservan porque los escribas pintaron dioses y hechizos en tumbas, templos y rollos.",
+      "La piedra de Rosetta, con el mismo texto en tres escrituras, ayudó a leer de nuevo los jeroglíficos."
+     ],
+     "q": "Si escribieras tu nombre en imágenes, ¿qué símbolos elegirías?",
+     "c": "Escribe tu nombre con dibujitos o emojis y pide a alguien que lo descifre."
+    },
+    "fr": {
+     "t": "Hiéroglyphes et mythes",
+     "g": "Vois comment des images sur les murs des temples et les papyrus ont préservé les récits d'Égypte.",
+     "p": [
+      "Les hiéroglyphes étaient des signes en images pour des sons et des idées, gravés sur les murs et écrits sur papyrus.",
+      "Beaucoup de mythes survivent car des scribes ont peint des dieux et des formules dans tombes, temples et rouleaux.",
+      "La pierre de Rosette, au même texte en trois écritures, a aidé à relire les hiéroglyphes."
+     ],
+     "q": "Si tu écrivais ton prénom en images, quels symboles choisirais-tu ?",
+     "c": "Écris ton prénom avec de petits dessins ou des émojis puis demande à quelqu'un de le déchiffrer."
+    },
+    "it": {
+     "t": "Geroglifici e mito",
+     "g": "Guarda come le immagini sulle pareti dei templi e sul papiro hanno conservato le storie d'Egitto.",
+     "p": [
+      "I geroglifici erano segni con immagini per suoni e idee, incisi sulle pareti e scritti su papiro.",
+      "Molti miti sopravvivono perché gli scribi dipinsero dèi e formule su tombe, templi e rotoli.",
+      "La stele di Rosetta, con lo stesso testo in tre scritture, aiutò a rileggere i geroglifici."
+     ],
+     "q": "Se scrivessi il tuo nome con immagini, quali simboli sceglieresti?",
+     "c": "Scrivi il tuo nome con piccole immagini o emoji e chiedi a qualcuno di decifrarlo."
+    },
+    "pt": {
+     "t": "Hieróglifos e mito",
+     "g": "Vê como imagens em paredes de templos e papiros preservaram as histórias do Egito.",
+     "p": [
+      "Os hieróglifos eram sinais com imagens para sons e ideias, gravados em paredes e escritos em papiro.",
+      "Muitos mitos sobrevivem porque os escribas pintaram deuses e fórmulas em túmulos, templos e rolos.",
+      "A Pedra de Roseta, com o mesmo texto em três escritas, ajudou a ler de novo os hieróglifos."
+     ],
+     "q": "Se escrevesses o teu nome em imagens, que símbolos escolherias?",
+     "c": "Escreve o teu nome com pequenos desenhos ou emojis e pede a alguém que o decifre."
+    },
+    "pt_BR": {
+     "t": "Hieróglifos e mito",
+     "g": "Veja como imagens em paredes de templos e papiros preservaram as histórias do Egito.",
+     "p": [
+      "Os hieróglifos eram sinais com imagens para sons e ideias, gravados em paredes e escritos em papiro.",
+      "Muitos mitos sobrevivem porque os escribas pintaram deuses e fórmulas em túmulos, templos e rolos.",
+      "A Pedra de Roseta, com o mesmo texto em três escritas, ajudou a ler os hieróglifos de novo."
+     ],
+     "q": "Se você escrevesse seu nome em imagens, que símbolos escolheria?",
+     "c": "Escreva seu nome com pequenos desenhos ou emojis e peça a alguém para decifrar."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Mesopotamia, land of stories",
+     "g": "Visit Sumer and Babylon and meet some of the oldest written myths in the world.",
+     "p": [
+      "Mesopotamia means the land between rivers, the Tigris and the Euphrates, where early cities grew.",
+      "Sumerians wrote on clay tablets with wedge-shaped marks called cuneiform, saving stories for thousands of years.",
+      "Many tales of gods, kings and heroes were copied by later peoples such as the Babylonians and Assyrians."
+     ],
+     "q": "Why do you think people started writing stories down?",
+     "c": "Press a wedge shape in soft clay, dough or paper and make your own tiny tablet."
+    },
+    "de": {
+     "t": "Mesopotamien, Land der Geschichten",
+     "g": "Besuche Sumer und Babylon und lerne einige der ältesten schriftlichen Mythen der Welt kennen.",
+     "p": [
+      "Mesopotamien heißt Land zwischen den Flüssen, Euphrat und Tigris, wo frühe Städte entstanden.",
+      "Die Sumerer schrieben mit keilförmigen Zeichen, der Keilschrift, auf Tontafeln und bewahrten Geschichten jahrtausendelang.",
+      "Viele Erzählungen über Götter, Könige und Helden wurden von Babyloniern und Assyrern später abgeschrieben."
+     ],
+     "q": "Warum begannen Menschen wohl, Geschichten aufzuschreiben?",
+     "c": "Drücke eine Keilform in weichen Ton, Teig oder Papier und mach dir eine kleine Tafel."
+    },
+    "es": {
+     "t": "Mesopotamia, tierra de historias",
+     "g": "Visita Sumer y Babilonia y conoce algunos de los mitos escritos más antiguos del mundo.",
+     "p": [
+      "Mesopotamia significa tierra entre ríos, el Tigris y el Éufrates, donde crecieron las primeras ciudades.",
+      "Los sumerios escribían en tablillas de arcilla con marcas en forma de cuña, la escritura cuneiforme, y guardaron historias por milenios.",
+      "Muchos relatos de dioses, reyes y héroes fueron copiados por pueblos posteriores como babilonios y asirios."
+     ],
+     "q": "¿Por qué crees que la gente empezó a escribir historias?",
+     "c": "Marca una forma de cuña en arcilla blanda, masa o papel y haz tu pequeña tablilla."
+    },
+    "fr": {
+     "t": "Mésopotamie, pays des récits",
+     "g": "Visite Sumer et Babylone et découvre certains des plus anciens mythes écrits du monde.",
+     "p": [
+      "Mésopotamie signifie pays entre les fleuves, le Tigre et l'Euphrate, où naquirent les premières villes.",
+      "Les Sumériens écrivaient sur des tablettes d'argile en cunéiforme, des signes en forme de coin, et gardèrent leurs récits des millénaires.",
+      "Beaucoup de récits de dieux, de rois et de héros furent recopiés par des peuples ultérieurs, Babyloniens et Assyriens."
+     ],
+     "q": "Pourquoi, selon toi, a-t-on commencé à écrire des histoires ?",
+     "c": "Imprime une forme de coin dans de l'argile molle, de la pâte ou du papier et fais ta petite tablette."
+    },
+    "it": {
+     "t": "Mesopotamia, terra di storie",
+     "g": "Visita Sumer e Babilonia e scopri alcuni dei più antichi miti scritti del mondo.",
+     "p": [
+      "Mesopotamia significa terra tra i fiumi, il Tigri e l'Eufrate, dove nacquero le prime città.",
+      "I Sumeri scrivevano su tavolette d'argilla con segni a forma di cuneo, la scrittura cuneiforme, conservando storie per millenni.",
+      "Molti racconti di dèi, re ed eroi furono copiati da popoli successivi come Babilonesi e Assiri."
+     ],
+     "q": "Perché pensi che la gente abbia iniziato a scrivere storie?",
+     "c": "Imprimi una forma a cuneo in argilla morbida, pasta o carta e fai la tua piccola tavoletta."
+    },
+    "pt": {
+     "t": "Mesopotâmia, terra de histórias",
+     "g": "Visita Suméria e Babilónia e conhece alguns dos mais antigos mitos escritos do mundo.",
+     "p": [
+      "Mesopotâmia significa terra entre rios, o Tigre e o Eufrates, onde nasceram as primeiras cidades.",
+      "Os sumérios escreviam em tabuinhas de argila com marcas em forma de cunha, a escrita cuneiforme, guardando histórias por milénios.",
+      "Muitos relatos de deuses, reis e heróis foram copiados por povos posteriores, como babilónios e assírios."
+     ],
+     "q": "Porque achas que as pessoas começaram a escrever histórias?",
+     "c": "Imprime uma forma de cunha em argila mole, massa ou papel e faz a tua pequena tabuinha."
+    },
+    "pt_BR": {
+     "t": "Mesopotâmia, terra de histórias",
+     "g": "Visite a Suméria e a Babilônia e conheça alguns dos mais antigos mitos escritos do mundo.",
+     "p": [
+      "Mesopotâmia significa terra entre rios, o Tigre e o Eufrates, onde nasceram as primeiras cidades.",
+      "Os sumérios escreviam em tabuinhas de argila com marcas em forma de cunha, a escrita cuneiforme, guardando histórias por milênios.",
+      "Muitos relatos de deuses, reis e heróis foram copiados por povos posteriores, como babilônios e assírios."
+     ],
+     "q": "Por que você acha que as pessoas começaram a escrever histórias?",
+     "c": "Marque uma forma de cunha em argila mole, massinha ou papel e faça sua pequena tabuinha."
+    }
+   }
+  }
+ ]
+}

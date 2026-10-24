@@ -1,0 +1,835 @@
+{
+ "topic": "pets",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Getting to know dog breeds",
+     "g": "Learn what breed groups were bred for, and why each dog is unique.",
+     "p": [
+      "Breed groups like herding, hunting or guarding show what dogs were originally bred to do.",
+      "Those jobs hint at energy levels and instincts, such as chasing or herding.",
+      "Every dog is an individual, including mixed breeds."
+     ],
+     "q": "Which dog breeds do you find most interesting?",
+     "c": "Look up one breed group and note what its dogs were bred to do."
+    },
+    "de": {
+     "t": "Hunderassen kennenlernen",
+     "g": "Erfahre, wofür Rassegruppen gezüchtet wurden und warum jeder Hund einzigartig ist.",
+     "p": [
+      "Gruppen wie Hüte-, Jagd- oder Wachhunde zeigen, wofür Hunde ursprünglich gezüchtet wurden.",
+      "Diese Aufgaben verraten Energie und Instinkte, etwa Jagen oder Hüten.",
+      "Jeder Hund ist ein Individuum, auch Mischlinge."
+     ],
+     "q": "Welche Hunderassen findest du am interessantesten?",
+     "c": "Such eine Rassegruppe heraus und notiere, wofür ihre Hunde gezüchtet wurden."
+    },
+    "es": {
+     "t": "Conocer las razas de perros",
+     "g": "Aprende para qué se criaron los grupos de razas y por qué cada perro es único.",
+     "p": [
+      "Grupos como pastoreo, caza o guarda muestran para qué se criaron los perros.",
+      "Esas tareas dan pistas de energía e instintos, como perseguir o pastorear.",
+      "Cada perro es un individuo, también los mestizos."
+     ],
+     "q": "¿Qué razas de perro te parecen más interesantes?",
+     "c": "Busca un grupo de razas y anota para qué se criaron sus perros."
+    },
+    "fr": {
+     "t": "Faire connaissance avec les races de chiens",
+     "g": "Apprends à quoi servaient les groupes de races et pourquoi chaque chien est unique.",
+     "p": [
+      "Les groupes comme berger, chasse ou garde montrent la fonction d'origine des chiens.",
+      "Ces rôles donnent des indices d'énergie et d'instincts, comme poursuivre ou rassembler.",
+      "Chaque chien est un individu, y compris les croisés."
+     ],
+     "q": "Quelles races de chiens te semblent les plus intéressantes ?",
+     "c": "Cherche un groupe de races et note la fonction d'origine de ses chiens."
+    },
+    "it": {
+     "t": "Conoscere le razze di cani",
+     "g": "Scopri a cosa servivano i gruppi di razze e perché ogni cane è unico.",
+     "p": [
+      "Gruppi come pastore, caccia o guardia mostrano per cosa nascevano i cani.",
+      "Quei compiti suggeriscono energia e istinti, come inseguire o radunare.",
+      "Ogni cane è un individuo, anche i meticci."
+     ],
+     "q": "Quali razze di cani trovi più interessanti?",
+     "c": "Cerca un gruppo di razze e annota a cosa servivano i suoi cani."
+    },
+    "pt": {
+     "t": "Conhecer as raças de cães",
+     "g": "Aprende para que serviam os grupos de raças e porque cada cão é único.",
+     "p": [
+      "Grupos como pastoreio, caça ou guarda mostram para que os cães foram criados.",
+      "Essas tarefas dão pistas de energia e instintos, como perseguir ou pastorear.",
+      "Cada cão é um indivíduo, incluindo os rafeiros."
+     ],
+     "q": "Que raças de cães achas mais interessantes?",
+     "c": "Procura um grupo de raças e anota para que serviam os seus cães."
+    },
+    "pt_BR": {
+     "t": "Conhecer as raças de cães",
+     "g": "Aprenda para que serviam os grupos de raças e por que cada cão é único.",
+     "p": [
+      "Grupos como pastoreio, caça ou guarda mostram para que os cães foram criados.",
+      "Essas tarefas dão pistas de energia e instintos, como perseguir ou pastorear.",
+      "Cada cão é um indivíduo, inclusive os vira-latas."
+     ],
+     "q": "Que raças de cães você acha mais interessantes?",
+     "c": "Pesquise um grupo de raças e anote para que serviam os seus cães."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Puppy versus adult dog",
+     "g": "Compare the time, training and energy each needs.",
+     "p": [
+      "Puppies need frequent meals, toilet training, lots of sleep and patient teaching.",
+      "Adult dogs are often calmer, and an older dog can be a wonderful match.",
+      "Choose by your own time and energy, not just by cuteness."
+     ],
+     "q": "Would you pick a puppy or an adult dog, and why?",
+     "c": "List three things you could offer a puppy and three for an adult dog."
+    },
+    "de": {
+     "t": "Welpe oder erwachsener Hund",
+     "g": "Vergleiche Zeit, Training und Energie, die jeder braucht.",
+     "p": [
+      "Welpen brauchen häufige Mahlzeiten, Stubenreinheit, viel Schlaf und geduldiges Lernen.",
+      "Erwachsene Hunde sind oft ruhiger, und ein älterer Hund kann wunderbar passen.",
+      "Wähle nach deiner Zeit und Energie, nicht nur nach Niedlichkeit."
+     ],
+     "q": "Würdest du einen Welpen oder einen erwachsenen Hund nehmen und warum?",
+     "c": "Liste drei Dinge, die du einem Welpen, und drei, die du einem erwachsenen Hund bieten könntest."
+    },
+    "es": {
+     "t": "Cachorro o perro adulto",
+     "g": "Compara el tiempo, el entrenamiento y la energía que necesita cada uno.",
+     "p": [
+      "Los cachorros necesitan comidas frecuentes, educación en casa, mucho sueño y enseñanza paciente.",
+      "Los adultos suelen ser más tranquilos y un perro mayor puede ser una pareja maravillosa.",
+      "Elige según tu tiempo y energía, no solo por lo adorable."
+     ],
+     "q": "¿Elegirías un cachorro o un adulto, y por qué?",
+     "c": "Anota tres cosas que podrías ofrecer a un cachorro y tres a un adulto."
+    },
+    "fr": {
+     "t": "Chiot ou chien adulte",
+     "g": "Compare le temps, l'éducation et l'énergie dont chacun a besoin.",
+     "p": [
+      "Les chiots demandent des repas fréquents, l'apprentissage de la propreté, beaucoup de sommeil et de la patience.",
+      "Les adultes sont souvent plus calmes, et un chien âgé peut être un compagnon merveilleux.",
+      "Choisis selon ton temps et ton énergie, pas seulement selon la mignonnerie."
+     ],
+     "q": "Choisirais-tu un chiot ou un adulte, et pourquoi ?",
+     "c": "Note trois choses à offrir à un chiot et trois à un chien adulte."
+    },
+    "it": {
+     "t": "Cucciolo o cane adulto",
+     "g": "Confronta il tempo, l'addestramento e l'energia che servono a ciascuno.",
+     "p": [
+      "I cuccioli richiedono pasti frequenti, educazione agli bisogni, molto sonno e insegnamento paziente.",
+      "Gli adulti sono spesso più calmi e un cane anziano può essere un compagno meraviglioso.",
+      "Scegli in base a tempo ed energia, non solo alla tenerezza."
+     ],
+     "q": "Sceglieresti un cucciolo o un adulto, e perché?",
+     "c": "Annota tre cose da offrire a un cucciolo e tre a un cane adulto."
+    },
+    "pt": {
+     "t": "Cachorro ou cão adulto",
+     "g": "Compara o tempo, o treino e a energia de que cada um precisa.",
+     "p": [
+      "Os cachorros precisam de refeições frequentes, treino de higiene, muito sono e ensino paciente.",
+      "Os adultos são muitas vezes mais calmos e um cão mais velho pode ser um par maravilhoso.",
+      "Escolhe conforme o teu tempo e energia, não só pela fofura."
+     ],
+     "q": "Escolherias um cachorro ou um adulto, e porquê?",
+     "c": "Anota três coisas que poderias dar a um cachorro e três a um cão adulto."
+    },
+    "pt_BR": {
+     "t": "Filhote ou cão adulto",
+     "g": "Compare o tempo, o treino e a energia de que cada um precisa.",
+     "p": [
+      "Filhotes precisam de refeições frequentes, ensino do xixi no lugar, muito sono e ensino paciente.",
+      "Adultos costumam ser mais calmos e um cão mais velho pode ser um par maravilhoso.",
+      "Escolha conforme seu tempo e energia, não só pela fofura."
+     ],
+     "q": "Você escolheria um filhote ou um adulto, e por quê?",
+     "c": "Anote três coisas que você poderia dar a um filhote e três a um cão adulto."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing a collar, harness and lead",
+     "g": "Find a comfortable fit for walks.",
+     "p": [
+      "A collar should sit so you can slip two fingers underneath.",
+      "A well-fitted harness spreads pressure across the chest and suits dogs that pull.",
+      "Pick a lead of a comfortable length and check straps for wear."
+     ],
+     "q": "Does your dog wear a collar or a harness?",
+     "c": "Check the fit of a collar or harness using the two-finger rule."
+    },
+    "de": {
+     "t": "Halsband, Geschirr und Leine wählen",
+     "g": "Finde eine bequeme Passform für Spaziergänge.",
+     "p": [
+      "Ein Halsband sollte so sitzen, dass zwei Finger darunterpassen.",
+      "Ein gut sitzendes Geschirr verteilt den Druck auf die Brust und eignet sich für Zieher.",
+      "Wähle eine Leine in angenehmer Länge und prüfe die Nähte auf Verschleiß."
+     ],
+     "q": "Trägt dein Hund Halsband oder Geschirr?",
+     "c": "Prüfe mit der Zwei-Finger-Regel den Sitz von Halsband oder Geschirr."
+    },
+    "es": {
+     "t": "Elegir collar, arnés y correa",
+     "g": "Encuentra un ajuste cómodo para los paseos.",
+     "p": [
+      "Un collar debe quedar de modo que quepan dos dedos debajo.",
+      "Un arnés bien ajustado reparte la presión por el pecho y va bien a perros que tiran.",
+      "Elige una correa de largo cómodo y revisa que no esté desgastada."
+     ],
+     "q": "¿Tu perro lleva collar o arnés?",
+     "c": "Comprueba el ajuste de un collar o arnés con la regla de los dos dedos."
+    },
+    "fr": {
+     "t": "Choisir collier, harnais et laisse",
+     "g": "Trouve un ajustement confortable pour les balades.",
+     "p": [
+      "Un collier doit laisser passer deux doigts dessous.",
+      "Un harnais bien ajusté répartit la pression sur le torse et convient aux chiens qui tirent.",
+      "Choisis une laisse de longueur confortable et vérifie son usure."
+     ],
+     "q": "Ton chien porte-t-il un collier ou un harnais ?",
+     "c": "Vérifie l'ajustement d'un collier ou harnais avec la règle des deux doigts."
+    },
+    "it": {
+     "t": "Scegliere collare, pettorina e guinzaglio",
+     "g": "Trova una vestibilità comoda per le passeggiate.",
+     "p": [
+      "Un collare deve lasciar passare due dita sotto.",
+      "Una pettorina ben regolata distribuisce la pressione sul petto e va bene ai cani che tirano.",
+      "Scegli un guinzaglio di lunghezza comoda e controlla l'usura."
+     ],
+     "q": "Il tuo cane porta il collare o la pettorina?",
+     "c": "Controlla la vestibilità di collare o pettorina con la regola delle due dita."
+    },
+    "pt": {
+     "t": "Escolher coleira, peitoral e trela",
+     "g": "Encontra um ajuste confortável para os passeios.",
+     "p": [
+      "A coleira deve deixar passar dois dedos por baixo.",
+      "Um peitoral bem ajustado reparte a pressão pelo peito e serve a cães que puxam.",
+      "Escolhe uma trela de comprimento confortável e verifica o desgaste."
+     ],
+     "q": "O teu cão usa coleira ou peitoral?",
+     "c": "Verifica o ajuste de uma coleira ou peitoral com a regra dos dois dedos."
+    },
+    "pt_BR": {
+     "t": "Escolher coleira, peitoral e guia",
+     "g": "Encontre um ajuste confortável para os passeios.",
+     "p": [
+      "A coleira deve deixar passar dois dedos por baixo.",
+      "Um peitoral bem ajustado distribui a pressão pelo peito e serve a cães que puxam.",
+      "Escolha uma guia de comprimento confortável e verifique o desgaste."
+     ],
+     "q": "Seu cão usa coleira ou peitoral?",
+     "c": "Verifique o ajuste de uma coleira ou peitoral com a regra dos dois dedos."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The daily walk",
+     "g": "Learn how long and how often dogs need walks.",
+     "p": [
+      "Most dogs need at least one or two walks a day, though needs vary by age and breed.",
+      "Walks are for sniffing, exploring and stretching legs, not just toilet breaks.",
+      "Let your dog go at a relaxed pace and sniff along the way."
+     ],
+     "q": "How long are your usual walks?",
+     "c": "Take a walk and let your dog, or you, choose the route for part of it."
+    },
+    "de": {
+     "t": "Der tägliche Spaziergang",
+     "g": "Erfahre, wie lange und wie oft Hunde Spaziergänge brauchen.",
+     "p": [
+      "Die meisten Hunde brauchen mindestens ein bis zwei Runden täglich, je nach Alter und Rasse.",
+      "Spaziergänge dienen zum Schnuppern, Erkunden und Bewegen, nicht nur zum Lösen.",
+      "Lass deinen Hund entspannt gehen und unterwegs schnuppern."
+     ],
+     "q": "Wie lang sind deine üblichen Spaziergänge?",
+     "c": "Geh spazieren und lass deinen Hund einen Teil der Strecke aussuchen."
+    },
+    "es": {
+     "t": "El paseo diario",
+     "g": "Aprende cuánto y con qué frecuencia necesitan pasear los perros.",
+     "p": [
+      "La mayoría de los perros necesita al menos uno o dos paseos al día, según edad y raza.",
+      "Los paseos sirven para oler, explorar y estirar las patas, no solo para hacer sus necesidades.",
+      "Deja que tu perro vaya a ritmo relajado y huela por el camino."
+     ],
+     "q": "¿Cuánto duran tus paseos habituales?",
+     "c": "Da un paseo y deja que tu perro elija el rumbo durante un rato."
+    },
+    "fr": {
+     "t": "La balade quotidienne",
+     "g": "Apprends combien de temps et à quelle fréquence les chiens ont besoin de sortir.",
+     "p": [
+      "La plupart des chiens ont besoin d'au moins une ou deux sorties par jour, selon l'âge et la race.",
+      "La balade sert à renifler, explorer et se dégourdir, pas seulement aux besoins.",
+      "Laisse ton chien marcher tranquillement et renifler en chemin."
+     ],
+     "q": "Combien de temps durent tes balades habituelles ?",
+     "c": "Fais une balade et laisse ton chien choisir le chemin sur une partie."
+    },
+    "it": {
+     "t": "La passeggiata quotidiana",
+     "g": "Impara quanto a lungo e quanto spesso i cani devono uscire.",
+     "p": [
+      "La maggior parte dei cani ha bisogno di almeno una o due uscite al giorno, secondo età e razza.",
+      "La passeggiata serve a fiutare, esplorare e sgranchirsi, non solo ai bisogni.",
+      "Lascia che il cane vada con calma e fiuti lungo la strada."
+     ],
+     "q": "Quanto durano le tue passeggiate abituali?",
+     "c": "Fai una passeggiata e lascia che il cane scelga il percorso per un tratto."
+    },
+    "pt": {
+     "t": "O passeio diário",
+     "g": "Aprende quanto tempo e com que frequência os cães precisam de passear.",
+     "p": [
+      "A maioria dos cães precisa de pelo menos um ou dois passeios por dia, conforme a idade e raça.",
+      "Os passeios servem para cheirar, explorar e esticar as patas, não só para as necessidades.",
+      "Deixa o teu cão andar a um ritmo calmo e cheirar pelo caminho."
+     ],
+     "q": "Quanto duram os teus passeios habituais?",
+     "c": "Dá um passeio e deixa o teu cão escolher o caminho durante um bocado."
+    },
+    "pt_BR": {
+     "t": "O passeio diário",
+     "g": "Aprenda quanto tempo e com que frequência os cães precisam passear.",
+     "p": [
+      "A maioria dos cães precisa de pelo menos um ou dois passeios por dia, conforme idade e raça.",
+      "Passeios servem para cheirar, explorar e esticar as patas, não só para as necessidades.",
+      "Deixe seu cão andar num ritmo calmo e cheirar pelo caminho."
+     ],
+     "q": "Quanto duram seus passeios habituais?",
+     "c": "Faça um passeio e deixe seu cão escolher o caminho por um trecho."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why sniffing matters to dogs",
+     "g": "Discover the amazing dog nose and why scent walks help.",
+     "p": [
+      "A dog's sense of smell is far stronger than ours and tells them a lot about the world.",
+      "Sniffing is mentally tiring in a good way and can calm a dog.",
+      "A slow scent walk can satisfy a dog as much as a fast one."
+     ],
+     "q": "What does your dog like to sniff most?",
+     "c": "Plan a slow sniff walk and let your dog lead the pace for ten minutes."
+    },
+    "de": {
+     "t": "Warum Schnüffeln für Hunde wichtig ist",
+     "g": "Entdecke die erstaunliche Hundenase und warum Schnüffelrunden helfen.",
+     "p": [
+      "Der Geruchssinn eines Hundes ist weit stärker als unserer und erzählt ihm viel über die Welt.",
+      "Schnüffeln ist auf gute Weise geistig anstrengend und kann beruhigen.",
+      "Eine langsame Schnüffelrunde kann einen Hund so zufriedenstellen wie eine schnelle."
+     ],
+     "q": "Was schnüffelt dein Hund am liebsten?",
+     "c": "Plane eine langsame Schnüffelrunde und lass deinen Hund zehn Minuten das Tempo bestimmen."
+    },
+    "es": {
+     "t": "Por qué olfatear importa a los perros",
+     "g": "Descubre el asombroso olfato canino y por qué ayudan los paseos de olfato.",
+     "p": [
+      "El olfato de un perro es mucho más potente que el nuestro y le cuenta mucho del mundo.",
+      "Olfatear cansa la mente de forma positiva y puede calmar a un perro.",
+      "Un paseo lento de olfato puede satisfacer tanto como uno rápido."
+     ],
+     "q": "¿Qué le gusta más olfatear a tu perro?",
+     "c": "Planea un paseo lento de olfato y deja que tu perro marque el ritmo diez minutos."
+    },
+    "fr": {
+     "t": "Pourquoi renifler compte pour les chiens",
+     "g": "Découvre l'incroyable nez du chien et pourquoi les balades olfactives aident.",
+     "p": [
+      "L'odorat d'un chien est bien plus puissant que le nôtre et lui apprend beaucoup du monde.",
+      "Renifler fatigue le cerveau de façon positive et peut apaiser un chien.",
+      "Une balade lente à renifler peut satisfaire autant qu'une balade rapide."
+     ],
+     "q": "Qu'est-ce que ton chien aime le plus renifler ?",
+     "c": "Prévois une balade lente et laisse ton chien mener l'allure dix minutes."
+    },
+    "it": {
+     "t": "Perché annusare è importante per i cani",
+     "g": "Scopri lo straordinario naso del cane e perché le passeggiate olfattive aiutano.",
+     "p": [
+      "L'olfatto del cane è molto più potente del nostro e gli racconta molto del mondo.",
+      "Annusare stanca la mente in modo positivo e può calmare un cane.",
+      "Una passeggiata lenta a fiutare può soddisfare quanto una veloce."
+     ],
+     "q": "Cosa ama annusare di più il tuo cane?",
+     "c": "Pianifica una passeggiata lenta e lascia che il cane guidi il ritmo per dieci minuti."
+    },
+    "pt": {
+     "t": "Porque cheirar é importante para os cães",
+     "g": "Descobre o incrível focinho do cão e porque os passeios de cheiros ajudam.",
+     "p": [
+      "O olfato do cão é muito mais forte do que o nosso e conta-lhe muito sobre o mundo.",
+      "Cheirar cansa a mente de forma positiva e pode acalmar um cão.",
+      "Um passeio lento de cheiros pode satisfazer tanto quanto um rápido."
+     ],
+     "q": "O que gosta mais de cheirar o teu cão?",
+     "c": "Planeia um passeio lento de cheiros e deixa o teu cão ditar o ritmo dez minutos."
+    },
+    "pt_BR": {
+     "t": "Por que cheirar é importante para os cães",
+     "g": "Descubra o incrível focinho do cão e por que passeios de cheiros ajudam.",
+     "p": [
+      "O olfato do cão é muito mais forte que o nosso e conta muito sobre o mundo.",
+      "Cheirar cansa a mente de forma positiva e pode acalmar um cão.",
+      "Um passeio lento de cheiros pode satisfazer tanto quanto um rápido."
+     ],
+     "q": "O que o seu cão mais gosta de cheirar?",
+     "c": "Planeje um passeio lento de cheiros e deixe seu cão ditar o ritmo por dez minutos."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Toilet training a puppy",
+     "g": "Teach where to go with patience and praise.",
+     "p": [
+      "Take a puppy out after meals, naps, play and first thing in the morning.",
+      "Praise and reward the moment it goes in the right spot.",
+      "Accidents are normal; clean up calmly and never scold."
+     ],
+     "q": "How do you plan to handle puppy accidents?",
+     "c": "Plan a toilet schedule with outing times and a reward ready."
+    },
+    "de": {
+     "t": "Welpen stubenrein bekommen",
+     "g": "Bring bei, wo das Geschäft hingehört, mit Geduld und Lob.",
+     "p": [
+      "Geh mit dem Welpen nach Mahlzeiten, Schlaf, Spiel und gleich morgens raus.",
+      "Lobe und belohne genau in dem Moment, in dem er am richtigen Ort ist.",
+      "Missgeschicke sind normal; räum ruhig auf und schimpfe nie."
+     ],
+     "q": "Wie willst du mit Welpen-Missgeschicken umgehen?",
+     "c": "Plane einen Rausgeh-Rhythmus mit Zeiten und bereite eine Belohnung vor."
+    },
+    "es": {
+     "t": "Educar a un cachorro para hacer sus necesidades",
+     "g": "Enseña dónde hacerlas con paciencia y elogios.",
+     "p": [
+      "Saca al cachorro tras comer, dormir, jugar y a primera hora.",
+      "Elogia y premia en el instante en que lo hace en el sitio correcto.",
+      "Los accidentes son normales; limpia con calma y nunca regañes."
+     ],
+     "q": "¿Cómo piensas manejar los accidentes del cachorro?",
+     "c": "Planifica un horario de salidas con una recompensa preparada."
+    },
+    "fr": {
+     "t": "Apprendre la propreté à un chiot",
+     "g": "Enseigne où faire ses besoins avec patience et félicitations.",
+     "p": [
+      "Sors le chiot après les repas, les siestes, le jeu et dès le réveil.",
+      "Félicite et récompense à l'instant où il fait au bon endroit.",
+      "Les accidents sont normaux; nettoie calmement et ne gronde jamais."
+     ],
+     "q": "Comment comptes-tu gérer les accidents du chiot ?",
+     "c": "Planifie des heures de sortie avec une récompense prête."
+    },
+    "it": {
+     "t": "Insegnare a un cucciolo i bisogni",
+     "g": "Insegna dove farli con pazienza e lodi.",
+     "p": [
+      "Porta il cucciolo fuori dopo pasti, sonnellini, gioco e appena sveglio.",
+      "Loda e premia nel momento in cui lo fa nel posto giusto.",
+      "Gli incidenti sono normali; pulisci con calma e non sgridare mai."
+     ],
+     "q": "Come pensi di gestire gli incidenti del cucciolo?",
+     "c": "Pianifica gli orari delle uscite con un premio pronto."
+    },
+    "pt": {
+     "t": "Ensinar um cachorro a fazer as necessidades",
+     "g": "Ensina onde fazer com paciência e elogios.",
+     "p": [
+      "Leva o cachorro à rua depois das refeições, sonecas, brincadeira e logo de manhã.",
+      "Elogia e recompensa no instante em que faz no sítio certo.",
+      "Os acidentes são normais; limpa com calma e nunca ralhes."
+     ],
+     "q": "Como pensas lidar com os acidentes do cachorro?",
+     "c": "Planeia horários de saída com uma recompensa preparada."
+    },
+    "pt_BR": {
+     "t": "Ensinar o filhote a fazer xixi no lugar certo",
+     "g": "Ensine onde fazer com paciência e elogios.",
+     "p": [
+      "Leve o filhote para fora depois das refeições, sonecas, brincadeira e logo cedo.",
+      "Elogie e recompense no instante em que faz no lugar certo.",
+      "Acidentes são normais; limpe com calma e nunca brigue."
+     ],
+     "q": "Como você pretende lidar com os acidentes do filhote?",
+     "c": "Planeje horários de saída com uma recompensa preparada."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Crate training kindly",
+     "g": "Make a crate a cosy den.",
+     "p": [
+      "Introduce the crate slowly with treats, a soft bed and an open door.",
+      "Keep early sessions short and always positive.",
+      "Never use the crate as punishment, and avoid leaving a dog crated too long."
+     ],
+     "q": "Would a crate suit you and your dog?",
+     "c": "Toss a treat into a crate or bed area and let your dog explore freely."
+    },
+    "de": {
+     "t": "Boxentraining mit Freundlichkeit",
+     "g": "Mach die Box zur gemütlichen Höhle.",
+     "p": [
+      "Führe die Box langsam ein, mit Leckerli, weichem Bett und offener Tür.",
+      "Halte frühe Einheiten kurz und immer positiv.",
+      "Nutze die Box nie als Strafe und lass den Hund nicht zu lange darin."
+     ],
+     "q": "Würde eine Box zu dir und deinem Hund passen?",
+     "c": "Wirf ein Leckerli in Box oder Liegeplatz und lass deinen Hund frei erkunden."
+    },
+    "es": {
+     "t": "Entrenar con el transportín con cariño",
+     "g": "Haz del transportín una cómoda guarida.",
+     "p": [
+      "Presenta el transportín poco a poco con premios, cama blanda y puerta abierta.",
+      "Mantén las primeras sesiones cortas y siempre positivas.",
+      "Nunca lo uses como castigo y evita dejar al perro encerrado demasiado tiempo."
+     ],
+     "q": "¿Te iría bien un transportín a ti y a tu perro?",
+     "c": "Echa un premio dentro del transportín o la cama y deja que tu perro explore."
+    },
+    "fr": {
+     "t": "Habituer à la caisse en douceur",
+     "g": "Fais de la caisse une tanière douillette.",
+     "p": [
+      "Présente la caisse lentement, avec friandises, coussin doux et porte ouverte.",
+      "Garde les premières séances courtes et toujours positives.",
+      "Ne l'utilise jamais comme punition et évite d'y laisser le chien trop longtemps."
+     ],
+     "q": "Une caisse conviendrait-elle à toi et à ton chien ?",
+     "c": "Lance une friandise dans la caisse ou le coussin et laisse ton chien explorer."
+    },
+    "it": {
+     "t": "Addestrare al trasportino con gentilezza",
+     "g": "Fai del trasportino una tana accogliente.",
+     "p": [
+      "Presenta il trasportino piano, con premietti, cuscino morbido e porta aperta.",
+      "Mantieni brevi le prime sessioni e sempre positive.",
+      "Non usarlo mai come punizione ed evita di lasciarvi il cane troppo a lungo."
+     ],
+     "q": "Un trasportino andrebbe bene a te e al tuo cane?",
+     "c": "Lancia un premietto nel trasportino o sulla cuccia e lascia esplorare il cane."
+    },
+    "pt": {
+     "t": "Treino da caixa com carinho",
+     "g": "Faz da caixa uma toca acolhedora.",
+     "p": [
+      "Apresenta a caixa devagar, com petiscos, cama macia e porta aberta.",
+      "Mantém as primeiras sessões curtas e sempre positivas.",
+      "Nunca uses a caixa como castigo e evita deixar o cão fechado muito tempo."
+     ],
+     "q": "Uma caixa serviria a ti e ao teu cão?",
+     "c": "Atira um petisco para a caixa ou cama e deixa o teu cão explorar à vontade."
+    },
+    "pt_BR": {
+     "t": "Treino da caixa de transporte com carinho",
+     "g": "Faça da caixa uma toca aconchegante.",
+     "p": [
+      "Apresente a caixa devagar, com petiscos, caminha macia e porta aberta.",
+      "Mantenha as primeiras sessões curtas e sempre positivas.",
+      "Nunca use a caixa como castigo e evite deixar o cão preso por muito tempo."
+     ],
+     "q": "Uma caixa serviria para você e seu cão?",
+     "c": "Jogue um petisco na caixa ou na caminha e deixe seu cão explorar à vontade."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Teaching your dog its name",
+     "g": "Build attention with name games and rewards.",
+     "p": [
+      "Say the name in a happy voice, and reward the moment your dog looks at you.",
+      "Practise in quiet places first, then add small distractions.",
+      "Use the name for good things, never for scolding."
+     ],
+     "q": "What name does your dog respond to best?",
+     "c": "Do five name-and-treat repeats in a quiet room."
+    },
+    "de": {
+     "t": "Deinem Hund den Namen beibringen",
+     "g": "Baue Aufmerksamkeit mit Namensspielen und Belohnungen auf.",
+     "p": [
+      "Sag den Namen fröhlich und belohne den Moment, in dem dein Hund dich ansieht.",
+      "Übe erst an ruhigen Orten, dann mit kleinen Ablenkungen.",
+      "Nutze den Namen für Gutes, nie zum Schimpfen."
+     ],
+     "q": "Auf welchen Namen reagiert dein Hund am besten?",
+     "c": "Mach in einem ruhigen Raum fünf Wiederholungen mit Namen und Leckerli."
+    },
+    "es": {
+     "t": "Enseñar a tu perro su nombre",
+     "g": "Construye atención con juegos de nombre y recompensas.",
+     "p": [
+      "Di su nombre con voz alegre y premia el instante en que te mire.",
+      "Practica primero en sitios tranquilos y luego añade pequeñas distracciones.",
+      "Usa el nombre para cosas buenas, nunca para regañar."
+     ],
+     "q": "¿A qué nombre responde mejor tu perro?",
+     "c": "Haz cinco repeticiones de nombre y premio en una habitación tranquila."
+    },
+    "fr": {
+     "t": "Apprendre son prénom à ton chien",
+     "g": "Construis l'attention avec des jeux de prénom et des récompenses.",
+     "p": [
+      "Dis son prénom d'une voix joyeuse et récompense l'instant où il te regarde.",
+      "Entraîne-toi d'abord au calme, puis ajoute de petites distractions.",
+      "Utilise son prénom pour du positif, jamais pour gronder."
+     ],
+     "q": "À quel prénom ton chien répond-il le mieux ?",
+     "c": "Fais cinq répétitions prénom et friandise dans une pièce calme."
+    },
+    "it": {
+     "t": "Insegnare al cane il suo nome",
+     "g": "Costruisci attenzione con giochi del nome e premi.",
+     "p": [
+      "Di' il nome con voce allegra e premia il momento in cui il cane ti guarda.",
+      "Esercitati prima in posti tranquilli, poi aggiungi piccole distrazioni.",
+      "Usa il nome per cose belle, mai per sgridare."
+     ],
+     "q": "A quale nome risponde meglio il tuo cane?",
+     "c": "Fai cinque ripetizioni di nome e premietto in una stanza tranquilla."
+    },
+    "pt": {
+     "t": "Ensinar o nome ao teu cão",
+     "g": "Cria atenção com jogos do nome e recompensas.",
+     "p": [
+      "Diz o nome com voz alegre e recompensa o instante em que te olha.",
+      "Pratica primeiro em locais calmos e depois junta pequenas distrações.",
+      "Usa o nome para coisas boas, nunca para ralhar."
+     ],
+     "q": "A que nome responde melhor o teu cão?",
+     "c": "Faz cinco repetições de nome e petisco numa divisão calma."
+    },
+    "pt_BR": {
+     "t": "Ensinar o nome ao seu cão",
+     "g": "Crie atenção com jogos do nome e recompensas.",
+     "p": [
+      "Diga o nome com voz alegre e recompense o instante em que ele olha para você.",
+      "Pratique primeiro em locais calmos e depois acrescente pequenas distrações.",
+      "Use o nome para coisas boas, nunca para brigar."
+     ],
+     "q": "A que nome o seu cão responde melhor?",
+     "c": "Faça cinco repetições de nome e petisco em um cômodo calmo."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Positive reinforcement explained",
+     "g": "Understand the friendly science behind training.",
+     "p": [
+      "Rewarding behaviour you like makes it more likely to happen again.",
+      "Rewards can be treats, praise, play or a favourite walk.",
+      "Be quick, kind and consistent, and end sessions on a success."
+     ],
+     "q": "What would you like to reward your pet for?",
+     "c": "Catch your pet doing something good today and reward it."
+    },
+    "de": {
+     "t": "Positive Verstärkung erklärt",
+     "g": "Verstehe die freundliche Wissenschaft hinter dem Training.",
+     "p": [
+      "Erwünschtes Verhalten zu belohnen macht es wahrscheinlicher, dass es wiederkommt.",
+      "Belohnungen können Leckerli, Lob, Spiel oder ein Lieblingsspaziergang sein.",
+      "Sei schnell, freundlich und konsequent und beende Einheiten mit einem Erfolg."
+     ],
+     "q": "Wofür möchtest du dein Tier gern belohnen?",
+     "c": "Ertappe dein Tier heute bei etwas Gutem und belohne es."
+    },
+    "es": {
+     "t": "El refuerzo positivo explicado",
+     "g": "Entiende la ciencia amable detrás del entrenamiento.",
+     "p": [
+      "Premiar la conducta que te gusta hace más probable que se repita.",
+      "Los premios pueden ser snacks, elogios, juego o un paseo favorito.",
+      "Sé rápido, amable y constante, y termina las sesiones con un éxito."
+     ],
+     "q": "¿Por qué te gustaría premiar a tu mascota?",
+     "c": "Sorprende a tu mascota haciendo algo bueno hoy y prémiala."
+    },
+    "fr": {
+     "t": "Le renforcement positif expliqué",
+     "g": "Comprends la science bienveillante derrière l'éducation.",
+     "p": [
+      "Récompenser un comportement souhaité le rend plus probable à l'avenir.",
+      "Les récompenses peuvent être friandises, félicitations, jeu ou balade préférée.",
+      "Sois rapide, gentil et constant, et termine sur une réussite."
+     ],
+     "q": "Pour quoi aimerais-tu récompenser ton animal ?",
+     "c": "Surprends ton animal en train de bien faire et récompense-le aujourd'hui."
+    },
+    "it": {
+     "t": "Il rinforzo positivo spiegato",
+     "g": "Capisci la scienza gentile dietro l'addestramento.",
+     "p": [
+      "Premiare il comportamento che ti piace lo rende più probabile in futuro.",
+      "I premi possono essere bocconcini, lodi, gioco o la passeggiata preferita.",
+      "Sii rapido, gentile e coerente e chiudi con un successo."
+     ],
+     "q": "Per cosa vorresti premiare il tuo animale?",
+     "c": "Sorprendi il tuo animale a fare qualcosa di buono oggi e premialo."
+    },
+    "pt": {
+     "t": "O reforço positivo explicado",
+     "g": "Percebe a ciência amiga por trás do treino.",
+     "p": [
+      "Recompensar o comportamento que gostas torna-o mais provável no futuro.",
+      "As recompensas podem ser petiscos, elogios, brincadeira ou um passeio favorito.",
+      "Sê rápido, simpático e constante, e termina as sessões com um sucesso."
+     ],
+     "q": "Pelo que gostarias de recompensar o teu animal?",
+     "c": "Apanha hoje o teu animal a fazer algo bom e recompensa-o."
+    },
+    "pt_BR": {
+     "t": "O reforço positivo explicado",
+     "g": "Entenda a ciência amiga por trás do treino.",
+     "p": [
+      "Recompensar o comportamento que você gosta o torna mais provável no futuro.",
+      "As recompensas podem ser petiscos, elogios, brincadeira ou um passeio favorito.",
+      "Seja rápido, gentil e constante, e termine as sessões com um sucesso."
+     ],
+     "q": "Pelo que você gostaria de recompensar o seu pet?",
+     "c": "Flagre hoje o seu pet fazendo algo bom e recompense."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Sit: your first cue",
+     "g": "Teach a sit step by step with a treat lure.",
+     "p": [
+      "Hold a treat at the dog's nose and slowly move it up and back over the head.",
+      "When the bottom touches the floor, say yes and reward at once.",
+      "Add the word sit once it happens reliably, then fade the lure."
+     ],
+     "q": "How many sit repeats can your dog manage happily?",
+     "c": "Do a two-minute sit session, ending while your dog is still keen."
+    },
+    "de": {
+     "t": "Sitz: dein erstes Signal",
+     "g": "Bring Sitz Schritt für Schritt mit Leckerli-Führung bei.",
+     "p": [
+      "Halte ein Leckerli an die Nase und führe es langsam nach oben und hinten über den Kopf.",
+      "Sobald der Po den Boden berührt, sag Ja und belohne sofort.",
+      "Füge das Wort Sitz hinzu, wenn es zuverlässig klappt, und blende die Lockhilfe aus."
+     ],
+     "q": "Wie viele Sitz-Wiederholungen macht dein Hund gern mit?",
+     "c": "Mach zwei Minuten Sitz-Training und hör auf, solange dein Hund noch Lust hat."
+    },
+    "es": {
+     "t": "Sentado: tu primera orden",
+     "g": "Enseña sentarse paso a paso con un premio como guía.",
+     "p": [
+      "Sujeta un premio ante la nariz y llévalo despacio hacia arriba y atrás sobre la cabeza.",
+      "Cuando el trasero toque el suelo, di sí y premia al instante.",
+      "Añade la palabra sienta cuando salga con fiabilidad y retira el cebo."
+     ],
+     "q": "¿Cuántas repeticiones de sentarse hace tu perro con gusto?",
+     "c": "Haz dos minutos de práctica de sentarse y termina cuando aún tenga ganas."
+    },
+    "fr": {
+     "t": "Assis : ton premier signal",
+     "g": "Enseigne assis pas à pas avec une friandise en leurre.",
+     "p": [
+      "Tiens une friandise devant le nez et monte-la lentement vers l'arrière au-dessus de la tête.",
+      "Quand l'arrière-train touche le sol, dis oui et récompense aussitôt.",
+      "Ajoute le mot assis quand il réussit à coup sûr, puis supprime le leurre."
+     ],
+     "q": "Combien de répétitions d'assis ton chien fait-il avec plaisir ?",
+     "c": "Fais deux minutes d'assis et arrête tant que ton chien est motivé."
+    },
+    "it": {
+     "t": "Seduto: il tuo primo comando",
+     "g": "Insegna il seduto passo passo guidando con un premietto.",
+     "p": [
+      "Tieni un bocconcino al naso e portalo piano in alto e indietro sopra la testa.",
+      "Quando il sedere tocca terra, dì sì e premia subito.",
+      "Aggiungi la parola seduto quando riesce di sicuro, poi togli l'esca."
+     ],
+     "q": "Quante ripetizioni di seduto fa volentieri il tuo cane?",
+     "c": "Fai due minuti di seduto e fermati finché il cane è ancora motivato."
+    },
+    "pt": {
+     "t": "Senta: o teu primeiro sinal",
+     "g": "Ensina o sentar passo a passo com um petisco como isco.",
+     "p": [
+      "Segura um petisco junto ao nariz e leva-o devagar para cima e para trás sobre a cabeça.",
+      "Quando o rabo tocar no chão, diz sim e recompensa logo.",
+      "Junta a palavra senta quando sair com segurança e retira o isco."
+     ],
+     "q": "Quantas repetições de sentar faz o teu cão com gosto?",
+     "c": "Faz dois minutos de treino de sentar e para enquanto o teu cão ainda está motivado."
+    },
+    "pt_BR": {
+     "t": "Senta: seu primeiro comando",
+     "g": "Ensine o sentar passo a passo com um petisco como isca.",
+     "p": [
+      "Segure um petisco junto ao focinho e leve devagar para cima e para trás sobre a cabeça.",
+      "Quando o bumbum tocar o chão, diga sim e recompense na hora.",
+      "Acrescente a palavra senta quando sair com segurança e retire a isca."
+     ],
+     "q": "Quantas repetições de sentar o seu cão faz com gosto?",
+     "c": "Faça dois minutos de treino de sentar e pare enquanto o seu cão ainda está motivado."
+    }
+   }
+  }
+ ]
+}

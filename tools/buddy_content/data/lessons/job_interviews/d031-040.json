@@ -1,0 +1,835 @@
+{
+ "topic": "job_interviews",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "First impressions",
+     "g": "See how the first minutes, the greeting and small talk set the tone.",
+     "p": [
+      "People form a first impression within moments of meeting you.",
+      "A warm smile, a clear greeting and the person's name help a lot.",
+      "Calm energy matters more than perfection in those first minutes."
+     ],
+     "q": "What do you do to feel welcoming when you meet someone new?",
+     "c": "Practise a greeting: smile, say hello and your name, and repeat it three times."
+    },
+    "de": {
+     "t": "Erste Eindrücke",
+     "g": "Verstehen, wie die ersten Minuten, die Begrüßung und Smalltalk den Ton setzen.",
+     "p": [
+      "Menschen bilden sich in Sekunden einen ersten Eindruck von dir.",
+      "Ein warmes Lächeln, eine klare Begrüßung und der Name der Person helfen sehr.",
+      "Ruhige Ausstrahlung zählt in diesen Minuten mehr als Perfektion."
+     ],
+     "q": "Was tust du, um bei neuen Begegnungen freundlich zu wirken?",
+     "c": "Übe eine Begrüßung: lächeln, Hallo und Namen sagen, dreimal wiederholen."
+    },
+    "es": {
+     "t": "Primeras impresiones",
+     "g": "Ver cómo los primeros minutos, el saludo y la charla inicial marcan el tono.",
+     "p": [
+      "La gente se forma una primera impresión a los pocos instantes de conocerte.",
+      "Una sonrisa cálida, un saludo claro y el nombre de la persona ayudan mucho.",
+      "En esos primeros minutos importa más la calma que la perfección."
+     ],
+     "q": "¿Qué haces para parecer cercano cuando conoces a alguien?",
+     "c": "Practica un saludo: sonríe, di hola y tu nombre, y repítelo tres veces."
+    },
+    "fr": {
+     "t": "Les premières impressions",
+     "g": "Voir comment les premières minutes, la salutation et les échanges légers donnent le ton.",
+     "p": [
+      "On se fait une première impression en quelques instants.",
+      "Un sourire chaleureux, une salutation claire et le prénom de la personne aident beaucoup.",
+      "Dans ces premières minutes, le calme compte plus que la perfection."
+     ],
+     "q": "Que faites-vous pour paraître accueillant quand vous rencontrez quelqu'un ?",
+     "c": "Entraînez-vous à saluer : sourire, dire bonjour et votre nom, trois fois de suite."
+    },
+    "it": {
+     "t": "Le prime impressioni",
+     "g": "Capire come i primi minuti, il saluto e le chiacchiere iniziali danno il tono.",
+     "p": [
+      "Le persone si fanno una prima impressione in pochi istanti.",
+      "Un sorriso caloroso, un saluto chiaro e il nome della persona aiutano molto.",
+      "In quei primi minuti conta più la calma che la perfezione."
+     ],
+     "q": "Cosa fai per risultare accogliente quando conosci qualcuno?",
+     "c": "Esercita un saluto: sorridi, di' ciao e il tuo nome, ripetilo tre volte."
+    },
+    "pt": {
+     "t": "Primeiras impressões",
+     "g": "Perceber como os primeiros minutos, o cumprimento e a conversa inicial definem o tom.",
+     "p": [
+      "As pessoas formam uma primeira impressão em poucos instantes.",
+      "Um sorriso caloroso, um cumprimento claro e o nome da pessoa ajudam muito.",
+      "Nesses primeiros minutos, a calma conta mais do que a perfeição."
+     ],
+     "q": "O que fazes para parecer simpático quando conheces alguém?",
+     "c": "Pratica um cumprimento: sorri, diz olá e o teu nome, e repete três vezes."
+    },
+    "pt_BR": {
+     "t": "Primeiras impressões",
+     "g": "Entender como os primeiros minutos, o cumprimento e a conversa inicial definem o tom.",
+     "p": [
+      "As pessoas formam uma primeira impressão em poucos instantes.",
+      "Um sorriso caloroso, um cumprimento claro e o nome da pessoa ajudam muito.",
+      "Nesses primeiros minutos, a calma vale mais que a perfeição."
+     ],
+     "q": "O que você faz para parecer acolhedor quando conhece alguém?",
+     "c": "Pratique um cumprimento: sorria, diga oi e seu nome, e repita três vezes."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Small talk at the start",
+     "g": "Use easy, friendly topics for the minutes before the formal questions begin.",
+     "p": [
+      "Safe topics include the journey, the building, the weather or a pleasant moment.",
+      "Keep it short and light, and let the interviewer lead the shift to business.",
+      "Avoid complaints and personal or sensitive subjects."
+     ],
+     "q": "What is your go-to friendly topic when you meet someone new?",
+     "c": "Prepare three small talk lines you could use in the first minutes."
+    },
+    "de": {
+     "t": "Smalltalk zu Beginn",
+     "g": "Leichte, freundliche Themen für die Minuten vor den eigentlichen Fragen nutzen.",
+     "p": [
+      "Sichere Themen sind Anreise, Gebäude, Wetter oder ein netter Moment.",
+      "Halte es kurz und leicht und lass die Gegenseite zum Fachlichen überleiten.",
+      "Vermeide Beschwerden sowie persönliche oder heikle Themen."
+     ],
+     "q": "Welches freundliche Thema bringst du bei neuen Begegnungen gern?",
+     "c": "Bereite drei Smalltalk-Sätze für die ersten Minuten vor."
+    },
+    "es": {
+     "t": "Charla inicial",
+     "g": "Usar temas fáciles y amables para los minutos previos a las preguntas formales.",
+     "p": [
+      "Temas seguros: el trayecto, el edificio, el tiempo o algo agradable del momento.",
+      "Sé breve y ligero, y deja que quien entrevista dé el paso al tema profesional.",
+      "Evita quejas y asuntos personales o delicados."
+     ],
+     "q": "¿Cuál es tu tema amable de siempre al conocer a alguien?",
+     "c": "Prepara tres frases de charla inicial que puedas usar en los primeros minutos."
+    },
+    "fr": {
+     "t": "Les échanges légers au début",
+     "g": "Utiliser des sujets simples et aimables pour les minutes avant les questions formelles.",
+     "p": [
+      "Sujets sûrs : le trajet, le bâtiment, la météo ou un moment agréable.",
+      "Restez bref et léger, et laissez l'interlocuteur amener la partie professionnelle.",
+      "Évitez les plaintes et les sujets personnels ou sensibles."
+     ],
+     "q": "Quel est votre sujet aimable habituel quand vous rencontrez quelqu'un ?",
+     "c": "Préparez trois phrases légères à utiliser dans les premières minutes."
+    },
+    "it": {
+     "t": "Le chiacchiere iniziali",
+     "g": "Usare argomenti semplici e cordiali per i minuti prima delle domande formali.",
+     "p": [
+      "Argomenti sicuri: il viaggio, l'edificio, il tempo o un momento piacevole.",
+      "Resta breve e leggero e lascia che sia l'intervistatore a passare al lavoro.",
+      "Evita lamentele e argomenti personali o delicati."
+     ],
+     "q": "Qual è il tuo argomento cordiale di sempre quando conosci qualcuno?",
+     "c": "Prepara tre frasi leggere da usare nei primi minuti."
+    },
+    "pt": {
+     "t": "A conversa inicial",
+     "g": "Usar temas simples e simpáticos para os minutos antes das perguntas formais.",
+     "p": [
+      "Temas seguros: a viagem, o edifício, o tempo ou algo agradável do momento.",
+      "Sê breve e leve, e deixa o entrevistador passar para o tema profissional.",
+      "Evita queixas e assuntos pessoais ou delicados."
+     ],
+     "q": "Qual é o teu tema simpático habitual quando conheces alguém?",
+     "c": "Prepara três frases de conversa inicial que possas usar nos primeiros minutos."
+    },
+    "pt_BR": {
+     "t": "A conversa inicial",
+     "g": "Usar temas simples e simpáticos para os minutos antes das perguntas formais.",
+     "p": [
+      "Temas seguros: o trajeto, o prédio, o clima ou algo agradável do momento.",
+      "Seja breve e leve, e deixe o entrevistador puxar o assunto profissional.",
+      "Evite reclamações e assuntos pessoais ou delicados."
+     ],
+     "q": "Qual é o seu tema simpático de sempre quando conhece alguém?",
+     "c": "Prepare três frases de conversa inicial para usar nos primeiros minutos."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Body language basics",
+     "g": "Use posture, eye contact and open gestures to show calm confidence.",
+     "p": [
+      "Sit upright but relaxed, with your feet flat and shoulders down.",
+      "Keep friendly eye contact, looking away naturally now and then.",
+      "Let your hands move openly and avoid hiding them or fidgeting."
+     ],
+     "q": "Which body language habit do you think you already do well?",
+     "c": "Practise sitting and speaking for one minute while keeping an open posture."
+    },
+    "de": {
+     "t": "Körpersprache-Grundlagen",
+     "g": "Mit Haltung, Blickkontakt und offenen Gesten ruhige Zuversicht zeigen.",
+     "p": [
+      "Sitze aufrecht, aber entspannt, Füße am Boden und Schultern locker.",
+      "Halte freundlichen Blickkontakt und schau zwischendurch natürlich weg.",
+      "Lass die Hände offen mitsprechen und vermeide Verstecken oder Herumfummeln."
+     ],
+     "q": "Welche Körpersprache-Gewohnheit machst du schon gut?",
+     "c": "Übe eine Minute lang, mit offener Haltung zu sitzen und zu sprechen."
+    },
+    "es": {
+     "t": "Lenguaje corporal básico",
+     "g": "Usar postura, contacto visual y gestos abiertos para transmitir calma y seguridad.",
+     "p": [
+      "Siéntate recto pero relajado, con los pies apoyados y los hombros sueltos.",
+      "Mantén un contacto visual amable y aparta la mirada con naturalidad de vez en cuando.",
+      "Deja que tus manos se muevan con apertura y evita esconderlas o inquietarte."
+     ],
+     "q": "¿Qué hábito de lenguaje corporal crees que ya haces bien?",
+     "c": "Practica sentado y hablando durante un minuto con una postura abierta."
+    },
+    "fr": {
+     "t": "Les bases du langage corporel",
+     "g": "Utiliser posture, regard et gestes ouverts pour montrer une confiance sereine.",
+     "p": [
+      "Asseyez-vous droit mais détendu, les pieds à plat et les épaules basses.",
+      "Gardez un regard amical, en détournant naturellement les yeux de temps en temps.",
+      "Laissez vos mains bouger ouvertement, sans les cacher ni vous agiter."
+     ],
+     "q": "Quelle habitude de langage corporel pensez-vous déjà bien maîtriser ?",
+     "c": "Entraînez-vous une minute assis et en parlant, avec une posture ouverte."
+    },
+    "it": {
+     "t": "Le basi del linguaggio del corpo",
+     "g": "Usare postura, contatto visivo e gesti aperti per mostrare calma e sicurezza.",
+     "p": [
+      "Siediti dritto ma rilassato, con i piedi a terra e le spalle morbide.",
+      "Mantieni un contatto visivo cordiale, distogliendo lo sguardo con naturalezza ogni tanto.",
+      "Lascia muovere le mani in modo aperto ed evita di nasconderle o agitarti."
+     ],
+     "q": "Quale abitudine del linguaggio del corpo pensi di avere già buona?",
+     "c": "Esercitati un minuto seduto e parlando, con una postura aperta."
+    },
+    "pt": {
+     "t": "Noções de linguagem corporal",
+     "g": "Usar postura, contacto visual e gestos abertos para mostrar calma e confiança.",
+     "p": [
+      "Senta-te direito mas descontraído, com os pés assentes e os ombros soltos.",
+      "Mantém um contacto visual simpático e desvia o olhar naturalmente de vez em quando.",
+      "Deixa as mãos mexerem-se com abertura e evita escondê-las ou irrequietar-te."
+     ],
+     "q": "Que hábito de linguagem corporal achas que já tens bom?",
+     "c": "Pratica sentado e a falar durante um minuto com uma postura aberta."
+    },
+    "pt_BR": {
+     "t": "Noções de linguagem corporal",
+     "g": "Usar postura, contato visual e gestos abertos para mostrar calma e confiança.",
+     "p": [
+      "Sente-se reto, mas relaxado, com os pés no chão e os ombros soltos.",
+      "Mantenha um contato visual simpático e desvie o olhar naturalmente de vez em quando.",
+      "Deixe as mãos se mexerem com abertura e evite escondê-las ou ficar inquieto."
+     ],
+     "q": "Que hábito de linguagem corporal você acha que já faz bem?",
+     "c": "Pratique sentado e falando por um minuto com uma postura aberta."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Greetings across cultures",
+     "g": "Greetings such as handshakes and bows vary by culture and setting.",
+     "p": [
+      "Handshakes, nods, bows and light hellos are all normal somewhere.",
+      "When unsure, follow the other person's lead and stay warm and respectful.",
+      "A genuine smile and polite words work almost everywhere."
+     ],
+     "q": "Which greeting customs from different cultures do you know?",
+     "c": "Learn about one greeting custom from a country you may deal with."
+    },
+    "de": {
+     "t": "Begrüßungen in verschiedenen Kulturen",
+     "g": "Handschlag, Verbeugung und andere Begrüßungen unterscheiden sich je nach Kultur und Situation.",
+     "p": [
+      "Handschlag, Nicken, Verbeugung und lockeres Hallo sind irgendwo alle normal.",
+      "Bist du unsicher, folge dem Beispiel der anderen Person und bleib warm und respektvoll.",
+      "Ein echtes Lächeln und höfliche Worte funktionieren fast überall."
+     ],
+     "q": "Welche Begrüßungsbräuche aus anderen Kulturen kennst du?",
+     "c": "Informiere dich über einen Begrüßungsbrauch eines Landes, mit dem du zu tun haben könntest."
+    },
+    "es": {
+     "t": "Saludos en distintas culturas",
+     "g": "Los saludos, como el apretón de manos o la reverencia, varían según cultura y contexto.",
+     "p": [
+      "Apretón de manos, gesto con la cabeza, reverencia o un hola ligero: todos son normales en algún lugar.",
+      "Si dudas, sigue el ejemplo de la otra persona y mantente cálido y respetuoso.",
+      "Una sonrisa sincera y palabras corteses funcionan casi en todas partes."
+     ],
+     "q": "¿Qué costumbres de saludo de otras culturas conoces?",
+     "c": "Infórmate de una costumbre de saludo de un país con el que podrías tratar."
+    },
+    "fr": {
+     "t": "Les salutations selon les cultures",
+     "g": "Les salutations, comme la poignée de main ou le salut incliné, varient selon la culture et le contexte.",
+     "p": [
+      "Poignée de main, hochement de tête, inclinaison ou simple bonjour : tout est normal quelque part.",
+      "En cas de doute, suivez l'initiative de l'autre en restant chaleureux et respectueux.",
+      "Un sourire sincère et des mots polis marchent presque partout."
+     ],
+     "q": "Quelles coutumes de salutation d'autres cultures connaissez-vous ?",
+     "c": "Renseignez-vous sur une coutume de salutation d'un pays avec lequel vous pourriez travailler."
+    },
+    "it": {
+     "t": "Saluti nelle diverse culture",
+     "g": "I saluti, come la stretta di mano o l'inchino, variano per cultura e contesto.",
+     "p": [
+      "Stretta di mano, cenno del capo, inchino o un semplice ciao: tutto è normale da qualche parte.",
+      "Nel dubbio, segui l'esempio dell'altra persona e resta cordiale e rispettoso.",
+      "Un sorriso sincero e parole cortesi funzionano quasi ovunque."
+     ],
+     "q": "Quali usanze di saluto di altre culture conosci?",
+     "c": "Informati su un'usanza di saluto di un paese con cui potresti avere a che fare."
+    },
+    "pt": {
+     "t": "Cumprimentos em diferentes culturas",
+     "g": "Os cumprimentos, como o aperto de mão ou a vénia, variam consoante a cultura e o contexto.",
+     "p": [
+      "Aperto de mão, aceno de cabeça, vénia ou um olá leve: tudo é normal em algum lugar.",
+      "Em caso de dúvida, segue o exemplo da outra pessoa e mantém-te simpático e respeitoso.",
+      "Um sorriso sincero e palavras corteses funcionam quase em todo o lado."
+     ],
+     "q": "Que costumes de cumprimento de outras culturas conheces?",
+     "c": "Informa-te sobre um costume de cumprimento de um país com que possas lidar."
+    },
+    "pt_BR": {
+     "t": "Cumprimentos em diferentes culturas",
+     "g": "Os cumprimentos, como o aperto de mão ou a reverência, variam conforme a cultura e o contexto.",
+     "p": [
+      "Aperto de mão, aceno de cabeça, reverência ou um oi leve: tudo é normal em algum lugar.",
+      "Na dúvida, siga o exemplo da outra pessoa e mantenha-se simpático e respeitoso.",
+      "Um sorriso sincero e palavras educadas funcionam quase em qualquer lugar."
+     ],
+     "q": "Que costumes de cumprimento de outras culturas você conhece?",
+     "c": "Pesquise um costume de cumprimento de um país com o qual você poderia lidar."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your voice and pace",
+     "g": "Speak clearly and at a calm pace, with pauses that give answers weight.",
+     "p": [
+      "Nerves make most people speed up, so aim slightly slower than usual.",
+      "Pauses at the end of sentences help listeners absorb your points.",
+      "Vary your tone so you sound engaged rather than flat."
+     ],
+     "q": "Do you tend to speak faster or slower when you feel nervous?",
+     "c": "Read a paragraph aloud at a calm pace, pausing after each sentence."
+    },
+    "de": {
+     "t": "Stimme und Tempo",
+     "g": "Klar und in ruhigem Tempo sprechen, mit Pausen, die Antworten Gewicht geben.",
+     "p": [
+      "Nervosität macht die meisten schneller, also sprich etwas langsamer als gewohnt.",
+      "Pausen am Satzende helfen den Zuhörenden, deine Punkte aufzunehmen.",
+      "Variiere deinen Ton, damit du engagiert statt monoton klingst."
+     ],
+     "q": "Sprichst du bei Nervosität eher schneller oder langsamer?",
+     "c": "Lies einen Absatz in ruhigem Tempo laut vor und mache nach jedem Satz eine Pause."
+    },
+    "es": {
+     "t": "Tu voz y tu ritmo",
+     "g": "Hablar con claridad y a ritmo tranquilo, con pausas que den peso a las respuestas.",
+     "p": [
+      "Los nervios aceleran a casi todos, así que apunta a ir algo más lento de lo normal.",
+      "Las pausas al final de las frases ayudan a asimilar tus ideas.",
+      "Varía el tono para sonar implicado y no monótono."
+     ],
+     "q": "¿Sueles hablar más rápido o más lento cuando estás nervioso?",
+     "c": "Lee un párrafo en voz alta con ritmo calmado, haciendo una pausa tras cada frase."
+    },
+    "fr": {
+     "t": "Votre voix et votre rythme",
+     "g": "Parler clairement et calmement, avec des pauses qui donnent du poids aux réponses.",
+     "p": [
+      "Le stress accélère la plupart des gens : visez un peu plus lent que d'habitude.",
+      "Les pauses en fin de phrase aident l'auditeur à retenir vos idées.",
+      "Variez l'intonation pour paraître impliqué plutôt que monotone."
+     ],
+     "q": "Parlez-vous plus vite ou plus lentement quand vous êtes nerveux ?",
+     "c": "Lisez un paragraphe à voix haute, calmement, en marquant une pause après chaque phrase."
+    },
+    "it": {
+     "t": "Voce e ritmo",
+     "g": "Parlare in modo chiaro e con ritmo calmo, con pause che danno peso alle risposte.",
+     "p": [
+      "L'agitazione fa accelerare quasi tutti, quindi punta a essere un po' più lento del solito.",
+      "Le pause a fine frase aiutano chi ascolta a recepire i tuoi punti.",
+      "Varia il tono per sembrare coinvolto e non piatto."
+     ],
+     "q": "Quando sei agitato tendi a parlare più veloce o più lento?",
+     "c": "Leggi un paragrafo ad alta voce con ritmo calmo, facendo una pausa dopo ogni frase."
+    },
+    "pt": {
+     "t": "A tua voz e o ritmo",
+     "g": "Falar com clareza e a um ritmo calmo, com pausas que dão peso às respostas.",
+     "p": [
+      "Os nervos aceleram quase toda a gente, por isso procura falar um pouco mais devagar.",
+      "As pausas no fim das frases ajudam a assimilar as tuas ideias.",
+      "Varia o tom para pareceres envolvido e não monótono."
+     ],
+     "q": "Costumas falar mais depressa ou mais devagar quando estás nervoso?",
+     "c": "Lê um parágrafo em voz alta com ritmo calmo, fazendo uma pausa depois de cada frase."
+    },
+    "pt_BR": {
+     "t": "Sua voz e o ritmo",
+     "g": "Falar com clareza e em ritmo calmo, com pausas que dão peso às respostas.",
+     "p": [
+      "O nervosismo acelera quase todo mundo, então busque falar um pouco mais devagar.",
+      "Pausas no fim das frases ajudam a absorver suas ideias.",
+      "Varie o tom para soar envolvido e não monótono."
+     ],
+     "q": "Você costuma falar mais rápido ou mais devagar quando está nervoso?",
+     "c": "Leia um parágrafo em voz alta em ritmo calmo, fazendo uma pausa após cada frase."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Filler words",
+     "g": "Reduce um, like and you know by replacing them with short pauses.",
+     "p": [
+      "Filler words are normal, but too many can hide your good ideas.",
+      "Notice your favourite filler and the moments it appears.",
+      "Replace it with a quiet breath, which sounds confident."
+     ],
+     "q": "Do you know which filler word you use most?",
+     "c": "Answer a question for one minute and try to use zero filler words."
+    },
+    "de": {
+     "t": "Füllwörter",
+     "g": "Äh, also und irgendwie verringern, indem du sie durch kurze Pausen ersetzt.",
+     "p": [
+      "Füllwörter sind normal, doch zu viele können gute Ideen verdecken.",
+      "Finde dein Lieblingsfüllwort heraus und wann es auftaucht.",
+      "Ersetze es durch einen ruhigen Atemzug, das wirkt selbstsicher."
+     ],
+     "q": "Weißt du, welches Füllwort du am häufigsten benutzt?",
+     "c": "Beantworte eine Frage eine Minute lang und versuche, ganz ohne Füllwörter auszukommen."
+    },
+    "es": {
+     "t": "Muletillas",
+     "g": "Reducir los eh, o sea y ¿sabes? sustituyéndolos por pausas breves.",
+     "p": [
+      "Las muletillas son normales, pero demasiadas pueden tapar tus buenas ideas.",
+      "Descubre tu muletilla favorita y en qué momentos aparece.",
+      "Sustitúyela por una respiración tranquila, que suena segura."
+     ],
+     "q": "¿Sabes cuál es la muletilla que más usas?",
+     "c": "Responde una pregunta durante un minuto e intenta no usar ninguna muletilla."
+    },
+    "fr": {
+     "t": "Les tics de langage",
+     "g": "Réduire les euh, genre et tu vois en les remplaçant par de courtes pauses.",
+     "p": [
+      "Les tics de langage sont normaux, mais trop nombreux, ils masquent vos bonnes idées.",
+      "Repérez votre tic préféré et les moments où il apparaît.",
+      "Remplacez-le par une respiration tranquille, qui paraît confiante."
+     ],
+     "q": "Savez-vous quel tic de langage vous utilisez le plus ?",
+     "c": "Répondez à une question pendant une minute en essayant de n'utiliser aucun tic."
+    },
+    "it": {
+     "t": "Gli intercalari",
+     "g": "Ridurre i ehm, cioè e tipo sostituendoli con brevi pause.",
+     "p": [
+      "Gli intercalari sono normali, ma troppi possono nascondere le tue buone idee.",
+      "Scopri il tuo intercalare preferito e quando compare.",
+      "Sostituiscilo con un respiro tranquillo, che trasmette sicurezza."
+     ],
+     "q": "Sai qual è l'intercalare che usi di più?",
+     "c": "Rispondi a una domanda per un minuto cercando di non usare nessun intercalare."
+    },
+    "pt": {
+     "t": "Vícios de linguagem",
+     "g": "Reduzir os é, tipo e pronto substituindo-os por pausas breves.",
+     "p": [
+      "Os vícios de linguagem são normais, mas demasiados podem esconder as tuas boas ideias.",
+      "Descobre o teu vício favorito e em que momentos aparece.",
+      "Substitui-o por uma respiração calma, que soa a confiança."
+     ],
+     "q": "Sabes qual é o vício de linguagem que mais usas?",
+     "c": "Responde a uma pergunta durante um minuto e tenta não usar nenhum vício de linguagem."
+    },
+    "pt_BR": {
+     "t": "Vícios de linguagem",
+     "g": "Reduzir os né, tipo e então substituindo-os por pausas breves.",
+     "p": [
+      "Vícios de linguagem são normais, mas muitos podem esconder suas boas ideias.",
+      "Descubra seu vício favorito e em que momentos ele aparece.",
+      "Troque-o por uma respiração tranquila, que soa confiante."
+     ],
+     "q": "Você sabe qual vício de linguagem usa mais?",
+     "c": "Responda a uma pergunta por um minuto e tente não usar nenhum vício de linguagem."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Active listening",
+     "g": "Hear the full question, notice what is really asked and respond to it.",
+     "p": [
+      "Listen until the end before you start planning your answer.",
+      "Notice key words in the question and the feeling behind it.",
+      "Nod or note a word to show you are engaged."
+     ],
+     "q": "When was the last time someone really listened to you, and how did it feel?",
+     "c": "In your next conversation, repeat the other person's key point before answering."
+    },
+    "de": {
+     "t": "Aktiv zuhören",
+     "g": "Die ganze Frage hören, erkennen, was wirklich gefragt ist, und darauf antworten.",
+     "p": [
+      "Höre bis zum Ende zu, bevor du deine Antwort planst.",
+      "Achte auf die Schlüsselwörter der Frage und das Gefühl dahinter.",
+      "Nicke oder notiere ein Wort, um Interesse zu zeigen."
+     ],
+     "q": "Wann hat dir zuletzt jemand richtig zugehört, und wie hat sich das angefühlt?",
+     "c": "Wiederhole im nächsten Gespräch den Kernpunkt der anderen Person, bevor du antwortest."
+    },
+    "es": {
+     "t": "Escucha activa",
+     "g": "Oír la pregunta completa, notar lo que realmente se pregunta y responder a eso.",
+     "p": [
+      "Escucha hasta el final antes de empezar a planear tu respuesta.",
+      "Fíjate en las palabras clave de la pregunta y en lo que hay detrás.",
+      "Asiente o anota una palabra para mostrar que estás atento."
+     ],
+     "q": "¿Cuándo fue la última vez que alguien te escuchó de verdad y cómo se sintió?",
+     "c": "En tu próxima conversación, repite el punto clave de la otra persona antes de responder."
+    },
+    "fr": {
+     "t": "L'écoute active",
+     "g": "Entendre toute la question, saisir ce qui est vraiment demandé et y répondre.",
+     "p": [
+      "Écoutez jusqu'au bout avant de préparer votre réponse.",
+      "Repérez les mots clés de la question et ce qu'il y a derrière.",
+      "Hochez la tête ou notez un mot pour montrer que vous êtes attentif."
+     ],
+     "q": "Quand quelqu'un vous a-t-il vraiment écouté pour la dernière fois, et comment était-ce ?",
+     "c": "Dans votre prochaine conversation, reformulez le point clé de l'autre avant de répondre."
+    },
+    "it": {
+     "t": "L'ascolto attivo",
+     "g": "Sentire l'intera domanda, capire cosa viene davvero chiesto e rispondere a quello.",
+     "p": [
+      "Ascolta fino alla fine prima di cominciare a pianificare la risposta.",
+      "Nota le parole chiave della domanda e ciò che c'è dietro.",
+      "Annuisci o annota una parola per mostrare che sei attento."
+     ],
+     "q": "Quando è stata l'ultima volta che qualcuno ti ha ascoltato davvero, e com'è stato?",
+     "c": "Nella prossima conversazione, ripeti il punto chiave dell'altro prima di rispondere."
+    },
+    "pt": {
+     "t": "A escuta ativa",
+     "g": "Ouvir a pergunta completa, perceber o que realmente se pergunta e responder a isso.",
+     "p": [
+      "Ouve até ao fim antes de começares a planear a resposta.",
+      "Repara nas palavras-chave da pergunta e no que está por detrás.",
+      "Acena ou anota uma palavra para mostrares que estás atento."
+     ],
+     "q": "Quando foi a última vez que alguém te ouviu a sério e como foi?",
+     "c": "Na tua próxima conversa, repete o ponto-chave da outra pessoa antes de responder."
+    },
+    "pt_BR": {
+     "t": "A escuta ativa",
+     "g": "Ouvir a pergunta completa, perceber o que realmente se pergunta e responder a isso.",
+     "p": [
+      "Ouça até o fim antes de começar a planejar a resposta.",
+      "Repare nas palavras-chave da pergunta e no que está por trás.",
+      "Acene ou anote uma palavra para mostrar que está atento."
+     ],
+     "q": "Quando foi a última vez que alguém realmente escutou você e como foi?",
+     "c": "Na sua próxima conversa, repita o ponto-chave da outra pessoa antes de responder."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Asking for clarification",
+     "g": "Learn how to politely ask an interviewer to repeat or rephrase a question.",
+     "p": [
+      "Asking for clarity is a sign of care, not weakness.",
+      "Try phrases like could you say that another way or do you mean X.",
+      "Restating the question in your words checks that you understood."
+     ],
+     "q": "How do you usually react when you do not understand a question?",
+     "c": "Write three polite phrases to ask for a repeat or a clearer question."
+    },
+    "de": {
+     "t": "Um Klärung bitten",
+     "g": "Lernen, wie du höflich um Wiederholung oder Umformulierung einer Frage bittest.",
+     "p": [
+      "Nachfragen zeigt Sorgfalt, keine Schwäche.",
+      "Probiere Sätze wie könnten Sie das anders formulieren oder meinen Sie X.",
+      "Die Frage in eigenen Worten wiederzugeben zeigt, dass du sie verstanden hast."
+     ],
+     "q": "Wie reagierst du meist, wenn du eine Frage nicht verstehst?",
+     "c": "Schreibe drei höfliche Sätze, um um Wiederholung oder Klärung zu bitten."
+    },
+    "es": {
+     "t": "Pedir una aclaración",
+     "g": "Aprender a pedir con cortesía que te repitan o reformulen una pregunta.",
+     "p": [
+      "Pedir claridad muestra cuidado, no debilidad.",
+      "Prueba frases como podría decirlo de otra forma o se refiere a X.",
+      "Repetir la pregunta con tus palabras comprueba que la entendiste."
+     ],
+     "q": "¿Cómo sueles reaccionar cuando no entiendes una pregunta?",
+     "c": "Escribe tres frases corteses para pedir que repitan o aclaren una pregunta."
+    },
+    "fr": {
+     "t": "Demander des précisions",
+     "g": "Apprendre à demander poliment de répéter ou de reformuler une question.",
+     "p": [
+      "Demander des précisions montre du soin, pas de la faiblesse.",
+      "Essayez des phrases comme pourriez-vous le formuler autrement ou voulez-vous dire X.",
+      "Reformuler la question avec vos mots vérifie que vous avez compris."
+     ],
+     "q": "Comment réagissez-vous d'habitude quand vous ne comprenez pas une question ?",
+     "c": "Écrivez trois phrases polies pour demander de répéter ou de clarifier une question."
+    },
+    "it": {
+     "t": "Chiedere chiarimenti",
+     "g": "Imparare a chiedere con garbo di ripetere o riformulare una domanda.",
+     "p": [
+      "Chiedere chiarezza mostra attenzione, non debolezza.",
+      "Prova frasi come potrebbe dirlo in un altro modo o intende X.",
+      "Riformulare la domanda con parole tue verifica che hai capito."
+     ],
+     "q": "Come reagisci di solito quando non capisci una domanda?",
+     "c": "Scrivi tre frasi gentili per chiedere di ripetere o chiarire una domanda."
+    },
+    "pt": {
+     "t": "Pedir esclarecimentos",
+     "g": "Aprender a pedir com cortesia que repitam ou reformulem uma pergunta.",
+     "p": [
+      "Pedir clareza mostra cuidado, não fraqueza.",
+      "Experimenta frases como podia dizer de outra forma ou refere-se a X.",
+      "Repetir a pergunta por palavras tuas verifica que a entendeste."
+     ],
+     "q": "Como costumas reagir quando não percebes uma pergunta?",
+     "c": "Escreve três frases corteses para pedir que repitam ou esclareçam uma pergunta."
+    },
+    "pt_BR": {
+     "t": "Pedindo esclarecimentos",
+     "g": "Aprender a pedir com educação que repitam ou reformulem uma pergunta.",
+     "p": [
+      "Pedir clareza mostra cuidado, não fraqueza.",
+      "Experimente frases como poderia dizer de outro jeito ou você quer dizer X.",
+      "Repetir a pergunta com suas palavras confirma que você entendeu."
+     ],
+     "q": "Como você costuma reagir quando não entende uma pergunta?",
+     "c": "Escreva três frases educadas para pedir que repitam ou esclareçam uma pergunta."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Taking a moment to think",
+     "g": "A short pause before answering looks thoughtful, not unprepared.",
+     "p": [
+      "Two or three seconds of silence feels longer to you than to listeners.",
+      "You can say let me think about that for a moment and then answer.",
+      "A calm pause helps you pick the best example."
+     ],
+     "q": "How do you feel about silence in a conversation?",
+     "c": "Practise pausing for three seconds before answering a practice question."
+    },
+    "de": {
+     "t": "Einen Moment nachdenken",
+     "g": "Eine kurze Pause vor der Antwort wirkt durchdacht, nicht unvorbereitet.",
+     "p": [
+      "Zwei, drei Sekunden Stille kommen dir länger vor als den Zuhörenden.",
+      "Du kannst sagen, lassen Sie mich kurz überlegen, und dann antworten.",
+      "Eine ruhige Pause hilft dir, das beste Beispiel zu wählen."
+     ],
+     "q": "Wie fühlst du dich bei Stille im Gespräch?",
+     "c": "Übe, vor der Antwort auf eine Übungsfrage drei Sekunden innezuhalten."
+    },
+    "es": {
+     "t": "Tomarse un momento para pensar",
+     "g": "Una breve pausa antes de responder parece reflexiva, no falta de preparación.",
+     "p": [
+      "Dos o tres segundos de silencio se te hacen más largos a ti que a quien escucha.",
+      "Puedes decir déjame pensarlo un momento y luego responder.",
+      "Una pausa tranquila te ayuda a elegir el mejor ejemplo."
+     ],
+     "q": "¿Cómo te sientes con los silencios en una conversación?",
+     "c": "Practica una pausa de tres segundos antes de responder a una pregunta de práctica."
+    },
+    "fr": {
+     "t": "Prendre un moment pour réfléchir",
+     "g": "Une courte pause avant de répondre paraît réfléchie, pas improvisée.",
+     "p": [
+      "Deux ou trois secondes de silence vous semblent plus longues qu'à ceux qui écoutent.",
+      "Vous pouvez dire laissez-moi y réfléchir un instant, puis répondre.",
+      "Une pause tranquille vous aide à choisir le meilleur exemple."
+     ],
+     "q": "Que ressentez-vous face au silence dans une conversation ?",
+     "c": "Entraînez-vous à marquer trois secondes de pause avant de répondre à une question d'exercice."
+    },
+    "it": {
+     "t": "Prendersi un momento per pensare",
+     "g": "Una breve pausa prima di rispondere appare ponderata, non impreparata.",
+     "p": [
+      "Due o tre secondi di silenzio sembrano più lunghi a te che a chi ascolta.",
+      "Puoi dire fammi pensare un momento e poi rispondere.",
+      "Una pausa tranquilla ti aiuta a scegliere l'esempio migliore."
+     ],
+     "q": "Come ti senti di fronte al silenzio in una conversazione?",
+     "c": "Esercitati a fare tre secondi di pausa prima di rispondere a una domanda di prova."
+    },
+    "pt": {
+     "t": "Tirar um momento para pensar",
+     "g": "Uma pausa breve antes de responder parece ponderada, não despreparada.",
+     "p": [
+      "Dois ou três segundos de silêncio parecem mais longos para ti do que para quem ouve.",
+      "Podes dizer deixe-me pensar um momento e depois responder.",
+      "Uma pausa calma ajuda-te a escolher o melhor exemplo."
+     ],
+     "q": "Como te sentes com o silêncio numa conversa?",
+     "c": "Pratica uma pausa de três segundos antes de responder a uma pergunta de treino."
+    },
+    "pt_BR": {
+     "t": "Tirando um momento para pensar",
+     "g": "Uma pausa breve antes de responder parece ponderada, não despreparada.",
+     "p": [
+      "Dois ou três segundos de silêncio parecem mais longos para você do que para quem ouve.",
+      "Você pode dizer deixa eu pensar um momento e depois responder.",
+      "Uma pausa calma ajuda a escolher o melhor exemplo."
+     ],
+     "q": "Como você se sente com o silêncio numa conversa?",
+     "c": "Pratique uma pausa de três segundos antes de responder a uma pergunta de treino."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Answer length",
+     "g": "Aim for answers of about one to two minutes and know when to stop.",
+     "p": [
+      "Under thirty seconds can feel thin, over three minutes can lose people.",
+      "Give the main point first, then one example, then stop.",
+      "Offer to say more if the interviewer would like details."
+     ],
+     "q": "Do you tend to give short answers or long ones?",
+     "c": "Time one answer with a timer and trim it to between one and two minutes."
+    },
+    "de": {
+     "t": "Antwortlänge",
+     "g": "Antworten von etwa ein bis zwei Minuten anstreben und wissen, wann Schluss ist.",
+     "p": [
+      "Unter dreißig Sekunden wirkt dünn, über drei Minuten verlierst du Zuhörende.",
+      "Nenne erst den Kernpunkt, dann ein Beispiel, dann höre auf.",
+      "Biete an, mehr zu erzählen, falls Details gewünscht sind."
+     ],
+     "q": "Gibst du eher kurze oder lange Antworten?",
+     "c": "Stoppe eine Antwort mit dem Timer und kürze sie auf eine bis zwei Minuten."
+    },
+    "es": {
+     "t": "Duración de las respuestas",
+     "g": "Apuntar a respuestas de uno a dos minutos y saber cuándo parar.",
+     "p": [
+      "Menos de treinta segundos puede parecer escaso; más de tres minutos hace perder a la gente.",
+      "Da primero la idea principal, luego un ejemplo, y para.",
+      "Ofrece contar más si quien entrevista quiere detalles."
+     ],
+     "q": "¿Sueles dar respuestas cortas o largas?",
+     "c": "Cronometra una respuesta y recórtala para que dure entre uno y dos minutos."
+    },
+    "fr": {
+     "t": "La longueur des réponses",
+     "g": "Viser des réponses d'environ une à deux minutes et savoir s'arrêter.",
+     "p": [
+      "Moins de trente secondes paraît léger, plus de trois minutes fait perdre l'attention.",
+      "Donnez d'abord l'idée principale, puis un exemple, puis arrêtez-vous.",
+      "Proposez d'en dire plus si l'interlocuteur souhaite des détails."
+     ],
+     "q": "Avez-vous tendance à répondre court ou long ?",
+     "c": "Chronométrez une réponse et ramenez-la à une ou deux minutes."
+    },
+    "it": {
+     "t": "La lunghezza delle risposte",
+     "g": "Puntare a risposte di uno o due minuti circa e sapere quando fermarsi.",
+     "p": [
+      "Sotto i trenta secondi sembra poco, oltre i tre minuti si perde l'attenzione.",
+      "Dai prima il punto principale, poi un esempio, poi fermati.",
+      "Offri di dire di più se l'intervistatore vuole dettagli."
+     ],
+     "q": "Tendi a dare risposte brevi o lunghe?",
+     "c": "Cronometra una risposta e accorciala fino a durare tra uno e due minuti."
+    },
+    "pt": {
+     "t": "A duração das respostas",
+     "g": "Apontar a respostas de cerca de um a dois minutos e saber quando parar.",
+     "p": [
+      "Menos de trinta segundos pode parecer curto; mais de três minutos faz perder a atenção.",
+      "Dá primeiro a ideia principal, depois um exemplo, e para.",
+      "Oferece-te para dizer mais se o entrevistador quiser detalhes."
+     ],
+     "q": "Costumas dar respostas curtas ou longas?",
+     "c": "Cronometra uma resposta e reduz-a para durar entre um e dois minutos."
+    },
+    "pt_BR": {
+     "t": "A duração das respostas",
+     "g": "Mirar em respostas de cerca de um a dois minutos e saber a hora de parar.",
+     "p": [
+      "Menos de trinta segundos parece pouco; mais de três minutos faz perder a atenção.",
+      "Dê primeiro a ideia principal, depois um exemplo, e pare.",
+      "Ofereça-se para dizer mais se o entrevistador quiser detalhes."
+     ],
+     "q": "Você costuma dar respostas curtas ou longas?",
+     "c": "Cronometre uma resposta e reduza para durar entre um e dois minutos."
+    }
+   }
+  }
+ ]
+}
